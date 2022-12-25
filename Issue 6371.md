@@ -111,7 +111,7 @@ Is double precision sufficient? Are the arguments large, integers or half-intege
 archive/issue_comments_050857.json:
 ```json
 {
-    "body": "To use this, type\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/6371/trac_6371-riemann-theta.patch')\nsage: quit\n\nsage -br\n\nsage: now you have the new code\n```\n",
+    "body": "To use this, type\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/6371/trac_6371-riemann-theta.patch')\nsage: quit\n\nsage -br\n\nsage: now you have the new code\n```",
     "created_at": "2009-06-26T13:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -130,7 +130,6 @@ sage -br
 
 sage: now you have the new code
 ```
-
 
 
 
@@ -179,7 +178,7 @@ Again, I'll be posting a replacement patch sometime within the next two weeks or
 archive/issue_comments_050860.json:
 ```json
 {
-    "body": "> A word of warning, though: since I know a lot of people who are interested in my getting Riemann theta into Sage as soon as possible I had to strip Shimura phi, Siegel theta, and Klein P. I'm not qualified to review / bug fix that part of the code. I hope this is okay with the original authors and people who are interested in seeing this patch resolved.\n\nI am the original author, and I think this is a very reasonable decision!  You should know that I use \"Siegel theta\" and \"Riemann theta\" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.\n\n> Perhaps we can move these implementations into a new patch once Riemann theta is implemented.\n\nThese bits are interesting for my research, but probably are not all that interesting more generally.  Cut them for now.\n\nThanks for you efforts, Chris!",
+    "body": "> A word of warning, though: since I know a lot of people who are interested in my getting Riemann theta into Sage as soon as possible I had to strip Shimura phi, Siegel theta, and Klein P. I'm not qualified to review / bug fix that part of the code. I hope this is okay with the original authors and people who are interested in seeing this patch resolved.\n\n\nI am the original author, and I think this is a very reasonable decision!  You should know that I use \"Siegel theta\" and \"Riemann theta\" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.\n\n> Perhaps we can move these implementations into a new patch once Riemann theta is implemented.\n\n\nThese bits are interesting for my research, but probably are not all that interesting more generally.  Cut them for now.\n\nThanks for you efforts, Chris!",
     "created_at": "2010-12-10T18:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -190,9 +189,11 @@ archive/issue_comments_050860.json:
 
 > A word of warning, though: since I know a lot of people who are interested in my getting Riemann theta into Sage as soon as possible I had to strip Shimura phi, Siegel theta, and Klein P. I'm not qualified to review / bug fix that part of the code. I hope this is okay with the original authors and people who are interested in seeing this patch resolved.
 
+
 I am the original author, and I think this is a very reasonable decision!  You should know that I use "Siegel theta" and "Riemann theta" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.
 
 > Perhaps we can move these implementations into a new patch once Riemann theta is implemented.
+
 
 These bits are interesting for my research, but probably are not all that interesting more generally.  Cut them for now.
 
@@ -205,7 +206,7 @@ Thanks for you efforts, Chris!
 archive/issue_comments_050861.json:
 ```json
 {
-    "body": "> I am the original author, and I think this is a very reasonable decision!  You should know that I use \"Siegel theta\" and \"Riemann theta\" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.\n> Thanks for you efforts, Chris!\n\nHuzzah! Thank _you_ for your help!",
+    "body": "> I am the original author, and I think this is a very reasonable decision!  You should know that I use \"Siegel theta\" and \"Riemann theta\" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.\n> Thanks for you efforts, Chris!\n\n\nHuzzah! Thank _you_ for your help!",
     "created_at": "2010-12-10T18:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -216,6 +217,7 @@ archive/issue_comments_050861.json:
 
 > I am the original author, and I think this is a very reasonable decision!  You should know that I use "Siegel theta" and "Riemann theta" interchangeably.  Riemann theta often seems to mean just with characteristics (0, 0, ..., 0) and Siegel theta seems to be a Mathematica-ism.  Whatever we decide on is (probably) fine by me.
 > Thanks for you efforts, Chris!
+
 
 Huzzah! Thank _you_ for your help!
 
@@ -436,7 +438,7 @@ Patchbot doesn't seem to get the message. New attempt: Apply trac_6371-riemann-t
 archive/issue_comments_050873.json:
 ```json
 {
-    "body": "Replying to [comment:13 mstreng]:\n> Patchbot doesn't seem to get the message. New attempt: Apply trac_6371-riemann-theta-REPLACEMENT.patch, trac_6371-riemann-theta-REPLACEMENT-PART2.patch, trac_6371_riemann-theta-REPLACEMENT-PART3.patch\n\nI tried just deleting the first patch called \"trac_6371-riemann-theta.patch\" but I don't have permissions to do so. I'm also unfamiliar with how to tell patchbot to ignore certain patches.\n\nA manual importing of the three patches using ``sage -hg import <the patch>`` results in no issues.",
+    "body": "Replying to [comment:13 mstreng]:\n> Patchbot doesn't seem to get the message. New attempt: Apply trac_6371-riemann-theta-REPLACEMENT.patch, trac_6371-riemann-theta-REPLACEMENT-PART2.patch, trac_6371_riemann-theta-REPLACEMENT-PART3.patch\n\n\nI tried just deleting the first patch called \"trac_6371-riemann-theta.patch\" but I don't have permissions to do so. I'm also unfamiliar with how to tell patchbot to ignore certain patches.\n\nA manual importing of the three patches using ``sage -hg import <the patch>`` results in no issues.",
     "created_at": "2011-03-28T19:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -447,6 +449,7 @@ archive/issue_comments_050873.json:
 
 Replying to [comment:13 mstreng]:
 > Patchbot doesn't seem to get the message. New attempt: Apply trac_6371-riemann-theta-REPLACEMENT.patch, trac_6371-riemann-theta-REPLACEMENT-PART2.patch, trac_6371_riemann-theta-REPLACEMENT-PART3.patch
+
 
 I tried just deleting the first patch called "trac_6371-riemann-theta.patch" but I don't have permissions to do so. I'm also unfamiliar with how to tell patchbot to ignore certain patches.
 
@@ -748,7 +751,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_050889.json:
 ```json
 {
-    "body": "Replying to [comment:27 jdemeyer]:\n> I get a doctest failure in `devel/sage/sage/all.py`\n\nI see. The error is:\n\n\n```\n\nsage -t  \"devel/sage-6371/sage/all.py\"                      \n**********************************************************************\nFile \"/home/cswiercz/sage-4.7.1/devel/sage-6371/sage/all.py\", line 17:\n    sage: len(frames)\nExpected:\n    11\nGot:\n    26\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/cswiercz/.sage//tmp/all_20664.py\n\t [3.4 s]\n```\n\n\nHowever, I'm not qualified to make a fix since I don't really understand the purpose of this test. Does anyone on cc: know what's going on in this file and why my Riemann Theta code would affect it?",
+    "body": "Replying to [comment:27 jdemeyer]:\n> I get a doctest failure in `devel/sage/sage/all.py`\n\n\nI see. The error is:\n\n```\n\nsage -t  \"devel/sage-6371/sage/all.py\"                      \n**********************************************************************\nFile \"/home/cswiercz/sage-4.7.1/devel/sage-6371/sage/all.py\", line 17:\n    sage: len(frames)\nExpected:\n    11\nGot:\n    26\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/cswiercz/.sage//tmp/all_20664.py\n\t [3.4 s]\n```\n\nHowever, I'm not qualified to make a fix since I don't really understand the purpose of this test. Does anyone on cc: know what's going on in this file and why my Riemann Theta code would affect it?",
     "created_at": "2011-12-10T20:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -760,8 +763,8 @@ archive/issue_comments_050889.json:
 Replying to [comment:27 jdemeyer]:
 > I get a doctest failure in `devel/sage/sage/all.py`
 
-I see. The error is:
 
+I see. The error is:
 
 ```
 
@@ -780,7 +783,6 @@ Got:
 For whitespace errors, see the file /home/cswiercz/.sage//tmp/all_20664.py
 	 [3.4 s]
 ```
-
 
 However, I'm not qualified to make a fix since I don't really understand the purpose of this test. Does anyone on cc: know what's going on in this file and why my Riemann Theta code would affect it?
 
@@ -809,7 +811,7 @@ Chris:  Have you read #10570?   That explains what this test is about and why it
 archive/issue_comments_050891.json:
 ```json
 {
-    "body": "Replying to [comment:29 was]:\n> Chris:  Have you read #10570?   That explains what this test is about and why it is important.  Your code evidently gets imported when Sage starts up, and does something potentially leaky. \n\nYes, I read this ticket but I'm not sure how to resolve the \"potential leakiness\".\n\nOne candidate for where this issue might be coming from is my use of a class constructor. I have some code in `riemann_theta.py` in the following form:\n\n\n```\ndef RiemannTheta_Constructor(foo, bar):\n    class RiemannTheta(Function_RiemannTheta):\n        def __init__(...):\n            self.foo = foo\n            self.bar = bar\n            Function_RiemannTheta.__init__()\n\n    return RiemannTheta(...)\n\nRiemannTheta = RiemannTheta_Constructor\n\nclass Function_RiemannTheta(BuiltinFunction):\n   ...\n```\n\n\nI needed to do things this way so I could parameterize `RiemannTheta` by things such as directional derivative and Riemann matrix. Otherwise, things behave not as expected due to the way `BuiltinFunction` behaves. (For example, two instances of `RiemannTheta` would share the same Riemann matrix or derivatives.) With the above code structure I found that these issues don't arise and two instances of `RiemannTheta` behaved independently as expected.\n\nI'd hate to introduce memory leaks due to my lack of understanding of `BuiltinFunction`. (Granted, the documentation for creating classes that inherit `BuiltinFunction` is severely lacking as well.) However, I don't see how I'd start fixing the issue aside from increasing `len(frames)` in the error message above from 11 to 26. Any suggested resources on how I could better perform what I'm doing in the class and function construction above? Again, the `BuiltinFunction` documentation wasn't helpful beyond copying what preexisting inheritors in `sage.functions` do.",
+    "body": "Replying to [comment:29 was]:\n> Chris:  Have you read #10570?   That explains what this test is about and why it is important.  Your code evidently gets imported when Sage starts up, and does something potentially leaky. \n\n\nYes, I read this ticket but I'm not sure how to resolve the \"potential leakiness\".\n\nOne candidate for where this issue might be coming from is my use of a class constructor. I have some code in `riemann_theta.py` in the following form:\n\n```\ndef RiemannTheta_Constructor(foo, bar):\n    class RiemannTheta(Function_RiemannTheta):\n        def __init__(...):\n            self.foo = foo\n            self.bar = bar\n            Function_RiemannTheta.__init__()\n\n    return RiemannTheta(...)\n\nRiemannTheta = RiemannTheta_Constructor\n\nclass Function_RiemannTheta(BuiltinFunction):\n   ...\n```\n\nI needed to do things this way so I could parameterize `RiemannTheta` by things such as directional derivative and Riemann matrix. Otherwise, things behave not as expected due to the way `BuiltinFunction` behaves. (For example, two instances of `RiemannTheta` would share the same Riemann matrix or derivatives.) With the above code structure I found that these issues don't arise and two instances of `RiemannTheta` behaved independently as expected.\n\nI'd hate to introduce memory leaks due to my lack of understanding of `BuiltinFunction`. (Granted, the documentation for creating classes that inherit `BuiltinFunction` is severely lacking as well.) However, I don't see how I'd start fixing the issue aside from increasing `len(frames)` in the error message above from 11 to 26. Any suggested resources on how I could better perform what I'm doing in the class and function construction above? Again, the `BuiltinFunction` documentation wasn't helpful beyond copying what preexisting inheritors in `sage.functions` do.",
     "created_at": "2011-12-10T20:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -821,10 +823,10 @@ archive/issue_comments_050891.json:
 Replying to [comment:29 was]:
 > Chris:  Have you read #10570?   That explains what this test is about and why it is important.  Your code evidently gets imported when Sage starts up, and does something potentially leaky. 
 
+
 Yes, I read this ticket but I'm not sure how to resolve the "potential leakiness".
 
 One candidate for where this issue might be coming from is my use of a class constructor. I have some code in `riemann_theta.py` in the following form:
-
 
 ```
 def RiemannTheta_Constructor(foo, bar):
@@ -841,7 +843,6 @@ RiemannTheta = RiemannTheta_Constructor
 class Function_RiemannTheta(BuiltinFunction):
    ...
 ```
-
 
 I needed to do things this way so I could parameterize `RiemannTheta` by things such as directional derivative and Riemann matrix. Otherwise, things behave not as expected due to the way `BuiltinFunction` behaves. (For example, two instances of `RiemannTheta` would share the same Riemann matrix or derivatives.) With the above code structure I found that these issues don't arise and two instances of `RiemannTheta` behaved independently as expected.
 
@@ -878,7 +879,7 @@ ps. Could you make sure you break the lines in the patch at 79 characters?
 archive/issue_comments_050893.json:
 ```json
 {
-    "body": "Hello mstreng,\n\nReplying to [comment:31 mstreng]:\n> I don't know much about `BuiltinFunction`, but I suspect that it isn't meant for what you are trying to do. All the examples that I know of `BuiltinFunction` are single fixed functions, independent of any parameters, such as cos, min, max, `IndefiniteIntegral`, Gamma, dirac_delta, etc.\n\nIt was my misunderstanding that `BuiltinFunction` is necessary for doing symbolic manipulation. My only reason for using it is so I can compute derivatives, etc. If you know of an alternate way to enable symbolics then I'd love to hear about it!\n\n> Your objects however depend on a parameter Omega, and are functions only of z. They are maps `theta(Omega): CC^g --> CC : z |--> theta(z)`. This will not be a \"built-in function of Sage\" for every Omega, so it does not sound to me like this should be a `BuiltinFunction` object. Maybe the memory leak is caused by this.\n\nI'll experiment with the code and see if this is an issue.\n\nIn practice, $\\Omega$ is treated more as a parameter than an argument of the Riemann theta function. That is, $\\Omega$ is usually fixed and $z$ varies. Several users of my code would like to see this behavior be reflected by having the Riemann theta function be \"initialized\" by this matrix.\n\nHowever, if memory leaks are unavoidable in this context then I suppose I'll just have to make $\\Omega$ behave like an argument no different from $z$.\n\n> The function `theta: CC^g x H_g --> CC : (z, Omega) |--> theta(z, Omega)` definitely make sense as a built-in function, but not a function `theta(Omega) : CC^g --> C` that depends on Omega. In other words, if you have a function for which Omega is not a parameter but an actual variable, then that would make a good built-in function.\n\nMakes sense.\n\n> ps. Could you make sure you break the lines in the patch at 79 characters?\n\nOf course! (As an in-terminal emacs user I usually try to do this anyway.)",
+    "body": "Hello mstreng,\n\nReplying to [comment:31 mstreng]:\n> I don't know much about `BuiltinFunction`, but I suspect that it isn't meant for what you are trying to do. All the examples that I know of `BuiltinFunction` are single fixed functions, independent of any parameters, such as cos, min, max, `IndefiniteIntegral`, Gamma, dirac_delta, etc.\n\n\nIt was my misunderstanding that `BuiltinFunction` is necessary for doing symbolic manipulation. My only reason for using it is so I can compute derivatives, etc. If you know of an alternate way to enable symbolics then I'd love to hear about it!\n\n> Your objects however depend on a parameter Omega, and are functions only of z. They are maps `theta(Omega): CC^g --> CC : z |--> theta(z)`. This will not be a \"built-in function of Sage\" for every Omega, so it does not sound to me like this should be a `BuiltinFunction` object. Maybe the memory leak is caused by this.\n\n\nI'll experiment with the code and see if this is an issue.\n\nIn practice, $\\Omega$ is treated more as a parameter than an argument of the Riemann theta function. That is, $\\Omega$ is usually fixed and $z$ varies. Several users of my code would like to see this behavior be reflected by having the Riemann theta function be \"initialized\" by this matrix.\n\nHowever, if memory leaks are unavoidable in this context then I suppose I'll just have to make $\\Omega$ behave like an argument no different from $z$.\n\n> The function `theta: CC^g x H_g --> CC : (z, Omega) |--> theta(z, Omega)` definitely make sense as a built-in function, but not a function `theta(Omega) : CC^g --> C` that depends on Omega. In other words, if you have a function for which Omega is not a parameter but an actual variable, then that would make a good built-in function.\n\n\nMakes sense.\n\n> ps. Could you make sure you break the lines in the patch at 79 characters?\n\n\nOf course! (As an in-terminal emacs user I usually try to do this anyway.)",
     "created_at": "2012-01-18T18:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -892,9 +893,11 @@ Hello mstreng,
 Replying to [comment:31 mstreng]:
 > I don't know much about `BuiltinFunction`, but I suspect that it isn't meant for what you are trying to do. All the examples that I know of `BuiltinFunction` are single fixed functions, independent of any parameters, such as cos, min, max, `IndefiniteIntegral`, Gamma, dirac_delta, etc.
 
+
 It was my misunderstanding that `BuiltinFunction` is necessary for doing symbolic manipulation. My only reason for using it is so I can compute derivatives, etc. If you know of an alternate way to enable symbolics then I'd love to hear about it!
 
 > Your objects however depend on a parameter Omega, and are functions only of z. They are maps `theta(Omega): CC^g --> CC : z |--> theta(z)`. This will not be a "built-in function of Sage" for every Omega, so it does not sound to me like this should be a `BuiltinFunction` object. Maybe the memory leak is caused by this.
+
 
 I'll experiment with the code and see if this is an issue.
 
@@ -904,9 +907,11 @@ However, if memory leaks are unavoidable in this context then I suppose I'll jus
 
 > The function `theta: CC^g x H_g --> CC : (z, Omega) |--> theta(z, Omega)` definitely make sense as a built-in function, but not a function `theta(Omega) : CC^g --> C` that depends on Omega. In other words, if you have a function for which Omega is not a parameter but an actual variable, then that would make a good built-in function.
 
+
 Makes sense.
 
 > ps. Could you make sure you break the lines in the patch at 79 characters?
+
 
 Of course! (As an in-terminal emacs user I usually try to do this anyway.)
 
@@ -917,7 +922,7 @@ Of course! (As an in-terminal emacs user I usually try to do this anyway.)
 archive/issue_comments_050894.json:
 ```json
 {
-    "body": "Hi Chris,\n\nReplying to [comment:32 cswiercz]:\n> If you know of an alternate way to enable symbolics then I'd love to hear about it!\n\nI don't: I've never implemented any of them.\n\n> In practice, $\\Omega$ is treated more as a parameter than an argument of the Riemann theta function. That is, $\\Omega$ is usually fixed and $z$ varies.\n\n:) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.\n\nAnyway, what is the (programming technical) reason for having objects that depend on Omega? Is there some kind of caching involved? Some part of the algorithm that depends on Omega only and that you only want to do once?\n\nMarco",
+    "body": "Hi Chris,\n\nReplying to [comment:32 cswiercz]:\n> If you know of an alternate way to enable symbolics then I'd love to hear about it!\n\n\nI don't: I've never implemented any of them.\n\n> In practice, $\\Omega$ is treated more as a parameter than an argument of the Riemann theta function. That is, $\\Omega$ is usually fixed and $z$ varies.\n\n\n:) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.\n\nAnyway, what is the (programming technical) reason for having objects that depend on Omega? Is there some kind of caching involved? Some part of the algorithm that depends on Omega only and that you only want to do once?\n\nMarco",
     "created_at": "2012-01-18T19:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -931,9 +936,11 @@ Hi Chris,
 Replying to [comment:32 cswiercz]:
 > If you know of an alternate way to enable symbolics then I'd love to hear about it!
 
+
 I don't: I've never implemented any of them.
 
 > In practice, $\Omega$ is treated more as a parameter than an argument of the Riemann theta function. That is, $\Omega$ is usually fixed and $z$ varies.
+
 
 :) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.
 
@@ -948,7 +955,7 @@ Marco
 archive/issue_comments_050895.json:
 ```json
 {
-    "body": "Marco,\n\n> :) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.\n> \n> Anyway, what is the (programming technical) reason for having objects that depend on Omega? Is there some kind of caching involved? Some part of the algorithm that depends on Omega only and that you only want to do once?\n\nInteresting. I've only seen one other instance in which Omega was varied: it was in the context of solving particular boundary value problems.) If you don't mind, do you have a paper you can send me about your work? (cswiercz [at] gmail ]dot[ com)\n\nI agree that there should be no distinction between the two parameters. From what I understood about `BuiltinFunction}}, though, the purpose of distinguishing Omega as a parameter is to make it easy to send symbolic output. Since I initially made this decision, however, I've learned more about the way Sage ({{{BuiltinFuncion`?) handles inputs and determines if they're symbolic. A rewriting of the way arguments are sent to `RiemannTheta` should be possible.\n\nI'll see what I can do about restructuring the code. Thank you very much for your input and suggestions. I'll keep everyone posted on my (slow) progress.",
+    "body": "Marco,\n\n> :) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.\n> \n> Anyway, what is the (programming technical) reason for having objects that depend on Omega? Is there some kind of caching involved? Some part of the algorithm that depends on Omega only and that you only want to do once?\n\n\nInteresting. I've only seen one other instance in which Omega was varied: it was in the context of solving particular boundary value problems.) If you don't mind, do you have a paper you can send me about your work? (cswiercz [at] gmail ]dot[ com)\n\nI agree that there should be no distinction between the two parameters. From what I understood about `BuiltinFunction}}, though, the purpose of distinguishing Omega as a parameter is to make it easy to send symbolic output. Since I initially made this decision, however, I've learned more about the way Sage ({{{BuiltinFuncion`?) handles inputs and determines if they're symbolic. A rewriting of the way arguments are sent to `RiemannTheta` should be possible.\n\nI'll see what I can do about restructuring the code. Thank you very much for your input and suggestions. I'll keep everyone posted on my (slow) progress.",
     "created_at": "2012-01-18T21:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -962,6 +969,7 @@ Marco,
 > :) Actually, when I use theta functions in my research, Omega is usually the variable and z is usually some fixed vector in with entries in QQ.
 > 
 > Anyway, what is the (programming technical) reason for having objects that depend on Omega? Is there some kind of caching involved? Some part of the algorithm that depends on Omega only and that you only want to do once?
+
 
 Interesting. I've only seen one other instance in which Omega was varied: it was in the context of solving particular boundary value problems.) If you don't mind, do you have a paper you can send me about your work? (cswiercz [at] gmail ]dot[ com)
 
@@ -1112,7 +1120,7 @@ archive/issue_events_015012.json:
 archive/issue_comments_050896.json:
 ```json
 {
-    "body": "I made a git branch from the patches, but it does not work. I have not tried to\nfind where problems are.\n----\nNew commits:",
+    "body": "I made a git branch from the patches, but it does not work. I have not tried to\nfind where problems are.\n\n---\nNew commits:",
     "created_at": "2015-03-10T22:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
@@ -1123,7 +1131,8 @@ archive/issue_comments_050896.json:
 
 I made a git branch from the patches, but it does not work. I have not tried to
 find where problems are.
-----
+
+---
 New commits:
 
 

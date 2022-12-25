@@ -434,7 +434,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_045585.json:
 ```json
 {
-    "body": "Hey Timo,\n\nI've uploaded a small review patch which fixes the doctests and gives full coverage. Thank you for the patch.\n\nBest,\n\nTravis\n\n\n```\nsage -t ../misc/prun.py\n    [6 tests, 0.0 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 0.2 seconds\n    cpu time: 0.0 seconds\n    cumulative wall time: 0.0 seconds\n```\n",
+    "body": "Hey Timo,\n\nI've uploaded a small review patch which fixes the doctests and gives full coverage. Thank you for the patch.\n\nBest,\n\nTravis\n\n```\nsage -t ../misc/prun.py\n    [6 tests, 0.0 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 0.2 seconds\n    cpu time: 0.0 seconds\n    cumulative wall time: 0.0 seconds\n```",
     "created_at": "2013-04-01T18:06:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -451,7 +451,6 @@ Best,
 
 Travis
 
-
 ```
 sage -t ../misc/prun.py
     [6 tests, 0.0 s]
@@ -462,7 +461,6 @@ Total time for all tests: 0.2 seconds
     cpu time: 0.0 seconds
     cumulative wall time: 0.0 seconds
 ```
-
 
 
 
@@ -527,7 +525,7 @@ archive/issue_events_013649.json:
 archive/issue_comments_045587.json:
 ```json
 {
-    "body": "Replying to [comment:12 nbruin]:\n> It's probably outside the scope of this ticket, but the *really* useful thing would be if `%prun ...` in the notebook would return an interactive browser for the `Stat` object that is returned by `cProfile().runctx(...)`. While a basic printout of profiling data gives some indication, one usually needs to dig around a little in the data to find what the real bottleneck is (see where most calls come from, switch between cumulative and proper time, etc.)\n\n+1/2 since being able to read/interpret the raw data is a good skill to have IMO. However a graphical (or at least a tree structure) of the data is also very useful.\n> \n> Writing such a browser might be a nice exercise for a student who is interested in interface programming. I bet there are good profiler browsers around to get inspiration from.\n\n+1 here. I feel like we need a wiki page to keep a list of \"good student projects\"...\n\n> A tool I haven't used yet but looks like a decent effort is [runsnakerun](https://pypi.python.org/pypi/RunSnakeRun). Duplicating that effort for the sage notebook might not seem like such a smart idea. Perhaps we can make the tool more easily accessible from sage? Given that it uses wxPython that might not be so very easily done ... I ended up installing it using OS tools, meaning that I *have* to write the profile data to a file and analyse it separately.\n\nI've seen runsnakerun used in a few places (although I haven't used it myself), and instead of duplicating it in the notebook, perhaps we could link it into sage (notebook) as some type of package? Actually...perhaps what we should do is have a variable/function which calls your favorite profiler on the executed command(s), something like:\n\n```\n%profile\n2 + 2\n```\n",
+    "body": "Replying to [comment:12 nbruin]:\n> It's probably outside the scope of this ticket, but the *really* useful thing would be if `%prun ...` in the notebook would return an interactive browser for the `Stat` object that is returned by `cProfile().runctx(...)`. While a basic printout of profiling data gives some indication, one usually needs to dig around a little in the data to find what the real bottleneck is (see where most calls come from, switch between cumulative and proper time, etc.)\n\n\n+1/2 since being able to read/interpret the raw data is a good skill to have IMO. However a graphical (or at least a tree structure) of the data is also very useful.\n> \n> Writing such a browser might be a nice exercise for a student who is interested in interface programming. I bet there are good profiler browsers around to get inspiration from.\n\n\n+1 here. I feel like we need a wiki page to keep a list of \"good student projects\"...\n\n> A tool I haven't used yet but looks like a decent effort is [runsnakerun](https://pypi.python.org/pypi/RunSnakeRun). Duplicating that effort for the sage notebook might not seem like such a smart idea. Perhaps we can make the tool more easily accessible from sage? Given that it uses wxPython that might not be so very easily done ... I ended up installing it using OS tools, meaning that I *have* to write the profile data to a file and analyse it separately.\n\n\nI've seen runsnakerun used in a few places (although I haven't used it myself), and instead of duplicating it in the notebook, perhaps we could link it into sage (notebook) as some type of package? Actually...perhaps what we should do is have a variable/function which calls your favorite profiler on the executed command(s), something like:\n\n```\n%profile\n2 + 2\n```",
     "created_at": "2013-04-03T12:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -539,13 +537,16 @@ archive/issue_comments_045587.json:
 Replying to [comment:12 nbruin]:
 > It's probably outside the scope of this ticket, but the *really* useful thing would be if `%prun ...` in the notebook would return an interactive browser for the `Stat` object that is returned by `cProfile().runctx(...)`. While a basic printout of profiling data gives some indication, one usually needs to dig around a little in the data to find what the real bottleneck is (see where most calls come from, switch between cumulative and proper time, etc.)
 
+
 +1/2 since being able to read/interpret the raw data is a good skill to have IMO. However a graphical (or at least a tree structure) of the data is also very useful.
 > 
 > Writing such a browser might be a nice exercise for a student who is interested in interface programming. I bet there are good profiler browsers around to get inspiration from.
 
+
 +1 here. I feel like we need a wiki page to keep a list of "good student projects"...
 
 > A tool I haven't used yet but looks like a decent effort is [runsnakerun](https://pypi.python.org/pypi/RunSnakeRun). Duplicating that effort for the sage notebook might not seem like such a smart idea. Perhaps we can make the tool more easily accessible from sage? Given that it uses wxPython that might not be so very easily done ... I ended up installing it using OS tools, meaning that I *have* to write the profile data to a file and analyse it separately.
+
 
 I've seen runsnakerun used in a few places (although I haven't used it myself), and instead of duplicating it in the notebook, perhaps we could link it into sage (notebook) as some type of package? Actually...perhaps what we should do is have a variable/function which calls your favorite profiler on the executed command(s), something like:
 
@@ -553,7 +554,6 @@ I've seen runsnakerun used in a few places (although I haven't used it myself), 
 %profile
 2 + 2
 ```
-
 
 
 
@@ -694,7 +694,7 @@ Apply: trac_5814-prun_notebook-combined.patch
 archive/issue_comments_045595.json:
 ```json
 {
-    "body": "In the notebook I get 3 function calls\n\n```\n         3 function calls in 0.007 seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.007    0.007    0.007    0.007 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {len}\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n```\n\nwith the command line:\n\n```\n         3 function calls in 0.000 seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {len}\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n```\n\nSo it's something specific to the doctesting framework that's not reflected in sage while it's directly running (I've noticed this in a few other places before too).",
+    "body": "In the notebook I get 3 function calls\n\n```\n         3 function calls in 0.007 seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.007    0.007    0.007    0.007 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {len}\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n```\nwith the command line:\n\n```\n         3 function calls in 0.000 seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {len}\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n```\nSo it's something specific to the doctesting framework that's not reflected in sage while it's directly running (I've noticed this in a few other places before too).",
     "created_at": "2013-04-05T15:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -715,7 +715,6 @@ In the notebook I get 3 function calls
         1    0.000    0.000    0.000    0.000 {len}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
-
 with the command line:
 
 ```
@@ -728,7 +727,6 @@ with the command line:
         1    0.000    0.000    0.000    0.000 {len}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
-
 So it's something specific to the doctesting framework that's not reflected in sage while it's directly running (I've noticed this in a few other places before too).
 
 
@@ -772,7 +770,7 @@ archive/issue_events_013650.json:
 archive/issue_comments_045597.json:
 ```json
 {
-    "body": "Does this actually work in the notebook?  (Sometimes Ipython upgrades cause trouble with such magic.)  I just get\n\n```\nNameError: name 'prun' is not defined\n```\n\nin 6.3 and 6.4.beta6.",
+    "body": "Does this actually work in the notebook?  (Sometimes Ipython upgrades cause trouble with such magic.)  I just get\n\n```\nNameError: name 'prun' is not defined\n```\nin 6.3 and 6.4.beta6.",
     "created_at": "2014-10-22T16:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5814",
     "type": "issue_comment",
@@ -786,7 +784,6 @@ Does this actually work in the notebook?  (Sometimes Ipython upgrades cause trou
 ```
 NameError: name 'prun' is not defined
 ```
-
 in 6.3 and 6.4.beta6.
 
 

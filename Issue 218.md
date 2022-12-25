@@ -155,7 +155,7 @@ archive/issue_events_000444.json:
 archive/issue_comments_000979.json:
 ```json
 {
-    "body": "\n```\n[03:05] <mabshoff> wstein: I think #218 is invalid since it is way to unspecific.\n[03:06] <wstein> We already did that long ago.\n[03:06] <wstein> Robertwb did most of the work.\n[03:06] <mabshoff> ok, close it?\n[03:06] <wstein> Yes.  And credit it to Robertwb :-)\n[03:06] <wstein> (and david harvey and me)\n[03:07] <mabshoff> close it as fixed against the current milestone mentioning it was done a while ago.\n[03:07] <mabshoff> Actually, I will just paste this part of the log ;)\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n[03:05] <mabshoff> wstein: I think #218 is invalid since it is way to unspecific.\n[03:06] <wstein> We already did that long ago.\n[03:06] <wstein> Robertwb did most of the work.\n[03:06] <mabshoff> ok, close it?\n[03:06] <wstein> Yes.  And credit it to Robertwb :-)\n[03:06] <wstein> (and david harvey and me)\n[03:07] <mabshoff> close it as fixed against the current milestone mentioning it was done a while ago.\n[03:07] <mabshoff> Actually, I will just paste this part of the log ;)\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T02:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/218",
     "type": "issue_comment",
@@ -163,7 +163,6 @@ archive/issue_comments_000979.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [03:05] <mabshoff> wstein: I think #218 is invalid since it is way to unspecific.
@@ -175,7 +174,6 @@ archive/issue_comments_000979.json:
 [03:07] <mabshoff> close it as fixed against the current milestone mentioning it was done a while ago.
 [03:07] <mabshoff> Actually, I will just paste this part of the log ;)
 ```
-
 
 Cheers,
 

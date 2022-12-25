@@ -70,7 +70,7 @@ Referee edit
 archive/issue_comments_048536.json:
 ```json
 {
-    "body": "Unfortunately, against 4.0.2.alpha0:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/plot/plot3d/shapes2.py # 4 doctests failed\n        sage -t -long devel/sage/sage/plot/plot3d/shapes2.py # 4 doctests failed\n        sage -t -long devel/sage/sage/plot/bezier_path.py # 2 doctests failed\n----------------------------------------------------------------------\n```\n",
+    "body": "Unfortunately, against 4.0.2.alpha0:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/plot/plot3d/shapes2.py # 4 doctests failed\n        sage -t -long devel/sage/sage/plot/plot3d/shapes2.py # 4 doctests failed\n        sage -t -long devel/sage/sage/plot/bezier_path.py # 2 doctests failed\n----------------------------------------------------------------------\n```",
     "created_at": "2009-06-13T21:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6098",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_048536.json:
 ```
 
 Unfortunately, against 4.0.2.alpha0:
-
 
 ```
 ----------------------------------------------------------------------
@@ -92,7 +91,6 @@ The following tests failed:
         sage -t -long devel/sage/sage/plot/bezier_path.py # 2 doctests failed
 ----------------------------------------------------------------------
 ```
-
 
 
 

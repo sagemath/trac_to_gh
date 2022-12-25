@@ -3,7 +3,7 @@
 archive/issues_004945.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: jsmath\n\nGary wrote: \n \nWhen using the SAGE notebook with typeset on, the command \n\n``` \n  gp(2+2) \n```\n \ngives the error `'Unknown environment \"verbatim\"'`. \n \nTyping \n\n``` \n  gp(2+2) \n```\n \nin the SAGE command line works fine. I think it is a latex output \nerror. \n \nI can confirm this bug. It is caused by the generic latex method for Expect elements: \n \n\n``` \nsage: latex(gp(2+2)) \n\\begin{verbatim}4\\end{verbatim} \n```\n \n \nwhich apparently doesn't play well with jsMath. \n \n`search_src(\"begin{verbatim}\")` returns 43 hits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4945\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: jsmath\n\nGary wrote: \n \nWhen using the SAGE notebook with typeset on, the command \n\n``` \n  gp(2+2) \n``` \ngives the error `'Unknown environment \"verbatim\"'`. \n \nTyping \n\n``` \n  gp(2+2) \n``` \nin the SAGE command line works fine. I think it is a latex output \nerror. \n \nI can confirm this bug. It is caused by the generic latex method for Expect elements: \n \n``` \nsage: latex(gp(2+2)) \n\\begin{verbatim}4\\end{verbatim} \n``` \n \nwhich apparently doesn't play well with jsMath. \n \n`search_src(\"begin{verbatim}\")` returns 43 hits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4945\n\n",
     "created_at": "2009-01-06T16:56:57Z",
     "labels": [
         "component: misc",
@@ -27,27 +27,23 @@ When using the SAGE notebook with typeset on, the command
 
 ``` 
   gp(2+2) 
-```
- 
+``` 
 gives the error `'Unknown environment "verbatim"'`. 
  
 Typing 
 
 ``` 
   gp(2+2) 
-```
- 
+``` 
 in the SAGE command line works fine. I think it is a latex output 
 error. 
  
 I can confirm this bug. It is caused by the generic latex method for Expect elements: 
  
-
 ``` 
 sage: latex(gp(2+2)) 
 \begin{verbatim}4\end{verbatim} 
-```
- 
+``` 
  
 which apparently doesn't play well with jsMath. 
  
@@ -106,7 +102,7 @@ Martin
 archive/issue_comments_037465.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> The extra \\require{verb} worries me, since it is included each time an element is LaTeXified. Shouldn't it be in some header?\n\nYes, maybe it should.  I couldn't figure out where, though.\n\n(For more on the jsMath verb extension, including different ways of loading it, see [this web page](http://www.math.union.edu/~dpvc/jsMath/authors/verb.html).)",
+    "body": "Replying to [comment:2 malb]:\n> The extra \\require{verb} worries me, since it is included each time an element is LaTeXified. Shouldn't it be in some header?\n\n\nYes, maybe it should.  I couldn't figure out where, though.\n\n(For more on the jsMath verb extension, including different ways of loading it, see [this web page](http://www.math.union.edu/~dpvc/jsMath/authors/verb.html).)",
     "created_at": "2009-01-06T20:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
@@ -117,6 +113,7 @@ archive/issue_comments_037465.json:
 
 Replying to [comment:2 malb]:
 > The extra \require{verb} worries me, since it is included each time an element is LaTeXified. Shouldn't it be in some header?
+
 
 Yes, maybe it should.  I couldn't figure out where, though.
 

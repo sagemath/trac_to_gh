@@ -73,7 +73,7 @@ Michael
 archive/issue_comments_046218.json:
 ```json
 {
-    "body": "Ok, the problem is when the first ring is instantiated. I tried to verify that omMalloc passes its make check target, but I struck out for now:\n\n```\ngcc -O0 -g -m64  -fPIC -I. -I/Users/mabshoff/sage-3.4.1.rc4-64/local/include -O0 -g -m64  \n-I/Users/mabshoff/sage-3.4.1.rc4-64/local/include -DHAVE_CONFIG_H omtTest.o_ndebug \nomtTestReal.o_ndebug omtTestDebug.o_ndebug omtTestKeep.o_ndebug omtTestError.o_ndebug \n-DOM_NDEBUG -L. -lomalloc_ndebug -o omtTest_ndebug\nUndefined symbols:\n  \"__omDebugFree\", referenced from:\n      _omtTestFreeDebug in omtTestDebug.o_ndebug\n      _omtTestFreeDebug in omtTestDebug.o_ndebug\n      _omtTestFreeKeep in omtTestKeep.o_ndebug\n      _omtTestFreeKeep in omtTestKeep.o_ndebug\n  \"__omDebugAddr\", referenced from:\n      _omtTestDupDebug in omtTestDebug.o_ndebug\n      _omtTestDupKeep in omtTestKeep.o_ndebug\nld: symbol(s) not found\n```\n\n\nI guess I need to dig into the documentation to track this down. Someone with oMalloc experience would certainly help here :)\n\nCheers,\n\nMichael",
+    "body": "Ok, the problem is when the first ring is instantiated. I tried to verify that omMalloc passes its make check target, but I struck out for now:\n\n```\ngcc -O0 -g -m64  -fPIC -I. -I/Users/mabshoff/sage-3.4.1.rc4-64/local/include -O0 -g -m64  \n-I/Users/mabshoff/sage-3.4.1.rc4-64/local/include -DHAVE_CONFIG_H omtTest.o_ndebug \nomtTestReal.o_ndebug omtTestDebug.o_ndebug omtTestKeep.o_ndebug omtTestError.o_ndebug \n-DOM_NDEBUG -L. -lomalloc_ndebug -o omtTest_ndebug\nUndefined symbols:\n  \"__omDebugFree\", referenced from:\n      _omtTestFreeDebug in omtTestDebug.o_ndebug\n      _omtTestFreeDebug in omtTestDebug.o_ndebug\n      _omtTestFreeKeep in omtTestKeep.o_ndebug\n      _omtTestFreeKeep in omtTestKeep.o_ndebug\n  \"__omDebugAddr\", referenced from:\n      _omtTestDupDebug in omtTestDebug.o_ndebug\n      _omtTestDupKeep in omtTestKeep.o_ndebug\nld: symbol(s) not found\n```\n\nI guess I need to dig into the documentation to track this down. Someone with oMalloc experience would certainly help here :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-23T06:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -100,7 +100,6 @@ Undefined symbols:
       _omtTestDupKeep in omtTestKeep.o_ndebug
 ld: symbol(s) not found
 ```
-
 
 I guess I need to dig into the documentation to track this down. Someone with oMalloc experience would certainly help here :)
 
@@ -133,7 +132,7 @@ Did you ping Hannes on this? Why did you remove `RTLD_GLOBAL`? IIRC this is rath
 archive/issue_comments_046220.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> Did you ping Hannes on this?\n\nI did just run `make check` after running `spkg-install` manually, so I assume that a proper `configure` run should result in something useful. \n\n>  Why did you remove `RTLD_GLOBAL`? IIRC this is rather crucial.\n\nI think the removal of `RTLD_GLOBAL` should not happen. I don't think you need it when using `dlsym()`, but it does not hurt either. As is the patch should not go in since we depend on the mangled name of `siInit` and should declare that function as `extern C` to have an unmangled name. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 malb]:\n> Did you ping Hannes on this?\n\n\nI did just run `make check` after running `spkg-install` manually, so I assume that a proper `configure` run should result in something useful. \n\n>  Why did you remove `RTLD_GLOBAL`? IIRC this is rather crucial.\n\n\nI think the removal of `RTLD_GLOBAL` should not happen. I don't think you need it when using `dlsym()`, but it does not hurt either. As is the patch should not go in since we depend on the mangled name of `siInit` and should declare that function as `extern C` to have an unmangled name. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-23T08:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -145,9 +144,11 @@ archive/issue_comments_046220.json:
 Replying to [comment:3 malb]:
 > Did you ping Hannes on this?
 
+
 I did just run `make check` after running `spkg-install` manually, so I assume that a proper `configure` run should result in something useful. 
 
 >  Why did you remove `RTLD_GLOBAL`? IIRC this is rather crucial.
+
 
 I think the removal of `RTLD_GLOBAL` should not happen. I don't think you need it when using `dlsym()`, but it does not hurt either. As is the patch should not go in since we depend on the mangled name of `siInit` and should declare that function as `extern C` to have an unmangled name. 
 
@@ -190,7 +191,7 @@ Cheers, gsw
 archive/issue_comments_046222.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> The problem is that siInit doesn't get called on 64 bit OSX (William and I verified by adding a printf() statement). After this patch it gets called, but the allocation still fails, so we need to dig a little deeper.\n\nI cannot confirm this, siInit does get called, I just added a `printf` statement myself.",
+    "body": "Replying to [comment:1 mabshoff]:\n> The problem is that siInit doesn't get called on 64 bit OSX (William and I verified by adding a printf() statement). After this patch it gets called, but the allocation still fails, so we need to dig a little deeper.\n\n\nI cannot confirm this, siInit does get called, I just added a `printf` statement myself.",
     "created_at": "2009-05-11T17:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -201,6 +202,7 @@ archive/issue_comments_046222.json:
 
 Replying to [comment:1 mabshoff]:
 > The problem is that siInit doesn't get called on 64 bit OSX (William and I verified by adding a printf() statement). After this patch it gets called, but the allocation still fails, so we need to dig a little deeper.
+
 
 I cannot confirm this, siInit does get called, I just added a `printf` statement myself.
 
@@ -235,7 +237,7 @@ Linker fun ahead!
 archive/issue_comments_046224.json:
 ```json
 {
-    "body": "\n```\nbash-3.2$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ns_bin->bin->current_page 106e83000\ns_bin->bin->current_page 0\nYou rock!\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: x^20\nx^20\nsage: x^20 + y\nx^20 + y\n```\n",
+    "body": "```\nbash-3.2$ uname -a\nDarwin bsd.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386\n\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ns_bin->bin->current_page 106e83000\ns_bin->bin->current_page 0\nYou rock!\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: x^20\nx^20\nsage: x^20 + y\nx^20 + y\n```",
     "created_at": "2009-05-11T18:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -243,7 +245,6 @@ archive/issue_comments_046224.json:
     "user": "https://github.com/malb"
 }
 ```
-
 
 ```
 bash-3.2$ uname -a
@@ -261,7 +262,6 @@ x^20
 sage: x^20 + y
 x^20 + y
 ```
-
 
 
 
@@ -290,7 +290,7 @@ removes linking in static libraries
 archive/issue_comments_046226.json:
 ```json
 {
-    "body": "The attached patch `libsingular_osx64.patch` + the spkg at\n\n  http://sage.math.washington.edu/home/malb/spkgs/singular-3-0-4-4-20090511.spkg\n\nwe get:\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/calculus/calculus.py # 0 doctests failed\n        sage -t  devel/sage/sage/libs/pari/gen.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/interfaces/maxima.py # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1579.9 seconds\n```\n\n\nI also tested it on sage.math, doctests still running.",
+    "body": "The attached patch `libsingular_osx64.patch` + the spkg at\n\n  http://sage.math.washington.edu/home/malb/spkgs/singular-3-0-4-4-20090511.spkg\n\nwe get:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/calculus/calculus.py # 0 doctests failed\n        sage -t  devel/sage/sage/libs/pari/gen.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/interfaces/maxima.py # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1579.9 seconds\n```\n\nI also tested it on sage.math, doctests still running.",
     "created_at": "2009-05-11T19:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -305,7 +305,6 @@ The attached patch `libsingular_osx64.patch` + the spkg at
 
 we get:
 
-
 ```
 The following tests failed:
 
@@ -316,7 +315,6 @@ The following tests failed:
 Total time for all tests: 1579.9 seconds
 ```
 
-
 I also tested it on sage.math, doctests still running.
 
 
@@ -326,7 +324,7 @@ I also tested it on sage.math, doctests still running.
 archive/issue_comments_046227.json:
 ```json
 {
-    "body": "Hi,\nthe hg repository of the spkg posted is unclean, \"hg diff\" gives:\n\n```\ndiff -r aff77485c3e8 patches/src.Singular.Makefile.in\n--- a/patches/src.Singular.Makefile.in  Mon May 11 11:27:30 2009 -0700\n+++ b/patches/src.Singular.Makefile.in  Mon May 11 23:25:18 2009 +0200\n@@ -101,7 +101,7 @@\n #\n # Handle libSINGULAR stuff\n #\n-LIBSINGULAR_LIBS =-lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc_ndebug\n+LIBSINGULAR_LIBS =-lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc\n \n SO_SUFFIX = so\n #LIBSINGULAR_FLAGS = -export-dynamic \n```\n\n(The file as-is should be the correct one, so just has to be checked in. There is an editor-artifact file of the same name followed by a tilde in the spkg.)\n\nThe changes themselves look pretty reasonable and OK to me, but I can't test this on a OS X 64-bit system. I could test only whether they don't break anything on OS X 10.4 32-bit, and I have not done this yet. However, \"1579.9 seconds\" looks awesome --- on my MacIntel box with 2 GHz Core2Duo and Mac OS X 10.4, \"make -j2 test\" needs over 6000 seconds.",
+    "body": "Hi,\nthe hg repository of the spkg posted is unclean, \"hg diff\" gives:\n\n```\ndiff -r aff77485c3e8 patches/src.Singular.Makefile.in\n--- a/patches/src.Singular.Makefile.in  Mon May 11 11:27:30 2009 -0700\n+++ b/patches/src.Singular.Makefile.in  Mon May 11 23:25:18 2009 +0200\n@@ -101,7 +101,7 @@\n #\n # Handle libSINGULAR stuff\n #\n-LIBSINGULAR_LIBS =-lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc_ndebug\n+LIBSINGULAR_LIBS =-lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc\n \n SO_SUFFIX = so\n #LIBSINGULAR_FLAGS = -export-dynamic \n```\n(The file as-is should be the correct one, so just has to be checked in. There is an editor-artifact file of the same name followed by a tilde in the spkg.)\n\nThe changes themselves look pretty reasonable and OK to me, but I can't test this on a OS X 64-bit system. I could test only whether they don't break anything on OS X 10.4 32-bit, and I have not done this yet. However, \"1579.9 seconds\" looks awesome --- on my MacIntel box with 2 GHz Core2Duo and Mac OS X 10.4, \"make -j2 test\" needs over 6000 seconds.",
     "created_at": "2009-05-11T21:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5862",
     "type": "issue_comment",
@@ -352,7 +350,6 @@ diff -r aff77485c3e8 patches/src.Singular.Makefile.in
  SO_SUFFIX = so
  #LIBSINGULAR_FLAGS = -export-dynamic 
 ```
-
 (The file as-is should be the correct one, so just has to be checked in. There is an editor-artifact file of the same name followed by a tilde in the spkg.)
 
 The changes themselves look pretty reasonable and OK to me, but I can't test this on a OS X 64-bit system. I could test only whether they don't break anything on OS X 10.4 32-bit, and I have not done this yet. However, "1579.9 seconds" looks awesome --- on my MacIntel box with 2 GHz Core2Duo and Mac OS X 10.4, "make -j2 test" needs over 6000 seconds.

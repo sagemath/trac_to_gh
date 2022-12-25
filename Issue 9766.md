@@ -3,7 +3,7 @@
 archive/issues_009766.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @nathanncohen @nexttime\n\nThere's a test suite which can be run easily - see below. \n\n\n```\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ make testcases\ngcc -Wall -O3 -fomit-frame-pointer -funroll-loops   -c -o testcases.o testcases.c\ngcc  -o testcases testcases.o cliquer.o graph.o reorder.o\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ ./testcases\n\nRunning testcases:  ELEMENTSIZE=32, sizeof(setelement)=4  (OK)\n\nTesting small: graph_test...OK\nTesting large: graph_test...OK\nTesting wlarge: graph_test...OK\n\nTesting small: single maximum clique...OK\nTesting large: single maximum clique...OK\nTesting small: single 3-sized clique...OK\nTesting large: single 8-sized clique...OK\n\nTesting small: all maximum cliques...OK\nTesting large: all maximum cliques...OK\nTesting small: all min 3-sized cliques...OK\nTesting large: all min 8-sized cliques...OK\nTesting large: all exactly 8-sized cliques...OK\n\nTesting large: max clique size...OK\nTesting weighted large: max clique weight...OK\n\nTesting large: user_function w/ abort for 8-sized cliques...OK\nTesting large: too small array for all maximum cliques...OK\n\nTesting weighted large: single max weighted clique...OK (w=66)\nTesting weighted large: single min 60 weighted clique...OK (w=63)\nTesting weighted large: single exactly 62 weighted clique...OK (w=62)\nTesting weighted large: all max weighted cliques...OK\nTesting weighted large: all min 60 weighted cliques...OK\nTesting weighted large: all 60...64 weighted maximal cliques...OK\n\nTesting re-entrance...OK\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9767\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nathanncohen @nexttime\n\nThere's a test suite which can be run easily - see below. \n\n```\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ make testcases\ngcc -Wall -O3 -fomit-frame-pointer -funroll-loops   -c -o testcases.o testcases.c\ngcc  -o testcases testcases.o cliquer.o graph.o reorder.o\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ ./testcases\n\nRunning testcases:  ELEMENTSIZE=32, sizeof(setelement)=4  (OK)\n\nTesting small: graph_test...OK\nTesting large: graph_test...OK\nTesting wlarge: graph_test...OK\n\nTesting small: single maximum clique...OK\nTesting large: single maximum clique...OK\nTesting small: single 3-sized clique...OK\nTesting large: single 8-sized clique...OK\n\nTesting small: all maximum cliques...OK\nTesting large: all maximum cliques...OK\nTesting small: all min 3-sized cliques...OK\nTesting large: all min 8-sized cliques...OK\nTesting large: all exactly 8-sized cliques...OK\n\nTesting large: max clique size...OK\nTesting weighted large: max clique weight...OK\n\nTesting large: user_function w/ abort for 8-sized cliques...OK\nTesting large: too small array for all maximum cliques...OK\n\nTesting weighted large: single max weighted clique...OK (w=66)\nTesting weighted large: single min 60 weighted clique...OK (w=63)\nTesting weighted large: single exactly 62 weighted clique...OK (w=62)\nTesting weighted large: all max weighted cliques...OK\nTesting weighted large: all min 60 weighted cliques...OK\nTesting weighted large: all 60...64 weighted maximal cliques...OK\n\nTesting re-entrance...OK\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9767\n\n",
     "created_at": "2010-08-19T15:05:00Z",
     "labels": [
         "component: spkg-check",
@@ -21,7 +21,6 @@ Assignee: drkirkby
 CC:  @nathanncohen @nexttime
 
 There's a test suite which can be run easily - see below. 
-
 
 ```
 drkirkby@hawk:~/cliquer-1.2.p6/src$ make testcases
@@ -62,7 +61,6 @@ Testing weighted large: all 60...64 weighted maximal cliques...OK
 Testing re-entrance...OK
 drkirkby@hawk:~/cliquer-1.2.p6/src$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9767
 

@@ -3,7 +3,7 @@
 archive/issues_007868.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: fraction field, factorization\n\nThe following is a quote from John Cremona, \n\n    http://groups.google.com/group/sage-devel/browse_thread/thread/3638a91c0438f439\n\nI define a rational function in two variables over a finite field:\n\n\n```\nsage: R.<x,y> = GF(2)[]\nsage: f = x*y/(x+y)\nsage: f.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Finite\nField of size 2\n\n```\n\n\nI try to factor it, and get this error:\n\n\n```\nsage: f.factor()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/fraction_field_element.so\nin sage.rings.fraction_field_element.FractionFieldElement.factor\n(sage/rings/fraction_field_element.c:2972)()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so\nin sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n(sage/rings/polynomial/multi_polynomial_libsingular.cpp:22701)()\n\nNotImplementedError: proof = True factorization not implemented.  Call\nfactor with proof=False.\n\n```\n\n\nSo I do what I am told, but:\n\n\n```\nsage: f.factor(proof=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\nTypeError: factor() takes no keyword arguments\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7868\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: fraction field, factorization\n\nThe following is a quote from John Cremona, \n\n    http://groups.google.com/group/sage-devel/browse_thread/thread/3638a91c0438f439\n\nI define a rational function in two variables over a finite field:\n\n```\nsage: R.<x,y> = GF(2)[]\nsage: f = x*y/(x+y)\nsage: f.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Finite\nField of size 2\n\n```\n\nI try to factor it, and get this error:\n\n```\nsage: f.factor()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/fraction_field_element.so\nin sage.rings.fraction_field_element.FractionFieldElement.factor\n(sage/rings/fraction_field_element.c:2972)()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so\nin sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n(sage/rings/polynomial/multi_polynomial_libsingular.cpp:22701)()\n\nNotImplementedError: proof = True factorization not implemented.  Call\nfactor with proof=False.\n\n```\n\nSo I do what I am told, but:\n\n```\nsage: f.factor(proof=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\nTypeError: factor() takes no keyword arguments\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7868\n\n",
     "created_at": "2010-01-07T17:07:43Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ The following is a quote from John Cremona,
 
 I define a rational function in two variables over a finite field:
 
-
 ```
 sage: R.<x,y> = GF(2)[]
 sage: f = x*y/(x+y)
@@ -39,9 +38,7 @@ Field of size 2
 
 ```
 
-
 I try to factor it, and get this error:
-
 
 ```
 sage: f.factor()
@@ -64,9 +61,7 @@ factor with proof=False.
 
 ```
 
-
 So I do what I am told, but:
-
 
 ```
 sage: f.factor(proof=False)
@@ -79,7 +74,6 @@ in <module>()
 TypeError: factor() takes no keyword arguments
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7868
@@ -484,7 +478,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_068142.json:
 ```json
 {
-    "body": "Sorry, there's a conflict:\n\n```\npatching file sage/rings/fraction_field_element.pyx\nHunk #1 FAILED at 212\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/fraction_field_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 7868-fix.2.patch\n```\n",
+    "body": "Sorry, there's a conflict:\n\n```\npatching file sage/rings/fraction_field_element.pyx\nHunk #1 FAILED at 212\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/fraction_field_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 7868-fix.2.patch\n```",
     "created_at": "2010-01-13T08:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -503,7 +497,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh 7868-fix.2.patch
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004194.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvgnu @mwhansen @jasongrout\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n```\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n```\n\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvgnu @mwhansen @jasongrout\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n{{{\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n}}}\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
     "created_at": "2008-09-25T10:21:00Z",
     "labels": [
         "component: graphics",
@@ -24,12 +24,13 @@ Keywords: plot
 
 On Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:
 > Dear all,
+
 >
 > When I upgraded to 3.1.2, I found that some of my plots generated
 > using pylab in the notebooks miss their bottom bits. It seems to be
 > related to the dpi setting. Example:
 
-```
+{{{
 import pylab
 x1 = srange(0,1.1,0.01)
 d1 = [2*x+x^2 for x in x1]
@@ -39,8 +40,7 @@ pylab.plot(x1,d1, label="d1")
 pylab.ylabel("$f(x)$") # label the axes
 pylab.xlabel("$x$")
 pylab.savefig('foo.png',dpi=72) # fire!
-```
-
+}}}
 > If I leave the "dpi=72" out in the last line, the plot is larger and
 > complete. This problem did not occur in sage 3.1.1, so I assume that
 > it is a bug.
@@ -76,7 +76,7 @@ We also encounter similar issues with numpy and scipy.
 archive/issue_comments_030375.json:
 ```json
 {
-    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by @kcrisman created at 2009-09-15 17:34:07\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
+    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by @kcrisman created at 2009-09-15 17:34:07\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\nfoo.png is attached.",
     "created_at": "2009-09-15T17:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ sage: pylab.xlabel("$x$")
 <matplotlib.text.Text object at 0x1038890>
 sage: pylab.savefig('foo.png',dpi=72)
 ```
-
 foo.png is attached.
 
 
@@ -133,7 +132,7 @@ kcrisman says this works now, so should be closed.
 archive/issue_comments_030377.json:
 ```json
 {
-    "body": "Don't close this.\n\nSomething really, really weird is going on.\n\nIn a fresh Sage session (not even in the notebook, just in a Sage console session), running the following (simplified from above) code produces png that is cut off which is about 12K:\n\n\n```\nimport matplotlib.pyplot as plt\nimport numpy\nplt.figure()\nplt.plot(numpy.arange(0,1.1,0.01))\nplt.savefig('foo.png',dpi=72) # fire!\n```\n\n\nHowever, immediately saving the figure again using `plt.savefig('foo.png',dpi=72)` writes a 13K file which is not cut off.\n\nDoing the same test with sage -python yields the correct figure the first time.  Doing the same test with the system python yields the correct figure the first time.  This is with the matplotlib 0.99.1 spkg installed.",
+    "body": "Don't close this.\n\nSomething really, really weird is going on.\n\nIn a fresh Sage session (not even in the notebook, just in a Sage console session), running the following (simplified from above) code produces png that is cut off which is about 12K:\n\n```\nimport matplotlib.pyplot as plt\nimport numpy\nplt.figure()\nplt.plot(numpy.arange(0,1.1,0.01))\nplt.savefig('foo.png',dpi=72) # fire!\n```\n\nHowever, immediately saving the figure again using `plt.savefig('foo.png',dpi=72)` writes a 13K file which is not cut off.\n\nDoing the same test with sage -python yields the correct figure the first time.  Doing the same test with the system python yields the correct figure the first time.  This is with the matplotlib 0.99.1 spkg installed.",
     "created_at": "2009-10-01T03:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
@@ -148,7 +147,6 @@ Something really, really weird is going on.
 
 In a fresh Sage session (not even in the notebook, just in a Sage console session), running the following (simplified from above) code produces png that is cut off which is about 12K:
 
-
 ```
 import matplotlib.pyplot as plt
 import numpy
@@ -156,7 +154,6 @@ plt.figure()
 plt.plot(numpy.arange(0,1.1,0.01))
 plt.savefig('foo.png',dpi=72) # fire!
 ```
-
 
 However, immediately saving the figure again using `plt.savefig('foo.png',dpi=72)` writes a 13K file which is not cut off.
 

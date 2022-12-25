@@ -3,7 +3,7 @@
 archive/issues_002006.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nGap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2006\n\n",
+    "body": "Assignee: mabshoff\n\nGap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2006\n\n",
     "created_at": "2008-01-31T23:16:28Z",
     "labels": [
         "component: packages: standard",
@@ -23,7 +23,6 @@ Gap contains this binary.  It should be deleted:
 ```
 sage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv
 ```
-
 
 
 
@@ -76,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_012947.json:
 ```json
 {
-    "body": "Gap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\nCheers,\n\nMichael",
+    "body": "Gap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T23:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
@@ -91,7 +90,6 @@ Gap contains this binary.  It should be deleted:
 sage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv
 ```
 
-
 Cheers,
 
 Michael
@@ -103,7 +101,7 @@ Michael
 archive/issue_comments_012948.json:
 ```json
 {
-    "body": "Replying to [comment:1 wdj]:\n> Is there a way that this can be compiled during installation? The instructions are at\n> http://sage.math.washington.edu/home/wdj/guava/\n\nI remember somebody (rlm?) mentioning that it leaked like a sieve. Am I mistaken?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 wdj]:\n> Is there a way that this can be compiled during installation? The instructions are at\n> http://sage.math.washington.edu/home/wdj/guava/\n\n\nI remember somebody (rlm?) mentioning that it leaked like a sieve. Am I mistaken?\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T23:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
@@ -115,6 +113,7 @@ archive/issue_comments_012948.json:
 Replying to [comment:1 wdj]:
 > Is there a way that this can be compiled during installation? The instructions are at
 > http://sage.math.washington.edu/home/wdj/guava/
+
 
 I remember somebody (rlm?) mentioning that it leaked like a sieve. Am I mistaken?
 

@@ -157,7 +157,7 @@ Clarification of QQ.gcd in rings/ring.pyx. Also includes doctests for several ba
 archive/issue_comments_015631.json:
 ```json
 {
-    "body": "The extra patches and clarifications look good, with one very small exception:  ZZ.gens() returns a tuple of length 1, not 2!\n\n\n```\nsage: ZZ.gens()\n(1,)\nsage: len(ZZ.gens())\n1\n```\n\n\nIt's just that Python displays 1-tuples with a trailing comma.",
+    "body": "The extra patches and clarifications look good, with one very small exception:  ZZ.gens() returns a tuple of length 1, not 2!\n\n```\nsage: ZZ.gens()\n(1,)\nsage: len(ZZ.gens())\n1\n```\n\nIt's just that Python displays 1-tuples with a trailing comma.",
     "created_at": "2008-03-08T09:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2340",
     "type": "issue_comment",
@@ -168,14 +168,12 @@ archive/issue_comments_015631.json:
 
 The extra patches and clarifications look good, with one very small exception:  ZZ.gens() returns a tuple of length 1, not 2!
 
-
 ```
 sage: ZZ.gens()
 (1,)
 sage: len(ZZ.gens())
 1
 ```
-
 
 It's just that Python displays 1-tuples with a trailing comma.
 

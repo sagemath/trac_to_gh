@@ -3,7 +3,7 @@
 archive/issues_007838.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\n\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
     "created_at": "2010-01-04T03:07:50Z",
     "labels": [
         "component: build",
@@ -22,12 +22,10 @@ CC:  @jaapspies vengoroso@gmail.com
 
 #1497 added a few lines of code 
 
-
 ```/usr/bin/env
 import ctypes
 print str(8*ctypes.sizeof(ctypes.c_long))
 ```
-
 into the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but 
 
 http://docs.activestate.com/activepython/2.5/whatsincluded.html
@@ -122,7 +120,7 @@ Dave
 archive/issue_comments_067785.json:
 ```json
 {
-    "body": "The fix looks good.\n\nMy setup is clearly not ok. The build failed at the end:\n\n\n```\nATLAS install complete.  Examine \nATLAS/bin/<arch>/INSTALL_LOG/SUMMARY.LOG for details.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nmake clean\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nrm -f *.o x* config?.out *core*\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nFinished building ATLAS core\nThe Makefile generated in ATLAS for building shared libraries\nassumes the linker is the GNU linker, which it not true in\nyour setup. (It is generally considered better to use the\nSun linker in /usr/ccs/bin rather than the GNU linker from binutils)\nThe linker flags in /export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib/Makefile will be changed. \n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\nrm -f libatlas.so liblapack.so\nmake libatlas.so liblapack.so libf77blas.so libcblas.so liblapack.so\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nld -melf_x86_64 -G -h libatlas.so -o libatlas.so \\\n        -z allextract libatlas.a -z defaultextract -lc -lm\nld: warning: file libatlas.a(ATL_flushcache.o): wrong ELF class: ELFCLASS64\nld: fatal: entry point symbol `lf_x86_64' is undefined\nmake[1]: *** [libatlas.so] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nmake: *** [shared] Error 2\nBuilding shared ATLAS libraries failed\nFailed to build ATLAS.\n\nreal\t155m22.653s\nuser\t147m22.502s\nsys\t6m4.162s\nsage: An error occurred while installing atlas-3.8.3.p10\n\n```\n\n\nMaybe I should use gcc gcc-4.4.2 with the gnu loader?\n\nJaap",
+    "body": "The fix looks good.\n\nMy setup is clearly not ok. The build failed at the end:\n\n```\nATLAS install complete.  Examine \nATLAS/bin/<arch>/INSTALL_LOG/SUMMARY.LOG for details.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nmake clean\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nrm -f *.o x* config?.out *core*\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nFinished building ATLAS core\nThe Makefile generated in ATLAS for building shared libraries\nassumes the linker is the GNU linker, which it not true in\nyour setup. (It is generally considered better to use the\nSun linker in /usr/ccs/bin rather than the GNU linker from binutils)\nThe linker flags in /export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib/Makefile will be changed. \n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\nrm -f libatlas.so liblapack.so\nmake libatlas.so liblapack.so libf77blas.so libcblas.so liblapack.so\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nld -melf_x86_64 -G -h libatlas.so -o libatlas.so \\\n        -z allextract libatlas.a -z defaultextract -lc -lm\nld: warning: file libatlas.a(ATL_flushcache.o): wrong ELF class: ELFCLASS64\nld: fatal: entry point symbol `lf_x86_64' is undefined\nmake[1]: *** [libatlas.so] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nmake: *** [shared] Error 2\nBuilding shared ATLAS libraries failed\nFailed to build ATLAS.\n\nreal\t155m22.653s\nuser\t147m22.502s\nsys\t6m4.162s\nsage: An error occurred while installing atlas-3.8.3.p10\n\n```\n\nMaybe I should use gcc gcc-4.4.2 with the gnu loader?\n\nJaap",
     "created_at": "2010-01-05T14:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ archive/issue_comments_067785.json:
 The fix looks good.
 
 My setup is clearly not ok. The build failed at the end:
-
 
 ```
 ATLAS install complete.  Examine 
@@ -175,7 +172,6 @@ sage: An error occurred while installing atlas-3.8.3.p10
 
 ```
 
-
 Maybe I should use gcc gcc-4.4.2 with the gnu loader?
 
 Jaap
@@ -187,7 +183,7 @@ Jaap
 archive/issue_comments_067786.json:
 ```json
 {
-    "body": "\n```\nJavier Lopez\n to wstein\n\t\nshow details 4:39 AM (1 hour ago)\n\t\nHi William,\n\nreply here since I've got no trac account. My full name is Javier\nL\u00f3pez Pe\u00f1a, but no credit is needed for such a small contribution.\n\nCheers\nJ\n```\n",
+    "body": "```\nJavier Lopez\n to wstein\n\t\nshow details 4:39 AM (1 hour ago)\n\t\nHi William,\n\nreply here since I've got no trac account. My full name is Javier\nL\u00f3pez Pe\u00f1a, but no credit is needed for such a small contribution.\n\nCheers\nJ\n```",
     "created_at": "2010-01-05T14:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
@@ -195,7 +191,6 @@ archive/issue_comments_067786.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Javier Lopez
@@ -211,7 +206,6 @@ López Peña, but no credit is needed for such a small contribution.
 Cheers
 J
 ```
-
 
 
 

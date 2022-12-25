@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070278.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> If it's possible, I'd like to get into 0.7.1 as many of the now remaining \"needs review\" tickets as we can.  I'm rebasing these now.\nHere's a possible queue:\n\n```\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.3.patch\n```\n",
+    "body": "Replying to [comment:2 mpatel]:\n> If it's possible, I'd like to get into 0.7.1 as many of the now remaining \"needs review\" tickets as we can.  I'm rebasing these now.\n\nHere's a possible queue:\n\n```\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.3.patch\n```",
     "created_at": "2010-01-25T07:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -78,6 +78,7 @@ archive/issue_comments_070278.json:
 
 Replying to [comment:2 mpatel]:
 > If it's possible, I'd like to get into 0.7.1 as many of the now remaining "needs review" tickets as we can.  I'm rebasing these now.
+
 Here's a possible queue:
 
 ```
@@ -89,7 +90,6 @@ trac_7506-notebook_object-documentation.2.patch
 trac_693-spawn_notebook.3.patch
 trac_5177-delete-cell-dirs.3.patch
 ```
-
 
 
 
@@ -156,7 +156,7 @@ btw: the link from description "says" http://boxen.math.washington.edu/home/mpat
 archive/issue_comments_070282.json:
 ```json
 {
-    "body": "Replying to [comment:9 robert.marik]:\n> All tickets got positive review and have been merged. So what should be reviewed in this ticket?\n\nYou need to make sure that you can successfully install the updated spkg.\n\n\n\n\n\n> I installed the spkg, seems to work fine (but I did not test everything), is this enough to give positive review?\n\nI would say, all doctests must pass as well. In any case, if you can't run all doctests after installing the updated spkg, I can do that. A correct link to the updated spkg is\n\nhttp://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg",
+    "body": "Replying to [comment:9 robert.marik]:\n> All tickets got positive review and have been merged. So what should be reviewed in this ticket?\n\n\nYou need to make sure that you can successfully install the updated spkg.\n\n\n\n\n\n> I installed the spkg, seems to work fine (but I did not test everything), is this enough to give positive review?\n\n\nI would say, all doctests must pass as well. In any case, if you can't run all doctests after installing the updated spkg, I can do that. A correct link to the updated spkg is\n\nhttp://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg",
     "created_at": "2010-01-31T23:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -168,6 +168,7 @@ archive/issue_comments_070282.json:
 Replying to [comment:9 robert.marik]:
 > All tickets got positive review and have been merged. So what should be reviewed in this ticket?
 
+
 You need to make sure that you can successfully install the updated spkg.
 
 
@@ -175,6 +176,7 @@ You need to make sure that you can successfully install the updated spkg.
 
 
 > I installed the spkg, seems to work fine (but I did not test everything), is this enough to give positive review?
+
 
 I would say, all doctests must pass as well. In any case, if you can't run all doctests after installing the updated spkg, I can do that. A correct link to the updated spkg is
 
@@ -187,7 +189,7 @@ http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg
 archive/issue_comments_070283.json:
 ```json
 {
-    "body": "I don't understand why the spkg is not managed by Mercurial:\n\n```\n[mvngu@mod sagenb-0.7.2]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```\n\nThe file `spkg-install` should have its executable bits on:\n\n```\n[mvngu@mod sagenb-0.7.2]$ ls -g spkg-install\n-rw-r--r-- 1 mvngu 348 2010-01-30 16:37 spkg-install\n```\n\nAnd `SPKG.txt` is very sketchy about update details.",
+    "body": "I don't understand why the spkg is not managed by Mercurial:\n\n```\n[mvngu@mod sagenb-0.7.2]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```\nThe file `spkg-install` should have its executable bits on:\n\n```\n[mvngu@mod sagenb-0.7.2]$ ls -g spkg-install\n-rw-r--r-- 1 mvngu 348 2010-01-30 16:37 spkg-install\n```\nAnd `SPKG.txt` is very sketchy about update details.",
     "created_at": "2010-01-31T23:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -202,14 +204,12 @@ I don't understand why the spkg is not managed by Mercurial:
 [mvngu@mod sagenb-0.7.2]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
-
 The file `spkg-install` should have its executable bits on:
 
 ```
 [mvngu@mod sagenb-0.7.2]$ ls -g spkg-install
 -rw-r--r-- 1 mvngu 348 2010-01-30 16:37 spkg-install
 ```
-
 And `SPKG.txt` is very sketchy about update details.
 
 
@@ -246,7 +246,7 @@ Thanks for pointing out the link error.  I've updated it.
 archive/issue_comments_070285.json:
 ```json
 {
-    "body": "The repository is in `sagenb-0.7.2/src/sagenb`.  We auto-generate the package with `sagenb-0.7.2/src/sagenb/spkg-dist`.\n\nI suggest that I make a separate ticket to update SPKG.txt.\n\nSee #7784 about\n\n```\n$ hg stat\n? release_notes.txt\n? setup.cfg\n```\n",
+    "body": "The repository is in `sagenb-0.7.2/src/sagenb`.  We auto-generate the package with `sagenb-0.7.2/src/sagenb/spkg-dist`.\n\nI suggest that I make a separate ticket to update SPKG.txt.\n\nSee #7784 about\n\n```\n$ hg stat\n? release_notes.txt\n? setup.cfg\n```",
     "created_at": "2010-01-31T23:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -269,13 +269,12 @@ $ hg stat
 
 
 
-
 ---
 
 archive/issue_comments_070286.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> I suggest that I make a separate ticket to update SPKG.txt.\n\nOr I can do this here later today.",
+    "body": "Replying to [comment:13 mpatel]:\n> I suggest that I make a separate ticket to update SPKG.txt.\n\n\nOr I can do this here later today.",
     "created_at": "2010-01-31T23:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -286,6 +285,7 @@ archive/issue_comments_070286.json:
 
 Replying to [comment:13 mpatel]:
 > I suggest that I make a separate ticket to update SPKG.txt.
+
 
 Or I can do this here later today.
 
@@ -372,7 +372,7 @@ Is there a mailing list or wiki page for coordinating development effort?
 archive/issue_comments_070291.json:
 ```json
 {
-    "body": "Replying to [comment:18 acleone]:\n> Is there a mailing list or wiki page for coordinating development effort?\n\nA relevant mailing is [sage-devel](http://groups.google.com/group/sage-devel). Most of the time, that list receives high volume traffic on development discussion. For coordinating release effort, the [sage-release](http://groups.google.com/group/sage-release) mailing list is appropriate. Some effort is underway to expand the Sage documentation with information to help beginners getting started with Sage development. The relevant tickets are:\n\n1. #8108: Expand the Sage Developer Guide for newcomers\n2. #6987: reorganize section on producing patches with Mercurial\n3. #8079: Better documentation for patching spgk's\n4. #8104: developer's guide for making spkgs should specify that patches need to be version controlled\n5. #3882: explain in the programming guide why spkg source patches should be applied by copying entire files\n6. #7944: update Developers' Guide to reflect new process for working on tickets",
+    "body": "Replying to [comment:18 acleone]:\n> Is there a mailing list or wiki page for coordinating development effort?\n\n\nA relevant mailing is [sage-devel](http://groups.google.com/group/sage-devel). Most of the time, that list receives high volume traffic on development discussion. For coordinating release effort, the [sage-release](http://groups.google.com/group/sage-release) mailing list is appropriate. Some effort is underway to expand the Sage documentation with information to help beginners getting started with Sage development. The relevant tickets are:\n\n1. #8108: Expand the Sage Developer Guide for newcomers\n2. #6987: reorganize section on producing patches with Mercurial\n3. #8079: Better documentation for patching spgk's\n4. #8104: developer's guide for making spkgs should specify that patches need to be version controlled\n5. #3882: explain in the programming guide why spkg source patches should be applied by copying entire files\n6. #7944: update Developers' Guide to reflect new process for working on tickets",
     "created_at": "2010-02-01T05:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -383,6 +383,7 @@ archive/issue_comments_070291.json:
 
 Replying to [comment:18 acleone]:
 > Is there a mailing list or wiki page for coordinating development effort?
+
 
 A relevant mailing is [sage-devel](http://groups.google.com/group/sage-devel). Most of the time, that list receives high volume traffic on development discussion. For coordinating release effort, the [sage-release](http://groups.google.com/group/sage-release) mailing list is appropriate. Some effort is underway to expand the Sage documentation with information to help beginners getting started with Sage development. The relevant tickets are:
 
@@ -444,7 +445,7 @@ Just some thoughts.
 archive/issue_comments_070294.json:
 ```json
 {
-    "body": "Installs fine, works fine with jsmath image fonts, tests paseed, cannot check the rest, since I have probably old hg in my Debian Linux\n\n```\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg log\nabort: requirement 'fncache' not supported!\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status\nabort: requirement 'fncache' not supported!\n```\n\n\nCan someone finish testing? I think that this is very important ticket and nice sage notebook is important to attract new users (and new developers). Thank you for working on it.",
+    "body": "Installs fine, works fine with jsmath image fonts, tests paseed, cannot check the rest, since I have probably old hg in my Debian Linux\n\n```\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg log\nabort: requirement 'fncache' not supported!\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status\nabort: requirement 'fncache' not supported!\n```\n\nCan someone finish testing? I think that this is very important ticket and nice sage notebook is important to attract new users (and new developers). Thank you for working on it.",
     "created_at": "2010-02-02T18:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -461,7 +462,6 @@ abort: requirement 'fncache' not supported!
 sage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status
 abort: requirement 'fncache' not supported!
 ```
-
 
 Can someone finish testing? I think that this is very important ticket and nice sage notebook is important to attract new users (and new developers). Thank you for working on it.
 
@@ -510,7 +510,7 @@ Minh -- Even with #8036, it's very likely the PDF reference manual won't build w
 archive/issue_comments_070297.json:
 ```json
 {
-    "body": "Replying to [comment:24 mpatel]:\n> Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.\n\nThe release deadline for Sage 4.3.2 is Saturday 06th February 2010, which means there's not much time for sorting out failures when building the PDF version of the reference manual. I think [sagenb-0.7.3.spkg](http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.3.spkg) needs to wait for after Sage 4.3.2 is done.",
+    "body": "Replying to [comment:24 mpatel]:\n> Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.\n\n\nThe release deadline for Sage 4.3.2 is Saturday 06th February 2010, which means there's not much time for sorting out failures when building the PDF version of the reference manual. I think [sagenb-0.7.3.spkg](http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.3.spkg) needs to wait for after Sage 4.3.2 is done.",
     "created_at": "2010-02-03T02:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -521,6 +521,7 @@ archive/issue_comments_070297.json:
 
 Replying to [comment:24 mpatel]:
 > Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.
+
 
 The release deadline for Sage 4.3.2 is Saturday 06th February 2010, which means there's not much time for sorting out failures when building the PDF version of the reference manual. I think [sagenb-0.7.3.spkg](http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.3.spkg) needs to wait for after Sage 4.3.2 is done.
 
@@ -567,7 +568,7 @@ I've posted SageNB 0.7.4 for review.
 archive/issue_comments_070300.json:
 ```json
 {
-    "body": "Thanks for the update. But now I have too many sage notebooks\n\n```\n[marik@um-bc107 ../lib/python/site-packages]$ pwd\n/opt/sage/local/lib/python/site-packages\n[marik@um-bc107 ../lib/python/site-packages]$ ls -ld sagenb*\ndrwxr-xr-x 4 marik marik 4096  1.\u00a0\u00fano 17.16 sagenb-0.6-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  2.\u00a0\u00fano 19.33 sagenb-0.7.2-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  5.\u00a0\u00fano 09.13 sagenb-0.7.4-py2.6.egg\n```\n\n\nHow do I know, which one is actually used? Jsmath image fonts failed to install intro correct directory. Should the old sage notebook be removed, first? Should this be tested on fresh install only?",
+    "body": "Thanks for the update. But now I have too many sage notebooks\n\n```\n[marik@um-bc107 ../lib/python/site-packages]$ pwd\n/opt/sage/local/lib/python/site-packages\n[marik@um-bc107 ../lib/python/site-packages]$ ls -ld sagenb*\ndrwxr-xr-x 4 marik marik 4096  1.\u00a0\u00fano 17.16 sagenb-0.6-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  2.\u00a0\u00fano 19.33 sagenb-0.7.2-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  5.\u00a0\u00fano 09.13 sagenb-0.7.4-py2.6.egg\n```\n\nHow do I know, which one is actually used? Jsmath image fonts failed to install intro correct directory. Should the old sage notebook be removed, first? Should this be tested on fresh install only?",
     "created_at": "2010-02-05T08:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -587,7 +588,6 @@ drwxr-xr-x 4 marik marik 4096  2. úno 19.33 sagenb-0.7.2-py2.6.egg
 drwxr-xr-x 4 marik marik 4096  5. úno 09.13 sagenb-0.7.4-py2.6.egg
 ```
 
-
 How do I know, which one is actually used? Jsmath image fonts failed to install intro correct directory. Should the old sage notebook be removed, first? Should this be tested on fresh install only?
 
 
@@ -597,7 +597,7 @@ How do I know, which one is actually used? Jsmath image fonts failed to install 
 archive/issue_comments_070301.json:
 ```json
 {
-    "body": "We install the sagenb package with [setuptools](http://peak.telecommunity.com/DevCenter/setuptools) ([PyPI](http://pypi.python.org/pypi/setuptools)), which updates `SAGE_LOCAL/lib/python/site-packages/easy-install.pth`.  This file contains paths prepended to `sys.path` on startup.\n\nYou can query the installed version with\n\n\n```python\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n```\n\nwhich is essentially\n\n\n```python\nsage: from pkg_resources import Requirement, working_set\nsage: w = working_set.find(Requirement.parse('sagenb'))\nsage: w.version\n```\n\nMoreover, `w.location` gives the install directory.\n\nI'm checking the fonts now...",
+    "body": "We install the sagenb package with [setuptools](http://peak.telecommunity.com/DevCenter/setuptools) ([PyPI](http://pypi.python.org/pypi/setuptools)), which updates `SAGE_LOCAL/lib/python/site-packages/easy-install.pth`.  This file contains paths prepended to `sys.path` on startup.\n\nYou can query the installed version with\n\n```python\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n```\nwhich is essentially\n\n```python\nsage: from pkg_resources import Requirement, working_set\nsage: w = working_set.find(Requirement.parse('sagenb'))\nsage: w.version\n```\nMoreover, `w.location` gives the install directory.\n\nI'm checking the fonts now...",
     "created_at": "2010-02-05T09:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -610,21 +610,17 @@ We install the sagenb package with [setuptools](http://peak.telecommunity.com/De
 
 You can query the installed version with
 
-
 ```python
 sage: from sagenb.misc.misc import SAGENB_VERSION
 sage: SAGENB_VERSION
 ```
-
 which is essentially
-
 
 ```python
 sage: from pkg_resources import Requirement, working_set
 sage: w = working_set.find(Requirement.parse('sagenb'))
 sage: w.version
 ```
-
 Moreover, `w.location` gives the install directory.
 
 I'm checking the fonts now...
@@ -654,7 +650,7 @@ sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  St
 archive/issue_comments_070303.json:
 ```json
 {
-    "body": "On the fonts: What is the output of\n\n```sh\negrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" $SAGE_ROOT/install.log \n```\n\n?",
+    "body": "On the fonts: What is the output of\n\n```sh\negrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" $SAGE_ROOT/install.log \n```\n?",
     "created_at": "2010-02-05T09:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -668,7 +664,6 @@ On the fonts: What is the output of
 ```sh
 egrep "Copying jsMath image"\|"Installed.*sagenb" $SAGE_ROOT/install.log 
 ```
-
 ?
 
 
@@ -678,7 +673,7 @@ egrep "Copying jsMath image"\|"Installed.*sagenb" $SAGE_ROOT/install.log
 archive/issue_comments_070304.json:
 ```json
 {
-    "body": "Replying to [comment:30 acleone]:\n> sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).\nPositive review?",
+    "body": "Replying to [comment:30 acleone]:\n> sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).\n\nPositive review?",
     "created_at": "2010-02-05T10:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -689,6 +684,7 @@ archive/issue_comments_070304.json:
 
 Replying to [comment:30 acleone]:
 > sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).
+
 Positive review?
 
 
@@ -698,7 +694,7 @@ Positive review?
 archive/issue_comments_070305.json:
 ```json
 {
-    "body": "\n```\n$ egrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" ~/sage-dev/sage-4.3.2.alpha1/install.log\nInstalled /home/alex/sage-dev/sage-4.3.2.alpha1/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg\n```\n\nStrange.\n\n\n```\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n'0.7.4'\n```\n\n\nHere's how I installed: \n\n1. `make` on an unmodified 4.3.2.alpha1 \n\n2. \n\n```\n$ tar -jxvf sagenb-0.7.4.spkg\n$ cd sagenb-0.7.4/src/sagenb/\n$ sage -python setup.py develop\n```\n\n3. Tested with `sage -t -sagenb` \n\n4. Selenium tests with `sage -python sagenb/testing/run_tests.py` \n\n5. Checking the PDF build with `sage -docbuild all pdf`",
+    "body": "```\n$ egrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" ~/sage-dev/sage-4.3.2.alpha1/install.log\nInstalled /home/alex/sage-dev/sage-4.3.2.alpha1/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg\n```\nStrange.\n\n```\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n'0.7.4'\n```\n\nHere's how I installed: \n\n1. `make` on an unmodified 4.3.2.alpha1 \n\n2. \n\n```\n$ tar -jxvf sagenb-0.7.4.spkg\n$ cd sagenb-0.7.4/src/sagenb/\n$ sage -python setup.py develop\n```\n3. Tested with `sage -t -sagenb` \n\n4. Selenium tests with `sage -python sagenb/testing/run_tests.py` \n\n5. Checking the PDF build with `sage -docbuild all pdf`",
     "created_at": "2010-02-05T12:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -707,21 +703,17 @@ archive/issue_comments_070305.json:
 }
 ```
 
-
 ```
 $ egrep "Copying jsMath image"\|"Installed.*sagenb" ~/sage-dev/sage-4.3.2.alpha1/install.log
 Installed /home/alex/sage-dev/sage-4.3.2.alpha1/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg
 ```
-
 Strange.
-
 
 ```
 sage: from sagenb.misc.misc import SAGENB_VERSION
 sage: SAGENB_VERSION
 '0.7.4'
 ```
-
 
 Here's how I installed: 
 
@@ -734,7 +726,6 @@ $ tar -jxvf sagenb-0.7.4.spkg
 $ cd sagenb-0.7.4/src/sagenb/
 $ sage -python setup.py develop
 ```
-
 3. Tested with `sage -t -sagenb` 
 
 4. Selenium tests with `sage -python sagenb/testing/run_tests.py` 
@@ -786,7 +777,7 @@ The "Use image fonts" option is disabled (greyed out) in jsMath - is this a prob
 archive/issue_comments_070308.json:
 ```json
 {
-    "body": "Are the image fonts installed?  In `twist.py`, we set the boolean\n\n```python\njsmath_image_fonts = is_package_installed(\"jsmath-image-fonts\")\n```\n\nwhich propagates to `jsmath.js`.  This should enable the option if the spkg is installed.  But the fonts need to be installed in the right place...",
+    "body": "Are the image fonts installed?  In `twist.py`, we set the boolean\n\n```python\njsmath_image_fonts = is_package_installed(\"jsmath-image-fonts\")\n```\nwhich propagates to `jsmath.js`.  This should enable the option if the spkg is installed.  But the fonts need to be installed in the right place...",
     "created_at": "2010-02-05T13:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8051",
     "type": "issue_comment",
@@ -800,7 +791,6 @@ Are the image fonts installed?  In `twist.py`, we set the boolean
 ```python
 jsmath_image_fonts = is_package_installed("jsmath-image-fonts")
 ```
-
 which propagates to `jsmath.js`.  This should enable the option if the spkg is installed.  But the fonts need to be installed in the right place...
 
 

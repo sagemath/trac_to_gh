@@ -3,7 +3,7 @@
 archive/issues_001663.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor @TimDumol @rlmill\n\nScipy build fails with the following error when locale is set to `tr_TR.UTF-8`.\n\n\n```\nbuilding 'odepack' library\ncompiling Fortran sources\nFortran f77 compiler: sage_fortran -ffixed-form -fno-second-underscore\n-O\nFortran f90 compiler: sage_fortran -fno-second-underscore -O\nFortran fix compiler: sage_fortran -ffixed-form -fno-second-underscore\n-O\ncreating build/temp.linux-i686-2.5/scipy/integrate/odepack\ncompile options: '-c'\nsage_fortran:f77: scipy/integrate/odepack/lsoda.f\nsage_fortran:f77: scipy/integrate/odepack/mdp.f\nsage_fortran:f77: scipy/integrate/odepack/vnorm.f\nsage_fortran:f77: scipy/integrate/odepack/xerrwv.f\nIn file scipy/integrate/odepack/xerrwv.f:103\n\n 20   format(6x,'in above message,  i1 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:105\n\n 30   format(6x,'in above message,  i1 =',i10,3x,'i2 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:103\n\n 20   format(6x,'in above message,  i1 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:105\n\n 30   format(6x,'in above message,  i1 =',i10,3x,'i2 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nerror: Command \"sage_fortran -ffixed-form -fno-second-underscore -O -c\n-c scipy/integrate/odepack/xerrwv.f -o build/temp.linux-i686-2.5/scipy/\nintegrate/odepack/xerrwv.o\" failed with exit status 1\n```\n\n\nIn the tr_TR locale, lowercase of `I` is `\u0131`, and uppercase of `i` is `\u0130`. This might cause unexpected results for auto generated files.\n\nA simple workaround is to clear the locale environment variables:\n\n\n```\nunset LANG LC_ALL LC_CTYPE\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1663\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor @TimDumol @rlmill\n\nScipy build fails with the following error when locale is set to `tr_TR.UTF-8`.\n\n```\nbuilding 'odepack' library\ncompiling Fortran sources\nFortran f77 compiler: sage_fortran -ffixed-form -fno-second-underscore\n-O\nFortran f90 compiler: sage_fortran -fno-second-underscore -O\nFortran fix compiler: sage_fortran -ffixed-form -fno-second-underscore\n-O\ncreating build/temp.linux-i686-2.5/scipy/integrate/odepack\ncompile options: '-c'\nsage_fortran:f77: scipy/integrate/odepack/lsoda.f\nsage_fortran:f77: scipy/integrate/odepack/mdp.f\nsage_fortran:f77: scipy/integrate/odepack/vnorm.f\nsage_fortran:f77: scipy/integrate/odepack/xerrwv.f\nIn file scipy/integrate/odepack/xerrwv.f:103\n\n 20   format(6x,'in above message,  i1 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:105\n\n 30   format(6x,'in above message,  i1 =',i10,3x,'i2 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:103\n\n 20   format(6x,'in above message,  i1 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nIn file scipy/integrate/odepack/xerrwv.f:105\n\n 30   format(6x,'in above message,  i1 =',i10,3x,'i2 =',i10)\n                                          1\nError: Unexpected element in format string at (1)\nerror: Command \"sage_fortran -ffixed-form -fno-second-underscore -O -c\n-c scipy/integrate/odepack/xerrwv.f -o build/temp.linux-i686-2.5/scipy/\nintegrate/odepack/xerrwv.o\" failed with exit status 1\n```\n\nIn the tr_TR locale, lowercase of `I` is `\u0131`, and uppercase of `i` is `\u0130`. This might cause unexpected results for auto generated files.\n\nA simple workaround is to clear the locale environment variables:\n\n```\nunset LANG LC_ALL LC_CTYPE\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1663\n\n",
     "created_at": "2008-01-03T09:59:57Z",
     "labels": [
         "component: packages: standard",
@@ -22,7 +22,6 @@ Assignee: mabshoff
 CC:  @jasongrout jkantor @TimDumol @rlmill
 
 Scipy build fails with the following error when locale is set to `tr_TR.UTF-8`.
-
 
 ```
 building 'odepack' library
@@ -63,16 +62,13 @@ error: Command "sage_fortran -ffixed-form -fno-second-underscore -O -c
 integrate/odepack/xerrwv.o" failed with exit status 1
 ```
 
-
 In the tr_TR locale, lowercase of `I` is `ı`, and uppercase of `i` is `İ`. This might cause unexpected results for auto generated files.
 
 A simple workaround is to clear the locale environment variables:
 
-
 ```
 unset LANG LC_ALL LC_CTYPE
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1663
 
@@ -284,7 +280,7 @@ Changing status from new to assigned.
 archive/issue_comments_010548.json:
 ```json
 {
-    "body": "scipy was upgraded with #3391, but this problem still remains. Error message is the same.\n\nTo reproduce the error, \n\n\n```\nexport LC_CTYPE=tr_TR.UTF-8\n```\n\n\nand build Sage as usual.",
+    "body": "scipy was upgraded with #3391, but this problem still remains. Error message is the same.\n\nTo reproduce the error, \n\n```\nexport LC_CTYPE=tr_TR.UTF-8\n```\n\nand build Sage as usual.",
     "created_at": "2009-06-15T09:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1663",
     "type": "issue_comment",
@@ -297,11 +293,9 @@ scipy was upgraded with #3391, but this problem still remains. Error message is 
 
 To reproduce the error, 
 
-
 ```
 export LC_CTYPE=tr_TR.UTF-8
 ```
-
 
 and build Sage as usual.
 

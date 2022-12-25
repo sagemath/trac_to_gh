@@ -3,7 +3,7 @@
 archive/issues_008270.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nThe iconv package, which will soon be added to sage (#8191) has the facility to run \n\n```\nmake check\n```\n\n\nHowever, despite getting a test failure on Solaris 10 (SPARC), the makefile is still exiting with an exit code of 0, so any scripts which rely on testing iconv by relying on a failure of 'make check' to exit properly with a non-zero exit code will not work as desired. \n\nI'll report this to the iconv developers. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8270\n\n",
+    "body": "Assignee: GeorgSWeber\n\nThe iconv package, which will soon be added to sage (#8191) has the facility to run \n\n```\nmake check\n```\n\nHowever, despite getting a test failure on Solaris 10 (SPARC), the makefile is still exiting with an exit code of 0, so any scripts which rely on testing iconv by relying on a failure of 'make check' to exit properly with a non-zero exit code will not work as desired. \n\nI'll report this to the iconv developers. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8270\n\n",
     "created_at": "2010-02-15T10:23:56Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ The iconv package, which will soon be added to sage (#8191) has the facility to 
 ```
 make check
 ```
-
 
 However, despite getting a test failure on Solaris 10 (SPARC), the makefile is still exiting with an exit code of 0, so any scripts which rely on testing iconv by relying on a failure of 'make check' to exit properly with a non-zero exit code will not work as desired. 
 

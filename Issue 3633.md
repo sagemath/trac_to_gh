@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3633
 archive/issue_comments_025645.json:
 ```json
 {
-    "body": "Attachment [hostinfo.patch](tarball://root/attachments/some-uuid/ticket3633/hostinfo.patch) by @yqiang created at 2008-07-10 17:06:09\n\nRobert: commands.getoutput gets the output of a command. This is a little bit better than doing os.popen (what I was doing before) since it actually correctly opens/closes the pipes. \n\n\n```\nDefinition:\tcommands.getstatusoutput(cmd)\nSource:\ndef getstatusoutput(cmd):\n    \"\"\"Return (status, output) of executing cmd in a shell.\"\"\"\n    import os\n    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')\n    text = pipe.read()\n    sts = pipe.close()\n    if sts is None: sts = 0\n    if text[-1:] == '\\n': text = text[:-1]\n    return sts, text\n```\n",
+    "body": "Attachment [hostinfo.patch](tarball://root/attachments/some-uuid/ticket3633/hostinfo.patch) by @yqiang created at 2008-07-10 17:06:09\n\nRobert: commands.getoutput gets the output of a command. This is a little bit better than doing os.popen (what I was doing before) since it actually correctly opens/closes the pipes. \n\n```\nDefinition:\tcommands.getstatusoutput(cmd)\nSource:\ndef getstatusoutput(cmd):\n    \"\"\"Return (status, output) of executing cmd in a shell.\"\"\"\n    import os\n    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')\n    text = pipe.read()\n    sts = pipe.close()\n    if sts is None: sts = 0\n    if text[-1:] == '\\n': text = text[:-1]\n    return sts, text\n```",
     "created_at": "2008-07-10T17:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3633",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_025645.json:
 Attachment [hostinfo.patch](tarball://root/attachments/some-uuid/ticket3633/hostinfo.patch) by @yqiang created at 2008-07-10 17:06:09
 
 Robert: commands.getoutput gets the output of a command. This is a little bit better than doing os.popen (what I was doing before) since it actually correctly opens/closes the pipes. 
-
 
 ```
 Definition:	commands.getstatusoutput(cmd)
@@ -60,7 +59,6 @@ def getstatusoutput(cmd):
     if text[-1:] == '\n': text = text[:-1]
     return sts, text
 ```
-
 
 
 

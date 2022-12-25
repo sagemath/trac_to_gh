@@ -3,7 +3,7 @@
 archive/issues_000571.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI removed the # long after this doctest:\n\n```\n             sage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \n             sage: r, s, G = E.simon_two_descent(); r,s       # long\n             (8, 8)\n```\n\nthen ran the doctests and it fails.  This is strange because from the console it works fine.\nThe failure (see below) suggests too low of precision in bnfsunit/get_arch (in PARI).  Very weird. \nJohn Cremona is working on many improvements to this very code, so maybe it will all be fixed\nby that. \n\n\n```\nwas@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py\nsage -t  ell_rational_field.py                               **********************************************************************\nFile \"ell_rational_field.py\", line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s.dev/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[19]>\", line 1, in <module>\n        r, s, G = E.simon_two_descent(); r,s###line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 913, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 93, in simon_two_descent\n        raise RuntimeError, \"%s\\nAn error occured while running Simon's 2-descent program\"%s\n    RuntimeError:   *** bnfsunit: precision too low in get_arch.\n    An error occured while running Simon's 2-descent program\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_ell_rational_field.py\n         [51.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/571\n\n",
+    "body": "Assignee: @williamstein\n\nI removed the # long after this doctest:\n\n```\n             sage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \n             sage: r, s, G = E.simon_two_descent(); r,s       # long\n             (8, 8)\n```\nthen ran the doctests and it fails.  This is strange because from the console it works fine.\nThe failure (see below) suggests too low of precision in bnfsunit/get_arch (in PARI).  Very weird. \nJohn Cremona is working on many improvements to this very code, so maybe it will all be fixed\nby that. \n\n```\nwas@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py\nsage -t  ell_rational_field.py                               **********************************************************************\nFile \"ell_rational_field.py\", line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s.dev/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[19]>\", line 1, in <module>\n        r, s, G = E.simon_two_descent(); r,s###line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 913, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 93, in simon_two_descent\n        raise RuntimeError, \"%s\\nAn error occured while running Simon's 2-descent program\"%s\n    RuntimeError:   *** bnfsunit: precision too low in get_arch.\n    An error occured while running Simon's 2-descent program\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_ell_rational_field.py\n         [51.1 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/571\n\n",
     "created_at": "2007-09-02T18:16:12Z",
     "labels": [
         "component: algebraic geometry",
@@ -26,12 +26,10 @@ I removed the # long after this doctest:
              sage: r, s, G = E.simon_two_descent(); r,s       # long
              (8, 8)
 ```
-
 then ran the doctests and it fails.  This is strange because from the console it works fine.
 The failure (see below) suggests too low of precision in bnfsunit/get_arch (in PARI).  Very weird. 
 John Cremona is working on many improvements to this very code, so maybe it will all be fixed
 by that. 
-
 
 ```
 was@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py
@@ -58,7 +56,6 @@ Exception raised:
 For whitespace errors, see the file .doctest_ell_rational_field.py
          [51.1 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/571
 
@@ -89,7 +86,7 @@ Resolution: worksforme
 archive/issue_comments_002951.json:
 ```json
 {
-    "body": "Just tried this in 2.10 on Gentoo and the problem seems to have vanished:\n\n\n```\nsage -t  ell_rational_field.py                              \n         [40.6 s]\n```\n",
+    "body": "Just tried this in 2.10 on Gentoo and the problem seems to have vanished:\n\n```\nsage -t  ell_rational_field.py                              \n         [40.6 s]\n```",
     "created_at": "2008-01-27T04:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
@@ -100,12 +97,10 @@ archive/issue_comments_002951.json:
 
 Just tried this in 2.10 on Gentoo and the problem seems to have vanished:
 
-
 ```
 sage -t  ell_rational_field.py                              
          [40.6 s]
 ```
-
 
 
 
@@ -221,7 +216,7 @@ archive/issue_events_001529.json:
 archive/issue_comments_002955.json:
 ```json
 {
-    "body": "John and Denis Simone in fact did greatly update this code and it is now in Sage (for quote some time).  And this particularly doctest runs almost instantly now:\n\n\n```\nsage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \nsage: time r, s, G = E.simon_two_descent(); r,s\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.56\n```\n\n\nThe attached patch removes the #long.",
+    "body": "John and Denis Simone in fact did greatly update this code and it is now in Sage (for quote some time).  And this particularly doctest runs almost instantly now:\n\n```\nsage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \nsage: time r, s, G = E.simon_two_descent(); r,s\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.56\n```\n\nThe attached patch removes the #long.",
     "created_at": "2008-01-27T12:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
@@ -232,14 +227,12 @@ archive/issue_comments_002955.json:
 
 John and Denis Simone in fact did greatly update this code and it is now in Sage (for quote some time).  And this particularly doctest runs almost instantly now:
 
-
 ```
 sage: E = EllipticCurve([0, 0, 1, -23737, 960366])    
 sage: time r, s, G = E.simon_two_descent(); r,s
 CPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s
 Wall time: 0.56
 ```
-
 
 The attached patch removes the #long.
 
@@ -356,7 +349,7 @@ Has the pari version changed since this was reported?  That might have fixed it 
 archive/issue_comments_002961.json:
 ```json
 {
-    "body": "> Has the pari version changed since this was reported?\n\nYes it has.  But more importantly Simone's 2-descent library was *totally* rewritten by Simone since this was reported, so that also may have resolved this issue.",
+    "body": "> Has the pari version changed since this was reported?\n\n\nYes it has.  But more importantly Simone's 2-descent library was *totally* rewritten by Simone since this was reported, so that also may have resolved this issue.",
     "created_at": "2008-01-28T13:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
@@ -366,5 +359,6 @@ archive/issue_comments_002961.json:
 ```
 
 > Has the pari version changed since this was reported?
+
 
 Yes it has.  But more importantly Simone's 2-descent library was *totally* rewritten by Simone since this was reported, so that also may have resolved this issue.

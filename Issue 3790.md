@@ -3,7 +3,7 @@
 archive/issues_003790.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n\n```\n I noticed that for some expressions limit() gets stuck and does not\nreturn to the sage prompt.  It does not seem to be computing anything\nsince the cpu usage is 0.\n For example in Sage 3.0.6 try:\nvars('Ax,Bx,By')\nt = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2 + Bx^2))\nt.limit(Ax=0,dir='above')\n\n It just sits there.  And you need to ctrl-c to get the prompt back.\nIf you set t = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2))\nThen do t.limit(Ax=0,dir='above'), you get a message asking if By is\nzero or nonzero.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3790\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\n I noticed that for some expressions limit() gets stuck and does not\nreturn to the sage prompt.  It does not seem to be computing anything\nsince the cpu usage is 0.\n For example in Sage 3.0.6 try:\nvars('Ax,Bx,By')\nt = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2 + Bx^2))\nt.limit(Ax=0,dir='above')\n\n It just sits there.  And you need to ctrl-c to get the prompt back.\nIf you set t = -Ax*sin(sqrt(Ax^2)/2)/(sqrt(Ax^2)*sqrt(By^2))\nThen do t.limit(Ax=0,dir='above'), you get a message asking if By is\nzero or nonzero.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3790\n\n",
     "created_at": "2008-08-07T22:07:41Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_003790.json:
 }
 ```
 Assignee: @garyfurnish
-
 
 ```
  I noticed that for some expressions limit() gets stuck and does not
@@ -35,7 +34,6 @@ Then do t.limit(Ax=0,dir='above'), you get a message asking if By is
 zero or nonzero.
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3790
 

@@ -104,7 +104,7 @@ Changing status from new to assigned.
 archive/issue_comments_035256.json:
 ```json
 {
-    "body": "Patch looks good to me. One tiny spelling issue I can take care when applying the patch:\n\n```\nGrobner basis\n```\n\nis missing an \"e\".\n\nCheers,\n\nMichael",
+    "body": "Patch looks good to me. One tiny spelling issue I can take care when applying the patch:\n\n```\nGrobner basis\n```\nis missing an \"e\".\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T10:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
@@ -118,7 +118,6 @@ Patch looks good to me. One tiny spelling issue I can take care when applying th
 ```
 Grobner basis
 ```
-
 is missing an "e".
 
 Cheers,

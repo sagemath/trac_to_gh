@@ -3,7 +3,7 @@
 archive/issues_002030.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n[05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.\n[05:58] <mabshoff>         Most commands are directly provided as member functions.  However,\n[05:58] <mabshoff>         you can use the full functionality of hg, i.e.,\n[05:58] <mabshoff>                 hg_sage(\"command line arguments\")\n[05:58] <mabshoff>         is *exactly* the same as typing\n[05:58] <mabshoff>                 cd <SAGE_ROOT>/devel/sage/ && hg command line arguments\n[05:59] <mabshoff> Same for hg_extcode and hg_doc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2030\n\n",
+    "body": "Assignee: tba\n\n```\n[05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.\n[05:58] <mabshoff>         Most commands are directly provided as member functions.  However,\n[05:58] <mabshoff>         you can use the full functionality of hg, i.e.,\n[05:58] <mabshoff>                 hg_sage(\"command line arguments\")\n[05:58] <mabshoff>         is *exactly* the same as typing\n[05:58] <mabshoff>                 cd <SAGE_ROOT>/devel/sage/ && hg command line arguments\n[05:59] <mabshoff> Same for hg_extcode and hg_doc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2030\n\n",
     "created_at": "2008-02-02T05:17:15Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_002030.json:
 ```
 Assignee: tba
 
-
 ```
 [05:58] <mabshoff> The docstring for hg_scripts also seems to be wrong, i.e.
 [05:58] <mabshoff>         Most commands are directly provided as member functions.  However,
@@ -28,7 +27,6 @@ Assignee: tba
 [05:58] <mabshoff>                 cd <SAGE_ROOT>/devel/sage/ && hg command line arguments
 [05:59] <mabshoff> Same for hg_extcode and hg_doc
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2030
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2030
 archive/issue_comments_013105.json:
 ```json
 {
-    "body": "\n```\n22:24 < wstein> #2030 - what's wrong with the hg docstrig?\n22:25 < wstein> I couldn't figure that out from the ticket desc.\n22:25 < mabshoff> All of them say to cd into $SAGE_LOCAL/deve/sage\n22:25 < mabshoff> while the repos are in different places.\n22:25 < wstein> I think it's a \"generic\" docstring.\n22:25 < wstein> All the hg_* objects are instances of a generic hg object.\n22:25 < mabshoff> Ok, so is it fixable? Or is it invalid?\n22:26 < wstein> It should be fixed.\n22:26 < wstein> It might be kind of hard / unnatural.\n22:26 < wstein> However, if it is really confusing it should be changed.\n22:26 < mabshoff> Well, we could list all four repos in the generic docstring.\n22:26 < wstein> Or at least the docstring could be made much clearer to emphasize this subtle point.\n22:26 < wstein> Exactly\n```\n",
+    "body": "```\n22:24 < wstein> #2030 - what's wrong with the hg docstrig?\n22:25 < wstein> I couldn't figure that out from the ticket desc.\n22:25 < mabshoff> All of them say to cd into $SAGE_LOCAL/deve/sage\n22:25 < mabshoff> while the repos are in different places.\n22:25 < wstein> I think it's a \"generic\" docstring.\n22:25 < wstein> All the hg_* objects are instances of a generic hg object.\n22:25 < mabshoff> Ok, so is it fixable? Or is it invalid?\n22:26 < wstein> It should be fixed.\n22:26 < wstein> It might be kind of hard / unnatural.\n22:26 < wstein> However, if it is really confusing it should be changed.\n22:26 < mabshoff> Well, we could list all four repos in the generic docstring.\n22:26 < wstein> Or at least the docstring could be made much clearer to emphasize this subtle point.\n22:26 < wstein> Exactly\n```",
     "created_at": "2008-02-02T06:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
@@ -49,7 +47,6 @@ archive/issue_comments_013105.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 22:24 < wstein> #2030 - what's wrong with the hg docstrig?
@@ -66,7 +63,6 @@ archive/issue_comments_013105.json:
 22:26 < wstein> Or at least the docstring could be made much clearer to emphasize this subtle point.
 22:26 < wstein> Exactly
 ```
-
 
 
 

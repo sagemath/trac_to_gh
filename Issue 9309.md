@@ -3,7 +3,7 @@
 archive/issues_009309.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nThe IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. \n\nAfter adding the required file, the test suite is run. \n\n\n```\ncreating test-largeentry\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.1.p13.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9309\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nThe IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. \n\nAfter adding the required file, the test suite is run. \n\n```\ncreating test-largeentry\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.1.p13.spkg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9309\n\n",
     "created_at": "2010-06-22T14:41:47Z",
     "labels": [
         "component: spkg-check",
@@ -23,7 +23,6 @@ CC:  @nexttime @jhpalmieri @peterjeremy
 The IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to "yes", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. 
 
 After adding the required file, the test suite is run. 
-
 
 ```
 creating test-largeentry
@@ -47,7 +46,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing iml-1.0.1.p13.spkg
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9309
 
@@ -194,7 +192,7 @@ I would at least add a message reporting that the test suite passed, and append 
 archive/issue_comments_087529.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> (Dave:) Shouldn't we improve this spkg like we did with the new GSL one (at #9533)? [...]\n\nObviously this would be out of the ticket's current scope, so we could equally well open a new one for that purpose instead.",
+    "body": "Replying to [comment:4 leif]:\n> (Dave:) Shouldn't we improve this spkg like we did with the new GSL one (at #9533)? [...]\n\n\nObviously this would be out of the ticket's current scope, so we could equally well open a new one for that purpose instead.",
     "created_at": "2010-07-21T16:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
@@ -205,6 +203,7 @@ archive/issue_comments_087529.json:
 
 Replying to [comment:4 leif]:
 > (Dave:) Shouldn't we improve this spkg like we did with the new GSL one (at #9533)? [...]
+
 
 Obviously this would be out of the ticket's current scope, so we could equally well open a new one for that purpose instead.
 
@@ -303,7 +302,7 @@ Dave, can you merge my patch to `SPKG.txt`?
 archive/issue_comments_087534.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> Dave, can you merge my patch to `SPKG.txt`?\n\nLeif, \n\nI copied your changes to SPKG.txt to the package at: \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iml-1.0.1.p13.spkg\n\nI also created #9568 to update the IML library, and improve spkg-install. We should also consider whether that can be built in parallel. Anyway, leave any comments on #9568. \n\n == Note to the release managers == \n\nNo patches need to be applied to any other Sage repositories - all changes are merged into the repository. Just replace the current IML package with this one.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iml-1.0.1.p13.spkg\n\nDave",
+    "body": "Replying to [comment:8 leif]:\n> Dave, can you merge my patch to `SPKG.txt`?\n\n\nLeif, \n\nI copied your changes to SPKG.txt to the package at: \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iml-1.0.1.p13.spkg\n\nI also created #9568 to update the IML library, and improve spkg-install. We should also consider whether that can be built in parallel. Anyway, leave any comments on #9568. \n\n == Note to the release managers == \n\nNo patches need to be applied to any other Sage repositories - all changes are merged into the repository. Just replace the current IML package with this one.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/iml-1.0.1.p13.spkg\n\nDave",
     "created_at": "2010-07-21T22:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
@@ -314,6 +313,7 @@ archive/issue_comments_087534.json:
 
 Replying to [comment:8 leif]:
 > Dave, can you merge my patch to `SPKG.txt`?
+
 
 Leif, 
 

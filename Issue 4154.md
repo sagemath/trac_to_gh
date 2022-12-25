@@ -50,7 +50,7 @@ See #4201 for a nice way to do this.
 archive/issue_comments_030102.json:
 ```json
 {
-    "body": "I guess\n\n```\nsage.plot.plot.Graphics.SHOW_OPTIONS[\"aspect_ratio\"] = 1\n```\n\ndoes what was requested in this ticket (although I don't think that it is the best way).\n\nI am switching this ticket to positive review so that release managers can close it appropriately.",
+    "body": "I guess\n\n```\nsage.plot.plot.Graphics.SHOW_OPTIONS[\"aspect_ratio\"] = 1\n```\ndoes what was requested in this ticket (although I don't think that it is the best way).\n\nI am switching this ticket to positive review so that release managers can close it appropriately.",
     "created_at": "2010-11-19T02:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ I guess
 ```
 sage.plot.plot.Graphics.SHOW_OPTIONS["aspect_ratio"] = 1
 ```
-
 does what was requested in this ticket (although I don't think that it is the best way).
 
 I am switching this ticket to positive review so that release managers can close it appropriately.

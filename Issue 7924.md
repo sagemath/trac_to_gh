@@ -3,7 +3,7 @@
 archive/issues_007924.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry\n\n\n```\nprint \"___x___\"\n```\n\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
+    "body": "Assignee: @williamstein\n\nTry\n\n```\nprint \"___x___\"\n```\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
     "created_at": "2010-01-14T04:16:48Z",
     "labels": [
         "component: notebook",
@@ -21,11 +21,9 @@ Assignee: @williamstein
 
 Try
 
-
 ```
 print "___x___"
 ```
-
 
 In a notebook cell. 
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7924
 archive/issue_comments_068851.json:
 ```json
 {
-    "body": "More data:\n\n```python\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation \nsage: wp = WorksheetProcess_ExpectImplementation() \nsage: wp.execute('print \"___x___\"')\nsage: wp.output_status()\nOutput Status:\n        output: '___x'\n        filenames: []\n        done: True\n```\n",
+    "body": "More data:\n\n```python\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation \nsage: wp = WorksheetProcess_ExpectImplementation() \nsage: wp.execute('print \"___x___\"')\nsage: wp.output_status()\nOutput Status:\n        output: '___x'\n        filenames: []\n        done: True\n```",
     "created_at": "2010-01-15T22:19:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
@@ -61,7 +59,6 @@ Output Status:
         filenames: []
         done: True
 ```
-
 
 
 

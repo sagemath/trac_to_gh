@@ -3,7 +3,7 @@
 archive/issues_008425.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, add_edge\n\nadd_edge() needs to be overridden in BipartiteGraph in order to preserve the bipartite property of the graph.\n\n```\nsage: # non-bipartite graphs are rejected by the constructor\nsage: BipartiteGraph(Graph({0:[1,2], 1:[2]}))\nTraceback (most recent call last)\n...\nTypeError: Input graph is not bipartite!\n\nsage: # but the same graph can be constructed edge-by-edge without raising an error\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices([0,1,2], left=[True,False,True])\nsage: bg.add_edges([(0,1), (1,2)])  # good so far\nsage: bg.add_edge(2,0)  # should raise exception!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8425\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, add_edge\n\nadd_edge() needs to be overridden in BipartiteGraph in order to preserve the bipartite property of the graph.\n\n```\nsage: # non-bipartite graphs are rejected by the constructor\nsage: BipartiteGraph(Graph({0:[1,2], 1:[2]}))\nTraceback (most recent call last)\n...\nTypeError: Input graph is not bipartite!\n\nsage: # but the same graph can be constructed edge-by-edge without raising an error\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices([0,1,2], left=[True,False,True])\nsage: bg.add_edges([(0,1), (1,2)])  # good so far\nsage: bg.add_edge(2,0)  # should raise exception!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8425\n\n",
     "created_at": "2010-03-03T01:35:07Z",
     "labels": [
         "component: graph theory",
@@ -37,7 +37,6 @@ sage: bg.add_vertices([0,1,2], left=[True,False,True])
 sage: bg.add_edges([(0,1), (1,2)])  # good so far
 sage: bg.add_edge(2,0)  # should raise exception!
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8425
 
@@ -226,7 +225,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075411.json:
 ```json
 {
-    "body": "Hello !!!\n\nI have to admit I do not really like this one :-/\n\nI seldom work on this BipartiteGraph class, and I understand you usally know which are your left and right sets, but I have to admit I would not want to see an error raised when I am building a valid bipartite graph, without taking care of the sets myself. For example :\n\n\n```\nsage: g = BipartiteGraph(2*graphs.GridGraph([4,4]))\nsage: g.add_edge(0,30)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage/devel/sage-bip/sage/graphs/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/graphs/bipartite_graph.pyc in add_edge(self, u, v, label)\n    690         # check for endpoints in different partitions\n    691         if self.left.issuperset((u,v)) or self.right.issuperset((u,v)):\n--> 692             raise RuntimeError('Edge vertices must lie in different partitions.')\n    693 \n    694         # add the edge\n\nRuntimeError: Edge vertices must lie in different partitions.\n```\n\n\nAnd to be honest, I really would like to be able to deal with Bipartite Graphs without having to specify myself in which set my vertices are... What would you think of setting a vertex to \"left\" if the users does not specify left=True or right=True, and modify a bit add_edge ? This way, the edge could be added immediately if the two vertices at its ends are in different sets, and if they are not the colors could be changed whenever possible to fit the graph with a new edge ?\n\nActually, when a graph is bipartite and split in two sets, you can add an edge in exactly two situations : \n\n- The colors between the endpoints are different\n\n- The colors are the same, but the vertices belong to two different connected components\n\nSo two solutions : \n\n- Add an edge if the colors are different. If they are not, check that there is no path from one vertex to the other, and if it is the case reverse the coloring of one of the two components and add the edge\n\n- Fix a partition for any connected component, and maintain them updated. \n\n\nThe problem is that the first makes of add_edge a linear-time function. The second way keeps it to O(1), but we would have to update the list of connected components, even if it is not so hard. The truth is I do not know what is best for this class, and I'm eager to learn your advice on it. It is also possible to add a flag like \"allow_set_modifications\" if you want to keep the possibility to refuse an addition in somec ases... But anyway this should be mentionned in the docstrings :-)\n\nNathann",
+    "body": "Hello !!!\n\nI have to admit I do not really like this one :-/\n\nI seldom work on this BipartiteGraph class, and I understand you usally know which are your left and right sets, but I have to admit I would not want to see an error raised when I am building a valid bipartite graph, without taking care of the sets myself. For example :\n\n```\nsage: g = BipartiteGraph(2*graphs.GridGraph([4,4]))\nsage: g.add_edge(0,30)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage/devel/sage-bip/sage/graphs/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/graphs/bipartite_graph.pyc in add_edge(self, u, v, label)\n    690         # check for endpoints in different partitions\n    691         if self.left.issuperset((u,v)) or self.right.issuperset((u,v)):\n--> 692             raise RuntimeError('Edge vertices must lie in different partitions.')\n    693 \n    694         # add the edge\n\nRuntimeError: Edge vertices must lie in different partitions.\n```\n\nAnd to be honest, I really would like to be able to deal with Bipartite Graphs without having to specify myself in which set my vertices are... What would you think of setting a vertex to \"left\" if the users does not specify left=True or right=True, and modify a bit add_edge ? This way, the edge could be added immediately if the two vertices at its ends are in different sets, and if they are not the colors could be changed whenever possible to fit the graph with a new edge ?\n\nActually, when a graph is bipartite and split in two sets, you can add an edge in exactly two situations : \n\n- The colors between the endpoints are different\n\n- The colors are the same, but the vertices belong to two different connected components\n\nSo two solutions : \n\n- Add an edge if the colors are different. If they are not, check that there is no path from one vertex to the other, and if it is the case reverse the coloring of one of the two components and add the edge\n\n- Fix a partition for any connected component, and maintain them updated. \n\n\nThe problem is that the first makes of add_edge a linear-time function. The second way keeps it to O(1), but we would have to update the list of connected components, even if it is not so hard. The truth is I do not know what is best for this class, and I'm eager to learn your advice on it. It is also possible to add a flag like \"allow_set_modifications\" if you want to keep the possibility to refuse an addition in somec ases... But anyway this should be mentionned in the docstrings :-)\n\nNathann",
     "created_at": "2010-04-01T13:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
@@ -240,7 +239,6 @@ Hello !!!
 I have to admit I do not really like this one :-/
 
 I seldom work on this BipartiteGraph class, and I understand you usally know which are your left and right sets, but I have to admit I would not want to see an error raised when I am building a valid bipartite graph, without taking care of the sets myself. For example :
-
 
 ```
 sage: g = BipartiteGraph(2*graphs.GridGraph([4,4]))
@@ -259,7 +257,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: Edge vertices must lie in different partitions.
 ```
-
 
 And to be honest, I really would like to be able to deal with Bipartite Graphs without having to specify myself in which set my vertices are... What would you think of setting a vertex to "left" if the users does not specify left=True or right=True, and modify a bit add_edge ? This way, the edge could be added immediately if the two vertices at its ends are in different sets, and if they are not the colors could be changed whenever possible to fit the graph with a new edge ?
 
@@ -329,7 +326,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075414.json:
 ```json
 {
-    "body": "> The docstring test shows that an exception is raised.  Would you like me to add verbiage above saying that it is an error for the two endpoints to be in the same partition?\n\nWell, it is already the case, as the Exception raised is \"RuntimeError: Edge vertices must lie in different partitions\". Well, I can understand you would like to have a *functional* BipartiteGraph as soon as possible, so I'm giving this ticket a positive review !\n\nThe tests pass, the documentation is fine, and it clearly is a necessary fix :-)\n\nNathann",
+    "body": "> The docstring test shows that an exception is raised.  Would you like me to add verbiage above saying that it is an error for the two endpoints to be in the same partition?\n\n\nWell, it is already the case, as the Exception raised is \"RuntimeError: Edge vertices must lie in different partitions\". Well, I can understand you would like to have a *functional* BipartiteGraph as soon as possible, so I'm giving this ticket a positive review !\n\nThe tests pass, the documentation is fine, and it clearly is a necessary fix :-)\n\nNathann",
     "created_at": "2010-04-22T08:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8425",
     "type": "issue_comment",
@@ -339,6 +336,7 @@ archive/issue_comments_075414.json:
 ```
 
 > The docstring test shows that an exception is raised.  Would you like me to add verbiage above saying that it is an error for the two endpoints to be in the same partition?
+
 
 Well, it is already the case, as the Exception raised is "RuntimeError: Edge vertices must lie in different partitions". Well, I can understand you would like to have a *functional* BipartiteGraph as soon as possible, so I'm giving this ticket a positive review !
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7936
 archive/issue_comments_069054.json:
 ```json
 {
-    "body": "From an email `[sage-support] error in documentation \"Construction\"` on 2010-01-15:\n\n\n```\nHi everyone,\n\nI just checked out one of  first page in the \"Constructions\" page:\n\nhttp://www.sagemath.org.nyud.net/doc/constructions/calculus.html\n\nJust after the first example \"Differentiation\"\n\nsage: var('x k w')\n(x, k, w)\nsage: f = x^3 * e^(k*x) * sin(w*x); f\nx^3*e^(k*x)*sin(w*x)\nsage: f.diff(x)\nk*x^3*e^(k*x)*sin(w*x) + w*x^3*e^(k*x)*cos(w*x) + 3*x^2*e^(k*x)*sin\n(w*x)\nsage: latex(f.diff(x))\nk x^{3} e^{\\left(k x\\right)} \\sin\\left(w x\\right) + w x^{3} e^{\\left(k\nx\\right)} \\cos\\left(w x\\right) + 3 \\, x^{2} e^{\\left(k x\\right)} \\sin\n\\left(w x\\right)\n\nthere is\n\n\"If you type view(f.diff('x')) another... \"\n\nWhen I do that, I get a long error message, which could frighten off\n(it is the first example...). With \"view(f.diff(x))\" it works.\nHowever, if the function is defined via\n\nf = maxima(....)\n\nthen both ways work:   view(f.diff('x')),  view(f.diff(x))\n\nI don't know if this is intended, but at least on the website it\nshould be changed, not to get the error.\n\nGreets,\nStefan\n```\n",
+    "body": "From an email `[sage-support] error in documentation \"Construction\"` on 2010-01-15:\n\n```\nHi everyone,\n\nI just checked out one of  first page in the \"Constructions\" page:\n\nhttp://www.sagemath.org.nyud.net/doc/constructions/calculus.html\n\nJust after the first example \"Differentiation\"\n\nsage: var('x k w')\n(x, k, w)\nsage: f = x^3 * e^(k*x) * sin(w*x); f\nx^3*e^(k*x)*sin(w*x)\nsage: f.diff(x)\nk*x^3*e^(k*x)*sin(w*x) + w*x^3*e^(k*x)*cos(w*x) + 3*x^2*e^(k*x)*sin\n(w*x)\nsage: latex(f.diff(x))\nk x^{3} e^{\\left(k x\\right)} \\sin\\left(w x\\right) + w x^{3} e^{\\left(k\nx\\right)} \\cos\\left(w x\\right) + 3 \\, x^{2} e^{\\left(k x\\right)} \\sin\n\\left(w x\\right)\n\nthere is\n\n\"If you type view(f.diff('x')) another... \"\n\nWhen I do that, I get a long error message, which could frighten off\n(it is the first example...). With \"view(f.diff(x))\" it works.\nHowever, if the function is defined via\n\nf = maxima(....)\n\nthen both ways work:   view(f.diff('x')),  view(f.diff(x))\n\nI don't know if this is intended, but at least on the website it\nshould be changed, not to get the error.\n\nGreets,\nStefan\n```",
     "created_at": "2010-01-15T23:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_069054.json:
 ```
 
 From an email `[sage-support] error in documentation "Construction"` on 2010-01-15:
-
 
 ```
 Hi everyone,
@@ -82,7 +81,6 @@ should be changed, not to get the error.
 Greets,
 Stefan
 ```
-
 
 
 
@@ -129,7 +127,7 @@ apply to examples/ repository; based on Sage 4.3.1.alpha2
 archive/issue_comments_069057.json:
 ```json
 {
-    "body": "Attachment [trac_7936-desolvers.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-desolvers.patch) by mvngu created at 2010-01-16 05:33:40\n\nHere are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:\n\n```\n[mvngu@boxen examples]$ pwd\n/dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples\n[mvngu@boxen examples]$ hg st\n? .hgtags.orig\n[mvngu@boxen examples]$ rm .hgtags.orig \n[mvngu@boxen examples]$ hg st\n```\n",
+    "body": "Attachment [trac_7936-desolvers.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-desolvers.patch) by mvngu created at 2010-01-16 05:33:40\n\nHere are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:\n\n```\n[mvngu@boxen examples]$ pwd\n/dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples\n[mvngu@boxen examples]$ hg st\n? .hgtags.orig\n[mvngu@boxen examples]$ rm .hgtags.orig \n[mvngu@boxen examples]$ hg st\n```",
     "created_at": "2010-01-16T05:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -150,7 +148,6 @@ Here are two patches, which should fix errors in the calculus chapter of the Con
 [mvngu@boxen examples]$ rm .hgtags.orig 
 [mvngu@boxen examples]$ hg st
 ```
-
 
 
 
@@ -215,7 +212,7 @@ The constructions document is quasi-deprecated in any case, as it dates from ove
 archive/issue_comments_069061.json:
 ```json
 {
-    "body": "> The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n\nTwo years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus.",
+    "body": "> The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n\n\nTwo years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus.",
     "created_at": "2010-01-18T22:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -226,6 +223,7 @@ archive/issue_comments_069061.json:
 
 > The constructions document is quasi-deprecated in any case, as it dates from over two years ago,
 
+
 Two years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus.
 
 
@@ -235,7 +233,7 @@ Two years?   It from at least *four* years ago!  It was mostly written around th
 archive/issue_comments_069062.json:
 ```json
 {
-    "body": "Replying to [comment:5 was]:\n> > The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n> \n> Two years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus. \n\nLike I said, *over* two years ago :)",
+    "body": "Replying to [comment:5 was]:\n> > The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n\n> \n> Two years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus. \n\n\nLike I said, *over* two years ago :)",
     "created_at": "2010-01-19T13:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -246,8 +244,10 @@ archive/issue_comments_069062.json:
 
 Replying to [comment:5 was]:
 > > The constructions document is quasi-deprecated in any case, as it dates from over two years ago,
+
 > 
 > Two years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus. 
+
 
 Like I said, *over* two years ago :)
 
@@ -294,7 +294,7 @@ Is this fixed by #8132?
 archive/issue_comments_069065.json:
 ```json
 {
-    "body": "Replying to [comment:7 mvngu]:\n> Is this fixed by #8132?\n\nNo, unfortunately, I don't think so.\n\nI give a positive review to the first patch. I don't understand the second patch. I'm giving the first a positive review though. Fell free to reverse my vote back to needs review, but I'm marking it for now as needs info. The instructions for patch 2 are just completely unclear to me.",
+    "body": "Replying to [comment:7 mvngu]:\n> Is this fixed by #8132?\n\n\nNo, unfortunately, I don't think so.\n\nI give a positive review to the first patch. I don't understand the second patch. I'm giving the first a positive review though. Fell free to reverse my vote back to needs review, but I'm marking it for now as needs info. The instructions for patch 2 are just completely unclear to me.",
     "created_at": "2010-02-03T00:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -305,6 +305,7 @@ archive/issue_comments_069065.json:
 
 Replying to [comment:7 mvngu]:
 > Is this fixed by #8132?
+
 
 No, unfortunately, I don't think so.
 
@@ -335,7 +336,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_069067.json:
 ```json
 {
-    "body": "Replying to [comment:8 wdj]:\n> I give a positive review to the first patch. \n\nI think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-constructions.patch) is now superseded by #8132. No need to use that patch anymore.\n\n\n\n\n\n> I don't understand the second patch. The instructions for patch 2 are just completely unclear to me.\n\nWithout the attachment [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) applied to the repository `examples/calculus`, I get an error when loading the file `desolvers.sage`:\n\n```\n[mvngu@mod calculus]$ pwd\n/dev/shm/mvngu/sage-4.3.2.alpha1-sage.math/examples/calculus\n[mvngu@mod calculus]$ ls\ndesolvers.py    eulers_method.sage  newton_raphson.sage\ndesolvers.sage  field_plot2d.sage   README.txt\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\n------------------------------------------------------------\n   File \"<string>\", line 147\n     #maxima.eval(cmd)\n                     ^\nSyntaxError: invalid syntax\n```\n\nNow apply the patch [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) to the repository `examples/calculus` to resolve this syntax error:\n\n```\n[mvngu@mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush\nadding trac_7936-desolvers.patch to series file\napplying trac_7936-desolvers.patch\nnow at: trac_7936-desolvers.patch\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\nsage: des=[\"'diff(x(t),t)=-4*y(t)\",\"'diff(y(t),t)=-x(t)\"]\nsage: vars = [\"t\",\"x\",\"y\"]\nsage: desolve_system(des,vars)\n[x(t)=(2*y(0)+x(0))*%e^-(2*t)/2-(2*y(0)-x(0))*%e^(2*t)/2,y(t)=(2*y(0)-x(0))*%e^(2*t)/4+(2*y(0)+x(0))*%e^-(2*t)/4]\n```\n",
+    "body": "Replying to [comment:8 wdj]:\n> I give a positive review to the first patch. \n\n\nI think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-constructions.patch) is now superseded by #8132. No need to use that patch anymore.\n\n\n\n\n\n> I don't understand the second patch. The instructions for patch 2 are just completely unclear to me.\n\n\nWithout the attachment [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) applied to the repository `examples/calculus`, I get an error when loading the file `desolvers.sage`:\n\n```\n[mvngu@mod calculus]$ pwd\n/dev/shm/mvngu/sage-4.3.2.alpha1-sage.math/examples/calculus\n[mvngu@mod calculus]$ ls\ndesolvers.py    eulers_method.sage  newton_raphson.sage\ndesolvers.sage  field_plot2d.sage   README.txt\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\n------------------------------------------------------------\n   File \"<string>\", line 147\n     #maxima.eval(cmd)\n                     ^\nSyntaxError: invalid syntax\n```\nNow apply the patch [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) to the repository `examples/calculus` to resolve this syntax error:\n| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |\n| Type notebook() for the GUI, and license() for information.        |\n```\n[mvngu@mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush\nadding trac_7936-desolvers.patch to series file\napplying trac_7936-desolvers.patch\nnow at: trac_7936-desolvers.patch\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\nsage: des=[\"'diff(x(t),t)=-4*y(t)\",\"'diff(y(t),t)=-x(t)\"]\nsage: vars = [\"t\",\"x\",\"y\"]\nsage: desolve_system(des,vars)\n[x(t)=(2*y(0)+x(0))*%e^-(2*t)/2-(2*y(0)-x(0))*%e^(2*t)/2,y(t)=(2*y(0)-x(0))*%e^(2*t)/4+(2*y(0)+x(0))*%e^-(2*t)/4]\n```",
     "created_at": "2010-02-03T00:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -347,6 +348,7 @@ archive/issue_comments_069067.json:
 Replying to [comment:8 wdj]:
 > I give a positive review to the first patch. 
 
+
 I think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-constructions.patch) is now superseded by #8132. No need to use that patch anymore.
 
 
@@ -354,6 +356,7 @@ I think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/
 
 
 > I don't understand the second patch. The instructions for patch 2 are just completely unclear to me.
+
 
 Without the attachment [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) applied to the repository `examples/calculus`, I get an error when loading the file `desolvers.sage`:
 
@@ -378,9 +381,9 @@ sage: load "desolvers.sage"
                      ^
 SyntaxError: invalid syntax
 ```
-
 Now apply the patch [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) to the repository `examples/calculus` to resolve this syntax error:
-
+| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 [mvngu@mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush
 adding trac_7936-desolvers.patch to series file
@@ -400,7 +403,6 @@ sage: vars = ["t","x","y"]
 sage: desolve_system(des,vars)
 [x(t)=(2*y(0)+x(0))*%e^-(2*t)/2-(2*y(0)-x(0))*%e^(2*t)/2,y(t)=(2*y(0)-x(0))*%e^(2*t)/4+(2*y(0)+x(0))*%e^-(2*t)/4]
 ```
-
 
 
 
@@ -431,7 +433,7 @@ Can you just delete the file, Minh?
 archive/issue_comments_069069.json:
 ```json
 {
-    "body": "Replying to [comment:10 wdj]:\n> Thanks for explaining that about the second patch.\n> \n> desolvers.sage can be removed now since Robert Marik has kindly implemented everything in it in sage already.\n> \n> Can you just delete the file, Minh?\n\nI just want to point out also that William is probably going to get rid of the examples directory in the near future - as usual, I do not have the URL for that discussion :) so the sooner we explicitly know it's not necessary, the better.",
+    "body": "Replying to [comment:10 wdj]:\n> Thanks for explaining that about the second patch.\n> \n> desolvers.sage can be removed now since Robert Marik has kindly implemented everything in it in sage already.\n> \n> Can you just delete the file, Minh?\n\n\nI just want to point out also that William is probably going to get rid of the examples directory in the near future - as usual, I do not have the URL for that discussion :) so the sooner we explicitly know it's not necessary, the better.",
     "created_at": "2010-02-03T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -446,6 +448,7 @@ Replying to [comment:10 wdj]:
 > desolvers.sage can be removed now since Robert Marik has kindly implemented everything in it in sage already.
 > 
 > Can you just delete the file, Minh?
+
 
 I just want to point out also that William is probably going to get rid of the examples directory in the near future - as usual, I do not have the URL for that discussion :) so the sooner we explicitly know it's not necessary, the better.
 
@@ -476,7 +479,7 @@ wdj, what do you think?   Probably we can just about delete that whole directory
 archive/issue_comments_069071.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> I can verify that desolvers.sage and euler_method.sage from this directory are completely taken care of by the changes of Robert, and some of field_plot2d.sage is also now in the plot/plot_field.py file (maybe not all of it, but maybe not all is needed?).  I think the stuff in newton_raphson.sage probably should be jettisoned or somehow put in one of the sage/calculus files.  \n> \n> wdj, what do you think?   Probably we can just about delete that whole directory.  What do you think is worth putting into the main Sage library?\n\n\nAgreed. delete it. newton_raphson is so simple, it is easy to just post to the wiki or something anyway. Thanks for looking at this!",
+    "body": "Replying to [comment:12 kcrisman]:\n> I can verify that desolvers.sage and euler_method.sage from this directory are completely taken care of by the changes of Robert, and some of field_plot2d.sage is also now in the plot/plot_field.py file (maybe not all of it, but maybe not all is needed?).  I think the stuff in newton_raphson.sage probably should be jettisoned or somehow put in one of the sage/calculus files.  \n> \n> wdj, what do you think?   Probably we can just about delete that whole directory.  What do you think is worth putting into the main Sage library?\n\n\n\nAgreed. delete it. newton_raphson is so simple, it is easy to just post to the wiki or something anyway. Thanks for looking at this!",
     "created_at": "2010-04-20T14:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -489,6 +492,7 @@ Replying to [comment:12 kcrisman]:
 > I can verify that desolvers.sage and euler_method.sage from this directory are completely taken care of by the changes of Robert, and some of field_plot2d.sage is also now in the plot/plot_field.py file (maybe not all of it, but maybe not all is needed?).  I think the stuff in newton_raphson.sage probably should be jettisoned or somehow put in one of the sage/calculus files.  
 > 
 > wdj, what do you think?   Probably we can just about delete that whole directory.  What do you think is worth putting into the main Sage library?
+
 
 
 Agreed. delete it. newton_raphson is so simple, it is easy to just post to the wiki or something anyway. Thanks for looking at this!
@@ -574,7 +578,7 @@ Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.
 archive/issue_comments_069076.json:
 ```json
 {
-    "body": "Replying to [comment:15 mvngu]:\n> Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\nI think so.   Someone should check the interact wiki and make sure that the essence of the Newton-Raphson example is captured in the interacts already there which are about that.  Recall that this needs review, though, so you (or someone) would need to formally give this positive review at least.",
+    "body": "Replying to [comment:15 mvngu]:\n> Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\n\nI think so.   Someone should check the interact wiki and make sure that the essence of the Newton-Raphson example is captured in the interacts already there which are about that.  Recall that this needs review, though, so you (or someone) would need to formally give this positive review at least.",
     "created_at": "2010-05-09T00:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -585,6 +589,7 @@ archive/issue_comments_069076.json:
 
 Replying to [comment:15 mvngu]:
 > Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?
+
 I think so.   Someone should check the interact wiki and make sure that the essence of the Newton-Raphson example is captured in the interacts already there which are about that.  Recall that this needs review, though, so you (or someone) would need to formally give this positive review at least.
 
 
@@ -594,7 +599,7 @@ I think so.   Someone should check the interact wiki and make sure that the esse
 archive/issue_comments_069077.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> Okay, this patch, applied to the examples/ repository, should take of this.  Needs review.  \n> wdj, why don't you go ahead and look at the newton-raphson examples on the interact \n> part of the Wiki and see if that essentially has that, otherwise can you think of an appropriate place to store it?  \n\n\nLooks good to me. I also copied the file to \nhttp://boxen.math.washington.edu/home/wdj/sagefiles/\n\n\n> \n> Also see #7494 on removing all of this examples/ directory.",
+    "body": "Replying to [comment:14 kcrisman]:\n> Okay, this patch, applied to the examples/ repository, should take of this.  Needs review.  \n> wdj, why don't you go ahead and look at the newton-raphson examples on the interact \n> part of the Wiki and see if that essentially has that, otherwise can you think of an appropriate place to store it?  \n\n\n\nLooks good to me. I also copied the file to \nhttp://boxen.math.washington.edu/home/wdj/sagefiles/\n\n\n> \n> Also see #7494 on removing all of this examples/ directory.",
     "created_at": "2010-05-11T14:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -607,6 +612,7 @@ Replying to [comment:14 kcrisman]:
 > Okay, this patch, applied to the examples/ repository, should take of this.  Needs review.  
 > wdj, why don't you go ahead and look at the newton-raphson examples on the interact 
 > part of the Wiki and see if that essentially has that, otherwise can you think of an appropriate place to store it?  
+
 
 
 Looks good to me. I also copied the file to 
@@ -623,7 +629,7 @@ http://boxen.math.washington.edu/home/wdj/sagefiles/
 archive/issue_comments_069078.json:
 ```json
 {
-    "body": "Replying to [comment:16 kcrisman]:\n> Replying to [comment:15 mvngu]:\n> > Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\n> I think so.   Someone should check the interact wiki and make sure that the essence of the \n> Newton-Raphson example is captured in the interacts already there which are about that.  Recall \n> that this needs review, though, so you (or someone) would need to formally give this positive review at least.  \n\nThis patch does not apply to 4.4.2.a0 for me. Does anyone else have this problem?",
+    "body": "Replying to [comment:16 kcrisman]:\n> Replying to [comment:15 mvngu]:\n> > Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\n\n> I think so.   Someone should check the interact wiki and make sure that the essence of the \n> Newton-Raphson example is captured in the interacts already there which are about that.  Recall \n> that this needs review, though, so you (or someone) would need to formally give this positive review at least.  \n\n\nThis patch does not apply to 4.4.2.a0 for me. Does anyone else have this problem?",
     "created_at": "2010-05-11T14:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -635,9 +641,11 @@ archive/issue_comments_069078.json:
 Replying to [comment:16 kcrisman]:
 > Replying to [comment:15 mvngu]:
 > > Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?
+
 > I think so.   Someone should check the interact wiki and make sure that the essence of the 
 > Newton-Raphson example is captured in the interacts already there which are about that.  Recall 
 > that this needs review, though, so you (or someone) would need to formally give this positive review at least.  
+
 
 This patch does not apply to 4.4.2.a0 for me. Does anyone else have this problem?
 
@@ -702,7 +710,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_069082.json:
 ```json
 {
-    "body": "Replying to [comment:19 kcrisman]:\n> You have to apply it \"manually\" (using ./sage -hg, unfortunately) to the examples/ directory.  There is no hg_examples :(\n\nCan you tell me exactly the command to use to apply the patch Please?\n\nsage -hg ????",
+    "body": "Replying to [comment:19 kcrisman]:\n> You have to apply it \"manually\" (using ./sage -hg, unfortunately) to the examples/ directory.  There is no hg_examples :(\n\n\nCan you tell me exactly the command to use to apply the patch Please?\n\nsage -hg ????",
     "created_at": "2010-05-11T15:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -713,6 +721,7 @@ archive/issue_comments_069082.json:
 
 Replying to [comment:19 kcrisman]:
 > You have to apply it "manually" (using ./sage -hg, unfortunately) to the examples/ directory.  There is no hg_examples :(
+
 
 Can you tell me exactly the command to use to apply the patch Please?
 
@@ -725,7 +734,7 @@ sage -hg ????
 archive/issue_comments_069083.json:
 ```json
 {
-    "body": "I'll use ... to indicate the rest of the path until the Sage folder.\n\n```\ncd .../sage-4.4.1/examples/\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n```\n\nAnd if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n\nI agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.",
+    "body": "I'll use ... to indicate the rest of the path until the Sage folder.\n\n```\ncd .../sage-4.4.1/examples/\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n```\nAnd if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n\nI agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.",
     "created_at": "2010-05-11T16:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -742,7 +751,6 @@ cd .../sage-4.4.1/examples/
 ~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch
 ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.
 ```
-
 And if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.
 
 I agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.
@@ -772,7 +780,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069085.json:
 ```json
 {
-    "body": "Replying to [comment:21 kcrisman]:\n> I'll use ... to indicate the rest of the path until the Sage folder.\n> {{{\n> cd .../sage-4.4.1/examples/\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n> ~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n> }}}\n> And if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n> \n> I agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.\n\n\nThanks very much! \n\nThis applies fine to 4.4.2.a0 and sage -testall passes (except for unrelated failures in interfaces/r.py and misc/sagedoc.py).",
+    "body": "Replying to [comment:21 kcrisman]:\n> I'll use ... to indicate the rest of the path until the Sage folder.\n> \n> ```\n> cd .../sage-4.4.1/examples/\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n> ~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n> ```\n> And if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n> \n> I agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.\n\n\n\nThanks very much! \n\nThis applies fine to 4.4.2.a0 and sage -testall passes (except for unrelated failures in interfaces/r.py and misc/sagedoc.py).",
     "created_at": "2010-05-11T19:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
@@ -783,15 +791,17 @@ archive/issue_comments_069085.json:
 
 Replying to [comment:21 kcrisman]:
 > I'll use ... to indicate the rest of the path until the Sage folder.
-> {{{
+> 
+> ```
 > cd .../sage-4.4.1/examples/
 > ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)
 > ~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch
 > ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.
-> }}}
+> ```
 > And if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.
 > 
 > I agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.
+
 
 
 Thanks very much! 

@@ -196,7 +196,7 @@ A mock-up of V2 is [here](http://sage.math.washington.edu/home/mpatel/trac/7506/
 archive/issue_comments_063388.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> Hi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\nThe patch looks good. \n \n> Also, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?\n\nSure, although that's a bit out of date now...it's still pretty useful, though. I'm planning on updating that page later this spring after Ubuntu Lucid is out.",
+    "body": "Replying to [comment:2 mpatel]:\n> Hi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?\n\n\nThe patch looks good. \n \n> Also, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?\n\n\nSure, although that's a bit out of date now...it's still pretty useful, though. I'm planning on updating that page later this spring after Ubuntu Lucid is out.",
     "created_at": "2010-01-25T04:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7506",
     "type": "issue_comment",
@@ -208,9 +208,11 @@ archive/issue_comments_063388.json:
 Replying to [comment:2 mpatel]:
 > Hi Dan, Jason, and Karl-Dieter -- Could you look at the patch and make/recommend improvements here or at [StartingTheNotebook](http://wiki.sagemath.org/StartingTheNotebook)?
 
+
 The patch looks good. 
  
 > Also, should the latter have a link to [JustEnoughSageServer](http://wiki.sagemath.org/DanDrake/JustEnoughSageServer)?
+
 
 Sure, although that's a bit out of date now...it's still pretty useful, though. I'm planning on updating that page later this spring after Ubuntu Lucid is out.
 

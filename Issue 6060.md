@@ -3,7 +3,7 @@
 archive/issues_006060.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: divmod(10r,10)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/<ipython console> in <module>()\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement.__divmod__ (sage/structure/element.c:13777)()\n\nAttributeError: 'int' object has no attribute 'quo_rem'\n```\n\n\nAttaching a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6060\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: divmod(10r,10)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/<ipython console> in <module>()\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement.__divmod__ (sage/structure/element.c:13777)()\n\nAttributeError: 'int' object has no attribute 'quo_rem'\n```\n\nAttaching a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6060\n\n",
     "created_at": "2009-05-18T03:18:52Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_006060.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: divmod(10r,10)
 ---------------------------------------------------------------------------
@@ -30,7 +29,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'int' object has no attribute 'quo_rem'
 ```
-
 
 Attaching a patch.
 

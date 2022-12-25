@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7248
 archive/issue_comments_060059.json:
 ```json
 {
-    "body": "> John Palmieri has a proposed spkg at #6586.\n\n\"Proposed\"?  It's in Sage 4.2.alpha0.\n\nSome work needs to be done if you want to get rid of Jinja -- last time I checked, some parts of the Sage library use things from Jinja that it wasn't immediately obvious how to replace using Jinja2: see [this comment from #6586](http://trac.sagemath.org/sage_trac/ticket/6586#comment:49).",
+    "body": "> John Palmieri has a proposed spkg at #6586.\n\n\n\"Proposed\"?  It's in Sage 4.2.alpha0.\n\nSome work needs to be done if you want to get rid of Jinja -- last time I checked, some parts of the Sage library use things from Jinja that it wasn't immediately obvious how to replace using Jinja2: see [this comment from #6586](http://trac.sagemath.org/sage_trac/ticket/6586#comment:49).",
     "created_at": "2009-10-19T19:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
@@ -44,6 +44,7 @@ archive/issue_comments_060059.json:
 ```
 
 > John Palmieri has a proposed spkg at #6586.
+
 
 "Proposed"?  It's in Sage 4.2.alpha0.
 
@@ -56,7 +57,7 @@ Some work needs to be done if you want to get rid of Jinja -- last time I checke
 archive/issue_comments_060060.json:
 ```json
 {
-    "body": "Replying to [comment:1 jhpalmieri]:\n> > John Palmieri has a proposed spkg at #6586.\n> \n> \"Proposed\"?  It's in Sage 4.2.alpha0.\n\nOops. I didn't know.\n \n> Some work needs to be done if you want to get rid of Jinja\n\nFor this ticket, I was thinking of just getting jinja2 in. We can do another ticket later for removing jinja. I'll close this since it's already done.",
+    "body": "Replying to [comment:1 jhpalmieri]:\n> > John Palmieri has a proposed spkg at #6586.\n\n> \n> \"Proposed\"?  It's in Sage 4.2.alpha0.\n\n\nOops. I didn't know.\n \n> Some work needs to be done if you want to get rid of Jinja\n\n\nFor this ticket, I was thinking of just getting jinja2 in. We can do another ticket later for removing jinja. I'll close this since it's already done.",
     "created_at": "2009-10-19T23:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
@@ -67,12 +68,15 @@ archive/issue_comments_060060.json:
 
 Replying to [comment:1 jhpalmieri]:
 > > John Palmieri has a proposed spkg at #6586.
+
 > 
 > "Proposed"?  It's in Sage 4.2.alpha0.
+
 
 Oops. I didn't know.
  
 > Some work needs to be done if you want to get rid of Jinja
+
 
 For this ticket, I was thinking of just getting jinja2 in. We can do another ticket later for removing jinja. I'll close this since it's already done.
 
@@ -187,7 +191,7 @@ Resolution changed from fixed to
 archive/issue_comments_060065.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.\n\nThis ticket isn't about switching anything to Jinja2. The title is \"include jinja2 / upgrade jinja spkg\", and I closed it because you had already done exactly that in 4.2.alpha0.\n\n#7249 is about switching, and it has a patch and awaits review.",
+    "body": "Replying to [comment:3 mhansen]:\n> Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.\n\n\nThis ticket isn't about switching anything to Jinja2. The title is \"include jinja2 / upgrade jinja spkg\", and I closed it because you had already done exactly that in 4.2.alpha0.\n\n#7249 is about switching, and it has a patch and awaits review.",
     "created_at": "2009-10-20T05:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
@@ -198,6 +202,7 @@ archive/issue_comments_060065.json:
 
 Replying to [comment:3 mhansen]:
 > Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.
+
 
 This ticket isn't about switching anything to Jinja2. The title is "include jinja2 / upgrade jinja spkg", and I closed it because you had already done exactly that in 4.2.alpha0.
 

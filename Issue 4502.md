@@ -3,7 +3,7 @@
 archive/issues_004502.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: numerical noise, matrix\n\n(This has only been reported on intel macs running 10.4 or 10.5.)\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):\n\n\n```\nsage: A = matrix(RDF,3,range(1,10));A\n\n[1.0 2.0 3.0]\n[4.0 5.0 6.0]\n[7.0 8.0 9.0]\nsage: A.determinant()\n0.0\nsage: -A\n\n[-1.0 -2.0 -3.0]\n[-4.0 -5.0 -6.0]\n[-7.0 -8.0 -9.0]\nsage: b = A.numpy(); b\n\narray([[ 1.,  2.,  3.],\n       [ 4.,  5.,  6.],\n       [ 7.,  8.,  9.]])\nsage: import scipy\nsage: import scipy.linalg\nsage: scipy.linalg.det(b)\n0.0\nsage: scipy.linalg.inv(b)\n\narray([[ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15],\n       [  9.00719925e+15,  -1.80143985e+16,   9.00719925e+15],\n       [ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15]])\n```\n\n\nThis leads to a doctest failure for `matrix_double_dense.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4502\n\n",
+    "body": "Assignee: somebody\n\nKeywords: numerical noise, matrix\n\n(This has only been reported on intel macs running 10.4 or 10.5.)\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):\n\n```\nsage: A = matrix(RDF,3,range(1,10));A\n\n[1.0 2.0 3.0]\n[4.0 5.0 6.0]\n[7.0 8.0 9.0]\nsage: A.determinant()\n0.0\nsage: -A\n\n[-1.0 -2.0 -3.0]\n[-4.0 -5.0 -6.0]\n[-7.0 -8.0 -9.0]\nsage: b = A.numpy(); b\n\narray([[ 1.,  2.,  3.],\n       [ 4.,  5.,  6.],\n       [ 7.,  8.,  9.]])\nsage: import scipy\nsage: import scipy.linalg\nsage: scipy.linalg.det(b)\n0.0\nsage: scipy.linalg.inv(b)\n\narray([[ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15],\n       [  9.00719925e+15,  -1.80143985e+16,   9.00719925e+15],\n       [ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15]])\n```\n\nThis leads to a doctest failure for `matrix_double_dense.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4502\n\n",
     "created_at": "2008-11-12T17:57:19Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ Keywords: numerical noise, matrix
 (This has only been reported on intel macs running 10.4 or 10.5.)
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):
-
 
 ```
 sage: A = matrix(RDF,3,range(1,10));A
@@ -53,7 +52,6 @@ array([[ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15],
        [  9.00719925e+15,  -1.80143985e+16,   9.00719925e+15],
        [ -4.50359963e+15,   9.00719925e+15,  -4.50359963e+15]])
 ```
-
 
 This leads to a doctest failure for `matrix_double_dense.py`.
 
@@ -126,7 +124,7 @@ But please someone have a look if it is worth the price paid.
 archive/issue_comments_033281.json:
 ```json
 {
-    "body": "It fixes the doctest failure for me, too.  One or two questions:\n\nCould the error message \n\n```\nraise ValueError, \"self must be square\" \n```\n\nbe changed to something like \"matrix must be square\"?  Actually, why is this here?  I get an error message about non-square matrices (I think produced by scipy) before applying the patch.",
+    "body": "It fixes the doctest failure for me, too.  One or two questions:\n\nCould the error message \n\n```\nraise ValueError, \"self must be square\" \n```\nbe changed to something like \"matrix must be square\"?  Actually, why is this here?  I get an error message about non-square matrices (I think produced by scipy) before applying the patch.",
     "created_at": "2008-11-16T16:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -142,7 +140,6 @@ Could the error message
 ```
 raise ValueError, "self must be square" 
 ```
-
 be changed to something like "matrix must be square"?  Actually, why is this here?  I get an error message about non-square matrices (I think produced by scipy) before applying the patch.
 
 
@@ -294,7 +291,7 @@ Michael
 archive/issue_comments_033289.json:
 ```json
 {
-    "body": "Hi John,\n>Could the error message\n\n```\nraise ValueError, \"self must be square\" \n```\n\n>be changed to something like \"matrix must be square\"? Actually, why is this here? I get an error message about non-square matrices (I think produced by scipy) before applying the patch.\n\nThis test and error message were copied verbatim from lines 759/760 of that same file (function \"def determinant(self)\"). In my first patch, I introduced the additional calculation of the determinant in the function for inverting the matrix, and I wanted to make sure that all necessary sanity checks were in place.\n\nWould it be possible for you to provide not only a concrete wording, but a new trac ticket with patch, if you like some other wording better for that error message? I'll review it then. (Maybe just removing this test from the .pyx file and relying on scipy producing the error message for us also for determinants on non-square matrices is an option here.)\n\nCheers,\n\ngsw",
+    "body": "Hi John,\n>Could the error message\n\n{{{\nraise ValueError, \"self must be square\" \n}}}\n>be changed to something like \"matrix must be square\"? Actually, why is this here? I get an error message about non-square matrices (I think produced by scipy) before applying the patch.\n\n\nThis test and error message were copied verbatim from lines 759/760 of that same file (function \"def determinant(self)\"). In my first patch, I introduced the additional calculation of the determinant in the function for inverting the matrix, and I wanted to make sure that all necessary sanity checks were in place.\n\nWould it be possible for you to provide not only a concrete wording, but a new trac ticket with patch, if you like some other wording better for that error message? I'll review it then. (Maybe just removing this test from the .pyx file and relying on scipy producing the error message for us also for determinants on non-square matrices is an option here.)\n\nCheers,\n\ngsw",
     "created_at": "2008-11-18T21:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -306,11 +303,11 @@ archive/issue_comments_033289.json:
 Hi John,
 >Could the error message
 
-```
+{{{
 raise ValueError, "self must be square" 
-```
-
+}}}
 >be changed to something like "matrix must be square"? Actually, why is this here? I get an error message about non-square matrices (I think produced by scipy) before applying the patch.
+
 
 This test and error message were copied verbatim from lines 759/760 of that same file (function "def determinant(self)"). In my first patch, I introduced the additional calculation of the determinant in the function for inverting the matrix, and I wanted to make sure that all necessary sanity checks were in place.
 
@@ -327,7 +324,7 @@ gsw
 archive/issue_comments_033290.json:
 ```json
 {
-    "body": ">#random does not fix it since the exception still gets thrown. I tried it, so that is how I found out. \nStrange. So does this mean the doctest passing as follows:\n\n```\nsusanne-webers-computer:~/Public/sage/sage-3.2.rc1/devel/sage georgweber$ sage -t sage/matrix/matrix_double_dense.pyx\nsage -t  devel/sage-test2/sage/matrix/matrix_double_dense.pyx\n         [4.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.2 seconds\n```\n\nis not enough here? I'm a bit puzzled, which exception exactly gets \"thrown nevertheless\" and when? I'm fine with nuking the doctest and postponing the issue till scipy 0.7 is there and included, I ask just out of curiosity.",
+    "body": ">#random does not fix it since the exception still gets thrown. I tried it, so that is how I found out. \nStrange. So does this mean the doctest passing as follows:\n\n```\nsusanne-webers-computer:~/Public/sage/sage-3.2.rc1/devel/sage georgweber$ sage -t sage/matrix/matrix_double_dense.pyx\nsage -t  devel/sage-test2/sage/matrix/matrix_double_dense.pyx\n         [4.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.2 seconds\n```\nis not enough here? I'm a bit puzzled, which exception exactly gets \"thrown nevertheless\" and when? I'm fine with nuking the doctest and postponing the issue till scipy 0.7 is there and included, I ask just out of curiosity.",
     "created_at": "2008-11-18T21:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -348,7 +345,6 @@ sage -t  devel/sage-test2/sage/matrix/matrix_double_dense.pyx
 All tests passed!
 Total time for all tests: 4.2 seconds
 ```
-
 is not enough here? I'm a bit puzzled, which exception exactly gets "thrown nevertheless" and when? I'm fine with nuking the doctest and postponing the issue till scipy 0.7 is there and included, I ask just out of curiosity.
 
 
@@ -358,7 +354,7 @@ is not enough here? I'm a bit puzzled, which exception exactly gets "thrown neve
 archive/issue_comments_033291.json:
 ```json
 {
-    "body": "With\n\n```\ndiff -r 50c6651a1286 sage/matrix/matrix_double_dense.pyx\n--- a/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 08:58:27 2008 -0800\n+++ b/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 13:49:26 2008 -0800\n@@ -441,7 +441,7 @@\n             \n             sage: A.determinant() < 10e-12\n             True\n-            sage: ~A\n+            sage: ~A # random\n             Traceback (most recent call last):\n             ...\n             LinAlgError: singular matrix\n```\n\nI get\n\n```\nsage -t  devel/sage/sage/matrix/matrix_double_dense.pyx     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 444:\n    sage: print \"ignore this\";  ~A # random\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[10]>\", line 1, in <module>\n        print \"ignore this\";  ~A # random###line 444:\n    sage: print \"ignore this\";  ~A # random\n      File \"matrix_double_dense.pyx\", line 460, in sage.matrix.matrix_double_dense.Matrix_double_dense.__invert__ (sage/matrix/matrix_double_dense.c:3878)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/lib/python2.5/site-packages/scipy/linalg/basic.py\", line 306, in inv\n        if info>0: raise LinAlgError, \"singular matrix\"\n    LinAlgError: singular matrix\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc2/tmp/.doctest_matrix_double_dense.py\n         [2.4 s]\nexit code: 1024\n```\n",
+    "body": "With\n\n```\ndiff -r 50c6651a1286 sage/matrix/matrix_double_dense.pyx\n--- a/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 08:58:27 2008 -0800\n+++ b/sage/matrix/matrix_double_dense.pyx       Tue Nov 18 13:49:26 2008 -0800\n@@ -441,7 +441,7 @@\n             \n             sage: A.determinant() < 10e-12\n             True\n-            sage: ~A\n+            sage: ~A # random\n             Traceback (most recent call last):\n             ...\n             LinAlgError: singular matrix\n```\nI get\n\n```\nsage -t  devel/sage/sage/matrix/matrix_double_dense.pyx     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 444:\n    sage: print \"ignore this\";  ~A # random\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[10]>\", line 1, in <module>\n        print \"ignore this\";  ~A # random###line 444:\n    sage: print \"ignore this\";  ~A # random\n      File \"matrix_double_dense.pyx\", line 460, in sage.matrix.matrix_double_dense.Matrix_double_dense.__invert__ (sage/matrix/matrix_double_dense.c:3878)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.rc2/local/lib/python2.5/site-packages/scipy/linalg/basic.py\", line 306, in inv\n        if info>0: raise LinAlgError, \"singular matrix\"\n    LinAlgError: singular matrix\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.rc2/tmp/.doctest_matrix_double_dense.py\n         [2.4 s]\nexit code: 1024\n```",
     "created_at": "2008-11-18T21:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -383,7 +379,6 @@ diff -r 50c6651a1286 sage/matrix/matrix_double_dense.pyx
              ...
              LinAlgError: singular matrix
 ```
-
 I get
 
 ```
@@ -417,7 +412,6 @@ exit code: 1024
 
 
 
-
 ---
 
 archive/issue_comments_033292.json:
@@ -447,7 +441,7 @@ Just point out to me the respective parts of the IRC conversation if all that in
 archive/issue_comments_033293.json:
 ```json
 {
-    "body": "The issue is the following:\n\n```\n[10:34am] wstein|afk: mabshoff -- all that #random does is the following.\n[10:35am] wstein|afk: sage: foo # random\n[10:35am] wstein|afk: gets replaced by\n[10:35am] wstein|afk: sage: _ = foo\n[10:35am] wstein|afk: That's it.\n[10:35am] mabshoff: mhh\n[10:35am] wstein|afk: So it won't work at all with exceptions.\n[10:35am] wstein|afk: Better might be:\n[10:35am] wstein|afk: sage: foo # random\n[10:35am] wstein|afk: gets replaced by\n[10:35am] wstein|afk: sage: foo\n[10:35am] wstein|afk: ...\n[10:35am] wstein|afk: If that worked.\n[10:35am] wstein|afk: I didn't know about ... when I wrote # random.\n```\n\nThe goal now is to get 3.2 out and the easiest way to do this is to nuke the affected doctests and then deal with `#random` properly in 3.2.1.\n\nCheers,\n\nMichael",
+    "body": "The issue is the following:\n\n```\n[10:34am] wstein|afk: mabshoff -- all that #random does is the following.\n[10:35am] wstein|afk: sage: foo # random\n[10:35am] wstein|afk: gets replaced by\n[10:35am] wstein|afk: sage: _ = foo\n[10:35am] wstein|afk: That's it.\n[10:35am] mabshoff: mhh\n[10:35am] wstein|afk: So it won't work at all with exceptions.\n[10:35am] wstein|afk: Better might be:\n[10:35am] wstein|afk: sage: foo # random\n[10:35am] wstein|afk: gets replaced by\n[10:35am] wstein|afk: sage: foo\n[10:35am] wstein|afk: ...\n[10:35am] wstein|afk: If that worked.\n[10:35am] wstein|afk: I didn't know about ... when I wrote # random.\n```\nThe goal now is to get 3.2 out and the easiest way to do this is to nuke the affected doctests and then deal with `#random` properly in 3.2.1.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-18T22:00:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4502",
     "type": "issue_comment",
@@ -474,7 +468,6 @@ The issue is the following:
 [10:35am] wstein|afk: If that worked.
 [10:35am] wstein|afk: I didn't know about ... when I wrote # random.
 ```
-
 The goal now is to get 3.2 out and the easiest way to do this is to nuke the affected doctests and then deal with `#random` properly in 3.2.1.
 
 Cheers,

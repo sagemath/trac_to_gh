@@ -3,7 +3,7 @@
 archive/issues_004569.json:
 ```json
 {
-    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nwdj pointed out in the comments to #4419:\n\n\n```\n{{{\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation('()'))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\nValueError: invalid literal for int() with base 10: ''\n}}}\n\nand this:\n\n{{{\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n}}}\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n{{{\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n}}}\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4569\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nwdj pointed out in the comments to #4419:\n\n```\n{{{\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation('()'))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\nValueError: invalid literal for int() with base 10: ''\n}}}\n\nand this:\n\n{{{\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n}}}\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n{{{\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n}}}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4569\n\n",
     "created_at": "2008-11-20T20:47:04Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ Assignee: @saliola
 CC:  sage-combinat
 
 wdj pointed out in the comments to #4419:
-
 
 ```
 {{{
@@ -59,7 +58,6 @@ True
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4569
 
 
@@ -91,7 +89,7 @@ patched against 3.2.rc2
 archive/issue_comments_034163.json:
 ```json
 {
-    "body": "After this patch:\n\n```\nsage: Permutation([()])\n[1]\nsage: Permutation('()')\n[1]\n```\n\nwhich agree with PermutationGroupElement:\n\n```\nsage: PermutationGroupElement([()]).list()\n[1]\nsage: PermutationGroupElement('()').list()\n[1]\n```\n\nand:\n\n```\nsage: p = Permutation('(1,2,3)')\nsage: q = Permutation('()')\nsage: gap.Group([p,q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n```\n",
+    "body": "After this patch:\n\n```\nsage: Permutation([()])\n[1]\nsage: Permutation('()')\n[1]\n```\nwhich agree with PermutationGroupElement:\n\n```\nsage: PermutationGroupElement([()]).list()\n[1]\nsage: PermutationGroupElement('()').list()\n[1]\n```\nand:\n\n```\nsage: p = Permutation('(1,2,3)')\nsage: q = Permutation('()')\nsage: gap.Group([p,q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n```",
     "created_at": "2008-11-20T21:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4569",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ sage: Permutation([()])
 sage: Permutation('()')
 [1]
 ```
-
 which agree with PermutationGroupElement:
 
 ```
@@ -117,7 +114,6 @@ sage: PermutationGroupElement([()]).list()
 sage: PermutationGroupElement('()').list()
 [1]
 ```
-
 and:
 
 ```
@@ -128,7 +124,6 @@ Group( [ (1,2,3), () ] )
 sage: gap.Group([p]) == gap.Group([p, q])
 True
 ```
-
 
 
 

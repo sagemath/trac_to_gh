@@ -3,7 +3,7 @@
 archive/issues_006187.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\n\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
     "created_at": "2009-06-02T17:00:10Z",
     "labels": [
         "component: documentation"
@@ -32,7 +32,6 @@ only need to build the docs once per release.
 I imagine this is easily doable by adapting the clone script.  If 
 people agree, could someone  make a ticket? 
 ```
-
 Note that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6187
@@ -102,7 +101,7 @@ archive/issue_comments_049300.json:
 archive/issue_comments_049301.json:
 ```json
 {
-    "body": "This is kind of brutal, but we can replace the cloning part of sage-clone with a single line like\n\n```\ncmd = 'cp -pr sage %s'%branch\n```\n\n(This is with the BSD version of cp on Mac OS X; it might be more portable to use a python equivalent, like shutil.copytree.)\n\nThis has the disadvantage that some crap gets copied along with the good stuff. This is probably a bad idea from other points of view, too; what else goes wrong?  \n\nIt has the advantage that modification times are preserved, while they are not (as far as I can tell) when you use 'hg clone' to copy the repository.\n\nBy the way, the 'clone' section of the hg man page says:\n\n```\nIn some cases, you can clone repositories and checked out files\nusing full hardlinks with\n$ cp -al REPO REPOCLONE\nThis is the fastest way to clone, but it is not always safe. The\noperation is not atomic (making sure REPO is not modified during\nthe operation is up to you) and you have to make sure your editor\nbreaks hardlinks (Emacs and most Linux Kernel tools do so). Also,\nthis is not compatible with certain extensions that place their\nmetadata under the .hg directory, such as mq.\n```\n\nThis is where I got the idea, although their version creates hard links, which I suppose is why it would be \"the fastest way\"...",
+    "body": "This is kind of brutal, but we can replace the cloning part of sage-clone with a single line like\n\n```\ncmd = 'cp -pr sage %s'%branch\n```\n(This is with the BSD version of cp on Mac OS X; it might be more portable to use a python equivalent, like shutil.copytree.)\n\nThis has the disadvantage that some crap gets copied along with the good stuff. This is probably a bad idea from other points of view, too; what else goes wrong?  \n\nIt has the advantage that modification times are preserved, while they are not (as far as I can tell) when you use 'hg clone' to copy the repository.\n\nBy the way, the 'clone' section of the hg man page says:\n\n```\nIn some cases, you can clone repositories and checked out files\nusing full hardlinks with\n$ cp -al REPO REPOCLONE\nThis is the fastest way to clone, but it is not always safe. The\noperation is not atomic (making sure REPO is not modified during\nthe operation is up to you) and you have to make sure your editor\nbreaks hardlinks (Emacs and most Linux Kernel tools do so). Also,\nthis is not compatible with certain extensions that place their\nmetadata under the .hg directory, such as mq.\n```\nThis is where I got the idea, although their version creates hard links, which I suppose is why it would be \"the fastest way\"...",
     "created_at": "2009-06-14T17:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -116,7 +115,6 @@ This is kind of brutal, but we can replace the cloning part of sage-clone with a
 ```
 cmd = 'cp -pr sage %s'%branch
 ```
-
 (This is with the BSD version of cp on Mac OS X; it might be more portable to use a python equivalent, like shutil.copytree.)
 
 This has the disadvantage that some crap gets copied along with the good stuff. This is probably a bad idea from other points of view, too; what else goes wrong?  
@@ -136,7 +134,6 @@ breaks hardlinks (Emacs and most Linux Kernel tools do so). Also,
 this is not compatible with certain extensions that place their
 metadata under the .hg directory, such as mq.
 ```
-
 This is where I got the idea, although their version creates hard links, which I suppose is why it would be "the fastest way"...
 
 
@@ -146,7 +143,7 @@ This is where I got the idea, although their version creates hard links, which I
 archive/issue_comments_049302.json:
 ```json
 {
-    "body": "One issue to keep in mind when testing: if you do\n\n```\nsage -docbuild --jsmath reference html\n```\n\nas is done at the end of 'make', and then you do\n\n```\nsage -docbuild reference html\n```\n\nthe entire reference manual gets rebuilt (and similarly for the other pieces of documentation).  So if you're testing out an idea for how to fix this, make sure that you're consistent with the `--jsmath` setting before and after cloning.",
+    "body": "One issue to keep in mind when testing: if you do\n\n```\nsage -docbuild --jsmath reference html\n```\nas is done at the end of 'make', and then you do\n\n```\nsage -docbuild reference html\n```\nthe entire reference manual gets rebuilt (and similarly for the other pieces of documentation).  So if you're testing out an idea for how to fix this, make sure that you're consistent with the `--jsmath` setting before and after cloning.",
     "created_at": "2009-06-16T02:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -160,13 +157,11 @@ One issue to keep in mind when testing: if you do
 ```
 sage -docbuild --jsmath reference html
 ```
-
 as is done at the end of 'make', and then you do
 
 ```
 sage -docbuild reference html
 ```
-
 the entire reference manual gets rebuilt (and similarly for the other pieces of documentation).  So if you're testing out an idea for how to fix this, make sure that you're consistent with the `--jsmath` setting before and after cloning.
 
 
@@ -296,7 +291,7 @@ This is on linux (ubuntu 32-bit);  since you use a standard python utility for t
 archive/issue_comments_049309.json:
 ```json
 {
-    "body": "The following may help with rebuilding the reference manual after cloning:\n\n* Start with v4.0.2, or a vanilla `sage-clone` script, at least.\n* Apply \n\n```\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -353,6 +353,16 @@ class ReferenceBuilder(DocBuilder):\n         if os.path.exists(_sage):\n             copytree(_sage, os.path.join(self.dir, 'sage'))\n                 \n+        # After \"sage -clone\", refresh the .rst file mtimes in\n+        # environment.pickle.\n+        if update_mtimes:\n+            import time\n+            env = self.get_sphinx_environment()\n+            for doc in env.all_docs:\n+                env.all_docs[doc] = time.time()\n+            env_pickle = os.path.join(self._doctrees_dir(), 'environment.pickle')\n+            env.topickle(env_pickle)\n+\n         getattr(DocBuilder, build_type)(self, *args, **kwds)\n     \n     def cache_filename(self):\n@@ -645,6 +655,8 @@ def help_message():\n parser = optparse.OptionParser(usage=\"usage: sage -docbuild [options] name type\")\n parser.add_option(\"--jsmath\", action=\"store_true\",\n                   help=\"render math using jsMath\")\n+parser.add_option(\"--update_mtimes\", action=\"store_true\",\n+                  help='update .rst file mtimes (e.g., after \"sage -clone\")')\n parser.print_help = help_message\n \n if __name__ == '__main__':\n@@ -653,6 +665,11 @@ if __name__ == '__main__':\n     if options.jsmath:\n         os.environ['SAGE_DOC_JSMATH'] = \"True\"\n \n+    if options.update_mtimes:\n+        update_mtimes = True\n+    else:\n+        update_mtimes = False\n+\n     #Get the name of the document we are trying to build\n     try:\n         name, type = args\n```\n\n* Do `sage -clone foo` or, e.g., `cd $SAGE_ROOT/devel/sage-foo; cp -pr ../sage-bar/doc .`\n* Update `builder.py`, if necessary.\n* Do `sage -docbuild reference html --update_mtimes --jsmath`\n* Do `sage -docbuild reference html --jsmath`\n\nNote: I haven't tested this idea with #5350, other documents, other builders, etc.",
+    "body": "The following may help with rebuilding the reference manual after cloning:\n\n* Start with v4.0.2, or a vanilla `sage-clone` script, at least.\n* Apply \n\n```\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -353,6 +353,16 @@ class ReferenceBuilder(DocBuilder):\n         if os.path.exists(_sage):\n             copytree(_sage, os.path.join(self.dir, 'sage'))\n                 \n+        # After \"sage -clone\", refresh the .rst file mtimes in\n+        # environment.pickle.\n+        if update_mtimes:\n+            import time\n+            env = self.get_sphinx_environment()\n+            for doc in env.all_docs:\n+                env.all_docs[doc] = time.time()\n+            env_pickle = os.path.join(self._doctrees_dir(), 'environment.pickle')\n+            env.topickle(env_pickle)\n+\n         getattr(DocBuilder, build_type)(self, *args, **kwds)\n     \n     def cache_filename(self):\n@@ -645,6 +655,8 @@ def help_message():\n parser = optparse.OptionParser(usage=\"usage: sage -docbuild [options] name type\")\n parser.add_option(\"--jsmath\", action=\"store_true\",\n                   help=\"render math using jsMath\")\n+parser.add_option(\"--update_mtimes\", action=\"store_true\",\n+                  help='update .rst file mtimes (e.g., after \"sage -clone\")')\n parser.print_help = help_message\n \n if __name__ == '__main__':\n@@ -653,6 +665,11 @@ if __name__ == '__main__':\n     if options.jsmath:\n         os.environ['SAGE_DOC_JSMATH'] = \"True\"\n \n+    if options.update_mtimes:\n+        update_mtimes = True\n+    else:\n+        update_mtimes = False\n+\n     #Get the name of the document we are trying to build\n     try:\n         name, type = args\n```\n* Do `sage -clone foo` or, e.g., `cd $SAGE_ROOT/devel/sage-foo; cp -pr ../sage-bar/doc .`\n* Update `builder.py`, if necessary.\n* Do `sage -docbuild reference html --update_mtimes --jsmath`\n* Do `sage -docbuild reference html --jsmath`\n\nNote: I haven't tested this idea with #5350, other documents, other builders, etc.",
     "created_at": "2009-06-29T00:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -353,7 +348,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
      try:
          name, type = args
 ```
-
 * Do `sage -clone foo` or, e.g., `cd $SAGE_ROOT/devel/sage-foo; cp -pr ../sage-bar/doc .`
 * Update `builder.py`, if necessary.
 * Do `sage -docbuild reference html --update_mtimes --jsmath`
@@ -436,7 +430,7 @@ use this and trac_6187_new_scripts.patch only
 archive/issue_comments_049313.json:
 ```json
 {
-    "body": "Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by @qed777 created at 2009-07-01 15:18:52\n\nReplying to [comment:12 mpatel]:\n> I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nThe new patch should now work in this case.\n\nThe pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'\n\n> I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.\n\nApply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.",
+    "body": "Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by @qed777 created at 2009-07-01 15:18:52\n\nReplying to [comment:12 mpatel]:\n> I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\n\nThe new patch should now work in this case.\n\nThe pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'\n\n> I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.\n\n\nApply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.",
     "created_at": "2009-07-01T15:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -450,11 +444,13 @@ Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/tick
 Replying to [comment:12 mpatel]:
 > I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.
 
+
 The new patch should now work in this case.
 
 The pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'
 
 > I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.
+
 
 Apply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.
 
@@ -465,7 +461,7 @@ Apply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpa
 archive/issue_comments_049314.json:
 ```json
 {
-    "body": "What should the output from 'sage -docbuild --update_mtimes reference html' look like?  Right now I see\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Applications/sage/devel/sage/doc/en/reference /Applications/sage/devel/sage/doc/output/html/en/reference\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/reference\n```\n\nSince it's not actually building anything (is it?), I think this is misleading.  In the new scripts patch, I've changed sage-clone so that it suppresses the standard output from this command.",
+    "body": "What should the output from 'sage -docbuild --update_mtimes reference html' look like?  Right now I see\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Applications/sage/devel/sage/doc/en/reference /Applications/sage/devel/sage/doc/output/html/en/reference\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/reference\n```\nSince it's not actually building anything (is it?), I think this is misleading.  In the new scripts patch, I've changed sage-clone so that it suppresses the standard output from this command.",
     "created_at": "2009-07-02T22:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -485,7 +481,6 @@ updating environment: 0 added, 0 changed, 0 removed
 no targets are out of date.
 Build finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/reference
 ```
-
 Since it's not actually building anything (is it?), I think this is misleading.  In the new scripts patch, I've changed sage-clone so that it suppresses the standard output from this command.
 
 
@@ -669,7 +664,7 @@ I've added a few recipients to the CC list.  I hope that's OK.
 archive/issue_comments_049323.json:
 ```json
 {
-    "body": "I should add that I selected capital letters for listing commands (`-C`), formats (`-F`), and documents (`-D`), so that we could use the corresponding lower-case letters, if it's desired, to carry out multiple actions, e.g.,\n\n```\nsage -docbuild -d reference,tutorial -f pdf,html -jv2\n```\n\nIs the command-format distinction useful?  We could add commands to \"pre-process\" groups of docstrings, e.g., to check for and enforce style conventions or to search for cross-references that point to a given object.  However, I'm not very familiar with actually writing ReST docstrings.",
+    "body": "I should add that I selected capital letters for listing commands (`-C`), formats (`-F`), and documents (`-D`), so that we could use the corresponding lower-case letters, if it's desired, to carry out multiple actions, e.g.,\n\n```\nsage -docbuild -d reference,tutorial -f pdf,html -jv2\n```\nIs the command-format distinction useful?  We could add commands to \"pre-process\" groups of docstrings, e.g., to check for and enforce style conventions or to search for cross-references that point to a given object.  However, I'm not very familiar with actually writing ReST docstrings.",
     "created_at": "2009-07-14T20:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -683,7 +678,6 @@ I should add that I selected capital letters for listing commands (`-C`), format
 ```
 sage -docbuild -d reference,tutorial -f pdf,html -jv2
 ```
-
 Is the command-format distinction useful?  We could add commands to "pre-process" groups of docstrings, e.g., to check for and enforce style conventions or to search for cross-references that point to a given object.  However, I'm not very familiar with actually writing ReST docstrings.
 
 
@@ -751,7 +745,7 @@ When this ticket is closed, close #6488 as well.
 archive/issue_comments_049327.json:
 ```json
 {
-    "body": "Overall, this works as advertised.  I like the new options, the new option parsing, and the help messages.  We might consider eventually updating mtimes on all of the docs, not just the reference manual, but everything else is quick enoug to build that it's not a big deal.  (To test: I installed the two patches here and made sure the docs were built.  Then I cloned the current repository and rebuilt the docs.  The reference manual built almost instantly, because it was using the version from the clone.)\n\nSomeone else should take a good look at it, though, since I am an author of part of this (the scripts part).  Also, there are a number of changes to builder.py, and other people should look carefully at them, more carefully than I have so far.\n\nOther comments: if I do something like `sage -docbuild hello html`, then it says\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/hello    /Applications/sage/devel/sage/doc/en/hello /Applications/sage/devel/sage/doc/output/html/en/hello\nError: Source directory doesn't contain conf.py file.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/hello\n```\n\nThe problem is, it creates a directory SAGE_ROOT/devel/sage/doc/en/hello, and now \"hello\" appears in the list of documents.  Should there be better error checking to prevent this from happening?\n\nActually, I think this belongs on another ticket: it's a \"pre-existing condition\", and can be dealt with separately.  See #6605.",
+    "body": "Overall, this works as advertised.  I like the new options, the new option parsing, and the help messages.  We might consider eventually updating mtimes on all of the docs, not just the reference manual, but everything else is quick enoug to build that it's not a big deal.  (To test: I installed the two patches here and made sure the docs were built.  Then I cloned the current repository and rebuilt the docs.  The reference manual built almost instantly, because it was using the version from the clone.)\n\nSomeone else should take a good look at it, though, since I am an author of part of this (the scripts part).  Also, there are a number of changes to builder.py, and other people should look carefully at them, more carefully than I have so far.\n\nOther comments: if I do something like `sage -docbuild hello html`, then it says\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/hello    /Applications/sage/devel/sage/doc/en/hello /Applications/sage/devel/sage/doc/output/html/en/hello\nError: Source directory doesn't contain conf.py file.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/hello\n```\nThe problem is, it creates a directory SAGE_ROOT/devel/sage/doc/en/hello, and now \"hello\" appears in the list of documents.  Should there be better error checking to prevent this from happening?\n\nActually, I think this belongs on another ticket: it's a \"pre-existing condition\", and can be dealt with separately.  See #6605.",
     "created_at": "2009-07-23T17:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -771,7 +765,6 @@ sphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/hel
 Error: Source directory doesn't contain conf.py file.
 Build finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/hello
 ```
-
 The problem is, it creates a directory SAGE_ROOT/devel/sage/doc/en/hello, and now "hello" appears in the list of documents.  Should there be better error checking to prevent this from happening?
 
 Actually, I think this belongs on another ticket: it's a "pre-existing condition", and can be dealt with separately.  See #6605.
@@ -801,7 +794,7 @@ A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.
 archive/issue_comments_049329.json:
 ```json
 {
-    "body": "Replying to [comment:23 mpatel]:\n> A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.\nAlso:  Update the scripts patch, if necessary, for consistency with #6614.",
+    "body": "Replying to [comment:23 mpatel]:\n> A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.\n\nAlso:  Update the scripts patch, if necessary, for consistency with #6614.",
     "created_at": "2009-08-02T22:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
@@ -812,6 +805,7 @@ archive/issue_comments_049329.json:
 
 Replying to [comment:23 mpatel]:
 > A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.
+
 Also:  Update the scripts patch, if necessary, for consistency with #6614.
 
 

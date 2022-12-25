@@ -3,7 +3,7 @@
 archive/issues_004858.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  phil-sage@teuwen.org\n\n[from notebook bug reporter](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1230037542957000&pt=1230037522957000&diffWidget=true&s=AJVazbXknPq-Bx-rR5kIauR1GyZU7hV7yg)\n\n\n```\nHi,\n\nI had some notebook sheets with parenthesis in the title with Sage v3.1.1\nBut since I upgraded to 3.2.1 the parenthesis are escaped, even multiple times, every time the sheet is opened again.\nTo reproduce the problem:\nCreate new sheet \"Untitled\"\nRename it as \"Untitled (test)\"\nClose it, it appears properly in the list\nOpen it again -> \"Untitled &amp;#40;test&amp;#41;\"\nSo the bug was introduced somewhere between 3.1.1 and 3.2.1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4858\n\n",
+    "body": "Assignee: boothby\n\nCC:  phil-sage@teuwen.org\n\n[from notebook bug reporter](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1230037542957000&pt=1230037522957000&diffWidget=true&s=AJVazbXknPq-Bx-rR5kIauR1GyZU7hV7yg)\n\n```\nHi,\n\nI had some notebook sheets with parenthesis in the title with Sage v3.1.1\nBut since I upgraded to 3.2.1 the parenthesis are escaped, even multiple times, every time the sheet is opened again.\nTo reproduce the problem:\nCreate new sheet \"Untitled\"\nRename it as \"Untitled (test)\"\nClose it, it appears properly in the list\nOpen it again -> \"Untitled &amp;#40;test&amp;#41;\"\nSo the bug was introduced somewhere between 3.1.1 and 3.2.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4858\n\n",
     "created_at": "2008-12-23T13:16:47Z",
     "labels": [
         "component: notebook",
@@ -22,7 +22,6 @@ CC:  phil-sage@teuwen.org
 
 [from notebook bug reporter](http://spreadsheets.google.com/ver?key=pCwvGVwSMxTzT6E2xNdo5fA&t=1230037542957000&pt=1230037522957000&diffWidget=true&s=AJVazbXknPq-Bx-rR5kIauR1GyZU7hV7yg)
 
-
 ```
 Hi,
 
@@ -35,7 +34,6 @@ Close it, it appears properly in the list
 Open it again -> "Untitled &amp;#40;test&amp;#41;"
 So the bug was introduced somewhere between 3.1.1 and 3.2.1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4858
 

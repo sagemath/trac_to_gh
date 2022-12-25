@@ -3,7 +3,7 @@
 archive/issues_004538.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @garyfurnish\n\nCreate a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run\na subprocess, wait a certain amount of time, then killing it.  \n\n```\nsage-walltimekill 3600 sage\n```\n\nwould kill the process it starts after 3600 wall seconds.\n\nThis will be useful both for doctesting and the notebook.  It's the sort of\nthing ulimit \"should\" do, but doesn't. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4538\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @garyfurnish\n\nCreate a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run\na subprocess, wait a certain amount of time, then killing it.  \n\n```\nsage-walltimekill 3600 sage\n```\nwould kill the process it starts after 3600 wall seconds.\n\nThis will be useful both for doctesting and the notebook.  It's the sort of\nthing ulimit \"should\" do, but doesn't. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4538\n\n",
     "created_at": "2008-11-17T15:13:40Z",
     "labels": [
         "component: misc",
@@ -26,7 +26,6 @@ a subprocess, wait a certain amount of time, then killing it.
 ```
 sage-walltimekill 3600 sage
 ```
-
 would kill the process it starts after 3600 wall seconds.
 
 This will be useful both for doctesting and the notebook.  It's the sort of
@@ -103,7 +102,7 @@ With #717 can we close this as invalid?  Or do you want me to encapsulate the #7
 archive/issue_comments_033763.json:
 ```json
 {
-    "body": "Replying to [comment:3 gfurnish]:\n> With #717 can we close this as invalid?  Or do you want me to encapsulate the #717 code for some other purpose?  \n\nThis could still come in useful for example for the notebook, so I would leave it open.\n\nWilliam: any thoughts here?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 gfurnish]:\n> With #717 can we close this as invalid?  Or do you want me to encapsulate the #717 code for some other purpose?  \n\n\nThis could still come in useful for example for the notebook, so I would leave it open.\n\nWilliam: any thoughts here?\n\nCheers,\n\nMichael",
     "created_at": "2008-12-05T07:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4538",
     "type": "issue_comment",
@@ -114,6 +113,7 @@ archive/issue_comments_033763.json:
 
 Replying to [comment:3 gfurnish]:
 > With #717 can we close this as invalid?  Or do you want me to encapsulate the #717 code for some other purpose?  
+
 
 This could still come in useful for example for the notebook, so I would leave it open.
 

@@ -3,7 +3,7 @@
 archive/issues_007729.json:
 ```json
 {
-    "body": "Assignee: @dwbump\n\nKeywords: Iwahori Hecke Algebra\n\nThe attached patch implements Iwahori Hecke algebras. Given a Cartan Type, the Iwahori Hecke algebra is a deformation of the group algebra over the Weyl group. It has generators in bijection with the simple reflections of the Weyl group that satisfy simple quadratic relations of the form (T_i-q1)*(T_i-q2) = 0. Often we default q2=-1, q1=q in which case the relation is of the form T_i^2=(q-1)T_i+q. The generators also satisfy the braid relations.  \n\n\n```\nsage: R.<q>=PolynomialRing(QQ)\nsage: H = IwahoriHeckeAlgebra(\"A3\",q)\nsage: [T1,T2,T3]=H.algebra_generators()\nsage: T1*(T2+T3)*T1\nT1*T2*T1 + (q-1)*T3*T1 + q*T3\n```\n\n\nThis code is very tested for type A and is almost certainly correct for Weyl groups of finite type. I have not tried it for any affine Weyl groups.\n\nThe following issues remain.\n\n* It may require some revision in order to follow Sage's coercion model. David Roe suggested that the _coerce_impl method should be removed.\n\n* The get_action method is a kludge to avoid the crash reported in #7725. That crash is fixed by David Roe's patch in #7718, but this patch does not work with the patch in #7718.\n\nFor some further discussion of this topic see\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/78fc23f23cafe705?hl=en\n\nIt is well tested for type A and is probably correct for all Cartan Types of finite type. I have not tried it with\n\nIssue created by migration from https://trac.sagemath.org/ticket/7729\n\n",
+    "body": "Assignee: @dwbump\n\nKeywords: Iwahori Hecke Algebra\n\nThe attached patch implements Iwahori Hecke algebras. Given a Cartan Type, the Iwahori Hecke algebra is a deformation of the group algebra over the Weyl group. It has generators in bijection with the simple reflections of the Weyl group that satisfy simple quadratic relations of the form (T_i-q1)*(T_i-q2) = 0. Often we default q2=-1, q1=q in which case the relation is of the form T_i^2=(q-1)T_i+q. The generators also satisfy the braid relations.  \n\n```\nsage: R.<q>=PolynomialRing(QQ)\nsage: H = IwahoriHeckeAlgebra(\"A3\",q)\nsage: [T1,T2,T3]=H.algebra_generators()\nsage: T1*(T2+T3)*T1\nT1*T2*T1 + (q-1)*T3*T1 + q*T3\n```\n\nThis code is very tested for type A and is almost certainly correct for Weyl groups of finite type. I have not tried it for any affine Weyl groups.\n\nThe following issues remain.\n\n* It may require some revision in order to follow Sage's coercion model. David Roe suggested that the _coerce_impl method should be removed.\n\n* The get_action method is a kludge to avoid the crash reported in #7725. That crash is fixed by David Roe's patch in #7718, but this patch does not work with the patch in #7718.\n\nFor some further discussion of this topic see\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/78fc23f23cafe705?hl=en\n\nIt is well tested for type A and is probably correct for all Cartan Types of finite type. I have not tried it with\n\nIssue created by migration from https://trac.sagemath.org/ticket/7729\n\n",
     "created_at": "2009-12-18T01:36:46Z",
     "labels": [
         "component: algebra"
@@ -21,7 +21,6 @@ Keywords: Iwahori Hecke Algebra
 
 The attached patch implements Iwahori Hecke algebras. Given a Cartan Type, the Iwahori Hecke algebra is a deformation of the group algebra over the Weyl group. It has generators in bijection with the simple reflections of the Weyl group that satisfy simple quadratic relations of the form (T_i-q1)*(T_i-q2) = 0. Often we default q2=-1, q1=q in which case the relation is of the form T_i^2=(q-1)T_i+q. The generators also satisfy the braid relations.  
 
-
 ```
 sage: R.<q>=PolynomialRing(QQ)
 sage: H = IwahoriHeckeAlgebra("A3",q)
@@ -29,7 +28,6 @@ sage: [T1,T2,T3]=H.algebra_generators()
 sage: T1*(T2+T3)*T1
 T1*T2*T1 + (q-1)*T3*T1 + q*T3
 ```
-
 
 This code is very tested for type A and is almost certainly correct for Weyl groups of finite type. I have not tried it for any affine Weyl groups.
 
@@ -166,7 +164,7 @@ done that I will change the status back to needs review.
 archive/issue_comments_066294.json:
 ```json
 {
-    "body": "I've addressed two out of three of Nicolas' requests, and his\nmessage indicates that the refactoring issue can be postponed.\n\n* The name is now `IwahoriHeckeAlgebraT`\n\n* `self.algebra_generators()` now returns a finite family.\n\nI've changed the status back to needs review.\n\nNicolas wrote:\n\n> Do you mind renaming it into IwahoriHeckeAlgebraT or TBasis, so that we can later > use IwahoriHeckeAlgebra? for the abstract Iwahori Hecke algebra with its other bases?\n\nwhat other bases do we need? There is the Bernstein Zelevinsky presentation.",
+    "body": "I've addressed two out of three of Nicolas' requests, and his\nmessage indicates that the refactoring issue can be postponed.\n\n* The name is now `IwahoriHeckeAlgebraT`\n\n* `self.algebra_generators()` now returns a finite family.\n\nI've changed the status back to needs review.\n\nNicolas wrote:\n\n> Do you mind renaming it into IwahoriHeckeAlgebraT or TBasis, so that we can later > use IwahoriHeckeAlgebra? for the abstract Iwahori Hecke algebra with its other bases?\n\n\nwhat other bases do we need? There is the Bernstein Zelevinsky presentation.",
     "created_at": "2009-12-19T01:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -187,6 +185,7 @@ I've changed the status back to needs review.
 Nicolas wrote:
 
 > Do you mind renaming it into IwahoriHeckeAlgebraT or TBasis, so that we can later > use IwahoriHeckeAlgebra? for the abstract Iwahori Hecke algebra with its other bases?
+
 
 what other bases do we need? There is the Bernstein Zelevinsky presentation.
 
@@ -261,7 +260,7 @@ Iwahori Hecke algebra patch, including revisions from
 archive/issue_comments_066298.json:
 ```json
 {
-    "body": "I qfolded two patches from the trac server and re uploaded the patch.\n\n\n```\ntrac_7729-iwahori-hecke-fixdoctests-nt.patch\ntrac_7729-iwahori-hecke-reviewer-nt.patch\n```\n",
+    "body": "I qfolded two patches from the trac server and re uploaded the patch.\n\n```\ntrac_7729-iwahori-hecke-fixdoctests-nt.patch\ntrac_7729-iwahori-hecke-reviewer-nt.patch\n```",
     "created_at": "2010-01-06T04:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7729",
     "type": "issue_comment",
@@ -272,12 +271,10 @@ archive/issue_comments_066298.json:
 
 I qfolded two patches from the trac server and re uploaded the patch.
 
-
 ```
 trac_7729-iwahori-hecke-fixdoctests-nt.patch
 trac_7729-iwahori-hecke-reviewer-nt.patch
 ```
-
 
 
 

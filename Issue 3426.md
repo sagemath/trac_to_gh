@@ -3,7 +3,7 @@
 archive/issues_003426.json:
 ```json
 {
-    "body": "Assignee: bober\n\nCC:  @burcin @kcrisman @benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
+    "body": "Assignee: bober\n\nCC:  @burcin @kcrisman @benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
     "created_at": "2008-06-14T22:10:12Z",
     "labels": [
         "component: misc",
@@ -63,7 +63,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.
 ```
-
 
 In this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).
 
@@ -271,7 +270,7 @@ archive/issue_events_007733.json:
 archive/issue_comments_024065.json:
 ```json
 {
-    "body": "I think a solution of the following type would be better.\n\n\n```\n\ntry:\n        from sage.libs.pari.all import pari\n        RR,a = _setup(prec)\n        b = RR(pari(nu).besselk(z))\n        pari.set_real_precision\n\nexcept TypeError:\n        CC,a = _setup(prec)\n        b = CC(pari(nu).besselk(z))\n        pari.set_real_precision(a)\n```\n",
+    "body": "I think a solution of the following type would be better.\n\n```\n\ntry:\n        from sage.libs.pari.all import pari\n        RR,a = _setup(prec)\n        b = RR(pari(nu).besselk(z))\n        pari.set_real_precision\n\nexcept TypeError:\n        CC,a = _setup(prec)\n        b = CC(pari(nu).besselk(z))\n        pari.set_real_precision(a)\n```",
     "created_at": "2008-06-17T17:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -281,7 +280,6 @@ archive/issue_comments_024065.json:
 ```
 
 I think a solution of the following type would be better.
-
 
 ```
 
@@ -296,7 +294,6 @@ except TypeError:
         b = CC(pari(nu).besselk(z))
         pari.set_real_precision(a)
 ```
-
 
 
 
@@ -376,7 +373,7 @@ The try code does not in my opinion work.  The issue here is correcting numerica
 archive/issue_comments_024069.json:
 ```json
 {
-    "body": "I am pretty confident that the try code works. Consider the following gp output. The current patch will try to coerce this to RR. If pari is right then this input after applying the patch will give a TypeError. \n\n```\n? besselk(2,-1.121)\n%1 = 1.234141459629829380224386595 - 0.5472316582663064541169798027*I\n```\n\n\nWe probably eliminate the double evaluation of bessel function using pari which my current suggestion does.",
+    "body": "I am pretty confident that the try code works. Consider the following gp output. The current patch will try to coerce this to RR. If pari is right then this input after applying the patch will give a TypeError. \n\n```\n? besselk(2,-1.121)\n%1 = 1.234141459629829380224386595 - 0.5472316582663064541169798027*I\n```\n\nWe probably eliminate the double evaluation of bessel function using pari which my current suggestion does.",
     "created_at": "2008-06-23T18:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -391,7 +388,6 @@ I am pretty confident that the try code works. Consider the following gp output.
 ? besselk(2,-1.121)
 %1 = 1.234141459629829380224386595 - 0.5472316582663064541169798027*I
 ```
-
 
 We probably eliminate the double evaluation of bessel function using pari which my current suggestion does.
 
@@ -476,7 +472,7 @@ The try except statement does not significantly help the original complaint.  Ei
 archive/issue_comments_024074.json:
 ```json
 {
-    "body": "\n```\nbesselk(nu,x,{flag = 0})\n\nK-Bessel function of index nu (which can be complex) and argument x. Only real and positive arguments x are allowed in the present version 2.3.3. If flag is equal to 1, uses another implementation of this function which is faster when x >> 1.\n\nThe library syntax is kbessel(nu,x,prec) and kbessel2(nu,x,prec) respectively.\n```\n\nTherefore pari gives incorrect answers for your negative x.  Perhaps this is another bug and we should merge this ticket and open another one for adding some error checking to besselk?",
+    "body": "```\nbesselk(nu,x,{flag = 0})\n\nK-Bessel function of index nu (which can be complex) and argument x. Only real and positive arguments x are allowed in the present version 2.3.3. If flag is equal to 1, uses another implementation of this function which is faster when x >> 1.\n\nThe library syntax is kbessel(nu,x,prec) and kbessel2(nu,x,prec) respectively.\n```\nTherefore pari gives incorrect answers for your negative x.  Perhaps this is another bug and we should merge this ticket and open another one for adding some error checking to besselk?",
     "created_at": "2008-06-23T20:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -485,7 +481,6 @@ archive/issue_comments_024074.json:
 }
 ```
 
-
 ```
 besselk(nu,x,{flag = 0})
 
@@ -493,7 +488,6 @@ K-Bessel function of index nu (which can be complex) and argument x. Only real a
 
 The library syntax is kbessel(nu,x,prec) and kbessel2(nu,x,prec) respectively.
 ```
-
 Therefore pari gives incorrect answers for your negative x.  Perhaps this is another bug and we should merge this ticket and open another one for adding some error checking to besselk?
 
 
@@ -539,7 +533,7 @@ Ok lets patch this then and open a new ticket for the negative real axis case.
 archive/issue_comments_024077.json:
 ```json
 {
-    "body": "I think \n\n```\nif (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0)\n```\n\n\nshould become\n\n```\nif (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0 and real(z) > 0)\n```\n",
+    "body": "I think \n\n```\nif (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0)\n```\n\nshould become\n\n```\nif (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0 and real(z) > 0)\n```",
     "created_at": "2008-06-23T22:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -554,13 +548,11 @@ I think
 if (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0)
 ```
 
-
 should become
 
 ```
 if (real(nu) == 0 or imag(nu) == 0) and (imag(z) == 0 and real(z) > 0)
 ```
-
 
 
 
@@ -678,7 +670,7 @@ The patch is made against 3.1.3.alpha2.
 archive/issue_comments_024083.json:
 ```json
 {
-    "body": "Uh oh:\n\n\n```\nsage: bessel_J(0,0)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/32521/_home_drake__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/opt/sage-3.1.3.alpha2/local/lib/python2.5/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    570             z = C(z)\n    571             K = C\n--> 572         pari_bes = pari(nu).besselj(z, precision=prec)\n    573         if K is R:\n    574             return fudge*K(pari_bes.real())\n\n/opt/sage-3.1.3.alpha2/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:34414)()\n   7865 \n   7866 \n-> 7867 \n   7868 \n   7869 \n\nPariError:  (8)\n```\n\n\nDoing `bessel_J(0, 0)` in 3.1.2 works fine. I get similar errors with this patch for other Bessel functions, too.",
+    "body": "Uh oh:\n\n```\nsage: bessel_J(0,0)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/32521/_home_drake__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/opt/sage-3.1.3.alpha2/local/lib/python2.5/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    570             z = C(z)\n    571             K = C\n--> 572         pari_bes = pari(nu).besselj(z, precision=prec)\n    573         if K is R:\n    574             return fudge*K(pari_bes.real())\n\n/opt/sage-3.1.3.alpha2/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:34414)()\n   7865 \n   7866 \n-> 7867 \n   7868 \n   7869 \n\nPariError:  (8)\n```\n\nDoing `bessel_J(0, 0)` in 3.1.2 works fine. I get similar errors with this patch for other Bessel functions, too.",
     "created_at": "2008-10-10T00:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -688,7 +680,6 @@ archive/issue_comments_024083.json:
 ```
 
 Uh oh:
-
 
 ```
 sage: bessel_J(0,0)
@@ -719,7 +710,6 @@ PariError                                 Traceback (most recent call last)
 PariError:  (8)
 ```
 
-
 Doing `bessel_J(0, 0)` in 3.1.2 works fine. I get similar errors with this patch for other Bessel functions, too.
 
 
@@ -729,7 +719,7 @@ Doing `bessel_J(0, 0)` in 3.1.2 works fine. I get similar errors with this patch
 archive/issue_comments_024084.json:
 ```json
 {
-    "body": "Thanks for catching this.  It actually comes from a bug in Pari:\n\n\n```\n? besselj(0, 0)\n%1 = 1.000000000000000000000000000\n? besselj(0.E-19, 0)\n  *** besselj: gpow: 0 to a non positive exponent.\n```\n\n\nI've reported it upstream, but I will post  a patch with a workaround while we wait.",
+    "body": "Thanks for catching this.  It actually comes from a bug in Pari:\n\n```\n? besselj(0, 0)\n%1 = 1.000000000000000000000000000\n? besselj(0.E-19, 0)\n  *** besselj: gpow: 0 to a non positive exponent.\n```\n\nI've reported it upstream, but I will post  a patch with a workaround while we wait.",
     "created_at": "2008-10-10T01:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -740,14 +730,12 @@ archive/issue_comments_024084.json:
 
 Thanks for catching this.  It actually comes from a bug in Pari:
 
-
 ```
 ? besselj(0, 0)
 %1 = 1.000000000000000000000000000
 ? besselj(0.E-19, 0)
   *** besselj: gpow: 0 to a non positive exponent.
 ```
-
 
 I've reported it upstream, but I will post  a patch with a workaround while we wait.
 
@@ -840,7 +828,7 @@ See #4626, which at least fixes the `bessel_J` problem.
 archive/issue_comments_024089.json:
 ```json
 {
-    "body": "This ticket is a huge mess :)\n\nI now think that we should just use mpmath to evaluate Bessel functions, see\n\nhttp://mpmath.googlecode.com/svn/trunk/doc/build/functions/bessel.html\n\nFor the examples that Dan gave:\n\n\n```\nsage: from mpmath import *\nsage: mp.dps = 25; mp.pretty = True\nsage: besselk(0, -1)\n(0.4210244382407083333356274 - 3.97746326050642263725661j)\nsage: besselk(-1*I - 1, 0)\n+inf\nsage: besselk(-1, -1)\n(-0.60190723019723457473754 - 1.775499689212180946878577j)\nsage: besselk(0, -1-I)\n(-1.479697108749625193260947 + 2.588306443392007370808151j)\n```\n",
+    "body": "This ticket is a huge mess :)\n\nI now think that we should just use mpmath to evaluate Bessel functions, see\n\nhttp://mpmath.googlecode.com/svn/trunk/doc/build/functions/bessel.html\n\nFor the examples that Dan gave:\n\n```\nsage: from mpmath import *\nsage: mp.dps = 25; mp.pretty = True\nsage: besselk(0, -1)\n(0.4210244382407083333356274 - 3.97746326050642263725661j)\nsage: besselk(-1*I - 1, 0)\n+inf\nsage: besselk(-1, -1)\n(-0.60190723019723457473754 - 1.775499689212180946878577j)\nsage: besselk(0, -1-I)\n(-1.479697108749625193260947 + 2.588306443392007370808151j)\n```",
     "created_at": "2010-01-20T07:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
@@ -857,7 +845,6 @@ http://mpmath.googlecode.com/svn/trunk/doc/build/functions/bessel.html
 
 For the examples that Dan gave:
 
-
 ```
 sage: from mpmath import *
 sage: mp.dps = 25; mp.pretty = True
@@ -870,7 +857,6 @@ sage: besselk(-1, -1)
 sage: besselk(0, -1-I)
 (-1.479697108749625193260947 + 2.588306443392007370808151j)
 ```
-
 
 
 

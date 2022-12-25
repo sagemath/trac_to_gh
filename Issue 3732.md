@@ -48,7 +48,7 @@ Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket373
 archive/issue_comments_026439.json:
 ```json
 {
-    "body": "There's another example (that's with 3.1.2.alpha2), here it shouldn't need assumption on a:\n\n\n```\nsage: var('a')\na\nsage: integrate((x-a)^2*exp(-(x-a)^2), x, -Infinity, +Infinity)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/giniu/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    252     \"\"\"\n    253     try:\n--> 254         return f.integral(*args, **kwds)\n    255     except ValueError, err:\n    256         raise err\n\n/opt/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in integral(self, v, a, b)\n   2532                     raise ValueError, \"Integral is divergent.\"\n   2533                 else:\n-> 2534                     raise TypeError, error\n   2535                     \n   2536 \n\nTypeError: Computation failed since Maxima requested additional constraints (use assume):\nIs  a  positive or negative?\n\n```\n",
+    "body": "There's another example (that's with 3.1.2.alpha2), here it shouldn't need assumption on a:\n\n```\nsage: var('a')\na\nsage: integrate((x-a)^2*exp(-(x-a)^2), x, -Infinity, +Infinity)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/giniu/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    252     \"\"\"\n    253     try:\n--> 254         return f.integral(*args, **kwds)\n    255     except ValueError, err:\n    256         raise err\n\n/opt/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in integral(self, v, a, b)\n   2532                     raise ValueError, \"Integral is divergent.\"\n   2533                 else:\n-> 2534                     raise TypeError, error\n   2535                     \n   2536 \n\nTypeError: Computation failed since Maxima requested additional constraints (use assume):\nIs  a  positive or negative?\n\n```",
     "created_at": "2008-09-01T23:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -58,7 +58,6 @@ archive/issue_comments_026439.json:
 ```
 
 There's another example (that's with 3.1.2.alpha2), here it shouldn't need assumption on a:
-
 
 ```
 sage: var('a')
@@ -87,7 +86,6 @@ TypeError: Computation failed since Maxima requested additional constraints (use
 Is  a  positive or negative?
 
 ```
-
 
 
 
@@ -156,7 +154,7 @@ Otherwise this is in some sense related to solving #780 (among several others), 
 archive/issue_comments_026443.json:
 ```json
 {
-    "body": "With the latest Maxima upgrade and Pynac conversion, the last two integrals are correct - the penultimate one is, of course, \n\n```\n1/2*sqrt(pi)\n```\n\nand the last one is \n\n```\n1/2*(a+b)^(3/2)*s^3*gamma_incomplete(-3/2,(a+b)/s^2)/(s^2)^(3/2)\n```\n",
+    "body": "With the latest Maxima upgrade and Pynac conversion, the last two integrals are correct - the penultimate one is, of course, \n\n```\n1/2*sqrt(pi)\n```\nand the last one is \n\n```\n1/2*(a+b)^(3/2)*s^3*gamma_incomplete(-3/2,(a+b)/s^2)/(s^2)^(3/2)\n```",
     "created_at": "2009-09-24T00:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -170,7 +168,6 @@ With the latest Maxima upgrade and Pynac conversion, the last two integrals are 
 ```
 1/2*sqrt(pi)
 ```
-
 and the last one is 
 
 ```
@@ -179,13 +176,12 @@ and the last one is
 
 
 
-
 ---
 
 archive/issue_comments_026444.json:
 ```json
 {
-    "body": "Here is the current state of this ticket.  Of the examples in the first attached file, the following are legitimate bugs of this type.\n\nThe first example has unnecessary questions.\n\n```\nsage: integrate(1/sqrt(x-q), x, 1, 2)\n2 sqrt(2 - q) - 2 sqrt(1 - q) # should be this always\n```\n\n\nThe third example is definitely a case for this, as of Maxima 5.19.1:\n\n```\n(%i19) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\npositive;\n(%o19)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n(%i20) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\nnegative;\n(%o20)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n(%i21) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\nzero;\n(%o21)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n```\n\n\nThe fifth example has MANY questions to ask, always the same answer:\n\n```\n(%i36) integrate(1/sqrt(q^2-x^2),x, a, b);\nIs  b - a  positive, negative, or zero?\n\nnegative;\nIs  q - a  positive, negative, or zero?\n\nzero;\nIs  q + a  positive, negative, or zero?\n\nzero;\nIs  q + b  positive, negative, or zero?\n\npositive;\n                                 b              a\n(%o36)                    asin(------) - asin(------)\n                               abs(q)         abs(q)\n\n```\n\n\n++++++++++++++++++++++++++++++++\n\nThe following should not be considered bugs, at least not for the reason given.\n\nThe second example is okay:\n\n```\nsage: integrate(1/(x-q),x,1,2)\n```\n\nMaxima adds pi*I and/or switches q-2 to 2-q as appropriate.  If we don't like those differences, that should be on a different ticket.\n\nThe fourth example is:\n\n```\nsage: integrate(1/(q-x^2), x)\n```\n\nThe answers given are a constant away from each other, but look very different.  This probably should be considered a bug (Maxima can't connect between logs and arctan/h stuff), but is likely to not be resolved soon, or by questions. \n\nThe last example is definitely not a bug, as for q=-1 you should get a different answer!",
+    "body": "Here is the current state of this ticket.  Of the examples in the first attached file, the following are legitimate bugs of this type.\n\nThe first example has unnecessary questions.\n\n```\nsage: integrate(1/sqrt(x-q), x, 1, 2)\n2 sqrt(2 - q) - 2 sqrt(1 - q) # should be this always\n```\n\nThe third example is definitely a case for this, as of Maxima 5.19.1:\n\n```\n(%i19) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\npositive;\n(%o19)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n(%i20) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\nnegative;\n(%o20)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n(%i21) integrate(log(q-x), x, a, b);\nIs  b - a  positive, negative, or zero?\n\nzero;\n(%o21)          (b - q) log(q - b) - (a - q) log(q - a) - b + a\n```\n\nThe fifth example has MANY questions to ask, always the same answer:\n\n```\n(%i36) integrate(1/sqrt(q^2-x^2),x, a, b);\nIs  b - a  positive, negative, or zero?\n\nnegative;\nIs  q - a  positive, negative, or zero?\n\nzero;\nIs  q + a  positive, negative, or zero?\n\nzero;\nIs  q + b  positive, negative, or zero?\n\npositive;\n                                 b              a\n(%o36)                    asin(------) - asin(------)\n                               abs(q)         abs(q)\n\n```\n\n++++++++++++++++++++++++++++++++\n\nThe following should not be considered bugs, at least not for the reason given.\n\nThe second example is okay:\n\n```\nsage: integrate(1/(x-q),x,1,2)\n```\nMaxima adds pi*I and/or switches q-2 to 2-q as appropriate.  If we don't like those differences, that should be on a different ticket.\n\nThe fourth example is:\n\n```\nsage: integrate(1/(q-x^2), x)\n```\nThe answers given are a constant away from each other, but look very different.  This probably should be considered a bug (Maxima can't connect between logs and arctan/h stuff), but is likely to not be resolved soon, or by questions. \n\nThe last example is definitely not a bug, as for q=-1 you should get a different answer!",
     "created_at": "2009-10-02T16:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -202,7 +198,6 @@ The first example has unnecessary questions.
 sage: integrate(1/sqrt(x-q), x, 1, 2)
 2 sqrt(2 - q) - 2 sqrt(1 - q) # should be this always
 ```
-
 
 The third example is definitely a case for this, as of Maxima 5.19.1:
 
@@ -223,7 +218,6 @@ Is  b - a  positive, negative, or zero?
 zero;
 (%o21)          (b - q) log(q - b) - (a - q) log(q - a) - b + a
 ```
-
 
 The fifth example has MANY questions to ask, always the same answer:
 
@@ -247,7 +241,6 @@ positive;
 
 ```
 
-
 ++++++++++++++++++++++++++++++++
 
 The following should not be considered bugs, at least not for the reason given.
@@ -257,7 +250,6 @@ The second example is okay:
 ```
 sage: integrate(1/(x-q),x,1,2)
 ```
-
 Maxima adds pi*I and/or switches q-2 to 2-q as appropriate.  If we don't like those differences, that should be on a different ticket.
 
 The fourth example is:
@@ -265,7 +257,6 @@ The fourth example is:
 ```
 sage: integrate(1/(q-x^2), x)
 ```
-
 The answers given are a constant away from each other, but look very different.  This probably should be considered a bug (Maxima can't connect between logs and arctan/h stuff), but is likely to not be resolved soon, or by questions. 
 
 The last example is definitely not a bug, as for q=-1 you should get a different answer!
@@ -414,7 +405,7 @@ archive/issue_events_008551.json:
 archive/issue_comments_026446.json:
 ```json
 {
-    "body": "Here is a particularly easy one (that sympy and giac can do, of course):\n\n```\nsage: var(\"a\");\nsage: integrate(cos(x), x, 0, a)\n    <snip>\nValueError: ...\nIs a positive, negative or zero?\n\nsage: integrate(cos(x), x, 0, a, algorithm=\"sympy\")\nsin(a)\n\nsage: integrate(cos(x), x, 0, a, algorithm=\"giac\")\nsin(a)\n```\n",
+    "body": "Here is a particularly easy one (that sympy and giac can do, of course):\n\n```\nsage: var(\"a\");\nsage: integrate(cos(x), x, 0, a)\n    <snip>\nValueError: ...\nIs a positive, negative or zero?\n\nsage: integrate(cos(x), x, 0, a, algorithm=\"sympy\")\nsin(a)\n\nsage: integrate(cos(x), x, 0, a, algorithm=\"giac\")\nsin(a)\n```",
     "created_at": "2021-01-27T18:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
@@ -438,4 +429,3 @@ sin(a)
 sage: integrate(cos(x), x, 0, a, algorithm="giac")
 sin(a)
 ```
-

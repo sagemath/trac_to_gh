@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082307.json:
 ```json
 {
-    "body": "Note #8808 as another ECL spkg update.  \n\nAlso, the patch about the 'yes' and '1' still says\n\n```\n# Compile for 64-bit if SAGE64 is set to 'yes' or '1' \n```\n\nalthough of course the code behaves as Dave describes... but maybe that's ok?",
+    "body": "Note #8808 as another ECL spkg update.  \n\nAlso, the patch about the 'yes' and '1' still says\n\n```\n# Compile for 64-bit if SAGE64 is set to 'yes' or '1' \n```\nalthough of course the code behaves as Dave describes... but maybe that's ok?",
     "created_at": "2010-05-13T13:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ Also, the patch about the 'yes' and '1' still says
 ```
 # Compile for 64-bit if SAGE64 is set to 'yes' or '1' 
 ```
-
 although of course the code behaves as Dave describes... but maybe that's ok?
 
 
@@ -169,7 +168,7 @@ Mercurial patch - removes tmp files, based on latest verison of ecl
 archive/issue_comments_082311.json:
 ```json
 {
-    "body": "Here's a revised ecl-10.4.1. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.4.1/ecl-10.4.1.spkg\n\nIt includes \n\n* The latest release of ecl - taken from the package posted at #8808\n* Removes /tmp/ECL* on Solaris. \n* Corrected minor issue with SAGE64, which would have in theory worked if SAGE64 was set to '1', but earlier bits of sage force SAGE64 to be only 'yes' or 'no', so there was no point checking for this. \n* Comment in the code about this SAGE64 change is now more accurate. \n\nI've tested this on sage.math and it works fine. \n\n```\nreal\t2m20.869s\nuser\t1m47.690s\nsys\t0m23.480s\nSuccessfully installed ecl-10.4.1\nkirkby@sage:~/sage-4.4.2.alpha0$ uname -a\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n```\n\n\n\n**Note, this code to remove /tmp/ECL* is not a perfect solution. Once ECL is fixed, this should be removed.**\nDave",
+    "body": "Here's a revised ecl-10.4.1. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.4.1/ecl-10.4.1.spkg\n\nIt includes \n\n* The latest release of ecl - taken from the package posted at #8808\n* Removes /tmp/ECL* on Solaris. \n* Corrected minor issue with SAGE64, which would have in theory worked if SAGE64 was set to '1', but earlier bits of sage force SAGE64 to be only 'yes' or 'no', so there was no point checking for this. \n* Comment in the code about this SAGE64 change is now more accurate. \n\nI've tested this on sage.math and it works fine. \n\n```\nreal\t2m20.869s\nuser\t1m47.690s\nsys\t0m23.480s\nSuccessfully installed ecl-10.4.1\nkirkby@sage:~/sage-4.4.2.alpha0$ uname -a\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n```\n\n\n**Note, this code to remove /tmp/ECL* is not a perfect solution. Once ECL is fixed, this should be removed.**\nDave",
     "created_at": "2010-05-14T12:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -200,7 +199,6 @@ Successfully installed ecl-10.4.1
 kirkby@sage:~/sage-4.4.2.alpha0$ uname -a
 Linux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux
 ```
-
 
 
 **Note, this code to remove /tmp/ECL* is not a perfect solution. Once ECL is fixed, this should be removed.**
@@ -256,7 +254,7 @@ Dave
 archive/issue_comments_082314.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> == Note to release manager ==\n> \n>  * Apply the patch at #8808\n>  * Apply the patch attacked here. \n\nBoth of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.",
+    "body": "Replying to [comment:6 drkirkby]:\n> == Note to release manager ==\n> \n> * Apply the patch at #8808\n> * Apply the patch attacked here. \n\n\nBoth of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.",
     "created_at": "2010-05-14T15:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -268,8 +266,9 @@ archive/issue_comments_082314.json:
 Replying to [comment:6 drkirkby]:
 > == Note to release manager ==
 > 
->  * Apply the patch at #8808
->  * Apply the patch attacked here. 
+> * Apply the patch at #8808
+> * Apply the patch attacked here. 
+
 
 Both of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.
 
@@ -338,7 +337,7 @@ Maybe kcrisman can review it, in conjunction with the new maxima update?
 archive/issue_comments_082318.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 drkirkby]:\n> > == Note to release manager ==\n> > \n> >  * Apply the patch at #8808\n> >  * Apply the patch attacked here. \n> \n> Both of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.\n> \n> \n\nMy package should work fine.\n\nMy reason for saying to add #8808 first is because my patch was based on the patch applied in #8088, so assumed the wording of SPKG.txt in #8088 as a starting point and used the Mercurial repository in #8088 as a starting point. Also, since William updated the package, he should get credit for that ticket. It has already got positive review. \n\nFrom the point of view of actual code, it would have made no difference whatsoever.\n\nAnyway, you have now posted another version, based on #8645. Someone needs to review it. I looked over spkg-install and SPKG.txt and they look OK to me, but I can hardly review it.",
+    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 drkirkby]:\n> > == Note to release manager ==\n> > \n> > * Apply the patch at #8808\n> > * Apply the patch attacked here. \n\n> \n> Both of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.\n> \n> \n\n\nMy package should work fine.\n\nMy reason for saying to add #8808 first is because my patch was based on the patch applied in #8088, so assumed the wording of SPKG.txt in #8088 as a starting point and used the Mercurial repository in #8088 as a starting point. Also, since William updated the package, he should get credit for that ticket. It has already got positive review. \n\nFrom the point of view of actual code, it would have made no difference whatsoever.\n\nAnyway, you have now posted another version, based on #8645. Someone needs to review it. I looked over spkg-install and SPKG.txt and they look OK to me, but I can hardly review it.",
     "created_at": "2010-05-14T21:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -351,12 +350,14 @@ Replying to [comment:7 jason]:
 > Replying to [comment:6 drkirkby]:
 > > == Note to release manager ==
 > > 
-> >  * Apply the patch at #8808
-> >  * Apply the patch attacked here. 
+> > * Apply the patch at #8808
+> > * Apply the patch attacked here. 
+
 > 
 > Both of these patches are included in your spkg, right?  In that case, the release manager would just use your spkg, and wouldn't apply any patches anywhere.
 > 
 > 
+
 
 My package should work fine.
 
@@ -434,7 +435,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082322.json:
 ```json
 {
-    "body": "Replying to [comment:8 jason]:\n> As a reminder here, this should *only* be merged simultaneously with the new maxima at #8731. \n\nJason, \n\nwhat is there about this ticket that means it can only be merged simultaneously with the new Maxima at #8731? That Maxima ticket has not been updated for 3 weeks. If ECL & Maxima need to be updated together, that leaves a whole load of issues unresolved about ECL. Some I can think of are\n\n* The original aim of the ticket, which was to clear the tmp files - a trivial change, that does not need ECL updated, but allows Sage to build more relieably on 't2'\n* The minor SAGE64 issue - again, a trivial (cosmetic) change that does not need ECL updated.\n* It stops the building of spkg's in parallel, as the ECL makefile needs a trivial edit for that - see #9187. Again, that does not need a new version of ECL for this. \n* It stops a build of ECL on 64-bit OpenSolaris - see #8089. Again, the option to permit this does not need a new upstream version of ECL. \n\nIt seems to me we have three choices here:\n\n* Update ECL, without updating Maxima, which I think you are saying is not possible.  \n* Update both Maxima and ECL to the latest versions **quickly**. \n* Apply all the other very small changes to the ECL 10.2.1 that is in Sage now. So leaving updating ECL to 10.4.1 until a later date. \n\nI've created #9264 to update ECL to 10.4.1 and apply all changes. \n\nIt might however be wiser to create another ticket to just apply all the small changes to ECL 10.2.1. \n\nDave",
+    "body": "Replying to [comment:8 jason]:\n> As a reminder here, this should *only* be merged simultaneously with the new maxima at #8731. \n\n\nJason, \n\nwhat is there about this ticket that means it can only be merged simultaneously with the new Maxima at #8731? That Maxima ticket has not been updated for 3 weeks. If ECL & Maxima need to be updated together, that leaves a whole load of issues unresolved about ECL. Some I can think of are\n\n* The original aim of the ticket, which was to clear the tmp files - a trivial change, that does not need ECL updated, but allows Sage to build more relieably on 't2'\n* The minor SAGE64 issue - again, a trivial (cosmetic) change that does not need ECL updated.\n* It stops the building of spkg's in parallel, as the ECL makefile needs a trivial edit for that - see #9187. Again, that does not need a new version of ECL for this. \n* It stops a build of ECL on 64-bit OpenSolaris - see #8089. Again, the option to permit this does not need a new upstream version of ECL. \n\nIt seems to me we have three choices here:\n\n* Update ECL, without updating Maxima, which I think you are saying is not possible.  \n* Update both Maxima and ECL to the latest versions **quickly**. \n* Apply all the other very small changes to the ECL 10.2.1 that is in Sage now. So leaving updating ECL to 10.4.1 until a later date. \n\nI've created #9264 to update ECL to 10.4.1 and apply all changes. \n\nIt might however be wiser to create another ticket to just apply all the small changes to ECL 10.2.1. \n\nDave",
     "created_at": "2010-06-18T14:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
@@ -445,6 +446,7 @@ archive/issue_comments_082322.json:
 
 Replying to [comment:8 jason]:
 > As a reminder here, this should *only* be merged simultaneously with the new maxima at #8731. 
+
 
 Jason, 
 

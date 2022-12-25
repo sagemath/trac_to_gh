@@ -48,7 +48,7 @@ This needs a really detailed example, worked out so that a non-expert (like myse
 archive/issue_comments_055420.json:
 ```json
 {
-    "body": "Replying to [comment:1 wdj]:\n> This needs a really detailed example, worked out so that a non-expert (like myself) can understand it. Think of the first example you would try to teach an undergraduate. That would be perfect.\n\nFor example, there seems to be a simple knapsack problems solved here: http://sites.google.com/site/mikescoderama/Home/0-1-knapsack-problem-in-p\nThere is a more complicated one here: http://rosettacode.org/wiki/Knapsack_Problem#Simple_Solution\nAlso, http://webspace.ship.edu/thbrig/DynamicProgramming/Knapsack%20Program/index.html, and the xkcd example\nhttp://www.itl.nist.gov/div897/sqg/dads/HTML/knapsackProblem.html :-)",
+    "body": "Replying to [comment:1 wdj]:\n> This needs a really detailed example, worked out so that a non-expert (like myself) can understand it. Think of the first example you would try to teach an undergraduate. That would be perfect.\n\n\nFor example, there seems to be a simple knapsack problems solved here: http://sites.google.com/site/mikescoderama/Home/0-1-knapsack-problem-in-p\nThere is a more complicated one here: http://rosettacode.org/wiki/Knapsack_Problem#Simple_Solution\nAlso, http://webspace.ship.edu/thbrig/DynamicProgramming/Knapsack%20Program/index.html, and the xkcd example\nhttp://www.itl.nist.gov/div897/sqg/dads/HTML/knapsackProblem.html :-)",
     "created_at": "2009-08-16T12:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -59,6 +59,7 @@ archive/issue_comments_055420.json:
 
 Replying to [comment:1 wdj]:
 > This needs a really detailed example, worked out so that a non-expert (like myself) can understand it. Think of the first example you would try to teach an undergraduate. That would be perfect.
+
 
 For example, there seems to be a simple knapsack problems solved here: http://sites.google.com/site/mikescoderama/Home/0-1-knapsack-problem-in-p
 There is a more complicated one here: http://rosettacode.org/wiki/Knapsack_Problem#Simple_Solution
@@ -114,7 +115,7 @@ A small mistake when uploading the patch... Well, now the two of them are good ;
 archive/issue_comments_055423.json:
 ```json
 {
-    "body": "This patch (after the dependencies are applied) applies fine to 4.1.1.rc2 on an intel macbook running 10.4.11. It passes sage -testall except for (apparently unrelated) errors with \n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\n\nHowever, I will ask someone at work (an expert in OR) to check the code before posting a positive review.",
+    "body": "This patch (after the dependencies are applied) applies fine to 4.1.1.rc2 on an intel macbook running 10.4.11. It passes sage -testall except for (apparently unrelated) errors with \n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\nHowever, I will ask someone at work (an expert in OR) to check the code before posting a positive review.",
     "created_at": "2009-08-16T23:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -125,7 +126,6 @@ archive/issue_comments_055423.json:
 
 This patch (after the dependencies are applied) applies fine to 4.1.1.rc2 on an intel macbook running 10.4.11. It passes sage -testall except for (apparently unrelated) errors with 
 
-
 ```
 The following tests failed:
 
@@ -133,7 +133,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/interfaces/maxima.py"
         sage -t  "devel/sage/sage/symbolic/expression.pyx"
 ```
-
 However, I will ask someone at work (an expert in OR) to check the code before posting a positive review.
 
 
@@ -195,7 +194,7 @@ Nathann
 archive/issue_comments_055426.json:
 ```json
 {
-    "body": "There was this failure:\n\n\n```\nsage -t  \"devel/sage/sage/numerical/knapsack.py\"            \n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.rc2/devel/sage/sage/numerical/knapsack.py\", line 608:\n    sage: knapsack([1,1.5,0.5], max=2)\nExpected:\n    [2.0, [1, 0.500000000000000]]\nGot:\n    [2.0, [1.50000000000000, 0.500000000000000]]\n**********************************************************************\n```\n",
+    "body": "There was this failure:\n\n```\nsage -t  \"devel/sage/sage/numerical/knapsack.py\"            \n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.rc2/devel/sage/sage/numerical/knapsack.py\", line 608:\n    sage: knapsack([1,1.5,0.5], max=2)\nExpected:\n    [2.0, [1, 0.500000000000000]]\nGot:\n    [2.0, [1.50000000000000, 0.500000000000000]]\n**********************************************************************\n```",
     "created_at": "2009-08-22T01:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -205,7 +204,6 @@ archive/issue_comments_055426.json:
 ```
 
 There was this failure:
-
 
 ```
 sage -t  "devel/sage/sage/numerical/knapsack.py"            
@@ -218,7 +216,6 @@ Got:
     [2.0, [1.50000000000000, 0.500000000000000]]
 **********************************************************************
 ```
-
 
 
 
@@ -249,7 +246,7 @@ Sorry !
 archive/issue_comments_055428.json:
 ```json
 {
-    "body": "This last patch (and its dependency) installed fine as before (same system, and version) with the following failures:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\n\nI think these are unrelated, so this gets a positive review from me. Thanks for implementing it!",
+    "body": "This last patch (and its dependency) installed fine as before (same system, and version) with the following failures:\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n        sage -t  \"devel/sage/sage/interfaces/maxima.py\"\n        sage -t  \"devel/sage/sage/symbolic/expression.pyx\"\n```\nI think these are unrelated, so this gets a positive review from me. Thanks for implementing it!",
     "created_at": "2009-08-22T18:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -260,7 +257,6 @@ archive/issue_comments_055428.json:
 
 This last patch (and its dependency) installed fine as before (same system, and version) with the following failures:
 
-
 ```
 The following tests failed:
 
@@ -269,7 +265,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/interfaces/maxima.py"
         sage -t  "devel/sage/sage/symbolic/expression.pyx"
 ```
-
 I think these are unrelated, so this gets a positive review from me. Thanks for implementing it!
 
 
@@ -391,7 +386,7 @@ Could you please try it again on a 4.1.1 ?
 archive/issue_comments_055435.json:
 ```json
 {
-    "body": "Replying to [comment:18 ncohen]:\n> Could you please try it again on a 4.1.1 ?\n\nI created a new clone and re-tried this. This time it worked! Passed tests as before (same Sage version, same machine ....).",
+    "body": "Replying to [comment:18 ncohen]:\n> Could you please try it again on a 4.1.1 ?\n\n\nI created a new clone and re-tried this. This time it worked! Passed tests as before (same Sage version, same machine ....).",
     "created_at": "2009-08-25T20:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -402,6 +397,7 @@ archive/issue_comments_055435.json:
 
 Replying to [comment:18 ncohen]:
 > Could you please try it again on a 4.1.1 ?
+
 
 I created a new clone and re-tried this. This time it worked! Passed tests as before (same Sage version, same machine ....).
 
@@ -526,7 +522,7 @@ Resolution: fixed
 archive/issue_comments_055442.json:
 ```json
 {
-    "body": "Merged `knapsack-symbolics.patch`.\n\n\n\nWith `knapsack-symbolics.patch`, I got a warning when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/local/lib/python2.6/site-packages/sage/numerical/knapsack.py:docstring of sage.numerical.knapsack.knapsack:69: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\nSee #6916 for a follow-up to this ticket.",
+    "body": "Merged `knapsack-symbolics.patch`.\n\n\n\nWith `knapsack-symbolics.patch`, I got a warning when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/local/lib/python2.6/site-packages/sage/numerical/knapsack.py:docstring of sage.numerical.knapsack.knapsack:69: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\nSee #6916 for a follow-up to this ticket.",
     "created_at": "2009-09-10T12:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
@@ -544,7 +540,6 @@ With `knapsack-symbolics.patch`, I got a warning when building the reference man
 ```
 WARNING: /scratch/mvngu/release/sage-4.1.2.alpha1/local/lib/python2.6/site-packages/sage/numerical/knapsack.py:docstring of sage.numerical.knapsack.knapsack:69: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 ```
-
 See #6916 for a follow-up to this ticket.
 
 

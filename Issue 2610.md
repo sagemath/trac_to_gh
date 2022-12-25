@@ -3,7 +3,7 @@
 archive/issues_002610.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nHello,\n\nI think on\nhttp://www.sagemath.org/emacs/\na line, which connects the \".sage\" file-extension with python-mode,\nlike\n\n(setq auto-mode-alist (cons '(\"\\\\.sage\\\\'\" . python-mode) auto-mode-\nalist))\n\nis missing.\n\nWith best regards,\nLars Fischer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2610\n\n",
+    "body": "Assignee: tba\n\n```\nHello,\n\nI think on\nhttp://www.sagemath.org/emacs/\na line, which connects the \".sage\" file-extension with python-mode,\nlike\n\n(setq auto-mode-alist (cons '(\"\\\\.sage\\\\'\" . python-mode) auto-mode-\nalist))\n\nis missing.\n\nWith best regards,\nLars Fischer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2610\n\n",
     "created_at": "2008-03-20T10:34:06Z",
     "labels": [
         "component: documentation",
@@ -17,7 +17,6 @@ archive/issues_002610.json:
 }
 ```
 Assignee: tba
-
 
 ```
 Hello,
@@ -35,7 +34,6 @@ is missing.
 With best regards,
 Lars Fischer
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2610
 

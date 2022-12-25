@@ -3,7 +3,7 @@
 archive/issues_001681.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nNotice getting +1 instead of -1:\n\n\n```\nsage: z = complex(0,1)\nsage: z\n1j\nsage: z*z\n(-1+0j)\nsage: z^2\n(1+1.973601453121677e-310j)\nsage: z^float(2)\n(-1+0j)\nsage: z^int(2)\n(-1+0j)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1681\n\n",
+    "body": "Assignee: somebody\n\nNotice getting +1 instead of -1:\n\n```\nsage: z = complex(0,1)\nsage: z\n1j\nsage: z*z\n(-1+0j)\nsage: z^2\n(1+1.973601453121677e-310j)\nsage: z^float(2)\n(-1+0j)\nsage: z^int(2)\n(-1+0j)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1681\n\n",
     "created_at": "2008-01-04T17:42:31Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: somebody
 
 Notice getting +1 instead of -1:
 
-
 ```
 sage: z = complex(0,1)
 sage: z
@@ -36,7 +35,6 @@ sage: z^int(2)
 (-1+0j)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1681
 
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1681
 archive/issue_comments_010635.json:
 ```json
 {
-    "body": "\n```\nmabshoff: is #1681 the fault of the maxime interface?\n[09:44am] william_stein: no\n[09:44am] william_stein: I don't know\n[09:44am] mabshoff: ok\n[09:44am] william_stein: It probably has nothing to do with maxima.\n[09:44am] william_stein: complex(0,1) is built into python\n[09:44am] william_stein: probably the problem is in __pow__ in integer.pyx\n```\n",
+    "body": "```\nmabshoff: is #1681 the fault of the maxime interface?\n[09:44am] william_stein: no\n[09:44am] william_stein: I don't know\n[09:44am] mabshoff: ok\n[09:44am] william_stein: It probably has nothing to do with maxima.\n[09:44am] william_stein: complex(0,1) is built into python\n[09:44am] william_stein: probably the problem is in __pow__ in integer.pyx\n```",
     "created_at": "2008-01-04T17:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
@@ -56,7 +54,6 @@ archive/issue_comments_010635.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 mabshoff: is #1681 the fault of the maxime interface?
@@ -67,7 +64,6 @@ mabshoff: is #1681 the fault of the maxime interface?
 [09:44am] william_stein: complex(0,1) is built into python
 [09:44am] william_stein: probably the problem is in __pow__ in integer.pyx
 ```
-
 
 
 
@@ -94,7 +90,7 @@ Changing assignee from somebody to @robertwb.
 archive/issue_comments_010637.json:
 ```json
 {
-    "body": "This is a bug in Python \n\n```\nsage: complex(0,1).__pow__(2r)\n(1+2.0489322973043257e-310j)\n```\n\n\nI've changed the Integer.__pow__ function to use ** (which should be faster too).",
+    "body": "This is a bug in Python \n\n```\nsage: complex(0,1).__pow__(2r)\n(1+2.0489322973043257e-310j)\n```\n\nI've changed the Integer.__pow__ function to use ** (which should be faster too).",
     "created_at": "2008-01-04T21:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
@@ -109,7 +105,6 @@ This is a bug in Python
 sage: complex(0,1).__pow__(2r)
 (1+2.0489322973043257e-310j)
 ```
-
 
 I've changed the Integer.__pow__ function to use ** (which should be faster too).
 

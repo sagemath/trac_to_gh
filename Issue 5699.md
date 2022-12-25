@@ -3,7 +3,7 @@
 archive/issues_005699.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the notebook\n\n\n```\n%r\n2+5\n///\nTraceback (most recent call last):\n...\nTypeError: eval() got multiple values for keyword argument 'synchronize'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5699\n\n",
+    "body": "Assignee: boothby\n\nIn the notebook\n\n```\n%r\n2+5\n///\nTraceback (most recent call last):\n...\nTypeError: eval() got multiple values for keyword argument 'synchronize'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5699\n\n",
     "created_at": "2009-04-06T19:28:16Z",
     "labels": [
         "component: notebook",
@@ -21,7 +21,6 @@ Assignee: boothby
 
 In the notebook
 
-
 ```
 %r
 2+5
@@ -30,7 +29,6 @@ Traceback (most recent call last):
 ...
 TypeError: eval() got multiple values for keyword argument 'synchronize'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5699
 

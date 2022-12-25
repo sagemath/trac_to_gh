@@ -55,7 +55,7 @@ HTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.
 archive/issue_comments_072774.json:
 ```json
 {
-    "body": "Should we follow #6419 for the nested classes?  We could use that approach for\n\n```\nsagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip\n```\n",
+    "body": "Should we follow #6419 for the nested classes?  We could use that approach for\n\n```\nsagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip\n```",
     "created_at": "2010-02-11T21:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -72,13 +72,12 @@ sagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip
 
 
 
-
 ---
 
 archive/issue_comments_072775.json:
 ```json
 {
-    "body": "I've looked at these a bit, but I have no idea how to fix them.   Oh, except for\n\n```\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\nThis is because `_sage_getargspec_cython` in sage.misc.sageinspect is a little broken, and fixing it might be lot of work: right now it parses arguments to Cython function by doing basic string and regular expression manipulations, in particular separating arguments by splitting the line on commas.  The function `export_jmol` has argspec\n\n```\n    def export_jmol(self, filename='jmol_shape.jmol', force_reload=False,\n                    zoom=100, spin=False, background=(1,1,1), stereo=False,\n                    mesh=False, dots=False,\n                    perspective_depth = True,\n                    orientation = (-764,-346,-545,76.39), **ignored_kwds):\n```\n\nand so splitting at commas doesn't work.  To do this right, we either need to write a good parser (which deals with nested lists, tuples, etc.), or perhaps change the whole way we deal with argspecs for Cython functions; for example, just read off the entire string of all the arguments and pass that to the appropriate function, instead of trying to break it into arguments, default values, etc.  This is a pretty rare problem and it looks annoying to deal with, so I haven't felt like putting any time into it.\n\nmhansen and craigcitro: any comments or ideas?",
+    "body": "I've looked at these a bit, but I have no idea how to fix them.   Oh, except for\n\n```\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\nThis is because `_sage_getargspec_cython` in sage.misc.sageinspect is a little broken, and fixing it might be lot of work: right now it parses arguments to Cython function by doing basic string and regular expression manipulations, in particular separating arguments by splitting the line on commas.  The function `export_jmol` has argspec\n\n```\n    def export_jmol(self, filename='jmol_shape.jmol', force_reload=False,\n                    zoom=100, spin=False, background=(1,1,1), stereo=False,\n                    mesh=False, dots=False,\n                    perspective_depth = True,\n                    orientation = (-764,-346,-545,76.39), **ignored_kwds):\n```\nand so splitting at commas doesn't work.  To do this right, we either need to write a good parser (which deals with nested lists, tuples, etc.), or perhaps change the whole way we deal with argspecs for Cython functions; for example, just read off the entire string of all the arguments and pass that to the appropriate function, instead of trying to break it into arguments, default values, etc.  This is a pretty rare problem and it looks annoying to deal with, so I haven't felt like putting any time into it.\n\nmhansen and craigcitro: any comments or ideas?",
     "created_at": "2010-02-11T22:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -92,7 +91,6 @@ I've looked at these a bit, but I have no idea how to fix them.   Oh, except for
 ```
 plot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec
 ```
-
 This is because `_sage_getargspec_cython` in sage.misc.sageinspect is a little broken, and fixing it might be lot of work: right now it parses arguments to Cython function by doing basic string and regular expression manipulations, in particular separating arguments by splitting the line on commas.  The function `export_jmol` has argspec
 
 ```
@@ -102,7 +100,6 @@ This is because `_sage_getargspec_cython` in sage.misc.sageinspect is a little b
                     perspective_depth = True,
                     orientation = (-764,-346,-545,76.39), **ignored_kwds):
 ```
-
 and so splitting at commas doesn't work.  To do this right, we either need to write a good parser (which deals with nested lists, tuples, etc.), or perhaps change the whole way we deal with argspecs for Cython functions; for example, just read off the entire string of all the arguments and pass that to the appropriate function, instead of trying to break it into arguments, default values, etc.  This is a pretty rare problem and it looks annoying to deal with, so I haven't felt like putting any time into it.
 
 mhansen and craigcitro: any comments or ideas?
@@ -150,7 +147,7 @@ Well, Cython itself has to parse such a thing, but I don't know how easy it is g
 archive/issue_comments_072778.json:
 ```json
 {
-    "body": "I'm not very familiar with [ASTs](http://en.wikipedia.org/wiki/Abstract_syntax_tree) (or [ast](http://docs.python.org/library/ast.html)), but with\n\n```python\nimport ast\nimport inspect\nimport sage.misc.sageinspect as sms\n\nclass SageVisitor(ast.NodeVisitor):\n    def visit_Name(self, node):\n        what = node.id\n        if what == 'None':\n            return None\n        elif what == 'True':\n            return True\n        elif what == 'False':\n            return False\n        return node.id\n\n    def visit_Num(self, node):\n        return node.n\n\n    def visit_Str(self, node):\n        return node.s\n\n    def visit_List(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return t\n\n    def visit_Tuple(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return tuple(t)\n\n    def visit_Dict(self, node):\n        d = {}\n        for k, v in zip(node.keys, node.values):\n            d[self.visit(k)] = self.visit(v)\n        return d\n\n\ndef getargspec_via_ast(source):\n    if not isinstance(source, basestring):\n        source = sms.sage_getsource(source)\n\n    ast_args = ast.parse(source.lstrip()).body[0].args\n\n    args = []\n    defaults = []\n\n    for a in ast_args.args:\n        args.append(SageVisitor().visit(a))\n\n    for d in ast_args.defaults:\n        defaults.append(SageVisitor().visit(d))\n\n    return inspect.ArgSpec(args, ast_args.vararg, ast_args.kwarg,\n                           tuple(defaults) if defaults else None)\n```\n\nI get\n\n```python\nsage: inspect.getargspec(factor) == getargspec_via_ast(factor)\nTrue\nsage: getargspec_via_ast(sage.plot.plot3d.base.Graphics3d.export_jmol)\nArgSpec(args=['self', 'filename', 'force_reload', 'zoom', 'spin', 'background', 'stereo', 'mesh', 'dots', 'perspective_depth', 'orientation'], varargs=None, keywords='ignored_kwds', defaults=('jmol_shape.jmol', False, 100, False, (1, 1, 1), False, False, False, True, (-764, -346, -545, 76.390000000000001)))\n```\n\nMaybe we can use this as a last resort?  I think we'd first need to remove Cython-specific constructs.",
+    "body": "I'm not very familiar with [ASTs](http://en.wikipedia.org/wiki/Abstract_syntax_tree) (or [ast](http://docs.python.org/library/ast.html)), but with\n\n```python\nimport ast\nimport inspect\nimport sage.misc.sageinspect as sms\n\nclass SageVisitor(ast.NodeVisitor):\n    def visit_Name(self, node):\n        what = node.id\n        if what == 'None':\n            return None\n        elif what == 'True':\n            return True\n        elif what == 'False':\n            return False\n        return node.id\n\n    def visit_Num(self, node):\n        return node.n\n\n    def visit_Str(self, node):\n        return node.s\n\n    def visit_List(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return t\n\n    def visit_Tuple(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return tuple(t)\n\n    def visit_Dict(self, node):\n        d = {}\n        for k, v in zip(node.keys, node.values):\n            d[self.visit(k)] = self.visit(v)\n        return d\n\n\ndef getargspec_via_ast(source):\n    if not isinstance(source, basestring):\n        source = sms.sage_getsource(source)\n\n    ast_args = ast.parse(source.lstrip()).body[0].args\n\n    args = []\n    defaults = []\n\n    for a in ast_args.args:\n        args.append(SageVisitor().visit(a))\n\n    for d in ast_args.defaults:\n        defaults.append(SageVisitor().visit(d))\n\n    return inspect.ArgSpec(args, ast_args.vararg, ast_args.kwarg,\n                           tuple(defaults) if defaults else None)\n```\nI get\n\n```python\nsage: inspect.getargspec(factor) == getargspec_via_ast(factor)\nTrue\nsage: getargspec_via_ast(sage.plot.plot3d.base.Graphics3d.export_jmol)\nArgSpec(args=['self', 'filename', 'force_reload', 'zoom', 'spin', 'background', 'stereo', 'mesh', 'dots', 'perspective_depth', 'orientation'], varargs=None, keywords='ignored_kwds', defaults=('jmol_shape.jmol', False, 100, False, (1, 1, 1), False, False, False, True, (-764, -346, -545, 76.390000000000001)))\n```\nMaybe we can use this as a last resort?  I think we'd first need to remove Cython-specific constructs.",
     "created_at": "2010-02-13T14:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -220,7 +217,6 @@ def getargspec_via_ast(source):
     return inspect.ArgSpec(args, ast_args.vararg, ast_args.kwarg,
                            tuple(defaults) if defaults else None)
 ```
-
 I get
 
 ```python
@@ -229,7 +225,6 @@ True
 sage: getargspec_via_ast(sage.plot.plot3d.base.Graphics3d.export_jmol)
 ArgSpec(args=['self', 'filename', 'force_reload', 'zoom', 'spin', 'background', 'stereo', 'mesh', 'dots', 'perspective_depth', 'orientation'], varargs=None, keywords='ignored_kwds', defaults=('jmol_shape.jmol', False, 100, False, (1, 1, 1), False, False, False, True, (-764, -346, -545, 76.390000000000001)))
 ```
-
 Maybe we can use this as a last resort?  I think we'd first need to remove Cython-specific constructs.
 
 
@@ -239,7 +234,7 @@ Maybe we can use this as a last resort?  I think we'd first need to remove Cytho
 archive/issue_comments_072779.json:
 ```json
 {
-    "body": "It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\nFor the `ElementMethods`, `ParentMethods`, `userchild_download_worksheets.zip` warnings, we can expand the autodoc skip method handler.\n\nThe other warnings seem to be reST formatting problems, but I'm not sure about\n\n```\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\nFor the `ElementMethods`, `ParentMethods`, `userchild_download_worksheets.zip` warnings, we can expand the autodoc skip method handler.\n\nThe other warnings seem to be reST formatting problems, but I'm not sure about\n\n```\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2010-02-14T19:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -258,7 +253,6 @@ The other warnings seem to be reST formatting problems, but I'm not sure about
 <autodoc>:0: (ERROR/3) Unexpected indentation.
 <autodoc>:0: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 
@@ -285,7 +279,7 @@ Can autodoc [handle nested classes](http://groups.google.com/groups/search?q=gro
 archive/issue_comments_072781.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\nOr for now, a way to suppress all of the error message.\n\nI'm not sure about the `<autodoc>...` errors, either.",
+    "body": "Replying to [comment:6 mpatel]:\n> It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\n\nOr for now, a way to suppress all of the error message.\n\nI'm not sure about the `<autodoc>...` errors, either.",
     "created_at": "2010-02-17T04:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -296,6 +290,7 @@ archive/issue_comments_072781.json:
 
 Replying to [comment:6 mpatel]:
 > It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.
+
 
 Or for now, a way to suppress all of the error message.
 
@@ -308,7 +303,7 @@ I'm not sure about the `<autodoc>...` errors, either.
 archive/issue_comments_072782.json:
 ```json
 {
-    "body": "The following seems to remove the \"arg is not a Python function\" warnings:\n\n```diff\n--- autodoc.py.origg    2010-02-18 15:51:38.000000000 -0800\n+++ autodoc.py  2010-02-18 17:03:58.000000000 -0800\n@@ -1005,7 +1005,16 @@ class MethodDocumenter(ClassLevelDocumen\n             else:\n                 return None\n         else:\n-            argspec = inspect.getargspec(self.object)\n+            # The check above misses ordinary Python methods in Cython\n+            # files.\n+            try:\n+                argspec = inspect.getargspec(self.object)\n+            except TypeError:\n+                if (inspect.ismethod(self.object) and \n+                    self.env.config.autodoc_builtin_argspec):\n+                    argspec = self.env.config.autodoc_builtin_argspec(self.object.im_func)\n+                else:\n+                    return None\n         if argspec[0] and argspec[0][0] in ('cls', 'self'):\n             del argspec[0][0]\n         return inspect.formatargspec(*argspec)\n```\n\nShould we copy `autodoc.py` to `SAGE_DOC/common/sage_autodoc.py`, make all of our changes in the latter, and add the custom extension in `SAGE_DOC/common/conf.py`?",
+    "body": "The following seems to remove the \"arg is not a Python function\" warnings:\n\n```diff\n--- autodoc.py.origg    2010-02-18 15:51:38.000000000 -0800\n+++ autodoc.py  2010-02-18 17:03:58.000000000 -0800\n@@ -1005,7 +1005,16 @@ class MethodDocumenter(ClassLevelDocumen\n             else:\n                 return None\n         else:\n-            argspec = inspect.getargspec(self.object)\n+            # The check above misses ordinary Python methods in Cython\n+            # files.\n+            try:\n+                argspec = inspect.getargspec(self.object)\n+            except TypeError:\n+                if (inspect.ismethod(self.object) and \n+                    self.env.config.autodoc_builtin_argspec):\n+                    argspec = self.env.config.autodoc_builtin_argspec(self.object.im_func)\n+                else:\n+                    return None\n         if argspec[0] and argspec[0][0] in ('cls', 'self'):\n             del argspec[0][0]\n         return inspect.formatargspec(*argspec)\n```\nShould we copy `autodoc.py` to `SAGE_DOC/common/sage_autodoc.py`, make all of our changes in the latter, and add the custom extension in `SAGE_DOC/common/conf.py`?",
     "created_at": "2010-02-19T01:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -341,7 +336,6 @@ The following seems to remove the "arg is not a Python function" warnings:
              del argspec[0][0]
          return inspect.formatargspec(*argspec)
 ```
-
 Should we copy `autodoc.py` to `SAGE_DOC/common/sage_autodoc.py`, make all of our changes in the latter, and add the custom extension in `SAGE_DOC/common/conf.py`?
 
 
@@ -369,7 +363,7 @@ Handle `*.next` methods.  sage repo.
 archive/issue_comments_072784.json:
 ```json
 {
-    "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by @qed777 created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
+    "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by @qed777 created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```",
     "created_at": "2010-02-19T03:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -385,7 +379,6 @@ The attached patch should remove the warnings that end in
 ```
 .next: arg is not a module, class, method, function, traceback, frame, or code object
 ```
-
 
 
 
@@ -416,7 +409,7 @@ in `conf.py`.  We should coordinate the spkg updates.
 archive/issue_comments_072786.json:
 ```json
 {
-    "body": "This is great progress.  By the way, I know how to fix the warnings for `sage.misc.sagedoc.process_dollars`: we shouldn't run `process_dollars` on this function.  That is, change the first line of `process_dollars` in conf.py from\n\n```\n    if len(docstringlines) > 0:\n```\n\nto\n\n```\n    if len(docstringlines) > 0 and name.find(\"process_dollars\") == -1:\n```\n\nSimilarly for `process_mathtt`.  I've included this change in my patch.\n\n> Should we copy autodoc.py to SAGE_DOC/common/sage_autodoc.py, make all of our changes in the latter, and add the custom extension in SAGE_DOC/common/conf.py?\n\nThis is an interesting idea since we're patching it so much.  Then it would be under Sage revision control.  We would just need to keep an eye on it whenever we upgrade Sphinx.  I'm posting a patch which adds it.  Actually, it doesn't add the whole thing, since I got an error when I tried that.  Instead, it does\n\n```\nfrom sphinx.ext.autodoc import *\n```\n\nand then it defines `FunctionDocumenter`, `MethodDocumenter`, `setup`, and `ClassDocumenter` (this one isn't patched right now, but it looks like it will be in #7448).",
+    "body": "This is great progress.  By the way, I know how to fix the warnings for `sage.misc.sagedoc.process_dollars`: we shouldn't run `process_dollars` on this function.  That is, change the first line of `process_dollars` in conf.py from\n\n```\n    if len(docstringlines) > 0:\n```\nto\n\n```\n    if len(docstringlines) > 0 and name.find(\"process_dollars\") == -1:\n```\nSimilarly for `process_mathtt`.  I've included this change in my patch.\n\n> Should we copy autodoc.py to SAGE_DOC/common/sage_autodoc.py, make all of our changes in the latter, and add the custom extension in SAGE_DOC/common/conf.py?\n\n\nThis is an interesting idea since we're patching it so much.  Then it would be under Sage revision control.  We would just need to keep an eye on it whenever we upgrade Sphinx.  I'm posting a patch which adds it.  Actually, it doesn't add the whole thing, since I got an error when I tried that.  Instead, it does\n\n```\nfrom sphinx.ext.autodoc import *\n```\nand then it defines `FunctionDocumenter`, `MethodDocumenter`, `setup`, and `ClassDocumenter` (this one isn't patched right now, but it looks like it will be in #7448).",
     "created_at": "2010-02-19T21:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -430,23 +423,21 @@ This is great progress.  By the way, I know how to fix the warnings for `sage.mi
 ```
     if len(docstringlines) > 0:
 ```
-
 to
 
 ```
     if len(docstringlines) > 0 and name.find("process_dollars") == -1:
 ```
-
 Similarly for `process_mathtt`.  I've included this change in my patch.
 
 > Should we copy autodoc.py to SAGE_DOC/common/sage_autodoc.py, make all of our changes in the latter, and add the custom extension in SAGE_DOC/common/conf.py?
+
 
 This is an interesting idea since we're patching it so much.  Then it would be under Sage revision control.  We would just need to keep an eye on it whenever we upgrade Sphinx.  I'm posting a patch which adds it.  Actually, it doesn't add the whole thing, since I got an error when I tried that.  Instead, it does
 
 ```
 from sphinx.ext.autodoc import *
 ```
-
 and then it defines `FunctionDocumenter`, `MethodDocumenter`, `setup`, and `ClassDocumenter` (this one isn't patched right now, but it looks like it will be in #7448).
 
 
@@ -532,7 +523,7 @@ apply on top of other patches
 archive/issue_comments_072791.json:
 ```json
 {
-    "body": "Thanks!  Thanks also for making the extension patch.  To the extent it counts, my review is positive.\n\nI'll rebase #7448.\n\nTo the release manager:  Please apply \n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.patch\ntrac_8244-sagedoc.patch\n```\n",
+    "body": "Thanks!  Thanks also for making the extension patch.  To the extent it counts, my review is positive.\n\nI'll rebase #7448.\n\nTo the release manager:  Please apply \n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.patch\ntrac_8244-sagedoc.patch\n```",
     "created_at": "2010-02-20T19:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -552,7 +543,6 @@ trac_8244-slot_wrapper_argspec.patch
 trac_8244-conf-autodoc.patch
 trac_8244-sagedoc.patch
 ```
-
 
 
 
@@ -639,7 +629,7 @@ What do you think?
 archive/issue_comments_072796.json:
 ```json
 {
-    "body": "Replying to [comment:18 mpatel]:\n> I've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n> \n> A self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n> \n> What do you think?\n\nLooks good to me.  Still a positive review.",
+    "body": "Replying to [comment:18 mpatel]:\n> I've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n> \n> A self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n> \n> What do you think?\n\n\nLooks good to me.  Still a positive review.",
     "created_at": "2010-02-24T21:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
@@ -654,6 +644,7 @@ Replying to [comment:18 mpatel]:
 > A self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).
 > 
 > What do you think?
+
 
 Looks good to me.  Still a positive review.
 

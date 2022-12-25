@@ -3,7 +3,7 @@
 archive/issues_007699.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/src/.DS_Store\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/include/.DS_Store\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7699\n\n",
+    "body": "Assignee: tbd\n\n```\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/src/.DS_Store\n      sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/include/.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7699\n\n",
     "created_at": "2009-12-16T01:26:02Z",
     "labels": [
         "component: packages: standard",
@@ -18,12 +18,10 @@ archive/issues_007699.json:
 ```
 Assignee: tbd
 
-
 ```
       sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/src/.DS_Store
       sage-4.3.rc0/spkg/standard/lcalc-20080205.p3/src/include/.DS_Store
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7699
 

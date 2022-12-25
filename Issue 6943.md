@@ -3,7 +3,7 @@
 archive/issues_006943.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro @rlmill\n\nThe following should work:\n\n\n```\n@parallel\n@cached_function\ndef foo(x):\n    return x+1\n```\n\n\nhowever, when we attempt to evaluate foo...\n\n\n```\nsage: for k in foo(range(200)):\n...       print k\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py\", line 7, in <module>\n    for k in foo(range(_sage_const_200 )):\\u000a    print k\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 63, in parallel_iter\n    fp = pickle_function(f)\n  File \"fpickle.pyx\", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)\nAttributeError: 'CachedFunction' object has no attribute 'func_code'\n```\n\n\nIf any callable object is picklable, it should work with the parallel decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @craigcitro @rlmill\n\nThe following should work:\n\n```\n@parallel\n@cached_function\ndef foo(x):\n    return x+1\n```\n\nhowever, when we attempt to evaluate foo...\n\n```\nsage: for k in foo(range(200)):\n...       print k\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/boothby/.sage/sage_notebook/worksheets/admin/69/code/995.py\", line 7, in <module>\n    for k in foo(range(_sage_const_200 )):\\u000a    print k\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/boothby/sage/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 63, in parallel_iter\n    fp = pickle_function(f)\n  File \"fpickle.pyx\", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)\nAttributeError: 'CachedFunction' object has no attribute 'func_code'\n```\n\nIf any callable object is picklable, it should work with the parallel decorator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6943\n\n",
     "created_at": "2009-09-16T02:07:16Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ CC:  @williamstein @craigcitro @rlmill
 
 The following should work:
 
-
 ```
 @parallel
 @cached_function
@@ -31,9 +30,7 @@ def foo(x):
     return x+1
 ```
 
-
 however, when we attempt to evaluate foo...
-
 
 ```
 sage: for k in foo(range(200)):
@@ -49,7 +46,6 @@ Traceback (most recent call last):
   File "fpickle.pyx", line 60, in sage.misc.fpickle.pickle_function (sage/misc/fpickle.c:746)
 AttributeError: 'CachedFunction' object has no attribute 'func_code'
 ```
-
 
 If any callable object is picklable, it should work with the parallel decorator.
 

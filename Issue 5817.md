@@ -3,7 +3,7 @@
 archive/issues_005817.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nI've release FLINT 1.2.5. This fixes a serious error that existed in\nzn_poly-0.8. Unbeknownst to me, David Harvey had already fixed this\nissue in zn_poly-0.9 but I had not realised that had been released,\ndue to him changing institutions and me not updating my link to his\nwebpage in my frequently visited tabs list. FLINT now uses zn_poly-0.9\nby default for polynomial arithmetic over Z/nZ in zmod_poly.\n\nThere is still an issue with z_factor which fails to factor some\nnumbers very rarely (it prints a message to say it has failed). Tom\nBoothby is working on a fix, and this should also speed up the\nfactorisation function noticeably.\n\nBill. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5817\n\n",
+    "body": "Assignee: mabshoff\n\n```\nI've release FLINT 1.2.5. This fixes a serious error that existed in\nzn_poly-0.8. Unbeknownst to me, David Harvey had already fixed this\nissue in zn_poly-0.9 but I had not realised that had been released,\ndue to him changing institutions and me not updating my link to his\nwebpage in my frequently visited tabs list. FLINT now uses zn_poly-0.9\nby default for polynomial arithmetic over Z/nZ in zmod_poly.\n\nThere is still an issue with z_factor which fails to factor some\nnumbers very rarely (it prints a message to say it has failed). Tom\nBoothby is working on a fix, and this should also speed up the\nfactorisation function noticeably.\n\nBill. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5817\n\n",
     "created_at": "2009-04-18T23:20:28Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_005817.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 I've release FLINT 1.2.5. This fixes a serious error that existed in
@@ -34,7 +33,6 @@ factorisation function noticeably.
 
 Bill. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5817
 
@@ -65,7 +63,7 @@ Changing status from new to assigned.
 archive/issue_comments_045626.json:
 ```json
 {
-    "body": "While I am at it: Please also add this fix to make the check target work on OSX, too:\n\n```\ndiff -r fc2eb24f71a2 spkg-check\n--- a/spkg-check        Thu Apr 09 00:29:11 2009 -0400\n+++ b/spkg-check        Mon Apr 20 00:04:56 2009 -0700\n@@ -17,6 +17,11 @@\n    FLINT_TUNE=\" -fPIC -funroll-loops  \"\n fi\n \n+if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n+   echo \"64 bit MacIntel\"\n+   FLINT_TUNE=\" -fPIC -m64 -funroll-loops\"\n+fi\n+\n export FLINT_TUNE\n \n FLINT_GMP_INCLUDE_DIR=\"$SAGE_LOCAL\"/include/\n```\n\n\nCheers,\n\nMichael",
+    "body": "While I am at it: Please also add this fix to make the check target work on OSX, too:\n\n```\ndiff -r fc2eb24f71a2 spkg-check\n--- a/spkg-check        Thu Apr 09 00:29:11 2009 -0400\n+++ b/spkg-check        Mon Apr 20 00:04:56 2009 -0700\n@@ -17,6 +17,11 @@\n    FLINT_TUNE=\" -fPIC -funroll-loops  \"\n fi\n \n+if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n+   echo \"64 bit MacIntel\"\n+   FLINT_TUNE=\" -fPIC -m64 -funroll-loops\"\n+fi\n+\n export FLINT_TUNE\n \n FLINT_GMP_INCLUDE_DIR=\"$SAGE_LOCAL\"/include/\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-20T07:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -93,7 +91,6 @@ diff -r fc2eb24f71a2 spkg-check
  
  FLINT_GMP_INCLUDE_DIR="$SAGE_LOCAL"/include/
 ```
-
 
 Cheers,
 
@@ -203,7 +200,7 @@ Mcihael
 archive/issue_comments_045629.json:
 ```json
 {
-    "body": "Fixed the issue with headers, but monsky still has a small problem:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.2.alpha0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1562:\n    sage: B.det()                                               # long time\nExpected:\n    11 + 484*t^2 + 451*t^3 + O(t^4)\nGot:\n    245 + 240*t + 724*t^2 + 808*t^3 + O(t^4)\n**********************************************************************\n```\n\n\nThe spkg is now at http://sage.math.washington.edu/home/mabshoff/spkgs/flint-1.2.5.spkg\n\nCheers,\n\nMichael",
+    "body": "Fixed the issue with headers, but monsky still has a small problem:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.2.alpha0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1562:\n    sage: B.det()                                               # long time\nExpected:\n    11 + 484*t^2 + 451*t^3 + O(t^4)\nGot:\n    245 + 240*t + 724*t^2 + 808*t^3 + O(t^4)\n**********************************************************************\n```\n\nThe spkg is now at http://sage.math.washington.edu/home/mabshoff/spkgs/flint-1.2.5.spkg\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T08:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -225,7 +222,6 @@ Got:
     245 + 240*t + 724*t^2 + 808*t^3 + O(t^4)
 **********************************************************************
 ```
-
 
 The spkg is now at http://sage.math.washington.edu/home/mabshoff/spkgs/flint-1.2.5.spkg
 
@@ -262,7 +258,7 @@ Michael
 archive/issue_comments_045631.json:
 ```json
 {
-    "body": "I couldn't build the spkg on linux/opteron. I tried vanilla sage 3.4.2 with spkg/standard/flint-1.2.4.p2.spkg replaced by flint-1.2.5.spkg, building from scratch. It breaks at\n\n\n```\nfmpz.c:40:29: error: zn_poly/zn_poly.h: No such file or directory\n```\n\n\nwhile building FLINT. Am I doing this incorrectly, or is there some problem with the spkg?",
+    "body": "I couldn't build the spkg on linux/opteron. I tried vanilla sage 3.4.2 with spkg/standard/flint-1.2.4.p2.spkg replaced by flint-1.2.5.spkg, building from scratch. It breaks at\n\n```\nfmpz.c:40:29: error: zn_poly/zn_poly.h: No such file or directory\n```\n\nwhile building FLINT. Am I doing this incorrectly, or is there some problem with the spkg?",
     "created_at": "2009-05-28T15:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -273,11 +269,9 @@ archive/issue_comments_045631.json:
 
 I couldn't build the spkg on linux/opteron. I tried vanilla sage 3.4.2 with spkg/standard/flint-1.2.4.p2.spkg replaced by flint-1.2.5.spkg, building from scratch. It breaks at
 
-
 ```
 fmpz.c:40:29: error: zn_poly/zn_poly.h: No such file or directory
 ```
-
 
 while building FLINT. Am I doing this incorrectly, or is there some problem with the spkg?
 
@@ -314,7 +308,7 @@ When I change fmpz.c to the latter, the spkg builds.
 archive/issue_comments_045633.json:
 ```json
 {
-    "body": "After fixing the build problem above, I can replicate mabshoff's doctest failure.\n\nHowever, if one tries the computation directly, it gives the correct answer:\n\n\n```\nsage: S.<t> = PowerSeriesRing(Integers(1331), default_prec=4)\nsage: B = Matrix([[1144 + 264*t + 841*t^2 + 1025*t^3 + O(t^4), 176 + 1052*t + 216*t^2 + 523*t^3 + O(t^4)], [847 + 668*t + 81*t^2 + 424*t^3 + O(t^4), 185 + 341*t + 171*t^2 + 642*t^3 + O(t^4)]])sage: B.det()11 + 484*t^2 + 451*t^3 + O(t^4)\n```\n\n\nStill investigating...",
+    "body": "After fixing the build problem above, I can replicate mabshoff's doctest failure.\n\nHowever, if one tries the computation directly, it gives the correct answer:\n\n```\nsage: S.<t> = PowerSeriesRing(Integers(1331), default_prec=4)\nsage: B = Matrix([[1144 + 264*t + 841*t^2 + 1025*t^3 + O(t^4), 176 + 1052*t + 216*t^2 + 523*t^3 + O(t^4)], [847 + 668*t + 81*t^2 + 424*t^3 + O(t^4), 185 + 341*t + 171*t^2 + 642*t^3 + O(t^4)]])sage: B.det()11 + 484*t^2 + 451*t^3 + O(t^4)\n```\n\nStill investigating...",
     "created_at": "2009-05-29T15:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -327,12 +321,10 @@ After fixing the build problem above, I can replicate mabshoff's doctest failure
 
 However, if one tries the computation directly, it gives the correct answer:
 
-
 ```
 sage: S.<t> = PowerSeriesRing(Integers(1331), default_prec=4)
 sage: B = Matrix([[1144 + 264*t + 841*t^2 + 1025*t^3 + O(t^4), 176 + 1052*t + 216*t^2 + 523*t^3 + O(t^4)], [847 + 668*t + 81*t^2 + 424*t^3 + O(t^4), 185 + 341*t + 171*t^2 + 642*t^3 + O(t^4)]])sage: B.det()11 + 484*t^2 + 451*t^3 + O(t^4)
 ```
-
 
 Still investigating...
 
@@ -343,7 +335,7 @@ Still investigating...
 archive/issue_comments_045634.json:
 ```json
 {
-    "body": "Here is a simpler failure case:\n\n\n```\nsage: S.<t> = PolynomialRing(Integers(14641))\nsage: f = 1 + 9581*t\nsage: g = 1 + 4334*t\nsage: R = PolynomialRing(Integers(1331), \"t\")\nsage: ff = f.change_ring(R)\nsage: gg = g.change_ring(R)\nsage: ff\n264*t + 1\nsage: gg\n341*t + 1\nsage: ff * gg\n925*t^2 + 605*t + 1\nsage: (264 * 341) % 1331\n847\n```\n\n\nSo the `t^2` coefficient is wrong.",
+    "body": "Here is a simpler failure case:\n\n```\nsage: S.<t> = PolynomialRing(Integers(14641))\nsage: f = 1 + 9581*t\nsage: g = 1 + 4334*t\nsage: R = PolynomialRing(Integers(1331), \"t\")\nsage: ff = f.change_ring(R)\nsage: gg = g.change_ring(R)\nsage: ff\n264*t + 1\nsage: gg\n341*t + 1\nsage: ff * gg\n925*t^2 + 605*t + 1\nsage: (264 * 341) % 1331\n847\n```\n\nSo the `t^2` coefficient is wrong.",
     "created_at": "2009-05-29T15:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -353,7 +345,6 @@ archive/issue_comments_045634.json:
 ```
 
 Here is a simpler failure case:
-
 
 ```
 sage: S.<t> = PolynomialRing(Integers(14641))
@@ -371,7 +362,6 @@ sage: ff * gg
 sage: (264 * 341) % 1331
 847
 ```
-
 
 So the `t^2` coefficient is wrong.
 
@@ -402,7 +392,7 @@ Probably making `change_ring` return the correct type of object will fix all thi
 archive/issue_comments_045636.json:
 ```json
 {
-    "body": "Sorry, I'm an idiot. That code snippet above is using `change_ring` incorrectly. Here is a better example:\n\n\n```\nsage: S.<t> = PolynomialRing(Integers(14641))\nsage: f = 1 + 9581*t\nsage: g = 1 + 4334*t\nsage: R = Integers(1331)\nsage: ff = f.change_ring(R)\nsage: gg = g.change_ring(R)\nsage: ff\n264*t + 1\nsage: gg\n341*t + 1\nsage: ff * gg\n925*t^2 + 605*t + 1\nsage: (264 * 341) % 1331\n847\n```\n\n\nBoth ff and gg now have the correct type, but the answer is still wrong. Still investigating...",
+    "body": "Sorry, I'm an idiot. That code snippet above is using `change_ring` incorrectly. Here is a better example:\n\n```\nsage: S.<t> = PolynomialRing(Integers(14641))\nsage: f = 1 + 9581*t\nsage: g = 1 + 4334*t\nsage: R = Integers(1331)\nsage: ff = f.change_ring(R)\nsage: gg = g.change_ring(R)\nsage: ff\n264*t + 1\nsage: gg\n341*t + 1\nsage: ff * gg\n925*t^2 + 605*t + 1\nsage: (264 * 341) % 1331\n847\n```\n\nBoth ff and gg now have the correct type, but the answer is still wrong. Still investigating...",
     "created_at": "2009-05-29T16:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -412,7 +402,6 @@ archive/issue_comments_045636.json:
 ```
 
 Sorry, I'm an idiot. That code snippet above is using `change_ring` incorrectly. Here is a better example:
-
 
 ```
 sage: S.<t> = PolynomialRing(Integers(14641))
@@ -431,7 +420,6 @@ sage: (264 * 341) % 1331
 847
 ```
 
-
 Both ff and gg now have the correct type, but the answer is still wrong. Still investigating...
 
 
@@ -441,7 +429,7 @@ Both ff and gg now have the correct type, but the answer is still wrong. Still i
 archive/issue_comments_045637.json:
 ```json
 {
-    "body": "Somewhere some coefficients are not being reduced properly:\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(121))\nsage: S.<y> = PolynomialRing(Integers(11))\nsage: S(50*x)\n6*y\nsage: R(S(50*x))\n50*x     # !!!!!!\n```\n\n\nThis happens for both the flint-1.2.4.p2 and flint-1.2.5 spkgs.",
+    "body": "Somewhere some coefficients are not being reduced properly:\n\n```\nsage: R.<x> = PolynomialRing(Integers(121))\nsage: S.<y> = PolynomialRing(Integers(11))\nsage: S(50*x)\n6*y\nsage: R(S(50*x))\n50*x     # !!!!!!\n```\n\nThis happens for both the flint-1.2.4.p2 and flint-1.2.5 spkgs.",
     "created_at": "2009-05-29T19:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5817",
     "type": "issue_comment",
@@ -452,7 +440,6 @@ archive/issue_comments_045637.json:
 
 Somewhere some coefficients are not being reduced properly:
 
-
 ```
 sage: R.<x> = PolynomialRing(Integers(121))
 sage: S.<y> = PolynomialRing(Integers(11))
@@ -461,7 +448,6 @@ sage: S(50*x)
 sage: R(S(50*x))
 50*x     # !!!!!!
 ```
-
 
 This happens for both the flint-1.2.4.p2 and flint-1.2.5 spkgs.
 

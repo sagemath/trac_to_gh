@@ -183,7 +183,7 @@ After [converting the latter two to .so files](http://www.tipcache.com/tip/Conve
 archive/issue_comments_088676.json:
 ```json
 {
-    "body": "> Do we need the missing shared and/or static libraries?\n\nI think this is an excellent question, and I have no idea what the answer is.  I hope that someone updates the ATLAS spkg soon and cleans up this question as well as others, like enabling parallel building so it doesn't take several decades to build on t2.math :)\n\nThe big cleanup belongs on another ticket, though.\n\nHere's the end of the file spkg/logs/atlas... on sage.math, which I think explains why those files are missing:\n\n```\nld -L/scratch/palmieri/sage-4.5.alpha4/local/lib -shared -soname liblapack.so -o liblapack.so --wh\\\nole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/scratch/palmieri/sage-4.5.alpha4/local/lib -shared -soname libf77blas.so -o libf77blas.so --\\\nwhole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\n\nIs this a big deal?  Is it easy to fix?\n\nMeanwhile, the Sage build for any system which has this problem will be missing liblapack.so and libf77blas.so.  (This includes not just sage.math but also the skynet machine lena.)  It would be best to fix it so these files are created properly, but meanwhile, should we change the ATLAS spkg so SAGE_ATLAS_LIB doesn't check for these?  Is the presence of the .a file always good enough?",
+    "body": "> Do we need the missing shared and/or static libraries?\n\n\nI think this is an excellent question, and I have no idea what the answer is.  I hope that someone updates the ATLAS spkg soon and cleans up this question as well as others, like enabling parallel building so it doesn't take several decades to build on t2.math :)\n\nThe big cleanup belongs on another ticket, though.\n\nHere's the end of the file spkg/logs/atlas... on sage.math, which I think explains why those files are missing:\n\n```\nld -L/scratch/palmieri/sage-4.5.alpha4/local/lib -shared -soname liblapack.so -o liblapack.so --wh\\\nole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/scratch/palmieri/sage-4.5.alpha4/local/lib -shared -soname libf77blas.so -o libf77blas.so --\\\nwhole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\nIs this a big deal?  Is it easy to fix?\n\nMeanwhile, the Sage build for any system which has this problem will be missing liblapack.so and libf77blas.so.  (This includes not just sage.math but also the skynet machine lena.)  It would be best to fix it so these files are created properly, but meanwhile, should we change the ATLAS spkg so SAGE_ATLAS_LIB doesn't check for these?  Is the presence of the .a file always good enough?",
     "created_at": "2010-07-10T03:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -193,6 +193,7 @@ archive/issue_comments_088676.json:
 ```
 
 > Do we need the missing shared and/or static libraries?
+
 
 I think this is an excellent question, and I have no idea what the answer is.  I hope that someone updates the ATLAS spkg soon and cleans up this question as well as others, like enabling parallel building so it doesn't take several decades to build on t2.math :)
 
@@ -208,7 +209,6 @@ ld -L/scratch/palmieri/sage-4.5.alpha4/local/lib -shared -soname libf77blas.so -
 whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran
 ld: cannot find -lgfortran
 ```
-
 Is this a big deal?  Is it easy to fix?
 
 Meanwhile, the Sage build for any system which has this problem will be missing liblapack.so and libf77blas.so.  (This includes not just sage.math but also the skynet machine lena.)  It would be best to fix it so these files are created properly, but meanwhile, should we change the ATLAS spkg so SAGE_ATLAS_LIB doesn't check for these?  Is the presence of the .a file always good enough?
@@ -252,7 +252,7 @@ Dave
 archive/issue_comments_088678.json:
 ```json
 {
-    "body": "Let's definitely leave further changes for other tickets.\n\nFor the gfortran problem, I tried:\n\n```sh\n$ cd local/lib\n$ ln -s libgfortran.so.2 libgfortran.so\n$ rm -f libatlas.* libcblas.* libf77blas.* liblapack.*\n$ cd ../../ \n$ ./sage -f spkg/standard/atlas-3.8.3.p12.spkg\n[...]\nld -L/mnt/usb1/scratch/mpatel/apps/sage-4.5.a4/local/lib -shared -soname liblapack.so -o liblapack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld -L/mnt/usb1/scratch/mpatel/apps/sage-4.5.a4/local/lib -shared -soname libf77blas.so -o libf77blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\n[...]\n$ ls -ltr local/lib\n[...]\n   0 lrwxrwxrwx  1 mpatel mpatel   16 2010-07-10 00:05 libgfortran.so -> libgfortran.so.2\n529k -rw-r--r--  1 mpatel mpatel 521k 2010-07-10 00:30 liblapack.a\n570k -rw-r--r--  1 mpatel mpatel 565k 2010-07-10 00:30 libf77blas.a\n472k -rw-r--r--  1 mpatel mpatel 467k 2010-07-10 00:30 libcblas.a\n 12M -rw-r--r--  1 mpatel mpatel  12M 2010-07-10 00:30 libatlas.a\n164k -rwxr-xr-x  1 mpatel mpatel 157k 2010-07-10 00:30 liblapack.so*\n160k -rwxr-xr-x  1 mpatel mpatel 156k 2010-07-10 00:30 libf77blas.so*\n156k -rw-r--r--  1 mpatel mpatel 151k 2010-07-10 00:30 libcblas.so\n7.0M -rw-r--r--  1 mpatel mpatel 7.0M 2010-07-10 00:30 libatlas.so\n```\n\n(On sage.math, I use `SAGE_FORTRAN=/usr/bin/gfortran` and `SAGE_FORTRAN_LIB=/usr/lib/libgfortran.so.2`.)\n\nBut I can't take this further right now.",
+    "body": "Let's definitely leave further changes for other tickets.\n\nFor the gfortran problem, I tried:\n\n```sh\n$ cd local/lib\n$ ln -s libgfortran.so.2 libgfortran.so\n$ rm -f libatlas.* libcblas.* libf77blas.* liblapack.*\n$ cd ../../ \n$ ./sage -f spkg/standard/atlas-3.8.3.p12.spkg\n[...]\nld -L/mnt/usb1/scratch/mpatel/apps/sage-4.5.a4/local/lib -shared -soname liblapack.so -o liblapack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld -L/mnt/usb1/scratch/mpatel/apps/sage-4.5.a4/local/lib -shared -soname libf77blas.so -o libf77blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\n[...]\n$ ls -ltr local/lib\n[...]\n   0 lrwxrwxrwx  1 mpatel mpatel   16 2010-07-10 00:05 libgfortran.so -> libgfortran.so.2\n529k -rw-r--r--  1 mpatel mpatel 521k 2010-07-10 00:30 liblapack.a\n570k -rw-r--r--  1 mpatel mpatel 565k 2010-07-10 00:30 libf77blas.a\n472k -rw-r--r--  1 mpatel mpatel 467k 2010-07-10 00:30 libcblas.a\n 12M -rw-r--r--  1 mpatel mpatel  12M 2010-07-10 00:30 libatlas.a\n164k -rwxr-xr-x  1 mpatel mpatel 157k 2010-07-10 00:30 liblapack.so*\n160k -rwxr-xr-x  1 mpatel mpatel 156k 2010-07-10 00:30 libf77blas.so*\n156k -rw-r--r--  1 mpatel mpatel 151k 2010-07-10 00:30 libcblas.so\n7.0M -rw-r--r--  1 mpatel mpatel 7.0M 2010-07-10 00:30 libatlas.so\n```\n(On sage.math, I use `SAGE_FORTRAN=/usr/bin/gfortran` and `SAGE_FORTRAN_LIB=/usr/lib/libgfortran.so.2`.)\n\nBut I can't take this further right now.",
     "created_at": "2010-07-10T08:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -287,7 +287,6 @@ $ ls -ltr local/lib
 156k -rw-r--r--  1 mpatel mpatel 151k 2010-07-10 00:30 libcblas.so
 7.0M -rw-r--r--  1 mpatel mpatel 7.0M 2010-07-10 00:30 libatlas.so
 ```
-
 (On sage.math, I use `SAGE_FORTRAN=/usr/bin/gfortran` and `SAGE_FORTRAN_LIB=/usr/lib/libgfortran.so.2`.)
 
 But I can't take this further right now.
@@ -299,7 +298,7 @@ But I can't take this further right now.
 archive/issue_comments_088679.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> Let's definitely leave further changes for other tickets.\n\nI agree. This works. Long term a better solution no doubt exists, but this is step in the right direction. \n\nDave",
+    "body": "Replying to [comment:7 mpatel]:\n> Let's definitely leave further changes for other tickets.\n\n\nI agree. This works. Long term a better solution no doubt exists, but this is step in the right direction. \n\nDave",
     "created_at": "2010-07-10T09:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -310,6 +309,7 @@ archive/issue_comments_088679.json:
 
 Replying to [comment:7 mpatel]:
 > Let's definitely leave further changes for other tickets.
+
 
 I agree. This works. Long term a better solution no doubt exists, but this is step in the right direction. 
 
@@ -356,7 +356,7 @@ archive/issue_events_023087.json:
 archive/issue_comments_088681.json:
 ```json
 {
-    "body": "I built 4.5.3.alpha1 on t2 with `SAGE_ATLAS_LIB` set to `SAGE_LOCAL` of an already built copy of alpha1.  (The latter I built without setting `SAGE_ATLAS_LIB` and without copying/linking any pre-existing ATLAS libraries.)  I get several doctest failures which appear to simplify to\n\n```python\nsage: from scipy.linalg import flapack\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/<ipython console> in <module>()\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/__init__.py in <module>()\n      6 from linalg_version import linalg_version as __version__\n      7\n----> 8 from basic import *\n      9 from decomp import *\n     10 from matfuncs import *\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/basic.py in <module>()\n     15 #from blas import get_blas_funcs\n     16 from flinalg import get_flinalg_funcs\n---> 17 from lapack import get_lapack_funcs\n     18 from numpy import asarray,zeros,sum,newaxis,greater_equal,subtract,arange,\\  \n     19      conjugate,ravel,r_,mgrid,take,ones,dot,transpose,sqrt,add,real\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/lapack.py in <module>()\n     16\n     17 from scipy.linalg import flapack\n---> 18 from scipy.linalg import clapack\n     19 _use_force_clapack = 1\n     20 if hasattr(clapack,'empty_module'):\n\nImportError: ld.so.1: python: fatal: relocation error: file /scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/clapack.so: symbol clapack_slauum: referenced symbol not found\nsage: \n```\n\nHas anyone seen this error before?  This `import` statement works in the \"original\" alpha1, which also passes the long doctests.",
+    "body": "I built 4.5.3.alpha1 on t2 with `SAGE_ATLAS_LIB` set to `SAGE_LOCAL` of an already built copy of alpha1.  (The latter I built without setting `SAGE_ATLAS_LIB` and without copying/linking any pre-existing ATLAS libraries.)  I get several doctest failures which appear to simplify to\n\n```python\nsage: from scipy.linalg import flapack\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/<ipython console> in <module>()\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/__init__.py in <module>()\n      6 from linalg_version import linalg_version as __version__\n      7\n----> 8 from basic import *\n      9 from decomp import *\n     10 from matfuncs import *\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/basic.py in <module>()\n     15 #from blas import get_blas_funcs\n     16 from flinalg import get_flinalg_funcs\n---> 17 from lapack import get_lapack_funcs\n     18 from numpy import asarray,zeros,sum,newaxis,greater_equal,subtract,arange,\\  \n     19      conjugate,ravel,r_,mgrid,take,ones,dot,transpose,sqrt,add,real\n\n/scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/lapack.py in <module>()\n     16\n     17 from scipy.linalg import flapack\n---> 18 from scipy.linalg import clapack\n     19 _use_force_clapack = 1\n     20 if hasattr(clapack,'empty_module'):\n\nImportError: ld.so.1: python: fatal: relocation error: file /scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/clapack.so: symbol clapack_slauum: referenced symbol not found\nsage: \n```\nHas anyone seen this error before?  This `import` statement works in the \"original\" alpha1, which also passes the long doctests.",
     "created_at": "2010-08-21T07:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -398,7 +398,6 @@ ImportError                               Traceback (most recent call last)
 ImportError: ld.so.1: python: fatal: relocation error: file /scratch/mpatel/tmp/sage-4.5.3.alpha1-sal/local/lib/python2.6/site-packages/scipy/linalg/clapack.so: symbol clapack_slauum: referenced symbol not found
 sage: 
 ```
-
 Has anyone seen this error before?  This `import` statement works in the "original" alpha1, which also passes the long doctests.
 
 
@@ -408,7 +407,7 @@ Has anyone seen this error before?  This `import` statement works in the "origin
 archive/issue_comments_088682.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> Has anyone seen this error before?  This `import` statement works in the \"original\" alpha1, which also passes the long doctests.\n\nI also had a failure setting SAGE_ATLAS_LIB, but I was not sure if it was something else I'd messed around with, so rebuilt Sage without setting it. \n\nI must admit, I reviewed this on the basis of \"it looks logical\" rather than \"I have tested it\". \n\nI think I can see what the problem might be too. `system_atlas.py` creates a load of symbolic links for shared libraries, but omits the static library. I suspect it needs another link put in. \n\n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\n\nCould you try making that link symbolic link manually, and testing if that fixes the problem. \n\n\n\nDave",
+    "body": "Replying to [comment:10 mpatel]:\n> Has anyone seen this error before?  This `import` statement works in the \"original\" alpha1, which also passes the long doctests.\n\n\nI also had a failure setting SAGE_ATLAS_LIB, but I was not sure if it was something else I'd messed around with, so rebuilt Sage without setting it. \n\nI must admit, I reviewed this on the basis of \"it looks logical\" rather than \"I have tested it\". \n\nI think I can see what the problem might be too. `system_atlas.py` creates a load of symbolic links for shared libraries, but omits the static library. I suspect it needs another link put in. \n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\nCould you try making that link symbolic link manually, and testing if that fixes the problem. \n\n\n\nDave",
     "created_at": "2010-08-21T12:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -420,17 +419,16 @@ archive/issue_comments_088682.json:
 Replying to [comment:10 mpatel]:
 > Has anyone seen this error before?  This `import` statement works in the "original" alpha1, which also passes the long doctests.
 
+
 I also had a failure setting SAGE_ATLAS_LIB, but I was not sure if it was something else I'd messed around with, so rebuilt Sage without setting it. 
 
 I must admit, I reviewed this on the basis of "it looks logical" rather than "I have tested it". 
 
 I think I can see what the problem might be too. `system_atlas.py` creates a load of symbolic links for shared libraries, but omits the static library. I suspect it needs another link put in. 
 
-
 ```
 os.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')
 ```
-
 
 Could you try making that link symbolic link manually, and testing if that fixes the problem. 
 
@@ -445,7 +443,7 @@ Dave
 archive/issue_comments_088683.json:
 ```json
 {
-    "body": "Replying to [comment:11 drkirkby]:\n> Could you try making that link symbolic link manually, and testing if that fixes the problem. \n\nI did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n\nJohn, have you had any problems with `SAGE_ATLAS_LIB`?",
+    "body": "Replying to [comment:11 drkirkby]:\n> Could you try making that link symbolic link manually, and testing if that fixes the problem. \n\n\nI did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n\nJohn, have you had any problems with `SAGE_ATLAS_LIB`?",
     "created_at": "2010-08-22T05:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -456,6 +454,7 @@ archive/issue_comments_088683.json:
 
 Replying to [comment:11 drkirkby]:
 > Could you try making that link symbolic link manually, and testing if that fixes the problem. 
+
 
 I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.
 
@@ -468,7 +467,7 @@ John, have you had any problems with `SAGE_ATLAS_LIB`?
 archive/issue_comments_088684.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> Replying to [comment:11 drkirkby]:\n> > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n> \n> I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n\nI think it would have been to recompile, as this is a **static** library, which means it should get bound into the executable. Had it been a shared library missing, then just adding the link would have been sufficient, but I doubt it would with a static library. \n \n> John, have you had any problems with `SAGE_ATLAS_LIB`?\n\nI'm pretty sure John will do, as there's simply nothing in the code to make that static library available. John's fix was part of the solution, but not a complete solution. I'm sorry I did not make a better job of reviewing it, but it seemed so logical! \n\nSince I've already created a atlas-3.8.3.p14.spkg (#9508), which is merged into 4.5.3.alpha1, and #9508 includes this change, I think it is better to create another ticket to add the missing link, which I've since done. That is #9780. \n\nI'll implement that and test on OpenSolaris later today. If it fixes it on OpenSolaris then it will work for Solaris. The advantage of testing on OpenSolaris is simply speed. It takes a lot less time to build Sage on a 3.33 GHz Xeon than it does on `t2.math` or any SPARC I personally have access to. \n\nDave",
+    "body": "Replying to [comment:12 mpatel]:\n> Replying to [comment:11 drkirkby]:\n> > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n\n> \n> I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n\n\nI think it would have been to recompile, as this is a **static** library, which means it should get bound into the executable. Had it been a shared library missing, then just adding the link would have been sufficient, but I doubt it would with a static library. \n \n> John, have you had any problems with `SAGE_ATLAS_LIB`?\n\n\nI'm pretty sure John will do, as there's simply nothing in the code to make that static library available. John's fix was part of the solution, but not a complete solution. I'm sorry I did not make a better job of reviewing it, but it seemed so logical! \n\nSince I've already created a atlas-3.8.3.p14.spkg (#9508), which is merged into 4.5.3.alpha1, and #9508 includes this change, I think it is better to create another ticket to add the missing link, which I've since done. That is #9780. \n\nI'll implement that and test on OpenSolaris later today. If it fixes it on OpenSolaris then it will work for Solaris. The advantage of testing on OpenSolaris is simply speed. It takes a lot less time to build Sage on a 3.33 GHz Xeon than it does on `t2.math` or any SPARC I personally have access to. \n\nDave",
     "created_at": "2010-08-22T07:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -480,12 +479,15 @@ archive/issue_comments_088684.json:
 Replying to [comment:12 mpatel]:
 > Replying to [comment:11 drkirkby]:
 > > Could you try making that link symbolic link manually, and testing if that fixes the problem. 
+
 > 
 > I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.
+
 
 I think it would have been to recompile, as this is a **static** library, which means it should get bound into the executable. Had it been a shared library missing, then just adding the link would have been sufficient, but I doubt it would with a static library. 
  
 > John, have you had any problems with `SAGE_ATLAS_LIB`?
+
 
 I'm pretty sure John will do, as there's simply nothing in the code to make that static library available. John's fix was part of the solution, but not a complete solution. I'm sorry I did not make a better job of reviewing it, but it seemed so logical! 
 
@@ -502,7 +504,7 @@ Dave
 archive/issue_comments_088685.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> Replying to [comment:11 drkirkby]:\n> > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n> \n> I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n> \n> John, have you had any problems with `SAGE_ATLAS_LIB`?\n\nI just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.\n\nAs far as making the link, do we need to link to all of the static libraries created by ATLAS?  It seems like it wouldn't hurt.  Also, it seems as though there is another liblapack.a, I think installed by the lapack spkg, which might need to be deleted before making the link.",
+    "body": "Replying to [comment:12 mpatel]:\n> Replying to [comment:11 drkirkby]:\n> > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n\n> \n> I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n> \n> John, have you had any problems with `SAGE_ATLAS_LIB`?\n\n\nI just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.\n\nAs far as making the link, do we need to link to all of the static libraries created by ATLAS?  It seems like it wouldn't hurt.  Also, it seems as though there is another liblapack.a, I think installed by the lapack spkg, which might need to be deleted before making the link.",
     "created_at": "2010-08-22T14:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -514,10 +516,12 @@ archive/issue_comments_088685.json:
 Replying to [comment:12 mpatel]:
 > Replying to [comment:11 drkirkby]:
 > > Could you try making that link symbolic link manually, and testing if that fixes the problem. 
+
 > 
 > I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.
 > 
 > John, have you had any problems with `SAGE_ATLAS_LIB`?
+
 
 I just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.
 
@@ -530,7 +534,7 @@ As far as making the link, do we need to link to all of the static libraries cre
 archive/issue_comments_088686.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> Replying to [comment:12 mpatel]:\n> > Replying to [comment:11 drkirkby]:\n> > > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n> > \n> > I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n> > \n> > John, have you had any problems with `SAGE_ATLAS_LIB`?\n> \n> I just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.\n\nWe all make mistakes. \n\n> As far as making the link, do we need to link to all of the static libraries created by ATLAS?  It seems like it wouldn't hurt.  Also, it seems as though there is another liblapack.a, I think installed by the lapack spkg, which might need to be deleted before making the link.\n\nYes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> Replying to [comment:12 mpatel]:\n> > Replying to [comment:11 drkirkby]:\n> > > Could you try making that link symbolic link manually, and testing if that fixes the problem. \n\n> > \n> > I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.\n> > \n> > John, have you had any problems with `SAGE_ATLAS_LIB`?\n\n> \n> I just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.\n\n\nWe all make mistakes. \n\n> As far as making the link, do we need to link to all of the static libraries created by ATLAS?  It seems like it wouldn't hurt.  Also, it seems as though there is another liblapack.a, I think installed by the lapack spkg, which might need to be deleted before making the link.\n\n\nYes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.",
     "created_at": "2010-08-23T11:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -543,16 +547,20 @@ Replying to [comment:14 jhpalmieri]:
 > Replying to [comment:12 mpatel]:
 > > Replying to [comment:11 drkirkby]:
 > > > Could you try making that link symbolic link manually, and testing if that fixes the problem. 
+
 > > 
 > > I did this manually and reinstalled the NumPy and SciPy packages.  I'm not sure if it was necessary to recompile NumPy, but your suggestion works for me.  The long doctests now all pass.
 > > 
 > > John, have you had any problems with `SAGE_ATLAS_LIB`?
+
 > 
 > I just tried using it, and it didn't work for me: same problem you had.  I thought that I had used it before successfully, but I don't know how this could be now.  I'm puzzled.
+
 
 We all make mistakes. 
 
 > As far as making the link, do we need to link to all of the static libraries created by ATLAS?  It seems like it wouldn't hurt.  Also, it seems as though there is another liblapack.a, I think installed by the lapack spkg, which might need to be deleted before making the link.
+
 
 Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.
 
@@ -666,7 +674,7 @@ to serious troubles.
 archive/issue_comments_088690.json:
 ```json
 {
-    "body": "Replying to [comment:15 drkirkby]:\n\n> Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.\n\nThe sage spkg doesn't use it. However:\u00a0\n\n* numpy can use it.\u00a0\n* scipy **requires** it.\u00a0\n* linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well.\u00a0\n* R can use it.",
+    "body": "Replying to [comment:15 drkirkby]:\n\n> Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.\n\n\nThe sage spkg doesn't use it. However:\u00a0\n\n* numpy can use it.\u00a0\n* scipy **requires** it.\u00a0\n* linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well.\u00a0\n* R can use it.",
     "created_at": "2010-08-28T09:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -678,6 +686,7 @@ archive/issue_comments_088690.json:
 Replying to [comment:15 drkirkby]:
 
 > Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.
+
 
 The sage spkg doesn't use it. However: 
 
@@ -693,7 +702,7 @@ The sage spkg doesn't use it. However: 
 archive/issue_comments_088691.json:
 ```json
 {
-    "body": "Replying to [comment:19 fbissey]:\n> Replying to [comment:15 drkirkby]:\n> \n> > Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.\n> \n> The sage spkg doesn't use it. However:\u00a0\n> \n>  * numpy can use it.\u00a0\n>  * scipy **requires** it.\u00a0\n>  * linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well.\u00a0\n>  * R can use it.\n\nWhat's confusing me is that in the ATLAS package, in the file `make_correct_shared.sh` there is this line:\n\n\n\n```\n\tlapack_command=\"ld -L\"$f95_dir\" -L\"$SAGE_LOCAL\"/lib  -shared -soname liblapack.so -o liblapack.so  --whole-archive liblapack.a --no-whole-archive -lc -lm -lf95\"\n```\n\n\nwhich makes a shared library `liblapack.so` from a static library `liblapack.a`. But the LAPACK package also creates `liblapack.a`\n\nSince LAPACK is listed as a dependency of ATLAS, it would appear that LAPACK gets built first, creates `liblapack.a`, then ATLAS overwrites `liblapack.a`. (Overwriting files like this is not supposed to happen in Sage, but if ATLAS creates a more optimised version, I can see there may be the logical thing to do).\n\nSo it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that. \n\nDave",
+    "body": "Replying to [comment:19 fbissey]:\n> Replying to [comment:15 drkirkby]:\n> \n> > Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.\n\n> \n> The sage spkg doesn't use it. However:\u00a0\n> \n> * numpy can use it.\u00a0\n> * scipy **requires** it.\u00a0\n> * linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well.\u00a0\n> * R can use it.\n\n\nWhat's confusing me is that in the ATLAS package, in the file `make_correct_shared.sh` there is this line:\n\n\n```\n\tlapack_command=\"ld -L\"$f95_dir\" -L\"$SAGE_LOCAL\"/lib  -shared -soname liblapack.so -o liblapack.so  --whole-archive liblapack.a --no-whole-archive -lc -lm -lf95\"\n```\n\nwhich makes a shared library `liblapack.so` from a static library `liblapack.a`. But the LAPACK package also creates `liblapack.a`\n\nSince LAPACK is listed as a dependency of ATLAS, it would appear that LAPACK gets built first, creates `liblapack.a`, then ATLAS overwrites `liblapack.a`. (Overwriting files like this is not supposed to happen in Sage, but if ATLAS creates a more optimised version, I can see there may be the logical thing to do).\n\nSo it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that. \n\nDave",
     "created_at": "2010-08-28T12:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -706,22 +715,22 @@ Replying to [comment:19 fbissey]:
 > Replying to [comment:15 drkirkby]:
 > 
 > > Yes, you are probably right. That's something I can address at #9780. In fact, I don't think there's any need to have the lapack package in Sage.
+
 > 
 > The sage spkg doesn't use it. However: 
 > 
->  * numpy can use it. 
->  * scipy **requires** it. 
->  * linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well. 
->  * R can use it.
+> * numpy can use it. 
+> * scipy **requires** it. 
+> * linbox pretends to want it. - the reality is more subtle than that. Which is why even so liblinbox*.so are compiled against lapack sage components compiled against these do not need to be linked to lapack as well. 
+> * R can use it.
+
 
 What's confusing me is that in the ATLAS package, in the file `make_correct_shared.sh` there is this line:
-
 
 
 ```
 	lapack_command="ld -L"$f95_dir" -L"$SAGE_LOCAL"/lib  -shared -soname liblapack.so -o liblapack.so  --whole-archive liblapack.a --no-whole-archive -lc -lm -lf95"
 ```
-
 
 which makes a shared library `liblapack.so` from a static library `liblapack.a`. But the LAPACK package also creates `liblapack.a`
 
@@ -738,7 +747,7 @@ Dave
 archive/issue_comments_088692.json:
 ```json
 {
-    "body": "Replying to [comment:20 drkirkby]:\n\n> So it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that. \n> \n> Dave \n\nOn checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.  \n\nDave",
+    "body": "Replying to [comment:20 drkirkby]:\n\n> So it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that. \n> \n> Dave \n\n\nOn checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.  \n\nDave",
     "created_at": "2010-08-28T12:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -753,6 +762,7 @@ Replying to [comment:20 drkirkby]:
 > 
 > Dave 
 
+
 On checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.  
 
 Dave
@@ -764,7 +774,7 @@ Dave
 archive/issue_comments_088693.json:
 ```json
 {
-    "body": "Replying to [comment:21 drkirkby]:\n\n> Replying to [comment:20 drkirkby]:\n> > So it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that.  Dave\n> On checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.   Dave\n\nThat is correct.\n\nThe lapack spkg produce liblapack.a, ATLAS takes it as an input, unbundles it\nand then build some optimized routines to replace the original ones.\nFinally it recreates a library liblapack.a which is meant to replace the original.\n\nYou should read the ATLAS installation guide it is very instructive. There is even\na section about solaris on sparc.\n\nFrancois",
+    "body": "Replying to [comment:21 drkirkby]:\n\n> Replying to [comment:20 drkirkby]:\n> > So it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that.  Dave\n\n> On checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.   Dave\n\nThat is correct.\n\nThe lapack spkg produce liblapack.a, ATLAS takes it as an input, unbundles it\nand then build some optimized routines to replace the original ones.\nFinally it recreates a library liblapack.a which is meant to replace the original.\n\nYou should read the ATLAS installation guide it is very instructive. There is even\na section about solaris on sparc.\n\nFrancois",
     "created_at": "2010-08-28T21:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -777,6 +787,7 @@ Replying to [comment:21 drkirkby]:
 
 > Replying to [comment:20 drkirkby]:
 > > So it seems if you want to make use of a pre-existing `liblapack.a` from ATLAS, which means creating a symbolic link, would need to remove the `liblapack.a` created by LAPACK first, then create the link. (Otherwise, I think creating the link might fail, though I'm not sure.) I need to rush out, so dont have time to test that.  Dave
+
 > On checking, just creating the link will overwrite the old file, so there's no need to delete anything first. But if I'm not mistaken, `liblapack.a` does get created twice - once by LAPACK and once by the script in ATLAS.   Dave
 
 That is correct.
@@ -797,7 +808,7 @@ Francois
 archive/issue_comments_088694.json:
 ```json
 {
-    "body": "Replying to [comment:22 fbissey]:\n> That is correct.\n\n> The lapack spkg produce liblapack.a, ATLAS takes it as an input, unbundles it\n> and then build some optimized routines to replace the original ones.\n> Finally it recreates a library liblapack.a which is meant to replace the original.\n> \n> You should read the ATLAS installation guide it is very instructive. There is even\n> a section about solaris on sparc.\n> \n> Francois\n\nThank you. That makes more sense now. I will take a read of the ATLAS docs. I would like to update the ATLAS package, but it is is a bit of a mess - bash, perl, python scripts all over the place. Loads of patches. \n\nI've already opened #9780 to add the link we need. I'll create a patch. Thank you for your help \nFrancois. \n\nDave",
+    "body": "Replying to [comment:22 fbissey]:\n> That is correct.\n\n\n> The lapack spkg produce liblapack.a, ATLAS takes it as an input, unbundles it\n> and then build some optimized routines to replace the original ones.\n> Finally it recreates a library liblapack.a which is meant to replace the original.\n> \n> You should read the ATLAS installation guide it is very instructive. There is even\n> a section about solaris on sparc.\n> \n> Francois\n\n\nThank you. That makes more sense now. I will take a read of the ATLAS docs. I would like to update the ATLAS package, but it is is a bit of a mess - bash, perl, python scripts all over the place. Loads of patches. \n\nI've already opened #9780 to add the link we need. I'll create a patch. Thank you for your help \nFrancois. \n\nDave",
     "created_at": "2010-08-28T22:29:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -809,6 +820,7 @@ archive/issue_comments_088694.json:
 Replying to [comment:22 fbissey]:
 > That is correct.
 
+
 > The lapack spkg produce liblapack.a, ATLAS takes it as an input, unbundles it
 > and then build some optimized routines to replace the original ones.
 > Finally it recreates a library liblapack.a which is meant to replace the original.
@@ -817,6 +829,7 @@ Replying to [comment:22 fbissey]:
 > a section about solaris on sparc.
 > 
 > Francois
+
 
 Thank you. That makes more sense now. I will take a read of the ATLAS docs. I would like to update the ATLAS package, but it is is a bit of a mess - bash, perl, python scripts all over the place. Loads of patches. 
 
@@ -832,7 +845,7 @@ Dave
 archive/issue_comments_088695.json:
 ```json
 {
-    "body": "The one thing I don't really understand is why we need the .a libraries.\nIt may point to the .so being made incorrectly. On my system - and it is used by\nsystem wide sage that we make for Gentoo:\n\n```\nldd /usr/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so\n        linux-gate.so.1 =>  (0xb78de000)\n        liblapack.so.0 => /usr/lib/liblapack.so.0 (0xb738c000)\n        libpython2.6.so.1.0 => /usr/lib/libpython2.6.so.1.0 (0xb7232000)\n        libc.so.6 => /lib/libc.so.6 (0xb70c4000)\n        libblas.so.0 => /usr/lib/blas/atlas/libblas.so.0 (0xb70a4000)\n        libcblas.so.0 => /usr/lib/blas/atlas/libcblas.so.0 (0xb7081000)\n        libatlas.so.0 => /usr/lib/libatlas.so.0 (0xb69c2000)\n        libgfortran.so.3 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgfortran.so.3 (0xb68fb000)\n        libm.so.6 => /lib/libm.so.6 (0xb68d4000)\n        libgcc_s.so.1 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgcc_s.so.1 (0xb68b6000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0xb689b000)\n        libdl.so.2 => /lib/libdl.so.2 (0xb6897000)\n        libutil.so.1 => /lib/libutil.so.1 (0xb6893000)\n        /lib/ld-linux.so.2 (0xb78df000)\n```\n\nNote that libblas.so is actually libf77blas.so (it is just renamed for\nobscure Gentoo reasons). I can show the same kind of things for libraries\nshipped with scipy. In contrast in a vanilla install of sage:\n\n```\nldd local/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so\n        linux-gate.so.1 =>  (0xb78b0000)\n        libcblas.so => /home/francois/Work/sandbox/install/sage-4.4.1/local/lib/libcblas.so (0xb7770000)\n        libatlas.so => /home/francois/Work/sandbox/install/sage-4.4.1/local/lib/libatlas.so (0xb72db000)\n        libgfortran.so.3 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgfortran.so.3 (0xb71ea000)\n        libm.so.6 => /lib/libm.so.6 (0xb71c3000)\n        libgcc_s.so.1 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgcc_s.so.1 (0xb71a4000)\n        libc.so.6 => /lib/libc.so.6 (0xb7036000)\n        /lib/ld-linux.so.2 (0xb78b1000)\n```\n\nWhile it says sage-4.4.1 it has been incrementally updated to 4.5.2.",
+    "body": "The one thing I don't really understand is why we need the .a libraries.\nIt may point to the .so being made incorrectly. On my system - and it is used by\nsystem wide sage that we make for Gentoo:\n\n```\nldd /usr/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so\n        linux-gate.so.1 =>  (0xb78de000)\n        liblapack.so.0 => /usr/lib/liblapack.so.0 (0xb738c000)\n        libpython2.6.so.1.0 => /usr/lib/libpython2.6.so.1.0 (0xb7232000)\n        libc.so.6 => /lib/libc.so.6 (0xb70c4000)\n        libblas.so.0 => /usr/lib/blas/atlas/libblas.so.0 (0xb70a4000)\n        libcblas.so.0 => /usr/lib/blas/atlas/libcblas.so.0 (0xb7081000)\n        libatlas.so.0 => /usr/lib/libatlas.so.0 (0xb69c2000)\n        libgfortran.so.3 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgfortran.so.3 (0xb68fb000)\n        libm.so.6 => /lib/libm.so.6 (0xb68d4000)\n        libgcc_s.so.1 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgcc_s.so.1 (0xb68b6000)\n        libpthread.so.0 => /lib/libpthread.so.0 (0xb689b000)\n        libdl.so.2 => /lib/libdl.so.2 (0xb6897000)\n        libutil.so.1 => /lib/libutil.so.1 (0xb6893000)\n        /lib/ld-linux.so.2 (0xb78df000)\n```\nNote that libblas.so is actually libf77blas.so (it is just renamed for\nobscure Gentoo reasons). I can show the same kind of things for libraries\nshipped with scipy. In contrast in a vanilla install of sage:\n\n```\nldd local/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so\n        linux-gate.so.1 =>  (0xb78b0000)\n        libcblas.so => /home/francois/Work/sandbox/install/sage-4.4.1/local/lib/libcblas.so (0xb7770000)\n        libatlas.so => /home/francois/Work/sandbox/install/sage-4.4.1/local/lib/libatlas.so (0xb72db000)\n        libgfortran.so.3 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgfortran.so.3 (0xb71ea000)\n        libm.so.6 => /lib/libm.so.6 (0xb71c3000)\n        libgcc_s.so.1 => /usr/lib/gcc/i686-pc-linux-gnu/4.4.4/libgcc_s.so.1 (0xb71a4000)\n        libc.so.6 => /lib/libc.so.6 (0xb7036000)\n        /lib/ld-linux.so.2 (0xb78b1000)\n```\nWhile it says sage-4.4.1 it has been incrementally updated to 4.5.2.",
     "created_at": "2010-08-28T22:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -862,7 +875,6 @@ ldd /usr/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so
         libutil.so.1 => /lib/libutil.so.1 (0xb6893000)
         /lib/ld-linux.so.2 (0xb78df000)
 ```
-
 Note that libblas.so is actually libf77blas.so (it is just renamed for
 obscure Gentoo reasons). I can show the same kind of things for libraries
 shipped with scipy. In contrast in a vanilla install of sage:
@@ -878,7 +890,6 @@ ldd local/lib/python2.6/site-packages/numpy/linalg/lapack_lite.so
         libc.so.6 => /lib/libc.so.6 (0xb7036000)
         /lib/ld-linux.so.2 (0xb78b1000)
 ```
-
 While it says sage-4.4.1 it has been incrementally updated to 4.5.2.
 
 
@@ -888,7 +899,7 @@ While it says sage-4.4.1 it has been incrementally updated to 4.5.2.
 archive/issue_comments_088696.json:
 ```json
 {
-    "body": "Replying to [comment:24 fbissey]:\n> The one thing I don't really understand is why we need the .a libraries.\n\nIf you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. \n\nHowever, #5024 shows liblapack.so was causing problems on \"non-Linux\" systems - which I assume means both OS X and Solaris, though there's little information there. \n\nI've certainly seen problems on Solaris with `liblapack.so`, so on Solaris at least, liblapack.so can't be built just now. \n\nI think long term, we need to look at updating ATLAS. I expect it should be able to create shared libraries that work. That said, on Solaris x86 at least, Mathematica ships with   and `libatlas.a`, `libf77blas.a`, `liblapack.a` and `libcblas.a` rather than shared libraries. Out of the 111 libraries included in Mathematica, only 6 are static - the other 105 are shared. \n\nI thought I'd posted a fix to this problem. Adding the link for `liblapack.a` works. I'll stick that on #9780. \n\nDave",
+    "body": "Replying to [comment:24 fbissey]:\n> The one thing I don't really understand is why we need the .a libraries.\n\n\nIf you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. \n\nHowever, #5024 shows liblapack.so was causing problems on \"non-Linux\" systems - which I assume means both OS X and Solaris, though there's little information there. \n\nI've certainly seen problems on Solaris with `liblapack.so`, so on Solaris at least, liblapack.so can't be built just now. \n\nI think long term, we need to look at updating ATLAS. I expect it should be able to create shared libraries that work. That said, on Solaris x86 at least, Mathematica ships with   and `libatlas.a`, `libf77blas.a`, `liblapack.a` and `libcblas.a` rather than shared libraries. Out of the 111 libraries included in Mathematica, only 6 are static - the other 105 are shared. \n\nI thought I'd posted a fix to this problem. Adding the link for `liblapack.a` works. I'll stick that on #9780. \n\nDave",
     "created_at": "2010-08-31T08:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -899,6 +910,7 @@ archive/issue_comments_088696.json:
 
 Replying to [comment:24 fbissey]:
 > The one thing I don't really understand is why we need the .a libraries.
+
 
 If you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. 
 
@@ -919,7 +931,7 @@ Dave
 archive/issue_comments_088697.json:
 ```json
 {
-    "body": "Replying to [comment:25 drkirkby]:\n> Replying to [comment:24 fbissey]:\n> > The one thing I don't really understand is why we need the .a libraries.\n> \n> If you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. \n> \nThat would be nice too. My point was more to the fact that numpy uses the \nstatic library rather than the shared one. If I trust ldd output from my install\non linux sage's numpy is always linked to the static library.\n\nObviously there are cases were you need the static library on some platforms but\nit should only link to the static library on those platforms. I will look\nto see if that comes from the numpy spkg while working on #9808 \n\nFrancois",
+    "body": "Replying to [comment:25 drkirkby]:\n> Replying to [comment:24 fbissey]:\n> > The one thing I don't really understand is why we need the .a libraries.\n\n> \n> If you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. \n> \n\nThat would be nice too. My point was more to the fact that numpy uses the \nstatic library rather than the shared one. If I trust ldd output from my install\non linux sage's numpy is always linked to the static library.\n\nObviously there are cases were you need the static library on some platforms but\nit should only link to the static library on those platforms. I will look\nto see if that comes from the numpy spkg while working on #9808 \n\nFrancois",
     "created_at": "2010-08-31T10:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -931,9 +943,11 @@ archive/issue_comments_088697.json:
 Replying to [comment:25 drkirkby]:
 > Replying to [comment:24 fbissey]:
 > > The one thing I don't really understand is why we need the .a libraries.
+
 > 
 > If you look above, you will see I made that same point. There does not seem to be any logical reason to distribute both static and dynamic libraries. 
 > 
+
 That would be nice too. My point was more to the fact that numpy uses the 
 static library rather than the shared one. If I trust ldd output from my install
 on linux sage's numpy is always linked to the static library.
@@ -969,7 +983,7 @@ Well it appears that my sage installation lacks liblapack.so. This probably expl
 archive/issue_comments_088699.json:
 ```json
 {
-    "body": "> Well it appears that my sage installation lacks liblapack.so. This probably explain that. I am sure it should have been created. it is strange I seem to miss it.\n\nI've seen this before, for example on sage.math.  Toward the end of the atlas log file, I see\n\n```\nld -L/mnt/usb1/scratch/palmieri/sage-4.5.3.alpha0/local/lib -shared -soname liblapack.so -o liblap\\\nack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/mnt/usb1/scratch/palmieri/sage-4.5.3.alpha0/local/lib -shared -soname libf77blas.so -o libf7\\\n7blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\n\nI've never noticed that it caused problems, not that I would know exactly what to look for anyway.",
+    "body": "> Well it appears that my sage installation lacks liblapack.so. This probably explain that. I am sure it should have been created. it is strange I seem to miss it.\n\n\nI've seen this before, for example on sage.math.  Toward the end of the atlas log file, I see\n\n```\nld -L/mnt/usb1/scratch/palmieri/sage-4.5.3.alpha0/local/lib -shared -soname liblapack.so -o liblap\\\nack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/mnt/usb1/scratch/palmieri/sage-4.5.3.alpha0/local/lib -shared -soname libf77blas.so -o libf7\\\n7blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\nI've never noticed that it caused problems, not that I would know exactly what to look for anyway.",
     "created_at": "2010-09-01T19:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9356",
     "type": "issue_comment",
@@ -979,6 +993,7 @@ archive/issue_comments_088699.json:
 ```
 
 > Well it appears that my sage installation lacks liblapack.so. This probably explain that. I am sure it should have been created. it is strange I seem to miss it.
+
 
 I've seen this before, for example on sage.math.  Toward the end of the atlas log file, I see
 
@@ -990,5 +1005,4 @@ ld -L/mnt/usb1/scratch/palmieri/sage-4.5.3.alpha0/local/lib -shared -soname libf
 7blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran
 ld: cannot find -lgfortran
 ```
-
 I've never noticed that it caused problems, not that I would know exactly what to look for anyway.

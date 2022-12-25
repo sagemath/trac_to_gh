@@ -3,7 +3,7 @@
 archive/issues_009004.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nAccording to the comments in the code:\n-----\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n----\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n\n```\ncmp(type(right), type(Set_object))\n```\n\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
+    "body": "Assignee: @aghitza\n\nAccording to the comments in the code:\n\n---\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n\n---\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n```\ncmp(type(right), type(Set_object))\n```\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
     "created_at": "2010-05-21T04:11:24Z",
     "labels": [
         "component: algebra",
@@ -20,21 +20,21 @@ archive/issues_009004.json:
 Assignee: @aghitza
 
 According to the comments in the code:
------
+
+---
         Compare self and right.
 
         If right is not a Set compare types.  If right is also a Set,
         returns comparison on the underlying objects.
-----
+
+---
 But that is not what is currently done. In the case where 
 right is not a Set (more accurately a "Set_object" that's
 possibly another issue) the following is evaluated:
 
-
 ```
 cmp(type(right), type(Set_object))
 ```
-
 
 The correct thing would be to compare type(right) with
 the type "Set_object" [which is type(self)] not the type

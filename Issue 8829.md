@@ -112,7 +112,7 @@ Attachment [8829-ec-nf-sat.patch](tarball://root/attachments/some-uuid/ticket882
 archive/issue_comments_080988.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> I have had a quick look and will go through this in more detail later (after #8828 is completed, probably).  I spent a long time on my C++ implementation of this (over QQ but the algorithm is general) so am quite familiar with the details.\n> \n> Here are two references you should give:  [1] S. Siksek \"Infinite descent on elliptic curves\", Rocky Mountain J of M, Vol 25 No. 4 (1995), 1501-1538.  [2] M. Prickett, \"Saturation of Mordell-Weil groups of elliptic curves over number fields\", U of Nottingham PhD thesis (2004), http://etheses.nottingham.ac.uk/52/.\n\nAh, those look like good references to read too :). \n\n> Martin Prickett implemented this in Magma, but the code was very slow and hard to read so it never got incorporated into Magma releases.\n> \n> Incidentally, it was for this that I implemented group structure for curves over GF(q) in the first place!  In my C++ implementation I cache a lot of the information of this group structure so that when you do p-saturation for larger and larger p, the structures are already there.  \n\nThe way I do it is consider many p at once, and for each curve over GF(q) I see which primes in my set it could help with, though this won't scale as far. I'm sure there's still lots of room for improvement. \n\n> A good example is to take one of those curves of very high rank:  I think I once successfully p-saturated the rank 24 curve at all p < `10^6`  (the bound was totally out of reach, something like `10^100`).\n\nThat reminds me--I was wondering if there's any way to go from min(h(P)) to a bound on the regulator for rank > 1. \n\n> Another point which might be useful over number fields:  it suffices to use degree one primes to reduce modulo.\n\nGood point. Those get pretty rare for large degree number fields though, right?",
+    "body": "Replying to [comment:2 cremona]:\n> I have had a quick look and will go through this in more detail later (after #8828 is completed, probably).  I spent a long time on my C++ implementation of this (over QQ but the algorithm is general) so am quite familiar with the details.\n> \n> Here are two references you should give:  [1] S. Siksek \"Infinite descent on elliptic curves\", Rocky Mountain J of M, Vol 25 No. 4 (1995), 1501-1538.  [2] M. Prickett, \"Saturation of Mordell-Weil groups of elliptic curves over number fields\", U of Nottingham PhD thesis (2004), http://etheses.nottingham.ac.uk/52/.\n\n\nAh, those look like good references to read too :). \n\n> Martin Prickett implemented this in Magma, but the code was very slow and hard to read so it never got incorporated into Magma releases.\n> \n> Incidentally, it was for this that I implemented group structure for curves over GF(q) in the first place!  In my C++ implementation I cache a lot of the information of this group structure so that when you do p-saturation for larger and larger p, the structures are already there.  \n\n\nThe way I do it is consider many p at once, and for each curve over GF(q) I see which primes in my set it could help with, though this won't scale as far. I'm sure there's still lots of room for improvement. \n\n> A good example is to take one of those curves of very high rank:  I think I once successfully p-saturated the rank 24 curve at all p < `10^6`  (the bound was totally out of reach, something like `10^100`).\n\n\nThat reminds me--I was wondering if there's any way to go from min(h(P)) to a bound on the regulator for rank > 1. \n\n> Another point which might be useful over number fields:  it suffices to use degree one primes to reduce modulo.\n\n\nGood point. Those get pretty rare for large degree number fields though, right?",
     "created_at": "2010-04-30T08:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -126,19 +126,23 @@ Replying to [comment:2 cremona]:
 > 
 > Here are two references you should give:  [1] S. Siksek "Infinite descent on elliptic curves", Rocky Mountain J of M, Vol 25 No. 4 (1995), 1501-1538.  [2] M. Prickett, "Saturation of Mordell-Weil groups of elliptic curves over number fields", U of Nottingham PhD thesis (2004), http://etheses.nottingham.ac.uk/52/.
 
+
 Ah, those look like good references to read too :). 
 
 > Martin Prickett implemented this in Magma, but the code was very slow and hard to read so it never got incorporated into Magma releases.
 > 
 > Incidentally, it was for this that I implemented group structure for curves over GF(q) in the first place!  In my C++ implementation I cache a lot of the information of this group structure so that when you do p-saturation for larger and larger p, the structures are already there.  
 
+
 The way I do it is consider many p at once, and for each curve over GF(q) I see which primes in my set it could help with, though this won't scale as far. I'm sure there's still lots of room for improvement. 
 
 > A good example is to take one of those curves of very high rank:  I think I once successfully p-saturated the rank 24 curve at all p < `10^6`  (the bound was totally out of reach, something like `10^100`).
 
+
 That reminds me--I was wondering if there's any way to go from min(h(P)) to a bound on the regulator for rank > 1. 
 
 > Another point which might be useful over number fields:  it suffices to use degree one primes to reduce modulo.
+
 
 Good point. Those get pretty rare for large degree number fields though, right?
 
@@ -187,7 +191,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080991.json:
 ```json
 {
-    "body": "Patch applies fine to 4.4.1 and tests pass.\n\nThis functionality is badly needed!\n\nWe now have heights for points on curves defined over number_fields\nbut no associated regulator function.  I suggest that the function\nregulator_of_points() be moved up from ell_rational_field to\nell_number_field.  This tcan then be called instead of the code in\nlines 424-432 [line numbers are from the patched file, not the patch].\n\nLine 439 uses a function self.height_function() which does not exist.\nThis block needs to be replaced by something sensible.  If one has a lower bound on the height of non-torsion\npoints, then a bound on the index can be deduced from standard\ngeometry of numbers estimates.   To get such a lower bound, see papers\nof Cremona & Siksek (over Q) and Thongjunthug (over number fields) for\nan algorithm which would need to be implemented.  (Not hard over Q,\nnot much harder for totally real fields, quite a lot worse over fields\nwith a complex embedding).  Until this is done, I don't think this\nsaturation function can allow maxprime==0.\n\nIn the rank one code:   when large primes p (say, over 20!) are being\ntested then the division_points code will be expensive since it\ninvolves constructing the multiplication-by-p map.  I would recommend\nusing a reduction strategy here just as in the general case.  To check\np-saturation just find primes q such that #E(Fq) is divisible by p and\nthen see if the reduction of P mod q is a multiple of p.  This will\nalmost always prove saturation very quickly.  If it fails for several\n(say 5) q then try to divide P by p;  else use more q, and so on.\nThere is one theoretical drawback here:  this strategy might fail if\nthere is a rational p-isogeny.  Over Q,  we know which p this might\nhappen for and I would first test for the existence of isogenies of\nprimes degree, and use the division test (as here) for any primes that\nshow up.  Over number fields that's harder to deal with, but again we\ncan fall back on the division test to rpove that P cannot be divided\nby p.\n\nThe function list_of_multiples(P,n) duplicated the generic function\nmultiples() which I wrote for just this sort of purpose!\n\nI don't like the loop through all linear combinations for small\nprimes.  Even with p=2 there are curves with 24 independent points out\nthere and `2^24` divisions is not nice to contemplate.  If you want this\nshort cut, do it based on the size of `p^r`.\n\nThe main code with reduction etc looks fine to me (but I did not check\nthe logic rigorously).\n\nThe gens function for E(K) when E is defined over Q and [K:Q]=2 looks\nfine.  For a more general case we could always try using\nsimon_two_descent (followed by saturation).  Trying such an examples\nled me to:\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: E = EllipticCurve([a,0])\nsage: P = E(0,0)\nsage: P.has_finite_order()\nTrue\nsage: P.order()\n2\nsage: P.height()\n0\nsage: E.saturation([P], verbose=True, max_prime=5)\n## infinite loop\n```\n\nThis is caused as follows:   The height matrix is [0] with det=0 but\nreg / min(heights) is NaN so reg / min(heights) < 1e-6 is False!.\nThis will need fixing.  At the very least, I would discard any points\nof finite order before doing anything else with them.  Then\nmin(heights) will never be 0.\n\nMost of the above is easy to deal with.  The hard part is computing a\nsuitable max_prime form a lower height bound on points.  I suggest\nthat for now you make it compulsory to have a positive max_prime and\nadd a TODO.",
+    "body": "Patch applies fine to 4.4.1 and tests pass.\n\nThis functionality is badly needed!\n\nWe now have heights for points on curves defined over number_fields\nbut no associated regulator function.  I suggest that the function\nregulator_of_points() be moved up from ell_rational_field to\nell_number_field.  This tcan then be called instead of the code in\nlines 424-432 [line numbers are from the patched file, not the patch].\n\nLine 439 uses a function self.height_function() which does not exist.\nThis block needs to be replaced by something sensible.  If one has a lower bound on the height of non-torsion\npoints, then a bound on the index can be deduced from standard\ngeometry of numbers estimates.   To get such a lower bound, see papers\nof Cremona & Siksek (over Q) and Thongjunthug (over number fields) for\nan algorithm which would need to be implemented.  (Not hard over Q,\nnot much harder for totally real fields, quite a lot worse over fields\nwith a complex embedding).  Until this is done, I don't think this\nsaturation function can allow maxprime==0.\n\nIn the rank one code:   when large primes p (say, over 20!) are being\ntested then the division_points code will be expensive since it\ninvolves constructing the multiplication-by-p map.  I would recommend\nusing a reduction strategy here just as in the general case.  To check\np-saturation just find primes q such that #E(Fq) is divisible by p and\nthen see if the reduction of P mod q is a multiple of p.  This will\nalmost always prove saturation very quickly.  If it fails for several\n(say 5) q then try to divide P by p;  else use more q, and so on.\nThere is one theoretical drawback here:  this strategy might fail if\nthere is a rational p-isogeny.  Over Q,  we know which p this might\nhappen for and I would first test for the existence of isogenies of\nprimes degree, and use the division test (as here) for any primes that\nshow up.  Over number fields that's harder to deal with, but again we\ncan fall back on the division test to rpove that P cannot be divided\nby p.\n\nThe function list_of_multiples(P,n) duplicated the generic function\nmultiples() which I wrote for just this sort of purpose!\n\nI don't like the loop through all linear combinations for small\nprimes.  Even with p=2 there are curves with 24 independent points out\nthere and `2^24` divisions is not nice to contemplate.  If you want this\nshort cut, do it based on the size of `p^r`.\n\nThe main code with reduction etc looks fine to me (but I did not check\nthe logic rigorously).\n\nThe gens function for E(K) when E is defined over Q and [K:Q]=2 looks\nfine.  For a more general case we could always try using\nsimon_two_descent (followed by saturation).  Trying such an examples\nled me to:\n\n```\nsage: K.<a> = NumberField(x^2-2)\nsage: E = EllipticCurve([a,0])\nsage: P = E(0,0)\nsage: P.has_finite_order()\nTrue\nsage: P.order()\n2\nsage: P.height()\n0\nsage: E.saturation([P], verbose=True, max_prime=5)\n## infinite loop\n```\nThis is caused as follows:   The height matrix is [0] with det=0 but\nreg / min(heights) is NaN so reg / min(heights) < 1e-6 is False!.\nThis will need fixing.  At the very least, I would discard any points\nof finite order before doing anything else with them.  Then\nmin(heights) will never be 0.\n\nMost of the above is easy to deal with.  The hard part is computing a\nsuitable max_prime form a lower height bound on points.  I suggest\nthat for now you make it compulsory to have a positive max_prime and\nadd a TODO.",
     "created_at": "2010-05-09T17:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -261,7 +265,6 @@ sage: P.height()
 sage: E.saturation([P], verbose=True, max_prime=5)
 ## infinite loop
 ```
-
 This is caused as follows:   The height matrix is [0] with det=0 but
 reg / min(heights) is NaN so reg / min(heights) < 1e-6 is False!.
 This will need fixing.  At the very least, I would discard any points
@@ -300,7 +303,7 @@ I probably won't fix and polish this up before finishing my thesis, but at the l
 archive/issue_comments_080993.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n> Thank you for all your input. `self.height_function` comes from #8828, though as you suggest we could make max_prime mandatory for now (and for rank > 1 once that goes in). That's a good point about large primes in the rank one case. I found the loop through all linear combinations to be much faster in practice for small primes, but the hard coded `p == 2` case was left by accident, I meant to cap that on `p^r` as I did the others. \n> \n> I probably won't fix and polish this up before finishing my thesis, but at the latest we should be able to get it done during the workshop at MSRI next month. \n\nOK -- looking forward to it!  I'll take a look at #8828 by then as well.",
+    "body": "Replying to [comment:6 robertwb]:\n> Thank you for all your input. `self.height_function` comes from #8828, though as you suggest we could make max_prime mandatory for now (and for rank > 1 once that goes in). That's a good point about large primes in the rank one case. I found the loop through all linear combinations to be much faster in practice for small primes, but the hard coded `p == 2` case was left by accident, I meant to cap that on `p^r` as I did the others. \n> \n> I probably won't fix and polish this up before finishing my thesis, but at the latest we should be able to get it done during the workshop at MSRI next month. \n\n\nOK -- looking forward to it!  I'll take a look at #8828 by then as well.",
     "created_at": "2010-05-11T20:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -313,6 +316,7 @@ Replying to [comment:6 robertwb]:
 > Thank you for all your input. `self.height_function` comes from #8828, though as you suggest we could make max_prime mandatory for now (and for rank > 1 once that goes in). That's a good point about large primes in the rank one case. I found the loop through all linear combinations to be much faster in practice for small primes, but the hard coded `p == 2` case was left by accident, I meant to cap that on `p^r` as I did the others. 
 > 
 > I probably won't fix and polish this up before finishing my thesis, but at the latest we should be able to get it done during the workshop at MSRI next month. 
+
 
 OK -- looking forward to it!  I'll take a look at #8828 by then as well.
 
@@ -395,7 +399,7 @@ See #12509: until we can fix the height computation, saturation cannot be carrie
 archive/issue_comments_080998.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> See #12509: until we can fix the height computation, saturation cannot be carried out properly.  It's still on my to-do list though.\n\n#12509 is now up for review.",
+    "body": "Replying to [comment:11 cremona]:\n> See #12509: until we can fix the height computation, saturation cannot be carried out properly.  It's still on my to-do list though.\n\n\n#12509 is now up for review.",
     "created_at": "2013-01-10T09:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -406,6 +410,7 @@ archive/issue_comments_080998.json:
 
 Replying to [comment:11 cremona]:
 > See #12509: until we can fix the height computation, saturation cannot be carried out properly.  It's still on my to-do list though.
+
 
 #12509 is now up for review.
 
@@ -667,7 +672,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081006.json:
 ```json
 {
-    "body": "Hello,\n\n1) indent correctly the INPUT and OUTPUT fields:\n\n```\nINPUT:\n\n- first thing\n  goes one there (note the shift of 2 characters)\n```\n\n\n2) use the new syntax for raise:\n\n```\nraise MyError(\"is rich\")\n```\n\n\nPoint 1 may be the source of the doc build failure found by the bot:\n\nOSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/ell_number_field.py:docstring of sage.schemes.elliptic_curves.ell_number_field.EllipticCurve_number_field.saturation:9: WARNING: Bullet list ends without a blank line; unexpected unindent.",
+    "body": "Hello,\n\n1) indent correctly the INPUT and OUTPUT fields:\n\n```\nINPUT:\n\n- first thing\n  goes one there (note the shift of 2 characters)\n```\n\n2) use the new syntax for raise:\n\n```\nraise MyError(\"is rich\")\n```\n\nPoint 1 may be the source of the doc build failure found by the bot:\n\nOSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/ell_number_field.py:docstring of sage.schemes.elliptic_curves.ell_number_field.EllipticCurve_number_field.saturation:9: WARNING: Bullet list ends without a blank line; unexpected unindent.",
     "created_at": "2015-09-14T17:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -687,13 +692,11 @@ INPUT:
   goes one there (note the shift of 2 characters)
 ```
 
-
 2) use the new syntax for raise:
 
 ```
 raise MyError("is rich")
 ```
-
 
 Point 1 may be the source of the doc build failure found by the bot:
 
@@ -706,7 +709,7 @@ OSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packa
 archive/issue_comments_081007.json:
 ```json
 {
-    "body": "Replying to [comment:26 chapoton]:\n> Hello,\n> \n> 1) indent correctly the INPUT and OUTPUT fields:\n> {{{\n> INPUT:\n> \n> - first thing\n>   goes one there (note the shift of 2 characters)\n> }}}\n> \n> 2) use the new syntax for raise:\n> {{{\n> raise MyError(\"is rich\")\n> }}}\n> \n> Point 1 may be the source of the doc build failure found by the bot:\n> \n> OSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/ell_number_field.py:docstring of sage.schemes.elliptic_curves.ell_number_field.EllipticCurve_number_field.saturation:9: WARNING: Bullet list ends without a blank line; unexpected unindent.\n\nThanks, I will fix those.",
+    "body": "Replying to [comment:26 chapoton]:\n> Hello,\n> \n> 1) indent correctly the INPUT and OUTPUT fields:\n> \n> ```\n> INPUT:\n> \n> - first thing\n>   goes one there (note the shift of 2 characters)\n> ```\n> \n> 2) use the new syntax for raise:\n> \n> ```\n> raise MyError(\"is rich\")\n> ```\n> \n> Point 1 may be the source of the doc build failure found by the bot:\n> \n> OSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/ell_number_field.py:docstring of sage.schemes.elliptic_curves.ell_number_field.EllipticCurve_number_field.saturation:9: WARNING: Bullet list ends without a blank line; unexpected unindent.\n\n\nThanks, I will fix those.",
     "created_at": "2015-09-14T18:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -719,21 +722,24 @@ Replying to [comment:26 chapoton]:
 > Hello,
 > 
 > 1) indent correctly the INPUT and OUTPUT fields:
-> {{{
+> 
+> ```
 > INPUT:
 > 
 > - first thing
 >   goes one there (note the shift of 2 characters)
-> }}}
+> ```
 > 
 > 2) use the new syntax for raise:
-> {{{
+> 
+> ```
 > raise MyError("is rich")
-> }}}
+> ```
 > 
 > Point 1 may be the source of the doc build failure found by the bot:
 > 
 > OSError: [plane_cur] /home/patchbot/sage-patchbot/local/lib/python2.7/site-packages/sage/schemes/elliptic_curves/ell_number_field.py:docstring of sage.schemes.elliptic_curves.ell_number_field.EllipticCurve_number_field.saturation:9: WARNING: Bullet list ends without a blank line; unexpected unindent.
+
 
 Thanks, I will fix those.
 
@@ -834,7 +840,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_081013.json:
 ```json
 {
-    "body": "Progress report:  I am currently running the p-saturation (for single primes) on lots of LMFDB curves and all is well so far.  This is almost always for very small p (mainly 2 and 3) though, since I am starting with some saturated points on one curve (provided by Magma) and using p-isogenies to map to other curves in the isogeny class.  Higher degree isogenies are not so common.\n\nI did start to veryify that the points from Magma were fully saturated, but ran into problems computing the saturation index, using (line 3717) the lower bound on the height of all non-torsion points -- previously implemented and merged i n6.3 (see #8828).  For example, I had a curve where the value of 5 in that line was insufficient *and led to an infinite loop in the call to min()*, while 10 worked fine, but now I have a curve where I have not yet found a value which gives anything.  For the record I will give that example here:\n\n```\nK.<phi> = NumberField(x^2-x-1) # Q(sqrt(5))\nE = EllipticCurve([phi + 1, -phi + 1, 1, 20*phi - 39, 196*phi + 237])\nH = E.height_function()\nH.min(.1,10,verbose=True) #  does not appear to terminate\n```\n\n\nStrictly this is about the code merged in #8828, but it will need fixing here before we can let this (useful!) function out into the world.",
+    "body": "Progress report:  I am currently running the p-saturation (for single primes) on lots of LMFDB curves and all is well so far.  This is almost always for very small p (mainly 2 and 3) though, since I am starting with some saturated points on one curve (provided by Magma) and using p-isogenies to map to other curves in the isogeny class.  Higher degree isogenies are not so common.\n\nI did start to veryify that the points from Magma were fully saturated, but ran into problems computing the saturation index, using (line 3717) the lower bound on the height of all non-torsion points -- previously implemented and merged i n6.3 (see #8828).  For example, I had a curve where the value of 5 in that line was insufficient *and led to an infinite loop in the call to min()*, while 10 worked fine, but now I have a curve where I have not yet found a value which gives anything.  For the record I will give that example here:\n\n```\nK.<phi> = NumberField(x^2-x-1) # Q(sqrt(5))\nE = EllipticCurve([phi + 1, -phi + 1, 1, 20*phi - 39, 196*phi + 237])\nH = E.height_function()\nH.min(.1,10,verbose=True) #  does not appear to terminate\n```\n\nStrictly this is about the code merged in #8828, but it will need fixing here before we can let this (useful!) function out into the world.",
     "created_at": "2015-09-16T11:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -853,7 +859,6 @@ E = EllipticCurve([phi + 1, -phi + 1, 1, 20*phi - 39, 196*phi + 237])
 H = E.height_function()
 H.min(.1,10,verbose=True) #  does not appear to terminate
 ```
-
 
 Strictly this is about the code merged in #8828, but it will need fixing here before we can let this (useful!) function out into the world.
 
@@ -1125,7 +1130,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_081028.json:
 ```json
 {
-    "body": "just rebased on 7.5.b3\n----\nNew commits:",
+    "body": "just rebased on 7.5.b3\n\n---\nNew commits:",
     "created_at": "2016-11-20T08:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -1135,7 +1140,8 @@ archive/issue_comments_081028.json:
 ```
 
 just rebased on 7.5.b3
-----
+
+---
 New commits:
 
 
@@ -1328,7 +1334,7 @@ archive/issue_comments_081036.json:
 archive/issue_comments_081037.json:
 ```json
 {
-    "body": "Hello ! some dollars there :\n\n```\n+        For rank 1 subgroups, simply do trial divison up to the maximal\n+        prime divisor. For higher rank subgroups, perform trial divison\n+        on all linear combinations for small primes, and look for\n+        projections $E(K) \\rightarrow \\oplus E(k) \\otimes \\FF_p$ which\n+        are either full rank or provide p-divisble linear combinations,\n+        where the $k$ here are residue fields of $K$.\n```\n\nand no doc for\n\n```\n+    def projections(Q, p):\n```\n\nwhich is indeed an inner function, but quite a complicated one. Maybe just explain its input and output ?",
+    "body": "Hello ! some dollars there :\n\n```\n+        For rank 1 subgroups, simply do trial divison up to the maximal\n+        prime divisor. For higher rank subgroups, perform trial divison\n+        on all linear combinations for small primes, and look for\n+        projections $E(K) \\rightarrow \\oplus E(k) \\otimes \\FF_p$ which\n+        are either full rank or provide p-divisble linear combinations,\n+        where the $k$ here are residue fields of $K$.\n```\nand no doc for\n\n```\n+    def projections(Q, p):\n```\nwhich is indeed an inner function, but quite a complicated one. Maybe just explain its input and output ?",
     "created_at": "2017-08-07T06:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -1347,13 +1353,11 @@ Hello ! some dollars there :
 +        are either full rank or provide p-divisble linear combinations,
 +        where the $k$ here are residue fields of $K$.
 ```
-
 and no doc for
 
 ```
 +    def projections(Q, p):
 ```
-
 which is indeed an inner function, but quite a complicated one. Maybe just explain its input and output ?
 
 
@@ -1381,7 +1385,7 @@ I stand corrected and will see to this.
 archive/issue_comments_081039.json:
 ```json
 {
-    "body": "For the inner function projections(Q, p) there is already a docstring:\n\n```\n        Project points onto (E mod Q)(K mod Q) \\otimes \\F_p.\n\n        Returns a list of 0, 1 or 2 vectors in \\F_p^n\n```\n\nwhich explains what it does.  I'll make sure that all the other inner functions are explained.",
+    "body": "For the inner function projections(Q, p) there is already a docstring:\n\n```\n        Project points onto (E mod Q)(K mod Q) \\otimes \\F_p.\n\n        Returns a list of 0, 1 or 2 vectors in \\F_p^n\n```\nwhich explains what it does.  I'll make sure that all the other inner functions are explained.",
     "created_at": "2017-08-07T08:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -1397,7 +1401,6 @@ For the inner function projections(Q, p) there is already a docstring:
 
         Returns a list of 0, 1 or 2 vectors in \F_p^n
 ```
-
 which explains what it does.  I'll make sure that all the other inner functions are explained.
 
 
@@ -1446,7 +1449,7 @@ Please review!
 archive/issue_comments_081042.json:
 ```json
 {
-    "body": "a typo here:\n\n```\ntrial divison\n```\n\nand also a missing line break here after `r\"\"\"`:\n\n```\n+        r\"\"\" Given a list of rational points on `E` over `K`, compute the\n```\n\nsame here:\n\n```\n        \"\"\"Return generators for the Mordell-Weil group modulo torsion, for a\n```\n\nsame there:\n\n```\n+    r\"\"\" Checks whether the list of points is `p`-saturated.\n```\n\nand\n\n```\n+    r\"\"\" Full `p`-saturation of ``Plist``.\n```\n\n\nanother typo:\n\n```\ndivisble\n```\n\nThis :\n\n```\n+        if len(EE)==0:\n```\n\ncan be replaced by `if not EE`\n\nanother typo:\n\n```\nalgirithm\n```\n",
+    "body": "a typo here:\n\n```\ntrial divison\n```\nand also a missing line break here after `r\"\"\"`:\n\n```\n+        r\"\"\" Given a list of rational points on `E` over `K`, compute the\n```\nsame here:\n\n```\n        \"\"\"Return generators for the Mordell-Weil group modulo torsion, for a\n```\nsame there:\n\n```\n+    r\"\"\" Checks whether the list of points is `p`-saturated.\n```\nand\n\n```\n+    r\"\"\" Full `p`-saturation of ``Plist``.\n```\n\nanother typo:\n\n```\ndivisble\n```\nThis :\n\n```\n+        if len(EE)==0:\n```\ncan be replaced by `if not EE`\n\nanother typo:\n\n```\nalgirithm\n```",
     "created_at": "2017-08-07T11:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -1460,44 +1463,37 @@ a typo here:
 ```
 trial divison
 ```
-
 and also a missing line break here after `r"""`:
 
 ```
 +        r""" Given a list of rational points on `E` over `K`, compute the
 ```
-
 same here:
 
 ```
         """Return generators for the Mordell-Weil group modulo torsion, for a
 ```
-
 same there:
 
 ```
 +    r""" Checks whether the list of points is `p`-saturated.
 ```
-
 and
 
 ```
 +    r""" Full `p`-saturation of ``Plist``.
 ```
 
-
 another typo:
 
 ```
 divisble
 ```
-
 This :
 
 ```
 +        if len(EE)==0:
 ```
-
 can be replaced by `if not EE`
 
 another typo:
@@ -1505,7 +1501,6 @@ another typo:
 ```
 algirithm
 ```
-
 
 
 
@@ -1838,7 +1833,7 @@ archive/issue_comments_081059.json:
 archive/issue_comments_081060.json:
 ```json
 {
-    "body": "I hope I got it right this time.  The correct branch is public/8829 and I basically redid the edits I had already done this morning on the wrong branch.\n----\nLast 10 new commits:",
+    "body": "I hope I got it right this time.  The correct branch is public/8829 and I basically redid the edits I had already done this morning on the wrong branch.\n\n---\nLast 10 new commits:",
     "created_at": "2017-08-23T14:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -1848,7 +1843,8 @@ archive/issue_comments_081060.json:
 ```
 
 I hope I got it right this time.  The correct branch is public/8829 and I basically redid the edits I had already done this morning on the wrong branch.
-----
+
+---
 Last 10 new commits:
 
 
@@ -2038,7 +2034,7 @@ Branch pushed to git repo; I updated commit sha1 and set ticket back to needs_re
 archive/issue_comments_081071.json:
 ```json
 {
-    "body": "Replying to [comment:80 chapoton]:\n> no, no, let us wait and do that later\n\nIsn't it just this one-line change? If so, no reason to postpone it...",
+    "body": "Replying to [comment:80 chapoton]:\n> no, no, let us wait and do that later\n\n\nIsn't it just this one-line change? If so, no reason to postpone it...",
     "created_at": "2017-08-23T20:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8829",
     "type": "issue_comment",
@@ -2049,6 +2045,7 @@ archive/issue_comments_081071.json:
 
 Replying to [comment:80 chapoton]:
 > no, no, let us wait and do that later
+
 
 Isn't it just this one-line change? If so, no reason to postpone it...
 

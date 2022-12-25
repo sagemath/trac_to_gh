@@ -88,7 +88,7 @@ archive/issue_events_021126.json:
 archive/issue_comments_079180.json:
 ```json
 {
-    "body": "Hi mike,\n\nI adressed your comment:\n\n> 2. Is there a good use case for allowing None to be passed in to\n> ClonableArray, ClonableList, and ConableIntArray.  There is a bit of\n> mental overhead in always having to remember to check that self._list\n> is always an actual list.\n\nand updated a new patch... Please review.",
+    "body": "Hi mike,\n\nI adressed your comment:\n\n> 2. Is there a good use case for allowing None to be passed in to\n> ClonableArray, ClonableList, and ConableIntArray.  There is a bit of\n> mental overhead in always having to remember to check that self._list\n> is always an actual list.\n\n\nand updated a new patch... Please review.",
     "created_at": "2010-10-24T09:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -106,6 +106,7 @@ I adressed your comment:
 > mental overhead in always having to remember to check that self._list
 > is always an actual list.
 
+
 and updated a new patch... Please review.
 
 
@@ -115,7 +116,7 @@ and updated a new patch... Please review.
 archive/issue_comments_079181.json:
 ```json
 {
-    "body": "> and updated a new patch... Please review.\n\nSorry: I should have said that I also folded your review patch... Thanks for it.",
+    "body": "> and updated a new patch... Please review.\n\n\nSorry: I should have said that I also folded your review patch... Thanks for it.",
     "created_at": "2010-10-24T09:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -125,6 +126,7 @@ archive/issue_comments_079181.json:
 ```
 
 > and updated a new patch... Please review.
+
 
 Sorry: I should have said that I also folded your review patch... Thanks for it.
 
@@ -171,7 +173,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079184.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> Looks good to me.\n\nThanks for the review !",
+    "body": "Replying to [comment:6 mhansen]:\n> Looks good to me.\n\n\nThanks for the review !",
     "created_at": "2010-11-04T19:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -183,6 +185,7 @@ archive/issue_comments_079184.json:
 Replying to [comment:6 mhansen]:
 > Looks good to me.
 
+
 Thanks for the review !
 
 
@@ -192,7 +195,7 @@ Thanks for the review !
 archive/issue_comments_079185.json:
 ```json
 {
-    "body": "I get doctest errors:\n\n```\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/devel/sage-main/sage/structure/list_clone_timings.py\", line 8:\n    sage: from sage.structure.list_clone_timmings import *\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from sage.structure.list_clone_timmings import *###line 8:\n    sage: from sage.structure.list_clone_timmings import *\n    ImportError: No module named list_clone_timmings\n**********************************************************************\n```\n",
+    "body": "I get doctest errors:\n\n```\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/devel/sage-main/sage/structure/list_clone_timings.py\", line 8:\n    sage: from sage.structure.list_clone_timmings import *\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from sage.structure.list_clone_timmings import *###line 8:\n    sage: from sage.structure.list_clone_timmings import *\n    ImportError: No module named list_clone_timmings\n**********************************************************************\n```",
     "created_at": "2010-11-06T07:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -221,7 +224,6 @@ Exception raised:
     ImportError: No module named list_clone_timmings
 **********************************************************************
 ```
-
 
 
 
@@ -284,7 +286,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079189.json:
 ```json
 {
-    "body": "Replying to [comment:8 jdemeyer]:\n> I get doctest errors:\n\n```\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/devel/sage-main/sage/structure/list_clone_timings.py\", line 8:\n    sage: from sage.structure.list_clone_timmings import *\n[...]\n```\n\n\nOups ! I forgot to fold some corrective patches. I just resubmitted the corrected version. To ease the review I also uploaded the [diff](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/diff-8702) between the older version and the new one. Do not apply this chunk of code.\n\nOnly apply [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
+    "body": "Replying to [comment:8 jdemeyer]:\n> I get doctest errors:\n\n{{{\n**********************************************************************\nFile \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/devel/sage-main/sage/structure/list_clone_timings.py\", line 8:\n    sage: from sage.structure.list_clone_timmings import *\n[...]\n}}}\n\nOups ! I forgot to fold some corrective patches. I just resubmitted the corrected version. To ease the review I also uploaded the [diff](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/diff-8702) between the older version and the new one. Do not apply this chunk of code.\n\nOnly apply [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
     "created_at": "2010-11-19T08:59:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
@@ -296,13 +298,12 @@ archive/issue_comments_079189.json:
 Replying to [comment:8 jdemeyer]:
 > I get doctest errors:
 
-```
+{{{
 **********************************************************************
 File "/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.1.alpha1/devel/sage-main/sage/structure/list_clone_timings.py", line 8:
     sage: from sage.structure.list_clone_timmings import *
 [...]
-```
-
+}}}
 
 Oups ! I forgot to fold some corrective patches. I just resubmitted the corrected version. To ease the review I also uploaded the [diff](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/diff-8702) between the older version and the new one. Do not apply this chunk of code.
 

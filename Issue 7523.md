@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063652.json:
 ```json
 {
-    "body": "\n```\nnice\n[10:29pm] amhou:\nnot sure how to get past the importing into global namespace\n[10:29pm] amhou:\nbecause we definitely don't want that\n[10:30pm] amhou:\nbut if I define within the functions, then the stuff called outside of the functions doesn't work\n[10:30pm] amhou:\n:-/\n[10:30pm] williamstein:\nRobert Bradshaw came up with some new clever, clever code to uniformly deal with this problem.\n[10:30pm] williamstein:\nI'll ping him.\n```\n",
+    "body": "```\nnice\n[10:29pm] amhou:\nnot sure how to get past the importing into global namespace\n[10:29pm] amhou:\nbecause we definitely don't want that\n[10:30pm] amhou:\nbut if I define within the functions, then the stuff called outside of the functions doesn't work\n[10:30pm] amhou:\n:-/\n[10:30pm] williamstein:\nRobert Bradshaw came up with some new clever, clever code to uniformly deal with this problem.\n[10:30pm] williamstein:\nI'll ping him.\n```",
     "created_at": "2009-11-24T06:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_063652.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 nice
@@ -99,13 +98,12 @@ I'll ping him.
 
 
 
-
 ---
 
 archive/issue_comments_063653.json:
 ```json
 {
-    "body": "In this case, I think what you want is http://www.python.org/dev/peps/pep-0369/\n\nI'm not sure about using IntVector, as it will silently truncate all non-integer lists...\n\n\n```\nsage: list(rpy2.robjects.IntVector([1,1/2,pi]))\n[1, 0, 3]\n```\n",
+    "body": "In this case, I think what you want is http://www.python.org/dev/peps/pep-0369/\n\nI'm not sure about using IntVector, as it will silently truncate all non-integer lists...\n\n```\nsage: list(rpy2.robjects.IntVector([1,1/2,pi]))\n[1, 0, 3]\n```",
     "created_at": "2009-11-24T07:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
@@ -118,12 +116,10 @@ In this case, I think what you want is http://www.python.org/dev/peps/pep-0369/
 
 I'm not sure about using IntVector, as it will silently truncate all non-integer lists...
 
-
 ```
 sage: list(rpy2.robjects.IntVector([1,1/2,pi]))
 [1, 0, 3]
 ```
-
 
 
 

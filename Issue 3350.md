@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3350
 archive/issue_comments_023239.json:
 ```json
 {
-    "body": "Someone else should take a look at this, I've given it some thought and can't figure it out.\n\nThe syntax on the above examples is wrong, I think, but does not account for the problem.  For example, even:\n\n```\nplot_vector_field((lambda x,t: 1, lambda x,t: x), (-1, 1), (-2, 2))\n```\n\nwhich seems safer, still gives the wrong result, as does\n\n```\nvar('x,t')\nplot_vector_field((1, x), (-1, 1), (-2, 2))\n```\n",
+    "body": "Someone else should take a look at this, I've given it some thought and can't figure it out.\n\nThe syntax on the above examples is wrong, I think, but does not account for the problem.  For example, even:\n\n```\nplot_vector_field((lambda x,t: 1, lambda x,t: x), (-1, 1), (-2, 2))\n```\nwhich seems safer, still gives the wrong result, as does\n\n```\nvar('x,t')\nplot_vector_field((1, x), (-1, 1), (-2, 2))\n```",
     "created_at": "2008-10-16T15:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3350",
     "type": "issue_comment",
@@ -67,14 +67,12 @@ The syntax on the above examples is wrong, I think, but does not account for the
 ```
 plot_vector_field((lambda x,t: 1, lambda x,t: x), (-1, 1), (-2, 2))
 ```
-
 which seems safer, still gives the wrong result, as does
 
 ```
 var('x,t')
 plot_vector_field((1, x), (-1, 1), (-2, 2))
 ```
-
 
 
 
@@ -101,7 +99,7 @@ Changing assignee from mhampton to somebody.
 archive/issue_comments_023241.json:
 ```json
 {
-    "body": "In your second example, it is impossible to tell which variable is which (i.e., which is the horizontal axis, which is the vertical).  Specify it by doing:\n\n\n```\nvar('x,t')\nplot_vector_field((1, x), (x,-1, 1), (t,-2, 2))\n```\n\n\nWhat is wrong about the result?  I get the correct result on my computer.  Of course, to make the slope actually look like a slope of -1, you need to change the aspect_ratio:\n\n\n```\nvar('x,t')\nplot_vector_field((1, x), (-1, 1), (-2, 2)).show(aspect_ratio=1)\n```\n",
+    "body": "In your second example, it is impossible to tell which variable is which (i.e., which is the horizontal axis, which is the vertical).  Specify it by doing:\n\n```\nvar('x,t')\nplot_vector_field((1, x), (x,-1, 1), (t,-2, 2))\n```\n\nWhat is wrong about the result?  I get the correct result on my computer.  Of course, to make the slope actually look like a slope of -1, you need to change the aspect_ratio:\n\n```\nvar('x,t')\nplot_vector_field((1, x), (-1, 1), (-2, 2)).show(aspect_ratio=1)\n```",
     "created_at": "2009-01-22T19:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3350",
     "type": "issue_comment",
@@ -112,21 +110,17 @@ archive/issue_comments_023241.json:
 
 In your second example, it is impossible to tell which variable is which (i.e., which is the horizontal axis, which is the vertical).  Specify it by doing:
 
-
 ```
 var('x,t')
 plot_vector_field((1, x), (x,-1, 1), (t,-2, 2))
 ```
 
-
 What is wrong about the result?  I get the correct result on my computer.  Of course, to make the slope actually look like a slope of -1, you need to change the aspect_ratio:
-
 
 ```
 var('x,t')
 plot_vector_field((1, x), (-1, 1), (-2, 2)).show(aspect_ratio=1)
 ```
-
 
 
 

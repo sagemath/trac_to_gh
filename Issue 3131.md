@@ -3,7 +3,7 @@
 archive/issues_003131.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nAside from all the other issues: You should *always* rebuild the Sage\nlibrary of a binary build before running clone. Otherwise each clone\nrequires a complete rebuild. Aside from that it is *highly*\nrecommended to build from source if you are developing since mixing\nand matching different compiler releases [even on OSX] can lead to odd\nresults, i.e. Heisenbugs and segfaults.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3131\n\n",
+    "body": "Assignee: tba\n\n```\nAside from all the other issues: You should *always* rebuild the Sage\nlibrary of a binary build before running clone. Otherwise each clone\nrequires a complete rebuild. Aside from that it is *highly*\nrecommended to build from source if you are developing since mixing\nand matching different compiler releases [even on OSX] can lead to odd\nresults, i.e. Heisenbugs and segfaults.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3131\n\n",
     "created_at": "2008-05-08T12:47:56Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_003131.json:
 ```
 Assignee: tba
 
-
 ```
 Aside from all the other issues: You should *always* rebuild the Sage
 library of a binary build before running clone. Otherwise each clone
@@ -27,7 +26,6 @@ recommended to build from source if you are developing since mixing
 and matching different compiler releases [even on OSX] can lead to odd
 results, i.e. Heisenbugs and segfaults.
 ```
-
 
 Cheers,
 
@@ -327,7 +325,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_021681.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> Are there any instructions we need to give people about how to develop with binaries?  (Such as, you really need to build from scratch.)\nExactly: \"don't do it\" is the best advice you can give.",
+    "body": "Replying to [comment:7 kcrisman]:\n> Are there any instructions we need to give people about how to develop with binaries?  (Such as, you really need to build from scratch.)\n\nExactly: \"don't do it\" is the best advice you can give.",
     "created_at": "2014-08-14T13:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3131",
     "type": "issue_comment",
@@ -338,6 +336,7 @@ archive/issue_comments_021681.json:
 
 Replying to [comment:7 kcrisman]:
 > Are there any instructions we need to give people about how to develop with binaries?  (Such as, you really need to build from scratch.)
+
 Exactly: "don't do it" is the best advice you can give.
 
 
@@ -541,7 +540,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_021689.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> Why would this be wontfix?  Have we already said very loudly \"don't do it\"?\n\nOops, sorry, I had the same reaction as you about this becoming meaningless with the switch to git, and I did not notice the recent discussion.",
+    "body": "Replying to [comment:12 kcrisman]:\n> Why would this be wontfix?  Have we already said very loudly \"don't do it\"?\n\n\nOops, sorry, I had the same reaction as you about this becoming meaningless with the switch to git, and I did not notice the recent discussion.",
     "created_at": "2015-01-28T18:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3131",
     "type": "issue_comment",
@@ -553,6 +552,7 @@ archive/issue_comments_021689.json:
 Replying to [comment:12 kcrisman]:
 > Why would this be wontfix?  Have we already said very loudly "don't do it"?
 
+
 Oops, sorry, I had the same reaction as you about this becoming meaningless with the switch to git, and I did not notice the recent discussion.
 
 
@@ -562,7 +562,7 @@ Oops, sorry, I had the same reaction as you about this becoming meaningless with
 archive/issue_comments_021690.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> Have we already said very loudly \"don't do it\"?\nIs there a reason why people shouldn't do it? Since when did we stop supporting developing with binaries?",
+    "body": "Replying to [comment:12 kcrisman]:\n> Have we already said very loudly \"don't do it\"?\n\nIs there a reason why people shouldn't do it? Since when did we stop supporting developing with binaries?",
     "created_at": "2015-01-28T19:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3131",
     "type": "issue_comment",
@@ -573,6 +573,7 @@ archive/issue_comments_021690.json:
 
 Replying to [comment:12 kcrisman]:
 > Have we already said very loudly "don't do it"?
+
 Is there a reason why people shouldn't do it? Since when did we stop supporting developing with binaries?
 
 
@@ -582,7 +583,7 @@ Is there a reason why people shouldn't do it? Since when did we stop supporting 
 archive/issue_comments_021691.json:
 ```json
 {
-    "body": "**You** said it!  comment:8\n> Exactly: \"don't do it\" is the best advice you can give.\nIf not, then we should say just what prereqs and problems might be necessary/arise.",
+    "body": "**You** said it!  comment:8\n> Exactly: \"don't do it\" is the best advice you can give.\n\nIf not, then we should say just what prereqs and problems might be necessary/arise.",
     "created_at": "2015-01-28T19:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3131",
     "type": "issue_comment",
@@ -593,6 +594,7 @@ archive/issue_comments_021691.json:
 
 **You** said it!  comment:8
 > Exactly: "don't do it" is the best advice you can give.
+
 If not, then we should say just what prereqs and problems might be necessary/arise.
 
 
@@ -860,7 +862,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_021704.json:
 ```json
 {
-    "body": "Replying to [comment:26 paulmasson]:\n> Looks good. Thanks!\nNo problem.\n\nWhile we're on the topic, the errata ([http://wiki.sagemath.org/errata](http://wiki.sagemath.org/errata)) links to an empty wiki page but I couldn't find the proper location. Let me know if you have a suggestion for fixing it.",
+    "body": "Replying to [comment:26 paulmasson]:\n> Looks good. Thanks!\n\nNo problem.\n\nWhile we're on the topic, the errata ([http://wiki.sagemath.org/errata](http://wiki.sagemath.org/errata)) links to an empty wiki page but I couldn't find the proper location. Let me know if you have a suggestion for fixing it.",
     "created_at": "2016-07-07T03:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3131",
     "type": "issue_comment",
@@ -871,6 +873,7 @@ archive/issue_comments_021704.json:
 
 Replying to [comment:26 paulmasson]:
 > Looks good. Thanks!
+
 No problem.
 
 While we're on the topic, the errata ([http://wiki.sagemath.org/errata](http://wiki.sagemath.org/errata)) links to an empty wiki page but I couldn't find the proper location. Let me know if you have a suggestion for fixing it.

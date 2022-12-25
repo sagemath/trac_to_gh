@@ -3,7 +3,7 @@
 archive/issues_006960.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a = pari('393')\nsage: a.python()\n393\nsage: a = magma('393')\nsage: a.sage()\n393     \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6960\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a = pari('393')\nsage: a.python()\n393\nsage: a = magma('393')\nsage: a.sage()\n393     \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6960\n\n",
     "created_at": "2009-09-19T06:13:32Z",
     "labels": [
         "component: interfaces",
@@ -19,7 +19,6 @@ archive/issues_006960.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: a = pari('393')
 sage: a.python()
@@ -28,7 +27,6 @@ sage: a = magma('393')
 sage: a.sage()
 393     
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6960
 

@@ -121,7 +121,7 @@ The vote is at http://groups.google.com/group/sage-devel/browse_thread/thread/ad
 archive/issue_comments_051428.json:
 ```json
 {
-    "body": "Although I know about as much as my dog about Solaris, I gave it a try on t2.  After downloading the 0.8.0 spkg from trac I did:\n\n\n```\nsage -sh\nexport GMPLIB=/home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local\n$MAKE library MODE=shared ldflags=\"$LDFLAGS\" GMP_INC_DIR=\"$GMPLIB\"\n```\n\n\nand things compiled well for a while until I got:\n\n```\ng++   -Wall -ansi -pedantic -I /home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local/include -Wno-uninitialized -Wno-unused-parameter -O2 -fPIC -c src/test/TestSuite.cpp -o bin/shared/test/TestSuite.o\nsrc/test/TestSuite.cpp: In member function \u2018void TestSuite::sortTests()\u2019:\nsrc/test/TestSuite.cpp:43: error: \u2018sort\u2019 was not declared in this scope\nmake: *** [bin/shared/test/TestSuite.o] Error 1\n```\n\n\n-Marshall",
+    "body": "Although I know about as much as my dog about Solaris, I gave it a try on t2.  After downloading the 0.8.0 spkg from trac I did:\n\n```\nsage -sh\nexport GMPLIB=/home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local\n$MAKE library MODE=shared ldflags=\"$LDFLAGS\" GMP_INC_DIR=\"$GMPLIB\"\n```\n\nand things compiled well for a while until I got:\n\n```\ng++   -Wall -ansi -pedantic -I /home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local/include -Wno-uninitialized -Wno-unused-parameter -O2 -fPIC -c src/test/TestSuite.cpp -o bin/shared/test/TestSuite.o\nsrc/test/TestSuite.cpp: In member function \u2018void TestSuite::sortTests()\u2019:\nsrc/test/TestSuite.cpp:43: error: \u2018sort\u2019 was not declared in this scope\nmake: *** [bin/shared/test/TestSuite.o] Error 1\n```\n\n-Marshall",
     "created_at": "2009-07-16T17:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
@@ -132,13 +132,11 @@ archive/issue_comments_051428.json:
 
 Although I know about as much as my dog about Solaris, I gave it a try on t2.  After downloading the 0.8.0 spkg from trac I did:
 
-
 ```
 sage -sh
 export GMPLIB=/home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local
 $MAKE library MODE=shared ldflags="$LDFLAGS" GMP_INC_DIR="$GMPLIB"
 ```
-
 
 and things compiled well for a while until I got:
 
@@ -148,7 +146,6 @@ src/test/TestSuite.cpp: In member function ‘void TestSuite::sortTests()’:
 src/test/TestSuite.cpp:43: error: ‘sort’ was not declared in this scope
 make: *** [bin/shared/test/TestSuite.o] Error 1
 ```
-
 
 -Marshall
 
@@ -437,7 +434,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_051435.json:
 ```json
 {
-    "body": "This ticket is about an old-style spkg for frobby version 0.8.0. We now have frobby 0.9.0 in a new-style sage package. I know that in some examples in which Singular fails with an int overflow, frobby starts to use very much memory and takes a very long time. Moreover, it seems that the computation of multivariate Hilbert series has a bug: Frobby uses the base ring of the polynomial ring as the base ring of the Hilbert series (but Hilbert series are supposed to have integral coefficients). Moreover, if one uses integral coefficients, the monomials that are not standard monomials appear with coefficient TWO, but should of course have coefficient zero, in the expansion of the multivariate Hilbert series.\n\n```\n  sage: R.<x,y,z,w>=QQ[]\n  sage: I = R*[x^3,x^2*y,x*z]\n  sage: D = ~PowerSeriesRing(QQ,'x,y,z,w')((x-1)*(y-1)*(z-1)*(w-1))\n  sage: frobby.hilbert(I)\n  x^3*y*z + x^3*y + x^3*z + x^2*y*z + x^3 + x^2*y + x*z + 1\n  sage: (frobby.hilbert(I)*D)[:4]\n  1 + x + y + z + w + x^2 + x*y + 2*x*z + x*w + y^2 + y*z + y*w + z^2 +\n  z*w + w^2 + 2*x^3 + 2*x^2*y + 2*x^2*z + x^2*w + x*y^2 + 2*x*y*z +\n  x*y*w + 2*x*z^2 + 2*x*z*w + x*w^2 + y^3 + y^2*z + y^2*w + y*z^2 +\n  y*z*w + y*w^2 + z^3 + z^2*w + z*w^2 + w^3 + O(x, y, z, w)^12\n```\n\n\nSo, I think that frobby should not be the default backend for Hilbert series.\n\nHowever, it may still be a good idea to provide a Cython interface. So, question: Should the Cython-interface part of the patch be changed into a branch?",
+    "body": "This ticket is about an old-style spkg for frobby version 0.8.0. We now have frobby 0.9.0 in a new-style sage package. I know that in some examples in which Singular fails with an int overflow, frobby starts to use very much memory and takes a very long time. Moreover, it seems that the computation of multivariate Hilbert series has a bug: Frobby uses the base ring of the polynomial ring as the base ring of the Hilbert series (but Hilbert series are supposed to have integral coefficients). Moreover, if one uses integral coefficients, the monomials that are not standard monomials appear with coefficient TWO, but should of course have coefficient zero, in the expansion of the multivariate Hilbert series.\n\n```\n  sage: R.<x,y,z,w>=QQ[]\n  sage: I = R*[x^3,x^2*y,x*z]\n  sage: D = ~PowerSeriesRing(QQ,'x,y,z,w')((x-1)*(y-1)*(z-1)*(w-1))\n  sage: frobby.hilbert(I)\n  x^3*y*z + x^3*y + x^3*z + x^2*y*z + x^3 + x^2*y + x*z + 1\n  sage: (frobby.hilbert(I)*D)[:4]\n  1 + x + y + z + w + x^2 + x*y + 2*x*z + x*w + y^2 + y*z + y*w + z^2 +\n  z*w + w^2 + 2*x^3 + 2*x^2*y + 2*x^2*z + x^2*w + x*y^2 + 2*x*y*z +\n  x*y*w + 2*x*z^2 + 2*x*z*w + x*w^2 + y^3 + y^2*z + y^2*w + y*z^2 +\n  y*z*w + y*w^2 + z^3 + z^2*w + z*w^2 + w^3 + O(x, y, z, w)^12\n```\n\nSo, I think that frobby should not be the default backend for Hilbert series.\n\nHowever, it may still be a good idea to provide a Cython interface. So, question: Should the Cython-interface part of the patch be changed into a branch?",
     "created_at": "2018-09-11T16:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6416",
     "type": "issue_comment",
@@ -460,7 +457,6 @@ This ticket is about an old-style spkg for frobby version 0.8.0. We now have fro
   x*y*w + 2*x*z^2 + 2*x*z*w + x*w^2 + y^3 + y^2*z + y^2*w + y*z^2 +
   y*z*w + y*w^2 + z^3 + z^2*w + z*w^2 + w^3 + O(x, y, z, w)^12
 ```
-
 
 So, I think that frobby should not be the default backend for Hilbert series.
 

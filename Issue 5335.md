@@ -90,7 +90,7 @@ Attachment [Sage-3.3-release-notes-draft1.txt](tarball://root/attachments/some-u
 archive/issue_comments_041015.json:
 ```json
 {
-    "body": "Two comments by wjp:\n\n```\nwjp: \"Aside from the above there a very large number\"\nmabs: *is*\nwjp: \"This are false\"\n```\n\n\nCheers,\n\nMichael",
+    "body": "Two comments by wjp:\n\n```\nwjp: \"Aside from the above there a very large number\"\nmabs: *is*\nwjp: \"This are false\"\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-22T12:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -107,7 +107,6 @@ mabs: *is*
 wjp: "This are false"
 ```
 
-
 Cheers,
 
 Michael
@@ -119,7 +118,7 @@ Michael
 archive/issue_comments_041016.json:
 ```json
 {
-    "body": "And Carl Witty correctly pointed out:\n\n```\ncwitty: Shouldn't the \"Known issues\" mention Fedora 64-bit not working?\n```\n\n\nCheers,\n\nMichael",
+    "body": "And Carl Witty correctly pointed out:\n\n```\ncwitty: Shouldn't the \"Known issues\" mention Fedora 64-bit not working?\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-22T16:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -134,7 +133,6 @@ And Carl Witty correctly pointed out:
 cwitty: Shouldn't the "Known issues" mention Fedora 64-bit not working?
 ```
 
-
 Cheers,
 
 Michael
@@ -146,7 +144,7 @@ Michael
 archive/issue_comments_041017.json:
 ```json
 {
-    "body": "And another issue:\n\n```\n\n[08:32am] mabs: re: \"inline text cells\"  - I took that from the ticket and I \ntend not to change the summaries in the listing so the original can be easily \nfound in trac.\n[08:34am] cwitty: I wasn't talking about the ticket, I was talking about this:\n[08:34am] cwitty: One of the new major usability\n[08:34am] cwitty: 97improvements to the notebook is the addition and integration of the\n[08:34am] cwitty: 98TinyMCE editor which now allows to add inline text cells to the notebook\n[08:34am] cwitty: 99via a very nice WYSIWYG editor.\n```\n",
+    "body": "And another issue:\n\n```\n\n[08:32am] mabs: re: \"inline text cells\"  - I took that from the ticket and I \ntend not to change the summaries in the listing so the original can be easily \nfound in trac.\n[08:34am] cwitty: I wasn't talking about the ticket, I was talking about this:\n[08:34am] cwitty: One of the new major usability\n[08:34am] cwitty: 97improvements to the notebook is the addition and integration of the\n[08:34am] cwitty: 98TinyMCE editor which now allows to add inline text cells to the notebook\n[08:34am] cwitty: 99via a very nice WYSIWYG editor.\n```",
     "created_at": "2009-02-22T16:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5335",
     "type": "issue_comment",
@@ -168,7 +166,6 @@ found in trac.
 [08:34am] cwitty: 98TinyMCE editor which now allows to add inline text cells to the notebook
 [08:34am] cwitty: 99via a very nice WYSIWYG editor.
 ```
-
 
 
 

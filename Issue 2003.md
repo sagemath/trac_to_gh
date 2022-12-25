@@ -3,7 +3,7 @@
 archive/issues_002003.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn Mac OS X (10.4.11 in my case), when the configure script for 'gnutls' runs, it will detect 'guile' and attempt to build the Guile bindings, if it finds a locally-installed Guile package (in my case, from MacPorts, in \"/opt\").  This causes the build to break.\n\n\n```\nchecking whether building Guile bindings... yes\n***\n*** Detecting GNU Guile...\n\nchecking for guile-snarf... /opt/local/bin/guile-snarf\nchecking for guile... /opt/local/bin/guile\nchecking for guile-config... /opt/local/bin/guile-config\nchecking for guile-tools... /opt/local/bin/guile-tools\nchecking libguile compile flags... -I/opt/local/include -D_THREAD_SAFE\nchecking libguile link flags... -D_THREAD_SAFE  -lguile -lltdl -L/opt/ \nlocal/lib -L/opt/local/lib -lgmp -lm -lltdl\nchecking whether GNU Guile is recent enough... yes\n\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\n/opt/local/bin/guile -L ../../guile/modules make-enum-map.scm > enum-map.i.c\n/opt/local/bin/guile -L ../../guile/modules make-smob-types.scm > smob-types.i.c\n/opt/local/bin/guile -L ../../guile/modules make-enum-header.scm > enums.h\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enum-map.i.c] Error 1\nmake[5]: *** Waiting for unfinished jobs....\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enums.h] Error 1\nmake[4]: *** [all-recursive] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2\nfailed to build GNUTLS\n```\n\n\nIf the PATH variable does not give access to the installed Guile package, the build proceeds without a problem.\n\nI think this is a bug, since building Sage should be independent of the packages installed elsewhere on the system (that is why Sage has so many pieces, after all).\n\nSome possible fixes:\n- force the PATH variable to some plain-vanilla setting.\n- use the \"-norc\" and \"-noprofile\" switches when starting subshells\n   (and maybe make sure the shells are not 'login' or 'interactive')\n- force the building of 'gnutls' to avoid this particular problem\n   (I think this can be done with \"--enable-guile=no' in the configure\n   script)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2003\n\n",
+    "body": "Assignee: mabshoff\n\nOn Mac OS X (10.4.11 in my case), when the configure script for 'gnutls' runs, it will detect 'guile' and attempt to build the Guile bindings, if it finds a locally-installed Guile package (in my case, from MacPorts, in \"/opt\").  This causes the build to break.\n\n```\nchecking whether building Guile bindings... yes\n***\n*** Detecting GNU Guile...\n\nchecking for guile-snarf... /opt/local/bin/guile-snarf\nchecking for guile... /opt/local/bin/guile\nchecking for guile-config... /opt/local/bin/guile-config\nchecking for guile-tools... /opt/local/bin/guile-tools\nchecking libguile compile flags... -I/opt/local/include -D_THREAD_SAFE\nchecking libguile link flags... -D_THREAD_SAFE  -lguile -lltdl -L/opt/ \nlocal/lib -L/opt/local/lib -lgmp -lm -lltdl\nchecking whether GNU Guile is recent enough... yes\n\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\n/opt/local/bin/guile -L ../../guile/modules make-enum-map.scm > enum-map.i.c\n/opt/local/bin/guile -L ../../guile/modules make-smob-types.scm > smob-types.i.c\n/opt/local/bin/guile -L ../../guile/modules make-enum-header.scm > enums.h\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enum-map.i.c] Error 1\nmake[5]: *** Waiting for unfinished jobs....\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enums.h] Error 1\nmake[4]: *** [all-recursive] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2\nfailed to build GNUTLS\n```\n\nIf the PATH variable does not give access to the installed Guile package, the build proceeds without a problem.\n\nI think this is a bug, since building Sage should be independent of the packages installed elsewhere on the system (that is why Sage has so many pieces, after all).\n\nSome possible fixes:\n- force the PATH variable to some plain-vanilla setting.\n- use the \"-norc\" and \"-noprofile\" switches when starting subshells\n   (and maybe make sure the shells are not 'login' or 'interactive')\n- force the building of 'gnutls' to avoid this particular problem\n   (I think this can be done with \"--enable-guile=no' in the configure\n   script)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2003\n\n",
     "created_at": "2008-01-31T18:34:54Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_002003.json:
 Assignee: mabshoff
 
 On Mac OS X (10.4.11 in my case), when the configure script for 'gnutls' runs, it will detect 'guile' and attempt to build the Guile bindings, if it finds a locally-installed Guile package (in my case, from MacPorts, in "/opt").  This causes the build to break.
-
 
 ```
 checking whether building Guile bindings... yes
@@ -53,7 +52,6 @@ make[3]: *** [all-recursive] Error 1
 make[2]: *** [all] Error 2
 failed to build GNUTLS
 ```
-
 
 If the PATH variable does not give access to the installed Guile package, the build proceeds without a problem.
 
@@ -162,7 +160,7 @@ Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure'
 archive/issue_comments_012933.json:
 ```json
 {
-    "body": "Replying to [comment:3 justin]:\n> Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure' flag \"--enable-guile=no\".  That seems to be the most straight-forward solution.\n> \n\nHi Justin,\n\nthis is exactly what the updated gnutls.spkg linked above does. So if it works for you you should give it a positive review so that I can merge it into 2.10.2.alpha0 :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 justin]:\n> Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure' flag \"--enable-guile=no\".  That seems to be the most straight-forward solution.\n> \n\n\nHi Justin,\n\nthis is exactly what the updated gnutls.spkg linked above does. So if it works for you you should give it a positive review so that I can merge it into 2.10.2.alpha0 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-02-03T16:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
@@ -174,6 +172,7 @@ archive/issue_comments_012933.json:
 Replying to [comment:3 justin]:
 > Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure' flag "--enable-guile=no".  That seems to be the most straight-forward solution.
 > 
+
 
 Hi Justin,
 

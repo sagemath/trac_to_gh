@@ -248,7 +248,7 @@ Attachment [3738-11-constructor.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_026485.json:
 ```json
 {
-    "body": "Attachment [coerce.hg](tarball://root/attachments/some-uuid/ticket3738/coerce.hg) by @williamstein created at 2008-07-31 16:48:36\n\nA remark about doctest coverage:\n\n```\nOn Jul 30, 2008, at 9:49 AM, William Stein wrote:\n\n>> I think this is probably something that it would be good for multiple\n>> people could look at. (Both those previously involved in coercion,\n>> and those not). It could help spread the work around too.\n>>\n>\n> Michael Abshoff commented to me that the new coercion code you've\n> posted introduces new functions that have no doctests.  Any comment?\n\n\nThat is a true accusation, though I feel there is some justification\nas many of the functions are not actually being used yet so it is\nhard to test them (they were being used in the coercion branch, so\nit's not completely untested code, they're just not used until\nParents are converted.) Also, a lot of them are generic helper\nfunctions that are supposed to be overridden. And a third point is\nthat much of this was written before the 100% doctest rule, and there\nis a significant portion that is renaming/re-factoring old code.\n\nThat being said, I have strived for better coverage (and\ndocumentation, not just tests). Currently in terms of new (or heavily\nmodified) code we have:\n\nsage/structure/coerce.pyx\nSCORE sage/structure/coerce.pyx: 100% (20 of 20)\n\nsage/structure/coerce_actions.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_actions.pyx: 66% (10 of 15)\n\nMissing documentation:\n         * __init__(self, G, S)\n         * Element _call_(self, g, a)\n         * __init__(self, G, S)\n         * Element _call_(self, a, g)\n         * __cinit__(self)\n\nThe first 4 are methods of the RAction and LAction classes that are\nnot yet used anywhere in the Sage library (but code exists to\ninstantiate them if _l_action or _r_action is defined on the\nelements). I'm not sure if/how __cinit__ should be tested.\n\nsage/structure/coerce_dict.pyx\nSCORE sage/structure/coerce_dict.pyx: 100% (14 of 14)\n\nsage/structure/coerce_maps.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_maps.pyx: 28% (7 of 25)\n\nMostly __init__ and _call_ methods, but since no Parents have been\nconverted over they are never used (and some can't even be used until\nwe have converted Parents). There still some room for improvement\nhere, and I will write some more documentation for this file.\nBoilerplate __init__ functions are particularly unenlightening to\ndoctest.\n\nsage/structure/generators.pyx\nSCORE sage/structure/generators.pyx: 11% (5 of 45)\n\n[we don't use this yet, other then the fact that there's a cdef'd\nslot to put the generators object. If coverage on this file is a\nproblem, I would go ahead and delete much of this file, and only put\nback things as they are needed]\n\n\nThat is where things stand. I will go add more doctests to\ncoerce_maps.pyx (though I know I can't hit 100% until it's actually\nused) but I think it would be good to start reviewing it, and I would\nadvocate that for this particular project it be grandfathered in to\nsome extent for practicalities sake. (This is not the case for future\ncoercion tickets, which should meet the 100% coverage standard.)\n```\n",
+    "body": "Attachment [coerce.hg](tarball://root/attachments/some-uuid/ticket3738/coerce.hg) by @williamstein created at 2008-07-31 16:48:36\n\nA remark about doctest coverage:\n\n```\nOn Jul 30, 2008, at 9:49 AM, William Stein wrote:\n\n>> I think this is probably something that it would be good for multiple\n>> people could look at. (Both those previously involved in coercion,\n>> and those not). It could help spread the work around too.\n>>\n>\n> Michael Abshoff commented to me that the new coercion code you've\n> posted introduces new functions that have no doctests.  Any comment?\n\n\nThat is a true accusation, though I feel there is some justification\nas many of the functions are not actually being used yet so it is\nhard to test them (they were being used in the coercion branch, so\nit's not completely untested code, they're just not used until\nParents are converted.) Also, a lot of them are generic helper\nfunctions that are supposed to be overridden. And a third point is\nthat much of this was written before the 100% doctest rule, and there\nis a significant portion that is renaming/re-factoring old code.\n\nThat being said, I have strived for better coverage (and\ndocumentation, not just tests). Currently in terms of new (or heavily\nmodified) code we have:\n\nsage/structure/coerce.pyx\nSCORE sage/structure/coerce.pyx: 100% (20 of 20)\n\nsage/structure/coerce_actions.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_actions.pyx: 66% (10 of 15)\n\nMissing documentation:\n         * __init__(self, G, S)\n         * Element _call_(self, g, a)\n         * __init__(self, G, S)\n         * Element _call_(self, a, g)\n         * __cinit__(self)\n\nThe first 4 are methods of the RAction and LAction classes that are\nnot yet used anywhere in the Sage library (but code exists to\ninstantiate them if _l_action or _r_action is defined on the\nelements). I'm not sure if/how __cinit__ should be tested.\n\nsage/structure/coerce_dict.pyx\nSCORE sage/structure/coerce_dict.pyx: 100% (14 of 14)\n\nsage/structure/coerce_maps.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/structure/coerce_maps.pyx: 28% (7 of 25)\n\nMostly __init__ and _call_ methods, but since no Parents have been\nconverted over they are never used (and some can't even be used until\nwe have converted Parents). There still some room for improvement\nhere, and I will write some more documentation for this file.\nBoilerplate __init__ functions are particularly unenlightening to\ndoctest.\n\nsage/structure/generators.pyx\nSCORE sage/structure/generators.pyx: 11% (5 of 45)\n\n[we don't use this yet, other then the fact that there's a cdef'd\nslot to put the generators object. If coverage on this file is a\nproblem, I would go ahead and delete much of this file, and only put\nback things as they are needed]\n\n\nThat is where things stand. I will go add more doctests to\ncoerce_maps.pyx (though I know I can't hit 100% until it's actually\nused) but I think it would be good to start reviewing it, and I would\nadvocate that for this particular project it be grandfathered in to\nsome extent for practicalities sake. (This is not the case for future\ncoercion tickets, which should meet the 100% coverage standard.)\n```",
     "created_at": "2008-07-31T16:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -338,7 +338,6 @@ coercion tickets, which should meet the 100% coverage standard.)
 
 
 
-
 ---
 
 archive/issue_comments_026486.json:
@@ -412,7 +411,7 @@ Michael
 archive/issue_comments_026489.json:
 ```json
 {
-    "body": "With the patch applied I am seeing two doctest failures:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ sage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py\nsage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/steenrod_algebra_element.py\", line 218:\n    sage: xm * y\nExpected:\n    Sq^{5} Sq^{1}\nGot:\n    Sq(3,1)\n**********************************************************************\n1 items had failures:\n   1 of  90 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_steenrod_algebra_element.py\n         [3.0 s]\nexit code: 1024\n```\n\nThe above seems to be harmless.\n\nThe next one is:\n\n```\nsage -t -long devel/sage/sage/sets/set.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/set.py\", line 442:\n    sage: Set(ZZ).cardinality()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[1]>\", line 1, in <module>\n        Set(ZZ).cardinality()###line 442:\n    sage: Set(ZZ).cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 459, in cardinality\n        raise NotImplementedError, \"computation of cardinality of %s not yet implemented\"%self.__object\n    NotImplementedError: computation of cardinality of Integer Ring not yet implemented\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/set.py\", line 816:\n    sage: X.cardinality()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_42[5]>\", line 1, in <module>\n        X.cardinality()###line 816:\n    sage: X.cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 819, in cardinality\n        return self.__X.cardinality() + self.__Y.cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 459, in cardinality\n        raise NotImplementedError, \"computation of cardinality of %s not yet implemented\"%self.__object\n    NotImplementedError: computation of cardinality of Integer Ring not yet implemented\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_20\n   1 of   6 in __main__.example_42\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_set.py\n         [3.4 s]\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the patch applied I am seeing two doctest failures:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ sage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py\nsage -t -long devel/sage/sage/algebras/steenrod_algebra_element.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/steenrod_algebra_element.py\", line 218:\n    sage: xm * y\nExpected:\n    Sq^{5} Sq^{1}\nGot:\n    Sq(3,1)\n**********************************************************************\n1 items had failures:\n   1 of  90 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_steenrod_algebra_element.py\n         [3.0 s]\nexit code: 1024\n```\nThe above seems to be harmless.\n\nThe next one is:\n\n```\nsage -t -long devel/sage/sage/sets/set.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/set.py\", line 442:\n    sage: Set(ZZ).cardinality()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[1]>\", line 1, in <module>\n        Set(ZZ).cardinality()###line 442:\n    sage: Set(ZZ).cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 459, in cardinality\n        raise NotImplementedError, \"computation of cardinality of %s not yet implemented\"%self.__object\n    NotImplementedError: computation of cardinality of Integer Ring not yet implemented\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/set.py\", line 816:\n    sage: X.cardinality()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_42[5]>\", line 1, in <module>\n        X.cardinality()###line 816:\n    sage: X.cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 819, in cardinality\n        return self.__X.cardinality() + self.__Y.cardinality()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/sets/set.py\", line 459, in cardinality\n        raise NotImplementedError, \"computation of cardinality of %s not yet implemented\"%self.__object\n    NotImplementedError: computation of cardinality of Integer Ring not yet implemented\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_20\n   1 of   6 in __main__.example_42\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_set.py\n         [3.4 s]\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T22:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -441,7 +440,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alp
          [3.0 s]
 exit code: 1024
 ```
-
 The above seems to be harmless.
 
 The next one is:
@@ -484,7 +482,6 @@ Exception raised:
 For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_set.py
          [3.4 s]
 ```
-
 
 Cheers,
 
@@ -613,7 +610,7 @@ Attachment [3738-referee-comments.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_026496.json:
 ```json
 {
-    "body": "Thank you for your good comments. I've incorporated some of the feedback in 3738-referee-comments.patch\n\n> There are no docs in generators.\n\nTrue. See my earlier comments.  \n\n> sage/structure/parent.pyx:128 - What is the syntax foo(bar=None, *, etc=None) doing? Does it throw away all but the first non-kwd arg?\n\nhttp://www.python.org/dev/peps/pep-3102/\n\n> Why not always pass the parent (_unique morphism)?\n\nThere are two use cases, the first is speed for some critical types (Integer, Rational, RealDoubleElement)--the PY_NEW needs a constructor that takes no arguments. The second is often the element constructor is a bound method, in which case the parent is implicitly already passed in. \n\n> sage/structure/parent.pyx:256 (typo) this it will always be \n\nFixed. \n\n> In the Parent class, why is it not the case that __call__ delegates to coerce?\n\nCoerce throws a (potentially expensive) error on failure.\n\n> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\nNote sure what you mean here. \n\n> sage/structure/parent.pyx:~438 - Hom vs. hom should be explained in docs (definitions are there, but perhaps a warning)\n\nNot sure I understand what you mean by warning. These functions (and their documentation) are mostly verbatim from the old Parent. \n\n> sage/structure/parent.pyx:597-9 etc. - should this be a copy?\n\nYou're right, though now these lists aren't modified near as often. \n\n> sage/structure/parent.pyx:530-1 - why not use the _generic_convert_map here? why does coerce_list use _generic_convert_map? what is the difference?\n\nThis should be a coercion, not a conversion. Also, Hom could do something special here. (This code is not mine, don't want to break it now.) \n\n> sage/structure/parent.pyx:807-24 - needs to be resolved\n\nThis needs to be thought through some more, but I think leaving the code and comments there does a good job of expressing our intent. \n\n> sage/structure/parent.pyx:839 - what does '\"best\"' mean? (868 - will this change in future patches?)\n\nOne that has the lowest _coerce_cost sum, but in reality it isn't used yet. I've changed the docstring to reflect this. \n\n> Can you clarify why _coerce_map_from_ is checked for overrides, but there is no such check for conversion?\n\nBecause _coerce_map_from_ and _has_coerce_map_from_ circularly call each other. I clarified this a bit more. \n\n> Why was coerce graph removed? :-(\n\nIt wasn't working. I want this too, but it should probably be a separate ticket. \n\n> sage/structure/category_object.pyx:500 WHY ARE YOU WRITING Pyrex?\n\nThat was old documentation, but I changed it. \n\n> All the comment blocks at the beginning of files are in the old style. i.e. copyright 2006... etc.\n\nLets fix this with another ticket. \n\n> Sometime it's pretty hard to figure out what's going on because there is some pretty damn random stuff with no docs or comments at all. (not a blocking comment, just saying...)\n\nI tried to be really explicit with what I'm doing (especially the new stuff) but I won't claim to be perfect. Please ask if there is a particularly befuddling spot. A lot of parent is really, really old code too. \n\n> Why are inexact morphisms bad, Mommy?\n\nBecause they may not commute (e.g. due to rounding errors), and potentially loose information. \n\n> sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n\nAs an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. \n\n> sage/structure/coerce_actions.pyx:193 - typo \"rikght\"\n\nOops. \n\n> The inplace stuff needs more explanation.\n\nAdded comment. Currently the threshold is set to 0, so no inplace operations are used. \n\n> In coerce_map.pyx, \"differs\" should be \"defers\" in several places.\n\nOops again. \n\n> There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n\nProbably, do you have an example? \n\n> sage/structure/coerce.pyx gets four thumbs up.\n\nThanks.",
+    "body": "Thank you for your good comments. I've incorporated some of the feedback in 3738-referee-comments.patch\n\n> There are no docs in generators.\n\n\nTrue. See my earlier comments.  \n\n> sage/structure/parent.pyx:128 - What is the syntax foo(bar=None, *, etc=None) doing? Does it throw away all but the first non-kwd arg?\n\n\nhttp://www.python.org/dev/peps/pep-3102/\n\n> Why not always pass the parent (_unique morphism)?\n\n\nThere are two use cases, the first is speed for some critical types (Integer, Rational, RealDoubleElement)--the PY_NEW needs a constructor that takes no arguments. The second is often the element constructor is a bound method, in which case the parent is implicitly already passed in. \n\n> sage/structure/parent.pyx:256 (typo) this it will always be \n\n\nFixed. \n\n> In the Parent class, why is it not the case that __call__ delegates to coerce?\n\n\nCoerce throws a (potentially expensive) error on failure.\n\n> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\n\nNote sure what you mean here. \n\n> sage/structure/parent.pyx:~438 - Hom vs. hom should be explained in docs (definitions are there, but perhaps a warning)\n\n\nNot sure I understand what you mean by warning. These functions (and their documentation) are mostly verbatim from the old Parent. \n\n> sage/structure/parent.pyx:597-9 etc. - should this be a copy?\n\n\nYou're right, though now these lists aren't modified near as often. \n\n> sage/structure/parent.pyx:530-1 - why not use the _generic_convert_map here? why does coerce_list use _generic_convert_map? what is the difference?\n\n\nThis should be a coercion, not a conversion. Also, Hom could do something special here. (This code is not mine, don't want to break it now.) \n\n> sage/structure/parent.pyx:807-24 - needs to be resolved\n\n\nThis needs to be thought through some more, but I think leaving the code and comments there does a good job of expressing our intent. \n\n> sage/structure/parent.pyx:839 - what does '\"best\"' mean? (868 - will this change in future patches?)\n\n\nOne that has the lowest _coerce_cost sum, but in reality it isn't used yet. I've changed the docstring to reflect this. \n\n> Can you clarify why _coerce_map_from_ is checked for overrides, but there is no such check for conversion?\n\n\nBecause _coerce_map_from_ and _has_coerce_map_from_ circularly call each other. I clarified this a bit more. \n\n> Why was coerce graph removed? :-(\n\n\nIt wasn't working. I want this too, but it should probably be a separate ticket. \n\n> sage/structure/category_object.pyx:500 WHY ARE YOU WRITING Pyrex?\n\n\nThat was old documentation, but I changed it. \n\n> All the comment blocks at the beginning of files are in the old style. i.e. copyright 2006... etc.\n\n\nLets fix this with another ticket. \n\n> Sometime it's pretty hard to figure out what's going on because there is some pretty damn random stuff with no docs or comments at all. (not a blocking comment, just saying...)\n\n\nI tried to be really explicit with what I'm doing (especially the new stuff) but I won't claim to be perfect. Please ask if there is a particularly befuddling spot. A lot of parent is really, really old code too. \n\n> Why are inexact morphisms bad, Mommy?\n\n\nBecause they may not commute (e.g. due to rounding errors), and potentially loose information. \n\n> sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n\n\nAs an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. \n\n> sage/structure/coerce_actions.pyx:193 - typo \"rikght\"\n\n\nOops. \n\n> The inplace stuff needs more explanation.\n\n\nAdded comment. Currently the threshold is set to 0, so no inplace operations are used. \n\n> In coerce_map.pyx, \"differs\" should be \"defers\" in several places.\n\n\nOops again. \n\n> There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n\n\nProbably, do you have an example? \n\n> sage/structure/coerce.pyx gets four thumbs up.\n\n\nThanks.",
     "created_at": "2008-08-14T06:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -626,93 +623,116 @@ Thank you for your good comments. I've incorporated some of the feedback in 3738
 
 > There are no docs in generators.
 
+
 True. See my earlier comments.  
 
 > sage/structure/parent.pyx:128 - What is the syntax foo(bar=None, *, etc=None) doing? Does it throw away all but the first non-kwd arg?
+
 
 http://www.python.org/dev/peps/pep-3102/
 
 > Why not always pass the parent (_unique morphism)?
 
+
 There are two use cases, the first is speed for some critical types (Integer, Rational, RealDoubleElement)--the PY_NEW needs a constructor that takes no arguments. The second is often the element constructor is a bound method, in which case the parent is implicitly already passed in. 
 
 > sage/structure/parent.pyx:256 (typo) this it will always be 
+
 
 Fixed. 
 
 > In the Parent class, why is it not the case that __call__ delegates to coerce?
 
+
 Coerce throws a (potentially expensive) error on failure.
 
 > sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification
+
 
 Note sure what you mean here. 
 
 > sage/structure/parent.pyx:~438 - Hom vs. hom should be explained in docs (definitions are there, but perhaps a warning)
 
+
 Not sure I understand what you mean by warning. These functions (and their documentation) are mostly verbatim from the old Parent. 
 
 > sage/structure/parent.pyx:597-9 etc. - should this be a copy?
+
 
 You're right, though now these lists aren't modified near as often. 
 
 > sage/structure/parent.pyx:530-1 - why not use the _generic_convert_map here? why does coerce_list use _generic_convert_map? what is the difference?
 
+
 This should be a coercion, not a conversion. Also, Hom could do something special here. (This code is not mine, don't want to break it now.) 
 
 > sage/structure/parent.pyx:807-24 - needs to be resolved
+
 
 This needs to be thought through some more, but I think leaving the code and comments there does a good job of expressing our intent. 
 
 > sage/structure/parent.pyx:839 - what does '"best"' mean? (868 - will this change in future patches?)
 
+
 One that has the lowest _coerce_cost sum, but in reality it isn't used yet. I've changed the docstring to reflect this. 
 
 > Can you clarify why _coerce_map_from_ is checked for overrides, but there is no such check for conversion?
+
 
 Because _coerce_map_from_ and _has_coerce_map_from_ circularly call each other. I clarified this a bit more. 
 
 > Why was coerce graph removed? :-(
 
+
 It wasn't working. I want this too, but it should probably be a separate ticket. 
 
 > sage/structure/category_object.pyx:500 WHY ARE YOU WRITING Pyrex?
+
 
 That was old documentation, but I changed it. 
 
 > All the comment blocks at the beginning of files are in the old style. i.e. copyright 2006... etc.
 
+
 Lets fix this with another ticket. 
 
 > Sometime it's pretty hard to figure out what's going on because there is some pretty damn random stuff with no docs or comments at all. (not a blocking comment, just saying...)
+
 
 I tried to be really explicit with what I'm doing (especially the new stuff) but I won't claim to be perfect. Please ask if there is a particularly befuddling spot. A lot of parent is really, really old code too. 
 
 > Why are inexact morphisms bad, Mommy?
 
+
 Because they may not commute (e.g. due to rounding errors), and potentially loose information. 
 
 > sage/structure/coerce_actions - Why are left and right different, my friends? Python?
+
 
 As an example, let R be a non-commutative ring, and a \in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. 
 
 > sage/structure/coerce_actions.pyx:193 - typo "rikght"
 
+
 Oops. 
 
 > The inplace stuff needs more explanation.
+
 
 Added comment. Currently the threshold is set to 0, so no inplace operations are used. 
 
 > In coerce_map.pyx, "differs" should be "defers" in several places.
 
+
 Oops again. 
 
 > There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?
 
+
 Probably, do you have an example? 
 
 > sage/structure/coerce.pyx gets four thumbs up.
+
 
 Thanks.
 
@@ -723,7 +743,7 @@ Thanks.
 archive/issue_comments_026497.json:
 ```json
 {
-    "body": "> > sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n> \n> Note sure what you mean here. \n\nThere are a few cases where input lists are assigned as is, and then returned to the user (think of gens).  That allows a user to say:\n\nsage: x = R.gens()\nsage: x[0] = 0\nsage: R.gens()\n*wrong*\n\n> > sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n> \n> As an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. \n\nSorry, that wasn't clear.  One of the actions has in_place, the other does not.  Why are they so different?  Is it because there is a *= g but no g =* a?\n\n> > There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n> \n> Probably, do you have an example?\n\nThere is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly.  Seems odd.",
+    "body": "> > sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\n> \n> Note sure what you mean here. \n\n\nThere are a few cases where input lists are assigned as is, and then returned to the user (think of gens).  That allows a user to say:\n\nsage: x = R.gens()\nsage: x[0] = 0\nsage: R.gens()\n*wrong*\n\n> > sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n\n> \n> As an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. \n\n\nSorry, that wasn't clear.  One of the actions has in_place, the other does not.  Why are they so different?  Is it because there is a *= g but no g =* a?\n\n> > There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n\n> \n> Probably, do you have an example?\n\n\nThere is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly.  Seems odd.",
     "created_at": "2008-08-14T06:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -733,8 +753,10 @@ archive/issue_comments_026497.json:
 ```
 
 > > sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification
+
 > 
 > Note sure what you mean here. 
+
 
 There are a few cases where input lists are assigned as is, and then returned to the user (think of gens).  That allows a user to say:
 
@@ -744,14 +766,18 @@ sage: R.gens()
 *wrong*
 
 > > sage/structure/coerce_actions - Why are left and right different, my friends? Python?
+
 > 
 > As an example, let R be a non-commutative ring, and a \in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right. 
+
 
 Sorry, that wasn't clear.  One of the actions has in_place, the other does not.  Why are they so different?  Is it because there is a *= g but no g =* a?
 
 > > There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?
+
 > 
 > Probably, do you have an example?
+
 
 There is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly.  Seems odd.
 
@@ -762,7 +788,7 @@ There is some code that checks if args is not None, and then kwds is not None, a
 archive/issue_comments_026498.json:
 ```json
 {
-    "body": ">>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\n>> Not sure what you mean here.\n\n> There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...\n\nI think they're all OK now. Gens is not passed in this way for instance. \n\n\n>> sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n\n>>  As an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right.\n\n> Sorry, that wasn't clear. One of the actions has in_place, the other does not. Why are they so different? Is it because there is a *= g but no g =* a? \n\nYes, exactly. \n\n>>> There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n\n>> Probably, do you have an example?\n\n> There is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly. Seems odd. \n\nYes, this is for speed. Calling functions with variable-length arguments (and especially keywords) can be an non-negligible overhead for simple elements, and by by far the most common case is to have neither or just a single argument which the code is optimized for.",
+    "body": ">>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\n\n>> Not sure what you mean here.\n\n\n> There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...\n\n\nI think they're all OK now. Gens is not passed in this way for instance. \n\n\n>> sage/structure/coerce_actions - Why are left and right different, my friends? Python?\n\n\n>>  As an example, let R be a non-commutative ring, and a \\in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right.\n\n\n> Sorry, that wasn't clear. One of the actions has in_place, the other does not. Why are they so different? Is it because there is a *= g but no g =* a? \n\n\nYes, exactly. \n\n>>> There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?\n\n\n>> Probably, do you have an example?\n\n\n> There is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly. Seems odd. \n\n\nYes, this is for speed. Calling functions with variable-length arguments (and especially keywords) can be an non-negligible overhead for simple elements, and by by far the most common case is to have neither or just a single argument which the code is optimized for.",
     "created_at": "2008-08-14T07:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -773,26 +799,35 @@ archive/issue_comments_026498.json:
 
 >>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification
 
+
 >> Not sure what you mean here.
 
+
 > There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...
+
 
 I think they're all OK now. Gens is not passed in this way for instance. 
 
 
 >> sage/structure/coerce_actions - Why are left and right different, my friends? Python?
 
+
 >>  As an example, let R be a non-commutative ring, and a \in R. Then a acts on elements in R[x] by multiplication on the left and by multiplication on the right.
 
+
 > Sorry, that wasn't clear. One of the actions has in_place, the other does not. Why are they so different? Is it because there is a *= g but no g =* a? 
+
 
 Yes, exactly. 
 
 >>> There are a lot of if-else statements which special case out things which are automatically handled by Python syntax. Is this for speed?
 
+
 >> Probably, do you have an example?
 
+
 > There is some code that checks if args is not None, and then kwds is not None, and dispatches f(x), f(x, *args), f(x, *args, **kwds) accordingly. Seems odd. 
+
 
 Yes, this is for speed. Calling functions with variable-length arguments (and especially keywords) can be an non-negligible overhead for simple elements, and by by far the most common case is to have neither or just a single argument which the code is optimized for.
 
@@ -803,7 +838,7 @@ Yes, this is for speed. Calling functions with variable-length arguments (and es
 archive/issue_comments_026499.json:
 ```json
 {
-    "body": "Replying to [comment:14 robertwb]:\n> >>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n> \n> >> Not sure what you mean here.\n> \n> > There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...\n> \n> I think they're all OK now. Gens is not passed in this way for instance. \n\nI seem to recall a few instances where this happened which wasn't covered by your latest patch. After looking for a while I can't find any, but I am pretty tired.\n\n\nI just want to say again, this code looks __SOLID__. Excellent work!",
+    "body": "Replying to [comment:14 robertwb]:\n> >>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification\n\n> \n> >> Not sure what you mean here.\n\n> \n> > There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...\n\n> \n> I think they're all OK now. Gens is not passed in this way for instance. \n\n\nI seem to recall a few instances where this happened which wasn't covered by your latest patch. After looking for a while I can't find any, but I am pretty tired.\n\n\nI just want to say again, this code looks __SOLID__. Excellent work!",
     "created_at": "2008-08-14T07:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -814,12 +849,16 @@ archive/issue_comments_026499.json:
 
 Replying to [comment:14 robertwb]:
 > >>> sage/structure/parent.pyx:256 - needs to be wrapped in a list to prevent modification
+
 > 
 > >> Not sure what you mean here.
+
 > 
 > > There are a few cases where input lists are assigned as is, and then returned to the user (think of gens)...
+
 > 
 > I think they're all OK now. Gens is not passed in this way for instance. 
+
 
 I seem to recall a few instances where this happened which wasn't covered by your latest patch. After looking for a while I can't find any, but I am pretty tired.
 
@@ -873,7 +912,7 @@ Michael
 archive/issue_comments_026502.json:
 ```json
 {
-    "body": "Replying to [comment:18 mabshoff]:\n> Someone please review 3738-cardinality.patch and 3738-referee-comments.patch so that I can merge those two patches and close the ticket.\n\nI'll give this a positive review. I haven't run tests with `3738-cardinality.patch`, but it's an obvious typo fix. The patch `3738-cardinality.patch` addresses all of the issues in the referee comments (which are both Nick's and mine, for the record).\n\n + 1",
+    "body": "Replying to [comment:18 mabshoff]:\n> Someone please review 3738-cardinality.patch and 3738-referee-comments.patch so that I can merge those two patches and close the ticket.\n\n\nI'll give this a positive review. I haven't run tests with `3738-cardinality.patch`, but it's an obvious typo fix. The patch `3738-cardinality.patch` addresses all of the issues in the referee comments (which are both Nick's and mine, for the record).\n\n + 1",
     "created_at": "2008-08-14T16:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -884,6 +923,7 @@ archive/issue_comments_026502.json:
 
 Replying to [comment:18 mabshoff]:
 > Someone please review 3738-cardinality.patch and 3738-referee-comments.patch so that I can merge those two patches and close the ticket.
+
 
 I'll give this a positive review. I haven't run tests with `3738-cardinality.patch`, but it's an obvious typo fix. The patch `3738-cardinality.patch` addresses all of the issues in the referee comments (which are both Nick's and mine, for the record).
 
@@ -995,7 +1035,7 @@ I, ncalexan, am fine with review credit.
 archive/issue_comments_026507.json:
 ```json
 {
-    "body": "We need the following fix to make doctests pass with the patches applied:\n\n```\n--- a/sage/structure/parent.pyx Wed Aug 13 18:50:14 2008 -0700\n+++ b/sage/structure/parent.pyx Thu Aug 14 15:03:16 2008 -0700\n@@ -16,6 +16,8 @@\n cimport element\n cimport sage.categories.morphism as morphism\n cimport sage.categories.map as map\n+\n+from copy import copy\n```\n\nCredit goes to William.\n\nCheers,\n\nMichael",
+    "body": "We need the following fix to make doctests pass with the patches applied:\n\n```\n--- a/sage/structure/parent.pyx Wed Aug 13 18:50:14 2008 -0700\n+++ b/sage/structure/parent.pyx Thu Aug 14 15:03:16 2008 -0700\n@@ -16,6 +16,8 @@\n cimport element\n cimport sage.categories.morphism as morphism\n cimport sage.categories.map as map\n+\n+from copy import copy\n```\nCredit goes to William.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-14T22:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3738",
     "type": "issue_comment",
@@ -1016,7 +1056,6 @@ We need the following fix to make doctests pass with the patches applied:
 +
 +from copy import copy
 ```
-
 Credit goes to William.
 
 Cheers,

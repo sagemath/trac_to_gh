@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/246
 archive/issue_comments_001083.json:
 ```json
 {
-    "body": "It would be nice if I could type in the number of lines in the notebook of a cell text area. I'm finding that I want this now.\n\ncell.py\n\n```\n480 <textarea class=\"%s\" rows=%s cols=100000 columns=100000\n481 id = 'cell_input_%s'\n482 onKeyPress = 'return input_keypress(%s,event);'\n483 oninput = 'cell_input_resize(this);'\n484 onFocus = 'return cell_focus(%s)'\n485 onBlur = 'return cell_blur(%s)'\n486 >%s</textarea> \n```\n\n\nThere is a javascript app for this at http://www.peterbe.com/Changing-textarea-size.",
+    "body": "It would be nice if I could type in the number of lines in the notebook of a cell text area. I'm finding that I want this now.\n\ncell.py\n\n```\n480 <textarea class=\"%s\" rows=%s cols=100000 columns=100000\n481 id = 'cell_input_%s'\n482 onKeyPress = 'return input_keypress(%s,event);'\n483 oninput = 'cell_input_resize(this);'\n484 onFocus = 'return cell_focus(%s)'\n485 onBlur = 'return cell_blur(%s)'\n486 >%s</textarea> \n```\n\nThere is a javascript app for this at http://www.peterbe.com/Changing-textarea-size.",
     "created_at": "2007-03-02T18:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/246",
     "type": "issue_comment",
@@ -59,7 +59,6 @@ cell.py
 485 onBlur = 'return cell_blur(%s)'
 486 >%s</textarea> 
 ```
-
 
 There is a javascript app for this at http://www.peterbe.com/Changing-textarea-size.
 

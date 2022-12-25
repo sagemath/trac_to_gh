@@ -3,7 +3,7 @@
 archive/issues_006381.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI don't know if this would ever finish, but it probably shouldn't stop with the following error! (this is in sage-4.0.2 on sage.math):\n\n```\nwstein@sage:~/build/sage-4.0.2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: D=6611719866; E = EllipticCurve([0,0,0,-D^2,0])\nsage: time E.integral_points()\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_points(self, mw_base, both_signs, verbose)\n   5801         if disc > 0:\n   5802             ##Points in egg have X(P) between e1 and e2 [X(P)=x(P)+b2/12]:\n-> 5803             x_int_points = self.integral_x_coords_in_interval((e1-b2_12).ceil(), (e2-b2_12).floor()+1)\n   5804             if verbose:\n   5805                 print 'x-coords of points on compact component with ',(e1-b2_12).ceil(),'<=x<=',(e2-b2_12).floor()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_x_coords_in_interval(self, xmin, xmax)\n   5466         `x`-coordinates of points on this curve.\n   5467         \"\"\"\n-> 5468         return set([x for x  in range(xmin,xmax) if self.is_x_coord(x)])\n   5469 \n   5470     def integral_points(self, mw_base='auto', both_signs=False, verbose=False):\n\nOverflowError: range() result has too many items\n```\n\n\nIt might be better to use xrange, or say that the rank is too big, so the computation would never finish or something meaningful.\n\nOn 32-bit it fails in the same place but with a *different* error:\n\n```\n...\nTypeError: range() integer start argument expected, got sage.rings.integer.Integer.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6381\n\n",
+    "body": "Assignee: @williamstein\n\nI don't know if this would ever finish, but it probably shouldn't stop with the following error! (this is in sage-4.0.2 on sage.math):\n\n```\nwstein@sage:~/build/sage-4.0.2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: D=6611719866; E = EllipticCurve([0,0,0,-D^2,0])\nsage: time E.integral_points()\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_points(self, mw_base, both_signs, verbose)\n   5801         if disc > 0:\n   5802             ##Points in egg have X(P) between e1 and e2 [X(P)=x(P)+b2/12]:\n-> 5803             x_int_points = self.integral_x_coords_in_interval((e1-b2_12).ceil(), (e2-b2_12).floor()+1)\n   5804             if verbose:\n   5805                 print 'x-coords of points on compact component with ',(e1-b2_12).ceil(),'<=x<=',(e2-b2_12).floor()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_x_coords_in_interval(self, xmin, xmax)\n   5466         `x`-coordinates of points on this curve.\n   5467         \"\"\"\n-> 5468         return set([x for x  in range(xmin,xmax) if self.is_x_coord(x)])\n   5469 \n   5470     def integral_points(self, mw_base='auto', both_signs=False, verbose=False):\n\nOverflowError: range() result has too many items\n```\n\nIt might be better to use xrange, or say that the rank is too big, so the computation would never finish or something meaningful.\n\nOn 32-bit it fails in the same place but with a *different* error:\n\n```\n...\nTypeError: range() integer start argument expected, got sage.rings.integer.Integer.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6381\n\n",
     "created_at": "2009-06-21T22:12:09Z",
     "labels": [
         "component: number theory",
@@ -66,7 +66,6 @@ OverflowError                             Traceback (most recent call last)
 OverflowError: range() result has too many items
 ```
 
-
 It might be better to use xrange, or say that the rank is too big, so the computation would never finish or something meaningful.
 
 On 32-bit it fails in the same place but with a *different* error:
@@ -75,7 +74,6 @@ On 32-bit it fails in the same place but with a *different* error:
 ...
 TypeError: range() integer start argument expected, got sage.rings.integer.Integer.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6381
 
@@ -250,7 +248,7 @@ Resolution: fixed
 archive/issue_comments_050990.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n> When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.\n\nVery sorry, I am one of these culprits.  I'll try to remember!",
+    "body": "Replying to [comment:5 mvngu]:\n> When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.\n\n\nVery sorry, I am one of these culprits.  I'll try to remember!",
     "created_at": "2009-07-23T17:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6381",
     "type": "issue_comment",
@@ -261,5 +259,6 @@ archive/issue_comments_050990.json:
 
 Replying to [comment:5 mvngu]:
 > When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.
+
 
 Very sorry, I am one of these culprits.  I'll try to remember!

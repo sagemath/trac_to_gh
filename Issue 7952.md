@@ -3,7 +3,7 @@
 archive/issues_007952.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  jpflori @orlitzky\n\nKeywords: maxima\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c7a742292f424b04\n\n\n```\nOn Jan 10, 6:15\u00a0pm, Harald Schilly <harald.schi...@gmail.com> wrote:\n> Hi, I got this from the report a problem link:\n>\n> Typing (in the inotebook)\n>\n> var('t,k,i')\n> sum(binomial(i+t,t),i,0,k)\n>\n> results in\n>\n> binomial(k + t + 1, t + 1) - 1\n>\n> which is false, the well-known answer is binomial(k + t + 1, t + 1)  \n\nThere is a fix for this bug in maxima cvs. If you don't want to wait\nfor the next release I can provide a patch.\n\nAndrej\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7952\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jpflori @orlitzky\n\nKeywords: maxima\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c7a742292f424b04\n\n```\nOn Jan 10, 6:15\u00a0pm, Harald Schilly <harald.schi...@gmail.com> wrote:\n> Hi, I got this from the report a problem link:\n>\n> Typing (in the inotebook)\n>\n> var('t,k,i')\n> sum(binomial(i+t,t),i,0,k)\n>\n> results in\n>\n> binomial(k + t + 1, t + 1) - 1\n>\n> which is false, the well-known answer is binomial(k + t + 1, t + 1)  \n\nThere is a fix for this bug in maxima cvs. If you don't want to wait\nfor the next release I can provide a patch.\n\nAndrej\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7952\n\n",
     "created_at": "2010-01-16T18:08:01Z",
     "labels": [
         "component: symbolics",
@@ -26,7 +26,6 @@ From the following sage-devel thread:
 
 http://groups.google.com/group/sage-devel/t/c7a742292f424b04
 
-
 ```
 On Jan 10, 6:15 pm, Harald Schilly <harald.schi...@gmail.com> wrote:
 > Hi, I got this from the report a problem link:
@@ -47,7 +46,6 @@ for the next release I can provide a patch.
 
 Andrej
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7952
 

@@ -205,7 +205,7 @@ Superseded by #8115
 archive/issue_comments_022811.json:
 ```json
 {
-    "body": "\n```\nAs I understand,\n\nhttp://trac.sagemath.org/sage_trac/ticket/3304\n\nshould be just closed, not reviewed, since another ticket took care of\nthe issue.\n\nSince only release managers should close tickets, I am leaving the\nticket as is and posting here.\n\nThank you,\nAndrey\n```\n",
+    "body": "```\nAs I understand,\n\nhttp://trac.sagemath.org/sage_trac/ticket/3304\n\nshould be just closed, not reviewed, since another ticket took care of\nthe issue.\n\nSince only release managers should close tickets, I am leaving the\nticket as is and posting here.\n\nThank you,\nAndrey\n```",
     "created_at": "2010-06-02T23:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
@@ -213,7 +213,6 @@ archive/issue_comments_022811.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 As I understand,
@@ -229,7 +228,6 @@ ticket as is and posting here.
 Thank you,
 Andrey
 ```
-
 
 
 

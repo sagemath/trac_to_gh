@@ -3,7 +3,7 @@
 archive/issues_008525.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nNote max_points versus point_count (in INPUT) below:\n\n\n```\nFile: /home/wstein/sage/local/lib/python2.6/site-packages/sage/rings/padics/padic_base_generic.py\n\nType: <type \u2018instancemethod\u2019>\n\nDefinition: k.plot(max_points=2500, **args)\n\nDocstring:\n\n    Creates a visualization of this p-adic ring as a fractal similar as a generalization of the the Sierpi\u2019nski triangle. The resulting image attempts to capture the algebraic and topological characteristics of \u2124p.\n\n    INPUT:\n\n        * point_count \u2013 the maximum number or points to plot, which controls the depth of recursion (default 2500)\n        * **args \u2013 color, size, etc. that are passed to the underlying point graphics objects\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8525\n\n",
+    "body": "Assignee: @roed314\n\nNote max_points versus point_count (in INPUT) below:\n\n```\nFile: /home/wstein/sage/local/lib/python2.6/site-packages/sage/rings/padics/padic_base_generic.py\n\nType: <type \u2018instancemethod\u2019>\n\nDefinition: k.plot(max_points=2500, **args)\n\nDocstring:\n\n    Creates a visualization of this p-adic ring as a fractal similar as a generalization of the the Sierpi\u2019nski triangle. The resulting image attempts to capture the algebraic and topological characteristics of \u2124p.\n\n    INPUT:\n\n        * point_count \u2013 the maximum number or points to plot, which controls the depth of recursion (default 2500)\n        * **args \u2013 color, size, etc. that are passed to the underlying point graphics objects\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8525\n\n",
     "created_at": "2010-03-13T17:22:55Z",
     "labels": [
         "component: padics",
@@ -21,7 +21,6 @@ Assignee: @roed314
 
 Note max_points versus point_count (in INPUT) below:
 
-
 ```
 File: /home/wstein/sage/local/lib/python2.6/site-packages/sage/rings/padics/padic_base_generic.py
 
@@ -38,7 +37,6 @@ Docstring:
         * point_count – the maximum number or points to plot, which controls the depth of recursion (default 2500)
         * **args – color, size, etc. that are passed to the underlying point graphics objects
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8525
 

@@ -69,7 +69,7 @@ for MATLAB.
 archive/issue_comments_065621.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> Wow, this is an incredibly general ticket.   \nWell, the person who asked it asked an incredibly general question!  Hence sage-wishlist.  \n\nMore seriously, probably each of these, if feasible, would eventually be a \"real\" ticket.",
+    "body": "Replying to [comment:2 was]:\n> Wow, this is an incredibly general ticket.   \n\nWell, the person who asked it asked an incredibly general question!  Hence sage-wishlist.  \n\nMore seriously, probably each of these, if feasible, would eventually be a \"real\" ticket.",
     "created_at": "2009-12-11T22:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7669",
     "type": "issue_comment",
@@ -80,6 +80,7 @@ archive/issue_comments_065621.json:
 
 Replying to [comment:2 was]:
 > Wow, this is an incredibly general ticket.   
+
 Well, the person who asked it asked an incredibly general question!  Hence sage-wishlist.  
 
 More seriously, probably each of these, if feasible, would eventually be a "real" ticket.

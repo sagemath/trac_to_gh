@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4100
 archive/issue_comments_029523.json:
 ```json
 {
-    "body": "Before\n\n\n```\nsage: timeit(\"1 == None\")\n625 loops, best of 3: 625 \u00b5s per loop\n```\n\n\nAfter\n\n\n```\nsage: timeit(\"1 == None\")\n625 loops, best of 3: 530 ns per loop\n```\n\n\nThis is at least close to \n\n\n```\nsage: timeit(\"1 is None\")\n625 loops, best of 3: 330 ns per loop\n```\n\n\nbut people who don't know about the `is` operator shouldn't be hit that bad...",
+    "body": "Before\n\n```\nsage: timeit(\"1 == None\")\n625 loops, best of 3: 625 \u00b5s per loop\n```\n\nAfter\n\n```\nsage: timeit(\"1 == None\")\n625 loops, best of 3: 530 ns per loop\n```\n\nThis is at least close to \n\n```\nsage: timeit(\"1 is None\")\n625 loops, best of 3: 330 ns per loop\n```\n\nbut people who don't know about the `is` operator shouldn't be hit that bad...",
     "created_at": "2008-09-11T06:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
@@ -42,30 +42,24 @@ archive/issue_comments_029523.json:
 
 Before
 
-
 ```
 sage: timeit("1 == None")
 625 loops, best of 3: 625 µs per loop
 ```
 
-
 After
-
 
 ```
 sage: timeit("1 == None")
 625 loops, best of 3: 530 ns per loop
 ```
 
-
 This is at least close to 
-
 
 ```
 sage: timeit("1 is None")
 625 loops, best of 3: 330 ns per loop
 ```
-
 
 but people who don't know about the `is` operator shouldn't be hit that bad...
 
@@ -112,7 +106,7 @@ Review:  patch applies ok to 3.1.2 and all tests in sage/structure pass.  ok!
 archive/issue_comments_029526.json:
 ```json
 {
-    "body": "This patch causes a doctest failure in gen.pyx:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/libs/pari/gen.pyx\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/gen.py\", line 689:\n    sage: pari(2.5) > None\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/.doctest_gen.py\n         [56.1 s]\n```\n",
+    "body": "This patch causes a doctest failure in gen.pyx:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/libs/pari/gen.pyx\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/gen.py\", line 689:\n    sage: pari(2.5) > None\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/.doctest_gen.py\n         [56.1 s]\n```",
     "created_at": "2008-09-19T02:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
@@ -140,7 +134,6 @@ Got:
 For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha0/tmp/.doctest_gen.py
          [56.1 s]
 ```
-
 
 
 

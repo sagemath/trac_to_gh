@@ -123,7 +123,7 @@ In v9, "Evaluate All" can delay the updates of freshly rendered interacts.  I ca
 archive/issue_comments_065574.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> A pre-existing bug:\n> [...] \n> ?  It seems the client and server cell lists are out of sync.  This might explain the \"spontaneously appended cell\" phenomenon.\n\nThe \"B\"-series of patches at #6855 should fix this problem.",
+    "body": "Replying to [comment:3 mpatel]:\n> A pre-existing bug:\n> [...] \n> ?  It seems the client and server cell lists are out of sync.  This might explain the \"spontaneously appended cell\" phenomenon.\n\n\nThe \"B\"-series of patches at #6855 should fix this problem.",
     "created_at": "2009-12-24T22:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ Replying to [comment:3 mpatel]:
 > A pre-existing bug:
 > [...] 
 > ?  It seems the client and server cell lists are out of sync.  This might explain the "spontaneously appended cell" phenomenon.
+
 
 The "B"-series of patches at #6855 should fix this problem.
 
@@ -264,7 +265,7 @@ Just a quick note:  I'm working on breaking this up into more manageable pieces.
 archive/issue_comments_065581.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> Just a quick note:  I'm working on breaking this up into more manageable pieces.\nWith Tim's permission, I've added the Se test framework changes to #7786.",
+    "body": "Replying to [comment:11 mpatel]:\n> Just a quick note:  I'm working on breaking this up into more manageable pieces.\n\nWith Tim's permission, I've added the Se test framework changes to #7786.",
     "created_at": "2010-01-06T15:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -275,6 +276,7 @@ archive/issue_comments_065581.json:
 
 Replying to [comment:11 mpatel]:
 > Just a quick note:  I'm working on breaking this up into more manageable pieces.
+
 With Tim's permission, I've added the Se test framework changes to #7786.
 
 
@@ -442,7 +444,7 @@ Without a space at the start of the line, sometimes there's no problem.  Notice 
 archive/issue_comments_065589.json:
 ```json
 {
-    "body": "Replying to [comment:20 rbeezer]:\n> mpatel asked if I would test this package.  Some observations follow,  Firefox 3.5.6 on Kubuntu 9.10.\nThanks for your detailed feedback!\n> 1.  ESC on introspection seems to be working (a great addition!).  First time I hit \n> 2.  Formatted labels are working in interacts, but now I don't see any output.\nI think the JavaScript compressor *may* be so aggressive that it's changing the semantics of the code.  Could you try this (but don't bother if it's too much trouble):\n\n* Insert `debug_mode = False` just before `_cache_javascript = None` in `$SAGE_ROOT/local/lib/python2.6/site-packages/sagenb-0.5-py2.6.egg/sagenb/notebook/js.py`.\n* Restart the server, clear the browser's cache, and test ESC and `interact`s again.\n\n> 3.  Was testing resizing cells on paste:\n> (a) paste into a new cell, hit edit key and the pasted text is gone.\nThis should be easy to fix by also sending the input to the server just after the paste event.\n> (b) this one took me a while\nI've noticed this, too.  The server code and JS library use different methods to (re)size a cell.  The server does the sizing just before it sends the worksheet to the browser (e.g., on first display, after exiting \"Edit\" mode, etc.), but the browser resizes in between.  I don't know how easy it is to reconcile the methods, but I'll definitely take a closer look.",
+    "body": "Replying to [comment:20 rbeezer]:\n> mpatel asked if I would test this package.  Some observations follow,  Firefox 3.5.6 on Kubuntu 9.10.\n\nThanks for your detailed feedback!\n> 1.  ESC on introspection seems to be working (a great addition!).  First time I hit \n> 2.  Formatted labels are working in interacts, but now I don't see any output.\n  \nI think the JavaScript compressor *may* be so aggressive that it's changing the semantics of the code.  Could you try this (but don't bother if it's too much trouble):\n\n   * Insert `debug_mode = False` just before `_cache_javascript = None` in `$SAGE_ROOT/local/lib/python2.6/site-packages/sagenb-0.5-py2.6.egg/sagenb/notebook/js.py`.\n   * Restart the server, clear the browser's cache, and test ESC and `interact`s again.\n\n> 3.  Was testing resizing cells on paste:\n> (a) paste into a new cell, hit edit key and the pasted text is gone.\n\nThis should be easy to fix by also sending the input to the server just after the paste event.\n> (b) this one took me a while\n\nI've noticed this, too.  The server code and JS library use different methods to (re)size a cell.  The server does the sizing just before it sends the worksheet to the browser (e.g., on first display, after exiting \"Edit\" mode, etc.), but the browser resizes in between.  I don't know how easy it is to reconcile the methods, but I'll definitely take a closer look.",
     "created_at": "2010-01-10T07:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -453,18 +455,22 @@ archive/issue_comments_065589.json:
 
 Replying to [comment:20 rbeezer]:
 > mpatel asked if I would test this package.  Some observations follow,  Firefox 3.5.6 on Kubuntu 9.10.
+
 Thanks for your detailed feedback!
 > 1.  ESC on introspection seems to be working (a great addition!).  First time I hit 
 > 2.  Formatted labels are working in interacts, but now I don't see any output.
+  
 I think the JavaScript compressor *may* be so aggressive that it's changing the semantics of the code.  Could you try this (but don't bother if it's too much trouble):
 
-* Insert `debug_mode = False` just before `_cache_javascript = None` in `$SAGE_ROOT/local/lib/python2.6/site-packages/sagenb-0.5-py2.6.egg/sagenb/notebook/js.py`.
-* Restart the server, clear the browser's cache, and test ESC and `interact`s again.
+   * Insert `debug_mode = False` just before `_cache_javascript = None` in `$SAGE_ROOT/local/lib/python2.6/site-packages/sagenb-0.5-py2.6.egg/sagenb/notebook/js.py`.
+   * Restart the server, clear the browser's cache, and test ESC and `interact`s again.
 
 > 3.  Was testing resizing cells on paste:
 > (a) paste into a new cell, hit edit key and the pasted text is gone.
+
 This should be easy to fix by also sending the input to the server just after the paste event.
 > (b) this one took me a while
+
 I've noticed this, too.  The server code and JS library use different methods to (re)size a cell.  The server does the sizing just before it sends the worksheet to the browser (e.g., on first display, after exiting "Edit" mode, etc.), but the browser resizes in between.  I don't know how easy it is to reconcile the methods, but I'll definitely take a closer look.
 
 
@@ -514,7 +520,7 @@ I'm not sure what to do about the compressor.  See #7787 and [sage-notebook](htt
 archive/issue_comments_065592.json:
 ```json
 {
-    "body": "Found the problem: The `JavaScriptCompressor` converts, in effect,\n\n```js\nfunction foo() {\n    return 'hello';\n}\n```\n\nto\n\n```js\nfunction foo(){return \n'hello'\n;}\n```\n\nBut\n\n  [In JavaScript, a linefeed can be whitespace or it can act as a semicolon. This replaces one ambiguity with another.](http://www.jslint.com/lint.html)\n\nIn particular, if I execute `foo();`, the former returns `'hello'` and latter returns `undefined`.  I've modified the compressor in V5 so that it does not insert extra `'\\n'`s.  Of course, we should replace this with an free / open source, stable, Pythonic minifier (see above), when we can.  By the way, the YUI Compressor yields\n\n```js\nfunction foo(){return\"hello\"}\n```\n",
+    "body": "Found the problem: The `JavaScriptCompressor` converts, in effect,\n\n```js\nfunction foo() {\n    return 'hello';\n}\n```\nto\n\n```js\nfunction foo(){return \n'hello'\n;}\n```\nBut\n\n  [In JavaScript, a linefeed can be whitespace or it can act as a semicolon. This replaces one ambiguity with another.](http://www.jslint.com/lint.html)\n\nIn particular, if I execute `foo();`, the former returns `'hello'` and latter returns `undefined`.  I've modified the compressor in V5 so that it does not insert extra `'\\n'`s.  Of course, we should replace this with an free / open source, stable, Pythonic minifier (see above), when we can.  By the way, the YUI Compressor yields\n\n```js\nfunction foo(){return\"hello\"}\n```",
     "created_at": "2010-01-10T15:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -530,7 +536,6 @@ function foo() {
     return 'hello';
 }
 ```
-
 to
 
 ```js
@@ -538,7 +543,6 @@ function foo(){return
 'hello'
 ;}
 ```
-
 But
 
   [In JavaScript, a linefeed can be whitespace or it can act as a semicolon. This replaces one ambiguity with another.](http://www.jslint.com/lint.html)
@@ -548,7 +552,6 @@ In particular, if I execute `foo();`, the former returns `'hello'` and latter re
 ```js
 function foo(){return"hello"}
 ```
-
 
 
 
@@ -593,7 +596,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065595.json:
 ```json
 {
-    "body": "Excellent work. Cleans up the library quite well.\n\nI've rebased the patch on a new patch queue, but since the reject is just some empty lines, I'll mark this with a positive review.\n\n\n```\n--- notebook_lib.js\n+++ notebook_lib.js\n@@ -4376,10 +4676,10 @@ function decode64(input) {\n     return output;\n }\n \n+\n ///////////////////////////////////////////////////////////////////\n // Trash\n ///////////////////////////////////////////////////////////////////\n-\n function empty_trash() {\n     /*\n     Empties the trash folder, after asking for confirmation.\n```\n\n\nThe new patch queue is:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\n```\n",
+    "body": "Excellent work. Cleans up the library quite well.\n\nI've rebased the patch on a new patch queue, but since the reject is just some empty lines, I'll mark this with a positive review.\n\n```\n--- notebook_lib.js\n+++ notebook_lib.js\n@@ -4376,10 +4676,10 @@ function decode64(input) {\n     return output;\n }\n \n+\n ///////////////////////////////////////////////////////////////////\n // Trash\n ///////////////////////////////////////////////////////////////////\n-\n function empty_trash() {\n     /*\n     Empties the trash folder, after asking for confirmation.\n```\n\nThe new patch queue is:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\n```",
     "created_at": "2010-01-17T21:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -605,7 +608,6 @@ archive/issue_comments_065595.json:
 Excellent work. Cleans up the library quite well.
 
 I've rebased the patch on a new patch queue, but since the reject is just some empty lines, I'll mark this with a positive review.
-
 
 ```
 --- notebook_lib.js
@@ -624,9 +626,7 @@ I've rebased the patch on a new patch queue, but since the reject is just some e
      Empties the trash folder, after asking for confirmation.
 ```
 
-
 The new patch queue is:
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -640,7 +640,6 @@ trac_7874-typeset_interact_labels.patch
 trac_7858-key_binding_vars_v2.patch
 trac_7666-alphanumeric_cell_ids_B5.patch
 ```
-
 
 
 
@@ -761,7 +760,7 @@ I think that the rule is made for functions with less than say, 5, variables. Pu
 archive/issue_comments_065602.json:
 ```json
 {
-    "body": "B7 does this\n\n```js\nfunction bar() {\n    var foo1, foo2, foo3, foo4, foo5, foo6,\n        foo7, foo8, foo9, foo10;\n    // ...\n}\n```\n",
+    "body": "B7 does this\n\n```js\nfunction bar() {\n    var foo1, foo2, foo3, foo4, foo5, foo6,\n        foo7, foo8, foo9, foo10;\n    // ...\n}\n```",
     "created_at": "2010-01-18T07:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7666",
     "type": "issue_comment",
@@ -779,7 +778,6 @@ function bar() {
     // ...
 }
 ```
-
 
 
 

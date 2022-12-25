@@ -164,7 +164,7 @@ Btw, IMHO `libcsage` and `libstdcxx` should **not** be "linked" unconditionally 
 archive/issue_comments_069638.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n\n> Btw, IMHO `libcsage` and `libstdcxx` should **not** be \"linked\" unconditionally (especially regardless of the module's `language`) to each and every module.\n> (I recently started sorting out which modules really directly use `libcsage`, and did add `\"stdcxx\"` to `libraries` only if `language==\"c++\"`. Currently suspended work in progress...)\n\nFor sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences). \n\nFor the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though.",
+    "body": "Replying to [comment:7 leif]:\n\n> Btw, IMHO `libcsage` and `libstdcxx` should **not** be \"linked\" unconditionally (especially regardless of the module's `language`) to each and every module.\n> (I recently started sorting out which modules really directly use `libcsage`, and did add `\"stdcxx\"` to `libraries` only if `language==\"c++\"`. Currently suspended work in progress...)\n\n\nFor sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences). \n\nFor the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though.",
     "created_at": "2010-06-03T00:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7987",
     "type": "issue_comment",
@@ -178,6 +178,7 @@ Replying to [comment:7 leif]:
 > Btw, IMHO `libcsage` and `libstdcxx` should **not** be "linked" unconditionally (especially regardless of the module's `language`) to each and every module.
 > (I recently started sorting out which modules really directly use `libcsage`, and did add `"stdcxx"` to `libraries` only if `language=="c++"`. Currently suspended work in progress...)
 
+
 For sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences). 
 
 For the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though.
@@ -189,7 +190,7 @@ For the record, I plan to add this functionality to Cython soon (including trans
 archive/issue_comments_069639.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> Replying to [comment:7 leif]:\n> \n> > Btw, IMHO `libcsage` and `libstdcxx` should **not** be \"linked\" unconditionally (especially regardless of the module's `language`) to each and every module.\n> > (I recently started sorting out which modules really directly use `libcsage`, and did add `\"stdcxx\"` to `libraries` only if `language==\"c++\"`. Currently suspended work in progress...)\n> \n> For sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences).\n\nYes. The unconditional inclusion is anyhow performed in `setup.py`. \n\n> For the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though. \n\nI just wanted to decrease the number of tickets needing review. ;-)\n\nP.S.: `s/stdcxx/stdc++/`",
+    "body": "Replying to [comment:8 robertwb]:\n> Replying to [comment:7 leif]:\n> \n> > Btw, IMHO `libcsage` and `libstdcxx` should **not** be \"linked\" unconditionally (especially regardless of the module's `language`) to each and every module.\n> > (I recently started sorting out which modules really directly use `libcsage`, and did add `\"stdcxx\"` to `libraries` only if `language==\"c++\"`. Currently suspended work in progress...)\n\n> \n> For sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences).\n\n\nYes. The unconditional inclusion is anyhow performed in `setup.py`. \n\n> For the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though. \n\n\nI just wanted to decrease the number of tickets needing review. ;-)\n\nP.S.: `s/stdcxx/stdc++/`",
     "created_at": "2010-06-03T01:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7987",
     "type": "issue_comment",
@@ -203,12 +204,15 @@ Replying to [comment:8 robertwb]:
 > 
 > > Btw, IMHO `libcsage` and `libstdcxx` should **not** be "linked" unconditionally (especially regardless of the module's `language`) to each and every module.
 > > (I recently started sorting out which modules really directly use `libcsage`, and did add `"stdcxx"` to `libraries` only if `language=="c++"`. Currently suspended work in progress...)
+
 > 
 > For sure, but I figured it'd be better to refractor and clean things up in separate steps (in case one or the other has unintended consequences).
+
 
 Yes. The unconditional inclusion is anyhow performed in `setup.py`. 
 
 > For the record, I plan to add this functionality to Cython soon (including transitivity of library dependance), so that may make this patch invalid. Sorting what modules actually need what will be very useful though. 
+
 
 I just wanted to decrease the number of tickets needing review. ;-)
 
@@ -410,7 +414,7 @@ archive/issue_events_019117.json:
 archive/issue_comments_069642.json:
 ```json
 {
-    "body": "Replying to [ticket:7987 jdemeyer]:\n> See also #15140.\n\nSure?",
+    "body": "Replying to [ticket:7987 jdemeyer]:\n> See also #15140.\n\n\nSure?",
     "created_at": "2015-04-13T09:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7987",
     "type": "issue_comment",
@@ -421,6 +425,7 @@ archive/issue_comments_069642.json:
 
 Replying to [ticket:7987 jdemeyer]:
 > See also #15140.
+
 
 Sure?
 

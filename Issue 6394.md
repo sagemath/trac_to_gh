@@ -3,7 +3,7 @@
 archive/issues_006394.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThese are the failing tests:\n\n```\n        sage -t  devel/sage-main/sage/databases/database.py # 20 doctests failed\n        sage -t  devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/graphs/graph.py # 25 doctests failed\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6394\n\n",
+    "body": "Assignee: @rlmill\n\nThese are the failing tests:\n\n```\n        sage -t  devel/sage-main/sage/databases/database.py # 20 doctests failed\n        sage -t  devel/sage-main/sage/geometry/polyhedra.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/graphs/graph.py # 25 doctests failed\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6394\n\n",
     "created_at": "2009-06-24T11:56:39Z",
     "labels": [
         "component: graph theory",
@@ -27,7 +27,6 @@ These are the failing tests:
         sage -t  devel/sage-main/sage/graphs/graph.py # 25 doctests failed
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6394
 

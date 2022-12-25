@@ -66,7 +66,7 @@ This patch depends on #4103.
 archive/issue_comments_029660.json:
 ```json
 {
-    "body": "It refused to apply for me:\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.alpha4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: plot-slope\nsage: hg_sage.apply(\"/home/wdj/sagefiles/plot_slope_field.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg import   \"/home/wdj/sagefiles/plot_slope_field.patch\"\napplying /home/wdj/sagefiles/plot_slope_field.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 2242\n1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "It refused to apply for me:\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.alpha4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: plot-slope\nsage: hg_sage.apply(\"/home/wdj/sagefiles/plot_slope_field.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.alpha4/devel/sage\" && hg import   \"/home/wdj/sagefiles/plot_slope_field.patch\"\napplying /home/wdj/sagefiles/plot_slope_field.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 2242\n1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-09-13T12:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ archive/issue_comments_029660.json:
 ```
 
 It refused to apply for me:
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.1.2.alpha4$ ./sage
@@ -93,7 +92,6 @@ Hunk #1 FAILED at 2242
 1 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -159,7 +157,7 @@ Thanks.
 archive/issue_comments_029664.json:
 ```json
 {
-    "body": "This and #4103 apply to 3.1.2 and pass sage -testall. It does a great job and is a very valuable addition.\n\nA question for possibly a future patch: it will not plot\n\n```\nplot_slope_field(x/y, (x,-3,3), (y,-3,3)).show(aspect_ratio=1)\n```\n\nbecause of the problem at y=0. However, should it? A slope of plus or minus infinity has a well-defined meaning. Should one try to trap singularities like that and just plot them as vertical direction fields in the future?\n\nAnyway, thanks Jason for this nice addition! This will be very useful for teaching differential equations.",
+    "body": "This and #4103 apply to 3.1.2 and pass sage -testall. It does a great job and is a very valuable addition.\n\nA question for possibly a future patch: it will not plot\n\n```\nplot_slope_field(x/y, (x,-3,3), (y,-3,3)).show(aspect_ratio=1)\n```\nbecause of the problem at y=0. However, should it? A slope of plus or minus infinity has a well-defined meaning. Should one try to trap singularities like that and just plot them as vertical direction fields in the future?\n\nAnyway, thanks Jason for this nice addition! This will be very useful for teaching differential equations.",
     "created_at": "2008-09-18T13:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
@@ -175,7 +173,6 @@ A question for possibly a future patch: it will not plot
 ```
 plot_slope_field(x/y, (x,-3,3), (y,-3,3)).show(aspect_ratio=1)
 ```
-
 because of the problem at y=0. However, should it? A slope of plus or minus infinity has a well-defined meaning. Should one try to trap singularities like that and just plot them as vertical direction fields in the future?
 
 Anyway, thanks Jason for this nice addition! This will be very useful for teaching differential equations.

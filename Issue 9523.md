@@ -3,7 +3,7 @@
 archive/issues_009523.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nUnder Arch linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\n\nin the middle of the sqlite build (the next package built after readline).\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nUnder Arch linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\nin the middle of the sqlite build (the next package built after readline).\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
     "created_at": "2010-07-17T04:43:30Z",
     "labels": [
         "component: packages: standard",
@@ -25,7 +25,6 @@ Under Arch linux, Sage fails to build, giving this error message:
 ```
 bash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook
 ```
-
 in the middle of the sqlite build (the next package built after readline).
 
 This is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.
@@ -101,7 +100,7 @@ Florent
 archive/issue_comments_091388.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n\nIndeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.",
+    "body": "Replying to [comment:3 hivert]:\n> Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n\n\nIndeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.",
     "created_at": "2010-09-15T21:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -112,6 +111,7 @@ archive/issue_comments_091388.json:
 
 Replying to [comment:3 hivert]:
 > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...
+
 
 Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.
 
@@ -140,7 +140,7 @@ Changing priority from major to blocker.
 archive/issue_comments_091390.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Replying to [comment:3 hivert]:\n> > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n> \n> Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.\n\n[Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).\n\nWe should try to fix this in 4.6 or 4.6.1.",
+    "body": "Replying to [comment:4 mpatel]:\n> Replying to [comment:3 hivert]:\n> > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n\n> \n> Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.\n\n\n[Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).\n\nWe should try to fix this in 4.6 or 4.6.1.",
     "created_at": "2010-09-18T09:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -152,8 +152,10 @@ archive/issue_comments_091390.json:
 Replying to [comment:4 mpatel]:
 > Replying to [comment:3 hivert]:
 > > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...
+
 > 
 > Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.
+
 
 [Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).
 
@@ -184,7 +186,7 @@ Note that this wouldn't happen with proper shared library versioning... :|
 archive/issue_comments_091392.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> Replying to [comment:4 mpatel]:\n> > Replying to [comment:3 hivert]:\n> > > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n> > \n> > Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.\n> \n> [Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).\n\nAnd at [AskSage](http://ask.sagemath.org/question/135/trying-to-install-sage-to-suse-113).",
+    "body": "Replying to [comment:7 mpatel]:\n> Replying to [comment:4 mpatel]:\n> > Replying to [comment:3 hivert]:\n> > > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...\n\n> > \n> > Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.\n\n> \n> [Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).\n\n\nAnd at [AskSage](http://ask.sagemath.org/question/135/trying-to-install-sage-to-suse-113).",
     "created_at": "2010-09-19T06:36:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -197,10 +199,13 @@ Replying to [comment:7 mpatel]:
 > Replying to [comment:4 mpatel]:
 > > Replying to [comment:3 hivert]:
 > > > Just to let you now ! The very same problem occurs with the new openSuSE 11.3...
+
 > > 
 > > Indeed, there's [a recent thread about readline and openSUSE](http://groups.google.com/group/sage-support/browse_thread/thread/973316c62d190197) on sage-support.
+
 > 
 > [Another](http://groups.google.com/group/sage-support/browse_thread/thread/8757b2515155ab42#).
+
 
 And at [AskSage](http://ask.sagemath.org/question/135/trying-to-install-sage-to-suse-113).
 
@@ -254,7 +259,7 @@ archive/issue_events_023661.json:
 archive/issue_comments_091394.json:
 ```json
 {
-    "body": "I've updated the source code, and cleaned up the package a bit. If others want to clean it up further, feel free, but I don't want to spend a lot of time on this. It is not even causing any problems on any systems I'm using. The .spkg can be found here.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/readline-6.1.spkg\n\nI've checked the new .spkg actually builds on the following systems\n* AIX 5.3 (my own RS/6000 7025 F50 'aixbox') I did **not** try to resolve #9987\n* HP-UX 11.11B (my own HP C3600 'hpbox')\n* Linux (sage.math)\n* OpenSolaris 06/2009 (my own Sun Ultra 27 'hawk' which is a Sage buildbot slave.)\n* OS X (bsd.math)\n* Solaris 10 SPARC ('mark' on skynet, which is a Sun Blade 2500)\n \nI've checked that the whole of Sage builds, and passes all doctests \n\n\n```\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1740.4 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ \n```\n\n\nwith the updated .spkg on only the following system. \n\n* OpenSolaris (my own Sun Ultra 27 'hawk' which is a Sage buildbot slave)\n\nI've **not** checked this on any of the systems which have been known to cause issues with readline (FreeBSD, ArchLinux, OpenSUSE etc). \n\n\nDave",
+    "body": "I've updated the source code, and cleaned up the package a bit. If others want to clean it up further, feel free, but I don't want to spend a lot of time on this. It is not even causing any problems on any systems I'm using. The .spkg can be found here.\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/readline-6.1.spkg\n\nI've checked the new .spkg actually builds on the following systems\n* AIX 5.3 (my own RS/6000 7025 F50 'aixbox') I did **not** try to resolve #9987\n* HP-UX 11.11B (my own HP C3600 'hpbox')\n* Linux (sage.math)\n* OpenSolaris 06/2009 (my own Sun Ultra 27 'hawk' which is a Sage buildbot slave.)\n* OS X (bsd.math)\n* Solaris 10 SPARC ('mark' on skynet, which is a Sun Blade 2500)\n \nI've checked that the whole of Sage builds, and passes all doctests \n\n```\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1740.4 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ \n```\n\nwith the updated .spkg on only the following system. \n\n* OpenSolaris (my own Sun Ultra 27 'hawk' which is a Sage buildbot slave)\n\nI've **not** checked this on any of the systems which have been known to cause issues with readline (FreeBSD, ArchLinux, OpenSUSE etc). \n\n\nDave",
     "created_at": "2010-10-24T10:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -277,14 +282,12 @@ I've checked the new .spkg actually builds on the following systems
  
 I've checked that the whole of Sage builds, and passes all doctests 
 
-
 ```
 ----------------------------------------------------------------------
 All tests passed!
 Total time for all tests: 1740.4 seconds
 drkirkby@hawk:~/sage-4.6.rc0$ 
 ```
-
 
 with the updated .spkg on only the following system. 
 
@@ -422,7 +425,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091401.json:
 ```json
 {
-    "body": "Hi David !\n\nReplying to [comment:15 drkirkby]:\n> This now needs review. \n> \n> Please test, especially on platforms where there has been problems with readline, which appear to be many!\n\nThanks for taking care of that. I'm trying to compile sage 4.6.rc0 with your\nreadline spkg on a 64 bits openSuSE 11.3. It seems to work ! My machine is now\ncompiling ATLAS and the \"undefined symbol\" vanished. However, as I posted on\n[sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/bb636656e2153332?hl=en_US), it seems that there is another problem on this architecture. So I don't think I'll get a working sage.",
+    "body": "Hi David !\n\nReplying to [comment:15 drkirkby]:\n> This now needs review. \n> \n> Please test, especially on platforms where there has been problems with readline, which appear to be many!\n\n\nThanks for taking care of that. I'm trying to compile sage 4.6.rc0 with your\nreadline spkg on a 64 bits openSuSE 11.3. It seems to work ! My machine is now\ncompiling ATLAS and the \"undefined symbol\" vanished. However, as I posted on\n[sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/bb636656e2153332?hl=en_US), it seems that there is another problem on this architecture. So I don't think I'll get a working sage.",
     "created_at": "2010-10-24T13:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -438,6 +441,7 @@ Replying to [comment:15 drkirkby]:
 > 
 > Please test, especially on platforms where there has been problems with readline, which appear to be many!
 
+
 Thanks for taking care of that. I'm trying to compile sage 4.6.rc0 with your
 readline spkg on a 64 bits openSuSE 11.3. It seems to work ! My machine is now
 compiling ATLAS and the "undefined symbol" vanished. However, as I posted on
@@ -450,7 +454,7 @@ compiling ATLAS and the "undefined symbol" vanished. However, as I posted on
 archive/issue_comments_091402.json:
 ```json
 {
-    "body": "A few comments:\n\n* The way `CFLAGS` (and `CXXFLAGS`) are set overrides user-specified settings (`-O2`, `-Wall`).\n* The handling of `SAGE_DEBUG` is inconsistent (and does not disable optimization):\n\n```sh\n# If SAGE_DEBUG is set either unset (the default), or set to  'yes'\n# then add debugging information.\n# Since both the Sun and GNU compilers accept -g to give debugging information,\n# there is no need to do anything specific to one compiler or the other.\n\nif [ \"x$SAGE_DEBUG\" = \"x\" ] || [ \"x$SAGE_DEBUG\" = \"xyes\" ] ; then\n   echo \"Code will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\"\n   # Actually anything other than 'yes' or '1' will cause\n   # no debugging information to be added.\n   CFLAGS=\"$CFLAGS -g \"\n   CXXFLAGS=\"$CXXFLAGS -g \"\nelse\n   echo \"No debugging information will be used during the build of this package.\"\n   echo \"Unset SAGE_DEBUG if you want debugging information present (-g added).\"\nfi\n```\n\n   I would add debugging symbols by default anyway.\n* `make` is used instead of `$MAKE`. I don't know why we do the build and install in one call.\n* The following is most probably wrong for readline 6.1:\n\n```sh\nelif [ \"$UNAME\" = \"OpenBSD\" ]; then\n  DYLIB_NAME=\"$SAGE_LOCAL\"/lib/libreadline.so.6.0\n```\n\n* The following should simply be `if grep -q ... ; then ...`:\n\n```sh\n    if [ `grep 11.1 /etc/SuSE-release > /dev/null; echo $?` -eq 0 ]; then\n```\n\n   (or at least `if grep ... >/dev/null; then ...`). The preceding `test -f` is also superfluous, but I agree makes it perhaps more readable.\n* The use of `set +/-e` is quite confusing and error-prone, and its use is **definitely wrong here**, since we don't get the exit status of \"copying patches\" and, worse, `build()`:\n\n```sh\n...\nset -e\n...\ncp patches/shobj-conf src/support/\nif [ $? -ne 0 ]; then\n    echo \"Error copying patch over.\"\n    exit 1\nfi\n\ncd src/\n\nbuild()\n{\n    ./configure --prefix=\"$SAGE_LOCAL\" $CONF_FLAGS\n    make install\n}\n\nbuild\nset +e\nif [ $? -ne 0 ]; then\n    echo \"Error building and installing readline.\"\n    exit 1\nfi\nset -e\n...\n```\n\n* It is safer to quote (all instances of) `$UNAME`.\n* The `build()` functions is almost useless, and in fact does `make install` (see above).\n\nI originally wanted to set this to \"needs info\" (w.r.t. OpenBSD), but now I think at least *some of* the above really needs to be fixed, therefore \"needs work\".",
+    "body": "A few comments:\n\n* The way `CFLAGS` (and `CXXFLAGS`) are set overrides user-specified settings (`-O2`, `-Wall`).\n* The handling of `SAGE_DEBUG` is inconsistent (and does not disable optimization):\n\n```sh\n# If SAGE_DEBUG is set either unset (the default), or set to  'yes'\n# then add debugging information.\n# Since both the Sun and GNU compilers accept -g to give debugging information,\n# there is no need to do anything specific to one compiler or the other.\n\nif [ \"x$SAGE_DEBUG\" = \"x\" ] || [ \"x$SAGE_DEBUG\" = \"xyes\" ] ; then\n   echo \"Code will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\"\n   # Actually anything other than 'yes' or '1' will cause\n   # no debugging information to be added.\n   CFLAGS=\"$CFLAGS -g \"\n   CXXFLAGS=\"$CXXFLAGS -g \"\nelse\n   echo \"No debugging information will be used during the build of this package.\"\n   echo \"Unset SAGE_DEBUG if you want debugging information present (-g added).\"\nfi\n```\n   I would add debugging symbols by default anyway.\n* `make` is used instead of `$MAKE`. I don't know why we do the build and install in one call.\n* The following is most probably wrong for readline 6.1:\n\n```sh\nelif [ \"$UNAME\" = \"OpenBSD\" ]; then\n  DYLIB_NAME=\"$SAGE_LOCAL\"/lib/libreadline.so.6.0\n```\n* The following should simply be `if grep -q ... ; then ...`:\n\n```sh\n    if [ `grep 11.1 /etc/SuSE-release > /dev/null; echo $?` -eq 0 ]; then\n```\n   (or at least `if grep ... >/dev/null; then ...`). The preceding `test -f` is also superfluous, but I agree makes it perhaps more readable.\n* The use of `set +/-e` is quite confusing and error-prone, and its use is **definitely wrong here**, since we don't get the exit status of \"copying patches\" and, worse, `build()`:\n\n```sh\n...\nset -e\n...\ncp patches/shobj-conf src/support/\nif [ $? -ne 0 ]; then\n    echo \"Error copying patch over.\"\n    exit 1\nfi\n\ncd src/\n\nbuild()\n{\n    ./configure --prefix=\"$SAGE_LOCAL\" $CONF_FLAGS\n    make install\n}\n\nbuild\nset +e\nif [ $? -ne 0 ]; then\n    echo \"Error building and installing readline.\"\n    exit 1\nfi\nset -e\n...\n```\n* It is safer to quote (all instances of) `$UNAME`.\n* The `build()` functions is almost useless, and in fact does `make install` (see above).\n\nI originally wanted to set this to \"needs info\" (w.r.t. OpenBSD), but now I think at least *some of* the above really needs to be fixed, therefore \"needs work\".",
     "created_at": "2010-10-24T16:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -481,7 +485,6 @@ else
    echo "Unset SAGE_DEBUG if you want debugging information present (-g added)."
 fi
 ```
-
    I would add debugging symbols by default anyway.
 * `make` is used instead of `$MAKE`. I don't know why we do the build and install in one call.
 * The following is most probably wrong for readline 6.1:
@@ -490,13 +493,11 @@ fi
 elif [ "$UNAME" = "OpenBSD" ]; then
   DYLIB_NAME="$SAGE_LOCAL"/lib/libreadline.so.6.0
 ```
-
 * The following should simply be `if grep -q ... ; then ...`:
 
 ```sh
     if [ `grep 11.1 /etc/SuSE-release > /dev/null; echo $?` -eq 0 ]; then
 ```
-
    (or at least `if grep ... >/dev/null; then ...`). The preceding `test -f` is also superfluous, but I agree makes it perhaps more readable.
 * The use of `set +/-e` is quite confusing and error-prone, and its use is **definitely wrong here**, since we don't get the exit status of "copying patches" and, worse, `build()`:
 
@@ -527,7 +528,6 @@ fi
 set -e
 ...
 ```
-
 * It is safer to quote (all instances of) `$UNAME`.
 * The `build()` functions is almost useless, and in fact does `make install` (see above).
 
@@ -608,7 +608,7 @@ Dave
 archive/issue_comments_091406.json:
 ```json
 {
-    "body": "Replying to [comment:19 drkirkby]:\n> I don't believe my changes have introduced any new problems.\n\nI didn't say you introduced them, doesn't make a difference to me though.\n\n> I simply don't have time to go though another ticket like #9603, where there were endless changes to `spkg-install` which took 6 weeks.\n\nThat had a couple of reasons. All my suggestions are above, and as I said *some* of them are minor, but at the same time most of them trivial to fix without risk.\n\n(Cf. the Cython upgrade, where I just \"cleaned up\" the `spkg-install` by moving `cd src`, and Robert at the same time - with the original spkg - ran into exactly the potential error to make by copying the patches at the wrong point of the script, which one would not even have noticed when installing the spkg.)\n \n> Many of those proposed will need extensive testing, \n\nI don't agree; also, the handling of `SAGE_DEBUG` e.g. and the use of `set -e` is simply wrong **as it is now**.\n\n> *If others want to clean it up further, feel free, but I don't want to spend a lot of time on this. It is not even causing any problems on any systems I'm using.* \n> \n\nNathann, is it you? ;-)\n\n> I'd rather concentrate my time on sorting out #9040 and #9840. I suggest you create another ticket to clean this up if you feel it needs it.\n\nIt doesn't make sense to me to keep definite flaws in it, and postpone fixing them to yet another ticket. And I don't have time for such either, not to mention every new ticket needs new review and testing again.\n\nIt's currently a blocker, but meanwhile one for 4.6**.1**.\n\n> I've got no idea of the situation with OpenSUSE\n\nMe either, but the reason for upgrading readline was OpenSuSE!",
+    "body": "Replying to [comment:19 drkirkby]:\n> I don't believe my changes have introduced any new problems.\n\n\nI didn't say you introduced them, doesn't make a difference to me though.\n\n> I simply don't have time to go though another ticket like #9603, where there were endless changes to `spkg-install` which took 6 weeks.\n\n\nThat had a couple of reasons. All my suggestions are above, and as I said *some* of them are minor, but at the same time most of them trivial to fix without risk.\n\n(Cf. the Cython upgrade, where I just \"cleaned up\" the `spkg-install` by moving `cd src`, and Robert at the same time - with the original spkg - ran into exactly the potential error to make by copying the patches at the wrong point of the script, which one would not even have noticed when installing the spkg.)\n \n> Many of those proposed will need extensive testing, \n\n\nI don't agree; also, the handling of `SAGE_DEBUG` e.g. and the use of `set -e` is simply wrong **as it is now**.\n\n> *If others want to clean it up further, feel free, but I don't want to spend a lot of time on this. It is not even causing any problems on any systems I'm using.* \n> \n\n\nNathann, is it you? ;-)\n\n> I'd rather concentrate my time on sorting out #9040 and #9840. I suggest you create another ticket to clean this up if you feel it needs it.\n\n\nIt doesn't make sense to me to keep definite flaws in it, and postpone fixing them to yet another ticket. And I don't have time for such either, not to mention every new ticket needs new review and testing again.\n\nIt's currently a blocker, but meanwhile one for 4.6**.1**.\n\n> I've got no idea of the situation with OpenSUSE\n\n\nMe either, but the reason for upgrading readline was OpenSuSE!",
     "created_at": "2010-10-24T18:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -620,9 +620,11 @@ archive/issue_comments_091406.json:
 Replying to [comment:19 drkirkby]:
 > I don't believe my changes have introduced any new problems.
 
+
 I didn't say you introduced them, doesn't make a difference to me though.
 
 > I simply don't have time to go though another ticket like #9603, where there were endless changes to `spkg-install` which took 6 weeks.
+
 
 That had a couple of reasons. All my suggestions are above, and as I said *some* of them are minor, but at the same time most of them trivial to fix without risk.
 
@@ -630,20 +632,24 @@ That had a couple of reasons. All my suggestions are above, and as I said *some*
  
 > Many of those proposed will need extensive testing, 
 
+
 I don't agree; also, the handling of `SAGE_DEBUG` e.g. and the use of `set -e` is simply wrong **as it is now**.
 
 > *If others want to clean it up further, feel free, but I don't want to spend a lot of time on this. It is not even causing any problems on any systems I'm using.* 
 > 
 
+
 Nathann, is it you? ;-)
 
 > I'd rather concentrate my time on sorting out #9040 and #9840. I suggest you create another ticket to clean this up if you feel it needs it.
+
 
 It doesn't make sense to me to keep definite flaws in it, and postpone fixing them to yet another ticket. And I don't have time for such either, not to mention every new ticket needs new review and testing again.
 
 It's currently a blocker, but meanwhile one for 4.6**.1**.
 
 > I've got no idea of the situation with OpenSUSE
+
 
 Me either, but the reason for upgrading readline was OpenSuSE!
 
@@ -654,7 +660,7 @@ Me either, but the reason for upgrading readline was OpenSuSE!
 archive/issue_comments_091407.json:
 ```json
 {
-    "body": "> I've got no idea of the situation with OpenSUSE\n\nI'm using openSuSE 11.3 (the latest) on a 64 bits machine and I've the following behavior:\n\n- The openSuSE binary for 4.5.2, 4.5.3 *doesn't start* unless the following files are removed from sage install:\n\n```\nlibreadline.a  libreadline.so  libreadline.so.6  libreadline.so.6.0\n```\n\nIt seems to works perfectly of those are removed (I got all tests passed with 4.5.2). \n\n- The 4.5.2 and 4.5.3 source doesn't compile either. I got it compile and work with the patch on #9530 (all test passed on 4.5.3)\n\n- The 4.6rc0 seem to compile correctly using David's spkg, however for a probably different reason it doesn't start, failing with the error\n\n```\nImportError: No module named sagenb.misc.sphinxify\n```\n\n\nI've no idea how to fix this last error and as I said previously I asked for\nhelp on sage-release.\n\n\nAlso, if needed I have access on a older openSuSE 11.1 system but I haven't\nupgraded sage on it recently.\n\nCheers,\n\nFlorent",
+    "body": "> I've got no idea of the situation with OpenSUSE\n\n\nI'm using openSuSE 11.3 (the latest) on a 64 bits machine and I've the following behavior:\n\n- The openSuSE binary for 4.5.2, 4.5.3 *doesn't start* unless the following files are removed from sage install:\n\n```\nlibreadline.a  libreadline.so  libreadline.so.6  libreadline.so.6.0\n```\nIt seems to works perfectly of those are removed (I got all tests passed with 4.5.2). \n\n- The 4.5.2 and 4.5.3 source doesn't compile either. I got it compile and work with the patch on #9530 (all test passed on 4.5.3)\n\n- The 4.6rc0 seem to compile correctly using David's spkg, however for a probably different reason it doesn't start, failing with the error\n\n```\nImportError: No module named sagenb.misc.sphinxify\n```\n\nI've no idea how to fix this last error and as I said previously I asked for\nhelp on sage-release.\n\n\nAlso, if needed I have access on a older openSuSE 11.1 system but I haven't\nupgraded sage on it recently.\n\nCheers,\n\nFlorent",
     "created_at": "2010-10-24T18:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -665,6 +671,7 @@ archive/issue_comments_091407.json:
 
 > I've got no idea of the situation with OpenSUSE
 
+
 I'm using openSuSE 11.3 (the latest) on a 64 bits machine and I've the following behavior:
 
 - The openSuSE binary for 4.5.2, 4.5.3 *doesn't start* unless the following files are removed from sage install:
@@ -672,7 +679,6 @@ I'm using openSuSE 11.3 (the latest) on a 64 bits machine and I've the following
 ```
 libreadline.a  libreadline.so  libreadline.so.6  libreadline.so.6.0
 ```
-
 It seems to works perfectly of those are removed (I got all tests passed with 4.5.2). 
 
 - The 4.5.2 and 4.5.3 source doesn't compile either. I got it compile and work with the patch on #9530 (all test passed on 4.5.3)
@@ -682,7 +688,6 @@ It seems to works perfectly of those are removed (I got all tests passed with 4.
 ```
 ImportError: No module named sagenb.misc.sphinxify
 ```
-
 
 I've no idea how to fix this last error and as I said previously I asked for
 help on sage-release.
@@ -722,7 +727,7 @@ I'll make **some** of the changes you suggest. I will change `make` to `$MAKE`, 
 archive/issue_comments_091409.json:
 ```json
 {
-    "body": "Replying to [comment:21 hivert]:\n>  - The 4.6rc0 seem to compile correctly using David's spkg, however for a probably different reason it doesn't start, failing with the error\n\n```\nImportError: No module named sagenb.misc.sphinxify\n```\n\n> \n> I've no idea how to fix this last error and as I said previously I asked for\n> help on sage-release.\n> \n> \n> Also, if needed I have access on a older openSuSE 11.1 system but I haven't\n> upgraded sage on it recently.\n\nIt would be helpful if you could try to build Sage 4.6.rc0 on that, too (upgrading from a - perhaps copied - working Sage version should also work), to see if the same error occurs as on OpenSuSE 11.3.",
+    "body": "Replying to [comment:21 hivert]:\n>  - The 4.6rc0 seem to compile correctly using David's spkg, however for a probably different reason it doesn't start, failing with the error\n \n{{{\nImportError: No module named sagenb.misc.sphinxify\n}}}\n> \n> I've no idea how to fix this last error and as I said previously I asked for\n> help on sage-release.\n> \n> \n> Also, if needed I have access on a older openSuSE 11.1 system but I haven't\n> upgraded sage on it recently.\n\n\nIt would be helpful if you could try to build Sage 4.6.rc0 on that, too (upgrading from a - perhaps copied - working Sage version should also work), to see if the same error occurs as on OpenSuSE 11.3.",
     "created_at": "2010-10-24T20:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -733,11 +738,10 @@ archive/issue_comments_091409.json:
 
 Replying to [comment:21 hivert]:
 >  - The 4.6rc0 seem to compile correctly using David's spkg, however for a probably different reason it doesn't start, failing with the error
-
-```
+ 
+{{{
 ImportError: No module named sagenb.misc.sphinxify
-```
-
+}}}
 > 
 > I've no idea how to fix this last error and as I said previously I asked for
 > help on sage-release.
@@ -745,6 +749,7 @@ ImportError: No module named sagenb.misc.sphinxify
 > 
 > Also, if needed I have access on a older openSuSE 11.1 system but I haven't
 > upgraded sage on it recently.
+
 
 It would be helpful if you could try to build Sage 4.6.rc0 on that, too (upgrading from a - perhaps copied - working Sage version should also work), to see if the same error occurs as on OpenSuSE 11.3.
 
@@ -819,7 +824,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091413.json:
 ```json
 {
-    "body": "Replying to [comment:22 drkirkby]:\n> I'll make **some** of the changes you suggest. I will change `make` to `$MAKE`, but that will need **extensive** testing, as parallel builds tends to break on many packages. I'll test it 100 times on my reasonably quick (quad core 3.33 GHz) Sun Ultra 27, but I don't have time to test it extensively on every system.\n\nWell, I would consider changing `make` to `$MAKE` less important for the moment, as - as you say - *that* requires more testing, in contrast to the other changes.\n\nNote that e.g.\n\n```sh\n$ env MAKE=\"make -j\" ./sage -i readline-6.1.spkg\n```\n\n(or copying the spkg to `spkg/standard/` and running `env MAKE=\"make -j\" make`) would currently attempt a parallel build / install anyway, even though you call `make` in `spkg-install`.\n\n----\n\nIt's quite funny to enable `-Wall` in a script and at the same time keep blocks of unreachable code in the script itself.\n\n----\n\nBtw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.",
+    "body": "Replying to [comment:22 drkirkby]:\n> I'll make **some** of the changes you suggest. I will change `make` to `$MAKE`, but that will need **extensive** testing, as parallel builds tends to break on many packages. I'll test it 100 times on my reasonably quick (quad core 3.33 GHz) Sun Ultra 27, but I don't have time to test it extensively on every system.\n\n\nWell, I would consider changing `make` to `$MAKE` less important for the moment, as - as you say - *that* requires more testing, in contrast to the other changes.\n\nNote that e.g.\n\n```sh\n$ env MAKE=\"make -j\" ./sage -i readline-6.1.spkg\n```\n(or copying the spkg to `spkg/standard/` and running `env MAKE=\"make -j\" make`) would currently attempt a parallel build / install anyway, even though you call `make` in `spkg-install`.\n\n---\n\nIt's quite funny to enable `-Wall` in a script and at the same time keep blocks of unreachable code in the script itself.\n\n---\n\nBtw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.",
     "created_at": "2010-10-24T20:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -831,6 +836,7 @@ archive/issue_comments_091413.json:
 Replying to [comment:22 drkirkby]:
 > I'll make **some** of the changes you suggest. I will change `make` to `$MAKE`, but that will need **extensive** testing, as parallel builds tends to break on many packages. I'll test it 100 times on my reasonably quick (quad core 3.33 GHz) Sun Ultra 27, but I don't have time to test it extensively on every system.
 
+
 Well, I would consider changing `make` to `$MAKE` less important for the moment, as - as you say - *that* requires more testing, in contrast to the other changes.
 
 Note that e.g.
@@ -838,14 +844,13 @@ Note that e.g.
 ```sh
 $ env MAKE="make -j" ./sage -i readline-6.1.spkg
 ```
-
 (or copying the spkg to `spkg/standard/` and running `env MAKE="make -j" make`) would currently attempt a parallel build / install anyway, even though you call `make` in `spkg-install`.
 
-----
+---
 
 It's quite funny to enable `-Wall` in a script and at the same time keep blocks of unreachable code in the script itself.
 
-----
+---
 
 Btw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.
 
@@ -920,7 +925,7 @@ As far as I can see, `$CONF_FLAGS` passed to `./configure` aren't set anywhere, 
 archive/issue_comments_091417.json:
 ```json
 {
-    "body": "Replying to [comment:26 drkirkby]:\n> I was not aware there were blocks of unreachable code, but feel free to remove them with a reviewer patch. \n\nRemoving `set -e` solved that.",
+    "body": "Replying to [comment:26 drkirkby]:\n> I was not aware there were blocks of unreachable code, but feel free to remove them with a reviewer patch. \n\n\nRemoving `set -e` solved that.",
     "created_at": "2010-10-24T20:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -932,6 +937,7 @@ archive/issue_comments_091417.json:
 Replying to [comment:26 drkirkby]:
 > I was not aware there were blocks of unreachable code, but feel free to remove them with a reviewer patch. 
 
+
 Removing `set -e` solved that.
 
 
@@ -941,7 +947,7 @@ Removing `set -e` solved that.
 archive/issue_comments_091418.json:
 ```json
 {
-    "body": "Replying to [comment:25 leif]:\n> Btw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.\n\nI've successfully reinstalled / rebuilt the updated spkg and all dependent packages* (with 32 jobs); `ptestlong` again passed.\n\n\n----\n\n* To achieve this, one can (since rc0) `export SAGE_UPGRADING=yes` and run `make` after copying the new spkg to `spkg/standard/` and deleting `spkg/installed/readline-6.1`.",
+    "body": "Replying to [comment:25 leif]:\n> Btw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.\n\n\nI've successfully reinstalled / rebuilt the updated spkg and all dependent packages* (with 32 jobs); `ptestlong` again passed.\n\n\n---\n\n* To achieve this, one can (since rc0) `export SAGE_UPGRADING=yes` and run `make` after copying the new spkg to `spkg/standard/` and deleting `spkg/installed/readline-6.1`.",
     "created_at": "2010-10-24T22:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -953,10 +959,11 @@ archive/issue_comments_091418.json:
 Replying to [comment:25 leif]:
 > Btw, `ptestlong` passed with 4.6.rc0 on Ubuntu 10.04 x86_64 both with just that spkg as well as all dependent packages [re]built.
 
+
 I've successfully reinstalled / rebuilt the updated spkg and all dependent packages* (with 32 jobs); `ptestlong` again passed.
 
 
-----
+---
 
 * To achieve this, one can (since rc0) `export SAGE_UPGRADING=yes` and run `make` after copying the new spkg to `spkg/standard/` and deleting `spkg/installed/readline-6.1`.
 
@@ -995,7 +1002,7 @@ Dave
 archive/issue_comments_091420.json:
 ```json
 {
-    "body": "I build Sage from scratch with the updated .spkg on a Sun Ultra 27 running OpenSolaris. This was a parallel build, and parallel doctests. Two doctests failed\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1675.4 seconds\n```\n\n\nBut when I run those two tests individually they both passed. I can only assume this is the usual problem - the doctesting framework is partially broken for parallel testing. \n\n\n```\ndrkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py\nsage -t -long -force_lib \"devel/sage/sage/interfaces/psage.py\"\n         [24.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 25.4 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx\nsage -t -long -force_lib \"devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx\"\n         [13.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 13.0 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ \n```\n\n\nAs such, Sage has been build from scratch using this package, and has passed all tests on both Linux and OpenSolaris. \n\nDave",
+    "body": "I build Sage from scratch with the updated .spkg on a Sun Ultra 27 running OpenSolaris. This was a parallel build, and parallel doctests. Two doctests failed\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1675.4 seconds\n```\n\nBut when I run those two tests individually they both passed. I can only assume this is the usual problem - the doctesting framework is partially broken for parallel testing. \n\n```\ndrkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py\nsage -t -long -force_lib \"devel/sage/sage/interfaces/psage.py\"\n         [24.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 25.4 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx\nsage -t -long -force_lib \"devel/sage/sage/algebras/quatalg/quaternion_algebra_element.pyx\"\n         [13.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 13.0 seconds\ndrkirkby@hawk:~/sage-4.6.rc0$ \n```\n\nAs such, Sage has been build from scratch using this package, and has passed all tests on both Linux and OpenSolaris. \n\nDave",
     "created_at": "2010-10-25T12:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1015,9 +1022,7 @@ The following tests failed:
 Total time for all tests: 1675.4 seconds
 ```
 
-
 But when I run those two tests individually they both passed. I can only assume this is the usual problem - the doctesting framework is partially broken for parallel testing. 
-
 
 ```
 drkirkby@hawk:~/sage-4.6.rc0$ ./sage -t  -long -force_lib devel/sage/sage/interfaces/psage.py
@@ -1037,7 +1042,6 @@ Total time for all tests: 13.0 seconds
 drkirkby@hawk:~/sage-4.6.rc0$ 
 ```
 
-
 As such, Sage has been build from scratch using this package, and has passed all tests on both Linux and OpenSolaris. 
 
 Dave
@@ -1049,7 +1053,7 @@ Dave
 archive/issue_comments_091421.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> A few comments:\n\n>  * The following should simply be `if grep -q ... ; then ...`:\n\nUsing `grep -q` would cause a problem on Solaris, since the default `grep` in most peoples path is not POSIX compatible. \n\nThis is still awaiting review though. \n\nDave",
+    "body": "Replying to [comment:17 leif]:\n> A few comments:\n\n\n>  * The following should simply be `if grep -q ... ; then ...`:\n\n\nUsing `grep -q` would cause a problem on Solaris, since the default `grep` in most peoples path is not POSIX compatible. \n\nThis is still awaiting review though. \n\nDave",
     "created_at": "2010-10-27T10:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1061,7 +1065,9 @@ archive/issue_comments_091421.json:
 Replying to [comment:17 leif]:
 > A few comments:
 
+
 >  * The following should simply be `if grep -q ... ; then ...`:
+
 
 Using `grep -q` would cause a problem on Solaris, since the default `grep` in most peoples path is not POSIX compatible. 
 
@@ -1094,7 +1100,7 @@ Complete spkg patch for reference
 archive/issue_comments_091423.json:
 ```json
 {
-    "body": "Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by @jdemeyer created at 2010-11-05 11:06:23\n\n\"presidence\" sould be \"precedence\"\n\nWhy is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\nI don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n* I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n* You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n* Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n\n```\n$CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n```\n",
+    "body": "Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by @jdemeyer created at 2010-11-05 11:06:23\n\n\"presidence\" sould be \"precedence\"\n\nWhy is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\nI don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n* I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n* You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n* Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n\n```\n$CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n```",
     "created_at": "2010-11-05T11:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1120,13 +1126,12 @@ $CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc
 
 
 
-
 ---
 
 archive/issue_comments_091424.json:
 ```json
 {
-    "body": "Replying to [comment:35 jdemeyer]:\n> \"presidence\" sould be \"precedence\"\n> \n> Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\nIt is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version. \n\nI'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted). \n\n> I don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n>  * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n\nThat would not change the results of the test. I can assure you that works with and without -m64. \n\n>  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n\nI'm unaware of any problems with the current code. \n\n>  * Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n> {{{\n> $CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n> }}}\n\nI forget why, but there was some reason that I did not use the obvious 'gcc --version'. Several compilers act like gcc, but are not actually gcc. I believe the Intel compiler takes the gcc options, so for practical purposes is gcc, but wont output gcc. In any case, I think one can change that string when gcc is built to whatever you want. \n\nHowever, if someone wants to change the test, then the most sensible thing to do is use the script $SAGE_LOCAL/bin/testcc.sh, as that will return one of \n\n* GCC\n* Sun_Studio\n* HP_on_Tru64\n* IBM_on_AIX\n* HP_on_Alpha_Linux\n* Unknown\n\nThat tests what gets defined when (!__SUNPRO_C in the case of the Sun compiler, !__GNUC!__ in the case of gcc etc). \n\nThere are bugs that I'm aware of, that are causing serious problems - #9040 and #9840 are two I would love to solve. I'm reluctant to make a change, which itself has a finite risk of introducing a bug, to \"solve\" a problem that has never been observed. That bit of code has remained unchanged for a long time, and has never caused any problem on any platform. \n\nDave",
+    "body": "Replying to [comment:35 jdemeyer]:\n> \"presidence\" sould be \"precedence\"\n> \n> Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\n\nIt is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version. \n\nI'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted). \n\n> I don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n> * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n\n\nThat would not change the results of the test. I can assure you that works with and without -m64. \n\n>  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n\n\nI'm unaware of any problems with the current code. \n\n>  * Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n \n> {{{\n> $CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n> }}}\n\n\nI forget why, but there was some reason that I did not use the obvious 'gcc --version'. Several compilers act like gcc, but are not actually gcc. I believe the Intel compiler takes the gcc options, so for practical purposes is gcc, but wont output gcc. In any case, I think one can change that string when gcc is built to whatever you want. \n\nHowever, if someone wants to change the test, then the most sensible thing to do is use the script $SAGE_LOCAL/bin/testcc.sh, as that will return one of \n\n* GCC\n* Sun_Studio\n* HP_on_Tru64\n* IBM_on_AIX\n* HP_on_Alpha_Linux\n* Unknown\n\nThat tests what gets defined when (!__SUNPRO_C in the case of the Sun compiler, !__GNUC!__ in the case of gcc etc). \n\nThere are bugs that I'm aware of, that are causing serious problems - #9040 and #9840 are two I would love to solve. I'm reluctant to make a change, which itself has a finite risk of introducing a bug, to \"solve\" a problem that has never been observed. That bit of code has remained unchanged for a long time, and has never caused any problem on any platform. \n\nDave",
     "created_at": "2010-11-05T12:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1140,23 +1145,28 @@ Replying to [comment:35 jdemeyer]:
 > 
 > Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).
 
+
 It is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version. 
 
 I'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted). 
 
 > I don't like `"$CC" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:
->  * I don't think $CC is supposed to be quoted because people might do things like CC="gcc -m64"
+> * I don't think $CC is supposed to be quoted because people might do things like CC="gcc -m64"
+
 
 That would not change the results of the test. I can assure you that works with and without -m64. 
 
 >  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.
 
+
 I'm unaware of any problems with the current code. 
 
 >  * Instead of checking for Sun's compiler, why not check explicitly for `gcc` using
+ 
 > {{{
 > $CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc
 > }}}
+
 
 I forget why, but there was some reason that I did not use the obvious 'gcc --version'. Several compilers act like gcc, but are not actually gcc. I believe the Intel compiler takes the gcc options, so for practical purposes is gcc, but wont output gcc. In any case, I think one can change that string when gcc is built to whatever you want. 
 
@@ -1182,7 +1192,7 @@ Dave
 archive/issue_comments_091425.json:
 ```json
 {
-    "body": "Replying to [comment:36 drkirkby]:\n> >  * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n> \n> That would not change the results of the test. I can assure you that works with and without -m64. \n\nReally?  With `GNU bash, version 4.0.35(1)-release (x86_64-pc-linux-gnu)`, I get\n\n```\n$ CC=\"gcc -m64\"\n$ \"$CC\" --version\nbash: gcc -m64: command not found\n```\n\n\n> >  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n> \n> I'm unaware of any problems with the current code.\nMe neither, but I think redirecting stdin from `/dev/null` does no harm and is safer.",
+    "body": "Replying to [comment:36 drkirkby]:\n> >  * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n \n> \n> That would not change the results of the test. I can assure you that works with and without -m64. \n\n\nReally?  With `GNU bash, version 4.0.35(1)-release (x86_64-pc-linux-gnu)`, I get\n\n```\n$ CC=\"gcc -m64\"\n$ \"$CC\" --version\nbash: gcc -m64: command not found\n```\n\n> >  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n \n> \n> I'm unaware of any problems with the current code.\n\nMe neither, but I think redirecting stdin from `/dev/null` does no harm and is safer.",
     "created_at": "2010-11-05T12:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1193,8 +1203,10 @@ archive/issue_comments_091425.json:
 
 Replying to [comment:36 drkirkby]:
 > >  * I don't think $CC is supposed to be quoted because people might do things like CC="gcc -m64"
+ 
 > 
 > That would not change the results of the test. I can assure you that works with and without -m64. 
+
 
 Really?  With `GNU bash, version 4.0.35(1)-release (x86_64-pc-linux-gnu)`, I get
 
@@ -1204,10 +1216,11 @@ $ "$CC" --version
 bash: gcc -m64: command not found
 ```
 
-
 > >  * You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.
+ 
 > 
 > I'm unaware of any problems with the current code.
+
 Me neither, but I think redirecting stdin from `/dev/null` does no harm and is safer.
 
 
@@ -1271,7 +1284,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_091429.json:
 ```json
 {
-    "body": "Replying to [comment:36 drkirkby]:\n> Replying to [comment:35 jdemeyer]:\n> > Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n> \n> It is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version.\n\nWell, that's of course b*llsh*t, since the old source code is in the old spkg you're going to upgrade. But it is long and current practice, as Dave says.\n\nA more convincing reason is that it is safer to put both under revision control, since some people might update just the patch and not the patched file which is copied over. This is easy to see with `hg log`, though one would also notice that by just looking at the file modification times.\n\n> I'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted).\n\nIn the light of 1 MB `configure.in` etc. in `patches/` and the Mercurial repository, I'd also rather have just the patches (diffs) there, i.e. omitting pre-patched files at all.\n\nThis would either require (explicitly) making `patch` a prerequisite (which is IMHO not a problem), or - perhaps in addition - providing `ed` patches, with isn't very nice (and complicates reviewing).\n\n> > I don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n> >  * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n> \n> That would not change the results of the test. I can assure you that works with and without -m64.\n\nAs Jeroen noted, this *does* make a difference. I do not even get an error message:\n\n```sh\n$ \"gcc -m64\" --version ; echo $?     # equivalent to gcc\\ -m64 --version\n127\n$ gcc -m64 --version ; echo $?\ngcc (Ubuntu 4.4.3-4ubuntu5) 4.4.3\nCopyright (C) 2009 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n0\n```\n\n\nI wanted to make a reviewer patch anyway, since we need to also patch the `pkg-config` file created by freetype to avoid potential trouble with Sage relocation. (Btw, the term \"migration\" would be less ambiguous, though it is used in other contexts as well, but certainly not within Sage.)",
+    "body": "Replying to [comment:36 drkirkby]:\n> Replying to [comment:35 jdemeyer]:\n> > Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\n> \n> It is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version.\n\n\nWell, that's of course b*llsh*t, since the old source code is in the old spkg you're going to upgrade. But it is long and current practice, as Dave says.\n\nA more convincing reason is that it is safer to put both under revision control, since some people might update just the patch and not the patched file which is copied over. This is easy to see with `hg log`, though one would also notice that by just looking at the file modification times.\n\n> I'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted).\n\n\nIn the light of 1 MB `configure.in` etc. in `patches/` and the Mercurial repository, I'd also rather have just the patches (diffs) there, i.e. omitting pre-patched files at all.\n\nThis would either require (explicitly) making `patch` a prerequisite (which is IMHO not a problem), or - perhaps in addition - providing `ed` patches, with isn't very nice (and complicates reviewing).\n\n> > I don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n> > * I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n\n> \n> That would not change the results of the test. I can assure you that works with and without -m64.\n\n\nAs Jeroen noted, this *does* make a difference. I do not even get an error message:\n\n```sh\n$ \"gcc -m64\" --version ; echo $?     # equivalent to gcc\\ -m64 --version\n127\n$ gcc -m64 --version ; echo $?\ngcc (Ubuntu 4.4.3-4ubuntu5) 4.4.3\nCopyright (C) 2009 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n0\n```\n\nI wanted to make a reviewer patch anyway, since we need to also patch the `pkg-config` file created by freetype to avoid potential trouble with Sage relocation. (Btw, the term \"migration\" would be less ambiguous, though it is used in other contexts as well, but certainly not within Sage.)",
     "created_at": "2010-11-05T13:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1283,8 +1296,10 @@ archive/issue_comments_091429.json:
 Replying to [comment:36 drkirkby]:
 > Replying to [comment:35 jdemeyer]:
 > > Why is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).
+
 > 
 > It is practice to put both. The argument I've heard for doing this is that if the only the patch file is under revision control, if a package gets updated, then the patch is against a version of the source not in the package. So you need to download the old version.
+
 
 Well, that's of course b*llsh*t, since the old source code is in the old spkg you're going to upgrade. But it is long and current practice, as Dave says.
 
@@ -1292,14 +1307,17 @@ A more convincing reason is that it is safer to put both under revision control,
 
 > I'm not totally convinced of the logic myself, but it is standard practice. (I'd personally rather just see a patch file, and use 'patch' rather than 'cp', but that is not permitted).
 
+
 In the light of 1 MB `configure.in` etc. in `patches/` and the Mercurial repository, I'd also rather have just the patches (diffs) there, i.e. omitting pre-patched files at all.
 
 This would either require (explicitly) making `patch` a prerequisite (which is IMHO not a problem), or - perhaps in addition - providing `ed` patches, with isn't very nice (and complicates reviewing).
 
 > > I don't like `"$CC" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:
-> >  * I don't think $CC is supposed to be quoted because people might do things like CC="gcc -m64"
+> > * I don't think $CC is supposed to be quoted because people might do things like CC="gcc -m64"
+
 > 
 > That would not change the results of the test. I can assure you that works with and without -m64.
+
 
 As Jeroen noted, this *does* make a difference. I do not even get an error message:
 
@@ -1315,7 +1333,6 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 0
 ```
 
-
 I wanted to make a reviewer patch anyway, since we need to also patch the `pkg-config` file created by freetype to avoid potential trouble with Sage relocation. (Btw, the term "migration" would be less ambiguous, though it is used in other contexts as well, but certainly not within Sage.)
 
 
@@ -1325,7 +1342,7 @@ I wanted to make a reviewer patch anyway, since we need to also patch the `pkg-c
 archive/issue_comments_091430.json:
 ```json
 {
-    "body": "None of this is causing a problem with the package:\n\n\n```\nexport CC=\"gcc -m64\"\n\n<snip>\n\nreadline-6.1/src/rlwinsize.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -m64 -v\nUsing built-in specs.\nCOLLECT_GCC=/usr/local/gcc-4.5.0/bin/gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n****************************************************\nBuilding a 64-bit version of Readline\nUsing CC=gcc -m64\nThe following environment variables will be exported.\nUsing CFLAGS=-O2  -m64 -g -O2 -Wall\nUsing CPPFLAGS=\nUsing LDFLAGS= -m64\n```\n\n\nbut I'm happy to change it. \n\nI long ago created a package for 'patch'\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n\nI think William finally agreed to make it part of sage, since many wanted it. But then after that others had convinced him there were better ways do it with Mercurial, so I gave up the idea. \n\nLeif, what has the pkg-config file for freetype got to do with this readline package? \n\nDo you want to create a reviewer patch, or shall I unquote CC? \n\nDave",
+    "body": "None of this is causing a problem with the package:\n\n```\nexport CC=\"gcc -m64\"\n\n<snip>\n\nreadline-6.1/src/rlwinsize.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -m64 -v\nUsing built-in specs.\nCOLLECT_GCC=/usr/local/gcc-4.5.0/bin/gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n****************************************************\nBuilding a 64-bit version of Readline\nUsing CC=gcc -m64\nThe following environment variables will be exported.\nUsing CFLAGS=-O2  -m64 -g -O2 -Wall\nUsing CPPFLAGS=\nUsing LDFLAGS= -m64\n```\n\nbut I'm happy to change it. \n\nI long ago created a package for 'patch'\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n\nI think William finally agreed to make it part of sage, since many wanted it. But then after that others had convinced him there were better ways do it with Mercurial, so I gave up the idea. \n\nLeif, what has the pkg-config file for freetype got to do with this readline package? \n\nDo you want to create a reviewer patch, or shall I unquote CC? \n\nDave",
     "created_at": "2010-11-05T16:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1335,7 +1352,6 @@ archive/issue_comments_091430.json:
 ```
 
 None of this is causing a problem with the package:
-
 
 ```
 export CC="gcc -m64"
@@ -1368,7 +1384,6 @@ Using CPPFLAGS=
 Using LDFLAGS= -m64
 ```
 
-
 but I'm happy to change it. 
 
 I long ago created a package for 'patch'
@@ -1390,7 +1405,7 @@ Dave
 archive/issue_comments_091431.json:
 ```json
 {
-    "body": "Replying to [comment:41 drkirkby]:\n> None of this is causing a problem with the package:\n> but I'm happy to change it.\n\nOf course it incidentally \"works\" *there*, because we are not looking for `gcc`. If you define `CC=\"suncc -whatever\"` it won't work, i.e. not recognize Sun's `cc`.\n\n\n> I long ago created a package for 'patch'\n> \n> http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n> \n> I think William finally agreed to make it part of sage, since many wanted it. But then after that others had convinced him there were better ways do it with Mercurial, so I gave up the idea.\n\nI think we don't have to provide a (standard) package to make `patch` a prerequisite.\n\nNote that Mercurial depends on Python, so unless we make one of these a prerequisite, using Mercurial instead (which I wouldn't like) isn't an option.\n\n\n> Leif, what has the pkg-config file for freetype got to do with this readline package?\n\nGood question... ;-) Apparently wrong ticket... (Confused that because updating the readline spkg *triggered* the `pkg-config` problems with freetype.)\n\n> Do you want to create a reviewer patch, or shall I unquote CC?\n\nI can do that, as I've suggested some other minor changes [comment:28 above].",
+    "body": "Replying to [comment:41 drkirkby]:\n> None of this is causing a problem with the package:\n> but I'm happy to change it.\n\n\nOf course it incidentally \"works\" *there*, because we are not looking for `gcc`. If you define `CC=\"suncc -whatever\"` it won't work, i.e. not recognize Sun's `cc`.\n\n\n> I long ago created a package for 'patch'\n> \n> http://boxen.math.washington.edu/home/kirkby/patches/patch-2.6.1.spkg\n> \n> I think William finally agreed to make it part of sage, since many wanted it. But then after that others had convinced him there were better ways do it with Mercurial, so I gave up the idea.\n\n\nI think we don't have to provide a (standard) package to make `patch` a prerequisite.\n\nNote that Mercurial depends on Python, so unless we make one of these a prerequisite, using Mercurial instead (which I wouldn't like) isn't an option.\n\n\n> Leif, what has the pkg-config file for freetype got to do with this readline package?\n\n\nGood question... ;-) Apparently wrong ticket... (Confused that because updating the readline spkg *triggered* the `pkg-config` problems with freetype.)\n\n> Do you want to create a reviewer patch, or shall I unquote CC?\n\n\nI can do that, as I've suggested some other minor changes [comment:28 above].",
     "created_at": "2010-11-05T16:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1403,6 +1418,7 @@ Replying to [comment:41 drkirkby]:
 > None of this is causing a problem with the package:
 > but I'm happy to change it.
 
+
 Of course it incidentally "works" *there*, because we are not looking for `gcc`. If you define `CC="suncc -whatever"` it won't work, i.e. not recognize Sun's `cc`.
 
 
@@ -1412,6 +1428,7 @@ Of course it incidentally "works" *there*, because we are not looking for `gcc`.
 > 
 > I think William finally agreed to make it part of sage, since many wanted it. But then after that others had convinced him there were better ways do it with Mercurial, so I gave up the idea.
 
+
 I think we don't have to provide a (standard) package to make `patch` a prerequisite.
 
 Note that Mercurial depends on Python, so unless we make one of these a prerequisite, using Mercurial instead (which I wouldn't like) isn't an option.
@@ -1419,9 +1436,11 @@ Note that Mercurial depends on Python, so unless we make one of these a prerequi
 
 > Leif, what has the pkg-config file for freetype got to do with this readline package?
 
+
 Good question... ;-) Apparently wrong ticket... (Confused that because updating the readline spkg *triggered* the `pkg-config` problems with freetype.)
 
 > Do you want to create a reviewer patch, or shall I unquote CC?
+
 
 I can do that, as I've suggested some other minor changes [comment:28 above].
 
@@ -1472,7 +1491,7 @@ SPKG reviewer patch. Removes quotes from `$CC`etc. Apply on top of Dave's "furth
 archive/issue_comments_091434.json:
 ```json
 {
-    "body": "Replying to [comment:43 leif]:\n> I think I'll first upload a reviewer patch without the changes from there.\n\nDid so.",
+    "body": "Replying to [comment:43 leif]:\n> I think I'll first upload a reviewer patch without the changes from there.\n\n\nDid so.",
     "created_at": "2010-11-05T17:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1483,6 +1502,7 @@ archive/issue_comments_091434.json:
 
 Replying to [comment:43 leif]:
 > I think I'll first upload a reviewer patch without the changes from there.
+
 
 Did so.
 
@@ -1597,7 +1617,7 @@ FYI, for OpenSUSE 11.0 and 11.1, Sage should not try to use the system readline,
 archive/issue_comments_091440.json:
 ```json
 {
-    "body": "Replying to [comment:49 Koen]:\n> FYI, for OpenSUSE 11.0 and 11.1, Sage should not try to use the system readline, because it will be a .5 version. It will only build if the special OpenSUSE handling is *not* there. See also http://groups.google.com/group/sage-devel/browse_thread/thread/71d3a99910e11b01\n\nThanks. Then I'd say **needs work**...\n\nMaybe we should compare the versions and always use the newer one?\nBut this causes trouble in case the interface changes, but not its \"official\" version (which should IMHO never happen though).",
+    "body": "Replying to [comment:49 Koen]:\n> FYI, for OpenSUSE 11.0 and 11.1, Sage should not try to use the system readline, because it will be a .5 version. It will only build if the special OpenSUSE handling is *not* there. See also http://groups.google.com/group/sage-devel/browse_thread/thread/71d3a99910e11b01\n\n\nThanks. Then I'd say **needs work**...\n\nMaybe we should compare the versions and always use the newer one?\nBut this causes trouble in case the interface changes, but not its \"official\" version (which should IMHO never happen though).",
     "created_at": "2010-12-13T14:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1608,6 +1628,7 @@ archive/issue_comments_091440.json:
 
 Replying to [comment:49 Koen]:
 > FYI, for OpenSUSE 11.0 and 11.1, Sage should not try to use the system readline, because it will be a .5 version. It will only build if the special OpenSUSE handling is *not* there. See also http://groups.google.com/group/sage-devel/browse_thread/thread/71d3a99910e11b01
+
 
 Thanks. Then I'd say **needs work**...
 
@@ -1657,7 +1678,7 @@ archive/issue_comments_091442.json:
 archive/issue_comments_091443.json:
 ```json
 {
-    "body": "Replying to [comment:51 jdemeyer]:\n> Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n\n:D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n\nOtherwise the problem remains or rearises with future releases of these OSs.",
+    "body": "Replying to [comment:51 jdemeyer]:\n> Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n\n\n:D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n\nOtherwise the problem remains or rearises with future releases of these OSs.",
     "created_at": "2010-12-13T15:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1668,6 +1689,7 @@ archive/issue_comments_091443.json:
 
 Replying to [comment:51 jdemeyer]:
 > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.
+
 
 :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...
 
@@ -1680,7 +1702,7 @@ Otherwise the problem remains or rearises with future releases of these OSs.
 archive/issue_comments_091444.json:
 ```json
 {
-    "body": "We could just always build Sage's readline and - **before** installing it - test if it works with `/bin/bash` by e.g.\n\n```sh\nif env LD_LIBRARY_PATH=\".\" bash -c \"echo 'Bash works with this version of readline.'\"; then\n    $MAKE install\n    ...\nelse\n    echo \"Bash doesn't work with Sage's version of readline - using the system's one.\"\n    # Can this cause trouble with *older* system libreadlines?\n    # We still need a *development* version of readline btw.\n    exit 0\nfi\n```\n",
+    "body": "We could just always build Sage's readline and - **before** installing it - test if it works with `/bin/bash` by e.g.\n\n```sh\nif env LD_LIBRARY_PATH=\".\" bash -c \"echo 'Bash works with this version of readline.'\"; then\n    $MAKE install\n    ...\nelse\n    echo \"Bash doesn't work with Sage's version of readline - using the system's one.\"\n    # Can this cause trouble with *older* system libreadlines?\n    # We still need a *development* version of readline btw.\n    exit 0\nfi\n```",
     "created_at": "2010-12-13T15:31:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1705,13 +1727,12 @@ fi
 
 
 
-
 ---
 
 archive/issue_comments_091445.json:
 ```json
 {
-    "body": "Replying to [comment:53 leif]:\n> Replying to [comment:51 jdemeyer]:\n> > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n> \n> :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> \n> Otherwise the problem remains or rearises with future releases of these OSs.\nTrue, but this problem is not specific to these OSs and applies to every OS.",
+    "body": "Replying to [comment:53 leif]:\n> Replying to [comment:51 jdemeyer]:\n> > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n\n> \n> :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> \n> Otherwise the problem remains or rearises with future releases of these OSs.\n\nTrue, but this problem is not specific to these OSs and applies to every OS.",
     "created_at": "2010-12-13T15:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1723,10 +1744,12 @@ archive/issue_comments_091445.json:
 Replying to [comment:53 leif]:
 > Replying to [comment:51 jdemeyer]:
 > > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.
+
 > 
 > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...
 > 
 > Otherwise the problem remains or rearises with future releases of these OSs.
+
 True, but this problem is not specific to these OSs and applies to every OS.
 
 
@@ -1754,7 +1777,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_091447.json:
 ```json
 {
-    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:53 leif]:\n> > Replying to [comment:51 jdemeyer]:\n> > > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n> > \n> > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> > \n> > Otherwise the problem remains or rearises with future releases of these OSs.\n> True, but this problem is not specific to these OSs and applies to every OS.\n\nNot really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.\n\nWould you be happy with that?\n\n(I think at least it doesn't hurt doing so, i.e. testing `bash` against Sage's readline before installing it. Better to give a concise error message than risking other weird build errors.)",
+    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:53 leif]:\n> > Replying to [comment:51 jdemeyer]:\n> > > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.\n\n> > \n> > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> > \n> > Otherwise the problem remains or rearises with future releases of these OSs.\n\n> True, but this problem is not specific to these OSs and applies to every OS.\n\nNot really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.\n\nWould you be happy with that?\n\n(I think at least it doesn't hurt doing so, i.e. testing `bash` against Sage's readline before installing it. Better to give a concise error message than risking other weird build errors.)",
     "created_at": "2010-12-13T16:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1767,10 +1790,12 @@ Replying to [comment:55 jdemeyer]:
 > Replying to [comment:53 leif]:
 > > Replying to [comment:51 jdemeyer]:
 > > > Why do we need to special-case OpenSUSE in the first place?  I thought the whole point of this ticket was **not** to have any special cases any more.
+
 > > 
 > > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...
 > > 
 > > Otherwise the problem remains or rearises with future releases of these OSs.
+
 > True, but this problem is not specific to these OSs and applies to every OS.
 
 Not really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.
@@ -1786,7 +1811,7 @@ Would you be happy with that?
 archive/issue_comments_091448.json:
 ```json
 {
-    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:53 leif]:\n> > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> > \n> > Otherwise the problem remains or rearises with future releases of these OSs.\n> True, but this problem is not specific to these OSs and applies to every OS.\n\nIt seems to be specific to these two Linux distributions - though perhaps there are others, as one Linux distro tends to be based on another. Mint is based on Ubuntu, which is itself based on Debian. \n\nMost other distros don't ship with a bash that is dynamically linked to readline. It's never been a problem on Solaris or OS X either. Although I've never built Sage fully on either AIX or HP-UX, I'm not aware of any bash/readline issues on those operating systems either. \n\nUnless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n\nhttp://wiki.sagemath.org/SupportedPlatforms#Linux\n\nsays 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n\nI simply don't have access to the hardware/software to test this. \n\nWilliam posted a few weeks ago he was wanting people to administer virtual machines. Unless someone is going to do this for the latest OpenSUSE, then I can't see how we can support it. I already admin two machines myself which are buildbot slavs (*hawk* and *t2*). \n\nDave",
+    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:53 leif]:\n> > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...\n> > \n> > Otherwise the problem remains or rearises with future releases of these OSs.\n\n> True, but this problem is not specific to these OSs and applies to every OS.\n\nIt seems to be specific to these two Linux distributions - though perhaps there are others, as one Linux distro tends to be based on another. Mint is based on Ubuntu, which is itself based on Debian. \n\nMost other distros don't ship with a bash that is dynamically linked to readline. It's never been a problem on Solaris or OS X either. Although I've never built Sage fully on either AIX or HP-UX, I'm not aware of any bash/readline issues on those operating systems either. \n\nUnless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n\nhttp://wiki.sagemath.org/SupportedPlatforms#Linux\n\nsays 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n\nI simply don't have access to the hardware/software to test this. \n\nWilliam posted a few weeks ago he was wanting people to administer virtual machines. Unless someone is going to do this for the latest OpenSUSE, then I can't see how we can support it. I already admin two machines myself which are buildbot slavs (*hawk* and *t2*). \n\nDave",
     "created_at": "2010-12-13T18:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1800,6 +1825,7 @@ Replying to [comment:55 jdemeyer]:
 > > :D If you convince the openSUSE and ArchLinux developers to never make `bash` depend on a newer libreadline than Sage ships...
 > > 
 > > Otherwise the problem remains or rearises with future releases of these OSs.
+
 > True, but this problem is not specific to these OSs and applies to every OS.
 
 It seems to be specific to these two Linux distributions - though perhaps there are others, as one Linux distro tends to be based on another. Mint is based on Ubuntu, which is itself based on Debian. 
@@ -1825,7 +1851,7 @@ Dave
 archive/issue_comments_091449.json:
 ```json
 {
-    "body": "Replying to [comment:57 drkirkby]:\n> Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> \n> http://wiki.sagemath.org/SupportedPlatforms#Linux\n> \n> says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> \n> I simply don't have access to the hardware/software to test this.\n\nJust provide an spkg and let the others test (and review) it... ;-)\n\n(until we get more build slaves, running these distros.)\n\n\n \n> William posted a few weeks ago he was wanting people to administer virtual machines. Unless someone is going to do this for the latest OpenSUSE, then I can't see how we can support it. I already admin two machines myself which are buildbot slavs (*hawk* and *t2*). \n\n----\n\nAs mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).",
+    "body": "Replying to [comment:57 drkirkby]:\n> Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> \n> http://wiki.sagemath.org/SupportedPlatforms#Linux\n> \n> says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> \n> I simply don't have access to the hardware/software to test this.\n\n\nJust provide an spkg and let the others test (and review) it... ;-)\n\n(until we get more build slaves, running these distros.)\n\n\n \n> William posted a few weeks ago he was wanting people to administer virtual machines. Unless someone is going to do this for the latest OpenSUSE, then I can't see how we can support it. I already admin two machines myself which are buildbot slavs (*hawk* and *t2*). \n\n\n---\n\nAs mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).",
     "created_at": "2010-12-13T18:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1843,6 +1869,7 @@ Replying to [comment:57 drkirkby]:
 > 
 > I simply don't have access to the hardware/software to test this.
 
+
 Just provide an spkg and let the others test (and review) it... ;-)
 
 (until we get more build slaves, running these distros.)
@@ -1851,7 +1878,8 @@ Just provide an spkg and let the others test (and review) it... ;-)
  
 > William posted a few weeks ago he was wanting people to administer virtual machines. Unless someone is going to do this for the latest OpenSUSE, then I can't see how we can support it. I already admin two machines myself which are buildbot slavs (*hawk* and *t2*). 
 
-----
+
+---
 
 As mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).
 
@@ -1862,7 +1890,7 @@ As mentioned on sage-devel, a work-around for a Bash broken by Sage's readline i
 archive/issue_comments_091450.json:
 ```json
 {
-    "body": "Replying to [comment:56 leif]:\n> Not really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.\n> \n> Would you be happy with that?\nWell, I don't care too much about this, but if it's possible to test whether `bash` works, that certainly is a better solution.",
+    "body": "Replying to [comment:56 leif]:\n> Not really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.\n> \n> Would you be happy with that?\n\nWell, I don't care too much about this, but if it's possible to test whether `bash` works, that certainly is a better solution.",
     "created_at": "2010-12-13T20:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1875,6 +1903,7 @@ Replying to [comment:56 leif]:
 > Not really. Others work fine, so I consider testing if `bash` works with our readline also an (implicit) special case.
 > 
 > Would you be happy with that?
+
 Well, I don't care too much about this, but if it's possible to test whether `bash` works, that certainly is a better solution.
 
 
@@ -1884,7 +1913,7 @@ Well, I don't care too much about this, but if it's possible to test whether `ba
 archive/issue_comments_091451.json:
 ```json
 {
-    "body": "Replying to [comment:58 leif]:\n> As mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).\n\ns/set its `RPATH`/change an existing `RPATH` or `RUNPATH`/\n\nor use `patchelf`, which also supports **creating** / adding such tags.\n\n\nAnother work-around is to set up a `bash` wrapper that (re)sets `LD_LIBRARY_PATH`... ;-)",
+    "body": "Replying to [comment:58 leif]:\n> As mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).\n\n\ns/set its `RPATH`/change an existing `RPATH` or `RUNPATH`/\n\nor use `patchelf`, which also supports **creating** / adding such tags.\n\n\nAnother work-around is to set up a `bash` wrapper that (re)sets `LD_LIBRARY_PATH`... ;-)",
     "created_at": "2010-12-13T20:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1895,6 +1924,7 @@ archive/issue_comments_091451.json:
 
 Replying to [comment:58 leif]:
 > As mentioned on sage-devel, a work-around for a Bash broken by Sage's readline is to set its `RPATH` or `RUNPATH` (with `chrpath`). We could give a hint to that in an error (or warning) message in case we detect installing our readline would break `bash` (but don't know for sure using the system's libreadline will work for us).
+
 
 s/set its `RPATH`/change an existing `RPATH` or `RUNPATH`/
 
@@ -1910,7 +1940,7 @@ Another work-around is to set up a `bash` wrapper that (re)sets `LD_LIBRARY_PATH
 archive/issue_comments_091452.json:
 ```json
 {
-    "body": "Replying to [comment:57 drkirkby]:\n> Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> \n> http://wiki.sagemath.org/SupportedPlatforms#Linux\n> \n> says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> \n> I simply don't have access to the hardware/software to test this. \n\nI've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).\nHowever, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.",
+    "body": "Replying to [comment:57 drkirkby]:\n> Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> \n> http://wiki.sagemath.org/SupportedPlatforms#Linux\n> \n> says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> \n> I simply don't have access to the hardware/software to test this. \n\n\nI've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).\nHowever, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.",
     "created_at": "2010-12-13T23:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1927,6 +1957,7 @@ Replying to [comment:57 drkirkby]:
 > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. 
 > 
 > I simply don't have access to the hardware/software to test this. 
+
 
 I've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).
 However, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.
@@ -1956,7 +1987,7 @@ Note: it might be reasonable to drop support for openSUSE 11.1, because it will 
 archive/issue_comments_091454.json:
 ```json
 {
-    "body": "Replying to [comment:62 Koen]:\n> Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).\n\nWe shouldn't have to drop support for that, installing / using our 6.1 package should work there as well.\n\n(Bash would still use the system's 5.x version.)\n\nWe just have to fix / remove the old copying stuff... (and I would add the mentioned sanity check).",
+    "body": "Replying to [comment:62 Koen]:\n> Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).\n\n\nWe shouldn't have to drop support for that, installing / using our 6.1 package should work there as well.\n\n(Bash would still use the system's 5.x version.)\n\nWe just have to fix / remove the old copying stuff... (and I would add the mentioned sanity check).",
     "created_at": "2010-12-14T00:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1967,6 +1998,7 @@ archive/issue_comments_091454.json:
 
 Replying to [comment:62 Koen]:
 > Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).
+
 
 We shouldn't have to drop support for that, installing / using our 6.1 package should work there as well.
 
@@ -1981,7 +2013,7 @@ We just have to fix / remove the old copying stuff... (and I would add the menti
 archive/issue_comments_091455.json:
 ```json
 {
-    "body": "Replying to [comment:62 Koen]:\n> Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).\n\nIt's a shame that support is dropped so soon in the Linux world - this contrasts widely with professional Unix systems like Solaris. Solaris 8 was released in February 2000 and will be supported until March 2012 (i.e. supported for 12 years). Similar patterns will be seen on AIX and HP-UX I expect. \n\nNot everyone runs the latest version of the operating system. For many people, they don't update the OS until they buy a new computer. I consider myself pretty IT literate, but looking at my computers, many don't have the latest releases. I grew out of the habit of updating the OS because a new one came out. \n\nDave",
+    "body": "Replying to [comment:62 Koen]:\n> Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).\n\n\nIt's a shame that support is dropped so soon in the Linux world - this contrasts widely with professional Unix systems like Solaris. Solaris 8 was released in February 2000 and will be supported until March 2012 (i.e. supported for 12 years). Similar patterns will be seen on AIX and HP-UX I expect. \n\nNot everyone runs the latest version of the operating system. For many people, they don't update the OS until they buy a new computer. I consider myself pretty IT literate, but looking at my computers, many don't have the latest releases. I grew out of the habit of updating the OS because a new one came out. \n\nDave",
     "created_at": "2010-12-14T01:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -1992,6 +2024,7 @@ archive/issue_comments_091455.json:
 
 Replying to [comment:62 Koen]:
 > Note: it might be reasonable to drop support for openSUSE 11.1, because it will stop receiving security updates after December 31st, 2010 (the release is 2 years old now).
+
 
 It's a shame that support is dropped so soon in the Linux world - this contrasts widely with professional Unix systems like Solaris. Solaris 8 was released in February 2000 and will be supported until March 2012 (i.e. supported for 12 years). Similar patterns will be seen on AIX and HP-UX I expect. 
 
@@ -2006,7 +2039,7 @@ Dave
 archive/issue_comments_091456.json:
 ```json
 {
-    "body": "Replying to [comment:58 leif]:\n> Replying to [comment:57 drkirkby]:\n> > Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> > \n> > http://wiki.sagemath.org/SupportedPlatforms#Linux\n> > \n> > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> > \n> > I simply don't have access to the hardware/software to test this.\n> \n> Just provide an spkg and let the others test (and review) it... ;-)\n> \n> (until we get more build slaves, running these distros.)\n\nI've done that. I created the package. It's now marked as \"needs work\" but it is going to need to be worked on by someone else. \n\nIn general, I very much like the approach taken by `autoconf`, where instead of having a huge lookup table detailing what version of what OS supports this function or that function, it actually **tests** the functionality. Overall that seems a far more logical approach to me, and seems to be what Jeroen is proposing. If we can **test** the functionality of bash, rather than having code that attempts to find a specific Linux release, then testing seems a better way forward. \n\nDave",
+    "body": "Replying to [comment:58 leif]:\n> Replying to [comment:57 drkirkby]:\n> > Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> > \n> > http://wiki.sagemath.org/SupportedPlatforms#Linux\n> > \n> > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> > \n> > I simply don't have access to the hardware/software to test this.\n\n> \n> Just provide an spkg and let the others test (and review) it... ;-)\n> \n> (until we get more build slaves, running these distros.)\n\n\nI've done that. I created the package. It's now marked as \"needs work\" but it is going to need to be worked on by someone else. \n\nIn general, I very much like the approach taken by `autoconf`, where instead of having a huge lookup table detailing what version of what OS supports this function or that function, it actually **tests** the functionality. Overall that seems a far more logical approach to me, and seems to be what Jeroen is proposing. If we can **test** the functionality of bash, rather than having code that attempts to find a specific Linux release, then testing seems a better way forward. \n\nDave",
     "created_at": "2010-12-14T02:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -2024,10 +2057,12 @@ Replying to [comment:58 leif]:
 > > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. 
 > > 
 > > I simply don't have access to the hardware/software to test this.
+
 > 
 > Just provide an spkg and let the others test (and review) it... ;-)
 > 
 > (until we get more build slaves, running these distros.)
+
 
 I've done that. I created the package. It's now marked as "needs work" but it is going to need to be worked on by someone else. 
 
@@ -2042,7 +2077,7 @@ Dave
 archive/issue_comments_091457.json:
 ```json
 {
-    "body": "Replying to [comment:65 drkirkby]:\n> I've done that. I created the package. It's now marked as \"needs work\" but it is going to need to be worked on by someone else.\n\nOk. If you're not going to change it further, I can do that in the next days.\n\n\n \n> In general, I very much like the approach taken by `autoconf`, where instead of having a huge lookup table detailing what version of what OS supports this function or that function, it actually **tests** the functionality. Overall that seems a far more logical approach to me, and seems to be what Jeroen is proposing. If we can **test** the functionality of bash, rather than having code that attempts to find a specific Linux release, then testing seems a better way forward.\n\nWell, autotools, or the scripts their files are built from, have a lot of knowledge coded into them (like chess programs, or e.g. `gcc`, too), i.e. they also - at least partially - detect the system and make the choices based on that.\n\n(And packages using autotools still have `configure` options like `--with-package-xy=/path/to/package-xy`, `--with-included-package-xy` and `--with-system-package-xy`, and lots of `--disable-*` and `--enable-*` one sometimes *has to* specify manually. Try e.g. building a \"customized\" version of a recent GCC, with dozens of settings also for GMP, MPFR, MPC, PPL and CLooG, probably other packages like gettext and zlib as well. Also, GCC does drop support of older platforms, OSs and architectures, due to a lack of developer resources.)\n\n\nFeel free to extend Sage's `configure` (which really could do much more, setting appropriate environment variables [like your famous `CFLAG64`] etc.)...\n\nBut Sage is (also) a distro with many \"foreign\" packages, not just a program, and to make things work together, we have to make choices normally a user would make - manually - for each of Sage's packages.\n\nThe user can still fake Sage's readline was already installed such that Sage will use the system's one, but that requires some more reading and typing than just issuing `make` (or double-clicking the Makefile). ;-)\n\nSame for other packages.",
+    "body": "Replying to [comment:65 drkirkby]:\n> I've done that. I created the package. It's now marked as \"needs work\" but it is going to need to be worked on by someone else.\n\n\nOk. If you're not going to change it further, I can do that in the next days.\n\n\n \n> In general, I very much like the approach taken by `autoconf`, where instead of having a huge lookup table detailing what version of what OS supports this function or that function, it actually **tests** the functionality. Overall that seems a far more logical approach to me, and seems to be what Jeroen is proposing. If we can **test** the functionality of bash, rather than having code that attempts to find a specific Linux release, then testing seems a better way forward.\n\n\nWell, autotools, or the scripts their files are built from, have a lot of knowledge coded into them (like chess programs, or e.g. `gcc`, too), i.e. they also - at least partially - detect the system and make the choices based on that.\n\n(And packages using autotools still have `configure` options like `--with-package-xy=/path/to/package-xy`, `--with-included-package-xy` and `--with-system-package-xy`, and lots of `--disable-*` and `--enable-*` one sometimes *has to* specify manually. Try e.g. building a \"customized\" version of a recent GCC, with dozens of settings also for GMP, MPFR, MPC, PPL and CLooG, probably other packages like gettext and zlib as well. Also, GCC does drop support of older platforms, OSs and architectures, due to a lack of developer resources.)\n\n\nFeel free to extend Sage's `configure` (which really could do much more, setting appropriate environment variables [like your famous `CFLAG64`] etc.)...\n\nBut Sage is (also) a distro with many \"foreign\" packages, not just a program, and to make things work together, we have to make choices normally a user would make - manually - for each of Sage's packages.\n\nThe user can still fake Sage's readline was already installed such that Sage will use the system's one, but that requires some more reading and typing than just issuing `make` (or double-clicking the Makefile). ;-)\n\nSame for other packages.",
     "created_at": "2010-12-14T03:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -2054,11 +2089,13 @@ archive/issue_comments_091457.json:
 Replying to [comment:65 drkirkby]:
 > I've done that. I created the package. It's now marked as "needs work" but it is going to need to be worked on by someone else.
 
+
 Ok. If you're not going to change it further, I can do that in the next days.
 
 
  
 > In general, I very much like the approach taken by `autoconf`, where instead of having a huge lookup table detailing what version of what OS supports this function or that function, it actually **tests** the functionality. Overall that seems a far more logical approach to me, and seems to be what Jeroen is proposing. If we can **test** the functionality of bash, rather than having code that attempts to find a specific Linux release, then testing seems a better way forward.
+
 
 Well, autotools, or the scripts their files are built from, have a lot of knowledge coded into them (like chess programs, or e.g. `gcc`, too), i.e. they also - at least partially - detect the system and make the choices based on that.
 
@@ -2116,7 +2153,7 @@ Additional note: I don't mind merging a partially-fixed readline 6.1 (with some 
 archive/issue_comments_091460.json:
 ```json
 {
-    "body": "Replying to [comment:61 Koen]:\n> Replying to [comment:57 drkirkby]:\n> > Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> > \n> > http://wiki.sagemath.org/SupportedPlatforms#Linux\n> > \n> > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> > \n> > I simply don't have access to the hardware/software to test this. \n> \n> I've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).\n> However, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.\n\nThis is a can of worms. Sage certainly was built on 11.1 on 21<sup>st</sup> October. \n\nhttp://build.sagemath.org/sage/builders/openSUSE%2011.1-64%20%28menas%29\n\nI'll leave others to judge if my package is better or worst than the present one. Obviously if someone can improve the readline package soon, it would be good to get an improved version in Sage. But if nobody has the time/resources to do so, then perhaps merging my 6.1 will be preferable to leaving the old one. \n\nDave",
+    "body": "Replying to [comment:61 Koen]:\n> Replying to [comment:57 drkirkby]:\n> > Unless someone is willing to set up an OpenSUSE system for people to test on, I can't really see how we can support the latest release. \n> > \n> > http://wiki.sagemath.org/SupportedPlatforms#Linux\n> > \n> > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. \n> > \n> > I simply don't have access to the hardware/software to test this. \n\n> \n> I've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).\n> However, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.\n\n\nThis is a can of worms. Sage certainly was built on 11.1 on 21<sup>st</sup> October. \n\nhttp://build.sagemath.org/sage/builders/openSUSE%2011.1-64%20%28menas%29\n\nI'll leave others to judge if my package is better or worst than the present one. Obviously if someone can improve the readline package soon, it would be good to get an improved version in Sage. But if nobody has the time/resources to do so, then perhaps merging my 6.1 will be preferable to leaving the old one. \n\nDave",
     "created_at": "2010-12-16T17:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -2134,9 +2171,11 @@ Replying to [comment:61 Koen]:
 > > says 11.1 is supported, and 11.2 and 11.3 are known to be broken. 
 > > 
 > > I simply don't have access to the hardware/software to test this. 
+
 > 
 > I've been testing openSUSE lately - and theory and practice are completely reversed. Sage does not build on 11.1 due to readline 5.x being the default there. Whereas on openSUSE 11.2 and 11.3, Sage builds properly (a recent 4.6.1.rc0 snapshot).
 > However, I'm not sure how to test if my final Sage 'works' w.r.t. the readline/bash problem, so I will only claim that it builds and sage starts properly.
+
 
 This is a can of worms. Sage certainly was built on 11.1 on 21<sup>st</sup> October. 
 
@@ -2171,7 +2210,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091462.json:
 ```json
 {
-    "body": "Replying to [comment:69 drkirkby]:\n> But if nobody has the time/resources to do so, then perhaps merging my 6.1 will be preferable to leaving the old one. \n\nWith these words, I propose the *current* spkg http://boxen.math.washington.edu/home/kirkby/readline-6.1.spkg] for review.",
+    "body": "Replying to [comment:69 drkirkby]:\n> But if nobody has the time/resources to do so, then perhaps merging my 6.1 will be preferable to leaving the old one. \n\n\nWith these words, I propose the *current* spkg http://boxen.math.washington.edu/home/kirkby/readline-6.1.spkg] for review.",
     "created_at": "2010-12-19T12:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
@@ -2182,6 +2221,7 @@ archive/issue_comments_091462.json:
 
 Replying to [comment:69 drkirkby]:
 > But if nobody has the time/resources to do so, then perhaps merging my 6.1 will be preferable to leaving the old one. 
+
 
 With these words, I propose the *current* spkg http://boxen.math.washington.edu/home/kirkby/readline-6.1.spkg] for review.
 

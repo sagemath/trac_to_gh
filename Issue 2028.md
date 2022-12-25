@@ -3,7 +3,7 @@
 archive/issues_002028.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nand \n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
+    "body": "Assignee: @williamstein\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nand \n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
     "created_at": "2008-02-02T03:57:59Z",
     "labels": [
         "component: calculus",
@@ -22,7 +22,6 @@ The matrix eigenspaces() function is broken for rings over SR since the algorith
 
 Data:
 
-
 ```
 sage: a=matrix(SR,[[1,2],[3,4]])
 sage: b=matrix(QQ,[[1,2],[3,4]])
@@ -37,16 +36,13 @@ sage: [i for i in b.fcp()]
 [(x^2 - 5*x - 2, 1)]
 ```
 
-
 and 
-
 
 ```
 sage: a=matrix(SR,[[1,2],[3,4]])
 sage: [i for i in a.fcp().factor_list()]
 [(x^2 - 5*x - 2, 1)]
 ```
-
 
 So apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?
 
@@ -137,7 +133,7 @@ this replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails
 archive/issue_comments_013090.json:
 ```json
 {
-    "body": "This patch fails when the exponents in factorizations aren't 1.  See below. \n\n\n```\nsage: matrix(ZZ, 5, [1..5^2]).fcp()\nx^3 * (x^2 - 65*x - 250)\nsage: matrix(SR, 5, [1..5^2]).fcp()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.1.rc4/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.1.rc4/matrix_symbolic_dense.pyx in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.fcp()\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/sage/structure/factorization.py in __init__(self, x, unit, cr, sort, simplify)\n    101         for t in x:\n    102             if not (isinstance(t, tuple) and len(t) == 2 and isinstance(t[1],(int, long, Integer))):\n--> 103                 raise TypeError, \"x must be a list of tuples of length 2\"\n    104         list.__init__(self, x)\n    105         if unit is None:\n\n<type 'exceptions.TypeError'>: x must be a list of tuples of length 2\n```\n",
+    "body": "This patch fails when the exponents in factorizations aren't 1.  See below. \n\n```\nsage: matrix(ZZ, 5, [1..5^2]).fcp()\nx^3 * (x^2 - 65*x - 250)\nsage: matrix(SR, 5, [1..5^2]).fcp()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.1.rc4/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.1.rc4/matrix_symbolic_dense.pyx in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.fcp()\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/sage/structure/factorization.py in __init__(self, x, unit, cr, sort, simplify)\n    101         for t in x:\n    102             if not (isinstance(t, tuple) and len(t) == 2 and isinstance(t[1],(int, long, Integer))):\n--> 103                 raise TypeError, \"x must be a list of tuples of length 2\"\n    104         list.__init__(self, x)\n    105         if unit is None:\n\n<type 'exceptions.TypeError'>: x must be a list of tuples of length 2\n```",
     "created_at": "2008-02-02T09:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
@@ -147,7 +143,6 @@ archive/issue_comments_013090.json:
 ```
 
 This patch fails when the exponents in factorizations aren't 1.  See below. 
-
 
 ```
 sage: matrix(ZZ, 5, [1..5^2]).fcp()
@@ -169,7 +164,6 @@ sage: matrix(SR, 5, [1..5^2]).fcp()
 
 <type 'exceptions.TypeError'>: x must be a list of tuples of length 2
 ```
-
 
 
 

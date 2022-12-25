@@ -85,7 +85,7 @@ OS X for one.
 archive/issue_comments_072900.json:
 ```json
 {
-    "body": "FWIW, Sage 4.3.3 (with some mods to get it to build on Solaris) takes 8 seconds to start on a Sun Blade 1000, with 2 x 900 MHz CPUs and 2 GB RAM. That machine has 15,000 rpm 2 Gbit/s fibre channel FC-AL disks. \n\nConsidering the age of that machine, I'm not overly concerned over that one. Although this machine is quite old, the disks are quite high spec. I don't know if that gives any clues. File systems are local. \n\nThe doc test \n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/symmetric_ideal.py\" \n```\n\n\ntakes 459.4 seconds to run on that machine, so this is no quick machine - I had to increase SAGE_TIMEOUT just to get some doctests to pass. \n\nDave",
+    "body": "FWIW, Sage 4.3.3 (with some mods to get it to build on Solaris) takes 8 seconds to start on a Sun Blade 1000, with 2 x 900 MHz CPUs and 2 GB RAM. That machine has 15,000 rpm 2 Gbit/s fibre channel FC-AL disks. \n\nConsidering the age of that machine, I'm not overly concerned over that one. Although this machine is quite old, the disks are quite high spec. I don't know if that gives any clues. File systems are local. \n\nThe doc test \n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/symmetric_ideal.py\" \n```\n\ntakes 459.4 seconds to run on that machine, so this is no quick machine - I had to increase SAGE_TIMEOUT just to get some doctests to pass. \n\nDave",
     "created_at": "2010-02-28T17:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
@@ -100,11 +100,9 @@ Considering the age of that machine, I'm not overly concerned over that one. Alt
 
 The doc test 
 
-
 ```
 sage -t  "devel/sage/sage/rings/polynomial/symmetric_ideal.py" 
 ```
-
 
 takes 459.4 seconds to run on that machine, so this is no quick machine - I had to increase SAGE_TIMEOUT just to get some doctests to pass. 
 
@@ -388,7 +386,7 @@ From a warm file cache, my patch seems to shave off about 1.4% of the startup ti
 archive/issue_comments_072914.json:
 ```json
 {
-    "body": "Another issue I have found with this patch. With the lazy_imports in all.py, the namespace used in the instances is not the global namespace.\n\n(after several runnings of sage, so it uses the cached database of functions)\n\n\n```\nsage: sloane_sequence\n<sage.misc.lazy_import.LazyImport object at 0x3e4d950>\nsage: sloane_sequence._get_object()\n<function sloane_sequence at 0x51a7230>\nsage: sloane_sequence\n<sage.misc.lazy_import.LazyImport object at 0x3e4d950>\n```\n\n\nIt does not introduce sloane_sequence function in the global namespace but in sloane_sequence._namespace that seems to not be the global one.",
+    "body": "Another issue I have found with this patch. With the lazy_imports in all.py, the namespace used in the instances is not the global namespace.\n\n(after several runnings of sage, so it uses the cached database of functions)\n\n```\nsage: sloane_sequence\n<sage.misc.lazy_import.LazyImport object at 0x3e4d950>\nsage: sloane_sequence._get_object()\n<function sloane_sequence at 0x51a7230>\nsage: sloane_sequence\n<sage.misc.lazy_import.LazyImport object at 0x3e4d950>\n```\n\nIt does not introduce sloane_sequence function in the global namespace but in sloane_sequence._namespace that seems to not be the global one.",
     "created_at": "2010-11-05T08:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
@@ -401,7 +399,6 @@ Another issue I have found with this patch. With the lazy_imports in all.py, the
 
 (after several runnings of sage, so it uses the cached database of functions)
 
-
 ```
 sage: sloane_sequence
 <sage.misc.lazy_import.LazyImport object at 0x3e4d950>
@@ -410,7 +407,6 @@ sage: sloane_sequence._get_object()
 sage: sloane_sequence
 <sage.misc.lazy_import.LazyImport object at 0x3e4d950>
 ```
-
 
 It does not introduce sloane_sequence function in the global namespace but in sloane_sequence._namespace that seems to not be the global one.
 
@@ -439,7 +435,7 @@ Okay, I guess because of the ticket title, I attached my patch.  But the ticket 
 archive/issue_comments_072916.json:
 ```json
 {
-    "body": "Concerning the input on the global namespace in sage.all.py one can write\n\n\n```\nimport __builtin__\nG = __builtin__.__dict__\ndel __builtin__\n```\n\n\nand insert everything in the dictionary G.\n\nBut his looks like a very ugly hack.",
+    "body": "Concerning the input on the global namespace in sage.all.py one can write\n\n```\nimport __builtin__\nG = __builtin__.__dict__\ndel __builtin__\n```\n\nand insert everything in the dictionary G.\n\nBut his looks like a very ugly hack.",
     "created_at": "2011-03-03T10:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
@@ -450,13 +446,11 @@ archive/issue_comments_072916.json:
 
 Concerning the input on the global namespace in sage.all.py one can write
 
-
 ```
 import __builtin__
 G = __builtin__.__dict__
 del __builtin__
 ```
-
 
 and insert everything in the dictionary G.
 

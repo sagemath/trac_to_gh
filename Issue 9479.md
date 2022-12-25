@@ -3,7 +3,7 @@
 archive/issues_009479.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby\n\nKeywords: license\n\nIn sage 4.4.4, the file SPKG.txt says:\n\n```\n## License\n\n * GPL V2+\n```\n\nwhereas src/COPYING says:\n\n```\n                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9479\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby\n\nKeywords: license\n\nIn sage 4.4.4, the file SPKG.txt says:\n\n```\n## License\n\n * GPL V2+\n```\nwhereas src/COPYING says:\n\n```\n                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9479\n\n",
     "created_at": "2010-07-12T12:30:20Z",
     "labels": [
         "component: packages: standard",
@@ -29,14 +29,12 @@ In sage 4.4.4, the file SPKG.txt says:
 
  * GPL V2+
 ```
-
 whereas src/COPYING says:
 
 ```
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9479
 

@@ -3,7 +3,7 @@
 archive/issues_002767.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field norm matrix\n\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field norm matrix\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
     "created_at": "2008-04-02T04:54:31Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ CC:  @ncalexan
 
 Keywords: number field norm matrix
 
-
 ```
 sage: F.<z> = CyclotomicField(5)
 sage: F.<z> = CyclotomicField(5)
@@ -35,7 +34,6 @@ sage: t.norm(F)
 sage: t.matrix(F)
 [2]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2767
 
@@ -144,7 +142,7 @@ Nick
 archive/issue_comments_018969.json:
 ```json
 {
-    "body": "After discussion on IRC, reviewed positive:\n\n\n```\ncraigcitro: hey ncalexan -- did you see i posted a patch for the thing you were looking at last night?\n[9:11pm] ncalexan: craigcitro: yes, I just commented on it.  I don't think it will handle polys like 2*x - a, will you check?\n[9:12pm] craigcitro: you're right -- but you can't create an extension with such a poly\n[9:12pm] craigcitro: (i checked it when i was looking at it)\n[9:12pm] ncalexan: Someday I hope to address that, but okay.\n[9:12pm] craigcitro: nod\n[9:12pm] ncalexan: Comment on the patch, then I'll review positive.\n[9:13pm] ncalexan: Actually, wait -- what about x - 2*a?\n[9:13pm] craigcitro: that works fine\n[9:13pm] craigcitro: i checked those\n[9:13pm] ncalexan: You're assuming that x = rel gen when you look at f(rel gen), right?\n[9:13pm] craigcitro: then i tried 2*x - a\n[9:13pm] craigcitro: and discovered it didn't work\n[9:14pm] craigcitro: if the rel poly is x-foo\n[9:14pm] ncalexan: Well, there's a test with x - a/2.\n[9:14pm] craigcitro: i just plug foo in.\n[9:14pm] ncalexan: Okay.  I'll review positive.\n```\n",
+    "body": "After discussion on IRC, reviewed positive:\n\n```\ncraigcitro: hey ncalexan -- did you see i posted a patch for the thing you were looking at last night?\n[9:11pm] ncalexan: craigcitro: yes, I just commented on it.  I don't think it will handle polys like 2*x - a, will you check?\n[9:12pm] craigcitro: you're right -- but you can't create an extension with such a poly\n[9:12pm] craigcitro: (i checked it when i was looking at it)\n[9:12pm] ncalexan: Someday I hope to address that, but okay.\n[9:12pm] craigcitro: nod\n[9:12pm] ncalexan: Comment on the patch, then I'll review positive.\n[9:13pm] ncalexan: Actually, wait -- what about x - 2*a?\n[9:13pm] craigcitro: that works fine\n[9:13pm] craigcitro: i checked those\n[9:13pm] ncalexan: You're assuming that x = rel gen when you look at f(rel gen), right?\n[9:13pm] craigcitro: then i tried 2*x - a\n[9:13pm] craigcitro: and discovered it didn't work\n[9:14pm] craigcitro: if the rel poly is x-foo\n[9:14pm] ncalexan: Well, there's a test with x - a/2.\n[9:14pm] craigcitro: i just plug foo in.\n[9:14pm] ncalexan: Okay.  I'll review positive.\n```",
     "created_at": "2008-04-03T04:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
@@ -154,7 +152,6 @@ archive/issue_comments_018969.json:
 ```
 
 After discussion on IRC, reviewed positive:
-
 
 ```
 craigcitro: hey ncalexan -- did you see i posted a patch for the thing you were looking at last night?
@@ -175,7 +172,6 @@ craigcitro: hey ncalexan -- did you see i posted a patch for the thing you were 
 [9:14pm] craigcitro: i just plug foo in.
 [9:14pm] ncalexan: Okay.  I'll review positive.
 ```
-
 
 
 

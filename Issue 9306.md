@@ -3,7 +3,7 @@
 archive/issues_009306.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nConsider the following:\n\n```\nsage: q=2^200/3^50\nsage: q.floor()\n2238393297946874000179418290327143433\nsage: q.ceil()\n2238393297946874000179418290327143434\nsage: q.round()\n2238393297946874000179418290327143433\n```\n\nThis is fine so far. However:\n\n```\nsage: floor(q)\n2238393297946874000179418290327143433\nsage: ceil(q)\n2238393297946874000179418290327143434\nsage: round(q)\n2.23839329795e+36\n```\n\nWe would expect `round(q)` to behave like `q.round()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9306\n\n",
+    "body": "Assignee: @aghitza\n\nConsider the following:\n\n```\nsage: q=2^200/3^50\nsage: q.floor()\n2238393297946874000179418290327143433\nsage: q.ceil()\n2238393297946874000179418290327143434\nsage: q.round()\n2238393297946874000179418290327143433\n```\nThis is fine so far. However:\n\n```\nsage: floor(q)\n2238393297946874000179418290327143433\nsage: ceil(q)\n2238393297946874000179418290327143434\nsage: round(q)\n2.23839329795e+36\n```\nWe would expect `round(q)` to behave like `q.round()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9306\n\n",
     "created_at": "2010-06-22T09:20:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ sage: q.ceil()
 sage: q.round()
 2238393297946874000179418290327143433
 ```
-
 This is fine so far. However:
 
 ```
@@ -40,7 +39,6 @@ sage: ceil(q)
 sage: round(q)
 2.23839329795e+36
 ```
-
 We would expect `round(q)` to behave like `q.round()`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9306

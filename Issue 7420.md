@@ -114,7 +114,7 @@ Another option is to wrap that coerce_map_from call in a _register_pair try/exce
 archive/issue_comments_062327.json:
 ```json
 {
-    "body": "Yes, calling _register_pair would work here, even a helper is_registered function might be better than using _coerce_test_dict directly. \n\nAlso, instead of \n\n\n```\n                connection = None \n                if EltPair(mor._domain, S, \"coerce\") not in _coerce_test_dict: \n                    connecting = mor._domain.coerce_map_from(S)\n                if connecting is not None: \n```\n\n\nit might be clearer to do \n\n\n```\n                if EltPair(mor._domain, S, \"coerce\") not in _coerce_test_dict: \n                    connecting = mor._domain.coerce_map_from(S)\n                    if connecting is not None: \n                        ...\n\n```\n",
+    "body": "Yes, calling _register_pair would work here, even a helper is_registered function might be better than using _coerce_test_dict directly. \n\nAlso, instead of \n\n```\n                connection = None \n                if EltPair(mor._domain, S, \"coerce\") not in _coerce_test_dict: \n                    connecting = mor._domain.coerce_map_from(S)\n                if connecting is not None: \n```\n\nit might be clearer to do \n\n```\n                if EltPair(mor._domain, S, \"coerce\") not in _coerce_test_dict: \n                    connecting = mor._domain.coerce_map_from(S)\n                    if connecting is not None: \n                        ...\n\n```",
     "created_at": "2009-11-10T07:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_comment",
@@ -127,7 +127,6 @@ Yes, calling _register_pair would work here, even a helper is_registered functio
 
 Also, instead of 
 
-
 ```
                 connection = None 
                 if EltPair(mor._domain, S, "coerce") not in _coerce_test_dict: 
@@ -135,9 +134,7 @@ Also, instead of
                 if connecting is not None: 
 ```
 
-
 it might be clearer to do 
-
 
 ```
                 if EltPair(mor._domain, S, "coerce") not in _coerce_test_dict: 
@@ -146,7 +143,6 @@ it might be clearer to do
                         ...
 
 ```
-
 
 
 
@@ -173,7 +169,7 @@ This is a variant of the previous patch, using register_pair
 archive/issue_comments_062329.json:
 ```json
 {
-    "body": "Attachment [trac_7420-fix-infinite-coercion-discovery-loop-2.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop-2.patch) by @nthiery created at 2009-11-11 08:44:48\n\nReplying to [comment:3 robertwb]:\n> Yes, calling _register_pair would work here\n\nI gave it a shot, and this works almost fine: all sage tests pass; except that for jack polynomials. Looking at it, it appears that the coercion model is picking a path which is *really* far from the shortest (see the attached log). The previous version was doing reasonably. This sounds like a pure piece of luck though, since in both cases, the strategy seems to be depth first search + limited selection among the first conversions found.\n\nRobert, Mike: from here, I see two options:\n- Either you spot something stupid I did in the second version of the patch, and then we go for it after fixing it.\n- Or we go for the first version of the patch for the moment (after applying Robert's suggestion for better indentation)\n\nIn both cases, after the category patches are in, we should definitely rewrite the coercion lookup to use a breath first search.",
+    "body": "Attachment [trac_7420-fix-infinite-coercion-discovery-loop-2.patch](tarball://root/attachments/some-uuid/ticket7420/trac_7420-fix-infinite-coercion-discovery-loop-2.patch) by @nthiery created at 2009-11-11 08:44:48\n\nReplying to [comment:3 robertwb]:\n> Yes, calling _register_pair would work here\n\n\nI gave it a shot, and this works almost fine: all sage tests pass; except that for jack polynomials. Looking at it, it appears that the coercion model is picking a path which is *really* far from the shortest (see the attached log). The previous version was doing reasonably. This sounds like a pure piece of luck though, since in both cases, the strategy seems to be depth first search + limited selection among the first conversions found.\n\nRobert, Mike: from here, I see two options:\n- Either you spot something stupid I did in the second version of the patch, and then we go for it after fixing it.\n- Or we go for the first version of the patch for the moment (after applying Robert's suggestion for better indentation)\n\nIn both cases, after the category patches are in, we should definitely rewrite the coercion lookup to use a breath first search.",
     "created_at": "2009-11-11T08:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7420",
     "type": "issue_comment",
@@ -186,6 +182,7 @@ Attachment [trac_7420-fix-infinite-coercion-discovery-loop-2.patch](tarball://ro
 
 Replying to [comment:3 robertwb]:
 > Yes, calling _register_pair would work here
+
 
 I gave it a shot, and this works almost fine: all sage tests pass; except that for jack polynomials. Looking at it, it appears that the coercion model is picking a path which is *really* far from the shortest (see the attached log). The previous version was doing reasonably. This sounds like a pure piece of luck though, since in both cases, the strategy seems to be depth first search + limited selection among the first conversions found.
 

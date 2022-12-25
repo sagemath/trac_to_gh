@@ -72,7 +72,7 @@ It's been brought up that this may be a bad idea, since after all we still have 
 archive/issue_comments_038975.json:
 ```json
 {
-    "body": "\n```\n20:41 < wstein> On the other hand, if Tim Daly really is the trademark owner of axiom, can't he\n20:41 < wstein> just tell us we can't use the name and that is that?\n20:41 < cwitty> I don't think so.\n20:41 < cwitty> He can tell us we can't call our product axiom.\n20:42 < cwitty> He can probably tell us we can't call fricas axiom, which is closer to what we're doing.\n20:43 < mhansen> cwitty: We're actually just calling whatever \"axiom\" command happens to be on the system.\n```\n",
+    "body": "```\n20:41 < wstein> On the other hand, if Tim Daly really is the trademark owner of axiom, can't he\n20:41 < wstein> just tell us we can't use the name and that is that?\n20:41 < cwitty> I don't think so.\n20:41 < cwitty> He can tell us we can't call our product axiom.\n20:42 < cwitty> He can probably tell us we can't call fricas axiom, which is closer to what we're doing.\n20:43 < mhansen> cwitty: We're actually just calling whatever \"axiom\" command happens to be on the system.\n```",
     "created_at": "2009-02-18T04:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_038975.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 20:41 < wstein> On the other hand, if Tim Daly really is the trademark owner of axiom, can't he
@@ -90,7 +89,6 @@ archive/issue_comments_038975.json:
 20:42 < cwitty> He can probably tell us we can't call fricas axiom, which is closer to what we're doing.
 20:43 < mhansen> cwitty: We're actually just calling whatever "axiom" command happens to be on the system.
 ```
-
 
 
 
@@ -213,7 +211,7 @@ Bill.
 archive/issue_comments_038982.json:
 ```json
 {
-    "body": "Replying to [comment:6 bpage]:\n> Mike,\n\nHi Bill,\n\n> I do not understand the reference to \"ReST patches\". Are these in or out of sage-3.3? Bottom line: Can your patch be applied directly to sage-3.3?\n\nNo. The ReST patches are about 35 tickets work of documentation fixes that will go into 3.4. It will be out before the weekend, so you might want to wait until then to play with this. Note that 3.4.alpha0 ought in about 24 hours ought to contain all the ReST patches, so that might be something you could use for review.\n\nCheers,\n\nMichael\n\n> Bill.",
+    "body": "Replying to [comment:6 bpage]:\n> Mike,\n\n\nHi Bill,\n\n> I do not understand the reference to \"ReST patches\". Are these in or out of sage-3.3? Bottom line: Can your patch be applied directly to sage-3.3?\n\n\nNo. The ReST patches are about 35 tickets work of documentation fixes that will go into 3.4. It will be out before the weekend, so you might want to wait until then to play with this. Note that 3.4.alpha0 ought in about 24 hours ought to contain all the ReST patches, so that might be something you could use for review.\n\nCheers,\n\nMichael\n\n> Bill.",
     "created_at": "2009-02-23T17:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -225,9 +223,11 @@ archive/issue_comments_038982.json:
 Replying to [comment:6 bpage]:
 > Mike,
 
+
 Hi Bill,
 
 > I do not understand the reference to "ReST patches". Are these in or out of sage-3.3? Bottom line: Can your patch be applied directly to sage-3.3?
+
 
 No. The ReST patches are about 35 tickets work of documentation fixes that will go into 3.4. It will be out before the weekend, so you might want to wait until then to play with this. Note that 3.4.alpha0 ought in about 24 hours ought to contain all the ReST patches, so that might be something you could use for review.
 
@@ -284,7 +284,7 @@ Bill Page.
 archive/issue_comments_038984.json:
 ```json
 {
-    "body": "Mike,\n\nOn my Debian 5.0 (Lenny) x86 system I have not been able to compile recent versions of Axiom from source using the instructions here:\n\n  http://axiom.axiom-developer.org/axiom-website/download.html\n\nI get build errors early in the process. What did you use to get the \"January 2009 release of Axiom\" referred to in your tests?\n\nAfter installing the binary version of Axiom via\n\n```\n  apt-get install axiom\n```\n\nI do get the older \"2005\" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.\n\n```\n  sage: axiom('1+1')\n\n  sage:\n```\n\nreturns no visible result, while\n\n```\n  sage: fricas('1+1')\n  2\n  sage:\n```\n\nbehaves as expected.\n\nI think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.\n\nOn this same subject: What consideration, if any, has been given to providing a similar interface for OpenAxiom? Does anyone want this?\n\nRegards,\nBill Page.",
+    "body": "Mike,\n\nOn my Debian 5.0 (Lenny) x86 system I have not been able to compile recent versions of Axiom from source using the instructions here:\n\n  http://axiom.axiom-developer.org/axiom-website/download.html\n\nI get build errors early in the process. What did you use to get the \"January 2009 release of Axiom\" referred to in your tests?\n\nAfter installing the binary version of Axiom via\n\n```\n  apt-get install axiom\n```\nI do get the older \"2005\" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.\n\n```\n  sage: axiom('1+1')\n\n  sage:\n```\nreturns no visible result, while\n\n```\n  sage: fricas('1+1')\n  2\n  sage:\n```\nbehaves as expected.\n\nI think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.\n\nOn this same subject: What consideration, if any, has been given to providing a similar interface for OpenAxiom? Does anyone want this?\n\nRegards,\nBill Page.",
     "created_at": "2009-02-25T17:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -306,7 +306,6 @@ After installing the binary version of Axiom via
 ```
   apt-get install axiom
 ```
-
 I do get the older "2005" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.
 
 ```
@@ -314,7 +313,6 @@ I do get the older "2005" version of Axiom which does seem to run ok (known prob
 
   sage:
 ```
-
 returns no visible result, while
 
 ```
@@ -322,7 +320,6 @@ returns no visible result, while
   2
   sage:
 ```
-
 behaves as expected.
 
 I think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.
@@ -339,7 +336,7 @@ Bill Page.
 archive/issue_comments_038985.json:
 ```json
 {
-    "body": "Replying to [comment:9 bpage]:\n> Mike,\n> \n> On my Debian 5.0 (Lenny) x86 system I have not been able to compile recent versions of Axiom from source using the instructions here:\n> \n>   http://axiom.axiom-developer.org/axiom-website/download.html\n> \n> I get build errors early in the process. What did you use to get the \"January 2009 release of Axiom\" referred to in your tests?\n\nI just used the binary found here: http://www.axiom-developer.org/axiom-website/downloads/axiom-ubuntu64-jan2009-bin.tgz\n\n\n> \n> After installing the binary version of Axiom via\n> {{{\n>   apt-get install axiom\n> }}}\n> I do get the older \"2005\" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.\n\nYes, this is not too surprising.\n\n> I think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.\n\nI think Camm is updating the version of Axiom in Debian.  It'd be silly not to have some support since it's very little extra work.\n\n> On this same subject: What consideration, if any, has been given to providing a similar interface for OpenAxiom? Does anyone want this?\n\nI don't know -- I don't really use this software.  It should be pretty trivial to add support for.",
+    "body": "Replying to [comment:9 bpage]:\n> Mike,\n> \n> On my Debian 5.0 (Lenny) x86 system I have not been able to compile recent versions of Axiom from source using the instructions here:\n> \n>   http://axiom.axiom-developer.org/axiom-website/download.html\n> \n> I get build errors early in the process. What did you use to get the \"January 2009 release of Axiom\" referred to in your tests?\n\n\nI just used the binary found here: http://www.axiom-developer.org/axiom-website/downloads/axiom-ubuntu64-jan2009-bin.tgz\n\n\n> \n> After installing the binary version of Axiom via\n> \n> ```\n>   apt-get install axiom\n> ```\n> I do get the older \"2005\" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.\n\n\nYes, this is not too surprising.\n\n> I think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.\n\n\nI think Camm is updating the version of Axiom in Debian.  It'd be silly not to have some support since it's very little extra work.\n\n> On this same subject: What consideration, if any, has been given to providing a similar interface for OpenAxiom? Does anyone want this?\n\n\nI don't know -- I don't really use this software.  It should be pretty trivial to add support for.",
     "created_at": "2009-02-25T17:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -357,23 +354,28 @@ Replying to [comment:9 bpage]:
 > 
 > I get build errors early in the process. What did you use to get the "January 2009 release of Axiom" referred to in your tests?
 
+
 I just used the binary found here: http://www.axiom-developer.org/axiom-website/downloads/axiom-ubuntu64-jan2009-bin.tgz
 
 
 > 
 > After installing the binary version of Axiom via
-> {{{
+> 
+> ```
 >   apt-get install axiom
-> }}}
+> ```
 > I do get the older "2005" version of Axiom which does seem to run ok (known problems with Hyperdoc etc. notwithstanding). However this version seems to have pexpect synchronization problems.
+
 
 Yes, this is not too surprising.
 
 > I think the problem is probably caused by the differences in readline behavior under gcl and/or minor differences in the initial prompts. I am not sure how to handle this so long as we depend on an externally installed version of Axiom. If Sage is going to continue to support Axiom as an option, perhaps some effort needs to be given to creating an optional Axiom spkg ... (Don't look at me! :-). Otherwise, I would not be against getting rid of the 'axiom' function all together.
 
+
 I think Camm is updating the version of Axiom in Debian.  It'd be silly not to have some support since it's very little extra work.
 
 > On this same subject: What consideration, if any, has been given to providing a similar interface for OpenAxiom? Does anyone want this?
+
 
 I don't know -- I don't really use this software.  It should be pretty trivial to add support for.
 
@@ -424,7 +426,7 @@ Re: Axiom binaries on Debian instead of an spkg. Is there any other case in Sage
 archive/issue_comments_038988.json:
 ```json
 {
-    "body": "Replying to [comment:11 bpage]:\n> Here is a patch (trac_5111b.patch) that disables readline support for Axiom. With this change the axiom interface now works for me.\n\nCool!  Thanks for the fixes (and typo catches).\n\n> Re: Axiom binaries on Debian instead of an spkg. Is there any other case in Sage where an interface is provided from something that is not available for install as an spkg? I thought this might be a Sage policy.\n\nYeah, there are plenty of things like that.  For example, all of the proprietary math software interfaces :-)\n\n--Mike",
+    "body": "Replying to [comment:11 bpage]:\n> Here is a patch (trac_5111b.patch) that disables readline support for Axiom. With this change the axiom interface now works for me.\n\n\nCool!  Thanks for the fixes (and typo catches).\n\n> Re: Axiom binaries on Debian instead of an spkg. Is there any other case in Sage where an interface is provided from something that is not available for install as an spkg? I thought this might be a Sage policy.\n\n\nYeah, there are plenty of things like that.  For example, all of the proprietary math software interfaces :-)\n\n--Mike",
     "created_at": "2009-02-26T00:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
@@ -436,9 +438,11 @@ archive/issue_comments_038988.json:
 Replying to [comment:11 bpage]:
 > Here is a patch (trac_5111b.patch) that disables readline support for Axiom. With this change the axiom interface now works for me.
 
+
 Cool!  Thanks for the fixes (and typo catches).
 
 > Re: Axiom binaries on Debian instead of an spkg. Is there any other case in Sage where an interface is provided from something that is not available for install as an spkg? I thought this might be a Sage policy.
+
 
 Yeah, there are plenty of things like that.  For example, all of the proprietary math software interfaces :-)
 

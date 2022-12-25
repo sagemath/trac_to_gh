@@ -319,7 +319,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_015551.json:
 ```json
 {
-    "body": "This should address those two issues.\n----\nNew commits:",
+    "body": "This should address those two issues.\n\n---\nNew commits:",
     "created_at": "2017-11-08T12:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2330",
     "type": "issue_comment",
@@ -329,7 +329,8 @@ archive/issue_comments_015551.json:
 ```
 
 This should address those two issues.
-----
+
+---
 New commits:
 
 

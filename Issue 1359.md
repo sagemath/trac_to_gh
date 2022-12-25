@@ -3,7 +3,7 @@
 archive/issues_001359.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere's the code, basically:\n\nbug day 6 -- #1342\nsystem:sage\n\n\n```\nK.<zeta> = CyclotomicField(7)\n```\n\n\n\n```\ndef norm_symbol_prime(a, P):\n     K = P.number_field()\n     zeta = K.gen()\n     n = K.zeta_order()\n     exponent = (1/n) * ( P.norm() - 1)\n     exponent = ZZ(exponent)\n     FF = K.residue_field(P)\n     aa = FF(a)\n     b = FF(a)^exponent\n     zeta_mod = FF(zeta)\n     # Find power m of zeta_mod that is equal to b, then\n     # return zeta^m\n     m = 0\n     w = FF(1)\n     while w != b:\n         w = w * zeta_mod\n         m += 1\n         assert m <= n, \"bug in norm_symbol_prime\"\n     return zeta^m\n\ndef norm_symbol(a, b):\n     F = K.fractional_ideal([b]).factor()\n     return prod([norm_symbol_prime(a, P)^e for P, e in F],\n               K(1))\n```\n\n\n\n```\nnorm_symbol(zeta^3, 13*zeta)\n///\n-zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1\n```\n\n\n\n```\nnorm_symbol(zeta^7, K(11))\n///\n1\n```\n\n\n\n```\nnorm_symbol((1+zeta)^2, 23*zeta)\n///\nzeta^4\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1359\n\n",
+    "body": "Assignee: @williamstein\n\nHere's the code, basically:\n\nbug day 6 -- #1342\nsystem:sage\n\n```\nK.<zeta> = CyclotomicField(7)\n```\n\n```\ndef norm_symbol_prime(a, P):\n     K = P.number_field()\n     zeta = K.gen()\n     n = K.zeta_order()\n     exponent = (1/n) * ( P.norm() - 1)\n     exponent = ZZ(exponent)\n     FF = K.residue_field(P)\n     aa = FF(a)\n     b = FF(a)^exponent\n     zeta_mod = FF(zeta)\n     # Find power m of zeta_mod that is equal to b, then\n     # return zeta^m\n     m = 0\n     w = FF(1)\n     while w != b:\n         w = w * zeta_mod\n         m += 1\n         assert m <= n, \"bug in norm_symbol_prime\"\n     return zeta^m\n\ndef norm_symbol(a, b):\n     F = K.fractional_ideal([b]).factor()\n     return prod([norm_symbol_prime(a, P)^e for P, e in F],\n               K(1))\n```\n\n```\nnorm_symbol(zeta^3, 13*zeta)\n///\n-zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1\n```\n\n```\nnorm_symbol(zeta^7, K(11))\n///\n1\n```\n\n```\nnorm_symbol((1+zeta)^2, 23*zeta)\n///\nzeta^4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1359\n\n",
     "created_at": "2007-12-02T02:52:02Z",
     "labels": [
         "component: number theory"
@@ -22,12 +22,9 @@ Here's the code, basically:
 bug day 6 -- #1342
 system:sage
 
-
 ```
 K.<zeta> = CyclotomicField(7)
 ```
-
-
 
 ```
 def norm_symbol_prime(a, P):
@@ -56,15 +53,11 @@ def norm_symbol(a, b):
                K(1))
 ```
 
-
-
 ```
 norm_symbol(zeta^3, 13*zeta)
 ///
 -zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1
 ```
-
-
 
 ```
 norm_symbol(zeta^7, K(11))
@@ -72,14 +65,11 @@ norm_symbol(zeta^7, K(11))
 1
 ```
 
-
-
 ```
 norm_symbol((1+zeta)^2, 23*zeta)
 ///
 zeta^4
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1359
@@ -234,7 +224,7 @@ Changing keywords from "" to "cyclotomic field".
 archive/issue_comments_008670.json:
 ```json
 {
-    "body": "Here is a git branch. But some of the original tests do not work..\n----\nNew commits:",
+    "body": "Here is a git branch. But some of the original tests do not work..\n\n---\nNew commits:",
     "created_at": "2014-04-14T20:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
@@ -244,7 +234,8 @@ archive/issue_comments_008670.json:
 ```
 
 Here is a git branch. But some of the original tests do not work..
-----
+
+---
 New commits:
 
 
@@ -272,7 +263,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_008672.json:
 ```json
 {
-    "body": "Don't get caught out:\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: z^7\n1\nsage: z^6\n-z^5 - z^4 - z^3 - z^2 - z - 1\n```\n",
+    "body": "Don't get caught out:\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: z^7\n1\nsage: z^6\n-z^5 - z^4 - z^3 - z^2 - z - 1\n```",
     "created_at": "2014-04-18T21:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
@@ -290,7 +281,6 @@ sage: z^7
 sage: z^6
 -z^5 - z^4 - z^3 - z^2 - z - 1
 ```
-
 
 
 

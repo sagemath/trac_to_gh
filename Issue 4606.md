@@ -3,7 +3,7 @@
 archive/issues_004606.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein @craigcitro @categorie\n\nMake it so one can do:\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0); A\nFractional ideal class (2, -1/2*a)\nsage: L = e.lseries_gross_zagier(A)  \nsage: L(2)\n0\nsage: L.taylor_series(2,5)\nnobody has seen this!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4606\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @craigcitro @categorie\n\nMake it so one can do:\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0); A\nFractional ideal class (2, -1/2*a)\nsage: L = e.lseries_gross_zagier(A)  \nsage: L(2)\n0\nsage: L.taylor_series(2,5)\nnobody has seen this!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4606\n\n",
     "created_at": "2008-11-24T22:59:03Z",
     "labels": [
         "component: number theory"
@@ -32,7 +32,6 @@ sage: L(2)
 sage: L.taylor_series(2,5)
 nobody has seen this!
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4606
 
@@ -117,7 +116,7 @@ Attachment [trac-4606-pt3.patch](tarball://root/attachments/some-uuid/ticket4606
 archive/issue_comments_034467.json:
 ```json
 {
-    "body": "So I've attached a patch, which at least fixes a few issues. This patch fixes two definite bugs:\n\n* In `E.lseries_gross_zagier(A)`, you were caching the value -- no matter what value of `A` was getting passed in! That was an easy fix. :) Unfortunately, after fixing that, there were still issues. \n\n* There was a subtle issue in `I.quadratic_form()`, for `I` an ideal in a quadratic number field. For instance, with just the first two patches above, taking `K = QuadraticField(-40)` and `I` the trivial element in the class group, the code returned `x^2 + 40*y^2` for `I.quadratic_form()`. The underlying issue was one of choice of generators: you were using `K.gen()` where you really needed `K.ring_of_integers().gen()`, because you needed to know that something generated all of `I` over `ZZ`, not just `QQ`. I'm **fairly** certain that the current code is correct, but it's after 2AM, so someone should double check me. \n\nSo, now that those are fixed, we go back to the example Robert points out in the code: \n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\n\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\n\n\nSo we're now quite close. In particular, I wonder if there isn't rounding going on:\n\n\n```\nsage: E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5)\n0.50 + 0.38*z - 0.16*z^2 + 0.0078*z^3 + 0.070*z^4 - 0.039*z^5 + O(z^6)\n```\n\n\nThat definitely seems to suggest small precision to me. In any event, we're getting close:\n\n\n```\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\n\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5) - (E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5))\n-0.016*z + 0.035*z^2 - 0.014*z^3 - 0.031*z^4 + O(z^5)\n```\n\n\nI'll cook up a few more examples and post what I find.",
+    "body": "So I've attached a patch, which at least fixes a few issues. This patch fixes two definite bugs:\n\n* In `E.lseries_gross_zagier(A)`, you were caching the value -- no matter what value of `A` was getting passed in! That was an easy fix. :) Unfortunately, after fixing that, there were still issues. \n\n* There was a subtle issue in `I.quadratic_form()`, for `I` an ideal in a quadratic number field. For instance, with just the first two patches above, taking `K = QuadraticField(-40)` and `I` the trivial element in the class group, the code returned `x^2 + 40*y^2` for `I.quadratic_form()`. The underlying issue was one of choice of generators: you were using `K.gen()` where you really needed `K.ring_of_integers().gen()`, because you needed to know that something generated all of `I` over `ZZ`, not just `QQ`. I'm **fairly** certain that the current code is correct, but it's after 2AM, so someone should double check me. \n\nSo, now that those are fixed, we go back to the example Robert points out in the code: \n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\n\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\n\nSo we're now quite close. In particular, I wonder if there isn't rounding going on:\n\n```\nsage: E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5)\n0.50 + 0.38*z - 0.16*z^2 + 0.0078*z^3 + 0.070*z^4 - 0.039*z^5 + O(z^6)\n```\n\nThat definitely seems to suggest small precision to me. In any event, we're getting close:\n\n```\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\n\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5) - (E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5))\n-0.016*z + 0.035*z^2 - 0.014*z^3 - 0.031*z^4 + O(z^5)\n```\n\nI'll cook up a few more examples and post what I find.",
     "created_at": "2008-11-28T11:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -147,18 +146,14 @@ sage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)
 0.502803417587467
 ```
 
-
 So we're now quite close. In particular, I wonder if there isn't rounding going on:
-
 
 ```
 sage: E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5)
 0.50 + 0.38*z - 0.16*z^2 + 0.0078*z^3 + 0.070*z^4 - 0.039*z^5 + O(z^6)
 ```
 
-
 That definitely seems to suggest small precision to me. In any event, we're getting close:
-
 
 ```
 sage: L.taylor_series(2,5) + LL.taylor_series(2,5)
@@ -167,7 +162,6 @@ sage: L.taylor_series(2,5) + LL.taylor_series(2,5)
 sage: L.taylor_series(2,5) + LL.taylor_series(2,5) - (E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5))
 -0.016*z + 0.035*z^2 - 0.014*z^3 - 0.031*z^4 + O(z^5)
 ```
-
 
 I'll cook up a few more examples and post what I find.
 
@@ -196,7 +190,7 @@ Excellent. That's looking very good. I was very tired the day I was finishing th
 archive/issue_comments_034469.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors. \n\nShould this ticker be \"[with patch, needs review]\" ? \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 robertwb]:\n> Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors. \n\n\nShould this ticker be \"[with patch, needs review]\" ? \n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T18:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -207,6 +201,7 @@ archive/issue_comments_034469.json:
 
 Replying to [comment:3 robertwb]:
 > Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors. 
+
 
 Should this ticker be "[with patch, needs review]" ? 
 
@@ -673,7 +668,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034486.json:
 ```json
 {
-    "body": "Hum, here is the current state of affairs:\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\n\nNot so good, in fact. Now let us compare Taylor expansions:\n\n```\nsage: L.taylor_series(2, 5)+LL.taylor_series(2, 5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\nsage: E.lseries().taylor_series(2,series_prec=5) * E.quadratic_twist(-40).lseries().taylor_series(2,series_prec=5)\n0.502803417587467 + 0.374948906665456*z - 0.144641137632262*z^2 + 0.00702138852027905*z^3 + 0.0487513598755609*z^4 + O(z^5)\n```\n\nNot far, but definitely not good. Note that the syntax of taylor expansion differs.",
+    "body": "Hum, here is the current state of affairs:\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\nNot so good, in fact. Now let us compare Taylor expansions:\n\n```\nsage: L.taylor_series(2, 5)+LL.taylor_series(2, 5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\nsage: E.lseries().taylor_series(2,series_prec=5) * E.quadratic_twist(-40).lseries().taylor_series(2,series_prec=5)\n0.502803417587467 + 0.374948906665456*z - 0.144641137632262*z^2 + 0.00702138852027905*z^3 + 0.0487513598755609*z^4 + O(z^5)\n```\nNot far, but definitely not good. Note that the syntax of taylor expansion differs.",
     "created_at": "2015-05-02T14:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -695,7 +690,6 @@ sage: L(2) + LL(2)
 sage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)
 0.502803417587467
 ```
-
 Not so good, in fact. Now let us compare Taylor expansions:
 
 ```
@@ -704,7 +698,6 @@ sage: L.taylor_series(2, 5)+LL.taylor_series(2, 5)
 sage: E.lseries().taylor_series(2,series_prec=5) * E.quadratic_twist(-40).lseries().taylor_series(2,series_prec=5)
 0.502803417587467 + 0.374948906665456*z - 0.144641137632262*z^2 + 0.00702138852027905*z^3 + 0.0487513598755609*z^4 + O(z^5)
 ```
-
 Not far, but definitely not good. Note that the syntax of taylor expansion differs.
 
 
@@ -732,7 +725,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034488.json:
 ```json
 {
-    "body": "I think that I have checked fully the computation of the Dirichet coefficients.\n\nSo well... maybe something is wrong in the parameters given to Dokchitser program ?\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: G = GrossZagierLseries(e, A)\nsage: G._dokchister.check_functional_equation()\n-80.1679727952639\nsage: G = GrossZagierLseries(e, A**2)\nsage: G._dokchister.check_functional_equation()\n47.5616711441054\n```\n",
+    "body": "I think that I have checked fully the computation of the Dirichet coefficients.\n\nSo well... maybe something is wrong in the parameters given to Dokchitser program ?\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: G = GrossZagierLseries(e, A)\nsage: G._dokchister.check_functional_equation()\n-80.1679727952639\nsage: G = GrossZagierLseries(e, A**2)\nsage: G._dokchister.check_functional_equation()\n47.5616711441054\n```",
     "created_at": "2015-05-02T16:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -757,7 +750,6 @@ sage: G = GrossZagierLseries(e, A**2)
 sage: G._dokchister.check_functional_equation()
 47.5616711441054
 ```
-
 
 
 
@@ -802,7 +794,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034491.json:
 ```json
 {
-    "body": "This is now working\n\n```\nsage: sage: e = EllipticCurve('37a')\nsage: sage: K.<a> = QuadraticField(-40)\nsage: sage: A = K.class_group().gen(0)\nsage: sage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: sage: G = GrossZagierLseries(e, A)\nsage: sage: G._dokchister.check_functional_equation()\n2.77555756156289e-17\nsage: sage: G = GrossZagierLseries(e, A**2)\nsage: sage: G._dokchister.check_functional_equation()\n-3.64291929955129e-17\n```\n\nAfter six years !",
+    "body": "This is now working\n\n```\nsage: sage: e = EllipticCurve('37a')\nsage: sage: K.<a> = QuadraticField(-40)\nsage: sage: A = K.class_group().gen(0)\nsage: sage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: sage: G = GrossZagierLseries(e, A)\nsage: sage: G._dokchister.check_functional_equation()\n2.77555756156289e-17\nsage: sage: G = GrossZagierLseries(e, A**2)\nsage: sage: G._dokchister.check_functional_equation()\n-3.64291929955129e-17\n```\nAfter six years !",
     "created_at": "2015-05-02T18:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -825,7 +817,6 @@ sage: sage: G = GrossZagierLseries(e, A**2)
 sage: sage: G._dokchister.check_functional_equation()
 -3.64291929955129e-17
 ```
-
 After six years !
 
 
@@ -915,7 +906,7 @@ I see some remaining things that should be done:
 archive/issue_comments_034496.json:
 ```json
 {
-    "body": "Replying to [comment:33 chapoton]:\n> I see some remaining things that should be done:\n> \n> - maybe use the generic theta function code if it is faster than the one provided here for binary quadratic forms (as it seems to be)\n\nSurely such a possible improvement can be noted for later work, and not delay this?\n\n> \n> - make sure that the syntax is similar to the other L-functions we have\n\nGood point.  \n\n> \n> - test with many curves and many quadratic number fields\n>\n\nI tested with one curve and many fields.  This led to the one suggestion I have:\n\n- somewhere, perhaps in the constructor for GrossZagierLseries, test that the ideal class is associated to an imaginary quadratic field.  If you construct it from an ideal in a real quadratic field there is a resulting error in the quadratic forms code, and this should be more graceful.\n\nJohn\n \n> - have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.",
+    "body": "Replying to [comment:33 chapoton]:\n> I see some remaining things that should be done:\n> \n> - maybe use the generic theta function code if it is faster than the one provided here for binary quadratic forms (as it seems to be)\n\n\nSurely such a possible improvement can be noted for later work, and not delay this?\n\n> \n> - make sure that the syntax is similar to the other L-functions we have\n\n\nGood point.  \n\n> \n> - test with many curves and many quadratic number fields\n \n>\n\nI tested with one curve and many fields.  This led to the one suggestion I have:\n\n- somewhere, perhaps in the constructor for GrossZagierLseries, test that the ideal class is associated to an imaginary quadratic field.  If you construct it from an ideal in a real quadratic field there is a resulting error in the quadratic forms code, and this should be more graceful.\n\nJohn\n \n> - have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.",
     "created_at": "2015-05-04T13:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -929,15 +920,18 @@ Replying to [comment:33 chapoton]:
 > 
 > - maybe use the generic theta function code if it is faster than the one provided here for binary quadratic forms (as it seems to be)
 
+
 Surely such a possible improvement can be noted for later work, and not delay this?
 
 > 
 > - make sure that the syntax is similar to the other L-functions we have
 
+
 Good point.  
 
 > 
 > - test with many curves and many quadratic number fields
+ 
 >
 
 I tested with one curve and many fields.  This led to the one suggestion I have:
@@ -1046,7 +1040,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034502.json:
 ```json
 {
-    "body": "Now working better, but not perfectly (some problems with trivial ideal classes)\n\n```\nsage: K=QuadraticField(-79)\nsage: K.class_group()\nClass group of order 5 with structure C5 of Number Field in a with defining polynomial x^2 + 79\nsage: A=K.class_group().gen()\nsage: E=EllipticCurve('433a1')\nsage: sum(E.lseries_gross_zagier(A**i)(2) for i in range(5))\n0.173957331997956\nsage: E.lseries()(2)*E.quadratic_twist(-79).lseries()(2)\n0.327922081982688\nsage: lgz=E.lseries_gross_zagier(A)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**2)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**3)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**4)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**5)\nsage: lgz._dokchister.check_functional_equation()\n-1383.90668128107\n```\n",
+    "body": "Now working better, but not perfectly (some problems with trivial ideal classes)\n\n```\nsage: K=QuadraticField(-79)\nsage: K.class_group()\nClass group of order 5 with structure C5 of Number Field in a with defining polynomial x^2 + 79\nsage: A=K.class_group().gen()\nsage: E=EllipticCurve('433a1')\nsage: sum(E.lseries_gross_zagier(A**i)(2) for i in range(5))\n0.173957331997956\nsage: E.lseries()(2)*E.quadratic_twist(-79).lseries()(2)\n0.327922081982688\nsage: lgz=E.lseries_gross_zagier(A)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**2)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**3)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**4)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**5)\nsage: lgz._dokchister.check_functional_equation()\n-1383.90668128107\n```",
     "created_at": "2015-05-13T12:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -1086,13 +1080,12 @@ sage: lgz._dokchister.check_functional_equation()
 
 
 
-
 ---
 
 archive/issue_comments_034503.json:
 ```json
 {
-    "body": "Is the following thing normal ?\n\n```\nsage: K=QuadraticField(-79)\nsage: A=K.class_group().gen()\nsage: [(A**i).ideal().quadratic_form().discriminant() for i in range(5)]\n[-316, -79, -79, -79, -79]\n```\n",
+    "body": "Is the following thing normal ?\n\n```\nsage: K=QuadraticField(-79)\nsage: A=K.class_group().gen()\nsage: [(A**i).ideal().quadratic_form().discriminant() for i in range(5)]\n[-316, -79, -79, -79, -79]\n```",
     "created_at": "2015-05-13T12:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -1109,7 +1102,6 @@ sage: A=K.class_group().gen()
 sage: [(A**i).ideal().quadratic_form().discriminant() for i in range(5)]
 [-316, -79, -79, -79, -79]
 ```
-
 
 
 
@@ -1280,7 +1272,7 @@ ping ?
 archive/issue_comments_034511.json:
 ```json
 {
-    "body": "... pong!\n\nI added a little bit more to the documentation. Just pointing to the article is not enough.\n\nI tested this (merged into 6.8.beta6) and all passed. \n----\nNew commits:",
+    "body": "... pong!\n\nI added a little bit more to the documentation. Just pointing to the article is not enough.\n\nI tested this (merged into 6.8.beta6) and all passed. \n\n---\nNew commits:",
     "created_at": "2015-06-28T20:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -1294,7 +1286,8 @@ archive/issue_comments_034511.json:
 I added a little bit more to the documentation. Just pointing to the article is not enough.
 
 I tested this (merged into 6.8.beta6) and all passed. 
-----
+
+---
 New commits:
 
 
@@ -1358,7 +1351,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_034515.json:
 ```json
 {
-    "body": "done and retested.\n----\nNew commits:",
+    "body": "done and retested.\n\n---\nNew commits:",
     "created_at": "2015-06-29T07:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4606",
     "type": "issue_comment",
@@ -1368,7 +1361,8 @@ archive/issue_comments_034515.json:
 ```
 
 done and retested.
-----
+
+---
 New commits:
 
 

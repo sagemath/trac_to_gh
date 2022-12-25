@@ -3,7 +3,7 @@
 archive/issues_006777.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @orlitzky\n\nKeywords: polynomial segfault\n\nThis is with a modified\n\n```\n```\n\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\nMac OS X, Intel hardware.\n\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nProcess SAGE exited abnormally with code 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6777\n\n",
+    "body": "Assignee: @malb\n\nCC:  @orlitzky\n\nKeywords: polynomial segfault\n\nThis is with a modified\n\n```\n```\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\nMac OS X, Intel hardware.\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nProcess SAGE exited abnormally with code 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6777\n\n",
     "created_at": "2009-08-19T22:48:53Z",
     "labels": [
         "component: commutative algebra",
@@ -26,10 +26,8 @@ This is with a modified
 
 ```
 ```
-
 | Sage Version 4.1.rc1, Release Date: 2009-07-07                     |
 Mac OS X, Intel hardware.
-
 
 ```
 sage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])
@@ -48,7 +46,6 @@ SAGE will now terminate (sorry).
 Process SAGE exited abnormally with code 1
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6777
 
 
@@ -60,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6777
 archive/issue_comments_055719.json:
 ```json
 {
-    "body": "I don't obtain a segmentation fault, but this is on Debian GNU/Linux.\n\nOn [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/d4807256e57cd843), it is discussed that one gets a rather strange phenomenon: Before the traceback starts, some ERROR is printed.\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1375, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1375, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n```\n\nI get this with unpatched sage (hence, no segfault), and Michael Orlitzky reports the same after fixing the segfault.\n\nHowever, with some of my patches applied, one simply gets a straight forward traceback:\n\n```\nsage: RealField(300)['x']([ ComplexField(300).gen() ]) \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: Unable to convert x (='1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*I') to real number.\n```\n\n\nCould you test whether #9138 (or perhaps #11900) actually fixes the problem already?",
+    "body": "I don't obtain a segmentation fault, but this is on Debian GNU/Linux.\n\nOn [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/d4807256e57cd843), it is discussed that one gets a rather strange phenomenon: Before the traceback starts, some ERROR is printed.\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1375, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1375, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n```\nI get this with unpatched sage (hence, no segfault), and Michael Orlitzky reports the same after fixing the segfault.\n\nHowever, with some of my patches applied, one simply gets a straight forward traceback:\n\n```\nsage: RealField(300)['x']([ ComplexField(300).gen() ]) \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: Unable to convert x (='1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*I') to real number.\n```\n\nCould you test whether #9138 (or perhaps #11900) actually fixes the problem already?",
     "created_at": "2011-12-15T17:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
@@ -87,7 +84,6 @@ The error message is: ('EOF in multi-line statement', (1375, 0))
 TypeError                                 Traceback (most recent call last)
 
 ```
-
 I get this with unpatched sage (hence, no segfault), and Michael Orlitzky reports the same after fixing the segfault.
 
 However, with some of my patches applied, one simply gets a straight forward traceback:
@@ -99,7 +95,6 @@ TypeError                                 Traceback (most recent call last)
 ...
 TypeError: Unable to convert x (='1.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*I') to real number.
 ```
-
 
 Could you test whether #9138 (or perhaps #11900) actually fixes the problem already?
 

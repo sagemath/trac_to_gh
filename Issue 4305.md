@@ -226,7 +226,7 @@ archive/issue_events_009718.json:
 archive/issue_comments_031443.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> I'm hoping to have a little time to look into this over the break. Don't delete the patches just yet. \n\nOk, I just think that a lot of this patch needs to be rebased, so it might be a good idea to start over, but we will see. One aspect that puzzles me to this day is that we never got it to work on any other system but your own.\n\nOne issue that likely will need addressing is pickling issues.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> I'm hoping to have a little time to look into this over the break. Don't delete the patches just yet. \n\n\nOk, I just think that a lot of this patch needs to be rebased, so it might be a good idea to start over, but we will see. One aspect that puzzles me to this day is that we never got it to work on any other system but your own.\n\nOne issue that likely will need addressing is pickling issues.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-07T09:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
@@ -237,6 +237,7 @@ archive/issue_comments_031443.json:
 
 Replying to [comment:4 robertwb]:
 > I'm hoping to have a little time to look into this over the break. Don't delete the patches just yet. 
+
 
 Ok, I just think that a lot of this patch needs to be rebased, so it might be a good idea to start over, but we will see. One aspect that puzzles me to this day is that we never got it to work on any other system but your own.
 

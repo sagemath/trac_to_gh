@@ -3,7 +3,7 @@
 archive/issues_000081.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nBut I'm somewhat\nsurprised, it's specified, in the \"SAGE Installation Guide\", that \"The\ndirectory where you built SAGE is NOT hardcoded into any part of SAGE.\"\nbut it's not possible to see the source code of a function if you moved\nSAGE after the build. Same thing when an error is reported, for example:\n \n===========================================================================\nR = PolynomialRing(QQ)\nfactor(R)\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most\nrecent call last)\n \n/usr/local/sage-test/<ipython console> \n \n/usr/local/sage/local/lib/python2.4/site-packages/sage/rings/arith.py in\nfactor(n, proof, int_, algorithm, verbose)\n \nTypeError: unable to factor n\n \n============================================================================\nbut here, the path to sage is /usr/local/sage-test. Do I have to report\nthis as a bug ?\n \nGreg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/81\n\n",
+    "body": "Assignee: @williamstein\n\n```\nBut I'm somewhat\nsurprised, it's specified, in the \"SAGE Installation Guide\", that \"The\ndirectory where you built SAGE is NOT hardcoded into any part of SAGE.\"\nbut it's not possible to see the source code of a function if you moved\nSAGE after the build. Same thing when an error is reported, for example:\n \n===========================================================================\nR = PolynomialRing(QQ)\nfactor(R)\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most\nrecent call last)\n \n/usr/local/sage-test/<ipython console> \n \n/usr/local/sage/local/lib/python2.4/site-packages/sage/rings/arith.py in\nfactor(n, proof, int_, algorithm, verbose)\n \nTypeError: unable to factor n\n \n============================================================================\nbut here, the path to sage is /usr/local/sage-test. Do I have to report\nthis as a bug ?\n \nGreg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/81\n\n",
     "created_at": "2006-09-24T16:11:01Z",
     "labels": [
         "component: user interface",
@@ -16,7 +16,6 @@ archive/issues_000081.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 But I'm somewhat
@@ -46,7 +45,6 @@ this as a bug ?
 Greg
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/81
 
 
@@ -58,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/81
 archive/issue_comments_000410.json:
 ```json
 {
-    "body": "\n```\n>  - When you relocate the tree, source lookup fails badly: I tried\n> NumberField?? and it complained it couldn't find the source --\n> NumberField? shows the old source file name, so these paths seem to get\n> compiled in hard.\n\nThis is a known problem.  Fixing this is high on the list.  Probably\nthe solution will be just to check if the tree has moved on startup,\nand if so to delete the \n    <SAGE_ROOT>/devel/sage/build \ndirectory.  Doing so should update the paths.\n\n -- William\n```\n",
+    "body": "```\n>  - When you relocate the tree, source lookup fails badly: I tried\n> NumberField?? and it complained it couldn't find the source --\n> NumberField? shows the old source file name, so these paths seem to get\n> compiled in hard.\n\nThis is a known problem.  Fixing this is high on the list.  Probably\nthe solution will be just to check if the tree has moved on startup,\nand if so to delete the \n    <SAGE_ROOT>/devel/sage/build \ndirectory.  Doing so should update the paths.\n\n -- William\n```",
     "created_at": "2006-10-14T06:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
@@ -66,7 +64,6 @@ archive/issue_comments_000410.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 >  - When you relocate the tree, source lookup fails badly: I tried
@@ -82,7 +79,6 @@ directory.  Doing so should update the paths.
 
  -- William
 ```
-
 
 
 
@@ -144,7 +140,7 @@ archive/issue_events_000176.json:
 archive/issue_comments_000413.json:
 ```json
 {
-    "body": "Fixed with the following script being called from the sage_setup\nfunction in local/bin/sage-sage.\n\n\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file) or open(location_file).read() != SAGE_ROOT:\n        open(location_file,'w').write(SAGE_ROOT)\n        return True\n    return False\n\ndef update_hardcoded_files(path):\n    # The only known files with hard coded paths.\n    if os.path.isdir(path):\n        for X in os.listdir(path):\n            update_hardcoded_files('%s/%s'%(path,X))\n    else:\n        P = path[-4:]\n        if P == '.pyo' or P == '.pyc':\n            try:\n                os.unlink(path)\n            except OSError, msg:\n                print msg\n\nif __name__ ==  '__main__':\n    # Check if SAGE has moved, and if so delete all .pyo and .pyc files\n    # in the python libs directory, so they are rebuilt. \n    if install_moved():\n        print \"The SAGE install tree may have moved.\"\n        print \"Regenerating files that hardcode the install PATH (please wait a few seconds)...\"\n        update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')\n```\n",
+    "body": "Fixed with the following script being called from the sage_setup\nfunction in local/bin/sage-sage.\n\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file) or open(location_file).read() != SAGE_ROOT:\n        open(location_file,'w').write(SAGE_ROOT)\n        return True\n    return False\n\ndef update_hardcoded_files(path):\n    # The only known files with hard coded paths.\n    if os.path.isdir(path):\n        for X in os.listdir(path):\n            update_hardcoded_files('%s/%s'%(path,X))\n    else:\n        P = path[-4:]\n        if P == '.pyo' or P == '.pyc':\n            try:\n                os.unlink(path)\n            except OSError, msg:\n                print msg\n\nif __name__ ==  '__main__':\n    # Check if SAGE has moved, and if so delete all .pyo and .pyc files\n    # in the python libs directory, so they are rebuilt. \n    if install_moved():\n        print \"The SAGE install tree may have moved.\"\n        print \"Regenerating files that hardcode the install PATH (please wait a few seconds)...\"\n        update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')\n```",
     "created_at": "2006-10-15T17:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
@@ -155,7 +151,6 @@ archive/issue_comments_000413.json:
 
 Fixed with the following script being called from the sage_setup
 function in local/bin/sage-sage.
-
 
 
 ```/usr/bin/env sage.bin
@@ -193,4 +188,3 @@ if __name__ ==  '__main__':
         print "Regenerating files that hardcode the install PATH (please wait a few seconds)..."
         update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')
 ```
-

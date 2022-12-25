@@ -3,7 +3,7 @@
 archive/issues_005825.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\nI just ran into the following:\n\n```\n<SNIP>\n**********************************************************************\n* Unable to download clisp-2.47\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/Users/mabshoff/sage-3.3.rc3/spkg/build\nbunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.\ntar: clisp-2.47.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg \n/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .\ncp: ./clisp-2.47.spkg: Permission denied\n```\n\n\nNote that I do not have write permissions in the local directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\nI just ran into the following:\n\n```\n<SNIP>\n**********************************************************************\n* Unable to download clisp-2.47\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/Users/mabshoff/sage-3.3.rc3/spkg/build\nbunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.\ntar: clisp-2.47.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg \n/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .\ncp: ./clisp-2.47.spkg: Permission denied\n```\n\nNote that I do not have write permissions in the local directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
     "created_at": "2009-04-20T01:07:19Z",
     "labels": [
         "component: packages: standard",
@@ -39,7 +39,6 @@ varro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg
 varro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .
 cp: ./clisp-2.47.spkg: Permission denied
 ```
-
 
 Note that I do not have write permissions in the local directory.
 
@@ -90,7 +89,7 @@ Changing component from packages: standard to scripts.
 archive/issue_comments_045703.json:
 ```json
 {
-    "body": "Is it worth checking permissions before attempting to download an spkg?\n\n```\n$ sage -i pybtex\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/install.log: Permission denied\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/pkgs/pybtex.log: Permission denied\nAttempting to download package pybtex\n>>> Checking online list of optional packages.\n[.]\n>>> Found pybtex-20120618\n>>> Downloading http://www.sagemath.org/spkg/optional/pybtex-20120618.spkg.\n/Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/bin/sage-spkg: line 354: pybtex-20120618.tmp: Permission denied\nError: failed to download package pybtex-20120618\n```\n\nThis is not as nice an error message as you added in other situations:\n\n```\n$ sage -f gcc\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/install.log: Permission denied\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/pkgs/gcc.log: Permission denied\nFound package gcc in spkg/standard/gcc-4.7.3.p0.spkg\nError: no write access to build directory /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/build.\n```\n",
+    "body": "Is it worth checking permissions before attempting to download an spkg?\n\n```\n$ sage -i pybtex\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/install.log: Permission denied\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/pkgs/pybtex.log: Permission denied\nAttempting to download package pybtex\n>>> Checking online list of optional packages.\n[.]\n>>> Found pybtex-20120618\n>>> Downloading http://www.sagemath.org/spkg/optional/pybtex-20120618.spkg.\n/Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/bin/sage-spkg: line 354: pybtex-20120618.tmp: Permission denied\nError: failed to download package pybtex-20120618\n```\nThis is not as nice an error message as you added in other situations:\n\n```\n$ sage -f gcc\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/install.log: Permission denied\ntee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/pkgs/gcc.log: Permission denied\nFound package gcc in spkg/standard/gcc-4.7.3.p0.spkg\nError: no write access to build directory /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/build.\n```",
     "created_at": "2013-05-21T18:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
@@ -113,7 +112,6 @@ Attempting to download package pybtex
 /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/bin/sage-spkg: line 354: pybtex-20120618.tmp: Permission denied
 Error: failed to download package pybtex-20120618
 ```
-
 This is not as nice an error message as you added in other situations:
 
 ```
@@ -123,7 +121,6 @@ tee: /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/logs/pkgs/gc
 Found package gcc in spkg/standard/gcc-4.7.3.p0.spkg
 Error: no write access to build directory /Users/palmieri/Desktop/Sage_stuff/sage_builds/sage-5.10.beta4/spkg/build.
 ```
-
 
 
 

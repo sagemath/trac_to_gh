@@ -3,7 +3,7 @@
 archive/issues_000204.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nfrom Yi\n\n\n```\nOk, here is a weird bug:\non sage.math.washington.edu\n \nsage: sys.maxint\n9223372036854775807\nsage: sys.maxint >= 0.01\nFalse\n \nsage: sys.maxint >= int(0.01)\nTrue\n \nLooks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>\n \nAny ideas on how to fix this?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/204\n\n",
+    "body": "Assignee: somebody\n\nfrom Yi\n\n```\nOk, here is a weird bug:\non sage.math.washington.edu\n \nsage: sys.maxint\n9223372036854775807\nsage: sys.maxint >= 0.01\nFalse\n \nsage: sys.maxint >= int(0.01)\nTrue\n \nLooks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>\n \nAny ideas on how to fix this?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/204\n\n",
     "created_at": "2007-01-21T03:45:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_000204.json:
 Assignee: somebody
 
 from Yi
-
 
 ```
 Ok, here is a weird bug:
@@ -38,7 +37,6 @@ Looks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>
 Any ideas on how to fix this?
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/204
 
 
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/204
 archive/issue_comments_000915.json:
 ```json
 {
-    "body": "\n```\nIt's a coercion issue:\n\nimport sys\nsage: sys.maxint\n9223372036854775807\nsage: type(sys.maxint)\n<type 'int'>\nsage: RR(sys.maxint)\n-1.00000000000000\nsage: RDF(sys.maxint)\n9.22337203685e+18\nsage: RealField(100)(sys.maxint)\n-1.0000000000000000000000000000\n```\n",
+    "body": "```\nIt's a coercion issue:\n\nimport sys\nsage: sys.maxint\n9223372036854775807\nsage: type(sys.maxint)\n<type 'int'>\nsage: RR(sys.maxint)\n-1.00000000000000\nsage: RDF(sys.maxint)\n9.22337203685e+18\nsage: RealField(100)(sys.maxint)\n-1.0000000000000000000000000000\n```",
     "created_at": "2007-01-21T03:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ archive/issue_comments_000915.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 It's a coercion issue:
@@ -75,7 +72,6 @@ sage: RDF(sys.maxint)
 sage: RealField(100)(sys.maxint)
 -1.0000000000000000000000000000
 ```
-
 
 
 

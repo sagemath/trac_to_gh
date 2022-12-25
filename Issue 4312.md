@@ -3,7 +3,7 @@
 archive/issues_004312.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nIn 3.1.2 this worked fine. It's totally broken in 3.1.4.\n\n```\nsage@modular:~/build/sage-3.1.4$ more a.sage\n@parallel(8)\ndef f(p):\n    print p\n    t = cputime()\n    M = ModularSymbols(p^2,sign=1)\n    w = M.atkin_lehner_operator(p)\n    K = (w-1).kernel()\n    N = K.new_subspace()\n    D = N.decomposition()\n    print cputime(t)\n    M.save(str(p))\n    save(D, '%s-decomp'%p)\n\n\n\nsage@modular:~/build/sage-3.1.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: load a.sage\nsage: list(f([11,17]))\n17\n11\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home2/sage/.sage/temp/modular/25347/_home2_sage_build_sage_3_1_4_a_sage_0.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/sage/parallel/multiprocessing.pyc in parallel_iter(processes, f, inputs)\n     64\n     65     result = p.imapUnordered(call_pickled_function, [ (fp, t) for t in inputs ])\n---> 66     for res in result:\n     67         yield res\n     68\n\n/home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/processing/pool.pyc in next(self, timeout)\n    468         if success:\n    469             return value\n--> 470         raise value\n    471\n    472     def _set(self, i, obj):\n\nNameError: global name '_sage_const_2' is not defined\nsage:           \n```\n\n\nThis is a pyprocessing problem since:\n\n```\nsage: load a.sage\nsage: f(11)\n11\n0.168011\nsage: f(13)\n13\n0.244015\nsage:              \n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4312\n\n",
+    "body": "Assignee: cwitty\n\nIn 3.1.2 this worked fine. It's totally broken in 3.1.4.\n\n```\nsage@modular:~/build/sage-3.1.4$ more a.sage\n@parallel(8)\ndef f(p):\n    print p\n    t = cputime()\n    M = ModularSymbols(p^2,sign=1)\n    w = M.atkin_lehner_operator(p)\n    K = (w-1).kernel()\n    N = K.new_subspace()\n    D = N.decomposition()\n    print cputime(t)\n    M.save(str(p))\n    save(D, '%s-decomp'%p)\n\n\n\nsage@modular:~/build/sage-3.1.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: load a.sage\nsage: list(f([11,17]))\n17\n11\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home2/sage/.sage/temp/modular/25347/_home2_sage_build_sage_3_1_4_a_sage_0.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/sage/parallel/multiprocessing.pyc in parallel_iter(processes, f, inputs)\n     64\n     65     result = p.imapUnordered(call_pickled_function, [ (fp, t) for t in inputs ])\n---> 66     for res in result:\n     67         yield res\n     68\n\n/home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/processing/pool.pyc in next(self, timeout)\n    468         if success:\n    469             return value\n--> 470         raise value\n    471\n    472     def _set(self, i, obj):\n\nNameError: global name '_sage_const_2' is not defined\nsage:           \n```\n\nThis is a pyprocessing problem since:\n\n```\nsage: load a.sage\nsage: f(11)\n11\n0.168011\nsage: f(13)\n13\n0.244015\nsage:              \n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4312\n\n",
     "created_at": "2008-10-17T12:52:39Z",
     "labels": [
         "component: misc",
@@ -75,7 +75,6 @@ NameError: global name '_sage_const_2' is not defined
 sage:           
 ```
 
-
 This is a pyprocessing problem since:
 
 ```
@@ -88,7 +87,6 @@ sage: f(13)
 0.244015
 sage:              
 ```
-
 }}}
 
 Issue created by migration from https://trac.sagemath.org/ticket/4312

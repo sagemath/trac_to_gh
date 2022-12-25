@@ -3,7 +3,7 @@
 archive/issues_007714.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\n\n```\nsage: matrix([PolynomialRing(GF(2),2,'x').gen()]).rank()\n[x0]\n1\n{(0, 0): x0}\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/22996/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.rank (sage/matrix/matrix0.c:16202)()\n\n/scratch/wstein/build/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.pivots (sage/matrix/matrix0.c:16074)()\n\nRuntimeError: BUG: matrix pivots should have been set but weren't, matrix parent = 'Full MatrixSpace of 1 by 1 dense matrices over Multivariate Polynomial Ring in x0, x1 over Finite Field of size 2'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7714\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\n```\nsage: matrix([PolynomialRing(GF(2),2,'x').gen()]).rank()\n[x0]\n1\n{(0, 0): x0}\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/22996/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.rank (sage/matrix/matrix0.c:16202)()\n\n/scratch/wstein/build/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.pivots (sage/matrix/matrix0.c:16074)()\n\nRuntimeError: BUG: matrix pivots should have been set but weren't, matrix parent = 'Full MatrixSpace of 1 by 1 dense matrices over Multivariate Polynomial Ring in x0, x1 over Finite Field of size 2'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7714\n\n",
     "created_at": "2009-12-16T16:37:08Z",
     "labels": [
         "component: commutative algebra",
@@ -19,7 +19,6 @@ archive/issues_007714.json:
 Assignee: @malb
 
 CC:  @burcin
-
 
 ```
 sage: matrix([PolynomialRing(GF(2),2,'x').gen()]).rank()
@@ -37,7 +36,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: BUG: matrix pivots should have been set but weren't, matrix parent = 'Full MatrixSpace of 1 by 1 dense matrices over Multivariate Polynomial Ring in x0, x1 over Finite Field of size 2'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7714
 

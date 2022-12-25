@@ -3,7 +3,7 @@
 archive/issues_004236.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n1) This should work (?)\n\nsage: B.<x,y> = BooleanPolynomialRing()\nsage: B*[x*y + 1, x + y]\nsage: I = B*[x*y + 1, x + y]\nsage: I._magma_()\n\nIdeal of Affine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx*y + 1,\nx + y\n]\n\nsage: Im = I._magma_()\nsage: Im.GroebnerBasis()\nTypeError: Error evaluation Magma code.\nIN:_sage_[21] := GroebnerBasis(_sage_[20]);\nOUT:\n>> _sage_[21] := GroebnerBasis(_sage_[20]);\n                             ^\nRuntime error in 'GroebnerBasis': Bad argument types\nArgument types given: RngMPolRes\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4236\n\n",
+    "body": "Assignee: @williamstein\n\n```\n1) This should work (?)\n\nsage: B.<x,y> = BooleanPolynomialRing()\nsage: B*[x*y + 1, x + y]\nsage: I = B*[x*y + 1, x + y]\nsage: I._magma_()\n\nIdeal of Affine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx*y + 1,\nx + y\n]\n\nsage: Im = I._magma_()\nsage: Im.GroebnerBasis()\nTypeError: Error evaluation Magma code.\nIN:_sage_[21] := GroebnerBasis(_sage_[20]);\nOUT:\n>> _sage_[21] := GroebnerBasis(_sage_[20]);\n                             ^\nRuntime error in 'GroebnerBasis': Bad argument types\nArgument types given: RngMPolRes\n```\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4236\n\n",
     "created_at": "2008-10-02T16:28:41Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_004236.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 1) This should work (?)
@@ -52,7 +51,6 @@ Runtime error in 'GroebnerBasis': Bad argument types
 Argument types given: RngMPolRes
 ```
 
-
 Reported by Martin Albrecht
 
 Issue created by migration from https://trac.sagemath.org/ticket/4236
@@ -84,7 +82,7 @@ Changing status from new to assigned.
 archive/issue_comments_030714.json:
 ```json
 {
-    "body": "This does not seem like a bug in the Sage/Magma interface.  It seems like a misunderstanding of Magma itself, which doesn't have a GroebnerBasis function that takse as input an ideal in a boolean ring.  Magma simply doesn't do that.  It only has Groebner for ideals in *polynomial* rings.  There are some functions on ideals in boolean rings, but not many.  I.e., above\n\n```\nsage: Im.IsMaximal()\ntrue\nsage: Im.PrimaryDecomposition()\n\n[\nAffine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx + 1,\ny + 1\n]\n]\n```\n",
+    "body": "This does not seem like a bug in the Sage/Magma interface.  It seems like a misunderstanding of Magma itself, which doesn't have a GroebnerBasis function that takse as input an ideal in a boolean ring.  Magma simply doesn't do that.  It only has Groebner for ideals in *polynomial* rings.  There are some functions on ideals in boolean rings, but not many.  I.e., above\n\n```\nsage: Im.IsMaximal()\ntrue\nsage: Im.PrimaryDecomposition()\n\n[\nAffine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx + 1,\ny + 1\n]\n]\n```",
     "created_at": "2008-12-11T05:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ y + 1
 ]
 ]
 ```
-
 
 
 

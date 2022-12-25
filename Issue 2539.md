@@ -3,7 +3,7 @@
 archive/issues_002539.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\n\n```\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\n**********************************************************************\nFile \"dist_factor.py\", line 29:\n    sage: f.wait(timeout=60) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        f.wait(timeout=Integer(60)) # long time###line 29:\n    sage: f.wait(timeout=60) # long time\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 183, in wait\n        time.sleep(0.5)\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 179, in handler\n        raise RuntimeError('Maximum wait time exceeded.')\n    RuntimeError: Maximum wait time exceeded.\n**********************************************************************\nFile \"dist_factor.py\", line 30:\n    sage: f.done # long time\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"dist_factor.py\", line 32:\n    sage: print f # long time\nExpected:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801, 269089806001, 4710883168879506001]\nGot:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801]\n**********************************************************************\n1 items had failures:\n   3 of   8 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_dist_factor.py\n```\n\n\nWhile the above doctest usually only takes about 25 seconds wall time when I do parallel testing it times out every couple doctests. Raising the limit for this long doctest to something larger might be a solution.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2539\n\n",
+    "body": "Assignee: @yqiang\n\n```\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\n**********************************************************************\nFile \"dist_factor.py\", line 29:\n    sage: f.wait(timeout=60) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        f.wait(timeout=Integer(60)) # long time###line 29:\n    sage: f.wait(timeout=60) # long time\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 183, in wait\n        time.sleep(0.5)\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 179, in handler\n        raise RuntimeError('Maximum wait time exceeded.')\n    RuntimeError: Maximum wait time exceeded.\n**********************************************************************\nFile \"dist_factor.py\", line 30:\n    sage: f.done # long time\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"dist_factor.py\", line 32:\n    sage: print f # long time\nExpected:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801, 269089806001, 4710883168879506001]\nGot:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801]\n**********************************************************************\n1 items had failures:\n   3 of   8 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_dist_factor.py\n```\n\nWhile the above doctest usually only takes about 25 seconds wall time when I do parallel testing it times out every couple doctests. Raising the limit for this long doctest to something larger might be a solution.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2539\n\n",
     "created_at": "2008-03-16T01:30:30Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002539.json:
 }
 ```
 Assignee: @yqiang
-
 
 ```
 sage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py
@@ -59,7 +58,6 @@ Got:
 ***Test Failed*** 3 failures.
 For whitespace errors, see the file .doctest_dist_factor.py
 ```
-
 
 While the above doctest usually only takes about 25 seconds wall time when I do parallel testing it times out every couple doctests. Raising the limit for this long doctest to something larger might be a solution.
 
@@ -118,7 +116,7 @@ Is this still an issue? I still don't understand what you mean by "parallel test
 archive/issue_comments_017283.json:
 ```json
 {
-    "body": "Replying to [comment:2 yi]:\n> Pinging Michael...\n> \n> Is this still an issue? I still don't understand what you mean by \"parallel testing\" or how to go about reproducing this. \n\nYes, it still regularly happens. Run \"sage -tp 10 devel/sage/sage\" on sage.math to trigger this. I am seeing it regularly with 3.0.alpha[0-3].\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 yi]:\n> Pinging Michael...\n> \n> Is this still an issue? I still don't understand what you mean by \"parallel testing\" or how to go about reproducing this. \n\n\nYes, it still regularly happens. Run \"sage -tp 10 devel/sage/sage\" on sage.math to trigger this. I am seeing it regularly with 3.0.alpha[0-3].\n\nCheers,\n\nMichael",
     "created_at": "2008-04-09T04:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2539",
     "type": "issue_comment",
@@ -131,6 +129,7 @@ Replying to [comment:2 yi]:
 > Pinging Michael...
 > 
 > Is this still an issue? I still don't understand what you mean by "parallel testing" or how to go about reproducing this. 
+
 
 Yes, it still regularly happens. Run "sage -tp 10 devel/sage/sage" on sage.math to trigger this. I am seeing it regularly with 3.0.alpha[0-3].
 

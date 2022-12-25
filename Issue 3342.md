@@ -3,7 +3,7 @@
 archive/issues_003342.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:\tInteractive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake\n\nI observed the following in sage-3.0.2 on both Linux and OS X.\nNote the very bizarre output of x.is_zero??\n\n```\nsage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)\nsage: x.is_zero??\nType:\t\tbuiltin_function_or_method\nBase Class:\t<type 'builtin_function_or_method'>\nString Form:\t<built-in method is_zero of FractionFieldElement object at 0x2afd954b16e0>\nNamespace:\tInteractive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not selfClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3342\n\n",
     "created_at": "2008-05-31T17:44:28Z",
     "labels": [
         "component: documentation",
@@ -23,7 +23,6 @@ CC:  @dandrake
 
 I observed the following in sage-3.0.2 on both Linux and OS X.
 Note the very bizarre output of x.is_zero??
-
 
 ```
 sage: R.<x,y> = QQ[]; S.<x,y> = Frac(R)
@@ -46,7 +45,6 @@ Source:
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3342
 
 
@@ -58,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3342
 archive/issue_comments_023157.json:
 ```json
 {
-    "body": "I'm not sure which part is bizarre -- maybe the lack of any white space or line break between \"return not self\" and \"Class Docstring\"?  As far as I can tell, this is an IPython issue.  If you change line 520 of OInspect.py (in SAGEROOT/local/lib/python/site-packages/IPython/) from \n\n```\n                    out.writeln(header('Class Docstring:\\n') +\n```\n\nto\n\n```\n                    out.writeln(header('\\n\\nClass Docstring:\\n') +\n```\n\nit fixes this problem.\n\nShould we patch the IPython to incorporate this change?  I've put a new spkg [here](http://sage.math.washington.edu/home/palmieri/SPKG/ipython-0.9.1.spkg), but I don't know if this is the right solution.",
+    "body": "I'm not sure which part is bizarre -- maybe the lack of any white space or line break between \"return not self\" and \"Class Docstring\"?  As far as I can tell, this is an IPython issue.  If you change line 520 of OInspect.py (in SAGEROOT/local/lib/python/site-packages/IPython/) from \n\n```\n                    out.writeln(header('Class Docstring:\\n') +\n```\nto\n\n```\n                    out.writeln(header('\\n\\nClass Docstring:\\n') +\n```\nit fixes this problem.\n\nShould we patch the IPython to incorporate this change?  I've put a new spkg [here](http://sage.math.washington.edu/home/palmieri/SPKG/ipython-0.9.1.spkg), but I don't know if this is the right solution.",
     "created_at": "2009-06-10T21:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
@@ -72,13 +70,11 @@ I'm not sure which part is bizarre -- maybe the lack of any white space or line 
 ```
                     out.writeln(header('Class Docstring:\n') +
 ```
-
 to
 
 ```
                     out.writeln(header('\n\nClass Docstring:\n') +
 ```
-
 it fixes this problem.
 
 Should we patch the IPython to incorporate this change?  I've put a new spkg [here](http://sage.math.washington.edu/home/palmieri/SPKG/ipython-0.9.1.spkg), but I don't know if this is the right solution.
@@ -90,7 +86,7 @@ Should we patch the IPython to incorporate this change?  I've put a new spkg [he
 archive/issue_comments_023158.json:
 ```json
 {
-    "body": "By the way, there are similar problems with other docstrings and source code retrieval: type `GroupAlgebra??` or `SteenrodAlgebra??`.  The former yields lines looking like this:\n\n```\n        return GroupAlgebras(self.base_ring())\nConstructor information:\n```\n\n(not too bad, but there should be an extra blank line before \"Constructor information:\") while the latter gives\n\n```\n            return SteenrodAlgebra_generic(p=p, basis=basis_name)Call docstring:\n```\n\nThere should be two blank lines before \"Call docstring\".  \n\nThe new version of the spkg has a slight disadvantage: if you ask for docstrings, not source, in situations like these (`x.is_zero?`, `GroupAlgebra?`, `SteenrodAlgebra?`), then there are maybe two new blank lines between the main part of the docstring and \"Class docstring\", \"Constructor information\", or \"Call docstring\".  We could get rid of these with yet more tinkering, but I'm not sure it's worth it.\n\nWhen refereeing, the only new thing in the ipython spkg is the patch to OInspect.py.",
+    "body": "By the way, there are similar problems with other docstrings and source code retrieval: type `GroupAlgebra??` or `SteenrodAlgebra??`.  The former yields lines looking like this:\n\n```\n        return GroupAlgebras(self.base_ring())\nConstructor information:\n```\n(not too bad, but there should be an extra blank line before \"Constructor information:\") while the latter gives\n\n```\n            return SteenrodAlgebra_generic(p=p, basis=basis_name)Call docstring:\n```\nThere should be two blank lines before \"Call docstring\".  \n\nThe new version of the spkg has a slight disadvantage: if you ask for docstrings, not source, in situations like these (`x.is_zero?`, `GroupAlgebra?`, `SteenrodAlgebra?`), then there are maybe two new blank lines between the main part of the docstring and \"Class docstring\", \"Constructor information\", or \"Call docstring\".  We could get rid of these with yet more tinkering, but I'm not sure it's worth it.\n\nWhen refereeing, the only new thing in the ipython spkg is the patch to OInspect.py.",
     "created_at": "2009-06-12T05:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3342",
     "type": "issue_comment",
@@ -105,13 +101,11 @@ By the way, there are similar problems with other docstrings and source code ret
         return GroupAlgebras(self.base_ring())
 Constructor information:
 ```
-
 (not too bad, but there should be an extra blank line before "Constructor information:") while the latter gives
 
 ```
             return SteenrodAlgebra_generic(p=p, basis=basis_name)Call docstring:
 ```
-
 There should be two blank lines before "Call docstring".  
 
 The new version of the spkg has a slight disadvantage: if you ask for docstrings, not source, in situations like these (`x.is_zero?`, `GroupAlgebra?`, `SteenrodAlgebra?`), then there are maybe two new blank lines between the main part of the docstring and "Class docstring", "Constructor information", or "Call docstring".  We could get rid of these with yet more tinkering, but I'm not sure it's worth it.

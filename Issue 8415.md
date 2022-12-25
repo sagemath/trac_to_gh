@@ -3,7 +3,7 @@
 archive/issues_008415.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\n\n```\nE = EllipticCurve('37a')\nK.<a> = QuadraticField(-7)\nEK = E.change_ring(K)\nL = EK.period_lattice(K.complex_embeddings()[0])\n[hang, can't control-c]\n```\n\n\nGDB Backtrace: \n\n\n```\n#0  0x00007f87d128506a in Flx_to_ZX ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#1  0x00007f87d13a378f in FpX_split_Berlekamp ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#2  0x00007f87d146fbda in nfsqff ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#3  0x00007f87d1470383 in nffactor ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#4  0x00007f87cc206364 in __pyx_pf_4sage_4libs_4pari_3gen_3gen_nffactor (\n    __pyx_v_self=0x4a0bc58, __pyx_v_x=<value optimized out>)\n    at sage/libs/pari/gen.c:27077\n#5  0x00000000004978b1 in PyEval_EvalFrameEx (f=0x485aea0, \n    throwflag=<value optimized out>) at Python/ceval.c:3694\n#6  0x0000000000498e61 in PyEval_EvalCodeEx (co=0x20635d0, \n    globals=<value optimized out>, locals=<value optimized out>, args=0x20, \n    argcount=2, kws=0x48b1c38, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:2968\n#7  0x0000000000496c7e in PyEval_EvalFrameEx (f=0x48b1a60, \n    throwflag=<value optimized out>) at Python/ceval.c:3802\n#8  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1890, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n#9  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1660, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8415\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\n```\nE = EllipticCurve('37a')\nK.<a> = QuadraticField(-7)\nEK = E.change_ring(K)\nL = EK.period_lattice(K.complex_embeddings()[0])\n[hang, can't control-c]\n```\n\nGDB Backtrace: \n\n```\n#0  0x00007f87d128506a in Flx_to_ZX ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#1  0x00007f87d13a378f in FpX_split_Berlekamp ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#2  0x00007f87d146fbda in nfsqff ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#3  0x00007f87d1470383 in nffactor ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#4  0x00007f87cc206364 in __pyx_pf_4sage_4libs_4pari_3gen_3gen_nffactor (\n    __pyx_v_self=0x4a0bc58, __pyx_v_x=<value optimized out>)\n    at sage/libs/pari/gen.c:27077\n#5  0x00000000004978b1 in PyEval_EvalFrameEx (f=0x485aea0, \n    throwflag=<value optimized out>) at Python/ceval.c:3694\n#6  0x0000000000498e61 in PyEval_EvalCodeEx (co=0x20635d0, \n    globals=<value optimized out>, locals=<value optimized out>, args=0x20, \n    argcount=2, kws=0x48b1c38, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:2968\n#7  0x0000000000496c7e in PyEval_EvalFrameEx (f=0x48b1a60, \n    throwflag=<value optimized out>) at Python/ceval.c:3802\n#8  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1890, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n#9  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1660, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8415\n\n",
     "created_at": "2010-03-02T08:59:06Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  @JohnCremona
 
-
 ```
 E = EllipticCurve('37a')
 K.<a> = QuadraticField(-7)
@@ -29,9 +28,7 @@ L = EK.period_lattice(K.complex_embeddings()[0])
 [hang, can't control-c]
 ```
 
-
 GDB Backtrace: 
-
 
 ```
 #0  0x00007f87d128506a in Flx_to_ZX ()
@@ -59,7 +56,6 @@ GDB Backtrace:
     throwflag=<value optimized out>) at Python/ceval.c:3792
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8415
 
 
@@ -71,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8415
 archive/issue_comments_075285.json:
 ```json
 {
-    "body": "The fault is when refine_embedding is called;  and in that function (in sage.rings.number_field.number_field) the line which hangs is\n\n```\nelist = K.embeddings(sage.rings.qqbar.QQbar)\n```\n\n\nSo a minimal hang-causing session is simply\n\n```\nsage: K.<a> = QuadraticField(-7)\nsage: K.embeddings(QQbar)\n```\n",
+    "body": "The fault is when refine_embedding is called;  and in that function (in sage.rings.number_field.number_field) the line which hangs is\n\n```\nelist = K.embeddings(sage.rings.qqbar.QQbar)\n```\n\nSo a minimal hang-causing session is simply\n\n```\nsage: K.<a> = QuadraticField(-7)\nsage: K.embeddings(QQbar)\n```",
     "created_at": "2010-03-02T09:37:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
@@ -86,7 +82,6 @@ The fault is when refine_embedding is called;  and in that function (in sage.rin
 elist = K.embeddings(sage.rings.qqbar.QQbar)
 ```
 
-
 So a minimal hang-causing session is simply
 
 ```
@@ -96,13 +91,12 @@ sage: K.embeddings(QQbar)
 
 
 
-
 ---
 
 archive/issue_comments_075286.json:
 ```json
 {
-    "body": "\n```\nsage: x=polygen(QQbar)\nsage: f=x^2+7\nsage: r=f.roots()\nsage: r\n[(-2.645751311064591?*I, 1), (2.645751311064591?*I, 1)]\nsage: r.sort()\n```\n\nhangs.  So it's the sorting -- in fact the comparison! -- of two elements of QQbar which is the problem.",
+    "body": "```\nsage: x=polygen(QQbar)\nsage: f=x^2+7\nsage: r=f.roots()\nsage: r\n[(-2.645751311064591?*I, 1), (2.645751311064591?*I, 1)]\nsage: r.sort()\n```\nhangs.  So it's the sorting -- in fact the comparison! -- of two elements of QQbar which is the problem.",
     "created_at": "2010-03-02T09:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
@@ -110,7 +104,6 @@ archive/issue_comments_075286.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-
 
 ```
 sage: x=polygen(QQbar)
@@ -120,7 +113,6 @@ sage: r
 [(-2.645751311064591?*I, 1), (2.645751311064591?*I, 1)]
 sage: r.sort()
 ```
-
 hangs.  So it's the sorting -- in fact the comparison! -- of two elements of QQbar which is the problem.
 
 
@@ -148,7 +140,7 @@ Ah, I bet it's trying to compare them lexicographically! Wonder why this doesn't
 archive/issue_comments_075288.json:
 ```json
 {
-    "body": "\n```\nsage: r = QQbar(-7).sqrt()\nsage: s = r.conjugate()   \nsage: (r-s).exactify()    # hangs\n```\n\n\nIt's  in the QQbqr code...    The actual hanging is happening in a call to pari's nffactor on line 1632 of qqbar.py.  So I think it's yet another manifestation of pari's nnffactor bugs:\n\n```\njec@selmer%sage -gp\n...\n                  GP/PARI CALCULATOR Version 2.3.3 (released)\n         amd64 running linux (x86-64/GMP-4.2.1 kernel) 64-bit version\n           compiled: Feb 22 2010, gcc-4.3.3 (Ubuntu 4.3.3-5ubuntu4) \n               (readline v6.0 enabled, extended help available)\n...\n? nf = nfinit(y^2-y+2);                                                       \n? nffactor(nf,x^2-x+2)                                                        \n  *** nffactor: the PARI stack overflows !\n  current stack size: 8000000 (7.629 Mbytes)\n  [hint] you can increase GP stack with allocatemem()\n```\n\n( from inside sage, this just hangs).\n\nAccording to http://old.nabble.com/New-PARI-stable-release-2.3.5-td27467266.html there are 3 bug-fixes to nffactor in 2.3.5 which is a bug-fix release.  Current development version is 2.4.3, in which the above example works fine.  I have not tried 2.3.5.",
+    "body": "```\nsage: r = QQbar(-7).sqrt()\nsage: s = r.conjugate()   \nsage: (r-s).exactify()    # hangs\n```\n\nIt's  in the QQbqr code...    The actual hanging is happening in a call to pari's nffactor on line 1632 of qqbar.py.  So I think it's yet another manifestation of pari's nnffactor bugs:\n\n```\njec@selmer%sage -gp\n...\n                  GP/PARI CALCULATOR Version 2.3.3 (released)\n         amd64 running linux (x86-64/GMP-4.2.1 kernel) 64-bit version\n           compiled: Feb 22 2010, gcc-4.3.3 (Ubuntu 4.3.3-5ubuntu4) \n               (readline v6.0 enabled, extended help available)\n...\n? nf = nfinit(y^2-y+2);                                                       \n? nffactor(nf,x^2-x+2)                                                        \n  *** nffactor: the PARI stack overflows !\n  current stack size: 8000000 (7.629 Mbytes)\n  [hint] you can increase GP stack with allocatemem()\n```\n( from inside sage, this just hangs).\n\nAccording to http://old.nabble.com/New-PARI-stable-release-2.3.5-td27467266.html there are 3 bug-fixes to nffactor in 2.3.5 which is a bug-fix release.  Current development version is 2.4.3, in which the above example works fine.  I have not tried 2.3.5.",
     "created_at": "2010-03-02T16:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8415",
     "type": "issue_comment",
@@ -157,13 +149,11 @@ archive/issue_comments_075288.json:
 }
 ```
 
-
 ```
 sage: r = QQbar(-7).sqrt()
 sage: s = r.conjugate()   
 sage: (r-s).exactify()    # hangs
 ```
-
 
 It's  in the QQbqr code...    The actual hanging is happening in a call to pari's nffactor on line 1632 of qqbar.py.  So I think it's yet another manifestation of pari's nnffactor bugs:
 
@@ -181,7 +171,6 @@ jec@selmer%sage -gp
   current stack size: 8000000 (7.629 Mbytes)
   [hint] you can increase GP stack with allocatemem()
 ```
-
 ( from inside sage, this just hangs).
 
 According to http://old.nabble.com/New-PARI-stable-release-2.3.5-td27467266.html there are 3 bug-fixes to nffactor in 2.3.5 which is a bug-fix release.  Current development version is 2.4.3, in which the above example works fine.  I have not tried 2.3.5.

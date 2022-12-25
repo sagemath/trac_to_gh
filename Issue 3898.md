@@ -247,7 +247,7 @@ archive/issue_events_008933.json:
 archive/issue_comments_027827.json:
 ```json
 {
-    "body": "\n```\n23:32 < wstein-682> there's no gcc-4.3.2 spkg, so why did you write \"neeeds review\"?\n23:32 < wstein-682> can I change 3898 to \"needs work\"?\n23:32 < mabshoff> It need to update.\n23:32 < mabshoff> Yes\n23:32 < wstein-682> since it's not done as stated inthe summary?\n23:33 < mabshoff> I need to do two things:\n23:33 < mabshoff> (a) update to gcc 4.3.2 (quick)\n23:33 < mabshoff> (b) create custom toolchain.sh scripts for x86, x86-64 and Itanium.\n23:33 < mabshoff> Next time I build on SkyNet I will do so.\n23:34 < mabshoff> And definitely before SD 12 due to obvious reasons :)\n```\n",
+    "body": "```\n23:32 < wstein-682> there's no gcc-4.3.2 spkg, so why did you write \"neeeds review\"?\n23:32 < wstein-682> can I change 3898 to \"needs work\"?\n23:32 < mabshoff> It need to update.\n23:32 < mabshoff> Yes\n23:32 < wstein-682> since it's not done as stated inthe summary?\n23:33 < mabshoff> I need to do two things:\n23:33 < mabshoff> (a) update to gcc 4.3.2 (quick)\n23:33 < mabshoff> (b) create custom toolchain.sh scripts for x86, x86-64 and Itanium.\n23:33 < mabshoff> Next time I build on SkyNet I will do so.\n23:34 < mabshoff> And definitely before SD 12 due to obvious reasons :)\n```",
     "created_at": "2008-11-27T07:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3898",
     "type": "issue_comment",
@@ -255,7 +255,6 @@ archive/issue_comments_027827.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 23:32 < wstein-682> there's no gcc-4.3.2 spkg, so why did you write "neeeds review"?
@@ -269,7 +268,6 @@ archive/issue_comments_027827.json:
 23:33 < mabshoff> Next time I build on SkyNet I will do so.
 23:34 < mabshoff> And definitely before SD 12 due to obvious reasons :)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_001725.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn 12/02/2007 I wrote on sage devel:\n\n\n```\nHi,\n\nI made an experimental wxPython-2.8.7.1.spkg.\n\nIt works for me on Fedora 7 and 8.\n\nDependencies include:\n\nglib and gtk+\nOpenGL or the Mesa3D library\n\nThis will not work on OSX (slightly different configuration options, etc).\n\nAny testers?\n\nhttp://sage.math.washington.edu/home/jsp/wxPython-2.8.7.1.spkg\n\nJaap\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1725\n\n",
+    "body": "Assignee: @williamstein\n\nOn 12/02/2007 I wrote on sage devel:\n\n```\nHi,\n\nI made an experimental wxPython-2.8.7.1.spkg.\n\nIt works for me on Fedora 7 and 8.\n\nDependencies include:\n\nglib and gtk+\nOpenGL or the Mesa3D library\n\nThis will not work on OSX (slightly different configuration options, etc).\n\nAny testers?\n\nhttp://sage.math.washington.edu/home/jsp/wxPython-2.8.7.1.spkg\n\nJaap\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1725\n\n",
     "created_at": "2008-01-08T21:59:30Z",
     "labels": [
         "component: interfaces",
@@ -19,7 +19,6 @@ archive/issues_001725.json:
 Assignee: @williamstein
 
 On 12/02/2007 I wrote on sage devel:
-
 
 ```
 Hi,
@@ -41,7 +40,6 @@ http://sage.math.washington.edu/home/jsp/wxPython-2.8.7.1.spkg
 
 Jaap
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1725

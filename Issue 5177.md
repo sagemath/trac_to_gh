@@ -148,7 +148,7 @@ Trivial rebase on new patch queue. (Deletion of one empty line)
 archive/issue_comments_039584.json:
 ```json
 {
-    "body": "This is then new patch queue:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\n```\n\n\nSorry for the immense queue.",
+    "body": "This is then new patch queue:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\n```\n\nSorry for the immense queue.",
     "created_at": "2010-01-17T22:06:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -158,7 +158,6 @@ archive/issue_comments_039584.json:
 ```
 
 This is then new patch queue:
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -184,7 +183,6 @@ trac_3083-print-documentation.patch
 trac_7962-link-worksheets-zip-file.patch
 trac_5177-delete-cell-dirs.patch
 ```
-
 
 Sorry for the immense queue.
 
@@ -231,7 +229,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_039587.json:
 ```json
 {
-    "body": "If I evaluate \n\n```python\nprint 'Hello!'\nplot(sin(x))\n```\n\nthen \"Delete All Output,\" \"Save & quit\" and reopen the worksheet, the plot (not the text) reappears.\n\nWe could also delete the cells' files in `Worksheet.delete_all_output`.  But we may wish to do this synchronously; otherwise, a long-running or simply delayed (e.g., on a busy server) thread might remove newly-written files.\n\n(For deleting just one cell, there might be a similar but less likely race condition.  For example, if after deleting a cell (with ID <id>) in the browser, a user pastes and saves ``id=<id>|\\n<updated code>///\\n\\n`` in the \"Edit\" window, and re-evaluates the cell, a delayed `Deferred` could delete new files.)\n\nWhat do most users expect/prefer?\n\nI'm adding `schilly` to the Cc: list, since he's almost certainly better qualified than I on this (and many other) topics.",
+    "body": "If I evaluate \n\n```python\nprint 'Hello!'\nplot(sin(x))\n```\nthen \"Delete All Output,\" \"Save & quit\" and reopen the worksheet, the plot (not the text) reappears.\n\nWe could also delete the cells' files in `Worksheet.delete_all_output`.  But we may wish to do this synchronously; otherwise, a long-running or simply delayed (e.g., on a busy server) thread might remove newly-written files.\n\n(For deleting just one cell, there might be a similar but less likely race condition.  For example, if after deleting a cell (with ID <id>) in the browser, a user pastes and saves ``id=<id>|\\n<updated code>///\\n\\n`` in the \"Edit\" window, and re-evaluates the cell, a delayed `Deferred` could delete new files.)\n\nWhat do most users expect/prefer?\n\nI'm adding `schilly` to the Cc: list, since he's almost certainly better qualified than I on this (and many other) topics.",
     "created_at": "2010-01-19T15:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -246,7 +244,6 @@ If I evaluate
 print 'Hello!'
 plot(sin(x))
 ```
-
 then "Delete All Output," "Save & quit" and reopen the worksheet, the plot (not the text) reappears.
 
 We could also delete the cells' files in `Worksheet.delete_all_output`.  But we may wish to do this synchronously; otherwise, a long-running or simply delayed (e.g., on a busy server) thread might remove newly-written files.
@@ -450,7 +447,7 @@ Changing priority from major to critical.
 archive/issue_comments_039598.json:
 ```json
 {
-    "body": "Replying to [comment:9 timdumol]:\n> Since a major problem with the notebook right now is its performance, and this may slow it down even further\nHow should this patch slow things down?  The new code is only called when deleting a cell.  In fact, it could even speed up the notebook as there will be fewer files around.",
+    "body": "Replying to [comment:9 timdumol]:\n> Since a major problem with the notebook right now is its performance, and this may slow it down even further\n\nHow should this patch slow things down?  The new code is only called when deleting a cell.  In fact, it could even speed up the notebook as there will be fewer files around.",
     "created_at": "2011-11-30T08:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -461,6 +458,7 @@ archive/issue_comments_039598.json:
 
 Replying to [comment:9 timdumol]:
 > Since a major problem with the notebook right now is its performance, and this may slow it down even further
+
 How should this patch slow things down?  The new code is only called when deleting a cell.  In fact, it could even speed up the notebook as there will be fewer files around.
 
 
@@ -646,7 +644,7 @@ I'm not sure if I should have closed this.  I'll leave it as positive review for
 archive/issue_comments_039607.json:
 ```json
 {
-    "body": "Replying to [comment:15 jason]:\n> I'm not sure if I should have closed this.\nOnly the release manager should ever close tickets (with the exception of spam tickets or tickets which have no interesting content at all).\n\n> I'll leave it as positive review for now, since I suppose it could also be applied to the current notebook.\nYes, I will merge it.\n\nThis reminds me of the fact that we should really discuss how to merge the new notebook, and coordination between the current notebook and the new notebook.  It's a topic which I started several times, but still I don't have a good answer.",
+    "body": "Replying to [comment:15 jason]:\n> I'm not sure if I should have closed this.\n\nOnly the release manager should ever close tickets (with the exception of spam tickets or tickets which have no interesting content at all).\n\n> I'll leave it as positive review for now, since I suppose it could also be applied to the current notebook.\n\nYes, I will merge it.\n\nThis reminds me of the fact that we should really discuss how to merge the new notebook, and coordination between the current notebook and the new notebook.  It's a topic which I started several times, but still I don't have a good answer.",
     "created_at": "2011-11-30T09:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -657,9 +655,11 @@ archive/issue_comments_039607.json:
 
 Replying to [comment:15 jason]:
 > I'm not sure if I should have closed this.
+
 Only the release manager should ever close tickets (with the exception of spam tickets or tickets which have no interesting content at all).
 
 > I'll leave it as positive review for now, since I suppose it could also be applied to the current notebook.
+
 Yes, I will merge it.
 
 This reminds me of the fact that we should really discuss how to merge the new notebook, and coordination between the current notebook and the new notebook.  It's a topic which I started several times, but still I don't have a good answer.
@@ -707,7 +707,7 @@ I fixed #10234 a while ago in the flask notebook.  This patch is related; I reba
 archive/issue_comments_039610.json:
 ```json
 {
-    "body": "Replying to [comment:19 jason]:\n> I fixed #10234 a while ago in the flask notebook.  This patch is related\nIn which sense \"related\".  Does this ticket also fix #10234?  If you fixed #10234 already, it would be good also to merge #10234 in the current sagenb.",
+    "body": "Replying to [comment:19 jason]:\n> I fixed #10234 a while ago in the flask notebook.  This patch is related\n\nIn which sense \"related\".  Does this ticket also fix #10234?  If you fixed #10234 already, it would be good also to merge #10234 in the current sagenb.",
     "created_at": "2011-11-30T20:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
@@ -718,6 +718,7 @@ archive/issue_comments_039610.json:
 
 Replying to [comment:19 jason]:
 > I fixed #10234 a while ago in the flask notebook.  This patch is related
+
 In which sense "related".  Does this ticket also fix #10234?  If you fixed #10234 already, it would be good also to merge #10234 in the current sagenb.
 
 

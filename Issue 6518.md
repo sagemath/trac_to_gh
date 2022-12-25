@@ -3,7 +3,7 @@
 archive/issues_006518.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI got this while doctesting a patch with 4.1:\n\n\n```\nsage -t  \"devel/sage-s/sage/symbolic/expression_conversions.py\"\n/home/burcin/sage/sage-4.1/local/lib/python/site-packages/sage/misc/misc.py:1901: DeprecationWarning: functions overriding warnings.showwarning() must support the 'line' argument\n  warn(message, DeprecationWarning, stacklevel=3)\n```\n\n\nApparently showwarning got a new argument in Python 2.6, as stated here:\n\nhttp://docs.python.org/library/warnings.html#showwarning/show\n\nAttached patch fixes the `sage-doctest` script to use the new call signature. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6518\n\n",
+    "body": "Assignee: tbd\n\nI got this while doctesting a patch with 4.1:\n\n```\nsage -t  \"devel/sage-s/sage/symbolic/expression_conversions.py\"\n/home/burcin/sage/sage-4.1/local/lib/python/site-packages/sage/misc/misc.py:1901: DeprecationWarning: functions overriding warnings.showwarning() must support the 'line' argument\n  warn(message, DeprecationWarning, stacklevel=3)\n```\n\nApparently showwarning got a new argument in Python 2.6, as stated here:\n\nhttp://docs.python.org/library/warnings.html#showwarning/show\n\nAttached patch fixes the `sage-doctest` script to use the new call signature. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6518\n\n",
     "created_at": "2009-07-12T12:18:31Z",
     "labels": [
         "component: doctest coverage",
@@ -20,13 +20,11 @@ Assignee: tbd
 
 I got this while doctesting a patch with 4.1:
 
-
 ```
 sage -t  "devel/sage-s/sage/symbolic/expression_conversions.py"
 /home/burcin/sage/sage-4.1/local/lib/python/site-packages/sage/misc/misc.py:1901: DeprecationWarning: functions overriding warnings.showwarning() must support the 'line' argument
   warn(message, DeprecationWarning, stacklevel=3)
 ```
-
 
 Apparently showwarning got a new argument in Python 2.6, as stated here:
 

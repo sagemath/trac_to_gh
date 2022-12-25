@@ -3,7 +3,7 @@
 archive/issues_003528.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nhexagon1001: [gcc -v result.]\n[02:14am] hexagon1001: Using built-in specs.\n[02:14am] hexagon1001: Target: i586-suse-linux\n[02:14am] hexagon1001: Configured with: ../configure --prefix=/usr \n--with-local-prefix=/usr/local --infodir=/usr/share/info \n--mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib \n--enable-languages=c,c++,objc,fortran,obj-c++,java,ada \n--enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.3 \n\\--enable-ssp --disable-libssp --with-bugurl=http://bugs.opensuse.org/ \n--with-pkgversion='SUSE Linux' --disable-libgcj --with-slibdir=/lib \n--with-system-zlib --ena\n[02:14am] hexagon1001: Thread model: posix\n[02:14am] hexagon1001: gcc version 4.3.1 20080507 (prerelease) [gcc-4_3-branch revision 135036] (SUSE Linux)\n[02:15am] mabshoff: ok, but gcc -dumpversion  says \"4.3\" ?\n```\n\n\nThis is OpenSuSE 11, so those SuSE people need to get a life since they have been shipping odd compilers for way too many years. The fix in test_gcc_version.pl is to check also for only major and minor version.\n\nThe check should also happen before we start building Sage and should black list a bunch of known broken compilers.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3528\n\n",
+    "body": "Assignee: mabshoff\n\n```\nhexagon1001: [gcc -v result.]\n[02:14am] hexagon1001: Using built-in specs.\n[02:14am] hexagon1001: Target: i586-suse-linux\n[02:14am] hexagon1001: Configured with: ../configure --prefix=/usr \n--with-local-prefix=/usr/local --infodir=/usr/share/info \n--mandir=/usr/share/man --libdir=/usr/lib --libexecdir=/usr/lib \n--enable-languages=c,c++,objc,fortran,obj-c++,java,ada \n--enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.3 \n\\--enable-ssp --disable-libssp --with-bugurl=http://bugs.opensuse.org/ \n--with-pkgversion='SUSE Linux' --disable-libgcj --with-slibdir=/lib \n--with-system-zlib --ena\n[02:14am] hexagon1001: Thread model: posix\n[02:14am] hexagon1001: gcc version 4.3.1 20080507 (prerelease) [gcc-4_3-branch revision 135036] (SUSE Linux)\n[02:15am] mabshoff: ok, but gcc -dumpversion  says \"4.3\" ?\n```\n\nThis is OpenSuSE 11, so those SuSE people need to get a life since they have been shipping odd compilers for way too many years. The fix in test_gcc_version.pl is to check also for only major and minor version.\n\nThe check should also happen before we start building Sage and should black list a bunch of known broken compilers.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3528\n\n",
     "created_at": "2008-06-28T09:36:05Z",
     "labels": [
         "component: build",
@@ -18,7 +18,6 @@ archive/issues_003528.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 hexagon1001: [gcc -v result.]
@@ -36,7 +35,6 @@ hexagon1001: [gcc -v result.]
 [02:14am] hexagon1001: gcc version 4.3.1 20080507 (prerelease) [gcc-4_3-branch revision 135036] (SUSE Linux)
 [02:15am] mabshoff: ok, but gcc -dumpversion  says "4.3" ?
 ```
-
 
 This is OpenSuSE 11, so those SuSE people need to get a life since they have been shipping odd compilers for way too many years. The fix in test_gcc_version.pl is to check also for only major and minor version.
 

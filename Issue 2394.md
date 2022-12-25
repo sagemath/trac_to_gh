@@ -114,7 +114,7 @@ mabshoff is right -- this is the same as eclib-20080127.    I think boothby forg
 archive/issue_comments_016112.json:
 ```json
 {
-    "body": "Yep. Checking the repo I see:\n\n```\neclib-20080304/src$ hg status\nM g0n/Makefile\nM g0n/hecketest.cc\nM g0n/homspace.cc\nM g0n/homspace.h\nM g0n/newforms.cc\nM g0n/newforms.h\nM g0n/nftest.cc\nM procs/rat.h\n? g0n/ecnf.cc\n```\n\n\nCheers,\n\nMichael",
+    "body": "Yep. Checking the repo I see:\n\n```\neclib-20080304/src$ hg status\nM g0n/Makefile\nM g0n/hecketest.cc\nM g0n/homspace.cc\nM g0n/homspace.h\nM g0n/newforms.cc\nM g0n/newforms.h\nM g0n/nftest.cc\nM procs/rat.h\n? g0n/ecnf.cc\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-09T16:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2394",
     "type": "issue_comment",
@@ -137,7 +137,6 @@ M g0n/nftest.cc
 M procs/rat.h
 ? g0n/ecnf.cc
 ```
-
 
 Cheers,
 
@@ -333,7 +332,7 @@ Attachment [2394-license.patch](tarball://root/attachments/some-uuid/ticket2394/
 archive/issue_comments_016119.json:
 ```json
 {
-    "body": "\n```\n[22:00] <boothby> Please look at my comments on #2394\n[22:01] <boothby> valid/invalid?\n[22:02] <malb> I'm still in favour of module level docs but that is taste I reckon\n```\n\n\nI say apply.",
+    "body": "```\n[22:00] <boothby> Please look at my comments on #2394\n[22:01] <boothby> valid/invalid?\n[22:02] <malb> I'm still in favour of module level docs but that is taste I reckon\n```\n\nI say apply.",
     "created_at": "2008-04-11T21:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2394",
     "type": "issue_comment",
@@ -342,13 +341,11 @@ archive/issue_comments_016119.json:
 }
 ```
 
-
 ```
 [22:00] <boothby> Please look at my comments on #2394
 [22:01] <boothby> valid/invalid?
 [22:02] <malb> I'm still in favour of module level docs but that is taste I reckon
 ```
-
 
 I say apply.
 

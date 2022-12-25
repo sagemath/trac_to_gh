@@ -313,7 +313,7 @@ Michael
 archive/issue_comments_024987.json:
 ```json
 {
-    "body": "There is one doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc1$ ./sage -t -long devel/sage/sage/combinat/crystals/crystals.py\nsage -t -long \"devel/sage/sage/combinat/crystals/crystals.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/combinat/crystals/crystals.py\", line 553:\n    sage: C.plot()\nExpected:\n    Graphics object consisting of 11 graphics primitives\nGot:\n    Graphics object consisting of 17 graphics primitives\n**********************************************************************\n```\n\nI assume this is becase previously the graph was incorrect.\n\nCheers,\n\nMichael",
+    "body": "There is one doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc1$ ./sage -t -long devel/sage/sage/combinat/crystals/crystals.py\nsage -t -long \"devel/sage/sage/combinat/crystals/crystals.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/combinat/crystals/crystals.py\", line 553:\n    sage: C.plot()\nExpected:\n    Graphics object consisting of 11 graphics primitives\nGot:\n    Graphics object consisting of 17 graphics primitives\n**********************************************************************\n```\nI assume this is becase previously the graph was incorrect.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T13:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -336,7 +336,6 @@ Got:
     Graphics object consisting of 17 graphics primitives
 **********************************************************************
 ```
-
 I assume this is becase previously the graph was incorrect.
 
 Cheers,
@@ -491,7 +490,7 @@ sample plot of a multi-edge graph
 archive/issue_comments_024994.json:
 ```json
 {
-    "body": "Uploaded an image of a sample plot of a multi-edge graph. The graph was produced using the following code from the docstring of `sage.graphs.graph.GenericGraph.plot`:\n\n```\nsage: g = Graph({}, loops=True, multiedges=True)\nsage: g.add_edges([(0,0,'a'),(0,0,'b'),(0,1,'c'),(0,1,'d'), \n...     (0,1,'e'),(0,1,'f'),(0,1,'f'),(2,1,'g'),(2,2,'h')]) \nsage: g.plot(edge_labels=True, color_by_label=True, edge_style='dashed')\n```\n\nI uploaded the image here, so it can be referred to in the release tour of 3.3.",
+    "body": "Uploaded an image of a sample plot of a multi-edge graph. The graph was produced using the following code from the docstring of `sage.graphs.graph.GenericGraph.plot`:\n\n```\nsage: g = Graph({}, loops=True, multiedges=True)\nsage: g.add_edges([(0,0,'a'),(0,0,'b'),(0,1,'c'),(0,1,'d'), \n...     (0,1,'e'),(0,1,'f'),(0,1,'f'),(2,1,'g'),(2,2,'h')]) \nsage: g.plot(edge_labels=True, color_by_label=True, edge_style='dashed')\n```\nI uploaded the image here, so it can be referred to in the release tour of 3.3.",
     "created_at": "2009-02-20T03:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3541",
     "type": "issue_comment",
@@ -508,5 +507,4 @@ sage: g.add_edges([(0,0,'a'),(0,0,'b'),(0,1,'c'),(0,1,'d'),
 ...     (0,1,'e'),(0,1,'f'),(0,1,'f'),(2,1,'g'),(2,2,'h')]) 
 sage: g.plot(edge_labels=True, color_by_label=True, edge_style='dashed')
 ```
-
 I uploaded the image here, so it can be referred to in the release tour of 3.3.

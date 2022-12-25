@@ -3,7 +3,7 @@
 archive/issues_003371.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\nUniformi Z er\n\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\n\nversus Uniformi S er\n\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
+    "body": "Assignee: @malb\n\n\nUniformi Z er\n\n```\nsage : A = Zp(7,10)\nsage : B.<t> = A.ext(x^2+7)\nsage : B.uniformizer()\nt + O(t^21)\n```\n\nversus Uniformi S er\n\n```\nsage : B.uniformiser()\n6*t^2 + t^4 + O(t^22)\n```\n\nwhich is NOT a uniformiser.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3371\n\n",
     "created_at": "2008-06-05T14:01:32Z",
     "labels": [
         "component: commutative algebra",
@@ -21,7 +21,6 @@ Assignee: @malb
 
 Uniformi Z er
 
-
 ```
 sage : A = Zp(7,10)
 sage : B.<t> = A.ext(x^2+7)
@@ -29,15 +28,12 @@ sage : B.uniformizer()
 t + O(t^21)
 ```
 
-
 versus Uniformi S er
-
 
 ```
 sage : B.uniformiser()
 6*t^2 + t^4 + O(t^22)
 ```
-
 
 which is NOT a uniformiser.
 

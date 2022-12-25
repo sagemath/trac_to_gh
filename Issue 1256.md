@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1256
 archive/issue_comments_007829.json:
 ```json
 {
-    "body": "I am taking care of this. The following things need to be done:\n\n```\n[18:17] <was_> Definitely the solution is to (1) remove the mwrank*spkg.\n[18:17] <was_> (2) copy over the mwrank executable which gets build as part of cremona*.spkg\n[18:17] <was_> (3) Change things in setup.py so that all the prober mwrank-related libraries are linked in (it's maybe 4 libraries now instead of 1)\n```\n\n\nCheers,\n\nMichael",
+    "body": "I am taking care of this. The following things need to be done:\n\n```\n[18:17] <was_> Definitely the solution is to (1) remove the mwrank*spkg.\n[18:17] <was_> (2) copy over the mwrank executable which gets build as part of cremona*.spkg\n[18:17] <was_> (3) Change things in setup.py so that all the prober mwrank-related libraries are linked in (it's maybe 4 libraries now instead of 1)\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-05T19:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
@@ -50,7 +50,6 @@ I am taking care of this. The following things need to be done:
 [18:17] <was_> (2) copy over the mwrank executable which gets build as part of cremona*.spkg
 [18:17] <was_> (3) Change things in setup.py so that all the prober mwrank-related libraries are linked in (it's maybe 4 libraries now instead of 1)
 ```
-
 
 Cheers,
 

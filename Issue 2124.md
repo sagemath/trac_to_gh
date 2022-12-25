@@ -3,7 +3,7 @@
 archive/issues_002124.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nf.root_field() currently does is_IntegralDomain(f.parent()) instead of f.parent().is_integral_domain(), which is bad. The attached patch fixes it.\n\nBefore:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/Users/craigcitro/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.root_field()\n\n<type 'exceptions.ValueError'>: the base ring must be a domain\n\nsage: h.base_ring()\n Ring of integers modulo 31\n```\n\n\nAfter:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n Ring of integers modulo 31\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2124\n\n",
+    "body": "Assignee: @craigcitro\n\nf.root_field() currently does is_IntegralDomain(f.parent()) instead of f.parent().is_integral_domain(), which is bad. The attached patch fixes it.\n\nBefore:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/Users/craigcitro/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.root_field()\n\n<type 'exceptions.ValueError'>: the base ring must be a domain\n\nsage: h.base_ring()\n Ring of integers modulo 31\n```\n\nAfter:\n\n```\nsage: R.<x> = PolynomialRing(Integers(31))\n\nsage: h = x+5\n\nsage: h.root_field('a')\n Ring of integers modulo 31\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2124\n\n",
     "created_at": "2008-02-09T05:15:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -42,7 +42,6 @@ sage: h.base_ring()
  Ring of integers modulo 31
 ```
 
-
 After:
 
 ```
@@ -53,7 +52,6 @@ sage: h = x+5
 sage: h.root_field('a')
  Ring of integers modulo 31
 ```
-
 
 
 

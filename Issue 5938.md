@@ -3,7 +3,7 @@
 archive/issues_005938.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nWant to see some truly hideous plotting output?  Try this:\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFix?  make it so the edges aren't cropped wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
+    "body": "Assignee: @rlmill\n\nWant to see some truly hideous plotting output?  Try this:\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFix?  make it so the edges aren't cropped wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
     "created_at": "2009-04-29T16:11:45Z",
     "labels": [
         "component: graph theory",
@@ -20,7 +20,6 @@ Assignee: @rlmill
 
 Want to see some truly hideous plotting output?  Try this:
 
-
 ```
 Q = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)
 
@@ -28,7 +27,6 @@ v = Q.get_graphs_list(); v
 
 graphics_array([g.plot() for g in v], 3, len(v)//3).show()
 ```
-
 
 I guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5938
 archive/issue_comments_046852.json:
 ```json
 {
-    "body": "Even this (following the above example), results in hideous mis-cropped plots, and it doesn't use graphics array at all:\n\n```\nfor g in v[:5]:\n    show(g,figsize=2)\n```\n",
+    "body": "Even this (following the above example), results in hideous mis-cropped plots, and it doesn't use graphics array at all:\n\n```\nfor g in v[:5]:\n    show(g,figsize=2)\n```",
     "created_at": "2009-04-29T16:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
@@ -63,13 +61,12 @@ for g in v[:5]:
 
 
 
-
 ---
 
 archive/issue_comments_046853.json:
 ```json
 {
-    "body": "And even this results in bits being chopped off that shouldn't be!\n\n```\nfor g in v[:5]:\n    show(g)\n```\n",
+    "body": "And even this results in bits being chopped off that shouldn't be!\n\n```\nfor g in v[:5]:\n    show(g)\n```",
     "created_at": "2009-04-29T16:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
@@ -84,7 +81,6 @@ And even this results in bits being chopped off that shouldn't be!
 for g in v[:5]:
     show(g)
 ```
-
 
 
 
@@ -129,7 +125,7 @@ See http://groups.google.com/group/sage-support/browse_thread/thread/274d540f783
 archive/issue_comments_046856.json:
 ```json
 {
-    "body": "<vent>\nTHIS SUCKS!!!!!!!!!!!\n\nI can't believe how annoying it is that plotting graphs is still so totally and completely broken.  It is really, really horrible.  I don't know how anybody can stand this. \n\nFrickin' a.   Every single graph plot I try has the borders chopped off.  E.g.,\n\n\n```\nsage: Q = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'], num_edges=['<=',5],min_degree=1)\nsage: Q.show(with_picture=True)\n[[hideous pain]]\n```\n",
+    "body": "<vent>\nTHIS SUCKS!!!!!!!!!!!\n\nI can't believe how annoying it is that plotting graphs is still so totally and completely broken.  It is really, really horrible.  I don't know how anybody can stand this. \n\nFrickin' a.   Every single graph plot I try has the borders chopped off.  E.g.,\n\n```\nsage: Q = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'], num_edges=['<=',5],min_degree=1)\nsage: Q.show(with_picture=True)\n[[hideous pain]]\n```",
     "created_at": "2010-08-10T00:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
@@ -145,13 +141,11 @@ I can't believe how annoying it is that plotting graphs is still so totally and 
 
 Frickin' a.   Every single graph plot I try has the borders chopped off.  E.g.,
 
-
 ```
 sage: Q = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'], num_edges=['<=',5],min_degree=1)
 sage: Q.show(with_picture=True)
 [[hideous pain]]
 ```
-
 
 
 

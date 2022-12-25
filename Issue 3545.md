@@ -50,7 +50,7 @@ Attachment [trac3545-vtx-trans.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_025030.json:
 ```json
 {
-    "body": "On Thu, Jul 3, 2008 at 10:59 AM,  <boothby`@`u.washington.edu> wrote:\n> See #3544.  It would be nice if I could test G.is_vertex_transitive() -- and\n> get the right answer.  Moreover, it would be nice if this was done in nice.\n\nA Bokononist, when he realizes the intense amount of interconnectedness of everything, is supposed to utter \"Nice, nice, very nice.\" Although vertex transitive doesn't imply connected. My the mysteries of the universe!",
+    "body": "On Thu, Jul 3, 2008 at 10:59 AM,  <boothby`@`u.washington.edu> wrote:\n> See #3544.  It would be nice if I could test G.is_vertex_transitive() -- and\n> get the right answer.  Moreover, it would be nice if this was done in nice.\n\n\nA Bokononist, when he realizes the intense amount of interconnectedness of everything, is supposed to utter \"Nice, nice, very nice.\" Although vertex transitive doesn't imply connected. My the mysteries of the universe!",
     "created_at": "2008-07-03T19:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3545",
     "type": "issue_comment",
@@ -62,6 +62,7 @@ archive/issue_comments_025030.json:
 On Thu, Jul 3, 2008 at 10:59 AM,  <boothby`@`u.washington.edu> wrote:
 > See #3544.  It would be nice if I could test G.is_vertex_transitive() -- and
 > get the right answer.  Moreover, it would be nice if this was done in nice.
+
 
 A Bokononist, when he realizes the intense amount of interconnectedness of everything, is supposed to utter "Nice, nice, very nice." Although vertex transitive doesn't imply connected. My the mysteries of the universe!
 

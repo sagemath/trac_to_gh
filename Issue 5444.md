@@ -3,7 +3,7 @@
 archive/issues_005444.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
+    "body": "Assignee: @robertwb\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
     "created_at": "2009-03-05T19:58:26Z",
     "labels": [
         "component: user interface",
@@ -18,7 +18,6 @@ archive/issues_005444.json:
 ```
 Assignee: @robertwb
 
-
 ```
    sage: [(1.0)..(2.0)]
    [1.00000000000000, 2.00000000000000]
@@ -28,7 +27,6 @@ Assignee: @robertwb
                                                                      ^
 SyntaxError: invalid syntax
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5444
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5444
 archive/issue_comments_042011.json:
 ```json
 {
-    "body": "This has been resolved, probably while cleaning up the preparser code. \n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [1.0..2.0]\n [1.00000000000000, 2.00000000000000]\n\n```\n",
+    "body": "This has been resolved, probably while cleaning up the preparser code. \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [1.0..2.0]\n [1.00000000000000, 2.00000000000000]\n\n```",
     "created_at": "2009-05-18T21:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
@@ -52,7 +50,6 @@ archive/issue_comments_042011.json:
 
 This has been resolved, probably while cleaning up the preparser code. 
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -62,7 +59,6 @@ sage: [1.0..2.0]
  [1.00000000000000, 2.00000000000000]
 
 ```
-
 
 
 

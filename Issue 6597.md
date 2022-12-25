@@ -108,7 +108,7 @@ Note it takes awhile to build everything.
 archive/issue_comments_053912.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> Looks good to me.  All tests pass with it once #6343 is applied to Sage 4.1.1.\n\nThanks Mike for the review!\n\n> Note it takes awhile to build everything.\n\nYeah, I had to modify the .pxd of Map (or Morphism) to get pickling to work.\n\nI am glad this will be soon in so that we don't have this patch anymore in Sage-Combinat.",
+    "body": "Replying to [comment:3 mhansen]:\n> Looks good to me.  All tests pass with it once #6343 is applied to Sage 4.1.1.\n\n\nThanks Mike for the review!\n\n> Note it takes awhile to build everything.\n\n\nYeah, I had to modify the .pxd of Map (or Morphism) to get pickling to work.\n\nI am glad this will be soon in so that we don't have this patch anymore in Sage-Combinat.",
     "created_at": "2009-09-08T20:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
@@ -120,9 +120,11 @@ archive/issue_comments_053912.json:
 Replying to [comment:3 mhansen]:
 > Looks good to me.  All tests pass with it once #6343 is applied to Sage 4.1.1.
 
+
 Thanks Mike for the review!
 
 > Note it takes awhile to build everything.
+
 
 Yeah, I had to modify the .pxd of Map (or Morphism) to get pickling to work.
 

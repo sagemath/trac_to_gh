@@ -49,7 +49,7 @@ Attachment [trac_6363_notebook_version.patch](tarball://root/attachments/some-uu
 archive/issue_comments_050812.json:
 ```json
 {
-    "body": "The patch displays the Sage version on the notebook login page, e.g.,\n\n```\nSign into the Sage Notebook v4.0.2\n```\n\nin place of\n\n```\nSign into the Sage Notebook\n```\n",
+    "body": "The patch displays the Sage version on the notebook login page, e.g.,\n\n```\nSign into the Sage Notebook v4.0.2\n```\nin place of\n\n```\nSign into the Sage Notebook\n```",
     "created_at": "2009-06-20T12:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6363",
     "type": "issue_comment",
@@ -63,13 +63,11 @@ The patch displays the Sage version on the notebook login page, e.g.,
 ```
 Sign into the Sage Notebook v4.0.2
 ```
-
 in place of
 
 ```
 Sign into the Sage Notebook
 ```
-
 
 
 

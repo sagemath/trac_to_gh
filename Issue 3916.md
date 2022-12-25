@@ -242,7 +242,7 @@ i'd like to be able to write the in-between text in markdown, run it through sag
 archive/issue_comments_027965.json:
 ```json
 {
-    "body": "Replying to [comment:9 edrex]:\n> wait, how do text cells enable me to use markdown syntax?\n> \n> i'd like to be able to write the in-between text in markdown, run it through sage and markdown, and get a nicely-formatted html page. How could this be accomplished? \n\nI agree-- text cells are nice, but I don't want to spend half my day pointing-and-click around to get something formatted.  Markdown allows you to format without breaking the flow of writing.",
+    "body": "Replying to [comment:9 edrex]:\n> wait, how do text cells enable me to use markdown syntax?\n> \n> i'd like to be able to write the in-between text in markdown, run it through sage and markdown, and get a nicely-formatted html page. How could this be accomplished? \n\n\nI agree-- text cells are nice, but I don't want to spend half my day pointing-and-click around to get something formatted.  Markdown allows you to format without breaking the flow of writing.",
     "created_at": "2010-02-16T01:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
@@ -255,5 +255,6 @@ Replying to [comment:9 edrex]:
 > wait, how do text cells enable me to use markdown syntax?
 > 
 > i'd like to be able to write the in-between text in markdown, run it through sage and markdown, and get a nicely-formatted html page. How could this be accomplished? 
+
 
 I agree-- text cells are nice, but I don't want to spend half my day pointing-and-click around to get something formatted.  Markdown allows you to format without breaking the flow of writing.

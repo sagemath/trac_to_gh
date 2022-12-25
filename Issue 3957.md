@@ -3,7 +3,7 @@
 archive/issues_003957.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\n\nOn Tue, Aug 26, 2008 at 4:53 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear all,\n>\n> Is there a way of saving and automatically re-loading plots generated\n> in a notebook when I re-open the notebook?\n\nThis is *not* by design, and wasn't the case until very recently.  It's a\nbug in the notebook that was introduced very recently.  \n\n>\n> Currently, when I close and re-open a notebook, all previously\n> displayed plots are gone and even Action... -> Evaluate All does not\n> bring them back. I have to keep pressing Shift+Return to see the plots\n> again, which is very time consuming. I already figured out that the\n> combination of save_session and load_session allows me to re-create\n> most of my variables and save a lot of computation time, but it still\n> does not bring back the plots.\n>\n> Thanks for  your help!\n>\n> Stan\n>\n> PS: sage 3.1.1 on Mac OS 10.4.11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3957\n\n",
+    "body": "Assignee: boothby\n\n```\n\n\nOn Tue, Aug 26, 2008 at 4:53 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear all,\n>\n> Is there a way of saving and automatically re-loading plots generated\n> in a notebook when I re-open the notebook?\n\nThis is *not* by design, and wasn't the case until very recently.  It's a\nbug in the notebook that was introduced very recently.  \n\n>\n> Currently, when I close and re-open a notebook, all previously\n> displayed plots are gone and even Action... -> Evaluate All does not\n> bring them back. I have to keep pressing Shift+Return to see the plots\n> again, which is very time consuming. I already figured out that the\n> combination of save_session and load_session allows me to re-create\n> most of my variables and save a lot of computation time, but it still\n> does not bring back the plots.\n>\n> Thanks for  your help!\n>\n> Stan\n>\n> PS: sage 3.1.1 on Mac OS 10.4.11\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3957\n\n",
     "created_at": "2008-08-26T15:50:26Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_003957.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -47,7 +46,6 @@ bug in the notebook that was introduced very recently.
 >
 > PS: sage 3.1.1 on Mac OS 10.4.11
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3957
 

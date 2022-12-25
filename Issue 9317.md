@@ -133,7 +133,7 @@ Note:  this patch was written by some of the students at Sage Days 22, and the i
 archive/issue_comments_087666.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> Reply to mhansen:   The capital S is standard mathematical notation.  This also matches the functions sage.rings.rational.Rational.is_S_integral and sage.rings.rational.Rational.is_S_unit (which I wrote so this is not an independent test!)\n\nOn the other hand, we don't capitalize things like Eulerian in `is_eulerian`.  Whatever is decided, it should be consistent :-)",
+    "body": "Replying to [comment:3 cremona]:\n> Reply to mhansen:   The capital S is standard mathematical notation.  This also matches the functions sage.rings.rational.Rational.is_S_integral and sage.rings.rational.Rational.is_S_unit (which I wrote so this is not an independent test!)\n\n\nOn the other hand, we don't capitalize things like Eulerian in `is_eulerian`.  Whatever is decided, it should be consistent :-)",
     "created_at": "2010-06-23T07:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9317",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ archive/issue_comments_087666.json:
 
 Replying to [comment:3 cremona]:
 > Reply to mhansen:   The capital S is standard mathematical notation.  This also matches the functions sage.rings.rational.Rational.is_S_integral and sage.rings.rational.Rational.is_S_unit (which I wrote so this is not an independent test!)
+
 
 On the other hand, we don't capitalize things like Eulerian in `is_eulerian`.  Whatever is decided, it should be consistent :-)
 

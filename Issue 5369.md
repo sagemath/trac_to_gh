@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5369
 archive/issue_comments_041272.json:
 ```json
 {
-    "body": "Attachment [trac-5369-transpose-gmp-matrix.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.patch) by ylchapuy created at 2009-02-25 10:08:48\n\nI did only one ticket for both as they are both gmp based.\n\nI mostly copied the logic used in the __copy__ function (by the way I also simplified the __copy__ function in matrix_rational_dense.pyx)\n\ntimings (wall time) for\n\n```\nm=identity_matrix(3000);\ntime m2=m.transpose(); m3=m.antitranspose();\n```\n\n* sage 3-3: 15.44\n* with #5345: 3.38\n* with this patch: 2.01",
+    "body": "Attachment [trac-5369-transpose-gmp-matrix.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.patch) by ylchapuy created at 2009-02-25 10:08:48\n\nI did only one ticket for both as they are both gmp based.\n\nI mostly copied the logic used in the __copy__ function (by the way I also simplified the __copy__ function in matrix_rational_dense.pyx)\n\ntimings (wall time) for\n\n```\nm=identity_matrix(3000);\ntime m2=m.transpose(); m3=m.antitranspose();\n```\n* sage 3-3: 15.44\n* with #5345: 3.38\n* with this patch: 2.01",
     "created_at": "2009-02-25T10:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5369",
     "type": "issue_comment",
@@ -55,7 +55,6 @@ timings (wall time) for
 m=identity_matrix(3000);
 time m2=m.transpose(); m3=m.antitranspose();
 ```
-
 * sage 3-3: 15.44
 * with #5345: 3.38
 * with this patch: 2.01

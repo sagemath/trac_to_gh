@@ -3,7 +3,7 @@
 archive/issues_006582.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  alexanderdreyer polybori david.kirkby@onetel.net\n\nI believe there is an issue which *may* affect Solaris with polybori 0.5rc.p8, and assuming my patch to .p9 gets positive review, will affect that too, as I have not tried to fix this. \n\nHere are some notes I put in patches/custom.py\n\n\n\n```\n# Note, these 'SAGE_DEBUG' linker flags added by someone\n# are likely to break if used on Solaris\n# with the Sun linker, as -p option to the Sun linker is:\n#         [-p auditlib]   identify audit library to accompany this object\n# This has not been confirmed, and I don't have time to test it.\n# David Kirkby, 21st July 2009. I suggest this is revisited by someone soon.\nif os.environ.has_key('SAGE_DEBUG'):\n    CPPDEFINES=[]\n    CCFLAGS=[\" -pg\"] + CCFLAGS\n    CXXFLAGS=[\" -pg\"] + CXXFLAGS\n    LINKFLAGS=[\" -pg\"]\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6582\n\n",
+    "body": "Assignee: tbd\n\nCC:  alexanderdreyer polybori david.kirkby@onetel.net\n\nI believe there is an issue which *may* affect Solaris with polybori 0.5rc.p8, and assuming my patch to .p9 gets positive review, will affect that too, as I have not tried to fix this. \n\nHere are some notes I put in patches/custom.py\n\n\n```\n# Note, these 'SAGE_DEBUG' linker flags added by someone\n# are likely to break if used on Solaris\n# with the Sun linker, as -p option to the Sun linker is:\n#         [-p auditlib]   identify audit library to accompany this object\n# This has not been confirmed, and I don't have time to test it.\n# David Kirkby, 21st July 2009. I suggest this is revisited by someone soon.\nif os.environ.has_key('SAGE_DEBUG'):\n    CPPDEFINES=[]\n    CCFLAGS=[\" -pg\"] + CCFLAGS\n    CXXFLAGS=[\" -pg\"] + CXXFLAGS\n    LINKFLAGS=[\" -pg\"]\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6582\n\n",
     "created_at": "2009-07-21T18:55:35Z",
     "labels": [
         "component: porting: solaris",
@@ -26,7 +26,6 @@ I believe there is an issue which *may* affect Solaris with polybori 0.5rc.p8, a
 Here are some notes I put in patches/custom.py
 
 
-
 ```
 # Note, these 'SAGE_DEBUG' linker flags added by someone
 # are likely to break if used on Solaris
@@ -42,7 +41,6 @@ if os.environ.has_key('SAGE_DEBUG'):
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6582
 
@@ -216,7 +214,7 @@ archive/issue_events_015523.json:
 archive/issue_comments_053668.json:
 ```json
 {
-    "body": "Replying to [comment:7 jdemeyer]:\n> In such cases, you should set the milestone to \"sage-duplicate/invalid/wontfix\".\nThanks, I'll do so next time.",
+    "body": "Replying to [comment:7 jdemeyer]:\n> In such cases, you should set the milestone to \"sage-duplicate/invalid/wontfix\".\n\nThanks, I'll do so next time.",
     "created_at": "2012-06-25T09:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6582",
     "type": "issue_comment",
@@ -227,6 +225,7 @@ archive/issue_comments_053668.json:
 
 Replying to [comment:7 jdemeyer]:
 > In such cases, you should set the milestone to "sage-duplicate/invalid/wontfix".
+
 Thanks, I'll do so next time.
 
 

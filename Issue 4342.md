@@ -143,7 +143,7 @@ Attachment [trac_4342-2.patch](tarball://root/attachments/some-uuid/ticket4342/t
 archive/issue_comments_031795.json:
 ```json
 {
-    "body": "For the patch **trac_4342.patch**, here are possible fixes to your documentation:\n\n\n\n1.\n\n```\n-denoting a color or an rgb tuple. The string can be a color name\n+denoting a color or an RGB tuple. The string can be a color name\n```\n\n2.\n\n```\n-If called with no input return the current legend setting.\n+If called with no input, return the current legend setting.\n```\n\n3.\n\n```\n-Sets the legend label font\n+Sets the legend label font.\n```\n\n4.\n\n```\n-form is just a floating point rgb tuple with all values ranging\n+form is just a floating point RGB tuple with all values ranging\n```\n",
+    "body": "For the patch **trac_4342.patch**, here are possible fixes to your documentation:\n\n\n\n1.\n\n```\n-denoting a color or an rgb tuple. The string can be a color name\n+denoting a color or an RGB tuple. The string can be a color name\n```\n2.\n\n```\n-If called with no input return the current legend setting.\n+If called with no input, return the current legend setting.\n```\n3.\n\n```\n-Sets the legend label font\n+Sets the legend label font.\n```\n4.\n\n```\n-form is just a floating point rgb tuple with all values ranging\n+form is just a floating point RGB tuple with all values ranging\n```",
     "created_at": "2008-10-27T12:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -162,28 +162,24 @@ For the patch **trac_4342.patch**, here are possible fixes to your documentation
 -denoting a color or an rgb tuple. The string can be a color name
 +denoting a color or an RGB tuple. The string can be a color name
 ```
-
 2.
 
 ```
 -If called with no input return the current legend setting.
 +If called with no input, return the current legend setting.
 ```
-
 3.
 
 ```
 -Sets the legend label font
 +Sets the legend label font.
 ```
-
 4.
 
 ```
 -form is just a floating point rgb tuple with all values ranging
 +form is just a floating point RGB tuple with all values ranging
 ```
-
 
 
 
@@ -212,7 +208,7 @@ mvngu's doc fixes
 archive/issue_comments_031797.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> For the patch **trac_4342.patch**, here are possible fixes to your documentation:\n> \n\n\n> 1.\n> {{{\n> -denoting a color or an rgb tuple. The string can be a color name\n> +denoting a color or an RGB tuple. The string can be a color name\n> }}}\n> 2.\n> {{{\n> -If called with no input return the current legend setting.\n> +If called with no input, return the current legend setting.\n> }}}\n> 3.\n> {{{\n> -Sets the legend label font\n> +Sets the legend label font.\n> }}}\n> 4.\n> {{{\n> -form is just a floating point rgb tuple with all values ranging\n> +form is just a floating point RGB tuple with all values ranging\n> }}}\n\nI uploaded a patch with these fixes. \n\nMvngu, in the future please upload patches with your doc fixes. Thanks :)",
+    "body": "Replying to [comment:3 mvngu]:\n> For the patch **trac_4342.patch**, here are possible fixes to your documentation:\n> \n\n\n\n> 1.\n> \n> ```\n> -denoting a color or an rgb tuple. The string can be a color name\n> +denoting a color or an RGB tuple. The string can be a color name\n> ```\n> 2.\n> \n> ```\n> -If called with no input return the current legend setting.\n> +If called with no input, return the current legend setting.\n> ```\n> 3.\n> \n> ```\n> -Sets the legend label font\n> +Sets the legend label font.\n> ```\n> 4.\n> \n> ```\n> -form is just a floating point rgb tuple with all values ranging\n> +form is just a floating point RGB tuple with all values ranging\n> ```\n\n\nI uploaded a patch with these fixes. \n\nMvngu, in the future please upload patches with your doc fixes. Thanks :)",
     "created_at": "2008-11-09T23:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -226,26 +222,32 @@ Replying to [comment:3 mvngu]:
 > 
 
 
+
 > 1.
-> {{{
+> 
+> ```
 > -denoting a color or an rgb tuple. The string can be a color name
 > +denoting a color or an RGB tuple. The string can be a color name
-> }}}
+> ```
 > 2.
-> {{{
+> 
+> ```
 > -If called with no input return the current legend setting.
 > +If called with no input, return the current legend setting.
-> }}}
+> ```
 > 3.
-> {{{
+> 
+> ```
 > -Sets the legend label font
 > +Sets the legend label font.
-> }}}
+> ```
 > 4.
-> {{{
+> 
+> ```
 > -form is just a floating point rgb tuple with all values ranging
 > +form is just a floating point RGB tuple with all values ranging
-> }}}
+> ```
+
 
 I uploaded a patch with these fixes. 
 
@@ -298,7 +300,7 @@ what's the status on this?  Mike, did you have time to look at it?
 archive/issue_comments_031800.json:
 ```json
 {
-    "body": "The good news is that Mike Hansen's patch does apply cleanly to 3.2.2.\n\nThe bad news is that this patch breaks some basic functionality:\n\n\n```\nsage: p = plot(tan(x), x, -1/2, 1/2)\nsage: show(p)\n\n```\n\nraises a TypeError exception.\n\nThat is serious but more serious (to me - maybe this exception is \nan easy-to-fix bug) is the design of this legend functionality. \n\nIt seems to me (and people who know about the Graphics class can hopefully\ncorrect me if I am wrong) the following is both possible and a fairly \nnatural way of writing a legend as another graphics object:\n\n1. given 2d plot objects P, Q (ie, instances of a Graphics class),\none could wrote a function which returns \n(a) the functions being plotted in P,Q (resp), \n(b) the line style used in P,Q (resp).\nFrom this data, one can write a function taking P,Q (and a cnter point)\nas arguments (more generally any list of such plot objects) and returning\na legend as an analog of a text plot. This can be placed anywhere \nby choosing the center point appropriately.\n\nI'm happy to change my opinion (since IMHO this added functionality would be great),\nespecially if someone with more knowledge of the plotting can comment positively\non this. I really greatly appreciate the hard programming work that went into this.\nMaybe I'm being naive but the design to me seems a bit awkward, and in any case \nit breaks show (which is bad, hence making it a \"show stopper\", if you excuse \nthe horribly bad pun).",
+    "body": "The good news is that Mike Hansen's patch does apply cleanly to 3.2.2.\n\nThe bad news is that this patch breaks some basic functionality:\n\n```\nsage: p = plot(tan(x), x, -1/2, 1/2)\nsage: show(p)\n\n```\nraises a TypeError exception.\n\nThat is serious but more serious (to me - maybe this exception is \nan easy-to-fix bug) is the design of this legend functionality. \n\nIt seems to me (and people who know about the Graphics class can hopefully\ncorrect me if I am wrong) the following is both possible and a fairly \nnatural way of writing a legend as another graphics object:\n\n1. given 2d plot objects P, Q (ie, instances of a Graphics class),\none could wrote a function which returns \n(a) the functions being plotted in P,Q (resp), \n(b) the line style used in P,Q (resp).\nFrom this data, one can write a function taking P,Q (and a cnter point)\nas arguments (more generally any list of such plot objects) and returning\na legend as an analog of a text plot. This can be placed anywhere \nby choosing the center point appropriately.\n\nI'm happy to change my opinion (since IMHO this added functionality would be great),\nespecially if someone with more knowledge of the plotting can comment positively\non this. I really greatly appreciate the hard programming work that went into this.\nMaybe I'm being naive but the design to me seems a bit awkward, and in any case \nit breaks show (which is bad, hence making it a \"show stopper\", if you excuse \nthe horribly bad pun).",
     "created_at": "2008-12-30T03:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -311,13 +313,11 @@ The good news is that Mike Hansen's patch does apply cleanly to 3.2.2.
 
 The bad news is that this patch breaks some basic functionality:
 
-
 ```
 sage: p = plot(tan(x), x, -1/2, 1/2)
 sage: show(p)
 
 ```
-
 raises a TypeError exception.
 
 That is serious but more serious (to me - maybe this exception is 
@@ -454,7 +454,7 @@ You only need trac_4342_v3.2.patch.  Ignore all others.
 archive/issue_comments_031806.json:
 ```json
 {
-    "body": "Again, I am having trouble running tests, so I can't say if they all pass. The examples seem fine (if somewhat too few). Still, which this very clever bit of programmming, this block of commands\n\n\n```\nsage: P1 = plot(exp(x), 0, 2, legend_label='$y=e^x$')\nsage: P2 = plot(sin(x), 0, 2, rgbcolor=(1,0,0),legend_label='$y=\\sin(x)$')\nsage: show(P1+P2)\n```\n\n\nproduces a beautiful plot of two curves, one red and the other blue, and the legend labels are collected into a distinctive light grey box with the correct labels.\n\nWonderful!!",
+    "body": "Again, I am having trouble running tests, so I can't say if they all pass. The examples seem fine (if somewhat too few). Still, which this very clever bit of programmming, this block of commands\n\n```\nsage: P1 = plot(exp(x), 0, 2, legend_label='$y=e^x$')\nsage: P2 = plot(sin(x), 0, 2, rgbcolor=(1,0,0),legend_label='$y=\\sin(x)$')\nsage: show(P1+P2)\n```\n\nproduces a beautiful plot of two curves, one red and the other blue, and the legend labels are collected into a distinctive light grey box with the correct labels.\n\nWonderful!!",
     "created_at": "2008-12-31T20:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -465,13 +465,11 @@ archive/issue_comments_031806.json:
 
 Again, I am having trouble running tests, so I can't say if they all pass. The examples seem fine (if somewhat too few). Still, which this very clever bit of programmming, this block of commands
 
-
 ```
 sage: P1 = plot(exp(x), 0, 2, legend_label='$y=e^x$')
 sage: P2 = plot(sin(x), 0, 2, rgbcolor=(1,0,0),legend_label='$y=\sin(x)$')
 sage: show(P1+P2)
 ```
-
 
 produces a beautiful plot of two curves, one red and the other blue, and the legend labels are collected into a distinctive light grey box with the correct labels.
 
@@ -484,7 +482,7 @@ Wonderful!!
 archive/issue_comments_031807.json:
 ```json
 {
-    "body": "Hi Arnaud,\n\nafter applying #4878 and #4884 to my Sage 3.3.alpha0 merge tree I am seeing rejects with trac_4342_v3.2.patch:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_4342_v3.2.patch \npatching file sage/plot/arrow.py\npatching file sage/plot/bar_chart.py\npatching file sage/plot/circle.py\npatching file sage/plot/contour_plot.py\nHunk #1 succeeded at 54 with fuzz 2 (offset 1 line).\nHunk #2 succeeded at 73 (offset -13 lines).\nHunk #3 FAILED at 116.\nHunk #4 succeeded at 177 (offset -11 lines).\n1 out of 4 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\npatching file sage/plot/line.py\npatching file sage/plot/plot.py\nHunk #3 succeeded at 390 with fuzz 2.\nHunk #4 succeeded at 618 (offset 27 lines).\nHunk #5 succeeded at 726 (offset 27 lines).\nHunk #6 succeeded at 961 (offset 27 lines).\nHunk #7 succeeded at 982 (offset 27 lines).\nHunk #8 succeeded at 993 (offset 27 lines).\nHunk #9 succeeded at 1010 (offset 27 lines).\nHunk #10 succeeded at 1078 (offset 27 lines).\nHunk #11 succeeded at 1128 (offset 27 lines).\nHunk #12 succeeded at 1200 with fuzz 1 (offset 27 lines).\nHunk #13 succeeded at 1303 with fuzz 2 (offset 105 lines).\nHunk #14 succeeded at 1400 (offset 104 lines).\nHunk #15 succeeded at 1545 (offset 104 lines).\nHunk #16 succeeded at 1582 (offset 104 lines).\nHunk #17 succeeded at 1671 (offset 104 lines).\nHunk #18 succeeded at 1699 (offset 104 lines).\nHunk #19 succeeded at 1721 (offset 104 lines).\nHunk #20 succeeded at 1800 (offset 104 lines).\nHunk #21 succeeded at 1886 (offset 104 lines).\npatching file sage/plot/point.py\nHunk #1 FAILED at 1.\nHunk #2 succeeded at 24 (offset 9 lines).\nHunk #3 succeeded at 39 (offset 9 lines).\nHunk #4 succeeded at 106 (offset 9 lines).\nHunk #5 succeeded at 131 (offset 13 lines).\nHunk #6 succeeded at 140 (offset 13 lines).\n1 out of 6 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\npatching file sage/plot/primitive.py\n```\n\n\nCan you rebase the patch against 3.2.3+#4878 and #4884?\n\nCheers,\n\nMichael",
+    "body": "Hi Arnaud,\n\nafter applying #4878 and #4884 to my Sage 3.3.alpha0 merge tree I am seeing rejects with trac_4342_v3.2.patch:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_4342_v3.2.patch \npatching file sage/plot/arrow.py\npatching file sage/plot/bar_chart.py\npatching file sage/plot/circle.py\npatching file sage/plot/contour_plot.py\nHunk #1 succeeded at 54 with fuzz 2 (offset 1 line).\nHunk #2 succeeded at 73 (offset -13 lines).\nHunk #3 FAILED at 116.\nHunk #4 succeeded at 177 (offset -11 lines).\n1 out of 4 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\npatching file sage/plot/line.py\npatching file sage/plot/plot.py\nHunk #3 succeeded at 390 with fuzz 2.\nHunk #4 succeeded at 618 (offset 27 lines).\nHunk #5 succeeded at 726 (offset 27 lines).\nHunk #6 succeeded at 961 (offset 27 lines).\nHunk #7 succeeded at 982 (offset 27 lines).\nHunk #8 succeeded at 993 (offset 27 lines).\nHunk #9 succeeded at 1010 (offset 27 lines).\nHunk #10 succeeded at 1078 (offset 27 lines).\nHunk #11 succeeded at 1128 (offset 27 lines).\nHunk #12 succeeded at 1200 with fuzz 1 (offset 27 lines).\nHunk #13 succeeded at 1303 with fuzz 2 (offset 105 lines).\nHunk #14 succeeded at 1400 (offset 104 lines).\nHunk #15 succeeded at 1545 (offset 104 lines).\nHunk #16 succeeded at 1582 (offset 104 lines).\nHunk #17 succeeded at 1671 (offset 104 lines).\nHunk #18 succeeded at 1699 (offset 104 lines).\nHunk #19 succeeded at 1721 (offset 104 lines).\nHunk #20 succeeded at 1800 (offset 104 lines).\nHunk #21 succeeded at 1886 (offset 104 lines).\npatching file sage/plot/point.py\nHunk #1 FAILED at 1.\nHunk #2 succeeded at 24 (offset 9 lines).\nHunk #3 succeeded at 39 (offset 9 lines).\nHunk #4 succeeded at 106 (offset 9 lines).\nHunk #5 succeeded at 131 (offset 13 lines).\nHunk #6 succeeded at 140 (offset 13 lines).\n1 out of 6 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\npatching file sage/plot/primitive.py\n```\n\nCan you rebase the patch against 3.2.3+#4878 and #4884?\n\nCheers,\n\nMichael",
     "created_at": "2009-01-12T01:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -541,7 +539,6 @@ Hunk #6 succeeded at 140 (offset 13 lines).
 patching file sage/plot/polygon.py
 patching file sage/plot/primitive.py
 ```
-
 
 Can you rebase the patch against 3.2.3+#4878 and #4884?
 
@@ -635,7 +632,7 @@ Rebase is done, and I changed the milestone since it can be merged now.  Sorry f
 archive/issue_comments_031811.json:
 ```json
 {
-    "body": "The last patch causes the following doctest failure in my 3.3.alpha2 merge tree:\n\n```\nsage -t -long \"devel/sage/sage/plot/contour_plot.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/plot/contour_plot.py\", line 237:\n    sage: region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        region_plot(cos(x**Integer(2)+y**Integer(2)) <= Integer(0), (-Integer(3), Integer(3)), (-Integer(3), Integer(3)))###line 237:\n    sage: region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3))\n      File \"sage_object.pyx\", line 92, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1082)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 822, in _repr_\n        self.show()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 273, in wrapper\n        return func(*args, **kwds)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1184, in show\n        hgridlinesstyle=hgridlinesstyle)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 273, in wrapper\n        return func(*args, **kwds)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1402, in save\n        g._render_on_subplot(subplot)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/contour_plot.py\", line 80, in _render_on_subplot\n        subplot.contourf(self.xy_data_array, contours, cmap=cmap, extent=(x0,x1,y0,y1), label=options['legend_label'])\n    KeyError: 'legend_label'\n**********************************************************************\n<SNIP>\n```\n\n\nCheers,\n\nMichael",
+    "body": "The last patch causes the following doctest failure in my 3.3.alpha2 merge tree:\n\n```\nsage -t -long \"devel/sage/sage/plot/contour_plot.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/plot/contour_plot.py\", line 237:\n    sage: region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        region_plot(cos(x**Integer(2)+y**Integer(2)) <= Integer(0), (-Integer(3), Integer(3)), (-Integer(3), Integer(3)))###line 237:\n    sage: region_plot(cos(x^2+y^2) <= 0, (-3, 3), (-3, 3))\n      File \"sage_object.pyx\", line 92, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1082)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 822, in _repr_\n        self.show()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 273, in wrapper\n        return func(*args, **kwds)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1184, in show\n        hgridlinesstyle=hgridlinesstyle)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/misc.py\", line 273, in wrapper\n        return func(*args, **kwds)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1402, in save\n        g._render_on_subplot(subplot)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/plot/contour_plot.py\", line 80, in _render_on_subplot\n        subplot.contourf(self.xy_data_array, contours, cmap=cmap, extent=(x0,x1,y0,y1), label=options['legend_label'])\n    KeyError: 'legend_label'\n**********************************************************************\n<SNIP>\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -679,7 +676,6 @@ Exception raised:
 **********************************************************************
 <SNIP>
 ```
-
 
 Cheers,
 
@@ -768,7 +764,7 @@ Sure, I'll take a peek, though I have a bowl game to watch that may take priorit
 archive/issue_comments_031816.json:
 ```json
 {
-    "body": "Just for info:\n\n```\npatching file sage/plot/arrow.py\nHunk #1 FAILED at 71\nHunk #2 FAILED at 136\nHunk #3 FAILED at 150\nHunk #4 FAILED at 170\nHunk #5 FAILED at 177\n5 out of 5 hunks FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\nHunk #1 FAILED at 55\nHunk #2 FAILED at 92\nHunk #3 FAILED at 109\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/bar_chart.py.rej\npatching file sage/plot/circle.py\nHunk #1 FAILED at 46\nHunk #2 FAILED at 65\nHunk #3 FAILED at 89\nHunk #4 FAILED at 103\nHunk #5 FAILED at 127\n5 out of 5 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 FAILED at 53\nHunk #2 FAILED at 71\nHunk #3 FAILED at 116\nHunk #4 FAILED at 174\n4 out of 4 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\nHunk #1 FAILED at 52\nHunk #2 FAILED at 74\nHunk #3 FAILED at 98\n3 out of 3 hunks FAILED -- saving rejects to file sage/plot/disk.py.rej\npatching file sage/plot/line.py\nHunk #2 FAILED at 62\nHunk #4 FAILED at 218\nHunk #5 FAILED at 246\nHunk #6 FAILED at 320\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/line.py.rej\npatching file sage/plot/plot.py\nHunk #1 FAILED at 267\nHunk #2 succeeded at 433 with fuzz 2 (offset 99 lines).\nHunk #5 succeeded at 900 with fuzz 1 (offset 172 lines).\nHunk #6 FAILED at 960\nHunk #7 FAILED at 977\nHunk #8 FAILED at 987\nHunk #9 FAILED at 1004\nHunk #10 FAILED at 1071\nHunk #11 FAILED at 1119\nHunk #12 FAILED at 1191\nHunk #13 FAILED at 1292\nHunk #14 FAILED at 1388\nHunk #15 FAILED at 1513\nHunk #16 FAILED at 1549\nHunk #17 FAILED at 1637\nHunk #18 FAILED at 1665\nHunk #19 FAILED at 1684\nHunk #20 FAILED at 1769\nHunk #21 FAILED at 1854\n17 out of 21 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #2 FAILED at 23\nHunk #3 succeeded at 91 with fuzz 2 (offset 51 lines).\nHunk #4 FAILED at 104\nHunk #5 FAILED at 129\nHunk #6 FAILED at 138\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\nHunk #1 FAILED at 43\nHunk #2 FAILED at 74\nHunk #3 FAILED at 90\nHunk #4 succeeded at 341 with fuzz 2 (offset 194 lines).\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/polygon.py.rej\npatching file sage/plot/primitive.py\nHunk #1 FAILED at 73\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/primitive.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Just for info:\n\n```\npatching file sage/plot/arrow.py\nHunk #1 FAILED at 71\nHunk #2 FAILED at 136\nHunk #3 FAILED at 150\nHunk #4 FAILED at 170\nHunk #5 FAILED at 177\n5 out of 5 hunks FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\nHunk #1 FAILED at 55\nHunk #2 FAILED at 92\nHunk #3 FAILED at 109\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/bar_chart.py.rej\npatching file sage/plot/circle.py\nHunk #1 FAILED at 46\nHunk #2 FAILED at 65\nHunk #3 FAILED at 89\nHunk #4 FAILED at 103\nHunk #5 FAILED at 127\n5 out of 5 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 FAILED at 53\nHunk #2 FAILED at 71\nHunk #3 FAILED at 116\nHunk #4 FAILED at 174\n4 out of 4 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\nHunk #1 FAILED at 52\nHunk #2 FAILED at 74\nHunk #3 FAILED at 98\n3 out of 3 hunks FAILED -- saving rejects to file sage/plot/disk.py.rej\npatching file sage/plot/line.py\nHunk #2 FAILED at 62\nHunk #4 FAILED at 218\nHunk #5 FAILED at 246\nHunk #6 FAILED at 320\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/line.py.rej\npatching file sage/plot/plot.py\nHunk #1 FAILED at 267\nHunk #2 succeeded at 433 with fuzz 2 (offset 99 lines).\nHunk #5 succeeded at 900 with fuzz 1 (offset 172 lines).\nHunk #6 FAILED at 960\nHunk #7 FAILED at 977\nHunk #8 FAILED at 987\nHunk #9 FAILED at 1004\nHunk #10 FAILED at 1071\nHunk #11 FAILED at 1119\nHunk #12 FAILED at 1191\nHunk #13 FAILED at 1292\nHunk #14 FAILED at 1388\nHunk #15 FAILED at 1513\nHunk #16 FAILED at 1549\nHunk #17 FAILED at 1637\nHunk #18 FAILED at 1665\nHunk #19 FAILED at 1684\nHunk #20 FAILED at 1769\nHunk #21 FAILED at 1854\n17 out of 21 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #2 FAILED at 23\nHunk #3 succeeded at 91 with fuzz 2 (offset 51 lines).\nHunk #4 FAILED at 104\nHunk #5 FAILED at 129\nHunk #6 FAILED at 138\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\nHunk #1 FAILED at 43\nHunk #2 FAILED at 74\nHunk #3 FAILED at 90\nHunk #4 succeeded at 341 with fuzz 2 (offset 194 lines).\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/polygon.py.rej\npatching file sage/plot/primitive.py\nHunk #1 FAILED at 73\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/primitive.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-12-31T04:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -858,7 +854,6 @@ abort: patch failed to apply
 
 
 
-
 ---
 
 archive/issue_comments_031817.json:
@@ -882,7 +877,7 @@ Okay, even after rebasing this needs some work - a number of the options raise D
 archive/issue_comments_031818.json:
 ```json
 {
-    "body": "I understand the current problem as follows.\n\n\n**Problem:** To locate where the function `text` should be applied to the function `plot` to be able to have legends for plots.\n\n**Example about the problem for one function when legend is at x=1**\n\n\n```\n   var('x');\n   x_cord = 1;\n   f = x**2;\n   p = plot(f,x)+text(f,(x_cord,f(x_cord))\n```\n\n\n\nfor one function.\n\n**Similarly for two functions (syntax may change), for instance, when all legends are at x=1:**\n\n\n\n```\n   g = x;\n   f = x**2;\n   p = plot(f,x);\n   x_cord = 1\n   (g + f) + text(f, (f,x_cord), g, (g,x_cord))             // not sure about the syntax\n```\n\n\nIf there are 7 functions, then it would be have nice to have a shortcut -command such as \n\n\n\n```\n(a + b + ... + g) + legends()\n```\n\n \nto put the legends automatically to each function.",
+    "body": "I understand the current problem as follows.\n\n\n**Problem:** To locate where the function `text` should be applied to the function `plot` to be able to have legends for plots.\n\n**Example about the problem for one function when legend is at x=1**\n\n```\n   var('x');\n   x_cord = 1;\n   f = x**2;\n   p = plot(f,x)+text(f,(x_cord,f(x_cord))\n```\n\n\nfor one function.\n\n**Similarly for two functions (syntax may change), for instance, when all legends are at x=1:**\n\n\n```\n   g = x;\n   f = x**2;\n   p = plot(f,x);\n   x_cord = 1\n   (g + f) + text(f, (f,x_cord), g, (g,x_cord))             // not sure about the syntax\n```\n\nIf there are 7 functions, then it would be have nice to have a shortcut -command such as \n\n\n```\n(a + b + ... + g) + legends()\n```\n \nto put the legends automatically to each function.",
     "created_at": "2010-01-02T04:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -898,7 +893,6 @@ I understand the current problem as follows.
 
 **Example about the problem for one function when legend is at x=1**
 
-
 ```
    var('x');
    x_cord = 1;
@@ -907,11 +901,9 @@ I understand the current problem as follows.
 ```
 
 
-
 for one function.
 
 **Similarly for two functions (syntax may change), for instance, when all legends are at x=1:**
-
 
 
 ```
@@ -922,15 +914,12 @@ for one function.
    (g + f) + text(f, (f,x_cord), g, (g,x_cord))             // not sure about the syntax
 ```
 
-
 If there are 7 functions, then it would be have nice to have a shortcut -command such as 
-
 
 
 ```
 (a + b + ... + g) + legends()
 ```
-
  
 to put the legends automatically to each function.
 
@@ -967,7 +956,7 @@ As for a shortcut, I think it would be consistent to make it an option to show, 
 archive/issue_comments_031820.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  \n\nI just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.\n\nIt looks like a straightforward project to get this patch back up to speed and include it in Sage.",
+    "body": "Replying to [comment:22 kcrisman]:\n> Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  \n\n\nI just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.\n\nIt looks like a straightforward project to get this patch back up to speed and include it in Sage.",
     "created_at": "2010-01-02T06:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -978,6 +967,7 @@ archive/issue_comments_031820.json:
 
 Replying to [comment:22 kcrisman]:
 > Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  
+
 
 I just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.
 
@@ -990,7 +980,7 @@ It looks like a straightforward project to get this patch back up to speed and i
 archive/issue_comments_031821.json:
 ```json
 {
-    "body": "Replying to [comment:26 jason]:\n> Replying to [comment:22 kcrisman]:\n> > Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  \n> \n> I just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.\n> \n> It looks like a straightforward project to get this patch back up to speed and include it in Sage.\n\nAgreed.  Here is a preliminary and very naive rebase - it still needs some work because of the change to save() using matplotlib(), as well as the defaults, I think, since mpl changed their legend options somewhat.",
+    "body": "Replying to [comment:26 jason]:\n> Replying to [comment:22 kcrisman]:\n> > Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  \n\n> \n> I just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.\n> \n> It looks like a straightforward project to get this patch back up to speed and include it in Sage.\n\n\nAgreed.  Here is a preliminary and very naive rebase - it still needs some work because of the change to save() using matplotlib(), as well as the defaults, I think, since mpl changed their legend options somewhat.",
     "created_at": "2010-01-02T13:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1002,10 +992,12 @@ archive/issue_comments_031821.json:
 Replying to [comment:26 jason]:
 > Replying to [comment:22 kcrisman]:
 > > Okay, even after rebasing this needs some work - a number of the options raise DeprecationWarnings from matplotlib, the legends don't look quite right with current defaults, etc.  But this should all be doable; nothing seems to have completely changed in the meantime with respect to this.  
+
 > 
 > I just looked through, and the ideas behind the patch look like they are still very good and applicable.  I guess I'm not surprised that it doesn't apply; there's been a lot of reworking of plotting code in the past year.
 > 
 > It looks like a straightforward project to get this patch back up to speed and include it in Sage.
+
 
 Agreed.  Here is a preliminary and very naive rebase - it still needs some work because of the change to save() using matplotlib(), as well as the defaults, I think, since mpl changed their legend options somewhat.
 
@@ -1072,7 +1064,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_031825.json:
 ```json
 {
-    "body": "Here is an example from contour_plot.py for using suboption:\n\n\n```\n@suboptions('label', fontsize=9, colors='blue', inline=None, inline_spacing=3, fmt=\"%1.2f\")\n```\n\n\nSo I think you need to specify the options that you are passing in, and their default values, in the `@`suboption decorator, rather than as a dictionary in your plotting function.  This will make the following keyword arguments available:\n\nlabel_fontsize, label_colors, label_inline, label_inline_spacing, label_fmt\n\nInside the function, though, you will see all of these keyword arguments as a single dictionary called label, and you'll access the options as label['fontsize'], label['colors'], label['inline'], etc.\n\nDoes that explanation help?",
+    "body": "Here is an example from contour_plot.py for using suboption:\n\n```\n@suboptions('label', fontsize=9, colors='blue', inline=None, inline_spacing=3, fmt=\"%1.2f\")\n```\n\nSo I think you need to specify the options that you are passing in, and their default values, in the `@`suboption decorator, rather than as a dictionary in your plotting function.  This will make the following keyword arguments available:\n\nlabel_fontsize, label_colors, label_inline, label_inline_spacing, label_fmt\n\nInside the function, though, you will see all of these keyword arguments as a single dictionary called label, and you'll access the options as label['fontsize'], label['colors'], label['inline'], etc.\n\nDoes that explanation help?",
     "created_at": "2010-05-25T15:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1083,11 +1075,9 @@ archive/issue_comments_031825.json:
 
 Here is an example from contour_plot.py for using suboption:
 
-
 ```
 @suboptions('label', fontsize=9, colors='blue', inline=None, inline_spacing=3, fmt="%1.2f")
 ```
-
 
 So I think you need to specify the options that you are passing in, and their default values, in the `@`suboption decorator, rather than as a dictionary in your plotting function.  This will make the following keyword arguments available:
 
@@ -1122,7 +1112,7 @@ Boy, that got munged by wiki syntax.  You'll have access to the options as `labe
 archive/issue_comments_031827.json:
 ```json
 {
-    "body": "Yikes, once again needs major rebasing:\n\n```\npatching file sage/plot/circle.py\nHunk #2 FAILED at 149\n1 out of 6 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 succeeded at 115 with fuzz 2 (offset 2 lines).\nHunk #2 FAILED at 165\nHunk #3 FAILED at 177\nHunk #4 FAILED at 243\nHunk #5 succeeded at 513 with fuzz 2 (offset 117 lines).\n3 out of 5 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/plot.py\nHunk #11 FAILED at 2291\n1 out of 15 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #3 FAILED at 89\nHunk #5 FAILED at 301\nHunk #6 succeeded at 336 with fuzz 2 (offset 0 lines).\n2 out of 7 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/arrow.py\nHunk #1 FAILED at 75\nHunk #2 FAILED at 83\nHunk #3 FAILED at 131\nHunk #4 FAILED at 196\nHunk #5 succeeded at 91 with fuzz 2 (offset -118 lines).\nHunk #6 FAILED at 315\nHunk #7 succeeded at 361 with fuzz 2 (offset 8 lines).\nHunk #8 succeeded at 395 with fuzz 2 (offset 12 lines).\nHunk #9 FAILED at 400\n6 out of 9 hunks FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\nHunk #1 FAILED at 62\nHunk #2 FAILED at 105\nHunk #3 succeeded at 133 with fuzz 2 (offset 2 lines).\nHunk #4 FAILED at 161\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/bar_chart.py.rej\npatching file sage/plot/circle.py\nHunk #1 FAILED at 107\nHunk #2 FAILED at 148\nHunk #3 FAILED at 205\nHunk #4 succeeded at 237 with fuzz 2 (offset 5 lines).\nHunk #5 succeeded at 288 with fuzz 2 (offset 9 lines).\nHunk #6 FAILED at 298\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 FAILED at 110\nHunk #2 FAILED at 164\nHunk #3 FAILED at 176\nHunk #4 FAILED at 239\nHunk #5 succeeded at 515 with fuzz 2 (offset 120 lines).\n4 out of 5 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\nHunk #1 FAILED at 117\nHunk #2 FAILED at 154\nHunk #3 FAILED at 212\nHunk #4 FAILED at 279\n4 out of 4 hunks FAILED -- saving rejects to file sage/plot/disk.py.rej\npatching file sage/plot/line.py\nHunk #1 FAILED at 59\nHunk #2 FAILED at 71\nHunk #3 FAILED at 214\nHunk #4 FAILED at 243\nHunk #5 succeeded at 271 with fuzz 2 (offset 6 lines).\nHunk #6 succeeded at 402 with fuzz 2 (offset 10 lines).\nHunk #7 FAILED at 403\n5 out of 7 hunks FAILED -- saving rejects to file sage/plot/line.py.rej\npatching file sage/plot/plot.py\nHunk #2 FAILED at 371\nHunk #3 FAILED at 434\nHunk #4 succeeded at 676 with fuzz 2 (offset 176 lines).\nHunk #5 FAILED at 1223\nHunk #6 FAILED at 1245\nHunk #7 FAILED at 1257\nHunk #8 FAILED at 1341\nHunk #9 succeeded at 1608 with fuzz 2 (offset 186 lines).\nHunk #10 FAILED at 1724\nHunk #11 FAILED at 1808\nHunk #13 FAILED at 2258\nHunk #14 succeeded at 2518 with fuzz 2 (offset 211 lines).\nHunk #15 succeeded at 2658 with fuzz 2 (offset 219 lines).\nHunk #16 FAILED at 2714\nHunk #17 FAILED at 2821\n11 out of 17 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #1 FAILED at 8\nHunk #2 FAILED at 27\nHunk #3 FAILED at 89\nHunk #4 FAILED at 268\nHunk #5 FAILED at 301\nHunk #6 succeeded at 340 with fuzz 2 (offset 4 lines).\nHunk #7 FAILED at 347\n6 out of 7 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\nHunk #1 FAILED at 140\nHunk #2 FAILED at 157\nHunk #3 FAILED at 237\nHunk #4 FAILED at 265\nHunk #5 FAILED at 281\nHunk #6 FAILED at 338\n6 out of 6 hunks FAILED -- saving rejects to file sage/plot/polygon.py.rej\npatching file sage/plot/primitive.py\nHunk #1 FAILED at 105\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/primitive.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Yikes, once again needs major rebasing:\n\n```\npatching file sage/plot/circle.py\nHunk #2 FAILED at 149\n1 out of 6 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 succeeded at 115 with fuzz 2 (offset 2 lines).\nHunk #2 FAILED at 165\nHunk #3 FAILED at 177\nHunk #4 FAILED at 243\nHunk #5 succeeded at 513 with fuzz 2 (offset 117 lines).\n3 out of 5 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/plot.py\nHunk #11 FAILED at 2291\n1 out of 15 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #3 FAILED at 89\nHunk #5 FAILED at 301\nHunk #6 succeeded at 336 with fuzz 2 (offset 0 lines).\n2 out of 7 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/arrow.py\nHunk #1 FAILED at 75\nHunk #2 FAILED at 83\nHunk #3 FAILED at 131\nHunk #4 FAILED at 196\nHunk #5 succeeded at 91 with fuzz 2 (offset -118 lines).\nHunk #6 FAILED at 315\nHunk #7 succeeded at 361 with fuzz 2 (offset 8 lines).\nHunk #8 succeeded at 395 with fuzz 2 (offset 12 lines).\nHunk #9 FAILED at 400\n6 out of 9 hunks FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\nHunk #1 FAILED at 62\nHunk #2 FAILED at 105\nHunk #3 succeeded at 133 with fuzz 2 (offset 2 lines).\nHunk #4 FAILED at 161\n3 out of 4 hunks FAILED -- saving rejects to file sage/plot/bar_chart.py.rej\npatching file sage/plot/circle.py\nHunk #1 FAILED at 107\nHunk #2 FAILED at 148\nHunk #3 FAILED at 205\nHunk #4 succeeded at 237 with fuzz 2 (offset 5 lines).\nHunk #5 succeeded at 288 with fuzz 2 (offset 9 lines).\nHunk #6 FAILED at 298\n4 out of 6 hunks FAILED -- saving rejects to file sage/plot/circle.py.rej\npatching file sage/plot/contour_plot.py\nHunk #1 FAILED at 110\nHunk #2 FAILED at 164\nHunk #3 FAILED at 176\nHunk #4 FAILED at 239\nHunk #5 succeeded at 515 with fuzz 2 (offset 120 lines).\n4 out of 5 hunks FAILED -- saving rejects to file sage/plot/contour_plot.py.rej\npatching file sage/plot/disk.py\nHunk #1 FAILED at 117\nHunk #2 FAILED at 154\nHunk #3 FAILED at 212\nHunk #4 FAILED at 279\n4 out of 4 hunks FAILED -- saving rejects to file sage/plot/disk.py.rej\npatching file sage/plot/line.py\nHunk #1 FAILED at 59\nHunk #2 FAILED at 71\nHunk #3 FAILED at 214\nHunk #4 FAILED at 243\nHunk #5 succeeded at 271 with fuzz 2 (offset 6 lines).\nHunk #6 succeeded at 402 with fuzz 2 (offset 10 lines).\nHunk #7 FAILED at 403\n5 out of 7 hunks FAILED -- saving rejects to file sage/plot/line.py.rej\npatching file sage/plot/plot.py\nHunk #2 FAILED at 371\nHunk #3 FAILED at 434\nHunk #4 succeeded at 676 with fuzz 2 (offset 176 lines).\nHunk #5 FAILED at 1223\nHunk #6 FAILED at 1245\nHunk #7 FAILED at 1257\nHunk #8 FAILED at 1341\nHunk #9 succeeded at 1608 with fuzz 2 (offset 186 lines).\nHunk #10 FAILED at 1724\nHunk #11 FAILED at 1808\nHunk #13 FAILED at 2258\nHunk #14 succeeded at 2518 with fuzz 2 (offset 211 lines).\nHunk #15 succeeded at 2658 with fuzz 2 (offset 219 lines).\nHunk #16 FAILED at 2714\nHunk #17 FAILED at 2821\n11 out of 17 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatching file sage/plot/point.py\nHunk #1 FAILED at 8\nHunk #2 FAILED at 27\nHunk #3 FAILED at 89\nHunk #4 FAILED at 268\nHunk #5 FAILED at 301\nHunk #6 succeeded at 340 with fuzz 2 (offset 4 lines).\nHunk #7 FAILED at 347\n6 out of 7 hunks FAILED -- saving rejects to file sage/plot/point.py.rej\npatching file sage/plot/polygon.py\nHunk #1 FAILED at 140\nHunk #2 FAILED at 157\nHunk #3 FAILED at 237\nHunk #4 FAILED at 265\nHunk #5 FAILED at 281\nHunk #6 FAILED at 338\n6 out of 6 hunks FAILED -- saving rejects to file sage/plot/polygon.py.rej\npatching file sage/plot/primitive.py\nHunk #1 FAILED at 105\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/primitive.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2010-05-25T19:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1238,7 +1228,6 @@ Hunk #1 FAILED at 105
 1 out of 1 hunks FAILED -- saving rejects to file sage/plot/primitive.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -1409,7 +1398,7 @@ I'm going to doctest it all now.
 archive/issue_comments_031836.json:
 ```json
 {
-    "body": "When I build the docs `sage -docbuild reference html`, I get\n\n\n```\n/Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: \"legend\".\n```\n\n\nI can't find where this error is.",
+    "body": "When I build the docs `sage -docbuild reference html`, I get\n\n```\n/Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: \"legend\".\n```\n\nI can't find where this error is.",
     "created_at": "2010-09-28T17:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1420,11 +1409,9 @@ archive/issue_comments_031836.json:
 
 When I build the docs `sage -docbuild reference html`, I get
 
-
 ```
 /Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: "legend".
 ```
-
 
 I can't find where this error is.
 
@@ -1493,7 +1480,7 @@ ptestlong passes with the following tickets applied in order: #9221 (and new spk
 archive/issue_comments_031840.json:
 ```json
 {
-    "body": "CCing two sphinx experts.  When we apply trac-4342-rebase-4.6.alpha1.patch (only), we get the following error when building docs:\n\n\n```\n/Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: \"legend\".\n```\n\n\nWe don't know where it is coming from.  Do you guys have any idea?\n\nPlease note that this ticket depends on #9740, then #9746.",
+    "body": "CCing two sphinx experts.  When we apply trac-4342-rebase-4.6.alpha1.patch (only), we get the following error when building docs:\n\n```\n/Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: \"legend\".\n```\n\nWe don't know where it is coming from.  Do you guys have any idea?\n\nPlease note that this ticket depends on #9740, then #9746.",
     "created_at": "2010-09-28T19:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1504,11 +1491,9 @@ archive/issue_comments_031840.json:
 
 CCing two sphinx experts.  When we apply trac-4342-rebase-4.6.alpha1.patch (only), we get the following error when building docs:
 
-
 ```
 /Users/grout/sage/devel/sage/doc/en/reference/sage/plot/plot.rst:1070: (ERROR/3) Unknown target name: "legend".
 ```
-
 
 We don't know where it is coming from.  Do you guys have any idea?
 
@@ -1521,7 +1506,7 @@ Please note that this ticket depends on #9740, then #9746.
 archive/issue_comments_031841.json:
 ```json
 {
-    "body": "In the line\n\n```\n        - ``legend_*`` - all the options valid for :meth:`set_legend_options` prefixed with 'legend_'\n```\n\nyou need to change `'legend_'` to ```legend_```.  Sphinx (maybe ReST?) gives special meaning to strings ending in underscores.",
+    "body": "In the line\n\n```\n        - ``legend_*`` - all the options valid for :meth:`set_legend_options` prefixed with 'legend_'\n```\nyou need to change `'legend_'` to ```legend_```.  Sphinx (maybe ReST?) gives special meaning to strings ending in underscores.",
     "created_at": "2010-09-28T19:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1535,7 +1520,6 @@ In the line
 ```
         - ``legend_*`` - all the options valid for :meth:`set_legend_options` prefixed with 'legend_'
 ```
-
 you need to change `'legend_'` to ```legend_```.  Sphinx (maybe ReST?) gives special meaning to strings ending in underscores.
 
 
@@ -1661,7 +1645,7 @@ archive/issue_comments_031847.json:
 archive/issue_comments_031848.json:
 ```json
 {
-    "body": "Replying to [comment:48 jason]:\n> (I rebased to account for some changes on #9740)\nCorrect - see the ticket order a few comments ago. Applies fine to the latest changes at #9740.",
+    "body": "Replying to [comment:48 jason]:\n> (I rebased to account for some changes on #9740)\n\nCorrect - see the ticket order a few comments ago. Applies fine to the latest changes at #9740.",
     "created_at": "2010-09-28T20:16:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1672,6 +1656,7 @@ archive/issue_comments_031848.json:
 
 Replying to [comment:48 jason]:
 > (I rebased to account for some changes on #9740)
+
 Correct - see the ticket order a few comments ago. Applies fine to the latest changes at #9740.
 
 
@@ -1699,7 +1684,7 @@ Do #9740, #9746 and #4342 depend on #9221?
 archive/issue_comments_031850.json:
 ```json
 {
-    "body": "Replying to [comment:50 mpatel]:\n\n> Do #9740, #9746 and #4342 depend on #9221?\n\nI don't think so.  I originally tested them all without #9221.",
+    "body": "Replying to [comment:50 mpatel]:\n\n> Do #9740, #9746 and #4342 depend on #9221?\n\n\nI don't think so.  I originally tested them all without #9221.",
     "created_at": "2010-09-30T04:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
@@ -1711,6 +1696,7 @@ archive/issue_comments_031850.json:
 Replying to [comment:50 mpatel]:
 
 > Do #9740, #9746 and #4342 depend on #9221?
+
 
 I don't think so.  I originally tested them all without #9221.
 

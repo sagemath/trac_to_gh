@@ -3,7 +3,7 @@
 archive/issues_002128.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nThe function\n\n random_prime(n)\n\nreturns differing types of objects. When n is 2, it returns a Sage\ninteger. When n is > 2, it returns a Python integer. A look at the\nsource code gives the impression that it should return a Sage\ninteger.\n\nPerhaps devel/sage-main/sage/rings/arith.py line 907 should be\nchanged from\n   return p\nto\n   return integer_ring.ZZ(p)\n\n -- Kate Minola\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2128\n\n",
+    "body": "Assignee: @williamstein\n\n```\nThe function\n\n random_prime(n)\n\nreturns differing types of objects. When n is 2, it returns a Sage\ninteger. When n is > 2, it returns a Python integer. A look at the\nsource code gives the impression that it should return a Sage\ninteger.\n\nPerhaps devel/sage-main/sage/rings/arith.py line 907 should be\nchanged from\n   return p\nto\n   return integer_ring.ZZ(p)\n\n -- Kate Minola\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2128\n\n",
     "created_at": "2008-02-09T19:26:29Z",
     "labels": [
         "component: number theory",
@@ -17,7 +17,6 @@ archive/issues_002128.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 The function
@@ -37,7 +36,6 @@ to
 
  -- Kate Minola
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2128
 

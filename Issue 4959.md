@@ -3,7 +3,7 @@
 archive/issues_004959.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu\n\nSee, e.g., this from sage-devel\n\n```\nI had a similar failure today, trying to:\n\nr.install_packages(\"adapt\")\n\nafter some fussing, runing ./sage as root, and using the notebook\ninterface I could get through the download phase, but same sorts of\nfailures in just as the gcc kicks in.  Seems several of the key R\nscripts have \"/home/wstein/...\"  hard wired in to R_HOME_XXX, which\nobviously will fail.  I tried editing the R startup scripts (among\nothers) but couldn't get it to work.\n\nBTW, I installed from the latest Debian tarball into a Debian/VMWARE\nmachine just today.  So installing R packages is still an issue.\n```\n\n\nSince most of the value of R is the huge list of third party packages, it's very important that this get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4959\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu\n\nSee, e.g., this from sage-devel\n\n```\nI had a similar failure today, trying to:\n\nr.install_packages(\"adapt\")\n\nafter some fussing, runing ./sage as root, and using the notebook\ninterface I could get through the download phase, but same sorts of\nfailures in just as the gcc kicks in.  Seems several of the key R\nscripts have \"/home/wstein/...\"  hard wired in to R_HOME_XXX, which\nobviously will fail.  I tried editing the R startup scripts (among\nothers) but couldn't get it to work.\n\nBTW, I installed from the latest Debian tarball into a Debian/VMWARE\nmachine just today.  So installing R packages is still an issue.\n```\n\nSince most of the value of R is the huge list of third party packages, it's very important that this get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4959\n\n",
     "created_at": "2009-01-09T16:36:50Z",
     "labels": [
         "component: packages: standard",
@@ -37,7 +37,6 @@ others) but couldn't get it to work.
 BTW, I installed from the latest Debian tarball into a Debian/VMWARE
 machine just today.  So installing R packages is still an issue.
 ```
-
 
 Since most of the value of R is the huge list of third party packages, it's very important that this get fixed. 
 
@@ -90,7 +89,7 @@ Incidentally, the R package above has been removed from R, it seems.   It also s
 archive/issue_comments_037624.json:
 ```json
 {
-    "body": "On sage.math, after picking the mirror, I get one error message for trying to install 'abind' from the r console:\n\n```\nWarning message:\nIn doTryCatch(return(expr), name, parentenv, handler) :\n  unable to load shared library '/home/.../sage-4.3.r0-sage.math.washington.edu-x86_64-Linux/local/lib/R//modules//R_X11.so':\n  /scratch/mhansen/release/4.3/rc0/sage-4.3.rc0/local/lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nSegmentation fault\n```\n\nbut a different one when trying to use the r.install_packages() interface, which I unfortunately deleted.",
+    "body": "On sage.math, after picking the mirror, I get one error message for trying to install 'abind' from the r console:\n\n```\nWarning message:\nIn doTryCatch(return(expr), name, parentenv, handler) :\n  unable to load shared library '/home/.../sage-4.3.r0-sage.math.washington.edu-x86_64-Linux/local/lib/R//modules//R_X11.so':\n  /scratch/mhansen/release/4.3/rc0/sage-4.3.rc0/local/lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)\nSegmentation fault\n```\nbut a different one when trying to use the r.install_packages() interface, which I unfortunately deleted.",
     "created_at": "2009-12-14T16:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
@@ -108,7 +107,6 @@ In doTryCatch(return(expr), name, parentenv, handler) :
   /scratch/mhansen/release/4.3/rc0/sage-4.3.rc0/local/lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3/libgcc_s.so.1: version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6)
 Segmentation fault
 ```
-
 but a different one when trying to use the r.install_packages() interface, which I unfortunately deleted.
 
 
@@ -118,7 +116,7 @@ but a different one when trying to use the r.install_packages() interface, which
 archive/issue_comments_037625.json:
 ```json
 {
-    "body": "Here is the error message from that:\n\n```\nWarning messages:\n1: In file.create(f.tg) :\n  cannot create file '/scratch/mhansen/release/4.3/rc0/sage-4.3.rc0/local/lib/R/doc/html/packages.html', reason 'Permission denied'\n2: In tools:::unix.packages.html(.Library) :\n  cannot create HTML package index\n> \n```\n\nSo again there seem to be problems with hard links in the R installation, since my binary wasn't in /scratch and certainly not in mhansen's scratch.",
+    "body": "Here is the error message from that:\n\n```\nWarning messages:\n1: In file.create(f.tg) :\n  cannot create file '/scratch/mhansen/release/4.3/rc0/sage-4.3.rc0/local/lib/R/doc/html/packages.html', reason 'Permission denied'\n2: In tools:::unix.packages.html(.Library) :\n  cannot create HTML package index\n> \n```\nSo again there seem to be problems with hard links in the R installation, since my binary wasn't in /scratch and certainly not in mhansen's scratch.",
     "created_at": "2009-12-14T18:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
@@ -137,7 +135,6 @@ Warning messages:
   cannot create HTML package index
 > 
 ```
-
 So again there seem to be problems with hard links in the R installation, since my binary wasn't in /scratch and certainly not in mhansen's scratch.
 
 
@@ -165,7 +162,7 @@ And see [here](http://groups.google.com/group/sage-devel/browse_thread/thread/7f
 archive/issue_comments_037627.json:
 ```json
 {
-    "body": "The behavior with the version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6) continues to be the case on boxen.math after the upgrade at #6532.  On the plus side, it no longer refers to someone else's installation.\n\nHere is another interesting error which might help us - is it possible that a number of R packages require non-universal libraries?\n\n```\n* installing *source* package \u2018rgl\u2019 ...\nchecking for gcc... gcc -std=gnu99\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables... \nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc -std=gnu99 accepts -g... yes\nchecking for gcc -std=gnu99 option to accept ISO C89... none needed\nchecking how to run the C preprocessor... gcc -std=gnu99 -E\nchecking for gcc... (cached) gcc -std=gnu99\nchecking whether we are using the GNU C compiler... (cached) yes\nchecking whether gcc -std=gnu99 accepts -g... (cached) yes\nchecking for gcc -std=gnu99 option to accept ISO C89... (cached) none needed\nchecking for libpng-config... yes\nconfigure: using libpng-config\nconfigure: using libpng dynamic linkage\nchecking for X... libraries /usr/lib, headers /usr/include\nchecking GL/gl.h usability... no\nchecking GL/gl.h presence... no\nchecking for GL/gl.h... no\nchecking GL/glu.h usability... no\nchecking GL/glu.h presence... no\nchecking for GL/glu.h... no\nconfigure: error: missing required header GL/gl.h\nERROR: configuration failed for package \u2018rgl\u2019\n```\n\nThis was on boxen.math; on my own Mac I did not have any problems with this package (a package installed by the package 'depth', which I needed for some other computations).  This tells me that",
+    "body": "The behavior with the version `GCC_4.2.0' not found (required by /usr/lib/libstdc++.so.6) continues to be the case on boxen.math after the upgrade at #6532.  On the plus side, it no longer refers to someone else's installation.\n\nHere is another interesting error which might help us - is it possible that a number of R packages require non-universal libraries?\n\n```\n* installing *source* package \u2018rgl\u2019 ...\nchecking for gcc... gcc -std=gnu99\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables... \nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc -std=gnu99 accepts -g... yes\nchecking for gcc -std=gnu99 option to accept ISO C89... none needed\nchecking how to run the C preprocessor... gcc -std=gnu99 -E\nchecking for gcc... (cached) gcc -std=gnu99\nchecking whether we are using the GNU C compiler... (cached) yes\nchecking whether gcc -std=gnu99 accepts -g... (cached) yes\nchecking for gcc -std=gnu99 option to accept ISO C89... (cached) none needed\nchecking for libpng-config... yes\nconfigure: using libpng-config\nconfigure: using libpng dynamic linkage\nchecking for X... libraries /usr/lib, headers /usr/include\nchecking GL/gl.h usability... no\nchecking GL/gl.h presence... no\nchecking for GL/gl.h... no\nchecking GL/glu.h usability... no\nchecking GL/glu.h presence... no\nchecking for GL/glu.h... no\nconfigure: error: missing required header GL/gl.h\nERROR: configuration failed for package \u2018rgl\u2019\n```\nThis was on boxen.math; on my own Mac I did not have any problems with this package (a package installed by the package 'depth', which I needed for some other computations).  This tells me that",
     "created_at": "2009-12-28T17:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
@@ -207,7 +204,6 @@ checking for GL/glu.h... no
 configure: error: missing required header GL/gl.h
 ERROR: configuration failed for package ‘rgl’
 ```
-
 This was on boxen.math; on my own Mac I did not have any problems with this package (a package installed by the package 'depth', which I needed for some other computations).  This tells me that
 
 

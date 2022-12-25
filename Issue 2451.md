@@ -3,7 +3,7 @@
 archive/issues_002451.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere are two problems:\n\n1. neither use _fast_float\n\n2. Even worse, they don't coerce their endpoints to floats.  This is a killer.\n\nTo illustrate:\n\n```\nvar('x,y')\nsage: time contour_plot(x^2+y^2, (-pi,pi),(-pi,pi))\ntakes forever\nsage: time contour_plot(x^2+y^2, (-float(pi),float(pi)),(-float(pi),float(pi)))\ntakes forever\nsage: f = (x^2+y^2)._fast_float_('x','y')\nsage: time contour_plot(f, (-float(pi),float(pi)),(-float(pi),float(pi)))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2451\n\n",
+    "body": "Assignee: @williamstein\n\nThere are two problems:\n\n1. neither use _fast_float\n\n2. Even worse, they don't coerce their endpoints to floats.  This is a killer.\n\nTo illustrate:\n\n```\nvar('x,y')\nsage: time contour_plot(x^2+y^2, (-pi,pi),(-pi,pi))\ntakes forever\nsage: time contour_plot(x^2+y^2, (-float(pi),float(pi)),(-float(pi),float(pi)))\ntakes forever\nsage: f = (x^2+y^2)._fast_float_('x','y')\nsage: time contour_plot(f, (-float(pi),float(pi)),(-float(pi),float(pi)))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2451\n\n",
     "created_at": "2008-03-10T01:06:45Z",
     "labels": [
         "component: graphics",
@@ -36,7 +36,6 @@ sage: f = (x^2+y^2)._fast_float_('x','y')
 sage: time contour_plot(f, (-float(pi),float(pi)),(-float(pi),float(pi)))
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2451
 

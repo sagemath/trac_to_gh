@@ -3,7 +3,7 @@
 archive/issues_009553.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
+    "body": "Assignee: @williamstein\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
     "created_at": "2010-07-20T08:44:27Z",
     "labels": [
         "component: user interface",
@@ -28,7 +28,6 @@ When doing "sage -ba" from the shell, one gets a prompt:
  Do you want to proceed? [y/n]
 ```
 
-
 Since this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that "sage -ba" continues anyway when nothing has been typed for 30 seconds or so.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9553
@@ -42,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9553
 archive/issue_comments_091922.json:
 ```json
 {
-    "body": "While looking at this bug, I discovered the -ba-force option, which is exactly what I was looking for.  So I propose a small patch to change the prompt to:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n (use -ba-force instead of -ba to skip this prompt.)\n Do you want to proceed? [y/n]\n```\n",
+    "body": "While looking at this bug, I discovered the -ba-force option, which is exactly what I was looking for.  So I propose a small patch to change the prompt to:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n (use -ba-force instead of -ba to skip this prompt.)\n Do you want to proceed? [y/n]\n```",
     "created_at": "2010-07-23T11:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
@@ -60,7 +59,6 @@ While looking at this bug, I discovered the -ba-force option, which is exactly w
  (use -ba-force instead of -ba to skip this prompt.)
  Do you want to proceed? [y/n]
 ```
-
 
 
 
@@ -107,7 +105,7 @@ Apply this to the local/bin branch
 archive/issue_comments_091925.json:
 ```json
 {
-    "body": "Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\n```\necho \" (use -ba-force instead of -ba to skip this prompt.)\" \n```\n\nshould be\n\n```\necho \" (Use -ba-force instead of -ba to skip this prompt.)\" \n```\n",
+    "body": "Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\n```\necho \" (use -ba-force instead of -ba to skip this prompt.)\" \n```\nshould be\n\n```\necho \" (Use -ba-force instead of -ba to skip this prompt.)\" \n```",
     "created_at": "2010-07-23T20:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ Excellent idea -- I hate interactive prompts, especially ones that it isn't obvi
 ```
 echo " (use -ba-force instead of -ba to skip this prompt.)" 
 ```
-
 should be
 
 ```
@@ -130,13 +127,12 @@ echo " (Use -ba-force instead of -ba to skip this prompt.)"
 
 
 
-
 ---
 
 archive/issue_comments_091926.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\nAs far as I'm concerned, we could even complete remove the prompt and make -ba act like -ba-force.  I never quite understood the point of that prompt anyway.",
+    "body": "Replying to [comment:3 was]:\n> Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\n\nAs far as I'm concerned, we could even complete remove the prompt and make -ba act like -ba-force.  I never quite understood the point of that prompt anyway.",
     "created_at": "2010-07-24T00:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
@@ -147,6 +143,7 @@ archive/issue_comments_091926.json:
 
 Replying to [comment:3 was]:
 > Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line
+
 
 As far as I'm concerned, we could even complete remove the prompt and make -ba act like -ba-force.  I never quite understood the point of that prompt anyway.
 

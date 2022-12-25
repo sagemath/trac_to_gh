@@ -3,7 +3,7 @@
 archive/issues_000864.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\n\nAnd here's the state of affairs after the first patch:\n\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\n\nClearly that third function call needs to be fixed, and it will be within a few days.\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: pari\n\nThis is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 1.18 s, sys: 0.01 s, total: 1.19 s\nWall time: 1.26\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02\n\nsage: time u = int(y)\nCPU times: user 1.94 s, sys: 1.33 s, total: 3.27 s\nWall time: 3.58\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.03\n\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 105.12 s, sys: 1.26 s, total: 106.38 s\nWall time: 121.86\n\nsage: time z = Integer(y)\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 0.09\n\nsage: time u = int(y)\nCPU times: user 188.17 s, sys: 145.12 s, total: 333.28 s\nWall time: 364.80\n\nsage: time u = int(Integer(y))\nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 0.07\n```\n\nAnd here's the state of affairs after the first patch:\n\n```\nsage: x = 10^100000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 1.64 s, sys: 1.09 s, total: 2.73 s\nWall time: 2.79\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: x = 10^1000000\n\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time u = int(y)\nCPU times: user 220.90 s, sys: 137.34 s, total: 358.24 s\nWall time: 408.11\n\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n\n```\n\nClearly that third function call needs to be fixed, and it will be within a few days.\n\nIssue created by migration from https://trac.sagemath.org/ticket/864\n\n",
     "created_at": "2007-10-12T19:47:59Z",
     "labels": [
         "component: interfaces",
@@ -21,7 +21,6 @@ Assignee: @craigcitro
 Keywords: pari
 
 This is really a leftover from ticket #467, split because I wanted the first half of the fix to make it into 2.8.7. Here's a summary of the badness:
-
 
 ```
 sage: x = 10^100000
@@ -62,9 +61,7 @@ CPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s
 Wall time: 0.07
 ```
 
-
 And here's the state of affairs after the first patch:
-
 
 ```
 sage: x = 10^100000
@@ -105,7 +102,6 @@ Wall time: 0.01
 
 ```
 
-
 Clearly that third function call needs to be fixed, and it will be within a few days.
 
 Issue created by migration from https://trac.sagemath.org/ticket/864
@@ -137,7 +133,7 @@ Changing status from new to assigned.
 archive/issue_comments_005316.json:
 ```json
 {
-    "body": "Hi Craig,\n\nthis has been open a while. The current timings from sage.math:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x = 10^100000\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time u = int(y)\nCPU times: user 0.48 s, sys: 0.00 s, total: 0.48 s\nWall time: 0.48 s\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n",
+    "body": "Hi Craig,\n\nthis has been open a while. The current timings from sage.math:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x = 10^100000\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time z = Integer(y)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time u = int(y)\nCPU times: user 0.48 s, sys: 0.00 s, total: 0.48 s\nWall time: 0.48 s\nsage: time u = int(Integer(y))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```",
     "created_at": "2008-12-13T11:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -167,7 +163,6 @@ sage: time u = int(Integer(y))
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 ```
-
 
 
 
@@ -211,7 +206,7 @@ Changing component from interfaces to performance.
 archive/issue_comments_005318.json:
 ```json
 {
-    "body": "I am uploading a patch that implements conversion from PARI `t_INT` to Python long via an intermediate `mpz_t`, so `long(y)` essentially does `long(Integer(y))`.\n\nSome timings:\n\n```\nsage: x = 10^1000000\nsage: %timeit y=pari(x)\n10000 loops, best of 3: 197 us per loop\nsage: %timeit z=Integer(y)\n100 loops, best of 3: 4.11 ms per loop\nsage: %timeit u=long(y)\n100 loops, best of 3: 13 ms per loop\nsage: %timeit u=long(Integer(y))\n100 loops, best of 3: 13.8 ms per loop\n\nsage: x = 10^10000000\nsage: %timeit y=pari(x)                                                         \n100 loops, best of 3: 5.57 ms per loop\nsage: %timeit z=Integer(y)\n100 loops, best of 3: 2.94 ms per loop\nsage: %timeit u=long(y)\n100 loops, best of 3: 13.9 ms per loop\nsage: %timeit u=long(Integer(y))\n100 loops, best of 3: 13.8 ms per loop\n```\n",
+    "body": "I am uploading a patch that implements conversion from PARI `t_INT` to Python long via an intermediate `mpz_t`, so `long(y)` essentially does `long(Integer(y))`.\n\nSome timings:\n\n```\nsage: x = 10^1000000\nsage: %timeit y=pari(x)\n10000 loops, best of 3: 197 us per loop\nsage: %timeit z=Integer(y)\n100 loops, best of 3: 4.11 ms per loop\nsage: %timeit u=long(y)\n100 loops, best of 3: 13 ms per loop\nsage: %timeit u=long(Integer(y))\n100 loops, best of 3: 13.8 ms per loop\n\nsage: x = 10^10000000\nsage: %timeit y=pari(x)                                                         \n100 loops, best of 3: 5.57 ms per loop\nsage: %timeit z=Integer(y)\n100 loops, best of 3: 2.94 ms per loop\nsage: %timeit u=long(y)\n100 loops, best of 3: 13.9 ms per loop\nsage: %timeit u=long(Integer(y))\n100 loops, best of 3: 13.8 ms per loop\n```",
     "created_at": "2013-09-09T18:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -245,7 +240,6 @@ sage: %timeit u=long(y)
 sage: %timeit u=long(Integer(y))
 100 loops, best of 3: 13.8 ms per loop
 ```
-
 
 
 
@@ -290,7 +284,7 @@ Attachment [trac_864-pari_long_conversion.patch](tarball://root/attachments/some
 archive/issue_comments_005321.json:
 ```json
 {
-    "body": "Replying to [comment:4 pbruin]:\n> so `long(y)` essentially does `long(Integer(y))`.\nWhy not literally do `long(Integer(y))` then and save many lines of code?",
+    "body": "Replying to [comment:4 pbruin]:\n> so `long(y)` essentially does `long(Integer(y))`.\n\nWhy not literally do `long(Integer(y))` then and save many lines of code?",
     "created_at": "2013-10-29T07:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -301,6 +295,7 @@ archive/issue_comments_005321.json:
 
 Replying to [comment:4 pbruin]:
 > so `long(y)` essentially does `long(Integer(y))`.
+
 Why not literally do `long(Integer(y))` then and save many lines of code?
 
 
@@ -310,7 +305,7 @@ Why not literally do `long(Integer(y))` then and save many lines of code?
 archive/issue_comments_005322.json:
 ```json
 {
-    "body": "Note that this works:\n\n```\nsage: Integer(pari(\"Mod(2,7)\"))\n2\n```\n\nso you would get these cases for free...",
+    "body": "Note that this works:\n\n```\nsage: Integer(pari(\"Mod(2,7)\"))\n2\n```\nso you would get these cases for free...",
     "created_at": "2013-10-29T07:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -325,7 +320,6 @@ Note that this works:
 sage: Integer(pari("Mod(2,7)"))
 2
 ```
-
 so you would get these cases for free...
 
 
@@ -335,7 +329,7 @@ so you would get these cases for free...
 archive/issue_comments_005323.json:
 ```json
 {
-    "body": "Replying to [comment:5 jdemeyer]:\n> Replying to [comment:4 pbruin]:\n> > so `long(y)` essentially does `long(Integer(y))`.\n> Why not literally do `long(Integer(y))` then and save many lines of code?\nI thought that the penalty for creating an `Integer` was quite heavy in some cases; for example, with the current patch applied, I get\n\n```\nsage: y=pari(10^10000)\nsage: %timeit -c -r 1 u=long(y)\n100000 loops, best of 1: 12.2 us per loop\nsage: %timeit -c -r 1 u=long(Integer(y))\n10000 loops, best of 1: 19.6 us per loop\n```\n\nHowever, I just tried implementing `gen.__long__(self)` as `return long(Integer(self))`, and it is just as fast, thanks to Cython I guess.  I also agree that `long(pari(\"Mod(2,7)\"))` is nice to get for free.  New patch coming soon.",
+    "body": "Replying to [comment:5 jdemeyer]:\n> Replying to [comment:4 pbruin]:\n> > so `long(y)` essentially does `long(Integer(y))`.\n\n> Why not literally do `long(Integer(y))` then and save many lines of code?\nI thought that the penalty for creating an `Integer` was quite heavy in some cases; for example, with the current patch applied, I get\n\n```\nsage: y=pari(10^10000)\nsage: %timeit -c -r 1 u=long(y)\n100000 loops, best of 1: 12.2 us per loop\nsage: %timeit -c -r 1 u=long(Integer(y))\n10000 loops, best of 1: 19.6 us per loop\n```\nHowever, I just tried implementing `gen.__long__(self)` as `return long(Integer(self))`, and it is just as fast, thanks to Cython I guess.  I also agree that `long(pari(\"Mod(2,7)\"))` is nice to get for free.  New patch coming soon.",
     "created_at": "2013-10-29T11:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/864",
     "type": "issue_comment",
@@ -347,6 +341,7 @@ archive/issue_comments_005323.json:
 Replying to [comment:5 jdemeyer]:
 > Replying to [comment:4 pbruin]:
 > > so `long(y)` essentially does `long(Integer(y))`.
+
 > Why not literally do `long(Integer(y))` then and save many lines of code?
 I thought that the penalty for creating an `Integer` was quite heavy in some cases; for example, with the current patch applied, I get
 
@@ -357,7 +352,6 @@ sage: %timeit -c -r 1 u=long(y)
 sage: %timeit -c -r 1 u=long(Integer(y))
 10000 loops, best of 1: 19.6 us per loop
 ```
-
 However, I just tried implementing `gen.__long__(self)` as `return long(Integer(self))`, and it is just as fast, thanks to Cython I guess.  I also agree that `long(pari("Mod(2,7)"))` is nice to get for free.  New patch coming soon.
 
 

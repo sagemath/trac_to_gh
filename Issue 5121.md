@@ -3,7 +3,7 @@
 archive/issues_005121.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: plot(E)\nsage: plot(E, xmin=25,xmax=25)\nTraceback (most recent call last):\n...\nAttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'\n```\n\n\nThis broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!\n\nIt is a new bug introduced by some plot refactoring recently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5121\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve('37a')\nsage: plot(E)\nsage: plot(E, xmin=25,xmax=25)\nTraceback (most recent call last):\n...\nAttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'\n```\n\nThis broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!\n\nIt is a new bug introduced by some plot refactoring recently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5121\n\n",
     "created_at": "2009-01-28T20:07:18Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,6 @@ archive/issues_005121.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: E = EllipticCurve('37a')
 sage: plot(E)
@@ -28,7 +27,6 @@ Traceback (most recent call last):
 ...
 AttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'
 ```
-
 
 This broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!
 

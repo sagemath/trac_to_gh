@@ -179,7 +179,7 @@ I've also ReSTified class_group.py and number_field_ideal.py (the latter because
 archive/issue_comments_039448.json:
 ```json
 {
-    "body": "I'm not sure whether I did something stupid here but in a fresh clone of 3.4 I applied sage-5508.2.patch from #5508 and then tried to apply the new galois.patch form here, but it does not apply properly:\n\n```\nsage: hg_sage.apply(\"galois.patch\")\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg import   \"/home/john/galois.patch\"\napplying /home/john/galois.patch\npatching file sage/rings/number_field/number_field.py\nHunk #3 FAILED at 2536\nHunk #4 FAILED at 2555\nHunk #5 FAILED at 4147\nHunk #6 FAILED at 4160\n4 out of 6 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\nabort: patch failed to apply\n```\n\n\nDid I misunderstand something?  John",
+    "body": "I'm not sure whether I did something stupid here but in a fresh clone of 3.4 I applied sage-5508.2.patch from #5508 and then tried to apply the new galois.patch form here, but it does not apply properly:\n\n```\nsage: hg_sage.apply(\"galois.patch\")\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg import   \"/home/john/galois.patch\"\napplying /home/john/galois.patch\npatching file sage/rings/number_field/number_field.py\nHunk #3 FAILED at 2536\nHunk #4 FAILED at 2555\nHunk #5 FAILED at 4147\nHunk #6 FAILED at 4160\n4 out of 6 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\nabort: patch failed to apply\n```\n\nDid I misunderstand something?  John",
     "created_at": "2009-03-17T21:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -204,7 +204,6 @@ Hunk #6 FAILED at 4160
 4 out of 6 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej
 abort: patch failed to apply
 ```
-
 
 Did I misunderstand something?  John
 
@@ -233,7 +232,7 @@ Weird. I was using the first version of the #5508 patch, not the second, but tha
 archive/issue_comments_039450.json:
 ```json
 {
-    "body": "Replying to [comment:7 davidloeffler]:\n> Weird. I was using the first version of the #5508 patch, not the second, but that shouldn't make a huge difference. I will look at it in the morning.\n\n\n```\njohn@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch \n1679c1679\n< +            a\n---\n> +            sage: a\n```\n",
+    "body": "Replying to [comment:7 davidloeffler]:\n> Weird. I was using the first version of the #5508 patch, not the second, but that shouldn't make a huge difference. I will look at it in the morning.\n\n\n```\njohn@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch \n1679c1679\n< +            a\n---\n> +            sage: a\n```",
     "created_at": "2009-03-18T08:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -253,7 +252,6 @@ john@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch
 ---
 > +            sage: a
 ```
-
 
 
 
@@ -318,7 +316,7 @@ Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket51
 archive/issue_comments_039454.json:
 ```json
 {
-    "body": "Good news: this patch applies fine on top of sage-5508.2.patch.\n\nI am very happy with this patch which provides a significant new set of functions and capabilities.  I did have two trivial doctest failures, in two files, nothing serious:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//number_field.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/number_field.py\", line 3067:\n    sage: G = k.galois_group(names='c'); G\nExpected:\n    Galois group of Number Field in b with defining polynomial x^3 - x + 1\nGot:\n    Galois group of Galois closure in c of Number Field in b with defining polynomial x^3 - x + 1\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n*********************************************************************\n```\n\n\nand\n\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//galois_group.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\nException raised:\n    Traceback (most recent call last):\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[2]>\", line 1, in <module>\n        from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup###line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\n    ImportError: No module named galois_group_new\n*******************************************************************\n```\n\n\nI have put up a small patch which fixes these, so it can have a positive review.",
+    "body": "Good news: this patch applies fine on top of sage-5508.2.patch.\n\nI am very happy with this patch which provides a significant new set of functions and capabilities.  I did have two trivial doctest failures, in two files, nothing serious:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//number_field.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/number_field.py\", line 3067:\n    sage: G = k.galois_group(names='c'); G\nExpected:\n    Galois group of Number Field in b with defining polynomial x^3 - x + 1\nGot:\n    Galois group of Galois closure in c of Number Field in b with defining polynomial x^3 - x + 1\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n*********************************************************************\n```\n\nand\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//galois_group.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\nException raised:\n    Traceback (most recent call last):\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[2]>\", line 1, in <module>\n        from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup###line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\n    ImportError: No module named galois_group_new\n*******************************************************************\n```\n\nI have put up a small patch which fixes these, so it can have a positive review.",
     "created_at": "2009-03-18T10:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -346,9 +344,7 @@ Got:
 *********************************************************************
 ```
 
-
 and
-
 
 ```
 sage -t  "local/sage-3.4/devel/sage-5159/sage/rings/number_field//galois_group.py"
@@ -370,7 +366,6 @@ Exception raised:
 *******************************************************************
 ```
 
-
 I have put up a small patch which fixes these, so it can have a positive review.
 
 
@@ -380,7 +375,7 @@ I have put up a small patch which fixes these, so it can have a positive review.
 archive/issue_comments_039455.json:
 ```json
 {
-    "body": "The latest patch on top of #5508 causes a number of doctest failures:\n\n```\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst # 3 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/galois_group.py # 2 doctests failed\n\tsage -t -long devel/sage/doc/en/tutorial/tour_numtheory.rst # 1 doctests failed\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_numtheory.rst # 1 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "The latest patch on top of #5508 causes a number of doctest failures:\n\n```\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst # 3 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/galois_group.py # 2 doctests failed\n\tsage -t -long devel/sage/doc/en/tutorial/tour_numtheory.rst # 1 doctests failed\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_numtheory.rst # 1 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T09:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -398,7 +393,6 @@ The latest patch on top of #5508 causes a number of doctest failures:
 	sage -t -long devel/sage/doc/en/tutorial/tour_numtheory.rst # 1 doctests failed
 	sage -t -long devel/sage/doc/fr/tutorial/tour_numtheory.rst # 1 doctests failed
 ```
-
 
 Cheers,
 
@@ -473,7 +467,7 @@ David
 archive/issue_comments_039459.json:
 ```json
 {
-    "body": "Replying to [comment:15 davidloeffler]:\n> Michael: what is the next step with this one? Given that the new patch changes nothing that the user sees, can it just be merged, or is a new review needed for the new patch? \n> \n> David\n> \n\nIt would still be nice if someone did a quick re-review of the last two patches.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:15 davidloeffler]:\n> Michael: what is the next step with this one? Given that the new patch changes nothing that the user sees, can it just be merged, or is a new review needed for the new patch? \n> \n> David\n> \n\n\nIt would still be nice if someone did a quick re-review of the last two patches.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-27T16:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -487,6 +481,7 @@ Replying to [comment:15 davidloeffler]:
 > 
 > David
 > 
+
 
 It would still be nice if someone did a quick re-review of the last two patches.
 
@@ -539,7 +534,7 @@ I have just checked that it applies cleanly to 3.4.1.alpha0, and sage -testall p
 archive/issue_comments_039462.json:
 ```json
 {
-    "body": "Oops:  on a 64-bit machine I get this:\n\n```\njec@host-57-44:~/sage-3.4/devel/sage-5159$ sage -t sage/rings/number_field/galois_group.py\nsage -t  \"devel/sage-5159/sage/rings/number_field/galois_group.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 343:\n    sage: G.decomposition_group(P^2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (1/984*a^7 - 71/1968*a^5 + 29/984*a^3 + 527/328*a) is not prime\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[6]>\", line 1, in <module>\n        G.decomposition_group(P**Integer(2))###line 343:\n    sage: G.decomposition_group(P^2)\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 357, in decomposition_group\n        raise ValueError, \"%s is not prime\" % P\n    ValueError: Fractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a) is not prime\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (-1/8364*b^7 + 1/492*b^6 - 11/16728*b^5 - 101/1968*b^4 + 209/2788*b^3 + 115/328*b^2 - 3139/8364*b + 251/984) is ramified\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[7]>\", line 1, in <module>\n        G.artin_symbol(K.primes_above(Integer(2))[Integer(0)])###line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 463, in artin_symbol\n        if len(t) > 1: raise ValueError, \"%s is ramified\" % P\n    ValueError: Fractional ideal (43/33456*b^7 + 7/1968*b^6 - 809/33456*b^5 - 35/656*b^4 + 367/2788*b^3 + 61/492*b^2 - 4651/16728*b + 757/984) is ramified\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_18\n   1 of   8 in __main__.example_22\n```\n\n\nI think you cannot rely on pari giveing you the primes in a specific order:\n\n```\nsage: P = K.primes_above(17)[0]\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P^2\nFractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a)\nsage: Q = K.primes_above(17)[1]\nsage: Q^2\nFractional ideal (-5/2788*a^7 + 587/11152*a^5 - 2791/5576*a^3 + 13915/5576*a)\n```\n\nso the doctest needs to be designed to allow for that.  Perhaps define P via\n\n```\nsage: P=K.ideal(17,a^2)\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P.is_prime()\nTrue\n```\n\n(which may or may not be the P i your doctest).",
+    "body": "Oops:  on a 64-bit machine I get this:\n\n```\njec@host-57-44:~/sage-3.4/devel/sage-5159$ sage -t sage/rings/number_field/galois_group.py\nsage -t  \"devel/sage-5159/sage/rings/number_field/galois_group.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 343:\n    sage: G.decomposition_group(P^2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (1/984*a^7 - 71/1968*a^5 + 29/984*a^3 + 527/328*a) is not prime\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[6]>\", line 1, in <module>\n        G.decomposition_group(P**Integer(2))###line 343:\n    sage: G.decomposition_group(P^2)\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 357, in decomposition_group\n        raise ValueError, \"%s is not prime\" % P\n    ValueError: Fractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a) is not prime\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (-1/8364*b^7 + 1/492*b^6 - 11/16728*b^5 - 101/1968*b^4 + 209/2788*b^3 + 115/328*b^2 - 3139/8364*b + 251/984) is ramified\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[7]>\", line 1, in <module>\n        G.artin_symbol(K.primes_above(Integer(2))[Integer(0)])###line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 463, in artin_symbol\n        if len(t) > 1: raise ValueError, \"%s is ramified\" % P\n    ValueError: Fractional ideal (43/33456*b^7 + 7/1968*b^6 - 809/33456*b^5 - 35/656*b^4 + 367/2788*b^3 + 61/492*b^2 - 4651/16728*b + 757/984) is ramified\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_18\n   1 of   8 in __main__.example_22\n```\n\nI think you cannot rely on pari giveing you the primes in a specific order:\n\n```\nsage: P = K.primes_above(17)[0]\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P^2\nFractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a)\nsage: Q = K.primes_above(17)[1]\nsage: Q^2\nFractional ideal (-5/2788*a^7 + 587/11152*a^5 - 2791/5576*a^3 + 13915/5576*a)\n```\nso the doctest needs to be designed to allow for that.  Perhaps define P via\n\n```\nsage: P=K.ideal(17,a^2)\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P.is_prime()\nTrue\n```\n(which may or may not be the P i your doctest).",
     "created_at": "2009-03-30T11:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -601,7 +596,6 @@ Got:
    1 of   8 in __main__.example_22
 ```
 
-
 I think you cannot rely on pari giveing you the primes in a specific order:
 
 ```
@@ -614,7 +608,6 @@ sage: Q = K.primes_above(17)[1]
 sage: Q^2
 Fractional ideal (-5/2788*a^7 + 587/11152*a^5 - 2791/5576*a^3 + 13915/5576*a)
 ```
-
 so the doctest needs to be designed to allow for that.  Perhaps define P via
 
 ```
@@ -624,7 +617,6 @@ Fractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)
 sage: P.is_prime()
 True
 ```
-
 (which may or may not be the P i your doctest).
 
 
@@ -690,7 +682,7 @@ Attachment [5159-64bit-doctest.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_039466.json:
 ```json
 {
-    "body": "When merging\n\n* trac_5159_galois_new.patch\n* trac_5159_extra.patch\n* trac_5159-unpickle-fix.patch\n* trac_5159-64bit-doctest.patch\n\nI am seeing the following doctest failure on sage.math, i.e. 64 bit Linux:\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 44:\n    sage: [G.artin_symbol(Q) for Q in K.primes_above(5)]\nExpected:\n    [(1,5)(2,4)(3,6), (1,3)(2,6)(4,5), (1,2)(3,4)(5,6)]\nGot:\n    [(1,5)(2,4)(3,6), (1,2)(3,4)(5,6), (1,3)(2,6)(4,5)]\n**********************************************************************\n```\n\nI would guess that sorting the list might fix the issue.\n\nCheers,\n\nMichael",
+    "body": "When merging\n\n* trac_5159_galois_new.patch\n* trac_5159_extra.patch\n* trac_5159-unpickle-fix.patch\n* trac_5159-64bit-doctest.patch\n\nI am seeing the following doctest failure on sage.math, i.e. 64 bit Linux:\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 44:\n    sage: [G.artin_symbol(Q) for Q in K.primes_above(5)]\nExpected:\n    [(1,5)(2,4)(3,6), (1,3)(2,6)(4,5), (1,2)(3,4)(5,6)]\nGot:\n    [(1,5)(2,4)(3,6), (1,2)(3,4)(5,6), (1,3)(2,6)(4,5)]\n**********************************************************************\n```\nI would guess that sorting the list might fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T07:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -719,7 +711,6 @@ Got:
     [(1,5)(2,4)(3,6), (1,2)(3,4)(5,6), (1,3)(2,6)(4,5)]
 **********************************************************************
 ```
-
 I would guess that sorting the list might fix the issue.
 
 Cheers,
@@ -795,7 +786,7 @@ I'll test all these in a minute....
 archive/issue_comments_039470.json:
 ```json
 {
-    "body": "Replying to [comment:24 cremona]:\n> I'll test all these in a minute....\nunfortunately the total weirdness I came across just now in testing 5513 is still here.  It looks like I cannot test anything on 3.4.1.alpha0 without rebuilding from scratch, which unfortunately would not finish until after my free time for the day is over.  So unless mabshoff has any idea what was causing that, it will be hard for me to do anything useful for a while.",
+    "body": "Replying to [comment:24 cremona]:\n> I'll test all these in a minute....\n\nunfortunately the total weirdness I came across just now in testing 5513 is still here.  It looks like I cannot test anything on 3.4.1.alpha0 without rebuilding from scratch, which unfortunately would not finish until after my free time for the day is over.  So unless mabshoff has any idea what was causing that, it will be hard for me to do anything useful for a while.",
     "created_at": "2009-03-31T08:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
@@ -806,6 +797,7 @@ archive/issue_comments_039470.json:
 
 Replying to [comment:24 cremona]:
 > I'll test all these in a minute....
+
 unfortunately the total weirdness I came across just now in testing 5513 is still here.  It looks like I cannot test anything on 3.4.1.alpha0 without rebuilding from scratch, which unfortunately would not finish until after my free time for the day is over.  So unless mabshoff has any idea what was causing that, it will be hard for me to do anything useful for a while.
 
 

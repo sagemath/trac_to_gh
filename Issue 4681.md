@@ -126,7 +126,7 @@ THANK YOU!  I've been wanting somebody to do this right (even if slow) forever..
 archive/issue_comments_035197.json:
 ```json
 {
-    "body": "I noticed that this docstring is slightly wrong.  The m and y are confused:\n\n```\n \t4669\tdef _smith_augment(x, m): \n \t4670\t    r\"\"\" For internal use by the smith_form routine. Given scalar x and matrix \n \t4671\t    y, construct the block-diagonal matrix [x,0 ; 0, y]. \n```\n",
+    "body": "I noticed that this docstring is slightly wrong.  The m and y are confused:\n\n```\n \t4669\tdef _smith_augment(x, m): \n \t4670\t    r\"\"\" For internal use by the smith_form routine. Given scalar x and matrix \n \t4671\t    y, construct the block-diagonal matrix [x,0 ; 0, y]. \n```",
     "created_at": "2008-12-05T07:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ I noticed that this docstring is slightly wrong.  The m and y are confused:
  	4670	    r""" For internal use by the smith_form routine. Given scalar x and matrix 
  	4671	    y, construct the block-diagonal matrix [x,0 ; 0, y]. 
 ```
-
 
 
 
@@ -187,7 +186,7 @@ On reflection I realised that my "_smith_augment" function was a waste of space 
 archive/issue_comments_035200.json:
 ```json
 {
-    "body": "I read the code, which looks fine.  The doctests pass.  This test passes:\n\n```\nfor i in range(10):\n   print i\n   a = random_matrix(ZZ[sqrt(-1)],7)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n```\n\n\nThis fails pretty quickly, but it's not the fault of this code:\n\n```\nK.<a>=NumberField(x^3-2)\nprint \"h = \", K.class_number()\nfor i in range(10):\n   print i\n   a = random_matrix(K,3)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n...\n\nTraceback (most recent call last):       d,u,v = a.smith_form()\n\n  File \"element.pyx\", line 1269, in sage.structure.element.CommutativeRingElement.inverse_mod (sage/structure/element.c:10039)\nNotImplementedError\n```\n\n\nIt's the fault of other stuff missing in Sage.\n\nAnother thing -- in matrices over ZZ there is a smith_form function, and it's inputs, etc., are *not* consistent with the above.  It doesn't have a transformation option - instead it always gives the transformation matrices.  However, it also says to use the function \"elementary_divisors\" to get the diagonal entries.   I attached a patch that fixes this by making the sage integer matrix snf have the same interface as the generic one. \n\nThe definition of smith_form between your new code and Sage's code (which relies on pari) is inconsistent (see below).  This needs to be somehow resolved.  I haven't done this yet at all.\n\n```\nsage: a = matrix(ZZ,3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form()\n\n([0 0 0]\n[0 3 0]\n[0 0 1],\n [ 1 -2  1]\n[ 0 -1  1]\n[ 0  2 -1],\n [ 1  2 -1]\n[-2 -1  1]\n[ 1  0  0])\nsage: a.smith_form(transformation=False)\n\n[0 0 0]\n[0 3 0]\n[0 0 1]\nsage: a = matrix(ZZ[i],3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form(transformation=False)\n\n[ 1  0  0]\n[ 0 -3  0]\n[ 0  0  0]\n```\n\n\nTo get this into Sage, please:\n* review my matrix_integer_dense patch\n* decide on what to do about the inconsistency between sage/pari/your code.",
+    "body": "I read the code, which looks fine.  The doctests pass.  This test passes:\n\n```\nfor i in range(10):\n   print i\n   a = random_matrix(ZZ[sqrt(-1)],7)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n```\n\nThis fails pretty quickly, but it's not the fault of this code:\n\n```\nK.<a>=NumberField(x^3-2)\nprint \"h = \", K.class_number()\nfor i in range(10):\n   print i\n   a = random_matrix(K,3)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n...\n\nTraceback (most recent call last):       d,u,v = a.smith_form()\n\n  File \"element.pyx\", line 1269, in sage.structure.element.CommutativeRingElement.inverse_mod (sage/structure/element.c:10039)\nNotImplementedError\n```\n\nIt's the fault of other stuff missing in Sage.\n\nAnother thing -- in matrices over ZZ there is a smith_form function, and it's inputs, etc., are *not* consistent with the above.  It doesn't have a transformation option - instead it always gives the transformation matrices.  However, it also says to use the function \"elementary_divisors\" to get the diagonal entries.   I attached a patch that fixes this by making the sage integer matrix snf have the same interface as the generic one. \n\nThe definition of smith_form between your new code and Sage's code (which relies on pari) is inconsistent (see below).  This needs to be somehow resolved.  I haven't done this yet at all.\n\n```\nsage: a = matrix(ZZ,3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form()\n\n([0 0 0]\n[0 3 0]\n[0 0 1],\n [ 1 -2  1]\n[ 0 -1  1]\n[ 0  2 -1],\n [ 1  2 -1]\n[-2 -1  1]\n[ 1  0  0])\nsage: a.smith_form(transformation=False)\n\n[0 0 0]\n[0 3 0]\n[0 0 1]\nsage: a = matrix(ZZ[i],3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form(transformation=False)\n\n[ 1  0  0]\n[ 0 -3  0]\n[ 0  0  0]\n```\n\nTo get this into Sage, please:\n* review my matrix_integer_dense patch\n* decide on what to do about the inconsistency between sage/pari/your code.",
     "created_at": "2008-12-07T00:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
@@ -208,7 +207,6 @@ for i in range(10):
    assert v.det() == 1
 ```
 
-
 This fails pretty quickly, but it's not the fault of this code:
 
 ```
@@ -228,7 +226,6 @@ Traceback (most recent call last):       d,u,v = a.smith_form()
   File "element.pyx", line 1269, in sage.structure.element.CommutativeRingElement.inverse_mod (sage/structure/element.c:10039)
 NotImplementedError
 ```
-
 
 It's the fault of other stuff missing in Sage.
 
@@ -269,7 +266,6 @@ sage: a.smith_form(transformation=False)
 [ 0 -3  0]
 [ 0  0  0]
 ```
-
 
 To get this into Sage, please:
 * review my matrix_integer_dense patch
@@ -526,7 +522,7 @@ Looks good to me.
 archive/issue_comments_035213.json:
 ```json
 {
-    "body": "Unfortunately there is a slight reject for trac_4681_part1_smithform-consistent.patch:\n\n```\nsage-3.2.2.alpha1/devel/sage$ patch -p1 < trac_4681_part1_smithform-consistent.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 FAILED at 4549.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatching file sage/matrix/matrix_integer_dense.pyx\npatching file sage/matrix/symplectic_basis.py\npatching file sage/modular/etaproducts.py\npatching file sage/rings/number_field/number_field_element.pyx\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/order.py\npatching file sage/rings/polynomial/polynomial_element.pyx\npatching file sage/rings/ring.pyx\n```\n\n\n3.2.2.alpha1 should be out in a couple hours, so please rebase. For the record: I want to apply\n\n* trac_4681_part1_smithform-consistent.patch\n* 4681-docstringfix.patch\n* 4681-more-doctests.patch\n\nCheers,\n\nMichael",
+    "body": "Unfortunately there is a slight reject for trac_4681_part1_smithform-consistent.patch:\n\n```\nsage-3.2.2.alpha1/devel/sage$ patch -p1 < trac_4681_part1_smithform-consistent.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 FAILED at 4549.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatching file sage/matrix/matrix_integer_dense.pyx\npatching file sage/matrix/symplectic_basis.py\npatching file sage/modular/etaproducts.py\npatching file sage/rings/number_field/number_field_element.pyx\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/order.py\npatching file sage/rings/polynomial/polynomial_element.pyx\npatching file sage/rings/ring.pyx\n```\n\n3.2.2.alpha1 should be out in a couple hours, so please rebase. For the record: I want to apply\n\n* trac_4681_part1_smithform-consistent.patch\n* 4681-docstringfix.patch\n* 4681-more-doctests.patch\n\nCheers,\n\nMichael",
     "created_at": "2008-12-10T07:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
@@ -551,7 +547,6 @@ patching file sage/rings/number_field/order.py
 patching file sage/rings/polynomial/polynomial_element.pyx
 patching file sage/rings/ring.pyx
 ```
-
 
 3.2.2.alpha1 should be out in a couple hours, so please rebase. For the record: I want to apply
 
@@ -588,7 +583,7 @@ Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else 
 archive/issue_comments_035215.json:
 ```json
 {
-    "body": "Replying to [comment:18 davidloeffler]:\n\nHi David,\n\n> Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.\n\nExcellent, I can wait a couple hours before doing alpha1 since I can work on some other fixes in the meantime. Note that you can test if your patch applies to my current merge tree at\n\n\n  /scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage\n\nby running \"patch -p1 --dry-run < foo.patch\" from inside that directory on sage.math.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:18 davidloeffler]:\n\nHi David,\n\n> Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.\n\n\nExcellent, I can wait a couple hours before doing alpha1 since I can work on some other fixes in the meantime. Note that you can test if your patch applies to my current merge tree at\n\n\n  /scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage\n\nby running \"patch -p1 --dry-run < foo.patch\" from inside that directory on sage.math.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-10T10:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
@@ -602,6 +597,7 @@ Replying to [comment:18 davidloeffler]:
 Hi David,
 
 > Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.
+
 
 Excellent, I can wait a couple hours before doing alpha1 since I can work on some other fixes in the meantime. Note that you can test if your patch applies to my current merge tree at
 

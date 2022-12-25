@@ -3,7 +3,7 @@
 archive/issues_002531.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nSome symbolic fractions are not printed correctly:\n\n```\nsage: print z\n\n                                  arcsin(x)\n                                    -------\n                                       2\n```\n\nOne would expect the '-' bar to start under 'a' on the left.\n\nThis was found from an example in calculus.py:\n\n```\nsage: x = var('x')\nsage: y = x^2\nsage: dy = derivative(y,x)\nsage: z = integral(sqrt(1 + dy^2), x, 0, 2)\nsage: print z\n                     arcsinh(4) + 4 sqrt(17)\n                     ---------------------\n                               4\n```\n\nNote that the actual output I get with 2.10.3 slightly differs:\n\n```\nsage: print z\n\n                           arcsinh(4) + 4 sqrt(17)\n                             ---------------------\n                                       4\n\n```\n\nI wonder why sage -t calculus.py does not point that output difference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2531\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nSome symbolic fractions are not printed correctly:\n\n```\nsage: print z\n\n                                  arcsin(x)\n                                    -------\n                                       2\n```\nOne would expect the '-' bar to start under 'a' on the left.\n\nThis was found from an example in calculus.py:\n\n```\nsage: x = var('x')\nsage: y = x^2\nsage: dy = derivative(y,x)\nsage: z = integral(sqrt(1 + dy^2), x, 0, 2)\nsage: print z\n                     arcsinh(4) + 4 sqrt(17)\n                     ---------------------\n                               4\n```\nNote that the actual output I get with 2.10.3 slightly differs:\n\n```\nsage: print z\n\n                           arcsinh(4) + 4 sqrt(17)\n                             ---------------------\n                                       4\n\n```\nI wonder why sage -t calculus.py does not point that output difference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2531\n\n",
     "created_at": "2008-03-15T12:42:31Z",
     "labels": [
         "component: graphics",
@@ -30,7 +30,6 @@ sage: print z
                                     -------
                                        2
 ```
-
 One would expect the '-' bar to start under 'a' on the left.
 
 This was found from an example in calculus.py:
@@ -45,7 +44,6 @@ sage: print z
                      ---------------------
                                4
 ```
-
 Note that the actual output I get with 2.10.3 slightly differs:
 
 ```
@@ -56,7 +54,6 @@ sage: print z
                                        4
 
 ```
-
 I wonder why sage -t calculus.py does not point that output difference.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2531

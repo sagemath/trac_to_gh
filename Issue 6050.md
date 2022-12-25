@@ -3,7 +3,7 @@
 archive/issues_006050.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAfter the patch, Dynkin diagram ascii art is available for reducible Cartan types.\n\n\n```\nsage: DynkinDiagram(\"F4xA2\")\n\nO---O=>=O---O\n1   2   3   4\nO---O\n5   6\nF4xA2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6050\n\n",
+    "body": "Assignee: tbd\n\nAfter the patch, Dynkin diagram ascii art is available for reducible Cartan types.\n\n```\nsage: DynkinDiagram(\"F4xA2\")\n\nO---O=>=O---O\n1   2   3   4\nO---O\n5   6\nF4xA2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6050\n\n",
     "created_at": "2009-05-16T22:41:50Z",
     "labels": [
         "component: algebra"
@@ -19,7 +19,6 @@ Assignee: tbd
 
 After the patch, Dynkin diagram ascii art is available for reducible Cartan types.
 
-
 ```
 sage: DynkinDiagram("F4xA2")
 
@@ -29,7 +28,6 @@ O---O
 5   6
 F4xA2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6050
 

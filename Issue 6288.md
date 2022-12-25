@@ -3,7 +3,7 @@
 archive/issues_006288.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
     "created_at": "2009-06-14T20:57:48Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_006288.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 > Another thing that does not work is "sage -
@@ -46,7 +45,6 @@ sage: %gap
   --> Switching to Gap <-- 
 gap: 
 ```
-
 
 
 
@@ -114,7 +112,7 @@ archive/issue_events_014701.json:
 archive/issue_comments_050112.json:
 ```json
 {
-    "body": "ok, here is a review patch.\n\nFirst I have made some minor formatting changes (pep8)\n\nNext, I have corrected the part handling the bad names\n\nHere is the list of interfaces with bad names:\n\n```\n[('gp', 'pari', PARI/GP interpreter),\n ('lisp', 'Lisp', Lisp Interpreter),\n ('sage0', 'sage', Sage),\n ('mupad', 'MuPAD', Mupad),\n ('lie', 'LiE', LiE Interpreter)]\n```\n\nI would prefer to avoid having the magic command \"%sage\" !\n\nI also wonder if it is necessary to deprecate the bad names, instead of just using them as an alternative ?",
+    "body": "ok, here is a review patch.\n\nFirst I have made some minor formatting changes (pep8)\n\nNext, I have corrected the part handling the bad names\n\nHere is the list of interfaces with bad names:\n\n```\n[('gp', 'pari', PARI/GP interpreter),\n ('lisp', 'Lisp', Lisp Interpreter),\n ('sage0', 'sage', Sage),\n ('mupad', 'MuPAD', Mupad),\n ('lie', 'LiE', LiE Interpreter)]\n```\nI would prefer to avoid having the magic command \"%sage\" !\n\nI also wonder if it is necessary to deprecate the bad names, instead of just using them as an alternative ?",
     "created_at": "2013-08-21T11:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
@@ -138,7 +136,6 @@ Here is the list of interfaces with bad names:
  ('mupad', 'MuPAD', Mupad),
  ('lie', 'LiE', LiE Interpreter)]
 ```
-
 I would prefer to avoid having the magic command "%sage" !
 
 I also wonder if it is necessary to deprecate the bad names, instead of just using them as an alternative ?

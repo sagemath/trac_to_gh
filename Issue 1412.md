@@ -3,7 +3,7 @@
 archive/issues_001412.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nExecuting the following in a notebook cell works exactly once.  If one tries to re-evaluate the cell, an OSError is hit by the server, the evaluation never terminates nor does any work.\n\n\n```\nos.mkdir(\"tmp\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1412\n\n",
+    "body": "Assignee: @williamstein\n\nExecuting the following in a notebook cell works exactly once.  If one tries to re-evaluate the cell, an OSError is hit by the server, the evaluation never terminates nor does any work.\n\n```\nos.mkdir(\"tmp\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1412\n\n",
     "created_at": "2007-12-06T19:25:23Z",
     "labels": [
         "component: notebook",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 Executing the following in a notebook cell works exactly once.  If one tries to re-evaluate the cell, an OSError is hit by the server, the evaluation never terminates nor does any work.
 
-
 ```
 os.mkdir("tmp")
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1412
 

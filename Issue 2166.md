@@ -3,7 +3,7 @@
 archive/issues_002166.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 177:\n    sage: hash(m)\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 180:\n    sage: m.__hash__()\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 183:\n    sage: hash(maxima(m))\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\n1 items had failures:\n   3 of   4 in __main__.example_10\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_matrix_symbolic_dense.pyx\n         [16.6 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2166\n\n",
+    "body": "Assignee: failure\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 177:\n    sage: hash(m)\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 180:\n    sage: m.__hash__()\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 183:\n    sage: hash(maxima(m))\nExpected:\n    1653238849131003967\nGot:\n    -8735270519673468630\n**********************************************************************\n1 items had failures:\n   3 of   4 in __main__.example_10\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_matrix_symbolic_dense.pyx\n         [16.6 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2166\n\n",
     "created_at": "2008-02-15T00:11:39Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_002166.json:
 }
 ```
 Assignee: failure
-
 
 ```
 sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx
@@ -52,7 +51,6 @@ exit code: 256
 
 ----------------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2166
 

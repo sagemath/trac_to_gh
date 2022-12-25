@@ -3,7 +3,7 @@
 archive/issues_000575.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nBuilding SAGE with Cygwin is absolutely definitely not supported,\nand will not work.  The only way to run SAGE on Windows, is via\nVMware (or Virtual PC or some other virtualization). \n\nI'll make a ticket for making it so that the SAGE build scrip very very\nclearly indicates that it won't work on Cygwin right at the beginning,\nto avoid such confusion in the future. \n\nNOTE: SAGE used to support Cygwin several months ago (around March\n2007), so you may have seen some old documentation about this.\n```\n\n\nThis will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/575\n\n",
+    "body": "Assignee: @williamstein\n\n```\nBuilding SAGE with Cygwin is absolutely definitely not supported,\nand will not work.  The only way to run SAGE on Windows, is via\nVMware (or Virtual PC or some other virtualization). \n\nI'll make a ticket for making it so that the SAGE build scrip very very\nclearly indicates that it won't work on Cygwin right at the beginning,\nto avoid such confusion in the future. \n\nNOTE: SAGE used to support Cygwin several months ago (around March\n2007), so you may have seen some old documentation about this.\n```\n\nThis will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/575\n\n",
     "created_at": "2007-09-03T13:53:44Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_000575.json:
 ```
 Assignee: @williamstein
 
-
 ```
 Building SAGE with Cygwin is absolutely definitely not supported,
 and will not work.  The only way to run SAGE on Windows, is via
@@ -31,7 +30,6 @@ to avoid such confusion in the future.
 NOTE: SAGE used to support Cygwin several months ago (around March
 2007), so you may have seen some old documentation about this.
 ```
-
 
 This will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.
 
@@ -222,7 +220,7 @@ archive/issue_events_001544.json:
 archive/issue_comments_002977.json:
 ```json
 {
-    "body": "Here is the interesting part of the script:\n\n\n```\n\nif [ \"$SAGE_PORT\" = \"\" ]; then\n   if [ `uname | sed -e 's/WIN.\\+/WIN/'` = \"CYGWIN\" ]; then\n      echo \"Building or using SAGE with Cygwin is absolutely definitely\"\n      echo \"not supported, and will definitely not work.  The only way\"\n      echo \"to run SAGE on Windows, is via VMware (or Virtual PC or \"\n      echo \"some other virtualization system such as andLinux).\"\n      echo \"NOTE: SAGE used to support Cygwin several months ago (around March\"\n      echo \"2007), so you may have seen some old documentation about this.\"\n   fi\nfi\n\n```\n",
+    "body": "Here is the interesting part of the script:\n\n```\n\nif [ \"$SAGE_PORT\" = \"\" ]; then\n   if [ `uname | sed -e 's/WIN.\\+/WIN/'` = \"CYGWIN\" ]; then\n      echo \"Building or using SAGE with Cygwin is absolutely definitely\"\n      echo \"not supported, and will definitely not work.  The only way\"\n      echo \"to run SAGE on Windows, is via VMware (or Virtual PC or \"\n      echo \"some other virtualization system such as andLinux).\"\n      echo \"NOTE: SAGE used to support Cygwin several months ago (around March\"\n      echo \"2007), so you may have seen some old documentation about this.\"\n   fi\nfi\n\n```",
     "created_at": "2007-11-03T22:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/575",
     "type": "issue_comment",
@@ -232,7 +230,6 @@ archive/issue_comments_002977.json:
 ```
 
 Here is the interesting part of the script:
-
 
 ```
 
@@ -248,4 +245,3 @@ if [ "$SAGE_PORT" = "" ]; then
 fi
 
 ```
-

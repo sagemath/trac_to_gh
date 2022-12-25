@@ -3,7 +3,7 @@
 archive/issues_009826.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nReported by Justin C. Walker on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/4327cb6c3f565890#4327cb6c3f565890) (scroll down the thread for replies):\n\n```\nUpgraded from 4.5.3.a1, w/o problems.  Ran 'ptestlong', and one test failed.  Failure noted below.  I reran the test by hand and it passed.  Mac OS X, 10.5.8, Dual Quad Xeon.\n```\n\n\n\n```python\nsage -t  -long devel/sage/sage/interfaces/psage.py\n**********************************************************************\nFile \"/Users/Sage/sage-4.5.3.alpha1/devel/sage-main/sage/interfaces/psage.py\", line 35:\n     sage: print \"ignore this\";  w       # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n         self.run_one_example(test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n         print \"ignore this\";  w       # random output###line 35:\n     sage: print \"ignore this\";  w       # random output\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n         print_obj(sys.stdout, obj)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n         print >>out_stream, `obj`\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1670, in __repr__\n         s =  s.replace(self._name, self.__dict__['__custom_name'])\n     KeyError: '__custom_name' \n```\n\n\nSee [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.  The problem may be in `SAGE_LOCAL/bin/sage-test` and/or `sage-doctest`.\n\nDistantly related: #1991.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9827\n\n",
+    "body": "Assignee: mvngu\n\nReported by Justin C. Walker on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/4327cb6c3f565890#4327cb6c3f565890) (scroll down the thread for replies):\n\n```\nUpgraded from 4.5.3.a1, w/o problems.  Ran 'ptestlong', and one test failed.  Failure noted below.  I reran the test by hand and it passed.  Mac OS X, 10.5.8, Dual Quad Xeon.\n```\n\n```python\nsage -t  -long devel/sage/sage/interfaces/psage.py\n**********************************************************************\nFile \"/Users/Sage/sage-4.5.3.alpha1/devel/sage-main/sage/interfaces/psage.py\", line 35:\n     sage: print \"ignore this\";  w       # random output\nException raised:\n     Traceback (most recent call last):\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n         self.run_one_example(test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n         compileflags, 1) in test.globs\n       File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n         print \"ignore this\";  w       # random output###line 35:\n     sage: print \"ignore this\";  w       # random output\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n         print_obj(sys.stdout, obj)\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n         print >>out_stream, `obj`\n       File \"/Users/Sage/sage-4.5.3.alpha1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1670, in __repr__\n         s =  s.replace(self._name, self.__dict__['__custom_name'])\n     KeyError: '__custom_name' \n```\n\nSee [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.  The problem may be in `SAGE_LOCAL/bin/sage-test` and/or `sage-doctest`.\n\nDistantly related: #1991.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9827\n\n",
     "created_at": "2010-08-28T00:15:05Z",
     "labels": [
         "component: doctest",
@@ -23,8 +23,6 @@ Reported by Justin C. Walker on [sage-release](http://groups.google.com/group/sa
 ```
 Upgraded from 4.5.3.a1, w/o problems.  Ran 'ptestlong', and one test failed.  Failure noted below.  I reran the test by hand and it passed.  Mac OS X, 10.5.8, Dual Quad Xeon.
 ```
-
-
 
 ```python
 sage -t  -long devel/sage/sage/interfaces/psage.py
@@ -51,7 +49,6 @@ Exception raised:
      KeyError: '__custom_name' 
 ```
 
-
 See [this reply](http://groups.google.com/group/sage-release/browse_thread/thread/b2827cba9319bfed/14beffeda6842d4b#14beffeda6842d4b) (and possible follow-ups) for batch-testing results for `psage.py`.  The problem may be in `SAGE_LOCAL/bin/sage-test` and/or `sage-doctest`.
 
 Distantly related: #1991.
@@ -67,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9827
 archive/issue_comments_096772.json:
 ```json
 {
-    "body": "Near the top of `sage/interfaces/psage.py` is a possibly relevant note:\n\n```\nBUG -- currently non-idle PSage subprocesses do not stop when\n\\sage exits.  I would very much like to fix this but don't know how.\n```\n",
+    "body": "Near the top of `sage/interfaces/psage.py` is a possibly relevant note:\n\n```\nBUG -- currently non-idle PSage subprocesses do not stop when\n\\sage exits.  I would very much like to fix this but don't know how.\n```",
     "created_at": "2010-08-28T00:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9826",
     "type": "issue_comment",
@@ -82,7 +79,6 @@ Near the top of `sage/interfaces/psage.py` is a possibly relevant note:
 BUG -- currently non-idle PSage subprocesses do not stop when
 \sage exits.  I would very much like to fix this but don't know how.
 ```
-
 
 
 

@@ -123,7 +123,7 @@ OK, there's a patch up for #4597 with a positive review.
 archive/issue_comments_034280.json:
 ```json
 {
-    "body": "I had to rebase the following hunk from the above patch:\n\n```\n***************\n*** 10,24 ****\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n- # import the mpfr stuff from RealNumber becase it's included, not cimported\n- from sage.rings.real_mpfr cimport mpfr_t, mp_rnd_t\n- from sage.rings.real_mpfr cimport *\n- \n- cdef extern from \"mpfr.h\":\n-     int mpfr_mul_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_div_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_cmp_si (mpfr_t op1, signed long int op2)\n-     int mpfr_cmpabs (mpfr_t op1, mpfr_t op2)\n          \n  cdef class PolynomialRealDense(Polynomial):\n      \n--- 13,19 ----\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n+ from sage.libs.mpfr cimport *\n          \n  cdef class PolynomialRealDense(Polynomial):\n```\n\n\nOther than that everything looks fine. \n\nCheers,\n\nMichael",
+    "body": "I had to rebase the following hunk from the above patch:\n\n```\n***************\n*** 10,24 ****\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n- # import the mpfr stuff from RealNumber becase it's included, not cimported\n- from sage.rings.real_mpfr cimport mpfr_t, mp_rnd_t\n- from sage.rings.real_mpfr cimport *\n- \n- cdef extern from \"mpfr.h\":\n-     int mpfr_mul_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_div_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_cmp_si (mpfr_t op1, signed long int op2)\n-     int mpfr_cmpabs (mpfr_t op1, mpfr_t op2)\n          \n  cdef class PolynomialRealDense(Polynomial):\n      \n--- 13,19 ----\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n+ from sage.libs.mpfr cimport *\n          \n  cdef class PolynomialRealDense(Polynomial):\n```\n\nOther than that everything looks fine. \n\nCheers,\n\nMichael",
     "created_at": "2008-11-25T02:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4580",
     "type": "issue_comment",
@@ -160,7 +160,6 @@ I had to rebase the following hunk from the above patch:
           
   cdef class PolynomialRealDense(Polynomial):
 ```
-
 
 Other than that everything looks fine. 
 

@@ -3,7 +3,7 @@
 archive/issues_001495.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAccording to INSTALL.txt: CPU-Throttling, you have to do\n\n```\n/usr/bin/cpufreq-selector -g performance\n```\n\nBut with two cores you have to force the cpu1 to run at its peak frequency:\n\n\n```\nAs root:\ncp /sys/devices/system/cpu/cp0/cpufreq/scaling_governor \\\n    /sys/devices/system/cpu/cp1/cpufreq/scaling_governor\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1495\n\n",
+    "body": "Assignee: mabshoff\n\nAccording to INSTALL.txt: CPU-Throttling, you have to do\n\n```\n/usr/bin/cpufreq-selector -g performance\n```\nBut with two cores you have to force the cpu1 to run at its peak frequency:\n\n```\nAs root:\ncp /sys/devices/system/cpu/cp0/cpufreq/scaling_governor \\\n    /sys/devices/system/cpu/cp1/cpufreq/scaling_governor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1495\n\n",
     "created_at": "2007-12-13T23:16:08Z",
     "labels": [
         "component: distribution",
@@ -23,16 +23,13 @@ According to INSTALL.txt: CPU-Throttling, you have to do
 ```
 /usr/bin/cpufreq-selector -g performance
 ```
-
 But with two cores you have to force the cpu1 to run at its peak frequency:
-
 
 ```
 As root:
 cp /sys/devices/system/cpu/cp0/cpufreq/scaling_governor \
     /sys/devices/system/cpu/cp1/cpufreq/scaling_governor
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1495
@@ -68,7 +65,7 @@ Michael
 archive/issue_comments_009581.json:
 ```json
 {
-    "body": "\n```\njkantor: 1495 we can't fix and 1547  I don't know how to do\n[12:31pm] william_stein: #1495 -- should go in the docs somewhere\n[12:31pm] william_stein: Also, maybe we can check if the cpu throttling is on and immediately terminate the build with a help message.\n```\n",
+    "body": "```\njkantor: 1495 we can't fix and 1547  I don't know how to do\n[12:31pm] william_stein: #1495 -- should go in the docs somewhere\n[12:31pm] william_stein: Also, maybe we can check if the cpu throttling is on and immediately terminate the build with a help message.\n```",
     "created_at": "2008-01-19T20:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
@@ -77,13 +74,11 @@ archive/issue_comments_009581.json:
 }
 ```
 
-
 ```
 jkantor: 1495 we can't fix and 1547  I don't know how to do
 [12:31pm] william_stein: #1495 -- should go in the docs somewhere
 [12:31pm] william_stein: Also, maybe we can check if the cpu throttling is on and immediately terminate the build with a help message.
 ```
-
 
 
 

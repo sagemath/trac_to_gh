@@ -178,7 +178,7 @@ Code is basically good. Still running doctests. A few comments:
 archive/issue_comments_033002.json:
 ```json
 {
-    "body": "Replying to [comment:4 dmharvey]:\n\n>  * Shouldn't have \"fixes \\#4477\" (what will that mean in two years)\n\nI disagree. Any doctest marked that way should never be changed since it fixes a specific bug and hence refers to the trac ticket. Tests like that should probably be moved to a TESTS section in the long term, but we can deal with that later.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 dmharvey]:\n\n>  * Shouldn't have \"fixes \\#4477\" (what will that mean in two years)\n\n\nI disagree. Any doctest marked that way should never be changed since it fixes a specific bug and hence refers to the trac ticket. Tests like that should probably be moved to a TESTS section in the long term, but we can deal with that later.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T03:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4477",
     "type": "issue_comment",
@@ -190,6 +190,7 @@ archive/issue_comments_033002.json:
 Replying to [comment:4 dmharvey]:
 
 >  * Shouldn't have "fixes \#4477" (what will that mean in two years)
+
 
 I disagree. Any doctest marked that way should never be changed since it fixes a specific bug and hence refers to the trac ticket. Tests like that should probably be moved to a TESTS section in the long term, but we can deal with that later.
 
@@ -276,7 +277,7 @@ Second attempt, to address my previous concerns. Apply both patches.
 archive/issue_comments_033007.json:
 ```json
 {
-    "body": "Is this expected? \n\n\n```\nsage: R.<x> = ZZ[[]]\nsage: x.exp()\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"power_series_ring_element.pyx\", line 1383, in sage.rings.power_series_ring_element.PowerSeries.exp (sage/rings/power_series_ring_element.c:9850)\n  File \"power_series_ring_element.pyx\", line 1305, in sage.rings.power_series_ring_element.PowerSeries.solve_linear_de (sage/rings/power_series_ring_element.c:9707)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1650, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11124)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 252, in __call__\n    return C(self, x, check, is_gen, construct=construct)\n  File \"polynomial_integer_dense_flint.pyx\", line 224, in sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint.__init__ (sage/rings/polynomial/polynomial_integer_dense_flint.cpp:4981)\n  File \"parent.pyx\", line 293, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3828)\n  File \"parent.pyx\", line 284, in sage.structure.parent.__call__ (sage/structure/parent.c:3712)\n  File \"rational.pyx\", line 2288, in sage.rings.rational.Q_to_Z._call_ (sage/rings/rational.c:14682)\nTypeError: no conversion of this rational to integer\n```\n\n\nThe sqrt function automatically passes to the rationals. \n\n```\nsage: (1+x).sqrt()\n1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + 7/256*x^5 - 21/1024*x^6 + 33/2048*x^7 - 429/32768*x^8 + 715/65536*x^9 - 2431/262144*x^10 + 4199/524288*x^11 - 29393/4194304*x^12 + 52003/8388608*x^13 - 185725/33554432*x^14 + 334305/67108864*x^15 - 9694845/2147483648*x^16 + 17678835/4294967296*x^17 - 64822395/17179869184*x^18 + 119409675/34359738368*x^19 + O(x^20)\n```\n",
+    "body": "Is this expected? \n\n```\nsage: R.<x> = ZZ[[]]\nsage: x.exp()\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"power_series_ring_element.pyx\", line 1383, in sage.rings.power_series_ring_element.PowerSeries.exp (sage/rings/power_series_ring_element.c:9850)\n  File \"power_series_ring_element.pyx\", line 1305, in sage.rings.power_series_ring_element.PowerSeries.solve_linear_de (sage/rings/power_series_ring_element.c:9707)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1648, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11103)\n  File \"power_series_ring_element.pyx\", line 1650, in sage.rings.power_series_ring_element._solve_linear_de (sage/rings/power_series_ring_element.c:11124)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 252, in __call__\n    return C(self, x, check, is_gen, construct=construct)\n  File \"polynomial_integer_dense_flint.pyx\", line 224, in sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint.__init__ (sage/rings/polynomial/polynomial_integer_dense_flint.cpp:4981)\n  File \"parent.pyx\", line 293, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3828)\n  File \"parent.pyx\", line 284, in sage.structure.parent.__call__ (sage/structure/parent.c:3712)\n  File \"rational.pyx\", line 2288, in sage.rings.rational.Q_to_Z._call_ (sage/rings/rational.c:14682)\nTypeError: no conversion of this rational to integer\n```\n\nThe sqrt function automatically passes to the rationals. \n\n```\nsage: (1+x).sqrt()\n1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + 7/256*x^5 - 21/1024*x^6 + 33/2048*x^7 - 429/32768*x^8 + 715/65536*x^9 - 2431/262144*x^10 + 4199/524288*x^11 - 29393/4194304*x^12 + 52003/8388608*x^13 - 185725/33554432*x^14 + 334305/67108864*x^15 - 9694845/2147483648*x^16 + 17678835/4294967296*x^17 - 64822395/17179869184*x^18 + 119409675/34359738368*x^19 + O(x^20)\n```",
     "created_at": "2008-12-09T19:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4477",
     "type": "issue_comment",
@@ -286,7 +287,6 @@ archive/issue_comments_033007.json:
 ```
 
 Is this expected? 
-
 
 ```
 sage: R.<x> = ZZ[[]]
@@ -307,14 +307,12 @@ Traceback (most recent call last):
 TypeError: no conversion of this rational to integer
 ```
 
-
 The sqrt function automatically passes to the rationals. 
 
 ```
 sage: (1+x).sqrt()
 1 + 1/2*x - 1/8*x^2 + 1/16*x^3 - 5/128*x^4 + 7/256*x^5 - 21/1024*x^6 + 33/2048*x^7 - 429/32768*x^8 + 715/65536*x^9 - 2431/262144*x^10 + 4199/524288*x^11 - 29393/4194304*x^12 + 52003/8388608*x^13 - 185725/33554432*x^14 + 334305/67108864*x^15 - 9694845/2147483648*x^16 + 17678835/4294967296*x^17 - 64822395/17179869184*x^18 + 119409675/34359738368*x^19 + O(x^20)
 ```
-
 
 
 

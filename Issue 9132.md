@@ -3,7 +3,7 @@
 archive/issues_009132.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\n\n```\nOn Thu, Jun 3, 2010 at 8:44 AM, John Palmieri\n wrote:\n> Should .hgignore include a line like\n>\n> \\.rej$\n\nDefinitely not.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9132\n\n",
+    "body": "Assignee: @jasongrout\n\n```\nOn Thu, Jun 3, 2010 at 8:44 AM, John Palmieri\n wrote:\n> Should .hgignore include a line like\n>\n> \\.rej$\n\nDefinitely not.  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9132\n\n",
     "created_at": "2010-06-03T15:58:09Z",
     "labels": [
         "component: misc",
@@ -18,7 +18,6 @@ archive/issues_009132.json:
 ```
 Assignee: @jasongrout
 
-
 ```
 On Thu, Jun 3, 2010 at 8:44 AM, John Palmieri
  wrote:
@@ -28,7 +27,6 @@ On Thu, Jun 3, 2010 at 8:44 AM, John Palmieri
 
 Definitely not.  
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9132
 

@@ -71,7 +71,7 @@ Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/tra
 archive/issue_comments_028654.json:
 ```json
 {
-    "body": "Unfortunately against my current alpha3 merge tree (the only relevant patch here over alpha2 is probably #3988):\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < trac_3996.patch \npatching file sage/interfaces/singular.py\nHunk #13 succeeded at 1010 with fuzz 2.\nHunk #14 succeeded at 1106 (offset 44 lines).\nHunk #15 FAILED at 1168.\nHunk #16 succeeded at 1350 (offset 44 lines).\nHunk #17 succeeded at 1375 (offset 44 lines).\nHunk #18 succeeded at 1399 (offset 44 lines).\nHunk #19 succeeded at 1474 (offset 44 lines).\nHunk #20 succeeded at 1505 (offset 44 lines).\nHunk #21 succeeded at 1524 (offset 44 lines).\nHunk #22 succeeded at 1575 (offset 44 lines).\nHunk #23 succeeded at 1625 (offset 44 lines).\n1 out of 23 hunks FAILED -- saving rejects to file sage/interfaces/singular.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Unfortunately against my current alpha3 merge tree (the only relevant patch here over alpha2 is probably #3988):\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/devel/sage$ patch -p1 --dry-run < trac_3996.patch \npatching file sage/interfaces/singular.py\nHunk #13 succeeded at 1010 with fuzz 2.\nHunk #14 succeeded at 1106 (offset 44 lines).\nHunk #15 FAILED at 1168.\nHunk #16 succeeded at 1350 (offset 44 lines).\nHunk #17 succeeded at 1375 (offset 44 lines).\nHunk #18 succeeded at 1399 (offset 44 lines).\nHunk #19 succeeded at 1474 (offset 44 lines).\nHunk #20 succeeded at 1505 (offset 44 lines).\nHunk #21 succeeded at 1524 (offset 44 lines).\nHunk #22 succeeded at 1575 (offset 44 lines).\nHunk #23 succeeded at 1625 (offset 44 lines).\n1 out of 23 hunks FAILED -- saving rejects to file sage/interfaces/singular.py.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T22:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ Hunk #22 succeeded at 1575 (offset 44 lines).
 Hunk #23 succeeded at 1625 (offset 44 lines).
 1 out of 23 hunks FAILED -- saving rejects to file sage/interfaces/singular.py.rej
 ```
-
 
 Cheers,
 

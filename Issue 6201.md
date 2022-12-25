@@ -3,7 +3,7 @@
 archive/issues_006201.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is inconsistent:\n\n\n```\nZZ(); QQ(); RR(); CC()\n\n0\n0\n0.000000000000000\nTraceback (click to the left for traceback)\n...\nTypeError: __call__() takes at least 2 arguments (1 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6201\n\n",
+    "body": "Assignee: somebody\n\nThis is inconsistent:\n\n```\nZZ(); QQ(); RR(); CC()\n\n0\n0\n0.000000000000000\nTraceback (click to the left for traceback)\n...\nTypeError: __call__() takes at least 2 arguments (1 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6201\n\n",
     "created_at": "2009-06-03T21:14:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 This is inconsistent:
 
-
 ```
 ZZ(); QQ(); RR(); CC()
 
@@ -31,7 +30,6 @@ Traceback (click to the left for traceback)
 ...
 TypeError: __call__() takes at least 2 arguments (1 given)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6201
 

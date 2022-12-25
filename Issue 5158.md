@@ -3,7 +3,7 @@
 archive/issues_005158.json:
 ```json
 {
-    "body": "Assignee: whuss\n\n\n```\nsage: factorial(x)^2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n...\n\nTypeError: unable to make sense of Maxima expression 'x!^2' in Sage\n```\n\n\nThe attached patch fixes this.\n\nCheers,\n\nWilfried\n\nIssue created by migration from https://trac.sagemath.org/ticket/5158\n\n",
+    "body": "Assignee: whuss\n\n```\nsage: factorial(x)^2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n...\n\nTypeError: unable to make sense of Maxima expression 'x!^2' in Sage\n```\n\nThe attached patch fixes this.\n\nCheers,\n\nWilfried\n\nIssue created by migration from https://trac.sagemath.org/ticket/5158\n\n",
     "created_at": "2009-02-02T13:52:16Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_005158.json:
 ```
 Assignee: whuss
 
-
 ```
 sage: factorial(x)^2
 ---------------------------------------------------------------------------
@@ -29,7 +28,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unable to make sense of Maxima expression 'x!^2' in Sage
 ```
-
 
 The attached patch fixes this.
 

@@ -3,7 +3,7 @@
 archive/issues_002515.json:
 ```json
 {
-    "body": "Assignee: joyner\n\n\n```\nExtendedRationalField(1)/ExtendedRationalField(0)\n```\n\nyields\n\n```\nZeroDivisionError: Rational division by zero\n```\n\nSame for ExtendedIntegerRing(1)/ExtendedIntegerRing(0)\n\nPresumably these should both yield +Infinity?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2515\n\n",
+    "body": "Assignee: joyner\n\n```\nExtendedRationalField(1)/ExtendedRationalField(0)\n```\nyields\n\n```\nZeroDivisionError: Rational division by zero\n```\nSame for ExtendedIntegerRing(1)/ExtendedIntegerRing(0)\n\nPresumably these should both yield +Infinity?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2515\n\n",
     "created_at": "2008-03-14T08:10:23Z",
     "labels": [
         "component: group_theory",
@@ -19,17 +19,14 @@ archive/issues_002515.json:
 ```
 Assignee: joyner
 
-
 ```
 ExtendedRationalField(1)/ExtendedRationalField(0)
 ```
-
 yields
 
 ```
 ZeroDivisionError: Rational division by zero
 ```
-
 Same for ExtendedIntegerRing(1)/ExtendedIntegerRing(0)
 
 Presumably these should both yield +Infinity?

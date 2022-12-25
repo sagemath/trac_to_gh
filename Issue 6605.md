@@ -165,7 +165,7 @@ archive/issue_events_015593.json:
 archive/issue_comments_053981.json:
 ```json
 {
-    "body": "The patch applies but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6605/trac_6605-docbuild-check.patch && hg qpush\nadding trac_6605-docbuild-check.patch to series file\napplying trac_6605-docbuild-check.patch\npatching file doc/common/builder.py\nHunk #3 succeeded at 614 with fuzz 1 (offset -44 lines).\nNow at: trac_6605-docbuild-check.patch\n```\n",
+    "body": "The patch applies but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6605/trac_6605-docbuild-check.patch && hg qpush\nadding trac_6605-docbuild-check.patch to series file\napplying trac_6605-docbuild-check.patch\npatching file doc/common/builder.py\nHunk #3 succeeded at 614 with fuzz 1 (offset -44 lines).\nNow at: trac_6605-docbuild-check.patch\n```",
     "created_at": "2009-07-26T23:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
@@ -187,13 +187,12 @@ Now at: trac_6605-docbuild-check.patch
 
 
 
-
 ---
 
 archive/issue_comments_053982.json:
 ```json
 {
-    "body": "The patch `trac_6605-docbuild-check.patch` is buggy when it comes to (re)building the documentation of a new release. Assume you have applied this patch to Sage 4.1.1.alpha0, then build a source release with\n\n```\nsage -sdist <version>\n```\n\nor a binary release with\n\n```\nsage -bdist <version>\n```\n\nAfter that, upgrade a previous release to this new release and rebuild the documentation. You then get this error message:\n\n```\n[mvngu@sage sage-4.1.1.alpha1-test-x86_64-Linux]$ ./sage -docbuild tutorial htmlTraceback (most recent call last):\n  File \"/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py\", line 673, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py\", line 616, in get_builder\n    elif name in get_documents() or name in AllBuilder().get_all_documents():\nNameError: global name 'get_documents' is not defined\n```\n\nThe same error is raised if you rebuild the documentation of the binary version of the new release. I'm reopening this ticket and marking it as needs work.",
+    "body": "The patch `trac_6605-docbuild-check.patch` is buggy when it comes to (re)building the documentation of a new release. Assume you have applied this patch to Sage 4.1.1.alpha0, then build a source release with\n\n```\nsage -sdist <version>\n```\nor a binary release with\n\n```\nsage -bdist <version>\n```\nAfter that, upgrade a previous release to this new release and rebuild the documentation. You then get this error message:\n\n```\n[mvngu@sage sage-4.1.1.alpha1-test-x86_64-Linux]$ ./sage -docbuild tutorial htmlTraceback (most recent call last):\n  File \"/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py\", line 673, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/mvngu/sage-4.1.1.alpha1-test-x86_64-Linux/devel/sage/doc/common/builder.py\", line 616, in get_builder\n    elif name in get_documents() or name in AllBuilder().get_all_documents():\nNameError: global name 'get_documents' is not defined\n```\nThe same error is raised if you rebuild the documentation of the binary version of the new release. I'm reopening this ticket and marking it as needs work.",
     "created_at": "2009-07-27T05:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6605",
     "type": "issue_comment",
@@ -207,13 +206,11 @@ The patch `trac_6605-docbuild-check.patch` is buggy when it comes to (re)buildin
 ```
 sage -sdist <version>
 ```
-
 or a binary release with
 
 ```
 sage -bdist <version>
 ```
-
 After that, upgrade a previous release to this new release and rebuild the documentation. You then get this error message:
 
 ```
@@ -224,7 +221,6 @@ After that, upgrade a previous release to this new release and rebuild the docum
     elif name in get_documents() or name in AllBuilder().get_all_documents():
 NameError: global name 'get_documents' is not defined
 ```
-
 The same error is raised if you rebuild the documentation of the binary version of the new release. I'm reopening this ticket and marking it as needs work.
 
 

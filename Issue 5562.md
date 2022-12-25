@@ -3,7 +3,7 @@
 archive/issues_005562.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion vector polynomial ring\n\nThis is strange: it matters how many variables are specified.  This fails and I think this is a bug:\n\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.el\\\nement.Vector.__mul__ (sage/structure/element.c:10435)()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coe\\\nrce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5847)()\n\nTypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1 over the integral domain Multivariate Polynomial Ring i\\\nn u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'\n```\n\n\nBut both of these succeed:\n\n\n```\nsage: R.<u, v> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\n\n```\nsage: R.<u> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5562\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion vector polynomial ring\n\nThis is strange: it matters how many variables are specified.  This fails and I think this is a bug:\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.el\\\nement.Vector.__mul__ (sage/structure/element.c:10435)()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coe\\\nrce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5847)()\n\nTypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1 over the integral domain Multivariate Polynomial Ring i\\\nn u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'\n```\n\nBut both of these succeed:\n\n```\nsage: R.<u, v> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n```\nsage: R.<u> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5562\n\n",
     "created_at": "2009-03-18T23:00:00Z",
     "labels": [
         "component: linear algebra",
@@ -23,7 +23,6 @@ CC:  @robertwb
 Keywords: coercion vector polynomial ring
 
 This is strange: it matters how many variables are specified.  This fails and I think this is a bug:
-
 
 ```
 sage: R.<u> = PolynomialRing(RDF, 1, 'u')
@@ -45,9 +44,7 @@ TypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1
 n u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'
 ```
 
-
 But both of these succeed:
-
 
 ```
 sage: R.<u, v> = RDF[]
@@ -57,8 +54,6 @@ sage: v1 * v2
 2.0*u
 ```
 
-
-
 ```
 sage: R.<u> = RDF[]
 sage: v1 = vector([u])
@@ -66,7 +61,6 @@ sage: v2 = vector([CDF(2)])
 sage: v1 * v2
 2.0*u
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5562
 
@@ -97,7 +91,7 @@ Changing status from new to needs_review.
 archive/issue_comments_043204.json:
 ```json
 {
-    "body": "This seems to be fixed in `5.5.rc0`\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n",
+    "body": "This seems to be fixed in `5.5.rc0`\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```",
     "created_at": "2012-12-10T21:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
@@ -115,7 +109,6 @@ sage: v2 = vector([CDF(2)])
 sage: v1 * v2
 2.0*u
 ```
-
 
 
 
@@ -141,7 +134,7 @@ archive/issue_events_013083.json:
 archive/issue_comments_043205.json:
 ```json
 {
-    "body": "I've attached a patch that adds a doctest that makes sure this keeps working.\n\nThe patch also removes plenty of trailing whitespace in the affected file. I got this for free by putting \n\n```\n(add-hook 'before-save-hook 'delete-trailing-whitespace)\n```\n\ninto my \"`.emacs.rc`\".\n\nBut maybe it might have been better to just give the \"wontfix\" a positive review instead...",
+    "body": "I've attached a patch that adds a doctest that makes sure this keeps working.\n\nThe patch also removes plenty of trailing whitespace in the affected file. I got this for free by putting \n\n```\n(add-hook 'before-save-hook 'delete-trailing-whitespace)\n```\ninto my \"`.emacs.rc`\".\n\nBut maybe it might have been better to just give the \"wontfix\" a positive review instead...",
     "created_at": "2013-01-26T14:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
@@ -157,7 +150,6 @@ The patch also removes plenty of trailing whitespace in the affected file. I got
 ```
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ```
-
 into my "`.emacs.rc`".
 
 But maybe it might have been better to just give the "wontfix" a positive review instead...
@@ -203,7 +195,7 @@ archive/issue_events_013085.json:
 archive/issue_comments_043206.json:
 ```json
 {
-    "body": "Hey,\n\nFor doctest formatting, I would change:\n\n```\n    sage: # check that #5562 has been fixed\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\n\nto\n\n```\nCheck that :trac:`5562` has been fixed::\n\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\n\n\nI think the trailing whitespace removal should be okay...\n\nBest,\n\nTravis",
+    "body": "Hey,\n\nFor doctest formatting, I would change:\n\n```\n    sage: # check that #5562 has been fixed\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\nto\n\n```\nCheck that :trac:`5562` has been fixed::\n\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\n\nI think the trailing whitespace removal should be okay...\n\nBest,\n\nTravis",
     "created_at": "2013-01-28T17:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
@@ -221,7 +213,6 @@ For doctest formatting, I would change:
     sage: R.<u> = PolynomialRing(RDF, 1, 'u')
 ...
 ```
-
 to
 
 ```
@@ -230,7 +221,6 @@ Check that :trac:`5562` has been fixed::
     sage: R.<u> = PolynomialRing(RDF, 1, 'u')
 ...
 ```
-
 
 I think the trailing whitespace removal should be okay...
 
@@ -340,7 +330,7 @@ Looks good to me. Thanks Christian.
 archive/issue_comments_043212.json:
 ```json
 {
-    "body": "Replying to [comment:6 tscrim]:\n> Looks good to me. Thanks Christian.\n\nIndeed, my working copy had been garbled, presumably by running \"hg import\" earlier when I meant \"hg qimport\" which made me believe that this ticket had somehow magically be merged already... anyway, glad we got rid of this now ;-)\n\nCheers,\nChristian",
+    "body": "Replying to [comment:6 tscrim]:\n> Looks good to me. Thanks Christian.\n\n\nIndeed, my working copy had been garbled, presumably by running \"hg import\" earlier when I meant \"hg qimport\" which made me believe that this ticket had somehow magically be merged already... anyway, glad we got rid of this now ;-)\n\nCheers,\nChristian",
     "created_at": "2013-01-29T18:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5562",
     "type": "issue_comment",
@@ -351,6 +341,7 @@ archive/issue_comments_043212.json:
 
 Replying to [comment:6 tscrim]:
 > Looks good to me. Thanks Christian.
+
 
 Indeed, my working copy had been garbled, presumably by running "hg import" earlier when I meant "hg qimport" which made me believe that this ticket had somehow magically be merged already... anyway, glad we got rid of this now ;-)
 

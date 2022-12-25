@@ -92,7 +92,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_057066.json:
 ```json
 {
-    "body": "There is a branch around there:\n\n```\nu/chapoton/supercharacters\n```\n\ncontaining Franco's rather complete implementation. It almost works and needs more documentation.",
+    "body": "There is a branch around there:\n\n```\nu/chapoton/supercharacters\n```\ncontaining Franco's rather complete implementation. It almost works and needs more documentation.",
     "created_at": "2015-04-30T14:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6924",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ There is a branch around there:
 ```
 u/chapoton/supercharacters
 ```
-
 containing Franco's rather complete implementation. It almost works and needs more documentation.
 
 

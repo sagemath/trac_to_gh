@@ -3,7 +3,7 @@
 archive/issues_000385.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @burcin @williamstein @mwhansen\n\n\n```\nOn 6/7/07, Randy LeVeque <rjl@amath.washington.edu> wrote:\n> By the way, I'm just trying to figure out how sage does Taylor series.\n> Maybe you can pass this on to whoever the best person is to chat with about\n> this...\n> \n> In maple I can do things like\n> \n> > mtaylor(u(x+h,t+k),[h,k],3);\n>                                                                      2\n> u(x, t) + D[1](u)(x, t) h + D[2](u)(x, t) k + 1/2 D[1, 1](u)(x, t) h\n> \n>                                                      2\n>       + h D[1, 2](u)(x, t) k + 1/2 D[2, 2](u)(x, t) k\n> \n> \n> which is very convenient for numerical analysis when computing truncation\n> errors of finite difference methods (h and k are mesh widths in space and\n> time).  In sage a general expansion of this sort doesn't seem possible even\n> in a single variable, e.g.,\n> \n> sage: taylor(u(x+h),h,0,4)\n> x + h\n> \n> Apparently an undefined function like u(x) is taken to be the identity map?\n\nTo define a formal function, do u = function('u').  Then\n\nsage: u = function('u')\nsage: u(x + h)\nu(x + h)\nsage: diff(u(x+h), x)\ndiff(u(x + h), x, 1)\n\nTo get the Taylor expansion you would do this:\n\nsage: taylor(u(x+h),h,0,4)\n\n-- however -- this currently doesn't work in SAGE since we hadn't considered\ndoing this yet.   What happens is Maxima does the computation and outputs\nthe following expression:\n\n'u(x)+(?%at('diff('u(x+h),h,1),h=0))*h+(?%at('diff('u(x+h),h,2),h=0))*h^2/2+(?%at('diff('u(x+h),h,3),h=0))*h^3/6+(?%at('diff('u(x+h),h,4),h=0))*h^4/24\n\nSAGE doesn't know yet how to parse the \"at\" function, so you get\nan error -- it will have to be added.   [Note that I don't necessarily consider\nmaxima the ultimate underlying engine for SAGE's symbolic computation\ncapabilities -- but it does provide a very quick way for SAGE to have\na powerful symbolic system for which a lot of subtle bugs have\nalready been fixed (over the last 40 years of Maxima development). ]\n\nDefinitely point out lots of things like this in your talk at SD4!\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/385\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @burcin @williamstein @mwhansen\n\n```\nOn 6/7/07, Randy LeVeque <rjl@amath.washington.edu> wrote:\n> By the way, I'm just trying to figure out how sage does Taylor series.\n> Maybe you can pass this on to whoever the best person is to chat with about\n> this...\n> \n> In maple I can do things like\n> \n> > mtaylor(u(x+h,t+k),[h,k],3);\n>                                                                      2\n> u(x, t) + D[1](u)(x, t) h + D[2](u)(x, t) k + 1/2 D[1, 1](u)(x, t) h\n> \n>                                                      2\n>       + h D[1, 2](u)(x, t) k + 1/2 D[2, 2](u)(x, t) k\n> \n> \n> which is very convenient for numerical analysis when computing truncation\n> errors of finite difference methods (h and k are mesh widths in space and\n> time).  In sage a general expansion of this sort doesn't seem possible even\n> in a single variable, e.g.,\n> \n> sage: taylor(u(x+h),h,0,4)\n> x + h\n> \n> Apparently an undefined function like u(x) is taken to be the identity map?\n\nTo define a formal function, do u = function('u').  Then\n\nsage: u = function('u')\nsage: u(x + h)\nu(x + h)\nsage: diff(u(x+h), x)\ndiff(u(x + h), x, 1)\n\nTo get the Taylor expansion you would do this:\n\nsage: taylor(u(x+h),h,0,4)\n\n-- however -- this currently doesn't work in SAGE since we hadn't considered\ndoing this yet.   What happens is Maxima does the computation and outputs\nthe following expression:\n\n'u(x)+(?%at('diff('u(x+h),h,1),h=0))*h+(?%at('diff('u(x+h),h,2),h=0))*h^2/2+(?%at('diff('u(x+h),h,3),h=0))*h^3/6+(?%at('diff('u(x+h),h,4),h=0))*h^4/24\n\nSAGE doesn't know yet how to parse the \"at\" function, so you get\nan error -- it will have to be added.   [Note that I don't necessarily consider\nmaxima the ultimate underlying engine for SAGE's symbolic computation\ncapabilities -- but it does provide a very quick way for SAGE to have\na powerful symbolic system for which a lot of subtle bugs have\nalready been fixed (over the last 40 years of Maxima development). ]\n\nDefinitely point out lots of things like this in your talk at SD4!\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/385\n\n",
     "created_at": "2007-06-07T18:51:34Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_000385.json:
 Assignee: @williamstein
 
 CC:  @jasongrout @burcin @williamstein @mwhansen
-
 
 ```
 On 6/7/07, Randy LeVeque <rjl@amath.washington.edu> wrote:
@@ -76,7 +75,6 @@ Definitely point out lots of things like this in your talk at SD4!
 
  -- William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/385
 
@@ -250,7 +248,7 @@ Based on 4.1.2.alpha4
 archive/issue_comments_001883.json:
 ```json
 {
-    "body": "Attachment [trac_385-at-evaluate.patch](tarball://root/attachments/some-uuid/ticket385/trac_385-at-evaluate.patch) by @kcrisman created at 2009-10-12 16:49:04\n\nReplying to [comment:6 robert.marik]:\n> Attachment 'trac_385-at-evaluate.patch' not found :(\n\nIt must have gotten lost somewhere during the latest Trac outage.   This should work now.",
+    "body": "Attachment [trac_385-at-evaluate.patch](tarball://root/attachments/some-uuid/ticket385/trac_385-at-evaluate.patch) by @kcrisman created at 2009-10-12 16:49:04\n\nReplying to [comment:6 robert.marik]:\n> Attachment 'trac_385-at-evaluate.patch' not found :(\n\n\nIt must have gotten lost somewhere during the latest Trac outage.   This should work now.",
     "created_at": "2009-10-12T16:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/385",
     "type": "issue_comment",
@@ -263,6 +261,7 @@ Attachment [trac_385-at-evaluate.patch](tarball://root/attachments/some-uuid/tic
 
 Replying to [comment:6 robert.marik]:
 > Attachment 'trac_385-at-evaluate.patch' not found :(
+
 
 It must have gotten lost somewhere during the latest Trac outage.   This should work now.
 

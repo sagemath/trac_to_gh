@@ -3,7 +3,7 @@
 archive/issues_002354.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
+    "body": "Assignee: @williamstein\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug\n```\n\nbut should be\n\n```\n        _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2354\n\n",
     "created_at": "2008-02-29T17:41:14Z",
     "labels": [
         "component: linear algebra",
@@ -18,18 +18,15 @@ archive/issues_002354.json:
 ```
 Assignee: @williamstein
 
-
 ```
         _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bug
 ```
-
 
 but should be
 
 ```
         _n.flags = _n.flags|(NPY_OWNDATA) # this sets the ownership bit
 ```
-
 
 
 

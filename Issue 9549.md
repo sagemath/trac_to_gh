@@ -3,7 +3,7 @@
 archive/issues_009549.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe class `InfinitePolynomialRing_sparse` defines two methods called `is_field()`. The second definition rejects keyword arguments. This prevents from creating polynomial rings over infinite polynomial rings:\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: InfinitePolynomialRing(QQ, 'a')['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5, Release Date: 2010-07-16                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/opt/sage-4.5/<ipython console> in <module>()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    420             R = m.PolynomialRing_dense_padic_ring_fixed_mod(base_ring, name)\n    421 \n--> 422         elif base_ring.is_field(proof = False):\n    423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n\nTypeError: is_field() got an unexpected keyword argument 'proof'\n```\n\n\nThere is a similar issue with ``is_integral_domain``, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9549\n\n",
+    "body": "Assignee: @malb\n\nThe class `InfinitePolynomialRing_sparse` defines two methods called `is_field()`. The second definition rejects keyword arguments. This prevents from creating polynomial rings over infinite polynomial rings:\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: InfinitePolynomialRing(QQ, 'a')['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5, Release Date: 2010-07-16                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/opt/sage-4.5/<ipython console> in <module>()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    420             R = m.PolynomialRing_dense_padic_ring_fixed_mod(base_ring, name)\n    421 \n--> 422         elif base_ring.is_field(proof = False):\n    423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n\nTypeError: is_field() got an unexpected keyword argument 'proof'\n```\n\nThere is a similar issue with ``is_integral_domain``, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9549\n\n",
     "created_at": "2010-07-19T11:47:08Z",
     "labels": [
         "component: commutative algebra",
@@ -49,7 +49,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: is_field() got an unexpected keyword argument 'proof'
 ```
-
 
 There is a similar issue with ``is_integral_domain``, too.
 
@@ -100,7 +99,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091893.json:
 ```json
 {
-    "body": "Replying to [comment:1 mmezzarobba]:\n> Please disregard (or better, delete) the previous attachment.\n\nI have now replaced it with the correct file. (It seems that for some reason, unprivilegied trac users are allowed to replace attached files but not to delete them??!)",
+    "body": "Replying to [comment:1 mmezzarobba]:\n> Please disregard (or better, delete) the previous attachment.\n\n\nI have now replaced it with the correct file. (It seems that for some reason, unprivilegied trac users are allowed to replace attached files but not to delete them??!)",
     "created_at": "2010-07-19T12:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
@@ -112,6 +111,7 @@ archive/issue_comments_091893.json:
 Replying to [comment:1 mmezzarobba]:
 > Please disregard (or better, delete) the previous attachment.
 
+
 I have now replaced it with the correct file. (It seems that for some reason, unprivilegied trac users are allowed to replace attached files but not to delete them??!)
 
 
@@ -121,7 +121,7 @@ I have now replaced it with the correct file. (It seems that for some reason, un
 archive/issue_comments_091894.json:
 ```json
 {
-    "body": "You probably don't want the line\n\n\n```\nprint \"coucou\" \n```\n\n\nin the patch.",
+    "body": "You probably don't want the line\n\n```\nprint \"coucou\" \n```\n\nin the patch.",
     "created_at": "2010-07-19T17:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
@@ -132,11 +132,9 @@ archive/issue_comments_091894.json:
 
 You probably don't want the line
 
-
 ```
 print "coucou" 
 ```
-
 
 in the patch.
 
@@ -201,7 +199,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_091898.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> You probably don't want the line\n> \n> {{{\n> print \"coucou\" \n> }}}\n> \n> in the patch.\n\nSorry--I was sure I had double-checked that it wasn't in the patch after uploading it... :-/ Thanks for spotting my blunder.",
+    "body": "Replying to [comment:3 mhansen]:\n> You probably don't want the line\n> \n> \n> ```\n> print \"coucou\" \n> ```\n> \n> in the patch.\n\n\nSorry--I was sure I had double-checked that it wasn't in the patch after uploading it... :-/ Thanks for spotting my blunder.",
     "created_at": "2010-07-19T20:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
@@ -213,11 +211,13 @@ archive/issue_comments_091898.json:
 Replying to [comment:3 mhansen]:
 > You probably don't want the line
 > 
-> {{{
+> 
+> ```
 > print "coucou" 
-> }}}
+> ```
 > 
 > in the patch.
+
 
 Sorry--I was sure I had double-checked that it wasn't in the patch after uploading it... :-/ Thanks for spotting my blunder.
 

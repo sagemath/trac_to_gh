@@ -3,7 +3,7 @@
 archive/issues_006322.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 92:\n    sage: K.galois_group(type=\"gap\", algorithm='magma')    # optional\nExpected:\n    verbose...\n    Galois group Transitive group number 2 of degree 3 of\n    the Number Field in a with defining polynomial x^3 - 2\nGot:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py\n\t [12.4 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6322\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 92:\n    sage: K.galois_group(type=\"gap\", algorithm='magma')    # optional\nExpected:\n    verbose...\n    Galois group Transitive group number 2 of degree 3 of\n    the Number Field in a with defining polynomial x^3 - 2\nGot:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py\n\t [12.4 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6322\n\n",
     "created_at": "2009-06-16T14:52:53Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006322.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst
@@ -37,7 +36,6 @@ Got:
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_nf_galois_groups.py
 	 [12.4 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6322
 
@@ -293,7 +291,7 @@ I do not have magma either. Do we know somebody that has magma ?
 archive/issue_comments_050359.json:
 ```json
 {
-    "body": "Replying to [comment:8 chapoton]:\n> I do not have magma either.\n\nThen why do you care about this ticket???",
+    "body": "Replying to [comment:8 chapoton]:\n> I do not have magma either.\n\n\nThen why do you care about this ticket???",
     "created_at": "2015-10-10T21:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6322",
     "type": "issue_comment",
@@ -304,6 +302,7 @@ archive/issue_comments_050359.json:
 
 Replying to [comment:8 chapoton]:
 > I do not have magma either.
+
 
 Then why do you care about this ticket???
 
@@ -395,7 +394,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050364.json:
 ```json
 {
-    "body": "The usual syntax is\n\n```\n# optional - magma database_gap\n```\n\nI don't know if what you did works or not, but it's better to change it.",
+    "body": "The usual syntax is\n\n```\n# optional - magma database_gap\n```\nI don't know if what you did works or not, but it's better to change it.",
     "created_at": "2015-10-17T20:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6322",
     "type": "issue_comment",
@@ -409,7 +408,6 @@ The usual syntax is
 ```
 # optional - magma database_gap
 ```
-
 I don't know if what you did works or not, but it's better to change it.
 
 

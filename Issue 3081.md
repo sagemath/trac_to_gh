@@ -130,7 +130,7 @@ What is based on? I can't get it to apply on either 3.0 or 3.0.1.alpha1.
 archive/issue_comments_021205.json:
 ```json
 {
-    "body": "QUESTION:\n\nYou've rewritten some of the functions to be more general, e.g., this\n\n```\n707\t \t            z *= zeta \n708\t \t            g += phi(c)*z \n```\n\nbecomes this:\n\n```\n763\t                z = zeta ** (a*e + b*(e**(-1))) \n764\t                g += phi(self.__call__(c))*z        \n```\n\n\nWhat impact does this have on performance in the original case of computing Gauss\nsums?  Is it slower or faster or the same?\n\nAlso, why use \n\n```\nself.__call__(c)\n```\n\ninstead of \n\n```\nself(c)\n```\n\n?",
+    "body": "QUESTION:\n\nYou've rewritten some of the functions to be more general, e.g., this\n\n```\n707\t \t            z *= zeta \n708\t \t            g += phi(c)*z \n```\nbecomes this:\n\n```\n763\t                z = zeta ** (a*e + b*(e**(-1))) \n764\t                g += phi(self.__call__(c))*z        \n```\n\nWhat impact does this have on performance in the original case of computing Gauss\nsums?  Is it slower or faster or the same?\n\nAlso, why use \n\n```\nself.__call__(c)\n```\ninstead of \n\n```\nself(c)\n```\n?",
     "created_at": "2008-05-02T15:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -147,14 +147,12 @@ You've rewritten some of the functions to be more general, e.g., this
 707	 	            z *= zeta 
 708	 	            g += phi(c)*z 
 ```
-
 becomes this:
 
 ```
 763	                z = zeta ** (a*e + b*(e**(-1))) 
 764	                g += phi(self.__call__(c))*z        
 ```
-
 
 What impact does this have on performance in the original case of computing Gauss
 sums?  Is it slower or faster or the same?
@@ -164,13 +162,11 @@ Also, why use
 ```
 self.__call__(c)
 ```
-
 instead of 
 
 ```
 self(c)
 ```
-
 ?
 
 
@@ -241,7 +237,7 @@ P.P.S: It should be based on 3.0 ...
 archive/issue_comments_021209.json:
 ```json
 {
-    "body": "> Question: Why are Dirichlet characters in modular/dirichlet.py? Is it for historical reasons?\n\nYep, Historical reasons.  Where would you want to put it.\n\n> It computes the modular inverse every time. So it should be somewhat \n> slower as before. I read that there is an ongoing discussion between \n> code duplication and speed ...\n\nWorrisome, but like you say below it is too slow in the first place. \n\n> I wanted to use this to introduce Poincare series in SAGE (and compute their \n> Fourier coefficients) but this is far to slow. I am planning to reimplement \n> the numerical stuff in C/Cython next week (or this weekend). \n\nExcellent!\n\n -- William",
+    "body": "> Question: Why are Dirichlet characters in modular/dirichlet.py? Is it for historical reasons?\n\n\nYep, Historical reasons.  Where would you want to put it.\n\n> It computes the modular inverse every time. So it should be somewhat \n> slower as before. I read that there is an ongoing discussion between \n> code duplication and speed ...\n\n\nWorrisome, but like you say below it is too slow in the first place. \n\n> I wanted to use this to introduce Poincare series in SAGE (and compute their \n> Fourier coefficients) but this is far to slow. I am planning to reimplement \n> the numerical stuff in C/Cython next week (or this weekend). \n\n\nExcellent!\n\n -- William",
     "created_at": "2008-05-02T16:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -252,17 +248,20 @@ archive/issue_comments_021209.json:
 
 > Question: Why are Dirichlet characters in modular/dirichlet.py? Is it for historical reasons?
 
+
 Yep, Historical reasons.  Where would you want to put it.
 
 > It computes the modular inverse every time. So it should be somewhat 
 > slower as before. I read that there is an ongoing discussion between 
 > code duplication and speed ...
 
+
 Worrisome, but like you say below it is too slow in the first place. 
 
 > I wanted to use this to introduce Poincare series in SAGE (and compute their 
 > Fourier coefficients) but this is far to slow. I am planning to reimplement 
 > the numerical stuff in C/Cython next week (or this weekend). 
+
 
 Excellent!
 
@@ -275,7 +274,7 @@ Excellent!
 archive/issue_comments_021210.json:
 ```json
 {
-    "body": "> Yep, Historical reasons. Where would you want to put it.\n\nAre there some other character groups implemented? Perhaps it should go to the dual groups?\n\nAnother question:\n\nIf I compute for example the Kloosterman sum K(2,4,13) in Magma it returns:\n2*zeta_13^10 + 2*zeta_13^9 + 2*zeta_13^7 + 2*zeta_13^6 + 2*zeta_13^4 + 2*zeta_13^3\n\nIf I compute it with SAGE it returns:\n2*zeta156^40 - 2*zeta156^34 + 2*zeta156^28 - 2*zeta156^24 + 2*zeta156^18 - 2*zeta156^14 - 2*zeta156^12 + 2*zeta156^8 - 2*zeta156^2 - 2\n\nThis is the same number but it is much more reduced in MAGMA. The corresponding MAGMA code is:\n\n> Kloosterman := func< u, v, n |\n>     &+[z^(IntegerRing() ! (u*x+v*x^-1)) : x in F | IsUnit(x) ]\n>         where z is RootOfUnity(n, CyclotomicField(n))\n>         where F is ResidueClassRing(n) >;\n\nKilian.",
+    "body": "> Yep, Historical reasons. Where would you want to put it.\n\n\nAre there some other character groups implemented? Perhaps it should go to the dual groups?\n\nAnother question:\n\nIf I compute for example the Kloosterman sum K(2,4,13) in Magma it returns:\n2*zeta_13^10 + 2*zeta_13^9 + 2*zeta_13^7 + 2*zeta_13^6 + 2*zeta_13^4 + 2*zeta_13^3\n\nIf I compute it with SAGE it returns:\n2*zeta156^40 - 2*zeta156^34 + 2*zeta156^28 - 2*zeta156^24 + 2*zeta156^18 - 2*zeta156^14 - 2*zeta156^12 + 2*zeta156^8 - 2*zeta156^2 - 2\n\nThis is the same number but it is much more reduced in MAGMA. The corresponding MAGMA code is:\n\n> Kloosterman := func< u, v, n |\n>     &+[z^(IntegerRing() ! (u*x+v*x^-1)) : x in F | IsUnit(x) ]\n>         where z is RootOfUnity(n, CyclotomicField(n))\n>         where F is ResidueClassRing(n) >;\n\n\nKilian.",
     "created_at": "2008-05-02T17:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -285,6 +284,7 @@ archive/issue_comments_021210.json:
 ```
 
 > Yep, Historical reasons. Where would you want to put it.
+
 
 Are there some other character groups implemented? Perhaps it should go to the dual groups?
 
@@ -303,6 +303,7 @@ This is the same number but it is much more reduced in MAGMA. The corresponding 
 >         where z is RootOfUnity(n, CyclotomicField(n))
 >         where F is ResidueClassRing(n) >;
 
+
 Kilian.
 
 
@@ -312,7 +313,7 @@ Kilian.
 archive/issue_comments_021211.json:
 ```json
 {
-    "body": "Again ... I forgot the code block\n\nMagma-Number:\n\n\n```\n2*zeta_13^10 + 2*zeta_13^9 + 2*zeta_13^7 + 2*zeta_13^6 + 2*zeta_13^4 + 2*zeta_13^3\n```\n\n\nSAGE-Number:\n\n```\n2*zeta156^40 - 2*zeta156^34 + 2*zeta156^28 - 2*zeta156^24 + 2*zeta156^18 - 2*zeta156^14 - 2*zeta156^12 + 2*zeta156^8 - 2*zeta156^2 - 2\n```\n\n\nMagma-Code:\n\n```\n>  Kloosterman := func< u, v, n |\n>      &+[z^(IntegerRing() ! (u*x+v*x^-1)) : x in F | IsUnit(x) ]\n>          where z is RootOfUnity(n, CyclotomicField(n))\n>          where F is ResidueClassRing(n) >;\n```\n",
+    "body": "Again ... I forgot the code block\n\nMagma-Number:\n\n```\n2*zeta_13^10 + 2*zeta_13^9 + 2*zeta_13^7 + 2*zeta_13^6 + 2*zeta_13^4 + 2*zeta_13^3\n```\n\nSAGE-Number:\n\n```\n2*zeta156^40 - 2*zeta156^34 + 2*zeta156^28 - 2*zeta156^24 + 2*zeta156^18 - 2*zeta156^14 - 2*zeta156^12 + 2*zeta156^8 - 2*zeta156^2 - 2\n```\n\nMagma-Code:\n\n```\n>  Kloosterman := func< u, v, n |\n>      &+[z^(IntegerRing() ! (u*x+v*x^-1)) : x in F | IsUnit(x) ]\n>          where z is RootOfUnity(n, CyclotomicField(n))\n>          where F is ResidueClassRing(n) >;\n```",
     "created_at": "2008-05-02T17:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -325,18 +326,15 @@ Again ... I forgot the code block
 
 Magma-Number:
 
-
 ```
 2*zeta_13^10 + 2*zeta_13^9 + 2*zeta_13^7 + 2*zeta_13^6 + 2*zeta_13^4 + 2*zeta_13^3
 ```
-
 
 SAGE-Number:
 
 ```
 2*zeta156^40 - 2*zeta156^34 + 2*zeta156^28 - 2*zeta156^24 + 2*zeta156^18 - 2*zeta156^14 - 2*zeta156^12 + 2*zeta156^8 - 2*zeta156^2 - 2
 ```
-
 
 Magma-Code:
 
@@ -346,7 +344,6 @@ Magma-Code:
 >          where z is RootOfUnity(n, CyclotomicField(n))
 >          where F is ResidueClassRing(n) >;
 ```
-
 
 
 
@@ -397,7 +394,7 @@ Michael
 archive/issue_comments_021214.json:
 ```json
 {
-    "body": "From Nick:\n\n```\nI seem to remember thinking this code was mildly flawed (easily fixed) and not fast.  But please pass it on to someone more tuned in.\n```\n",
+    "body": "From Nick:\n\n```\nI seem to remember thinking this code was mildly flawed (easily fixed) and not fast.  But please pass it on to someone more tuned in.\n```",
     "created_at": "2008-10-30T18:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3081",
     "type": "issue_comment",
@@ -411,7 +408,6 @@ From Nick:
 ```
 I seem to remember thinking this code was mildly flawed (easily fixed) and not fast.  But please pass it on to someone more tuned in.
 ```
-
 
 
 

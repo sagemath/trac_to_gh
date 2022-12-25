@@ -124,7 +124,7 @@ archive/issue_events_016170.json:
 archive/issue_comments_056638.json:
 ```json
 {
-    "body": "The module `sage/libs/singular/groebner_strategy.pyx` is currently not in the reference manual. After adding it to the reference manual and (re)building it, you get something like that shown in the screenshot `trac_6872-without-patch.png`. Notice the redundant colon \":\" after \"ALGORITHM\". Now supposing you leave \"ALGORITHM::\" alone and move \"Uses Singular via libSINGULAR\" to a new line. Building the reference manual would result in a warning:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/singular/groebner_strategy.so:docstring of sage.libs.singular.groebner_strategy.GroebnerStrategy:8: (WARNING/2) Literal block expected; none found.\n```\n\nBut removing the redundant colon and the documentation builder is now happy. Hence the patch `trac_6872-fix-typo.patch`.",
+    "body": "The module `sage/libs/singular/groebner_strategy.pyx` is currently not in the reference manual. After adding it to the reference manual and (re)building it, you get something like that shown in the screenshot `trac_6872-without-patch.png`. Notice the redundant colon \":\" after \"ALGORITHM\". Now supposing you leave \"ALGORITHM::\" alone and move \"Uses Singular via libSINGULAR\" to a new line. Building the reference manual would result in a warning:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/singular/groebner_strategy.so:docstring of sage.libs.singular.groebner_strategy.GroebnerStrategy:8: (WARNING/2) Literal block expected; none found.\n```\nBut removing the redundant colon and the documentation builder is now happy. Hence the patch `trac_6872-fix-typo.patch`.",
     "created_at": "2009-09-03T09:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6872",
     "type": "issue_comment",
@@ -138,7 +138,6 @@ The module `sage/libs/singular/groebner_strategy.pyx` is currently not in the re
 ```
 WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/singular/groebner_strategy.so:docstring of sage.libs.singular.groebner_strategy.GroebnerStrategy:8: (WARNING/2) Literal block expected; none found.
 ```
-
 But removing the redundant colon and the documentation builder is now happy. Hence the patch `trac_6872-fix-typo.patch`.
 
 

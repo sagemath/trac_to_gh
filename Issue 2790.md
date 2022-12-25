@@ -3,7 +3,7 @@
 archive/issues_002790.json:
 ```json
 {
-    "body": "Assignee: failure\n\nThe new sage -tp has output like this:\n\n```\n\nThe following tests failed:\n\n\tsage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1586.7 seconds\nteragon:sage was$ \n```\n\n\nThis is very annoying because I typically *paste* in the output in order to rerun broken doctests.\n\nEasy fix insert a #, i.e., change : x doctests failed to # : x doctests failed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2790\n\n",
+    "body": "Assignee: failure\n\nThe new sage -tp has output like this:\n\n```\n\nThe following tests failed:\n\n\tsage -t  devel/sage-modabvar/sage/modular/modform/space.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/eisenstein_submodule.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/modform/element.py: 1 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/morphism.py: 8 doctests failed\n\tsage -t  devel/sage-modabvar/sage/modular/abvar/homspace.py: 8 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1586.7 seconds\nteragon:sage was$ \n```\n\nThis is very annoying because I typically *paste* in the output in order to rerun broken doctests.\n\nEasy fix insert a #, i.e., change : x doctests failed to # : x doctests failed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2790\n\n",
     "created_at": "2008-04-03T04:19:57Z",
     "labels": [
         "component: doctest coverage",
@@ -33,7 +33,6 @@ The following tests failed:
 Total time for all tests: 1586.7 seconds
 teragon:sage was$ 
 ```
-
 
 This is very annoying because I typically *paste* in the output in order to rerun broken doctests.
 

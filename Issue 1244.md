@@ -3,7 +3,7 @@
 archive/issues_001244.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom Bill:\n\n```\nActually I've got no idea how to create an spkg-check script. But the\nthings you would type at the command line, supposing you were in the\nFLINT source tree in the trunk directory are:\n\nmake -Bj test\n./mpn_extras-test\n./ZmodF-test\n./ZmodF_mul-test\n./ZmodF_poly-test\n./fmpz-test\n./fmpz_poly-test\n```\n\nThose tests take about 6.5 minutes to run on sage.math, but we should run the tests per default for at least on release cycle (2.8.14) and disable them right before the final release. This will help Bill to shake out the last esoteric bug before the 1.0 release. The current Sage doctests don't even push the envelope. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1244\n\n",
+    "body": "Assignee: mabshoff\n\nFrom Bill:\n\n```\nActually I've got no idea how to create an spkg-check script. But the\nthings you would type at the command line, supposing you were in the\nFLINT source tree in the trunk directory are:\n\nmake -Bj test\n./mpn_extras-test\n./ZmodF-test\n./ZmodF_mul-test\n./ZmodF_poly-test\n./fmpz-test\n./fmpz_poly-test\n```\nThose tests take about 6.5 minutes to run on sage.math, but we should run the tests per default for at least on release cycle (2.8.14) and disable them right before the final release. This will help Bill to shake out the last esoteric bug before the 1.0 release. The current Sage doctests don't even push the envelope. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1244\n\n",
     "created_at": "2007-11-22T21:43:26Z",
     "labels": [
         "component: algebraic geometry",
@@ -33,7 +33,6 @@ make -Bj test
 ./fmpz-test
 ./fmpz_poly-test
 ```
-
 Those tests take about 6.5 minutes to run on sage.math, but we should run the tests per default for at least on release cycle (2.8.14) and disable them right before the final release. This will help Bill to shake out the last esoteric bug before the 1.0 release. The current Sage doctests don't even push the envelope. 
 
 Cheers,

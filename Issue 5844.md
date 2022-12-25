@@ -3,7 +3,7 @@
 archive/issues_005844.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nKeywords: PermutationGroup has_element is_subgroup\n\nThe old version of `PermutationGroup_generic.has_element(self,item)` is\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self.list()\n```\n\n\nHence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self\n```\n\nThe only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.\n\nThe performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.\nWith the patch, one has:\n\n```\nsage: G=SymmetricGroup(7)\nsage: H=SymmetricGroup(6)\nsage: H.is_subgroup(G)\nTrue\nsage: timeit('H.is_subgroup(G)')\n625 loops, best of 3: 50.5 \u00c2\u00b5s per loop\n```\n\n\nTo my surprise, Gap is slower:\n\n```\nsage: timeit('gap(H).IsSubgroup(gap(G))')\n5 loops, best of 3: 1.55 ms per loop\n```\n\n\nWithout the patch, the computation is *very* slow:\n\n```\nsage: time H.is_subgroup(G)\nCPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s\nWall time: 4.80 s\nTrue\n```\n\n\nLast, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:\n\n```\nsage: 1 in G\nTrue  # since G(1) is the trivial permutation\nsage: G.has_element(1) \nERROR: An unexpected error occurred while tokenizing input\n...\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\nThe latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.\n\n__Conclusion__:\n\nThe change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5844\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: PermutationGroup has_element is_subgroup\n\nThe old version of `PermutationGroup_generic.has_element(self,item)` is\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self.list()\n```\n\nHence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self\n```\nThe only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.\n\nThe performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.\nWith the patch, one has:\n\n```\nsage: G=SymmetricGroup(7)\nsage: H=SymmetricGroup(6)\nsage: H.is_subgroup(G)\nTrue\nsage: timeit('H.is_subgroup(G)')\n625 loops, best of 3: 50.5 \u00c2\u00b5s per loop\n```\n\nTo my surprise, Gap is slower:\n\n```\nsage: timeit('gap(H).IsSubgroup(gap(G))')\n5 loops, best of 3: 1.55 ms per loop\n```\n\nWithout the patch, the computation is *very* slow:\n\n```\nsage: time H.is_subgroup(G)\nCPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s\nWall time: 4.80 s\nTrue\n```\n\nLast, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:\n\n```\nsage: 1 in G\nTrue  # since G(1) is the trivial permutation\nsage: G.has_element(1) \nERROR: An unexpected error occurred while tokenizing input\n...\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\nThe latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.\n\n__Conclusion__:\n\nThe change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5844\n\n",
     "created_at": "2009-04-21T09:29:03Z",
     "labels": [
         "component: group theory",
@@ -28,14 +28,12 @@ The old version of `PermutationGroup_generic.has_element(self,item)` is
         return item in self.list()
 ```
 
-
 Hence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:
 
 ```
         item = PermutationGroupElement(item, self, check=False)
         return item in self
 ```
-
 The only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.
 
 The performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.
@@ -50,14 +48,12 @@ sage: timeit('H.is_subgroup(G)')
 625 loops, best of 3: 50.5 Âµs per loop
 ```
 
-
 To my surprise, Gap is slower:
 
 ```
 sage: timeit('gap(H).IsSubgroup(gap(G))')
 5 loops, best of 3: 1.55 ms per loop
 ```
-
 
 Without the patch, the computation is *very* slow:
 
@@ -67,7 +63,6 @@ CPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s
 Wall time: 4.80 s
 True
 ```
-
 
 Last, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:
 
@@ -79,7 +74,6 @@ ERROR: An unexpected error occurred while tokenizing input
 ...
 TypeError: 'sage.rings.integer.Integer' object is not iterable
 ```
-
 The latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.
 
 __Conclusion__:
@@ -151,7 +145,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_045873.json:
 ```json
 {
-    "body": "I got doc-test failures in these modules:\n\n\n```\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group_element.py\"\n        sage -t  \"devel/sage/sage/groups/class_function.py\"\n```\n\n\nI'm using gap4.4.10 but the error in permgroup.py seems to\nbe a result of this patch.",
+    "body": "I got doc-test failures in these modules:\n\n```\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group_element.py\"\n        sage -t  \"devel/sage/sage/groups/class_function.py\"\n```\n\nI'm using gap4.4.10 but the error in permgroup.py seems to\nbe a result of this patch.",
     "created_at": "2009-04-21T19:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -162,14 +156,12 @@ archive/issue_comments_045873.json:
 
 I got doc-test failures in these modules:
 
-
 ```
         sage -t  "devel/sage/sage/groups/perm_gps/permgroup.py"
         sage -t  "devel/sage/sage/groups/abelian_gps/abelian_group.py"
         sage -t  "devel/sage/sage/groups/abelian_gps/abelian_group_element.py"
         sage -t  "devel/sage/sage/groups/class_function.py"
 ```
-
 
 I'm using gap4.4.10 but the error in permgroup.py seems to
 be a result of this patch.
@@ -203,7 +195,7 @@ Michael
 archive/issue_comments_045875.json:
 ```json
 {
-    "body": "Replying to [comment:3 wdj]:\n> I got doc-test failures in these modules:\n> ...\n\nHere is the reason:\n\n`G.has_element()` first turns the input `item` into a `PermutationGroupElement` with parent `G`, using `check=False`. So, from now on, the parent of `item` is `G`.\n\nThe old version then tests if it is contained in the list of elements. The new version tests whether `item in G`. The problem is that `item in G` just tries `PermutationGroupElement(item,G,check=True)` -- if there is an error then False is returned. \n\nBut at that point, the parent of `item` is `G`, hence, `PermutationGroupElement(item,G,check=True)` does not raise an error, and True is returned!\n\nAnyway. What was the reason to implement `has_element`? What is the purpose of it, in contrast to `__contains__`? \n\nIf both are just tests for containment then `has_element` should be removed, respectively should be an alias for `__contains__`.",
+    "body": "Replying to [comment:3 wdj]:\n> I got doc-test failures in these modules:\n> ...\n\n\nHere is the reason:\n\n`G.has_element()` first turns the input `item` into a `PermutationGroupElement` with parent `G`, using `check=False`. So, from now on, the parent of `item` is `G`.\n\nThe old version then tests if it is contained in the list of elements. The new version tests whether `item in G`. The problem is that `item in G` just tries `PermutationGroupElement(item,G,check=True)` -- if there is an error then False is returned. \n\nBut at that point, the parent of `item` is `G`, hence, `PermutationGroupElement(item,G,check=True)` does not raise an error, and True is returned!\n\nAnyway. What was the reason to implement `has_element`? What is the purpose of it, in contrast to `__contains__`? \n\nIf both are just tests for containment then `has_element` should be removed, respectively should be an alias for `__contains__`.",
     "created_at": "2009-04-22T07:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -215,6 +207,7 @@ archive/issue_comments_045875.json:
 Replying to [comment:3 wdj]:
 > I got doc-test failures in these modules:
 > ...
+
 
 Here is the reason:
 
@@ -297,7 +290,7 @@ Postive. Review. Thanks Simon and sorry for the delay - it's the end of the seme
 archive/issue_comments_045879.json:
 ```json
 {
-    "body": "Replying to [comment:8 wdj]:\n\nHi David,\n\n> Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).\n\nWhy don't you doctest on sage.math? You can do it in parallel, there is *always* a binary and it works unless otherwise noted in the release notes.\n\n> Postive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...\n\nDo not give positive reviews to any ticket that does not pass doctests, even if you assume it is unrelated to failures you see. The whole point of doctesting is to also verify that no side effects cause any trouble and given that you see GAP failures I cannot honestly see how this patch could not potentially cause trouble here. \n\nI am doctesting this patch against my current merge tree to see if there are any issues.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 wdj]:\n\nHi David,\n\n> Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).\n\n\nWhy don't you doctest on sage.math? You can do it in parallel, there is *always* a binary and it works unless otherwise noted in the release notes.\n\n> Postive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...\n\n\nDo not give positive reviews to any ticket that does not pass doctests, even if you assume it is unrelated to failures you see. The whole point of doctesting is to also verify that no side effects cause any trouble and given that you see GAP failures I cannot honestly see how this patch could not potentially cause trouble here. \n\nI am doctesting this patch against my current merge tree to see if there are any issues.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-25T01:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -312,9 +305,11 @@ Hi David,
 
 > Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).
 
+
 Why don't you doctest on sage.math? You can do it in parallel, there is *always* a binary and it works unless otherwise noted in the release notes.
 
 > Postive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...
+
 
 Do not give positive reviews to any ticket that does not pass doctests, even if you assume it is unrelated to failures you see. The whole point of doctesting is to also verify that no side effects cause any trouble and given that you see GAP failures I cannot honestly see how this patch could not potentially cause trouble here. 
 
@@ -353,7 +348,7 @@ Michael
 archive/issue_comments_045881.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n> For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.\n\nShouldn't the ticket be closed, then? \n\nCheers,\n Simon",
+    "body": "Replying to [comment:10 mabshoff]:\n> For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.\n\n\nShouldn't the ticket be closed, then? \n\nCheers,\n Simon",
     "created_at": "2009-04-26T10:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -364,6 +359,7 @@ archive/issue_comments_045881.json:
 
 Replying to [comment:10 mabshoff]:
 > For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.
+
 
 Shouldn't the ticket be closed, then? 
 
@@ -377,7 +373,7 @@ Cheers,
 archive/issue_comments_045882.json:
 ```json
 {
-    "body": "> Shouldn't the ticket be closed, then? \n\nWell, I did not merge the patches yet, so no.\n \n> Cheers,\n>  Simon\n\nCheers,\n\nMichael",
+    "body": "> Shouldn't the ticket be closed, then? \n\n\nWell, I did not merge the patches yet, so no.\n \n> Cheers,\n>  Simon\n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-26T10:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
@@ -388,10 +384,12 @@ archive/issue_comments_045882.json:
 
 > Shouldn't the ticket be closed, then? 
 
+
 Well, I did not merge the patches yet, so no.
  
 > Cheers,
 >  Simon
+
 
 Cheers,
 

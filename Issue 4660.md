@@ -3,7 +3,7 @@
 archive/issues_004660.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSince gcc and fortran compilers are both optional to run sage, mark doctests that use them \n\n```\n  # optional -- gcc\n```\n\nand\n\n```\n  # optional -- fortran\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4660\n\n",
+    "body": "Assignee: mabshoff\n\nSince gcc and fortran compilers are both optional to run sage, mark doctests that use them \n\n```\n  # optional -- gcc\n```\nand\n\n```\n  # optional -- fortran\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4660\n\n",
     "created_at": "2008-11-30T07:54:45Z",
     "labels": [
         "component: doctest coverage",
@@ -23,13 +23,11 @@ Since gcc and fortran compilers are both optional to run sage, mark doctests tha
 ```
   # optional -- gcc
 ```
-
 and
 
 ```
   # optional -- fortran
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4660
 

@@ -117,7 +117,7 @@ Michael
 archive/issue_comments_003126.json:
 ```json
 {
-    "body": "Things are improving. With 2.10.4 final I get:\n\n```\nsage-2.10.4.final$ ./sage -coverageall devel/sage/sage/rings/padics/\ncapped_absolute_generic.py: 0% (0 of 1)\ncapped_relative_generic.py: 0% (0 of 1)\neisenstein_extension_generic.py: 0% (0 of 18)\nfactory.py: 13% (3 of 22)\nfixed_mod_generic.py: 0% (0 of 1)\nlazy_generic.py: 0% (0 of 3)\nlocal_generic_element.pyx: 70% (7 of 10)\nlocal_generic.py: 27% (10 of 37)\nmisc.py: 0% (0 of 2)\npadic_base_generic_element.pyx: 0% (0 of 1)\npadic_base_generic.py: 0% (0 of 5)\npadic_capped_absolute_element.pyx: 84% (22 of 26)\npadic_capped_relative_element.pyx: 48% (16 of 33)\npadic_ext_element.pyx: 0% (0 of 1)\npadic_extension_generic.py: 0% (0 of 20)\npadic_extension_leaves.py: 0% (0 of 8)\npadic_field_capped_relative.py: 20% (1 of 5)\npadic_field_generic.py: 0% (0 of 14)\npadic_field_lazy.py: 11% (2 of 17)\npadic_fixed_mod_element.pyx: 42% (12 of 28)\npadic_generic_element.pyx: 31% (10 of 32)\npadic_generic.py: 42% (14 of 33)\npadic_lazy_element.py: 0% (1 of 110)\npadic_lazy_field_generic.py: 0% (0 of 1)\npadic_lazy_generic.py: 0% (0 of 2)\npadic_lazy_ring_generic.py: 0% (0 of 1)\npadic_printing.pyx: 33% (7 of 21)\npadic_ring_base_generic.py: 0% (0 of 3)\npadic_ring_capped_absolute.py: 0% (0 of 5)\npadic_ring_capped_relative.py: 0% (0 of 5)\npadic_ring_fixed_mod.py: 0% (0 of 5)\npadic_ring_generic.py: 0% (0 of 6)\npadic_ring_lazy.py: 7% (1 of 13)\npadic_ZZ_pX_CA_element.pyx: 72% (21 of 29)\npadic_ZZ_pX_CR_element.pyx: 70% (22 of 31)\npadic_ZZ_pX_element.pyx: 40% (2 of 5)\npadic_ZZ_pX_FM_element.pyx: 74% (23 of 31)\npow_computer_ext.pyx: 77% (21 of 27)\npow_computer.pyx: 93% (14 of 15)\nrigid_functions.pyx: 0% (0 of 37)\nunramified_extension_generic.py: 0% (0 of 20)\nvaluation.py: 0% (0 of 114)\n\nOverall weighted coverage score:  25.8%\nTotal number of functions:  799\n```\n\nand\n\n```\nsage-2.10.4.final$ ./sage -coverageall devel/sage-main/sage/rings/polynomial/padics/\npolynomial_padic_capped_relative_dense.py: 42% (19 of 45)\npolynomial_padic_flat.py: 25% (1 of 4)\n\nOverall weighted coverage score:  40.6%\nTotal number of functions:  49\n```\n\n\nCheers,\n\nMichael",
+    "body": "Things are improving. With 2.10.4 final I get:\n\n```\nsage-2.10.4.final$ ./sage -coverageall devel/sage/sage/rings/padics/\ncapped_absolute_generic.py: 0% (0 of 1)\ncapped_relative_generic.py: 0% (0 of 1)\neisenstein_extension_generic.py: 0% (0 of 18)\nfactory.py: 13% (3 of 22)\nfixed_mod_generic.py: 0% (0 of 1)\nlazy_generic.py: 0% (0 of 3)\nlocal_generic_element.pyx: 70% (7 of 10)\nlocal_generic.py: 27% (10 of 37)\nmisc.py: 0% (0 of 2)\npadic_base_generic_element.pyx: 0% (0 of 1)\npadic_base_generic.py: 0% (0 of 5)\npadic_capped_absolute_element.pyx: 84% (22 of 26)\npadic_capped_relative_element.pyx: 48% (16 of 33)\npadic_ext_element.pyx: 0% (0 of 1)\npadic_extension_generic.py: 0% (0 of 20)\npadic_extension_leaves.py: 0% (0 of 8)\npadic_field_capped_relative.py: 20% (1 of 5)\npadic_field_generic.py: 0% (0 of 14)\npadic_field_lazy.py: 11% (2 of 17)\npadic_fixed_mod_element.pyx: 42% (12 of 28)\npadic_generic_element.pyx: 31% (10 of 32)\npadic_generic.py: 42% (14 of 33)\npadic_lazy_element.py: 0% (1 of 110)\npadic_lazy_field_generic.py: 0% (0 of 1)\npadic_lazy_generic.py: 0% (0 of 2)\npadic_lazy_ring_generic.py: 0% (0 of 1)\npadic_printing.pyx: 33% (7 of 21)\npadic_ring_base_generic.py: 0% (0 of 3)\npadic_ring_capped_absolute.py: 0% (0 of 5)\npadic_ring_capped_relative.py: 0% (0 of 5)\npadic_ring_fixed_mod.py: 0% (0 of 5)\npadic_ring_generic.py: 0% (0 of 6)\npadic_ring_lazy.py: 7% (1 of 13)\npadic_ZZ_pX_CA_element.pyx: 72% (21 of 29)\npadic_ZZ_pX_CR_element.pyx: 70% (22 of 31)\npadic_ZZ_pX_element.pyx: 40% (2 of 5)\npadic_ZZ_pX_FM_element.pyx: 74% (23 of 31)\npow_computer_ext.pyx: 77% (21 of 27)\npow_computer.pyx: 93% (14 of 15)\nrigid_functions.pyx: 0% (0 of 37)\nunramified_extension_generic.py: 0% (0 of 20)\nvaluation.py: 0% (0 of 114)\n\nOverall weighted coverage score:  25.8%\nTotal number of functions:  799\n```\nand\n\n```\nsage-2.10.4.final$ ./sage -coverageall devel/sage-main/sage/rings/polynomial/padics/\npolynomial_padic_capped_relative_dense.py: 42% (19 of 45)\npolynomial_padic_flat.py: 25% (1 of 4)\n\nOverall weighted coverage score:  40.6%\nTotal number of functions:  49\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-17T01:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
@@ -176,7 +176,6 @@ valuation.py: 0% (0 of 114)
 Overall weighted coverage score:  25.8%
 Total number of functions:  799
 ```
-
 and
 
 ```
@@ -187,7 +186,6 @@ polynomial_padic_flat.py: 25% (1 of 4)
 Overall weighted coverage score:  40.6%
 Total number of functions:  49
 ```
-
 
 Cheers,
 
@@ -218,7 +216,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_003128.json:
 ```json
 {
-    "body": "Replying to [comment:4 craigcitro]:\n\n> type changed from defect to enhancement.\n\nWell, given the fact that the padics code was merged at SD 7 under the assumption that someone would write more doctests I could see this being a defect given the amount of time elapsed since then :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 craigcitro]:\n\n> type changed from defect to enhancement.\n\n\nWell, given the fact that the padics code was merged at SD 7 under the assumption that someone would write more doctests I could see this being a defect given the amount of time elapsed since then :)\n\nCheers,\n\nMichael",
     "created_at": "2009-01-15T00:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
@@ -230,6 +228,7 @@ archive/issue_comments_003128.json:
 Replying to [comment:4 craigcitro]:
 
 > type changed from defect to enhancement.
+
 
 Well, given the fact that the padics code was merged at SD 7 under the assumption that someone would write more doctests I could see this being a defect given the amount of time elapsed since then :)
 
@@ -366,7 +365,7 @@ archive/issue_events_001625.json:
 archive/issue_comments_003133.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> Is this now a duplicate of the behemoth work at #5778?\n\nYes, David opened a new ticket, so nuke this as a dupe.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 kcrisman]:\n> Is this now a duplicate of the behemoth work at #5778?\n\n\nYes, David opened a new ticket, so nuke this as a dupe.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T00:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/610",
     "type": "issue_comment",
@@ -377,6 +376,7 @@ archive/issue_comments_003133.json:
 
 Replying to [comment:7 kcrisman]:
 > Is this now a duplicate of the behemoth work at #5778?
+
 
 Yes, David opened a new ticket, so nuke this as a dupe.
 

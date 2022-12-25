@@ -3,7 +3,7 @@
 archive/issues_004734.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\nDear Sage-Devels,\n\nLet me again thank you for the excellent work put in building sage.\n\nI've found a bug in the most recent release. Specifically, when\ninvoked with the -notebook switch, the current release does not\nproperly quote paths. So, if I execute:\n\n/Applications/sage/sage -notebook \"/Users/carson/doc/math/\nsage_notebook/\"\n\nSage says:\n\nTraceback (most recent call last):\n File \"/Applications/sage/local/bin/sage-notebook\", line 14, in\n<module>\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n File \"<string>\", line 1\n   notebook(/Users/carson/doc/math/sage_notebook/)\n            ^\nSyntaxError: invalid syntax\n\nIf I edit the offending line in local/bin/sage-notebook:\n\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n\nTo instead read:\n\n   exec \"notebook('\" + \",\".join(sys.argv[1:]) + \"')\"\n\nThen the -notebook switch works as expected. Please consider using the\nfollowing sage-notebook file to correct this bug:\n\nhttp://bentham.k2.t.u-tokyo.ac.jp/media/bugs/sage/sage-notebook\n\nCheers,\n```\n\n\nMakes sense.  This was indeed caused by a patch in the last version of sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4734\n\n",
+    "body": "Assignee: boothby\n\n```\n\nDear Sage-Devels,\n\nLet me again thank you for the excellent work put in building sage.\n\nI've found a bug in the most recent release. Specifically, when\ninvoked with the -notebook switch, the current release does not\nproperly quote paths. So, if I execute:\n\n/Applications/sage/sage -notebook \"/Users/carson/doc/math/\nsage_notebook/\"\n\nSage says:\n\nTraceback (most recent call last):\n File \"/Applications/sage/local/bin/sage-notebook\", line 14, in\n<module>\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n File \"<string>\", line 1\n   notebook(/Users/carson/doc/math/sage_notebook/)\n            ^\nSyntaxError: invalid syntax\n\nIf I edit the offending line in local/bin/sage-notebook:\n\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n\nTo instead read:\n\n   exec \"notebook('\" + \",\".join(sys.argv[1:]) + \"')\"\n\nThen the -notebook switch works as expected. Please consider using the\nfollowing sage-notebook file to correct this bug:\n\nhttp://bentham.k2.t.u-tokyo.ac.jp/media/bugs/sage/sage-notebook\n\nCheers,\n```\n\nMakes sense.  This was indeed caused by a patch in the last version of sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4734\n\n",
     "created_at": "2008-12-07T04:49:58Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_004734.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -58,7 +57,6 @@ http://bentham.k2.t.u-tokyo.ac.jp/media/bugs/sage/sage-notebook
 
 Cheers,
 ```
-
 
 Makes sense.  This was indeed caused by a patch in the last version of sage.
 
@@ -107,7 +105,7 @@ This did not work for the old release of Sage.
 archive/issue_comments_035665.json:
 ```json
 {
-    "body": "Since the first input two notebook has to be a string, if there are no named parameters we should rewrite the code to make the original user's input work.  I.e., This should work no matter what, and I see no reason not to make this work:\n\n```\nsage -notebook \"/Users/carson/doc/math/sage_notebook/\"\n```\n",
+    "body": "Since the first input two notebook has to be a string, if there are no named parameters we should rewrite the code to make the original user's input work.  I.e., This should work no matter what, and I see no reason not to make this work:\n\n```\nsage -notebook \"/Users/carson/doc/math/sage_notebook/\"\n```",
     "created_at": "2008-12-07T19:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ Since the first input two notebook has to be a string, if there are no named par
 ```
 sage -notebook "/Users/carson/doc/math/sage_notebook/"
 ```
-
 
 
 

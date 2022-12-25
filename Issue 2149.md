@@ -232,7 +232,7 @@ Resolution: wontfix
 archive/issue_comments_014080.json:
 ```json
 {
-    "body": "\n```\n[00:31] <mhansen> mabshoff: For 2149, I think the consensus is to mark it as invalid.\n[00:31] <mhansen> Or wontfix.\n[00:31] <mabshoff> let me check in a minute\n[00:31] <mhansen> Sure, no problem.\n[00:37] <mabshoff> re #2149: won't fix it is.\n```\n",
+    "body": "```\n[00:31] <mhansen> mabshoff: For 2149, I think the consensus is to mark it as invalid.\n[00:31] <mhansen> Or wontfix.\n[00:31] <mabshoff> let me check in a minute\n[00:31] <mhansen> Sure, no problem.\n[00:37] <mabshoff> re #2149: won't fix it is.\n```",
     "created_at": "2008-03-29T00:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
@@ -241,7 +241,6 @@ archive/issue_comments_014080.json:
 }
 ```
 
-
 ```
 [00:31] <mhansen> mabshoff: For 2149, I think the consensus is to mark it as invalid.
 [00:31] <mhansen> Or wontfix.
@@ -249,4 +248,3 @@ archive/issue_comments_014080.json:
 [00:31] <mhansen> Sure, no problem.
 [00:37] <mabshoff> re #2149: won't fix it is.
 ```
-

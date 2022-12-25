@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5041
 archive/issue_comments_038322.json:
 ```json
 {
-    "body": "The attached patch does the following:\n\n(1) Deletes magma/ell_padic and magma/padic_height which were only there for p-adic height computations before sage got its own much better native code.   Also, deletes the file SAGE_ROOT/devel/sage/sage/schemes/elliptic_curves/ell_padic.py, which was slated for deprecation officially several months ago, and just wraps those files.\n\nAND\n\n(2) The first (and only first) time a Magma interface is started in a given session, it copies over data/extcode/magma to a temp directory.   This directory is only 52 kilobytes, so this is fast and easy.  It will not grow much, since it is all hand written.    This is new code in magma.py.  It's just a few lines.  By doing this, all extcode code for mamga that we ever write can easily be attached without permission issues. \n\nTO TEST:\n(0) Apply all patches\n\n(1) doctest elliptic curves to make sure my removal of deprecated code didn't break anything:\n\n```\n$ sage -tp 3 devel/sage/sage/schemes/elliptic_curves/\n```\n\n\n(2) doctest the entire magma interface optional test code to make sure I didn't break anything:\n\n```\n$ ./sage -t -only_optional=magma devel/sage/sage/\n```\n\n\n(3) Read the source code modified in my patch to magma.py.",
+    "body": "The attached patch does the following:\n\n(1) Deletes magma/ell_padic and magma/padic_height which were only there for p-adic height computations before sage got its own much better native code.   Also, deletes the file SAGE_ROOT/devel/sage/sage/schemes/elliptic_curves/ell_padic.py, which was slated for deprecation officially several months ago, and just wraps those files.\n\nAND\n\n(2) The first (and only first) time a Magma interface is started in a given session, it copies over data/extcode/magma to a temp directory.   This directory is only 52 kilobytes, so this is fast and easy.  It will not grow much, since it is all hand written.    This is new code in magma.py.  It's just a few lines.  By doing this, all extcode code for mamga that we ever write can easily be attached without permission issues. \n\nTO TEST:\n(0) Apply all patches\n\n(1) doctest elliptic curves to make sure my removal of deprecated code didn't break anything:\n\n```\n$ sage -tp 3 devel/sage/sage/schemes/elliptic_curves/\n```\n\n(2) doctest the entire magma interface optional test code to make sure I didn't break anything:\n\n```\n$ ./sage -t -only_optional=magma devel/sage/sage/\n```\n\n(3) Read the source code modified in my patch to magma.py.",
     "created_at": "2009-01-22T11:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
@@ -60,13 +60,11 @@ TO TEST:
 $ sage -tp 3 devel/sage/sage/schemes/elliptic_curves/
 ```
 
-
 (2) doctest the entire magma interface optional test code to make sure I didn't break anything:
 
 ```
 $ ./sage -t -only_optional=magma devel/sage/sage/
 ```
-
 
 (3) Read the source code modified in my patch to magma.py.
 
@@ -95,7 +93,7 @@ Attachment [trac_5041-extcode_repo.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_038324.json:
 ```json
 {
-    "body": "> (0) Apply all patches\n\nWorks.\n \n> (1) doctest elliptic curves to make sure my removal of deprecated code didn't break anything:\n\nWorks.\n\n> (2) doctest the entire magma interface optional test code to make sure I didn't break anything:\n\nWorks. Also no .sig files are created in the extcode directory.\n\n> (3) Read the source code modified in my patch to magma.py.\n\nLooks good.",
+    "body": "> (0) Apply all patches\n\n\nWorks.\n \n> (1) doctest elliptic curves to make sure my removal of deprecated code didn't break anything:\n\n\nWorks.\n\n> (2) doctest the entire magma interface optional test code to make sure I didn't break anything:\n\n\nWorks. Also no .sig files are created in the extcode directory.\n\n> (3) Read the source code modified in my patch to magma.py.\n\n\nLooks good.",
     "created_at": "2009-01-22T20:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5041",
     "type": "issue_comment",
@@ -106,17 +104,21 @@ archive/issue_comments_038324.json:
 
 > (0) Apply all patches
 
+
 Works.
  
 > (1) doctest elliptic curves to make sure my removal of deprecated code didn't break anything:
+
 
 Works.
 
 > (2) doctest the entire magma interface optional test code to make sure I didn't break anything:
 
+
 Works. Also no .sig files are created in the extcode directory.
 
 > (3) Read the source code modified in my patch to magma.py.
+
 
 Looks good.
 

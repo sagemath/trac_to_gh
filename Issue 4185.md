@@ -3,7 +3,7 @@
 archive/issues_004185.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt boils down to:\n\n```\n # Insert localize.in after first line of startup script.\n-head -n 1 jmol > \"$DIR/jmol\"\n+head -1 jmol > \"$DIR/jmol\"\n cat ../patches/localize.in >> \"$DIR/jmol\"\n-tail -n +2 jmol >> \"$DIR/jmol\"\n+tail +2 jmol >> \"$DIR/jmol\"\n check\n```\n\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/jmol-11.6.rc8.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4185\n\n",
+    "body": "Assignee: mabshoff\n\nIt boils down to:\n\n```\n # Insert localize.in after first line of startup script.\n-head -n 1 jmol > \"$DIR/jmol\"\n+head -1 jmol > \"$DIR/jmol\"\n cat ../patches/localize.in >> \"$DIR/jmol\"\n-tail -n +2 jmol >> \"$DIR/jmol\"\n+tail +2 jmol >> \"$DIR/jmol\"\n check\n```\nThe new spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/jmol-11.6.rc8.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4185\n\n",
     "created_at": "2008-09-24T08:27:24Z",
     "labels": [
         "component: porting: solaris",
@@ -29,7 +29,6 @@ It boils down to:
 +tail +2 jmol >> "$DIR/jmol"
  check
 ```
-
 The new spkg can be found at
 
 http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/jmol-11.6.rc8.p0.spkg
@@ -67,7 +66,7 @@ Changing status from new to assigned.
 archive/issue_comments_030312.json:
 ```json
 {
-    "body": "I get this:\n\n\n```\n****************************************************\nCopying Jmol libraries...\nCopying Jmol scripts...\ntail: cannot open `+2' for reading: No such file or directory\nError.\n\nreal\t0m0.377s\nuser\t0m0.020s\nsys\t0m0.056s\nsage: An error occurred while installing jmol-11.6.rc8.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /opt/sage/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/opt/sage/spkg/build/jmol-11.6.rc8.p0 and type 'make'.\nInstead type \"/opt/sage/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/opt/sage/spkg/build/jmol-11.6.rc8.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n",
+    "body": "I get this:\n\n```\n****************************************************\nCopying Jmol libraries...\nCopying Jmol scripts...\ntail: cannot open `+2' for reading: No such file or directory\nError.\n\nreal\t0m0.377s\nuser\t0m0.020s\nsys\t0m0.056s\nsage: An error occurred while installing jmol-11.6.rc8.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /opt/sage/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/opt/sage/spkg/build/jmol-11.6.rc8.p0 and type 'make'.\nInstead type \"/opt/sage/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/opt/sage/spkg/build/jmol-11.6.rc8.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```",
     "created_at": "2008-09-24T09:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4185",
     "type": "issue_comment",
@@ -77,7 +76,6 @@ archive/issue_comments_030312.json:
 ```
 
 I get this:
-
 
 ```
 ****************************************************
@@ -101,7 +99,6 @@ in order to set all environment variables correctly, then cd to
 (When you are done debugging, you can type "exit" to leave the
 subshell.)
 ```
-
 
 
 

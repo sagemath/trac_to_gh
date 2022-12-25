@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3628
 archive/issue_comments_025621.json:
 ```json
 {
-    "body": "The spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/clisp-2.46.p3.spkg\n\n\ndoes this\n\n```\nsage@modular:~/build/sage-3.0.4.rc2/spkg/standard/clisp-2.46.p2$ hg export tip\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1215650285 25200\n# Node ID 894ef09f7493ecb498cfabae78c94ccadf74e50c\n# Parent  3fb5fefd13e4d8acf4eff5c963397554f9df2574\nAdd -prefix to with-readline option; get rid of stupid fallback.\n\ndiff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install\n--- a/spkg-install      Mon Jul 07 19:51:11 2008 -0400\n+++ b/spkg-install      Wed Jul 09 17:38:05 2008 -0700\n@@ -26,12 +26,7 @@ cd src/\n\n unset CPPFLAGS   # do this; since otherwise build will fail if CPPFLAGS was se\n\n-CFLAGS=\"-O0 -g\" ./configure --with-readline=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-\n-if [ $? -ne 0 ]; then\n-    echo \"Building without readline.\"\n-    CFLAGS=\"-O0 -g\" ./configure --without-readline --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-fi\n+CFLAGS=\"-O0 -g\" ./configure --with-readline-prefix=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n\n #if [ $UNAME = \"CYGWIN\" ]; then\n     # This is a hack to get around a bug in the build process under Cygwin.\n```\n",
+    "body": "The spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/clisp-2.46.p3.spkg\n\n\ndoes this\n\n```\nsage@modular:~/build/sage-3.0.4.rc2/spkg/standard/clisp-2.46.p2$ hg export tip\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1215650285 25200\n# Node ID 894ef09f7493ecb498cfabae78c94ccadf74e50c\n# Parent  3fb5fefd13e4d8acf4eff5c963397554f9df2574\nAdd -prefix to with-readline option; get rid of stupid fallback.\n\ndiff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install\n--- a/spkg-install      Mon Jul 07 19:51:11 2008 -0400\n+++ b/spkg-install      Wed Jul 09 17:38:05 2008 -0700\n@@ -26,12 +26,7 @@ cd src/\n\n unset CPPFLAGS   # do this; since otherwise build will fail if CPPFLAGS was se\n\n-CFLAGS=\"-O0 -g\" ./configure --with-readline=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-\n-if [ $? -ne 0 ]; then\n-    echo \"Building without readline.\"\n-    CFLAGS=\"-O0 -g\" ./configure --without-readline --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-fi\n+CFLAGS=\"-O0 -g\" ./configure --with-readline-prefix=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n\n #if [ $UNAME = \"CYGWIN\" ]; then\n     # This is a hack to get around a bug in the build process under Cygwin.\n```",
     "created_at": "2008-07-10T00:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3628",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ diff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install
  #if [ $UNAME = "CYGWIN" ]; then
      # This is a hack to get around a bug in the build process under Cygwin.
 ```
-
 
 
 

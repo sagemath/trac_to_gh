@@ -3,7 +3,7 @@
 archive/issues_002679.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n> 3. removing the .aux and .toc cache files from the documentation area\n> solved the pdf/html problems.\n\nok, we ought to make sure that we remove all those temp files before\npackaging the documentation.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2679\n\n",
+    "body": "Assignee: tba\n\n```\n> 3. removing the .aux and .toc cache files from the documentation area\n> solved the pdf/html problems.\n\nok, we ought to make sure that we remove all those temp files before\npackaging the documentation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2679\n\n",
     "created_at": "2008-03-26T18:36:16Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_002679.json:
 ```
 Assignee: tba
 
-
 ```
 > 3. removing the .aux and .toc cache files from the documentation area
 > solved the pdf/html problems.
@@ -26,7 +25,6 @@ Assignee: tba
 ok, we ought to make sure that we remove all those temp files before
 packaging the documentation.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2679
 
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2679
 archive/issue_comments_018385.json:
 ```json
 {
-    "body": "The file to change is \n\n```\n   doc/scripts/spkg-dist\n```\n\n\nSee also #2675, which is the same problem.",
+    "body": "The file to change is \n\n```\n   doc/scripts/spkg-dist\n```\n\nSee also #2675, which is the same problem.",
     "created_at": "2008-03-26T18:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2679",
     "type": "issue_comment",
@@ -53,7 +51,6 @@ The file to change is
 ```
    doc/scripts/spkg-dist
 ```
-
 
 See also #2675, which is the same problem.
 

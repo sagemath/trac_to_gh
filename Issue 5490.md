@@ -72,7 +72,7 @@ What is the use of the date of Easter in the Julian calender? I mean business wi
 archive/issue_comments_042552.json:
 ```json
 {
-    "body": "Replying to [comment:2 jsp]:\n> What is the use of the date of Easter in the Julian calender? I mean business wise?\n\nI cannot think of a bank holiday that uses the Julian calendar in any major currency.\nChecked Russia but even there they are on the new Orthodox calendar.\nWhat is the preference here-- should I remove Julian?",
+    "body": "Replying to [comment:2 jsp]:\n> What is the use of the date of Easter in the Julian calender? I mean business wise?\n\n\nI cannot think of a bank holiday that uses the Julian calendar in any major currency.\nChecked Russia but even there they are on the new Orthodox calendar.\nWhat is the preference here-- should I remove Julian?",
     "created_at": "2009-03-12T05:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_042552.json:
 
 Replying to [comment:2 jsp]:
 > What is the use of the date of Easter in the Julian calender? I mean business wise?
+
 
 I cannot think of a bank holiday that uses the Julian calendar in any major currency.
 Checked Russia but even there they are on the new Orthodox calendar.
@@ -95,7 +96,7 @@ What is the preference here-- should I remove Julian?
 archive/issue_comments_042553.json:
 ```json
 {
-    "body": "Replying to [comment:3 psinis]:\n> Replying to [comment:2 jsp]:\n> > What is the use of the date of Easter in the Julian calender? I mean business wise?\n> \n> I cannot think of a bank holiday that uses the Julian calendar in any major currency.\n> Checked Russia but even there they are on the new Orthodox calendar.\n> What is the preference here-- should I remove Julian?\n>  \n\nYou should start a discussion on the sage devel list, I think.\nThere you will find more people who might be interested.\n\nCheers,\n\nJaap",
+    "body": "Replying to [comment:3 psinis]:\n> Replying to [comment:2 jsp]:\n> > What is the use of the date of Easter in the Julian calender? I mean business wise?\n\n> \n> I cannot think of a bank holiday that uses the Julian calendar in any major currency.\n> Checked Russia but even there they are on the new Orthodox calendar.\n> What is the preference here-- should I remove Julian?\n>  \n\n\nYou should start a discussion on the sage devel list, I think.\nThere you will find more people who might be interested.\n\nCheers,\n\nJaap",
     "created_at": "2009-03-12T21:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -107,11 +108,13 @@ archive/issue_comments_042553.json:
 Replying to [comment:3 psinis]:
 > Replying to [comment:2 jsp]:
 > > What is the use of the date of Easter in the Julian calender? I mean business wise?
+
 > 
 > I cannot think of a bank holiday that uses the Julian calendar in any major currency.
 > Checked Russia but even there they are on the new Orthodox calendar.
 > What is the preference here-- should I remove Julian?
 >  
+
 
 You should start a discussion on the sage devel list, I think.
 There you will find more people who might be interested.
@@ -127,7 +130,7 @@ Jaap
 archive/issue_comments_042554.json:
 ```json
 {
-    "body": "Tests pass:\n\n\n```\nsage -t  \"devel/sage-5490/sage/finance/easter.py\"           \n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.0 seconds\n```\n\n\nI also manually checked the dates (just in case) for the next several years and all three cases seem to hold.\n\nIf this module is going to be critical for future libraries, as the ticket description says, then should it perhaps be automatically imported? Just curious.\n\n\n```\n# finance/all.py\n...\nfrom easter import easter\n```\n",
+    "body": "Tests pass:\n\n```\nsage -t  \"devel/sage-5490/sage/finance/easter.py\"           \n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.0 seconds\n```\n\nI also manually checked the dates (just in case) for the next several years and all three cases seem to hold.\n\nIf this module is going to be critical for future libraries, as the ticket description says, then should it perhaps be automatically imported? Just curious.\n\n```\n# finance/all.py\n...\nfrom easter import easter\n```",
     "created_at": "2009-03-16T00:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -138,7 +141,6 @@ archive/issue_comments_042554.json:
 
 Tests pass:
 
-
 ```
 sage -t  "devel/sage-5490/sage/finance/easter.py"           
 	 [2.0 s]
@@ -148,18 +150,15 @@ All tests passed!
 Total time for all tests: 2.0 seconds
 ```
 
-
 I also manually checked the dates (just in case) for the next several years and all three cases seem to hold.
 
 If this module is going to be critical for future libraries, as the ticket description says, then should it perhaps be automatically imported? Just curious.
-
 
 ```
 # finance/all.py
 ...
 from easter import easter
 ```
-
 
 
 
@@ -189,7 +188,7 @@ What's the next step...?
 archive/issue_comments_042556.json:
 ```json
 {
-    "body": "Replying to [comment:6 psinis]:\n> What's the next step...?\n\nEr...whatever you like, I suppose!",
+    "body": "Replying to [comment:6 psinis]:\n> What's the next step...?\n\n\nEr...whatever you like, I suppose!",
     "created_at": "2009-03-17T12:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -201,6 +200,7 @@ archive/issue_comments_042556.json:
 Replying to [comment:6 psinis]:
 > What's the next step...?
 
+
 Er...whatever you like, I suppose!
 
 
@@ -210,7 +210,7 @@ Er...whatever you like, I suppose!
 archive/issue_comments_042557.json:
 ```json
 {
-    "body": "Replying to [comment:6 psinis]:\n> What's the next step...?\n\nIf you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).",
+    "body": "Replying to [comment:6 psinis]:\n> What's the next step...?\n\n\nIf you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).",
     "created_at": "2009-03-17T21:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -222,6 +222,7 @@ archive/issue_comments_042557.json:
 Replying to [comment:6 psinis]:
 > What's the next step...?
 
+
 If you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).
 
 
@@ -231,7 +232,7 @@ If you mean the next step in this patch getting into Sage: now that it has a pos
 archive/issue_comments_042558.json:
 ```json
 {
-    "body": "Replying to [comment:8 AlexGhitza]:\n> Replying to [comment:6 psinis]:\n> > What's the next step...?\n> \n> If you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).\n\nAh, yes. I misunderstood! Once someone has given your ticket a positive review then the rest is out of your hands. You're done and can go on to do more exciting things!",
+    "body": "Replying to [comment:8 AlexGhitza]:\n> Replying to [comment:6 psinis]:\n> > What's the next step...?\n\n> \n> If you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).\n\n\nAh, yes. I misunderstood! Once someone has given your ticket a positive review then the rest is out of your hands. You're done and can go on to do more exciting things!",
     "created_at": "2009-03-17T21:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -243,8 +244,10 @@ archive/issue_comments_042558.json:
 Replying to [comment:8 AlexGhitza]:
 > Replying to [comment:6 psinis]:
 > > What's the next step...?
+
 > 
 > If you mean the next step in this patch getting into Sage: now that it has a positive review, Michael Abshoff will eventually make sure that it merges properly and doesn't cause trouble in unforeseen places, and then it will be in the next release of Sage (either 3.4.1 or 3.4.2).
+
 
 Ah, yes. I misunderstood! Once someone has given your ticket a positive review then the rest is out of your hands. You're done and can go on to do more exciting things!
 
@@ -255,7 +258,7 @@ Ah, yes. I misunderstood! Once someone has given your ticket a positive review t
 archive/issue_comments_042559.json:
 ```json
 {
-    "body": "\n```\n# finance/all.py\n...\nfrom easter import easter\n```\n\n\nI don't think easter should be in the global namespace, but in finance.easter.\n\nCheers,\n\nMichael",
+    "body": "```\n# finance/all.py\n...\nfrom easter import easter\n```\n\nI don't think easter should be in the global namespace, but in finance.easter.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T22:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
@@ -264,13 +267,11 @@ archive/issue_comments_042559.json:
 }
 ```
 
-
 ```
 # finance/all.py
 ...
 from easter import easter
 ```
-
 
 I don't think easter should be in the global namespace, but in finance.easter.
 

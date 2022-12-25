@@ -55,7 +55,7 @@ The reason for this is to make it trivial to have eigenvector and eigenmatrix fu
 archive/issue_comments_049092.json:
 ```json
 {
-    "body": "\n```\n21:59 < wstein> wstein@sage:~/tmp/maxima-5.16.3.p3$ hg status\n21:59 < wstein> ? patches/eigen.mac\n21:59 < wstein> yep, that pynac segfault looks *very* serious.\n21:59 < wstein> ouch.\n21:59 < jason> oh, grr, I forgot to add that file.\n21:59 < wstein> but it is inevitable.\n21:59 < jason> hang on.\n22:00 < jason> it'd be nice if -spkg ran hg status and reported any funny things.\n22:01 < wstein> good idea.  implement it and send me a patch.\n22:01 < wstein> it's easy.\n22:01 < jason> yeah, I know.\n22:02 < wstein> my only concern about 6165 -- is this going to be upstreamed to maxima?\n22:02 < wstein> i.e., or have you just made it so for the first time ever when debian sage tries to use the systemwide maxima\n22:02 < wstein> it'll just totally break no matter what forever when doing eigenvectors.\n22:02 < wstein> Just curious.\n22:02 < wstein> As long as robert dodier is putting that patch into maxima, no prob.\n22:03 < wstein> but he doesn't say so in the thread as far as I can tell.\n```\n",
+    "body": "```\n21:59 < wstein> wstein@sage:~/tmp/maxima-5.16.3.p3$ hg status\n21:59 < wstein> ? patches/eigen.mac\n21:59 < wstein> yep, that pynac segfault looks *very* serious.\n21:59 < wstein> ouch.\n21:59 < jason> oh, grr, I forgot to add that file.\n21:59 < wstein> but it is inevitable.\n21:59 < jason> hang on.\n22:00 < jason> it'd be nice if -spkg ran hg status and reported any funny things.\n22:01 < wstein> good idea.  implement it and send me a patch.\n22:01 < wstein> it's easy.\n22:01 < jason> yeah, I know.\n22:02 < wstein> my only concern about 6165 -- is this going to be upstreamed to maxima?\n22:02 < wstein> i.e., or have you just made it so for the first time ever when debian sage tries to use the systemwide maxima\n22:02 < wstein> it'll just totally break no matter what forever when doing eigenvectors.\n22:02 < wstein> Just curious.\n22:02 < wstein> As long as robert dodier is putting that patch into maxima, no prob.\n22:03 < wstein> but he doesn't say so in the thread as far as I can tell.\n```",
     "created_at": "2009-05-31T05:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ archive/issue_comments_049092.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 21:59 < wstein> wstein@sage:~/tmp/maxima-5.16.3.p3$ hg status
@@ -84,7 +83,6 @@ archive/issue_comments_049092.json:
 22:02 < wstein> As long as robert dodier is putting that patch into maxima, no prob.
 22:03 < wstein> but he doesn't say so in the thread as far as I can tell.
 ```
-
 
 
 
@@ -147,7 +145,7 @@ Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a lo
 archive/issue_comments_049096.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexGhitza]:\n> Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a look at #6699 to double-check.\n\nYes, this is the case:\n\n```\nMaxima 5.19.1 http://maxima.sourceforge.netUsing Lisp SBCL 1.0.30Distributed under the GNU Public License. See the file COPYING.Dedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) M1 : matrix ([0, 1, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]);\n                                [ 0  1  0  0 ]\n                                [            ]\n                                [ 0  0  0  0 ]\n(%o1)                           [            ]\n                                [ 0  0  2  0 ]\n                                [            ]\n                                [ 0  0  0  2 ]\n(%i2) [vals, vecs] : eigenvectors (M1);\n(%o2) [[[0, 2], [2, 2]], [[[1, 0, 0, 0]], [[0, 0, 1, 0], [0, 0, 0, 1]]]]\n(%i3) for i thru length (vals) do disp (val[i] = vals[i][1], mult[i] =\nvals[i][2], vec[i] = vecs[i]);\n                                   val  = 0\n                                      1\n\n                                   mult  = 2\n                                       1\n\n                             vec  = [[1, 0, 0, 0]]\n                                1\n\n                                   val  = 2\n                                      2\n\n                                   mult  = 2\n                                       2\n\n                      vec  = [[0, 0, 1, 0], [0, 0, 0, 1]]\n                         2\n\n(%o3)                                done\n```\n",
+    "body": "Replying to [comment:6 AlexGhitza]:\n> Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a look at #6699 to double-check.\n\n\nYes, this is the case:\n\n```\nMaxima 5.19.1 http://maxima.sourceforge.netUsing Lisp SBCL 1.0.30Distributed under the GNU Public License. See the file COPYING.Dedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) M1 : matrix ([0, 1, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]);\n                                [ 0  1  0  0 ]\n                                [            ]\n                                [ 0  0  0  0 ]\n(%o1)                           [            ]\n                                [ 0  0  2  0 ]\n                                [            ]\n                                [ 0  0  0  2 ]\n(%i2) [vals, vecs] : eigenvectors (M1);\n(%o2) [[[0, 2], [2, 2]], [[[1, 0, 0, 0]], [[0, 0, 1, 0], [0, 0, 0, 1]]]]\n(%i3) for i thru length (vals) do disp (val[i] = vals[i][1], mult[i] =\nvals[i][2], vec[i] = vecs[i]);\n                                   val  = 0\n                                      1\n\n                                   mult  = 2\n                                       1\n\n                             vec  = [[1, 0, 0, 0]]\n                                1\n\n                                   val  = 2\n                                      2\n\n                                   mult  = 2\n                                       2\n\n                      vec  = [[0, 0, 1, 0], [0, 0, 0, 1]]\n                         2\n\n(%o3)                                done\n```",
     "created_at": "2009-09-15T13:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
@@ -158,6 +156,7 @@ archive/issue_comments_049096.json:
 
 Replying to [comment:6 AlexGhitza]:
 > Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a look at #6699 to double-check.
+
 
 Yes, this is the case:
 
@@ -196,7 +195,6 @@ vals[i][2], vec[i] = vecs[i]);
 
 (%o3)                                done
 ```
-
 
 
 

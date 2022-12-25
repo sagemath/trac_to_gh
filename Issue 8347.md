@@ -332,7 +332,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074410.json:
 ```json
 {
-    "body": "another problem:\n\n```\nsage: K.<a> = QuadraticField(-3)\nsage: (a-a).is_real_positive() \n...\nTypeError: Unable to convert number to real interval.\n```\n\n\nPaul",
+    "body": "another problem:\n\n```\nsage: K.<a> = QuadraticField(-3)\nsage: (a-a).is_real_positive() \n...\nTypeError: Unable to convert number to real interval.\n```\n\nPaul",
     "created_at": "2010-02-28T19:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8347",
     "type": "issue_comment",
@@ -349,7 +349,6 @@ sage: (a-a).is_real_positive()
 ...
 TypeError: Unable to convert number to real interval.
 ```
-
 
 Paul
 

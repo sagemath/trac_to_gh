@@ -3,7 +3,7 @@
 archive/issues_007808.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:\n\n\n```\nregion_plot([x^2+y^2<=1, x<=y], (x,-2,2), (y,-2,2),plot_points=400).show(aspect_ratio=1)\n```\n\n\nThere are a lot of other examples in a thread on one of the sage mailing lists, but I can't find the thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7808\n\n",
+    "body": "Assignee: @williamstein\n\nThere was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:\n\n```\nregion_plot([x^2+y^2<=1, x<=y], (x,-2,2), (y,-2,2),plot_points=400).show(aspect_ratio=1)\n```\n\nThere are a lot of other examples in a thread on one of the sage mailing lists, but I can't find the thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7808\n\n",
     "created_at": "2010-01-01T18:39:13Z",
     "labels": [
         "component: graphics",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 There was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:
 
-
 ```
 region_plot([x^2+y^2<=1, x<=y], (x,-2,2), (y,-2,2),plot_points=400).show(aspect_ratio=1)
 ```
-
 
 There are a lot of other examples in a thread on one of the sage mailing lists, but I can't find the thread.
 
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7808
 archive/issue_comments_067425.json:
 ```json
 {
-    "body": "Here is another example which clearly shows something is wrong:\n\n\n```\nbl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\ntr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\ntl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\nbr = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\nP  = tl+tr+bl+br\nP.show(aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```\n\n\n(from the disk doctests)",
+    "body": "Here is another example which clearly shows something is wrong:\n\n```\nbl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\ntr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\ntl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\nbr = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\nP  = tl+tr+bl+br\nP.show(aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```\n\n(from the disk doctests)",
     "created_at": "2010-06-11T04:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -50,7 +48,6 @@ archive/issue_comments_067425.json:
 
 Here is another example which clearly shows something is wrong:
 
-
 ```
 bl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')
 tr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')
@@ -59,7 +56,6 @@ br = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')
 P  = tl+tr+bl+br
 P.show(aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)
 ```
-
 
 (from the disk doctests)
 
@@ -70,7 +66,7 @@ P.show(aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)
 archive/issue_comments_067426.json:
 ```json
 {
-    "body": "Here's an even better illustration. Try changing the dpi:\n\n\n```\n@interact\ndef show_shift(dpi=(50,150,1)):\n    # 50 dpi = shifted left\n    # 70 dpi = shifted up\n    # 80 dpi = seems perfect\n    # 100 dpi = shifted up and left\n    # 105 dpi = shifted up\n    # 110 dpi = seems perfect\n    bl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\n    tr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\n    tl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\n    br = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\n    P  = tl+tr+bl+br\n    P.show(figsize=[10,10],dpi=dpi,aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```\n",
+    "body": "Here's an even better illustration. Try changing the dpi:\n\n```\n@interact\ndef show_shift(dpi=(50,150,1)):\n    # 50 dpi = shifted left\n    # 70 dpi = shifted up\n    # 80 dpi = seems perfect\n    # 100 dpi = shifted up and left\n    # 105 dpi = shifted up\n    # 110 dpi = seems perfect\n    bl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\n    tr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\n    tl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\n    br = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\n    P  = tl+tr+bl+br\n    P.show(figsize=[10,10],dpi=dpi,aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```",
     "created_at": "2010-06-11T04:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -80,7 +76,6 @@ archive/issue_comments_067426.json:
 ```
 
 Here's an even better illustration. Try changing the dpi:
-
 
 ```
 @interact
@@ -101,13 +96,12 @@ def show_shift(dpi=(50,150,1)):
 
 
 
-
 ---
 
 archive/issue_comments_067427.json:
 ```json
 {
-    "body": "One more iteration, this time with the option to see the frame:\n\n\n```\n@interact\ndef show_shift(dpi=(50,150,1),frame=False):\n    # 50 dpi = shifted left\n    # 70 dpi = shifted up\n    # 80 dpi = seems perfect\n    # 100 dpi = shifted up and left\n    # 105 dpi = shifted up\n    # 110 dpi = seems perfect\n    # different results if frame is checked\n    bl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\n    tr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\n    tl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\n    br = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\n    P  = tl+tr+bl+br\n    P.show(figsize=[10,10],dpi=dpi,frame=frame,aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```\n",
+    "body": "One more iteration, this time with the option to see the frame:\n\n```\n@interact\ndef show_shift(dpi=(50,150,1),frame=False):\n    # 50 dpi = shifted left\n    # 70 dpi = shifted up\n    # 80 dpi = seems perfect\n    # 100 dpi = shifted up and left\n    # 105 dpi = shifted up\n    # 110 dpi = seems perfect\n    # different results if frame is checked\n    bl = disk((0.0,0.0), 1, (pi, 3*pi/2), color='yellow')\n    tr = disk((0.0,0.0), 1, (0, pi/2), color='yellow')\n    tl = disk((0.0,0.0), 1, (pi/2, pi), color='black')\n    br = disk((0.0,0.0), 1, (3*pi/2, 2*pi), color='black')\n    P  = tl+tr+bl+br\n    P.show(figsize=[10,10],dpi=dpi,frame=frame,aspect_ratio=1,xmin=-2,xmax=2,ymin=-2,ymax=2)\n```",
     "created_at": "2010-06-11T04:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -117,7 +111,6 @@ archive/issue_comments_067427.json:
 ```
 
 One more iteration, this time with the option to see the frame:
-
 
 ```
 @interact
@@ -139,13 +132,12 @@ def show_shift(dpi=(50,150,1),frame=False):
 
 
 
-
 ---
 
 archive/issue_comments_067428.json:
 ```json
 {
-    "body": "Actually, the above examples might just be due to the line width (the line around the disk).  Here is an example that again shows something really is wrong:\n\n\n```\np=line([[-1,0],[1,0]])+line([[0,-1],[0,1]],color='red')+line([[-1,-1],[1,1]],color='yellow')\np.show(figsize=20,dpi=300)\n```\n\n\nZooming in very closely shows that the red and blue lines are perfect, but the yellow line is shifted up or to the left or both (note the yellow pixels in quadrant 2, but not in quadrant 4).",
+    "body": "Actually, the above examples might just be due to the line width (the line around the disk).  Here is an example that again shows something really is wrong:\n\n```\np=line([[-1,0],[1,0]])+line([[0,-1],[0,1]],color='red')+line([[-1,-1],[1,1]],color='yellow')\np.show(figsize=20,dpi=300)\n```\n\nZooming in very closely shows that the red and blue lines are perfect, but the yellow line is shifted up or to the left or both (note the yellow pixels in quadrant 2, but not in quadrant 4).",
     "created_at": "2010-06-11T05:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -156,12 +148,10 @@ archive/issue_comments_067428.json:
 
 Actually, the above examples might just be due to the line width (the line around the disk).  Here is an example that again shows something really is wrong:
 
-
 ```
 p=line([[-1,0],[1,0]])+line([[0,-1],[0,1]],color='red')+line([[-1,-1],[1,1]],color='yellow')
 p.show(figsize=20,dpi=300)
 ```
-
 
 Zooming in very closely shows that the red and blue lines are perfect, but the yellow line is shifted up or to the left or both (note the yellow pixels in quadrant 2, but not in quadrant 4).
 
@@ -236,7 +226,7 @@ Pick your poison.
 archive/issue_comments_067432.json:
 ```json
 {
-    "body": "Instead of applying the patch above, you can also do:\n\n1. Install #9208 (to the scripts repository)\n2. If you've moved Sage from the build directory, then move it back to the original build location, delete SAGE_ROOT/local/lib/sage-current-location.txt, install #9210, start up and close down Sage, (and then you can move the sage directory back to wherever you had it in step 1).\n2. Install the new matplotlib spkg at #9202\n\nNow just type this in a notebook cell:\n\n\n```\nimport matplotlib\nmatplotlib.rcParams['path.snap'] = False\n```\n\n\nThen the plots will go right through the origin.  This is equivalent (better, actually), than the patch above, as it makes *all* horizontal/vertical lines not snap to the nearest pixel.\n\nSo now the debate is if we should make path.snap by default False (it is True by default in matplotlib).",
+    "body": "Instead of applying the patch above, you can also do:\n\n1. Install #9208 (to the scripts repository)\n2. If you've moved Sage from the build directory, then move it back to the original build location, delete SAGE_ROOT/local/lib/sage-current-location.txt, install #9210, start up and close down Sage, (and then you can move the sage directory back to wherever you had it in step 1).\n2. Install the new matplotlib spkg at #9202\n\nNow just type this in a notebook cell:\n\n```\nimport matplotlib\nmatplotlib.rcParams['path.snap'] = False\n```\n\nThen the plots will go right through the origin.  This is equivalent (better, actually), than the patch above, as it makes *all* horizontal/vertical lines not snap to the nearest pixel.\n\nSo now the debate is if we should make path.snap by default False (it is True by default in matplotlib).",
     "created_at": "2010-06-11T21:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -253,12 +243,10 @@ Instead of applying the patch above, you can also do:
 
 Now just type this in a notebook cell:
 
-
 ```
 import matplotlib
 matplotlib.rcParams['path.snap'] = False
 ```
-
 
 Then the plots will go right through the origin.  This is equivalent (better, actually), than the patch above, as it makes *all* horizontal/vertical lines not snap to the nearest pixel.
 
@@ -289,7 +277,7 @@ The new matplotlib spkg with the path.snap parameter has been moved to #9221
 archive/issue_comments_067434.json:
 ```json
 {
-    "body": "I'm uncomfortable with the following comment in the patch\n\n```\n(but drawing another \n # horizontal/vertical line through the origin may not!) \n```\n\nBut would that still be the case for the mpl upgrade piece?  \n\nOtherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.",
+    "body": "I'm uncomfortable with the following comment in the patch\n\n```\n(but drawing another \n # horizontal/vertical line through the origin may not!) \n```\nBut would that still be the case for the mpl upgrade piece?  \n\nOtherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.",
     "created_at": "2010-06-12T02:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -304,7 +292,6 @@ I'm uncomfortable with the following comment in the patch
 (but drawing another 
  # horizontal/vertical line through the origin may not!) 
 ```
-
 But would that still be the case for the mpl upgrade piece?  
 
 Otherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.
@@ -316,7 +303,7 @@ Otherwise it seems that 2 is the best option.  Axes that don't match is a simila
 archive/issue_comments_067435.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> I'm uncomfortable with the following comment in the patch\n> {{{\n> (but drawing another \n>  # horizontal/vertical line through the origin may not!) \n> }}}\n> But would that still be the case for the mpl upgrade piece?  \n\nSetting path.snap to False makes all horizontal/vertical lines do the .set_snap(False) (not just the axes).  So using the rcParam as above would make all horizontal and vertical lines consistent.\n\n\n> \n> Otherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.  \n\nIn that case, all we have to do is set the matplotlib path.snap config parameter somewhere (either in our code, or provide a default matplotlibrc, or modify the default matplotlibrc in the spkg.\n\nI played a little with Mathematica, and it seems like they have both crisp horizontal lines *and* perfect axes.  I'm not quite sure what they are doing, though.",
+    "body": "Replying to [comment:10 kcrisman]:\n> I'm uncomfortable with the following comment in the patch\n> \n> ```\n> (but drawing another \n>  # horizontal/vertical line through the origin may not!) \n> ```\n> But would that still be the case for the mpl upgrade piece?  \n\n\nSetting path.snap to False makes all horizontal/vertical lines do the .set_snap(False) (not just the axes).  So using the rcParam as above would make all horizontal and vertical lines consistent.\n\n\n> \n> Otherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.  \n\n\nIn that case, all we have to do is set the matplotlib path.snap config parameter somewhere (either in our code, or provide a default matplotlibrc, or modify the default matplotlibrc in the spkg.\n\nI played a little with Mathematica, and it seems like they have both crisp horizontal lines *and* perfect axes.  I'm not quite sure what they are doing, though.",
     "created_at": "2010-06-12T02:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -327,17 +314,20 @@ archive/issue_comments_067435.json:
 
 Replying to [comment:10 kcrisman]:
 > I'm uncomfortable with the following comment in the patch
-> {{{
+> 
+> ```
 > (but drawing another 
 >  # horizontal/vertical line through the origin may not!) 
-> }}}
+> ```
 > But would that still be the case for the mpl upgrade piece?  
+
 
 Setting path.snap to False makes all horizontal/vertical lines do the .set_snap(False) (not just the axes).  So using the rcParam as above would make all horizontal and vertical lines consistent.
 
 
 > 
 > Otherwise it seems that 2 is the best option.  Axes that don't match is a similarly annoying thing to the moved-over pixel.  
+
 
 In that case, all we have to do is set the matplotlib path.snap config parameter somewhere (either in our code, or provide a default matplotlibrc, or modify the default matplotlibrc in the spkg.
 
@@ -404,7 +394,7 @@ Is this now ready for review, with #9221 merged?  Or do we still have to decide 
 archive/issue_comments_067439.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> Is this now ready for review, with #9221 merged?  Or do we still have to decide on one of 1-3?\n\nI don't think the patch should be merged.  Instead, a new patch that does this:\n\n\n```\nimport matplotlib\nmatplotlib.rcParams['path.snap'] = False\n```\n\n\nsomewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.",
+    "body": "Replying to [comment:14 kcrisman]:\n> Is this now ready for review, with #9221 merged?  Or do we still have to decide on one of 1-3?\n\n\nI don't think the patch should be merged.  Instead, a new patch that does this:\n\n```\nimport matplotlib\nmatplotlib.rcParams['path.snap'] = False\n```\n\nsomewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.",
     "created_at": "2010-11-09T01:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -416,14 +406,13 @@ archive/issue_comments_067439.json:
 Replying to [comment:14 kcrisman]:
 > Is this now ready for review, with #9221 merged?  Or do we still have to decide on one of 1-3?
 
-I don't think the patch should be merged.  Instead, a new patch that does this:
 
+I don't think the patch should be merged.  Instead, a new patch that does this:
 
 ```
 import matplotlib
 matplotlib.rcParams['path.snap'] = False
 ```
-
 
 somewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.
 
@@ -434,7 +423,7 @@ somewhere should be posted.  I think a vote should also be taken on sage-devel w
 archive/issue_comments_067440.json:
 ```json
 {
-    "body": "> I don't think the patch should be merged.  Instead, a new patch that does this:\n> \n> {{{\n> import matplotlib\n> matplotlib.rcParams['path.snap'] = False\n> }}}\n> \n> somewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.\n\nThanks for volunteering :)  Thankfully, I've not even been taking home a computer that can compile Sage in less than one day home lately.\n\nThe reason I thought of this is a recent ask.sagemath.org post.",
+    "body": "> I don't think the patch should be merged.  Instead, a new patch that does this:\n> \n> \n> ```\n> import matplotlib\n> matplotlib.rcParams['path.snap'] = False\n> ```\n> \n> somewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.\n\n\nThanks for volunteering :)  Thankfully, I've not even been taking home a computer that can compile Sage in less than one day home lately.\n\nThe reason I thought of this is a recent ask.sagemath.org post.",
     "created_at": "2010-11-09T01:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
@@ -445,12 +434,14 @@ archive/issue_comments_067440.json:
 
 > I don't think the patch should be merged.  Instead, a new patch that does this:
 > 
-> {{{
+> 
+> ```
 > import matplotlib
 > matplotlib.rcParams['path.snap'] = False
-> }}}
+> ```
 > 
 > somewhere should be posted.  I think a vote should also be taken on sage-devel with before and after pics.
+
 
 Thanks for volunteering :)  Thankfully, I've not even been taking home a computer that can compile Sage in less than one day home lately.
 

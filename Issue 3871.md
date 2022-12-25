@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3871
 archive/issue_comments_027532.json:
 ```json
 {
-    "body": "I didn't testlong, but I did a full test, and found that /rings/polynomial/polynomial_element.pyx creates two images around line 228\n\n\n```\n        EXAMPLES:\n            sage: x = polygen(GF(389))\n            sage: plot(x^2 + 1, rgbcolor=(0,0,1)).save()\n            sage: x = polygen(QQ)\n            sage: plot(x^2 + 1, rgbcolor=(1,0,0)).save()\n```\n",
+    "body": "I didn't testlong, but I did a full test, and found that /rings/polynomial/polynomial_element.pyx creates two images around line 228\n\n```\n        EXAMPLES:\n            sage: x = polygen(GF(389))\n            sage: plot(x^2 + 1, rgbcolor=(0,0,1)).save()\n            sage: x = polygen(QQ)\n            sage: plot(x^2 + 1, rgbcolor=(1,0,0)).save()\n```",
     "created_at": "2009-01-22T18:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3871",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_027532.json:
 
 I didn't testlong, but I did a full test, and found that /rings/polynomial/polynomial_element.pyx creates two images around line 228
 
-
 ```
         EXAMPLES:
             sage: x = polygen(GF(389))
@@ -54,7 +53,6 @@ I didn't testlong, but I did a full test, and found that /rings/polynomial/polyn
             sage: x = polygen(QQ)
             sage: plot(x^2 + 1, rgbcolor=(1,0,0)).save()
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003045.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: galois field\n\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: galois field\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
     "created_at": "2008-04-27T15:06:13Z",
     "labels": [
         "component: number theory",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 Keywords: galois field
 
-
 ```
 sage: k = GF(7)
 sage: k.gen()
 1
 ```
-
 
 
 

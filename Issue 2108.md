@@ -3,7 +3,7 @@
 archive/issues_002108.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAttached file includes ATLAS tuning information for Intel prescott cpu's. It was generated using the instructions in ticket:1886.\n\nHere is the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/msg/b61176e3e1a2189e\n\nSince ATLAS doesn't detect my cpu properly, the architecture name it uses is `UNKNOWNx8632SSE3`. Should I do anything to change this?\n\nHere is the output from `/proc/cpuinfo`:\n\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 15\nmodel           : 6\nmodel name      : Intel(R) Pentium(R) D CPU 3.40GHz\nstepping        : 4\ncpu MHz         : 3400.160\ncache size      : 2048 KB\nphysical id     : 0\nsiblings        : 2\ncore id         : 1\ncpu cores       : 2\nfdiv_bug        : no\nhlt_bug         : no\nf00f_bug        : no\ncoma_bug        : no\nfpu             : yes\nfpu_exception   : yes\ncpuid level     : 6\nwp              : yes\nflags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl est cid cx16 xtpr lahf_lm\nbogomips        : 6800.17\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2108\n\n",
+    "body": "Assignee: mabshoff\n\nAttached file includes ATLAS tuning information for Intel prescott cpu's. It was generated using the instructions in ticket:1886.\n\nHere is the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/msg/b61176e3e1a2189e\n\nSince ATLAS doesn't detect my cpu properly, the architecture name it uses is `UNKNOWNx8632SSE3`. Should I do anything to change this?\n\nHere is the output from `/proc/cpuinfo`:\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 15\nmodel           : 6\nmodel name      : Intel(R) Pentium(R) D CPU 3.40GHz\nstepping        : 4\ncpu MHz         : 3400.160\ncache size      : 2048 KB\nphysical id     : 0\nsiblings        : 2\ncore id         : 1\ncpu cores       : 2\nfdiv_bug        : no\nhlt_bug         : no\nf00f_bug        : no\ncoma_bug        : no\nfpu             : yes\nfpu_exception   : yes\ncpuid level     : 6\nwp              : yes\nflags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl est cid cx16 xtpr lahf_lm\nbogomips        : 6800.17\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2108\n\n",
     "created_at": "2008-02-08T10:36:48Z",
     "labels": [
         "component: packages: standard"
@@ -26,7 +26,6 @@ http://groups.google.com/group/sage-devel/msg/b61176e3e1a2189e
 Since ATLAS doesn't detect my cpu properly, the architecture name it uses is `UNKNOWNx8632SSE3`. Should I do anything to change this?
 
 Here is the output from `/proc/cpuinfo`:
-
 
 ```
 vendor_id       : GenuineIntel
@@ -51,7 +50,6 @@ wp              : yes
 flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl est cid cx16 xtpr lahf_lm
 bogomips        : 6800.17
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2108
 
@@ -184,7 +182,7 @@ Looking forward to a new atlas package. :)
 archive/issue_comments_013720.json:
 ```json
 {
-    "body": "Replying to [comment:2 burcin]:\n> attachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. \n> \n> Looking forward to a new atlas package. :)\n\nTrac is buggy with attached tgz archives, so it is better to link them. I can get at those via directly accessing sagemath.org. The interesting tgz is now at\n\nhttp://sage.math.washington.edu/home/mabshoff/ATLAS-tune/P4D32SSE3.tgz\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 burcin]:\n> attachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. \n> \n> Looking forward to a new atlas package. :)\n\n\nTrac is buggy with attached tgz archives, so it is better to link them. I can get at those via directly accessing sagemath.org. The interesting tgz is now at\n\nhttp://sage.math.washington.edu/home/mabshoff/ATLAS-tune/P4D32SSE3.tgz\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T19:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2108",
     "type": "issue_comment",
@@ -197,6 +195,7 @@ Replying to [comment:2 burcin]:
 > attachment:atlas_arch_p4d.patch provides the detection, and attachment:P4D32SSE3.tgz is the new tuning info. 
 > 
 > Looking forward to a new atlas package. :)
+
 
 Trac is buggy with attached tgz archives, so it is better to link them. I can get at those via directly accessing sagemath.org. The interesting tgz is now at
 

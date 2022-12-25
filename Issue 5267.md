@@ -3,7 +3,7 @@
 archive/issues_005267.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nI just ran into this (on 3.3.rc0):\n\n\n```\nsage: S.<u, v> = QQ[]\nsage: I = Ideal(-u^2*v+1)\nsage: I.plot()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/23695/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in plot(self, *args, **kwds)\n   2387                     v, mi, ma = variables[var_index], -10, 10\n   2388                     for i in range(mi, ma):\n-> 2389                         roots = f.subs({v:i}).univariate_polynomial().change_ring(RR).roots()\n   2390                         if len(roots) > 0:\n   2391                             mi = i - 1\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5267\n\n",
+    "body": "Assignee: @malb\n\nI just ran into this (on 3.3.rc0):\n\n```\nsage: S.<u, v> = QQ[]\nsage: I = Ideal(-u^2*v+1)\nsage: I.plot()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/23695/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in plot(self, *args, **kwds)\n   2387                     v, mi, ma = variables[var_index], -10, 10\n   2388                     for i in range(mi, ma):\n-> 2389                         roots = f.subs({v:i}).univariate_polynomial().change_ring(RR).roots()\n   2390                         if len(roots) > 0:\n   2391                             mi = i - 1\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5267\n\n",
     "created_at": "2009-02-14T10:46:56Z",
     "labels": [
         "component: commutative algebra",
@@ -19,7 +19,6 @@ archive/issues_005267.json:
 Assignee: @malb
 
 I just ran into this (on 3.3.rc0):
-
 
 ```
 sage: S.<u, v> = QQ[]
@@ -43,7 +42,6 @@ IndexError: list index out of range
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5267
 
 
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5267
 archive/issue_comments_040355.json:
 ```json
 {
-    "body": "Tracked it down to a bug in turning a constant multivariate polynomial into a univariate one, as in the following example:\n\n\n```\nsage: S.<u, v> = QQ[]\nsage: f = S(1)\nsage: f.univariate_polynomial()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/769/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\n\nIn light of this, I'm changing the summary of the ticket.  I'll have a patch up soon.",
+    "body": "Tracked it down to a bug in turning a constant multivariate polynomial into a univariate one, as in the following example:\n\n```\nsage: S.<u, v> = QQ[]\nsage: f = S(1)\nsage: f.univariate_polynomial()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/769/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\nIn light of this, I'm changing the summary of the ticket.  I'll have a patch up soon.",
     "created_at": "2009-02-14T11:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ archive/issue_comments_040355.json:
 ```
 
 Tracked it down to a bug in turning a constant multivariate polynomial into a univariate one, as in the following example:
-
 
 ```
 sage: S.<u, v> = QQ[]
@@ -80,7 +77,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-
 
 In light of this, I'm changing the summary of the ticket.  I'll have a patch up soon.
 

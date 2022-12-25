@@ -57,7 +57,7 @@ Note: the attached patch does not contain the commit messages!
 archive/issue_comments_034012.json:
 ```json
 {
-    "body": "Replying to [ticket:4549 nthiery]:\n> See the title. Patch integer_lists_lex-nt in development in sage-combinat.\n\nNote: this patch depends on #4371 and #5255.",
+    "body": "Replying to [ticket:4549 nthiery]:\n> See the title. Patch integer_lists_lex-nt in development in sage-combinat.\n\n\nNote: this patch depends on #4371 and #5255.",
     "created_at": "2009-02-13T16:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -68,6 +68,7 @@ archive/issue_comments_034012.json:
 
 Replying to [ticket:4549 nthiery]:
 > See the title. Patch integer_lists_lex-nt in development in sage-combinat.
+
 
 Note: this patch depends on #4371 and #5255.
 
@@ -170,7 +171,7 @@ It's ok for me ! The warning is a good idea. Go ahead.
 archive/issue_comments_034017.json:
 ```json
 {
-    "body": "This patch breaks the pickle jar which according to Mike is no surprise:\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/structure/sage_object.pyx\", line 682:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    ** failed:  _class__sage_combinat_partition_PartitionsGreatestEQ_nk__.sobj\n    ** failed:  _class__sage_combinat_partition_Partitions_constraints__.sobj\n    ** failed:  _class__sage_combinat_partition_PartitionsGreatestLE_nk__.sobj\n    Failed:\n    _class__sage_combinat_partition_PartitionsGreatestEQ_nk__.sobj\n    _class__sage_combinat_partition_Partitions_constraints__.sobj\n    _class__sage_combinat_partition_PartitionsGreatestLE_nk__.sobj\n    Successfully unpickled 445 objects.\n    Failed to unpickle 3 objects.\n**********************************************************************\n```\n\n\nWe need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.\n\nCheers,\n\nMichael",
+    "body": "This patch breaks the pickle jar which according to Mike is no surprise:\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/structure/sage_object.pyx\", line 682:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    ** failed:  _class__sage_combinat_partition_PartitionsGreatestEQ_nk__.sobj\n    ** failed:  _class__sage_combinat_partition_Partitions_constraints__.sobj\n    ** failed:  _class__sage_combinat_partition_PartitionsGreatestLE_nk__.sobj\n    Failed:\n    _class__sage_combinat_partition_PartitionsGreatestEQ_nk__.sobj\n    _class__sage_combinat_partition_Partitions_constraints__.sobj\n    _class__sage_combinat_partition_PartitionsGreatestLE_nk__.sobj\n    Successfully unpickled 445 objects.\n    Failed to unpickle 3 objects.\n**********************************************************************\n```\n\nWe need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T08:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -206,7 +207,6 @@ Got:
 **********************************************************************
 ```
 
-
 We need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.
 
 Cheers,
@@ -220,7 +220,7 @@ Michael
 archive/issue_comments_034018.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> I've added a patch which adds some doctests, adds a warning when min_part=0 is passed to partitions, \nThanks!\n\n> and changed the default implementation of count to use Integers \n\nGood.\n\n> so that we don't have to reimplemented in IntegerListsLex\n\nWe still do! Sorry, I did not comment on this in the code, but the implementation of count differs from\nthe default one from CombinatorialClass, as it bypasses the call to _element_constructor_!",
+    "body": "Replying to [comment:5 mhansen]:\n> I've added a patch which adds some doctests, adds a warning when min_part=0 is passed to partitions, \n\nThanks!\n\n> and changed the default implementation of count to use Integers \n\n\nGood.\n\n> so that we don't have to reimplemented in IntegerListsLex\n\n\nWe still do! Sorry, I did not comment on this in the code, but the implementation of count differs from\nthe default one from CombinatorialClass, as it bypasses the call to _element_constructor_!",
     "created_at": "2009-02-15T22:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -231,13 +231,16 @@ archive/issue_comments_034018.json:
 
 Replying to [comment:5 mhansen]:
 > I've added a patch which adds some doctests, adds a warning when min_part=0 is passed to partitions, 
+
 Thanks!
 
 > and changed the default implementation of count to use Integers 
 
+
 Good.
 
 > so that we don't have to reimplemented in IntegerListsLex
+
 
 We still do! Sorry, I did not comment on this in the code, but the implementation of count differs from
 the default one from CombinatorialClass, as it bypasses the call to _element_constructor_!
@@ -249,7 +252,7 @@ the default one from CombinatorialClass, as it bypasses the call to _element_con
 archive/issue_comments_034019.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> This patch breaks the pickle jar which according to Mike is no surprise:\n\nIndeed no surprise. \n\n> We need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.\n\nI would tend to break the pickles indeed, unless someone cries very loud for this.\n\nCheers,\n\t\t\t\tNicolas",
+    "body": "Replying to [comment:8 mabshoff]:\n> This patch breaks the pickle jar which according to Mike is no surprise:\n\n\nIndeed no surprise. \n\n> We need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.\n\n\nI would tend to break the pickles indeed, unless someone cries very loud for this.\n\nCheers,\n\t\t\t\tNicolas",
     "created_at": "2009-02-15T22:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -261,9 +264,11 @@ archive/issue_comments_034019.json:
 Replying to [comment:8 mabshoff]:
 > This patch breaks the pickle jar which according to Mike is no surprise:
 
+
 Indeed no surprise. 
 
 > We need to make a call if we are going to break this pickles or not. Other than that there were no doctesting issues.
+
 
 I would tend to break the pickles indeed, unless someone cries very loud for this.
 
@@ -389,7 +394,7 @@ I should mention: only the last patch is needed; it integrates the previous ones
 archive/issue_comments_034024.json:
 ```json
 {
-    "body": "Dear Nicolas,\n\n> I should mention: only the last patch is needed; it integrates the previous ones\n\nThe patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n** failed:  _class__sage_combinat_partition_Partitions_constraints__.sobj\n/usr/local/sage/sage/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n  exec code_obj in self.user_global_ns, self.user_ns\nFailed:\n_class__sage_combinat_partition_Partitions_constraints__.sobj\nSuccessfully unpickled 486 objects.\nFailed to unpickle 1 objects.\n```\n\nAm I doing something wrong ?\n\nCheers,\n\nFlorent",
+    "body": "Dear Nicolas,\n\n> I should mention: only the last patch is needed; it integrates the previous ones\n\n\nThe patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n** failed:  _class__sage_combinat_partition_Partitions_constraints__.sobj\n/usr/local/sage/sage/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n  exec code_obj in self.user_global_ns, self.user_ns\nFailed:\n_class__sage_combinat_partition_Partitions_constraints__.sobj\nSuccessfully unpickled 486 objects.\nFailed to unpickle 1 objects.\n```\nAm I doing something wrong ?\n\nCheers,\n\nFlorent",
     "created_at": "2009-04-02T09:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -401,6 +406,7 @@ archive/issue_comments_034024.json:
 Dear Nicolas,
 
 > I should mention: only the last patch is needed; it integrates the previous ones
+
 
 The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:
 
@@ -415,7 +421,6 @@ _class__sage_combinat_partition_Partitions_constraints__.sobj
 Successfully unpickled 486 objects.
 Failed to unpickle 1 objects.
 ```
-
 Am I doing something wrong ?
 
 Cheers,
@@ -447,7 +452,7 @@ Fix for the remaining broken pickle + tests for the other one.
 archive/issue_comments_034026.json:
 ```json
 {
-    "body": "Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by @hivert created at 2009-04-03 16:36:02\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
+    "body": "Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by @hivert created at 2009-04-03 16:36:02\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
     "created_at": "2009-04-03T16:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
@@ -461,6 +466,7 @@ Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some
 Dear All,
 
 > The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:
+
 
 I added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. 
 

@@ -3,7 +3,7 @@
 archive/issues_003588.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n```\nsage: p = random_prime(2^1000, proof=False)\n\nsage: r = Integers(p)(2)\n\nsage: time 1/r\nCPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s\nWall time: 8.38 s\n 3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845\n```\n\n\nThe generic fraction_field() call does primality testing here, takes too long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3588\n\n",
+    "body": "Assignee: @robertwb\n\n```\nsage: p = random_prime(2^1000, proof=False)\n\nsage: r = Integers(p)(2)\n\nsage: time 1/r\nCPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s\nWall time: 8.38 s\n 3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845\n```\n\nThe generic fraction_field() call does primality testing here, takes too long. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3588\n\n",
     "created_at": "2008-07-07T20:23:11Z",
     "labels": [
         "component: coercion",
@@ -18,7 +18,6 @@ archive/issues_003588.json:
 ```
 Assignee: @robertwb
 
-
 ```
 sage: p = random_prime(2^1000, proof=False)
 
@@ -29,7 +28,6 @@ CPU times: user 8.33 s, sys: 0.04 s, total: 8.37 s
 Wall time: 8.38 s
  3499526081536621642679042248089160305431650460015592790597504050874839449753564641181241694531732168529968232075793871659087004627036430097798051425534663680136477216778245568521334956231031996455409743133009480089945324001250066901998383114487031466512725971538453941363837544198631115493811447198845
 ```
-
 
 The generic fraction_field() call does primality testing here, takes too long. 
 
@@ -309,7 +307,7 @@ archive/issue_events_008215.json:
 archive/issue_comments_025310.json:
 ```json
 {
-    "body": "Are these patches still needed?  In 3.1.1:\n\n\n```\nsage: p = random_prime(2^1000, proof=False)\nsage: r = Integers(p)(2)                   \nsage: time 1/r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4182378068297747496347619509094946589859242110649682753826323779912818104926185222329257414498084527466823768975174201208996376519370243477775194265315260528263826200480626844830896267031936271294686269384932307195051185481109989133791723199020928430708397791147367704717745601696690836602407579616974\nsage: %timeit 1/r\n100000 loops, best of 3: 5.21 \u00b5s per loop\nsage: %timeit 1/Integers(p)(2)\n100000 loops, best of 3: 16.8 \u00b5s per loop\n```\n",
+    "body": "Are these patches still needed?  In 3.1.1:\n\n```\nsage: p = random_prime(2^1000, proof=False)\nsage: r = Integers(p)(2)                   \nsage: time 1/r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4182378068297747496347619509094946589859242110649682753826323779912818104926185222329257414498084527466823768975174201208996376519370243477775194265315260528263826200480626844830896267031936271294686269384932307195051185481109989133791723199020928430708397791147367704717745601696690836602407579616974\nsage: %timeit 1/r\n100000 loops, best of 3: 5.21 \u00b5s per loop\nsage: %timeit 1/Integers(p)(2)\n100000 loops, best of 3: 16.8 \u00b5s per loop\n```",
     "created_at": "2008-08-24T17:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3588",
     "type": "issue_comment",
@@ -319,7 +317,6 @@ archive/issue_comments_025310.json:
 ```
 
 Are these patches still needed?  In 3.1.1:
-
 
 ```
 sage: p = random_prime(2^1000, proof=False)
@@ -333,7 +330,6 @@ sage: %timeit 1/r
 sage: %timeit 1/Integers(p)(2)
 100000 loops, best of 3: 16.8 µs per loop
 ```
-
 
 
 

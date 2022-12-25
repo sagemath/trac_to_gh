@@ -55,7 +55,7 @@ the attached patch depends on #686
 archive/issue_comments_028941.json:
 ```json
 {
-    "body": "On [sage-devel] Oliver Wienand (author of the upcoming Singular implementation for GBs over rings) wrote:\n\n> I have just glimpsed over the code. But maybe it is worth stating in\n> the comments, that the reduce impl. only returns unqiue answer against\n> strong Gr\u00f6bner basis.\n\n> Gr\u00f6bner basis G of I <=> the leading ideal of G generates all leading\n> terms of I\n> strong % of I <=> for every leading term t of I there exists an\n> element g of G, such that the leading term of g divides t.\n\n> (leading terms means coef * product of variables)\n\n> Otherwise the reduce code shown in\n> http://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch\n> looks fine.",
+    "body": "On [sage-devel] Oliver Wienand (author of the upcoming Singular implementation for GBs over rings) wrote:\n\n> I have just glimpsed over the code. But maybe it is worth stating in\n> the comments, that the reduce impl. only returns unqiue answer against\n> strong Gr\u00f6bner basis.\n\n\n> Gr\u00f6bner basis G of I <=> the leading ideal of G generates all leading\n> terms of I\n> strong % of I <=> for every leading term t of I there exists an\n> element g of G, such that the leading term of g divides t.\n\n\n> (leading terms means coef * product of variables)\n\n\n> Otherwise the reduce code shown in\n> http://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch\n> looks fine.",
     "created_at": "2008-09-01T12:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4021",
     "type": "issue_comment",
@@ -70,12 +70,15 @@ On [sage-devel] Oliver Wienand (author of the upcoming Singular implementation f
 > the comments, that the reduce impl. only returns unqiue answer against
 > strong Gröbner basis.
 
+
 > Gröbner basis G of I <=> the leading ideal of G generates all leading
 > terms of I
 > strong % of I <=> for every leading term t of I there exists an
 > element g of G, such that the leading term of g divides t.
 
+
 > (leading terms means coef * product of variables)
+
 
 > Otherwise the reduce code shown in
 > http://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch
@@ -106,7 +109,7 @@ Changing status from new to assigned.
 archive/issue_comments_028943.json:
 ```json
 {
-    "body": "Attachment [mpolynomial_zz_reduce_doc.patch](tarball://root/attachments/some-uuid/ticket4021/mpolynomial_zz_reduce_doc.patch) by @malb created at 2008-09-24 11:30:58\n\nThe second patch addresses the review of Oliver Wienand on [sage-devel]:\n\n```\nI have just glimpsed over the code. But maybe it is worth stating in\nthe comments, that the reduce impl. only returns unqiue answer against\nstrong Gr\u00f6bner basis.\n\nGr\u00f6bner basis G of I <=> the leading ideal of G generates all leading\nterms of I\nstrong % of I <=> for every leading term t of I there exists an\nelement g of G, such that the leading term of g divides t.\n\n(leading terms meaans coef * product of variables)\n\nOtherwise the reduce code shown in\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch\nlooks fine.\n```\n",
+    "body": "Attachment [mpolynomial_zz_reduce_doc.patch](tarball://root/attachments/some-uuid/ticket4021/mpolynomial_zz_reduce_doc.patch) by @malb created at 2008-09-24 11:30:58\n\nThe second patch addresses the review of Oliver Wienand on [sage-devel]:\n\n```\nI have just glimpsed over the code. But maybe it is worth stating in\nthe comments, that the reduce impl. only returns unqiue answer against\nstrong Gr\u00f6bner basis.\n\nGr\u00f6bner basis G of I <=> the leading ideal of G generates all leading\nterms of I\nstrong % of I <=> for every leading term t of I there exists an\nelement g of G, such that the leading term of g divides t.\n\n(leading terms meaans coef * product of variables)\n\nOtherwise the reduce code shown in\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch\nlooks fine.\n```",
     "created_at": "2008-09-24T11:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4021",
     "type": "issue_comment",
@@ -135,7 +138,6 @@ Otherwise the reduce code shown in
 http://trac.sagemath.org/sage_trac/attachment/ticket/4021/mpolynomial_libsingular_zz.patch
 looks fine.
 ```
-
 
 
 

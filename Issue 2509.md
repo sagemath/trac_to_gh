@@ -3,7 +3,7 @@
 archive/issues_002509.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nThis is an absolute showstopper, but it's a little tricky to hit the right piece of code.\n\n\n```\nsage: x = GF(37**4, 'a')['x'].gen()\nsage: x.xgcd\n<built-in method xgcd of Polynomial_generic_dense_field object at 0xca59298>\nsage: x.xgcd(0)\n(1, 0, x)\nsage: 0.xgcd(x)\n(x, 0, 1)\nsage: x.xgcd(x)\n(x, 0, 1)\n```\n\n\nObserve that the first `xgcd` has the outputs in the wrong order.  This cost me hours of debugging the Cantor reduction algorithms in the hyperelliptic curves code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2509\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nThis is an absolute showstopper, but it's a little tricky to hit the right piece of code.\n\n```\nsage: x = GF(37**4, 'a')['x'].gen()\nsage: x.xgcd\n<built-in method xgcd of Polynomial_generic_dense_field object at 0xca59298>\nsage: x.xgcd(0)\n(1, 0, x)\nsage: 0.xgcd(x)\n(x, 0, 1)\nsage: x.xgcd(x)\n(x, 0, 1)\n```\n\nObserve that the first `xgcd` has the outputs in the wrong order.  This cost me hours of debugging the Cantor reduction algorithms in the hyperelliptic curves code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2509\n\n",
     "created_at": "2008-03-13T20:25:55Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ CC:  @ncalexan
 
 This is an absolute showstopper, but it's a little tricky to hit the right piece of code.
 
-
 ```
 sage: x = GF(37**4, 'a')['x'].gen()
 sage: x.xgcd
@@ -35,7 +34,6 @@ sage: 0.xgcd(x)
 sage: x.xgcd(x)
 (x, 0, 1)
 ```
-
 
 Observe that the first `xgcd` has the outputs in the wrong order.  This cost me hours of debugging the Cantor reduction algorithms in the hyperelliptic curves code.
 
@@ -86,7 +84,7 @@ I am reviewing this right now and expect to give a positive review as soon as th
 archive/issue_comments_016982.json:
 ```json
 {
-    "body": "Well, there are two doctest failures. One was easy to fix (a broken doctest in `polynomial_integer_dense_ntl.pyx`), I have attached a patch.\n\nThe other one is really weird. In `sage/structure/factorization.py`, we have the following doctest:\n\n\n```\n        We create a polynomial over the real double field and factor it:                       \n            sage: x = polygen(RDF, 'x')                                                        \n            sage: F = factor(-2*x^2 - 1); F                                                    \n            (-2.0) * (1.0*x^2 - 1.82173070032e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 32-bit       \n            (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 64-bit       \n```\n\n\nThe 32-bit example gets a little changed with Nick's patch.\n\nBUT... look more closely at that doctest. WTF? 2 + 2 = 2?",
+    "body": "Well, there are two doctest failures. One was easy to fix (a broken doctest in `polynomial_integer_dense_ntl.pyx`), I have attached a patch.\n\nThe other one is really weird. In `sage/structure/factorization.py`, we have the following doctest:\n\n```\n        We create a polynomial over the real double field and factor it:                       \n            sage: x = polygen(RDF, 'x')                                                        \n            sage: F = factor(-2*x^2 - 1); F                                                    \n            (-2.0) * (1.0*x^2 - 1.82173070032e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 32-bit       \n            (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 64-bit       \n```\n\nThe 32-bit example gets a little changed with Nick's patch.\n\nBUT... look more closely at that doctest. WTF? 2 + 2 = 2?",
     "created_at": "2008-03-13T22:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2509",
     "type": "issue_comment",
@@ -99,7 +97,6 @@ Well, there are two doctest failures. One was easy to fix (a broken doctest in `
 
 The other one is really weird. In `sage/structure/factorization.py`, we have the following doctest:
 
-
 ```
         We create a polynomial over the real double field and factor it:                       
             sage: x = polygen(RDF, 'x')                                                        
@@ -107,7 +104,6 @@ The other one is really weird. In `sage/structure/factorization.py`, we have the
             (-2.0) * (1.0*x^2 - 1.82173070032e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 32-bit       
             (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)    # 64-bit       
 ```
-
 
 The 32-bit example gets a little changed with Nick's patch.
 

@@ -180,7 +180,7 @@ Michael
 archive/issue_comments_047780.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> I am not sure this should go in as is since the return result is a little strange. Is this consistent with other interfaces in Sage? What does Magma do?\n> \n> Cheers,\n> \n> Michael\n\nThis is entirely consistent with (for example) factorization of rational numbers in Sage:\n\n```\nsage: QQ(123/456).factor()\n2^-3 * 19^-1 * 41\n```\n\nMagma does not allow factorization in QQ or in function fields, which is very annoying (e.g. you cannot factor the discriminant of an elliptic curve (with integral model) over QQ without coercing it into ZZ first).  But Magma does allow for some non-integral factorizations, e.g. of fractional ideals.\n\nSo Michael's worry is a reasonable one but this should definitely be included.  I have therefore removed the \"needs discussion\" tag!",
+    "body": "Replying to [comment:6 mabshoff]:\n> I am not sure this should go in as is since the return result is a little strange. Is this consistent with other interfaces in Sage? What does Magma do?\n> \n> Cheers,\n> \n> Michael\n\n\nThis is entirely consistent with (for example) factorization of rational numbers in Sage:\n\n```\nsage: QQ(123/456).factor()\n2^-3 * 19^-1 * 41\n```\nMagma does not allow factorization in QQ or in function fields, which is very annoying (e.g. you cannot factor the discriminant of an elliptic curve (with integral model) over QQ without coercing it into ZZ first).  But Magma does allow for some non-integral factorizations, e.g. of fractional ideals.\n\nSo Michael's worry is a reasonable one but this should definitely be included.  I have therefore removed the \"needs discussion\" tag!",
     "created_at": "2009-05-30T17:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6016",
     "type": "issue_comment",
@@ -196,13 +196,13 @@ Replying to [comment:6 mabshoff]:
 > 
 > Michael
 
+
 This is entirely consistent with (for example) factorization of rational numbers in Sage:
 
 ```
 sage: QQ(123/456).factor()
 2^-3 * 19^-1 * 41
 ```
-
 Magma does not allow factorization in QQ or in function fields, which is very annoying (e.g. you cannot factor the discriminant of an elliptic curve (with integral model) over QQ without coercing it into ZZ first).  But Magma does allow for some non-integral factorizations, e.g. of fractional ideals.
 
 So Michael's worry is a reasonable one but this should definitely be included.  I have therefore removed the "needs discussion" tag!

@@ -3,7 +3,7 @@
 archive/issues_008507.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\n            sage: GF(107)(0).sqrt(all=True)\n            0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8507\n\n",
+    "body": "Assignee: @aghitza\n\n```\n            sage: GF(107)(0).sqrt(all=True)\n            0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8507\n\n",
     "created_at": "2010-03-12T05:59:18Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_008507.json:
 ```
 Assignee: @aghitza
 
-
 ```
             sage: GF(107)(0).sqrt(all=True)
             0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8507
 

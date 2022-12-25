@@ -3,7 +3,7 @@
 archive/issues_002693.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec @vinklein\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\n\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec @vinklein\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
     "created_at": "2008-03-28T02:21:37Z",
     "labels": [
         "component: algebraic geometry"
@@ -27,7 +27,6 @@ p = x + y
 q = x*y
 p.resultant(q)
 ```
-
 (as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)
 
 This is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.
@@ -37,7 +36,6 @@ A workaround for this particular problem (and a possible basis for an improved v
 ```
 p.polynomial(x).resultant(q.polynomial(x)) 
 ```
-
 That is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/2693
@@ -170,7 +168,7 @@ archive/issue_events_006285.json:
 archive/issue_comments_018489.json:
 ```json
 {
-    "body": "In fact, singular resultants are slow compared to other methods, so it would really be a good idea to write specific sage code for resultants.\n\nSee #16749 and #12174 for ideas about it.\n\nJust something like:\n\n\n```\ndef resultant(self, other, variable):\n    m = self.sylvester_matrix(other, variable)\n    return m.determinant()\n```\n\n\nWould be both general for any polynomial ring, and faster than the current implementation. And of course, there could be a lot of cases where things can be done much faster, using specific backends where they are better.",
+    "body": "In fact, singular resultants are slow compared to other methods, so it would really be a good idea to write specific sage code for resultants.\n\nSee #16749 and #12174 for ideas about it.\n\nJust something like:\n\n```\ndef resultant(self, other, variable):\n    m = self.sylvester_matrix(other, variable)\n    return m.determinant()\n```\n\nWould be both general for any polynomial ring, and faster than the current implementation. And of course, there could be a lot of cases where things can be done much faster, using specific backends where they are better.",
     "created_at": "2014-08-25T08:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
@@ -185,13 +183,11 @@ See #16749 and #12174 for ideas about it.
 
 Just something like:
 
-
 ```
 def resultant(self, other, variable):
     m = self.sylvester_matrix(other, variable)
     return m.determinant()
 ```
-
 
 Would be both general for any polynomial ring, and faster than the current implementation. And of course, there could be a lot of cases where things can be done much faster, using specific backends where they are better.
 

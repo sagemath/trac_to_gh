@@ -3,7 +3,7 @@
 archive/issues_001236.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona mariah @adeines @jdemeyer\n\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona mariah @adeines @jdemeyer\n\n```\n\nHi, I needed some calculation period benchmark for pairings. I could\nnot find anything build in, but the following implementation solved my\nproblem:\n\nhttp://maths.straylight.co.uk/archives/104\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1236\n\n",
     "created_at": "2007-11-21T16:22:42Z",
     "labels": [
         "component: number theory"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 CC:  @JohnCremona mariah @adeines @jdemeyer
 
-
 ```
 
 Hi, I needed some calculation period benchmark for pairings. I could
@@ -28,7 +27,6 @@ problem:
 
 http://maths.straylight.co.uk/archives/104
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1236
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1236
 archive/issue_comments_007696.json:
 ```json
 {
-    "body": "\n```\n\nThanks!  I've made adding this to Sage proper ticket\n\n   http://trac.sagemath.org/sage_trac/ticket/1236\n\nCan you make some sort of GPL-compatible license statement about your code,\nif you haven't already?\n\nWilliam\n```\n",
+    "body": "```\n\nThanks!  I've made adding this to Sage proper ticket\n\n   http://trac.sagemath.org/sage_trac/ticket/1236\n\nCan you make some sort of GPL-compatible license statement about your code,\nif you haven't already?\n\nWilliam\n```",
     "created_at": "2007-11-21T16:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
@@ -49,7 +47,6 @@ archive/issue_comments_007696.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -65,13 +62,12 @@ William
 
 
 
-
 ---
 
 archive/issue_comments_007697.json:
 ```json
 {
-    "body": "\n```\nWilliam Stein to sage-support\n\t\nshow details 8:35 AM (1 minute ago)\n\t\n\t\n\t\nReply\n\t\n\t\nOn Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej@certik.cz> wrote:\n>\n> > I think in the long-run Sage will have to completely implement its own solve\n> > function, which is better than Maxima's.  Thoughts from Ondrej-sympy would be\n> > appreciated here.\n>\n>\n> Isn't solve supposed to return an analylic solution only? Is there an\n> analytic solution to this equation? It doesn't seem so to me.\n\nI don't like that meaning for solve, since it is misleading to me, and\nis inconsistent. e.g., what about:\n\nsage: solve(x^5 + x^3 + 1, x)\n[0 == x^5 + x^3 + 1]\n\nWhen there is no explicit solution, maxima usually returns something\nto explicitly indicate this.\n\nAlso, as a data point, Maple returns an approximate solution if\nit doesn't find an exact one:\n\nsage: maple.eval('solve(38.40000000*exp(1)^(-1200*t)-9.600000000*exp(1)^(-300*t),\nt)')\n'.1540327068e-2'\n\nLikewise with Mathematica:\n\nsage: mathematica.eval('Solve[0.004*(9600/E^(1200*t) - 2400/E^(300*t))\n## 0, t]')\n\nSolve::ifun: Inverse functions are being used by Solve, so some solutions may\n    not be found; use Reduce for complete solution information.\n\n        {{t -> 0.00154033}}\n\n\nsage: mathematica('x^5 + x^3 + 1 == 0').Solve(x)\n\n{{x -> Root[1 + #1^3 + #1^5 & , 1, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 2, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 3, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 4, 0]}, {x -> Root[1 + #1^3 + #1^5 & , 5, 0]}}\n\n\n\n> My thoughts on these issues are still the same - slowly replacing\n> Maxima with our own things in Python, that are easy to fix and easy to\n> extend. But they need to do the same things as Maxima first (and be as\n> fast as Maxima).\n\nShouldn't we be able to write something that is way faster than Maxima?\nWhat do people even benchmark in the context of calculus?\n\n\n```\n",
+    "body": "```\nWilliam Stein to sage-support\n\t\nshow details 8:35 AM (1 minute ago)\n\t\n\t\n\t\nReply\n\t\n\t\nOn Nov 21, 2007 8:24 AM, Ondrej Certik <ondrej@certik.cz> wrote:\n>\n> > I think in the long-run Sage will have to completely implement its own solve\n> > function, which is better than Maxima's.  Thoughts from Ondrej-sympy would be\n> > appreciated here.\n>\n>\n> Isn't solve supposed to return an analylic solution only? Is there an\n> analytic solution to this equation? It doesn't seem so to me.\n\nI don't like that meaning for solve, since it is misleading to me, and\nis inconsistent. e.g., what about:\n\nsage: solve(x^5 + x^3 + 1, x)\n[0 == x^5 + x^3 + 1]\n\nWhen there is no explicit solution, maxima usually returns something\nto explicitly indicate this.\n\nAlso, as a data point, Maple returns an approximate solution if\nit doesn't find an exact one:\n\nsage: maple.eval('solve(38.40000000*exp(1)^(-1200*t)-9.600000000*exp(1)^(-300*t),\nt)')\n'.1540327068e-2'\n\nLikewise with Mathematica:\n\nsage: mathematica.eval('Solve[0.004*(9600/E^(1200*t) - 2400/E^(300*t))\n## 0, t]')\n\nSolve::ifun: Inverse functions are being used by Solve, so some solutions may\n    not be found; use Reduce for complete solution information.\n\n        {{t -> 0.00154033}}\n\n\nsage: mathematica('x^5 + x^3 + 1 == 0').Solve(x)\n\n{{x -> Root[1 + #1^3 + #1^5 & , 1, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 2, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 3, 0]},\n {x -> Root[1 + #1^3 + #1^5 & , 4, 0]}, {x -> Root[1 + #1^3 + #1^5 & , 5, 0]}}\n\n\n\n> My thoughts on these issues are still the same - slowly replacing\n> Maxima with our own things in Python, that are easy to fix and easy to\n> extend. But they need to do the same things as Maxima first (and be as\n> fast as Maxima).\n\nShouldn't we be able to write something that is way faster than Maxima?\nWhat do people even benchmark in the context of calculus?\n\n\n```",
     "created_at": "2007-11-21T16:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1236",
     "type": "issue_comment",
@@ -79,7 +75,6 @@ archive/issue_comments_007697.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 William Stein to sage-support
@@ -147,7 +142,6 @@ What do people even benchmark in the context of calculus?
 
 
 ```
-
 
 
 

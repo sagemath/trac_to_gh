@@ -3,7 +3,7 @@
 archive/issues_002634.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nsage: k = GF(next_prime(2^31)^2,'x')\nsage: k['y,z']\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\nsage: PolynomialRing(k,2,'x,y')\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\n\n\nThis is caused because Sage is trying to use libsingular\nto create the poly ring, but should be using its own code\nwhen the size of the base ring is too big. \n\nMartin Albrecht will be able to fix this very easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2634\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: k = GF(next_prime(2^31)^2,'x')\nsage: k['y,z']\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\nsage: PolynomialRing(k,2,'x,y')\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\n\nThis is caused because Sage is trying to use libsingular\nto create the poly ring, but should be using its own code\nwhen the size of the base ring is too big. \n\nMartin Albrecht will be able to fix this very easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2634\n\n",
     "created_at": "2008-03-21T18:48:19Z",
     "labels": [
         "component: commutative algebra",
@@ -18,7 +18,6 @@ archive/issues_002634.json:
 ```
 Assignee: @malb
 
-
 ```
 sage: k = GF(next_prime(2^31)^2,'x')
 sage: k['y,z']
@@ -30,7 +29,6 @@ Traceback (most recent call last):
 ...
 OverflowError: long int too large to convert to int
 ```
-
 
 
 This is caused because Sage is trying to use libsingular
@@ -88,7 +86,7 @@ Changing status from new to assigned.
 archive/issue_comments_018057.json:
 ```json
 {
-    "body": "Hi,\n\nIt's good but there are two issues:\n\n1. sage -t sage/schemes/generic/affine_space.py fails:\n\n\n```\nsage -t  schemes/generic/affine_space.py                    **********************************************************************\nFile \"affine_space.py\", line 196:\n    sage: AffineSpace(ZZ,1, 'a') == AffineSpace(ZZ, 0, 'a')\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[1]>\", line 1, in <module>\n        AffineSpace(ZZ,Integer(1), 'a') == AffineSpace(ZZ, Integer(0), 'a')###line 196:\n    sage: AffineSpace(ZZ,1, 'a') == AffineSpace(ZZ, 0, 'a')\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/affine_space.py\", line 204, in __cmp__\n        [right.dimension(), right.coordinate_ring()])\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/affine_space.py\", line 262, in coordinate_ring\n        self._coordinate_ring = MPolynomialRing(self.base_ring(), self.dimension(), names=self.variable_names())\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 248, in PolynomialRing\n        R = _multi_variate(base_ring, names, n, sparse, order)\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 365, in _multi_variate\n        R = MPolynomialRing_libsingular(base_ring, n, names, order)\n      File \"multi_polynomial_libsingular.pyx\", line 196, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__init__\n    ArithmeticError: number of variables must be at least 1\n**********************************************************************\n```\n\n\n\n2. this is minor; there's a typo in the new error message in multi_polynomial_libsingular.pyx: should be\n\n\n```\nraise NotImplementedError, \"Number fields are not fully supported yet.\" \n```\n\n\ninstead of \n\n\n```\nraise NotImplementedError, \"Number fields are not fully support yet.\"\n```\n\n\nI'll very happily give this a quick positive review as soon as these things get fixed.",
+    "body": "Hi,\n\nIt's good but there are two issues:\n\n1. sage -t sage/schemes/generic/affine_space.py fails:\n\n```\nsage -t  schemes/generic/affine_space.py                    **********************************************************************\nFile \"affine_space.py\", line 196:\n    sage: AffineSpace(ZZ,1, 'a') == AffineSpace(ZZ, 0, 'a')\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[1]>\", line 1, in <module>\n        AffineSpace(ZZ,Integer(1), 'a') == AffineSpace(ZZ, Integer(0), 'a')###line 196:\n    sage: AffineSpace(ZZ,1, 'a') == AffineSpace(ZZ, 0, 'a')\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/affine_space.py\", line 204, in __cmp__\n        [right.dimension(), right.coordinate_ring()])\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/affine_space.py\", line 262, in coordinate_ring\n        self._coordinate_ring = MPolynomialRing(self.base_ring(), self.dimension(), names=self.variable_names())\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 248, in PolynomialRing\n        R = _multi_variate(base_ring, names, n, sparse, order)\n      File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 365, in _multi_variate\n        R = MPolynomialRing_libsingular(base_ring, n, names, order)\n      File \"multi_polynomial_libsingular.pyx\", line 196, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__init__\n    ArithmeticError: number of variables must be at least 1\n**********************************************************************\n```\n\n\n2. this is minor; there's a typo in the new error message in multi_polynomial_libsingular.pyx: should be\n\n```\nraise NotImplementedError, \"Number fields are not fully supported yet.\" \n```\n\ninstead of \n\n```\nraise NotImplementedError, \"Number fields are not fully support yet.\"\n```\n\nI'll very happily give this a quick positive review as soon as these things get fixed.",
     "created_at": "2008-03-22T14:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2634",
     "type": "issue_comment",
@@ -102,7 +100,6 @@ Hi,
 It's good but there are two issues:
 
 1. sage -t sage/schemes/generic/affine_space.py fails:
-
 
 ```
 sage -t  schemes/generic/affine_space.py                    **********************************************************************
@@ -129,22 +126,17 @@ Exception raised:
 ```
 
 
-
 2. this is minor; there's a typo in the new error message in multi_polynomial_libsingular.pyx: should be
-
 
 ```
 raise NotImplementedError, "Number fields are not fully supported yet." 
 ```
 
-
 instead of 
-
 
 ```
 raise NotImplementedError, "Number fields are not fully support yet."
 ```
-
 
 I'll very happily give this a quick positive review as soon as these things get fixed.
 
@@ -231,7 +223,7 @@ In the mean time, the patches look good and doctest well.  I think we should app
 archive/issue_comments_018062.json:
 ```json
 {
-    "body": "To quote William from https://groups.google.com/group/sage-devel/t/2d722ebda3887a56\n\n```\nI definitely think multivariate polynomial rings with 0 generators\nshould be supported\nfor exactly the same reason matrices with 0 rows or columns should be\nsupported -- algorithms are much more likely to work in corner cases and code\nis cleaner.\n\nI've been incredibly glad on numerous occasions that across the board\nSage works very well with matrices that have 0 rows or columns, though\nthis took a lot of extra work initially.   The only argument put forth for\nremoving multivariate polynomials rings with 0 generators is \"It will\nbe a no fun to support\".   That is not compelling.\n\nWilliam \n```\n\n\nThis leads me to merge this patch now to fix the issue. I assume we will revisit this in the future since Martin commented right after William that\n\n```\n\nlibSingular doesn't support it and as soon as more pointers are involved the\ngeneric implementation will too have problems (== NULL pointers). Maybe a\nspecial implementation for zero generators is in order then?\n\nMartin \n```\n\n\nCheers,\n\nMichael",
+    "body": "To quote William from https://groups.google.com/group/sage-devel/t/2d722ebda3887a56\n\n```\nI definitely think multivariate polynomial rings with 0 generators\nshould be supported\nfor exactly the same reason matrices with 0 rows or columns should be\nsupported -- algorithms are much more likely to work in corner cases and code\nis cleaner.\n\nI've been incredibly glad on numerous occasions that across the board\nSage works very well with matrices that have 0 rows or columns, though\nthis took a lot of extra work initially.   The only argument put forth for\nremoving multivariate polynomials rings with 0 generators is \"It will\nbe a no fun to support\".   That is not compelling.\n\nWilliam \n```\n\nThis leads me to merge this patch now to fix the issue. I assume we will revisit this in the future since Martin commented right after William that\n\n```\n\nlibSingular doesn't support it and as soon as more pointers are involved the\ngeneric implementation will too have problems (== NULL pointers). Maybe a\nspecial implementation for zero generators is in order then?\n\nMartin \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-24T08:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2634",
     "type": "issue_comment",
@@ -258,7 +250,6 @@ be a no fun to support".   That is not compelling.
 William 
 ```
 
-
 This leads me to merge this patch now to fix the issue. I assume we will revisit this in the future since Martin commented right after William that
 
 ```
@@ -269,7 +260,6 @@ special implementation for zero generators is in order then?
 
 Martin 
 ```
-
 
 Cheers,
 

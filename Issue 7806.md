@@ -104,7 +104,7 @@ archive/issue_events_018691.json:
 archive/issue_comments_067418.json:
 ```json
 {
-    "body": "Replying to [comment:1 ncohen]:\n> Should be closed as invalid. We have a brand-new LP thematic tutorial now !\n\nAs you wish.",
+    "body": "Replying to [comment:1 ncohen]:\n> Should be closed as invalid. We have a brand-new LP thematic tutorial now !\n\n\nAs you wish.",
     "created_at": "2010-10-09T08:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7806",
     "type": "issue_comment",
@@ -115,5 +115,6 @@ archive/issue_comments_067418.json:
 
 Replying to [comment:1 ncohen]:
 > Should be closed as invalid. We have a brand-new LP thematic tutorial now !
+
 
 As you wish.

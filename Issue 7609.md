@@ -87,7 +87,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064873.json:
 ```json
 {
-    "body": "This is fine, but there was another one in functions/trig.py (this on a 32-bit Macintel 10.5):\n\n```\nsage: float(cot(1))\n0.64209261593433065\n```\n\nbut gave\n\n```\n0.64209261593433076\n```\n",
+    "body": "This is fine, but there was another one in functions/trig.py (this on a 32-bit Macintel 10.5):\n\n```\nsage: float(cot(1))\n0.64209261593433065\n```\nbut gave\n\n```\n0.64209261593433076\n```",
     "created_at": "2009-12-06T02:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
@@ -102,13 +102,11 @@ This is fine, but there was another one in functions/trig.py (this on a 32-bit M
 sage: float(cot(1))
 0.64209261593433065
 ```
-
 but gave
 
 ```
 0.64209261593433076
 ```
-
 
 
 

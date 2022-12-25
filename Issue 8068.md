@@ -3,7 +3,7 @@
 archive/issues_008068.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 65 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal\t2m15.371s\nuser\t1m22.294s\nsys\t0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nLet spkg-install handle SAGE64=\"yes\" on Open Solaris 65 bit.\n\n\nSee here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfr-2.4.1.p1.spkg)\n\n\n\n```\nPASS: tpow_all\n====================\nAll 148 tests passed\n====================\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src/tests'\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\nmake[1]: Nothing to be done for `check-am'.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfr-2.4.1.p1/src'\n\nreal\t2m15.371s\nuser\t1m22.294s\nsys\t0m54.607s\nSuccessfully installed mpfr-2.4.1.p1\n\n```\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8068\n\n",
     "created_at": "2010-01-25T23:41:29Z",
     "labels": [
         "component: porting"
@@ -27,7 +27,6 @@ See here:
 
 
 
-
 ```
 PASS: tpow_all
 ====================
@@ -45,7 +44,6 @@ sys	0m54.607s
 Successfully installed mpfr-2.4.1.p1
 
 ```
-
 
 Jaap
 

@@ -3,7 +3,7 @@
 archive/issues_008799.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rlmill\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rlmill\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
     "created_at": "2010-04-28T08:11:56Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ Improve documentation for this:
 ```
 sage/libs/mwrank/mwrank.pyx:  3% (1 of 30)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8799
 
@@ -136,7 +135,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080464.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> I am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).\n\nJust in case anyone reading the above thinks that this is not ready for testing & reviewing -- it is!",
+    "body": "Replying to [comment:3 cremona]:\n> I am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).\n\n\nJust in case anyone reading the above thinks that this is not ready for testing & reviewing -- it is!",
     "created_at": "2010-05-09T21:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -147,6 +146,7 @@ archive/issue_comments_080464.json:
 
 Replying to [comment:3 cremona]:
 > I am flagging this as "needs review", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).
+
 
 Just in case anyone reading the above thinks that this is not ready for testing & reviewing -- it is!
 
@@ -177,7 +177,7 @@ based on Sage 4.4.2.alpha0
 archive/issue_comments_080466.json:
 ```json
 {
-    "body": "With the patch [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-mwrank-doctest.patch), I got the following failures on sage.math:\n\n\n```\n[mvngu@sage sage-4.4.2.alpha0-8799-mwrank-doctest]$ ./sage -t -long devel/sage-main/sage/libs/mwrank/mwrank.pyx\nsage -t -long \"devel/sage-main/sage/libs/mwrank/mwrank.pyx\" \n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.alpha0-8799-mwrank-doctest/devel/sage-main/sage/libs/mwrank/mwrank.pyx\", line 428:\n    sage: E.discriminant()\nExpected:\n    -1269581104000000L\nGot:\n    -1269581104000000\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.alpha0-8799-mwrank-doctest/devel/sage-main/sage/libs/mwrank/mwrank.pyx\", line 455:\n    sage: E.conductor()\nExpected:\n    126958110400L\nGot:\n    126958110400\nP1 = [0:1:0]\t is torsion point, order 1\nP1 = [-3:0:1]\t  is generator number 1\nsaturating up to 20...Checking 2-saturation \n\n<output truncated>\n\nSearching for points (bound = 8)...done:\n  found points of rank 3\n  and regulator 0.41714355875838396981711954461809339674981010609846\nProcessing points found during 2-descent...done:\n  now regulator = 0.41714355875838396981711954461809339674981010609846\nNo saturation being done\n```\n\n\nThe reviewer patch fix this issue and a bunch of typos. What we need now is someone to review the technical aspect of John's patch. Unfortunately, I'm not at all familiar with elliptic curves.",
+    "body": "With the patch [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-mwrank-doctest.patch), I got the following failures on sage.math:\n\n```\n[mvngu@sage sage-4.4.2.alpha0-8799-mwrank-doctest]$ ./sage -t -long devel/sage-main/sage/libs/mwrank/mwrank.pyx\nsage -t -long \"devel/sage-main/sage/libs/mwrank/mwrank.pyx\" \n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.alpha0-8799-mwrank-doctest/devel/sage-main/sage/libs/mwrank/mwrank.pyx\", line 428:\n    sage: E.discriminant()\nExpected:\n    -1269581104000000L\nGot:\n    -1269581104000000\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.2.alpha0-8799-mwrank-doctest/devel/sage-main/sage/libs/mwrank/mwrank.pyx\", line 455:\n    sage: E.conductor()\nExpected:\n    126958110400L\nGot:\n    126958110400\nP1 = [0:1:0]\t is torsion point, order 1\nP1 = [-3:0:1]\t  is generator number 1\nsaturating up to 20...Checking 2-saturation \n\n<output truncated>\n\nSearching for points (bound = 8)...done:\n  found points of rank 3\n  and regulator 0.41714355875838396981711954461809339674981010609846\nProcessing points found during 2-descent...done:\n  now regulator = 0.41714355875838396981711954461809339674981010609846\nNo saturation being done\n```\n\nThe reviewer patch fix this issue and a bunch of typos. What we need now is someone to review the technical aspect of John's patch. Unfortunately, I'm not at all familiar with elliptic curves.",
     "created_at": "2010-05-10T11:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -187,7 +187,6 @@ archive/issue_comments_080466.json:
 ```
 
 With the patch [trac_8799-mwrank-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-mwrank-doctest.patch), I got the following failures on sage.math:
-
 
 ```
 [mvngu@sage sage-4.4.2.alpha0-8799-mwrank-doctest]$ ./sage -t -long devel/sage-main/sage/libs/mwrank/mwrank.pyx
@@ -219,7 +218,6 @@ Processing points found during 2-descent...done:
   now regulator = 0.41714355875838396981711954461809339674981010609846
 No saturation being done
 ```
-
 
 The reviewer patch fix this issue and a bunch of typos. What we need now is someone to review the technical aspect of John's patch. Unfortunately, I'm not at all familiar with elliptic curves.
 
@@ -281,7 +279,7 @@ I only get an error when building PDF documentation, due to some reference with 
 archive/issue_comments_080469.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> I only get an error when building PDF documentation, due to some reference with an underscore(?), haven't yet closely looked at that.\n\nSorry, perhaps completely unrelated to *this* patch/ticket.",
+    "body": "Replying to [comment:7 leif]:\n> I only get an error when building PDF documentation, due to some reference with an underscore(?), haven't yet closely looked at that.\n\n\nSorry, perhaps completely unrelated to *this* patch/ticket.",
     "created_at": "2010-05-10T17:11:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -293,6 +291,7 @@ archive/issue_comments_080469.json:
 Replying to [comment:7 leif]:
 > I only get an error when building PDF documentation, due to some reference with an underscore(?), haven't yet closely looked at that.
 
+
 Sorry, perhaps completely unrelated to *this* patch/ticket.
 
 
@@ -302,7 +301,7 @@ Sorry, perhaps completely unrelated to *this* patch/ticket.
 archive/issue_comments_080470.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> Also, ..[...] *Sha* should be *SHA* I guess.\n\nOuch, it's actually the cyrillic Sha. :)\n\nSorry again.",
+    "body": "Replying to [comment:7 leif]:\n> Also, ..[...] *Sha* should be *SHA* I guess.\n\n\nOuch, it's actually the cyrillic Sha. :)\n\nSorry again.",
     "created_at": "2010-05-10T17:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -313,6 +312,7 @@ archive/issue_comments_080470.json:
 
 Replying to [comment:7 leif]:
 > Also, ..[...] *Sha* should be *SHA* I guess.
+
 
 Ouch, it's actually the cyrillic Sha. :)
 
@@ -325,7 +325,7 @@ Sorry again.
 archive/issue_comments_080471.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:7 leif]:\n> > Also, ..[...] *Sha* should be *SHA* I guess.\n> \n> Ouch, it's actually the cyrillic Sha. :)\n\nThat's right.  I don't know if we can access such fonts in the docs.  I think the other inconsistencies have been dealt with by Minh.\n\n   John\n\n> Sorry again.",
+    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:7 leif]:\n> > Also, ..[...] *Sha* should be *SHA* I guess.\n\n> \n> Ouch, it's actually the cyrillic Sha. :)\n\n\nThat's right.  I don't know if we can access such fonts in the docs.  I think the other inconsistencies have been dealt with by Minh.\n\n   John\n\n> Sorry again.",
     "created_at": "2010-05-10T17:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -337,8 +337,10 @@ archive/issue_comments_080471.json:
 Replying to [comment:9 leif]:
 > Replying to [comment:7 leif]:
 > > Also, ..[...] *Sha* should be *SHA* I guess.
+
 > 
 > Ouch, it's actually the cyrillic Sha. :)
+
 
 That's right.  I don't know if we can access such fonts in the docs.  I think the other inconsistencies have been dealt with by Minh.
 
@@ -353,7 +355,7 @@ That's right.  I don't know if we can access such fonts in the docs.  I think th
 archive/issue_comments_080472.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n> I think the other inconsistencies have been dealt with by Minh.\nNo, not really. Minh introduced *some* math-typeset numbers - isolated and within words (but did not change all occurrences), and did not \"change\" all method references.\n\nThere's also some reference to Python's (deprecated) `long`.\n\nThe typesetting of Python (variable) names (and e.g. *true* instead of `True`) is not fully consistent, too.\n\n(The return value descriptions use both passive and imperative form, too. ;-) )\n\nBut I don't want to grumble to much...",
+    "body": "Replying to [comment:10 cremona]:\n> I think the other inconsistencies have been dealt with by Minh.\n\nNo, not really. Minh introduced *some* math-typeset numbers - isolated and within words (but did not change all occurrences), and did not \"change\" all method references.\n\nThere's also some reference to Python's (deprecated) `long`.\n\nThe typesetting of Python (variable) names (and e.g. *true* instead of `True`) is not fully consistent, too.\n\n(The return value descriptions use both passive and imperative form, too. ;-) )\n\nBut I don't want to grumble to much...",
     "created_at": "2010-05-10T18:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -364,6 +366,7 @@ archive/issue_comments_080472.json:
 
 Replying to [comment:10 cremona]:
 > I think the other inconsistencies have been dealt with by Minh.
+
 No, not really. Minh introduced *some* math-typeset numbers - isolated and within words (but did not change all occurrences), and did not "change" all method references.
 
 There's also some reference to Python's (deprecated) `long`.
@@ -461,7 +464,7 @@ P.P.S.: John, I've also added some `TODO`s. Btw, do we initialise or initialize?
 archive/issue_comments_080477.json:
 ```json
 {
-    "body": "Attachment [trac_8799-reviewer-part3.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part3.patch) by mvngu created at 2010-05-11 01:00:35\n\nI have made some more changes to the docstring of `interface.py` and `mwrank.pyx`. My second reviewer patch [trac_8799-reviewer-part3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-part3.patch) includes changes in addition to the original reviewer patch and leif's patch. With many patches to apply, it can be confusing to see what changes the reviewers propose. So I have folded the reviewers' patches into one mega patch called [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\nAlso notice that I move documentation for constructor methods, i.e. `__init__`, into the docstring of a class. The main reason is that, currently the docstring of `__init__` don't show up on the reference manual once you built it. \n\n\n\nTo rebuild the whole reference manual, you could do the following from `SAGE_ROOT`, assuming you applied the patches to the branch main:\n\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\n\nIf you want to be thorough and want to check that the new documentation build OK, do:\n\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n",
+    "body": "Attachment [trac_8799-reviewer-part3.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part3.patch) by mvngu created at 2010-05-11 01:00:35\n\nI have made some more changes to the docstring of `interface.py` and `mwrank.pyx`. My second reviewer patch [trac_8799-reviewer-part3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-part3.patch) includes changes in addition to the original reviewer patch and leif's patch. With many patches to apply, it can be confusing to see what changes the reviewers propose. So I have folded the reviewers' patches into one mega patch called [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\nAlso notice that I move documentation for constructor methods, i.e. `__init__`, into the docstring of a class. The main reason is that, currently the docstring of `__init__` don't show up on the reference manual once you built it. \n\n\n\nTo rebuild the whole reference manual, you could do the following from `SAGE_ROOT`, assuming you applied the patches to the branch main:\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\nIf you want to be thorough and want to check that the new documentation build OK, do:\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```",
     "created_at": "2010-05-11T01:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -482,22 +485,18 @@ Also notice that I move documentation for constructor methods, i.e. `__init__`, 
 
 To rebuild the whole reference manual, you could do the following from `SAGE_ROOT`, assuming you applied the patches to the branch main:
 
-
 ```sh
 ./sage -b main
 ./sage -docbuild reference html
 ```
 
-
 If you want to be thorough and want to check that the new documentation build OK, do:
-
 
 ```sh
 rm -rf devel/sage-main/doc/output/
 ./sage -b main
 ./sage -docbuild reference html
 ```
-
 
 
 
@@ -524,7 +523,7 @@ archive/issue_comments_080478.json:
 archive/issue_comments_080479.json:
 ```json
 {
-    "body": "Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by @nexttime created at 2010-05-11 02:41:42\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\n\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\n\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
+    "body": "Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by @nexttime created at 2010-05-11 02:41:42\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
     "created_at": "2010-05-11T02:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -545,14 +544,12 @@ Shouldn't we replace
  - foo (bool) -- ...
  - bar (int, default 12) -- ...
 ```
-
 by
 
 ```
  - foo (:class:`bool`) -- ...
  - bar (:class:`int`, default 12) -- ...
 ```
-
 too?
 
 -Leif
@@ -584,7 +581,7 @@ cumulative of all reviewers' patches
 archive/issue_comments_080481.json:
 ```json
 {
-    "body": "Attachment [trac_8799-reviewer-total.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-total.patch) by mvngu created at 2010-05-11 03:55:08\n\nReplying to [comment:16 leif]:\n> Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nI'm not particularly picky about this issue. What you proposed in your patches are OK by me. I have folded all our reviewer patches into one cumulative patch. Even your second reviewer patch has been folded into [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\n\n> Shouldn't we replace\n\n```\n- foo (bool) -- ...\n- bar (int, default 12) -- ...\n```\n\n> by\n\n```\n- foo (:class:`bool`) -- ...\n- bar (:class:`int`, default 12) -- ...\n```\n\n> too?\n\nThat is OK by me. But I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information. We now need someone to review the technical (mathematical) aspect of John's patch, and a sign off on my review patch. I'm OK with your patches. That is, someone other than myself need to look over the cumulative reviewer patch.",
+    "body": "Attachment [trac_8799-reviewer-total.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-total.patch) by mvngu created at 2010-05-11 03:55:08\n\nReplying to [comment:16 leif]:\n> Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\n\nI'm not particularly picky about this issue. What you proposed in your patches are OK by me. I have folded all our reviewer patches into one cumulative patch. Even your second reviewer patch has been folded into [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).\n\n\n\n\n> Shouldn't we replace\n\n{{{\n- foo (bool) -- ...\n- bar (int, default 12) -- ...\n}}}\n> by\n\n{{{\n- foo (:class:`bool`) -- ...\n- bar (:class:`int`, default 12) -- ...\n}}}\n> too?\n\n\nThat is OK by me. But I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information. We now need someone to review the technical (mathematical) aspect of John's patch, and a sign off on my review patch. I'm OK with your patches. That is, someone other than myself need to look over the cumulative reviewer patch.",
     "created_at": "2010-05-11T03:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -598,6 +595,7 @@ Attachment [trac_8799-reviewer-total.patch](tarball://root/attachments/some-uuid
 Replying to [comment:16 leif]:
 > Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)
 
+
 I'm not particularly picky about this issue. What you proposed in your patches are OK by me. I have folded all our reviewer patches into one cumulative patch. Even your second reviewer patch has been folded into [trac_8799-reviewer-total.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8799/trac_8799-reviewer-total.patch).
 
 
@@ -605,19 +603,18 @@ I'm not particularly picky about this issue. What you proposed in your patches a
 
 > Shouldn't we replace
 
-```
+{{{
 - foo (bool) -- ...
 - bar (int, default 12) -- ...
-```
-
+}}}
 > by
 
-```
+{{{
 - foo (:class:`bool`) -- ...
 - bar (:class:`int`, default 12) -- ...
-```
-
+}}}
 > too?
+
 
 That is OK by me. But I would prefer something like "boolean", "integer", "real number", etc. Something as "meaningful" as possible, without recourse to type information. We now need someone to review the technical (mathematical) aspect of John's patch, and a sign off on my review patch. I'm OK with your patches. That is, someone other than myself need to look over the cumulative reviewer patch.
 
@@ -628,7 +625,7 @@ That is OK by me. But I would prefer something like "boolean", "integer", "real 
 archive/issue_comments_080482.json:
 ```json
 {
-    "body": "Replying to [comment:17 mvngu]:\n> Replying to [comment:16 leif]:\n> > Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n> \n> I'm not particularly picky about this issue. What you proposed in your patches are OK by me.\nWell, I haven't reverted your changes of e.g. `1` to ``1``; the HTML output is not very nice...\n\n> I have folded all our reviewer patches into one cumulative patch.\nYes, of course noticed that.\n\n> I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information.\nThis might not sound pythonic, but I'd prefer documenting the concrete type if the function actually expects some Python type (rather than a duck).\n\n> We now need someone to review the technical (mathematical) aspect of John's patch,\nrlm?\n\n> and a sign off on my review patch.\nI've positively reviewed *your* changes... :)\n\nSo unfortunately someone else (other than John and us) has to review the cumulative reviewer patch to avoid mutual peer-reviewing on the same ticket (some people seem to have no problems with this, I do).",
+    "body": "Replying to [comment:17 mvngu]:\n> Replying to [comment:16 leif]:\n> > Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\n> \n> I'm not particularly picky about this issue. What you proposed in your patches are OK by me.\n\nWell, I haven't reverted your changes of e.g. `1` to ``1``; the HTML output is not very nice...\n\n> I have folded all our reviewer patches into one cumulative patch.\n\nYes, of course noticed that.\n\n> I would prefer something like \"boolean\", \"integer\", \"real number\", etc. Something as \"meaningful\" as possible, without recourse to type information.\n\nThis might not sound pythonic, but I'd prefer documenting the concrete type if the function actually expects some Python type (rather than a duck).\n\n> We now need someone to review the technical (mathematical) aspect of John's patch,\n\nrlm?\n\n> and a sign off on my review patch.\n\nI've positively reviewed *your* changes... :)\n\nSo unfortunately someone else (other than John and us) has to review the cumulative reviewer patch to avoid mutual peer-reviewing on the same ticket (some people seem to have no problems with this, I do).",
     "created_at": "2010-05-11T04:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -640,20 +637,26 @@ archive/issue_comments_080482.json:
 Replying to [comment:17 mvngu]:
 > Replying to [comment:16 leif]:
 > > Minh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)
+
 > 
 > I'm not particularly picky about this issue. What you proposed in your patches are OK by me.
+
 Well, I haven't reverted your changes of e.g. `1` to ``1``; the HTML output is not very nice...
 
 > I have folded all our reviewer patches into one cumulative patch.
+
 Yes, of course noticed that.
 
 > I would prefer something like "boolean", "integer", "real number", etc. Something as "meaningful" as possible, without recourse to type information.
+
 This might not sound pythonic, but I'd prefer documenting the concrete type if the function actually expects some Python type (rather than a duck).
 
 > We now need someone to review the technical (mathematical) aspect of John's patch,
+
 rlm?
 
 > and a sign off on my review patch.
+
 I've positively reviewed *your* changes... :)
 
 So unfortunately someone else (other than John and us) has to review the cumulative reviewer patch to avoid mutual peer-reviewing on the same ticket (some people seem to have no problems with this, I do).
@@ -705,7 +708,7 @@ So we still need an independent reviewer... and some of the points raised on thi
 archive/issue_comments_080485.json:
 ```json
 {
-    "body": "Replying to [comment:19 cremona]:\n> I did not see the typo in the code which Leif mentioned.  Is it where we test height_bound > 21.4 and not 21.48?\nNo. I meant:\n\n```\n-        verbose == bool(verbose)\n+        verbose = bool(verbose)\n```\n\n> In that place, it is true that this could be approximately doubled on 64-bit machines (I guess that when this code was first written the person doing it did not know how to test that) but in practice using bounds > 21 will take a very very long time.\nIt's just that the implementation doesn't meet the documentation:\n\n```\n        - ``height_limit`` (float, default: 18) -- search up to this\n          logarithmic height.\n\n        .. note::\n        \n          On 32-bit machines, this *must* be < 21.48 else\n          `\\exp(h_{\\text{lim}}) > 2^{31}` and overflows.  On 64-bit machines, it\n          must be *at most* 43.668.  However, this bound is a logarithmic\n          bound and increasing it by just 1 increases the running time\n          by (roughly) `\\exp(1.5)=4.5`, so searching up to even 20\n          takes a very long time.\n```\n\n(We could add here that larger heights for 64-bit code currently aren't implemented in the Python interface.) \n\n```\n        height_limit = float(height_limit)\n        if height_limit >= 21.4:\t# TODO: docstring says 21.48 (for 32-bit machines; what about 64-bit...?)\n            raise ValueError, \"The height limit must be < 21.4.\"\n```\n\nAlso, if the docstring says `21.48`, the code should use the same value.\n\n(Note that the code should check for what machine the code/`mwrank` was compiled for, not what machine Sage is currently running on...)\n\nBut that (change of the implementation, and perhaps other TODOs, like in `mwrank_EllipticCurve.__repr__()`) should be fixed on another ticket.\n\n\n\n> [...] some of the points raised on this ticket deserve a wider audience, possibly additional sentences in the developers guide?\nDefinitely. :)\n\n-Leif",
+    "body": "Replying to [comment:19 cremona]:\n> I did not see the typo in the code which Leif mentioned.  Is it where we test height_bound > 21.4 and not 21.48?\nNo. I meant:\n\n```\n-        verbose == bool(verbose)\n+        verbose = bool(verbose)\n```\n> In that place, it is true that this could be approximately doubled on 64-bit machines (I guess that when this code was first written the person doing it did not know how to test that) but in practice using bounds > 21 will take a very very long time.\n\nIt's just that the implementation doesn't meet the documentation:\n\n```\n        - ``height_limit`` (float, default: 18) -- search up to this\n          logarithmic height.\n\n        .. note::\n        \n          On 32-bit machines, this *must* be < 21.48 else\n          `\\exp(h_{\\text{lim}}) > 2^{31}` and overflows.  On 64-bit machines, it\n          must be *at most* 43.668.  However, this bound is a logarithmic\n          bound and increasing it by just 1 increases the running time\n          by (roughly) `\\exp(1.5)=4.5`, so searching up to even 20\n          takes a very long time.\n```\n(We could add here that larger heights for 64-bit code currently aren't implemented in the Python interface.) \n\n```\n        height_limit = float(height_limit)\n        if height_limit >= 21.4:\t# TODO: docstring says 21.48 (for 32-bit machines; what about 64-bit...?)\n            raise ValueError, \"The height limit must be < 21.4.\"\n```\nAlso, if the docstring says `21.48`, the code should use the same value.\n\n(Note that the code should check for what machine the code/`mwrank` was compiled for, not what machine Sage is currently running on...)\n\nBut that (change of the implementation, and perhaps other TODOs, like in `mwrank_EllipticCurve.__repr__()`) should be fixed on another ticket.\n\n\n\n> [...] some of the points raised on this ticket deserve a wider audience, possibly additional sentences in the developers guide?\nDefinitely. :)\n\n-Leif",
     "created_at": "2010-05-12T17:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -722,8 +725,8 @@ No. I meant:
 -        verbose == bool(verbose)
 +        verbose = bool(verbose)
 ```
-
 > In that place, it is true that this could be approximately doubled on 64-bit machines (I guess that when this code was first written the person doing it did not know how to test that) but in practice using bounds > 21 will take a very very long time.
+
 It's just that the implementation doesn't meet the documentation:
 
 ```
@@ -739,7 +742,6 @@ It's just that the implementation doesn't meet the documentation:
           by (roughly) `\exp(1.5)=4.5`, so searching up to even 20
           takes a very long time.
 ```
-
 (We could add here that larger heights for 64-bit code currently aren't implemented in the Python interface.) 
 
 ```
@@ -747,7 +749,6 @@ It's just that the implementation doesn't meet the documentation:
         if height_limit >= 21.4:	# TODO: docstring says 21.48 (for 32-bit machines; what about 64-bit...?)
             raise ValueError, "The height limit must be < 21.4."
 ```
-
 Also, if the docstring says `21.48`, the code should use the same value.
 
 (Note that the code should check for what machine the code/`mwrank` was compiled for, not what machine Sage is currently running on...)
@@ -768,7 +769,7 @@ Definitely. :)
 archive/issue_comments_080486.json:
 ```json
 {
-    "body": "Replying to [comment:19 cremona]:\n> [...] some of the points raised on this ticket deserve a wider audience, possibly additional sentences in the developers guide?\n\nI've opened a ticket for that at http://trac.sagemath.org/sage_trac/ticket/8958.",
+    "body": "Replying to [comment:19 cremona]:\n> [...] some of the points raised on this ticket deserve a wider audience, possibly additional sentences in the developers guide?\n\n\nI've opened a ticket for that at http://trac.sagemath.org/sage_trac/ticket/8958.",
     "created_at": "2010-05-12T23:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -779,6 +780,7 @@ archive/issue_comments_080486.json:
 
 Replying to [comment:19 cremona]:
 > [...] some of the points raised on this ticket deserve a wider audience, possibly additional sentences in the developers guide?
+
 
 I've opened a ticket for that at http://trac.sagemath.org/sage_trac/ticket/8958.
 
@@ -829,7 +831,7 @@ In the mean time I have put this back to "need work", realising that it has miss
 archive/issue_comments_080489.json:
 ```json
 {
-    "body": "Replying to [comment:22 cremona]:\n> In the mean time I have put this back to \"need work\", realising that it has missged the boat for 4.4.2 anyway...\n\nmvngu wrote:\n> From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**\n\n;-)",
+    "body": "Replying to [comment:22 cremona]:\n> In the mean time I have put this back to \"need work\", realising that it has missged the boat for 4.4.2 anyway...\n\n\nmvngu wrote:\n> From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**\n\n\n;-)",
     "created_at": "2010-05-15T17:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -841,8 +843,10 @@ archive/issue_comments_080489.json:
 Replying to [comment:22 cremona]:
 > In the mean time I have put this back to "need work", realising that it has missged the boat for 4.4.2 anyway...
 
+
 mvngu wrote:
 > From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**
+
 
 ;-)
 
@@ -853,7 +857,7 @@ mvngu wrote:
 archive/issue_comments_080490.json:
 ```json
 {
-    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:22 cremona]:\n> > In the mean time I have put this back to \"need work\", realising that it has missged the boat for 4.4.2 anyway...\n> \n> mvngu wrote:\n> > From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**\n> \n> ;-)\n\nI know (and with that in mind I asked a couple of people of they would step in) but now I am suggesting a non-docstring change...",
+    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:22 cremona]:\n> > In the mean time I have put this back to \"need work\", realising that it has missged the boat for 4.4.2 anyway...\n\n> \n> mvngu wrote:\n> > From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**\n\n> \n> ;-)\n\n\nI know (and with that in mind I asked a couple of people of they would step in) but now I am suggesting a non-docstring change...",
     "created_at": "2010-05-15T19:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
@@ -865,11 +869,14 @@ archive/issue_comments_080490.json:
 Replying to [comment:23 leif]:
 > Replying to [comment:22 cremona]:
 > > In the mean time I have put this back to "need work", realising that it has missged the boat for 4.4.2 anyway...
+
 > 
 > mvngu wrote:
 > > From hereon, only critical fixes would be merged. **Fixes for documentation could also be merged.**
+
 > 
 > ;-)
+
 
 I know (and with that in mind I asked a couple of people of they would step in) but now I am suggesting a non-docstring change...
 

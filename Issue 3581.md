@@ -3,7 +3,7 @@
 archive/issues_003581.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.alpha2/spkg/standard/sage-3.0.4.alpha2$ hg status\n! build.py\n! clib.py\n! sagebuild.py\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3581\n\n",
+    "body": "Assignee: mabshoff\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.alpha2/spkg/standard/sage-3.0.4.alpha2$ hg status\n! build.py\n! clib.py\n! sagebuild.py\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3581\n\n",
     "created_at": "2008-07-07T06:33:59Z",
     "labels": [
         "component: build",
@@ -19,14 +19,12 @@ archive/issues_003581.json:
 ```
 Assignee: mabshoff
 
-
 ```
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.alpha2/spkg/standard/sage-3.0.4.alpha2$ hg status
 ! build.py
 ! clib.py
 ! sagebuild.py
 ```
-
 
 Cheers,
 
@@ -101,7 +99,7 @@ Michael
 archive/issue_comments_025239.json:
 ```json
 {
-    "body": "I can now confirm this actually works:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard$ tar xjf sage-3.0.4.foo.spkg \nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard$ cd sage-3.0.4.foo\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ hg status\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ \n```\n\nsage-3.0.4.foo is the sdisted 3.0.4.a2 with the patch applied :)\n\nCheers,\n\nMichael",
+    "body": "I can now confirm this actually works:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard$ tar xjf sage-3.0.4.foo.spkg \nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard$ cd sage-3.0.4.foo\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ hg status\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ \n```\nsage-3.0.4.foo is the sdisted 3.0.4.a2 with the patch applied :)\n\nCheers,\n\nMichael",
     "created_at": "2008-07-07T22:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3581",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ hg status
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/dist/sage-3.0.4.foo/spkg/standard/sage-3.0.4.foo$ 
 ```
-
 sage-3.0.4.foo is the sdisted 3.0.4.a2 with the patch applied :)
 
 Cheers,

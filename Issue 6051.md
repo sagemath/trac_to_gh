@@ -50,7 +50,7 @@ almost works
 archive/issue_comments_048107.json:
 ```json
 {
-    "body": "Attachment [singular_3_1_0-rings.patch](tarball://root/attachments/some-uuid/ticket6051/singular_3_1_0-rings.patch) by @malb created at 2009-05-17 05:00:27\n\nThe attached patch enables the Singular coefficient rings natively. It passes doctests except: \n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\n\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
+    "body": "Attachment [singular_3_1_0-rings.patch](tarball://root/attachments/some-uuid/ticket6051/singular_3_1_0-rings.patch) by @malb created at 2009-05-17 05:00:27\n\nThe attached patch enables the Singular coefficient rings natively. It passes doctests except: \n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
     "created_at": "2009-05-17T05:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 1049.8 seconds
 ```
-
 which I reported upstream at 
 
   http://www.singular.uni-kl.de:8002/trac/ticket/137
@@ -118,7 +117,7 @@ FYI I pinged upstream again about this blocker.
 archive/issue_comments_048110.json:
 ```json
 {
-    "body": "Against 4.0.1:\n\n\n```\nncalexan@sage:~/releases/sage-4.0.2.alpha0/devel/sage-main/sage$ sage -hg import ~/releases/trac_6051-singular-3_1_0-rings.patch \napplying /home/ncalexan/releases/trac_6051-singular-3_1_0-rings.patch\npatching file doc/en/reference/polynomial_rings.rst\nHunk #2 FAILED at 13\n1 out of 2 hunks FAILED -- saving rejects to file doc/en/reference/polynomial_rings.rst.rej\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #14 FAILED at 353\nHunk #52 FAILED at 2195\nHunk #53 FAILED at 2219\nHunk #54 FAILED at 2263\nHunk #55 FAILED at 2271\nHunk #57 FAILED at 2381\n6 out of 63 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #16 succeeded at 529 with fuzz 1 (offset 0 lines).\nHunk #17 FAILED at 550\nHunk #87 succeeded at 2650 with fuzz 1 (offset 21 lines).\nHunk #90 succeeded at 2711 with fuzz 1 (offset 23 lines).\n1 out of 176 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "Against 4.0.1:\n\n```\nncalexan@sage:~/releases/sage-4.0.2.alpha0/devel/sage-main/sage$ sage -hg import ~/releases/trac_6051-singular-3_1_0-rings.patch \napplying /home/ncalexan/releases/trac_6051-singular-3_1_0-rings.patch\npatching file doc/en/reference/polynomial_rings.rst\nHunk #2 FAILED at 13\n1 out of 2 hunks FAILED -- saving rejects to file doc/en/reference/polynomial_rings.rst.rej\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #14 FAILED at 353\nHunk #52 FAILED at 2195\nHunk #53 FAILED at 2219\nHunk #54 FAILED at 2263\nHunk #55 FAILED at 2271\nHunk #57 FAILED at 2381\n6 out of 63 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #16 succeeded at 529 with fuzz 1 (offset 0 lines).\nHunk #17 FAILED at 550\nHunk #87 succeeded at 2650 with fuzz 1 (offset 21 lines).\nHunk #90 succeeded at 2711 with fuzz 1 (offset 23 lines).\n1 out of 176 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-06-10T05:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -128,7 +127,6 @@ archive/issue_comments_048110.json:
 ```
 
 Against 4.0.1:
-
 
 ```
 ncalexan@sage:~/releases/sage-4.0.2.alpha0/devel/sage-main/sage$ sage -hg import ~/releases/trac_6051-singular-3_1_0-rings.patch 
@@ -152,7 +150,6 @@ Hunk #90 succeeded at 2711 with fuzz 1 (offset 23 lines).
 1 out of 176 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -181,7 +178,7 @@ Upstream fixed the issue in:
 archive/issue_comments_048112.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> Upstream fixed the issue in:\n> \n>    ftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-1-0/Singular-3-1-0-4.tar.gz\n\nI'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?",
+    "body": "Replying to [comment:5 malb]:\n> Upstream fixed the issue in:\n> \n>    ftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-1-0/Singular-3-1-0-4.tar.gz\n\n\nI'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?",
     "created_at": "2009-06-10T21:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -195,6 +192,7 @@ Replying to [comment:5 malb]:
 > 
 >    ftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-1-0/Singular-3-1-0-4.tar.gz
 
+
 I'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?
 
 
@@ -204,7 +202,7 @@ I'm release manager for this.  I should update your spkg with this new tree?  Wi
 archive/issue_comments_048113.json:
 ```json
 {
-    "body": "> I'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?\n\nNick, you don't have to update the SPKG just because you are release manager. In any case, I'll see if I can update it soon-ish.",
+    "body": "> I'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?\n\n\nNick, you don't have to update the SPKG just because you are release manager. In any case, I'll see if I can update it soon-ish.",
     "created_at": "2009-06-10T22:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -214,6 +212,7 @@ archive/issue_comments_048113.json:
 ```
 
 > I'm release manager for this.  I should update your spkg with this new tree?  Will you do that for me?
+
 
 Nick, you don't have to update the SPKG just because you are release manager. In any case, I'll see if I can update it soon-ish.
 
@@ -332,7 +331,7 @@ Is this really merged in 4.0.2.alpha1? Do you mean 4.0.2.alpha0?
 archive/issue_comments_048119.json:
 ```json
 {
-    "body": "This is confusing, and the first part (multivariate rings) behave differently on 32 and 64 bit machines.  Any thoughts, Martin?\n\n\n```\nsage: P.<x,y,z> = Integers(2^32)[]\nsage: P(2^32-1)\n-1\nsage: P.<x> = Integers(2^32)[]\nsage: P(2^32-1)\n4294967295\n```\n",
+    "body": "This is confusing, and the first part (multivariate rings) behave differently on 32 and 64 bit machines.  Any thoughts, Martin?\n\n```\nsage: P.<x,y,z> = Integers(2^32)[]\nsage: P(2^32-1)\n-1\nsage: P.<x> = Integers(2^32)[]\nsage: P(2^32-1)\n4294967295\n```",
     "created_at": "2009-06-14T21:18:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6051",
     "type": "issue_comment",
@@ -343,7 +342,6 @@ archive/issue_comments_048119.json:
 
 This is confusing, and the first part (multivariate rings) behave differently on 32 and 64 bit machines.  Any thoughts, Martin?
 
-
 ```
 sage: P.<x,y,z> = Integers(2^32)[]
 sage: P(2^32-1)
@@ -352,7 +350,6 @@ sage: P.<x> = Integers(2^32)[]
 sage: P(2^32-1)
 4294967295
 ```
-
 
 
 

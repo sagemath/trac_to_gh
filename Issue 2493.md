@@ -3,7 +3,7 @@
 archive/issues_002493.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nUpdated to vtk-5.0.4\n\nNow compiles with GL2EPS enabled. So it is possible to save pictures as eps, ps and pdf files.\n\nDepency cmake updated to cmake-2.4.8\n\nFiles see:\n\n```\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2493\n\n",
+    "body": "Assignee: @williamstein\n\nUpdated to vtk-5.0.4\n\nNow compiles with GL2EPS enabled. So it is possible to save pictures as eps, ps and pdf files.\n\nDepency cmake updated to cmake-2.4.8\n\nFiles see:\n\n```\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2493\n\n",
     "created_at": "2008-03-12T14:44:00Z",
     "labels": [
         "component: graphics",
@@ -30,7 +30,6 @@ Files see:
 http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg
 http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2493
@@ -191,7 +190,7 @@ Merged both spkgs into the experimental spkg repo.
 archive/issue_comments_016860.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> Hi, \n> \n> I checked in the changes into the repo. The result is at \n> \n> http://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/experimental/vtk-5.0.4.p0.spkg\n> \n> I didn't look at SPKG.txt yet\n> \n\nThis spkg depends on cmake-2.4.8 (see spkg-install). Probably it will work also with cmake-2.4.7,\nwhich is already in experimental. But this should be reflected in the spkg-install file.\n\nJaap",
+    "body": "Replying to [comment:5 mabshoff]:\n> Hi, \n> \n> I checked in the changes into the repo. The result is at \n> \n> http://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/experimental/vtk-5.0.4.p0.spkg\n> \n> I didn't look at SPKG.txt yet\n> \n\n\nThis spkg depends on cmake-2.4.8 (see spkg-install). Probably it will work also with cmake-2.4.7,\nwhich is already in experimental. But this should be reflected in the spkg-install file.\n\nJaap",
     "created_at": "2008-03-22T17:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2493",
     "type": "issue_comment",
@@ -209,6 +208,7 @@ Replying to [comment:5 mabshoff]:
 > 
 > I didn't look at SPKG.txt yet
 > 
+
 
 This spkg depends on cmake-2.4.8 (see spkg-install). Probably it will work also with cmake-2.4.7,
 which is already in experimental. But this should be reflected in the spkg-install file.

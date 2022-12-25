@@ -3,7 +3,7 @@
 archive/issues_002723.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe monomial_quotient method can give invalid data:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n2/3*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True).parent()\nMultivariate Polynomial Ring in x, y over Integer Ring\n```\n\n2/3 is *not* an Integer!\n\nThe attached patch gives:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2723\n\n",
+    "body": "Assignee: @malb\n\nThe monomial_quotient method can give invalid data:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n2/3*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True).parent()\nMultivariate Polynomial Ring in x, y over Integer Ring\n```\n2/3 is *not* an Integer!\n\nThe attached patch gives:\n\n```\nsage: R.<x,y>=ZZ[]\nsage: R.monomial_quotient(2*x*y,y,coeff=True)\n2*x\nsage: R.monomial_quotient(2*x*y,3*y,coeff=True)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2723\n\n",
     "created_at": "2008-03-29T18:49:27Z",
     "labels": [
         "component: commutative algebra",
@@ -29,7 +29,6 @@ sage: R.monomial_quotient(2*x*y,3*y,coeff=True)
 sage: R.monomial_quotient(2*x*y,3*y,coeff=True).parent()
 Multivariate Polynomial Ring in x, y over Integer Ring
 ```
-
 2/3 is *not* an Integer!
 
 The attached patch gives:
@@ -42,7 +41,6 @@ sage: R.monomial_quotient(2*x*y,3*y,coeff=True)
 ...
 <type 'exceptions.TypeError'>: no coercion of this rational to integer
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2723

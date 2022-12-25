@@ -3,7 +3,7 @@
 archive/issues_002586.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: latex product polynomial\n\nI'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:\n\n\n```\nsage: ZZ['a']['b']([0, ZZ['a'].0])\na*b\nsage: latex(ZZ['a']['b']([0, ZZ['a'].0]))\nab\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2586\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: latex product polynomial\n\nI'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:\n\n```\nsage: ZZ['a']['b']([0, ZZ['a'].0])\na*b\nsage: latex(ZZ['a']['b']([0, ZZ['a'].0]))\nab\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2586\n\n",
     "created_at": "2008-03-18T17:01:07Z",
     "labels": [
         "component: user interface",
@@ -25,14 +25,12 @@ Keywords: latex product polynomial
 
 I'm sure this is a dupe, but couldn't find a ticket.  It might need fixing at an awful lot of places... but polynomials are a start:
 
-
 ```
 sage: ZZ['a']['b']([0, ZZ['a'].0])
 a*b
 sage: latex(ZZ['a']['b']([0, ZZ['a'].0]))
 ab
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2586
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2586
 archive/issue_comments_017661.json:
 ```json
 {
-    "body": "Some people might not think this is a problem.  This definitely is:\n\n\n```\nsage: latex(ZZ['alpha']['b']([0, ZZ['alpha'].0]))\n\\alphab\n```\n",
+    "body": "Some people might not think this is a problem.  This definitely is:\n\n```\nsage: latex(ZZ['alpha']['b']([0, ZZ['alpha'].0]))\n\\alphab\n```",
     "created_at": "2008-03-18T17:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2586",
     "type": "issue_comment",
@@ -56,12 +54,10 @@ archive/issue_comments_017661.json:
 
 Some people might not think this is a problem.  This definitely is:
 
-
 ```
 sage: latex(ZZ['alpha']['b']([0, ZZ['alpha'].0]))
 \alphab
 ```
-
 
 
 

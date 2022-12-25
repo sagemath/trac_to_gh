@@ -106,7 +106,7 @@ I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the documen
 archive/issue_comments_081532.json:
 ```json
 {
-    "body": "Hi Mariah,\n\nReplying to [comment:3 mariah]:\n> I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the\n> documentation.  Yet when I look at the doc of\n`sage.combinat.partition.associated`,\n> I do not see anything saying that the function is deprecated.  Am I missing something?\n\nThis is what I got under the command line\n\n```\nsage: P.associated?\nType:           DeprecatedFunctionAlias\nBase Class:     <class 'sage.misc.misc.DeprecatedFunctionAlias'>\nString Form:    <sage.misc.misc.DeprecatedFunctionAlias object at 0x30c6210>\nNamespace:      Interactive\nFile:           /home/florent/src/Sage/sage/local/lib/python2.6/site-packages/sage/misc/misc.py\nDefinition:     P.associated(self, *args, **kwds)\nDocstring:\n    Deprecated since version Sage: Version 4.4. Use ``conjugate()``\n    instead.\n[...]\n```\n\nIt also work under the notebook and the html built doc.\n\nHow did you rebuild the documentation ? If you just did {{{sage -docbuild\nreference html}}} then without touching `partitions.py` Sphinx consider it\nupto date and doesn't rebuild the documentation. Is that what you did ?\n\nFlorent",
+    "body": "Hi Mariah,\n\nReplying to [comment:3 mariah]:\n> I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the\n> documentation.  Yet when I look at the doc of\n  \n`sage.combinat.partition.associated`,\n> I do not see anything saying that the function is deprecated.  Am I missing something?\n\n\nThis is what I got under the command line\n\n```\nsage: P.associated?\nType:           DeprecatedFunctionAlias\nBase Class:     <class 'sage.misc.misc.DeprecatedFunctionAlias'>\nString Form:    <sage.misc.misc.DeprecatedFunctionAlias object at 0x30c6210>\nNamespace:      Interactive\nFile:           /home/florent/src/Sage/sage/local/lib/python2.6/site-packages/sage/misc/misc.py\nDefinition:     P.associated(self, *args, **kwds)\nDocstring:\n    Deprecated since version Sage: Version 4.4. Use ``conjugate()``\n    instead.\n[...]\n```\nIt also work under the notebook and the html built doc.\n\nHow did you rebuild the documentation ? If you just did {{{sage -docbuild\nreference html}}} then without touching `partitions.py` Sphinx consider it\nupto date and doesn't rebuild the documentation. Is that what you did ?\n\nFlorent",
     "created_at": "2011-06-18T21:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
@@ -120,8 +120,10 @@ Hi Mariah,
 Replying to [comment:3 mariah]:
 > I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the
 > documentation.  Yet when I look at the doc of
+  
 `sage.combinat.partition.associated`,
 > I do not see anything saying that the function is deprecated.  Am I missing something?
+
 
 This is what I got under the command line
 
@@ -138,7 +140,6 @@ Docstring:
     instead.
 [...]
 ```
-
 It also work under the notebook and the html built doc.
 
 How did you rebuild the documentation ? If you just did {{{sage -docbuild
@@ -226,7 +227,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081537.json:
 ```json
 {
-    "body": "Replying to [comment:6 mariah]:\n> So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat/partitions.py', then did 'sage -docbuild reference html'.  Now I see that the function is deprecated.  I also did 'make testlong' and all tests passed.  Positive review!\n\nExcellent ! Thanks for the review.\n\nFlorent",
+    "body": "Replying to [comment:6 mariah]:\n> So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat/partitions.py', then did 'sage -docbuild reference html'.  Now I see that the function is deprecated.  I also did 'make testlong' and all tests passed.  Positive review!\n\n\nExcellent ! Thanks for the review.\n\nFlorent",
     "created_at": "2011-06-21T18:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
@@ -237,6 +238,7 @@ archive/issue_comments_081537.json:
 
 Replying to [comment:6 mariah]:
 > So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat/partitions.py', then did 'sage -docbuild reference html'.  Now I see that the function is deprecated.  I also did 'make testlong' and all tests passed.  Positive review!
+
 
 Excellent ! Thanks for the review.
 
@@ -321,7 +323,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_081542.json:
 ```json
 {
-    "body": "Replying to [comment:8 jdemeyer]:\n> This should be rebased to sage-4.7.1.alpha3.\n\nDone ! I is only rebase therefore I revert back to positive review. I'm not sure I'm allowed to do that.",
+    "body": "Replying to [comment:8 jdemeyer]:\n> This should be rebased to sage-4.7.1.alpha3.\n\n\nDone ! I is only rebase therefore I revert back to positive review. I'm not sure I'm allowed to do that.",
     "created_at": "2011-06-28T15:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
@@ -332,6 +334,7 @@ archive/issue_comments_081542.json:
 
 Replying to [comment:8 jdemeyer]:
 > This should be rebased to sage-4.7.1.alpha3.
+
 
 Done ! I is only rebase therefore I revert back to positive review. I'm not sure I'm allowed to do that.
 

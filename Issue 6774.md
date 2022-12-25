@@ -185,7 +185,7 @@ I assume that you merged the tickets that define the functions listed here (i.e.
 archive/issue_comments_055677.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> I assume that you merged the tickets that define the functions listed here\nYes, I have done so.\n\n\n\n\n\n> (i.e., you were able to run doctests on this file and everything was okay).\nYes, with the two patches on this ticket all doctests in the tutorial pass.",
+    "body": "Replying to [comment:4 jason]:\n> I assume that you merged the tickets that define the functions listed here\n\nYes, I have done so.\n\n\n\n\n\n> (i.e., you were able to run doctests on this file and everything was okay).\n\nYes, with the two patches on this ticket all doctests in the tutorial pass.",
     "created_at": "2009-09-19T19:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -196,6 +196,7 @@ archive/issue_comments_055677.json:
 
 Replying to [comment:4 jason]:
 > I assume that you merged the tickets that define the functions listed here
+
 Yes, I have done so.
 
 
@@ -203,6 +204,7 @@ Yes, I have done so.
 
 
 > (i.e., you were able to run doctests on this file and everything was okay).
+
 Yes, with the two patches on this ticket all doctests in the tutorial pass.
 
 
@@ -212,7 +214,7 @@ Yes, with the two patches on this ticket all doctests in the tutorial pass.
 archive/issue_comments_055678.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n> Replying to [comment:4 jason]:\n> > I assume that you merged the tickets that define the functions listed here\n> Yes, I have done so.\n\nNo, you haven't.  These functions are defined in #6679 and #6680, which haven't been reviewed, let alone merged.  This ticket should have been marked as \"depends on #6679 and #6680\": we can't have functions mentioned in the tutorial which are not yet part of Sage.  For now, the graph theory tour has been removed from the tutorial -- see #7149.\n\nWhen the tickets #6679 and #6680 have been merged, then open up a new ticket to reinstate the graph theory tour (the corrected version, as of #6952).  Before running doctests, apply the script patches from #6572 to make sure that everything is getting tested -- the current doctesting system is broken, so many doctests in .rst files are inadvertently skipped.",
+    "body": "Replying to [comment:5 mvngu]:\n> Replying to [comment:4 jason]:\n> > I assume that you merged the tickets that define the functions listed here\n\n> Yes, I have done so.\n\nNo, you haven't.  These functions are defined in #6679 and #6680, which haven't been reviewed, let alone merged.  This ticket should have been marked as \"depends on #6679 and #6680\": we can't have functions mentioned in the tutorial which are not yet part of Sage.  For now, the graph theory tour has been removed from the tutorial -- see #7149.\n\nWhen the tickets #6679 and #6680 have been merged, then open up a new ticket to reinstate the graph theory tour (the corrected version, as of #6952).  Before running doctests, apply the script patches from #6572 to make sure that everything is getting tested -- the current doctesting system is broken, so many doctests in .rst files are inadvertently skipped.",
     "created_at": "2009-10-08T02:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -224,6 +226,7 @@ archive/issue_comments_055678.json:
 Replying to [comment:5 mvngu]:
 > Replying to [comment:4 jason]:
 > > I assume that you merged the tickets that define the functions listed here
+
 > Yes, I have done so.
 
 No, you haven't.  These functions are defined in #6679 and #6680, which haven't been reviewed, let alone merged.  This ticket should have been marked as "depends on #6679 and #6680": we can't have functions mentioned in the tutorial which are not yet part of Sage.  For now, the graph theory tour has been removed from the tutorial -- see #7149.
@@ -366,7 +369,7 @@ I thought that we didn't want things in the tutorial that depended on optional p
 archive/issue_comments_055685.json:
 ```json
 {
-    "body": "Replying to [comment:11 mhansen]:\n> I thought that we didn't want things in the tutorial that depended on optional packages.\nThat is correct. Anything in the attached patches that uses optional packages should be removed. A new patch should be attached that still gives a tour of graph theory in Sage, but without using any optional packages.",
+    "body": "Replying to [comment:11 mhansen]:\n> I thought that we didn't want things in the tutorial that depended on optional packages.\n\nThat is correct. Anything in the attached patches that uses optional packages should be removed. A new patch should be attached that still gives a tour of graph theory in Sage, but without using any optional packages.",
     "created_at": "2009-11-29T10:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -377,6 +380,7 @@ archive/issue_comments_055685.json:
 
 Replying to [comment:11 mhansen]:
 > I thought that we didn't want things in the tutorial that depended on optional packages.
+
 That is correct. Anything in the attached patches that uses optional packages should be removed. A new patch should be attached that still gives a tour of graph theory in Sage, but without using any optional packages.
 
 
@@ -426,7 +430,7 @@ Besides, this can be updated because of ticket #6813 which just got merged... We
 archive/issue_comments_055688.json:
 ```json
 {
-    "body": "Replying to [comment:13 ncohen]:\n> Is it just because it would be a legal problem for Sage to claim as \"available\" functions that we cannot provide without the addition of a software we are not allowed to embed ?\n\nIt's because everything in the tutorial should \"just work\".  You shouldn't have to install anything extra, it should work right out of the box.",
+    "body": "Replying to [comment:13 ncohen]:\n> Is it just because it would be a legal problem for Sage to claim as \"available\" functions that we cannot provide without the addition of a software we are not allowed to embed ?\n\n\nIt's because everything in the tutorial should \"just work\".  You shouldn't have to install anything extra, it should work right out of the box.",
     "created_at": "2009-11-29T16:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
@@ -437,6 +441,7 @@ archive/issue_comments_055688.json:
 
 Replying to [comment:13 ncohen]:
 > Is it just because it would be a legal problem for Sage to claim as "available" functions that we cannot provide without the addition of a software we are not allowed to embed ?
+
 
 It's because everything in the tutorial should "just work".  You shouldn't have to install anything extra, it should work right out of the box.
 

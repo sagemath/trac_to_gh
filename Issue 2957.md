@@ -3,7 +3,7 @@
 archive/issues_002957.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn 64-bit x86, exponents truncate to 32 bits:\n\n```\nsage: K.<x,y> = QQ[]\nsage: ((x^12345)^54321)^12345\nx^2065457633\nsage: 12345*54321*12345\n8278467437025\nsage: (12345*54321*12345) % 2^32\n2065457633\n```\n\n\nOn 32-bit x86, exponents truncate to 16 bits, and overflow from one variable to another (!!!):\n\n```\nsage: K.<x,y> = QQ[]\nsage: (x^12345)^54321\nx^28393*y^10232\nsage: (12345*54321) // 2^16\n10232\nsage: (12345*54321) % 2^16\n28393\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2957\n\n",
+    "body": "Assignee: somebody\n\nOn 64-bit x86, exponents truncate to 32 bits:\n\n```\nsage: K.<x,y> = QQ[]\nsage: ((x^12345)^54321)^12345\nx^2065457633\nsage: 12345*54321*12345\n8278467437025\nsage: (12345*54321*12345) % 2^32\n2065457633\n```\n\nOn 32-bit x86, exponents truncate to 16 bits, and overflow from one variable to another (!!!):\n\n```\nsage: K.<x,y> = QQ[]\nsage: (x^12345)^54321\nx^28393*y^10232\nsage: (12345*54321) // 2^16\n10232\nsage: (12345*54321) % 2^16\n28393\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2957\n\n",
     "created_at": "2008-04-19T15:33:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -30,7 +30,6 @@ sage: (12345*54321*12345) % 2^32
 2065457633
 ```
 
-
 On 32-bit x86, exponents truncate to 16 bits, and overflow from one variable to another (!!!):
 
 ```
@@ -42,7 +41,6 @@ sage: (12345*54321) // 2^16
 sage: (12345*54321) % 2^16
 28393
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2957
@@ -73,7 +71,7 @@ archive/issue_events_006758.json:
 archive/issue_comments_020356.json:
 ```json
 {
-    "body": "I'm going to upload a fix in a sec, but it comes at a cost:\n\n## Before\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 288 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 462 ns per loop\n```\n\n\n## After\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 314 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 501 ns per loop\n```\n",
+    "body": "I'm going to upload a fix in a sec, but it comes at a cost:\n\n## Before\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 288 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 462 ns per loop\n```\n\n## After\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 314 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 501 ns per loop\n```",
     "created_at": "2009-01-23T08:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
@@ -97,7 +95,6 @@ sage: %timeit f*g
 1000000 loops, best of 3: 462 ns per loop
 ```
 
-
 ## After
 
 ```
@@ -110,7 +107,6 @@ sage: g = y + 1
 sage: %timeit f*g
 1000000 loops, best of 3: 501 ns per loop
 ```
-
 
 
 

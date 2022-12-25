@@ -3,7 +3,7 @@
 archive/issues_000775.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn tracebacks the filenames get misreported. As you see below, sometimes the filename gets prefixed by the current directory.\n\n```\nsage: os.system(\"pwd\")\n/tmp\n0\nsage: sage.misc.sageinspect.sage_getfile(matrix)\n'/usr/local/sage/default/local/lib/python2.5/site-packages/sage/matrix/constructor.py'\nsage: M=matrix([[1,1]])\nsage: M*M\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/<ipython console> in <module>()\n\n/tmp/element.pyx in element.Matrix.__mul__()\n\n/tmp/element.pyx in element.Matrix._matrix_times_matrix_c()\n\n<type 'exceptions.TypeError'>: incompatible dimensions\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/775\n\n",
+    "body": "Assignee: @williamstein\n\nIn tracebacks the filenames get misreported. As you see below, sometimes the filename gets prefixed by the current directory.\n\n```\nsage: os.system(\"pwd\")\n/tmp\n0\nsage: sage.misc.sageinspect.sage_getfile(matrix)\n'/usr/local/sage/default/local/lib/python2.5/site-packages/sage/matrix/constructor.py'\nsage: M=matrix([[1,1]])\nsage: M*M\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/<ipython console> in <module>()\n\n/tmp/element.pyx in element.Matrix.__mul__()\n\n/tmp/element.pyx in element.Matrix._matrix_times_matrix_c()\n\n<type 'exceptions.TypeError'>: incompatible dimensions\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/775\n\n",
     "created_at": "2007-10-01T21:04:24Z",
     "labels": [
         "component: user interface",
@@ -40,7 +40,6 @@ sage: M*M
 
 <type 'exceptions.TypeError'>: incompatible dimensions
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/775
 

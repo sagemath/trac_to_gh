@@ -3,7 +3,7 @@
 archive/issues_009178.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen\n\nKeywords: attrcall, hash\n\nThis patch implements `attrcall.__hash__`. Its absence caused the\nfollowing misbehavior:\n\n\n```\n    sage: x = attrcall(\"blah\")\n    sage: y = attrcall(\"blah\")\n    sage: x == y\n    True\n    sage: hash(x) == hash(y)\n    False\n```\n\n\nwhich in particular broke unique representation and pickling of some\ncrystals (see #8911).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9178\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen\n\nKeywords: attrcall, hash\n\nThis patch implements `attrcall.__hash__`. Its absence caused the\nfollowing misbehavior:\n\n```\n    sage: x = attrcall(\"blah\")\n    sage: y = attrcall(\"blah\")\n    sage: x == y\n    True\n    sage: hash(x) == hash(y)\n    False\n```\n\nwhich in particular broke unique representation and pickling of some\ncrystals (see #8911).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9178\n\n",
     "created_at": "2010-06-07T15:23:23Z",
     "labels": [
         "component: misc",
@@ -25,7 +25,6 @@ Keywords: attrcall, hash
 This patch implements `attrcall.__hash__`. Its absence caused the
 following misbehavior:
 
-
 ```
     sage: x = attrcall("blah")
     sage: y = attrcall("blah")
@@ -34,7 +33,6 @@ following misbehavior:
     sage: hash(x) == hash(y)
     False
 ```
-
 
 which in particular broke unique representation and pickling of some
 crystals (see #8911).

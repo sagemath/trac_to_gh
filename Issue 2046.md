@@ -3,7 +3,7 @@
 archive/issues_002046.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis bug was reported by Georg here: http://groups.google.com/group/sage-support/browse_thread/thread/a1c5910c053abc90/28f1b635fba382a4#28f1b635fba382a4\n\n```\nsage: save(srange(3), './foo')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/cwitty/<ipython console> in <module>()\n\n/home/cwitty/sage_object.pyx in sage.structure.sage_object.save()\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'save'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2046\n\n",
+    "body": "Assignee: @williamstein\n\nThis bug was reported by Georg here: http://groups.google.com/group/sage-support/browse_thread/thread/a1c5910c053abc90/28f1b635fba382a4#28f1b635fba382a4\n\n```\nsage: save(srange(3), './foo')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/cwitty/<ipython console> in <module>()\n\n/home/cwitty/sage_object.pyx in sage.structure.sage_object.save()\n\n<type 'exceptions.AttributeError'>: 'list' object has no attribute 'save'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2046\n\n",
     "created_at": "2008-02-05T01:51:21Z",
     "labels": [
         "component: user interface",
@@ -31,7 +31,6 @@ sage: save(srange(3), './foo')
 
 <type 'exceptions.AttributeError'>: 'list' object has no attribute 'save'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2046
 

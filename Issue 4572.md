@@ -69,7 +69,7 @@ Applies and passes tests.
 archive/issue_comments_034192.json:
 ```json
 {
-    "body": "This patch seems to cause a boat load of small and annoying doctest failures:\n\n```\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_real_mpfr_dense.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_rqdf.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/real_mpfr.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/complex_double.pyx # 3 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 1 doctests failed\n        sage -t -long devel/sage/sage/misc/parser.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/misc/prandom.py # 1 doctests failed\n        sage -t -long devel/sage/sage/matrix/tests.py # 1 doctests failed\n        sage -t -long devel/sage/sage/interfaces/maxima.py # 3 doctests failed\n        sage -t -long devel/sage/sage/functions/special.py # 7 doctests failed\n        sage -t -long devel/sage/sage/functions/constants.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/piecewise.py # 3 doctests failed\n        sage -t -long devel/doc/tut/tut.tex # 1 doctests failed\n```\n\nI will make 100% sure this can all be blamed on this patch.\n\nCheers,\n\nMichael",
+    "body": "This patch seems to cause a boat load of small and annoying doctest failures:\n\n```\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_real_mpfr_dense.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_rqdf.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/real_mpfr.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/complex_double.pyx # 3 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 1 doctests failed\n        sage -t -long devel/sage/sage/misc/parser.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/misc/prandom.py # 1 doctests failed\n        sage -t -long devel/sage/sage/matrix/tests.py # 1 doctests failed\n        sage -t -long devel/sage/sage/interfaces/maxima.py # 3 doctests failed\n        sage -t -long devel/sage/sage/functions/special.py # 7 doctests failed\n        sage -t -long devel/sage/sage/functions/constants.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/piecewise.py # 3 doctests failed\n        sage -t -long devel/doc/tut/tut.tex # 1 doctests failed\n```\nI will make 100% sure this can all be blamed on this patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T19:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ This patch seems to cause a boat load of small and annoying doctest failures:
         sage -t -long devel/sage/sage/functions/piecewise.py # 3 doctests failed
         sage -t -long devel/doc/tut/tut.tex # 1 doctests failed
 ```
-
 I will make 100% sure this can all be blamed on this patch.
 
 Cheers,

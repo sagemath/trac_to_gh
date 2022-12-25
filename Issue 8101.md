@@ -77,7 +77,7 @@ Jaap
 archive/issue_comments_070962.json:
 ```json
 {
-    "body": "Positive review. All shared libraries are indeed 64-bit now. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*\nlocal/lib/libntl-5.4.2.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libntl.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libntl.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
+    "body": "Positive review. All shared libraries are indeed 64-bit now. \n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*\nlocal/lib/libntl-5.4.2.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libntl.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libntl.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```",
     "created_at": "2010-01-28T13:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
@@ -88,14 +88,12 @@ archive/issue_comments_070962.json:
 
 Positive review. All shared libraries are indeed 64-bit now. 
 
-
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*
 local/lib/libntl-5.4.2.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libntl.a:	current ar archive, not a dynamic executable or shared object
 local/lib/libntl.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
-
 
 
 

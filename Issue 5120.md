@@ -267,7 +267,7 @@ I'm sure there are good reasons why this is needed, but I think it would be help
 archive/issue_comments_039060.json:
 ```json
 {
-    "body": "1) The first line of one of the files is:\n\n```\n\u00ef\u00bb\u00bfr\"\"\" \n```\n\nI.e., lots of weird corrupted characters.\n\n2) There are no doctests for any of the actual functions you defined.  Code can't go into sage without 100% doctest coverage of each new function.",
+    "body": "1) The first line of one of the files is:\n\n```\n\u00ef\u00bb\u00bfr\"\"\" \n```\nI.e., lots of weird corrupted characters.\n\n2) There are no doctests for any of the actual functions you defined.  Code can't go into sage without 100% doctest coverage of each new function.",
     "created_at": "2009-04-12T06:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -281,7 +281,6 @@ archive/issue_comments_039060.json:
 ```
 ï»¿r""" 
 ```
-
 I.e., lots of weird corrupted characters.
 
 2) There are no doctests for any of the actual functions you defined.  Code can't go into sage without 100% doctest coverage of each new function.
@@ -334,7 +333,7 @@ sage/structure/all.py needs to be corrected by hand.
 archive/issue_comments_039063.json:
 ```json
 {
-    "body": "Replying to [comment:8 bump]:\n> The patch doesn't apply cleanly to sage-3.4.1 since the hunk in\n> sage/structure/all.py needs to be corrected by hand.\nThanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\nlittle other improvements.",
+    "body": "Replying to [comment:8 bump]:\n> The patch doesn't apply cleanly to sage-3.4.1 since the hunk in\n> sage/structure/all.py needs to be corrected by hand.\n\nThanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\nlittle other improvements.",
     "created_at": "2009-04-24T21:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -346,6 +345,7 @@ archive/issue_comments_039063.json:
 Replying to [comment:8 bump]:
 > The patch doesn't apply cleanly to sage-3.4.1 since the hunk in
 > sage/structure/all.py needs to be corrected by hand.
+
 Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two
 little other improvements.
 
@@ -356,7 +356,7 @@ little other improvements.
 archive/issue_comments_039064.json:
 ```json
 {
-    "body": "Replying to [comment:9 nthiery]:\n> Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\n> little other improvements.\n\nI just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.\n\nThis later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why",
+    "body": "Replying to [comment:9 nthiery]:\n> Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\n> little other improvements.\n\n\nI just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.\n\nThis later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why",
     "created_at": "2009-04-24T23:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -369,6 +369,7 @@ Replying to [comment:9 nthiery]:
 > Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two
 > little other improvements.
 
+
 I just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.
 
 This later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why
@@ -380,7 +381,7 @@ This later change is debatable. For some reason the reduce way was preferable fo
 archive/issue_comments_039065.json:
 ```json
 {
-    "body": "Replying to [comment:10 nthiery]:\n> Replying to [comment:9 nthiery]:\n> > Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\n> > little other improvements.\n> \n> I just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.\n> \n> This later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why\n\nAh, I know why: keyword arguments. See updated, 100% doctested and proofread patch.",
+    "body": "Replying to [comment:10 nthiery]:\n> Replying to [comment:9 nthiery]:\n> > Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two\n> > little other improvements.\n\n> \n> I just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.\n> \n> This later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why\n\n\nAh, I know why: keyword arguments. See updated, 100% doctested and proofread patch.",
     "created_at": "2009-04-25T07:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -393,10 +394,12 @@ Replying to [comment:10 nthiery]:
 > Replying to [comment:9 nthiery]:
 > > Thanks for the notice. The patch on sage-combinat has been rebased. I'll try to upload it today, after folding in two
 > > little other improvements.
+
 > 
 > I just updated the patch, rebased for 3.4.1, with description header, default implementation of copy/deepcopy, and pickling by reduce rather than getnewargs.
 > 
 > This later change is debatable. For some reason the reduce way was preferable for some application to categories, but I badly enough did not take notes about why
+
 
 Ah, I know why: keyword arguments. See updated, 100% doctested and proofread patch.
 
@@ -407,7 +410,7 @@ Ah, I know why: keyword arguments. See updated, 100% doctested and proofread pat
 archive/issue_comments_039066.json:
 ```json
 {
-    "body": "> Ah, I know why: keyword arguments. See updated, 100% doctested and proofread patch.\n\nOops trivial update to apply cleanly on 3.4.1. Thanks Dan for the notice.\n\nMichael: could we change the milestone to 3.4.2?",
+    "body": "> Ah, I know why: keyword arguments. See updated, 100% doctested and proofread patch.\n\n\nOops trivial update to apply cleanly on 3.4.1. Thanks Dan for the notice.\n\nMichael: could we change the milestone to 3.4.2?",
     "created_at": "2009-04-25T15:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -417,6 +420,7 @@ archive/issue_comments_039066.json:
 ```
 
 > Ah, I know why: keyword arguments. See updated, 100% doctested and proofread patch.
+
 
 Oops trivial update to apply cleanly on 3.4.1. Thanks Dan for the notice.
 
@@ -429,7 +433,7 @@ Michael: could we change the milestone to 3.4.2?
 archive/issue_comments_039067.json:
 ```json
 {
-    "body": "Replying to [comment:12 nthiery]:\n\nI deleted the old patch.\n\n> Michael: could we change the milestone to 3.4.2?\n\nThe assignment of milestones is generally insignificant (an exception is like right now when 3.4.2.rc0 was the last merge release and we are in blocker fixes only mode), but as long as this ticket would have gotten a positive review it would have had a chance to go into 3.4.2 regardless which milestone it would have been assigned to.\n\nThis patch is also a new design pattern which warrants to be mentioned on sage-devel. It seems to be very well documented and AFAIK it should be properly covered :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 nthiery]:\n\nI deleted the old patch.\n\n> Michael: could we change the milestone to 3.4.2?\n\n\nThe assignment of milestones is generally insignificant (an exception is like right now when 3.4.2.rc0 was the last merge release and we are in blocker fixes only mode), but as long as this ticket would have gotten a positive review it would have had a chance to go into 3.4.2 regardless which milestone it would have been assigned to.\n\nThis patch is also a new design pattern which warrants to be mentioned on sage-devel. It seems to be very well documented and AFAIK it should be properly covered :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T22:10:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -443,6 +447,7 @@ Replying to [comment:12 nthiery]:
 I deleted the old patch.
 
 > Michael: could we change the milestone to 3.4.2?
+
 
 The assignment of milestones is generally insignificant (an exception is like right now when 3.4.2.rc0 was the last merge release and we are in blocker fixes only mode), but as long as this ticket would have gotten a positive review it would have had a chance to go into 3.4.2 regardless which milestone it would have been assigned to.
 
@@ -477,7 +482,7 @@ Applies cleanly to sage-3.4.2.rc0 and passes all tests.
 archive/issue_comments_039069.json:
 ```json
 {
-    "body": "Note that #5879 exposes a problem with this patch. To quote Anne:\n\n```\nI just talked to Nicolas about the pickling problem; this is a shortcoming \nof the current unique representation patch and he will try to find a solution \nto the problem in patch 5120.\n```\n\n\nI will mark this \"needs work\" until this issue is resolved. \n\nCheers,\n\nMichael",
+    "body": "Note that #5879 exposes a problem with this patch. To quote Anne:\n\n```\nI just talked to Nicolas about the pickling problem; this is a shortcoming \nof the current unique representation patch and he will try to find a solution \nto the problem in patch 5120.\n```\n\nI will mark this \"needs work\" until this issue is resolved. \n\nCheers,\n\nMichael",
     "created_at": "2009-05-08T00:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5120",
     "type": "issue_comment",
@@ -493,7 +498,6 @@ I just talked to Nicolas about the pickling problem; this is a shortcoming
 of the current unique representation patch and he will try to find a solution 
 to the problem in patch 5120.
 ```
-
 
 I will mark this "needs work" until this issue is resolved. 
 

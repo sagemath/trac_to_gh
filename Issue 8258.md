@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8258
 archive/issue_comments_072955.json:
 ```json
 {
-    "body": "After a cloning, the script `sage-clone` issues a \n\n```\nsage -docbuild --update-mtimes reference html\n```\n\nwhich seems to solve the problem (at least for me) see #7796.\n\nFlorent",
+    "body": "After a cloning, the script `sage-clone` issues a \n\n```\nsage -docbuild --update-mtimes reference html\n```\nwhich seems to solve the problem (at least for me) see #7796.\n\nFlorent",
     "created_at": "2010-02-13T22:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ After a cloning, the script `sage-clone` issues a
 ```
 sage -docbuild --update-mtimes reference html
 ```
-
 which seems to solve the problem (at least for me) see #7796.
 
 Florent
@@ -72,7 +71,7 @@ Florent
 archive/issue_comments_072956.json:
 ```json
 {
-    "body": "Hi Florent,\n\nyes, I know that many people already put quite some effort into this, and I know that command\n\n```\nsage -docbuild --update-mtimes reference html\n```\n\nbecause on my computer, it more often hangs than not.\n\nSince its introduction, I got used to issue a \"CTRL-C\" every time after a \"sage-clone\"; there has been more than one discussion / message thread on sage-devel about that. But since it seems to work fine for at least some other people (including you), I chose not to (re-)open a ticket to revert this behaviour.\n\nLet me say it again, this ticket here is about a slightly different issue. You can test it easily yourself. Just take some Sage install (let's say a Sage 4.3.2 version) of yours, do a \"make\" in the SAGE_ROOT directory, so the documentation is up to date.\n\nThen just move the Sage install to some different place in your file tree (drag-and-drop from a GUI), i.e. create e.g. a directory \"test/\" side-by-side to this Sage install, and then move this full Sage tree one level lower in the directory hierarchy, now under \"test/\". No file date/time stamps updating whatsoever, just a full plain \"move\". (If you wish, you can issue \"./sage\" there, and you'll see some message about .pyc files to be relocated.)\n\nNow, issue \"make\" again in the SAGE_ROOT in its new location, and alas, *all* of the documentation gets built over again.\n\nThis latter behaviour clearly exposes some basic design flaw in the way Sphinx seems to store/interpret its metadata; at least in view of common use cases for Sage.\n(This \"relocation\" will happen almost certainly for anyone installing a Sage binary distribution.)\n\nI do think this relocation issue must be fixed. (Of course I also hope, that in the course of doing so, more light is shed on the \"sage-clone\" issues still left, but for me, that is only a second step, after this first one.)\n\n\nCheers, Georg",
+    "body": "Hi Florent,\n\nyes, I know that many people already put quite some effort into this, and I know that command\n\n```\nsage -docbuild --update-mtimes reference html\n```\nbecause on my computer, it more often hangs than not.\n\nSince its introduction, I got used to issue a \"CTRL-C\" every time after a \"sage-clone\"; there has been more than one discussion / message thread on sage-devel about that. But since it seems to work fine for at least some other people (including you), I chose not to (re-)open a ticket to revert this behaviour.\n\nLet me say it again, this ticket here is about a slightly different issue. You can test it easily yourself. Just take some Sage install (let's say a Sage 4.3.2 version) of yours, do a \"make\" in the SAGE_ROOT directory, so the documentation is up to date.\n\nThen just move the Sage install to some different place in your file tree (drag-and-drop from a GUI), i.e. create e.g. a directory \"test/\" side-by-side to this Sage install, and then move this full Sage tree one level lower in the directory hierarchy, now under \"test/\". No file date/time stamps updating whatsoever, just a full plain \"move\". (If you wish, you can issue \"./sage\" there, and you'll see some message about .pyc files to be relocated.)\n\nNow, issue \"make\" again in the SAGE_ROOT in its new location, and alas, *all* of the documentation gets built over again.\n\nThis latter behaviour clearly exposes some basic design flaw in the way Sphinx seems to store/interpret its metadata; at least in view of common use cases for Sage.\n(This \"relocation\" will happen almost certainly for anyone installing a Sage binary distribution.)\n\nI do think this relocation issue must be fixed. (Of course I also hope, that in the course of doing so, more light is shed on the \"sage-clone\" issues still left, but for me, that is only a second step, after this first one.)\n\n\nCheers, Georg",
     "created_at": "2010-02-14T12:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
@@ -88,7 +87,6 @@ yes, I know that many people already put quite some effort into this, and I know
 ```
 sage -docbuild --update-mtimes reference html
 ```
-
 because on my computer, it more often hangs than not.
 
 Since its introduction, I got used to issue a "CTRL-C" every time after a "sage-clone"; there has been more than one discussion / message thread on sage-devel about that. But since it seems to work fine for at least some other people (including you), I chose not to (re-)open a ticket to revert this behaviour.
@@ -176,7 +174,7 @@ I'll make a new spkg after we sort out #7448 and #8244.
 archive/issue_comments_072960.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> This may be enough for cloning.\nTo test this, please disable the `update-mtimes` command in `SAGE_ROOT/local/bin/sage-clone`!",
+    "body": "Replying to [comment:3 mpatel]:\n> This may be enough for cloning.\n\nTo test this, please disable the `update-mtimes` command in `SAGE_ROOT/local/bin/sage-clone`!",
     "created_at": "2010-02-19T08:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
@@ -187,6 +185,7 @@ archive/issue_comments_072960.json:
 
 Replying to [comment:3 mpatel]:
 > This may be enough for cloning.
+
 To test this, please disable the `update-mtimes` command in `SAGE_ROOT/local/bin/sage-clone`!
 
 
@@ -196,7 +195,7 @@ To test this, please disable the `update-mtimes` command in `SAGE_ROOT/local/bin
 archive/issue_comments_072961.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> I'll make a new spkg after we sort out #7448 and #8244.\n\nHi ! I'm close to have what I believe is the final fix for #7448. Is it Ok to just post a patch to `autodoc.py` there ? If I can avoid, I'd rather not learning yet how to build a spkg :-)",
+    "body": "Replying to [comment:4 mpatel]:\n> I'll make a new spkg after we sort out #7448 and #8244.\n\n\nHi ! I'm close to have what I believe is the final fix for #7448. Is it Ok to just post a patch to `autodoc.py` there ? If I can avoid, I'd rather not learning yet how to build a spkg :-)",
     "created_at": "2010-02-19T09:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
@@ -207,6 +206,7 @@ archive/issue_comments_072961.json:
 
 Replying to [comment:4 mpatel]:
 > I'll make a new spkg after we sort out #7448 and #8244.
+
 
 Hi ! I'm close to have what I believe is the final fix for #7448. Is it Ok to just post a patch to `autodoc.py` there ? If I can avoid, I'd rather not learning yet how to build a spkg :-)
 

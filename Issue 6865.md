@@ -122,7 +122,7 @@ archive/issue_comments_056556.json:
 archive/issue_comments_056557.json:
 ```json
 {
-    "body": "Does the patch depend on another ticket's patch?  Applying [attachment:trac_6865-templates-css.patch] to 4.1.2.alpha1, I get\n\n```\napplying trac_6865-templates-css.patch\npatching file sage/server/notebook/css.py\nHunk #1 FAILED at 0\n1 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/css.py.rej\npatching file sage/server/notebook/twist.py\nHunk #1 FAILED at 133\nHunk #2 succeeded at 1787 with fuzz 1 (offset 37 lines).\nHunk #3 FAILED at 2315\n2 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/twist.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_6865-templates-css.patch\n```\n\nThe important one is the last, which doesn't apply because the local `twist.py` contains\n\n```python\n        elif self.problem == 'suspended':\n            return HTMLResponse(stream = message(\"Your account is currently suspended.\"))\n```\n\nBut I could have altered my configuration.",
+    "body": "Does the patch depend on another ticket's patch?  Applying [attachment:trac_6865-templates-css.patch] to 4.1.2.alpha1, I get\n\n```\napplying trac_6865-templates-css.patch\npatching file sage/server/notebook/css.py\nHunk #1 FAILED at 0\n1 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/css.py.rej\npatching file sage/server/notebook/twist.py\nHunk #1 FAILED at 133\nHunk #2 succeeded at 1787 with fuzz 1 (offset 37 lines).\nHunk #3 FAILED at 2315\n2 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/twist.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_6865-templates-css.patch\n```\nThe important one is the last, which doesn't apply because the local `twist.py` contains\n\n```python\n        elif self.problem == 'suspended':\n            return HTMLResponse(stream = message(\"Your account is currently suspended.\"))\n```\nBut I could have altered my configuration.",
     "created_at": "2009-09-17T22:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
@@ -147,14 +147,12 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_6865-templates-css.patch
 ```
-
 The important one is the last, which doesn't apply because the local `twist.py` contains
 
 ```python
         elif self.problem == 'suspended':
             return HTMLResponse(stream = message("Your account is currently suspended."))
 ```
-
 But I could have altered my configuration.
 
 
@@ -164,7 +162,7 @@ But I could have altered my configuration.
 archive/issue_comments_056558.json:
 ```json
 {
-    "body": "I think we need to add\n\n```\ninclude sage/server/notebook/css/*\n```\n\nto `MANIFEST.in,` or we'll definitely hear from the release manager...",
+    "body": "I think we need to add\n\n```\ninclude sage/server/notebook/css/*\n```\nto `MANIFEST.in,` or we'll definitely hear from the release manager...",
     "created_at": "2009-09-18T02:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
@@ -178,7 +176,6 @@ I think we need to add
 ```
 include sage/server/notebook/css/*
 ```
-
 to `MANIFEST.in,` or we'll definitely hear from the release manager...
 
 
@@ -224,7 +221,7 @@ archive/issue_comments_056560.json:
 archive/issue_comments_056561.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> What is MANIFEST.in and when do we need to add things to it?\nI believe the `sage -bdist` and `sage -sdist` invoke [distutils](http://docs.python.org/distutils/sourcedist.html#specifying-the-files-to-distribute) to build `sage-*.spkg`.  Distutils uses `SAGE_ROOT/devel/sage/MANIFEST.in` to determine which files to include in the distribution.  If we add files to the local Mercurial repository, we should check that some line(s) in `MANIFEST.in` includes the newly tracked files or add a new line.  Otherwise, the next (pre-)release of Sage will not include them.  As mvngu puts it, this results in [\"repository corruption\"](http://groups.google.com/group/sage-devel/browse_thread/thread/697693c77e8d7ee8/290f2ec5412b909d?q=repository+corruption+group:sage-devel#290f2ec5412b909d).\n\nPrevious sightings: #4460, #5653, #5799, #6568, etc.",
+    "body": "Replying to [comment:6 jason]:\n> What is MANIFEST.in and when do we need to add things to it?\n\nI believe the `sage -bdist` and `sage -sdist` invoke [distutils](http://docs.python.org/distutils/sourcedist.html#specifying-the-files-to-distribute) to build `sage-*.spkg`.  Distutils uses `SAGE_ROOT/devel/sage/MANIFEST.in` to determine which files to include in the distribution.  If we add files to the local Mercurial repository, we should check that some line(s) in `MANIFEST.in` includes the newly tracked files or add a new line.  Otherwise, the next (pre-)release of Sage will not include them.  As mvngu puts it, this results in [\"repository corruption\"](http://groups.google.com/group/sage-devel/browse_thread/thread/697693c77e8d7ee8/290f2ec5412b909d?q=repository+corruption+group:sage-devel#290f2ec5412b909d).\n\nPrevious sightings: #4460, #5653, #5799, #6568, etc.",
     "created_at": "2009-09-19T05:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
@@ -235,6 +232,7 @@ archive/issue_comments_056561.json:
 
 Replying to [comment:6 jason]:
 > What is MANIFEST.in and when do we need to add things to it?
+
 I believe the `sage -bdist` and `sage -sdist` invoke [distutils](http://docs.python.org/distutils/sourcedist.html#specifying-the-files-to-distribute) to build `sage-*.spkg`.  Distutils uses `SAGE_ROOT/devel/sage/MANIFEST.in` to determine which files to include in the distribution.  If we add files to the local Mercurial repository, we should check that some line(s) in `MANIFEST.in` includes the newly tracked files or add a new line.  Otherwise, the next (pre-)release of Sage will not include them.  As mvngu puts it, this results in ["repository corruption"](http://groups.google.com/group/sage-devel/browse_thread/thread/697693c77e8d7ee8/290f2ec5412b909d?q=repository+corruption+group:sage-devel#290f2ec5412b909d).
 
 Previous sightings: #4460, #5653, #5799, #6568, etc.

@@ -74,7 +74,7 @@ Attachment [trac_9218-reviewer.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_086240.json:
 ```json
 {
-    "body": "Replying to [comment:1 was]:\n> The first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap. \n\nNot any more.\n\n\n\n\n> A second patch will fix all the formatting. \n\nSee my reviewer patch.",
+    "body": "Replying to [comment:1 was]:\n> The first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap. \n\n\nNot any more.\n\n\n\n\n> A second patch will fix all the formatting. \n\n\nSee my reviewer patch.",
     "created_at": "2010-06-12T22:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9218",
     "type": "issue_comment",
@@ -86,12 +86,14 @@ archive/issue_comments_086240.json:
 Replying to [comment:1 was]:
 > The first patch adds the documentation.  However the docstrings are all pre-rest, so look like crap. 
 
+
 Not any more.
 
 
 
 
 > A second patch will fix all the formatting. 
+
 
 See my reviewer patch.
 

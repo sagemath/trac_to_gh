@@ -3,7 +3,7 @@
 archive/issues_008998.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nTicket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., \n\n```\nsage: G = Gamma1(19)\nsage: rational_cusps = [c for c in G.cusps() if c.galois_action(2,19).is_gamma1_equiv(c,19)]\nsage: rational_cusps\n[0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,\n7/19, 8/19, 9/19, 1/2, Infinity]\n```\n\n\nHowever, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  \n\nThis came up in research that Michael Stoll and I were doing, and it was temporarily very confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8998\n\n",
+    "body": "Assignee: @craigcitro\n\nTicket  #5822 implemented the action of Galois on cusps.  I think the algorithm was only designed to work for Gamma_0(N).  However, the code runs for other groups, and doesn't raise an error.  Unfortunately, it gives completely wrong results in some cases, e.g., \n\n```\nsage: G = Gamma1(19)\nsage: rational_cusps = [c for c in G.cusps() if c.galois_action(2,19).is_gamma1_equiv(c,19)]\nsage: rational_cusps\n[0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,\n7/19, 8/19, 9/19, 1/2, Infinity]\n```\n\nHowever, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  \n\nThis came up in research that Michael Stoll and I were doing, and it was temporarily very confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8998\n\n",
     "created_at": "2010-05-20T05:29:16Z",
     "labels": [
         "component: modular forms",
@@ -27,7 +27,6 @@ sage: rational_cusps
 [0, 2/19, 1/9, 1/8, 1/7, 3/19, 1/6, 1/5, 4/19, 1/4, 5/19, 6/19, 1/3,
 7/19, 8/19, 9/19, 1/2, Infinity]
 ```
-
 
 However, exactly half the cusps are rational (see, e.g., my paper http://wstein.org/papers/j1p/ or the work of Kubert-Lang).  
 
@@ -118,7 +117,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083078.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> Looks good -- testing now.\n\nOK, tests passed.",
+    "body": "Replying to [comment:2 cremona]:\n> Looks good -- testing now.\n\n\nOK, tests passed.",
     "created_at": "2011-03-22T19:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
@@ -129,6 +128,7 @@ archive/issue_comments_083078.json:
 
 Replying to [comment:2 cremona]:
 > Looks good -- testing now.
+
 
 OK, tests passed.
 
@@ -173,7 +173,7 @@ archive/issue_events_022025.json:
 archive/issue_comments_083080.json:
 ```json
 {
-    "body": "This ticket is a false ticket. I just looked in to the article and the code in the article is really general. The problem is that is_gamma1_equiv does not do what you expect it to!\n\n\n```\nif Cusp(0).is_gamma1_equiv(Cusp(infinity),101):\n    print \"You would not expect to see something printed\"\n```\n\nActually prints the above statement.\nThe reason for this is that is_gamma1_equiv does not return a bool but a tuple. The first element of this tuple is the bool you were actually looking for.\n\nBy the way, I find the claim in this ticket that the code of 5882 only works for Gamma0(N) quite stupid because for Gamma0(n) one might as well implement the following:\n\n```\ndef galois_action(self,t,N):\n    return self\n```\n\nSince all cusps on X_0(N).\n\nHowever there is still a bug in the code because:\n\n```\nN=5\nG=Gamma1(N)\nfor i in G.cusps():\n    print [j.galois_action(2,N).is_gamma1_equiv(i,N)[0] for j in G.cusps()].count(True)\n```\n\nPrints\n\n```\n2\n1\n0\n1\n```\n\nSo the the galois action is not even a permutation!\n\nWhat would be the right thing to do? Reopen this ticket, open a new one?",
+    "body": "This ticket is a false ticket. I just looked in to the article and the code in the article is really general. The problem is that is_gamma1_equiv does not do what you expect it to!\n\n```\nif Cusp(0).is_gamma1_equiv(Cusp(infinity),101):\n    print \"You would not expect to see something printed\"\n```\nActually prints the above statement.\nThe reason for this is that is_gamma1_equiv does not return a bool but a tuple. The first element of this tuple is the bool you were actually looking for.\n\nBy the way, I find the claim in this ticket that the code of 5882 only works for Gamma0(N) quite stupid because for Gamma0(n) one might as well implement the following:\n\n```\ndef galois_action(self,t,N):\n    return self\n```\nSince all cusps on X_0(N).\n\nHowever there is still a bug in the code because:\n\n```\nN=5\nG=Gamma1(N)\nfor i in G.cusps():\n    print [j.galois_action(2,N).is_gamma1_equiv(i,N)[0] for j in G.cusps()].count(True)\n```\nPrints\n\n```\n2\n1\n0\n1\n```\nSo the the galois action is not even a permutation!\n\nWhat would be the right thing to do? Reopen this ticket, open a new one?",
     "created_at": "2012-07-08T01:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8998",
     "type": "issue_comment",
@@ -184,12 +184,10 @@ archive/issue_comments_083080.json:
 
 This ticket is a false ticket. I just looked in to the article and the code in the article is really general. The problem is that is_gamma1_equiv does not do what you expect it to!
 
-
 ```
 if Cusp(0).is_gamma1_equiv(Cusp(infinity),101):
     print "You would not expect to see something printed"
 ```
-
 Actually prints the above statement.
 The reason for this is that is_gamma1_equiv does not return a bool but a tuple. The first element of this tuple is the bool you were actually looking for.
 
@@ -199,7 +197,6 @@ By the way, I find the claim in this ticket that the code of 5882 only works for
 def galois_action(self,t,N):
     return self
 ```
-
 Since all cusps on X_0(N).
 
 However there is still a bug in the code because:
@@ -210,7 +207,6 @@ G=Gamma1(N)
 for i in G.cusps():
     print [j.galois_action(2,N).is_gamma1_equiv(i,N)[0] for j in G.cusps()].count(True)
 ```
-
 Prints
 
 ```
@@ -219,7 +215,6 @@ Prints
 0
 1
 ```
-
 So the the galois action is not even a permutation!
 
 What would be the right thing to do? Reopen this ticket, open a new one?

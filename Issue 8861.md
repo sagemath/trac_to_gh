@@ -3,7 +3,7 @@
 archive/issues_008861.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @TimDumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\n\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\n\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein @TimDumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
     "created_at": "2010-05-03T19:02:55Z",
     "labels": [
         "component: build",
@@ -44,7 +44,6 @@ may not be found!
 Reading http://pypi.python.org/simple/mechanize/
 ...
 ```
-
 On a computer with internet connection, one finds in the install.log:
 
 ```
@@ -62,7 +61,6 @@ Adding mechanize 0.1.11 to easy-install.pth file
 
 ...
 ```
-
 So the solution seems to be pretty easy: 
 
 Make a new sagenb-0.8.p1.spkg, by throwing out "mechanize-0.2.0.tar.gz" under /src/, adding back the old "mechanize-0.1.11.zip", and finally adjusting the corresponding line 6 in the spkg-install file.
@@ -179,7 +177,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081304.json:
 ```json
 {
-    "body": "Thanks for the quick work!\n\nReplying to [comment:2 GeorgSWeber]:\n> I just couldn't resist and did exactly that, the spkg is here:\n> \n> http://sage.math.washington.edu/home/weberg/spkg/sagenb-0.8.p2.spkg\n> \n> I note this still as \"needs work\" for three reasons:\n> 1.\n> My own test is not done yet --- one needs to do it on a computer *without* internet connection (I'll do overnight and report tomorrow).\n> \n> 2.\n> The sagenb spkg inexplicably misses the required hg repository (to able to monitor changes in spkg-install for example).\n\nThe sagenb spkg is automatically generated by src/sagenb/spkg-dist, therefore the hg repository is actually in src/sagenb.\n\n> \n> 3.\n> In the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.\n\nDone.\n\nI've posted the version with the changes in the hg repo here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.p2.spkg",
+    "body": "Thanks for the quick work!\n\nReplying to [comment:2 GeorgSWeber]:\n> I just couldn't resist and did exactly that, the spkg is here:\n> \n> http://sage.math.washington.edu/home/weberg/spkg/sagenb-0.8.p2.spkg\n> \n> I note this still as \"needs work\" for three reasons:\n> 1.\n> My own test is not done yet --- one needs to do it on a computer *without* internet connection (I'll do overnight and report tomorrow).\n> \n> 2.\n> The sagenb spkg inexplicably misses the required hg repository (to able to monitor changes in spkg-install for example).\n\n\nThe sagenb spkg is automatically generated by src/sagenb/spkg-dist, therefore the hg repository is actually in src/sagenb.\n\n> \n> 3.\n> In the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.\n\n\nDone.\n\nI've posted the version with the changes in the hg repo here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.p2.spkg",
     "created_at": "2010-05-04T04:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
@@ -202,11 +200,13 @@ Replying to [comment:2 GeorgSWeber]:
 > 2.
 > The sagenb spkg inexplicably misses the required hg repository (to able to monitor changes in spkg-install for example).
 
+
 The sagenb spkg is automatically generated by src/sagenb/spkg-dist, therefore the hg repository is actually in src/sagenb.
 
 > 
 > 3.
 > In the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.
+
 
 Done.
 
@@ -279,7 +279,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081308.json:
 ```json
 {
-    "body": "I checked the spkg I posted, and I don't see any problem.\n\n\n```\n\ntimdumol@tim-pc sagenb-0.8]$ ls src/\nsagenb/                    zope.i18nmessageid-3.5.2.zip\nClientForm-0.2.10.tar.gz   zope.interface-3.6.1.tar.gz\nmechanize-0.1.11.tar.gz    zope.schema-3.6.3.zip\npytz-2010h.zip             zope.testbrowser-3.8.1.tar.gz\nzope.event-3.5.0-1.tar.gz\n\n```\n",
+    "body": "I checked the spkg I posted, and I don't see any problem.\n\n```\n\ntimdumol@tim-pc sagenb-0.8]$ ls src/\nsagenb/                    zope.i18nmessageid-3.5.2.zip\nClientForm-0.2.10.tar.gz   zope.interface-3.6.1.tar.gz\nmechanize-0.1.11.tar.gz    zope.schema-3.6.3.zip\npytz-2010h.zip             zope.testbrowser-3.8.1.tar.gz\nzope.event-3.5.0-1.tar.gz\n\n```",
     "created_at": "2010-05-04T16:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
@@ -289,7 +289,6 @@ archive/issue_comments_081308.json:
 ```
 
 I checked the spkg I posted, and I don't see any problem.
-
 
 ```
 
@@ -304,13 +303,12 @@ zope.event-3.5.0-1.tar.gz
 
 
 
-
 ---
 
 archive/issue_comments_081309.json:
 ```json
 {
-    "body": "And the contents of spkg-install:\n\n\n```\n\ncd src\neasy_install pytz-2010h.zip\neasy_install zope.i18nmessageid-3.5.2.zip\neasy_install zope.event-3.5.0-1.tar.gz\neasy_install ClientForm-0.2.10.tar.gz\neasy_install mechanize-0.1.11.tar.gz\neasy_install zope.interface-3.6.1.tar.gz\neasy_install zope.schema-3.6.3.zip\neasy_install zope.testbrowser-3.8.1.tar.gz\ncd sagenb\npython setup.py install\n\n```\n",
+    "body": "And the contents of spkg-install:\n\n```\n\ncd src\neasy_install pytz-2010h.zip\neasy_install zope.i18nmessageid-3.5.2.zip\neasy_install zope.event-3.5.0-1.tar.gz\neasy_install ClientForm-0.2.10.tar.gz\neasy_install mechanize-0.1.11.tar.gz\neasy_install zope.interface-3.6.1.tar.gz\neasy_install zope.schema-3.6.3.zip\neasy_install zope.testbrowser-3.8.1.tar.gz\ncd sagenb\npython setup.py install\n\n```",
     "created_at": "2010-05-04T16:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
@@ -320,7 +318,6 @@ archive/issue_comments_081309.json:
 ```
 
 And the contents of spkg-install:
-
 
 ```
 
@@ -340,13 +337,12 @@ python setup.py install
 
 
 
-
 ---
 
 archive/issue_comments_081310.json:
 ```json
 {
-    "body": "A trivial point. When uncompressed, Tim's updated spkg has this name:\n\n\n```sh\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ tar -jxf sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg    sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\nsagenb-0.7.5.1.spkg  sagenb-0.8\n```\n\n\nNotice the directory name `sagenb-0.8`. It should be `sagenb-0.8.p2`. An updated package with directory name conforming to the Developer's Guide is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.spkg\n\nThis is essentially Tim's spkg, but I changed the name as per above instructions, prior to tar gzip2 compressing the updated spkg.",
+    "body": "A trivial point. When uncompressed, Tim's updated spkg has this name:\n\n```sh\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ tar -jxf sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg    sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\nsagenb-0.7.5.1.spkg  sagenb-0.8\n```\n\nNotice the directory name `sagenb-0.8`. It should be `sagenb-0.8.p2`. An updated package with directory name conforming to the Developer's Guide is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.spkg\n\nThis is essentially Tim's spkg, but I changed the name as per above instructions, prior to tar gzip2 compressing the updated spkg.",
     "created_at": "2010-05-04T16:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8861",
     "type": "issue_comment",
@@ -357,7 +353,6 @@ archive/issue_comments_081310.json:
 
 A trivial point. When uncompressed, Tim's updated spkg has this name:
 
-
 ```sh
 [mvngu@sage sagenb]$ ls
 sagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg
@@ -366,7 +361,6 @@ sagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg
 sagenb-0.7.2.spkg    sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg
 sagenb-0.7.5.1.spkg  sagenb-0.8
 ```
-
 
 Notice the directory name `sagenb-0.8`. It should be `sagenb-0.8.p2`. An updated package with directory name conforming to the Developer's Guide is available at
 

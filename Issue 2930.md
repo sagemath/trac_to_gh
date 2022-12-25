@@ -69,7 +69,7 @@ Changing status from new to assigned.
 archive/issue_comments_020133.json:
 ```json
 {
-    "body": "Not even close:\n\n```\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element_generic.py # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx # 7 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/power_series_ring_element.pyx # 9 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/complex_double.pyx # 21 doctests failed\n        sage -t -long devel/sage/sage/modules/free_module.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/numerical.py # 12 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 8 doctests failed\n        sage -t -long devel/sage/sage/misc/functional.py # 2 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_real_double_dense.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_complex_double_dense.pyx # 26 doctests failed\n        sage -t -long devel/sage/sage/matrix/constructor.py # 1 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix2.pyx # 7 doctests failed\n        sage -t -long devel/sage/sage/interfaces/phc.py # 2 doctests failed\n        sage -t -long devel/sage/sage/functions/orthogonal_polys.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/functions.py # 2 doctests failed\n        sage -t -long devel/doc/const/const.tex # 1 doctests failed\n        sage -t -long devel/sage/sage/calculus/calculus.py # 9 doctests failed\n```\n\n\nBack to the drawing board ;)\n\nCheers,\n\nMichael",
+    "body": "Not even close:\n\n```\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element_generic.py # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx # 7 doctests failed\n        sage -t -long devel/sage/sage/rings/real_double.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/power_series_ring_element.pyx # 9 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/complex_double.pyx # 21 doctests failed\n        sage -t -long devel/sage/sage/modules/free_module.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/numerical.py # 12 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 8 doctests failed\n        sage -t -long devel/sage/sage/misc/functional.py # 2 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_real_double_dense.pyx # 4 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_complex_double_dense.pyx # 26 doctests failed\n        sage -t -long devel/sage/sage/matrix/constructor.py # 1 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix2.pyx # 7 doctests failed\n        sage -t -long devel/sage/sage/interfaces/phc.py # 2 doctests failed\n        sage -t -long devel/sage/sage/functions/orthogonal_polys.py # 1 doctests failed\n        sage -t -long devel/sage/sage/functions/functions.py # 2 doctests failed\n        sage -t -long devel/doc/const/const.tex # 1 doctests failed\n        sage -t -long devel/sage/sage/calculus/calculus.py # 9 doctests failed\n```\n\nBack to the drawing board ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-04-15T07:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ Not even close:
         sage -t -long devel/doc/const/const.tex # 1 doctests failed
         sage -t -long devel/sage/sage/calculus/calculus.py # 9 doctests failed
 ```
-
 
 Back to the drawing board ;)
 
@@ -181,7 +180,7 @@ The ticket is still valid, but I don't think this patch (if it even passed test)
 archive/issue_comments_020137.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n\nHi,\n\n> Thanks for pinging me. Yes, I've put some thought into making generic pools, just haven't had the time to actually implement anything. \n\n:)\n \n> The ticket is still valid, but I don't think this patch (if it even passed test) is the way to go. \n\nI have created a wish list ticket at #4673 so we have a clean start and something more generic, i.e. the ticket is about creating the infrastructure. Once that is there we can add tickets for the classes that have not been converted. \n\nAs a consequence I am invalidating this ticket.\n\n> - Robert\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 robertwb]:\n\nHi,\n\n> Thanks for pinging me. Yes, I've put some thought into making generic pools, just haven't had the time to actually implement anything. \n\n\n:)\n \n> The ticket is still valid, but I don't think this patch (if it even passed test) is the way to go. \n\n\nI have created a wish list ticket at #4673 so we have a clean start and something more generic, i.e. the ticket is about creating the infrastructure. Once that is there we can add tickets for the classes that have not been converted. \n\nAs a consequence I am invalidating this ticket.\n\n> - Robert\n\n\nCheers,\n\nMichael",
     "created_at": "2008-12-02T13:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2930",
     "type": "issue_comment",
@@ -196,15 +195,18 @@ Hi,
 
 > Thanks for pinging me. Yes, I've put some thought into making generic pools, just haven't had the time to actually implement anything. 
 
+
 :)
  
 > The ticket is still valid, but I don't think this patch (if it even passed test) is the way to go. 
+
 
 I have created a wish list ticket at #4673 so we have a clean start and something more generic, i.e. the ticket is about creating the infrastructure. Once that is there we can add tickets for the classes that have not been converted. 
 
 As a consequence I am invalidating this ticket.
 
 > - Robert
+
 
 Cheers,
 

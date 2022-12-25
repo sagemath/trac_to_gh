@@ -3,7 +3,7 @@
 archive/issues_009191.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\n\nNote that .pyx files work fine:\n\n\n```\nflat:x wstein$ cp a.spyx a.pyx\nflat:x wstein$ sage a.pyx\nhello\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
+    "body": "Assignee: @jasongrout\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\nNote that .pyx files work fine:\n\n```\nflat:x wstein$ cp a.spyx a.pyx\nflat:x wstein$ sage a.pyx\nhello\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
     "created_at": "2010-06-09T02:02:52Z",
     "labels": [
         "component: misc",
@@ -25,7 +25,6 @@ flat:tmp wstein$ cat a.spyx
 print "hello"
 ```
 
-
 We have:
 
 ```
@@ -36,16 +35,13 @@ Traceback (most recent call last):
 ImportError: cannot import name load_sagex
 ```
 
-
 Note that .pyx files work fine:
-
 
 ```
 flat:x wstein$ cp a.spyx a.pyx
 flat:x wstein$ sage a.pyx
 hello
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9191
 
@@ -58,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9191
 archive/issue_comments_085855.json:
 ```json
 {
-    "body": "Well, no surprise!\n\n```\nsage: sage.misc.interpreter.loa[tab]\nsage.misc.interpreter.load_a_file\nsage.misc.interpreter.load_cython\nsage.misc.interpreter.load_startup_file\nsage.misc.interpreter.load_wrap\n```\n\nThis is a very easy fix, as it turns out.  I haven't got a clue how to doctest it, though.",
+    "body": "Well, no surprise!\n\n```\nsage: sage.misc.interpreter.loa[tab]\nsage.misc.interpreter.load_a_file\nsage.misc.interpreter.load_cython\nsage.misc.interpreter.load_startup_file\nsage.misc.interpreter.load_wrap\n```\nThis is a very easy fix, as it turns out.  I haven't got a clue how to doctest it, though.",
     "created_at": "2012-09-25T19:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -76,7 +72,6 @@ sage.misc.interpreter.load_cython
 sage.misc.interpreter.load_startup_file
 sage.misc.interpreter.load_wrap
 ```
-
 This is a very easy fix, as it turns out.  I haven't got a clue how to doctest it, though.
 
 
@@ -86,7 +81,7 @@ This is a very easy fix, as it turns out.  I haven't got a clue how to doctest i
 archive/issue_comments_085856.json:
 ```json
 {
-    "body": "\n```\nGC04855:sage-5.4.beta1-again $ ./sage a.spyx \nCompiling a.spyx...\nhello\n```\n\nIt works.  Needs review.",
+    "body": "```\nGC04855:sage-5.4.beta1-again $ ./sage a.spyx \nCompiling a.spyx...\nhello\n```\nIt works.  Needs review.",
     "created_at": "2012-09-25T19:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -95,13 +90,11 @@ archive/issue_comments_085856.json:
 }
 ```
 
-
 ```
 GC04855:sage-5.4.beta1-again $ ./sage a.spyx 
 Compiling a.spyx...
 hello
 ```
-
 It works.  Needs review.
 
 
@@ -149,7 +142,7 @@ I expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cyt
 archive/issue_comments_085859.json:
 ```json
 {
-    "body": "Wow, nice work!  Very minor concerns below.\n\n----\n\nI'm a little concerned about why .pyx files worked before anyway.  Did it just make it to the \n\n```\nos.execv(os.path.join(binpath, 'sage-python'), ['sage-python', fn] + opts)\n```\n\nline and `sage -python` (which is all `sage-python` is) just knew what to do with it?  And this is better for some reason for pyx files, right?\n\nAlso, any reason for making the messages print to stderr when they aren't errors?  As well as for changing things to the 'new' print statements?  I guess you did the work so I shouldn't complain :) but it always means I worry about missing some small detail.\n\nFinally, if you're going to add pyx files to those which this command does, you should probably add a testing part to the doctest patch for that as well...",
+    "body": "Wow, nice work!  Very minor concerns below.\n\n---\n\nI'm a little concerned about why .pyx files worked before anyway.  Did it just make it to the \n\n```\nos.execv(os.path.join(binpath, 'sage-python'), ['sage-python', fn] + opts)\n```\nline and `sage -python` (which is all `sage-python` is) just knew what to do with it?  And this is better for some reason for pyx files, right?\n\nAlso, any reason for making the messages print to stderr when they aren't errors?  As well as for changing things to the 'new' print statements?  I guess you did the work so I shouldn't complain :) but it always means I worry about missing some small detail.\n\nFinally, if you're going to add pyx files to those which this command does, you should probably add a testing part to the doctest patch for that as well...",
     "created_at": "2012-09-27T15:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -160,14 +153,13 @@ archive/issue_comments_085859.json:
 
 Wow, nice work!  Very minor concerns below.
 
-----
+---
 
 I'm a little concerned about why .pyx files worked before anyway.  Did it just make it to the 
 
 ```
 os.execv(os.path.join(binpath, 'sage-python'), ['sage-python', fn] + opts)
 ```
-
 line and `sage -python` (which is all `sage-python` is) just knew what to do with it?  And this is better for some reason for pyx files, right?
 
 Also, any reason for making the messages print to stderr when they aren't errors?  As well as for changing things to the 'new' print statements?  I guess you did the work so I shouldn't complain :) but it always means I worry about missing some small detail.
@@ -181,7 +173,7 @@ Finally, if you're going to add pyx files to those which this command does, you 
 archive/issue_comments_085860.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> I'm a little concerned about why .pyx files worked before anyway.\nThey worked only because they were treated as plain Python files.  No Cython was involved.  Treating them like `.spyx` files is the logical thing to do.\n\n> Also, any reason for making the messages print to stderr when they aren't errors?\nThese kind of diagnostic messages are often printed to `stderr` in Unix-land.  For example, `gcc -v` will output what it's doing to `stderr`.  This makes it much easier to use the output of the script non-interactively: if I want to run a `.spyx` file in a shell script, I have to manually remove the \"Compiling...\" line if its output to `stdout`.\n\nI'm happy with simply removing the \"Compiling...\" line also.\n\n> As well as for changing things to the 'new' print statements?\nI really dislike the\n\n```\nprint >>file\n```\n\nsyntax in Python 2.  Besides, it doesn't hurt to be more compatible with Python 3.\n\n> Finally, if you're going to add pyx files to those which this command does, you should probably add a testing part to the doctest patch for that as well...\nI'm not sure, because running `.pyx` files from the command line is not documented.  The documentation suggests using `.spyx` files, not `.pyx` files.",
+    "body": "Replying to [comment:6 kcrisman]:\n> I'm a little concerned about why .pyx files worked before anyway.\n\nThey worked only because they were treated as plain Python files.  No Cython was involved.  Treating them like `.spyx` files is the logical thing to do.\n\n> Also, any reason for making the messages print to stderr when they aren't errors?\n\nThese kind of diagnostic messages are often printed to `stderr` in Unix-land.  For example, `gcc -v` will output what it's doing to `stderr`.  This makes it much easier to use the output of the script non-interactively: if I want to run a `.spyx` file in a shell script, I have to manually remove the \"Compiling...\" line if its output to `stdout`.\n\nI'm happy with simply removing the \"Compiling...\" line also.\n\n> As well as for changing things to the 'new' print statements?\n\nI really dislike the\n\n```\nprint >>file\n```\nsyntax in Python 2.  Besides, it doesn't hurt to be more compatible with Python 3.\n\n> Finally, if you're going to add pyx files to those which this command does, you should probably add a testing part to the doctest patch for that as well...\n\nI'm not sure, because running `.pyx` files from the command line is not documented.  The documentation suggests using `.spyx` files, not `.pyx` files.",
     "created_at": "2012-09-27T16:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -192,23 +184,26 @@ archive/issue_comments_085860.json:
 
 Replying to [comment:6 kcrisman]:
 > I'm a little concerned about why .pyx files worked before anyway.
+
 They worked only because they were treated as plain Python files.  No Cython was involved.  Treating them like `.spyx` files is the logical thing to do.
 
 > Also, any reason for making the messages print to stderr when they aren't errors?
+
 These kind of diagnostic messages are often printed to `stderr` in Unix-land.  For example, `gcc -v` will output what it's doing to `stderr`.  This makes it much easier to use the output of the script non-interactively: if I want to run a `.spyx` file in a shell script, I have to manually remove the "Compiling..." line if its output to `stdout`.
 
 I'm happy with simply removing the "Compiling..." line also.
 
 > As well as for changing things to the 'new' print statements?
+
 I really dislike the
 
 ```
 print >>file
 ```
-
 syntax in Python 2.  Besides, it doesn't hurt to be more compatible with Python 3.
 
 > Finally, if you're going to add pyx files to those which this command does, you should probably add a testing part to the doctest patch for that as well...
+
 I'm not sure, because running `.pyx` files from the command line is not documented.  The documentation suggests using `.spyx` files, not `.pyx` files.
 
 
@@ -256,7 +251,7 @@ Somewhat ironically, the second patch doesn't apply to Sage 5.4.beta2.  Does thi
 archive/issue_comments_085863.json:
 ```json
 {
-    "body": "In fact, I guess this patch *must* be based on this assumption, given that all the spyx doctest in cmdline.py has no optional gcc!  Modulo that issue, this is fine, so putting positive review and sage-pending.\n\n----\n\nOn a separate issue, I'm now convinced that gcc doctests shouldn't be optional - reporting further at #12446 where at least one of these showed up.",
+    "body": "In fact, I guess this patch *must* be based on this assumption, given that all the spyx doctest in cmdline.py has no optional gcc!  Modulo that issue, this is fine, so putting positive review and sage-pending.\n\n---\n\nOn a separate issue, I'm now convinced that gcc doctests shouldn't be optional - reporting further at #12446 where at least one of these showed up.",
     "created_at": "2012-09-28T18:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -267,7 +262,7 @@ archive/issue_comments_085863.json:
 
 In fact, I guess this patch *must* be based on this assumption, given that all the spyx doctest in cmdline.py has no optional gcc!  Modulo that issue, this is fine, so putting positive review and sage-pending.
 
-----
+---
 
 On a separate issue, I'm now convinced that gcc doctests shouldn't be optional - reporting further at #12446 where at least one of these showed up.
 
@@ -365,7 +360,7 @@ Or, if #13540 comes in, then I guess we could use the other patch.  I'm putting 
 archive/issue_comments_085866.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> Somewhat ironically, the second patch doesn't apply to Sage 5.4.beta2.  Does this depend on the patch which does or does not remove gcc optional from Sage?\nYou're right, I developed it on top of #13533.",
+    "body": "Replying to [comment:10 kcrisman]:\n> Somewhat ironically, the second patch doesn't apply to Sage 5.4.beta2.  Does this depend on the patch which does or does not remove gcc optional from Sage?\n\nYou're right, I developed it on top of #13533.",
     "created_at": "2012-09-28T20:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
@@ -376,6 +371,7 @@ archive/issue_comments_085866.json:
 
 Replying to [comment:10 kcrisman]:
 > Somewhat ironically, the second patch doesn't apply to Sage 5.4.beta2.  Does this depend on the patch which does or does not remove gcc optional from Sage?
+
 You're right, I developed it on top of #13533.
 
 

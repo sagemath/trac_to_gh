@@ -106,7 +106,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094945.json:
 ```json
 {
-    "body": "Running doctests over `rc4.py` fails with message:\n\n```sh\n[mvngu@sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py \nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n**********************************************************************\nError: TAB character found.\n\n\t [1.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"\nTotal time for all tests: 1.9 seconds\n```\n\nThis patch needs a lot of work.",
+    "body": "Running doctests over `rc4.py` fails with message:\n\n```sh\n[mvngu@sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py \nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n**********************************************************************\nError: TAB character found.\n\n\t [1.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"\nTotal time for all tests: 1.9 seconds\n```\nThis patch needs a lot of work.",
     "created_at": "2010-08-14T12:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
@@ -132,7 +132,6 @@ The following tests failed:
 	sage -t -long "devel/sage-main/sage/crypto/rc4.py"
 Total time for all tests: 1.9 seconds
 ```
-
 This patch needs a lot of work.
 
 
@@ -142,7 +141,7 @@ This patch needs a lot of work.
 archive/issue_comments_094946.json:
 ```json
 {
-    "body": "Attaching a modified patch which passed all doctests successfully. Also added some sanity checks for types of inputs. \n\nApply rc4_mod1.patch directly (not over rc4.patch).\n\n\n\n```\nsourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py\nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n\t [6.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.7 seconds\nsourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py\nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n\t [6.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.7 seconds\n```\n",
+    "body": "Attaching a modified patch which passed all doctests successfully. Also added some sanity checks for types of inputs. \n\nApply rc4_mod1.patch directly (not over rc4.patch).\n\n\n```\nsourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py\nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n\t [6.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.7 seconds\nsourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py\nsage -t -long \"devel/sage-main/sage/crypto/rc4.py\"          \n\t [6.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.7 seconds\n```",
     "created_at": "2010-08-16T08:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
@@ -156,7 +155,6 @@ Attaching a modified patch which passed all doctests successfully. Also added so
 Apply rc4_mod1.patch directly (not over rc4.patch).
 
 
-
 ```
 sourav@ssg:~/sage4.5$ ./sage -t -long devel/sage-main/sage/crypto/rc4.py
 sage -t -long "devel/sage-main/sage/crypto/rc4.py"          
@@ -173,7 +171,6 @@ sage -t -long "devel/sage-main/sage/crypto/rc4.py"
 All tests passed!
 Total time for all tests: 6.7 seconds
 ```
-
 
 
 

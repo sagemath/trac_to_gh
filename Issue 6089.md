@@ -3,7 +3,7 @@
 archive/issues_006089.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nThe attached patch provides a way to not always use jsMath when rendering LaTeX for the 'view' command in the notebook.  It works by looking for certain strings in the latex code for the object, and if it finds them, it creates and displays a png file, bypassing jsMath altogether.  The \"certain strings\" are stored in a list which is initially empty, but can be populated by using\n\n```\nlatex.jsmath_avoid_list(...)\n```\n\nor\n\n```\nlatex.add_to_jsmath_avoid_list(...)\n```\n\nTo test it out, for example: in a notebook cell, try\n\n```\nclass bozo(SageObject):\n    def __init__(self):\n        pass\n    def _latex_(self):\n        return r\"\"\"\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\"\"\"\n```\n \nThen the latex string for instances of this class contains commands that jsMath can't handle, and indeed, `view(bozo())` ought to produce a typical jsMath error: a little box saying `Unknown environment \"pspicture\"`.  Then do\n\n```\nlatex.add_to_jsmath_avoid_list(\"pspicture\")\n```\n\nand try viewing again; it ought to pop up a pstricks picture.  It's a little slow, but I think we may have to live with that.\n\nTo the graph theorists: You ought to be able to do the same thing with graphs, as long as `'\\\\usepackage{tkz-graph}'` has been added to the latex preamble.  If you're doing that automatically, then you could also add an entry to `jsmath_avoid_list`...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6089\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nThe attached patch provides a way to not always use jsMath when rendering LaTeX for the 'view' command in the notebook.  It works by looking for certain strings in the latex code for the object, and if it finds them, it creates and displays a png file, bypassing jsMath altogether.  The \"certain strings\" are stored in a list which is initially empty, but can be populated by using\n\n```\nlatex.jsmath_avoid_list(...)\n```\nor\n\n```\nlatex.add_to_jsmath_avoid_list(...)\n```\nTo test it out, for example: in a notebook cell, try\n\n```\nclass bozo(SageObject):\n    def __init__(self):\n        pass\n    def _latex_(self):\n        return r\"\"\"\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\"\"\"\n``` \nThen the latex string for instances of this class contains commands that jsMath can't handle, and indeed, `view(bozo())` ought to produce a typical jsMath error: a little box saying `Unknown environment \"pspicture\"`.  Then do\n\n```\nlatex.add_to_jsmath_avoid_list(\"pspicture\")\n```\nand try viewing again; it ought to pop up a pstricks picture.  It's a little slow, but I think we may have to live with that.\n\nTo the graph theorists: You ought to be able to do the same thing with graphs, as long as `'\\\\usepackage{tkz-graph}'` has been added to the latex preamble.  If you're doing that automatically, then you could also add an entry to `jsmath_avoid_list`...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6089\n\n",
     "created_at": "2009-05-20T03:40:23Z",
     "labels": [
         "component: misc",
@@ -25,13 +25,11 @@ The attached patch provides a way to not always use jsMath when rendering LaTeX 
 ```
 latex.jsmath_avoid_list(...)
 ```
-
 or
 
 ```
 latex.add_to_jsmath_avoid_list(...)
 ```
-
 To test it out, for example: in a notebook cell, try
 
 ```
@@ -52,14 +50,12 @@ class bozo(SageObject):
   \psarc{-}(5,0){0.6}{270}{292}
   \psarc{-}(5,0){3.2}{270}{290}
 \end{pspicture}"""
-```
- 
+``` 
 Then the latex string for instances of this class contains commands that jsMath can't handle, and indeed, `view(bozo())` ought to produce a typical jsMath error: a little box saying `Unknown environment "pspicture"`.  Then do
 
 ```
 latex.add_to_jsmath_avoid_list("pspicture")
 ```
-
 and try viewing again; it ought to pop up a pstricks picture.  It's a little slow, but I think we may have to live with that.
 
 To the graph theorists: You ought to be able to do the same thing with graphs, as long as `'\\usepackage{tkz-graph}'` has been added to the latex preamble.  If you're doing that automatically, then you could also add an entry to `jsmath_avoid_list`...
@@ -75,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6089
 archive/issue_comments_048414.json:
 ```json
 {
-    "body": "I've just posted a new version of the patch.  The only difference (aside from fixing a few typos) is the addition of a 'latex_examples' class at the bottom of the file.  This provides people (like me) with a handful of  ready-made examples of objects with interesting `_latex_` methods, for testing with 'view', the typeset button, etc.  This class is not imported into the global name space, so you need to access it with\n\n```\nsage: from sage.misc.latex import latex_examples\nsage: G = latex_examples.graph()\nsage: view(G)\n```\n\netc.\n\nOf course, the typeset button won't handle any of these yet, but I have hope that there may be a solution some day...",
+    "body": "I've just posted a new version of the patch.  The only difference (aside from fixing a few typos) is the addition of a 'latex_examples' class at the bottom of the file.  This provides people (like me) with a handful of  ready-made examples of objects with interesting `_latex_` methods, for testing with 'view', the typeset button, etc.  This class is not imported into the global name space, so you need to access it with\n\n```\nsage: from sage.misc.latex import latex_examples\nsage: G = latex_examples.graph()\nsage: view(G)\n```\netc.\n\nOf course, the typeset button won't handle any of these yet, but I have hope that there may be a solution some day...",
     "created_at": "2009-05-21T05:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -91,7 +87,6 @@ sage: from sage.misc.latex import latex_examples
 sage: G = latex_examples.graph()
 sage: view(G)
 ```
-
 etc.
 
 Of course, the typeset button won't handle any of these yet, but I have hope that there may be a solution some day...
@@ -151,7 +146,7 @@ I think (3) is easy and should probably be adjusted, (1) feels a bit like an err
 archive/issue_comments_048417.json:
 ```json
 {
-    "body": "I'm not sure I agree with point 1, because I think it's asking Sage to be smarter than LaTeX about processing LaTeX.  If you can't use xdvi or evince to view a file outside of Sage, why should you expect Sage to do a better job?  We can certainly rewrite the descriptions of the latex_examples saying that there might be rendering problems depending on how the system is set up, and perhaps setting pdflatex=True would do a better job.  Would that be good enough?\n\nFor point 2, I'm not sure what do to.  First, it seems that in the notebook, view is rather broken: running\n\n```\nview([ZZ[x], RR, CC])\n```\n\nproduces\n\n```\n[Univariate Polynomial Ring in x over Integer Ring, Real Field with 53 bits of precision, Complex Field with 53 bits of precision]\n```\n\ntypeset by jsMath as if in math mode, so there are no spaces between words.  It's terrible.  Since view works fine on single objects, I can put in a small change which fixes this and would change the output to \n\n```\nZ[x]\nR\nC\n```\n\n(with the appropriate letters in bold face).  Notice: no brackets any more, and this is consistent with how it works in the command line. This will also work, sort of, with jsmath-avoidance: each object in a list will be typeset separately, so you only get pictures when you need them.  However, the pictures always appear at the end, and this might just be how the notebook displays things: text first followed by pictures.  Therefore\n\n```\nview([ZZ[x], latex_examples.knot(), RR, CC])\n```\n\nwill produce\n\n```\nZ[x]\nR\nC\n```\n\nand then a picture of the knot.  Is this good enough?  Maybe we can add a place-holder \"picture below\", or something like that.  I'll keep investigating, but we may not have a good solution here.\n\nI completely agree about point 3.  This is actually innocuous with jsmath_avoid (except for speed issues, I guess), but could lead to errors with the preamble or macros: if you repeat the same newcommand, it produces a latex error, which would probably make the typesetting fail.",
+    "body": "I'm not sure I agree with point 1, because I think it's asking Sage to be smarter than LaTeX about processing LaTeX.  If you can't use xdvi or evince to view a file outside of Sage, why should you expect Sage to do a better job?  We can certainly rewrite the descriptions of the latex_examples saying that there might be rendering problems depending on how the system is set up, and perhaps setting pdflatex=True would do a better job.  Would that be good enough?\n\nFor point 2, I'm not sure what do to.  First, it seems that in the notebook, view is rather broken: running\n\n```\nview([ZZ[x], RR, CC])\n```\nproduces\n\n```\n[Univariate Polynomial Ring in x over Integer Ring, Real Field with 53 bits of precision, Complex Field with 53 bits of precision]\n```\ntypeset by jsMath as if in math mode, so there are no spaces between words.  It's terrible.  Since view works fine on single objects, I can put in a small change which fixes this and would change the output to \n\n```\nZ[x]\nR\nC\n```\n(with the appropriate letters in bold face).  Notice: no brackets any more, and this is consistent with how it works in the command line. This will also work, sort of, with jsmath-avoidance: each object in a list will be typeset separately, so you only get pictures when you need them.  However, the pictures always appear at the end, and this might just be how the notebook displays things: text first followed by pictures.  Therefore\n\n```\nview([ZZ[x], latex_examples.knot(), RR, CC])\n```\nwill produce\n\n```\nZ[x]\nR\nC\n```\nand then a picture of the knot.  Is this good enough?  Maybe we can add a place-holder \"picture below\", or something like that.  I'll keep investigating, but we may not have a good solution here.\n\nI completely agree about point 3.  This is actually innocuous with jsmath_avoid (except for speed issues, I guess), but could lead to errors with the preamble or macros: if you repeat the same newcommand, it produces a latex error, which would probably make the typesetting fail.",
     "created_at": "2009-05-22T19:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -167,13 +162,11 @@ For point 2, I'm not sure what do to.  First, it seems that in the notebook, vie
 ```
 view([ZZ[x], RR, CC])
 ```
-
 produces
 
 ```
 [Univariate Polynomial Ring in x over Integer Ring, Real Field with 53 bits of precision, Complex Field with 53 bits of precision]
 ```
-
 typeset by jsMath as if in math mode, so there are no spaces between words.  It's terrible.  Since view works fine on single objects, I can put in a small change which fixes this and would change the output to 
 
 ```
@@ -181,13 +174,11 @@ Z[x]
 R
 C
 ```
-
 (with the appropriate letters in bold face).  Notice: no brackets any more, and this is consistent with how it works in the command line. This will also work, sort of, with jsmath-avoidance: each object in a list will be typeset separately, so you only get pictures when you need them.  However, the pictures always appear at the end, and this might just be how the notebook displays things: text first followed by pictures.  Therefore
 
 ```
 view([ZZ[x], latex_examples.knot(), RR, CC])
 ```
-
 will produce
 
 ```
@@ -195,7 +186,6 @@ Z[x]
 R
 C
 ```
-
 and then a picture of the knot.  Is this good enough?  Maybe we can add a place-holder "picture below", or something like that.  I'll keep investigating, but we may not have a good solution here.
 
 I completely agree about point 3.  This is actually innocuous with jsmath_avoid (except for speed issues, I guess), but could lead to errors with the preamble or macros: if you repeat the same newcommand, it produces a latex error, which would probably make the typesetting fail.
@@ -269,7 +259,7 @@ By the way, re running pdflatex instead of latex: note that some packages like p
 archive/issue_comments_048420.json:
 ```json
 {
-    "body": "This should also work with the \"Typeset\" box checked: if you do \n\n```\nG = latex_examples.graph()\n```\n\nand add the appropriate strings to the preamble and the jsmath_avoid_list, then clicking the Typeset box and evaluating G should produce a pretty picture.",
+    "body": "This should also work with the \"Typeset\" box checked: if you do \n\n```\nG = latex_examples.graph()\n```\nand add the appropriate strings to the preamble and the jsmath_avoid_list, then clicking the Typeset box and evaluating G should produce a pretty picture.",
     "created_at": "2009-05-23T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -283,7 +273,6 @@ This should also work with the "Typeset" box checked: if you do
 ```
 G = latex_examples.graph()
 ```
-
 and add the appropriate strings to the preamble and the jsmath_avoid_list, then clicking the Typeset box and evaluating G should produce a pretty picture.
 
 
@@ -393,7 +382,7 @@ Never mind about switches: the images are big because they include the page numb
 archive/issue_comments_048425.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> Never mind about switches: the images are big because they include the page numbers.  Use \\pagestyle{empty} at the beginning of the document.\n\nOK, that makes sense.  Sorry about that one.\n\nI'll experiment some more with the `x^2` problem and see if I can isolate it better (or make it go away).",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Never mind about switches: the images are big because they include the page numbers.  Use \\pagestyle{empty} at the beginning of the document.\n\n\nOK, that makes sense.  Sorry about that one.\n\nI'll experiment some more with the `x^2` problem and see if I can isolate it better (or make it go away).",
     "created_at": "2009-05-24T03:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -404,6 +393,7 @@ archive/issue_comments_048425.json:
 
 Replying to [comment:9 jhpalmieri]:
 > Never mind about switches: the images are big because they include the page numbers.  Use \pagestyle{empty} at the beginning of the document.
+
 
 OK, that makes sense.  Sorry about that one.
 
@@ -456,7 +446,7 @@ Does this work for you from the command line with the graph example?  I think it
 archive/issue_comments_048428.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> Does this work for you from the command line with the graph example?  I think it still needs some tinkering there.  For one thing, the 'view' command should not bomb if the user doesn't have dvipng or convert -- it should try to work just with latex or pdflatex.  I'll post a new patch soon.\n\nAt the command line, where `g` is the graph example, `view(g)` produces a DVI, which xdvi can only partially display - the curved edges are missing for starters.  `view(g, pdflatex=True)` builds a PDF which is fine.\n\nI have not experimented with the scenarios where some of the tools (like convert) are missing, but can try those cases against the next patch.",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> Does this work for you from the command line with the graph example?  I think it still needs some tinkering there.  For one thing, the 'view' command should not bomb if the user doesn't have dvipng or convert -- it should try to work just with latex or pdflatex.  I'll post a new patch soon.\n\n\nAt the command line, where `g` is the graph example, `view(g)` produces a DVI, which xdvi can only partially display - the curved edges are missing for starters.  `view(g, pdflatex=True)` builds a PDF which is fine.\n\nI have not experimented with the scenarios where some of the tools (like convert) are missing, but can try those cases against the next patch.",
     "created_at": "2009-05-24T17:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -467,6 +457,7 @@ archive/issue_comments_048428.json:
 
 Replying to [comment:12 jhpalmieri]:
 > Does this work for you from the command line with the graph example?  I think it still needs some tinkering there.  For one thing, the 'view' command should not bomb if the user doesn't have dvipng or convert -- it should try to work just with latex or pdflatex.  I'll post a new patch soon.
+
 
 At the command line, where `g` is the graph example, `view(g)` produces a DVI, which xdvi can only partially display - the curved edges are missing for starters.  `view(g, pdflatex=True)` builds a PDF which is fine.
 
@@ -582,7 +573,7 @@ I found `_run_latex_on_file()` and `png()` a bit hard to follow.  I know you've 
 archive/issue_comments_048432.json:
 ```json
 {
-    "body": "Here's a new patch: avoid-jsmath-version4.patch.  I've also attached avoid-delta34.patch, which is the difference between version3 and version4, in case that makes refereeing any easier.  \n\nA summary of the changes: \n\n- I've added doctests to many of the functions in latex.py, so we're over 90% coverage now.  (For some reason, `sage -coverage` wasn't seeing the doctest for `pretty_print`, which is why I added \"# indirect doctest\" there.)\n\n- I made some of the reST cleaner and fancier (with cross-references, as described in #6226).\n\n- I reworked `_run_latex_` (which used to be called `_run_latex_on_file_`, which I decided was sort of redundant).  For me at least, this seems to behave right with the various combinations of the presence/absence of dvipng and convert.  I also added some comments so that the structure would be clearer. (I'm not sure what else you mean about it being hard to follow.) I think that running in the background might be problematic, but this is off by default anyway.\n\nAs far as the `view([k,g])` issue, that's purely a LaTeX thing: the code\n\n```\n\\[  <code for k>, <code for g> \\]\n```\n\ngets passed directly to LaTeX, and that's why the vertical spacing and the size of the brackets is the way it is.  Maybe we could modify the LaTeX code for either k or g to fix this, but since these are toy examples anyway, I don't think it's worth fixing.  My suggestion would instead be to either not view graphs or knots as members of lists, or write the `_latex_` methods for the real Sage objects so that they work well in this context.",
+    "body": "Here's a new patch: avoid-jsmath-version4.patch.  I've also attached avoid-delta34.patch, which is the difference between version3 and version4, in case that makes refereeing any easier.  \n\nA summary of the changes: \n\n- I've added doctests to many of the functions in latex.py, so we're over 90% coverage now.  (For some reason, `sage -coverage` wasn't seeing the doctest for `pretty_print`, which is why I added \"# indirect doctest\" there.)\n\n- I made some of the reST cleaner and fancier (with cross-references, as described in #6226).\n\n- I reworked `_run_latex_` (which used to be called `_run_latex_on_file_`, which I decided was sort of redundant).  For me at least, this seems to behave right with the various combinations of the presence/absence of dvipng and convert.  I also added some comments so that the structure would be clearer. (I'm not sure what else you mean about it being hard to follow.) I think that running in the background might be problematic, but this is off by default anyway.\n\nAs far as the `view([k,g])` issue, that's purely a LaTeX thing: the code\n\n```\n\\[  <code for k>, <code for g> \\]\n```\ngets passed directly to LaTeX, and that's why the vertical spacing and the size of the brackets is the way it is.  Maybe we could modify the LaTeX code for either k or g to fix this, but since these are toy examples anyway, I don't think it's worth fixing.  My suggestion would instead be to either not view graphs or knots as members of lists, or write the `_latex_` methods for the real Sage objects so that they work well in this context.",
     "created_at": "2009-06-08T04:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
@@ -606,7 +597,6 @@ As far as the `view([k,g])` issue, that's purely a LaTeX thing: the code
 ```
 \[  <code for k>, <code for g> \]
 ```
-
 gets passed directly to LaTeX, and that's why the vertical spacing and the size of the brackets is the way it is.  Maybe we could modify the LaTeX code for either k or g to fix this, but since these are toy examples anyway, I don't think it's worth fixing.  My suggestion would instead be to either not view graphs or knots as members of lists, or write the `_latex_` methods for the real Sage objects so that they work well in this context.
 
 

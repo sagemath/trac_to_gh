@@ -3,7 +3,7 @@
 archive/issues_004771.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe messages:\n\n```\n2008-12-12 10:56:37-0800 [HTTPChannel,53,24.143.70.101] Dumping admin history to 'sage_notebook/worksheets/admin/history.sobj'\n```\n\nthat the notebook prints out for no good reason should be deleted by commenting out the line in the notebook server code that prints them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4771\n\n",
+    "body": "Assignee: boothby\n\nThe messages:\n\n```\n2008-12-12 10:56:37-0800 [HTTPChannel,53,24.143.70.101] Dumping admin history to 'sage_notebook/worksheets/admin/history.sobj'\n```\nthat the notebook prints out for no good reason should be deleted by commenting out the line in the notebook server code that prints them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4771\n\n",
     "created_at": "2008-12-12T19:04:12Z",
     "labels": [
         "component: notebook",
@@ -24,7 +24,6 @@ The messages:
 ```
 2008-12-12 10:56:37-0800 [HTTPChannel,53,24.143.70.101] Dumping admin history to 'sage_notebook/worksheets/admin/history.sobj'
 ```
-
 that the notebook prints out for no good reason should be deleted by commenting out the line in the notebook server code that prints them.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4771

@@ -3,7 +3,7 @@
 archive/issues_002026.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn matrix2.pyx under eigenspaces():\n\n\n```\n        Next we compute the eigenspaces over the finite field\n        of order 11:\n        \n            sage: # A = ModularSymbols(43, base_ring=GF(11), sign=1).T(2).matrix()\n            sage: A = matrix(QQ, 4, [3, 9, 0, 0, 0, 9, 0, 1, 0, 10, 9, 2, 0, 9, 0, 2])\n```\n\n\nIt seems like the description should be deleted or the doctest should be run and the output included.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2026\n\n",
+    "body": "Assignee: @williamstein\n\nIn matrix2.pyx under eigenspaces():\n\n```\n        Next we compute the eigenspaces over the finite field\n        of order 11:\n        \n            sage: # A = ModularSymbols(43, base_ring=GF(11), sign=1).T(2).matrix()\n            sage: A = matrix(QQ, 4, [3, 9, 0, 0, 0, 9, 0, 1, 0, 10, 9, 2, 0, 9, 0, 2])\n```\n\nIt seems like the description should be deleted or the doctest should be run and the output included.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2026\n\n",
     "created_at": "2008-02-01T19:18:58Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 In matrix2.pyx under eigenspaces():
 
-
 ```
         Next we compute the eigenspaces over the finite field
         of order 11:
@@ -29,7 +28,6 @@ In matrix2.pyx under eigenspaces():
             sage: # A = ModularSymbols(43, base_ring=GF(11), sign=1).T(2).matrix()
             sage: A = matrix(QQ, 4, [3, 9, 0, 0, 0, 9, 0, 1, 0, 10, 9, 2, 0, 9, 0, 2])
 ```
-
 
 It seems like the description should be deleted or the doctest should be run and the output included.
 

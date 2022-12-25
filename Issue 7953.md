@@ -3,7 +3,7 @@
 archive/issues_007953.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nReported by Ronald van Luijk:\n\nThe `print C` below only prints the first defining equation.\n\n\n```\nsage: # problem printing\nsage: A.<x,y,z>=AffineSpace(QQ,3)\nsage: C=Curve([x-y,2-z])\nsage: print C\nAffine Space Curve over Rational Field defined by x - y\nsage: print C.defining_ideal()\nIdeal (x - y, -z + 2) of Multivariate Polynomial Ring in x, y, z over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7953\n\n",
+    "body": "Assignee: @aghitza\n\nReported by Ronald van Luijk:\n\nThe `print C` below only prints the first defining equation.\n\n```\nsage: # problem printing\nsage: A.<x,y,z>=AffineSpace(QQ,3)\nsage: C=Curve([x-y,2-z])\nsage: print C\nAffine Space Curve over Rational Field defined by x - y\nsage: print C.defining_ideal()\nIdeal (x - y, -z + 2) of Multivariate Polynomial Ring in x, y, z over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7953\n\n",
     "created_at": "2010-01-16T18:10:54Z",
     "labels": [
         "component: algebraic geometry",
@@ -22,7 +22,6 @@ Reported by Ronald van Luijk:
 
 The `print C` below only prints the first defining equation.
 
-
 ```
 sage: # problem printing
 sage: A.<x,y,z>=AffineSpace(QQ,3)
@@ -32,7 +31,6 @@ Affine Space Curve over Rational Field defined by x - y
 sage: print C.defining_ideal()
 Ideal (x - y, -z + 2) of Multivariate Polynomial Ring in x, y, z over Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7953
 

@@ -3,7 +3,7 @@
 archive/issues_003759.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nbsd:sage-3.1.alpha0 was$ ls\n0.png                   devel                   sage.png\n1.png                   doc                     sage0.png\n2.png                   docs-0.html             sage1.png\n3.png                   examples                sage2.png\n4.png                   install.log             sage3.png\n5.png                   ipython                 sage4.png\n6.png                   isogeny_graph.png       sage5.png\n7.png                   local                   sage6.png\n8.png                   makefile                search_tree.png\n9.png                   matplotlibrc            simon.db\nCOPYING.txt             sage                    spkg\nHISTORY.txt             sage-README-osx.txt     test.sobj\nREADME.txt              sage-python             testlong.log\na.png                   sage.db                 tmp\ndata                    sage.eps                tmp.sws\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3759\n\n",
+    "body": "Assignee: failure\n\n```\nbsd:sage-3.1.alpha0 was$ ls\n0.png                   devel                   sage.png\n1.png                   doc                     sage0.png\n2.png                   docs-0.html             sage1.png\n3.png                   examples                sage2.png\n4.png                   install.log             sage3.png\n5.png                   ipython                 sage4.png\n6.png                   isogeny_graph.png       sage5.png\n7.png                   local                   sage6.png\n8.png                   makefile                search_tree.png\n9.png                   matplotlibrc            simon.db\nCOPYING.txt             sage                    spkg\nHISTORY.txt             sage-README-osx.txt     test.sobj\nREADME.txt              sage-python             testlong.log\na.png                   sage.db                 tmp\ndata                    sage.eps                tmp.sws\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3759\n\n",
     "created_at": "2008-08-02T19:01:19Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_003759.json:
 }
 ```
 Assignee: failure
-
 
 ```
 bsd:sage-3.1.alpha0 was$ ls
@@ -38,7 +37,6 @@ README.txt              sage-python             testlong.log
 a.png                   sage.db                 tmp
 data                    sage.eps                tmp.sws
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3759
 

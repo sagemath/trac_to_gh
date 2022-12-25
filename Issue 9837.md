@@ -186,7 +186,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_096929.json:
 ```json
 {
-    "body": "> Please change the commit message of the patch trac_9838.patch (use hg qrefresh -e for that).\n\nDone. -Dan",
+    "body": "> Please change the commit message of the patch trac_9838.patch (use hg qrefresh -e for that).\n\n\nDone. -Dan",
     "created_at": "2010-10-26T15:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
@@ -196,6 +196,7 @@ archive/issue_comments_096929.json:
 ```
 
 > Please change the commit message of the patch trac_9838.patch (use hg qrefresh -e for that).
+
 
 Done. -Dan
 
@@ -224,7 +225,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_096931.json:
 ```json
 {
-    "body": "Replying to [comment:7 bump]:\n> Done. -Dan\n\nSorry, the ticket number should also be in the first line of the commit message.",
+    "body": "Replying to [comment:7 bump]:\n> Done. -Dan\n\n\nSorry, the ticket number should also be in the first line of the commit message.",
     "created_at": "2010-10-27T08:52:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
@@ -235,6 +236,7 @@ archive/issue_comments_096931.json:
 
 Replying to [comment:7 bump]:
 > Done. -Dan
+
 
 Sorry, the ticket number should also be in the first line of the commit message.
 
@@ -301,7 +303,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_096935.json:
 ```json
 {
-    "body": "> Sorry, the ticket number should also be in the first line of the commit message. \n\nDone.",
+    "body": "> Sorry, the ticket number should also be in the first line of the commit message. \n\n\nDone.",
     "created_at": "2010-10-27T16:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
@@ -311,6 +313,7 @@ archive/issue_comments_096935.json:
 ```
 
 > Sorry, the ticket number should also be in the first line of the commit message. 
+
 
 Done.
 
@@ -551,7 +554,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_096945.json:
 ```json
 {
-    "body": "Replying to [comment:13 bump]:\n> I don't think I can revert the fixed status: trac admin has to do that.\n\nDone.",
+    "body": "Replying to [comment:13 bump]:\n> I don't think I can revert the fixed status: trac admin has to do that.\n\n\nDone.",
     "created_at": "2010-11-04T11:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
@@ -562,6 +565,7 @@ archive/issue_comments_096945.json:
 
 Replying to [comment:13 bump]:
 > I don't think I can revert the fixed status: trac admin has to do that.
+
 
 Done.
 

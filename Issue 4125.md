@@ -3,7 +3,7 @@
 archive/issues_004125.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  dphilp\n\nThe Sage build process pulls in non-standard libraries if they are easily found.  Fink and MacPorts have a habit of making their libraries easily found, because they fiddle with $PATH, etc.  This sometimes means that the build fails, or works, but the resulting product is broken.  \n\nThe fix is simple: move /sw and /opt/local during the build process.  However, this is not at all obvious the first time.  This script runs a simple test to check whether fink or ports are likely to interfere, and gives a useful error message.\n\n\n```/bin/bash\n\n# Try to find ports automatically.\nPORTS_PATH=`which port`\n\n# Try to find fink automatically.\nFINK_PATH=`which fink`\n\nif [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ] ; then\n  echo \"Found either MacPorts or Fink in your path, which often prevents Sage from compiling.\"\n  if [ \"$SAGE_COMPILE_DESPITE_PORTS_AND_FINK\" ] ; then\n    echo \"Continuing because SAGE_COMPILE_DESPITE_PORTS_AND_FINK is set.\"\n  else\n    echo \"If you want to want to compile, you should rename /opt/local and /sw\"\n    echo \"during the build process.  (Once Sage is built, you can move them to\"\n    echo \"their original location.)\"\n    exit 1\n  fi\nfi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4125\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  dphilp\n\nThe Sage build process pulls in non-standard libraries if they are easily found.  Fink and MacPorts have a habit of making their libraries easily found, because they fiddle with $PATH, etc.  This sometimes means that the build fails, or works, but the resulting product is broken.  \n\nThe fix is simple: move /sw and /opt/local during the build process.  However, this is not at all obvious the first time.  This script runs a simple test to check whether fink or ports are likely to interfere, and gives a useful error message.\n\n```/bin/bash\n\n# Try to find ports automatically.\nPORTS_PATH=`which port`\n\n# Try to find fink automatically.\nFINK_PATH=`which fink`\n\nif [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ] ; then\n  echo \"Found either MacPorts or Fink in your path, which often prevents Sage from compiling.\"\n  if [ \"$SAGE_COMPILE_DESPITE_PORTS_AND_FINK\" ] ; then\n    echo \"Continuing because SAGE_COMPILE_DESPITE_PORTS_AND_FINK is set.\"\n  else\n    echo \"If you want to want to compile, you should rename /opt/local and /sw\"\n    echo \"during the build process.  (Once Sage is built, you can move them to\"\n    echo \"their original location.)\"\n    exit 1\n  fi\nfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4125\n\n",
     "created_at": "2008-09-15T01:53:19Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ The Sage build process pulls in non-standard libraries if they are easily found.
 
 The fix is simple: move /sw and /opt/local during the build process.  However, this is not at all obvious the first time.  This script runs a simple test to check whether fink or ports are likely to interfere, and gives a useful error message.
 
-
 ```/bin/bash
 
 # Try to find ports automatically.
@@ -46,7 +45,6 @@ if [ "$PORTS_PATH" -o "$FINK_PATH" ] ; then
   fi
 fi
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4125
 
@@ -312,7 +310,7 @@ Resolution: fixed
 archive/issue_comments_029855.json:
 ```json
 {
-    "body": "Replying to [comment:5 GeorgSWeber]:\n> Negative review, please revert the patch.\n> \n> It breaks age builds that otherwise went fine, thus is a \"false negative\", e.g. for mhampton as reported above, or for David Harvey, as reported in the sage-devel discussion \"macports\" on Oct. 5th., see there for more (negative) opinions.\n\nI do not care. This ticket resolves numerous problems where in the end after *much* debugging it turned out that either MacPorts or Fink was at fault. \n\n> On the other hand, the patch might has become superfluous by patch 4127, but that should be confirmed by others.\n\n\n> If not, probably it is best to enhance 4127 until that one works as desired.\n> \n> So please revert the patch of this ticket and then close the ticket as \"wont\", or better, as a \"doublette\" to 4127.\n\nThis patch will not be reverted.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 GeorgSWeber]:\n> Negative review, please revert the patch.\n> \n> It breaks age builds that otherwise went fine, thus is a \"false negative\", e.g. for mhampton as reported above, or for David Harvey, as reported in the sage-devel discussion \"macports\" on Oct. 5th., see there for more (negative) opinions.\n\n\nI do not care. This ticket resolves numerous problems where in the end after *much* debugging it turned out that either MacPorts or Fink was at fault. \n\n> On the other hand, the patch might has become superfluous by patch 4127, but that should be confirmed by others.\n\n\n\n> If not, probably it is best to enhance 4127 until that one works as desired.\n> \n> So please revert the patch of this ticket and then close the ticket as \"wont\", or better, as a \"doublette\" to 4127.\n\n\nThis patch will not be reverted.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T11:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4125",
     "type": "issue_comment",
@@ -326,14 +324,17 @@ Replying to [comment:5 GeorgSWeber]:
 > 
 > It breaks age builds that otherwise went fine, thus is a "false negative", e.g. for mhampton as reported above, or for David Harvey, as reported in the sage-devel discussion "macports" on Oct. 5th., see there for more (negative) opinions.
 
+
 I do not care. This ticket resolves numerous problems where in the end after *much* debugging it turned out that either MacPorts or Fink was at fault. 
 
 > On the other hand, the patch might has become superfluous by patch 4127, but that should be confirmed by others.
 
 
+
 > If not, probably it is best to enhance 4127 until that one works as desired.
 > 
 > So please revert the patch of this ticket and then close the ticket as "wont", or better, as a "doublette" to 4127.
+
 
 This patch will not be reverted.
 

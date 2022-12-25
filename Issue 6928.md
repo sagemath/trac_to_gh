@@ -145,7 +145,7 @@ Attachment [trac_6928-trac_spkg.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_057154.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Should we modify `server.trac.trac.trac_create_instance()` to use the Mercurial plug-in by default?  We would need to overwrite `conf/trac.ini`.  Triple-quote it?  Add a keyword option to `trac()`?\nThe [attachment:trac_6928-trac_spkg.patch patch] adds an `easy_setup` option that enables the webadmin and Mercurial plugins when creating a new Trac project.",
+    "body": "Replying to [comment:4 mpatel]:\n> Should we modify `server.trac.trac.trac_create_instance()` to use the Mercurial plug-in by default?  We would need to overwrite `conf/trac.ini`.  Triple-quote it?  Add a keyword option to `trac()`?\n\nThe [attachment:trac_6928-trac_spkg.patch patch] adds an `easy_setup` option that enables the webadmin and Mercurial plugins when creating a new Trac project.",
     "created_at": "2009-09-22T08:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_057154.json:
 
 Replying to [comment:4 mpatel]:
 > Should we modify `server.trac.trac.trac_create_instance()` to use the Mercurial plug-in by default?  We would need to overwrite `conf/trac.ini`.  Triple-quote it?  Add a keyword option to `trac()`?
+
 The [attachment:trac_6928-trac_spkg.patch patch] adds an `easy_setup` option that enables the webadmin and Mercurial plugins when creating a new Trac project.
 
 
@@ -210,7 +211,7 @@ More worthy(?) [plug-ins](http://trac-hacks.org/):
 archive/issue_comments_057157.json:
 ```json
 {
-    "body": "Replying to [comment:7 timdumol]:\n> Merges fine, doctests work well, and the package installs and works. Nice job. Postive review.\nThanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at\n\n* http://sage.math.washington.edu/home/mpatel/trac_labs/\n\nSee [README_config](http://sage.math.washington.edu/home/mpatel/trac_labs/README_config) for setup information.",
+    "body": "Replying to [comment:7 timdumol]:\n> Merges fine, doctests work well, and the package installs and works. Nice job. Postive review.\n\nThanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at\n\n* http://sage.math.washington.edu/home/mpatel/trac_labs/\n\nSee [README_config](http://sage.math.washington.edu/home/mpatel/trac_labs/README_config) for setup information.",
     "created_at": "2009-09-23T11:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
@@ -221,6 +222,7 @@ archive/issue_comments_057157.json:
 
 Replying to [comment:7 timdumol]:
 > Merges fine, doctests work well, and the package installs and works. Nice job. Postive review.
+
 Thanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at
 
 * http://sage.math.washington.edu/home/mpatel/trac_labs/
@@ -321,7 +323,7 @@ I put the spkg in the optional spkg repo and applied the patch in sage-4.2.alpha
 archive/issue_comments_057161.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n> Thanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at\n>  * http://sage.math.washington.edu/home/mpatel/trac_labs/\nMoved to http://sage.math.washington.edu/home/mpatel/projects/traclabs",
+    "body": "Replying to [comment:9 mpatel]:\n> Thanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at\n> * http://sage.math.washington.edu/home/mpatel/trac_labs/\n\nMoved to http://sage.math.washington.edu/home/mpatel/projects/traclabs",
     "created_at": "2009-10-16T10:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6928",
     "type": "issue_comment",
@@ -332,5 +334,6 @@ archive/issue_comments_057161.json:
 
 Replying to [comment:9 mpatel]:
 > Thanks!  In case there's interest...  There's a Sage Trac Labs demo with more than a few installed plug-ins at
->  * http://sage.math.washington.edu/home/mpatel/trac_labs/
+> * http://sage.math.washington.edu/home/mpatel/trac_labs/
+
 Moved to http://sage.math.washington.edu/home/mpatel/projects/traclabs

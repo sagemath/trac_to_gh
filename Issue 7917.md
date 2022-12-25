@@ -3,7 +3,7 @@
 archive/issues_007917.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rishikesha\n\nKeywords: dirichlet character gauss sum\n\nThis is a pretty small change. We add three lines to gauss_sum_numerical() to make it work when the base ring is a complex field, and change gauss_sum() to call gauss_sum_numerical() when the base ring is a complex field.\n\nNote that it is actually much faster to compute the (approximate) gauss sum when the base ring is CC, as compared to when the base ring is a cyclotomic field.\n\n\n\n```\nsage: G = DirichletGroup(2981)\nsage: chi = G.0\nsage: timeit('chi.gauss_sum_numerical()')\n5 loops, best of 3: 1.82 s per loop\nsage: G = DirichletGroup(2981, ComplexField(200))\nsage: chi = G.0                                  \nsage: timeit('chi.gauss_sum_numerical()')        \n25 loops, best of 3: 23.5 ms per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7917\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rishikesha\n\nKeywords: dirichlet character gauss sum\n\nThis is a pretty small change. We add three lines to gauss_sum_numerical() to make it work when the base ring is a complex field, and change gauss_sum() to call gauss_sum_numerical() when the base ring is a complex field.\n\nNote that it is actually much faster to compute the (approximate) gauss sum when the base ring is CC, as compared to when the base ring is a cyclotomic field.\n\n\n```\nsage: G = DirichletGroup(2981)\nsage: chi = G.0\nsage: timeit('chi.gauss_sum_numerical()')\n5 loops, best of 3: 1.82 s per loop\nsage: G = DirichletGroup(2981, ComplexField(200))\nsage: chi = G.0                                  \nsage: timeit('chi.gauss_sum_numerical()')        \n25 loops, best of 3: 23.5 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7917\n\n",
     "created_at": "2010-01-13T06:22:56Z",
     "labels": [
         "component: number theory"
@@ -26,7 +26,6 @@ This is a pretty small change. We add three lines to gauss_sum_numerical() to ma
 Note that it is actually much faster to compute the (approximate) gauss sum when the base ring is CC, as compared to when the base ring is a cyclotomic field.
 
 
-
 ```
 sage: G = DirichletGroup(2981)
 sage: chi = G.0
@@ -37,7 +36,6 @@ sage: chi = G.0
 sage: timeit('chi.gauss_sum_numerical()')        
 25 loops, best of 3: 23.5 ms per loop
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7917
@@ -240,7 +238,7 @@ archive/issue_events_018964.json:
 archive/issue_comments_068775.json:
 ```json
 {
-    "body": "This is superseded by #7191; I propose to close this as a duplicate.  There is only one small problem, namely that in the lines\n\n```python\nif rings.is_ComplexField(K):\n    return self.gauss_sum_numerical(a=a)\n```\n\nthe argument `a` was omitted in #7191.  This will be fixed in #19056.",
+    "body": "This is superseded by #7191; I propose to close this as a duplicate.  There is only one small problem, namely that in the lines\n\n```python\nif rings.is_ComplexField(K):\n    return self.gauss_sum_numerical(a=a)\n```\nthe argument `a` was omitted in #7191.  This will be fixed in #19056.",
     "created_at": "2015-08-19T14:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
@@ -255,7 +253,6 @@ This is superseded by #7191; I propose to close this as a duplicate.  There is o
 if rings.is_ComplexField(K):
     return self.gauss_sum_numerical(a=a)
 ```
-
 the argument `a` was omitted in #7191.  This will be fixed in #19056.
 
 

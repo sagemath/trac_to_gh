@@ -106,7 +106,7 @@ archive/issue_events_012771.json:
 archive/issue_comments_042340.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> This is a dupe of #5414 - even though the summary of that ticket doesn't make it obvious :(\n\n(#5414 is also filed under \"notebook\" -- I checked \"documentation\" and \"build\" looking for this kind of thing before creating the ticket.)\n\nFeel free to close this one.",
+    "body": "Replying to [comment:1 mabshoff]:\n> This is a dupe of #5414 - even though the summary of that ticket doesn't make it obvious :(\n\n\n(#5414 is also filed under \"notebook\" -- I checked \"documentation\" and \"build\" looking for this kind of thing before creating the ticket.)\n\nFeel free to close this one.",
     "created_at": "2009-03-10T14:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5464",
     "type": "issue_comment",
@@ -117,6 +117,7 @@ archive/issue_comments_042340.json:
 
 Replying to [comment:1 mabshoff]:
 > This is a dupe of #5414 - even though the summary of that ticket doesn't make it obvious :(
+
 
 (#5414 is also filed under "notebook" -- I checked "documentation" and "build" looking for this kind of thing before creating the ticket.)
 

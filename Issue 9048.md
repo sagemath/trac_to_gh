@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9048
 archive/issue_comments_083634.json:
 ```json
 {
-    "body": "Changed the title to identify the underlying issue.  Note that 1+2; also prints out something in the notebook, but not in the command line.\n\nMy guess is that it is a convention in ipython, since a semicolon does nothing in just plain python:\n\n\n```\n% sage -python\nPython 2.6.4 (r264:75706, May  6 2010, 23:38:46) \n[GCC 4.2.1 (Apple Inc. build 5659)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 1+2;\n3\n\n\n```\n",
+    "body": "Changed the title to identify the underlying issue.  Note that 1+2; also prints out something in the notebook, but not in the command line.\n\nMy guess is that it is a convention in ipython, since a semicolon does nothing in just plain python:\n\n```\n% sage -python\nPython 2.6.4 (r264:75706, May  6 2010, 23:38:46) \n[GCC 4.2.1 (Apple Inc. build 5659)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 1+2;\n3\n\n\n```",
     "created_at": "2010-05-26T03:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ Changed the title to identify the underlying issue.  Note that 1+2; also prints 
 
 My guess is that it is a convention in ipython, since a semicolon does nothing in just plain python:
 
-
 ```
 % sage -python
 Python 2.6.4 (r264:75706, May  6 2010, 23:38:46) 
@@ -59,7 +58,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 ```
-
 
 
 
@@ -113,7 +111,7 @@ Paul
 archive/issue_comments_083636.json:
 ```json
 {
-    "body": "Replying to [comment:3 zimmerma]:\n> * `1+2;` does not print anything in the terminal version, but does print something in the notebook\nThe printing in the notebook is a little more different than just that:\n\n```\n1;2;\n```\n\nprints\n\n```\n1\n2\n```\n\nwhereas\n\n```\n1\n2\n```\n\nprints\n\n```\n2\n```\n\nand\n\n```\n(1\n)\n```\n\nprints nothing, whereas\n\n```\n(1)\n```\n\nprints\n\n```\n1\n```\n\ni.e., it seems that all results from statements contained entirely on the last line of the cell are printed, regardless of semicolons, and no other results are. To me this seems a little arbitrary, but resolving this is probably something for the notebook.",
+    "body": "Replying to [comment:3 zimmerma]:\n> * `1+2;` does not print anything in the terminal version, but does print something in the notebook\n \nThe printing in the notebook is a little more different than just that:\n\n```\n1;2;\n```\nprints\n\n```\n1\n2\n```\nwhereas\n\n```\n1\n2\n```\nprints\n\n```\n2\n```\nand\n\n```\n(1\n)\n```\nprints nothing, whereas\n\n```\n(1)\n```\nprints\n\n```\n1\n```\ni.e., it seems that all results from statements contained entirely on the last line of the cell are printed, regardless of semicolons, and no other results are. To me this seems a little arbitrary, but resolving this is probably something for the notebook.",
     "created_at": "2013-08-24T17:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
@@ -124,51 +122,45 @@ archive/issue_comments_083636.json:
 
 Replying to [comment:3 zimmerma]:
 > * `1+2;` does not print anything in the terminal version, but does print something in the notebook
+ 
 The printing in the notebook is a little more different than just that:
 
 ```
 1;2;
 ```
-
 prints
 
 ```
 1
 2
 ```
-
 whereas
 
 ```
 1
 2
 ```
-
 prints
 
 ```
 2
 ```
-
 and
 
 ```
 (1
 )
 ```
-
 prints nothing, whereas
 
 ```
 (1)
 ```
-
 prints
 
 ```
 1
 ```
-
 i.e., it seems that all results from statements contained entirely on the last line of the cell are printed, regardless of semicolons, and no other results are. To me this seems a little arbitrary, but resolving this is probably something for the notebook.
 
 

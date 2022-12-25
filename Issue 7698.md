@@ -3,7 +3,7 @@
 archive/issues_007698.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n      ghmm-20080813.p0/src/ghmm/hmm.hg: Mercurial changeset bundle\n      ghmm-20080813.p0/src/doc/.DS_Store: DATA\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7698\n\n",
+    "body": "Assignee: tbd\n\n```\n      ghmm-20080813.p0/src/ghmm/hmm.hg: Mercurial changeset bundle\n      ghmm-20080813.p0/src/doc/.DS_Store: DATA\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7698\n\n",
     "created_at": "2009-12-16T01:19:46Z",
     "labels": [
         "component: packages: standard",
@@ -18,12 +18,10 @@ archive/issues_007698.json:
 ```
 Assignee: tbd
 
-
 ```
       ghmm-20080813.p0/src/ghmm/hmm.hg: Mercurial changeset bundle
       ghmm-20080813.p0/src/doc/.DS_Store: DATA
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7698
 

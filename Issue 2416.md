@@ -3,7 +3,7 @@
 archive/issues_002416.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: jmol\n\njmol doesn't go\n\nTested on OSX 10.5.1, FF3 Beta 1, Sage 2.10.2\n\n\n```\nplot3d(lambda x,y:x^2+y^2,(0,pi),(0,pi))\n```\n\nPopup says:\n\n```\nReferenceError: _jmolInitCheck is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2416\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: jmol\n\njmol doesn't go\n\nTested on OSX 10.5.1, FF3 Beta 1, Sage 2.10.2\n\n```\nplot3d(lambda x,y:x^2+y^2,(0,pi),(0,pi))\n```\nPopup says:\n\n```\nReferenceError: _jmolInitCheck is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2416\n\n",
     "created_at": "2008-03-07T04:39:17Z",
     "labels": [
         "component: cygwin",
@@ -24,17 +24,14 @@ jmol doesn't go
 
 Tested on OSX 10.5.1, FF3 Beta 1, Sage 2.10.2
 
-
 ```
 plot3d(lambda x,y:x^2+y^2,(0,pi),(0,pi))
 ```
-
 Popup says:
 
 ```
 ReferenceError: _jmolInitCheck is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2416
 

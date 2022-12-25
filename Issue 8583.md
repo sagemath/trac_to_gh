@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8583
 archive/issue_comments_077605.json:
 ```json
 {
-    "body": "Any progress on this one Minh? If Sage 5 is going to support Solaris, there needs to be something in place to tell people that they must test and changes to standard packages on Solaris. \n\nWhat worries me a bit is sometimes people think their package will only affect one platform, since it uses 'uname' in some way, but a typo could make it affect others too. \n\n\n```\nif [ `uname` != sunos ] ; then\n...\n```\n\n\nmight look as though it will do something on every platform except Solaris, but in fact the string is SunOS and not sunos. Hence I believe people need to test the code - not just think it is ok. \n\ndave",
+    "body": "Any progress on this one Minh? If Sage 5 is going to support Solaris, there needs to be something in place to tell people that they must test and changes to standard packages on Solaris. \n\nWhat worries me a bit is sometimes people think their package will only affect one platform, since it uses 'uname' in some way, but a typo could make it affect others too. \n\n```\nif [ `uname` != sunos ] ; then\n...\n```\n\nmight look as though it will do something on every platform except Solaris, but in fact the string is SunOS and not sunos. Hence I believe people need to test the code - not just think it is ok. \n\ndave",
     "created_at": "2010-04-13T07:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8583",
     "type": "issue_comment",
@@ -78,12 +78,10 @@ Any progress on this one Minh? If Sage 5 is going to support Solaris, there need
 
 What worries me a bit is sometimes people think their package will only affect one platform, since it uses 'uname' in some way, but a typo could make it affect others too. 
 
-
 ```
 if [ `uname` != sunos ] ; then
 ...
 ```
-
 
 might look as though it will do something on every platform except Solaris, but in fact the string is SunOS and not sunos. Hence I believe people need to test the code - not just think it is ok. 
 

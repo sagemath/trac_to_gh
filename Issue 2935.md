@@ -3,7 +3,7 @@
 archive/issues_002935.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTrying to delete some old worksheets, this happened:\n\n\n```\n[jaap@paix sage-3.0.alpha5]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha5, Release Date: 2008-04-15                  |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: notebook()\nThe notebook files are stored in: /home/jaap/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nRemoving stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd\n2008-04-15 19:54:17+0200 [-] Log opened.\n2008-04-15 19:54:17+0200 [-] twistd 8.0.1 (/home/jaap/downloads/sage-3.0.alpha5/local/bin/python 2.5.1) starting up\n2008-04-15 19:54:17+0200 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008-04-15 19:54:17+0200 [-] twisted.web2.channel.http.HTTPFactory starting on 8001\n2008-04-15 19:54:17+0200 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0xa6cdc4c>\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] /home/jaap/downloads/sage-3.0.alpha5/local/lib/python2.5/site-packages/twisted/internet/defer.py:262: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] Exception rendering:\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n        Failure: twisted.python.failure.DefaultException: Bad token\n\n\n}}\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2935\n\n",
+    "body": "Assignee: boothby\n\nTrying to delete some old worksheets, this happened:\n\n```\n[jaap@paix sage-3.0.alpha5]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha5, Release Date: 2008-04-15                  |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: notebook()\nThe notebook files are stored in: /home/jaap/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nRemoving stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd\n2008-04-15 19:54:17+0200 [-] Log opened.\n2008-04-15 19:54:17+0200 [-] twistd 8.0.1 (/home/jaap/downloads/sage-3.0.alpha5/local/bin/python 2.5.1) starting up\n2008-04-15 19:54:17+0200 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008-04-15 19:54:17+0200 [-] twisted.web2.channel.http.HTTPFactory starting on 8001\n2008-04-15 19:54:17+0200 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0xa6cdc4c>\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] /home/jaap/downloads/sage-3.0.alpha5/local/lib/python2.5/site-packages/twisted/internet/defer.py:262: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] Exception rendering:\n2008-04-15 19:55:24+0200 [HTTPChannel,3,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n        Failure: twisted.python.failure.DefaultException: Bad token\n\n\n}}\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2935\n\n",
     "created_at": "2008-04-15T18:11:04Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ archive/issues_002935.json:
 Assignee: boothby
 
 Trying to delete some old worksheets, this happened:
-
 
 ```
 [jaap@paix sage-3.0.alpha5]$ ./sage
@@ -94,7 +93,7 @@ Michael
 archive/issue_comments_020174.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> Well, there already seems to be a notebook running on port 8000, so could that have something to do with that? Can you check and report back?\n>\n\nNo, this is not the case. No notebook on port 8000.\n\n \n> Do we support more than one notebook running from the same Sage instance?\n> \n\nI don't think so. I would love to have the possibility to run\nmore notebooks from different versions of sage!\n\n\n\nJaap\n\n\n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:1 mabshoff]:\n> Well, there already seems to be a notebook running on port 8000, so could that have something to do with that? Can you check and report back?\n\n>\n\nNo, this is not the case. No notebook on port 8000.\n\n \n> Do we support more than one notebook running from the same Sage instance?\n> \n\n\nI don't think so. I would love to have the possibility to run\nmore notebooks from different versions of sage!\n\n\n\nJaap\n\n\n> Cheers,\n> \n> Michael",
     "created_at": "2008-04-15T20:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
@@ -105,6 +104,7 @@ archive/issue_comments_020174.json:
 
 Replying to [comment:1 mabshoff]:
 > Well, there already seems to be a notebook running on port 8000, so could that have something to do with that? Can you check and report back?
+
 >
 
 No, this is not the case. No notebook on port 8000.
@@ -112,6 +112,7 @@ No, this is not the case. No notebook on port 8000.
  
 > Do we support more than one notebook running from the same Sage instance?
 > 
+
 
 I don't think so. I would love to have the possibility to run
 more notebooks from different versions of sage!
@@ -229,7 +230,7 @@ Jaap
 archive/issue_comments_020179.json:
 ```json
 {
-    "body": "Replying to [comment:6 jsp]:\n> I reproduced this failure on a different machine Fedora 8, 32 bits with a ws\n> made under sage-2.11. using Firefox-2.0.0.13.\n> \n> Narrowing(?) this down: I get the same failure under sage-2.11 :(\n> \n> Starting the notebook and selecting nothing(!) clicking on Archive or Delete gives the internal server error. Both on Fedora 7 and 8.\n> \n> \n> \n> Jaap\n\n\nEven with sage-2.10.4, just clicking in the overview on Delete:\n\n\n```\n[jaap@paix sage-2.10.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.4, Release Date: 2008-03-16                      |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: notebook()\nThe notebook files are stored in: /home/jaap/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nRemoving stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd\n2008/04/17 23:11 +0200 [-] Log opened.\n2008/04/17 23:11 +0200 [-] twistd 2.5.0 (/home/jaap/downloads/sage-2.10.4/local/bin/python 2.5.1) starting up\n2008/04/17 23:11 +0200 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/04/17 23:11 +0200 [-] Loading sage_notebook/twistedconf.tac...\n2008/04/17 23:12 +0200 [-] Loaded.\n2008/04/17 23:12 +0200 [-] twisted.web2.channel.http.HTTPFactory starting on 8001\n2008/04/17 23:12 +0200 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0x8b9082c>\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] /home/jaap/downloads/sage-2.10.4/local/lib/python2.5/site-packages/twisted/internet/defer.py:259: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] Exception rendering:\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n        Failure: twisted.python.failure.DefaultException: Bad token\n\n\n\n\n```\n\n\n\nSo I'm flabbergasted\n\nJaap",
+    "body": "Replying to [comment:6 jsp]:\n> I reproduced this failure on a different machine Fedora 8, 32 bits with a ws\n> made under sage-2.11. using Firefox-2.0.0.13.\n> \n> Narrowing(?) this down: I get the same failure under sage-2.11 :(\n> \n> Starting the notebook and selecting nothing(!) clicking on Archive or Delete gives the internal server error. Both on Fedora 7 and 8.\n> \n> \n> \n> Jaap\n\n\n\nEven with sage-2.10.4, just clicking in the overview on Delete:\n\n```\n[jaap@paix sage-2.10.4]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.4, Release Date: 2008-03-16                      |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: notebook()\nThe notebook files are stored in: /home/jaap/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nRemoving stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd\n2008/04/17 23:11 +0200 [-] Log opened.\n2008/04/17 23:11 +0200 [-] twistd 2.5.0 (/home/jaap/downloads/sage-2.10.4/local/bin/python 2.5.1) starting up\n2008/04/17 23:11 +0200 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/04/17 23:11 +0200 [-] Loading sage_notebook/twistedconf.tac...\n2008/04/17 23:12 +0200 [-] Loaded.\n2008/04/17 23:12 +0200 [-] twisted.web2.channel.http.HTTPFactory starting on 8001\n2008/04/17 23:12 +0200 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0x8b9082c>\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] /home/jaap/downloads/sage-2.10.4/local/lib/python2.5/site-packages/twisted/internet/defer.py:259: exceptions.DeprecationWarning: Don't pass strings (like 'Bad token') to failure.Failure (replacing with a DefaultException).\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] Exception rendering:\n2008/04/17 23:12 +0200 [HTTPChannel,1,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n        Failure: twisted.python.failure.DefaultException: Bad token\n\n\n\n\n```\n\n\nSo I'm flabbergasted\n\nJaap",
     "created_at": "2008-04-17T21:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
@@ -251,8 +252,8 @@ Replying to [comment:6 jsp]:
 > Jaap
 
 
-Even with sage-2.10.4, just clicking in the overview on Delete:
 
+Even with sage-2.10.4, just clicking in the overview on Delete:
 
 ```
 [jaap@paix sage-2.10.4]$ ./sage
@@ -290,7 +291,6 @@ Removing stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd
 
 
 ```
-
 
 
 So I'm flabbergasted
@@ -367,7 +367,7 @@ Michael
 archive/issue_comments_020182.json:
 ```json
 {
-    "body": "Replying to [comment:9 mabshoff]:\n> Could this have something to do with encoding? Jaap: what is the locale you use?\n> \n> Cheers,\n> \n> Michael\n\n\nDon't think so. My Fedora install is just English (American). I do not use\nany localization.\n\nJaap",
+    "body": "Replying to [comment:9 mabshoff]:\n> Could this have something to do with encoding? Jaap: what is the locale you use?\n> \n> Cheers,\n> \n> Michael\n\n\n\nDon't think so. My Fedora install is just English (American). I do not use\nany localization.\n\nJaap",
     "created_at": "2008-04-18T20:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
@@ -382,6 +382,7 @@ Replying to [comment:9 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 
 Don't think so. My Fedora install is just English (American). I do not use
@@ -448,7 +449,7 @@ archive/issue_events_006712.json:
 archive/issue_comments_020184.json:
 ```json
 {
-    "body": "How about this:\n\n```\nWilliam Stein wrote:\n>\n> \n> Please do\n>    sage: hg_sage.pull()\n> \n> then\n> \n>    sage -br\n> \n> and try that test again\n\nSomething strange was going on with the notebook(), but\nafter hg_sage.pull() and ./sage -br the notebook\nstarts in Firefox with still the problem I have reported in trac #2935.\n\nBut when I start firefox by hand:  https://localhost:8001/\neverything seems to work!\n\nJaap\n\n\n```\n",
+    "body": "How about this:\n\n```\nWilliam Stein wrote:\n>\n> \n> Please do\n>    sage: hg_sage.pull()\n> \n> then\n> \n>    sage -br\n> \n> and try that test again\n\nSomething strange was going on with the notebook(), but\nafter hg_sage.pull() and ./sage -br the notebook\nstarts in Firefox with still the problem I have reported in trac #2935.\n\nBut when I start firefox by hand:  https://localhost:8001/\neverything seems to work!\n\nJaap\n\n\n```",
     "created_at": "2008-04-22T15:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2935",
     "type": "issue_comment",
@@ -483,7 +484,6 @@ Jaap
 
 
 ```
-
 
 
 

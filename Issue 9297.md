@@ -3,7 +3,7 @@
 archive/issues_009297.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @nexttime @mkoeppe\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and Sun assembler)\n* Sage 4.4.4.alpha1\n* #9041 to allow Python to build _socket. (Not needed on SPARC, but it was applied)\n* #9295 to permit Python test suite to build. \n\n## Background\nAlthough Sage 4.4.4.alpha1 builds fully on Solaris 10 (SPARC), there are some test failures of the Python test suite, which are discovered if SAGE_CHECK is exported to \"yes\", and #9295 included in Sage, which allows SAGE_CHECK to work with Python. \n\n## Summary of test results\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\n```\n\n## Individual test failures\n\n```\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n\ntest test_float failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 765, in test_roundtrip\n    self.identical(-x, roundtrip(-x))\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 375, in identical\n    self.fail('%r not identical to %r' % (x, y))\nAssertionError: -0.0 not identical to 0.0\n\ntest_hotshot\ntest test_hotshot failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_hotshot.py\", line 130, in test_logreader_eof_error\n    self.assertRaises((IOError, EOFError), _hotshot.logreader, \".\")\nAssertionError: (<type 'exceptions.IOError'>, <type 'exceptions.EOFError'>) not raised\n\ntest_multiprocessing\ntest test_multiprocessing failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_multiprocessing.py\", line 1666, in test_import\n    __import__(name)\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/multiprocessing/reduction.py\", line 29, in <module>\n    raise ImportError('pickling of connections not supported')\nImportError: pickling of connections not supported\n\n\ntest test_sunaudiodev failed -- (13, 'Permission denied', '/dev/audio')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9297\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @nexttime @mkoeppe\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and Sun assembler)\n* Sage 4.4.4.alpha1\n* #9041 to allow Python to build _socket. (Not needed on SPARC, but it was applied)\n* #9295 to permit Python test suite to build. \n\n## Background\nAlthough Sage 4.4.4.alpha1 builds fully on Solaris 10 (SPARC), there are some test failures of the Python test suite, which are discovered if SAGE_CHECK is exported to \"yes\", and #9295 included in Sage, which allows SAGE_CHECK to work with Python. \n\n## Summary of test results\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\n```\n## Individual test failures\n\n```\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n\ntest test_float failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 765, in test_roundtrip\n    self.identical(-x, roundtrip(-x))\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 375, in identical\n    self.fail('%r not identical to %r' % (x, y))\nAssertionError: -0.0 not identical to 0.0\n\ntest_hotshot\ntest test_hotshot failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_hotshot.py\", line 130, in test_logreader_eof_error\n    self.assertRaises((IOError, EOFError), _hotshot.logreader, \".\")\nAssertionError: (<type 'exceptions.IOError'>, <type 'exceptions.EOFError'>) not raised\n\ntest_multiprocessing\ntest test_multiprocessing failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_multiprocessing.py\", line 1666, in test_import\n    __import__(name)\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/multiprocessing/reduction.py\", line 29, in <module>\n    raise ImportError('pickling of connections not supported')\nImportError: pickling of connections not supported\n\n\ntest test_sunaudiodev failed -- (13, 'Permission denied', '/dev/audio')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9297\n\n",
     "created_at": "2010-06-21T16:20:21Z",
     "labels": [
         "component: porting: solaris",
@@ -54,7 +54,6 @@ Although Sage 4.4.4.alpha1 builds fully on Solaris 10 (SPARC), there are some te
 2 skips unexpected on sunos5:
     test_tcl test_ssl
 ```
-
 ## Individual test failures
 
 ```
@@ -84,7 +83,6 @@ ImportError: pickling of connections not supported
 
 test test_sunaudiodev failed -- (13, 'Permission denied', '/dev/audio')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9297
 
@@ -153,7 +151,7 @@ This also occurs on sage.math, so it is very easy for someone to work on...
 archive/issue_comments_087442.json:
 ```json
 {
-    "body": "Replying to [comment:2 rlm]:\n> Python failures have also been reported with `SAGE_CHECK=yes` on Ubuntu 9.04 x86 and x86_64.\n> \n> See http://groups.google.com/group/sage-release/msg/92e83194909d4d72\n\nIf you see this thread\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/b7856076ea5aefbd/8d381b77e4d461cb\n\nwhere I asked people to test their python build, **everyone** who responded had one or more failures. `test_distutils` is a bit worrying, as everyone reported that failed for them. There was a report that the clean 2.6.5 source code passes this test, but I don't know for sure if the 2.6.4 in Sage passes this test. I think it does, in which case a patch in Sage, or the Sage build environment is screwing `test_disutils` up. \n\nI reported the `test_float` on Solaris upstream\n\nhttp://bugs.python.org/issue9069\n\nbut that was found to be a bug in gcc >= 4.4.0, but has now been fixed in the gcc source code, so the next release should have the issue resolved. \n\nThat still leaves a few python failures on Solaris that I've not resolved. \n\nI think people should create individual tickets for individual test failures, as there are many different failures on many peoples systems. But `test_disutils` is common to ever single report I see. \n\nDave",
+    "body": "Replying to [comment:2 rlm]:\n> Python failures have also been reported with `SAGE_CHECK=yes` on Ubuntu 9.04 x86 and x86_64.\n> \n> See http://groups.google.com/group/sage-release/msg/92e83194909d4d72\n\n\nIf you see this thread\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/b7856076ea5aefbd/8d381b77e4d461cb\n\nwhere I asked people to test their python build, **everyone** who responded had one or more failures. `test_distutils` is a bit worrying, as everyone reported that failed for them. There was a report that the clean 2.6.5 source code passes this test, but I don't know for sure if the 2.6.4 in Sage passes this test. I think it does, in which case a patch in Sage, or the Sage build environment is screwing `test_disutils` up. \n\nI reported the `test_float` on Solaris upstream\n\nhttp://bugs.python.org/issue9069\n\nbut that was found to be a bug in gcc >= 4.4.0, but has now been fixed in the gcc source code, so the next release should have the issue resolved. \n\nThat still leaves a few python failures on Solaris that I've not resolved. \n\nI think people should create individual tickets for individual test failures, as there are many different failures on many peoples systems. But `test_disutils` is common to ever single report I see. \n\nDave",
     "created_at": "2010-07-16T09:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
@@ -166,6 +164,7 @@ Replying to [comment:2 rlm]:
 > Python failures have also been reported with `SAGE_CHECK=yes` on Ubuntu 9.04 x86 and x86_64.
 > 
 > See http://groups.google.com/group/sage-release/msg/92e83194909d4d72
+
 
 If you see this thread
 
@@ -192,7 +191,7 @@ Dave
 archive/issue_comments_087443.json:
 ```json
 {
-    "body": "Replying to [comment:4 drkirkby]:\n> But `test_disutils` is common to ever single report I see. \n> \n> Dave \n\nOops, \n\nI mean `test_disutils` is common to every single report I see. \n\nIf anyone has some time and wants to work on them, then `test_disutils` is probably the best test to start with, as it effects everyone. Or is is *affects* everyone? I always have problems with those words!\n\nDave",
+    "body": "Replying to [comment:4 drkirkby]:\n> But `test_disutils` is common to ever single report I see. \n> \n> Dave \n\n\nOops, \n\nI mean `test_disutils` is common to every single report I see. \n\nIf anyone has some time and wants to work on them, then `test_disutils` is probably the best test to start with, as it effects everyone. Or is is *affects* everyone? I always have problems with those words!\n\nDave",
     "created_at": "2010-07-16T10:11:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
@@ -205,6 +204,7 @@ Replying to [comment:4 drkirkby]:
 > But `test_disutils` is common to ever single report I see. 
 > 
 > Dave 
+
 
 Oops, 
 
@@ -239,7 +239,7 @@ Changing keywords from "" to "testsuite, Python modules, Failed, SAGE_CHECK".
 archive/issue_comments_087445.json:
 ```json
 {
-    "body": "On Ubuntu 9.04 (x86 in this case), `spkg/logs/python-*.log` shows:\n\n\n```\n...\nrunning build\nrunning build_ext\nINFO: Can't locate Tcl/Tk libs and/or headers\n\nFailed to find the necessary bits to build these modules:\n_bsddb             _curses            _curses_panel\n_hashlib           _ssl               _tkinter\nbsddb185           dbm                gdbm\nsunaudiodev\nTo find the necessary bits, look in setup.py in detect_modules() for the module's name.\n\nrunning build_scripts\n...\n```\n\nand\n\n```\n...\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\n...\ntest_distutils\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n...\ntest_os\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/os.py:760: DeprecationWarning: integer argument expected, got float\n  bs += read(_urandomfd, n - len(bs))\n...\ntest_sundry\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_sundry.py:66: DeprecationWarning: The posixfile module is deprecated; fcntl.lockf() provides better locking\n  import posixfile\n...\ntest_xmllib\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_xmllib.py:24: DeprecationWarning: The xmllib module is obsolete.  Use xml.sax instead.\n  import xmllib\n...\ntest_zlib\ntest test_zlib failed -- Traceback (most recent call last):\n  File \"/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_zlib.py\", line 84, in test_baddecompressobj\n    self.assertRaises(ValueError, zlib.decompressobj, 0)\nAssertionError: ValueError not raised\n\n323 tests OK.\n2 tests failed:\n    test_distutils test_zlib\n40 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile\n    test_sunaudiodev test_tcl test_timeout test_unicode_file\n    test_urllib2net test_urllibnet test_winreg test_winsound\n    test_zipfile64\n5 skips unexpected on linux2:\n    test_tcl test_dbm test_ssl test_gdbm test_bsddb\nmake[2]: [test] Error 1 (ignored)\n...\n[above repeated]\ntest test_zlib failed -- Traceback (most recent call last):\n  File \"/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_zlib.py\", line 84, in test_baddecompressobj\n    self.assertRaises(ValueError, zlib.decompressobj, 0)\nAssertionError: ValueError not raised\n\n323 tests OK.\n2 tests failed:\n    test_distutils test_zlib\n40 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile\n    test_sunaudiodev test_tcl test_timeout test_unicode_file\n    test_urllib2net test_urllibnet test_winreg test_winsound\n    test_zipfile64\n5 skips unexpected on linux2:\n    test_tcl test_dbm test_ssl test_gdbm test_bsddb\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src'\nAn error occurred while testing Python\n*************************************\nError testing package ** python-2.6.4.p9 **\n*************************************\nsage: An error occurred while testing python-2.6.4.p9\n...\n```\n\nThe former can be found by doing\n\n```sh\ngrep -A5 Failed install.log     # or spkg/logs/python-*.log\n```\n\nin (successful) builds without `SAGE_CHECK=yes`, too.",
+    "body": "On Ubuntu 9.04 (x86 in this case), `spkg/logs/python-*.log` shows:\n\n```\n...\nrunning build\nrunning build_ext\nINFO: Can't locate Tcl/Tk libs and/or headers\n\nFailed to find the necessary bits to build these modules:\n_bsddb             _curses            _curses_panel\n_hashlib           _ssl               _tkinter\nbsddb185           dbm                gdbm\nsunaudiodev\nTo find the necessary bits, look in setup.py in detect_modules() for the module's name.\n\nrunning build_scripts\n...\n```\nand\n\n```\n...\nSuccessfully installed python-2.6.4.p9\nRunning the test suite.\nTesting the Python package\n...\ntest_distutils\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n...\ntest_os\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/os.py:760: DeprecationWarning: integer argument expected, got float\n  bs += read(_urandomfd, n - len(bs))\n...\ntest_sundry\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_sundry.py:66: DeprecationWarning: The posixfile module is deprecated; fcntl.lockf() provides better locking\n  import posixfile\n...\ntest_xmllib\n/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_xmllib.py:24: DeprecationWarning: The xmllib module is obsolete.  Use xml.sax instead.\n  import xmllib\n...\ntest_zlib\ntest test_zlib failed -- Traceback (most recent call last):\n  File \"/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_zlib.py\", line 84, in test_baddecompressobj\n    self.assertRaises(ValueError, zlib.decompressobj, 0)\nAssertionError: ValueError not raised\n\n323 tests OK.\n2 tests failed:\n    test_distutils test_zlib\n40 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile\n    test_sunaudiodev test_tcl test_timeout test_unicode_file\n    test_urllib2net test_urllibnet test_winreg test_winsound\n    test_zipfile64\n5 skips unexpected on linux2:\n    test_tcl test_dbm test_ssl test_gdbm test_bsddb\nmake[2]: [test] Error 1 (ignored)\n...\n[above repeated]\ntest test_zlib failed -- Traceback (most recent call last):\n  File \"/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src/Lib/test/test_zlib.py\", line 84, in test_baddecompressobj\n    self.assertRaises(ValueError, zlib.decompressobj, 0)\nAssertionError: ValueError not raised\n\n323 tests OK.\n2 tests failed:\n    test_distutils test_zlib\n40 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_dbm test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile\n    test_sunaudiodev test_tcl test_timeout test_unicode_file\n    test_urllib2net test_urllibnet test_winreg test_winsound\n    test_zipfile64\n5 skips unexpected on linux2:\n    test_tcl test_dbm test_ssl test_gdbm test_bsddb\nmake[2]: *** [test] Error 1\nmake[2]: Leaving directory `/home/leif/sage-4.5.rc1-par-j6-sage-check/spkg/build/python-2.6.4.p9/src'\nAn error occurred while testing Python\n*************************************\nError testing package ** python-2.6.4.p9 **\n*************************************\nsage: An error occurred while testing python-2.6.4.p9\n...\n```\nThe former can be found by doing\n\n```sh\ngrep -A5 Failed install.log     # or spkg/logs/python-*.log\n```\nin (successful) builds without `SAGE_CHECK=yes`, too.",
     "created_at": "2010-07-16T17:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
@@ -249,7 +249,6 @@ archive/issue_comments_087445.json:
 ```
 
 On Ubuntu 9.04 (x86 in this case), `spkg/logs/python-*.log` shows:
-
 
 ```
 ...
@@ -267,7 +266,6 @@ To find the necessary bits, look in setup.py in detect_modules() for the module'
 running build_scripts
 ...
 ```
-
 and
 
 ```
@@ -346,13 +344,11 @@ Error testing package ** python-2.6.4.p9 **
 sage: An error occurred while testing python-2.6.4.p9
 ...
 ```
-
 The former can be found by doing
 
 ```sh
 grep -A5 Failed install.log     # or spkg/logs/python-*.log
 ```
-
 in (successful) builds without `SAGE_CHECK=yes`, too.
 
 
@@ -384,7 +380,7 @@ Dave
 archive/issue_comments_087447.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> It would be good if the Linux failures could be put on another ticket. Otherwise, this ticket will be just full of test results on every conceivable system.\n\nOk, my post was a bit verbose, too. I only wanted to stress that `zlib` and `distutils` failing is not specific to SunOS/Solaris (or SPARC).\n\n> I've created tickets for 32-bit SPARC (this one) and OpenSolaris (#9299) \n\nPerhaps we should create meta-tickets for\n\n* \"Missing bits\" (they differ from system to system, I don't know which of them might be relevant for Sage)\n\n* Python testsuite failures\n\nThe former need not be a meta-ticket, perhaps just collecting brief reports from various platforms, and informational to users who wonder if Sage's functionality can be affected. This information should be put into the Wiki and Installation Guide later.",
+    "body": "Replying to [comment:8 drkirkby]:\n> It would be good if the Linux failures could be put on another ticket. Otherwise, this ticket will be just full of test results on every conceivable system.\n\n\nOk, my post was a bit verbose, too. I only wanted to stress that `zlib` and `distutils` failing is not specific to SunOS/Solaris (or SPARC).\n\n> I've created tickets for 32-bit SPARC (this one) and OpenSolaris (#9299) \n\n\nPerhaps we should create meta-tickets for\n\n* \"Missing bits\" (they differ from system to system, I don't know which of them might be relevant for Sage)\n\n* Python testsuite failures\n\nThe former need not be a meta-ticket, perhaps just collecting brief reports from various platforms, and informational to users who wonder if Sage's functionality can be affected. This information should be put into the Wiki and Installation Guide later.",
     "created_at": "2010-07-16T18:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
@@ -396,9 +392,11 @@ archive/issue_comments_087447.json:
 Replying to [comment:8 drkirkby]:
 > It would be good if the Linux failures could be put on another ticket. Otherwise, this ticket will be just full of test results on every conceivable system.
 
+
 Ok, my post was a bit verbose, too. I only wanted to stress that `zlib` and `distutils` failing is not specific to SunOS/Solaris (or SPARC).
 
 > I've created tickets for 32-bit SPARC (this one) and OpenSolaris (#9299) 
+
 
 Perhaps we should create meta-tickets for
 

@@ -70,7 +70,7 @@ http://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sag
 archive/issue_comments_026796.json:
 ```json
 {
-    "body": "Replying to [comment:1 TimothyClemans]:\n> Note: there is a script for applying the various Notebook patches. The base is sage-3.0.6.\n> \n> http://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sage\n\nHi Timothy,\n\nplease still provide dependencies to the \"previous\" ticket in the dependency chain. I am not going to just import a bunch of patches :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 TimothyClemans]:\n> Note: there is a script for applying the various Notebook patches. The base is sage-3.0.6.\n> \n> http://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sage\n\n\nHi Timothy,\n\nplease still provide dependencies to the \"previous\" ticket in the dependency chain. I am not going to just import a bunch of patches :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-05T23:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3776",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ Replying to [comment:1 TimothyClemans]:
 > Note: there is a script for applying the various Notebook patches. The base is sage-3.0.6.
 > 
 > http://sage.math.washington.edu/home/tclemans/uw_contract_work/apply_patches.sage
+
 
 Hi Timothy,
 

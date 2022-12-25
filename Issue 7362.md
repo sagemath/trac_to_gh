@@ -58,7 +58,7 @@ See [this sage-notebook thread](http://groups.google.com/group/sage-notebook/bro
 archive/issue_comments_061577.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> See [this sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/56cf668a71172b8e/8f1fac23aaca42d3?#8f1fac23aaca42d3), too.\nThe links:\n\n* [MobWrite](http://code.google.com/p/google-mobwrite/) - [theory](http://code.google.com/p/google-mobwrite/wiki/Theory), [client setup](http://code.google.com/p/google-mobwrite/wiki/WebClient), [server setup](http://code.google.com/p/google-mobwrite/wiki/Daemon), [status](http://code.google.com/p/google-mobwrite/wiki/Status).\n* [Cola](http://wiki.eclipse.org/RT_Shared_Editing) - Real-time shared editing in Eclipse - [screencast](http://www.vimeo.com/1195398).\n\nMobWrite seems to be a good option, provided it doesn't overload client and server.  We can call `mobwrite.share` for new input cells and `mobwrite.unshare` for deleted cells.  *If* MobWrite cannot synchronize arbitrary HTML, perhaps we can `mobwrite.share` a hidden auxiliary cell that holds the escaped HTML of its corresponding output cell.  We can update the output cell's `innerHTML` when MobWrite triggers the auxiliary's `onchange` handler.  Of course, this assumes that we don't run more than one synchronization algorithm at a time.",
+    "body": "Replying to [comment:1 mpatel]:\n> See [this sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/56cf668a71172b8e/8f1fac23aaca42d3?#8f1fac23aaca42d3), too.\n\nThe links:\n\n* [MobWrite](http://code.google.com/p/google-mobwrite/) - [theory](http://code.google.com/p/google-mobwrite/wiki/Theory), [client setup](http://code.google.com/p/google-mobwrite/wiki/WebClient), [server setup](http://code.google.com/p/google-mobwrite/wiki/Daemon), [status](http://code.google.com/p/google-mobwrite/wiki/Status).\n* [Cola](http://wiki.eclipse.org/RT_Shared_Editing) - Real-time shared editing in Eclipse - [screencast](http://www.vimeo.com/1195398).\n\nMobWrite seems to be a good option, provided it doesn't overload client and server.  We can call `mobwrite.share` for new input cells and `mobwrite.unshare` for deleted cells.  *If* MobWrite cannot synchronize arbitrary HTML, perhaps we can `mobwrite.share` a hidden auxiliary cell that holds the escaped HTML of its corresponding output cell.  We can update the output cell's `innerHTML` when MobWrite triggers the auxiliary's `onchange` handler.  Of course, this assumes that we don't run more than one synchronization algorithm at a time.",
     "created_at": "2009-11-11T18:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7362",
     "type": "issue_comment",
@@ -69,6 +69,7 @@ archive/issue_comments_061577.json:
 
 Replying to [comment:1 mpatel]:
 > See [this sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/56cf668a71172b8e/8f1fac23aaca42d3?#8f1fac23aaca42d3), too.
+
 The links:
 
 * [MobWrite](http://code.google.com/p/google-mobwrite/) - [theory](http://code.google.com/p/google-mobwrite/wiki/Theory), [client setup](http://code.google.com/p/google-mobwrite/wiki/WebClient), [server setup](http://code.google.com/p/google-mobwrite/wiki/Daemon), [status](http://code.google.com/p/google-mobwrite/wiki/Status).

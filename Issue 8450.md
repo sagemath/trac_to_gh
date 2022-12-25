@@ -3,7 +3,7 @@
 archive/issues_008450.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @egourgoulhon @jungmath\n\nThis gives an error:\n\n\n```\ncontour_plot(real_part(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\n\nbut this works:\n\n\n```\na(x,y)=real(log(x+y*I+.001))\nf=fast_callable(a,domain=CC)\ncontour_plot(f, (x,-3,3),(y,-3,3),fill=False)\n```\n\n\nand this works:\n\n\n```\ncontour_plot(imag(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8450\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @egourgoulhon @jungmath\n\nThis gives an error:\n\n```\ncontour_plot(real_part(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\nbut this works:\n\n```\na(x,y)=real(log(x+y*I+.001))\nf=fast_callable(a,domain=CC)\ncontour_plot(f, (x,-3,3),(y,-3,3),fill=False)\n```\n\nand this works:\n\n```\ncontour_plot(imag(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8450\n\n",
     "created_at": "2010-03-05T22:01:42Z",
     "labels": [
         "component: graphics",
@@ -22,14 +22,11 @@ CC:  @orlitzky @egourgoulhon @jungmath
 
 This gives an error:
 
-
 ```
 contour_plot(real_part(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)
 ```
 
-
 but this works:
-
 
 ```
 a(x,y)=real(log(x+y*I+.001))
@@ -37,14 +34,11 @@ f=fast_callable(a,domain=CC)
 contour_plot(f, (x,-3,3),(y,-3,3),fill=False)
 ```
 
-
 and this works:
-
 
 ```
 contour_plot(imag(log(x+y*I+.001)), (x,-3,3),(y,-3,3),fill=False)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8450
 
@@ -341,7 +335,7 @@ I'm still running a ptestlong on this, but everything under `sage/plot` now pass
 archive/issue_comments_075843.json:
 ```json
 {
-    "body": "Replying to [comment:11 mjo]:\n> 1. Do we really want to support passing (for example) the integer zero as a function to be plotted? We have doctests that check things like `plot(ZZ(0), x, 0, 1)`. Supporting this requires special cases in the code, and IMO just perpetuates confusion about the difference between the integer 0 and the function const0.\n\nAllowing non-callables as input for `plot` is, I think, important to keep. Convenience for casual use is key. Given that `plot` takes variable names as part of its input, it's clear that there is some implicit construction of a symbolic or numerical function happening.",
+    "body": "Replying to [comment:11 mjo]:\n> 1. Do we really want to support passing (for example) the integer zero as a function to be plotted? We have doctests that check things like `plot(ZZ(0), x, 0, 1)`. Supporting this requires special cases in the code, and IMO just perpetuates confusion about the difference between the integer 0 and the function const0.\n\n\nAllowing non-callables as input for `plot` is, I think, important to keep. Convenience for casual use is key. Given that `plot` takes variable names as part of its input, it's clear that there is some implicit construction of a symbolic or numerical function happening.",
     "created_at": "2021-07-23T16:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -353,6 +347,7 @@ archive/issue_comments_075843.json:
 Replying to [comment:11 mjo]:
 > 1. Do we really want to support passing (for example) the integer zero as a function to be plotted? We have doctests that check things like `plot(ZZ(0), x, 0, 1)`. Supporting this requires special cases in the code, and IMO just perpetuates confusion about the difference between the integer 0 and the function const0.
 
+
 Allowing non-callables as input for `plot` is, I think, important to keep. Convenience for casual use is key. Given that `plot` takes variable names as part of its input, it's clear that there is some implicit construction of a symbolic or numerical function happening.
 
 
@@ -362,7 +357,7 @@ Allowing non-callables as input for `plot` is, I think, important to keep. Conve
 archive/issue_comments_075844.json:
 ```json
 {
-    "body": "Replying to [comment:11 mjo]:\n> This is an \"easy fix\" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.\n\nSorry, where do you remove `domain=float`?",
+    "body": "Replying to [comment:11 mjo]:\n> This is an \"easy fix\" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.\n\n\nSorry, where do you remove `domain=float`?",
     "created_at": "2021-07-23T16:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -374,6 +369,7 @@ archive/issue_comments_075844.json:
 Replying to [comment:11 mjo]:
 > This is an "easy fix" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.
 
+
 Sorry, where do you remove `domain=float`?
 
 
@@ -383,7 +379,7 @@ Sorry, where do you remove `domain=float`?
 archive/issue_comments_075845.json:
 ```json
 {
-    "body": "Replying to [comment:13 mkoeppe]:\n> Replying to [comment:11 mjo]:\n> > This is an \"easy fix\" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.\n> \n> Sorry, where do you remove `domain=float`?\n\nThe first thing `fast_float()` tries is to use `fast_callable()` with `domain=float`:\n\n\n```python\ntry:\n    return fast_callable(f, vars=vars, domain=float,\n                         expect_one_var=expect_one_var)\n```\n\n\nWe're now using `fast_callable()` directly, and omit the `domain`.",
+    "body": "Replying to [comment:13 mkoeppe]:\n> Replying to [comment:11 mjo]:\n> > This is an \"easy fix\" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.\n\n> \n> Sorry, where do you remove `domain=float`?\n\n\nThe first thing `fast_float()` tries is to use `fast_callable()` with `domain=float`:\n\n```python\ntry:\n    return fast_callable(f, vars=vars, domain=float,\n                         expect_one_var=expect_one_var)\n```\n\nWe're now using `fast_callable()` directly, and omit the `domain`.",
     "created_at": "2021-07-23T16:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -395,18 +391,18 @@ archive/issue_comments_075845.json:
 Replying to [comment:13 mkoeppe]:
 > Replying to [comment:11 mjo]:
 > > This is an "easy fix" but causes a cascade of other issues because removing `domain=float` turns a lot of things that used to be `Nan` into `TypeError`, `ValueError`, `ZeroDivisionError`, etc.
+
 > 
 > Sorry, where do you remove `domain=float`?
 
-The first thing `fast_float()` tries is to use `fast_callable()` with `domain=float`:
 
+The first thing `fast_float()` tries is to use `fast_callable()` with `domain=float`:
 
 ```python
 try:
     return fast_callable(f, vars=vars, domain=float,
                          expect_one_var=expect_one_var)
 ```
-
 
 We're now using `fast_callable()` directly, and omit the `domain`.
 
@@ -417,7 +413,7 @@ We're now using `fast_callable()` directly, and omit the `domain`.
 archive/issue_comments_075846.json:
 ```json
 {
-    "body": "Thanks.\n\nI have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.\n\n> 2. We now have \"try to evaluate this as a real number, and return NaN (or skip it) if we can't\" code in at least five places. Should this be made consistent, or (better yet) factored out? \n\nYes, I guess there would be value in a version of the general interpreter that catches errors and replaces them by NaN returns",
+    "body": "Thanks.\n\nI have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.\n\n> 2. We now have \"try to evaluate this as a real number, and return NaN (or skip it) if we can't\" code in at least five places. Should this be made consistent, or (better yet) factored out? \n\n\nYes, I guess there would be value in a version of the general interpreter that catches errors and replaces them by NaN returns",
     "created_at": "2021-07-23T16:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -431,6 +427,7 @@ Thanks.
 I have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.
 
 > 2. We now have "try to evaluate this as a real number, and return NaN (or skip it) if we can't" code in at least five places. Should this be made consistent, or (better yet) factored out? 
+
 
 Yes, I guess there would be value in a version of the general interpreter that catches errors and replaces them by NaN returns
 
@@ -459,7 +456,7 @@ By the way, I just came across https://trac.sagemath.org/attachment/ticket/5572/
 archive/issue_comments_075848.json:
 ```json
 {
-    "body": "Replying to [comment:15 mkoeppe]:\n> Thanks.\n> \n> I have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.\n\nThis is tough because there are so many plotting interfaces, and the fast-callables aren't created near the point of failure. In this case, `setup_for_eval_on_grid()` is preprocessing some of the plotting args and returning them to some other function that orchestrates the plotting. Then the failure occurs in *another* function that actually computes the plot points. \n\nSome major refactoring would be needed to do this all more intelligently. (I think we would also need to generate some kind of custom exception to avoid wrapping ten layers of code in one big `except TypeError` block.)",
+    "body": "Replying to [comment:15 mkoeppe]:\n> Thanks.\n> \n> I have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.\n\n\nThis is tough because there are so many plotting interfaces, and the fast-callables aren't created near the point of failure. In this case, `setup_for_eval_on_grid()` is preprocessing some of the plotting args and returning them to some other function that orchestrates the plotting. Then the failure occurs in *another* function that actually computes the plot points. \n\nSome major refactoring would be needed to do this all more intelligently. (I think we would also need to generate some kind of custom exception to avoid wrapping ten layers of code in one big `except TypeError` block.)",
     "created_at": "2021-07-23T17:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -472,6 +469,7 @@ Replying to [comment:15 mkoeppe]:
 > Thanks.
 > 
 > I have not looked at the details, nor done any timing. But it seems to me that a better solution may be to try `domain=float` first, then `domain=complex` (or whatever is needed to make `fast_callable` use `interp_cdf`); and only in the end fall back to the general interpreter.
+
 
 This is tough because there are so many plotting interfaces, and the fast-callables aren't created near the point of failure. In this case, `setup_for_eval_on_grid()` is preprocessing some of the plotting args and returning them to some other function that orchestrates the plotting. Then the failure occurs in *another* function that actually computes the plot points. 
 
@@ -574,7 +572,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075854.json:
 ```json
 {
-    "body": "Replying to [comment:18 mkoeppe]:\n> OK, thanks for the explanation. Then I would suggest that we declare the issue of this ticket as \"minor\" and set it aside for later consideration. \n\nI actually hold a grudge against this bug from back when I was generating plots programmatically and the random appearance of `0.000000000001*I` would kill the whole thing after an hour, so I haven't given up.\n\nI tried a few more things, described in the first of the recent commit messages, and discovered problems with all of them. I did however eventually find a solution that is both unobtrusive and fast: wrap fast-callable evaluation in a class that can force the result to a specific output type. With ``domain=<something complex>`` and ``output=<something real>``, we return `NaN` unless the imaginary part is trivial, in which case we return the real part. In all other situations we simply try to coerce the output to the given type.\n\nThis allows us to plot over CDF but convert the result to float (possibly NaN) only on the way out, without having to hack that conversion logic into a hundred plotting functions. It's probably as fast as any solution could be; complex (two-float) operations necessarily take longer than plain float computations, but the difference is small in my non-rigorous tests, less than 10%.\n\nAn output wrapper is not used unless it's needed, so this doesn't affect any other uses of `fast_callable()` in the tree.",
+    "body": "Replying to [comment:18 mkoeppe]:\n> OK, thanks for the explanation. Then I would suggest that we declare the issue of this ticket as \"minor\" and set it aside for later consideration. \n\n\nI actually hold a grudge against this bug from back when I was generating plots programmatically and the random appearance of `0.000000000001*I` would kill the whole thing after an hour, so I haven't given up.\n\nI tried a few more things, described in the first of the recent commit messages, and discovered problems with all of them. I did however eventually find a solution that is both unobtrusive and fast: wrap fast-callable evaluation in a class that can force the result to a specific output type. With ``domain=<something complex>`` and ``output=<something real>``, we return `NaN` unless the imaginary part is trivial, in which case we return the real part. In all other situations we simply try to coerce the output to the given type.\n\nThis allows us to plot over CDF but convert the result to float (possibly NaN) only on the way out, without having to hack that conversion logic into a hundred plotting functions. It's probably as fast as any solution could be; complex (two-float) operations necessarily take longer than plain float computations, but the difference is small in my non-rigorous tests, less than 10%.\n\nAn output wrapper is not used unless it's needed, so this doesn't affect any other uses of `fast_callable()` in the tree.",
     "created_at": "2021-07-26T14:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -585,6 +583,7 @@ archive/issue_comments_075854.json:
 
 Replying to [comment:18 mkoeppe]:
 > OK, thanks for the explanation. Then I would suggest that we declare the issue of this ticket as "minor" and set it aside for later consideration. 
+
 
 I actually hold a grudge against this bug from back when I was generating plots programmatically and the random appearance of `0.000000000001*I` would kill the whole thing after an hour, so I haven't given up.
 
@@ -601,7 +600,7 @@ An output wrapper is not used unless it's needed, so this doesn't affect any oth
 archive/issue_comments_075855.json:
 ```json
 {
-    "body": "This looks like a fine approach. I won't have time before mid August to look at it in detail. Just a quick comment:\n\n```\n+        # This tolerance was not chosen for any particular reason.\n+        if abs(ipart) < 1e-8:\n+            return self._output(rpart)\n+        else:\n+            return self._output(\"nan\")\n```\n\nProbably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).",
+    "body": "This looks like a fine approach. I won't have time before mid August to look at it in detail. Just a quick comment:\n\n```\n+        # This tolerance was not chosen for any particular reason.\n+        if abs(ipart) < 1e-8:\n+            return self._output(rpart)\n+        else:\n+            return self._output(\"nan\")\n```\nProbably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).",
     "created_at": "2021-07-26T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -619,7 +618,6 @@ This looks like a fine approach. I won't have time before mid August to look at 
 +        else:
 +            return self._output("nan")
 ```
-
 Probably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).
 
 
@@ -647,7 +645,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075857.json:
 ```json
 {
-    "body": "Replying to [comment:22 mkoeppe]:\n> Probably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).\n> \n\nI'm glad you brought this up. I swept it under the rug when I had fifteen things on my internal problem stack, but it's a code smell: using a fixed tolerance isn't right, but adding the argument to `fast_callable()` and trying to explain how it will be used exposes too many implementation details.\n\nI think I can simplify things even further.",
+    "body": "Replying to [comment:22 mkoeppe]:\n> Probably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).\n> \n\n\nI'm glad you brought this up. I swept it under the rug when I had fifteen things on my internal problem stack, but it's a code smell: using a fixed tolerance isn't right, but adding the argument to `fast_callable()` and trying to explain how it will be used exposes too many implementation details.\n\nI think I can simplify things even further.",
     "created_at": "2021-07-26T23:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -659,6 +657,7 @@ archive/issue_comments_075857.json:
 Replying to [comment:22 mkoeppe]:
 > Probably best to make these tolerances user-configurable (as an optional init argument of OutputWrapper and optional argument of `fast_callable`).
 > 
+
 
 I'm glad you brought this up. I swept it under the rug when I had fifteen things on my internal problem stack, but it's a code smell: using a fixed tolerance isn't right, but adding the argument to `fast_callable()` and trying to explain how it will be used exposes too many implementation details.
 
@@ -761,7 +760,7 @@ This is looking nice. Similar to what I said in comment:22, I think the imaginar
 archive/issue_comments_075863.json:
 ```json
 {
-    "body": "Replying to [comment:27 mkoeppe]:\n> This is looking nice. Similar to what I said in comment:22, I think the imaginary tolerance should be customizable on the level of the plot functions -- in the same way that options such as `detect_poles`, `adaptive_tolerance` are offered.\n\nThose only work for the `plot()` function, and not for anything else that calls `setup_for_eval_on_grid()`. But once #32234 gets reviewed, I guess I wouldn't mind adding `imaginary_tolerance` to `plot.options`. In that case, we should probably go back later and try to make the options to the various plotting functions consistent (in another ticket).",
+    "body": "Replying to [comment:27 mkoeppe]:\n> This is looking nice. Similar to what I said in comment:22, I think the imaginary tolerance should be customizable on the level of the plot functions -- in the same way that options such as `detect_poles`, `adaptive_tolerance` are offered.\n\n\nThose only work for the `plot()` function, and not for anything else that calls `setup_for_eval_on_grid()`. But once #32234 gets reviewed, I guess I wouldn't mind adding `imaginary_tolerance` to `plot.options`. In that case, we should probably go back later and try to make the options to the various plotting functions consistent (in another ticket).",
     "created_at": "2021-08-19T13:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -773,6 +772,7 @@ archive/issue_comments_075863.json:
 Replying to [comment:27 mkoeppe]:
 > This is looking nice. Similar to what I said in comment:22, I think the imaginary tolerance should be customizable on the level of the plot functions -- in the same way that options such as `detect_poles`, `adaptive_tolerance` are offered.
 
+
 Those only work for the `plot()` function, and not for anything else that calls `setup_for_eval_on_grid()`. But once #32234 gets reviewed, I guess I wouldn't mind adding `imaginary_tolerance` to `plot.options`. In that case, we should probably go back later and try to make the options to the various plotting functions consistent (in another ticket).
 
 
@@ -782,7 +782,7 @@ Those only work for the `plot()` function, and not for anything else that calls 
 archive/issue_comments_075864.json:
 ```json
 {
-    "body": "Here's a rebase and the `plot.options` interface. I still need to look closer at what's going on with `real_nth_root()` though; what's there is a hack.\n----\nNew commits:",
+    "body": "Here's a rebase and the `plot.options` interface. I still need to look closer at what's going on with `real_nth_root()` though; what's there is a hack.\n\n---\nNew commits:",
     "created_at": "2021-10-21T00:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -792,7 +792,8 @@ archive/issue_comments_075864.json:
 ```
 
 Here's a rebase and the `plot.options` interface. I still need to look closer at what's going on with `real_nth_root()` though; what's there is a hack.
-----
+
+---
 New commits:
 
 
@@ -874,7 +875,7 @@ The `real_nth_root()` fix reveals a new issue that may arise in some cases: symb
 archive/issue_comments_075869.json:
 ```json
 {
-    "body": "rebased branch, with one `\"\"\" -> r\"\"\"` change\n----\nNew commits:",
+    "body": "rebased branch, with one `\"\"\" -> r\"\"\"` change\n\n---\nNew commits:",
     "created_at": "2021-12-03T10:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -884,7 +885,8 @@ archive/issue_comments_075869.json:
 ```
 
 rebased branch, with one `""" -> r"""` change
-----
+
+---
 New commits:
 
 
@@ -985,7 +987,7 @@ Don't patchbots usually give higher priority to
 archive/issue_comments_075875.json:
 ```json
 {
-    "body": "Replying to [comment:37 slelievre]:\n> Don't patchbots usually give higher priority to\n> \"needs review\" than \"positive review\"?\nI meant buildbots",
+    "body": "Replying to [comment:37 slelievre]:\n> Don't patchbots usually give higher priority to\n> \"needs review\" than \"positive review\"?\n\nI meant buildbots",
     "created_at": "2021-12-03T13:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -997,6 +999,7 @@ archive/issue_comments_075875.json:
 Replying to [comment:37 slelievre]:
 > Don't patchbots usually give higher priority to
 > "needs review" than "positive review"?
+
 I meant buildbots
 
 
@@ -1060,7 +1063,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_075879.json:
 ```json
 {
-    "body": "On OSX:\n\n```\n**********************************************************************\nFile \"src/sage/plot/plot.py\", line 3943, in sage.plot.plot.?\nFailed example:\n    generate_plot_points(sin(x).function(x), (-pi, pi), randomize=False)\nExpected:\n    [(-3.141592653589793, -1.2246...e-16), (-2.748893571891069,\n    -0.3826834323650899), (-2.356194490192345, -0.707106781186547...),\n    (-2.1598449493429825, -0.831469612302545...), (-1.9634954084936207,\n    -0.9238795325112867), (-1.7671458676442586, -0.9807852804032304),\n    (-1.5707963267948966, -1.0), (-1.3744467859455345,\n    -0.9807852804032304), (-1.1780972450961724, -0.9238795325112867),\n    (-0.9817477042468103, -0.831469612302545...), (-0.7853981633974483,\n    -0.707106781186547...), (-0.39269908169872414, -0.3826834323650898),\n    (0.0, 0.0), (0.39269908169872414, 0.3826834323650898),\n    (0.7853981633974483, 0.707106781186547...), (0.9817477042468103,\n    0.831469612302545...), (1.1780972450961724, 0.9238795325112867),\n    (1.3744467859455345, 0.9807852804032304), (1.5707963267948966, 1.0),\n    (1.7671458676442586, 0.9807852804032304), (1.9634954084936207,\n    0.9238795325112867), (2.1598449493429825, 0.831469612302545...),\n    (2.356194490192345, 0.707106781186547...), (2.748893571891069,\n    0.3826834323650899), (3.141592653589793, 1.2246...e-16)]\nGot:\n    [(-3.141592653589793, -1.2246467991473532e-16),\n     (-2.748893571891069, -0.38268343236508984),\n     (-2.356194490192345, -0.7071067811865476),\n     (-2.1598449493429825, -0.8314696123025455),\n     (-1.9634954084936207, -0.9238795325112867),\n     (-1.7671458676442586, -0.9807852804032304),\n     (-1.5707963267948966, -1.0),\n     (-1.3744467859455345, -0.9807852804032304),\n     (-1.1780972450961724, -0.9238795325112867),\n     (-0.9817477042468103, -0.8314696123025451),\n     (-0.7853981633974483, -0.7071067811865475),\n     (-0.39269908169872414, -0.3826834323650898),\n     (0.0, 0.0),\n     (0.39269908169872414, 0.3826834323650898),\n     (0.7853981633974483, 0.7071067811865475),\n     (0.9817477042468103, 0.8314696123025451),\n     (1.1780972450961724, 0.9238795325112867),\n     (1.3744467859455345, 0.9807852804032304),\n     (1.5707963267948966, 1.0),\n     (1.7671458676442586, 0.9807852804032304),\n     (1.9634954084936207, 0.9238795325112867),\n     (2.1598449493429825, 0.8314696123025455),\n     (2.356194490192345, 0.7071067811865476),\n     (2.748893571891069, 0.38268343236508984),\n     (3.141592653589793, 1.2246467991473532e-16)]\n**********************************************************************\n1 item had failures:\n   1 of  44 in sage.plot.plot.?\n    [464 tests, 1 failure, 64.40 s]\n----------------------------------------------------------------------\nsage -t --long --random-seed=70775727671966200967886888406969327388 src/sage/plot/plot.py  # 1 doctest failed\n----------------------------------------------------------------------\n```\n",
+    "body": "On OSX:\n\n```\n**********************************************************************\nFile \"src/sage/plot/plot.py\", line 3943, in sage.plot.plot.?\nFailed example:\n    generate_plot_points(sin(x).function(x), (-pi, pi), randomize=False)\nExpected:\n    [(-3.141592653589793, -1.2246...e-16), (-2.748893571891069,\n    -0.3826834323650899), (-2.356194490192345, -0.707106781186547...),\n    (-2.1598449493429825, -0.831469612302545...), (-1.9634954084936207,\n    -0.9238795325112867), (-1.7671458676442586, -0.9807852804032304),\n    (-1.5707963267948966, -1.0), (-1.3744467859455345,\n    -0.9807852804032304), (-1.1780972450961724, -0.9238795325112867),\n    (-0.9817477042468103, -0.831469612302545...), (-0.7853981633974483,\n    -0.707106781186547...), (-0.39269908169872414, -0.3826834323650898),\n    (0.0, 0.0), (0.39269908169872414, 0.3826834323650898),\n    (0.7853981633974483, 0.707106781186547...), (0.9817477042468103,\n    0.831469612302545...), (1.1780972450961724, 0.9238795325112867),\n    (1.3744467859455345, 0.9807852804032304), (1.5707963267948966, 1.0),\n    (1.7671458676442586, 0.9807852804032304), (1.9634954084936207,\n    0.9238795325112867), (2.1598449493429825, 0.831469612302545...),\n    (2.356194490192345, 0.707106781186547...), (2.748893571891069,\n    0.3826834323650899), (3.141592653589793, 1.2246...e-16)]\nGot:\n    [(-3.141592653589793, -1.2246467991473532e-16),\n     (-2.748893571891069, -0.38268343236508984),\n     (-2.356194490192345, -0.7071067811865476),\n     (-2.1598449493429825, -0.8314696123025455),\n     (-1.9634954084936207, -0.9238795325112867),\n     (-1.7671458676442586, -0.9807852804032304),\n     (-1.5707963267948966, -1.0),\n     (-1.3744467859455345, -0.9807852804032304),\n     (-1.1780972450961724, -0.9238795325112867),\n     (-0.9817477042468103, -0.8314696123025451),\n     (-0.7853981633974483, -0.7071067811865475),\n     (-0.39269908169872414, -0.3826834323650898),\n     (0.0, 0.0),\n     (0.39269908169872414, 0.3826834323650898),\n     (0.7853981633974483, 0.7071067811865475),\n     (0.9817477042468103, 0.8314696123025451),\n     (1.1780972450961724, 0.9238795325112867),\n     (1.3744467859455345, 0.9807852804032304),\n     (1.5707963267948966, 1.0),\n     (1.7671458676442586, 0.9807852804032304),\n     (1.9634954084936207, 0.9238795325112867),\n     (2.1598449493429825, 0.8314696123025455),\n     (2.356194490192345, 0.7071067811865476),\n     (2.748893571891069, 0.38268343236508984),\n     (3.141592653589793, 1.2246467991473532e-16)]\n**********************************************************************\n1 item had failures:\n   1 of  44 in sage.plot.plot.?\n    [464 tests, 1 failure, 64.40 s]\n----------------------------------------------------------------------\nsage -t --long --random-seed=70775727671966200967886888406969327388 src/sage/plot/plot.py  # 1 doctest failed\n----------------------------------------------------------------------\n```",
     "created_at": "2022-01-04T22:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -1130,13 +1133,12 @@ sage -t --long --random-seed=70775727671966200967886888406969327388 src/sage/plo
 
 
 
-
 ---
 
 archive/issue_comments_075880.json:
 ```json
 {
-    "body": "How about adding `# abs tol 1e-16` or using\nthe following output for the doctest:\n\n```\n    [(-3.141592653589793, -1.2246...e-16),\n     (-2.748893571891069, -0.382683432365089...),\n     (-2.356194490192345, -0.707106781186547...),\n     (-2.1598449493429825, -0.831469612302545...),\n     (-1.9634954084936207, -0.9238795325112867),\n     (-1.7671458676442586, -0.9807852804032304),\n     (-1.5707963267948966, -1.0),\n     (-1.3744467859455345, -0.9807852804032304),\n     (-1.1780972450961724, -0.9238795325112867),\n     (-0.9817477042468103, -0.831469612302545...),\n     (-0.7853981633974483, -0.707106781186547...),\n     (-0.39269908169872414, -0.3826834323650898),\n     (0.0, 0.0),\n     (0.39269908169872414, 0.3826834323650898),\n     (0.7853981633974483, 0.707106781186547...),\n     (0.9817477042468103, 0.831469612302545...),\n     (1.1780972450961724, 0.9238795325112867),\n     (1.3744467859455345, 0.9807852804032304),\n     (1.5707963267948966, 1.0),\n     (1.7671458676442586, 0.9807852804032304),\n     (1.9634954084936207, 0.9238795325112867),\n     (2.1598449493429825, 0.831469612302545...),\n     (2.356194490192345, 0.707106781186547...),\n     (2.748893571891069, 0.382683432365089...),\n     (3.141592653589793, 1.2246...e-16)]\n```\n",
+    "body": "How about adding `# abs tol 1e-16` or using\nthe following output for the doctest:\n\n```\n    [(-3.141592653589793, -1.2246...e-16),\n     (-2.748893571891069, -0.382683432365089...),\n     (-2.356194490192345, -0.707106781186547...),\n     (-2.1598449493429825, -0.831469612302545...),\n     (-1.9634954084936207, -0.9238795325112867),\n     (-1.7671458676442586, -0.9807852804032304),\n     (-1.5707963267948966, -1.0),\n     (-1.3744467859455345, -0.9807852804032304),\n     (-1.1780972450961724, -0.9238795325112867),\n     (-0.9817477042468103, -0.831469612302545...),\n     (-0.7853981633974483, -0.707106781186547...),\n     (-0.39269908169872414, -0.3826834323650898),\n     (0.0, 0.0),\n     (0.39269908169872414, 0.3826834323650898),\n     (0.7853981633974483, 0.707106781186547...),\n     (0.9817477042468103, 0.831469612302545...),\n     (1.1780972450961724, 0.9238795325112867),\n     (1.3744467859455345, 0.9807852804032304),\n     (1.5707963267948966, 1.0),\n     (1.7671458676442586, 0.9807852804032304),\n     (1.9634954084936207, 0.9238795325112867),\n     (2.1598449493429825, 0.831469612302545...),\n     (2.356194490192345, 0.707106781186547...),\n     (2.748893571891069, 0.382683432365089...),\n     (3.141592653589793, 1.2246...e-16)]\n```",
     "created_at": "2022-01-05T04:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -1178,7 +1180,6 @@ the following output for the doctest:
 
 
 
-
 ---
 
 archive/issue_comments_075881.json:
@@ -1203,7 +1204,7 @@ is not needed if it ends a docstring.
 archive/issue_comments_075882.json:
 ```json
 {
-    "body": "I've reworked that doctest to check something useful (and added `abs tol`) instead of a specific blob of digits.\n----\nNew commits:",
+    "body": "I've reworked that doctest to check something useful (and added `abs tol`) instead of a specific blob of digits.\n\n---\nNew commits:",
     "created_at": "2022-01-05T15:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -1213,7 +1214,8 @@ archive/issue_comments_075882.json:
 ```
 
 I've reworked that doctest to check something useful (and added `abs tol`) instead of a specific blob of digits.
-----
+
+---
 New commits:
 
 
@@ -1277,7 +1279,7 @@ lgtm
 archive/issue_comments_075886.json:
 ```json
 {
-    "body": "Class `FastCallablePlotWrapper`, method `__call__`,\ntest block needs double-colon:\n\n\n```diff\n-        Evaluation never fails and always returns a ``float``:\n+        Evaluation never fails and always returns a ``float``::\n```\n\n\nIt might also be worth checking why all patchbots\nreport pyflakes errors.",
+    "body": "Class `FastCallablePlotWrapper`, method `__call__`,\ntest block needs double-colon:\n\n```diff\n-        Evaluation never fails and always returns a ``float``:\n+        Evaluation never fails and always returns a ``float``::\n```\n\nIt might also be worth checking why all patchbots\nreport pyflakes errors.",
     "created_at": "2022-01-08T06:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8450",
     "type": "issue_comment",
@@ -1289,12 +1291,10 @@ archive/issue_comments_075886.json:
 Class `FastCallablePlotWrapper`, method `__call__`,
 test block needs double-colon:
 
-
 ```diff
 -        Evaluation never fails and always returns a ``float``:
 +        Evaluation never fails and always returns a ``float``::
 ```
-
 
 It might also be worth checking why all patchbots
 report pyflakes errors.

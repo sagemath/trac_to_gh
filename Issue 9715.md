@@ -3,7 +3,7 @@
 archive/issues_009715.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  dkirkby @jasongrout @qed777\n\nAs reported on :\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a\n\nThe only random part being the graph generation, it shouldn't be hard to find a workaround....\n\n\n```\n>> sage -t  devel/sage-main/sage/graphs/graph.py\n>> **********************************************************************\n>> File \"/Volumes/E/sage-4.5.2.rc0/devel/sage-main/sage/graphs/graph.py\",\n>> line 1347:\n>>     sage: cycle.order() % 2 == 0\n>> Exception raised:\n>>     Traceback (most recent call last):\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1231, in run_one_test\n>>         self.run_one_example(test, example, filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line\n>> 38, in run_one_example\n>>         OrigDocTestRunner.run_one_example(self, test, example,\n>> filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1172, in run_one_example\n>>         compileflags, 1) in test.globs\n>>       File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n>>         cycle.order() % Integer(2) == Integer(0)###line 1347:\n>>     sage: cycle.order() % 2 == 0\n>>     AttributeError: 'bool' object has no attribute 'order' \n```\n\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9715\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  dkirkby @jasongrout @qed777\n\nAs reported on :\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a\n\nThe only random part being the graph generation, it shouldn't be hard to find a workaround....\n\n```\n>> sage -t  devel/sage-main/sage/graphs/graph.py\n>> **********************************************************************\n>> File \"/Volumes/E/sage-4.5.2.rc0/devel/sage-main/sage/graphs/graph.py\",\n>> line 1347:\n>>     sage: cycle.order() % 2 == 0\n>> Exception raised:\n>>     Traceback (most recent call last):\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1231, in run_one_test\n>>         self.run_one_example(test, example, filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line\n>> 38, in run_one_example\n>>         OrigDocTestRunner.run_one_example(self, test, example,\n>> filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1172, in run_one_example\n>>         compileflags, 1) in test.globs\n>>       File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n>>         cycle.order() % Integer(2) == Integer(0)###line 1347:\n>>     sage: cycle.order() % 2 == 0\n>>     AttributeError: 'bool' object has no attribute 'order' \n```\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9715\n\n",
     "created_at": "2010-08-10T03:37:28Z",
     "labels": [
         "component: graph theory",
@@ -25,7 +25,6 @@ As reported on :
 http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a
 
 The only random part being the graph generation, it shouldn't be hard to find a workaround....
-
 
 ```
 >> sage -t  devel/sage-main/sage/graphs/graph.py
@@ -50,7 +49,6 @@ The only random part being the graph generation, it shouldn't be hard to find a 
 >>     sage: cycle.order() % 2 == 0
 >>     AttributeError: 'bool' object has no attribute 'order' 
 ```
-
 
 Nathann
 
@@ -193,7 +191,7 @@ Resolution: duplicate
 archive/issue_comments_094636.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> This ticket is now invalid because of #10081 and #9422\n\nAlso related: #9925.",
+    "body": "Replying to [comment:2 ncohen]:\n> This ticket is now invalid because of #10081 and #9422\n\n\nAlso related: #9925.",
     "created_at": "2010-10-19T21:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
@@ -204,5 +202,6 @@ archive/issue_comments_094636.json:
 
 Replying to [comment:2 ncohen]:
 > This ticket is now invalid because of #10081 and #9422
+
 
 Also related: #9925.

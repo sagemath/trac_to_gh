@@ -3,7 +3,7 @@
 archive/issues_006965.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @jasongrout\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):\n\n```\nI should have posted this question here instead of at #6865, as the\nanswer is probably interesting to many people here.  I'd heard things\nabout MANIFEST.in, but for some reason didn't have a clear idea of what\nit was or what I should do about it.  It would be nice if something was\nadded to the developer's guide... \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6965\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):\n\n```\nI should have posted this question here instead of at #6865, as the\nanswer is probably interesting to many people here.  I'd heard things\nabout MANIFEST.in, but for some reason didn't have a clear idea of what\nit was or what I should do about it.  It would be nice if something was\nadded to the developer's guide... \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6965\n\n",
     "created_at": "2009-09-20T02:56:51Z",
     "labels": [
         "component: documentation"
@@ -28,7 +28,6 @@ about MANIFEST.in, but for some reason didn't have a clear idea of what
 it was or what I should do about it.  It would be nice if something was
 added to the developer's guide... 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6965
 
@@ -59,7 +58,7 @@ For future reference: see [http://www.python.org/doc/2.6.2/distutils/sourcedist.
 archive/issue_comments_057517.json:
 ```json
 {
-    "body": "> For future reference: see http://www.python.org/doc/2.6.2/distutils/sourcedist.html#specifying-the-files-to-distribute for the relevant part of the Python distribution.\n\n(change \"distribution\" to \"documentation\")",
+    "body": "> For future reference: see http://www.python.org/doc/2.6.2/distutils/sourcedist.html#specifying-the-files-to-distribute for the relevant part of the Python distribution.\n\n\n(change \"distribution\" to \"documentation\")",
     "created_at": "2009-09-21T23:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
@@ -69,6 +68,7 @@ archive/issue_comments_057517.json:
 ```
 
 > For future reference: see http://www.python.org/doc/2.6.2/distutils/sourcedist.html#specifying-the-files-to-distribute for the relevant part of the Python distribution.
+
 
 (change "distribution" to "documentation")
 

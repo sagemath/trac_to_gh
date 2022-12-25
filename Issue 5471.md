@@ -3,7 +3,7 @@
 archive/issues_005471.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nConsider the following Sage session (Sage 3.4.rc1):\n\n```\nsage: var('a b c')\n(a, b, c)\nsage: first = a + b + c\nsage: first._operands[0]._operands[0]\na\nsage: first._operands[0]._operands[0] is a\nTrue\nsage: second = loads(dumps(first))\nsage: second._operands[0]._operands[0]\na\nsage: second._operands[0]._operands[0] is a\nFalse\n```\n\nThe last result is unexpected, and may lead to considerable confusion. The topic was raised by \"Maurizio\" in the thread http://groups.google.com/group/sage-devel/browse_thread/thread/9767e3a8d538438d/9ab45b4fa1ce2e36#9ab45b4fa1ce2e36\n\nIssue created by migration from https://trac.sagemath.org/ticket/5471\n\n",
+    "body": "Assignee: tbd\n\nConsider the following Sage session (Sage 3.4.rc1):\n\n```\nsage: var('a b c')\n(a, b, c)\nsage: first = a + b + c\nsage: first._operands[0]._operands[0]\na\nsage: first._operands[0]._operands[0] is a\nTrue\nsage: second = loads(dumps(first))\nsage: second._operands[0]._operands[0]\na\nsage: second._operands[0]._operands[0] is a\nFalse\n```\nThe last result is unexpected, and may lead to considerable confusion. The topic was raised by \"Maurizio\" in the thread http://groups.google.com/group/sage-devel/browse_thread/thread/9767e3a8d538438d/9ab45b4fa1ce2e36#9ab45b4fa1ce2e36\n\nIssue created by migration from https://trac.sagemath.org/ticket/5471\n\n",
     "created_at": "2009-03-10T20:12:58Z",
     "labels": [
         "component: symbolics",
@@ -35,7 +35,6 @@ a
 sage: second._operands[0]._operands[0] is a
 False
 ```
-
 The last result is unexpected, and may lead to considerable confusion. The topic was raised by "Maurizio" in the thread http://groups.google.com/group/sage-devel/browse_thread/thread/9767e3a8d538438d/9ab45b4fa1ce2e36#9ab45b4fa1ce2e36
 
 Issue created by migration from https://trac.sagemath.org/ticket/5471

@@ -77,7 +77,7 @@ Is this related to http://trac.sagemath.org/sage_trac/ticket/2023 ?
 archive/issue_comments_042656.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> Is this related to http://trac.sagemath.org/sage_trac/ticket/2023 ?\n\nThat's indeed the ascii art version of 2023. Thanks for the pointer.",
+    "body": "Replying to [comment:4 wdj]:\n> Is this related to http://trac.sagemath.org/sage_trac/ticket/2023 ?\n\n\nThat's indeed the ascii art version of 2023. Thanks for the pointer.",
     "created_at": "2009-04-15T16:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
@@ -89,6 +89,7 @@ archive/issue_comments_042656.json:
 Replying to [comment:4 wdj]:
 > Is this related to http://trac.sagemath.org/sage_trac/ticket/2023 ?
 
+
 That's indeed the ascii art version of 2023. Thanks for the pointer.
 
 
@@ -98,7 +99,7 @@ That's indeed the ascii art version of 2023. Thanks for the pointer.
 archive/issue_comments_042657.json:
 ```json
 {
-    "body": "I think the spirit of this patch is the same as #2023.\n\nThe idea of this patch is just that if the Cartan type is that\nof a classical Lie algebra, you should be able to *somehow*\naccess it's Dynkin diagram. The solution here is making it part of the string\nreturned by the `__repr__` method of the class.\n\nWe follow the Bourbaki conventions, which is the same as the\nprogrammed-in Cartan types. These diagrams are identical to\nthose produced by LiE, so you can have them already if you\ninstall that optional package.\n\n\n```\nsage: CartanType(\"E6\").dynkin_diagram()\n\n        O 2\n        |\n        |\nO---O---O---O---O\n1   3   4   5   6   \nE6\n```\n\n\nYou want this if you need to be reminded of what labeling\nconvention is used. If the Cartan type is not recognized, we get the\nold behavior. Thus:\n\n\n```\nsage: CartanType(['E',6,1]).dynkin_diagram()\nDynkin diagram of type ['E', 6, 1]\n```\n\n\nIt might be more convenient if untwisted affine types gave the\nextended Dynkin diagram, thus:\n\n\n```\nsage: CartanType(['E',6,1]).dynkin_diagram()\n        O 0 \n        |\n        |\n        O 2\n        |\n        |\nO---O---O---O---O\n1   3   4   5   6\nE6~\n```\n\n\nBeyond that, one might implement Dynkin diagrams for twisted\naffine types, but that seems less urgent.",
+    "body": "I think the spirit of this patch is the same as #2023.\n\nThe idea of this patch is just that if the Cartan type is that\nof a classical Lie algebra, you should be able to *somehow*\naccess it's Dynkin diagram. The solution here is making it part of the string\nreturned by the `__repr__` method of the class.\n\nWe follow the Bourbaki conventions, which is the same as the\nprogrammed-in Cartan types. These diagrams are identical to\nthose produced by LiE, so you can have them already if you\ninstall that optional package.\n\n```\nsage: CartanType(\"E6\").dynkin_diagram()\n\n        O 2\n        |\n        |\nO---O---O---O---O\n1   3   4   5   6   \nE6\n```\n\nYou want this if you need to be reminded of what labeling\nconvention is used. If the Cartan type is not recognized, we get the\nold behavior. Thus:\n\n```\nsage: CartanType(['E',6,1]).dynkin_diagram()\nDynkin diagram of type ['E', 6, 1]\n```\n\nIt might be more convenient if untwisted affine types gave the\nextended Dynkin diagram, thus:\n\n```\nsage: CartanType(['E',6,1]).dynkin_diagram()\n        O 0 \n        |\n        |\n        O 2\n        |\n        |\nO---O---O---O---O\n1   3   4   5   6\nE6~\n```\n\nBeyond that, one might implement Dynkin diagrams for twisted\naffine types, but that seems less urgent.",
     "created_at": "2009-04-15T20:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
@@ -119,7 +120,6 @@ programmed-in Cartan types. These diagrams are identical to
 those produced by LiE, so you can have them already if you
 install that optional package.
 
-
 ```
 sage: CartanType("E6").dynkin_diagram()
 
@@ -131,21 +131,17 @@ O---O---O---O---O
 E6
 ```
 
-
 You want this if you need to be reminded of what labeling
 convention is used. If the Cartan type is not recognized, we get the
 old behavior. Thus:
-
 
 ```
 sage: CartanType(['E',6,1]).dynkin_diagram()
 Dynkin diagram of type ['E', 6, 1]
 ```
 
-
 It might be more convenient if untwisted affine types gave the
 extended Dynkin diagram, thus:
-
 
 ```
 sage: CartanType(['E',6,1]).dynkin_diagram()
@@ -159,7 +155,6 @@ O---O---O---O---O
 1   3   4   5   6
 E6~
 ```
-
 
 Beyond that, one might implement Dynkin diagrams for twisted
 affine types, but that seems less urgent.

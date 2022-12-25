@@ -3,7 +3,7 @@
 archive/issues_005628.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:\n>\n> I did an upgrade from 3.4 as follows:\n>\n> 1. sage -br main  ---> switch to main, which is CLEAN\n> 2. sage -upgrade\n> http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/sage-3.4.1.alpha0\n> 3. once that was finished, I pulled  the new changes into my sage-brandt branch\n> 4. applied the rebased 5520 + my tiny patch\n> 5. sage -br brandt\n>\n> But now, \"sage -br main\" (which is now clean 3.4.1.alpha0) causes the\n> same issue.\n>\n> Gonzalo\n\nJust delete \n   local/lib/sage-flags.txt\n\nAlso, I've opened a blocker ticket about this, since everybody who upgrades will run into exactly the same problem.  \n\nThe problem is that the new version of the script that checks the flags doesn't see sse4_1 anymore (nothing in Sage specifically uses that), but it's still in your old sage-flags.txt file.  Two possible solutions:\n   (1) delete sage-flags.txt as part of \"sage -upgrade\"\n   (2) make it so sse4_1 is specifically ignored.\n\nI like (1). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5628\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:\n>\n> I did an upgrade from 3.4 as follows:\n>\n> 1. sage -br main  ---> switch to main, which is CLEAN\n> 2. sage -upgrade\n> http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/sage-3.4.1.alpha0\n> 3. once that was finished, I pulled  the new changes into my sage-brandt branch\n> 4. applied the rebased 5520 + my tiny patch\n> 5. sage -br brandt\n>\n> But now, \"sage -br main\" (which is now clean 3.4.1.alpha0) causes the\n> same issue.\n>\n> Gonzalo\n\nJust delete \n   local/lib/sage-flags.txt\n\nAlso, I've opened a blocker ticket about this, since everybody who upgrades will run into exactly the same problem.  \n\nThe problem is that the new version of the script that checks the flags doesn't see sse4_1 anymore (nothing in Sage specifically uses that), but it's still in your old sage-flags.txt file.  Two possible solutions:\n   (1) delete sage-flags.txt as part of \"sage -upgrade\"\n   (2) make it so sse4_1 is specifically ignored.\n\nI like (1). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5628\n\n",
     "created_at": "2009-03-29T03:29:59Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_005628.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:
@@ -48,7 +47,6 @@ The problem is that the new version of the script that checks the flags doesn't 
 
 I like (1). 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5628
 
@@ -101,7 +99,7 @@ Otherwise, doing `sage -upgrade` followed by `sage -bdist` ends up with a sage b
 archive/issue_comments_043865.json:
 ```json
 {
-    "body": "I have an alternative fix:\n\n```\ndiff -r 804879ae0134 sage-location\n--- a/sage-location     Thu Mar 26 16:43:48 2009 -0700\n+++ b/sage-location     Sat Mar 28 22:32:50 2009 -0700\n@@ -77,7 +77,7 @@\n     if not os.path.exists(flags_file): return\n     # We check that the processor flags of the original build are a\n     # subset of the new machine.  If not, we print a massive warning.\n-    X = set(open(flags_file).read().split())\n+    X = set(open(flags_file).read().split()).intersection(FLAGS)\n     Y = set(get_flags_info().split())\n     if not X.issubset(Y):\n         print \"\"\n```\n\n\nThis makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.",
+    "body": "I have an alternative fix:\n\n```\ndiff -r 804879ae0134 sage-location\n--- a/sage-location     Thu Mar 26 16:43:48 2009 -0700\n+++ b/sage-location     Sat Mar 28 22:32:50 2009 -0700\n@@ -77,7 +77,7 @@\n     if not os.path.exists(flags_file): return\n     # We check that the processor flags of the original build are a\n     # subset of the new machine.  If not, we print a massive warning.\n-    X = set(open(flags_file).read().split())\n+    X = set(open(flags_file).read().split()).intersection(FLAGS)\n     Y = set(get_flags_info().split())\n     if not X.issubset(Y):\n         print \"\"\n```\n\nThis makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.",
     "created_at": "2009-03-29T04:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
@@ -126,7 +124,6 @@ diff -r 804879ae0134 sage-location
      if not X.issubset(Y):
          print ""
 ```
-
 
 This makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.
 

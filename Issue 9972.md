@@ -89,7 +89,7 @@ This is not very difficult to review.
 archive/issue_comments_099901.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> This is not very difficult to review. \n\nThanks.  Please see also #10001.",
+    "body": "Replying to [comment:2 drkirkby]:\n> This is not very difficult to review. \n\n\nThanks.  Please see also #10001.",
     "created_at": "2010-09-24T11:30:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
@@ -100,6 +100,7 @@ archive/issue_comments_099901.json:
 
 Replying to [comment:2 drkirkby]:
 > This is not very difficult to review. 
+
 
 Thanks.  Please see also #10001.
 

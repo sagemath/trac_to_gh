@@ -292,7 +292,7 @@ The notebook is deprecated, so maybe we can close this old ticket ?
 archive/issue_comments_018052.json:
 ```json
 {
-    "body": "Replying to [comment:7 chapoton]:\n> The notebook is deprecated, so maybe we can close this old ticket ?\n\nYes, definitely.",
+    "body": "Replying to [comment:7 chapoton]:\n> The notebook is deprecated, so maybe we can close this old ticket ?\n\n\nYes, definitely.",
     "created_at": "2019-06-16T18:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2633",
     "type": "issue_comment",
@@ -303,6 +303,7 @@ archive/issue_comments_018052.json:
 
 Replying to [comment:7 chapoton]:
 > The notebook is deprecated, so maybe we can close this old ticket ?
+
 
 Yes, definitely.
 

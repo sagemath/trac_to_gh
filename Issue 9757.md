@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9758
 archive/issue_comments_095418.json:
 ```json
 {
-    "body": "Kirkby said:\n> It would be good to state on the ticket what level of student project\n> this is (undergrad, postgrad), and the skill set needed (C, Python\n> etc). I expect you would prefer it in Python, though I think\n> personally a C implementation like Mark's, which you can easily call\n> from Python, would be more beneficial to the scientific community in\n> general - not everyone is using Sage/Python.\n\nGood idea.  \n\nLevel: graduate student or greater, with a background in number theory.\n\nSkill set needed:  read C, write Python, possibly Cython later for speed purposes. \n\nC versus Python: the implementation can depend on absolutely anything in Sage; for this I'm not concerned about providing a general tool for the scientific community.",
+    "body": "Kirkby said:\n> It would be good to state on the ticket what level of student project\n> this is (undergrad, postgrad), and the skill set needed (C, Python\n> etc). I expect you would prefer it in Python, though I think\n> personally a C implementation like Mark's, which you can easily call\n> from Python, would be more beneficial to the scientific community in\n> general - not everyone is using Sage/Python.\n\n\nGood idea.  \n\nLevel: graduate student or greater, with a background in number theory.\n\nSkill set needed:  read C, write Python, possibly Cython later for speed purposes. \n\nC versus Python: the implementation can depend on absolutely anything in Sage; for this I'm not concerned about providing a general tool for the scientific community.",
     "created_at": "2010-08-19T00:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9757",
     "type": "issue_comment",
@@ -56,6 +56,7 @@ Kirkby said:
 > personally a C implementation like Mark's, which you can easily call
 > from Python, would be more beneficial to the scientific community in
 > general - not everyone is using Sage/Python.
+
 
 Good idea.  
 
@@ -98,7 +99,7 @@ Dave
 archive/issue_comments_095420.json:
 ```json
 {
-    "body": "Here's one case which can be used for testing (I have correspondence with Mark Watkins which explains the problem and how to fix it, and will open a new ticket for that):\n\n```\nsage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115]) \nsage: E.modular_degree(algorithm='magma')                         \n2417135616\n```\n\nbut\n\n```\nsage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115]) \nsage: E.modular_degree()    \n# boom\n```\n",
+    "body": "Here's one case which can be used for testing (I have correspondence with Mark Watkins which explains the problem and how to fix it, and will open a new ticket for that):\n\n```\nsage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115]) \nsage: E.modular_degree(algorithm='magma')                         \n2417135616\n```\nbut\n\n```\nsage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115]) \nsage: E.modular_degree()    \n# boom\n```",
     "created_at": "2012-09-29T22:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9757",
     "type": "issue_comment",
@@ -114,7 +115,6 @@ sage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115])
 sage: E.modular_degree(algorithm='magma')                         
 2417135616
 ```
-
 but
 
 ```
@@ -122,7 +122,6 @@ sage: E = EllipticCurve([1,-1,0,-318360868065,-69208434591226115])
 sage: E.modular_degree()    
 # boom
 ```
-
 
 
 

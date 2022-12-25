@@ -3,7 +3,7 @@
 archive/issues_006526.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nThis is one of the obstructions to switching the graph backends over to Cython by default.\n\nTo quote Franco:\n\n```\nBut all the doctest failures occur in the NaiveSuffixTreeClass, which\nis a naive implementation. This code was only intended for testing\npurposes, so I think it is fine to delete it (delete both\nNaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is\nnot used anywhere else (it should not be, if it is), because it is a\nvery slow implementation (hence, the name naive).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6526\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nThis is one of the obstructions to switching the graph backends over to Cython by default.\n\nTo quote Franco:\n\n```\nBut all the doctest failures occur in the NaiveSuffixTreeClass, which\nis a naive implementation. This code was only intended for testing\npurposes, so I think it is fine to delete it (delete both\nNaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is\nnot used anywhere else (it should not be, if it is), because it is a\nvery slow implementation (hence, the name naive).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6526\n\n",
     "created_at": "2009-07-13T19:12:33Z",
     "labels": [
         "component: combinatorics",
@@ -32,7 +32,6 @@ NaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is
 not used anywhere else (it should not be, if it is), because it is a
 very slow implementation (hence, the name naive).
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6526
 

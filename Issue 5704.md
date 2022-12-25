@@ -171,7 +171,7 @@ Michael
 archive/issue_comments_044496.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> Ironically the new file schemes/elliptic_curves/ell_egros.py was not added to the reference manual :)\n> \n> Cheers,\n> \n> Michael\nOK, I will do that!   We're still working on that chapter (Chris Wuthrich is doing some too). John",
+    "body": "Replying to [comment:4 mabshoff]:\n> Ironically the new file schemes/elliptic_curves/ell_egros.py was not added to the reference manual :)\n> \n> Cheers,\n> \n> Michael\n\nOK, I will do that!   We're still working on that chapter (Chris Wuthrich is doing some too). John",
     "created_at": "2009-04-24T08:51:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5704",
     "type": "issue_comment",
@@ -186,4 +186,5 @@ Replying to [comment:4 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 OK, I will do that!   We're still working on that chapter (Chris Wuthrich is doing some too). John

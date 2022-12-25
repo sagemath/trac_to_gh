@@ -3,7 +3,7 @@
 archive/issues_008266.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nDocumentation of words and word objects contains only pickle tests and lacks good examples :\n\n\n```\nsage: words?\n...\nDocstring:\n    \n        A class consisting of constructors for several famous words.\n        \n        TESTS::\n    \n            sage: from sage.combinat.words.word_generators import WordGenerator\n            sage: MyWordBank = WordGenerator()\n            sage: type(loads(dumps(MyWordBank)))\n            <class 'sage.combinat.words.word_generators.WordGenerator'>\n```\n\n    \n        \n\n```\nsage: w = Word(range(5))\nsage: w?\n...\nDocstring:\n    \n        TESTS::\n    \n            sage: w = Word([0,1,1,0])\n            sage: w == loads(dumps(w))\n            True\n```\n\n        \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8266\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nDocumentation of words and word objects contains only pickle tests and lacks good examples :\n\n```\nsage: words?\n...\nDocstring:\n    \n        A class consisting of constructors for several famous words.\n        \n        TESTS::\n    \n            sage: from sage.combinat.words.word_generators import WordGenerator\n            sage: MyWordBank = WordGenerator()\n            sage: type(loads(dumps(MyWordBank)))\n            <class 'sage.combinat.words.word_generators.WordGenerator'>\n```\n    \n        \n```\nsage: w = Word(range(5))\nsage: w?\n...\nDocstring:\n    \n        TESTS::\n    \n            sage: w = Word([0,1,1,0])\n            sage: w == loads(dumps(w))\n            True\n```\n        \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8266\n\n",
     "created_at": "2010-02-14T22:35:51Z",
     "labels": [
         "component: documentation"
@@ -21,7 +21,6 @@ CC:  abmasse
 
 Documentation of words and word objects contains only pickle tests and lacks good examples :
 
-
 ```
 sage: words?
 ...
@@ -36,10 +35,8 @@ Docstring:
             sage: type(loads(dumps(MyWordBank)))
             <class 'sage.combinat.words.word_generators.WordGenerator'>
 ```
-
     
         
-
 ```
 sage: w = Word(range(5))
 sage: w?
@@ -52,7 +49,6 @@ Docstring:
             sage: w == loads(dumps(w))
             True
 ```
-
         
 
 

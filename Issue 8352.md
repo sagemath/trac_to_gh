@@ -136,7 +136,7 @@ The "p2" spkg at #7552 includes the patch.
 archive/issue_comments_074473.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> The \"p2\" spkg at #7552 includes the patch.\n\nMeaning? Does this mean this ticket will be closed?\n\nJaap",
+    "body": "Replying to [comment:4 mpatel]:\n> The \"p2\" spkg at #7552 includes the patch.\n\n\nMeaning? Does this mean this ticket will be closed?\n\nJaap",
     "created_at": "2010-02-25T11:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8352",
     "type": "issue_comment",
@@ -147,6 +147,7 @@ archive/issue_comments_074473.json:
 
 Replying to [comment:4 mpatel]:
 > The "p2" spkg at #7552 includes the patch.
+
 
 Meaning? Does this mean this ticket will be closed?
 

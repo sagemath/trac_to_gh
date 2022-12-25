@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7701
 archive/issue_comments_065951.json:
 ```json
 {
-    "body": "Spkg in progress here:\n\n    http://sage.math.washington.edu/home/wstein/patches/openmpi-1.4.spkg\n\nThis doesn't work, and fails with this error:\n\n```\n/bin/bash ./libtool --tag=CC   --mode=link gcc  -O3 -DNDEBUG   -fvisibility=hidden -module -avoid-version  -o dlopen.la  dlopen.lo -ldl -ldl -lnsl -lutil  -lm\nlibtool: link: ar cru .libs/dlopen.a .libs/dlopen.o\nlibtool: link: ranlib .libs/dlopen.a\nrm: cannot remove `dlopen.la': No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"dlopen.la\" && ln -s \"../dlopen.la\" \"dlopen.la\" )\nrm: cannot remove `dlopen.la': No such file or directory\nmake[3]: *** [dlopen.la] Error 1\nmake[3]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal/libltdl'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal/libltdl'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal'\nmake: *** [all-recursive] Error 1\nError building\n```\n",
+    "body": "Spkg in progress here:\n\n    http://sage.math.washington.edu/home/wstein/patches/openmpi-1.4.spkg\n\nThis doesn't work, and fails with this error:\n\n```\n/bin/bash ./libtool --tag=CC   --mode=link gcc  -O3 -DNDEBUG   -fvisibility=hidden -module -avoid-version  -o dlopen.la  dlopen.lo -ldl -ldl -lnsl -lutil  -lm\nlibtool: link: ar cru .libs/dlopen.a .libs/dlopen.o\nlibtool: link: ranlib .libs/dlopen.a\nrm: cannot remove `dlopen.la': No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"dlopen.la\" && ln -s \"../dlopen.la\" \"dlopen.la\" )\nrm: cannot remove `dlopen.la': No such file or directory\nmake[3]: *** [dlopen.la] Error 1\nmake[3]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal/libltdl'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal/libltdl'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmpi-1.4/src/opal'\nmake: *** [all-recursive] Error 1\nError building\n```",
     "created_at": "2009-12-16T02:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ make[1]: Leaving directory `/scratch/wstein/build/sage-4.3.rc0/spkg/build/openmp
 make: *** [all-recursive] Error 1
 Error building
 ```
-
 
 
 

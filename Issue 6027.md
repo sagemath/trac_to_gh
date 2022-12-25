@@ -3,7 +3,7 @@
 archive/issues_006027.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  rdingman\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: timeit('get_memory_usage()')\n5 loops, best of 3: 486 ms per loop\n```\n\nThis causes sage/rings/tests.py to take forever in -long doctesting mode.\n| Sage Version 3.4.2, Release Date: 2009-05-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nSee http://blog.kuriositaet.de/?p=257 for a more efficient way to get the current memory used.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6027\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  rdingman\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: timeit('get_memory_usage()')\n5 loops, best of 3: 486 ms per loop\n```\nThis causes sage/rings/tests.py to take forever in -long doctesting mode.\n| Sage Version 3.4.2, Release Date: 2009-05-04                       |\n| Type notebook() for the GUI, and license() for information.        |\nSee http://blog.kuriositaet.de/?p=257 for a more efficient way to get the current memory used.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6027\n\n",
     "created_at": "2009-05-12T07:13:49Z",
     "labels": [
         "component: porting",
@@ -21,14 +21,12 @@ Assignee: mabshoff
 
 CC:  rdingman
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: timeit('get_memory_usage()')
 5 loops, best of 3: 486 ms per loop
 ```
-
 This causes sage/rings/tests.py to take forever in -long doctesting mode.
 | Sage Version 3.4.2, Release Date: 2009-05-04                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -158,7 +156,7 @@ This isn't critical for 4.0.  This would be very nice to get into 4.0.1.
 archive/issue_comments_047902.json:
 ```json
 {
-    "body": "Applies clean, tested fine on sage.math.  After patch on OS X 10.5:\n\n\n```\nsage: sage.misc.getusage.get_memory_usage()\n141.22265625\nsage: %timeit sage.misc.getusage.get_memory_usage()\n100 loops, best of 3: 5.24 ms per loop\nsage: sage.misc.darwin_utilities\nsage.misc.darwin_utilities\nsage: sage.misc.darwin_utilities.darwin_memory_usage()\n148082688L\nsage: %timeit sage.misc.darwin_utilities.darwin_memory_usage()\n100 loops, best of 3: 5.22 ms per loop\n```\n",
+    "body": "Applies clean, tested fine on sage.math.  After patch on OS X 10.5:\n\n```\nsage: sage.misc.getusage.get_memory_usage()\n141.22265625\nsage: %timeit sage.misc.getusage.get_memory_usage()\n100 loops, best of 3: 5.24 ms per loop\nsage: sage.misc.darwin_utilities\nsage.misc.darwin_utilities\nsage: sage.misc.darwin_utilities.darwin_memory_usage()\n148082688L\nsage: %timeit sage.misc.darwin_utilities.darwin_memory_usage()\n100 loops, best of 3: 5.22 ms per loop\n```",
     "created_at": "2009-06-15T19:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
@@ -168,7 +166,6 @@ archive/issue_comments_047902.json:
 ```
 
 Applies clean, tested fine on sage.math.  After patch on OS X 10.5:
-
 
 ```
 sage: sage.misc.getusage.get_memory_usage()
@@ -182,7 +179,6 @@ sage: sage.misc.darwin_utilities.darwin_memory_usage()
 sage: %timeit sage.misc.darwin_utilities.darwin_memory_usage()
 100 loops, best of 3: 5.22 ms per loop
 ```
-
 
 
 

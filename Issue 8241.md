@@ -3,7 +3,7 @@
 archive/issues_008241.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
+    "body": "Assignee: @roed314\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
     "created_at": "2010-02-11T19:54:03Z",
     "labels": [
         "component: padics"
@@ -19,13 +19,11 @@ Assignee: @roed314
 
 If K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:
 
-
 ```
 sage: K.<a> = Qp(25)
 sage: a.witt_frobenius()
 ???
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8241
 
@@ -127,7 +125,7 @@ Fixed a small problem revealed by the test-bot.
 archive/issue_comments_072734.json:
 ```json
 {
-    "body": "For consistency, these methods should also apply to Qp, with Frobenius acting as the identity map. For instance, the following should not raise an exception:\n\n```\nsage: Qp(7)(2).frobenius()\n```\n",
+    "body": "For consistency, these methods should also apply to Qp, with Frobenius acting as the identity map. For instance, the following should not raise an exception:\n\n```\nsage: Qp(7)(2).frobenius()\n```",
     "created_at": "2011-06-17T15:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
@@ -141,7 +139,6 @@ For consistency, these methods should also apply to Qp, with Frobenius acting as
 ```
 sage: Qp(7)(2).frobenius()
 ```
-
 
 
 
@@ -222,7 +219,7 @@ I have no idea why adding a method to Qp causes a test in sage/libs/fplll/fplll.
 archive/issue_comments_072739.json:
 ```json
 {
-    "body": "Replying to [comment:7 roed]:\n> I have no idea why adding a method to Qp causes a test in sage/libs/fplll/fplll.py to fail.\n\nSee #10195.",
+    "body": "Replying to [comment:7 roed]:\n> I have no idea why adding a method to Qp causes a test in sage/libs/fplll/fplll.py to fail.\n\n\nSee #10195.",
     "created_at": "2011-08-24T22:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
@@ -233,6 +230,7 @@ archive/issue_comments_072739.json:
 
 Replying to [comment:7 roed]:
 > I have no idea why adding a method to Qp causes a test in sage/libs/fplll/fplll.py to fail.
+
 
 See #10195.
 
@@ -281,7 +279,7 @@ As Sebastian Pancratz noted in his talk, it would be great if someone wrote a be
 archive/issue_comments_072742.json:
 ```json
 {
-    "body": "The patchbot finds some Sphinx formatting errors in the docstrings:\n\n\n```\ndocstring of sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement.teichmuller_list:4: WARNING: Inline interpreted text or phrase reference start-string without end-string.\ndocstring of sage.rings.padics.padic_ZZ_pX_CA_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.teichmuller_list:4: WARNING: Inline interpreted text or phrase reference start-string without end-string.\ndocstring of sage.rings.padics.padic_ZZ_pX_CR_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.rings.padics.padic_ext_element.pAdicExtElement.frobenius:6: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n```\n\n\nIt's also harping on about trailing whitespace (which is apparently now a Bad Thing, although Sage has been tolerating it cheerfully for years).",
+    "body": "The patchbot finds some Sphinx formatting errors in the docstrings:\n\n```\ndocstring of sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement.teichmuller_list:4: WARNING: Inline interpreted text or phrase reference start-string without end-string.\ndocstring of sage.rings.padics.padic_ZZ_pX_CA_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.teichmuller_list:4: WARNING: Inline interpreted text or phrase reference start-string without end-string.\ndocstring of sage.rings.padics.padic_ZZ_pX_CR_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.\ndocstring of sage.rings.padics.padic_ext_element.pAdicExtElement.frobenius:6: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n```\n\nIt's also harping on about trailing whitespace (which is apparently now a Bad Thing, although Sage has been tolerating it cheerfully for years).",
     "created_at": "2012-03-10T17:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
@@ -292,7 +290,6 @@ archive/issue_comments_072742.json:
 
 The patchbot finds some Sphinx formatting errors in the docstrings:
 
-
 ```
 docstring of sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement.teichmuller_list:4: WARNING: Inline interpreted text or phrase reference start-string without end-string.
 docstring of sage.rings.padics.padic_ZZ_pX_CA_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.
@@ -300,7 +297,6 @@ docstring of sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.teichmu
 docstring of sage.rings.padics.padic_ZZ_pX_CR_element:2: WARNING: Block quote ends without a blank line; unexpected unindent.
 docstring of sage.rings.padics.padic_ext_element.pAdicExtElement.frobenius:6: WARNING: Inline interpreted text or phrase reference start-string without end-string.
 ```
-
 
 It's also harping on about trailing whitespace (which is apparently now a Bad Thing, although Sage has been tolerating it cheerfully for years).
 

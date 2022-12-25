@@ -3,7 +3,7 @@
 archive/issues_009032.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\n\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
     "created_at": "2010-05-24T09:12:23Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_009032.json:
 Assignee: @aghitza
 
 CC:  @kcrisman
-
 
 ```
 sage: a=8
@@ -39,7 +38,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'
 ```
-
 The same holds for a=17/2 for example.
 
 Since `n` is a shortcut for `numerical_approx`,
@@ -158,7 +156,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_083455.json:
 ```json
 {
-    "body": "hi, with Sage 4.6 I got an error while importing the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 9032\nsage: hg_sage.import_patch(\"/tmp/trac_9032.patch\")\ncd \"/usr/local/sage/devel/sage\" && hg status\ncd \"/usr/local/sage/devel/sage\" && hg status\ncd \"/usr/local/sage/devel/sage\" && hg import   \"/tmp/trac_9032.patch\"\napplying /tmp/trac_9032.patch\nabort: malformed patch a/sage/structure/element.pyx @@ -578,24 +580,26 @@\n```\n\nPaul",
+    "body": "hi, with Sage 4.6 I got an error while importing the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 9032\nsage: hg_sage.import_patch(\"/tmp/trac_9032.patch\")\ncd \"/usr/local/sage/devel/sage\" && hg status\ncd \"/usr/local/sage/devel/sage\" && hg status\ncd \"/usr/local/sage/devel/sage\" && hg import   \"/tmp/trac_9032.patch\"\napplying /tmp/trac_9032.patch\nabort: malformed patch a/sage/structure/element.pyx @@ -578,24 +580,26 @@\n```\nPaul",
     "created_at": "2011-01-10T09:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -180,7 +178,6 @@ cd "/usr/local/sage/devel/sage" && hg import   "/tmp/trac_9032.patch"
 applying /tmp/trac_9032.patch
 abort: malformed patch a/sage/structure/element.pyx @@ -578,24 +580,26 @@
 ```
-
 Paul
 
 
@@ -338,7 +335,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083464.json:
 ```json
 {
-    "body": "A few minor points:\n\nYou can just rename `numerical_approx` to `_numerical_approx` in `matrix2.pyx` without keeping `numerical_approx` since `Matrix` is an `element` so it inherits the default implementation of `numerical_approx`. Same for `expression.pyx`.\n\n(On the other hand, `heegner.py` does need both.)\n\nI would change the docstrings in `structure/element.pyx` to something shorter than the full output. Maybe the following?\n\n\n```\n[..., 'is_idempotent', 'is_integral', ...]\n```\n\n\n\nIs the (capital) `N()` for consistency with something, or is that new?",
+    "body": "A few minor points:\n\nYou can just rename `numerical_approx` to `_numerical_approx` in `matrix2.pyx` without keeping `numerical_approx` since `Matrix` is an `element` so it inherits the default implementation of `numerical_approx`. Same for `expression.pyx`.\n\n(On the other hand, `heegner.py` does need both.)\n\nI would change the docstrings in `structure/element.pyx` to something shorter than the full output. Maybe the following?\n\n```\n[..., 'is_idempotent', 'is_integral', ...]\n```\n\n\nIs the (capital) `N()` for consistency with something, or is that new?",
     "created_at": "2011-01-10T20:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -355,11 +352,9 @@ You can just rename `numerical_approx` to `_numerical_approx` in `matrix2.pyx` w
 
 I would change the docstrings in `structure/element.pyx` to something shorter than the full output. Maybe the following?
 
-
 ```
 [..., 'is_idempotent', 'is_integral', ...]
 ```
-
 
 
 Is the (capital) `N()` for consistency with something, or is that new?
@@ -483,7 +478,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083471.json:
 ```json
 {
-    "body": "\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage/sage/symbolic/function.pyx # 2 doctests failed\n\tsage -t  devel/sage/sage/misc/randstate.pyx # Time out\n\tsage -t  devel/sage/sage/interfaces/sage0.py # Time out\n\tsage -t  devel/sage/sage/interfaces/psage.py # Time out\n\tsage -t  devel/sage/sage/plot/plot.py # Time out\n\tsage -t  devel/sage/sage/symbolic/function_factory.py # 1 doctests failed\n\tsage -t  devel/sage/sage/functions/min_max.py # 3 doctests failed\n\tsage -t  devel/sage/sage/modular/modform/test.py # 0 doctests failed\n\tsage -t  devel/sage/sage/misc/sagedoc.py # Time out\n\tsage -t  devel/sage/sage/schemes/generic/toric_divisor.py # Time out\n\tsage -t  devel/sage/sage/tests/cmdline.py # Time out\n\tsage -t  devel/sage/sage/misc/trace.py # 2 doctests failed\n\tsage -t  devel/sage/sage/parallel/use_fork.py # 0 doctests failed\n\tsage -t  devel/sage/sage/symbolic/expression.pyx # Time out\n\tsage -t  devel/sage/sage/geometry/polyhedra.py # Time out\n\tsage -t  devel/sage/sage/tests/startup.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n",
+    "body": "```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage/sage/symbolic/function.pyx # 2 doctests failed\n\tsage -t  devel/sage/sage/misc/randstate.pyx # Time out\n\tsage -t  devel/sage/sage/interfaces/sage0.py # Time out\n\tsage -t  devel/sage/sage/interfaces/psage.py # Time out\n\tsage -t  devel/sage/sage/plot/plot.py # Time out\n\tsage -t  devel/sage/sage/symbolic/function_factory.py # 1 doctests failed\n\tsage -t  devel/sage/sage/functions/min_max.py # 3 doctests failed\n\tsage -t  devel/sage/sage/modular/modform/test.py # 0 doctests failed\n\tsage -t  devel/sage/sage/misc/sagedoc.py # Time out\n\tsage -t  devel/sage/sage/schemes/generic/toric_divisor.py # Time out\n\tsage -t  devel/sage/sage/tests/cmdline.py # Time out\n\tsage -t  devel/sage/sage/misc/trace.py # 2 doctests failed\n\tsage -t  devel/sage/sage/parallel/use_fork.py # 0 doctests failed\n\tsage -t  devel/sage/sage/symbolic/expression.pyx # Time out\n\tsage -t  devel/sage/sage/geometry/polyhedra.py # Time out\n\tsage -t  devel/sage/sage/tests/startup.py # 1 doctests failed\n----------------------------------------------------------------------\n```",
     "created_at": "2011-01-12T19:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -491,7 +486,6 @@ archive/issue_comments_083471.json:
     "user": "https://github.com/adeines"
 }
 ```
-
 
 ```
 ----------------------------------------------------------------------
@@ -516,7 +510,6 @@ The following tests failed:
 	sage -t  devel/sage/sage/tests/startup.py # 1 doctests failed
 ----------------------------------------------------------------------
 ```
-
 
 
 
@@ -669,7 +662,7 @@ Confirmed. (Leaving it as positive review after the patch was updated.)
 archive/issue_comments_083480.json:
 ```json
 {
-    "body": "Replying to [comment:21 wjp]:\n> Confirmed. (Leaving it as positive review after the patch was updated.)\n\nExcept the commit message of the latest patch is somewhat mystifying.    O bureaucracy!  Maybe a friendly release manager can just update the patch with something like \"Ensures everything relevant can be numerically approximated and changes things to an underscore method in a few cases\"...",
+    "body": "Replying to [comment:21 wjp]:\n> Confirmed. (Leaving it as positive review after the patch was updated.)\n\n\nExcept the commit message of the latest patch is somewhat mystifying.    O bureaucracy!  Maybe a friendly release manager can just update the patch with something like \"Ensures everything relevant can be numerically approximated and changes things to an underscore method in a few cases\"...",
     "created_at": "2011-01-13T15:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -680,6 +673,7 @@ archive/issue_comments_083480.json:
 
 Replying to [comment:21 wjp]:
 > Confirmed. (Leaving it as positive review after the patch was updated.)
+
 
 Except the commit message of the latest patch is somewhat mystifying.    O bureaucracy!  Maybe a friendly release manager can just update the patch with something like "Ensures everything relevant can be numerically approximated and changes things to an underscore method in a few cases"...
 
@@ -746,7 +740,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083484.json:
 ```json
 {
-    "body": "All tests pass, and I would positively review this patch, except for three\ndocumentation problems.\n\n1) The extraneous, pre-existing example line (\"a = 2/3\") should be removed \n(in structure/element.pyx). It is neither an example of the use of numerical \napproximation, nor used in the remaining part of the example.\n\n\n```\nsage: a = 8\nsage: a.numerical_approx?\n...\n    \n       Return a numerical approximation of x with at least prec bits of\n       precision.\n    \n       EXAMPLES:\n    \n          sage: (2/3).n()\n          0.666666666666667\n          sage: a = 2/3\n          sage: pi.n(digits=10)\n          3.141592654\n          sage: pi.n(prec=20)   # 20 bits\n          3.1416\n\n```\n\n\n2) Grammatical error in symbolic/expression.pyx:\n\n\n```\nsage: a = cos(3)\nsage: a.numerical_approx?\n...\n    \n       Return a numerical approximation this symbolic expression as either\n```\n\n\nShould be \"numerical approximation of this symbolic expression....\"\n                                   ^^\n\nI know these are trivial and not written by you. However, they're too trivial for their own \npatches, and would fit logically in yours.\n\n3) When I create a symbolic expression, I now get different docstrings for \"n\" \n(from element) and \"numerical_approx\" (from expression):\n\n\n```\nsage: a = cos(3)\nsage: type(a)\n<type 'sage.symbolic.expression.Expression'>\nsage: a.n?\n...\n       Return a numerical approximation of x with at least prec bits of\n       precision.\n    \n       EXAMPLES:\n    \n          sage: (2/3).n()\n          0.666666666666667\n...\n\nsage: a.numerical_approx?\n...    \n       Return a numerical approximation this symbolic expression as either\n       a real or complex number with at least the requested number of bits\n       or digits of precision.\n    \n       EXAMPLES:\n    \n          sage: sin(x).subs(x=5).n()\n          -0.958924274663138\n...\n\n```\n\n\nI believe that this happened when you removed the re-definition of method \"n\" in expression.\nHowever, that is the docstring that you want to be returned for a symbolic expression.",
+    "body": "All tests pass, and I would positively review this patch, except for three\ndocumentation problems.\n\n1) The extraneous, pre-existing example line (\"a = 2/3\") should be removed \n(in structure/element.pyx). It is neither an example of the use of numerical \napproximation, nor used in the remaining part of the example.\n\n```\nsage: a = 8\nsage: a.numerical_approx?\n...\n    \n       Return a numerical approximation of x with at least prec bits of\n       precision.\n    \n       EXAMPLES:\n    \n          sage: (2/3).n()\n          0.666666666666667\n          sage: a = 2/3\n          sage: pi.n(digits=10)\n          3.141592654\n          sage: pi.n(prec=20)   # 20 bits\n          3.1416\n\n```\n\n2) Grammatical error in symbolic/expression.pyx:\n\n```\nsage: a = cos(3)\nsage: a.numerical_approx?\n...\n    \n       Return a numerical approximation this symbolic expression as either\n```\n\nShould be \"numerical approximation of this symbolic expression....\"\n                                   ^^\n\nI know these are trivial and not written by you. However, they're too trivial for their own \npatches, and would fit logically in yours.\n\n3) When I create a symbolic expression, I now get different docstrings for \"n\" \n(from element) and \"numerical_approx\" (from expression):\n\n```\nsage: a = cos(3)\nsage: type(a)\n<type 'sage.symbolic.expression.Expression'>\nsage: a.n?\n...\n       Return a numerical approximation of x with at least prec bits of\n       precision.\n    \n       EXAMPLES:\n    \n          sage: (2/3).n()\n          0.666666666666667\n...\n\nsage: a.numerical_approx?\n...    \n       Return a numerical approximation this symbolic expression as either\n       a real or complex number with at least the requested number of bits\n       or digits of precision.\n    \n       EXAMPLES:\n    \n          sage: sin(x).subs(x=5).n()\n          -0.958924274663138\n...\n\n```\n\nI believe that this happened when you removed the re-definition of method \"n\" in expression.\nHowever, that is the docstring that you want to be returned for a symbolic expression.",
     "created_at": "2011-01-14T01:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -761,7 +755,6 @@ documentation problems.
 1) The extraneous, pre-existing example line ("a = 2/3") should be removed 
 (in structure/element.pyx). It is neither an example of the use of numerical 
 approximation, nor used in the remaining part of the example.
-
 
 ```
 sage: a = 8
@@ -783,9 +776,7 @@ sage: a.numerical_approx?
 
 ```
 
-
 2) Grammatical error in symbolic/expression.pyx:
-
 
 ```
 sage: a = cos(3)
@@ -795,7 +786,6 @@ sage: a.numerical_approx?
        Return a numerical approximation this symbolic expression as either
 ```
 
-
 Should be "numerical approximation of this symbolic expression...."
                                    ^^
 
@@ -804,7 +794,6 @@ patches, and would fit logically in yours.
 
 3) When I create a symbolic expression, I now get different docstrings for "n" 
 (from element) and "numerical_approx" (from expression):
-
 
 ```
 sage: a = cos(3)
@@ -834,7 +823,6 @@ sage: a.numerical_approx?
 ...
 
 ```
-
 
 I believe that this happened when you removed the re-definition of method "n" in expression.
 However, that is the docstring that you want to be returned for a symbolic expression.
@@ -975,7 +963,7 @@ Cheers,
 archive/issue_comments_083491.json:
 ```json
 {
-    "body": "> Is the alias N really needed? It pollutes the namespace of all elements, and broke some code on the Sage-Combinat queue (in that particular case, it was overwriting a field of a gap3 record element). Well, I guess we can find a workaround but still having n and N and numerical_approx seems like a waste.\nN has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.  In a Sage version nearly a year old:\n\n```\nsage: N(5)\n5.00000000000000\nsage: n(5)\n5.00000000000000\nsage: numerical_approx(5)\n5.00000000000000\nsage: a=5\nsage: a.N?\nObject `a.N` not found.\nsage: a.n\n<built-in method n of sage.rings.integer.Integer object at 0x1091154e0>\n```\n",
+    "body": "> Is the alias N really needed? It pollutes the namespace of all elements, and broke some code on the Sage-Combinat queue (in that particular case, it was overwriting a field of a gap3 record element). Well, I guess we can find a workaround but still having n and N and numerical_approx seems like a waste.\n\nN has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.  In a Sage version nearly a year old:\n\n```\nsage: N(5)\n5.00000000000000\nsage: n(5)\n5.00000000000000\nsage: numerical_approx(5)\n5.00000000000000\nsage: a=5\nsage: a.N?\nObject `a.N` not found.\nsage: a.n\n<built-in method n of sage.rings.integer.Integer object at 0x1091154e0>\n```",
     "created_at": "2011-03-24T01:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -985,6 +973,7 @@ archive/issue_comments_083491.json:
 ```
 
 > Is the alias N really needed? It pollutes the namespace of all elements, and broke some code on the Sage-Combinat queue (in that particular case, it was overwriting a field of a gap3 record element). Well, I guess we can find a workaround but still having n and N and numerical_approx seems like a waste.
+
 N has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.  In a Sage version nearly a year old:
 
 ```
@@ -1003,13 +992,12 @@ sage: a.n
 
 
 
-
 ---
 
 archive/issue_comments_083492.json:
 ```json
 {
-    "body": "Hi!\n\nReplying to [comment:32 kcrisman]:\n> N has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.\n\nYes; I am precisely arguing about this method, and the pollution of the method namespace of all elements. We can't use anymore x.N to access an attribute called N in a gap record x (well, we can, but as x.__getattr__(\"N\") which is not very convenient).\n\nThanks,",
+    "body": "Hi!\n\nReplying to [comment:32 kcrisman]:\n> N has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.\n\n\nYes; I am precisely arguing about this method, and the pollution of the method namespace of all elements. We can't use anymore x.N to access an attribute called N in a gap record x (well, we can, but as x.__getattr__(\"N\") which is not very convenient).\n\nThanks,",
     "created_at": "2011-03-24T08:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -1022,6 +1010,7 @@ Hi!
 
 Replying to [comment:32 kcrisman]:
 > N has been an alias for this for a long time, so this just making it consistent -  I think this added a method, not a global function.
+
 
 Yes; I am precisely arguing about this method, and the pollution of the method namespace of all elements. We can't use anymore x.N to access an attribute called N in a gap record x (well, we can, but as x.__getattr__("N") which is not very convenient).
 
@@ -1054,7 +1043,7 @@ I could imagine someone wanting numerical approx of e.g. GAP elements, though, a
 archive/issue_comments_083494.json:
 ```json
 {
-    "body": "Replying to [comment:34 kcrisman]:\n> I see. Well, it's been merged, so the proper thing to do is to ask on sage-devel or open a ticket. I don't see why it wouldn't be possible to take this behavior away from structure/element and put it only on numerical types, though it would be a little more of a pain.\n> \n> I could imagine someone wanting numerical approx of e.g. GAP elements, though, and it's true that for consistency n and N should do the same thing as methods as as functions, so maybe this is worth raising on sage-devel. I wouldn't be surprised if no one much cared, though, as long as integers and rationals still had N and n.\n\nDo you mind running this discussion on sage-devel?\n\nI guess someone wanting a numerical approximation on a gap element (that could well be me :-)) can afford to use g.numerical_approx(), or just g.n().\n\nThanks!",
+    "body": "Replying to [comment:34 kcrisman]:\n> I see. Well, it's been merged, so the proper thing to do is to ask on sage-devel or open a ticket. I don't see why it wouldn't be possible to take this behavior away from structure/element and put it only on numerical types, though it would be a little more of a pain.\n> \n> I could imagine someone wanting numerical approx of e.g. GAP elements, though, and it's true that for consistency n and N should do the same thing as methods as as functions, so maybe this is worth raising on sage-devel. I wouldn't be surprised if no one much cared, though, as long as integers and rationals still had N and n.\n\n\nDo you mind running this discussion on sage-devel?\n\nI guess someone wanting a numerical approximation on a gap element (that could well be me :-)) can afford to use g.numerical_approx(), or just g.n().\n\nThanks!",
     "created_at": "2011-03-24T12:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
@@ -1067,6 +1056,7 @@ Replying to [comment:34 kcrisman]:
 > I see. Well, it's been merged, so the proper thing to do is to ask on sage-devel or open a ticket. I don't see why it wouldn't be possible to take this behavior away from structure/element and put it only on numerical types, though it would be a little more of a pain.
 > 
 > I could imagine someone wanting numerical approx of e.g. GAP elements, though, and it's true that for consistency n and N should do the same thing as methods as as functions, so maybe this is worth raising on sage-devel. I wouldn't be surprised if no one much cared, though, as long as integers and rationals still had N and n.
+
 
 Do you mind running this discussion on sage-devel?
 

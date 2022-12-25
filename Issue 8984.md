@@ -451,7 +451,7 @@ See #9310
 archive/issue_comments_082773.json:
 ```json
 {
-    "body": "Replying to [comment:14 drkirkby]:\n> See #9310\n\nIs this patch the cause of the failure in #9310 though? It was not\nmerged into sage-4.4.4 and still the error is there.",
+    "body": "Replying to [comment:14 drkirkby]:\n> See #9310\n\n\nIs this patch the cause of the failure in #9310 though? It was not\nmerged into sage-4.4.4 and still the error is there.",
     "created_at": "2010-06-25T02:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8984",
     "type": "issue_comment",
@@ -462,6 +462,7 @@ archive/issue_comments_082773.json:
 
 Replying to [comment:14 drkirkby]:
 > See #9310
+
 
 Is this patch the cause of the failure in #9310 though? It was not
 merged into sage-4.4.4 and still the error is there.

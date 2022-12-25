@@ -3,7 +3,7 @@
 archive/issues_004842.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @craigcitro @robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @craigcitro @robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
     "created_at": "2008-12-20T22:54:44Z",
     "labels": [
         "component: coercion",
@@ -31,7 +31,6 @@ Ah. I bet the time was spent resolving the roots of CyclotomicField
 up with a patch for this, I'll (probably) do it later tonight. 
 - Robert 
 ```
-
 
 Cheers,
 
@@ -102,7 +101,7 @@ This took longer than I expected due to build issues I ran into, but here's the 
 archive/issue_comments_036651.json:
 ```json
 {
-    "body": "For the record: Patch applies, builds fine and all doctests with -long pass. The performance regression seems to have been fixed, i.e. before:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [73.3 s]\n```\n\nAfter the patch:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [3.4 s]\n```\n\n\nCheers,\n\nMichael",
+    "body": "For the record: Patch applies, builds fine and all doctests with -long pass. The performance regression seems to have been fixed, i.e. before:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [73.3 s]\n```\nAfter the patch:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [3.4 s]\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T13:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
@@ -117,14 +116,12 @@ For the record: Patch applies, builds fine and all doctests with -long pass. The
 sage -t -long "devel/sage/sage/modular/modform/eisenstein_submodule.py"
 	 [73.3 s]
 ```
-
 After the patch:
 
 ```
 sage -t -long "devel/sage/sage/modular/modform/eisenstein_submodule.py"
 	 [3.4 s]
 ```
-
 
 Cheers,
 

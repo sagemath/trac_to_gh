@@ -3,7 +3,7 @@
 archive/issues_004357.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
+    "body": "Assignee: @craigcitro\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
     "created_at": "2008-10-24T02:04:23Z",
     "labels": [
         "component: modular forms"
@@ -19,14 +19,12 @@ Assignee: @craigcitro
 
 This used to work and is now broken.  It is used in my modular forms book.
 
-
 ```
 sage: CuspForms(45).new_subspace()
 Traceback (most recent call last):
 ...
 NotImplementedError: computation of new submodule not yet implemented
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4357
 
@@ -57,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_031939.json:
 ```json
 {
-    "body": "This functionality was removed because it was broken. Indeed, the result returned in William's book is incorrect -- it **should** be:\n\n\n```\nCuspForms(Gamma0(45), 2, prec=14).new_subspace().basis()\n(q + q^2 - q^4 - q^5 - 3*q^8 - q^10 + 4*q^11 - 2*q^13 + O(q^14),)\n```\n\n\nWilliam and I have discussed a fix for this, which I'll take care of soon, unless William beats me to it.",
+    "body": "This functionality was removed because it was broken. Indeed, the result returned in William's book is incorrect -- it **should** be:\n\n```\nCuspForms(Gamma0(45), 2, prec=14).new_subspace().basis()\n(q + q^2 - q^4 - q^5 - 3*q^8 - q^10 + 4*q^11 - 2*q^13 + O(q^14),)\n```\n\nWilliam and I have discussed a fix for this, which I'll take care of soon, unless William beats me to it.",
     "created_at": "2008-10-27T19:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
@@ -68,12 +66,10 @@ archive/issue_comments_031939.json:
 
 This functionality was removed because it was broken. Indeed, the result returned in William's book is incorrect -- it **should** be:
 
-
 ```
 CuspForms(Gamma0(45), 2, prec=14).new_subspace().basis()
 (q + q^2 - q^4 - q^5 - 3*q^8 - q^10 + 4*q^11 - 2*q^13 + O(q^14),)
 ```
-
 
 William and I have discussed a fix for this, which I'll take care of soon, unless William beats me to it.
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7253
 archive/issue_comments_060137.json:
 ```json
 {
-    "body": "This behavior still appears to be present in 2016. Since the underlying representation of multivariate polynomials over a finite field appears to be in Singular, I've raised the issue upstream: \n\nhttp://www.singular.uni-kl.de/forum/viewtopic.php?f=10&t=2523\n\nFor univariate polynomials over a finite field, the underlying representation is in FLINT, and there this seems to be handled correctly (although I haven't looked at the source or asked a developer to confirm):\n\n```\nsage: F = GF(7)\nsage: P.<x> = PolynomialRing(F)\nsage: u = (x^3 + 1)^3\nsage: time v = u^(7^7); # a large power!\nCPU times: user 1.17 s, sys: 44 ms, total: 1.21 s\nWall time: 1.21 s\nsage: time v = u^1000000; # even larger! \nCPU times: user 1.58 s, sys: 36 ms, total: 1.62 s\nWall time: 1.62 s\n```\n",
+    "body": "This behavior still appears to be present in 2016. Since the underlying representation of multivariate polynomials over a finite field appears to be in Singular, I've raised the issue upstream: \n\nhttp://www.singular.uni-kl.de/forum/viewtopic.php?f=10&t=2523\n\nFor univariate polynomials over a finite field, the underlying representation is in FLINT, and there this seems to be handled correctly (although I haven't looked at the source or asked a developer to confirm):\n\n```\nsage: F = GF(7)\nsage: P.<x> = PolynomialRing(F)\nsage: u = (x^3 + 1)^3\nsage: time v = u^(7^7); # a large power!\nCPU times: user 1.17 s, sys: 44 ms, total: 1.21 s\nWall time: 1.21 s\nsage: time v = u^1000000; # even larger! \nCPU times: user 1.58 s, sys: 36 ms, total: 1.62 s\nWall time: 1.62 s\n```",
     "created_at": "2016-04-05T17:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
@@ -59,7 +59,6 @@ sage: time v = u^1000000; # even larger!
 CPU times: user 1.58 s, sys: 36 ms, total: 1.62 s
 Wall time: 1.62 s
 ```
-
 
 
 

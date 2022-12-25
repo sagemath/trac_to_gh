@@ -3,7 +3,7 @@
 archive/issues_000650.json:
 ```json
 {
-    "body": "Assignee: was or craigcitro\n\n\n```\nsage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()\nsage: d\n\n[\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field,\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field\n]\nsage: for a in d: print a.q_eigenform(10)\n....:\nq - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)\nq + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/650\n\n",
+    "body": "Assignee: was or craigcitro\n\n```\nsage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()\nsage: d\n\n[\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field,\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 4 for Gamma_0(43) of weight 2 with sign 1 over Rational Field\n]\nsage: for a in d: print a.q_eigenform(10)\n....:\nq - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)\nq + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/650\n\n",
     "created_at": "2007-09-13T18:47:19Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_000650.json:
 ```
 Assignee: was or craigcitro
 
-
 ```
 sage: d = ModularSymbols(Gamma0(43), 2, sign=1).cuspidal_subspace().new_subspace().decomposition()
 sage: d
@@ -33,7 +32,6 @@ sage: for a in d: print a.q_eigenform(10)
 q - 2*q^2 - 2*q^3 + 2*q^4 - 4*q^5 + 4*q^6 + q^9 + O(q^10)
 q + alpha*q^2 + -alpha*q^3 + (-alpha + 2)*q^5 + -2*q^6 + (alpha - 2)*q^7 + -2*alpha*q^8 + -q^9 + O(q^10)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/650
 
@@ -187,7 +185,7 @@ Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/
 archive/issue_comments_003371.json:
 ```json
 {
-    "body": "\n```\n22:55 < cwitty_> #650: applies cleanly, but the doctests fail.  It's odd...unless Mercurial is screwing \n                 up the history somehow, it looks like the doctests never could have worked after this \n                 patch.\n22:57 < williamstein> I think the doctests were wrong.\n22:57 < williamstein> I.e., they claimed a result that was mathematically wrong.\n22:59 < cwitty_> Right.  But the patch comments out the doctest \"N = ...\", but leaves the next doctest \n                 alone, \"N.basis()\".  Why didn't he comment out that doctest too?\n22:59 < williamstein> It's a mistake on his part.\n```\n",
+    "body": "```\n22:55 < cwitty_> #650: applies cleanly, but the doctests fail.  It's odd...unless Mercurial is screwing \n                 up the history somehow, it looks like the doctests never could have worked after this \n                 patch.\n22:57 < williamstein> I think the doctests were wrong.\n22:57 < williamstein> I.e., they claimed a result that was mathematically wrong.\n22:59 < cwitty_> Right.  But the patch comments out the doctest \"N = ...\", but leaves the next doctest \n                 alone, \"N.basis()\".  Why didn't he comment out that doctest too?\n22:59 < williamstein> It's a mistake on his part.\n```",
     "created_at": "2007-10-13T06:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
@@ -195,7 +193,6 @@ archive/issue_comments_003371.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 22:55 < cwitty_> #650: applies cleanly, but the doctests fail.  It's odd...unless Mercurial is screwing 
@@ -207,7 +204,6 @@ archive/issue_comments_003371.json:
                  alone, "N.basis()".  Why didn't he comment out that doctest too?
 22:59 < williamstein> It's a mistake on his part.
 ```
-
 
 
 

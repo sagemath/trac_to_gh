@@ -259,7 +259,7 @@ archive/issue_events_009207.json:
 archive/issue_comments_029001.json:
 ```json
 {
-    "body": "Reopened because wjp pointed out a serious issue -- the rest of the script gets executed. \n\nSome irc discussion about this:\n\n```\nwilliamstein: Regarding sage-env, I redid a patch of yours at #4029.\n[06:15am] williamstein:\nWow, what does \"$(exit 1)\" mean?\n[06:15am] williamstein:\nah, you give a reference.\n[06:16am] williamstein:\nI still don't understand it.\n[06:18am] williamstein:\nMike could you change the patch itself to include a comment about what $(exit 1) means?  Or maybe just a link to that page in\n[06:18am] williamstein:\na\n[06:18am] williamstein:\ncomment?\n[06:18am] williamstein:\nBecause googling for \"$(exit 1)\" would be tricky.\n[06:18am] williamstein:\n$(exit 1)\n[06:18am] williamstein:\nactually, it is easy to google for.\n[06:18am] williamstein:\nNo, it isn't.\n[06:20am] williamstein:\nwell if it works, it works, I guess.\n[06:21am] mhansen:\nYeah, I don't quite understand it myself.\n[06:22am] williamstein:\nWell, it works perfecty.\n[06:22am] williamstein:\nso positive review.\n[06:23am] williamstein:\nAnd the current behavior in Sage (without the patch) is indeed \"disconcerting\".\n[06:24am] mhansen:\nI'm surprised that one page was the only page that I could find something about it.\n[06:24am] williamstein:\nIndeed.\n[06:25am] williamstein:\nIt's hard to google though.\n[06:27am] wjp:\nisn't this trick only for passing a return status? I don't think it actually stops the script that's being sourced, right?\n[06:28am] williamstein:\nI don't know.  But if you try it, for some reason it works.\n[06:28am] wjp:\nhm, strange. Did you also test the remainder of sage-env doesn't get executed?\n[06:28am] williamstein:\nwjp -- you seam like the type to pull open the bash source code, read it, and completely understand what $(exit 1) does :-)\n[06:29am] wjp:\nI thought $(...) was the same as `...`\n[06:29am] wjp:\n(yes, I am kind of that type :-) )\n[06:29am] williamstein:\ncrap, in fact, the remainder does get executed.\n[06:30am] williamstein:\nhey mhansen -- what did my original patch do?\n[06:30am] williamstein:\nsince I think you deleted it.\n[06:30am] mhansen:\nRipped the bottom half of sage-env out and put it in a different file.\n[06:30am] mhansen:\nBy bottom half, I meant the part below that line.\n[06:31am] williamstein:\noh, now I remember doing that.\n[06:31am] williamstein:\n\"When in doubt, refactor it out!\"\n```\n",
+    "body": "Reopened because wjp pointed out a serious issue -- the rest of the script gets executed. \n\nSome irc discussion about this:\n\n```\nwilliamstein: Regarding sage-env, I redid a patch of yours at #4029.\n[06:15am] williamstein:\nWow, what does \"$(exit 1)\" mean?\n[06:15am] williamstein:\nah, you give a reference.\n[06:16am] williamstein:\nI still don't understand it.\n[06:18am] williamstein:\nMike could you change the patch itself to include a comment about what $(exit 1) means?  Or maybe just a link to that page in\n[06:18am] williamstein:\na\n[06:18am] williamstein:\ncomment?\n[06:18am] williamstein:\nBecause googling for \"$(exit 1)\" would be tricky.\n[06:18am] williamstein:\n$(exit 1)\n[06:18am] williamstein:\nactually, it is easy to google for.\n[06:18am] williamstein:\nNo, it isn't.\n[06:20am] williamstein:\nwell if it works, it works, I guess.\n[06:21am] mhansen:\nYeah, I don't quite understand it myself.\n[06:22am] williamstein:\nWell, it works perfecty.\n[06:22am] williamstein:\nso positive review.\n[06:23am] williamstein:\nAnd the current behavior in Sage (without the patch) is indeed \"disconcerting\".\n[06:24am] mhansen:\nI'm surprised that one page was the only page that I could find something about it.\n[06:24am] williamstein:\nIndeed.\n[06:25am] williamstein:\nIt's hard to google though.\n[06:27am] wjp:\nisn't this trick only for passing a return status? I don't think it actually stops the script that's being sourced, right?\n[06:28am] williamstein:\nI don't know.  But if you try it, for some reason it works.\n[06:28am] wjp:\nhm, strange. Did you also test the remainder of sage-env doesn't get executed?\n[06:28am] williamstein:\nwjp -- you seam like the type to pull open the bash source code, read it, and completely understand what $(exit 1) does :-)\n[06:29am] wjp:\nI thought $(...) was the same as `...`\n[06:29am] wjp:\n(yes, I am kind of that type :-) )\n[06:29am] williamstein:\ncrap, in fact, the remainder does get executed.\n[06:30am] williamstein:\nhey mhansen -- what did my original patch do?\n[06:30am] williamstein:\nsince I think you deleted it.\n[06:30am] mhansen:\nRipped the bottom half of sage-env out and put it in a different file.\n[06:30am] mhansen:\nBy bottom half, I meant the part below that line.\n[06:31am] williamstein:\noh, now I remember doing that.\n[06:31am] williamstein:\n\"When in doubt, refactor it out!\"\n```",
     "created_at": "2009-10-05T13:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -340,13 +340,12 @@ oh, now I remember doing that.
 
 
 
-
 ---
 
 archive/issue_comments_029002.json:
 ```json
 {
-    "body": "Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by @gvol created at 2010-12-29 20:31:59\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\ninstead of `return` or `exit`.",
+    "body": "Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by @gvol created at 2010-12-29 20:31:59\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\ninstead of `return` or `exit`.",
     "created_at": "2010-12-29T20:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -362,7 +361,6 @@ I used the very hacky (but effective)
 ```
 return 1 2>/dev/null || exit 1
 ```
-
 instead of `return` or `exit`.
 
 
@@ -408,7 +406,7 @@ Will be obsolete with #10469.
 archive/issue_comments_029005.json:
 ```json
 {
-    "body": "I don't think this will be obsolete with #10469: after applying that patch, if I open up a new shell and source sage-env, the shell closes.  Isn't the issue using \"exit\" instead of \"return\", since the script is being sourced?  I'm not a shell script expert, but can we just replace \"exit 1\" with \"return 1\" everywhere?  Failing that, can you explain your hack\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\nThis seems to work for me.",
+    "body": "I don't think this will be obsolete with #10469: after applying that patch, if I open up a new shell and source sage-env, the shell closes.  Isn't the issue using \"exit\" instead of \"return\", since the script is being sourced?  I'm not a shell script expert, but can we just replace \"exit 1\" with \"return 1\" everywhere?  Failing that, can you explain your hack\n\n```\nreturn 1 2>/dev/null || exit 1\n```\nThis seems to work for me.",
     "created_at": "2011-03-24T21:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -422,7 +420,6 @@ I don't think this will be obsolete with #10469: after applying that patch, if I
 ```
 return 1 2>/dev/null || exit 1
 ```
-
 This seems to work for me.
 
 
@@ -450,7 +447,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_029007.json:
 ```json
 {
-    "body": "You're right this won't be obsoleted by 10469, I was misremembering this ticket.  However, I am a little confused about what is actually wanted--because of the `$(exit)` link I thought we wanted to be able to execute `sage-env`.  I think the correct thing to do is change all of the exit's to return's since `sage-env` is meant to be sourced.  This means that any script which sources sage-env will have to check return status and exit rather than relying on `sage-env` to exit for it.\n\nI could only find `sage-sage`, `Makefile`, `sage-spkg`, and a `start-sage.sh` in the Mac app which source `sage-env` so we will have to change them to check the exit status, and `sage-sage` and `Makefile` already do.  I talked with William and he said he doesn't know why it uses exit rather than having the calling script check the exit status.\n\nIf we want/need to keep the current behavior of exiting, we could use a hack like\n\n```\n# Exit if not called interactively.  For some reason scripts sourcing\n# sage-env expect errors to exit them.  However this is evil for\n# interactive shells.\ncase $- in\n    *i*)    # interactive shell should return\n        die=return;;\n    *)      # non-interactive shell\n        die=exit;;\nesac\n\n# ...\n# some error\n$die 1\n```\n\nto not exit the shell unless it's interactive.  Unfortunately I'm not sure how portable it is--I checked bash and zsh.\n\n---\n\nWhat my previous hack does is try to return and if that fails (because it was executed instead of sourced) then it calls exit.  If it's only ever sourced (per #10469) then it would be better to change them all to return, since that's what my hack would do.",
+    "body": "You're right this won't be obsoleted by 10469, I was misremembering this ticket.  However, I am a little confused about what is actually wanted--because of the `$(exit)` link I thought we wanted to be able to execute `sage-env`.  I think the correct thing to do is change all of the exit's to return's since `sage-env` is meant to be sourced.  This means that any script which sources sage-env will have to check return status and exit rather than relying on `sage-env` to exit for it.\n\nI could only find `sage-sage`, `Makefile`, `sage-spkg`, and a `start-sage.sh` in the Mac app which source `sage-env` so we will have to change them to check the exit status, and `sage-sage` and `Makefile` already do.  I talked with William and he said he doesn't know why it uses exit rather than having the calling script check the exit status.\n\nIf we want/need to keep the current behavior of exiting, we could use a hack like\n\n```\n# Exit if not called interactively.  For some reason scripts sourcing\n# sage-env expect errors to exit them.  However this is evil for\n# interactive shells.\ncase $- in\n    *i*)    # interactive shell should return\n        die=return;;\n    *)      # non-interactive shell\n        die=exit;;\nesac\n\n# ...\n# some error\n$die 1\n```\nto not exit the shell unless it's interactive.  Unfortunately I'm not sure how portable it is--I checked bash and zsh.\n\n---\n\nWhat my previous hack does is try to return and if that fails (because it was executed instead of sourced) then it calls exit.  If it's only ever sourced (per #10469) then it would be better to change them all to return, since that's what my hack would do.",
     "created_at": "2011-03-24T23:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
@@ -480,7 +477,6 @@ esac
 # some error
 $die 1
 ```
-
 to not exit the shell unless it's interactive.  Unfortunately I'm not sure how portable it is--I checked bash and zsh.
 
 ---

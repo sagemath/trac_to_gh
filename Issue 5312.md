@@ -3,7 +3,7 @@
 archive/issues_005312.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
     "created_at": "2009-02-19T08:31:41Z",
     "labels": [
         "component: misc",
@@ -22,7 +22,6 @@ CC:  @orlitzky
 
 There is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:
 
-
 ```
 wstein@sage:~/build/sage-3.3.rc1$ ./sage
 ----------------------------------------------------------------------
@@ -40,7 +39,6 @@ sage: preparse('k = 3r')
 sage: preparse('time k = 3r')
 'time k = 3'
 ```
-
 | Sage Version 3.3.rc1, Release Date: 2009-02-16                     |
 | Type notebook() for the GUI, and license() for information.        |
 In the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.
@@ -56,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5312
 archive/issue_comments_040835.json:
 ```json
 {
-    "body": "This works now:\n\n\n```\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nTime: CPU 0.00 s, Wall: 0.00 s\nsage: type(k)\n<type 'int'>\n```\n\n\nWhere's the best place to add a doctest?",
+    "body": "This works now:\n\n```\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nTime: CPU 0.00 s, Wall: 0.00 s\nsage: type(k)\n<type 'int'>\n```\n\nWhere's the best place to add a doctest?",
     "created_at": "2012-01-09T02:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ archive/issue_comments_040835.json:
 
 This works now:
 
-
 ```
 sage: k = 3r
 sage: type(k)
@@ -77,7 +74,6 @@ Time: CPU 0.00 s, Wall: 0.00 s
 sage: type(k)
 <type 'int'>
 ```
-
 
 Where's the best place to add a doctest?
 

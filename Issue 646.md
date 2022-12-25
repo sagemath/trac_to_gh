@@ -3,7 +3,7 @@
 archive/issues_000646.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
+    "body": "Assignee: @williamstein\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
     "created_at": "2007-09-13T05:42:53Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_000646.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 ---------- Forwarded message ----------
@@ -46,7 +45,6 @@ On ia64-Linux, sage-2.8.4.1 only failed one test:
     ValueError: math domain error
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/646
 
@@ -185,7 +183,7 @@ Resolution: fixed
 archive/issue_comments_003344.json:
 ```json
 {
-    "body": "Still broken:\n\n```\nWilliam,\n\nThe patch as written gives the same error.  However if you\nchange line 37 of the patch from\n    if vx == vy == 0:\nto\n    if vy == vz == 0:\n(since atan2() is taking arguments vy and vz) then\nI get a different error on ia64-Linux:\n\nsage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n**********************************************************************\nFile \"plot3d.py\", line 19:\n   sage: S.show()\nExpected nothing\nGot:\n   6.0\n   <type 'sage.rings.real_double.RealDoubleElement'>\n   0.0\n   0.0\n**********************************************************************\n```\n",
+    "body": "Still broken:\n\n```\nWilliam,\n\nThe patch as written gives the same error.  However if you\nchange line 37 of the patch from\n    if vx == vy == 0:\nto\n    if vy == vz == 0:\n(since atan2() is taking arguments vy and vz) then\nI get a different error on ia64-Linux:\n\nsage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n**********************************************************************\nFile \"plot3d.py\", line 19:\n   sage: S.show()\nExpected nothing\nGot:\n   6.0\n   <type 'sage.rings.real_double.RealDoubleElement'>\n   0.0\n   0.0\n**********************************************************************\n```",
     "created_at": "2007-09-13T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
@@ -219,7 +217,6 @@ Got:
    0.0
 **********************************************************************
 ```
-
 
 
 

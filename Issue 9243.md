@@ -3,7 +3,7 @@
 archive/issues_009243.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wjp\n\nRight now, sage-doctest uses these return codes:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 3: doctest process was terminated by a signal\n# 4: the doctesting framework raised an exception\n# 100: failed doctests\n```\n\nIn #8641 and #9224, we make sure that the return code gets passed on to the user, and for multiple files, we `or' the return codes together. It would be much nicer for the user if we used powers of 2 for return codes, so that it's easy to see exactly what happened. \n\nI recommend we change 3->4, 4->8, and 100->128 in sage-doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9243\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wjp\n\nRight now, sage-doctest uses these return codes:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 3: doctest process was terminated by a signal\n# 4: the doctesting framework raised an exception\n# 100: failed doctests\n```\nIn #8641 and #9224, we make sure that the return code gets passed on to the user, and for multiple files, we `or' the return codes together. It would be much nicer for the user if we used powers of 2 for return codes, so that it's easy to see exactly what happened. \n\nI recommend we change 3->4, 4->8, and 100->128 in sage-doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9243\n\n",
     "created_at": "2010-06-15T09:33:59Z",
     "labels": [
         "component: doctest coverage",
@@ -31,7 +31,6 @@ Right now, sage-doctest uses these return codes:
 # 4: the doctesting framework raised an exception
 # 100: failed doctests
 ```
-
 In #8641 and #9224, we make sure that the return code gets passed on to the user, and for multiple files, we `or' the return codes together. It would be much nicer for the user if we used powers of 2 for return codes, so that it's easy to see exactly what happened. 
 
 I recommend we change 3->4, 4->8, and 100->128 in sage-doctest.

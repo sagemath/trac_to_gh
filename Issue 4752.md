@@ -3,7 +3,7 @@
 archive/issues_004752.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: list_plot3d, graphics\n\nThe following is an example of the problem (which was first noticed by \"Snark\" on the IRC sage-devel channel):\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\npython(2829) malloc: *** error for object 0xed2f1f0: incorrect checksum for freed object - object was probably modified after being freed, break at szone_error to debug\npython(2829) malloc: *** set a breakpoint in szone_error to debug\n```\n\n\nIt doesn't crash if the pts are converted to numerical values, although the interpolated surface looks bad no matter which interpolation setting is used.  The example points are on a sphere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4752\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: list_plot3d, graphics\n\nThe following is an example of the problem (which was first noticed by \"Snark\" on the IRC sage-devel channel):\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\npython(2829) malloc: *** error for object 0xed2f1f0: incorrect checksum for freed object - object was probably modified after being freed, break at szone_error to debug\npython(2829) malloc: *** set a breakpoint in szone_error to debug\n```\n\nIt doesn't crash if the pts are converted to numerical values, although the interpolated surface looks bad no matter which interpolation setting is used.  The example points are on a sphere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4752\n\n",
     "created_at": "2008-12-10T21:11:34Z",
     "labels": [
         "component: graphics",
@@ -39,7 +39,6 @@ python(2829) malloc: *** error for object 0xed2f1f0: incorrect checksum for free
 python(2829) malloc: *** set a breakpoint in szone_error to debug
 ```
 
-
 It doesn't crash if the pts are converted to numerical values, although the interpolated surface looks bad no matter which interpolation setting is used.  The example points are on a sphere.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4752
@@ -71,7 +70,7 @@ See also #4815 that is a dup of this, but has a traceback.
 archive/issue_comments_035887.json:
 ```json
 {
-    "body": "Josh Kantor remarks:\n\n```\nYeah, thats borked. Incidentally those test points include the top and bottom of the sphere so that will never look good. Even using only the top oints it looks crappy.\n\nOver the summer as part of the internship I learned how to do meshless interpolation easily using a technique called Radial basis functions. I attached something I wrote from scratch that works well with those points. I'll have to work it into a patch.\n\nIt may be that in the upgrade of scipy that something changed with the the scipy packages we are using, I'll have to check that, if not I'll replace that with something from scratch.\n```\n",
+    "body": "Josh Kantor remarks:\n\n```\nYeah, thats borked. Incidentally those test points include the top and bottom of the sphere so that will never look good. Even using only the top oints it looks crappy.\n\nOver the summer as part of the internship I learned how to do meshless interpolation easily using a technique called Radial basis functions. I attached something I wrote from scratch that works well with those points. I'll have to work it into a patch.\n\nIt may be that in the upgrade of scipy that something changed with the the scipy packages we are using, I'll have to check that, if not I'll replace that with something from scratch.\n```",
     "created_at": "2008-12-17T02:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -92,13 +91,12 @@ It may be that in the upgrade of scipy that something changed with the the scipy
 
 
 
-
 ---
 
 archive/issue_comments_035888.json:
 ```json
 {
-    "body": "Attachment [radial.py](tarball://root/attachments/some-uuid/ticket4752/radial.py) by jkantor created at 2008-12-17 06:29:36\n\nThe segfault problem is because scipy just doesn't like multiple points with the same x,y coordinates and different z coordinates. The attached patch fixes that.\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n```\n\nI still intend to add the radial basis stuff, but this fixes the segfault\n\n\nnow raises an exception while\n\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: pts=[a in pts if a[2]>0]\nsage: show(list_plot3d(pts))\n```\n\nworks.",
+    "body": "Attachment [radial.py](tarball://root/attachments/some-uuid/ticket4752/radial.py) by jkantor created at 2008-12-17 06:29:36\n\nThe segfault problem is because scipy just doesn't like multiple points with the same x,y coordinates and different z coordinates. The attached patch fixes that.\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n```\nI still intend to add the radial basis stuff, but this fixes the segfault\n\n\nnow raises an exception while\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: pts=[a in pts if a[2]>0]\nsage: show(list_plot3d(pts))\n```\nworks.",
     "created_at": "2008-12-17T06:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -115,19 +113,16 @@ The segfault problem is because scipy just doesn't like multiple points with the
 sage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]
 sage: show(list_plot3d(pts))
 ```
-
 I still intend to add the radial basis stuff, but this fixes the segfault
 
 
 now raises an exception while
-
 
 ```
 sage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]
 sage: pts=[a in pts if a[2]>0]
 sage: show(list_plot3d(pts))
 ```
-
 works.
 
 
@@ -446,7 +441,7 @@ Looks good to me.
 archive/issue_comments_035900.json:
 ```json
 {
-    "body": "4752_patch.patch needs to be rebased since the first hunk failed:\n\n```\nsage-3.3.rc0/devel/sage$ patch -p1 < trac_4752_patch.patch \npatching file sage/plot/plot3d/list_plot3d.py\nHunk #1 FAILED at 98.\nHunk #2 succeeded at 179 (offset 10 lines).\nHunk #3 succeeded at 199 (offset 10 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/list_plot3d.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "4752_patch.patch needs to be rebased since the first hunk failed:\n\n```\nsage-3.3.rc0/devel/sage$ patch -p1 < trac_4752_patch.patch \npatching file sage/plot/plot3d/list_plot3d.py\nHunk #1 FAILED at 98.\nHunk #2 succeeded at 179 (offset 10 lines).\nHunk #3 succeeded at 199 (offset 10 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/list_plot3d.py.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T08:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -465,7 +460,6 @@ Hunk #2 succeeded at 179 (offset 10 lines).
 Hunk #3 succeeded at 199 (offset 10 lines).
 1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/list_plot3d.py.rej
 ```
-
 
 Cheers,
 
@@ -498,7 +492,7 @@ This is a rebase version of Josh's patch. The problem was trivial since only doc
 archive/issue_comments_035902.json:
 ```json
 {
-    "body": "We need a doctest fix for this one:\n\n```\nsage -t -long \"devel/sage/sage/plot/plot3d/list_plot3d.py\"  \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/plot/plot3d/list_plot3d.py\", line 119:\n    sage: show(list_plot3d(pts,interpolation_type='nn'))\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: We need at least 3 points to perform the interpolation\nGot nothing\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "We need a doctest fix for this one:\n\n```\nsage -t -long \"devel/sage/sage/plot/plot3d/list_plot3d.py\"  \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/plot/plot3d/list_plot3d.py\", line 119:\n    sage: show(list_plot3d(pts,interpolation_type='nn'))\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: We need at least 3 points to perform the interpolation\nGot nothing\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T08:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
@@ -521,7 +515,6 @@ Expected:
 Got nothing
 **********************************************************************
 ```
-
 
 Cheers,
 

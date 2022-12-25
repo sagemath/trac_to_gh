@@ -3,7 +3,7 @@
 archive/issues_001364.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\n\n```\nsage -t  devel/sage-main/sage/modules/quotient_module.py \n**********************************************************************\nFile \"quotient_module.py\", line 130:\n    sage: hash(Q)\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 134:\n    sage: hash((V, W))\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 159:\n    sage: cmp(Q1, 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1364\n\n",
+    "body": "Assignee: @roed314\n\n```\nsage -t  devel/sage-main/sage/modules/quotient_module.py \n**********************************************************************\nFile \"quotient_module.py\", line 130:\n    sage: hash(Q)\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 134:\n    sage: hash((V, W))\nExpected:\n    -1880683406\nGot:\n    2870563926094318706\n**********************************************************************\nFile \"quotient_module.py\", line 159:\n    sage: cmp(Q1, 5)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1364\n\n",
     "created_at": "2007-12-02T05:27:03Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_001364.json:
 }
 ```
 Assignee: @roed314
-
 
 ```
 sage -t  devel/sage-main/sage/modules/quotient_module.py 

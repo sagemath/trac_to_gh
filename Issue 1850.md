@@ -3,7 +3,7 @@
 archive/issues_001850.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
+    "body": "Assignee: @williamstein\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
     "created_at": "2008-01-19T20:26:06Z",
     "labels": [
         "component: graphics",
@@ -24,13 +24,11 @@ This works fine
 sage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))
 ```
 
-
 This is missing half of the parametric plot!!
 
 ```
 sage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)
 ```
-
 
 I suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. 
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1850
 archive/issue_comments_011678.json:
 ```json
 {
-    "body": "Very disturbingly, if you render using tachyon you don't see the problem:\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500, viewer='tachyon')\n```\n\n\nAlso, rendering some more complicated things makes it so the problem vanishes.\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x+sin(x^2)), (x,0,10*pi), plot_points=500)\n```\n\n\n\nSo this is probably a pretty tricky bug to fix, possibly a bug in jmol.",
+    "body": "Very disturbingly, if you render using tachyon you don't see the problem:\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500, viewer='tachyon')\n```\n\nAlso, rendering some more complicated things makes it so the problem vanishes.\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x+sin(x^2)), (x,0,10*pi), plot_points=500)\n```\n\n\nSo this is probably a pretty tricky bug to fix, possibly a bug in jmol.",
     "created_at": "2008-01-19T20:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
@@ -60,13 +58,11 @@ Very disturbingly, if you render using tachyon you don't see the problem:
 sage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500, viewer='tachyon')
 ```
 
-
 Also, rendering some more complicated things makes it so the problem vanishes.
 
 ```
 sage: parametric_plot3d((sin(x), cos(x), x+sin(x^2)), (x,0,10*pi), plot_points=500)
 ```
-
 
 
 So this is probably a pretty tricky bug to fix, possibly a bug in jmol.

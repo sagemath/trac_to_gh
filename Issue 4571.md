@@ -3,7 +3,7 @@
 archive/issues_004571.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @robertwb dagss\n\n\n```\n[15:53] <robertwb> yep, we should merge them\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4571\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb dagss\n\n```\n[15:53] <robertwb> yep, we should merge them\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4571\n\n",
     "created_at": "2008-11-20T21:56:56Z",
     "labels": [
         "component: build",
@@ -20,11 +20,9 @@ Assignee: mabshoff
 
 CC:  @robertwb dagss
 
-
 ```
 [15:53] <robertwb> yep, we should merge them
 ```
-
 
 
 
@@ -177,7 +175,7 @@ I've used Cython + NumPy from the notebook before, as long as you weren't in sag
 archive/issue_comments_034180.json:
 ```json
 {
-    "body": "Hmm... I also got \n\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_template.pxi # 1 doctests failed\n        sage -t -long devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed\n\n```\n",
+    "body": "Hmm... I also got \n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/rings/polynomial/polynomial_template.pxi # 1 doctests failed\n        sage -t -long devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed\n\n```",
     "created_at": "2009-07-21T20:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -188,7 +186,6 @@ archive/issue_comments_034180.json:
 
 Hmm... I also got 
 
-
 ```
 The following tests failed:
 
@@ -196,7 +193,6 @@ The following tests failed:
         sage -t -long devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed
 
 ```
-
 
 
 
@@ -241,7 +237,7 @@ Looks good. The single doctest failure was minor, fixed in #6438.
 archive/issue_comments_034183.json:
 ```json
 {
-    "body": "Replying to [comment:4 dagss]:\n> Here are some more fixes. With this, and the latest state of the\n<SNIP>\n\n\nThe patch `4571-more-fixes.patch` doesn't contain a commit message and your username is not on the patch. Your username should follow the format:\n\n```\nFull Name <email@somewhere.com>\n```\n\nThe username makes it easy to identify the patch, when it is committed, as your contribution.",
+    "body": "Replying to [comment:4 dagss]:\n> Here are some more fixes. With this, and the latest state of the\n\n<SNIP>\n\n\nThe patch `4571-more-fixes.patch` doesn't contain a commit message and your username is not on the patch. Your username should follow the format:\n\n```\nFull Name <email@somewhere.com>\n```\nThe username makes it easy to identify the patch, when it is committed, as your contribution.",
     "created_at": "2009-07-22T16:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -252,6 +248,7 @@ archive/issue_comments_034183.json:
 
 Replying to [comment:4 dagss]:
 > Here are some more fixes. With this, and the latest state of the
+
 <SNIP>
 
 
@@ -260,7 +257,6 @@ The patch `4571-more-fixes.patch` doesn't contain a commit message and your user
 ```
 Full Name <email@somewhere.com>
 ```
-
 The username makes it easy to identify the patch, when it is committed, as your contribution.
 
 
@@ -270,7 +266,7 @@ The username makes it easy to identify the patch, when it is committed, as your 
 archive/issue_comments_034184.json:
 ```json
 {
-    "body": "With both patches applied in the following order:\n1. `4571-numpy-pxd.patch`\n2. `4571-more-fixes.patch`\nI see the following build failure:\n\n```\n[mvngu@sage sage-4.1.1.alpha0]$ ./sage -br main\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/finance/time_series.pyx.\nBuilding modified file sage/matrix/change_ring.pyx.\nBuilding modified file sage/matrix/matrix_complex_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_real_double_dense.pyx.\nBuilding modified file sage/modules/vector_complex_double_dense.pyx.\nBuilding modified file sage/modules/vector_double_dense.pyx.\nBuilding modified file sage/modules/vector_real_double_dense.pyx.\nBuilding sage/rings/polynomial/real_roots.pyx because it depends on sage/modules/vector_double_dense.pxd.\nBuilding sage/stats/hmm/chmm.pyx because it depends on sage/matrix/matrix_double_dense.pxd.\nBuilding sage/stats/hmm/hmm.pyx because it depends on sage/matrix/matrix_double_dense.pxd.\npython `which cython` --embed-positions --incref-local-binop -I/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main -o sage/finance/time_series.c sage/finance/time_series.pyx\nwarning: /scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1722:24: cdef variable 'j' declared after it is used\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n            [20.0000, -3.0000, 4.5000, -2.0000]\n        \"\"\"\n        cnumpy.import_array() #This must be called before using the numpy C/api or you will get segfault\n        cdef cnumpy.npy_intp dims[1]\n        dims[0] = self._length\n        cdef cnumpy.ndarray n = cnumpy.PyArray_SimpleNewFromData(1, dims, cnumpy.NPY_DOUBLE, self._values)\n                                                                       ^\n------------------------------------------------------------\n\n/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1862:72: Cannot convert 'numpy.npy_intp [1]' to Python object\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n            [20.0000, -3.0000, 4.5000, -2.0000]\n        \"\"\"\n        cnumpy.import_array() #This must be called before using the numpy C/api or you will get segfault\n        cdef cnumpy.npy_intp dims[1]\n        dims[0] = self._length\n        cdef cnumpy.ndarray n = cnumpy.PyArray_SimpleNewFromData(1, dims, cnumpy.NPY_DOUBLE, self._values)\n                                                                                                ^\n------------------------------------------------------------\n\n/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1862:97: Cannot convert 'double *' to Python object\nError running command, failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n",
+    "body": "With both patches applied in the following order:\n1. `4571-numpy-pxd.patch`\n2. `4571-more-fixes.patch`\nI see the following build failure:\n\n```\n[mvngu@sage sage-4.1.1.alpha0]$ ./sage -br main\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/finance/time_series.pyx.\nBuilding modified file sage/matrix/change_ring.pyx.\nBuilding modified file sage/matrix/matrix_complex_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_real_double_dense.pyx.\nBuilding modified file sage/modules/vector_complex_double_dense.pyx.\nBuilding modified file sage/modules/vector_double_dense.pyx.\nBuilding modified file sage/modules/vector_real_double_dense.pyx.\nBuilding sage/rings/polynomial/real_roots.pyx because it depends on sage/modules/vector_double_dense.pxd.\nBuilding sage/stats/hmm/chmm.pyx because it depends on sage/matrix/matrix_double_dense.pxd.\nBuilding sage/stats/hmm/hmm.pyx because it depends on sage/matrix/matrix_double_dense.pxd.\npython `which cython` --embed-positions --incref-local-binop -I/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main -o sage/finance/time_series.c sage/finance/time_series.pyx\nwarning: /scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1722:24: cdef variable 'j' declared after it is used\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n            [20.0000, -3.0000, 4.5000, -2.0000]\n        \"\"\"\n        cnumpy.import_array() #This must be called before using the numpy C/api or you will get segfault\n        cdef cnumpy.npy_intp dims[1]\n        dims[0] = self._length\n        cdef cnumpy.ndarray n = cnumpy.PyArray_SimpleNewFromData(1, dims, cnumpy.NPY_DOUBLE, self._values)\n                                                                       ^\n------------------------------------------------------------\n\n/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1862:72: Cannot convert 'numpy.npy_intp [1]' to Python object\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n            [20.0000, -3.0000, 4.5000, -2.0000]\n        \"\"\"\n        cnumpy.import_array() #This must be called before using the numpy C/api or you will get segfault\n        cdef cnumpy.npy_intp dims[1]\n        dims[0] = self._length\n        cdef cnumpy.ndarray n = cnumpy.PyArray_SimpleNewFromData(1, dims, cnumpy.NPY_DOUBLE, self._values)\n                                                                                                ^\n------------------------------------------------------------\n\n/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/finance/time_series.pyx:1862:97: Cannot convert 'double *' to Python object\nError running command, failed with status 256.\nsage: There was an error installing modified sage library code.\n```",
     "created_at": "2009-07-23T02:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -341,7 +337,6 @@ sage: There was an error installing modified sage library code.
 
 
 
-
 ---
 
 archive/issue_comments_034185.json:
@@ -365,7 +360,7 @@ Looks like it'll have to be rebased, worked fine on vanilla 4.1. Where's the .ta
 archive/issue_comments_034186.json:
 ```json
 {
-    "body": "Replying to [comment:13 robertwb]:\n> Looks like it'll have to be rebased, worked fine on vanilla 4.1. Where's the .tar on sage.math? \nSource and binary versions are up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.alpha0.tar\n\n\nhttp://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux.tar.gz",
+    "body": "Replying to [comment:13 robertwb]:\n> Looks like it'll have to be rebased, worked fine on vanilla 4.1. Where's the .tar on sage.math? \n\nSource and binary versions are up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.alpha0.tar\n\n\nhttp://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux.tar.gz",
     "created_at": "2009-07-23T08:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
@@ -376,6 +371,7 @@ archive/issue_comments_034186.json:
 
 Replying to [comment:13 robertwb]:
 > Looks like it'll have to be rebased, worked fine on vanilla 4.1. Where's the .tar on sage.math? 
+
 Source and binary versions are up at
 
 http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.alpha0.tar

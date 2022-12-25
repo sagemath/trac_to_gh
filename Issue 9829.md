@@ -3,7 +3,7 @@
 archive/issues_009829.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  schymans @jhpalmieri\n\nReported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):\n\n```\nWhen trying to change the code of a worksheet in a text editor (using\nthe edit button in the worksheet), I get the following error message\nwhenever I want to save changes:\n\nBad Request\nMaximum length of 102400 bytes exceeded.\n\nDoes anyone have an idea what could cause this and how this can be\ncircumvented?\n```\n\nDidier Deshommes replied:\n\n```\nMy guess is that the web server has a limit on the size of a POST\nrequest and that you have reached it. Typically this is 1024kb. The\nsolution is to increase this limit. I'm not sure how to do that for a \nwsgi application (which I assume sage is). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9830\n\n",
+    "body": "Assignee: jason, was\n\nCC:  schymans @jhpalmieri\n\nReported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):\n\n```\nWhen trying to change the code of a worksheet in a text editor (using\nthe edit button in the worksheet), I get the following error message\nwhenever I want to save changes:\n\nBad Request\nMaximum length of 102400 bytes exceeded.\n\nDoes anyone have an idea what could cause this and how this can be\ncircumvented?\n```\nDidier Deshommes replied:\n\n```\nMy guess is that the web server has a limit on the size of a POST\nrequest and that you have reached it. Typically this is 1024kb. The\nsolution is to increase this limit. I'm not sure how to do that for a \nwsgi application (which I assume sage is). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9830\n\n",
     "created_at": "2010-08-28T07:44:03Z",
     "labels": [
         "component: notebook",
@@ -33,7 +33,6 @@ Maximum length of 102400 bytes exceeded.
 Does anyone have an idea what could cause this and how this can be
 circumvented?
 ```
-
 Didier Deshommes replied:
 
 ```
@@ -42,7 +41,6 @@ request and that you have reached it. Typically this is 1024kb. The
 solution is to increase this limit. I'm not sure how to do that for a 
 wsgi application (which I assume sage is). 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9830
 
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9830
 archive/issue_comments_096841.json:
 ```json
 {
-    "body": "We can fix this by adjusting `twisted.web2.resource.PostableResource.maxMem` near the top of `sagenb.notebook.twist`.\n\nFor now, if you have write access to your Sage distribution, you can do this yourself by putting, e.g.,\n\n```python\nresource.PostableResource.maxMem = 1000 * 1024\n```\n\njust after\n\n```python\nfrom twisted.web2 import server, http, resource, channel\n```\n\nnear the top of \n\n```\nSAGE_ROOT/local/lib/python2.6/site-packages/sagenb-*-py2.6.egg/sagenb/notebook/twist.py\n```\n\nand restarting the notebook server.\n\nHere's the beginning of the class definition:\n\n```python\nclass PostableResource(Resource):\n    \"\"\"\n    A L{Resource} capable of handling the POST request method.\n\n    @cvar maxMem: maximum memory used during the parsing of the data.\n    @type maxMem: C{int}\n    @cvar maxFields: maximum number of form fields allowed.\n    @type maxFields: C{int}\n    @cvar maxSize: maximum size of the whole post allowed.\n    @type maxSize: C{int}\n    \"\"\"\n    maxMem = 100 * 1024\n    maxFields = 1024\n    maxSize = 10 * 1024 * 1024\n\n    def http_POST(self, request):\n[...]\n```\n",
+    "body": "We can fix this by adjusting `twisted.web2.resource.PostableResource.maxMem` near the top of `sagenb.notebook.twist`.\n\nFor now, if you have write access to your Sage distribution, you can do this yourself by putting, e.g.,\n\n```python\nresource.PostableResource.maxMem = 1000 * 1024\n```\njust after\n\n```python\nfrom twisted.web2 import server, http, resource, channel\n```\nnear the top of \n\n```\nSAGE_ROOT/local/lib/python2.6/site-packages/sagenb-*-py2.6.egg/sagenb/notebook/twist.py\n```\nand restarting the notebook server.\n\nHere's the beginning of the class definition:\n\n```python\nclass PostableResource(Resource):\n    \"\"\"\n    A L{Resource} capable of handling the POST request method.\n\n    @cvar maxMem: maximum memory used during the parsing of the data.\n    @type maxMem: C{int}\n    @cvar maxFields: maximum number of form fields allowed.\n    @type maxFields: C{int}\n    @cvar maxSize: maximum size of the whole post allowed.\n    @type maxSize: C{int}\n    \"\"\"\n    maxMem = 100 * 1024\n    maxFields = 1024\n    maxSize = 10 * 1024 * 1024\n\n    def http_POST(self, request):\n[...]\n```",
     "created_at": "2010-08-28T07:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
@@ -71,19 +69,16 @@ For now, if you have write access to your Sage distribution, you can do this you
 ```python
 resource.PostableResource.maxMem = 1000 * 1024
 ```
-
 just after
 
 ```python
 from twisted.web2 import server, http, resource, channel
 ```
-
 near the top of 
 
 ```
 SAGE_ROOT/local/lib/python2.6/site-packages/sagenb-*-py2.6.egg/sagenb/notebook/twist.py
 ```
-
 and restarting the notebook server.
 
 Here's the beginning of the class definition:
@@ -107,7 +102,6 @@ class PostableResource(Resource):
     def http_POST(self, request):
 [...]
 ```
-
 
 
 

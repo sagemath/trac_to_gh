@@ -3,7 +3,7 @@
 archive/issues_005434.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: K.<x> = RDF[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = RR[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = AA[]\nsage: K(0).shift(3).is_zero()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5434\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: K.<x> = RDF[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = RR[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = AA[]\nsage: K(0).shift(3).is_zero()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5434\n\n",
     "created_at": "2009-03-04T04:02:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_005434.json:
 ```
 Assignee: cwitty
 
-
 ```
 sage: K.<x> = RDF[]
 sage: K(0).shift(3).is_zero()
@@ -31,7 +30,6 @@ sage: K.<x> = AA[]
 sage: K(0).shift(3).is_zero()
 False
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5434

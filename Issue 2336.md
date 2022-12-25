@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2336
 archive/issue_comments_015586.json:
 ```json
 {
-    "body": "\n```",
+    "body": "```",
     "created_at": "2008-02-27T20:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2336",
     "type": "issue_comment",
@@ -39,7 +39,6 @@ archive/issue_comments_015586.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 

@@ -193,7 +193,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070572.json:
 ```json
 {
-    "body": "It would have been wiser to overwrite the patch file in this case I think. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgpg-error*\nlocal/lib/libgpg-error.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libgpg-error.la:\tcommands text\nlocal/lib/libgpg-error.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgpg-error.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgpg-error.so.0.4.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nLibraries are building 64-bit, so positive review. \n\nIt's probably worth showing the output of the 'file' command, to show the libraries, or executables are building 64-bit. I must admit I've rarely if ever done that, but it will show that the problem is fixed, as not all packages are building properly, even with the -m64 flag added. \n\nDave",
+    "body": "It would have been wiser to overwrite the patch file in this case I think. \n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgpg-error*\nlocal/lib/libgpg-error.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libgpg-error.la:\tcommands text\nlocal/lib/libgpg-error.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgpg-error.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgpg-error.so.0.4.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n\nLibraries are building 64-bit, so positive review. \n\nIt's probably worth showing the output of the 'file' command, to show the libraries, or executables are building 64-bit. I must admit I've rarely if ever done that, but it will show that the problem is fixed, as not all packages are building properly, even with the -m64 flag added. \n\nDave",
     "created_at": "2010-01-27T14:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
@@ -204,7 +204,6 @@ archive/issue_comments_070572.json:
 
 It would have been wiser to overwrite the patch file in this case I think. 
 
-
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgpg-error*
 local/lib/libgpg-error.a:	current ar archive, not a dynamic executable or shared object
@@ -213,7 +212,6 @@ local/lib/libgpg-error.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamical
 local/lib/libgpg-error.so.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libgpg-error.so.0.4.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
-
 
 Libraries are building 64-bit, so positive review. 
 

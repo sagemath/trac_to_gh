@@ -3,7 +3,7 @@
 archive/issues_009594.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @dandrake @qed777 @rbeezer @haraldschilly @JohnCremona\n\nOn 32-bit systems, we get the following doctest error in Sage 4.5.2.alpha0:\n\n```sh\n$ ./sage -t devel/sage/sage/graphs/generic_graph.py\n...\n    sage: G.get_pos()\nExpected:\n    {0: [1.17..., -0.855...],\n     1: [1.81..., -0.0990...],\n     2: [1.35..., 0.184...],\n     3: [1.51..., 0.644...],\n     4: [2.00..., -0.507...],\n     5: [0.597..., -0.236...],\n     6: [2.04..., 0.687...],\n     7: [1.46..., -0.473...],\n     8: [0.902..., 0.773...],\n     9: [2.48..., -0.119...]}\nGot:\n    {0: [1.1644236010005358, -0.83686858657215979], 1: [1.7943839700815074, -0.066920666682206337], 2: [1.2689961125613971,\n0.14359096356381118], 3: [1.511860539628787, 0.59162048325984706], 4:\n[1.9941403734258905, -0.53845815492480542], 5: [0.59110867097474395,\n-0.2204272806589378], 6: [2.0144421480067041, 0.70158250822163282], 7:\n[1.4603696336476519, -0.46717593533332896], 8: [0.90427280509063312,\n0.79073173670301911], 9: [2.4603584159299983, -0.097675067576871527]}\n...\n```\n\n\n(See #9593 for making spring layout reproducible.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9594\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @dandrake @qed777 @rbeezer @haraldschilly @JohnCremona\n\nOn 32-bit systems, we get the following doctest error in Sage 4.5.2.alpha0:\n\n```sh\n$ ./sage -t devel/sage/sage/graphs/generic_graph.py\n...\n    sage: G.get_pos()\nExpected:\n    {0: [1.17..., -0.855...],\n     1: [1.81..., -0.0990...],\n     2: [1.35..., 0.184...],\n     3: [1.51..., 0.644...],\n     4: [2.00..., -0.507...],\n     5: [0.597..., -0.236...],\n     6: [2.04..., 0.687...],\n     7: [1.46..., -0.473...],\n     8: [0.902..., 0.773...],\n     9: [2.48..., -0.119...]}\nGot:\n    {0: [1.1644236010005358, -0.83686858657215979], 1: [1.7943839700815074, -0.066920666682206337], 2: [1.2689961125613971,\n0.14359096356381118], 3: [1.511860539628787, 0.59162048325984706], 4:\n[1.9941403734258905, -0.53845815492480542], 5: [0.59110867097474395,\n-0.2204272806589378], 6: [2.0144421480067041, 0.70158250822163282], 7:\n[1.4603696336476519, -0.46717593533332896], 8: [0.90427280509063312,\n0.79073173670301911], 9: [2.4603584159299983, -0.097675067576871527]}\n...\n```\n\n(See #9593 for making spring layout reproducible.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9594\n\n",
     "created_at": "2010-07-24T23:12:42Z",
     "labels": [
         "component: graph theory",
@@ -47,7 +47,6 @@ Got:
 0.79073173670301911], 9: [2.4603584159299983, -0.097675067576871527]}
 ...
 ```
-
 
 (See #9593 for making spring layout reproducible.)
 
@@ -160,7 +159,7 @@ I would also suggest to introduce some [iterations=some max val ](http://sagemat
 archive/issue_comments_092674.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> I cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\nI've reduced the problem size of the previously not terminating doctest and with the patch here applied now all doctests pass on the 32-bit system, too.",
+    "body": "Replying to [comment:2 leif]:\n> I cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\n\nI've reduced the problem size of the previously not terminating doctest and with the patch here applied now all doctests pass on the 32-bit system, too.",
     "created_at": "2010-07-25T09:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
@@ -171,6 +170,7 @@ archive/issue_comments_092674.json:
 
 Replying to [comment:2 leif]:
 > I cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...
+
 
 I've reduced the problem size of the previously not terminating doctest and with the patch here applied now all doctests pass on the 32-bit system, too.
 
@@ -219,7 +219,7 @@ Positive review, in any case.
 archive/issue_comments_092677.json:
 ```json
 {
-    "body": "> (both #9583 and #9584)\n\nSorry, I meant \"both #9593 and #9594\".",
+    "body": "> (both #9583 and #9584)\n\n\nSorry, I meant \"both #9593 and #9594\".",
     "created_at": "2010-07-25T19:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
@@ -230,6 +230,7 @@ archive/issue_comments_092677.json:
 
 > (both #9583 and #9584)
 
+
 Sorry, I meant "both #9593 and #9594".
 
 
@@ -239,7 +240,7 @@ Sorry, I meant "both #9593 and #9594".
 archive/issue_comments_092678.json:
 ```json
 {
-    "body": "Replying to [comment:6 jhpalmieri]:\n> > (both #9583 and #9584)\n> \n> Sorry, I meant \"both #9593 and #9594\".\n\nObviously... ;-)\n\nI simply forgot to add the \"backlink\" at #9593, which should fix the problem in the long run (so I mentioned only that ticket in the patch's comment; with both, the line had gotten to long).",
+    "body": "Replying to [comment:6 jhpalmieri]:\n> > (both #9583 and #9584)\n\n> \n> Sorry, I meant \"both #9593 and #9594\".\n\n\nObviously... ;-)\n\nI simply forgot to add the \"backlink\" at #9593, which should fix the problem in the long run (so I mentioned only that ticket in the patch's comment; with both, the line had gotten to long).",
     "created_at": "2010-07-25T20:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
@@ -250,8 +251,10 @@ archive/issue_comments_092678.json:
 
 Replying to [comment:6 jhpalmieri]:
 > > (both #9583 and #9584)
+
 > 
 > Sorry, I meant "both #9593 and #9594".
+
 
 Obviously... ;-)
 

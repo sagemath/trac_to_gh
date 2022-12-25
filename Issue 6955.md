@@ -243,7 +243,7 @@ Chris.
 archive/issue_comments_057417.json:
 ```json
 {
-    "body": "Replying to [comment:7 wuthrich]:\n> Sorry, John, I am a newbie to anything that is outside the devel-tree.\n\nSo was I before I did this!\n\n> Can you tell me exactly what I have to do (if you want me to review it) ?\n>\n\nOK.  You need to be careful, since you will be changing files outside $SAGE_ROOT/devel, which are therefore not covered by the cloning system, so you have to work a bit harder both to apply the patches and to unapply them.  I will assume that you will use mercurial queues (but it would be possible without).\n\nFirst make a clone in the usual way, say called simon, so you have created $SAGE_ROOT/devel/sage-simon as a copy of $SAGE_ROOT/devel/sage-main.\n\nNow apply the patch to the extcode:\n\n```\ncd SAGE_ROOT/data/extcode  \nhg qseries      # test that queues have been initialised here;  if not, do hg qinit first\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update-extcode.patch\nhg qpush\n```\n\nNow apply the ordinary patch:\n\n```\ncd ../../devel/sage-simon\nhg qinit  # if not already done\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update.patch\nhg qpush\nsage -b\n```\n\n\nThat's it applied.  Run, test, as much as you like.  To reverse the changes:\n\n```\n# in devel/sage-simon\nhg qpop\ncd ../../data/extcode\nhg qpop\nsage -b\n```\n\n\n \n> Chris.",
+    "body": "Replying to [comment:7 wuthrich]:\n> Sorry, John, I am a newbie to anything that is outside the devel-tree.\n\n\nSo was I before I did this!\n\n> Can you tell me exactly what I have to do (if you want me to review it) ?\n\n>\n\nOK.  You need to be careful, since you will be changing files outside $SAGE_ROOT/devel, which are therefore not covered by the cloning system, so you have to work a bit harder both to apply the patches and to unapply them.  I will assume that you will use mercurial queues (but it would be possible without).\n\nFirst make a clone in the usual way, say called simon, so you have created $SAGE_ROOT/devel/sage-simon as a copy of $SAGE_ROOT/devel/sage-main.\n\nNow apply the patch to the extcode:\n\n```\ncd SAGE_ROOT/data/extcode  \nhg qseries      # test that queues have been initialised here;  if not, do hg qinit first\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update-extcode.patch\nhg qpush\n```\nNow apply the ordinary patch:\n\n```\ncd ../../devel/sage-simon\nhg qinit  # if not already done\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update.patch\nhg qpush\nsage -b\n```\n\nThat's it applied.  Run, test, as much as you like.  To reverse the changes:\n\n```\n# in devel/sage-simon\nhg qpop\ncd ../../data/extcode\nhg qpop\nsage -b\n```\n\n \n> Chris.",
     "created_at": "2010-04-08T15:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -255,9 +255,11 @@ archive/issue_comments_057417.json:
 Replying to [comment:7 wuthrich]:
 > Sorry, John, I am a newbie to anything that is outside the devel-tree.
 
+
 So was I before I did this!
 
 > Can you tell me exactly what I have to do (if you want me to review it) ?
+
 >
 
 OK.  You need to be careful, since you will be changing files outside $SAGE_ROOT/devel, which are therefore not covered by the cloning system, so you have to work a bit harder both to apply the patches and to unapply them.  I will assume that you will use mercurial queues (but it would be possible without).
@@ -272,7 +274,6 @@ hg qseries      # test that queues have been initialised here;  if not, do hg qi
 hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update-extcode.patch
 hg qpush
 ```
-
 Now apply the ordinary patch:
 
 ```
@@ -283,7 +284,6 @@ hg qpush
 sage -b
 ```
 
-
 That's it applied.  Run, test, as much as you like.  To reverse the changes:
 
 ```
@@ -293,7 +293,6 @@ cd ../../data/extcode
 hg qpop
 sage -b
 ```
-
 
  
 > Chris.
@@ -437,7 +436,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_057425.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py? \n\nNo, that part is crucial.  Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  The only difference between them is that my patch wrongly inserts a space in the first line of the file ell_number_field.py, and Chris's patch removes that bit of my patch,",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py? \n\n\nNo, that part is crucial.  Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  The only difference between them is that my patch wrongly inserts a space in the first line of the file ell_number_field.py, and Chris's patch removes that bit of my patch,",
     "created_at": "2010-04-16T08:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -449,6 +448,7 @@ archive/issue_comments_057425.json:
 Replying to [comment:12 jhpalmieri]:
 > The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py? 
 
+
 No, that part is crucial.  Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  The only difference between them is that my patch wrongly inserts a space in the first line of the file ell_number_field.py, and Chris's patch removes that bit of my patch,
 
 
@@ -458,7 +458,7 @@ No, that part is crucial.  Did you see that the review patch is instead of my pa
 archive/issue_comments_057426.json:
 ```json
 {
-    "body": "Replying to [comment:13 cremona]:\n> Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  \n\nAh, no, I'd missed that.  Sorry.",
+    "body": "Replying to [comment:13 cremona]:\n> Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  \n\n\nAh, no, I'd missed that.  Sorry.",
     "created_at": "2010-04-16T17:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6955",
     "type": "issue_comment",
@@ -469,6 +469,7 @@ archive/issue_comments_057426.json:
 
 Replying to [comment:13 cremona]:
 > Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  
+
 
 Ah, no, I'd missed that.  Sorry.
 

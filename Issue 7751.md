@@ -317,7 +317,7 @@ I agree.  Positive review.
 archive/issue_comments_066641.json:
 ```json
 {
-    "body": "Applying the patch to [this\u00a0hierarchy](http://trac.sagemath.org/sage_trac/ticket/8186#comment:8) (minus #8232), I get\n\n```\npatching file sage/combinat/root_system/weyl_group.py\nHunk #5 FAILED at 145\n1 out of 13 hunks FAILED -- saving rejects to file sage/combinat/root_system/weyl_group.py.rej\n```\n\nThe reject:\n\n```diff\n--- weyl_group.py\n+++ weyl_group.py\n@@ -138,6 +146,7 @@\n         self.n = lattice.dimension() # Really needed?\n         # MatrixGroup_gens takes plain matrices as input. So we can't do:\n         #MatrixGroup_gens.__init__(self, list(self.simple_reflections()))\n+        self._prefix = prefix\n         MatrixGroup_gens.__init__(self, [self.morphism_matrix(self.lattice().si\nmple_reflection(i)) for i in self.index_set()])\n \n     @cached_method\n```\n",
+    "body": "Applying the patch to [this\u00a0hierarchy](http://trac.sagemath.org/sage_trac/ticket/8186#comment:8) (minus #8232), I get\n\n```\npatching file sage/combinat/root_system/weyl_group.py\nHunk #5 FAILED at 145\n1 out of 13 hunks FAILED -- saving rejects to file sage/combinat/root_system/weyl_group.py.rej\n```\nThe reject:\n\n```diff\n--- weyl_group.py\n+++ weyl_group.py\n@@ -138,6 +146,7 @@\n         self.n = lattice.dimension() # Really needed?\n         # MatrixGroup_gens takes plain matrices as input. So we can't do:\n         #MatrixGroup_gens.__init__(self, list(self.simple_reflections()))\n+        self._prefix = prefix\n         MatrixGroup_gens.__init__(self, [self.morphism_matrix(self.lattice().si\nmple_reflection(i)) for i in self.index_set()])\n \n     @cached_method\n```",
     "created_at": "2010-02-11T13:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7751",
     "type": "issue_comment",
@@ -333,7 +333,6 @@ patching file sage/combinat/root_system/weyl_group.py
 Hunk #5 FAILED at 145
 1 out of 13 hunks FAILED -- saving rejects to file sage/combinat/root_system/weyl_group.py.rej
 ```
-
 The reject:
 
 ```diff
@@ -349,7 +348,6 @@ mple_reflection(i)) for i in self.index_set()])
  
      @cached_method
 ```
-
 
 
 

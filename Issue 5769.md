@@ -3,7 +3,7 @@
 archive/issues_005769.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref2\nsage: R.<t> = ZZ[[]]\nsage: f = 1 + 17*t - 4*t^3 + O(t^5)\nsage: f[1] = 10\n...\nIndexError: power series are immutable\n```\n\nExcept they are mutable:\n\n```\nsage: f *= 2\nsage: f\n2 + 34*t - 8*t^3 + O(t^5)\n```\n\nBut they shouldn't be!  The _imul_ method needs to be deleted.\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/5769\n\n",
+    "body": "Assignee: somebody\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref2\nsage: R.<t> = ZZ[[]]\nsage: f = 1 + 17*t - 4*t^3 + O(t^5)\nsage: f[1] = 10\n...\nIndexError: power series are immutable\n```\nExcept they are mutable:\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage: f *= 2\nsage: f\n2 + 34*t - 8*t^3 + O(t^5)\n```\nBut they shouldn't be!  The _imul_ method needs to be deleted.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5769\n\n",
     "created_at": "2009-04-12T05:19:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_005769.json:
 ```
 Assignee: somebody
 
-
 ```
 wstein@sage:~/build/sage-3.4.1.rc2$ ./sage
 ----------------------------------------------------------------------
@@ -30,18 +29,16 @@ sage: f[1] = 10
 ...
 IndexError: power series are immutable
 ```
-
 Except they are mutable:
-
+| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage: f *= 2
 sage: f
 2 + 34*t - 8*t^3 + O(t^5)
 ```
-
 But they shouldn't be!  The _imul_ method needs to be deleted.
-| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |
-| Type notebook() for the GUI, and license() for information.        |
+
 
 Issue created by migration from https://trac.sagemath.org/ticket/5769
 

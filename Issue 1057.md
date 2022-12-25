@@ -3,7 +3,7 @@
 archive/issues_001057.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: sage: K.<a> = NumberField(x^2 - 5)\nsage: sage: B = K.maximal_order().basis();\nsage: B[1].parent().base_ring() # this is bad\nRational Field\nsage: B[1].parent().base()\nInteger Ring\n```\n\n\nAlso, _rmul_, etc needs to be re-implemented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1057\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: sage: K.<a> = NumberField(x^2 - 5)\nsage: sage: B = K.maximal_order().basis();\nsage: B[1].parent().base_ring() # this is bad\nRational Field\nsage: B[1].parent().base()\nInteger Ring\n```\n\nAlso, _rmul_, etc needs to be re-implemented. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1057\n\n",
     "created_at": "2007-11-01T21:14:29Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_001057.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: sage: K.<a> = NumberField(x^2 - 5)
 sage: sage: B = K.maximal_order().basis();
@@ -28,7 +27,6 @@ Rational Field
 sage: B[1].parent().base()
 Integer Ring
 ```
-
 
 Also, _rmul_, etc needs to be re-implemented. 
 

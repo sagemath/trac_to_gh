@@ -48,7 +48,7 @@ archive/issue_events_020297.json:
 archive/issue_comments_075952.json:
 ```json
 {
-    "body": "\n```\n2) I think those options are relevant to building the optional sage spkg that depends on mpi, namely mpi4py.   If somebody updates openmpi, they better make sure mpi4py also works with the new version.\n```\n",
+    "body": "```\n2) I think those options are relevant to building the optional sage spkg that depends on mpi, namely mpi4py.   If somebody updates openmpi, they better make sure mpi4py also works with the new version.\n```",
     "created_at": "2010-03-14T23:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_comment",
@@ -57,11 +57,9 @@ archive/issue_comments_075952.json:
 }
 ```
 
-
 ```
 2) I think those options are relevant to building the optional sage spkg that depends on mpi, namely mpi4py.   If somebody updates openmpi, they better make sure mpi4py also works with the new version.
 ```
-
 
 
 

@@ -140,7 +140,7 @@ I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?
 archive/issue_comments_055134.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?\nYes.",
+    "body": "Replying to [comment:6 jason]:\n> I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?\n\nYes.",
     "created_at": "2009-09-17T10:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
@@ -151,6 +151,7 @@ archive/issue_comments_055134.json:
 
 Replying to [comment:6 jason]:
 > I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?
+
 Yes.
 
 
@@ -185,7 +186,7 @@ Marking as "needs work" for the following reasons:
 archive/issue_comments_055136.json:
 ```json
 {
-    "body": "Replying to [comment:8 jason]:\n> Nice work; thanks for doing this!\n> \n> Marking as \"needs work\" for the following reasons:\n> \n\nArrgghh ...\nJust saw this now, going through old emails.\n\nI will try to work on these referee comments/suggestions now. It probably needs rebasing anyway.\nSorry for the late reply.",
+    "body": "Replying to [comment:8 jason]:\n> Nice work; thanks for doing this!\n> \n> Marking as \"needs work\" for the following reasons:\n> \n\n\nArrgghh ...\nJust saw this now, going through old emails.\n\nI will try to work on these referee comments/suggestions now. It probably needs rebasing anyway.\nSorry for the late reply.",
     "created_at": "2010-01-04T03:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
@@ -199,6 +200,7 @@ Replying to [comment:8 jason]:
 > 
 > Marking as "needs work" for the following reasons:
 > 
+
 
 Arrgghh ...
 Just saw this now, going through old emails.

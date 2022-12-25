@@ -3,7 +3,7 @@
 archive/issues_005265.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRight now we link the matrix_mod2_dense.pyx aginst libpng:\n\n```\n     Extension('sage.matrix.matrix_mod2_dense',\n               sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n               libraries = ['gmp','m4ri', 'png', 'gd']),\n```\n\nWe need to link against png12 since the new libpng.spkg will only provide libpng12.*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5265\n\n",
+    "body": "Assignee: mabshoff\n\nRight now we link the matrix_mod2_dense.pyx aginst libpng:\n\n```\n     Extension('sage.matrix.matrix_mod2_dense',\n               sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n               libraries = ['gmp','m4ri', 'png', 'gd']),\n```\nWe need to link against png12 since the new libpng.spkg will only provide libpng12.*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5265\n\n",
     "created_at": "2009-02-14T09:53:07Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ Right now we link the matrix_mod2_dense.pyx aginst libpng:
                sources = ['sage/matrix/matrix_mod2_dense.pyx'],
                libraries = ['gmp','m4ri', 'png', 'gd']),
 ```
-
 We need to link against png12 since the new libpng.spkg will only provide libpng12.*.
 
 Cheers,

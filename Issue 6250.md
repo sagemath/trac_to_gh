@@ -150,7 +150,7 @@ Changing status from new to assigned.
 archive/issue_comments_049821.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> I don't agree with the suggestion in one of the docstrings that order might be deprecated.\n> But that is just my (American) opinion, which might not be shared by the rest of the world:-)\n\nI am fine with both options. From discussions on sage-devel, it seems that in general aliases are somewhat frowned upon.\nWe definitely want .cardinality(). But yes, even in Europe, some users would certainly be trying G.order() to get the size\nof the group. That's why I raised the issue.\n\nI am happy to remove the comment if you think its better.\n\n\n> In any case, the patches do not apply cleanly to 4.0.rc0. \n\n? I just retried, and it applies smoothly on sage 4.0.1. Did you only apply the second patch? (the first one should be deleted)",
+    "body": "Replying to [comment:4 wdj]:\n> I don't agree with the suggestion in one of the docstrings that order might be deprecated.\n> But that is just my (American) opinion, which might not be shared by the rest of the world:-)\n\n\nI am fine with both options. From discussions on sage-devel, it seems that in general aliases are somewhat frowned upon.\nWe definitely want .cardinality(). But yes, even in Europe, some users would certainly be trying G.order() to get the size\nof the group. That's why I raised the issue.\n\nI am happy to remove the comment if you think its better.\n\n\n> In any case, the patches do not apply cleanly to 4.0.rc0. \n\n\n? I just retried, and it applies smoothly on sage 4.0.1. Did you only apply the second patch? (the first one should be deleted)",
     "created_at": "2009-06-10T16:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
@@ -163,6 +163,7 @@ Replying to [comment:4 wdj]:
 > I don't agree with the suggestion in one of the docstrings that order might be deprecated.
 > But that is just my (American) opinion, which might not be shared by the rest of the world:-)
 
+
 I am fine with both options. From discussions on sage-devel, it seems that in general aliases are somewhat frowned upon.
 We definitely want .cardinality(). But yes, even in Europe, some users would certainly be trying G.order() to get the size
 of the group. That's why I raised the issue.
@@ -171,6 +172,7 @@ I am happy to remove the comment if you think its better.
 
 
 > In any case, the patches do not apply cleanly to 4.0.rc0. 
+
 
 ? I just retried, and it applies smoothly on sage 4.0.1. Did you only apply the second patch? (the first one should be deleted)
 

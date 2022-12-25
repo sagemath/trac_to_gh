@@ -3,7 +3,7 @@
 archive/issues_006539.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @dimpase\n\nKeywords: OpenSolaris x86\n\nThommy Malmstrom, thommy.m.malmstrom`@`gmail.com reported a problem to me with a failed build of Sage on an OpenSolaris (AMD or Intel processor).\n\n```\nHost system\nuname -a:\nSunOS bigblue 5.11 snv_101b i86pc i386 i86pc Solaris\n```\n\nWhat can be seen in the configure script's output is the linker is determined to be the GNU linker:\n\n\n```\nchecking for ld used by gcc -std=gnu99... ld\nchecking if the linker (ld) is GNU ld... yes\n```\n\n\nBut this is incorrect, as the output from the compiler shows:\n\n```\nConfigured with: /builds2/sfwnv-gate/usr/src/cmd/gcc/gcc-3.4.3/configure\n--prefix=/usr/sfw --with-as=/usr/sfw/bin/gas --with-gnu-as\n--with-ld=/usr/ccs/bin/ld --without-gnu-ld\n--enable-languages=c,c++,f77,objc --enable-shared\nThread model: posix\ngcc version 3.4.3 (csl-sol210-3_4-20050802)\n```\n\n\nThe error is a result of sending the -soname to the Sun linker, which generates an error - clearly this is nothing like you would expect from a GNU tool, and is the Sun linker:\n\n\n```\nusage: ld [-6:abc:d:e:f:h:il:mo:p:rstu:z:B:CD:F:GI:L:M:N:P:Q:R:S:VW:Y:?]\nfile(s)\n        [-64]           enforce a 64-bit link-edit\n        [-a]            create an absolute file\n        [-b]            do not do special PIC relocations in a.out\n        [-B direct | nodirect]\n                        establish direct bindings, or inhibit direct binding\n                        to, the object being created\n        [-B dynamic | static]\n                        search for shared libraries|archives\n        [-B eliminate]  eliminate unqualified global symbols from the\n                        symbol table\n        [-B group]      relocate object from within group\n        [-B local]      reduce unqualified global symbols to local\n\n```\n\nI've attached the part of the log connected with the building of mpir. \n\nThe configure script was generated using autoconf 2.61, which is about (Nov 2006), so is around two and a half years old. It might be that the old version does not perform too well on OpenSolaris, so I would suggest a later version is used to generate the configure script. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6539\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @dimpase\n\nKeywords: OpenSolaris x86\n\nThommy Malmstrom, thommy.m.malmstrom`@`gmail.com reported a problem to me with a failed build of Sage on an OpenSolaris (AMD or Intel processor).\n\n```\nHost system\nuname -a:\nSunOS bigblue 5.11 snv_101b i86pc i386 i86pc Solaris\n```\nWhat can be seen in the configure script's output is the linker is determined to be the GNU linker:\n\n```\nchecking for ld used by gcc -std=gnu99... ld\nchecking if the linker (ld) is GNU ld... yes\n```\n\nBut this is incorrect, as the output from the compiler shows:\n\n```\nConfigured with: /builds2/sfwnv-gate/usr/src/cmd/gcc/gcc-3.4.3/configure\n--prefix=/usr/sfw --with-as=/usr/sfw/bin/gas --with-gnu-as\n--with-ld=/usr/ccs/bin/ld --without-gnu-ld\n--enable-languages=c,c++,f77,objc --enable-shared\nThread model: posix\ngcc version 3.4.3 (csl-sol210-3_4-20050802)\n```\n\nThe error is a result of sending the -soname to the Sun linker, which generates an error - clearly this is nothing like you would expect from a GNU tool, and is the Sun linker:\n\n```\nusage: ld [-6:abc:d:e:f:h:il:mo:p:rstu:z:B:CD:F:GI:L:M:N:P:Q:R:S:VW:Y:?]\nfile(s)\n        [-64]           enforce a 64-bit link-edit\n        [-a]            create an absolute file\n        [-b]            do not do special PIC relocations in a.out\n        [-B direct | nodirect]\n                        establish direct bindings, or inhibit direct binding\n                        to, the object being created\n        [-B dynamic | static]\n                        search for shared libraries|archives\n        [-B eliminate]  eliminate unqualified global symbols from the\n                        symbol table\n        [-B group]      relocate object from within group\n        [-B local]      reduce unqualified global symbols to local\n\n```\nI've attached the part of the log connected with the building of mpir. \n\nThe configure script was generated using autoconf 2.61, which is about (Nov 2006), so is around two and a half years old. It might be that the old version does not perform too well on OpenSolaris, so I would suggest a later version is used to generate the configure script. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6539\n\n",
     "created_at": "2009-07-16T00:27:17Z",
     "labels": [
         "component: porting: solaris",
@@ -29,15 +29,12 @@ Host system
 uname -a:
 SunOS bigblue 5.11 snv_101b i86pc i386 i86pc Solaris
 ```
-
 What can be seen in the configure script's output is the linker is determined to be the GNU linker:
-
 
 ```
 checking for ld used by gcc -std=gnu99... ld
 checking if the linker (ld) is GNU ld... yes
 ```
-
 
 But this is incorrect, as the output from the compiler shows:
 
@@ -50,9 +47,7 @@ Thread model: posix
 gcc version 3.4.3 (csl-sol210-3_4-20050802)
 ```
 
-
 The error is a result of sending the -soname to the Sun linker, which generates an error - clearly this is nothing like you would expect from a GNU tool, and is the Sun linker:
-
 
 ```
 usage: ld [-6:abc:d:e:f:h:il:mo:p:rstu:z:B:CD:F:GI:L:M:N:P:Q:R:S:VW:Y:?]
@@ -71,7 +66,6 @@ file(s)
         [-B local]      reduce unqualified global symbols to local
 
 ```
-
 I've attached the part of the log connected with the building of mpir. 
 
 The configure script was generated using autoconf 2.61, which is about (Nov 2006), so is around two and a half years old. It might be that the old version does not perform too well on OpenSolaris, so I would suggest a later version is used to generate the configure script. 
@@ -109,7 +103,7 @@ The output shown while building mpir.
 archive/issue_comments_053215.json:
 ```json
 {
-    "body": "I've just tried to build mpir on what I believe is the same OS as above - the 11/2008 release of OpenSolaris and do not see this issue - the configure  script reconises this as a non-GNU linker properly. It is not clear why it should get it wrong on another system with the same OS\n\n\n```\n$ cat /etc/release\n                       OpenSolaris 2008.11 snv_101b_rc2 X86\n           Copyright 2008 Sun Microsystems, Inc.  All Rights Reserved.\n                        Use is subject to license terms.\n                           Assembled 19 November 2008\n```\n\n\n\nHere's the output of configure of mpir-1.2.p4\n\n\n```\n./configure \n<SNIP>\nchecking for a sed that does not truncate output... /usr/bin/gsed\nchecking for ld used by gcc -std=gnu99... /usr/ccs/bin/ld\nchecking if the linker (/usr/ccs/bin/ld) is GNU ld... no\nchecking for /usr/ccs/bin/ld option to reload object files... -r\n\n```\n",
+    "body": "I've just tried to build mpir on what I believe is the same OS as above - the 11/2008 release of OpenSolaris and do not see this issue - the configure  script reconises this as a non-GNU linker properly. It is not clear why it should get it wrong on another system with the same OS\n\n```\n$ cat /etc/release\n                       OpenSolaris 2008.11 snv_101b_rc2 X86\n           Copyright 2008 Sun Microsystems, Inc.  All Rights Reserved.\n                        Use is subject to license terms.\n                           Assembled 19 November 2008\n```\n\n\nHere's the output of configure of mpir-1.2.p4\n\n```\n./configure \n<SNIP>\nchecking for a sed that does not truncate output... /usr/bin/gsed\nchecking for ld used by gcc -std=gnu99... /usr/ccs/bin/ld\nchecking if the linker (/usr/ccs/bin/ld) is GNU ld... no\nchecking for /usr/ccs/bin/ld option to reload object files... -r\n\n```",
     "created_at": "2009-07-22T01:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6539",
     "type": "issue_comment",
@@ -120,7 +114,6 @@ archive/issue_comments_053215.json:
 
 I've just tried to build mpir on what I believe is the same OS as above - the 11/2008 release of OpenSolaris and do not see this issue - the configure  script reconises this as a non-GNU linker properly. It is not clear why it should get it wrong on another system with the same OS
 
-
 ```
 $ cat /etc/release
                        OpenSolaris 2008.11 snv_101b_rc2 X86
@@ -130,9 +123,7 @@ $ cat /etc/release
 ```
 
 
-
 Here's the output of configure of mpir-1.2.p4
-
 
 ```
 ./configure 
@@ -143,7 +134,6 @@ checking if the linker (/usr/ccs/bin/ld) is GNU ld... no
 checking for /usr/ccs/bin/ld option to reload object files... -r
 
 ```
-
 
 
 

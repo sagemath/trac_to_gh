@@ -3,7 +3,7 @@
 archive/issues_001391.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nBehold this behavior:\n\n\n```\nsage: R.<a,b,c,d> = QQ[]\nsage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: f.factor()\n(-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: F = f.factor()\nsage: F[0][0]\n-1\nsage: F.unit_part ()\n1\n```\n\n\nHowever it should be that F.unit_part() is -1 and F[0][0] is a-d.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1391\n\n",
+    "body": "Assignee: @malb\n\nBehold this behavior:\n\n```\nsage: R.<a,b,c,d> = QQ[]\nsage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: f.factor()\n(-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: F = f.factor()\nsage: F[0][0]\n-1\nsage: F.unit_part ()\n1\n```\n\nHowever it should be that F.unit_part() is -1 and F[0][0] is a-d.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1391\n\n",
     "created_at": "2007-12-04T04:38:52Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 Behold this behavior:
 
-
 ```
 sage: R.<a,b,c,d> = QQ[]
 sage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)
@@ -32,7 +31,6 @@ sage: F[0][0]
 sage: F.unit_part ()
 1
 ```
-
 
 However it should be that F.unit_part() is -1 and F[0][0] is a-d.
 
@@ -140,7 +138,7 @@ Patch looks reasonable.  The parameter to factor() is not standard sage but seem
 archive/issue_comments_008928.json:
 ```json
 {
-    "body": "The patch no longer applies to me in 2.10.1.alpha0, so it probably needs just a rebase:\n\n```\nsage-2.10.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_1391.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #1 FAILED at 3096.\nHunk #2 succeeded at 3159 (offset 22 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\n```\n\nCheers,\n\nMichael",
+    "body": "The patch no longer applies to me in 2.10.1.alpha0, so it probably needs just a rebase:\n\n```\nsage-2.10.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_1391.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #1 FAILED at 3096.\nHunk #2 succeeded at 3159 (offset 22 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\n```\nCheers,\n\nMichael",
     "created_at": "2008-01-20T02:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
@@ -158,7 +156,6 @@ Hunk #1 FAILED at 3096.
 Hunk #2 succeeded at 3159 (offset 22 lines).
 1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej
 ```
-
 Cheers,
 
 Michael

@@ -146,7 +146,7 @@ archive/issue_events_009253.json:
 archive/issue_comments_029151.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> One more thing: This does introduce a dependency on bzip2. If that turns out to be a problem (we expect tar with bzip2 support anyway) we can fall back to gtar.\n\ntar -j just invokes the bzip2 command.  So there is exactly the same dependency.  Try it on a system without bzip2 installed.\n\n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:2 mabshoff]:\n> One more thing: This does introduce a dependency on bzip2. If that turns out to be a problem (we expect tar with bzip2 support anyway) we can fall back to gtar.\n\n\ntar -j just invokes the bzip2 command.  So there is exactly the same dependency.  Try it on a system without bzip2 installed.\n\n> Cheers,\n> \n> Michael",
     "created_at": "2008-09-04T04:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4051",
     "type": "issue_comment",
@@ -157,6 +157,7 @@ archive/issue_comments_029151.json:
 
 Replying to [comment:2 mabshoff]:
 > One more thing: This does introduce a dependency on bzip2. If that turns out to be a problem (we expect tar with bzip2 support anyway) we can fall back to gtar.
+
 
 tar -j just invokes the bzip2 command.  So there is exactly the same dependency.  Try it on a system without bzip2 installed.
 

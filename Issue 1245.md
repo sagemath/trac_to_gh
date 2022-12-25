@@ -3,7 +3,7 @@
 archive/issues_001245.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\n\nThis doesn't:\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\nThis doesn't:\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
     "created_at": "2007-11-22T23:57:05Z",
     "labels": [
         "component: algebraic geometry",
@@ -24,7 +24,6 @@ Keywords: coercion coerce multivariate univariate composite
 
 This works:
 
-
 ```
 sage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)
 x0
@@ -32,9 +31,7 @@ sage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)
 x0
 ```
 
-
 This doesn't:
-
 
 ```
 sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)
@@ -51,7 +48,6 @@ sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)
 
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1245
 
@@ -213,7 +209,7 @@ archive/issue_events_003292.json:
 archive/issue_comments_007783.json:
 ```json
 {
-    "body": "This has been fixed in at least Sage 3.1.4\n\n\n```\nsage: sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\nx\nsage: _.parent()\nUnivariate Polynomial Ring in x over Ring of integers modulo 9\n```\n",
+    "body": "This has been fixed in at least Sage 3.1.4\n\n```\nsage: sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\nx\nsage: _.parent()\nUnivariate Polynomial Ring in x over Ring of integers modulo 9\n```",
     "created_at": "2008-11-14T09:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
@@ -224,7 +220,6 @@ archive/issue_comments_007783.json:
 
 This has been fixed in at least Sage 3.1.4
 
-
 ```
 sage: sage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)
 x
@@ -233,7 +228,6 @@ x
 sage: _.parent()
 Univariate Polynomial Ring in x over Ring of integers modulo 9
 ```
-
 
 
 

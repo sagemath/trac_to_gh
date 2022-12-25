@@ -247,7 +247,7 @@ archive/issue_events_021547.json:
 archive/issue_comments_080938.json:
 ```json
 {
-    "body": "I started adding doctests. \n----\nNew commits:",
+    "body": "I started adding doctests. \n\n---\nNew commits:",
     "created_at": "2014-03-02T10:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -257,7 +257,8 @@ archive/issue_comments_080938.json:
 ```
 
 I started adding doctests. 
-----
+
+---
 New commits:
 
 
@@ -305,7 +306,7 @@ I merged your branch into mine, so you should be able to merge that in easily wi
 archive/issue_comments_080941.json:
 ```json
 {
-    "body": "Replying to [comment:16 robertwb]:\n> I merged your branch into mine, so you should be able to merge that in easily with whatever future work you do.\n\nGit is not clever enough for you to lift by last commit off my own computer though.   I had one more commit with a lot of stuff.  I made a patch from it and put it in boxen:/home/cremona/8828.patch, and it might be worth looking at.",
+    "body": "Replying to [comment:16 robertwb]:\n> I merged your branch into mine, so you should be able to merge that in easily with whatever future work you do.\n\n\nGit is not clever enough for you to lift by last commit off my own computer though.   I had one more commit with a lot of stuff.  I made a patch from it and put it in boxen:/home/cremona/8828.patch, and it might be worth looking at.",
     "created_at": "2014-03-06T22:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -317,6 +318,7 @@ archive/issue_comments_080941.json:
 Replying to [comment:16 robertwb]:
 > I merged your branch into mine, so you should be able to merge that in easily with whatever future work you do.
 
+
 Git is not clever enough for you to lift by last commit off my own computer though.   I had one more commit with a lot of stuff.  I made a patch from it and put it in boxen:/home/cremona/8828.patch, and it might be worth looking at.
 
 
@@ -326,7 +328,7 @@ Git is not clever enough for you to lift by last commit off my own computer thou
 archive/issue_comments_080942.json:
 ```json
 {
-    "body": "Fair point :). You should be able to do \n\n\n```\n./sage --dev pull --ticket 8828\n./sage --dev push --ticket 8828\n```\n\n\nto pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in.",
+    "body": "Fair point :). You should be able to do \n\n```\n./sage --dev pull --ticket 8828\n./sage --dev push --ticket 8828\n```\n\nto pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in.",
     "created_at": "2014-03-06T22:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -337,12 +339,10 @@ archive/issue_comments_080942.json:
 
 Fair point :). You should be able to do 
 
-
 ```
 ./sage --dev pull --ticket 8828
 ./sage --dev push --ticket 8828
 ```
-
 
 to pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in.
 
@@ -353,7 +353,7 @@ to pull these changes in and then push your changes out. This might involve a me
 archive/issue_comments_080943.json:
 ```json
 {
-    "body": "Replying to [comment:18 robertwb]:\n> Fair point :). You should be able to do \n> \n> {{{\n> ./sage --dev pull --ticket 8828\n> ./sage --dev push --ticket 8828\n> }}}\n> \n> to pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in. \n\nOK, but I don't have time to do that right now as I'm leaving for a conference tomorrow and have a lot to do before that...",
+    "body": "Replying to [comment:18 robertwb]:\n> Fair point :). You should be able to do \n> \n> \n> ```\n> ./sage --dev pull --ticket 8828\n> ./sage --dev push --ticket 8828\n> ```\n> \n> to pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in. \n\n\nOK, but I don't have time to do that right now as I'm leaving for a conference tomorrow and have a lot to do before that...",
     "created_at": "2014-03-07T09:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -365,12 +365,14 @@ archive/issue_comments_080943.json:
 Replying to [comment:18 robertwb]:
 > Fair point :). You should be able to do 
 > 
-> {{{
+> 
+> ```
 > ./sage --dev pull --ticket 8828
 > ./sage --dev push --ticket 8828
-> }}}
+> ```
 > 
 > to pull these changes in and then push your changes out. This might involve a merge, but it shouldn't conflict. Alternatively, you could publish your repo somewhere (e.g. on github or even boxen) and I could merge it in. 
+
 
 OK, but I don't have time to do that right now as I'm leaving for a conference tomorrow and have a lot to do before that...
 
@@ -435,7 +437,7 @@ This branch looks suspicious: according to the "diffstat" that appears when clic
 archive/issue_comments_080947.json:
 ```json
 {
-    "body": "Replying to [comment:22 pbruin]:\n> This branch looks suspicious: according to the \"diffstat\" that appears when clicking on the branch name, it deletes three entire files (`rings/number_field/morphism.pyx`, `rings/rational_field.py`, `schemes/elliptic_curves/ell_local_data.py`).  Is this a Git (merge) accident?\n\nThat is not what I see when I click on the brnaches, either the merge I did (756d0ee) or the \"work in progress\" commit b2bc066.",
+    "body": "Replying to [comment:22 pbruin]:\n> This branch looks suspicious: according to the \"diffstat\" that appears when clicking on the branch name, it deletes three entire files (`rings/number_field/morphism.pyx`, `rings/rational_field.py`, `schemes/elliptic_curves/ell_local_data.py`).  Is this a Git (merge) accident?\n\n\nThat is not what I see when I click on the brnaches, either the merge I did (756d0ee) or the \"work in progress\" commit b2bc066.",
     "created_at": "2014-03-27T17:18:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -446,6 +448,7 @@ archive/issue_comments_080947.json:
 
 Replying to [comment:22 pbruin]:
 > This branch looks suspicious: according to the "diffstat" that appears when clicking on the branch name, it deletes three entire files (`rings/number_field/morphism.pyx`, `rings/rational_field.py`, `schemes/elliptic_curves/ell_local_data.py`).  Is this a Git (merge) accident?
+
 
 That is not what I see when I click on the brnaches, either the merge I did (756d0ee) or the "work in progress" commit b2bc066.
 
@@ -474,7 +477,7 @@ It only occurs when you look at the whole branch, i.e. when you click on `u/crem
 archive/issue_comments_080949.json:
 ```json
 {
-    "body": "Replying to [comment:24 pbruin]:\n> It only occurs when you look at the whole branch, i.e. when you click on `u/cremona/ticket/8828` in the \"Branch:\" field.  I now tried to fetch the branch with `git fetch trac u/cremona/ticket/8828` and the output of `git diff develop...FETCH_HEAD` does not show anything like this, just normal changes.  Also merging with `develop` seems to work fine.  So it actually looks like a glitch in Trac's git plugin.\n\nThat is a relief -- though I still have that branch on my own computer and presumably if and when I check it out again I will see a file with the changes I made.",
+    "body": "Replying to [comment:24 pbruin]:\n> It only occurs when you look at the whole branch, i.e. when you click on `u/cremona/ticket/8828` in the \"Branch:\" field.  I now tried to fetch the branch with `git fetch trac u/cremona/ticket/8828` and the output of `git diff develop...FETCH_HEAD` does not show anything like this, just normal changes.  Also merging with `develop` seems to work fine.  So it actually looks like a glitch in Trac's git plugin.\n\n\nThat is a relief -- though I still have that branch on my own computer and presumably if and when I check it out again I will see a file with the changes I made.",
     "created_at": "2014-03-27T20:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -485,6 +488,7 @@ archive/issue_comments_080949.json:
 
 Replying to [comment:24 pbruin]:
 > It only occurs when you look at the whole branch, i.e. when you click on `u/cremona/ticket/8828` in the "Branch:" field.  I now tried to fetch the branch with `git fetch trac u/cremona/ticket/8828` and the output of `git diff develop...FETCH_HEAD` does not show anything like this, just normal changes.  Also merging with `develop` seems to work fine.  So it actually looks like a glitch in Trac's git plugin.
+
 
 That is a relief -- though I still have that branch on my own computer and presumably if and when I check it out again I will see a file with the changes I made.
 
@@ -684,7 +688,7 @@ Maybe in future, but it would delay this (and the dependent tickets such as #828
 archive/issue_comments_080960.json:
 ```json
 {
-    "body": "Replying to [comment:34 cremona]:\n> Maybe in future, but it would delay this (and the dependent tickets such as #8289), and the code here is tested.  I would say we should put in a reference to a new ticket to consider doing that in future.\nOK, this is now #16063.",
+    "body": "Replying to [comment:34 cremona]:\n> Maybe in future, but it would delay this (and the dependent tickets such as #8289), and the code here is tested.  I would say we should put in a reference to a new ticket to consider doing that in future.\n\nOK, this is now #16063.",
     "created_at": "2014-04-06T18:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -695,6 +699,7 @@ archive/issue_comments_080960.json:
 
 Replying to [comment:34 cremona]:
 > Maybe in future, but it would delay this (and the dependent tickets such as #8289), and the code here is tested.  I would say we should put in a reference to a new ticket to consider doing that in future.
+
 OK, this is now #16063.
 
 
@@ -704,7 +709,7 @@ OK, this is now #16063.
 archive/issue_comments_080961.json:
 ```json
 {
-    "body": "A question about the new method `RationalField.places()`: is there a reason why the `prec` argument is handled differently than in `NumberField_absolute.places()`?  Here is a table of which fields are used for the embedding depending on `prec`:\n\n```\nprec      RationalField    NumberField\n------------------------------------------\nNone      RR/CC            RIF/CIF\nInfinity  not accepted     AA/QQbar\n53        RDF/CDF          RDF/CDF\nother     RealField(prec)  RealField(prec)\n```\n",
+    "body": "A question about the new method `RationalField.places()`: is there a reason why the `prec` argument is handled differently than in `NumberField_absolute.places()`?  Here is a table of which fields are used for the embedding depending on `prec`:\n\n```\nprec      RationalField    NumberField\n------------------------------------------\nNone      RR/CC            RIF/CIF\nInfinity  not accepted     AA/QQbar\n53        RDF/CDF          RDF/CDF\nother     RealField(prec)  RealField(prec)\n```",
     "created_at": "2014-04-08T10:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -723,7 +728,6 @@ Infinity  not accepted     AA/QQbar
 53        RDF/CDF          RDF/CDF
 other     RealField(prec)  RealField(prec)
 ```
-
 
 
 
@@ -868,7 +872,7 @@ Peter, I am very sorry it took me so long to look at your reviewer's patches.  Y
 archive/issue_comments_080967.json:
 ```json
 {
-    "body": "Replying to [comment:41 cremona]:\n> Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.\nThank you!\n> I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).\nIt is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.",
+    "body": "Replying to [comment:41 cremona]:\n> Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.\n\nThank you!\n> I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).\n\nIt is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.",
     "created_at": "2014-05-31T14:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -879,8 +883,10 @@ archive/issue_comments_080967.json:
 
 Replying to [comment:41 cremona]:
 > Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.
+
 Thank you!
 > I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).
+
 It is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.
 
 
@@ -890,7 +896,7 @@ It is indeed red; this is because the blob shows the patchbot result for the lat
 archive/issue_comments_080968.json:
 ```json
 {
-    "body": "Replying to [comment:42 pbruin]:\n> Replying to [comment:41 cremona]:\n> > Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.\n> Thank you!\n> > I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).\n> It is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.\nYes, I saw that green one.  It makes the blob on the ticket itself rather misleading!",
+    "body": "Replying to [comment:42 pbruin]:\n> Replying to [comment:41 cremona]:\n> > Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.\n\n> Thank you!\n> > I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).\n\n> It is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.\nYes, I saw that green one.  It makes the blob on the ticket itself rather misleading!",
     "created_at": "2014-05-31T14:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -902,8 +908,10 @@ archive/issue_comments_080968.json:
 Replying to [comment:42 pbruin]:
 > Replying to [comment:41 cremona]:
 > > Peter, I am very sorry it took me so long to look at your reviewer's patches.  You should have reminded me!  I have looked at them and approve.
+
 > Thank you!
 > > I do not know why the coloured blob at the top is not green (it looks red to me but I am not good on colours).
+
 > It is indeed red; this is because the blob shows the patchbot result for the latest stable release (6.2) instead of the latest development version, and the patchbot failed to build with 6.2, for reasons unrelated to this ticket.  Clicking on the blob will give you the result of all patchbot runs; the latest patchbot build (with 6.3.beta2) succeeded and passed tests.
 Yes, I saw that green one.  It makes the blob on the ticket itself rather misleading!
 
@@ -950,7 +958,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080971.json:
 ```json
 {
-    "body": "Replying to [comment:44 vbraun]:\n> PDF docs don't build\n\nPlease be more specific.  I don't know how to build the pdf docs for just the files created here, and a complete build (which I did do) produced such vast output that I cannot look for anything relevant in it.",
+    "body": "Replying to [comment:44 vbraun]:\n> PDF docs don't build\n\n\nPlease be more specific.  I don't know how to build the pdf docs for just the files created here, and a complete build (which I did do) produced such vast output that I cannot look for anything relevant in it.",
     "created_at": "2014-06-02T18:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -962,6 +970,7 @@ archive/issue_comments_080971.json:
 Replying to [comment:44 vbraun]:
 > PDF docs don't build
 
+
 Please be more specific.  I don't know how to build the pdf docs for just the files created here, and a complete build (which I did do) produced such vast output that I cannot look for anything relevant in it.
 
 
@@ -971,7 +980,7 @@ Please be more specific.  I don't know how to build the pdf docs for just the fi
 archive/issue_comments_080972.json:
 ```json
 {
-    "body": "\n```\ngrep -A 3 \"Emergency stop\" logs/docpdf.log\n```\n",
+    "body": "```\ngrep -A 3 \"Emergency stop\" logs/docpdf.log\n```",
     "created_at": "2014-06-02T20:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -980,11 +989,9 @@ archive/issue_comments_080972.json:
 }
 ```
 
-
 ```
 grep -A 3 "Emergency stop" logs/docpdf.log
 ```
-
 
 
 
@@ -993,7 +1000,7 @@ grep -A 3 "Emergency stop" logs/docpdf.log
 archive/issue_comments_080973.json:
 ```json
 {
-    "body": "Replying to [comment:46 vbraun]:\n> {{{\n> grep -A 3 \"Emergency stop\" logs/docpdf.log\n> }}}\n\nThis shows nothing, even after several rounds of make doc-clean and make doc-pdf etc.\nThe log shows that the build quits after\n\n```\nOSError: [combinat ] /home/jec/sage/src/doc/en/reference/combinat/algebra.rst:4: WARNING: toctree contains reference to nonexisting document u'sage/combinat/free_module'\n```\n\nwhich has nothing to do with this ticket!",
+    "body": "Replying to [comment:46 vbraun]:\n> {{{\n> grep -A 3 \"Emergency stop\" logs/docpdf.log\n> }}}\n\n\nThis shows nothing, even after several rounds of make doc-clean and make doc-pdf etc.\nThe log shows that the build quits after\n\n```\nOSError: [combinat ] /home/jec/sage/src/doc/en/reference/combinat/algebra.rst:4: WARNING: toctree contains reference to nonexisting document u'sage/combinat/free_module'\n```\nwhich has nothing to do with this ticket!",
     "created_at": "2014-06-03T07:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -1007,13 +1014,13 @@ Replying to [comment:46 vbraun]:
 > grep -A 3 "Emergency stop" logs/docpdf.log
 > }}}
 
+
 This shows nothing, even after several rounds of make doc-clean and make doc-pdf etc.
 The log shows that the build quits after
 
 ```
 OSError: [combinat ] /home/jec/sage/src/doc/en/reference/combinat/algebra.rst:4: WARNING: toctree contains reference to nonexisting document u'sage/combinat/free_module'
 ```
-
 which has nothing to do with this ticket!
 
 
@@ -1095,7 +1102,7 @@ I tried `make doc-pdf` and it TeX complained about being `\eps` being an undefin
 archive/issue_comments_080978.json:
 ```json
 {
-    "body": "Replying to [comment:50 pbruin]:\n> I tried `make doc-pdf` and it TeX complained about being `\\eps` being an undefined control sequence.  I changed it to `\\epsilon`; hopefully that was the only problem.\nActually it wasn't, there is also a `\\time` that should be a `\\times`, patch coming soon.",
+    "body": "Replying to [comment:50 pbruin]:\n> I tried `make doc-pdf` and it TeX complained about being `\\eps` being an undefined control sequence.  I changed it to `\\epsilon`; hopefully that was the only problem.\n\nActually it wasn't, there is also a `\\time` that should be a `\\times`, patch coming soon.",
     "created_at": "2014-06-03T14:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8828",
     "type": "issue_comment",
@@ -1106,6 +1113,7 @@ archive/issue_comments_080978.json:
 
 Replying to [comment:50 pbruin]:
 > I tried `make doc-pdf` and it TeX complained about being `\eps` being an undefined control sequence.  I changed it to `\epsilon`; hopefully that was the only problem.
+
 Actually it wasn't, there is also a `\time` that should be a `\times`, patch coming soon.
 
 

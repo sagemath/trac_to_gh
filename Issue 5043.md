@@ -3,7 +3,7 @@
 archive/issues_005043.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n>\n> I will be teaching abstract algebra this semester and want to\n> introduce my students to Sage and GAP.  I have installed\n> gap_packages-4.4.10_6, but I am still having trouble with\n> documentation:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: gap_console()\n> GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n> gap> ?SymmetricGroup\n> Help: Showing `Reference: SymmetricGroup'\n> Record: '<rec>.tempfile' must have an assigned value at\n> str := OutputTextFile( $SAGE.tempfile, false );\n>  called from\n> HELP_VIEWER_INFO.(viewer).show( data ); called from\n> HELP_PRINT_MATCH( i ); called from\n> HELP_SHOW_MATCHES( books, str, true ) called from\n> <function>( <arguments> ) called from read-eval-loop\n> Entering break read-eval-print loop ...\n> you can 'quit;' to quit to outer loop, or\n> you can 'return;' after assigning a value to continue\n> brk>\n>\n>\n> I am running Sage on a thinkpad with Fedora 10.\n>\n> Any suggestions would be appreciated.\n\nThe above happens because the default GAP workspace evidently that messes up the help system.  I think this is a bug (?), probably in GAP. \n\nYou can do the following instead:\n\nsage: gap_console(False)\n...\n\nOr\n\nsage: gap.SymmetricGroup?            # <--- i like this\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5043\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n>\n> I will be teaching abstract algebra this semester and want to\n> introduce my students to Sage and GAP.  I have installed\n> gap_packages-4.4.10_6, but I am still having trouble with\n> documentation:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: gap_console()\n> GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n> gap> ?SymmetricGroup\n> Help: Showing `Reference: SymmetricGroup'\n> Record: '<rec>.tempfile' must have an assigned value at\n> str := OutputTextFile( $SAGE.tempfile, false );\n>  called from\n> HELP_VIEWER_INFO.(viewer).show( data ); called from\n> HELP_PRINT_MATCH( i ); called from\n> HELP_SHOW_MATCHES( books, str, true ) called from\n> <function>( <arguments> ) called from read-eval-loop\n> Entering break read-eval-print loop ...\n> you can 'quit;' to quit to outer loop, or\n> you can 'return;' after assigning a value to continue\n> brk>\n>\n>\n> I am running Sage on a thinkpad with Fedora 10.\n>\n> Any suggestions would be appreciated.\n\nThe above happens because the default GAP workspace evidently that messes up the help system.  I think this is a bug (?), probably in GAP. \n\nYou can do the following instead:\n\nsage: gap_console(False)\n...\n\nOr\n\nsage: gap.SymmetricGroup?            # <--- i like this\n\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5043\n\n",
     "created_at": "2009-01-21T05:42:07Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_005043.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -69,7 +68,6 @@ sage: gap.SymmetricGroup?            # <--- i like this
 William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5043
 
 
@@ -81,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5043
 archive/issue_comments_038337.json:
 ```json
 {
-    "body": "\n```\n#\n# SAGE support utilities to read into the GAP session.\n#\n$SAGE := rec();\n\n$SAGE.OldPager := Pager;\n\n\n$SAGE.NewPager :=\n         function( data )\n   local   str,  lines,  line, fn, start;\n\n   str := OutputTextFile($SAGE.tempfile,false);\n   start := 1;\n\nbut never sets $SAGE.tempfile anywhere.\n\nSteve\n- Show quoted text -\n\n\nOn 21 Jan 2009, at 06:39, William Stein wrote:\n\n    On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n\n\n        I will be teaching abstract algebra this semester and want to\n        introduce my students to Sage and GAP.  I have installed\n        gap_packages-4.4.10_6, but I am still having trouble with\n        documentation:\n\n        ----------------------------------------------------------------------\n        | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n        | Type notebook() for the GUI, and license() for information.        |\n        ----------------------------------------------------------------------\n        sage: gap_console()\n        GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n        gap> ?SymmetricGroup\n        Help: Showing `Reference: SymmetricGroup'\n        Record: '<rec>.tempfile' must have an assigned value at\n        str := OutputTextFile( $SAGE.tempfile, false );\n        called from\n        HELP_VIEWER_INFO.(viewer).show( data ); called from\n        HELP_PRINT_MATCH( i ); called from\n        HELP_SHOW_MATCHES( books, str, true ) called from\n        <function>( <arguments> ) called from read-eval-loop\n        Entering break read-eval-print loop ...\n        you can 'quit;' to quit to outer loop, or\n        you can 'return;' after assigning a value to continue\n        brk>\n\n\n        I am running Sage on a thinkpad with Fedora 10.\n\n        Any suggestions would be appreciated.\n\n\n    The above happens because the default GAP workspace evidently that\n    messes up the help system.  I think this is a bug (?), probably in\n    GAP.\n\n    You can do the following instead:\n\n    sage: gap_console(False)\n\n    which will give you a gap session that by default has less\n    functionality loaded than otherwise.\n\n    ...\n\n    Or\n\n    sage: gap.SymmetricGroup?            # <--- i like this\n\n    I've made this bug trac #5043:\n\n             http://trac.sagemath.org/sage_trac/ticket/5043\n\n    I've also cc'd Steve Linton in case he has any remarks.\n\n    -- William\n\n\nSteve Linton    School of Computer Science  &\n```\n",
+    "body": "```\n#\n# SAGE support utilities to read into the GAP session.\n#\n$SAGE := rec();\n\n$SAGE.OldPager := Pager;\n\n\n$SAGE.NewPager :=\n         function( data )\n   local   str,  lines,  line, fn, start;\n\n   str := OutputTextFile($SAGE.tempfile,false);\n   start := 1;\n\nbut never sets $SAGE.tempfile anywhere.\n\nSteve\n- Show quoted text -\n\n\nOn 21 Jan 2009, at 06:39, William Stein wrote:\n\n    On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n\n\n        I will be teaching abstract algebra this semester and want to\n        introduce my students to Sage and GAP.  I have installed\n        gap_packages-4.4.10_6, but I am still having trouble with\n        documentation:\n\n        ----------------------------------------------------------------------\n        | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n        | Type notebook() for the GUI, and license() for information.        |\n        ----------------------------------------------------------------------\n        sage: gap_console()\n        GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n        gap> ?SymmetricGroup\n        Help: Showing `Reference: SymmetricGroup'\n        Record: '<rec>.tempfile' must have an assigned value at\n        str := OutputTextFile( $SAGE.tempfile, false );\n        called from\n        HELP_VIEWER_INFO.(viewer).show( data ); called from\n        HELP_PRINT_MATCH( i ); called from\n        HELP_SHOW_MATCHES( books, str, true ) called from\n        <function>( <arguments> ) called from read-eval-loop\n        Entering break read-eval-print loop ...\n        you can 'quit;' to quit to outer loop, or\n        you can 'return;' after assigning a value to continue\n        brk>\n\n\n        I am running Sage on a thinkpad with Fedora 10.\n\n        Any suggestions would be appreciated.\n\n\n    The above happens because the default GAP workspace evidently that\n    messes up the help system.  I think this is a bug (?), probably in\n    GAP.\n\n    You can do the following instead:\n\n    sage: gap_console(False)\n\n    which will give you a gap session that by default has less\n    functionality loaded than otherwise.\n\n    ...\n\n    Or\n\n    sage: gap.SymmetricGroup?            # <--- i like this\n\n    I've made this bug trac #5043:\n\n             http://trac.sagemath.org/sage_trac/ticket/5043\n\n    I've also cc'd Steve Linton in case he has any remarks.\n\n    -- William\n\n\nSteve Linton    School of Computer Science  &\n```",
     "created_at": "2009-01-21T10:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ archive/issue_comments_038337.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 #
@@ -177,7 +174,6 @@ On 21 Jan 2009, at 06:39, William Stein wrote:
 
 Steve Linton    School of Computer Science  &
 ```
-
 
 
 
@@ -278,7 +274,7 @@ Ivan, do you think this might help #3152 as well?
 archive/issue_comments_038343.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> Ivan, do you think this might help #3152 as well?\n\nI just tested and sadly it doesn't.",
+    "body": "Replying to [comment:3 kcrisman]:\n> Ivan, do you think this might help #3152 as well?\n\n\nI just tested and sadly it doesn't.",
     "created_at": "2012-06-29T07:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
@@ -289,6 +285,7 @@ archive/issue_comments_038343.json:
 
 Replying to [comment:3 kcrisman]:
 > Ivan, do you think this might help #3152 as well?
+
 
 I just tested and sadly it doesn't.
 

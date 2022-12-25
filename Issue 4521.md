@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4521
 archive/issue_comments_033488.json:
 ```json
 {
-    "body": "I took a quick look at the code today and I've come away with a bunch of questions.\n\n(1) Can you post the definition of degree? In the current code, degree it is set equal to largest_moved_point, which grabs the value from gap's LargestMovedPoint if it isn't properly set. But this doesn't seem to agree with some of the things mentioned above.\n\n(2) Which group should the following command return?\n\n```\nsage: G = PermutationGroup([],degree=4)\n```\n\n\n(3) The following two groups are isomorphic:\n\n```\nsage: G = PermutationGroup([[]]) \nsage: G = PermutationGroup([ [1] ])\n```\n\nThis is because\n\n```\nsage: PermutationGroupElement([]).list()\n[1]\nsage: PermutationGroupElement([1]).list()\n[1]\n```\n\nSo I'm not sure why one group should have degree 0 while the other does not.\n\n(4) What should the degrees of SymmetricGroup(0) and SymmetricGroup(1) be? Should SymmetricGroup(0) == SymmetricGroup(1)?\n\nI think these are all my questions for now.",
+    "body": "I took a quick look at the code today and I've come away with a bunch of questions.\n\n(1) Can you post the definition of degree? In the current code, degree it is set equal to largest_moved_point, which grabs the value from gap's LargestMovedPoint if it isn't properly set. But this doesn't seem to agree with some of the things mentioned above.\n\n(2) Which group should the following command return?\n\n```\nsage: G = PermutationGroup([],degree=4)\n```\n\n(3) The following two groups are isomorphic:\n\n```\nsage: G = PermutationGroup([[]]) \nsage: G = PermutationGroup([ [1] ])\n```\nThis is because\n\n```\nsage: PermutationGroupElement([]).list()\n[1]\nsage: PermutationGroupElement([1]).list()\n[1]\n```\nSo I'm not sure why one group should have degree 0 while the other does not.\n\n(4) What should the degrees of SymmetricGroup(0) and SymmetricGroup(1) be? Should SymmetricGroup(0) == SymmetricGroup(1)?\n\nI think these are all my questions for now.",
     "created_at": "2008-11-20T23:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
@@ -87,14 +87,12 @@ I took a quick look at the code today and I've come away with a bunch of questio
 sage: G = PermutationGroup([],degree=4)
 ```
 
-
 (3) The following two groups are isomorphic:
 
 ```
 sage: G = PermutationGroup([[]]) 
 sage: G = PermutationGroup([ [1] ])
 ```
-
 This is because
 
 ```
@@ -103,7 +101,6 @@ sage: PermutationGroupElement([]).list()
 sage: PermutationGroupElement([1]).list()
 [1]
 ```
-
 So I'm not sure why one group should have degree 0 while the other does not.
 
 (4) What should the degrees of SymmetricGroup(0) and SymmetricGroup(1) be? Should SymmetricGroup(0) == SymmetricGroup(1)?
@@ -308,7 +305,7 @@ archive/issue_events_010266.json:
 archive/issue_comments_033491.json:
 ```json
 {
-    "body": "This is a bug\n\n```\nsage: PermutationGroupElement([]).list()\n[1]\n```\n\n`PermutationGroupElement([])` should really be the unique permutation of the empty set.",
+    "body": "This is a bug\n\n```\nsage: PermutationGroupElement([]).list()\n[1]\n```\n`PermutationGroupElement([])` should really be the unique permutation of the empty set.",
     "created_at": "2019-10-28T14:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
@@ -323,7 +320,6 @@ This is a bug
 sage: PermutationGroupElement([]).list()
 [1]
 ```
-
 `PermutationGroupElement([])` should really be the unique permutation of the empty set.
 
 

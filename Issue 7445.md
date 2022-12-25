@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7445
 archive/issue_comments_062562.json:
 ```json
 {
-    "body": "\n```\nI thought this might be of some interest to people since I'm not sure\nhow well the process is documented.\n\nI wanted to make some vector field plots using Jmol and then put them\non a web page.  To do that, you have to get the zipped script file\nfrom the cell, unzip it, and put it on your web server.  The server\nalso has to have the jmol directory with the standard jmol .jar files\nand Jmol.js (downloaded from the jmol site).\n\nInstead of trying to explain it in detail, it may be more helpful to\nlook at the result:\n```\n\n\nhttp://www.d.umn.edu/~mhampton/m3298f9/vfieldplots.html\n\n```\n...for the lab the students are given a list of vector fields that\nthey must match to the plots.\n\nIt would be nice if this could be automated in some way, with some\nsort of \"export to html page\" command, analogous to the \"Get Image\"\ncommand currently supported.\n\n-Marshall Hampton\n```\n",
+    "body": "```\nI thought this might be of some interest to people since I'm not sure\nhow well the process is documented.\n\nI wanted to make some vector field plots using Jmol and then put them\non a web page.  To do that, you have to get the zipped script file\nfrom the cell, unzip it, and put it on your web server.  The server\nalso has to have the jmol directory with the standard jmol .jar files\nand Jmol.js (downloaded from the jmol site).\n\nInstead of trying to explain it in detail, it may be more helpful to\nlook at the result:\n```\n\nhttp://www.d.umn.edu/~mhampton/m3298f9/vfieldplots.html\n\n```\n...for the lab the students are given a list of vector fields that\nthey must match to the plots.\n\nIt would be nice if this could be automated in some way, with some\nsort of \"export to html page\" command, analogous to the \"Get Image\"\ncommand currently supported.\n\n-Marshall Hampton\n```",
     "created_at": "2009-11-12T17:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7445",
     "type": "issue_comment",
@@ -43,7 +43,6 @@ archive/issue_comments_062562.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 I thought this might be of some interest to people since I'm not sure
@@ -59,7 +58,6 @@ Instead of trying to explain it in detail, it may be more helpful to
 look at the result:
 ```
 
-
 http://www.d.umn.edu/~mhampton/m3298f9/vfieldplots.html
 
 ```
@@ -72,7 +70,6 @@ command currently supported.
 
 -Marshall Hampton
 ```
-
 
 
 

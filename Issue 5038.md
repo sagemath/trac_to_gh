@@ -3,7 +3,7 @@
 archive/issues_005038.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
     "created_at": "2009-01-20T19:56:41Z",
     "labels": [
         "component: combinatorics",
@@ -33,7 +33,6 @@ sage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P
 Finite Word Paths over 3 steps
 ```
 
-
 Creation of a path from the combinatorial class P:
 
 ```
@@ -45,7 +44,6 @@ sage: p.is_closed()
 False
 sage: p.plot() 
 ```
-
 
 Since p is a finite word, many functions from the word library are available:
 
@@ -60,14 +58,12 @@ sage: len(p)
 7 
 ```
 
-
 Some built-in combinatorial classes of paths:
 
 ```
 sage: P = WordPaths('abAB', steps='square_grid'); P
 Finite Word Paths on the square grid
 ```
-
 
 ```
 sage: D = WordPaths('()', steps='dyck'); D
@@ -77,13 +73,11 @@ Path: ()()()(())
 sage: d.plot()
 ```
 
-
 ```
 sage: P = WordPaths('abcdef', steps='triangle_grid')
 sage: p = P('babaddefadabcadefaadfafabacdefa')
 sage: p.plot() 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5038
 
@@ -298,7 +292,7 @@ Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uu
 archive/issue_comments_038287.json:
 ```json
 {
-    "body": "I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/structure/sage_object.pyx\", line 931:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    ** failed:  _class__sage_combinat_words_utils_Factorization__.sobj\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_words_utils_Factorization__.sobj\n    Successfully unpickled 571 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py\n\t [6.3 s]\n```\n",
+    "body": "I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/structure/sage_object.pyx\", line 931:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    ** failed:  _class__sage_combinat_words_utils_Factorization__.sobj\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_words_utils_Factorization__.sobj\n    Successfully unpickled 571 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py\n\t [6.3 s]\n```",
     "created_at": "2009-09-26T06:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -337,7 +331,6 @@ Got:
 For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py
 	 [6.3 s]
 ```
-
 
 
 
@@ -402,7 +395,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_038291.json:
 ```json
 {
-    "body": "I am reviewing my own patch... There is something I dislike in the patch that I would like to discuss before including it into Sage. There are pros and cons for having a word path being a word. One thing I dislike right now is the pollution on the tab completion :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('aaaaa')\nsage: p.\nDisplay all 146 possibilities? (y or n)\n```\n\n\nwhereas it could be something like below if a word path wouldn't inherit from `FiniteWord` (but still from `WordDatatype` :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.\np.animate           p.find              p.points\np.area              p.has_prefix        p.rename\np.category          p.has_suffix        p.reset_name\np.count             p.is_closed         p.rfind\np.db                p.is_prefix         p.save\np.directive_vector  p.is_simple         p.start_point\np.dump              p.is_suffix         p.tikz_trajectory\np.dumps             p.length            p.version\np.end_point         p.plot          \n```\n\n\nBut since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.to_word()\nsage: p.\nDisplay all 146 possibilities? (y or n)\nsage: p.is_palindrome()\nFalse\n```\n\n\nOf course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\n\nFranco, Mike Hansen : Do you have any comments ? I am sure you have useful ideas I could use!\n\nThank you,\n\nS\u00e9bastien",
+    "body": "I am reviewing my own patch... There is something I dislike in the patch that I would like to discuss before including it into Sage. There are pros and cons for having a word path being a word. One thing I dislike right now is the pollution on the tab completion :\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('aaaaa')\nsage: p.\nDisplay all 146 possibilities? (y or n)\n```\n\nwhereas it could be something like below if a word path wouldn't inherit from `FiniteWord` (but still from `WordDatatype` :\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.\np.animate           p.find              p.points\np.area              p.has_prefix        p.rename\np.category          p.has_suffix        p.reset_name\np.count             p.is_closed         p.rfind\np.db                p.is_prefix         p.save\np.directive_vector  p.is_simple         p.start_point\np.dump              p.is_suffix         p.tikz_trajectory\np.dumps             p.length            p.version\np.end_point         p.plot          \n```\n\nBut since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.to_word()\nsage: p.\nDisplay all 146 possibilities? (y or n)\nsage: p.is_palindrome()\nFalse\n```\n\nOf course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\n\nFranco, Mike Hansen : Do you have any comments ? I am sure you have useful ideas I could use!\n\nThank you,\n\nS\u00e9bastien",
     "created_at": "2009-10-13T10:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -413,7 +406,6 @@ archive/issue_comments_038291.json:
 
 I am reviewing my own patch... There is something I dislike in the patch that I would like to discuss before including it into Sage. There are pros and cons for having a word path being a word. One thing I dislike right now is the pollution on the tab completion :
 
-
 ```
 sage: P = WordPaths('abcd')
 sage: p = P('aaaaa')
@@ -421,9 +413,7 @@ sage: p.
 Display all 146 possibilities? (y or n)
 ```
 
-
 whereas it could be something like below if a word path wouldn't inherit from `FiniteWord` (but still from `WordDatatype` :
-
 
 ```
 sage: P = WordPaths('abcd')
@@ -440,9 +430,7 @@ p.dumps             p.length            p.version
 p.end_point         p.plot          
 ```
 
-
 But since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :
-
 
 ```
 sage: P = WordPaths('abcd')
@@ -453,7 +441,6 @@ Display all 146 possibilities? (y or n)
 sage: p.is_palindrome()
 False
 ```
-
 
 Of course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.
 
@@ -471,7 +458,7 @@ Sébastien
 archive/issue_comments_038292.json:
 ```json
 {
-    "body": "Replying to [comment:12 slabbe]:\n\n> But since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\nYou need to decide whether or not a \"wordpath\" is a word. If it is, then it\nshould inherit all the methods. A user will be totally confused if it is\nsupposed to be a word but doesn't behave like one.\n\nIf it is not a word, then having a `to_word` method is fine, but it\nneeds to return a word. In your suggestion, it returns `None` but this\nis unusual since most `to_*` methods in Sage (at least in combinatorics\ncode) do not modify the original object but return a new object. \n\nPerhaps you want to work with paths instead of word paths?\n\n\n> Of course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\nThe creation of u in the following is constant time:\n\n```\nsage: w = Word([0,1,1,0,1,0,0,1])\nsage: u = Word(w._data)\n```\n\n\nHope this helps.",
+    "body": "Replying to [comment:12 slabbe]:\n\n> But since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\n\nYou need to decide whether or not a \"wordpath\" is a word. If it is, then it\nshould inherit all the methods. A user will be totally confused if it is\nsupposed to be a word but doesn't behave like one.\n\nIf it is not a word, then having a `to_word` method is fine, but it\nneeds to return a word. In your suggestion, it returns `None` but this\nis unusual since most `to_*` methods in Sage (at least in combinatorics\ncode) do not modify the original object but return a new object. \n\nPerhaps you want to work with paths instead of word paths?\n\n\n> Of course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\n\nThe creation of u in the following is constant time:\n\n```\nsage: w = Word([0,1,1,0,1,0,0,1])\nsage: u = Word(w._data)\n```\n\nHope this helps.",
     "created_at": "2009-10-15T15:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -483,6 +470,7 @@ archive/issue_comments_038292.json:
 Replying to [comment:12 slabbe]:
 
 > But since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :
+
 
 You need to decide whether or not a "wordpath" is a word. If it is, then it
 should inherit all the methods. A user will be totally confused if it is
@@ -498,13 +486,13 @@ Perhaps you want to work with paths instead of word paths?
 
 > Of course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.
 
+
 The creation of u in the following is constant time:
 
 ```
 sage: w = Word([0,1,1,0,1,0,0,1])
 sage: u = Word(w._data)
 ```
-
 
 Hope this helps.
 
@@ -551,7 +539,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_038295.json:
 ```json
 {
-    "body": "> You need to decide whether or not a \"wordpath\" is a word. If it is, then it\n> should inherit all the methods. A user will be totally confused if it is\n> supposed to be a word but doesn't behave like one.\n\nI want a word path to be a word. So, I will keep it as it is.\n\n> Hope this helps.\n\nYes, thank you!\n\nI added a patch that improves the documentation and that suggests to use `help(p)` to get the specific word paths functions.\n\nNeeds review!",
+    "body": "> You need to decide whether or not a \"wordpath\" is a word. If it is, then it\n> should inherit all the methods. A user will be totally confused if it is\n> supposed to be a word but doesn't behave like one.\n\n\nI want a word path to be a word. So, I will keep it as it is.\n\n> Hope this helps.\n\n\nYes, thank you!\n\nI added a patch that improves the documentation and that suggests to use `help(p)` to get the specific word paths functions.\n\nNeeds review!",
     "created_at": "2009-10-20T11:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
@@ -564,9 +552,11 @@ archive/issue_comments_038295.json:
 > should inherit all the methods. A user will be totally confused if it is
 > supposed to be a word but doesn't behave like one.
 
+
 I want a word path to be a word. So, I will keep it as it is.
 
 > Hope this helps.
+
 
 Yes, thank you!
 

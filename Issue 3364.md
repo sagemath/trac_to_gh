@@ -3,7 +3,7 @@
 archive/issues_003364.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThis is the remaining issue from #3130.  See this example:\n\n```\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,3), (1,5,3)],\n Permutation Group with generators [()]]\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,4), (1,4,5)],\n Permutation Group with generators [()]]\n```\n\n\nEven with the same random number seed, the result of .composition_series() is different.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3364\n\n",
+    "body": "Assignee: cwitty\n\nThis is the remaining issue from #3130.  See this example:\n\n```\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,3), (1,5,3)],\n Permutation Group with generators [()]]\nsage: set_random_seed(0)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\nsage: G.composition_series()\n\n[Permutation Group with generators [(1,2,3)(4,5), (3,4)],\n Permutation Group with generators [(1,5)(3,4), (1,5)(2,4), (1,4,5)],\n Permutation Group with generators [()]]\n```\n\nEven with the same random number seed, the result of .composition_series() is different.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3364\n\n",
     "created_at": "2008-06-04T16:38:05Z",
     "labels": [
         "component: packages: standard",
@@ -36,7 +36,6 @@ sage: G.composition_series()
  Permutation Group with generators [(1,5)(3,4), (1,5)(2,4), (1,4,5)],
  Permutation Group with generators [()]]
 ```
-
 
 Even with the same random number seed, the result of .composition_series() is different.
 
@@ -109,7 +108,7 @@ Michael: When redoing 3130, should I take into account this fix for 3364 (ie, fo
 archive/issue_comments_023490.json:
 ```json
 {
-    "body": "I don't seem to be able to apply this to 3.0.3.alpha1 but the error is very odd.\n\n\n```\nsage: hg_sage.add(\"/home/wdj/sagefiles/3364_randstate_fix_gap.patch\")\nAdding file /home/wdj/sagefiles/3364_randstate_fix_gap.patch\ncd \"/home/wdj/sagefiles/sage-3.0.3.alpha1/devel/sage\" && hg add  \"/home/wdj/sagefiles/3364_randstate_fix_gap.patch\"\nabort: /home/wdj/sagefiles/3364_randstate_fix_gap.patch not under root\n```\n\nDoes anyone know what this means?",
+    "body": "I don't seem to be able to apply this to 3.0.3.alpha1 but the error is very odd.\n\n```\nsage: hg_sage.add(\"/home/wdj/sagefiles/3364_randstate_fix_gap.patch\")\nAdding file /home/wdj/sagefiles/3364_randstate_fix_gap.patch\ncd \"/home/wdj/sagefiles/sage-3.0.3.alpha1/devel/sage\" && hg add  \"/home/wdj/sagefiles/3364_randstate_fix_gap.patch\"\nabort: /home/wdj/sagefiles/3364_randstate_fix_gap.patch not under root\n```\nDoes anyone know what this means?",
     "created_at": "2008-06-09T00:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3364",
     "type": "issue_comment",
@@ -120,14 +119,12 @@ archive/issue_comments_023490.json:
 
 I don't seem to be able to apply this to 3.0.3.alpha1 but the error is very odd.
 
-
 ```
 sage: hg_sage.add("/home/wdj/sagefiles/3364_randstate_fix_gap.patch")
 Adding file /home/wdj/sagefiles/3364_randstate_fix_gap.patch
 cd "/home/wdj/sagefiles/sage-3.0.3.alpha1/devel/sage" && hg add  "/home/wdj/sagefiles/3364_randstate_fix_gap.patch"
 abort: /home/wdj/sagefiles/3364_randstate_fix_gap.patch not under root
 ```
-
 Does anyone know what this means?
 
 
@@ -155,7 +152,7 @@ I'll reply to my own post. The clone I created can't apply *any* patches, only c
 archive/issue_comments_023492.json:
 ```json
 {
-    "body": "Patch looks good to me. I did not doctest the patch since I had some rejects after applying #3130:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 < trac_3364_randstate_fix_gap.patch \npatching file sage/groups/matrix_gps/orthogonal.py\npatching file sage/groups/matrix_gps/symplectic.py\npatching file sage/groups/matrix_gps/unitary.py\npatching file sage/groups/perm_gps/permgroup.py\nHunk #1 FAILED at 172.\nHunk #2 FAILED at 1713.\nHunk #3 FAILED at 1736.\n3 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej\npatching file sage/misc/randstate.pyx\n```\n\nI can take a look and attempt to rebase. Feel free to try my current merge tree: \n\nsage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage\n\nCheers,\n\nMichael",
+    "body": "Patch looks good to me. I did not doctest the patch since I had some rejects after applying #3130:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage$ patch -p1 < trac_3364_randstate_fix_gap.patch \npatching file sage/groups/matrix_gps/orthogonal.py\npatching file sage/groups/matrix_gps/symplectic.py\npatching file sage/groups/matrix_gps/unitary.py\npatching file sage/groups/perm_gps/permgroup.py\nHunk #1 FAILED at 172.\nHunk #2 FAILED at 1713.\nHunk #3 FAILED at 1736.\n3 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej\npatching file sage/misc/randstate.pyx\n```\nI can take a look and attempt to rebase. Feel free to try my current merge tree: \n\nsage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage\n\nCheers,\n\nMichael",
     "created_at": "2008-06-09T07:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3364",
     "type": "issue_comment",
@@ -178,7 +175,6 @@ Hunk #3 FAILED at 1736.
 3 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej
 patching file sage/misc/randstate.pyx
 ```
-
 I can take a look and attempt to rebase. Feel free to try my current merge tree: 
 
 sage:/scratch/mabshoff/release-cycle/sage-3.0.3.alpha2/devel/sage

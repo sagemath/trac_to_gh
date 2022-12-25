@@ -50,7 +50,7 @@ Changing status from new to needs_review.
 archive/issue_comments_078986.json:
 ```json
 {
-    "body": "The patch looks good to me -- pending actually trying it.\n\nI wonder if it would make sense to avoid using polynomials as much as possible, except for convenience printing and input. For instance, `matrix_action_left` could be defined using something like:\n\n```\nv,w = M.columns()\na1 = Q(*v)\nc1 = Q(*w)\nb1 = Q(*(v+w))-a1-c1\nreturn BinaryQF(a1,b1,c1)\n```\n\nand `matrix_action_right` defined similarly with `rows()` instead of `columns()`.\n\nI see that `__call__` is itself defined using polynomials instead of the other way around --- should that be changed as well?\ne.g.\n\n\n```\ndef __call__(self, *x):\n  if len(x)==1:\n    x = x[0]\n  x, y = x\n  return (self._a * x + self._b * y) * x + self._c * y**2\n```\n\n\nand\n\n\n```\ndef polynomial(self):\n  return self(ZZ['x,y'].gens())\n```\n\n\nbesides, with the definition of `__call__` I propose above, one can actually evaluate a quadratic form at a vector (so, the * in the proposed matrix actions above would no longer be necessary -- it is because `Q(v)` now fails for v a vector, which is inconvenient IMO).",
+    "body": "The patch looks good to me -- pending actually trying it.\n\nI wonder if it would make sense to avoid using polynomials as much as possible, except for convenience printing and input. For instance, `matrix_action_left` could be defined using something like:\n\n```\nv,w = M.columns()\na1 = Q(*v)\nc1 = Q(*w)\nb1 = Q(*(v+w))-a1-c1\nreturn BinaryQF(a1,b1,c1)\n```\nand `matrix_action_right` defined similarly with `rows()` instead of `columns()`.\n\nI see that `__call__` is itself defined using polynomials instead of the other way around --- should that be changed as well?\ne.g.\n\n```\ndef __call__(self, *x):\n  if len(x)==1:\n    x = x[0]\n  x, y = x\n  return (self._a * x + self._b * y) * x + self._c * y**2\n```\n\nand\n\n```\ndef polynomial(self):\n  return self(ZZ['x,y'].gens())\n```\n\nbesides, with the definition of `__call__` I propose above, one can actually evaluate a quadratic form at a vector (so, the * in the proposed matrix actions above would no longer be necessary -- it is because `Q(v)` now fails for v a vector, which is inconvenient IMO).",
     "created_at": "2010-04-13T13:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
@@ -70,12 +70,10 @@ c1 = Q(*w)
 b1 = Q(*(v+w))-a1-c1
 return BinaryQF(a1,b1,c1)
 ```
-
 and `matrix_action_right` defined similarly with `rows()` instead of `columns()`.
 
 I see that `__call__` is itself defined using polynomials instead of the other way around --- should that be changed as well?
 e.g.
-
 
 ```
 def __call__(self, *x):
@@ -85,15 +83,12 @@ def __call__(self, *x):
   return (self._a * x + self._b * y) * x + self._c * y**2
 ```
 
-
 and
-
 
 ```
 def polynomial(self):
   return self(ZZ['x,y'].gens())
 ```
-
 
 besides, with the definition of `__call__` I propose above, one can actually evaluate a quadratic form at a vector (so, the * in the proposed matrix actions above would no longer be necessary -- it is because `Q(v)` now fails for v a vector, which is inconvenient IMO).
 

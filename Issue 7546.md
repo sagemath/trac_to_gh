@@ -199,7 +199,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_063972.json:
 ```json
 {
-    "body": "There is a syntax error with else and fi on consecutive lines.  Maybe this is intended?\n\n```\n        # Rename it with the version number\n        mv Sage.app \"Sage-$SAGE_VERSION.app\"\n    else\n        echo 'If you wish to create an app bundle please set'\n        echo 'SAGE_APP_BUNDLE=yes'\n    fi\n\n    # Go back to the right directory for later copying\n    cd \"$CUR\"/tmp/\n    if [ \"$SAGE_APP_DMG\" = \"yes\" ]; then\n        echo \"Creating dmg\"\n        DYLD_LIBRARY_PATH=$SAGE_ORIG_DYLD_LIBRARY_PATH; export DYLD_LIBRARY_PATH\n        hdiutil create -srcfolder \"$TARGET\" -format UDBZ \"$TARGET\".dmg\n    else\n        echo 'If you wish to create a disk image please set'\n        echo 'SAGE_APP_DMG=yes'\n    fi\n```\n\nI did this and am now testing on Macintel 10.5, hope to do MacPPC 10.4 as well if it doesn't take forever to build.",
+    "body": "There is a syntax error with else and fi on consecutive lines.  Maybe this is intended?\n\n```\n        # Rename it with the version number\n        mv Sage.app \"Sage-$SAGE_VERSION.app\"\n    else\n        echo 'If you wish to create an app bundle please set'\n        echo 'SAGE_APP_BUNDLE=yes'\n    fi\n\n    # Go back to the right directory for later copying\n    cd \"$CUR\"/tmp/\n    if [ \"$SAGE_APP_DMG\" = \"yes\" ]; then\n        echo \"Creating dmg\"\n        DYLD_LIBRARY_PATH=$SAGE_ORIG_DYLD_LIBRARY_PATH; export DYLD_LIBRARY_PATH\n        hdiutil create -srcfolder \"$TARGET\" -format UDBZ \"$TARGET\".dmg\n    else\n        echo 'If you wish to create a disk image please set'\n        echo 'SAGE_APP_DMG=yes'\n    fi\n```\nI did this and am now testing on Macintel 10.5, hope to do MacPPC 10.4 as well if it doesn't take forever to build.",
     "created_at": "2009-12-07T17:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ There is a syntax error with else and fi on consecutive lines.  Maybe this is in
         echo 'SAGE_APP_DMG=yes'
     fi
 ```
-
 I did this and am now testing on Macintel 10.5, hope to do MacPPC 10.4 as well if it doesn't take forever to build.
 
 
@@ -257,7 +256,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063974.json:
 ```json
 {
-    "body": "I'm really sorry, I think I screwed something up... how do I apply the change of the tar file?  I get \n\n```\ncp: /Users/.../sage-4.3.alpha1/data/extcode/sage/ext/mac-app/Sage.app: No such file or directory\nsed: ./Sage.app/Contents/Info.plist: No such file or directory\nmv: rename sage to ./Sage.app/Contents/Resources/: No such file or directory\nmv: rename Sage.app to Sage-sample.app: No such file or directory\n```\n\nSo obviously hg_sage.import... didn't actually import these files.  Should I put them in manually?  That is difficult given the current patch state, since the various icon files etc. are just binary data on trac.",
+    "body": "I'm really sorry, I think I screwed something up... how do I apply the change of the tar file?  I get \n\n```\ncp: /Users/.../sage-4.3.alpha1/data/extcode/sage/ext/mac-app/Sage.app: No such file or directory\nsed: ./Sage.app/Contents/Info.plist: No such file or directory\nmv: rename sage to ./Sage.app/Contents/Resources/: No such file or directory\nmv: rename Sage.app to Sage-sample.app: No such file or directory\n```\nSo obviously hg_sage.import... didn't actually import these files.  Should I put them in manually?  That is difficult given the current patch state, since the various icon files etc. are just binary data on trac.",
     "created_at": "2009-12-07T17:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -274,7 +273,6 @@ sed: ./Sage.app/Contents/Info.plist: No such file or directory
 mv: rename sage to ./Sage.app/Contents/Resources/: No such file or directory
 mv: rename Sage.app to Sage-sample.app: No such file or directory
 ```
-
 So obviously hg_sage.import... didn't actually import these files.  Should I put them in manually?  That is difficult given the current patch state, since the various icon files etc. are just binary data on trac.
 
 
@@ -367,7 +365,7 @@ When my PPC finishes building (sometime tomorrow) I will check there too.   If I
 archive/issue_comments_063979.json:
 ```json
 {
-    "body": "> So obviously hg_sage.import... didn't actually import these files.\n\nIt's a patch to the extcode repo, so you have to use `hg_extcode.import`...",
+    "body": "> So obviously hg_sage.import... didn't actually import these files.\n\n\nIt's a patch to the extcode repo, so you have to use `hg_extcode.import`...",
     "created_at": "2009-12-08T06:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -377,6 +375,7 @@ archive/issue_comments_063979.json:
 ```
 
 > So obviously hg_sage.import... didn't actually import these files.
+
 
 It's a patch to the extcode repo, so you have to use `hg_extcode.import`...
 
@@ -405,7 +404,7 @@ kcrisman thanks for reviewing it even through all the rockiness, and thanks was 
 archive/issue_comments_063981.json:
 ```json
 {
-    "body": "Yes, thanks was - I only knew about hg_scripts and hg_sage.  Great!\n\nI should point out that the .DS_Store thing does \n\n```\n1 out of 1 hunks FAILED -- saving rejects to file sage/ext/.DS_Store.rej\nsage/ext/.DS_Store not tracked!\nsage/ext/.DS_Store: No such file or directory\nabort: patch failed to apply\n```\n\n\nbut I think everything actually still works out okay.   I'll change to positive review once I've verified a couple more things, which will depend on how fast sage.math and my own network are.\n\nDo you have any idea why it takes so dang long for the dmg to verify (more than five minutes)?  This could be a real turnoff; I haven't downloaded a binary in a while, so I forget whether that also takes a while to verify.  And then it takes another ten minutes to copy - granted, on an older computer, but this is a long time.  Good thing we have sagenb to try it out!\n\nNaming for PPC/Intel is now #7623.",
+    "body": "Yes, thanks was - I only knew about hg_scripts and hg_sage.  Great!\n\nI should point out that the .DS_Store thing does \n\n```\n1 out of 1 hunks FAILED -- saving rejects to file sage/ext/.DS_Store.rej\nsage/ext/.DS_Store not tracked!\nsage/ext/.DS_Store: No such file or directory\nabort: patch failed to apply\n```\n\nbut I think everything actually still works out okay.   I'll change to positive review once I've verified a couple more things, which will depend on how fast sage.math and my own network are.\n\nDo you have any idea why it takes so dang long for the dmg to verify (more than five minutes)?  This could be a real turnoff; I haven't downloaded a binary in a while, so I forget whether that also takes a while to verify.  And then it takes another ten minutes to copy - granted, on an older computer, but this is a long time.  Good thing we have sagenb to try it out!\n\nNaming for PPC/Intel is now #7623.",
     "created_at": "2009-12-08T16:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -425,7 +424,6 @@ sage/ext/.DS_Store: No such file or directory
 abort: patch failed to apply
 ```
 
-
 but I think everything actually still works out okay.   I'll change to positive review once I've verified a couple more things, which will depend on how fast sage.math and my own network are.
 
 Do you have any idea why it takes so dang long for the dmg to verify (more than five minutes)?  This could be a real turnoff; I haven't downloaded a binary in a while, so I forget whether that also takes a while to verify.  And then it takes another ten minutes to copy - granted, on an older computer, but this is a long time.  Good thing we have sagenb to try it out!
@@ -439,7 +437,7 @@ Naming for PPC/Intel is now #7623.
 archive/issue_comments_063982.json:
 ```json
 {
-    "body": "Okay, the only problem I have found is the following:\n\nIF someone had a previous Sage install with the old notebook, but now downloads and uses this, the script will ask whether they want to migrate their notebooks.  Like this:\n\n```\n********************************************************************************\n*\n* The Sage notebook at\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook'\n*\n* will be upgraded to a new format and stored in\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook.sagenb'.\n*\n* Your existing notebook will not be modified in any way.\n*\n********************************************************************************\n\nWould like to continue? [YES or no]\n```\n\nOnly, they can't answer the question, because of how the bundle is made, so you have no choice but to quit.  Maybe there should be something which catches this?  I have absolutely no idea how it would be implemented; I'm cc:ing William in on this in case he has an obvious trick.\n\nOtherwise it all seems to work fine.  Positive review!  \n\nCan we still get this in 4.3?  This would be really good.",
+    "body": "Okay, the only problem I have found is the following:\n\nIF someone had a previous Sage install with the old notebook, but now downloads and uses this, the script will ask whether they want to migrate their notebooks.  Like this:\n\n```\n********************************************************************************\n*\n* The Sage notebook at\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook'\n*\n* will be upgraded to a new format and stored in\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook.sagenb'.\n*\n* Your existing notebook will not be modified in any way.\n*\n********************************************************************************\n\nWould like to continue? [YES or no]\n```\nOnly, they can't answer the question, because of how the bundle is made, so you have no choice but to quit.  Maybe there should be something which catches this?  I have absolutely no idea how it would be implemented; I'm cc:ing William in on this in case he has an obvious trick.\n\nOtherwise it all seems to work fine.  Positive review!  \n\nCan we still get this in 4.3?  This would be really good.",
     "created_at": "2009-12-08T16:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7546",
     "type": "issue_comment",
@@ -469,7 +467,6 @@ IF someone had a previous Sage install with the old notebook, but now downloads 
 
 Would like to continue? [YES or no]
 ```
-
 Only, they can't answer the question, because of how the bundle is made, so you have no choice but to quit.  Maybe there should be something which catches this?  I have absolutely no idea how it would be implemented; I'm cc:ing William in on this in case he has an obvious trick.
 
 Otherwise it all seems to work fine.  Positive review!  

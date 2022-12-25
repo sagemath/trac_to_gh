@@ -186,7 +186,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073269.json:
 ```json
 {
-    "body": "Discussed on trac: there is an algorithmic problem:\nHere is my tests example:\n\n```\n    I = SearchForest([[3]], lambda l: (l+[i] for i in range(l[-1])))\n```\n\nDo you have an easy father function for this tree ?\nYes : `lambda l -> l[:-1]`\nIt simply generate strictly decreasing lists starting with 3.\nFor me a call to\n\n```\n    list(I.element_of_depth_iterator(2, \"Children\"))\n```\n\nraise a `StopIteration` ...\nWhereas:\n\n```\n    sage: list(I.element_of_depth_iterator(2))\n    [[3, 1, 0], [3, 2, 0], [3, 2, 1]]\n```\n",
+    "body": "Discussed on trac: there is an algorithmic problem:\nHere is my tests example:\n\n```\n    I = SearchForest([[3]], lambda l: (l+[i] for i in range(l[-1])))\n```\nDo you have an easy father function for this tree ?\nYes : `lambda l -> l[:-1]`\nIt simply generate strictly decreasing lists starting with 3.\nFor me a call to\n\n```\n    list(I.element_of_depth_iterator(2, \"Children\"))\n```\nraise a `StopIteration` ...\nWhereas:\n\n```\n    sage: list(I.element_of_depth_iterator(2))\n    [[3, 1, 0], [3, 2, 0], [3, 2, 1]]\n```",
     "created_at": "2010-03-05T10:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
@@ -201,7 +201,6 @@ Here is my tests example:
 ```
     I = SearchForest([[3]], lambda l: (l+[i] for i in range(l[-1])))
 ```
-
 Do you have an easy father function for this tree ?
 Yes : `lambda l -> l[:-1]`
 It simply generate strictly decreasing lists starting with 3.
@@ -210,7 +209,6 @@ For me a call to
 ```
     list(I.element_of_depth_iterator(2, "Children"))
 ```
-
 raise a `StopIteration` ...
 Whereas:
 
@@ -218,7 +216,6 @@ Whereas:
     sage: list(I.element_of_depth_iterator(2))
     [[3, 1, 0], [3, 2, 0], [3, 2, 1]]
 ```
-
 
 
 
@@ -319,7 +316,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073275.json:
 ```json
 {
-    "body": "Don't use the keyword \"method\" to specify the algorithm to be used. Instead use \"algorithm\". See #6094 and #7971 for two attempts to get rid of using \"method\" for specifying the algorithm to be used. My reviewer patch makes this change to your implementation.\n\n\n\nFor any argument that can take more than one value, provide all the possible values. For example, if possible, list all the possible values for the argument \"algorithm\".\n\n\n\nThere is a slight bug in the method `search_forest_iterator()`. If `method=\"depth\"`, then we would use depth-first search. But to get `search_forest_iterator()` to use breadth-first search, we could assign any value to the keyword `method`:\n\n\n```\nsage: from sage.combinat.backtrack import search_forest_iterator\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=\"breadth\"))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=None))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=\"some sanity\"))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\n```\n\n\nTo remedy this bug, we could explicitly test for \"breadth\" and \"depth\" and set the value `position` accordingly. For any other value assigned to `algorithm`, we raise an exception. The reviewer patch implements this fix.\n\n\n\nThere is a slight bug in the method `element_of_depth_iterator()`. From your example given for that method, we can do this:\n\n\n```\nsage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)\nsage: I = SearchForest([(0,0)], lambda l: [(l[0]+1, l[1]), (l[0], 1)] if l[1] == 0 else [(l[0], l[1]+1)], father=father)\nsage: list(I.element_of_depth_iterator(10, method=\"father\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\n```\n\n\nBut then, we could assign the keyword `method` with any value and get the same result as above:\n\n\n```\nsage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)\nsage: I = SearchForest([(0,0)], lambda l: [(l[0]+1, l[1]), (l[0], 1)] if l[1] == 0 else [(l[0], l[1]+1)], father=father)\nsage: list(I.element_of_depth_iterator(10, method=\"mother\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\nsage: list(I.element_of_depth_iterator(10, method=\"grandma\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\nsage: list(I.element_of_depth_iterator(10, method=\"abc\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\n```\n\n\nOne way to fix this is to make `full_generation` into a boolean keyword. If `full_generation=True`, the search starts from the root and generate all elements until the given depth is reached. If `full_generation=False`, the search algorithm makes use of the `father` and `next_brother` methods. My reviewer patch makes this change.\n\n\n\n\nOther general remarks:\n\n* Whenever possible, avoid going over 79 characters per line.\n* When testing for `None`, don't use \"!=\". Instead use \"is not\", which is much faster than \"!=\". The same remark applies when testing for equality of an object with `None`.\n* For the method `first_element_of_depth()`, I don't understand what is the purpose of the keyword \"father_with_depth\". You need to document that keyword.\n* Some stylistic clean-ups in accordance with [PEP 8](http://www.python.org/dev/peps/pep-0008/).\n\nI have provided a reviewer patch that implements some changes on top of nborie's patch. Someone needs to review the technical aspect of the features implemented by nborie's patch.",
+    "body": "Don't use the keyword \"method\" to specify the algorithm to be used. Instead use \"algorithm\". See #6094 and #7971 for two attempts to get rid of using \"method\" for specifying the algorithm to be used. My reviewer patch makes this change to your implementation.\n\n\n\nFor any argument that can take more than one value, provide all the possible values. For example, if possible, list all the possible values for the argument \"algorithm\".\n\n\n\nThere is a slight bug in the method `search_forest_iterator()`. If `method=\"depth\"`, then we would use depth-first search. But to get `search_forest_iterator()` to use breadth-first search, we could assign any value to the keyword `method`:\n\n```\nsage: from sage.combinat.backtrack import search_forest_iterator\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=\"breadth\"))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=None))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\nsage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method=\"some sanity\"))\n[[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]\n```\n\nTo remedy this bug, we could explicitly test for \"breadth\" and \"depth\" and set the value `position` accordingly. For any other value assigned to `algorithm`, we raise an exception. The reviewer patch implements this fix.\n\n\n\nThere is a slight bug in the method `element_of_depth_iterator()`. From your example given for that method, we can do this:\n\n```\nsage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)\nsage: I = SearchForest([(0,0)], lambda l: [(l[0]+1, l[1]), (l[0], 1)] if l[1] == 0 else [(l[0], l[1]+1)], father=father)\nsage: list(I.element_of_depth_iterator(10, method=\"father\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\n```\n\nBut then, we could assign the keyword `method` with any value and get the same result as above:\n\n```\nsage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)\nsage: I = SearchForest([(0,0)], lambda l: [(l[0]+1, l[1]), (l[0], 1)] if l[1] == 0 else [(l[0], l[1]+1)], father=father)\nsage: list(I.element_of_depth_iterator(10, method=\"mother\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\nsage: list(I.element_of_depth_iterator(10, method=\"grandma\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\nsage: list(I.element_of_depth_iterator(10, method=\"abc\"))\n[(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]\n```\n\nOne way to fix this is to make `full_generation` into a boolean keyword. If `full_generation=True`, the search starts from the root and generate all elements until the given depth is reached. If `full_generation=False`, the search algorithm makes use of the `father` and `next_brother` methods. My reviewer patch makes this change.\n\n\n\n\nOther general remarks:\n\n* Whenever possible, avoid going over 79 characters per line.\n* When testing for `None`, don't use \"!=\". Instead use \"is not\", which is much faster than \"!=\". The same remark applies when testing for equality of an object with `None`.\n* For the method `first_element_of_depth()`, I don't understand what is the purpose of the keyword \"father_with_depth\". You need to document that keyword.\n* Some stylistic clean-ups in accordance with [PEP 8](http://www.python.org/dev/peps/pep-0008/).\n\nI have provided a reviewer patch that implements some changes on top of nborie's patch. Someone needs to review the technical aspect of the features implemented by nborie's patch.",
     "created_at": "2010-04-19T02:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
@@ -338,7 +335,6 @@ For any argument that can take more than one value, provide all the possible val
 
 There is a slight bug in the method `search_forest_iterator()`. If `method="depth"`, then we would use depth-first search. But to get `search_forest_iterator()` to use breadth-first search, we could assign any value to the keyword `method`:
 
-
 ```
 sage: from sage.combinat.backtrack import search_forest_iterator
 sage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 else [], method="breadth"))
@@ -349,13 +345,11 @@ sage: list(search_forest_iterator([[]], lambda l: [l+[0], l+[1]] if len(l) < 3 e
 [[], [0], [1], [0, 0], [0, 1], [1, 0], [1, 1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 1, 1]]
 ```
 
-
 To remedy this bug, we could explicitly test for "breadth" and "depth" and set the value `position` accordingly. For any other value assigned to `algorithm`, we raise an exception. The reviewer patch implements this fix.
 
 
 
 There is a slight bug in the method `element_of_depth_iterator()`. From your example given for that method, we can do this:
-
 
 ```
 sage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)
@@ -364,9 +358,7 @@ sage: list(I.element_of_depth_iterator(10, method="father"))
 [(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]
 ```
 
-
 But then, we could assign the keyword `method` with any value and get the same result as above:
-
 
 ```
 sage: father = lambda t: (t[0]-1,0) if t[1] == 0 else (t[0],t[1]-1)
@@ -378,7 +370,6 @@ sage: list(I.element_of_depth_iterator(10, method="grandma"))
 sage: list(I.element_of_depth_iterator(10, method="abc"))
 [(10, 0), (9, 1), (8, 2), (7, 3), (6, 4), (5, 5), (4, 6), (3, 7), (2, 8), (1, 9), (0, 10)]
 ```
-
 
 One way to fix this is to make `full_generation` into a boolean keyword. If `full_generation=True`, the search starts from the root and generate all elements until the given depth is reached. If `full_generation=False`, the search algorithm makes use of the `father` and `next_brother` methods. My reviewer patch makes this change.
 

@@ -3,7 +3,7 @@
 archive/issues_007483.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these lines:\n\n```\n        self.__comp_is_running = True\n        'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n        self.sage().execute(input, os.path.abspath(self.data_directory()))\n```\n\n\nThat 'exec ' line in the middle is just sitting there making a string that is just discareded!?!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7483\n\n",
+    "body": "Assignee: boothby\n\nIn worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these lines:\n\n```\n        self.__comp_is_running = True\n        'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n        self.sage().execute(input, os.path.abspath(self.data_directory()))\n```\n\nThat 'exec ' line in the middle is just sitting there making a string that is just discareded!?!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7483\n\n",
     "created_at": "2009-11-17T22:28:15Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ In worksheet.py (at the end of `start_next_comp(self)`) in sagenb we have these 
         self.sage().execute(input, os.path.abspath(self.data_directory()))
 ```
 
-
 That 'exec ' line in the middle is just sitting there making a string that is just discareded!?!?
 
 Issue created by migration from https://trac.sagemath.org/ticket/7483
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7483
 archive/issue_comments_063062.json:
 ```json
 {
-    "body": "I think I meant\n\n```\ninput = 'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n```\n\nand to get rid of preparsing input at all done by the server.  In fact, I know for a fact I implemented things that way so that this wouldn't be broken:\n\n```\nimplicit_multiplication(True)\n///\nTraceback (most recent call last):\n...\nNotImplementedError: Implicit multiplication not implemented for the notebook.\n```\n\n\nBut now it seems to be broken again. \n\nI can only conclude that a serious mismerge or mangling has occurred to the code I originally wrote, since I definitely had the above working in an earlier version of sagenb.  \n\nHence, this ticket.",
+    "body": "I think I meant\n\n```\ninput = 'exec _support_.preparse(base64.b64decode(\"%s\"))'%base64.b64encode(input)\n```\nand to get rid of preparsing input at all done by the server.  In fact, I know for a fact I implemented things that way so that this wouldn't be broken:\n\n```\nimplicit_multiplication(True)\n///\nTraceback (most recent call last):\n...\nNotImplementedError: Implicit multiplication not implemented for the notebook.\n```\n\nBut now it seems to be broken again. \n\nI can only conclude that a serious mismerge or mangling has occurred to the code I originally wrote, since I definitely had the above working in an earlier version of sagenb.  \n\nHence, this ticket.",
     "created_at": "2009-11-17T22:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7483",
     "type": "issue_comment",
@@ -54,7 +53,6 @@ I think I meant
 ```
 input = 'exec _support_.preparse(base64.b64decode("%s"))'%base64.b64encode(input)
 ```
-
 and to get rid of preparsing input at all done by the server.  In fact, I know for a fact I implemented things that way so that this wouldn't be broken:
 
 ```
@@ -64,7 +62,6 @@ Traceback (most recent call last):
 ...
 NotImplementedError: Implicit multiplication not implemented for the notebook.
 ```
-
 
 But now it seems to be broken again. 
 
@@ -291,7 +288,7 @@ Were `attach` and `detach` already broken in the notebook?
 archive/issue_comments_063074.json:
 ```json
 {
-    "body": "> It seems that load and save are now broken in the notebook.\n> Were attach and detach already broken in the notebook?\n\nNo, this broke them.  I'll fix the problem now.",
+    "body": "> It seems that load and save are now broken in the notebook.\n> Were attach and detach already broken in the notebook?\n\n\nNo, this broke them.  I'll fix the problem now.",
     "created_at": "2009-11-22T00:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7483",
     "type": "issue_comment",
@@ -302,6 +299,7 @@ archive/issue_comments_063074.json:
 
 > It seems that load and save are now broken in the notebook.
 > Were attach and detach already broken in the notebook?
+
 
 No, this broke them.  I'll fix the problem now.
 
@@ -386,7 +384,7 @@ Should we also move "docbrowser" generation to a worksheet process?
 archive/issue_comments_063079.json:
 ```json
 {
-    "body": "> Should we also move \"docbrowser\" generation to a worksheet process? \n\nDefinitely!  The more that is done by worksheet processes, the better -- for scalability, security, etc.  Every spec of work done by the server is a potential speed and security problem.  The more that can be offloaded to worksheets, the better.",
+    "body": "> Should we also move \"docbrowser\" generation to a worksheet process? \n\n\nDefinitely!  The more that is done by worksheet processes, the better -- for scalability, security, etc.  Every spec of work done by the server is a potential speed and security problem.  The more that can be offloaded to worksheets, the better.",
     "created_at": "2009-12-10T18:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7483",
     "type": "issue_comment",
@@ -396,6 +394,7 @@ archive/issue_comments_063079.json:
 ```
 
 > Should we also move "docbrowser" generation to a worksheet process? 
+
 
 Definitely!  The more that is done by worksheet processes, the better -- for scalability, security, etc.  Every spec of work done by the server is a potential speed and security problem.  The more that can be offloaded to worksheets, the better.
 

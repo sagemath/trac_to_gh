@@ -3,7 +3,7 @@
 archive/issues_005198.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider:\n\n```\nsage: vector(ZZ, range(3)).apply_map(lambda x: x+1)\n(1, 2, 3)\nsage: vector(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n(0, 2, 3)\n```\n\n\nand\n\n\n```\nsage: matrix(ZZ, range(3)).apply_map(lambda x: x+1)\n[1 2 3]\nsage: matrix(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n[0 2 3]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5198\n\n",
+    "body": "Assignee: @williamstein\n\nConsider:\n\n```\nsage: vector(ZZ, range(3)).apply_map(lambda x: x+1)\n(1, 2, 3)\nsage: vector(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n(0, 2, 3)\n```\n\nand\n\n```\nsage: matrix(ZZ, range(3)).apply_map(lambda x: x+1)\n[1 2 3]\nsage: matrix(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)\n[0 2 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5198\n\n",
     "created_at": "2009-02-07T00:39:36Z",
     "labels": [
         "component: linear algebra",
@@ -28,9 +28,7 @@ sage: vector(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)
 (0, 2, 3)
 ```
 
-
 and
-
 
 ```
 sage: matrix(ZZ, range(3)).apply_map(lambda x: x+1)
@@ -38,7 +36,6 @@ sage: matrix(ZZ, range(3)).apply_map(lambda x: x+1)
 sage: matrix(ZZ, range(3), sparse=True).apply_map(lambda x: x+1)
 [0 2 3]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5198

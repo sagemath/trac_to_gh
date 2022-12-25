@@ -3,7 +3,7 @@
 archive/issues_005199.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nConsider the following, in 3.3.alpha5:\n\n```\nsage: from sage.symbolic.ring import NSR\nsage: NSR(10.0).gamma()\n362880\n```\n\nWe have produced an exact integral result of .gamma() on a floating-point number.\n\nAfter #2898, this behavior makes doctests fail; but the above happens even before #2898.\n\nI don't know if this is the \"right\" patch, but it does make all doctests pass after #2898.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5199\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nConsider the following, in 3.3.alpha5:\n\n```\nsage: from sage.symbolic.ring import NSR\nsage: NSR(10.0).gamma()\n362880\n```\nWe have produced an exact integral result of .gamma() on a floating-point number.\n\nAfter #2898, this behavior makes doctests fail; but the above happens even before #2898.\n\nI don't know if this is the \"right\" patch, but it does make all doctests pass after #2898.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5199\n\n",
     "created_at": "2009-02-07T05:15:40Z",
     "labels": [
         "component: calculus",
@@ -27,7 +27,6 @@ sage: from sage.symbolic.ring import NSR
 sage: NSR(10.0).gamma()
 362880
 ```
-
 We have produced an exact integral result of .gamma() on a floating-point number.
 
 After #2898, this behavior makes doctests fail; but the above happens even before #2898.

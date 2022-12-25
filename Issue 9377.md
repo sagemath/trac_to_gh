@@ -3,7 +3,7 @@
 archive/issues_009377.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: F.<a>=GF(4)\nsage: m=matrix(2,[F(1),2,3,4])\nsage: magma(m) \n---------------------------------------------------------------------------\nTypeError  \n...\nTypeError: unable to coerce element into magma\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9377\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: F.<a>=GF(4)\nsage: m=matrix(2,[F(1),2,3,4])\nsage: magma(m) \n---------------------------------------------------------------------------\nTypeError  \n...\nTypeError: unable to coerce element into magma\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9377\n\n",
     "created_at": "2010-06-29T18:16:05Z",
     "labels": [
         "component: interfaces",
@@ -18,7 +18,6 @@ archive/issues_009377.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: F.<a>=GF(4)
 sage: m=matrix(2,[F(1),2,3,4])
@@ -28,7 +27,6 @@ TypeError
 ...
 TypeError: unable to coerce element into magma
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9377
 
@@ -178,7 +176,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088963.json:
 ```json
 {
-    "body": "\n```\nUsing magma-2.16-11, I get the following with this patch\n\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(4)\nsage: m=matrix(2,[F(1),2,3,4])\nsage: magma(m)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/<ipython console> in <module>()\n\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/local/lib/python2.6/site-packages/sage/interfaces/magma.pyc in __call__(self, x, gens)\n    735             pass\n    736         \n--> 737         A = Expect.__call__(self, x)\n    738         if has_cache:\n    739             x._magma_cache[self] = A\n   1034             return self._coerce_from_special_method(x)\n\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error evaluating Magma code.\nIN:_sage_[7]:=_sage_[3]![_sage_[4]!(1),_sage_[4]!(0),_sage_[4]!(1),_sage_[4]!(0)];\nOUT:\n>> _sage_[7]:=_sage_[3]![_sage_[4]!(1),_sage_[4]!(0),_sage_[4]!(1),_sage_[4]!(\n                       ^\nRuntime error in '!': Cannot coerce sequence element 1 into the coefficient ring\n\nsage: \n```\n",
+    "body": "```\nUsing magma-2.16-11, I get the following with this patch\n\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(4)\nsage: m=matrix(2,[F(1),2,3,4])\nsage: magma(m)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4.4.1, Release Date: 2010-06-28                     |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/<ipython console> in <module>()\n\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/local/lib/python2.6/site-packages/sage/interfaces/magma.pyc in __call__(self, x, gens)\n    735             pass\n    736         \n--> 737         A = Expect.__call__(self, x)\n    738         if has_cache:\n    739             x._magma_cache[self] = A\n   1034             return self._coerce_from_special_method(x)\n\n/home/mariah/sage/sage-4.4.4.1-x86_64-Linux-core2-fc-trac9377/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error evaluating Magma code.\nIN:_sage_[7]:=_sage_[3]![_sage_[4]!(1),_sage_[4]!(0),_sage_[4]!(1),_sage_[4]!(0)];\nOUT:\n>> _sage_[7]:=_sage_[3]![_sage_[4]!(1),_sage_[4]!(0),_sage_[4]!(1),_sage_[4]!(\n                       ^\nRuntime error in '!': Cannot coerce sequence element 1 into the coefficient ring\n\nsage: \n```",
     "created_at": "2010-07-12T19:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
@@ -186,7 +184,6 @@ archive/issue_comments_088963.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
-
 
 ```
 Using magma-2.16-11, I get the following with this patch
@@ -227,7 +224,6 @@ Runtime error in '!': Cannot coerce sequence element 1 into the coefficient ring
 
 sage: 
 ```
-
 
 
 
@@ -292,7 +288,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088967.json:
 ```json
 {
-    "body": "The revised patch fixes the reported problem.\n\nsage-4.4.4.1 with the revised patch passes all tests when I do \"make testlong\"\n\nsage-4.4.4.1 with the revised patch and using magma-2.16-11 has\nfewer doctest failures when I do \n\n```\n./sage -t -only_optional=magma devel/sage/sage \n```\n\nthan without the patch - and no new failures were introduced.\n\nPositive review!",
+    "body": "The revised patch fixes the reported problem.\n\nsage-4.4.4.1 with the revised patch passes all tests when I do \"make testlong\"\n\nsage-4.4.4.1 with the revised patch and using magma-2.16-11 has\nfewer doctest failures when I do \n\n```\n./sage -t -only_optional=magma devel/sage/sage \n```\nthan without the patch - and no new failures were introduced.\n\nPositive review!",
     "created_at": "2010-07-13T19:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
@@ -311,7 +307,6 @@ fewer doctest failures when I do
 ```
 ./sage -t -only_optional=magma devel/sage/sage 
 ```
-
 than without the patch - and no new failures were introduced.
 
 Positive review!

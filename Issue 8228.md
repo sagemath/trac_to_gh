@@ -3,7 +3,7 @@
 archive/issues_008228.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @jaapspies\n\nThis is bad:\n\n\n```python\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8228\n\n",
+    "body": "Assignee: @malb\n\nCC:  @jaapspies\n\nThis is bad:\n\n```python\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8228\n\n",
     "created_at": "2010-02-10T13:24:13Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ CC:  @jaapspies
 
 This is bad:
 
-
 ```python
 sage: P.<x,y> = Zmod(10)[]; P(0)
 0
@@ -37,7 +36,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8228
 
@@ -236,7 +234,7 @@ add doctest
 archive/issue_comments_072546.json:
 ```json
 {
-    "body": "Since #8059 is merged with the new Singular package, this works:\n\n\n```\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n0\n```\n\n\nattachment:trac_8228-doctest.patch adds a doctest. Trivial review anyone?",
+    "body": "Since #8059 is merged with the new Singular package, this works:\n\n```\nsage: P.<x,y> = Zmod(10)[]; P(0)\n0\nsage: P.<x,y> = Zmod(2^10)[]; P(0)\n0\n```\n\nattachment:trac_8228-doctest.patch adds a doctest. Trivial review anyone?",
     "created_at": "2010-09-19T14:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8228",
     "type": "issue_comment",
@@ -247,14 +245,12 @@ archive/issue_comments_072546.json:
 
 Since #8059 is merged with the new Singular package, this works:
 
-
 ```
 sage: P.<x,y> = Zmod(10)[]; P(0)
 0
 sage: P.<x,y> = Zmod(2^10)[]; P(0)
 0
 ```
-
 
 attachment:trac_8228-doctest.patch adds a doctest. Trivial review anyone?
 

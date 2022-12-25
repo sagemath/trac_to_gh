@@ -3,7 +3,7 @@
 archive/issues_000316.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n\n```\ne = EllipticCurve('34a')\n```\n\n\n\n```\nm = ModularSymbols(34); s = m.cuspidal_submodule()\n```\n\n\n\n```\nd = s.decomposition(7)\n```\n\n\n\n```\nd\n///\n[\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field,\nModular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n]\n```\n\n\n\n```\na = d[0]; a\n///\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n```\n\n\n\n```\npi = a.projection()\n```\n\n\n\n```\npi(m([0,oo]))\n///\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/316\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\ne = EllipticCurve('34a')\n```\n\n```\nm = ModularSymbols(34); s = m.cuspidal_submodule()\n```\n\n```\nd = s.decomposition(7)\n```\n\n```\nd\n///\n[\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field,\nModular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n]\n```\n\n```\na = d[0]; a\n///\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n```\n\n```\npi = a.projection()\n```\n\n```\npi(m([0,oo]))\n///\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/316\n\n",
     "created_at": "2007-03-11T05:26:38Z",
     "labels": [
         "component: number theory",
@@ -19,24 +19,17 @@ archive/issues_000316.json:
 Assignee: @williamstein
 
 
-
 ```
 e = EllipticCurve('34a')
 ```
-
-
 
 ```
 m = ModularSymbols(34); s = m.cuspidal_submodule()
 ```
 
-
-
 ```
 d = s.decomposition(7)
 ```
-
-
 
 ```
 d
@@ -47,21 +40,15 @@ Modular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 
 ]
 ```
 
-
-
 ```
 a = d[0]; a
 ///
 Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field
 ```
 
-
-
 ```
 pi = a.projection()
 ```
-
-
 
 ```
 pi(m([0,oo]))
@@ -75,7 +62,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/316
 

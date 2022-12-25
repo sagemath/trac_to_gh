@@ -3,7 +3,7 @@
 archive/issues_000049.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI'm not sure if this is a bug, but it sure is confusing to me.\n\n\n```\nsage: K = pAdicField(5, 10)\nsage: K(1/2, prec=20)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + O(5^10)\n```\n\n\nThe field's default precision seems to override the precision explicitly requested in the constructor. I can vaguely see how this might make sense, but it gets extremely confusing when you don't even supply the default precision:\n\n\n```\nsage: K = pAdicField(5)\nsage: K(1/2, prec=30)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + 2*5^10 + 2*5^11 + 2*5^12 + 2*5^13 + 2*5^14 + 2*5^15 + 2*5^16 + 2*5^17 + 2*5^18 + 2*5^19 + O(5^20)\n```\n\n\nI think it would be better if the precision requested in the constructor was always honoured, assuming that the input data had enough precision in the first place to support it (which in this case it does, being a Rational number).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/49\n\n",
+    "body": "Assignee: somebody\n\nI'm not sure if this is a bug, but it sure is confusing to me.\n\n```\nsage: K = pAdicField(5, 10)\nsage: K(1/2, prec=20)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + O(5^10)\n```\n\nThe field's default precision seems to override the precision explicitly requested in the constructor. I can vaguely see how this might make sense, but it gets extremely confusing when you don't even supply the default precision:\n\n```\nsage: K = pAdicField(5)\nsage: K(1/2, prec=30)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + 2*5^10 + 2*5^11 + 2*5^12 + 2*5^13 + 2*5^14 + 2*5^15 + 2*5^16 + 2*5^17 + 2*5^18 + 2*5^19 + O(5^20)\n```\n\nI think it would be better if the precision requested in the constructor was always honoured, assuming that the input data had enough precision in the first place to support it (which in this case it does, being a Rational number).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/49\n\n",
     "created_at": "2006-09-13T14:36:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,23 +19,19 @@ Assignee: somebody
 
 I'm not sure if this is a bug, but it sure is confusing to me.
 
-
 ```
 sage: K = pAdicField(5, 10)
 sage: K(1/2, prec=20)
  3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + O(5^10)
 ```
 
-
 The field's default precision seems to override the precision explicitly requested in the constructor. I can vaguely see how this might make sense, but it gets extremely confusing when you don't even supply the default precision:
-
 
 ```
 sage: K = pAdicField(5)
 sage: K(1/2, prec=30)
  3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + 2*5^10 + 2*5^11 + 2*5^12 + 2*5^13 + 2*5^14 + 2*5^15 + 2*5^16 + 2*5^17 + 2*5^18 + 2*5^19 + O(5^20)
 ```
-
 
 I think it would be better if the precision requested in the constructor was always honoured, assuming that the input data had enough precision in the first place to support it (which in this case it does, being a Rational number).
 

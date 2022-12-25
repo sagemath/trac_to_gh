@@ -109,7 +109,7 @@ Replacement for previous .py file (as a proper hg patch)
 archive/issue_comments_023581.json:
 ```json
 {
-    "body": "Attachment [ell_nf_torsion.patch](tarball://root/attachments/some-uuid/ticket3377/ell_nf_torsion.patch) by @JohnCremona created at 2008-06-07 16:39:23\n\n1. I applied the first patch ok to 3.0.3.alpha1, then copied the second non-patch .py file into place, added it to the repository and re-exported it to make the second genuine patch attached (ell_nf_torsion.patch).\n\n2. Doctests passed except for one error caused by a missing blank line at line 165 of ell_number_field.py.\n\n3. The new file ell_nf_torsion.py and old file rational_torsion.py should probably be merged;  and certainly delete from the latter the lines\n\n```\nTODO:\n    -- Torsion subgroups over number fields!\n```\n\n\n4. The function reduce() to reduce an e.c. at a place is very useful.  But it doesn't work for e.c.s defined over Q.  Rather than hack this code to work over Q I suggest adding a reduction method (function) in ell_rational_field.py just like the new one.  I can do this.\n\nMore to follow.... I am planning to add a further patch with some minor changes.",
+    "body": "Attachment [ell_nf_torsion.patch](tarball://root/attachments/some-uuid/ticket3377/ell_nf_torsion.patch) by @JohnCremona created at 2008-06-07 16:39:23\n\n1. I applied the first patch ok to 3.0.3.alpha1, then copied the second non-patch .py file into place, added it to the repository and re-exported it to make the second genuine patch attached (ell_nf_torsion.patch).\n\n2. Doctests passed except for one error caused by a missing blank line at line 165 of ell_number_field.py.\n\n3. The new file ell_nf_torsion.py and old file rational_torsion.py should probably be merged;  and certainly delete from the latter the lines\n\n```\nTODO:\n    -- Torsion subgroups over number fields!\n```\n\n4. The function reduce() to reduce an e.c. at a place is very useful.  But it doesn't work for e.c.s defined over Q.  Rather than hack this code to work over Q I suggest adding a reduction method (function) in ell_rational_field.py just like the new one.  I can do this.\n\nMore to follow.... I am planning to add a further patch with some minor changes.",
     "created_at": "2008-06-07T16:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -130,7 +130,6 @@ Attachment [ell_nf_torsion.patch](tarball://root/attachments/some-uuid/ticket337
 TODO:
     -- Torsion subgroups over number fields!
 ```
-
 
 4. The function reduce() to reduce an e.c. at a place is very useful.  But it doesn't work for e.c.s defined over Q.  Rather than hack this code to work over Q I suggest adding a reduction method (function) in ell_rational_field.py just like the new one.  I can do this.
 
@@ -275,7 +274,7 @@ There you are -- I changed the ticket's title to reflect the fact that a lot mor
 archive/issue_comments_023588.json:
 ```json
 {
-    "body": "Great work. This patch contains quite a lot of things and it should be reviewed carefully and independently, I agree.\n\nI ran into the following problem, which is probably unrelated to this.\n\n\n```\nE = EllipticCurve('37a1')\nK = Qp(7,10)\nEK = E.base_extend(K)\n```\n\n\nThen \n\n```\nEK._p_primary_torsion_basis(3)\n```\n\nfails with\n\n```\nAttributeError: 'Polynomial_padic_flat' object has no attribute '__coeffs'\n```\n\n\nbecause this fails already\n\n```\ng = EK.division_polynomial_0(3)\ng.roots()\n```\n\n\nChris",
+    "body": "Great work. This patch contains quite a lot of things and it should be reviewed carefully and independently, I agree.\n\nI ran into the following problem, which is probably unrelated to this.\n\n```\nE = EllipticCurve('37a1')\nK = Qp(7,10)\nEK = E.base_extend(K)\n```\n\nThen \n\n```\nEK._p_primary_torsion_basis(3)\n```\nfails with\n\n```\nAttributeError: 'Polynomial_padic_flat' object has no attribute '__coeffs'\n```\n\nbecause this fails already\n\n```\ng = EK.division_polynomial_0(3)\ng.roots()\n```\n\nChris",
     "created_at": "2008-09-02T12:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -288,26 +287,22 @@ Great work. This patch contains quite a lot of things and it should be reviewed 
 
 I ran into the following problem, which is probably unrelated to this.
 
-
 ```
 E = EllipticCurve('37a1')
 K = Qp(7,10)
 EK = E.base_extend(K)
 ```
 
-
 Then 
 
 ```
 EK._p_primary_torsion_basis(3)
 ```
-
 fails with
 
 ```
 AttributeError: 'Polynomial_padic_flat' object has no attribute '__coeffs'
 ```
-
 
 because this fails already
 
@@ -315,7 +310,6 @@ because this fails already
 g = EK.division_polynomial_0(3)
 g.roots()
 ```
-
 
 Chris
 
@@ -346,7 +340,7 @@ By the way, there's no need to add me to the CC, since anyone who contributes to
 archive/issue_comments_023590.json:
 ```json
 {
-    "body": "> By the way, there's no need to add me to the CC,\n> since anyone who contributes to a ticket is automatically CC'd. \n\nOh I didn't know. So you are saying I should get your posts cc'd ? i don't !??",
+    "body": "> By the way, there's no need to add me to the CC,\n> since anyone who contributes to a ticket is automatically CC'd. \n\n\nOh I didn't know. So you are saying I should get your posts cc'd ? i don't !??",
     "created_at": "2008-09-02T13:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -358,6 +352,7 @@ archive/issue_comments_023590.json:
 > By the way, there's no need to add me to the CC,
 > since anyone who contributes to a ticket is automatically CC'd. 
 
+
 Oh I didn't know. So you are saying I should get your posts cc'd ? i don't !??
 
 
@@ -367,7 +362,7 @@ Oh I didn't know. So you are saying I should get your posts cc'd ? i don't !??
 archive/issue_comments_023591.json:
 ```json
 {
-    "body": "Replying to [comment:9 wuthrich]:\n> > By the way, there's no need to add me to the CC,\n> > since anyone who contributes to a ticket is automatically CC'd. \n> \n> Oh I didn't know. So you are saying I should get your posts cc'd ? i don't !??\n\nChris,\n\nin \"Settings\" you can add an email address for your account that is used. In case you did that already you should get emails from all comments by anybody commenting on any ticket you are involved in. If it does not work let me know.\n\nIf you want to add people to the CC field it is sufficient to add their trac account name, i.e. \"cremona\" would work here.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 wuthrich]:\n> > By the way, there's no need to add me to the CC,\n> > since anyone who contributes to a ticket is automatically CC'd. \n\n> \n> Oh I didn't know. So you are saying I should get your posts cc'd ? i don't !??\n\n\nChris,\n\nin \"Settings\" you can add an email address for your account that is used. In case you did that already you should get emails from all comments by anybody commenting on any ticket you are involved in. If it does not work let me know.\n\nIf you want to add people to the CC field it is sufficient to add their trac account name, i.e. \"cremona\" would work here.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T13:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -379,8 +374,10 @@ archive/issue_comments_023591.json:
 Replying to [comment:9 wuthrich]:
 > > By the way, there's no need to add me to the CC,
 > > since anyone who contributes to a ticket is automatically CC'd. 
+
 > 
 > Oh I didn't know. So you are saying I should get your posts cc'd ? i don't !??
+
 
 Chris,
 
@@ -417,7 +414,7 @@ ok i got it, thanks.
 archive/issue_comments_023593.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> Thanks.  Alex Ghitza has agreed to review this too.  I'll look into why g.roots() fails for a p-adic polynomial.\n> \n\nThis is now trac # 4038.",
+    "body": "Replying to [comment:8 cremona]:\n> Thanks.  Alex Ghitza has agreed to review this too.  I'll look into why g.roots() fails for a p-adic polynomial.\n> \n\n\nThis is now trac # 4038.",
     "created_at": "2008-09-02T13:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -429,6 +426,7 @@ archive/issue_comments_023593.json:
 Replying to [comment:8 cremona]:
 > Thanks.  Alex Ghitza has agreed to review this too.  I'll look into why g.roots() fails for a p-adic polynomial.
 > 
+
 
 This is now trac # 4038.
 
@@ -489,7 +487,7 @@ CONCLUSION: apply only the last patch (3377-torsion_nf.patch); credit goes to Ch
 archive/issue_comments_023596.json:
 ```json
 {
-    "body": "I am seeing two doctest failures on 3.1.2.alpha4+three merged patches:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_point.py\", line 946:\n    sage: e1 <= e(P[0]) <= e2 < e3\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\nAnd some numerical noise it seems:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1123:\n    sage: L.basis()\nExpected:\n    (4.13107185270501681, -2.06553592635250840 + 0.988630424469107767*I)\nGot:\n    (4.13107185270501680, -2.06553592635250840 + 0.988630424469107767*I)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1125:\n    sage: L.basis(prec=75)\nExpected:\n    (4.131071852705016774309696920,\n    -2.065535926352508387154848460 + 0.9886304244691077723690104516*I)\nGot:\n    (4.1310718527050167743096969215298790187, -2.0655359263525083871548484607649395093 + 0.98863042446910777236901045157674201375*I)\n**********************************************************************\n```\n",
+    "body": "I am seeing two doctest failures on 3.1.2.alpha4+three merged patches:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_point.py\", line 946:\n    sage: e1 <= e(P[0]) <= e2 < e3\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\nAnd some numerical noise it seems:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc0$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1123:\n    sage: L.basis()\nExpected:\n    (4.13107185270501681, -2.06553592635250840 + 0.988630424469107767*I)\nGot:\n    (4.13107185270501680, -2.06553592635250840 + 0.988630424469107767*I)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc0/tmp/ell_number_field.py\", line 1125:\n    sage: L.basis(prec=75)\nExpected:\n    (4.131071852705016774309696920,\n    -2.065535926352508387154848460 + 0.9886304244691077723690104516*I)\nGot:\n    (4.1310718527050167743096969215298790187, -2.0655359263525083871548484607649395093 + 0.98863042446910777236901045157674201375*I)\n**********************************************************************\n```",
     "created_at": "2008-09-03T07:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3377",
     "type": "issue_comment",
@@ -512,7 +510,6 @@ Got:
     False
 **********************************************************************
 ```
-
 And some numerical noise it seems:
 
 ```
@@ -535,7 +532,6 @@ Got:
     (4.1310718527050167743096969215298790187, -2.0655359263525083871548484607649395093 + 0.98863042446910777236901045157674201375*I)
 **********************************************************************
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007705.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
     "created_at": "2009-12-16T08:45:55Z",
     "labels": [
         "component: graph theory",
@@ -26,7 +26,6 @@ This command in sage-4.3 returns a loaded sobj:
 sage: graphs.WorldMap()
 Graph on 251 vertices
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7705
 

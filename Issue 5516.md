@@ -3,7 +3,7 @@
 archive/issues_005516.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen running a 64 bit virtual cpu in kvm (72+dfsg-4, debian/lenny), the virtual `cpuid` reports the cpu as:\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 6\nmodel           : 2\nmodel name      : QEMU Virtual CPU version 0.9.1\nstepping        : 3\n```\n\nAFAICT, from intel's cpuid documentation in http://download.intel.com/design/processor/applnots/24161832.pdf, such a family/model combination doesn't actually exist (pentiumpro is model 1, pentium II is model 3 and 5, celeron is model 6, etc).\n\nOn the other hand the `config.guess` script in mpir considers anything models 2 to 6 as being `pentium2`. Misdetection is already bad because core 2 optimizations should be much better than pentium II ones.\n\nThe build then fails because for a pentium II, the configure logic forces `ABI=32`, and this is wrong (configure complains about `sizeof(long)` not being `4`, indeed it is `8`).\n\nOf course, this seems to be a bug in kvm; but maybe it should be workarounded? I don't think it is relevant, but just in case the host cpu reports family=6, model=23 (it's a core 2 quad Q9550).\n\nAfter the fact I discovered that one can use the following command line switch when running kvm:\n\n```\n-cpu qemu64,family=6,model=15,+ssse3\n```\n\nto set family/model to a core2, and also set `ssse3` cpu flag (disabled by default). Unfortunately, this comand line switch doesn't support models higher than 15, nor the `sse4_1` flag.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5516\n\n",
+    "body": "Assignee: mabshoff\n\nWhen running a 64 bit virtual cpu in kvm (72+dfsg-4, debian/lenny), the virtual `cpuid` reports the cpu as:\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 6\nmodel           : 2\nmodel name      : QEMU Virtual CPU version 0.9.1\nstepping        : 3\n```\nAFAICT, from intel's cpuid documentation in http://download.intel.com/design/processor/applnots/24161832.pdf, such a family/model combination doesn't actually exist (pentiumpro is model 1, pentium II is model 3 and 5, celeron is model 6, etc).\n\nOn the other hand the `config.guess` script in mpir considers anything models 2 to 6 as being `pentium2`. Misdetection is already bad because core 2 optimizations should be much better than pentium II ones.\n\nThe build then fails because for a pentium II, the configure logic forces `ABI=32`, and this is wrong (configure complains about `sizeof(long)` not being `4`, indeed it is `8`).\n\nOf course, this seems to be a bug in kvm; but maybe it should be workarounded? I don't think it is relevant, but just in case the host cpu reports family=6, model=23 (it's a core 2 quad Q9550).\n\nAfter the fact I discovered that one can use the following command line switch when running kvm:\n\n```\n-cpu qemu64,family=6,model=15,+ssse3\n```\nto set family/model to a core2, and also set `ssse3` cpu flag (disabled by default). Unfortunately, this comand line switch doesn't support models higher than 15, nor the `sse4_1` flag.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5516\n\n",
     "created_at": "2009-03-14T16:00:04Z",
     "labels": [
         "component: build",
@@ -27,7 +27,6 @@ model           : 2
 model name      : QEMU Virtual CPU version 0.9.1
 stepping        : 3
 ```
-
 AFAICT, from intel's cpuid documentation in http://download.intel.com/design/processor/applnots/24161832.pdf, such a family/model combination doesn't actually exist (pentiumpro is model 1, pentium II is model 3 and 5, celeron is model 6, etc).
 
 On the other hand the `config.guess` script in mpir considers anything models 2 to 6 as being `pentium2`. Misdetection is already bad because core 2 optimizations should be much better than pentium II ones.
@@ -41,7 +40,6 @@ After the fact I discovered that one can use the following command line switch w
 ```
 -cpu qemu64,family=6,model=15,+ssse3
 ```
-
 to set family/model to a core2, and also set `ssse3` cpu flag (disabled by default). Unfortunately, this comand line switch doesn't support models higher than 15, nor the `sse4_1` flag.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5516
@@ -115,7 +113,7 @@ archive/issue_events_012933.json:
 archive/issue_comments_042793.json:
 ```json
 {
-    "body": "The issue is fixed for me in gmp-mpir-1.1.spkg as installed from http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gmp-mpir-1.1.spkg.\n\nI installed it with `sage -i URL` on top of sage-3.4, inside a kvm with *no* `-cpu` command line option, and it works fine. The host is set to x86_64-unknown-linux-gnu, which is the proposed workaround.\n\nFor the record, note that compiling mpir with x86_64 default is not optimal for a core2, hence it is strongly recommended that one uses a `-cpu` command line option for kvm like\n\n```\n-cpu qemu64,family=6,model=15,+ssse3\n```\n\nThis works with kvm-72 as shipped with debian. For kvm-84, on a penryn (core 2 quad q9550) I'm actually using\n\n```\n-cpu core2duo,model=23,+ssse3,+lahf_lm\n```\n\nwhich should be slightly better.",
+    "body": "The issue is fixed for me in gmp-mpir-1.1.spkg as installed from http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gmp-mpir-1.1.spkg.\n\nI installed it with `sage -i URL` on top of sage-3.4, inside a kvm with *no* `-cpu` command line option, and it works fine. The host is set to x86_64-unknown-linux-gnu, which is the proposed workaround.\n\nFor the record, note that compiling mpir with x86_64 default is not optimal for a core2, hence it is strongly recommended that one uses a `-cpu` command line option for kvm like\n\n```\n-cpu qemu64,family=6,model=15,+ssse3\n```\nThis works with kvm-72 as shipped with debian. For kvm-84, on a penryn (core 2 quad q9550) I'm actually using\n\n```\n-cpu core2duo,model=23,+ssse3,+lahf_lm\n```\nwhich should be slightly better.",
     "created_at": "2009-04-19T00:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5516",
     "type": "issue_comment",
@@ -133,13 +131,11 @@ For the record, note that compiling mpir with x86_64 default is not optimal for 
 ```
 -cpu qemu64,family=6,model=15,+ssse3
 ```
-
 This works with kvm-72 as shipped with debian. For kvm-84, on a penryn (core 2 quad q9550) I'm actually using
 
 ```
 -cpu core2duo,model=23,+ssse3,+lahf_lm
 ```
-
 which should be slightly better.
 
 

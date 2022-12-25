@@ -3,7 +3,7 @@
 archive/issues_001706.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nShouldn't the sum of the dimensions be 2?\n\n\n```\nsage: M = Matrix(CC, [[1,0],[0,1]])\nsage: M\n\n[1.00000000000000                0]\n[               0 1.00000000000000]\nsage: M.eigenspaces()\n\n[\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n]),\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1706\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nShouldn't the sum of the dimensions be 2?\n\n```\nsage: M = Matrix(CC, [[1,0],[0,1]])\nsage: M\n\n[1.00000000000000                0]\n[               0 1.00000000000000]\nsage: M.eigenspaces()\n\n[\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n]),\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n])\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1706\n\n",
     "created_at": "2008-01-07T05:11:17Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  ncalexander@gmail.com
 
 Shouldn't the sum of the dimensions be 2?
-
 
 ```
 sage: M = Matrix(CC, [[1,0],[0,1]])
@@ -42,7 +41,6 @@ sage: M.eigenspaces()
 ])
 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1706
 
@@ -90,7 +88,7 @@ archive/issue_events_004163.json:
 archive/issue_comments_010778.json:
 ```json
 {
-    "body": "More data from Sage 2.9.3 which might shed some light on the problem:\n\n\n```\nsage: M=Matrix(ZZ,[[1,0],[0,1]])\nsage: M.fcp()\n(x - 1)^2\nsage: M=Matrix(QQ,[[1,0],[0,1]])\nsage: M.fcp()\n(x - 1)^2\nsage: M=Matrix(RR,[[1,0],[0,1]])\nsage: M.fcp()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: M=Matrix(CC,[[1,0],[0,1]])\nsage: M.fcp()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\n\n```\n\n\nand \n\n\n```\nsage: R.<x>=RR[x]\nsage: ((x-1)^2).factor()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: a=((x-1)^2).factor()\nsage: a\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: a[0]\n(1.00000000000000*x - 1.00000000000000, 1)\nsage: a[0]==a[1]\nTrue\nsage: var('x')\nx\nsage: Q.<x>=QQ[x]\nsage: ((x-1)^2).factor()\n(x - 1)^2\n```\n",
+    "body": "More data from Sage 2.9.3 which might shed some light on the problem:\n\n```\nsage: M=Matrix(ZZ,[[1,0],[0,1]])\nsage: M.fcp()\n(x - 1)^2\nsage: M=Matrix(QQ,[[1,0],[0,1]])\nsage: M.fcp()\n(x - 1)^2\nsage: M=Matrix(RR,[[1,0],[0,1]])\nsage: M.fcp()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: M=Matrix(CC,[[1,0],[0,1]])\nsage: M.fcp()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\n\n```\n\nand \n\n```\nsage: R.<x>=RR[x]\nsage: ((x-1)^2).factor()\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: a=((x-1)^2).factor()\nsage: a\n(1.00000000000000*x - 1.00000000000000) * (1.00000000000000*x - 1.00000000000000)\nsage: a[0]\n(1.00000000000000*x - 1.00000000000000, 1)\nsage: a[0]==a[1]\nTrue\nsage: var('x')\nx\nsage: Q.<x>=QQ[x]\nsage: ((x-1)^2).factor()\n(x - 1)^2\n```",
     "created_at": "2008-01-19T06:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ archive/issue_comments_010778.json:
 ```
 
 More data from Sage 2.9.3 which might shed some light on the problem:
-
 
 ```
 sage: M=Matrix(ZZ,[[1,0],[0,1]])
@@ -118,9 +115,7 @@ sage: M.fcp()
 
 ```
 
-
 and 
-
 
 ```
 sage: R.<x>=RR[x]
@@ -139,7 +134,6 @@ sage: Q.<x>=QQ[x]
 sage: ((x-1)^2).factor()
 (x - 1)^2
 ```
-
 
 
 

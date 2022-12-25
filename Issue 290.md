@@ -3,7 +3,7 @@
 archive/issues_000290.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nQQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\n\n(Reported by cwitty)\n\nIssue created by migration from https://trac.sagemath.org/ticket/290\n\n",
+    "body": "Assignee: somebody\n\n```\nQQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\n(Reported by cwitty)\n\nIssue created by migration from https://trac.sagemath.org/ticket/290\n\n",
     "created_at": "2007-02-24T05:04:12Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_000290.json:
 ```
 Assignee: somebody
 
-
 ```
 QQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))
 <type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational
 ```
-
 
 (Reported by cwitty)
 
@@ -91,7 +89,7 @@ archive/issue_events_000656.json:
 archive/issue_comments_001363.json:
 ```json
 {
-    "body": "This is still an issue with 2.8.2pre:\n\n```\nsage: QQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/multi_polynomial_libsingular.pyx in multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-packages/sage/rings/rational_field.py in __call__(self, x, base)\n    178         if isinstance(x, sage.rings.rational.Rational):\n    179             return x\n--> 180         return sage.rings.rational.Rational(x, base)\n    181\n    182     def construction(self):\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/rational.pyx in rational.Rational.__init__()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/rational.pyx in rational.Rational.__set_value()\n\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\n\nI would like to tag this for 2.9 - malb do you agree or would you like to postpone this?\n\nCheers,\n\nMichael",
+    "body": "This is still an issue with 2.8.2pre:\n\n```\nsage: QQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/multi_polynomial_libsingular.pyx in multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-packages/sage/rings/rational_field.py in __call__(self, x, base)\n    178         if isinstance(x, sage.rings.rational.Rational):\n    179             return x\n--> 180         return sage.rings.rational.Rational(x, base)\n    181\n    182     def construction(self):\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/rational.pyx in rational.Rational.__init__()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.1/rational.pyx in rational.Rational.__set_value()\n\n<type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational\n```\n\nI would like to tag this for 2.9 - malb do you agree or would you like to postpone this?\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T10:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_comment",
@@ -124,7 +122,6 @@ sage: QQxy.<x, y> = QQ['x', 'y']; QQxy(pari(x+y))
 
 <type 'exceptions.TypeError'>: Unable to coerce x + y (<type 'sage.libs.pari.gen.gen'>) to Rational
 ```
-
 
 I would like to tag this for 2.9 - malb do you agree or would you like to postpone this?
 

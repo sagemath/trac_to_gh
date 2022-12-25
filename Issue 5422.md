@@ -51,7 +51,7 @@ polynomial of a quadratic form patch
 archive/issue_comments_041869.json:
 ```json
 {
-    "body": "Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by @williamstein created at 2009-03-16 00:24:02\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\n\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\n\nto \n\n```\npolynomial(self, names='x'):\n```\n\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
+    "body": "Attachment [11731.patch](tarball://root/attachments/some-uuid/ticket5422/11731.patch) by @williamstein created at 2009-03-16 00:24:02\n\nREFEREE REPORT:\n\n\n* change it to \n\n```\n  EXAMPLES::\n  \n      sage: stuff\n```\nfor the new ReST format.\n\n* Don't hardcode only x, i.e., change this:\n\n```\npolynomial(self):\n```\nto \n\n```\npolynomial(self, names='x'):\n```\n\nYes, \"names\" sounds funny, but is traditional in sage for this.\n\n* Change \"Input:\" and \"Output:\" to be all caps and on their own line, like in the rest of sage. \n\n* This is silly code `[R.gens()[i] for i in range(n)]` because `R.gens()` is almost the same thing.  If you really need a list do `list(R.gens())`.\n\n* This worries me: `(M*V).dot_product(V) `.  Should it be `(V*M).dot_product(V)`?",
     "created_at": "2009-03-16T00:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ REFEREE REPORT:
   
       sage: stuff
 ```
-
 for the new ReST format.
 
 * Don't hardcode only x, i.e., change this:
@@ -80,13 +79,11 @@ for the new ReST format.
 ```
 polynomial(self):
 ```
-
 to 
 
 ```
 polynomial(self, names='x'):
 ```
-
 
 Yes, "names" sounds funny, but is traditional in sage for this.
 
@@ -433,7 +430,7 @@ Resolution: fixed
 archive/issue_comments_041887.json:
 ```json
 {
-    "body": "I have some issues with this patch, which I hope will get fixed in a followup patch:\n\n1. The ReST formatting is wrong for the list of inputs:\n\n```\n        1125\t            -'self' - a quadratic form over a commatitive ring. \n \t1126\t            -'names' - the name of the variables. Digits will be appended to the name for each different canonical \n \t1127\t            variable e.g x1, x2, x3 etc. \n```\n\nbut it should be\n\n```\n        1125\t            - 'self' - a quadratic form over a commatitive ring. \n \t1126\t            - 'names' - the name of the variables. Digits will be appended to the name for each different canonical \n \t1127\t              variable e.g x1, x2, x3 etc. \n```\n\n\nNote the space after dash and the matching indention right before \"variable\".\n\n2. I do not like this naked except, and think except: should almost never be used in Python:\n\n```\n        1160\t        try: \n \t1161\t            R = PolynomialRing(self.base_ring(),names,n) \n \t1162\t        except: \n \t1163\t            raise ValueError, 'Can only create polynomial rings over commutative rings.' \n```\n\nHow do you know that the error in creating the polynomial ring was due to poly ring not working because the ring is not commutative?   I would actually recommend just changing the above to:\n\n```\n                    R = PolynomialRing(self.base_ring(),names,n)\n```\n\nand completely get rid of the exception.     A proper exception will get raised by the PolynomialRing function itself.",
+    "body": "I have some issues with this patch, which I hope will get fixed in a followup patch:\n\n1. The ReST formatting is wrong for the list of inputs:\n\n```\n        1125\t            -'self' - a quadratic form over a commatitive ring. \n \t1126\t            -'names' - the name of the variables. Digits will be appended to the name for each different canonical \n \t1127\t            variable e.g x1, x2, x3 etc. \n```\nbut it should be\n\n```\n        1125\t            - 'self' - a quadratic form over a commatitive ring. \n \t1126\t            - 'names' - the name of the variables. Digits will be appended to the name for each different canonical \n \t1127\t              variable e.g x1, x2, x3 etc. \n```\n\nNote the space after dash and the matching indention right before \"variable\".\n\n2. I do not like this naked except, and think except: should almost never be used in Python:\n\n```\n        1160\t        try: \n \t1161\t            R = PolynomialRing(self.base_ring(),names,n) \n \t1162\t        except: \n \t1163\t            raise ValueError, 'Can only create polynomial rings over commutative rings.' \n```\nHow do you know that the error in creating the polynomial ring was due to poly ring not working because the ring is not commutative?   I would actually recommend just changing the above to:\n\n```\n                    R = PolynomialRing(self.base_ring(),names,n)\n```\nand completely get rid of the exception.     A proper exception will get raised by the PolynomialRing function itself.",
     "created_at": "2010-11-22T23:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5422",
     "type": "issue_comment",
@@ -451,7 +448,6 @@ I have some issues with this patch, which I hope will get fixed in a followup pa
  	1126	            -'names' - the name of the variables. Digits will be appended to the name for each different canonical 
  	1127	            variable e.g x1, x2, x3 etc. 
 ```
-
 but it should be
 
 ```
@@ -459,7 +455,6 @@ but it should be
  	1126	            - 'names' - the name of the variables. Digits will be appended to the name for each different canonical 
  	1127	              variable e.g x1, x2, x3 etc. 
 ```
-
 
 Note the space after dash and the matching indention right before "variable".
 
@@ -471,11 +466,9 @@ Note the space after dash and the matching indention right before "variable".
  	1162	        except: 
  	1163	            raise ValueError, 'Can only create polynomial rings over commutative rings.' 
 ```
-
 How do you know that the error in creating the polynomial ring was due to poly ring not working because the ring is not commutative?   I would actually recommend just changing the above to:
 
 ```
                     R = PolynomialRing(self.base_ring(),names,n)
 ```
-
 and completely get rid of the exception.     A proper exception will get raised by the PolynomialRing function itself.

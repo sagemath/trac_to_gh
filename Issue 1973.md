@@ -52,7 +52,7 @@ Attachment [conjugate-partition.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_012740.json:
 ```json
 {
-    "body": "I'd say it's an improvement, but it may be better to avoid code duplication with the following:\n\n\n```\nsage: Partition([3,1]).conjugate()\n[2, 1, 1]\n```\n",
+    "body": "I'd say it's an improvement, but it may be better to avoid code duplication with the following:\n\n```\nsage: Partition([3,1]).conjugate()\n[2, 1, 1]\n```",
     "created_at": "2008-01-29T17:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -63,12 +63,10 @@ archive/issue_comments_012740.json:
 
 I'd say it's an improvement, but it may be better to avoid code duplication with the following:
 
-
 ```
 sage: Partition([3,1]).conjugate()
 [2, 1, 1]
 ```
-
 
 
 
@@ -77,7 +75,7 @@ sage: Partition([3,1]).conjugate()
 archive/issue_comments_012741.json:
 ```json
 {
-    "body": "With the patch:\n\n\n```\nsage: %timeit partition_associated([6,5,5,4,2,2,1])\n100000 loops, best of 3: 9.21 \u00b5s per loop\nsage: %timeit Partition([6,5,5,4,2,2,1]).conjugate()\n10000 loops, best of 3: 154 \u00b5s per loop\nsage: a=Partition([6,5,5,4,2,2,1])\nsage: %timeit a.conjugate()\n1000 loops, best of 3: 268 \u00b5s per loop\n```\n\n\nSo I'll probably delete the partition_associated function and replace the Partition.conjugate() function, if that's all right, and post up another patch.",
+    "body": "With the patch:\n\n```\nsage: %timeit partition_associated([6,5,5,4,2,2,1])\n100000 loops, best of 3: 9.21 \u00b5s per loop\nsage: %timeit Partition([6,5,5,4,2,2,1]).conjugate()\n10000 loops, best of 3: 154 \u00b5s per loop\nsage: a=Partition([6,5,5,4,2,2,1])\nsage: %timeit a.conjugate()\n1000 loops, best of 3: 268 \u00b5s per loop\n```\n\nSo I'll probably delete the partition_associated function and replace the Partition.conjugate() function, if that's all right, and post up another patch.",
     "created_at": "2008-01-29T18:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -88,7 +86,6 @@ archive/issue_comments_012741.json:
 
 With the patch:
 
-
 ```
 sage: %timeit partition_associated([6,5,5,4,2,2,1])
 100000 loops, best of 3: 9.21 µs per loop
@@ -98,7 +95,6 @@ sage: a=Partition([6,5,5,4,2,2,1])
 sage: %timeit a.conjugate()
 1000 loops, best of 3: 268 µs per loop
 ```
-
 
 So I'll probably delete the partition_associated function and replace the Partition.conjugate() function, if that's all right, and post up another patch.
 
@@ -130,7 +126,7 @@ You can modify Partition_class.conjugate, but make sure you return Partition_cla
 archive/issue_comments_012743.json:
 ```json
 {
-    "body": "Some timings after I put my code into partition.py:\n\n\n```\n[15:42] <jason-> sage: a=Partition(sum([[i]*20 for i in range(50,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 980 50\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 100 loops, best of 3: 3.34 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 100 loops, best of 3: 3.25 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 100 loops, best of 3: 3.05 ms per loop\n[15:42] <jason-> sage: a=Partition(sum([[i]*2 for i in range(5000,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 9998 5000\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 10 loops, best of 3: 246 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 10 loops, best of 3: 34.8 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 10 loops, best of 3: 32.4 ms per loop\n[15:42] <jason-> we both win this time.\n[15:42] <jason-> 'mikeandjason' is making a few slight modifications to your algorithm (like using .extend instead of +=, etc.)\n```\n\n\nSo I'll post a minor patch to Mike's code.",
+    "body": "Some timings after I put my code into partition.py:\n\n```\n[15:42] <jason-> sage: a=Partition(sum([[i]*20 for i in range(50,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 980 50\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 100 loops, best of 3: 3.34 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 100 loops, best of 3: 3.25 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 100 loops, best of 3: 3.05 ms per loop\n[15:42] <jason-> sage: a=Partition(sum([[i]*2 for i in range(5000,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 9998 5000\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 10 loops, best of 3: 246 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 10 loops, best of 3: 34.8 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 10 loops, best of 3: 32.4 ms per loop\n[15:42] <jason-> we both win this time.\n[15:42] <jason-> 'mikeandjason' is making a few slight modifications to your algorithm (like using .extend instead of +=, etc.)\n```\n\nSo I'll post a minor patch to Mike's code.",
     "created_at": "2008-01-29T21:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -140,7 +136,6 @@ archive/issue_comments_012743.json:
 ```
 
 Some timings after I put my code into partition.py:
-
 
 ```
 [15:42] <jason-> sage: a=Partition(sum([[i]*20 for i in range(50,1,-1)],[]))
@@ -164,7 +159,6 @@ Some timings after I put my code into partition.py:
 [15:42] <jason-> we both win this time.
 [15:42] <jason-> 'mikeandjason' is making a few slight modifications to your algorithm (like using .extend instead of +=, etc.)
 ```
-
 
 So I'll post a minor patch to Mike's code.
 
@@ -357,7 +351,7 @@ archive/issue_events_004772.json:
 archive/issue_comments_012752.json:
 ```json
 {
-    "body": "The following is probably trivial to fix:\n\n```\n\nException exceptions.ImportError: 'cannot import name is_FractionFieldElement' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n```\n\nbut it happens after a `sage -ba`\n\nCheers,\n\nMichael",
+    "body": "The following is probably trivial to fix:\n\n```\n\nException exceptions.ImportError: 'cannot import name is_FractionFieldElement' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n```\nbut it happens after a `sage -ba`\n\nCheers,\n\nMichael",
     "created_at": "2008-01-30T04:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1973",
     "type": "issue_comment",
@@ -374,7 +368,6 @@ Exception exceptions.ImportError: 'cannot import name is_FractionFieldElement' i
 ---------------------------------------------------------------------------
 <type 'exceptions.AttributeError'>        Traceback (most recent call last)
 ```
-
 but it happens after a `sage -ba`
 
 Cheers,

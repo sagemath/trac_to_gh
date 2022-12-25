@@ -3,7 +3,7 @@
 archive/issues_001960.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis bug was reported by James Carlson:\n\n\n```\nsage: R.<u,v> = PolynomialRing(QQ)\nsage: g = u^4 + v^4 + u^3 + v^3\nsage: I = ideal(g) + ideal(g.jacob())\nsage: I.dimension()\n0\nsage: PD = I.primary_decomposition()\nsage: len(PD)\n1\nsage: P = PD[0]\nsage: I == P\nTrue\nsage: I.vector_space_dimension()\n9 \nsage: P.vector_space_dimension()\n4 # <<<<<<<<<<<<< doesn't match\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1960\n\n",
+    "body": "Assignee: @malb\n\nThis bug was reported by James Carlson:\n\n```\nsage: R.<u,v> = PolynomialRing(QQ)\nsage: g = u^4 + v^4 + u^3 + v^3\nsage: I = ideal(g) + ideal(g.jacob())\nsage: I.dimension()\n0\nsage: PD = I.primary_decomposition()\nsage: len(PD)\n1\nsage: P = PD[0]\nsage: I == P\nTrue\nsage: I.vector_space_dimension()\n9 \nsage: P.vector_space_dimension()\n4 # <<<<<<<<<<<<< doesn't match\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1960\n\n",
     "created_at": "2008-01-28T14:48:54Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ archive/issues_001960.json:
 Assignee: @malb
 
 This bug was reported by James Carlson:
-
 
 ```
 sage: R.<u,v> = PolynomialRing(QQ)
@@ -39,7 +38,6 @@ sage: I.vector_space_dimension()
 sage: P.vector_space_dimension()
 4 # <<<<<<<<<<<<< doesn't match
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1960
 

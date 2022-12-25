@@ -262,7 +262,7 @@ Clearly this needs substantial work.  I'm also deleting the two patches and putt
 archive/issue_comments_089453.json:
 ```json
 {
-    "body": "Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by @williamstein created at 2011-07-28 19:37:51\n\n**WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:\n\nhttp://code.google.com/p/purplesage/source/browse/#hg%2Fpsage%2Fellcurve%2Flseries\n\nHaving just written that code in psage (which involved going through the code on this ticket), I would definitely not recommend including the current code in Sage with a major rewrite.   For example, code like this in the patch:\n\n```\n    s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) \n    L.init_coeffs('a(k)', pari_precode = s)    \n```\n\nis just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.",
+    "body": "Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by @williamstein created at 2011-07-28 19:37:51\n\n**WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:\n\nhttp://code.google.com/p/purplesage/source/browse/#hg%2Fpsage%2Fellcurve%2Flseries\n\nHaving just written that code in psage (which involved going through the code on this ticket), I would definitely not recommend including the current code in Sage with a major rewrite.   For example, code like this in the patch:\n\n```\n    s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) \n    L.init_coeffs('a(k)', pari_precode = s)    \n```\nis just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.",
     "created_at": "2011-07-28T19:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
@@ -283,7 +283,6 @@ Having just written that code in psage (which involved going through the code on
     s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) 
     L.init_coeffs('a(k)', pari_precode = s)    
 ```
-
 is just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.
 
 

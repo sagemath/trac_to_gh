@@ -217,7 +217,7 @@ Note that since several other spkgs use NTL (for example, eclib), someone should
 archive/issue_comments_044697.json:
 ```json
 {
-    "body": "I have been using ntl-5.5.2 in sage-on-gentoo since\n\n```\n     Mon Nov  9 10:55:35 2009 >>> dev-libs/ntl-5.5.2\n       merge time: 10 minutes and 27 seconds.                                                                                       \n```\n\nthe following depend on ntl:\n* flint\n* singular\n* linbox\n* eclib\n* sage (through c_lib and several extensions so sage -ba is required)\n\nI have rebuild/updated all of those since 2009 so I don't expect any shocking results.",
+    "body": "I have been using ntl-5.5.2 in sage-on-gentoo since\n\n```\n     Mon Nov  9 10:55:35 2009 >>> dev-libs/ntl-5.5.2\n       merge time: 10 minutes and 27 seconds.                                                                                       \n```\nthe following depend on ntl:\n* flint\n* singular\n* linbox\n* eclib\n* sage (through c_lib and several extensions so sage -ba is required)\n\nI have rebuild/updated all of those since 2009 so I don't expect any shocking results.",
     "created_at": "2011-03-23T00:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
@@ -232,7 +232,6 @@ I have been using ntl-5.5.2 in sage-on-gentoo since
      Mon Nov  9 10:55:35 2009 >>> dev-libs/ntl-5.5.2
        merge time: 10 minutes and 27 seconds.                                                                                       
 ```
-
 the following depend on ntl:
 * flint
 * singular
@@ -431,7 +430,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_044706.json:
 ```json
 {
-    "body": "Replying to [comment:14 cremona]:\n> I am checking this now.\n> \n> John\n\nI started with a fresh build of 4.7.1.alpha0 which passes all tests;  built the new spkg here (with SAGE_CHECK=yes\"); did \"sage -ba\" followed by \"sage -t -long\", and all tests pass.\n\nThe spkg itself is ok (though there's a typo \"numbery\" in the README, and William should probably not be the only spkg maintainer listed), so I am giving this a positive review and hop that it can go into the next alpha form 4.7.1.",
+    "body": "Replying to [comment:14 cremona]:\n> I am checking this now.\n> \n> John\n\n\nI started with a fresh build of 4.7.1.alpha0 which passes all tests;  built the new spkg here (with SAGE_CHECK=yes\"); did \"sage -ba\" followed by \"sage -t -long\", and all tests pass.\n\nThe spkg itself is ok (though there's a typo \"numbery\" in the README, and William should probably not be the only spkg maintainer listed), so I am giving this a positive review and hop that it can go into the next alpha form 4.7.1.",
     "created_at": "2011-06-01T12:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
@@ -444,6 +443,7 @@ Replying to [comment:14 cremona]:
 > I am checking this now.
 > 
 > John
+
 
 I started with a fresh build of 4.7.1.alpha0 which passes all tests;  built the new spkg here (with SAGE_CHECK=yes"); did "sage -ba" followed by "sage -t -long", and all tests pass.
 

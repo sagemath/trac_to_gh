@@ -3,7 +3,7 @@
 archive/issues_008784.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nIt is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function \"quit_sage()\" available at the sage: prompt by default that does not quit sage, is dumb. \n\n```\nwstein@boxen:~/build/sage-4.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: quit_sage()\nExiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).\nsage: quit\nExiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).\n/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython \"$@\" -i\nwstein@boxen:~/build/sage-4.4$            \n```\n\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix is to rename quit_sage() somehow and change *all* code that calls it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8784\n\n",
+    "body": "Assignee: @jasongrout\n\nIt is stupid that it is this easy to accidentally destabilize and segfault Sage.    Also, having a function \"quit_sage()\" available at the sage: prompt by default that does not quit sage, is dumb. \n\n```\nwstein@boxen:~/build/sage-4.4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: quit_sage()\nExiting Sage (CPU time 0m0.04s, Wall time 0m3.16s).\nsage: quit\nExiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).\n/virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython \"$@\" -i\nwstein@boxen:~/build/sage-4.4$            \n```\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix is to rename quit_sage() somehow and change *all* code that calls it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8784\n\n",
     "created_at": "2010-04-27T20:47:41Z",
     "labels": [
         "component: misc",
@@ -31,7 +31,6 @@ Exiting Sage (CPU time 0m0.07s, Wall time 0m4.80s).
 /virtual/scratch/wstein/build/sage-4.4/local/bin/sage-sage: line 206: 11559 Segmentation fault      sage-ipython "$@" -i
 wstein@boxen:~/build/sage-4.4$            
 ```
-
 | Sage Version 4.4, Release Date: 2010-04-24                         |
 | Type notebook() for the GUI, and license() for information.        |
 The fix is to rename quit_sage() somehow and change *all* code that calls it. 
@@ -184,7 +183,7 @@ archive/issue_events_021415.json:
 archive/issue_comments_080291.json:
 ```json
 {
-    "body": "Now all of the cleanup happens automatically and `quit_sage()` is a no-op:\n\n\n```\nsage: quit_sage()\n<ipython-input-1-ce1781e96a1f>:1: DeprecationWarning: quit_sage is deprecated and now does nothing; please simply delete it\nSee http://trac.sagemath.org/8784 for details.\n  quit_sage()\nsage:\n```\n\n----\nNew commits:",
+    "body": "Now all of the cleanup happens automatically and `quit_sage()` is a no-op:\n\n```\nsage: quit_sage()\n<ipython-input-1-ce1781e96a1f>:1: DeprecationWarning: quit_sage is deprecated and now does nothing; please simply delete it\nSee http://trac.sagemath.org/8784 for details.\n  quit_sage()\nsage:\n```\n\n---\nNew commits:",
     "created_at": "2022-01-25T22:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
@@ -195,7 +194,6 @@ archive/issue_comments_080291.json:
 
 Now all of the cleanup happens automatically and `quit_sage()` is a no-op:
 
-
 ```
 sage: quit_sage()
 <ipython-input-1-ce1781e96a1f>:1: DeprecationWarning: quit_sage is deprecated and now does nothing; please simply delete it
@@ -204,7 +202,7 @@ See http://trac.sagemath.org/8784 for details.
 sage:
 ```
 
-----
+---
 New commits:
 
 
@@ -284,7 +282,7 @@ Does this mean that `sage-cleaner` may go, too?
 archive/issue_comments_080294.json:
 ```json
 {
-    "body": "Replying to [comment:8 dimpase]:\n> Does this mean that `sage-cleaner` may go, too?\n\nNot yet, although that's another long-term goal of mine. sage-cleaner also cleans up \"temporary\" files, which it wouldn't have to do if we used the OS's built-in tempfile functions instead of our home-grown `SAGE_TMP`. The first and easiest part of that cleanup is #33213.",
+    "body": "Replying to [comment:8 dimpase]:\n> Does this mean that `sage-cleaner` may go, too?\n\n\nNot yet, although that's another long-term goal of mine. sage-cleaner also cleans up \"temporary\" files, which it wouldn't have to do if we used the OS's built-in tempfile functions instead of our home-grown `SAGE_TMP`. The first and easiest part of that cleanup is #33213.",
     "created_at": "2022-01-31T14:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
@@ -296,6 +294,7 @@ archive/issue_comments_080294.json:
 Replying to [comment:8 dimpase]:
 > Does this mean that `sage-cleaner` may go, too?
 
+
 Not yet, although that's another long-term goal of mine. sage-cleaner also cleans up "temporary" files, which it wouldn't have to do if we used the OS's built-in tempfile functions instead of our home-grown `SAGE_TMP`. The first and easiest part of that cleanup is #33213.
 
 
@@ -305,7 +304,7 @@ Not yet, although that's another long-term goal of mine. sage-cleaner also clean
 archive/issue_comments_080295.json:
 ```json
 {
-    "body": "Replying to [comment:8 dimpase]:\n> Does this mean that `sage-cleaner` may go, too?\n\nOk, I actually did this in #33213, which now depends on this ticket.",
+    "body": "Replying to [comment:8 dimpase]:\n> Does this mean that `sage-cleaner` may go, too?\n\n\nOk, I actually did this in #33213, which now depends on this ticket.",
     "created_at": "2022-02-18T00:31:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8784",
     "type": "issue_comment",
@@ -316,6 +315,7 @@ archive/issue_comments_080295.json:
 
 Replying to [comment:8 dimpase]:
 > Does this mean that `sage-cleaner` may go, too?
+
 
 Ok, I actually did this in #33213, which now depends on this ticket.
 

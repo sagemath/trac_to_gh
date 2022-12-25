@@ -3,7 +3,7 @@
 archive/issues_002649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry the following:\n\n```\nsage: D = {}\nsage: matrix(D)\n```\n\nCurrently this throws an exception.  With this patch, it returns [0] when it should return [].  I don't know how to fix this, so I will open a separate ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2649\n\n",
+    "body": "Assignee: @williamstein\n\nTry the following:\n\n```\nsage: D = {}\nsage: matrix(D)\n```\nCurrently this throws an exception.  With this patch, it returns [0] when it should return [].  I don't know how to fix this, so I will open a separate ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2649\n\n",
     "created_at": "2008-03-22T19:26:58Z",
     "labels": [
         "component: linear algebra",
@@ -24,7 +24,6 @@ Try the following:
 sage: D = {}
 sage: matrix(D)
 ```
-
 Currently this throws an exception.  With this patch, it returns [0] when it should return [].  I don't know how to fix this, so I will open a separate ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2649

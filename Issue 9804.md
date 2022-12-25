@@ -3,7 +3,7 @@
 archive/issues_009804.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nTry\n\n```\nsave_session('foo')\n```\n\nin the notebook.  Boom!\n\nThe problem is these lines in misc/session.pyx:\n\n```\n    if embedded():\n        # Also save D to the data directory if we're using the notebook.\n        save(D, '../../data/' + name)\n```\n\n\nWhen I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data\ndirectory (which is defined by the variable DATA in the notebook).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9805\n\n",
+    "body": "Assignee: jason, was\n\nTry\n\n```\nsave_session('foo')\n```\nin the notebook.  Boom!\n\nThe problem is these lines in misc/session.pyx:\n\n```\n    if embedded():\n        # Also save D to the data directory if we're using the notebook.\n        save(D, '../../data/' + name)\n```\n\nWhen I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data\ndirectory (which is defined by the variable DATA in the notebook).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9805\n\n",
     "created_at": "2010-08-26T03:09:59Z",
     "labels": [
         "component: notebook",
@@ -23,7 +23,6 @@ Try
 ```
 save_session('foo')
 ```
-
 in the notebook.  Boom!
 
 The problem is these lines in misc/session.pyx:
@@ -33,7 +32,6 @@ The problem is these lines in misc/session.pyx:
         # Also save D to the data directory if we're using the notebook.
         save(D, '../../data/' + name)
 ```
-
 
 When I rewrote the notebook I forgot to change this appropriately.  I'm not sure exactly what the right fix is, but it is to somehow replace '../../data/' by the data
 directory (which is defined by the variable DATA in the notebook).
@@ -224,7 +222,7 @@ Actually, this is pretty nice.  It tells of a workaround that is not onerous and
 archive/issue_comments_096173.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Actually, this is pretty nice.  It tells of a workaround that is not onerous and should be familiar to people using the notebook.  What do you think, in retrospect?\nI don't even remember why I tried to patch this. If you think it is useful, I can create the git branch.",
+    "body": "Replying to [comment:6 kcrisman]:\n> Actually, this is pretty nice.  It tells of a workaround that is not onerous and should be familiar to people using the notebook.  What do you think, in retrospect?\n\nI don't even remember why I tried to patch this. If you think it is useful, I can create the git branch.",
     "created_at": "2014-08-17T06:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
@@ -235,6 +233,7 @@ archive/issue_comments_096173.json:
 
 Replying to [comment:6 kcrisman]:
 > Actually, this is pretty nice.  It tells of a workaround that is not onerous and should be familiar to people using the notebook.  What do you think, in retrospect?
+
 I don't even remember why I tried to patch this. If you think it is useful, I can create the git branch.
 
 
@@ -244,7 +243,7 @@ I don't even remember why I tried to patch this. If you think it is useful, I ca
 archive/issue_comments_096174.json:
 ```json
 {
-    "body": "Interestingly, this works even if you *don't* save the worksheet - the cells that one made new disappear, but the sobj still appears.  This works nicely.\n\nIn this one case I am not sure if a doctest is useful - can you think of a viable one?\n----\nNew commits:",
+    "body": "Interestingly, this works even if you *don't* save the worksheet - the cells that one made new disappear, but the sobj still appears.  This works nicely.\n\nIn this one case I am not sure if a doctest is useful - can you think of a viable one?\n\n---\nNew commits:",
     "created_at": "2014-10-22T18:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9804",
     "type": "issue_comment",
@@ -256,7 +255,8 @@ archive/issue_comments_096174.json:
 Interestingly, this works even if you *don't* save the worksheet - the cells that one made new disappear, but the sobj still appears.  This works nicely.
 
 In this one case I am not sure if a doctest is useful - can you think of a viable one?
-----
+
+---
 New commits:
 
 

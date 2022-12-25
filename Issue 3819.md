@@ -3,7 +3,7 @@
 archive/issues_003819.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\nReported by John Cremona:\n\n```\n*******************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1507:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.57984822577934747\nGot:\n    0.57984822577934769\n**********************************************************************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1515:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.2861023256237053\nGot:\n    0.28610232562370524\n**********************************************************************\n1 items had failures:\n   2 of  16 in __main__.example_46\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file\n/home/john/sage-3.1.alpha1/tmp/.doctest_time_series.py\n         [9.8 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3819\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\nReported by John Cremona:\n\n```\n*******************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1507:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.57984822577934747\nGot:\n    0.57984822577934769\n**********************************************************************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1515:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.2861023256237053\nGot:\n    0.28610232562370524\n**********************************************************************\n1 items had failures:\n   2 of  16 in __main__.example_46\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file\n/home/john/sage-3.1.alpha1/tmp/.doctest_time_series.py\n         [9.8 s]\nexit code: 1024\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3819\n\n",
     "created_at": "2008-08-12T15:33:51Z",
     "labels": [
         "component: doctest coverage",
@@ -46,7 +46,6 @@ For whitespace errors, see the file
          [9.8 s]
 exit code: 1024
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3819
 

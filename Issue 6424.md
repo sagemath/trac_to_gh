@@ -3,7 +3,7 @@
 archive/issues_006424.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nAs a comment related to trac item 6423, \n\n*By the way, evidently one can no longer convert I=sqrt(-1) to sympy:*\n\n```\nsage: (x+sqrt(2))._sympy_()\nx + 2**(1/2)\nsage: (x+I)._sympy_()\nSympifyError: SympifyError: I is NOT a valid SymPy expression\n```\n\n\nHe wanted this, and the other issue reported as TRAC tickets, but was busy writing a talk. \n\nI don't feel able to comment much more on this, and personally don't intend trying to fix it (outside my knowledge), so I've just reported it.\n\nCan someone else please add appropriate priority, milestones, keywords etc, as this is completely outside my comfort zone.\n\nDavid Kirkby\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6424\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nAs a comment related to trac item 6423, \n\n*By the way, evidently one can no longer convert I=sqrt(-1) to sympy:*\n\n```\nsage: (x+sqrt(2))._sympy_()\nx + 2**(1/2)\nsage: (x+I)._sympy_()\nSympifyError: SympifyError: I is NOT a valid SymPy expression\n```\n\nHe wanted this, and the other issue reported as TRAC tickets, but was busy writing a talk. \n\nI don't feel able to comment much more on this, and personally don't intend trying to fix it (outside my knowledge), so I've just reported it.\n\nCan someone else please add appropriate priority, milestones, keywords etc, as this is completely outside my comfort zone.\n\nDavid Kirkby\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6424\n\n",
     "created_at": "2009-06-26T15:02:01Z",
     "labels": [
         "component: algebra",
@@ -30,7 +30,6 @@ x + 2**(1/2)
 sage: (x+I)._sympy_()
 SympifyError: SympifyError: I is NOT a valid SymPy expression
 ```
-
 
 He wanted this, and the other issue reported as TRAC tickets, but was busy writing a talk. 
 

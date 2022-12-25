@@ -50,7 +50,7 @@ This ticket depends on #6251, which has been merged in 4.1.1.alpha1.
 archive/issue_comments_054165.json:
 ```json
 {
-    "body": "Replying to [comment:1 ddrake]:\n> This ticket depends on #6251, which has been merged in 4.1.1.alpha1.\n\nAck. No, that's wrong. It *hasn't* been merged as I write this (although it almost certainly will be very soon). Also, I'm going to make a patch that depends on *both* patches at #6251.",
+    "body": "Replying to [comment:1 ddrake]:\n> This ticket depends on #6251, which has been merged in 4.1.1.alpha1.\n\n\nAck. No, that's wrong. It *hasn't* been merged as I write this (although it almost certainly will be very soon). Also, I'm going to make a patch that depends on *both* patches at #6251.",
     "created_at": "2009-07-26T08:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6624",
     "type": "issue_comment",
@@ -61,6 +61,7 @@ archive/issue_comments_054165.json:
 
 Replying to [comment:1 ddrake]:
 > This ticket depends on #6251, which has been merged in 4.1.1.alpha1.
+
 
 Ack. No, that's wrong. It *hasn't* been merged as I write this (although it almost certainly will be very soon). Also, I'm going to make a patch that depends on *both* patches at #6251.
 

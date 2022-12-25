@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9211
 archive/issue_comments_086138.json:
 ```json
 {
-    "body": "Here is a good example showing the problem (still):\n\n\n```\na=matrix([[1,2],[3,4]])\n\nvar('x y z w')\nb=matrix([[x,y],[z,w]])\n\na.set_immutable()\nb.set_immutable()\n\nK=DiGraph({a:[b]})\nshow(K, vertex_size=800)\n\n```\n",
+    "body": "Here is a good example showing the problem (still):\n\n```\na=matrix([[1,2],[3,4]])\n\nvar('x y z w')\nb=matrix([[x,y],[z,w]])\n\na.set_immutable()\nb.set_immutable()\n\nK=DiGraph({a:[b]})\nshow(K, vertex_size=800)\n\n```",
     "created_at": "2010-06-11T06:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -47,7 +47,6 @@ archive/issue_comments_086138.json:
 ```
 
 Here is a good example showing the problem (still):
-
 
 ```
 a=matrix([[1,2],[3,4]])
@@ -62,7 +61,6 @@ K=DiGraph({a:[b]})
 show(K, vertex_size=800)
 
 ```
-
 
 
 
@@ -311,7 +309,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086152.json:
 ```json
 {
-    "body": "Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by @ppurka created at 2011-10-11 09:57:32\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
+    "body": "Attachment [with-additional-padding.png](tarball://root/attachments/some-uuid/ticket9211/with-additional-padding.png) by @ppurka created at 2011-10-11 09:57:32\n\nAdded two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch first one] is essentially the patch by jason redone to work with 4.7.2_alpha3.\n\nThe [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of\n\n```\nM = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])\nG=DiGraph(M, format='weighted_adjacency_matrix')\nG.show(vertex_size=800, edge_labels=True)\n```\n\nThe file [attachment:with-additional-padding.png] is the result of both the patches being applied.\n\nGraphs currently look really bad without either of the two patches. The second patch is not a panacea for all cut off graph plots since it doesn't fix all cases. But my hope is that it fixes most commonly used cases.",
     "created_at": "2011-10-11T09:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -326,13 +324,11 @@ Added two patches. The [attachment:trac-9211-fix_cut_vertices_in_graphs.patch fi
 
 The [attachment:trac-9211-add_padding_to_graphs.patch second patch] adds extra padding to all graphs. The two pngs attached are the output of
 
-
 ```
 M = matrix(RDF, [[1/3, 1/3, 1/3], [0, 1/4, 3/4], [1/2, 1/4, 1/4]])
 G=DiGraph(M, format='weighted_adjacency_matrix')
 G.show(vertex_size=800, edge_labels=True)
 ```
-
 
 The file [attachment:with-additional-padding.png] is the result of both the patches being applied.
 
@@ -363,7 +359,7 @@ I'm curious why you need the extra padding patch.  Are vertices still cut off us
 archive/issue_comments_086154.json:
 ```json
 {
-    "body": "Replying to [comment:12 jason]:\n\n> I'm curious why you need the extra padding patch.  Are vertices still cut off using just the first patch?\n\nYes. Check [attachment:with-earlier-patch-modified-for-4.7.2.png the plot after the first patch] against the [attachment:with-additional-padding.png the plot after first+second patch]",
+    "body": "Replying to [comment:12 jason]:\n\n> I'm curious why you need the extra padding patch.  Are vertices still cut off using just the first patch?\n\n\nYes. Check [attachment:with-earlier-patch-modified-for-4.7.2.png the plot after the first patch] against the [attachment:with-additional-padding.png the plot after first+second patch]",
     "created_at": "2011-10-11T13:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -375,6 +371,7 @@ archive/issue_comments_086154.json:
 Replying to [comment:12 jason]:
 
 > I'm curious why you need the extra padding patch.  Are vertices still cut off using just the first patch?
+
 
 Yes. Check [attachment:with-earlier-patch-modified-for-4.7.2.png the plot after the first patch] against the [attachment:with-additional-padding.png the plot after first+second patch]
 
@@ -441,7 +438,7 @@ Can you try applying just trac-9211-fix_cut_vertices_in_graphs.patch and  trac_9
 archive/issue_comments_086158.json:
 ```json
 {
-    "body": "Replying to [comment:15 jason]:\n\n> Can you try applying just trac-9211-fix_cut_vertices_in_graphs.patch and  trac_9211_digraph_clipping.patch ?\n\nExcellent! Thanks. This does fix the problem for digraphs. Much better than adding random paddings.",
+    "body": "Replying to [comment:15 jason]:\n\n> Can you try applying just trac-9211-fix_cut_vertices_in_graphs.patch and  trac_9211_digraph_clipping.patch ?\n\n\nExcellent! Thanks. This does fix the problem for digraphs. Much better than adding random paddings.",
     "created_at": "2011-10-11T14:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -453,6 +450,7 @@ archive/issue_comments_086158.json:
 Replying to [comment:15 jason]:
 
 > Can you try applying just trac-9211-fix_cut_vertices_in_graphs.patch and  trac_9211_digraph_clipping.patch ?
+
 
 Excellent! Thanks. This does fix the problem for digraphs. Much better than adding random paddings.
 
@@ -481,7 +479,7 @@ Okay, did you run long tests on Sage?  The new version of my first patch seems o
 archive/issue_comments_086160.json:
 ```json
 {
-    "body": "Replying to [comment:19 jason]:\n\n> Okay, did you run long tests on Sage?  The new version of my first patch seems okay to me, so if you positively review the patches, I think we are good to go, assuming that you've run long tests and there are no doctest errors.\n\nI started the long test (make ptestlong) over an hour ago. I guess there's 3 more hours to go :)",
+    "body": "Replying to [comment:19 jason]:\n\n> Okay, did you run long tests on Sage?  The new version of my first patch seems okay to me, so if you positively review the patches, I think we are good to go, assuming that you've run long tests and there are no doctest errors.\n\n\nI started the long test (make ptestlong) over an hour ago. I guess there's 3 more hours to go :)",
     "created_at": "2011-10-11T16:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -493,6 +491,7 @@ archive/issue_comments_086160.json:
 Replying to [comment:19 jason]:
 
 > Okay, did you run long tests on Sage?  The new version of my first patch seems okay to me, so if you positively review the patches, I think we are good to go, assuming that you've run long tests and there are no doctest errors.
+
 
 I started the long test (make ptestlong) over an hour ago. I guess there's 3 more hours to go :)
 
@@ -521,7 +520,7 @@ A couple of doctests failed. Only in the directory plot/ (and in the files chang
 archive/issue_comments_086162.json:
 ```json
 {
-    "body": "> A couple of doctests failed. Only in the directory plot/ (and in the files changed by this patch + base.pyx). Will investigate more once I am physically near that machine where the doctest was run.\n\nJust FYI, base.pyx often fails on Mac if you don't have libjpeg or libtiff in the right place - see #7344 and #7345.  If the errors look like \n\n```\n    ImportError: The _imaging C module is not installed\n```\n\nyou can ignore them, they would be unrelated.",
+    "body": "> A couple of doctests failed. Only in the directory plot/ (and in the files changed by this patch + base.pyx). Will investigate more once I am physically near that machine where the doctest was run.\n\n\nJust FYI, base.pyx often fails on Mac if you don't have libjpeg or libtiff in the right place - see #7344 and #7345.  If the errors look like \n\n```\n    ImportError: The _imaging C module is not installed\n```\nyou can ignore them, they would be unrelated.",
     "created_at": "2011-10-12T03:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -532,12 +531,12 @@ archive/issue_comments_086162.json:
 
 > A couple of doctests failed. Only in the directory plot/ (and in the files changed by this patch + base.pyx). Will investigate more once I am physically near that machine where the doctest was run.
 
+
 Just FYI, base.pyx often fails on Mac if you don't have libjpeg or libtiff in the right place - see #7344 and #7345.  If the errors look like 
 
 ```
     ImportError: The _imaging C module is not installed
 ```
-
 you can ignore them, they would be unrelated.
 
 
@@ -583,7 +582,7 @@ I wonder why you are concatenating lines in the doctest output - our docstrings 
 archive/issue_comments_086165.json:
 ```json
 {
-    "body": "Replying to [comment:24 kini]:\n> I wonder why you are concatenating lines in the doctest output - our docstrings are theoretically supposed to be 72 (or 79) characters wide, if I'm not mistaken, which is why they the current test results are broken into multiple lines. The doctester doesn't care about purely whitespace differences between the expected and received output.\nSimply copied the output from \"Expected output\". Will attached a space-ified fix. :)",
+    "body": "Replying to [comment:24 kini]:\n> I wonder why you are concatenating lines in the doctest output - our docstrings are theoretically supposed to be 72 (or 79) characters wide, if I'm not mistaken, which is why they the current test results are broken into multiple lines. The doctester doesn't care about purely whitespace differences between the expected and received output.\n\nSimply copied the output from \"Expected output\". Will attached a space-ified fix. :)",
     "created_at": "2011-10-12T08:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -594,6 +593,7 @@ archive/issue_comments_086165.json:
 
 Replying to [comment:24 kini]:
 > I wonder why you are concatenating lines in the doctest output - our docstrings are theoretically supposed to be 72 (or 79) characters wide, if I'm not mistaken, which is why they the current test results are broken into multiple lines. The doctester doesn't care about purely whitespace differences between the expected and received output.
+
 Simply copied the output from "Expected output". Will attached a space-ified fix. :)
 
 
@@ -663,7 +663,7 @@ Forget about the adding padding patch. Jason did the real fix. :)
 archive/issue_comments_086169.json:
 ```json
 {
-    "body": "Previous failures were:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  -long -force_lib devel/sage/sage/plot/scatter_plot.py # 1 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/text.py # 5 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/circle.py # 8 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/plot3d/base.pyx # 5 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 8844.0 seconds\n```\n\n\nNew doctest on `devel/sage/sage/plot/` passes all doctests:\n\n```\n~/Installations/sage-4.7.2> ./sage -t -long devel/sage/sage/plot\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 520.6 seconds\n```\n\nSo positive review from my side.",
+    "body": "Previous failures were:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  -long -force_lib devel/sage/sage/plot/scatter_plot.py # 1 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/text.py # 5 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/circle.py # 8 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/plot/plot3d/base.pyx # 5 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 8844.0 seconds\n```\n\nNew doctest on `devel/sage/sage/plot/` passes all doctests:\n\n```\n~/Installations/sage-4.7.2> ./sage -t -long devel/sage/sage/plot\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 520.6 seconds\n```\nSo positive review from my side.",
     "created_at": "2011-10-12T09:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9211",
     "type": "issue_comment",
@@ -687,7 +687,6 @@ The following tests failed:
 Total time for all tests: 8844.0 seconds
 ```
 
-
 New doctest on `devel/sage/sage/plot/` passes all doctests:
 
 ```
@@ -697,7 +696,6 @@ New doctest on `devel/sage/sage/plot/` passes all doctests:
 All tests passed!
 Total time for all tests: 520.6 seconds
 ```
-
 So positive review from my side.
 
 

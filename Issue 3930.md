@@ -253,7 +253,7 @@ Nathann
 archive/issue_comments_028086.json:
 ```json
 {
-    "body": "Replying to [comment:9 ncohen]:\n> Well, we now have a Python matching code #8166 . Can we close this ticket as no one as it seems abandonned ?\n\n+1",
+    "body": "Replying to [comment:9 ncohen]:\n> Well, we now have a Python matching code #8166 . Can we close this ticket as no one as it seems abandonned ?\n\n\n+1",
     "created_at": "2010-05-29T17:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3930",
     "type": "issue_comment",
@@ -264,6 +264,7 @@ archive/issue_comments_028086.json:
 
 Replying to [comment:9 ncohen]:
 > Well, we now have a Python matching code #8166 . Can we close this ticket as no one as it seems abandonned ?
+
 
 +1
 

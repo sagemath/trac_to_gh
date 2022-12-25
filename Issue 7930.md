@@ -3,7 +3,7 @@
 archive/issues_007930.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb\n\nThe following code\n\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb\n\nThe following code\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
     "created_at": "2010-01-14T15:00:57Z",
     "labels": [
         "component: elliptic curves",
@@ -22,7 +22,6 @@ CC:  @JohnCremona @williamstein @robertwb
 
 The following code
 
-
 ```
 E = EllipticCurve('99d1')
 
@@ -38,7 +37,6 @@ EL = E.base_extend(L)
 da = EL.local_data()
 ```
 
-
 produces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.
 
 
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7930
 archive/issue_comments_068917.json:
 ```json
 {
-    "body": "More precisely it produces\n\n```\nTraceback (most recent call last):    \n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpJwKYhV/___code___.py\", line 23, in <module>\n    da = EK.local_data()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 437, in local_data\n    return [self._get_local_data(pr, proof) for pr in primes]\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 487, in _get_local_data\n    self._local_data[P, proof] = EllipticCurveLocalData(self, P, proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 159, in __init__\n    self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 704, in _tate\n    cp = 1 + _pcubicroots(b, c, d)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 536, in _pcubicroots\n    return sum([rr[1] for rr in PolynomialRing(F, 'x')([d, c, b, 1]).roots()],0)\n  File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 312, in _element_constructor_\n    return C(self, x, check, is_gen, construct=construct, **kwds)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.py\", line 604, in __init__\n    Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n  File \"polynomial_element.pyx\", line 5111, in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:34951)\n  File \"residue_field.pyx\", line 975, in sage.rings.residue_field.ResidueFiniteField_givaro.__call__ (sage/rings/residue_field.c:9062)\nTypeError\n```\n",
+    "body": "More precisely it produces\n\n```\nTraceback (most recent call last):    \n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpJwKYhV/___code___.py\", line 23, in <module>\n    da = EK.local_data()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 437, in local_data\n    return [self._get_local_data(pr, proof) for pr in primes]\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 487, in _get_local_data\n    self._local_data[P, proof] = EllipticCurveLocalData(self, P, proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 159, in __init__\n    self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 704, in _tate\n    cp = 1 + _pcubicroots(b, c, d)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 536, in _pcubicroots\n    return sum([rr[1] for rr in PolynomialRing(F, 'x')([d, c, b, 1]).roots()],0)\n  File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 312, in _element_constructor_\n    return C(self, x, check, is_gen, construct=construct, **kwds)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.py\", line 604, in __init__\n    Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n  File \"polynomial_element.pyx\", line 5111, in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:34951)\n  File \"residue_field.pyx\", line 975, in sage.rings.residue_field.ResidueFiniteField_givaro.__call__ (sage/rings/residue_field.c:9062)\nTypeError\n```",
     "created_at": "2010-01-14T15:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
@@ -93,7 +91,6 @@ Traceback (most recent call last):
   File "residue_field.pyx", line 975, in sage.rings.residue_field.ResidueFiniteField_givaro.__call__ (sage/rings/residue_field.c:9062)
 TypeError
 ```
-
 
 
 

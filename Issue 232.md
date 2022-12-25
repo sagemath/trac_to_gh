@@ -3,7 +3,7 @@
 archive/issues_000232.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: python assert\n\nDifferent behavior in sage shell than in regular python shell:\n\nsage: x = 5\nsage: y = 3\nsage: assert x==y\nsage:\n\nin python:\n>>> x = 5\n>>> y = 3\n>>> assert x==y\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAssertionError\n>>>\n\nIssue created by migration from https://trac.sagemath.org/ticket/232\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: python assert\n\nDifferent behavior in sage shell than in regular python shell:\n\nsage: x = 5\nsage: y = 3\nsage: assert x==y\nsage:\n\nin python:\n>>> x = 5\n>>> y = 3\n>>> assert x==y\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAssertionError\n>>>\n\nIssue created by migration from https://trac.sagemath.org/ticket/232\n\n",
     "created_at": "2007-01-29T20:07:29Z",
     "labels": [
         "component: interfaces",
@@ -30,6 +30,7 @@ in python:
 >>> x = 5
 >>> y = 3
 >>> assert x==y
+
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AssertionError

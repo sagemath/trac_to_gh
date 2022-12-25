@@ -87,7 +87,7 @@ archive/issue_events_012683.json:
 archive/issue_comments_041970.json:
 ```json
 {
-    "body": "Looks good to me. This hunk\n\n```\n-        Watch out, Magma has different semantics than Sage, i.e., in Magma\n+        Watch out, Magma has different semantics from Sage, i.e., in Magma\n```\n\nseemed on first reading a little odd, but now I do agree with the change.\n\nCheers,\n\nMichael",
+    "body": "Looks good to me. This hunk\n\n```\n-        Watch out, Magma has different semantics than Sage, i.e., in Magma\n+        Watch out, Magma has different semantics from Sage, i.e., in Magma\n```\nseemed on first reading a little odd, but now I do agree with the change.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-04T22:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5436",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ Looks good to me. This hunk
 -        Watch out, Magma has different semantics than Sage, i.e., in Magma
 +        Watch out, Magma has different semantics from Sage, i.e., in Magma
 ```
-
 seemed on first reading a little odd, but now I do agree with the change.
 
 Cheers,

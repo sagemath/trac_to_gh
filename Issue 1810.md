@@ -48,7 +48,7 @@ Attachment [finite_field_refactor_doc.patch](tarball://root/attachments/some-uui
 archive/issue_comments_011412.json:
 ```json
 {
-    "body": "I get the following on a clean 2.10.2 install:\n\n\n```\napplying /home/mike/Desktop/finite_field_refactor_doc.patch\npatching file sage/rings/finite_field.py\nHunk #1 succeeded at 1 with fuzz 2 (offset -2 lines).\nHunk #5 FAILED at 147\n1 out of 13 hunks FAILED -- saving rejects to file sage/rings/finite_field.py.rej\nabort: unable to find sage/rings/padics/eisenstein_extension_generic_element.py or sage/rings/padics/eisenstein_extension_generic_element.py for patching\n\n```\n",
+    "body": "I get the following on a clean 2.10.2 install:\n\n```\napplying /home/mike/Desktop/finite_field_refactor_doc.patch\npatching file sage/rings/finite_field.py\nHunk #1 succeeded at 1 with fuzz 2 (offset -2 lines).\nHunk #5 FAILED at 147\n1 out of 13 hunks FAILED -- saving rejects to file sage/rings/finite_field.py.rej\nabort: unable to find sage/rings/padics/eisenstein_extension_generic_element.py or sage/rings/padics/eisenstein_extension_generic_element.py for patching\n\n```",
     "created_at": "2008-02-27T18:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1810",
     "type": "issue_comment",
@@ -59,7 +59,6 @@ archive/issue_comments_011412.json:
 
 I get the following on a clean 2.10.2 install:
 
-
 ```
 applying /home/mike/Desktop/finite_field_refactor_doc.patch
 patching file sage/rings/finite_field.py
@@ -69,7 +68,6 @@ Hunk #5 FAILED at 147
 abort: unable to find sage/rings/padics/eisenstein_extension_generic_element.py or sage/rings/padics/eisenstein_extension_generic_element.py for patching
 
 ```
-
 
 
 

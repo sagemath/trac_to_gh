@@ -3,7 +3,7 @@
 archive/issues_005954.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @tornaria mabshoff wstein @JohnCremona\n\nKeywords: QuadraticForm\n\nThis patch documents and brings doctest coverage to 100% for all routines in:\n\n```\nquadratic_forms/quadratic_form__genus.py\nquadratic_forms/genera/genus.py\n```\n\n\nIt also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:\n\n```\nsage: Q2=QuadraticForm(ZZ,3,[ -3,2,0 , 3,-2 , 5 ])\nsage: Q2.rational_diagonal_form()\n\nQuadratic form in 3 variables over Rational Field with coefficients: \n[ -3 0 0 ]\n[ * 10/3 0 ]\n[ * * 47/10 ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5954\n\n",
+    "body": "Assignee: tbd\n\nCC:  @tornaria mabshoff wstein @JohnCremona\n\nKeywords: QuadraticForm\n\nThis patch documents and brings doctest coverage to 100% for all routines in:\n\n```\nquadratic_forms/quadratic_form__genus.py\nquadratic_forms/genera/genus.py\n```\n\nIt also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:\n\n```\nsage: Q2=QuadraticForm(ZZ,3,[ -3,2,0 , 3,-2 , 5 ])\nsage: Q2.rational_diagonal_form()\n\nQuadratic form in 3 variables over Rational Field with coefficients: \n[ -3 0 0 ]\n[ * 10/3 0 ]\n[ * * 47/10 ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5954\n\n",
     "created_at": "2009-05-01T05:59:31Z",
     "labels": [
         "component: algebra"
@@ -28,7 +28,6 @@ quadratic_forms/quadratic_form__genus.py
 quadratic_forms/genera/genus.py
 ```
 
-
 It also rewrote a few signature routines and the rational_diagonal_form() routine which was causing the bug reported in Ticket #5837:
 
 ```
@@ -40,7 +39,6 @@ Quadratic form in 3 variables over Rational Field with coefficients:
 [ * 10/3 0 ]
 [ * * 47/10 ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5954
 
@@ -91,7 +89,7 @@ I just skimmed through patch-1__QF_genus_symbols__3.4.1.patch and I'm very happy
 archive/issue_comments_047007.json:
 ```json
 {
-    "body": "Hehe, nice comment William. There is at least one typo in the docstring:\n\n```\n        doubling conventions strraight throughout!  This is especially \n```\n\nI have skimmed the rest and did not see anything obvious. The renaming could introduce some trouble, so adding deprecation messages for the old names might be a good idea. We will see what the real reviewer will say.\n\nI am CCing John also to see if he can slip it into their review schedule. John: in case you are busy feel free to ignore this. :)\n\nCheers,\n\nMichael",
+    "body": "Hehe, nice comment William. There is at least one typo in the docstring:\n\n```\n        doubling conventions strraight throughout!  This is especially \n```\nI have skimmed the rest and did not see anything obvious. The renaming could introduce some trouble, so adding deprecation messages for the old names might be a good idea. We will see what the real reviewer will say.\n\nI am CCing John also to see if he can slip it into their review schedule. John: in case you are busy feel free to ignore this. :)\n\nCheers,\n\nMichael",
     "created_at": "2009-05-01T06:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5954",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ Hehe, nice comment William. There is at least one typo in the docstring:
 ```
         doubling conventions strraight throughout!  This is especially 
 ```
-
 I have skimmed the rest and did not see anything obvious. The renaming could introduce some trouble, so adding deprecation messages for the old names might be a good idea. We will see what the real reviewer will say.
 
 I am CCing John also to see if he can slip it into their review schedule. John: in case you are busy feel free to ignore this. :)

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4264
 archive/issue_comments_031032.json:
 ```json
 {
-    "body": "Quick comment:  the cached `self.__ainvs` should actually *be* a tuple.  So the only code to change is in line 142 in `ell_generic.py`, from this\n\n```\n        self.__ainvs = ainvs\n```\n\nto this\n\n```\n        self.__aincs = tuple(ainvs)\n```\n\nas well as the doctests.",
+    "body": "Quick comment:  the cached `self.__ainvs` should actually *be* a tuple.  So the only code to change is in line 142 in `ell_generic.py`, from this\n\n```\n        self.__ainvs = ainvs\n```\nto this\n\n```\n        self.__aincs = tuple(ainvs)\n```\nas well as the doctests.",
     "created_at": "2008-10-13T11:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
@@ -47,13 +47,11 @@ Quick comment:  the cached `self.__ainvs` should actually *be* a tuple.  So the 
 ```
         self.__ainvs = ainvs
 ```
-
 to this
 
 ```
         self.__aincs = tuple(ainvs)
 ```
-
 as well as the doctests.
 
 
@@ -200,7 +198,7 @@ Chris.
 archive/issue_comments_031040.json:
 ```json
 {
-    "body": "Replying to [comment:6 wuthrich]:\n> I think we won't need a a_list. I'd prefer having list() everywhere, even if it is ugly.\n> \n> Could you post your first draft of a patch here ? I will try to work on it.\n> \n> Chris.\n\nSorry, but after a year I am sure that it is lost for ever.  I should have uploaded it anyway with a \"needs more work\" tag.  Anyway, after a year of version changes it would never have merged without a lot of work.",
+    "body": "Replying to [comment:6 wuthrich]:\n> I think we won't need a a_list. I'd prefer having list() everywhere, even if it is ugly.\n> \n> Could you post your first draft of a patch here ? I will try to work on it.\n> \n> Chris.\n\n\nSorry, but after a year I am sure that it is lost for ever.  I should have uploaded it anyway with a \"needs more work\" tag.  Anyway, after a year of version changes it would never have merged without a lot of work.",
     "created_at": "2009-10-21T08:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
@@ -215,6 +213,7 @@ Replying to [comment:6 wuthrich]:
 > Could you post your first draft of a patch here ? I will try to work on it.
 > 
 > Chris.
+
 
 Sorry, but after a year I am sure that it is lost for ever.  I should have uploaded it anyway with a "needs more work" tag.  Anyway, after a year of version changes it would never have merged without a lot of work.
 

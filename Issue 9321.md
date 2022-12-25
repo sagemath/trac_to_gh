@@ -3,7 +3,7 @@
 archive/issues_009321.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nWhen did we hijack the sum function? Based on the documentation there, I have (today alone) had four different people come up to me and ask why something like the following doesn't work:\n\n\n```\nsage: sum(Integer(x), x, 0, 9)\n```\n\n\nI know the reasons this shouldn't work, but newbies definitely don't. It should say something about how to do\n\n```\nsage: sum( Integer(x) for x in range(10) )\n```\n\nbefore \"getting all symbolic.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9321\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nWhen did we hijack the sum function? Based on the documentation there, I have (today alone) had four different people come up to me and ask why something like the following doesn't work:\n\n```\nsage: sum(Integer(x), x, 0, 9)\n```\n\nI know the reasons this shouldn't work, but newbies definitely don't. It should say something about how to do\n\n```\nsage: sum( Integer(x) for x in range(10) )\n```\nbefore \"getting all symbolic.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9321\n\n",
     "created_at": "2010-06-24T00:01:48Z",
     "labels": [
         "component: documentation",
@@ -21,18 +21,15 @@ CC:  @kcrisman
 
 When did we hijack the sum function? Based on the documentation there, I have (today alone) had four different people come up to me and ask why something like the following doesn't work:
 
-
 ```
 sage: sum(Integer(x), x, 0, 9)
 ```
-
 
 I know the reasons this shouldn't work, but newbies definitely don't. It should say something about how to do
 
 ```
 sage: sum( Integer(x) for x in range(10) )
 ```
-
 before "getting all symbolic."
 
 Issue created by migration from https://trac.sagemath.org/ticket/9321
@@ -266,7 +263,7 @@ Thanks! Sorry this is an incremental review but it will be more awesomer soon.
 archive/issue_comments_087743.json:
 ```json
 {
-    "body": "I moved the warning a bit lower and added necessary backticks. I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. Finally, I had to change the branch path because `git amend`ed commits are not accepted by `sage -dev push`.\n----\nNew commits:",
+    "body": "I moved the warning a bit lower and added necessary backticks. I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. Finally, I had to change the branch path because `git amend`ed commits are not accepted by `sage -dev push`.\n\n---\nNew commits:",
     "created_at": "2014-03-20T09:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9321",
     "type": "issue_comment",
@@ -276,7 +273,8 @@ archive/issue_comments_087743.json:
 ```
 
 I moved the warning a bit lower and added necessary backticks. I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. Finally, I had to change the branch path because `git amend`ed commits are not accepted by `sage -dev push`.
-----
+
+---
 New commits:
 
 
@@ -304,7 +302,7 @@ Karl-Dieter, are you happy with the current version? (Really this is an elaborat
 archive/issue_comments_087745.json:
 ```json
 {
-    "body": "> I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. \nhttps://docs.python.org/{2,3}/library/functions.html#sum is the link, technically.  I won't hold it up for that, though, since they can just click on \"sum\" from the big list at that location.  Doc looks good now.\n> Karl-Dieter, are you happy with the current version? (Really this is an elaborate ping.)\n:-)  Sorry for the delay; I definitely have been having to cut back even on review time the past few months.",
+    "body": "> I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. \n\nhttps://docs.python.org/{2,3}/library/functions.html#sum is the link, technically.  I won't hold it up for that, though, since they can just click on \"sum\" from the big list at that location.  Doc looks good now.\n> Karl-Dieter, are you happy with the current version? (Really this is an elaborate ping.)\n\n:-)  Sorry for the delay; I definitely have been having to cut back even on review time the past few months.",
     "created_at": "2014-06-24T16:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9321",
     "type": "issue_comment",
@@ -314,8 +312,10 @@ archive/issue_comments_087745.json:
 ```
 
 > I also removed the version string from the python link, although you will still arrive at the 2.x version. It's no longer hardcoded however. 
+
 https://docs.python.org/{2,3}/library/functions.html#sum is the link, technically.  I won't hold it up for that, though, since they can just click on "sum" from the big list at that location.  Doc looks good now.
 > Karl-Dieter, are you happy with the current version? (Really this is an elaborate ping.)
+
 :-)  Sorry for the delay; I definitely have been having to cut back even on review time the past few months.
 
 

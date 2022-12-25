@@ -3,7 +3,7 @@
 archive/issues_008562.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
     "created_at": "2010-03-19T21:48:27Z",
     "labels": [
         "component: algebra",
@@ -46,7 +46,6 @@ After this patch, IntegerModRing's inherit properly from categories:
     running ._test_some_elements() . . . pass
     running ._test_zero() . . . pass
 ```
-
 
 This is required to use the cool features from #7555.
 
@@ -157,7 +156,7 @@ David
 archive/issue_comments_077391.json:
 ```json
 {
-    "body": "Replying to [comment:4 davidloeffler]:\n> Just a heads-up: this looks rather like it might clash with #8218, which is the first of several patches by David Roe which do a substantial amount of work improving finite fields. #8218 has been held up for ages because it moves loads of files around (without substantially changing their content) so even small changes to finite fields will cause conflicts, and there is a lot of really good code waiting on it, so it would be a shame to have to put it off even longer.\n\nThanks for the notice. There is no urgency for that one, so sure, if there is any conflict, #8218 should go first.\n\nDavid: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.",
+    "body": "Replying to [comment:4 davidloeffler]:\n> Just a heads-up: this looks rather like it might clash with #8218, which is the first of several patches by David Roe which do a substantial amount of work improving finite fields. #8218 has been held up for ages because it moves loads of files around (without substantially changing their content) so even small changes to finite fields will cause conflicts, and there is a lot of really good code waiting on it, so it would be a shame to have to put it off even longer.\n\n\nThanks for the notice. There is no urgency for that one, so sure, if there is any conflict, #8218 should go first.\n\nDavid: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.",
     "created_at": "2010-03-21T20:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -168,6 +167,7 @@ archive/issue_comments_077391.json:
 
 Replying to [comment:4 davidloeffler]:
 > Just a heads-up: this looks rather like it might clash with #8218, which is the first of several patches by David Roe which do a substantial amount of work improving finite fields. #8218 has been held up for ages because it moves loads of files around (without substantially changing their content) so even small changes to finite fields will cause conflicts, and there is a lot of really good code waiting on it, so it would be a shame to have to put it off even longer.
+
 
 Thanks for the notice. There is no urgency for that one, so sure, if there is any conflict, #8218 should go first.
 
@@ -180,7 +180,7 @@ David: I won't be touching this patch further. Feel free to update / refactor / 
 archive/issue_comments_077392.json:
 ```json
 {
-    "body": "> David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\nNote: I meant David Roe, but any other David is welcome too :-)\n\nOh: would you agree to take over that patch, and finalize it (or ping me) when it's ripe to get in?\n\n(then I could forget about it).",
+    "body": "> David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\n\nNote: I meant David Roe, but any other David is welcome too :-)\n\nOh: would you agree to take over that patch, and finalize it (or ping me) when it's ripe to get in?\n\n(then I could forget about it).",
     "created_at": "2010-03-21T20:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -190,6 +190,7 @@ archive/issue_comments_077392.json:
 ```
 
 > David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.
+
 
 Note: I meant David Roe, but any other David is welcome too :-)
 
@@ -258,7 +259,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077396.json:
 ```json
 {
-    "body": "Replying to [comment:6 nthiery]:\n> > David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\nWell, actually I did. But I should be done now, unless I notice a test failure.",
+    "body": "Replying to [comment:6 nthiery]:\n> > David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\n\nWell, actually I did. But I should be done now, unless I notice a test failure.",
     "created_at": "2010-03-22T22:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -269,6 +270,7 @@ archive/issue_comments_077396.json:
 
 Replying to [comment:6 nthiery]:
 > > David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.
+
 
 Well, actually I did. But I should be done now, unless I notice a test failure.
 
@@ -344,7 +346,7 @@ Thanks again,
 archive/issue_comments_077400.json:
 ```json
 {
-    "body": "Replying to [comment:10 nthiery]:\n \n> Is the convention to use as ticket summary \"trac 8562:\" or \"#8562:\"? (I personally prefer the later).\n\nI think either is fine.  I've been using \"trac 8562\" for a while and have not had any complaints from release managers.\n\n>  * With the updated patch, sage -coverage complains because of the absence of #indirect doctest for create_object in sage/rings/finite_rings/integer_mod_ring.py. Just wanted to check; if this is voluntary, because you consider that this requires better tests, that's all fine with me.\n\nThis wasn't voluntary, it was an oversight.  I'll fix it.\n\n>  * I like the options `nodates=1` and `showfunc = 1` of hg :-)\n\nNice, I didn't know about those.",
+    "body": "Replying to [comment:10 nthiery]:\n \n> Is the convention to use as ticket summary \"trac 8562:\" or \"#8562:\"? (I personally prefer the later).\n\n\nI think either is fine.  I've been using \"trac 8562\" for a while and have not had any complaints from release managers.\n\n>  * With the updated patch, sage -coverage complains because of the absence of #indirect doctest for create_object in sage/rings/finite_rings/integer_mod_ring.py. Just wanted to check; if this is voluntary, because you consider that this requires better tests, that's all fine with me.\n\n\nThis wasn't voluntary, it was an oversight.  I'll fix it.\n\n>  * I like the options `nodates=1` and `showfunc = 1` of hg :-)\n\n\nNice, I didn't know about those.",
     "created_at": "2010-06-21T20:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
@@ -357,13 +359,16 @@ Replying to [comment:10 nthiery]:
  
 > Is the convention to use as ticket summary "trac 8562:" or "#8562:"? (I personally prefer the later).
 
+
 I think either is fine.  I've been using "trac 8562" for a while and have not had any complaints from release managers.
 
 >  * With the updated patch, sage -coverage complains because of the absence of #indirect doctest for create_object in sage/rings/finite_rings/integer_mod_ring.py. Just wanted to check; if this is voluntary, because you consider that this requires better tests, that's all fine with me.
 
+
 This wasn't voluntary, it was an oversight.  I'll fix it.
 
 >  * I like the options `nodates=1` and `showfunc = 1` of hg :-)
+
 
 Nice, I didn't know about those.
 

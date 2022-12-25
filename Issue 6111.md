@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6111
 archive/issue_comments_048723.json:
 ```json
 {
-    "body": "TODO: This doctest in infinity.py was commented out.  When uncommented we get a total hang:\n\n```\n            sage: bool(SR(oo) == sympy.oo)\n```\n\n\nThis is what we get:\n\n```\nsage:             sage: bool(SR(oo) == sympy.oo)\nterminate called after throwing an instance of 'std::runtime_error'\n  what():  indeterminate expression: Infinity - Infinity encountered.\n\n\n^V^C^C^C^C^C^C^Z\n```\n\n\nI'm uncomenting this in my referee patch.",
+    "body": "TODO: This doctest in infinity.py was commented out.  When uncommented we get a total hang:\n\n```\n            sage: bool(SR(oo) == sympy.oo)\n```\n\nThis is what we get:\n\n```\nsage:             sage: bool(SR(oo) == sympy.oo)\nterminate called after throwing an instance of 'std::runtime_error'\n  what():  indeterminate expression: Infinity - Infinity encountered.\n\n\n^V^C^C^C^C^C^C^Z\n```\n\nI'm uncomenting this in my referee patch.",
     "created_at": "2009-05-21T21:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ TODO: This doctest in infinity.py was commented out.  When uncommented we get a 
             sage: bool(SR(oo) == sympy.oo)
 ```
 
-
 This is what we get:
 
 ```
@@ -72,7 +71,6 @@ terminate called after throwing an instance of 'std::runtime_error'
 
 ^V^C^C^C^C^C^C^Z
 ```
-
 
 I'm uncomenting this in my referee patch.
 
@@ -101,7 +99,7 @@ I read through the first 2500 lines of expression.pyx earlier today, and it's lo
 archive/issue_comments_048725.json:
 ```json
 {
-    "body": "Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by @robertwb created at 2009-05-23 07:06:21\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
+    "body": "Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by @robertwb created at 2009-05-23 07:06:21\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```",
     "created_at": "2009-05-23T07:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
@@ -113,7 +111,6 @@ archive/issue_comments_048725.json:
 Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by @robertwb created at 2009-05-23 07:06:21
 
 Finished reading expression.pyx, it looks good. Should this work:
-
 
 ```
 sage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()
@@ -128,15 +125,12 @@ Traceback (most recent call last):
 TypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring
 ```
 
-
 Also, there are a lot (too many IMHO) aliases for simplify_radical
-
 
 ```
     radical_simplify = simplify_log = log_simplify = simplify_radical
     simplify_exp = exp_simplify = simplify_radical
 ```
-
 
 
 

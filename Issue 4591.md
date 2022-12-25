@@ -3,7 +3,7 @@
 archive/issues_004591.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn Magma 2.13 this works:\n\n```\nEllipticCurve('37a').three_selmer_rank()\n```\n\nbut in Magma 2.14 it doesn't (tested on osx and linux):\n\n```\nsage: EllipticCurve('37a').three_selmer_rank()\n```\n\n\nThis is implemented by a script I ship that is a modified versin of a magma script.\nI thus need to fix this.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4591\n\n",
+    "body": "Assignee: @williamstein\n\nIn Magma 2.13 this works:\n\n```\nEllipticCurve('37a').three_selmer_rank()\n```\nbut in Magma 2.14 it doesn't (tested on osx and linux):\n\n```\nsage: EllipticCurve('37a').three_selmer_rank()\n```\n\nThis is implemented by a script I ship that is a modified versin of a magma script.\nI thus need to fix this.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4591\n\n",
     "created_at": "2008-11-23T04:22:13Z",
     "labels": [
         "component: number theory",
@@ -23,13 +23,11 @@ In Magma 2.13 this works:
 ```
 EllipticCurve('37a').three_selmer_rank()
 ```
-
 but in Magma 2.14 it doesn't (tested on osx and linux):
 
 ```
 sage: EllipticCurve('37a').three_selmer_rank()
 ```
-
 
 This is implemented by a script I ship that is a modified versin of a magma script.
 I thus need to fix this.  
@@ -123,7 +121,7 @@ Michael
 archive/issue_comments_034368.json:
 ```json
 {
-    "body": "Unfortunately there are slight reject issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_4591_sage-4591.patch \npatching file sage/interfaces/magma.py\nHunk #1 FAILED at 744.\n1 out of 1 hunk FAILED -- saving rejects to file sage/interfaces/magma.py.rej\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\npatching file sage/schemes/elliptic_curves/magma_3descent.py\n```\n\n\nCheers,\n\nMichael",
+    "body": "Unfortunately there are slight reject issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_4591_sage-4591.patch \npatching file sage/interfaces/magma.py\nHunk #1 FAILED at 744.\n1 out of 1 hunk FAILED -- saving rejects to file sage/interfaces/magma.py.rej\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\npatching file sage/schemes/elliptic_curves/magma_3descent.py\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T08:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4591",
     "type": "issue_comment",
@@ -142,7 +140,6 @@ Hunk #1 FAILED at 744.
 patching file sage/schemes/elliptic_curves/ell_rational_field.py
 patching file sage/schemes/elliptic_curves/magma_3descent.py
 ```
-
 
 Cheers,
 

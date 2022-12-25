@@ -3,7 +3,7 @@
 archive/issues_003571.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThe `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:\n\n\n```\nsage: R = Integers(10)\nsage: x = R(2)\nsage: x\n2\nsage: x.ivalue = 33\nsage: x\n33\nsage: R(2)\n33\n```\n\n\nIt's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3571\n\n",
+    "body": "Assignee: @craigcitro\n\nThe `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:\n\n```\nsage: R = Integers(10)\nsage: x = R(2)\nsage: x\n2\nsage: x.ivalue = 33\nsage: x\n33\nsage: R(2)\n33\n```\n\nIt's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3571\n\n",
     "created_at": "2008-07-06T20:55:32Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: @craigcitro
 
 The `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:
 
-
 ```
 sage: R = Integers(10)
 sage: x = R(2)
@@ -32,7 +31,6 @@ sage: x
 sage: R(2)
 33
 ```
-
 
 It's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.
 
@@ -65,7 +63,7 @@ Changing status from new to assigned.
 archive/issue_comments_025175.json:
 ```json
 {
-    "body": "The attached patch fixes this issue, and in fact, gives about a 1.5-2X speedup on multiplying `IntegerMod_int`s. The interesting part is that previous to this patch, the `ivalue` field was occasionally being accessed as a Python attribute instead of a Cython attribute! That's why it broke if we made the field not `public` in the first place. Oops.\n\nBEFORE:\n\n\n```\nsage: R = Integers(100) ; x = R(3) ; y = R(5)\nsage: timeit('x*y')\n625 loops, best of 3: 403 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 370 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 410 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 405 ns per loop\n```\n\n\nAFTER:\n\n\n```\nsage: R = Integers(100) ; x = R(3) ; y = R(5)\nsage: timeit('x*y')\n625 loops, best of 3: 190 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 213 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 174 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 191 ns per loop\n```\n",
+    "body": "The attached patch fixes this issue, and in fact, gives about a 1.5-2X speedup on multiplying `IntegerMod_int`s. The interesting part is that previous to this patch, the `ivalue` field was occasionally being accessed as a Python attribute instead of a Cython attribute! That's why it broke if we made the field not `public` in the first place. Oops.\n\nBEFORE:\n\n```\nsage: R = Integers(100) ; x = R(3) ; y = R(5)\nsage: timeit('x*y')\n625 loops, best of 3: 403 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 370 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 410 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 405 ns per loop\n```\n\nAFTER:\n\n```\nsage: R = Integers(100) ; x = R(3) ; y = R(5)\nsage: timeit('x*y')\n625 loops, best of 3: 190 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 213 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 174 ns per loop\nsage: timeit('x*y')\n625 loops, best of 3: 191 ns per loop\n```",
     "created_at": "2009-01-23T08:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_comment",
@@ -77,7 +75,6 @@ archive/issue_comments_025175.json:
 The attached patch fixes this issue, and in fact, gives about a 1.5-2X speedup on multiplying `IntegerMod_int`s. The interesting part is that previous to this patch, the `ivalue` field was occasionally being accessed as a Python attribute instead of a Cython attribute! That's why it broke if we made the field not `public` in the first place. Oops.
 
 BEFORE:
-
 
 ```
 sage: R = Integers(100) ; x = R(3) ; y = R(5)
@@ -91,9 +88,7 @@ sage: timeit('x*y')
 625 loops, best of 3: 405 ns per loop
 ```
 
-
 AFTER:
-
 
 ```
 sage: R = Integers(100) ; x = R(3) ; y = R(5)
@@ -106,7 +101,6 @@ sage: timeit('x*y')
 sage: timeit('x*y')
 625 loops, best of 3: 191 ns per loop
 ```
-
 
 
 

@@ -226,7 +226,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_017261.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?\nAdded doctests.",
+    "body": "Replying to [comment:7 kcrisman]:\n> I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?\n\nAdded doctests.",
     "created_at": "2015-02-07T23:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2536",
     "type": "issue_comment",
@@ -237,6 +237,7 @@ archive/issue_comments_017261.json:
 
 Replying to [comment:7 kcrisman]:
 > I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?
+
 Added doctests.
 
 
@@ -316,7 +317,7 @@ I'm a little surprised that doctest works since it does return a value, but I gu
 archive/issue_comments_017264.json:
 ```json
 {
-    "body": "\n```\nExpected:\n    Help on FiniteWordPath_2d_str in module sage.combinat.words.paths object:\n    ...\n    Methods inherited from FiniteWordPath_2d:\n    ...\n    Methods inherited from FiniteWordPath_all:\n    ...\n    This only works on Python classes that derive from SageObject.\nGot:\n<stuff ending with>\n     |      This only works on Python classes that derive from SageObject.\n     |      \n     |      TESTS::\n     |      \n     |          sage: v = DiGraph().version()\n     |          doctest:... DeprecationWarning: version() is deprecated.\n     |          See http://trac.sagemath.org/2536 for details.\n\n----------------------------------------------------------------------\nsage -t src/sage/combinat/words/paths.py  # 1 doctest failed\n```\n\nOtherwise all is well.  I guess this is my fault for asking for the deprecation warning after you did your long doctests, my apologies.",
+    "body": "```\nExpected:\n    Help on FiniteWordPath_2d_str in module sage.combinat.words.paths object:\n    ...\n    Methods inherited from FiniteWordPath_2d:\n    ...\n    Methods inherited from FiniteWordPath_all:\n    ...\n    This only works on Python classes that derive from SageObject.\nGot:\n<stuff ending with>\n     |      This only works on Python classes that derive from SageObject.\n     |      \n     |      TESTS::\n     |      \n     |          sage: v = DiGraph().version()\n     |          doctest:... DeprecationWarning: version() is deprecated.\n     |          See http://trac.sagemath.org/2536 for details.\n\n----------------------------------------------------------------------\nsage -t src/sage/combinat/words/paths.py  # 1 doctest failed\n```\nOtherwise all is well.  I guess this is my fault for asking for the deprecation warning after you did your long doctests, my apologies.",
     "created_at": "2015-02-12T04:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2536",
     "type": "issue_comment",
@@ -324,7 +325,6 @@ archive/issue_comments_017264.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-
 
 ```
 Expected:
@@ -348,7 +348,6 @@ Got:
 ----------------------------------------------------------------------
 sage -t src/sage/combinat/words/paths.py  # 1 doctest failed
 ```
-
 Otherwise all is well.  I guess this is my fault for asking for the deprecation warning after you did your long doctests, my apologies.
 
 

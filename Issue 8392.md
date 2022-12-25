@@ -3,7 +3,7 @@
 archive/issues_008392.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat billey\n\nKeywords: permutation, check, assert\n\nJust check the user give a good entry and for that move a method (robinson_schensted)\n\nFor now, sage accept that:\n\n```\nsage: Permutation([1,1,1,1,1])\n[1, 1, 1, 1, 1]\nsage: Permutation([-12,1,3])\n[-12, 1, 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8392\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat billey\n\nKeywords: permutation, check, assert\n\nJust check the user give a good entry and for that move a method (robinson_schensted)\n\nFor now, sage accept that:\n\n```\nsage: Permutation([1,1,1,1,1])\n[1, 1, 1, 1, 1]\nsage: Permutation([-12,1,3])\n[-12, 1, 3]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8392\n\n",
     "created_at": "2010-02-27T21:04:24Z",
     "labels": [
         "component: combinatorics",
@@ -32,7 +32,6 @@ sage: Permutation([1,1,1,1,1])
 sage: Permutation([-12,1,3])
 [-12, 1, 3]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8392
 
@@ -81,7 +80,7 @@ Changing status from new to needs_work.
 archive/issue_comments_075028.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\nIf you want your patch to be reviewed please check \"needs review\"...\n\nFor your information your patch breaks posets which use permutations starting from 0:\n\n```\n    sage: P = Posets.SymmetricGroupBruhatIntervalPoset([0,1,2,3], [2,3,0,1])\nException raised:\n...\n    ValueError: [0, 1, 2, 3] is not a Standard permutations\n```\n",
+    "body": "Hi Nicolas,\n\nIf you want your patch to be reviewed please check \"needs review\"...\n\nFor your information your patch breaks posets which use permutations starting from 0:\n\n```\n    sage: P = Posets.SymmetricGroupBruhatIntervalPoset([0,1,2,3], [2,3,0,1])\nException raised:\n...\n    ValueError: [0, 1, 2, 3] is not a Standard permutations\n```",
     "created_at": "2010-03-02T18:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -102,7 +101,6 @@ Exception raised:
 ...
     ValueError: [0, 1, 2, 3] is not a Standard permutations
 ```
-
 
 
 
@@ -133,7 +131,7 @@ Thanks in advance.
 archive/issue_comments_075030.json:
 ```json
 {
-    "body": "The current patch breaks integer vectors; it would need to further fix WeightedIntegerVectors to not abuse anymore Permutation with multiple entries.\n\n\n```\nsage: WeightedIntegerVectors(8, [1,1,2]).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/categories/finite_enumerated_sets.py\", line 308, in list\n    self._list = self._list_from_iterator()\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/categories/finite_enumerated_sets.py\", line 142, in _list_from_iterator\n    return [x for x in self]\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/integer_vector_weighted.py\", line 259, in __iter__\n    yield perm._left_to_right_multiply_on_right(Permutation_class(x))\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/permutation.py\", line 910, in _left_to_right_multiply_on_right\n    #Pad the permutations if they are of\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/permutation.py\", line 286, in Permutation\n    if n != len(l) or sorted(l) != range(1,n+1):\nValueError: the list l (=[0, 0, 4]) must contain each integer of {1,...,n} one time\n```\n",
+    "body": "The current patch breaks integer vectors; it would need to further fix WeightedIntegerVectors to not abuse anymore Permutation with multiple entries.\n\n```\nsage: WeightedIntegerVectors(8, [1,1,2]).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/categories/finite_enumerated_sets.py\", line 308, in list\n    self._list = self._list_from_iterator()\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/categories/finite_enumerated_sets.py\", line 142, in _list_from_iterator\n    return [x for x in self]\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/integer_vector_weighted.py\", line 259, in __iter__\n    yield perm._left_to_right_multiply_on_right(Permutation_class(x))\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/permutation.py\", line 910, in _left_to_right_multiply_on_right\n    #Pad the permutations if they are of\n  File \"/opt/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/combinat/permutation.py\", line 286, in Permutation\n    if n != len(l) or sorted(l) != range(1,n+1):\nValueError: the list l (=[0, 0, 4]) must contain each integer of {1,...,n} one time\n```",
     "created_at": "2012-05-09T14:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ archive/issue_comments_075030.json:
 ```
 
 The current patch breaks integer vectors; it would need to further fix WeightedIntegerVectors to not abuse anymore Permutation with multiple entries.
-
 
 ```
 sage: WeightedIntegerVectors(8, [1,1,2]).list()
@@ -162,7 +159,6 @@ Traceback (most recent call last):
     if n != len(l) or sorted(l) != range(1,n+1):
 ValueError: the list l (=[0, 0, 4]) must contain each integer of {1,...,n} one time
 ```
-
 
 
 
@@ -603,7 +599,7 @@ Apply trac_8392-check_permutation-ts.patch
 archive/issue_comments_075053.json:
 ```json
 {
-    "body": "I'm fussing about corner cases as usual, but I think this here might use some fix:\n\n```\nsage: Permutation([])  # This is be the identity permutation in S_0.\n[]\nsage: Permutation([]).cycle_string()    # OK.\n'()'\nsage: Permutation('()')    # This should give the S_0 identity back -- but it doesn't.\n[1]\nsage: Permutation('')     # Does this maybe? No.\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-29-3df27d9d4d7a> in <module>()\n----> 1 Permutation('')\n\n/home/darij/sage-5.10.beta2/local/lib/python2.7/site-packages/sage/combinat/permutation.pyc in Permutation(l, check_input)\n    430         cycle_list = []\n    431         for c in cycles:\n--> 432             cycle_list.append(map(int, c.split(\",\")))\n    433 \n    434         return from_cycles(max([max(c) for c in cycle_list]), cycle_list)\n\nValueError: invalid literal for int() with base 10: ''\nsage: Permutation(())       # What about this?\n[1]\n```\n\n\nTravis, why did you replace \"standard\" by \"semi-standard\" in ``robinson_schensted``?",
+    "body": "I'm fussing about corner cases as usual, but I think this here might use some fix:\n\n```\nsage: Permutation([])  # This is be the identity permutation in S_0.\n[]\nsage: Permutation([]).cycle_string()    # OK.\n'()'\nsage: Permutation('()')    # This should give the S_0 identity back -- but it doesn't.\n[1]\nsage: Permutation('')     # Does this maybe? No.\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-29-3df27d9d4d7a> in <module>()\n----> 1 Permutation('')\n\n/home/darij/sage-5.10.beta2/local/lib/python2.7/site-packages/sage/combinat/permutation.pyc in Permutation(l, check_input)\n    430         cycle_list = []\n    431         for c in cycles:\n--> 432             cycle_list.append(map(int, c.split(\",\")))\n    433 \n    434         return from_cycles(max([max(c) for c in cycle_list]), cycle_list)\n\nValueError: invalid literal for int() with base 10: ''\nsage: Permutation(())       # What about this?\n[1]\n```\n\nTravis, why did you replace \"standard\" by \"semi-standard\" in ``robinson_schensted``?",
     "created_at": "2013-05-12T04:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -638,7 +634,6 @@ ValueError: invalid literal for int() with base 10: ''
 sage: Permutation(())       # What about this?
 [1]
 ```
-
 
 Travis, why did you replace "standard" by "semi-standard" in ``robinson_schensted``?
 
@@ -798,7 +793,7 @@ Travis
 archive/issue_comments_075060.json:
 ```json
 {
-    "body": "Travis,\n\nCan you add some more checks for invalid input? For example there is no problem doing this:\n\n\n```\nsage: RSK([1],[1,2])  # Words are different length\nsage: RSK([2,1],[1,1])  # Not a generalized permutation\n\n```\n\nI am using the definition of generalized permutation in Stanley EC2 Chapter 7.\n\n- Jeff",
+    "body": "Travis,\n\nCan you add some more checks for invalid input? For example there is no problem doing this:\n\n```\nsage: RSK([1],[1,2])  # Words are different length\nsage: RSK([2,1],[1,1])  # Not a generalized permutation\n\n```\nI am using the definition of generalized permutation in Stanley EC2 Chapter 7.\n\n- Jeff",
     "created_at": "2013-05-22T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -811,13 +806,11 @@ Travis,
 
 Can you add some more checks for invalid input? For example there is no problem doing this:
 
-
 ```
 sage: RSK([1],[1,2])  # Words are different length
 sage: RSK([2,1],[1,1])  # Not a generalized permutation
 
 ```
-
 I am using the definition of generalized permutation in Stanley EC2 Chapter 7.
 
 - Jeff
@@ -929,7 +922,7 @@ Apply: trac_8392-check_permutation-ts.patch
 archive/issue_comments_075066.json:
 ```json
 {
-    "body": "\n```\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: Duplicate explicit target name: \"knu1970\".\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: Duplicate explicit target name: \"eg1987\".\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: duplicate citation Knu1970, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: duplicate citation EG1987, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst\n```\n",
+    "body": "```\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: Duplicate explicit target name: \"knu1970\".\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: Duplicate explicit target name: \"eg1987\".\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: duplicate citation Knu1970, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: duplicate citation EG1987, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst\n```",
     "created_at": "2013-05-27T13:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -938,14 +931,12 @@ archive/issue_comments_075066.json:
 }
 ```
 
-
 ```
 dochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: Duplicate explicit target name: "knu1970".
 dochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: Duplicate explicit target name: "eg1987".
 dochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:121: WARNING: duplicate citation Knu1970, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst
 dochtml.log:[combinat ] /mazur/release/merger/sage-5.10.rc0/local/lib/python2.7/site-packages/sage/combinat/rsk.py:docstring of sage.combinat.rsk.RobinsonSchenstedKnuth:126: WARNING: duplicate citation EG1987, other instance in /mazur/release/merger/sage-5.10.rc0/devel/sage/doc/en/reference/combinat/sage/combinat/rsk.rst
 ```
-
 
 
 
@@ -1201,7 +1192,7 @@ Anne
 archive/issue_comments_075078.json:
 ```json
 {
-    "body": "- The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is `[3,3,2]` mean with EG insertion? Since it isn't a reduced word, how should this be interpreted? It's not invertible either:\n\n```\nsage: P, Q = RSK([3,3,2], insertion='EG')\nsage: P\n[[2, 3], [3]]\nsage: Q\n[[1, 2], [3]]\nsage: RSK_inverse(P, Q, insertion='EG')\nword: 232\n```\n\n\n- I would have expected that the output of `RSK` could be used as input to `RSK_inverse`:\n\n```\nsage: RSK_inverse(RSK([1,2]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-154-cb6c9a6f810d> in <module>()\n----> 1 RSK_inverse(RSK([Integer(1),Integer(2)]))\n\nTypeError: RSK_inverse() takes at least 2 arguments (1 given)\n```\n",
+    "body": "- The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is `[3,3,2]` mean with EG insertion? Since it isn't a reduced word, how should this be interpreted? It's not invertible either:\n\n```\nsage: P, Q = RSK([3,3,2], insertion='EG')\nsage: P\n[[2, 3], [3]]\nsage: Q\n[[1, 2], [3]]\nsage: RSK_inverse(P, Q, insertion='EG')\nword: 232\n```\n\n- I would have expected that the output of `RSK` could be used as input to `RSK_inverse`:\n\n```\nsage: RSK_inverse(RSK([1,2]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-154-cb6c9a6f810d> in <module>()\n----> 1 RSK_inverse(RSK([Integer(1),Integer(2)]))\n\nTypeError: RSK_inverse() takes at least 2 arguments (1 given)\n```",
     "created_at": "2013-08-17T18:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -1222,7 +1213,6 @@ sage: RSK_inverse(P, Q, insertion='EG')
 word: 232
 ```
 
-
 - I would have expected that the output of `RSK` could be used as input to `RSK_inverse`:
 
 ```
@@ -1237,13 +1227,12 @@ TypeError: RSK_inverse() takes at least 2 arguments (1 given)
 
 
 
-
 ---
 
 archive/issue_comments_075079.json:
 ```json
 {
-    "body": "Hey Franco,\n\nReplying to [comment:38 saliola]:\n> Thanks for writing this patch. I support the proposed clean up of the code, but I want to raise an objection to choices in the user interface:\n> \n> - I don't think that it is useful to deprecate the method `robinson_schensted`:\n> \n>   {{{\n>   DeprecationWarning: p.robinson_schensted() is deprecated. Use instead RSK(p)\n>   }}}\n> \n>   Telling users to use the RSK function instead of a method is not in the spirit of object-oriented programming. More importantly, it is totally unnecessary to deprecate the method.\n\nIf we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.\n\n> - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.\n\nThen what is your proposed interface? If the input is a pair of tableaux as a list or is given as input 2 tableaux, then run the inverse? Hence we should combine two functions which do completely different behavior into one as I think of RSK as a procedure in 1 direction? What about if someone only thinks of this as the Robinson-Schensted bijection and tries `RobinsonSchestead<tab>`? This is why I setup these aliases and imported them.\n\n> - Perhaps these names should not be capitalized since they are python functions and not classes. See the [developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).\n\nFor the full name, probably yes it should be changed. For the shortname `RSK`, it is an acronym, so I think it is better and more likely to be found than `rsk`. See the bottom of [this section of the developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).\n\n> The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?\n\nThe documentation could use some expansion.\n\n> I would have expected that the output of RSK could be used as input to RSK_inverse:\n\nThis is because it's more logical to me for the input to be 2 arguments where we can explicitly specify what they are (as arguments), than a single parameter taking a list and checking to make sure it has length 2 and explaining the (non-standard IMO) input form in the docsting. We could handle both forms of input, but this seems overly complicated, and I imagine python programmers would simply use the `*` to expand the list as inputs as in the EG examples. This could probably use another example (maybe so far as a docstring explanation, but I'm hesitant about that) that's not for EG insertion.\n\nBest,\n\nTravis",
+    "body": "Hey Franco,\n\nReplying to [comment:38 saliola]:\n> Thanks for writing this patch. I support the proposed clean up of the code, but I want to raise an objection to choices in the user interface:\n> \n> - I don't think that it is useful to deprecate the method `robinson_schensted`:\n> \n>   {{{\n>   DeprecationWarning: p.robinson_schensted() is deprecated. Use instead RSK(p)\n>   }}}\n> \n>   Telling users to use the RSK function instead of a method is not in the spirit of object-oriented programming. More importantly, it is totally unnecessary to deprecate the method.\n\n\nIf we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.\n\n> - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.\n\n\nThen what is your proposed interface? If the input is a pair of tableaux as a list or is given as input 2 tableaux, then run the inverse? Hence we should combine two functions which do completely different behavior into one as I think of RSK as a procedure in 1 direction? What about if someone only thinks of this as the Robinson-Schensted bijection and tries `RobinsonSchestead<tab>`? This is why I setup these aliases and imported them.\n\n> - Perhaps these names should not be capitalized since they are python functions and not classes. See the [developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).\n\n\nFor the full name, probably yes it should be changed. For the shortname `RSK`, it is an acronym, so I think it is better and more likely to be found than `rsk`. See the bottom of [this section of the developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).\n\n> The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?\n\n\nThe documentation could use some expansion.\n\n> I would have expected that the output of RSK could be used as input to RSK_inverse:\n\n\nThis is because it's more logical to me for the input to be 2 arguments where we can explicitly specify what they are (as arguments), than a single parameter taking a list and checking to make sure it has length 2 and explaining the (non-standard IMO) input form in the docsting. We could handle both forms of input, but this seems overly complicated, and I imagine python programmers would simply use the `*` to expand the list as inputs as in the EG examples. This could probably use another example (maybe so far as a docstring explanation, but I'm hesitant about that) that's not for EG insertion.\n\nBest,\n\nTravis",
     "created_at": "2013-08-18T16:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -1265,21 +1254,26 @@ Replying to [comment:38 saliola]:
 > 
 >   Telling users to use the RSK function instead of a method is not in the spirit of object-oriented programming. More importantly, it is totally unnecessary to deprecate the method.
 
+
 If we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.
 
 > - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.
+
 
 Then what is your proposed interface? If the input is a pair of tableaux as a list or is given as input 2 tableaux, then run the inverse? Hence we should combine two functions which do completely different behavior into one as I think of RSK as a procedure in 1 direction? What about if someone only thinks of this as the Robinson-Schensted bijection and tries `RobinsonSchestead<tab>`? This is why I setup these aliases and imported them.
 
 > - Perhaps these names should not be capitalized since they are python functions and not classes. See the [developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).
 
+
 For the full name, probably yes it should be changed. For the shortname `RSK`, it is an acronym, so I think it is better and more likely to be found than `rsk`. See the bottom of [this section of the developers guide](http://www.sagemath.org/doc/developer/conventions.html?highlight=camelcase#python-coding-conventions).
 
 > The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?
 
+
 The documentation could use some expansion.
 
 > I would have expected that the output of RSK could be used as input to RSK_inverse:
+
 
 This is because it's more logical to me for the input to be 2 arguments where we can explicitly specify what they are (as arguments), than a single parameter taking a list and checking to make sure it has length 2 and explaining the (non-standard IMO) input form in the docsting. We could handle both forms of input, but this seems overly complicated, and I imagine python programmers would simply use the `*` to expand the list as inputs as in the EG examples. This could probably use another example (maybe so far as a docstring explanation, but I'm hesitant about that) that's not for EG insertion.
 
@@ -1294,7 +1288,7 @@ Travis
 archive/issue_comments_075080.json:
 ```json
 {
-    "body": "Hi Travis,\n\nReplying to [comment:41 tscrim]:\n> If we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.\n\nIf a user makes a permutation p, it would be natural to try p.<tab completion> to see all methods. Currently p.robinson_schensted() works and it is the most natural entry point. There is no reason to deprecate this method, it can just be a one-line function returning RSK(p).\n\n> > - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.\n> \n> Then what is your proposed interface? \n\nCouldn't you just use options for the inverse?\n\n> > The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?\n> \n> The documentation could use some expansion.\n\nRight now it is not clear at all that the input to the Edelman-Greene correspondence are reduced words. Also, if you want to put all insertion algorithms in one method, it might be better to call it insertion_algorithms rather than RSK since RSK is just one of them and I as a user would not think that Edelman-Greene would be under RSK. Or you should have Edelman-Greene as a different method. Plus the documentation definitely needs more details! At least you need to explain what the input is with the various options.\n\nBest,\n\nAnne",
+    "body": "Hi Travis,\n\nReplying to [comment:41 tscrim]:\n> If we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.\n\n\nIf a user makes a permutation p, it would be natural to try p.<tab completion> to see all methods. Currently p.robinson_schensted() works and it is the most natural entry point. There is no reason to deprecate this method, it can just be a one-line function returning RSK(p).\n\n> > - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.\n \n> \n> Then what is your proposed interface? \n\n\nCouldn't you just use options for the inverse?\n\n> > The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?\n\n> \n> The documentation could use some expansion.\n\n\nRight now it is not clear at all that the input to the Edelman-Greene correspondence are reduced words. Also, if you want to put all insertion algorithms in one method, it might be better to call it insertion_algorithms rather than RSK since RSK is just one of them and I as a user would not think that Edelman-Greene would be under RSK. Or you should have Edelman-Greene as a different method. Plus the documentation definitely needs more details! At least you need to explain what the input is with the various options.\n\nBest,\n\nAnne",
     "created_at": "2013-08-19T06:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8392",
     "type": "issue_comment",
@@ -1308,17 +1302,22 @@ Hi Travis,
 Replying to [comment:41 tscrim]:
 > If we wanted to be fully OOP, then there needs to be a class of something like `RSKUsable` which has an abstract method `RSK()` where each type of object implements it's own version of RSK and `RSKUsable` would implement the row-insertion procedure. The problem with this is that we want to be able to handle (pairs of) lists, which we can't modify its class structure and I don't want to have to wrap a list as a word, and I also don't want to clutter up the MRO. Another reason why this is better as a function is most of the operation is independent of the type of object being passed in; all it does is it converts it into a pair of lists of the same size. Thus it provides a uniform interface for objects, and the fact that only permutations has such a method conflicts with this, so I think it is worthwhile to deprecate this.
 
+
 If a user makes a permutation p, it would be natural to try p.<tab completion> to see all methods. Currently p.robinson_schensted() works and it is the most natural entry point. There is no reason to deprecate this method, it can just be a one-line function returning RSK(p).
 
 > > - Also, I disagree with importing `RSK, RSK_inverse, RobinsonSchenstedKnuth, RobinsonSchenstedKnuth_inverse` into the global namespace when one object could easily handle all of these.
+ 
 > 
 > Then what is your proposed interface? 
+
 
 Couldn't you just use options for the inverse?
 
 > > The ability of doing RSK and EG is a great feature, but the documentation isn't very clear. What is [3,3,2] mean with EG insertion? Since it isn't a reduced word, how should this be interpreted?
+
 > 
 > The documentation could use some expansion.
+
 
 Right now it is not clear at all that the input to the Edelman-Greene correspondence are reduced words. Also, if you want to put all insertion algorithms in one method, it might be better to call it insertion_algorithms rather than RSK since RSK is just one of them and I as a user would not think that Edelman-Greene would be under RSK. Or you should have Edelman-Greene as a different method. Plus the documentation definitely needs more details! At least you need to explain what the input is with the various options.
 

@@ -3,7 +3,7 @@
 archive/issues_008604.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse jleroy\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse jleroy\n\nAdd a class for factor-enumerable words, i.e. having an algorithm that enumerates the factor of length n which includes finite words and some family of infinite words. The new file gathers methods (e.g. ``rauzy_graph``) that depends only on the existence of such an algorithm.\n\nIt also adds some method about left,right and bi special words:\n\n```\n    sage: f = words.FibonacciWord()[:30]\n    sage: f.number_of_left_special_factors(7)\n    8\n```\n\nThe new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8604\n\n",
     "created_at": "2010-03-25T12:00:26Z",
     "labels": [
         "component: combinatorics"
@@ -23,13 +23,11 @@ Add a class for factor-enumerable words, i.e. having an algorithm that enumerate
 
 It also adds some method about left,right and bi special words:
 
-
 ```
     sage: f = words.FibonacciWord()[:30]
     sage: f.number_of_left_special_factors(7)
     8
 ```
-
 
 The new class ``Word_nfactor_enumerable`` inherits from the abstract ``Word_class`` and `FiniteWord_class` now inherits from this ``Word_nfactor_enumerable`` class. Later, inifinite words having a such an algorithm will inherit also from this new class (in some other ticket).
 
@@ -102,7 +100,7 @@ I agree with Alex about the iterators on special factors. The only thing you nee
 archive/issue_comments_077815.json:
 ```json
 {
-    "body": "> Very interesting ! I'll try to review this patch as soon as I have some time.\n\nGreat!\n\n> I took a quick look at it and I have a question, though. Why aren't the\n> iterator functions (on the left special, bispecial and right special factor)\n> public ? \n\nI would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.\n\nWell because many of the iterator functions are already hidden this way in sage words. We might want to change this convention. Or maybe, like `factor_iterator`, you think it would be more practicable if those were not hidden as well?\n\n> Since they are used only in the public functions that return the\n> result as a list, I think it would be better either to make the iterator\n> functions public, or to merge the two functions in one. Unless you've a\n> reason to do so ?\n\nI am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :\n\nDo we want the iterator functions of this patch to appear in the default listing of the tab completion on a word?\n\nS\u00e9bastien",
+    "body": "> Very interesting ! I'll try to review this patch as soon as I have some time.\n\n\nGreat!\n\n> I took a quick look at it and I have a question, though. Why aren't the\n> iterator functions (on the left special, bispecial and right special factor)\n> public ? \n\n\nI would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.\n\nWell because many of the iterator functions are already hidden this way in sage words. We might want to change this convention. Or maybe, like `factor_iterator`, you think it would be more practicable if those were not hidden as well?\n\n> Since they are used only in the public functions that return the\n> result as a list, I think it would be better either to make the iterator\n> functions public, or to merge the two functions in one. Unless you've a\n> reason to do so ?\n\n\nI am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :\n\nDo we want the iterator functions of this patch to appear in the default listing of the tab completion on a word?\n\nS\u00e9bastien",
     "created_at": "2010-04-11T13:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
@@ -113,11 +111,13 @@ archive/issue_comments_077815.json:
 
 > Very interesting ! I'll try to review this patch as soon as I have some time.
 
+
 Great!
 
 > I took a quick look at it and I have a question, though. Why aren't the
 > iterator functions (on the left special, bispecial and right special factor)
 > public ? 
+
 
 I would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.
 
@@ -127,6 +127,7 @@ Well because many of the iterator functions are already hidden this way in sage 
 > result as a list, I think it would be better either to make the iterator
 > functions public, or to merge the two functions in one. Unless you've a
 > reason to do so ?
+
 
 I am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :
 
@@ -197,7 +198,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_077819.json:
 ```json
 {
-    "body": "Replying to [comment:4 slabbe]:\n> > Very interesting ! I'll try to review this patch as soon as I have some time.\n> \n> Great!\n> \n> > I took a quick look at it and I have a question, though. Why aren't the\n> > iterator functions (on the left special, bispecial and right special factor)\n> > public ? \n> \n> I would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.\n> \n> Well because many of the iterator functions are already hidden this way in sage words. We might want to change this convention. Or maybe, like `factor_iterator`, you think it would be more practicable if those were not hidden as well?\n>\nI understand your point, but I still think that since the class of factor-enumerable words was introduced in particular to deal with infinite words, one will probably need iterators to handle, say, left special factors. For instance, assume I want to enumerate all right special factors of a given Sturmian word. I'll need to use an iterator (the list won't be built since it's infinite). And I would like the function to appear when I hit `TAB` when calling a function on an infinite word.\n\nWhat I suggest is to remove the underscore character in front of the iterators and even add a warning for the functions `right_special_factors`, etc. that tells the user that this function could not stop. \n \n> > Since they are used only in the public functions that return the\n> > result as a list, I think it would be better either to make the iterator\n> > functions public, or to merge the two functions in one. Unless you've a\n> > reason to do so ?\n> \n> I am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :\n>\nI agree with you on this one, that was a bad idea.\n \n> Do we want the iterator functions of this patch to appear in the default listing of the tab completion on a word?\n>\nI say yes! I know one of your argument about that was that it would reduce the number of functions appearing when you hit `TAB`. On the other hand, there are not so many of them in the case of infinite words.\n \n> S\u00e9bastien\n>",
+    "body": "Replying to [comment:4 slabbe]:\n> > Very interesting ! I'll try to review this patch as soon as I have some time.\n\n> \n> Great!\n> \n> > I took a quick look at it and I have a question, though. Why aren't the\n> > iterator functions (on the left special, bispecial and right special factor)\n> > public ? \n\n> \n> I would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.\n> \n> Well because many of the iterator functions are already hidden this way in sage words. We might want to change this convention. Or maybe, like `factor_iterator`, you think it would be more practicable if those were not hidden as well?\n\n>\nI understand your point, but I still think that since the class of factor-enumerable words was introduced in particular to deal with infinite words, one will probably need iterators to handle, say, left special factors. For instance, assume I want to enumerate all right special factors of a given Sturmian word. I'll need to use an iterator (the list won't be built since it's infinite). And I would like the function to appear when I hit `TAB` when calling a function on an infinite word.\n\nWhat I suggest is to remove the underscore character in front of the iterators and even add a warning for the functions `right_special_factors`, etc. that tells the user that this function could not stop. \n \n> > Since they are used only in the public functions that return the\n> > result as a list, I think it would be better either to make the iterator\n> > functions public, or to merge the two functions in one. Unless you've a\n> > reason to do so ?\n\n> \n> I am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :\n\n>\nI agree with you on this one, that was a bad idea.\n \n> Do we want the iterator functions of this patch to appear in the default listing of the tab completion on a word?\n\n>\nI say yes! I know one of your argument about that was that it would reduce the number of functions appearing when you hit `TAB`. On the other hand, there are not so many of them in the case of infinite words.\n \n> S\u00e9bastien\n\n>",
     "created_at": "2010-04-15T21:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8604",
     "type": "issue_comment",
@@ -208,16 +209,19 @@ archive/issue_comments_077819.json:
 
 Replying to [comment:4 slabbe]:
 > > Very interesting ! I'll try to review this patch as soon as I have some time.
+
 > 
 > Great!
 > 
 > > I took a quick look at it and I have a question, though. Why aren't the
 > > iterator functions (on the left special, bispecial and right special factor)
 > > public ? 
+
 > 
 > I would not say that they are not public since anybody can use it and access it with tab completion by adding the underscore first.
 > 
 > Well because many of the iterator functions are already hidden this way in sage words. We might want to change this convention. Or maybe, like `factor_iterator`, you think it would be more practicable if those were not hidden as well?
+
 >
 I understand your point, but I still think that since the class of factor-enumerable words was introduced in particular to deal with infinite words, one will probably need iterators to handle, say, left special factors. For instance, assume I want to enumerate all right special factors of a given Sturmian word. I'll need to use an iterator (the list won't be built since it's infinite). And I would like the function to appear when I hit `TAB` when calling a function on an infinite word.
 
@@ -227,16 +231,20 @@ What I suggest is to remove the underscore character in front of the iterators a
 > > result as a list, I think it would be better either to make the iterator
 > > functions public, or to merge the two functions in one. Unless you've a
 > > reason to do so ?
+
 > 
 > I am against merging those two functions in one since both functions can be very usefull in different situations. The only question I see is (I don't like using the word public) :
+
 >
 I agree with you on this one, that was a bad idea.
  
 > Do we want the iterator functions of this patch to appear in the default listing of the tab completion on a word?
+
 >
 I say yes! I know one of your argument about that was that it would reduce the number of functions appearing when you hit `TAB`. On the other hand, there are not so many of them in the case of infinite words.
  
 > Sébastien
+
 >
 
 

@@ -134,7 +134,7 @@ archive/issue_events_009806.json:
 archive/issue_comments_031709.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> Dan: Please post patches and not diffs in the future.\n\nOops. Sorry. I keep doing `qdiff` when I mean `export qtip`.",
+    "body": "Replying to [comment:4 mabshoff]:\n> Dan: Please post patches and not diffs in the future.\n\n\nOops. Sorry. I keep doing `qdiff` when I mean `export qtip`.",
     "created_at": "2008-10-26T23:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4332",
     "type": "issue_comment",
@@ -145,5 +145,6 @@ archive/issue_comments_031709.json:
 
 Replying to [comment:4 mabshoff]:
 > Dan: Please post patches and not diffs in the future.
+
 
 Oops. Sorry. I keep doing `qdiff` when I mean `export qtip`.

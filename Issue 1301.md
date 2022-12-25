@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1301
 archive/issue_comments_008152.json:
 ```json
 {
-    "body": "From Robert Miller:\n\n\n```\n>>> We need some hooks to nauty.\n> Not done: we have reimplemented instead. If I don't do it before Sage\n> Days 7, I will do it there: create a (necessarily optional) spkg to\n> include nauty, and give all the relevant functions the option to call\n> nauty instead. I believe geng is part of nauty, so this would come\n> along for the ride. This should definitely be a wishlist trac ticket.\n```\n",
+    "body": "From Robert Miller:\n\n```\n>>> We need some hooks to nauty.\n> Not done: we have reimplemented instead. If I don't do it before Sage\n> Days 7, I will do it there: create a (necessarily optional) spkg to\n> include nauty, and give all the relevant functions the option to call\n> nauty instead. I believe geng is part of nauty, so this would come\n> along for the ride. This should definitely be a wishlist trac ticket.\n```",
     "created_at": "2007-11-28T19:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_008152.json:
 
 From Robert Miller:
 
-
 ```
 >>> We need some hooks to nauty.
 > Not done: we have reimplemented instead. If I don't do it before Sage
@@ -55,7 +54,6 @@ From Robert Miller:
 > nauty instead. I believe geng is part of nauty, so this would come
 > along for the ride. This should definitely be a wishlist trac ticket.
 ```
-
 
 
 

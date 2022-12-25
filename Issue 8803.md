@@ -89,7 +89,7 @@ Note that I don't know that anything has ever actually been removed after being 
 archive/issue_comments_080632.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Note that I don't know that anything has ever actually been removed after being deprecated.  For example, the warning that comes when evaluating an expression like (x<sup>2+y</sup>2)(1,2) has been there for well over a year, but still shows no signs of disappearing.\n\nWith Sage 5.0 being the next major release, perhaps it's now time to remove any deprecated functions/classes/methods that are over 6 months old. Such removal could happen after Sage 4.4.2 is out next week.",
+    "body": "Replying to [comment:2 jason]:\n> Note that I don't know that anything has ever actually been removed after being deprecated.  For example, the warning that comes when evaluating an expression like (x<sup>2+y</sup>2)(1,2) has been there for well over a year, but still shows no signs of disappearing.\n\n\nWith Sage 5.0 being the next major release, perhaps it's now time to remove any deprecated functions/classes/methods that are over 6 months old. Such removal could happen after Sage 4.4.2 is out next week.",
     "created_at": "2010-05-09T01:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
@@ -100,6 +100,7 @@ archive/issue_comments_080632.json:
 
 Replying to [comment:2 jason]:
 > Note that I don't know that anything has ever actually been removed after being deprecated.  For example, the warning that comes when evaluating an expression like (x<sup>2+y</sup>2)(1,2) has been there for well over a year, but still shows no signs of disappearing.
+
 
 With Sage 5.0 being the next major release, perhaps it's now time to remove any deprecated functions/classes/methods that are over 6 months old. Such removal could happen after Sage 4.4.2 is out next week.
 
@@ -184,7 +185,7 @@ archive/issue_comments_080636.json:
 archive/issue_comments_080637.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> See # 5448; this module has been deprecated since Sage 4.1.2, which was released on October 14, 2009.  It has not yet been one year, nor will it have been when Sage 5.0 is released (let's hope!).  On the other hand, the whole module was essentially internal functions for use in plot functions.  At any rate, there is no point in doing any more doctests for this, even if it \"hurts\" the coverage score.\n\nThe developer guide certainly was not thinking 18 months, and since this is not some common mistake like `f=4*x; f(3)` there should be no harm in removing it.  Looks like 5.0 isn't coming any time soon, but we should do this.  Patch coming up.",
+    "body": "Replying to [comment:1 kcrisman]:\n> See # 5448; this module has been deprecated since Sage 4.1.2, which was released on October 14, 2009.  It has not yet been one year, nor will it have been when Sage 5.0 is released (let's hope!).  On the other hand, the whole module was essentially internal functions for use in plot functions.  At any rate, there is no point in doing any more doctests for this, even if it \"hurts\" the coverage score.\n\n\nThe developer guide certainly was not thinking 18 months, and since this is not some common mistake like `f=4*x; f(3)` there should be no harm in removing it.  Looks like 5.0 isn't coming any time soon, but we should do this.  Patch coming up.",
     "created_at": "2011-02-17T14:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
@@ -195,6 +196,7 @@ archive/issue_comments_080637.json:
 
 Replying to [comment:1 kcrisman]:
 > See # 5448; this module has been deprecated since Sage 4.1.2, which was released on October 14, 2009.  It has not yet been one year, nor will it have been when Sage 5.0 is released (let's hope!).  On the other hand, the whole module was essentially internal functions for use in plot functions.  At any rate, there is no point in doing any more doctests for this, even if it "hurts" the coverage score.
+
 
 The developer guide certainly was not thinking 18 months, and since this is not some common mistake like `f=4*x; f(3)` there should be no harm in removing it.  Looks like 5.0 isn't coming any time soon, but we should do this.  Patch coming up.
 
@@ -444,7 +446,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_080648.json:
 ```json
 {
-    "body": "Replying to [comment:18 kcrisman]:\n> Hopefully this will do it.  \n\nYep, thanks!",
+    "body": "Replying to [comment:18 kcrisman]:\n> Hopefully this will do it.  \n\n\nYep, thanks!",
     "created_at": "2011-05-16T19:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8803",
     "type": "issue_comment",
@@ -455,6 +457,7 @@ archive/issue_comments_080648.json:
 
 Replying to [comment:18 kcrisman]:
 > Hopefully this will do it.  
+
 
 Yep, thanks!
 

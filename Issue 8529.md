@@ -112,7 +112,7 @@ Also, when a patch is ready for review, change the state below to "needs review"
 archive/issue_comments_076951.json:
 ```json
 {
-    "body": "See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\n\n```\nvar('x,y')\nimplicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n```\n\n\nI think it might be enough to give another argument to the `@`options decorator for implicit_plot: `cmap=[\"blue\"]`",
+    "body": "See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\n```\nvar('x,y')\nimplicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n```\n\nI think it might be enough to give another argument to the `@`options decorator for implicit_plot: `cmap=[\"blue\"]`",
     "created_at": "2010-07-27T23:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -123,12 +123,10 @@ archive/issue_comments_076951.json:
 
 See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:
 
-
 ```
 var('x,y')
 implicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=["red"])
 ```
-
 
 I think it might be enough to give another argument to the `@`options decorator for implicit_plot: `cmap=["blue"]`
 
@@ -157,7 +155,7 @@ Even better, do `cmap=("blue")`, since then the tuple can not be modified by oth
 archive/issue_comments_076953.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> Even better, do `cmap=(\"blue\")`, since then the tuple can not be modified by other things.\n\nI mean `cmap=(\"blue\",)`, so that it's a tuple, not just a string in parentheses.",
+    "body": "Replying to [comment:6 jason]:\n> Even better, do `cmap=(\"blue\")`, since then the tuple can not be modified by other things.\n\n\nI mean `cmap=(\"blue\",)`, so that it's a tuple, not just a string in parentheses.",
     "created_at": "2010-07-28T00:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -169,6 +167,7 @@ archive/issue_comments_076953.json:
 Replying to [comment:6 jason]:
 > Even better, do `cmap=("blue")`, since then the tuple can not be modified by other things.
 
+
 I mean `cmap=("blue",)`, so that it's a tuple, not just a string in parentheses.
 
 
@@ -178,7 +177,7 @@ I mean `cmap=("blue",)`, so that it's a tuple, not just a string in parentheses.
 archive/issue_comments_076954.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\nIf you published this, you didn't include the link.\n> \n> {{{\n> var('x,y')\n> implicit_plot(x<sup>2-y</sup>2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n> }}}\n\nSo annoying that color='red' wouldn't work.  What happens with that?",
+    "body": "Replying to [comment:5 jason]:\n> See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\n\nIf you published this, you didn't include the link.\n> \n> \n> ```\n> var('x,y')\n> implicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n> ```\n\n\nSo annoying that color='red' wouldn't work.  What happens with that?",
     "created_at": "2010-07-28T01:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -190,12 +189,15 @@ archive/issue_comments_076954.json:
 Replying to [comment:5 jason]:
 > See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:
 
+
 If you published this, you didn't include the link.
 > 
-> {{{
+> 
+> ```
 > var('x,y')
-> implicit_plot(x<sup>2-y</sup>2==1, (x,-5,5), (y,-5,5), cmap=["red"])
-> }}}
+> implicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=["red"])
+> ```
+
 
 So annoying that color='red' wouldn't work.  What happens with that?
 
@@ -206,7 +208,7 @@ So annoying that color='red' wouldn't work.  What happens with that?
 archive/issue_comments_076955.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> Ryan!  Welcome to Trac!  Congratulations on your patch!\n> \n\nYes!  You aren't by chance the famed little brother of Jason, are you?",
+    "body": "Replying to [comment:4 jason]:\n> Ryan!  Welcome to Trac!  Congratulations on your patch!\n> \n\n\nYes!  You aren't by chance the famed little brother of Jason, are you?",
     "created_at": "2010-07-28T01:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -219,6 +221,7 @@ Replying to [comment:4 jason]:
 > Ryan!  Welcome to Trac!  Congratulations on your patch!
 > 
 
+
 Yes!  You aren't by chance the famed little brother of Jason, are you?
 
 
@@ -228,7 +231,7 @@ Yes!  You aren't by chance the famed little brother of Jason, are you?
 archive/issue_comments_076956.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n\n\n> So annoying that color='red' wouldn't work.  What happens with that?\n\nThat would take one or two more lines of code to support.  Probably add it to `@`options, and then make a cmap=[<color>] argument that is passed to contour_plot.",
+    "body": "Replying to [comment:8 kcrisman]:\n\n\n> So annoying that color='red' wouldn't work.  What happens with that?\n\n\nThat would take one or two more lines of code to support.  Probably add it to `@`options, and then make a cmap=[<color>] argument that is passed to contour_plot.",
     "created_at": "2010-07-28T08:00:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -241,6 +244,7 @@ Replying to [comment:8 kcrisman]:
 
 
 > So annoying that color='red' wouldn't work.  What happens with that?
+
 
 That would take one or two more lines of code to support.  Probably add it to `@`options, and then make a cmap=[<color>] argument that is passed to contour_plot.
 
@@ -295,7 +299,7 @@ Just take your favorite example and put it in the EXAMPLES section of the docstr
 archive/issue_comments_076959.json:
 ```json
 {
-    "body": "(and it's more than nice; patches are required to have doctests if they fix a bug or add new features these days...)\n\nAfter you add a doctest, then you can run:\n\n\n```\nsage -b\n```\n\n\nto rebuild, and then \n\n\n```\nsage -t contour_plot.py\n```\n\n\nto run the tests.",
+    "body": "(and it's more than nice; patches are required to have doctests if they fix a bug or add new features these days...)\n\nAfter you add a doctest, then you can run:\n\n```\nsage -b\n```\n\nto rebuild, and then \n\n```\nsage -t contour_plot.py\n```\n\nto run the tests.",
     "created_at": "2010-07-31T04:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -308,19 +312,15 @@ archive/issue_comments_076959.json:
 
 After you add a doctest, then you can run:
 
-
 ```
 sage -b
 ```
 
-
 to rebuild, and then 
-
 
 ```
 sage -t contour_plot.py
 ```
-
 
 to run the tests.
 
@@ -505,7 +505,7 @@ please apply my reviewer-reviewer patch on top of everything else; it simplifies
 archive/issue_comments_076969.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.\nThanks, I didn't know about this `~` notation.",
+    "body": "Replying to [comment:18 jason]:\n> please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.\n\nThanks, I didn't know about this `~` notation.",
     "created_at": "2010-08-16T12:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -516,6 +516,7 @@ archive/issue_comments_076969.json:
 
 Replying to [comment:18 jason]:
 > please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.
+
 Thanks, I didn't know about this `~` notation.
 
 
@@ -543,7 +544,7 @@ Just FYI, the (essentially) positively reviewed #9203 and #9076 add functions wi
 archive/issue_comments_076971.json:
 ```json
 {
-    "body": "With the other tickets merged into 4.6.alpha1, I get\n\n```\n[...]\n$ hg qpush\napplying trac-8529-reviewer-reviewer.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-8529-reviewer-reviewer.patch\n```\n\nThe .rej file:\n\n```diff\n--- plot.py\n+++ plot.py\n@@ -7,20 +7,20 @@\n The following graphics primitives are supported:\n \n \n--  :func:`arrow() <sage.plot.arrow.arrow>` - an arrow from a min point to a max point.\n-\n--  :func:`circle() <sage.plot.circle.circle>` - a circle with given radius\n-\n--  :func:`disk() <sage.plot.disk.disk>` - a filled disk (i.e. a sector or wedge of a circle)\n-\n--  :func:`line() <sage.plot.line.line>` - a line determined by a sequence of points (this need not\n+-  :func:`~sage.plot.arrow.arrow` - an arrow from a min point to a max point.\n+\n+-  :func:`~sage.plot.circle.circle` - a circle with given radius\n+\n+-  :func:`~sage.plot.disk.disk` - a filled disk (i.e. a sector or wedge of a circle)\n+\n+-  :func:`~sage.plot.line.line` - a line determined by a sequence of points (this need not\n    be straight!)\n \n--  :func:`point() <sage.plot.point.point>` - a point\n-\n--  :func:`text() <sage.plot.text.text>` - some text\n-\n--  :func:`polygon() <sage.plot.polygon.polygon>` - a filled polygon\n+-  :func:`~sage.plot.point.point` - a point\n+\n+-  :func:`~sage.plot.text.text` - some text\n+\n+-  :func:`~sage.plot.polygon.polygon` - a filled polygon\n \n \n The following plotting functions are supported:\n```\n\nCould someone rebase the \"reviewer-reviewer\" patch when 4.6.alpha1 is out?",
+    "body": "With the other tickets merged into 4.6.alpha1, I get\n\n```\n[...]\n$ hg qpush\napplying trac-8529-reviewer-reviewer.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-8529-reviewer-reviewer.patch\n```\nThe .rej file:\n\n```diff\n--- plot.py\n+++ plot.py\n@@ -7,20 +7,20 @@\n The following graphics primitives are supported:\n \n \n--  :func:`arrow() <sage.plot.arrow.arrow>` - an arrow from a min point to a max point.\n-\n--  :func:`circle() <sage.plot.circle.circle>` - a circle with given radius\n-\n--  :func:`disk() <sage.plot.disk.disk>` - a filled disk (i.e. a sector or wedge of a circle)\n-\n--  :func:`line() <sage.plot.line.line>` - a line determined by a sequence of points (this need not\n+-  :func:`~sage.plot.arrow.arrow` - an arrow from a min point to a max point.\n+\n+-  :func:`~sage.plot.circle.circle` - a circle with given radius\n+\n+-  :func:`~sage.plot.disk.disk` - a filled disk (i.e. a sector or wedge of a circle)\n+\n+-  :func:`~sage.plot.line.line` - a line determined by a sequence of points (this need not\n    be straight!)\n \n--  :func:`point() <sage.plot.point.point>` - a point\n-\n--  :func:`text() <sage.plot.text.text>` - some text\n-\n--  :func:`polygon() <sage.plot.polygon.polygon>` - a filled polygon\n+-  :func:`~sage.plot.point.point` - a point\n+\n+-  :func:`~sage.plot.text.text` - some text\n+\n+-  :func:`~sage.plot.polygon.polygon` - a filled polygon\n \n \n The following plotting functions are supported:\n```\nCould someone rebase the \"reviewer-reviewer\" patch when 4.6.alpha1 is out?",
     "created_at": "2010-09-18T07:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
@@ -565,7 +566,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac-8529-reviewer-reviewer.patch
 ```
-
 The .rej file:
 
 ```diff
@@ -605,7 +605,6 @@ The .rej file:
  
  The following plotting functions are supported:
 ```
-
 Could someone rebase the "reviewer-reviewer" patch when 4.6.alpha1 is out?
 
 

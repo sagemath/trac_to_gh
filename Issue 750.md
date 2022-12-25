@@ -3,7 +3,7 @@
 archive/issues_000750.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nIt would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like\n\n```\n  sage: g.dict()\n{1:2, 2:1}\n```\n\nIt would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.\n\n```\n  sage: g.action(range(3))\n[0,2,1]\n```\n\nAre these things possible already?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/750\n\n",
     "created_at": "2007-09-24T23:13:58Z",
     "labels": [
         "component: combinatorics",
@@ -22,21 +22,17 @@ CC:  sage-combinat
 
 It would be nice to get permutation elements as dictionaries as well as lists.  If g is a permutation group element, then something like
 
-
 ```
   sage: g.dict()
 {1:2, 2:1}
 ```
 
-
 It would also be nice if we could have permutation elements act on lists to switch the order according to the permutation.
-
 
 ```
   sage: g.action(range(3))
 [0,2,1]
 ```
-
 
 Are these things possible already?
 
@@ -69,7 +65,7 @@ archive/issue_events_002043.json:
 archive/issue_comments_004420.json:
 ```json
 {
-    "body": "Attachment [750.hg](tarball://root/attachments/some-uuid/ticket750/750.hg) by boothby created at 2007-10-27 22:01:10\n\nAdded a patch to implement something similar to the second.  With this patch, one may do the following:\n\n\n```\nsage: G = SymmetricGroup(4)\nsage: g = G((1,2,3,4))\nsage: sage: g('abcd')\n'bcda'\nsage: sage: g([0,1,2,3])\n[1, 2, 3, 0]\nsage: sage: g(('foo','bar','baz','what'))\n('bar', 'baz', 'what', 'foo')\n```\n\n\nHowever, I can see absolutely no reason for one to want a dict rather than a list.  Do you have an example of where this might be useful?",
+    "body": "Attachment [750.hg](tarball://root/attachments/some-uuid/ticket750/750.hg) by boothby created at 2007-10-27 22:01:10\n\nAdded a patch to implement something similar to the second.  With this patch, one may do the following:\n\n```\nsage: G = SymmetricGroup(4)\nsage: g = G((1,2,3,4))\nsage: sage: g('abcd')\n'bcda'\nsage: sage: g([0,1,2,3])\n[1, 2, 3, 0]\nsage: sage: g(('foo','bar','baz','what'))\n('bar', 'baz', 'what', 'foo')\n```\n\nHowever, I can see absolutely no reason for one to want a dict rather than a list.  Do you have an example of where this might be useful?",
     "created_at": "2007-10-27T22:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/750",
     "type": "issue_comment",
@@ -82,7 +78,6 @@ Attachment [750.hg](tarball://root/attachments/some-uuid/ticket750/750.hg) by bo
 
 Added a patch to implement something similar to the second.  With this patch, one may do the following:
 
-
 ```
 sage: G = SymmetricGroup(4)
 sage: g = G((1,2,3,4))
@@ -93,7 +88,6 @@ sage: sage: g([0,1,2,3])
 sage: sage: g(('foo','bar','baz','what'))
 ('bar', 'baz', 'what', 'foo')
 ```
-
 
 However, I can see absolutely no reason for one to want a dict rather than a list.  Do you have an example of where this might be useful?
 

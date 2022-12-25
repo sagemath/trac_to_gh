@@ -68,7 +68,7 @@ Looks good to me.  Apply 2542-2.patch which is rebased against 2.10.4.alpha0.
 archive/issue_comments_017297.json:
 ```json
 {
-    "body": "This patch causes a doctest failure for me:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"matrix2.pyx\", line 1170:\n    sage: A.right_nullity()\nExpected:\n    1\nGot:\n    0\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_26\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_matrix2.pyx\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes a doctest failure for me:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"matrix2.pyx\", line 1170:\n    sage: A.right_nullity()\nExpected:\n    1\nGot:\n    0\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_26\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_matrix2.pyx\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T05:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2542",
     "type": "issue_comment",
@@ -95,7 +95,6 @@ Got:
 For whitespace errors, see the file .doctest_matrix2.pyx
 ```
 
-
 Cheers,
 
 Michael
@@ -107,7 +106,7 @@ Michael
 archive/issue_comments_017298.json:
 ```json
 {
-    "body": "\n```\n[06:34] <mhansen> mabshoff: For 2542, the doctest is wrong and the answer returned is correct.\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n[06:34] <mhansen> mabshoff: For 2542, the doctest is wrong and the answer returned is correct.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T06:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2542",
     "type": "issue_comment",
@@ -116,11 +115,9 @@ archive/issue_comments_017298.json:
 }
 ```
 
-
 ```
 [06:34] <mhansen> mabshoff: For 2542, the doctest is wrong and the answer returned is correct.
 ```
-
 
 Cheers,
 

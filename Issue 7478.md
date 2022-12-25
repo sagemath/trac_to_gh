@@ -3,7 +3,7 @@
 archive/issues_007478.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nKeywords: TestSuite\n\nWhen testing something in verbose mode the typical output of sage is:\n\n```\n\u00a0 \u00a0sage: P = Sets().example(\"inherits\")\n\u00a0 \u00a0sage: TestSuite(P).run(verbose=True)\n\u00a0 \u00a0running ._test_an_element() ... done\n\u00a0 \u00a0running ._test_element_pickling() ... done\n\u00a0 \u00a0running ._test_not_implemented_methods() ... done\n\u00a0 \u00a0running ._test_pickling() ... done\n\u00a0 \u00a0running ._test_some_elements() ... done\n```\n\nAnd there is some risks that the \"...\" match something they should'nt I change them to \"..\"\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7478\n\n",
+    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nKeywords: TestSuite\n\nWhen testing something in verbose mode the typical output of sage is:\n\n```\n\u00a0 \u00a0sage: P = Sets().example(\"inherits\")\n\u00a0 \u00a0sage: TestSuite(P).run(verbose=True)\n\u00a0 \u00a0running ._test_an_element() ... done\n\u00a0 \u00a0running ._test_element_pickling() ... done\n\u00a0 \u00a0running ._test_not_implemented_methods() ... done\n\u00a0 \u00a0running ._test_pickling() ... done\n\u00a0 \u00a0running ._test_some_elements() ... done\n```\nAnd there is some risks that the \"...\" match something they should'nt I change them to \"..\"\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7478\n\n",
     "created_at": "2009-11-17T08:03:23Z",
     "labels": [
         "component: misc",
@@ -33,7 +33,6 @@ When testing something in verbose mode the typical output of sage is:
    running ._test_pickling() ... done
    running ._test_some_elements() ... done
 ```
-
 And there is some risks that the "..." match something they should'nt I change them to ".."
 
 Cheers,
@@ -141,7 +140,7 @@ There is a spurious "only" to "o.." change in sets_cat.py.
 archive/issue_comments_063014.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> There is a spurious \"only\" to \"o..\" change in sets_cat.py.\n\nGood spot :-)\n\nI had already found a couple, and thought I had done a systematic search.\n\nFixed in the newly uploaded patch.",
+    "body": "Replying to [comment:4 mhansen]:\n> There is a spurious \"only\" to \"o..\" change in sets_cat.py.\n\n\nGood spot :-)\n\nI had already found a couple, and thought I had done a systematic search.\n\nFixed in the newly uploaded patch.",
     "created_at": "2009-11-18T18:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
@@ -152,6 +151,7 @@ archive/issue_comments_063014.json:
 
 Replying to [comment:4 mhansen]:
 > There is a spurious "only" to "o.." change in sets_cat.py.
+
 
 Good spot :-)
 
@@ -206,7 +206,7 @@ on the queue. Then either me or you fold, reupload and set positive review.
 archive/issue_comments_063017.json:
 ```json
 {
-    "body": "Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by @nthiery created at 2009-11-18 22:09:46\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\nReview patch is good. Folded and uploaded. positive review.",
+    "body": "Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by @nthiery created at 2009-11-18 22:09:46\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\n\nReview patch is good. Folded and uploaded. positive review.",
     "created_at": "2009-11-18T22:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
@@ -223,6 +223,7 @@ Replying to [comment:7 hivert]:
 > on the queue. Then either me or you fold, reupload and set positive review. 
 > 
 > ...trying to ping you on irc for synchro.
+
 
 Review patch is good. Folded and uploaded. positive review.
 

@@ -3,7 +3,7 @@
 archive/issues_006329.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/rings/rational.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/rational.pyx\", line 3087:\n    sage: magma(3/1).Type()             # optional\nExpected:\n    FldRatElt\nGot:\n    RngIntElt\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_84\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6329\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/rings/rational.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/rational.pyx\", line 3087:\n    sage: magma(3/1).Type()             # optional\nExpected:\n    FldRatElt\nGot:\n    RngIntElt\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_84\n***Test Failed*** 1 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6329\n\n",
     "created_at": "2009-06-16T15:06:55Z",
     "labels": [
         "component: optional packages",
@@ -17,7 +17,6 @@ archive/issues_006329.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/sage/rings/rational.pyx
@@ -34,7 +33,6 @@ Got:
 ***Test Failed*** 1 failures.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6329
 
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6329
 archive/issue_comments_050425.json:
 ```json
 {
-    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 218:\n    sage: magma(HyperellipticCurve(f)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -2048/375, -4096/25, -4881645568/84375 ]\nGot:\n    [ -640, -20480, 1310720, 52160364544 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 220:\n    sage: magma(HyperellipticCurve(f(2*x))).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -8388608/375, -1073741824/25, -5241627016305836032/84375 ]\nGot:\n    [ -40960, -83886080, 343597383680, 56006764965979488256 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 222:\n    sage: magma(HyperellipticCurve(f, x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -8/15, 17504/5625, -23162896/140625, -420832861216768/7119140625 ]\nGot:\n    [ -640, 17920, -1966656, 52409511936 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 224:\n    sage: magma(HyperellipticCurve(f(2*x), 2*x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -512/15, 71696384/5625, -6072014209024/140625, -451865844002031331704832/7119140625 ]\nGot:\n    [ -40960, 73400320, -515547070464, 56274284941110411264 ]\n**********************************************************************\n1 items had failures:\n   4 of  12 in __main__.example_7\n***Test Failed*** 4 failures.\n\n```\n",
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 218:\n    sage: magma(HyperellipticCurve(f)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -2048/375, -4096/25, -4881645568/84375 ]\nGot:\n    [ -640, -20480, 1310720, 52160364544 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 220:\n    sage: magma(HyperellipticCurve(f(2*x))).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -8388608/375, -1073741824/25, -5241627016305836032/84375 ]\nGot:\n    [ -40960, -83886080, 343597383680, 56006764965979488256 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 222:\n    sage: magma(HyperellipticCurve(f, x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -8/15, 17504/5625, -23162896/140625, -420832861216768/7119140625 ]\nGot:\n    [ -640, 17920, -1966656, 52409511936 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 224:\n    sage: magma(HyperellipticCurve(f(2*x), 2*x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -512/15, 71696384/5625, -6072014209024/140625, -451865844002031331704832/7119140625 ]\nGot:\n    [ -40960, 73400320, -515547070464, 56274284941110411264 ]\n**********************************************************************\n1 items had failures:\n   4 of  12 in __main__.example_7\n***Test Failed*** 4 failures.\n\n```",
     "created_at": "2009-06-16T15:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -96,13 +94,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_050426.json:
 ```json
 {
-    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/magma.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[2]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma###line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Error evaluating Magma code...\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[3]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma###line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 917:\n    sage: print magma.load(SAGE_TMP + 'a.m')      # optional - magma\nExpected:\n    Loading \".../.sage//temp/.../a.m\"\n    hi\nGot:\n    Loading \"/scratch/wstein/sage//temp/sage.math.washington.edu/31604/a.m\"\n    hi\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2148:\n    sage: magma.eval('R<x> := PolynomialRing(RationalField()); f := (x-17/2)^3;')     # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2160:\n    sage: magma.eval('K<a> := CyclotomicField(11)')       # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 463:\n    sage: magma.eval(\"a := %s;\"%(10^10000))    # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\n4 items had failures:\n   2 of   4 in __main__.example_20\n   1 of   5 in __main__.example_22\n   2 of  28 in __main__.example_64\n   1 of   4 in __main__.example_9\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_magma.py\n\t [32.9 s]\n\n```\n",
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/magma.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[2]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma###line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Error evaluating Magma code...\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[3]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma###line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 917:\n    sage: print magma.load(SAGE_TMP + 'a.m')      # optional - magma\nExpected:\n    Loading \".../.sage//temp/.../a.m\"\n    hi\nGot:\n    Loading \"/scratch/wstein/sage//temp/sage.math.washington.edu/31604/a.m\"\n    hi\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2148:\n    sage: magma.eval('R<x> := PolynomialRing(RationalField()); f := (x-17/2)^3;')     # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2160:\n    sage: magma.eval('K<a> := CyclotomicField(11)')       # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 463:\n    sage: magma.eval(\"a := %s;\"%(10^10000))    # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\n4 items had failures:\n   2 of   4 in __main__.example_20\n   1 of   5 in __main__.example_22\n   2 of  28 in __main__.example_64\n   1 of   4 in __main__.example_9\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_magma.py\n\t [32.9 s]\n\n```",
     "created_at": "2009-06-16T15:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -190,7 +187,6 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 	 [32.9 s]
 
 ```
-
 
 
 
@@ -327,7 +323,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_050433.json:
 ```json
 {
-    "body": "It seems like the correct fix would be to always put the denominator in the _magma_init_ method.\n\n\n```\n        s = self.numerator()._magma_init_(magma)\n        s += '/' + self.denominator()._magma_init_(magma)\n        return s\n```\n\n\ninstead of \n\n\n```\n        s = self.numerator()._magma_init_(magma)\n        if not self.is_integral():\n            s += '/' + self.denominator()._magma_init_(magma)\n        return s\n\n```\n",
+    "body": "It seems like the correct fix would be to always put the denominator in the _magma_init_ method.\n\n```\n        s = self.numerator()._magma_init_(magma)\n        s += '/' + self.denominator()._magma_init_(magma)\n        return s\n```\n\ninstead of \n\n```\n        s = self.numerator()._magma_init_(magma)\n        if not self.is_integral():\n            s += '/' + self.denominator()._magma_init_(magma)\n        return s\n\n```",
     "created_at": "2011-08-23T01:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -338,16 +334,13 @@ archive/issue_comments_050433.json:
 
 It seems like the correct fix would be to always put the denominator in the _magma_init_ method.
 
-
 ```
         s = self.numerator()._magma_init_(magma)
         s += '/' + self.denominator()._magma_init_(magma)
         return s
 ```
 
-
 instead of 
-
 
 ```
         s = self.numerator()._magma_init_(magma)
@@ -356,7 +349,6 @@ instead of
         return s
 
 ```
-
 
 
 
@@ -457,7 +449,7 @@ We should add a doctest for the integral case.
 archive/issue_comments_050439.json:
 ```json
 {
-    "body": "Replying to [comment:8 mhansen]:\n> We should add a doctest for the integral case.\n\nWhat do you mean by this?  If you mean `sage: magma(3/1).Type()`, which is in the ticket description, then there is *already* a doctest for this case, which is how we found this bug in the first place. \n\nOr do you mean adding something to integer.pyx???",
+    "body": "Replying to [comment:8 mhansen]:\n> We should add a doctest for the integral case.\n\n\nWhat do you mean by this?  If you mean `sage: magma(3/1).Type()`, which is in the ticket description, then there is *already* a doctest for this case, which is how we found this bug in the first place. \n\nOr do you mean adding something to integer.pyx???",
     "created_at": "2011-08-24T04:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6329",
     "type": "issue_comment",
@@ -468,6 +460,7 @@ archive/issue_comments_050439.json:
 
 Replying to [comment:8 mhansen]:
 > We should add a doctest for the integral case.
+
 
 What do you mean by this?  If you mean `sage: magma(3/1).Type()`, which is in the ticket description, then there is *already* a doctest for this case, which is how we found this bug in the first place. 
 

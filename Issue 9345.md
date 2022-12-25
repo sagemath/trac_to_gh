@@ -3,7 +3,7 @@
 archive/issues_009345.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nSsage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nSsage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
     "created_at": "2010-06-26T10:42:28Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  @jdemeyer
 
 Ssage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm
 
-
 ```
 sage: rational_reconstruction(1,0)
 
@@ -37,7 +36,6 @@ Sage will now terminate (sorry).
 ------------------------------------------------------------
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9345
 
@@ -131,7 +129,7 @@ See the ticket description for instructions on how to apply the relevant patches
 archive/issue_comments_088566.json:
 ```json
 {
-    "body": "Not quite solved, the problem is not in this method, but in the compiled rational reconstruction\n\n\n```\nsage: ZZ(1).rational_reconstruction(0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nI will update the patch to the correct function",
+    "body": "Not quite solved, the problem is not in this method, but in the compiled rational reconstruction\n\n```\nsage: ZZ(1).rational_reconstruction(0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\nI will update the patch to the correct function",
     "created_at": "2010-06-26T11:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -141,7 +139,6 @@ archive/issue_comments_088566.json:
 ```
 
 Not quite solved, the problem is not in this method, but in the compiled rational reconstruction
-
 
 ```
 sage: ZZ(1).rational_reconstruction(0)
@@ -156,7 +153,6 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 I will update the patch to the correct function
 
@@ -185,7 +181,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088568.json:
 ```json
 {
-    "body": "The following files have a call to rational_reconstruction, computed using\n\n\n```\nsage: search_src('rational_reconstruction',interact=False)\n\n```\n\nand code to make Sage crash\n\n* rings/integer.pyx\n\n\n```\n sage: ZZ(1).rational_reconstruction(0)\n```\n\n  Calls rational.pyrex_rational_reconstruction\n\n* rings/rational.pyx\n\n\n```\n sage: sage.rings.rational.pyrex_rational_reconstruction(1,0)\n```\n\n* rings/arith.py\n\n\n```\n sage: rational_reconstruction(1,0)\n```\n\n  Calls ZZ.rational_reconstruction\n\n* rings/finite_rings/element_ext_pari.py\n\n  Unable to crash, it is an element of a finite field. Anyway, it calls arith.rational_reconstruction\n\n* rings/finite_rings/integer_mod.pyx\n\n  Unable to crash, an element mod 0 is an Integer. Anyway, it calls ZZ.rational_reconstruction\n\n* rings/padics/padic_generic_element.pyx\n\n  Unable to crash, modulus of a p-adic element is not zero. anyway, it calls arith.rational_reconstruction\n\n* matrix/matrix_rational_dense.pyx\n\n1. _lift_crt_rr\n2. _lift_crt_rr_with_lcm\n\n\n   Obsolete functions for crt? They seem not to be used anywhere. By the code, it seems tha mm should be a list of moduli matrices (call of _lift_crt). On the other hand, the product should be an integer \nm= mm.prod(); mpq_rational_reconstruction(Q_row[j], Z_row[j], m.value) So I cannot test whether there is a problem for these functions. I am not able to get crashes or any sensible output from these functions.\n\n* matrix/matrix_integer_sparse.pyx\n\n\n```\n sage: M = random_matrix(ZZ, 3, 3, 'sparse')\n sage: M.rational_reconstruction()\n```\n\n  Calls misc.matrix_integer_sparse_rational_reconstruction\n\n* matrix/misc.pyx\n\n\n```\n sage: M = random_matrix(ZZ, 3, 3, 'sparse')\n sage: sage.matrix.misc.matrix_integer_sparse_rational_reconstruction(M,0)\n```\n\n\n```\n sage: M = random_matrix(ZZ, 3, 3)\n sage: sage.matrix.misc.matrix_integer_dense_rational_reconstruction(M,0)\n```\n\n* matrix/matrix_cyclo_dense.pyx\n\n  Unable to crash. Used in a modular algorithm, calls misc.matrix_integer_dense_rational_reconstruction\n\n* matrix/matrix_integer_dense.pyx\n\n\n```\n sage: M = random_matrix(ZZ,3)\n sage: M.rational_reconstruction(0)\n```\n\n  Calls misc.matrix_integer_dense_rational_reconstruction",
+    "body": "The following files have a call to rational_reconstruction, computed using\n\n```\nsage: search_src('rational_reconstruction',interact=False)\n\n```\nand code to make Sage crash\n\n* rings/integer.pyx\n\n```\n sage: ZZ(1).rational_reconstruction(0)\n```\n  Calls rational.pyrex_rational_reconstruction\n\n* rings/rational.pyx\n\n```\n sage: sage.rings.rational.pyrex_rational_reconstruction(1,0)\n```\n* rings/arith.py\n\n```\n sage: rational_reconstruction(1,0)\n```\n  Calls ZZ.rational_reconstruction\n\n* rings/finite_rings/element_ext_pari.py\n\n  Unable to crash, it is an element of a finite field. Anyway, it calls arith.rational_reconstruction\n\n* rings/finite_rings/integer_mod.pyx\n\n  Unable to crash, an element mod 0 is an Integer. Anyway, it calls ZZ.rational_reconstruction\n\n* rings/padics/padic_generic_element.pyx\n\n  Unable to crash, modulus of a p-adic element is not zero. anyway, it calls arith.rational_reconstruction\n\n* matrix/matrix_rational_dense.pyx\n\n1. _lift_crt_rr\n2. _lift_crt_rr_with_lcm\n\n\n   Obsolete functions for crt? They seem not to be used anywhere. By the code, it seems tha mm should be a list of moduli matrices (call of _lift_crt). On the other hand, the product should be an integer \nm= mm.prod(); mpq_rational_reconstruction(Q_row[j], Z_row[j], m.value) So I cannot test whether there is a problem for these functions. I am not able to get crashes or any sensible output from these functions.\n\n* matrix/matrix_integer_sparse.pyx\n\n```\n sage: M = random_matrix(ZZ, 3, 3, 'sparse')\n sage: M.rational_reconstruction()\n```\n  Calls misc.matrix_integer_sparse_rational_reconstruction\n\n* matrix/misc.pyx\n\n```\n sage: M = random_matrix(ZZ, 3, 3, 'sparse')\n sage: sage.matrix.misc.matrix_integer_sparse_rational_reconstruction(M,0)\n```\n\n```\n sage: M = random_matrix(ZZ, 3, 3)\n sage: sage.matrix.misc.matrix_integer_dense_rational_reconstruction(M,0)\n```\n* matrix/matrix_cyclo_dense.pyx\n\n  Unable to crash. Used in a modular algorithm, calls misc.matrix_integer_dense_rational_reconstruction\n\n* matrix/matrix_integer_dense.pyx\n\n```\n sage: M = random_matrix(ZZ,3)\n sage: M.rational_reconstruction(0)\n```\n  Calls misc.matrix_integer_dense_rational_reconstruction",
     "created_at": "2010-06-30T13:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -196,37 +192,29 @@ archive/issue_comments_088568.json:
 
 The following files have a call to rational_reconstruction, computed using
 
-
 ```
 sage: search_src('rational_reconstruction',interact=False)
 
 ```
-
 and code to make Sage crash
 
 * rings/integer.pyx
 
-
 ```
  sage: ZZ(1).rational_reconstruction(0)
 ```
-
   Calls rational.pyrex_rational_reconstruction
 
 * rings/rational.pyx
 
-
 ```
  sage: sage.rings.rational.pyrex_rational_reconstruction(1,0)
 ```
-
 * rings/arith.py
-
 
 ```
  sage: rational_reconstruction(1,0)
 ```
-
   Calls ZZ.rational_reconstruction
 
 * rings/finite_rings/element_ext_pari.py
@@ -252,40 +240,33 @@ m= mm.prod(); mpq_rational_reconstruction(Q_row[j], Z_row[j], m.value) So I cann
 
 * matrix/matrix_integer_sparse.pyx
 
-
 ```
  sage: M = random_matrix(ZZ, 3, 3, 'sparse')
  sage: M.rational_reconstruction()
 ```
-
   Calls misc.matrix_integer_sparse_rational_reconstruction
 
 * matrix/misc.pyx
-
 
 ```
  sage: M = random_matrix(ZZ, 3, 3, 'sparse')
  sage: sage.matrix.misc.matrix_integer_sparse_rational_reconstruction(M,0)
 ```
 
-
 ```
  sage: M = random_matrix(ZZ, 3, 3)
  sage: sage.matrix.misc.matrix_integer_dense_rational_reconstruction(M,0)
 ```
-
 * matrix/matrix_cyclo_dense.pyx
 
   Unable to crash. Used in a modular algorithm, calls misc.matrix_integer_dense_rational_reconstruction
 
 * matrix/matrix_integer_dense.pyx
 
-
 ```
  sage: M = random_matrix(ZZ,3)
  sage: M.rational_reconstruction(0)
 ```
-
   Calls misc.matrix_integer_dense_rational_reconstruction
 
 
@@ -436,7 +417,7 @@ trac-9345-sigs.patch
 archive/issue_comments_088576.json:
 ```json
 {
-    "body": "Replying to [comment:7 lftabera]:\n> Note that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\nI agree that your patch fixes the problem of division by zero, that wasn't my point.  My point was that, **in addition** you should add _sig_on and _sig_off to make the code more robust (for example, against crtl+C).\n\n> Anyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n> \n> trac_9345.3.patch\n> trac-9345-sigs.patch\nWell, the _sig_on and _sig_off are in the wrong places (_sig_on should be before any mpz or mpq function is called and _sig_off after). I can have a look at this if you want.",
+    "body": "Replying to [comment:7 lftabera]:\n> Note that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\n\nI agree that your patch fixes the problem of division by zero, that wasn't my point.  My point was that, **in addition** you should add _sig_on and _sig_off to make the code more robust (for example, against crtl+C).\n\n> Anyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n> \n> trac_9345.3.patch\n> trac-9345-sigs.patch\n\nWell, the _sig_on and _sig_off are in the wrong places (_sig_on should be before any mpz or mpq function is called and _sig_off after). I can have a look at this if you want.",
     "created_at": "2010-09-06T10:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -447,12 +428,14 @@ archive/issue_comments_088576.json:
 
 Replying to [comment:7 lftabera]:
 > Note that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.
+
 I agree that your patch fixes the problem of division by zero, that wasn't my point.  My point was that, **in addition** you should add _sig_on and _sig_off to make the code more robust (for example, against crtl+C).
 
 > Anyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):
 > 
 > trac_9345.3.patch
 > trac-9345-sigs.patch
+
 Well, the _sig_on and _sig_off are in the wrong places (_sig_on should be before any mpz or mpq function is called and _sig_off after). I can have a look at this if you want.
 
 
@@ -499,7 +482,7 @@ Better alternative to trac-9345-sigs.patch
 archive/issue_comments_088578.json:
 ```json
 {
-    "body": "Replying to [comment:5 lftabera]:\n> However, I have added doctests to check all the crashes in the previous post. This might be overkilling though.\n\nI agree that it is overkill, but I'm fine with it.  I'm giving positive_review for `trac_9345.3.patch`. Somebody else should review my `trac-9345-sigs-jd.patch`.",
+    "body": "Replying to [comment:5 lftabera]:\n> However, I have added doctests to check all the crashes in the previous post. This might be overkilling though.\n\n\nI agree that it is overkill, but I'm fine with it.  I'm giving positive_review for `trac_9345.3.patch`. Somebody else should review my `trac-9345-sigs-jd.patch`.",
     "created_at": "2010-09-07T21:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -510,6 +493,7 @@ archive/issue_comments_088578.json:
 
 Replying to [comment:5 lftabera]:
 > However, I have added doctests to check all the crashes in the previous post. This might be overkilling though.
+
 
 I agree that it is overkill, but I'm fine with it.  I'm giving positive_review for `trac_9345.3.patch`. Somebody else should review my `trac-9345-sigs-jd.patch`.
 
@@ -540,7 +524,7 @@ I have corrected jdemeyer patch to also  include the sparse matrix case. The pat
 archive/issue_comments_088580.json:
 ```json
 {
-    "body": "Replying to [comment:10 lftabera]:\n> I have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch\n\nLooks good to me, but I suppose somebody else should formally review it.",
+    "body": "Replying to [comment:10 lftabera]:\n> I have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch\n\n\nLooks good to me, but I suppose somebody else should formally review it.",
     "created_at": "2010-09-08T12:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
@@ -551,6 +535,7 @@ archive/issue_comments_088580.json:
 
 Replying to [comment:10 lftabera]:
 > I have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch
+
 
 Looks good to me, but I suppose somebody else should formally review it.
 

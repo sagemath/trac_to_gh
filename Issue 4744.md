@@ -3,7 +3,7 @@
 archive/issues_004744.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
     "created_at": "2008-12-08T22:44:35Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 CC:  @williamstein
 
-
 ```
             sage: E = EllipticCurve('37a')
             sage: E.congruence_number()
@@ -36,7 +35,6 @@ CC:  @williamstein
             sage: E.congruence_number()  # long time
             176
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4744
 
@@ -174,7 +172,7 @@ I updated the patch as per both of your recommendations. I also fixed a bug that
 archive/issue_comments_035818.json:
 ```json
 {
-    "body": "With this patch applied there is one tiny cosmetic doctest failure:\n\n```\nsage -t  \"devel/sage/sage/modular/modsym/space.py\"          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/modular/modsym/space.py\", line 784, in __main__.example_27\nFailed example:\n    V._q_expansion_module_integral(Integer(5))###line 905:_sage_    >>> V._q_expansion_module_integral(5)\nExpected:\n    Free module of degree 5 and rank 0 over Integer Ring\n    Echelon basis matrix:\n    [ ]\nGot:\n    Free module of degree 5 and rank 0 over Integer Ring\n    Echelon basis matrix:\n    []\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "With this patch applied there is one tiny cosmetic doctest failure:\n\n```\nsage -t  \"devel/sage/sage/modular/modsym/space.py\"          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/modular/modsym/space.py\", line 784, in __main__.example_27\nFailed example:\n    V._q_expansion_module_integral(Integer(5))###line 905:_sage_    >>> V._q_expansion_module_integral(5)\nExpected:\n    Free module of degree 5 and rank 0 over Integer Ring\n    Echelon basis matrix:\n    [ ]\nGot:\n    Free module of degree 5 and rank 0 over Integer Ring\n    Echelon basis matrix:\n    []\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-10T09:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
@@ -201,7 +199,6 @@ Got:
     []
 **********************************************************************
 ```
-
 
 Cheers,
 

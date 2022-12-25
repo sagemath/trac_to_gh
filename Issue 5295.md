@@ -3,7 +3,7 @@
 archive/issues_005295.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d\n\n\n```\nI finally got Sage.app working.  Still there seems \nsomething a bit odd about the fix.  I had, in my home \ndirectory, a .maxima directory with a file named \nmaxima-init.mac that sets certain maxima preferences. \nOnce I deleted this file, everything worked fine.  As I \nunderstand it though, the sage directory is supposed to be \nindependent of the rest of the system.  Evidently, the \nlatest version of sage is reading information from my \nhome directory.  My old sage (v3.0.1) runs fine without \nremoving the file, however. \n\nThe two lines in the maxima-init file were exactly the \nfollowing: \nset_plot_option([gnuplot_term, aqua]); \nset_plot_option([gnuplot_pipes_term, aqua]); \nOf course, now I can no longer plot from my standalone \ncopy of maxima. :) \nOne final comment: George's patch was unnecessary.  I \nhope I didn't send you on a wild goose chase. \n\nMark McClure \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5295\n\n",
+    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d\n\n```\nI finally got Sage.app working.  Still there seems \nsomething a bit odd about the fix.  I had, in my home \ndirectory, a .maxima directory with a file named \nmaxima-init.mac that sets certain maxima preferences. \nOnce I deleted this file, everything worked fine.  As I \nunderstand it though, the sage directory is supposed to be \nindependent of the rest of the system.  Evidently, the \nlatest version of sage is reading information from my \nhome directory.  My old sage (v3.0.1) runs fine without \nremoving the file, however. \n\nThe two lines in the maxima-init file were exactly the \nfollowing: \nset_plot_option([gnuplot_term, aqua]); \nset_plot_option([gnuplot_pipes_term, aqua]); \nOf course, now I can no longer plot from my standalone \ncopy of maxima. :) \nOne final comment: George's patch was unnecessary.  I \nhope I didn't send you on a wild goose chase. \n\nMark McClure \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5295\n\n",
     "created_at": "2009-02-17T20:12:49Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_005295.json:
 Assignee: mabshoff
 
 From http://groups.google.com/group/sage-devel/browse_thread/thread/e7f7ddd0ad86971d
-
 
 ```
 I finally got Sage.app working.  Still there seems 
@@ -44,7 +43,6 @@ hope I didn't send you on a wild goose chase.
 
 Mark McClure 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5295
 
@@ -75,7 +73,7 @@ Changing assignee from mabshoff to @nbruin.
 archive/issue_comments_040653.json:
 ```json
 {
-    "body": "The key here seems to be the `-userdir=` option. To illustrate (warning, this will seriously mess up maxima configuration you may have in your homedir. Back up `~/.maxima` if you have one)\n\nFirst to show the effect of the option:\n\n```\n> mkdir .maxima\n> echo \"x : 1;\" > .maxima/maxima-init.mac\n> mkdir othermax\n> echo \"x : 2;\" > othermax/maxima-init.mac\n> maxima --batch-string \"x;\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/sysfun.lsp\"\nMaxima 5.19.1 http://maxima.sourceforge.net\nUsing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)                                  x\n(%o1)                                  1\n> maxima --userdir=\"$HOME/othermax\" --batch-string \"x;\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/sysfun.lsp\"\nMaxima 5.19.1 http://maxima.sourceforge.net\nUsing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)                                  x\n(%o1)                                  2\n```\n\n\nSo, with the above `~/.maxima/maxima-init.mac` in place, currently the result is:\n\n```\n>  sage -c 'print maxima(\"x\")'\n                                       1\n```\n\nAfter applying attached patch \"bug5295.patch\" the result should be\n\n```\n> sage -c 'print maxima(\"x\")'\n                                       x\n```\n\nSince serious testing of this option involves making files in very sensitive locations, I think including a doctest for this behaviour is inadvisable.",
+    "body": "The key here seems to be the `-userdir=` option. To illustrate (warning, this will seriously mess up maxima configuration you may have in your homedir. Back up `~/.maxima` if you have one)\n\nFirst to show the effect of the option:\n\n```\n> mkdir .maxima\n> echo \"x : 1;\" > .maxima/maxima-init.mac\n> mkdir othermax\n> echo \"x : 2;\" > othermax/maxima-init.mac\n> maxima --batch-string \"x;\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/sysfun.lsp\"\nMaxima 5.19.1 http://maxima.sourceforge.net\nUsing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)                                  x\n(%o1)                                  1\n> maxima --userdir=\"$HOME/othermax\" --batch-string \"x;\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.3/local/lib/ecl/sysfun.lsp\"\nMaxima 5.19.1 http://maxima.sourceforge.net\nUsing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)                                  x\n(%o1)                                  2\n```\n\nSo, with the above `~/.maxima/maxima-init.mac` in place, currently the result is:\n\n```\n>  sage -c 'print maxima(\"x\")'\n                                       1\n```\nAfter applying attached patch \"bug5295.patch\" the result should be\n\n```\n> sage -c 'print maxima(\"x\")'\n                                       x\n```\nSince serious testing of this option involves making files in very sensitive locations, I think including a doctest for this behaviour is inadvisable.",
     "created_at": "2010-01-17T00:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
@@ -117,21 +115,18 @@ The function bug_report() provides bug reporting information.
 (%o1)                                  2
 ```
 
-
 So, with the above `~/.maxima/maxima-init.mac` in place, currently the result is:
 
 ```
 >  sage -c 'print maxima("x")'
                                        1
 ```
-
 After applying attached patch "bug5295.patch" the result should be
 
 ```
 > sage -c 'print maxima("x")'
                                        x
 ```
-
 Since serious testing of this option involves making files in very sensitive locations, I think including a doctest for this behaviour is inadvisable.
 
 
@@ -195,7 +190,7 @@ Attachment [bug5295.patch](tarball://root/attachments/some-uuid/ticket5295/bug52
 archive/issue_comments_040657.json:
 ```json
 {
-    "body": "Here's how to replicate the errors with Sage 4.3.1.rc0. Create a hidden directory in your home directory called \".maxima\":\n\n```\n[mvngu@mod ~]$ pwd\n/home/mvngu\n[mvngu@mod ~]$ mkdir .maxima\n[mvngu@mod ~]$ cd .maxima/\n[mvngu@mod .maxima]$ pwd\n/home/mvngu/.maxima\n```\n\nUnder the hidden directory \".maxima\", create the Maxima initialization file \"maxima-init.mac\" with some initialization code:\n\n```\n[mvngu@mod .maxima]$ cat maxima-init.mac \nset_plot_option([gnuplot_term, aqua]);\nset_plot_option([gnuplot_pipes_term, aqua]);\n```\n\nNow load the version of Maxima that is shipped with Sage. This should result in some errors thrown by Maxima:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ pwd\n/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```\n\nI might be missing something here. But after applying [bug5295.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5295/bug5295.patch), I still received the same error:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTime to execute 0 commands: 1.50203704834e-05 seconds\nFinished compiling Cython code (time = 0.346451997757 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/interfaces/maxima.py -> build/lib.linux-x86_64-2.6/sage/interfaces\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.0161008834839 seconds.\nrunning install_lib\ncopying build/lib.linux-x86_64-2.6/sage/interfaces/maxima.py -> /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage/interfaces\nbyte-compiling /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage/interfaces/maxima.py to maxima.pyc\nrunning install_egg_info\nRemoving /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n\nreal\t0m1.409s\nuser\t0m1.050s\nsys\t0m0.360s\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```\n\nIt also failed when I loaded Maxima from within a Sage session:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: !maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n| Sage Version 4.3.1.rc0, Release Date: 2010-01-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```\n",
+    "body": "Here's how to replicate the errors with Sage 4.3.1.rc0. Create a hidden directory in your home directory called \".maxima\":\n\n```\n[mvngu@mod ~]$ pwd\n/home/mvngu\n[mvngu@mod ~]$ mkdir .maxima\n[mvngu@mod ~]$ cd .maxima/\n[mvngu@mod .maxima]$ pwd\n/home/mvngu/.maxima\n```\nUnder the hidden directory \".maxima\", create the Maxima initialization file \"maxima-init.mac\" with some initialization code:\n\n```\n[mvngu@mod .maxima]$ cat maxima-init.mac \nset_plot_option([gnuplot_term, aqua]);\nset_plot_option([gnuplot_pipes_term, aqua]);\n```\nNow load the version of Maxima that is shipped with Sage. This should result in some errors thrown by Maxima:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ pwd\n/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```\nI might be missing something here. But after applying [bug5295.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5295/bug5295.patch), I still received the same error:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTime to execute 0 commands: 1.50203704834e-05 seconds\nFinished compiling Cython code (time = 0.346451997757 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/interfaces/maxima.py -> build/lib.linux-x86_64-2.6/sage/interfaces\nrunning build_ext\nTotal time spent compiling C/C++ extensions:  0.0161008834839 seconds.\nrunning install_lib\ncopying build/lib.linux-x86_64-2.6/sage/interfaces/maxima.py -> /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage/interfaces\nbyte-compiling /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage/interfaces/maxima.py to maxima.pyc\nrunning install_egg_info\nRemoving /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n\nreal\t0m1.409s\nuser\t0m1.050s\nsys\t0m0.360s\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage -maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```\nIt also failed when I loaded Maxima from within a Sage session:\n\n```\n[mvngu@mod sage-4.3.1.rc0-5295-maxima]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: !maxima\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/dev/shm/mvngu/sage-4.3.1.rc0-5295-maxima/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 9.10.2\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\nset_plot_option: Unknown plot option specified: gnuplot_pipes_term\n -- an error. To debug this try: debugmode(true);\nMaxima encountered a Lisp error:\n| Sage Version 4.3.1.rc0, Release Date: 2010-01-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n THROW: The catch MACSYMA-QUIT is undefined.\n\nAutomatically continuing.\nTo enable the Lisp debugger set *debugger-hook* to nil.\n```",
     "created_at": "2010-01-18T03:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
@@ -214,7 +209,6 @@ Here's how to replicate the errors with Sage 4.3.1.rc0. Create a hidden director
 [mvngu@mod .maxima]$ pwd
 /home/mvngu/.maxima
 ```
-
 Under the hidden directory ".maxima", create the Maxima initialization file "maxima-init.mac" with some initialization code:
 
 ```
@@ -222,7 +216,6 @@ Under the hidden directory ".maxima", create the Maxima initialization file "max
 set_plot_option([gnuplot_term, aqua]);
 set_plot_option([gnuplot_pipes_term, aqua]);
 ```
-
 Now load the version of Maxima that is shipped with Sage. This should result in some errors thrown by Maxima:
 
 ```
@@ -246,7 +239,6 @@ Maxima encountered a Lisp error:
 Automatically continuing.
 To enable the Lisp debugger set *debugger-hook* to nil.
 ```
-
 I might be missing something here. But after applying [bug5295.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5295/bug5295.patch), I still received the same error:
 
 ```
@@ -295,7 +287,6 @@ Maxima encountered a Lisp error:
 Automatically continuing.
 To enable the Lisp debugger set *debugger-hook* to nil.
 ```
-
 It also failed when I loaded Maxima from within a Sage session:
 
 ```
@@ -329,7 +320,6 @@ To enable the Lisp debugger set *debugger-hook* to nil.
 
 
 
-
 ---
 
 archive/issue_comments_040658.json:
@@ -356,7 +346,7 @@ If someone wants the maxima distributed with sage to *never* look at `$HOME/.max
 archive/issue_comments_040659.json:
 ```json
 {
-    "body": "> If someone wants the maxima distributed with sage to *never* look at `$HOME/.maxima` then one should edit the `sage/local/bin/maxima` script to use the {{{--userdir}} command line option by default. I think that is wrong.\n\nHowever, should someone want to do this anyway, then the environment variable $MAXIMA_USERDIR should do the trick. Thus,\n\n```\nMAXIMA_USERDIR=$DOT_SAGE/maxima\nexport MAXIMA_USERDIR\n```\n\ncould just go into sage_env or something similar. This would be an alternative to the attached patch.",
+    "body": "> If someone wants the maxima distributed with sage to *never* look at `$HOME/.maxima` then one should edit the `sage/local/bin/maxima` script to use the {{{--userdir}} command line option by default. I think that is wrong.\n\n\nHowever, should someone want to do this anyway, then the environment variable $MAXIMA_USERDIR should do the trick. Thus,\n\n```\nMAXIMA_USERDIR=$DOT_SAGE/maxima\nexport MAXIMA_USERDIR\n```\ncould just go into sage_env or something similar. This would be an alternative to the attached patch.",
     "created_at": "2010-01-20T00:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5295",
     "type": "issue_comment",
@@ -367,13 +357,13 @@ archive/issue_comments_040659.json:
 
 > If someone wants the maxima distributed with sage to *never* look at `$HOME/.maxima` then one should edit the `sage/local/bin/maxima` script to use the {{{--userdir}} command line option by default. I think that is wrong.
 
+
 However, should someone want to do this anyway, then the environment variable $MAXIMA_USERDIR should do the trick. Thus,
 
 ```
 MAXIMA_USERDIR=$DOT_SAGE/maxima
 export MAXIMA_USERDIR
 ```
-
 could just go into sage_env or something similar. This would be an alternative to the attached patch.
 
 

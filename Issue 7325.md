@@ -439,7 +439,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_061114.json:
 ```json
 {
-    "body": "With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:\n\n```\n[mvngu@sage sage-4.3.alpha0-maxima]$ ./sage -t -long devel/sage-main/sage/symbolic/relation.py \nsage -t -long \"devel/sage-main/sage/symbolic/relation.py\"   \n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 152:\n    sage: solve_ineq([log(x)>log(y)])\nExpected:\n    [y < x, 0 < y]\nGot:\n    [0 < y, y < x, 0 < x]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 909:\n    sage: solve_ineq_fourier([x+y<9,x-y>4])\nExpected:\n    [y + 4 < x, x < -y + 9, y < (5/2)]\nGot:\n    [y < min(x - 4, -x + 9)]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 918:\n    sage: solve_ineq_fourier([log(x)>log(y)])\nExpected:\n    [y < x, 0 < y]\nGot:\n    [0 < y, y < x, 0 < x]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 999:\n    sage: solve_ineq([x+y<9,x-y>3])\nExpected:\n    [y + 3 < x, x < -y + 9, y < 3]\nGot:\n    [y < min(x - 3, -x + 9)]\n**********************************************************************\n3 items had failures:\n   1 of 117 in __main__.example_0\n   2 of   8 in __main__.example_7\n   1 of   8 in __main__.example_8\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_relation.py\n         [6.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/symbolic/relation.py\"\n```\n",
+    "body": "With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:\n\n```\n[mvngu@sage sage-4.3.alpha0-maxima]$ ./sage -t -long devel/sage-main/sage/symbolic/relation.py \nsage -t -long \"devel/sage-main/sage/symbolic/relation.py\"   \n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 152:\n    sage: solve_ineq([log(x)>log(y)])\nExpected:\n    [y < x, 0 < y]\nGot:\n    [0 < y, y < x, 0 < x]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 909:\n    sage: solve_ineq_fourier([x+y<9,x-y>4])\nExpected:\n    [y + 4 < x, x < -y + 9, y < (5/2)]\nGot:\n    [y < min(x - 4, -x + 9)]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 918:\n    sage: solve_ineq_fourier([log(x)>log(y)])\nExpected:\n    [y < x, 0 < y]\nGot:\n    [0 < y, y < x, 0 < x]\n**********************************************************************\nFile \"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/devel/sage-main/sage/symbolic/relation.py\", line 999:\n    sage: solve_ineq([x+y<9,x-y>3])\nExpected:\n    [y + 3 < x, x < -y + 9, y < 3]\nGot:\n    [y < min(x - 3, -x + 9)]\n**********************************************************************\n3 items had failures:\n   1 of 117 in __main__.example_0\n   2 of   8 in __main__.example_7\n   1 of   8 in __main__.example_8\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_relation.py\n         [6.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/symbolic/relation.py\"\n```",
     "created_at": "2009-12-03T01:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -500,7 +500,6 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_061115.json:
@@ -526,7 +525,7 @@ Also, what ticket does the Maxima upgrade belong to, if any?
 archive/issue_comments_061116.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> This is weird.  Can you check this on a couple different platforms?  The -final patch was changed precisely because the Maxima results had changed for me, so maybe there is something different going on here.\n> \n> Also, what ticket does the Maxima upgrade belong to, if any?\n\nSorry, this question was answered on another ticket - I see, it has the ECL and this change in it.  Great!  Incidentally, Maxima should have another point release soon, which means we would get a fair number of new fixes that way as well.",
+    "body": "Replying to [comment:10 kcrisman]:\n> This is weird.  Can you check this on a couple different platforms?  The -final patch was changed precisely because the Maxima results had changed for me, so maybe there is something different going on here.\n> \n> Also, what ticket does the Maxima upgrade belong to, if any?\n\n\nSorry, this question was answered on another ticket - I see, it has the ECL and this change in it.  Great!  Incidentally, Maxima should have another point release soon, which means we would get a fair number of new fixes that way as well.",
     "created_at": "2009-12-03T03:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -540,6 +539,7 @@ Replying to [comment:10 kcrisman]:
 > 
 > Also, what ticket does the Maxima upgrade belong to, if any?
 
+
 Sorry, this question was answered on another ticket - I see, it has the ECL and this change in it.  Great!  Incidentally, Maxima should have another point release soon, which means we would get a fair number of new fixes that way as well.
 
 
@@ -549,7 +549,7 @@ Sorry, this question was answered on another ticket - I see, it has the ECL and 
 archive/issue_comments_061117.json:
 ```json
 {
-    "body": "Replying to [comment:9 mvngu]:\n> With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:\n\nThis follows probably from updated version of fourier elimination in Maxima. The answers are correct and equivalent to previous answers. I think that it is sufficient to fix the tests and to fix the following message from solve command\n\n```\nNotImplementedError: solving only implemented for equalities\n```\n\n\nI'll update the patches after testing on 4.3.rc1\n\nwhat about to replace output of \n\n```\nsolve_ineq(x^2>-1)\n```\n\nfrom \n\n```\n'all'\n```\n\nto \n\n```\nx>-Infinity\n```\n\n?",
+    "body": "Replying to [comment:9 mvngu]:\n> With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:\n\n\nThis follows probably from updated version of fourier elimination in Maxima. The answers are correct and equivalent to previous answers. I think that it is sufficient to fix the tests and to fix the following message from solve command\n\n```\nNotImplementedError: solving only implemented for equalities\n```\n\nI'll update the patches after testing on 4.3.rc1\n\nwhat about to replace output of \n\n```\nsolve_ineq(x^2>-1)\n```\nfrom \n\n```\n'all'\n```\nto \n\n```\nx>-Infinity\n```\n?",
     "created_at": "2009-12-04T21:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -561,12 +561,12 @@ archive/issue_comments_061117.json:
 Replying to [comment:9 mvngu]:
 > With the new Maxima spkg and the patch `trac_7325-final.patch`, I got these failures:
 
+
 This follows probably from updated version of fourier elimination in Maxima. The answers are correct and equivalent to previous answers. I think that it is sufficient to fix the tests and to fix the following message from solve command
 
 ```
 NotImplementedError: solving only implemented for equalities
 ```
-
 
 I'll update the patches after testing on 4.3.rc1
 
@@ -575,19 +575,16 @@ what about to replace output of
 ```
 solve_ineq(x^2>-1)
 ```
-
 from 
 
 ```
 'all'
 ```
-
 to 
 
 ```
 x>-Infinity
 ```
-
 ?
 
 
@@ -671,7 +668,7 @@ Does this all work well with the new Maxima (see [http://groups.google.com/group
 archive/issue_comments_061122.json:
 ```json
 {
-    "body": "Replying to [comment:15 kcrisman]:\n> Does this all work well with the new Maxima (see [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) as well?  \n\nNot tested on Maxima 5.20.1 - this version is not available in Sage and ticket #7745 is not closed yet.",
+    "body": "Replying to [comment:15 kcrisman]:\n> Does this all work well with the new Maxima (see [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) as well?  \n\n\nNot tested on Maxima 5.20.1 - this version is not available in Sage and ticket #7745 is not closed yet.",
     "created_at": "2009-12-21T06:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -682,6 +679,7 @@ archive/issue_comments_061122.json:
 
 Replying to [comment:15 kcrisman]:
 > Does this all work well with the new Maxima (see [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) as well?  
+
 
 Not tested on Maxima 5.20.1 - this version is not available in Sage and ticket #7745 is not closed yet.
 
@@ -768,7 +766,7 @@ Works well also with Maxima 5.20.1. (However, the patch #7745 does not install c
 archive/issue_comments_061127.json:
 ```json
 {
-    "body": "I will hopefully soon have time to actually test this - thanks for your patience!  Here are a few things to keep in mind for when you rebase to 4.3.1.alpha1 (as #7745 is now merged).\n\n0. Rebase, of course :)\n\n1. I think I agree that x>-Infinity is much more \"Sage-like\", or maybe `[x>-Infinity]` would be more in keeping with the other solutions.   Good thought.  Or maybe `[x>-Infinity, x<Infinity]` ?  I'm not sure about that.\n\n2. Probably ```special cases``` shouldn't be in the quoting environment.  In fact, [] and the above are both lists, so you would just need to clarify what they mean.\n\n3. Something similar should happen with multivariate.  Here, there is also a small inconsistency involved - `[0 < y, y < x, 0 < x]` for multivariate, but `[This is the Trac macro *0 < y, y < x, 0 < x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0 < y, y < x, 0 < x-macro)` seems to be the univariate result type.  \n\n4. In calculus/calculus.py, there is the following code:\n\n```\nmaxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n                script_subdirectory=None)\n```\n\nMaybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n\n5. Looking at things, I wonder if it would be possible (without too many bugs) to actually implement ineq.solve(), not just solve(ineq) - that is, in relation.py and expression.py, rather than having solve() gag on inequalities, have it at least try the solve_ineq and just catch any exceptions that are raised and instead raise a NotImplementedError for that particular inequality.  I wonder?\n\nBut as before, a great addition to Sage - just trying to get the maximum benefit from this ticket!  Thanks again.",
+    "body": "I will hopefully soon have time to actually test this - thanks for your patience!  Here are a few things to keep in mind for when you rebase to 4.3.1.alpha1 (as #7745 is now merged).\n\n0. Rebase, of course :)\n\n1. I think I agree that x>-Infinity is much more \"Sage-like\", or maybe `[x>-Infinity]` would be more in keeping with the other solutions.   Good thought.  Or maybe `[x>-Infinity, x<Infinity]` ?  I'm not sure about that.\n\n2. Probably ```special cases``` shouldn't be in the quoting environment.  In fact, [] and the above are both lists, so you would just need to clarify what they mean.\n\n3. Something similar should happen with multivariate.  Here, there is also a small inconsistency involved - `[0 < y, y < x, 0 < x]` for multivariate, but `[This is the Trac macro *0 < y, y < x, 0 < x* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#0 < y, y < x, 0 < x-macro)` seems to be the univariate result type.  \n\n4. In calculus/calculus.py, there is the following code:\n\n```\nmaxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n                script_subdirectory=None)\n```\nMaybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n\n5. Looking at things, I wonder if it would be possible (without too many bugs) to actually implement ineq.solve(), not just solve(ineq) - that is, in relation.py and expression.py, rather than having solve() gag on inequalities, have it at least try the solve_ineq and just catch any exceptions that are raised and instead raise a NotImplementedError for that particular inequality.  I wonder?\n\nBut as before, a great addition to Sage - just trying to get the maximum benefit from this ticket!  Thanks again.",
     "created_at": "2010-01-08T16:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -793,7 +791,6 @@ I will hopefully soon have time to actually test this - thanks for your patience
 maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],
                 script_subdirectory=None)
 ```
-
 Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.
 
 5. Looking at things, I wonder if it would be possible (without too many bugs) to actually implement ineq.solve(), not just solve(ineq) - that is, in relation.py and expression.py, rather than having solve() gag on inequalities, have it at least try the solve_ineq and just catch any exceptions that are raised and instead raise a NotImplementedError for that particular inequality.  I wonder?
@@ -825,7 +822,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061129.json:
 ```json
 {
-    "body": "Replying to [comment:19 kcrisman]:\n> \n> 4. In calculus/calculus.py, there is the following code:\n> {{{\n> maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n>                 script_subdirectory=None)\n> }}}\n> Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n\nI think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n\n\nAnd thanks for the other comments.",
+    "body": "Replying to [comment:19 kcrisman]:\n> \n> 4. In calculus/calculus.py, there is the following code:\n> \n> ```\n> maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n>                 script_subdirectory=None)\n> ```\n> Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n\n\nI think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n\n\nAnd thanks for the other comments.",
     "created_at": "2010-01-08T21:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -837,11 +834,13 @@ archive/issue_comments_061129.json:
 Replying to [comment:19 kcrisman]:
 > 
 > 4. In calculus/calculus.py, there is the following code:
-> {{{
+> 
+> ```
 > maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],
 >                 script_subdirectory=None)
-> }}}
+> ```
 > Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.
+
 
 I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. 
 
@@ -855,7 +854,7 @@ And thanks for the other comments.
 archive/issue_comments_061130.json:
 ```json
 {
-    "body": "Replying to [comment:20 robert.marik]:\n> I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n\nCould you explain how loading these packages makes Maxima's computations slower?  I'm not sure I follow.",
+    "body": "Replying to [comment:20 robert.marik]:\n> I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n\n\nCould you explain how loading these packages makes Maxima's computations slower?  I'm not sure I follow.",
     "created_at": "2010-01-08T21:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -867,6 +866,7 @@ archive/issue_comments_061130.json:
 Replying to [comment:20 robert.marik]:
 > I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. 
 
+
 Could you explain how loading these packages makes Maxima's computations slower?  I'm not sure I follow.
 
 
@@ -876,7 +876,7 @@ Could you explain how loading these packages makes Maxima's computations slower?
 archive/issue_comments_061131.json:
 ```json
 {
-    "body": "> > 4. In calculus/calculus.py, there is the following code:\n> > {{{\n> > maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n> >                 script_subdirectory=None)\n> > }}}\n> > Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n> \n> I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n> \n\nIf you think that is a good way of doing it, then we should also do this for the loading of simplify_sum and to_poly_solve, because certainly they would be in the same boat.  Does checking a boolean sound appropriate?  If you do that here, then I would be happy to do it in the other places.\n\nTo mhansen: I think robert.marik is referring to the making it a slightly slower startup, not the actual computations.  It's true that loading tons of packages would eventually slow that down if someone just wanted to get an integral.",
+    "body": "> > 4. In calculus/calculus.py, there is the following code:\n> > \n> > ```\n> > maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],\n> >                 script_subdirectory=None)\n> > ```\n> > Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.\n\n> \n> I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. \n> \n\n\nIf you think that is a good way of doing it, then we should also do this for the loading of simplify_sum and to_poly_solve, because certainly they would be in the same boat.  Does checking a boolean sound appropriate?  If you do that here, then I would be happy to do it in the other places.\n\nTo mhansen: I think robert.marik is referring to the making it a slightly slower startup, not the actual computations.  It's true that loading tons of packages would eventually slow that down if someone just wanted to get an integral.",
     "created_at": "2010-01-08T21:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -886,14 +886,17 @@ archive/issue_comments_061131.json:
 ```
 
 > > 4. In calculus/calculus.py, there is the following code:
-> > {{{
+> > 
+> > ```
 > > maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(to_poly_solver)', 'load(simplify_sum)'],
 > >                 script_subdirectory=None)
-> > }}}
+> > ```
 > > Maybe the initialization of solve_rat_ineq and fourier_elim should be there?   Otherwise we are trying to load this with every attempt at a solve_ineq, which seems inefficient.
+
 > 
 > I think that it is inefficient to load a bundle of packages whenever Maxima starts. This makes computations provided by Maxima slower. Perhaps we could use some variable swhich stores information, whether solvers of inequality have been used or no. 
 > 
+
 
 If you think that is a good way of doing it, then we should also do this for the loading of simplify_sum and to_poly_solve, because certainly they would be in the same boat.  Does checking a boolean sound appropriate?  If you do that here, then I would be happy to do it in the other places.
 
@@ -964,7 +967,7 @@ I found a Maxima bug when solving x^4+2>0 - the problem is from Maxima (and not 
 archive/issue_comments_061135.json:
 ```json
 {
-    "body": "Just for the record: the problem related to inequality\n\n```\nsage:(x^4+2>0).solve(x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\n\nis caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).",
+    "body": "Just for the record: the problem related to inequality\n\n```\nsage:(x^4+2>0).solve(x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\nis caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).",
     "created_at": "2010-01-22T20:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -979,7 +982,6 @@ Just for the record: the problem related to inequality
 sage:(x^4+2>0).solve(x)
 [[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]
 ```
-
 is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).
 
 
@@ -989,7 +991,7 @@ is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=27860
 archive/issue_comments_061136.json:
 ```json
 {
-    "body": "Robert,\n\nOverall this is really good now.  One possible thing is what the best way to implement the checking for whether things are already loaded - I have no idea whether this is more efficient than before or not, truthfully, I probably should have brought it up.  The other is that usually one imports maxima from sage.calculus.calculus and then one doesn't have to always check the parents.  But since this is new code and not slowing down old code, that can wait - it's really time we have this.\n\nI am still waiting for 4.3.1 to make check on my dev machine, but once it does I will try this out once again and add a tiny reviewer patch - there is a one-character typo, for instance.  Thanks for all your hard work on this!\n\nReplying to [comment:24 robert.marik]:\n> Just for the record: the problem related to inequality\n> {{{\n> sage:(x^4+2>0).solve(x)\n> [This is the Trac macro *x > -* that was inherited from the migration called with arguments (-1)<sup>)](https://trac.sagemath.org/wiki/WikiMacros#x > --macro)\n> }}}\n> is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).\nCan you open a ticket for this and put it as \"Reported upstream, \" etc.?  Even though it's not a Sage bug, we might as well track it - I don't see the need to upgrade Maxima every time they fix a minor bug that affects Sage, but if there is a ticket for it then when there are enough such tickets that are resolved upstream we will see the need to upgrade.",
+    "body": "Robert,\n\nOverall this is really good now.  One possible thing is what the best way to implement the checking for whether things are already loaded - I have no idea whether this is more efficient than before or not, truthfully, I probably should have brought it up.  The other is that usually one imports maxima from sage.calculus.calculus and then one doesn't have to always check the parents.  But since this is new code and not slowing down old code, that can wait - it's really time we have this.\n\nI am still waiting for 4.3.1 to make check on my dev machine, but once it does I will try this out once again and add a tiny reviewer patch - there is a one-character typo, for instance.  Thanks for all your hard work on this!\n\nReplying to [comment:24 robert.marik]:\n> Just for the record: the problem related to inequality\n> \n> ```\n> sage:(x^4+2>0).solve(x)\n> [[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n> ```\n> is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).\n\nCan you open a ticket for this and put it as \"Reported upstream, \" etc.?  Even though it's not a Sage bug, we might as well track it - I don't see the need to upgrade Maxima every time they fix a minor bug that affects Sage, but if there is a ticket for it then when there are enough such tickets that are resolved upstream we will see the need to upgrade.",
     "created_at": "2010-01-23T01:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1006,11 +1008,13 @@ I am still waiting for 4.3.1 to make check on my dev machine, but once it does I
 
 Replying to [comment:24 robert.marik]:
 > Just for the record: the problem related to inequality
-> {{{
+> 
+> ```
 > sage:(x^4+2>0).solve(x)
-> [This is the Trac macro *x > -* that was inherited from the migration called with arguments (-1)<sup>)](https://trac.sagemath.org/wiki/WikiMacros#x > --macro)
-> }}}
+> [[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]
+> ```
 > is caused by a known [bug](http://sourceforge.net/tracker/?func=detail&aid=2786017&group_id=4933&atid=104933) in algsys and should be fixed [soon](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593).
+
 Can you open a ticket for this and put it as "Reported upstream, " etc.?  Even though it's not a Sage bug, we might as well track it - I don't see the need to upgrade Maxima every time they fix a minor bug that affects Sage, but if there is a ticket for it then when there are enough such tickets that are resolved upstream we will see the need to upgrade.
 
 
@@ -1096,7 +1100,7 @@ There is one related bug which has been fixed in Maxima CVS: #8078
 archive/issue_comments_061141.json:
 ```json
 {
-    "body": "Replying to [comment:27 robert.marik]:\n> I do not know why doctests failed. Perhaps some nonstandard settings in my .maxima file. Anyway, I replaced the doctests with simpler ones.\nNo, we should document behavior like this so that people aren't confused; until it's 100% clear why it's happening, we shouldn't cover it up.  If I get some time, I will try to track it down using sage.math and my own box; you have clearly done enough work on this patch to deserve a break :)\n\n> There is one related bug which has been fixed in Maxima CVS: #8078\nYes, thanks for reporting that one.",
+    "body": "Replying to [comment:27 robert.marik]:\n> I do not know why doctests failed. Perhaps some nonstandard settings in my .maxima file. Anyway, I replaced the doctests with simpler ones.\n\nNo, we should document behavior like this so that people aren't confused; until it's 100% clear why it's happening, we shouldn't cover it up.  If I get some time, I will try to track it down using sage.math and my own box; you have clearly done enough work on this patch to deserve a break :)\n\n> There is one related bug which has been fixed in Maxima CVS: #8078\n\nYes, thanks for reporting that one.",
     "created_at": "2010-01-26T13:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1107,9 +1111,11 @@ archive/issue_comments_061141.json:
 
 Replying to [comment:27 robert.marik]:
 > I do not know why doctests failed. Perhaps some nonstandard settings in my .maxima file. Anyway, I replaced the doctests with simpler ones.
+
 No, we should document behavior like this so that people aren't confused; until it's 100% clear why it's happening, we shouldn't cover it up.  If I get some time, I will try to track it down using sage.math and my own box; you have clearly done enough work on this patch to deserve a break :)
 
 > There is one related bug which has been fixed in Maxima CVS: #8078
+
 Yes, thanks for reporting that one.
 
 
@@ -1191,7 +1197,7 @@ apply only this patch
 archive/issue_comments_061146.json:
 ```json
 {
-    "body": "Attachment [trac_7325_2_rebased_for_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_2_rebased_for_4.3.1.patch) by @robert-marik created at 2010-01-26 18:55:29\n\nReplying to [comment:29 burcin]:\n> There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.\n\nFixed, thanks. Robert",
+    "body": "Attachment [trac_7325_2_rebased_for_4.3.1.patch](tarball://root/attachments/some-uuid/ticket7325/trac_7325_2_rebased_for_4.3.1.patch) by @robert-marik created at 2010-01-26 18:55:29\n\nReplying to [comment:29 burcin]:\n> There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.\n\n\nFixed, thanks. Robert",
     "created_at": "2010-01-26T18:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1204,6 +1210,7 @@ Attachment [trac_7325_2_rebased_for_4.3.1.patch](tarball://root/attachments/some
 
 Replying to [comment:29 burcin]:
 > There seems to be something wrong with attachment:trac_7325_2_rebased_for_4.3.1.patch. It contains two similar patches, with distinct headers etc. I didn't check if they are identical copies of the same patch.
+
 
 Fixed, thanks. Robert
 
@@ -1250,7 +1257,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061149.json:
 ```json
 {
-    "body": "There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n\n```\n                try:\n                    return(solve_ineq(self)) # trying solve_ineq_univar\n                except:\n                    pass\n                try:\n                    return(solve_ineq([self])) # trying solve_ineq_fourier\n```\n\nmeans that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n\nThis patch should do it, hopefully it applies to alpha0.  The only changes were in doctests to ensure it passes, and to explain what is going on.  Perhaps it is in Maxima itself that this platform-dependence happens, but I don't have time to check this.\n\nAlso corrected two minor typos.",
+    "body": "There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n\n```\n                try:\n                    return(solve_ineq(self)) # trying solve_ineq_univar\n                except:\n                    pass\n                try:\n                    return(solve_ineq([self])) # trying solve_ineq_fourier\n```\nmeans that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n\nThis patch should do it, hopefully it applies to alpha0.  The only changes were in doctests to ensure it passes, and to explain what is going on.  Perhaps it is in Maxima itself that this platform-dependence happens, but I don't have time to check this.\n\nAlso corrected two minor typos.",
     "created_at": "2010-01-29T20:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1269,7 +1276,6 @@ There were some additional examples which still were platform-dependent.  This i
                 try:
                     return(solve_ineq([self])) # trying solve_ineq_fourier
 ```
-
 means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.
 
 This patch should do it, hopefully it applies to alpha0.  The only changes were in doctests to ensure it passes, and to explain what is going on.  Perhaps it is in Maxima itself that this platform-dependence happens, but I don't have time to check this.
@@ -1321,7 +1327,7 @@ And as always, "apply only this patch".  :)
 archive/issue_comments_061152.json:
 ```json
 {
-    "body": "Replying to [comment:32 kcrisman]:\n> There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n> {{{\n>                 try:\n>                     return(solve_ineq(self)) # trying solve_ineq_univar\n>                 except:\n>                     pass\n>                 try:\n>                     return(solve_ineq([self])) # trying solve_ineq_fourier\n> }}}\n> means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n\nPerhaps to explain in more details what happens for ineq.solve(x):\n\n* ineq has not equality sign, the previous version of solve command raised error, the new version excutes the code above\n\n* we try solve_ineq(self), i.e. we use the Maxima's solve_rat_ineq. This raises error if there are more than one variable and if the solve_rat_ineq is not polynomial or quotient of two polynomial (after moving right hand side to the left and simplifying). Hence this function does not need the name of the variable on input. this is because solve_rat_ineq handles rational inequalities better than fourier_elim",
+    "body": "Replying to [comment:32 kcrisman]:\n> There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n> \n> ```\n>                 try:\n>                     return(solve_ineq(self)) # trying solve_ineq_univar\n>                 except:\n>                     pass\n>                 try:\n>                     return(solve_ineq([self])) # trying solve_ineq_fourier\n> ```\n> means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n\n\nPerhaps to explain in more details what happens for ineq.solve(x):\n\n* ineq has not equality sign, the previous version of solve command raised error, the new version excutes the code above\n\n* we try solve_ineq(self), i.e. we use the Maxima's solve_rat_ineq. This raises error if there are more than one variable and if the solve_rat_ineq is not polynomial or quotient of two polynomial (after moving right hand side to the left and simplifying). Hence this function does not need the name of the variable on input. this is because solve_rat_ineq handles rational inequalities better than fourier_elim",
     "created_at": "2010-01-29T20:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1332,15 +1338,17 @@ archive/issue_comments_061152.json:
 
 Replying to [comment:32 kcrisman]:
 > There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following
-> {{{
+> 
+> ```
 >                 try:
 >                     return(solve_ineq(self)) # trying solve_ineq_univar
 >                 except:
 >                     pass
 >                 try:
 >                     return(solve_ineq([self])) # trying solve_ineq_fourier
-> }}}
+> ```
 > means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.
+
 
 Perhaps to explain in more details what happens for ineq.solve(x):
 
@@ -1355,7 +1363,7 @@ Perhaps to explain in more details what happens for ineq.solve(x):
 archive/issue_comments_061153.json:
 ```json
 {
-    "body": "Replying to [comment:34 robert.marik]:\n> Replying to [comment:32 kcrisman]:\n> > There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n> > {{{\n> >                 try:\n> >                     return(solve_ineq(self)) # trying solve_ineq_univar\n> >                 except:\n> >                     pass\n> >                 try:\n> >                     return(solve_ineq([self])) # trying solve_ineq_fourier\n> > }}}\n> > means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n> \n> Perhaps to explain in more details what happens for ineq.solve(x):\n> \n> * ineq has not equality sign, the previous version of solve command raised error, the new version excutes the code above\n\nOh, yes, I understand, I am just suggesting that in the future solve itself (not just solve_ineq) could take the variable given into account as well.\n\n> \n> * we try solve_ineq(self), i.e. we use the Maxima's solve_rat_ineq. This raises error if there are more than one variable and if the solve_rat_ineq is not polynomial or quotient of two polynomial (after moving right hand side to the left and simplifying). Hence this function does not need the name of the variable on input. this is because solve_rat_ineq handles rational inequalities better than fourier_elim\n> \n\nYes, of course.  Again, just suggesting that in the future (because the variable order matters for some reason) that the variables could fit in here in the future.  It's still great work!\n\nIncidentally, on Linux:\n\n```\nsage: set((x,y))\nset([y, x])\n```\n\nOn Mac:\n\n```\nsage: set((x,y))\nset([x, y])\n```\n\nSo that is why we are seeing these changes.  Probably something other than set could solve this issue, so I may open a new ticket for that.",
+    "body": "Replying to [comment:34 robert.marik]:\n> Replying to [comment:32 kcrisman]:\n> > There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following\n> > \n> > ```\n> >                 try:\n> >                     return(solve_ineq(self)) # trying solve_ineq_univar\n> >                 except:\n> >                     pass\n> >                 try:\n> >                     return(solve_ineq([self])) # trying solve_ineq_fourier\n> > ```\n> > means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.\n\n> \n> Perhaps to explain in more details what happens for ineq.solve(x):\n> \n> * ineq has not equality sign, the previous version of solve command raised error, the new version excutes the code above\n\n\nOh, yes, I understand, I am just suggesting that in the future solve itself (not just solve_ineq) could take the variable given into account as well.\n\n> \n> * we try solve_ineq(self), i.e. we use the Maxima's solve_rat_ineq. This raises error if there are more than one variable and if the solve_rat_ineq is not polynomial or quotient of two polynomial (after moving right hand side to the left and simplifying). Hence this function does not need the name of the variable on input. this is because solve_rat_ineq handles rational inequalities better than fourier_elim\n> \n\n\nYes, of course.  Again, just suggesting that in the future (because the variable order matters for some reason) that the variables could fit in here in the future.  It's still great work!\n\nIncidentally, on Linux:\n\n```\nsage: set((x,y))\nset([y, x])\n```\nOn Mac:\n\n```\nsage: set((x,y))\nset([x, y])\n```\nSo that is why we are seeing these changes.  Probably something other than set could solve this issue, so I may open a new ticket for that.",
     "created_at": "2010-01-30T02:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7325",
     "type": "issue_comment",
@@ -1367,25 +1375,29 @@ archive/issue_comments_061153.json:
 Replying to [comment:34 robert.marik]:
 > Replying to [comment:32 kcrisman]:
 > > There were some additional examples which still were platform-dependent.  This is really weird, I have to say!    In particular, the following
-> > {{{
+> > 
+> > ```
 > >                 try:
 > >                     return(solve_ineq(self)) # trying solve_ineq_univar
 > >                 except:
 > >                     pass
 > >                 try:
 > >                     return(solve_ineq([self])) # trying solve_ineq_fourier
-> > }}}
+> > ```
 > > means that exp.solve(x) ignores the x.  However, I don't know that that is really worth changing since it still gives correct answers.
+
 > 
 > Perhaps to explain in more details what happens for ineq.solve(x):
 > 
 > * ineq has not equality sign, the previous version of solve command raised error, the new version excutes the code above
+
 
 Oh, yes, I understand, I am just suggesting that in the future solve itself (not just solve_ineq) could take the variable given into account as well.
 
 > 
 > * we try solve_ineq(self), i.e. we use the Maxima's solve_rat_ineq. This raises error if there are more than one variable and if the solve_rat_ineq is not polynomial or quotient of two polynomial (after moving right hand side to the left and simplifying). Hence this function does not need the name of the variable on input. this is because solve_rat_ineq handles rational inequalities better than fourier_elim
 > 
+
 
 Yes, of course.  Again, just suggesting that in the future (because the variable order matters for some reason) that the variables could fit in here in the future.  It's still great work!
 
@@ -1395,14 +1407,12 @@ Incidentally, on Linux:
 sage: set((x,y))
 set([y, x])
 ```
-
 On Mac:
 
 ```
 sage: set((x,y))
 set([x, y])
 ```
-
 So that is why we are seeing these changes.  Probably something other than set could solve this issue, so I may open a new ticket for that.
 
 

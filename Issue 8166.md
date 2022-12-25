@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071729.json:
 ```json
 {
-    "body": "As max_weight_matching had been exposed while I wasn't looking, this ticket now merges the two function into only one, for the better I hope ! :-)\n\nFrom now on, maximum matching are not optional anymore, and are way faster !\n\n\n```\nsage: g = graphs.RandomGNP(50,.3)\nsage: %timeit g.matching(algorithm=\"LP\",solver=\"GLPK\")\n5 loops, best of 3: 248 ms per loop\nsage: %timeit g.matching()\n25 loops, best of 3: 16.9 ms per loop\n```\n\n\nThe two different ways to solve matchings are kept, just in case.... But network'x version is now the default one, obviously :-)\n\nRequires #8364\n\nNathann",
+    "body": "As max_weight_matching had been exposed while I wasn't looking, this ticket now merges the two function into only one, for the better I hope ! :-)\n\nFrom now on, maximum matching are not optional anymore, and are way faster !\n\n```\nsage: g = graphs.RandomGNP(50,.3)\nsage: %timeit g.matching(algorithm=\"LP\",solver=\"GLPK\")\n5 loops, best of 3: 248 ms per loop\nsage: %timeit g.matching()\n25 loops, best of 3: 16.9 ms per loop\n```\n\nThe two different ways to solve matchings are kept, just in case.... But network'x version is now the default one, obviously :-)\n\nRequires #8364\n\nNathann",
     "created_at": "2010-05-15T19:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ As max_weight_matching had been exposed while I wasn't looking, this ticket now 
 
 From now on, maximum matching are not optional anymore, and are way faster !
 
-
 ```
 sage: g = graphs.RandomGNP(50,.3)
 sage: %timeit g.matching(algorithm="LP",solver="GLPK")
@@ -99,7 +98,6 @@ sage: %timeit g.matching(algorithm="LP",solver="GLPK")
 sage: %timeit g.matching()
 25 loops, best of 3: 16.9 ms per loop
 ```
-
 
 The two different ways to solve matchings are kept, just in case.... But network'x version is now the default one, obviously :-)
 

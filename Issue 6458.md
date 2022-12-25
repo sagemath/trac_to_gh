@@ -85,7 +85,7 @@ These doctests don't actually assert that the results are correct.  Could you ad
 archive/issue_comments_052093.json:
 ```json
 {
-    "body": "Also, I get a doctest failure on sage.math.  This could be transient -- this is with a slightly out of date sage build.  But there's no way this will work on all architectures, so testing the property will be much better.\n\n\n```\nsage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-main/sage/rings/number_field/number_field_element.pyx\", line 3436:\n    sage: OE(b - a).inverse_mod(17*b)\nExpected:\n    (-25*b + 26)*a + 51*b - 1\nGot:\n    (26*b - 25)*a - 51*b - 1\n```\n",
+    "body": "Also, I get a doctest failure on sage.math.  This could be transient -- this is with a slightly out of date sage build.  But there's no way this will work on all architectures, so testing the property will be much better.\n\n```\nsage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-main/sage/rings/number_field/number_field_element.pyx\", line 3436:\n    sage: OE(b - a).inverse_mod(17*b)\nExpected:\n    (-25*b + 26)*a + 51*b - 1\nGot:\n    (26*b - 25)*a - 51*b - 1\n```",
     "created_at": "2009-07-14T21:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
@@ -95,7 +95,6 @@ archive/issue_comments_052093.json:
 ```
 
 Also, I get a doctest failure on sage.math.  This could be transient -- this is with a slightly out of date sage build.  But there's no way this will work on all architectures, so testing the property will be much better.
-
 
 ```
 sage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx
@@ -107,7 +106,6 @@ Expected:
 Got:
     (26*b - 25)*a - 51*b - 1
 ```
-
 
 
 

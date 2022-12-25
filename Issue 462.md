@@ -3,7 +3,7 @@
 archive/issues_000462.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn 8/19/07, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> ...up at http://sage.math.washington.edu/home/robertwb/sagex/\n> \n> Should we set up a public repo. (that at least people can pull from)\n> on the site?\n\nYes, we definitely should.  I'll look into this this week.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/462\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 8/19/07, Robert Bradshaw <robertwb@math.washington.edu> wrote:\n> ...up at http://sage.math.washington.edu/home/robertwb/sagex/\n> \n> Should we set up a public repo. (that at least people can pull from)\n> on the site?\n\nYes, we definitely should.  I'll look into this this week.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/462\n\n",
     "created_at": "2007-08-19T18:52:29Z",
     "labels": [
         "component: packages: standard"
@@ -16,7 +16,6 @@ archive/issues_000462.json:
 ```
 Assignee: @williamstein
 
-
 ```
 On 8/19/07, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 > ...up at http://sage.math.washington.edu/home/robertwb/sagex/
@@ -27,7 +26,6 @@ On 8/19/07, Robert Bradshaw <robertwb@math.washington.edu> wrote:
 Yes, we definitely should.  I'll look into this this week.
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/462
 

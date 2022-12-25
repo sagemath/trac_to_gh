@@ -103,7 +103,7 @@ Just for the record:  There'll be a new FLINTQS spkg at #12855 soon...
 archive/issue_comments_091845.json:
 ```json
 {
-    "body": "The current spkg-install change being used in the port is\n\n\n```diff\n--- flintqs-20070817.p6/spkg-install-orig\t2012-04-08 00:46:21.000000000 +0000\n+++ flintqs-20070817.p6/spkg-install\t2012-04-08 00:55:33.000000000 +0000\n@@ -7,6 +7,7 @@\n fi\n \n cp patches/lanczos.h  src/\n+patch -p0 < patches/TonelliShanks.h.patch\n \n cd src\n```\n\n\nbut we'll have to check the exit status on that.  Or just add this into #12855 or something.",
+    "body": "The current spkg-install change being used in the port is\n\n```diff\n--- flintqs-20070817.p6/spkg-install-orig\t2012-04-08 00:46:21.000000000 +0000\n+++ flintqs-20070817.p6/spkg-install\t2012-04-08 00:55:33.000000000 +0000\n@@ -7,6 +7,7 @@\n fi\n \n cp patches/lanczos.h  src/\n+patch -p0 < patches/TonelliShanks.h.patch\n \n cd src\n```\n\nbut we'll have to check the exit status on that.  Or just add this into #12855 or something.",
     "created_at": "2012-06-20T19:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ archive/issue_comments_091845.json:
 ```
 
 The current spkg-install change being used in the port is
-
 
 ```diff
 --- flintqs-20070817.p6/spkg-install-orig	2012-04-08 00:46:21.000000000 +0000
@@ -126,7 +125,6 @@ The current spkg-install change being used in the port is
  
  cd src
 ```
-
 
 but we'll have to check the exit status on that.  Or just add this into #12855 or something.
 
@@ -247,7 +245,7 @@ Also, is there even an "upstream"?  This is a five-year-old program, and some se
 archive/issue_comments_091850.json:
 ```json
 {
-    "body": "Replying to [comment:9 kcrisman]:\n> Jeroen, did you try this out on some of the buildbots?\nNo, but I don't expect problems. What harm could an additional header file do?",
+    "body": "Replying to [comment:9 kcrisman]:\n> Jeroen, did you try this out on some of the buildbots?\n\nNo, but I don't expect problems. What harm could an additional header file do?",
     "created_at": "2012-06-21T13:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -258,6 +256,7 @@ archive/issue_comments_091850.json:
 
 Replying to [comment:9 kcrisman]:
 > Jeroen, did you try this out on some of the buildbots?
+
 No, but I don't expect problems. What harm could an additional header file do?
 
 
@@ -267,7 +266,7 @@ No, but I don't expect problems. What harm could an additional header file do?
 archive/issue_comments_091851.json:
 ```json
 {
-    "body": "> > Jeroen, did you try this out on some of the buildbots?\n> No, but I don't expect problems. What harm could an additional header file do?\nI don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\n\nBut since you just repackaged this, I think it's appropriate for you to be a reviewer as well.  And I checked that the package is well-formed and installs on OS X.\n\nI also notice that you included stdint after stdlib, while Stephen does the opposite in his patch [here](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-flintqs-20070817.p6_-_patches_TonelliShanks.h.patch?rev=1.1;content-type=text%2Fplain).  I assume this also doesn't matter?  Sorry for the very stupid questions.\n----\nSee also #11792?",
+    "body": "> > Jeroen, did you try this out on some of the buildbots?\n\n> No, but I don't expect problems. What harm could an additional header file do?\nI don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\n\nBut since you just repackaged this, I think it's appropriate for you to be a reviewer as well.  And I checked that the package is well-formed and installs on OS X.\n\nI also notice that you included stdint after stdlib, while Stephen does the opposite in his patch [here](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-flintqs-20070817.p6_-_patches_TonelliShanks.h.patch?rev=1.1;content-type=text%2Fplain).  I assume this also doesn't matter?  Sorry for the very stupid questions.\n\n---\nSee also #11792?",
     "created_at": "2012-06-21T13:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -277,13 +276,15 @@ archive/issue_comments_091851.json:
 ```
 
 > > Jeroen, did you try this out on some of the buildbots?
+
 > No, but I don't expect problems. What harm could an additional header file do?
 I don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.
 
 But since you just repackaged this, I think it's appropriate for you to be a reviewer as well.  And I checked that the package is well-formed and installs on OS X.
 
 I also notice that you included stdint after stdlib, while Stephen does the opposite in his patch [here](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-flintqs-20070817.p6_-_patches_TonelliShanks.h.patch?rev=1.1;content-type=text%2Fplain).  I assume this also doesn't matter?  Sorry for the very stupid questions.
-----
+
+---
 See also #11792?
 
 
@@ -293,7 +294,7 @@ See also #11792?
 archive/issue_comments_091852.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> > > Jeroen, did you try this out on some of the buildbots?\n> > No, but I don't expect problems. What harm could an additional header file do?\n> I don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\nIn theory this could cause problems, but presumably the C headers are well-designed such that these problems don't occur.\n\n> I also notice that you included stdint after stdlib, while Stephen does the opposite in his patch\nIt also shouldn't matter. The way I did it looked more natural, but there's really no reason.",
+    "body": "Replying to [comment:11 kcrisman]:\n> > > Jeroen, did you try this out on some of the buildbots?\n\n> > No, but I don't expect problems. What harm could an additional header file do?\n> I don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\n\nIn theory this could cause problems, but presumably the C headers are well-designed such that these problems don't occur.\n\n> I also notice that you included stdint after stdlib, while Stephen does the opposite in his patch\n\nIt also shouldn't matter. The way I did it looked more natural, but there's really no reason.",
     "created_at": "2012-06-21T13:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -304,11 +305,14 @@ archive/issue_comments_091852.json:
 
 Replying to [comment:11 kcrisman]:
 > > > Jeroen, did you try this out on some of the buildbots?
+
 > > No, but I don't expect problems. What harm could an additional header file do?
 > I don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.
+
 In theory this could cause problems, but presumably the C headers are well-designed such that these problems don't occur.
 
 > I also notice that you included stdint after stdlib, while Stephen does the opposite in his patch
+
 It also shouldn't matter. The way I did it looked more natural, but there's really no reason.
 
 
@@ -339,7 +343,7 @@ I'm even having trouble finding where this is used.  `sage -grep` with various u
 archive/issue_comments_091854.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n\nThe interface is `sage/interfaces/qsieve.py`.",
+    "body": "Replying to [comment:13 kcrisman]:\n> I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n\n\nThe interface is `sage/interfaces/qsieve.py`.",
     "created_at": "2012-06-21T19:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -350,6 +354,7 @@ archive/issue_comments_091854.json:
 
 Replying to [comment:13 kcrisman]:
 > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.
+
 
 The interface is `sage/interfaces/qsieve.py`.
 
@@ -412,7 +417,7 @@ archive/issue_events_023742.json:
 archive/issue_comments_091856.json:
 ```json
 {
-    "body": "> > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n> \n> The interface is `sage/interfaces/qsieve.py`.\n\nGreat, thanks.  That passes long tests, so since there really isn't any reason anything should be bad, we are good to go.  (Yes, I did `sage -b`.)\n\nSince p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.",
+    "body": "> > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n\n> \n> The interface is `sage/interfaces/qsieve.py`.\n\n\nGreat, thanks.  That passes long tests, so since there really isn't any reason anything should be bad, we are good to go.  (Yes, I did `sage -b`.)\n\nSince p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.",
     "created_at": "2012-06-21T19:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -422,8 +427,10 @@ archive/issue_comments_091856.json:
 ```
 
 > > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.
+
 > 
 > The interface is `sage/interfaces/qsieve.py`.
+
 
 Great, thanks.  That passes long tests, so since there really isn't any reason anything should be bad, we are good to go.  (Yes, I did `sage -b`.)
 
@@ -436,7 +443,7 @@ Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever
 archive/issue_comments_091857.json:
 ```json
 {
-    "body": "Replying to [comment:15 kcrisman]:\n> Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.\n.p7 still needs review...",
+    "body": "Replying to [comment:15 kcrisman]:\n> Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.\n\n.p7 still needs review...",
     "created_at": "2012-06-21T19:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9544",
     "type": "issue_comment",
@@ -447,6 +454,7 @@ archive/issue_comments_091857.json:
 
 Replying to [comment:15 kcrisman]:
 > Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.
+
 .p7 still needs review...
 
 

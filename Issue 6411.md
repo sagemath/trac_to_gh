@@ -53,7 +53,7 @@ I think if you run a "sage -br" afterward, it will work.  There are just a few t
 archive/issue_comments_051388.json:
 ```json
 {
-    "body": "This is because in spkg-dist, we do the following:\n\n\n```\nrm -rf c_lib/*.so c_lib/*.os c_lib/*/*.os c_lib/*/*/*.os\n```\n\n\nThis causes libcsage to be built again.  What we should do instead is delete the files from the tmp directory that we copy things into.",
+    "body": "This is because in spkg-dist, we do the following:\n\n```\nrm -rf c_lib/*.so c_lib/*.os c_lib/*/*.os c_lib/*/*/*.os\n```\n\nThis causes libcsage to be built again.  What we should do instead is delete the files from the tmp directory that we copy things into.",
     "created_at": "2010-01-17T01:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
@@ -64,11 +64,9 @@ archive/issue_comments_051388.json:
 
 This is because in spkg-dist, we do the following:
 
-
 ```
 rm -rf c_lib/*.so c_lib/*.os c_lib/*/*.os c_lib/*/*/*.os
 ```
-
 
 This causes libcsage to be built again.  What we should do instead is delete the files from the tmp directory that we copy things into.
 

@@ -51,7 +51,7 @@ All the doctests look sane to me, and mabshoff is verifying that they all pass.
 archive/issue_comments_028911.json:
 ```json
 {
-    "body": "One slight problem in tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/tut.py\", line 2178:\n    : D\nExpected:\n    Affine Curve over Rational Field defined by\n       x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\nGot:\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\n**********************************************************************\n```\n",
+    "body": "One slight problem in tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/tut.py\", line 2178:\n    : D\nExpected:\n    Affine Curve over Rational Field defined by\n       x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\nGot:\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\n**********************************************************************\n```",
     "created_at": "2008-08-31T08:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4016",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ Got:
       x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1
 **********************************************************************
 ```
-
 
 
 

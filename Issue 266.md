@@ -3,7 +3,7 @@
 archive/issues_000266.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nDo some standard python trickier so that the sloane sequence objects are not created until they are used.   According to this, just importing sloane_sequences.py is now a nontrivial part of the SAGE startup time, which is ridiculous:\n\n\n```\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.070    0.070    0.093    0.093 functional.py:9(<module>)\n       30    0.049    0.002    1.224    0.041 all.py:1(<module>)\n 1575/274    0.046    0.000    0.087    0.000 ro.py:58(_flatten)\n     5284    0.039    0.000    0.039    0.000 :0(append)\n        1    0.038    0.038    0.038    0.038 matrix_space.py:15(<module>)\n        8    0.036    0.005    0.495    0.062 all.py:3(<module>)\n        2    0.036    0.018    1.284    0.642 all.py:4(<module>)\n        1    0.027    0.027    0.049    0.049 sloane_functions.py:42(<module>)\n```\n\n\nOf course, the sloane_functions.py module needs to be broken up a lot. \n\nIssue created by migration from https://trac.sagemath.org/ticket/266\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nDo some standard python trickier so that the sloane sequence objects are not created until they are used.   According to this, just importing sloane_sequences.py is now a nontrivial part of the SAGE startup time, which is ridiculous:\n\n```\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.070    0.070    0.093    0.093 functional.py:9(<module>)\n       30    0.049    0.002    1.224    0.041 all.py:1(<module>)\n 1575/274    0.046    0.000    0.087    0.000 ro.py:58(_flatten)\n     5284    0.039    0.000    0.039    0.000 :0(append)\n        1    0.038    0.038    0.038    0.038 matrix_space.py:15(<module>)\n        8    0.036    0.005    0.495    0.062 all.py:3(<module>)\n        2    0.036    0.018    1.284    0.642 all.py:4(<module>)\n        1    0.027    0.027    0.049    0.049 sloane_functions.py:42(<module>)\n```\n\nOf course, the sloane_functions.py module needs to be broken up a lot. \n\nIssue created by migration from https://trac.sagemath.org/ticket/266\n\n",
     "created_at": "2007-02-16T07:21:21Z",
     "labels": [
         "component: combinatorics"
@@ -20,7 +20,6 @@ CC:  sage-combinat
 
 Do some standard python trickier so that the sloane sequence objects are not created until they are used.   According to this, just importing sloane_sequences.py is now a nontrivial part of the SAGE startup time, which is ridiculous:
 
-
 ```
    Ordered by: internal time
 
@@ -34,7 +33,6 @@ Do some standard python trickier so that the sloane sequence objects are not cre
         2    0.036    0.018    1.284    0.642 all.py:4(<module>)
         1    0.027    0.027    0.049    0.049 sloane_functions.py:42(<module>)
 ```
-
 
 Of course, the sloane_functions.py module needs to be broken up a lot. 
 

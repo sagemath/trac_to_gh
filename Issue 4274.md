@@ -3,7 +3,7 @@
 archive/issues_004274.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona peter@cryptojedi.org\n\nThis was reported to me by Peter Schwabe:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1274                 proof = True #since we actually provably found the rank\n   1275             i = X.find('Rank = ')\n-> 1276             assert i != -1\n   1277             j = i + X[i:].find('\\n')\n   1278             self.__rank[proof] = Integer(X[i+7:j])\n\nAssertionError: \n```\n\nWithout proof=False, we get:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1268             if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n   1269                 if proof:\n-> 1270                     raise RuntimeError, '%s\\nRank not provably correct.'%X\n   1271                 else:\n   1272                     misc.verbose(\"Warning -- rank not provably correct\", level=1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4274\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona peter@cryptojedi.org\n\nThis was reported to me by Peter Schwabe:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1274                 proof = True #since we actually provably found the rank\n   1275             i = X.find('Rank = ')\n-> 1276             assert i != -1\n   1277             j = i + X[i:].find('\\n')\n   1278             self.__rank[proof] = Integer(X[i+7:j])\n\nAssertionError: \n```\nWithout proof=False, we get:\n\n```\nsage: EllipticCurve([1,0,0,0,37455]).rank()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage-3.1.2/sage/devel/sage-main/sage/schemes/elliptic_curves/<ipython console> in <module>()\n\n/tmp/sage-3.1.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm, proof)\n   1268             if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n   1269                 if proof:\n-> 1270                     raise RuntimeError, '%s\\nRank not provably correct.'%X\n   1271                 else:\n   1272                     misc.verbose(\"Warning -- rank not provably correct\", level=1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4274\n\n",
     "created_at": "2008-10-13T14:45:31Z",
     "labels": [
         "component: algebraic geometry",
@@ -39,7 +39,6 @@ AssertionError                            Traceback (most recent call last)
 
 AssertionError: 
 ```
-
 Without proof=False, we get:
 
 ```
@@ -56,7 +55,6 @@ RuntimeError                              Traceback (most recent call last)
    1271                 else:
    1272                     misc.verbose("Warning -- rank not provably correct", level=1)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4274
 
@@ -111,7 +109,7 @@ Attachment [trac_4274.patch](tarball://root/attachments/some-uuid/ticket4274/tra
 archive/issue_comments_031143.json:
 ```json
 {
-    "body": "Review:  \n\nPatch applies fine to 3.3.alpha0.  Tests in elliptic_curves/ell_rational_field.py pass (but not with -long, see below).\n\nI think this is ok.  It handles the case where the lower and upper bounds of the rank, as output by mwrank,  are not equal. \n\nAt first I was not sure that it handled properly the case where the bounds are equal (so the rank is known for sure) but the saturation step is incomplete, but it's ok:\n\n```\nsage: EllipticCurve( [0,0,1,-49,132]).conductor()\n26171\nsage: EllipticCurve( [0,0,1,-49,132]).rank(proof=True)\n3\nsage: EllipticCurve( [0,0,1,-49,132]).gens(proof=False)\n[(-6 : 14 : 1), (4 : -1 : 1), (5 : -4 : 1)]\nsage: EllipticCurve( [0,0,1,-49,132]).gens(proof=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nGenerators not provably computed.\n```\n\n[If testing the above example, do so on a Sage without the large database, else the gens will be known from there.]\n\nThis is exactly right. \n\nTesting with -long gives one failure but I don't see why it is a failure.  The test which fails is NOT a \"long\" one!  So is this a bug in the doctesting framewirk (due to the verbose output perhaps?)?\n\n\n```\nsage -t -long \"devel/sage-4274/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/home/john/sage-3.3.alpha0/devel/sage-4274/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1291:\n    sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    Rank not provably correct.\nGot:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_31[15]>\", line 1, in <module>\n        EllipticCurve([Integer(1),Integer(0),Integer(0),Integer(0),Integer(37455)]).rank(proof=True)###line 1291:\n    sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n      File \"/home/john/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1342, in rank\n        raise RuntimeError, '%s\\nRank not provably correct.'%X\n    RuntimeError: Curve [1,0,0,0,37455] :\tBasic pair: I=1, J=-64722242\n    disc=-4188968609506560\n    2-adic index bound = 2\n    By Lemma 5.1(b), 2-adic index = 1\n    2-adic index = 1\n    One (I,J) pair\n    *** BSD give two (I,J) pairs\n    Looking for quartics with I = 1, J = -64722242\n    Looking for Type 3 quartics:\n    Trying positive a from 1 up to 115 (square a first...)\n    Trying positive a from 1 up to 115 (...then non-square a)\n    (15,20,1,396,132)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #1\n    (33,30,199,198,-55)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #2\n    (33,66,-395,500,-144)\t--nontrivial...--equivalent to (B) #1\n    (83,-52,139,106,-36)\t--nontrivial...--equivalent to (B) #1\n    Trying negative a from -1 down to -77\n    (-9,17,244,297,411)\t--nontrivial...--equivalent to (B) #1\n    (-15,10,331,646,501)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #3\n    (-67,-71,220,305,141)\t--nontrivial...--equivalent to (B) #1\n    Finished looking for Type 3 quartics.\n    Mordell rank contribution from B=im(eps) = 0\n    Selmer  rank contribution from B=im(eps) = 2\n    Sha     rank contribution from B=im(eps) = 2\n    Mordell rank contribution from A=ker(eps) = 0\n    Selmer  rank contribution from A=ker(eps) = 0\n    Sha     rank contribution from A=ker(eps) = 0\n    <BLANKLINE>\n    Summary of results (all should be powers of 2):\n    <BLANKLINE>\n    n0 = #E(Q)[2]    = 1\n    n1 = #E(Q)/2E(Q) >= 1\n    n2 = #S^(2)(E/Q) = 4\n    #III(E/Q)[2]     <= 4\n    <BLANKLINE>\n    0 <= rank <= selmer-rank = 2\n    <BLANKLINE>\n    0 <= rank <= selmer-rank = 2\n    Searching for points (bound = 8)...done:\n      found points of rank 0\n      and regulator 1\n    Processing points found during 2-descent...done:\n      now regulator = 1\n    Saturating (bound = 100)...done:\n      points were already saturated.\n    <BLANKLINE>\n    <BLANKLINE>\n    Regulator = 1\n    <BLANKLINE>\n    The rank has not been completely determined, \n    only a lower bound of 0 and an upper bound of 2.\n    <BLANKLINE>\n     (0.868055 seconds)\n    Rank not provably correct.\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_31\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/john/sage-3.3.alpha0/tmp/.doctest_ell_rational_field.py\n\t [286.8 s]\nexit code: 1024\n```\n",
+    "body": "Review:  \n\nPatch applies fine to 3.3.alpha0.  Tests in elliptic_curves/ell_rational_field.py pass (but not with -long, see below).\n\nI think this is ok.  It handles the case where the lower and upper bounds of the rank, as output by mwrank,  are not equal. \n\nAt first I was not sure that it handled properly the case where the bounds are equal (so the rank is known for sure) but the saturation step is incomplete, but it's ok:\n\n```\nsage: EllipticCurve( [0,0,1,-49,132]).conductor()\n26171\nsage: EllipticCurve( [0,0,1,-49,132]).rank(proof=True)\n3\nsage: EllipticCurve( [0,0,1,-49,132]).gens(proof=False)\n[(-6 : 14 : 1), (4 : -1 : 1), (5 : -4 : 1)]\nsage: EllipticCurve( [0,0,1,-49,132]).gens(proof=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nGenerators not provably computed.\n```\n[If testing the above example, do so on a Sage without the large database, else the gens will be known from there.]\n\nThis is exactly right. \n\nTesting with -long gives one failure but I don't see why it is a failure.  The test which fails is NOT a \"long\" one!  So is this a bug in the doctesting framewirk (due to the verbose output perhaps?)?\n\n```\nsage -t -long \"devel/sage-4274/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/home/john/sage-3.3.alpha0/devel/sage-4274/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1291:\n    sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    Rank not provably correct.\nGot:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_31[15]>\", line 1, in <module>\n        EllipticCurve([Integer(1),Integer(0),Integer(0),Integer(0),Integer(37455)]).rank(proof=True)###line 1291:\n    sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n      File \"/home/john/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1342, in rank\n        raise RuntimeError, '%s\\nRank not provably correct.'%X\n    RuntimeError: Curve [1,0,0,0,37455] :\tBasic pair: I=1, J=-64722242\n    disc=-4188968609506560\n    2-adic index bound = 2\n    By Lemma 5.1(b), 2-adic index = 1\n    2-adic index = 1\n    One (I,J) pair\n    *** BSD give two (I,J) pairs\n    Looking for quartics with I = 1, J = -64722242\n    Looking for Type 3 quartics:\n    Trying positive a from 1 up to 115 (square a first...)\n    Trying positive a from 1 up to 115 (...then non-square a)\n    (15,20,1,396,132)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #1\n    (33,30,199,198,-55)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #2\n    (33,66,-395,500,-144)\t--nontrivial...--equivalent to (B) #1\n    (83,-52,139,106,-36)\t--nontrivial...--equivalent to (B) #1\n    Trying negative a from -1 down to -77\n    (-9,17,244,297,411)\t--nontrivial...--equivalent to (B) #1\n    (-15,10,331,646,501)\t--nontrivial...locally soluble...no rational point found (limit 10) --new (B) #3\n    (-67,-71,220,305,141)\t--nontrivial...--equivalent to (B) #1\n    Finished looking for Type 3 quartics.\n    Mordell rank contribution from B=im(eps) = 0\n    Selmer  rank contribution from B=im(eps) = 2\n    Sha     rank contribution from B=im(eps) = 2\n    Mordell rank contribution from A=ker(eps) = 0\n    Selmer  rank contribution from A=ker(eps) = 0\n    Sha     rank contribution from A=ker(eps) = 0\n    <BLANKLINE>\n    Summary of results (all should be powers of 2):\n    <BLANKLINE>\n    n0 = #E(Q)[2]    = 1\n    n1 = #E(Q)/2E(Q) >= 1\n    n2 = #S^(2)(E/Q) = 4\n    #III(E/Q)[2]     <= 4\n    <BLANKLINE>\n    0 <= rank <= selmer-rank = 2\n    <BLANKLINE>\n    0 <= rank <= selmer-rank = 2\n    Searching for points (bound = 8)...done:\n      found points of rank 0\n      and regulator 1\n    Processing points found during 2-descent...done:\n      now regulator = 1\n    Saturating (bound = 100)...done:\n      points were already saturated.\n    <BLANKLINE>\n    <BLANKLINE>\n    Regulator = 1\n    <BLANKLINE>\n    The rank has not been completely determined, \n    only a lower bound of 0 and an upper bound of 2.\n    <BLANKLINE>\n     (0.868055 seconds)\n    Rank not provably correct.\n**********************************************************************\n1 items had failures:\n   1 of  16 in __main__.example_31\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/john/sage-3.3.alpha0/tmp/.doctest_ell_rational_field.py\n\t [286.8 s]\nexit code: 1024\n```",
     "created_at": "2009-01-22T20:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -141,13 +139,11 @@ RuntimeError                              Traceback (most recent call last)
 ...
 Generators not provably computed.
 ```
-
 [If testing the above example, do so on a Sage without the large database, else the gens will be known from there.]
 
 This is exactly right. 
 
 Testing with -long gives one failure but I don't see why it is a failure.  The test which fails is NOT a "long" one!  So is this a bug in the doctesting framewirk (due to the verbose output perhaps?)?
-
 
 ```
 sage -t -long "devel/sage-4274/sage/schemes/elliptic_curves/ell_rational_field.py"
@@ -235,7 +231,6 @@ exit code: 1024
 
 
 
-
 ---
 
 archive/issue_comments_031144.json:
@@ -261,7 +256,7 @@ I agree that from first sight, this seems to be a framework problem, not one of 
 archive/issue_comments_031145.json:
 ```json
 {
-    "body": "Replying to [comment:5 GeorgSWeber]:\n> Perhaps the \"magic three dots\" used in the verbose output at several places are problematic?\n> \n\nThat sounds plausible -- but why would it only be a problem when the -long flag is set?\n\n> I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.",
+    "body": "Replying to [comment:5 GeorgSWeber]:\n> Perhaps the \"magic three dots\" used in the verbose output at several places are problematic?\n> \n\n\nThat sounds plausible -- but why would it only be a problem when the -long flag is set?\n\n> I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.",
     "created_at": "2009-01-23T20:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -274,6 +269,7 @@ Replying to [comment:5 GeorgSWeber]:
 > Perhaps the "magic three dots" used in the verbose output at several places are problematic?
 > 
 
+
 That sounds plausible -- but why would it only be a problem when the -long flag is set?
 
 > I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.
@@ -285,7 +281,7 @@ That sounds plausible -- but why would it only be a problem when the -long flag 
 archive/issue_comments_031146.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Replying to [comment:5 GeorgSWeber]:\n> > Perhaps the \"magic three dots\" used in the verbose output at several places are problematic?\n> > \n> \n> That sounds plausible -- but why would it only be a problem when the -long flag is set?\n\nIt fails for me without long, but this is truly bizarre. I have looked at the patch, but cannot find anything obviously wrong with it. \n\n> > I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 cremona]:\n> Replying to [comment:5 GeorgSWeber]:\n> > Perhaps the \"magic three dots\" used in the verbose output at several places are problematic?\n> > \n\n> \n> That sounds plausible -- but why would it only be a problem when the -long flag is set?\n\n\nIt fails for me without long, but this is truly bizarre. I have looked at the patch, but cannot find anything obviously wrong with it. \n\n> > I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.\n\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T14:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -298,12 +294,15 @@ Replying to [comment:6 cremona]:
 > Replying to [comment:5 GeorgSWeber]:
 > > Perhaps the "magic three dots" used in the verbose output at several places are problematic?
 > > 
+
 > 
 > That sounds plausible -- but why would it only be a problem when the -long flag is set?
+
 
 It fails for me without long, but this is truly bizarre. I have looked at the patch, but cannot find anything obviously wrong with it. 
 
 > > I agree that from first sight, this seems to be a framework problem, not one of the code to be doctested.
+
 
 Cheers,
 
@@ -375,7 +374,7 @@ archive/issue_events_009657.json:
 archive/issue_comments_031149.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> \n> Additional patch does this, and fixes the problem -- minor review only required, I think!\n\nNice catch, I am doctesting it to make 100% there are no new issues. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n> \n> Additional patch does this, and fixes the problem -- minor review only required, I think!\n\n\nNice catch, I am doctesting it to make 100% there are no new issues. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T15:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -387,6 +386,7 @@ archive/issue_comments_031149.json:
 Replying to [comment:8 cremona]:
 > 
 > Additional patch does this, and fixes the problem -- minor review only required, I think!
+
 
 Nice catch, I am doctesting it to make 100% there are no new issues. Positive review.
 
@@ -457,7 +457,7 @@ archive/issue_events_009658.json:
 archive/issue_comments_031152.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n> Merged both patches in Sage 3.3.rc1.\n\nExcellent, thanks.\n\nJohn",
+    "body": "Replying to [comment:10 mabshoff]:\n> Merged both patches in Sage 3.3.rc1.\n\n\nExcellent, thanks.\n\nJohn",
     "created_at": "2009-02-15T15:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4274",
     "type": "issue_comment",
@@ -468,6 +468,7 @@ archive/issue_comments_031152.json:
 
 Replying to [comment:10 mabshoff]:
 > Merged both patches in Sage 3.3.rc1.
+
 
 Excellent, thanks.
 

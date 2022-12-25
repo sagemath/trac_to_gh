@@ -273,7 +273,7 @@ I'm okay with the hashability as we assume all elements to be hashable, nor is p
 archive/issue_comments_052330.json:
 ```json
 {
-    "body": "I Travis!\n\nReplying to [comment:11 tscrim]:\n> I'm okay with the hashability as we assume all elements to be hashable\n\nWell, this hashabilitiy assumption was not there before this ticket. So technically speaking that's a backward incompatible change. I agree that in all use cases I can think of, the objects are hashable, so it probably is not a big deal.\n\n>, nor is picklability important to me. However this now makes `rank_from_list` to be the `O(n)` function, and the function itself is not cached. So for large lists (or worse, say for a crystal where iteration is relatively expensive), this could lead to a pretty large slowdown. How about we just return the original implementation of `rank` as a cached function?\n\nWhen `rank_from_list` is called, that's usually with the intention of calling it intensively afterward; in particular the ranker is typically stored in the calling object for all later reuse. At least, that's the case in all the current calls in the Sage library.\n\nBeing completely lazy and implementhing `rank_from_list` as a cached function on top of `list.index` would imply an overhead of `O(n^2)` instead of `O(n)` before we reach the limit state where the complexity in `O(1)`; not great. We could introduce some partial lazyness, making sure that the first time an object `x` is looked up, the cache is set for all objects before `x` in the list. What do you think? Is it worth it?\n\nA note: the name `from_list` makes it relatively explicit that the iterable will be expanded anyway.\n\nCheers,\n                          Nicolas",
+    "body": "I Travis!\n\nReplying to [comment:11 tscrim]:\n> I'm okay with the hashability as we assume all elements to be hashable\n\n\nWell, this hashabilitiy assumption was not there before this ticket. So technically speaking that's a backward incompatible change. I agree that in all use cases I can think of, the objects are hashable, so it probably is not a big deal.\n\n>, nor is picklability important to me. However this now makes `rank_from_list` to be the `O(n)` function, and the function itself is not cached. So for large lists (or worse, say for a crystal where iteration is relatively expensive), this could lead to a pretty large slowdown. How about we just return the original implementation of `rank` as a cached function?\n\n\nWhen `rank_from_list` is called, that's usually with the intention of calling it intensively afterward; in particular the ranker is typically stored in the calling object for all later reuse. At least, that's the case in all the current calls in the Sage library.\n\nBeing completely lazy and implementhing `rank_from_list` as a cached function on top of `list.index` would imply an overhead of `O(n^2)` instead of `O(n)` before we reach the limit state where the complexity in `O(1)`; not great. We could introduce some partial lazyness, making sure that the first time an object `x` is looked up, the cache is set for all objects before `x` in the list. What do you think? Is it worth it?\n\nA note: the name `from_list` makes it relatively explicit that the iterable will be expanded anyway.\n\nCheers,\n                          Nicolas",
     "created_at": "2015-04-27T20:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -287,9 +287,11 @@ I Travis!
 Replying to [comment:11 tscrim]:
 > I'm okay with the hashability as we assume all elements to be hashable
 
+
 Well, this hashabilitiy assumption was not there before this ticket. So technically speaking that's a backward incompatible change. I agree that in all use cases I can think of, the objects are hashable, so it probably is not a big deal.
 
 >, nor is picklability important to me. However this now makes `rank_from_list` to be the `O(n)` function, and the function itself is not cached. So for large lists (or worse, say for a crystal where iteration is relatively expensive), this could lead to a pretty large slowdown. How about we just return the original implementation of `rank` as a cached function?
+
 
 When `rank_from_list` is called, that's usually with the intention of calling it intensively afterward; in particular the ranker is typically stored in the calling object for all later reuse. At least, that's the case in all the current calls in the Sage library.
 
@@ -361,7 +363,7 @@ True, that would end up being `O(n^2)`. Since this seems to only be used in 2 pl
 archive/issue_comments_052334.json:
 ```json
 {
-    "body": "You know that with ``@`cached_function` instead of a plain dictionary you are building a 2-tuple containg a tuple enclosing the object and an empty tuple?\n\n```\nsage: r = rank_from_list(range(10))\nsage: r.get_cache()\n{((0,), ()): 0,\n ((1,), ()): 1,\n ((2,), ()): 2,\n ((3,), ()): 3,\n ((4,), ()): 4,\n ((5,), ()): 5,\n ((6,), ()): 6,\n ((7,), ()): 7,\n ((8,), ()): 8,\n ((9,), ()): 9}\n```\n\n\nWhat is wrong with\n\n```\ndef rank_from_list(l):\n    my_dict = {j:i for i,j in enumerate(l)}\n    def rank(i):\n        return my_dict[i]\n```\n\nIt is not very clean, but at least cleaner. And also faster by the way.\n\nVincent",
+    "body": "You know that with ``@`cached_function` instead of a plain dictionary you are building a 2-tuple containg a tuple enclosing the object and an empty tuple?\n\n```\nsage: r = rank_from_list(range(10))\nsage: r.get_cache()\n{((0,), ()): 0,\n ((1,), ()): 1,\n ((2,), ()): 2,\n ((3,), ()): 3,\n ((4,), ()): 4,\n ((5,), ()): 5,\n ((6,), ()): 6,\n ((7,), ()): 7,\n ((8,), ()): 8,\n ((9,), ()): 9}\n```\n\nWhat is wrong with\n\n```\ndef rank_from_list(l):\n    my_dict = {j:i for i,j in enumerate(l)}\n    def rank(i):\n        return my_dict[i]\n```\nIt is not very clean, but at least cleaner. And also faster by the way.\n\nVincent",
     "created_at": "2015-04-28T21:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -387,7 +389,6 @@ sage: r.get_cache()
  ((9,), ()): 9}
 ```
 
-
 What is wrong with
 
 ```
@@ -396,7 +397,6 @@ def rank_from_list(l):
     def rank(i):
         return my_dict[i]
 ```
-
 It is not very clean, but at least cleaner. And also faster by the way.
 
 Vincent
@@ -408,7 +408,7 @@ Vincent
 archive/issue_comments_052335.json:
 ```json
 {
-    "body": "Ah, good point; I thought our cached functions had a special case for\none parameter functions. Other than that, using a cached function was\nmostly a (failed) attempt at having something picklable as well.\n\nSo, let's see about speed with various implementations:\n\n```\nsage: l = range(100);\nsage: d = { x:i for i,x in enumerate(l) }\nsage: @cached_function\n....: def rank_cached(): pass\nsage: for i,x in enumerate(l):\n....:     rank_cached.set_cache(i, x)\nsage: def rank_dict(x):\n....:     return d[x]\nsage: rank_dict_getitem = d.__getitem__\n\nsage: cython(\"\"\"\nl = range(100);\nd = { x:i for i,x in enumerate(l) }\ncpdef int rank_dict_cython(x):\n    return d[x]\n\"\"\")\nsage: cython(\"\"\"\nl = range(100);\nd = { x:i for i,x in enumerate(l) }\ncpdef int rank_dict_cython_exception(x):\n    try:\n        return d[x]\n    except KeyError:\n        raise ValueError(\"%s is not blah blah blah\"%x)\n\"\"\")\n\nsage: cython(\"\"\"\ncdef class RankFromList(dict):\n    def __call__(self, x):\n        try:\n            return self[x]\n        except KeyError:\n            raise ValueError(\"%s is not blah blah blah\"%x)\n\"\"\")\nsage: rank_dict_cython_class = RankFromList((x,i) for i,x in enumerate(l))\n```\n\n\nHere are the timings, in decreasing order:\n\n```\nsage: sage: %timeit rank_cached(50)\nThe slowest run took 41.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 381 ns per loop\nsage: sage: %timeit rank_dict(50)\nThe slowest run took 15.56 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 245 ns per loop\nsage: sage: %timeit rank_dict_cython_class(50)\nThe slowest run took 22.12 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 226 ns per loop\nsage: sage: %timeit rank_dict_cython_exception(50)\nThe slowest run took 36.63 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 195 ns per loop\nsage: sage: %timeit rank_dict_cython(50)\nThe slowest run took 31.18 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 191 ns per loop\nsage: sage: %timeit rank_dict_getitem(50)\nThe slowest run took 17.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 173 ns per loop\n```\n\n\nThose timing seem to be consistent from one call to the other. Most of\nthe time this feature is used with non trivial objects where the\nbottleneck is the computation of hash/equality of the objects. So we\ndon't necessarily need to optimize to the last bit.\n\nIn view of the above, the fastest is to return the `__getitem__`\nmethod of the dictionary. The main caveat is that we don't have\ncontrol on the exception (a `KeyError` instead of a\n`ValueError`). Maybe it is not so bad since a `KeyError` is a special\nkind of `ValueError`.\n\nThe most flexible is to use a class. In particular, this would make\nthe ranker picklable (this can be useful: I have had cases where an\nobject would not pickle properly because one of it's attribute was a\nranker). This also opens the door for reintroducing laziness later\non. It's 30% slower than `getitem` which could be acceptable (I was in\nfact expecting a smaller overhead; maybe I missed something in the\ncythonization).\n\nWhat do you think?\n\nCheers,\n                         Nicolas",
+    "body": "Ah, good point; I thought our cached functions had a special case for\none parameter functions. Other than that, using a cached function was\nmostly a (failed) attempt at having something picklable as well.\n\nSo, let's see about speed with various implementations:\n\n```\nsage: l = range(100);\nsage: d = { x:i for i,x in enumerate(l) }\nsage: @cached_function\n....: def rank_cached(): pass\nsage: for i,x in enumerate(l):\n....:     rank_cached.set_cache(i, x)\nsage: def rank_dict(x):\n....:     return d[x]\nsage: rank_dict_getitem = d.__getitem__\n\nsage: cython(\"\"\"\nl = range(100);\nd = { x:i for i,x in enumerate(l) }\ncpdef int rank_dict_cython(x):\n    return d[x]\n\"\"\")\nsage: cython(\"\"\"\nl = range(100);\nd = { x:i for i,x in enumerate(l) }\ncpdef int rank_dict_cython_exception(x):\n    try:\n        return d[x]\n    except KeyError:\n        raise ValueError(\"%s is not blah blah blah\"%x)\n\"\"\")\n\nsage: cython(\"\"\"\ncdef class RankFromList(dict):\n    def __call__(self, x):\n        try:\n            return self[x]\n        except KeyError:\n            raise ValueError(\"%s is not blah blah blah\"%x)\n\"\"\")\nsage: rank_dict_cython_class = RankFromList((x,i) for i,x in enumerate(l))\n```\n\nHere are the timings, in decreasing order:\n\n```\nsage: sage: %timeit rank_cached(50)\nThe slowest run took 41.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 381 ns per loop\nsage: sage: %timeit rank_dict(50)\nThe slowest run took 15.56 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 245 ns per loop\nsage: sage: %timeit rank_dict_cython_class(50)\nThe slowest run took 22.12 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 226 ns per loop\nsage: sage: %timeit rank_dict_cython_exception(50)\nThe slowest run took 36.63 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 195 ns per loop\nsage: sage: %timeit rank_dict_cython(50)\nThe slowest run took 31.18 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 191 ns per loop\nsage: sage: %timeit rank_dict_getitem(50)\nThe slowest run took 17.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1000000 loops, best of 3: 173 ns per loop\n```\n\nThose timing seem to be consistent from one call to the other. Most of\nthe time this feature is used with non trivial objects where the\nbottleneck is the computation of hash/equality of the objects. So we\ndon't necessarily need to optimize to the last bit.\n\nIn view of the above, the fastest is to return the `__getitem__`\nmethod of the dictionary. The main caveat is that we don't have\ncontrol on the exception (a `KeyError` instead of a\n`ValueError`). Maybe it is not so bad since a `KeyError` is a special\nkind of `ValueError`.\n\nThe most flexible is to use a class. In particular, this would make\nthe ranker picklable (this can be useful: I have had cases where an\nobject would not pickle properly because one of it's attribute was a\nranker). This also opens the door for reintroducing laziness later\non. It's 30% slower than `getitem` which could be acceptable (I was in\nfact expecting a smaller overhead; maybe I missed something in the\ncythonization).\n\nWhat do you think?\n\nCheers,\n                         Nicolas",
     "created_at": "2015-04-30T07:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -461,7 +461,6 @@ cdef class RankFromList(dict):
 sage: rank_dict_cython_class = RankFromList((x,i) for i,x in enumerate(l))
 ```
 
-
 Here are the timings, in decreasing order:
 
 ```
@@ -484,7 +483,6 @@ sage: sage: %timeit rank_dict_getitem(50)
 The slowest run took 17.96 times longer than the fastest. This could mean that an intermediate result is being cached 
 1000000 loops, best of 3: 173 ns per loop
 ```
-
 
 Those timing seem to be consistent from one call to the other. Most of
 the time this feature is used with non trivial objects where the
@@ -611,7 +609,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_052341.json:
 ```json
 {
-    "body": "Hello,\n\nThe final picture looks good. One good thing would be to clean the git history.\n\nThe fastest way to create a dictionary from a list is\n\n```\ncdef dict d = {x:i for i,x in enumerate(l)}\n```\n\nI guess it avoids the creation of the pair `(i,x)`.\n\nThe documentation can be more precise\n\n```\nNo error is issued in case of duplicate value in ``l``. Instead,\nthe rank function returns the position of some of the duplicates::\n```\n\nThe rank of the **last value** is returned not just **some**. It would possible to use `PyDict_MergeFromSeq2` to return the first though. But it is not clear to me that it is what we want.\n\nSided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.\n\nVincent",
+    "body": "Hello,\n\nThe final picture looks good. One good thing would be to clean the git history.\n\nThe fastest way to create a dictionary from a list is\n\n```\ncdef dict d = {x:i for i,x in enumerate(l)}\n```\nI guess it avoids the creation of the pair `(i,x)`.\n\nThe documentation can be more precise\n\n```\nNo error is issued in case of duplicate value in ``l``. Instead,\nthe rank function returns the position of some of the duplicates::\n```\nThe rank of the **last value** is returned not just **some**. It would possible to use `PyDict_MergeFromSeq2` to return the first though. But it is not clear to me that it is what we want.\n\nSided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.\n\nVincent",
     "created_at": "2015-05-04T06:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -629,7 +627,6 @@ The fastest way to create a dictionary from a list is
 ```
 cdef dict d = {x:i for i,x in enumerate(l)}
 ```
-
 I guess it avoids the creation of the pair `(i,x)`.
 
 The documentation can be more precise
@@ -638,7 +635,6 @@ The documentation can be more precise
 No error is issued in case of duplicate value in ``l``. Instead,
 the rank function returns the position of some of the duplicates::
 ```
-
 The rank of the **last value** is returned not just **some**. It would possible to use `PyDict_MergeFromSeq2` to return the first though. But it is not clear to me that it is what we want.
 
 Sided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.
@@ -670,7 +666,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_052343.json:
 ```json
 {
-    "body": "Replying to [comment:22 vdelecroix]:\n> The fastest way to create a dictionary from a list is\n> {{{\n> cdef dict d = {x:i for i,x in enumerate(l)}\n> }}}\n> I guess it avoids the creation of the pair `(i,x)`.\n\nI hesitated about this; however we are creating a `CallableDict` not a\ndict at the end. So using this notation means we are first\nconstructing a dictionary and then copying it into the `CallableDict`.\nThis is indeed slightly faster for lists of trivial objects:\n\n\n```\nsage: l = range(1000)\nsage: %timeit rank_from_list(l)           # using generator expression\n1000 loops, best of 3: 145 \u00b5s per loop\n\nsage: %timeit rank_from_list(l)           # using {...}\n10000 loops, best of 3: 109 \u00b5s per loop\n```\n\n\nBut not anymore for lists of objects with non trivial hash/eq:\n\n```\nsage: l = list(Permutations(8))\nsage: %timeit rank_from_list(l)           # using generator expression\nThe slowest run took 10.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1 loops, best of 3: 18.8 ms per loop\n\nsage: %timeit rank_from_list(l)           # using {..}\nThe slowest run took 10.08 times longer than the fastest. This could mean that an intermediate result is being cached \n1 loops, best of 3: 21.7 ms per loop\n```\n\n\nNote that we can hope for the generator expression to be optimized in\nthe long run when ranker.py will be cythonized.\n\n> The documentation can be more precise\n> {{{\n> No error is issued in case of duplicate value in ``l``. Instead,\n> the rank function returns the position of some of the duplicates::\n> }}}\n> The rank of the **last value** is returned not just **some**.\n\nThis is on purpose: I don't want to set this behavior in stone, in\norder to leave room for future reimplementations. In any cases it's\nexplicitly said that this function is meant for lists without\nduplicates.\n\n> Sided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.\n\nGreat!\n----\nNew commits:",
+    "body": "Replying to [comment:22 vdelecroix]:\n> The fastest way to create a dictionary from a list is\n> \n> ```\n> cdef dict d = {x:i for i,x in enumerate(l)}\n> ```\n> I guess it avoids the creation of the pair `(i,x)`.\n\n\nI hesitated about this; however we are creating a `CallableDict` not a\ndict at the end. So using this notation means we are first\nconstructing a dictionary and then copying it into the `CallableDict`.\nThis is indeed slightly faster for lists of trivial objects:\n\n```\nsage: l = range(1000)\nsage: %timeit rank_from_list(l)           # using generator expression\n1000 loops, best of 3: 145 \u00b5s per loop\n\nsage: %timeit rank_from_list(l)           # using {...}\n10000 loops, best of 3: 109 \u00b5s per loop\n```\n\nBut not anymore for lists of objects with non trivial hash/eq:\n\n```\nsage: l = list(Permutations(8))\nsage: %timeit rank_from_list(l)           # using generator expression\nThe slowest run took 10.96 times longer than the fastest. This could mean that an intermediate result is being cached \n1 loops, best of 3: 18.8 ms per loop\n\nsage: %timeit rank_from_list(l)           # using {..}\nThe slowest run took 10.08 times longer than the fastest. This could mean that an intermediate result is being cached \n1 loops, best of 3: 21.7 ms per loop\n```\n\nNote that we can hope for the generator expression to be optimized in\nthe long run when ranker.py will be cythonized.\n\n> The documentation can be more precise\n> \n> ```\n> No error is issued in case of duplicate value in ``l``. Instead,\n> the rank function returns the position of some of the duplicates::\n> ```\n> The rank of the **last value** is returned not just **some**.\n\n\nThis is on purpose: I don't want to set this behavior in stone, in\norder to leave room for future reimplementations. In any cases it's\nexplicitly said that this function is meant for lists without\nduplicates.\n\n> Sided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.\n\n\nGreat!\n\n---\nNew commits:",
     "created_at": "2015-05-04T20:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -681,16 +677,17 @@ archive/issue_comments_052343.json:
 
 Replying to [comment:22 vdelecroix]:
 > The fastest way to create a dictionary from a list is
-> {{{
+> 
+> ```
 > cdef dict d = {x:i for i,x in enumerate(l)}
-> }}}
+> ```
 > I guess it avoids the creation of the pair `(i,x)`.
+
 
 I hesitated about this; however we are creating a `CallableDict` not a
 dict at the end. So using this notation means we are first
 constructing a dictionary and then copying it into the `CallableDict`.
 This is indeed slightly faster for lists of trivial objects:
-
 
 ```
 sage: l = range(1000)
@@ -700,7 +697,6 @@ sage: %timeit rank_from_list(l)           # using generator expression
 sage: %timeit rank_from_list(l)           # using {...}
 10000 loops, best of 3: 109 µs per loop
 ```
-
 
 But not anymore for lists of objects with non trivial hash/eq:
 
@@ -715,16 +711,17 @@ The slowest run took 10.08 times longer than the fastest. This could mean that a
 1 loops, best of 3: 21.7 ms per loop
 ```
 
-
 Note that we can hope for the generator expression to be optimized in
 the long run when ranker.py will be cythonized.
 
 > The documentation can be more precise
-> {{{
+> 
+> ```
 > No error is issued in case of duplicate value in ``l``. Instead,
 > the rank function returns the position of some of the duplicates::
-> }}}
+> ```
 > The rank of the **last value** is returned not just **some**.
+
 
 This is on purpose: I don't want to set this behavior in stone, in
 order to leave room for future reimplementations. In any cases it's
@@ -733,8 +730,10 @@ duplicates.
 
 > Sided note: I am pretty sure that with #18330 that something better can be done so that `__call__` becomes as fast as `__getitem__` (up to a C function call). But not for this ticket.
 
+
 Great!
-----
+
+---
 New commits:
 
 
@@ -744,7 +743,7 @@ New commits:
 archive/issue_comments_052344.json:
 ```json
 {
-    "body": "\n```\nsage -t --long src/sage/sets/finite_set_map_cy.pyx\n**********************************************************************\nFile \"src/sage/sets/finite_set_map_cy.pyx\", line 491,\nin sage.sets.finite_set_map_cy.FiniteSetMap_Set.setimage\nFailed example:\n    with fs.clone() as fs3:\n          fs3.setimage(\"z\", 2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 'z' is not in list\nGot:\n    Traceback (most recent call last):\n    ....\n    ValueError: 'z' is not in dict\n**********************************************************************\nFile \"src/sage/sets/finite_set_map_cy.pyx\", line 497,\nin sage.sets.finite_set_map_cy.FiniteSetMap_Set.setimage\nFailed example:\n    with fs.clone() as fs3:\n          fs3.setimage(1, 4)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 1 is not in list\nGot:\n    Traceback (most recent call last):\n    ...\n    ValueError: 1 is not in dict\n```\n",
+    "body": "```\nsage -t --long src/sage/sets/finite_set_map_cy.pyx\n**********************************************************************\nFile \"src/sage/sets/finite_set_map_cy.pyx\", line 491,\nin sage.sets.finite_set_map_cy.FiniteSetMap_Set.setimage\nFailed example:\n    with fs.clone() as fs3:\n          fs3.setimage(\"z\", 2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 'z' is not in list\nGot:\n    Traceback (most recent call last):\n    ....\n    ValueError: 'z' is not in dict\n**********************************************************************\nFile \"src/sage/sets/finite_set_map_cy.pyx\", line 497,\nin sage.sets.finite_set_map_cy.FiniteSetMap_Set.setimage\nFailed example:\n    with fs.clone() as fs3:\n          fs3.setimage(1, 4)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 1 is not in list\nGot:\n    Traceback (most recent call last):\n    ...\n    ValueError: 1 is not in dict\n```",
     "created_at": "2015-05-05T06:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6484",
     "type": "issue_comment",
@@ -752,7 +751,6 @@ archive/issue_comments_052344.json:
     "user": "https://github.com/videlec"
 }
 ```
-
 
 ```
 sage -t --long src/sage/sets/finite_set_map_cy.pyx
@@ -785,7 +783,6 @@ Got:
     ...
     ValueError: 1 is not in dict
 ```
-
 
 
 

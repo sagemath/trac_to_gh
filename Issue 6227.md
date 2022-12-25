@@ -3,7 +3,7 @@
 archive/issues_006227.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nfrom Robertwb:\n\n```\n> Ext\n>  - Yes, we should remove all of the python_* files now that they're\n> shipped with Cython. It just hasn't been done yet (should be easy,\n> but not sure what the fallout might be).\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6227\n\n",
+    "body": "Assignee: cwitty\n\nfrom Robertwb:\n\n```\n> Ext\n>  - Yes, we should remove all of the python_* files now that they're\n> shipped with Cython. It just hasn't been done yet (should be easy,\n> but not sure what the fallout might be).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6227\n\n",
     "created_at": "2009-06-05T17:17:03Z",
     "labels": [
         "component: misc"
@@ -25,7 +25,6 @@ from Robertwb:
 > shipped with Cython. It just hasn't been done yet (should be easy,
 > but not sure what the fallout might be).
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6227

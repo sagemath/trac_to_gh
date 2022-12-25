@@ -3,7 +3,7 @@
 archive/issues_005033.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere are two problem here:\n\n```\nsage: B = matrix(QQ, 2, [1..4])\nsage: B.lift()\n...\nAttributeError: 'RationalField' object has no attribute 'cover_ring'\nsage: B.lift?\n            EXAMPLES:\n...\n```\n          \n\n1. lift should first check if there is a cover_ring attribute.  If not, I think lift should just return self.\n\n2. The lift function is undocumented.  It just has examples but no description of what it is supposed to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5033\n\n",
+    "body": "Assignee: @williamstein\n\nThere are two problem here:\n\n```\nsage: B = matrix(QQ, 2, [1..4])\nsage: B.lift()\n...\nAttributeError: 'RationalField' object has no attribute 'cover_ring'\nsage: B.lift?\n            EXAMPLES:\n...\n```          \n\n1. lift should first check if there is a cover_ring attribute.  If not, I think lift should just return self.\n\n2. The lift function is undocumented.  It just has examples but no description of what it is supposed to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5033\n\n",
     "created_at": "2009-01-20T06:03:40Z",
     "labels": [
         "component: linear algebra",
@@ -28,8 +28,7 @@ AttributeError: 'RationalField' object has no attribute 'cover_ring'
 sage: B.lift?
             EXAMPLES:
 ...
-```
-          
+```          
 
 1. lift should first check if there is a cover_ring attribute.  If not, I think lift should just return self.
 

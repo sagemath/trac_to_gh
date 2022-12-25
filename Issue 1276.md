@@ -3,7 +3,7 @@
 archive/issues_001276.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  @wjp\n\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
+    "body": "Assignee: failure\n\nCC:  @wjp\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
     "created_at": "2007-11-26T04:18:09Z",
     "labels": [
         "component: doctest coverage"
@@ -19,7 +19,6 @@ Assignee: failure
 
 CC:  @wjp
 
-
 ```
 > Send me your doctest timing code :-)  I'm looking forward to playing with it.
 
@@ -34,7 +33,6 @@ delete that file when appropriate, though.
 I also attached two very basic scripts that show or compare the contents
 of timings.sobj files.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1276
 

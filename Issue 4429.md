@@ -3,7 +3,7 @@
 archive/issues_004429.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nIt was reported in sage-support, and I just experienced it myself, that sometimes the sage notebook will give an error on login:\n\n```\nPlease enable cookies and try again.\n```\n\neven though cookies are enabled.   When this just happened to me, I tried\nseveral times to login and it would not work -- always giving that error.\nThen I tried deleting all cookies in the cookie cache, and login worked fine.\nThus somehow we're getting the above error when there is a stale cookie.\nThis is somewhat difficult to replicate, but there is definitely a major\nbug here.  Possibly reading the code in the notebook that produces\nthat message, would produce by pure thought what the problem is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4429\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nIt was reported in sage-support, and I just experienced it myself, that sometimes the sage notebook will give an error on login:\n\n```\nPlease enable cookies and try again.\n```\neven though cookies are enabled.   When this just happened to me, I tried\nseveral times to login and it would not work -- always giving that error.\nThen I tried deleting all cookies in the cookie cache, and login worked fine.\nThus somehow we're getting the above error when there is a stale cookie.\nThis is somewhat difficult to replicate, but there is definitely a major\nbug here.  Possibly reading the code in the notebook that produces\nthat message, would produce by pure thought what the problem is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4429\n\n",
     "created_at": "2008-11-03T01:17:40Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ It was reported in sage-support, and I just experienced it myself, that sometime
 ```
 Please enable cookies and try again.
 ```
-
 even though cookies are enabled.   When this just happened to me, I tried
 several times to login and it would not work -- always giving that error.
 Then I tried deleting all cookies in the cookie cache, and login worked fine.

@@ -153,7 +153,7 @@ I'll do it tomorrow.
 archive/issue_comments_019247.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> Sorry, I forgot to trim gp_cremona.py.\n> \n> The only useful bits left in there now that the elliptic curves mod p construction is redundant are (1) analytic rank and (2) isogenies.\n> \n> In both cases I regrard these as temporary, waiting bettwe implementations in Sage.\n> \n> For the moement you can delete that one test which refers to ._cremona_abgrp_data().  But in fact you can also delete ellinit(e,p) and ellzp(e,p) too, and then that might require further trimming in other elliptic curves files.\n> \n\nOn second thoughts we should still keep those in -- they provide the Weil pairing, which people regularly ask for, and it just needs a wrapper to my gp code to do that.\n\n> I'll do it tomorrow.",
+    "body": "Replying to [comment:4 cremona]:\n> Sorry, I forgot to trim gp_cremona.py.\n> \n> The only useful bits left in there now that the elliptic curves mod p construction is redundant are (1) analytic rank and (2) isogenies.\n> \n> In both cases I regrard these as temporary, waiting bettwe implementations in Sage.\n> \n> For the moement you can delete that one test which refers to ._cremona_abgrp_data().  But in fact you can also delete ellinit(e,p) and ellzp(e,p) too, and then that might require further trimming in other elliptic curves files.\n> \n\n\nOn second thoughts we should still keep those in -- they provide the Weil pairing, which people regularly ask for, and it just needs a wrapper to my gp code to do that.\n\n> I'll do it tomorrow.",
     "created_at": "2008-04-05T22:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2810",
     "type": "issue_comment",
@@ -171,6 +171,7 @@ Replying to [comment:4 cremona]:
 > 
 > For the moement you can delete that one test which refers to ._cremona_abgrp_data().  But in fact you can also delete ellinit(e,p) and ellzp(e,p) too, and then that might require further trimming in other elliptic curves files.
 > 
+
 
 On second thoughts we should still keep those in -- they provide the Weil pairing, which people regularly ask for, and it just needs a wrapper to my gp code to do that.
 

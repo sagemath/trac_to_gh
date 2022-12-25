@@ -127,7 +127,7 @@ The other posible problematic package regarding licensing issues is Pari, that I
 archive/issue_comments_010311.json:
 ```json
 {
-    "body": "Nope, pari is licensed under:\n\n```\nPARI/GP is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation. It is distributed in the hope that it will be useful, but WITHOUT\nANY WARRANTY WHATSOEVER.\n```\n\nSince they do not mention a specific version it is any GPL license version, which include GPL V3. They do ship a copy of the GPL V2 in their sources tarball, but that doesn't imply GPL V2.\n\nCheers,\n\nMichael",
+    "body": "Nope, pari is licensed under:\n\n```\nPARI/GP is free software; you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation. It is distributed in the hope that it will be useful, but WITHOUT\nANY WARRANTY WHATSOEVER.\n```\nSince they do not mention a specific version it is any GPL license version, which include GPL V3. They do ship a copy of the GPL V2 in their sources tarball, but that doesn't imply GPL V2.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-22T00:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1623",
     "type": "issue_comment",
@@ -144,7 +144,6 @@ terms of the GNU General Public License as published by the Free Software
 Foundation. It is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY WHATSOEVER.
 ```
-
 Since they do not mention a specific version it is any GPL license version, which include GPL V3. They do ship a copy of the GPL V2 in their sources tarball, but that doesn't imply GPL V2.
 
 Cheers,
@@ -202,7 +201,7 @@ Michael
 archive/issue_comments_010314.json:
 ```json
 {
-    "body": "I am seeing the following doctest failure:\n\n```\nsage -t  devel/sage-main/sage/rings/real_double.pyx\n**********************************************************************\nFile \"real_double.pyx\", line 477:\n    sage: a = -RDF(1)/RDF(0); a.str()\nExpected:\n    '-inf'\nGot:\n    'inf'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "I am seeing the following doctest failure:\n\n```\nsage -t  devel/sage-main/sage/rings/real_double.pyx\n**********************************************************************\nFile \"real_double.pyx\", line 477:\n    sage: a = -RDF(1)/RDF(0); a.str()\nExpected:\n    '-inf'\nGot:\n    'inf'\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-25T22:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1623",
     "type": "issue_comment",
@@ -224,7 +223,6 @@ Got:
     'inf'
 **********************************************************************
 ```
-
 
 Cheers,
 

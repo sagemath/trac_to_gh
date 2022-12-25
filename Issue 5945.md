@@ -105,7 +105,7 @@ Changing component from algebra to factorization.
 archive/issue_comments_046915.json:
 ```json
 {
-    "body": "Replying to [comment:3 boothby]:\n> The attached fixes aforementioned bug.  New spkg coming soon.\n\nWhat is the plan here? Right now from my end I want to get the latest released upstream into 3.4.2, so it would be nice if you got your code into FLINT and then get Bill to release it. That way the Debian people won't complain ;)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 boothby]:\n> The attached fixes aforementioned bug.  New spkg coming soon.\n\n\nWhat is the plan here? Right now from my end I want to get the latest released upstream into 3.4.2, so it would be nice if you got your code into FLINT and then get Bill to release it. That way the Debian people won't complain ;)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T07:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ archive/issue_comments_046915.json:
 
 Replying to [comment:3 boothby]:
 > The attached fixes aforementioned bug.  New spkg coming soon.
+
 
 What is the plan here? Right now from my end I want to get the latest released upstream into 3.4.2, so it would be nice if you got your code into FLINT and then get Bill to release it. That way the Debian people won't complain ;)
 
@@ -184,7 +185,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_046919.json:
 ```json
 {
-    "body": "Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by @a-andre created at 2010-11-08 09:29:12\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```\n",
+    "body": "Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by @a-andre created at 2010-11-08 09:29:12\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```",
     "created_at": "2010-11-08T09:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -202,7 +203,6 @@ To check the improvements use attachment:5945_check_improvements.patch, attachme
 (line(values_p)+line(values_f,color='red')).plot()
 (line(values_med_p)+line(values_med_f,color='red')).plot()
 ```
-
 
 
 
@@ -251,7 +251,7 @@ only to check improvements, not for release
 archive/issue_comments_046922.json:
 ```json
 {
-    "body": "patch updated to fix problem buildbot has\n\n```\n2010-12-03 10:18:03 -0800\nhg qpush trac_5945_factor_flint.patch\napplying trac_5945_factor_flint.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 2076\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_5945_factor_flint.patch\npatch queue now empty\nNone\n2010-12-03 10:18:04 -0800\n0 seconds\n```\n",
+    "body": "patch updated to fix problem buildbot has\n\n```\n2010-12-03 10:18:03 -0800\nhg qpush trac_5945_factor_flint.patch\napplying trac_5945_factor_flint.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 2076\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_5945_factor_flint.patch\npatch queue now empty\nNone\n2010-12-03 10:18:04 -0800\n0 seconds\n```",
     "created_at": "2010-12-06T15:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -277,7 +277,6 @@ None
 2010-12-03 10:18:04 -0800
 0 seconds
 ```
-
 
 
 
@@ -400,7 +399,7 @@ segfault in arith.py
 archive/issue_comments_046929.json:
 ```json
 {
-    "body": "I tried to apply your patch to 4.6.1 rc1\n\n```\napplying /scratch/sage-4.6.1rc1/trac_5945bp.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 2290\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 3139\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\nabort: patch failed to apply\n```\n",
+    "body": "I tried to apply your patch to 4.6.1 rc1\n\n```\napplying /scratch/sage-4.6.1rc1/trac_5945bp.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 2290\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 3139\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\nabort: patch failed to apply\n```",
     "created_at": "2011-01-10T14:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -421,7 +420,6 @@ Hunk #1 FAILED at 3139
 1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -513,7 +511,7 @@ Sebastian
 archive/issue_comments_046934.json:
 ```json
 {
-    "body": "You should use the variable `flint_depends` in **module_list.py** and\n\n```\nSAGE_LOCAL+'include/FLINT/'\n```\n\nor\n\n```\nSAGE_INC+'FLINT/'\n```\n\ninstead of\n\n```\nSAGE_ROOT+'/local/include/FLINT/'\n```\n\n\n**arith.py**:\nremove\n\n```\nif proof is None:\n    proof = True\n```\n\nand let `n.factor` handle `proof=None`.\n\n**integer.pyx**: I suggest using the global default for *proof* in factor()\n\nChange\n\n```\nF = [(Integer(f.p[i]), f.exp[i]) for i from 0 <= i < f.num]\n```\n\nto\n\n```\nF = [(Integer(f.p[i]), int(f.exp[i])) for i from 0 <= i < f.num]\n```\n\nthen only following doctests fail (otherwise even more would fail, e.g. arith.py):\n\n```\nsage/misc/sageinspect.py\nsage/structure/factorization.py\n```\n",
+    "body": "You should use the variable `flint_depends` in **module_list.py** and\n\n```\nSAGE_LOCAL+'include/FLINT/'\n```\nor\n\n```\nSAGE_INC+'FLINT/'\n```\ninstead of\n\n```\nSAGE_ROOT+'/local/include/FLINT/'\n```\n\n**arith.py**:\nremove\n\n```\nif proof is None:\n    proof = True\n```\nand let `n.factor` handle `proof=None`.\n\n**integer.pyx**: I suggest using the global default for *proof* in factor()\n\nChange\n\n```\nF = [(Integer(f.p[i]), f.exp[i]) for i from 0 <= i < f.num]\n```\nto\n\n```\nF = [(Integer(f.p[i]), int(f.exp[i])) for i from 0 <= i < f.num]\n```\nthen only following doctests fail (otherwise even more would fail, e.g. arith.py):\n\n```\nsage/misc/sageinspect.py\nsage/structure/factorization.py\n```",
     "created_at": "2011-01-11T12:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -527,19 +525,16 @@ You should use the variable `flint_depends` in **module_list.py** and
 ```
 SAGE_LOCAL+'include/FLINT/'
 ```
-
 or
 
 ```
 SAGE_INC+'FLINT/'
 ```
-
 instead of
 
 ```
 SAGE_ROOT+'/local/include/FLINT/'
 ```
-
 
 **arith.py**:
 remove
@@ -548,7 +543,6 @@ remove
 if proof is None:
     proof = True
 ```
-
 and let `n.factor` handle `proof=None`.
 
 **integer.pyx**: I suggest using the global default for *proof* in factor()
@@ -558,20 +552,17 @@ Change
 ```
 F = [(Integer(f.p[i]), f.exp[i]) for i from 0 <= i < f.num]
 ```
-
 to
 
 ```
 F = [(Integer(f.p[i]), int(f.exp[i])) for i from 0 <= i < f.num]
 ```
-
 then only following doctests fail (otherwise even more would fail, e.g. arith.py):
 
 ```
 sage/misc/sageinspect.py
 sage/structure/factorization.py
 ```
-
 
 
 
@@ -859,7 +850,7 @@ Merged patches into trac_5945-462a0.patch. So you only need to apply this one. B
 archive/issue_comments_046948.json:
 ```json
 {
-    "body": "There are a few doctest failures:\n\n```\nThe following tests failed:\n\n        sage -t  -force_lib devel/sagenb-main/sagenb/misc/sageinspect.py # 1 doctests failed\n        sage -t  -force_lib devel/sage/doc/en/tutorial/programming.rst # 1 doctests failed\n        sage -t  -force_lib devel/sage/doc/fr/tutorial/programming.rst # 1 doctests failed\n```\n",
+    "body": "There are a few doctest failures:\n\n```\nThe following tests failed:\n\n        sage -t  -force_lib devel/sagenb-main/sagenb/misc/sageinspect.py # 1 doctests failed\n        sage -t  -force_lib devel/sage/doc/en/tutorial/programming.rst # 1 doctests failed\n        sage -t  -force_lib devel/sage/doc/fr/tutorial/programming.rst # 1 doctests failed\n```",
     "created_at": "2011-01-17T20:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
@@ -877,7 +868,6 @@ The following tests failed:
         sage -t  -force_lib devel/sage/doc/en/tutorial/programming.rst # 1 doctests failed
         sage -t  -force_lib devel/sage/doc/fr/tutorial/programming.rst # 1 doctests failed
 ```
-
 
 
 

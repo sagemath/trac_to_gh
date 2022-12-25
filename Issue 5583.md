@@ -3,7 +3,7 @@
 archive/issues_005583.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @tscrim\n\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
+    "body": "Assignee: joyner\n\nCC:  @tscrim\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
     "created_at": "2009-03-22T11:36:05Z",
     "labels": [
         "component: group theory",
@@ -20,12 +20,10 @@ Assignee: joyner
 
 CC:  @tscrim
 
-
 ```
 sage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5583
 
@@ -157,7 +155,7 @@ archive/issue_events_013149.json:
 archive/issue_comments_043435.json:
 ```json
 {
-    "body": "works in 8.8.b5:\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (\n....: 1,2)]) )\n\nFalse\n```\n",
+    "body": "works in 8.8.b5:\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (\n....: 1,2)]) )\n\nFalse\n```",
     "created_at": "2019-05-17T17:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
@@ -174,7 +172,6 @@ sage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (
 
 False
 ```
-
 
 
 
@@ -289,7 +286,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_043440.json:
 ```json
 {
-    "body": "I have decided to add a doctest, just to be safe.\n----\nNew commits:",
+    "body": "I have decided to add a doctest, just to be safe.\n\n---\nNew commits:",
     "created_at": "2019-06-01T07:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5583",
     "type": "issue_comment",
@@ -299,7 +296,8 @@ archive/issue_comments_043440.json:
 ```
 
 I have decided to add a doctest, just to be safe.
-----
+
+---
 New commits:
 
 

@@ -120,7 +120,7 @@ This patch seems to also be a big refactoring of the plot code, and also seems t
 archive/issue_comments_037869.json:
 ```json
 {
-    "body": "First, I really appreciate this patch and the beautiful functionality it adds.  We've needed it for a long time.  It also appears to do a much-needed refactoring of the plot code.  I haven't tested the patch, though, or looked at it extremely closely.  \n\nJust a short comment about a piece of code.  The patch uses map and max/min to calculate filling to the max or min of the function.  It would be slightly faster and probably a lot clearer to just use list comprehensions:\n\n\n```\n\nsage: data=[(x,x*x) for x in [0..10,step=0.01]]\nsage: timeit('min(map(lambda t: t[1], data))')\n625 loops, best of 3: 1.29 ms per loop\nsage: timeit('min(i[1] for i in data)')\n625 loops, best of 3: 1.15 ms per loop\n```\n\n\nIt would be orders of magnitude faster to use numpy to store the list of data.  This would be a more major change in the plotting code, but here is the equivalent numpy code:\n\n\n```\nsage: import numpy\nsage: ndata=numpy.array(data,dtype=float)\nsage: timeit('numpy.max(ndata[:,1])')\n625 loops, best of 3: 30.7 \u00b5s per loop\n```\n",
+    "body": "First, I really appreciate this patch and the beautiful functionality it adds.  We've needed it for a long time.  It also appears to do a much-needed refactoring of the plot code.  I haven't tested the patch, though, or looked at it extremely closely.  \n\nJust a short comment about a piece of code.  The patch uses map and max/min to calculate filling to the max or min of the function.  It would be slightly faster and probably a lot clearer to just use list comprehensions:\n\n```\n\nsage: data=[(x,x*x) for x in [0..10,step=0.01]]\nsage: timeit('min(map(lambda t: t[1], data))')\n625 loops, best of 3: 1.29 ms per loop\nsage: timeit('min(i[1] for i in data)')\n625 loops, best of 3: 1.15 ms per loop\n```\n\nIt would be orders of magnitude faster to use numpy to store the list of data.  This would be a more major change in the plotting code, but here is the equivalent numpy code:\n\n```\nsage: import numpy\nsage: ndata=numpy.array(data,dtype=float)\nsage: timeit('numpy.max(ndata[:,1])')\n625 loops, best of 3: 30.7 \u00b5s per loop\n```",
     "created_at": "2009-01-29T05:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -133,7 +133,6 @@ First, I really appreciate this patch and the beautiful functionality it adds.  
 
 Just a short comment about a piece of code.  The patch uses map and max/min to calculate filling to the max or min of the function.  It would be slightly faster and probably a lot clearer to just use list comprehensions:
 
-
 ```
 
 sage: data=[(x,x*x) for x in [0..10,step=0.01]]
@@ -143,9 +142,7 @@ sage: timeit('min(i[1] for i in data)')
 625 loops, best of 3: 1.15 ms per loop
 ```
 
-
 It would be orders of magnitude faster to use numpy to store the list of data.  This would be a more major change in the plotting code, but here is the equivalent numpy code:
-
 
 ```
 sage: import numpy
@@ -153,7 +150,6 @@ sage: ndata=numpy.array(data,dtype=float)
 sage: timeit('numpy.max(ndata[:,1])')
 625 loops, best of 3: 30.7 µs per loop
 ```
-
 
 
 
@@ -182,7 +178,7 @@ rebased for sage-3.3.alpha2
 archive/issue_comments_037871.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nIn the new patch a warning gets printed if min or max is used as the parameter for fill.\n\nReplying to [comment:3 jason]:\n> The patch uses map and max/min to calculate filling to the max or min of the function. It would be slightly faster and probably a lot clearer to just use list comprehensions\n\nI changed it to use generator comprehensions.",
+    "body": "Replying to [comment:1 kcrisman]:\n> My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\n\nIn the new patch a warning gets printed if min or max is used as the parameter for fill.\n\nReplying to [comment:3 jason]:\n> The patch uses map and max/min to calculate filling to the max or min of the function. It would be slightly faster and probably a lot clearer to just use list comprehensions\n\n\nI changed it to use generator comprehensions.",
     "created_at": "2009-02-02T14:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
@@ -194,10 +190,12 @@ archive/issue_comments_037871.json:
 Replying to [comment:1 kcrisman]:
 > My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.
 
+
 In the new patch a warning gets printed if min or max is used as the parameter for fill.
 
 Replying to [comment:3 jason]:
 > The patch uses map and max/min to calculate filling to the max or min of the function. It would be slightly faster and probably a lot clearer to just use list comprehensions
+
 
 I changed it to use generator comprehensions.
 

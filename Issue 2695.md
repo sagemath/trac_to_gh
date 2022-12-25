@@ -3,7 +3,7 @@
 archive/issues_002695.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n[06:27] <mabshoff> wstein: toothpaste's problem is RAM, not [only] disk space.\n[06:27] <wstein> RAM. Wow.\n[06:27] <mabshoff> gcc isn't very efficient.\n[06:27] <wstein> his problem might be lack of a toothbrush.\n[06:27] <mabshoff> And it fails in eclib, so linbox_wrap will be worst.\n[06:28] <wstein> Wow, I see.\n[06:28] <wstein> Dang C++ templates.\n[06:28] <mabshoff> RTFL :)\n[06:28] <wstein> what does rtfl stand for?\n[06:28] <wstein> read the frickin' L?\n[06:28] <mabshoff> read the fine log ;) [edited :)]\n[06:28] <wstein> ahh.\n[06:28] <wstein> good point.\n[06:28] <mabshoff> That was a new failure.\n[06:29] <wstein> Maybe we should check for at least 1GB ram right at the beginning\n[06:29] <mabshoff> I guess the hosted VMs in his case have a rather small, hardcoded limit.\n[06:29] <wstein> of the build, and if the user has less, give an error?\n[06:29] <mabshoff> probably, but 700 MB seems enough.\n[06:29] <wstein> OK, we could check for that.\n[06:29] <wstein> And test that it works using ulimit.\n[06:29] <wstein> That's the sort of thing autohell never does...\n[06:32] <mabshoff> I am not sure if ulimit tests if you have that much memory available.\n[06:33] <mabshoff> It just limits the max allocatable amount.\n[06:33] <wstein> We could just write a small C program that malloc's 700MB.\n[06:33] <wstein> if it fails, then sage doesn't build further.\n[06:33] <mabshoff> Yeah. \n[06:34] <wstein> If this actually sounds like a good idea to you, paste this log in a trac ticket.\n[06:34] <mabshoff> :)\n[06:34] <wstein> If it doesn't, just ignore it.  I leave it up to your taste to decide.\n[06:34] <mabshoff> printf(\"You cheapskate, buy your computer more RAM!\");\n[06:34] <mabshoff> :)\n[06:35] <wstein> :-)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2695\n\n",
+    "body": "Assignee: mabshoff\n\n```\n[06:27] <mabshoff> wstein: toothpaste's problem is RAM, not [only] disk space.\n[06:27] <wstein> RAM. Wow.\n[06:27] <mabshoff> gcc isn't very efficient.\n[06:27] <wstein> his problem might be lack of a toothbrush.\n[06:27] <mabshoff> And it fails in eclib, so linbox_wrap will be worst.\n[06:28] <wstein> Wow, I see.\n[06:28] <wstein> Dang C++ templates.\n[06:28] <mabshoff> RTFL :)\n[06:28] <wstein> what does rtfl stand for?\n[06:28] <wstein> read the frickin' L?\n[06:28] <mabshoff> read the fine log ;) [edited :)]\n[06:28] <wstein> ahh.\n[06:28] <wstein> good point.\n[06:28] <mabshoff> That was a new failure.\n[06:29] <wstein> Maybe we should check for at least 1GB ram right at the beginning\n[06:29] <mabshoff> I guess the hosted VMs in his case have a rather small, hardcoded limit.\n[06:29] <wstein> of the build, and if the user has less, give an error?\n[06:29] <mabshoff> probably, but 700 MB seems enough.\n[06:29] <wstein> OK, we could check for that.\n[06:29] <wstein> And test that it works using ulimit.\n[06:29] <wstein> That's the sort of thing autohell never does...\n[06:32] <mabshoff> I am not sure if ulimit tests if you have that much memory available.\n[06:33] <mabshoff> It just limits the max allocatable amount.\n[06:33] <wstein> We could just write a small C program that malloc's 700MB.\n[06:33] <wstein> if it fails, then sage doesn't build further.\n[06:33] <mabshoff> Yeah. \n[06:34] <wstein> If this actually sounds like a good idea to you, paste this log in a trac ticket.\n[06:34] <mabshoff> :)\n[06:34] <wstein> If it doesn't, just ignore it.  I leave it up to your taste to decide.\n[06:34] <mabshoff> printf(\"You cheapskate, buy your computer more RAM!\");\n[06:34] <mabshoff> :)\n[06:35] <wstein> :-)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2695\n\n",
     "created_at": "2008-03-28T06:09:41Z",
     "labels": [
         "component: build",
@@ -17,7 +17,6 @@ archive/issues_002695.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 [06:27] <mabshoff> wstein: toothpaste's problem is RAM, not [only] disk space.
@@ -53,7 +52,6 @@ Assignee: mabshoff
 [06:34] <mabshoff> :)
 [06:35] <wstein> :-)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2695
 
@@ -120,7 +118,7 @@ I have 512 mb in my laptop and 2.10.x built/upgraded perfectly fine and I'm curr
 archive/issue_comments_018510.json:
 ```json
 {
-    "body": "Replying to [comment:3 jbmohler]:\n> I have 512 mb in my laptop and 2.10.x built/upgraded perfectly fine and I'm currently 'sage -upgrade'ing to 2.11 and I got past linbox_wrap.  Only 100kb of swap is currently showing as used.\n\nHi Joel,\n\nthe amount of RAM required for linbox_wrap does depend on the gcc released. I have seen 700 MB, but even 350MB is an unreasonable amount of memory to compile that bit of code. To resolve this ticket we should check the amount of memory available and emit a warning if we consider the amount too low. It might be 0.5GB for now.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 jbmohler]:\n> I have 512 mb in my laptop and 2.10.x built/upgraded perfectly fine and I'm currently 'sage -upgrade'ing to 2.11 and I got past linbox_wrap.  Only 100kb of swap is currently showing as used.\n\n\nHi Joel,\n\nthe amount of RAM required for linbox_wrap does depend on the gcc released. I have seen 700 MB, but even 350MB is an unreasonable amount of memory to compile that bit of code. To resolve this ticket we should check the amount of memory available and emit a warning if we consider the amount too low. It might be 0.5GB for now.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-31T14:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2695",
     "type": "issue_comment",
@@ -131,6 +129,7 @@ archive/issue_comments_018510.json:
 
 Replying to [comment:3 jbmohler]:
 > I have 512 mb in my laptop and 2.10.x built/upgraded perfectly fine and I'm currently 'sage -upgrade'ing to 2.11 and I got past linbox_wrap.  Only 100kb of swap is currently showing as used.
+
 
 Hi Joel,
 
@@ -190,7 +189,7 @@ Another issue is that meanwhile a few [long] doctests are really poor, in eating
 archive/issue_comments_018513.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.\nfor large values of \"a while\" I guess...",
+    "body": "Replying to [comment:6 leif]:\n> 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.\n\nfor large values of \"a while\" I guess...",
     "created_at": "2013-04-25T13:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2695",
     "type": "issue_comment",
@@ -201,6 +200,7 @@ archive/issue_comments_018513.json:
 
 Replying to [comment:6 leif]:
 > 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.
+
 for large values of "a while" I guess...
 
 
@@ -210,7 +210,7 @@ for large values of "a while" I guess...
 archive/issue_comments_018514.json:
 ```json
 {
-    "body": "Replying to [comment:7 jdemeyer]:\n> Replying to [comment:6 leif]:\n> > 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.\n> for large values of \"a while\" I guess...\n\nNope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).",
+    "body": "Replying to [comment:7 jdemeyer]:\n> Replying to [comment:6 leif]:\n> > 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.\n\n> for large values of \"a while\" I guess...\n\nNope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).",
     "created_at": "2013-04-25T13:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2695",
     "type": "issue_comment",
@@ -222,6 +222,7 @@ archive/issue_comments_018514.json:
 Replying to [comment:7 jdemeyer]:
 > Replying to [comment:6 leif]:
 > > 768 MB (including a GUI) used to be sufficient to (build Sage and) run all long doctests without any swapping a while ago.
+
 > for large values of "a while" I guess...
 
 Nope;  I actually wanted to add "not that long ago"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).
@@ -251,7 +252,7 @@ P.S.:  W.r.t. the doctests, the "winners" in memory consumption used to be those
 archive/issue_comments_018516.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> Nope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).\nI don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.",
+    "body": "Replying to [comment:8 leif]:\n> Nope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).\n\nI don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.",
     "created_at": "2013-05-19T13:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2695",
     "type": "issue_comment",
@@ -262,6 +263,7 @@ archive/issue_comments_018516.json:
 
 Replying to [comment:8 leif]:
 > Nope;  I actually wanted to add "not that long ago"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).
+
 I don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.
 
 
@@ -271,7 +273,7 @@ I don't believe you, the Heegner tests exist longer than that and always require
 archive/issue_comments_018517.json:
 ```json
 {
-    "body": "Replying to [comment:10 jdemeyer]:\n> Replying to [comment:8 leif]:\n> > Nope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).\n> I don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.\n\nI'm especially sure about the tests in `schemes/elliptic_curves/`, since these used to be the record holders, as mentioned. :-)\n\nThis is just one example of a couple of doctests where PARI tries to **allocate** a huge amount of memory, but actually **uses** only a fraction of it.  (You might have to set up enough swap space to run these tests, but you'll usually not experience swapping even with just 512 MB RAM, say.)",
+    "body": "Replying to [comment:10 jdemeyer]:\n> Replying to [comment:8 leif]:\n> > Nope;  I actually wanted to add \"not that long ago\"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).\n\n> I don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.\n\nI'm especially sure about the tests in `schemes/elliptic_curves/`, since these used to be the record holders, as mentioned. :-)\n\nThis is just one example of a couple of doctests where PARI tries to **allocate** a huge amount of memory, but actually **uses** only a fraction of it.  (You might have to set up enough swap space to run these tests, but you'll usually not experience swapping even with just 512 MB RAM, say.)",
     "created_at": "2013-05-19T16:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2695",
     "type": "issue_comment",
@@ -283,6 +285,7 @@ archive/issue_comments_018517.json:
 Replying to [comment:10 jdemeyer]:
 > Replying to [comment:8 leif]:
 > > Nope;  I actually wanted to add "not that long ago"...  Mid or late 2011 IIRC (last time I recall having tested that; i.e., probably even past that time).
+
 > I don't believe you, the Heegner tests exist longer than that and always required around 2GB of memory.
 
 I'm especially sure about the tests in `schemes/elliptic_curves/`, since these used to be the record holders, as mentioned. :-)

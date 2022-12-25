@@ -85,7 +85,7 @@ Can you post some timings? For most types summation won't be helped by balancing
 archive/issue_comments_018782.json:
 ```json
 {
-    "body": "I don't know of any good benchmarks (since I don't have any personal interest in this).  However, this is from Joel:\n\n\n```\n\nAbout a month ago, I mailed sage-devel with a related issue:\n\nsage: N=1000\nsage: R.<x,y>=QQ[]\nsage: L2=[x^i for i in range(N)]\nsage: sum(L2)\n...\n\nThe above sum behaves quadratically since it appears that singular goes\nthrough it's whole list of monomials when it adds a single monomial.  This\nwas much improved by a divide and conquer sum approach.  I didn't bother to\nwrite the generic function though.\n\nI'm just noting that if you've written the generic code, I think it should be\nincluded because there are some types for which the small additions are\nexpensive.  Whether or not this should replace 'sum' in the sage global\nnamespace, I'm not so certain.\n```\n",
+    "body": "I don't know of any good benchmarks (since I don't have any personal interest in this).  However, this is from Joel:\n\n```\n\nAbout a month ago, I mailed sage-devel with a related issue:\n\nsage: N=1000\nsage: R.<x,y>=QQ[]\nsage: L2=[x^i for i in range(N)]\nsage: sum(L2)\n...\n\nThe above sum behaves quadratically since it appears that singular goes\nthrough it's whole list of monomials when it adds a single monomial.  This\nwas much improved by a divide and conquer sum approach.  I didn't bother to\nwrite the generic function though.\n\nI'm just noting that if you've written the generic code, I think it should be\nincluded because there are some types for which the small additions are\nexpensive.  Whether or not this should replace 'sum' in the sage global\nnamespace, I'm not so certain.\n```",
     "created_at": "2008-03-31T16:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -95,7 +95,6 @@ archive/issue_comments_018782.json:
 ```
 
 I don't know of any good benchmarks (since I don't have any personal interest in this).  However, this is from Joel:
-
 
 ```
 
@@ -117,7 +116,6 @@ included because there are some types for which the small additions are
 expensive.  Whether or not this should replace 'sum' in the sage global
 namespace, I'm not so certain.
 ```
-
 
 
 
@@ -146,7 +144,7 @@ Mike is right, though.  There is some major code duplication that eventually sho
 archive/issue_comments_018784.json:
 ```json
 {
-    "body": "Some timing info for the tour, comparing balanced sum with the builtin sum.\n\n\n```\nsage: a=range(10e6)          \nsage: %timeit sum(a)         \n10 loops, best of 3: 2.58 s per loop\nsage: %timeit balanced_sum(a)\n10 loops, best of 3: 891 ms per loop\nsage: balanced_sum(a)==sum(a)\nTrue\n```\n",
+    "body": "Some timing info for the tour, comparing balanced sum with the builtin sum.\n\n```\nsage: a=range(10e6)          \nsage: %timeit sum(a)         \n10 loops, best of 3: 2.58 s per loop\nsage: %timeit balanced_sum(a)\n10 loops, best of 3: 891 ms per loop\nsage: balanced_sum(a)==sum(a)\nTrue\n```",
     "created_at": "2009-07-19T05:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -156,7 +154,6 @@ archive/issue_comments_018784.json:
 ```
 
 Some timing info for the tour, comparing balanced sum with the builtin sum.
-
 
 ```
 sage: a=range(10e6)          
@@ -170,13 +167,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_018785.json:
 ```json
 {
-    "body": "A more drastic example:\n\n\n```\nsage: a=[[i] for i in range(10e4)]                    \nsage: %time b=sum(a,[])                                       \nCPU times: user 209.95 s, sys: 0.57 s, total: 210.51 s\nWall time: 245.69 s\nsage: a==[[i] for i in range(10e4)]  \nTrue\nsage: b==range(10e4)                 \nTrue\nsage: %time c=balanced_sum(a, [])\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.11 s\nWall time: 0.12 s\nsage: a==[[i] for i in range(10e4)]\nTrue\nsage: c==range(10e4)               \nTrue\n```\n\n\nHowever, I also uncovered a bug because the function does not copy its arguments (it modified the lists it was using, giving an incorrect sum).  I'm posting a revised patch.  This revised patch should be reviewed.",
+    "body": "A more drastic example:\n\n```\nsage: a=[[i] for i in range(10e4)]                    \nsage: %time b=sum(a,[])                                       \nCPU times: user 209.95 s, sys: 0.57 s, total: 210.51 s\nWall time: 245.69 s\nsage: a==[[i] for i in range(10e4)]  \nTrue\nsage: b==range(10e4)                 \nTrue\nsage: %time c=balanced_sum(a, [])\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.11 s\nWall time: 0.12 s\nsage: a==[[i] for i in range(10e4)]\nTrue\nsage: c==range(10e4)               \nTrue\n```\n\nHowever, I also uncovered a bug because the function does not copy its arguments (it modified the lists it was using, giving an incorrect sum).  I'm posting a revised patch.  This revised patch should be reviewed.",
     "created_at": "2009-07-19T06:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -186,7 +182,6 @@ archive/issue_comments_018785.json:
 ```
 
 A more drastic example:
-
 
 ```
 sage: a=[[i] for i in range(10e4)]                    
@@ -205,7 +200,6 @@ True
 sage: c==range(10e4)               
 True
 ```
-
 
 However, I also uncovered a bug because the function does not copy its arguments (it modified the lists it was using, giving an incorrect sum).  I'm posting a revised patch.  This revised patch should be reviewed.
 
@@ -324,7 +318,7 @@ Resolution: fixed
 archive/issue_comments_018791.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> Some timing info for the tour, comparing balanced sum with the builtin sum.\n> \n\n```\nsage: a=range(10e6)          \nsage: %timeit sum(a)         \n10 loops, best of 3: 2.58 s per loop\nsage: %timeit balanced_sum(a)\n10 loops, best of 3: 891 ms per loop\nsage: balanced_sum(a)==sum(a)\nTrue\n```\n\nThis is what I get on sage.math:\n\n```\nsage: L = range(10e6)\nsage: %time sum(L);\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.51 s\nWall time: 0.51 s\nsage: %time balanced_sum(L);\nCPU times: user 0.78 s, sys: 0.00 s, total: 0.78 s\nWall time: 0.79 s\nsage: %timeit sum(L);\n10 loops, best of 3: 504 ms per loop\nsage: %timeit balanced_sum(L);\n10 loops, best of 3: 753 ms per loop\n```\n\nLooks like `balanced_sum()` is worse off than the built-in `sum()` for this particular example.",
+    "body": "Replying to [comment:6 jason]:\n> Some timing info for the tour, comparing balanced sum with the builtin sum.\n> \n\n{{{\nsage: a=range(10e6)          \nsage: %timeit sum(a)         \n10 loops, best of 3: 2.58 s per loop\nsage: %timeit balanced_sum(a)\n10 loops, best of 3: 891 ms per loop\nsage: balanced_sum(a)==sum(a)\nTrue\n}}}\nThis is what I get on sage.math:\n\n```\nsage: L = range(10e6)\nsage: %time sum(L);\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.51 s\nWall time: 0.51 s\nsage: %time balanced_sum(L);\nCPU times: user 0.78 s, sys: 0.00 s, total: 0.78 s\nWall time: 0.79 s\nsage: %timeit sum(L);\n10 loops, best of 3: 504 ms per loop\nsage: %timeit balanced_sum(L);\n10 loops, best of 3: 753 ms per loop\n```\nLooks like `balanced_sum()` is worse off than the built-in `sum()` for this particular example.",
     "created_at": "2009-08-20T05:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2737",
     "type": "issue_comment",
@@ -337,7 +331,7 @@ Replying to [comment:6 jason]:
 > Some timing info for the tour, comparing balanced sum with the builtin sum.
 > 
 
-```
+{{{
 sage: a=range(10e6)          
 sage: %timeit sum(a)         
 10 loops, best of 3: 2.58 s per loop
@@ -345,8 +339,7 @@ sage: %timeit balanced_sum(a)
 10 loops, best of 3: 891 ms per loop
 sage: balanced_sum(a)==sum(a)
 True
-```
-
+}}}
 This is what I get on sage.math:
 
 ```
@@ -362,7 +355,6 @@ sage: %timeit sum(L);
 sage: %timeit balanced_sum(L);
 10 loops, best of 3: 753 ms per loop
 ```
-
 Looks like `balanced_sum()` is worse off than the built-in `sum()` for this particular example.
 
 

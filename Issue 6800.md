@@ -175,7 +175,7 @@ archive/issue_events_016020.json:
 archive/issue_comments_055896.json:
 ```json
 {
-    "body": "I think although there is `combinat.species.series.LazyPowerSeries` this implementation would still be good to have, as the implementation in combinat misses many features included here. It is also needed for P-finite sequences. \n\nHowever, I don't think it's right to define all special functions anew: the ring or a static function should be able to create a series from a symbolic expression (interpreted as e.g.f.), and , in case of a rational polynomial, delegate to CFiniteSequence (#15714).\n\nThere were a few failures:\n\n```\n   1 of  39 in sage.rings.formal_powerseries.FormalPowerSeries\n   1 of   6 in sage.rings.formal_powerseries.FormalPowerSeries.nipow\n   1 of   6 in sage.rings.formal_powerseries.FormalPowerSeries.pow\n   3 of   8 in sage.rings.formal_powerseries.FormalPowerSeries0.abel\n   1 of   4 in sage.rings.formal_powerseries.decidable0\n```\n",
+    "body": "I think although there is `combinat.species.series.LazyPowerSeries` this implementation would still be good to have, as the implementation in combinat misses many features included here. It is also needed for P-finite sequences. \n\nHowever, I don't think it's right to define all special functions anew: the ring or a static function should be able to create a series from a symbolic expression (interpreted as e.g.f.), and , in case of a rational polynomial, delegate to CFiniteSequence (#15714).\n\nThere were a few failures:\n\n```\n   1 of  39 in sage.rings.formal_powerseries.FormalPowerSeries\n   1 of   6 in sage.rings.formal_powerseries.FormalPowerSeries.nipow\n   1 of   6 in sage.rings.formal_powerseries.FormalPowerSeries.pow\n   3 of   8 in sage.rings.formal_powerseries.FormalPowerSeries0.abel\n   1 of   4 in sage.rings.formal_powerseries.decidable0\n```",
     "created_at": "2014-03-15T17:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6800",
     "type": "issue_comment",
@@ -197,7 +197,6 @@ There were a few failures:
    3 of   8 in sage.rings.formal_powerseries.FormalPowerSeries0.abel
    1 of   4 in sage.rings.formal_powerseries.decidable0
 ```
-
 
 
 

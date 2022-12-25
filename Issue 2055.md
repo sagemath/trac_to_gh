@@ -3,7 +3,7 @@
 archive/issues_002055.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: P.<x,y,z> = MPolynomialRing(QQ,3)\nsage: P(B.gen(0))\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2055\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: P.<x,y,z> = MPolynomialRing(QQ,3)\nsage: P(B.gen(0))\nx\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2055\n\n",
     "created_at": "2008-02-05T15:09:15Z",
     "labels": [
         "component: commutative algebra",
@@ -20,14 +20,12 @@ Assignee: @malb
 
 CC:  @burcin
 
-
 ```
 sage: B.<x,y,z> = BooleanPolynomialRing(3)
 sage: P.<x,y,z> = MPolynomialRing(QQ,3)
 sage: P(B.gen(0))
 x
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2055
 

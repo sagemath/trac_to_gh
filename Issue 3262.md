@@ -3,7 +3,7 @@
 archive/issues_003262.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: interact, notebook\n\nWhen the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:\n\n\n```\n@interact\ndef test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):\n    show([q1,q2,q3])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3262\n\n",
+    "body": "Assignee: somebody\n\nKeywords: interact, notebook\n\nWhen the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:\n\n```\n@interact\ndef test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):\n    show([q1,q2,q3])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3262\n\n",
     "created_at": "2008-05-20T21:07:09Z",
     "labels": [
         "component: notebook",
@@ -22,13 +22,11 @@ Keywords: interact, notebook
 
 When the lists of values of multiple selectors are too long, the output is truncated, causing nasty bugs.  Here's an example:
 
-
 ```
 @interact
 def test(q1 = selector(range(100)), q2 = selector(range(1000)+['None'], default ='None'), q3 = selector(['hi']+range(1000)+['None'], default=127)):
     show([q1,q2,q3])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3262
 
@@ -79,7 +77,7 @@ This might be considered a hack: output is only truncated if "`@`interact" is no
 archive/issue_comments_022517.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. good idea\n\n2. This line\n\n```\nif self.__in.find('@interact') == -1: \n```\n\nwould read better as\n\n```\nif '@interact' not in self.__in\n```\n\n\n3. There should be a big comment right before or next to the loop that\nwe are being *VERY HACKISH* doing this, since e.g. it will cause us to\nthink that\n\n```\n print \"@interact\"\n```\n\nis an interact cell, even though it isn't, and this could must be rewritten\nto more intelligently determine whether a cell is an interact cell. \nACTUALLY, *much* better would be for you to just replace that if by\na cell to `self.is_interactive_cell()`, which I wrote, and which\ndoes things right(er).",
+    "body": "REFEREE REPORT:\n\n1. good idea\n\n2. This line\n\n```\nif self.__in.find('@interact') == -1: \n```\nwould read better as\n\n```\nif '@interact' not in self.__in\n```\n\n3. There should be a big comment right before or next to the loop that\nwe are being *VERY HACKISH* doing this, since e.g. it will cause us to\nthink that\n\n```\n print \"@interact\"\n```\nis an interact cell, even though it isn't, and this could must be rewritten\nto more intelligently determine whether a cell is an interact cell. \nACTUALLY, *much* better would be for you to just replace that if by\na cell to `self.is_interactive_cell()`, which I wrote, and which\ndoes things right(er).",
     "created_at": "2008-05-21T13:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3262",
     "type": "issue_comment",
@@ -97,13 +95,11 @@ REFEREE REPORT:
 ```
 if self.__in.find('@interact') == -1: 
 ```
-
 would read better as
 
 ```
 if '@interact' not in self.__in
 ```
-
 
 3. There should be a big comment right before or next to the loop that
 we are being *VERY HACKISH* doing this, since e.g. it will cause us to
@@ -112,7 +108,6 @@ think that
 ```
  print "@interact"
 ```
-
 is an interact cell, even though it isn't, and this could must be rewritten
 to more intelligently determine whether a cell is an interact cell. 
 ACTUALLY, *much* better would be for you to just replace that if by

@@ -68,7 +68,7 @@ Changing keywords from "" to "UniqueRepresentation".
 archive/issue_comments_084477.json:
 ```json
 {
-    "body": "Review went on sage-combinat queue. E-mail from Nicolas\n\n```\nR\u00e9ciproquement, j'ai pouss\u00e9 un patch de revue pour #9106. S'il est ok\npour toi, tu peux fusionner et exporter sur trac, et zou.\n```\n\nReview patch merged an positively reviewed.",
+    "body": "Review went on sage-combinat queue. E-mail from Nicolas\n\n```\nR\u00e9ciproquement, j'ai pouss\u00e9 un patch de revue pour #9106. S'il est ok\npour toi, tu peux fusionner et exporter sur trac, et zou.\n```\nReview patch merged an positively reviewed.",
     "created_at": "2010-06-02T09:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ Review went on sage-combinat queue. E-mail from Nicolas
 Réciproquement, j'ai poussé un patch de revue pour #9106. S'il est ok
 pour toi, tu peux fusionner et exporter sur trac, et zou.
 ```
-
 Review patch merged an positively reviewed.
 
 

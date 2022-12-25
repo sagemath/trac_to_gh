@@ -3,7 +3,7 @@
 archive/issues_008125.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
+    "body": "Assignee: @williamstein\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: text(r\"$\\left(2 a=b\\right)$\", (2,3))   # works fine \nsage: text(r\"$(2 \\, a=b)$\", (2,3))   # works fine \nsage: text(r\"$\\left(2 \\, a=b\\right)$\", (2,3))   # error! \nTraceback (click to the left of this block for traceback) \n... \nAttributeError: 'Kern' object has no attribute 'height' \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8125\n\n",
     "created_at": "2010-01-29T21:09:34Z",
     "labels": [
         "component: graphics",
@@ -30,7 +30,6 @@ AttributeError: 'Kern' object has no attribute 'height'
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8125
 
 
@@ -42,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8125
 archive/issue_comments_071309.json:
 ```json
 {
-    "body": "This seems to be a bug in matplotlib; I just reported it to the matplotlib-devel mailing list, and I'll report any answers I get.\n\nMeanwhile, this arises in \"real life\" as follows:\n\n```\nsage: var(\"y R\") \nsage: a(y,R) = pi * (2*R - y) * y \nsage: latex(a(y,R))\n{\\left(2 \\, R - y\\right)} \\pi y\n```\n\nTherefore \n\n```\nsage: lbl = text(r\"$\\int \\  \" + latex(a(y,R)) + \"$\",(3,20)) \n```\n\nwon't work with matplotlib.  Should we get rid of the \"\\,\" in the latex output?",
+    "body": "This seems to be a bug in matplotlib; I just reported it to the matplotlib-devel mailing list, and I'll report any answers I get.\n\nMeanwhile, this arises in \"real life\" as follows:\n\n```\nsage: var(\"y R\") \nsage: a(y,R) = pi * (2*R - y) * y \nsage: latex(a(y,R))\n{\\left(2 \\, R - y\\right)} \\pi y\n```\nTherefore \n\n```\nsage: lbl = text(r\"$\\int \\  \" + latex(a(y,R)) + \"$\",(3,20)) \n```\nwon't work with matplotlib.  Should we get rid of the \"\\,\" in the latex output?",
     "created_at": "2010-01-30T01:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
@@ -61,13 +60,11 @@ sage: a(y,R) = pi * (2*R - y) * y
 sage: latex(a(y,R))
 {\left(2 \, R - y\right)} \pi y
 ```
-
 Therefore 
 
 ```
 sage: lbl = text(r"$\int \  " + latex(a(y,R)) + "$",(3,20)) 
 ```
-
 won't work with matplotlib.  Should we get rid of the "\," in the latex output?
 
 
@@ -95,7 +92,7 @@ Any response?
 archive/issue_comments_071311.json:
 ```json
 {
-    "body": "No response at all.   From python:\n\n```\n>>> import pylab\n>>> pylab.text(0.2, 0.2, r\"$\\left(2a = b\\right)$\")\n<matplotlib.text.Text object at 0x1020aa450>\n>>> pylab.savefig('a.png')\n>>> pylab.text(0.2, 0.2, r\"$(2a \\, = b)$\")\n<matplotlib.text.Text object at 0x101e22a50>\n>>> pylab.savefig('b.png')\n>>> pylab.text(0.2, 0.2, r\"$\\left(2a \\, = b\\right)$\")\n<matplotlib.text.Text object at 0x1020b5750>\n>>> pylab.savefig('c.png')\nBOOM\n```\n\nCombining `\\left(`, `\\right)}]}, and {{{\\,` seems to lead to problems.  So now what?  Do we get rid of the `\\,`?",
+    "body": "No response at all.   From python:\n\n```\n>>> import pylab\n>>> pylab.text(0.2, 0.2, r\"$\\left(2a = b\\right)$\")\n<matplotlib.text.Text object at 0x1020aa450>\n>>> pylab.savefig('a.png')\n>>> pylab.text(0.2, 0.2, r\"$(2a \\, = b)$\")\n<matplotlib.text.Text object at 0x101e22a50>\n>>> pylab.savefig('b.png')\n>>> pylab.text(0.2, 0.2, r\"$\\left(2a \\, = b\\right)$\")\n<matplotlib.text.Text object at 0x1020b5750>\n>>> pylab.savefig('c.png')\nBOOM\n```\nCombining `\\left(`, `\\right)}]}, and {{{\\,` seems to lead to problems.  So now what?  Do we get rid of the `\\,`?",
     "created_at": "2010-07-27T17:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8125",
     "type": "issue_comment",
@@ -119,7 +116,6 @@ No response at all.   From python:
 >>> pylab.savefig('c.png')
 BOOM
 ```
-
 Combining `\left(`, `\right)}]}, and {{{\,` seems to lead to problems.  So now what?  Do we get rid of the `\,`?
 
 

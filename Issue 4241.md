@@ -3,7 +3,7 @@
 archive/issues_004241.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nObserve:\n\n```\nsage: a = magma('10000')\nsage: a.name()\n'_sage_[1]'\nsage: del a\nsage: magma.eval('_sage_[1]')\n'10000'\n```\n\n\nWhenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4241\n\n",
+    "body": "Assignee: @williamstein\n\nObserve:\n\n```\nsage: a = magma('10000')\nsage: a.name()\n'_sage_[1]'\nsage: del a\nsage: magma.eval('_sage_[1]')\n'10000'\n```\n\nWhenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4241\n\n",
     "created_at": "2008-10-04T05:01:55Z",
     "labels": [
         "component: interfaces",
@@ -28,7 +28,6 @@ sage: del a
 sage: magma.eval('_sage_[1]')
 '10000'
 ```
-
 
 Whenever anybody ever creates a MagmaElement via the Magma interface, it doesn't get deleted.  This is because possible (1) the clear method in magma.py is commented out, and/or (2) the _available_var list that gets appended to in (1) isn't actually used by magma.py, so e.g., _sage_[1] in the example above never gets re-used. 
 
@@ -62,7 +61,7 @@ Changing status from new to assigned.
 archive/issue_comments_030764.json:
 ```json
 {
-    "body": "Here's a vivid illustration of the memory leakage, which of course we know is there by reading the code:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]\nsage: magma.GetMemoryUsage()\n42917912\nsage: del a\nsage: magma.GetMemoryUsage()\n42917912\nsage: a = [magma('3^100000') for _ in range(1000)]\nsage: magma.GetMemoryUsage()\n69103640\nsage: del a\nsage: magma.GetMemoryUsage()\n69103640\n```\n",
+    "body": "Here's a vivid illustration of the memory leakage, which of course we know is there by reading the code:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]\nsage: magma.GetMemoryUsage()\n42917912\nsage: del a\nsage: magma.GetMemoryUsage()\n42917912\nsage: a = [magma('3^100000') for _ in range(1000)]\nsage: magma.GetMemoryUsage()\n69103640\nsage: del a\nsage: magma.GetMemoryUsage()\n69103640\n```",
     "created_at": "2008-10-23T22:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
@@ -90,13 +89,12 @@ sage: magma.GetMemoryUsage()
 
 
 
-
 ---
 
 archive/issue_comments_030765.json:
 ```json
 {
-    "body": "Without patch:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage() \n42917912\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage() \n94192176\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n121287216\n```\n\nWith patch:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n40817200\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\n```\n\n}}}",
+    "body": "Without patch:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage() \n42917912\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage() \n94192176\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n121287216\n```\nWith patch:\n\n```\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n40817200\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\nsage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()\n41820720\n```\n}}}",
     "created_at": "2008-10-23T23:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4241",
     "type": "issue_comment",
@@ -115,7 +113,6 @@ sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 121287216
 ```
-
 With patch:
 
 ```
@@ -130,7 +127,6 @@ sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 sage: a = [magma('3^100000') for _ in range(1000)]; del a;magma.GetMemoryUsage()
 41820720
 ```
-
 }}}
 
 

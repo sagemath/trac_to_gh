@@ -3,7 +3,7 @@
 archive/issues_002621.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nWhen parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 427, in <module>\n    test_file(argv[1])\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 321, in test_file\n    os.makedirs(\".doctest\")\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/lib/python2.5/os.py\", line 172, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '.doctest'\n```\n\nThe above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2621\n\n",
+    "body": "Assignee: @garyfurnish\n\nWhen parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 427, in <module>\n    test_file(argv[1])\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 321, in test_file\n    os.makedirs(\".doctest\")\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/lib/python2.5/os.py\", line 172, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '.doctest'\n```\nThe above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2621\n\n",
     "created_at": "2008-03-20T23:36:40Z",
     "labels": [
         "component: doctest coverage",
@@ -30,7 +30,6 @@ Traceback (most recent call last):
     mkdir(name, mode)
 OSError: [Errno 17] File exists: '.doctest'
 ```
-
 The above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.
 
 Cheers,

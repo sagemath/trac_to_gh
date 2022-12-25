@@ -3,7 +3,7 @@
 archive/issues_003703.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: G = Graph({0:{1:1}}, implementation='c_graph')\nsage: G.num_edges()\n1\nsage: G.set_edge_label(0,1,1)\nsage: G.num_edges()\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3703\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: G = Graph({0:{1:1}}, implementation='c_graph')\nsage: G.num_edges()\n1\nsage: G.set_edge_label(0,1,1)\nsage: G.num_edges()\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3703\n\n",
     "created_at": "2008-07-22T00:17:40Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_003703.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: G = Graph({0:{1:1}}, implementation='c_graph')
 sage: G.num_edges()
@@ -27,7 +26,6 @@ sage: G.set_edge_label(0,1,1)
 sage: G.num_edges()
 2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3703
 
@@ -135,7 +133,7 @@ This has been sitting positively reviewed for several release cycles now. What's
 archive/issue_comments_026211.json:
 ```json
 {
-    "body": "Replying to [comment:5 rlm]:\n> This has been sitting positively reviewed for several release cycles now. What's going on??\n\n3.0.5 was supposed to be ultra stable, but one bug introduced mandated another 3.0.6 stable release. So this patch fell by the side. It will be merged in 3.1.alpha0 in a couple minutes provided the doctests pass.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 rlm]:\n> This has been sitting positively reviewed for several release cycles now. What's going on??\n\n\n3.0.5 was supposed to be ultra stable, but one bug introduced mandated another 3.0.6 stable release. So this patch fell by the side. It will be merged in 3.1.alpha0 in a couple minutes provided the doctests pass.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-30T22:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3703",
     "type": "issue_comment",
@@ -146,6 +144,7 @@ archive/issue_comments_026211.json:
 
 Replying to [comment:5 rlm]:
 > This has been sitting positively reviewed for several release cycles now. What's going on??
+
 
 3.0.5 was supposed to be ultra stable, but one bug introduced mandated another 3.0.6 stable release. So this patch fell by the side. It will be merged in 3.1.alpha0 in a couple minutes provided the doctests pass.
 

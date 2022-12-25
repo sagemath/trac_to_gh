@@ -3,7 +3,7 @@
 archive/issues_004895.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: pattern avoiding permutations\n\nThe following behavior is clearly bad:\n\n```\nsage: [p for p in Permutations(4,avoiding=[2,3,1]) if p.has_pattern([2,3,1])]               \n[[2, 3, 1, 4], [4, 2, 3, 1]]\n```\n\n\nSimilar behavior occurs when avoiding [1,3,2], [2,1,3], and [3,1,2].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4895\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: pattern avoiding permutations\n\nThe following behavior is clearly bad:\n\n```\nsage: [p for p in Permutations(4,avoiding=[2,3,1]) if p.has_pattern([2,3,1])]               \n[[2, 3, 1, 4], [4, 2, 3, 1]]\n```\n\nSimilar behavior occurs when avoiding [1,3,2], [2,1,3], and [3,1,2].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4895\n\n",
     "created_at": "2008-12-31T01:54:19Z",
     "labels": [
         "component: combinatorics",
@@ -28,7 +28,6 @@ The following behavior is clearly bad:
 sage: [p for p in Permutations(4,avoiding=[2,3,1]) if p.has_pattern([2,3,1])]               
 [[2, 3, 1, 4], [4, 2, 3, 1]]
 ```
-
 
 Similar behavior occurs when avoiding [1,3,2], [2,1,3], and [3,1,2].
 

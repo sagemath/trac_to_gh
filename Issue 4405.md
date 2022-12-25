@@ -3,7 +3,7 @@
 archive/issues_004405.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @kcrisman\n\nKeywords: docstring, triple ''', triple \"\"\"\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/1dc6a340db91e7ac) thread, kcrisman reported the following problem with single quotation marks in docstring:\n\n```\nI came across some very strange behavior recently regarding docstrings\nin functions.  In the notebook in 3.2.alpha0 and 3.0.6, putting an\napostrophe in the docstring causes various bugs.  It doesn't have to\nbe in any particular spot, as far as I can tell; in fact, it took a\nlong time to pinpoint this as the source of the problem!\n\nMore precisely, it seems to cause the preparser to turn off or\nsomething, because it disallows the following (in the function\ndefinition):\nf(x)=x^3\nbecause of the f(x), and\nf=x^3\nbecause of the ^ used instead of ** (the error message for the first\nis very mysterious at times, but the second one is always clear when\nyou try to use the function).\n\nI can post a link to a worksheet if it's really necessary, but\nhopefully this will be enough for someone to help.  I checked Sage and\nPython docs about documentation strings, but couldn't find anything\nabout it being bad to have apostrophes; in fact, some Sage docstrings\nhave them (e.g. for declaring variables).  I didn't try this in the\ncommand line, so it is possible it's only a notebook issue.\n```\n\nSome basic experimentation reveals that it's likely to be caused by the use of single quotation marks in docstring from within the console and notebook. However, the reported error as described by kcrisman seems to go away when double quotation marks are used instead of single quotation marks:\n\n```\nOK, here's my experimentation from within the console sage-3.1.4, x86\nmachine, Debian 5.0 Lenny (testing):\n\nYep, I received a similar error as you described:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nJohn's suggestion about replacing the ''' with r''' results in the same error:\n\nsage: def foo():\n....:     r'''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nAs Simon has said, the error seems to go away when I used triple \"\n(double quotation mark, not single quotation mark), which I normally\ndo anyway whenever I write docstring. But using triple ''' with or\nwithout the leading r, and with or without the question mark, resulted\nin a siimilar error:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nsage: def foo():\n....:     r'''\n....:     What's up here x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4405\n\n",
+    "body": "Assignee: tba\n\nCC:  @kcrisman\n\nKeywords: docstring, triple ''', triple \"\"\"\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/1dc6a340db91e7ac) thread, kcrisman reported the following problem with single quotation marks in docstring:\n\n```\nI came across some very strange behavior recently regarding docstrings\nin functions.  In the notebook in 3.2.alpha0 and 3.0.6, putting an\napostrophe in the docstring causes various bugs.  It doesn't have to\nbe in any particular spot, as far as I can tell; in fact, it took a\nlong time to pinpoint this as the source of the problem!\n\nMore precisely, it seems to cause the preparser to turn off or\nsomething, because it disallows the following (in the function\ndefinition):\nf(x)=x^3\nbecause of the f(x), and\nf=x^3\nbecause of the ^ used instead of ** (the error message for the first\nis very mysterious at times, but the second one is always clear when\nyou try to use the function).\n\nI can post a link to a worksheet if it's really necessary, but\nhopefully this will be enough for someone to help.  I checked Sage and\nPython docs about documentation strings, but couldn't find anything\nabout it being bad to have apostrophes; in fact, some Sage docstrings\nhave them (e.g. for declaring variables).  I didn't try this in the\ncommand line, so it is possible it's only a notebook issue.\n```\nSome basic experimentation reveals that it's likely to be caused by the use of single quotation marks in docstring from within the console and notebook. However, the reported error as described by kcrisman seems to go away when double quotation marks are used instead of single quotation marks:\n\n```\nOK, here's my experimentation from within the console sage-3.1.4, x86\nmachine, Debian 5.0 Lenny (testing):\n\nYep, I received a similar error as you described:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nJohn's suggestion about replacing the ''' with r''' results in the same error:\n\nsage: def foo():\n....:     r'''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nAs Simon has said, the error seems to go away when I used triple \"\n(double quotation mark, not single quotation mark), which I normally\ndo anyway whenever I write docstring. But using triple ''' with or\nwithout the leading r, and with or without the question mark, resulted\nin a siimilar error:\n\nsage: def foo():\n....:     '''\n....:     What's up with this? x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n\nsage: def foo():\n....:     r'''\n....:     What's up here x^3\n....:     '''\n....:     f(x) = x^3\n------------------------------------------------------------\n  File \"<ipython console>\", line 5\nSyntaxError: can't assign to function call (<ipython console>, line 5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4405\n\n",
     "created_at": "2008-10-30T19:39:30Z",
     "labels": [
         "component: user interface",
@@ -49,7 +49,6 @@ about it being bad to have apostrophes; in fact, some Sage docstrings
 have them (e.g. for declaring variables).  I didn't try this in the
 command line, so it is possible it's only a notebook issue.
 ```
-
 Some basic experimentation reveals that it's likely to be caused by the use of single quotation marks in docstring from within the console and notebook. However, the reported error as described by kcrisman seems to go away when double quotation marks are used instead of single quotation marks:
 
 ```
@@ -103,7 +102,6 @@ sage: def foo():
 SyntaxError: can't assign to function call (<ipython console>, line 5)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4405
 
 
@@ -115,7 +113,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4405
 archive/issue_comments_032326.json:
 ```json
 {
-    "body": "The following seems to show that Sage parsing is bypassed, in some way, when using single-quote marks for docstrings.\n\n\n```\nsage: def foo(x):\n   ....:     \"\"\"\n   ....:     it's a comment.\n   ....:     \"\"\"\n   ....:     return x^2\n   ....: \nsage: foo(3)\n9\nsage: def foo(x):\n   ....:     '''\n   ....:     It's a comment.\n   ....:     '''\n   ....:     return x^2\n   ....: \nsage: foo(3)\n1\n```\n\nIn the first case, \"!^\" is exponentiation; in the second, XOR.",
+    "body": "The following seems to show that Sage parsing is bypassed, in some way, when using single-quote marks for docstrings.\n\n```\nsage: def foo(x):\n   ....:     \"\"\"\n   ....:     it's a comment.\n   ....:     \"\"\"\n   ....:     return x^2\n   ....: \nsage: foo(3)\n9\nsage: def foo(x):\n   ....:     '''\n   ....:     It's a comment.\n   ....:     '''\n   ....:     return x^2\n   ....: \nsage: foo(3)\n1\n```\nIn the first case, \"!^\" is exponentiation; in the second, XOR.",
     "created_at": "2008-10-31T20:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4405",
     "type": "issue_comment",
@@ -125,7 +123,6 @@ archive/issue_comments_032326.json:
 ```
 
 The following seems to show that Sage parsing is bypassed, in some way, when using single-quote marks for docstrings.
-
 
 ```
 sage: def foo(x):
@@ -145,7 +142,6 @@ sage: def foo(x):
 sage: foo(3)
 1
 ```
-
 In the first case, "!^" is exponentiation; in the second, XOR.
 
 

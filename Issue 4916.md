@@ -48,7 +48,7 @@ Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/tra
 archive/issue_comments_037237.json:
 ```json
 {
-    "body": "Just looking at the patch looks mostly good, is this rendered somewhere to look at? \n\nAlso, I noticed significant readability degradation plain text documentation: \n\n\n```\n        conductor -- integer, the conductor \n48\t \t        gammaV -- list of Gamma-factor parameters, \n49\t \t                  e.g. [0] for Riemann zeta, [0,1] for ell.curves, \n50\t \t                  (see examples). \n51\t \t        weight -- positive real number, usually an integer \n52\t \t                  e.g. 1 for Riemann zeta, 2 for $H^1$ of curves/$\\Q$ \n53\t \t        eps   --  complex number; sign in functional equation \n54\t \t        poles --  (default: []) list of points where $L^*(s)$ has (simple) poles; \n55\t \t                  only poles with Re(s)>weight/2 should be included \n56\t \t        residues -- vector of residues of $L^*(s)$ in those poles \n57\t \t                    or set residues='automatic' (default value) \n58\t \t        prec -- integer (default: 53) number of *bits* of precision \n```\n\n\n vs\n \n\n```\n \t50\t     \n \t51\t    conductor - integer, the conductor gammaV - list of Gamma-factor \n \t52\t    parameters, e.g. [0] for Riemann zeta, [0,1] for ell.curves, (see \n \t53\t    examples). weight - positive real number, usually an integer e.g. 1 \n \t54\t    for Riemann zeta, 2 for `H^1` of \n \t55\t    curves/`\\mathbb{Q}` eps - complex number; sign in \n \t56\t    functional equation poles - (default: []) list of points where \n \t57\t    `L^*(s)` has (simple) poles; only poles with Re(s)weight/2 \n \t58\t    should be included residues - vector of residues of \n \t59\t    `L^*(s)` in those poles or set residues='automatic' \n \t60\t    (default value) prec - integer (default: 53) number of *bits* of \n \t61\t    precision \n```\n\n\nAnother note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).",
+    "body": "Just looking at the patch looks mostly good, is this rendered somewhere to look at? \n\nAlso, I noticed significant readability degradation plain text documentation: \n\n```\n        conductor -- integer, the conductor \n48\t \t        gammaV -- list of Gamma-factor parameters, \n49\t \t                  e.g. [0] for Riemann zeta, [0,1] for ell.curves, \n50\t \t                  (see examples). \n51\t \t        weight -- positive real number, usually an integer \n52\t \t                  e.g. 1 for Riemann zeta, 2 for $H^1$ of curves/$\\Q$ \n53\t \t        eps   --  complex number; sign in functional equation \n54\t \t        poles --  (default: []) list of points where $L^*(s)$ has (simple) poles; \n55\t \t                  only poles with Re(s)>weight/2 should be included \n56\t \t        residues -- vector of residues of $L^*(s)$ in those poles \n57\t \t                    or set residues='automatic' (default value) \n58\t \t        prec -- integer (default: 53) number of *bits* of precision \n```\n\n vs\n \n```\n \t50\t     \n \t51\t    conductor - integer, the conductor gammaV - list of Gamma-factor \n \t52\t    parameters, e.g. [0] for Riemann zeta, [0,1] for ell.curves, (see \n \t53\t    examples). weight - positive real number, usually an integer e.g. 1 \n \t54\t    for Riemann zeta, 2 for `H^1` of \n \t55\t    curves/`\\mathbb{Q}` eps - complex number; sign in \n \t56\t    functional equation poles - (default: []) list of points where \n \t57\t    `L^*(s)` has (simple) poles; only poles with Re(s)weight/2 \n \t58\t    should be included residues - vector of residues of \n \t59\t    `L^*(s)` in those poles or set residues='automatic' \n \t60\t    (default value) prec - integer (default: 53) number of *bits* of \n \t61\t    precision \n```\n\nAnother note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).",
     "created_at": "2009-02-12T21:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_037237.json:
 Just looking at the patch looks mostly good, is this rendered somewhere to look at? 
 
 Also, I noticed significant readability degradation plain text documentation: 
-
 
 ```
         conductor -- integer, the conductor 
@@ -77,10 +76,8 @@ Also, I noticed significant readability degradation plain text documentation:
 58	 	        prec -- integer (default: 53) number of *bits* of precision 
 ```
 
-
  vs
  
-
 ```
  	50	     
  	51	    conductor - integer, the conductor gammaV - list of Gamma-factor 
@@ -96,7 +93,6 @@ Also, I noticed significant readability degradation plain text documentation:
  	61	    precision 
 ```
 
-
 Another note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).
 
 
@@ -106,7 +102,7 @@ Another note, the EXAMPLES:: seems redundant, would it make sense to replace EXA
 archive/issue_comments_037238.json:
 ```json
 {
-    "body": "Could you explain \n\n\n```\nAnother note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).\n```\n\n\n\na bit more?  I wasn't quite sure what you were saying.\n\nThe \"sage:\" blocks are automatically picked up by the doctesting framework, but ReST uses the \"::\" to denote a verbatim block.\n\nI've also fixed the above issue ( http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/lfunctions/dokchitser.html ).  Notice that the formatting is currently butchered in the current reference manual http://sagemath.org/doc/ref/module-sage.lfunctions.dokchitser.html",
+    "body": "Could you explain \n\n```\nAnother note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).\n```\n\n\na bit more?  I wasn't quite sure what you were saying.\n\nThe \"sage:\" blocks are automatically picked up by the doctesting framework, but ReST uses the \"::\" to denote a verbatim block.\n\nI've also fixed the above issue ( http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/lfunctions/dokchitser.html ).  Notice that the formatting is currently butchered in the current reference manual http://sagemath.org/doc/ref/module-sage.lfunctions.dokchitser.html",
     "created_at": "2009-02-17T16:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
@@ -117,11 +113,9 @@ archive/issue_comments_037238.json:
 
 Could you explain 
 
-
 ```
 Another note, the EXAMPLES:: seems redundant, would it make sense to replace EXAMPLES: with EXAMPLES:: (same with TESTS, etc.) Or perhaps all sage: blocks could automatically be detected (doesn't seem too hard).
 ```
-
 
 
 a bit more?  I wasn't quite sure what you were saying.

@@ -3,7 +3,7 @@
 archive/issues_004970.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @NathanDunfield\n\nThis is from a sage-support thread:\n\n```\nHi Michael\n\nthanks a lot! Tkinter is now working fine for me and I can use\nmatplotlib with the TkAgg backend\nFor the record, here are the steps I followed to get it working on Mac\nOS (10.4 and 10.5)\n1) Download the Tcl/Tk sources\n2) Compile the unix version (of Tcl and Tk) as follows\n./configure --enable-framework --disable-xft, make, make install\n3) Modify the setup.py file in the src directory of python-2.5.2.p8 by\nputting\n/System/Library  underneath /Library/Frameworks at the top the\nfunction detect_tkinter_darwin\n4) run ./spkg-install in python-2.5.2.p8\n5) reinstall matplotlib: sage -f matplotlib-0.98.3.p4\n\nAs this is the way Apple recommends to do it in the developer\ndocumentation. I suggest that\nthe fix in the function detect_tkinter_darwin of the python-2.5.2.p8\nsetup.py gets included in the official Sage release. People needing\nTkinter on mac would then just need to have Tcl/Tk without\nxft installed before compiling Sage.\n\nBest wishes and thanks for the great job you are doing with the Sage\ndevelopers and maintainers,\nEric\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4970\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @NathanDunfield\n\nThis is from a sage-support thread:\n\n```\nHi Michael\n\nthanks a lot! Tkinter is now working fine for me and I can use\nmatplotlib with the TkAgg backend\nFor the record, here are the steps I followed to get it working on Mac\nOS (10.4 and 10.5)\n1) Download the Tcl/Tk sources\n2) Compile the unix version (of Tcl and Tk) as follows\n./configure --enable-framework --disable-xft, make, make install\n3) Modify the setup.py file in the src directory of python-2.5.2.p8 by\nputting\n/System/Library  underneath /Library/Frameworks at the top the\nfunction detect_tkinter_darwin\n4) run ./spkg-install in python-2.5.2.p8\n5) reinstall matplotlib: sage -f matplotlib-0.98.3.p4\n\nAs this is the way Apple recommends to do it in the developer\ndocumentation. I suggest that\nthe fix in the function detect_tkinter_darwin of the python-2.5.2.p8\nsetup.py gets included in the official Sage release. People needing\nTkinter on mac would then just need to have Tcl/Tk without\nxft installed before compiling Sage.\n\nBest wishes and thanks for the great job you are doing with the Sage\ndevelopers and maintainers,\nEric\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4970\n\n",
     "created_at": "2009-01-13T14:12:13Z",
     "labels": [
         "component: build",
@@ -50,7 +50,6 @@ Best wishes and thanks for the great job you are doing with the Sage
 developers and maintainers,
 Eric
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4970
 
@@ -102,7 +101,7 @@ archive/issue_events_011485.json:
 archive/issue_comments_037779.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> I will do this during the upgrade to Python 2.5.4.\n\nI did not do this in the python-2.5.4.spkg update since we have for now disabled support of TkAgg in MPL since it caused exceptions in the plotting code on systems where no X was installed and/or not running. We can resolve this problem in two ways:\n\n* conditionally reenable TkAgg support in MPL\n* fix the issue in MPL or at least catch the exception and just ignore it\n \n> Cheers,\n> \n> Michael\n\nAnyway, I am attaching a patch on top of the python-2.5.4.spkg that can be used as the basis to make this happen on OSX once we sorted out the TkAgg issue.\n\nBumping to 3.4.1.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 mabshoff]:\n> I will do this during the upgrade to Python 2.5.4.\n\n\nI did not do this in the python-2.5.4.spkg update since we have for now disabled support of TkAgg in MPL since it caused exceptions in the plotting code on systems where no X was installed and/or not running. We can resolve this problem in two ways:\n\n* conditionally reenable TkAgg support in MPL\n* fix the issue in MPL or at least catch the exception and just ignore it\n \n> Cheers,\n> \n> Michael\n\n\nAnyway, I am attaching a patch on top of the python-2.5.4.spkg that can be used as the basis to make this happen on OSX once we sorted out the TkAgg issue.\n\nBumping to 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T06:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4970",
     "type": "issue_comment",
@@ -114,6 +113,7 @@ archive/issue_comments_037779.json:
 Replying to [comment:1 mabshoff]:
 > I will do this during the upgrade to Python 2.5.4.
 
+
 I did not do this in the python-2.5.4.spkg update since we have for now disabled support of TkAgg in MPL since it caused exceptions in the plotting code on systems where no X was installed and/or not running. We can resolve this problem in two ways:
 
 * conditionally reenable TkAgg support in MPL
@@ -122,6 +122,7 @@ I did not do this in the python-2.5.4.spkg update since we have for now disabled
 > Cheers,
 > 
 > Michael
+
 
 Anyway, I am attaching a patch on top of the python-2.5.4.spkg that can be used as the basis to make this happen on OSX once we sorted out the TkAgg issue.
 

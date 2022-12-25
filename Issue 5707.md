@@ -3,7 +3,7 @@
 archive/issues_005707.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nTry this and see no plus signs! Ouch.\n\n```\nsage: x = ModularSymbols(43)(vector([0,0,0,0,1,1,1]))\nsage: show(x.modular_symbol_rep())\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5707\n\n",
+    "body": "Assignee: @craigcitro\n\nTry this and see no plus signs! Ouch.\n\n```\nsage: x = ModularSymbols(43)(vector([0,0,0,0,1,1,1]))\nsage: show(x.modular_symbol_rep())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5707\n\n",
     "created_at": "2009-04-07T21:28:39Z",
     "labels": [
         "component: modular forms",
@@ -24,7 +24,6 @@ Try this and see no plus signs! Ouch.
 sage: x = ModularSymbols(43)(vector([0,0,0,0,1,1,1]))
 sage: show(x.modular_symbol_rep())
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5707
 

@@ -3,7 +3,7 @@
 archive/issues_008977.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  @tornaria @jonhanke\n\nKeywords: rational_diagonal_form()\n\nThe function rational_diagonal_form() fails in some quadratic forms. For example:\n\n```\nsage: Q = QuadraticForm(ZZ,2,[0,1,-1])\nsage: Q\nQuadratic form in 2 variables over Integer Ring with coefficients: \n[ 0 1 ]\n[ * -1 ]\n\n\nsage: Q.rational_diagonal_form()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/gustavo/<ipython console> in <module>()\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__local_field_invariants.pyc in rational_diagonal_form(self, return_matrix)\n    113         for j in range(i+1, n):\n    114             if Q[i,j] != 0:\n--> 115                 temp[i,j] = -Q[i,j] / (Q[i,i] * 2)    ## This should only occur when Q[i,i] != 0, which the above step guarantees.\n    116 \n    117         Q = Q(temp)\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11882)()\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational._div_ (sage/rings/rational.c:14641)()\n\nZeroDivisionError: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8977\n\n",
+    "body": "Assignee: justin\n\nCC:  @tornaria @jonhanke\n\nKeywords: rational_diagonal_form()\n\nThe function rational_diagonal_form() fails in some quadratic forms. For example:\n\n```\nsage: Q = QuadraticForm(ZZ,2,[0,1,-1])\nsage: Q\nQuadratic form in 2 variables over Integer Ring with coefficients: \n[ 0 1 ]\n[ * -1 ]\n\n\nsage: Q.rational_diagonal_form()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/gustavo/<ipython console> in <module>()\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__local_field_invariants.pyc in rational_diagonal_form(self, return_matrix)\n    113         for j in range(i+1, n):\n    114             if Q[i,j] != 0:\n--> 115                 temp[i,j] = -Q[i,j] / (Q[i,i] * 2)    ## This should only occur when Q[i,i] != 0, which the above step guarantees.\n    116 \n    117         Q = Q(temp)\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11882)()\n\n/home/gustavo/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational._div_ (sage/rings/rational.c:14641)()\n\nZeroDivisionError: Rational division by zero\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8977\n\n",
     "created_at": "2010-05-16T01:16:41Z",
     "labels": [
         "component: quadratic forms",
@@ -52,7 +52,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Rational division by zero
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8977
 
@@ -194,7 +193,7 @@ I fixed the patch for sage-4.6.1 and make the corrections mstreng told.
 archive/issue_comments_082692.json:
 ```json
 {
-    "body": "Can anyone reproduce this? A seemingly unrelated doctest fails.\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 4 doctests failed\n```\n\nAll 4 are of the following form:\n\n```\nFile \"/storage/marco/sage-4.6.1/devel/sage-main/sage/groups/matrix_gps/matrix_group.py\", line 668:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n```\n\nI tried removing and reapplying the patch. All tests pass on an unpatched 4.6.2.alpha3, and 4 tests of the form `G.random_element()` fail with the patch applied. I've had problems like this before with other tickets, so I won't change this ticket to needs_work (yet).\n\nOops, it seems that the ticket still is needs_work. Was it not ready for review yet?",
+    "body": "Can anyone reproduce this? A seemingly unrelated doctest fails.\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 4 doctests failed\n```\nAll 4 are of the following form:\n\n```\nFile \"/storage/marco/sage-4.6.1/devel/sage-main/sage/groups/matrix_gps/matrix_group.py\", line 668:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n```\nI tried removing and reapplying the patch. All tests pass on an unpatched 4.6.2.alpha3, and 4 tests of the form `G.random_element()` fail with the patch applied. I've had problems like this before with other tickets, so I won't change this ticket to needs_work (yet).\n\nOops, it seems that the ticket still is needs_work. Was it not ready for review yet?",
     "created_at": "2011-02-06T23:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8977",
     "type": "issue_comment",
@@ -210,7 +209,6 @@ The following tests failed:
 
         sage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 4 doctests failed
 ```
-
 All 4 are of the following form:
 
 ```
@@ -227,7 +225,6 @@ Got:
     [1 1 1 0]
     [2 0 1 2]
 ```
-
 I tried removing and reapplying the patch. All tests pass on an unpatched 4.6.2.alpha3, and 4 tests of the form `G.random_element()` fail with the patch applied. I've had problems like this before with other tickets, so I won't change this ticket to needs_work (yet).
 
 Oops, it seems that the ticket still is needs_work. Was it not ready for review yet?
@@ -257,7 +254,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_082694.json:
 ```json
 {
-    "body": "I don't think the issue you reported above (about matrix groups `random_element()`) is related in any way to this ticket.\n\nThe patch is pretty straightforward, is almost one-liner, and clearly changes only the `rational_diagonal_form()` method.\n\nI've just tried on 4.6.1 and:\na. the bug is reproducible\nb. the doctest in the patch triggers the bug\nc. after applying the patch, the bug is fixed, and the doctest passes.\n\n----\n\nI also tried long-doctesting the `matrix_group.py` file (with the patch applied) but got no error.\n\nMaybe it's showing randomly for you (and you think it's correlated to the patch in this ticket, but is not). Or perhaps something in 4.6.2.alpha3 is affecting this.\n\n----\n\nIn my opinion, the patch is ready. I'll switch to \"needs_review\", in the hope that somebody else gives the positive review soon.",
+    "body": "I don't think the issue you reported above (about matrix groups `random_element()`) is related in any way to this ticket.\n\nThe patch is pretty straightforward, is almost one-liner, and clearly changes only the `rational_diagonal_form()` method.\n\nI've just tried on 4.6.1 and:\na. the bug is reproducible\nb. the doctest in the patch triggers the bug\nc. after applying the patch, the bug is fixed, and the doctest passes.\n\n---\n\nI also tried long-doctesting the `matrix_group.py` file (with the patch applied) but got no error.\n\nMaybe it's showing randomly for you (and you think it's correlated to the patch in this ticket, but is not). Or perhaps something in 4.6.2.alpha3 is affecting this.\n\n---\n\nIn my opinion, the patch is ready. I'll switch to \"needs_review\", in the hope that somebody else gives the positive review soon.",
     "created_at": "2011-02-07T00:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8977",
     "type": "issue_comment",
@@ -275,13 +272,13 @@ a. the bug is reproducible
 b. the doctest in the patch triggers the bug
 c. after applying the patch, the bug is fixed, and the doctest passes.
 
-----
+---
 
 I also tried long-doctesting the `matrix_group.py` file (with the patch applied) but got no error.
 
 Maybe it's showing randomly for you (and you think it's correlated to the patch in this ticket, but is not). Or perhaps something in 4.6.2.alpha3 is affecting this.
 
-----
+---
 
 In my opinion, the patch is ready. I'll switch to "needs_review", in the hope that somebody else gives the positive review soon.
 

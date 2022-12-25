@@ -109,7 +109,7 @@ Soroosh
 archive/issue_comments_044388.json:
 ```json
 {
-    "body": "I've created a new version here:\n\n  http://sage.math.washington.edu/home/wstein/patches/mpi4py-1.1.0.spkg\n\n\nTo build it and test do:\n\n\n```\nsage -i openmpi-1.1.4 mpi4py-1.1.0.spkg\n```\n\n\nThen\n\n\n```\nsage: import mpi4py\nsage: help(mpi4py)\n```\n\n\nNote: I will also update openmpi spkg at #7701",
+    "body": "I've created a new version here:\n\n  http://sage.math.washington.edu/home/wstein/patches/mpi4py-1.1.0.spkg\n\n\nTo build it and test do:\n\n```\nsage -i openmpi-1.1.4 mpi4py-1.1.0.spkg\n```\n\nThen\n\n```\nsage: import mpi4py\nsage: help(mpi4py)\n```\n\nNote: I will also update openmpi spkg at #7701",
     "created_at": "2009-12-16T02:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5686",
     "type": "issue_comment",
@@ -125,20 +125,16 @@ I've created a new version here:
 
 To build it and test do:
 
-
 ```
 sage -i openmpi-1.1.4 mpi4py-1.1.0.spkg
 ```
 
-
 Then
-
 
 ```
 sage: import mpi4py
 sage: help(mpi4py)
 ```
-
 
 Note: I will also update openmpi spkg at #7701
 

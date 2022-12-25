@@ -3,7 +3,7 @@
 archive/issues_004725.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
+    "body": "Assignee: @williamstein\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
     "created_at": "2008-12-06T18:37:26Z",
     "labels": [
         "component: number theory",
@@ -25,7 +25,6 @@ sage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]
 sage: j.conjugate()
 0
 ```
-
 
 Much better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.
 

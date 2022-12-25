@@ -3,7 +3,7 @@
 archive/issues_003688.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n# Scripts missing #!/bin/sh lines in sage-3.0.5.spkg:\n\n```\npull\ninstall\n```\n\n\n# Scripts missing #!/usr/bin/python lines in sage-3.0.5.dpkg:\n\n```\nsage/dsage/misc/hostinfo.py\nsage/dsage/scripts/dsage_setup.py\n```\n\n\n# Files unnecessarily marked as executable in sage-3.0.5.spkg\n\n```\nsage/graphs/planarity/graphEmbed.c\nsage/graphs/planarity/graphIO.c\nsage/graphs/planarity/graphIsolator.c\nsage/graphs/planarity/graphNonplanar.c\nsage/graphs/planarity/graphPreprocess.c\nsage/graphs/planarity/graphStructure.c\nsage/graphs/planarity/graphTests.c\nsage/graphs/planarity/listcoll.c\nsage/graphs/planarity/planarity.c\nsage/graphs/planarity/stack.c\n```\n\n\n# Other files unnecessarily marked as executable\n\n```\nsage-README-osx.txt (in the root of the sage distribution)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3688\n\n",
+    "body": "Assignee: mabshoff\n\n# Scripts missing #!/bin/sh lines in sage-3.0.5.spkg:\n\n```\npull\ninstall\n```\n\n# Scripts missing #!/usr/bin/python lines in sage-3.0.5.dpkg:\n\n```\nsage/dsage/misc/hostinfo.py\nsage/dsage/scripts/dsage_setup.py\n```\n\n# Files unnecessarily marked as executable in sage-3.0.5.spkg\n\n```\nsage/graphs/planarity/graphEmbed.c\nsage/graphs/planarity/graphIO.c\nsage/graphs/planarity/graphIsolator.c\nsage/graphs/planarity/graphNonplanar.c\nsage/graphs/planarity/graphPreprocess.c\nsage/graphs/planarity/graphStructure.c\nsage/graphs/planarity/graphTests.c\nsage/graphs/planarity/listcoll.c\nsage/graphs/planarity/planarity.c\nsage/graphs/planarity/stack.c\n```\n\n# Other files unnecessarily marked as executable\n\n```\nsage-README-osx.txt (in the root of the sage distribution)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3688\n\n",
     "created_at": "2008-07-21T05:48:09Z",
     "labels": [
         "component: packages: standard",
@@ -26,14 +26,12 @@ pull
 install
 ```
 
-
 # Scripts missing #!/usr/bin/python lines in sage-3.0.5.dpkg:
 
 ```
 sage/dsage/misc/hostinfo.py
 sage/dsage/scripts/dsage_setup.py
 ```
-
 
 # Files unnecessarily marked as executable in sage-3.0.5.spkg
 
@@ -50,13 +48,11 @@ sage/graphs/planarity/planarity.c
 sage/graphs/planarity/stack.c
 ```
 
-
 # Other files unnecessarily marked as executable
 
 ```
 sage-README-osx.txt (in the root of the sage distribution)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3688
@@ -88,7 +84,7 @@ Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_026089.json:
 ```json
 {
-    "body": "I realized this should probably be marked as having a patch, since it does.  You'll want to apply the patch that is attached and run\n\n```\n   chmod -x sage/graphs/planarity/*.c\n```\n\nfrom the root of the Sage spkg.",
+    "body": "I realized this should probably be marked as having a patch, since it does.  You'll want to apply the patch that is attached and run\n\n```\n   chmod -x sage/graphs/planarity/*.c\n```\nfrom the root of the Sage spkg.",
     "created_at": "2009-04-26T05:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
@@ -102,7 +98,6 @@ I realized this should probably be marked as having a patch, since it does.  You
 ```
    chmod -x sage/graphs/planarity/*.c
 ```
-
 from the root of the Sage spkg.
 
 

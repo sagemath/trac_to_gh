@@ -3,7 +3,7 @@
 archive/issues_003540.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
+    "body": "Assignee: @williamstein\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
     "created_at": "2008-07-01T19:27:28Z",
     "labels": [
         "component: linear algebra",
@@ -43,7 +43,6 @@ sage: W.nrows()
 sage: W.ncols()
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3540
 
@@ -114,7 +113,7 @@ If I'm allowed to give malb's patch a positive review, I do.
 archive/issue_comments_024972.json:
 ```json
 {
-    "body": "Replying to [comment:2 rlm]:\n> If I'm allowed to give malb's patch a positive review, I do. \n\nYes, since you know the code and his patch corrects an issue with your patch.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 rlm]:\n> If I'm allowed to give malb's patch a positive review, I do. \n\n\nYes, since you know the code and his patch corrects an issue with your patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-03T00:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
@@ -125,6 +124,7 @@ archive/issue_comments_024972.json:
 
 Replying to [comment:2 rlm]:
 > If I'm allowed to give malb's patch a positive review, I do. 
+
 
 Yes, since you know the code and his patch corrects an issue with your patch.
 

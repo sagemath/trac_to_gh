@@ -3,7 +3,7 @@
 archive/issues_004266.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
     "created_at": "2008-10-11T14:06:33Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_004266.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: round(sqrt(Integer('1'*500)))
 ------------------------------------------------------------
@@ -32,7 +31,6 @@ Traceback (most recent call last):
     return math.sqrt(x)
 OverflowError: math range error
 ```
-
 
 Approx should fall back to mpfr if float fails. 
 

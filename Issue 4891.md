@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4891
 archive/issue_comments_037013.json:
 ```json
 {
-    "body": "Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by @williamstein created at 2008-12-30 07:54:50\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\n\nThis I think points to bugs in the package install system, not in this patch.",
+    "body": "Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by @williamstein created at 2008-12-30 07:54:50\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\nThis I think points to bugs in the package install system, not in this patch.",
     "created_at": "2008-12-30T07:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -58,13 +58,11 @@ Wall time: 1925.36 s
 ['boehm_gc-7.1.p0', 'mpi4py-0.3.1']
 ```
 
-
 So boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:
 
 ```
  ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])
 ```
-
 This I think points to bugs in the package install system, not in this patch.
 
 
@@ -113,7 +111,7 @@ Michael
 archive/issue_comments_037015.json:
 ```json
 {
-    "body": "I tested on OS X and got:\n\n```\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5465)\n****************************************************\nValgring does not work on non-Linux yet\n\nreal    0m0.012s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing valgrind_3.3.1\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/sage-3.2.2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/sage-3.2.2/spkg/build/valgrind_3.3.1 and type 'make'.\nInstead type \"/Users/was/build/sage-3.2.2/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/sage-3.2.2/spkg/build/valgrind_3.3.1\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nCPU times: user 0.07 s, sys: 1.29 s, total: 1.37 s\nWall time: 4061.35 s\nsage:\nsage: v\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\nsage:\n```\n\n\nSo the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket.",
+    "body": "I tested on OS X and got:\n\n```\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5465)\n****************************************************\nValgring does not work on non-Linux yet\n\nreal    0m0.012s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing valgrind_3.3.1\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/sage-3.2.2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/sage-3.2.2/spkg/build/valgrind_3.3.1 and type 'make'.\nInstead type \"/Users/was/build/sage-3.2.2/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/sage-3.2.2/spkg/build/valgrind_3.3.1\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nCPU times: user 0.07 s, sys: 1.29 s, total: 1.37 s\nWall time: 4061.35 s\nsage:\nsage: v\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\nsage:\n```\n\nSo the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket.",
     "created_at": "2008-12-30T17:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -152,7 +150,6 @@ sage: v
 sage:
 ```
 
-
 So the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket.
 
 
@@ -162,7 +159,7 @@ So the error detection (i.e., when an exception is raised) in install_packages i
 archive/issue_comments_037016.json:
 ```json
 {
-    "body": "> boehm_gc-7.1.p0 is already in standard Sage, but also in the optional repo in case \n> someone wants to install M2 into an older version of Sage. \n\nI propose removing it or at least moving it to experimental, since M2 is only in experimental after all.",
+    "body": "> boehm_gc-7.1.p0 is already in standard Sage, but also in the optional repo in case \n> someone wants to install M2 into an older version of Sage. \n\n\nI propose removing it or at least moving it to experimental, since M2 is only in experimental after all.",
     "created_at": "2008-12-30T17:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -174,6 +171,7 @@ archive/issue_comments_037016.json:
 > boehm_gc-7.1.p0 is already in standard Sage, but also in the optional repo in case 
 > someone wants to install M2 into an older version of Sage. 
 
+
 I propose removing it or at least moving it to experimental, since M2 is only in experimental after all.
 
 
@@ -183,7 +181,7 @@ I propose removing it or at least moving it to experimental, since M2 is only in
 archive/issue_comments_037017.json:
 ```json
 {
-    "body": "Replying to [comment:5 was]:\n\n> I propose removing it or at least moving it to experimental, since M2 is only in experimental after all. \n> \n\nFine by me since we have shipped it with standard for a while. Maybe the install_package routine should be smarter about already installed spkgs, too?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 was]:\n\n> I propose removing it or at least moving it to experimental, since M2 is only in experimental after all. \n> \n\n\nFine by me since we have shipped it with standard for a while. Maybe the install_package routine should be smarter about already installed spkgs, too?\n\nCheers,\n\nMichael",
     "created_at": "2008-12-30T17:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -196,6 +194,7 @@ Replying to [comment:5 was]:
 
 > I propose removing it or at least moving it to experimental, since M2 is only in experimental after all. 
 > 
+
 
 Fine by me since we have shipped it with standard for a while. Maybe the install_package routine should be smarter about already installed spkgs, too?
 
@@ -210,7 +209,7 @@ Michael
 archive/issue_comments_037018.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n\n<SNIP>\n\n> So the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket. \n\nSure. Should we chose a certain exit code if the spkg does not work on a given platform to signal that? So far we always seem to exit spkg-install with 1 when a failure occurs, so assigning meaningful exit codes could come in handy.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 was]:\n\n<SNIP>\n\n> So the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket. \n\n\nSure. Should we chose a certain exit code if the spkg does not work on a given platform to signal that? So far we always seem to exit spkg-install with 1 when a failure occurs, so assigning meaningful exit codes could come in handy.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-30T17:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -225,6 +224,7 @@ Replying to [comment:4 was]:
 
 > So the error detection (i.e., when an exception is raised) in install_packages is clearly buggy.  But I don't think that should hold this patch back, since that's a separate bug in a different function, and should be addressed in another ticket. 
 
+
 Sure. Should we chose a certain exit code if the spkg does not work on a given platform to signal that? So far we always seem to exit spkg-install with 1 when a failure occurs, so assigning meaningful exit codes could come in handy.
 
 Cheers,
@@ -238,7 +238,7 @@ Michael
 archive/issue_comments_037019.json:
 ```json
 {
-    "body": "Code looks fine, here's the test output:\n\n\n```\n...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\nsage: optional_packages()\n...\n  'trac-20071204',\n  'valgrind_3.3.1'],\n ['mpi4py-0.3.1', 'polymake-2.2.p5'])\n```\n",
+    "body": "Code looks fine, here's the test output:\n\n```\n...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\nsage: optional_packages()\n...\n  'trac-20071204',\n  'valgrind_3.3.1'],\n ['mpi4py-0.3.1', 'polymake-2.2.p5'])\n```",
     "created_at": "2009-01-24T12:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
@@ -248,7 +248,6 @@ archive/issue_comments_037019.json:
 ```
 
 Code looks fine, here's the test output:
-
 
 ```
 ...
@@ -261,7 +260,6 @@ sage: optional_packages()
   'valgrind_3.3.1'],
  ['mpi4py-0.3.1', 'polymake-2.2.p5'])
 ```
-
 
 
 

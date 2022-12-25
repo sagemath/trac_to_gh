@@ -373,7 +373,7 @@ P.S.: Explicitly touching some files in `spkg-install` that *are* contained in t
 archive/issue_comments_036303.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\nI created ticket #10124 to implement this.",
+    "body": "Replying to [comment:11 leif]:\n> This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\n\nI created ticket #10124 to implement this.",
     "created_at": "2010-11-04T20:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
@@ -385,6 +385,7 @@ archive/issue_comments_036303.json:
 Replying to [comment:11 leif]:
 > This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)
 
+
 I created ticket #10124 to implement this.
 
 
@@ -394,7 +395,7 @@ I created ticket #10124 to implement this.
 archive/issue_comments_036304.json:
 ```json
 {
-    "body": "Replying to [comment:13 jdemeyer]:\n> I created ticket #10124 to implement this.\n\n#10214",
+    "body": "Replying to [comment:13 jdemeyer]:\n> I created ticket #10124 to implement this.\n\n\n#10214",
     "created_at": "2010-11-04T21:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
@@ -405,6 +406,7 @@ archive/issue_comments_036304.json:
 
 Replying to [comment:13 jdemeyer]:
 > I created ticket #10124 to implement this.
+
 
 #10214
 

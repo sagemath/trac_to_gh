@@ -74,7 +74,7 @@ Nathann
 archive/issue_comments_098415.json:
 ```json
 {
-    "body": "Hi Nathann !\n\nA question and a remark:\n\n1. If I understand correctly, your ticket is improving the speed of the minimum feedback vertex/arc set problems by providing another LP formulation. Could you detail where you took the first formulation (I assume you're the one who coded it) and where you got the new one? This could help in the review process to compare and make sure the two methods are equivalent.\n2. I a bunch of lines where lists are created without being used, such as in:\n\n```\n[p.add_constraint(d[v],min=n) for v in self]\n```\n\n  Wouldn't it be better to replace it with a loop?\n\n```\nfor v in self: p.add_constraint(d[v], min=n)\n```\n\n  I think it's useless to create a list that will be thrown to the garbage collector right away :) Moreover, the number of characters is exactly the same, so it's not a waste of space :)",
+    "body": "Hi Nathann !\n\nA question and a remark:\n\n1. If I understand correctly, your ticket is improving the speed of the minimum feedback vertex/arc set problems by providing another LP formulation. Could you detail where you took the first formulation (I assume you're the one who coded it) and where you got the new one? This could help in the review process to compare and make sure the two methods are equivalent.\n2. I a bunch of lines where lists are created without being used, such as in:\n\n```\n[p.add_constraint(d[v],min=n) for v in self]\n```\n  Wouldn't it be better to replace it with a loop?\n\n```\nfor v in self: p.add_constraint(d[v], min=n)\n```\n  I think it's useless to create a list that will be thrown to the garbage collector right away :) Moreover, the number of characters is exactly the same, so it's not a waste of space :)",
     "created_at": "2010-11-14T03:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
@@ -93,13 +93,11 @@ A question and a remark:
 ```
 [p.add_constraint(d[v],min=n) for v in self]
 ```
-
   Wouldn't it be better to replace it with a loop?
 
 ```
 for v in self: p.add_constraint(d[v], min=n)
 ```
-
   I think it's useless to create a list that will be thrown to the garbage collector right away :) Moreover, the number of characters is exactly the same, so it's not a waste of space :)
 
 
@@ -210,7 +208,7 @@ archive/issue_events_024986.json:
 archive/issue_comments_098420.json:
 ```json
 {
-    "body": "Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by @rlmill created at 2011-01-12 01:42:33\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
+    "body": "Attachment [trac_9911.patch](tarball://root/attachments/some-uuid/ticket9911/trac_9911.patch) by @rlmill created at 2011-01-12 01:42:33\n\nYou're still using the list syntax for constraint addition loops at the end of the patch:\n\n```\n[p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] \n[p.add_constraint(d[u],max=n) for u in self]\n```\n\nOther than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.",
     "created_at": "2011-01-12T01:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9910",
     "type": "issue_comment",
@@ -227,7 +225,6 @@ You're still using the list syntax for constraint addition loops at the end of t
 [p.add_constraint(d[u]-d[v]+n*(b[u]+b[v]),min=1) for (u,v) in self.edges(labels=None)] 
 [p.add_constraint(d[u],max=n) for u in self]
 ```
-
 
 Other than that, this patch looks good. All long tests pass against sage-4.6.1.rc1 and I'm otherwise happy. Fix the one issue, ping me and I'll set this to positive review.
 

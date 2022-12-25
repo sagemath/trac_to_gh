@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8117
 archive/issue_comments_071180.json:
 ```json
 {
-    "body": "Attachment [zodb3-3.7.0.p3.patch](tarball://root/attachments/some-uuid/ticket8117/zodb3-3.7.0.p3.patch) by @jaapspies created at 2010-01-29 13:57:12\n\nAdded spkg.\n\n[http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg)\n\n\n\n```\nlocal/lib/python2.6/site-packages/ZODB/winlock.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ \n\n\n```\n\n\nJaap",
+    "body": "Attachment [zodb3-3.7.0.p3.patch](tarball://root/attachments/some-uuid/ticket8117/zodb3-3.7.0.p3.patch) by @jaapspies created at 2010-01-29 13:57:12\n\nAdded spkg.\n\n[http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg)\n\n\n```\nlocal/lib/python2.6/site-packages/ZODB/winlock.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ \n\n\n```\n\nJaap",
     "created_at": "2010-01-29T13:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8117",
     "type": "issue_comment",
@@ -51,14 +51,12 @@ Added spkg.
 [http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg](http://boxen.math.washington.edu/home/jsp/ports/zodb3-3.7.0.p3.spkg)
 
 
-
 ```
 local/lib/python2.6/site-packages/ZODB/winlock.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ 
 
 
 ```
-
 
 Jaap
 

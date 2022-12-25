@@ -3,7 +3,7 @@
 archive/issues_006637.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @hivert\n\nKeywords: backtrack, enumerated set, transitive closure\n\nImplement a single entry point:\n\n\n```\n     TransitiveClosure(roots, operators = ..., children = , acyclic = True, algo = \"DFS\", \"BFS\", internal_nodes = False)\n```\n\n\nfor all the functions in sage.combinat.backtrack.py SearchForest, TransitiveIdeal, TransitiveIdealGraded\n\nTODO: discuss the names above\n\nIssue created by migration from https://trac.sagemath.org/ticket/6637\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @hivert\n\nKeywords: backtrack, enumerated set, transitive closure\n\nImplement a single entry point:\n\n```\n     TransitiveClosure(roots, operators = ..., children = , acyclic = True, algo = \"DFS\", \"BFS\", internal_nodes = False)\n```\n\nfor all the functions in sage.combinat.backtrack.py SearchForest, TransitiveIdeal, TransitiveIdealGraded\n\nTODO: discuss the names above\n\nIssue created by migration from https://trac.sagemath.org/ticket/6637\n\n",
     "created_at": "2009-07-27T12:10:47Z",
     "labels": [
         "component: combinatorics"
@@ -23,11 +23,9 @@ Keywords: backtrack, enumerated set, transitive closure
 
 Implement a single entry point:
 
-
 ```
      TransitiveClosure(roots, operators = ..., children = , acyclic = True, algo = "DFS", "BFS", internal_nodes = False)
 ```
-
 
 for all the functions in sage.combinat.backtrack.py SearchForest, TransitiveIdeal, TransitiveIdealGraded
 
@@ -180,7 +178,7 @@ Possibilities for generators keyword :
 archive/issue_comments_054279.json:
 ```json
 {
-    "body": "> If we go for RecursiveSet (or RecursiveEnumeratedSet or variant thereof) \n\nI like RecursiveSet. Maybe RecursiveEnumeratedSet is more related to what we do but is also longer.\n\nSome links:\n\n- http://en.wikipedia.org/wiki/Recursive_set\n- http://en.wikipedia.org/wiki/Recursively_enumerable_set",
+    "body": "> If we go for RecursiveSet (or RecursiveEnumeratedSet or variant thereof) \n\n\nI like RecursiveSet. Maybe RecursiveEnumeratedSet is more related to what we do but is also longer.\n\nSome links:\n\n- http://en.wikipedia.org/wiki/Recursive_set\n- http://en.wikipedia.org/wiki/Recursively_enumerable_set",
     "created_at": "2013-02-09T20:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -190,6 +188,7 @@ archive/issue_comments_054279.json:
 ```
 
 > If we go for RecursiveSet (or RecursiveEnumeratedSet or variant thereof) 
+
 
 I like RecursiveSet. Maybe RecursiveEnumeratedSet is more related to what we do but is also longer.
 
@@ -205,7 +204,7 @@ Some links:
 archive/issue_comments_054280.json:
 ```json
 {
-    "body": "> I don't know yet what would be the best name for the argument provided by the user to describe the relation.\n\nFor the above 4 cases, I would suggest arguments like the following :\n\n\n```\nRecursiveSet(seeds, succ)\nRecursiveSet(seeds, succ, structure=\"forest\")\nRecursiveSet(seeds, succ, structure=\"graded\")\nRecursiveSet(seeds, succ, structure=\"symmetric\")\n```\n",
+    "body": "> I don't know yet what would be the best name for the argument provided by the user to describe the relation.\n\n\nFor the above 4 cases, I would suggest arguments like the following :\n\n```\nRecursiveSet(seeds, succ)\nRecursiveSet(seeds, succ, structure=\"forest\")\nRecursiveSet(seeds, succ, structure=\"graded\")\nRecursiveSet(seeds, succ, structure=\"symmetric\")\n```",
     "created_at": "2013-02-09T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -216,8 +215,8 @@ archive/issue_comments_054280.json:
 
 > I don't know yet what would be the best name for the argument provided by the user to describe the relation.
 
-For the above 4 cases, I would suggest arguments like the following :
 
+For the above 4 cases, I would suggest arguments like the following :
 
 ```
 RecursiveSet(seeds, succ)
@@ -225,7 +224,6 @@ RecursiveSet(seeds, succ, structure="forest")
 RecursiveSet(seeds, succ, structure="graded")
 RecursiveSet(seeds, succ, structure="symmetric")
 ```
-
 
 
 
@@ -636,7 +634,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054298.json:
 ```json
 {
-    "body": "Replying to [comment:28 chapoton]:\n> your commits remove completely combinat/all.py ....\n\nI see. It is strange because I can't see which commit did that... I will investigate.",
+    "body": "Replying to [comment:28 chapoton]:\n> your commits remove completely combinat/all.py ....\n\n\nI see. It is strange because I can't see which commit did that... I will investigate.",
     "created_at": "2014-05-10T17:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -647,6 +645,7 @@ archive/issue_comments_054298.json:
 
 Replying to [comment:28 chapoton]:
 > your commits remove completely combinat/all.py ....
+
 
 I see. It is strange because I can't see which commit did that... I will investigate.
 
@@ -677,7 +676,7 @@ Can I make a feature request for this ticket, could we also cythonize this for s
 archive/issue_comments_054300.json:
 ```json
 {
-    "body": "Indeed, there is some gain. I did one example:\n\nPython:\n\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 5.82 s, sys: 239 ms, total: 6.06 s\nWall time: 6.07 s\n```\n\n\nCython:\n\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 4.47 s, sys: 408 ms, total: 4.88 s\nWall time: 4.89 s\n```\n",
+    "body": "Indeed, there is some gain. I did one example:\n\nPython:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 5.82 s, sys: 239 ms, total: 6.06 s\nWall time: 6.07 s\n```\n\nCython:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 4.47 s, sys: 408 ms, total: 4.88 s\nWall time: 4.89 s\n```",
     "created_at": "2014-05-10T21:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -690,7 +689,6 @@ Indeed, there is some gain. I did one example:
 
 Python:
 
-
 ```
 sage: f = lambda a: [a-1,a+1]
 sage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')
@@ -700,9 +698,7 @@ CPU times: user 5.82 s, sys: 239 ms, total: 6.06 s
 Wall time: 6.07 s
 ```
 
-
 Cython:
-
 
 ```
 sage: f = lambda a: [a-1,a+1]
@@ -712,7 +708,6 @@ sage: %time L = [next(it) for _ in xrange(10^6)]
 CPU times: user 4.47 s, sys: 408 ms, total: 4.88 s
 Wall time: 4.89 s
 ```
-
 
 
 
@@ -793,7 +788,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054305.json:
 ```json
 {
-    "body": "Some more speedup by doing some more cythonization. Before:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 9.68 s, sys: 147 ms, total: 9.83 s\nWall time: 9.81 s\n```\n\nWith my commit:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 8.02 s, sys: 103 ms, total: 8.13 s\nWall time: 8.15 s\n```\n\nI'm sure I haven't done the best cythonization job on this, but it works and all tests pass. If you're happy with my changes, then positive review.\n----\nNew commits:",
+    "body": "Some more speedup by doing some more cythonization. Before:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 9.68 s, sys: 147 ms, total: 9.83 s\nWall time: 9.81 s\n```\nWith my commit:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: it = iter(C)\nsage: %time L = [next(it) for _ in xrange(10^6)]\nCPU times: user 8.02 s, sys: 103 ms, total: 8.13 s\nWall time: 8.15 s\n```\nI'm sure I haven't done the best cythonization job on this, but it works and all tests pass. If you're happy with my changes, then positive review.\n\n---\nNew commits:",
     "created_at": "2014-05-11T01:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -812,7 +807,6 @@ sage: %time L = [next(it) for _ in xrange(10^6)]
 CPU times: user 9.68 s, sys: 147 ms, total: 9.83 s
 Wall time: 9.81 s
 ```
-
 With my commit:
 
 ```
@@ -823,9 +817,9 @@ sage: %time L = [next(it) for _ in xrange(10^6)]
 CPU times: user 8.02 s, sys: 103 ms, total: 8.13 s
 Wall time: 8.15 s
 ```
-
 I'm sure I haven't done the best cythonization job on this, but it works and all tests pass. If you're happy with my changes, then positive review.
-----
+
+---
 New commits:
 
 
@@ -835,7 +829,7 @@ New commits:
 archive/issue_comments_054306.json:
 ```json
 {
-    "body": "I do gain one more second with your improvements. Great!\n\n\n```\nsage: sage: f = lambda a: [a-1,a+1]                                         \nsage: sage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: sage: it = iter(C)                                                    \nsage: sage: %time L = [next(it) for _ in xrange(10^6)]                      \nCPU times: user 3.49 s, sys: 246 ms, total: 3.74 s                          \nWall time: 3.79 s   \n```\n\n\nI do not like factory function in general and was happy to use for the first time the metaclass stuff. But apparently, it is not as efficient? Did you check if only removing the metaclass stuff was giving a speedup?",
+    "body": "I do gain one more second with your improvements. Great!\n\n```\nsage: sage: f = lambda a: [a-1,a+1]                                         \nsage: sage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')\nsage: sage: it = iter(C)                                                    \nsage: sage: %time L = [next(it) for _ in xrange(10^6)]                      \nCPU times: user 3.49 s, sys: 246 ms, total: 3.74 s                          \nWall time: 3.79 s   \n```\n\nI do not like factory function in general and was happy to use for the first time the metaclass stuff. But apparently, it is not as efficient? Did you check if only removing the metaclass stuff was giving a speedup?",
     "created_at": "2014-05-11T09:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -846,7 +840,6 @@ archive/issue_comments_054306.json:
 
 I do gain one more second with your improvements. Great!
 
-
 ```
 sage: sage: f = lambda a: [a-1,a+1]                                         
 sage: sage: C = RecursivelyEnumeratedSet([10, 15], f, structure='symmetric')
@@ -855,7 +848,6 @@ sage: sage: %time L = [next(it) for _ in xrange(10^6)]
 CPU times: user 3.49 s, sys: 246 ms, total: 3.74 s                          
 Wall time: 3.79 s   
 ```
-
 
 I do not like factory function in general and was happy to use for the first time the metaclass stuff. But apparently, it is not as efficient? Did you check if only removing the metaclass stuff was giving a speedup?
 
@@ -884,7 +876,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_054308.json:
 ```json
 {
-    "body": "Travis, did you check that the doc was building fine? I am not able to, I get :\n\n\n```\n$ sage -docbuild reference/structure html\n   [structure] WARNING: intersphinx inventory '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv'\n   Error building the documentation.\n\n   Note: incremental documentation builds sometimes cause spurious\n   error messages. To be certain that these are real errors, run\n   \"make doc-clean\" first and try again.\n   Traceback (most recent call last):\n     File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 1477, in <module>\n         getattr(get_builder(name), type)()\n           File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 699, in _wrapper\n               getattr(DocBuilder, build_type)(self, *args, **kwds)\n                 File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 94, in f\n                     execfile(sys.argv[0])\n                       File \"/Users/slabbe/Applications/sage-git/src/doc/common/custom-sphinx-build.py\", line 210, in <module>\n                           raise OSError(ERROR_MESSAGE)\n                           OSError: [structure] WARNING: intersphinx inventory '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv'\n```\n\n\nOnce, I may confirm the docs does build fine. I will set this to positive review.",
+    "body": "Travis, did you check that the doc was building fine? I am not able to, I get :\n\n```\n$ sage -docbuild reference/structure html\n   [structure] WARNING: intersphinx inventory '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv'\n   Error building the documentation.\n\n   Note: incremental documentation builds sometimes cause spurious\n   error messages. To be certain that these are real errors, run\n   \"make doc-clean\" first and try again.\n   Traceback (most recent call last):\n     File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 1477, in <module>\n         getattr(get_builder(name), type)()\n           File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 699, in _wrapper\n               getattr(DocBuilder, build_type)(self, *args, **kwds)\n                 File \"/Users/slabbe/Applications/sage-git/src/doc/common/builder.py\", line 94, in f\n                     execfile(sys.argv[0])\n                       File \"/Users/slabbe/Applications/sage-git/src/doc/common/custom-sphinx-build.py\", line 210, in <module>\n                           raise OSError(ERROR_MESSAGE)\n                           OSError: [structure] WARNING: intersphinx inventory '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv'\n```\n\nOnce, I may confirm the docs does build fine. I will set this to positive review.",
     "created_at": "2014-05-11T10:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -894,7 +886,6 @@ archive/issue_comments_054308.json:
 ```
 
 Travis, did you check that the doc was building fine? I am not able to, I get :
-
 
 ```
 $ sage -docbuild reference/structure html
@@ -915,7 +906,6 @@ $ sage -docbuild reference/structure html
                            raise OSError(ERROR_MESSAGE)
                            OSError: [structure] WARNING: intersphinx inventory '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/slabbe/Applications/sage-git/src/doc/output/html/en/reference/quivers/objects.inv'
 ```
-
 
 Once, I may confirm the docs does build fine. I will set this to positive review.
 
@@ -1052,7 +1042,7 @@ If you agree Travis, I will try to put the metaclass use back in. Also, maybe Fl
 archive/issue_comments_054316.json:
 ```json
 {
-    "body": "Replying to [comment:45 tscrim]:\n> As I recall, metaclasses are not supported in extension classes by Cython. The metaclass should not change the speed since it's only called/used upon object creation.\n\nOk, now I see what you mean. When the class is `cdef`, then the `__classcall_private__` do not get called instead of the `__init__`:\n\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: RecursivelyEnumeratedSet([0], f)\nA recursively enumerated set (depth first search)\nsage: RecursivelyEnumeratedSet([0], f, structure='symmetric')\nTraceback (most recent call last):\n...\nTypeError: __init__() got an unexpected keyword argument 'structure'\n```\n\n\nI also saw in the [doc](http://www.sagemath.org/doc/reference/misc/sage/misc/classcall_metaclass.html) that: \"*For a Cython class (not cdef since they doesn\u2019t allows metaclasses)*\"",
+    "body": "Replying to [comment:45 tscrim]:\n> As I recall, metaclasses are not supported in extension classes by Cython. The metaclass should not change the speed since it's only called/used upon object creation.\n\n\nOk, now I see what you mean. When the class is `cdef`, then the `__classcall_private__` do not get called instead of the `__init__`:\n\n```\nsage: f = lambda a: [a-1,a+1]\nsage: RecursivelyEnumeratedSet([0], f)\nA recursively enumerated set (depth first search)\nsage: RecursivelyEnumeratedSet([0], f, structure='symmetric')\nTraceback (most recent call last):\n...\nTypeError: __init__() got an unexpected keyword argument 'structure'\n```\n\nI also saw in the [doc](http://www.sagemath.org/doc/reference/misc/sage/misc/classcall_metaclass.html) that: \"*For a Cython class (not cdef since they doesn\u2019t allows metaclasses)*\"",
     "created_at": "2014-05-12T09:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -1064,8 +1054,8 @@ archive/issue_comments_054316.json:
 Replying to [comment:45 tscrim]:
 > As I recall, metaclasses are not supported in extension classes by Cython. The metaclass should not change the speed since it's only called/used upon object creation.
 
-Ok, now I see what you mean. When the class is `cdef`, then the `__classcall_private__` do not get called instead of the `__init__`:
 
+Ok, now I see what you mean. When the class is `cdef`, then the `__classcall_private__` do not get called instead of the `__init__`:
 
 ```
 sage: f = lambda a: [a-1,a+1]
@@ -1076,7 +1066,6 @@ Traceback (most recent call last):
 ...
 TypeError: __init__() got an unexpected keyword argument 'structure'
 ```
-
 
 I also saw in the [doc](http://www.sagemath.org/doc/reference/misc/sage/misc/classcall_metaclass.html) that: "*For a Cython class (not cdef since they doesn’t allows metaclasses)*"
 
@@ -1141,7 +1130,7 @@ Looking at your commit, I don't see any benefit in using the metaclass. However 
 archive/issue_comments_054320.json:
 ```json
 {
-    "body": "Replying to [comment:51 tscrim]:\n> Looking at your commit, I don't see any benefit in using the metaclass. \n\nYes exactly. I needed to play with it to understand what you meant.\n\n> However I'm not opposed to the renaming, so I've just pushed that.\n\nWell, the renaming was just an easy way for me to check that `sage -t recursively_enumerated_set.pyx` was ok after I realised that `__classcall_private__` was ignored by `cdef` class. It was not a suggestion, but it would not be the first renamed function:\n\n\n```\nsage: import_statements(sum)\nfrom sage.misc.functional import symbolic_sum\n```\n\n\nSo, we go with commit \u200bdd72bfc instead of \u200b3191690 ?",
+    "body": "Replying to [comment:51 tscrim]:\n> Looking at your commit, I don't see any benefit in using the metaclass. \n\n\nYes exactly. I needed to play with it to understand what you meant.\n\n> However I'm not opposed to the renaming, so I've just pushed that.\n\n\nWell, the renaming was just an easy way for me to check that `sage -t recursively_enumerated_set.pyx` was ok after I realised that `__classcall_private__` was ignored by `cdef` class. It was not a suggestion, but it would not be the first renamed function:\n\n```\nsage: import_statements(sum)\nfrom sage.misc.functional import symbolic_sum\n```\n\nSo, we go with commit \u200bdd72bfc instead of \u200b3191690 ?",
     "created_at": "2014-05-12T20:33:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -1153,18 +1142,18 @@ archive/issue_comments_054320.json:
 Replying to [comment:51 tscrim]:
 > Looking at your commit, I don't see any benefit in using the metaclass. 
 
+
 Yes exactly. I needed to play with it to understand what you meant.
 
 > However I'm not opposed to the renaming, so I've just pushed that.
 
-Well, the renaming was just an easy way for me to check that `sage -t recursively_enumerated_set.pyx` was ok after I realised that `__classcall_private__` was ignored by `cdef` class. It was not a suggestion, but it would not be the first renamed function:
 
+Well, the renaming was just an easy way for me to check that `sage -t recursively_enumerated_set.pyx` was ok after I realised that `__classcall_private__` was ignored by `cdef` class. It was not a suggestion, but it would not be the first renamed function:
 
 ```
 sage: import_statements(sum)
 from sage.misc.functional import symbolic_sum
 ```
-
 
 So, we go with commit ​dd72bfc instead of ​3191690 ?
 
@@ -1211,7 +1200,7 @@ If that's okay with you.
 archive/issue_comments_054323.json:
 ```json
 {
-    "body": "Replying to [comment:53 tscrim]:\n> If that's okay with you.\n\nThe more I think about it, the less I like it. I think \u200bdd72bfc can be confusing for someone looking at the file for the first time. Until that person looks at the file sage/sets/all.py he will not understand how the `__init__` handles the structure argument. And the key will always be hidden in some other file `sage/sets/all.py`. I suggest we go with your initial factory function. More precisely with commit \u200b3191690. Do you agree?\n\nIf so, I do not know what should we do then (git question). Should we update the commit field? Should we reset the HEAD of the branch? Should we create a new branch pointing to the commit?",
+    "body": "Replying to [comment:53 tscrim]:\n> If that's okay with you.\n\n\nThe more I think about it, the less I like it. I think \u200bdd72bfc can be confusing for someone looking at the file for the first time. Until that person looks at the file sage/sets/all.py he will not understand how the `__init__` handles the structure argument. And the key will always be hidden in some other file `sage/sets/all.py`. I suggest we go with your initial factory function. More precisely with commit \u200b3191690. Do you agree?\n\nIf so, I do not know what should we do then (git question). Should we update the commit field? Should we reset the HEAD of the branch? Should we create a new branch pointing to the commit?",
     "created_at": "2014-05-12T20:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -1222,6 +1211,7 @@ archive/issue_comments_054323.json:
 
 Replying to [comment:53 tscrim]:
 > If that's okay with you.
+
 
 The more I think about it, the less I like it. I think ​dd72bfc can be confusing for someone looking at the file for the first time. Until that person looks at the file sage/sets/all.py he will not understand how the `__init__` handles the structure argument. And the key will always be hidden in some other file `sage/sets/all.py`. I suggest we go with your initial factory function. More precisely with commit ​3191690. Do you agree?
 
@@ -1270,7 +1260,7 @@ Let me try.
 archive/issue_comments_054326.json:
 ```json
 {
-    "body": "The following did the trick:\n\n\n```\ngit checkout 3191690 -b t/6637a\n```\n",
+    "body": "The following did the trick:\n\n```\ngit checkout 3191690 -b t/6637a\n```",
     "created_at": "2014-05-12T21:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6637",
     "type": "issue_comment",
@@ -1281,11 +1271,9 @@ archive/issue_comments_054326.json:
 
 The following did the trick:
 
-
 ```
 git checkout 3191690 -b t/6637a
 ```
-
 
 
 

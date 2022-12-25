@@ -123,7 +123,7 @@ The [attachment:trac_6855-published_interacts.patch patch] enables interacts in 
 archive/issue_comments_056427.json:
 ```json
 {
-    "body": "The local sagenb queue, for what it's worth:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_6855-published_interacts.patch\n```\n",
+    "body": "The local sagenb queue, for what it's worth:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_6855-published_interacts.patch\n```",
     "created_at": "2009-11-26T02:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
@@ -149,7 +149,6 @@ sagenb-7495.patch
 sagenb_3849.patch
 trac_6855-published_interacts.patch
 ```
-
 
 
 
@@ -180,7 +179,7 @@ Concurrent access possibilities, not necessarily mutex:
 archive/issue_comments_056429.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> [...] Still to do:\n>  * Gracefully handle simultaneous access by multiple clients.\n\nSee the previous comment.\n\n>  * Find an alternative to `twist.prep_interact` for rendering the interacts upon load.\n\nSave and serve the rendered HTML.",
+    "body": "Replying to [comment:6 mpatel]:\n> [...] Still to do:\n> * Gracefully handle simultaneous access by multiple clients.\n\n\nSee the previous comment.\n\n>  * Find an alternative to `twist.prep_interact` for rendering the interacts upon load.\n\n\nSave and serve the rendered HTML.",
     "created_at": "2009-11-26T02:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
@@ -191,11 +190,13 @@ archive/issue_comments_056429.json:
 
 Replying to [comment:6 mpatel]:
 > [...] Still to do:
->  * Gracefully handle simultaneous access by multiple clients.
+> * Gracefully handle simultaneous access by multiple clients.
+
 
 See the previous comment.
 
 >  * Find an alternative to `twist.prep_interact` for rendering the interacts upon load.
+
 
 Save and serve the rendered HTML.
 
@@ -226,7 +227,7 @@ Rebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo
 archive/issue_comments_056431.json:
 ```json
 {
-    "body": "\n```\n[...as above...]\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init.patch\ntrac_6855-published_interacts.patch\n```\n",
+    "body": "```\n[...as above...]\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init.patch\ntrac_6855-published_interacts.patch\n```",
     "created_at": "2009-11-26T07:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
@@ -235,14 +236,12 @@ archive/issue_comments_056431.json:
 }
 ```
 
-
 ```
 [...as above...]
 sagenb_3849.patch
 trac_4714-sagenb_jsmath_init.patch
 trac_6855-published_interacts.patch
 ```
-
 
 
 

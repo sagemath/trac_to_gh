@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6572
 archive/issue_comments_053559.json:
 ```json
 {
-    "body": "Here are two patches, one for the main repository and one for the scripts repository.  \n\nThe scripts patch does the following: first, previously, doctests had to be preceded by a double colon at the beginning of a line, and now they only need to be preceded by a line which starts with white space then a double colon -- the double colon no longer has to be at the left margin.  This is important for some files (like constructions/algebraic_geometry.rst), in which indentations might break if we had to move the double colons to the left.   The second change is figuring out when the doctest block ends: it looks for text indented no farther than the double colons were.  (Previously, it looked for text which wasn't indented at all, so if a paragraph was indented, then some doctests were indented further, then a paragraph unindented one level, that second paragaph was treated as part of the doctest block.)\n\nAs a result of all of this, some more doctests are found by `sage -t`.  The other patch does two things: it makes the change advertised in the summary for the ticket, moving double colons onto lines of their own where necessary.  It also tries to fix the newly discovered broken doctests.  I don't know how to fix some of these, and so they are being skipped.  These include the one which triggered this whole episode:\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n     [sin(theta) == cos(theta)]\n```\n\nas well as some doctests involving starting and stopping the Singular console, for example.\n\nFor me, this passes all tests on Mac OS X (both 32-bit and 64-bit), and also on a 32-bit linux box (an old Ubuntu machine) and a 64-bit linux box (sage.math).  It would be best to fix the skipped tests, but that can go in another ticket if no one knows how to do it right now.",
+    "body": "Here are two patches, one for the main repository and one for the scripts repository.  \n\nThe scripts patch does the following: first, previously, doctests had to be preceded by a double colon at the beginning of a line, and now they only need to be preceded by a line which starts with white space then a double colon -- the double colon no longer has to be at the left margin.  This is important for some files (like constructions/algebraic_geometry.rst), in which indentations might break if we had to move the double colons to the left.   The second change is figuring out when the doctest block ends: it looks for text indented no farther than the double colons were.  (Previously, it looked for text which wasn't indented at all, so if a paragraph was indented, then some doctests were indented further, then a paragraph unindented one level, that second paragaph was treated as part of the doctest block.)\n\nAs a result of all of this, some more doctests are found by `sage -t`.  The other patch does two things: it makes the change advertised in the summary for the ticket, moving double colons onto lines of their own where necessary.  It also tries to fix the newly discovered broken doctests.  I don't know how to fix some of these, and so they are being skipped.  These include the one which triggered this whole episode:\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n     [sin(theta) == cos(theta)]\n```\nas well as some doctests involving starting and stopping the Singular console, for example.\n\nFor me, this passes all tests on Mac OS X (both 32-bit and 64-bit), and also on a 32-bit linux box (an old Ubuntu machine) and a 64-bit linux box (sage.math).  It would be best to fix the skipped tests, but that can go in another ticket if no one knows how to do it right now.",
     "created_at": "2009-07-21T03:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -55,7 +55,6 @@ As a result of all of this, some more doctests are found by `sage -t`.  The othe
      sage: solve(cos(theta)==sin(theta))
      [sin(theta) == cos(theta)]
 ```
-
 as well as some doctests involving starting and stopping the Singular console, for example.
 
 For me, this passes all tests on Mac OS X (both 32-bit and 64-bit), and also on a 32-bit linux box (an old Ubuntu machine) and a 64-bit linux box (sage.math).  It would be best to fix the skipped tests, but that can go in another ticket if no one knows how to do it right now.
@@ -87,7 +86,7 @@ See #6642 for the problem with the 'solve' doctest.
 archive/issue_comments_053561.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> See #6642 for the problem with the 'solve' doctest.\n\nThis may be fixed now - see #6642.  If so, I guess one could put that back in the tutorial.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> See #6642 for the problem with the 'solve' doctest.\n\n\nThis may be fixed now - see #6642.  If so, I guess one could put that back in the tutorial.",
     "created_at": "2009-08-26T21:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -98,6 +97,7 @@ archive/issue_comments_053561.json:
 
 Replying to [comment:3 jhpalmieri]:
 > See #6642 for the problem with the 'solve' doctest.
+
 
 This may be fixed now - see #6642.  If so, I guess one could put that back in the tutorial.
 
@@ -166,7 +166,7 @@ apply on top of other scripts patch
 archive/issue_comments_053565.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> Doesn't it make more sense to detect double colons at the end of a line?\n> \n> In restructured text, the two should be equivalent.  It should be the same for the doctests as well.\n\nOkay, that makes sense.  The new scripts patch changes the regular expression to fix this, I think.\n\nNow the problem is that the file (added since this ticket was opened) `tour_graphtheory.rst` is a *complete* disaster, with 15 doctest failures.  I can fix lots of the failed doctests by adding \"...\" and \".. link\" in various places, but I don't know what to do about failures like these:\n\n```\n    sage: g.plot(edge_colors=g.edge_coloring(hex_colors=True))\n    AttributeError: 'Graph' object has no attribute 'edge_coloring'\n\n    sage: g.vertex_coloring()\n    AttributeError: 'Graph' object has no attribute 'vertex_coloring'\n\n    sage: print g.max_matching()\n    AttributeError: 'Graph' object has no attribute 'max_matching'\n```\n\nI don't know what was intended and therefore I don't know how to fix it.  I'll post a patch that fixes what I can.",
+    "body": "Replying to [comment:6 mhansen]:\n> Doesn't it make more sense to detect double colons at the end of a line?\n> \n> In restructured text, the two should be equivalent.  It should be the same for the doctests as well.\n\n\nOkay, that makes sense.  The new scripts patch changes the regular expression to fix this, I think.\n\nNow the problem is that the file (added since this ticket was opened) `tour_graphtheory.rst` is a *complete* disaster, with 15 doctest failures.  I can fix lots of the failed doctests by adding \"...\" and \".. link\" in various places, but I don't know what to do about failures like these:\n\n```\n    sage: g.plot(edge_colors=g.edge_coloring(hex_colors=True))\n    AttributeError: 'Graph' object has no attribute 'edge_coloring'\n\n    sage: g.vertex_coloring()\n    AttributeError: 'Graph' object has no attribute 'vertex_coloring'\n\n    sage: print g.max_matching()\n    AttributeError: 'Graph' object has no attribute 'max_matching'\n```\nI don't know what was intended and therefore I don't know how to fix it.  I'll post a patch that fixes what I can.",
     "created_at": "2009-10-05T15:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
@@ -179,6 +179,7 @@ Replying to [comment:6 mhansen]:
 > Doesn't it make more sense to detect double colons at the end of a line?
 > 
 > In restructured text, the two should be equivalent.  It should be the same for the doctests as well.
+
 
 Okay, that makes sense.  The new scripts patch changes the regular expression to fix this, I think.
 
@@ -194,7 +195,6 @@ Now the problem is that the file (added since this ticket was opened) `tour_grap
     sage: print g.max_matching()
     AttributeError: 'Graph' object has no attribute 'max_matching'
 ```
-
 I don't know what was intended and therefore I don't know how to fix it.  I'll post a patch that fixes what I can.
 
 

@@ -3,7 +3,7 @@
 archive/issues_007907.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @categorie shumow\n\nKeywords: isogeny\n\nThe method  __compute_omega_general() in ell_curve_isogeny.py contains\n\n```\n        for j  in xrange(0,n-1):\n            psi_prpr = psi_prpr + \\\n                binomial(j+2,2)*psi_coeffs[(j+2)]*cur_x_pow\n            cur_x_pow = x*cur_x_pow\n```\n\nwhere the degree of the isogeny is 2*n+1.   In degree 3 (the only case doctested) n=1 and the loop is empty.  Otherwise there is a run-time error since the name \"binomial\" has not been imported.\n\nThis will be simple to patch, but of course as this indicated that higher degree isogenies in char.2 have not been tested, other issues might arise.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7907\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie shumow\n\nKeywords: isogeny\n\nThe method  __compute_omega_general() in ell_curve_isogeny.py contains\n\n```\n        for j  in xrange(0,n-1):\n            psi_prpr = psi_prpr + \\\n                binomial(j+2,2)*psi_coeffs[(j+2)]*cur_x_pow\n            cur_x_pow = x*cur_x_pow\n```\nwhere the degree of the isogeny is 2*n+1.   In degree 3 (the only case doctested) n=1 and the loop is empty.  Otherwise there is a run-time error since the name \"binomial\" has not been imported.\n\nThis will be simple to patch, but of course as this indicated that higher degree isogenies in char.2 have not been tested, other issues might arise.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7907\n\n",
     "created_at": "2010-01-12T12:36:44Z",
     "labels": [
         "component: elliptic curves",
@@ -30,7 +30,6 @@ The method  __compute_omega_general() in ell_curve_isogeny.py contains
                 binomial(j+2,2)*psi_coeffs[(j+2)]*cur_x_pow
             cur_x_pow = x*cur_x_pow
 ```
-
 where the degree of the isogeny is 2*n+1.   In degree 3 (the only case doctested) n=1 and the loop is empty.  Otherwise there is a run-time error since the name "binomial" has not been imported.
 
 This will be simple to patch, but of course as this indicated that higher degree isogenies in char.2 have not been tested, other issues might arise.
@@ -48,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7907
 archive/issue_comments_068627.json:
 ```json
 {
-    "body": "Here's an example of the failure which will be put into a doctest in the patch.\n\nBefore:\n\n\n```\nsage: F = GF(128,'a')                                     \nsage: a = F.gen()                                         \nsage: E = EllipticCurve([1,0,0,0,(a**6+a**4+a**2+a)])     \nsage: x = polygen(F)\nsage: ker =  (x^6 + (a^6 + a^5 + a^4 + a^3 + a^2 + a)*x^5 + (a^6 + a^5 + a^2 + 1)*x^4 + (a^6 + a^5 + a^4 + a^3 + a^2 + 1)*x^3 + (a^6 + a^3 + a)*x^2 + (a^4 + a^3 + 1)*x + a^5 + a^4 + a) \nsage: E.isogeny(ker)        \nTraceback (most recent call last):\n...\nNameError: global name 'binomial' is not defined\n```\n\n\nAfter:\n\n```\nsage: F = GF(128,'a')                                     \nsage: a = F.gen()                                         \nsage: E = EllipticCurve([1,0,0,0,(a**6+a**4+a**2+a)])     \nsage: x = polygen(F)\nsage: ker =  (x^6 + (a^6 + a^5 + a^4 + a^3 + a^2 + a)*x^5 + (a^6 + a^5 + a^2 + 1)*x^4 + (a^6 + a^5 + a^4 + a^3 + a^2 + 1)*x^3 + (a^6 + a^3 + a)*x^2 + (a^4 + a^3 + 1)*x + a^5 + a^4 + a)\nsage: E.isogeny(ker)                                      \nIsogeny of degree 13 from Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^4+a^2+a) over Finite Field in a of size 2^7 to Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^5+a^4+a^3+a^2+a)*x + (a^5+a^3) over Finite Field in a of size 2^7\n```\n",
+    "body": "Here's an example of the failure which will be put into a doctest in the patch.\n\nBefore:\n\n```\nsage: F = GF(128,'a')                                     \nsage: a = F.gen()                                         \nsage: E = EllipticCurve([1,0,0,0,(a**6+a**4+a**2+a)])     \nsage: x = polygen(F)\nsage: ker =  (x^6 + (a^6 + a^5 + a^4 + a^3 + a^2 + a)*x^5 + (a^6 + a^5 + a^2 + 1)*x^4 + (a^6 + a^5 + a^4 + a^3 + a^2 + 1)*x^3 + (a^6 + a^3 + a)*x^2 + (a^4 + a^3 + 1)*x + a^5 + a^4 + a) \nsage: E.isogeny(ker)        \nTraceback (most recent call last):\n...\nNameError: global name 'binomial' is not defined\n```\n\nAfter:\n\n```\nsage: F = GF(128,'a')                                     \nsage: a = F.gen()                                         \nsage: E = EllipticCurve([1,0,0,0,(a**6+a**4+a**2+a)])     \nsage: x = polygen(F)\nsage: ker =  (x^6 + (a^6 + a^5 + a^4 + a^3 + a^2 + a)*x^5 + (a^6 + a^5 + a^2 + 1)*x^4 + (a^6 + a^5 + a^4 + a^3 + a^2 + 1)*x^3 + (a^6 + a^3 + a)*x^2 + (a^4 + a^3 + 1)*x + a^5 + a^4 + a)\nsage: E.isogeny(ker)                                      \nIsogeny of degree 13 from Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^4+a^2+a) over Finite Field in a of size 2^7 to Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^5+a^4+a^3+a^2+a)*x + (a^5+a^3) over Finite Field in a of size 2^7\n```",
     "created_at": "2010-01-12T12:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7907",
     "type": "issue_comment",
@@ -60,7 +59,6 @@ archive/issue_comments_068627.json:
 Here's an example of the failure which will be put into a doctest in the patch.
 
 Before:
-
 
 ```
 sage: F = GF(128,'a')                                     
@@ -74,7 +72,6 @@ Traceback (most recent call last):
 NameError: global name 'binomial' is not defined
 ```
 
-
 After:
 
 ```
@@ -86,7 +83,6 @@ sage: ker =  (x^6 + (a^6 + a^5 + a^4 + a^3 + a^2 + a)*x^5 + (a^6 + a^5 + a^2 + 1
 sage: E.isogeny(ker)                                      
 Isogeny of degree 13 from Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^4+a^2+a) over Finite Field in a of size 2^7 to Elliptic Curve defined by y^2 + x*y = x^3 + (a^6+a^5+a^4+a^3+a^2+a)*x + (a^5+a^3) over Finite Field in a of size 2^7
 ```
-
 
 
 

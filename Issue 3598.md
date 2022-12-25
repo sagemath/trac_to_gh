@@ -89,7 +89,7 @@ If Sage is switching to ecl over clisp, is this still important?
 archive/issue_comments_025372.json:
 ```json
 {
-    "body": "Replying to [comment:2 tjlahey]:\n> If Sage is switching to ecl over clisp, is this still important?\n\nIt will be closed as invalid once we have switched to ecl. There are also other clisp ticket which will then be invalidated.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 tjlahey]:\n> If Sage is switching to ecl over clisp, is this still important?\n\n\nIt will be closed as invalid once we have switched to ecl. There are also other clisp ticket which will then be invalidated.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T09:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
@@ -100,6 +100,7 @@ archive/issue_comments_025372.json:
 
 Replying to [comment:2 tjlahey]:
 > If Sage is switching to ecl over clisp, is this still important?
+
 
 It will be closed as invalid once we have switched to ecl. There are also other clisp ticket which will then be invalidated.
 

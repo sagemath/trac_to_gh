@@ -50,7 +50,7 @@ Attachment [trac_5918.patch](tarball://root/attachments/some-uuid/ticket5918/tra
 archive/issue_comments_046679.json:
 ```json
 {
-    "body": "The patch fails to apply to Sage 3.4.2.alpha0:\n\n```\napplying /Users/palmieri/Downloads/trac_5918.patch\npatching file sage/combinat/posets/poset_examples.py\nHunk #2 FAILED at 164\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/posets/poset_examples.py.rej\npatching file sage/combinat/posets/posets.py\nHunk #12 FAILED at 547\n1 out of 48 hunks FAILED -- saving rejects to file sage/combinat/posets/posets.py.rej\nabort: patch failed to apply\n```\n\n(I was hoping that this patch would fix #5280 and/or #5283, but after applying the rejects by hand, I saw that it didn't.  I'll let someone else do a proper review once there is a rebased patch.)",
+    "body": "The patch fails to apply to Sage 3.4.2.alpha0:\n\n```\napplying /Users/palmieri/Downloads/trac_5918.patch\npatching file sage/combinat/posets/poset_examples.py\nHunk #2 FAILED at 164\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/posets/poset_examples.py.rej\npatching file sage/combinat/posets/posets.py\nHunk #12 FAILED at 547\n1 out of 48 hunks FAILED -- saving rejects to file sage/combinat/posets/posets.py.rej\nabort: patch failed to apply\n```\n(I was hoping that this patch would fix #5280 and/or #5283, but after applying the rejects by hand, I saw that it didn't.  I'll let someone else do a proper review once there is a rebased patch.)",
     "created_at": "2009-04-28T16:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ Hunk #12 FAILED at 547
 1 out of 48 hunks FAILED -- saving rejects to file sage/combinat/posets/posets.py.rej
 abort: patch failed to apply
 ```
-
 (I was hoping that this patch would fix #5280 and/or #5283, but after applying the rejects by hand, I saw that it didn't.  I'll let someone else do a proper review once there is a rebased patch.)
 
 
@@ -187,7 +186,7 @@ apply on top of trac_5918-rebased.patch
 archive/issue_comments_046685.json:
 ```json
 {
-    "body": "Replying to [comment:5 ddrake]:\n> I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:\n> \n>   * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.\n\nThanks for catching these. I checked your corrected definitions, and they are correct. (It seems that a bunch of > and < symbols disappeared at some point; most likely during the automatic conversion to ReST).\n\n>   * you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.\n\nThanks for pointing this out. Obviously, I didn't know this.\n\n>   * doing ``M\\\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)\n\nIt seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> Also. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)\n\nYeah, it is a bit of a pain. The original code was my first Sage/Python coding project, and some of my design decisions were not great. At some point the code needs to be updated to deal with more general posets (like very large/infinite posets), and I imagine at that point the two classes will merge into something like `FinitePosetWithHasseDiagram`.\n\nEven though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\nThanks for taking a look at the patch. I agree with all your changes.",
+    "body": "Replying to [comment:5 ddrake]:\n> I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:\n> \n> * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.\n\n\nThanks for catching these. I checked your corrected definitions, and they are correct. (It seems that a bunch of > and < symbols disappeared at some point; most likely during the automatic conversion to ReST).\n\n>   * you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.\n\n\nThanks for pointing this out. Obviously, I didn't know this.\n\n>   * doing ``M\\\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)\n\n\nIt seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> Also. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)\n\n\nYeah, it is a bit of a pain. The original code was my first Sage/Python coding project, and some of my design decisions were not great. At some point the code needs to be updated to deal with more general posets (like very large/infinite posets), and I imagine at that point the two classes will merge into something like `FinitePosetWithHasseDiagram`.\n\nEven though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\nThanks for taking a look at the patch. I agree with all your changes.",
     "created_at": "2009-04-29T09:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -199,19 +198,23 @@ archive/issue_comments_046685.json:
 Replying to [comment:5 ddrake]:
 > I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:
 > 
->   * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.
+> * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.
+
 
 Thanks for catching these. I checked your corrected definitions, and they are correct. (It seems that a bunch of > and < symbols disappeared at some point; most likely during the automatic conversion to ReST).
 
 >   * you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.
 
+
 Thanks for pointing this out. Obviously, I didn't know this.
 
 >   * doing ``M\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)
 
+
 It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
 
 > Also. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)
+
 
 Yeah, it is a bit of a pain. The original code was my first Sage/Python coding project, and some of my design decisions were not great. At some point the code needs to be updated to deal with more general posets (like very large/infinite posets), and I imagine at that point the two classes will merge into something like `FinitePosetWithHasseDiagram`.
 
@@ -226,7 +229,7 @@ Thanks for taking a look at the patch. I agree with all your changes.
 archive/issue_comments_046686.json:
 ```json
 {
-    "body": "Replying to [comment:6 saliola]:\n> It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\nDo `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version. The reference manual pulls in all the docstrings from the Sage library. The output will be in `$SAGE_ROOT/devel/sage/doc/output/` and look in the html or pdf directories. You can also create the developer's guide, installation guide, and a bunch of other stuff by replacing \"reference\" with \"developer\", \"installation\", \"constructions\", and others.\n\n> Even though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\nYes! Definitely.",
+    "body": "Replying to [comment:6 saliola]:\n> It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n\nDo `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version. The reference manual pulls in all the docstrings from the Sage library. The output will be in `$SAGE_ROOT/devel/sage/doc/output/` and look in the html or pdf directories. You can also create the developer's guide, installation guide, and a bunch of other stuff by replacing \"reference\" with \"developer\", \"installation\", \"constructions\", and others.\n\n> Even though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\n\nYes! Definitely.",
     "created_at": "2009-04-29T12:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -238,9 +241,11 @@ archive/issue_comments_046686.json:
 Replying to [comment:6 saliola]:
 > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
 
+
 Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version. The reference manual pulls in all the docstrings from the Sage library. The output will be in `$SAGE_ROOT/devel/sage/doc/output/` and look in the html or pdf directories. You can also create the developer's guide, installation guide, and a bunch of other stuff by replacing "reference" with "developer", "installation", "constructions", and others.
 
 > Even though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.
+
 
 Yes! Definitely.
 
@@ -251,7 +256,7 @@ Yes! Definitely.
 archive/issue_comments_046687.json:
 ```json
 {
-    "body": "Replying to [comment:7 ddrake]:\n> Replying to [comment:6 saliola]:\n> > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> \n> Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n\nThanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.",
+    "body": "Replying to [comment:7 ddrake]:\n> Replying to [comment:6 saliola]:\n> > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> \n> Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n\n\nThanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.",
     "created_at": "2009-04-29T15:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -263,8 +268,10 @@ archive/issue_comments_046687.json:
 Replying to [comment:7 ddrake]:
 > Replying to [comment:6 saliola]:
 > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
+
 > 
 > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.
+
 
 Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.
 
@@ -275,7 +282,7 @@ Thanks for this answer. This seems to take a while. Is there a way to build just
 archive/issue_comments_046688.json:
 ```json
 {
-    "body": "Replying to [comment:8 saliola]:\n> Replying to [comment:7 ddrake]:\n> > Replying to [comment:6 saliola]:\n> > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> > \n> > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n> \n> Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n\nYes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.",
+    "body": "Replying to [comment:8 saliola]:\n> Replying to [comment:7 ddrake]:\n> > Replying to [comment:6 saliola]:\n> > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> > \n> > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n\n> \n> Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n\n\nYes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.",
     "created_at": "2009-04-29T16:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -288,10 +295,13 @@ Replying to [comment:8 saliola]:
 > Replying to [comment:7 ddrake]:
 > > Replying to [comment:6 saliola]:
 > > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
+
 > > 
 > > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.
+
 > 
 > Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.
+
 
 Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.
 
@@ -398,7 +408,7 @@ archive/issue_events_013879.json:
 archive/issue_comments_046693.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> Replying to [comment:8 saliola]:\n> > Replying to [comment:7 ddrake]:\n> > > Replying to [comment:6 saliola]:\n> > > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> > > \n> > > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n> > \n> > Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n> \n> Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.\n\nThank you, John and Dan, for you answers. These will be very useful.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Replying to [comment:8 saliola]:\n> > Replying to [comment:7 ddrake]:\n> > > Replying to [comment:6 saliola]:\n> > > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> > > \n> > > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n\n> > \n> > Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n\n> \n> Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.\n\n\nThank you, John and Dan, for you answers. These will be very useful.",
     "created_at": "2009-04-30T07:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5918",
     "type": "issue_comment",
@@ -412,11 +422,15 @@ Replying to [comment:9 jhpalmieri]:
 > > Replying to [comment:7 ddrake]:
 > > > Replying to [comment:6 saliola]:
 > > > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
+
 > > > 
 > > > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.
+
 > > 
 > > Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.
+
 > 
 > Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.
+
 
 Thank you, John and Dan, for you answers. These will be very useful.

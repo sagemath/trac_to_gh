@@ -3,7 +3,7 @@
 archive/issues_005946.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nKeywords: content p-adic polynomial\n\nWe ran into this at #5921.  There are two separate issues: polynomials with coefficients in a p-adic field should not have a `content()` method, since it doesn't make sense (the same way that having a `content()` method for polynomials with rational coefficients doesn't make sense).\n\nThe second issue is with the `content()` method for polynomials with coefficients in p-adic rings.  Here's an example:\n\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicRing(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5946\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: content p-adic polynomial\n\nWe ran into this at #5921.  There are two separate issues: polynomials with coefficients in a p-adic field should not have a `content()` method, since it doesn't make sense (the same way that having a `content()` method for polynomials with rational coefficients doesn't make sense).\n\nThe second issue is with the `content()` method for polynomials with coefficients in p-adic rings.  Here's an example:\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicRing(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5946\n\n",
     "created_at": "2009-04-30T06:44:15Z",
     "labels": [
         "component: padics",
@@ -25,7 +25,6 @@ We ran into this at #5921.  There are two separate issues: polynomials with coef
 
 The second issue is with the `content()` method for polynomials with coefficients in p-adic rings.  Here's an example:
 
-
 ```
 sage: P.<x> = ZZ[]
 sage: f = x + 2
@@ -37,7 +36,6 @@ sage: fp
 sage: fp.content()
 0
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5946

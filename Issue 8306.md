@@ -145,7 +145,7 @@ A possibly related problem is that the top-level make doesn't notice the error. 
 archive/issue_comments_073480.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> [...] I'll see what happens if I add `$(INST)/$(ECLIB)` to \"all\"'s list of dependencies.\nSame result.  All of the other spkgs build properly.  But I definitely need to figure out why this happens with eclib and check the other spkgs for similar potential behavior.",
+    "body": "Replying to [comment:6 mpatel]:\n> [...] I'll see what happens if I add `$(INST)/$(ECLIB)` to \"all\"'s list of dependencies.\n\nSame result.  All of the other spkgs build properly.  But I definitely need to figure out why this happens with eclib and check the other spkgs for similar potential behavior.",
     "created_at": "2010-02-27T03:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_073480.json:
 
 Replying to [comment:6 mpatel]:
 > [...] I'll see what happens if I add `$(INST)/$(ECLIB)` to "all"'s list of dependencies.
+
 Same result.  All of the other spkgs build properly.  But I definitely need to figure out why this happens with eclib and check the other spkgs for similar potential behavior.
 
 
@@ -203,7 +204,7 @@ Tweak eclib `Makefile`s so it builds with `+`.  eclib src repo.
 archive/issue_comments_073483.json:
 ```json
 {
-    "body": "[attachment:eclib_makefiles.patch This patch] gets eclib to build with `+`.  I noticed that eclib's `spkg-install` contains\n\n```sh\nif [ \"$MAKE\" == gmake ]; then \n   echo \"using gmake\"\nelse\n   echo \"Disabling parallel make for now\"\n   MAKE=make; export $MAKE\nfi\n```\n\nIs there a particular reason for this?",
+    "body": "[attachment:eclib_makefiles.patch This patch] gets eclib to build with `+`.  I noticed that eclib's `spkg-install` contains\n\n```sh\nif [ \"$MAKE\" == gmake ]; then \n   echo \"using gmake\"\nelse\n   echo \"Disabling parallel make for now\"\n   MAKE=make; export $MAKE\nfi\n```\nIs there a particular reason for this?",
     "created_at": "2010-02-27T05:45:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -222,7 +223,6 @@ else
    MAKE=make; export $MAKE
 fi
 ```
-
 Is there a particular reason for this?
 
 
@@ -270,7 +270,7 @@ The new `deps` "depends" on an eclib spkg with [attachment:eclib_makefiles.patch
 archive/issue_comments_073486.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> I've updated the attachments so the usual build behavior is the default.  To tell make it's OK to build multiple spkgs at a time, set `PARALLEL_SPKG_BUILD=\"yes\"` near the top of `spkg/standard/deps`.\nThat should be \"near the top of `spkg/install`.\"",
+    "body": "Replying to [comment:10 mpatel]:\n> I've updated the attachments so the usual build behavior is the default.  To tell make it's OK to build multiple spkgs at a time, set `PARALLEL_SPKG_BUILD=\"yes\"` near the top of `spkg/standard/deps`.\n\nThat should be \"near the top of `spkg/install`.\"",
     "created_at": "2010-02-27T07:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -281,6 +281,7 @@ archive/issue_comments_073486.json:
 
 Replying to [comment:10 mpatel]:
 > I've updated the attachments so the usual build behavior is the default.  To tell make it's OK to build multiple spkgs at a time, set `PARALLEL_SPKG_BUILD="yes"` near the top of `spkg/standard/deps`.
+
 That should be "near the top of `spkg/install`."
 
 
@@ -360,7 +361,7 @@ Next time someone edits it they should change the two occurrences of "cremona" i
 archive/issue_comments_073490.json:
 ```json
 {
-    "body": "Replying to [comment:14 cremona]:\n> I didn't write eclib's spkg-install, and I know that several people have changed it in the past -- there's at least one ticket out there specifically about managing eclib's Makefiles.\nIndeed, the workaround is from #4228.\n> Next time someone edits it they should change the two occurrences of \"cremona\" in error messages to \"eclib\".\nI'll make a new spkg available at #8357.",
+    "body": "Replying to [comment:14 cremona]:\n> I didn't write eclib's spkg-install, and I know that several people have changed it in the past -- there's at least one ticket out there specifically about managing eclib's Makefiles.\n\nIndeed, the workaround is from #4228.\n> Next time someone edits it they should change the two occurrences of \"cremona\" in error messages to \"eclib\".\n\nI'll make a new spkg available at #8357.",
     "created_at": "2010-02-27T22:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -371,8 +372,10 @@ archive/issue_comments_073490.json:
 
 Replying to [comment:14 cremona]:
 > I didn't write eclib's spkg-install, and I know that several people have changed it in the past -- there's at least one ticket out there specifically about managing eclib's Makefiles.
+
 Indeed, the workaround is from #4228.
 > Next time someone edits it they should change the two occurrences of "cremona" in error messages to "eclib".
+
 I'll make a new spkg available at #8357.
 
 
@@ -382,7 +385,7 @@ I'll make a new spkg available at #8357.
 archive/issue_comments_073491.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> I'll make a new spkg available at #8357.\nDone, with a provisional version, at least.",
+    "body": "Replying to [comment:15 mpatel]:\n> I'll make a new spkg available at #8357.\n\nDone, with a provisional version, at least.",
     "created_at": "2010-02-28T00:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -393,6 +396,7 @@ archive/issue_comments_073491.json:
 
 Replying to [comment:15 mpatel]:
 > I'll make a new spkg available at #8357.
+
 Done, with a provisional version, at least.
 
 
@@ -402,7 +406,7 @@ Done, with a provisional version, at least.
 archive/issue_comments_073492.json:
 ```json
 {
-    "body": "Replying to [comment:13 drkirkby]:\n\n> The idea seems excellent. Ir is such a waste on modern machines to\n\nThanks!  I'll get an account on bsd and try to test on both bsd and t2, as well.\n\n`SAGE_PARALLEL_SPKG_BUILD` looks good.\n\nMy motivation for making the new feature optional, for now, is so we can get feedback (via sage-devel) from early testers about a much wider range of build conditions and configurations.  It's likely they'll report problems, and we can attempt to solve them before we make it the default for everyone.",
+    "body": "Replying to [comment:13 drkirkby]:\n\n> The idea seems excellent. Ir is such a waste on modern machines to\n\n\nThanks!  I'll get an account on bsd and try to test on both bsd and t2, as well.\n\n`SAGE_PARALLEL_SPKG_BUILD` looks good.\n\nMy motivation for making the new feature optional, for now, is so we can get feedback (via sage-devel) from early testers about a much wider range of build conditions and configurations.  It's likely they'll report problems, and we can attempt to solve them before we make it the default for everyone.",
     "created_at": "2010-02-28T01:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -414,6 +418,7 @@ archive/issue_comments_073492.json:
 Replying to [comment:13 drkirkby]:
 
 > The idea seems excellent. Ir is such a waste on modern machines to
+
 
 Thanks!  I'll get an account on bsd and try to test on both bsd and t2, as well.
 
@@ -448,7 +453,7 @@ Make `sage -i foo.spkg` also append to `spkg/logs/foo.spkg`.  **scripts** repo.
 archive/issue_comments_073494.json:
 ```json
 {
-    "body": "Again, against 4.3.3 on sage.math, this appears to work well.  With `SAGE_CHECK=\"yes\"`, I get the same known errors\n\n```\n     sage: An error occurred while testing sagetex-2.2.3\n     sage: An error occurred while testing pyprocessing-0.52.p0\n     sage: An error occurred while testing sqlalchemy-0.4.6.p1\n```\n\nwith and without parallel spkg builds.  All the docs build and the long doctests pass.\n\nAgainst 4.3.0.1 on t2: It builds and runs --- I used a stand-in atlas spkg that just copies the files from the [existing binary build](http://boxen.math.washington.edu/sage/solaris/index.html).  \"Several\" doctests still fail or segfault.  With `SAGE_CHECK=\"yes\"`, I get the known testing errors, a known testing error with eclib (see #8357),  and *maybe* a testing error with R.  I ran out of patience with the latter.  I don't have time to test further on t2 / *Solaris.  It's probably better that someone else test with 4.3.3+ on a capable machine.\n\nIf I have time (and an account), I'll run a few tests on `bsd.math`.\n\nNote: With `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`, I find it useful to run one of\n\n```sh\ngrep \"An error occurred\" SAGE_ROOT/install.log\nls -l SAGE_ROOT/spkg/installed | wc\n```\n\nwhen I see `\"Sage build/upgrade complete!\"`.  Maybe we should add a similar check at the end of `install`?\n\nPlease test and let us know what happens.  I didn't log detailed statistics, but with a warm compiler cache, I noticed a roughly three-fold speedup.  From a recent run on sage.math:\n\n```\nSage build/upgrade complete!\n\nreal    15m44.846s\nuser    45m55.780s\nsys     11m10.470s\n```\n",
+    "body": "Again, against 4.3.3 on sage.math, this appears to work well.  With `SAGE_CHECK=\"yes\"`, I get the same known errors\n\n```\n     sage: An error occurred while testing sagetex-2.2.3\n     sage: An error occurred while testing pyprocessing-0.52.p0\n     sage: An error occurred while testing sqlalchemy-0.4.6.p1\n```\nwith and without parallel spkg builds.  All the docs build and the long doctests pass.\n\nAgainst 4.3.0.1 on t2: It builds and runs --- I used a stand-in atlas spkg that just copies the files from the [existing binary build](http://boxen.math.washington.edu/sage/solaris/index.html).  \"Several\" doctests still fail or segfault.  With `SAGE_CHECK=\"yes\"`, I get the known testing errors, a known testing error with eclib (see #8357),  and *maybe* a testing error with R.  I ran out of patience with the latter.  I don't have time to test further on t2 / *Solaris.  It's probably better that someone else test with 4.3.3+ on a capable machine.\n\nIf I have time (and an account), I'll run a few tests on `bsd.math`.\n\nNote: With `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`, I find it useful to run one of\n\n```sh\ngrep \"An error occurred\" SAGE_ROOT/install.log\nls -l SAGE_ROOT/spkg/installed | wc\n```\nwhen I see `\"Sage build/upgrade complete!\"`.  Maybe we should add a similar check at the end of `install`?\n\nPlease test and let us know what happens.  I didn't log detailed statistics, but with a warm compiler cache, I noticed a roughly three-fold speedup.  From a recent run on sage.math:\n\n```\nSage build/upgrade complete!\n\nreal    15m44.846s\nuser    45m55.780s\nsys     11m10.470s\n```",
     "created_at": "2010-03-01T16:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -464,7 +469,6 @@ Again, against 4.3.3 on sage.math, this appears to work well.  With `SAGE_CHECK=
      sage: An error occurred while testing pyprocessing-0.52.p0
      sage: An error occurred while testing sqlalchemy-0.4.6.p1
 ```
-
 with and without parallel spkg builds.  All the docs build and the long doctests pass.
 
 Against 4.3.0.1 on t2: It builds and runs --- I used a stand-in atlas spkg that just copies the files from the [existing binary build](http://boxen.math.washington.edu/sage/solaris/index.html).  "Several" doctests still fail or segfault.  With `SAGE_CHECK="yes"`, I get the known testing errors, a known testing error with eclib (see #8357),  and *maybe* a testing error with R.  I ran out of patience with the latter.  I don't have time to test further on t2 / *Solaris.  It's probably better that someone else test with 4.3.3+ on a capable machine.
@@ -477,7 +481,6 @@ Note: With `SAGE_PARALLEL_SPKG_BUILD="yes"`, I find it useful to run one of
 grep "An error occurred" SAGE_ROOT/install.log
 ls -l SAGE_ROOT/spkg/installed | wc
 ```
-
 when I see `"Sage build/upgrade complete!"`.  Maybe we should add a similar check at the end of `install`?
 
 Please test and let us know what happens.  I didn't log detailed statistics, but with a warm compiler cache, I noticed a roughly three-fold speedup.  From a recent run on sage.math:
@@ -492,13 +495,12 @@ sys     11m10.470s
 
 
 
-
 ---
 
 archive/issue_comments_073495.json:
 ```json
 {
-    "body": "Replying to [comment:19 mpatel]:\n\n> [... ...] with a warm compiler cache, I noticed a roughly three-fold speedup. [... ...]\n\nI should add that this could be very useful to a release manager.",
+    "body": "Replying to [comment:19 mpatel]:\n\n> [... ...] with a warm compiler cache, I noticed a roughly three-fold speedup. [... ...]\n\n\nI should add that this could be very useful to a release manager.",
     "created_at": "2010-03-01T16:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -511,6 +513,7 @@ Replying to [comment:19 mpatel]:
 
 > [... ...] with a warm compiler cache, I noticed a roughly three-fold speedup. [... ...]
 
+
 I should add that this could be very useful to a release manager.
 
 
@@ -520,7 +523,7 @@ I should add that this could be very useful to a release manager.
 archive/issue_comments_073496.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n\n> I should add that this could be very useful to a release manager.\nWhat exactly is a \"warm compiler cache\" ? A Google on the term only shows only references to Sage.",
+    "body": "Replying to [comment:20 mpatel]:\n\n> I should add that this could be very useful to a release manager.\n\nWhat exactly is a \"warm compiler cache\" ? A Google on the term only shows only references to Sage.",
     "created_at": "2010-03-01T16:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -532,6 +535,7 @@ archive/issue_comments_073496.json:
 Replying to [comment:20 mpatel]:
 
 > I should add that this could be very useful to a release manager.
+
 What exactly is a "warm compiler cache" ? A Google on the term only shows only references to Sage.
 
 
@@ -541,7 +545,7 @@ What exactly is a "warm compiler cache" ? A Google on the term only shows only r
 archive/issue_comments_073497.json:
 ```json
 {
-    "body": "Oops.  I just mean that I've set up [ccache](http://ccache.samba.org/) and compiled Sage twice, say.  Stats from t2:\n\n```\nmpatel@t2 ~$ ccache -s\ncache directory                     /home/mpatel/.ccache\ncache hit                          34598\ncache miss                         23288\ncalled for link                     5050\nmultiple source files                 14\ncompiler produced stdout              10\ncompile failed                       774\npreprocessor error                   465\ncouldn't find the compiler            39\nnot a C/C++ file                    3409\nautoconf compile/link               7006\nunsupported compiler option         2815\nno input file                       3107\nfiles in cache                     45248\ncache size                           2.3 Gbytes\nmax cache size                       5.0 Gbytes\n```\n\n(I think it'll be faster in `/scratch`, but I don't know by how much.)  From sage.math:\n\n```\nmpatel@sage ~$ ccache -s\ncache directory                     /scratch/mpatel/.ccache\ncache hit                         371602\ncache miss                         61435\ncalled for link                    48342\nmultiple source files                131\ncompiler produced stdout              78\ncompile failed                      2635\nccache internal error                  2\npreprocessor error                  2433\ncache file missing                     4\nnot a C/C++ file                   15851\nautoconf compile/link              39762\nunsupported compiler option        21463\nno input file                      18871\nfiles in cache                    106837\ncache size                           4.6 Gbytes\nmax cache size                      10.0 Gbytes\n```\n\n(Lots of testing with different `X` values.)  I've been using ccache 2.4.  I don't know how 3.0pre0 compares.",
+    "body": "Oops.  I just mean that I've set up [ccache](http://ccache.samba.org/) and compiled Sage twice, say.  Stats from t2:\n\n```\nmpatel@t2 ~$ ccache -s\ncache directory                     /home/mpatel/.ccache\ncache hit                          34598\ncache miss                         23288\ncalled for link                     5050\nmultiple source files                 14\ncompiler produced stdout              10\ncompile failed                       774\npreprocessor error                   465\ncouldn't find the compiler            39\nnot a C/C++ file                    3409\nautoconf compile/link               7006\nunsupported compiler option         2815\nno input file                       3107\nfiles in cache                     45248\ncache size                           2.3 Gbytes\nmax cache size                       5.0 Gbytes\n```\n(I think it'll be faster in `/scratch`, but I don't know by how much.)  From sage.math:\n\n```\nmpatel@sage ~$ ccache -s\ncache directory                     /scratch/mpatel/.ccache\ncache hit                         371602\ncache miss                         61435\ncalled for link                    48342\nmultiple source files                131\ncompiler produced stdout              78\ncompile failed                      2635\nccache internal error                  2\npreprocessor error                  2433\ncache file missing                     4\nnot a C/C++ file                   15851\nautoconf compile/link              39762\nunsupported compiler option        21463\nno input file                      18871\nfiles in cache                    106837\ncache size                           4.6 Gbytes\nmax cache size                      10.0 Gbytes\n```\n(Lots of testing with different `X` values.)  I've been using ccache 2.4.  I don't know how 3.0pre0 compares.",
     "created_at": "2010-03-01T16:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -571,7 +575,6 @@ files in cache                     45248
 cache size                           2.3 Gbytes
 max cache size                       5.0 Gbytes
 ```
-
 (I think it'll be faster in `/scratch`, but I don't know by how much.)  From sage.math:
 
 ```
@@ -594,7 +597,6 @@ files in cache                    106837
 cache size                           4.6 Gbytes
 max cache size                      10.0 Gbytes
 ```
-
 (Lots of testing with different `X` values.)  I've been using ccache 2.4.  I don't know how 3.0pre0 compares.
 
 
@@ -694,7 +696,7 @@ Adding Mike Hansen to the Cc: list.
 archive/issue_comments_073503.json:
 ```json
 {
-    "body": "Strange error when building on sage.math with `MAKE=\"make -j23 -l25\"` and `SAGE_PARALLEL_SPKG_BUILD` **not** set:\n\n```\nNow install rpy\n**************************************************************************\nYou must compile Sage first using 'make' in the Sage root directory.\n(If you have already compiled Sage, you must set the SAGE_ROOT variable in \nthe file '/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0/sage').\n**************************************************************************\nError installing rpy.\n```\n",
+    "body": "Strange error when building on sage.math with `MAKE=\"make -j23 -l25\"` and `SAGE_PARALLEL_SPKG_BUILD` **not** set:\n\n```\nNow install rpy\n**************************************************************************\nYou must compile Sage first using 'make' in the Sage root directory.\n(If you have already compiled Sage, you must set the SAGE_ROOT variable in \nthe file '/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0/sage').\n**************************************************************************\nError installing rpy.\n```",
     "created_at": "2010-03-05T03:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -714,7 +716,6 @@ the file '/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0/sage').
 **************************************************************************
 Error installing rpy.
 ```
-
 
 
 
@@ -743,7 +744,7 @@ Fixed by appending `SAGE_SCRIPTS` to `BASE`.  I'm putting the updates here:
 archive/issue_comments_073505.json:
 ```json
 {
-    "body": "With Sage 4.3.4.alpha0 on sage.math, I updated \"deps\" and \"install\" with [deps](http://sage.math.washington.edu/home/mpatel/trac/8306/deps) and [install](http://sage.math.washington.edu/home/mpatel/trac/8306/install). I exported these environment variables:\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=\"yes\"\nexport MAKE=\"make -j4\"\nmake \n```\n\nThe build failed with \n\n```\nSuccessfully installed gap-4.4.12.p1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gap-4.4.12.p1.spkg\nmake[1]: Leaving directory `/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/spkg'\n\nreal    45m12.933s\nuser    105m39.580s\nsys     15m46.550s\nError building Sage.\nTraceback (most recent call last):\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/local/bin/sage-preparse\", line 230, in <module>\n    do_preparse(f)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/local/bin/sage-preparse\", line 118, in do_preparse\n    from sage.misc.preparser  import preparse_file\nImportError: No module named sage.misc.preparser\n```\n",
+    "body": "With Sage 4.3.4.alpha0 on sage.math, I updated \"deps\" and \"install\" with [deps](http://sage.math.washington.edu/home/mpatel/trac/8306/deps) and [install](http://sage.math.washington.edu/home/mpatel/trac/8306/install). I exported these environment variables:\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=\"yes\"\nexport MAKE=\"make -j4\"\nmake \n```\nThe build failed with \n\n```\nSuccessfully installed gap-4.4.12.p1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gap-4.4.12.p1.spkg\nmake[1]: Leaving directory `/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/spkg'\n\nreal    45m12.933s\nuser    105m39.580s\nsys     15m46.550s\nError building Sage.\nTraceback (most recent call last):\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/local/bin/sage-preparse\", line 230, in <module>\n    do_preparse(f)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/local/bin/sage-preparse\", line 118, in do_preparse\n    from sage.misc.preparser  import preparse_file\nImportError: No module named sage.misc.preparser\n```",
     "created_at": "2010-03-07T04:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -759,7 +760,6 @@ export SAGE_PARALLEL_SPKG_BUILD="yes"
 export MAKE="make -j4"
 make 
 ```
-
 The build failed with 
 
 ```
@@ -784,13 +784,12 @@ ImportError: No module named sage.misc.preparser
 
 
 
-
 ---
 
 archive/issue_comments_073506.json:
 ```json
 {
-    "body": "The eclib and sage packages did not build:\n\n```sh\n$ grep \"An error occurred\" /dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/spkg/logs/*\neclib-20080310.p9.log:sage: An error occurred while installing eclib-20080310.p9\nsage-4.3.4.alpha0.log:sage: An error occurred while installing sage-4.3.4.alpha0\n```\n\nTicket #8357's `eclib-*.spkg` should fix this.  I apologize for not mentioning it in \"To test the changes\".\n\nQuestions:\n\n* If I untar `sage-*.tar`, copy over `install`, etc., and start the build, then at some point, `install` is overwritten with the original version.  Do you know which package or script does this?  For my tests, I've run `chmod u-w install` before `make`.\n\n* I don't know why the build didn't stop when eclib failed to build.  This seems strange.  The file `installed/eclib*` is missing and according to `deps`, it's required for the `sage` target.  Similarly, `installed/sage*` is a prerequisite for gap.  Does anyone know why this happens?  Can we modify `deps` to avoid it?",
+    "body": "The eclib and sage packages did not build:\n\n```sh\n$ grep \"An error occurred\" /dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/spkg/logs/*\neclib-20080310.p9.log:sage: An error occurred while installing eclib-20080310.p9\nsage-4.3.4.alpha0.log:sage: An error occurred while installing sage-4.3.4.alpha0\n```\nTicket #8357's `eclib-*.spkg` should fix this.  I apologize for not mentioning it in \"To test the changes\".\n\nQuestions:\n\n* If I untar `sage-*.tar`, copy over `install`, etc., and start the build, then at some point, `install` is overwritten with the original version.  Do you know which package or script does this?  For my tests, I've run `chmod u-w install` before `make`.\n\n* I don't know why the build didn't stop when eclib failed to build.  This seems strange.  The file `installed/eclib*` is missing and according to `deps`, it's required for the `sage` target.  Similarly, `installed/sage*` is a prerequisite for gap.  Does anyone know why this happens?  Can we modify `deps` to avoid it?",
     "created_at": "2010-03-07T05:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -806,7 +805,6 @@ $ grep "An error occurred" /dev/shm/mvngu/sandbox/sage-4.3.4.alpha0/spkg/logs/*
 eclib-20080310.p9.log:sage: An error occurred while installing eclib-20080310.p9
 sage-4.3.4.alpha0.log:sage: An error occurred while installing sage-4.3.4.alpha0
 ```
-
 Ticket #8357's `eclib-*.spkg` should fix this.  I apologize for not mentioning it in "To test the changes".
 
 Questions:
@@ -822,7 +820,7 @@ Questions:
 archive/issue_comments_073507.json:
 ```json
 {
-    "body": "To install and use ccache, I did this\n\n```sh\nwget http://samba.org/ftp/ccache/ccache-2.4.tar.gz\ntar zxvf ccache-2.4.tar.gz\ncd ccache-2.4\n./configure\nmake\ncp ccache ~/bin\n```\n\nBecause I set\n\n```sh\nPATH=\".:$HOME/bin:$HOME/apps/sage/local/bin:$PATH\"\n```\n\nin `~/.profile`, I did\n\n```sh\ncd ~/bin\nln -s c++ ccache\nln -s cc ccache\nln -s g++ ccache\nln -s g++-3.4 ccache\nln -s g++-4.2 ccache\nln -s gcc ccache\nln -s gcc-3.4 ccache\nln -s gcc-4.1 ccache\nln -s gcc-4.2 ccache\nln -s x86_64-linux-gnu-g++ ccache\nln -s x86_64-linux-gnu-g++-3.4 ccache\nln -s x86_64-linux-gnu-g++-4.2 ccache\nln -s x86_64-linux-gnu-gcc ccache\nln -s x86_64-linux-gnu-gcc-3.4 ccache\nln -s x86_64-linux-gnu-gcc-4.1 ccache\nln -s x86_64-linux-gnu-gcc-4.2 ccache\nln -s x86_64-linux-gnu-gcj-4.2 ccache\nln -s x86_64-linux-gnu-gfortran ccache\nln -s x86_64-linux-gnu-gfortran-4.1 ccache\nln -s x86_64-linux-gnu-gfortran-4.2 ccache\n```\n\nThis may be overkill.  In `~/.bashrc`, I've put\n\n```sh\nexport CCACHE_DIR=/scratch/mpatel/.ccache\n```\n",
+    "body": "To install and use ccache, I did this\n\n```sh\nwget http://samba.org/ftp/ccache/ccache-2.4.tar.gz\ntar zxvf ccache-2.4.tar.gz\ncd ccache-2.4\n./configure\nmake\ncp ccache ~/bin\n```\nBecause I set\n\n```sh\nPATH=\".:$HOME/bin:$HOME/apps/sage/local/bin:$PATH\"\n```\nin `~/.profile`, I did\n\n```sh\ncd ~/bin\nln -s c++ ccache\nln -s cc ccache\nln -s g++ ccache\nln -s g++-3.4 ccache\nln -s g++-4.2 ccache\nln -s gcc ccache\nln -s gcc-3.4 ccache\nln -s gcc-4.1 ccache\nln -s gcc-4.2 ccache\nln -s x86_64-linux-gnu-g++ ccache\nln -s x86_64-linux-gnu-g++-3.4 ccache\nln -s x86_64-linux-gnu-g++-4.2 ccache\nln -s x86_64-linux-gnu-gcc ccache\nln -s x86_64-linux-gnu-gcc-3.4 ccache\nln -s x86_64-linux-gnu-gcc-4.1 ccache\nln -s x86_64-linux-gnu-gcc-4.2 ccache\nln -s x86_64-linux-gnu-gcj-4.2 ccache\nln -s x86_64-linux-gnu-gfortran ccache\nln -s x86_64-linux-gnu-gfortran-4.1 ccache\nln -s x86_64-linux-gnu-gfortran-4.2 ccache\n```\nThis may be overkill.  In `~/.bashrc`, I've put\n\n```sh\nexport CCACHE_DIR=/scratch/mpatel/.ccache\n```",
     "created_at": "2010-03-07T06:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -841,13 +839,11 @@ cd ccache-2.4
 make
 cp ccache ~/bin
 ```
-
 Because I set
 
 ```sh
 PATH=".:$HOME/bin:$HOME/apps/sage/local/bin:$PATH"
 ```
-
 in `~/.profile`, I did
 
 ```sh
@@ -873,13 +869,11 @@ ln -s x86_64-linux-gnu-gfortran ccache
 ln -s x86_64-linux-gnu-gfortran-4.1 ccache
 ln -s x86_64-linux-gnu-gfortran-4.2 ccache
 ```
-
 This may be overkill.  In `~/.bashrc`, I've put
 
 ```sh
 export CCACHE_DIR=/scratch/mpatel/.ccache
 ```
-
 
 
 
@@ -906,7 +900,7 @@ I also set a larger ccache size with `ccache -M 10G`.  To print statistics run `
 archive/issue_comments_073509.json:
 ```json
 {
-    "body": "The patch [trac_8306_scripts-spkg_log_files.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8306/trac_8306_scripts-spkg_log_files.patch) introduces the environment variable\n\n```\nSAGE_LOGS=\"$SAGE_ROOT/spkg/logs\"\n```\n\nfor storing build logs of spkg's. A closely related idea, but for MD5 integrity check files, can be found at #7617. What could be implemented is an environment variable like\n\n```\nSAGE_SPKG_MD5=\"$SAGE_ROOT/spkg/md5\"\n```\n\nAs of Sage 4.3.3, the SageTeX package is the only standard package that has an MD5 file bundled together with the package itself to result in an spkg. Whenever the SageTeX spkg is built, its MD5 file is extracted and lingers under \n\n```\nSAGE_ROOT/spkg/build\n```\n\nPerhaps a more appropriate place is to deposit MD5 files of spkg's under\n\n```\nSAGE_ROOT/spkg/md5\n```\n\nThis would nicely solve ticket #329 after more than 3 years.",
+    "body": "The patch [trac_8306_scripts-spkg_log_files.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8306/trac_8306_scripts-spkg_log_files.patch) introduces the environment variable\n\n```\nSAGE_LOGS=\"$SAGE_ROOT/spkg/logs\"\n```\nfor storing build logs of spkg's. A closely related idea, but for MD5 integrity check files, can be found at #7617. What could be implemented is an environment variable like\n\n```\nSAGE_SPKG_MD5=\"$SAGE_ROOT/spkg/md5\"\n```\nAs of Sage 4.3.3, the SageTeX package is the only standard package that has an MD5 file bundled together with the package itself to result in an spkg. Whenever the SageTeX spkg is built, its MD5 file is extracted and lingers under \n\n```\nSAGE_ROOT/spkg/build\n```\nPerhaps a more appropriate place is to deposit MD5 files of spkg's under\n\n```\nSAGE_ROOT/spkg/md5\n```\nThis would nicely solve ticket #329 after more than 3 years.",
     "created_at": "2010-03-07T06:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -920,25 +914,21 @@ The patch [trac_8306_scripts-spkg_log_files.patch](http://trac.sagemath.org/sage
 ```
 SAGE_LOGS="$SAGE_ROOT/spkg/logs"
 ```
-
 for storing build logs of spkg's. A closely related idea, but for MD5 integrity check files, can be found at #7617. What could be implemented is an environment variable like
 
 ```
 SAGE_SPKG_MD5="$SAGE_ROOT/spkg/md5"
 ```
-
 As of Sage 4.3.3, the SageTeX package is the only standard package that has an MD5 file bundled together with the package itself to result in an spkg. Whenever the SageTeX spkg is built, its MD5 file is extracted and lingers under 
 
 ```
 SAGE_ROOT/spkg/build
 ```
-
 Perhaps a more appropriate place is to deposit MD5 files of spkg's under
 
 ```
 SAGE_ROOT/spkg/md5
 ```
-
 This would nicely solve ticket #329 after more than 3 years.
 
 
@@ -966,7 +956,7 @@ We could do the integrity check and relocation (`mv -f foo.md5 "$SAGE_SPKG_MD5"`
 archive/issue_comments_073511.json:
 ```json
 {
-    "body": "Replying to [comment:32 mpatel]:\n>  * I don't know why the build didn't stop when eclib failed to build.  This seems strange.  The file `installed/eclib*` is missing and according to `deps`, it's required for the `sage` target.  Similarly, `installed/sage*` is a prerequisite for gap.  Does anyone know why this happens?  Can we modify `deps` to avoid it?\n\nThe problem is that the exit status `$?` of\n\n```sh\n$(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log\n```\n\nis the exit status of `tee`, but we need the exit status of `sage-spkg`.  (I found some other workarounds [here](http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html).)  We can get this with `$PIPESTATUS` in `bash`.  We could add a helper script somewhere that runs the pipeline and exits with the status of `sage-spkg`.\n\nOr we could use\n\n```sh\n$(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log | grep \"sage: An error occurred while\"\n```\n\nif we test the status of `grep`.  The `sage-spkg` script prints this error string when `spkg-install` or `spkg-check` fails.   We could also print the string in a few other places in `sage-spkg` (search for `exit 1`).\n\nThoughts?",
+    "body": "Replying to [comment:32 mpatel]:\n>  * I don't know why the build didn't stop when eclib failed to build.  This seems strange.  The file `installed/eclib*` is missing and according to `deps`, it's required for the `sage` target.  Similarly, `installed/sage*` is a prerequisite for gap.  Does anyone know why this happens?  Can we modify `deps` to avoid it?\n\n\nThe problem is that the exit status `$?` of\n\n```sh\n$(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log\n```\nis the exit status of `tee`, but we need the exit status of `sage-spkg`.  (I found some other workarounds [here](http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html).)  We can get this with `$PIPESTATUS` in `bash`.  We could add a helper script somewhere that runs the pipeline and exits with the status of `sage-spkg`.\n\nOr we could use\n\n```sh\n$(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log | grep \"sage: An error occurred while\"\n```\nif we test the status of `grep`.  The `sage-spkg` script prints this error string when `spkg-install` or `spkg-check` fails.   We could also print the string in a few other places in `sage-spkg` (search for `exit 1`).\n\nThoughts?",
     "created_at": "2010-03-07T14:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -978,12 +968,12 @@ archive/issue_comments_073511.json:
 Replying to [comment:32 mpatel]:
 >  * I don't know why the build didn't stop when eclib failed to build.  This seems strange.  The file `installed/eclib*` is missing and according to `deps`, it's required for the `sage` target.  Similarly, `installed/sage*` is a prerequisite for gap.  Does anyone know why this happens?  Can we modify `deps` to avoid it?
 
+
 The problem is that the exit status `$?` of
 
 ```sh
 $(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log
 ```
-
 is the exit status of `tee`, but we need the exit status of `sage-spkg`.  (I found some other workarounds [here](http://www.unix.com/shell-programming-scripting/92163-command-does-not-return-exit-status-due-tee.html).)  We can get this with `$PIPESTATUS` in `bash`.  We could add a helper script somewhere that runs the pipeline and exits with the status of `sage-spkg`.
 
 Or we could use
@@ -991,7 +981,6 @@ Or we could use
 ```sh
 $(SAGE_SPKG) $(FOO) 2>&1 | tee -a $(SAGE_LOGS)/$(FOO).log | grep "sage: An error occurred while"
 ```
-
 if we test the status of `grep`.  The `sage-spkg` script prints this error string when `spkg-install` or `spkg-check` fails.   We could also print the string in a few other places in `sage-spkg` (search for `exit 1`).
 
 Thoughts?
@@ -1021,7 +1010,7 @@ I have a helper script that I'm testing.  So far, it's working well, *if* I forc
 archive/issue_comments_073513.json:
 ```json
 {
-    "body": "Replying to [comment:35 mvngu]:\n\n> Perhaps a more appropriate place is to deposit MD5 files of spkg's under\n> {{{\n> SAGE_ROOT/spkg/md5\n> }}}\n> This would nicely solve ticket #329 after more than 3 years.\n\nSee my comment on #329. The problem with md5 is that there is no standard command for getting the md5 checksum. I've seen\n\n* md5\n* md5sum\n* digest -a md5 ('digest' is part of OpenSSL, and is what I use on Solaris)\n\nIt is not a standard POSIX command. In contrast, 'cksum' is much more portable, as it is defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cksum.html\n\nIt is a 32-bit bit number, so the probability of an error not being detected is around 2.3 x 10^-10.  \n\nAvoid using 'sum' - that is not portable, as the algorithm is implementation dependent. \n\nDave",
+    "body": "Replying to [comment:35 mvngu]:\n\n> Perhaps a more appropriate place is to deposit MD5 files of spkg's under\n> \n> ```\n> SAGE_ROOT/spkg/md5\n> ```\n> This would nicely solve ticket #329 after more than 3 years.\n\n\nSee my comment on #329. The problem with md5 is that there is no standard command for getting the md5 checksum. I've seen\n\n* md5\n* md5sum\n* digest -a md5 ('digest' is part of OpenSSL, and is what I use on Solaris)\n\nIt is not a standard POSIX command. In contrast, 'cksum' is much more portable, as it is defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cksum.html\n\nIt is a 32-bit bit number, so the probability of an error not being detected is around 2.3 x 10^-10.  \n\nAvoid using 'sum' - that is not portable, as the algorithm is implementation dependent. \n\nDave",
     "created_at": "2010-03-08T00:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1033,10 +1022,12 @@ archive/issue_comments_073513.json:
 Replying to [comment:35 mvngu]:
 
 > Perhaps a more appropriate place is to deposit MD5 files of spkg's under
-> {{{
+> 
+> ```
 > SAGE_ROOT/spkg/md5
-> }}}
+> ```
 > This would nicely solve ticket #329 after more than 3 years.
+
 
 See my comment on #329. The problem with md5 is that there is no standard command for getting the md5 checksum. I've seen
 
@@ -1141,7 +1132,7 @@ t2: Works with the [stand-in atlas package](http://sage.math.washington.edu/home
 archive/issue_comments_073518.json:
 ```json
 {
-    "body": "On my Blade 1000 (900 MHz), bought for the US equivalent of about $75, all those tests pass, in the times indicated below: \n\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\"\n         [933.6 s]\n\nsage -t  -long \"devel/sage/sage/modular/ssmod/ssmod.py\"     \n         [1737.7 s]\n\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n         [1590.4 s]\n```\n\n\nGiven my Blade 1000 is faster than 't2', and the default value for SAGE_TIMOUT_LONG is 1800s, it is no surprise these timeout. You will need to increase that variable. I think 10000 s should be safe (actually I rekon 4000 s will be, but I'd play it safe). \n\nI'm surprised the short ones passed if you used the default 300 s timeout. \n\nDave",
+    "body": "On my Blade 1000 (900 MHz), bought for the US equivalent of about $75, all those tests pass, in the times indicated below: \n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\"\n         [933.6 s]\n\nsage -t  -long \"devel/sage/sage/modular/ssmod/ssmod.py\"     \n         [1737.7 s]\n\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n         [1590.4 s]\n```\n\nGiven my Blade 1000 is faster than 't2', and the default value for SAGE_TIMOUT_LONG is 1800s, it is no surprise these timeout. You will need to increase that variable. I think 10000 s should be safe (actually I rekon 4000 s will be, but I'd play it safe). \n\nI'm surprised the short ones passed if you used the default 300 s timeout. \n\nDave",
     "created_at": "2010-03-11T05:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1151,7 +1142,6 @@ archive/issue_comments_073518.json:
 ```
 
 On my Blade 1000 (900 MHz), bought for the US equivalent of about $75, all those tests pass, in the times indicated below: 
-
 
 ```
 sage -t  -long "devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py"
@@ -1163,7 +1153,6 @@ sage -t  -long "devel/sage/sage/modular/ssmod/ssmod.py"
 sage -t  -long "devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py"
          [1590.4 s]
 ```
-
 
 Given my Blade 1000 is faster than 't2', and the default value for SAGE_TIMOUT_LONG is 1800s, it is no surprise these timeout. You will need to increase that variable. I think 10000 s should be safe (actually I rekon 4000 s will be, but I'd play it safe). 
 
@@ -1296,7 +1285,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073525.json:
 ```json
 {
-    "body": "Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by @jhpalmieri created at 2010-04-06 22:18:57\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\n\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
+    "body": "Attachment [trac_8306_scripts-pipestatus.patch](tarball://root/attachments/some-uuid/ticket8306/trac_8306_scripts-pipestatus.patch) by @jhpalmieri created at 2010-04-06 22:18:57\n\nRunning \"sage -sdist\" with these changes doesn't work because pipestatus doesn't get copied over.  The patch \"trac_8306_scripts-pipestatus.patch\" fixes this.\n\nI was able to successfully build this on sage.math, but I had problems on my mac (with two cores, using \"make -j2\").  I think it's with singular; I get lots of lines like\n\n```\nsage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory\n```\nIt seems to be building singular at the same time as the main Sage spkg; does that sound okay?",
     "created_at": "2010-04-06T22:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1314,7 +1303,6 @@ I was able to successfully build this on sage.math, but I had problems on my mac
 ```
 sage/libs/singular/singular.cpp:162:21: error: factory.h: No such file or directory
 ```
-
 It seems to be building singular at the same time as the main Sage spkg; does that sound okay?
 
 
@@ -1324,7 +1312,7 @@ It seems to be building singular at the same time as the main Sage spkg; does th
 archive/issue_comments_073526.json:
 ```json
 {
-    "body": "From spkg/logs/singular-3-1-0-4-20100214.log:\n\n```\nmake install in omalloc\ngcc -O3 -g -fPIC -I. -I/Applications/sage_builds/sage-4.3.5.1/local/include  -I/Applications/sage_builds/sage-4.3.5.1/local/include -DHAVE_CONFIG_H -DOM_GENERATE_INC omTables.c -o omTables\n./makeheader om_Alloc.h omalloc.h\nmakeheader: Include file omTables.h not found\nmake[4]: *** [omalloc.h] Error 1\nmake[3]: *** [install] Error 1\nmake[2]: *** [/Applications/sage_builds/sage-4.3.5.1/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n```\n",
+    "body": "From spkg/logs/singular-3-1-0-4-20100214.log:\n\n```\nmake install in omalloc\ngcc -O3 -g -fPIC -I. -I/Applications/sage_builds/sage-4.3.5.1/local/include  -I/Applications/sage_builds/sage-4.3.5.1/local/include -DHAVE_CONFIG_H -DOM_GENERATE_INC omTables.c -o omTables\n./makeheader om_Alloc.h omalloc.h\nmakeheader: Include file omTables.h not found\nmake[4]: *** [omalloc.h] Error 1\nmake[3]: *** [install] Error 1\nmake[2]: *** [/Applications/sage_builds/sage-4.3.5.1/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n```",
     "created_at": "2010-04-06T22:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1348,13 +1336,12 @@ Unable to build Singular.
 
 
 
-
 ---
 
 archive/issue_comments_073527.json:
 ```json
 {
-    "body": "Typo in deps: \n\n```\n$(SAGE_LOGS)/$(FLINGQS).log\n```\n\nshould say \n\n```\n$(SAGE_LOGS)/$(FLINTQS).log\n                   ^\n```\n",
+    "body": "Typo in deps: \n\n```\n$(SAGE_LOGS)/$(FLINGQS).log\n```\nshould say \n\n```\n$(SAGE_LOGS)/$(FLINTQS).log\n                   ^\n```",
     "created_at": "2010-04-07T04:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1368,14 +1355,12 @@ Typo in deps:
 ```
 $(SAGE_LOGS)/$(FLINGQS).log
 ```
-
 should say 
 
 ```
 $(SAGE_LOGS)/$(FLINTQS).log
                    ^
 ```
-
 
 
 
@@ -1411,7 +1396,7 @@ For both singular and ecl, I was able to build them by turning off parallel buil
 archive/issue_comments_073529.json:
 ```json
 {
-    "body": "From irc:\n\n```\n<_leif> we don't need \"pipestatus\" either\n<_leif> \"set -o pipefail;\"\n<_leif> that will set the exit status of a pipe to the last non-zero one\n```\n\nSome random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.",
+    "body": "From irc:\n\n```\n<_leif> we don't need \"pipestatus\" either\n<_leif> \"set -o pipefail;\"\n<_leif> that will set the exit status of a pipe to the last non-zero one\n```\nSome random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.",
     "created_at": "2010-04-10T23:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1427,7 +1412,6 @@ From irc:
 <_leif> "set -o pipefail;"
 <_leif> that will set the exit status of a pipe to the last non-zero one
 ```
-
 Some random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.
 
 
@@ -1437,7 +1421,7 @@ Some random web page says that this was introduced in version 3 of bash and does
 archive/issue_comments_073530.json:
 ```json
 {
-    "body": "Replying to [comment:53 jhpalmieri]:\n> Some random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.\n\nThe `bash` ChangeLog states it was introduced in version 3.0-alpha.\n\nTo avoid side effects, the setting should be done just for a/the subshell, i.e. replacing\n\n```\n    cmd1 | cmd2 | ... | cmdN | tee logfile\n```\n\nby\n\n```\n    (set -o pipefail; cmd1 | cmd2 | ... | cmdN | tee logfile)\n```\n\n\nSufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).",
+    "body": "Replying to [comment:53 jhpalmieri]:\n> Some random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.\n\n\nThe `bash` ChangeLog states it was introduced in version 3.0-alpha.\n\nTo avoid side effects, the setting should be done just for a/the subshell, i.e. replacing\n\n```\n    cmd1 | cmd2 | ... | cmdN | tee logfile\n```\nby\n\n```\n    (set -o pipefail; cmd1 | cmd2 | ... | cmdN | tee logfile)\n```\n\nSufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).",
     "created_at": "2010-04-11T00:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1449,6 +1433,7 @@ archive/issue_comments_073530.json:
 Replying to [comment:53 jhpalmieri]:
 > Some random web page says that this was introduced in version 3 of bash and doesn't work on the Mac, but it does work on my Mac running OS X 10.6.  I guess this may not work on OS X 10.4, as that seems to have included version 2.
 
+
 The `bash` ChangeLog states it was introduced in version 3.0-alpha.
 
 To avoid side effects, the setting should be done just for a/the subshell, i.e. replacing
@@ -1456,13 +1441,11 @@ To avoid side effects, the setting should be done just for a/the subshell, i.e. 
 ```
     cmd1 | cmd2 | ... | cmdN | tee logfile
 ```
-
 by
 
 ```
     (set -o pipefail; cmd1 | cmd2 | ... | cmdN | tee logfile)
 ```
-
 
 Sufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).
 
@@ -1473,7 +1456,7 @@ Sufficiently recent versions of bash should at least be *available* for all OSs 
 archive/issue_comments_073531.json:
 ```json
 {
-    "body": "Replying to [comment:54 leif]:\n> Sufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).\n\nRecent versions may be available, but we don't necessarily want to require people to install a newer version of bash just to use Sage.  So (if for example OS X 10.4 is officially supported by Sage) we would have to write a script that tests the version of bash (using `${BASH_VERSINFO[0]`}, I guess), and if less than 3, then do something else.\n\nOr since parallel building is an enhancement, I suppose we could make bash 3 a prerequisite for it.  We would have to write SAGE_ROOT/spkg/standard/deps in a way which works with all versions, though.",
+    "body": "Replying to [comment:54 leif]:\n> Sufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).\n\n\nRecent versions may be available, but we don't necessarily want to require people to install a newer version of bash just to use Sage.  So (if for example OS X 10.4 is officially supported by Sage) we would have to write a script that tests the version of bash (using `${BASH_VERSINFO[0]`}, I guess), and if less than 3, then do something else.\n\nOr since parallel building is an enhancement, I suppose we could make bash 3 a prerequisite for it.  We would have to write SAGE_ROOT/spkg/standard/deps in a way which works with all versions, though.",
     "created_at": "2010-04-11T01:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1484,6 +1467,7 @@ archive/issue_comments_073531.json:
 
 Replying to [comment:54 leif]:
 > Sufficiently recent versions of bash should at least be *available* for all OSs currently supported by Sage (including OS X).
+
 
 Recent versions may be available, but we don't necessarily want to require people to install a newer version of bash just to use Sage.  So (if for example OS X 10.4 is officially supported by Sage) we would have to write a script that tests the version of bash (using `${BASH_VERSINFO[0]`}, I guess), and if less than 3, then do something else.
 
@@ -1496,7 +1480,7 @@ Or since parallel building is an enhancement, I suppose we could make bash 3 a p
 archive/issue_comments_073532.json:
 ```json
 {
-    "body": "Replying to [comment:55 jhpalmieri]:\n> Or since parallel building is an enhancement, I suppose we could make bash 3 a prerequisite for it.  We would have to write SAGE_ROOT/spkg/standard/deps in a way which works with all versions, though.\n\nWell, `bash` 3.0 was released nearly six years ago (and there are pre-built binaries of it available), so I'd say it *should* be OK to make it a prerequisite - it's central and ubiquitous, and I'd call 2.x deprecated.\n\nBut that's only *my* opinion, though in general I'd prefer omitting as much GNUism as possible, trying to stay within POSIX scope (which for example the shell's `trap` mechanism is).\n\n[Sorry, maybe too off-topic.]",
+    "body": "Replying to [comment:55 jhpalmieri]:\n> Or since parallel building is an enhancement, I suppose we could make bash 3 a prerequisite for it.  We would have to write SAGE_ROOT/spkg/standard/deps in a way which works with all versions, though.\n\n\nWell, `bash` 3.0 was released nearly six years ago (and there are pre-built binaries of it available), so I'd say it *should* be OK to make it a prerequisite - it's central and ubiquitous, and I'd call 2.x deprecated.\n\nBut that's only *my* opinion, though in general I'd prefer omitting as much GNUism as possible, trying to stay within POSIX scope (which for example the shell's `trap` mechanism is).\n\n[Sorry, maybe too off-topic.]",
     "created_at": "2010-04-11T05:20:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1507,6 +1491,7 @@ archive/issue_comments_073532.json:
 
 Replying to [comment:55 jhpalmieri]:
 > Or since parallel building is an enhancement, I suppose we could make bash 3 a prerequisite for it.  We would have to write SAGE_ROOT/spkg/standard/deps in a way which works with all versions, though.
+
 
 Well, `bash` 3.0 was released nearly six years ago (and there are pre-built binaries of it available), so I'd say it *should* be OK to make it a prerequisite - it's central and ubiquitous, and I'd call 2.x deprecated.
 
@@ -1543,7 +1528,7 @@ but note the comment about "unspecified format". If it's possible to avoid that 
 archive/issue_comments_073534.json:
 ```json
 {
-    "body": "> note the comment about \"unspecified format\".\n\nI read that comment to be about \"set -o\" with no further options, not about \"set -o OPTION\". \"pipefail\" is documented here, by the way:\n\n http://www.gnu.org/software/bash/manual/bashref.html#The-Set-Builtin\n\nI don't see anything wrong with bashisms, as long as we have #!/usr/bin/env bash at the top of the file. In any case, I'm happy for *any* solution to the pipe situation here: in a command of the form ($1) | ($2), we want the exit code of ($1).\n\nI'm posting experimental versions of pipestatus and deps which test for the bash version and if at least 3, use pipefail.\n\nBy the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.",
+    "body": "> note the comment about \"unspecified format\".\n\n\nI read that comment to be about \"set -o\" with no further options, not about \"set -o OPTION\". \"pipefail\" is documented here, by the way:\n\n http://www.gnu.org/software/bash/manual/bashref.html#The-Set-Builtin\n\nI don't see anything wrong with bashisms, as long as we have #!/usr/bin/env bash at the top of the file. In any case, I'm happy for *any* solution to the pipe situation here: in a command of the form ($1) | ($2), we want the exit code of ($1).\n\nI'm posting experimental versions of pipestatus and deps which test for the bash version and if at least 3, use pipefail.\n\nBy the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.",
     "created_at": "2010-04-11T15:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1553,6 +1538,7 @@ archive/issue_comments_073534.json:
 ```
 
 > note the comment about "unspecified format".
+
 
 I read that comment to be about "set -o" with no further options, not about "set -o OPTION". "pipefail" is documented here, by the way:
 
@@ -1591,7 +1577,7 @@ version of pipestatus using pipefail
 archive/issue_comments_073536.json:
 ```json
 {
-    "body": "Replying to [comment:58 jhpalmieri]:\n> I'm posting experimental versions of pipestatus and deps which test for the bash version and if at least 3, use pipefail.\n\nIt appears that `deps-new` is based on a version of `deps` that predates the [latest] version at\n\n* http://sage.math.washington.edu/home/mpatel/trac/8306/\n\n(last modified on 8 March).  Is there a particular reason for this?  For example, it turns out that we shouldn't use `$(PLUS)`, which can sometimes force an unwanted parallel build within an spkg (i.e., it's better to leave the decision to `spkg-install`).  The 8 March version also fixes [comment:ticket:8306:29 this problem].  But this version still has the `FLINTQS` typo [comment:ticket:8306:51 mentioned above].\n\n> By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n\nI'll try to investigate soon.",
+    "body": "Replying to [comment:58 jhpalmieri]:\n> I'm posting experimental versions of pipestatus and deps which test for the bash version and if at least 3, use pipefail.\n\n\nIt appears that `deps-new` is based on a version of `deps` that predates the [latest] version at\n\n* http://sage.math.washington.edu/home/mpatel/trac/8306/\n\n(last modified on 8 March).  Is there a particular reason for this?  For example, it turns out that we shouldn't use `$(PLUS)`, which can sometimes force an unwanted parallel build within an spkg (i.e., it's better to leave the decision to `spkg-install`).  The 8 March version also fixes [comment:ticket:8306:29 this problem].  But this version still has the `FLINTQS` typo [comment:ticket:8306:51 mentioned above].\n\n> By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n\n\nI'll try to investigate soon.",
     "created_at": "2010-06-03T09:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1603,6 +1589,7 @@ archive/issue_comments_073536.json:
 Replying to [comment:58 jhpalmieri]:
 > I'm posting experimental versions of pipestatus and deps which test for the bash version and if at least 3, use pipefail.
 
+
 It appears that `deps-new` is based on a version of `deps` that predates the [latest] version at
 
 * http://sage.math.washington.edu/home/mpatel/trac/8306/
@@ -1610,6 +1597,7 @@ It appears that `deps-new` is based on a version of `deps` that predates the [la
 (last modified on 8 March).  Is there a particular reason for this?  For example, it turns out that we shouldn't use `$(PLUS)`, which can sometimes force an unwanted parallel build within an spkg (i.e., it's better to leave the decision to `spkg-install`).  The 8 March version also fixes [comment:ticket:8306:29 this problem].  But this version still has the `FLINTQS` typo [comment:ticket:8306:51 mentioned above].
 
 > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to "yes". Any help with that issue would be appreciated.
+
 
 I'll try to investigate soon.
 
@@ -1638,7 +1626,7 @@ Allow redirection of stderr and other file descriptors.  Add comp.os.unix FAQ re
 archive/issue_comments_073538.json:
 ```json
 {
-    "body": "Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by @qed777 created at 2010-06-08 09:04:43\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n> \n> I'll try to investigate soon.\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
+    "body": "Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestatus) by @qed777 created at 2010-06-08 09:04:43\n\nReplying to [comment:59 mpatel]:\n> > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to \"yes\". Any help with that issue would be appreciated.\n\n> \n> I'll try to investigate soon.\n\n\nI've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.",
     "created_at": "2010-06-08T09:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1651,8 +1639,10 @@ Attachment [pipestatus](tarball://root/attachments/some-uuid/ticket8306/pipestat
 
 Replying to [comment:59 mpatel]:
 > > By the way, I still can't get singular and ecl to compile on my iMac if SAGE_PARALLEL_SPKG_BUILD is set to "yes". Any help with that issue would be appreciated.
+
 > 
 > I'll try to investigate soon.
+
 
 I've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD="yes"`.
 
@@ -1663,7 +1653,7 @@ I've attached updated versions of `deps`, `install`, and `pipestatus` to accompa
 archive/issue_comments_073539.json:
 ```json
 {
-    "body": "Replying to [comment:60 mpatel]:\n> I've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.\n\nI also need the latest Maxima spkg at #8731.",
+    "body": "Replying to [comment:60 mpatel]:\n> I've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.\n\n\nI also need the latest Maxima spkg at #8731.",
     "created_at": "2010-06-09T03:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1674,6 +1664,7 @@ archive/issue_comments_073539.json:
 
 Replying to [comment:60 mpatel]:
 > I've attached updated versions of `deps`, `install`, and `pipestatus` to accompany the `makefile` and the two `trac_8306_scripts-*` patches.  With these and the forthcoming spkgs at #9185, #9186, and #9187, I can build 4.4.4.alpha0 with SAGE_PARALLEL_SPKG_BUILD="yes"`.
+
 
 I also need the latest Maxima spkg at #8731.
 
@@ -1738,7 +1729,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073543.json:
 ```json
 {
-    "body": "I'm testing this now: I've applied the patches, put the new spkg's in place, etc., and run \"sage -sdist ...\".  Then I unpacked the new tar file and tried building.  It failed on my mac: I needed to change the line (in \"deps\") from\n\n```\nINSTALL = pipestatus\n```\n\nto\n\n```\nINSTALL = $(SAGE_ROOT)/spkg/pipestatus\n```\n\nAfter making that change, it's building right now.  I'll report on the outcome when it's done.",
+    "body": "I'm testing this now: I've applied the patches, put the new spkg's in place, etc., and run \"sage -sdist ...\".  Then I unpacked the new tar file and tried building.  It failed on my mac: I needed to change the line (in \"deps\") from\n\n```\nINSTALL = pipestatus\n```\nto\n\n```\nINSTALL = $(SAGE_ROOT)/spkg/pipestatus\n```\nAfter making that change, it's building right now.  I'll report on the outcome when it's done.",
     "created_at": "2010-06-09T15:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1752,13 +1743,11 @@ I'm testing this now: I've applied the patches, put the new spkg's in place, etc
 ```
 INSTALL = pipestatus
 ```
-
 to
 
 ```
 INSTALL = $(SAGE_ROOT)/spkg/pipestatus
 ```
-
 After making that change, it's building right now.  I'll report on the outcome when it's done.
 
 
@@ -1864,7 +1853,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073549.json:
 ```json
 {
-    "body": "From R's `make check` on t2:\n\n```\nCollecting examples for package \u2018stats\u2019\n  Extracting from parsed Rd's ..............................\nRunning examples in package \u2018stats\u2019\nError: testing 'stats' failed\nExecution halted\nmake[5]: *** [test-Examples-Base] Error 1\n```\n\nSome detail from `src/tests/Examples/stats-Ex.Rout.fail`:\n\n```\n> contrasts(ffs) <- contr.sum(5, sparse=TRUE)[,1:2]; contrasts(ffs)\nError in .Diag(levels, sparse = sparse) : \n  contr*(.., sparse=TRUE) needs package \"Matrix\" correctly installed\nCalls: contr.sum -> .Diag\nExecution halted\n```\n\nAccording to [this log](http://sage.math.washington.edu/home/mpatel/trac/8306/r-2.10.1.p2.log), R's Matrix package isn't built/installed successfully on t2:\n\n```\nLoading required package: Matrix\nError in dyn.load(file, DLLpath = DLLpath, ...) : \n  unable to load shared library '/scratch/mpatel/sage-4.4.4.alpha0-j64-par-chk/spkg/build/r-2.10.1.p2/src/library/Matrix/libs/Matrix.so':\n  ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\nError : require(Matrix, save = FALSE) is not TRUE\n```\n\nAn alternative is to compare the output of `ls SAGE_LOCAL/lib/R/library` on non-#8306 sage.math and t2 builds.  I think we're also missing class, mgcv, nnet, rpart, spatial, and survival on t2.\n\nBut I think this is independent of this ticket --- see, e.g., `/rootpool2/local/kirkby/sage-4.4.3/install.log` on t2.",
+    "body": "From R's `make check` on t2:\n\n```\nCollecting examples for package \u2018stats\u2019\n  Extracting from parsed Rd's ..............................\nRunning examples in package \u2018stats\u2019\nError: testing 'stats' failed\nExecution halted\nmake[5]: *** [test-Examples-Base] Error 1\n```\nSome detail from `src/tests/Examples/stats-Ex.Rout.fail`:\n\n```\n> contrasts(ffs) <- contr.sum(5, sparse=TRUE)[,1:2]; contrasts(ffs)\nError in .Diag(levels, sparse = sparse) : \n  contr*(.., sparse=TRUE) needs package \"Matrix\" correctly installed\nCalls: contr.sum -> .Diag\nExecution halted\n```\nAccording to [this log](http://sage.math.washington.edu/home/mpatel/trac/8306/r-2.10.1.p2.log), R's Matrix package isn't built/installed successfully on t2:\n\n```\nLoading required package: Matrix\nError in dyn.load(file, DLLpath = DLLpath, ...) : \n  unable to load shared library '/scratch/mpatel/sage-4.4.4.alpha0-j64-par-chk/spkg/build/r-2.10.1.p2/src/library/Matrix/libs/Matrix.so':\n  ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\nError : require(Matrix, save = FALSE) is not TRUE\n```\nAn alternative is to compare the output of `ls SAGE_LOCAL/lib/R/library` on non-#8306 sage.math and t2 builds.  I think we're also missing class, mgcv, nnet, rpart, spatial, and survival on t2.\n\nBut I think this is independent of this ticket --- see, e.g., `/rootpool2/local/kirkby/sage-4.4.3/install.log` on t2.",
     "created_at": "2010-06-10T00:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1883,7 +1872,6 @@ Error: testing 'stats' failed
 Execution halted
 make[5]: *** [test-Examples-Base] Error 1
 ```
-
 Some detail from `src/tests/Examples/stats-Ex.Rout.fail`:
 
 ```
@@ -1893,7 +1881,6 @@ Error in .Diag(levels, sparse = sparse) :
 Calls: contr.sum -> .Diag
 Execution halted
 ```
-
 According to [this log](http://sage.math.washington.edu/home/mpatel/trac/8306/r-2.10.1.p2.log), R's Matrix package isn't built/installed successfully on t2:
 
 ```
@@ -1903,7 +1890,6 @@ Error in dyn.load(file, DLLpath = DLLpath, ...) :
   ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory
 Error : require(Matrix, save = FALSE) is not TRUE
 ```
-
 An alternative is to compare the output of `ls SAGE_LOCAL/lib/R/library` on non-#8306 sage.math and t2 builds.  I think we're also missing class, mgcv, nnet, rpart, spatial, and survival on t2.
 
 But I think this is independent of this ticket --- see, e.g., `/rootpool2/local/kirkby/sage-4.4.3/install.log` on t2.
@@ -1953,7 +1939,7 @@ Depends on #8731, #9185, #9186, and #9187.
 archive/issue_comments_073552.json:
 ```json
 {
-    "body": "Replying to [comment:68 jhpalmieri]:\n> I agree that the R issue can go on another ticket.\nI've opened #9201 for this problem.",
+    "body": "Replying to [comment:68 jhpalmieri]:\n> I agree that the R issue can go on another ticket.\n\nI've opened #9201 for this problem.",
     "created_at": "2010-06-10T07:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -1964,6 +1950,7 @@ archive/issue_comments_073552.json:
 
 Replying to [comment:68 jhpalmieri]:
 > I agree that the R issue can go on another ticket.
+
 I've opened #9201 for this problem.
 
 
@@ -2049,7 +2036,7 @@ Dependencies: #8645, #9185, #9186, #9264.
 archive/issue_comments_073557.json:
 ```json
 {
-    "body": "For what it's worth, I think that your \"diff\" files for deps and install are backwards, showing the diffs from the new version to the old, rather than from the old to the new.\n\nThe deps file is a bit off: first, under the target \"all\", `$(INST)/$(SAGENB)` is listed, but it's not in the \"real\" version of deps.  I think this is good, and I think it's a bug in the version of deps distributed with Sage.  Other targets are missing from \"all\", though:\n\n```\n  $(INST)/$(JINJA)\n  $(INST)/$(JINJA2)\n  $(INST)/$(PYGMENTS)\n  $(INST)/$(SPHINX)\n  $(INST)/$(SQLALCHEMY)\n  $(INST)/$(TWISTED)\n  $(INST)/$(TWISTEDWEB2)\n```\n  \nAlso, the following lines are missing:\n\n```\n$(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)\n\t$(INSTALL) \"$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1\" \"tee -a $(SAGE_LOGS)/$(TWISTEDWEB2).log\"\n```\n\nI'm attaching \"deps-new\" and \"deps-new.diff\" to fix this.",
+    "body": "For what it's worth, I think that your \"diff\" files for deps and install are backwards, showing the diffs from the new version to the old, rather than from the old to the new.\n\nThe deps file is a bit off: first, under the target \"all\", `$(INST)/$(SAGENB)` is listed, but it's not in the \"real\" version of deps.  I think this is good, and I think it's a bug in the version of deps distributed with Sage.  Other targets are missing from \"all\", though:\n\n```\n  $(INST)/$(JINJA)\n  $(INST)/$(JINJA2)\n  $(INST)/$(PYGMENTS)\n  $(INST)/$(SPHINX)\n  $(INST)/$(SQLALCHEMY)\n  $(INST)/$(TWISTED)\n  $(INST)/$(TWISTEDWEB2)\n```  \nAlso, the following lines are missing:\n\n```\n$(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)\n\t$(INSTALL) \"$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1\" \"tee -a $(SAGE_LOGS)/$(TWISTEDWEB2).log\"\n```\nI'm attaching \"deps-new\" and \"deps-new.diff\" to fix this.",
     "created_at": "2010-06-24T20:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2070,15 +2057,13 @@ The deps file is a bit off: first, under the target "all", `$(INST)/$(SAGENB)` i
   $(INST)/$(SQLALCHEMY)
   $(INST)/$(TWISTED)
   $(INST)/$(TWISTEDWEB2)
-```
-  
+```  
 Also, the following lines are missing:
 
 ```
 $(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)
 	$(INSTALL) "$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1" "tee -a $(SAGE_LOGS)/$(TWISTEDWEB2).log"
 ```
-
 I'm attaching "deps-new" and "deps-new.diff" to fix this.
 
 
@@ -2088,7 +2073,7 @@ I'm attaching "deps-new" and "deps-new.diff" to fix this.
 archive/issue_comments_073558.json:
 ```json
 {
-    "body": "Okay, now I'm confused.\n\n```\n  $(INST)/$(TWISTEDWEB2)\n```\n\nWhat is this package?  It's included in the target \"all\", and the current version of deps has lines\n\n```\n$(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)\n\t$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1\n```\n\nbut it doesn't look like there's an actual package there.  For instance, there are **no** lines like this in install:\n\n```\nTWISTEDWEB2 =`$newest twistedweb2`\nexport TWISTEDWEB2\n```\n",
+    "body": "Okay, now I'm confused.\n\n```\n  $(INST)/$(TWISTEDWEB2)\n```\nWhat is this package?  It's included in the target \"all\", and the current version of deps has lines\n\n```\n$(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)\n\t$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1\n```\nbut it doesn't look like there's an actual package there.  For instance, there are **no** lines like this in install:\n\n```\nTWISTEDWEB2 =`$newest twistedweb2`\nexport TWISTEDWEB2\n```",
     "created_at": "2010-06-24T23:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2102,21 +2087,18 @@ Okay, now I'm confused.
 ```
   $(INST)/$(TWISTEDWEB2)
 ```
-
 What is this package?  It's included in the target "all", and the current version of deps has lines
 
 ```
 $(INST)/$(TWISTEDWEB2): $(INST)/$(TWISTED)
 	$(SAGE_SPKG) $(TWISTEDWEB2) 2>&1
 ```
-
 but it doesn't look like there's an actual package there.  For instance, there are **no** lines like this in install:
 
 ```
 TWISTEDWEB2 =`$newest twistedweb2`
 export TWISTEDWEB2
 ```
-
 
 
 
@@ -2291,7 +2273,7 @@ Diff of `spkg/install` vs 4.4.4.
 archive/issue_comments_073567.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by @qed777 created at 2010-06-26 08:04:42\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/install.diff) by @qed777 created at 2010-06-26 08:04:42\n\nReplying to [comment:75 jhpalmieri]:\n> I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)\n\n\nI mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).\n\nMaybe we should add the missing targets (Sphinx, etc.) at #9274?  It does seem better to be explicit about the dependencies.",
     "created_at": "2010-06-26T08:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8306",
     "type": "issue_comment",
@@ -2304,6 +2286,7 @@ Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8306/instal
 
 Replying to [comment:75 jhpalmieri]:
 > I think twistedweb2 used to be a package but is no longer.  I can't find the relevant ticket, but I'm going to remove references to it from deps.  (See also a comment at #9274.)
+
 
 I mentioned twistedweb2 in an [older version of the description](http://trac.sagemath.org/sage_trac/ticket/8306?action=diff&version=70&old_version=3).
 

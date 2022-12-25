@@ -3,7 +3,7 @@
 archive/issues_008191.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @mwhansen @williamstein\n\nKeywords: iconv solaris cygwin\n\nThe latest version of R in Sage 2.10.1, needs a powerful version of iconv. The version of iconv in Solaris is not sufficiently powerful.  This is documented in the 'R Installation and Administration' manual under the *Solaris* section.\n\nhttp://cran.r-project.org/doc/manuals/R-admin.pdf\n\n\n#3381 added a command line option to the configure script to disable the use of iconv. \n\nFor a long time R has been reporting messages that this option would be removed, and it would be necessary to install iconv. Well that time has come.\n\n\n```\nchecking for cblas_cdotu_sub in vecLib framework... no\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... yes\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... no\nconfigure: error: a suitable iconv is essential\nError configuring R.\n\nreal    2m15.532s\nuser    0m47.020s\nsys    1m9.582s\nsage: An error occurred while installing r-2.10.1\n```\n\n\nSo we must have an inconv package. I will create one. \n\nIt looks as though this will be needed on Cygwin also - see #7319. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8191\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @mwhansen @williamstein\n\nKeywords: iconv solaris cygwin\n\nThe latest version of R in Sage 2.10.1, needs a powerful version of iconv. The version of iconv in Solaris is not sufficiently powerful.  This is documented in the 'R Installation and Administration' manual under the *Solaris* section.\n\nhttp://cran.r-project.org/doc/manuals/R-admin.pdf\n\n\n#3381 added a command line option to the configure script to disable the use of iconv. \n\nFor a long time R has been reporting messages that this option would be removed, and it would be necessary to install iconv. Well that time has come.\n\n```\nchecking for cblas_cdotu_sub in vecLib framework... no\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... yes\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... no\nconfigure: error: a suitable iconv is essential\nError configuring R.\n\nreal    2m15.532s\nuser    0m47.020s\nsys    1m9.582s\nsage: An error occurred while installing r-2.10.1\n```\n\nSo we must have an inconv package. I will create one. \n\nIt looks as though this will be needed on Cygwin also - see #7319. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8191\n\n",
     "created_at": "2010-02-05T10:32:33Z",
     "labels": [
         "component: solaris",
@@ -31,7 +31,6 @@ http://cran.r-project.org/doc/manuals/R-admin.pdf
 
 For a long time R has been reporting messages that this option would be removed, and it would be necessary to install iconv. Well that time has come.
 
-
 ```
 checking for cblas_cdotu_sub in vecLib framework... no
 checking iconv.h usability... yes
@@ -47,7 +46,6 @@ user    0m47.020s
 sys    1m9.582s
 sage: An error occurred while installing r-2.10.1
 ```
-
 
 So we must have an inconv package. I will create one. 
 
@@ -140,7 +138,7 @@ Changing status from new to needs_info.
 archive/issue_comments_072071.json:
 ```json
 {
-    "body": "I believe the iconv package is now ready for review. \n\n* spkg-check has been added. \n* The Mercurial repository has been added. \n* As shown below, iconv is tested by R and found to be suitable. \n\n\n```\nDisabling libiconv support on Solaris\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... in libiconv\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... yes\nchecking for iconvlist... yes\nchecking for iconv... yes\n```\n\n\nThe message \n\n\n```\nDisabling libiconv support on Solaris\n```\n\nis from R's spkg-install, so needs to be removed. That is ticket #8272\n\nIt should be noted that.  \n* The test failure seen on Solaris 10 (SPARC) but not on OS X, Linux or OpenSolaris has a trac item for it. #8271\n* The failure of iconv's 'make check' to actually exit with a non-zero exit code when it encounters a failure has a trac ticket for it #8270.",
+    "body": "I believe the iconv package is now ready for review. \n\n* spkg-check has been added. \n* The Mercurial repository has been added. \n* As shown below, iconv is tested by R and found to be suitable. \n\n```\nDisabling libiconv support on Solaris\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... in libiconv\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... yes\nchecking for iconvlist... yes\nchecking for iconv... yes\n```\n\nThe message \n\n```\nDisabling libiconv support on Solaris\n```\nis from R's spkg-install, so needs to be removed. That is ticket #8272\n\nIt should be noted that.  \n* The test failure seen on Solaris 10 (SPARC) but not on OS X, Linux or OpenSolaris has a trac item for it. #8271\n* The failure of iconv's 'make check' to actually exit with a non-zero exit code when it encounters a failure has a trac ticket for it #8270.",
     "created_at": "2010-02-15T11:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -155,7 +153,6 @@ I believe the iconv package is now ready for review.
 * The Mercurial repository has been added. 
 * As shown below, iconv is tested by R and found to be suitable. 
 
-
 ```
 Disabling libiconv support on Solaris
 checking iconv.h usability... yes
@@ -167,14 +164,11 @@ checking for iconvlist... yes
 checking for iconv... yes
 ```
 
-
 The message 
-
 
 ```
 Disabling libiconv support on Solaris
 ```
-
 is from R's spkg-install, so needs to be removed. That is ticket #8272
 
 It should be noted that.  
@@ -338,7 +332,7 @@ Diff file for $SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_072080.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8191/deps.diff) by drkirkby created at 2010-02-15 11:59:02\n\nI've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  \n\n\n```\n$SAGE_ROOT/spkg/standard/deps \n$SAGE_ROOT/spkg/install \n```\n\n\nI've made gdmodule, Python and R all depend on iconv, as all of them check for iconv. \n\n**This is now ready for review!!!**\n\nDave",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8191/deps.diff) by drkirkby created at 2010-02-15 11:59:02\n\nI've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  \n\n```\n$SAGE_ROOT/spkg/standard/deps \n$SAGE_ROOT/spkg/install \n```\n\nI've made gdmodule, Python and R all depend on iconv, as all of them check for iconv. \n\n**This is now ready for review!!!**\n\nDave",
     "created_at": "2010-02-15T11:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -351,12 +345,10 @@ Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8191/deps.diff
 
 I've attached the following two files, in addition to diffs to their originals. Neither file appear to be are under revision control, so I assume these two files will have to be manually integrated.  
 
-
 ```
 $SAGE_ROOT/spkg/standard/deps 
 $SAGE_ROOT/spkg/install 
 ```
-
 
 I've made gdmodule, Python and R all depend on iconv, as all of them check for iconv. 
 
@@ -532,7 +524,7 @@ Dave
 archive/issue_comments_072089.json:
 ```json
 {
-    "body": "Replying to [comment:11 drkirkby]:\n> Yes, well spotted. You were right to add it to #8036. \n\nOops, you were right to add it to #8306 was what I meant to write.",
+    "body": "Replying to [comment:11 drkirkby]:\n> Yes, well spotted. You were right to add it to #8036. \n\n\nOops, you were right to add it to #8306 was what I meant to write.",
     "created_at": "2010-02-27T14:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -543,6 +535,7 @@ archive/issue_comments_072089.json:
 
 Replying to [comment:11 drkirkby]:
 > Yes, well spotted. You were right to add it to #8036. 
+
 
 Oops, you were right to add it to #8306 was what I meant to write.
 
@@ -589,7 +582,7 @@ apply to script repository; depends on #8307
 archive/issue_comments_072092.json:
 ```json
 {
-    "body": "Attachment [trac_8191-reviewer.patch](tarball://root/attachments/some-uuid/ticket8191/trac_8191-reviewer.patch) by mvngu created at 2010-03-02 19:27:57\n\nThe iconv spkg installs a binary called \"iconv\" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:\n\n```\n[mvngu@sage bin]$ hg st\n? iconv\n```\n\nThe file `.hgignore` needs to be configured to ignore this file. I have attached [trac_8191-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8191/trac_8191-reviewer.patch) which does this. Apply that patch to the script repository. It depends on the patch at #8307. Only my patch needs review by anyone but me.",
+    "body": "Attachment [trac_8191-reviewer.patch](tarball://root/attachments/some-uuid/ticket8191/trac_8191-reviewer.patch) by mvngu created at 2010-03-02 19:27:57\n\nThe iconv spkg installs a binary called \"iconv\" to `SAGE_LOCAL/bin`, a directory which is under revision control. Usually, we don't put executable binaries under revision control. After installing the iconv spkg, I get this:\n\n```\n[mvngu@sage bin]$ hg st\n? iconv\n```\nThe file `.hgignore` needs to be configured to ignore this file. I have attached [trac_8191-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8191/trac_8191-reviewer.patch) which does this. Apply that patch to the script repository. It depends on the patch at #8307. Only my patch needs review by anyone but me.",
     "created_at": "2010-03-02T19:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -606,7 +599,6 @@ The iconv spkg installs a binary called "iconv" to `SAGE_LOCAL/bin`, a directory
 [mvngu@sage bin]$ hg st
 ? iconv
 ```
-
 The file `.hgignore` needs to be configured to ignore this file. I have attached [trac_8191-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8191/trac_8191-reviewer.patch) which does this. Apply that patch to the script repository. It depends on the patch at #8307. Only my patch needs review by anyone but me.
 
 
@@ -745,7 +737,7 @@ Merged in this order:
 archive/issue_comments_072099.json:
 ```json
 {
-    "body": "Replying to [comment:11 drkirkby]:\n> In practice however it will make no difference on Linux, Solaris or OS X as they all come with a version of iconv suitable for gd.\n\nSage 4.3.4.alpha0 fails to build on a Fedora Linux system because iconv is not yet part of the dependency rule for building gd. This issue is now tracked at #8432.",
+    "body": "Replying to [comment:11 drkirkby]:\n> In practice however it will make no difference on Linux, Solaris or OS X as they all come with a version of iconv suitable for gd.\n\n\nSage 4.3.4.alpha0 fails to build on a Fedora Linux system because iconv is not yet part of the dependency rule for building gd. This issue is now tracked at #8432.",
     "created_at": "2010-03-04T03:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8191",
     "type": "issue_comment",
@@ -756,5 +748,6 @@ archive/issue_comments_072099.json:
 
 Replying to [comment:11 drkirkby]:
 > In practice however it will make no difference on Linux, Solaris or OS X as they all come with a version of iconv suitable for gd.
+
 
 Sage 4.3.4.alpha0 fails to build on a Fedora Linux system because iconv is not yet part of the dependency rule for building gd. This issue is now tracked at #8432.

@@ -3,7 +3,7 @@
 archive/issues_000037.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: 0x5\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     ZZ(0)x5\n           ^\nSyntaxError: invalid syntax\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/37\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: 0x5\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     ZZ(0)x5\n           ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/37\n\n",
     "created_at": "2006-09-12T23:30:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_000037.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: 0x5
 ------------------------------------------------------------
@@ -27,7 +26,6 @@ sage: 0x5
            ^
 SyntaxError: invalid syntax
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/37
@@ -116,7 +114,7 @@ archive/issue_events_000082.json:
 archive/issue_comments_000236.json:
 ```json
 {
-    "body": "The behaviour has changes (this is 2.10.2):\n\n```\nsage: 0x10\n16\n\nsage: 0xA\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(0x)A\n                ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: 0xa\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(0x)a\n                ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n",
+    "body": "The behaviour has changes (this is 2.10.2):\n\n```\nsage: 0x10\n16\n\nsage: 0xA\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(0x)A\n                ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: 0xa\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(0x)a\n                ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```",
     "created_at": "2008-02-27T00:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
@@ -145,7 +143,6 @@ sage: 0xa
                 ^
 <type 'exceptions.SyntaxError'>: invalid syntax
 ```
-
 
 
 

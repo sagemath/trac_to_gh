@@ -3,7 +3,7 @@
 archive/issues_004961.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nLook at\n\n```\ncdef int allocate_c_vector_modint(c_vector_modint* v, Py_ssize_t num_nonzero) except -1:\n    \"\"\"\n    Allocate memory for a c_vector_modint -- most user code won't call this.\n    \"\"\"\n    v.entries = <int*>sage_malloc(num_nonzero*sizeof(int))\n    if v.entries == NULL:\n        raise MemoryError, \"Error allocating memory\"\n    v.positions = <Py_ssize_t*>sage_malloc(num_nonzero*sizeof(Py_ssize_t))\n    if v.positions == NULL:\n        raise MemoryError, \"Error allocating memory\"\n    return 0\n```\n\n\nWhen the allocation for positions fails we will leak entries.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4961\n\n",
+    "body": "Assignee: @craigcitro\n\nLook at\n\n```\ncdef int allocate_c_vector_modint(c_vector_modint* v, Py_ssize_t num_nonzero) except -1:\n    \"\"\"\n    Allocate memory for a c_vector_modint -- most user code won't call this.\n    \"\"\"\n    v.entries = <int*>sage_malloc(num_nonzero*sizeof(int))\n    if v.entries == NULL:\n        raise MemoryError, \"Error allocating memory\"\n    v.positions = <Py_ssize_t*>sage_malloc(num_nonzero*sizeof(Py_ssize_t))\n    if v.positions == NULL:\n        raise MemoryError, \"Error allocating memory\"\n    return 0\n```\n\nWhen the allocation for positions fails we will leak entries.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4961\n\n",
     "created_at": "2009-01-10T09:55:59Z",
     "labels": [
         "component: memleak",
@@ -33,7 +33,6 @@ cdef int allocate_c_vector_modint(c_vector_modint* v, Py_ssize_t num_nonzero) ex
         raise MemoryError, "Error allocating memory"
     return 0
 ```
-
 
 When the allocation for positions fails we will leak entries.
 

@@ -206,7 +206,7 @@ Changing assignee from failure to @garyfurnish.
 archive/issue_comments_004165.json:
 ```json
 {
-    "body": "Patch looks with one tiny exception:\n\n```\n[10:25pm] mab|ds9: one suggestions: raise the sleep period to 1 second: time.sleep(.1)\n[10:25pm] gfurnish: feel free to make the modification\n[10:25pm] mab|ds9: I think we can live with that.\n[10:25pm] mab|ds9: mk\n```\n\nI will move item (2) to its own ticket since it is not addressed here.\n\nCheers,\n\nMichael",
+    "body": "Patch looks with one tiny exception:\n\n```\n[10:25pm] mab|ds9: one suggestions: raise the sleep period to 1 second: time.sleep(.1)\n[10:25pm] gfurnish: feel free to make the modification\n[10:25pm] mab|ds9: I think we can live with that.\n[10:25pm] mab|ds9: mk\n```\nI will move item (2) to its own ticket since it is not addressed here.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-05T06:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/717",
     "type": "issue_comment",
@@ -223,7 +223,6 @@ Patch looks with one tiny exception:
 [10:25pm] mab|ds9: I think we can live with that.
 [10:25pm] mab|ds9: mk
 ```
-
 I will move item (2) to its own ticket since it is not addressed here.
 
 Cheers,

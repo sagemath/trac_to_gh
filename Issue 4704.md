@@ -145,7 +145,7 @@ Yep, I agree.  CCing boothby.
 archive/issue_comments_035372.json:
 ```json
 {
-    "body": "I'm not sure I see the point of this.  I'm inclined to say, \"If it ain't broke, don't fix it.\"  One might accuse me of being biased... but I really don't think I am here -- I'd be happy to see my code go if it made the rest of the notebook code significantly better.\n\nThere's one benefit that I see: \n\n```\n'newcell=0' + '&id=' + id + '&input='+escape0('%__sage_interact__\\n' + input))\n```\n\n\nbecomes\n\n\n```\n{newcell: 0, id: id, input: '%__sage_interact__\\n' + input}\n```\n\n\nand this is more readable (I'm hoping that the escape0 functionality is preserved).  I'd like to see what was, bradshaw, and tclemans say about this.  I'll test after finals are over.",
+    "body": "I'm not sure I see the point of this.  I'm inclined to say, \"If it ain't broke, don't fix it.\"  One might accuse me of being biased... but I really don't think I am here -- I'd be happy to see my code go if it made the rest of the notebook code significantly better.\n\nThere's one benefit that I see: \n\n```\n'newcell=0' + '&id=' + id + '&input='+escape0('%__sage_interact__\\n' + input))\n```\n\nbecomes\n\n```\n{newcell: 0, id: id, input: '%__sage_interact__\\n' + input}\n```\n\nand this is more readable (I'm hoping that the escape0 functionality is preserved).  I'd like to see what was, bradshaw, and tclemans say about this.  I'll test after finals are over.",
     "created_at": "2008-12-07T06:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
@@ -162,14 +162,11 @@ There's one benefit that I see:
 'newcell=0' + '&id=' + id + '&input='+escape0('%__sage_interact__\n' + input))
 ```
 
-
 becomes
-
 
 ```
 {newcell: 0, id: id, input: '%__sage_interact__\n' + input}
 ```
-
 
 and this is more readable (I'm hoping that the escape0 functionality is preserved).  I'd like to see what was, bradshaw, and tclemans say about this.  I'll test after finals are over.
 
@@ -415,7 +412,7 @@ When did I comment that Tom gave his thumbs up?  I don't remember that.
 archive/issue_comments_035384.json:
 ```json
 {
-    "body": "Replying to [comment:17 jason]:\n> When did I comment that Tom gave his thumbs up?  I don't remember that.\n\nIt come up in IRC, but I am no longer 100% sure it was you who told me or of it was Tom directly. Either way, the code is in and while it might have slipped in somewhat below standards SD 12 will see some pounding of the new code, so things should turn out ok :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:17 jason]:\n> When did I comment that Tom gave his thumbs up?  I don't remember that.\n\n\nIt come up in IRC, but I am no longer 100% sure it was you who told me or of it was Tom directly. Either way, the code is in and while it might have slipped in somewhat below standards SD 12 will see some pounding of the new code, so things should turn out ok :)\n\nCheers,\n\nMichael",
     "created_at": "2009-01-19T14:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
@@ -426,6 +423,7 @@ archive/issue_comments_035384.json:
 
 Replying to [comment:17 jason]:
 > When did I comment that Tom gave his thumbs up?  I don't remember that.
+
 
 It come up in IRC, but I am no longer 100% sure it was you who told me or of it was Tom directly. Either way, the code is in and while it might have slipped in somewhat below standards SD 12 will see some pounding of the new code, so things should turn out ok :)
 

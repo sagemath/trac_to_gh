@@ -70,7 +70,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082145.json:
 ```json
 {
-    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket8935/README.txt) by mvngu created at 2010-05-09 00:51:17\n\nHere's a diff between the README.txt in Sage 4.4.1 and the updated README.txt on this ticket:\n\n```diff\n[mvngu@sage sage-4.4.1-8917-magmas]$ diff -Naur README.txt.old README.txt.new \n--- README.txt.old\t2010-05-08 17:40:09.761167033 -0700\n+++ README.txt.new\t2010-05-08 17:44:01.730958793 -0700\n@@ -95,14 +95,13 @@\n   x86_64           64-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                    Fedora, openSUSE, Mandriva, Arch\n   IA-64 Itanium 2  64-bit Linux -- Red Hat, SUSE\n-  x86              Apple Mac OS X 10.5.x, 10.6.x\n-  PPC              Apple Mac OS X 10.5.x, 10.6.x\n+  x86              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n+  PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n   Sparc            Solaris 10\n \n Use Sage on Microsoft Windows via VMware.  Active work to port Sage to\n Cygwin (Windows) is in progress.\n \n-NOTE: Sage-4.4 worked on OS X 10.4, but Sage-4.4.1 doesn't. \n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS\n ------------------------------------------\n```\n",
+    "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket8935/README.txt) by mvngu created at 2010-05-09 00:51:17\n\nHere's a diff between the README.txt in Sage 4.4.1 and the updated README.txt on this ticket:\n\n```diff\n[mvngu@sage sage-4.4.1-8917-magmas]$ diff -Naur README.txt.old README.txt.new \n--- README.txt.old\t2010-05-08 17:40:09.761167033 -0700\n+++ README.txt.new\t2010-05-08 17:44:01.730958793 -0700\n@@ -95,14 +95,13 @@\n   x86_64           64-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                    Fedora, openSUSE, Mandriva, Arch\n   IA-64 Itanium 2  64-bit Linux -- Red Hat, SUSE\n-  x86              Apple Mac OS X 10.5.x, 10.6.x\n-  PPC              Apple Mac OS X 10.5.x, 10.6.x\n+  x86              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n+  PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n   Sparc            Solaris 10\n \n Use Sage on Microsoft Windows via VMware.  Active work to port Sage to\n Cygwin (Windows) is in progress.\n \n-NOTE: Sage-4.4 worked on OS X 10.4, but Sage-4.4.1 doesn't. \n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS\n ------------------------------------------\n```",
     "created_at": "2010-05-09T00:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8935",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ Here's a diff between the README.txt in Sage 4.4.1 and the updated README.txt on
  NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS
  ------------------------------------------
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009318.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis should work:\n\n\n```python\nsage: o = range(8) + range(8)\nsage: shuffle(o)\nsage: S = mq.SBox(o)\nsage: S.is_permutation()\nFalse\n\nsage: len(S.cnf()) == 3*2^4\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9318\n\n",
+    "body": "Assignee: @aghitza\n\nThis should work:\n\n```python\nsage: o = range(8) + range(8)\nsage: shuffle(o)\nsage: S = mq.SBox(o)\nsage: S.is_permutation()\nFalse\n\nsage: len(S.cnf()) == 3*2^4\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9318\n\n",
     "created_at": "2010-06-23T15:41:09Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 This should work:
 
-
 ```python
 sage: o = range(8) + range(8)
 sage: shuffle(o)
@@ -31,7 +30,6 @@ False
 sage: len(S.cnf()) == 3*2^4
 True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9318

@@ -3,7 +3,7 @@
 archive/issues_009917.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nThe attached patch implements triangulations of point configurations in arbitrary dimensions in Sage/Cython/C++ without relying on TOPCOM. \n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points. The \ntriangulations of this point configuration are assumed to \nbe connected, not necessarily fine, not necessarily regular.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\n(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>)\nsage: triang[0]\n(0, 1, 2)\nsage: list( points.triangulations() )\n[(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>), \n (<0,1,3>, <0,1,4>, <0,2,3>, <0,2,4>), \n (<1,2,3>, <1,2,4>), \n (<1,3,4>, <2,3,4>)]\nsage: triang.plot(axes=False)                                        \n```\n\nThe internal implementation covers finding a single triangulation as well as enumerating all triangulations connected to it by bistellar flips. TOPCOM is required to test for regularity and/or to find non-connected triangulations.\n\nWhile not quite as fast, my limited testing shows the performance to be in the same order of magnitude as TOPCOM:\n\n```\nsage: U=matrix([\n...      [ 0, 0, 0, 0, 0, 2, 4,-1, 1, 1, 0, 0, 1, 0],\n...      [ 0, 0, 0, 1, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0],\n...      [ 0, 2, 0, 0, 0, 0,-1, 0, 1, 0, 1, 0, 0, 1],\n...      [ 0, 1, 1, 0, 0, 1, 0,-2, 1, 0, 0,-1, 1, 1],\n...      [ 0, 0, 0, 0, 1, 0,-1, 0, 0, 0, 0, 0, 0, 0]\n...   ])\nsage: pc = PointConfiguration(U.columns())\nsage: pc.set_engine('internal')\nsage: time len(pc.triangulations_list())\nCPU times: user 23.26 s, sys: 0.02 s, total: 23.29 s\nWall time: 23.32 s\n9623\nsage: pc.set_engine('TOPCOM')\nsage: time len(pc.triangulations_list())\nCPU times: user 7.80 s, sys: 0.13 s, total: 7.93 s\nWall time: 8.37 s\n9623\n```\n\nSee also #8169: include TOPCOM, where an optional spkg is being worked on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9918\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nThe attached patch implements triangulations of point configurations in arbitrary dimensions in Sage/Cython/C++ without relying on TOPCOM. \n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points. The \ntriangulations of this point configuration are assumed to \nbe connected, not necessarily fine, not necessarily regular.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\n(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>)\nsage: triang[0]\n(0, 1, 2)\nsage: list( points.triangulations() )\n[(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>), \n (<0,1,3>, <0,1,4>, <0,2,3>, <0,2,4>), \n (<1,2,3>, <1,2,4>), \n (<1,3,4>, <2,3,4>)]\nsage: triang.plot(axes=False)                                        \n```\nThe internal implementation covers finding a single triangulation as well as enumerating all triangulations connected to it by bistellar flips. TOPCOM is required to test for regularity and/or to find non-connected triangulations.\n\nWhile not quite as fast, my limited testing shows the performance to be in the same order of magnitude as TOPCOM:\n\n```\nsage: U=matrix([\n...      [ 0, 0, 0, 0, 0, 2, 4,-1, 1, 1, 0, 0, 1, 0],\n...      [ 0, 0, 0, 1, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0],\n...      [ 0, 2, 0, 0, 0, 0,-1, 0, 1, 0, 1, 0, 0, 1],\n...      [ 0, 1, 1, 0, 0, 1, 0,-2, 1, 0, 0,-1, 1, 1],\n...      [ 0, 0, 0, 0, 1, 0,-1, 0, 0, 0, 0, 0, 0, 0]\n...   ])\nsage: pc = PointConfiguration(U.columns())\nsage: pc.set_engine('internal')\nsage: time len(pc.triangulations_list())\nCPU times: user 23.26 s, sys: 0.02 s, total: 23.29 s\nWall time: 23.32 s\n9623\nsage: pc.set_engine('TOPCOM')\nsage: time len(pc.triangulations_list())\nCPU times: user 7.80 s, sys: 0.13 s, total: 7.93 s\nWall time: 8.37 s\n9623\n```\nSee also #8169: include TOPCOM, where an optional spkg is being worked on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9918\n\n",
     "created_at": "2010-09-16T11:22:09Z",
     "labels": [
         "component: geometry"
@@ -39,7 +39,6 @@ sage: list( points.triangulations() )
  (<1,3,4>, <2,3,4>)]
 sage: triang.plot(axes=False)                                        
 ```
-
 The internal implementation covers finding a single triangulation as well as enumerating all triangulations connected to it by bistellar flips. TOPCOM is required to test for regularity and/or to find non-connected triangulations.
 
 While not quite as fast, my limited testing shows the performance to be in the same order of magnitude as TOPCOM:
@@ -64,7 +63,6 @@ CPU times: user 7.80 s, sys: 0.13 s, total: 7.93 s
 Wall time: 8.37 s
 9623
 ```
-
 See also #8169: include TOPCOM, where an optional spkg is being worked on.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9918
@@ -149,7 +147,7 @@ archive/issue_events_025009.json:
 archive/issue_comments_098528.json:
 ```json
 {
-    "body": "For the record:\n\n```\n/disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst\n```\n\nI am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...",
+    "body": "For the record:\n\n```\n/disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst\n```\nI am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...",
     "created_at": "2011-01-22T21:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
@@ -163,7 +161,6 @@ For the record:
 ```
 /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst
 ```
-
 I am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...
 
 
@@ -213,7 +210,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_098531.json:
 ```json
 {
-    "body": "Replying to [comment:4 novoselt]:\n> For the record:\n> {{{\n> /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst\n> }}}\n> I am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...\n\nI'm afraid a Sphinx warning is sufficient reason for needs_work...",
+    "body": "Replying to [comment:4 novoselt]:\n> For the record:\n> \n> ```\n> /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst\n> ```\n> I am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...\n\n\nI'm afraid a Sphinx warning is sufficient reason for needs_work...",
     "created_at": "2011-01-26T17:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
@@ -224,10 +221,12 @@ archive/issue_comments_098531.json:
 
 Replying to [comment:4 novoselt]:
 > For the record:
-> {{{
+> 
+> ```
 > /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/triangulation/point_configuration.rst:638: WARNING: duplicate citation BSS, other instance in /disk/scratch/novoselt/sage/devel/sage/doc/en/reference/sage/geometry/polyhedra.rst
-> }}}
+> ```
 > I am not sure what we are supposed to do with this (personally, I like to have references in the file where they are referenced), but the documentation does not build without warnings...
+
 
 I'm afraid a Sphinx warning is sufficient reason for needs_work...
 

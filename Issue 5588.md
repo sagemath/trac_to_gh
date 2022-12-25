@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5588
 archive/issue_comments_043465.json:
 ```json
 {
-    "body": "Replying to [ticket:5588 jhpalmieri]:\n> 1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\nI wonder if that was a conscious decision or whether it is just as it is (I personally prefer mathbb over mathbf).",
+    "body": "Replying to [ticket:5588 jhpalmieri]:\n> 1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\n\nI wonder if that was a conscious decision or whether it is just as it is (I personally prefer mathbb over mathbf).",
     "created_at": "2009-03-23T10:02:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
@@ -53,6 +53,7 @@ archive/issue_comments_043465.json:
 
 Replying to [ticket:5588 jhpalmieri]:
 > 1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.
+
 
 I wonder if that was a conscious decision or whether it is just as it is (I personally prefer mathbb over mathbf).
 

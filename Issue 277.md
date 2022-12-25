@@ -152,7 +152,7 @@ Changing component from number theory to group_theory.
 archive/issue_comments_001315.json:
 ```json
 {
-    "body": "I like it. \n\nOne comment I have is that you might want to look at the python `operator` module rather than using lambda functions. \n\n\n```\nsage: _ = var('x,y')\nsage: operator.neg(x)\n-x\nsage: operator.add(x,y) # the order is actually respected, this is just a maxima thing\ny + x\nsage: operator.invert(x)\n1/x\nsage: operator.mul(x,y)\nx*y\n```\n",
+    "body": "I like it. \n\nOne comment I have is that you might want to look at the python `operator` module rather than using lambda functions. \n\n```\nsage: _ = var('x,y')\nsage: operator.neg(x)\n-x\nsage: operator.add(x,y) # the order is actually respected, this is just a maxima thing\ny + x\nsage: operator.invert(x)\n1/x\nsage: operator.mul(x,y)\nx*y\n```",
     "created_at": "2008-03-04T06:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
@@ -165,7 +165,6 @@ I like it.
 
 One comment I have is that you might want to look at the python `operator` module rather than using lambda functions. 
 
-
 ```
 sage: _ = var('x,y')
 sage: operator.neg(x)
@@ -177,7 +176,6 @@ sage: operator.invert(x)
 sage: operator.mul(x,y)
 x*y
 ```
-
 
 
 

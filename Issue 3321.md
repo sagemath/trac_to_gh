@@ -3,7 +3,7 @@
 archive/issues_003321.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nConsider this example\n\n```\nsage: A = MatrixSpace(GF(2),2000,2000)(1)\nsage: A.visualize_structure()\n```\n\n\nI've attached the output to this ticket (hint: the scaling is to blame) Somehow I believe Tom Boothby would have an easy time to fix this so I CC him :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3321\n\n",
+    "body": "Assignee: cwitty\n\nConsider this example\n\n```\nsage: A = MatrixSpace(GF(2),2000,2000)(1)\nsage: A.visualize_structure()\n```\n\nI've attached the output to this ticket (hint: the scaling is to blame) Somehow I believe Tom Boothby would have an easy time to fix this so I CC him :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3321\n\n",
     "created_at": "2008-05-28T13:38:50Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ Consider this example
 sage: A = MatrixSpace(GF(2),2000,2000)(1)
 sage: A.visualize_structure()
 ```
-
 
 I've attached the output to this ticket (hint: the scaling is to blame) Somehow I believe Tom Boothby would have an easy time to fix this so I CC him :-)
 
@@ -130,7 +129,7 @@ archive/issue_events_007454.json:
 archive/issue_comments_022982.json:
 ```json
 {
-    "body": "Replying to [comment:2 ddrake]:\n> This fixes the bug and the code is fine, but in the docstring I have a minor quibble: you remove a warning about libpng problems on OS X. If those problems haven't been fixed, we should leave the warning in the docstring. I'll give this a positive review if you put the little warning back (or show that the problem was fixed!)\n\nThe problem has been fixed, which is the reason the libpng.dylib problem pops up with various external packages. It was the tradeoff between the Sage library passing doctests and external code working, so I chose Sage. Hence this is positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 ddrake]:\n> This fixes the bug and the code is fine, but in the docstring I have a minor quibble: you remove a warning about libpng problems on OS X. If those problems haven't been fixed, we should leave the warning in the docstring. I'll give this a positive review if you put the little warning back (or show that the problem was fixed!)\n\n\nThe problem has been fixed, which is the reason the libpng.dylib problem pops up with various external packages. It was the tradeoff between the Sage library passing doctests and external code working, so I chose Sage. Hence this is positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-22T10:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
@@ -141,6 +140,7 @@ archive/issue_comments_022982.json:
 
 Replying to [comment:2 ddrake]:
 > This fixes the bug and the code is fine, but in the docstring I have a minor quibble: you remove a warning about libpng problems on OS X. If those problems haven't been fixed, we should leave the warning in the docstring. I'll give this a positive review if you put the little warning back (or show that the problem was fixed!)
+
 
 The problem has been fixed, which is the reason the libpng.dylib problem pops up with various external packages. It was the tradeoff between the Sage library passing doctests and external code working, so I chose Sage. Hence this is positive review.
 

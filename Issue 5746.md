@@ -3,7 +3,7 @@
 archive/issues_005746.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: rational points finite field\n\nRight now, if X is a scheme over a finite field F and we ask for the list of rational points over a subfield K of F, Sage raises an error because it tries to base change X to K first.\n\nIt would be very easy to implement this as follows: take the list of all rational points over F and find the ones that are fixed by the appropriate power of the Frobenius morphism.  These are then the K-rational points.\n\nA sample of what this would return:\n\n\n```\nsage: P = ProjectiveSpace(1, GF(3^2, 'b'))\nsage: P.rational_points()\n[(0 : 1),\n (2*b : 1),\n (b + 1 : 1),\n (b + 2 : 1),\n (2 : 1),\n (b : 1),\n (2*b + 2 : 1),\n (2*b + 1 : 1),\n (1 : 1),\n (1 : 0)]\nsage: P.rational_points(GF(3))  # this doesn't work right now\n[(0 : 1),\n (2 : 1),\n (1 : 1),\n (1 : 0)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5746\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: rational points finite field\n\nRight now, if X is a scheme over a finite field F and we ask for the list of rational points over a subfield K of F, Sage raises an error because it tries to base change X to K first.\n\nIt would be very easy to implement this as follows: take the list of all rational points over F and find the ones that are fixed by the appropriate power of the Frobenius morphism.  These are then the K-rational points.\n\nA sample of what this would return:\n\n```\nsage: P = ProjectiveSpace(1, GF(3^2, 'b'))\nsage: P.rational_points()\n[(0 : 1),\n (2*b : 1),\n (b + 1 : 1),\n (b + 2 : 1),\n (2 : 1),\n (b : 1),\n (2*b + 2 : 1),\n (2*b + 1 : 1),\n (1 : 1),\n (1 : 0)]\nsage: P.rational_points(GF(3))  # this doesn't work right now\n[(0 : 1),\n (2 : 1),\n (1 : 1),\n (1 : 0)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5746\n\n",
     "created_at": "2009-04-11T05:08:48Z",
     "labels": [
         "component: algebraic geometry",
@@ -26,7 +26,6 @@ It would be very easy to implement this as follows: take the list of all rationa
 
 A sample of what this would return:
 
-
 ```
 sage: P = ProjectiveSpace(1, GF(3^2, 'b'))
 sage: P.rational_points()
@@ -46,7 +45,6 @@ sage: P.rational_points(GF(3))  # this doesn't work right now
  (1 : 1),
  (1 : 0)]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5746

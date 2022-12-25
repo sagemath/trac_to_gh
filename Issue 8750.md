@@ -3,7 +3,7 @@
 archive/issues_008750.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nI'm getting noise on doctests on Solaris.  One is straightforward to fix (chmm.pyx).  For the other (time_series.pyx), on Solaris I get\n\n```\nsage -t  -long devel/sage/sage/finance/time_series.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/finance/time_series.pyx\", line 691:\n    sage: finance.TimeSeries([1,0,3]).log()\nExpected:\n    [0.0000, -inf, 1.0986]\nGot:\n    [0.0000, -Inf, 1.0986]\n**********************************************************************\n```\n\nSo instead of `-inf`, it's printing `-Inf`.  However, if I do\n\n```\n   sage: finance.TimeSeries([1,0,3]).log()[1]\n```\n\nthen I see `-inf`.  So I've changed the doctest to use this instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8750\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nI'm getting noise on doctests on Solaris.  One is straightforward to fix (chmm.pyx).  For the other (time_series.pyx), on Solaris I get\n\n```\nsage -t  -long devel/sage/sage/finance/time_series.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/finance/time_series.pyx\", line 691:\n    sage: finance.TimeSeries([1,0,3]).log()\nExpected:\n    [0.0000, -inf, 1.0986]\nGot:\n    [0.0000, -Inf, 1.0986]\n**********************************************************************\n```\nSo instead of `-inf`, it's printing `-Inf`.  However, if I do\n\n```\n   sage: finance.TimeSeries([1,0,3]).log()[1]\n```\nthen I see `-inf`.  So I've changed the doctest to use this instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8750\n\n",
     "created_at": "2010-04-23T05:18:46Z",
     "labels": [
         "component: porting: solaris",
@@ -34,13 +34,11 @@ Got:
     [0.0000, -Inf, 1.0986]
 **********************************************************************
 ```
-
 So instead of `-inf`, it's printing `-Inf`.  However, if I do
 
 ```
    sage: finance.TimeSeries([1,0,3]).log()[1]
 ```
-
 then I see `-inf`.  So I've changed the doctest to use this instead.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8750
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8750
 archive/issue_comments_079921.json:
 ```json
 {
-    "body": "Attachment [trac_8750-solaris.patch](tarball://root/attachments/some-uuid/ticket8750/trac_8750-solaris.patch) by drkirkby created at 2010-04-23 14:39:16\n\nTwo questions: \n\n* Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:\n\n\n```\nfinance.TimeSeries([1,0,3]).log()\n```\n\nis a lot nicer than \n\n```\n finance.TimeSeries([1,0,3]).log()[1]\n```\n\n\nSo is it right to change the test to a more complicated one, just to get the answer we want? If this comes from python, I find it hard to understand why there should be the difference. Would a case-insensitive test be a better method? \n\n* Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? I'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n\nWhen one reads things like how SQLite (Open Source) is tested\n\nhttp://sqlite.org/testing.html\n\nor how Wolfram Research claim Mathematica (closed source) is tested\n\nhttp://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n\nI'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n\n\nDave",
+    "body": "Attachment [trac_8750-solaris.patch](tarball://root/attachments/some-uuid/ticket8750/trac_8750-solaris.patch) by drkirkby created at 2010-04-23 14:39:16\n\nTwo questions: \n\n* Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:\n\n```\nfinance.TimeSeries([1,0,3]).log()\n```\nis a lot nicer than \n\n```\n finance.TimeSeries([1,0,3]).log()[1]\n```\n\nSo is it right to change the test to a more complicated one, just to get the answer we want? If this comes from python, I find it hard to understand why there should be the difference. Would a case-insensitive test be a better method? \n\n* Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? I'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n\nWhen one reads things like how SQLite (Open Source) is tested\n\nhttp://sqlite.org/testing.html\n\nor how Wolfram Research claim Mathematica (closed source) is tested\n\nhttp://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n\nI'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n\n\nDave",
     "created_at": "2010-04-23T14:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
@@ -69,17 +67,14 @@ Two questions:
 
 * Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:
 
-
 ```
 finance.TimeSeries([1,0,3]).log()
 ```
-
 is a lot nicer than 
 
 ```
  finance.TimeSeries([1,0,3]).log()[1]
 ```
-
 
 So is it right to change the test to a more complicated one, just to get the answer we want? If this comes from python, I find it hard to understand why there should be the difference. Would a case-insensitive test be a better method? 
 
@@ -123,7 +118,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079923.json:
 ```json
 {
-    "body": "Replying to [comment:1 drkirkby]:\n> Two questions: \n> \n>  * Is sage/finance/time_series.pyx failing on every platform? \n\nThis is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\n> So is it right to change the test to a more complicated one, just to get the answer we want?\n\nIf the difference are for trivial but insurmountable reasons, I don't have an issue with this.\n\n> If this comes from python, I find it hard to understand why there should be the difference. \n\nMaybe it comes from math.h somehow?\n\n>  * Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? \n\nThis is essentially a new file in the Sage library: in previous versions, it was marked with \"nodoctest\" at the top of the file.  I think that it no longer uses an external library either.  So I view this sort of change as working kinks out, and it doesn't bother me.\n\n\nI'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n> \n> When one reads things like how SQLite (Open Source) is tested\n> \n> http://sqlite.org/testing.html\n> \n> or how Wolfram Research claim Mathematica (closed source) is tested\n> \n> http://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n> \n> I'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n> \n> \n> Dave",
+    "body": "Replying to [comment:1 drkirkby]:\n> Two questions: \n> \n> * Is sage/finance/time_series.pyx failing on every platform? \n\n\nThis is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\n> So is it right to change the test to a more complicated one, just to get the answer we want?\n\n\nIf the difference are for trivial but insurmountable reasons, I don't have an issue with this.\n\n> If this comes from python, I find it hard to understand why there should be the difference. \n\n\nMaybe it comes from math.h somehow?\n\n>  * Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? \n\n\nThis is essentially a new file in the Sage library: in previous versions, it was marked with \"nodoctest\" at the top of the file.  I think that it no longer uses an external library either.  So I view this sort of change as working kinks out, and it doesn't bother me.\n\n\nI'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n> \n> When one reads things like how SQLite (Open Source) is tested\n> \n> http://sqlite.org/testing.html\n> \n> or how Wolfram Research claim Mathematica (closed source) is tested\n> \n> http://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n> \n> I'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n> \n> \n> Dave",
     "created_at": "2010-04-23T14:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
@@ -135,19 +130,23 @@ archive/issue_comments_079923.json:
 Replying to [comment:1 drkirkby]:
 > Two questions: 
 > 
->  * Is sage/finance/time_series.pyx failing on every platform? 
+> * Is sage/finance/time_series.pyx failing on every platform? 
+
 
 This is the only one, and I don't know why.  I could try compiling time_series.py with "-std=c99"; maybe that would help?
 
 > So is it right to change the test to a more complicated one, just to get the answer we want?
 
+
 If the difference are for trivial but insurmountable reasons, I don't have an issue with this.
 
 > If this comes from python, I find it hard to understand why there should be the difference. 
 
+
 Maybe it comes from math.h somehow?
 
 >  * Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? 
+
 
 This is essentially a new file in the Sage library: in previous versions, it was marked with "nodoctest" at the top of the file.  I think that it no longer uses an external library either.  So I view this sort of change as working kinks out, and it doesn't bother me.
 
@@ -174,7 +173,7 @@ I'm always a bit reluctant seeing numerical results, with no justification of th
 archive/issue_comments_079924.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> Replying to [comment:1 drkirkby]:\n> > Two questions: \n> > \n> >  * Is sage/finance/time_series.pyx failing on every platform? \n> \n> This is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\nActually, it didn't help.  I wonder why log is imported from math.h rather than from Python's math module.",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Replying to [comment:1 drkirkby]:\n> > Two questions: \n> > \n> > * Is sage/finance/time_series.pyx failing on every platform? \n\n> \n> This is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\n\nActually, it didn't help.  I wonder why log is imported from math.h rather than from Python's math module.",
     "created_at": "2010-04-23T15:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
@@ -187,9 +186,11 @@ Replying to [comment:2 jhpalmieri]:
 > Replying to [comment:1 drkirkby]:
 > > Two questions: 
 > > 
-> >  * Is sage/finance/time_series.pyx failing on every platform? 
+> > * Is sage/finance/time_series.pyx failing on every platform? 
+
 > 
 > This is the only one, and I don't know why.  I could try compiling time_series.py with "-std=c99"; maybe that would help?
+
 
 Actually, it didn't help.  I wonder why log is imported from math.h rather than from Python's math module.
 

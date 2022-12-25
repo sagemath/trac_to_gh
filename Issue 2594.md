@@ -3,7 +3,7 @@
 archive/issues_002594.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe __floordiv__ special implementation for monomials throws away coefficients.\n\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=3*x^2-1\nsage: f//x\nx\n```\n\n\nA patch is attached to fix this along with some other coercion issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2594\n\n",
+    "body": "Assignee: @malb\n\nThe __floordiv__ special implementation for monomials throws away coefficients.\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=3*x^2-1\nsage: f//x\nx\n```\n\nA patch is attached to fix this along with some other coercion issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2594\n\n",
     "created_at": "2008-03-19T11:56:35Z",
     "labels": [
         "component: commutative algebra",
@@ -20,14 +20,12 @@ Assignee: @malb
 
 The __floordiv__ special implementation for monomials throws away coefficients.
 
-
 ```
 sage: R.<x,y,z>=ZZ[]
 sage: f=3*x^2-1
 sage: f//x
 x
 ```
-
 
 A patch is attached to fix this along with some other coercion issues.
 

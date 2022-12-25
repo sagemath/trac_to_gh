@@ -3,7 +3,7 @@
 archive/issues_002154.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nRun the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)\n\n\n```\nPermutationGroup(2)\nPermutationGroupElement([1,1],S,check=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2154\n\n",
+    "body": "Assignee: joyner\n\nRun the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)\n\n```\nPermutationGroup(2)\nPermutationGroupElement([1,1],S,check=False)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2154\n\n",
     "created_at": "2008-02-14T01:09:40Z",
     "labels": [
         "component: group theory",
@@ -21,12 +21,10 @@ Assignee: joyner
 
 Run the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)
 
-
 ```
 PermutationGroup(2)
 PermutationGroupElement([1,1],S,check=False)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2154
 
@@ -116,7 +114,7 @@ It looks like the problem here was actually infinite loops, but it now checks to
 archive/issue_comments_014118.json:
 ```json
 {
-    "body": "\n```\n[02:01] <mabshoff> craigcitro: can you look at #2154 ? It looks good, \nbut I would like a second opinion.\n[02:11] <craigcitro> mabshoff: sure, it looks good to me.\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n[02:01] <mabshoff> craigcitro: can you look at #2154 ? It looks good, \nbut I would like a second opinion.\n[02:11] <craigcitro> mabshoff: sure, it looks good to me.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-26T01:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
@@ -125,13 +123,11 @@ archive/issue_comments_014118.json:
 }
 ```
 
-
 ```
 [02:01] <mabshoff> craigcitro: can you look at #2154 ? It looks good, 
 but I would like a second opinion.
 [02:11] <craigcitro> mabshoff: sure, it looks good to me.
 ```
-
 
 Cheers,
 

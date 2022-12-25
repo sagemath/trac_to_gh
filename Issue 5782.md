@@ -3,7 +3,7 @@
 archive/issues_005782.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: RDF, __pow__, zero\n\nPositive noninteger powers of RDF(0) give nan rather than zero:\n\n```\n  sage: RDF(0)^.5\n  nan\n\n  sage: RDF(0)^(1/2)\n  nan\n```\n\n\nIn contrast, noninteger powers of CDF(0) have the correct value:\n\n```\n  sage: CDF(0)^.5\n  0\n\n  sage: CDF(0)^(1/2)\n  0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5782\n\n",
+    "body": "Assignee: somebody\n\nKeywords: RDF, __pow__, zero\n\nPositive noninteger powers of RDF(0) give nan rather than zero:\n\n```\n  sage: RDF(0)^.5\n  nan\n\n  sage: RDF(0)^(1/2)\n  nan\n```\n\nIn contrast, noninteger powers of CDF(0) have the correct value:\n\n```\n  sage: CDF(0)^.5\n  0\n\n  sage: CDF(0)^(1/2)\n  0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5782\n\n",
     "created_at": "2009-04-14T00:00:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,7 +31,6 @@ Positive noninteger powers of RDF(0) give nan rather than zero:
   nan
 ```
 
-
 In contrast, noninteger powers of CDF(0) have the correct value:
 
 ```
@@ -41,7 +40,6 @@ In contrast, noninteger powers of CDF(0) have the correct value:
   sage: CDF(0)^(1/2)
   0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5782
 
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5782
 archive/issue_comments_045174.json:
 ```json
 {
-    "body": "Hmm, we have some trivial doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/rings/real_double.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1543:\n    sage: RDF(0)^.5\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1545:\n    sage: RDF(0)^(1/2)\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\n```\n\n\nI think other than that this is good to go.\n\nCheers,\n\nMichael",
+    "body": "Hmm, we have some trivial doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/rings/real_double.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1543:\n    sage: RDF(0)^.5\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1545:\n    sage: RDF(0)^(1/2)\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\n```\n\nI think other than that this is good to go.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T03:04:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ Got:
     0.0
 **********************************************************************
 ```
-
 
 I think other than that this is good to go.
 
@@ -230,7 +227,7 @@ Does this fix #5785?
 archive/issue_comments_045181.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> Does this fix #5785?\n\nYes.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 jason]:\n> Does this fix #5785?\n\n\nYes.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T21:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
@@ -241,6 +238,7 @@ archive/issue_comments_045181.json:
 
 Replying to [comment:6 jason]:
 > Does this fix #5785?
+
 
 Yes.
 

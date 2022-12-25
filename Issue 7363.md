@@ -219,7 +219,7 @@ Changing keywords from "pynac" to "pynac, symbolic, print".
 archive/issue_comments_061590.json:
 ```json
 {
-    "body": "Im also not qualified to review the C++ code but the (representative) examples below indicate the code satisfies the objectives so Im giving it a positive review (which someone can reverse if they discover a counterexample)\n\n\n\n```\n# Note: division is left associative: 12/3/4 = (12/3)/4\nsage: 12/3/4 \n1\n\nsage: var('x y z')\n(x, y, z)\n\nsage: 2/(x+1) # the motivating example\n2/(x + 1)\n\nsage: 1/(2*y)\n1/2/y\n\nsage: 1/(1/2*y)\n2/y\n\nsage: x/2/y\n1/2*x/y\n\nsage: .5*x/y\n0.500000000000000*x/y\n\nsage: .5/x/y\n0.500000000000000/(x*y)\n\nsage: 1/2/x/y\n1/2/(x*y)\n\nsage: 1/x/2\n1/2/x\n```\n",
+    "body": "Im also not qualified to review the C++ code but the (representative) examples below indicate the code satisfies the objectives so Im giving it a positive review (which someone can reverse if they discover a counterexample)\n\n\n```\n# Note: division is left associative: 12/3/4 = (12/3)/4\nsage: 12/3/4 \n1\n\nsage: var('x y z')\n(x, y, z)\n\nsage: 2/(x+1) # the motivating example\n2/(x + 1)\n\nsage: 1/(2*y)\n1/2/y\n\nsage: 1/(1/2*y)\n2/y\n\nsage: x/2/y\n1/2*x/y\n\nsage: .5*x/y\n0.500000000000000*x/y\n\nsage: .5/x/y\n0.500000000000000/(x*y)\n\nsage: 1/2/x/y\n1/2/(x*y)\n\nsage: 1/x/2\n1/2/x\n```",
     "created_at": "2010-02-15T14:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ archive/issue_comments_061590.json:
 ```
 
 Im also not qualified to review the C++ code but the (representative) examples below indicate the code satisfies the objectives so Im giving it a positive review (which someone can reverse if they discover a counterexample)
-
 
 
 ```
@@ -264,7 +263,6 @@ sage: 1/2/x/y
 sage: 1/x/2
 1/2/x
 ```
-
 
 
 

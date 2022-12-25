@@ -3,7 +3,7 @@
 archive/issues_005250.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
+    "body": "Assignee: @williamstein\n\nNotice that (ZZ/162ZZ)^* *is* cyclic:\n\n```\nsage: R = Integers(162)\nsage: R(5).multiplicative_order()\n54\nsage: euler_phi(162)\n54\n```\n\nHowever, Sage gets this totally wrong:\n\n```\nsage: R.multiplicative_generator()\nTraceback (most recent call last):\n...\nValueError: multiplicative group of this ring is not cyclic\n```\n\nThis bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5250\n\n",
     "created_at": "2009-02-12T23:41:54Z",
     "labels": [
         "component: number theory",
@@ -28,7 +28,6 @@ sage: euler_phi(162)
 54
 ```
 
-
 However, Sage gets this totally wrong:
 
 ```
@@ -37,7 +36,6 @@ Traceback (most recent call last):
 ...
 ValueError: multiplicative group of this ring is not cyclic
 ```
-
 
 This bug came up for me today while doing some research.  I'm glad I didn't believe Sage :-). 
 
@@ -260,7 +258,7 @@ Right, that should fix it. (I'm trying to ensure that the tickets of mine for wh
 archive/issue_comments_040200.json:
 ```json
 {
-    "body": "I am observing one more doctest failure in ambient.py with -long:\n\n```\nsage -t -long \"devel/sage/sage/modular/modsym/ambient.py\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/modular/modsym/ambient.py\", line 1104:\n    sage: M.factorization()                    # long time (about 8 seconds)\nExpected:\n    (Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2)\nGot:\n    (Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "I am observing one more doctest failure in ambient.py with -long:\n\n```\nsage -t -long \"devel/sage/sage/modular/modsym/ambient.py\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/modular/modsym/ambient.py\", line 1104:\n    sage: M.factorization()                    # long time (about 8 seconds)\nExpected:\n    (Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) *\n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [1, zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2)\nGot:\n    (Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2) * \n    (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2)\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-05-11T09:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
@@ -288,7 +286,6 @@ Got:
     (Modular Symbols subspace of dimension 2 of Modular Symbols space of dimension 7 and level 38, weight 2, character [zeta3], sign 1, over Cyclotomic Field of order 3 and degree 2)
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -375,7 +372,7 @@ Just as a double-check, I'll be another voice to say the last two doctest patche
 archive/issue_comments_040205.json:
 ```json
 {
-    "body": "Replying to [comment:11 craigcitro]:\n> Just as a double-check, I'll be another voice to say the last two doctest patches look good. (The old code had 1 as one of the multiplicative generators of `Z/38` ... pretty funny.)\n\nI agree that the new output looks good (and the old one very bad for the reasons stated).",
+    "body": "Replying to [comment:11 craigcitro]:\n> Just as a double-check, I'll be another voice to say the last two doctest patches look good. (The old code had 1 as one of the multiplicative generators of `Z/38` ... pretty funny.)\n\n\nI agree that the new output looks good (and the old one very bad for the reasons stated).",
     "created_at": "2009-05-11T09:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5250",
     "type": "issue_comment",
@@ -386,6 +383,7 @@ archive/issue_comments_040205.json:
 
 Replying to [comment:11 craigcitro]:
 > Just as a double-check, I'll be another voice to say the last two doctest patches look good. (The old code had 1 as one of the multiplicative generators of `Z/38` ... pretty funny.)
+
 
 I agree that the new output looks good (and the old one very bad for the reasons stated).
 

@@ -3,7 +3,7 @@
 archive/issues_003279.json:
 ```json
 {
-    "body": "Assignee: failure\n\nDue to a bug not caught in #3097 we end up with an inconsistent repo in $SAGE_LOCAL/bin:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/local/bin$ hg status\n! dsage_setup.py\n! dsage_worker.py\n```\n\nThe files are in the scripts.spkg:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/spkg/standard/sage_scripts-3.0.2.rc0$ ls -al dsage_*\n-rwxr-xr-x 1 mabshoff 1090  7479 2008-05-22 23:19 dsage_setup.py\n-rwxr-xr-x 1 mabshoff 1090 35459 2008-05-22 23:19 dsage_worker.py\n```\n\nWhen those two scripts are missing the DSage tests just hang.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3279\n\n",
+    "body": "Assignee: failure\n\nDue to a bug not caught in #3097 we end up with an inconsistent repo in $SAGE_LOCAL/bin:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/local/bin$ hg status\n! dsage_setup.py\n! dsage_worker.py\n```\nThe files are in the scripts.spkg:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/spkg/standard/sage_scripts-3.0.2.rc0$ ls -al dsage_*\n-rwxr-xr-x 1 mabshoff 1090  7479 2008-05-22 23:19 dsage_setup.py\n-rwxr-xr-x 1 mabshoff 1090 35459 2008-05-22 23:19 dsage_worker.py\n```\nWhen those two scripts are missing the DSage tests just hang.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3279\n\n",
     "created_at": "2008-05-23T15:15:55Z",
     "labels": [
         "component: doctest coverage",
@@ -26,7 +26,6 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/local/bin$ hg sta
 ! dsage_setup.py
 ! dsage_worker.py
 ```
-
 The files are in the scripts.spkg:
 
 ```
@@ -34,7 +33,6 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.final/spkg/standard/sag
 -rwxr-xr-x 1 mabshoff 1090  7479 2008-05-22 23:19 dsage_setup.py
 -rwxr-xr-x 1 mabshoff 1090 35459 2008-05-22 23:19 dsage_worker.py
 ```
-
 When those two scripts are missing the DSage tests just hang.
 
 Patch coming up.

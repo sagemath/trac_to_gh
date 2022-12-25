@@ -163,7 +163,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_060306.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Odds and ends:\n> \n>  * Should we mark `notebook/user_controls.tmpl` for deletion?\nYes. I forgot to do so.\n>  * Should we fold in the key parts of #7249's Jinja2 migration patch?\nYes. I'll do that now.\n> \n> Out of curiousity:\n> \n>  * What is `backwards` for?\nI haven't an idea. I just copied that from the old code.\n>  * Has anyone seen a inheritance diagram generator for HTML templates?\nNo, but that would be simply awesome.\n>  * Could we unify two or more of `accounts_settings.css`, `user_management.css`, and `registration.css` for a common user/admin settings theme?\nI actually planned to do a fair bit of changes to the structure (use inheritance instead of includes, etc.), but I think it would be better to put it in another ticket.\n> \n> I'll try to look at `main.css` tomorrow...\nI actually just copied the old main.css and put it through `css2sass` so I could edit it in SASS [1] and Compass [2]. I find it much easier to edit CSS that way -- just ask if you want to see the SASS source files. It's just a pity that SASS is Ruby-based, and the only Python alternative (CleverCSS) lacks many of the features and community support that SASS has.\n\n[1] http://sass-lang.com/\n\n[2] http://wiki.github.com/chriseppstein/compass",
+    "body": "Replying to [comment:3 mpatel]:\n> Odds and ends:\n> \n> * Should we mark `notebook/user_controls.tmpl` for deletion?\nYes. I forgot to do so.\n>  * Should we fold in the key parts of #7249's Jinja2 migration patch?\n \nYes. I'll do that now.\n> \n> Out of curiousity:\n> \n> * What is `backwards` for?\n\nI haven't an idea. I just copied that from the old code.\n>  * Has anyone seen a inheritance diagram generator for HTML templates?\n \nNo, but that would be simply awesome.\n>  * Could we unify two or more of `accounts_settings.css`, `user_management.css`, and `registration.css` for a common user/admin settings theme?\n \nI actually planned to do a fair bit of changes to the structure (use inheritance instead of includes, etc.), but I think it would be better to put it in another ticket.\n> \n> I'll try to look at `main.css` tomorrow...\n\nI actually just copied the old main.css and put it through `css2sass` so I could edit it in SASS [1] and Compass [2]. I find it much easier to edit CSS that way -- just ask if you want to see the SASS source files. It's just a pity that SASS is Ruby-based, and the only Python alternative (CleverCSS) lacks many of the features and community support that SASS has.\n\n[1] http://sass-lang.com/\n\n[2] http://wiki.github.com/chriseppstein/compass",
     "created_at": "2009-10-24T02:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -175,21 +175,26 @@ archive/issue_comments_060306.json:
 Replying to [comment:3 mpatel]:
 > Odds and ends:
 > 
->  * Should we mark `notebook/user_controls.tmpl` for deletion?
+> * Should we mark `notebook/user_controls.tmpl` for deletion?
 Yes. I forgot to do so.
 >  * Should we fold in the key parts of #7249's Jinja2 migration patch?
+ 
 Yes. I'll do that now.
 > 
 > Out of curiousity:
 > 
->  * What is `backwards` for?
+> * What is `backwards` for?
+
 I haven't an idea. I just copied that from the old code.
 >  * Has anyone seen a inheritance diagram generator for HTML templates?
+ 
 No, but that would be simply awesome.
 >  * Could we unify two or more of `accounts_settings.css`, `user_management.css`, and `registration.css` for a common user/admin settings theme?
+ 
 I actually planned to do a fair bit of changes to the structure (use inheritance instead of includes, etc.), but I think it would be better to put it in another ticket.
 > 
 > I'll try to look at `main.css` tomorrow...
+
 I actually just copied the old main.css and put it through `css2sass` so I could edit it in SASS [1] and Compass [2]. I find it much easier to edit CSS that way -- just ask if you want to see the SASS source files. It's just a pity that SASS is Ruby-based, and the only Python alternative (CleverCSS) lacks many of the features and community support that SASS has.
 
 [1] http://sass-lang.com/
@@ -398,7 +403,7 @@ Reminder to self:  Rebase #4714's "jsmath_init" patch.
 archive/issue_comments_060317.json:
 ```json
 {
-    "body": "On the JS functions (this is mainly for future reference):\n\n* Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n\n```\nhistory_window\nhelp\nbugreport\nsearch_worksheets_enter_pressed\nsearch_worksheets\narchive_button\ndelete_button\nstop_worksheets_button\ndownload_worksheets_button\nset_worksheet_list_checks\nmake_active_button\nempty_trash\n```\n\n\n* Published Worksheets for anonymous users needs just\n\n```\nsearch_worksheets_enter_pressed\nsearch_worksheets\n```\n",
+    "body": "On the JS functions (this is mainly for future reference):\n\n* Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n\n```\nhistory_window\nhelp\nbugreport\nsearch_worksheets_enter_pressed\nsearch_worksheets\narchive_button\ndelete_button\nstop_worksheets_button\ndownload_worksheets_button\nset_worksheet_list_checks\nmake_active_button\nempty_trash\n```\n\n* Published Worksheets for anonymous users needs just\n\n```\nsearch_worksheets_enter_pressed\nsearch_worksheets\n```",
     "created_at": "2009-10-25T09:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -426,7 +431,6 @@ make_active_button
 empty_trash
 ```
 
-
 * Published Worksheets for anonymous users needs just
 
 ```
@@ -436,13 +440,12 @@ search_worksheets
 
 
 
-
 ---
 
 archive/issue_comments_060318.json:
 ```json
 {
-    "body": "On the JS functions (continued):\n\n* Edit, Text, Undo, Share, Publish, Upload/Create Data File appear to need\n\n```\nserver_ping_while_alive\njmolInitialize\njmolSetCallback\nhistory_window\nhelp\nbugreport\nrename_worksheet\nsave_worksheet - empty\nsave_worksheet_and_close - empty\nworksheet_discard\ngo_option\nupload_worksheet_button\nnew_worksheet\ndownload_worksheet\nprint_worksheet\ncopy_worksheet\ndelete_worksheet\ninterrupt\nrestart_sage\nevaluate_all\nhide_all\nshow_all\ndelete_all_output\nslide_mode\ncell_mode\nhandle_data_menu\ngo_system_select\npretty_print_check\nedit_worksheet\nslide_next\nslide_last\nslide_first\nslide_prev\n```\n\nbut I think we can drop Jmol, jsMath, TinyMCE, sage3d, etc., and any cell-related functions.\n\nThis might seem like too much, but I think it's useful to optimize the JS (and make it modular) just as you've done and are doing for HTML and CSS.  Remote embeds (cf. #6855), in particular, may only need a streamlined library.",
+    "body": "On the JS functions (continued):\n\n* Edit, Text, Undo, Share, Publish, Upload/Create Data File appear to need\n\n```\nserver_ping_while_alive\njmolInitialize\njmolSetCallback\nhistory_window\nhelp\nbugreport\nrename_worksheet\nsave_worksheet - empty\nsave_worksheet_and_close - empty\nworksheet_discard\ngo_option\nupload_worksheet_button\nnew_worksheet\ndownload_worksheet\nprint_worksheet\ncopy_worksheet\ndelete_worksheet\ninterrupt\nrestart_sage\nevaluate_all\nhide_all\nshow_all\ndelete_all_output\nslide_mode\ncell_mode\nhandle_data_menu\ngo_system_select\npretty_print_check\nedit_worksheet\nslide_next\nslide_last\nslide_first\nslide_prev\n```\nbut I think we can drop Jmol, jsMath, TinyMCE, sage3d, etc., and any cell-related functions.\n\nThis might seem like too much, but I think it's useful to optimize the JS (and make it modular) just as you've done and are doing for HTML and CSS.  Remote embeds (cf. #6855), in particular, may only need a streamlined library.",
     "created_at": "2009-10-25T09:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -490,7 +493,6 @@ slide_last
 slide_first
 slide_prev
 ```
-
 but I think we can drop Jmol, jsMath, TinyMCE, sage3d, etc., and any cell-related functions.
 
 This might seem like too much, but I think it's useful to optimize the JS (and make it modular) just as you've done and are doing for HTML and CSS.  Remote embeds (cf. #6855), in particular, may only need a streamlined library.
@@ -502,7 +504,7 @@ This might seem like too much, but I think it's useful to optimize the JS (and m
 archive/issue_comments_060319.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> Also:\n> \n>  * \"Log,\" \"Report a Problem,\" and \"Help\" don't work on the main Documentation/Help page.\n>  * The current Account settings, Error, Sign in, and Sign up pages don't need to load any libraries, I think.\n>  * The Sage logo on the Sign up page has a border in Firefox.\n>  * The Upload worksheet and Upload/Create data file pages use `form.submit()` instead of `type=\"submit\"`, but these are probably not important.\n> \n> Thanks for mentioning SASS and Compass!  Should we add the .sass files to the repository, to make it easier update the stylesheets in the future?\n> \n> Reminder to self:  Rebase #4714's \"jsmath_init\" patch.\n\nI can do so. I'll also put instructions on using SASS + Compass.",
+    "body": "Replying to [comment:8 mpatel]:\n> Also:\n> \n> * \"Log,\" \"Report a Problem,\" and \"Help\" don't work on the main Documentation/Help page.\n> * The current Account settings, Error, Sign in, and Sign up pages don't need to load any libraries, I think.\n> * The Sage logo on the Sign up page has a border in Firefox.\n> * The Upload worksheet and Upload/Create data file pages use `form.submit()` instead of `type=\"submit\"`, but these are probably not important.\n> \n> Thanks for mentioning SASS and Compass!  Should we add the .sass files to the repository, to make it easier update the stylesheets in the future?\n> \n> Reminder to self:  Rebase #4714's \"jsmath_init\" patch.\n\n\nI can do so. I'll also put instructions on using SASS + Compass.",
     "created_at": "2009-10-25T15:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -514,14 +516,15 @@ archive/issue_comments_060319.json:
 Replying to [comment:8 mpatel]:
 > Also:
 > 
->  * "Log," "Report a Problem," and "Help" don't work on the main Documentation/Help page.
->  * The current Account settings, Error, Sign in, and Sign up pages don't need to load any libraries, I think.
->  * The Sage logo on the Sign up page has a border in Firefox.
->  * The Upload worksheet and Upload/Create data file pages use `form.submit()` instead of `type="submit"`, but these are probably not important.
+> * "Log," "Report a Problem," and "Help" don't work on the main Documentation/Help page.
+> * The current Account settings, Error, Sign in, and Sign up pages don't need to load any libraries, I think.
+> * The Sage logo on the Sign up page has a border in Firefox.
+> * The Upload worksheet and Upload/Create data file pages use `form.submit()` instead of `type="submit"`, but these are probably not important.
 > 
 > Thanks for mentioning SASS and Compass!  Should we add the .sass files to the repository, to make it easier update the stylesheets in the future?
 > 
 > Reminder to self:  Rebase #4714's "jsmath_init" patch.
+
 
 I can do so. I'll also put instructions on using SASS + Compass.
 
@@ -588,7 +591,7 @@ It may be best to ``@`import`, so we can make it possible to customize the intro
 archive/issue_comments_060323.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n> On the JS functions (this is mainly for future reference):\n> \n>  * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n\nI've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.",
+    "body": "Replying to [comment:9 mpatel]:\n> On the JS functions (this is mainly for future reference):\n> \n> * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n\n\nI've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.",
     "created_at": "2009-10-27T15:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -600,7 +603,8 @@ archive/issue_comments_060323.json:
 Replying to [comment:9 mpatel]:
 > On the JS functions (this is mainly for future reference):
 > 
->  * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with
+> * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with
+
 
 I've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.
 
@@ -647,7 +651,7 @@ I'm suspending work on this until I finish working on the test suite, now that #
 archive/issue_comments_060326.json:
 ```json
 {
-    "body": "Now that #7343 is mostly done, I'll resume work on this.\n\nReplying to [comment:15 mpatel]:\n> Replying to [comment:9 mpatel]:\n> > On the JS functions (this is mainly for future reference):\n> > \n> >  * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n> \n> I've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.\n\nThat would be excellent. Would you mind posting the code?",
+    "body": "Now that #7343 is mostly done, I'll resume work on this.\n\nReplying to [comment:15 mpatel]:\n> Replying to [comment:9 mpatel]:\n> > On the JS functions (this is mainly for future reference):\n> > \n> > * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with\n\n> \n> I've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.\n\n\nThat would be excellent. Would you mind posting the code?",
     "created_at": "2009-10-29T14:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -662,9 +666,11 @@ Replying to [comment:15 mpatel]:
 > Replying to [comment:9 mpatel]:
 > > On the JS functions (this is mainly for future reference):
 > > 
-> >  * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with
+> > * Active, Archived, and Deleted Worksheets; Published Worksheets for logged-in users; and Upload Worksheet can work with
+
 > 
 > I've separated out what I think is a minimal `ws_list.js` for these pages.  It depends only on jQuery.  It'll also depend on jQuery UI after I replace the `alert`s.  It might be useful to update the server status on these pages for authenticated users, that is, add a worksheet-independent ping.  I can add that code.
+
 
 That would be excellent. Would you mind posting the code?
 
@@ -695,7 +701,7 @@ Just the separated minimal ws_list.js, for experiments.  This is not a patch.
 archive/issue_comments_060328.json:
 ```json
 {
-    "body": "Replying to [comment:18 timdumol]:\n> Now that #7343 is mostly done, I'll resume work on this.\n\n> [...]\n\n> That would be excellent. Would you mind posting the code?\n\nI've attached just the separated, minimal `ws_list.js`, which appears to be enough for the intended pages (except for the already broken \"Download\" button).",
+    "body": "Replying to [comment:18 timdumol]:\n> Now that #7343 is mostly done, I'll resume work on this.\n\n\n> [...]\n\n\n> That would be excellent. Would you mind posting the code?\n\n\nI've attached just the separated, minimal `ws_list.js`, which appears to be enough for the intended pages (except for the already broken \"Download\" button).",
     "created_at": "2009-10-31T10:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -707,9 +713,12 @@ archive/issue_comments_060328.json:
 Replying to [comment:18 timdumol]:
 > Now that #7343 is mostly done, I'll resume work on this.
 
+
 > [...]
 
+
 > That would be excellent. Would you mind posting the code?
+
 
 I've attached just the separated, minimal `ws_list.js`, which appears to be enough for the intended pages (except for the already broken "Download" button).
 
@@ -720,7 +729,7 @@ I've attached just the separated, minimal `ws_list.js`, which appears to be enou
 archive/issue_comments_060329.json:
 ```json
 {
-    "body": "Replying to [comment:18 timdumol]:\n> Now that #7343 is mostly done, I'll resume work on this.\n\nMay I ask what are your plans for this ticket?  If you need more from me, just let me know.",
+    "body": "Replying to [comment:18 timdumol]:\n> Now that #7343 is mostly done, I'll resume work on this.\n\n\nMay I ask what are your plans for this ticket?  If you need more from me, just let me know.",
     "created_at": "2009-11-11T17:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -732,6 +741,7 @@ archive/issue_comments_060329.json:
 Replying to [comment:18 timdumol]:
 > Now that #7343 is mostly done, I'll resume work on this.
 
+
 May I ask what are your plans for this ticket?  If you need more from me, just let me know.
 
 
@@ -741,7 +751,7 @@ May I ask what are your plans for this ticket?  If you need more from me, just l
 archive/issue_comments_060330.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Replying to [comment:18 timdumol]:\n> > Now that #7343 is mostly done, I'll resume work on this.\n> \n> May I ask what are your plans for this ticket?  If you need more from me, just let me know.\n\nSorry. I've been a bit caught up with school work, etc. I'll try to resume work on it as soon as my workload lets up.",
+    "body": "Replying to [comment:20 mpatel]:\n> Replying to [comment:18 timdumol]:\n> > Now that #7343 is mostly done, I'll resume work on this.\n\n> \n> May I ask what are your plans for this ticket?  If you need more from me, just let me know.\n\n\nSorry. I've been a bit caught up with school work, etc. I'll try to resume work on it as soon as my workload lets up.",
     "created_at": "2009-11-12T10:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -753,8 +763,10 @@ archive/issue_comments_060330.json:
 Replying to [comment:20 mpatel]:
 > Replying to [comment:18 timdumol]:
 > > Now that #7343 is mostly done, I'll resume work on this.
+
 > 
 > May I ask what are your plans for this ticket?  If you need more from me, just let me know.
+
 
 Sorry. I've been a bit caught up with school work, etc. I'll try to resume work on it as soon as my workload lets up.
 
@@ -879,7 +891,7 @@ Various fixes.  Rebased vs. #7650.
 archive/issue_comments_060337.json:
 ```json
 {
-    "body": "V9:\n\n* Rebased for #7650.\n* Fixes several failed doctests.\n* Adds `ws_list.js` to the \"Help\" and \"Log\" pages.\n* Re-centers the \"Help\" page.\n\nProblems:\n\n* Live doc worksheets don't render, e.g.,\n\n```python\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 1294: ordinal not in range(128)\n```\n\n\n* Minor: The notebook settings page sections are no longer centered(?).\n* Minor: Can we remove `html/notebook/doc.html` and `notebook.html_doc`?  It *appears * to be redundant.\n* Minor: The user name is not aligned with \"Toggle,\" \"Home,\" etc.\n\n\"Heads up\" note: I'm about to\n\n* Revisit #7650 to try to keep `cell.py` doctests from taking too much memory.\n* Rebase my patch for #7666, which will visit many .py, .js, and .html files, against this ticket.  The local queue:\n\n```\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7514.patch\ntrac_7648-missing_indent.patch\ntrac_7650-sagenb_doctesting.patch\ntrac_7269-table-reduction.patch\ntrac_7666-alphanumeric_cell_ids.patch\n```\n",
+    "body": "V9:\n\n* Rebased for #7650.\n* Fixes several failed doctests.\n* Adds `ws_list.js` to the \"Help\" and \"Log\" pages.\n* Re-centers the \"Help\" page.\n\nProblems:\n\n* Live doc worksheets don't render, e.g.,\n\n```python\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 1294: ordinal not in range(128)\n```\n\n* Minor: The notebook settings page sections are no longer centered(?).\n* Minor: Can we remove `html/notebook/doc.html` and `notebook.html_doc`?  It *appears * to be redundant.\n* Minor: The user name is not aligned with \"Toggle,\" \"Home,\" etc.\n\n\"Heads up\" note: I'm about to\n\n* Revisit #7650 to try to keep `cell.py` doctests from taking too much memory.\n* Rebase my patch for #7666, which will visit many .py, .js, and .html files, against this ticket.  The local queue:\n\n```\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7514.patch\ntrac_7648-missing_indent.patch\ntrac_7650-sagenb_doctesting.patch\ntrac_7269-table-reduction.patch\ntrac_7666-alphanumeric_cell_ids.patch\n```",
     "created_at": "2009-12-13T13:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -903,7 +915,6 @@ Problems:
         exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 1294: ordinal not in range(128)
 ```
 
-
 * Minor: The notebook settings page sections are no longer centered(?).
 * Minor: Can we remove `html/notebook/doc.html` and `notebook.html_doc`?  It *appears * to be redundant.
 * Minor: The user name is not aligned with "Toggle," "Home," etc.
@@ -922,7 +933,6 @@ trac_7650-sagenb_doctesting.patch
 trac_7269-table-reduction.patch
 trac_7666-alphanumeric_cell_ids.patch
 ```
-
 
 
 
@@ -975,7 +985,7 @@ Aligns the username, removes the Jinja2 migration, deletes some obsolete files.
 archive/issue_comments_060340.json:
 ```json
 {
-    "body": "> To note, ws_list.js is the default js include, and so was already included in the Help and Log pages.\n\nOops.  I apologize for this.  I'm about to attach V11, which\n\n   * May make the top bar display better in narrow windows or those with large fonts.\n   * `ttile` --> `title` in `top_bar.html`.\n   * Adds a `tr` to `worksheet_listing.html` (WebKit error).\n   * Fixes failed doctests in `template.py`:\n   * Restores the previous `template.py` doctests.\n   * Adds `'# not tested'` to the Jinja2 tests.\n   * Fixes a failed doctest in `notebook.py`.",
+    "body": "> To note, ws_list.js is the default js include, and so was already included in the Help and Log pages.\n\n\nOops.  I apologize for this.  I'm about to attach V11, which\n\n   * May make the top bar display better in narrow windows or those with large fonts.\n   * `ttile` --> `title` in `top_bar.html`.\n   * Adds a `tr` to `worksheet_listing.html` (WebKit error).\n   * Fixes failed doctests in `template.py`:\n   * Restores the previous `template.py` doctests.\n   * Adds `'# not tested'` to the Jinja2 tests.\n   * Fixes a failed doctest in `notebook.py`.",
     "created_at": "2009-12-20T14:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -985,6 +995,7 @@ archive/issue_comments_060340.json:
 ```
 
 > To note, ws_list.js is the default js include, and so was already included in the Help and Log pages.
+
 
 Oops.  I apologize for this.  I'm about to attach V11, which
 
@@ -1178,7 +1189,7 @@ Rebase vs. #7811 v2.  Replaces previous.
 archive/issue_comments_060349.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by @williamstein created at 2010-01-04 07:00:05\n\nI can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!\n\n\n```\napplying trac_7269-table-reduction.14.patch\npatching file sagenb/notebook/notebook.py\nHunk #2 succeeded at 950 with fuzz 2 (offset 3 lines).\nHunk #3 FAILED at 1265\nHunk #4 succeeded at 1334 with fuzz 2 (offset 9 lines).\nHunk #5 succeeded at 1407 with fuzz 1 (offset 9 lines).\nHunk #6 succeeded at 1441 with fuzz 1 (offset 9 lines).\nHunk #7 FAILED at 1467\nHunk #8 succeeded at 1486 with fuzz 1 (offset 9 lines).\nHunk #9 succeeded at 1589 with fuzz 1 (offset 9 lines).\nHunk #10 FAILED at 1608\nHunk #11 succeeded at 1651 with fuzz 1 (offset 9 lines).\nHunk #12 FAILED at 1706\nHunk #13 succeeded at 1748 with fuzz 1 (offset 10 lines).\nHunk #14 FAILED at 1757\n5 out of 14 hunks FAILED -- saving rejects to file sagenb/notebook/notebook.py.rej\npatching file sagenb/notebook/twist.py\nHunk #7 succeeded at 960 with fuzz 2 (offset 2 lines).\npatching file sagenb/notebook/worksheet.py\nHunk #1 FAILED at 1712\nHunk #2 FAILED at 1763\nHunk #3 FAILED at 2300\nHunk #4 succeeded at 2442 with fuzz 1 (offset 87 lines).\nHunk #5 succeeded at 2458 with fuzz 1 (offset 87 lines).\n3 out of 6 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\n\n```\n",
+    "body": "Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by @williamstein created at 2010-01-04 07:00:05\n\nI can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!\n\n```\napplying trac_7269-table-reduction.14.patch\npatching file sagenb/notebook/notebook.py\nHunk #2 succeeded at 950 with fuzz 2 (offset 3 lines).\nHunk #3 FAILED at 1265\nHunk #4 succeeded at 1334 with fuzz 2 (offset 9 lines).\nHunk #5 succeeded at 1407 with fuzz 1 (offset 9 lines).\nHunk #6 succeeded at 1441 with fuzz 1 (offset 9 lines).\nHunk #7 FAILED at 1467\nHunk #8 succeeded at 1486 with fuzz 1 (offset 9 lines).\nHunk #9 succeeded at 1589 with fuzz 1 (offset 9 lines).\nHunk #10 FAILED at 1608\nHunk #11 succeeded at 1651 with fuzz 1 (offset 9 lines).\nHunk #12 FAILED at 1706\nHunk #13 succeeded at 1748 with fuzz 1 (offset 10 lines).\nHunk #14 FAILED at 1757\n5 out of 14 hunks FAILED -- saving rejects to file sagenb/notebook/notebook.py.rej\npatching file sagenb/notebook/twist.py\nHunk #7 succeeded at 960 with fuzz 2 (offset 2 lines).\npatching file sagenb/notebook/worksheet.py\nHunk #1 FAILED at 1712\nHunk #2 FAILED at 1763\nHunk #3 FAILED at 2300\nHunk #4 succeeded at 2442 with fuzz 1 (offset 87 lines).\nHunk #5 succeeded at 2458 with fuzz 1 (offset 87 lines).\n3 out of 6 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\n\n```",
     "created_at": "2010-01-04T07:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
@@ -1190,7 +1201,6 @@ archive/issue_comments_060349.json:
 Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by @williamstein created at 2010-01-04 07:00:05
 
 I can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!
-
 
 ```
 applying trac_7269-table-reduction.14.patch
@@ -1221,7 +1231,6 @@ Hunk #5 succeeded at 2458 with fuzz 1 (offset 87 lines).
 abort: patch failed to apply
 
 ```
-
 
 
 

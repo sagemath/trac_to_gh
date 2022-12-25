@@ -3,7 +3,7 @@
 archive/issues_009310.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
     "created_at": "2010-06-22T15:00:46Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ archive/issues_009310.json:
 Assignee: mvngu
 
 CC:  @vbraun
-
 
 ```
 
@@ -75,7 +74,6 @@ For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_grou
          [88.9 s]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9310
 
 
@@ -87,7 +85,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9310
 archive/issue_comments_087536.json:
 ```json
 {
-    "body": "\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> uname -a\nLinux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> cat /etc/issue\nWelcome to openSUSE 11.1 - Kernel \\r (\\l).\n```\n",
+    "body": "```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> uname -a\nLinux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> cat /etc/issue\nWelcome to openSUSE 11.1 - Kernel \\r (\\l).\n```",
     "created_at": "2010-06-22T15:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -95,7 +93,6 @@ archive/issue_comments_087536.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -107,13 +104,12 @@ Welcome to openSUSE 11.1 - Kernel \r (\l).
 
 
 
-
 ---
 
 archive/issue_comments_087537.json:
 ```json
 {
-    "body": "Note -- In sage-4.4.1 on the same computer, the file doctests fine.  The only diff between the files is:\n\n```\nwstein@menas:~/screen/menas/sage-4.4.1> diff devel/sage/sage/groups/matrix_gps/matrix_group.py ../sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py|more\n330a331,351\n>     def is_abelian(self):\n>         r\"\"\"\n>         Return True if this group is an abelian group.\n>         \n>         Note: The result is cached, since it tends to get called\n>         rather often (e.g. by word_problem) and it's very slow to\n>         use the Gap interface every time. \n> \n>         EXAMPLES::\n>         \n>             sage: SL(1, 17).is_abelian()\n>             True\n>             sage: SL(2, 17).is_abelian()\n>             False\n>         \"\"\"\n>         try:\n>             return self.__is_abelian\n>         except AttributeError:\n>             self.__is_abelian = self._gap_().IsAbelian().bool()\n>             return self.__is_abelian\n> \n624c645,646\n<   \n```\n\n\nThus a change somewhere *else* in Sage is causing this problem.",
+    "body": "Note -- In sage-4.4.1 on the same computer, the file doctests fine.  The only diff between the files is:\n\n```\nwstein@menas:~/screen/menas/sage-4.4.1> diff devel/sage/sage/groups/matrix_gps/matrix_group.py ../sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py|more\n330a331,351\n>     def is_abelian(self):\n>         r\"\"\"\n>         Return True if this group is an abelian group.\n>         \n>         Note: The result is cached, since it tends to get called\n>         rather often (e.g. by word_problem) and it's very slow to\n>         use the Gap interface every time. \n> \n>         EXAMPLES::\n>         \n>             sage: SL(1, 17).is_abelian()\n>             True\n>             sage: SL(2, 17).is_abelian()\n>             False\n>         \"\"\"\n>         try:\n>             return self.__is_abelian\n>         except AttributeError:\n>             self.__is_abelian = self._gap_().IsAbelian().bool()\n>             return self.__is_abelian\n> \n624c645,646\n<   \n```\n\nThus a change somewhere *else* in Sage is causing this problem.",
     "created_at": "2010-06-22T15:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -151,7 +147,6 @@ wstein@menas:~/screen/menas/sage-4.4.1> diff devel/sage/sage/groups/matrix_gps/m
 624c645,646
 <   
 ```
-
 
 Thus a change somewhere *else* in Sage is causing this problem.
 
@@ -200,7 +195,7 @@ Dave
 archive/issue_comments_087540.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> I had noticed this on sage.math when merging http://trac.sagemath.org/sage_trac/ticket/8984\n\nAh, interesting. So hopefully #8984 is not the cause, and could be merged in!",
+    "body": "Replying to [comment:3 mhansen]:\n> I had noticed this on sage.math when merging http://trac.sagemath.org/sage_trac/ticket/8984\n\n\nAh, interesting. So hopefully #8984 is not the cause, and could be merged in!",
     "created_at": "2010-06-23T05:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -211,6 +206,7 @@ archive/issue_comments_087540.json:
 
 Replying to [comment:3 mhansen]:
 > I had noticed this on sage.math when merging http://trac.sagemath.org/sage_trac/ticket/8984
+
 
 Ah, interesting. So hopefully #8984 is not the cause, and could be merged in!
 
@@ -239,7 +235,7 @@ Changing priority from blocker to critical.
 archive/issue_comments_087542.json:
 ```json
 {
-    "body": "There seems to be a **lot** of doctests which are failing in a non-reproducible way. \n\n* elliptic_curves/BSD.py #9273 (Whilst #9316 is supposed to fix the spurious \"# File not found\" error at end of doctests, BSD.py has still failed for me in non-reproducible way. See #9449 which shows the output of `make ptestlong` First BSD.py fails without printing the  \"# File not found\" message, then it passes. \n* devel/sage/sage/misc/trace.py - see #9446\n* devel/sage/doc/fr/tutorial/programming.rst - see #9449, where this failed first time, but subsequently passed on the same computer, with the same build of Sage. (Though a couple of patches were applied the second time). \n* devel/sage/sage/schemes/plane_curves/constructor.py - again see #9449 which failed once, then passed on a second run. \n* devel/sage/sage/parallel/decorate.py\nThis failed both times, but on the first time it failed, the test was reported to have a 0 failures! \n\n```\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n```\n\nAfter adding patches #8641, #9243, #9316 which are related to the doctesting framework, this was at least reported as one doctest failing in `devel/sage/sage/parallel/decorate.py` \n\n```\n       sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n```\n\nI'm not however convinced that the addition of  #8641, #9243 and #9316 were the result of the improved behavior, as other tests still failed with 0 reported failures. \n\n**IT SEEMS TO ME, THE DOCTESTING FRAMEWORK IS BROKEN IN SAGE NOW**",
+    "body": "There seems to be a **lot** of doctests which are failing in a non-reproducible way. \n\n* elliptic_curves/BSD.py #9273 (Whilst #9316 is supposed to fix the spurious \"# File not found\" error at end of doctests, BSD.py has still failed for me in non-reproducible way. See #9449 which shows the output of `make ptestlong` First BSD.py fails without printing the  \"# File not found\" message, then it passes. \n* devel/sage/sage/misc/trace.py - see #9446\n* devel/sage/doc/fr/tutorial/programming.rst - see #9449, where this failed first time, but subsequently passed on the same computer, with the same build of Sage. (Though a couple of patches were applied the second time). \n* devel/sage/sage/schemes/plane_curves/constructor.py - again see #9449 which failed once, then passed on a second run. \n* devel/sage/sage/parallel/decorate.py\nThis failed both times, but on the first time it failed, the test was reported to have a 0 failures! \n\n```\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n```\nAfter adding patches #8641, #9243, #9316 which are related to the doctesting framework, this was at least reported as one doctest failing in `devel/sage/sage/parallel/decorate.py` \n\n```\n       sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n```\nI'm not however convinced that the addition of  #8641, #9243 and #9316 were the result of the improved behavior, as other tests still failed with 0 reported failures. \n\n**IT SEEMS TO ME, THE DOCTESTING FRAMEWORK IS BROKEN IN SAGE NOW**",
     "created_at": "2010-07-08T11:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -260,13 +256,11 @@ This failed both times, but on the first time it failed, the test was reported t
 ```
     sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed
 ```
-
 After adding patches #8641, #9243, #9316 which are related to the doctesting framework, this was at least reported as one doctest failing in `devel/sage/sage/parallel/decorate.py` 
 
 ```
        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed
 ```
-
 I'm not however convinced that the addition of  #8641, #9243 and #9316 were the result of the improved behavior, as other tests still failed with 0 reported failures. 
 
 **IT SEEMS TO ME, THE DOCTESTING FRAMEWORK IS BROKEN IN SAGE NOW**
@@ -278,7 +272,7 @@ I'm not however convinced that the addition of  #8641, #9243 and #9316 were the 
 archive/issue_comments_087543.json:
 ```json
 {
-    "body": "As noted in #10739, I have two independent builds of sage-4.6.2.alpha3 on my machine, one in which this test passes and the other in which it fails.\n\nReplying to [vbraun](http://trac.sagemath.org/sage_trac/ticket/10739#comment:10) (from #10739)\n> But if one build repeatedly passes \"make ptest\" and the other consistently fails, this would be an excellent opportunity to debug #9310. Presumably the only difference is that the first compilation was interrupted at one point, so the order in which spkgs were built is different.\n\nPrecisely, the first build was interrupted (see #10739 for details) and the second was not.\n\n> This might have changed linked libraries in some components due to (undiscovered) soft dependencies, for example. Can you diff the two trees (excluding log files etc) and find out the difference? \n\nI ran `diff -rq` on the two directories and there are about 25000 files that differ (pyc files, pyo files, ...). I figured that this might have something to do with hardcoded paths, so I moved one out of the way, moved the other into its place, launched sage to reset the hardcoded paths, and then ran `diff -rq` on the two trees. It still shows about 25000 differing files.\n\nAny suggestions on what to try next?",
+    "body": "As noted in #10739, I have two independent builds of sage-4.6.2.alpha3 on my machine, one in which this test passes and the other in which it fails.\n\nReplying to [vbraun](http://trac.sagemath.org/sage_trac/ticket/10739#comment:10) (from #10739)\n> But if one build repeatedly passes \"make ptest\" and the other consistently fails, this would be an excellent opportunity to debug #9310. Presumably the only difference is that the first compilation was interrupted at one point, so the order in which spkgs were built is different.\n\n\nPrecisely, the first build was interrupted (see #10739 for details) and the second was not.\n\n> This might have changed linked libraries in some components due to (undiscovered) soft dependencies, for example. Can you diff the two trees (excluding log files etc) and find out the difference? \n\n\nI ran `diff -rq` on the two directories and there are about 25000 files that differ (pyc files, pyo files, ...). I figured that this might have something to do with hardcoded paths, so I moved one out of the way, moved the other into its place, launched sage to reset the hardcoded paths, and then ran `diff -rq` on the two trees. It still shows about 25000 differing files.\n\nAny suggestions on what to try next?",
     "created_at": "2011-02-05T04:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -292,9 +286,11 @@ As noted in #10739, I have two independent builds of sage-4.6.2.alpha3 on my mac
 Replying to [vbraun](http://trac.sagemath.org/sage_trac/ticket/10739#comment:10) (from #10739)
 > But if one build repeatedly passes "make ptest" and the other consistently fails, this would be an excellent opportunity to debug #9310. Presumably the only difference is that the first compilation was interrupted at one point, so the order in which spkgs were built is different.
 
+
 Precisely, the first build was interrupted (see #10739 for details) and the second was not.
 
 > This might have changed linked libraries in some components due to (undiscovered) soft dependencies, for example. Can you diff the two trees (excluding log files etc) and find out the difference? 
+
 
 I ran `diff -rq` on the two directories and there are about 25000 files that differ (pyc files, pyo files, ...). I figured that this might have something to do with hardcoded paths, so I moved one out of the way, moved the other into its place, launched sage to reset the hardcoded paths, and then ran `diff -rq` on the two trees. It still shows about 25000 differing files.
 
@@ -325,7 +321,7 @@ I just noticed that after I tar up the offending build directory, untar it elsew
 archive/issue_comments_087545.json:
 ```json
 {
-    "body": "I was able to reproduce the failure on Sage-4.6.2.rc0 with Fedora 14 x86_64 by running \n\n```\nsage -t -randorder sage/groups/matrix_gps/matrix_group.py\n```\n\nrepeatedly. The doctest usually passes but once in a while fails as in the ticket description.",
+    "body": "I was able to reproduce the failure on Sage-4.6.2.rc0 with Fedora 14 x86_64 by running \n\n```\nsage -t -randorder sage/groups/matrix_gps/matrix_group.py\n```\nrepeatedly. The doctest usually passes but once in a while fails as in the ticket description.",
     "created_at": "2011-02-20T12:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
@@ -339,7 +335,6 @@ I was able to reproduce the failure on Sage-4.6.2.rc0 with Fedora 14 x86_64 by r
 ```
 sage -t -randorder sage/groups/matrix_gps/matrix_group.py
 ```
-
 repeatedly. The doctest usually passes but once in a while fails as in the ticket description.
 
 

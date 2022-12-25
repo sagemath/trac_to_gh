@@ -3,7 +3,7 @@
 archive/issues_009920.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n\n```\nwget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz\ntar xzvf nose-0.11.2.tar.gz\ncd nose-0.11.2\nsage -python setup.py install  \n```\n\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n```\nwget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz\ntar xzvf nose-0.11.2.tar.gz\ncd nose-0.11.2\nsage -python setup.py install  \n```\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
     "created_at": "2010-09-16T17:32:19Z",
     "labels": [
         "component: packages: optional",
@@ -24,14 +24,12 @@ Several projects we depend on use nose to do self-tests.  In order to test these
 
 This is fairly simple without an spkg:
 
-
 ```
 wget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz
 tar xzvf nose-0.11.2.tar.gz
 cd nose-0.11.2
 sage -python setup.py install  
 ```
-
 
 However, it might make sense to have nose be an optional spkg.
 
@@ -108,7 +106,7 @@ Yes, I'm thinking (according to guidelines) optional for now, standard after a p
 archive/issue_comments_098576.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> Yes, I'm thinking (according to guidelines) optional for now, standard after a probationary period.\n\nYes, according to guidelines it should be optional for a while. But there have been exceptions to that. Since it does not actually link to anything in Sage, and would only be called when running spkg-check, I think one could argue the risk is minimal. In contrast it would allow a number of packages to be checked. \n\nI think any such argument would have to be based on how many packages could benefit from it. \n\nIt must be an incredibly low risk package to add. \n\nDave",
+    "body": "Replying to [comment:4 jason]:\n> Yes, I'm thinking (according to guidelines) optional for now, standard after a probationary period.\n\n\nYes, according to guidelines it should be optional for a while. But there have been exceptions to that. Since it does not actually link to anything in Sage, and would only be called when running spkg-check, I think one could argue the risk is minimal. In contrast it would allow a number of packages to be checked. \n\nI think any such argument would have to be based on how many packages could benefit from it. \n\nIt must be an incredibly low risk package to add. \n\nDave",
     "created_at": "2010-09-16T19:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -119,6 +117,7 @@ archive/issue_comments_098576.json:
 
 Replying to [comment:4 jason]:
 > Yes, I'm thinking (according to guidelines) optional for now, standard after a probationary period.
+
 
 Yes, according to guidelines it should be optional for a while. But there have been exceptions to that. Since it does not actually link to anything in Sage, and would only be called when running spkg-check, I think one could argue the risk is minimal. In contrast it would allow a number of packages to be checked. 
 
@@ -153,7 +152,7 @@ Whether or not it should be standard, I agree that we need to at least have it o
 archive/issue_comments_098578.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Whether or not it should be standard, I agree that we need to at least have it optional so that it becomes more 'Sage-ic' (totally not the right adjective, but I'm groping here) to test several fundamental python packages from within Sage.  Also, it is needed to test some potential other packages, such as Brian (#9675), which is where I originally found out about this.\n\nI installed the package and tried it to test Brian, and it worked perfectly. However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. (see the page [Producing New Sage Packages](http://www.sagemath.org/doc/developer/producing_spkgs.html) to see how it should be).",
+    "body": "Replying to [comment:6 kcrisman]:\n> Whether or not it should be standard, I agree that we need to at least have it optional so that it becomes more 'Sage-ic' (totally not the right adjective, but I'm groping here) to test several fundamental python packages from within Sage.  Also, it is needed to test some potential other packages, such as Brian (#9675), which is where I originally found out about this.\n\n\nI installed the package and tried it to test Brian, and it worked perfectly. However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. (see the page [Producing New Sage Packages](http://www.sagemath.org/doc/developer/producing_spkgs.html) to see how it should be).",
     "created_at": "2010-09-19T18:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -165,6 +164,7 @@ archive/issue_comments_098578.json:
 Replying to [comment:6 kcrisman]:
 > Whether or not it should be standard, I agree that we need to at least have it optional so that it becomes more 'Sage-ic' (totally not the right adjective, but I'm groping here) to test several fundamental python packages from within Sage.  Also, it is needed to test some potential other packages, such as Brian (#9675), which is where I originally found out about this.
 
+
 I installed the package and tried it to test Brian, and it worked perfectly. However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. (see the page [Producing New Sage Packages](http://www.sagemath.org/doc/developer/producing_spkgs.html) to see how it should be).
 
 
@@ -174,7 +174,7 @@ I installed the package and tried it to test Brian, and it worked perfectly. How
 archive/issue_comments_098579.json:
 ```json
 {
-    "body": "Replying to [comment:7 uri]:\n> [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n\n? Of course we first have to produce an spkg, be it optional or (later) standard.\n\nOr did I miss something?",
+    "body": "Replying to [comment:7 uri]:\n> [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n\n\n? Of course we first have to produce an spkg, be it optional or (later) standard.\n\nOr did I miss something?",
     "created_at": "2010-09-20T02:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -185,6 +185,7 @@ archive/issue_comments_098579.json:
 
 Replying to [comment:7 uri]:
 > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]
+
 
 ? Of course we first have to produce an spkg, be it optional or (later) standard.
 
@@ -215,7 +216,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_098581.json:
 ```json
 {
-    "body": "> > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n> \n> ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> \n> Or did I miss something?\n\nNo, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)",
+    "body": "> > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n\n> \n> ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> \n> Or did I miss something?\n\n\nNo, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)",
     "created_at": "2010-09-20T02:51:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -225,10 +226,12 @@ archive/issue_comments_098581.json:
 ```
 
 > > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]
+
 > 
 > ? Of course we first have to produce an spkg, be it optional or (later) standard.
 > 
 > Or did I miss something?
+
 
 No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)
 
@@ -239,7 +242,7 @@ No, I think that uri was perhaps misunderstanding jason's directions to use nose
 archive/issue_comments_098582.json:
 ```json
 {
-    "body": "Replying to [comment:9 kcrisman]:\n> No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.\n\nYeah, an spkg just containing `spkg-install` which is\n\n```\nwget http://code.google.com/p/python-nose/downloads/detail?name=nose-0.11.3.tar.gz\ntar xzvf nose-0.11.3.tar.gz\ncd nose-0.11.3\nsage -python setup.py install  \n```\n\n\n:D",
+    "body": "Replying to [comment:9 kcrisman]:\n> No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.\n\n\nYeah, an spkg just containing `spkg-install` which is\n\n```\nwget http://code.google.com/p/python-nose/downloads/detail?name=nose-0.11.3.tar.gz\ntar xzvf nose-0.11.3.tar.gz\ncd nose-0.11.3\nsage -python setup.py install  \n```\n\n:D",
     "created_at": "2010-09-20T03:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -251,6 +254,7 @@ archive/issue_comments_098582.json:
 Replying to [comment:9 kcrisman]:
 > No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.
 
+
 Yeah, an spkg just containing `spkg-install` which is
 
 ```
@@ -259,7 +263,6 @@ tar xzvf nose-0.11.3.tar.gz
 cd nose-0.11.3
 sage -python setup.py install  
 ```
-
 
 :D
 
@@ -288,7 +291,7 @@ Ok, we should concatenate the lines with `&&` to make it more robust...
 archive/issue_comments_098584.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> Replying to [comment:7 uri]:\n> > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n> \n> ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> \n> Or did I miss something?\n\nOh, right, I missunderstood... sorry :)",
+    "body": "Replying to [comment:8 leif]:\n> Replying to [comment:7 uri]:\n> > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n\n> \n> ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> \n> Or did I miss something?\n\n\nOh, right, I missunderstood... sorry :)",
     "created_at": "2010-09-20T08:23:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -300,10 +303,12 @@ archive/issue_comments_098584.json:
 Replying to [comment:8 leif]:
 > Replying to [comment:7 uri]:
 > > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]
+
 > 
 > ? Of course we first have to produce an spkg, be it optional or (later) standard.
 > 
 > Or did I miss something?
+
 
 Oh, right, I missunderstood... sorry :)
 
@@ -314,7 +319,7 @@ Oh, right, I missunderstood... sorry :)
 archive/issue_comments_098585.json:
 ```json
 {
-    "body": "Replying to [comment:9 kcrisman]:\n> > > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n> > \n> > ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> > \n> > Or did I miss something?\n> \n> No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)\n\nYep, the point of the instructions was to show that even without an spkg, using nose \"is fairly simple without an spkg\".  Of course, you can't download something in the spkg, so those instructions would not work for an spkg.  However, it would be a very generic spkg-install file that would basically do the normal standard checks and then run \"python setup.py install\".",
+    "body": "Replying to [comment:9 kcrisman]:\n> > > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]\n\n> > \n> > ? Of course we first have to produce an spkg, be it optional or (later) standard.\n> > \n> > Or did I miss something?\n\n> \n> No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)\n\n\nYep, the point of the instructions was to show that even without an spkg, using nose \"is fairly simple without an spkg\".  Of course, you can't download something in the spkg, so those instructions would not work for an spkg.  However, it would be a very generic spkg-install file that would basically do the normal standard checks and then run \"python setup.py install\".",
     "created_at": "2010-09-20T11:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -325,12 +330,15 @@ archive/issue_comments_098585.json:
 
 Replying to [comment:9 kcrisman]:
 > > > [...] However, I think some changes should be made in order to fit the structure of Sage packages: all the code should be in a directory named src/, it lacks the .hg folder, the .hgignore and SPKG.txt files, etc. [...]
+
 > > 
 > > ? Of course we first have to produce an spkg, be it optional or (later) standard.
 > > 
 > > Or did I miss something?
+
 > 
 > No, I think that uri was perhaps misunderstanding jason's directions to use nose outside of Sage to be a suggestion for how it would become a Sage package.  No harm done in reminding us of the official rules, though :)
+
 
 Yep, the point of the instructions was to show that even without an spkg, using nose "is fairly simple without an spkg".  Of course, you can't download something in the spkg, so those instructions would not work for an spkg.  However, it would be a very generic spkg-install file that would basically do the normal standard checks and then run "python setup.py install".
 
@@ -341,7 +349,7 @@ Yep, the point of the instructions was to show that even without an spkg, using 
 archive/issue_comments_098586.json:
 ```json
 {
-    "body": "I tried using nose, and it was very interesting.  Tested Brian on two different boxes, and then tested both numpy and scipy on OS X 10.6 - discovered no errors on the first, and a fair number on the second!  So I think that there should be no doubt this could go straight to optional if an spkg was made.\n\nI couldn't do\n\n```\nimport matplotlib\nmatplotlib.test()\n```\n\nbecause for some reason our matplotlib doesn't have this method.\n\nMuch less importantly, I should also point out that on OS X `wget` is not a builtin, though I have an alias `curl -O` that seems to accomplish the same purpose.  I just downloaded and double-clicked, actually :)",
+    "body": "I tried using nose, and it was very interesting.  Tested Brian on two different boxes, and then tested both numpy and scipy on OS X 10.6 - discovered no errors on the first, and a fair number on the second!  So I think that there should be no doubt this could go straight to optional if an spkg was made.\n\nI couldn't do\n\n```\nimport matplotlib\nmatplotlib.test()\n```\nbecause for some reason our matplotlib doesn't have this method.\n\nMuch less importantly, I should also point out that on OS X `wget` is not a builtin, though I have an alias `curl -O` that seems to accomplish the same purpose.  I just downloaded and double-clicked, actually :)",
     "created_at": "2010-09-21T01:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -358,7 +366,6 @@ I couldn't do
 import matplotlib
 matplotlib.test()
 ```
-
 because for some reason our matplotlib doesn't have this method.
 
 Much less importantly, I should also point out that on OS X `wget` is not a builtin, though I have an alias `curl -O` that seems to accomplish the same purpose.  I just downloaded and double-clicked, actually :)
@@ -534,7 +541,7 @@ patch for spkg, for review only (version 1.1.3)
 archive/issue_comments_098596.json:
 ```json
 {
-    "body": "> I've now also prepared a version from git. This one fails its own self tests, though ;)\nInteresting!\n\nYou can try using it with the brian optional spkg, and I believe numpy and mpl also use this?",
+    "body": "> I've now also prepared a version from git. This one fails its own self tests, though ;)\n\nInteresting!\n\nYou can try using it with the brian optional spkg, and I believe numpy and mpl also use this?",
     "created_at": "2012-06-15T01:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -544,6 +551,7 @@ archive/issue_comments_098596.json:
 ```
 
 > I've now also prepared a version from git. This one fails its own self tests, though ;)
+
 Interesting!
 
 You can try using it with the brian optional spkg, and I believe numpy and mpl also use this?
@@ -627,7 +635,7 @@ Changing keywords from "" to "sd41".
 archive/issue_comments_098601.json:
 ```json
 {
-    "body": "This is ridiculous.  Nose works fine at testing things on sage.math.   It certainly finds various errors and warnings - apparently scipy generates a number as well, I just tried it.\n\nThe issue with it not passing its own tests is not so good, and I can confirm this in both cases.  On the plus side, it only breaks the Sage installation process in the 1.1.3, so I would say let's go with the 1.1.2 for now.\n\n----\n\nI do get something weird, hopefully unrelated to nose itself, but instead related to our defaults for matplotlib.\n\n```\n\nkcrisman@sage:~/sage-5.1.beta1-boxen-x86_64-Linux$ ./sage -c 'import matplotlib; matplotlib.test()'\n======================================================================\nERROR: Failure: OSError (No such file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/import matplotlib; matplotlib.test())\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/failure.py\", line 39, in runTest\n    raise self.exc_class(self.exc_val)\nOSError: No such file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/import matplotlib; matplotlib.test()\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n\nsage: import matplotlib  \nsage: matplotlib.test()\n======================================================================\nERROR: Failure: ValueError (Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/loader.py\", line 213, in loadTestsFromFile\n    % filename)\nValueError: Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\nFalse\n```\n\n\n\nOn a computer without nose:\n\n```\n\nsage: matplotlib.test()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/karl-dietercrisman/Downloads/sage-5.1.beta6/<ipython console> in <module>()\n\n/Users/.../sage-5.1.beta6/local/lib/python2.7/site-packages/matplotlib/__init__.pyc in test(verbosity)\n    986 def test(verbosity=0):\n    987     \"\"\"run the matplotlib test suite\"\"\"\n--> 988     import nose\n    989     import nose.plugins.builtin\n    990     from testing.noseclasses import KnownFailure\n\nImportError: No module named nose\n```\n\n\nI think that in matplotlib's lib/__init__.py\n\n```\n\n    success = nose.run( defaultTest=default_test_modules,\n                        config=config,\n                        )\n```\n\nwe aren't using the right default modules, they aren't imported or something.  So it goes back to just looking at `.` for the default test module - I get the same thing.\n\n```\n\nsage: nose.run(defaultTest='.')                 \nE\n======================================================================\nERROR: Failure: ValueError (Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/loader.py\", line 213, in loadTestsFromFile\n    % filename)\nValueError: Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\nFalse\n```\n\n\nCan you see a reason why this shouldn't have positive review?  I just think this must be a problem in how we're dealing with mpl.  I'm surprised it does this; we only removed the baseline images, not the testing scripts!",
+    "body": "This is ridiculous.  Nose works fine at testing things on sage.math.   It certainly finds various errors and warnings - apparently scipy generates a number as well, I just tried it.\n\nThe issue with it not passing its own tests is not so good, and I can confirm this in both cases.  On the plus side, it only breaks the Sage installation process in the 1.1.3, so I would say let's go with the 1.1.2 for now.\n\n---\n\nI do get something weird, hopefully unrelated to nose itself, but instead related to our defaults for matplotlib.\n\n```\n\nkcrisman@sage:~/sage-5.1.beta1-boxen-x86_64-Linux$ ./sage -c 'import matplotlib; matplotlib.test()'\n======================================================================\nERROR: Failure: OSError (No such file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/import matplotlib; matplotlib.test())\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/failure.py\", line 39, in runTest\n    raise self.exc_class(self.exc_val)\nOSError: No such file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/import matplotlib; matplotlib.test()\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n\nsage: import matplotlib  \nsage: matplotlib.test()\n======================================================================\nERROR: Failure: ValueError (Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/loader.py\", line 213, in loadTestsFromFile\n    % filename)\nValueError: Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\nFalse\n```\n\n\nOn a computer without nose:\n\n```\n\nsage: matplotlib.test()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/karl-dietercrisman/Downloads/sage-5.1.beta6/<ipython console> in <module>()\n\n/Users/.../sage-5.1.beta6/local/lib/python2.7/site-packages/matplotlib/__init__.pyc in test(verbosity)\n    986 def test(verbosity=0):\n    987     \"\"\"run the matplotlib test suite\"\"\"\n--> 988     import nose\n    989     import nose.plugins.builtin\n    990     from testing.noseclasses import KnownFailure\n\nImportError: No module named nose\n```\n\nI think that in matplotlib's lib/__init__.py\n\n```\n\n    success = nose.run( defaultTest=default_test_modules,\n                        config=config,\n                        )\n```\nwe aren't using the right default modules, they aren't imported or something.  So it goes back to just looking at `.` for the default test module - I get the same thing.\n\n```\n\nsage: nose.run(defaultTest='.')                 \nE\n======================================================================\nERROR: Failure: ValueError (Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/local/lib/python2.7/site-packages/nose-1.1.2-py2.7.egg/nose/loader.py\", line 213, in loadTestsFromFile\n    % filename)\nValueError: Unable to load tests from file /home/kcrisman/sage-5.1.beta1-boxen-x86_64-Linux/sage\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\nFalse\n```\n\nCan you see a reason why this shouldn't have positive review?  I just think this must be a problem in how we're dealing with mpl.  I'm surprised it does this; we only removed the baseline images, not the testing scripts!",
     "created_at": "2012-07-05T17:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
@@ -640,7 +648,7 @@ This is ridiculous.  Nose works fine at testing things on sage.math.   It certai
 
 The issue with it not passing its own tests is not so good, and I can confirm this in both cases.  On the plus side, it only breaks the Sage installation process in the 1.1.3, so I would say let's go with the 1.1.2 for now.
 
-----
+---
 
 I do get something weird, hopefully unrelated to nose itself, but instead related to our defaults for matplotlib.
 
@@ -678,7 +686,6 @@ False
 ```
 
 
-
 On a computer without nose:
 
 ```
@@ -699,7 +706,6 @@ ImportError                               Traceback (most recent call last)
 ImportError: No module named nose
 ```
 
-
 I think that in matplotlib's lib/__init__.py
 
 ```
@@ -708,7 +714,6 @@ I think that in matplotlib's lib/__init__.py
                         config=config,
                         )
 ```
-
 we aren't using the right default modules, they aren't imported or something.  So it goes back to just looking at `.` for the default test module - I get the same thing.
 
 ```
@@ -729,7 +734,6 @@ Ran 1 test in 0.001s
 FAILED (errors=1)
 False
 ```
-
 
 Can you see a reason why this shouldn't have positive review?  I just think this must be a problem in how we're dealing with mpl.  I'm surprised it does this; we only removed the baseline images, not the testing scripts!
 

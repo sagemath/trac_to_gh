@@ -3,7 +3,7 @@
 archive/issues_007975.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI just noticed that dsage is completely broken in sage-4.3 and sage-4.3.1.rc0, etc.:\n\n```\nsage: dsage.setup()\nsage: D = dsage.start_all()\nsage: a = D('2+3')\nBOOM?\nsage: a\nBOOM!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7975\n\n",
+    "body": "Assignee: tbd\n\nI just noticed that dsage is completely broken in sage-4.3 and sage-4.3.1.rc0, etc.:\n\n```\nsage: dsage.setup()\nsage: D = dsage.start_all()\nsage: a = D('2+3')\nBOOM?\nsage: a\nBOOM!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7975\n\n",
     "created_at": "2010-01-18T12:42:39Z",
     "labels": [
         "component: packages: standard",
@@ -29,7 +29,6 @@ BOOM?
 sage: a
 BOOM!
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7975
 

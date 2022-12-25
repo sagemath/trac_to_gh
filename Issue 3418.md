@@ -83,7 +83,7 @@ Other than that, it looks good to go in.
 archive/issue_comments_024014.json:
 ```json
 {
-    "body": "Oh, the doctest for the ValueError would look something like this:\n\n\n```\nsage: t = Tableau([[1,2],[2]]) \nsage: t.promotion(3) \nTraceback (most recent call last):\n...\nValueError: Tableaux is not recutangular\n\n```\n",
+    "body": "Oh, the doctest for the ValueError would look something like this:\n\n```\nsage: t = Tableau([[1,2],[2]]) \nsage: t.promotion(3) \nTraceback (most recent call last):\n...\nValueError: Tableaux is not recutangular\n\n```",
     "created_at": "2008-06-13T18:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
@@ -94,7 +94,6 @@ archive/issue_comments_024014.json:
 
 Oh, the doctest for the ValueError would look something like this:
 
-
 ```
 sage: t = Tableau([[1,2],[2]]) 
 sage: t.promotion(3) 
@@ -103,7 +102,6 @@ Traceback (most recent call last):
 ValueError: Tableaux is not recutangular
 
 ```
-
 
 
 

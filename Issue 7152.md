@@ -3,7 +3,7 @@
 archive/issues_007152.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mraum@mpim-bonn.mpg.de @malb @wjp\n\nKeywords: monomials, multivariate polynomial ring, coercion\n\nUsing implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.\n\n\n```\nK.<rho> = NumberField(x**2 + 1)\nR.<x,y> = QQ[]\np = rho*x\nq = x\np.monomials()\n ...\nq.monomials()\n ...\np.monomials()\n Segmentation Fault\n```\n\n\nGoing back to line 5 you can avoid this by\n\n```\np.parent()(p).monomials()\n ...\nq.parent()(q).monomials()\n ...\np.parent()(p).monomials()\n ...\n```\n\nThis might be used as a workaround.\n\nIf no implicite coercion is involved, everything works fine, i.e. use\n\n```\nR.<x,y> = K[]\n```\n\n\nThis is most probably related to #6160.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7152\n\n",
+    "body": "Assignee: tbd\n\nCC:  mraum@mpim-bonn.mpg.de @malb @wjp\n\nKeywords: monomials, multivariate polynomial ring, coercion\n\nUsing implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.\n\n```\nK.<rho> = NumberField(x**2 + 1)\nR.<x,y> = QQ[]\np = rho*x\nq = x\np.monomials()\n ...\nq.monomials()\n ...\np.monomials()\n Segmentation Fault\n```\n\nGoing back to line 5 you can avoid this by\n\n```\np.parent()(p).monomials()\n ...\nq.parent()(q).monomials()\n ...\np.parent()(p).monomials()\n ...\n```\nThis might be used as a workaround.\n\nIf no implicite coercion is involved, everything works fine, i.e. use\n\n```\nR.<x,y> = K[]\n```\n\nThis is most probably related to #6160.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7152\n\n",
     "created_at": "2009-10-08T08:11:11Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ Keywords: monomials, multivariate polynomial ring, coercion
 
 Using implicite coercion and then calling monomials might cause a segmentation fault. This is a side effect.
 
-
 ```
 K.<rho> = NumberField(x**2 + 1)
 R.<x,y> = QQ[]
@@ -38,7 +37,6 @@ p.monomials()
  Segmentation Fault
 ```
 
-
 Going back to line 5 you can avoid this by
 
 ```
@@ -49,7 +47,6 @@ q.parent()(q).monomials()
 p.parent()(p).monomials()
  ...
 ```
-
 This might be used as a workaround.
 
 If no implicite coercion is involved, everything works fine, i.e. use
@@ -57,7 +54,6 @@ If no implicite coercion is involved, everything works fine, i.e. use
 ```
 R.<x,y> = K[]
 ```
-
 
 This is most probably related to #6160.
 

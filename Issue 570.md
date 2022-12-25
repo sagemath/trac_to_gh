@@ -3,7 +3,7 @@
 archive/issues_000570.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage -t --long groups/perm_gps/cubegroup.py                 **********************************************************************\nFile \"cubegroup.py\", line 979:\n    sage: rubik.solve(state)  # long time; *computationally intensive* even for simple moves\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[2]>\", line 1, in <module>\n        rubik.solve(state)  # long time; *computationally intensive* even for simple moves###line 979:\n    sage: rubik.solve(state)  # long time; *computationally intensive* even for simple moves\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\", line 999, in solve\n        soln = hom.PreImagesRepresentative(gap(str(g)))\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 674, in __call__\n        return cls(self, x)\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 904, in __init__\n        raise TypeError, x\n    TypeError: Gap produced error output\n    Syntax error: literal expected in /home/was/.sage//temp/ubuntu/13323//interfac\\\n    e//tmp line 1\n    $sage14:={'right': [[19, 29, 32], [18, 0, 31], [17, 28, 30]], 'up': [[3, 5, 38\\\n    ], [2, 0, 36], [1, 4, 25]], 'back': [[48, 26, 27], [45, 0, 37], [43, 39, 40]],\\\n     'down': [[41, 42, 11], [44, 0, 21], [46, 47, 24]], 'front': [[9, 10, 8], [20,\\\n     0, 7], [22, 23, 6]], 'left': [[33, 34, 35], [12, 0, 13], [14, 15, 16]]};;\n             ^\n\n       executing Read(\"/home/was/.sage//temp/ubuntu/13323//interface//tmp\");\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_cubegroup.py\n         [13.5 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/570\n\n",
+    "body": "Assignee: somebody\n\n```\nsage -t --long groups/perm_gps/cubegroup.py                 **********************************************************************\nFile \"cubegroup.py\", line 979:\n    sage: rubik.solve(state)  # long time; *computationally intensive* even for simple moves\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[2]>\", line 1, in <module>\n        rubik.solve(state)  # long time; *computationally intensive* even for simple moves###line 979:\n    sage: rubik.solve(state)  # long time; *computationally intensive* even for simple moves\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/groups/perm_gps/cubegroup.py\", line 999, in solve\n        soln = hom.PreImagesRepresentative(gap(str(g)))\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 674, in __call__\n        return cls(self, x)\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 904, in __init__\n        raise TypeError, x\n    TypeError: Gap produced error output\n    Syntax error: literal expected in /home/was/.sage//temp/ubuntu/13323//interfac\\\n    e//tmp line 1\n    $sage14:={'right': [[19, 29, 32], [18, 0, 31], [17, 28, 30]], 'up': [[3, 5, 38\\\n    ], [2, 0, 36], [1, 4, 25]], 'back': [[48, 26, 27], [45, 0, 37], [43, 39, 40]],\\\n     'down': [[41, 42, 11], [44, 0, 21], [46, 47, 24]], 'front': [[9, 10, 8], [20,\\\n     0, 7], [22, 23, 6]], 'left': [[33, 34, 35], [12, 0, 13], [14, 15, 16]]};;\n             ^\n\n       executing Read(\"/home/was/.sage//temp/ubuntu/13323//interface//tmp\");\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_cubegroup.py\n         [13.5 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/570\n\n",
     "created_at": "2007-09-02T17:39:12Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000570.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 sage -t --long groups/perm_gps/cubegroup.py                 **********************************************************************
@@ -54,7 +53,6 @@ For whitespace errors, see the file .doctest_cubegroup.py
          [13.5 s]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/570
 
 
@@ -84,7 +82,7 @@ Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_002942.json:
 ```json
 {
-    "body": "Fixed the docstring and now all tests pass:\n\n\n```\nwdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-cube/sage/groups/perm_gps/cubegroup.py\"\nsage -t --long devel/sage-cube/sage/groups/perm_gps/cubegroup.py\n         [31.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 31.2 seconds\n```\n",
+    "body": "Fixed the docstring and now all tests pass:\n\n```\nwdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-cube/sage/groups/perm_gps/cubegroup.py\"\nsage -t --long devel/sage-cube/sage/groups/perm_gps/cubegroup.py\n         [31.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 31.2 seconds\n```",
     "created_at": "2007-09-06T01:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
@@ -95,7 +93,6 @@ archive/issue_comments_002942.json:
 
 Fixed the docstring and now all tests pass:
 
-
 ```
 wdj@wooster:~/sagefiles/sage-2.8.3.rc3> ./sage -t --long "/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-cube/sage/groups/perm_gps/cubegroup.py"
 sage -t --long devel/sage-cube/sage/groups/perm_gps/cubegroup.py
@@ -105,7 +102,6 @@ sage -t --long devel/sage-cube/sage/groups/perm_gps/cubegroup.py
 All tests passed!
 Total time for all tests: 31.2 seconds
 ```
-
 
 
 

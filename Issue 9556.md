@@ -3,7 +3,7 @@
 archive/issues_009556.json:
 ```json
 {
-    "body": "Assignee: segfaulting doctests\n\nCC:  @burcin @kcrisman @vbraun @eviatarbach\n\nKeywords: symbolic expression dynamic attribute\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.\n\n**__Example__**\n\n\n```\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n...     def __init__(self):\n...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n...     def some_function_name(self, *args):\n...         return len(args)\n...\nsage: ex_func = ExampleBuiltin()\nsage: ex_func\nex_func\n```\n\n\nWe obtain a symbolic expression by calling `ex_func`:\n\n```\nsage: e = ex_func(x,x+1, x+2)\nsage: type(e)\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nWe add a callable and a non-callable attribute to `ex_func`:\n\n```\nsage: def some_function(slf, *L): print slf,'called with',L\n...\nsage: ex_func.foo_bar = some_function\nsage: ex_func.bar_foo = 4\n```\n\n\nNow, both the new method and the callable attribute `foo_bar` of\n`ex_func` are available from `e`, but not the non-callable:\n\n\n```\nsage: e.some_function_name()\n3\nsage: e.foo_bar()\nex_func called with (x, x + 1, x + 2)\nsage: e.bar_foo\nTraceback (most recent call last):\n...\nAttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'\n```\n\n\nTab completion  and introspection work:\n\n\n```\nsage: 'foo_bar' in dir(e)     # indirect doctest\nTrue\nsage: 'some_function_name' in dir(e)\nTrue\nsage: 'bar_foo' in dir(e)\nFalse\nsage: import sagenb.misc.support as s\nsage: s.completions('e.some', globals(), system='python')\n['e.some_function_name']\n```\n\n\n**__Problems__**\n\nWhen I ran `sage -testall`, several doctests segfaulted:\n\n```\n        sage -t  -verbose \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t  -verbose \"devel/sage/sage/games/hexad.py\"\n        sage -t  -verbose \"devel/sage/sage/matrix/tests.py\"\n        sage -t  -verbose \"devel/sage/sage/misc/sage_eval.py\"\n        sage -t  -verbose \"devel/sage/sage/plot/animate.py\"\n        sage -t  -verbose \"devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\"\n        sage -t  -verbose \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n```\n\n\nI tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
+    "body": "Assignee: segfaulting doctests\n\nCC:  @burcin @kcrisman @vbraun @eviatarbach\n\nKeywords: symbolic expression dynamic attribute\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.\n\n**__Example__**\n\n```\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n...     def __init__(self):\n...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n...     def some_function_name(self, *args):\n...         return len(args)\n...\nsage: ex_func = ExampleBuiltin()\nsage: ex_func\nex_func\n```\n\nWe obtain a symbolic expression by calling `ex_func`:\n\n```\nsage: e = ex_func(x,x+1, x+2)\nsage: type(e)\n<type 'sage.symbolic.expression.Expression'>\n```\n\nWe add a callable and a non-callable attribute to `ex_func`:\n\n```\nsage: def some_function(slf, *L): print slf,'called with',L\n...\nsage: ex_func.foo_bar = some_function\nsage: ex_func.bar_foo = 4\n```\n\nNow, both the new method and the callable attribute `foo_bar` of\n`ex_func` are available from `e`, but not the non-callable:\n\n```\nsage: e.some_function_name()\n3\nsage: e.foo_bar()\nex_func called with (x, x + 1, x + 2)\nsage: e.bar_foo\nTraceback (most recent call last):\n...\nAttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'\n```\n\nTab completion  and introspection work:\n\n```\nsage: 'foo_bar' in dir(e)     # indirect doctest\nTrue\nsage: 'some_function_name' in dir(e)\nTrue\nsage: 'bar_foo' in dir(e)\nFalse\nsage: import sagenb.misc.support as s\nsage: s.completions('e.some', globals(), system='python')\n['e.some_function_name']\n```\n\n**__Problems__**\n\nWhen I ran `sage -testall`, several doctests segfaulted:\n\n```\n        sage -t  -verbose \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t  -verbose \"devel/sage/sage/games/hexad.py\"\n        sage -t  -verbose \"devel/sage/sage/matrix/tests.py\"\n        sage -t  -verbose \"devel/sage/sage/misc/sage_eval.py\"\n        sage -t  -verbose \"devel/sage/sage/plot/animate.py\"\n        sage -t  -verbose \"devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\"\n        sage -t  -verbose \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n```\n\nI tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
     "created_at": "2010-07-20T12:21:13Z",
     "labels": [
         "component: symbolics"
@@ -25,7 +25,6 @@ Let `e` be a symbolic expression. It may happen that `e.operator()` has a certai
 
 **__Example__**
 
-
 ```
 sage: from sage.symbolic.function import BuiltinFunction
 sage: class ExampleBuiltin(BuiltinFunction):
@@ -39,7 +38,6 @@ sage: ex_func
 ex_func
 ```
 
-
 We obtain a symbolic expression by calling `ex_func`:
 
 ```
@@ -47,7 +45,6 @@ sage: e = ex_func(x,x+1, x+2)
 sage: type(e)
 <type 'sage.symbolic.expression.Expression'>
 ```
-
 
 We add a callable and a non-callable attribute to `ex_func`:
 
@@ -58,10 +55,8 @@ sage: ex_func.foo_bar = some_function
 sage: ex_func.bar_foo = 4
 ```
 
-
 Now, both the new method and the callable attribute `foo_bar` of
 `ex_func` are available from `e`, but not the non-callable:
-
 
 ```
 sage: e.some_function_name()
@@ -74,9 +69,7 @@ Traceback (most recent call last):
 AttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'
 ```
 
-
 Tab completion  and introspection work:
-
 
 ```
 sage: 'foo_bar' in dir(e)     # indirect doctest
@@ -89,7 +82,6 @@ sage: import sagenb.misc.support as s
 sage: s.completions('e.some', globals(), system='python')
 ['e.some_function_name']
 ```
-
 
 **__Problems__**
 
@@ -104,7 +96,6 @@ When I ran `sage -testall`, several doctests segfaulted:
         sage -t  -verbose "devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py"
         sage -t  -verbose "devel/sage/sage/rings/polynomial/polynomial_element.pyx"
 ```
-
 
 I tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?
 
@@ -211,7 +202,7 @@ It would be nice to have a segfaulting example that works interactively.
 archive/issue_comments_091962.json:
 ```json
 {
-    "body": "What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations?  It seems like the first case is what you really want.\n\nWe currently have all of the machinery to do this and it's used for the category code.  Using this, you would have something like the following:\n\n\n```\nclass ExampleBuiltin(BuiltinFunction):\n    def __init__(self):\n        BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n \n    class EvaluationMethods:\n        def some_function_name(self):\n            return len(self.operands())\n```\n",
+    "body": "What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations?  It seems like the first case is what you really want.\n\nWe currently have all of the machinery to do this and it's used for the category code.  Using this, you would have something like the following:\n\n```\nclass ExampleBuiltin(BuiltinFunction):\n    def __init__(self):\n        BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n \n    class EvaluationMethods:\n        def some_function_name(self):\n            return len(self.operands())\n```",
     "created_at": "2010-07-20T13:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -223,7 +214,6 @@ archive/issue_comments_091962.json:
 What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations?  It seems like the first case is what you really want.
 
 We currently have all of the machinery to do this and it's used for the category code.  Using this, you would have something like the following:
-
 
 ```
 class ExampleBuiltin(BuiltinFunction):
@@ -237,13 +227,12 @@ class ExampleBuiltin(BuiltinFunction):
 
 
 
-
 ---
 
 archive/issue_comments_091963.json:
 ```json
 {
-    "body": "I did a little mockup using this idea.\n\n\n```\n\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n....:         def __init__(self):\n....:             BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n....:     class EvaluationMethods:\n....:             def some_function_name(self):\n....:                 return len(self.operands())\n....: \nsage: ex_func = ExampleBuiltin()\nsage: f = ex_func(x, x+1, x+2)\nsage: f.some_function_name()\n3\nsage: abs(f)\nabs(ex_func(x, x + 1, x + 2))\n```\n",
+    "body": "I did a little mockup using this idea.\n\n```\n\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n....:         def __init__(self):\n....:             BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n....:     class EvaluationMethods:\n....:             def some_function_name(self):\n....:                 return len(self.operands())\n....: \nsage: ex_func = ExampleBuiltin()\nsage: f = ex_func(x, x+1, x+2)\nsage: f.some_function_name()\n3\nsage: abs(f)\nabs(ex_func(x, x + 1, x + 2))\n```",
     "created_at": "2010-07-20T13:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -253,7 +242,6 @@ archive/issue_comments_091963.json:
 ```
 
 I did a little mockup using this idea.
-
 
 ```
 
@@ -272,7 +260,6 @@ sage: f.some_function_name()
 sage: abs(f)
 abs(ex_func(x, x + 1, x + 2))
 ```
-
 
 
 
@@ -299,7 +286,7 @@ Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_091965.json:
 ```json
 {
-    "body": "Note that pickling also works:\n\n\n```\nsage: loads(dumps(ceil(x))).foo_bar()\n4\n```\n\n\nOne issue is that in order to get the dynamic features, you have to go through the __call__ method of the function.  Thus, you'd have to change Expression.__abs__\n\n\n```\n        return new_Expression_from_GEx(self._parent, g_abs(self._gobj))\n```\n\n\nto return the dynamic class version.  Similarly, unpickling old objects will just return an Expression object.",
+    "body": "Note that pickling also works:\n\n```\nsage: loads(dumps(ceil(x))).foo_bar()\n4\n```\n\nOne issue is that in order to get the dynamic features, you have to go through the __call__ method of the function.  Thus, you'd have to change Expression.__abs__\n\n```\n        return new_Expression_from_GEx(self._parent, g_abs(self._gobj))\n```\n\nto return the dynamic class version.  Similarly, unpickling old objects will just return an Expression object.",
     "created_at": "2010-07-20T14:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -310,20 +297,16 @@ archive/issue_comments_091965.json:
 
 Note that pickling also works:
 
-
 ```
 sage: loads(dumps(ceil(x))).foo_bar()
 4
 ```
 
-
 One issue is that in order to get the dynamic features, you have to go through the __call__ method of the function.  Thus, you'd have to change Expression.__abs__
-
 
 ```
         return new_Expression_from_GEx(self._parent, g_abs(self._gobj))
 ```
-
 
 to return the dynamic class version.  Similarly, unpickling old objects will just return an Expression object.
 
@@ -352,7 +335,7 @@ Also, all tests pass with this.
 archive/issue_comments_091967.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations? \n\nSorry that I was absent for some hours. \n\nUnfortunately I don't know what the real use case is. It was a suggestion of Burcin, and I merely tried to implement what he suggested. \n\nBurcin, could you comment on what is really expected?",
+    "body": "Replying to [comment:3 mhansen]:\n> What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations? \n\n\nSorry that I was absent for some hours. \n\nUnfortunately I don't know what the real use case is. It was a suggestion of Burcin, and I merely tried to implement what he suggested. \n\nBurcin, could you comment on what is really expected?",
     "created_at": "2010-07-20T19:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -363,6 +346,7 @@ archive/issue_comments_091967.json:
 
 Replying to [comment:3 mhansen]:
 > What is the typical use case for this?  Are you just looking for a place to put the functions for evaluated function?  Or do you really want the function to appear on both the function and its evaluations? 
+
 
 Sorry that I was absent for some hours. 
 
@@ -377,7 +361,7 @@ Burcin, could you comment on what is really expected?
 archive/issue_comments_091968.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> I did a little mockup using this idea.\n> \n> sage: f = ex_func(x, x+1, x+2)\n> sage: f.some_function_name()\n> 3\n> sage: abs(f)\n> abs(ex_func(x, x + 1, x + 2))\n\n... which seems like the correct answer to me. So, the fact that `ex_func` has an `_abs_` method helps to get the right answer for `f`.",
+    "body": "Replying to [comment:4 mhansen]:\n> I did a little mockup using this idea.\n> \n> sage: f = ex_func(x, x+1, x+2)\n> sage: f.some_function_name()\n> 3\n> sage: abs(f)\n> abs(ex_func(x, x + 1, x + 2))\n\n\n... which seems like the correct answer to me. So, the fact that `ex_func` has an `_abs_` method helps to get the right answer for `f`.",
     "created_at": "2010-07-20T19:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -394,6 +378,7 @@ Replying to [comment:4 mhansen]:
 > 3
 > sage: abs(f)
 > abs(ex_func(x, x + 1, x + 2))
+
 
 ... which seems like the correct answer to me. So, the fact that `ex_func` has an `_abs_` method helps to get the right answer for `f`.
 
@@ -584,7 +569,7 @@ Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attac
 archive/issue_comments_091978.json:
 ```json
 {
-    "body": "As discussed with Burcin, patch needs to move to a different ticket.\n\nAlso, unpacking goes too far and doesn't let me preserve SR objects. This leads to funny behavior for constant functions etc::\n\n```\nsage: o = (SR(1), x)\nsage: map(type, o)\n[sage.symbolic.expression.Expression, sage.symbolic.expression.Expression]\nsage: o = SR._force_pyobject(o)._unpack_operands()\nsage: map(type, o)\n[sage.rings.integer.Integer, sage.symbolic.expression.Expression]\n```\n",
+    "body": "As discussed with Burcin, patch needs to move to a different ticket.\n\nAlso, unpacking goes too far and doesn't let me preserve SR objects. This leads to funny behavior for constant functions etc::\n\n```\nsage: o = (SR(1), x)\nsage: map(type, o)\n[sage.symbolic.expression.Expression, sage.symbolic.expression.Expression]\nsage: o = SR._force_pyobject(o)._unpack_operands()\nsage: map(type, o)\n[sage.rings.integer.Integer, sage.symbolic.expression.Expression]\n```",
     "created_at": "2013-06-21T19:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
@@ -605,7 +590,6 @@ sage: o = SR._force_pyobject(o)._unpack_operands()
 sage: map(type, o)
 [sage.rings.integer.Integer, sage.symbolic.expression.Expression]
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_006524.json:
 ```json
 {
-    "body": "In new symbolics, ratio of two symbolic expressions involving derivative does not simplify\n\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = f(x).diff(x)*sin(x)\nsage: h/g\nsin(x)*D[0](f)(x)/D[0](f)(x)\n```\n\n\n\nHowever, for some ordering it does simplify\n\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = sin(x)*f(x).diff(x)\nsage: h/g\nsin(x)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6524\n\n",
+    "body": "In new symbolics, ratio of two symbolic expressions involving derivative does not simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = f(x).diff(x)*sin(x)\nsage: h/g\nsin(x)*D[0](f)(x)/D[0](f)(x)\n```\n\n\nHowever, for some ordering it does simplify\n\n```\nsage: f(x) = function('f', x)\nsage: g = f(x).diff(x)\nsage: h = sin(x)*f(x).diff(x)\nsage: h/g\nsin(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6524\n\n",
     "created_at": "2009-07-13T12:18:10Z",
     "labels": [
         "component: symbolics",
@@ -18,7 +18,6 @@ archive/issues_006524.json:
 ```
 In new symbolics, ratio of two symbolic expressions involving derivative does not simplify
 
-
 ```
 sage: f(x) = function('f', x)
 sage: g = f(x).diff(x)
@@ -28,9 +27,7 @@ sin(x)*D[0](f)(x)/D[0](f)(x)
 ```
 
 
-
 However, for some ordering it does simplify
-
 
 ```
 sage: f(x) = function('f', x)
@@ -39,7 +36,6 @@ sage: h = sin(x)*f(x).diff(x)
 sage: h/g
 sin(x)
 ```
-
 
 
 

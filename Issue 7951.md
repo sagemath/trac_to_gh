@@ -3,7 +3,7 @@
 archive/issues_007951.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @malb\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t\n-1\nsage: t*x\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10153)()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6988)()\n\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in no variables over Rational Field' and 'Multivariate Polynomial Ring in x, y over Rational Field'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7951\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @malb\n\n```\nsage: R.<x,y> = QQ[]\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t\n-1\nsage: t*x\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10153)()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6988)()\n\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in no variables over Rational Field' and 'Multivariate Polynomial Ring in x, y over Rational Field'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7951\n\n",
     "created_at": "2010-01-16T17:56:27Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_007951.json:
 Assignee: @aghitza
 
 CC:  @malb
-
 
 ```
 sage: R.<x,y> = QQ[]
@@ -89,7 +88,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069260.json:
 ```json
 {
-    "body": "Here is the cause:\n\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P('pi')\npi\nsage: type(P('pi'))\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nattachment:trac_7951-zero_variable_poly_coercion.patch has the fix.",
+    "body": "Here is the cause:\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P('pi')\npi\nsage: type(P('pi'))\n<type 'sage.symbolic.expression.Expression'>\n```\n\nattachment:trac_7951-zero_variable_poly_coercion.patch has the fix.",
     "created_at": "2010-01-17T22:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7951",
     "type": "issue_comment",
@@ -100,7 +99,6 @@ archive/issue_comments_069260.json:
 
 Here is the cause:
 
-
 ```
 sage: P = PolynomialRing(QQ,0,'')
 sage: P('pi')
@@ -108,7 +106,6 @@ pi
 sage: type(P('pi'))
 <type 'sage.symbolic.expression.Expression'>
 ```
-
 
 attachment:trac_7951-zero_variable_poly_coercion.patch has the fix.
 

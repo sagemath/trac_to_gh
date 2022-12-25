@@ -3,7 +3,7 @@
 archive/issues_008835.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn t2 we have some failures due to assumptions in doctests about the latex install.  As latex is not a prereq for sage, not having it shouldn't result in latex errors.  These should thus be marked\n\n\n```\n    # optional - latex\n```\n\n\nThe failures:\n\n\n```\nsage -t  -long \"devel/sage/sage/misc/latex.py\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1023:\n    sage: latex.has_file(\"article.cls\")\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1050:\n    sage: latex.check_file(\"article.cls\")\nExpected nothing\nGot:\n    <BLANKLINE>\n    Warning: `article.cls` is not part of this computer's TeX installation.\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1207:\n    sage: latex.extra_preamble()\nExpected:\n    '\\\\usepackage{xypic}\\n'\nGot:\n    ''\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_28\n   1 of   6 in __main__.example_29\n   1 of   6 in __main__.example_35\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_latex.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8835\n\n",
+    "body": "Assignee: tbd\n\nOn t2 we have some failures due to assumptions in doctests about the latex install.  As latex is not a prereq for sage, not having it shouldn't result in latex errors.  These should thus be marked\n\n```\n    # optional - latex\n```\n\nThe failures:\n\n```\nsage -t  -long \"devel/sage/sage/misc/latex.py\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1023:\n    sage: latex.has_file(\"article.cls\")\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1050:\n    sage: latex.check_file(\"article.cls\")\nExpected nothing\nGot:\n    <BLANKLINE>\n    Warning: `article.cls` is not part of this computer's TeX installation.\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/devel/sage/sage/misc/latex.py\", line 1207:\n    sage: latex.extra_preamble()\nExpected:\n    '\\\\usepackage{xypic}\\n'\nGot:\n    ''\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_28\n   1 of   6 in __main__.example_29\n   1 of   6 in __main__.example_35\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_latex.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8835\n\n",
     "created_at": "2010-05-01T06:18:36Z",
     "labels": [
         "component: doctest coverage",
@@ -21,14 +21,11 @@ Assignee: tbd
 
 On t2 we have some failures due to assumptions in doctests about the latex install.  As latex is not a prereq for sage, not having it shouldn't result in latex errors.  These should thus be marked
 
-
 ```
     # optional - latex
 ```
 
-
 The failures:
-
 
 ```
 sage -t  -long "devel/sage/sage/misc/latex.py"
@@ -61,7 +58,6 @@ Got:
 ***Test Failed*** 3 failures.
 For whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_latex.py
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8835
 

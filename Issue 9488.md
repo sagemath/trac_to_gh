@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9488
 archive/issue_comments_090943.json:
 ```json
 {
-    "body": "To work in accordance with the man page for GNU make, the following should also be acceptable\n\n\n```\nmake -j\n```\n\n\nin which case the number of threads is infinite - i.e. limited only by what the build system allows.",
+    "body": "To work in accordance with the man page for GNU make, the following should also be acceptable\n\n```\nmake -j\n```\n\nin which case the number of threads is infinite - i.e. limited only by what the build system allows.",
     "created_at": "2010-07-13T07:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_comment",
@@ -42,11 +42,9 @@ archive/issue_comments_090943.json:
 
 To work in accordance with the man page for GNU make, the following should also be acceptable
 
-
 ```
 make -j
 ```
-
 
 in which case the number of threads is infinite - i.e. limited only by what the build system allows.
 

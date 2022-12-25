@@ -329,7 +329,7 @@ Changing status from new to needs_review.
 archive/issue_comments_024922.json:
 ```json
 {
-    "body": "Replying to [comment:5 vbraun]:\n> I'm reopening this bug since people keep tripping over this issue. We need to fix this or we'll end up with every spkg working around the `RM=rm` issue.\n\nWell, is this a bug? \n\n> More and more packages will fail because of this issue as soon as upsteam re-runs autotools...\n\nThat's IMHO a problem of autotools. `$RM` is in general not supposed to *not return an error* on non-existing files; if autotools were a bit smarter, they would just add `-f` or whatever might be appropriate. If they redefine the meaning of `RM`, that's not Sage's problem in the first place; of course spkg maintainers would have to `unset RM` for upstream packages using (newer) autotools.\n\n\n> I'd be happy to give this a positive review. Maybe mabshoff can reconsider his objections?\n\nMichael has quit a while ago, though he perhaps still reads trac notifications... ;-)\n\n\nNote that redefining `RM` in `sage-env` could actually break other parts of Sage, not necessarily limited to spkgs, since e.g. removing a file which is expected to exist, but doesn't, without raising an error might hide other errors and cause arbitrary behavior.\n\nAlso, as Michael said, changing the default value in `sage-env` doesn't help if `RM` was already defined (intentionally or not) by the user, so w.r.t. autotools really *won't fix*. We have to `unset RM` (or add an appropriate flag to force deletion if it's not already contained) in `spkg-install`s of such packages anyway to be safe.\n\n\nI think we should prominently document this issue, and close this ticket again.",
+    "body": "Replying to [comment:5 vbraun]:\n> I'm reopening this bug since people keep tripping over this issue. We need to fix this or we'll end up with every spkg working around the `RM=rm` issue.\n\n\nWell, is this a bug? \n\n> More and more packages will fail because of this issue as soon as upsteam re-runs autotools...\n\n\nThat's IMHO a problem of autotools. `$RM` is in general not supposed to *not return an error* on non-existing files; if autotools were a bit smarter, they would just add `-f` or whatever might be appropriate. If they redefine the meaning of `RM`, that's not Sage's problem in the first place; of course spkg maintainers would have to `unset RM` for upstream packages using (newer) autotools.\n\n\n> I'd be happy to give this a positive review. Maybe mabshoff can reconsider his objections?\n\n\nMichael has quit a while ago, though he perhaps still reads trac notifications... ;-)\n\n\nNote that redefining `RM` in `sage-env` could actually break other parts of Sage, not necessarily limited to spkgs, since e.g. removing a file which is expected to exist, but doesn't, without raising an error might hide other errors and cause arbitrary behavior.\n\nAlso, as Michael said, changing the default value in `sage-env` doesn't help if `RM` was already defined (intentionally or not) by the user, so w.r.t. autotools really *won't fix*. We have to `unset RM` (or add an appropriate flag to force deletion if it's not already contained) in `spkg-install`s of such packages anyway to be safe.\n\n\nI think we should prominently document this issue, and close this ticket again.",
     "created_at": "2010-12-17T15:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -341,14 +341,17 @@ archive/issue_comments_024922.json:
 Replying to [comment:5 vbraun]:
 > I'm reopening this bug since people keep tripping over this issue. We need to fix this or we'll end up with every spkg working around the `RM=rm` issue.
 
+
 Well, is this a bug? 
 
 > More and more packages will fail because of this issue as soon as upsteam re-runs autotools...
+
 
 That's IMHO a problem of autotools. `$RM` is in general not supposed to *not return an error* on non-existing files; if autotools were a bit smarter, they would just add `-f` or whatever might be appropriate. If they redefine the meaning of `RM`, that's not Sage's problem in the first place; of course spkg maintainers would have to `unset RM` for upstream packages using (newer) autotools.
 
 
 > I'd be happy to give this a positive review. Maybe mabshoff can reconsider his objections?
+
 
 Michael has quit a while ago, though he perhaps still reads trac notifications... ;-)
 
@@ -385,7 +388,7 @@ Why does `RM` need to be defined at all?
 archive/issue_comments_024924.json:
 ```json
 {
-    "body": "Replying to [comment:8 jdemeyer]:\n> Why does `RM` need to be defined at all?\n\nBecause\n\n```sh\n${RM} some_file\n```\n\nwill (hopefully) fail if `RM` is not set or empty?\n\nImagine `some_file` was executable in that case...\n\n\n\n\nIt would be a bit odd to test and eventually set all such variables individually in every script that uses some of these, therefore we have `sage-env`.\n\nThough `CP`, `RM` etc. are meanwhile hardly used within Sage; perhaps because setting them isn't necessary on any proper OS...\n\nInstead, it would be better to have e.g. `EGREP`, (POSIX-conformant) `GREP` etc., detected / set by Sage's `configure`.",
+    "body": "Replying to [comment:8 jdemeyer]:\n> Why does `RM` need to be defined at all?\n\n\nBecause\n\n```sh\n${RM} some_file\n```\nwill (hopefully) fail if `RM` is not set or empty?\n\nImagine `some_file` was executable in that case...\n\n\n\n\nIt would be a bit odd to test and eventually set all such variables individually in every script that uses some of these, therefore we have `sage-env`.\n\nThough `CP`, `RM` etc. are meanwhile hardly used within Sage; perhaps because setting them isn't necessary on any proper OS...\n\nInstead, it would be better to have e.g. `EGREP`, (POSIX-conformant) `GREP` etc., detected / set by Sage's `configure`.",
     "created_at": "2010-12-17T17:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -397,12 +400,12 @@ archive/issue_comments_024924.json:
 Replying to [comment:8 jdemeyer]:
 > Why does `RM` need to be defined at all?
 
+
 Because
 
 ```sh
 ${RM} some_file
 ```
-
 will (hopefully) fail if `RM` is not set or empty?
 
 Imagine `some_file` was executable in that case...
@@ -443,7 +446,7 @@ Automake has an official list of variables that it looks at. Perhaps it is a bug
 archive/issue_comments_024926.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n> Because\n> {{{\n> #!sh\n> ${RM} some_file\n> }}}\n> will (hopefully) fail if `RM` is not set or empty?\n\nWhere is such code used?  My guess: nowhere.",
+    "body": "Replying to [comment:9 leif]:\n> Because\n> \n> ```\n> #!sh\n> ${RM} some_file\n> ```\n> will (hopefully) fail if `RM` is not set or empty?\n\n\nWhere is such code used?  My guess: nowhere.",
     "created_at": "2010-12-18T13:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -454,11 +457,13 @@ archive/issue_comments_024926.json:
 
 Replying to [comment:9 leif]:
 > Because
-> {{{
+> 
+> ```
 > #!sh
 > ${RM} some_file
-> }}}
+> ```
 > will (hopefully) fail if `RM` is not set or empty?
+
 
 Where is such code used?  My guess: nowhere.
 
@@ -469,7 +474,7 @@ Where is such code used?  My guess: nowhere.
 archive/issue_comments_024927.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> Replying to [comment:9 leif]:\n> > Because\n\n```sh\n${RM} some_file\n```\n\n> > will (hopefully) fail if `RM` is not set or empty?\n> \n> Where is such code used?  My guess: nowhere.\n\nE.g. Singular's `spkg-install` does. (It actually does `$RM -f ...`.)\n\nI wouldn't base such changes on guesses... ;-)",
+    "body": "Replying to [comment:11 jdemeyer]:\n> Replying to [comment:9 leif]:\n> > Because\n\n{{{#!sh\n${RM} some_file\n}}}\n> > will (hopefully) fail if `RM` is not set or empty?\n\n> \n> Where is such code used?  My guess: nowhere.\n\n\nE.g. Singular's `spkg-install` does. (It actually does `$RM -f ...`.)\n\nI wouldn't base such changes on guesses... ;-)",
     "created_at": "2010-12-26T18:33:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -482,13 +487,14 @@ Replying to [comment:11 jdemeyer]:
 > Replying to [comment:9 leif]:
 > > Because
 
-```sh
+{{{#!sh
 ${RM} some_file
-```
-
+}}}
 > > will (hopefully) fail if `RM` is not set or empty?
+
 > 
 > Where is such code used?  My guess: nowhere.
+
 
 E.g. Singular's `spkg-install` does. (It actually does `$RM -f ...`.)
 
@@ -501,7 +507,7 @@ I wouldn't base such changes on guesses... ;-)
 archive/issue_comments_024928.json:
 ```json
 {
-    "body": "For the record:\n\n```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$RM' */*\ngap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace\nmercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.\nsage_scripts-4.6.1.alpha3.p0/sage-env:if [ \"$RM\" = \"\" ]; then\nsingular-3-1-1-4.p3/spkg-install:        $RM -f LIB\nsingular-3-1-1-4.p3/spkg-install:    $RM -f Singular singular\nsingular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previous version of Singular.\n```\n",
+    "body": "For the record:\n\n```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$RM' */*\ngap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace\nmercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.\nsage_scripts-4.6.1.alpha3.p0/sage-env:if [ \"$RM\" = \"\" ]; then\nsingular-3-1-1-4.p3/spkg-install:        $RM -f LIB\nsingular-3-1-1-4.p3/spkg-install:    $RM -f Singular singular\nsingular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previous version of Singular.\n```",
     "created_at": "2010-12-26T19:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -524,13 +530,12 @@ singular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previo
 
 
 
-
 ---
 
 archive/issue_comments_024929.json:
 ```json
 {
-    "body": "Replying to [comment:13 vbraun]:\n> For the record:\n\n```sh\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$RM' */*\n```\n\n\nRedo for `${RM}`, too? (Also `$(RM)` in Makefiles.)\n\nNot sure if there are some \"deeper\" instances as well.",
+    "body": "Replying to [comment:13 vbraun]:\n> For the record:\n\n{{{#!sh\n[vbraun`@`volker-desktop spkg-unpacked]$ grep '\\$RM' */*\n}}}\n\nRedo for `${RM}`, too? (Also `$(RM)` in Makefiles.)\n\nNot sure if there are some \"deeper\" instances as well.",
     "created_at": "2010-12-26T22:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -542,10 +547,9 @@ archive/issue_comments_024929.json:
 Replying to [comment:13 vbraun]:
 > For the record:
 
-```sh
-[vbraun@volker-desktop spkg-unpacked]$ grep '\$RM' */*
-```
-
+{{{#!sh
+[vbraun`@`volker-desktop spkg-unpacked]$ grep '\$RM' */*
+}}}
 
 Redo for `${RM}`, too? (Also `$(RM)` in Makefiles.)
 
@@ -558,7 +562,7 @@ Not sure if there are some "deeper" instances as well.
 archive/issue_comments_024930.json:
 ```json
 {
-    "body": "\n```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$.RM' */*\nsingular-3-1-1-4.p3/install-sh:rmprog=\"${RMPROG-rm}\"\n```\n\nand\n\n```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$.*RM' */*\ngap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace\nmercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.\nsage_scripts-4.6.1.alpha3.p0/sage-check-64:\t\tcase $CONFIRM in\nsage_scripts-4.6.1.alpha3.p0/sage-env:if [ \"$RM\" = \"\" ]; then\nsingular-3-1-1-4.p3/install-sh:rmprog=\"${RMPROG-rm}\"\nsingular-3-1-1-4.p3/spkg-install:        $RM -f LIB\nsingular-3-1-1-4.p3/spkg-install:    $RM -f Singular singular\nsingular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previous version of Singular.\n```\n",
+    "body": "```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$.RM' */*\nsingular-3-1-1-4.p3/install-sh:rmprog=\"${RMPROG-rm}\"\n```\nand\n\n```\n[vbraun@volker-desktop spkg-unpacked]$ grep '\\$.*RM' */*\ngap-4.4.12.p4/SPKG.txt: * #7873 Remove references to $LN, $MKIDR and $RM and replace\nmercurial-1.6.4.p0/SPKG.txt: * Changes occurrences of $RM to 'rm', $CP to 'cp' and similar.\nsage_scripts-4.6.1.alpha3.p0/sage-check-64:\t\tcase $CONFIRM in\nsage_scripts-4.6.1.alpha3.p0/sage-env:if [ \"$RM\" = \"\" ]; then\nsingular-3-1-1-4.p3/install-sh:rmprog=\"${RMPROG-rm}\"\nsingular-3-1-1-4.p3/spkg-install:        $RM -f LIB\nsingular-3-1-1-4.p3/spkg-install:    $RM -f Singular singular\nsingular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previous version of Singular.\n```",
     "created_at": "2010-12-26T22:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -567,12 +571,10 @@ archive/issue_comments_024930.json:
 }
 ```
 
-
 ```
 [vbraun@volker-desktop spkg-unpacked]$ grep '\$.RM' */*
 singular-3-1-1-4.p3/install-sh:rmprog="${RMPROG-rm}"
 ```
-
 and
 
 ```
@@ -586,7 +588,6 @@ singular-3-1-1-4.p3/spkg-install:        $RM -f LIB
 singular-3-1-1-4.p3/spkg-install:    $RM -f Singular singular
 singular-3-1-1-4.p3/spkg-install:        $RM -f Singular-1-0-2   # remove previous version of Singular.
 ```
-
 
 
 
@@ -649,7 +650,7 @@ My opinion still is that `RM` should simply be left unset (of course, a few inst
 archive/issue_comments_024934.json:
 ```json
 {
-    "body": "Replying to [comment:18 jdemeyer]:\n> My opinion still is that `RM` should simply be left unset (of course, a few install scripts will have to be changed).\n\nI agree 100%. \n\nI can understand the logic of variables like $CC, $CXX, $MAKE, but not $RM. I don't know of any system where one might want to specify what version of `rm` gets used, so I don't see the point in having a variable for it. If some dump package needs `$RM` defined, then either try to fix the code so it is not so dumb, or add `$RM` to `dump_package.spkg`. \n\nBTW, take a look at\n\nhttp://boxen.math.washington.edu/home/kirkby/bad-code/sympow-1.018.1.p7/src/Configure\n\nwhere you will find some *interesting* use of variable names. A script which starts \n\n`#!/bin/sh`\n\nhas a function \n\n`whichexe()`\n\nThis function makes use of a non-POSIX command `which`, so there's no reason for `which` to exist. Then `whichexe()` function sets variables for things like SH, RM, SED, whilst checking if the commands (including `sh`) exist. If not the script exits. An abbreviated version is below. \n\n\n```/bin/sh\nwhichexe() {\n    if [ -f /bin/$1 ]; then\n        echo /bin/$1\n        return;\n    fi;\n    if [ -f /usr/bin/$1 ]; then\n        echo /usr/bin/$1\n        return;\n    fi;\n    if [ -f /usr/local/bin/$1 ]; then\n        echo /usr/local/bin/$1\n        return;\n    fi;\n    echo `which $1`\n}\nRM=`whichexe rm`\nGREP=`whichexe grep` && echo \"#define GREP \\\"$GREP\\\"\" >> $CONFIG\nSED=`whichexe sed` && echo \"#define SED \\\"$SED\\\"\" >> $CONFIG\nSH=`whichexe sh` && echo \"#define SH \\\"$SH\\\"\" >> $CONFIG\nif [ -z \"$SH\" ]; then\n  echo \"**ERROR**: Could not find sh\"; exit 1;\nelse\n  echo \"SH = $SH\"\nfi\n```\n\n\nI might have cleaned this up, so the current version in Sage might not be quite so dumb. \n\nDave",
+    "body": "Replying to [comment:18 jdemeyer]:\n> My opinion still is that `RM` should simply be left unset (of course, a few install scripts will have to be changed).\n\n\nI agree 100%. \n\nI can understand the logic of variables like $CC, $CXX, $MAKE, but not $RM. I don't know of any system where one might want to specify what version of `rm` gets used, so I don't see the point in having a variable for it. If some dump package needs `$RM` defined, then either try to fix the code so it is not so dumb, or add `$RM` to `dump_package.spkg`. \n\nBTW, take a look at\n\nhttp://boxen.math.washington.edu/home/kirkby/bad-code/sympow-1.018.1.p7/src/Configure\n\nwhere you will find some *interesting* use of variable names. A script which starts \n\n`#!/bin/sh`\n\nhas a function \n\n`whichexe()`\n\nThis function makes use of a non-POSIX command `which`, so there's no reason for `which` to exist. Then `whichexe()` function sets variables for things like SH, RM, SED, whilst checking if the commands (including `sh`) exist. If not the script exits. An abbreviated version is below. \n\n```/bin/sh\nwhichexe() {\n    if [ -f /bin/$1 ]; then\n        echo /bin/$1\n        return;\n    fi;\n    if [ -f /usr/bin/$1 ]; then\n        echo /usr/bin/$1\n        return;\n    fi;\n    if [ -f /usr/local/bin/$1 ]; then\n        echo /usr/local/bin/$1\n        return;\n    fi;\n    echo `which $1`\n}\nRM=`whichexe rm`\nGREP=`whichexe grep` && echo \"#define GREP \\\"$GREP\\\"\" >> $CONFIG\nSED=`whichexe sed` && echo \"#define SED \\\"$SED\\\"\" >> $CONFIG\nSH=`whichexe sh` && echo \"#define SH \\\"$SH\\\"\" >> $CONFIG\nif [ -z \"$SH\" ]; then\n  echo \"**ERROR**: Could not find sh\"; exit 1;\nelse\n  echo \"SH = $SH\"\nfi\n```\n\nI might have cleaned this up, so the current version in Sage might not be quite so dumb. \n\nDave",
     "created_at": "2011-03-26T18:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -660,6 +661,7 @@ archive/issue_comments_024934.json:
 
 Replying to [comment:18 jdemeyer]:
 > My opinion still is that `RM` should simply be left unset (of course, a few install scripts will have to be changed).
+
 
 I agree 100%. 
 
@@ -678,7 +680,6 @@ has a function
 `whichexe()`
 
 This function makes use of a non-POSIX command `which`, so there's no reason for `which` to exist. Then `whichexe()` function sets variables for things like SH, RM, SED, whilst checking if the commands (including `sh`) exist. If not the script exits. An abbreviated version is below. 
-
 
 ```/bin/sh
 whichexe() {
@@ -706,7 +707,6 @@ else
   echo "SH = $SH"
 fi
 ```
-
 
 I might have cleaned this up, so the current version in Sage might not be quite so dumb. 
 
@@ -920,7 +920,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_024944.json:
 ```json
 {
-    "body": "Replying to [comment:23 mariah]:\n> [attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.\n\nDid you try building Sage from source with this patch applied?  Because this patch affects the Sage **build**, not the Sage library.",
+    "body": "Replying to [comment:23 mariah]:\n> [attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.\n\n\nDid you try building Sage from source with this patch applied?  Because this patch affects the Sage **build**, not the Sage library.",
     "created_at": "2011-05-12T20:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3537",
     "type": "issue_comment",
@@ -931,6 +931,7 @@ archive/issue_comments_024944.json:
 
 Replying to [comment:23 mariah]:
 > [attachment:trac_3537-unset-RM.patch] applied to sage-4.7.rc2 tested on skynet/taurus with make testlong.  All tests passed.  Positive review.
+
 
 Did you try building Sage from source with this patch applied?  Because this patch affects the Sage **build**, not the Sage library.
 

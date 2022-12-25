@@ -201,7 +201,7 @@ BTW, I can already say that you've got some lovely ASCII art in your docstrings!
 archive/issue_comments_040117.json:
 ```json
 {
-    "body": "Hi Dan, \n\nThank you for reviewing this one. It is not a very important one for the sage community, but it was my first submitted ticket and I'll be glad seeing it merged.\nIt will be a test-case for a future (vaporware ? :-) bijection infrastructure. \n\nIf it's not too much work for you I'd rather you upload a referee patch, unless you have big changes. If they are a bunch on typos and presentation change, my experience is that it's not that much more work creating a new patch than explaining by trac or e-mail what you want to do. Is it ok with you ? When you say \"usage changes\" is this English usage and or sage usage ?\n\n> BTW, I can already say that you've got some lovely ASCII art in your docstrings!\n\nA picture is always clearer than a long explanation :)\n\nCheers,\n\nFlorent",
+    "body": "Hi Dan, \n\nThank you for reviewing this one. It is not a very important one for the sage community, but it was my first submitted ticket and I'll be glad seeing it merged.\nIt will be a test-case for a future (vaporware ? :-) bijection infrastructure. \n\nIf it's not too much work for you I'd rather you upload a referee patch, unless you have big changes. If they are a bunch on typos and presentation change, my experience is that it's not that much more work creating a new patch than explaining by trac or e-mail what you want to do. Is it ok with you ? When you say \"usage changes\" is this English usage and or sage usage ?\n\n> BTW, I can already say that you've got some lovely ASCII art in your docstrings!\n\n\nA picture is always clearer than a long explanation :)\n\nCheers,\n\nFlorent",
     "created_at": "2009-04-17T13:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
@@ -219,6 +219,7 @@ If it's not too much work for you I'd rather you upload a referee patch, unless 
 
 > BTW, I can already say that you've got some lovely ASCII art in your docstrings!
 
+
 A picture is always clearer than a long explanation :)
 
 Cheers,
@@ -232,7 +233,7 @@ Florent
 archive/issue_comments_040118.json:
 ```json
 {
-    "body": "I am working on reviewing this, and I have a couple questions and one larger concern. First, some questions. I'm just curious about these things:\n\n* what does the ``@`classmethod` decorator do?\n* why does the `keys` method return the domain of the function? It seems strange to have a `keys` method for something list-based, and not dictionary-based.\n\nHere are my concerns:\n* Your code does not check to see if it gets a list of positive integers, so you can do `NonDecreasingParkingFunction[[0, .1, pi/3, sqrt(2)])`, yikes! Do we want to require lists of positive integers?\n* In `is_a()`, you have:\n\n```\n   for i in range(len(x)-1):\n        if x[i] > x[i+1] or x[i] > i+1:\n            return False\n```\n\n    Instead of iterating over indices and doing a list lookup every time, would it be faster to use Python's `enumerate` in something like this?\n\n```\n   prev = 1\n   for i, elt in enumerate(x):\n       if prev > elt or elt > i+1:\n           return False\n       prev = elt\n```\n\n    That would also let you finish the function with `return True`, since the `enumerate` loop would check the final element.\n\n* Right now when you give the `NonDecreasingParkingFunction` constructor a bad list, I see a strange error message:\n\n```\nsage: NonDecreasingParkingFunction([1,1,4])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (5, 0))\n\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/10186/_home_drake__sage_init_sage_0.py in <module>()\n\n/var/tmp/sage-3.4.2/local/lib/python2.5/site-packages/sage/combinat/non_decreasing_parking_function.pyc in __init__(self, lst)\n    383             [1, 1, 2, 2, 5, 6]\n    384         \"\"\"\n--> 385         assert(is_a(lst))\n    386         CombinatorialObject.__init__(self, lst)\n    387         \n\nAssertionError: \n```\n\n* Also, related to `is_a`: the `assert` statement should give the user some idea of what has gone wrong. I suggest changing the assert line (line 409) to `assert is_a(lst), 'list is not a non-decreasing parking function.'`. Also note that `assert` is a statement, not a function -- just like `print` before Python 3.0.\n* My biggest concern is with the getitem stuff. You are effectively shifting the list indices by 1, which really bothers me. Perhaps other people don't feel this way, and perhaps this is the best decision, but whenever I am thinking of something as a list, I *really* want the indices to be zero-based, since that's what the rest of Sage/Python does. Right now, we have:\n\n```\nsage: f = NonDecreasingParkingFunction([1,1,2,3])\nsage: f[2]\n1\nsage: f[3]\n2\n```\n\n    When I use square brackets, I'm thinking \"list index\", and I really want it zero-based. Perhaps we should make these objects callable, so we can treat them like functions? I would not mind having `f(2)` be 1 and `f(3)` be 2, since the round parentheses indicate a function call, and indeed the above object f is a function that sends 3 to 2.\n\nI'm marking this \"needs work\" because of the list index issue. I have a patch which fixes a bunch of tiny docstring bits which I'll upload once we have the rest of this sorted out.",
+    "body": "I am working on reviewing this, and I have a couple questions and one larger concern. First, some questions. I'm just curious about these things:\n\n* what does the ``@`classmethod` decorator do?\n* why does the `keys` method return the domain of the function? It seems strange to have a `keys` method for something list-based, and not dictionary-based.\n\nHere are my concerns:\n* Your code does not check to see if it gets a list of positive integers, so you can do `NonDecreasingParkingFunction[[0, .1, pi/3, sqrt(2)])`, yikes! Do we want to require lists of positive integers?\n* In `is_a()`, you have:\n\n```\n   for i in range(len(x)-1):\n        if x[i] > x[i+1] or x[i] > i+1:\n            return False\n```\n    Instead of iterating over indices and doing a list lookup every time, would it be faster to use Python's `enumerate` in something like this?\n\n```\n   prev = 1\n   for i, elt in enumerate(x):\n       if prev > elt or elt > i+1:\n           return False\n       prev = elt\n```\n    That would also let you finish the function with `return True`, since the `enumerate` loop would check the final element.\n\n* Right now when you give the `NonDecreasingParkingFunction` constructor a bad list, I see a strange error message:\n\n```\nsage: NonDecreasingParkingFunction([1,1,4])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (5, 0))\n\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/home/drake/.sage/temp/klee/10186/_home_drake__sage_init_sage_0.py in <module>()\n\n/var/tmp/sage-3.4.2/local/lib/python2.5/site-packages/sage/combinat/non_decreasing_parking_function.pyc in __init__(self, lst)\n    383             [1, 1, 2, 2, 5, 6]\n    384         \"\"\"\n--> 385         assert(is_a(lst))\n    386         CombinatorialObject.__init__(self, lst)\n    387         \n\nAssertionError: \n```\n* Also, related to `is_a`: the `assert` statement should give the user some idea of what has gone wrong. I suggest changing the assert line (line 409) to `assert is_a(lst), 'list is not a non-decreasing parking function.'`. Also note that `assert` is a statement, not a function -- just like `print` before Python 3.0.\n* My biggest concern is with the getitem stuff. You are effectively shifting the list indices by 1, which really bothers me. Perhaps other people don't feel this way, and perhaps this is the best decision, but whenever I am thinking of something as a list, I *really* want the indices to be zero-based, since that's what the rest of Sage/Python does. Right now, we have:\n\n```\nsage: f = NonDecreasingParkingFunction([1,1,2,3])\nsage: f[2]\n1\nsage: f[3]\n2\n```\n    When I use square brackets, I'm thinking \"list index\", and I really want it zero-based. Perhaps we should make these objects callable, so we can treat them like functions? I would not mind having `f(2)` be 1 and `f(3)` be 2, since the round parentheses indicate a function call, and indeed the above object f is a function that sends 3 to 2.\n\nI'm marking this \"needs work\" because of the list index issue. I have a patch which fixes a bunch of tiny docstring bits which I'll upload once we have the rest of this sorted out.",
     "created_at": "2009-05-06T04:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
@@ -255,7 +256,6 @@ Here are my concerns:
         if x[i] > x[i+1] or x[i] > i+1:
             return False
 ```
-
     Instead of iterating over indices and doing a list lookup every time, would it be faster to use Python's `enumerate` in something like this?
 
 ```
@@ -265,7 +265,6 @@ Here are my concerns:
            return False
        prev = elt
 ```
-
     That would also let you finish the function with `return True`, since the `enumerate` loop would check the final element.
 
 * Right now when you give the `NonDecreasingParkingFunction` constructor a bad list, I see a strange error message:
@@ -290,7 +289,6 @@ AssertionError                            Traceback (most recent call last)
 
 AssertionError: 
 ```
-
 * Also, related to `is_a`: the `assert` statement should give the user some idea of what has gone wrong. I suggest changing the assert line (line 409) to `assert is_a(lst), 'list is not a non-decreasing parking function.'`. Also note that `assert` is a statement, not a function -- just like `print` before Python 3.0.
 * My biggest concern is with the getitem stuff. You are effectively shifting the list indices by 1, which really bothers me. Perhaps other people don't feel this way, and perhaps this is the best decision, but whenever I am thinking of something as a list, I *really* want the indices to be zero-based, since that's what the rest of Sage/Python does. Right now, we have:
 
@@ -301,7 +299,6 @@ sage: f[2]
 sage: f[3]
 2
 ```
-
     When I use square brackets, I'm thinking "list index", and I really want it zero-based. Perhaps we should make these objects callable, so we can treat them like functions? I would not mind having `f(2)` be 1 and `f(3)` be 2, since the round parentheses indicate a function call, and indeed the above object f is a function that sends 3 to 2.
 
 I'm marking this "needs work" because of the list index issue. I have a patch which fixes a bunch of tiny docstring bits which I'll upload once we have the rest of this sorted out.

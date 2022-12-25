@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2892
 archive/issue_comments_019854.json:
 ```json
 {
-    "body": "This patch:\n* fixes the stated bug.  To observe this try this input: \n\n```\ntry:\n    1/0\nfinally:\n    print \"<html><b>hello</b></html>\"\n```\n\nNote that the output has html properly formated at the top, etc.\n\n* also fixes a bug when the traceback output is too long.  To \nverify this, try this input and wait a few seconds.  NOte that a link\nappears as it should:\n\n```\ndef f(n):\n    f(n)\n\nf(5)\n```\n\n\n* I'm sorry but providing doctests for this is just too hard at present, given that we don't have a good notebook testing framework just yet.  These bugs are pretty high priority imho.",
+    "body": "This patch:\n* fixes the stated bug.  To observe this try this input: \n\n```\ntry:\n    1/0\nfinally:\n    print \"<html><b>hello</b></html>\"\n```\nNote that the output has html properly formated at the top, etc.\n\n* also fixes a bug when the traceback output is too long.  To \nverify this, try this input and wait a few seconds.  NOte that a link\nappears as it should:\n\n```\ndef f(n):\n    f(n)\n\nf(5)\n```\n\n* I'm sorry but providing doctests for this is just too hard at present, given that we don't have a good notebook testing framework just yet.  These bugs are pretty high priority imho.",
     "created_at": "2008-04-12T03:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2892",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ try:
 finally:
     print "<html><b>hello</b></html>"
 ```
-
 Note that the output has html properly formated at the top, etc.
 
 * also fixes a bug when the traceback output is too long.  To 
@@ -66,7 +65,6 @@ def f(n):
 
 f(5)
 ```
-
 
 * I'm sorry but providing doctests for this is just too hard at present, given that we don't have a good notebook testing framework just yet.  These bugs are pretty high priority imho.
 

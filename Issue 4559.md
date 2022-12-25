@@ -3,7 +3,7 @@
 archive/issues_004559.json:
 ```json
 {
-    "body": "Assignee: justin\n\nThere are a number of commits to devel/sage/sage/quadratic_forms/genera/genus.py\n\n```\nchangeset:   10632:8403d5ca95be\ntag:         tip\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Sun Nov 09 23:00:32 2008 -0800\nsummary:     Some changes to fix the segfault and add two interface routines.\n\nchangeset:   10628:05a3db2f6057\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Tue Apr 01 05:51:40 2008 +0200\nsummary:     Fixed signature name overloading bug in quadratic form genus routines, and also moved them to .pyx files.\n\nchangeset:   10626:dcad7b2c0a42\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Wed Mar 26 12:01:33 2008 +0100\nsummary:     Added a Hessian_matrix() routine for Quadratic forms, and added Nebe's correction of a typo in genus.py, and min\nor interface changes.\n\nchangeset:   10597:f220b913963e\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Mon Nov 12 23:17:00 2007 +0100\nsummary:     Added updated genus code from David Kohel and Gabrielle Nebe (received Sept 6th, 2007).\n\nchangeset:   10569:8fa815df5c0c\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Tue Sep 04 00:09:12 2007 +0200\nsummary:     Added simple interface to QuadraticForm for the genus routines in quadratic_form/genera.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4559\n\n",
+    "body": "Assignee: justin\n\nThere are a number of commits to devel/sage/sage/quadratic_forms/genera/genus.py\n\n```\nchangeset:   10632:8403d5ca95be\ntag:         tip\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Sun Nov 09 23:00:32 2008 -0800\nsummary:     Some changes to fix the segfault and add two interface routines.\n\nchangeset:   10628:05a3db2f6057\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Tue Apr 01 05:51:40 2008 +0200\nsummary:     Fixed signature name overloading bug in quadratic form genus routines, and also moved them to .pyx files.\n\nchangeset:   10626:dcad7b2c0a42\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Wed Mar 26 12:01:33 2008 +0100\nsummary:     Added a Hessian_matrix() routine for Quadratic forms, and added Nebe's correction of a typo in genus.py, and min\nor interface changes.\n\nchangeset:   10597:f220b913963e\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Mon Nov 12 23:17:00 2007 +0100\nsummary:     Added updated genus code from David Kohel and Gabrielle Nebe (received Sept 6th, 2007).\n\nchangeset:   10569:8fa815df5c0c\nuser:        Jonathan Hanke <jonhanke@gmail.com>\ndate:        Tue Sep 04 00:09:12 2007 +0200\nsummary:     Added simple interface to QuadraticForm for the genus routines in quadratic_form/genera.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4559\n\n",
     "created_at": "2008-11-20T00:30:15Z",
     "labels": [
         "component: quadratic forms",
@@ -48,7 +48,6 @@ user:        Jonathan Hanke <jonhanke@gmail.com>
 date:        Tue Sep 04 00:09:12 2007 +0200
 summary:     Added simple interface to QuadraticForm for the genus routines in quadratic_form/genera.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4559
 

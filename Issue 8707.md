@@ -3,7 +3,7 @@
 archive/issues_008707.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: latex\n\nlatex(x) calls x._latex_() twice, and view(x) 5 times!!!\n\nFor small objects, that's fine, but when x is a graph, and latex'ing it requires calling graphviz, dot2tex, ... it is not reasonable!\n\n\n```\nsage: class blah():\n....:     def _latex_(x):\n....:         print \"coucou\"\n....:         return \"x\"\n....: \nsage: latex(blah())\ncoucou\ncoucou\nx\nsage: view(blah())\ncoucou\ncoucou\ncoucou\ncoucou\ncoucou\n```\n\n\nAnalysis:\n- latex makes use of has_latex_expr which makes a call to _latex_ but discards the result\n\n- latex_file does not reuse its calls to latex(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8707\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: latex\n\nlatex(x) calls x._latex_() twice, and view(x) 5 times!!!\n\nFor small objects, that's fine, but when x is a graph, and latex'ing it requires calling graphviz, dot2tex, ... it is not reasonable!\n\n```\nsage: class blah():\n....:     def _latex_(x):\n....:         print \"coucou\"\n....:         return \"x\"\n....: \nsage: latex(blah())\ncoucou\ncoucou\nx\nsage: view(blah())\ncoucou\ncoucou\ncoucou\ncoucou\ncoucou\n```\n\nAnalysis:\n- latex makes use of has_latex_expr which makes a call to _latex_ but discards the result\n\n- latex_file does not reuse its calls to latex(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8707\n\n",
     "created_at": "2010-04-17T21:52:29Z",
     "labels": [
         "component: algebra",
@@ -26,7 +26,6 @@ latex(x) calls x._latex_() twice, and view(x) 5 times!!!
 
 For small objects, that's fine, but when x is a graph, and latex'ing it requires calling graphviz, dot2tex, ... it is not reasonable!
 
-
 ```
 sage: class blah():
 ....:     def _latex_(x):
@@ -44,7 +43,6 @@ coucou
 coucou
 coucou
 ```
-
 
 Analysis:
 - latex makes use of has_latex_expr which makes a call to _latex_ but discards the result
@@ -98,7 +96,7 @@ Changing component from algebra to misc.
 archive/issue_comments_079290.json:
 ```json
 {
-    "body": "Now, e.g.\n\n```\nsage: g = sage.categories.category.category_graph()\nsage: g.set_latex_options(format = \"dot2tex\")\nsage: view(g, viewer=\"pdf\", tightpage = True)\n```\n\ntakes 6 seconds instead of .5 minutes, which makes it finally usable!",
+    "body": "Now, e.g.\n\n```\nsage: g = sage.categories.category.category_graph()\nsage: g.set_latex_options(format = \"dot2tex\")\nsage: view(g, viewer=\"pdf\", tightpage = True)\n```\ntakes 6 seconds instead of .5 minutes, which makes it finally usable!",
     "created_at": "2010-04-17T22:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ sage: g = sage.categories.category.category_graph()
 sage: g.set_latex_options(format = "dot2tex")
 sage: view(g, viewer="pdf", tightpage = True)
 ```
-
 takes 6 seconds instead of .5 minutes, which makes it finally usable!
 
 

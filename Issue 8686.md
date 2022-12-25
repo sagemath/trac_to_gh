@@ -3,7 +3,7 @@
 archive/issues_008686.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  @williamstein @TimDumol\n\nKeywords: gettext history documentation\n\nIn versions of Sage up to 4.3.2, the following worked as expected:\n\n\n```\n>./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n''\n```\n\n| Sage Version 4.3.2, Release Date: 2010-02-06                       |\n| Type notebook() for the GUI, and license() for information.        |\nHowever, with Sage 4.3.3, it has stopped working:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n<bound method NullTranslations.ugettext of <gettext.NullTranslations instance at 0x4b1a680>>\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nFor some things, the history works as expected, but for others it does not.  To me it appears that it is \"simple\" things, e.g. above, the empty expression, or simple expressions like \"3+4\" where it does not work anymore, but for more complex things (e.g. if you call a function that returns something), \"_\" still does what you would expect it to do.\n\nThis bug still exists in Sage 4.3.5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8686\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @williamstein @TimDumol\n\nKeywords: gettext history documentation\n\nIn versions of Sage up to 4.3.2, the following worked as expected:\n\n```\n>./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n''\n```\n| Sage Version 4.3.2, Release Date: 2010-02-06                       |\n| Type notebook() for the GUI, and license() for information.        |\nHowever, with Sage 4.3.3, it has stopped working:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n<bound method NullTranslations.ugettext of <gettext.NullTranslations instance at 0x4b1a680>>\n```\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nFor some things, the history works as expected, but for others it does not.  To me it appears that it is \"simple\" things, e.g. above, the empty expression, or simple expressions like \"3+4\" where it does not work anymore, but for more complex things (e.g. if you call a function that returns something), \"_\" still does what you would expect it to do.\n\nThis bug still exists in Sage 4.3.5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8686\n\n",
     "created_at": "2010-04-14T13:01:16Z",
     "labels": [
         "component: interact",
@@ -25,7 +25,6 @@ Keywords: gettext history documentation
 
 In versions of Sage up to 4.3.2, the following worked as expected:
 
-
 ```
 >./sage
 ----------------------------------------------------------------------
@@ -37,11 +36,9 @@ sage: _
 sage: _
 ''
 ```
-
 | Sage Version 4.3.2, Release Date: 2010-02-06                       |
 | Type notebook() for the GUI, and license() for information.        |
 However, with Sage 4.3.3, it has stopped working:
-
 
 ```
 ----------------------------------------------------------------------
@@ -53,7 +50,6 @@ sage: _
 sage: _
 <bound method NullTranslations.ugettext of <gettext.NullTranslations instance at 0x4b1a680>>
 ```
-
 | Sage Version 4.3.3, Release Date: 2010-02-21                       |
 | Type notebook() for the GUI, and license() for information.        |
 For some things, the history works as expected, but for others it does not.  To me it appears that it is "simple" things, e.g. above, the empty expression, or simple expressions like "3+4" where it does not work anymore, but for more complex things (e.g. if you call a function that returns something), "_" still does what you would expect it to do.

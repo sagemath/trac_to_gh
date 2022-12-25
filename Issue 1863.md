@@ -3,7 +3,7 @@
 archive/issues_001863.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + 3/5\nsage: f.change_ring(GF(7))\nx^3 + 2\n```\n\nThis should work:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x^3 + 3/5*y + 1\nsage: f.change_ring(GF(7))\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'change_ring'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1863\n\n",
+    "body": "Assignee: @malb\n\nThis works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + 3/5\nsage: f.change_ring(GF(7))\nx^3 + 2\n```\nThis should work:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x^3 + 3/5*y + 1\nsage: f.change_ring(GF(7))\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'change_ring'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1863\n\n",
     "created_at": "2008-01-20T16:36:56Z",
     "labels": [
         "component: commutative algebra"
@@ -25,7 +25,6 @@ sage: f = x^3 + 3/5
 sage: f.change_ring(GF(7))
 x^3 + 2
 ```
-
 This should work:
 
 ```
@@ -36,7 +35,6 @@ Traceback (most recent call last):
 ...
 AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'change_ring'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1863
 

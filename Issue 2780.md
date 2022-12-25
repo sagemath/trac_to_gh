@@ -3,7 +3,7 @@
 archive/issues_002780.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWhen factoring a multivariate polynomial over a number field, the unit part of the factorisation is reported incorrectly:\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: R.<y, z> = PolynomialRing(K)\nsage: f = 2*y^2 + 2*z^2\nsage: F = f.factor(); F\n2 * (y + (-a)*z) * (y + a*z)\nsage: F.unit_part()\n1\n```\n\n\nThe unit part should be 2.\n\nReported by Genya Zaytman.\n\nSee also: http://groups.google.com/group/sage-devel/browse_thread/thread/cc519fe6a67ff9e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2780\n\n",
+    "body": "Assignee: somebody\n\nWhen factoring a multivariate polynomial over a number field, the unit part of the factorisation is reported incorrectly:\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: R.<y, z> = PolynomialRing(K)\nsage: f = 2*y^2 + 2*z^2\nsage: F = f.factor(); F\n2 * (y + (-a)*z) * (y + a*z)\nsage: F.unit_part()\n1\n```\n\nThe unit part should be 2.\n\nReported by Genya Zaytman.\n\nSee also: http://groups.google.com/group/sage-devel/browse_thread/thread/cc519fe6a67ff9e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2780\n\n",
     "created_at": "2008-04-02T21:39:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 When factoring a multivariate polynomial over a number field, the unit part of the factorisation is reported incorrectly:
 
-
 ```
 sage: K.<a> = NumberField(x^2 + 1)
 sage: R.<y, z> = PolynomialRing(K)
@@ -30,7 +29,6 @@ sage: F = f.factor(); F
 sage: F.unit_part()
 1
 ```
-
 
 The unit part should be 2.
 

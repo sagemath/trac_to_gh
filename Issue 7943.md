@@ -51,7 +51,7 @@ For changes to `makefile` and `spkg/install`, should we attach "diffs"?
 archive/issue_comments_069165.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> For changes to `makefile` and `spkg/install`, should we attach \"diffs\"?\n\nBoth `makefile` and `spkg/install` are not under revision control. To update them, you need to upload updated versions of these files. But you also need to upload diff files showing changes between the updated and current version. This is to show the proposed changes. The diff files are not to be applied.",
+    "body": "Replying to [comment:1 mpatel]:\n> For changes to `makefile` and `spkg/install`, should we attach \"diffs\"?\n\n\nBoth `makefile` and `spkg/install` are not under revision control. To update them, you need to upload updated versions of these files. But you also need to upload diff files showing changes between the updated and current version. This is to show the proposed changes. The diff files are not to be applied.",
     "created_at": "2010-01-17T15:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -62,6 +62,7 @@ archive/issue_comments_069165.json:
 
 Replying to [comment:1 mpatel]:
 > For changes to `makefile` and `spkg/install`, should we attach "diffs"?
+
 
 Both `makefile` and `spkg/install` are not under revision control. To update them, you need to upload updated versions of these files. But you also need to upload diff files showing changes between the updated and current version. This is to show the proposed changes. The diff files are not to be applied.
 
@@ -110,7 +111,7 @@ Do we still use `spkg/archive`?
 archive/issue_comments_069168.json:
 ```json
 {
-    "body": "On math: Users who prefer JSMath to PNGmath can use `make doc-html-jsmath` or\n\n\n```sh\nexport DOCBUILD_OPTS=\"-j\"\nmake doc-html\n```\n\nOn log proliferation: For parallel inter-spkg builds, we'll need to have one log file per spkg.  We could put them all in `SAGE_ROOT/logs`, say.\n\nOn cloning: #8258 may help.",
+    "body": "On math: Users who prefer JSMath to PNGmath can use `make doc-html-jsmath` or\n\n```sh\nexport DOCBUILD_OPTS=\"-j\"\nmake doc-html\n```\nOn log proliferation: For parallel inter-spkg builds, we'll need to have one log file per spkg.  We could put them all in `SAGE_ROOT/logs`, say.\n\nOn cloning: #8258 may help.",
     "created_at": "2010-02-19T11:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -121,12 +122,10 @@ archive/issue_comments_069168.json:
 
 On math: Users who prefer JSMath to PNGmath can use `make doc-html-jsmath` or
 
-
 ```sh
 export DOCBUILD_OPTS="-j"
 make doc-html
 ```
-
 On log proliferation: For parallel inter-spkg builds, we'll need to have one log file per spkg.  We could put them all in `SAGE_ROOT/logs`, say.
 
 On cloning: #8258 may help.
@@ -192,7 +191,7 @@ The patches above shouldn't affect the docbuild-on-clone problem, which may nece
 archive/issue_comments_069172.json:
 ```json
 {
-    "body": "Since the test targets in `SAGE_ROOT/makefile` do not depend on the doc targets, we may get reports about failed doctests in `sage.misc.sagedoc`:\n\n\n```python\nsage: len(search_doc('tree', interact=False).splitlines()) > 2000\nsage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100\nsage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\n```\n\nWhat if we make the first two `optional` and insert `or 'Warning, the following Sage documentation'` in the third?",
+    "body": "Since the test targets in `SAGE_ROOT/makefile` do not depend on the doc targets, we may get reports about failed doctests in `sage.misc.sagedoc`:\n\n```python\nsage: len(search_doc('tree', interact=False).splitlines()) > 2000\nsage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100\nsage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\n```\nWhat if we make the first two `optional` and insert `or 'Warning, the following Sage documentation'` in the third?",
     "created_at": "2010-02-20T21:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -203,13 +202,11 @@ archive/issue_comments_069172.json:
 
 Since the test targets in `SAGE_ROOT/makefile` do not depend on the doc targets, we may get reports about failed doctests in `sage.misc.sagedoc`:
 
-
 ```python
 sage: len(search_doc('tree', interact=False).splitlines()) > 2000
 sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100
 sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)
 ```
-
 What if we make the first two `optional` and insert `or 'Warning, the following Sage documentation'` in the third?
 
 
@@ -237,7 +234,7 @@ Oops.  I suppose that should be "make all three optional or conditional, someho
 archive/issue_comments_069174.json:
 ```json
 {
-    "body": "I think I object to the positive review here, because having complete documentation is an important part of Sage, but it looks like with these patches, building Sage from source will not build the documentation.  Correct me if I'm wrong about this.\n\nAt the very least, since this is a major change, this should discussed more thoroughly in sage-devel before doing this.\n\nWhat happens if we add \"doc\" to the targets in the makefile for \"make all\"?\n\n> Since the test targets in SAGE_ROOT/makefile do not depend on the doc targets, we may get reports about failed doctests in sage.misc.sagedoc\n\nIf you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say \"Warning, the following Sage documentation...\", so it's more or less clear why they failed.",
+    "body": "I think I object to the positive review here, because having complete documentation is an important part of Sage, but it looks like with these patches, building Sage from source will not build the documentation.  Correct me if I'm wrong about this.\n\nAt the very least, since this is a major change, this should discussed more thoroughly in sage-devel before doing this.\n\nWhat happens if we add \"doc\" to the targets in the makefile for \"make all\"?\n\n> Since the test targets in SAGE_ROOT/makefile do not depend on the doc targets, we may get reports about failed doctests in sage.misc.sagedoc\n\n\nIf you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say \"Warning, the following Sage documentation...\", so it's more or less clear why they failed.",
     "created_at": "2010-02-21T01:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -254,6 +251,7 @@ What happens if we add "doc" to the targets in the makefile for "make all"?
 
 > Since the test targets in SAGE_ROOT/makefile do not depend on the doc targets, we may get reports about failed doctests in sage.misc.sagedoc
 
+
 If you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say "Warning, the following Sage documentation...", so it's more or less clear why they failed.
 
 
@@ -263,7 +261,7 @@ If you feel, as I do, that the documentation is an integral part of Sage, then i
 archive/issue_comments_069175.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> If you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say \"Warning, the following Sage documentation...\", so it's more or less clear why they failed.\n\nThat's a point I missed.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> If you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say \"Warning, the following Sage documentation...\", so it's more or less clear why they failed.\n\n\nThat's a point I missed.",
     "created_at": "2010-02-21T01:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -274,6 +272,7 @@ archive/issue_comments_069175.json:
 
 Replying to [comment:9 jhpalmieri]:
 > If you feel, as I do, that the documentation is an integral part of Sage, then it's reasonable that if you try doctesting with an incomplete Sage build (for example, if you're missing the documentation), you should not be surprised if there are doctest failures.  The failures do say "Warning, the following Sage documentation...", so it's more or less clear why they failed.
+
 
 That's a point I missed.
 
@@ -344,7 +343,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069179.json:
 ```json
 {
-    "body": "Replying to [comment:11 mpatel]:\n> I apologize about the first versions.\n\nNo need to apologize: this is why patches are refereed.\n\n> What are the circumstances under which [rebuilding just an spkg triggers a rebuild of the docs](http://groups.google.com/group/sage-devel/msg/2ed1823b567d6d26)?\n\nI'm curious about this, too.  Maybe if you rebuild the spkg by deleting the appropriate file spkg/installed and then typing \"make\"?  With the new patch you could type \"make build\" instead, and it should build the spkg without rebuilding the docs.",
+    "body": "Replying to [comment:11 mpatel]:\n> I apologize about the first versions.\n\n\nNo need to apologize: this is why patches are refereed.\n\n> What are the circumstances under which [rebuilding just an spkg triggers a rebuild of the docs](http://groups.google.com/group/sage-devel/msg/2ed1823b567d6d26)?\n\n\nI'm curious about this, too.  Maybe if you rebuild the spkg by deleting the appropriate file spkg/installed and then typing \"make\"?  With the new patch you could type \"make build\" instead, and it should build the spkg without rebuilding the docs.",
     "created_at": "2010-02-21T03:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -356,9 +355,11 @@ archive/issue_comments_069179.json:
 Replying to [comment:11 mpatel]:
 > I apologize about the first versions.
 
+
 No need to apologize: this is why patches are refereed.
 
 > What are the circumstances under which [rebuilding just an spkg triggers a rebuild of the docs](http://groups.google.com/group/sage-devel/msg/2ed1823b567d6d26)?
+
 
 I'm curious about this, too.  Maybe if you rebuild the spkg by deleting the appropriate file spkg/installed and then typing "make"?  With the new patch you could type "make build" instead, and it should build the spkg without rebuilding the docs.
 
@@ -407,7 +408,7 @@ Should we change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`?
 archive/issue_comments_069182.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> Should we change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`?\n\nI would endorse that decision, primarily on the ground of consistency. Currently, many (if not most) Sage-specific environment variables are prefixed with \"SAGE_\". If you change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`, please consider writing some documentation regarding its intended purpose and use. Ticket #8263 is the natural place to do so.",
+    "body": "Replying to [comment:15 mpatel]:\n> Should we change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`?\n\n\nI would endorse that decision, primarily on the ground of consistency. Currently, many (if not most) Sage-specific environment variables are prefixed with \"SAGE_\". If you change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`, please consider writing some documentation regarding its intended purpose and use. Ticket #8263 is the natural place to do so.",
     "created_at": "2010-03-02T22:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -418,6 +419,7 @@ archive/issue_comments_069182.json:
 
 Replying to [comment:15 mpatel]:
 > Should we change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`?
+
 
 I would endorse that decision, primarily on the ground of consistency. Currently, many (if not most) Sage-specific environment variables are prefixed with "SAGE_". If you change `DOCBUILD_OPTS` to `SAGE_DOCBUILD_OPTS`, please consider writing some documentation regarding its intended purpose and use. Ticket #8263 is the natural place to do so.
 
@@ -502,7 +504,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069187.json:
 ```json
 {
-    "body": "A comparison of the file `install` on this ticket and the corresponding file in Sage 4.3.4.alpha0 shows this:\n\n```\n[mvngu@sage spkg]$ diff -Naur install.orig install\n--- install.orig\t2010-03-03 10:45:48.991436483 -0800\n+++ install\t2010-02-21 14:51:11.000000000 -0800\n@@ -131,6 +131,9 @@\n PIL=`$newest pil`\n export PIL\n \n+PYPROCESSING=`$newest pyprocessing`\n+export PYPROCESSING\n+\n LIBM4RI=`$newest libm4ri`\n export LIBM4RI\n \n@@ -364,14 +367,6 @@\n     exit 1\n fi\n \n-# Build the documentation\n-# The following three lines have been commented out. They cause the\n-# documentation to rebuild when doing \"make test\". See trac 6645.\n-#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n-#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n-#\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n-\"$SAGE_ROOT\"/sage -docbuild all html\n-\n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n     echo \"To install gap, gp, singular, etc., scripts\"\n     echo \"in a standard bin directory, start sage and\"\n@@ -379,5 +374,8 @@\n     echo \"   sage: install_scripts('/usr/local/bin')\"\n     echo \"at the Sage command prompt.\"\n     echo \"\"\n+    echo \"To build the documentation, run\"\n+    echo \"   make doc\"\n+    echo \"\"\n     echo \"Sage build/upgrade complete!\"\n fi\n```\n\nThe problematic snippet is:\n\n```\n+PYPROCESSING=`$newest pyprocessing`\n+export PYPROCESSING\n+\n```\n\nTicket #6503 has removed pyprocessing from the standard spkg repository. Could the file `install` here be rebased on top of that in Sage 4.3.4.alpha0?",
+    "body": "A comparison of the file `install` on this ticket and the corresponding file in Sage 4.3.4.alpha0 shows this:\n\n```\n[mvngu@sage spkg]$ diff -Naur install.orig install\n--- install.orig\t2010-03-03 10:45:48.991436483 -0800\n+++ install\t2010-02-21 14:51:11.000000000 -0800\n@@ -131,6 +131,9 @@\n PIL=`$newest pil`\n export PIL\n \n+PYPROCESSING=`$newest pyprocessing`\n+export PYPROCESSING\n+\n LIBM4RI=`$newest libm4ri`\n export LIBM4RI\n \n@@ -364,14 +367,6 @@\n     exit 1\n fi\n \n-# Build the documentation\n-# The following three lines have been commented out. They cause the\n-# documentation to rebuild when doing \"make test\". See trac 6645.\n-#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n-#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n-#\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n-\"$SAGE_ROOT\"/sage -docbuild all html\n-\n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n     echo \"To install gap, gp, singular, etc., scripts\"\n     echo \"in a standard bin directory, start sage and\"\n@@ -379,5 +374,8 @@\n     echo \"   sage: install_scripts('/usr/local/bin')\"\n     echo \"at the Sage command prompt.\"\n     echo \"\"\n+    echo \"To build the documentation, run\"\n+    echo \"   make doc\"\n+    echo \"\"\n     echo \"Sage build/upgrade complete!\"\n fi\n```\nThe problematic snippet is:\n\n```\n+PYPROCESSING=`$newest pyprocessing`\n+export PYPROCESSING\n+\n```\nTicket #6503 has removed pyprocessing from the standard spkg repository. Could the file `install` here be rebased on top of that in Sage 4.3.4.alpha0?",
     "created_at": "2010-03-04T03:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7943",
     "type": "issue_comment",
@@ -552,7 +554,6 @@ A comparison of the file `install` on this ticket and the corresponding file in 
      echo "Sage build/upgrade complete!"
  fi
 ```
-
 The problematic snippet is:
 
 ```
@@ -560,7 +561,6 @@ The problematic snippet is:
 +export PYPROCESSING
 +
 ```
-
 Ticket #6503 has removed pyprocessing from the standard spkg repository. Could the file `install` here be rebased on top of that in Sage 4.3.4.alpha0?
 
 

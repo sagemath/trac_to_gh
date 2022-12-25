@@ -3,7 +3,7 @@
 archive/issues_008656.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nRecent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((0,), (0,)), ((1,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\n\nThis ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.\n\n\n```\nsage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((1,), (0,)), ((0,), (1,)), ((2,), (0, 1))]\n[((1, 2), (0,)), ((0, 2), (1,))]\n[((0, 1, 2), None)]\n```\n\nFor the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.\n\nThe easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8656\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nRecent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((0,), (0,)), ((1,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\nThis ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.\n\n```\nsage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n[(None, (0, 1))]\n[((1,), (0,)), ((0,), (1,)), ((2,), (0, 1))]\n[((1, 2), (0,)), ((0, 2), (1,))]\n[((0, 1, 2), None)]\n```\nFor the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.\n\nThe easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8656\n\n",
     "created_at": "2010-04-06T20:26:33Z",
     "labels": [
         "component: geometry",
@@ -22,7 +22,6 @@ CC:  @vbraun
 
 Recent ticket #8650 (required for the output below) fixed a bug in face_lattice computation for polytopes. However, I think that both of the following examples for unbounded polyhedra are incorrect.
 
-
 ```
 sage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset
 [(None, (0, 1))]
@@ -30,9 +29,7 @@ sage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset
 [((0, 1), (0,))]
 [((0, 1), None)]
 ```
-
 This ray has three faces: empty, vertex, and the whole ray (including the vertex at which it originates). Five are shown, including a face containing the ray, but not the vertex from which it originates.
-
 
 ```
 sage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset
@@ -41,7 +38,6 @@ sage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): l
 [((1, 2), (0,)), ((0, 2), (1,))]
 [((0, 1, 2), None)]
 ```
-
 For the quadrant we have five faces: empty, vertex, two rays, and the whole quadrant. The above output has seven.
 
 The easiest fix is probably to raise an exception if the polyhedron is unbounded and state in the documentation that face_lattice works only for polytopes, but of course it would be nice to be able to compute correct faces in all cases.
@@ -57,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8656
 archive/issue_comments_078416.json:
 ```json
 {
-    "body": "The non-compactness is not the issue, the 1-d interval in a 2-d ambient space fails as well:\n\n\n```\nsage: for lset in Polyhedron(vertices=[(1,0),(0,1)]).face_lattice().level_sets(): print lset\n....: \n[(None, (0, 1, 2))]\n[((1,), (0, 2)), ((0,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\n\n\nOn the other hand, I would argue that the novoselt's Quadrant example is correct: The rays stand for points at infinite distance and are properly counted as points. A triangle would have 8 faces. The edge at infinity is not counted as a face of the quadrant (=double infinite triangle), hence the quadrant does have 7 faces.\n\nThe fundamental flaw of the face_lattice() function is that \n1) its description does not explain in detail what is computed\n2) The result should be returned by means of the H/Vrepresentation objects, and not by their indices.",
+    "body": "The non-compactness is not the issue, the 1-d interval in a 2-d ambient space fails as well:\n\n```\nsage: for lset in Polyhedron(vertices=[(1,0),(0,1)]).face_lattice().level_sets(): print lset\n....: \n[(None, (0, 1, 2))]\n[((1,), (0, 2)), ((0,), (0, 1))]\n[((0, 1), (0,))]\n[((0, 1), None)]\n```\n\nOn the other hand, I would argue that the novoselt's Quadrant example is correct: The rays stand for points at infinite distance and are properly counted as points. A triangle would have 8 faces. The edge at infinity is not counted as a face of the quadrant (=double infinite triangle), hence the quadrant does have 7 faces.\n\nThe fundamental flaw of the face_lattice() function is that \n1) its description does not explain in detail what is computed\n2) The result should be returned by means of the H/Vrepresentation objects, and not by their indices.",
     "created_at": "2010-05-08T20:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
@@ -68,7 +64,6 @@ archive/issue_comments_078416.json:
 
 The non-compactness is not the issue, the 1-d interval in a 2-d ambient space fails as well:
 
-
 ```
 sage: for lset in Polyhedron(vertices=[(1,0),(0,1)]).face_lattice().level_sets(): print lset
 ....: 
@@ -77,7 +72,6 @@ sage: for lset in Polyhedron(vertices=[(1,0),(0,1)]).face_lattice().level_sets()
 [((0, 1), (0,))]
 [((0, 1), None)]
 ```
-
 
 On the other hand, I would argue that the novoselt's Quadrant example is correct: The rays stand for points at infinite distance and are properly counted as points. A triangle would have 8 faces. The edge at infinity is not counted as a face of the quadrant (=double infinite triangle), hence the quadrant does have 7 faces.
 
@@ -195,7 +189,7 @@ archive/issue_events_020948.json:
 archive/issue_comments_078421.json:
 ```json
 {
-    "body": "Fixed by the patch in #9954:\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n....: \n[<>]\n[<1>]\n[<0,1>]\nsage: sage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n....: \n[<>]\n[<2>]\n[<1,2>, <0,2>]\n[<0,1,2>]\n```\n\nThis ticket can be closed once #9954 is merged.",
+    "body": "Fixed by the patch in #9954:\n\n```\nsage: for lset in Polyhedron(rays=[(1,0)]).face_lattice().level_sets(): lset\n....: \n[<>]\n[<1>]\n[<0,1>]\nsage: sage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_sets(): lset\n....: \n[<>]\n[<2>]\n[<1,2>, <0,2>]\n[<0,1,2>]\n```\nThis ticket can be closed once #9954 is merged.",
     "created_at": "2010-10-25T14:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8656",
     "type": "issue_comment",
@@ -219,7 +213,6 @@ sage: sage: for lset in Polyhedron(rays=[(1,0), (0,1)]).face_lattice().level_set
 [<1,2>, <0,2>]
 [<0,1,2>]
 ```
-
 This ticket can be closed once #9954 is merged.
 
 

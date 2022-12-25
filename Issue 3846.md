@@ -3,7 +3,7 @@
 archive/issues_003846.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nThe Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead\nit does something very confusing.    This was found by Franco Saliola.\n\n\n```\nsage: vector(v)[3] = 5\nsage: preparse('vector(v)[3] = 5')\n'_=var(\"v\");vector=symbolic_expression(Integer(5)).function(v)'\nsage: vector(10)\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3846\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nThe Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead\nit does something very confusing.    This was found by Franco Saliola.\n\n```\nsage: vector(v)[3] = 5\nsage: preparse('vector(v)[3] = 5')\n'_=var(\"v\");vector=symbolic_expression(Integer(5)).function(v)'\nsage: vector(10)\n5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3846\n\n",
     "created_at": "2008-08-14T03:35:27Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ CC:  @robertwb boothby
 The Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead
 it does something very confusing.    This was found by Franco Saliola.
 
-
 ```
 sage: vector(v)[3] = 5
 sage: preparse('vector(v)[3] = 5')
@@ -31,7 +30,6 @@ sage: preparse('vector(v)[3] = 5')
 sage: vector(10)
 5
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3846
 
@@ -44,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3846
 archive/issue_comments_027303.json:
 ```json
 {
-    "body": "Here's another funny example:\n\n```\nsage: foo(x,y)hithere fred wuz up?!  how is going = x+y\nsage: foo(2,3)\n5\n```\n",
+    "body": "Here's another funny example:\n\n```\nsage: foo(x,y)hithere fred wuz up?!  how is going = x+y\nsage: foo(2,3)\n5\n```",
     "created_at": "2008-08-14T03:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3846",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ sage: foo(x,y)hithere fred wuz up?!  how is going = x+y
 sage: foo(2,3)
 5
 ```
-
 
 
 
@@ -142,7 +139,7 @@ archive/issue_events_008807.json:
 archive/issue_comments_027306.json:
 ```json
 {
-    "body": "This looks fixed to me in 4.0.1:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 'vector(v)[Integer(3)] = Integer(5)'\n'vector(v)[Integer(3)] = Integer(5)'\nsage: sage: foo(x,y)hithere fred wuz up?!  how is going = x+y\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     foo(x,y)hithere fred wuz up?!  how is going = x+y\n                   ^\nSyntaxError: invalid syntax\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "This looks fixed to me in 4.0.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 'vector(v)[Integer(3)] = Integer(5)'\n'vector(v)[Integer(3)] = Integer(5)'\nsage: sage: foo(x,y)hithere fred wuz up?!  how is going = x+y\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     foo(x,y)hithere fred wuz up?!  how is going = x+y\n                   ^\nSyntaxError: invalid syntax\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n```",
     "created_at": "2009-06-04T23:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3846",
     "type": "issue_comment",
@@ -152,7 +149,6 @@ archive/issue_comments_027306.json:
 ```
 
 This looks fixed to me in 4.0.1:
-
 
 ```
 ----------------------------------------------------------------------
@@ -168,4 +164,3 @@ SyntaxError: invalid syntax
 | Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-

@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2768
 archive/issue_comments_018973.json:
 ```json
 {
-    "body": "Some timings:\n\noriginal\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 54.6 \u00b5s per loop\n```\n\n\nfast_float (after applying patch)\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: f=eq._fast_float_('x','y')\nsage: %timeit f(2,3)\n1000000 loops, best of 3: 422 ns per loop\n```\n\nand even with the overhead of converting back to bool\n\n```\nsage: %timeit bool(f(2,3))\n1000000 loops, best of 3: 721 ns per loop\n```\n",
+    "body": "Some timings:\n\noriginal\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 54.6 \u00b5s per loop\n```\n\nfast_float (after applying patch)\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: f=eq._fast_float_('x','y')\nsage: %timeit f(2,3)\n1000000 loops, best of 3: 422 ns per loop\n```\nand even with the overhead of converting back to bool\n\n```\nsage: %timeit bool(f(2,3))\n1000000 loops, best of 3: 721 ns per loop\n```",
     "created_at": "2008-04-02T06:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -51,7 +51,6 @@ sage: %timeit eq(x=2, y=3)
 10 loops, best of 3: 54.6 µs per loop
 ```
 
-
 fast_float (after applying patch)
 
 ```
@@ -62,7 +61,6 @@ sage: f=eq._fast_float_('x','y')
 sage: %timeit f(2,3)
 1000000 loops, best of 3: 422 ns per loop
 ```
-
 and even with the overhead of converting back to bool
 
 ```
@@ -72,13 +70,12 @@ sage: %timeit bool(f(2,3))
 
 
 
-
 ---
 
 archive/issue_comments_018974.json:
 ```json
 {
-    "body": "One more comparison:\n\n\n```\nsage: var('x y')\n(x, y)\nsage: x._fast_float_('x')\n<sage.ext.fast_eval.FastDoubleFunc object at 0xa02a95c>\nsage: f=x._fast_float_('x')\nsage: g=y._fast_float_('y')\nsage: f(2)<g(3)\nTrue\nsage: %timeit f(2)<g(3)\n1000000 loops, best of 3: 723 ns per loop\n```\n\n\nSo this could have been implemented without touching the fast_float code.  However, if I want just the floating point 0.0 and 1.0 values, this patch still wins.",
+    "body": "One more comparison:\n\n```\nsage: var('x y')\n(x, y)\nsage: x._fast_float_('x')\n<sage.ext.fast_eval.FastDoubleFunc object at 0xa02a95c>\nsage: f=x._fast_float_('x')\nsage: g=y._fast_float_('y')\nsage: f(2)<g(3)\nTrue\nsage: %timeit f(2)<g(3)\n1000000 loops, best of 3: 723 ns per loop\n```\n\nSo this could have been implemented without touching the fast_float code.  However, if I want just the floating point 0.0 and 1.0 values, this patch still wins.",
     "created_at": "2008-04-02T06:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -88,7 +85,6 @@ archive/issue_comments_018974.json:
 ```
 
 One more comparison:
-
 
 ```
 sage: var('x y')
@@ -103,7 +99,6 @@ sage: %timeit f(2)<g(3)
 1000000 loops, best of 3: 723 ns per loop
 ```
 
-
 So this could have been implemented without touching the fast_float code.  However, if I want just the floating point 0.0 and 1.0 values, this patch still wins.
 
 
@@ -113,7 +108,7 @@ So this could have been implemented without touching the fast_float code.  Howev
 archive/issue_comments_018975.json:
 ```json
 {
-    "body": "More timings:\n\n\n```\nsage: sage: var('x y')\n(x, y)\nsage: sage: eq=x<y\nsage: sage: f=eq._fast_float_('x','y')\nsage: sage: %timeit f(2,3)\n1000000 loops, best of 3: 438 ns per loop\nsage: xin=RDF(2); yin=RDF(2)\nsage: sage: %timeit f(xin,yin)\n1000000 loops, best of 3: 499 ns per loop\nsage: xin=float(2); yin=float(2);\nsage: sage: %timeit f(xin,yin)\n1000000 loops, best of 3: 389 ns per loop\n```\n",
+    "body": "More timings:\n\n```\nsage: sage: var('x y')\n(x, y)\nsage: sage: eq=x<y\nsage: sage: f=eq._fast_float_('x','y')\nsage: sage: %timeit f(2,3)\n1000000 loops, best of 3: 438 ns per loop\nsage: xin=RDF(2); yin=RDF(2)\nsage: sage: %timeit f(xin,yin)\n1000000 loops, best of 3: 499 ns per loop\nsage: xin=float(2); yin=float(2);\nsage: sage: %timeit f(xin,yin)\n1000000 loops, best of 3: 389 ns per loop\n```",
     "created_at": "2008-04-02T06:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -123,7 +118,6 @@ archive/issue_comments_018975.json:
 ```
 
 More timings:
-
 
 ```
 sage: sage: var('x y')
@@ -139,7 +133,6 @@ sage: xin=float(2); yin=float(2);
 sage: sage: %timeit f(xin,yin)
 1000000 loops, best of 3: 389 ns per loop
 ```
-
 
 
 
@@ -184,7 +177,7 @@ For a nice example of this patch being used, see #2770.
 archive/issue_comments_018978.json:
 ```json
 {
-    "body": "The code is nice and clean, but I don't think it should be applied. Expressions and equations are not interchangeable, and this can lead to some strange results. \n\n\n```\nsage: f = (x == 1)\nsage: g = (1 == x)\nsage: bool(f+g)\nTrue\nsage: ff = f._fast_float_('x') + g._fast_float_('x')\nsage: ff(0)\n0.0\nsage: ff(1)\n2.0\nsage: ff(2)\n0.0\nsage: list(ff)\n['load 0', 'push 1.0', 'eq', 'push 1.0', 'load 0', 'eq', 'add']\n```\n\n\nReally, I think what should be implemented is piecewise functions for fast float, which would allow one to do things like #2770 nicely. One could also create a specialized wrapper that could handle the semantics of the two sides of the equations correctly (and maybe even do short-circuiting on the first false expression).",
+    "body": "The code is nice and clean, but I don't think it should be applied. Expressions and equations are not interchangeable, and this can lead to some strange results. \n\n```\nsage: f = (x == 1)\nsage: g = (1 == x)\nsage: bool(f+g)\nTrue\nsage: ff = f._fast_float_('x') + g._fast_float_('x')\nsage: ff(0)\n0.0\nsage: ff(1)\n2.0\nsage: ff(2)\n0.0\nsage: list(ff)\n['load 0', 'push 1.0', 'eq', 'push 1.0', 'load 0', 'eq', 'add']\n```\n\nReally, I think what should be implemented is piecewise functions for fast float, which would allow one to do things like #2770 nicely. One could also create a specialized wrapper that could handle the semantics of the two sides of the equations correctly (and maybe even do short-circuiting on the first false expression).",
     "created_at": "2008-04-02T17:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
@@ -194,7 +187,6 @@ archive/issue_comments_018978.json:
 ```
 
 The code is nice and clean, but I don't think it should be applied. Expressions and equations are not interchangeable, and this can lead to some strange results. 
-
 
 ```
 sage: f = (x == 1)
@@ -211,7 +203,6 @@ sage: ff(2)
 sage: list(ff)
 ['load 0', 'push 1.0', 'eq', 'push 1.0', 'load 0', 'eq', 'add']
 ```
-
 
 Really, I think what should be implemented is piecewise functions for fast float, which would allow one to do things like #2770 nicely. One could also create a specialized wrapper that could handle the semantics of the two sides of the equations correctly (and maybe even do short-circuiting on the first false expression).
 

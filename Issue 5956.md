@@ -3,7 +3,7 @@
 archive/issues_005956.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: image dimensions, figsize\n\nAs discussed at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/c411254b7bc0bb97), the optional argument `figsize` of the command `show()` needs to clearly state that the units of the image are in inches. As of Sage 3.4.1, the docstring for `show()` says:\n\n```\n- ``figsize``- [width, height] (same for square aspect)\n```\n\nwhich can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[256,256])\n```\n\nwhile the following results in a `ValueError`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[500,500])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: width and height must each be below 32768\n```\n\nEssentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5956\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: image dimensions, figsize\n\nAs discussed at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/c411254b7bc0bb97), the optional argument `figsize` of the command `show()` needs to clearly state that the units of the image are in inches. As of Sage 3.4.1, the docstring for `show()` says:\n\n```\n- ``figsize``- [width, height] (same for square aspect)\n```\nwhich can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[256,256])\n```\nwhile the following results in a `ValueError`:\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[500,500])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: width and height must each be below 32768\n```\nEssentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5956\n\n",
     "created_at": "2009-05-01T07:17:25Z",
     "labels": [
         "component: graphics",
@@ -28,7 +28,6 @@ As discussed at this [sage-devel thread](http://groups.google.com/group/sage-dev
 ```
 - ``figsize``- [width, height] (same for square aspect)
 ```
-
 which can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:
 
 ```
@@ -44,9 +43,9 @@ sage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5
 sage: p = complex_plot(f/g, (-2,2), (-2,2))
 sage: p.show(figsize=[256,256])
 ```
-
 while the following results in a `ValueError`:
-
+| Sage Version 3.4.1, Release Date: 2009-04-21                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -63,7 +62,6 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: width and height must each be below 32768
 ```
-
 Essentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?
 
 Issue created by migration from https://trac.sagemath.org/ticket/5956
@@ -151,7 +149,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_047023.json:
 ```json
 {
-    "body": "This would be a good start.  \n\nWhat's the reference for the dpi, just out of curiosity?  (I assume it's right in the Sage or mpl source.)  Also, telling us the maximum possible would be helpful, given the errors - especially since the one above is confusing since the `32768` is in \"dots\", not inches.  Presumably if one reset the default dpi...\n\n```\nsage: P.show(figsize=[1,327],dpi=100)\nsage: P.show(figsize=[1,328],dpi=100)\n<ValueError>\nsage: P.show(figsize=[1,328],dpi=80)\n```\n\nSo this should be very, very clear, in order to resolve this ticket.\n\nAdditionally, you'll want to add a doctest to verify that some things don't go boom, and that the error is correctly raised, etc.  Maybe even a `# not tested` line with the segfault.\n\nFinally, we may also want to report the segfault upstream with a \"pure\" matplotlib example, if you can concoct one.\n\nBut all that said, thanks very much for looking at this - this is just part of the normal review process, good start.",
+    "body": "This would be a good start.  \n\nWhat's the reference for the dpi, just out of curiosity?  (I assume it's right in the Sage or mpl source.)  Also, telling us the maximum possible would be helpful, given the errors - especially since the one above is confusing since the `32768` is in \"dots\", not inches.  Presumably if one reset the default dpi...\n\n```\nsage: P.show(figsize=[1,327],dpi=100)\nsage: P.show(figsize=[1,328],dpi=100)\n<ValueError>\nsage: P.show(figsize=[1,328],dpi=80)\n```\nSo this should be very, very clear, in order to resolve this ticket.\n\nAdditionally, you'll want to add a doctest to verify that some things don't go boom, and that the error is correctly raised, etc.  Maybe even a `# not tested` line with the segfault.\n\nFinally, we may also want to report the segfault upstream with a \"pure\" matplotlib example, if you can concoct one.\n\nBut all that said, thanks very much for looking at this - this is just part of the normal review process, good start.",
     "created_at": "2012-11-04T01:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -170,7 +168,6 @@ sage: P.show(figsize=[1,328],dpi=100)
 <ValueError>
 sage: P.show(figsize=[1,328],dpi=80)
 ```
-
 So this should be very, very clear, in order to resolve this ticket.
 
 Additionally, you'll want to add a doctest to verify that some things don't go boom, and that the error is correctly raised, etc.  Maybe even a `# not tested` line with the segfault.
@@ -204,7 +201,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047025.json:
 ```json
 {
-    "body": "Thank you for the pointers. In matplotlib/rcsetup.py the default figure properties start at line 508. \nline 509 # figure size in inches: width by height 'figure.figsize'    : [ [8.0,6.0], validate_nseq_float(2)]\nline 523 'savefig.dpi'         : [100, validate_float],   # DPI\n\nI submitted a new patch to include what I think you mean by a doctest. I wasn't sure what you meant about including '# not tested line with the segfault'. Should I include an example with the segfault in the docstring?\n\nStrangely enough, I did not raise any errors when I tried a 'pure' matplotlib example...\n\n\n```\nfrom matplotlib import pyplot as plt\nf=plt.figure(figsize=[28,10],dpi=100)\nf.show()\n```\n\n\n\nWould someone kindly review  and let me know what else should be included in the doctest? I appreciate your patience with this, as I am (obviously) new and hoping to learn. Thank you!",
+    "body": "Thank you for the pointers. In matplotlib/rcsetup.py the default figure properties start at line 508. \nline 509 # figure size in inches: width by height 'figure.figsize'    : [ [8.0,6.0], validate_nseq_float(2)]\nline 523 'savefig.dpi'         : [100, validate_float],   # DPI\n\nI submitted a new patch to include what I think you mean by a doctest. I wasn't sure what you meant about including '# not tested line with the segfault'. Should I include an example with the segfault in the docstring?\n\nStrangely enough, I did not raise any errors when I tried a 'pure' matplotlib example...\n\n```\nfrom matplotlib import pyplot as plt\nf=plt.figure(figsize=[28,10],dpi=100)\nf.show()\n```\n\n\nWould someone kindly review  and let me know what else should be included in the doctest? I appreciate your patience with this, as I am (obviously) new and hoping to learn. Thank you!",
     "created_at": "2012-11-10T18:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -221,13 +218,11 @@ I submitted a new patch to include what I think you mean by a doctest. I wasn't 
 
 Strangely enough, I did not raise any errors when I tried a 'pure' matplotlib example...
 
-
 ```
 from matplotlib import pyplot as plt
 f=plt.figure(figsize=[28,10],dpi=100)
 f.show()
 ```
-
 
 
 Would someone kindly review  and let me know what else should be included in the doctest? I appreciate your patience with this, as I am (obviously) new and hoping to learn. Thank you!
@@ -239,7 +234,7 @@ Would someone kindly review  and let me know what else should be included in the
 archive/issue_comments_047026.json:
 ```json
 {
-    "body": "This ticket is awesome! Brought my laptop to a crawl! :)\n\n`@`emchennyc: I might come back to this ticket if kcrisman doesn't. For now, it seems that matplotlib (even the latest 1.2.0 release) does not handle the parameters `[256,256]` properly. It tries to allocate memory and then fails, resulting in a segfault.\n\nWhat kcrisman asks is a doctest like this (under a `TEST:` section; look at how these sections are written in other functions or other files):\n\n```\nTEST:\n\nThe following plot segfaults sage and should not be doctested.::\n\n    sage: plot(x).show(figsize=[256,256]) # not tested\n\n```\n\n\nIf you do happen to run this command, be very careful. I suggest you set a ulimit before you start sage. If you have, say 3G, of memory/RAM, then set ulimit to 2G and only then start sage. If you have even less memory then you will need to set even lower ulimit, but sage won't run properly below 1G.\n\n```\n$ ulimit -v 2000000\n$ sage\nsage: plot(x).show(figsize=[256,256]) # boom, segv!!\n```\n\n\nThat said, I would like you to set some defaults in your editor. Currently, your patch contains a mixture of tabs and spaces. I suggest you change the settings in your editor to not insert tabs, and instead insert 4 spaces every time you press a tab key.",
+    "body": "This ticket is awesome! Brought my laptop to a crawl! :)\n\n`@`emchennyc: I might come back to this ticket if kcrisman doesn't. For now, it seems that matplotlib (even the latest 1.2.0 release) does not handle the parameters `[256,256]` properly. It tries to allocate memory and then fails, resulting in a segfault.\n\nWhat kcrisman asks is a doctest like this (under a `TEST:` section; look at how these sections are written in other functions or other files):\n\n```\nTEST:\n\nThe following plot segfaults sage and should not be doctested.::\n\n    sage: plot(x).show(figsize=[256,256]) # not tested\n\n```\n\nIf you do happen to run this command, be very careful. I suggest you set a ulimit before you start sage. If you have, say 3G, of memory/RAM, then set ulimit to 2G and only then start sage. If you have even less memory then you will need to set even lower ulimit, but sage won't run properly below 1G.\n\n```\n$ ulimit -v 2000000\n$ sage\nsage: plot(x).show(figsize=[256,256]) # boom, segv!!\n```\n\nThat said, I would like you to set some defaults in your editor. Currently, your patch contains a mixture of tabs and spaces. I suggest you change the settings in your editor to not insert tabs, and instead insert 4 spaces every time you press a tab key.",
     "created_at": "2012-11-16T10:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -263,7 +258,6 @@ The following plot segfaults sage and should not be doctested.::
 
 ```
 
-
 If you do happen to run this command, be very careful. I suggest you set a ulimit before you start sage. If you have, say 3G, of memory/RAM, then set ulimit to 2G and only then start sage. If you have even less memory then you will need to set even lower ulimit, but sage won't run properly below 1G.
 
 ```
@@ -271,7 +265,6 @@ $ ulimit -v 2000000
 $ sage
 sage: plot(x).show(figsize=[256,256]) # boom, segv!!
 ```
-
 
 That said, I would like you to set some defaults in your editor. Currently, your patch contains a mixture of tabs and spaces. I suggest you change the settings in your editor to not insert tabs, and instead insert 4 spaces every time you press a tab key.
 
@@ -346,7 +339,7 @@ Also, here is a matplotlib example which I believe this bug is related to. Pleas
 archive/issue_comments_047030.json:
 ```json
 {
-    "body": "Replying to [comment:9 emchennyc]:\n> `@`ppurka Thank you for the feedback! The tests I included in the attached patch pass when I run:\n> ./sage -t -verbose 'devel/sage-5956/sage/plot/graphics.py'\n> \n> Then, I\n\nYou have to do ./sage -b first.  The tests run on the copy of the code in the devel/sage directory, but the docs build off the ones in the build directory which that command does.\n\n> - ran ./sage -docbuild reference html\n> - navigated to SAGEROOT/devel/branch/doc/output/html/en/reference\n> - opened plotting.html in a browser\n> - visited the doc page for Graphics objects\n> but did not see the documentation that I added. Did I miss a step?\n> \n> Also, here is a matplotlib example which I believe this bug is related to. Please correct me if I'm wrong and feel free to advise if I should use this example to report as a matplotlib issue: http://pastebin.com/raw.php?i=5Arg52e2",
+    "body": "Replying to [comment:9 emchennyc]:\n> `@`ppurka Thank you for the feedback! The tests I included in the attached patch pass when I run:\n> ./sage -t -verbose 'devel/sage-5956/sage/plot/graphics.py'\n> \n> Then, I\n\n\nYou have to do ./sage -b first.  The tests run on the copy of the code in the devel/sage directory, but the docs build off the ones in the build directory which that command does.\n\n> - ran ./sage -docbuild reference html\n> - navigated to SAGEROOT/devel/branch/doc/output/html/en/reference\n> - opened plotting.html in a browser\n> - visited the doc page for Graphics objects\n> but did not see the documentation that I added. Did I miss a step?\n> \n> Also, here is a matplotlib example which I believe this bug is related to. Please correct me if I'm wrong and feel free to advise if I should use this example to report as a matplotlib issue: http://pastebin.com/raw.php?i=5Arg52e2",
     "created_at": "2013-01-05T13:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -360,6 +353,7 @@ Replying to [comment:9 emchennyc]:
 > ./sage -t -verbose 'devel/sage-5956/sage/plot/graphics.py'
 > 
 > Then, I
+
 
 You have to do ./sage -b first.  The tests run on the copy of the code in the devel/sage directory, but the docs build off the ones in the build directory which that command does.
 
@@ -378,7 +372,7 @@ You have to do ./sage -b first.  The tests run on the copy of the code in the de
 archive/issue_comments_047031.json:
 ```json
 {
-    "body": "Thanks for the update. There is one more thing that I overlooked earlier. The documentation should mention that the number `32768` is in dots per inch. Maybe the text of `ValueError` should also end in **32768 dots per inch**.\n\n```\nsage: e.show(figsize=[328,10],dpi=100)\nValueError: width and height must each be below 32768 dots per inch.\n```\n\nI think the following modification to the `figsize` documentation is warranted.\n\n```\n- ``figsize`` - (default: [8.0,6.0]) [width, height] inches. The maximum value\n  of each of the width and the height can be 327 inches, at the default ``dpi``\n  of 100 dpi, which is just shy of the maximum allowed value of 32768 dots\n  per inch.\n```\n\nThen, the test should have the following description:\n\n```\n        The figsize width and height parameters must be less than 328 inches each,\n        corresponding to the maximum allowed dpi of 32768.::\n```\n\nThis will make the number 32768 more clear to anyone who is curious what that number means in the `ValueError`.\n\nI am unable to replicate your matplotlib example. A figure doesn't seem to have a `show()` attribute. However, the following example successfully crashes matplotlib.\n\n```\n~\u00bb ulimit -v 2000000\n~\u00bb sage -ipython\nPython 2.7.3 (default, Dec 30 2012, 21:34:30)\nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.10.2 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython's features.\n%quickref -> Quick reference.\nhelp      -> Python's own help system.\nobject?   -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: from matplotlib import pyplot\n\nIn [2]: pyplot.figure(figsize=[232,232])\nOut[2]: <matplotlib.figure.Figure object at 0x12ba950>\n\nIn [3]: pyplot.savefig('/tmp/a.png')\n...\nRuntimeError: Could not allocate memory for image\n```\n",
+    "body": "Thanks for the update. There is one more thing that I overlooked earlier. The documentation should mention that the number `32768` is in dots per inch. Maybe the text of `ValueError` should also end in **32768 dots per inch**.\n\n```\nsage: e.show(figsize=[328,10],dpi=100)\nValueError: width and height must each be below 32768 dots per inch.\n```\nI think the following modification to the `figsize` documentation is warranted.\n\n```\n- ``figsize`` - (default: [8.0,6.0]) [width, height] inches. The maximum value\n  of each of the width and the height can be 327 inches, at the default ``dpi``\n  of 100 dpi, which is just shy of the maximum allowed value of 32768 dots\n  per inch.\n```\nThen, the test should have the following description:\n\n```\n        The figsize width and height parameters must be less than 328 inches each,\n        corresponding to the maximum allowed dpi of 32768.::\n```\nThis will make the number 32768 more clear to anyone who is curious what that number means in the `ValueError`.\n\nI am unable to replicate your matplotlib example. A figure doesn't seem to have a `show()` attribute. However, the following example successfully crashes matplotlib.\n\n```\n~\u00bb ulimit -v 2000000\n~\u00bb sage -ipython\nPython 2.7.3 (default, Dec 30 2012, 21:34:30)\nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.10.2 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython's features.\n%quickref -> Quick reference.\nhelp      -> Python's own help system.\nobject?   -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: from matplotlib import pyplot\n\nIn [2]: pyplot.figure(figsize=[232,232])\nOut[2]: <matplotlib.figure.Figure object at 0x12ba950>\n\nIn [3]: pyplot.savefig('/tmp/a.png')\n...\nRuntimeError: Could not allocate memory for image\n```",
     "created_at": "2013-01-05T14:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -393,7 +387,6 @@ Thanks for the update. There is one more thing that I overlooked earlier. The do
 sage: e.show(figsize=[328,10],dpi=100)
 ValueError: width and height must each be below 32768 dots per inch.
 ```
-
 I think the following modification to the `figsize` documentation is warranted.
 
 ```
@@ -402,14 +395,12 @@ I think the following modification to the `figsize` documentation is warranted.
   of 100 dpi, which is just shy of the maximum allowed value of 32768 dots
   per inch.
 ```
-
 Then, the test should have the following description:
 
 ```
         The figsize width and height parameters must be less than 328 inches each,
         corresponding to the maximum allowed dpi of 32768.::
 ```
-
 This will make the number 32768 more clear to anyone who is curious what that number means in the `ValueError`.
 
 I am unable to replicate your matplotlib example. A figure doesn't seem to have a `show()` attribute. However, the following example successfully crashes matplotlib.
@@ -435,7 +426,6 @@ In [3]: pyplot.savefig('/tmp/a.png')
 ...
 RuntimeError: Could not allocate memory for image
 ```
-
 
 
 
@@ -626,7 +616,7 @@ Patchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to 
 archive/issue_comments_047041.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n> I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nThanks. Looks good to me.\n\n> ppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nI did change some doctests.",
+    "body": "Replying to [comment:17 kcrisman]:\n> I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\n\nThanks. Looks good to me.\n\n> ppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\n\nI did change some doctests.",
     "created_at": "2013-03-23T07:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -638,9 +628,11 @@ archive/issue_comments_047041.json:
 Replying to [comment:17 kcrisman]:
 > I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.
 
+
 Thanks. Looks good to me.
 
 > ppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.
+
 
 I did change some doctests.
 
@@ -707,7 +699,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_047045.json:
 ```json
 {
-    "body": "> Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\nOkay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well - which is better in the long run, but which is tricky with all the zillions of numeric input types Sage has... does something like `isnumeric` work?  It sounds familiar.",
+    "body": "> Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\n\nOkay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well - which is better in the long run, but which is tricky with all the zillions of numeric input types Sage has... does something like `isnumeric` work?  It sounds familiar.",
     "created_at": "2013-03-23T12:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -717,6 +709,7 @@ archive/issue_comments_047045.json:
 ```
 
 > Assertions are meant to check internal consistency inside algorithms. They express "I *know* this condition is true", not "I want to *check* that this condition is true".
+
 Okay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well - which is better in the long run, but which is tricky with all the zillions of numeric input types Sage has... does something like `isnumeric` work?  It sounds familiar.
 
 
@@ -726,7 +719,7 @@ Okay, fair enough.  The problem is that now I have to go remember how to check t
 archive/issue_comments_047046.json:
 ```json
 {
-    "body": "Replying to [comment:20 kcrisman]:\n> > Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\n> Okay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well\n\nJust convert, for example\n\n```\nx = float(x)\n```\n",
+    "body": "Replying to [comment:20 kcrisman]:\n> > Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\n\n> Okay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well\n\nJust convert, for example\n\n```\nx = float(x)\n```",
     "created_at": "2013-03-23T12:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -737,6 +730,7 @@ archive/issue_comments_047046.json:
 
 Replying to [comment:20 kcrisman]:
 > > Assertions are meant to check internal consistency inside algorithms. They express "I *know* this condition is true", not "I want to *check* that this condition is true".
+
 > Okay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well
 
 Just convert, for example
@@ -744,7 +738,6 @@ Just convert, for example
 ```
 x = float(x)
 ```
-
 
 
 
@@ -771,7 +764,7 @@ Why should we go around checking for numeric types? This is not a "critical" app
 archive/issue_comments_047048.json:
 ```json
 {
-    "body": "It's not critical in that sense, but it's the kind of thing where I figure we might as well make sure that any error message sent makes sense.  The current error\n\n```\nValueError: width and height must each be below 32768\n```\n\ndoesn't refer to `figsize` and at least made me totally miss that I had somehow smuggled a minus sign in there, since I was frantically trying to make the image smaller and wondering why five was too big :-)  I figure if it can happen to an experienced Sage user \"on the spot\", it will definitely happen to a new user.  Jeroen's comment seems quite reasonable especially as everything matplotlib is going to end up a float anyway, if I recall correctly.\n\nI'll try to get this all packaged up in the next day or two.",
+    "body": "It's not critical in that sense, but it's the kind of thing where I figure we might as well make sure that any error message sent makes sense.  The current error\n\n```\nValueError: width and height must each be below 32768\n```\ndoesn't refer to `figsize` and at least made me totally miss that I had somehow smuggled a minus sign in there, since I was frantically trying to make the image smaller and wondering why five was too big :-)  I figure if it can happen to an experienced Sage user \"on the spot\", it will definitely happen to a new user.  Jeroen's comment seems quite reasonable especially as everything matplotlib is going to end up a float anyway, if I recall correctly.\n\nI'll try to get this all packaged up in the next day or two.",
     "created_at": "2013-03-26T03:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -785,7 +778,6 @@ It's not critical in that sense, but it's the kind of thing where I figure we mi
 ```
 ValueError: width and height must each be below 32768
 ```
-
 doesn't refer to `figsize` and at least made me totally miss that I had somehow smuggled a minus sign in there, since I was frantically trying to make the image smaller and wondering why five was too big :-)  I figure if it can happen to an experienced Sage user "on the spot", it will definitely happen to a new user.  Jeroen's comment seems quite reasonable especially as everything matplotlib is going to end up a float anyway, if I recall correctly.
 
 I'll try to get this all packaged up in the next day or two.
@@ -934,7 +926,7 @@ archive/issue_events_013968.json:
 archive/issue_comments_047050.json:
 ```json
 {
-    "body": "> I'll try to get this all packaged up in the next day or two.\nNext day or two, next year or two...\n> Added a git version of the patch. This is based on 6.1.beta5.\nAmazingly, apparently still applies.\n\nBut we still haven't taken care of Jeroen's comment.  So I will try to do that now.\n----\nNew commits:",
+    "body": "> I'll try to get this all packaged up in the next day or two.\n\nNext day or two, next year or two...\n> Added a git version of the patch. This is based on 6.1.beta5.\n\nAmazingly, apparently still applies.\n\nBut we still haven't taken care of Jeroen's comment.  So I will try to do that now.\n\n---\nNew commits:",
     "created_at": "2014-11-07T19:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -944,12 +936,15 @@ archive/issue_comments_047050.json:
 ```
 
 > I'll try to get this all packaged up in the next day or two.
+
 Next day or two, next year or two...
 > Added a git version of the patch. This is based on 6.1.beta5.
+
 Amazingly, apparently still applies.
 
 But we still haven't taken care of Jeroen's comment.  So I will try to do that now.
-----
+
+---
 New commits:
 
 
@@ -959,7 +954,7 @@ New commits:
 archive/issue_comments_047051.json:
 ```json
 {
-    "body": "Okay, the last commit only needs review.\n----\nNew commits:",
+    "body": "Okay, the last commit only needs review.\n\n---\nNew commits:",
     "created_at": "2014-11-07T19:39:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -969,7 +964,8 @@ archive/issue_comments_047051.json:
 ```
 
 Okay, the last commit only needs review.
-----
+
+---
 New commits:
 
 
@@ -997,7 +993,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047053.json:
 ```json
 {
-    "body": "Replying to [comment:22 ppurka]:\n> Why should we go around checking for numeric types? This is not a \"critical\" application that should ensure sane inputs for all kinds of inputs. If the user sends in garbage, they will eventually get garbage out from at least matplotlib, if not earlier in the process.\n\nWell, it could be that the user will send some Sage numeric type, which matplotlib might treat like garbage. A conversion like\n\n```\nx = float(x)   # assuming that it's a float that you need\n```\n\nwill solve both problems: it will raise a `TypeError` when true garbage is given but it should work for all Sage numeric types.",
+    "body": "Replying to [comment:22 ppurka]:\n> Why should we go around checking for numeric types? This is not a \"critical\" application that should ensure sane inputs for all kinds of inputs. If the user sends in garbage, they will eventually get garbage out from at least matplotlib, if not earlier in the process.\n\n\nWell, it could be that the user will send some Sage numeric type, which matplotlib might treat like garbage. A conversion like\n\n```\nx = float(x)   # assuming that it's a float that you need\n```\nwill solve both problems: it will raise a `TypeError` when true garbage is given but it should work for all Sage numeric types.",
     "created_at": "2014-11-08T11:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -1009,12 +1005,12 @@ archive/issue_comments_047053.json:
 Replying to [comment:22 ppurka]:
 > Why should we go around checking for numeric types? This is not a "critical" application that should ensure sane inputs for all kinds of inputs. If the user sends in garbage, they will eventually get garbage out from at least matplotlib, if not earlier in the process.
 
+
 Well, it could be that the user will send some Sage numeric type, which matplotlib might treat like garbage. A conversion like
 
 ```
 x = float(x)   # assuming that it's a float that you need
 ```
-
 will solve both problems: it will raise a `TypeError` when true garbage is given but it should work for all Sage numeric types.
 
 
@@ -1042,7 +1038,7 @@ A minor point, but I wouldn't write segfaulting examples. Imagine the user tries
 archive/issue_comments_047055.json:
 ```json
 {
-    "body": "Replying to [comment:34 jdemeyer]:\n> A minor point, but I wouldn't write segfaulting examples. Imagine the user tries those \"examples\" without reading the surrounding text...\nHow about we prepend the segfaulting line with a comment? Like this:\n\n```\nsage: #p.show(figsize=[232,232],dpi=100) # not tested\n```\n\nSo, anyone who blindly copy pastes will get nothing out of it. And has to make two mistakes to make it segfault. I think the reason this example is there is to make the user aware that unreasonable parameters will result in an uncomfortable end.",
+    "body": "Replying to [comment:34 jdemeyer]:\n> A minor point, but I wouldn't write segfaulting examples. Imagine the user tries those \"examples\" without reading the surrounding text...\n\nHow about we prepend the segfaulting line with a comment? Like this:\n\n```\nsage: #p.show(figsize=[232,232],dpi=100) # not tested\n```\nSo, anyone who blindly copy pastes will get nothing out of it. And has to make two mistakes to make it segfault. I think the reason this example is there is to make the user aware that unreasonable parameters will result in an uncomfortable end.",
     "created_at": "2014-11-09T14:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -1053,12 +1049,12 @@ archive/issue_comments_047055.json:
 
 Replying to [comment:34 jdemeyer]:
 > A minor point, but I wouldn't write segfaulting examples. Imagine the user tries those "examples" without reading the surrounding text...
+
 How about we prepend the segfaulting line with a comment? Like this:
 
 ```
 sage: #p.show(figsize=[232,232],dpi=100) # not tested
 ```
-
 So, anyone who blindly copy pastes will get nothing out of it. And has to make two mistakes to make it segfault. I think the reason this example is there is to make the user aware that unreasonable parameters will result in an uncomfortable end.
 
 
@@ -1106,7 +1102,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_047058.json:
 ```json
 {
-    "body": "Okay, I think this is ready for review.  The `float` stuff is actually unnecessary but it can't hurt, since we definitely only want things that can be floats in there.\n----\nNew commits:",
+    "body": "Okay, I think this is ready for review.  The `float` stuff is actually unnecessary but it can't hurt, since we definitely only want things that can be floats in there.\n\n---\nNew commits:",
     "created_at": "2014-11-13T19:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -1116,7 +1112,8 @@ archive/issue_comments_047058.json:
 ```
 
 Okay, I think this is ready for review.  The `float` stuff is actually unnecessary but it can't hurt, since we definitely only want things that can be floats in there.
-----
+
+---
 New commits:
 
 
@@ -1144,7 +1141,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_047060.json:
 ```json
 {
-    "body": "Is there a check that `len(figsize) == 2`?\n\nI would change the logic of those branches to\n\n```\nif figure is None:\n    # add a good comment here\n    ...\nelif isinstance(figsize, (list, tuple)):\n    # figsize should be two positive numbers\n    if len(figsize) != 2:\n        raise ValueError('...')\n    ...\nelse:\n    # figsize should be a single positive number\n    figsize = float(figsize) # to pass to mpl\n    if figsize <= 0:\n        raise ValueError(\"figsize should be positive, not {0}\".format(figsize))\n    ...\n```\n\n\nAnd add a doctest for some non-float `figsize` argument like\n\n```\nsage: var('x')\nsage: ...figsize=x...\n```\n",
+    "body": "Is there a check that `len(figsize) == 2`?\n\nI would change the logic of those branches to\n\n```\nif figure is None:\n    # add a good comment here\n    ...\nelif isinstance(figsize, (list, tuple)):\n    # figsize should be two positive numbers\n    if len(figsize) != 2:\n        raise ValueError('...')\n    ...\nelse:\n    # figsize should be a single positive number\n    figsize = float(figsize) # to pass to mpl\n    if figsize <= 0:\n        raise ValueError(\"figsize should be positive, not {0}\".format(figsize))\n    ...\n```\n\nAnd add a doctest for some non-float `figsize` argument like\n\n```\nsage: var('x')\nsage: ...figsize=x...\n```",
     "created_at": "2014-11-13T20:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
@@ -1174,14 +1171,12 @@ else:
     ...
 ```
 
-
 And add a doctest for some non-float `figsize` argument like
 
 ```
 sage: var('x')
 sage: ...figsize=x...
 ```
-
 
 
 

@@ -117,7 +117,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_047671.json:
 ```json
 {
-    "body": "Replying to [comment:2 rbeezer]:\n> Thanks, Doug.  Yes I think this has exceeded its shelf-life.  The referenced tickets (and maybe one or two others) basically put Cholesky decomposition on a firm footing again.\n> \n> I'll try to put this into the right status to get Jeroen's attention.\nJust for your information: it's better to also change the milestone the sage-duplicate/invalid/wontfix.",
+    "body": "Replying to [comment:2 rbeezer]:\n> Thanks, Doug.  Yes I think this has exceeded its shelf-life.  The referenced tickets (and maybe one or two others) basically put Cholesky decomposition on a firm footing again.\n> \n> I'll try to put this into the right status to get Jeroen's attention.\n\nJust for your information: it's better to also change the milestone the sage-duplicate/invalid/wontfix.",
     "created_at": "2012-08-22T09:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6003",
     "type": "issue_comment",
@@ -130,6 +130,7 @@ Replying to [comment:2 rbeezer]:
 > Thanks, Doug.  Yes I think this has exceeded its shelf-life.  The referenced tickets (and maybe one or two others) basically put Cholesky decomposition on a firm footing again.
 > 
 > I'll try to put this into the right status to get Jeroen's attention.
+
 Just for your information: it's better to also change the milestone the sage-duplicate/invalid/wontfix.
 
 

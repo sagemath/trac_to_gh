@@ -3,7 +3,7 @@
 archive/issues_003643.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nI disabled dsage/testdoc.py for sage-3.0.5, since that system for doctesting dsage is BROKEN.\nFor example\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py\n********************************************************************\nFile \"/home/was/build/sage-3.0.4/tmp/testdoc.py\", line 14:\n   sage: a\nExpected:\n   5\nGot:\n   No output.\n```\n\nand this is just a typical timing issue.  We have unit tests after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3643\n\n",
+    "body": "Assignee: @yqiang\n\nI disabled dsage/testdoc.py for sage-3.0.5, since that system for doctesting dsage is BROKEN.\nFor example\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py\n********************************************************************\nFile \"/home/was/build/sage-3.0.4/tmp/testdoc.py\", line 14:\n   sage: a\nExpected:\n   5\nGot:\n   No output.\n```\nand this is just a typical timing issue.  We have unit tests after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3643\n\n",
     "created_at": "2008-07-11T18:41:37Z",
     "labels": [
         "component: dsage",
@@ -32,7 +32,6 @@ Expected:
 Got:
    No output.
 ```
-
 and this is just a typical timing issue.  We have unit tests after all.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3643

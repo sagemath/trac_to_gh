@@ -3,7 +3,7 @@
 archive/issues_007639.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAddress refers to a network interface. So perhaps we can change address to interface, but continue accepting address for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7639\n\n",
+    "body": "Assignee: @williamstein\n\nAddress refers to a network interface. So perhaps we can change address to interface, but continue accepting address for backwards compatibility? Something like this in the docstring:\n\n```\n            - ``interface``       -- (default: 'localhost'), address of network\n              interface to listen on; give '' to listen on all interfaces. You may \n              use ``address`` here for backwards compatibility, but this is deprecated\n              and will be removed in the future.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7639\n\n",
     "created_at": "2009-12-09T14:46:48Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ Address refers to a network interface. So perhaps we can change address to inter
               use ``address`` here for backwards compatibility, but this is deprecated
               and will be removed in the future.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7639
 

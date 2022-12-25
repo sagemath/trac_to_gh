@@ -181,7 +181,7 @@ Changing assignee from tbd to @nexttime.
 archive/issue_comments_098313.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> I've created a separate RPy 2.0.8.p1 spkg and an R 2.10.1.p5 (follow-up of p4 at #10016) spkg with the RPy spkg removed; both coming soon... \n\nHow soon is soon? \n\nIf you can make these available, it will help those that want to update the source code. \n\nDave",
+    "body": "Replying to [comment:5 leif]:\n> I've created a separate RPy 2.0.8.p1 spkg and an R 2.10.1.p5 (follow-up of p4 at #10016) spkg with the RPy spkg removed; both coming soon... \n\n\nHow soon is soon? \n\nIf you can make these available, it will help those that want to update the source code. \n\nDave",
     "created_at": "2010-10-01T13:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -192,6 +192,7 @@ archive/issue_comments_098313.json:
 
 Replying to [comment:5 leif]:
 > I've created a separate RPy 2.0.8.p1 spkg and an R 2.10.1.p5 (follow-up of p4 at #10016) spkg with the RPy spkg removed; both coming soon... 
+
 
 How soon is soon? 
 
@@ -264,7 +265,7 @@ Changing status from new to needs_review.
 archive/issue_comments_098317.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> So... does this activity mean you will be posting something on e.g. spkg-upload? \n\nLooks like. Before the spkgs have their first anniversary...\n\nThere are (still) some things that could be done, e.g. using `patch` and patching the `pkg-config` file (`libR.pc`) from `spkg-install`.\n\nWe could also perhaps either recompress the contained recommended R packages (`.tar.gz`) with `bzip2` or decompress them to plain `tar` files, as we compress the whole spkg with `bzip2` anyway. Haven't yet tried that though.\n\nRPy (and perhaps R) should IMHO be upgraded on a follow-up ticket.",
+    "body": "Replying to [comment:11 kcrisman]:\n> So... does this activity mean you will be posting something on e.g. spkg-upload? \n\n\nLooks like. Before the spkgs have their first anniversary...\n\nThere are (still) some things that could be done, e.g. using `patch` and patching the `pkg-config` file (`libR.pc`) from `spkg-install`.\n\nWe could also perhaps either recompress the contained recommended R packages (`.tar.gz`) with `bzip2` or decompress them to plain `tar` files, as we compress the whole spkg with `bzip2` anyway. Haven't yet tried that though.\n\nRPy (and perhaps R) should IMHO be upgraded on a follow-up ticket.",
     "created_at": "2011-08-05T10:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -275,6 +276,7 @@ archive/issue_comments_098317.json:
 
 Replying to [comment:11 kcrisman]:
 > So... does this activity mean you will be posting something on e.g. spkg-upload? 
+
 
 Looks like. Before the spkgs have their first anniversary...
 
@@ -341,7 +343,7 @@ Note I have not actually installed or tested this yet :)
 archive/issue_comments_098320.json:
 ```json
 {
-    "body": "*Sorry for the delay, no trac notifications...* >B-|\n\nReplying to [comment:15 kcrisman]:\n> Yes, a different ticket would be fine.\n\n#9668 if you don't object...\n\n\n\n> I didn't realize these spkgs were actually ready :)\n\nI didn't know either. ;-)\n\nMore or less just completed the Changelog entries.\n\n\n\n> Comments/questions: \n\n>  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)\n\nIt's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)\n\nActually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\n\nIIRC there were also problems with `R_PROFILE` when *using* Sage's R, which would have to be addressed in e.g. `sage-env` and/or the Sage library, not [necessarily] the spkg itself.\n\n\n\n>  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?\n\nWell, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)\n\n\n\n>  * What happened to Dave's favorite `\"x$SAGE64\" = xyes` (you removed the 'x's)?\n\nI get eye cancer from such, it's worse readable and hence error-prone. If `test \"\" = foo` would evaluate to `true` (on some supported systems) Sage would certainly break in many places, not just because *we* use that all around. *Quoting* is important.\n\n(The broken instance of `test` was btw. a shell built-in version [besides some *really very old* `test` implementations which were less robust w.r.t. invalid expressions], and we explicitly use `bash` anyway. Prepending characters to variable expansions can make sense in different contexts, and is sometimes used to save the quotes, though the latter is also quite ugly. Similar applies to *not* using `-o` and `-a`.)\n\nIf one wanted to go really safe, one would either explicitly use `bash`'s built-in version of `test` (`[This is the Trac macro *\"$SAGE64\" = yes * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#\"$SAGE64\" = yes -macro)`), use `case \"$SAGE64\" in yes) ...`, or perhaps\n\n```sh\n[ \"${SAGE64:-no}\" = yes ]\n```\n\nwhich is the equivalent of Python's\n\n```python\nos.environ.get(\"SAGE64\", \"no\") == \"yes\"\n```\n\n\n\n\n>  * Any reason to include the old RPy installation in the `if false` block?\n\nNot really.\n\n> Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.\n\nSure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.\n\n\n\n> Note I have not actually installed or tested this yet :)\n\nHope you'll do so later. :)",
+    "body": "*Sorry for the delay, no trac notifications...* >B-|\n\nReplying to [comment:15 kcrisman]:\n> Yes, a different ticket would be fine.\n\n\n#9668 if you don't object...\n\n\n\n> I didn't realize these spkgs were actually ready :)\n\n\nI didn't know either. ;-)\n\nMore or less just completed the Changelog entries.\n\n\n\n> Comments/questions: \n\n\n>  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)\n\n\nIt's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)\n\nActually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\n\nIIRC there were also problems with `R_PROFILE` when *using* Sage's R, which would have to be addressed in e.g. `sage-env` and/or the Sage library, not [necessarily] the spkg itself.\n\n\n\n>  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?\n\n\nWell, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)\n\n\n\n>  * What happened to Dave's favorite `\"x$SAGE64\" = xyes` (you removed the 'x's)?\n\n\nI get eye cancer from such, it's worse readable and hence error-prone. If `test \"\" = foo` would evaluate to `true` (on some supported systems) Sage would certainly break in many places, not just because *we* use that all around. *Quoting* is important.\n\n(The broken instance of `test` was btw. a shell built-in version [besides some *really very old* `test` implementations which were less robust w.r.t. invalid expressions], and we explicitly use `bash` anyway. Prepending characters to variable expansions can make sense in different contexts, and is sometimes used to save the quotes, though the latter is also quite ugly. Similar applies to *not* using `-o` and `-a`.)\n\nIf one wanted to go really safe, one would either explicitly use `bash`'s built-in version of `test` (`[This is the Trac macro *\"$SAGE64\" = yes * that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#\"$SAGE64\" = yes -macro)`), use `case \"$SAGE64\" in yes) ...`, or perhaps\n\n```sh\n[ \"${SAGE64:-no}\" = yes ]\n```\nwhich is the equivalent of Python's\n\n```python\nos.environ.get(\"SAGE64\", \"no\") == \"yes\"\n```\n\n\n\n>  * Any reason to include the old RPy installation in the `if false` block?\n\n\nNot really.\n\n> Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.\n\n\nSure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.\n\n\n\n> Note I have not actually installed or tested this yet :)\n\n\nHope you'll do so later. :)",
     "created_at": "2011-08-07T03:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -355,11 +357,13 @@ archive/issue_comments_098320.json:
 Replying to [comment:15 kcrisman]:
 > Yes, a different ticket would be fine.
 
+
 #9668 if you don't object...
 
 
 
 > I didn't realize these spkgs were actually ready :)
+
 
 I didn't know either. ;-)
 
@@ -369,7 +373,9 @@ More or less just completed the Changelog entries.
 
 > Comments/questions: 
 
+
 >  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)
+
 
 It's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)
 
@@ -381,11 +387,13 @@ IIRC there were also problems with `R_PROFILE` when *using* Sage's R, which woul
 
 >  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?
 
+
 Well, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)
 
 
 
 >  * What happened to Dave's favorite `"x$SAGE64" = xyes` (you removed the 'x's)?
+
 
 I get eye cancer from such, it's worse readable and hence error-prone. If `test "" = foo` would evaluate to `true` (on some supported systems) Sage would certainly break in many places, not just because *we* use that all around. *Quoting* is important.
 
@@ -396,7 +404,6 @@ If one wanted to go really safe, one would either explicitly use `bash`'s built-
 ```sh
 [ "${SAGE64:-no}" = yes ]
 ```
-
 which is the equivalent of Python's
 
 ```python
@@ -405,18 +412,20 @@ os.environ.get("SAGE64", "no") == "yes"
 
 
 
-
 >  * Any reason to include the old RPy installation in the `if false` block?
+
 
 Not really.
 
 > Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.
+
 
 Sure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.
 
 
 
 > Note I have not actually installed or tested this yet :)
+
 
 Hope you'll do so later. :)
 
@@ -427,7 +436,7 @@ Hope you'll do so later. :)
 archive/issue_comments_098321.json:
 ```json
 {
-    "body": "> > Yes, a different ticket would be fine.\n> #9668 if you don't object...\nNo, that is quite natural.\n> >  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)\n> It's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)\nI didn't realize that.  \n> Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\nSo maybe that's a \"needs work\"?\n> IIRC there were also problems with `R_PROFILE` when *using* Sage's R, which would have to be addressed in e.g. `sage-env` and/or the Sage library, not [necessarily] the spkg itself.\nYes, that's a different ticket, and notoriously hard to track down at times.\n> >  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?\n> \n> Well, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)\nOk.\n> >  * Any reason to include the old RPy installation in the `if false` block?\n> Not really.\n> > Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.\n> Sure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.\nWell, either way that wouldn't hold up this ticket.\n> > Note I have not actually installed or tested this yet :)\n> Hope you'll do so later. :)\nBut not today :(",
+    "body": "> > Yes, a different ticket would be fine.\n\n> #9668 if you don't object...\nNo, that is quite natural.\n> >  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)\n \n> It's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)\nI didn't realize that.  \n> Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\n\nSo maybe that's a \"needs work\"?\n> IIRC there were also problems with `R_PROFILE` when *using* Sage's R, which would have to be addressed in e.g. `sage-env` and/or the Sage library, not [necessarily] the spkg itself.\n\nYes, that's a different ticket, and notoriously hard to track down at times.\n> >  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?\n \n> \n> Well, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)\n\nOk.\n> >  * Any reason to include the old RPy installation in the `if false` block?\n \n> Not really.\n> > Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.\n\n> Sure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.\nWell, either way that wouldn't hold up this ticket.\n> > Note I have not actually installed or tested this yet :)\n\n> Hope you'll do so later. :)\nBut not today :(",
     "created_at": "2011-08-08T14:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -437,25 +446,34 @@ archive/issue_comments_098321.json:
 ```
 
 > > Yes, a different ticket would be fine.
+
 > #9668 if you don't object...
 No, that is quite natural.
 > >  * Do we need to unset `R_PROFILE` completely, or can we save that in a temp variable, unset it, then reset it after the spkg installs?  (If not because it would mess up RPy, we would have to do that there too.)
+ 
 > It's not fully clear to me what you mean by that. Unsetting `R_PROFILE` there only lasts until we leave `spkg-install`, i.e., is only effective within `spkg-install` and everything that's called from it. (Same applies to `spkg-check`.)
 I didn't realize that.  
 > Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.
+
 So maybe that's a "needs work"?
 > IIRC there were also problems with `R_PROFILE` when *using* Sage's R, which would have to be addressed in e.g. `sage-env` and/or the Sage library, not [necessarily] the spkg itself.
+
 Yes, that's a different ticket, and notoriously hard to track down at times.
 > >  * Do we need an 'echo' regarding the comment about the `$MAKE check` so that if it does fail, people know what to do?
+ 
 > 
 > Well, I was expecting testing this being part of the review process, so I just added a comment. I can of course also print an appropriate message in case the (parallel) test should fail, but perhaps in the p6 on another ticket. (Automatically rerunning the test suite sequentially would IMHO be a less good idea.)
+
 Ok.
 > >  * Any reason to include the old RPy installation in the `if false` block?
+ 
 > Not really.
 > > Presumably if one really wanted to, the HG is there - I can't imagine this being very interesting to anyone.
+
 > Sure, though it is buried by lots of other changes in the same changeset. I intended to remove it later, temporarily kept it just for documentation purposes.
 Well, either way that wouldn't hold up this ticket.
 > > Note I have not actually installed or tested this yet :)
+
 > Hope you'll do so later. :)
 But not today :(
 
@@ -466,7 +484,7 @@ But not today :(
 archive/issue_comments_098322.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n> > > Yes, a different ticket would be fine.\n> > #9668 if you don't object...\n> No, that is quite natural.\n\nOk.\n\n\n\n\n> > Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\n> So maybe that's a \"needs work\"?\n\n`R_PROFILE` doesn't appear in any of RPy's source files, so I don't think so. (I perhaps checked that last year, but forgot about it. :D )",
+    "body": "Replying to [comment:17 kcrisman]:\n> > > Yes, a different ticket would be fine.\n\n> > #9668 if you don't object...\n> No, that is quite natural.\n\n\nOk.\n\n\n\n\n> > Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.\n\n> So maybe that's a \"needs work\"?\n\n`R_PROFILE` doesn't appear in any of RPy's source files, so I don't think so. (I perhaps checked that last year, but forgot about it. :D )",
     "created_at": "2011-08-09T05:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -477,8 +495,10 @@ archive/issue_comments_098322.json:
 
 Replying to [comment:17 kcrisman]:
 > > > Yes, a different ticket would be fine.
+
 > > #9668 if you don't object...
 > No, that is quite natural.
+
 
 Ok.
 
@@ -486,6 +506,7 @@ Ok.
 
 
 > > Actually I apparently didn't think of unsetting (or forgot to unset) `R_PROFILE` also in *RPy's* `spkg-install`; I'm not sure if RPy could break otherwise, but doing so shouldn't hurt.
+
 > So maybe that's a "needs work"?
 
 `R_PROFILE` doesn't appear in any of RPy's source files, so I don't think so. (I perhaps checked that last year, but forgot about it. :D )
@@ -543,7 +564,7 @@ Here is another somewhat related ticket - #10967.   I don't think that is fixed,
 archive/issue_comments_098325.json:
 ```json
 {
-    "body": "Replying to [comment:20 kcrisman]:\n> Here is another somewhat related ticket - #10967.   I don't think that is fixed, at least not in the same way, by this p5.\n\nFor the record: #10967 will be addressed at #9668, by an R 2.10.1.p6 spkg there, so I've made the former ticket depend on the latter, and changed its milestone to *\"duplicate/invalid/won't fix\"*.",
+    "body": "Replying to [comment:20 kcrisman]:\n> Here is another somewhat related ticket - #10967.   I don't think that is fixed, at least not in the same way, by this p5.\n\n\nFor the record: #10967 will be addressed at #9668, by an R 2.10.1.p6 spkg there, so I've made the former ticket depend on the latter, and changed its milestone to *\"duplicate/invalid/won't fix\"*.",
     "created_at": "2011-08-21T00:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -554,6 +575,7 @@ archive/issue_comments_098325.json:
 
 Replying to [comment:20 kcrisman]:
 > Here is another somewhat related ticket - #10967.   I don't think that is fixed, at least not in the same way, by this p5.
+
 
 For the record: #10967 will be addressed at #9668, by an R 2.10.1.p6 spkg there, so I've made the former ticket depend on the latter, and changed its milestone to *"duplicate/invalid/won't fix"*.
 
@@ -638,7 +660,7 @@ Changing keywords from "" to "r-project".
 archive/issue_comments_098330.json:
 ```json
 {
-    "body": "Replying to [comment:25 jason]:\n> Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.\n\nRegarding this, see #12057.",
+    "body": "Replying to [comment:25 jason]:\n> Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.\n\n\nRegarding this, see #12057.",
     "created_at": "2011-11-20T01:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -650,6 +672,7 @@ archive/issue_comments_098330.json:
 Replying to [comment:25 jason]:
 > Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.
 
+
 Regarding this, see #12057.
 
 
@@ -659,7 +682,7 @@ Regarding this, see #12057.
 archive/issue_comments_098331.json:
 ```json
 {
-    "body": "Replying to [comment:25 jason]:\n> Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.\n\nWell, this didn't happen.  R will be upgraded to version 2.14 in #12057 which will normally be merged in sage-4.8.alpha4.  So, this ticket needs to be rebased...",
+    "body": "Replying to [comment:25 jason]:\n> Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.\n\n\nWell, this didn't happen.  R will be upgraded to version 2.14 in #12057 which will normally be merged in sage-4.8.alpha4.  So, this ticket needs to be rebased...",
     "created_at": "2011-12-09T10:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -670,6 +693,7 @@ archive/issue_comments_098331.json:
 
 Replying to [comment:25 jason]:
 > Wow.  I just upgraded my rpy2 spkg to 2.2.4, and was tempted to work on upgrading R to 2.14.  But then I saw this ticket.  I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above), and it feels like this work should go in before upgrading to 2.14, etc.
+
 
 Well, this didn't happen.  R will be upgraded to version 2.14 in #12057 which will normally be merged in sage-4.8.alpha4.  So, this ticket needs to be rebased...
 
@@ -698,7 +722,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098333.json:
 ```json
 {
-    "body": "Replying to [comment:25 jason]:\n> I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)\nTesting is easy, I wouldn't mind doing that.",
+    "body": "Replying to [comment:25 jason]:\n> I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)\n\nTesting is easy, I wouldn't mind doing that.",
     "created_at": "2011-12-09T11:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -709,6 +733,7 @@ archive/issue_comments_098333.json:
 
 Replying to [comment:25 jason]:
 > I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)
+
 Testing is easy, I wouldn't mind doing that.
 
 
@@ -718,7 +743,7 @@ Testing is easy, I wouldn't mind doing that.
 archive/issue_comments_098334.json:
 ```json
 {
-    "body": "> > I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)\n> Testing is easy, I wouldn't mind doing that.\nI had the same problem, because it would require a lot of manual stuff, but if you can use the buildbot to test a rebased version of this that would be fantastic.",
+    "body": "> > I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)\n\n> Testing is easy, I wouldn't mind doing that.\nI had the same problem, because it would require a lot of manual stuff, but if you can use the buildbot to test a rebased version of this that would be fantastic.",
     "created_at": "2011-12-09T14:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -728,6 +753,7 @@ archive/issue_comments_098334.json:
 ```
 
 > > I don't have time either right now to do the extensive testing this ticket appears to need (according to comments above)
+
 > Testing is easy, I wouldn't mind doing that.
 I had the same problem, because it would require a lot of manual stuff, but if you can use the buildbot to test a rebased version of this that would be fantastic.
 
@@ -885,7 +911,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098342.json:
 ```json
 {
-    "body": "There is also some general cleanup that could happen; for example:\n\n```diff\ndiff --git a/spkg-install b/spkg-install\n--- a/spkg-install\n+++ b/spkg-install\n@@ -67,15 +67,6 @@ if [ \"$UNAME\" = \"SunOS\" ]; then\n     SUN_FLAGS=\"--without-ICU\"; export SUN_FLAGS\n fi\n \n-# let's remove old install, even the wrongly installed ones\n-rm -rf \"$SAGE_LOCAL\"/lib/r\n-rm -rf \"$SAGE_LOCAL\"/lib/R\n-rm -rf \"$SAGE_LOCAL\"/lib64/R\n-rm -rf \"$SAGE_LOCAL\"/lib64/r\n-# and let's also nuke some leftovers on SAGE_LOCAL/lib\n-rm -rf \"$SAGE_LOCAL\"/lib/libRblas.so \"$SAGE_LOCAL\"/lib/libRlapack.so \"$SAGE_LOCAL\"/lib/libR.so\n-rm -rf \"$SAGE_LOCAL\"/lib/libRblas.dylib \"$SAGE_LOCAL\"/lib/libRlapack.dylib \"$SAGE_LOCAL\"/lib/libR.dylib\n-\n cd src\n \n # Apply patches.  See SPKG.txt for information about what each patch\n@@ -131,6 +122,15 @@ if [ $? -ne 0 ]; then\n     exit 1\n fi\n \n+# Before installing, remove old install, even the wrongly installed ones.\n+rm -rf \"$SAGE_LOCAL\"/lib/r\n+rm -rf \"$SAGE_LOCAL\"/lib/R\n+rm -rf \"$SAGE_LOCAL\"/lib64/R\n+rm -rf \"$SAGE_LOCAL\"/lib64/r\n+# and let's also nuke some leftovers on SAGE_LOCAL/lib\n+rm -rf \"$SAGE_LOCAL\"/lib/libRblas.so \"$SAGE_LOCAL\"/lib/libRlapack.so \"$SAGE_LOCAL\"/lib/libR.so\n+rm -rf \"$SAGE_LOCAL\"/lib/libRblas.dylib \"$SAGE_LOCAL\"/lib/libRlapack.dylib \"$SAGE_LOCAL\"/lib/libR.dylib\n+\n # Disable parallel make install, which is supposedly broken\n $MAKE -j1 vignettes  # Needed for help system\n $MAKE -j1 install\n@@ -168,7 +168,7 @@ if [ $? -ne 0 ] || [ ! -f \"$SAGE_ROOT\"/s\n fi\n \n if [ \"$UNAME\" = \"Darwin\" ]; then\n-    echo \"Copying fake java and javac compiler on OSX\"\n+    echo \"Removing fake java and javac compiler on OSX.\"\n     rm -f \"$SAGE_LOCAL\"/bin/java\n     rm -f \"$SAGE_LOCAL\"/bin/javac\n fi\n```\n\nShould this happen on another ticket?",
+    "body": "There is also some general cleanup that could happen; for example:\n\n```diff\ndiff --git a/spkg-install b/spkg-install\n--- a/spkg-install\n+++ b/spkg-install\n@@ -67,15 +67,6 @@ if [ \"$UNAME\" = \"SunOS\" ]; then\n     SUN_FLAGS=\"--without-ICU\"; export SUN_FLAGS\n fi\n \n-# let's remove old install, even the wrongly installed ones\n-rm -rf \"$SAGE_LOCAL\"/lib/r\n-rm -rf \"$SAGE_LOCAL\"/lib/R\n-rm -rf \"$SAGE_LOCAL\"/lib64/R\n-rm -rf \"$SAGE_LOCAL\"/lib64/r\n-# and let's also nuke some leftovers on SAGE_LOCAL/lib\n-rm -rf \"$SAGE_LOCAL\"/lib/libRblas.so \"$SAGE_LOCAL\"/lib/libRlapack.so \"$SAGE_LOCAL\"/lib/libR.so\n-rm -rf \"$SAGE_LOCAL\"/lib/libRblas.dylib \"$SAGE_LOCAL\"/lib/libRlapack.dylib \"$SAGE_LOCAL\"/lib/libR.dylib\n-\n cd src\n \n # Apply patches.  See SPKG.txt for information about what each patch\n@@ -131,6 +122,15 @@ if [ $? -ne 0 ]; then\n     exit 1\n fi\n \n+# Before installing, remove old install, even the wrongly installed ones.\n+rm -rf \"$SAGE_LOCAL\"/lib/r\n+rm -rf \"$SAGE_LOCAL\"/lib/R\n+rm -rf \"$SAGE_LOCAL\"/lib64/R\n+rm -rf \"$SAGE_LOCAL\"/lib64/r\n+# and let's also nuke some leftovers on SAGE_LOCAL/lib\n+rm -rf \"$SAGE_LOCAL\"/lib/libRblas.so \"$SAGE_LOCAL\"/lib/libRlapack.so \"$SAGE_LOCAL\"/lib/libR.so\n+rm -rf \"$SAGE_LOCAL\"/lib/libRblas.dylib \"$SAGE_LOCAL\"/lib/libRlapack.dylib \"$SAGE_LOCAL\"/lib/libR.dylib\n+\n # Disable parallel make install, which is supposedly broken\n $MAKE -j1 vignettes  # Needed for help system\n $MAKE -j1 install\n@@ -168,7 +168,7 @@ if [ $? -ne 0 ] || [ ! -f \"$SAGE_ROOT\"/s\n fi\n \n if [ \"$UNAME\" = \"Darwin\" ]; then\n-    echo \"Copying fake java and javac compiler on OSX\"\n+    echo \"Removing fake java and javac compiler on OSX.\"\n     rm -f \"$SAGE_LOCAL\"/bin/java\n     rm -f \"$SAGE_LOCAL\"/bin/javac\n fi\n```\nShould this happen on another ticket?",
     "created_at": "2012-09-04T19:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -942,7 +968,6 @@ diff --git a/spkg-install b/spkg-install
      rm -f "$SAGE_LOCAL"/bin/javac
  fi
 ```
-
 Should this happen on another ticket?
 
 
@@ -952,7 +977,7 @@ Should this happen on another ticket?
 archive/issue_comments_098343.json:
 ```json
 {
-    "body": "Replying to [comment:44 jhpalmieri]:\n> Should this happen on another ticket?\nYes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.",
+    "body": "Replying to [comment:44 jhpalmieri]:\n> Should this happen on another ticket?\n\nYes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.",
     "created_at": "2012-09-04T19:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -963,6 +988,7 @@ archive/issue_comments_098343.json:
 
 Replying to [comment:44 jhpalmieri]:
 > Should this happen on another ticket?
+
 Yes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.
 
 
@@ -1116,7 +1142,7 @@ Resolution: fixed
 archive/issue_comments_098351.json:
 ```json
 {
-    "body": "> > Should this happen on another ticket?\n> Yes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.\nYou can cc: me on this new ticket too when you make it.",
+    "body": "> > Should this happen on another ticket?\n\n> Yes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.\nYou can cc: me on this new ticket too when you make it.",
     "created_at": "2012-09-06T19:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -1126,6 +1152,7 @@ archive/issue_comments_098351.json:
 ```
 
 > > Should this happen on another ticket?
+
 > Yes please.  I specifically didn't do any kind of cleanup just to ensure this would finally be merged.
 You can cc: me on this new ticket too when you make it.
 
@@ -1136,7 +1163,7 @@ You can cc: me on this new ticket too when you make it.
 archive/issue_comments_098352.json:
 ```json
 {
-    "body": "Replying to [comment:50 kcrisman]:\n> You can cc: me on this new ticket too when you make it.\nTo be honest, this is not something I feel like working on, so I'm going to make that ticket.",
+    "body": "Replying to [comment:50 kcrisman]:\n> You can cc: me on this new ticket too when you make it.\n\nTo be honest, this is not something I feel like working on, so I'm going to make that ticket.",
     "created_at": "2012-09-07T09:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9905",
     "type": "issue_comment",
@@ -1147,6 +1174,7 @@ archive/issue_comments_098352.json:
 
 Replying to [comment:50 kcrisman]:
 > You can cc: me on this new ticket too when you make it.
+
 To be honest, this is not something I feel like working on, so I'm going to make that ticket.
 
 

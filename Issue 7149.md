@@ -3,7 +3,7 @@
 archive/issues_007149.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b0d82d01bc1f123?tvc=2):\n\n```\nAs of version 4.1.2.alpha2, the Sage tutorial has a section containing \na guided tour of graph theory in Sage.  In principle, this is a good \nidea, but the execution is severely flawed: about 2/3 of the tour \nfocuses on the methods \"g.max_matching()\", \"g.edge_coloring()\", and \n\"g.vertex_coloring()\".  There are no such methods in Sage.  (The \nrelevant doctests were never executed because of the issue discussed \nat trac ticket #6572.)  Since the tutorial ought to be one of the \nfirst pieces of documentation people use, this situation is \ndisastrous. \n\nI suggest that before we release 4.1.2, we delete this part of the \ntutorial until the file is fixed.  (Alternatively, we could delete 2/3 \nof the file, but that might make it a bit short on substance.) \n```\n\nSee #6572 for some related issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7149\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b0d82d01bc1f123?tvc=2):\n\n```\nAs of version 4.1.2.alpha2, the Sage tutorial has a section containing \na guided tour of graph theory in Sage.  In principle, this is a good \nidea, but the execution is severely flawed: about 2/3 of the tour \nfocuses on the methods \"g.max_matching()\", \"g.edge_coloring()\", and \n\"g.vertex_coloring()\".  There are no such methods in Sage.  (The \nrelevant doctests were never executed because of the issue discussed \nat trac ticket #6572.)  Since the tutorial ought to be one of the \nfirst pieces of documentation people use, this situation is \ndisastrous. \n\nI suggest that before we release 4.1.2, we delete this part of the \ntutorial until the file is fixed.  (Alternatively, we could delete 2/3 \nof the file, but that might make it a bit short on substance.) \n```\nSee #6572 for some related issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7149\n\n",
     "created_at": "2009-10-08T00:54:23Z",
     "labels": [
         "component: documentation",
@@ -36,7 +36,6 @@ I suggest that before we release 4.1.2, we delete this part of the
 tutorial until the file is fixed.  (Alternatively, we could delete 2/3 
 of the file, but that might make it a bit short on substance.) 
 ```
-
 See #6572 for some related issues.
 
 

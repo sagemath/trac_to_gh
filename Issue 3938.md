@@ -3,7 +3,7 @@
 archive/issues_003938.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n\n```\nsage: 1.0r/8\n1/8\n```\n\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  cwitty\n\nThis came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:\n\n```\nsage: 1.0r/8\n1/8\n```\n\nThat's because of this code in coerce.pyx, which does a conversion rather than a coercion:\n\n```\n        elif PY_IS_NUMERIC(x):\n            try:\n                x = yp(x)\n                if PY_TYPE_CHECK(yp, type): return x,y\n```\n\nI tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3938\n\n",
     "created_at": "2008-08-23T21:02:17Z",
     "labels": [
         "component: coercion",
@@ -22,12 +22,10 @@ CC:  cwitty
 
 This came up while reviewing #2898, which adds a conversion from float to ZZ (for integral values).  After applying that patch, you get:
 
-
 ```
 sage: 1.0r/8
 1/8
 ```
-
 
 That's because of this code in coerce.pyx, which does a conversion rather than a coercion:
 
@@ -37,7 +35,6 @@ That's because of this code in coerce.pyx, which does a conversion rather than a
                 x = yp(x)
                 if PY_TYPE_CHECK(yp, type): return x,y
 ```
-
 
 I tried to fix this, but every time I fixed something it broke something else.  I'm going to attach my latest non-working patch, which may or may not be a useful place to start.
 
@@ -52,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3938
 archive/issue_comments_028160.json:
 ```json
 {
-    "body": "Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by @robertwb created at 2008-08-24 08:43:53\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\n\nThoughts?",
+    "body": "Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/some-uuid/ticket3938/trac3938-coercion-converts-native.patch) by @robertwb created at 2008-08-24 08:43:53\n\nI've been playing around with this a bit, simplified your patch some, but one consequence is that \n\n```\nsage: parent(RealField(100)(1.5) + float(1.5)) # good?\n<type 'float'>\nsage: RealField(100)(2^4000) == float('inf')   # bad?\nTrue\n```\n\nThoughts?",
     "created_at": "2008-08-24T08:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -65,14 +62,12 @@ Attachment [trac3938-coercion-converts-native.patch](tarball://root/attachments/
 
 I've been playing around with this a bit, simplified your patch some, but one consequence is that 
 
-
 ```
 sage: parent(RealField(100)(1.5) + float(1.5)) # good?
 <type 'float'>
 sage: RealField(100)(2^4000) == float('inf')   # bad?
 True
 ```
-
 
 Thoughts?
 
@@ -163,7 +158,7 @@ Michael
 archive/issue_comments_028165.json:
 ```json
 {
-    "body": "I get\n\n\n```\nsage: parent(RealField(10)(1) * float(1))\nReal Field with 10 bits of precision\n```\n\n\nwith the patches applied against 3.1.2.alpha4.",
+    "body": "I get\n\n```\nsage: parent(RealField(10)(1) * float(1))\nReal Field with 10 bits of precision\n```\n\nwith the patches applied against 3.1.2.alpha4.",
     "created_at": "2008-09-06T23:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -174,12 +169,10 @@ archive/issue_comments_028165.json:
 
 I get
 
-
 ```
 sage: parent(RealField(10)(1) * float(1))
 Real Field with 10 bits of precision
 ```
-
 
 with the patches applied against 3.1.2.alpha4.
 
@@ -230,7 +223,7 @@ It also passes its own tests and the code looks good.
 archive/issue_comments_028168.json:
 ```json
 {
-    "body": "This patch causes a Heisenbug:\n\n```\n\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py\nsage -t -long devel/sage/sage/modular/modsym/ambient.py     \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [4.6 s]\nexit code: 768\n```\n\nIt does not happen without \"-long\" and when running \"-long -verbose\" it also seems to pass. I guess it is time to valgrind :)\n\nCheers,\n\nMichael",
+    "body": "This patch causes a Heisenbug:\n\n```\n\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha0$ ./sage -t -long devel/sage/sage/modular/modsym/ambient.py\nsage -t -long devel/sage/sage/modular/modsym/ambient.py     \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [4.6 s]\nexit code: 768\n```\nIt does not happen without \"-long\" and when running \"-long -verbose\" it also seems to pass. I guess it is time to valgrind :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-19T01:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -260,7 +253,6 @@ A mysterious error (perphaps a memory error?) occurred, which may have crashed d
          [4.6 s]
 exit code: 768
 ```
-
 It does not happen without "-long" and when running "-long -verbose" it also seems to pass. I guess it is time to valgrind :)
 
 Cheers,
@@ -430,7 +422,7 @@ Looks good.
 archive/issue_comments_028177.json:
 ```json
 {
-    "body": "One fix:\n\n```\n    TypeError: no cannonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision\n```\n\nneeds to become\n\n```\n    TypeError: no canonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision\n```\n\n\nI am fixing that in the patch I am applying.\n\nCheers,\n\nMichael",
+    "body": "One fix:\n\n```\n    TypeError: no cannonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision\n```\nneeds to become\n\n```\n    TypeError: no canonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision\n```\n\nI am fixing that in the patch I am applying.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-28T15:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3938",
     "type": "issue_comment",
@@ -444,13 +436,11 @@ One fix:
 ```
     TypeError: no cannonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision
 ```
-
 needs to become
 
 ```
     TypeError: no canonical coercion from Real Field with 53 bits of precision to Real Field with 100 bits of precision
 ```
-
 
 I am fixing that in the patch I am applying.
 

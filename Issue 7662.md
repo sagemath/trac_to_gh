@@ -74,7 +74,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065490.json:
 ```json
 {
-    "body": "You should define what a \"perfect elimination order\" and a \"hole\" are in the documentation.\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 8758:\n    sage: (_, peo) = g.is_chordal(certificate = True)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_135[7]>\", line 1, in <module>\n        (_, peo) = g.is_chordal(certificate = True)###line 8758:\n    sage: (_, peo) = g.is_chordal(certificate = True)\n      File \"/home/rlmill/sage-4.6/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8854, in is_chordal\n        return True, peo_copy\n    NameError: global name 'peo_copy' is not defined\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 8759:\n    sage: for v in peo:\n          if not g.subgraph(g.neighbors(v)).is_clique():\n               print \"This should never happen !\"\n          g.delete_vertex(v)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_135[8]>\", line 1, in <module>\n        for v in peo:###line 8759:\n    sage: for v in peo:\n    NameError: name 'peo' is not defined\n**********************************************************************\n```\n",
+    "body": "You should define what a \"perfect elimination order\" and a \"hole\" are in the documentation.\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 8758:\n    sage: (_, peo) = g.is_chordal(certificate = True)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_135[7]>\", line 1, in <module>\n        (_, peo) = g.is_chordal(certificate = True)###line 8758:\n    sage: (_, peo) = g.is_chordal(certificate = True)\n      File \"/home/rlmill/sage-4.6/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8854, in is_chordal\n        return True, peo_copy\n    NameError: global name 'peo_copy' is not defined\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 8759:\n    sage: for v in peo:\n          if not g.subgraph(g.neighbors(v)).is_clique():\n               print \"This should never happen !\"\n          g.delete_vertex(v)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/rlmill/sage-4.6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_135[8]>\", line 1, in <module>\n        for v in peo:###line 8759:\n    sage: for v in peo:\n    NameError: name 'peo' is not defined\n**********************************************************************\n```",
     "created_at": "2010-11-10T12:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ archive/issue_comments_065490.json:
 ```
 
 You should define what a "perfect elimination order" and a "hole" are in the documentation.
-
 
 ```
 sage -t -long ./sage/graphs/generic_graph.py
@@ -125,7 +124,6 @@ Exception raised:
     NameError: name 'peo' is not defined
 **********************************************************************
 ```
-
 
 
 
@@ -192,7 +190,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_065494.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n> What about my `Such an ordering is called a Perfect Elimination Order` ? Would you like something more formal instead ?\n\nI'm not sure whether this is enough. Imagine a user who knows what the definition of chordal is, but not much else. You still want the documentation for this function to make sense to that user. Granted, it is not Sage's job to educate people about all of mathematics, but it certainly should be able to make clear what the input and output of each function is. Perhaps in this case it could do a better job of informing the user of what it is returning.\n\nAs long as you say what an elimination order is, then I think that's enough, but right now it is an undefined term.",
+    "body": "Replying to [comment:5 ncohen]:\n> What about my `Such an ordering is called a Perfect Elimination Order` ? Would you like something more formal instead ?\n\n\nI'm not sure whether this is enough. Imagine a user who knows what the definition of chordal is, but not much else. You still want the documentation for this function to make sense to that user. Granted, it is not Sage's job to educate people about all of mathematics, but it certainly should be able to make clear what the input and output of each function is. Perhaps in this case it could do a better job of informing the user of what it is returning.\n\nAs long as you say what an elimination order is, then I think that's enough, but right now it is an undefined term.",
     "created_at": "2010-11-26T10:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7662",
     "type": "issue_comment",
@@ -203,6 +201,7 @@ archive/issue_comments_065494.json:
 
 Replying to [comment:5 ncohen]:
 > What about my `Such an ordering is called a Perfect Elimination Order` ? Would you like something more formal instead ?
+
 
 I'm not sure whether this is enough. Imagine a user who knows what the definition of chordal is, but not much else. You still want the documentation for this function to make sense to that user. Granted, it is not Sage's job to educate people about all of mathematics, but it certainly should be able to make clear what the input and output of each function is. Perhaps in this case it could do a better job of informing the user of what it is returning.
 

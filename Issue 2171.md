@@ -3,7 +3,7 @@
 archive/issues_002171.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nApply the patches from #2169, then apply both these patches.  To test do\n\n```\nsage -t --optional SAGE_ROOT/devel/sage/sage/interfaces/magma.py\n```\n\n\nConversion of Magma matrices over ZZ back to Sage should also be much faster now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2171\n\n",
+    "body": "Assignee: @williamstein\n\nApply the patches from #2169, then apply both these patches.  To test do\n\n```\nsage -t --optional SAGE_ROOT/devel/sage/sage/interfaces/magma.py\n```\n\nConversion of Magma matrices over ZZ back to Sage should also be much faster now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2171\n\n",
     "created_at": "2008-02-15T08:11:04Z",
     "labels": [
         "component: interfaces",
@@ -23,7 +23,6 @@ Apply the patches from #2169, then apply both these patches.  To test do
 ```
 sage -t --optional SAGE_ROOT/devel/sage/sage/interfaces/magma.py
 ```
-
 
 Conversion of Magma matrices over ZZ back to Sage should also be much faster now.
 
@@ -76,7 +75,7 @@ Apply all the attached files -- the sage- ones to hg_sage and the extcode ones t
 archive/issue_comments_014220.json:
 ```json
 {
-    "body": "I get a reject with http://sagetrac.org/sage_trac/attachment/ticket/2171/sage-trac2171.patch on rc1.  It looks like it is depending on a patch that isn't there.  This is the failure:\n\n\n```\n--- expect.py\n+++ expect.py\n@@ -860,10 +860,15 @@ If this all works, you can then make cal\n         return self.eval(var)\n \n     def get_using_file(self, var):\n-        \"\"\"\n+        r\"\"\"\n         Return the string representation of the variable var in self\n         using a file.  Use this if var has a huge string\n         representation.  It'll be way faster.\n+\n+        WARNING: In fact unless a special derived class implements\n+        this, it will \\emph{not} be any faster.  This is the case for\n+        this class if you're reading it through introspection and\n+        seeing this.\n         \"\"\"\n         return self.get(var)\n```\n\n\nand this is expect.py in rc1:\n\n\n```\n    def get_using_file(self, var):\n        return self.get(var)\n```\n",
+    "body": "I get a reject with http://sagetrac.org/sage_trac/attachment/ticket/2171/sage-trac2171.patch on rc1.  It looks like it is depending on a patch that isn't there.  This is the failure:\n\n```\n--- expect.py\n+++ expect.py\n@@ -860,10 +860,15 @@ If this all works, you can then make cal\n         return self.eval(var)\n \n     def get_using_file(self, var):\n-        \"\"\"\n+        r\"\"\"\n         Return the string representation of the variable var in self\n         using a file.  Use this if var has a huge string\n         representation.  It'll be way faster.\n+\n+        WARNING: In fact unless a special derived class implements\n+        this, it will \\emph{not} be any faster.  This is the case for\n+        this class if you're reading it through introspection and\n+        seeing this.\n         \"\"\"\n         return self.get(var)\n```\n\nand this is expect.py in rc1:\n\n```\n    def get_using_file(self, var):\n        return self.get(var)\n```",
     "created_at": "2008-03-05T00:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -86,7 +85,6 @@ archive/issue_comments_014220.json:
 ```
 
 I get a reject with http://sagetrac.org/sage_trac/attachment/ticket/2171/sage-trac2171.patch on rc1.  It looks like it is depending on a patch that isn't there.  This is the failure:
-
 
 ```
 --- expect.py
@@ -109,15 +107,12 @@ I get a reject with http://sagetrac.org/sage_trac/attachment/ticket/2171/sage-tr
          return self.get(var)
 ```
 
-
 and this is expect.py in rc1:
-
 
 ```
     def get_using_file(self, var):
         return self.get(var)
 ```
-
 
 
 
@@ -313,7 +308,7 @@ Michael
 archive/issue_comments_014228.json:
 ```json
 {
-    "body": "For the patch **extcode-trac2171-part2.patch**, here's a possible documentation fix:\n\n```\n-{Conver the ring of integers to Sage.}\n+{Convert the ring of integers to Sage.}\n```\n",
+    "body": "For the patch **extcode-trac2171-part2.patch**, here's a possible documentation fix:\n\n```\n-{Conver the ring of integers to Sage.}\n+{Convert the ring of integers to Sage.}\n```",
     "created_at": "2008-10-27T03:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2171",
     "type": "issue_comment",
@@ -328,7 +323,6 @@ For the patch **extcode-trac2171-part2.patch**, here's a possible documentation 
 -{Conver the ring of integers to Sage.}
 +{Convert the ring of integers to Sage.}
 ```
-
 
 
 

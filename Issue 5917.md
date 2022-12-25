@@ -3,7 +3,7 @@
 archive/issues_005917.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: polynomial ring fraction field conversion\n\nThe following is with sage-3.4.1 on sage.math:\n\nSetting:\n\n```\nsage: F1 = FractionField(PolynomialRing(QQ,'a'))\nsage: R11 = F1['x']\nsage: R12 = F1['x','y']\nsage: F2 = FractionField(PolynomialRing(QQ,['a','b']))\nsage: R21 = F2['x']\nsage: R22 = F2['x','y']\n```\n\n\nHere I try various conversions, some of them go boom:\n\n```\nsage: F1('a')\na\nsage: F2('a')\na\nsage: R11('a')\na\nsage: R12('a')\nTraceback (most recent call last):\n...\nTypeError: unable to convert string\nsage: R21('a')\na\nsage: R22('a')\nTraceback (most recent call last):\n...\nTypeError: unable to convert string\nsage: R11(F1('a'))\na\nsage: R12(F1('a'))\na\nsage: R21(F2('a'))\na\nsage: R22(F2('a'))\na\nsage: F1(R11(F1('a')))\na\nsage: F1(R12(F1('a')))\nTraceback (most recent call last)\n...\nTypeError: unable to convert a to a rational\nsage: F2(R21(F2('a')))\na\nsage: F2(R22(F2('a')))\nTraceback (most recent call last)\n...\nTypeError:\n```\n\n\nNote that in the last example there is no error message. So, it seems to be different from the previous error (\"unable to convert a to a rational\")\n\n**__Conclusion:__**\n* Conversion from string to fraction field is OK both with one and two variables.\n* Conversion from a string to a univariate polynomial ring over a fraction field works, but fails for multivariate polynomial rings over a fraction field.\n* Conversion from a fraction field to a polynomial ring over this fraction field works both uni- and multivariately.\n* Conversion of a *scalar* element of a *multivariate* polynomial ring over a fraction field into that fraction field fails. The univariate case seems ok. The error seems to depend on the number of variables of the fraction field.\n\nSince conversion is something very elementary, I consider it a critical bug if it does not work (but not a blocker since it doesn't affect coercion). \n\nProbably it is too late for sage-3.4.2, so, I give it the Milestone 4.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5917\n\n",
+    "body": "Assignee: @malb\n\nKeywords: polynomial ring fraction field conversion\n\nThe following is with sage-3.4.1 on sage.math:\n\nSetting:\n\n```\nsage: F1 = FractionField(PolynomialRing(QQ,'a'))\nsage: R11 = F1['x']\nsage: R12 = F1['x','y']\nsage: F2 = FractionField(PolynomialRing(QQ,['a','b']))\nsage: R21 = F2['x']\nsage: R22 = F2['x','y']\n```\n\nHere I try various conversions, some of them go boom:\n\n```\nsage: F1('a')\na\nsage: F2('a')\na\nsage: R11('a')\na\nsage: R12('a')\nTraceback (most recent call last):\n...\nTypeError: unable to convert string\nsage: R21('a')\na\nsage: R22('a')\nTraceback (most recent call last):\n...\nTypeError: unable to convert string\nsage: R11(F1('a'))\na\nsage: R12(F1('a'))\na\nsage: R21(F2('a'))\na\nsage: R22(F2('a'))\na\nsage: F1(R11(F1('a')))\na\nsage: F1(R12(F1('a')))\nTraceback (most recent call last)\n...\nTypeError: unable to convert a to a rational\nsage: F2(R21(F2('a')))\na\nsage: F2(R22(F2('a')))\nTraceback (most recent call last)\n...\nTypeError:\n```\n\nNote that in the last example there is no error message. So, it seems to be different from the previous error (\"unable to convert a to a rational\")\n\n**__Conclusion:__**\n* Conversion from string to fraction field is OK both with one and two variables.\n* Conversion from a string to a univariate polynomial ring over a fraction field works, but fails for multivariate polynomial rings over a fraction field.\n* Conversion from a fraction field to a polynomial ring over this fraction field works both uni- and multivariately.\n* Conversion of a *scalar* element of a *multivariate* polynomial ring over a fraction field into that fraction field fails. The univariate case seems ok. The error seems to depend on the number of variables of the fraction field.\n\nSince conversion is something very elementary, I consider it a critical bug if it does not work (but not a blocker since it doesn't affect coercion). \n\nProbably it is too late for sage-3.4.2, so, I give it the Milestone 4.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5917\n\n",
     "created_at": "2009-04-28T10:48:22Z",
     "labels": [
         "component: commutative algebra",
@@ -33,7 +33,6 @@ sage: F2 = FractionField(PolynomialRing(QQ,['a','b']))
 sage: R21 = F2['x']
 sage: R22 = F2['x','y']
 ```
-
 
 Here I try various conversions, some of them go boom:
 
@@ -75,7 +74,6 @@ Traceback (most recent call last)
 ...
 TypeError:
 ```
-
 
 Note that in the last example there is no error message. So, it seems to be different from the previous error ("unable to convert a to a rational")
 

@@ -96,7 +96,7 @@ It is transferring now, so the above link should be good in 10 minutes or less.
 archive/issue_comments_023079.json:
 ```json
 {
-    "body": "Nuke tomlib:\n\n```\nmabshoff@sage:~/gap-4.4.12.p1/src$ du -sch pkg/*\n84K\tpkg/Browse\n28K\tpkg/edim\n12M\tpkg/guava3.9\n104K\tpkg/io\n4.0K\tpkg/PKGDIR\n76M\tpkg/tomlib\n88M\ttotal\n```\n\n\nCheers,\n\nMichael",
+    "body": "Nuke tomlib:\n\n```\nmabshoff@sage:~/gap-4.4.12.p1/src$ du -sch pkg/*\n84K\tpkg/Browse\n28K\tpkg/edim\n12M\tpkg/guava3.9\n104K\tpkg/io\n4.0K\tpkg/PKGDIR\n76M\tpkg/tomlib\n88M\ttotal\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-18T21:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -117,7 +117,6 @@ mabshoff@sage:~/gap-4.4.12.p1/src$ du -sch pkg/*
 76M	pkg/tomlib
 88M	total
 ```
-
 
 Cheers,
 
@@ -178,7 +177,7 @@ Michael
 archive/issue_comments_023082.json:
 ```json
 {
-    "body": "> A couple remarks:\n>    * Why isn't this gap-4.4.12.spkg since this is the first gap.spkg from 4.4.12?\n\n\nDo you mean gap-4.4.12.p0.spkg? I can change that.\n\n\n>    * An SPKG.txt entry is missing.\n\nI'll fix that.\n\n\n>    * changes in the root hg repo aren't checked in\n\n\nI don't know what that means.\n\n\n>    * it would be nice if the exact sequence this spkg was prepared \n> with, i.e. removal of various packages, etc, was properly documented in SPKG.txt \n\nI can fix that.\n\n> I am sure I can find more issues :) \n\nAnything else?",
+    "body": "> A couple remarks:\n> * Why isn't this gap-4.4.12.spkg since this is the first gap.spkg from 4.4.12?\n\n\n\nDo you mean gap-4.4.12.p0.spkg? I can change that.\n\n\n>    * An SPKG.txt entry is missing.\n\n\nI'll fix that.\n\n\n>    * changes in the root hg repo aren't checked in\n\n\n\nI don't know what that means.\n\n\n>    * it would be nice if the exact sequence this spkg was prepared \n \n> with, i.e. removal of various packages, etc, was properly documented in SPKG.txt \n\nI can fix that.\n\n> I am sure I can find more issues :) \n\n\nAnything else?",
     "created_at": "2008-12-21T00:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -188,7 +187,8 @@ archive/issue_comments_023082.json:
 ```
 
 > A couple remarks:
->    * Why isn't this gap-4.4.12.spkg since this is the first gap.spkg from 4.4.12?
+> * Why isn't this gap-4.4.12.spkg since this is the first gap.spkg from 4.4.12?
+
 
 
 Do you mean gap-4.4.12.p0.spkg? I can change that.
@@ -196,21 +196,25 @@ Do you mean gap-4.4.12.p0.spkg? I can change that.
 
 >    * An SPKG.txt entry is missing.
 
+
 I'll fix that.
 
 
 >    * changes in the root hg repo aren't checked in
 
 
+
 I don't know what that means.
 
 
 >    * it would be nice if the exact sequence this spkg was prepared 
+ 
 > with, i.e. removal of various packages, etc, was properly documented in SPKG.txt 
 
 I can fix that.
 
 > I am sure I can find more issues :) 
+
 
 Anything else?
 
@@ -221,7 +225,7 @@ Anything else?
 archive/issue_comments_023083.json:
 ```json
 {
-    "body": "Replying to [comment:7 wdj]:\n\n> \n> Do you mean gap-4.4.12.p0.spkg? I can change that.\n\nNo, gap-4.4.12.spkg since it is the first release of gap-4.4.12. \n \n\n> I don't know what that means.\n\nChanges to the root directory of the spkg have to be checked in - just run 'hg status'\n\n> Anything else?\n\nThere also seem to be some dynamic libraries in the spkg, i.e. some binary crap. I have to recheck if they are still there, but just search for .so files.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 wdj]:\n\n> \n> Do you mean gap-4.4.12.p0.spkg? I can change that.\n\n\nNo, gap-4.4.12.spkg since it is the first release of gap-4.4.12. \n \n\n> I don't know what that means.\n\n\nChanges to the root directory of the spkg have to be checked in - just run 'hg status'\n\n> Anything else?\n\n\nThere also seem to be some dynamic libraries in the spkg, i.e. some binary crap. I have to recheck if they are still there, but just search for .so files.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T00:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -235,14 +239,17 @@ Replying to [comment:7 wdj]:
 > 
 > Do you mean gap-4.4.12.p0.spkg? I can change that.
 
+
 No, gap-4.4.12.spkg since it is the first release of gap-4.4.12. 
  
 
 > I don't know what that means.
 
+
 Changes to the root directory of the spkg have to be checked in - just run 'hg status'
 
 > Anything else?
+
 
 There also seem to be some dynamic libraries in the spkg, i.e. some binary crap. I have to recheck if they are still there, but just search for .so files.
 
@@ -257,7 +264,7 @@ Michael
 archive/issue_comments_023084.json:
 ```json
 {
-    "body": "> Comment (by mabshoff):\n>\n>  Replying to [comment:7 wdj]:\n>\n>  >\n>  > Do you mean gap-4.4.12.p0.spkg? I can change that.\n>\n>  No, gap-4.4.12.spkg since it is the first release of gap-4.4.12.\n>\n>\n>  > I don't know what that means.\n>\n>  Changes to the root directory of the spkg have to be checked in - just run\n>  'hg status'\n\n\nI still don't know what this means.\n\nHere is my workflow.\n\n(1) Download the tarball from the gapsite,\ndecompress in a directory sagestuff, thus creating a subdirectory\nsagestuff/gap-4.4.12\n\n(2) unpack the guava3.9 tarball in the sagestuff/gap*/pkg subdirectory\n\n(3) unpack the last gap-4.4..10.p*.spkg in sagestuff, creating a subdirectory\nsagestuff/gap-4.4.10.p*\n\n(4) copy this to\nsagestuff/gap-4.4.12 (or .p0 or .p1 or whatever)\n\n(5) delete everything in the sagestuff/gap-4.4.12/src\nsubdirectory and replace it by sagestuff/gap-4.4.12\n\n(6) Delete extraneous stuff (such as small, prim, etc).\n\n(7) run tar -cjvf gap-4.4.12.tar.bz2 gap-4.4.12/\n\n(8) Rename tar.bz2 to spkg, upload, and post to trac.\n\nI don't see where in that sequence to run hg status. Maybe I\nshould\n\n(9) run sage -f gap-4.4.12.spkg and then start sage and then\nrun\nsage: hg_sage.status()?\n\nOr is there some other way to do this?\n\n\n\n>\n>  > Anything else?\n>\n>  There also seem to be some dynamic libraries in the spkg, i.e. some binary\n>  crap. I have to recheck if they are still there, but just search for .so\n>  files.\n\n\nThey are there. I think they were added for some windows functionality, but I\nmostly ignore windows emails on gap- (and sage-) devel so am not sure.\nI don't know basically 0 about windows, what windows files look like, or what\nshould be done with windows files.",
+    "body": "> Comment (by mabshoff):\n\n>\n>  Replying to [comment:7 wdj]:\n\n>\n>  >\n>  > Do you mean gap-4.4.12.p0.spkg? I can change that.\n\n>\n>  No, gap-4.4.12.spkg since it is the first release of gap-4.4.12.\n\n>\n>\n>  > I don't know what that means.\n>\n>  Changes to the root directory of the spkg have to be checked in - just run\n>  'hg status'\n\n\n\nI still don't know what this means.\n\nHere is my workflow.\n\n(1) Download the tarball from the gapsite,\ndecompress in a directory sagestuff, thus creating a subdirectory\nsagestuff/gap-4.4.12\n\n(2) unpack the guava3.9 tarball in the sagestuff/gap*/pkg subdirectory\n\n(3) unpack the last gap-4.4..10.p*.spkg in sagestuff, creating a subdirectory\nsagestuff/gap-4.4.10.p*\n\n(4) copy this to\nsagestuff/gap-4.4.12 (or .p0 or .p1 or whatever)\n\n(5) delete everything in the sagestuff/gap-4.4.12/src\nsubdirectory and replace it by sagestuff/gap-4.4.12\n\n(6) Delete extraneous stuff (such as small, prim, etc).\n\n(7) run tar -cjvf gap-4.4.12.tar.bz2 gap-4.4.12/\n\n(8) Rename tar.bz2 to spkg, upload, and post to trac.\n\nI don't see where in that sequence to run hg status. Maybe I\nshould\n\n(9) run sage -f gap-4.4.12.spkg and then start sage and then\nrun\nsage: hg_sage.status()?\n\nOr is there some other way to do this?\n\n\n\n>\n>  > Anything else?\n>\n>  There also seem to be some dynamic libraries in the spkg, i.e. some binary\n>crap. I have to recheck if they are still there, but just search for .so\n>  files.\n\n\n\nThey are there. I think they were added for some windows functionality, but I\nmostly ignore windows emails on gap- (and sage-) devel so am not sure.\nI don't know basically 0 about windows, what windows files look like, or what\nshould be done with windows files.",
     "created_at": "2008-12-21T00:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -267,19 +274,24 @@ archive/issue_comments_023084.json:
 ```
 
 > Comment (by mabshoff):
+
 >
 >  Replying to [comment:7 wdj]:
+
 >
 >  >
 >  > Do you mean gap-4.4.12.p0.spkg? I can change that.
+
 >
 >  No, gap-4.4.12.spkg since it is the first release of gap-4.4.12.
+
 >
 >
 >  > I don't know what that means.
 >
 >  Changes to the root directory of the spkg have to be checked in - just run
 >  'hg status'
+
 
 
 I still don't know what this means.
@@ -322,8 +334,9 @@ Or is there some other way to do this?
 >  > Anything else?
 >
 >  There also seem to be some dynamic libraries in the spkg, i.e. some binary
->  crap. I have to recheck if they are still there, but just search for .so
+>crap. I have to recheck if they are still there, but just search for .so
 >  files.
+
 
 
 They are there. I think they were added for some windows functionality, but I
@@ -338,7 +351,7 @@ should be done with windows files.
 archive/issue_comments_023085.json:
 ```json
 {
-    "body": "David:\n\n```\nmabshoff@sage:/scratch/release-cycle$ tar xjf gap-4.4.12.p1.spkg \nmabshoff@sage:/scratch/release-cycle$ cd gap-4.4.12.p1\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ pwd\n/scratch/release-cycle/gap-4.4.12.p1\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ hg stat\nM spkg-install\n? patch\n```\n\nThere is a repo in there where changes need to be check in.\n\nCheers,\n\nMichael",
+    "body": "David:\n\n```\nmabshoff@sage:/scratch/release-cycle$ tar xjf gap-4.4.12.p1.spkg \nmabshoff@sage:/scratch/release-cycle$ cd gap-4.4.12.p1\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ pwd\n/scratch/release-cycle/gap-4.4.12.p1\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ hg stat\nM spkg-install\n? patch\n```\nThere is a repo in there where changes need to be check in.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T00:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -358,7 +371,6 @@ mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ hg stat
 M spkg-install
 ? patch
 ```
-
 There is a repo in there where changes need to be check in.
 
 Cheers,
@@ -372,7 +384,7 @@ Michael
 archive/issue_comments_023086.json:
 ```json
 {
-    "body": "Re binaries:\n\n```\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name \"*.so\"\n./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so\n./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so\n./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so\n```\n\nI see no reason why we would shop binaries in the gap.spkg. In case we cannot buidl those from sources there is something seriously wrong about the GAP procject.\n\nCheers,\n\nMichael",
+    "body": "Re binaries:\n\n```\nmabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name \"*.so\"\n./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so\n./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so\n./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so\n```\nI see no reason why we would shop binaries in the gap.spkg. In case we cannot buidl those from sources there is something seriously wrong about the GAP procject.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T00:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -389,7 +401,6 @@ mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name "*.so"
 ./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so
 ./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so
 ```
-
 I see no reason why we would shop binaries in the gap.spkg. In case we cannot buidl those from sources there is something seriously wrong about the GAP procject.
 
 Cheers,
@@ -403,7 +414,7 @@ Michael
 archive/issue_comments_023087.json:
 ```json
 {
-    "body": ">  Re binaries:\n>  {{{\n>  mabshoff`@`sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name \"*.so\"\n>  ./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so\n>  ./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so\n>  ./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so\n>  }}}\n>  I see no reason why we would shop binaries in the gap.spkg. In case we\n>  cannot buidl those from sources there is something seriously wrong about\n>  the GAP procject.\n\n\nI deleted these. Just to be precise - these are not part of GAP but\nparts of (GPL'd) GAP packages.\n\nI tried to make all the changes you suggested earlier.\n\nI ran\n\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ pwd\n/home/wdj/sagefiles/sagestuff/gap-4.4.12\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg stat\nM SPKG.txt\nM spkg-install\n? patch\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ ls\ndist  patch  patches  spkg-debian  spkg-install  SPKG.txt  src\n```\n\n\nHowever, I don't know what \"There is a repo in there where changes need to be check in.\"\nmeans. Do I run hg_sage.status()? hg_sage.commit()?\n\n\nThe new spkg is at\nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.spkg",
+    "body": ">  Re binaries:\n>  \n>  ```\n>  mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name \"*.so\"\n>  ./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so\n>  ./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so\n>  ./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so\n>  ```\n>  I see no reason why we would shop binaries in the gap.spkg. In case we\n>  cannot buidl those from sources there is something seriously wrong about\n>  the GAP procject.\n\n\n\nI deleted these. Just to be precise - these are not part of GAP but\nparts of (GPL'd) GAP packages.\n\nI tried to make all the changes you suggested earlier.\n\nI ran\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ pwd\n/home/wdj/sagefiles/sagestuff/gap-4.4.12\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg stat\nM SPKG.txt\nM spkg-install\n? patch\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ ls\ndist  patch  patches  spkg-debian  spkg-install  SPKG.txt  src\n```\n\nHowever, I don't know what \"There is a repo in there where changes need to be check in.\"\nmeans. Do I run hg_sage.status()? hg_sage.commit()?\n\n\nThe new spkg is at\nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.spkg",
     "created_at": "2008-12-21T01:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -413,15 +424,17 @@ archive/issue_comments_023087.json:
 ```
 
 >  Re binaries:
->  {{{
->  mabshoff`@`sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name "*.so"
+>  
+>  ```
+>  mabshoff@sage:/scratch/release-cycle/gap-4.4.12.p1$ find  . -name "*.so"
 >  ./src/pkg/Browse/bin/i686-pc-cygwin-gcc/ncurses.so
 >  ./src/pkg/io/bin/i686-pc-cygwin-gcc/io.so
 >  ./src/pkg/edim/bin/i686-pc-cygwin-gcc/ediv.so
->  }}}
+>  ```
 >  I see no reason why we would shop binaries in the gap.spkg. In case we
 >  cannot buidl those from sources there is something seriously wrong about
 >  the GAP procject.
+
 
 
 I deleted these. Just to be precise - these are not part of GAP but
@@ -430,7 +443,6 @@ parts of (GPL'd) GAP packages.
 I tried to make all the changes you suggested earlier.
 
 I ran
-
 
 ```
 wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ pwd
@@ -442,7 +454,6 @@ M spkg-install
 wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ ls
 dist  patch  patches  spkg-debian  spkg-install  SPKG.txt  src
 ```
-
 
 However, I don't know what "There is a repo in there where changes need to be check in."
 means. Do I run hg_sage.status()? hg_sage.commit()?
@@ -482,7 +493,7 @@ Micheal
 archive/issue_comments_023089.json:
 ```json
 {
-    "body": "I don't know the definition of repo. I assumed it was something which is at least part of the sage tree. The old gap spkg is just a tarball I downloaded separately. Probably not the main problem here.\n\nI read both \"hg help commit\" and \"hg help\" and don't see how the information they provide can be used in this situation. I described the process I used to create the spkg in the list above. What I am wondering is what step(s) needs to be added/subtracted/modified. When I try something like \"hg commit\" then \"hg export\", I get this:\n\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\nabort: export requires at least one changeset\n}}\nObviously that is the wrong idea but it at least follows the process I am used to using for Sage code patches. If hg is to be used to create the new GAP spkg then obviously (a) I have to learn a lot more and (b) it isn't clear to me how to proceed. For example, is \"hg remove\" to be used for every file deleted from the old spkg and \"hg add\" to be used for every file/dir added to the new spkg?\n\nMaybe all of this should be done inside a copy of Sage and then use sage_extcode somehow?",
+    "body": "I don't know the definition of repo. I assumed it was something which is at least part of the sage tree. The old gap spkg is just a tarball I downloaded separately. Probably not the main problem here.\n\nI read both \"hg help commit\" and \"hg help\" and don't see how the information they provide can be used in this situation. I described the process I used to create the spkg in the list above. What I am wondering is what step(s) needs to be added/subtracted/modified. When I try something like \"hg commit\" then \"hg export\", I get this:\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\nabort: export requires at least one changeset\n}}\nObviously that is the wrong idea but it at least follows the process I am used to using for Sage code patches. If hg is to be used to create the new GAP spkg then obviously (a) I have to learn a lot more and (b) it isn't clear to me how to proceed. For example, is \"hg remove\" to be used for every file deleted from the old spkg and \"hg add\" to be used for every file/dir added to the new spkg?\n\nMaybe all of this should be done inside a copy of Sage and then use sage_extcode somehow?",
     "created_at": "2008-12-21T14:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -494,7 +505,6 @@ archive/issue_comments_023089.json:
 I don't know the definition of repo. I assumed it was something which is at least part of the sage tree. The old gap spkg is just a tarball I downloaded separately. Probably not the main problem here.
 
 I read both "hg help commit" and "hg help" and don't see how the information they provide can be used in this situation. I described the process I used to create the spkg in the list above. What I am wondering is what step(s) needs to be added/subtracted/modified. When I try something like "hg commit" then "hg export", I get this:
-
 
 ```
 wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
@@ -511,7 +521,7 @@ Maybe all of this should be done inside a copy of Sage and then use sage_extcode
 archive/issue_comments_023090.json:
 ```json
 {
-    "body": "Another thing I tried was a completely different workflow:\n\n(a) download the old gap spkg, unpack it into sagestuff/gap-4.4.10.p10\n\n(b) in sagestuff, create a clone using hg clone gap-4.4.10.p10 gap-4.4.12\n(first, I backed up the old directory gap-4.4.12 for safety)\nThis creates a directory sagestuff/gap-4.4.12\n\n(c) made all the changes described to this clone\n\n(d) cd sagestuff/gap-4.4.12, and enter \"hg commit\" and \"hg export\"\nI still get\n\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\nabort: export requires at least one changeset\n\n\n```\n",
+    "body": "Another thing I tried was a completely different workflow:\n\n(a) download the old gap spkg, unpack it into sagestuff/gap-4.4.10.p10\n\n(b) in sagestuff, create a clone using hg clone gap-4.4.10.p10 gap-4.4.12\n(first, I backed up the old directory gap-4.4.12 for safety)\nThis creates a directory sagestuff/gap-4.4.12\n\n(c) made all the changes described to this clone\n\n(d) cd sagestuff/gap-4.4.12, and enter \"hg commit\" and \"hg export\"\nI still get\n\n```\nwdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\nabort: export requires at least one changeset\n\n\n```",
     "created_at": "2008-12-21T14:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -533,14 +543,12 @@ This creates a directory sagestuff/gap-4.4.12
 (d) cd sagestuff/gap-4.4.12, and enter "hg commit" and "hg export"
 I still get
 
-
 ```
 wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
 abort: export requires at least one changeset
 
 
 ```
-
 
 
 
@@ -576,7 +584,7 @@ Michael
 archive/issue_comments_023092.json:
 ```json
 {
-    "body": "Replying to [comment:15 wdj]:\n> Another thing I tried was a completely different workflow:\n> \n> (a) download the old gap spkg, unpack it into sagestuff/gap-4.4.10.p10\n> \n> (b) in sagestuff, create a clone using hg clone gap-4.4.10.p10 gap-4.4.12\n> (first, I backed up the old directory gap-4.4.12 for safety)\n> This creates a directory sagestuff/gap-4.4.12\n\nDo not create a clone, just delete the old src directory, drop in the new src directory, fix what ever you have to do and then commit the new version before packing the archive.\n\n> (d) cd sagestuff/gap-4.4.12, and enter \"hg commit\" and \"hg export\"\n> I still get\n> \n> {{{\n> wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\n> abort: export requires at least one changeset\n\nNo need to export anything. Just check if you checked in the changes via \"hg log\"\n \nCheers,\n\nMichael",
+    "body": "Replying to [comment:15 wdj]:\n> Another thing I tried was a completely different workflow:\n> \n> (a) download the old gap spkg, unpack it into sagestuff/gap-4.4.10.p10\n> \n> (b) in sagestuff, create a clone using hg clone gap-4.4.10.p10 gap-4.4.12\n> (first, I backed up the old directory gap-4.4.12 for safety)\n> This creates a directory sagestuff/gap-4.4.12\n\n\nDo not create a clone, just delete the old src directory, drop in the new src directory, fix what ever you have to do and then commit the new version before packing the archive.\n\n> (d) cd sagestuff/gap-4.4.12, and enter \"hg commit\" and \"hg export\"\n> I still get\n> \n> \n> ```\n> wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export\n> abort: export requires at least one changeset\n\n\nNo need to export anything. Just check if you checked in the changes via \"hg log\"\n \nCheers,\n\nMichael",
     "created_at": "2008-12-21T14:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -594,14 +602,17 @@ Replying to [comment:15 wdj]:
 > (first, I backed up the old directory gap-4.4.12 for safety)
 > This creates a directory sagestuff/gap-4.4.12
 
+
 Do not create a clone, just delete the old src directory, drop in the new src directory, fix what ever you have to do and then commit the new version before packing the archive.
 
 > (d) cd sagestuff/gap-4.4.12, and enter "hg commit" and "hg export"
 > I still get
 > 
-> {{{
-> wdj`@`hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
+> 
+> ```
+> wdj@hera:~/sagefiles/sagestuff/gap-4.4.12$ hg export
 > abort: export requires at least one changeset
+
 
 No need to export anything. Just check if you checked in the changes via "hg log"
  
@@ -616,7 +627,7 @@ Michael
 archive/issue_comments_023093.json:
 ```json
 {
-    "body": "Hi David,\n\nthe spkg needs work:\n\n* delete the patch binary in the root of the spkg\n* the changes need to be check in. One way to do this is via\n\n```\n hg commit -m \"gap-4.4.12: update to latest upstream, update to guava 3.9 (#3337)\"\n```\n\n* SPKG.txt is in the wrong format:\n\n```\n### gap-4.4.12 (David JOyner, 2008-12-20)\n\nUpgraded to gap-4.4.12. Upgraded guava 3.4 to guava 3.9.\nFrom the source GAP tarball, removed tomlib, small, prim,\ntrans, and some pdf+dvi files from guava3.9/doc.\n```\n\nThis should be:\n\n```\n### gap-4.4.12 (David Joyner, 2008-12-20)\n *  Upgraded to gap-4.4.12, upgraded guava 3.4 to guava 3.9 (#3337)\n```\n\nThen you need to add a section about special build instructions with details, i.e.\n\n```\n## Special Update/Build Instructions\n\nFrom the source GAP tarball, removed tomlib, small, prim,\ntrans by running $SOME_COMMAND, and some pdf+dvi files from guava3.9/doc \nby runnnig $SOME_OTHER_COMMAND.\n```\n\nSPKG.txt can use some improvements, i.e. check out \n\n http://wiki.sagemath.org/spkgTemplate\n\nfor all the sections that should be in SPKG.txt. If I have time later I will fix all these problems.\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nthe spkg needs work:\n\n* delete the patch binary in the root of the spkg\n* the changes need to be check in. One way to do this is via\n\n```\n hg commit -m \"gap-4.4.12: update to latest upstream, update to guava 3.9 (#3337)\"\n```\n* SPKG.txt is in the wrong format:\n\n```\n### gap-4.4.12 (David JOyner, 2008-12-20)\n\nUpgraded to gap-4.4.12. Upgraded guava 3.4 to guava 3.9.\nFrom the source GAP tarball, removed tomlib, small, prim,\ntrans, and some pdf+dvi files from guava3.9/doc.\n```\nThis should be:\n\n```\n### gap-4.4.12 (David Joyner, 2008-12-20)\n *  Upgraded to gap-4.4.12, upgraded guava 3.4 to guava 3.9 (#3337)\n```\nThen you need to add a section about special build instructions with details, i.e.\n\n```\n## Special Update/Build Instructions\n\nFrom the source GAP tarball, removed tomlib, small, prim,\ntrans by running $SOME_COMMAND, and some pdf+dvi files from guava3.9/doc \nby runnnig $SOME_OTHER_COMMAND.\n```\nSPKG.txt can use some improvements, i.e. check out \n\n http://wiki.sagemath.org/spkgTemplate\n\nfor all the sections that should be in SPKG.txt. If I have time later I will fix all these problems.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T15:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -635,7 +646,6 @@ the spkg needs work:
 ```
  hg commit -m "gap-4.4.12: update to latest upstream, update to guava 3.9 (#3337)"
 ```
-
 * SPKG.txt is in the wrong format:
 
 ```
@@ -645,14 +655,12 @@ Upgraded to gap-4.4.12. Upgraded guava 3.4 to guava 3.9.
 From the source GAP tarball, removed tomlib, small, prim,
 trans, and some pdf+dvi files from guava3.9/doc.
 ```
-
 This should be:
 
 ```
 ### gap-4.4.12 (David Joyner, 2008-12-20)
  *  Upgraded to gap-4.4.12, upgraded guava 3.4 to guava 3.9 (#3337)
 ```
-
 Then you need to add a section about special build instructions with details, i.e.
 
 ```
@@ -662,7 +670,6 @@ From the source GAP tarball, removed tomlib, small, prim,
 trans by running $SOME_COMMAND, and some pdf+dvi files from guava3.9/doc 
 by runnnig $SOME_OTHER_COMMAND.
 ```
-
 SPKG.txt can use some improvements, i.e. check out 
 
  http://wiki.sagemath.org/spkgTemplate
@@ -722,7 +729,7 @@ What I did (more or less) was to apply hg remove and hg add to various directori
 archive/issue_comments_023096.json:
 ```json
 {
-    "body": "Replying to [comment:20 wdj]:\n\nHi David,\n\n> I am uploading a new spkg to http://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.spkg right now. It seems to satisfy the format at http://wiki.sagemath.org/spkgTemplate and the hg commit produced a patch. \n\nOk, this is a step in the right direction.\n \n> What I did (more or less) was to apply hg remove and hg add to various directories of the old repo, combined with some editing and cp'ing, before running hg commit.\n\nWhy? Nothing in src is under version control. An update to GAP should just involve unpacking the new sources, deleting some things like the dbs, adding Guava, updating spkg-install and SPKG.txt and then committing. \n\n> Even after reading the documentation (which IMHO isn't very good) and googling, I could still not figure out what hg would accept and what it wouldn't. For example, over-writing a file seems to be not okay (in the sense that it doesn't get recorded as a changeset) but editing a file (with emacs say) is okay. Anyway, hope this is okay now. If it is okay, maybeI'll add some sensible comments to http://wiki.sagemath.org/SPKG_Audit, though it is hard for me to understand some of what is there so I'm not sure where the best pace to add such comments.\n\nPlease post to the devel list first before changing things. \n\nThere are two issues:\n\n* The file patch is left in the root directory of the spkg. Just delete it\n* The text in SPKG.txt needs to be true wiki text, as is that needs some fixing. The dependencies are wrong, i.e. we list spkgs that GAP depends upon to build, not build tools. All people should be listed via lists and current spkg maintainers are probably you, rlm, William and me. \n\nIf I get time today I will fix this up and post 4.4.12.p0.\n\nOne last question: How large is the test suite? I am asking since it would be nice to run tests via spkg-check and if the size increase is reasonable I would greatly prefer to be able to test.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:20 wdj]:\n\nHi David,\n\n> I am uploading a new spkg to http://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.spkg right now. It seems to satisfy the format at http://wiki.sagemath.org/spkgTemplate and the hg commit produced a patch. \n\n\nOk, this is a step in the right direction.\n \n> What I did (more or less) was to apply hg remove and hg add to various directories of the old repo, combined with some editing and cp'ing, before running hg commit.\n\n\nWhy? Nothing in src is under version control. An update to GAP should just involve unpacking the new sources, deleting some things like the dbs, adding Guava, updating spkg-install and SPKG.txt and then committing. \n\n> Even after reading the documentation (which IMHO isn't very good) and googling, I could still not figure out what hg would accept and what it wouldn't. For example, over-writing a file seems to be not okay (in the sense that it doesn't get recorded as a changeset) but editing a file (with emacs say) is okay. Anyway, hope this is okay now. If it is okay, maybeI'll add some sensible comments to http://wiki.sagemath.org/SPKG_Audit, though it is hard for me to understand some of what is there so I'm not sure where the best pace to add such comments.\n\n\nPlease post to the devel list first before changing things. \n\nThere are two issues:\n\n* The file patch is left in the root directory of the spkg. Just delete it\n* The text in SPKG.txt needs to be true wiki text, as is that needs some fixing. The dependencies are wrong, i.e. we list spkgs that GAP depends upon to build, not build tools. All people should be listed via lists and current spkg maintainers are probably you, rlm, William and me. \n\nIf I get time today I will fix this up and post 4.4.12.p0.\n\nOne last question: How large is the test suite? I am asking since it would be nice to run tests via spkg-check and if the size increase is reasonable I would greatly prefer to be able to test.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-25T18:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -737,13 +744,16 @@ Hi David,
 
 > I am uploading a new spkg to http://sage.math.washington.edu/home/wdj/patches/gap-4.4.12.spkg right now. It seems to satisfy the format at http://wiki.sagemath.org/spkgTemplate and the hg commit produced a patch. 
 
+
 Ok, this is a step in the right direction.
  
 > What I did (more or less) was to apply hg remove and hg add to various directories of the old repo, combined with some editing and cp'ing, before running hg commit.
 
+
 Why? Nothing in src is under version control. An update to GAP should just involve unpacking the new sources, deleting some things like the dbs, adding Guava, updating spkg-install and SPKG.txt and then committing. 
 
 > Even after reading the documentation (which IMHO isn't very good) and googling, I could still not figure out what hg would accept and what it wouldn't. For example, over-writing a file seems to be not okay (in the sense that it doesn't get recorded as a changeset) but editing a file (with emacs say) is okay. Anyway, hope this is okay now. If it is okay, maybeI'll add some sensible comments to http://wiki.sagemath.org/SPKG_Audit, though it is hard for me to understand some of what is there so I'm not sure where the best pace to add such comments.
+
 
 Please post to the devel list first before changing things. 
 
@@ -789,7 +799,7 @@ Hope it is okay this time. If I'd understood src was not under version control, 
 archive/issue_comments_023098.json:
 ```json
 {
-    "body": "Hi David,\n\nI noticed a couple things:\n\n* because you did not update the scripts you are still doctesting with GAP 4.4.10 and not with the new 4.4.12.\n* spkg-install has some problem installing wtdist, so things don't go to well for such doctests.\n\nOverall we have a fair number of failure:\n\n```\n\tsage -t -long devel/sage/sage/graphs/graph_isom.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/coding/linear_code.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n\tsage -t -long devel/doc/const/const.tex # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/number_field.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/gap.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/groups/class_function.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/groups/abelian_gps/abelian_group.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_eval.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/groups/abelian_gps/abelian_group_element.py # 1 doctests failed\n```\n\nMost of those are cosmetic, but someone ought to go over them and correct issues, some are trivial and some are worrying:\n\n```\nFile \"/scratch/mabshoff/sage-3.3.alpha5/devel/sage-main/sage/graphs/graph.py\", line 6297:\n   sage: M.determinant()\nExpected:\n   -712483534798848\nGot:\n   712483534798848\n```\n\nMy latest spkg is at\n\n  http://sage.math.washington.edu/home/mabshoff/spkgs/gap-4.4.12.p0.spkg\n\nIf you want to fix the issue with wtdist you ought to use that as a base.\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nI noticed a couple things:\n\n* because you did not update the scripts you are still doctesting with GAP 4.4.10 and not with the new 4.4.12.\n* spkg-install has some problem installing wtdist, so things don't go to well for such doctests.\n\nOverall we have a fair number of failure:\n\n```\n\tsage -t -long devel/sage/sage/graphs/graph_isom.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/coding/linear_code.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n\tsage -t -long devel/doc/const/const.tex # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/number_field.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/gap.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/groups/class_function.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/groups/abelian_gps/abelian_group.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_eval.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/groups/abelian_gps/abelian_group_element.py # 1 doctests failed\n```\nMost of those are cosmetic, but someone ought to go over them and correct issues, some are trivial and some are worrying:\n\n```\nFile \"/scratch/mabshoff/sage-3.3.alpha5/devel/sage-main/sage/graphs/graph.py\", line 6297:\n   sage: M.determinant()\nExpected:\n   -712483534798848\nGot:\n   712483534798848\n```\nMy latest spkg is at\n\n  http://sage.math.washington.edu/home/mabshoff/spkgs/gap-4.4.12.p0.spkg\n\nIf you want to fix the issue with wtdist you ought to use that as a base.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-04T02:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -820,7 +830,6 @@ Overall we have a fair number of failure:
 	sage -t -long devel/sage/sage/misc/sage_eval.py # 1 doctests failed
 	sage -t -long devel/sage/sage/groups/abelian_gps/abelian_group_element.py # 1 doctests failed
 ```
-
 Most of those are cosmetic, but someone ought to go over them and correct issues, some are trivial and some are worrying:
 
 ```
@@ -831,7 +840,6 @@ Expected:
 Got:
    712483534798848
 ```
-
 My latest spkg is at
 
   http://sage.math.washington.edu/home/mabshoff/spkgs/gap-4.4.12.p0.spkg
@@ -849,7 +857,7 @@ Michael
 archive/issue_comments_023099.json:
 ```json
 {
-    "body": "By the way: The same issue exists in the old gap-4.4.10.p10.spkg as I just found out:\n\n```\nake[1]: Leaving directory `/scratch/mabshoff/sage-3.3.alpha5/spkg/build/gap-4.4.10.p10/src/pkg/guava3.4/src/leon'\ncp: omitting directory `../../bin'\ncp: cannot stat `cp': No such file or directory\n```\n\nFor some reason wtdist does get installed - strange.\n\nCheers,\n\nMichael",
+    "body": "By the way: The same issue exists in the old gap-4.4.10.p10.spkg as I just found out:\n\n```\nake[1]: Leaving directory `/scratch/mabshoff/sage-3.3.alpha5/spkg/build/gap-4.4.10.p10/src/pkg/guava3.4/src/leon'\ncp: omitting directory `../../bin'\ncp: cannot stat `cp': No such file or directory\n```\nFor some reason wtdist does get installed - strange.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-04T02:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -865,7 +873,6 @@ ake[1]: Leaving directory `/scratch/mabshoff/sage-3.3.alpha5/spkg/build/gap-4.4.
 cp: omitting directory `../../bin'
 cp: cannot stat `cp': No such file or directory
 ```
-
 For some reason wtdist does get installed - strange.
 
 Cheers,
@@ -879,7 +886,7 @@ Michael
 archive/issue_comments_023100.json:
 ```json
 {
-    "body": "The files\n\n```\nsrc/src/GAP 4 PPC\nsrc/src/tst/GAP 4 PPC\n```\n\nshould be removed (they are MacOS 9 binaries).",
+    "body": "The files\n\n```\nsrc/src/GAP 4 PPC\nsrc/src/tst/GAP 4 PPC\n```\nshould be removed (they are MacOS 9 binaries).",
     "created_at": "2009-02-04T22:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -894,7 +901,6 @@ The files
 src/src/GAP 4 PPC
 src/src/tst/GAP 4 PPC
 ```
-
 should be removed (they are MacOS 9 binaries).
 
 
@@ -970,7 +976,7 @@ Michael
 archive/issue_comments_023104.json:
 ```json
 {
-    "body": "> David,\n>     * please change the status of the ticket if you post an updated spkg/patch\n\n\nOops - sorry!\n\n\n>    * test the spkg on sage.math since there all the tests involving Maxima pass \n\n\nDone. Modulo the maxima problems I have, it fails in the same way - there are lots of funny \nprint statements in gap.py which yield test output such as\n\n\n\n```\nFile \"/home/wdj/sagefiles/sage-3.3.alpha5/devel/sage/sage/coding/code_constructions.py\", line 501: \n    sage: C.minimum_distance()                                                                     \nExpected:                                                                                          \n    4                                                                                              \nGot:                                                                                               \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    4                                                    \n```\n\nI don't understand the purpose of this print statement but it seems to be fairly new.\n\n\n> The spkg cannot be merged without fixing a large number of printing issues with the doctests.\n\nCan the print statement in gap.py just be commented out?",
+    "body": "> David,\n> * please change the status of the ticket if you post an updated spkg/patch\n\n\n\nOops - sorry!\n\n\n>    * test the spkg on sage.math since there all the tests involving Maxima pass \n\n\n\nDone. Modulo the maxima problems I have, it fails in the same way - there are lots of funny \nprint statements in gap.py which yield test output such as\n\n\n```\nFile \"/home/wdj/sagefiles/sage-3.3.alpha5/devel/sage/sage/coding/code_constructions.py\", line 501: \n    sage: C.minimum_distance()                                                                     \nExpected:                                                                                          \n    4                                                                                              \nGot:                                                                                               \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    Warning: this should never happen                                                              \n    4                                                    \n```\nI don't understand the purpose of this print statement but it seems to be fairly new.\n\n\n> The spkg cannot be merged without fixing a large number of printing issues with the doctests.\n\n\nCan the print statement in gap.py just be commented out?",
     "created_at": "2009-02-08T03:31:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -980,7 +986,8 @@ archive/issue_comments_023104.json:
 ```
 
 > David,
->     * please change the status of the ticket if you post an updated spkg/patch
+> * please change the status of the ticket if you post an updated spkg/patch
+
 
 
 Oops - sorry!
@@ -989,9 +996,9 @@ Oops - sorry!
 >    * test the spkg on sage.math since there all the tests involving Maxima pass 
 
 
+
 Done. Modulo the maxima problems I have, it fails in the same way - there are lots of funny 
 print statements in gap.py which yield test output such as
-
 
 
 ```
@@ -1008,11 +1015,11 @@ Got:
     Warning: this should never happen                                                              
     4                                                    
 ```
-
 I don't understand the purpose of this print statement but it seems to be fairly new.
 
 
 > The spkg cannot be merged without fixing a large number of printing issues with the doctests.
+
 
 Can the print statement in gap.py just be commented out?
 
@@ -1023,7 +1030,7 @@ Can the print statement in gap.py just be commented out?
 archive/issue_comments_023105.json:
 ```json
 {
-    "body": "Replying to [comment:29 wdj]:\n\n> \n> \n> >    * test the spkg on sage.math since there all the tests involving Maxima pass \n> \n> \n> Done. Modulo the maxima problems I have, it fails in the same way - there are lots of funny \n> print statements in gap.py which yield test output such as\n> \n> I don't understand the purpose of this print statement but it seems to be fairly new.\n\nThis is not the problem I am referring to and the print issue were actual changes in GAP's output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage release is this? Do you have anything in .gaprc?\n \n> \n> > The spkg cannot be merged without fixing a large number of printing issues with the doctests.\n> \n> Can the print statement in gap.py just be commented out?\n> \n\nI doubt it, but you should ask someone who knowns the code better. \n\nThis is wrong by the way:\n\n```\n     if [ $UNAME = \"CYGWIN\" ]; then\n+        echo \"** Cygwin install not supported **\"\n         $MKDIR bin\n```\n\nYou also managed to delete .hgignore and not check in the changes to spkg-install:\n\n```\nM spkg-install\n! .hgignore\n```\n\nI do not understand why it is such a problem to make two two line changes and check in the changes without breaking the spkg?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:29 wdj]:\n\n> \n> \n> >    * test the spkg on sage.math since there all the tests involving Maxima pass \n \n> \n> \n> Done. Modulo the maxima problems I have, it fails in the same way - there are lots of funny \n> print statements in gap.py which yield test output such as\n> \n> I don't understand the purpose of this print statement but it seems to be fairly new.\n\n\nThis is not the problem I am referring to and the print issue were actual changes in GAP's output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage release is this? Do you have anything in .gaprc?\n \n> \n> > The spkg cannot be merged without fixing a large number of printing issues with the doctests.\n\n> \n> Can the print statement in gap.py just be commented out?\n> \n\n\nI doubt it, but you should ask someone who knowns the code better. \n\nThis is wrong by the way:\n\n```\n     if [ $UNAME = \"CYGWIN\" ]; then\n+        echo \"** Cygwin install not supported **\"\n         $MKDIR bin\n```\nYou also managed to delete .hgignore and not check in the changes to spkg-install:\n\n```\nM spkg-install\n! .hgignore\n```\nI do not understand why it is such a problem to make two two line changes and check in the changes without breaking the spkg?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-08T03:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1037,6 +1044,7 @@ Replying to [comment:29 wdj]:
 > 
 > 
 > >    * test the spkg on sage.math since there all the tests involving Maxima pass 
+ 
 > 
 > 
 > Done. Modulo the maxima problems I have, it fails in the same way - there are lots of funny 
@@ -1044,13 +1052,16 @@ Replying to [comment:29 wdj]:
 > 
 > I don't understand the purpose of this print statement but it seems to be fairly new.
 
+
 This is not the problem I am referring to and the print issue were actual changes in GAP's output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage release is this? Do you have anything in .gaprc?
  
 > 
 > > The spkg cannot be merged without fixing a large number of printing issues with the doctests.
+
 > 
 > Can the print statement in gap.py just be commented out?
 > 
+
 
 I doubt it, but you should ask someone who knowns the code better. 
 
@@ -1061,14 +1072,12 @@ This is wrong by the way:
 +        echo "** Cygwin install not supported **"
          $MKDIR bin
 ```
-
 You also managed to delete .hgignore and not check in the changes to spkg-install:
 
 ```
 M spkg-install
 ! .hgignore
 ```
-
 I do not understand why it is such a problem to make two two line changes and check in the changes without breaking the spkg?
 
 Cheers,
@@ -1107,7 +1116,7 @@ Michael
 archive/issue_comments_023107.json:
 ```json
 {
-    "body": "> This is not the problem I am referring to and the print issue were actual changes in GAP's \n> output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage \n> release is this? Do you have anything in .gaprc?\n\nThis is sage-3.3.alpha5. No I don't have a .gaprc. Should I?\n\n> This is wrong by the way:\n>      if [ $UNAME = \"CYGWIN\" ]; then\n> +        echo \"** Cygwin install not supported **\"\n>          $MKDIR bin\n\nOkay, I'll restore that. \n\n> You also managed to delete .hgignore and not check in the changes to spkg-install: \n\nYes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.\n\n> Two more things:\n>     * spkg-check is missing - since we are now including the GAP test suite \n> (or at least some subset) we need to actually be able to run it\n\n\nIs there some documentation on what spkg-check should be?\n\n\n>     * SPKG.txt needs to be updated to (a) reflect the changes in gap-4.4.12.p2.spkg \n> and (b) also to spell out the need to remove certain binary crap that cwitty pointed out. \n\nOkay.\n\nThe bigger question for me is that (if we ignore all these problems) it is not clear to me if the package passes the tests. I don't understand the \"Warning: this should never happen \" lines. In other words, I don't know what they mean or what triggers them. For example, your statement \"These need to be fixed\" above. What needs to be fixed? The docstrings in guava? The print statement in gap.py?\n\nSorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is going on at work.) If this is pressing, if I can't fix this tomorrow maybe I should ask Carl Witty if he could finish it up?",
+    "body": "> This is not the problem I am referring to and the print issue were actual changes in GAP's \n> output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage \n> release is this? Do you have anything in .gaprc?\n\n\nThis is sage-3.3.alpha5. No I don't have a .gaprc. Should I?\n\n> This is wrong by the way:\n>      if [ $UNAME = \"CYGWIN\" ]; then\n> +        echo \"** Cygwin install not supported **\"\n>          $MKDIR bin\n\n\nOkay, I'll restore that. \n\n> You also managed to delete .hgignore and not check in the changes to spkg-install: \n\n\nYes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.\n\n> Two more things:\n> * spkg-check is missing - since we are now including the GAP test suite \n> (or at least some subset) we need to actually be able to run it\n\n\n\nIs there some documentation on what spkg-check should be?\n\n\n>     * SPKG.txt needs to be updated to (a) reflect the changes in gap-4.4.12.p2.spkg \n \n> and (b) also to spell out the need to remove certain binary crap that cwitty pointed out. \n\nOkay.\n\nThe bigger question for me is that (if we ignore all these problems) it is not clear to me if the package passes the tests. I don't understand the \"Warning: this should never happen \" lines. In other words, I don't know what they mean or what triggers them. For example, your statement \"These need to be fixed\" above. What needs to be fixed? The docstrings in guava? The print statement in gap.py?\n\nSorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is going on at work.) If this is pressing, if I can't fix this tomorrow maybe I should ask Carl Witty if he could finish it up?",
     "created_at": "2009-02-08T05:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1120,6 +1129,7 @@ archive/issue_comments_023107.json:
 > output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage 
 > release is this? Do you have anything in .gaprc?
 
+
 This is sage-3.3.alpha5. No I don't have a .gaprc. Should I?
 
 > This is wrong by the way:
@@ -1127,21 +1137,25 @@ This is sage-3.3.alpha5. No I don't have a .gaprc. Should I?
 > +        echo "** Cygwin install not supported **"
 >          $MKDIR bin
 
+
 Okay, I'll restore that. 
 
 > You also managed to delete .hgignore and not check in the changes to spkg-install: 
 
+
 Yes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.
 
 > Two more things:
->     * spkg-check is missing - since we are now including the GAP test suite 
+> * spkg-check is missing - since we are now including the GAP test suite 
 > (or at least some subset) we need to actually be able to run it
+
 
 
 Is there some documentation on what spkg-check should be?
 
 
 >     * SPKG.txt needs to be updated to (a) reflect the changes in gap-4.4.12.p2.spkg 
+ 
 > and (b) also to spell out the need to remove certain binary crap that cwitty pointed out. 
 
 Okay.
@@ -1157,7 +1171,7 @@ Sorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is
 archive/issue_comments_023108.json:
 ```json
 {
-    "body": "Replying to [comment:32 wdj]:\n\nHi David,\n\n> > This is not the problem I am referring to and the print issue were actual changes in GAP's \n> > output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage \n> > release is this? Do you have anything in .gaprc?\n> \n> This is sage-3.3.alpha5. No I don't have a .gaprc. Should I?\n\nNo, but I do not have a .gaprc and I do not see the problem. So if you had one it could point to the problem. \n\n> > You also managed to delete .hgignore and not check in the changes to spkg-install: \n> \n> Yes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.\n\nIt is simple:\n\n* unpack spkg\n* move spkg to new name, i.e. gap-4.4.12.p0 to gap-4.4.12.p1 \n* change spkg\n* hg commit -m \"Describe what you did\"\n* repack spkg\n* test spkg\n \n> > Two more things:\n> >     * spkg-check is missing - since we are now including the GAP test suite \n> > (or at least some subset) we need to actually be able to run it\n> \n> \n> Is there some documentation on what spkg-check should be?\n\nIt should invoke the test suite and return \"0\" when things pass and not \"0\". Note that the working directory when spkg-check is invoked is the same as at the end of spkg-install, so you might want to get the current working directory at the start of spkg-install and restore it at the end. \n\n> The bigger question for me is that (if we ignore all these problems) it is not clear to me if the package passes the tests. I don't understand the \"Warning: this should never happen \" lines. In other words, I don't know what they mean or what triggers them. For example, your statement \"These need to be fixed\" above. What needs to be fixed? The docstrings in guava? The print statement in gap.py?\n\nThe following is just the simplest example that fails with the new spkg:\n\n```\n    def version(self):\n        \"\"\"\n        Returns the version of GAP being used.\n\n        EXAMPLES:\n            sage: gap.version()\n            '4.4.10'\n        \"\"\"\n        return gap_version()\n```\n\nIf that did not fail for you you are doing something wrong since you are still running gap 4.4.10 then. There are about a dozen other problems related to printing and some other things. I did not take a closer look since it was clear to me that the spkg as is would not go into 3.3 without someone doing some major work.\n\n> Sorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is going on at work.) If this is pressing, if I can't fix this tomorrow maybe I should ask Carl Witty if he could finish it up?\n\nI can trivially do the one line change that matters in spkg-install, the point is that someone needs to fix the doctesting issues exposted by gap 4.4.12.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:32 wdj]:\n\nHi David,\n\n> > This is not the problem I am referring to and the print issue were actual changes in GAP's \n> > output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage \n> > release is this? Do you have anything in .gaprc?\n\n> \n> This is sage-3.3.alpha5. No I don't have a .gaprc. Should I?\n\n\nNo, but I do not have a .gaprc and I do not see the problem. So if you had one it could point to the problem. \n\n> > You also managed to delete .hgignore and not check in the changes to spkg-install: \n\n> \n> Yes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.\n\n\nIt is simple:\n\n* unpack spkg\n* move spkg to new name, i.e. gap-4.4.12.p0 to gap-4.4.12.p1 \n* change spkg\n* hg commit -m \"Describe what you did\"\n* repack spkg\n* test spkg\n \n> > Two more things:\n> > * spkg-check is missing - since we are now including the GAP test suite \n> > (or at least some subset) we need to actually be able to run it\n\n> \n> \n> Is there some documentation on what spkg-check should be?\n\n\nIt should invoke the test suite and return \"0\" when things pass and not \"0\". Note that the working directory when spkg-check is invoked is the same as at the end of spkg-install, so you might want to get the current working directory at the start of spkg-install and restore it at the end. \n\n> The bigger question for me is that (if we ignore all these problems) it is not clear to me if the package passes the tests. I don't understand the \"Warning: this should never happen \" lines. In other words, I don't know what they mean or what triggers them. For example, your statement \"These need to be fixed\" above. What needs to be fixed? The docstrings in guava? The print statement in gap.py?\n\n\nThe following is just the simplest example that fails with the new spkg:\n\n```\n    def version(self):\n        \"\"\"\n        Returns the version of GAP being used.\n\n        EXAMPLES:\n            sage: gap.version()\n            '4.4.10'\n        \"\"\"\n        return gap_version()\n```\nIf that did not fail for you you are doing something wrong since you are still running gap 4.4.10 then. There are about a dozen other problems related to printing and some other things. I did not take a closer look since it was clear to me that the spkg as is would not go into 3.3 without someone doing some major work.\n\n> Sorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is going on at work.) If this is pressing, if I can't fix this tomorrow maybe I should ask Carl Witty if he could finish it up?\n\n\nI can trivially do the one line change that matters in spkg-install, the point is that someone needs to fix the doctesting issues exposted by gap 4.4.12.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-08T06:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1173,14 +1187,18 @@ Hi David,
 > > This is not the problem I am referring to and the print issue were actual changes in GAP's 
 > > output. These need to be fixed. I have never seen the above statement on sage.math. Which Sage 
 > > release is this? Do you have anything in .gaprc?
+
 > 
 > This is sage-3.3.alpha5. No I don't have a .gaprc. Should I?
+
 
 No, but I do not have a .gaprc and I do not see the problem. So if you had one it could point to the problem. 
 
 > > You also managed to delete .hgignore and not check in the changes to spkg-install: 
+
 > 
 > Yes, I totally forgot it was an hg repo. Hopefully, when I check it in (or whatever - I'll have to look up your old emails since I don't remember the steps), those will get fixed.
+
 
 It is simple:
 
@@ -1192,15 +1210,18 @@ It is simple:
 * test spkg
  
 > > Two more things:
-> >     * spkg-check is missing - since we are now including the GAP test suite 
+> > * spkg-check is missing - since we are now including the GAP test suite 
 > > (or at least some subset) we need to actually be able to run it
+
 > 
 > 
 > Is there some documentation on what spkg-check should be?
 
+
 It should invoke the test suite and return "0" when things pass and not "0". Note that the working directory when spkg-check is invoked is the same as at the end of spkg-install, so you might want to get the current working directory at the start of spkg-install and restore it at the end. 
 
 > The bigger question for me is that (if we ignore all these problems) it is not clear to me if the package passes the tests. I don't understand the "Warning: this should never happen " lines. In other words, I don't know what they mean or what triggers them. For example, your statement "These need to be fixed" above. What needs to be fixed? The docstrings in guava? The print statement in gap.py?
+
 
 The following is just the simplest example that fails with the new spkg:
 
@@ -1215,10 +1236,10 @@ The following is just the simplest example that fails with the new spkg:
         """
         return gap_version()
 ```
-
 If that did not fail for you you are doing something wrong since you are still running gap 4.4.10 then. There are about a dozen other problems related to printing and some other things. I did not take a closer look since it was clear to me that the spkg as is would not go into 3.3 without someone doing some major work.
 
 > Sorry I haven't had a lot of time to devote to Sage recently. (A lot of stuff is going on at work.) If this is pressing, if I can't fix this tomorrow maybe I should ask Carl Witty if he could finish it up?
+
 
 I can trivially do the one line change that matters in spkg-install, the point is that someone needs to fix the doctesting issues exposted by gap 4.4.12.
 
@@ -1291,7 +1312,7 @@ Hopefully this is better than the last patch anyway!
 archive/issue_comments_023112.json:
 ```json
 {
-    "body": "I am not sure if we need to make all these doctest #random since IIRC cwitty initializes the GAP rng for each doctest. \n\nCarl: Is this correct or was this a plan to make GAP's rng behave nicely with the doctesting framework?\n\nAnd this change also makes me very uncomfortable:\n\n```\n6294\t6294\t            sage: C = graphs.CubeGraph(4) \n6295\t6295\t            sage: G = C.automorphism_group() \n6296\t6296\t            sage: M = G.character_table() \n6297\t \t            sage: M.determinant() \n \t6297\t            sage: M.determinant() # random sign (only abs. value is well-defined)  \n6298\t6298\t            -712483534798848 \n6299\t6299\t            sage: G.order() \n6300\t6300\t            384 \n```\n\nWhy is the sign of the determinant of a character table random? In that case the doctest should check for the absolute value of the determinant since #random would hide bugs here, i.e. no one would notice if the determinant would change more than its sign. I would also appreciate adding that info the the docstring of the character table to make people aware of the problem.\n\nCheers,\n\nMichael",
+    "body": "I am not sure if we need to make all these doctest #random since IIRC cwitty initializes the GAP rng for each doctest. \n\nCarl: Is this correct or was this a plan to make GAP's rng behave nicely with the doctesting framework?\n\nAnd this change also makes me very uncomfortable:\n\n```\n6294\t6294\t            sage: C = graphs.CubeGraph(4) \n6295\t6295\t            sage: G = C.automorphism_group() \n6296\t6296\t            sage: M = G.character_table() \n6297\t \t            sage: M.determinant() \n \t6297\t            sage: M.determinant() # random sign (only abs. value is well-defined)  \n6298\t6298\t            -712483534798848 \n6299\t6299\t            sage: G.order() \n6300\t6300\t            384 \n```\nWhy is the sign of the determinant of a character table random? In that case the doctest should check for the absolute value of the determinant since #random would hide bugs here, i.e. no one would notice if the determinant would change more than its sign. I would also appreciate adding that info the the docstring of the character table to make people aware of the problem.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T05:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1316,7 +1337,6 @@ And this change also makes me very uncomfortable:
 6299	6299	            sage: G.order() 
 6300	6300	            384 
 ```
-
 Why is the sign of the determinant of a character table random? In that case the doctest should check for the absolute value of the determinant since #random would hide bugs here, i.e. no one would notice if the determinant would change more than its sign. I would also appreciate adding that info the the docstring of the character table to make people aware of the problem.
 
 Cheers,
@@ -1330,7 +1350,7 @@ Michael
 archive/issue_comments_023113.json:
 ```json
 {
-    "body": "For efficiency reasons, we only initialize the GAP random number generator when we know we're going to use it.  The way we do this is that in every Sage library function that calls a GAP function that uses random numbers, we put this at the beginning:\n\n```\n        current_randstate().set_seed_gap()\n```\n\nand this at the top of the file:\n\n```\nfrom sage.misc.randstate import current_randstate\n```\n\n(you can see several examples of this in perm_gps/permgroup.py and matrix_gps/matrix_group.py).\n\nSo if GAP has changed some of its functions to be randomized, we need to add the above incantation at the beginning of every Sage library function that calls such a function.",
+    "body": "For efficiency reasons, we only initialize the GAP random number generator when we know we're going to use it.  The way we do this is that in every Sage library function that calls a GAP function that uses random numbers, we put this at the beginning:\n\n```\n        current_randstate().set_seed_gap()\n```\nand this at the top of the file:\n\n```\nfrom sage.misc.randstate import current_randstate\n```\n(you can see several examples of this in perm_gps/permgroup.py and matrix_gps/matrix_group.py).\n\nSo if GAP has changed some of its functions to be randomized, we need to add the above incantation at the beginning of every Sage library function that calls such a function.",
     "created_at": "2009-02-09T08:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1344,13 +1364,11 @@ For efficiency reasons, we only initialize the GAP random number generator when 
 ```
         current_randstate().set_seed_gap()
 ```
-
 and this at the top of the file:
 
 ```
 from sage.misc.randstate import current_randstate
 ```
-
 (you can see several examples of this in perm_gps/permgroup.py and matrix_gps/matrix_group.py).
 
 So if GAP has changed some of its functions to be randomized, we need to add the above incantation at the beginning of every Sage library function that calls such a function.
@@ -1420,7 +1438,7 @@ to be applied to 3.3.alpha6 with others (in order)
 archive/issue_comments_023117.json:
 ```json
 {
-    "body": "Thanks for the help!\nI think all these patches implement the comments made by mabshoff and cwitty. \n\n> Why is the sign of the determinant of a character table random?\n\nWhile the columns of the character table correspond to the conjugacy classes of the group, in general there is no way to order them canonically. (At least GAP does not have a canonical method to order the conjugacy classes implemented currently and I don't know of one which is valid for all finite groups.)",
+    "body": "Thanks for the help!\nI think all these patches implement the comments made by mabshoff and cwitty. \n\n> Why is the sign of the determinant of a character table random?\n\n\nWhile the columns of the character table correspond to the conjugacy classes of the group, in general there is no way to order them canonically. (At least GAP does not have a canonical method to order the conjugacy classes implemented currently and I don't know of one which is valid for all finite groups.)",
     "created_at": "2009-02-10T00:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1433,6 +1451,7 @@ Thanks for the help!
 I think all these patches implement the comments made by mabshoff and cwitty. 
 
 > Why is the sign of the determinant of a character table random?
+
 
 While the columns of the character table correspond to the conjugacy classes of the group, in general there is no way to order them canonically. (At least GAP does not have a canonical method to order the conjugacy classes implemented currently and I don't know of one which is valid for all finite groups.)
 
@@ -1519,7 +1538,7 @@ archive/issue_events_007474.json:
 archive/issue_comments_023120.json:
 ```json
 {
-    "body": "Hi David,\n\nso far I have seen one issue:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha6/sage-3.3.alpha6-fulvia/devel/doc/const/const.tex\", line 2632:\n    : print gap.eval(\"R:= PolynomialRing( GF(97))\")\nExpected:\n    PolynomialRing(..., [ x_1 ])\nGot:\n    GF(97)[x_1]\n**********************************************************************\n```\n\nThis should be trivial to fix. I have also seen one box where the \n\n```\nWarning: this should never happen\n```\n\noccurs, so we might want to take you up on your suggestions unless William or somebody else can nail down and fix the problem.\n\nI will keep you updated as things develop.\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nso far I have seen one issue:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha6/sage-3.3.alpha6-fulvia/devel/doc/const/const.tex\", line 2632:\n    : print gap.eval(\"R:= PolynomialRing( GF(97))\")\nExpected:\n    PolynomialRing(..., [ x_1 ])\nGot:\n    GF(97)[x_1]\n**********************************************************************\n```\nThis should be trivial to fix. I have also seen one box where the \n\n```\nWarning: this should never happen\n```\noccurs, so we might want to take you up on your suggestions unless William or somebody else can nail down and fix the problem.\n\nI will keep you updated as things develop.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T08:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1542,13 +1561,11 @@ Got:
     GF(97)[x_1]
 **********************************************************************
 ```
-
 This should be trivial to fix. I have also seen one box where the 
 
 ```
 Warning: this should never happen
 ```
-
 occurs, so we might want to take you up on your suggestions unless William or somebody else can nail down and fix the problem.
 
 I will keep you updated as things develop.
@@ -1564,7 +1581,7 @@ Michael
 archive/issue_comments_023121.json:
 ```json
 {
-    "body": "David,\n\nI have looked some more at the issue with\n\n```\nWarning: this should never happen\n```\n\nand it comes out of interfaces/gap.py. I would suggest instead of disabling the code we should do the following:\n\n* turn them into proper warning at warning level 1 - that way we don't see them in the doctests\n* open a ticket to address the problem indicating which doctests to run with what warning level so the issue gets resolved.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "David,\n\nI have looked some more at the issue with\n\n```\nWarning: this should never happen\n```\nand it comes out of interfaces/gap.py. I would suggest instead of disabling the code we should do the following:\n\n* turn them into proper warning at warning level 1 - that way we don't see them in the doctests\n* open a ticket to address the problem indicating which doctests to run with what warning level so the issue gets resolved.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T10:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1580,7 +1597,6 @@ I have looked some more at the issue with
 ```
 Warning: this should never happen
 ```
-
 and it comes out of interfaces/gap.py. I would suggest instead of disabling the code we should do the following:
 
 * turn them into proper warning at warning level 1 - that way we don't see them in the doctests
@@ -1599,7 +1615,7 @@ Michael
 archive/issue_comments_023122.json:
 ```json
 {
-    "body": "Another issue that only happens on 32 bit system:\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha6/sage-3.3.alpha6-fulvia/devel/sage/sage/graphs/graph.py\", line 6298:\n    sage: int(abs(M.determinant()))\nExpected:\n    712483534798848\nGot:\n    712483534798848L\n**********************************************************************\n```\n\nSo change int to integer.\n\nCheers,\n\nMichael",
+    "body": "Another issue that only happens on 32 bit system:\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha6/sage-3.3.alpha6-fulvia/devel/sage/sage/graphs/graph.py\", line 6298:\n    sage: int(abs(M.determinant()))\nExpected:\n    712483534798848\nGot:\n    712483534798848L\n**********************************************************************\n```\nSo change int to integer.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T10:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1621,7 +1637,6 @@ Got:
     712483534798848L
 **********************************************************************
 ```
-
 So change int to integer.
 
 Cheers,
@@ -1669,7 +1684,7 @@ archive/issue_events_007476.json:
 archive/issue_comments_023123.json:
 ```json
 {
-    "body": "David,\n\nI am seeing doctest failures in \n\n```\n        sage -t -long devel/doc/const/const.tex # 3 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/coding/guava.py # 1 doctests failed\n        sage -t -long devel/sage/sage/coding/code_constructions.py # 8 doctests failed\n        sage -t -long devel/sage/sage/coding/linear_code.py # 16 doctests failed\n```\n\n\nYou implied that all problems had been addressed, but this was clearly not the case. If you doctested your patches and they do not pass doctest do not mark them ready for review since at least on your test box all tests should pass. If they did I am very surprised, but at least the const.tex failure does happen regardless. Please make sure that in the future you also test the documentation since this issue has cropped up repeatedly via patches submitted by you.\n\nI am not comfortable with merging this code into 3.3 unless someone takes a look at the issue with \n\n```\nWarning: this should never happen\n```\n\nOne last thing: Disregard my comment above. You don't even need to make the result of abs an int since in either case it returns integer:\n\n```\nsage: type(M.determinant().abs())\n<type 'sage.rings.integer.Integer'>\nsage: type(abs(M.determinant()))\n<type 'sage.rings.integer.Integer'>\n```\n\n\nCheers,\n\nMichael",
+    "body": "David,\n\nI am seeing doctest failures in \n\n```\n        sage -t -long devel/doc/const/const.tex # 3 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/coding/guava.py # 1 doctests failed\n        sage -t -long devel/sage/sage/coding/code_constructions.py # 8 doctests failed\n        sage -t -long devel/sage/sage/coding/linear_code.py # 16 doctests failed\n```\n\nYou implied that all problems had been addressed, but this was clearly not the case. If you doctested your patches and they do not pass doctest do not mark them ready for review since at least on your test box all tests should pass. If they did I am very surprised, but at least the const.tex failure does happen regardless. Please make sure that in the future you also test the documentation since this issue has cropped up repeatedly via patches submitted by you.\n\nI am not comfortable with merging this code into 3.3 unless someone takes a look at the issue with \n\n```\nWarning: this should never happen\n```\nOne last thing: Disregard my comment above. You don't even need to make the result of abs an int since in either case it returns integer:\n\n```\nsage: type(M.determinant().abs())\n<type 'sage.rings.integer.Integer'>\nsage: type(abs(M.determinant()))\n<type 'sage.rings.integer.Integer'>\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T12:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1690,7 +1705,6 @@ I am seeing doctest failures in
         sage -t -long devel/sage/sage/coding/linear_code.py # 16 doctests failed
 ```
 
-
 You implied that all problems had been addressed, but this was clearly not the case. If you doctested your patches and they do not pass doctest do not mark them ready for review since at least on your test box all tests should pass. If they did I am very surprised, but at least the const.tex failure does happen regardless. Please make sure that in the future you also test the documentation since this issue has cropped up repeatedly via patches submitted by you.
 
 I am not comfortable with merging this code into 3.3 unless someone takes a look at the issue with 
@@ -1698,7 +1712,6 @@ I am not comfortable with merging this code into 3.3 unless someone takes a look
 ```
 Warning: this should never happen
 ```
-
 One last thing: Disregard my comment above. You don't even need to make the result of abs an int since in either case it returns integer:
 
 ```
@@ -1707,7 +1720,6 @@ sage: type(M.determinant().abs())
 sage: type(abs(M.determinant()))
 <type 'sage.rings.integer.Integer'>
 ```
-
 
 Cheers,
 
@@ -1720,7 +1732,7 @@ Michael
 archive/issue_comments_023124.json:
 ```json
 {
-    "body": "As I said in my comments, I have no idea why the \"This should never happen\" prints are there. I said this several times, so I'm sorry if my last comment suggested otherwise. I did not insert that print statement into gap.py and don't know who did. The correct computation appears after those print statements.\n\n\nI did not get the doctest error in const.tex listed in the list of failures at the bottom. That is the way I determine which failures have occurred.\n\n\nRegarding M.determinant(), I get a failure unless I do exactly as I did. The tests passed for me. (I think there is a bug in abs but am not sure.)\n\n\nRegarding the matrix_integer_dense.pyx failure, that just never happened for me:\n\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/coding/linear_code.py\"\n\tsage -t  \"devel/sage/sage/coding/guava.py\"\n\tsage -t  \"devel/sage/sage/coding/code_constructions.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/worksheet.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/template.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/avatars.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/cell.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/twist.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/notebook.py\"\nTotal time for all tests: 2434.5 seconds\n```\n\n\n\nSorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.",
+    "body": "As I said in my comments, I have no idea why the \"This should never happen\" prints are there. I said this several times, so I'm sorry if my last comment suggested otherwise. I did not insert that print statement into gap.py and don't know who did. The correct computation appears after those print statements.\n\n\nI did not get the doctest error in const.tex listed in the list of failures at the bottom. That is the way I determine which failures have occurred.\n\n\nRegarding M.determinant(), I get a failure unless I do exactly as I did. The tests passed for me. (I think there is a bug in abs but am not sure.)\n\n\nRegarding the matrix_integer_dense.pyx failure, that just never happened for me:\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/coding/linear_code.py\"\n\tsage -t  \"devel/sage/sage/coding/guava.py\"\n\tsage -t  \"devel/sage/sage/coding/code_constructions.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/worksheet.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/template.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/avatars.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/cell.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/twist.py\"\n\tsage -t  \"devel/sage/sage/server/notebook/notebook.py\"\nTotal time for all tests: 2434.5 seconds\n```\n\n\nSorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.",
     "created_at": "2009-02-10T12:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1740,7 +1752,6 @@ Regarding M.determinant(), I get a failure unless I do exactly as I did. The tes
 
 Regarding the matrix_integer_dense.pyx failure, that just never happened for me:
 
-
 ```
 The following tests failed:
 
@@ -1758,7 +1769,6 @@ Total time for all tests: 2434.5 seconds
 ```
 
 
-
 Sorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.
 
 
@@ -1768,7 +1778,7 @@ Sorry for the miscommunication. If you tell me what to change I will change it b
 archive/issue_comments_023125.json:
 ```json
 {
-    "body": "Replying to [comment:45 wdj]:\n\nHi David,\n\n> As I said in my comments, I have no idea why the \"This should never happen\" prints are there. I said this several times, so I'm sorry if my last comment suggested otherwise. I did not insert that print statement into gap.py and don't know who did. The correct computation appears after those print statements.\n\nWell, someone needs to fix the bug. One way would be to make them real warnings, i.e. they are not raised with the default settings. But looking at the code something fishy is going on.\n\n> I did not get the doctest error in const.tex listed in the list of failures at the bottom. That is the way I determine which failures have occurred.\n\nThat is because you did not run the documentation doctests. You corrected the same bug in some other place in the Sage library in one of the above patches. \n \n> Regarding M.determinant(), I get a failure unless I do exactly as I did. The tests passed for me. (I think there is a bug in abs but am not sure.)\n\nAs I mentioned this is a 32 vs. 64 bit issue. On a 64 bit box the tests pass, but not on a 32 bit box. Printing Python ints (*not* Sage integers) causes issues like that on 32 vs. 64 bit platforms when the value is between an in and a long. Just drop the int() and you are good to go since in this case the determinant returns a Sage integer anyway.\n\n> Regarding the matrix_integer_dense.pyx failure, that just never happened for me:\\\n\nI did not see any failure in matrix_integer_dense.pyx. What file do you mean?\n\n<SNIP>\n\nThis is the result of your doctesting? The patches should have never been posted as ready for review. The notebook failures have nothing to do with this failure. Maybe you ought to develop patches in branches so you don't get unrelated doctest failures like that. I expect any patch posted for review to pass the doctest suite 100%. Anything else is an instant \"needs work\" by me unless the issue is trivially fixable. \n \n> Sorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.\n\nOk, please make 100% clear if all doctests passed for you or not. I have spend considerable time on building and testing this GAP.spkg and the related patches since I assumed it would actually worked while I have 10 tickets or so to fix on my own for the 3.3 release which needs to drop soon. Knowing what I know now I would not have touched these patches at all.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:45 wdj]:\n\nHi David,\n\n> As I said in my comments, I have no idea why the \"This should never happen\" prints are there. I said this several times, so I'm sorry if my last comment suggested otherwise. I did not insert that print statement into gap.py and don't know who did. The correct computation appears after those print statements.\n\n\nWell, someone needs to fix the bug. One way would be to make them real warnings, i.e. they are not raised with the default settings. But looking at the code something fishy is going on.\n\n> I did not get the doctest error in const.tex listed in the list of failures at the bottom. That is the way I determine which failures have occurred.\n\n\nThat is because you did not run the documentation doctests. You corrected the same bug in some other place in the Sage library in one of the above patches. \n \n> Regarding M.determinant(), I get a failure unless I do exactly as I did. The tests passed for me. (I think there is a bug in abs but am not sure.)\n\n\nAs I mentioned this is a 32 vs. 64 bit issue. On a 64 bit box the tests pass, but not on a 32 bit box. Printing Python ints (*not* Sage integers) causes issues like that on 32 vs. 64 bit platforms when the value is between an in and a long. Just drop the int() and you are good to go since in this case the determinant returns a Sage integer anyway.\n\n> Regarding the matrix_integer_dense.pyx failure, that just never happened for me:\\\n\n\nI did not see any failure in matrix_integer_dense.pyx. What file do you mean?\n\n<SNIP>\n\nThis is the result of your doctesting? The patches should have never been posted as ready for review. The notebook failures have nothing to do with this failure. Maybe you ought to develop patches in branches so you don't get unrelated doctest failures like that. I expect any patch posted for review to pass the doctest suite 100%. Anything else is an instant \"needs work\" by me unless the issue is trivially fixable. \n \n> Sorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.\n\n\nOk, please make 100% clear if all doctests passed for you or not. I have spend considerable time on building and testing this GAP.spkg and the related patches since I assumed it would actually worked while I have 10 tickets or so to fix on my own for the 3.3 release which needs to drop soon. Knowing what I know now I would not have touched these patches at all.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T13:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1783,17 +1793,21 @@ Hi David,
 
 > As I said in my comments, I have no idea why the "This should never happen" prints are there. I said this several times, so I'm sorry if my last comment suggested otherwise. I did not insert that print statement into gap.py and don't know who did. The correct computation appears after those print statements.
 
+
 Well, someone needs to fix the bug. One way would be to make them real warnings, i.e. they are not raised with the default settings. But looking at the code something fishy is going on.
 
 > I did not get the doctest error in const.tex listed in the list of failures at the bottom. That is the way I determine which failures have occurred.
+
 
 That is because you did not run the documentation doctests. You corrected the same bug in some other place in the Sage library in one of the above patches. 
  
 > Regarding M.determinant(), I get a failure unless I do exactly as I did. The tests passed for me. (I think there is a bug in abs but am not sure.)
 
+
 As I mentioned this is a 32 vs. 64 bit issue. On a 64 bit box the tests pass, but not on a 32 bit box. Printing Python ints (*not* Sage integers) causes issues like that on 32 vs. 64 bit platforms when the value is between an in and a long. Just drop the int() and you are good to go since in this case the determinant returns a Sage integer anyway.
 
 > Regarding the matrix_integer_dense.pyx failure, that just never happened for me:\
+
 
 I did not see any failure in matrix_integer_dense.pyx. What file do you mean?
 
@@ -1802,6 +1816,7 @@ I did not see any failure in matrix_integer_dense.pyx. What file do you mean?
 This is the result of your doctesting? The patches should have never been posted as ready for review. The notebook failures have nothing to do with this failure. Maybe you ought to develop patches in branches so you don't get unrelated doctest failures like that. I expect any patch posted for review to pass the doctest suite 100%. Anything else is an instant "needs work" by me unless the issue is trivially fixable. 
  
 > Sorry for the miscommunication. If you tell me what to change I will change it but AFAIK, there are not more failures that I know of that I can fix.
+
 
 Ok, please make 100% clear if all doctests passed for you or not. I have spend considerable time on building and testing this GAP.spkg and the related patches since I assumed it would actually worked while I have 10 tickets or so to fix on my own for the 3.3 release which needs to drop soon. Knowing what I know now I would not have touched these patches at all.
 
@@ -1816,7 +1831,7 @@ Michael
 archive/issue_comments_023126.json:
 ```json
 {
-    "body": "You have a number of incorrect statements. I will list them in order.\n\n>  That is because you did not run the documentation \n>  doctests. \n\nsage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.\n\n\n> As I mentioned this is a 32 vs. 64 bit issue. On a \n> 64 bit box the tests pass, but not on a 32 bit box.\n> Printing Python ints (*not* Sage integers) causes \n> issues like that on 32 vs. 64 bit platforms when the \n> value is between an in and a long. Just drop the \n> int() and you are good to go since in this case \n> the determinant returns a Sage integer anyway.\n\n\nThis statement is incorrect for me (amd64 ubuntu 8.10).\nMaybe it is true for the machines you test with? As I \nsaid, I think abs may have a bug but in any case I will\nchange int to ZZ. (I confirmed the type statement you \nmade before adding the int, this is why I think there is a bug. Maybe the prepaser is changing things?)\n\n\n> Maybe you ought to develop patches in branches so \n> you don't get unrelated doctest failures like that.\n\n\nYou were the one who suggested I do the testing on sage.math. You can see from\n\n\n```\nhttp://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/\n```\n\nthat I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.\n\n\nI'll post a patch with the 2 changes you suggested hopefully in the next several hours.",
+    "body": "You have a number of incorrect statements. I will list them in order.\n\n>  That is because you did not run the documentation \n>  doctests. \n\n\nsage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.\n\n\n> As I mentioned this is a 32 vs. 64 bit issue. On a \n> 64 bit box the tests pass, but not on a 32 bit box.\n> Printing Python ints (*not* Sage integers) causes \n> issues like that on 32 vs. 64 bit platforms when the \n> value is between an in and a long. Just drop the \n> int() and you are good to go since in this case \n> the determinant returns a Sage integer anyway.\n\n\n\nThis statement is incorrect for me (amd64 ubuntu 8.10).\nMaybe it is true for the machines you test with? As I \nsaid, I think abs may have a bug but in any case I will\nchange int to ZZ. (I confirmed the type statement you \nmade before adding the int, this is why I think there is a bug. Maybe the prepaser is changing things?)\n\n\n> Maybe you ought to develop patches in branches so \n> you don't get unrelated doctest failures like that.\n\n\n\nYou were the one who suggested I do the testing on sage.math. You can see from\n\n```\nhttp://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/\n```\nthat I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.\n\n\nI'll post a patch with the 2 changes you suggested hopefully in the next several hours.",
     "created_at": "2009-02-10T13:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1830,6 +1845,7 @@ You have a number of incorrect statements. I will list them in order.
 >  That is because you did not run the documentation 
 >  doctests. 
 
+
 sage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.
 
 
@@ -1840,6 +1856,7 @@ sage -testall runs doctests, so your claim is incorrect. The problem is that it 
 > value is between an in and a long. Just drop the 
 > int() and you are good to go since in this case 
 > the determinant returns a Sage integer anyway.
+
 
 
 This statement is incorrect for me (amd64 ubuntu 8.10).
@@ -1853,13 +1870,12 @@ made before adding the int, this is why I think there is a bug. Maybe the prepas
 > you don't get unrelated doctest failures like that.
 
 
-You were the one who suggested I do the testing on sage.math. You can see from
 
+You were the one who suggested I do the testing on sage.math. You can see from
 
 ```
 http://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/
 ```
-
 that I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.
 
 
@@ -1872,7 +1888,7 @@ I'll post a patch with the 2 changes you suggested hopefully in the next several
 archive/issue_comments_023127.json:
 ```json
 {
-    "body": "Replying to [comment:47 wdj]:\n\nHi David,\n\n> You have a number of incorrect statements. I will list them in order.\n> \n> >  That is because you did not run the documentation \n> >  doctests. \n> \n> sage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.\n\nNo, -testall tests the Sage library and not the documentation. I do not recall that testall ever tested the documentation and I have been doing releases for well over a year now fulltime. If you look at the check target in the Makefile you will see that the DSage unit tests are run, then the documentation tests, then the Sage library tests. \n\nSage's -tp doctests also the documentation on demand if SAGE_TEXT_TEX is set to \"1\", but that is not the default. \n\n> > As I mentioned this is a 32 vs. 64 bit issue. On a \n> > 64 bit box the tests pass, but not on a 32 bit box.\n> > Printing Python ints (*not* Sage integers) causes \n> > issues like that on 32 vs. 64 bit platforms when the \n> > value is between an in and a long. Just drop the \n> > int() and you are good to go since in this case \n> > the determinant returns a Sage integer anyway.\n> \n> \n> This statement is incorrect for me (amd64 ubuntu 8.10).\n\nIt is a well know fact that Python ints can print differently on 32 and 64 bit platforms and that the difference is the extra L in certain cases on 32 bit boxen. I have pointed that out twice before. \n\n> Maybe it is true for the machines you test with? As I \n> said, I think abs may have a bug but in any case I will\n> change int to ZZ. (I confirmed the type statement you \n> made before adding the int, this is why I think there is a bug. Maybe the prepaser is changing things?)\n\nNo, this is Python behavior since you convert it to a Python int. Do not convert it and it will just work since abs() will return an integer AFAIK in this situation, but I can test that later. \n\n> \n> > Maybe you ought to develop patches in branches so \n> > you don't get unrelated doctest failures like that.\n> \n> \n> You were the one who suggested I do the testing on sage.math. You can see from\n> \n> {{{\n> http://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/\n> }}}\n> that I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.\n\nI do not merge *any* patch which causes doctest failures and the 3.3.alpha6 binary I posted doctested perfect on sage.math when I bdisted. As I pointed out in the release notes in \n\n  http://groups.google.com/group/sage-devel/browse_thread/thread/48b893e904634273#\n\nyou needed to apply a patch to work around a relocation issue which everyone triggers when they use a binary, but I discovered that afterwards:\n\n```\nMerging for rc0 has already started and one bug made it into alpha6 \nthat can cause cloning to fail has been resolved. So please pull in \nthe fix below \n#5205: Michael Abshoff: Set \"# -*- coding: utf-8 -*-\" encoding for \nsage/server/notebook/template.py [Reviewed by Mike Hansen] \nin case you run into trouble cloning. It also happens when you move \nthe tree.\n```\n\n\nIf you look at the ticket it clearly outlines the doctest failure related to the notebook you saw. The other six alphas doctested perfect out of the box on sage.math. \n\n> \n> I'll post a patch with the 2 changes you suggested hopefully in the next several hours.\n\nOk.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:47 wdj]:\n\nHi David,\n\n> You have a number of incorrect statements. I will list them in order.\n> \n> >  That is because you did not run the documentation \n> >  doctests. \n  \n> \n> sage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.\n\n\nNo, -testall tests the Sage library and not the documentation. I do not recall that testall ever tested the documentation and I have been doing releases for well over a year now fulltime. If you look at the check target in the Makefile you will see that the DSage unit tests are run, then the documentation tests, then the Sage library tests. \n\nSage's -tp doctests also the documentation on demand if SAGE_TEXT_TEX is set to \"1\", but that is not the default. \n\n> > As I mentioned this is a 32 vs. 64 bit issue. On a \n> > 64 bit box the tests pass, but not on a 32 bit box.\n> > Printing Python ints (*not* Sage integers) causes \n> > issues like that on 32 vs. 64 bit platforms when the \n> > value is between an in and a long. Just drop the \n> > int() and you are good to go since in this case \n> > the determinant returns a Sage integer anyway.\n\n> \n> \n> This statement is incorrect for me (amd64 ubuntu 8.10).\n\n\nIt is a well know fact that Python ints can print differently on 32 and 64 bit platforms and that the difference is the extra L in certain cases on 32 bit boxen. I have pointed that out twice before. \n\n> Maybe it is true for the machines you test with? As I \n> said, I think abs may have a bug but in any case I will\n> change int to ZZ. (I confirmed the type statement you \n> made before adding the int, this is why I think there is a bug. Maybe the prepaser is changing things?)\n\n\nNo, this is Python behavior since you convert it to a Python int. Do not convert it and it will just work since abs() will return an integer AFAIK in this situation, but I can test that later. \n\n> \n> > Maybe you ought to develop patches in branches so \n> > you don't get unrelated doctest failures like that.\n\n> \n> \n> You were the one who suggested I do the testing on sage.math. You can see from\n> \n> \n> ```\n> http://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/\n> ```\n> that I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.\n\n\nI do not merge *any* patch which causes doctest failures and the 3.3.alpha6 binary I posted doctested perfect on sage.math when I bdisted. As I pointed out in the release notes in \n\n  http://groups.google.com/group/sage-devel/browse_thread/thread/48b893e904634273#\n\nyou needed to apply a patch to work around a relocation issue which everyone triggers when they use a binary, but I discovered that afterwards:\n\n```\nMerging for rc0 has already started and one bug made it into alpha6 \nthat can cause cloning to fail has been resolved. So please pull in \nthe fix below \n#5205: Michael Abshoff: Set \"# -*- coding: utf-8 -*-\" encoding for \nsage/server/notebook/template.py [Reviewed by Mike Hansen] \nin case you run into trouble cloning. It also happens when you move \nthe tree.\n```\n\nIf you look at the ticket it clearly outlines the doctest failure related to the notebook you saw. The other six alphas doctested perfect out of the box on sage.math. \n\n> \n> I'll post a patch with the 2 changes you suggested hopefully in the next several hours.\n\n\nOk.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T14:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -1889,8 +1905,10 @@ Hi David,
 > 
 > >  That is because you did not run the documentation 
 > >  doctests. 
+  
 > 
 > sage -testall runs doctests, so your claim is incorrect. The problem is that it appears that it does not (for me) print the doctest failures for the documentation. It used to do that and someone changed the behaviour.
+
 
 No, -testall tests the Sage library and not the documentation. I do not recall that testall ever tested the documentation and I have been doing releases for well over a year now fulltime. If you look at the check target in the Makefile you will see that the DSage unit tests are run, then the documentation tests, then the Sage library tests. 
 
@@ -1903,9 +1921,11 @@ Sage's -tp doctests also the documentation on demand if SAGE_TEXT_TEX is set to 
 > > value is between an in and a long. Just drop the 
 > > int() and you are good to go since in this case 
 > > the determinant returns a Sage integer anyway.
+
 > 
 > 
 > This statement is incorrect for me (amd64 ubuntu 8.10).
+
 
 It is a well know fact that Python ints can print differently on 32 and 64 bit platforms and that the difference is the extra L in certain cases on 32 bit boxen. I have pointed that out twice before. 
 
@@ -1914,19 +1934,23 @@ It is a well know fact that Python ints can print differently on 32 and 64 bit p
 > change int to ZZ. (I confirmed the type statement you 
 > made before adding the int, this is why I think there is a bug. Maybe the prepaser is changing things?)
 
+
 No, this is Python behavior since you convert it to a Python int. Do not convert it and it will just work since abs() will return an integer AFAIK in this situation, but I can test that later. 
 
 > 
 > > Maybe you ought to develop patches in branches so 
 > > you don't get unrelated doctest failures like that.
+
 > 
 > 
 > You were the one who suggested I do the testing on sage.math. You can see from
 > 
-> {{{
+> 
+> ```
 > http://sage.math.washington.edu/home/wdj/sagefiles/sage-3.3.alpha6/devel/
-> }}}
+> ```
 > that I am using a branch. I've forgotten how long it's been since I've gotten all doctests to pass! I will try to make that clearer in the future though.
+
 
 I do not merge *any* patch which causes doctest failures and the 3.3.alpha6 binary I posted doctested perfect on sage.math when I bdisted. As I pointed out in the release notes in 
 
@@ -1944,11 +1968,11 @@ in case you run into trouble cloning. It also happens when you move
 the tree.
 ```
 
-
 If you look at the ticket it clearly outlines the doctest failure related to the notebook you saw. The other six alphas doctested perfect out of the box on sage.math. 
 
 > 
 > I'll post a patch with the 2 changes you suggested hopefully in the next several hours.
+
 
 Ok.
 
@@ -1987,7 +2011,7 @@ Michael
 archive/issue_comments_023129.json:
 ```json
 {
-    "body": "Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\n\nI'm attaching a patch which makes the change to const.tex \nyou told me to make. I cannot get it to apply though and \ndon't know what I did wrong.\n\n> Do not convert it and it will just work since abs() will \n> return an integer AFAIK in this situation, but I can \n> test that later. \n\n\nThis is again incorrect but you have now told me directly twice \nto do this, so I will do as you say. The 5th patch does \nexactly as you instructed. Because this does not work (as I \nalso said at least twice now), I get more failures.\n\n\nSo, I will leave this as \"needs work\" since there is nothing \nelse I know how to to fix this.\n\n\nIf anything, one thing this process of testing both on my \nphenom ubuntu 8.10 machine and sage.math has given me is a \nmuch greater appreciation for the frustrations you go \nthrough dealing with all the architectures you do!!\n\n\n\n\n\n```\n\n\n\nThe following tests failed:                                                                                                                           \n\n\n        sage -t  \"devel/sage/sage/coding/linear_code.py\"\n        sage -t  \"devel/sage/sage/coding/guava.py\"      \n        sage -t  \"devel/sage/sage/coding/code_constructions.py\"\n        sage -t  \"devel/sage/sage/server/notebook/worksheet.py\"\n        sage -t  \"devel/sage/sage/server/notebook/template.py\" \n        sage -t  \"devel/sage/sage/server/notebook/avatars.py\"  \n        sage -t  \"devel/sage/sage/server/notebook/cell.py\"     \n        sage -t  \"devel/sage/sage/server/notebook/twist.py\"    \n        sage -t  \"devel/sage/sage/server/notebook/notebook.py\" \n        sage -t  \"devel/sage/sage/graphs/graph.py\"             \nTotal time for all tests: 2434.6 seconds\n\n```\n\n\nI did not apply the 5204 patch as I wasn't sure how that \nshould be applied not that supposedly a clone (or is it?) \nwas already seemingly created.",
+    "body": "Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\n\nI'm attaching a patch which makes the change to const.tex \nyou told me to make. I cannot get it to apply though and \ndon't know what I did wrong.\n\n> Do not convert it and it will just work since abs() will \n> return an integer AFAIK in this situation, but I can \n> test that later. \n\n\n\nThis is again incorrect but you have now told me directly twice \nto do this, so I will do as you say. The 5th patch does \nexactly as you instructed. Because this does not work (as I \nalso said at least twice now), I get more failures.\n\n\nSo, I will leave this as \"needs work\" since there is nothing \nelse I know how to to fix this.\n\n\nIf anything, one thing this process of testing both on my \nphenom ubuntu 8.10 machine and sage.math has given me is a \nmuch greater appreciation for the frustrations you go \nthrough dealing with all the architectures you do!!\n\n\n\n\n```\n\n\n\nThe following tests failed:                                                                                                                           \n\n\n        sage -t  \"devel/sage/sage/coding/linear_code.py\"\n        sage -t  \"devel/sage/sage/coding/guava.py\"      \n        sage -t  \"devel/sage/sage/coding/code_constructions.py\"\n        sage -t  \"devel/sage/sage/server/notebook/worksheet.py\"\n        sage -t  \"devel/sage/sage/server/notebook/template.py\" \n        sage -t  \"devel/sage/sage/server/notebook/avatars.py\"  \n        sage -t  \"devel/sage/sage/server/notebook/cell.py\"     \n        sage -t  \"devel/sage/sage/server/notebook/twist.py\"    \n        sage -t  \"devel/sage/sage/server/notebook/notebook.py\" \n        sage -t  \"devel/sage/sage/graphs/graph.py\"             \nTotal time for all tests: 2434.6 seconds\n\n```\n\nI did not apply the 5204 patch as I wasn't sure how that \nshould be applied not that supposedly a clone (or is it?) \nwas already seemingly created.",
     "created_at": "2009-02-10T15:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2008,6 +2032,7 @@ don't know what I did wrong.
 > test that later. 
 
 
+
 This is again incorrect but you have now told me directly twice 
 to do this, so I will do as you say. The 5th patch does 
 exactly as you instructed. Because this does not work (as I 
@@ -2022,7 +2047,6 @@ If anything, one thing this process of testing both on my
 phenom ubuntu 8.10 machine and sage.math has given me is a 
 much greater appreciation for the frustrations you go 
 through dealing with all the architectures you do!!
-
 
 
 
@@ -2047,7 +2071,6 @@ The following tests failed:
 Total time for all tests: 2434.6 seconds
 
 ```
-
 
 I did not apply the 5204 patch as I wasn't sure how that 
 should be applied not that supposedly a clone (or is it?) 
@@ -2078,7 +2101,7 @@ this does not apply for me, but was meant to work for 3.3.alpha6.
 archive/issue_comments_023131.json:
 ```json
 {
-    "body": "Attachment [trac_3337-const-tex.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-const-tex.patch) by mabshoff created at 2009-02-10 16:08:38\n\nReplying to [comment:50 wdj]:\n> Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\nYes, it must have been broken for a long, long time. In 3.4 the documentation will be inside the devel tree, so the issue will be moot. \n\n> \n> I'm attaching a patch which makes the change to const.tex \n> you told me to make. I cannot get it to apply though and \n> don't know what I did wrong.\n\nCheck the repo, -sdist changes the version number. \n> This is again incorrect but you have now told me directly twice \n> to do this, so I will do as you say. The 5th patch does \n> exactly as you instructed. Because this does not work (as I \n> also said at least twice now), I get more failures.\n\nOk, this is what works:\n\n```\nsage: abs(Integer(M.determinant()))\n712483534798848\n```\n\nI tested with a different matrix type where it worked out of the box without the Integer constructor.\n\n<SNIP>\n\n> I did not apply the 5204 patch as I wasn't sure how that \n> should be applied not that supposedly a clone (or is it?) \n> was already seemingly created.\n \nIf you apply the patch via Sage's interface it will be applied to the current clone only. You can always do an \"hg import foo.patch\" inside devel/sage-something.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_3337-const-tex.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-const-tex.patch) by mabshoff created at 2009-02-10 16:08:38\n\nReplying to [comment:50 wdj]:\n> Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.\n\n\nYes, it must have been broken for a long, long time. In 3.4 the documentation will be inside the devel tree, so the issue will be moot. \n\n> \n> I'm attaching a patch which makes the change to const.tex \n> you told me to make. I cannot get it to apply though and \n> don't know what I did wrong.\n\n\nCheck the repo, -sdist changes the version number. \n> This is again incorrect but you have now told me directly twice \n> to do this, so I will do as you say. The 5th patch does \n> exactly as you instructed. Because this does not work (as I \n> also said at least twice now), I get more failures.\n\n\nOk, this is what works:\n\n```\nsage: abs(Integer(M.determinant()))\n712483534798848\n```\nI tested with a different matrix type where it worked out of the box without the Integer constructor.\n\n<SNIP>\n\n> I did not apply the 5204 patch as I wasn't sure how that \n> should be applied not that supposedly a clone (or is it?) \n> was already seemingly created.\n\n \nIf you apply the patch via Sage's interface it will be applied to the current clone only. You can always do an \"hg import foo.patch\" inside devel/sage-something.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T16:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2092,6 +2115,7 @@ Attachment [trac_3337-const-tex.patch](tarball://root/attachments/some-uuid/tick
 Replying to [comment:50 wdj]:
 > Yes, someone changed the printing for the documentation failures in sage -testall. It used to work but maybe that was long ago.
 
+
 Yes, it must have been broken for a long, long time. In 3.4 the documentation will be inside the devel tree, so the issue will be moot. 
 
 > 
@@ -2099,11 +2123,13 @@ Yes, it must have been broken for a long, long time. In 3.4 the documentation wi
 > you told me to make. I cannot get it to apply though and 
 > don't know what I did wrong.
 
+
 Check the repo, -sdist changes the version number. 
 > This is again incorrect but you have now told me directly twice 
 > to do this, so I will do as you say. The 5th patch does 
 > exactly as you instructed. Because this does not work (as I 
 > also said at least twice now), I get more failures.
+
 
 Ok, this is what works:
 
@@ -2111,7 +2137,6 @@ Ok, this is what works:
 sage: abs(Integer(M.determinant()))
 712483534798848
 ```
-
 I tested with a different matrix type where it worked out of the box without the Integer constructor.
 
 <SNIP>
@@ -2119,6 +2144,7 @@ I tested with a different matrix type where it worked out of the box without the
 > I did not apply the 5204 patch as I wasn't sure how that 
 > should be applied not that supposedly a clone (or is it?) 
 > was already seemingly created.
+
  
 If you apply the patch via Sage's interface it will be applied to the current clone only. You can always do an "hg import foo.patch" inside devel/sage-something.
 
@@ -2133,7 +2159,7 @@ Michael
 archive/issue_comments_023132.json:
 ```json
 {
-    "body": "\n```\n16:20 < wstein-3337> I think it's just that somebody re-enabled or implemented notification that a \n                     subprocess\n16:20 < wstein-3337> is started/stopped.\n16:20 < wstein-3337> And Steve (in gap.py) hadn't implemented handling of that.\n16:20 < wstein-3337> The proper handling is to ignore it.\n16:20 < wstein-3337> I'll post a 2-line patch.\n```\n",
+    "body": "```\n16:20 < wstein-3337> I think it's just that somebody re-enabled or implemented notification that a \n                     subprocess\n16:20 < wstein-3337> is started/stopped.\n16:20 < wstein-3337> And Steve (in gap.py) hadn't implemented handling of that.\n16:20 < wstein-3337> The proper handling is to ignore it.\n16:20 < wstein-3337> I'll post a 2-line patch.\n```",
     "created_at": "2009-02-14T00:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
@@ -2141,7 +2167,6 @@ archive/issue_comments_023132.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 16:20 < wstein-3337> I think it's just that somebody re-enabled or implemented notification that a 
@@ -2151,7 +2176,6 @@ archive/issue_comments_023132.json:
 16:20 < wstein-3337> The proper handling is to ignore it.
 16:20 < wstein-3337> I'll post a 2-line patch.
 ```
-
 
 
 

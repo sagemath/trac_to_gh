@@ -3,7 +3,7 @@
 archive/issues_000989.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nsage: edit?\n```\n\npresently yields\n\n```\n ...\n          sage: import sage.misc.edit_module as m\n          sage: m.set_edit_template(\"vi -c {line} {file}\")\n ...\n```\n\nwhereas the last line should read\n\n```\n         sage: m.set_edit_template(\"vi -c ${line} ${file}\")\n```\n\ni.e., $ gets stripped from EXAMPLE text where it should not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/989\n\n",
+    "body": "Assignee: tba\n\n```\nsage: edit?\n```\npresently yields\n\n```\n ...\n          sage: import sage.misc.edit_module as m\n          sage: m.set_edit_template(\"vi -c {line} {file}\")\n ...\n```\nwhereas the last line should read\n\n```\n         sage: m.set_edit_template(\"vi -c ${line} ${file}\")\n```\ni.e., $ gets stripped from EXAMPLE text where it should not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/989\n\n",
     "created_at": "2007-10-25T01:14:24Z",
     "labels": [
         "component: documentation",
@@ -18,11 +18,9 @@ archive/issues_000989.json:
 ```
 Assignee: tba
 
-
 ```
 sage: edit?
 ```
-
 presently yields
 
 ```
@@ -31,13 +29,11 @@ presently yields
           sage: m.set_edit_template("vi -c {line} {file}")
  ...
 ```
-
 whereas the last line should read
 
 ```
          sage: m.set_edit_template("vi -c ${line} ${file}")
 ```
-
 i.e., $ gets stripped from EXAMPLE text where it should not.
 
 Issue created by migration from https://trac.sagemath.org/ticket/989
@@ -88,7 +84,7 @@ archive/issue_events_002731.json:
 archive/issue_comments_006017.json:
 ```json
 {
-    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:28\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
+    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:28\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
     "created_at": "2007-11-04T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
@@ -106,13 +102,11 @@ Changelog for the patch:
 The first line of a docstring is parsed as a comma-separated list of
 directives (no whitespace in directives!).  For example:
 
-
 ```
 r"""nodetex,notyetimplemented
 ...
 """
 ```
-
 
 If 'nodetex' is one of the directives, then no (la)tex code is stripped from
 the docstring.  The model was the 'nodoctest' directive already found at the

@@ -69,7 +69,7 @@ NOTE -- this is a generic implementation.  There is surely a vastly faster imple
 archive/issue_comments_007420.json:
 ```json
 {
-    "body": "From David Joyner:\n\n```\nI looked at it but can't figure out how to apply it to a cloned version\nof SAGE. It seems to make sense but I'd like to test it out.\nSorry for the delay. I had a final to type up and lots of grading.\n```\n",
+    "body": "From David Joyner:\n\n```\nI looked at it but can't figure out how to apply it to a cloned version\nof SAGE. It seems to make sense but I'd like to test it out.\nSorry for the delay. I had a final to type up and lots of grading.\n```",
     "created_at": "2007-11-21T12:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ I looked at it but can't figure out how to apply it to a cloned version
 of SAGE. It seems to make sense but I'd like to test it out.
 Sorry for the delay. I had a final to type up and lots of grading.
 ```
-
 
 
 

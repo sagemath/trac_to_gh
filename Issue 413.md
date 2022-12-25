@@ -3,7 +3,7 @@
 archive/issues_000413.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nOn 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:\n> I am in the process of developing a standard format that typical\n> students can follow when using the Sage notebook.  Part of this\n> pattern consists of creating cells which contain only comments, like\n> the description of a problem that is being solved.  Since comments are\n> not executable code, a person would not normally think to press\n> <shift><enter> in these cells.\n> \n> Unfortunately, if text is entered into a cell without pressing\n> <shift><enter>, this text is lost even after the \"Save\" or \"Save and\n> close\" buttons are pressed.\n> \n> Can the behavior of these buttons be changed so that all text in all\n> cells is saved when they are pressed?\n\nYes, definitely.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/413\n\n",
+    "body": "Assignee: boothby\n\n```\nOn 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:\n> I am in the process of developing a standard format that typical\n> students can follow when using the Sage notebook.  Part of this\n> pattern consists of creating cells which contain only comments, like\n> the description of a problem that is being solved.  Since comments are\n> not executable code, a person would not normally think to press\n> <shift><enter> in these cells.\n> \n> Unfortunately, if text is entered into a cell without pressing\n> <shift><enter>, this text is lost even after the \"Save\" or \"Save and\n> close\" buttons are pressed.\n> \n> Can the behavior of these buttons be changed so that all text in all\n> cells is saved when they are pressed?\n\nYes, definitely.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/413\n\n",
     "created_at": "2007-08-09T07:45:41Z",
     "labels": [
         "component: notebook"
@@ -16,7 +16,6 @@ archive/issues_000413.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 On 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:
@@ -37,7 +36,6 @@ On 8/6/07, Ted Kosan <ted.kosan@gmail.com> wrote:
 Yes, definitely.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/413
 
 
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/413
 archive/issue_comments_002029.json:
 ```json
 {
-    "body": "\n```\nI think actually whenever text in any cell has changed and\n\n   (1) the cell looses focus, or\n   (2) the user clicks \"save\",\n\nthen the contents of that cell should be sent back to the server.\nI hate entering a little comment at the top of an input\ncell before a 20-second computation, and having to re-run\nthe computation just to record the comment. \n```\n",
+    "body": "```\nI think actually whenever text in any cell has changed and\n\n   (1) the cell looses focus, or\n   (2) the user clicks \"save\",\n\nthen the contents of that cell should be sent back to the server.\nI hate entering a little comment at the top of an input\ncell before a 20-second computation, and having to re-run\nthe computation just to record the comment. \n```",
     "created_at": "2007-08-09T07:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/413",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ archive/issue_comments_002029.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 I think actually whenever text in any cell has changed and
@@ -70,7 +67,6 @@ I hate entering a little comment at the top of an input
 cell before a 20-second computation, and having to re-run
 the computation just to record the comment. 
 ```
-
 
 
 

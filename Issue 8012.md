@@ -3,7 +3,7 @@
 archive/issues_008012.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @TimDumol\n\n\n```\n    RealIntervalField(prec, sci_not, rnd):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8012\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @TimDumol\n\n```\n    RealIntervalField(prec, sci_not, rnd):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8012\n\n",
     "created_at": "2010-01-20T10:48:14Z",
     "labels": [
         "component: documentation",
@@ -20,11 +20,9 @@ Assignee: mvngu
 
 CC:  @TimDumol
 
-
 ```
     RealIntervalField(prec, sci_not, rnd):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8012
 

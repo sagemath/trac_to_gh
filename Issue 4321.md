@@ -3,7 +3,7 @@
 archive/issues_004321.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  polybori\n\nThe Unix permissions are too restrictive in sage-3.1.4, they don't allow installation on a\nmulti-user system:\n\n```\ndrwx------ 12 zimmerma cacao 4096 2008-10-17 10:13 /usr/local/sage-3.1.4/sage/local/include/boost\n-rw-------  1 zimmerma cacao 2664 2008-09-01 15:36 /usr/local/sage-3.1.4/sage/local/man/man1/ipbori.1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4321\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori\n\nThe Unix permissions are too restrictive in sage-3.1.4, they don't allow installation on a\nmulti-user system:\n\n```\ndrwx------ 12 zimmerma cacao 4096 2008-10-17 10:13 /usr/local/sage-3.1.4/sage/local/include/boost\n-rw-------  1 zimmerma cacao 2664 2008-09-01 15:36 /usr/local/sage-3.1.4/sage/local/man/man1/ipbori.1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4321\n\n",
     "created_at": "2008-10-18T20:33:42Z",
     "labels": [
         "component: distribution",
@@ -27,7 +27,6 @@ multi-user system:
 drwx------ 12 zimmerma cacao 4096 2008-10-17 10:13 /usr/local/sage-3.1.4/sage/local/include/boost
 -rw-------  1 zimmerma cacao 2664 2008-09-01 15:36 /usr/local/sage-3.1.4/sage/local/man/man1/ipbori.1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4321
 
@@ -440,7 +439,7 @@ I have looked in the spkg and it looks good.  I also tried building it and it bu
 archive/issue_comments_031600.json:
 ```json
 {
-    "body": "Replying to [comment:12 was]:\n> It seems to me Michael that you reviewed the patch, and I think putting it in the spkg is just sort of applying it.  So I think all that has to be done is somebody else to check that the spkg looks good. \n\nThere were two issues: one is the headers, the other one was the man page. Craig reviewed the header issue as well as Alexander's fix once I told him what it did.\n\n> I have looked in the spkg and it looks good.  I also tried building it and it built fine.  After building, I looked at the permissions and they are now right.  so... another positive review in addition to Craig's. :-)\n\nI did a cp of the whole Sage tree after fixing this and the Singular header permission issue and for now there are no more problems, so Paul can be assured that issue is gone for now. I will keep testing that no other permission issues return since Sage should never be released with such a permission problem.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 was]:\n> It seems to me Michael that you reviewed the patch, and I think putting it in the spkg is just sort of applying it.  So I think all that has to be done is somebody else to check that the spkg looks good. \n\n\nThere were two issues: one is the headers, the other one was the man page. Craig reviewed the header issue as well as Alexander's fix once I told him what it did.\n\n> I have looked in the spkg and it looks good.  I also tried building it and it built fine.  After building, I looked at the permissions and they are now right.  so... another positive review in addition to Craig's. :-)\n\n\nI did a cp of the whole Sage tree after fixing this and the Singular header permission issue and for now there are no more problems, so Paul can be assured that issue is gone for now. I will keep testing that no other permission issues return since Sage should never be released with such a permission problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T08:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4321",
     "type": "issue_comment",
@@ -452,9 +451,11 @@ archive/issue_comments_031600.json:
 Replying to [comment:12 was]:
 > It seems to me Michael that you reviewed the patch, and I think putting it in the spkg is just sort of applying it.  So I think all that has to be done is somebody else to check that the spkg looks good. 
 
+
 There were two issues: one is the headers, the other one was the man page. Craig reviewed the header issue as well as Alexander's fix once I told him what it did.
 
 > I have looked in the spkg and it looks good.  I also tried building it and it built fine.  After building, I looked at the permissions and they are now right.  so... another positive review in addition to Craig's. :-)
+
 
 I did a cp of the whole Sage tree after fixing this and the Singular header permission issue and for now there are no more problems, so Paul can be assured that issue is gone for now. I will keep testing that no other permission issues return since Sage should never be released with such a permission problem.
 

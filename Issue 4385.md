@@ -3,7 +3,7 @@
 archive/issues_004385.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\n\n```\nsage -t -long -optional devel/sage/sage/rings/polynomial/multi_polynomial.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/multi_polynomial.py\", line 712:\n    sage: P\nExpected:\n    A Polyhedron with 4 vertices.\nGot:\n    A Polyhedron with 3 vertices.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/multi_polynomial.py\", line 721:\n    sage: R(1).newton_polytope()\nExpected:\n    A Polyhedron with 1 vertices.\nGot:\n    A Polyhedron with 1 vertex.\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4385\n\n",
+    "body": "Assignee: mhampton\n\n```\nsage -t -long -optional devel/sage/sage/rings/polynomial/multi_polynomial.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/multi_polynomial.py\", line 712:\n    sage: P\nExpected:\n    A Polyhedron with 4 vertices.\nGot:\n    A Polyhedron with 3 vertices.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/multi_polynomial.py\", line 721:\n    sage: R(1).newton_polytope()\nExpected:\n    A Polyhedron with 1 vertices.\nGot:\n    A Polyhedron with 1 vertex.\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4385\n\n",
     "created_at": "2008-10-30T04:16:25Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_004385.json:
 }
 ```
 Assignee: mhampton
-
 
 ```
 sage -t -long -optional devel/sage/sage/rings/polynomial/multi_polynomial.pyx
@@ -37,7 +36,6 @@ Got:
     A Polyhedron with 1 vertex.
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4385
 

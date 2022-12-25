@@ -124,7 +124,7 @@ translation with all the files in the tutorial).
 archive/issue_comments_059815.json:
 ```json
 {
-    "body": "> Please close this ticket and merge it with #10165\nAlthough this never was actually closed, just for clarification this should *not* be closed since #10165 is still more of a metaticket.",
+    "body": "> Please close this ticket and merge it with #10165\n\nAlthough this never was actually closed, just for clarification this should *not* be closed since #10165 is still more of a metaticket.",
     "created_at": "2012-12-22T16:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
@@ -134,6 +134,7 @@ archive/issue_comments_059815.json:
 ```
 
 > Please close this ticket and merge it with #10165
+
 Although this never was actually closed, just for clarification this should *not* be closed since #10165 is still more of a metaticket.
 
 

@@ -87,7 +87,7 @@ We will have to wait and see.
 archive/issue_comments_075217.json:
 ```json
 {
-    "body": "As of 4.4.alpha1 or alpha2, there are several long doctests which still fail on t2:\n\n```\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py # File not found\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # File not found\n        sage -t  -long devel/sage/sage/modular/ssmod/ssmod.py # File not found\n        sage -t  -long devel/sage/sage/categories/coxeter_groups.py # File not found\n```\n\nAll but the first are timeouts; I'll increase SAGE_TIMEOUT_LONG and see what happens.  I don't know what causes the first; I'll open a ticket: #8749.\n\nAs it stands, I'm not sure what we can do about this ticket, so I'm pushing it to Sage 5.0.",
+    "body": "As of 4.4.alpha1 or alpha2, there are several long doctests which still fail on t2:\n\n```\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py # File not found\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # File not found\n        sage -t  -long devel/sage/sage/modular/ssmod/ssmod.py # File not found\n        sage -t  -long devel/sage/sage/categories/coxeter_groups.py # File not found\n```\nAll but the first are timeouts; I'll increase SAGE_TIMEOUT_LONG and see what happens.  I don't know what causes the first; I'll open a ticket: #8749.\n\nAs it stands, I'm not sure what we can do about this ticket, so I'm pushing it to Sage 5.0.",
     "created_at": "2010-04-23T05:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8409",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ As of 4.4.alpha1 or alpha2, there are several long doctests which still fail on 
         sage -t  -long devel/sage/sage/modular/ssmod/ssmod.py # File not found
         sage -t  -long devel/sage/sage/categories/coxeter_groups.py # File not found
 ```
-
 All but the first are timeouts; I'll increase SAGE_TIMEOUT_LONG and see what happens.  I don't know what causes the first; I'll open a ticket: #8749.
 
 As it stands, I'm not sure what we can do about this ticket, so I'm pushing it to Sage 5.0.
@@ -134,7 +133,7 @@ archive/issue_events_020150.json:
 archive/issue_comments_075218.json:
 ```json
 {
-    "body": "With longer SAGE_TIMEOUT_LONG, tests pass:\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\n         [2238.6 s]\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n         [3010.0 s]\nsage -t  -long devel/sage/sage/modular/ssmod/ssmod.py\n         [2336.2 s]\nsage -t  -long devel/sage/sage/categories/coxeter_groups.py\n         [3101.2 s]\n```\n\nexcept for the ones tracked at #8749 and #8750.",
+    "body": "With longer SAGE_TIMEOUT_LONG, tests pass:\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\n         [2238.6 s]\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n         [3010.0 s]\nsage -t  -long devel/sage/sage/modular/ssmod/ssmod.py\n         [2336.2 s]\nsage -t  -long devel/sage/sage/categories/coxeter_groups.py\n         [3101.2 s]\n```\nexcept for the ones tracked at #8749 and #8750.",
     "created_at": "2010-04-23T14:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8409",
     "type": "issue_comment",
@@ -155,7 +154,6 @@ sage -t  -long devel/sage/sage/modular/ssmod/ssmod.py
 sage -t  -long devel/sage/sage/categories/coxeter_groups.py
          [3101.2 s]
 ```
-
 except for the ones tracked at #8749 and #8750.
 
 

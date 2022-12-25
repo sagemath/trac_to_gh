@@ -3,7 +3,7 @@
 archive/issues_002075.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nE.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. \n\n```\nsage: R.<x> = QQ[]\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form()\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2075\n\n",
+    "body": "Assignee: @williamstein\n\nE.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. \n\n```\nsage: R.<x> = QQ[]\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form()\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2075\n\n",
     "created_at": "2008-02-06T09:58:01Z",
     "labels": [
         "component: linear algebra",
@@ -28,7 +28,6 @@ sage: a.echelon_form()
 [                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2075
 
 
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2075
 archive/issue_comments_013389.json:
 ```json
 {
-    "body": "It is the default behaviour of Sage to return the echelon form over fraction fields \n\n\n```\n#matrix2.pyx\nif not (R == ZZ or R.is_field()):\n    try:\n        E = self.matrix_over_field()\n    except TypeError:\n        raise NotImplementedError, \"Echelon form not implemented over '%s'.\"%R\n```\n\n\nso this is much more general.\n\nNote, that there is a specialised implementation for multivariate polynomials though:\n\n\n```\nsage: R.<x> = MPolynomialRing(QQ,1)\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form() # default as above\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n\nsage: a.echelon_form('row_reduction')\n[         x + 1              1              x]\n[-x^3 - x^2 + x              0       -x^3 + 1]\n\nsage: a.echelon_form('bareiss')\n[          x       x + 1           1]\n[          0 x^2 - x - 1     x^3 - 1]\n```\n",
+    "body": "It is the default behaviour of Sage to return the echelon form over fraction fields \n\n```\n#matrix2.pyx\nif not (R == ZZ or R.is_field()):\n    try:\n        E = self.matrix_over_field()\n    except TypeError:\n        raise NotImplementedError, \"Echelon form not implemented over '%s'.\"%R\n```\n\nso this is much more general.\n\nNote, that there is a specialised implementation for multivariate polynomials though:\n\n```\nsage: R.<x> = MPolynomialRing(QQ,1)\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form() # default as above\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n\nsage: a.echelon_form('row_reduction')\n[         x + 1              1              x]\n[-x^3 - x^2 + x              0       -x^3 + 1]\n\nsage: a.echelon_form('bareiss')\n[          x       x + 1           1]\n[          0 x^2 - x - 1     x^3 - 1]\n```",
     "created_at": "2008-02-06T10:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
@@ -51,7 +50,6 @@ archive/issue_comments_013389.json:
 
 It is the default behaviour of Sage to return the echelon form over fraction fields 
 
-
 ```
 #matrix2.pyx
 if not (R == ZZ or R.is_field()):
@@ -61,11 +59,9 @@ if not (R == ZZ or R.is_field()):
         raise NotImplementedError, "Echelon form not implemented over '%s'."%R
 ```
 
-
 so this is much more general.
 
 Note, that there is a specialised implementation for multivariate polynomials though:
-
 
 ```
 sage: R.<x> = MPolynomialRing(QQ,1)
@@ -85,13 +81,12 @@ sage: a.echelon_form('bareiss')
 
 
 
-
 ---
 
 archive/issue_comments_013390.json:
 ```json
 {
-    "body": "> It is the default behaviour of Sage to return the echelon form over fraction fields\n\nWell that's TERRIBLE, and needs to be changed ASAP.  It is completely wrong / inconsistent.",
+    "body": "> It is the default behaviour of Sage to return the echelon form over fraction fields\n\n\nWell that's TERRIBLE, and needs to be changed ASAP.  It is completely wrong / inconsistent.",
     "created_at": "2008-02-06T20:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
@@ -101,6 +96,7 @@ archive/issue_comments_013390.json:
 ```
 
 > It is the default behaviour of Sage to return the echelon form over fraction fields
+
 
 Well that's TERRIBLE, and needs to be changed ASAP.  It is completely wrong / inconsistent.
 

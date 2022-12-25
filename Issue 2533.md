@@ -3,7 +3,7 @@
 archive/issues_002533.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nOn Saturday 15 March 2008, Paul Zimmermann wrote:\n>        Hi,\n\n> I wonder why sage -br takes so much time after a fresh build from source\n> and make install. Normally, since everything was just compiled, it should\n> have nothing to do. I guess the reason lies in:\n\n>    bash-3.00$ make install DESTDIR=/usr/local/sage-2.10.3 -n\n>    ...\n>    cp -rv * /usr/local/sage-2.10.3/sage/\n>    ...\n\n> where 'cp' does not preserve the dates of the files, and thus the correct\n> dependencies are lost. Maybe \"mv * /usr/local/sage-2.10.3/sage/\" would\n> solve that problem?\n\nOr use\n    cp -prv * ...\nthe -p option preserve timestamps.\n\nBill\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2533\n\n",
+    "body": "Assignee: mabshoff\n\n```\nOn Saturday 15 March 2008, Paul Zimmermann wrote:\n>        Hi,\n\n> I wonder why sage -br takes so much time after a fresh build from source\n> and make install. Normally, since everything was just compiled, it should\n> have nothing to do. I guess the reason lies in:\n\n>    bash-3.00$ make install DESTDIR=/usr/local/sage-2.10.3 -n\n>    ...\n>    cp -rv * /usr/local/sage-2.10.3/sage/\n>    ...\n\n> where 'cp' does not preserve the dates of the files, and thus the correct\n> dependencies are lost. Maybe \"mv * /usr/local/sage-2.10.3/sage/\" would\n> solve that problem?\n\nOr use\n    cp -prv * ...\nthe -p option preserve timestamps.\n\nBill\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2533\n\n",
     "created_at": "2008-03-15T22:15:35Z",
     "labels": [
         "component: build",
@@ -17,7 +17,6 @@ archive/issues_002533.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 On Saturday 15 March 2008, Paul Zimmermann wrote:
@@ -42,7 +41,6 @@ the -p option preserve timestamps.
 
 Bill
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2533
 

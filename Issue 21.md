@@ -317,7 +317,7 @@ sagenb repo
 archive/issue_comments_000094.json:
 ```json
 {
-    "body": "Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by @jhpalmieri created at 2010-03-19 15:50:37\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
+    "body": "Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by @jhpalmieri created at 2010-03-19 15:50:37\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
     "created_at": "2010-03-19T15:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -337,7 +337,6 @@ if [ "$SAGE_LOCAL" = "" ]; then
    exit 1
 fi
 ```
-
 should be changed to "Maybe run 'sage --sh'?", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.
 
 This approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.
@@ -355,7 +354,6 @@ I propose the following approach, whether using these patches or other ones:
     To bypass this message, set the environment variable 
     $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. 
 ```
-
  Running "sage" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) 
 
 - after a while, we switch this to 
@@ -369,7 +367,6 @@ I propose the following approach, whether using these patches or other ones:
     to avoid seeing this message), set the environment variable 
     $SAGE_NEW_OPTIONS to something nonempty. 
 ```
-
  perhaps with no easy way of disabling this message while using old-style options. 
 
 - finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. 
@@ -419,7 +416,7 @@ Changing priority from minor to critical.
 archive/issue_comments_000097.json:
 ```json
 {
-    "body": "I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\nThis is to speed up access to these programs: do a check like this in a shell script, and then pass the rest of the arguments to Python's optparse using the script included in this patch, or one like it.  Then you avoid the slight delay involved in starting up Python if you want to run \"gp\".  It would be nice to have a shell script which had a list of strings \"gp\", \"gap\", etc., checked to see if the first(?) argument was \"--STR\" for STR in this list, and if so, run the appropriate program from SAGE_LOCAL/lib, passing the rest of the line as arguments.  Having one list containing all of these strings would make it easy to customize.",
+    "body": "I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\nThis is to speed up access to these programs: do a check like this in a shell script, and then pass the rest of the arguments to Python's optparse using the script included in this patch, or one like it.  Then you avoid the slight delay involved in starting up Python if you want to run \"gp\".  It would be nice to have a shell script which had a list of strings \"gp\", \"gap\", etc., checked to see if the first(?) argument was \"--STR\" for STR in this list, and if so, run the appropriate program from SAGE_LOCAL/lib, passing the rest of the line as arguments.  Having one list containing all of these strings would make it easy to customize.",
     "created_at": "2010-03-19T20:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -436,7 +433,6 @@ and do those before doing the general option parsing.   I.e., just do
 what you already planned, but with one optimization to deal with this 
 use case. 
 ```
-
 This is to speed up access to these programs: do a check like this in a shell script, and then pass the rest of the arguments to Python's optparse using the script included in this patch, or one like it.  Then you avoid the slight delay involved in starting up Python if you want to run "gp".  It would be nice to have a shell script which had a list of strings "gp", "gap", etc., checked to see if the first(?) argument was "--STR" for STR in this list, and if so, run the appropriate program from SAGE_LOCAL/lib, passing the rest of the line as arguments.  Having one list containing all of these strings would make it easy to customize.
 
 
@@ -466,7 +462,7 @@ the file SAGE_ROOT/sage
 archive/issue_comments_000099.json:
 ```json
 {
-    "body": "Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by @jhpalmieri created at 2010-03-19 21:22:45\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
+    "body": "Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by @jhpalmieri created at 2010-03-19 21:22:45\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n{{{\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n}}}\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
     "created_at": "2010-03-19T21:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -480,13 +476,12 @@ Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) 
 Replying to [comment:10 jhpalmieri]:
 > I've marked this as "needs review", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:
 
-```
+{{{
 Another possibility might be to first check for "--gp", "--gap", etc., 
 and do those before doing the general option parsing.   I.e., just do 
 what you already planned, but with one optimization to deal with this 
 use case. 
-```
-
+}}}
 
 Okay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.
 
@@ -589,7 +584,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_000105.json:
 ```json
 {
-    "body": "I'm changing this back to needs review.  I realized when trying to apply it that I had got confused about how to even apply this.\n\nJohn, can you please post clear directions about how to use the patches attached to this ticket?\n\n\n```\n\nsage: hg_scripts.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/21/trac_21-scripts.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/21/trac_21-scripts.patch\nLoading: [..........]\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg status\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg status\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/22653/tmp_0.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/22653/tmp_0.patch\npatching file sage-pkg\nHunk #1 FAILED at 40\nHunk #2 FAILED at 63\n2 out of 2 hunks FAILED -- saving rejects to file sage-pkg.rej\npatching file sage-run\nHunk #1 FAILED at 17\n1 out of 1 hunks FAILED -- saving rejects to file sage-run.rej\npatching file sage-sage\nHunk #2 FAILED at 34\nHunk #3 FAILED at 196\nHunk #4 FAILED at 212\nHunk #5 FAILED at 424\nHunk #6 FAILED at 450\nHunk #8 FAILED at 608\nHunk #9 FAILED at 744\nHunk #10 FAILED at 767\nHunk #11 succeeded at 894 with fuzz 1 (offset 0 lines).\n8 out of 11 hunks FAILED -- saving rejects to file sage-sage.rej\nabort: patch failed to apply\n```\n",
+    "body": "I'm changing this back to needs review.  I realized when trying to apply it that I had got confused about how to even apply this.\n\nJohn, can you please post clear directions about how to use the patches attached to this ticket?\n\n```\n\nsage: hg_scripts.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/21/trac_21-scripts.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/21/trac_21-scripts.patch\nLoading: [..........]\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg status\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg status\ncd \"/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha2/local/bin\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/22653/tmp_0.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/22653/tmp_0.patch\npatching file sage-pkg\nHunk #1 FAILED at 40\nHunk #2 FAILED at 63\n2 out of 2 hunks FAILED -- saving rejects to file sage-pkg.rej\npatching file sage-run\nHunk #1 FAILED at 17\n1 out of 1 hunks FAILED -- saving rejects to file sage-run.rej\npatching file sage-sage\nHunk #2 FAILED at 34\nHunk #3 FAILED at 196\nHunk #4 FAILED at 212\nHunk #5 FAILED at 424\nHunk #6 FAILED at 450\nHunk #8 FAILED at 608\nHunk #9 FAILED at 744\nHunk #10 FAILED at 767\nHunk #11 succeeded at 894 with fuzz 1 (offset 0 lines).\n8 out of 11 hunks FAILED -- saving rejects to file sage-sage.rej\nabort: patch failed to apply\n```",
     "created_at": "2010-06-03T04:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -601,7 +596,6 @@ archive/issue_comments_000105.json:
 I'm changing this back to needs review.  I realized when trying to apply it that I had got confused about how to even apply this.
 
 John, can you please post clear directions about how to use the patches attached to this ticket?
-
 
 ```
 
@@ -632,7 +626,6 @@ Hunk #11 succeeded at 894 with fuzz 1 (offset 0 lines).
 8 out of 11 hunks FAILED -- saving rejects to file sage-sage.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -679,7 +672,7 @@ sage repo
 archive/issue_comments_000108.json:
 ```json
 {
-    "body": "Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by @jhpalmieri created at 2010-06-03 06:04:06\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
+    "body": "Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by @jhpalmieri created at 2010-06-03 06:04:06\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
     "created_at": "2010-06-03T06:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -691,6 +684,7 @@ archive/issue_comments_000108.json:
 Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by @jhpalmieri created at 2010-06-03 06:04:06
 
 > John, can you please post clear directions about how to use the patches attached to this ticket?
+
 
 Sorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.
 
@@ -869,7 +863,7 @@ People CC'd to this ticket probably already know this, but the above mentioned #
 archive/issue_comments_000118.json:
 ```json
 {
-    "body": "Replying to [comment:26 kini]:\n> People CC'd to this ticket probably already know this, but the above mentioned #9958 is merged, so we can use Python 2.7 default modules such as argparse now.\n\nYup, I've started working on this, but its going to take awhile... :)",
+    "body": "Replying to [comment:26 kini]:\n> People CC'd to this ticket probably already know this, but the above mentioned #9958 is merged, so we can use Python 2.7 default modules such as argparse now.\n\n\nYup, I've started working on this, but its going to take awhile... :)",
     "created_at": "2012-01-24T17:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -880,6 +874,7 @@ archive/issue_comments_000118.json:
 
 Replying to [comment:26 kini]:
 > People CC'd to this ticket probably already know this, but the above mentioned #9958 is merged, so we can use Python 2.7 default modules such as argparse now.
+
 
 Yup, I've started working on this, but its going to take awhile... :)
 
@@ -910,7 +905,7 @@ I was planning on diving into the scripts dir myself and trying to work on this,
 archive/issue_comments_000120.json:
 ```json
 {
-    "body": "Replying to [comment:28 kini]:\n> Capital! :) As it's a large project maybe you could post WIPs once in a while?\n\nNo problem, once I have something of any real substance, I'll be sure to post it somewhere.\n\n> I was planning on diving into the scripts dir myself and trying to work on this, but I guess it should be an order of magnitude easier for you, haha. Still, let me know if I can help with anything.\n\nWell, I'm just starting and have had a busy week with other stuff, so you would probably be in about as good of position as myself, especially since we need to rebase this off of the 5.0 dev builds, which changed a lot of that stuff anyway.\n\nI'm finding myself annoyed at spkg/script, and all the little special cases that we have. I really just want to rip that out and try to have a (more) unified design to our parsing. My current fancy is to introduce a bunch of subcommands, like mercurial or aptitude. Some of the ones I've thought about:\n\n```\n% sage ARGS # this would be for running sage scripts, or a couple of oddball arguments\n% sage notebook ARGS\n% sage pkg ARGS # this would include spkg stuff\n% sage pkg install # since install has some special flags like -f or -s\n% sage test ARGS\n% sage build ARGS\n% sage {python,sqlite3,R,gp,...} ARGS # we can consider these programs as subcommands of sage\n```\n\nI haven't fully worked out what this would look like with all the arguments (such as debugging), but IMO it would greatly clean up our command line tools. Also, this would simplify many aspects of the implementation, although some hacking of argparse will still have to be done (it currently doesn't support optional subparsers, see [http://bugs.python.org/issue9253](http://bugs.python.org/issue9253)).\n\nI probably should bring this up on the devel list, but I'm tired and should go to bed before I have to be up in the morning :/.",
+    "body": "Replying to [comment:28 kini]:\n> Capital! :) As it's a large project maybe you could post WIPs once in a while?\n\n\nNo problem, once I have something of any real substance, I'll be sure to post it somewhere.\n\n> I was planning on diving into the scripts dir myself and trying to work on this, but I guess it should be an order of magnitude easier for you, haha. Still, let me know if I can help with anything.\n\n\nWell, I'm just starting and have had a busy week with other stuff, so you would probably be in about as good of position as myself, especially since we need to rebase this off of the 5.0 dev builds, which changed a lot of that stuff anyway.\n\nI'm finding myself annoyed at spkg/script, and all the little special cases that we have. I really just want to rip that out and try to have a (more) unified design to our parsing. My current fancy is to introduce a bunch of subcommands, like mercurial or aptitude. Some of the ones I've thought about:\n\n```\n% sage ARGS # this would be for running sage scripts, or a couple of oddball arguments\n% sage notebook ARGS\n% sage pkg ARGS # this would include spkg stuff\n% sage pkg install # since install has some special flags like -f or -s\n% sage test ARGS\n% sage build ARGS\n% sage {python,sqlite3,R,gp,...} ARGS # we can consider these programs as subcommands of sage\n```\nI haven't fully worked out what this would look like with all the arguments (such as debugging), but IMO it would greatly clean up our command line tools. Also, this would simplify many aspects of the implementation, although some hacking of argparse will still have to be done (it currently doesn't support optional subparsers, see [http://bugs.python.org/issue9253](http://bugs.python.org/issue9253)).\n\nI probably should bring this up on the devel list, but I'm tired and should go to bed before I have to be up in the morning :/.",
     "created_at": "2012-01-26T10:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -922,9 +917,11 @@ archive/issue_comments_000120.json:
 Replying to [comment:28 kini]:
 > Capital! :) As it's a large project maybe you could post WIPs once in a while?
 
+
 No problem, once I have something of any real substance, I'll be sure to post it somewhere.
 
 > I was planning on diving into the scripts dir myself and trying to work on this, but I guess it should be an order of magnitude easier for you, haha. Still, let me know if I can help with anything.
+
 
 Well, I'm just starting and have had a busy week with other stuff, so you would probably be in about as good of position as myself, especially since we need to rebase this off of the 5.0 dev builds, which changed a lot of that stuff anyway.
 
@@ -939,7 +936,6 @@ I'm finding myself annoyed at spkg/script, and all the little special cases that
 % sage build ARGS
 % sage {python,sqlite3,R,gp,...} ARGS # we can consider these programs as subcommands of sage
 ```
-
 I haven't fully worked out what this would look like with all the arguments (such as debugging), but IMO it would greatly clean up our command line tools. Also, this would simplify many aspects of the implementation, although some hacking of argparse will still have to be done (it currently doesn't support optional subparsers, see [http://bugs.python.org/issue9253](http://bugs.python.org/issue9253)).
 
 I probably should bring this up on the devel list, but I'm tired and should go to bed before I have to be up in the morning :/.
@@ -1006,7 +1002,7 @@ patchbot: apply 21-scripts-4.6.1.alpha1.patch
 archive/issue_comments_000123.json:
 ```json
 {
-    "body": "Going with `argparse` is probably a good idea, but I would still like a special \"pre-parser\" in `bash` to handle to options\n\n```\nsage --sh\nsage -i\nsage -f\n```\n\n(or whatever version they will become)\n\nI think these must be available from the start, before Python has been built.",
+    "body": "Going with `argparse` is probably a good idea, but I would still like a special \"pre-parser\" in `bash` to handle to options\n\n```\nsage --sh\nsage -i\nsage -f\n```\n(or whatever version they will become)\n\nI think these must be available from the start, before Python has been built.",
     "created_at": "2013-01-24T13:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1022,7 +1018,6 @@ sage --sh
 sage -i
 sage -f
 ```
-
 (or whatever version they will become)
 
 I think these must be available from the start, before Python has been built.
@@ -1170,7 +1165,7 @@ The benefit of doing this is that the entire normal startup chain of Sage can be
 archive/issue_comments_000131.json:
 ```json
 {
-    "body": "Doesn't this contradict?\n\nReplying to [comment:35 jhpalmieri]:\n> William, among others, as alluded to [comment:11 above], was pretty insistent that commands like `sage --gp` execute quickly, without the overhead that starting Python entails.\n\nReplying to [comment:39 kini]:\n> `sage` is a Python script.",
+    "body": "Doesn't this contradict?\n\nReplying to [comment:35 jhpalmieri]:\n> William, among others, as alluded to [comment:11 above], was pretty insistent that commands like `sage --gp` execute quickly, without the overhead that starting Python entails.\n\n\nReplying to [comment:39 kini]:\n> `sage` is a Python script.",
     "created_at": "2013-01-24T20:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1183,6 +1178,7 @@ Doesn't this contradict?
 
 Replying to [comment:35 jhpalmieri]:
 > William, among others, as alluded to [comment:11 above], was pretty insistent that commands like `sage --gp` execute quickly, without the overhead that starting Python entails.
+
 
 Replying to [comment:39 kini]:
 > `sage` is a Python script.
@@ -1235,7 +1231,7 @@ But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Pyt
 archive/issue_comments_000134.json:
 ```json
 {
-    "body": "Replying to [comment:42 jdemeyer]:\n> But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.\nDefinitely short term I don't think it is realistic to make the entire startup entirely python because we don't have any python module to setup a suitable environment, however I think it would be good to still make separate out sage-sh:\n\nSpecifically I would have the root level sage script be (more or less)\n\n\n```/usr/bin/env sh\n\n\"$0-sh\" -c \"sage $*\"\n```\n\n\nand have `SAGE_LOCAL/bin/sage` be a pure python script.",
+    "body": "Replying to [comment:42 jdemeyer]:\n> But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.\n\nDefinitely short term I don't think it is realistic to make the entire startup entirely python because we don't have any python module to setup a suitable environment, however I think it would be good to still make separate out sage-sh:\n\nSpecifically I would have the root level sage script be (more or less)\n\n```/usr/bin/env sh\n\n\"$0-sh\" -c \"sage $*\"\n```\n\nand have `SAGE_LOCAL/bin/sage` be a pure python script.",
     "created_at": "2013-01-24T21:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1246,16 +1242,15 @@ archive/issue_comments_000134.json:
 
 Replying to [comment:42 jdemeyer]:
 > But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.
+
 Definitely short term I don't think it is realistic to make the entire startup entirely python because we don't have any python module to setup a suitable environment, however I think it would be good to still make separate out sage-sh:
 
 Specifically I would have the root level sage script be (more or less)
-
 
 ```/usr/bin/env sh
 
 "$0-sh" -c "sage $*"
 ```
-
 
 and have `SAGE_LOCAL/bin/sage` be a pure python script.
 
@@ -1284,7 +1279,7 @@ Given that part of the startup needs to be `bash` anyway (I actually think `bash
 archive/issue_comments_000136.json:
 ```json
 {
-    "body": "Replying to [comment:42 jdemeyer]:\n> But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.\n\nRight, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n\nThe problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\n\nIn any case, if I as a new Sage developer want to know or modify what option `--foo` does, there should be one obvious place to look for it. Making `sage-sh` parse arguments also means that we are shadowing arguments that could be passed on to the shell, etc. etc. Splitting argument parsing into two places is just generally a nasty design IMHO.\n\nWhy does part of the startup need to be bash, other than because of `sage-env`?",
+    "body": "Replying to [comment:42 jdemeyer]:\n> But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.\n\n\nRight, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n\nThe problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\n\nIn any case, if I as a new Sage developer want to know or modify what option `--foo` does, there should be one obvious place to look for it. Making `sage-sh` parse arguments also means that we are shadowing arguments that could be passed on to the shell, etc. etc. Splitting argument parsing into two places is just generally a nasty design IMHO.\n\nWhy does part of the startup need to be bash, other than because of `sage-env`?",
     "created_at": "2013-01-24T22:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1295,6 +1290,7 @@ archive/issue_comments_000136.json:
 
 Replying to [comment:42 jdemeyer]:
 > But what about `sage-env` then?  That's needed by `sage-sh`, so it cannot be Python-based.
+
 
 Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.
 
@@ -1311,7 +1307,7 @@ Why does part of the startup need to be bash, other than because of `sage-env`?
 archive/issue_comments_000137.json:
 ```json
 {
-    "body": "Replying to [comment:45 kini]:\n> Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n\nAre you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?\n> \n> The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\n\nAlso\n* argparse/optparse handles help functionality (consistent formatting), so all pre-parsed commands would still need stubs in argparse/optparse (and -1 for code duplication)\n* argparse (and maybe optparse) matches subcommands so long as they are not ambiguous. So if (for instance) sage only had the subcommands foo and bar then `sage f [args]` would be expanded to `sage foo [args]`. (this is fairly standard for software with subcommands) This functionality would be inconsistent if there were any pre-parsed commands.\n> In any case, if I as a new Sage developer want to know or modify what option `--foo` does, there should be one obvious place to look for it. Making `sage-sh` parse arguments also means that we are shadowing arguments that could be passed on to the shell, etc. etc. Splitting argument parsing into two places is just generally a nasty design IMHO.\n+1\n\n> Why does part of the startup need to be bash, other than because of `sage-env`?\n\nFor one of two reasons:\n\n* python may not be in `PATH` because python is not currently a dependency\n* even if python is in `PATH`, sage may not work with the default python",
+    "body": "Replying to [comment:45 kini]:\n> Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n\n\nAre you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?\n> \n> The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\n\n\nAlso\n* argparse/optparse handles help functionality (consistent formatting), so all pre-parsed commands would still need stubs in argparse/optparse (and -1 for code duplication)\n* argparse (and maybe optparse) matches subcommands so long as they are not ambiguous. So if (for instance) sage only had the subcommands foo and bar then `sage f [args]` would be expanded to `sage foo [args]`. (this is fairly standard for software with subcommands) This functionality would be inconsistent if there were any pre-parsed commands.\n> In any case, if I as a new Sage developer want to know or modify what option `--foo` does, there should be one obvious place to look for it. Making `sage-sh` parse arguments also means that we are shadowing arguments that could be passed on to the shell, etc. etc. Splitting argument parsing into two places is just generally a nasty design IMHO.\n\n+1\n\n> Why does part of the startup need to be bash, other than because of `sage-env`?\n\n\nFor one of two reasons:\n\n* python may not be in `PATH` because python is not currently a dependency\n* even if python is in `PATH`, sage may not work with the default python",
     "created_at": "2013-01-25T02:33:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1323,17 +1319,21 @@ archive/issue_comments_000137.json:
 Replying to [comment:45 kini]:
 > Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.
 
+
 Are you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?
 > 
 > The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.
+
 
 Also
 * argparse/optparse handles help functionality (consistent formatting), so all pre-parsed commands would still need stubs in argparse/optparse (and -1 for code duplication)
 * argparse (and maybe optparse) matches subcommands so long as they are not ambiguous. So if (for instance) sage only had the subcommands foo and bar then `sage f [args]` would be expanded to `sage foo [args]`. (this is fairly standard for software with subcommands) This functionality would be inconsistent if there were any pre-parsed commands.
 > In any case, if I as a new Sage developer want to know or modify what option `--foo` does, there should be one obvious place to look for it. Making `sage-sh` parse arguments also means that we are shadowing arguments that could be passed on to the shell, etc. etc. Splitting argument parsing into two places is just generally a nasty design IMHO.
+
 +1
 
 > Why does part of the startup need to be bash, other than because of `sage-env`?
+
 
 For one of two reasons:
 
@@ -1347,7 +1347,7 @@ For one of two reasons:
 archive/issue_comments_000138.json:
 ```json
 {
-    "body": "Replying to [comment:46 ohanar]:\n> Replying to [comment:45 kini]:\n> > Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n> \n> Are you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?\n\nIt should store the current startup environment. It would change if the root directory of Sage is moved, for example, yes. But if a user decided to change an environment variable in a Sage session with `os.environ` that wouldn't become reflected in the file, of course.\n\n> > Why does part of the startup need to be bash, other than because of `sage-env`?\n> \n> For one of two reasons:\n> \n>  * python may not be in `PATH` because python is not currently a dependency\n>  * even if python is in `PATH`, sage may not work with the default python\n\nOh, right, of course. So then yes, `sage` should be bootstrapped in the way you described [comment:43 above].",
+    "body": "Replying to [comment:46 ohanar]:\n> Replying to [comment:45 kini]:\n> > Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.\n\n> \n> Are you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?\n\n\nIt should store the current startup environment. It would change if the root directory of Sage is moved, for example, yes. But if a user decided to change an environment variable in a Sage session with `os.environ` that wouldn't become reflected in the file, of course.\n\n> > Why does part of the startup need to be bash, other than because of `sage-env`?\n\n> \n> For one of two reasons:\n> \n> * python may not be in `PATH` because python is not currently a dependency\n> * even if python is in `PATH`, sage may not work with the default python\n\n\nOh, right, of course. So then yes, `sage` should be bootstrapped in the way you described [comment:43 above].",
     "created_at": "2013-01-25T07:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1359,17 +1359,21 @@ archive/issue_comments_000138.json:
 Replying to [comment:46 ohanar]:
 > Replying to [comment:45 kini]:
 > > Right, we might have a very thin bash wrapper that loads `sage-env` (which will be a bash script) before the main Python script. Or, since `sage-env` ideally should just set up environment variables and do nothing else (right?), we could turn it into a config file that was read independently by `sage-sh` and by `sage`. This would also allow us to rely less on environment variables for random things seemingly unrelated to the shell.
+
 > 
 > Are you saying that a configuration file should store the current environment? And that anytime it is changed (such as if the root directory of sage is moved) that this should be updated?
+
 
 It should store the current startup environment. It would change if the root directory of Sage is moved, for example, yes. But if a user decided to change an environment variable in a Sage session with `os.environ` that wouldn't become reflected in the file, of course.
 
 > > Why does part of the startup need to be bash, other than because of `sage-env`?
+
 > 
 > For one of two reasons:
 > 
->  * python may not be in `PATH` because python is not currently a dependency
->  * even if python is in `PATH`, sage may not work with the default python
+> * python may not be in `PATH` because python is not currently a dependency
+> * even if python is in `PATH`, sage may not work with the default python
+
 
 Oh, right, of course. So then yes, `sage` should be bootstrapped in the way you described [comment:43 above].
 
@@ -1380,7 +1384,7 @@ Oh, right, of course. So then yes, `sage` should be bootstrapped in the way you 
 archive/issue_comments_000139.json:
 ```json
 {
-    "body": "Replying to [comment:45 kini]:\n> Or, since `sage-env` ideally should just set up environment variables and do nothing else\nWell, some of these environment variables are conditional, so it's not that easy to have a file which works both from bash and from Python.  And I certainly don't see it as a problem that `sage-env` remains in `bash` as it is now.\n\n> The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\nAll these arguments are essentially irrelevant if the first pass needs to support just very few options.  Things like `./sage -tp` or `./sage -pt` would be handled anyway by the `argparse` script.\n\nOf course it's bad design to have two-pass argument parsing, but it would be so nice to keep `./sage -i` and `./sage --sh` working.\n\n> Why does part of the startup need to be bash, other than because of `sage-env`?\nI think `sage-env` is the main reason.",
+    "body": "Replying to [comment:45 kini]:\n> Or, since `sage-env` ideally should just set up environment variables and do nothing else\n\nWell, some of these environment variables are conditional, so it's not that easy to have a file which works both from bash and from Python.  And I certainly don't see it as a problem that `sage-env` remains in `bash` as it is now.\n\n> The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.\n\nAll these arguments are essentially irrelevant if the first pass needs to support just very few options.  Things like `./sage -tp` or `./sage -pt` would be handled anyway by the `argparse` script.\n\nOf course it's bad design to have two-pass argument parsing, but it would be so nice to keep `./sage -i` and `./sage --sh` working.\n\n> Why does part of the startup need to be bash, other than because of `sage-env`?\n\nI think `sage-env` is the main reason.",
     "created_at": "2013-01-25T07:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1391,14 +1395,17 @@ archive/issue_comments_000139.json:
 
 Replying to [comment:45 kini]:
 > Or, since `sage-env` ideally should just set up environment variables and do nothing else
+
 Well, some of these environment variables are conditional, so it's not that easy to have a file which works both from bash and from Python.  And I certainly don't see it as a problem that `sage-env` remains in `bash` as it is now.
 
 > The problem with having two-pass argument parsing is that it separates the processing of arguments into multiple areas, making the architecture of the startup process needlessly complex. It is also pretty ugly to actually do this in the standard option parsing way because either you start to want to enforce arbitrary argument orders like we currently do (`sage -tp` works and `sage -pt` doesn't, `sage -br` works and `sage -rb` doesn't, etc.), or now the bash script needs to basically reimplement optparse/argparse in bash in order to correctly read the flags it's looking for.
+
 All these arguments are essentially irrelevant if the first pass needs to support just very few options.  Things like `./sage -tp` or `./sage -pt` would be handled anyway by the `argparse` script.
 
 Of course it's bad design to have two-pass argument parsing, but it would be so nice to keep `./sage -i` and `./sage --sh` working.
 
 > Why does part of the startup need to be bash, other than because of `sage-env`?
+
 I think `sage-env` is the main reason.
 
 
@@ -1598,7 +1605,7 @@ Still reading up on this ticket, and don't have any comments to add yet to the e
 archive/issue_comments_000143.json:
 ```json
 {
-    "body": "William Stein and I were just talking about this idea yesterday. Something like this?\n\n```\nsage FILE.[sage|py|spyx]\n\nsage help\nsage help --advanced?\n\nsage -c <CMD>\n\nsage package config\nsage package name <TARBALL>\nsage package list\nsage package list standard\nsage package list optional\nsage package list experimental\nsage package apropos\nsage package download\nsage package update\nsage package fix-checksum\nsage package create\n\nsage install <PKGS>\n  options: [-f, --force] [-c, --check] [-d, --download] [-s, --save]\n   [-y, --yes] [-n, --no] [--no-dependency] [-i, --info]\n\nsage pip\n\nsage gap\nsage gap3\nsage gp\nsage maxima\nsage python\nsage python3\nsage ipython\nsage ipython3 (not yet implemented)\nsage R\nsage singular\nsage git\nsage cython\nsage cleaner\nsage ecl\nsage gdb\nsage kash\nsage lisp\nsage M2\nsage mwrank\nsage polymake\nsage scons\nsage sqlite3\nsage twistd\n\nsage shell\n\nsage notebook=[default|ssagenb|jupyter|export|jupyterlab|ipython]\n  options: --log=...\n\nsage notebook rst2ipynb ...\nsage notebook rst2txt ...\nsage notebook rst2sws ...\nsage notebook sws2rst ...\n\nsage test FILES\nsage test --all\n  options: --long, --verbose, --optional, --sagenb, --help,\n  [-p|--parallel], --randorder[=seed], --new, --initial, --debug,\n  --failed, --warn-long [timeout]\n\nsage preparse <FILE>\nsage startuptime\nsage coverage [-a, --all]\nsage search? search_src? search_doc? grep? grep_doc?\n\nsage sdist\nsage valgrind [--cacherind] [--callgrind] [--massif] [--memcheck] [--omega]\n\nsage docbuild\n  options: (run sage --docbuild --help to see)\n\nsage --nodotsage\nsage --root\nsage -q\nsage --min\nsage [-v, --version]\nsage dumpversion?\n\nsage fixdoctests ...\n\nsage build\nsage build --force\nsage build test?  (currently sage -bt ...)\nsage build run?  (currently sage -br)\n```\n\nMaybe some of these can be removed. Maybe some can be consolidated: do we need separate commands for gap, gp, maxima, ecl, R, etc., or can they be combined under a single command, like \"sage run <PROGRAM>\"? There is endless bikeshedding available.",
+    "body": "William Stein and I were just talking about this idea yesterday. Something like this?\n\n```\nsage FILE.[sage|py|spyx]\n\nsage help\nsage help --advanced?\n\nsage -c <CMD>\n\nsage package config\nsage package name <TARBALL>\nsage package list\nsage package list standard\nsage package list optional\nsage package list experimental\nsage package apropos\nsage package download\nsage package update\nsage package fix-checksum\nsage package create\n\nsage install <PKGS>\n  options: [-f, --force] [-c, --check] [-d, --download] [-s, --save]\n   [-y, --yes] [-n, --no] [--no-dependency] [-i, --info]\n\nsage pip\n\nsage gap\nsage gap3\nsage gp\nsage maxima\nsage python\nsage python3\nsage ipython\nsage ipython3 (not yet implemented)\nsage R\nsage singular\nsage git\nsage cython\nsage cleaner\nsage ecl\nsage gdb\nsage kash\nsage lisp\nsage M2\nsage mwrank\nsage polymake\nsage scons\nsage sqlite3\nsage twistd\n\nsage shell\n\nsage notebook=[default|ssagenb|jupyter|export|jupyterlab|ipython]\n  options: --log=...\n\nsage notebook rst2ipynb ...\nsage notebook rst2txt ...\nsage notebook rst2sws ...\nsage notebook sws2rst ...\n\nsage test FILES\nsage test --all\n  options: --long, --verbose, --optional, --sagenb, --help,\n  [-p|--parallel], --randorder[=seed], --new, --initial, --debug,\n  --failed, --warn-long [timeout]\n\nsage preparse <FILE>\nsage startuptime\nsage coverage [-a, --all]\nsage search? search_src? search_doc? grep? grep_doc?\n\nsage sdist\nsage valgrind [--cacherind] [--callgrind] [--massif] [--memcheck] [--omega]\n\nsage docbuild\n  options: (run sage --docbuild --help to see)\n\nsage --nodotsage\nsage --root\nsage -q\nsage --min\nsage [-v, --version]\nsage dumpversion?\n\nsage fixdoctests ...\n\nsage build\nsage build --force\nsage build test?  (currently sage -bt ...)\nsage build run?  (currently sage -br)\n```\nMaybe some of these can be removed. Maybe some can be consolidated: do we need separate commands for gap, gp, maxima, ecl, R, etc., or can they be combined under a single command, like \"sage run <PROGRAM>\"? There is endless bikeshedding available.",
     "created_at": "2017-06-01T17:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1700,7 +1707,6 @@ sage build --force
 sage build test?  (currently sage -bt ...)
 sage build run?  (currently sage -br)
 ```
-
 Maybe some of these can be removed. Maybe some can be consolidated: do we need separate commands for gap, gp, maxima, ecl, R, etc., or can they be combined under a single command, like "sage run <PROGRAM>"? There is endless bikeshedding available.
 
 
@@ -1756,7 +1762,7 @@ archive/issue_comments_000145.json:
 archive/issue_comments_000146.json:
 ```json
 {
-    "body": "Replying to [comment:55 embray]:\n> E.g. replace `sage -t` with `sage test`.\n\nWhat about `sage -btp`? I use that all the time. I would hate it if that would become\n`sage buildtest -p` or worse, `make build && sage test -p`.",
+    "body": "Replying to [comment:55 embray]:\n> E.g. replace `sage -t` with `sage test`.\n\n\nWhat about `sage -btp`? I use that all the time. I would hate it if that would become\n`sage buildtest -p` or worse, `make build && sage test -p`.",
     "created_at": "2017-06-02T13:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1768,6 +1774,7 @@ archive/issue_comments_000146.json:
 Replying to [comment:55 embray]:
 > E.g. replace `sage -t` with `sage test`.
 
+
 What about `sage -btp`? I use that all the time. I would hate it if that would become
 `sage buildtest -p` or worse, `make build && sage test -p`.
 
@@ -1778,7 +1785,7 @@ What about `sage -btp`? I use that all the time. I would hate it if that would b
 archive/issue_comments_000147.json:
 ```json
 {
-    "body": "We should also think to what extent the build system should be exposed under the `sage` command. For example, we now have\n\n```\nmake FOO         # Build dependencies of FOO + FOO\nsage -i FOO      # Build toolchain + dependencies of FOO + FOO\nsage -f FOO      # Build toolchain + dependencies of FOO + *rebuild* FOO\nsage -p FOO      # Build FOO *without* dependencies\n```\n\nand\n\n```\nmake sagelib     # Build Sage library with dependencies\nsage -i sagelib  # Build Sage library with toolchain and dependencies\nsage -b          # Build Sage library *without* dependencies\nsage -f sagelib  # Rebuild all of the Sage library with toolchain and dependencies\nsage -ba         # Rebuild all of the Sage library *without* dependencies\n```\n\n\nThis is all for historical and accidental reasons, but this ticket should clean that up too.",
+    "body": "We should also think to what extent the build system should be exposed under the `sage` command. For example, we now have\n\n```\nmake FOO         # Build dependencies of FOO + FOO\nsage -i FOO      # Build toolchain + dependencies of FOO + FOO\nsage -f FOO      # Build toolchain + dependencies of FOO + *rebuild* FOO\nsage -p FOO      # Build FOO *without* dependencies\n```\nand\n\n```\nmake sagelib     # Build Sage library with dependencies\nsage -i sagelib  # Build Sage library with toolchain and dependencies\nsage -b          # Build Sage library *without* dependencies\nsage -f sagelib  # Rebuild all of the Sage library with toolchain and dependencies\nsage -ba         # Rebuild all of the Sage library *without* dependencies\n```\n\nThis is all for historical and accidental reasons, but this ticket should clean that up too.",
     "created_at": "2017-06-02T13:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1795,7 +1802,6 @@ sage -i FOO      # Build toolchain + dependencies of FOO + FOO
 sage -f FOO      # Build toolchain + dependencies of FOO + *rebuild* FOO
 sage -p FOO      # Build FOO *without* dependencies
 ```
-
 and
 
 ```
@@ -1805,7 +1811,6 @@ sage -b          # Build Sage library *without* dependencies
 sage -f sagelib  # Rebuild all of the Sage library with toolchain and dependencies
 sage -ba         # Rebuild all of the Sage library *without* dependencies
 ```
-
 
 This is all for historical and accidental reasons, but this ticket should clean that up too.
 
@@ -1834,7 +1839,7 @@ Needless to say, many people don't even know the subtle differences between the 
 archive/issue_comments_000149.json:
 ```json
 {
-    "body": "Replying to [comment:59 jdemeyer]:\n> Replying to [comment:55 embray]:\n> > E.g. replace `sage -t` with `sage test`.\n> \n> What about `sage -btp`? I use that all the time. I would hate it if that would become\n> `sage buildtest -p` or worse, `make build && sage test -p`.\n\nI was actually thinking of allowing subcommands to be chained, like in `setup.py`.  So `sage build test`, where each can take optional flags if desired.",
+    "body": "Replying to [comment:59 jdemeyer]:\n> Replying to [comment:55 embray]:\n> > E.g. replace `sage -t` with `sage test`.\n  \n> \n> What about `sage -btp`? I use that all the time. I would hate it if that would become\n> `sage buildtest -p` or worse, `make build && sage test -p`.\n\n\nI was actually thinking of allowing subcommands to be chained, like in `setup.py`.  So `sage build test`, where each can take optional flags if desired.",
     "created_at": "2017-06-06T09:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1846,9 +1851,11 @@ archive/issue_comments_000149.json:
 Replying to [comment:59 jdemeyer]:
 > Replying to [comment:55 embray]:
 > > E.g. replace `sage -t` with `sage test`.
+  
 > 
 > What about `sage -btp`? I use that all the time. I would hate it if that would become
 > `sage buildtest -p` or worse, `make build && sage test -p`.
+
 
 I was actually thinking of allowing subcommands to be chained, like in `setup.py`.  So `sage build test`, where each can take optional flags if desired.
 
@@ -1938,7 +1945,7 @@ Since all of the sage script's current "subcommands" (e.g. `sage -b`, `sage -i`)
 archive/issue_comments_000154.json:
 ```json
 {
-    "body": "Replying to [comment:68 was]:\n> Using python's subcommands support is a lot more systematic, and can also result in very nice modular code.\n\nI might still just write it as a shell script.  Reason being, based on my experience implementing CLIs in Python, it tends to be much much slower to run a single command. At the very least I would do this for the top-level `sage` script.  Most subcommands would delegate to another program which might be another shell script, or could be written in Python (as is already the case).  For subcommands written in Python it's not always so bad as long as most operations you would do with that command are long enough to make the Python interpreter startup time negligible.  Those could also have further subcommands.",
+    "body": "Replying to [comment:68 was]:\n> Using python's subcommands support is a lot more systematic, and can also result in very nice modular code.\n\n\nI might still just write it as a shell script.  Reason being, based on my experience implementing CLIs in Python, it tends to be much much slower to run a single command. At the very least I would do this for the top-level `sage` script.  Most subcommands would delegate to another program which might be another shell script, or could be written in Python (as is already the case).  For subcommands written in Python it's not always so bad as long as most operations you would do with that command are long enough to make the Python interpreter startup time negligible.  Those could also have further subcommands.",
     "created_at": "2020-09-01T13:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1950,6 +1957,7 @@ archive/issue_comments_000154.json:
 Replying to [comment:68 was]:
 > Using python's subcommands support is a lot more systematic, and can also result in very nice modular code.
 
+
 I might still just write it as a shell script.  Reason being, based on my experience implementing CLIs in Python, it tends to be much much slower to run a single command. At the very least I would do this for the top-level `sage` script.  Most subcommands would delegate to another program which might be another shell script, or could be written in Python (as is already the case).  For subcommands written in Python it's not always so bad as long as most operations you would do with that command are long enough to make the Python interpreter startup time negligible.  Those could also have further subcommands.
 
 
@@ -1959,7 +1967,7 @@ I might still just write it as a shell script.  Reason being, based on my experi
 archive/issue_comments_000155.json:
 ```json
 {
-    "body": "> I might still just write it as a shell script.\n\n+1\n\nI should have just said \"in my experience, structuring command line parsing code as subcommands (implemented in any language) can result in very nice modular code.\"",
+    "body": "> I might still just write it as a shell script.\n\n\n+1\n\nI should have just said \"in my experience, structuring command line parsing code as subcommands (implemented in any language) can result in very nice modular code.\"",
     "created_at": "2020-09-01T13:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -1969,6 +1977,7 @@ archive/issue_comments_000155.json:
 ```
 
 > I might still just write it as a shell script.
+
 
 +1
 
@@ -1999,7 +2008,7 @@ Changing priority from critical to minor.
 archive/issue_comments_000157.json:
 ```json
 {
-    "body": "Replying to [comment:68 was]:\n> +1 from me to changing the sage script to support subcommands, \n\nOne very frustrating part of subcommands is the failure of standard tab-completion to work with it:\nfor instance, for `jupyter notebook sheet.ipynb`. If there were just a command `jupyter-notebook`, it would be much easier and faster to type. Particularly with jupyter, which you nearly always use to start its notebook, it's rather frustrating. For git somehow it feels a little more natural, probably because there is naturally a larger variety of actions you want to take  through it. It also helps that most preconfigured bash tabcompletions are aware of git subcommands. (although still, distinct commands git-push, git-branch, git-pull would be faster)",
+    "body": "Replying to [comment:68 was]:\n> +1 from me to changing the sage script to support subcommands, \n\n\nOne very frustrating part of subcommands is the failure of standard tab-completion to work with it:\nfor instance, for `jupyter notebook sheet.ipynb`. If there were just a command `jupyter-notebook`, it would be much easier and faster to type. Particularly with jupyter, which you nearly always use to start its notebook, it's rather frustrating. For git somehow it feels a little more natural, probably because there is naturally a larger variety of actions you want to take  through it. It also helps that most preconfigured bash tabcompletions are aware of git subcommands. (although still, distinct commands git-push, git-branch, git-pull would be faster)",
     "created_at": "2020-09-04T16:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -2011,6 +2020,7 @@ archive/issue_comments_000157.json:
 Replying to [comment:68 was]:
 > +1 from me to changing the sage script to support subcommands, 
 
+
 One very frustrating part of subcommands is the failure of standard tab-completion to work with it:
 for instance, for `jupyter notebook sheet.ipynb`. If there were just a command `jupyter-notebook`, it would be much easier and faster to type. Particularly with jupyter, which you nearly always use to start its notebook, it's rather frustrating. For git somehow it feels a little more natural, probably because there is naturally a larger variety of actions you want to take  through it. It also helps that most preconfigured bash tabcompletions are aware of git subcommands. (although still, distinct commands git-push, git-branch, git-pull would be faster)
 
@@ -2021,7 +2031,7 @@ for instance, for `jupyter notebook sheet.ipynb`. If there were just a command `
 archive/issue_comments_000158.json:
 ```json
 {
-    "body": "Replying to [comment:73 nbruin]:\n> Replying to [comment:68 was]:\n> > +1 from me to changing the sage script to support subcommands, \n> \n> One very frustrating part of subcommands is the failure of standard tab-completion to work with it:\n\nThe question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?",
+    "body": "Replying to [comment:73 nbruin]:\n> Replying to [comment:68 was]:\n> > +1 from me to changing the sage script to support subcommands, \n\n> \n> One very frustrating part of subcommands is the failure of standard tab-completion to work with it:\n\n\nThe question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?",
     "created_at": "2020-09-04T16:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -2033,8 +2043,10 @@ archive/issue_comments_000158.json:
 Replying to [comment:73 nbruin]:
 > Replying to [comment:68 was]:
 > > +1 from me to changing the sage script to support subcommands, 
+
 > 
 > One very frustrating part of subcommands is the failure of standard tab-completion to work with it:
+
 
 The question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?
 
@@ -2045,7 +2057,7 @@ The question so far has been (for example) `sage --notebook` vs. `sage notebook`
 archive/issue_comments_000159.json:
 ```json
 {
-    "body": "Replying to [comment:74 jhpalmieri]:\n\n> The question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?\n\nFrom a tab-completion point of view that would make sense, yes. (that, or learn how to extend the tab completion patterns). For this particular example, I'd use `jupyter notebook` anyway, with the sage kernel installed in the system jupyter server.\n\nThe traditional reason for having dashes in front of options/subcommands is to remove ambiguity from `sage notebook` (to run the file notebook) and `sage notebook` (to start the notebook). For that reason, I think we can only have subcommands for `sage` if `sage <file>` would have no meaning. I don't think we can discard this main function of `sage`. I think with jupyter, where there is one VERY common use, it's already a mistake to go with a subcommand design.\n\nExtrapolating from that, I think that using subcommands for the `sage` script is also the wrong fit. It works well with `git`, but users really interact differently with git.",
+    "body": "Replying to [comment:74 jhpalmieri]:\n\n> The question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?\n\n\nFrom a tab-completion point of view that would make sense, yes. (that, or learn how to extend the tab completion patterns). For this particular example, I'd use `jupyter notebook` anyway, with the sage kernel installed in the system jupyter server.\n\nThe traditional reason for having dashes in front of options/subcommands is to remove ambiguity from `sage notebook` (to run the file notebook) and `sage notebook` (to start the notebook). For that reason, I think we can only have subcommands for `sage` if `sage <file>` would have no meaning. I don't think we can discard this main function of `sage`. I think with jupyter, where there is one VERY common use, it's already a mistake to go with a subcommand design.\n\nExtrapolating from that, I think that using subcommands for the `sage` script is also the wrong fit. It works well with `git`, but users really interact differently with git.",
     "created_at": "2020-09-04T16:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -2057,6 +2069,7 @@ archive/issue_comments_000159.json:
 Replying to [comment:74 jhpalmieri]:
 
 > The question so far has been (for example) `sage --notebook` vs. `sage notebook`, and tab-completion won't work with either. Are you suggesting adding `sage-notebook` and other scripts?
+
 
 From a tab-completion point of view that would make sense, yes. (that, or learn how to extend the tab completion patterns). For this particular example, I'd use `jupyter notebook` anyway, with the sage kernel installed in the system jupyter server.
 
@@ -2071,7 +2084,7 @@ Extrapolating from that, I think that using subcommands for the `sage` script is
 archive/issue_comments_000160.json:
 ```json
 {
-    "body": "Replying to [comment:75 nbruin]:\n> The traditional reason for having dashes in front of options/subcommands is to remove ambiguity from `sage notebook` (to run the file notebook) and `sage notebook` (to start the notebook). For that reason, I think we can only have subcommands for `sage` if `sage <file>` would have no meaning. I don't think we can discard this main function of `sage`. I think with jupyter, where there is one VERY common use, it's already a mistake to go with a subcommand design.\n> \n> Extrapolating from that, I think that using subcommands for the `sage` script is also the wrong fit. It works well with `git`, but users really interact differently with git.\n\nI fully agree.",
+    "body": "Replying to [comment:75 nbruin]:\n> The traditional reason for having dashes in front of options/subcommands is to remove ambiguity from `sage notebook` (to run the file notebook) and `sage notebook` (to start the notebook). For that reason, I think we can only have subcommands for `sage` if `sage <file>` would have no meaning. I don't think we can discard this main function of `sage`. I think with jupyter, where there is one VERY common use, it's already a mistake to go with a subcommand design.\n> \n> Extrapolating from that, I think that using subcommands for the `sage` script is also the wrong fit. It works well with `git`, but users really interact differently with git.\n\n\nI fully agree.",
     "created_at": "2020-09-04T17:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -2085,6 +2098,7 @@ Replying to [comment:75 nbruin]:
 > 
 > Extrapolating from that, I think that using subcommands for the `sage` script is also the wrong fit. It works well with `git`, but users really interact differently with git.
 
+
 I fully agree.
 
 
@@ -2094,7 +2108,7 @@ I fully agree.
 archive/issue_comments_000161.json:
 ```json
 {
-    "body": "Replying to [comment:75 nbruin]:\n> (that, or learn how to extend the tab completion patterns).\n\nFWIW, there are tools which can do this for you if your command line subcommands and options are all handled by argparse (rather than e.g. a top level bash script that calls out to python programs that use argparse for each subcommand, as embray suggested).\n\n[argcomplete](https://github.com/kislyuk/argcomplete) will dynamically provide on-the-fly completion candidates by actually running the argument parsing logic from the `sage` program every time you hit tab in the shell. This is always accurate but could be slow if `sage` takes a long time to get to the line of code where the argument parser is run (e.g. if it has some heavy imports).\n\n[shtab](https://github.com/iterative/shtab) also runs the argument parsing logic from the `sage` program, but it statically generates a bash completion script which you can then register with `bash-completion` by putting it in a relevant place (if you don't have root access, this can be `~/.local/share/bash-completion/completions/`). Then when you press tab in the shell, completions should be pretty instantaneous, but the completion script needs to be kept up to date with the command line interface of `sage`.\n\nIf you use a shell other than bash, it may be harder. zsh, at least, is supported by shtab and to some extent argcomplete as well.\n\nI suggest that `shtab` be run as part of the build process of Sage and that the resulting bash completion script be installed as part of the installation process. That should give out-of-the-box completion functionality to the majority of users, which would be nice. (Again, though, this would only work if the top-level `sage` does argument parsing in Python with `argparse`, and I understand that might not end up being the case for other reasons.)",
+    "body": "Replying to [comment:75 nbruin]:\n> (that, or learn how to extend the tab completion patterns).\n\n\nFWIW, there are tools which can do this for you if your command line subcommands and options are all handled by argparse (rather than e.g. a top level bash script that calls out to python programs that use argparse for each subcommand, as embray suggested).\n\n[argcomplete](https://github.com/kislyuk/argcomplete) will dynamically provide on-the-fly completion candidates by actually running the argument parsing logic from the `sage` program every time you hit tab in the shell. This is always accurate but could be slow if `sage` takes a long time to get to the line of code where the argument parser is run (e.g. if it has some heavy imports).\n\n[shtab](https://github.com/iterative/shtab) also runs the argument parsing logic from the `sage` program, but it statically generates a bash completion script which you can then register with `bash-completion` by putting it in a relevant place (if you don't have root access, this can be `~/.local/share/bash-completion/completions/`). Then when you press tab in the shell, completions should be pretty instantaneous, but the completion script needs to be kept up to date with the command line interface of `sage`.\n\nIf you use a shell other than bash, it may be harder. zsh, at least, is supported by shtab and to some extent argcomplete as well.\n\nI suggest that `shtab` be run as part of the build process of Sage and that the resulting bash completion script be installed as part of the installation process. That should give out-of-the-box completion functionality to the majority of users, which would be nice. (Again, though, this would only work if the top-level `sage` does argument parsing in Python with `argparse`, and I understand that might not end up being the case for other reasons.)",
     "created_at": "2020-09-04T18:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -2105,6 +2119,7 @@ archive/issue_comments_000161.json:
 
 Replying to [comment:75 nbruin]:
 > (that, or learn how to extend the tab completion patterns).
+
 
 FWIW, there are tools which can do this for you if your command line subcommands and options are all handled by argparse (rather than e.g. a top level bash script that calls out to python programs that use argparse for each subcommand, as embray suggested).
 

@@ -3,7 +3,7 @@
 archive/issues_002243.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: contour, plot\n\nKate reported in https://groups.google.com/group/sage-support/browse_thread/thread/843c9452036e9608/d5c4e6a830a66327#d5c4e6a830a66327\n\n```\nIn 2.10.1,\n\n  sage:  R.<x,y> = PolynomialRing(QQ,2)\n  sage:  contour_plot(y-1,(-10,10),\n(-10,10),fill=False,contours=1,plot_points=100)\n\nplots the line y = -9 rather than the line y=1\n\n  sage:  contour_plot(-y+1,(-10,10),\n(-10,10),fill=False,contours=1,plot_points=100)\n\ncorrectly plots y = 1.\n\nKate\n```\n\nDavid Joyner could confirm the bug:\n\n```\nsage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=2,plot_points=100)\nsage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=1,plot_points=100) \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2243\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: contour, plot\n\nKate reported in https://groups.google.com/group/sage-support/browse_thread/thread/843c9452036e9608/d5c4e6a830a66327#d5c4e6a830a66327\n\n```\nIn 2.10.1,\n\n  sage:  R.<x,y> = PolynomialRing(QQ,2)\n  sage:  contour_plot(y-1,(-10,10),\n(-10,10),fill=False,contours=1,plot_points=100)\n\nplots the line y = -9 rather than the line y=1\n\n  sage:  contour_plot(-y+1,(-10,10),\n(-10,10),fill=False,contours=1,plot_points=100)\n\ncorrectly plots y = 1.\n\nKate\n```\nDavid Joyner could confirm the bug:\n\n```\nsage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=2,plot_points=100)\nsage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=1,plot_points=100) \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2243\n\n",
     "created_at": "2008-02-21T01:35:05Z",
     "labels": [
         "component: graphics",
@@ -38,14 +38,12 @@ correctly plots y = 1.
 
 Kate
 ```
-
 David Joyner could confirm the bug:
 
 ```
 sage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=2,plot_points=100)
 sage: contour_plot(y-1,(-10,10),(-10,10),fill=False,contours=1,plot_points=100) 
 ```
-
 
 Cheers,
 
@@ -114,7 +112,7 @@ archive/issue_events_005329.json:
 archive/issue_comments_014836.json:
 ```json
 {
-    "body": "I think Arnaud's comment is the correct one.  If you look at the (current) documentation for contour_plot, you'll see\n\n\n```\n            contours     -- integer or list of numbers (default: None):\n                            If a list of numbers is given, then this specifies\n                            the contour levels to use.  If an integer is given,\n                            then this many contour lines are used, but the\n                            exact levels are determined automatically.\n                            If None is passed (or the option is not given),\n                            then the number of contour lines is determined\n                            automatically, and is usually about 5.\n```\n",
+    "body": "I think Arnaud's comment is the correct one.  If you look at the (current) documentation for contour_plot, you'll see\n\n```\n            contours     -- integer or list of numbers (default: None):\n                            If a list of numbers is given, then this specifies\n                            the contour levels to use.  If an integer is given,\n                            then this many contour lines are used, but the\n                            exact levels are determined automatically.\n                            If None is passed (or the option is not given),\n                            then the number of contour lines is determined\n                            automatically, and is usually about 5.\n```",
     "created_at": "2009-06-04T21:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2243",
     "type": "issue_comment",
@@ -124,7 +122,6 @@ archive/issue_comments_014836.json:
 ```
 
 I think Arnaud's comment is the correct one.  If you look at the (current) documentation for contour_plot, you'll see
-
 
 ```
             contours     -- integer or list of numbers (default: None):
@@ -136,7 +133,6 @@ I think Arnaud's comment is the correct one.  If you look at the (current) docum
                             then the number of contour lines is determined
                             automatically, and is usually about 5.
 ```
-
 
 
 

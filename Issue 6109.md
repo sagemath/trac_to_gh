@@ -133,7 +133,7 @@ John
 archive/issue_comments_048711.json:
 ```json
 {
-    "body": "The patch applies fine to 4.0.rc1, and qqbar.py passes doctests (unsurprisingly, since the patch doesn't actually change any tests). The key thing is the documentation, which complies fine except for one small glitch:\n\n\n```\nreading sources... sage/rings/qqbar\nWARNING: /home/david/sage-4.0.rc1/local/lib/python2.5/site-packages/sage/rings/qqbar.py:docstring of sage.rings.qqbar:81: (ERROR/3) Unexpected indentation.\n```\n\n\nI can't remotely pin down what it is that's upsetting the Sphinx parser. If you delete the entire offending docstring -- the big one at the top of the file -- you get the same \"unexpected indentation\" error message again, but purporting to be coming from the docstring of some other random function, and if you go through several iterations of deleting docstrings it starts claiming that there is an unexpected indentation at line 0. This sounds rather like a Sphinx bug to me, especially as the finished documentation looks absolutely fine.\n\nI agree with John that the benefits of getting QQbar into the reference manual make it worth merging this patch now -- let's have a new ticket for adding the missing doctests.\n\nDavid",
+    "body": "The patch applies fine to 4.0.rc1, and qqbar.py passes doctests (unsurprisingly, since the patch doesn't actually change any tests). The key thing is the documentation, which complies fine except for one small glitch:\n\n```\nreading sources... sage/rings/qqbar\nWARNING: /home/david/sage-4.0.rc1/local/lib/python2.5/site-packages/sage/rings/qqbar.py:docstring of sage.rings.qqbar:81: (ERROR/3) Unexpected indentation.\n```\n\nI can't remotely pin down what it is that's upsetting the Sphinx parser. If you delete the entire offending docstring -- the big one at the top of the file -- you get the same \"unexpected indentation\" error message again, but purporting to be coming from the docstring of some other random function, and if you go through several iterations of deleting docstrings it starts claiming that there is an unexpected indentation at line 0. This sounds rather like a Sphinx bug to me, especially as the finished documentation looks absolutely fine.\n\nI agree with John that the benefits of getting QQbar into the reference manual make it worth merging this patch now -- let's have a new ticket for adding the missing doctests.\n\nDavid",
     "created_at": "2009-05-28T10:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6109",
     "type": "issue_comment",
@@ -144,12 +144,10 @@ archive/issue_comments_048711.json:
 
 The patch applies fine to 4.0.rc1, and qqbar.py passes doctests (unsurprisingly, since the patch doesn't actually change any tests). The key thing is the documentation, which complies fine except for one small glitch:
 
-
 ```
 reading sources... sage/rings/qqbar
 WARNING: /home/david/sage-4.0.rc1/local/lib/python2.5/site-packages/sage/rings/qqbar.py:docstring of sage.rings.qqbar:81: (ERROR/3) Unexpected indentation.
 ```
-
 
 I can't remotely pin down what it is that's upsetting the Sphinx parser. If you delete the entire offending docstring -- the big one at the top of the file -- you get the same "unexpected indentation" error message again, but purporting to be coming from the docstring of some other random function, and if you go through several iterations of deleting docstrings it starts claiming that there is an unexpected indentation at line 0. This sounds rather like a Sphinx bug to me, especially as the finished documentation looks absolutely fine.
 

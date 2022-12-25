@@ -111,7 +111,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_064337.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> Thank you for your help !!! just one question though : on which version of GLPK is your patch based ? The new version of GLPK is available in #7268 and still waiting for review... Could we merge your changes in ? :-)\n\nSure, I'll take a look at #7268.\n \n> I had no idea that \"id\" was a python keyword... And thank you for noticing this memory leak !\n \nMe neither, but Emacs noticed it :) I think there's still a memleak there, you `new glp_ioct` but never `delete` it. However, I couldn't find anything on `glp_ioct` anywhere.",
+    "body": "Replying to [comment:2 ncohen]:\n> Thank you for your help !!! just one question though : on which version of GLPK is your patch based ? The new version of GLPK is available in #7268 and still waiting for review... Could we merge your changes in ? :-)\n\n\nSure, I'll take a look at #7268.\n \n> I had no idea that \"id\" was a python keyword... And thank you for noticing this memory leak !\n\n \nMe neither, but Emacs noticed it :) I think there's still a memleak there, you `new glp_ioct` but never `delete` it. However, I couldn't find anything on `glp_ioct` anywhere.",
     "created_at": "2009-12-01T16:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
@@ -123,9 +123,11 @@ archive/issue_comments_064337.json:
 Replying to [comment:2 ncohen]:
 > Thank you for your help !!! just one question though : on which version of GLPK is your patch based ? The new version of GLPK is available in #7268 and still waiting for review... Could we merge your changes in ? :-)
 
+
 Sure, I'll take a look at #7268.
  
 > I had no idea that "id" was a python keyword... And thank you for noticing this memory leak !
+
  
 Me neither, but Emacs noticed it :) I think there's still a memleak there, you `new glp_ioct` but never `delete` it. However, I couldn't find anything on `glp_ioct` anywhere.
 

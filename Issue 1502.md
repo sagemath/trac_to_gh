@@ -3,7 +3,7 @@
 archive/issues_001502.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is wrong:\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\n\nIt should be\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nNote that this works:\n\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
+    "body": "Assignee: @williamstein\n\nThis is wrong:\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\nIt should be\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nNote that this works:\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
     "created_at": "2007-12-14T05:41:19Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 This is wrong:
 
-
 ```
 sage: f = function('Gamma', var('z'), var('w')); f
 Gamma(z, w)
@@ -30,9 +29,7 @@ sage: f(2,5)
 Gamma(5, 2)
 ```
 
-
 It should be
-
 
 ```
 sage: f = function('Gamma', var('z'), var('w')); f
@@ -43,9 +40,7 @@ sage: f(2,5)
 Gamma(2, 5)
 ```
 
-
 Note that this works:
-
 
 ```
 sage: f(z,w) = function('Gamma'); f
@@ -55,7 +50,6 @@ Gamma(2, w)
 sage: f(2,5)
 Gamma(2, 5)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1502
 

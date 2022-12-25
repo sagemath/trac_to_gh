@@ -3,7 +3,7 @@
 archive/issues_005133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
+    "body": "Assignee: @williamstein\n\n```\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx\n----------------------------------------------------------------------\nmulti_modular.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE multi_modular.pyx: 0% (0 of 15)\n\nMissing documentation:\n         * _extend_moduli_to_height(self, height):\n         * _extend_moduli(self, count):\n         * precomputation_list(self):\n         * partial_product(self, n):\n         * prod(self):\n         * list(self):\n         * __len__(self):\n         * __iter__(self):\n         * __getitem__(self, ix):\n         * __repr__(self):\n         * next_prime(self):\n         * replace_prime(self, ix):\n\n\nMissing doctests:\n         * __init__(self, height):\n         * _extend_moduli_to_count(self, int count):\n         * crt(self, b):\n\n----------------------------------------------------------------------\n\nwstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5133\n\n",
     "created_at": "2009-01-30T01:10:20Z",
     "labels": [
         "component: linear algebra"
@@ -16,7 +16,6 @@ archive/issues_005133.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 wstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ sage -coverage multi_modular.pyx
@@ -49,7 +48,6 @@ Missing doctests:
 
 wstein@sage:~/build/sage-3.2.3/devel/sage/sage/ext$ 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5133
 
@@ -193,7 +191,7 @@ archive/issue_comments_039173.json:
 archive/issue_comments_039174.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n\n>  * typo: `l_bound` -> `u_bound` in docstring\n\nFixed.\n\n>  * the string representation is quite unusual, not sure if that's desired.\n\nChanged it to:\n\n\n```\nsage: from sage.ext.multi_modular import MultiModularBasis_base\nsage: mm = MultiModularBasis_base([3, 5, 7]); mm\nMultiModularBasis with moduli [3, 5, 7]\n```\n\n\n>  * `isinstance(val, list)` should allow more types `isinstance(val, (list,tuple,GeneratorType))`\n\nDone.\n\n>  * Why is it okay to use `proof=False` for random integers, because they are so small anyway? That should be added as a comment.\n\nI'd forgotten that I put that in. Good catch. I removed that argument, so we use the global flag now.\n\n>  * `__cmp__` wants you to return -1,0,1 and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\nFixed. Who would compare these things anyway? :)\n\n>  * `INPUT::` -> `INPUT:`, it doesn't get two : because the following block is not literal\n\nFixed.\n\n>  * patch applies cleanly against 4.1\n\n>  * doctest failures:\n\nDoh! I only doctested the `sage/matrix` directory. Apparently the only user of `MultiModularBasis`, namely `matrix_integer_dense.pyx` didn't have doctests for it. Now it does.",
+    "body": "Replying to [comment:2 malb]:\n\n>  * typo: `l_bound` -> `u_bound` in docstring\n\n\nFixed.\n\n>  * the string representation is quite unusual, not sure if that's desired.\n\n\nChanged it to:\n\n```\nsage: from sage.ext.multi_modular import MultiModularBasis_base\nsage: mm = MultiModularBasis_base([3, 5, 7]); mm\nMultiModularBasis with moduli [3, 5, 7]\n```\n\n>  * `isinstance(val, list)` should allow more types `isinstance(val, (list,tuple,GeneratorType))`\n\n\nDone.\n\n>  * Why is it okay to use `proof=False` for random integers, because they are so small anyway? That should be added as a comment.\n\n\nI'd forgotten that I put that in. Good catch. I removed that argument, so we use the global flag now.\n\n>  * `__cmp__` wants you to return -1,0,1 and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\n\nFixed. Who would compare these things anyway? :)\n\n>  * `INPUT::` -> `INPUT:`, it doesn't get two : because the following block is not literal\n\n\nFixed.\n\n>  * patch applies cleanly against 4.1\n\n\n>  * doctest failures:\n\n\nDoh! I only doctested the `sage/matrix` directory. Apparently the only user of `MultiModularBasis`, namely `matrix_integer_dense.pyx` didn't have doctests for it. Now it does.",
     "created_at": "2009-07-18T15:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -206,12 +204,13 @@ Replying to [comment:2 malb]:
 
 >  * typo: `l_bound` -> `u_bound` in docstring
 
+
 Fixed.
 
 >  * the string representation is quite unusual, not sure if that's desired.
 
-Changed it to:
 
+Changed it to:
 
 ```
 sage: from sage.ext.multi_modular import MultiModularBasis_base
@@ -219,26 +218,31 @@ sage: mm = MultiModularBasis_base([3, 5, 7]); mm
 MultiModularBasis with moduli [3, 5, 7]
 ```
 
-
 >  * `isinstance(val, list)` should allow more types `isinstance(val, (list,tuple,GeneratorType))`
+
 
 Done.
 
 >  * Why is it okay to use `proof=False` for random integers, because they are so small anyway? That should be added as a comment.
 
+
 I'd forgotten that I put that in. Good catch. I removed that argument, so we use the global flag now.
 
 >  * `__cmp__` wants you to return -1,0,1 and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html
+
 
 Fixed. Who would compare these things anyway? :)
 
 >  * `INPUT::` -> `INPUT:`, it doesn't get two : because the following block is not literal
 
+
 Fixed.
 
 >  * patch applies cleanly against 4.1
 
+
 >  * doctest failures:
+
 
 Doh! I only doctested the `sage/matrix` directory. Apparently the only user of `MultiModularBasis`, namely `matrix_integer_dense.pyx` didn't have doctests for it. Now it does.
 
@@ -305,7 +309,7 @@ rebased to depend on #6529
 archive/issue_comments_039178.json:
 ```json
 {
-    "body": "Attachment [trac_5133-take2-rebased.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased.patch) by mvngu created at 2009-07-20 14:23:56\n\nI got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:\n\n```\n[mvngu@sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch\nadding trac_5133-multi_modular_tests-take2.patch to series file\n[mvngu@sage sage-exp]$ hg qpush -a\napplying trac_5133-multi_modular_tests-take2.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 914\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_5133-multi_modular_tests-take2.patch\n```\n\nHere's the hunk that failed:\n\n```\n--- arith.py                                                                    \n+++ arith.py                                                                    \n@@ -915,6 +915,9 @@\n        the function uses a pseudo-primality test, which is much faster for     \n        really big numbers but does not provide a proof of primality. If        \n        None, uses the global default (see sage.structure.proof)                \n+                                                                               \n+    - ``lbound`` - an integer >= 2                                             \n+      lower bound for the chosen primes                                        \n                                                                                \n                                                                                \n     EXAMPLES::\n```\n\nThis is because I previously applied the patches at #6529. The failure has been manually resolved so the docstring of `random_prime` in `sage/rings/arith.py` now reads:\n\n```\n    Returns a random prime p between `lbound` and n (i.e. `lbound <= p <= n`).  \n    The returned prime is chosen uniformly at random from the set of prime      \n    numbers less than or equal to n.                                            \n                                                                                \n    INPUT:                                                                      \n                                                                                \n                                                                                \n    -  ``n`` - an integer >= 2.                                                 \n                                                                                \n    -  ``proof`` - bool or None (default: None) If False, the function uses a   \n       pseudo-primality test, which is much faster for really big numbers but   \n       does not provide a proof of primality. If None, uses the global default  \n       (see :mod:`sage.structure.proof.proof`)                                  \n                                                                                \n    - ``lbound`` - an integer >= 2                                              \n      lower bound for the chosen primes\n```\n\nThe patch `trac_5133-take2-rebased.patch` is a rebase of `trac_5133-multi_modular_tests-take2.patch` that depends on first applying the patches at #6529.",
+    "body": "Attachment [trac_5133-take2-rebased.patch](tarball://root/attachments/some-uuid/ticket5133/trac_5133-take2-rebased.patch) by mvngu created at 2009-07-20 14:23:56\n\nI got a hunk failure when applying `trac_5133-multi_modular_tests-take2.patch`:\n\n```\n[mvngu@sage sage-exp]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5133/trac_5133-multi_modular_tests-take2.patch\nadding trac_5133-multi_modular_tests-take2.patch to series file\n[mvngu@sage sage-exp]$ hg qpush -a\napplying trac_5133-multi_modular_tests-take2.patch\npatching file sage/rings/arith.py\nHunk #2 FAILED at 914\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/arith.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_5133-multi_modular_tests-take2.patch\n```\nHere's the hunk that failed:\n\n```\n--- arith.py                                                                    \n+++ arith.py                                                                    \n@@ -915,6 +915,9 @@\n        the function uses a pseudo-primality test, which is much faster for     \n        really big numbers but does not provide a proof of primality. If        \n        None, uses the global default (see sage.structure.proof)                \n+                                                                               \n+    - ``lbound`` - an integer >= 2                                             \n+      lower bound for the chosen primes                                        \n                                                                                \n                                                                                \n     EXAMPLES::\n```\nThis is because I previously applied the patches at #6529. The failure has been manually resolved so the docstring of `random_prime` in `sage/rings/arith.py` now reads:\n\n```\n    Returns a random prime p between `lbound` and n (i.e. `lbound <= p <= n`).  \n    The returned prime is chosen uniformly at random from the set of prime      \n    numbers less than or equal to n.                                            \n                                                                                \n    INPUT:                                                                      \n                                                                                \n                                                                                \n    -  ``n`` - an integer >= 2.                                                 \n                                                                                \n    -  ``proof`` - bool or None (default: None) If False, the function uses a   \n       pseudo-primality test, which is much faster for really big numbers but   \n       does not provide a proof of primality. If None, uses the global default  \n       (see :mod:`sage.structure.proof.proof`)                                  \n                                                                                \n    - ``lbound`` - an integer >= 2                                              \n      lower bound for the chosen primes\n```\nThe patch `trac_5133-take2-rebased.patch` is a rebase of `trac_5133-multi_modular_tests-take2.patch` that depends on first applying the patches at #6529.",
     "created_at": "2009-07-20T14:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5133",
     "type": "issue_comment",
@@ -330,7 +334,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_5133-multi_modular_tests-take2.patch
 ```
-
 Here's the hunk that failed:
 
 ```
@@ -347,7 +350,6 @@ Here's the hunk that failed:
                                                                                 
      EXAMPLES::
 ```
-
 This is because I previously applied the patches at #6529. The failure has been manually resolved so the docstring of `random_prime` in `sage/rings/arith.py` now reads:
 
 ```
@@ -368,7 +370,6 @@ This is because I previously applied the patches at #6529. The failure has been 
     - ``lbound`` - an integer >= 2                                              
       lower bound for the chosen primes
 ```
-
 The patch `trac_5133-take2-rebased.patch` is a rebase of `trac_5133-multi_modular_tests-take2.patch` that depends on first applying the patches at #6529.
 
 

@@ -66,7 +66,7 @@ Passes all tests after applying cleanly to 2.11.alpha1. I'll give it a try on al
 archive/issue_comments_018469.json:
 ```json
 {
-    "body": "Well, against my 2.11.rc0 build I got the following doctest failure:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph.py\n**********************************************************************\nFile \"graph.py\", line 1695:\n    sage: cube.is_circular_planar()\nExpected:\n    False\nGot:\n    (False, Graph on 9 vertices)\n**********************************************************************\n```\n\nIt seems easy enough to fix. Care to update the patch?\n\nCheers,\n\nMichael",
+    "body": "Well, against my 2.11.rc0 build I got the following doctest failure:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph.py\n**********************************************************************\nFile \"graph.py\", line 1695:\n    sage: cube.is_circular_planar()\nExpected:\n    False\nGot:\n    (False, Graph on 9 vertices)\n**********************************************************************\n```\nIt seems easy enough to fix. Care to update the patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-03-29T18:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ Got:
     (False, Graph on 9 vertices)
 **********************************************************************
 ```
-
 It seems easy enough to fix. Care to update the patch?
 
 Cheers,

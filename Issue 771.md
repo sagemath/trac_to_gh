@@ -3,7 +3,7 @@
 archive/issues_000771.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nK.<a> = GF(2^15, 'a')\nV = K.vector_space()\nz = (a+1)^13\nV(z)\n\n(1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0)\n```\n\n\n2^16: Error!\n\n```\nK.<a> = GF(2^16, 'a')\nV = K.vector_space()\nz = (a+1)^13\nV(z)\n\n\n\nException (click to the left for traceback):\n...\nTypeError: can't initialize vector from nonzero non-list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/771\n\n",
+    "body": "Assignee: @williamstein\n\n```\nK.<a> = GF(2^15, 'a')\nV = K.vector_space()\nz = (a+1)^13\nV(z)\n\n(1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0)\n```\n\n2^16: Error!\n\n```\nK.<a> = GF(2^16, 'a')\nV = K.vector_space()\nz = (a+1)^13\nV(z)\n\n\n\nException (click to the left for traceback):\n...\nTypeError: can't initialize vector from nonzero non-list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/771\n\n",
     "created_at": "2007-10-01T13:26:30Z",
     "labels": [
         "component: algebraic geometry",
@@ -18,7 +18,6 @@ archive/issues_000771.json:
 ```
 Assignee: @williamstein
 
-
 ```
 K.<a> = GF(2^15, 'a')
 V = K.vector_space()
@@ -27,7 +26,6 @@ V(z)
 
 (1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0)
 ```
-
 
 2^16: Error!
 
@@ -43,7 +41,6 @@ Exception (click to the left for traceback):
 ...
 TypeError: can't initialize vector from nonzero non-list
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/771
 

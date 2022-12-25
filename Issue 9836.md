@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9837
 archive/issue_comments_096906.json:
 ```json
 {
-    "body": "This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:\n\n\n```\n#if 1 /* use undocumented GMP interface */\n```\n\n\nChanging that to a zero solves the problem.",
+    "body": "This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:\n\n```\n#if 1 /* use undocumented GMP interface */\n```\n\nChanging that to a zero solves the problem.",
     "created_at": "2010-08-29T14:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -46,11 +46,9 @@ archive/issue_comments_096906.json:
 
 This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:
 
-
 ```
 #if 1 /* use undocumented GMP interface */
 ```
-
 
 Changing that to a zero solves the problem.
 
@@ -61,7 +59,7 @@ Changing that to a zero solves the problem.
 archive/issue_comments_096907.json:
 ```json
 {
-    "body": "Replying to [comment:1 jdemeyer]:\n> This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:\n> \n\n```\n#if 1 /* use undocumented GMP interface */\n```\n\n> \n> Changing that to a zero solves the problem.\n\n:D Thanks, I didn't want to track this down further...\n\nFunny, because *GMP* (5.0.1) dropped other things not part of the *public* interface, which are still available in the newest MPIR.",
+    "body": "Replying to [comment:1 jdemeyer]:\n> This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:\n> \n\n{{{\n#if 1 /* use undocumented GMP interface */\n}}}\n> \n> Changing that to a zero solves the problem.\n\n\n:D Thanks, I didn't want to track this down further...\n\nFunny, because *GMP* (5.0.1) dropped other things not part of the *public* interface, which are still available in the newest MPIR.",
     "created_at": "2010-08-29T14:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -74,12 +72,12 @@ Replying to [comment:1 jdemeyer]:
 > This line from the PARI source code (src/kernel/gmp/mp.c:952) says it all:
 > 
 
-```
+{{{
 #if 1 /* use undocumented GMP interface */
-```
-
+}}}
 > 
 > Changing that to a zero solves the problem.
+
 
 :D Thanks, I didn't want to track this down further...
 
@@ -110,7 +108,7 @@ P.S.: Yet another major single-character patch... ;-)
 archive/issue_comments_096909.json:
 ```json
 {
-    "body": "Should we patch it to\n\n```\n#ifdef PARI_USE_GMP_INTERNALS\n```\n\nrather than\n\n```\n#if 0\n```\n\n?",
+    "body": "Should we patch it to\n\n```\n#ifdef PARI_USE_GMP_INTERNALS\n```\nrather than\n\n```\n#if 0\n```\n?",
     "created_at": "2010-08-29T14:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -124,13 +122,11 @@ Should we patch it to
 ```
 #ifdef PARI_USE_GMP_INTERNALS
 ```
-
 rather than
 
 ```
 #if 0
 ```
-
 ?
 
 
@@ -140,7 +136,7 @@ rather than
 archive/issue_comments_096910.json:
 ```json
 {
-    "body": "It's actually an MPIR issue, I will report it to the MPIR people.  The following MPIR program gives a Segmentation Fault:\n\n\n```\n#include <mpir.h>\nint main()\n{\n    mpz_t Z, R;\n    mpz_init(Z);\n    mpz_init(R);\n    mpz_ui_pow_ui(Z, 10, 100000);\n    mpz_divexact(R, Z, Z);\n    return 0;\n}\n```\n",
+    "body": "It's actually an MPIR issue, I will report it to the MPIR people.  The following MPIR program gives a Segmentation Fault:\n\n```\n#include <mpir.h>\nint main()\n{\n    mpz_t Z, R;\n    mpz_init(Z);\n    mpz_init(R);\n    mpz_ui_pow_ui(Z, 10, 100000);\n    mpz_divexact(R, Z, Z);\n    return 0;\n}\n```",
     "created_at": "2010-08-29T15:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -150,7 +146,6 @@ archive/issue_comments_096910.json:
 ```
 
 It's actually an MPIR issue, I will report it to the MPIR people.  The following MPIR program gives a Segmentation Fault:
-
 
 ```
 #include <mpir.h>
@@ -167,13 +162,12 @@ int main()
 
 
 
-
 ---
 
 archive/issue_comments_096911.json:
 ```json
 {
-    "body": "Cross-replying to [comment:ticket:9343:359 jdemeyer]:\n> Replying to [comment:ticket:9343:357 leif]:\n> >  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n> \n> I'm assuming you refer to the \"GMP internals\" mentioned in #9837?\n\nYes. I intended to simply change the `#if 1` to `#ifdef PARI_USE_GMP_INTERNALS` in `mp.c`, which we already patch. (I've in fact already prepared and tested a `.svn-12577.p4.5` spkg with exactly that change; all long tests passed.)\n\nThen in case somebody wanted to enable PARI's use of \"whatever\" (see below), he could simply add `-DPARI_USE_GMP_INTERNALS` to `CFLAGS`, or we could do that if some (other) environment variable is set [to `yes`].\n\n> Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.\n\nI haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP. If those features PARI uses aren't, we should IMHO disable their use *by default*. So correct me if my assumption is false; I'll perhaps later take a closer look at what PARI considers \"undocumented\" (but not at the moment...). The odd thing is that the `#else` branch currently contains `TODO`s (though it seems functional at least for the purpose of Sage).\n\n> So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.\n\nSince we already patch `mp.c`, I think it doesn't hurt to add the above change to it.\n\nWe can then easily enable or disable the use in `spkg-install` and/or by setting environment variables, which may be valuable for testing, without changing the spkg at all.\n\nThe remaining question would be whether to *enable* or *disable* it by default. With *MPIR* the Sage standard package, I preferred the latter. \n\n> Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).\n\nI don't know if *\"with this\"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)\n\nI'll again ask at #9343 if anyone plans to add doctests or at least missing docstrings (to the Sage library part of PARI / #9343). I am not..., only perhaps going to fix the Sphinx warnings.",
+    "body": "Cross-replying to [comment:ticket:9343:359 jdemeyer]:\n> Replying to [comment:ticket:9343:357 leif]:\n> >  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n \n> \n> I'm assuming you refer to the \"GMP internals\" mentioned in #9837?\n\n\nYes. I intended to simply change the `#if 1` to `#ifdef PARI_USE_GMP_INTERNALS` in `mp.c`, which we already patch. (I've in fact already prepared and tested a `.svn-12577.p4.5` spkg with exactly that change; all long tests passed.)\n\nThen in case somebody wanted to enable PARI's use of \"whatever\" (see below), he could simply add `-DPARI_USE_GMP_INTERNALS` to `CFLAGS`, or we could do that if some (other) environment variable is set [to `yes`].\n\n> Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.\n\n\nI haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP. If those features PARI uses aren't, we should IMHO disable their use *by default*. So correct me if my assumption is false; I'll perhaps later take a closer look at what PARI considers \"undocumented\" (but not at the moment...). The odd thing is that the `#else` branch currently contains `TODO`s (though it seems functional at least for the purpose of Sage).\n\n> So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.\n\n\nSince we already patch `mp.c`, I think it doesn't hurt to add the above change to it.\n\nWe can then easily enable or disable the use in `spkg-install` and/or by setting environment variables, which may be valuable for testing, without changing the spkg at all.\n\nThe remaining question would be whether to *enable* or *disable* it by default. With *MPIR* the Sage standard package, I preferred the latter. \n\n> Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).\n\n\nI don't know if *\"with this\"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)\n\nI'll again ask at #9343 if anyone plans to add doctests or at least missing docstrings (to the Sage library part of PARI / #9343). I am not..., only perhaps going to fix the Sphinx warnings.",
     "created_at": "2010-08-31T01:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -185,8 +179,10 @@ archive/issue_comments_096911.json:
 Cross-replying to [comment:ticket:9343:359 jdemeyer]:
 > Replying to [comment:ticket:9343:357 leif]:
 > >  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)
+ 
 > 
 > I'm assuming you refer to the "GMP internals" mentioned in #9837?
+
 
 Yes. I intended to simply change the `#if 1` to `#ifdef PARI_USE_GMP_INTERNALS` in `mp.c`, which we already patch. (I've in fact already prepared and tested a `.svn-12577.p4.5` spkg with exactly that change; all long tests passed.)
 
@@ -194,9 +190,11 @@ Then in case somebody wanted to enable PARI's use of "whatever" (see below), he 
 
 > Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.
 
+
 I haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP. If those features PARI uses aren't, we should IMHO disable their use *by default*. So correct me if my assumption is false; I'll perhaps later take a closer look at what PARI considers "undocumented" (but not at the moment...). The odd thing is that the `#else` branch currently contains `TODO`s (though it seems functional at least for the purpose of Sage).
 
 > So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.
+
 
 Since we already patch `mp.c`, I think it doesn't hurt to add the above change to it.
 
@@ -205,6 +203,7 @@ We can then easily enable or disable the use in `spkg-install` and/or by setting
 The remaining question would be whether to *enable* or *disable* it by default. With *MPIR* the Sage standard package, I preferred the latter. 
 
 > Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).
+
 
 I don't know if *"with this"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)
 
@@ -217,7 +216,7 @@ I'll again ask at #9343 if anyone plans to add doctests or at least missing docs
 archive/issue_comments_096912.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> I'll again ask at #9343 if anyone plans to add doctests or at least missing docstrings (to the Sage library part of PARI / #9343). I am not..., only perhaps going to fix the Sphinx warnings.\n\nI believe the Sphinx warnings come from #9400 and I will fix these when I have time.",
+    "body": "Replying to [comment:8 leif]:\n> I'll again ask at #9343 if anyone plans to add doctests or at least missing docstrings (to the Sage library part of PARI / #9343). I am not..., only perhaps going to fix the Sphinx warnings.\n\n\nI believe the Sphinx warnings come from #9400 and I will fix these when I have time.",
     "created_at": "2010-08-31T06:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -229,6 +228,7 @@ archive/issue_comments_096912.json:
 Replying to [comment:8 leif]:
 > I'll again ask at #9343 if anyone plans to add doctests or at least missing docstrings (to the Sage library part of PARI / #9343). I am not..., only perhaps going to fix the Sphinx warnings.
 
+
 I believe the Sphinx warnings come from #9400 and I will fix these when I have time.
 
 
@@ -238,7 +238,7 @@ I believe the Sphinx warnings come from #9400 and I will fix these when I have t
 archive/issue_comments_096913.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> I haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP.\n\nThis is how the MPIR documentation phrases the internals used by PARI:\n> **This chapter is provided only for informational purposes and the various internals described**\n> **here may change in future MPIR releases. Applications expecting to be compatible with future**\n> **releases should use only the documented interfaces described in previous chapters.**\n\n> Since we already patch `mp.c`, I think it doesn't hurt to add the above change to it.\nWell, it depends because in this case, using the internals means a potentially significant speed gain.\n\n> > Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).\n> \n> I don't know if *\"with this\"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)\nThe only thing I'll do is release a new prealpha when PARI p5 is out and to fix the few remaining issues in #9400.",
+    "body": "Replying to [comment:8 leif]:\n> I haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP.\n\n\nThis is how the MPIR documentation phrases the internals used by PARI:\n> **This chapter is provided only for informational purposes and the various internals described**\n> **here may change in future MPIR releases. Applications expecting to be compatible with future**\n> **releases should use only the documented interfaces described in previous chapters.**\n\n\n> Since we already patch `mp.c`, I think it doesn't hurt to add the above change to it.\n\nWell, it depends because in this case, using the internals means a potentially significant speed gain.\n\n> > Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).\n\n> \n> I don't know if *\"with this\"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)\n\nThe only thing I'll do is release a new prealpha when PARI p5 is out and to fix the few remaining issues in #9400.",
     "created_at": "2010-08-31T06:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9836",
     "type": "issue_comment",
@@ -250,17 +250,22 @@ archive/issue_comments_096913.json:
 Replying to [comment:8 leif]:
 > I haven't checked this. To me, it is rather irrelevant if they are *documented* or not, but rather whether they are part of the official / **public** interface to GMP.
 
+
 This is how the MPIR documentation phrases the internals used by PARI:
 > **This chapter is provided only for informational purposes and the various internals described**
 > **here may change in future MPIR releases. Applications expecting to be compatible with future**
 > **releases should use only the documented interfaces described in previous chapters.**
 
+
 > Since we already patch `mp.c`, I think it doesn't hurt to add the above change to it.
+
 Well, it depends because in this case, using the internals means a potentially significant speed gain.
 
 > > Also, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).
+
 > 
 > I don't know if *"with this"* referred to the PARI *spkg*, the ticket (#9343), or PARI in general... ;-)
+
 The only thing I'll do is release a new prealpha when PARI p5 is out and to fix the few remaining issues in #9400.
 
 

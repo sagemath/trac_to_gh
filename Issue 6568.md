@@ -75,7 +75,7 @@ Changing priority from major to minor.
 archive/issue_comments_053482.json:
 ```json
 {
-    "body": "timdumol: There should be a proper username on the patch. At the moment I see this\n\n```\n# User deadlyx@localhost.localdomain\n```\n\nThe username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:\n\n```\n# User Full Name <email@somewhere.com>\n```\n\nYou can set a proper username in the file `~/.hgrc` with something like\n\n```\n[ui]\nusername = Full Name <email@somewhere.com>\n```\n\nI say \"should\", not \"must\". If you don't want to, then at least fill in the \"Author(s):\" field with your full name. That way, it makes it easy to credit you.",
+    "body": "timdumol: There should be a proper username on the patch. At the moment I see this\n\n```\n# User deadlyx@localhost.localdomain\n```\nThe username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:\n\n```\n# User Full Name <email@somewhere.com>\n```\nYou can set a proper username in the file `~/.hgrc` with something like\n\n```\n[ui]\nusername = Full Name <email@somewhere.com>\n```\nI say \"should\", not \"must\". If you don't want to, then at least fill in the \"Author(s):\" field with your full name. That way, it makes it easy to credit you.",
     "created_at": "2009-07-20T19:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -89,20 +89,17 @@ timdumol: There should be a proper username on the patch. At the moment I see th
 ```
 # User deadlyx@localhost.localdomain
 ```
-
 The username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:
 
 ```
 # User Full Name <email@somewhere.com>
 ```
-
 You can set a proper username in the file `~/.hgrc` with something like
 
 ```
 [ui]
 username = Full Name <email@somewhere.com>
 ```
-
 I say "should", not "must". If you don't want to, then at least fill in the "Author(s):" field with your full name. That way, it makes it easy to credit you.
 
 
@@ -112,7 +109,7 @@ I say "should", not "must". If you don't want to, then at least fill in the "Aut
 archive/issue_comments_053483.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> timdumol: There should be a proper username on the patch. At the moment I see this\n> {{{\n> # User deadlyx`@`localhost.localdomain\n> }}}\n> The username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:\n> {{{\n> # User Full Name <email`@`somewhere.com>\n> }}}\n> You can set a proper username in the file `~/.hgrc` with something like\n> {{{\n> [ui]\n> username = Full Name <email`@`somewhere.com>\n> }}}\n> I say \"should\", not \"must\". If you don't want to, then at least fill in the \"Author(s):\" field with your full name. That way, it makes it easy to credit you.\n\nThank you very much for noticing that. I didn't realize that my local username was included in the patch. I'll fix it asap.",
+    "body": "Replying to [comment:3 mvngu]:\n> timdumol: There should be a proper username on the patch. At the moment I see this\n> \n> ```\n> # User deadlyx@localhost.localdomain\n> ```\n> The username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:\n> \n> ```\n> # User Full Name <email@somewhere.com>\n> ```\n> You can set a proper username in the file `~/.hgrc` with something like\n> \n> ```\n> [ui]\n> username = Full Name <email@somewhere.com>\n> ```\n> I say \"should\", not \"must\". If you don't want to, then at least fill in the \"Author(s):\" field with your full name. That way, it makes it easy to credit you.\n\n\nThank you very much for noticing that. I didn't realize that my local username was included in the patch. I'll fix it asap.",
     "created_at": "2009-07-21T10:10:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -123,19 +120,23 @@ archive/issue_comments_053483.json:
 
 Replying to [comment:3 mvngu]:
 > timdumol: There should be a proper username on the patch. At the moment I see this
-> {{{
-> # User deadlyx`@`localhost.localdomain
-> }}}
+> 
+> ```
+> # User deadlyx@localhost.localdomain
+> ```
 > The username should not be a leet handle or anything like that. In order to properly credit contributors to Sage, the username should following this format:
-> {{{
-> # User Full Name <email`@`somewhere.com>
-> }}}
+> 
+> ```
+> # User Full Name <email@somewhere.com>
+> ```
 > You can set a proper username in the file `~/.hgrc` with something like
-> {{{
+> 
+> ```
 > [ui]
-> username = Full Name <email`@`somewhere.com>
-> }}}
+> username = Full Name <email@somewhere.com>
+> ```
 > I say "should", not "must". If you don't want to, then at least fill in the "Author(s):" field with your full name. That way, it makes it easy to credit you.
+
 
 Thank you very much for noticing that. I didn't realize that my local username was included in the patch. I'll fix it asap.
 
@@ -164,7 +165,7 @@ Changing keywords from "notebook, jinja,templating engine" to "notebook, jinja, 
 archive/issue_comments_053485.json:
 ```json
 {
-    "body": "Hi,\n\nI get 8 rejects when trying to apply the first patch to a 100% clean build of sage-4.1:\n\n\n```\nwstein@sage:~/build/sage-4.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref3\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/6568/12659.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6568/12659.patch\nLoading: [.........]\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg status\n/scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/5378/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/5378/tmp_1.patch\npatching file sage/server/notebook/notebook.py\nHunk #1 FAILED at 23\nHunk #2 FAILED at 32\nHunk #3 FAILED at 1355\nHunk #4 FAILED at 1402\nHunk #5 FAILED at 1506\nHunk #6 FAILED at 1704\nHunk #7 FAILED at 1903\nHunk #8 FAILED at 2162\n8 out of 8 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\nfile sage/server/notebook/templates/debug_window.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/debug_window.html.rej\nfile sage/server/notebook/templates/guest_top_bar_and_worksheet.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/guest_top_bar_and_worksheet.html.rej\nfile sage/server/notebook/templates/head.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/head.html.rej\nfile sage/server/notebook/templates/top_bar_and_worksheet.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/top_bar_and_worksheet.html.rej\nfile sage/server/notebook/templates/user_controls.tmpl already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/user_controls.tmpl.rej\nfile sage/server/notebook/templates/worksheet_body.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_body.html.rej\nfile sage/server/notebook/templates/worksheet_topbar.tmpl already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_topbar.tmpl.rej\nabort: patch failed to apply\n```\n\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\nWhat should I do?  What are these patches against exactly?",
+    "body": "Hi,\n\nI get 8 rejects when trying to apply the first patch to a 100% clean build of sage-4.1:\n\n```\nwstein@sage:~/build/sage-4.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref3\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/6568/12659.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6568/12659.patch\nLoading: [.........]\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg status\n/scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-4.1/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/5378/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/5378/tmp_1.patch\npatching file sage/server/notebook/notebook.py\nHunk #1 FAILED at 23\nHunk #2 FAILED at 32\nHunk #3 FAILED at 1355\nHunk #4 FAILED at 1402\nHunk #5 FAILED at 1506\nHunk #6 FAILED at 1704\nHunk #7 FAILED at 1903\nHunk #8 FAILED at 2162\n8 out of 8 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\nfile sage/server/notebook/templates/debug_window.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/debug_window.html.rej\nfile sage/server/notebook/templates/guest_top_bar_and_worksheet.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/guest_top_bar_and_worksheet.html.rej\nfile sage/server/notebook/templates/head.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/head.html.rej\nfile sage/server/notebook/templates/top_bar_and_worksheet.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/top_bar_and_worksheet.html.rej\nfile sage/server/notebook/templates/user_controls.tmpl already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/user_controls.tmpl.rej\nfile sage/server/notebook/templates/worksheet_body.html already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_body.html.rej\nfile sage/server/notebook/templates/worksheet_topbar.tmpl already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_topbar.tmpl.rej\nabort: patch failed to apply\n```\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\nWhat should I do?  What are these patches against exactly?",
     "created_at": "2009-07-26T19:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -176,7 +177,6 @@ archive/issue_comments_053485.json:
 Hi,
 
 I get 8 rejects when trying to apply the first patch to a 100% clean build of sage-4.1:
-
 
 ```
 wstein@sage:~/build/sage-4.1$ ./sage
@@ -218,7 +218,6 @@ file sage/server/notebook/templates/worksheet_topbar.tmpl already exists
 1 out of 1 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_topbar.tmpl.rej
 abort: patch failed to apply
 ```
-
 | Sage Version 4.1, Release Date: 2009-07-09                         |
 | Type notebook() for the GUI, and license() for information.        |
 What should I do?  What are these patches against exactly?
@@ -251,7 +250,7 @@ The new patches are against r12658. The old ones were as well, but I don't know 
 archive/issue_comments_053487.json:
 ```json
 {
-    "body": "I can't apply/review this patch immediately, but it seems that each change appears twice in the latest version.  For example, \n\n```\n$ grep \"sage/server/notebook/templates/notebook/worksheet.html\" _12660.patch\ndiff -r d3be9e0b1090 -r a60e86f38be7 sage/server/notebook/templates/notebook/worksheet.html\n+++ b/sage/server/notebook/templates/notebook/worksheet.html    Sun Jul 26 14:08:17 2009 +0800\ndiff -r d3be9e0b1090 -r 1335daa5adcd sage/server/notebook/templates/notebook/worksheet.html\n+++ b/sage/server/notebook/templates/notebook/worksheet.html    Tue Jul 28 21:33:54 2009 +0800\n```\n\nAlso, should \"reviisons\" appear in the patch?  Sorry, if I'm wrong.",
+    "body": "I can't apply/review this patch immediately, but it seems that each change appears twice in the latest version.  For example, \n\n```\n$ grep \"sage/server/notebook/templates/notebook/worksheet.html\" _12660.patch\ndiff -r d3be9e0b1090 -r a60e86f38be7 sage/server/notebook/templates/notebook/worksheet.html\n+++ b/sage/server/notebook/templates/notebook/worksheet.html    Sun Jul 26 14:08:17 2009 +0800\ndiff -r d3be9e0b1090 -r 1335daa5adcd sage/server/notebook/templates/notebook/worksheet.html\n+++ b/sage/server/notebook/templates/notebook/worksheet.html    Tue Jul 28 21:33:54 2009 +0800\n```\nAlso, should \"reviisons\" appear in the patch?  Sorry, if I'm wrong.",
     "created_at": "2009-08-04T06:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -269,7 +268,6 @@ diff -r d3be9e0b1090 -r a60e86f38be7 sage/server/notebook/templates/notebook/wor
 diff -r d3be9e0b1090 -r 1335daa5adcd sage/server/notebook/templates/notebook/worksheet.html
 +++ b/sage/server/notebook/templates/notebook/worksheet.html    Tue Jul 28 21:33:54 2009 +0800
 ```
-
 Also, should "reviisons" appear in the patch?  Sorry, if I'm wrong.
 
 
@@ -591,7 +589,7 @@ Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660
 archive/issue_comments_053504.json:
 ```json
 {
-    "body": "From some testing in Firefox 3.5 on Linux, with both new patches applied:\n* Live doc worksheets do not load their stylesheets.\n* Published worksheets are now [partially] editable.\n* The \"re-publish\" and \"stop publishing\" buttons do not work, apparently.\n* The print representation of a worksheet is missing cell boundaries.\n\nAlso, a number of doctests in `notebook.py` and `worksheet.py` failed with `sage -t -long -option -verbose -randorder`.  For `worksheet.py`, there are mostly just small changes in expected HTML output.  I think some of the randomized failures are pre-existing:\n\n```\nsage -t -long -optional -randorder=87873 \"4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\"\n**********************************************************************\nFile \"/home/apps/sage-4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\", line 178:\n    sage: sage.server.notebook.worksheet.one_prestarted_sage(None,None)\nExpected:\n    Sage\nGot nothing\n**********************************************************************\nFile \"/home/apps/sage-4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\", line 148:\n    sage: sage.server.notebook.worksheet._a_sage\nExpected nothing\nGot:\n    Sage\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_1270084472\n   1 of   5 in __main__.example_1700749147\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/apps/sage/tmp/.doctest_worksheet.py\n         [7.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n        sage -t -long -optional -randorder=87873 \"4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\"\nTotal time for all tests: 7.9 seconds\n```\n\nFor `notebook.py`, there are other error types.",
+    "body": "From some testing in Firefox 3.5 on Linux, with both new patches applied:\n* Live doc worksheets do not load their stylesheets.\n* Published worksheets are now [partially] editable.\n* The \"re-publish\" and \"stop publishing\" buttons do not work, apparently.\n* The print representation of a worksheet is missing cell boundaries.\n\nAlso, a number of doctests in `notebook.py` and `worksheet.py` failed with `sage -t -long -option -verbose -randorder`.  For `worksheet.py`, there are mostly just small changes in expected HTML output.  I think some of the randomized failures are pre-existing:\n\n```\nsage -t -long -optional -randorder=87873 \"4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\"\n**********************************************************************\nFile \"/home/apps/sage-4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\", line 178:\n    sage: sage.server.notebook.worksheet.one_prestarted_sage(None,None)\nExpected:\n    Sage\nGot nothing\n**********************************************************************\nFile \"/home/apps/sage-4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\", line 148:\n    sage: sage.server.notebook.worksheet._a_sage\nExpected nothing\nGot:\n    Sage\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_1270084472\n   1 of   5 in __main__.example_1700749147\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/apps/sage/tmp/.doctest_worksheet.py\n         [7.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n        sage -t -long -optional -randorder=87873 \"4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py\"\nTotal time for all tests: 7.9 seconds\n```\nFor `notebook.py`, there are other error types.",
     "created_at": "2009-08-13T06:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -636,7 +634,6 @@ The following tests failed:
         sage -t -long -optional -randorder=87873 "4.1.1.rc1/devel/sage-main/sage/server/notebook/worksheet.py"
 Total time for all tests: 7.9 seconds
 ```
-
 For `notebook.py`, there are other error types.
 
 
@@ -646,7 +643,7 @@ For `notebook.py`, there are other error types.
 archive/issue_comments_053505.json:
 ```json
 {
-    "body": "Also,\n\n```\n$ grep reviisons sage-trac-6568.*\nsage-trac-6568.2.patch:+<a class=\"listcontrol\" href=\"reviisons?rev={{ rev }}&action=publis\">Publish this one</a>&nbsp;&nbsp;\n```\n",
+    "body": "Also,\n\n```\n$ grep reviisons sage-trac-6568.*\nsage-trac-6568.2.patch:+<a class=\"listcontrol\" href=\"reviisons?rev={{ rev }}&action=publis\">Publish this one</a>&nbsp;&nbsp;\n```",
     "created_at": "2009-08-13T06:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -661,7 +658,6 @@ Also,
 $ grep reviisons sage-trac-6568.*
 sage-trac-6568.2.patch:+<a class="listcontrol" href="reviisons?rev={{ rev }}&action=publis">Publish this one</a>&nbsp;&nbsp;
 ```
-
 
 
 
@@ -690,7 +686,7 @@ I'm working on the rest of the problems now.
 archive/issue_comments_053507.json:
 ```json
 {
-    "body": "Replying to [comment:16 timdumol]:\n> I've checked the doctests out on a fresh install (r12659). They also fail, so I assume they're pre-existing. I'm not too familiar with the Notebook code, but I'll see if I can fix them up. Meanwhile, perhaps they should be put on a new ticket.\n> \n> I'm working on the rest of the problems now.\n\nI'm sorry, I meant r12658.",
+    "body": "Replying to [comment:16 timdumol]:\n> I've checked the doctests out on a fresh install (r12659). They also fail, so I assume they're pre-existing. I'm not too familiar with the Notebook code, but I'll see if I can fix them up. Meanwhile, perhaps they should be put on a new ticket.\n> \n> I'm working on the rest of the problems now.\n\n\nI'm sorry, I meant r12658.",
     "created_at": "2009-08-13T11:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -703,6 +699,7 @@ Replying to [comment:16 timdumol]:
 > I've checked the doctests out on a fresh install (r12659). They also fail, so I assume they're pre-existing. I'm not too familiar with the Notebook code, but I'll see if I can fix them up. Meanwhile, perhaps they should be put on a new ticket.
 > 
 > I'm working on the rest of the problems now.
+
 
 I'm sorry, I meant r12658.
 
@@ -1099,7 +1096,7 @@ archive/issue_events_015504.json:
 archive/issue_comments_053526.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThe Sphinx docstrings that you added, which are very good, have a formatting problem, namely below there needs to be a newline before each - (i.e., lots of whitespace):\n\n```\n \t1315\t        INPUT: \n \t1316\t        - ``username`` - a string \n \t1317\t        - ``worksheet`` - an instance of Worksheet \n \t1318\t \n \t1319\t        OUTPUT: \n \t1320\t        - a string containing the HTML \n```\n\nSee this screenshot: http://wstein.org/home/wstein/tmp/jinja1.png which illustrates how the ReST is messed up.  This isn't a big deal, since I don't think this code is even in the reference manual yet...  But it would be good to go through and fix. \n\nAll doctests pass, and *using* the notebook after applying the patches seems to work fine -- I can't find any visible difference. \n\nI give this a positive review.  Proper Sphinxing of docs can go in a future patch, and be done throughout the notebook server code.",
+    "body": "REFEREE REPORT:\n\nThe Sphinx docstrings that you added, which are very good, have a formatting problem, namely below there needs to be a newline before each - (i.e., lots of whitespace):\n\n```\n \t1315\t        INPUT: \n \t1316\t        - ``username`` - a string \n \t1317\t        - ``worksheet`` - an instance of Worksheet \n \t1318\t \n \t1319\t        OUTPUT: \n \t1320\t        - a string containing the HTML \n```\nSee this screenshot: http://wstein.org/home/wstein/tmp/jinja1.png which illustrates how the ReST is messed up.  This isn't a big deal, since I don't think this code is even in the reference manual yet...  But it would be good to go through and fix. \n\nAll doctests pass, and *using* the notebook after applying the patches seems to work fine -- I can't find any visible difference. \n\nI give this a positive review.  Proper Sphinxing of docs can go in a future patch, and be done throughout the notebook server code.",
     "created_at": "2009-08-29T05:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -1120,7 +1117,6 @@ The Sphinx docstrings that you added, which are very good, have a formatting pro
  	1319	        OUTPUT: 
  	1320	        - a string containing the HTML 
 ```
-
 See this screenshot: http://wstein.org/home/wstein/tmp/jinja1.png which illustrates how the ReST is messed up.  This isn't a big deal, since I don't think this code is even in the reference manual yet...  But it would be good to go through and fix. 
 
 All doctests pass, and *using* the notebook after applying the patches seems to work fine -- I can't find any visible difference. 
@@ -1204,7 +1200,7 @@ Resolution: fixed
 archive/issue_comments_053530.json:
 ```json
 {
-    "body": "The patch `trac_6568-jinja_migration_v2.patch` results in over 20 warnings when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html:20: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_beforepublish_window:14: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_beforepublish_window:19: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_debug_window:8: (WARNING/2) Literal block expected; none found.\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.DIR:1: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_debug_window:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_doc:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_doc:17: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_download_or_delete_datafile:17: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_download_or_delete_datafile:25: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_plain_text_window:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_plain_text_window:24: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_share:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_share:24: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_upload_data_window:13: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_upload_data_window:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_revision_list:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_revision_list:23: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_settings:13: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_settings:20: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.worksheet_html:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.worksheet_html:23: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/worksheet.py:docstring of sage.server.notebook.worksheet.Worksheet.html_menu:10: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\nWhen I ran the test suite with the patch, I received a timed out error:\n\n```\nsage -t -long devel/sage-main/sage/interfaces/ecm.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\nThis error has nothing to do with the patch. It might be due to sage.math being too busy or its system resources (probably RAM) nearing capacity. Merged `trac_6568-jinja_migration_v2.patch`.",
+    "body": "The patch `trac_6568-jinja_migration_v2.patch` results in over 20 warnings when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html:20: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_beforepublish_window:14: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_beforepublish_window:19: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_debug_window:8: (WARNING/2) Literal block expected; none found.\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.DIR:1: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_debug_window:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_doc:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_doc:17: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_download_or_delete_datafile:17: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_download_or_delete_datafile:25: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_plain_text_window:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_plain_text_window:24: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_share:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_share:24: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_upload_data_window:13: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_upload_data_window:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_revision_list:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_revision_list:23: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_settings:13: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.html_worksheet_settings:20: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.worksheet_html:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.worksheet_html:23: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/worksheet.py:docstring of sage.server.notebook.worksheet.Worksheet.html_menu:10: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\nWhen I ran the test suite with the patch, I received a timed out error:\n\n```\nsage -t -long devel/sage-main/sage/interfaces/ecm.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\nThis error has nothing to do with the patch. It might be due to sage.math being too busy or its system resources (probably RAM) nearing capacity. Merged `trac_6568-jinja_migration_v2.patch`.",
     "created_at": "2009-08-30T11:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -1242,7 +1238,6 @@ WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sag
 WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/notebook.py:docstring of sage.server.notebook.notebook.Notebook.worksheet_html:23: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 WARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/server/notebook/worksheet.py:docstring of sage.server.notebook.worksheet.Worksheet.html_menu:10: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 ```
-
 When I ran the test suite with the patch, I received a timed out error:
 
 ```
@@ -1252,7 +1247,6 @@ sage -t -long devel/sage-main/sage/interfaces/ecm.py
 *** *** Error: TIMED OUT! *** ***
 	 [1800.1 s]
 ```
-
 This error has nothing to do with the patch. It might be due to sage.math being too busy or its system resources (probably RAM) nearing capacity. Merged `trac_6568-jinja_migration_v2.patch`.
 
 
@@ -1262,7 +1256,7 @@ This error has nothing to do with the patch. It might be due to sage.math being 
 archive/issue_comments_053531.json:
 ```json
 {
-    "body": "Replying to [comment:33 mvngu]:\n> The patch `trac_6568-jinja_migration_v2.patch` results in over 20 warnings when building the reference manual:\nI think #6840 will take care of these.",
+    "body": "Replying to [comment:33 mvngu]:\n> The patch `trac_6568-jinja_migration_v2.patch` results in over 20 warnings when building the reference manual:\n\nI think #6840 will take care of these.",
     "created_at": "2009-08-30T18:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
@@ -1273,6 +1267,7 @@ archive/issue_comments_053531.json:
 
 Replying to [comment:33 mvngu]:
 > The patch `trac_6568-jinja_migration_v2.patch` results in over 20 warnings when building the reference manual:
+
 I think #6840 will take care of these.
 
 

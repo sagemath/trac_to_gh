@@ -3,7 +3,7 @@
 archive/issues_007882.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPresent version of Macaulay2 interface breaks on\n\n\n```\nmacaulay2(\"help matrix\")\n```\n\n\nalthough\n\n\n```\nmacaulay2.help(\"matrix\")\n```\n\n\ndoes work fine.\n\nThe problem is that pexpect detects input prompts inside of examples. The patch changes the input prompt to get matches only in the beginning of lines.\n\nThe interface still breaks if you try to print input prompts at the beginning of the line, but that is probably a rare situation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7882\n\n",
+    "body": "Assignee: @williamstein\n\nPresent version of Macaulay2 interface breaks on\n\n```\nmacaulay2(\"help matrix\")\n```\n\nalthough\n\n```\nmacaulay2.help(\"matrix\")\n```\n\ndoes work fine.\n\nThe problem is that pexpect detects input prompts inside of examples. The patch changes the input prompt to get matches only in the beginning of lines.\n\nThe interface still breaks if you try to print input prompts at the beginning of the line, but that is probably a rare situation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7882\n\n",
     "created_at": "2010-01-09T20:02:02Z",
     "labels": [
         "component: interfaces",
@@ -20,19 +20,15 @@ Assignee: @williamstein
 
 Present version of Macaulay2 interface breaks on
 
-
 ```
 macaulay2("help matrix")
 ```
 
-
 although
-
 
 ```
 macaulay2.help("matrix")
 ```
-
 
 does work fine.
 

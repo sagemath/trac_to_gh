@@ -3,7 +3,7 @@
 archive/issues_008976.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nKeywords: squarefree_part()\n\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: squarefree_part()\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
     "created_at": "2010-05-15T23:54:38Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ archive/issues_008976.json:
 Assignee: @jasongrout
 
 Keywords: squarefree_part()
-
 
 ```
 sage: squarefree_part(216)
@@ -40,7 +39,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'int' object has no attribute 'parent'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8976
@@ -72,7 +70,7 @@ Changing status from new to needs_info.
 archive/issue_comments_082677.json:
 ```json
 {
-    "body": "This is easy to fix, but I'm not sure if one should simply replace\n\n```\nn = x.parent()(1)\n```\n\nby\n\n```\nn = parent(x)(1)\n```\n\nor e.g. test for `isinstance(x,(int,long,float))` instead.",
+    "body": "This is easy to fix, but I'm not sure if one should simply replace\n\n```\nn = x.parent()(1)\n```\nby\n\n```\nn = parent(x)(1)\n```\nor e.g. test for `isinstance(x,(int,long,float))` instead.",
     "created_at": "2010-05-16T00:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
@@ -86,13 +84,11 @@ This is easy to fix, but I'm not sure if one should simply replace
 ```
 n = x.parent()(1)
 ```
-
 by
 
 ```
 n = parent(x)(1)
 ```
-
 or e.g. test for `isinstance(x,(int,long,float))` instead.
 
 

@@ -3,7 +3,7 @@
 archive/issues_009020.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nAttached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:\n\n\n```\nsage: R.<x> = ZZ[]\nsage: R.random_element(degree=(0,8))\n2*x^7 - x^5 + 4*x^4 - 5*x^3 + x^2 + 14*x - 1\nsage: R.random_element(degree=(0,8))\n-2*x^3 + x^2 + x + 4\n```\n\n\nThis is also directly usable by matrices:\n\n\n```\nsage: M = Matrix(R,2,2)\nsage: M.randomize(degree=(0,6))\nsage: M\n[              -40*x^3 - 3*x^2 - 5*x            -x^4 + 476*x^3 - 3*x + 3]\n[-12*x^6 + 2*x^4 - x^3 + x^2 + x - 1                           -52*x + 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9020\n\n",
+    "body": "Assignee: @aghitza\n\nAttached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.random_element(degree=(0,8))\n2*x^7 - x^5 + 4*x^4 - 5*x^3 + x^2 + 14*x - 1\nsage: R.random_element(degree=(0,8))\n-2*x^3 + x^2 + x + 4\n```\n\nThis is also directly usable by matrices:\n\n```\nsage: M = Matrix(R,2,2)\nsage: M.randomize(degree=(0,6))\nsage: M\n[              -40*x^3 - 3*x^2 - 5*x            -x^4 + 476*x^3 - 3*x + 3]\n[-12*x^6 + 2*x^4 - x^3 + x^2 + x - 1                           -52*x + 5]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9020\n\n",
     "created_at": "2010-05-22T21:58:30Z",
     "labels": [
         "component: basic arithmetic"
@@ -19,7 +19,6 @@ Assignee: @aghitza
 
 Attached patch allows using a tuple as the `degree` argument when calling the `random_element()` method of univariate polynomial rings. The tuple specifies the minimum and maximum degrees so we don't always get polynomials of the same degree:
 
-
 ```
 sage: R.<x> = ZZ[]
 sage: R.random_element(degree=(0,8))
@@ -28,9 +27,7 @@ sage: R.random_element(degree=(0,8))
 -2*x^3 + x^2 + x + 4
 ```
 
-
 This is also directly usable by matrices:
-
 
 ```
 sage: M = Matrix(R,2,2)
@@ -39,7 +36,6 @@ sage: M
 [              -40*x^3 - 3*x^2 - 5*x            -x^4 + 476*x^3 - 3*x + 3]
 [-12*x^6 + 2*x^4 - x^3 + x^2 + x - 1                           -52*x + 5]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9020
 

@@ -3,7 +3,7 @@
 archive/issues_006435.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @nthiery\n\nKeywords: ReST docstring formatting\n\nBuilding the documentation for 4.1.alpha2, there is a warning:\n\n```\nWARNING: /home/david/sage-4.1.alpha2/local/lib/python2.6/site-packages/sage/misc/abstract_method.py:docstring of sage.misc.abstract_method.abstract_method:19: (WARNING/2) Literal block expected; none found.\n```\n\nThis is due to a rogue \"::\" in a docstring introduced by #6097.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6435\n\n",
+    "body": "Assignee: tba\n\nCC:  @nthiery\n\nKeywords: ReST docstring formatting\n\nBuilding the documentation for 4.1.alpha2, there is a warning:\n\n```\nWARNING: /home/david/sage-4.1.alpha2/local/lib/python2.6/site-packages/sage/misc/abstract_method.py:docstring of sage.misc.abstract_method.abstract_method:19: (WARNING/2) Literal block expected; none found.\n```\nThis is due to a rogue \"::\" in a docstring introduced by #6097.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6435\n\n",
     "created_at": "2009-06-27T19:03:05Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ Building the documentation for 4.1.alpha2, there is a warning:
 ```
 WARNING: /home/david/sage-4.1.alpha2/local/lib/python2.6/site-packages/sage/misc/abstract_method.py:docstring of sage.misc.abstract_method.abstract_method:19: (WARNING/2) Literal block expected; none found.
 ```
-
 This is due to a rogue "::" in a docstring introduced by #6097.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6435

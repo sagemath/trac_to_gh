@@ -3,7 +3,7 @@
 archive/issues_008842.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n\n```\nIf I write a function in a cell of a notebook like:\n\n@interact\ndef foo(a = input_box(default=0, type=Integer)):\n    # do something here\n    pass\n\nAnd the user enters something that cannot be coerced to Integer, then\nI get a verbose (and rather unhelpful) exception, which, as far as I\ncan see, can't be caught inside of foo.  So, I would suggest that if a\ntype is specified in input_box, and the coercion fails that a nicer\nlooking message be given (perhaps next to the box that a specifies).\n\nVictor\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8842\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n```\nIf I write a function in a cell of a notebook like:\n\n@interact\ndef foo(a = input_box(default=0, type=Integer)):\n    # do something here\n    pass\n\nAnd the user enters something that cannot be coerced to Integer, then\nI get a verbose (and rather unhelpful) exception, which, as far as I\ncan see, can't be caught inside of foo.  So, I would suggest that if a\ntype is specified in input_box, and the coercion fails that a nicer\nlooking message be given (perhaps next to the box that a specifies).\n\nVictor\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8842\n\n",
     "created_at": "2010-05-02T20:20:35Z",
     "labels": [
         "component: notebook"
@@ -18,7 +18,6 @@ archive/issues_008842.json:
 Assignee: jason, was
 
 CC:  @fchapoton
-
 
 ```
 If I write a function in a cell of a notebook like:
@@ -36,7 +35,6 @@ looking message be given (perhaps next to the box that a specifies).
 
 Victor
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8842
 

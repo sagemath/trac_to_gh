@@ -142,7 +142,7 @@ Changing status from new to needs_work.
 archive/issue_comments_071638.json:
 ```json
 {
-    "body": "Hi, I applied the patch and installed your spkg. works + your tests pass.\n\nI also tried the patch+spkg on 4.3.2.rc0 ... and it worked! all tests+your doctests pass here too! I also doctested the entire sage library, but there were some complaints.\n\nTherefore positive review for the spkg from me, but others should test it on other platforms, too. Negative for the implications on the sage library because doctests fail on 4.3.1 and 4.3.2.rc0 /w mpmath 0.14 and above patch in\n`sage/libs/mpmath/utils.pyx` and `/sage/functions/transcendental.py`\nall say:\n\n```\nImportError: No module named mptypes\n```\n\nThis exception pops up about 20 times ...",
+    "body": "Hi, I applied the patch and installed your spkg. works + your tests pass.\n\nI also tried the patch+spkg on 4.3.2.rc0 ... and it worked! all tests+your doctests pass here too! I also doctested the entire sage library, but there were some complaints.\n\nTherefore positive review for the spkg from me, but others should test it on other platforms, too. Negative for the implications on the sage library because doctests fail on 4.3.1 and 4.3.2.rc0 /w mpmath 0.14 and above patch in\n`sage/libs/mpmath/utils.pyx` and `/sage/functions/transcendental.py`\nall say:\n\n```\nImportError: No module named mptypes\n```\nThis exception pops up about 20 times ...",
     "created_at": "2010-02-04T19:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
@@ -162,7 +162,6 @@ all say:
 ```
 ImportError: No module named mptypes
 ```
-
 This exception pops up about 20 times ...
 
 
@@ -355,7 +354,7 @@ dear release manager. to get this done, merge the mpmath_cython.patch and the im
 archive/issue_comments_071648.json:
 ```json
 {
-    "body": "Harald's mpmath spkg has some changes that are not yet checked in:\n\n```sh\n[mvngu@sage mpmath-0.14]$ hg diff\ndiff -r fa9536e74343 SPKG.txt\n--- a/SPKG.txt\n+++ b/SPKG.txt\n@@ -21,6 +21,9 @@\n \n == Changelog ==\n \n+=== mpmath-0.14 (Harald Schilly, Feb 20th, 2010) ===\n+ * updated to mpmath-0.14.\n+\n === mpmath-0.13 (Fredrik Johansson, August 14th, 2009) ===\n  * Updated to mpmath-0.13.\n```\n\nI have committed these changes in his name and uploaded the resulting spkg to\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/mpmath/mpmath-0.14.spkg",
+    "body": "Harald's mpmath spkg has some changes that are not yet checked in:\n\n```sh\n[mvngu@sage mpmath-0.14]$ hg diff\ndiff -r fa9536e74343 SPKG.txt\n--- a/SPKG.txt\n+++ b/SPKG.txt\n@@ -21,6 +21,9 @@\n \n == Changelog ==\n \n+=== mpmath-0.14 (Harald Schilly, Feb 20th, 2010) ===\n+ * updated to mpmath-0.14.\n+\n === mpmath-0.13 (Fredrik Johansson, August 14th, 2009) ===\n  * Updated to mpmath-0.13.\n```\nI have committed these changes in his name and uploaded the resulting spkg to\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/mpmath/mpmath-0.14.spkg",
     "created_at": "2010-03-02T13:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
@@ -381,7 +380,6 @@ diff -r fa9536e74343 SPKG.txt
  === mpmath-0.13 (Fredrik Johansson, August 14th, 2009) ===
   * Updated to mpmath-0.13.
 ```
-
 I have committed these changes in his name and uploaded the resulting spkg to
 
 http://sage.math.washington.edu/home/mvngu/spkg/standard/mpmath/mpmath-0.14.spkg

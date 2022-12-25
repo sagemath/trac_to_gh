@@ -3,7 +3,7 @@
 archive/issues_008498.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nJean Gillibert reported me the following bug. Define\n\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\n\nThen the following works fine\n\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\n\nbut not this one :\n\n\n```\nP.has_good_reduction(p)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
+    "body": "Assignee: @JohnCremona\n\nJean Gillibert reported me the following bug. Define\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\nThen the following works fine\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\nbut not this one :\n\n```\nP.has_good_reduction(p)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
     "created_at": "2010-03-11T10:39:16Z",
     "labels": [
         "component: elliptic curves",
@@ -20,7 +20,6 @@ Assignee: @JohnCremona
 
 Jean Gillibert reported me the following bug. Define
 
-
 ```
 E = EllipticCurve('11a1')
 K.<t> = NumberField(x^2+47)
@@ -30,23 +29,18 @@ P = EK(-2, -1/2*t - 1/2)
 p = K.ideal(11)
 ```
 
-
 Then the following works fine
-
 
 ```
 sage: T.has_good_reduction(p)
 False
 ```
 
-
 but not this one :
-
 
 ```
 P.has_good_reduction(p)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8498
@@ -60,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8498
 archive/issue_comments_076585.json:
 ```json
 {
-    "body": "More precisely, I get the error\n\n\n```\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in has_good_reduction(self, P)\n   1554         F = Emin.defining_polynomial()\n   1555         for v in F.variables():\n-> 1556             if F.derivative(v)(xyz).valuation(P) == 0:\n   1557                 return True\n   1558         return False\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2743)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2844)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2611)()\n\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'valuation'\n```\n",
+    "body": "More precisely, I get the error\n\n```\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in has_good_reduction(self, P)\n   1554         F = Emin.defining_polynomial()\n   1555         for v in F.variables():\n-> 1556             if F.derivative(v)(xyz).valuation(P) == 0:\n   1557                 return True\n   1558         return False\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2743)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2844)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2611)()\n\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'valuation'\n```",
     "created_at": "2010-03-11T10:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
@@ -70,7 +64,6 @@ archive/issue_comments_076585.json:
 ```
 
 More precisely, I get the error
-
 
 ```
 /home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in has_good_reduction(self, P)
@@ -88,7 +81,6 @@ More precisely, I get the error
 
 AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'valuation'
 ```
-
 
 
 
@@ -245,7 +237,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076594.json:
 ```json
 {
-    "body": "Replying to [comment:5 wuthrich]:\n> All tests pass. Thanks for the very fast resolution of this.\n> \n> As you said, the patch fixes the problem for the `has_good_reduction` function, but the same issue may arise else where. Could you open another ticket for the general problem ?\n\nSee #8502",
+    "body": "Replying to [comment:5 wuthrich]:\n> All tests pass. Thanks for the very fast resolution of this.\n> \n> As you said, the patch fixes the problem for the `has_good_reduction` function, but the same issue may arise else where. Could you open another ticket for the general problem ?\n\n\nSee #8502",
     "created_at": "2010-03-11T22:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
@@ -258,6 +250,7 @@ Replying to [comment:5 wuthrich]:
 > All tests pass. Thanks for the very fast resolution of this.
 > 
 > As you said, the patch fixes the problem for the `has_good_reduction` function, but the same issue may arise else where. Could you open another ticket for the general problem ?
+
 
 See #8502
 

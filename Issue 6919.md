@@ -3,7 +3,7 @@
 archive/issues_006919.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  wbhart @burcin\n\nMariah Lenox reported:\n\n```\nR.<x> = PolynomialRing(ZZ)\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * x^31\nb = (A * x) * x^30\na == b   # prints \"False\" ???\n```\n\n\nBut\n\n```\nR.<x> = PolynomialRing(ZZ, implementation='NTL')\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * (x^31)\nb = A * x * (x^30)\na == b   \n```\n\ngives True.  So this is definitely either a bug in FLINT (highly likely), or a bug in our wrapper (much less likely, since our wrapper is so generic:\n\n```\ncpdef RingElement _mul_(self, RingElement right):\n    r\"\"\"\n    Returns self multiplied by right.\n\n    EXAMPLES::\n\n        sage: R.<x> = PolynomialRing(ZZ)\n        sage: (x - 2)*(x^2 - 8*x + 16)\n        x^3 - 10*x^2 + 32*x - 32\n    \"\"\"\n    cdef Polynomial_integer_dense_flint x = self._new()\n    _sig_on\n    fmpz_poly_mul(x.__poly, self.__poly,\n            (<Polynomial_integer_dense_flint>right).__poly)\n    _sig_off\n    return x\n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6919\n\n",
+    "body": "Assignee: somebody\n\nCC:  wbhart @burcin\n\nMariah Lenox reported:\n\n```\nR.<x> = PolynomialRing(ZZ)\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * x^31\nb = (A * x) * x^30\na == b   # prints \"False\" ???\n```\n\nBut\n\n```\nR.<x> = PolynomialRing(ZZ, implementation='NTL')\nA = 2^(2^17+2^15)  # note the 2 rather than the \"s\"\na = A * (x^31)\nb = A * x * (x^30)\na == b   \n```\ngives True.  So this is definitely either a bug in FLINT (highly likely), or a bug in our wrapper (much less likely, since our wrapper is so generic:\n\n```\ncpdef RingElement _mul_(self, RingElement right):\n    r\"\"\"\n    Returns self multiplied by right.\n\n    EXAMPLES::\n\n        sage: R.<x> = PolynomialRing(ZZ)\n        sage: (x - 2)*(x^2 - 8*x + 16)\n        x^3 - 10*x^2 + 32*x - 32\n    \"\"\"\n    cdef Polynomial_integer_dense_flint x = self._new()\n    _sig_on\n    fmpz_poly_mul(x.__poly, self.__poly,\n            (<Polynomial_integer_dense_flint>right).__poly)\n    _sig_off\n    return x\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6919\n\n",
     "created_at": "2009-09-10T18:56:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,7 +31,6 @@ b = (A * x) * x^30
 a == b   # prints "False" ???
 ```
 
-
 But
 
 ```
@@ -41,7 +40,6 @@ a = A * (x^31)
 b = A * x * (x^30)
 a == b   
 ```
-
 gives True.  So this is definitely either a bug in FLINT (highly likely), or a bug in our wrapper (much less likely, since our wrapper is so generic:
 
 ```
@@ -62,7 +60,6 @@ cpdef RingElement _mul_(self, RingElement right):
     _sig_off
     return x
 ```
-
 }}}
 
 Issue created by migration from https://trac.sagemath.org/ticket/6919
@@ -76,7 +73,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6919
 archive/issue_comments_057011.json:
 ```json
 {
-    "body": "\n```\nBill Hart <goodwillhart@googlemail.com> wrote:\n<snip>\n> It was caused by a bug in the FLINT FFT (the first ever found). I\n> tracked the bug down to a specific piece of code and David Harvey has\n> supplied a fix. There will be a new version of FLINT to patch this\n> bug.\n```\n",
+    "body": "```\nBill Hart <goodwillhart@googlemail.com> wrote:\n<snip>\n> It was caused by a bug in the FLINT FFT (the first ever found). I\n> tracked the bug down to a specific piece of code and David Harvey has\n> supplied a fix. There will be a new version of FLINT to patch this\n> bug.\n```",
     "created_at": "2009-09-16T13:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6919",
     "type": "issue_comment",
@@ -84,7 +81,6 @@ archive/issue_comments_057011.json:
     "user": "https://github.com/burcin"
 }
 ```
-
 
 ```
 Bill Hart <goodwillhart@googlemail.com> wrote:
@@ -94,7 +90,6 @@ Bill Hart <goodwillhart@googlemail.com> wrote:
 > supplied a fix. There will be a new version of FLINT to patch this
 > bug.
 ```
-
 
 
 

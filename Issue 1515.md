@@ -3,7 +3,7 @@
 archive/issues_001515.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\ndef f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x\nshow(ParametricSurface(f, (srange(0,12.4,0.1), srange(0.1,2,0.1))))\n```\n\ndoesn't render. Also\n\n\n```\n[08:48am] williamstein: This should work but doesn't:\n[08:48am] williamstein: S = ParametricSurface(lambda (x,y):(cos(x),\nsin(x), y), domain=(range(10),range(10)))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1515\n\n",
+    "body": "Assignee: @williamstein\n\n```\ndef f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x\nshow(ParametricSurface(f, (srange(0,12.4,0.1), srange(0.1,2,0.1))))\n```\ndoesn't render. Also\n\n```\n[08:48am] williamstein: This should work but doesn't:\n[08:48am] williamstein: S = ParametricSurface(lambda (x,y):(cos(x),\nsin(x), y), domain=(range(10),range(10)))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1515\n\n",
     "created_at": "2007-12-15T01:59:55Z",
     "labels": [
         "component: graphics",
@@ -18,21 +18,17 @@ archive/issues_001515.json:
 ```
 Assignee: @williamstein
 
-
 ```
 def f(x,y): return cos(x)*sin(y), sin(x)*sin(y), cos(y)+log(tan(y/2))+0.2*x
 show(ParametricSurface(f, (srange(0,12.4,0.1), srange(0.1,2,0.1))))
 ```
-
 doesn't render. Also
-
 
 ```
 [08:48am] williamstein: This should work but doesn't:
 [08:48am] williamstein: S = ParametricSurface(lambda (x,y):(cos(x),
 sin(x), y), domain=(range(10),range(10)))
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1515
 
@@ -63,7 +59,7 @@ Attachment [parametric-surface.diff](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_009687.json:
 ```json
 {
-    "body": "Now the first example works. Also, the second example almost does\n\n\n```\nS = ParametricSurface(lambda x,y:(cos(x),sin(x), y), domain=(range(10),range(10)))\n```\n\n\n(Note the missing ()'s, it expects to arguments, not a tuple).",
+    "body": "Now the first example works. Also, the second example almost does\n\n```\nS = ParametricSurface(lambda x,y:(cos(x),sin(x), y), domain=(range(10),range(10)))\n```\n\n(Note the missing ()'s, it expects to arguments, not a tuple).",
     "created_at": "2007-12-15T02:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1515",
     "type": "issue_comment",
@@ -74,11 +70,9 @@ archive/issue_comments_009687.json:
 
 Now the first example works. Also, the second example almost does
 
-
 ```
 S = ParametricSurface(lambda x,y:(cos(x),sin(x), y), domain=(range(10),range(10)))
 ```
-
 
 (Note the missing ()'s, it expects to arguments, not a tuple).
 

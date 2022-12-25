@@ -309,7 +309,7 @@ Attachment [trac_7197_basic_stats_part5.patch](tarball://root/attachments/some-u
 archive/issue_comments_059595.json:
 ```json
 {
-    "body": "REPORT 2:\n\n1. a little too spartan:\n\n```\n\"\"\"\nBasic Statistics\n\nThis file contains basic descriptive functions.\n\nAUTHOR:\n    - Andrew Hou (11/06/2009)\n...\n\"\"\"\n```\n\n\n2. Make sure there is a test that tests this code:\n\n```\n    \"\"\"\n    if hasattr(v, 'mean'): return v.mean()\n```\n\n\n3. Same for mode:\n\n```\n    if hasattr(v, 'mode'): return v.mode()\n```\n\n\n4. Same for this:\n\n```\n    if hasattr(v, 'standard_deviation'): return v.standard_deviation(bias=bias)\n```\n\n\n5. Type checking in python should always use isinstance:\n\n```\n    if type(v) is numpy.ndarray:\n    if type(v) == numpy.ndarray:\n```\n\nshould be\n\n```\n     if isinstance(v, numpy.ndarray):\n```\n\n\n6. Test this:\n\n```\n    if hasattr(v, 'variance'): return v.variance(bias = bias)\n```\n\n\n7. Change this:\n\n```\n    if bias == True:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    elif bias == False:\n```\n\nto\n\n```\n    if bias:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    else:\n```\n\n\n\n8. Make sure this is tested:\n\n```\n    if hasattr(v, 'median'): return v.median()\n```\n\n\n9. Weird \"\"\" in moving_average:\n\n```\n \t318\t                                                                                    \"\"\" \n \t319\t    x = []    \n```\n\n\n10. Change\n\n```\n    bin_size = len(v)/bins     \n```\n\nto floor division:\n\n```\n    bin_size = int(len(v)//bins)\n```\n\n\n11. You can do this at the very end of each docstring if you want...\n\n```\n    AUTHOR:\n\n       - Andrew Hou (11/06/2009)\n```\n",
+    "body": "REPORT 2:\n\n1. a little too spartan:\n\n```\n\"\"\"\nBasic Statistics\n\nThis file contains basic descriptive functions.\n\nAUTHOR:\n    - Andrew Hou (11/06/2009)\n...\n\"\"\"\n```\n\n2. Make sure there is a test that tests this code:\n\n```\n    \"\"\"\n    if hasattr(v, 'mean'): return v.mean()\n```\n\n3. Same for mode:\n\n```\n    if hasattr(v, 'mode'): return v.mode()\n```\n\n4. Same for this:\n\n```\n    if hasattr(v, 'standard_deviation'): return v.standard_deviation(bias=bias)\n```\n\n5. Type checking in python should always use isinstance:\n\n```\n    if type(v) is numpy.ndarray:\n    if type(v) == numpy.ndarray:\n```\nshould be\n\n```\n     if isinstance(v, numpy.ndarray):\n```\n\n6. Test this:\n\n```\n    if hasattr(v, 'variance'): return v.variance(bias = bias)\n```\n\n7. Change this:\n\n```\n    if bias == True:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    elif bias == False:\n```\nto\n\n```\n    if bias:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    else:\n```\n\n\n8. Make sure this is tested:\n\n```\n    if hasattr(v, 'median'): return v.median()\n```\n\n9. Weird \"\"\" in moving_average:\n\n```\n \t318\t                                                                                    \"\"\" \n \t319\t    x = []    \n```\n\n10. Change\n\n```\n    bin_size = len(v)/bins     \n```\nto floor division:\n\n```\n    bin_size = int(len(v)//bins)\n```\n\n11. You can do this at the very end of each docstring if you want...\n\n```\n    AUTHOR:\n\n       - Andrew Hou (11/06/2009)\n```",
     "created_at": "2009-11-12T22:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
@@ -334,7 +334,6 @@ AUTHOR:
 """
 ```
 
-
 2. Make sure there is a test that tests this code:
 
 ```
@@ -342,13 +341,11 @@ AUTHOR:
     if hasattr(v, 'mean'): return v.mean()
 ```
 
-
 3. Same for mode:
 
 ```
     if hasattr(v, 'mode'): return v.mode()
 ```
-
 
 4. Same for this:
 
@@ -356,27 +353,23 @@ AUTHOR:
     if hasattr(v, 'standard_deviation'): return v.standard_deviation(bias=bias)
 ```
 
-
 5. Type checking in python should always use isinstance:
 
 ```
     if type(v) is numpy.ndarray:
     if type(v) == numpy.ndarray:
 ```
-
 should be
 
 ```
      if isinstance(v, numpy.ndarray):
 ```
 
-
 6. Test this:
 
 ```
     if hasattr(v, 'variance'): return v.variance(bias = bias)
 ```
-
 
 7. Change this:
 
@@ -388,7 +381,6 @@ should be
         return x/len(v)
     elif bias == False:
 ```
-
 to
 
 ```
@@ -401,13 +393,11 @@ to
 ```
 
 
-
 8. Make sure this is tested:
 
 ```
     if hasattr(v, 'median'): return v.median()
 ```
-
 
 9. Weird """ in moving_average:
 
@@ -416,19 +406,16 @@ to
  	319	    x = []    
 ```
 
-
 10. Change
 
 ```
     bin_size = len(v)/bins     
 ```
-
 to floor division:
 
 ```
     bin_size = int(len(v)//bins)
 ```
-
 
 11. You can do this at the very end of each docstring if you want...
 
@@ -437,7 +424,6 @@ to floor division:
 
        - Andrew Hou (11/06/2009)
 ```
-
 
 
 

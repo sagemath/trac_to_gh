@@ -3,7 +3,7 @@
 archive/issues_001537.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
+    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
     "created_at": "2007-12-16T10:34:55Z",
     "labels": [
         "component: graphics",
@@ -25,14 +25,12 @@ sage: from sage.plot.plot3d.all import *
 sage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')
 sage: S.show(viewer='jmol')
 ```
-
 or even
 
 ```
 sage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')
 sage: S.show(viewer='jmol')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1537
 

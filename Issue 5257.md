@@ -3,7 +3,7 @@
 archive/issues_005257.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the browser, I get:\n\n\n```\nInternal Server Error\nAn error occurred rendering the requested page. More information is available in the server log.\n```\n\n\nand I get a traceback as well:\n\n\n```\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 186, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 289, in _continue\n\t    self.unpause()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 285, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 1633, in render\n\t    s = notebook.user_history_html(self.username)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 842, in user_history_html\n\t    \"\"\"%(username, self.html_worksheet_list_top(username, actions=False), t)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1318, in html_worksheet_list_top\n\t    s += self.html_new_or_upload()\n\texceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5257\n\n",
+    "body": "Assignee: boothby\n\nIn the browser, I get:\n\n```\nInternal Server Error\nAn error occurred rendering the requested page. More information is available in the server log.\n```\n\nand I get a traceback as well:\n\n```\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:\n2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 186, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 289, in _continue\n\t    self.unpause()\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 285, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/internet/defer.py\", line 328, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/Twisted-8.1.0-py2.5-linux-i686.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 1633, in render\n\t    s = notebook.user_history_html(self.username)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 842, in user_history_html\n\t    \"\"\"%(username, self.html_worksheet_list_top(username, actions=False), t)\n\t  File \"/home/grout/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1318, in html_worksheet_list_top\n\t    s += self.html_new_or_upload()\n\texceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5257\n\n",
     "created_at": "2009-02-13T18:48:32Z",
     "labels": [
         "component: notebook",
@@ -20,15 +20,12 @@ Assignee: boothby
 
 In the browser, I get:
 
-
 ```
 Internal Server Error
 An error occurred rendering the requested page. More information is available in the server log.
 ```
 
-
 and I get a traceback as well:
-
 
 ```
 2009-02-13 12:39:32-0600 [HTTPChannel,101,127.0.0.1] Exception rendering:
@@ -61,7 +58,6 @@ and I get a traceback as well:
 	    s += self.html_new_or_upload()
 	exceptions.AttributeError: 'Notebook' object has no attribute 'html_new_or_upload'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5257
 
@@ -169,7 +165,7 @@ Changing assignee from boothby to @mwhansen.
 archive/issue_comments_040270.json:
 ```json
 {
-    "body": "The patch looks good, but it needs to be rebased against 3.3.rc1 once it is out:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5257.patch \npatching file sage/server/notebook/notebook.py\nReversed (or previously applied) patch detected!  Assume -R? [n] Y\nApply anyway? [n] Y\nSkipping patch.\n3 out of 3 hunks ignored -- saving rejects to file sage/server/notebook/notebook.py.rej\npatching file sage/server/notebook/templates/history.html\npatching file sage/server/notebook/templates/list_top.html\npatching file sage/server/notebook/templates/list_top_public.html\npatching file sage/server/notebook/templates/worksheet_listing.html\npatching file sage/server/notebook/twist.py\n```\n\n\nCheers,\n\nMichael",
+    "body": "The patch looks good, but it needs to be rebased against 3.3.rc1 once it is out:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc1/devel/sage$ patch -p1 --dry-run < trac_5257.patch \npatching file sage/server/notebook/notebook.py\nReversed (or previously applied) patch detected!  Assume -R? [n] Y\nApply anyway? [n] Y\nSkipping patch.\n3 out of 3 hunks ignored -- saving rejects to file sage/server/notebook/notebook.py.rej\npatching file sage/server/notebook/templates/history.html\npatching file sage/server/notebook/templates/list_top.html\npatching file sage/server/notebook/templates/list_top_public.html\npatching file sage/server/notebook/templates/worksheet_listing.html\npatching file sage/server/notebook/twist.py\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T08:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5257",
     "type": "issue_comment",
@@ -193,7 +189,6 @@ patching file sage/server/notebook/templates/list_top_public.html
 patching file sage/server/notebook/templates/worksheet_listing.html
 patching file sage/server/notebook/twist.py
 ```
-
 
 Cheers,
 

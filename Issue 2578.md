@@ -3,7 +3,7 @@
 archive/issues_002578.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
     "created_at": "2008-03-17T23:29:04Z",
     "labels": [
         "component: calculus",
@@ -29,10 +29,8 @@ The following code causes Sage to lockup:
 Bn = bernoulli_polynomial(x,n)
 ```
 
-
 The command "bernpoly(x,n)" in Maxima does not lock up but Maxima
 will not compute symbolically.
-
 
 ```
 sage: B3 = bernoulli_polynomial(x,3)
@@ -49,7 +47,6 @@ KeyboardInterrupt
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2578
 
 
@@ -61,7 +58,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2578
 archive/issue_comments_017593.json:
 ```json
 {
-    "body": "I forgot to define (n) as a variable in the above session.\nNow, Sage does not lockup but instead gives the traceback.\n\n\n```\nvar('y,x,n')\ny = bernoulli_polynomial(x,n)\n\nException (click to the left for traceback):\n...\nNameError: name 'bernpoly' is not defined\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/server2/sage_notebook/worksheets/5463/24/code/18.py\",\nline 7, in <module>\n   y = bernoulli_polynomial(x,n)\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sympy/\nplotting/\", line 1, in <module>\n\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/\ncombinat/combinat.py\", line 1806, in bernoulli_polynomial\n   return sage_eval(maxima.eval(\"bernpoly(x,%s)\"%n), {'x':x})\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/misc/\nsage_eval.py\", line 110, in sage_eval\n   return eval(p, sage.all.__dict__, locals)\n File \"<string>\", line 1, in <module>\nNameError: name 'bernpoly' is not defined\n```\n",
+    "body": "I forgot to define (n) as a variable in the above session.\nNow, Sage does not lockup but instead gives the traceback.\n\n```\nvar('y,x,n')\ny = bernoulli_polynomial(x,n)\n\nException (click to the left for traceback):\n...\nNameError: name 'bernpoly' is not defined\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/server2/sage_notebook/worksheets/5463/24/code/18.py\",\nline 7, in <module>\n   y = bernoulli_polynomial(x,n)\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sympy/\nplotting/\", line 1, in <module>\n\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/\ncombinat/combinat.py\", line 1806, in bernoulli_polynomial\n   return sage_eval(maxima.eval(\"bernpoly(x,%s)\"%n), {'x':x})\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/misc/\nsage_eval.py\", line 110, in sage_eval\n   return eval(p, sage.all.__dict__, locals)\n File \"<string>\", line 1, in <module>\nNameError: name 'bernpoly' is not defined\n```",
     "created_at": "2008-03-17T23:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
@@ -72,7 +69,6 @@ archive/issue_comments_017593.json:
 
 I forgot to define (n) as a variable in the above session.
 Now, Sage does not lockup but instead gives the traceback.
-
 
 ```
 var('y,x,n')
@@ -99,7 +95,6 @@ sage_eval.py", line 110, in sage_eval
  File "<string>", line 1, in <module>
 NameError: name 'bernpoly' is not defined
 ```
-
 
 
 

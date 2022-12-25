@@ -3,7 +3,7 @@
 archive/issues_009948.json:
 ```json
 {
-    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: major, index, generating, polynomial, permutation\n\nIn the spirit of factorization of the code, add a method major_index for parents/elements inheriting from FinitePrmutationGoups()\n\n\n```\nsage: DihedralGroup(5).major_index()\nq^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1\nsage: PermutationGroup([[(1,2,3,4,5)]]).major_index()\nq^4 + q^3 + q^2 + q + 1\nsage: SymmetricGroup(3).major_index()\nq^3 + 2*q^2 + 2*q + 1\nsage: TransitiveGroup(5,3).major_index()\nq^10 + q^9 + 2*q^8 + 2*q^7 + 3*q^6 + 2*q^5 + 3*q^4 + 2*q^3 + 2*q^2 + q + 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9949\n\n",
+    "body": "Assignee: nborie\n\nCC:  sage-combinat @nthiery\n\nKeywords: major, index, generating, polynomial, permutation\n\nIn the spirit of factorization of the code, add a method major_index for parents/elements inheriting from FinitePrmutationGoups()\n\n```\nsage: DihedralGroup(5).major_index()\nq^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1\nsage: PermutationGroup([[(1,2,3,4,5)]]).major_index()\nq^4 + q^3 + q^2 + q + 1\nsage: SymmetricGroup(3).major_index()\nq^3 + 2*q^2 + 2*q + 1\nsage: TransitiveGroup(5,3).major_index()\nq^10 + q^9 + 2*q^8 + 2*q^7 + 3*q^6 + 2*q^5 + 3*q^4 + 2*q^3 + 2*q^2 + q + 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9949\n\n",
     "created_at": "2010-09-19T16:49:15Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ Keywords: major, index, generating, polynomial, permutation
 
 In the spirit of factorization of the code, add a method major_index for parents/elements inheriting from FinitePrmutationGoups()
 
-
 ```
 sage: DihedralGroup(5).major_index()
 q^10 + q^9 + q^8 + q^7 + q^6 + q^4 + q^3 + q^2 + q + 1
@@ -34,7 +33,6 @@ q^3 + 2*q^2 + 2*q + 1
 sage: TransitiveGroup(5,3).major_index()
 q^10 + q^9 + 2*q^8 + 2*q^7 + 3*q^6 + 2*q^5 + 3*q^4 + 2*q^3 + 2*q^2 + q + 1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9949
 
@@ -185,7 +183,7 @@ It is now ready for review.
 archive/issue_comments_099036.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\nIf this only applies to symmetric groups, shouldn't it just return\n\n\n```\nsage.combinat.q_analogues.q_factorial(n)\n```\n\n?\n\nThis would be much more efficient than enumerating over the group.",
+    "body": "Hi Nicolas,\n\nIf this only applies to symmetric groups, shouldn't it just return\n\n```\nsage.combinat.q_analogues.q_factorial(n)\n```\n?\n\nThis would be much more efficient than enumerating over the group.",
     "created_at": "2011-02-02T19:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -198,11 +196,9 @@ Hi Nicolas,
 
 If this only applies to symmetric groups, shouldn't it just return
 
-
 ```
 sage.combinat.q_analogues.q_factorial(n)
 ```
-
 ?
 
 This would be much more efficient than enumerating over the group.
@@ -415,7 +411,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_099047.json:
 ```json
 {
-    "body": "Replying to [comment:10 jdemeyer]:\n> Please change the commit message of the patches to something meaningful.  Make sure the ticket number appears on the first line of the commit message.\n\nOops, I should have caught this. Fixed!",
+    "body": "Replying to [comment:10 jdemeyer]:\n> Please change the commit message of the patches to something meaningful.  Make sure the ticket number appears on the first line of the commit message.\n\n\nOops, I should have caught this. Fixed!",
     "created_at": "2011-04-07T14:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -426,6 +422,7 @@ archive/issue_comments_099047.json:
 
 Replying to [comment:10 jdemeyer]:
 > Please change the commit message of the patches to something meaningful.  Make sure the ticket number appears on the first line of the commit message.
+
 
 Oops, I should have caught this. Fixed!
 
@@ -526,7 +523,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_099053.json:
 ```json
 {
-    "body": "Replying to [comment:14 jdemeyer]:\n> May I assume that the description is wrong and that **three** patches need to be applied?\n\nSorry, I uploaded the wrong file from the sage-combinat queue, which probably caused the confusion. I confirm that only the advertised patch shall be applied.\n\nThanks!",
+    "body": "Replying to [comment:14 jdemeyer]:\n> May I assume that the description is wrong and that **three** patches need to be applied?\n\n\nSorry, I uploaded the wrong file from the sage-combinat queue, which probably caused the confusion. I confirm that only the advertised patch shall be applied.\n\nThanks!",
     "created_at": "2011-04-07T14:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -537,6 +534,7 @@ archive/issue_comments_099053.json:
 
 Replying to [comment:14 jdemeyer]:
 > May I assume that the description is wrong and that **three** patches need to be applied?
+
 
 Sorry, I uploaded the wrong file from the sage-combinat queue, which probably caused the confusion. I confirm that only the advertised patch shall be applied.
 
@@ -585,7 +583,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_099056.json:
 ```json
 {
-    "body": "Replying to [comment:16 nthiery]:\n> I confirm that only the advertised patch shall be applied.\n\nThis statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).",
+    "body": "Replying to [comment:16 nthiery]:\n> I confirm that only the advertised patch shall be applied.\n\n\nThis statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).",
     "created_at": "2011-04-07T14:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -596,6 +594,7 @@ archive/issue_comments_099056.json:
 
 Replying to [comment:16 nthiery]:
 > I confirm that only the advertised patch shall be applied.
+
 
 This statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).
 
@@ -624,7 +623,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099058.json:
 ```json
 {
-    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:16 nthiery]:\n> > I confirm that only the advertised patch shall be applied.\n> \n> This statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).\n\nSorry if there is any confusion, but the reduction to a subset dates back from 7 weeks ago, and was already given a positive review by Jason Bandlow. I only changed the patch header from trac_9949_major_index_final-nb.patch. So I think it should be positive review.\n\nDo you mind setting it back if we are now on the same line?",
+    "body": "Replying to [comment:18 jdemeyer]:\n> Replying to [comment:16 nthiery]:\n> > I confirm that only the advertised patch shall be applied.\n\n> \n> This statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).\n\n\nSorry if there is any confusion, but the reduction to a subset dates back from 7 weeks ago, and was already given a positive review by Jason Bandlow. I only changed the patch header from trac_9949_major_index_final-nb.patch. So I think it should be positive review.\n\nDo you mind setting it back if we are now on the same line?",
     "created_at": "2011-04-07T15:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9948",
     "type": "issue_comment",
@@ -636,8 +635,10 @@ archive/issue_comments_099058.json:
 Replying to [comment:18 jdemeyer]:
 > Replying to [comment:16 nthiery]:
 > > I confirm that only the advertised patch shall be applied.
+
 > 
 > This statement is a non-trivial change to the ticket and needs to be reviewed (since your patch is only a subset of the previous patches).
+
 
 Sorry if there is any confusion, but the reduction to a subset dates back from 7 weeks ago, and was already given a positive review by Jason Bandlow. I only changed the patch header from trac_9949_major_index_final-nb.patch. So I think it should be positive review.
 

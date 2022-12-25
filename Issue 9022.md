@@ -3,7 +3,7 @@
 archive/issues_009022.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* 'touch' spkg/installed/gdmodule-0.56.p7 to fool Sage into thinking gdmodule had installed, as it is failing to (see #9021)\n\n## The problem\n\nOne can see that _socket is not being built:\n\n```\ngcc -m64 -fPIC -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/./Include -I. -IInclude -I./Include -I/export/home/drkirkby/sage-4.4.2/local/include -I/usr/local/include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src -c /export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.o\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018makesockaddr\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1103: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: \u2018SIOCGIFNAME\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: (Each undeclared identifier is reported only once\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: for each function it appears in.)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018getsockaddrarg\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1411: error: \u2018SIOCGIFINDEX\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1423: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018init_socket\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4589: error: \u2018PACKET_LOOPBACK\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4590: error: \u2018PACKET_FASTROUTE\u2019 undeclared (first use in this function)\nbuilding '_ssl' extension\n```\n\nThis is shown later when the list of failed modules is displayed in the Sage build log. \n\n\n```\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\n\nThis then causes ipython to fail to build. \n\n\n```\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/iplib.py\", line 71, in <module>\n    from IPython.Prompts import CachedOutput\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/Prompts.py\", line 23, in <module>\n    import socket\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/socket.py\", line 46, in <module>\n    import _socket\nImportError: No module named _socket\nError installing Ipython\n\nreal    0m0.186s\nuser    0m0.136s\nsys     0m0.046s\nsage: An error occurred while installing ipython-0.9.1.p0\n```\n\n\n## Likely hints as to the cause\nThe following couple of links have something written about the _socket issue:\n\n* http://www.opensolaris.org/jive/thread.jspa?threadID=5426&tstart=0\n* http://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer\n\nAs of this minute, I don't have a solution for this. \n\nThe solution proposed at \n\nhttp://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer \n\nmay be workable, though I would restrict the patch to just OpenSolaris, not just any Solaris release, which is what suspect his\n\n\n```\n#if defined(__sun)\n#  define ifr_ifindex ifr_index\n#  undef HAVE_NETPACKET_PACKET_H\n#endif\n```\n\n\nwill do. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9022\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* 'touch' spkg/installed/gdmodule-0.56.p7 to fool Sage into thinking gdmodule had installed, as it is failing to (see #9021)\n\n## The problem\n\nOne can see that _socket is not being built:\n\n```\ngcc -m64 -fPIC -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/./Include -I. -IInclude -I./Include -I/export/home/drkirkby/sage-4.4.2/local/include -I/usr/local/include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src -c /export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.o\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018makesockaddr\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1103: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: \u2018SIOCGIFNAME\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: (Each undeclared identifier is reported only once\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: for each function it appears in.)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018getsockaddrarg\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1411: error: \u2018SIOCGIFINDEX\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1423: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018init_socket\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4589: error: \u2018PACKET_LOOPBACK\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4590: error: \u2018PACKET_FASTROUTE\u2019 undeclared (first use in this function)\nbuilding '_ssl' extension\n```\nThis is shown later when the list of failed modules is displayed in the Sage build log. \n\n```\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\nThis then causes ipython to fail to build. \n\n```\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/iplib.py\", line 71, in <module>\n    from IPython.Prompts import CachedOutput\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/Prompts.py\", line 23, in <module>\n    import socket\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/socket.py\", line 46, in <module>\n    import _socket\nImportError: No module named _socket\nError installing Ipython\n\nreal    0m0.186s\nuser    0m0.136s\nsys     0m0.046s\nsage: An error occurred while installing ipython-0.9.1.p0\n```\n\n## Likely hints as to the cause\nThe following couple of links have something written about the _socket issue:\n\n* http://www.opensolaris.org/jive/thread.jspa?threadID=5426&tstart=0\n* http://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer\n\nAs of this minute, I don't have a solution for this. \n\nThe solution proposed at \n\nhttp://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer \n\nmay be workable, though I would restrict the patch to just OpenSolaris, not just any Solaris release, which is what suspect his\n\n```\n#if defined(__sun)\n#  define ifr_ifindex ifr_index\n#  undef HAVE_NETPACKET_PACKET_H\n#endif\n```\n\nwill do. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9022\n\n",
     "created_at": "2010-05-23T19:23:26Z",
     "labels": [
         "component: porting: solaris",
@@ -29,7 +29,6 @@ CC:  @jaapspies
 ## How gcc 4.4.4 was configured
 Since the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. 
 
-
 ```
 drkirkby@hawk:~/sage-4.4.2$ gcc -v
 Using built-in specs.
@@ -38,7 +37,6 @@ Configured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=
 Thread model: posix
 gcc version 4.4.4 (GCC) 
 ```
-
 
 gcc 4.3.4 was failing to build iconv. 
 
@@ -68,9 +66,7 @@ gcc -m64 -fPIC -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I
 /export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4590: error: ‘PACKET_FASTROUTE’ undeclared (first use in this function)
 building '_ssl' extension
 ```
-
 This is shown later when the list of failed modules is displayed in the Sage build log. 
-
 
 ```
 Failed to build these modules:
@@ -78,9 +74,7 @@ _curses            _curses_panel      _socket
 _ssl               _tkinter           sunaudiodev
 ```
 
-
 This then causes ipython to fail to build. 
-
 
 ```
   File "/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/iplib.py", line 71, in <module>
@@ -98,7 +92,6 @@ sys     0m0.046s
 sage: An error occurred while installing ipython-0.9.1.p0
 ```
 
-
 ## Likely hints as to the cause
 The following couple of links have something written about the _socket issue:
 
@@ -113,14 +106,12 @@ http://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-uni
 
 may be workable, though I would restrict the patch to just OpenSolaris, not just any Solaris release, which is what suspect his
 
-
 ```
 #if defined(__sun)
 #  define ifr_ifindex ifr_index
 #  undef HAVE_NETPACKET_PACKET_H
 #endif
 ```
-
 
 will do. 
 

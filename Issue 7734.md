@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_066342.json:
 ```json
 {
-    "body": "1. There should always be an example of the bug you are fixing in the patch, always always always. We need a mug shot, so the bug doesn't show its face again :) I added this, as well as several other tests, which have exposed other corner case bugs, such as:\n\n```\nsage: g = Graph(20)\nsage: vertex_coloring(g, hex_colors=True)\n{'#ff0000': 0}\n```\n\nI've fixed these.\n\n2. It seems to take some time to add constraints to the problem, which is pointless if no solver is installed. Can you add a patch that runs a trivial test before setting up the problem, to see if it is installed?",
+    "body": "1. There should always be an example of the bug you are fixing in the patch, always always always. We need a mug shot, so the bug doesn't show its face again :) I added this, as well as several other tests, which have exposed other corner case bugs, such as:\n\n```\nsage: g = Graph(20)\nsage: vertex_coloring(g, hex_colors=True)\n{'#ff0000': 0}\n```\nI've fixed these.\n\n2. It seems to take some time to add constraints to the problem, which is pointless if no solver is installed. Can you add a patch that runs a trivial test before setting up the problem, to see if it is installed?",
     "created_at": "2009-12-18T21:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7734",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ sage: g = Graph(20)
 sage: vertex_coloring(g, hex_colors=True)
 {'#ff0000': 0}
 ```
-
 I've fixed these.
 
 2. It seems to take some time to add constraints to the problem, which is pointless if no solver is installed. Can you add a patch that runs a trivial test before setting up the problem, to see if it is installed?
@@ -153,7 +152,7 @@ Concerning your second point : do you have an example for which it takes some ti
 archive/issue_comments_066346.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n> Thank you for your help !!!\n> \n> do you have an example for which it takes some time ? I would also like to try to improve it a bit :-)\n> \n\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: vertex_coloring(g)\n```\n\nIt takes longer to set up the constraint than to solve the problem, on my laptop.",
+    "body": "Replying to [comment:5 ncohen]:\n> Thank you for your help !!!\n> \n> do you have an example for which it takes some time ? I would also like to try to improve it a bit :-)\n> \n\n\n```\nsage: from sage.graphs.graph_coloring import vertex_coloring\nsage: g = graphs.CirculantGraph(120, [2,3,5,7])\nsage: vertex_coloring(g)\n```\nIt takes longer to set up the constraint than to solve the problem, on my laptop.",
     "created_at": "2009-12-19T08:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7734",
     "type": "issue_comment",
@@ -174,7 +173,6 @@ sage: from sage.graphs.graph_coloring import vertex_coloring
 sage: g = graphs.CirculantGraph(120, [2,3,5,7])
 sage: vertex_coloring(g)
 ```
-
 It takes longer to set up the constraint than to solve the problem, on my laptop.
 
 

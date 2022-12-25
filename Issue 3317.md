@@ -88,7 +88,7 @@ Right now we have the code in sage/misc/citation.pyx.  Is that good enough so th
 archive/issue_comments_022928.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Right now we have the code in sage/misc/citation.pyx.  Is that good enough so that this ticket should be closed?\n\nThis basically does what is described in comment:1. We need to do much better than that.\n\nWe are working on a system which allows developers to annotate (decorate?) functions with citation information. The decorated functions will add the citation entries to a central database at runtime. This database can be queried to get the list of packages/papers/algorithms used in various formats.\n\nIn short, I don't think we can close this yet.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Right now we have the code in sage/misc/citation.pyx.  Is that good enough so that this ticket should be closed?\n\n\nThis basically does what is described in comment:1. We need to do much better than that.\n\nWe are working on a system which allows developers to annotate (decorate?) functions with citation information. The decorated functions will add the citation entries to a central database at runtime. This database can be queried to get the list of packages/papers/algorithms used in various formats.\n\nIn short, I don't think we can close this yet.",
     "created_at": "2011-03-22T18:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -99,6 +99,7 @@ archive/issue_comments_022928.json:
 
 Replying to [comment:3 jhpalmieri]:
 > Right now we have the code in sage/misc/citation.pyx.  Is that good enough so that this ticket should be closed?
+
 
 This basically does what is described in comment:1. We need to do much better than that.
 
@@ -137,7 +138,7 @@ Cheers.
 archive/issue_comments_022930.json:
 ```json
 {
-    "body": "Hi!  If this doesn't slow things down, it is a really good idea, especially given that Sage is not trying to cover up the other programs inside of it.   I assume that (given the comments on the blog) you will post timing information in critical areas eventually.\n\nI have one substantive comment, I think:\n> You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg\nHmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  \n\nOr are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?\n\nHere follow a couple silly comments that don't actually review much, but might still be worthwhile to ponder.\n* Missing \"to\": `in order make it faster` \n* A *lot* of the examples refer to Michael Brickenstein, which seems somewhat less than advisable.  I mean no disrespect here - clearly he is contributing loads and deserves citations!  But for the first-time reader of this documentation, it would be nice to have a bigger variety of citations, perhaps even beyond Sage components to the subcomponents.  For instance, the ones in the bibtex patch.\n* What does [trac-3317-example-usage.patch] exactly have an example of?  I see the ``@`cites(citable_items.slimgb)` - is this demonstrating that we get the same thing through the new decorator as we would have from `sage.misc.citation`?  This comment is probably just my ignorance speaking, feel free to ignore it.\n\nGood luck!",
+    "body": "Hi!  If this doesn't slow things down, it is a really good idea, especially given that Sage is not trying to cover up the other programs inside of it.   I assume that (given the comments on the blog) you will post timing information in critical areas eventually.\n\nI have one substantive comment, I think:\n> You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg\n\nHmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  \n\nOr are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?\n\nHere follow a couple silly comments that don't actually review much, but might still be worthwhile to ponder.\n* Missing \"to\": `in order make it faster` \n* A *lot* of the examples refer to Michael Brickenstein, which seems somewhat less than advisable.  I mean no disrespect here - clearly he is contributing loads and deserves citations!  But for the first-time reader of this documentation, it would be nice to have a bigger variety of citations, perhaps even beyond Sage components to the subcomponents.  For instance, the ones in the bibtex patch.\n* What does [trac-3317-example-usage.patch] exactly have an example of?  I see the ``@`cites(citable_items.slimgb)` - is this demonstrating that we get the same thing through the new decorator as we would have from `sage.misc.citation`?  This comment is probably just my ignorance speaking, feel free to ignore it.\n\nGood luck!",
     "created_at": "2011-08-12T14:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -150,6 +151,7 @@ Hi!  If this doesn't slow things down, it is a really good idea, especially give
 
 I have one substantive comment, I think:
 > You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg
+
 Hmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  
 
 Or are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?
@@ -186,7 +188,7 @@ Should some of the new code (e.g., `citation/__init__.py`) be in the reference m
 archive/issue_comments_022932.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n> Hi!  If this doesn't slow things down, it is a really good idea, especially given that Sage is not trying to cover up the other programs inside of it.   I assume that (given the comments on the blog) you will post timing information in critical areas eventually.\n\nAt least that's what I plan to do. I'm not quite sure on how to benchmark (and what), but I'm open for suggestions. Benchmarking the decorated pass-function is unsatisfying.\n\n\n> I have one substantive comment, I think:\n> > You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg\n> Hmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  \n\nWell, I put the design, as if pybtex was a standard-spkg. But it might as well be a good idea to make it optional: If people really pybtex' features, they can install it. It could be the following: If pybtex is not installed, the printed citations will just be the exact content of the bibfile, otherwise parsed (and maybe converted).\nBut there might be disadvantages: If the bibtex is parsed by pybtex, syntax-errors and illegal formatting might be found by pybtex. The output would probably be more consistent (more homogeneous and more compliant to design).\n\nI am in favour of pre-parsing everything through pybtex, but I don't know, what is actually better.\n\n\n> Or are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?\n> \n> Here follow a couple silly comments that don't actually review much, but might still be worthwhile to ponder.\n>  * Missing \"to\": `in order make it faster` \n\nThanks.\n\n\n>  * A *lot* of the examples refer to Michael Brickenstein, which seems somewhat less than advisable.  I mean no disrespect here - clearly he is contributing loads and deserves citations!  But for the first-time reader of this documentation, it would be nice to have a bigger variety of citations, perhaps even beyond Sage components to the subcomponents.  For instance, the ones in the bibtex patch.\n\nYou are right. It is more a coincidence than anything else; still, it has to be changed.\n\n\n>  * What does [trac-3317-example-usage.patch] exactly have an example of?  I see the ``@`cites(citable_items.slimgb)` - is this demonstrating that we get the same thing through the new decorator as we would have from `sage.misc.citation`?  This comment is probably just my ignorance speaking, feel free to ignore it.\n\nI won't :-).\nFor this citation system, it is indispensable, that the decorator gets widespread into sage. In my opinion, it is best if people decorate their own functions (and possibly make their own bibtex-entries). The example shows, how a function should be decorated.\n(The deprecation-message can be uncommented later, as soon as the \"new\" citation system is more accurate than the old one.)",
+    "body": "Replying to [comment:8 kcrisman]:\n> Hi!  If this doesn't slow things down, it is a really good idea, especially given that Sage is not trying to cover up the other programs inside of it.   I assume that (given the comments on the blog) you will post timing information in critical areas eventually.\n\n\nAt least that's what I plan to do. I'm not quite sure on how to benchmark (and what), but I'm open for suggestions. Benchmarking the decorated pass-function is unsatisfying.\n\n\n> I have one substantive comment, I think:\n> > You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg\n\n> Hmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  \n\nWell, I put the design, as if pybtex was a standard-spkg. But it might as well be a good idea to make it optional: If people really pybtex' features, they can install it. It could be the following: If pybtex is not installed, the printed citations will just be the exact content of the bibfile, otherwise parsed (and maybe converted).\nBut there might be disadvantages: If the bibtex is parsed by pybtex, syntax-errors and illegal formatting might be found by pybtex. The output would probably be more consistent (more homogeneous and more compliant to design).\n\nI am in favour of pre-parsing everything through pybtex, but I don't know, what is actually better.\n\n\n> Or are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?\n> \n> Here follow a couple silly comments that don't actually review much, but might still be worthwhile to ponder.\n> * Missing \"to\": `in order make it faster` \n\n\nThanks.\n\n\n>  * A *lot* of the examples refer to Michael Brickenstein, which seems somewhat less than advisable.  I mean no disrespect here - clearly he is contributing loads and deserves citations!  But for the first-time reader of this documentation, it would be nice to have a bigger variety of citations, perhaps even beyond Sage components to the subcomponents.  For instance, the ones in the bibtex patch.\n\n\nYou are right. It is more a coincidence than anything else; still, it has to be changed.\n\n\n>  * What does [trac-3317-example-usage.patch] exactly have an example of?  I see the ``@`cites(citable_items.slimgb)` - is this demonstrating that we get the same thing through the new decorator as we would have from `sage.misc.citation`?  This comment is probably just my ignorance speaking, feel free to ignore it.\n\n\nI won't :-).\nFor this citation system, it is indispensable, that the decorator gets widespread into sage. In my opinion, it is best if people decorate their own functions (and possibly make their own bibtex-entries). The example shows, how a function should be decorated.\n(The deprecation-message can be uncommented later, as soon as the \"new\" citation system is more accurate than the old one.)",
     "created_at": "2011-08-15T06:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -198,11 +200,13 @@ archive/issue_comments_022932.json:
 Replying to [comment:8 kcrisman]:
 > Hi!  If this doesn't slow things down, it is a really good idea, especially given that Sage is not trying to cover up the other programs inside of it.   I assume that (given the comments on the blog) you will post timing information in critical areas eventually.
 
+
 At least that's what I plan to do. I'm not quite sure on how to benchmark (and what), but I'm open for suggestions. Benchmarking the decorated pass-function is unsatisfying.
 
 
 > I have one substantive comment, I think:
 > > You'll need our pybtex-spkg in order to make it work: http://sage.math.washington.edu/home/burcin/spkg/pybtex-0.15.spkg
+
 > Hmm, so does that mean we would need to make `pybtex` a standard package in order for this to work?  (Currently there is a probationary period needed, which we have recently [been enforcing](http://trac.sagemath.org/sage_trac/ticket/11563).)  
 
 Well, I put the design, as if pybtex was a standard-spkg. But it might as well be a good idea to make it optional: If people really pybtex' features, they can install it. It could be the following: If pybtex is not installed, the printed citations will just be the exact content of the bibfile, otherwise parsed (and maybe converted).
@@ -214,17 +218,20 @@ I am in favour of pre-parsing everything through pybtex, but I don't know, what 
 > Or are you suggesting this would be an optional spkg (for now), which means your examples would have to be optional for now?
 > 
 > Here follow a couple silly comments that don't actually review much, but might still be worthwhile to ponder.
->  * Missing "to": `in order make it faster` 
+> * Missing "to": `in order make it faster` 
+
 
 Thanks.
 
 
 >  * A *lot* of the examples refer to Michael Brickenstein, which seems somewhat less than advisable.  I mean no disrespect here - clearly he is contributing loads and deserves citations!  But for the first-time reader of this documentation, it would be nice to have a bigger variety of citations, perhaps even beyond Sage components to the subcomponents.  For instance, the ones in the bibtex patch.
 
+
 You are right. It is more a coincidence than anything else; still, it has to be changed.
 
 
 >  * What does [trac-3317-example-usage.patch] exactly have an example of?  I see the ``@`cites(citable_items.slimgb)` - is this demonstrating that we get the same thing through the new decorator as we would have from `sage.misc.citation`?  This comment is probably just my ignorance speaking, feel free to ignore it.
+
 
 I won't :-).
 For this citation system, it is indispensable, that the decorator gets widespread into sage. In my opinion, it is best if people decorate their own functions (and possibly make their own bibtex-entries). The example shows, how a function should be decorated.
@@ -237,7 +244,7 @@ For this citation system, it is indispensable, that the decorator gets widesprea
 archive/issue_comments_022933.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> Should some of the new code (e.g., `citation/__init__.py`) be in the reference manual?\n\nEhm .. I think so, but don't know. Still, I'm quite a newbie.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Should some of the new code (e.g., `citation/__init__.py`) be in the reference manual?\n\n\nEhm .. I think so, but don't know. Still, I'm quite a newbie.",
     "created_at": "2011-08-15T07:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -248,6 +255,7 @@ archive/issue_comments_022933.json:
 
 Replying to [comment:9 jhpalmieri]:
 > Should some of the new code (e.g., `citation/__init__.py`) be in the reference manual?
+
 
 Ehm .. I think so, but don't know. Still, I'm quite a newbie.
 
@@ -451,7 +459,7 @@ This patch doesn't fail nicely when you don't have `pybtex`. I didn't know it wa
 archive/issue_comments_022944.json:
 ```json
 {
-    "body": "Replying to [comment:20 itaibn]:\n> This patch doesn't fail nicely when you don't have `pybtex`. I didn't know it was a dependency and so sage was unable to start. I modified the ticket to indicate the dependency.\nThe dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. \n\nBut you also set the ticket to `needs_work`. The authors might be interested what you require them to change. (You say that Sage won't start, but this is true for all integration patches when you forget to install the spkg in question.)",
+    "body": "Replying to [comment:20 itaibn]:\n> This patch doesn't fail nicely when you don't have `pybtex`. I didn't know it was a dependency and so sage was unable to start. I modified the ticket to indicate the dependency.\n\nThe dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. \n\nBut you also set the ticket to `needs_work`. The authors might be interested what you require them to change. (You say that Sage won't start, but this is true for all integration patches when you forget to install the spkg in question.)",
     "created_at": "2012-05-02T07:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -462,6 +470,7 @@ archive/issue_comments_022944.json:
 
 Replying to [comment:20 itaibn]:
 > This patch doesn't fail nicely when you don't have `pybtex`. I didn't know it was a dependency and so sage was unable to start. I modified the ticket to indicate the dependency.
+
 The dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. 
 
 But you also set the ticket to `needs_work`. The authors might be interested what you require them to change. (You say that Sage won't start, but this is true for all integration patches when you forget to install the spkg in question.)
@@ -473,7 +482,7 @@ But you also set the ticket to `needs_work`. The authors might be interested wha
 archive/issue_comments_022945.json:
 ```json
 {
-    "body": "Replying to [comment:21 AlexanderDreyer]:\n> The dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. \nCorrection myself: of course it is not the **only** intention of the ticket, but an **important one**.",
+    "body": "Replying to [comment:21 AlexanderDreyer]:\n> The dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. \n\nCorrection myself: of course it is not the **only** intention of the ticket, but an **important one**.",
     "created_at": "2012-05-02T07:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -484,6 +493,7 @@ archive/issue_comments_022945.json:
 
 Replying to [comment:21 AlexanderDreyer]:
 > The dependency had been explicitly mentioned in the ticket already. Since the only intention of this ticket is to integrate pybtex into Sage, it make sense to explicitly mention the spkg for convenience. 
+
 Correction myself: of course it is not the **only** intention of the ticket, but an **important one**.
 
 
@@ -529,7 +539,7 @@ I'm sorry, I didn't read the ticket description carefully enough. I have modifie
 archive/issue_comments_022948.json:
 ```json
 {
-    "body": "Sorry for not having responded.\n\nReplying to [comment:18 mhansen]:\n> I'm not convinced that it is the best idea to have it so that anytime a function is called we have to log that its citation, even in the case where we don't care about that data.\n\nWhat exactly are your concerns? Speed? Integrity?\n\nIn my opinion it would be very nice to have tracked the used components, no matter if we care for this data. And it's not meant to log every function call. Only rather important functions should be decorated (could say \"cite-worthy\", but that's a vague term). Maybe there should be rules on what makes some worth citing in Sage.\n\n----\n\nReplying to [comment:20 itaibn]:\n\nWell thanks for pointing out, that it might be unclear that you need the spkg. I thought it will be enough if the dependency is mentioned as the dependency of the corresponding ticket, but I'm willing to change the description if that's not clear enough.\n\nI'm currently updating the spkg to a newer version, should I directly include the link to it when done?\n\n----\n\nReplying to [comment:22 AlexanderDreyer]:\n\nThe intention of this ticket (as far as I see it) is to track sage's components and their citations. Pybtex is our tool of choice. Therefore, yes, it is important.",
+    "body": "Sorry for not having responded.\n\nReplying to [comment:18 mhansen]:\n> I'm not convinced that it is the best idea to have it so that anytime a function is called we have to log that its citation, even in the case where we don't care about that data.\n\n\nWhat exactly are your concerns? Speed? Integrity?\n\nIn my opinion it would be very nice to have tracked the used components, no matter if we care for this data. And it's not meant to log every function call. Only rather important functions should be decorated (could say \"cite-worthy\", but that's a vague term). Maybe there should be rules on what makes some worth citing in Sage.\n\n---\n\nReplying to [comment:20 itaibn]:\n\nWell thanks for pointing out, that it might be unclear that you need the spkg. I thought it will be enough if the dependency is mentioned as the dependency of the corresponding ticket, but I'm willing to change the description if that's not clear enough.\n\nI'm currently updating the spkg to a newer version, should I directly include the link to it when done?\n\n---\n\nReplying to [comment:22 AlexanderDreyer]:\n\nThe intention of this ticket (as far as I see it) is to track sage's components and their citations. Pybtex is our tool of choice. Therefore, yes, it is important.",
     "created_at": "2012-05-22T09:43:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3317",
     "type": "issue_comment",
@@ -543,11 +553,12 @@ Sorry for not having responded.
 Replying to [comment:18 mhansen]:
 > I'm not convinced that it is the best idea to have it so that anytime a function is called we have to log that its citation, even in the case where we don't care about that data.
 
+
 What exactly are your concerns? Speed? Integrity?
 
 In my opinion it would be very nice to have tracked the used components, no matter if we care for this data. And it's not meant to log every function call. Only rather important functions should be decorated (could say "cite-worthy", but that's a vague term). Maybe there should be rules on what makes some worth citing in Sage.
 
-----
+---
 
 Replying to [comment:20 itaibn]:
 
@@ -555,7 +566,7 @@ Well thanks for pointing out, that it might be unclear that you need the spkg. I
 
 I'm currently updating the spkg to a newer version, should I directly include the link to it when done?
 
-----
+---
 
 Replying to [comment:22 AlexanderDreyer]:
 

@@ -3,7 +3,7 @@
 archive/issues_005347.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
+    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
     "created_at": "2009-02-23T08:21:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 CC:  @mwhansen
 
-
 ```
 sage: K = GF(7)
 sage: K(3).divides(1)
@@ -31,15 +30,12 @@ Traceback (most recent call last)
 ZeroDivisionError: reduction modulo right not defined.
 ```
 
-
 This is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd
-
 
 ```
 def divides(self, x):
     return (x % self) == 0
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5347

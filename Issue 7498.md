@@ -3,7 +3,7 @@
 archive/issues_007498.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nDespite the warning\n\n\n```\n## IMPORTANT: Do *not* import matplotlib at module scope.  It takes a\n## surprisingly long time to initialize itself.  It's better if it is\n## imported in functions, so it only gets started if it is actually\n## going to be used.\n```\n\n\nit's gotten back in there again. There should be a test. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7498\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nDespite the warning\n\n```\n## IMPORTANT: Do *not* import matplotlib at module scope.  It takes a\n## surprisingly long time to initialize itself.  It's better if it is\n## imported in functions, so it only gets started if it is actually\n## going to be used.\n```\n\nit's gotten back in there again. There should be a test. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7498\n\n",
     "created_at": "2009-11-20T06:34:07Z",
     "labels": [
         "component: graphics",
@@ -22,14 +22,12 @@ CC:  @williamstein
 
 Despite the warning
 
-
 ```
 ## IMPORTANT: Do *not* import matplotlib at module scope.  It takes a
 ## surprisingly long time to initialize itself.  It's better if it is
 ## imported in functions, so it only gets started if it is actually
 ## going to be used.
 ```
-
 
 it's gotten back in there again. There should be a test. 
 

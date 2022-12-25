@@ -3,7 +3,7 @@
 archive/issues_003736.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  bryan.head@gmail.com\n\n\n```\nsage: x = vector(CDF, range(10))\nsage: y = vector(CDF, range(10))\nsage: x.pa\nx.pairwise_product  x.parent            \nsage: x.pairwise_product(y)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/<ipython console> in <module>()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.pairwise_product (sage/modules/free_module_element.c:7363)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c (sage/structure/element.c:11073)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c_impl (sage/structure/element.c:11134)()\n\nTypeError: unsupported operation for 'Vector space of dimension 10 over Complex Double Field' and 'Vector space of dimension 10 over Complex Double Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3736\n\n",
+    "body": "Assignee: @malb\n\nCC:  bryan.head@gmail.com\n\n```\nsage: x = vector(CDF, range(10))\nsage: y = vector(CDF, range(10))\nsage: x.pa\nx.pairwise_product  x.parent            \nsage: x.pairwise_product(y)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/<ipython console> in <module>()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.pairwise_product (sage/modules/free_module_element.c:7363)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c (sage/structure/element.c:11073)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c_impl (sage/structure/element.c:11134)()\n\nTypeError: unsupported operation for 'Vector space of dimension 10 over Complex Double Field' and 'Vector space of dimension 10 over Complex Double Field'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3736\n\n",
     "created_at": "2008-07-29T00:22:13Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ archive/issues_003736.json:
 Assignee: @malb
 
 CC:  bryan.head@gmail.com
-
 
 ```
 sage: x = vector(CDF, range(10))
@@ -41,7 +40,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operation for 'Vector space of dimension 10 over Complex Double Field' and 'Vector space of dimension 10 over Complex Double Field'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3736
 

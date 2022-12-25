@@ -54,7 +54,7 @@ Attachment [sr_matrix.patch](tarball://root/attachments/some-uuid/ticket2651/sr_
 archive/issue_comments_018176.json:
 ```json
 {
-    "body": "On [sage-devel] Jason wrote:\n> More specifically, for sr.py, matrix() is called from lines 1775 and\n> 1779 with a list of lists.  The code appears to flatten \"l\" into a flat\n> list, but the flatten command on the preceding lines specifies to only\n> flatten Vector_modn_dense things, so the list \"l\" is not flattened.\n\nThe attached patch `sr_matrix.patch` should fix that issue.",
+    "body": "On [sage-devel] Jason wrote:\n> More specifically, for sr.py, matrix() is called from lines 1775 and\n> 1779 with a list of lists.  The code appears to flatten \"l\" into a flat\n> list, but the flatten command on the preceding lines specifies to only\n> flatten Vector_modn_dense things, so the list \"l\" is not flattened.\n\n\nThe attached patch `sr_matrix.patch` should fix that issue.",
     "created_at": "2008-03-25T19:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -68,6 +68,7 @@ On [sage-devel] Jason wrote:
 > 1779 with a list of lists.  The code appears to flatten "l" into a flat
 > list, but the flatten command on the preceding lines specifies to only
 > flatten Vector_modn_dense things, so the list "l" is not flattened.
+
 
 The attached patch `sr_matrix.patch` should fix that issue.
 
@@ -154,7 +155,7 @@ One question I have for the patch: Should I be passing back ValueError when I do
 archive/issue_comments_018181.json:
 ```json
 {
-    "body": "This is a good change!\n\nI'm no Python expert, but I like your choice of ValueError over TypeError.  I think the paragraph \"The entries\" in the INPUT: section could be revised a little to improve clarity.\n\nIn your example\n\n```\nsage: m=matrix(QQ,3,{(1,1): 2}); m; m.parent() \n[0 0]\n[0 2]\n[0 0]\n...\n```\n\nI expected to see a 3x3 matrix.  Your other examples that have only one size input produce square matrices (particularly the empty-dict input argument!).  I'm not sure what the \"right\" behavior is, but I wanted to make sure you are.\n\nI don't see any examples/tests of passing in a Sage object and using the _matrix_() attribute to get a matrix.",
+    "body": "This is a good change!\n\nI'm no Python expert, but I like your choice of ValueError over TypeError.  I think the paragraph \"The entries\" in the INPUT: section could be revised a little to improve clarity.\n\nIn your example\n\n```\nsage: m=matrix(QQ,3,{(1,1): 2}); m; m.parent() \n[0 0]\n[0 2]\n[0 0]\n...\n```\nI expected to see a 3x3 matrix.  Your other examples that have only one size input produce square matrices (particularly the empty-dict input argument!).  I'm not sure what the \"right\" behavior is, but I wanted to make sure you are.\n\nI don't see any examples/tests of passing in a Sage object and using the _matrix_() attribute to get a matrix.",
     "created_at": "2008-03-26T17:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2651",
     "type": "issue_comment",
@@ -176,7 +177,6 @@ sage: m=matrix(QQ,3,{(1,1): 2}); m; m.parent()
 [0 0]
 ...
 ```
-
 I expected to see a 3x3 matrix.  Your other examples that have only one size input produce square matrices (particularly the empty-dict input argument!).  I'm not sure what the "right" behavior is, but I wanted to make sure you are.
 
 I don't see any examples/tests of passing in a Sage object and using the _matrix_() attribute to get a matrix.

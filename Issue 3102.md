@@ -3,7 +3,7 @@
 archive/issues_003102.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSomeone apparently forgot to uncomment some debugging code:\n\n\n```\nsage: K = Qp(7, print_mode=\"digits\")\nsage: K(1/2)     # ok\n...33333333333333333334\nsage: K(1/42)    # hmmmmmmmm\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '6']\n-1\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']\n['6']\n...5555555555555555555.6\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3102\n\n",
+    "body": "Assignee: mabshoff\n\nSomeone apparently forgot to uncomment some debugging code:\n\n```\nsage: K = Qp(7, print_mode=\"digits\")\nsage: K(1/2)     # ok\n...33333333333333333334\nsage: K(1/42)    # hmmmmmmmm\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '6']\n-1\n['5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5']\n['6']\n...5555555555555555555.6\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3102\n\n",
     "created_at": "2008-05-04T21:54:08Z",
     "labels": [
         "component: cygwin",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 Someone apparently forgot to uncomment some debugging code:
 
-
 ```
 sage: K = Qp(7, print_mode="digits")
 sage: K(1/2)     # ok
@@ -33,7 +32,6 @@ sage: K(1/42)    # hmmmmmmmm
 ...5555555555555555555.6
 sage: 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3102
@@ -118,7 +116,7 @@ Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/tra
 archive/issue_comments_021380.json:
 ```json
 {
-    "body": "Well, the patch applied fine and doctests pass.  BUT  when I manually type in\n\n```\n            sage: K = Qp(7, print_mode=\"digits\")\n            sage: repr(K(1/2))\n```\n\nI do NOT get what the doctest says I should:\n\n```\n            '...3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|4'\n```\n\nbut instead I get this:\n\n```\n'...33333333333333333334'\n```\n\n\nI don't know why the vertial lines a re missing, or whether they should be there;  but I do know that the doctester ignores what comes after three dots ... so any p-adics print mode which includes the dots is going to be rather hard to doctest.",
+    "body": "Well, the patch applied fine and doctests pass.  BUT  when I manually type in\n\n```\n            sage: K = Qp(7, print_mode=\"digits\")\n            sage: repr(K(1/2))\n```\nI do NOT get what the doctest says I should:\n\n```\n            '...3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|4'\n```\nbut instead I get this:\n\n```\n'...33333333333333333334'\n```\n\nI don't know why the vertial lines a re missing, or whether they should be there;  but I do know that the doctester ignores what comes after three dots ... so any p-adics print mode which includes the dots is going to be rather hard to doctest.",
     "created_at": "2008-09-08T20:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
@@ -133,19 +131,16 @@ Well, the patch applied fine and doctests pass.  BUT  when I manually type in
             sage: K = Qp(7, print_mode="digits")
             sage: repr(K(1/2))
 ```
-
 I do NOT get what the doctest says I should:
 
 ```
             '...3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|3|4'
 ```
-
 but instead I get this:
 
 ```
 '...33333333333333333334'
 ```
-
 
 I don't know why the vertial lines a re missing, or whether they should be there;  but I do know that the doctester ignores what comes after three dots ... so any p-adics print mode which includes the dots is going to be rather hard to doctest.
 
@@ -198,7 +193,7 @@ I still find this too confusing.
 archive/issue_comments_021383.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> But in line 68 you have just set the print-mode to \"bars\", while here you have set the mode to \"digits\".\n> \n> I just don't understand the concept of output being different during doctests and runtime!\n> \n> Regarding your last sentence: each test should be independent of earlier ones surely, starting in a separate Sage session?  How can it be correct to explicitly set the print_mode to \"digits\" but have a doctest showing that apparantly \"bars\" is output?\n> \n> I still find this too confusing.\n\n\nJohn Cremona is definitely right here.",
+    "body": "Replying to [comment:6 cremona]:\n> But in line 68 you have just set the print-mode to \"bars\", while here you have set the mode to \"digits\".\n> \n> I just don't understand the concept of output being different during doctests and runtime!\n> \n> Regarding your last sentence: each test should be independent of earlier ones surely, starting in a separate Sage session?  How can it be correct to explicitly set the print_mode to \"digits\" but have a doctest showing that apparantly \"bars\" is output?\n> \n> I still find this too confusing.\n\n\n\nJohn Cremona is definitely right here.",
     "created_at": "2008-09-24T17:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
@@ -215,6 +210,7 @@ Replying to [comment:6 cremona]:
 > Regarding your last sentence: each test should be independent of earlier ones surely, starting in a separate Sage session?  How can it be correct to explicitly set the print_mode to "digits" but have a doctest showing that apparantly "bars" is output?
 > 
 > I still find this too confusing.
+
 
 
 John Cremona is definitely right here.

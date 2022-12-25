@@ -3,7 +3,7 @@
 archive/issues_002304.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
+    "body": "Assignee: somebody\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
     "created_at": "2008-02-25T21:31:04Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,7 +26,6 @@ from IRC:
 ```
 cwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2304
@@ -57,7 +56,7 @@ archive/issue_events_005433.json:
 archive/issue_comments_015296.json:
 ```json
 {
-    "body": "But David, my code's so fast.  Could YOU square sum(n*x^n for n in range(1000))\nin less than 1.24 seconds!?  :-)\n\n\nSeriously though, I wrote that code before version 0.1 of Sage as an experiment.  It can safely be removed.  If one really did want sparse polys that are fast, the best thing for now would probably to use libsingular  with one variable, e.g., \n\n\n```\nsage: R.<x,y> = MPolynomialRing(QQ,2)\nsage: type(x)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: f = sum(n*x^(n^2) for n in primes(100))\nsage: time g = f*f\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: timeit('z=f*f')\n625 loops, best of 3: 35.5 \u00b5s per loop\n\n```\n\n\nThat said Singular polys only allow degrees up to 65K:\n\n\n```\nsage: x^66000\n<type 'exceptions.TypeError'>: exponent is too large, max. is 65535\n```\n\n\nSo I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.",
+    "body": "But David, my code's so fast.  Could YOU square sum(n*x^n for n in range(1000))\nin less than 1.24 seconds!?  :-)\n\n\nSeriously though, I wrote that code before version 0.1 of Sage as an experiment.  It can safely be removed.  If one really did want sparse polys that are fast, the best thing for now would probably to use libsingular  with one variable, e.g., \n\n```\nsage: R.<x,y> = MPolynomialRing(QQ,2)\nsage: type(x)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: f = sum(n*x^(n^2) for n in primes(100))\nsage: time g = f*f\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: timeit('z=f*f')\n625 loops, best of 3: 35.5 \u00b5s per loop\n\n```\n\nThat said Singular polys only allow degrees up to 65K:\n\n```\nsage: x^66000\n<type 'exceptions.TypeError'>: exponent is too large, max. is 65535\n```\n\nSo I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.",
     "created_at": "2008-02-25T21:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
@@ -72,7 +71,6 @@ in less than 1.24 seconds!?  :-)
 
 Seriously though, I wrote that code before version 0.1 of Sage as an experiment.  It can safely be removed.  If one really did want sparse polys that are fast, the best thing for now would probably to use libsingular  with one variable, e.g., 
 
-
 ```
 sage: R.<x,y> = MPolynomialRing(QQ,2)
 sage: type(x)
@@ -86,15 +84,12 @@ sage: timeit('z=f*f')
 
 ```
 
-
 That said Singular polys only allow degrees up to 65K:
-
 
 ```
 sage: x^66000
 <type 'exceptions.TypeError'>: exponent is too large, max. is 65535
 ```
-
 
 So I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.
 

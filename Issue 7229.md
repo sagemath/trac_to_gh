@@ -3,7 +3,7 @@
 archive/issues_007229.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWith the update to the new sage notebook, the jsmath-image-fonts spkg now installs to the wrong directory.\n\n\n```\n> >  * Install *all* jsMath image fonts on sagenb.org\n> >  * Silently fall back to using image fonts if TeX fonts are not available\n\n\nThis is what was done in the sage notebook a few days ago.  William had \ninstalled the optional jsmath-image-fonts spkg a long time ago.  What \nprobably happened is that no one rebased the jsmath-image-fonts to copy \nto the right javascript directory, and since these all moved around with \nthe new notebook code, everything is broken with respect to this spkg now.\n\nA solution is to modify the spkg to install to the right location, and \ninstall it again on sagenb.org.\n```\n\n\nRobert replies:\n\nInstalled 4.1.2. and the old spkg file with image fonts.\nI got this error\nI copied the image fonts from /opt/sage/local/notebook/javascript/\njsmath to /opt/sage/local/lib/python2.6/site-packages/sagenb/data/\njavascript/jsmath and everything works fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7229\n\n",
+    "body": "Assignee: boothby\n\nWith the update to the new sage notebook, the jsmath-image-fonts spkg now installs to the wrong directory.\n\n```\n> >  * Install *all* jsMath image fonts on sagenb.org\n> >  * Silently fall back to using image fonts if TeX fonts are not available\n\n\nThis is what was done in the sage notebook a few days ago.  William had \ninstalled the optional jsmath-image-fonts spkg a long time ago.  What \nprobably happened is that no one rebased the jsmath-image-fonts to copy \nto the right javascript directory, and since these all moved around with \nthe new notebook code, everything is broken with respect to this spkg now.\n\nA solution is to modify the spkg to install to the right location, and \ninstall it again on sagenb.org.\n```\n\nRobert replies:\n\nInstalled 4.1.2. and the old spkg file with image fonts.\nI got this error\nI copied the image fonts from /opt/sage/local/notebook/javascript/\njsmath to /opt/sage/local/lib/python2.6/site-packages/sagenb/data/\njavascript/jsmath and everything works fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7229\n\n",
     "created_at": "2009-10-15T15:54:26Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 With the update to the new sage notebook, the jsmath-image-fonts spkg now installs to the wrong directory.
 
-
 ```
 > >  * Install *all* jsMath image fonts on sagenb.org
 > >  * Silently fall back to using image fonts if TeX fonts are not available
@@ -35,7 +34,6 @@ the new notebook code, everything is broken with respect to this spkg now.
 A solution is to modify the spkg to install to the right location, and 
 install it again on sagenb.org.
 ```
-
 
 Robert replies:
 
@@ -139,7 +137,7 @@ Also: Should we add the [extra fonts](http://www.math.union.edu/~dpvc/jsMath/dow
 archive/issue_comments_059855.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> How should we deal with #7196?\nI updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:\n\nhttp://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg",
+    "body": "Replying to [comment:3 mpatel]:\n> How should we deal with #7196?\n\nI updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:\n\nhttp://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg",
     "created_at": "2009-10-15T22:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
@@ -150,6 +148,7 @@ archive/issue_comments_059855.json:
 
 Replying to [comment:3 mpatel]:
 > How should we deal with #7196?
+
 I updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:
 
 http://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg
@@ -161,7 +160,7 @@ http://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.
 archive/issue_comments_059856.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> I updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:\n> \n> http://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg\n\nWorks fine on fresh install of Sage 4.1.2. \nHowever (as new) I give up the closing of this ticket to some more skilled Sage user/developer.\nThank you for the fix.\nRobert",
+    "body": "Replying to [comment:4 mpatel]:\n> I updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:\n> \n> http://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg\n\n\nWorks fine on fresh install of Sage 4.1.2. \nHowever (as new) I give up the closing of this ticket to some more skilled Sage user/developer.\nThank you for the fix.\nRobert",
     "created_at": "2009-10-16T07:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
@@ -174,6 +173,7 @@ Replying to [comment:4 mpatel]:
 > I updated `spkg-install` to handle post-#7196 new notebooks.  For another reviewer:
 > 
 > http://sage.math.washington.edu/home/mpatel/trac/7229/jsmath-image-fonts-1.4.p2.spkg
+
 
 Works fine on fresh install of Sage 4.1.2. 
 However (as new) I give up the closing of this ticket to some more skilled Sage user/developer.

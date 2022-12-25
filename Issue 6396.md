@@ -3,7 +3,7 @@
 archive/issues_006396.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nThis is kind of irritating:\n\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: N.primes_of_degree_one_list(10)\n[Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6396\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nThis is kind of irritating:\n\n```\nsage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])\nsage: N.primes_of_degree_one_list(10)\n[Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1),\n Fractional ideal (1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6396\n\n",
     "created_at": "2009-06-24T17:07:16Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  @ncalexan
 
 This is kind of irritating:
 
-
 ```
 sage: N.<a,b> = NumberField([x^2 + 1, x^2 - 5])
 sage: N.primes_of_degree_one_list(10)
@@ -37,7 +36,6 @@ sage: N.primes_of_degree_one_list(10)
  Fractional ideal (1),
  Fractional ideal (1)]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6396
 
@@ -107,7 +105,7 @@ archive/issue_events_015075.json:
 archive/issue_comments_051289.json:
 ```json
 {
-    "body": "Doctest failures when applied to 4.1.alpha1\n\n\n```\nsage -t -long devel/sage/sage/rings/number_field/small_primes_of_degree_one.py\n**********************************************************************\nFile \"/space/boothby/sage-4.1.alpha1/devel/sage-main/sage/rings/number_field/small_primes_of_degree_one.py\", line 204:\n    sage: N.primes_of_degree_one_list(10)\nExpected:\n    [Fractional ideal ((-1/2*b + 1/2)*a + 2),\n     Fractional ideal (-b*a + 1/2*b + 1/2),\n     Fractional ideal ((1/2*b + 3/2)*a - b),\n     Fractional ideal ((-1/2*b - 3/2)*a + b - 1),\n     Fractional ideal (-b*a - b + 1),\n     Fractional ideal (3*a + 1/2*b - 1/2),\n     Fractional ideal ((-3/2*b + 1/2)*a + 1/2*b - 1/2),\n     Fractional ideal ((-1/2*b - 5/2)*a - b + 1),\n     Fractional ideal (2*a - 3/2*b - 1/2),\n     Fractional ideal (3*a + 1/2*b + 5/2)]\nGot:\n    [Fractional ideal (2*a + 1/2*b - 1/2), Fractional ideal ((-1/2*b - 1/2)*a - b), Fractional ideal (b*a + 1/2*b + 3/2), Fractional ideal ((-1/2*b - 3/2)*a + b - 1), Fractional ideal ((-b + 1)*a + b), Fractional ideal (3*a + 1/2*b - 1/2), Fractional ideal ((1/2*b - 1/2)*a + 3/2*b - 1/2), Fractional ideal ((-1/2*b - 5/2)*a - b + 1), Fractional ideal (2*a - 3/2*b - 1/2), Fractional ideal (3*a + 1/2*b + 5/2)]\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_small_primes_of_degree_one.py\n         [3.2 s]\n```\n",
+    "body": "Doctest failures when applied to 4.1.alpha1\n\n```\nsage -t -long devel/sage/sage/rings/number_field/small_primes_of_degree_one.py\n**********************************************************************\nFile \"/space/boothby/sage-4.1.alpha1/devel/sage-main/sage/rings/number_field/small_primes_of_degree_one.py\", line 204:\n    sage: N.primes_of_degree_one_list(10)\nExpected:\n    [Fractional ideal ((-1/2*b + 1/2)*a + 2),\n     Fractional ideal (-b*a + 1/2*b + 1/2),\n     Fractional ideal ((1/2*b + 3/2)*a - b),\n     Fractional ideal ((-1/2*b - 3/2)*a + b - 1),\n     Fractional ideal (-b*a - b + 1),\n     Fractional ideal (3*a + 1/2*b - 1/2),\n     Fractional ideal ((-3/2*b + 1/2)*a + 1/2*b - 1/2),\n     Fractional ideal ((-1/2*b - 5/2)*a - b + 1),\n     Fractional ideal (2*a - 3/2*b - 1/2),\n     Fractional ideal (3*a + 1/2*b + 5/2)]\nGot:\n    [Fractional ideal (2*a + 1/2*b - 1/2), Fractional ideal ((-1/2*b - 1/2)*a - b), Fractional ideal (b*a + 1/2*b + 3/2), Fractional ideal ((-1/2*b - 3/2)*a + b - 1), Fractional ideal ((-b + 1)*a + b), Fractional ideal (3*a + 1/2*b - 1/2), Fractional ideal ((1/2*b - 1/2)*a + 3/2*b - 1/2), Fractional ideal ((-1/2*b - 5/2)*a - b + 1), Fractional ideal (2*a - 3/2*b - 1/2), Fractional ideal (3*a + 1/2*b + 5/2)]\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_small_primes_of_degree_one.py\n         [3.2 s]\n```",
     "created_at": "2009-06-26T17:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6396",
     "type": "issue_comment",
@@ -117,7 +115,6 @@ archive/issue_comments_051289.json:
 ```
 
 Doctest failures when applied to 4.1.alpha1
-
 
 ```
 sage -t -long devel/sage/sage/rings/number_field/small_primes_of_degree_one.py
@@ -144,7 +141,6 @@ Got:
 For whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_small_primes_of_degree_one.py
          [3.2 s]
 ```
-
 
 
 

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8575
 archive/issue_comments_077543.json:
 ```json
 {
-    "body": "There is a very good chance that this is a bug of sphinx. I asked it on\nsphinx-dev. I'm waiting for their answer.\n\nFor the info, here is a ReST file that triggers the problem:\n\n```\n**************************\nList Bug Triggering Module\n**************************\n\n    - list item 1 -- this item is correctly formated. So that there should be\n      no problem with it..\n\n    - list item 2 -- this item is ill formated. Sphinx should raise a warning\n       when typesetting in in text mode.\n```\n\n\nFlorent",
+    "body": "There is a very good chance that this is a bug of sphinx. I asked it on\nsphinx-dev. I'm waiting for their answer.\n\nFor the info, here is a ReST file that triggers the problem:\n\n```\n**************************\nList Bug Triggering Module\n**************************\n\n    - list item 1 -- this item is correctly formated. So that there should be\n      no problem with it..\n\n    - list item 2 -- this item is ill formated. Sphinx should raise a warning\n       when typesetting in in text mode.\n```\n\nFlorent",
     "created_at": "2010-03-22T14:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ List Bug Triggering Module
     - list item 2 -- this item is ill formated. Sphinx should raise a warning
        when typesetting in in text mode.
 ```
-
 
 Florent
 
@@ -97,7 +96,7 @@ Florent
 archive/issue_comments_077545.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> I'm not sure what to do now with this ticket... Should we back port the bugfix or wait for the next release ? Should this ticket be left open ? \n\nI would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.",
+    "body": "Replying to [comment:3 hivert]:\n> I'm not sure what to do now with this ticket... Should we back port the bugfix or wait for the next release ? Should this ticket be left open ? \n\n\nI would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.",
     "created_at": "2010-04-06T21:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
@@ -108,6 +107,7 @@ archive/issue_comments_077545.json:
 
 Replying to [comment:3 hivert]:
 > I'm not sure what to do now with this ticket... Should we back port the bugfix or wait for the next release ? Should this ticket be left open ? 
+
 
 I would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.
 
@@ -136,7 +136,7 @@ Changing status from new to needs_info.
 archive/issue_comments_077547.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> I would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.\n\nAccording to Georg Brandl, Sphinx should make a new bugfix release \"soon\"... So I'm in favor of waiting for it.",
+    "body": "Replying to [comment:4 mvngu]:\n> I would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.\n\n\nAccording to Georg Brandl, Sphinx should make a new bugfix release \"soon\"... So I'm in favor of waiting for it.",
     "created_at": "2010-04-07T07:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
@@ -148,6 +148,7 @@ archive/issue_comments_077547.json:
 Replying to [comment:4 mvngu]:
 > I would think wait for the next release, as that is (maybe) much easier than backporting. If you can backport, then by all means do so. Until the issue is fixed by upgrading to the new release with the bug fixed, or backporting, this ticket would remain open.
 
+
 According to Georg Brandl, Sphinx should make a new bugfix release "soon"... So I'm in favor of waiting for it.
 
 
@@ -157,7 +158,7 @@ According to Georg Brandl, Sphinx should make a new bugfix release "soon"... So 
 archive/issue_comments_077548.json:
 ```json
 {
-    "body": "This ticket should be closed since sage uses now sphinx 1.0.4\n\n\n```\n(WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```\n\n\nI set this to positive review.",
+    "body": "This ticket should be closed since sage uses now sphinx 1.0.4\n\n```\n(WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```\n\nI set this to positive review.",
     "created_at": "2011-04-04T16:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8575",
     "type": "issue_comment",
@@ -168,11 +169,9 @@ archive/issue_comments_077548.json:
 
 This ticket should be closed since sage uses now sphinx 1.0.4
 
-
 ```
 (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 ```
-
 
 I set this to positive review.
 

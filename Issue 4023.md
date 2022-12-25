@@ -3,7 +3,7 @@
 archive/issues_004023.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @malb\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/interfaces/gp.py \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 266: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 520: \n    sage: gp.new_with_bits_prec(pi, 100) \nExpected: \n    3.1415926535897932384626433832795028842 \nGot: \n    3.141592653589793238462643383 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 244: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \n3 items had failures: \n   1 of   6 in __main__.example_10 \n   1 of   3 in __main__.example_27 \n   1 of   3 in __main__.example_9 \n***Test Failed*** 3 failures. \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4023\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @malb\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/interfaces/gp.py \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 266: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 520: \n    sage: gp.new_with_bits_prec(pi, 100) \nExpected: \n    3.1415926535897932384626433832795028842 \nGot: \n    3.141592653589793238462643383 \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha3/tmp/gp.py\", line 244: \n    sage: gp.get_precision() \nExpected: \n    38 \nGot: \n    28 \n********************************************************************** \n3 items had failures: \n   1 of   6 in __main__.example_10 \n   1 of   3 in __main__.example_27 \n   1 of   3 in __main__.example_9 \n***Test Failed*** 3 failures. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4023\n\n",
     "created_at": "2008-08-31T18:58:50Z",
     "labels": [
         "component: doctest coverage",
@@ -53,7 +53,6 @@ Got:
    1 of   3 in __main__.example_9 
 ***Test Failed*** 3 failures. 
 ```
-
 
 Cheers,
 
@@ -154,7 +153,7 @@ Basically, asking gp to print out pi was pointless because gp's precision had be
 archive/issue_comments_028958.json:
 ```json
 {
-    "body": "Patch looks good to me, but we have one doctest failure:\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha5/tmp/sr.py\", line 1407:\n    sage: s\nExpected:\n    {k000: 1, k001: 0, k003: 1, k002: 0}\nGot:\n    {k000: 1, k001: 0, k002: 0, k003: 1}\n**********************************************************************\n```\n\nThe output is identical except that the order has slightly changed. Malb? \n\nCheers,\n\nMichael",
+    "body": "Patch looks good to me, but we have one doctest failure:\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha5/tmp/sr.py\", line 1407:\n    sage: s\nExpected:\n    {k000: 1, k001: 0, k003: 1, k002: 0}\nGot:\n    {k000: 1, k001: 0, k002: 0, k003: 1}\n**********************************************************************\n```\nThe output is identical except that the order has slightly changed. Malb? \n\nCheers,\n\nMichael",
     "created_at": "2008-09-05T06:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4023",
     "type": "issue_comment",
@@ -176,7 +175,6 @@ Got:
     {k000: 1, k001: 0, k002: 0, k003: 1}
 **********************************************************************
 ```
-
 The output is identical except that the order has slightly changed. Malb? 
 
 Cheers,
@@ -208,7 +206,7 @@ That's alright, it is a set and thus the order depends on the hash.
 archive/issue_comments_028960.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> That's alright, it is a set and thus the order depends on the hash.\n\nOk, with Martin's approval of the sr.py doctest fix this is a positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 malb]:\n> That's alright, it is a set and thus the order depends on the hash.\n\n\nOk, with Martin's approval of the sr.py doctest fix this is a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-05T10:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4023",
     "type": "issue_comment",
@@ -219,6 +217,7 @@ archive/issue_comments_028960.json:
 
 Replying to [comment:5 malb]:
 > That's alright, it is a set and thus the order depends on the hash.
+
 
 Ok, with Martin's approval of the sr.py doctest fix this is a positive review.
 

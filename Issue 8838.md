@@ -50,7 +50,7 @@ Changing keywords from "" to "beginner".
 archive/issue_comments_081123.json:
 ```json
 {
-    "body": "In other words, this should work:\n\n\n```\nsage: arrow(vector([1,2,3]), vector([2,3,4]))\n```\n\n\nand should draw a 3d arrow.",
+    "body": "In other words, this should work:\n\n```\nsage: arrow(vector([1,2,3]), vector([2,3,4]))\n```\n\nand should draw a 3d arrow.",
     "created_at": "2010-08-26T22:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
@@ -61,11 +61,9 @@ archive/issue_comments_081123.json:
 
 In other words, this should work:
 
-
 ```
 sage: arrow(vector([1,2,3]), vector([2,3,4]))
 ```
-
 
 and should draw a 3d arrow.
 
@@ -152,7 +150,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081128.json:
 ```json
 {
-    "body": "This looks great.  However, for backwards compatibility, could you name the arguments to arrow() \"tailpoint\" and \"headpoint\".  Now, this command won't work, whereas before it would:\n\n\n```\narrow(tailpoint=(0,1), headpoint=(2,3))\n```\n\n\nWe should keep our API unless there is a very good reason to change it.",
+    "body": "This looks great.  However, for backwards compatibility, could you name the arguments to arrow() \"tailpoint\" and \"headpoint\".  Now, this command won't work, whereas before it would:\n\n```\narrow(tailpoint=(0,1), headpoint=(2,3))\n```\n\nWe should keep our API unless there is a very good reason to change it.",
     "created_at": "2010-08-29T02:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
@@ -163,11 +161,9 @@ archive/issue_comments_081128.json:
 
 This looks great.  However, for backwards compatibility, could you name the arguments to arrow() "tailpoint" and "headpoint".  Now, this command won't work, whereas before it would:
 
-
 ```
 arrow(tailpoint=(0,1), headpoint=(2,3))
 ```
-
 
 We should keep our API unless there is a very good reason to change it.
 

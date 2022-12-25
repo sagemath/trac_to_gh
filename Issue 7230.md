@@ -113,7 +113,7 @@ Also, #6586 has just been merged in to 4.2.alpha0, and this includes jinja2 (in 
 archive/issue_comments_059863.json:
 ```json
 {
-    "body": "Yep, it failed on my Mac, too. I have no idea why: it's having trouble finding the Jinja egg, which is there in `site-packages`, and is listed in `easy_install.pth`! Here's the error message:\n\n\n```\nInstalled /Users/craigcitro/Desktop/four-one-two/local/lib/python2.6/site-packages/Sphinx-0.5.1-py2.6.egg\nProcessing dependencies for Sphinx==0.5.1\nSearching for Jinja>=1.1\nReading http://pypi.python.org/simple/Jinja/\nReading http://wsgiarea.pocoo.org/jinja/\nReading http://jinja.pocoo.org/\nBest match: Jinja 1.2\nDownloading http://pypi.python.org/packages/source/J/Jinja/Jinja-1.2.tar.gz#md5=1235a005ade00b213800ff1e798c0241\nProcessing Jinja-1.2.tar.gz\nRunning Jinja-1.2/setup.py -q bdist_egg --dist-dir /var/folders/L+/L+y6mfGYHtmJhXJSt0GpXE+++TI/-Tmp-/easy_install-3zfQSo/Jinja-1.2/egg-dist-tmp-lzQOap\nNo eggs found in /var/folders/L+/L+y6mfGYHtmJhXJSt0GpXE+++TI/-Tmp-/easy_install-3zfQSo/Jinja-1.2/egg-dist-tmp-lzQOap (setup script problem?)\nerror: Could not find required distribution Jinja>=1.1\n```\n\n\nIt's clearly trying to go out and grab a dependency from the internet -- but I don't know why. In theory, that dependency should be provided already ... here's `easy_install.pth`:\n\n\n```\nimport sys; sys.__plen = len(sys.path)\n./distribute-0.6.6-py2.6.egg\n./Jinja-1.2-py2.6-macosx-10.3-i386.egg\n./Pygments-0.11.1-py2.6.egg\n./Sphinx-0.5.1-py2.6.egg\nimport sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)\n```\n\n\nIt's **identical** to the `easy_install.pth` installed via setuptools; I have no idea why it's failing.",
+    "body": "Yep, it failed on my Mac, too. I have no idea why: it's having trouble finding the Jinja egg, which is there in `site-packages`, and is listed in `easy_install.pth`! Here's the error message:\n\n```\nInstalled /Users/craigcitro/Desktop/four-one-two/local/lib/python2.6/site-packages/Sphinx-0.5.1-py2.6.egg\nProcessing dependencies for Sphinx==0.5.1\nSearching for Jinja>=1.1\nReading http://pypi.python.org/simple/Jinja/\nReading http://wsgiarea.pocoo.org/jinja/\nReading http://jinja.pocoo.org/\nBest match: Jinja 1.2\nDownloading http://pypi.python.org/packages/source/J/Jinja/Jinja-1.2.tar.gz#md5=1235a005ade00b213800ff1e798c0241\nProcessing Jinja-1.2.tar.gz\nRunning Jinja-1.2/setup.py -q bdist_egg --dist-dir /var/folders/L+/L+y6mfGYHtmJhXJSt0GpXE+++TI/-Tmp-/easy_install-3zfQSo/Jinja-1.2/egg-dist-tmp-lzQOap\nNo eggs found in /var/folders/L+/L+y6mfGYHtmJhXJSt0GpXE+++TI/-Tmp-/easy_install-3zfQSo/Jinja-1.2/egg-dist-tmp-lzQOap (setup script problem?)\nerror: Could not find required distribution Jinja>=1.1\n```\n\nIt's clearly trying to go out and grab a dependency from the internet -- but I don't know why. In theory, that dependency should be provided already ... here's `easy_install.pth`:\n\n```\nimport sys; sys.__plen = len(sys.path)\n./distribute-0.6.6-py2.6.egg\n./Jinja-1.2-py2.6-macosx-10.3-i386.egg\n./Pygments-0.11.1-py2.6.egg\n./Sphinx-0.5.1-py2.6.egg\nimport sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)\n```\n\nIt's **identical** to the `easy_install.pth` installed via setuptools; I have no idea why it's failing.",
     "created_at": "2009-10-16T05:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
@@ -123,7 +123,6 @@ archive/issue_comments_059863.json:
 ```
 
 Yep, it failed on my Mac, too. I have no idea why: it's having trouble finding the Jinja egg, which is there in `site-packages`, and is listed in `easy_install.pth`! Here's the error message:
-
 
 ```
 Installed /Users/craigcitro/Desktop/four-one-two/local/lib/python2.6/site-packages/Sphinx-0.5.1-py2.6.egg
@@ -140,9 +139,7 @@ No eggs found in /var/folders/L+/L+y6mfGYHtmJhXJSt0GpXE+++TI/-Tmp-/easy_install-
 error: Could not find required distribution Jinja>=1.1
 ```
 
-
 It's clearly trying to go out and grab a dependency from the internet -- but I don't know why. In theory, that dependency should be provided already ... here's `easy_install.pth`:
-
 
 ```
 import sys; sys.__plen = len(sys.path)
@@ -153,7 +150,6 @@ import sys; sys.__plen = len(sys.path)
 import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 ```
 
-
 It's **identical** to the `easy_install.pth` installed via setuptools; I have no idea why it's failing.
 
 
@@ -163,7 +159,7 @@ It's **identical** to the `easy_install.pth` installed via setuptools; I have no
 archive/issue_comments_059864.json:
 ```json
 {
-    "body": "Well, I couldn't reproduce that error because I got one when trying to build jinja; it's still trying to use setuptools:\n\n```\n\n---------------------------------------------------------------------------\nThis script requires setuptools version 0.6c5 to run (even to display\nhelp).  I will attempt to download it for you (from\nhttp://cheeseshop.python.org/packages/2.6/s/setuptools/), but\nyou may need to enable firewall access for this script first.\nI will start the download in 15 seconds.\n\n(Note: if this machine does not have network access, please obtain the file\n\n   http://cheeseshop.python.org/packages/2.6/s/setuptools/setuptools-0.6c5-py2.6.egg\n\nand place it in this directory before rerunning this script.)\n---------------------------------------------------------------------------\nDownloading http://cheeseshop.python.org/packages/2.6/s/setuptools/setuptools-0.6c5-py2.6.egg\nTraceback (most recent call last):\n \n[snip]\n\nurllib2.HTTPError: HTTP Error 404: Not Found\nError installing Jinja.\n```\n\nI get this with both 32-bit and 64-bit.\n\nAs I said earlier, I've also seen a different error -- it got a little farther and bombed when it reached Sphinx, and it was trying to download Jinja1.2.  In that case, there were files \"setuptools.pth\" and \"setuptools-0.6....egg\" in SAGE_ROOT/local/lib/python/site-packages by the time the build failed.",
+    "body": "Well, I couldn't reproduce that error because I got one when trying to build jinja; it's still trying to use setuptools:\n\n```\n\n---------------------------------------------------------------------------\nThis script requires setuptools version 0.6c5 to run (even to display\nhelp).  I will attempt to download it for you (from\nhttp://cheeseshop.python.org/packages/2.6/s/setuptools/), but\nyou may need to enable firewall access for this script first.\nI will start the download in 15 seconds.\n\n(Note: if this machine does not have network access, please obtain the file\n\n   http://cheeseshop.python.org/packages/2.6/s/setuptools/setuptools-0.6c5-py2.6.egg\n\nand place it in this directory before rerunning this script.)\n---------------------------------------------------------------------------\nDownloading http://cheeseshop.python.org/packages/2.6/s/setuptools/setuptools-0.6c5-py2.6.egg\nTraceback (most recent call last):\n \n[snip]\n\nurllib2.HTTPError: HTTP Error 404: Not Found\nError installing Jinja.\n```\nI get this with both 32-bit and 64-bit.\n\nAs I said earlier, I've also seen a different error -- it got a little farther and bombed when it reached Sphinx, and it was trying to download Jinja1.2.  In that case, there were files \"setuptools.pth\" and \"setuptools-0.6....egg\" in SAGE_ROOT/local/lib/python/site-packages by the time the build failed.",
     "created_at": "2009-10-16T14:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7230",
     "type": "issue_comment",
@@ -197,7 +193,6 @@ Traceback (most recent call last):
 urllib2.HTTPError: HTTP Error 404: Not Found
 Error installing Jinja.
 ```
-
 I get this with both 32-bit and 64-bit.
 
 As I said earlier, I've also seen a different error -- it got a little farther and bombed when it reached Sphinx, and it was trying to download Jinja1.2.  In that case, there were files "setuptools.pth" and "setuptools-0.6....egg" in SAGE_ROOT/local/lib/python/site-packages by the time the build failed.

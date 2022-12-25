@@ -3,7 +3,7 @@
 archive/issues_000635.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I ask for precision 10, I get precision 9:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\nsage: h = E.padic_height(5, 10)\nsage: h(P)\n4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)\n```\n\n\nIt didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the \"correct\" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/635\n\n",
+    "body": "Assignee: @williamstein\n\nIf I ask for precision 10, I get precision 9:\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\nsage: h = E.padic_height(5, 10)\nsage: h(P)\n4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)\n```\n\nIt didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the \"correct\" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/635\n\n",
     "created_at": "2007-09-10T19:28:56Z",
     "labels": [
         "component: algebraic geometry",
@@ -27,7 +27,6 @@ sage: h = E.padic_height(5, 10)
 sage: h(P)
 4*5 + 3*5^2 + 3*5^3 + 4*5^4 + 4*5^5 + 5^6 + 4*5^8 + O(5^9)
 ```
-
 
 It didn't use to behave this way; it probably happened accidentally as a consequence of some changes chris wuthrich made, and it appears that the doctests were modified to make this behaviour the "correct" one. This should be fixed, because in the large prime case it ends up wasting a lot of time computing extra digits in intermediate steps.
 

@@ -3,7 +3,7 @@
 archive/issues_002303.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKate reports in https://groups.google.com/group/sage-support/browse_thread/thread/f7bc183b6f052943/70f4b300f5be3d13#70f4b300f5be3d13\n\n```\nWhen I build 2.10.2 from source on my\nx86-Linux box (pentium4-fc6) using gcc-4.2.3,\nI get a 'make check' failure at\n\n./sage -t devel/sage-main/sage/functions/special.py\n\nsh: line 1:  3345 Illegal instruction     /home/kate/sage/sage-2.10.2-\nx86-Linux/local/bin/python .doctest_special.py >.doctest/out\n2>.doctest/err\n\nA mysterious error (perphaps a memory error?) occurred, which may have\ncrashed doctest.\n         [3.6 s]\nexit code: 256\n\nThe offending line seems to be\n\nsage: bessel_I(1,1,\"scipy\")\n/home/kate/sage/sage-2.10.2-x86-Linux/local/bin/sage-sage: line 212:\n3484 Illegal instruction     sage-ipython -c \"$SAGE_STARTUP_COMMAND;\"\n\"$@\"\n\nKate \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2303\n\n",
+    "body": "Assignee: mabshoff\n\nKate reports in https://groups.google.com/group/sage-support/browse_thread/thread/f7bc183b6f052943/70f4b300f5be3d13#70f4b300f5be3d13\n\n```\nWhen I build 2.10.2 from source on my\nx86-Linux box (pentium4-fc6) using gcc-4.2.3,\nI get a 'make check' failure at\n\n./sage -t devel/sage-main/sage/functions/special.py\n\nsh: line 1:  3345 Illegal instruction     /home/kate/sage/sage-2.10.2-\nx86-Linux/local/bin/python .doctest_special.py >.doctest/out\n2>.doctest/err\n\nA mysterious error (perphaps a memory error?) occurred, which may have\ncrashed doctest.\n         [3.6 s]\nexit code: 256\n\nThe offending line seems to be\n\nsage: bessel_I(1,1,\"scipy\")\n/home/kate/sage/sage-2.10.2-x86-Linux/local/bin/sage-sage: line 212:\n3484 Illegal instruction     sage-ipython -c \"$SAGE_STARTUP_COMMAND;\"\n\"$@\"\n\nKate \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2303\n\n",
     "created_at": "2008-02-25T21:23:59Z",
     "labels": [
         "component: doctest coverage",
@@ -46,7 +46,6 @@ sage: bessel_I(1,1,"scipy")
 
 Kate 
 ```
-
 
 Cheers,
 
@@ -101,7 +100,7 @@ then report this upstream (with a gdb traceback?) to scipy.
 archive/issue_comments_015285.json:
 ```json
 {
-    "body": "Using Sage 2.10.2 on this computer (Ubuntu 7.10, 32-bit):\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 15\nmodel           : 4\nmodel name      : Intel(R) Pentium(R) 4 CPU 3.80GHz\nstepping        : 1\ncpu MHz         : 3790.991\ncache size      : 1024 KB\n\n$ gcc -v\nUsing built-in specs.\nTarget: i486-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.1.3 --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release i486-linux-gnu\nThread model: posix\ngcc version 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)\n\n```\n\n\nthe doctest passes:\n\n\n```\n$ sage -t sage/devel/sage-main/sage/functions/special.py \nsage -t  sage/devel/sage-main/sage/functions/special.py     \n         [7.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 7.3 seconds\n```\n\n\nand I get:\n\n\n```\nsage: bessel_I(1,1,\"scipy\")\n0.565159103992000\n```\n",
+    "body": "Using Sage 2.10.2 on this computer (Ubuntu 7.10, 32-bit):\n\n```\nvendor_id       : GenuineIntel\ncpu family      : 15\nmodel           : 4\nmodel name      : Intel(R) Pentium(R) 4 CPU 3.80GHz\nstepping        : 1\ncpu MHz         : 3790.991\ncache size      : 1024 KB\n\n$ gcc -v\nUsing built-in specs.\nTarget: i486-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.1.3 --program-suffix=-4.1 --enable-__cxa_atexit --enable-clocale=gnu --enable-libstdcxx-debug --enable-mpfr --enable-checking=release i486-linux-gnu\nThread model: posix\ngcc version 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)\n\n```\n\nthe doctest passes:\n\n```\n$ sage -t sage/devel/sage-main/sage/functions/special.py \nsage -t  sage/devel/sage-main/sage/functions/special.py     \n         [7.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 7.3 seconds\n```\n\nand I get:\n\n```\nsage: bessel_I(1,1,\"scipy\")\n0.565159103992000\n```",
     "created_at": "2008-03-08T20:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
@@ -130,9 +129,7 @@ gcc version 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)
 
 ```
 
-
 the doctest passes:
-
 
 ```
 $ sage -t sage/devel/sage-main/sage/functions/special.py 
@@ -144,15 +141,12 @@ All tests passed!
 Total time for all tests: 7.3 seconds
 ```
 
-
 and I get:
-
 
 ```
 sage: bessel_I(1,1,"scipy")
 0.565159103992000
 ```
-
 
 
 
@@ -178,7 +172,7 @@ archive/issue_events_005427.json:
 archive/issue_comments_015286.json:
 ```json
 {
-    "body": "We can finally replicate the problem:\n\n```\n(gdb) bt\n#0  0x02e474ac in dgamln_ () from /tmp/foo/sage-3.0.4.rc0-x86-Linux-fc8/local/lib/python/site-packages/scipy/special/_cephes.so\n#1  0x0028bbc9 in log () from /lib/libm.so.6\n#2  0x40000000 in ?? ()\n```\n\nWilliam says:\n\n```\nWilliam:  here is the sage-free version to replicate the problem:\nscipy.special.iv(float(1),complex(1,0))\n```\n\n\nCheers,\n\nMichael",
+    "body": "We can finally replicate the problem:\n\n```\n(gdb) bt\n#0  0x02e474ac in dgamln_ () from /tmp/foo/sage-3.0.4.rc0-x86-Linux-fc8/local/lib/python/site-packages/scipy/special/_cephes.so\n#1  0x0028bbc9 in log () from /lib/libm.so.6\n#2  0x40000000 in ?? ()\n```\nWilliam says:\n\n```\nWilliam:  here is the sage-free version to replicate the problem:\nscipy.special.iv(float(1),complex(1,0))\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-07-08T22:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
@@ -195,14 +189,12 @@ We can finally replicate the problem:
 #1  0x0028bbc9 in log () from /lib/libm.so.6
 #2  0x40000000 in ?? ()
 ```
-
 William says:
 
 ```
 William:  here is the sage-free version to replicate the problem:
 scipy.special.iv(float(1),complex(1,0))
 ```
-
 
 Cheers,
 
@@ -402,7 +394,7 @@ Michael
 archive/issue_comments_015293.json:
 ```json
 {
-    "body": "With the new spkg the following three doctests that used to segfault all due to illegal instruction now pass:\n\n```\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/plot/plot3d/list_plot3d.py\nsage -t  devel/sage/sage/plot/plot3d/list_plot3d.py         \n\t [6.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.3 seconds\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/finance/time_series.pyx\nsage -t  devel/sage/sage/finance/time_series.pyx            \n\t [15.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 15.1 seconds\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t devel/sage/sage/functions/special.py \nsage -t  devel/sage/sage/functions/special.py               \n\t [8.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.2 seconds\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the new spkg the following three doctests that used to segfault all due to illegal instruction now pass:\n\n```\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/plot/plot3d/list_plot3d.py\nsage -t  devel/sage/sage/plot/plot3d/list_plot3d.py         \n\t [6.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.3 seconds\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t  devel/sage/sage/finance/time_series.pyx\nsage -t  devel/sage/sage/finance/time_series.pyx            \n\t [15.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 15.1 seconds\n[mabshoff@cicero sage-3.0.4-x86-Linux-fc8]$ ./sage -t devel/sage/sage/functions/special.py \nsage -t  devel/sage/sage/functions/special.py               \n\t [8.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.2 seconds\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T18:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
@@ -436,7 +428,6 @@ sage -t  devel/sage/sage/functions/special.py
 All tests passed!
 Total time for all tests: 8.2 seconds
 ```
-
 
 Cheers,
 

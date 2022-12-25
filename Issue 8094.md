@@ -550,7 +550,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070830.json:
 ```json
 {
-    "body": "Maybe on another ticket, but can I ask for one more enhancement on this?  Can we make the following work:\n\n\n```\nmatrix(\"\"\"\n[1 2]\n[3 4]\n\"\"\")\n\n(i.e., any \"]\" or \"[\" next to row delimiters are stripped).  That would mean that I could cut and paste output from Sage back into Sage to make a matrix.",
+    "body": "Maybe on another ticket, but can I ask for one more enhancement on this?  Can we make the following work:\n\n```\nmatrix(\"\"\"\n[1 2]\n[3 4]\n\"\"\")\n\n(i.e., any \"]\" or \"[\" next to row delimiters are stripped).  That would mean that I could cut and paste output from Sage back into Sage to make a matrix.",
     "created_at": "2011-08-24T13:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -560,7 +560,6 @@ archive/issue_comments_070830.json:
 ```
 
 Maybe on another ticket, but can I ask for one more enhancement on this?  Can we make the following work:
-
 
 ```
 matrix("""
@@ -595,7 +594,7 @@ Argh.   Wrong ticket; please ignore my comment!
 archive/issue_comments_070832.json:
 ```json
 {
-    "body": "Replying to [comment:22 jason]:\n> Argh.   Wrong ticket; please ignore my comment!\n\nWhew!  ;-)",
+    "body": "Replying to [comment:22 jason]:\n> Argh.   Wrong ticket; please ignore my comment!\n\n\nWhew!  ;-)",
     "created_at": "2011-08-24T15:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -606,6 +605,7 @@ archive/issue_comments_070832.json:
 
 Replying to [comment:22 jason]:
 > Argh.   Wrong ticket; please ignore my comment!
+
 
 Whew!  ;-)
 
@@ -652,7 +652,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_070835.json:
 ```json
 {
-    "body": "[attachment:8094-shortcut-matrix-transpose.patch] is not a Mercurial changeset.\n\n```\nabort: no username supplied (see \"hg help config\")\n```\n\nSorry, Harald. ;)",
+    "body": "[attachment:8094-shortcut-matrix-transpose.patch] is not a Mercurial changeset.\n\n```\nabort: no username supplied (see \"hg help config\")\n```\nSorry, Harald. ;)",
     "created_at": "2011-09-12T15:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -666,7 +666,6 @@ archive/issue_comments_070835.json:
 ```
 abort: no username supplied (see "hg help config")
 ```
-
 Sorry, Harald. ;)
 
 
@@ -716,7 +715,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_070838.json:
 ```json
 {
-    "body": "Replying to [comment:27 rbeezer]:\n> I did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.\n\nYep, sorry. I would have done it myself but failed to recall Harald's e-mail address that moment; then later was simply too busy to search which ticket it was...\n\n\n\n\n> Should now be ready to go, since I did not change any code, so should not need a review.\n\nThink so. Only meta data (including line numbers) differ.\n\nAs I had other trouble with the release, I think I can still include it.",
+    "body": "Replying to [comment:27 rbeezer]:\n> I did some maintenance on the main patch, naming it \"v2\".  Has Harald's user info and is now a proper hg patch.  I hope.\n\n\nYep, sorry. I would have done it myself but failed to recall Harald's e-mail address that moment; then later was simply too busy to search which ticket it was...\n\n\n\n\n> Should now be ready to go, since I did not change any code, so should not need a review.\n\n\nThink so. Only meta data (including line numbers) differ.\n\nAs I had other trouble with the release, I think I can still include it.",
     "created_at": "2011-09-18T04:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8094",
     "type": "issue_comment",
@@ -728,12 +727,14 @@ archive/issue_comments_070838.json:
 Replying to [comment:27 rbeezer]:
 > I did some maintenance on the main patch, naming it "v2".  Has Harald's user info and is now a proper hg patch.  I hope.
 
+
 Yep, sorry. I would have done it myself but failed to recall Harald's e-mail address that moment; then later was simply too busy to search which ticket it was...
 
 
 
 
 > Should now be ready to go, since I did not change any code, so should not need a review.
+
 
 Think so. Only meta data (including line numbers) differ.
 

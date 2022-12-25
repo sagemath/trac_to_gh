@@ -3,7 +3,7 @@
 archive/issues_000666.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCurrently, printing of matrices in Latex form is difficult to read. I'm submitting a (trivial) patch\nthat adds more spacing to increase readibility.\n\nExample: \n\n```\nsage: M=MatrixSpace(QQ,2,2)\nsage: A=M([[2,3],[4,5]])\nsage: latex(A)\n```\n\ncurrently gives:\n\n```\n\\left(\\begin{array}{rr}\n2&3\\\\\n4&5\n\\end{array}\\right)\n```\n\nMy patch changes this to \n\n```\n\\left(\\begin{array}{rr}\n2 & 3 \\\\\n4 & 5\n\\end{array}\\right)\n```\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/666\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, printing of matrices in Latex form is difficult to read. I'm submitting a (trivial) patch\nthat adds more spacing to increase readibility.\n\nExample: \n\n```\nsage: M=MatrixSpace(QQ,2,2)\nsage: A=M([[2,3],[4,5]])\nsage: latex(A)\n```\ncurrently gives:\n\n```\n\\left(\\begin{array}{rr}\n2&3\\\\\n4&5\n\\end{array}\\right)\n```\nMy patch changes this to \n\n```\n\\left(\\begin{array}{rr}\n2 & 3 \\\\\n4 & 5\n\\end{array}\\right)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/666\n\n",
     "created_at": "2007-09-16T18:43:39Z",
     "labels": [
         "component: linear algebra",
@@ -29,7 +29,6 @@ sage: M=MatrixSpace(QQ,2,2)
 sage: A=M([[2,3],[4,5]])
 sage: latex(A)
 ```
-
 currently gives:
 
 ```
@@ -38,7 +37,6 @@ currently gives:
 4&5
 \end{array}\right)
 ```
-
 My patch changes this to 
 
 ```
@@ -47,7 +45,6 @@ My patch changes this to
 4 & 5
 \end{array}\right)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003068.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n<type 'exceptions.RuntimeError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3068\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n<type 'exceptions.RuntimeError'>:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3068\n\n",
     "created_at": "2008-04-30T15:25:30Z",
     "labels": [
         "component: linear algebra",
@@ -18,13 +18,11 @@ archive/issues_003068.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: m = matrix([])
 sage: m.smith_form()
 <type 'exceptions.RuntimeError'>:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3068
 
@@ -37,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3068
 archive/issue_comments_021127.json:
 ```json
 {
-    "body": "This seems to be gone as of 3.1.1. Could someone close this?\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n ([], [], [])\n```\n",
+    "body": "This seems to be gone as of 3.1.1. Could someone close this?\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n ([], [], [])\n```",
     "created_at": "2008-08-27T18:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
@@ -53,7 +51,6 @@ sage: m = matrix([])
 sage: m.smith_form()
  ([], [], [])
 ```
-
 
 
 
@@ -210,7 +207,7 @@ I'm sorry for overstepping my authority. Anyway, the fix is now up at #4681.
 archive/issue_comments_021134.json:
 ```json
 {
-    "body": "Replying to [comment:4 davidloeffler]:\n> I'm sorry for overstepping my authority. Anyway, the fix is now up at #4681.\n\nDon't worry about it because it is one of those unwritten rules :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 davidloeffler]:\n> I'm sorry for overstepping my authority. Anyway, the fix is now up at #4681.\n\n\nDon't worry about it because it is one of those unwritten rules :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-08T18:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
@@ -221,6 +218,7 @@ archive/issue_comments_021134.json:
 
 Replying to [comment:4 davidloeffler]:
 > I'm sorry for overstepping my authority. Anyway, the fix is now up at #4681.
+
 
 Don't worry about it because it is one of those unwritten rules :)
 

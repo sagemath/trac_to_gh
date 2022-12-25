@@ -73,7 +73,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072924.json:
 ```json
 {
-    "body": "Could you modify the file `spkg-check` to conform to the portability issues at #8255? For example, the following line in `spkg-check` is not recommended:\n\n```\nif [ \"$(which latex)\" -a \"$(kpsewhich tkz-berge.sty)\" ]\n```\n",
+    "body": "Could you modify the file `spkg-check` to conform to the portability issues at #8255? For example, the following line in `spkg-check` is not recommended:\n\n```\nif [ \"$(which latex)\" -a \"$(kpsewhich tkz-berge.sty)\" ]\n```",
     "created_at": "2010-02-15T06:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -90,13 +90,12 @@ if [ "$(which latex)" -a "$(kpsewhich tkz-berge.sty)" ]
 
 
 
-
 ---
 
 archive/issue_comments_072925.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n> Could you modify the file `spkg-check` to conform to the portability issues at #8255?\n\nI'm guessing you didn't mean to refer to *this* ticket... :)",
+    "body": "Replying to [comment:2 mvngu]:\n> Could you modify the file `spkg-check` to conform to the portability issues at #8255?\n\n\nI'm guessing you didn't mean to refer to *this* ticket... :)",
     "created_at": "2010-02-15T09:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -108,6 +107,7 @@ archive/issue_comments_072925.json:
 Replying to [comment:2 mvngu]:
 > Could you modify the file `spkg-check` to conform to the portability issues at #8255?
 
+
 I'm guessing you didn't mean to refer to *this* ticket... :)
 
 
@@ -117,7 +117,7 @@ I'm guessing you didn't mean to refer to *this* ticket... :)
 archive/issue_comments_072926.json:
 ```json
 {
-    "body": "Replying to [comment:3 ddrake]:\n> I'm guessing you didn't mean to refer to *this* ticket... :)\n\nLet's pretend I was referring to #7632 :-)",
+    "body": "Replying to [comment:3 ddrake]:\n> I'm guessing you didn't mean to refer to *this* ticket... :)\n\n\nLet's pretend I was referring to #7632 :-)",
     "created_at": "2010-02-15T09:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -128,6 +128,7 @@ archive/issue_comments_072926.json:
 
 Replying to [comment:3 ddrake]:
 > I'm guessing you didn't mean to refer to *this* ticket... :)
+
 
 Let's pretend I was referring to #7632 :-)
 
@@ -174,7 +175,7 @@ Thanks for the link. Ironically, I put in "-a" in an effort to be more portable.
 archive/issue_comments_072929.json:
 ```json
 {
-    "body": "I had something like this in mind:\n\n```diff\ndiff -r 2d39ee3a7530 -r e739e330a66a spkg-check\n--- a/spkg-check\n+++ b/spkg-check\n@@ -29,8 +29,7 @@\n     fi\n }\n \n-if [ \"$(which latex)\" && \"$(kpsewhich tkz-berge.sty)\" ]\n-then\n+if [ \"$(which latex)\" ] && [ \"$(kpsewhich tkz-berge.sty)\" ]; then\n     cd src\n \n     typeset example.tex\n```\n\nIt would be good if the ticket number is referenced in the hg log.",
+    "body": "I had something like this in mind:\n\n```diff\ndiff -r 2d39ee3a7530 -r e739e330a66a spkg-check\n--- a/spkg-check\n+++ b/spkg-check\n@@ -29,8 +29,7 @@\n     fi\n }\n \n-if [ \"$(which latex)\" && \"$(kpsewhich tkz-berge.sty)\" ]\n-then\n+if [ \"$(which latex)\" ] && [ \"$(kpsewhich tkz-berge.sty)\" ]; then\n     cd src\n \n     typeset example.tex\n```\nIt would be good if the ticket number is referenced in the hg log.",
     "created_at": "2010-02-20T15:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -200,7 +201,6 @@ diff -r 2d39ee3a7530 -r e739e330a66a spkg-check
  
      typeset example.tex
 ```
-
 It would be good if the ticket number is referenced in the hg log.
 
 
@@ -230,7 +230,7 @@ BTW, how did you get that diff in your comment?
 archive/issue_comments_072931.json:
 ```json
 {
-    "body": "Replying to [comment:7 ddrake]:\n> BTW, how did you get that diff in your comment? \n\nSee the [Wiki Processors](http://trac.sagemath.org/sage_trac/wiki/WikiProcessors) section.",
+    "body": "Replying to [comment:7 ddrake]:\n> BTW, how did you get that diff in your comment? \n\n\nSee the [Wiki Processors](http://trac.sagemath.org/sage_trac/wiki/WikiProcessors) section.",
     "created_at": "2010-02-21T08:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -241,6 +241,7 @@ archive/issue_comments_072931.json:
 
 Replying to [comment:7 ddrake]:
 > BTW, how did you get that diff in your comment? 
+
 
 See the [Wiki Processors](http://trac.sagemath.org/sage_trac/wiki/WikiProcessors) section.
 
@@ -269,7 +270,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072933.json:
 ```json
 {
-    "body": "spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway: if latex is not found, sage-check exits gracefully, but in the unlikely event that latex is found but pdflatex isn't, then I get\n\n```\nRunning the test suite.\n./spkg-check: line 10: pdflatex: command not found\nError typesetting example.tex! To fully test SageTeX, make sure\nLaTeX can find sagetex.sty, and that TikZ (version 2.00\nor newer), tkz-berge.sty and tkz-graph.sty is installed.\n*************************************\nError testing package ** sagetex-2.2.3.p0 **\n*************************************\n```\n\nCan we run latex instead of pdflatex?  Otherwise, change \"which latex\" to \"which pdflatex\", and maybe change the error message from \"LaTeX isn't installed\" to \"PDFLaTeX isn't installed\"?\n\nAlso, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n\n$ which latex                                          \nno latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin",
+    "body": "spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway: if latex is not found, sage-check exits gracefully, but in the unlikely event that latex is found but pdflatex isn't, then I get\n\n```\nRunning the test suite.\n./spkg-check: line 10: pdflatex: command not found\nError typesetting example.tex! To fully test SageTeX, make sure\nLaTeX can find sagetex.sty, and that TikZ (version 2.00\nor newer), tkz-berge.sty and tkz-graph.sty is installed.\n*************************************\nError testing package ** sagetex-2.2.3.p0 **\n*************************************\n```\nCan we run latex instead of pdflatex?  Otherwise, change \"which latex\" to \"which pdflatex\", and maybe change the error message from \"LaTeX isn't installed\" to \"PDFLaTeX isn't installed\"?\n\nAlso, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n\n$ which latex                                          \nno latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin",
     "created_at": "2010-03-01T23:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -290,7 +291,6 @@ or newer), tkz-berge.sty and tkz-graph.sty is installed.
 Error testing package ** sagetex-2.2.3.p0 **
 *************************************
 ```
-
 Can we run latex instead of pdflatex?  Otherwise, change "which latex" to "which pdflatex", and maybe change the error message from "LaTeX isn't installed" to "PDFLaTeX isn't installed"?
 
 Also, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:
@@ -305,7 +305,7 @@ no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/cc
 archive/issue_comments_072934.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway:\n\nIn TeXLive (and teTeX), \"latex\" and \"pdflatex\" are just symlinks to pdftex (or pdfetex), so it seems really unlikely that someone would have \"latex\" but not \"pdflatex\". But your idea is correct; I'll change it.\n\nBy the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\n> Also, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n> \n> $ which latex                                          \n> no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n\nThis is a more serious problem. I'll look into it. Hopefully it gives a useful return code or something.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway:\n\n\nIn TeXLive (and teTeX), \"latex\" and \"pdflatex\" are just symlinks to pdftex (or pdfetex), so it seems really unlikely that someone would have \"latex\" but not \"pdflatex\". But your idea is correct; I'll change it.\n\nBy the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\n> Also, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n> \n> $ which latex                                          \n> no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n\n\nThis is a more serious problem. I'll look into it. Hopefully it gives a useful return code or something.",
     "created_at": "2010-03-02T00:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -317,6 +317,7 @@ archive/issue_comments_072934.json:
 Replying to [comment:9 jhpalmieri]:
 > spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway:
 
+
 In TeXLive (and teTeX), "latex" and "pdflatex" are just symlinks to pdftex (or pdfetex), so it seems really unlikely that someone would have "latex" but not "pdflatex". But your idea is correct; I'll change it.
 
 By the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.
@@ -325,6 +326,7 @@ By the way, is that a real example? Do you have a system with latex but not pdfl
 > 
 > $ which latex                                          
 > no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin
+
 
 This is a more serious problem. I'll look into it. Hopefully it gives a useful return code or something.
 
@@ -335,7 +337,7 @@ This is a more serious problem. I'll look into it. Hopefully it gives a useful r
 archive/issue_comments_072935.json:
 ```json
 {
-    "body": "Replying to [comment:10 ddrake]:\n> By the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\nIt was a contrived example: I renamed pdflatex temporarily but kept latex around.",
+    "body": "Replying to [comment:10 ddrake]:\n> By the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\n\nIt was a contrived example: I renamed pdflatex temporarily but kept latex around.",
     "created_at": "2010-03-02T00:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
@@ -346,6 +348,7 @@ archive/issue_comments_072935.json:
 
 Replying to [comment:10 ddrake]:
 > By the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.
+
 
 It was a contrived example: I renamed pdflatex temporarily but kept latex around.
 

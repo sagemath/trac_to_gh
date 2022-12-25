@@ -3,7 +3,7 @@
 archive/issues_004109.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\ng=graphs.PathGraph(6)\ng.show()\nh = g.complement()\nh.show()\n```\n\nThe last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4109\n\n",
+    "body": "Assignee: @rlmill\n\n```\ng=graphs.PathGraph(6)\ng.show()\nh = g.complement()\nh.show()\n```\nThe last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4109\n\n",
     "created_at": "2008-09-13T04:43:20Z",
     "labels": [
         "component: graph theory",
@@ -18,14 +18,12 @@ archive/issues_004109.json:
 ```
 Assignee: @rlmill
 
-
 ```
 g=graphs.PathGraph(6)
 g.show()
 h = g.complement()
 h.show()
 ```
-
 The last command shows the original P_6, not the complement.  However, calling `h.edges()` seems to return the right results.  Also, `Graph(h).show()` shows the correct thing, I think.
 
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4109
 archive/issue_comments_029692.json:
 ```json
 {
-    "body": "The possible problem:\n\n\n```\n[22:40] <rlm_> jason- the position dict of the path graph is set\n[22:40] <rlm_> use layout='spring'\n[22:41] *** rlm_ is now known as rlm|afk.\n[22:42] <jason-> rlm_: okay, so the pos dict just needs to be cleared when creating the complement, I guess.\n```\n",
+    "body": "The possible problem:\n\n```\n[22:40] <rlm_> jason- the position dict of the path graph is set\n[22:40] <rlm_> use layout='spring'\n[22:41] *** rlm_ is now known as rlm|afk.\n[22:42] <jason-> rlm_: okay, so the pos dict just needs to be cleared when creating the complement, I guess.\n```",
     "created_at": "2008-09-13T04:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4109",
     "type": "issue_comment",
@@ -52,14 +50,12 @@ archive/issue_comments_029692.json:
 
 The possible problem:
 
-
 ```
 [22:40] <rlm_> jason- the position dict of the path graph is set
 [22:40] <rlm_> use layout='spring'
 [22:41] *** rlm_ is now known as rlm|afk.
 [22:42] <jason-> rlm_: okay, so the pos dict just needs to be cleared when creating the complement, I guess.
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004189.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nmapb reported in http://groups.google.com/group/sage-devel/t/8109b386f0e94251\n\n```\nThe fourth argument in the following routine is called \n\"emission_symbols\", while the INPUTS section reports \"emission_state\". \nhmm.DiscreteHiddenMarkovModel(A, B, pi=None, emission_symbols=None, \nname=None, normalize=True) \nn \n    INPUTS: \n        A  -- square matrix of doubles; the state change probabilities \n        B  -- matrix of doubles; emission probabilities \n        pi -- list of floats; probabilities for each initial state \n        emission_state -- list of B.ncols() symbols (just used for \nprinting) \n        name -- (optional) name of the model \n        normalize -- (optional; default=True) whether or not to \nnormalize \n                     the model so the probabilities add to 1 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4189\n\n",
+    "body": "Assignee: @williamstein\n\nmapb reported in http://groups.google.com/group/sage-devel/t/8109b386f0e94251\n\n```\nThe fourth argument in the following routine is called \n\"emission_symbols\", while the INPUTS section reports \"emission_state\". \nhmm.DiscreteHiddenMarkovModel(A, B, pi=None, emission_symbols=None, \nname=None, normalize=True) \nn \n    INPUTS: \n        A  -- square matrix of doubles; the state change probabilities \n        B  -- matrix of doubles; emission probabilities \n        pi -- list of floats; probabilities for each initial state \n        emission_state -- list of B.ncols() symbols (just used for \nprinting) \n        name -- (optional) name of the model \n        normalize -- (optional; default=True) whether or not to \nnormalize \n                     the model so the probabilities add to 1 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4189\n\n",
     "created_at": "2008-09-24T10:56:05Z",
     "labels": [
         "component: documentation",
@@ -37,7 +37,6 @@ printing)
 normalize 
                      the model so the probabilities add to 1 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4189
 

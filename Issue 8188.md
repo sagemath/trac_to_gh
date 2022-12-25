@@ -123,7 +123,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072052.json:
 ```json
 {
-    "body": "This patch fails to apply to 4.3.2.rc0.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: 8188-coding\nsage: hg_sage.apply(\"/Users/wdj/sagefiles/trac_8188.patch\")\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg status\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg status\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg import   \"/Users/wdj/sagefiles/trac_8188.patch\"\napplying /Users/wdj/sagefiles/trac_8188.patch\npatching file sage/coding/linear_code.py\nHunk #1 FAILED at 1406\nHunk #2 succeeded at 1416 with fuzz 2 (offset -11 lines).\nHunk #3 succeeded at 1468 with fuzz 1 (offset -2 lines).\nHunk #4 succeeded at 1684 with fuzz 1 (offset 4 lines).\n1 out of 4 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej\nabort: patch failed to apply\n```\n\n| Sage Version 4.3.2.rc0, Release Date: 2010-02-03                   |\n| Type notebook() for the GUI, and license() for information.        |\nPlease make the following changes\n\n(1) fix the patch so that it applies correctly\n(2) Add you name to AUTHOR\n(3) Add a short definition of systematic and information set to the docstrings.\n\nIf you do all these, and the patch applies and passes sage -testall then I'll give this a positive review.\n\nThanks for working on this!",
+    "body": "This patch fails to apply to 4.3.2.rc0.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: 8188-coding\nsage: hg_sage.apply(\"/Users/wdj/sagefiles/trac_8188.patch\")\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg status\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg status\ncd \"/Users/wdj/sagefiles/sage-4.3.2.rc0/devel/sage\" && hg import   \"/Users/wdj/sagefiles/trac_8188.patch\"\napplying /Users/wdj/sagefiles/trac_8188.patch\npatching file sage/coding/linear_code.py\nHunk #1 FAILED at 1406\nHunk #2 succeeded at 1416 with fuzz 2 (offset -11 lines).\nHunk #3 succeeded at 1468 with fuzz 1 (offset -2 lines).\nHunk #4 succeeded at 1684 with fuzz 1 (offset 4 lines).\n1 out of 4 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej\nabort: patch failed to apply\n```\n| Sage Version 4.3.2.rc0, Release Date: 2010-02-03                   |\n| Type notebook() for the GUI, and license() for information.        |\nPlease make the following changes\n\n(1) fix the patch so that it applies correctly\n(2) Add you name to AUTHOR\n(3) Add a short definition of systematic and information set to the docstrings.\n\nIf you do all these, and the patch applies and passes sage -testall then I'll give this a positive review.\n\nThanks for working on this!",
     "created_at": "2010-02-05T18:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
@@ -133,7 +133,6 @@ archive/issue_comments_072052.json:
 ```
 
 This patch fails to apply to 4.3.2.rc0.
-
 
 ```
 ----------------------------------------------------------------------
@@ -157,7 +156,6 @@ Hunk #4 succeeded at 1684 with fuzz 1 (offset 4 lines).
 1 out of 4 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej
 abort: patch failed to apply
 ```
-
 | Sage Version 4.3.2.rc0, Release Date: 2010-02-03                   |
 | Type notebook() for the GUI, and license() for information.        |
 Please make the following changes

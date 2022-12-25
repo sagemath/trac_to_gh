@@ -3,7 +3,7 @@
 archive/issues_004706.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWith high -tp numbers (i.e. 16) on sage.math one will see similar issues to the one below:\n\n```\nsage -t -long devel/sage/sage/libs/symmetrica/symmetrica.pyx\n  File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/.doctest_symmetrica.py\", line 29\n    >>> test_integer(Integer(1))###line 539:_sage_    >>> test_integer(1)\n    ^\nIndentationError: unexpected indent\n```\n\n\nThis is likely a race condition between creating the file running the doctest. The issue is not specific to -tp. \n\nA potential solution might be to create all .doctest_$FOO files and then start running them. This might also fix the problem with \n\n```\nsage -t -long devel/sage/sage/symbolic/constants.pyx\n\t [0.1 s]\n```\n\nin Sage 3.2.1+ which is caused by no doctests being executed since (a) either there are no doctests in that file or (b) we are running optional doctests only.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4706\n\n",
+    "body": "Assignee: mabshoff\n\nWith high -tp numbers (i.e. 16) on sage.math one will see similar issues to the one below:\n\n```\nsage -t -long devel/sage/sage/libs/symmetrica/symmetrica.pyx\n  File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/.doctest_symmetrica.py\", line 29\n    >>> test_integer(Integer(1))###line 539:_sage_    >>> test_integer(1)\n    ^\nIndentationError: unexpected indent\n```\n\nThis is likely a race condition between creating the file running the doctest. The issue is not specific to -tp. \n\nA potential solution might be to create all .doctest_$FOO files and then start running them. This might also fix the problem with \n\n```\nsage -t -long devel/sage/sage/symbolic/constants.pyx\n\t [0.1 s]\n```\nin Sage 3.2.1+ which is caused by no doctests being executed since (a) either there are no doctests in that file or (b) we are running optional doctests only.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4706\n\n",
     "created_at": "2008-12-05T01:37:01Z",
     "labels": [
         "component: doctest coverage",
@@ -28,7 +28,6 @@ sage -t -long devel/sage/sage/libs/symmetrica/symmetrica.pyx
 IndentationError: unexpected indent
 ```
 
-
 This is likely a race condition between creating the file running the doctest. The issue is not specific to -tp. 
 
 A potential solution might be to create all .doctest_$FOO files and then start running them. This might also fix the problem with 
@@ -37,7 +36,6 @@ A potential solution might be to create all .doctest_$FOO files and then start r
 sage -t -long devel/sage/sage/symbolic/constants.pyx
 	 [0.1 s]
 ```
-
 in Sage 3.2.1+ which is caused by no doctests being executed since (a) either there are no doctests in that file or (b) we are running optional doctests only.
 
 Cheers,

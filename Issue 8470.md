@@ -93,7 +93,7 @@ Changing keywords from "FAQ, HOWTO" to "FAQ, HOWTO, tutorial".
 archive/issue_comments_076171.json:
 ```json
 {
-    "body": "Here is a more complete list of patches that are relevant\nto this metaticket:\n\n\n```\ntrac_8480-clean-up.patch\ntrac_8464-faq-general.patch\ntrac_8464-faq-usage.patch\ntrac_8464-faq-contribute.patch\ntrac_8464-ref.patch\ntrac_8465-functional.patch\ntrac_8469-rsa.patch\ntrac_8468-groups.patch\ntrac_8411_branching_rules.patch\ntrac_8414_weyl_group_space.patch\ntrac_8442-lie-rebased.patch\ntrac_8442-reviewer.patch\ntrac_8492-ref.patch\n```\n\n\nIn addition three .png files from #8442 need to be copied into \n`doc/en/thematic_tutorials/static`.\n\nWith this preparation, the pdf and html documentation build and look very good.",
+    "body": "Here is a more complete list of patches that are relevant\nto this metaticket:\n\n```\ntrac_8480-clean-up.patch\ntrac_8464-faq-general.patch\ntrac_8464-faq-usage.patch\ntrac_8464-faq-contribute.patch\ntrac_8464-ref.patch\ntrac_8465-functional.patch\ntrac_8469-rsa.patch\ntrac_8468-groups.patch\ntrac_8411_branching_rules.patch\ntrac_8414_weyl_group_space.patch\ntrac_8442-lie-rebased.patch\ntrac_8442-reviewer.patch\ntrac_8492-ref.patch\n```\n\nIn addition three .png files from #8442 need to be copied into \n`doc/en/thematic_tutorials/static`.\n\nWith this preparation, the pdf and html documentation build and look very good.",
     "created_at": "2010-03-15T23:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ archive/issue_comments_076171.json:
 
 Here is a more complete list of patches that are relevant
 to this metaticket:
-
 
 ```
 trac_8480-clean-up.patch
@@ -121,7 +120,6 @@ trac_8442-lie-rebased.patch
 trac_8442-reviewer.patch
 trac_8492-ref.patch
 ```
-
 
 In addition three .png files from #8442 need to be copied into 
 `doc/en/thematic_tutorials/static`.

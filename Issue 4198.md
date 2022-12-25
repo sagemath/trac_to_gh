@@ -143,7 +143,7 @@ Merged in Sage 3.1.3.alpha2
 archive/issue_comments_030412.json:
 ```json
 {
-    "body": "The valgrind trace was the following:\n\n```\n==19392== 8 bytes in 1 blocks are definitely lost in loss record 71 of 22,499\n==19392==    at 0x4A1BE1B: malloc (vg_replace_malloc.c:207)\n==19392==    by 0x6360947: __gmpz_init (in /scratch/mabshoff/release-cycle/sage-3.1.3.alpha1/local/lib/libgmp.so.3.4.1)\n==19392==    by 0x19D0A675: __pyx_f_4sage_6matrix_18matrix_cyclo_dense_18Matrix_cyclo_dense_get_unsafe(__pyx_obj_4sage_6matrix_18matrix_cyclo_dense_Matrix_cyclo_dense*, long, long) (matrix_cyclo_dense.cpp:3773)\n==19392==    by 0x16397A16: __pyx_pf_4sage_6matrix_7matrix1_6Matrix_dense_rows (matrix1.c:3933)\n==19392==    by 0x415832: PyObject_Call (abstract.c:1861)\n==19392==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==19392==    by 0x16392247: __pyx_pf_4sage_6matrix_7matrix1_6Matrix_rows (matrix1.c:3366)\n==19392==    by 0x415832: PyObject_Call (abstract.c:1861)\n==19392==    by 0x164CEEE9: __pyx_pf_4sage_6matrix_7matrix0_6Matrix_linear_combination_of_rows (matrix0.c:10569)\n```\n",
+    "body": "The valgrind trace was the following:\n\n```\n==19392== 8 bytes in 1 blocks are definitely lost in loss record 71 of 22,499\n==19392==    at 0x4A1BE1B: malloc (vg_replace_malloc.c:207)\n==19392==    by 0x6360947: __gmpz_init (in /scratch/mabshoff/release-cycle/sage-3.1.3.alpha1/local/lib/libgmp.so.3.4.1)\n==19392==    by 0x19D0A675: __pyx_f_4sage_6matrix_18matrix_cyclo_dense_18Matrix_cyclo_dense_get_unsafe(__pyx_obj_4sage_6matrix_18matrix_cyclo_dense_Matrix_cyclo_dense*, long, long) (matrix_cyclo_dense.cpp:3773)\n==19392==    by 0x16397A16: __pyx_pf_4sage_6matrix_7matrix1_6Matrix_dense_rows (matrix1.c:3933)\n==19392==    by 0x415832: PyObject_Call (abstract.c:1861)\n==19392==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==19392==    by 0x16392247: __pyx_pf_4sage_6matrix_7matrix1_6Matrix_rows (matrix1.c:3366)\n==19392==    by 0x415832: PyObject_Call (abstract.c:1861)\n==19392==    by 0x164CEEE9: __pyx_pf_4sage_6matrix_7matrix0_6Matrix_linear_combination_of_rows (matrix0.c:10569)\n```",
     "created_at": "2008-10-15T13:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4198",
     "type": "issue_comment",
@@ -166,4 +166,3 @@ The valgrind trace was the following:
 ==19392==    by 0x415832: PyObject_Call (abstract.c:1861)
 ==19392==    by 0x164CEEE9: __pyx_pf_4sage_6matrix_7matrix0_6Matrix_linear_combination_of_rows (matrix0.c:10569)
 ```
-

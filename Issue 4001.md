@@ -3,7 +3,7 @@
 archive/issues_004001.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn [sage-devel] Bill Hart wrote:\n\n> I don't seem to be able to create large polynomials in SAGE currently.\n> If I try to create a polynomial f(x)=x<sup>2**20</sup> where I am working in a\n>  genuine univariate polynomial ring over ZZ, it just tells me it is out\n> of memory.\n\n> It looks like a message from the memory manager from FLINT, but FLINT\n> really has no problem creating polynomials of this size. So I'm a bit\n> puzzled as to what is going on there.\n\n> Magma, by the way, can create polynomials up to length about 2<sup>28</sup> and\n> can store polynomials (as a result of a computation) up to about\n> length 2<sup>30</sup>.\n\n> I was interested in seeing if SAGE could do better than that. However,\n> not being able to create a polynomial of length 1 million seems really\n> limiting to me. Does someone know why this is?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4001\n\n",
+    "body": "Assignee: somebody\n\nOn [sage-devel] Bill Hart wrote:\n\n> I don't seem to be able to create large polynomials in SAGE currently.\n> If I try to create a polynomial f(x)=x<sup>2**20</sup> where I am working in a\n>  genuine univariate polynomial ring over ZZ, it just tells me it is out\n> of memory.\n\n\n> It looks like a message from the memory manager from FLINT, but FLINT\n> really has no problem creating polynomials of this size. So I'm a bit\n> puzzled as to what is going on there.\n\n\n> Magma, by the way, can create polynomials up to length about 2<sup>28</sup> and\n> can store polynomials (as a result of a computation) up to about\n> length 2<sup>30</sup>.\n\n\n> I was interested in seeing if SAGE could do better than that. However,\n> not being able to create a polynomial of length 1 million seems really\n> limiting to me. Does someone know why this is?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4001\n\n",
     "created_at": "2008-08-30T12:36:40Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,13 +25,16 @@ On [sage-devel] Bill Hart wrote:
 >  genuine univariate polynomial ring over ZZ, it just tells me it is out
 > of memory.
 
+
 > It looks like a message from the memory manager from FLINT, but FLINT
 > really has no problem creating polynomials of this size. So I'm a bit
 > puzzled as to what is going on there.
 
+
 > Magma, by the way, can create polynomials up to length about 2<sup>28</sup> and
 > can store polynomials (as a result of a computation) up to about
 > length 2<sup>30</sup>.
+
 
 > I was interested in seeing if SAGE could do better than that. However,
 > not being able to create a polynomial of length 1 million seems really
@@ -66,7 +69,7 @@ Attachment [4001_flint_gen_power.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_028837.json:
 ```json
 {
-    "body": "\n```\nsage: x^(2^20) \n1048576 \n```\n\n\nI think you have set the 1st coefficient to exp instead of the other way round!",
+    "body": "```\nsage: x^(2^20) \n1048576 \n```\n\nI think you have set the 1st coefficient to exp instead of the other way round!",
     "created_at": "2008-08-30T16:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
@@ -75,12 +78,10 @@ archive/issue_comments_028837.json:
 }
 ```
 
-
 ```
 sage: x^(2^20) 
 1048576 
 ```
-
 
 I think you have set the 1st coefficient to exp instead of the other way round!
 
@@ -129,7 +130,7 @@ Actually, It was only a copy'n'paste error in the doctest, the actual implementa
 archive/issue_comments_028840.json:
 ```json
 {
-    "body": "... and to be honest I had not applied the patch, just read it!\n\nPatch applies ok to 3.1.2.alpha2, doctests in sage.rings.polynomial all pass.\n\nBy the way, `x<sup>(2</sup>25)` works ok too, but `x<sup>(2</sup>30)` causes Sage to crash:\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nDoes that mean that your new special code should have _sig_on, _sig_off?",
+    "body": "... and to be honest I had not applied the patch, just read it!\n\nPatch applies ok to 3.1.2.alpha2, doctests in sage.rings.polynomial all pass.\n\nBy the way, `x<sup>(2</sup>25)` works ok too, but `x<sup>(2</sup>30)` causes Sage to crash:\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nDoes that mean that your new special code should have _sig_on, _sig_off?",
     "created_at": "2008-08-30T16:30:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
@@ -154,7 +155,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 Does that mean that your new special code should have _sig_on, _sig_off?
 
 
@@ -164,7 +164,7 @@ Does that mean that your new special code should have _sig_on, _sig_off?
 archive/issue_comments_028841.json:
 ```json
 {
-    "body": "Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by @malb created at 2008-08-30 16:49:50\n\nReplying to [comment:4 cremona]:\n> Does that mean that your new special code should have _sig_on, _sig_off?\n\nYes, I've just updated the patch. I'm not going to write a doctest for this, since it unnecessarily slows down the user's computer by filling up his/her RAM ... on a related note: Incredible in how many ways I can screw up such a short patch.",
+    "body": "Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by @malb created at 2008-08-30 16:49:50\n\nReplying to [comment:4 cremona]:\n> Does that mean that your new special code should have _sig_on, _sig_off?\n\n\nYes, I've just updated the patch. I'm not going to write a doctest for this, since it unnecessarily slows down the user's computer by filling up his/her RAM ... on a related note: Incredible in how many ways I can screw up such a short patch.",
     "created_at": "2008-08-30T16:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
@@ -177,6 +177,7 @@ Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:4 cremona]:
 > Does that mean that your new special code should have _sig_on, _sig_off?
+
 
 Yes, I've just updated the patch. I'm not going to write a doctest for this, since it unnecessarily slows down the user's computer by filling up his/her RAM ... on a related note: Incredible in how many ways I can screw up such a short patch.
 

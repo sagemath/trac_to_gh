@@ -94,7 +94,7 @@ Good version of the file
 archive/issue_comments_040758.json:
 ```json
 {
-    "body": "When applying the patch on top of 3.4 with the following patches applied:\n\n```\nzephyr-/opt/sage/devel/sage>hg qapplied\ninteger_lists_lex-4549-submitted.patch\nsubsets_subwords-5200-submitted.2.patch\nsubsets_subwords-5200-review.patch\nsubwords_fix-5534-submitted.patch\ncombinatorialclass_iter_len_count_cleanup.patch\n```\n\nI get a reject in \n\n```\nzephyr-/opt/sage/devel/sage>cat sage/combinat/subset.py.rej\n--- subset.py\n+++ subset.py\n@@ -522,7 +522,7 @@\n             [0, 1, 3]\n             sage: S._multiplicities\n             [1, 2, 1]\n-            sage: Subsets([1,2,3,3], multiset=True).count()\n+            sage: Subsets([1,2,3,3], multiset=True).cardinality()\n             12\n             sage: S == loads(dumps(S))\n             True\n@@ -604,7 +604,7 @@\n             sage: S = Subsets([1,2,3,3],2, multiset=True)\n             sage: S._k\n             2\n-            sage: S.count()\n+            sage: S.cardinality()\n             4\n             sage: S.first()\n             [1, 2]\n```\n\n\nMoreover, the following tests get broken:\n\n```\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/sf/ns_macdonald.py\"\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/subset.py\"\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/words/words.py\"\n```\n\neither by the deprecation warnings, or for words by a change of output: \n`96889010407L ->  96889010407`\n\nOther than this, the patch sounds good to me!",
+    "body": "When applying the patch on top of 3.4 with the following patches applied:\n\n```\nzephyr-/opt/sage/devel/sage>hg qapplied\ninteger_lists_lex-4549-submitted.patch\nsubsets_subwords-5200-submitted.2.patch\nsubsets_subwords-5200-review.patch\nsubwords_fix-5534-submitted.patch\ncombinatorialclass_iter_len_count_cleanup.patch\n```\nI get a reject in \n\n```\nzephyr-/opt/sage/devel/sage>cat sage/combinat/subset.py.rej\n--- subset.py\n+++ subset.py\n@@ -522,7 +522,7 @@\n             [0, 1, 3]\n             sage: S._multiplicities\n             [1, 2, 1]\n-            sage: Subsets([1,2,3,3], multiset=True).count()\n+            sage: Subsets([1,2,3,3], multiset=True).cardinality()\n             12\n             sage: S == loads(dumps(S))\n             True\n@@ -604,7 +604,7 @@\n             sage: S = Subsets([1,2,3,3],2, multiset=True)\n             sage: S._k\n             2\n-            sage: S.count()\n+            sage: S.cardinality()\n             4\n             sage: S.first()\n             [1, 2]\n```\n\nMoreover, the following tests get broken:\n\n```\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/sf/ns_macdonald.py\"\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/subset.py\"\n        sage -t  \"3.4.rc0/devel/sage-patches/sage/combinat/words/words.py\"\n```\neither by the deprecation warnings, or for words by a change of output: \n`96889010407L ->  96889010407`\n\nOther than this, the patch sounds good to me!",
     "created_at": "2009-04-02T06:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ subsets_subwords-5200-review.patch
 subwords_fix-5534-submitted.patch
 combinatorialclass_iter_len_count_cleanup.patch
 ```
-
 I get a reject in 
 
 ```
@@ -140,7 +139,6 @@ zephyr-/opt/sage/devel/sage>cat sage/combinat/subset.py.rej
              [1, 2]
 ```
 
-
 Moreover, the following tests get broken:
 
 ```
@@ -148,7 +146,6 @@ Moreover, the following tests get broken:
         sage -t  "3.4.rc0/devel/sage-patches/sage/combinat/subset.py"
         sage -t  "3.4.rc0/devel/sage-patches/sage/combinat/words/words.py"
 ```
-
 either by the deprecation warnings, or for words by a change of output: 
 `96889010407L ->  96889010407`
 
@@ -220,7 +217,7 @@ Addressed Nicolas reqests.
 archive/issue_comments_040762.json:
 ```json
 {
-    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by @hivert created at 2009-04-02 08:56:48\n\nDear Nicolas,\n\nI sumbmitted a new patch which should addres all the issues except this last one:   \n\n> In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n\nI think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n\n```\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.57 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.45 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.64 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.61 ms per loop\n```\n\nDo we really what to standardize all the doc on it ? \n\nCheers,\n\nFlorent",
+    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by @hivert created at 2009-04-02 08:56:48\n\nDear Nicolas,\n\nI sumbmitted a new patch which should addres all the issues except this last one:   \n\n> In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n\n\nI think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n\n```\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.57 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.45 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.64 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.61 ms per loop\n```\nDo we really what to standardize all the doc on it ? \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-02T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -237,6 +234,7 @@ I sumbmitted a new patch which should addres all the issues except this last one
 
 > In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`
 
+
 I think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:
 
 ```
@@ -249,7 +247,6 @@ sage: timeit("it = iter(Permutations(6)); [i for i in it]")
 sage: timeit("it = iter(Permutations(6)); [i for i in it]")
 125 loops, best of 3: 4.61 ms per loop
 ```
-
 Do we really what to standardize all the doc on it ? 
 
 Cheers,
@@ -263,7 +260,7 @@ Florent
 archive/issue_comments_040763.json:
 ```json
 {
-    "body": "Dear Franco,\n\n> I've looked over the changes to the words files. Everything looks good. To fix the problem with the doctests related to 96889010407L that nthiery mentioned above, just have Word_n.cardinality() (in sage/combinat/words/words.py) return a Sage Integer instead of a Python int.  If you do this, then it also deals with #4938.\n\nActually, the problem was that I forgot to re-export the patch from the\ncombinat server... \n\nI can't reproduce the problem on word but I don't have access to a 32bit machine. More precisely, `words.size_of_alphabet()` seems now to always return a sage integer. That should fix the problem. Can you please check it ?\n\nCheers,\n\nFlorent",
+    "body": "Dear Franco,\n\n> I've looked over the changes to the words files. Everything looks good. To fix the problem with the doctests related to 96889010407L that nthiery mentioned above, just have Word_n.cardinality() (in sage/combinat/words/words.py) return a Sage Integer instead of a Python int.  If you do this, then it also deals with #4938.\n\n\nActually, the problem was that I forgot to re-export the patch from the\ncombinat server... \n\nI can't reproduce the problem on word but I don't have access to a 32bit machine. More precisely, `words.size_of_alphabet()` seems now to always return a sage integer. That should fix the problem. Can you please check it ?\n\nCheers,\n\nFlorent",
     "created_at": "2009-04-02T09:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -275,6 +272,7 @@ archive/issue_comments_040763.json:
 Dear Franco,
 
 > I've looked over the changes to the words files. Everything looks good. To fix the problem with the doctests related to 96889010407L that nthiery mentioned above, just have Word_n.cardinality() (in sage/combinat/words/words.py) return a Sage Integer instead of a Python int.  If you do this, then it also deals with #4938.
+
 
 Actually, the problem was that I forgot to re-export the patch from the
 combinat server... 
@@ -292,7 +290,7 @@ Florent
 archive/issue_comments_040764.json:
 ```json
 {
-    "body": "Replying to [comment:9 hivert]:\n>       Dear Franco,\n>\n> I can't reproduce the problem on word but I don't have access to a 32bit machine. More precisely, `words.size_of_alphabet()` seems now to always return a sage integer. That should fix the problem. Can you please check it ?\n\nSorry it took so long: I had to compile sage on a 32-bit machine!\n\nThe last patch (combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) applies cleanly to sage-3.4 on top of the patches for #5200 and #4549. I ran all the combinat doctests and all tests passed.\n\nYou get a positive review from me. I won't change the status though, since Nicolas might still have some issues.",
+    "body": "Replying to [comment:9 hivert]:\n>       Dear Franco,\n\n>\n> I can't reproduce the problem on word but I don't have access to a 32bit machine. More precisely, `words.size_of_alphabet()` seems now to always return a sage integer. That should fix the problem. Can you please check it ?\n\n\nSorry it took so long: I had to compile sage on a 32-bit machine!\n\nThe last patch (combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) applies cleanly to sage-3.4 on top of the patches for #5200 and #4549. I ran all the combinat doctests and all tests passed.\n\nYou get a positive review from me. I won't change the status though, since Nicolas might still have some issues.",
     "created_at": "2009-04-02T21:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -303,8 +301,10 @@ archive/issue_comments_040764.json:
 
 Replying to [comment:9 hivert]:
 >       Dear Franco,
+
 >
 > I can't reproduce the problem on word but I don't have access to a 32bit machine. More precisely, `words.size_of_alphabet()` seems now to always return a sage integer. That should fix the problem. Can you please check it ?
+
 
 Sorry it took so long: I had to compile sage on a 32-bit machine!
 
@@ -336,7 +336,7 @@ archive/issue_events_012350.json:
 archive/issue_comments_040765.json:
 ```json
 {
-    "body": "Replying to [comment:8 hivert]:\n> > In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n> \n> I think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n> {{{\n> sage: timeit(\"it = iter(Permutations(6)); list(it)\")\n> 125 loops, best of 3: 4.57 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); list(it)\")\n> 125 loops, best of 3: 4.45 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n> 125 loops, best of 3: 4.64 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n> 125 loops, best of 3: 4.61 ms per loop\n> }}}\n> Do we really what to standardize all the doc on it ? \n\nGood point. The speed difference is too negligible that it seems likely to change in the future one way or the other. I guess we can just leave it as it is. Future will tell if any of the two form become more sage-combinat idiomatic. \n\nPositive review",
+    "body": "Replying to [comment:8 hivert]:\n> > In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n\n> \n> I think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n> \n> ```\n> sage: timeit(\"it = iter(Permutations(6)); list(it)\")\n> 125 loops, best of 3: 4.57 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); list(it)\")\n> 125 loops, best of 3: 4.45 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n> 125 loops, best of 3: 4.64 ms per loop\n> sage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n> 125 loops, best of 3: 4.61 ms per loop\n> ```\n> Do we really what to standardize all the doc on it ? \n\n\nGood point. The speed difference is too negligible that it seems likely to change in the future one way or the other. I guess we can just leave it as it is. Future will tell if any of the two form become more sage-combinat idiomatic. \n\nPositive review",
     "created_at": "2009-04-04T00:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -347,9 +347,11 @@ archive/issue_comments_040765.json:
 
 Replying to [comment:8 hivert]:
 > > In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`
+
 > 
 > I think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:
-> {{{
+> 
+> ```
 > sage: timeit("it = iter(Permutations(6)); list(it)")
 > 125 loops, best of 3: 4.57 ms per loop
 > sage: timeit("it = iter(Permutations(6)); list(it)")
@@ -358,8 +360,9 @@ Replying to [comment:8 hivert]:
 > 125 loops, best of 3: 4.64 ms per loop
 > sage: timeit("it = iter(Permutations(6)); [i for i in it]")
 > 125 loops, best of 3: 4.61 ms per loop
-> }}}
+> ```
 > Do we really what to standardize all the doc on it ? 
+
 
 Good point. The speed difference is too negligible that it seems likely to change in the future one way or the other. I guess we can just leave it as it is. Future will tell if any of the two form become more sage-combinat idiomatic. 
 
@@ -394,7 +397,7 @@ Michael
 archive/issue_comments_040767.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> Hmm, one last thing: In `def __len__(self): ` you deprecate `__len__` and tell people to use count. Isn't it possible to deprecate `__len__` and have it call count() automatically because that is the way it is supposed to work.\n\nIt should say that one needs to use cardinality instead of `__len__`.\n\nThere are a few reasons why this doesn't work. One reason is that `__len__` must return a Python int. So, if the CombinatorialClass is too big, then calling `__len__` will raise an error, which is a bug.\n\nAnother problem is that some methods, like `__list__`, call `__len__` behind the scenes. This means that there would be deprecation warnings popping up in various places: for instance, `list(Permutations(3))` would give a warning, and it would be very confusing to a user not familiar with Python internals to see a warning about using `__len__` when they didn't obviously call `__len__`. Also the doctests would be littered with such deprecation warnings in various places (whenever `list/filter/map` are called). Instead, we decided to raise an `AttributeError`, which behaves nicely with Python's specifications on how `__len__` is to behave when called by `list/filter/map`, and also gives an appropriate error message when `len` is called directly. It really is a special case, where the usual deprecation procedure won't work.",
+    "body": "Replying to [comment:12 mabshoff]:\n> Hmm, one last thing: In `def __len__(self): ` you deprecate `__len__` and tell people to use count. Isn't it possible to deprecate `__len__` and have it call count() automatically because that is the way it is supposed to work.\n\n\nIt should say that one needs to use cardinality instead of `__len__`.\n\nThere are a few reasons why this doesn't work. One reason is that `__len__` must return a Python int. So, if the CombinatorialClass is too big, then calling `__len__` will raise an error, which is a bug.\n\nAnother problem is that some methods, like `__list__`, call `__len__` behind the scenes. This means that there would be deprecation warnings popping up in various places: for instance, `list(Permutations(3))` would give a warning, and it would be very confusing to a user not familiar with Python internals to see a warning about using `__len__` when they didn't obviously call `__len__`. Also the doctests would be littered with such deprecation warnings in various places (whenever `list/filter/map` are called). Instead, we decided to raise an `AttributeError`, which behaves nicely with Python's specifications on how `__len__` is to behave when called by `list/filter/map`, and also gives an appropriate error message when `len` is called directly. It really is a special case, where the usual deprecation procedure won't work.",
     "created_at": "2009-04-04T06:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -405,6 +408,7 @@ archive/issue_comments_040767.json:
 
 Replying to [comment:12 mabshoff]:
 > Hmm, one last thing: In `def __len__(self): ` you deprecate `__len__` and tell people to use count. Isn't it possible to deprecate `__len__` and have it call count() automatically because that is the way it is supposed to work.
+
 
 It should say that one needs to use cardinality instead of `__len__`.
 
@@ -497,7 +501,7 @@ Florent
 archive/issue_comments_040770.json:
 ```json
 {
-    "body": "This patch introduces two trivial to fix doctest failures:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\nsage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 911:\n    sage: I.dimension()\nExpected:\n    verbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    0\nGot:\n    verbose 0 (891: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    doctest:966: DeprecationWarning: The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n    0\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctest_multi_polynomial_ideal.py\n\t [11.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 11.3 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst\nsage -t -long \"devel/sage/doc/en/a_tour_of_sage/index.rst\"  \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/a_tour_of_sage/index.rst\", line 132:\n    sage: z = Partitions(10^8).count() #about 4.5 seconds\nExpected nothing\nGot:\n    doctest:1: DeprecationWarning: The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctest_index.py\n\t [10.9 s]\nexit code: 1024\n```\n\nOnce those are fixed the positive review can be reinstated.\n\nCheers,\n\nMichael",
+    "body": "This patch introduces two trivial to fix doctest failures:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\nsage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\", line 911:\n    sage: I.dimension()\nExpected:\n    verbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    0\nGot:\n    verbose 0 (891: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    doctest:966: DeprecationWarning: The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n    0\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctest_multi_polynomial_ideal.py\n\t [11.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 11.3 seconds\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc0$ ./sage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst\nsage -t -long \"devel/sage/doc/en/a_tour_of_sage/index.rst\"  \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/a_tour_of_sage/index.rst\", line 132:\n    sage: z = Partitions(10^8).count() #about 4.5 seconds\nExpected nothing\nGot:\n    doctest:1: DeprecationWarning: The usage of iterator for combinatorial classes is deprecated. Please use the class itself\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctest_index.py\n\t [10.9 s]\nexit code: 1024\n```\nOnce those are fixed the positive review can be reinstated.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-05T00:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -551,7 +555,6 @@ For whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctes
 	 [10.9 s]
 exit code: 1024
 ```
-
 Once those are fixed the positive review can be reinstated.
 
 Cheers,
@@ -607,7 +610,7 @@ Hopefully final version
 archive/issue_comments_040773.json:
 ```json
 {
-    "body": "Replying to [comment:16 mabshoff]:\n> This patch introduces two trivial to fix doctest failures:\n\n* Oups !!! I probably let the first pass because it's typically one of the few files that triggers the pexpect issue on my fast testing machine...\n\n* Next time I'll check also the .rst files. \n\nThese should be fixed right now. Re-uploaded a new patch and re marked as positive reviewed. \n\nCheers,\n\nFlorent",
+    "body": "Replying to [comment:16 mabshoff]:\n> This patch introduces two trivial to fix doctest failures:\n\n\n* Oups !!! I probably let the first pass because it's typically one of the few files that triggers the pexpect issue on my fast testing machine...\n\n* Next time I'll check also the .rst files. \n\nThese should be fixed right now. Re-uploaded a new patch and re marked as positive reviewed. \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-05T07:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
@@ -618,6 +621,7 @@ archive/issue_comments_040773.json:
 
 Replying to [comment:16 mabshoff]:
 > This patch introduces two trivial to fix doctest failures:
+
 
 * Oups !!! I probably let the first pass because it's typically one of the few files that triggers the pexpect issue on my fast testing machine...
 

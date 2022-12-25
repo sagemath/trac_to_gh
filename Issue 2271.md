@@ -214,7 +214,7 @@ As well as a round of applause.
 archive/issue_comments_015030.json:
 ```json
 {
-    "body": "Replying to [comment:7 boothby]:\n> 2271_doctests.patch implements world peace, washes your dishes, and makes coffee before your alarm goes off in the morning.  It's truly amazing.  Also, it contains doctests for everything in sight, reworks the DLXMatrix class to be a real python generator class, and implements an iterative formulation of DLX.\n> \n> In the creation of these doctests, I have discovered a wondrous resolution of P vs. NP, but the proof was too long to justify appending to the patch.\n> \n\nI guess you should have written it in the margins :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 boothby]:\n> 2271_doctests.patch implements world peace, washes your dishes, and makes coffee before your alarm goes off in the morning.  It's truly amazing.  Also, it contains doctests for everything in sight, reworks the DLXMatrix class to be a real python generator class, and implements an iterative formulation of DLX.\n> \n> In the creation of these doctests, I have discovered a wondrous resolution of P vs. NP, but the proof was too long to justify appending to the patch.\n> \n\n\nI guess you should have written it in the margins :)\n\nCheers,\n\nMichael",
     "created_at": "2008-02-25T20:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2271",
     "type": "issue_comment",
@@ -228,6 +228,7 @@ Replying to [comment:7 boothby]:
 > 
 > In the creation of these doctests, I have discovered a wondrous resolution of P vs. NP, but the proof was too long to justify appending to the patch.
 > 
+
 
 I guess you should have written it in the margins :)
 

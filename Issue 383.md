@@ -3,7 +3,7 @@
 archive/issues_000383.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI'm looking at the polynomial function quo_rem and I see that it does it's own\ncoercion manually.  This feels a little wrong to me.  I think it should go\nthrough the standard coercion routines.  Here's a \"bug\" that results:\n\n\n```\nsage: x=ZZ['x'].0\nsage: y=QQ['x'].0\nsage: (y+1).quo_rem(1/2*x)\n(2, 1)\nsage: (x+1).quo_rem(1/2*y)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\n\nThe bug is that I don't see why these two things are treated substantially\ndifferently.  The reason I found this is because the simple \"TypeError\"\nexception did not provide the usual message about parents being\nmis-matched -- I think this is a bug in itself\n\nThe fix for all that is to make the quo_rem stuff use canonical coercion model.\n\nAll of the quo_rem instances in sage/rings/polynomial/polynomial_element_generic.py suffer from some sort of coercion impropriety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/383\n\n",
+    "body": "Assignee: somebody\n\nI'm looking at the polynomial function quo_rem and I see that it does it's own\ncoercion manually.  This feels a little wrong to me.  I think it should go\nthrough the standard coercion routines.  Here's a \"bug\" that results:\n\n```\nsage: x=ZZ['x'].0\nsage: y=QQ['x'].0\nsage: (y+1).quo_rem(1/2*x)\n(2, 1)\nsage: (x+1).quo_rem(1/2*y)\n...\n<type 'exceptions.TypeError'>: no coercion of this rational to integer\n```\n\nThe bug is that I don't see why these two things are treated substantially\ndifferently.  The reason I found this is because the simple \"TypeError\"\nexception did not provide the usual message about parents being\nmis-matched -- I think this is a bug in itself\n\nThe fix for all that is to make the quo_rem stuff use canonical coercion model.\n\nAll of the quo_rem instances in sage/rings/polynomial/polynomial_element_generic.py suffer from some sort of coercion impropriety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/383\n\n",
     "created_at": "2007-06-01T15:24:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ I'm looking at the polynomial function quo_rem and I see that it does it's own
 coercion manually.  This feels a little wrong to me.  I think it should go
 through the standard coercion routines.  Here's a "bug" that results:
 
-
 ```
 sage: x=ZZ['x'].0
 sage: y=QQ['x'].0
@@ -33,7 +32,6 @@ sage: (x+1).quo_rem(1/2*y)
 ...
 <type 'exceptions.TypeError'>: no coercion of this rational to integer
 ```
-
 
 The bug is that I don't see why these two things are treated substantially
 differently.  The reason I found this is because the simple "TypeError"
@@ -111,7 +109,7 @@ Oops. Thanks, fixed.
 archive/issue_comments_001858.json:
 ```json
 {
-    "body": "I read the code.  Looks AWESOME!\n\nIt appears to expose numerous issues:\n\n\n```\n\nsage -t devel/sage/sage/rings\n...\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/finite_field_element.py # 3 doctests failed\n        sage -t  devel/sage/sage/rings/tests.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/finite_field_ext_pari.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/fraction_field_element.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_integer_dense_flint.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/residue_field.pyx # 3 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_zmod_flint.pyx # 5 doctests failed\n        sage -t  devel/sage/sage/rings/number_field/number_field_ideal.py # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 192.3 seconds\n\n[1]+  Done                    ./sage -tp 10 devel/sage/sage/rings > 383.out\nwstein@boxen:~/build/sage-4.3.1.rc0$ pwd\n/home/wstein/build/sage-4.3.1.rc0\nwstein@boxen:~/build/sage-4.3.1.rc0$ ls\n383.out   6207.out~    data   dist      install.log  local     README.txt  sage-python          spkg      tmp\n6207.out  COPYING.txt  devel  examples  ipython      makefile  sage        sage-README-osx.txt  test.log\nwstein@boxen:~/build/sage-4.3.1.rc0$ pwd\n/home/wstein/build/sage-4.3.1.rc0\nwstein@boxen:~/build/sage-4.3.1.rc0$\n```\n",
+    "body": "I read the code.  Looks AWESOME!\n\nIt appears to expose numerous issues:\n\n```\n\nsage -t devel/sage/sage/rings\n...\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/finite_field_element.py # 3 doctests failed\n        sage -t  devel/sage/sage/rings/tests.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/finite_field_ext_pari.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/fraction_field_element.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_integer_dense_flint.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/residue_field.pyx # 3 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/polynomial_zmod_flint.pyx # 5 doctests failed\n        sage -t  devel/sage/sage/rings/number_field/number_field_ideal.py # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 192.3 seconds\n\n[1]+  Done                    ./sage -tp 10 devel/sage/sage/rings > 383.out\nwstein@boxen:~/build/sage-4.3.1.rc0$ pwd\n/home/wstein/build/sage-4.3.1.rc0\nwstein@boxen:~/build/sage-4.3.1.rc0$ ls\n383.out   6207.out~    data   dist      install.log  local     README.txt  sage-python          spkg      tmp\n6207.out  COPYING.txt  devel  examples  ipython      makefile  sage        sage-README-osx.txt  test.log\nwstein@boxen:~/build/sage-4.3.1.rc0$ pwd\n/home/wstein/build/sage-4.3.1.rc0\nwstein@boxen:~/build/sage-4.3.1.rc0$\n```",
     "created_at": "2010-01-17T10:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
@@ -123,7 +121,6 @@ archive/issue_comments_001858.json:
 I read the code.  Looks AWESOME!
 
 It appears to expose numerous issues:
-
 
 ```
 
@@ -153,7 +150,6 @@ wstein@boxen:~/build/sage-4.3.1.rc0$ pwd
 /home/wstein/build/sage-4.3.1.rc0
 wstein@boxen:~/build/sage-4.3.1.rc0$
 ```
-
 
 
 
@@ -216,7 +212,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_001862.json:
 ```json
 {
-    "body": "Ut oh:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/crypto/classical.py # 14 doctests failed\n        sage -t  devel/sage/sage/modular/etaproducts.py # 24 doctests failed\n        sage -t  devel/sage/sage/structure/element.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/libs/pari/gen.pyx # Segfault\n        sage -t  devel/sage/sage/modular/arithgroup/arithgroup_generic.py # 4 doctests failed\n        sage -t  devel/sage/sage/modular/arithgroup/congroup_gamma0.py # 2 doctests failed\n        sage -t  devel/sage/sage/quadratic_forms/quadratic_form__split_local_covering.py # 2 doctests failed\n        sage -t  devel/sage/sage/modular/cusps.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 478.6 seconds\nwstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$\n```\n",
+    "body": "Ut oh:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/crypto/classical.py # 14 doctests failed\n        sage -t  devel/sage/sage/modular/etaproducts.py # 24 doctests failed\n        sage -t  devel/sage/sage/structure/element.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/libs/pari/gen.pyx # Segfault\n        sage -t  devel/sage/sage/modular/arithgroup/arithgroup_generic.py # 4 doctests failed\n        sage -t  devel/sage/sage/modular/arithgroup/congroup_gamma0.py # 2 doctests failed\n        sage -t  devel/sage/sage/quadratic_forms/quadratic_form__split_local_covering.py # 2 doctests failed\n        sage -t  devel/sage/sage/modular/cusps.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 478.6 seconds\nwstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$\n```",
     "created_at": "2010-01-19T06:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/383",
     "type": "issue_comment",
@@ -244,7 +240,6 @@ The following tests failed:
 Total time for all tests: 478.6 seconds
 wstein@boxen:~/build/sage-4.3.1.rc0-boxen-x86_64-Linux$
 ```
-
 
 
 

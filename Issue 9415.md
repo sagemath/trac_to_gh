@@ -3,7 +3,7 @@
 archive/issues_009415.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nOver QQ everything works fine:\n\n```\nsage: E = EllipticCurve([-1,0])\nsage: L = [E(0,0),E(1,0)]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(0 : 0 : 1), (1 : 0 : 1)]\nsage: print sorted(L2)\n[(0 : 0 : 1), (1 : 0 : 1)]\n```\n\n\nBut over number fields, sorting quietly returns the same list as input, with no warnings.\n\n```\nsage: K2.<b> = NumberField(x^2+2)\nsage: E2 = EllipticCurve(K2,[-16,16])\nsage: L = [E2(4*b - 10 ,18*b + 28) , E2(4*b - 4 , 20 )]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(4*b - 10 : 18*b + 28 : 1), (4*b - 4 : 20 : 1)]\nsage: print sorted(L2)\n[(4*b - 4 : 20 : 1), (4*b - 10 : 18*b + 28 : 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9415\n\n",
+    "body": "Assignee: @JohnCremona\n\nOver QQ everything works fine:\n\n```\nsage: E = EllipticCurve([-1,0])\nsage: L = [E(0,0),E(1,0)]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(0 : 0 : 1), (1 : 0 : 1)]\nsage: print sorted(L2)\n[(0 : 0 : 1), (1 : 0 : 1)]\n```\n\nBut over number fields, sorting quietly returns the same list as input, with no warnings.\n\n```\nsage: K2.<b> = NumberField(x^2+2)\nsage: E2 = EllipticCurve(K2,[-16,16])\nsage: L = [E2(4*b - 10 ,18*b + 28) , E2(4*b - 4 , 20 )]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(4*b - 10 : 18*b + 28 : 1), (4*b - 4 : 20 : 1)]\nsage: print sorted(L2)\n[(4*b - 4 : 20 : 1), (4*b - 10 : 18*b + 28 : 1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9415\n\n",
     "created_at": "2010-07-03T02:56:21Z",
     "labels": [
         "component: elliptic curves",
@@ -30,7 +30,6 @@ sage: print sorted(L2)
 [(0 : 0 : 1), (1 : 0 : 1)]
 ```
 
-
 But over number fields, sorting quietly returns the same list as input, with no warnings.
 
 ```
@@ -43,7 +42,6 @@ sage: print sorted(L)
 sage: print sorted(L2)
 [(4*b - 4 : 20 : 1), (4*b - 10 : 18*b + 28 : 1)]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9415
 

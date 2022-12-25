@@ -165,7 +165,7 @@ Rob
 archive/issue_comments_091004.json:
 ```json
 {
-    "body": "The patch looks good to me and passes doctests:\n\n\n```\n\nbjones@sage:~/sage/sage-4.7.1/devel/sage$ ../../sage -t sage/tests/benchmark.py \nsage -t  \"devel/sage-9494/sage/tests/benchmark.py\"          \n\t [8.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.6 seconds\n```\n\n\nI'm giving it a positive review.",
+    "body": "The patch looks good to me and passes doctests:\n\n```\n\nbjones@sage:~/sage/sage-4.7.1/devel/sage$ ../../sage -t sage/tests/benchmark.py \nsage -t  \"devel/sage-9494/sage/tests/benchmark.py\"          \n\t [8.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.6 seconds\n```\n\nI'm giving it a positive review.",
     "created_at": "2011-08-23T00:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_comment",
@@ -175,7 +175,6 @@ archive/issue_comments_091004.json:
 ```
 
 The patch looks good to me and passes doctests:
-
 
 ```
 
@@ -187,7 +186,6 @@ sage -t  "devel/sage-9494/sage/tests/benchmark.py"
 All tests passed!
 Total time for all tests: 8.6 seconds
 ```
-
 
 I'm giving it a positive review.
 
@@ -252,7 +250,7 @@ Changing keywords from "" to "sd32".
 archive/issue_comments_091008.json:
 ```json
 {
-    "body": "Actually, `mpoly_all()` needs work, since it is apparently unable to interrupt (e.g.) Mathematica a second time.\n\nOn redhawk, where `/home` still isn't mounted, Mathematica is installed but fails to startup (prompting the user), such that I get:\n\n```sh\nleif@redhawk:/$ time sage -c \"from sage.tests.benchmark import mpoly_all; mpoly_all()\" \n\n\n\nCompute (x_0 + ... + x_99) * (x_100 + ... + x_200) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.049767    0.049767    0.049767    1                  0.049767w\nUnable to start magma\ncomputation timed out because alarm was set for 60 seconds\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n\n\n\n\nCompute (x_0 + ... + x_199) * (x_200 + ... + x_400) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.089736    0.089736    0.089736    1                  0.089736w\nUnable to start magma\nInterrupting Mathematica...\n```\n\nwhich does not terminate.\n\nWhat is this doctest supposed to \"test\" at all?\n\nThe output is random, so it doesn't really test anything, except perhaps which external programs are installed, but that's nothing subject to a doctest, so IMHO this ticket should either be closed as invalid, or the \"doctest\" (i.e., the example) should be marked `# not tested`, at least until `mpoly_all()` got fixed.",
+    "body": "Actually, `mpoly_all()` needs work, since it is apparently unable to interrupt (e.g.) Mathematica a second time.\n\nOn redhawk, where `/home` still isn't mounted, Mathematica is installed but fails to startup (prompting the user), such that I get:\n\n```sh\nleif@redhawk:/$ time sage -c \"from sage.tests.benchmark import mpoly_all; mpoly_all()\" \n\n\n\nCompute (x_0 + ... + x_99) * (x_100 + ... + x_200) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.049767    0.049767    0.049767    1                  0.049767w\nUnable to start magma\ncomputation timed out because alarm was set for 60 seconds\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n\n\n\n\nCompute (x_0 + ... + x_199) * (x_200 + ... + x_400) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.089736    0.089736    0.089736    1                  0.089736w\nUnable to start magma\nInterrupting Mathematica...\n```\nwhich does not terminate.\n\nWhat is this doctest supposed to \"test\" at all?\n\nThe output is random, so it doesn't really test anything, except perhaps which external programs are installed, but that's nothing subject to a doctest, so IMHO this ticket should either be closed as invalid, or the \"doctest\" (i.e., the example) should be marked `# not tested`, at least until `mpoly_all()` got fixed.",
     "created_at": "2011-09-16T06:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_comment",
@@ -286,7 +284,6 @@ Compute (x_0 + ... + x_199) * (x_200 + ... + x_400) over Rational Field (use sin
 Unable to start magma
 Interrupting Mathematica...
 ```
-
 which does not terminate.
 
 What is this doctest supposed to "test" at all?
@@ -374,7 +371,7 @@ I marked `mpoly_all()` as `# not tested`. The new patch applied cleanly to 5.0.b
 archive/issue_comments_091013.json:
 ```json
 {
-    "body": "There seems to still be an issue with the Mma installation on redhawk and the `mpoly_all()` test is still unable to interrupt the crashed process all the time:\n\n\n```\nCompute (x_1 + 2*x_2 + 3*x_3 + ... + 128*x_128) * (129 * x_129 + ... + 257*x_257) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.049826    0.049826    0.049826    1                  0.049826w\nUnable to start magma\nMathematica crashed -- automatically restarting.\ncomputation timed out because alarm was set for 60 seconds\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n\n\n\n\nCompute (x_1 + 2*x_2 + 3*x_3 + ... + 256*x_256) * (257 * x_257 + ... + 513*x_513) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.149662    0.149662    0.149662    1                  0.149662w\nUnable to start magma\nInterrupting Mathematica...\n^C\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n```\n\n\nBut I'd say that's an issue for another ticket.",
+    "body": "There seems to still be an issue with the Mma installation on redhawk and the `mpoly_all()` test is still unable to interrupt the crashed process all the time:\n\n```\nCompute (x_1 + 2*x_2 + 3*x_3 + ... + 128*x_128) * (129 * x_129 + ... + 257*x_257) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.049826    0.049826    0.049826    1                  0.049826w\nUnable to start magma\nMathematica crashed -- automatically restarting.\ncomputation timed out because alarm was set for 60 seconds\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n\n\n\n\nCompute (x_1 + 2*x_2 + 3*x_3 + ... + 256*x_256) * (257 * x_257 + ... + 513*x_513) over Rational Field (use singular for Sage mult.)\n  System      min         avg         max         trials          cpu or wall\n* sage        0.149662    0.149662    0.149662    1                  0.149662w\nUnable to start magma\nInterrupting Mathematica...\n^C\nUnable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#\"private dictionary\"#\"InputPrompt\"} = lineno -> \"_EGAS_ : \";ZZ#{Standard,Core#\"private dictionary\"#\"InputContinuationPrompt\"} = lineno -> \"_EGAS_ : \";printWidth = 0;lineNumber = 10^9;'' failed.\n```\n\nBut I'd say that's an issue for another ticket.",
     "created_at": "2012-04-08T04:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_comment",
@@ -384,7 +381,6 @@ archive/issue_comments_091013.json:
 ```
 
 There seems to still be an issue with the Mma installation on redhawk and the `mpoly_all()` test is still unable to interrupt the crashed process all the time:
-
 
 ```
 Compute (x_1 + 2*x_2 + 3*x_3 + ... + 128*x_128) * (129 * x_129 + ... + 257*x_257) over Rational Field (use singular for Sage mult.)
@@ -406,7 +402,6 @@ Interrupting Mathematica...
 ^C
 Unable to start macaulay2 because the command 'M2 --no-debug --no-readline --silent -e 'ZZ#{Standard,Core#"private dictionary"#"InputPrompt"} = lineno -> "_EGAS_ : ";ZZ#{Standard,Core#"private dictionary"#"InputContinuationPrompt"} = lineno -> "_EGAS_ : ";printWidth = 0;lineNumber = 10^9;'' failed.
 ```
-
 
 But I'd say that's an issue for another ticket.
 
@@ -468,7 +463,7 @@ archive/issue_events_023567.json:
 archive/issue_comments_091014.json:
 ```json
 {
-    "body": "Moved patch to git.\n----\nNew commits:",
+    "body": "Moved patch to git.\n\n---\nNew commits:",
     "created_at": "2014-02-14T16:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9494",
     "type": "issue_comment",
@@ -478,7 +473,8 @@ archive/issue_comments_091014.json:
 ```
 
 Moved patch to git.
-----
+
+---
 New commits:
 
 

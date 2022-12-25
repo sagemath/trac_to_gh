@@ -3,7 +3,7 @@
 archive/issues_008613.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.\n\n\n```\nsage: R = QQ['t']\nsage: R.su       \nR.sum                               R.summation\nR.summation_from_element_class_add             \nsage: R.sum                                    \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/marc/co/sage-4.3.4/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5120)()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2638)()                                                                             \n\nAttributeError: 'PolynomialRing_field' object has no attribute 'sum'\nsage: 'sum' in R.__dir__()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8613\n\n",
+    "body": "Assignee: somebody\n\nOn the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.\n\n```\nsage: R = QQ['t']\nsage: R.su       \nR.sum                               R.summation\nR.summation_from_element_class_add             \nsage: R.sum                                    \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/marc/co/sage-4.3.4/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5120)()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2638)()                                                                             \n\nAttributeError: 'PolynomialRing_field' object has no attribute 'sum'\nsage: 'sum' in R.__dir__()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8613\n\n",
     "created_at": "2010-03-26T21:46:19Z",
     "labels": [
         "component: categories",
@@ -19,7 +19,6 @@ archive/issues_008613.json:
 Assignee: somebody
 
 On the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.
-
 
 ```
 sage: R = QQ['t']
@@ -41,7 +40,6 @@ sage: 'sum' in R.__dir__()
 True
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8613
 
 
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8613
 archive/issue_comments_077917.json:
 ```json
 {
-    "body": "Notice also that other longer summation_from_element_class_add:\n\n```\nsage: search_src('summation_from_element_class_add')\ncategories/commutative_additive_semigroups.py:121:        summation_from_element_class_add = summation\ncategories/commutative_additive_semigroups.py:136:            if (self.summation != self.summation_from_element_class_add) and hasattr(self, \"element_class\") and hasattr(self.element_class, \"_add_parent\"):\n\n```\n\n\nSo, this suggests that this bug has something to do with Nicolas's category theory rewrite?  I'll post to sage-combinat.",
+    "body": "Notice also that other longer summation_from_element_class_add:\n\n```\nsage: search_src('summation_from_element_class_add')\ncategories/commutative_additive_semigroups.py:121:        summation_from_element_class_add = summation\ncategories/commutative_additive_semigroups.py:136:            if (self.summation != self.summation_from_element_class_add) and hasattr(self, \"element_class\") and hasattr(self.element_class, \"_add_parent\"):\n\n```\n\nSo, this suggests that this bug has something to do with Nicolas's category theory rewrite?  I'll post to sage-combinat.",
     "created_at": "2010-03-29T04:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8613",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ categories/commutative_additive_semigroups.py:121:        summation_from_element
 categories/commutative_additive_semigroups.py:136:            if (self.summation != self.summation_from_element_class_add) and hasattr(self, "element_class") and hasattr(self.element_class, "_add_parent"):
 
 ```
-
 
 So, this suggests that this bug has something to do with Nicolas's category theory rewrite?  I'll post to sage-combinat.
 
@@ -153,7 +150,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077922.json:
 ```json
 {
-    "body": "Indeed, it is a duplicate.\n\nWith the patches from #9944 and #9138, one obtains:\n\n```\nsage: R = QQ['t']\nsage: R.sum\n<bound method PolynomialRing_field_with_category.sum of Univariate Polynomial Ring in t over Rational Field>\nsage: R.summ\nR.summation                         R.summation_from_element_class_add\nsage: R.summation_from_element_class_add\n<bound method PolynomialRing_field_with_category.summation of Univariate Polynomial Ring in t over Rational Field>\n```\n\n\n\nI learnt: In that case, one should give a ticket a positive review and choose the milestone \"duplicate\", so that the release manager may close it.",
+    "body": "Indeed, it is a duplicate.\n\nWith the patches from #9944 and #9138, one obtains:\n\n```\nsage: R = QQ['t']\nsage: R.sum\n<bound method PolynomialRing_field_with_category.sum of Univariate Polynomial Ring in t over Rational Field>\nsage: R.summ\nR.summation                         R.summation_from_element_class_add\nsage: R.summation_from_element_class_add\n<bound method PolynomialRing_field_with_category.summation of Univariate Polynomial Ring in t over Rational Field>\n```\n\n\nI learnt: In that case, one should give a ticket a positive review and choose the milestone \"duplicate\", so that the release manager may close it.",
     "created_at": "2011-04-10T15:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8613",
     "type": "issue_comment",
@@ -175,7 +172,6 @@ R.summation                         R.summation_from_element_class_add
 sage: R.summation_from_element_class_add
 <bound method PolynomialRing_field_with_category.summation of Univariate Polynomial Ring in t over Rational Field>
 ```
-
 
 
 I learnt: In that case, one should give a ticket a positive review and choose the milestone "duplicate", so that the release manager may close it.

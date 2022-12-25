@@ -3,7 +3,7 @@
 archive/issues_004897.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve integral points\n\nFrancois Glineur reported to me that for the elliptic curve \"20160bg2\" not all integral points are found.\n\n```\nsage: E=EllipticCurve('20160bg2')\nsage: [P[0] for P in E.integral_points()]\n[-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]\n```\n\nwhile Magma gives\n\n```\n> E:=EllipticCurve([0, 0, 0, -468, 2592]);\n> Sort([P[1] : P in IntegralPoints(E)]);\n[ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, \n1476, 2034, 67246 ]\n```\n\nso we are missing x=168 and x=381.\n\nThe curve has rank 2 and full 2-torsion.\nThe point Q=(168,2160) is the unique integral point its coset modulo torsion and I think that is why it is being missed.  In fact it seems incredible that this has not been seen before in all the testing which was done!\n\nI therefore think that the function  integral_points_with_bounded_mw_coeffs() is at fault, and will fix it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4897\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve integral points\n\nFrancois Glineur reported to me that for the elliptic curve \"20160bg2\" not all integral points are found.\n\n```\nsage: E=EllipticCurve('20160bg2')\nsage: [P[0] for P in E.integral_points()]\n[-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]\n```\nwhile Magma gives\n\n```\n> E:=EllipticCurve([0, 0, 0, -468, 2592]);\n> Sort([P[1] : P in IntegralPoints(E)]);\n[ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, \n1476, 2034, 67246 ]\n```\nso we are missing x=168 and x=381.\n\nThe curve has rank 2 and full 2-torsion.\nThe point Q=(168,2160) is the unique integral point its coset modulo torsion and I think that is why it is being missed.  In fact it seems incredible that this has not been seen before in all the testing which was done!\n\nI therefore think that the function  integral_points_with_bounded_mw_coeffs() is at fault, and will fix it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4897\n\n",
     "created_at": "2008-12-31T10:42:46Z",
     "labels": [
         "component: number theory",
@@ -29,7 +29,6 @@ sage: E=EllipticCurve('20160bg2')
 sage: [P[0] for P in E.integral_points()]
 [-24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 186, 1476, 2034, 67246]
 ```
-
 while Magma gives
 
 ```
@@ -38,7 +37,6 @@ while Magma gives
 [ -24, -18, -14, -6, -3, 4, 6, 18, 21, 24, 36, 46, 102, 168, 186, 381, 
 1476, 2034, 67246 ]
 ```
-
 so we are missing x=168 and x=381.
 
 The curve has rank 2 and full 2-torsion.
@@ -80,7 +78,7 @@ Greetings Tobias
 archive/issue_comments_037060.json:
 ```json
 {
-    "body": "It was not that function in the end, but the point_preprocessing function.\n\n```\nHere's the problem (and it is not in the function I thought it was.\n\nThe curve 20160bg2 has two real components.  The generators in the database are\nP1=(-18,72) and P2=(-14,0) which are both on the non-identity\ncomponent.   Preprocessing replaces those by P1+P2, 2*P1 (which\ngenerate a subgroup H of index 2) and the LLL-reduction changes that\nto use Q1=P1+P2=(36,-180) and Q2=-P1+P2=(1476,-56700).\n\nThe missing point (168,2160) is 2*P1+P2+T where T is the torsion point\n(6,0).  This is not in H (even up to torsion).\n\nA better way to do the preprocessing here is to take a torsion point\non the egg (e.g. T=(6,0)) and add that to the generators.  Similarly,\nif there is a torsion point on the egg (necessarily of even order)\nthen we should add it to any of the generators which are on the egg.\nOnly if all torsion points are on the identity component should we do\nwhat we currently do.\n```\n\n\nI have implemented this change and am currently testing.  Patch up later today!",
+    "body": "It was not that function in the end, but the point_preprocessing function.\n\n```\nHere's the problem (and it is not in the function I thought it was.\n\nThe curve 20160bg2 has two real components.  The generators in the database are\nP1=(-18,72) and P2=(-14,0) which are both on the non-identity\ncomponent.   Preprocessing replaces those by P1+P2, 2*P1 (which\ngenerate a subgroup H of index 2) and the LLL-reduction changes that\nto use Q1=P1+P2=(36,-180) and Q2=-P1+P2=(1476,-56700).\n\nThe missing point (168,2160) is 2*P1+P2+T where T is the torsion point\n(6,0).  This is not in H (even up to torsion).\n\nA better way to do the preprocessing here is to take a torsion point\non the egg (e.g. T=(6,0)) and add that to the generators.  Similarly,\nif there is a torsion point on the egg (necessarily of even order)\nthen we should add it to any of the generators which are on the egg.\nOnly if all torsion points are on the identity component should we do\nwhat we currently do.\n```\n\nI have implemented this change and am currently testing.  Patch up later today!",
     "created_at": "2008-12-31T11:45:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
@@ -110,7 +108,6 @@ then we should add it to any of the generators which are on the egg.
 Only if all torsion points are on the identity component should we do
 what we currently do.
 ```
-
 
 I have implemented this change and am currently testing.  Patch up later today!
 
@@ -204,7 +201,7 @@ archive/issue_events_011310.json:
 archive/issue_comments_037064.json:
 ```json
 {
-    "body": "This patch causes a doctest failure without the database installed:\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4305:\n    sage: [P[0] for P in EllipticCurve('20160bg2').integral_points()]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_109[14]>\", line 1, in <module>\n        [P[Integer(0)] for P in EllipticCurve('20160bg2').integral_points()]###line 4305:\n    sage: [P[0] for P in EllipticCurve('20160bg2').integral_points()]\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 124, in EllipticCurve\n        return ell_rational_field.EllipticCurve_rational_field(x)\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 121, in __init__\n        X = sage.databases.cremona.CremonaDatabase()[label]\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/databases/cremona.py\", line 349, in __getitem__\n        return self.elliptic_curve(N)\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/databases/cremona.py\", line 487, in elliptic_curve\n        raise RuntimeError, \"No such elliptic curve in the database (note: use lower case letters!)\"\n    RuntimeError: No such elliptic curve in the database (note: use lower case letters!)\n**********************************************************************\n```\n\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "This patch causes a doctest failure without the database installed:\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4305:\n    sage: [P[0] for P in EllipticCurve('20160bg2').integral_points()]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mabshoff/build/sage-3.2.4-cycle/sage-3.2.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_109[14]>\", line 1, in <module>\n        [P[Integer(0)] for P in EllipticCurve('20160bg2').integral_points()]###line 4305:\n    sage: [P[0] for P in EllipticCurve('20160bg2').integral_points()]\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 124, in EllipticCurve\n        return ell_rational_field.EllipticCurve_rational_field(x)\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 121, in __init__\n        X = sage.databases.cremona.CremonaDatabase()[label]\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/databases/cremona.py\", line 349, in __getitem__\n        return self.elliptic_curve(N)\n      File \"/scratch/mabshoff/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/databases/cremona.py\", line 487, in elliptic_curve\n        raise RuntimeError, \"No such elliptic curve in the database (note: use lower case letters!)\"\n    RuntimeError: No such elliptic curve in the database (note: use lower case letters!)\n**********************************************************************\n```\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-01-12T00:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
@@ -242,7 +239,6 @@ Exception raised:
     RuntimeError: No such elliptic curve in the database (note: use lower case letters!)
 **********************************************************************
 ```
-
 
 Thoughts?
 
@@ -295,7 +291,7 @@ John's patch with his suggested fix integrated.
 archive/issue_comments_037067.json:
 ```json
 {
-    "body": "Attachment [trac_4897.2.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.2.patch) by mabshoff created at 2009-01-12 11:07:26\n\nReplying to [comment:7 cremona]:\n> Oops, just change `E=EllipticCurve('20160bg2')` to \n> `E=EllipticCurve([0,0,0,-468,2592])`\n> in that doctest.  It should suffice to edit the patch itself.\n\nYep, I should have thought of that. trac_4897.2.patch does exactly that.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4897.2.patch](tarball://root/attachments/some-uuid/ticket4897/trac_4897.2.patch) by mabshoff created at 2009-01-12 11:07:26\n\nReplying to [comment:7 cremona]:\n> Oops, just change `E=EllipticCurve('20160bg2')` to \n> `E=EllipticCurve([0,0,0,-468,2592])`\n> in that doctest.  It should suffice to edit the patch itself.\n\n\nYep, I should have thought of that. trac_4897.2.patch does exactly that.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-12T11:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4897",
     "type": "issue_comment",
@@ -310,6 +306,7 @@ Replying to [comment:7 cremona]:
 > Oops, just change `E=EllipticCurve('20160bg2')` to 
 > `E=EllipticCurve([0,0,0,-468,2592])`
 > in that doctest.  It should suffice to edit the patch itself.
+
 
 Yep, I should have thought of that. trac_4897.2.patch does exactly that.
 

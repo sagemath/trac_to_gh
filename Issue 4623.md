@@ -3,7 +3,7 @@
 archive/issues_004623.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R=RealIntervalField(53)\nsage: x=R(-1,2)\nsage: xx=x^2\nsage: xx.lower(), xx.upper()\n(-2.00000000000000, 4.00000000000000)\n```\n\nThe result should be (0, 4) instead, since for -1 <= x <= 2, we have 0 <= x^2 <= 4.\n(Of course (-2, 4) is a correct enclosure, but any specialist of interval arithmetic\nwill consider that as a real bug.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4623\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R=RealIntervalField(53)\nsage: x=R(-1,2)\nsage: xx=x^2\nsage: xx.lower(), xx.upper()\n(-2.00000000000000, 4.00000000000000)\n```\nThe result should be (0, 4) instead, since for -1 <= x <= 2, we have 0 <= x^2 <= 4.\n(Of course (-2, 4) is a correct enclosure, but any specialist of interval arithmetic\nwill consider that as a real bug.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4623\n\n",
     "created_at": "2008-11-26T14:04:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_004623.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R=RealIntervalField(53)
 sage: x=R(-1,2)
@@ -26,7 +25,6 @@ sage: xx=x^2
 sage: xx.lower(), xx.upper()
 (-2.00000000000000, 4.00000000000000)
 ```
-
 The result should be (0, 4) instead, since for -1 <= x <= 2, we have 0 <= x^2 <= 4.
 (Of course (-2, 4) is a correct enclosure, but any specialist of interval arithmetic
 will consider that as a real bug.)
@@ -127,7 +125,7 @@ I have made a tiny modification that makes the frequent special case exponent=2 
 archive/issue_comments_034702.json:
 ```json
 {
-    "body": "thanks Alex for your review. I was not aware of x.square(). Then probably we should replace\nxq * xq by xq.square() in my patch:\n\n```\nsage: x=RealIntervalField(53)((-e,pi))\nsage: %timeit x.square()\n1000000 loops, best of 3: 769 ns per loop\nsage: %timeit (x * x)\n1000000 loops, best of 3: 948 ns per loop\n```\n",
+    "body": "thanks Alex for your review. I was not aware of x.square(). Then probably we should replace\nxq * xq by xq.square() in my patch:\n\n```\nsage: x=RealIntervalField(53)((-e,pi))\nsage: %timeit x.square()\n1000000 loops, best of 3: 769 ns per loop\nsage: %timeit (x * x)\n1000000 loops, best of 3: 948 ns per loop\n```",
     "created_at": "2009-01-24T10:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
@@ -146,7 +144,6 @@ sage: %timeit x.square()
 sage: %timeit (x * x)
 1000000 loops, best of 3: 948 ns per loop
 ```
-
 
 
 

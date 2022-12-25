@@ -3,7 +3,7 @@
 archive/issues_009824.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system sometimes generates a Maxima result that includes temporary variables that Sage does not parse correctly.\n\n\n```\nsage: t = var('t')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = (diff(x1,t) == -3*(x2^2-1))\nsage: de2 = (diff(x2,t) == 1)\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n...\nTypeError: unable to make sense of Maxima expression 'x1(t)=ilt(-((3*laplace(x2(t)^2,t,?g1543)-x1(0))*?g1543-3)/?g1543^2,?g1543,t)' in Sage \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9825\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system sometimes generates a Maxima result that includes temporary variables that Sage does not parse correctly.\n\n```\nsage: t = var('t')\nsage: x1 = function('x1', t)\nsage: x2 = function('x2', t)\nsage: de1 = (diff(x1,t) == -3*(x2^2-1))\nsage: de2 = (diff(x2,t) == 1)\nsage: desolve_system([de1, de2], [x1, x2], ivar=t)\n...\nTypeError: unable to make sense of Maxima expression 'x1(t)=ilt(-((3*laplace(x2(t)^2,t,?g1543)-x1(0))*?g1543-3)/?g1543^2,?g1543,t)' in Sage \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9825\n\n",
     "created_at": "2010-08-27T16:44:47Z",
     "labels": [
         "component: calculus",
@@ -24,7 +24,6 @@ Keywords: calculus, maxima, symbolics
 
 desolve_system sometimes generates a Maxima result that includes temporary variables that Sage does not parse correctly.
 
-
 ```
 sage: t = var('t')
 sage: x1 = function('x1', t)
@@ -35,7 +34,6 @@ sage: desolve_system([de1, de2], [x1, x2], ivar=t)
 ...
 TypeError: unable to make sense of Maxima expression 'x1(t)=ilt(-((3*laplace(x2(t)^2,t,?g1543)-x1(0))*?g1543-3)/?g1543^2,?g1543,t)' in Sage 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9825
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9825
 archive/issue_comments_096737.json:
 ```json
 {
-    "body": "On [ this Maxima list thread] we get the original system in Maxima notation - thanks to Stavros Macrackis:\n\n```\nde1: diff(x1(t),t)=-3*(x2(t)^2-1);\nde2: diff(x2(t),t)=1;\ndesolve([de1,de2],[x1(t),x2(t)]);\n```\n\nHe also provides a simpler example which does this:\n\n```\ndesolve([diff(f(x),x)=f(x^2)],[f(x)]);\n```\n\nThe suggestion is that the ilt should be replacing the `?g1234` type variables (which are indeed dummy variables, but native Lisp ones) by Maxima-type ones, so I am putting to reported upstream, developers acknowledge bug.  However, my feeling is that we should fix this by parsing these things as well, should they come up again.",
+    "body": "On [ this Maxima list thread] we get the original system in Maxima notation - thanks to Stavros Macrackis:\n\n```\nde1: diff(x1(t),t)=-3*(x2(t)^2-1);\nde2: diff(x2(t),t)=1;\ndesolve([de1,de2],[x1(t),x2(t)]);\n```\nHe also provides a simpler example which does this:\n\n```\ndesolve([diff(f(x),x)=f(x^2)],[f(x)]);\n```\nThe suggestion is that the ilt should be replacing the `?g1234` type variables (which are indeed dummy variables, but native Lisp ones) by Maxima-type ones, so I am putting to reported upstream, developers acknowledge bug.  However, my feeling is that we should fix this by parsing these things as well, should they come up again.",
     "created_at": "2011-03-15T02:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9824",
     "type": "issue_comment",
@@ -65,13 +63,11 @@ de1: diff(x1(t),t)=-3*(x2(t)^2-1);
 de2: diff(x2(t),t)=1;
 desolve([de1,de2],[x1(t),x2(t)]);
 ```
-
 He also provides a simpler example which does this:
 
 ```
 desolve([diff(f(x),x)=f(x^2)],[f(x)]);
 ```
-
 The suggestion is that the ilt should be replacing the `?g1234` type variables (which are indeed dummy variables, but native Lisp ones) by Maxima-type ones, so I am putting to reported upstream, developers acknowledge bug.  However, my feeling is that we should fix this by parsing these things as well, should they come up again.
 
 
@@ -81,7 +77,7 @@ The suggestion is that the ilt should be replacing the `?g1234` type variables (
 archive/issue_comments_096738.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> On [ this Maxima list thread] we get the original system in Maxima notation - thanks to Stavros Macrackis:\n\nMeaning [this thread](http://www.math.utexas.edu/pipermail/maxima/2011/024573.html).",
+    "body": "Replying to [comment:1 kcrisman]:\n> On [ this Maxima list thread] we get the original system in Maxima notation - thanks to Stavros Macrackis:\n\n\nMeaning [this thread](http://www.math.utexas.edu/pipermail/maxima/2011/024573.html).",
     "created_at": "2011-03-15T02:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9824",
     "type": "issue_comment",
@@ -92,6 +88,7 @@ archive/issue_comments_096738.json:
 
 Replying to [comment:1 kcrisman]:
 > On [ this Maxima list thread] we get the original system in Maxima notation - thanks to Stavros Macrackis:
+
 
 Meaning [this thread](http://www.math.utexas.edu/pipermail/maxima/2011/024573.html).
 
@@ -365,7 +362,7 @@ This now returns `[x1(t) == ilt(-(3*g3390*laplace(x2(t)^2, t, g3390) - g3390*x1(
 archive/issue_comments_096747.json:
 ```json
 {
-    "body": "Replying to [comment:15 rws]:\n> This now returns `[x1(t) == ilt(-(3*g3390*laplace(x2(t)^2, t, g3390) - g3390*x1(0) - 3)/g3390^2, g3390, t), x2(t) == t + x2(0)]` so it becomes an issue to fix our Maxima interface.\n\nAccording to the documentation of `inverse_laplace` this is probably more or less correct. We might want to do something about \"ilt\" so that it is more closely tied to `inverse_laplace`, though.",
+    "body": "Replying to [comment:15 rws]:\n> This now returns `[x1(t) == ilt(-(3*g3390*laplace(x2(t)^2, t, g3390) - g3390*x1(0) - 3)/g3390^2, g3390, t), x2(t) == t + x2(0)]` so it becomes an issue to fix our Maxima interface.\n\n\nAccording to the documentation of `inverse_laplace` this is probably more or less correct. We might want to do something about \"ilt\" so that it is more closely tied to `inverse_laplace`, though.",
     "created_at": "2015-02-01T17:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9824",
     "type": "issue_comment",
@@ -376,6 +373,7 @@ archive/issue_comments_096747.json:
 
 Replying to [comment:15 rws]:
 > This now returns `[x1(t) == ilt(-(3*g3390*laplace(x2(t)^2, t, g3390) - g3390*x1(0) - 3)/g3390^2, g3390, t), x2(t) == t + x2(0)]` so it becomes an issue to fix our Maxima interface.
+
 
 According to the documentation of `inverse_laplace` this is probably more or less correct. We might want to do something about "ilt" so that it is more closely tied to `inverse_laplace`, though.
 
@@ -404,7 +402,7 @@ Changing status from new to needs_review.
 archive/issue_comments_096749.json:
 ```json
 {
-    "body": "This is now fixed (probably due to upstream upgrade) :\n\n\n```\nsage: x1, x2=function(\"x1, x2\")\nsage: de1=x1(t).diff(t)==-3*(x2(t)-1)\nsage: de2=x2(t).diff(t)==1\nsage: Sol=desolve_system([de1, de2],[x1(t),x2(t)],ivar=t) ; Sol\n[x1(t) == -3/2*t^2 - 3*t*x2(0) + 3*t + x1(0), x2(t) == t + x2(0)]\n```\n\n\n==> invalidation of the bug and review query in order to get this bug closed.\n\nHTH,",
+    "body": "This is now fixed (probably due to upstream upgrade) :\n\n```\nsage: x1, x2=function(\"x1, x2\")\nsage: de1=x1(t).diff(t)==-3*(x2(t)-1)\nsage: de2=x2(t).diff(t)==1\nsage: Sol=desolve_system([de1, de2],[x1(t),x2(t)],ivar=t) ; Sol\n[x1(t) == -3/2*t^2 - 3*t*x2(0) + 3*t + x1(0), x2(t) == t + x2(0)]\n```\n\n==> invalidation of the bug and review query in order to get this bug closed.\n\nHTH,",
     "created_at": "2021-03-13T13:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9824",
     "type": "issue_comment",
@@ -415,7 +413,6 @@ archive/issue_comments_096749.json:
 
 This is now fixed (probably due to upstream upgrade) :
 
-
 ```
 sage: x1, x2=function("x1, x2")
 sage: de1=x1(t).diff(t)==-3*(x2(t)-1)
@@ -423,7 +420,6 @@ sage: de2=x2(t).diff(t)==1
 sage: Sol=desolve_system([de1, de2],[x1(t),x2(t)],ivar=t) ; Sol
 [x1(t) == -3/2*t^2 - 3*t*x2(0) + 3*t + x1(0), x2(t) == t + x2(0)]
 ```
-
 
 ==> invalidation of the bug and review query in order to get this bug closed.
 
@@ -558,7 +554,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096753.json:
 ```json
 {
-    "body": "Doctest added.\n\nHTH,\n----\nNew commits:",
+    "body": "Doctest added.\n\nHTH,\n\n---\nNew commits:",
     "created_at": "2021-03-14T10:26:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9824",
     "type": "issue_comment",
@@ -570,7 +566,8 @@ archive/issue_comments_096753.json:
 Doctest added.
 
 HTH,
-----
+
+---
 New commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_005026.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nKeywords: complex roots, polynomial\n\nOn sage-3.3.alpha0 I get this doctest failure on an intel mac:\n\n\n```\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/complex_roots.py\", line\n270:\n    sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n    [(-14.61803398874990?..., 1), (-12.38196601125010? + 0.?e-27*I,\n1)]\nGot:\n    [(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125011? + 0.?\ne-27*I, 1)]\n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5026\n\n",
+    "body": "Assignee: jkantor\n\nKeywords: complex roots, polynomial\n\nOn sage-3.3.alpha0 I get this doctest failure on an intel mac:\n\n```\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/complex_roots.py\", line\n270:\n    sage: complex_roots(x^2 + 27*x + 181)\nExpected:\n    [(-14.61803398874990?..., 1), (-12.38196601125010? + 0.?e-27*I,\n1)]\nGot:\n    [(-14.61803398874990? + 0.?e-27*I, 1), (-12.38196601125011? + 0.?\ne-27*I, 1)]\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5026\n\n",
     "created_at": "2009-01-19T16:11:44Z",
     "labels": [
         "component: numerical",
@@ -22,7 +22,6 @@ Keywords: complex roots, polynomial
 
 On sage-3.3.alpha0 I get this doctest failure on an intel mac:
 
-
 ```
 **********************************************************************
 File ".../devel/sage/sage/rings/polynomial/complex_roots.py", line
@@ -36,7 +35,6 @@ Got:
 e-27*I, 1)]
 ********************************************************************** 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5026
 

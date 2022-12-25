@@ -3,7 +3,7 @@
 archive/issues_008495.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
     "created_at": "2010-03-11T06:33:47Z",
     "labels": [
         "component: interfaces",
@@ -22,7 +22,6 @@ CC:  @burcin @jasongrout
 
 Since #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:
 
-
 ```
 sage: def math_bessel_K(nu,x): 
      ...       return mathematica(nu).BesselK(x).N(20).sage() 
@@ -35,7 +34,6 @@ Mathematica output:
 0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8495
 
@@ -163,7 +161,7 @@ Changing status from new to needs_review.
 archive/issue_comments_076494.json:
 ```json
 {
-    "body": "There is dictionary in place from Mathematica to Sage.\n\n\n```\n\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n```\n\n\nThis is constructed at runtime and is filled in by the __init__ methods of the functions and constants.",
+    "body": "There is dictionary in place from Mathematica to Sage.\n\n```\n\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n```\n\nThis is constructed at runtime and is filled in by the __init__ methods of the functions and constants.",
     "created_at": "2010-07-19T20:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -174,13 +172,11 @@ archive/issue_comments_076494.json:
 
 There is dictionary in place from Mathematica to Sage.
 
-
 ```
 
 sage: sage.symbolic.pynac.symbol_table['mathematica']
 {'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}
 ```
-
 
 This is constructed at runtime and is filled in by the __init__ methods of the functions and constants.
 
@@ -191,7 +187,7 @@ This is constructed at runtime and is filled in by the __init__ methods of the f
 archive/issue_comments_076495.json:
 ```json
 {
-    "body": "Replying to [comment:2 flawrence]:\n> I've uploaded a patch that has a thorough rewrite of MathematicaElement._sage_() to get the functionality from #3587 while keeping the functionality from before it (lists, complex numbers, numbers in scientific notation...).  I still need to write some documentation for the top of the file (i.e. documentation that makes it into the reference manual) but before I do that and submit this for formal review I'd like wise comments about my approach, e.g. \"The way you convert function names is really inefficient and problematic, do it this way...\", or \"You can efficiently get a list of all sage functions recognised by sage_eval() by ...\".\n> \n> Also if someone could check the doctests on a 32-bit computer and let me know the result that they get instead of\n> [[1.00000000000000, 4], pi, 3.20000000000000*e100, I]\n> that would be grand.\n\nOn 32-bit Debian I get the same output. There is only one doctest failure:\n\n\n```\n./sage -t  -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\nsage -t -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"./sage-4.4.4/devel/sage/sage/interfaces/mathematica.py\", line 281:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.59288617549119697816765132253822887 + 0.180489972066962026629620880838378650*I\n**********************************************************************\n\n```\n\n\nBut this is probably unrelated to this patch, since also without this patch applied I get\nthings like:\n\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 10]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 11]')\n3.1415926535897932384626433836\n```\n",
+    "body": "Replying to [comment:2 flawrence]:\n> I've uploaded a patch that has a thorough rewrite of MathematicaElement._sage_() to get the functionality from #3587 while keeping the functionality from before it (lists, complex numbers, numbers in scientific notation...).  I still need to write some documentation for the top of the file (i.e. documentation that makes it into the reference manual) but before I do that and submit this for formal review I'd like wise comments about my approach, e.g. \"The way you convert function names is really inefficient and problematic, do it this way...\", or \"You can efficiently get a list of all sage functions recognised by sage_eval() by ...\".\n> \n> Also if someone could check the doctests on a 32-bit computer and let me know the result that they get instead of\n> [[1.00000000000000, 4], pi, 3.20000000000000*e100, I]\n> that would be grand.\n\n\nOn 32-bit Debian I get the same output. There is only one doctest failure:\n\n```\n./sage -t  -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\nsage -t -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"./sage-4.4.4/devel/sage/sage/interfaces/mathematica.py\", line 281:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.59288617549119697816765132253822887 + 0.180489972066962026629620880838378650*I\n**********************************************************************\n\n```\n\nBut this is probably unrelated to this patch, since also without this patch applied I get\nthings like:\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 10]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 11]')\n3.1415926535897932384626433836\n```",
     "created_at": "2010-07-20T13:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -207,8 +203,8 @@ Replying to [comment:2 flawrence]:
 > [[1.00000000000000, 4], pi, 3.20000000000000*e100, I]
 > that would be grand.
 
-On 32-bit Debian I get the same output. There is only one doctest failure:
 
+On 32-bit Debian I get the same output. There is only one doctest failure:
 
 ```
 ./sage -t  -only-optional=mathematica "devel/sage/sage/interfaces/mathematica.py"
@@ -224,10 +220,8 @@ Got:
 
 ```
 
-
 But this is probably unrelated to this patch, since also without this patch applied I get
 things like:
-
 
 ```
 sage: mathematica('N[Pi, 1]')
@@ -240,13 +234,12 @@ sage: mathematica('N[Pi, 11]')
 
 
 
-
 ---
 
 archive/issue_comments_076496.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> There is dictionary in place from Mathematica to Sage.\n> \n {{{\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n}}}\n\nExcellent! I've updated the patch so that it uses that dictionary.  I also added the ability to pass a locals dictionary to _sage_, which complements and/or overrides the symbol_table['mathematica'] dictionary.\n\nThe documentation for this function won't be very visible, since it starts with an underscore, so I was contemplating setting up a mathematica-specific .sage function that accepts a locals dictionary and has a copy of this documentation.  In the end I didn't do this because I don't understand the consequences (or why there are separate _sage_ and sage functions at all).  Opinions?\n\nReplying to [comment:6 whuss]:\n>On 32-bit Debian I get the same output. There is only one doctest failure:\n\n>But this is probably unrelated to this patch, since also without this patch applied I get things like:\n\nYes, I'm not sure it's related to the patch either.  For the record I get the correct behaviour with the patch:\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1\nsage: mathematica('N[Pi, 10]')\n3.1415926536\nsage: mathematica('N[Pi, 11]')\n3.14159265359\n```\n",
+    "body": "Replying to [comment:5 mhansen]:\n> There is dictionary in place from Mathematica to Sage.\n> \n\n {{{\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n}}}\n\nExcellent! I've updated the patch so that it uses that dictionary.  I also added the ability to pass a locals dictionary to _sage_, which complements and/or overrides the symbol_table['mathematica'] dictionary.\n\nThe documentation for this function won't be very visible, since it starts with an underscore, so I was contemplating setting up a mathematica-specific .sage function that accepts a locals dictionary and has a copy of this documentation.  In the end I didn't do this because I don't understand the consequences (or why there are separate _sage_ and sage functions at all).  Opinions?\n\nReplying to [comment:6 whuss]:\n>On 32-bit Debian I get the same output. There is only one doctest failure:\n\n\n>But this is probably unrelated to this patch, since also without this patch applied I get things like:\n\n\nYes, I'm not sure it's related to the patch either.  For the record I get the correct behaviour with the patch:\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1\nsage: mathematica('N[Pi, 10]')\n3.1415926536\nsage: mathematica('N[Pi, 11]')\n3.14159265359\n```",
     "created_at": "2010-07-21T08:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -258,6 +251,7 @@ archive/issue_comments_076496.json:
 Replying to [comment:5 mhansen]:
 > There is dictionary in place from Mathematica to Sage.
 > 
+
  {{{
 sage: sage.symbolic.pynac.symbol_table['mathematica']
 {'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}
@@ -270,7 +264,9 @@ The documentation for this function won't be very visible, since it starts with 
 Replying to [comment:6 whuss]:
 >On 32-bit Debian I get the same output. There is only one doctest failure:
 
+
 >But this is probably unrelated to this patch, since also without this patch applied I get things like:
+
 
 Yes, I'm not sure it's related to the patch either.  For the record I get the correct behaviour with the patch:
 
@@ -282,7 +278,6 @@ sage: mathematica('N[Pi, 10]')
 sage: mathematica('N[Pi, 11]')
 3.14159265359
 ```
-
 
 
 
@@ -507,7 +502,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076508.json:
 ```json
 {
-    "body": "For me at least, on OpenSolaris with Mathematica 7.0.1, this is a definite improvement, as it reduced the number of failures in `devel/sage/sage/interfaces/mathematica.py` from 17 to 2. \n\n == Prior to adding the patch ==\n\n```\n\n<snip out lots of failures>\n\n4 items had failures:\n   5 of  84 in __main__.example_0\n   4 of   6 in __main__.example_1\n   4 of  19 in __main__.example_12\n   4 of   6 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.4 seconds\n```\n\n\n## After adding the patch\nAfter applying the patch, the number of failures is reduced to 2. \n\n\n```\nsage-4.6.2.rc1$ ./sage -t -optional devel/sage/sage/interfaces/\nsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 270:\n    sage: print n                   # optional - mathematica\nExpected:\n                  1.5707963267948966192313216916397514420985846996876\nGot:\n    1.5707963267949\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[75]>\", line 1, in <module>\n        math_bessel_K(Integer(2),I)                      # optional - mathematica###line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\n      File \"<doctest __main__.example_0[74]>\", line 2, in math_bessel_K\n        return mathematica(nu).BesselK(x).N(Integer(20))\n      File \"element.pyx\", line 617, in sage.structure.element.Element.numerical_approx (sage/structure/element.c:4658)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/misc/functional.py\", line 1265, in numerical_approx\n        return sage.rings.complex_field.ComplexField(prec)(x)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 279, in __call__\n        return Parent.__call__(self, x)\n      File \"parent.pyx\", line 915, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6668)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3119)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3022)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 310, in _element_constructor_\n        return complex_number.ComplexNumber(self, x)\n      File \"complex_number.pyx\", line 162, in sage.rings.complex_number.ComplexNumber.__init__ (sage/rings/complex_number.c:3995)\n    TypeError: unable to coerce to a ComplexNumber: <class 'sage.interfaces.mathematica.MathematicaElement'>\n**********************************************************************\n1 items had failures:\n   2 of  84 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.2 seconds\n```\n\n\n\n## Mathematica session on the sage machine computing Pi/2\n\n\n```\ndrkirkby@hawk:~$ math\nMathematica 7.0 for Sun Solaris x86 (64-bit)\nCopyright 1988-2009 Wolfram Research, Inc.\n\nIn[1]:= n=Pi/2\n\n        Pi\nOut[1]= --\n        2\n\nIn[2]:= N[n,50]\n\nOut[2]= 1.5707963267948966192313216916397514420985846996876\n```\n\n\n## Sage session on the same machine computing pi/2 with the Mathematica interface\n\n\n```\nsage: x = mathematica(pi/2)\nsage: print x\n        Pi\n        --\n        2\nsage: loads(dumps(x)) == x\nTrue\nsage: n = x.N(50)  \nsage: print n \n1.5707963267949\n```\n",
+    "body": "For me at least, on OpenSolaris with Mathematica 7.0.1, this is a definite improvement, as it reduced the number of failures in `devel/sage/sage/interfaces/mathematica.py` from 17 to 2. \n\n == Prior to adding the patch ==\n\n```\n\n<snip out lots of failures>\n\n4 items had failures:\n   5 of  84 in __main__.example_0\n   4 of   6 in __main__.example_1\n   4 of  19 in __main__.example_12\n   4 of   6 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.4 seconds\n```\n\n## After adding the patch\nAfter applying the patch, the number of failures is reduced to 2. \n\n```\nsage-4.6.2.rc1$ ./sage -t -optional devel/sage/sage/interfaces/\nsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 270:\n    sage: print n                   # optional - mathematica\nExpected:\n                  1.5707963267948966192313216916397514420985846996876\nGot:\n    1.5707963267949\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[75]>\", line 1, in <module>\n        math_bessel_K(Integer(2),I)                      # optional - mathematica###line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\n      File \"<doctest __main__.example_0[74]>\", line 2, in math_bessel_K\n        return mathematica(nu).BesselK(x).N(Integer(20))\n      File \"element.pyx\", line 617, in sage.structure.element.Element.numerical_approx (sage/structure/element.c:4658)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/misc/functional.py\", line 1265, in numerical_approx\n        return sage.rings.complex_field.ComplexField(prec)(x)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 279, in __call__\n        return Parent.__call__(self, x)\n      File \"parent.pyx\", line 915, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6668)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3119)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3022)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 310, in _element_constructor_\n        return complex_number.ComplexNumber(self, x)\n      File \"complex_number.pyx\", line 162, in sage.rings.complex_number.ComplexNumber.__init__ (sage/rings/complex_number.c:3995)\n    TypeError: unable to coerce to a ComplexNumber: <class 'sage.interfaces.mathematica.MathematicaElement'>\n**********************************************************************\n1 items had failures:\n   2 of  84 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.2 seconds\n```\n\n\n## Mathematica session on the sage machine computing Pi/2\n\n```\ndrkirkby@hawk:~$ math\nMathematica 7.0 for Sun Solaris x86 (64-bit)\nCopyright 1988-2009 Wolfram Research, Inc.\n\nIn[1]:= n=Pi/2\n\n        Pi\nOut[1]= --\n        2\n\nIn[2]:= N[n,50]\n\nOut[2]= 1.5707963267948966192313216916397514420985846996876\n```\n\n## Sage session on the same machine computing pi/2 with the Mathematica interface\n\n```\nsage: x = mathematica(pi/2)\nsage: print x\n        Pi\n        --\n        2\nsage: loads(dumps(x)) == x\nTrue\nsage: n = x.N(50)  \nsage: print n \n1.5707963267949\n```",
     "created_at": "2011-03-09T10:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -541,10 +536,8 @@ The following tests failed:
 Total time for all tests: 5.4 seconds
 ```
 
-
 ## After adding the patch
 After applying the patch, the number of failures is reduced to 2. 
-
 
 ```
 sage-4.6.2.rc1$ ./sage -t -optional devel/sage/sage/interfaces/
@@ -600,9 +593,7 @@ Total time for all tests: 5.2 seconds
 ```
 
 
-
 ## Mathematica session on the sage machine computing Pi/2
-
 
 ```
 drkirkby@hawk:~$ math
@@ -620,9 +611,7 @@ In[2]:= N[n,50]
 Out[2]= 1.5707963267948966192313216916397514420985846996876
 ```
 
-
 ## Sage session on the same machine computing pi/2 with the Mathematica interface
-
 
 ```
 sage: x = mathematica(pi/2)
@@ -639,13 +628,12 @@ sage: print n
 
 
 
-
 ---
 
 archive/issue_comments_076509.json:
 ```json
 {
-    "body": "OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\nCan you see whether these doctests pass without my patch applied?\n\nCould you evaluate the following lines for me (with the patch applied) and give me the output from your computer:\n\n```\nsage: a = mathematica(2).BesselK(I).N(20)\nsage: repr(a)\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a._sage_repr()\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a.sage()\n-2.59288617549 + 0.180489972067*I\n```\n",
+    "body": "OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\nCan you see whether these doctests pass without my patch applied?\n\nCould you evaluate the following lines for me (with the patch applied) and give me the output from your computer:\n\n```\nsage: a = mathematica(2).BesselK(I).N(20)\nsage: repr(a)\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a._sage_repr()\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a.sage()\n-2.59288617549 + 0.180489972067*I\n```",
     "created_at": "2011-03-09T10:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -672,13 +660,12 @@ sage: a.sage()
 
 
 
-
 ---
 
 archive/issue_comments_076510.json:
 ```json
 {
-    "body": "BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n\n\n```\nsage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \nsage: repr(mathematica(pi/2).N(50))\n'1.57079632679489661923132169163975144209858469968755'\nsage: sefs('1.57079632679489661923132169163975144209858469968755')\n1.57079632679\nsage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n1.5707963267948966192313216916397514420985846996875\n```\n\n\n`sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?",
+    "body": "BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n\n```\nsage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \nsage: repr(mathematica(pi/2).N(50))\n'1.57079632679489661923132169163975144209858469968755'\nsage: sefs('1.57079632679489661923132169163975144209858469968755')\n1.57079632679\nsage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n1.5707963267948966192313216916397514420985846996875\n```\n\n`sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?",
     "created_at": "2011-03-09T11:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -688,7 +675,6 @@ archive/issue_comments_076510.json:
 ```
 
 BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:
-
 
 ```
 sage: from sage.calculus.calculus import symbolic_expression_from_string as sefs 
@@ -700,7 +686,6 @@ sage: sage_eval('1.57079632679489661923132169163975144209858469968755')
 1.5707963267948966192313216916397514420985846996875
 ```
 
-
 `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?
 
 
@@ -710,7 +695,7 @@ sage: sage_eval('1.57079632679489661923132169163975144209858469968755')
 archive/issue_comments_076511.json:
 ```json
 {
-    "body": "Replying to [comment:16 flawrence]:\n> BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n> \n {{{\n> sage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \n> sage: repr(mathematica(pi/2).N(50))\n> '1.57079632679489661923132169163975144209858469968755'\n> sage: sefs('1.57079632679489661923132169163975144209858469968755')\n> 1.57079632679\n> sage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n> 1.5707963267948966192313216916397514420985846996875\n }}}\n> \n> `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n\nSounds good to me. Can you open that ticket? :)",
+    "body": "Replying to [comment:16 flawrence]:\n> BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n> \n\n {{{\n> sage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \n> sage: repr(mathematica(pi/2).N(50))\n> '1.57079632679489661923132169163975144209858469968755'\n> sage: sefs('1.57079632679489661923132169163975144209858469968755')\n> 1.57079632679\n> sage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n> 1.5707963267948966192313216916397514420985846996875\n\n }}}\n> \n> `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n\n\nSounds good to me. Can you open that ticket? :)",
     "created_at": "2011-03-09T14:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -722,6 +707,7 @@ archive/issue_comments_076511.json:
 Replying to [comment:16 flawrence]:
 > BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:
 > 
+
  {{{
 > sage: from sage.calculus.calculus import symbolic_expression_from_string as sefs 
 > sage: repr(mathematica(pi/2).N(50))
@@ -730,9 +716,11 @@ Replying to [comment:16 flawrence]:
 > 1.57079632679
 > sage: sage_eval('1.57079632679489661923132169163975144209858469968755')
 > 1.5707963267948966192313216916397514420985846996875
+
  }}}
 > 
 > `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?
+
 
 Sounds good to me. Can you open that ticket? :)
 
@@ -743,7 +731,7 @@ Sounds good to me. Can you open that ticket? :)
 archive/issue_comments_076512.json:
 ```json
 {
-    "body": "Replying to [comment:15 flawrence]:\n> OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\nEm, it is strange. \n\nI'm a bit tied up now, but will repeat later. \n\nI'm actually willing to give this a positive review, on the basis that it fixes a very large number of the problems, and no new bugs are introduced. But I'll run the tests later and see what can be done. \n\nDave",
+    "body": "Replying to [comment:15 flawrence]:\n> OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\n\nEm, it is strange. \n\nI'm a bit tied up now, but will repeat later. \n\nI'm actually willing to give this a positive review, on the basis that it fixes a very large number of the problems, and no new bugs are introduced. But I'll run the tests later and see what can be done. \n\nDave",
     "created_at": "2011-03-09T15:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -754,6 +742,7 @@ archive/issue_comments_076512.json:
 
 Replying to [comment:15 flawrence]:
 > OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!
+
 
 Em, it is strange. 
 
@@ -770,7 +759,7 @@ Dave
 archive/issue_comments_076513.json:
 ```json
 {
-    "body": "Replying to [comment:17 burcin]:\n> Replying to [comment:16 flawrence]:\n> > `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n> \n> Sounds good to me. Can you open that ticket? :)\nDone: #10898",
+    "body": "Replying to [comment:17 burcin]:\n> Replying to [comment:16 flawrence]:\n> > `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n\n> \n> Sounds good to me. Can you open that ticket? :)\n\nDone: #10898",
     "created_at": "2011-03-10T00:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -782,8 +771,10 @@ archive/issue_comments_076513.json:
 Replying to [comment:17 burcin]:
 > Replying to [comment:16 flawrence]:
 > > `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?
+
 > 
 > Sounds good to me. Can you open that ticket? :)
+
 Done: #10898
 
 
@@ -834,7 +825,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_076516.json:
 ```json
 {
-    "body": "Replying to [comment:20 flawrence]:\n> Hi Dave,\n> \n> Have you had a chance to investigate what was happening on Solaris?\n> \n> Cheers,\n> Felix\n\nCan you clarify the exact commands you want tested with and without the patch?",
+    "body": "Replying to [comment:20 flawrence]:\n> Hi Dave,\n> \n> Have you had a chance to investigate what was happening on Solaris?\n> \n> Cheers,\n> Felix\n\n\nCan you clarify the exact commands you want tested with and without the patch?",
     "created_at": "2011-03-19T19:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -850,6 +841,7 @@ Replying to [comment:20 flawrence]:
 > 
 > Cheers,
 > Felix
+
 
 Can you clarify the exact commands you want tested with and without the patch?
 
@@ -878,7 +870,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_076518.json:
 ```json
 {
-    "body": "ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\n#9032 modified Sage's .n(), and added (in two files)\n\n```\nn = numerical_approx\nN = n\n```\n\n\nThis means that Mathematica's `N[]` is no longer being called - instead Sage's `numerical_approx()` is being called, and it can't handle certain mma objects.  Furthermore the argument taken by `numerical_approx` is the number of bits (I think?) whereas `N[50]` gives 50 sig figs.\n\nI think that the way to fix this is by adjusting precedences so that on mathematica objects, mathematica functions take priority.  I also think that fixing this is beyond the scope of this ticket (which was a rewrite of `._sage_`).  I have created a new ticket regarding this issue: #10968",
+    "body": "ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\n#9032 modified Sage's .n(), and added (in two files)\n\n```\nn = numerical_approx\nN = n\n```\n\nThis means that Mathematica's `N[]` is no longer being called - instead Sage's `numerical_approx()` is being called, and it can't handle certain mma objects.  Furthermore the argument taken by `numerical_approx` is the number of bits (I think?) whereas `N[50]` gives 50 sig figs.\n\nI think that the way to fix this is by adjusting precedences so that on mathematica objects, mathematica functions take priority.  I also think that fixing this is beyond the scope of this ticket (which was a rewrite of `._sage_`).  I have created a new ticket regarding this issue: #10968",
     "created_at": "2011-03-20T00:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -896,7 +888,6 @@ n = numerical_approx
 N = n
 ```
 
-
 This means that Mathematica's `N[]` is no longer being called - instead Sage's `numerical_approx()` is being called, and it can't handle certain mma objects.  Furthermore the argument taken by `numerical_approx` is the number of bits (I think?) whereas `N[50]` gives 50 sig figs.
 
 I think that the way to fix this is by adjusting precedences so that on mathematica objects, mathematica functions take priority.  I also think that fixing this is beyond the scope of this ticket (which was a rewrite of `._sage_`).  I have created a new ticket regarding this issue: #10968
@@ -908,7 +899,7 @@ I think that the way to fix this is by adjusting precedences so that on mathemat
 archive/issue_comments_076519.json:
 ```json
 {
-    "body": "Replying to [comment:22 flawrence]:\n> ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\nI'm glad I;m not going mad. \n\nSince the changes reduces the number of failures from 17 to 2, I believe this should be merged, so positive review. The remaining issues can be sorted out on #10968",
+    "body": "Replying to [comment:22 flawrence]:\n> ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\n\nI'm glad I;m not going mad. \n\nSince the changes reduces the number of failures from 17 to 2, I believe this should be merged, so positive review. The remaining issues can be sorted out on #10968",
     "created_at": "2011-03-20T01:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -919,6 +910,7 @@ archive/issue_comments_076519.json:
 
 Replying to [comment:22 flawrence]:
 > ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.
+
 
 I'm glad I;m not going mad. 
 
@@ -949,7 +941,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076521.json:
 ```json
 {
-    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:282: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:284: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:277: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:282: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:284: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:277: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2011-03-23T13:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -965,7 +957,6 @@ dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:284: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:277: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 

@@ -114,7 +114,7 @@ Changing keywords from "" to "beginner".
 archive/issue_comments_039781.json:
 ```json
 {
-    "body": "Could this be accomplished by overriding the comparison operator for the matrix class?\n\nfor example\n\n\n```python\ndef __richcmp__(self, other_matrix, cmptype):\n  if cmptype == 2:  #this is the '==' operator\n    if is_Matrix(other_matrix):\n      if False in [i==j for i,j in zip(self.list(), other_matrix.list())]:\n        return False\n      else: return True\n```\n\n\nI'm just not sure where the 'matrix class' is.  This would allow comparisons like\n\n\n```\nsage: matrixA == matrixB\nTrue\n```\n",
+    "body": "Could this be accomplished by overriding the comparison operator for the matrix class?\n\nfor example\n\n```python\ndef __richcmp__(self, other_matrix, cmptype):\n  if cmptype == 2:  #this is the '==' operator\n    if is_Matrix(other_matrix):\n      if False in [i==j for i,j in zip(self.list(), other_matrix.list())]:\n        return False\n      else: return True\n```\n\nI'm just not sure where the 'matrix class' is.  This would allow comparisons like\n\n```\nsage: matrixA == matrixB\nTrue\n```",
     "created_at": "2011-04-14T03:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
@@ -127,7 +127,6 @@ Could this be accomplished by overriding the comparison operator for the matrix 
 
 for example
 
-
 ```python
 def __richcmp__(self, other_matrix, cmptype):
   if cmptype == 2:  #this is the '==' operator
@@ -137,9 +136,7 @@ def __richcmp__(self, other_matrix, cmptype):
       else: return True
 ```
 
-
 I'm just not sure where the 'matrix class' is.  This would allow comparisons like
-
 
 ```
 sage: matrixA == matrixB
@@ -148,13 +145,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_039782.json:
 ```json
 {
-    "body": "You bring up a good point, and make me doubt whether the feature request is even feasible.  Certainly it's probably not a beginner ticket after all.  The problem is that we already have an == operator:\n\n\n```\nsage: a=matrix(SR,2,[x,x^2,x+1,x+4])\nsage: b=matrix(SR,2,[4,3,2,1])\nsage: a==b\nFalse\n```\n\n\nThat means that all solve will see is False.  Instead, we want something like:\n\n\n```\n\nsage: SR(a)==SR(b)\n([    x   x^2]\n[x + 1 x + 4]) == ([4 3]\n[2 1])\n```\n\n \n(i.e., we want the == in the solve to construct an equation, which it does for symbolic objects.  One of the issues at heart here is that a symbolic object wrapping a Sage matrix is different from a Sage matrix containing symbolic objects.\n\nSo I'm going to take off beginner status for this ticket here.  It would still be nice if solve(SR(a)==SR(b)) worked in the above example.",
+    "body": "You bring up a good point, and make me doubt whether the feature request is even feasible.  Certainly it's probably not a beginner ticket after all.  The problem is that we already have an == operator:\n\n```\nsage: a=matrix(SR,2,[x,x^2,x+1,x+4])\nsage: b=matrix(SR,2,[4,3,2,1])\nsage: a==b\nFalse\n```\n\nThat means that all solve will see is False.  Instead, we want something like:\n\n```\n\nsage: SR(a)==SR(b)\n([    x   x^2]\n[x + 1 x + 4]) == ([4 3]\n[2 1])\n```\n \n(i.e., we want the == in the solve to construct an equation, which it does for symbolic objects.  One of the issues at heart here is that a symbolic object wrapping a Sage matrix is different from a Sage matrix containing symbolic objects.\n\nSo I'm going to take off beginner status for this ticket here.  It would still be nice if solve(SR(a)==SR(b)) worked in the above example.",
     "created_at": "2011-04-14T03:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
@@ -165,7 +161,6 @@ archive/issue_comments_039782.json:
 
 You bring up a good point, and make me doubt whether the feature request is even feasible.  Certainly it's probably not a beginner ticket after all.  The problem is that we already have an == operator:
 
-
 ```
 sage: a=matrix(SR,2,[x,x^2,x+1,x+4])
 sage: b=matrix(SR,2,[4,3,2,1])
@@ -173,9 +168,7 @@ sage: a==b
 False
 ```
 
-
 That means that all solve will see is False.  Instead, we want something like:
-
 
 ```
 
@@ -184,7 +177,6 @@ sage: SR(a)==SR(b)
 [x + 1 x + 4]) == ([4 3]
 [2 1])
 ```
-
  
 (i.e., we want the == in the solve to construct an equation, which it does for symbolic objects.  One of the issues at heart here is that a symbolic object wrapping a Sage matrix is different from a Sage matrix containing symbolic objects.
 

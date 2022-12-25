@@ -3,7 +3,7 @@
 archive/issues_003097.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIf one uses pbuild to build the Sage library the files from the scripts section are not copied into $SAGE_ROOT/local/bin:\n\n```\n      scripts = ['sage/dsage/scripts/dsage_worker.py',\n                 'sage/dsage/scripts/dsage_setup.py',\n                 'spkg-debian-maybe',\n                ],\n```\n\nErgo DSage's doctest just hang at 0% CPU use.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3097\n\n",
+    "body": "Assignee: mabshoff\n\nIf one uses pbuild to build the Sage library the files from the scripts section are not copied into $SAGE_ROOT/local/bin:\n\n```\n      scripts = ['sage/dsage/scripts/dsage_worker.py',\n                 'sage/dsage/scripts/dsage_setup.py',\n                 'spkg-debian-maybe',\n                ],\n```\nErgo DSage's doctest just hang at 0% CPU use.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3097\n\n",
     "created_at": "2008-05-03T15:18:09Z",
     "labels": [
         "component: build",
@@ -26,7 +26,6 @@ If one uses pbuild to build the Sage library the files from the scripts section 
                  'spkg-debian-maybe',
                 ],
 ```
-
 Ergo DSage's doctest just hang at 0% CPU use.
 
 Cheers,

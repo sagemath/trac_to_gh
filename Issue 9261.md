@@ -3,7 +3,7 @@
 archive/issues_009261.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein cwitty @mwhansen\n\nCurrently, the option style='bracket' (to display intervals as\n[1.1 ... 1.2]) is only available in the `str` method, so that\none has to provide it each time one calls str.\n\nIt would be nice to have an option style=... in the *creation* of the\nfield, to override the default style. For example one would have:\n\n```\nsage: R = RealIntervalField(42, style='brackets')\nsage: R(pi)\n[3.1415926535892 .. 3.1415926535902]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9261\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein cwitty @mwhansen\n\nCurrently, the option style='bracket' (to display intervals as\n[1.1 ... 1.2]) is only available in the `str` method, so that\none has to provide it each time one calls str.\n\nIt would be nice to have an option style=... in the *creation* of the\nfield, to override the default style. For example one would have:\n\n```\nsage: R = RealIntervalField(42, style='brackets')\nsage: R(pi)\n[3.1415926535892 .. 3.1415926535902]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9261\n\n",
     "created_at": "2010-06-18T10:01:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -32,7 +32,6 @@ sage: R = RealIntervalField(42, style='brackets')
 sage: R(pi)
 [3.1415926535892 .. 3.1415926535902]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9261
 
@@ -63,7 +62,7 @@ This is almost implemented in #7682.  The patch there is probably ready for revi
 archive/issue_comments_087013.json:
 ```json
 {
-    "body": "I don't like the idea of putting the print style in the parent.  (I think the current sci_not is a design error that shouldn't be perpetuated.)\n\nOne problem is that if you have objects like `RealIntervalField(42, style='brackets')(pi)` and `RealIntervalField(42)(pi)`, then arithmetic between them is slower than between objects with the same parent.  Also, there are several parts of Sage that create their own `RealIntervalField` parents and return elements to the user, so the option you suggest would not suffice to hide question-mark printing from the user.\n\nIMHO a global setting is a more sensible option; would that be all right, or do you really want the setting to be per-parent?\n\nIf a global setting is acceptable, then we're in luck, because it already exists: :)\n\n```\nsage: a = RIF(pi)\nsage: a\n3.141592653589794?\nsage: sage.rings.real_mpfi.printing_style = 'brackets'\nsage: a\n[3.1415926535897931 .. 3.1415926535897936]\n```\n\n\nWe could certainly document this global setting (I think it's entirely undocumented now), if that would help.",
+    "body": "I don't like the idea of putting the print style in the parent.  (I think the current sci_not is a design error that shouldn't be perpetuated.)\n\nOne problem is that if you have objects like `RealIntervalField(42, style='brackets')(pi)` and `RealIntervalField(42)(pi)`, then arithmetic between them is slower than between objects with the same parent.  Also, there are several parts of Sage that create their own `RealIntervalField` parents and return elements to the user, so the option you suggest would not suffice to hide question-mark printing from the user.\n\nIMHO a global setting is a more sensible option; would that be all right, or do you really want the setting to be per-parent?\n\nIf a global setting is acceptable, then we're in luck, because it already exists: :)\n\n```\nsage: a = RIF(pi)\nsage: a\n3.141592653589794?\nsage: sage.rings.real_mpfi.printing_style = 'brackets'\nsage: a\n[3.1415926535897931 .. 3.1415926535897936]\n```\n\nWe could certainly document this global setting (I think it's entirely undocumented now), if that would help.",
     "created_at": "2010-07-20T21:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
@@ -89,7 +88,6 @@ sage: a
 [3.1415926535897931 .. 3.1415926535897936]
 ```
 
-
 We could certainly document this global setting (I think it's entirely undocumented now), if that would help.
 
 
@@ -99,7 +97,7 @@ We could certainly document this global setting (I think it's entirely undocumen
 archive/issue_comments_087014.json:
 ```json
 {
-    "body": "> We could certainly document this global setting (I think it's entirely undocumented now), if that would help. \n\nI strongly support this. This global setting was something I was missing since a long time, it is\nnow in my init.sage file.",
+    "body": "> We could certainly document this global setting (I think it's entirely undocumented now), if that would help. \n\n\nI strongly support this. This global setting was something I was missing since a long time, it is\nnow in my init.sage file.",
     "created_at": "2010-07-21T07:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
@@ -109,6 +107,7 @@ archive/issue_comments_087014.json:
 ```
 
 > We could certainly document this global setting (I think it's entirely undocumented now), if that would help. 
+
 
 I strongly support this. This global setting was something I was missing since a long time, it is
 now in my init.sage file.
@@ -120,7 +119,7 @@ now in my init.sage file.
 archive/issue_comments_087015.json:
 ```json
 {
-    "body": "Replying to [comment:2 cwitty]:\n\n> IMHO a global setting is a more sensible option; would that be all right, or do you really want the setting to be per-parent?\n\n+1 to making such things (and keeping such things) global settings.",
+    "body": "Replying to [comment:2 cwitty]:\n\n> IMHO a global setting is a more sensible option; would that be all right, or do you really want the setting to be per-parent?\n\n\n+1 to making such things (and keeping such things) global settings.",
     "created_at": "2010-07-21T08:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
@@ -132,6 +131,7 @@ archive/issue_comments_087015.json:
 Replying to [comment:2 cwitty]:
 
 > IMHO a global setting is a more sensible option; would that be all right, or do you really want the setting to be per-parent?
+
 
 +1 to making such things (and keeping such things) global settings.
 

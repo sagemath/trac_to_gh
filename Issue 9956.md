@@ -3,7 +3,7 @@
 archive/issues_009956.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nSee [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.  Basically,\n\n```\nsage: var('x,y')\n(x, y)\nsage: f(x,y)=x^2+y^2\nsage: p=plot3d(f,(-5,5),(-5,5))\nsage: p # works fine\nsage: p.save('test.sobj')\nsage: q = load('test.sobj')\nsage: q\nERROR: An unexpected error occurred while tokenizing input\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9957\n\n",
+    "body": "Assignee: jason, was\n\nSee [this ask.sagemath.org](http://ask.sagemath.org/question/136/importing-saved-3d-plot) discussion for background.  Basically,\n\n```\nsage: var('x,y')\n(x, y)\nsage: f(x,y)=x^2+y^2\nsage: p=plot3d(f,(-5,5),(-5,5))\nsage: p # works fine\nsage: p.save('test.sobj')\nsage: q = load('test.sobj')\nsage: q\nERROR: An unexpected error occurred while tokenizing input\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9957\n\n",
     "created_at": "2010-09-20T19:32:42Z",
     "labels": [
         "component: graphics",
@@ -33,7 +33,6 @@ sage: q
 ERROR: An unexpected error occurred while tokenizing input
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9957
 
 
@@ -45,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9957
 archive/issue_comments_099143.json:
 ```json
 {
-    "body": "This can be traced down to the fact that in `parametric_surface.pyx` \n\n```\n    def get_grid(self, ds):\n        \"\"\"\n        TEST::\n\n            sage: from sage.plot.plot3d.parametric_surface import ParametricSurface\n            sage: def f(x,y): return x+y,x-y,x*y\n            sage: P = ParametricSurface(f)\n            sage: P.get_grid(.1)\n            Traceback (most recent call last):\n            ...\n            NotImplementedError: You must override the get_grid method.\n        \"\"\"\n        if self.render_grid is None:\n            raise NotImplementedError, \"You must override the get_grid method.\"\n        return self.render_grid\n```\n\nwhich is called from `triangulate` when you try to view the plot.  For some reason the `render_grid` attribute isn't set in `q`, but in `p` it is.  I don't know how to access these attributes, unfortunately...",
+    "body": "This can be traced down to the fact that in `parametric_surface.pyx` \n\n```\n    def get_grid(self, ds):\n        \"\"\"\n        TEST::\n\n            sage: from sage.plot.plot3d.parametric_surface import ParametricSurface\n            sage: def f(x,y): return x+y,x-y,x*y\n            sage: P = ParametricSurface(f)\n            sage: P.get_grid(.1)\n            Traceback (most recent call last):\n            ...\n            NotImplementedError: You must override the get_grid method.\n        \"\"\"\n        if self.render_grid is None:\n            raise NotImplementedError, \"You must override the get_grid method.\"\n        return self.render_grid\n```\nwhich is called from `triangulate` when you try to view the plot.  For some reason the `render_grid` attribute isn't set in `q`, but in `p` it is.  I don't know how to access these attributes, unfortunately...",
     "created_at": "2010-09-20T19:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9956",
     "type": "issue_comment",
@@ -73,7 +72,6 @@ This can be traced down to the fact that in `parametric_surface.pyx`
             raise NotImplementedError, "You must override the get_grid method."
         return self.render_grid
 ```
-
 which is called from `triangulate` when you try to view the plot.  For some reason the `render_grid` attribute isn't set in `q`, but in `p` it is.  I don't know how to access these attributes, unfortunately...
 
 
@@ -202,7 +200,7 @@ archive/issue_events_025123.json:
 archive/issue_comments_099144.json:
 ```json
 {
-    "body": "Pickling is simply not implemented for this class:\n\n```\nsage: p.__reduce_ex__(2)\n(<function copy_reg.__newobj__>,\n (sage.plot.plot3d.parametric_surface.ParametricSurface,),\n None,\n None,\n None)\n```\n\nas you can see, no construction parameters are provided at all. So this object just gets pickled as an empty `ParametricSurface` object.",
+    "body": "Pickling is simply not implemented for this class:\n\n```\nsage: p.__reduce_ex__(2)\n(<function copy_reg.__newobj__>,\n (sage.plot.plot3d.parametric_surface.ParametricSurface,),\n None,\n None,\n None)\n```\nas you can see, no construction parameters are provided at all. So this object just gets pickled as an empty `ParametricSurface` object.",
     "created_at": "2014-10-11T20:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9956",
     "type": "issue_comment",
@@ -221,5 +219,4 @@ sage: p.__reduce_ex__(2)
  None,
  None)
 ```
-
 as you can see, no construction parameters are provided at all. So this object just gets pickled as an empty `ParametricSurface` object.

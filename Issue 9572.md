@@ -52,7 +52,7 @@ You might consider #8574 and #9512, which are both positively reviewed.
 archive/issue_comments_092283.json:
 ```json
 {
-    "body": "Replying to [comment:1 ddrake]:\n> You might consider #8574 and #9512, which are both positively reviewed.\n\nEr, I mean, #8754.",
+    "body": "Replying to [comment:1 ddrake]:\n> You might consider #8574 and #9512, which are both positively reviewed.\n\n\nEr, I mean, #8754.",
     "created_at": "2010-07-23T02:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
@@ -63,6 +63,7 @@ archive/issue_comments_092283.json:
 
 Replying to [comment:1 ddrake]:
 > You might consider #8574 and #9512, which are both positively reviewed.
+
 
 Er, I mean, #8754.
 
@@ -315,7 +316,7 @@ Belated note for the release manager: Please merge #3342's sage repository patch
 archive/issue_comments_092296.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n\n> Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.\n\nBut if it's too late for 4.5.2.alpha1, we could, I think, just include the patch in 4.5.2.rc0.",
+    "body": "Replying to [comment:10 mpatel]:\n\n> Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.\n\n\nBut if it's too late for 4.5.2.alpha1, we could, I think, just include the patch in 4.5.2.rc0.",
     "created_at": "2010-07-27T02:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
@@ -328,6 +329,7 @@ Replying to [comment:10 mpatel]:
 
 > Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.
 
+
 But if it's too late for 4.5.2.alpha1, we could, I think, just include the patch in 4.5.2.rc0.
 
 
@@ -337,7 +339,7 @@ But if it's too late for 4.5.2.alpha1, we could, I think, just include the patch
 archive/issue_comments_092297.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.\n> \n> (I should have followed [our own advice](http://groups.google.com/group/sage-release/browse_thread/thread/456f14fd92ee61a5/0962395dd19cc9c6#0962395dd19cc9c6)!)\n\nYes, you should have. :)  You're lucky though, I managed to sneak it into alpha1.",
+    "body": "Replying to [comment:10 mpatel]:\n> Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.\n> \n> (I should have followed [our own advice](http://groups.google.com/group/sage-release/browse_thread/thread/456f14fd92ee61a5/0962395dd19cc9c6#0962395dd19cc9c6)!)\n\n\nYes, you should have. :)  You're lucky though, I managed to sneak it into alpha1.",
     "created_at": "2010-07-27T02:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9572",
     "type": "issue_comment",
@@ -350,5 +352,6 @@ Replying to [comment:10 mpatel]:
 > Belated note for the release manager: Please merge #3342's sage repository patch with SageNB 0.8.2.
 > 
 > (I should have followed [our own advice](http://groups.google.com/group/sage-release/browse_thread/thread/456f14fd92ee61a5/0962395dd19cc9c6#0962395dd19cc9c6)!)
+
 
 Yes, you should have. :)  You're lucky though, I managed to sneak it into alpha1.

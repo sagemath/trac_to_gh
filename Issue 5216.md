@@ -3,7 +3,7 @@
 archive/issues_005216.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is a security issue:\n\n```\nVersion 1.0.5 removes a potential security vulnerability (CERT-FI 20469 \nas it applies to bzip2) in versions 1.0.4 and earlier, so all users are \nrecommended to upgrade immediately.\n```\n\nand we have been shipping an vulnerable bzip2 release for a while. So upgrade :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5216\n\n",
+    "body": "Assignee: mabshoff\n\nThis is a security issue:\n\n```\nVersion 1.0.5 removes a potential security vulnerability (CERT-FI 20469 \nas it applies to bzip2) in versions 1.0.4 and earlier, so all users are \nrecommended to upgrade immediately.\n```\nand we have been shipping an vulnerable bzip2 release for a while. So upgrade :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5216\n\n",
     "created_at": "2009-02-09T12:23:44Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ Version 1.0.5 removes a potential security vulnerability (CERT-FI 20469
 as it applies to bzip2) in versions 1.0.4 and earlier, so all users are 
 recommended to upgrade immediately.
 ```
-
 and we have been shipping an vulnerable bzip2 release for a while. So upgrade :)
 
 Cheers,

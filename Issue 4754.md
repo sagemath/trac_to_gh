@@ -88,7 +88,7 @@ I also have a *much* faster Cython zero-forcing-set tester that I could donate t
 archive/issue_comments_035929.json:
 ```json
 {
-    "body": "> while others probably ought to go into a minimum_rank.sage file. \n\nI don't think anything included in the core main sage library should go in a .sage file.  It should go in a .py file.\n\nWilliam",
+    "body": "> while others probably ought to go into a minimum_rank.sage file. \n\n\nI don't think anything included in the core main sage library should go in a .sage file.  It should go in a .py file.\n\nWilliam",
     "created_at": "2008-12-11T04:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -98,6 +98,7 @@ archive/issue_comments_035929.json:
 ```
 
 > while others probably ought to go into a minimum_rank.sage file. 
+
 
 I don't think anything included in the core main sage library should go in a .sage file.  It should go in a .py file.
 
@@ -110,7 +111,7 @@ William
 archive/issue_comments_035930.json:
 ```json
 {
-    "body": "From personal email from Geoff Tims, 13 Dec 2008:\n\n\n```\nHey Jason,\n \nI don't know exactly how I feel.  I'm probably fine with it.\n \nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later\n \nGeoff\n```\n",
+    "body": "From personal email from Geoff Tims, 13 Dec 2008:\n\n```\nHey Jason,\n \nI don't know exactly how I feel.  I'm probably fine with it.\n \nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later\n \nGeoff\n```",
     "created_at": "2008-12-22T18:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -120,7 +121,6 @@ archive/issue_comments_035930.json:
 ```
 
 From personal email from Geoff Tims, 13 Dec 2008:
-
 
 ```
 Hey Jason,
@@ -134,13 +134,12 @@ Geoff
 
 
 
-
 ---
 
 archive/issue_comments_035931.json:
 ```json
 {
-    "body": "From personal email from Tracy McKay, 11 Dec 2008:\n\n\n```\nHi Jason,\n\nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later. \n\nThanks,\n\nTracy McKay\n```\n",
+    "body": "From personal email from Tracy McKay, 11 Dec 2008:\n\n```\nHi Jason,\n\nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later. \n\nThanks,\n\nTracy McKay\n```",
     "created_at": "2008-12-22T18:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -150,7 +149,6 @@ archive/issue_comments_035931.json:
 ```
 
 From personal email from Tracy McKay, 11 Dec 2008:
-
 
 ```
 Hi Jason,
@@ -164,13 +162,12 @@ Tracy McKay
 
 
 
-
 ---
 
 archive/issue_comments_035932.json:
 ```json
 {
-    "body": "From personal email from Laura DeLoss, 11 Dec 2008:\n\n\n```\nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later and for the EGR group (Jason, Jason, Geoff, Tracy and myself) to be listed as the Sage contributors. \n```\n",
+    "body": "From personal email from Laura DeLoss, 11 Dec 2008:\n\n```\nI agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later and for the EGR group (Jason, Jason, Geoff, Tracy and myself) to be listed as the Sage contributors. \n```",
     "created_at": "2008-12-22T18:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
@@ -181,11 +178,9 @@ archive/issue_comments_035932.json:
 
 From personal email from Laura DeLoss, 11 Dec 2008:
 
-
 ```
 I agree to license the code available from http://arxiv.org/abs/0812.1616 as GPL version 2 or later and for the EGR group (Jason, Jason, Geoff, Tracy and myself) to be listed as the Sage contributors. 
 ```
-
 
 
 

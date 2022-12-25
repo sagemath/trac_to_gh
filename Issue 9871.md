@@ -3,7 +3,7 @@
 archive/issues_009871.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  polybori @jhpalmieri alexanderdreyer\n\nWhen I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:\n\n\n```\nGNU linker detected!\n```\n\n\nThis message is in the SConstruct file and comes from some discussions on #6437.\n\nIt would appear the test is not useful on OpenSolaris, as the linker now takes the GNU options too. however, I don't feel this is a the cause of the main problem. \n\nA problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nand, what I assume is part of PolyBoRi as the version number is identical. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nThis is a bad sign - see for example \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nThere should be no output from the above command, which is the case with most libraries. (Only ECL, PolyBoRi and Cliquer have this problem, but I've solved the Cliquer issue - see #9871)\n\nAs far as I can tell, -fPIC is used when building all the files, so there must be another reason for this problem. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9872\n\n",
+    "body": "Assignee: tbd\n\nCC:  polybori @jhpalmieri alexanderdreyer\n\nWhen I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:\n\n```\nGNU linker detected!\n```\n\nThis message is in the SConstruct file and comes from some discussions on #6437.\n\nIt would appear the test is not useful on OpenSolaris, as the linker now takes the GNU options too. however, I don't feel this is a the cause of the main problem. \n\nA problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. \n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\nand, what I assume is part of PolyBoRi as the version number is identical. \n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\nThis is a bad sign - see for example \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nThere should be no output from the above command, which is the case with most libraries. (Only ECL, PolyBoRi and Cliquer have this problem, but I've solved the Cliquer issue - see #9871)\n\nAs far as I can tell, -fPIC is used when building all the files, so there must be another reason for this problem. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9872\n\n",
     "created_at": "2010-09-08T03:52:49Z",
     "labels": [
         "component: packages: standard",
@@ -22,11 +22,9 @@ CC:  polybori @jhpalmieri alexanderdreyer
 
 When I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:
 
-
 ```
 GNU linker detected!
 ```
-
 
 This message is in the SConstruct file and comes from some discussions on #6437.
 
@@ -34,23 +32,19 @@ It would appear the test is not useful on OpenSolaris, as the linker now takes t
 
 A problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. 
 
-
 ```
 drkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL
       [25]  TEXTREL           0                   
       [34]  FLAGS             0x4                 [ TEXTREL ]
 ```
 
-
 and, what I assume is part of PolyBoRi as the version number is identical. 
-
 
 ```
 drkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL
       [25]  TEXTREL           0                   
       [34]  FLAGS             0x4                 [ TEXTREL ]
 ```
-
 
 This is a bad sign - see for example 
 
@@ -94,7 +88,7 @@ My best,
 archive/issue_comments_097394.json:
 ```json
 {
-    "body": "Replying to [comment:1 AlexanderDreyer]:\n> Is the OpenSolaris environment somewhere available on sage.math? \n> \n> My best,\n>   Alexander\n\nNo, there are no virtual machines on sage.math with OpenSolaris. \n\nHowever, whilst not OpenSolaris on x86, the issue with text relocations is seen on Solaris 10 on SPARC too - i.e. t2.math\n\n\n```\nkirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\nkirkby@t2:64 ~/t2/32$ \n```\n\n\nOn OpenSolaris, the Sun linker does actually take all the GNU options, so getting the linker wrong is not a problem, so I would not waste too much time over that.\n\nThe method chosen to get the linker is not ideal. It is based on something I wrote, but I think my method is flawed. It assumes the first linker in the path is the one used by gcc, but there is no reason for that to be so, as gcc has the linker path hard-coded. I really no not know how best to find the linker used by gcc. As a long term solution, it would probably be worth looking at how autoconf does this. \n\nIf you set up your environment on t2.math as detailed in /etc/motd, then PolyBoRi will chose the right linker, but the text relocation problem will be seen. This does not cause a problem with 32-bit builds, but it does with 64-bit builds. \n\nSince Sage is stable on 32-bit versions of Solaris 10 and OpenSolaris, we are looking to get it working 64-bit. The text relocation problem then comes more serious. There's a discussion of this issue on this blog \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nWhat I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n\nDave",
+    "body": "Replying to [comment:1 AlexanderDreyer]:\n> Is the OpenSolaris environment somewhere available on sage.math? \n> \n> My best,\n>   Alexander\n\n\nNo, there are no virtual machines on sage.math with OpenSolaris. \n\nHowever, whilst not OpenSolaris on x86, the issue with text relocations is seen on Solaris 10 on SPARC too - i.e. t2.math\n\n```\nkirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\nkirkby@t2:64 ~/t2/32$ \n```\n\nOn OpenSolaris, the Sun linker does actually take all the GNU options, so getting the linker wrong is not a problem, so I would not waste too much time over that.\n\nThe method chosen to get the linker is not ideal. It is based on something I wrote, but I think my method is flawed. It assumes the first linker in the path is the one used by gcc, but there is no reason for that to be so, as gcc has the linker path hard-coded. I really no not know how best to find the linker used by gcc. As a long term solution, it would probably be worth looking at how autoconf does this. \n\nIf you set up your environment on t2.math as detailed in /etc/motd, then PolyBoRi will chose the right linker, but the text relocation problem will be seen. This does not cause a problem with 32-bit builds, but it does with 64-bit builds. \n\nSince Sage is stable on 32-bit versions of Solaris 10 and OpenSolaris, we are looking to get it working 64-bit. The text relocation problem then comes more serious. There's a discussion of this issue on this blog \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nWhat I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n\nDave",
     "created_at": "2010-09-08T08:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -109,10 +103,10 @@ Replying to [comment:1 AlexanderDreyer]:
 > My best,
 >   Alexander
 
+
 No, there are no virtual machines on sage.math with OpenSolaris. 
 
 However, whilst not OpenSolaris on x86, the issue with text relocations is seen on Solaris 10 on SPARC too - i.e. t2.math
-
 
 ```
 kirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL
@@ -120,7 +114,6 @@ kirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4
       [27]  FLAGS             0x4                 [ TEXTREL ]
 kirkby@t2:64 ~/t2/32$ 
 ```
-
 
 On OpenSolaris, the Sun linker does actually take all the GNU options, so getting the linker wrong is not a problem, so I would not waste too much time over that.
 
@@ -160,7 +153,7 @@ archive/issue_events_024867.json:
 archive/issue_comments_097395.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> What I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n> \n> Dave \n\nOne could argue this is a gcc bug, as the Sun compiler is more clever and can work around the problem, but it's a gcc issue we need to work around. With Cliquer, it was just a matter of choosing the right options for the linker (see #9871), but in some cases it may need changes to the code, as discussed on that Sun blog. \n\nDave",
+    "body": "Replying to [comment:2 drkirkby]:\n> What I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n> \n> Dave \n\n\nOne could argue this is a gcc bug, as the Sun compiler is more clever and can work around the problem, but it's a gcc issue we need to work around. With Cliquer, it was just a matter of choosing the right options for the linker (see #9871), but in some cases it may need changes to the code, as discussed on that Sun blog. \n\nDave",
     "created_at": "2010-09-08T08:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -173,6 +166,7 @@ Replying to [comment:2 drkirkby]:
 > What I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. 
 > 
 > Dave 
+
 
 One could argue this is a gcc bug, as the Sun compiler is more clever and can work around the problem, but it's a gcc issue we need to work around. With Cliquer, it was just a matter of choosing the right options for the linker (see #9871), but in some cases it may need changes to the code, as discussed on that Sun blog. 
 
@@ -203,7 +197,7 @@ Ok, may I copy your sage-4.5.3-alpha build from /scratch?
 archive/issue_comments_097397.json:
 ```json
 {
-    "body": "Replying to [comment:4 AlexanderDreyer]:\n> Ok, may I copy your sage-4.5.3-alpha build from /scratch?\n\nI suggest you use my build at: \n\n\n```\n/rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0\n```\n\n\nas that's the latest version I have that's fully working. It passed all doc tests except one, but that then passed when I run it manually. \n\nAs you will see, it has the issue. \n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nDave",
+    "body": "Replying to [comment:4 AlexanderDreyer]:\n> Ok, may I copy your sage-4.5.3-alpha build from /scratch?\n\n\nI suggest you use my build at: \n\n```\n/rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0\n```\n\nas that's the latest version I have that's fully working. It passed all doc tests except one, but that then passed when I run it manually. \n\nAs you will see, it has the issue. \n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\n```\n\nDave",
     "created_at": "2010-09-08T09:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -215,13 +209,12 @@ archive/issue_comments_097397.json:
 Replying to [comment:4 AlexanderDreyer]:
 > Ok, may I copy your sage-4.5.3-alpha build from /scratch?
 
-I suggest you use my build at: 
 
+I suggest you use my build at: 
 
 ```
 /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0
 ```
-
 
 as that's the latest version I have that's fully working. It passed all doc tests except one, but that then passed when I run it manually. 
 
@@ -232,7 +225,6 @@ kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sa
       [19]  TEXTREL           0                   
       [27]  FLAGS             0x4                 [ TEXTREL ]
 ```
-
 
 Dave
 
@@ -261,7 +253,7 @@ Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9
 archive/issue_comments_097399.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexanderDreyer]:\n> Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.\n\nTo be fair I am not aware of a problem caused by PolyBoRi.\n\nBut I know the other two packages which have the text relocations issues (Cliquer and R) have both caused serious problems. Since the problems are serious enough to stop Sage building fully, I can't say what will happen with PolyBoRi. \n\nIf the shared libraries can be deleted, then that would solve the problem. But one would need to delete `libgroebner* libpboriCudd*` and `libpolybori*` Is that an acceptable solution? \n\nBTW, I found a better test for the linker - see below. I will try to get a script added to the $SAGE_LOCAL/bin to test the linker that gcc uses. \n\n\n```/bin/sh \n# Assume the -v option when passed directly to the linker \n# will output \"GNU\" or \"Binutils\" if using the GNU linker. \n# Even if some other linker accepts -v (which is quite a common option\n# for software to support), we would not expect a non-GNU linker to \n# output the text \"GNU\" or \"Binutils\"\n\n# If that does not work, assume a native linker. \n\nif [ \"x`gcc -Wl,-v 2>&1 | egrep \\\"Binutils|GNU\\\"`\" != x ] ; then \n   # It must be a GNU linker, as it has output the word \"GNU\" or \"Binutils\"\n   echo \"GNU\" \nelif [ \"x`uname`\" = xSunOS ] ; then\n  # It must be Sun's linker, as it's not GNU and there are no other linkers\n  # used on Solaris. \n  echo \"Sun\"  \nelif [ \"x`uname`\" = xHP-UX ] ; then\n  # It must be HP's linker, as it's not GNU and there are no other linkers\n  # used on HP-UX \n  echo \"HP\"  \nelif [ \"x`uname`\" = xAIX ]; then\n  # It must be IBM's linker as it's not GNU and there are no other linkers\n  # used on AIX\n  echo \"IBM\"     \nelse\n  # A rare linker like Sun's on Linux, or Intel's on Linux might \n  # get here.  \n  echo \"Unknown\" \nfi\n```\n",
+    "body": "Replying to [comment:6 AlexanderDreyer]:\n> Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.\n\n\nTo be fair I am not aware of a problem caused by PolyBoRi.\n\nBut I know the other two packages which have the text relocations issues (Cliquer and R) have both caused serious problems. Since the problems are serious enough to stop Sage building fully, I can't say what will happen with PolyBoRi. \n\nIf the shared libraries can be deleted, then that would solve the problem. But one would need to delete `libgroebner* libpboriCudd*` and `libpolybori*` Is that an acceptable solution? \n\nBTW, I found a better test for the linker - see below. I will try to get a script added to the $SAGE_LOCAL/bin to test the linker that gcc uses. \n\n```/bin/sh \n# Assume the -v option when passed directly to the linker \n# will output \"GNU\" or \"Binutils\" if using the GNU linker. \n# Even if some other linker accepts -v (which is quite a common option\n# for software to support), we would not expect a non-GNU linker to \n# output the text \"GNU\" or \"Binutils\"\n\n# If that does not work, assume a native linker. \n\nif [ \"x`gcc -Wl,-v 2>&1 | egrep \\\"Binutils|GNU\\\"`\" != x ] ; then \n   # It must be a GNU linker, as it has output the word \"GNU\" or \"Binutils\"\n   echo \"GNU\" \nelif [ \"x`uname`\" = xSunOS ] ; then\n  # It must be Sun's linker, as it's not GNU and there are no other linkers\n  # used on Solaris. \n  echo \"Sun\"  \nelif [ \"x`uname`\" = xHP-UX ] ; then\n  # It must be HP's linker, as it's not GNU and there are no other linkers\n  # used on HP-UX \n  echo \"HP\"  \nelif [ \"x`uname`\" = xAIX ]; then\n  # It must be IBM's linker as it's not GNU and there are no other linkers\n  # used on AIX\n  echo \"IBM\"     \nelse\n  # A rare linker like Sun's on Linux, or Intel's on Linux might \n  # get here.  \n  echo \"Unknown\" \nfi\n```",
     "created_at": "2010-09-08T20:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -273,6 +265,7 @@ archive/issue_comments_097399.json:
 Replying to [comment:6 AlexanderDreyer]:
 > Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.
 
+
 To be fair I am not aware of a problem caused by PolyBoRi.
 
 But I know the other two packages which have the text relocations issues (Cliquer and R) have both caused serious problems. Since the problems are serious enough to stop Sage building fully, I can't say what will happen with PolyBoRi. 
@@ -280,7 +273,6 @@ But I know the other two packages which have the text relocations issues (Clique
 If the shared libraries can be deleted, then that would solve the problem. But one would need to delete `libgroebner* libpboriCudd*` and `libpolybori*` Is that an acceptable solution? 
 
 BTW, I found a better test for the linker - see below. I will try to get a script added to the $SAGE_LOCAL/bin to test the linker that gcc uses. 
-
 
 ```/bin/sh 
 # Assume the -v option when passed directly to the linker 
@@ -315,7 +307,6 @@ fi
 
 
 
-
 ---
 
 archive/issue_comments_097400.json:
@@ -342,7 +333,7 @@ I'll integrate your linke test in the next stable release.
 archive/issue_comments_097401.json:
 ```json
 {
-    "body": "Replying to [comment:8 AlexanderDreyer]:\n> It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.\n> BTW: how did you debig the textref issue on cliquer?\n\nI got there pretty quickly by changing the linker options to be the same as used on other platforms. I think R is going to be more of a challenge though - the R manual says R can't be built with gcc on 64-bit Solaris due to these problems. \n\nHowever, Leif makes an interesting remark at #9833, that a shared library should not have a main(). Do you by chance have a main in the shared library? He believes that is why Cliquer caused problems, though as I say, with different linker options the problem goes away. \n\n> I'll integrate your linker test in the next stable release.\n\nThank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\nDave",
+    "body": "Replying to [comment:8 AlexanderDreyer]:\n> It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.\n> BTW: how did you debig the textref issue on cliquer?\n\n\nI got there pretty quickly by changing the linker options to be the same as used on other platforms. I think R is going to be more of a challenge though - the R manual says R can't be built with gcc on 64-bit Solaris due to these problems. \n\nHowever, Leif makes an interesting remark at #9833, that a shared library should not have a main(). Do you by chance have a main in the shared library? He believes that is why Cliquer caused problems, though as I say, with different linker options the problem goes away. \n\n> I'll integrate your linker test in the next stable release.\n\n\nThank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\nDave",
     "created_at": "2010-09-08T20:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -355,11 +346,13 @@ Replying to [comment:8 AlexanderDreyer]:
 > It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.
 > BTW: how did you debig the textref issue on cliquer?
 
+
 I got there pretty quickly by changing the linker options to be the same as used on other platforms. I think R is going to be more of a challenge though - the R manual says R can't be built with gcc on 64-bit Solaris due to these problems. 
 
 However, Leif makes an interesting remark at #9833, that a shared library should not have a main(). Do you by chance have a main in the shared library? He believes that is why Cliquer caused problems, though as I say, with different linker options the problem goes away. 
 
 > I'll integrate your linker test in the next stable release.
+
 
 Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. 
 
@@ -372,7 +365,7 @@ Dave
 archive/issue_comments_097402.json:
 ```json
 {
-    "body": "Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\nSo, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\n> > I'll integrate your linker test in the next stable release.\n> \n> Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\nDo you mean the environment variable $CC? The polybori spkg already uses its value.\n\nMy best,\n   Alexander",
+    "body": "Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\nSo, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\n> > I'll integrate your linker test in the next stable release.\n\n> \n> Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\n\nDo you mean the environment variable $CC? The polybori spkg already uses its value.\n\nMy best,\n   Alexander",
     "created_at": "2010-09-09T10:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -386,8 +379,10 @@ Ok, it seems, that this issue could be fixed in likewise manner like you fixed i
 So, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)
 
 > > I'll integrate your linker test in the next stable release.
+
 > 
 > Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. 
+
 
 Do you mean the environment variable $CC? The polybori spkg already uses its value.
 
@@ -401,7 +396,7 @@ My best,
 archive/issue_comments_097403.json:
 ```json
 {
-    "body": "Replying to [comment:10 AlexanderDreyer]:\n> Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\nNo, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n\nIf it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n\nThere appears however to be several ways to write shared libraries which exhibit this problem - one way Leif said is to have a main(), though I've not confirmed that myself. Another is given on that Sun blog, by having data declared as constant. Another it to omit -fPIC when compiling, but I know you have not made that mistake. There are probably other ways. \n\n> So, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\nIt would be good if you could remove the shared libraries, since if any code links to them, it will cause problems. I don't know enough about your code, but if there is a main() getting into the shared library code, then it might be sensible to do as Leif says, and conditionally include the main() only when building a standard-alone executable, but not when building a shared library. In essence, something like:\n\n\n```\nfoobar1() {\n} \nfoobar2(){\n}\n\n#ifdef BUILDING_EXECUTABLE\n  main() {\n  foobar1();\n  foobar2();\n} \n#endif\n```\n\nand only include the compiler flag `-DBUILDING_EXECUTABLE` when building the code for the executable and not the libraries. \n\nI've no idea if that would work with your code or not. I really don't know where the problem is, and as you can see from that Sun blog, it is not the easiest thing to track down.  \n\n> > > I'll integrate your linker test in the next stable release.\n> > \n> > Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n> \n> Do you mean the environment variable $CC? The polybori spkg already uses its value.\n\nYes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \n \n> My best,\n>    Alexander\n\nDave",
+    "body": "Replying to [comment:10 AlexanderDreyer]:\n> Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\n\nNo, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n\nIf it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n\nThere appears however to be several ways to write shared libraries which exhibit this problem - one way Leif said is to have a main(), though I've not confirmed that myself. Another is given on that Sun blog, by having data declared as constant. Another it to omit -fPIC when compiling, but I know you have not made that mistake. There are probably other ways. \n\n> So, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\n\nIt would be good if you could remove the shared libraries, since if any code links to them, it will cause problems. I don't know enough about your code, but if there is a main() getting into the shared library code, then it might be sensible to do as Leif says, and conditionally include the main() only when building a standard-alone executable, but not when building a shared library. In essence, something like:\n\n```\nfoobar1() {\n} \nfoobar2(){\n}\n\n#ifdef BUILDING_EXECUTABLE\n  main() {\n  foobar1();\n  foobar2();\n} \n#endif\n```\nand only include the compiler flag `-DBUILDING_EXECUTABLE` when building the code for the executable and not the libraries. \n\nI've no idea if that would work with your code or not. I really don't know where the problem is, and as you can see from that Sun blog, it is not the easiest thing to track down.  \n\n> > > I'll integrate your linker test in the next stable release.\n\n> > \n> > Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\n> \n> Do you mean the environment variable $CC? The polybori spkg already uses its value.\n\n\nYes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \n \n> My best,\n>    Alexander\n\n\nDave",
     "created_at": "2010-09-09T11:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -413,6 +408,7 @@ archive/issue_comments_097403.json:
 Replying to [comment:10 AlexanderDreyer]:
 > Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.
 
+
 No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. 
 
 If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.
@@ -421,8 +417,8 @@ There appears however to be several ways to write shared libraries which exhibit
 
 > So, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)
 
-It would be good if you could remove the shared libraries, since if any code links to them, it will cause problems. I don't know enough about your code, but if there is a main() getting into the shared library code, then it might be sensible to do as Leif says, and conditionally include the main() only when building a standard-alone executable, but not when building a shared library. In essence, something like:
 
+It would be good if you could remove the shared libraries, since if any code links to them, it will cause problems. I don't know enough about your code, but if there is a main() getting into the shared library code, then it might be sensible to do as Leif says, and conditionally include the main() only when building a standard-alone executable, but not when building a shared library. In essence, something like:
 
 ```
 foobar1() {
@@ -437,21 +433,24 @@ foobar2(){
 } 
 #endif
 ```
-
 and only include the compiler flag `-DBUILDING_EXECUTABLE` when building the code for the executable and not the libraries. 
 
 I've no idea if that would work with your code or not. I really don't know where the problem is, and as you can see from that Sun blog, it is not the easiest thing to track down.  
 
 > > > I'll integrate your linker test in the next stable release.
+
 > > 
 > > Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. 
+
 > 
 > Do you mean the environment variable $CC? The polybori spkg already uses its value.
+
 
 Yes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. 
  
 > My best,
 >    Alexander
+
 
 Dave
 
@@ -462,7 +461,7 @@ Dave
 archive/issue_comments_097404.json:
 ```json
 {
-    "body": "> No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> \n> If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\nMaybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n(But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\n> Yes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \nAh, sorry, I didn't get that this was about the script.\n\nMy best,\n   Alexander",
+    "body": "> No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> \n> If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n\nMaybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n(But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\n> Yes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \n  \nAh, sorry, I didn't get that this was about the script.\n\nMy best,\n   Alexander",
     "created_at": "2010-09-09T11:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -474,11 +473,13 @@ archive/issue_comments_097404.json:
 > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. 
 > 
 > If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.
+
 Maybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.
 (But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.
 
 
 > Yes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. 
+  
 Ah, sorry, I didn't get that this was about the script.
 
 My best,
@@ -491,7 +492,7 @@ My best,
 archive/issue_comments_097405.json:
 ```json
 {
-    "body": "Replying to [comment:12 AlexanderDreyer]:\n> > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> > \n> > If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n> Maybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n\nI did not test the most recent package you are correct. \n\n> (But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\nI think if it works on t2.math, with no text relocations, it will work on OpenSolaris and Solaris 10 on x86 too. Generally speaking, if a problem occurs on one of these systems it occurs on them all. \n\nCan you just confirm the link to download the latest version and I will do so. I need to go out now, so will be unable to report for several hours\n\nDave",
+    "body": "Replying to [comment:12 AlexanderDreyer]:\n> > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> > \n> > If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n\n> Maybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n\nI did not test the most recent package you are correct. \n\n> (But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\n\nI think if it works on t2.math, with no text relocations, it will work on OpenSolaris and Solaris 10 on x86 too. Generally speaking, if a problem occurs on one of these systems it occurs on them all. \n\nCan you just confirm the link to download the latest version and I will do so. I need to go out now, so will be unable to report for several hours\n\nDave",
     "created_at": "2010-09-09T12:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9871",
     "type": "issue_comment",
@@ -504,11 +505,13 @@ Replying to [comment:12 AlexanderDreyer]:
 > > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. 
 > > 
 > > If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.
+
 > Maybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.
 
 I did not test the most recent package you are correct. 
 
 > (But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.
+
 
 
 I think if it works on t2.math, with no text relocations, it will work on OpenSolaris and Solaris 10 on x86 too. Generally speaking, if a problem occurs on one of these systems it occurs on them all. 

@@ -65,7 +65,7 @@ Changing status from new to assigned.
 archive/issue_comments_032597.json:
 ```json
 {
-    "body": "I wanted 4370-sage_library.patch - the attached patch also need to change since the ReST transformation will start with a clean repo, i.e. we will nuke the old repo. The bit from the patch that removes the old and no longer existing input files should go in.\n\nAnd by the way: my doc repo does not need any fixes:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg status\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg verify\nchecking changesets\nchecking manifests\ncrosschecking files in changesets and manifests\nchecking files\n149 files, 683 changesets, 964 total revisions\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$\n```\n\n\nCheers,\n\nMichael",
+    "body": "I wanted 4370-sage_library.patch - the attached patch also need to change since the ReST transformation will start with a clean repo, i.e. we will nuke the old repo. The bit from the patch that removes the old and no longer existing input files should go in.\n\nAnd by the way: my doc repo does not need any fixes:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg status\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$ hg verify\nchecking changesets\nchecking manifests\ncrosschecking files in changesets and manifests\nchecking files\n149 files, 683 changesets, 964 total revisions\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-04T21:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4441",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ checking files
 149 files, 683 changesets, 964 total revisions
 mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/doc$
 ```
-
 
 Cheers,
 
@@ -123,7 +122,7 @@ Michael
 archive/issue_comments_032599.json:
 ```json
 {
-    "body": "Hi, after the patch:\n\n```\nsusanne-webers-computer:~/Public/sage/sage-3.2.alpha2/devel/doc georgweber$ hg verify\nchecking changesets\nchecking manifests\ncrosschecking files in changesets and manifests\nchecking files\n185 files, 683 changesets, 999 total revisions\n```\n\nThat's 185 files now, and not only 149!\n\nThe main focus is to add essential files to the repo for the first time (!), but only those that are needed/important to be complete after doing a \"hg clone\".\n\nIMHO, the wording \"fixing the doc repo\" is appropriate if even the basic \"Makefile\" and \"Makefile.deps\" files are missing entirely from a spkg hg repository. Although formally the repo isn't broken, it is not of much use in this incomplete state.\n\nThe many, many other files not in the doc hg repo, but currently delivered with the doc spkg, should definitely \"jump over the blade\" in the ReST transition. But those 36 (=185-149) files addressed in the patch should not. (Another dozen or so of these 36 files could be disposed of easily, too, but that would require changes in the Makefile).\n\nPlease consider the patch as-is again, thanks!",
+    "body": "Hi, after the patch:\n\n```\nsusanne-webers-computer:~/Public/sage/sage-3.2.alpha2/devel/doc georgweber$ hg verify\nchecking changesets\nchecking manifests\ncrosschecking files in changesets and manifests\nchecking files\n185 files, 683 changesets, 999 total revisions\n```\nThat's 185 files now, and not only 149!\n\nThe main focus is to add essential files to the repo for the first time (!), but only those that are needed/important to be complete after doing a \"hg clone\".\n\nIMHO, the wording \"fixing the doc repo\" is appropriate if even the basic \"Makefile\" and \"Makefile.deps\" files are missing entirely from a spkg hg repository. Although formally the repo isn't broken, it is not of much use in this incomplete state.\n\nThe many, many other files not in the doc hg repo, but currently delivered with the doc spkg, should definitely \"jump over the blade\" in the ReST transition. But those 36 (=185-149) files addressed in the patch should not. (Another dozen or so of these 36 files could be disposed of easily, too, but that would require changes in the Makefile).\n\nPlease consider the patch as-is again, thanks!",
     "created_at": "2008-11-04T22:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4441",
     "type": "issue_comment",
@@ -142,7 +141,6 @@ crosschecking files in changesets and manifests
 checking files
 185 files, 683 changesets, 999 total revisions
 ```
-
 That's 185 files now, and not only 149!
 
 The main focus is to add essential files to the repo for the first time (!), but only those that are needed/important to be complete after doing a "hg clone".
@@ -204,7 +202,7 @@ apply only this one
 archive/issue_comments_032602.json:
 ```json
 {
-    "body": "Attachment [4441-modabvar.patch](tarball://root/attachments/some-uuid/ticket4441/4441-modabvar.patch) by GeorgSWeber created at 2008-11-05 07:02:14\n\nHi Michael, thanks for your patience.\n\nI'm still the newbie in the learning phase. Obviously, the current sage documentation repo does not miss files, but contains too many. It probably would have been sufficient in the past if only certain tex files would have been in there, like prog.tex.\n\n>Please post a patch removing the two stale files from ref/modabvar.tex \nHere you go.",
+    "body": "Attachment [4441-modabvar.patch](tarball://root/attachments/some-uuid/ticket4441/4441-modabvar.patch) by GeorgSWeber created at 2008-11-05 07:02:14\n\nHi Michael, thanks for your patience.\n\nI'm still the newbie in the learning phase. Obviously, the current sage documentation repo does not miss files, but contains too many. It probably would have been sufficient in the past if only certain tex files would have been in there, like prog.tex.\n\n>Please post a patch removing the two stale files from ref/modabvar.tex \n\nHere you go.",
     "created_at": "2008-11-05T07:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4441",
     "type": "issue_comment",
@@ -220,6 +218,7 @@ Hi Michael, thanks for your patience.
 I'm still the newbie in the learning phase. Obviously, the current sage documentation repo does not miss files, but contains too many. It probably would have been sufficient in the past if only certain tex files would have been in there, like prog.tex.
 
 >Please post a patch removing the two stale files from ref/modabvar.tex 
+
 Here you go.
 
 

@@ -114,7 +114,7 @@ Yes, I guess this does depend on 8217, although for review purposes it isn't in 
 archive/issue_comments_072331.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhampton]:\n> I don't optional packages require a vote, no.  Making a package standard does.\n> \n\nOkay.\n\n> Yes, I guess this does depend on 8217, although for review purposes it isn't in the sense that \"sage -i 4ti2.p0\" will work \n> wether or not its experimental or optional.\n\nWhat would you like the review to consist of? \n\nI have read the documentation and used the functions in the spkg and the sandpile.sage file. Is sandpile.sage in this spkg?",
+    "body": "Replying to [comment:4 mhampton]:\n> I don't optional packages require a vote, no.  Making a package standard does.\n> \n\n\nOkay.\n\n> Yes, I guess this does depend on 8217, although for review purposes it isn't in the sense that \"sage -i 4ti2.p0\" will work \n> wether or not its experimental or optional.\n\n\nWhat would you like the review to consist of? \n\nI have read the documentation and used the functions in the spkg and the sandpile.sage file. Is sandpile.sage in this spkg?",
     "created_at": "2010-02-09T21:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -127,10 +127,12 @@ Replying to [comment:4 mhampton]:
 > I don't optional packages require a vote, no.  Making a package standard does.
 > 
 
+
 Okay.
 
 > Yes, I guess this does depend on 8217, although for review purposes it isn't in the sense that "sage -i 4ti2.p0" will work 
 > wether or not its experimental or optional.
+
 
 What would you like the review to consist of? 
 
@@ -161,7 +163,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072333.json:
 ```json
 {
-    "body": "My understanding was that experimental packages did not require a vote, but optional did. As such, this would require a vote. \n\nThis is severely broken on Solaris, but reports it is successfully installed. One obvious problem is the use of a non-POSIX option to grep. \n\n\n```\nsandpile-2.0/src/\nsandpile-2.0/src/sandpile.py\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC) \n****************************************************\nInstalling glpk-4.38.p4\nCalling sage-spkg on glpk-4.38.p4\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nglpk-4.38.p4\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of glpk-4.38.p4\n/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-spkg: file glpk-4.38.p4 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of glpk-4.38.p4\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 54, in <module>\n    packages = spkg_list(repository)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 43, in spkg_list\n    data = urllib2.urlopen(web_url)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 124, in urlopen\n    return _opener.open(url, data, timeout)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 389, in open\n    response = self._open(req, data)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 407, in _open\n    '_open', req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 367, in _call_chain\n    result = func(*args)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1146, in http_open\n    return self.do_open(httplib.HTTPConnection, req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1121, in do_open\n    raise URLError(err)\nurllib2.URLError: <urlopen error [Errno 8] node name or service name not known>\n\nInstalling 4ti2.p0\nCalling sage-spkg on 4ti2.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\n4ti2.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of 4ti2.p0\n/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-spkg: file 4ti2.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of 4ti2.p0\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 54, in <module>\n    packages = spkg_list(repository)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 43, in spkg_list\n    data = urllib2.urlopen(web_url)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 124, in urlopen\n    return _opener.open(url, data, timeout)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 389, in open\n    response = self._open(req, data)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 407, in _open\n    '_open', req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 367, in _call_chain\n    result = func(*args)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1146, in http_open\n    return self.do_open(httplib.HTTPConnection, req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1121, in do_open\n    raise URLError(err)\nurllib2.URLError: <urlopen error [Errno 8] node name or service name not known>\n\n\nreal    0m1.394s\nuser    0m0.631s\nsys     0m0.710s\nSuccessfully installed sandpile-2.0\n```\n\n\nIt would need to be able to build on Solaris before it could be incorporated into Sage\n\nThere's general information about building on Solaris at\n\n  http://wiki.sagemath.org/solaris\n\n Information specifically for 't2' at\n\n  http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\n Both the source (4.3.0.1 is the latest to build on Solaris) and a binary\n which will run on any SPARC can be found at http://www.sagemath.org\n /download-source.html\n\n Dave",
+    "body": "My understanding was that experimental packages did not require a vote, but optional did. As such, this would require a vote. \n\nThis is severely broken on Solaris, but reports it is successfully installed. One obvious problem is the use of a non-POSIX option to grep. \n\n```\nsandpile-2.0/src/\nsandpile-2.0/src/sandpile.py\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC) \n****************************************************\nInstalling glpk-4.38.p4\nCalling sage-spkg on glpk-4.38.p4\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nglpk-4.38.p4\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of glpk-4.38.p4\n/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-spkg: file glpk-4.38.p4 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of glpk-4.38.p4\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 54, in <module>\n    packages = spkg_list(repository)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 43, in spkg_list\n    data = urllib2.urlopen(web_url)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 124, in urlopen\n    return _opener.open(url, data, timeout)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 389, in open\n    response = self._open(req, data)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 407, in _open\n    '_open', req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 367, in _call_chain\n    result = func(*args)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1146, in http_open\n    return self.do_open(httplib.HTTPConnection, req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1121, in do_open\n    raise URLError(err)\nurllib2.URLError: <urlopen error [Errno 8] node name or service name not known>\n\nInstalling 4ti2.p0\nCalling sage-spkg on 4ti2.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\n4ti2.p0\nMachine:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of 4ti2.p0\n/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-spkg: file 4ti2.p0 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of 4ti2.p0\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 54, in <module>\n    packages = spkg_list(repository)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/bin/sage-latest-online-package\", line 43, in spkg_list\n    data = urllib2.urlopen(web_url)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 124, in urlopen\n    return _opener.open(url, data, timeout)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 389, in open\n    response = self._open(req, data)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 407, in _open\n    '_open', req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 367, in _call_chain\n    result = func(*args)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1146, in http_open\n    return self.do_open(httplib.HTTPConnection, req)\n  File \"/export/home/drkirkby/sage-4.3.3.alpha1/local/lib/python/urllib2.py\", line 1121, in do_open\n    raise URLError(err)\nurllib2.URLError: <urlopen error [Errno 8] node name or service name not known>\n\n\nreal    0m1.394s\nuser    0m0.631s\nsys     0m0.710s\nSuccessfully installed sandpile-2.0\n```\n\nIt would need to be able to build on Solaris before it could be incorporated into Sage\n\nThere's general information about building on Solaris at\n\n  http://wiki.sagemath.org/solaris\n\n Information specifically for 't2' at\n\n  http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\n Both the source (4.3.0.1 is the latest to build on Solaris) and a binary\n which will run on any SPARC can be found at http://www.sagemath.org\n /download-source.html\n\n Dave",
     "created_at": "2010-02-22T00:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -173,7 +175,6 @@ archive/issue_comments_072333.json:
 My understanding was that experimental packages did not require a vote, but optional did. As such, this would require a vote. 
 
 This is severely broken on Solaris, but reports it is successfully installed. One obvious problem is the use of a non-POSIX option to grep. 
-
 
 ```
 sandpile-2.0/src/
@@ -262,7 +263,6 @@ sys     0m0.710s
 Successfully installed sandpile-2.0
 ```
 
-
 It would need to be able to build on Solaris before it could be incorporated into Sage
 
 There's general information about building on Solaris at
@@ -306,7 +306,7 @@ I'm not sure where these grep calls are coming from, they look like the installa
 archive/issue_comments_072335.json:
 ```json
 {
-    "body": "Replying to [comment:8 mhampton]:\n> No, optional packages do not require a vote. \n\nThank you for clarification on this. \n\nSo what (if any) additional requirements are there for 'optional' as opposed to 'experimental' packages? \n\nhttp://www.sagemath.org/packages/optional/\n\ngives no warnings that the optional packages may be seriously broken, whereas 'experimental'\n\nhttp://www.sagemath.org/packages/experimental/\n\nhas in great big bold letters that **These are EXPERIMENTAL! They probably won't work at all for you! Use at your own risk! Many of these have *never* been successfully built on any platform! (But still, if you can figure out how to build them, I'd like to know about it.) These also may not be available under a GPL-compatible license**\n\n> Making a package standard does.  \n\nYes, I was aware of that. There would be complete chaos if not. \n\n> However, the expectations for an optional package keep rising.  I think building on Solaris is probably considered a requirement.\n \nI'd hope so. http://www.sagemath.org/doc/developer/inclusion.html says \n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nI feel at the minute that I'm personally sharing too much responsibility for making sure the packages don't break on Solaris. William sends me a recent email:\n\n'''David,\n\n**(1) I couldn't get anywhere building Sage on x86 Solaris on skynet (fulvia).  Can you?  This was pretty annoying to the people that bought us fulvia.**\n\n**(2) Sun wants to know if we have a Sage available yet for t2.  See below.**\n\n**I really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...**\n\nUnfortunately, without more testing on Solaris, this is just not going to happen. I'm personally not in a position to test everyones patches on Solaris. \n\n> I'm not sure where these grep calls are coming from, they look like the installation script uses them somehow when adding glpk and 4ti2 but it just uses \"sage -i\".  \n\nMe neither. But neither do I have the time to resolve this. A quick check on the man page for 'grep' on Linux shows the option 'o' being:\n\n\n```\n      -o, --only-matching\n              Print  only  the  matched  (non-empty) parts of a matching line,\n              with each such part on a separate output line.\n```\n\n\nI'll leave it to others to work out how to implement this in a POSIX compatible way. The POSIX options for 'grep' can be found at http://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html \n\nI hope these comments are helpful, and I'll answer any questions I can, but I'm simply not in a position to sort out these issues. \n\n**PS I realise the author of this package has not requested any help on Solaris, so I'm not suggesting he is personally to blame for my frustration.**\n\nDave",
+    "body": "Replying to [comment:8 mhampton]:\n> No, optional packages do not require a vote. \n\n\nThank you for clarification on this. \n\nSo what (if any) additional requirements are there for 'optional' as opposed to 'experimental' packages? \n\nhttp://www.sagemath.org/packages/optional/\n\ngives no warnings that the optional packages may be seriously broken, whereas 'experimental'\n\nhttp://www.sagemath.org/packages/experimental/\n\nhas in great big bold letters that **These are EXPERIMENTAL! They probably won't work at all for you! Use at your own risk! Many of these have *never* been successfully built on any platform! (But still, if you can figure out how to build them, I'd like to know about it.) These also may not be available under a GPL-compatible license**\n\n> Making a package standard does.  \n\n\nYes, I was aware of that. There would be complete chaos if not. \n\n> However, the expectations for an optional package keep rising.  I think building on Solaris is probably considered a requirement.\n\n \nI'd hope so. http://www.sagemath.org/doc/developer/inclusion.html says \n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nI feel at the minute that I'm personally sharing too much responsibility for making sure the packages don't break on Solaris. William sends me a recent email:\n\n'''David,\n\n**(1) I couldn't get anywhere building Sage on x86 Solaris on skynet (fulvia).  Can you?  This was pretty annoying to the people that bought us fulvia.**\n\n**(2) Sun wants to know if we have a Sage available yet for t2.  See below.**\n\n**I really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...**\n\nUnfortunately, without more testing on Solaris, this is just not going to happen. I'm personally not in a position to test everyones patches on Solaris. \n\n> I'm not sure where these grep calls are coming from, they look like the installation script uses them somehow when adding glpk and 4ti2 but it just uses \"sage -i\".  \n\n\nMe neither. But neither do I have the time to resolve this. A quick check on the man page for 'grep' on Linux shows the option 'o' being:\n\n```\n      -o, --only-matching\n              Print  only  the  matched  (non-empty) parts of a matching line,\n              with each such part on a separate output line.\n```\n\nI'll leave it to others to work out how to implement this in a POSIX compatible way. The POSIX options for 'grep' can be found at http://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html \n\nI hope these comments are helpful, and I'll answer any questions I can, but I'm simply not in a position to sort out these issues. \n\n**PS I realise the author of this package has not requested any help on Solaris, so I'm not suggesting he is personally to blame for my frustration.**\n\nDave",
     "created_at": "2010-02-22T15:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -317,6 +317,7 @@ archive/issue_comments_072335.json:
 
 Replying to [comment:8 mhampton]:
 > No, optional packages do not require a vote. 
+
 
 Thank you for clarification on this. 
 
@@ -332,9 +333,11 @@ has in great big bold letters that **These are EXPERIMENTAL! They probably won't
 
 > Making a package standard does.  
 
+
 Yes, I was aware of that. There would be complete chaos if not. 
 
 > However, the expectations for an optional package keep rising.  I think building on Solaris is probably considered a requirement.
+
  
 I'd hope so. http://www.sagemath.org/doc/developer/inclusion.html says 
 
@@ -354,15 +357,14 @@ Unfortunately, without more testing on Solaris, this is just not going to happen
 
 > I'm not sure where these grep calls are coming from, they look like the installation script uses them somehow when adding glpk and 4ti2 but it just uses "sage -i".  
 
-Me neither. But neither do I have the time to resolve this. A quick check on the man page for 'grep' on Linux shows the option 'o' being:
 
+Me neither. But neither do I have the time to resolve this. A quick check on the man page for 'grep' on Linux shows the option 'o' being:
 
 ```
       -o, --only-matching
               Print  only  the  matched  (non-empty) parts of a matching line,
               with each such part on a separate output line.
 ```
-
 
 I'll leave it to others to work out how to implement this in a POSIX compatible way. The POSIX options for 'grep' can be found at http://www.opengroup.org/onlinepubs/9699919799/utilities/grep.html 
 
@@ -419,7 +421,7 @@ http://sage.math.washington.edu/home/mhampton/sandpile-2.1.spkg
 archive/issue_comments_072338.json:
 ```json
 {
-    "body": "Replying to [comment:10 mhampton]:\n> I am quite frustrated by the lack of movement on this.  \n> \n> A new package for the 2.1 version of the sandpile module is at:\n> \n> http://sage.math.washington.edu/home/mhampton/sandpile-2.1.spkg\n> \n\nI'm happy to review this over the winter break. Please ping me if I forget.",
+    "body": "Replying to [comment:10 mhampton]:\n> I am quite frustrated by the lack of movement on this.  \n> \n> A new package for the 2.1 version of the sandpile module is at:\n> \n> http://sage.math.washington.edu/home/mhampton/sandpile-2.1.spkg\n> \n\n\nI'm happy to review this over the winter break. Please ping me if I forget.",
     "created_at": "2010-11-25T17:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -435,6 +437,7 @@ Replying to [comment:10 mhampton]:
 > 
 > http://sage.math.washington.edu/home/mhampton/sandpile-2.1.spkg
 > 
+
 
 I'm happy to review this over the winter break. Please ping me if I forget.
 
@@ -540,7 +543,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_072343.json:
 ```json
 {
-    "body": "There's no \n\n\n```\n## Special Update/Build Instructions\n```\n\n\nsection in the spkg-install file. It would be worth adding it. There's no spkg-check file. Are there any self-tests? \n\nThis bit of code is a bit dubious. First it's not a good idea to test on an empty string (though I'm aware lots of bits of Sage do it, but also there's an unnecessary semi-colon. \n\n\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\n\nBetter would be\n\n\n```\nif [ \"x$SAGE_LOCAL\" = x ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\"\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\n\nThat semi-colon obviously got put in one file at one point, and has been copy/pasted to lots of spkg-install files, but it serves no useful function. \n\nI believe an earlier version of this did not work on Solaris. Has anyone checked if this one does work? I don't see any comments to suggest the issue was resolved. \n\nDave",
+    "body": "There's no \n\n```\n## Special Update/Build Instructions\n```\n\nsection in the spkg-install file. It would be worth adding it. There's no spkg-check file. Are there any self-tests? \n\nThis bit of code is a bit dubious. First it's not a good idea to test on an empty string (though I'm aware lots of bits of Sage do it, but also there's an unnecessary semi-colon. \n\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nBetter would be\n\n```\nif [ \"x$SAGE_LOCAL\" = x ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\"\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nThat semi-colon obviously got put in one file at one point, and has been copy/pasted to lots of spkg-install files, but it serves no useful function. \n\nI believe an earlier version of this did not work on Solaris. Has anyone checked if this one does work? I don't see any comments to suggest the issue was resolved. \n\nDave",
     "created_at": "2011-01-02T01:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -551,16 +554,13 @@ archive/issue_comments_072343.json:
 
 There's no 
 
-
 ```
 ## Special Update/Build Instructions
 ```
 
-
 section in the spkg-install file. It would be worth adding it. There's no spkg-check file. Are there any self-tests? 
 
 This bit of code is a bit dubious. First it's not a good idea to test on an empty string (though I'm aware lots of bits of Sage do it, but also there's an unnecessary semi-colon. 
-
 
 
 ```
@@ -571,9 +571,7 @@ if [ "$SAGE_LOCAL" = "" ]; then
 fi
 ```
 
-
 Better would be
-
 
 ```
 if [ "x$SAGE_LOCAL" = x ]; then
@@ -582,7 +580,6 @@ if [ "x$SAGE_LOCAL" = x ]; then
    exit 1
 fi
 ```
-
 
 That semi-colon obviously got put in one file at one point, and has been copy/pasted to lots of spkg-install files, but it serves no useful function. 
 
@@ -597,7 +594,7 @@ Dave
 archive/issue_comments_072344.json:
 ```json
 {
-    "body": "I installed this spkg on a 10.6.5 mac running sage 4.6.1.rc0. This seemed to create a number of failed doctests. I'm guessing it is because the spkg-install file has the line\n\n\n```\nsage -i glpk-4.42.p0\n```\n\nwhereas the standard version included with Sage is 4.44, according to http://www.sagemath.org/packages/standard/. Is there a reason why glpk-4.42 is loaded? If not, then this line should be deleted.",
+    "body": "I installed this spkg on a 10.6.5 mac running sage 4.6.1.rc0. This seemed to create a number of failed doctests. I'm guessing it is because the spkg-install file has the line\n\n```\nsage -i glpk-4.42.p0\n```\nwhereas the standard version included with Sage is 4.44, according to http://www.sagemath.org/packages/standard/. Is there a reason why glpk-4.42 is loaded? If not, then this line should be deleted.",
     "created_at": "2011-01-03T12:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
@@ -608,11 +605,9 @@ archive/issue_comments_072344.json:
 
 I installed this spkg on a 10.6.5 mac running sage 4.6.1.rc0. This seemed to create a number of failed doctests. I'm guessing it is because the spkg-install file has the line
 
-
 ```
 sage -i glpk-4.42.p0
 ```
-
 whereas the standard version included with Sage is 4.44, according to http://www.sagemath.org/packages/standard/. Is there a reason why glpk-4.42 is loaded? If not, then this line should be deleted.
 
 

@@ -157,7 +157,7 @@ Changing keywords from "" to "animate, ImageMagick".
 archive/issue_comments_004520.json:
 ```json
 {
-    "body": "I'm attaching a patch; it depends on #4216.\n\nWith this patch, if 'convert' is not found, I get an error message like this:\n\n```\n/usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\nfound\n\nError: ImageMagick does not appear to be installed. Saving an\nanimation to a GIF file or displaying an animation requires\nImageMagick, so please install it and try again.\n\nSee www.imagemagick.org, for example.\n```\n\nSo the first line is cryptic (but could be useful in debugging, if the problem is something other than a missing 'convert'), while the rest of the message is friendlier.",
+    "body": "I'm attaching a patch; it depends on #4216.\n\nWith this patch, if 'convert' is not found, I get an error message like this:\n\n```\n/usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\nfound\n\nError: ImageMagick does not appear to be installed. Saving an\nanimation to a GIF file or displaying an animation requires\nImageMagick, so please install it and try again.\n\nSee www.imagemagick.org, for example.\n```\nSo the first line is cryptic (but could be useful in debugging, if the problem is something other than a missing 'convert'), while the rest of the message is friendlier.",
     "created_at": "2008-09-30T17:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ ImageMagick, so please install it and try again.
 
 See www.imagemagick.org, for example.
 ```
-
 So the first line is cryptic (but could be useful in debugging, if the problem is something other than a missing 'convert'), while the rest of the message is friendlier.
 
 
@@ -190,7 +189,7 @@ So the first line is cryptic (but could be useful in debugging, if the problem i
 archive/issue_comments_004521.json:
 ```json
 {
-    "body": "Positive review on the patch. One small issue is that the animate.py doctest fails if convert is not installed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t devel//sage/sage/plot/animate.py \nsage -t  devel/sage/sage/plot/animate.py                    \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/animate.py\", line 59:\n    sage: a.show()\nExpected nothing\nGot:\n    <BLANKLINE>\n    Error: ImageMagick does not appear to be installed. Saving an\n    animation to a GIF file or displaying an animation requires\n    ImageMagick, so please install it and try again.\n    <BLANKLINE>\n    See www.imagemagick.org, for example.\n**********************************************************************\n```\n\n\nOne way around this would be to make the doctest optional. \n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Positive review on the patch. One small issue is that the animate.py doctest fails if convert is not installed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2$ ./sage -t devel//sage/sage/plot/animate.py \nsage -t  devel/sage/sage/plot/animate.py                    \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/animate.py\", line 59:\n    sage: a.show()\nExpected nothing\nGot:\n    <BLANKLINE>\n    Error: ImageMagick does not appear to be installed. Saving an\n    animation to a GIF file or displaying an animation requires\n    ImageMagick, so please install it and try again.\n    <BLANKLINE>\n    See www.imagemagick.org, for example.\n**********************************************************************\n```\n\nOne way around this would be to make the doctest optional. \n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-09-30T17:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
@@ -218,7 +217,6 @@ Got:
 **********************************************************************
 ```
 
-
 One way around this would be to make the doctest optional. 
 
 Thoughts?
@@ -234,7 +232,7 @@ Michael
 archive/issue_comments_004522.json:
 ```json
 {
-    "body": "> One way around this would be to make the doctest optional. \n\nThis seems okay to me, but I also don't know enough about doctesting to know if there is any other choice.",
+    "body": "> One way around this would be to make the doctest optional. \n\n\nThis seems okay to me, but I also don't know enough about doctesting to know if there is any other choice.",
     "created_at": "2008-09-30T17:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/767",
     "type": "issue_comment",
@@ -244,6 +242,7 @@ archive/issue_comments_004522.json:
 ```
 
 > One way around this would be to make the doctest optional. 
+
 
 This seems okay to me, but I also don't know enough about doctesting to know if there is any other choice.
 

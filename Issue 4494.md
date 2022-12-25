@@ -3,7 +3,7 @@
 archive/issues_004494.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis should be easy to fix:\n\n\n```\n\n\nsage:  a=random_matrix(ZZ,2)\nsage: a.conjugate()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/grout/jason/byu/papers/minrank-f2r3-laa/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.conjugate (sage/matrix/matrix2.c:24447)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'conjugate'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4494\n\n",
+    "body": "Assignee: tbd\n\nThis should be easy to fix:\n\n```\n\n\nsage:  a=random_matrix(ZZ,2)\nsage: a.conjugate()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/grout/jason/byu/papers/minrank-f2r3-laa/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.conjugate (sage/matrix/matrix2.c:24447)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'conjugate'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4494\n\n",
     "created_at": "2008-11-11T18:47:01Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 This should be easy to fix:
 
-
 ```
 
 
@@ -35,7 +34,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.integer.Integer' object has no attribute 'conjugate'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4494

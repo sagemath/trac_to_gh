@@ -3,7 +3,7 @@
 archive/issues_009429.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt @robertwb\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt @robertwb\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
     "created_at": "2010-07-05T10:44:05Z",
     "labels": [
         "component: algebra",
@@ -35,7 +35,6 @@ sage: type(q)
 sage: type(q^2)
 <class 'sage.rings.quotient_ring_element.QuotientRingElement'>
 ```
-
 
 Expected behaviour: `q^2` should have the same (derived) type as `q`.
 
@@ -107,7 +106,7 @@ archive/issue_events_023299.json:
 archive/issue_comments_089862.json:
 ```json
 {
-    "body": "I think\n\n```\nP = self.parent()\nreturn P._element_constructor_(...)\n```\n\nis the way to go here according to http://wiki.sagemath.org/coercion (if it does not work, that this is a bug that should be fixed ;-))",
+    "body": "I think\n\n```\nP = self.parent()\nreturn P._element_constructor_(...)\n```\nis the way to go here according to http://wiki.sagemath.org/coercion (if it does not work, that this is a bug that should be fixed ;-))",
     "created_at": "2010-07-05T13:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -122,7 +121,6 @@ I think
 P = self.parent()
 return P._element_constructor_(...)
 ```
-
 is the way to go here according to http://wiki.sagemath.org/coercion (if it does not work, that this is a bug that should be fixed ;-))
 
 
@@ -132,7 +130,7 @@ is the way to go here according to http://wiki.sagemath.org/coercion (if it does
 archive/issue_comments_089863.json:
 ```json
 {
-    "body": "Actually, I should have probably written\n\n```\nP = self.parent()\nreturn P(...)\n```\n\nto eliminate the use of private methods completely.",
+    "body": "Actually, I should have probably written\n\n```\nP = self.parent()\nreturn P(...)\n```\nto eliminate the use of private methods completely.",
     "created_at": "2010-07-06T15:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -147,7 +145,6 @@ Actually, I should have probably written
 P = self.parent()
 return P(...)
 ```
-
 to eliminate the use of private methods completely.
 
 
@@ -175,7 +172,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089865.json:
 ```json
 {
-    "body": "I have added a couple of printing lines into the quotient ring and got the following:\n\n```\nsage: FF = FiniteField(7)\nsage: P.<x> = PolynomialRing(FF)\n_coerce_map_from_(Finite Field of size 7, <type 'int'>)\n_coerce_map_from_(Finite Field of size 7, Integer Ring)\n_element_constructor_(Finite Field of size 7, 0)\nsage: x + 1\n_element_constructor_(Finite Field of size 7, 1)\n...\nTypeError: unsupported operand parent(s) for '+':\n'Univariate Polynomial Ring in x over Finite Field of size 7'\nand 'Integer Ring'\nsage: isinstance(FF, sage.rings.quotient_ring.QuotientRing_generic)\nTrue\n```\n",
+    "body": "I have added a couple of printing lines into the quotient ring and got the following:\n\n```\nsage: FF = FiniteField(7)\nsage: P.<x> = PolynomialRing(FF)\n_coerce_map_from_(Finite Field of size 7, <type 'int'>)\n_coerce_map_from_(Finite Field of size 7, Integer Ring)\n_element_constructor_(Finite Field of size 7, 0)\nsage: x + 1\n_element_constructor_(Finite Field of size 7, 1)\n...\nTypeError: unsupported operand parent(s) for '+':\n'Univariate Polynomial Ring in x over Finite Field of size 7'\nand 'Integer Ring'\nsage: isinstance(FF, sage.rings.quotient_ring.QuotientRing_generic)\nTrue\n```",
     "created_at": "2010-07-06T16:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -201,7 +198,6 @@ and 'Integer Ring'
 sage: isinstance(FF, sage.rings.quotient_ring.QuotientRing_generic)
 True
 ```
-
 
 
 
@@ -295,7 +291,7 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/efe93107ce004d3b
 archive/issue_comments_089870.json:
 ```json
 {
-    "body": "The reason why `first_attempt.patch` breaks so many things is because the classes `QuotientRing_generic` -> `IntegerModRing_generic` -> `FiniteField_prime_modn` do not work within the new coercion model. \n\nRobert wrote on sage-devel:\n> What should have happened is that QuotientRing should be an abstract class, and with subclasses QuotientRingGeneric and FiniteField/IntegerModRing/etc. as the latter end up \n ignoring/subverting the implementation of the former. This would make things like this much easier to change\n\nWe should eventually port this to the new coercion model, but it seems to be a bigger effort. I don't want to wait with the current toric varieties code until this is done. So I'd like to go ahead with the \"wrong\" coercion in #9326, and leave this ticket for later.",
+    "body": "The reason why `first_attempt.patch` breaks so many things is because the classes `QuotientRing_generic` -> `IntegerModRing_generic` -> `FiniteField_prime_modn` do not work within the new coercion model. \n\nRobert wrote on sage-devel:\n> What should have happened is that QuotientRing should be an abstract class, and with subclasses QuotientRingGeneric and FiniteField/IntegerModRing/etc. as the latter end up \n\n ignoring/subverting the implementation of the former. This would make things like this much easier to change\n\nWe should eventually port this to the new coercion model, but it seems to be a bigger effort. I don't want to wait with the current toric varieties code until this is done. So I'd like to go ahead with the \"wrong\" coercion in #9326, and leave this ticket for later.",
     "created_at": "2010-07-15T17:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -308,6 +304,7 @@ The reason why `first_attempt.patch` breaks so many things is because the classe
 
 Robert wrote on sage-devel:
 > What should have happened is that QuotientRing should be an abstract class, and with subclasses QuotientRingGeneric and FiniteField/IntegerModRing/etc. as the latter end up 
+
  ignoring/subverting the implementation of the former. This would make things like this much easier to change
 
 We should eventually port this to the new coercion model, but it seems to be a bigger effort. I don't want to wait with the current toric varieties code until this is done. So I'd like to go ahead with the "wrong" coercion in #9326, and leave this ticket for later.
@@ -545,7 +542,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089876.json:
 ```json
 {
-    "body": "I've \"reverted\" back to using the `self.__class__(self.parent(), x)` since this (as I remember) is the \"correct\" way to do things as it does not go through the coercion model. So can someone double-check to make sure doctests pass?\n----\nNew commits:",
+    "body": "I've \"reverted\" back to using the `self.__class__(self.parent(), x)` since this (as I remember) is the \"correct\" way to do things as it does not go through the coercion model. So can someone double-check to make sure doctests pass?\n\n---\nNew commits:",
     "created_at": "2014-06-22T06:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
@@ -555,7 +552,8 @@ archive/issue_comments_089876.json:
 ```
 
 I've "reverted" back to using the `self.__class__(self.parent(), x)` since this (as I remember) is the "correct" way to do things as it does not go through the coercion model. So can someone double-check to make sure doctests pass?
-----
+
+---
 New commits:
 
 

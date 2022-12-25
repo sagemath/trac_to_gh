@@ -60,7 +60,7 @@ Changing keywords from "" to "X3D".
 archive/issue_comments_026203.json:
 ```json
 {
-    "body": "Here is a first step: transparency in x3d. Please review #7744 for the export of x3d files.\n----\nNew commits:",
+    "body": "Here is a first step: transparency in x3d. Please review #7744 for the export of x3d files.\n\n---\nNew commits:",
     "created_at": "2014-12-27T17:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
@@ -70,7 +70,8 @@ archive/issue_comments_026203.json:
 ```
 
 Here is a first step: transparency in x3d. Please review #7744 for the export of x3d files.
-----
+
+---
 New commits:
 
 

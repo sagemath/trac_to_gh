@@ -3,7 +3,7 @@
 archive/issues_006464.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: Unicode, notebook\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e3b8dce14b6375bf) thread, there is a patch to fix a Unicode problem related to typesetting Korean in notebook worksheets. Here's an essential snippet:\n\n```\nSo I find the python code and modify it.\n\nsageroot/devel/sage/sage/server/notebook/cell.py:211\n\n211 : </script>\"\"\"%(self.__id,self.__id,self.__text)\n\n=>\n\n211 : </script>\"\"\"%(self.__id,self.__id,((self.__text).decode\n('utf-8')).encode('ascii', 'xmlcharrefreplace'))\n```\n\nThis might be related to #6417.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6464\n\n",
+    "body": "Assignee: boothby\n\nKeywords: Unicode, notebook\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e3b8dce14b6375bf) thread, there is a patch to fix a Unicode problem related to typesetting Korean in notebook worksheets. Here's an essential snippet:\n\n```\nSo I find the python code and modify it.\n\nsageroot/devel/sage/sage/server/notebook/cell.py:211\n\n211 : </script>\"\"\"%(self.__id,self.__id,self.__text)\n\n=>\n\n211 : </script>\"\"\"%(self.__id,self.__id,((self.__text).decode\n('utf-8')).encode('ascii', 'xmlcharrefreplace'))\n```\nThis might be related to #6417.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6464\n\n",
     "created_at": "2009-07-05T02:06:05Z",
     "labels": [
         "component: notebook"
@@ -33,7 +33,6 @@ sageroot/devel/sage/sage/server/notebook/cell.py:211
 211 : </script>"""%(self.__id,self.__id,((self.__text).decode
 ('utf-8')).encode('ascii', 'xmlcharrefreplace'))
 ```
-
 This might be related to #6417.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6464
@@ -100,7 +99,7 @@ I suggest that we should apply this patch.
 archive/issue_comments_052138.json:
 ```json
 {
-    "body": "Replying to [comment:3 mora]:\n> I suggest that we should apply this patch.\nI don't see any patch file attached to this ticket.",
+    "body": "Replying to [comment:3 mora]:\n> I suggest that we should apply this patch.\n\nI don't see any patch file attached to this ticket.",
     "created_at": "2009-08-07T00:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -111,6 +110,7 @@ archive/issue_comments_052138.json:
 
 Replying to [comment:3 mora]:
 > I suggest that we should apply this patch.
+
 I don't see any patch file attached to this ticket.
 
 
@@ -120,7 +120,7 @@ I don't see any patch file attached to this ticket.
 archive/issue_comments_052139.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> Replying to [comment:3 mora]:\n> > I suggest that we should apply this patch.\n> I don't see any patch file attached to this ticket.\nIn the description mvngu suggested a little modofication of the file cell.py. I will make a patch as soon as I arrive home.",
+    "body": "Replying to [comment:4 mvngu]:\n> Replying to [comment:3 mora]:\n> > I suggest that we should apply this patch.\n\n> I don't see any patch file attached to this ticket.\nIn the description mvngu suggested a little modofication of the file cell.py. I will make a patch as soon as I arrive home.",
     "created_at": "2009-08-07T12:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -132,6 +132,7 @@ archive/issue_comments_052139.json:
 Replying to [comment:4 mvngu]:
 > Replying to [comment:3 mora]:
 > > I suggest that we should apply this patch.
+
 > I don't see any patch file attached to this ticket.
 In the description mvngu suggested a little modofication of the file cell.py. I will make a patch as soon as I arrive home.
 
@@ -216,7 +217,7 @@ The patch `trac_6464-unicode.patch` gives proper credit to NoSyu, the person who
 archive/issue_comments_052144.json:
 ```json
 {
-    "body": "Either of the patches `12659.patch` or `trac_6464-unicode.patch` results in a doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/sandbox-1/sage-4.1.1.rc2/devel/sage-main/sage/server/simpl\\\ne/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s'\\\n % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    ^Ae2\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/sandbox-1/sage-4.1.1.rc2/tmp\\\n/.doctest_twist.py\n         [9.5 s]\n```\n",
+    "body": "Either of the patches `12659.patch` or `trac_6464-unicode.patch` results in a doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/sandbox-1/sage-4.1.1.rc2/devel/sage-main/sage/server/simpl\\\ne/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s'\\\n % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    ^Ae2\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/sandbox-1/sage-4.1.1.rc2/tmp\\\n/.doctest_twist.py\n         [9.5 s]\n```",
     "created_at": "2009-08-11T22:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -261,13 +262,12 @@ For whitespace errors, see the file /scratch/mvngu/sandbox-1/sage-4.1.1.rc2/tmp\
 
 
 
-
 ---
 
 archive/issue_comments_052145.json:
 ```json
 {
-    "body": "I used the patches on Sage 4.1 and Sage 4.1.1.rc2, but I didn't get any doctest failure. I got:\n\n```\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n         [8.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nI don't know how to help, it works for me.\n\n\n\"The patch trac_6464-unicode.patch gives proper credit to NoSyu, the person who proposed the fix.\" Then it's my mistake, I'm sorry.",
+    "body": "I used the patches on Sage 4.1 and Sage 4.1.1.rc2, but I didn't get any doctest failure. I got:\n\n```\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n         [8.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\nI don't know how to help, it works for me.\n\n\n\"The patch trac_6464-unicode.patch gives proper credit to NoSyu, the person who proposed the fix.\" Then it's my mistake, I'm sorry.",
     "created_at": "2009-08-12T11:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -285,7 +285,6 @@ sage -t -long "devel/sage/sage/server/simple/twist.py"
 ----------------------------------------------------------------------
 All tests passed!
 ```
-
 I don't know how to help, it works for me.
 
 
@@ -298,7 +297,7 @@ I don't know how to help, it works for me.
 archive/issue_comments_052146.json:
 ```json
 {
-    "body": "Replying to [comment:10 mora]:\n> I used the patches on Sage 4.1 and Sage 4.1.1.rc2, but I didn't get any doctest failure. I got:\n\n```\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n         [8.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n> I don't know how to help, it works for me.\nHmmm... that's rather strange. I may have done something wrong.\n\n\n\n> \"The patch trac_6464-unicode.patch gives proper credit to NoSyu, the person who proposed the fix.\" Then it's my mistake, I'm sorry.\nNo worries :-)",
+    "body": "Replying to [comment:10 mora]:\n> I used the patches on Sage 4.1 and Sage 4.1.1.rc2, but I didn't get any doctest failure. I got:\n\n{{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"      \n         [8.9 s]\n \n---\nAll tests passed!\n}}}\n> I don't know how to help, it works for me.\nHmmm... that's rather strange. I may have done something wrong.\n\n\n\n> \"The patch trac_6464-unicode.patch gives proper credit to NoSyu, the person who proposed the fix.\" Then it's my mistake, I'm sorry.\n\nNo worries :-)",
     "created_at": "2009-08-12T11:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6464",
     "type": "issue_comment",
@@ -310,20 +309,20 @@ archive/issue_comments_052146.json:
 Replying to [comment:10 mora]:
 > I used the patches on Sage 4.1 and Sage 4.1.1.rc2, but I didn't get any doctest failure. I got:
 
-```
+{{{
 sage -t -long "devel/sage/sage/server/simple/twist.py"      
          [8.9 s]
  
-----------------------------------------------------------------------
+---
 All tests passed!
-```
-
+}}}
 > I don't know how to help, it works for me.
 Hmmm... that's rather strange. I may have done something wrong.
 
 
 
 > "The patch trac_6464-unicode.patch gives proper credit to NoSyu, the person who proposed the fix." Then it's my mistake, I'm sorry.
+
 No worries :-)
 
 

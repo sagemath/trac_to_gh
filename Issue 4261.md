@@ -166,7 +166,7 @@ Michael
 archive/issue_comments_031014.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. It does not fail is rm is an alias.  It gives the original executable with an exact path. \n\n```\nteragon-2:sympow-1.018.1.p5 wstein$ alias rm=\"rm -i\"\nteragon-2:sympow-1.018.1.p5 wstein$ which rm\n/bin/rm\nteragon-2:sympow-1.018.1.p5 wstein$ RM=`which rm`\nteragon-2:sympow-1.018.1.p5 wstein$ echo $RM\n/bin/rm\n```\n\n\nSo I totally don't get what the problem is.  The above patch would have the effect of making it so the scripts would annoyingly suddenly actually *be* interactive if one has aliased rm to \"rm -i\".\n\nSo from my point of view, it looks like this patch introduces a bug instead of fixing one.\n\n2. This patch would replace all the absolute paths to programs to their names, thus completely removing whatever \"upstream's\" point was in having those variables.  That's suspicious.\n\nSo I'm dubious.",
+    "body": "REFEREE REPORT:\n\n1. It does not fail is rm is an alias.  It gives the original executable with an exact path. \n\n```\nteragon-2:sympow-1.018.1.p5 wstein$ alias rm=\"rm -i\"\nteragon-2:sympow-1.018.1.p5 wstein$ which rm\n/bin/rm\nteragon-2:sympow-1.018.1.p5 wstein$ RM=`which rm`\nteragon-2:sympow-1.018.1.p5 wstein$ echo $RM\n/bin/rm\n```\n\nSo I totally don't get what the problem is.  The above patch would have the effect of making it so the scripts would annoyingly suddenly actually *be* interactive if one has aliased rm to \"rm -i\".\n\nSo from my point of view, it looks like this patch introduces a bug instead of fixing one.\n\n2. This patch would replace all the absolute paths to programs to their names, thus completely removing whatever \"upstream's\" point was in having those variables.  That's suspicious.\n\nSo I'm dubious.",
     "created_at": "2008-11-28T05:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
@@ -187,7 +187,6 @@ teragon-2:sympow-1.018.1.p5 wstein$ RM=`which rm`
 teragon-2:sympow-1.018.1.p5 wstein$ echo $RM
 /bin/rm
 ```
-
 
 So I totally don't get what the problem is.  The above patch would have the effect of making it so the scripts would annoyingly suddenly actually *be* interactive if one has aliased rm to "rm -i".
 
@@ -226,7 +225,7 @@ Michael
 archive/issue_comments_031016.json:
 ```json
 {
-    "body": "\n```\nHi,\n\nBased on Mark's remark below, I give #4261 a positive review, since it does\nin fact do just what Mark suggests below.\n\nWilliam\n\nOn Thu, Nov 27, 2008 at 9:57 PM, Mark Watkins <watkins@maths.usyd.edu.au> wrote:\n> William Stein wrote:\n>> Do you guy's have any comments on this:\n>>    http://trac.sagemath.org/sage_trac/ticket/4261\n>> I'm tempted to mark it invalid, but maybe I'm missing the point.\n>\n> I think I agree that the problem is with the shell-version of alias.\n>\n> I was only trying to make something that would be more likely to work than\n> the simple /bin/rm, etc., but it seems that I failed. Probably it is safe to\n> just use $RM=rm (same with $CP, $TAR, $MKDIR, $TOUCH) in the Makefile and\n> hope the user has a sufficient path. Also, echo might be shell-dependent.\n>\n> I think some buildutils simply tree-search the path and/or the\n> whole directory structure, but I didn't want to attempt that.\n>\n> ===\n> Mark Watkins\n> watkins@maths.usyd.edu.au\n>\n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```\n",
+    "body": "```\nHi,\n\nBased on Mark's remark below, I give #4261 a positive review, since it does\nin fact do just what Mark suggests below.\n\nWilliam\n\nOn Thu, Nov 27, 2008 at 9:57 PM, Mark Watkins <watkins@maths.usyd.edu.au> wrote:\n> William Stein wrote:\n>> Do you guy's have any comments on this:\n>>    http://trac.sagemath.org/sage_trac/ticket/4261\n>> I'm tempted to mark it invalid, but maybe I'm missing the point.\n>\n> I think I agree that the problem is with the shell-version of alias.\n>\n> I was only trying to make something that would be more likely to work than\n> the simple /bin/rm, etc., but it seems that I failed. Probably it is safe to\n> just use $RM=rm (same with $CP, $TAR, $MKDIR, $TOUCH) in the Makefile and\n> hope the user has a sufficient path. Also, echo might be shell-dependent.\n>\n> I think some buildutils simply tree-search the path and/or the\n> whole directory structure, but I didn't want to attempt that.\n>\n> ===\n> Mark Watkins\n> watkins@maths.usyd.edu.au\n>\n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```",
     "created_at": "2008-11-28T06:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4261",
     "type": "issue_comment",
@@ -234,7 +233,6 @@ archive/issue_comments_031016.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Hi,
@@ -274,7 +272,6 @@ University of Washington
 http://wstein.org
 
 ```
-
 
 
 

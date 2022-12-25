@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8025
 archive/issue_comments_069988.json:
 ```json
 {
-    "body": "Definitely \"sage -upgrade\" doesn't work right now (from 4.3 to 4.3.1).  \nDefinitely doing\n\n\n```\n  sage -f spkg/standard/scipy_sandbox-20071020.p4.spkg\n  sage -f spkg/standard/scipy-0.7.p3.spkg\n```\n\nfixes the problem.  But I'm confused since scipy and scipy_sandbox depend on fortran, so they should be forced to be rebuilt anyways.  Hmm..",
+    "body": "Definitely \"sage -upgrade\" doesn't work right now (from 4.3 to 4.3.1).  \nDefinitely doing\n\n```\n  sage -f spkg/standard/scipy_sandbox-20071020.p4.spkg\n  sage -f spkg/standard/scipy-0.7.p3.spkg\n```\nfixes the problem.  But I'm confused since scipy and scipy_sandbox depend on fortran, so they should be forced to be rebuilt anyways.  Hmm..",
     "created_at": "2010-01-21T16:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
@@ -44,12 +44,10 @@ archive/issue_comments_069988.json:
 Definitely "sage -upgrade" doesn't work right now (from 4.3 to 4.3.1).  
 Definitely doing
 
-
 ```
   sage -f spkg/standard/scipy_sandbox-20071020.p4.spkg
   sage -f spkg/standard/scipy-0.7.p3.spkg
 ```
-
 fixes the problem.  But I'm confused since scipy and scipy_sandbox depend on fortran, so they should be forced to be rebuilt anyways.  Hmm..
 
 
@@ -76,7 +74,7 @@ archive/issue_events_019224.json:
 archive/issue_comments_069989.json:
 ```json
 {
-    "body": "More precisely, the following fixes the problem:\n\n```\n./sage -f numpy-1.3.0.p2.spkg scipy_sandbox-20071020.p4.spkg scipy-0.7.p3.spkg\n```\n",
+    "body": "More precisely, the following fixes the problem:\n\n```\n./sage -f numpy-1.3.0.p2.spkg scipy_sandbox-20071020.p4.spkg scipy-0.7.p3.spkg\n```",
     "created_at": "2010-01-21T16:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
@@ -90,7 +88,6 @@ More precisely, the following fixes the problem:
 ```
 ./sage -f numpy-1.3.0.p2.spkg scipy_sandbox-20071020.p4.spkg scipy-0.7.p3.spkg
 ```
-
 
 
 

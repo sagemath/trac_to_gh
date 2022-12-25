@@ -3,7 +3,7 @@
 archive/issues_007682.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb jkantor @williamstein @kcrisman @egourgoulhon\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/06756df51d828bf4\n\n\n```\nwe probably ought to make this easier to just print the \nfirst n digits after the decimal by default for RR numbers, or to not \nprint out the trailing zeros.  I can't imagine telling my students, for \nexample, that they need to do '%.3f'%num every time they come across a \nnumber, especially since they just want to display the equation, not \nformat it as a string.\n\nWhat do people think about this interface?\n\nsage: RR.print_digits=3\nsage: 3.09384\n3.094\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n\nMake it something like the RR.scientific_notation flag that is currently \nin use.\n```\n\n\nAdditionally, and more flexibly, we could just have something like:\n\n\n```\n\nsage: RR.set_print_format('%.3f')\nsage: RR(pi)\n3.142\n```\n\n\nor more pythonically\n\n\n```\nsage: RR.print_format = '%.3f'\nsage: RR(pi)\n3.142\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7682\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb jkantor @williamstein @kcrisman @egourgoulhon\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/06756df51d828bf4\n\n```\nwe probably ought to make this easier to just print the \nfirst n digits after the decimal by default for RR numbers, or to not \nprint out the trailing zeros.  I can't imagine telling my students, for \nexample, that they need to do '%.3f'%num every time they come across a \nnumber, especially since they just want to display the equation, not \nformat it as a string.\n\nWhat do people think about this interface?\n\nsage: RR.print_digits=3\nsage: 3.09384\n3.094\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n\nMake it something like the RR.scientific_notation flag that is currently \nin use.\n```\n\nAdditionally, and more flexibly, we could just have something like:\n\n```\n\nsage: RR.set_print_format('%.3f')\nsage: RR(pi)\n3.142\n```\n\nor more pythonically\n\n```\nsage: RR.print_format = '%.3f'\nsage: RR(pi)\n3.142\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7682\n\n",
     "created_at": "2009-12-14T20:29:00Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: @aghitza
 CC:  @robertwb jkantor @williamstein @kcrisman @egourgoulhon
 
 From http://groups.google.com/group/sage-support/browse_thread/thread/06756df51d828bf4
-
 
 ```
 we probably ought to make this easier to just print the 
@@ -45,9 +44,7 @@ Make it something like the RR.scientific_notation flag that is currently
 in use.
 ```
 
-
 Additionally, and more flexibly, we could just have something like:
-
 
 ```
 
@@ -56,16 +53,13 @@ sage: RR(pi)
 3.142
 ```
 
-
 or more pythonically
-
 
 ```
 sage: RR.print_format = '%.3f'
 sage: RR(pi)
 3.142
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7682
 
@@ -297,7 +291,7 @@ As for immutability; what if we don't consider the printing options as part of t
 archive/issue_comments_065785.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> it's probably be better to have a RR.print_options(...) that takes keywords. (This way it could have a nice docstring as well.) \n\nYes, but how do you get the value of a specific option (as opposed to setting it).",
+    "body": "Replying to [comment:8 robertwb]:\n> it's probably be better to have a RR.print_options(...) that takes keywords. (This way it could have a nice docstring as well.) \n\n\nYes, but how do you get the value of a specific option (as opposed to setting it).",
     "created_at": "2010-01-26T07:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -309,6 +303,7 @@ archive/issue_comments_065785.json:
 Replying to [comment:8 robertwb]:
 > it's probably be better to have a RR.print_options(...) that takes keywords. (This way it could have a nice docstring as well.) 
 
+
 Yes, but how do you get the value of a specific option (as opposed to setting it).
 
 
@@ -318,7 +313,7 @@ Yes, but how do you get the value of a specific option (as opposed to setting it
 archive/issue_comments_065786.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> (This way it could have a nice docstring as well.) \n\nThe Cython \"property\" construct can also take a nice docstring.  Is anything ever done with this docstring?",
+    "body": "Replying to [comment:8 robertwb]:\n> (This way it could have a nice docstring as well.) \n\n\nThe Cython \"property\" construct can also take a nice docstring.  Is anything ever done with this docstring?",
     "created_at": "2010-01-26T07:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -330,6 +325,7 @@ archive/issue_comments_065786.json:
 Replying to [comment:8 robertwb]:
 > (This way it could have a nice docstring as well.) 
 
+
 The Cython "property" construct can also take a nice docstring.  Is anything ever done with this docstring?
 
 
@@ -339,7 +335,7 @@ The Cython "property" construct can also take a nice docstring.  Is anything eve
 archive/issue_comments_065787.json:
 ```json
 {
-    "body": "Attachment [trac-7682-realfield-printing-options.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.patch) by @jasongrout created at 2010-01-26 09:40:28\n\nOkay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.\n\nThere are four doctests failing right now because I'm not sure if they are bugs or if they are right.  Here they are:\n\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3343:\n    sage: RR('nan').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3344:\n    sage: RR('inf').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3360:\n    sage: RR('nan').__nonzero__() # fail until we decide what it should be\nExpected nothing\nGot:\n    False\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3397:\n    sage: RR('nan')==RR('nan') # Fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3419:\n    sage: RR('nan')==RR('nan') # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n```\n\n\nAre those four answers right (the \"Got:\" parts)?  See #8074 for more corner cases.",
+    "body": "Attachment [trac-7682-realfield-printing-options.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.patch) by @jasongrout created at 2010-01-26 09:40:28\n\nOkay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.\n\nThere are four doctests failing right now because I'm not sure if they are bugs or if they are right.  Here they are:\n\n```\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3343:\n    sage: RR('nan').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3344:\n    sage: RR('inf').is_real() # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3360:\n    sage: RR('nan').__nonzero__() # fail until we decide what it should be\nExpected nothing\nGot:\n    False\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3397:\n    sage: RR('nan')==RR('nan') # Fail until we decide what it should be\nExpected nothing\nGot:\n    True\n**********************************************************************\nFile \"/home/grout/sage-4.3.1/devel/sage-main/sage/rings/real_mpfr.pyx\", line 3419:\n    sage: RR('nan')==RR('nan') # fail until we decide what it should be\nExpected nothing\nGot:\n    True\n```\n\nAre those four answers right (the \"Got:\" parts)?  See #8074 for more corner cases.",
     "created_at": "2010-01-26T09:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -353,7 +349,6 @@ Attachment [trac-7682-realfield-printing-options.patch](tarball://root/attachmen
 Okay, this is getting big now.  I went through real_mpfr.pyx and added a lot of doctests and documentation.
 
 There are four doctests failing right now because I'm not sure if they are bugs or if they are right.  Here they are:
-
 
 ```
 **********************************************************************
@@ -387,7 +382,6 @@ Expected nothing
 Got:
     True
 ```
-
 
 Are those four answers right (the "Got:" parts)?  See #8074 for more corner cases.
 
@@ -508,7 +502,7 @@ rebase to 4.4.1, apply only this patch
 archive/issue_comments_065794.json:
 ```json
 {
-    "body": "Attachment [trac-7682-realfield-printing-options.3.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.3.patch) by @jasongrout created at 2010-05-14 17:07:52\n\nI removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ninit2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~(mpfr_prec_t)0)>>1))\n/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "Attachment [trac-7682-realfield-printing-options.3.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realfield-printing-options.3.patch) by @jasongrout created at 2010-05-14 17:07:52\n\nI removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ninit2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~(mpfr_prec_t)0)>>1))\n/Users/grout/sage/local/bin/sage-sage: line 206: 16842 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n```",
     "created_at": "2010-05-14T17:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -521,7 +515,6 @@ Attachment [trac-7682-realfield-printing-options.3.patch](tarball://root/attachm
 
 I removed a bunch of fixes unrelated to the printing option change and put them on other tickets.  I also fixed at least one accidental code removal.  In 4.4.1, Sage won't start after this patch is applied, due to
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -530,7 +523,6 @@ init2.c:52: MPFR assertion failed: p >= 2 && p <= ((mpfr_prec_t)((mpfr_prec_t)(~
 | Sage Version 4.4.1, Release Date: 2010-05-02                       |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 
 
@@ -613,7 +605,7 @@ Slightly OT: Regarding the thread that started this, in finance you don't need l
 archive/issue_comments_065799.json:
 ```json
 {
-    "body": "Replying to [comment:19 leif]:\n> Slightly OT: Regarding the thread that started this, in finance you don't need less/limited precision, but *fixed*-point numbers. ;-)\n> \n\nOf course, then you would probably use the python Decimal module :).",
+    "body": "Replying to [comment:19 leif]:\n> Slightly OT: Regarding the thread that started this, in finance you don't need less/limited precision, but *fixed*-point numbers. ;-)\n> \n\n\nOf course, then you would probably use the python Decimal module :).",
     "created_at": "2010-05-28T02:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -625,6 +617,7 @@ archive/issue_comments_065799.json:
 Replying to [comment:19 leif]:
 > Slightly OT: Regarding the thread that started this, in finance you don't need less/limited precision, but *fixed*-point numbers. ;-)
 > 
+
 
 Of course, then you would probably use the python Decimal module :).
 
@@ -707,7 +700,7 @@ apply on top of previous patch
 archive/issue_comments_065804.json:
 ```json
 {
-    "body": "Attachment [trac-7682-realintervalfield-printing.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realintervalfield-printing.patch) by @jasongrout created at 2010-06-18 17:34:43\n\nI added a patch which implements the feature wanted in #9261:\n\n\n```\nsage: R=RealIntervalField(print_options=dict(style='brackets'))\nsage: R.print_options\n{'style': 'brackets', 'error_digits': 0}\nsage: R(1,2)\n[1.0000000000000000 .. 2.0000000000000000]\n```\n\n\nDoctests and documentation still needs to be written for this.  And maybe convenience functions for setting these two options (i.e., make the syntax in #9261 work).",
+    "body": "Attachment [trac-7682-realintervalfield-printing.patch](tarball://root/attachments/some-uuid/ticket7682/trac-7682-realintervalfield-printing.patch) by @jasongrout created at 2010-06-18 17:34:43\n\nI added a patch which implements the feature wanted in #9261:\n\n```\nsage: R=RealIntervalField(print_options=dict(style='brackets'))\nsage: R.print_options\n{'style': 'brackets', 'error_digits': 0}\nsage: R(1,2)\n[1.0000000000000000 .. 2.0000000000000000]\n```\n\nDoctests and documentation still needs to be written for this.  And maybe convenience functions for setting these two options (i.e., make the syntax in #9261 work).",
     "created_at": "2010-06-18T17:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -720,7 +713,6 @@ Attachment [trac-7682-realintervalfield-printing.patch](tarball://root/attachmen
 
 I added a patch which implements the feature wanted in #9261:
 
-
 ```
 sage: R=RealIntervalField(print_options=dict(style='brackets'))
 sage: R.print_options
@@ -728,7 +720,6 @@ sage: R.print_options
 sage: R(1,2)
 [1.0000000000000000 .. 2.0000000000000000]
 ```
-
 
 Doctests and documentation still needs to be written for this.  And maybe convenience functions for setting these two options (i.e., make the syntax in #9261 work).
 
@@ -739,7 +730,7 @@ Doctests and documentation still needs to be written for this.  And maybe conven
 archive/issue_comments_065805.json:
 ```json
 {
-    "body": "Jason,\n\nsorry, I was not aware of this ticket. I see you have invested a lot of time in it. However I am\nnot in favour of removing trailing zeroes by default. Those zeroes are quite helpful to give an\nidea of the accuracy of the computation.\n\nAbout reducing or increasing the number of printed zeroes with respect to the internal precision,\nI don't see why this could be desirable. If we reduce the number of printed zeroes, then if we\ncopy/paste the number, we will loose some accuracy (because of the decimal<->binary conversion).\nIf we increase the number of printed zeroes, the user will see more significant digits (due to\nthe internal binary representation) and this will lead to more user questions:\n\n```\nsage: a=n(pi); a\n3.14159265358979\nsage: print '%.3f'%a\n3.142\nsage: b=3.142; a-b\n-0.000407346410206788\nsage: print '%.30f'%a\n3.141592653589793115997963468544\n```\n\n\nIn addition I don't understand how you achieve this:\n\n```\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n```\n\nWhat happens with `RR.print_digits=16`?\n\nAlso, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or\n`3.09384e+100`?\n\nJust my 2 cents.\n\nPaul\n\nPS: however, the patch for #9261 looks very nice. Can't you make it independent of that ticket?",
+    "body": "Jason,\n\nsorry, I was not aware of this ticket. I see you have invested a lot of time in it. However I am\nnot in favour of removing trailing zeroes by default. Those zeroes are quite helpful to give an\nidea of the accuracy of the computation.\n\nAbout reducing or increasing the number of printed zeroes with respect to the internal precision,\nI don't see why this could be desirable. If we reduce the number of printed zeroes, then if we\ncopy/paste the number, we will loose some accuracy (because of the decimal<->binary conversion).\nIf we increase the number of printed zeroes, the user will see more significant digits (due to\nthe internal binary representation) and this will lead to more user questions:\n\n```\nsage: a=n(pi); a\n3.14159265358979\nsage: print '%.3f'%a\n3.142\nsage: b=3.142; a-b\n-0.000407346410206788\nsage: print '%.30f'%a\n3.141592653589793115997963468544\n```\n\nIn addition I don't understand how you achieve this:\n\n```\nsage: RR.print_trailing_zeros=False\nsage: RR.print_digits=None\nsage: 3.09384\n3.09384\n```\nWhat happens with `RR.print_digits=16`?\n\nAlso, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or\n`3.09384e+100`?\n\nJust my 2 cents.\n\nPaul\n\nPS: however, the patch for #9261 looks very nice. Can't you make it independent of that ticket?",
     "created_at": "2010-06-19T09:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -771,7 +762,6 @@ sage: print '%.30f'%a
 3.141592653589793115997963468544
 ```
 
-
 In addition I don't understand how you achieve this:
 
 ```
@@ -780,7 +770,6 @@ sage: RR.print_digits=None
 sage: 3.09384
 3.09384
 ```
-
 What happens with `RR.print_digits=16`?
 
 Also, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or
@@ -799,7 +788,7 @@ PS: however, the patch for #9261 looks very nice. Can't you make it independent 
 archive/issue_comments_065806.json:
 ```json
 {
-    "body": "Replying to [comment:25 zimmerma]:\n> Jason,\n> \n> sorry, I was not aware of this ticket. I see you have invested a lot of time in it. However I am\n> not in favour of removing trailing zeroes by default. Those zeroes are quite helpful to give an\n> idea of the accuracy of the computation.\n\nI agree. That's the default in Sage now, though (and led to this patch, as it was hiding too much in my numerical analysis class!)\n\nSo changing it should probably be a different ticket, and after this patch, should just be a one liner change to the defaults.\n\n\n> \n> About reducing or increasing the number of printed zeroes with respect to the internal precision,\n> I don't see why this could be desirable. If we reduce the number of printed zeroes, then if we\n> copy/paste the number, we will loose some accuracy (because of the decimal<->binary conversion).\n> If we increase the number of printed zeroes, the user will see more significant digits (due to\n> the internal binary representation) and this will lead to more user questions:\n> {{{\n> sage: a=n(pi); a\n> 3.14159265358979\n> sage: print '%.3f'%a\n> 3.142\n> sage: b=3.142; a-b\n> -0.000407346410206788\n> sage: print '%.30f'%a\n> 3.141592653589793115997963468544\n> }}}\n> \n> In addition I don't understand how you achieve this:\n> {{{\n> sage: RR.print_trailing_zeros=False\n> sage: RR.print_digits=None\n> sage: 3.09384\n> 3.09384\n> }}}\n> What happens with `RR.print_digits=16`?\n> \n> Also, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or\n> `3.09384e+100`?\n\nGood questions.  It's been a while since I worked with this patch (other than the rough patch from yesterday).  I'll try to see what changes are changes I made, as opposed to what things were already in Sage.  The things that were already in Sage can be dealt with on another ticket.\n\n\n> \n> Just my 2 cents.\n> \n> Paul\n> \n> PS: however, the patch for #9261 looks very nice. Can't you make it independent of that ticket?\n\nYes, though it's easier to build on top of the framework here, and I hope better in the long run.",
+    "body": "Replying to [comment:25 zimmerma]:\n> Jason,\n> \n> sorry, I was not aware of this ticket. I see you have invested a lot of time in it. However I am\n> not in favour of removing trailing zeroes by default. Those zeroes are quite helpful to give an\n> idea of the accuracy of the computation.\n\n\nI agree. That's the default in Sage now, though (and led to this patch, as it was hiding too much in my numerical analysis class!)\n\nSo changing it should probably be a different ticket, and after this patch, should just be a one liner change to the defaults.\n\n\n> \n> About reducing or increasing the number of printed zeroes with respect to the internal precision,\n> I don't see why this could be desirable. If we reduce the number of printed zeroes, then if we\n> copy/paste the number, we will loose some accuracy (because of the decimal<->binary conversion).\n> If we increase the number of printed zeroes, the user will see more significant digits (due to\n> the internal binary representation) and this will lead to more user questions:\n> \n> ```\n> sage: a=n(pi); a\n> 3.14159265358979\n> sage: print '%.3f'%a\n> 3.142\n> sage: b=3.142; a-b\n> -0.000407346410206788\n> sage: print '%.30f'%a\n> 3.141592653589793115997963468544\n> ```\n> \n> In addition I don't understand how you achieve this:\n> \n> ```\n> sage: RR.print_trailing_zeros=False\n> sage: RR.print_digits=None\n> sage: 3.09384\n> 3.09384\n> ```\n> What happens with `RR.print_digits=16`?\n> \n> Also, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or\n> `3.09384e+100`?\n\n\nGood questions.  It's been a while since I worked with this patch (other than the rough patch from yesterday).  I'll try to see what changes are changes I made, as opposed to what things were already in Sage.  The things that were already in Sage can be dealt with on another ticket.\n\n\n> \n> Just my 2 cents.\n> \n> Paul\n> \n> PS: however, the patch for #9261 looks very nice. Can't you make it independent of that ticket?\n\n\nYes, though it's easier to build on top of the framework here, and I hope better in the long run.",
     "created_at": "2010-06-19T12:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -815,6 +804,7 @@ Replying to [comment:25 zimmerma]:
 > not in favour of removing trailing zeroes by default. Those zeroes are quite helpful to give an
 > idea of the accuracy of the computation.
 
+
 I agree. That's the default in Sage now, though (and led to this patch, as it was hiding too much in my numerical analysis class!)
 
 So changing it should probably be a different ticket, and after this patch, should just be a one liner change to the defaults.
@@ -826,7 +816,8 @@ So changing it should probably be a different ticket, and after this patch, shou
 > copy/paste the number, we will loose some accuracy (because of the decimal<->binary conversion).
 > If we increase the number of printed zeroes, the user will see more significant digits (due to
 > the internal binary representation) and this will lead to more user questions:
-> {{{
+> 
+> ```
 > sage: a=n(pi); a
 > 3.14159265358979
 > sage: print '%.3f'%a
@@ -835,19 +826,21 @@ So changing it should probably be a different ticket, and after this patch, shou
 > -0.000407346410206788
 > sage: print '%.30f'%a
 > 3.141592653589793115997963468544
-> }}}
+> ```
 > 
 > In addition I don't understand how you achieve this:
-> {{{
+> 
+> ```
 > sage: RR.print_trailing_zeros=False
 > sage: RR.print_digits=None
 > sage: 3.09384
 > 3.09384
-> }}}
+> ```
 > What happens with `RR.print_digits=16`?
 > 
 > Also, what happens with numbers with tiny or huge exponent, say `3.09384e-100` or
 > `3.09384e+100`?
+
 
 Good questions.  It's been a while since I worked with this patch (other than the rough patch from yesterday).  I'll try to see what changes are changes I made, as opposed to what things were already in Sage.  The things that were already in Sage can be dealt with on another ticket.
 
@@ -859,6 +852,7 @@ Good questions.  It's been a while since I worked with this patch (other than th
 > 
 > PS: however, the patch for #9261 looks very nice. Can't you make it independent of that ticket?
 
+
 Yes, though it's easier to build on top of the framework here, and I hope better in the long run.
 
 
@@ -868,7 +862,7 @@ Yes, though it's easier to build on top of the framework here, and I hope better
 archive/issue_comments_065807.json:
 ```json
 {
-    "body": "Applying these patches to 4.4.2 gives several doctest errors like this:\n\n\n```\nsage -t  \"4.4.2-test3/devel/sage-main/sage/rings/rational_field.py\"\n**********************************************************************\nFile \"/Users/grout/sage-4.4.2-test3/devel/sage-main/sage/rings/rational_field.py\", line 26:\n    sage: QQ(RealField(9).pi())\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[4]>\", line 1, in <module>\n        QQ(RealField(Integer(9)).pi())###line 26:\n    sage: QQ(RealField(9).pi())\n      File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n      File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n        self.__set_value(x, base)\n      File \"rational.pyx\", line 455, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:6223)\n        set_from_Rational(self, x.simplest_rational())\n      File \"real_mpfr.pyx\", line 2762, in sage.rings.real_mpfr.RealNumber.simplest_rational (sage/rings/real_mpfr.c:17811)\n        return hp_intv.simplest_rational(low_open=odd, high_open=odd)\n      File \"real_mpfi.pyx\", line 2742, in sage.rings.real_mpfi.RealIntervalFieldElement.simplest_rational (sage/rings/real_mpfi.c:14640)\n        highprec = RealIntervalField_class(int(self.prec() * 1.2))(self)\n      File \"real_mpfi.pyx\", line 472, in sage.rings.real_mpfi.RealIntervalField_class.__init__ (sage/rings/real_mpfi.c:3522)\n        for key,val in print_options.items():\n    AttributeError: 'NoneType' object has no attribute 'items'\n\n```\n",
+    "body": "Applying these patches to 4.4.2 gives several doctest errors like this:\n\n```\nsage -t  \"4.4.2-test3/devel/sage-main/sage/rings/rational_field.py\"\n**********************************************************************\nFile \"/Users/grout/sage-4.4.2-test3/devel/sage-main/sage/rings/rational_field.py\", line 26:\n    sage: QQ(RealField(9).pi())\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[4]>\", line 1, in <module>\n        QQ(RealField(Integer(9)).pi())###line 26:\n    sage: QQ(RealField(9).pi())\n      File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n      File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n        self.__set_value(x, base)\n      File \"rational.pyx\", line 455, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:6223)\n        set_from_Rational(self, x.simplest_rational())\n      File \"real_mpfr.pyx\", line 2762, in sage.rings.real_mpfr.RealNumber.simplest_rational (sage/rings/real_mpfr.c:17811)\n        return hp_intv.simplest_rational(low_open=odd, high_open=odd)\n      File \"real_mpfi.pyx\", line 2742, in sage.rings.real_mpfi.RealIntervalFieldElement.simplest_rational (sage/rings/real_mpfi.c:14640)\n        highprec = RealIntervalField_class(int(self.prec() * 1.2))(self)\n      File \"real_mpfi.pyx\", line 472, in sage.rings.real_mpfi.RealIntervalField_class.__init__ (sage/rings/real_mpfi.c:3522)\n        for key,val in print_options.items():\n    AttributeError: 'NoneType' object has no attribute 'items'\n\n```",
     "created_at": "2010-07-11T06:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -878,7 +872,6 @@ archive/issue_comments_065807.json:
 ```
 
 Applying these patches to 4.4.2 gives several doctest errors like this:
-
 
 ```
 sage -t  "4.4.2-test3/devel/sage-main/sage/rings/rational_field.py"
@@ -912,7 +905,6 @@ Exception raised:
     AttributeError: 'NoneType' object has no attribute 'items'
 
 ```
-
 
 
 
@@ -957,7 +949,7 @@ Paul: I think I understand your comment now.  I did not implement the original s
 archive/issue_comments_065810.json:
 ```json
 {
-    "body": "Replying to [comment:29 jason]:\n> it would be best to either change the scope of the ticket to reflect what the patch actually does\nI would prefer this.\n\nPaul",
+    "body": "Replying to [comment:29 jason]:\n> it would be best to either change the scope of the ticket to reflect what the patch actually does\n\nI would prefer this.\n\nPaul",
     "created_at": "2010-07-11T16:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -968,6 +960,7 @@ archive/issue_comments_065810.json:
 
 Replying to [comment:29 jason]:
 > it would be best to either change the scope of the ticket to reflect what the patch actually does
+
 I would prefer this.
 
 Paul
@@ -979,7 +972,7 @@ Paul
 archive/issue_comments_065811.json:
 ```json
 {
-    "body": "I actually dislike the goal of this patch: I don't think it's a good idea to have `RealNumber` printing varied per-parent, and certainly not if the printing is mutable.  Consider:\n\nSomebody wants to know what 128 bits of $\\pi$ prints as in scientific notation:\n\n\n```\nsage: RR128 = RealField(128)\nsage: RR128.print_options['scientific_notation'] = 'always'\nsage: RR128(pi)\n3.1415926535897932384626433832795028842e0\n```\n\n\nThen, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:\n\n\n```\nsage: rt2 = AA(sqrt(2))\nsage: rt2._value.center()\n1.41421356237309505\nsage: RealIntervalField(100)(rt2)\n1.414213562373095048801688724210?\nsage: rt2._value.center()\n1.4142135623730950488016887242096980786e0\n```\n\n\nWhy is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.\n\nI realize that you're just extending a design that's been in Sage for years (since before I started working on Sage), but IMHO it's a bad design, and this just makes it worse.\n\nI can think of two ways to fix this:\n\n1) Get rid of per-field printing options altogether; only have a single global setting that affects all `RealField`s.\n\n2) Make the print options immutable, so that creating RR128scientific_notation doesn't affect anybody else who might create RR128 without scientific notation.\n\nMy vote would be for option 1, but I could live with either option.",
+    "body": "I actually dislike the goal of this patch: I don't think it's a good idea to have `RealNumber` printing varied per-parent, and certainly not if the printing is mutable.  Consider:\n\nSomebody wants to know what 128 bits of $\\pi$ prints as in scientific notation:\n\n```\nsage: RR128 = RealField(128)\nsage: RR128.print_options['scientific_notation'] = 'always'\nsage: RR128(pi)\n3.1415926535897932384626433832795028842e0\n```\n\nThen, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:\n\n```\nsage: rt2 = AA(sqrt(2))\nsage: rt2._value.center()\n1.41421356237309505\nsage: RealIntervalField(100)(rt2)\n1.414213562373095048801688724210?\nsage: rt2._value.center()\n1.4142135623730950488016887242096980786e0\n```\n\nWhy is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.\n\nI realize that you're just extending a design that's been in Sage for years (since before I started working on Sage), but IMHO it's a bad design, and this just makes it worse.\n\nI can think of two ways to fix this:\n\n1) Get rid of per-field printing options altogether; only have a single global setting that affects all `RealField`s.\n\n2) Make the print options immutable, so that creating RR128scientific_notation doesn't affect anybody else who might create RR128 without scientific notation.\n\nMy vote would be for option 1, but I could live with either option.",
     "created_at": "2010-07-11T19:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -992,7 +985,6 @@ I actually dislike the goal of this patch: I don't think it's a good idea to hav
 
 Somebody wants to know what 128 bits of $\pi$ prints as in scientific notation:
 
-
 ```
 sage: RR128 = RealField(128)
 sage: RR128.print_options['scientific_notation'] = 'always'
@@ -1000,9 +992,7 @@ sage: RR128(pi)
 3.1415926535897932384626433832795028842e0
 ```
 
-
 Then, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:
-
 
 ```
 sage: rt2 = AA(sqrt(2))
@@ -1013,7 +1003,6 @@ sage: RealIntervalField(100)(rt2)
 sage: rt2._value.center()
 1.4142135623730950488016887242096980786e0
 ```
-
 
 Why is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.
 
@@ -1034,7 +1023,7 @@ My vote would be for option 1, but I could live with either option.
 archive/issue_comments_065812.json:
 ```json
 {
-    "body": "Replying to [comment:32 cwitty]:\n> I actually dislike the goal of this patch: I don't think it's a good idea to have `RealNumber` printing varied per-parent, and certainly not if the printing is mutable.  Consider:\n> \n> Somebody wants to know what 128 bits of $\\pi$ prints as in scientific notation:\n> \n> {{{\n> sage: RR128 = RealField(128)\n> sage: RR128.print_options['scientific_notation'] = 'always'\n> sage: RR128(pi)\n> 3.1415926535897932384626433832795028842e0\n> }}}\n> \n> Then, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:\n> \n> {{{\n> sage: rt2 = AA(sqrt(2))\n> sage: rt2._value.center()\n> 1.41421356237309505\n> sage: RealIntervalField(100)(rt2)\n> 1.414213562373095048801688724210?\n> sage: rt2._value.center()\n> 1.4142135623730950488016887242096980786e0\n> }}}\n> \n> Why is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.\n> \n> I realize that you're just extending a design that's been in Sage for years (since before I started working on Sage), but IMHO it's a bad design, and this just makes it worse.\n> \n> I can think of two ways to fix this:\n> \n> 1) Get rid of per-field printing options altogether; only have a single global setting that affects all `RealField`s.\n> \n> 2) Make the print options immutable, so that creating RR128scientific_notation doesn't affect anybody else who might create RR128 without scientific notation.\n> \n> My vote would be for option 1, but I could live with either option.\n\n\nI agree.  Another reason to add to your argument above is that Sage does coercing between different realfield precisions, so you might have a number that is printed one way, then Sage automatically coerces to a different precision for an operation and your result is printed a different way.  I think (1) is a better option, given the caching strategy used.\n\nFor my use-case (teaching numerical analysis), option (1) is better than the patch on this ticket.\n\nSo do you propose eliminating the sci_not options to RealField?  Do you propose eliminating the arguments to the str function?\n\nNote that I think your suggestion will be relatively straightforward to accommodate on this patch, since the patch defines module-level defaults.  We should be able to just remove the code that overrides the module-level defaults and stores a user value.  Note that this patch also unifies several different options for scientific notation that were scattered in different places in the code, so I think it is better to build (or cut things out) on this patch rather than throw it away altogether.",
+    "body": "Replying to [comment:32 cwitty]:\n> I actually dislike the goal of this patch: I don't think it's a good idea to have `RealNumber` printing varied per-parent, and certainly not if the printing is mutable.  Consider:\n> \n> Somebody wants to know what 128 bits of $\\pi$ prints as in scientific notation:\n> \n> \n> ```\n> sage: RR128 = RealField(128)\n> sage: RR128.print_options['scientific_notation'] = 'always'\n> sage: RR128(pi)\n> 3.1415926535897932384626433832795028842e0\n> ```\n> \n> Then, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:\n> \n> \n> ```\n> sage: rt2 = AA(sqrt(2))\n> sage: rt2._value.center()\n> 1.41421356237309505\n> sage: RealIntervalField(100)(rt2)\n> 1.414213562373095048801688724210?\n> sage: rt2._value.center()\n> 1.4142135623730950488016887242096980786e0\n> ```\n> \n> Why is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.\n> \n> I realize that you're just extending a design that's been in Sage for years (since before I started working on Sage), but IMHO it's a bad design, and this just makes it worse.\n> \n> I can think of two ways to fix this:\n> \n> 1) Get rid of per-field printing options altogether; only have a single global setting that affects all `RealField`s.\n> \n> 2) Make the print options immutable, so that creating RR128scientific_notation doesn't affect anybody else who might create RR128 without scientific notation.\n> \n> My vote would be for option 1, but I could live with either option.\n\n\n\nI agree.  Another reason to add to your argument above is that Sage does coercing between different realfield precisions, so you might have a number that is printed one way, then Sage automatically coerces to a different precision for an operation and your result is printed a different way.  I think (1) is a better option, given the caching strategy used.\n\nFor my use-case (teaching numerical analysis), option (1) is better than the patch on this ticket.\n\nSo do you propose eliminating the sci_not options to RealField?  Do you propose eliminating the arguments to the str function?\n\nNote that I think your suggestion will be relatively straightforward to accommodate on this patch, since the patch defines module-level defaults.  We should be able to just remove the code that overrides the module-level defaults and stores a user value.  Note that this patch also unifies several different options for scientific notation that were scattered in different places in the code, so I think it is better to build (or cut things out) on this patch rather than throw it away altogether.",
     "created_at": "2010-07-12T14:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1048,16 +1037,18 @@ Replying to [comment:32 cwitty]:
 > 
 > Somebody wants to know what 128 bits of $\pi$ prints as in scientific notation:
 > 
-> {{{
+> 
+> ```
 > sage: RR128 = RealField(128)
 > sage: RR128.print_options['scientific_notation'] = 'always'
 > sage: RR128(pi)
 > 3.1415926535897932384626433832795028842e0
-> }}}
+> ```
 > 
 > Then, days later (but in the same Sage session) they're playing around with the internals of AA/QQbar:
 > 
-> {{{
+> 
+> ```
 > sage: rt2 = AA(sqrt(2))
 > sage: rt2._value.center()
 > 1.41421356237309505
@@ -1065,7 +1056,7 @@ Replying to [comment:32 cwitty]:
 > 1.414213562373095048801688724210?
 > sage: rt2._value.center()
 > 1.4142135623730950488016887242096980786e0
-> }}}
+> ```
 > 
 > Why is that last number printed in scientific notation?  Oh yes, it's because we changed RR128 days ago.
 > 
@@ -1078,6 +1069,7 @@ Replying to [comment:32 cwitty]:
 > 2) Make the print options immutable, so that creating RR128scientific_notation doesn't affect anybody else who might create RR128 without scientific notation.
 > 
 > My vote would be for option 1, but I could live with either option.
+
 
 
 I agree.  Another reason to add to your argument above is that Sage does coercing between different realfield precisions, so you might have a number that is printed one way, then Sage automatically coerces to a different precision for an operation and your result is printed a different way.  I think (1) is a better option, given the caching strategy used.
@@ -1095,7 +1087,7 @@ Note that I think your suggestion will be relatively straightforward to accommod
 archive/issue_comments_065813.json:
 ```json
 {
-    "body": "So do you propose eliminating the sci_not options to RealField?? Do you propose eliminating the arguments to the str function? \n\nYes, my vote would be to eliminate sci_not in `RealField`.  No, I don't see any reason to eliminate the arguments to str(); if you want to convert a single number to a string in some special way (with scientific notation, say), then it's a lot easier to call .str(scientific_notation='always') than to type something like:\n\n\n```\n  old = sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation']\n  sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = 'always'\n  foostr = foo.str()\n  sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = old\n```\n\n\nFurther comments:\n\nI haven't really reviewed the actual patch, but I did just notice that the new docstring for .str() has no doctests for no_sci.  I think it should end with something like:\n\n\n```\nTESTS:\n\nHere we test the deprecated no_sci argument to .str()::\n```\n\n\nfollowed by the tests for no_sci that used to be there (assuming there were some, I haven't actually checked).",
+    "body": "So do you propose eliminating the sci_not options to RealField?? Do you propose eliminating the arguments to the str function? \n\nYes, my vote would be to eliminate sci_not in `RealField`.  No, I don't see any reason to eliminate the arguments to str(); if you want to convert a single number to a string in some special way (with scientific notation, say), then it's a lot easier to call .str(scientific_notation='always') than to type something like:\n\n```\n  old = sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation']\n  sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = 'always'\n  foostr = foo.str()\n  sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = old\n```\n\nFurther comments:\n\nI haven't really reviewed the actual patch, but I did just notice that the new docstring for .str() has no doctests for no_sci.  I think it should end with something like:\n\n```\nTESTS:\n\nHere we test the deprecated no_sci argument to .str()::\n```\n\nfollowed by the tests for no_sci that used to be there (assuming there were some, I haven't actually checked).",
     "created_at": "2010-07-12T16:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1108,7 +1100,6 @@ So do you propose eliminating the sci_not options to RealField?? Do you propose 
 
 Yes, my vote would be to eliminate sci_not in `RealField`.  No, I don't see any reason to eliminate the arguments to str(); if you want to convert a single number to a string in some special way (with scientific notation, say), then it's a lot easier to call .str(scientific_notation='always') than to type something like:
 
-
 ```
   old = sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation']
   sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = 'always'
@@ -1116,18 +1107,15 @@ Yes, my vote would be to eliminate sci_not in `RealField`.  No, I don't see any 
   sage.rings.real_mpfr._PRINT_OPTIONS['scientific_notation'] = old
 ```
 
-
 Further comments:
 
 I haven't really reviewed the actual patch, but I did just notice that the new docstring for .str() has no doctests for no_sci.  I think it should end with something like:
-
 
 ```
 TESTS:
 
 Here we test the deprecated no_sci argument to .str()::
 ```
-
 
 followed by the tests for no_sci that used to be there (assuming there were some, I haven't actually checked).
 
@@ -1310,7 +1298,7 @@ archive/issue_events_018341.json:
 archive/issue_comments_065816.json:
 ```json
 {
-    "body": "How lovely to revive an 8 year old ticket ...\n\nIn the mean time, python has grown a new string formatting method. If we implement a `__format__` method on our mpfr wrapper, one could just do something like\n\n```\nsage: a=RealField(200)(2).sqrt()\nsage: \"{:.20e}\".format(a)\n'1.414213562373095049e0'\n```\n\nNo need to fuss with global state ... if people want more control over the typesetting of their floats, they can just use the standard python tools (or the tools already available on `str`).\n\nIt might be a nice beginner's exercise to write the appropriate `__format__`.",
+    "body": "How lovely to revive an 8 year old ticket ...\n\nIn the mean time, python has grown a new string formatting method. If we implement a `__format__` method on our mpfr wrapper, one could just do something like\n\n```\nsage: a=RealField(200)(2).sqrt()\nsage: \"{:.20e}\".format(a)\n'1.414213562373095049e0'\n```\nNo need to fuss with global state ... if people want more control over the typesetting of their floats, they can just use the standard python tools (or the tools already available on `str`).\n\nIt might be a nice beginner's exercise to write the appropriate `__format__`.",
     "created_at": "2018-05-20T06:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1328,7 +1316,6 @@ sage: a=RealField(200)(2).sqrt()
 sage: "{:.20e}".format(a)
 '1.414213562373095049e0'
 ```
-
 No need to fuss with global state ... if people want more control over the typesetting of their floats, they can just use the standard python tools (or the tools already available on `str`).
 
 It might be a nice beginner's exercise to write the appropriate `__format__`.
@@ -1340,7 +1327,7 @@ It might be a nice beginner's exercise to write the appropriate `__format__`.
 archive/issue_comments_065817.json:
 ```json
 {
-    "body": "I wanted to have fun with `e` to the power of `\u03c0\u221a163`\n\nI expected Sage would print me `262537412640768743.99999999999925`\n\n```\nsage: R = RealField(1500)\nsage: a = R(e) ** (R(pi) * R(163).sqrt())\nsage: a.n(digits=33)\n2.62537412640768743999999999999250e17\nsage: \"{:.70f}\".format(a)\nTypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__\n```\n\nis there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?",
+    "body": "I wanted to have fun with `e` to the power of `\u03c0\u221a163`\n\nI expected Sage would print me `262537412640768743.99999999999925`\n\n```\nsage: R = RealField(1500)\nsage: a = R(e) ** (R(pi) * R(163).sqrt())\nsage: a.n(digits=33)\n2.62537412640768743999999999999250e17\nsage: \"{:.70f}\".format(a)\nTypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__\n```\nis there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?",
     "created_at": "2019-04-14T09:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1361,7 +1348,6 @@ sage: a.n(digits=33)
 sage: "{:.70f}".format(a)
 TypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__
 ```
-
 is there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?
 
 
@@ -1371,7 +1357,7 @@ is there a way to print `2.62537412640768743999999999999250e17` as `262537412640
 archive/issue_comments_065818.json:
 ```json
 {
-    "body": "Replying to [comment:44 gh-sheerluck]:\n> I wanted to have fun with `e` to the power of `\u03c0\u221a163`\n> \n> I expected Sage would print me `262537412640768743.99999999999925`\n> {{{\n> sage: R = RealField(1500)\n> sage: a = R(e) ** (R(pi) * R(163).sqrt())\n> sage: a.n(digits=33)\n> 2.62537412640768743999999999999250e17\n> sage: \"{:.70f}\".format(a)\n> TypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__\n> }}}\n> is there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?\n\nA solution is:\n\n```\nsage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)\n'262537412640768743.999999999999249212'\n```\n",
+    "body": "Replying to [comment:44 gh-sheerluck]:\n> I wanted to have fun with `e` to the power of `\u03c0\u221a163`\n> \n> I expected Sage would print me `262537412640768743.99999999999925`\n> \n> ```\n> sage: R = RealField(1500)\n> sage: a = R(e) ** (R(pi) * R(163).sqrt())\n> sage: a.n(digits=33)\n> 2.62537412640768743999999999999250e17\n> sage: \"{:.70f}\".format(a)\n> TypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__\n> ```\n> is there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?\n\n\nA solution is:\n\n```\nsage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)\n'262537412640768743.999999999999249212'\n```",
     "created_at": "2019-04-14T09:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1384,15 +1370,17 @@ Replying to [comment:44 gh-sheerluck]:
 > I wanted to have fun with `e` to the power of `π√163`
 > 
 > I expected Sage would print me `262537412640768743.99999999999925`
-> {{{
+> 
+> ```
 > sage: R = RealField(1500)
 > sage: a = R(e) ** (R(pi) * R(163).sqrt())
 > sage: a.n(digits=33)
 > 2.62537412640768743999999999999250e17
 > sage: "{:.70f}".format(a)
 > TypeError: unsupported format string passed to sage.rings.real_mpfr.RealNumber.__format__
-> }}}
+> ```
 > is there a way to print `2.62537412640768743999999999999250e17` as `262537412640768743.99999999999925`?
+
 
 A solution is:
 
@@ -1403,13 +1391,12 @@ sage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)
 
 
 
-
 ---
 
 archive/issue_comments_065819.json:
 ```json
 {
-    "body": "Replying to [comment:45 egourgoulhon]:\n> \n> A solution is:\n> {{{\n> sage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)\n> '262537412640768743.999999999999249212'\n> }}}\nThank you!",
+    "body": "Replying to [comment:45 egourgoulhon]:\n> \n> A solution is:\n> \n> ```\n> sage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)\n> '262537412640768743.999999999999249212'\n> ```\n\nThank you!",
     "created_at": "2019-04-14T10:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7682",
     "type": "issue_comment",
@@ -1421,8 +1408,10 @@ archive/issue_comments_065819.json:
 Replying to [comment:45 egourgoulhon]:
 > 
 > A solution is:
-> {{{
+> 
+> ```
 > sage: n(exp(pi*sqrt(163)), digits=33).str(no_sci=2)
 > '262537412640768743.999999999999249212'
-> }}}
+> ```
+
 Thank you!

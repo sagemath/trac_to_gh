@@ -193,7 +193,7 @@ archive/issue_events_008949.json:
 archive/issue_comments_027847.json:
 ```json
 {
-    "body": "I applied the patch, but got\n\n\n```\nsage -t  devel/sage/sage/structure/sage_object.pyx          **********************************************************************\nFile \"/home/jaap/downloads/sage-3.2.rc1/devel/sage/sage/structure/sage_object.pyx\", line 750:\n    sage: sage.structure.sage_object.unpickle_all(std)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[6]>\", line 1, in <module>\n        sage.structure.sage_object.unpickle_all(std)###line 750:\n    sage: sage.structure.sage_object.unpickle_all(std)\n      File \"sage_object.pyx\", line 764, in sage.structure.sage_object.unpickle_all (sage/structure/sage_object.c:7475)\n    IndexError: list index out of range\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.rc1/tmp/.doctest_sage_object.pybunzip2: /home/jaap/downloads/sage-3.2.rc1/data/pickle_jar.tar.bz2 is not a bzip2 file.\ntar: This does not look like a tar archive\ntar: Error exit delayed from previous errors\n\n\t [3.7 s]\n\n```\n\n\nJaap",
+    "body": "I applied the patch, but got\n\n```\nsage -t  devel/sage/sage/structure/sage_object.pyx          **********************************************************************\nFile \"/home/jaap/downloads/sage-3.2.rc1/devel/sage/sage/structure/sage_object.pyx\", line 750:\n    sage: sage.structure.sage_object.unpickle_all(std)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jaap/downloads/sage-3.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[6]>\", line 1, in <module>\n        sage.structure.sage_object.unpickle_all(std)###line 750:\n    sage: sage.structure.sage_object.unpickle_all(std)\n      File \"sage_object.pyx\", line 764, in sage.structure.sage_object.unpickle_all (sage/structure/sage_object.c:7475)\n    IndexError: list index out of range\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.2.rc1/tmp/.doctest_sage_object.pybunzip2: /home/jaap/downloads/sage-3.2.rc1/data/pickle_jar.tar.bz2 is not a bzip2 file.\ntar: This does not look like a tar archive\ntar: Error exit delayed from previous errors\n\n\t [3.7 s]\n\n```\n\nJaap",
     "created_at": "2008-11-18T15:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
@@ -203,7 +203,6 @@ archive/issue_comments_027847.json:
 ```
 
 I applied the patch, but got
-
 
 ```
 sage -t  devel/sage/sage/structure/sage_object.pyx          **********************************************************************
@@ -234,7 +233,6 @@ tar: Error exit delayed from previous errors
 
 ```
 
-
 Jaap
 
 
@@ -244,7 +242,7 @@ Jaap
 archive/issue_comments_027848.json:
 ```json
 {
-    "body": "Sorry for the noise.\n\nNow I put in the correct file and all's well\n\n\n\n```\n[jaap@paix sage-3.2.rc1]$ ./sage -t  devel/sage/sage/structure/sage_object.pyx\nsage -t  devel/sage/sage/structure/sage_object.pyx          \n\t [6.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\nSo positive review.\n\n\n```\n",
+    "body": "Sorry for the noise.\n\nNow I put in the correct file and all's well\n\n\n```\n[jaap@paix sage-3.2.rc1]$ ./sage -t  devel/sage/sage/structure/sage_object.pyx\nsage -t  devel/sage/sage/structure/sage_object.pyx          \n\t [6.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\nSo positive review.\n\n\n```",
     "created_at": "2008-11-18T15:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
@@ -256,7 +254,6 @@ archive/issue_comments_027848.json:
 Sorry for the noise.
 
 Now I put in the correct file and all's well
-
 
 
 ```
@@ -271,7 +268,6 @@ So positive review.
 
 
 ```
-
 
 
 
@@ -342,7 +338,7 @@ gsw
 archive/issue_comments_027851.json:
 ```json
 {
-    "body": "Replying to [comment:9 GeorgSWeber]:\n> Hi folks,\n> \n> there does not seem to be any problem with binary distributions, once that file \"pickle_jar.tar.bz2\" exists. See line 52 of the \"sage-bdist\" script, where among others the complete subtree under /data is copied over.\n\nMaybe, but in which spkg does the data directory end up? I can see the content of extcode, but not the data directory itself.\n\n> As for source distributions, essentially the distribution of the file \"pickle_jar.tar.bz2\" is not necessary --- it can be (re-)produced from any source distribution by a (very) short sequence of commands that does not change. In that sense it's a \"build output\". For convenience, one might think about having a make target \"make pickle_jar\".\n\nThe point is that the *old* pickle jar works.\n\n> But since the doctest introduced by this patch requires the prior existence of this file \"pickle_jar.tar.bz2\", and since maybe we don't want to produce updated pickle jars for each and every Sage version in say the alpha release cycles, a simplistic spkg could be the solution:\n> \n> \"sage_pickle_jar-X.Y.Z.spkg\" containing just the three files \"spkg-install\", \"SPKG.txt\", and \"pickle_jar.tar.bz2\"; and spkg-install just issue a single \"cp\" command.\n> Then, e.g. Sage version 3.3.2.alpha4 could still contain the spkg \"sage_pickle_jar-3.3.1.spkg\".\n> \n> To make the creation of updated versions of this simplistic spkg easier, using the existing scripts machinery, it would be advisable not to use the directory \"data/\" to store the file \"pickle_jar.tar.bz2\", but instead the directory \"data/sage_pickle_jar/\",\n> and storing there all these three files. (So a simple \"spkg -pkg ...\" does the job of creating the updated spkg.)\n\nWe don't want another spkg - that idea was rejected. I am not 100% clear why, but that is what lead to this problem in the first place.\n\n> Of course the naming could also be \"std_pickle_jar\" instead, or similar.\n> \n> I'd volunteer to create and test the needed script \"spkg-install\" resp. that simplistic spkg, opening another ticket for it, if someone gives me a \"Yep. Good idea. Go for it!\". Then the usual review process would take its course, and this ticket would depend on that other ticket. \n> \n> Cheers,\n\n> gsw\n\nThe easiest solution IMHO would be to check the archive into $SAGE_ROOT/data/extcode/pickle_jar and adjust the path in the patch here.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 GeorgSWeber]:\n> Hi folks,\n> \n> there does not seem to be any problem with binary distributions, once that file \"pickle_jar.tar.bz2\" exists. See line 52 of the \"sage-bdist\" script, where among others the complete subtree under /data is copied over.\n\n\nMaybe, but in which spkg does the data directory end up? I can see the content of extcode, but not the data directory itself.\n\n> As for source distributions, essentially the distribution of the file \"pickle_jar.tar.bz2\" is not necessary --- it can be (re-)produced from any source distribution by a (very) short sequence of commands that does not change. In that sense it's a \"build output\". For convenience, one might think about having a make target \"make pickle_jar\".\n\n\nThe point is that the *old* pickle jar works.\n\n> But since the doctest introduced by this patch requires the prior existence of this file \"pickle_jar.tar.bz2\", and since maybe we don't want to produce updated pickle jars for each and every Sage version in say the alpha release cycles, a simplistic spkg could be the solution:\n> \n> \"sage_pickle_jar-X.Y.Z.spkg\" containing just the three files \"spkg-install\", \"SPKG.txt\", and \"pickle_jar.tar.bz2\"; and spkg-install just issue a single \"cp\" command.\n> Then, e.g. Sage version 3.3.2.alpha4 could still contain the spkg \"sage_pickle_jar-3.3.1.spkg\".\n> \n> To make the creation of updated versions of this simplistic spkg easier, using the existing scripts machinery, it would be advisable not to use the directory \"data/\" to store the file \"pickle_jar.tar.bz2\", but instead the directory \"data/sage_pickle_jar/\",\n> and storing there all these three files. (So a simple \"spkg -pkg ...\" does the job of creating the updated spkg.)\n\n\nWe don't want another spkg - that idea was rejected. I am not 100% clear why, but that is what lead to this problem in the first place.\n\n> Of course the naming could also be \"std_pickle_jar\" instead, or similar.\n> \n> I'd volunteer to create and test the needed script \"spkg-install\" resp. that simplistic spkg, opening another ticket for it, if someone gives me a \"Yep. Good idea. Go for it!\". Then the usual review process would take its course, and this ticket would depend on that other ticket. \n> \n> Cheers,\n\n\n> gsw\n\n\nThe easiest solution IMHO would be to check the archive into $SAGE_ROOT/data/extcode/pickle_jar and adjust the path in the patch here.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-19T21:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3900",
     "type": "issue_comment",
@@ -356,9 +352,11 @@ Replying to [comment:9 GeorgSWeber]:
 > 
 > there does not seem to be any problem with binary distributions, once that file "pickle_jar.tar.bz2" exists. See line 52 of the "sage-bdist" script, where among others the complete subtree under /data is copied over.
 
+
 Maybe, but in which spkg does the data directory end up? I can see the content of extcode, but not the data directory itself.
 
 > As for source distributions, essentially the distribution of the file "pickle_jar.tar.bz2" is not necessary --- it can be (re-)produced from any source distribution by a (very) short sequence of commands that does not change. In that sense it's a "build output". For convenience, one might think about having a make target "make pickle_jar".
+
 
 The point is that the *old* pickle jar works.
 
@@ -370,6 +368,7 @@ The point is that the *old* pickle jar works.
 > To make the creation of updated versions of this simplistic spkg easier, using the existing scripts machinery, it would be advisable not to use the directory "data/" to store the file "pickle_jar.tar.bz2", but instead the directory "data/sage_pickle_jar/",
 > and storing there all these three files. (So a simple "spkg -pkg ..." does the job of creating the updated spkg.)
 
+
 We don't want another spkg - that idea was rejected. I am not 100% clear why, but that is what lead to this problem in the first place.
 
 > Of course the naming could also be "std_pickle_jar" instead, or similar.
@@ -378,7 +377,9 @@ We don't want another spkg - that idea was rejected. I am not 100% clear why, bu
 > 
 > Cheers,
 
+
 > gsw
+
 
 The easiest solution IMHO would be to check the archive into $SAGE_ROOT/data/extcode/pickle_jar and adjust the path in the patch here.
 

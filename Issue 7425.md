@@ -3,7 +3,7 @@
 archive/issues_007425.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n`I.variety()` should first check whether the ideal I is indeed 0-dimensional and refuse to continue otherwise.  This should be a fairly trivial fix.  Right now the following seems to run forever:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x, y, z> = QQ[]\nsage: I = R.ideal([x^2-y^3*z, x+y*z])\nsage: I.dimension()\n1\nsage: I.variety()\nverbose 0 (1808: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n```\n\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7425\n\n",
+    "body": "Assignee: @malb\n\n`I.variety()` should first check whether the ideal I is indeed 0-dimensional and refuse to continue otherwise.  This should be a fairly trivial fix.  Right now the following seems to run forever:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x, y, z> = QQ[]\nsage: I = R.ideal([x^2-y^3*z, x+y*z])\nsage: I.dimension()\n1\nsage: I.variety()\nverbose 0 (1808: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n```\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7425\n\n",
     "created_at": "2009-11-10T23:11:29Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 `I.variety()` should first check whether the ideal I is indeed 0-dimensional and refuse to continue otherwise.  This should be a fairly trivial fix.  Right now the following seems to run forever:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -31,7 +30,6 @@ sage: I.dimension()
 sage: I.variety()
 verbose 0 (1808: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.
 ```
-
 | Sage Version 4.2, Release Date: 2009-10-24                         |
 | Type notebook() for the GUI, and license() for information.        |
 

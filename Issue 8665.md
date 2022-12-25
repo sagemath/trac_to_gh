@@ -3,7 +3,7 @@
 archive/issues_008665.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n\n```\nOn Apr 8, 2010, at 2:48 PM, msafiri wrote:\n\nHi all,\nticket #7207 is closed. However, using python mode,\n\nfrom __future__ import division\n1/2\n\nyields 0. (This is using Sage 4.3.4 on the sagenb.org server.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8665\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n```\nOn Apr 8, 2010, at 2:48 PM, msafiri wrote:\n\nHi all,\nticket #7207 is closed. However, using python mode,\n\nfrom __future__ import division\n1/2\n\nyields 0. (This is using Sage 4.3.4 on the sagenb.org server.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8665\n\n",
     "created_at": "2010-04-09T09:02:07Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: jason, was
 
 CC:  @fchapoton
 
-
 ```
 On Apr 8, 2010, at 2:48 PM, msafiri wrote:
 
@@ -32,7 +31,6 @@ from __future__ import division
 
 yields 0. (This is using Sage 4.3.4 on the sagenb.org server.)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8665
 

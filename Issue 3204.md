@@ -67,7 +67,7 @@ I'm curious what the speed differences are with SSE2 support now.  Do you have a
 archive/issue_comments_022091.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> I'm curious what the speed differences are with SSE2 support now.  Do you have any timings?\n\nIt is not too overwhelming:\n* It only improves things up t L2 cache size for my code since then the cache miss is more expensive, however a more clever programmer might be able to prefetch around this problem.\n* On AMD CPUs it seems slower (see my mail to [sage-devel])\n\n**64-bit Debian/Linux Core2Duo 2.33Ghz without SSE2**\n\n\n```\nsage: A = random_matrix(GF(2),8*1024,8*1024)\nsage: B = random_matrix(GF(2),8*1024,8*1024)\nsage: time C = A._multiply_strassen(B,cutoff=1024)\nCPU times: user 2.25 s, sys: 0.01 s, total: 2.26 s\nWall time: 2.28\n\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 2.11 s, sys: 0.02 s, total: 2.13 s\nWall time: 2.13\n\nsage: time C = A._multiply_strassen(B,cutoff=4*1024)\nCPU times: user 4.27 s, sys: 0.01 s, total: 4.28 s\nWall time: 4.31\n\nsage: A = random_matrix(GF(2),16*1024,16*1024)\nsage: B = random_matrix(GF(2),16*1024,16*1024)\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 25.01 s, sys: 0.09 s, total: 25.09 s\nWall time: 25.23\n```\n\n\n**64-bit Debian/Linux Core2Duo 2.33Ghz with SSE2**\n\n\n```\nsage: A = random_matrix(GF(2),8*1024,8*1024)\nsage: B = random_matrix(GF(2),8*1024,8*1024)\nsage: time C = A._multiply_strassen(B,cutoff=1024)\nCPU times: user 2.29 s, sys: 0.01 s, total: 2.30 s\nWall time: 2.32\n\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 1.82 s, sys: 0.02 s, total: 1.84 s\nWall time: 1.86\n\nsage: time C = A._multiply_strassen(B,cutoff=4*1024)\nCPU times: user 3.73 s, sys: 0.16 s, total: 3.89 s\nWall time: 3.99\n\nsage: A = random_matrix(GF(2),16*1024,16*1024)\nsage: B = random_matrix(GF(2),16*1024,16*1024)\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 22.84 s, sys: 0.08 s, total: 22.93 s\nWall time: 23.06\n```\n\n\nI don't claim to have a close to optimal implementation, though. In fact, this experience taught me that there is much I don't yet understand about writing tight C code.",
+    "body": "Replying to [comment:1 jason]:\n> I'm curious what the speed differences are with SSE2 support now.  Do you have any timings?\n\n\nIt is not too overwhelming:\n* It only improves things up t L2 cache size for my code since then the cache miss is more expensive, however a more clever programmer might be able to prefetch around this problem.\n* On AMD CPUs it seems slower (see my mail to [sage-devel])\n\n**64-bit Debian/Linux Core2Duo 2.33Ghz without SSE2**\n\n```\nsage: A = random_matrix(GF(2),8*1024,8*1024)\nsage: B = random_matrix(GF(2),8*1024,8*1024)\nsage: time C = A._multiply_strassen(B,cutoff=1024)\nCPU times: user 2.25 s, sys: 0.01 s, total: 2.26 s\nWall time: 2.28\n\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 2.11 s, sys: 0.02 s, total: 2.13 s\nWall time: 2.13\n\nsage: time C = A._multiply_strassen(B,cutoff=4*1024)\nCPU times: user 4.27 s, sys: 0.01 s, total: 4.28 s\nWall time: 4.31\n\nsage: A = random_matrix(GF(2),16*1024,16*1024)\nsage: B = random_matrix(GF(2),16*1024,16*1024)\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 25.01 s, sys: 0.09 s, total: 25.09 s\nWall time: 25.23\n```\n\n**64-bit Debian/Linux Core2Duo 2.33Ghz with SSE2**\n\n```\nsage: A = random_matrix(GF(2),8*1024,8*1024)\nsage: B = random_matrix(GF(2),8*1024,8*1024)\nsage: time C = A._multiply_strassen(B,cutoff=1024)\nCPU times: user 2.29 s, sys: 0.01 s, total: 2.30 s\nWall time: 2.32\n\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 1.82 s, sys: 0.02 s, total: 1.84 s\nWall time: 1.86\n\nsage: time C = A._multiply_strassen(B,cutoff=4*1024)\nCPU times: user 3.73 s, sys: 0.16 s, total: 3.89 s\nWall time: 3.99\n\nsage: A = random_matrix(GF(2),16*1024,16*1024)\nsage: B = random_matrix(GF(2),16*1024,16*1024)\nsage: time C = A._multiply_strassen(B,cutoff=2*1024)\nCPU times: user 22.84 s, sys: 0.08 s, total: 22.93 s\nWall time: 23.06\n```\n\nI don't claim to have a close to optimal implementation, though. In fact, this experience taught me that there is much I don't yet understand about writing tight C code.",
     "created_at": "2008-05-14T23:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -79,12 +79,12 @@ archive/issue_comments_022091.json:
 Replying to [comment:1 jason]:
 > I'm curious what the speed differences are with SSE2 support now.  Do you have any timings?
 
+
 It is not too overwhelming:
 * It only improves things up t L2 cache size for my code since then the cache miss is more expensive, however a more clever programmer might be able to prefetch around this problem.
 * On AMD CPUs it seems slower (see my mail to [sage-devel])
 
 **64-bit Debian/Linux Core2Duo 2.33Ghz without SSE2**
-
 
 ```
 sage: A = random_matrix(GF(2),8*1024,8*1024)
@@ -108,9 +108,7 @@ CPU times: user 25.01 s, sys: 0.09 s, total: 25.09 s
 Wall time: 25.23
 ```
 
-
 **64-bit Debian/Linux Core2Duo 2.33Ghz with SSE2**
-
 
 ```
 sage: A = random_matrix(GF(2),8*1024,8*1024)
@@ -134,7 +132,6 @@ CPU times: user 22.84 s, sys: 0.08 s, total: 22.93 s
 Wall time: 23.06
 ```
 
-
 I don't claim to have a close to optimal implementation, though. In fact, this experience taught me that there is much I don't yet understand about writing tight C code.
 
 
@@ -144,7 +141,7 @@ I don't claim to have a close to optimal implementation, though. In fact, this e
 archive/issue_comments_022092.json:
 ```json
 {
-    "body": "REVIEW:\n\n```\ntried your new code up at #3204 under OS X and get this:\n\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: B = random_matrix(GF(2),10^4,10^4)\nsage: time C = A._multiply_strassen(B,cutoff=3200)\nsage.bin(39971) malloc: *** error for object 0xb95c010: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x79c9c10: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x7465a00:\nnon-page-aligned, non-allocated pointer being freed\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x79ca610: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n...\nCPU times: user 10.29 s, sys: 0.26 s, total: 10.55 s\nWall time: 16.31\n\nMaybe you're doing something wrong?\n```\n",
+    "body": "REVIEW:\n\n```\ntried your new code up at #3204 under OS X and get this:\n\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: B = random_matrix(GF(2),10^4,10^4)\nsage: time C = A._multiply_strassen(B,cutoff=3200)\nsage.bin(39971) malloc: *** error for object 0xb95c010: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x79c9c10: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x7465a00:\nnon-page-aligned, non-allocated pointer being freed\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(39971) malloc: *** error for object 0x79ca610: Non-aligned\npointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n...\nCPU times: user 10.29 s, sys: 0.26 s, total: 10.55 s\nWall time: 16.31\n\nMaybe you're doing something wrong?\n```",
     "created_at": "2008-05-15T00:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -182,13 +179,12 @@ Maybe you're doing something wrong?
 
 
 
-
 ---
 
 archive/issue_comments_022093.json:
 ```json
 {
-    "body": "REPORT:\n\nI'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch\nI get even more memory errors!:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: m4ri\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: B = random_matrix(GF(2),10^4,10^4)\nsage: time C = A._multiply_strassen(B,cutoff=3200)\nsage: sage: A = random_matrix(GF(2),10^4,10^4)\nsage: sage: B = random_matrix(GF(2),10^4,10^4)\nsage: sage: time C = A._multiply_strassen(B,cutoff=3200)\nsage.bin(58961) malloc: *** error for object 0xbaba010: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(58961) malloc: *** error for object 0x78f3610: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nthousands more\nCPU times: user 9.03 s, sys: 0.29 s, total: 9.32 s\nWall time: 13.70\n```\n",
+    "body": "REPORT:\n\nI'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch\nI get even more memory errors!:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: m4ri\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: B = random_matrix(GF(2),10^4,10^4)\nsage: time C = A._multiply_strassen(B,cutoff=3200)\nsage: sage: A = random_matrix(GF(2),10^4,10^4)\nsage: sage: B = random_matrix(GF(2),10^4,10^4)\nsage: sage: time C = A._multiply_strassen(B,cutoff=3200)\nsage.bin(58961) malloc: *** error for object 0xbaba010: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(58961) malloc: *** error for object 0x78f3610: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nthousands more\nCPU times: user 9.03 s, sys: 0.29 s, total: 9.32 s\nWall time: 13.70\n```",
     "created_at": "2008-05-16T04:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -201,7 +197,6 @@ REPORT:
 
 I'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch
 I get even more memory errors!:
-
 
 ```
 ----------------------------------------------------------------------
@@ -224,13 +219,12 @@ Wall time: 13.70
 
 
 
-
 ---
 
 archive/issue_comments_022094.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> REPORT:\n> \n> I'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch\n> I get even more memory errors!:\n\nIf the above is not a typo then you are still using 200805**14** which was never fixed. The bug is supposed to be fixed in 200805**15**.",
+    "body": "Replying to [comment:4 was]:\n> REPORT:\n> \n> I'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch\n> I get even more memory errors!:\n\n\nIf the above is not a typo then you are still using 200805**14** which was never fixed. The bug is supposed to be fixed in 200805**15**.",
     "created_at": "2008-05-16T08:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -244,6 +238,7 @@ Replying to [comment:4 was]:
 > 
 > I'm using OS X 10.5.1 with GCC gcc version 4.0.1 (Apple Inc. build 5465) on my os x core 2 duo laptop.   After using your updated spkg (libm4ri-20080514.p0) and latest posted patch
 > I get even more memory errors!:
+
 
 If the above is not a typo then you are still using 200805**14** which was never fixed. The bug is supposed to be fixed in 200805**15**.
 
@@ -278,7 +273,7 @@ works fine!
 archive/issue_comments_022096.json:
 ```json
 {
-    "body": "Upgraded the link to 200805**16** which fixes a bug discovered by the Gentoo QA:\n\n\n```\n * QA Notice: Package has poor programming practices which may compile\n *            fine but exhibit random runtime failures.\n * src/misc.c:121: warning: implicit declaration of function '_mm_free'\n```\n\n\nand was brought to my attention by Francois Bissey.",
+    "body": "Upgraded the link to 200805**16** which fixes a bug discovered by the Gentoo QA:\n\n```\n * QA Notice: Package has poor programming practices which may compile\n *            fine but exhibit random runtime failures.\n * src/misc.c:121: warning: implicit declaration of function '_mm_free'\n```\n\nand was brought to my attention by Francois Bissey.",
     "created_at": "2008-05-16T14:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3204",
     "type": "issue_comment",
@@ -289,13 +284,11 @@ archive/issue_comments_022096.json:
 
 Upgraded the link to 200805**16** which fixes a bug discovered by the Gentoo QA:
 
-
 ```
  * QA Notice: Package has poor programming practices which may compile
  *            fine but exhibit random runtime failures.
  * src/misc.c:121: warning: implicit declaration of function '_mm_free'
 ```
-
 
 and was brought to my attention by Francois Bissey.
 

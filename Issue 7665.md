@@ -3,7 +3,7 @@
 archive/issues_007665.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @haraldschilly drkirkby jverzani@gmail.com\n\nKeywords: plot, R, graphics, statistics\n\nThis is probably hard.  It would increase our potential user base, though, as well as make it possible for people to use Sage in virtually any college course very easily (with the exception of most geometry courses, but a Geogebra plugin would do that).\n\nExamples from the recommended (not currently installed) MASS package; one can certainly come up with one's own examples, this just shows what isn't supported and the current error messages.\n\n```\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\n\nWarning message:\nIn grid.newpage() : No png support in this version of R\n\nsage: r.histogram('~ MPG.highway',data='Cars93')\n\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 9'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 9', text='M'\n\n(process:46382): Pango-WARNING **: failed to create cairo scaled font, expect ugly output. the offending font is 'Helvetica 7.1982421875'\n\n(process:46382): Pango-WARNING **: font_font status is: out of memory\n\n(process:46382): Pango-WARNING **: scaled_font status is: out of memory\n\n(process:46382): Pango-WARNING **: shaping failure, expect ugly output. shape-engine='BasicEngineFc', font='Helvetica 7.1982421875', text='0'\n\nsage: r.plot('MPG.highway ~ Weight', data='Cars93')\nNULL\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7665\n\n",
     "created_at": "2009-12-11T20:23:06Z",
     "labels": [
         "component: graphics",
@@ -55,7 +55,6 @@ sage: r.plot('MPG.highway ~ Weight', data='Cars93')
 NULL
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7665
 
 
@@ -67,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7665
 archive/issue_comments_065518.json:
 ```json
 {
-    "body": "Okay, I have dug into this, and here are some preliminary thoughts.\n\nWe have a function r.png, which only works if capabilities('png') returns TRUE.  In the default build on Mac, we get\n\n```\n> capabilities()\n    jpeg      png     tiff    tcltk      X11     aqua http/ftp  sockets \n   FALSE    FALSE    FALSE     TRUE    FALSE    FALSE     TRUE     TRUE \n  libxml     fifo   cledit    iconv      NLS  profmem    cairo \n    TRUE     TRUE     TRUE     TRUE     TRUE    FALSE    FALSE \n```\n\nHowever, to build with X11 (which would enable png and friends) or with aqua on Mac (which would enable the quartz graphics device), we need to build with certain options.  See [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html) and [http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options](http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options) for some info. \n\nOn sagenb.org, however, we do have png and Cairo TRUE, though X11 FALSE.  The commands that give various errors on my computer in the description instead give the actual data set (!) on sagenb, except the last one which still returns NULL.  However, the following DOES work (from the documentation in interfaces/r.py):\n\n```\nr.png('temp.png')\nx = r([1,2,3])\ny = r([4,5,6])\nr.plot(x,y)\nr.dev_off()\n```\n\nSo it seems that one can do this, but it's annoying.  Similarly:\n\n```\nr.png('temp2.png')\nr.plot('MPG.highway ~ Weight', data='Cars93')\nr.dev_off()\n```\n\nworks on sagenb.  It's very nice, in fact!\n\nSo presumably if we enabled X11 on Mac (perhaps on a case-by-case basis for each version of OSX as in the above websites) we would get this at least, and perhaps also enabling aqua would solve this on Mac.  To be continued...",
+    "body": "Okay, I have dug into this, and here are some preliminary thoughts.\n\nWe have a function r.png, which only works if capabilities('png') returns TRUE.  In the default build on Mac, we get\n\n```\n> capabilities()\n    jpeg      png     tiff    tcltk      X11     aqua http/ftp  sockets \n   FALSE    FALSE    FALSE     TRUE    FALSE    FALSE     TRUE     TRUE \n  libxml     fifo   cledit    iconv      NLS  profmem    cairo \n    TRUE     TRUE     TRUE     TRUE     TRUE    FALSE    FALSE \n```\nHowever, to build with X11 (which would enable png and friends) or with aqua on Mac (which would enable the quartz graphics device), we need to build with certain options.  See [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html) and [http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options](http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options) for some info. \n\nOn sagenb.org, however, we do have png and Cairo TRUE, though X11 FALSE.  The commands that give various errors on my computer in the description instead give the actual data set (!) on sagenb, except the last one which still returns NULL.  However, the following DOES work (from the documentation in interfaces/r.py):\n\n```\nr.png('temp.png')\nx = r([1,2,3])\ny = r([4,5,6])\nr.plot(x,y)\nr.dev_off()\n```\nSo it seems that one can do this, but it's annoying.  Similarly:\n\n```\nr.png('temp2.png')\nr.plot('MPG.highway ~ Weight', data='Cars93')\nr.dev_off()\n```\nworks on sagenb.  It's very nice, in fact!\n\nSo presumably if we enabled X11 on Mac (perhaps on a case-by-case basis for each version of OSX as in the above websites) we would get this at least, and perhaps also enabling aqua would solve this on Mac.  To be continued...",
     "created_at": "2010-02-09T14:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -87,7 +86,6 @@ We have a function r.png, which only works if capabilities('png') returns TRUE. 
   libxml     fifo   cledit    iconv      NLS  profmem    cairo 
     TRUE     TRUE     TRUE     TRUE     TRUE    FALSE    FALSE 
 ```
-
 However, to build with X11 (which would enable png and friends) or with aqua on Mac (which would enable the quartz graphics device), we need to build with certain options.  See [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html) and [http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options](http://cran.r-project.org/doc/manuals/R-admin.html#Configuration-options) for some info. 
 
 On sagenb.org, however, we do have png and Cairo TRUE, though X11 FALSE.  The commands that give various errors on my computer in the description instead give the actual data set (!) on sagenb, except the last one which still returns NULL.  However, the following DOES work (from the documentation in interfaces/r.py):
@@ -99,7 +97,6 @@ y = r([4,5,6])
 r.plot(x,y)
 r.dev_off()
 ```
-
 So it seems that one can do this, but it's annoying.  Similarly:
 
 ```
@@ -107,7 +104,6 @@ r.png('temp2.png')
 r.plot('MPG.highway ~ Weight', data='Cars93')
 r.dev_off()
 ```
-
 works on sagenb.  It's very nice, in fact!
 
 So presumably if we enabled X11 on Mac (perhaps on a case-by-case basis for each version of OSX as in the above websites) we would get this at least, and perhaps also enabling aqua would solve this on Mac.  To be continued...
@@ -119,7 +115,7 @@ So presumably if we enabled X11 on Mac (perhaps on a case-by-case basis for each
 archive/issue_comments_065519.json:
 ```json
 {
-    "body": "Another idea would be to change r.plot (not r.png or the 'native' ones like r.bwplot or r.histogram) to automatically select a temporary filename and turn off the device.  It is absolutely ridiculous that we can't have at least one of the R plot commands \"just work\" as opposed to needing this three-step thing (which apparently is universal in R).\n\nAlso, if I load the lattice library, I now get\n\n```\nsage: r.histogram('~ MPG.highway',data='Cars93')\nError in device.call(...) : X11 is not available\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\nError in device.call(...) : X11 is not available\n```\n\nwhich is certainly a better error message than before.",
+    "body": "Another idea would be to change r.plot (not r.png or the 'native' ones like r.bwplot or r.histogram) to automatically select a temporary filename and turn off the device.  It is absolutely ridiculous that we can't have at least one of the R plot commands \"just work\" as opposed to needing this three-step thing (which apparently is universal in R).\n\nAlso, if I load the lattice library, I now get\n\n```\nsage: r.histogram('~ MPG.highway',data='Cars93')\nError in device.call(...) : X11 is not available\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\nError in device.call(...) : X11 is not available\n```\nwhich is certainly a better error message than before.",
     "created_at": "2010-02-09T14:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -138,7 +134,6 @@ Error in device.call(...) : X11 is not available
 sage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')
 Error in device.call(...) : X11 is not available
 ```
-
 which is certainly a better error message than before.
 
 
@@ -148,7 +143,7 @@ which is certainly a better error message than before.
 archive/issue_comments_065520.json:
 ```json
 {
-    "body": "Yet another interesting issue for the Mac: in configuring, we get \n\n```\nchecking for X... no\nconfigure: error: --with-x=yes (default) and X11 headers/libs are not available\nConfiguring R with fallback options\n```\n\nand indeed\n\n```\n$ if [ -f /usr/include/X11/Xwindows.h ]; then\n>     XSUPPORT=yes\n> else\n>     XSUPPORT=no\n> fi\n$ echo $XSUPPORT\nyes\n```\n\nbut as [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029) points out, that is not enough on Snow Leopard, and the other versions have their own issues.  If Aqua ends up working for plotting, we will probably want to completely disable X11 support, since it doesn't work the same on each version anyway.",
+    "body": "Yet another interesting issue for the Mac: in configuring, we get \n\n```\nchecking for X... no\nconfigure: error: --with-x=yes (default) and X11 headers/libs are not available\nConfiguring R with fallback options\n```\nand indeed\n\n```\n$ if [ -f /usr/include/X11/Xwindows.h ]; then\n>     XSUPPORT=yes\n> else\n>     XSUPPORT=no\n> fi\n$ echo $XSUPPORT\nyes\n```\nbut as [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029) points out, that is not enough on Snow Leopard, and the other versions have their own issues.  If Aqua ends up working for plotting, we will probably want to completely disable X11 support, since it doesn't work the same on each version anyway.",
     "created_at": "2010-02-09T14:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -164,7 +159,6 @@ checking for X... no
 configure: error: --with-x=yes (default) and X11 headers/libs are not available
 Configuring R with fallback options
 ```
-
 and indeed
 
 ```
@@ -176,7 +170,6 @@ $ if [ -f /usr/include/X11/Xwindows.h ]; then
 $ echo $XSUPPORT
 yes
 ```
-
 but as [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029](http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-_0028optional_0029) points out, that is not enough on Snow Leopard, and the other versions have their own issues.  If Aqua ends up working for plotting, we will probably want to completely disable X11 support, since it doesn't work the same on each version anyway.
 
 
@@ -186,7 +179,7 @@ but as [http://CRAN.R-project.org/bin/macosx/RMacOSX-FAQ.html#X11-window-server-
 archive/issue_comments_065521.json:
 ```json
 {
-    "body": "On Snow Leopard (OSX 10.6), re-enabling aqua allows the following:\n\n```\nsage: r.quartz(type='png')\nNULL # But nice quartz viewer pops up!\nsage: x = r([1,2,3])\nsage: y = r([4,5,6])\nsage: r.plot(x,y) # Nice plot of this pops up!\nNULL\nsage: r.dev_off() # Turns off the quartz viewer\nnull device \n          1 \n```\n",
+    "body": "On Snow Leopard (OSX 10.6), re-enabling aqua allows the following:\n\n```\nsage: r.quartz(type='png')\nNULL # But nice quartz viewer pops up!\nsage: x = r([1,2,3])\nsage: y = r([4,5,6])\nsage: r.plot(x,y) # Nice plot of this pops up!\nNULL\nsage: r.dev_off() # Turns off the quartz viewer\nnull device \n          1 \n```",
     "created_at": "2010-02-09T15:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -208,7 +201,6 @@ sage: r.dev_off() # Turns off the quartz viewer
 null device 
           1 
 ```
-
 
 
 
@@ -389,7 +381,7 @@ Thanks, Tim, that would be fantastic to have the sagenb package to try this out.
 archive/issue_comments_065531.json:
 ```json
 {
-    "body": "The new spkg is here: http://sage.math.washington.edu/home/timdumol/sagenb-0.7.5.3-devel-7665.spkg\n\nYou could launch a temporary Sage notebook server, and try that out.\n\n\n```\n\nsage: notebook(interface=\"\", secure=True, port=10000)\n\n```\n",
+    "body": "The new spkg is here: http://sage.math.washington.edu/home/timdumol/sagenb-0.7.5.3-devel-7665.spkg\n\nYou could launch a temporary Sage notebook server, and try that out.\n\n```\n\nsage: notebook(interface=\"\", secure=True, port=10000)\n\n```",
     "created_at": "2010-04-13T17:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -402,13 +394,11 @@ The new spkg is here: http://sage.math.washington.edu/home/timdumol/sagenb-0.7.5
 
 You could launch a temporary Sage notebook server, and try that out.
 
-
 ```
 
 sage: notebook(interface="", secure=True, port=10000)
 
 ```
-
 
 
 
@@ -437,7 +427,7 @@ For the other thing, so would I go to sage.math.../home/kcrisman:10000 or someth
 archive/issue_comments_065533.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> The spkg is not downloading properly - Sage says it is empty, then corrupt.\n> \nI think the problem is that the name of the spkg is not the same as the name of the folder once it's unzipped.",
+    "body": "Replying to [comment:14 kcrisman]:\n> The spkg is not downloading properly - Sage says it is empty, then corrupt.\n> \n\nI think the problem is that the name of the spkg is not the same as the name of the folder once it's unzipped.",
     "created_at": "2010-04-13T18:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -449,6 +439,7 @@ archive/issue_comments_065533.json:
 Replying to [comment:14 kcrisman]:
 > The spkg is not downloading properly - Sage says it is empty, then corrupt.
 > 
+
 I think the problem is that the name of the spkg is not the same as the name of the folder once it's unzipped.
 
 
@@ -458,7 +449,7 @@ I think the problem is that the name of the spkg is not the same as the name of 
 archive/issue_comments_065534.json:
 ```json
 {
-    "body": "I was able to use it, but got a problem:\n\n\n```\n    cmd = self._eval_cmd(system, input)\n\texceptions.TypeError: _eval_cmd() takes exactly 4 arguments (3 given)\n\n```\n\n\nSo for instance Shift+Enter just creates a new line in the cell.  In fact, even clicking the 'evaluate' button doesn't work!  Also, for some reason I can no longer evaluate several commands by doing a semicolon between them.  Am I doing something wrong?  Or are these legacies of the other patches?",
+    "body": "I was able to use it, but got a problem:\n\n```\n    cmd = self._eval_cmd(system, input)\n\texceptions.TypeError: _eval_cmd() takes exactly 4 arguments (3 given)\n\n```\n\nSo for instance Shift+Enter just creates a new line in the cell.  In fact, even clicking the 'evaluate' button doesn't work!  Also, for some reason I can no longer evaluate several commands by doing a semicolon between them.  Am I doing something wrong?  Or are these legacies of the other patches?",
     "created_at": "2010-04-13T19:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -469,13 +460,11 @@ archive/issue_comments_065534.json:
 
 I was able to use it, but got a problem:
 
-
 ```
     cmd = self._eval_cmd(system, input)
 	exceptions.TypeError: _eval_cmd() takes exactly 4 arguments (3 given)
 
 ```
-
 
 So for instance Shift+Enter just creates a new line in the cell.  In fact, even clicking the 'evaluate' button doesn't work!  Also, for some reason I can no longer evaluate several commands by doing a semicolon between them.  Am I doing something wrong?  Or are these legacies of the other patches?
 
@@ -486,7 +475,7 @@ So for instance Shift+Enter just creates a new line in the cell.  In fact, even 
 archive/issue_comments_065535.json:
 ```json
 {
-    "body": "So maybe \n\n```\n-def _eval_cmd(self, system, cmd, dir): \n+def _eval_cmd(self, system, cmd): \n```\n\nwould suffice?  I'll try this out.",
+    "body": "So maybe \n\n```\n-def _eval_cmd(self, system, cmd, dir): \n+def _eval_cmd(self, system, cmd): \n```\nwould suffice?  I'll try this out.",
     "created_at": "2010-04-13T19:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -501,7 +490,6 @@ So maybe
 -def _eval_cmd(self, system, cmd, dir): 
 +def _eval_cmd(self, system, cmd): 
 ```
-
 would suffice?  I'll try this out.
 
 
@@ -795,7 +783,7 @@ I will test this tonight on PPC OSX, and then post an omnibus patch to the Sage 
 archive/issue_comments_065551.json:
 ```json
 {
-    "body": "Replying to [comment:27 timdumol]:\n> Sorry :P Was a bit sleepy when I wrote the documentation.\n\nIt wasn't your fault, it's already in there from someone else... anyway, before all this is done, line 2893 should be fixed with respect to that.",
+    "body": "Replying to [comment:27 timdumol]:\n> Sorry :P Was a bit sleepy when I wrote the documentation.\n\n\nIt wasn't your fault, it's already in there from someone else... anyway, before all this is done, line 2893 should be fixed with respect to that.",
     "created_at": "2010-04-19T18:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -807,6 +795,7 @@ archive/issue_comments_065551.json:
 Replying to [comment:27 timdumol]:
 > Sorry :P Was a bit sleepy when I wrote the documentation.
 
+
 It wasn't your fault, it's already in there from someone else... anyway, before all this is done, line 2893 should be fixed with respect to that.
 
 
@@ -816,7 +805,7 @@ It wasn't your fault, it's already in there from someone else... anyway, before 
 archive/issue_comments_065552.json:
 ```json
 {
-    "body": "Okay, here is something that should work and doesn't now - probably because of the new cell structure, though perhaps it already didn't work before, or maybe it's the fault of the r.png() setting its own path?  Try the following in the notebook (evaluated in Sage):\n\n```\nr.library('lattice')\nr.png()\nr(\"print(histogram(~wt | cyl, data=mtcars))\")\nr.dev_off()\n```\n\nNotice that below and to the right of the graphic there is a link for the graphic - but there is no actual graphic at that link, because it's a link to the /tmp directory (the actual evaluation directory), and the file doesn't actually exist there:\n\n```\nCrismans-Computer:~ crisman$ ls -al .sage/sage_notebook.sagenb/home/admin/0/cells/2/\ntotal 40\ndrwx------   4 crisman  crisman    136 Apr 19 20:20 .\ndrwxr-xr-x   5 crisman  crisman    170 Apr 19 20:14 ..\nlrwxr-xr-x   1 crisman  crisman     33 Apr 19 20:20 .Rplot001.png-wZKi -> /tmp/tmp_0wLLV/.Rplot001.png-wZKi\n-rwx------   1 crisman  crisman  12769 Apr 19 20:20 Rplot001.png\nCrismans-Computer:~ crisman$ ls -al /tmp/tmp_0wLLV/total 16\ndrwx------    4 crisman  wheel  136 Apr 19 20:20 .\ndrwxrwxrwt   23 root     wheel  782 Apr 19 20:20 ..\n-rw-r--r--    1 crisman  wheel   76 Apr 19 20:20 _tmp__SAGE__CoDe__.py\nlrwxr-xr-x    1 crisman  wheel   59 Apr 19 20:20 data -> /Users/crisman/.sage/sage_notebook.sagenb/home/admin/0/data\n```\n\nAny clue as to how to fix that?  I don't understand this at all.  I don't know that this should hold things up, though, particularly since one can either drag and drop the picture or just do it from the command line if one wants it.\n\nOtherwise this is all coming together nicely, also works on PPC, so I think sufficiently robust at this point.  Here is some resolution of the original examples in command line.\n\n```\nsage: r.library('MASS')\nsage: r.library('lattice')\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\nsage: r.dev_off() # Now it should be in the home directory name Rplot001.png or something\nsage: r.histogram('~ MPG.highway',data='Cars93')\nsage: r.dev_off() # Now it should be in the home directory name Rplot002.png or something\nsage: r.plot('MPG.highway ~ Weight', data='Cars93') # Calls dev.off(), so should be in home directory immediately\n```\n\nGreat!  Putting 'needs review', though presumably we'll have to do a few more things to tie up loose ends.",
+    "body": "Okay, here is something that should work and doesn't now - probably because of the new cell structure, though perhaps it already didn't work before, or maybe it's the fault of the r.png() setting its own path?  Try the following in the notebook (evaluated in Sage):\n\n```\nr.library('lattice')\nr.png()\nr(\"print(histogram(~wt | cyl, data=mtcars))\")\nr.dev_off()\n```\nNotice that below and to the right of the graphic there is a link for the graphic - but there is no actual graphic at that link, because it's a link to the /tmp directory (the actual evaluation directory), and the file doesn't actually exist there:\n\n```\nCrismans-Computer:~ crisman$ ls -al .sage/sage_notebook.sagenb/home/admin/0/cells/2/\ntotal 40\ndrwx------   4 crisman  crisman    136 Apr 19 20:20 .\ndrwxr-xr-x   5 crisman  crisman    170 Apr 19 20:14 ..\nlrwxr-xr-x   1 crisman  crisman     33 Apr 19 20:20 .Rplot001.png-wZKi -> /tmp/tmp_0wLLV/.Rplot001.png-wZKi\n-rwx------   1 crisman  crisman  12769 Apr 19 20:20 Rplot001.png\nCrismans-Computer:~ crisman$ ls -al /tmp/tmp_0wLLV/total 16\ndrwx------    4 crisman  wheel  136 Apr 19 20:20 .\ndrwxrwxrwt   23 root     wheel  782 Apr 19 20:20 ..\n-rw-r--r--    1 crisman  wheel   76 Apr 19 20:20 _tmp__SAGE__CoDe__.py\nlrwxr-xr-x    1 crisman  wheel   59 Apr 19 20:20 data -> /Users/crisman/.sage/sage_notebook.sagenb/home/admin/0/data\n```\nAny clue as to how to fix that?  I don't understand this at all.  I don't know that this should hold things up, though, particularly since one can either drag and drop the picture or just do it from the command line if one wants it.\n\nOtherwise this is all coming together nicely, also works on PPC, so I think sufficiently robust at this point.  Here is some resolution of the original examples in command line.\n\n```\nsage: r.library('MASS')\nsage: r.library('lattice')\nsage: r.bwplot('MPG.highway ~ Origin', data = 'Cars93')\nsage: r.dev_off() # Now it should be in the home directory name Rplot001.png or something\nsage: r.histogram('~ MPG.highway',data='Cars93')\nsage: r.dev_off() # Now it should be in the home directory name Rplot002.png or something\nsage: r.plot('MPG.highway ~ Weight', data='Cars93') # Calls dev.off(), so should be in home directory immediately\n```\nGreat!  Putting 'needs review', though presumably we'll have to do a few more things to tie up loose ends.",
     "created_at": "2010-04-20T01:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -833,7 +822,6 @@ r.png()
 r("print(histogram(~wt | cyl, data=mtcars))")
 r.dev_off()
 ```
-
 Notice that below and to the right of the graphic there is a link for the graphic - but there is no actual graphic at that link, because it's a link to the /tmp directory (the actual evaluation directory), and the file doesn't actually exist there:
 
 ```
@@ -849,7 +837,6 @@ drwxrwxrwt   23 root     wheel  782 Apr 19 20:20 ..
 -rw-r--r--    1 crisman  wheel   76 Apr 19 20:20 _tmp__SAGE__CoDe__.py
 lrwxr-xr-x    1 crisman  wheel   59 Apr 19 20:20 data -> /Users/crisman/.sage/sage_notebook.sagenb/home/admin/0/data
 ```
-
 Any clue as to how to fix that?  I don't understand this at all.  I don't know that this should hold things up, though, particularly since one can either drag and drop the picture or just do it from the command line if one wants it.
 
 Otherwise this is all coming together nicely, also works on PPC, so I think sufficiently robust at this point.  Here is some resolution of the original examples in command line.
@@ -863,7 +850,6 @@ sage: r.histogram('~ MPG.highway',data='Cars93')
 sage: r.dev_off() # Now it should be in the home directory name Rplot002.png or something
 sage: r.plot('MPG.highway ~ Weight', data='Cars93') # Calls dev.off(), so should be in home directory immediately
 ```
-
 Great!  Putting 'needs review', though presumably we'll have to do a few more things to tie up loose ends.
 
 
@@ -965,7 +951,7 @@ The SageNB package version suitable for testing this is at #8727.
 archive/issue_comments_065558.json:
 ```json
 {
-    "body": "1. You need `::` I think in from of several `sage:` blocks in the sage library patch. E.g., \n\n```\n \t976\t        lattices package), it is advisable to either use an interactive plotting device \n \t977\t        or to use the notebook.  The following examples are not tested, because they \n \t978\t        differ depending on operating system. \n                    .... sage:\n```\n\n\n2. In the sagenb patch, there is a spelling error:\n\n```\n        # know it's ID. __SAGE_TMP_DIR__ is used in executing in non-Sage systems.\n```\n\nBut that should be \"its\".  This is propagated by this patch, but not caused by it.  (This is probably originally my fault, from long ago.)\n\n3.  Tests pass in the SAge library fine on both Linux and OS X (bravo!). \n\nSo I think fixing a few typos, testing a little more in the notebook, and we're good to go.",
+    "body": "1. You need `::` I think in from of several `sage:` blocks in the sage library patch. E.g., \n\n```\n \t976\t        lattices package), it is advisable to either use an interactive plotting device \n \t977\t        or to use the notebook.  The following examples are not tested, because they \n \t978\t        differ depending on operating system. \n                    .... sage:\n```\n\n2. In the sagenb patch, there is a spelling error:\n\n```\n        # know it's ID. __SAGE_TMP_DIR__ is used in executing in non-Sage systems.\n```\nBut that should be \"its\".  This is propagated by this patch, but not caused by it.  (This is probably originally my fault, from long ago.)\n\n3.  Tests pass in the SAge library fine on both Linux and OS X (bravo!). \n\nSo I think fixing a few typos, testing a little more in the notebook, and we're good to go.",
     "created_at": "2010-04-24T23:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7665",
     "type": "issue_comment",
@@ -983,13 +969,11 @@ archive/issue_comments_065558.json:
                     .... sage:
 ```
 
-
 2. In the sagenb patch, there is a spelling error:
 
 ```
         # know it's ID. __SAGE_TMP_DIR__ is used in executing in non-Sage systems.
 ```
-
 But that should be "its".  This is propagated by this patch, but not caused by it.  (This is probably originally my fault, from long ago.)
 
 3.  Tests pass in the SAge library fine on both Linux and OS X (bravo!). 

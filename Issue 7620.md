@@ -3,7 +3,7 @@
 archive/issues_007620.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nKeywords: Functor composition order\n\nApparently the composition of construction functors is inconsistent.\n\n**__Examples__**\n\n\n```\nsage: from sage.categories.pushout import construction_tower\nsage: P = QQ['x','y']\nsage: construction_tower(P)\n[(None, Multivariate Polynomial Ring in x, y over Rational Field),\n (MPoly[x,y], Rational Field),\n (FractionField, Integer Ring)]\n```\n\n\nLet us see what the product of the two functors above does:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nMPoly[x,y](FractionField(...))\n```\n\n\nOK, that's reasonable, we have `F1*F2(X) = F1(F2(X))`.\n\nBut in a slightly more complicated example, the product gets messed up:\n\n\n```\nsage: P = QQ['x'].fraction_field()['y']\nsage: construction_tower(P)\n[(None,\n  Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (Poly[y],\n  Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (FractionField, Univariate Polynomial Ring in x over Rational Field),\n (Poly[x], Rational Field),\n (FractionField, Integer Ring)]\n```\n\n\nNow we do the same product as above:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\n```\n\n\nSo, apparently the order is perturbed.\n\nRelated with it, it seems counter-intuitive that the product over the expansion of a functor does not return the functor:\n\n\n```\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\nsage: prod(F.expand())\nFractionField(Poly[x](FractionField(Poly[y](...))))\n```\n\n\n**__Conventions__**\n\nPossible conventions on the order of composition are: `F1*F2(X)=F1(F2(X))` and `F1*F2(X)=F2(F1(X))`\n\nMy personal preference is `F1*F2(X)=F1(F2(X))`, and it happens to be used in the generic multiplication method of ConstructionFunctor:\n\n\n```\nclass ConstructionFunctor(Functor):\n    def __mul__(self, other):\n        if not isinstance(self, ConstructionFunctor) and not isinstance(other, ConstructionFunctor):\n            raise CoercionException, \"Non-constructive product\"\n        return CompositConstructionFunctor(other, self)\n```\n\n\nSo, I think the convention `F1*F2(X)=F1(F2(X))` should be (or is already) the official Sage convention.\n\n**__About expand()__**\n\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def expand(self):\n        return self.all\n```\n\nSince the convention `F1*F2(X)=F1(F2(X))` is used, this method should return `list(reversed(self.all))`.\n\n**__Wrong multiplication order__**\n\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def __init__(self, *args):\n        self.all = []\n        for c in args:\n            if isinstance(c, list):\n                self.all += c\n            elif isinstance(c, CompositConstructionFunctor):\n                self.all += c.all\n            else:\n                self.all.append(c)\n        Functor.__init__(self, self.all[0].domain(), self.all[-1].codomain())\n    def __mul__(self, other):\n        if isinstance(self, CompositConstructionFunctor):\n            all = self.all + [other]\n        else:\n            all = [self] + other.all\n        return CompositConstructionFunctor(*all)\n```\n\n\nThat means `self` is applied *before* `other`!\n\n**__Suggested fix__**\n\n1. I suggest that `CompositConstructionFunctor.expand()` returns `list(reversed(self.all))`. Then, we would have `prod(F.expand())==F`. \n\n2. Change the order of `self` and `other` in the multiplication method of `CompositFunctor`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7620\n\n",
+    "body": "Assignee: @nthiery\n\nKeywords: Functor composition order\n\nApparently the composition of construction functors is inconsistent.\n\n**__Examples__**\n\n```\nsage: from sage.categories.pushout import construction_tower\nsage: P = QQ['x','y']\nsage: construction_tower(P)\n[(None, Multivariate Polynomial Ring in x, y over Rational Field),\n (MPoly[x,y], Rational Field),\n (FractionField, Integer Ring)]\n```\n\nLet us see what the product of the two functors above does:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nMPoly[x,y](FractionField(...))\n```\n\nOK, that's reasonable, we have `F1*F2(X) = F1(F2(X))`.\n\nBut in a slightly more complicated example, the product gets messed up:\n\n```\nsage: P = QQ['x'].fraction_field()['y']\nsage: construction_tower(P)\n[(None,\n  Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (Poly[y],\n  Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (FractionField, Univariate Polynomial Ring in x over Rational Field),\n (Poly[x], Rational Field),\n (FractionField, Integer Ring)]\n```\n\nNow we do the same product as above:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\n```\n\nSo, apparently the order is perturbed.\n\nRelated with it, it seems counter-intuitive that the product over the expansion of a functor does not return the functor:\n\n```\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\nsage: prod(F.expand())\nFractionField(Poly[x](FractionField(Poly[y](...))))\n```\n\n**__Conventions__**\n\nPossible conventions on the order of composition are: `F1*F2(X)=F1(F2(X))` and `F1*F2(X)=F2(F1(X))`\n\nMy personal preference is `F1*F2(X)=F1(F2(X))`, and it happens to be used in the generic multiplication method of ConstructionFunctor:\n\n```\nclass ConstructionFunctor(Functor):\n    def __mul__(self, other):\n        if not isinstance(self, ConstructionFunctor) and not isinstance(other, ConstructionFunctor):\n            raise CoercionException, \"Non-constructive product\"\n        return CompositConstructionFunctor(other, self)\n```\n\nSo, I think the convention `F1*F2(X)=F1(F2(X))` should be (or is already) the official Sage convention.\n\n**__About expand()__**\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def expand(self):\n        return self.all\n```\nSince the convention `F1*F2(X)=F1(F2(X))` is used, this method should return `list(reversed(self.all))`.\n\n**__Wrong multiplication order__**\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def __init__(self, *args):\n        self.all = []\n        for c in args:\n            if isinstance(c, list):\n                self.all += c\n            elif isinstance(c, CompositConstructionFunctor):\n                self.all += c.all\n            else:\n                self.all.append(c)\n        Functor.__init__(self, self.all[0].domain(), self.all[-1].codomain())\n    def __mul__(self, other):\n        if isinstance(self, CompositConstructionFunctor):\n            all = self.all + [other]\n        else:\n            all = [self] + other.all\n        return CompositConstructionFunctor(*all)\n```\n\nThat means `self` is applied *before* `other`!\n\n**__Suggested fix__**\n\n1. I suggest that `CompositConstructionFunctor.expand()` returns `list(reversed(self.all))`. Then, we would have `prod(F.expand())==F`. \n\n2. Change the order of `self` and `other` in the multiplication method of `CompositFunctor`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7620\n\n",
     "created_at": "2009-12-08T13:02:23Z",
     "labels": [
         "component: categories",
@@ -25,7 +25,6 @@ Apparently the composition of construction functors is inconsistent.
 
 **__Examples__**
 
-
 ```
 sage: from sage.categories.pushout import construction_tower
 sage: P = QQ['x','y']
@@ -35,7 +34,6 @@ sage: construction_tower(P)
  (FractionField, Integer Ring)]
 ```
 
-
 Let us see what the product of the two functors above does:
 
 ```
@@ -44,11 +42,9 @@ sage: F
 MPoly[x,y](FractionField(...))
 ```
 
-
 OK, that's reasonable, we have `F1*F2(X) = F1(F2(X))`.
 
 But in a slightly more complicated example, the product gets messed up:
-
 
 ```
 sage: P = QQ['x'].fraction_field()['y']
@@ -62,7 +58,6 @@ sage: construction_tower(P)
  (FractionField, Integer Ring)]
 ```
 
-
 Now we do the same product as above:
 
 ```
@@ -71,11 +66,9 @@ sage: F
 FractionField(Poly[x](Poly[y](FractionField(...))))
 ```
 
-
 So, apparently the order is perturbed.
 
 Related with it, it seems counter-intuitive that the product over the expansion of a functor does not return the functor:
-
 
 ```
 sage: F
@@ -84,13 +77,11 @@ sage: prod(F.expand())
 FractionField(Poly[x](FractionField(Poly[y](...))))
 ```
 
-
 **__Conventions__**
 
 Possible conventions on the order of composition are: `F1*F2(X)=F1(F2(X))` and `F1*F2(X)=F2(F1(X))`
 
 My personal preference is `F1*F2(X)=F1(F2(X))`, and it happens to be used in the generic multiplication method of ConstructionFunctor:
-
 
 ```
 class ConstructionFunctor(Functor):
@@ -100,22 +91,18 @@ class ConstructionFunctor(Functor):
         return CompositConstructionFunctor(other, self)
 ```
 
-
 So, I think the convention `F1*F2(X)=F1(F2(X))` should be (or is already) the official Sage convention.
 
 **__About expand()__**
-
 
 ```
 class CompositConstructionFunctor(ConstructionFunctor):
     def expand(self):
         return self.all
 ```
-
 Since the convention `F1*F2(X)=F1(F2(X))` is used, this method should return `list(reversed(self.all))`.
 
 **__Wrong multiplication order__**
-
 
 ```
 class CompositConstructionFunctor(ConstructionFunctor):
@@ -136,7 +123,6 @@ class CompositConstructionFunctor(ConstructionFunctor):
             all = [self] + other.all
         return CompositConstructionFunctor(*all)
 ```
-
 
 That means `self` is applied *before* `other`!
 
@@ -176,7 +162,7 @@ Changing status from new to needs_review.
 archive/issue_comments_065005.json:
 ```json
 {
-    "body": "With the patch, that should apply to sage-4.3.alpha1, one has\n\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F1 = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0])\nsage: F2 = CompositConstructionFunctor(QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F1*F2\nPoly[x](FractionField(Poly[y](FractionField(...))))\n```\n\n\nand \n\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0],QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F\nPoly[y](FractionField(Poly[x](FractionField(...))))\nsage: prod(F.expand()) == F\nTrue\n```\n\n\nand I think that is how it should be.",
+    "body": "With the patch, that should apply to sage-4.3.alpha1, one has\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F1 = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0])\nsage: F2 = CompositConstructionFunctor(QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F1*F2\nPoly[x](FractionField(Poly[y](FractionField(...))))\n```\n\nand \n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0],QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F\nPoly[y](FractionField(Poly[x](FractionField(...))))\nsage: prod(F.expand()) == F\nTrue\n```\n\nand I think that is how it should be.",
     "created_at": "2009-12-08T13:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7620",
     "type": "issue_comment",
@@ -187,7 +173,6 @@ archive/issue_comments_065005.json:
 
 With the patch, that should apply to sage-4.3.alpha1, one has
 
-
 ```
 sage: from sage.categories.pushout import CompositConstructionFunctor
 sage: F1 = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0])
@@ -196,9 +181,7 @@ sage: F1*F2
 Poly[x](FractionField(Poly[y](FractionField(...))))
 ```
 
-
 and 
-
 
 ```
 sage: from sage.categories.pushout import CompositConstructionFunctor
@@ -208,7 +191,6 @@ Poly[y](FractionField(Poly[x](FractionField(...))))
 sage: prod(F.expand()) == F
 True
 ```
-
 
 and I think that is how it should be.
 

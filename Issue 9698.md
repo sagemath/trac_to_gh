@@ -117,7 +117,7 @@ Nathann
 archive/issue_comments_094105.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> Wow !!! This sounds great !! I promise I will give this patch a look as soon as possible ! :-)\n> \n> I have a few questions already...\n> \n>  * I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?\n\nYes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\n>  * If your algorithm is fast enough, could it be interesting to check when calling is_hamiltonian the answer given by your algorithm before solving the actual tsp problem (which is sometimes veeeeeery long) ?\n\nI am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\n>  * Main question : as it is a backtracking algorithm, and this may require a lot of computational work... What would you think of making it a Cython function, to give t more energy ? :-)\n\nThis sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\n\n> \n> Thaaaanksssssssss ! :-)\n> \n> Nathann\n\nCheers,\nFidel",
+    "body": "Replying to [comment:2 ncohen]:\n> Wow !!! This sounds great !! I promise I will give this patch a look as soon as possible ! :-)\n> \n> I have a few questions already...\n> \n> * I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?\n\n\nYes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\n>  * If your algorithm is fast enough, could it be interesting to check when calling is_hamiltonian the answer given by your algorithm before solving the actual tsp problem (which is sometimes veeeeeery long) ?\n\n\nI am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\n>  * Main question : as it is a backtracking algorithm, and this may require a lot of computational work... What would you think of making it a Cython function, to give t more energy ? :-)\n\n\nThis sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\n\n> \n> Thaaaanksssssssss ! :-)\n> \n> Nathann\n\n\nCheers,\nFidel",
     "created_at": "2010-08-08T03:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -131,15 +131,18 @@ Replying to [comment:2 ncohen]:
 > 
 > I have a few questions already...
 > 
->  * I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?
+> * I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?
+
 
 Yes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.
 
 >  * If your algorithm is fast enough, could it be interesting to check when calling is_hamiltonian the answer given by your algorithm before solving the actual tsp problem (which is sometimes veeeeeery long) ?
 
+
 I am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.
 
 >  * Main question : as it is a backtracking algorithm, and this may require a lot of computational work... What would you think of making it a Cython function, to give t more energy ? :-)
+
 
 This sounds great! I have never implemented anything in Cython, but I'll give it a try. :)
 
@@ -148,6 +151,7 @@ This sounds great! I have never implemented anything in Cython, but I'll give it
 > Thaaaanksssssssss ! :-)
 > 
 > Nathann
+
 
 Cheers,
 Fidel
@@ -159,7 +163,7 @@ Fidel
 archive/issue_comments_094106.json:
 ```json
 {
-    "body": "> Yes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\nHmm.. I was about to answer \"yes\" when I noticed that your algorithm, even though it may return an hamiltonian cycle when it finds one, will return the longest path it found otherwise.. Hence, here is a proposition : \n\nthere is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible). The methods added to this class are not directly accessible through the Graph class, which means that if you add your algorithm there, it will not appear as methods of the graphs objects. What you could do then, is add a method hamilton_cycle_heuristic and longest_path_heuristic to the generic_graph class (unifying both directed and undirected graphs), which would call your algorithm. The hamilton_cycle_heuristic would call this algorithm and return the hamiltonian path if found, and nothing otherwise. The hamiltonian_path method would call your algorithm, and return its result as the longest path found. \n\nThis, because otherwise people may not notice your hamiltonian_cycle_heuristic can also be useful to find longest paths...\n\nWell, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n> I am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\nHmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\n> This sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\nWell, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\nI wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\nNathann",
+    "body": "> Yes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\n\nHmm.. I was about to answer \"yes\" when I noticed that your algorithm, even though it may return an hamiltonian cycle when it finds one, will return the longest path it found otherwise.. Hence, here is a proposition : \n\nthere is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible). The methods added to this class are not directly accessible through the Graph class, which means that if you add your algorithm there, it will not appear as methods of the graphs objects. What you could do then, is add a method hamilton_cycle_heuristic and longest_path_heuristic to the generic_graph class (unifying both directed and undirected graphs), which would call your algorithm. The hamilton_cycle_heuristic would call this algorithm and return the hamiltonian path if found, and nothing otherwise. The hamiltonian_path method would call your algorithm, and return its result as the longest path found. \n\nThis, because otherwise people may not notice your hamiltonian_cycle_heuristic can also be useful to find longest paths...\n\nWell, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n> I am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\n\nHmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\n> This sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\n\nWell, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\nI wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\nNathann",
     "created_at": "2010-08-08T03:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -169,6 +173,7 @@ archive/issue_comments_094106.json:
 ```
 
 > Yes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.
+
 
 Hmm.. I was about to answer "yes" when I noticed that your algorithm, even though it may return an hamiltonian cycle when it finds one, will return the longest path it found otherwise.. Hence, here is a proposition : 
 
@@ -180,9 +185,11 @@ Well, this may be quite some work, but if I can help you at any step, please tel
 
 > I am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.
 
+
 Hmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)
 
 > This sounds great! I have never implemented anything in Cython, but I'll give it a try. :)
+
 
 Well, if you know C, then Cython iss "just" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D
 
@@ -197,7 +204,7 @@ Nathann
 archive/issue_comments_094107.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n> there is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible).\n\n`generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\n> The methods added to this class are not directly accessible through the Graph class\n\nThis is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\n> Well, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n* - I'm not sure whether Cython supports multiple inheritance or not. It would be harder to have `graph_pyx` and `digraph_pyx` if not, because (I think) Cython cdef classes cannot inherit from Python classes...",
+    "body": "Replying to [comment:5 ncohen]:\n> there is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible).\n\n\n`generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\n> The methods added to this class are not directly accessible through the Graph class\n\n\nThis is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\n> Well, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n\n* - I'm not sure whether Cython supports multiple inheritance or not. It would be harder to have `graph_pyx` and `digraph_pyx` if not, because (I think) Cython cdef classes cannot inherit from Python classes...",
     "created_at": "2010-08-09T18:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -209,13 +216,16 @@ archive/issue_comments_094107.json:
 Replying to [comment:5 ncohen]:
 > there is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible).
 
+
 `generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*
 
 > The methods added to this class are not directly accessible through the Graph class
 
+
 This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.
 
 > Well, this may be quite some work, but if I can help you at any step, please tell me :-)
+
 
 * - I'm not sure whether Cython supports multiple inheritance or not. It would be harder to have `graph_pyx` and `digraph_pyx` if not, because (I think) Cython cdef classes cannot inherit from Python classes...
 
@@ -226,7 +236,7 @@ This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` 
 archive/issue_comments_094108.json:
 ```json
 {
-    "body": "Replying to [comment:6 rlm]:\n\n> `generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\nOh... I didn't notice that... Both longest path and hamiltonian cycle make sense in both settings though, and with some luck writing a version handling both does not require too much work.\n\n> This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\nAfter giving it a look, it is indeed plainly wrong. It just shows I added methods to the file -- and not to the class --  when I edited the file... Sorryyyyy !! `^^;`\n\nNathann",
+    "body": "Replying to [comment:6 rlm]:\n\n> `generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\n\nOh... I didn't notice that... Both longest path and hamiltonian cycle make sense in both settings though, and with some luck writing a version handling both does not require too much work.\n\n> This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\n\nAfter giving it a look, it is indeed plainly wrong. It just shows I added methods to the file -- and not to the class --  when I edited the file... Sorryyyyy !! `^^;`\n\nNathann",
     "created_at": "2010-08-10T03:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -239,9 +249,11 @@ Replying to [comment:6 rlm]:
 
 > `generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*
 
+
 Oh... I didn't notice that... Both longest path and hamiltonian cycle make sense in both settings though, and with some luck writing a version handling both does not require too much work.
 
 > This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.
+
 
 After giving it a look, it is indeed plainly wrong. It just shows I added methods to the file -- and not to the class --  when I edited the file... Sorryyyyy !! `^^;`
 
@@ -292,7 +304,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_094111.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n\n> Hmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\nQuite amazed, it takes less than 2 seconds now, against 25s in Python :-O! \n\n> Well, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\nStill a bit unsure about my Cython style (first timer), I would appreciate any comments you have about it.\n\n> I wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\nThis one and the source code for Sparse and Dense graphs really helped. Thanks!\n\nPlease apply trac_9698_2.patch instead of trac_9698.patch.\n\nFidel",
+    "body": "Replying to [comment:5 ncohen]:\n\n> Hmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\n\nQuite amazed, it takes less than 2 seconds now, against 25s in Python :-O! \n\n> Well, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\n\nStill a bit unsure about my Cython style (first timer), I would appreciate any comments you have about it.\n\n> I wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\n\nThis one and the source code for Sparse and Dense graphs really helped. Thanks!\n\nPlease apply trac_9698_2.patch instead of trac_9698.patch.\n\nFidel",
     "created_at": "2010-09-02T19:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -305,13 +317,16 @@ Replying to [comment:5 ncohen]:
 
 > Hmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)
 
+
 Quite amazed, it takes less than 2 seconds now, against 25s in Python :-O! 
 
 > Well, if you know C, then Cython iss "just" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D
 
+
 Still a bit unsure about my Cython style (first timer), I would appreciate any comments you have about it.
 
 > I wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.
+
 
 This one and the source code for Sparse and Dense graphs really helped. Thanks!
 
@@ -364,7 +379,7 @@ Please apply instead of trac_9698.patch and trac_9698_2.patch.
 archive/issue_comments_094114.json:
 ```json
 {
-    "body": "Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_3.patch) by fidelbarrera created at 2010-09-02 20:13:41\n\nReplying to [comment:9 rlm]:\n\n> Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?\n\nSure, please use trac_9698_3.patch instead of the previous ones.\n\nFidel",
+    "body": "Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_3.patch) by fidelbarrera created at 2010-09-02 20:13:41\n\nReplying to [comment:9 rlm]:\n\n> Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?\n\n\nSure, please use trac_9698_3.patch instead of the previous ones.\n\nFidel",
     "created_at": "2010-09-02T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -378,6 +393,7 @@ Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/t
 Replying to [comment:9 rlm]:
 
 > Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?
+
 
 Sure, please use trac_9698_3.patch instead of the previous ones.
 
@@ -518,7 +534,7 @@ Please apply instead of previous patches.
 archive/issue_comments_094118.json:
 ```json
 {
-    "body": "Attachment [trac_9698_4.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_4.patch) by fidelbarrera created at 2010-09-12 21:21:41\n\nReplying to [comment:11 ncohen]:\n\nHello Nathann,\n\n> I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\nThanks!\n\nI have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.\n\nThe vertices are now cached in !``vertices!``. And every vertex is picked randomly, not as before, where the first available vertex was chosen.\n\n> * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\nHere we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give \"appropriate\" values.\n\n> * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.\n\nNow, the longest path is only updated if the path cannot be extended anymore.\n\n> * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\nI think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:\n\n\n```\n            done = g.has_arc( path[n-1], path[0] )\n```\n\nIt also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.\n\nI think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.\n\nI think I have removed the word heuristic. It would be great to write the longest_path method. The function is almost exactly the same as the one that is written, in fact it might be possible to adapt this one to do both ;)\n\nThanks, \n\nFidel",
+    "body": "Attachment [trac_9698_4.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_4.patch) by fidelbarrera created at 2010-09-12 21:21:41\n\nReplying to [comment:11 ncohen]:\n\nHello Nathann,\n\n> I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\n\nThanks!\n\nI have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.\n\nThe vertices are now cached in !``vertices!``. And every vertex is picked randomly, not as before, where the first available vertex was chosen.\n\n> * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\n\nHere we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give \"appropriate\" values.\n\n> * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.\n\n\nNow, the longest path is only updated if the path cannot be extended anymore.\n\n> * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\n\nI think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:\n\n```\n            done = g.has_arc( path[n-1], path[0] )\n```\nIt also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.\n\nI think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.\n\nI think I have removed the word heuristic. It would be great to write the longest_path method. The function is almost exactly the same as the one that is written, in fact it might be possible to adapt this one to do both ;)\n\nThanks, \n\nFidel",
     "created_at": "2010-09-12T21:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -535,6 +551,7 @@ Hello Nathann,
 
 > I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :
 
+
 Thanks!
 
 I have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.
@@ -543,21 +560,22 @@ The vertices are now cached in !``vertices!``. And every vertex is picked random
 
 > * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :
 
+
 Here we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give "appropriate" values.
 
 > * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.
+
 
 Now, the longest path is only updated if the path cannot be extended anymore.
 
 > * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.
 
-I think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:
 
+I think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:
 
 ```
             done = g.has_arc( path[n-1], path[0] )
 ```
-
 It also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.
 
 I think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.
@@ -631,7 +649,7 @@ Please apply instead of previous patches.
 archive/issue_comments_094122.json:
 ```json
 {
-    "body": "Attachment [trac_9698_5.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_5.patch) by fidelbarrera created at 2010-10-10 22:40:15\n\nReplying to [comment:13 ncohen]:\n> ``longest_path`` written in #9910 `:-)`\n> \n> Nathann\n\nHello Nathann,\n\nI have modified the function so it can obtain longest paths as well. Please let me know what you think, about it.\n\nThanks,\nFidel",
+    "body": "Attachment [trac_9698_5.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_5.patch) by fidelbarrera created at 2010-10-10 22:40:15\n\nReplying to [comment:13 ncohen]:\n> ``longest_path`` written in #9910 `:-)`\n> \n> Nathann\n\n\nHello Nathann,\n\nI have modified the function so it can obtain longest paths as well. Please let me know what you think, about it.\n\nThanks,\nFidel",
     "created_at": "2010-10-10T22:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -646,6 +664,7 @@ Replying to [comment:13 ncohen]:
 > ``longest_path`` written in #9910 `:-)`
 > 
 > Nathann
+
 
 Hello Nathann,
 
@@ -719,7 +738,7 @@ Rebased version of trac_9698_5.patch
 archive/issue_comments_094126.json:
 ```json
 {
-    "body": "Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_6.patch) by fidelbarrera created at 2010-10-17 04:42:43\n\nHello Nathann,\n\n> It looks like you patch can not be applied on the brand-new 4.6.alpha3... \nI have rebased the patch, please see trac_9698_6.patch I hope it works now :)\n\nBest,\nFidel",
+    "body": "Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_6.patch) by fidelbarrera created at 2010-10-17 04:42:43\n\nHello Nathann,\n\n> It looks like you patch can not be applied on the brand-new 4.6.alpha3... \n\nI have rebased the patch, please see trac_9698_6.patch I hope it works now :)\n\nBest,\nFidel",
     "created_at": "2010-10-17T04:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
@@ -733,6 +752,7 @@ Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/t
 Hello Nathann,
 
 > It looks like you patch can not be applied on the brand-new 4.6.alpha3... 
+
 I have rebased the patch, please see trac_9698_6.patch I hope it works now :)
 
 Best,

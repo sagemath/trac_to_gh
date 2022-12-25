@@ -79,7 +79,7 @@ Michael
 archive/issue_comments_022009.json:
 ```json
 {
-    "body": "Positive review -- pending asking Jason Martin about his mysterious:\n\n```\n# Added by Jason Martin, to avoid conflict with global libraries.  \nCFLAGS=\"-Z \"$CFLAGS\n```\n",
+    "body": "Positive review -- pending asking Jason Martin about his mysterious:\n\n```\n# Added by Jason Martin, to avoid conflict with global libraries.  \nCFLAGS=\"-Z \"$CFLAGS\n```",
     "created_at": "2008-05-19T04:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3188",
     "type": "issue_comment",
@@ -94,7 +94,6 @@ Positive review -- pending asking Jason Martin about his mysterious:
 # Added by Jason Martin, to avoid conflict with global libraries.  
 CFLAGS="-Z "$CFLAGS
 ```
-
 
 
 

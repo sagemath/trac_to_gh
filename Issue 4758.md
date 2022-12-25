@@ -3,7 +3,7 @@
 archive/issues_004758.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
     "created_at": "2008-12-11T05:21:06Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  @jasongrout
 
 Below we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. 
-
 
 ```
 sage: a = random_matrix(CDF, 100)
@@ -119,7 +118,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_comments_035987.json:
 ```json
 {
-    "body": "Sorry, I didn't see that the specialized methods were moved to matrix_double_dense.pyx.\n\nI've attached a patch to fix this which just uses scipy.linalg.eigvals.\n\n\n```\nsage: sage: a = random_matrix(CDF, 100)\nsage: sage: time v = a.eigenvalues()\nCPU times: user 0.40 s, sys: 0.05 s, total: 0.45 s\nWall time: 0.47 s\nsage: %time w = a.left_eigenvectors()\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.51 s\nWall time: 0.65 s\n```\n",
+    "body": "Sorry, I didn't see that the specialized methods were moved to matrix_double_dense.pyx.\n\nI've attached a patch to fix this which just uses scipy.linalg.eigvals.\n\n```\nsage: sage: a = random_matrix(CDF, 100)\nsage: sage: time v = a.eigenvalues()\nCPU times: user 0.40 s, sys: 0.05 s, total: 0.45 s\nWall time: 0.47 s\nsage: %time w = a.left_eigenvectors()\nCPU times: user 0.51 s, sys: 0.00 s, total: 0.51 s\nWall time: 0.65 s\n```",
     "created_at": "2008-12-11T07:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
@@ -132,7 +131,6 @@ Sorry, I didn't see that the specialized methods were moved to matrix_double_den
 
 I've attached a patch to fix this which just uses scipy.linalg.eigvals.
 
-
 ```
 sage: sage: a = random_matrix(CDF, 100)
 sage: sage: time v = a.eigenvalues()
@@ -142,7 +140,6 @@ sage: %time w = a.left_eigenvectors()
 CPU times: user 0.51 s, sys: 0.00 s, total: 0.51 s
 Wall time: 0.65 s
 ```
-
 
 
 

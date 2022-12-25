@@ -86,7 +86,7 @@ I haven't look at the code too seriously, but what would be your thoughts on hav
 archive/issue_comments_035711.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> Hi John,\n> \n> I haven't look at the code too seriously, but what would be your thoughts on having two subclasses (additive and multiplicative) of a common class for the abelian group elements so that one doesn't need to always do a check for the parent's op_symbol?\n> \n> --Mike\nThat would be a very good idea indeed.  The way I see it, there is a base abstract class (in which elements are represented as integer vectors, operation is addition with a modulus for each coordinate corresponding to a generator of finite order);  and then there are two possible interfaces to that base class via user classes which are either additive or multiplicative.\n\nWe are surely in a position to provide this structure right now, using the exiting implementations for the base class.  Then the \"major rewrite\" which we keep on mentioning need only apply to the base class.\n\nI'll continue to think about this;  it does not sound any harder, and is probably easier, than what I have been doing so far.",
+    "body": "Replying to [comment:1 mhansen]:\n> Hi John,\n> \n> I haven't look at the code too seriously, but what would be your thoughts on having two subclasses (additive and multiplicative) of a common class for the abelian group elements so that one doesn't need to always do a check for the parent's op_symbol?\n> \n> --Mike\n\nThat would be a very good idea indeed.  The way I see it, there is a base abstract class (in which elements are represented as integer vectors, operation is addition with a modulus for each coordinate corresponding to a generator of finite order);  and then there are two possible interfaces to that base class via user classes which are either additive or multiplicative.\n\nWe are surely in a position to provide this structure right now, using the exiting implementations for the base class.  Then the \"major rewrite\" which we keep on mentioning need only apply to the base class.\n\nI'll continue to think about this;  it does not sound any harder, and is probably easier, than what I have been doing so far.",
     "created_at": "2008-12-08T09:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
@@ -101,6 +101,7 @@ Replying to [comment:1 mhansen]:
 > I haven't look at the code too seriously, but what would be your thoughts on having two subclasses (additive and multiplicative) of a common class for the abelian group elements so that one doesn't need to always do a check for the parent's op_symbol?
 > 
 > --Mike
+
 That would be a very good idea indeed.  The way I see it, there is a base abstract class (in which elements are represented as integer vectors, operation is addition with a modulus for each coordinate corresponding to a generator of finite order);  and then there are two possible interfaces to that base class via user classes which are either additive or multiplicative.
 
 We are surely in a position to provide this structure right now, using the exiting implementations for the base class.  Then the "major rewrite" which we keep on mentioning need only apply to the base class.
@@ -172,7 +173,7 @@ Can I propose we resolve this as "fixed" now that #6449 has gone in?
 archive/issue_comments_035715.json:
 ```json
 {
-    "body": "Replying to [comment:5 davidloeffler]:\n> Can I propose we resolve this as \"fixed\" now that #6449 has gone in? \n\nThat sounds reasonable to me.  There's no chance that this ancient patch would apply now anyway.",
+    "body": "Replying to [comment:5 davidloeffler]:\n> Can I propose we resolve this as \"fixed\" now that #6449 has gone in? \n\n\nThat sounds reasonable to me.  There's no chance that this ancient patch would apply now anyway.",
     "created_at": "2010-07-30T02:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4739",
     "type": "issue_comment",
@@ -183,6 +184,7 @@ archive/issue_comments_035715.json:
 
 Replying to [comment:5 davidloeffler]:
 > Can I propose we resolve this as "fixed" now that #6449 has gone in? 
+
 
 That sounds reasonable to me.  There's no chance that this ancient patch would apply now anyway.
 

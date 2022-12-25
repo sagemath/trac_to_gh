@@ -69,7 +69,7 @@ I should comment that it's actually not too hard to understand why this still is
 archive/issue_comments_069847.json:
 ```json
 {
-    "body": "Looks good, just needs some fixes due to random number generation changes:\n\n\n```\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field.py # 1 doctests failed\n\tsage -t  devel/sage-main/sage/algebras/quatalg/quaternion_algebra.py # 4 doctests failed\n```\n",
+    "body": "Looks good, just needs some fixes due to random number generation changes:\n\n```\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field.py # 1 doctests failed\n\tsage -t  devel/sage-main/sage/algebras/quatalg/quaternion_algebra.py # 4 doctests failed\n```",
     "created_at": "2010-01-20T09:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
@@ -80,12 +80,10 @@ archive/issue_comments_069847.json:
 
 Looks good, just needs some fixes due to random number generation changes:
 
-
 ```
 	sage -t  devel/sage-main/sage/rings/number_field/number_field.py # 1 doctests failed
 	sage -t  devel/sage-main/sage/algebras/quatalg/quaternion_algebra.py # 4 doctests failed
 ```
-
 
 
 

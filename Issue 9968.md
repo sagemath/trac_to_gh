@@ -3,7 +3,7 @@
 archive/issues_009968.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe patch adds fast Cython version of some more mpmath functions to sage.libs.mpmath.\n\nThis should wait to be merged until mpmath 0.16 gets released (I will do this soon). Right now, it can be tested with an svn trunk checkout of mpmath.\n\nIt can be tested with:\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9969\n\n",
+    "body": "Assignee: tbd\n\nThe patch adds fast Cython version of some more mpmath functions to sage.libs.mpmath.\n\nThis should wait to be merged until mpmath 0.16 gets released (I will do this soon). Right now, it can be tested with an svn trunk checkout of mpmath.\n\nIt can be tested with:\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9969\n\n",
     "created_at": "2010-09-22T13:16:04Z",
     "labels": [
         "component: packages: standard"
@@ -28,7 +28,6 @@ sage: import mpmath
 sage: mpmath.runtests()
 sage: mpmath.doctests()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9969
 
@@ -145,7 +144,7 @@ Bug me again by email or chat when you've posted another patch (or patch on top 
 archive/issue_comments_099719.json:
 ```json
 {
-    "body": "Oh, could you have at least a short comment explaining what every single function does.  E.g.,\n\n```\ncdef cy_exp_basecase(mpz_t y, mpz_t x, int prec):\n     # <what this function does>\n```\n",
+    "body": "Oh, could you have at least a short comment explaining what every single function does.  E.g.,\n\n```\ncdef cy_exp_basecase(mpz_t y, mpz_t x, int prec):\n     # <what this function does>\n```",
     "created_at": "2010-11-02T22:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -160,7 +159,6 @@ Oh, could you have at least a short comment explaining what every single functio
 cdef cy_exp_basecase(mpz_t y, mpz_t x, int prec):
      # <what this function does>
 ```
-
 
 
 
@@ -392,7 +390,7 @@ By the way, I noticed (too late) that there are two failing doctests if you run 
 archive/issue_comments_099731.json:
 ```json
 {
-    "body": "Replying to [comment:11 fredrik.johansson]:\n> Yes, I'll create an spkg for 0.17 immediately to replace the 0.16 one.\n> \n> Nothing should have changed in the way of Sage compatibility, so the patches should still be fine.\n\nGood to know, that means I won't have to change anything to support mpmath-0.17 in sage-on-gentoo when 4.6.2 is released.",
+    "body": "Replying to [comment:11 fredrik.johansson]:\n> Yes, I'll create an spkg for 0.17 immediately to replace the 0.16 one.\n> \n> Nothing should have changed in the way of Sage compatibility, so the patches should still be fine.\n\n\nGood to know, that means I won't have to change anything to support mpmath-0.17 in sage-on-gentoo when 4.6.2 is released.",
     "created_at": "2011-02-01T22:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -405,6 +403,7 @@ Replying to [comment:11 fredrik.johansson]:
 > Yes, I'll create an spkg for 0.17 immediately to replace the 0.16 one.
 > 
 > Nothing should have changed in the way of Sage compatibility, so the patches should still be fine.
+
 
 Good to know, that means I won't have to change anything to support mpmath-0.17 in sage-on-gentoo when 4.6.2 is released.
 
@@ -507,7 +506,7 @@ Most of docstring-fixes.patch consisted of reformatting existing docstrings, and
 archive/issue_comments_099737.json:
 ```json
 {
-    "body": "Replying to [comment:17 fredrik.johansson]:\n> Most of docstring-fixes.patch consisted of reformatting existing docstrings, and there's a lot of air in the diff format, so I think the numbers add up.\n\nI thought it could be the case. I will try to review this quickly so we can have it included in 4.7.alpha.",
+    "body": "Replying to [comment:17 fredrik.johansson]:\n> Most of docstring-fixes.patch consisted of reformatting existing docstrings, and there's a lot of air in the diff format, so I think the numbers add up.\n\n\nI thought it could be the case. I will try to review this quickly so we can have it included in 4.7.alpha.",
     "created_at": "2011-02-18T09:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -519,6 +518,7 @@ archive/issue_comments_099737.json:
 Replying to [comment:17 fredrik.johansson]:
 > Most of docstring-fixes.patch consisted of reformatting existing docstrings, and there's a lot of air in the diff format, so I think the numbers add up.
 
+
 I thought it could be the case. I will try to review this quickly so we can have it included in 4.7.alpha.
 
 
@@ -528,7 +528,7 @@ I thought it could be the case. I will try to review this quickly so we can have
 archive/issue_comments_099738.json:
 ```json
 {
-    "body": "tests are not looking good to me.\n\n```\nPython 2.6.6 (r266:84292, Jan 28 2011, 01:59:55) \n[GCC 4.5.2] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import mpmath\n>>> mpmath.runtests()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/usr/lib64/python2.6/site-packages/mpmath/__init__.py\", line 413, in runtests\n    from .tests import runtests as tests\nImportError: No module named tests\n```\n\nI get pretty much the same thing from sage. \n\nBy the way that looks more like a procedure to do a spkg-check than a doctest.",
+    "body": "tests are not looking good to me.\n\n```\nPython 2.6.6 (r266:84292, Jan 28 2011, 01:59:55) \n[GCC 4.5.2] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import mpmath\n>>> mpmath.runtests()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/usr/lib64/python2.6/site-packages/mpmath/__init__.py\", line 413, in runtests\n    from .tests import runtests as tests\nImportError: No module named tests\n```\nI get pretty much the same thing from sage. \n\nBy the way that looks more like a procedure to do a spkg-check than a doctest.",
     "created_at": "2011-02-18T10:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -551,7 +551,6 @@ Traceback (most recent call last):
     from .tests import runtests as tests
 ImportError: No module named tests
 ```
-
 I get pretty much the same thing from sage. 
 
 By the way that looks more like a procedure to do a spkg-check than a doctest.
@@ -621,7 +620,7 @@ Usually people choose the first option in this case, unless there is major troub
 archive/issue_comments_099742.json:
 ```json
 {
-    "body": "I got a number of failing mpmath.doctests on my x86 box. A formatting issue really. Does any of the code interacts with ecl or maxima? The install I tested it on is based on 4.6.2.alpha4 with ecl-11.1.1 (#10766) and maxima-5.23.2 (#10773) and a couple of other patch that should be orthogonal (ppl #10039 and associated patches).\n\n```\nalmosteq 0.004\nfindroot **********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/calculus/optimization.py\", line 835, in NoName\nFailed example:\n    findroot(f, -10, solver='anewton', verbose=True)\nExpected:\n    x:     -9.88888888888888888889\n    error: 0.111111111111111111111\n    converging slowly\n    x:     -9.77890011223344556678\n    error: 0.10998877665544332211\n    converging slowly\n    x:     -9.67002233332199662166\n    error: 0.108877778911448945119\n    converging slowly\n    accelerating convergence\n    x:     -9.5622443299551077669\n    error: 0.107778003366888854764\n    converging slowly\n    x:     0.99999999999999999214\n    error: 10.562244329955107759\n    x:     1.0\n    error: 7.8598304758094664213e-18\n    1.0\nGot:\n    ('x:    ', -9.88888888888888888889)\n    ('error:', 0.111111111111111111111)\n    converging slowly\n    ('x:    ', -9.77890011223344556678)\n    ('error:', 0.10998877665544332211)\n    converging slowly\n    ('x:    ', -9.67002233332199662166)\n    ('error:', 0.108877778911448945119)\n    converging slowly\n    accelerating convergence\n    ('x:    ', -9.5622443299551077669)\n    ('error:', 0.107778003366888854764)\n    converging slowly\n    ('x:    ', 0.99999999999999999214)\n    ('error:', 10.562244329955107759)\n    ('x:    ', 1.0)\n    ('error:', 7.8598304758094664213e-18)\n    1.0\n0.132\n__name__ 0.001\n```\n\nand\n\n```\nsuperfac 0.05\nsecondzeta **********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/functions/zeta.py\", line 983, in NoName\nFailed example:\n    secondzeta(0.5 + 40j, error=True, verbose=True)\nExpected:\n    main term = (-30190318549.138656312556 - 13964804384.624622876523j)\n        computed using 19 zeros of zeta\n    prime term = (132717176.89212754625045 + 188980555.17563978290601j)\n        computed using 9 values of the von Mangoldt function\n    exponential term = (542447428666.07179812536 + 362434922978.80192435203j)\n    singular term = (512124392939.98154322355 + 348281138038.65531023921j)\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\nGot:\n    ('main term =', (-30190318549.138656312556 - 13964804384.624622876523j))\n    ('    computed using', 19, 'zeros of zeta')\n    ('prime term =', (132717176.89212754625045 + 188980555.17563978290601j))\n    ('    computed using', 9, 'values of the von Mangoldt function')\n    ('exponential term =', (542447428666.07179812536 + 362434922978.80192435203j))\n    ('singular term =', (512124392939.98154322355 + 348281138038.65531023921j))\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\n**********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/functions/zeta.py\", line 992, in NoName\nFailed example:\n    secondzeta(0.5 + 40j, a=0.04, error=True, verbose=True)\nExpected:\n    main term = (-151962888.19606243907725 - 217930683.90210294051982j)\n        computed using 9 zeros of zeta\n    prime term = (2476659342.3038722372461 + 28711581821.921627163136j)\n        computed using 37 values of the von Mangoldt function\n    exponential term = (178506047114.7838188264 + 819674143244.45677330576j)\n    singular term = (175877424884.22441310708 + 790744630738.28669174871j)\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\nGot:\n    ('main term =', (-151962888.19606243907725 - 217930683.90210294051982j))\n    ('    computed using', 9, 'zeros of zeta')\n    ('prime term =', (2476659342.3038722372461 + 28711581821.921627163136j))\n    ('    computed using', 37, 'values of the von Mangoldt function')\n    ('exponential term =', (178506047114.7838188264 + 819674143244.45677330576j))\n    ('singular term =', (175877424884.22441310708 + 790744630738.28669174871j))\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\n34.812\ninf 0.002\n```\n\nI am preparing a run on amd64 with a fresh 4.6.2.rc0 without any patches.",
+    "body": "I got a number of failing mpmath.doctests on my x86 box. A formatting issue really. Does any of the code interacts with ecl or maxima? The install I tested it on is based on 4.6.2.alpha4 with ecl-11.1.1 (#10766) and maxima-5.23.2 (#10773) and a couple of other patch that should be orthogonal (ppl #10039 and associated patches).\n\n```\nalmosteq 0.004\nfindroot **********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/calculus/optimization.py\", line 835, in NoName\nFailed example:\n    findroot(f, -10, solver='anewton', verbose=True)\nExpected:\n    x:     -9.88888888888888888889\n    error: 0.111111111111111111111\n    converging slowly\n    x:     -9.77890011223344556678\n    error: 0.10998877665544332211\n    converging slowly\n    x:     -9.67002233332199662166\n    error: 0.108877778911448945119\n    converging slowly\n    accelerating convergence\n    x:     -9.5622443299551077669\n    error: 0.107778003366888854764\n    converging slowly\n    x:     0.99999999999999999214\n    error: 10.562244329955107759\n    x:     1.0\n    error: 7.8598304758094664213e-18\n    1.0\nGot:\n    ('x:    ', -9.88888888888888888889)\n    ('error:', 0.111111111111111111111)\n    converging slowly\n    ('x:    ', -9.77890011223344556678)\n    ('error:', 0.10998877665544332211)\n    converging slowly\n    ('x:    ', -9.67002233332199662166)\n    ('error:', 0.108877778911448945119)\n    converging slowly\n    accelerating convergence\n    ('x:    ', -9.5622443299551077669)\n    ('error:', 0.107778003366888854764)\n    converging slowly\n    ('x:    ', 0.99999999999999999214)\n    ('error:', 10.562244329955107759)\n    ('x:    ', 1.0)\n    ('error:', 7.8598304758094664213e-18)\n    1.0\n0.132\n__name__ 0.001\n```\nand\n\n```\nsuperfac 0.05\nsecondzeta **********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/functions/zeta.py\", line 983, in NoName\nFailed example:\n    secondzeta(0.5 + 40j, error=True, verbose=True)\nExpected:\n    main term = (-30190318549.138656312556 - 13964804384.624622876523j)\n        computed using 19 zeros of zeta\n    prime term = (132717176.89212754625045 + 188980555.17563978290601j)\n        computed using 9 values of the von Mangoldt function\n    exponential term = (542447428666.07179812536 + 362434922978.80192435203j)\n    singular term = (512124392939.98154322355 + 348281138038.65531023921j)\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\nGot:\n    ('main term =', (-30190318549.138656312556 - 13964804384.624622876523j))\n    ('    computed using', 19, 'zeros of zeta')\n    ('prime term =', (132717176.89212754625045 + 188980555.17563978290601j))\n    ('    computed using', 9, 'values of the von Mangoldt function')\n    ('exponential term =', (542447428666.07179812536 + 362434922978.80192435203j))\n    ('singular term =', (512124392939.98154322355 + 348281138038.65531023921j))\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\n**********************************************************************\nFile \"/home/francois/Work/sandbox/sage-4.6.2.alpha4/local/lib/python2.6/site-packages/mpmath/functions/zeta.py\", line 992, in NoName\nFailed example:\n    secondzeta(0.5 + 40j, a=0.04, error=True, verbose=True)\nExpected:\n    main term = (-151962888.19606243907725 - 217930683.90210294051982j)\n        computed using 9 zeros of zeta\n    prime term = (2476659342.3038722372461 + 28711581821.921627163136j)\n        computed using 37 values of the von Mangoldt function\n    exponential term = (178506047114.7838188264 + 819674143244.45677330576j)\n    singular term = (175877424884.22441310708 + 790744630738.28669174871j)\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\nGot:\n    ('main term =', (-151962888.19606243907725 - 217930683.90210294051982j))\n    ('    computed using', 9, 'zeros of zeta')\n    ('prime term =', (2476659342.3038722372461 + 28711581821.921627163136j))\n    ('    computed using', 37, 'values of the von Mangoldt function')\n    ('exponential term =', (178506047114.7838188264 + 819674143244.45677330576j))\n    ('singular term =', (175877424884.22441310708 + 790744630738.28669174871j))\n    ((0.059471043 + 0.3463514534j), 1.455191523e-11)\n34.812\ninf 0.002\n```\nI am preparing a run on amd64 with a fresh 4.6.2.rc0 without any patches.",
     "created_at": "2011-02-21T08:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -679,7 +678,6 @@ Got:
 0.132
 __name__ 0.001
 ```
-
 and
 
 ```
@@ -727,7 +725,6 @@ Got:
 34.812
 inf 0.002
 ```
-
 I am preparing a run on amd64 with a fresh 4.6.2.rc0 without any patches.
 
 
@@ -755,7 +752,7 @@ These two failures were noted in a previous comment. They can safely be ignored.
 archive/issue_comments_099744.json:
 ```json
 {
-    "body": "Replying to [comment:24 fredrik.johansson]:\n> These two failures were noted in a previous comment. They can safely be ignored.\n\nI didn't realise they were the same one. I guess I expected they were fixed but that would require a new version of mpmath, not just sage patch I imagine.\nOnce I have tested this at least on amd64 I can give a positive review.",
+    "body": "Replying to [comment:24 fredrik.johansson]:\n> These two failures were noted in a previous comment. They can safely be ignored.\n\n\nI didn't realise they were the same one. I guess I expected they were fixed but that would require a new version of mpmath, not just sage patch I imagine.\nOnce I have tested this at least on amd64 I can give a positive review.",
     "created_at": "2011-02-21T09:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -767,6 +764,7 @@ archive/issue_comments_099744.json:
 Replying to [comment:24 fredrik.johansson]:
 > These two failures were noted in a previous comment. They can safely be ignored.
 
+
 I didn't realise they were the same one. I guess I expected they were fixed but that would require a new version of mpmath, not just sage patch I imagine.
 Once I have tested this at least on amd64 I can give a positive review.
 
@@ -777,7 +775,7 @@ Once I have tested this at least on amd64 I can give a positive review.
 archive/issue_comments_099745.json:
 ```json
 {
-    "body": "OK so I tested this on linux-amd64 and OS X (10.5). and the tests perform ok.\nAlthough there is some noise on OS X because the wrong version of freetype is detected. I am not sure that the spkg fault or not.\n\n```\ntest_visualization\n    axes                      dyld: Library not loaded: /usr/X11/lib/libfreetype.6.dylib\n  Referenced from: /usr/X11/bin/fc-list\n  Reason: Incompatible library version: fc-list requires version 13.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\ndyld: Library not loaded: /usr/X11/lib/libfreetype.6.dylib\n  Referenced from: /usr/X11/bin/fc-list\n  Reason: Incompatible library version: fc-list requires version 13.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\nok        6.5380421 s\n\nfinished tests in 17.99 seconds\n```\n\nOn further inspection this test is run because matplotlib is present and I assume that this message originates from matplotlib. So the problem is probably in matplotlib.\n\nThe last thing is whether we make matplotlib a dependency of mpmath or not.\nI will post a patch making this the default. Voice any opposition then.",
+    "body": "OK so I tested this on linux-amd64 and OS X (10.5). and the tests perform ok.\nAlthough there is some noise on OS X because the wrong version of freetype is detected. I am not sure that the spkg fault or not.\n\n```\ntest_visualization\n    axes                      dyld: Library not loaded: /usr/X11/lib/libfreetype.6.dylib\n  Referenced from: /usr/X11/bin/fc-list\n  Reason: Incompatible library version: fc-list requires version 13.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\ndyld: Library not loaded: /usr/X11/lib/libfreetype.6.dylib\n  Referenced from: /usr/X11/bin/fc-list\n  Reason: Incompatible library version: fc-list requires version 13.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\nok        6.5380421 s\n\nfinished tests in 17.99 seconds\n```\nOn further inspection this test is run because matplotlib is present and I assume that this message originates from matplotlib. So the problem is probably in matplotlib.\n\nThe last thing is whether we make matplotlib a dependency of mpmath or not.\nI will post a patch making this the default. Voice any opposition then.",
     "created_at": "2011-02-21T21:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -801,7 +799,6 @@ ok        6.5380421 s
 
 finished tests in 17.99 seconds
 ```
-
 On further inspection this test is run because matplotlib is present and I assume that this message originates from matplotlib. So the problem is probably in matplotlib.
 
 The last thing is whether we make matplotlib a dependency of mpmath or not.
@@ -1118,7 +1115,7 @@ I can fix the permissions in the spkg. What is involved to put SPKG.txt and spkg
 archive/issue_comments_099761.json:
 ```json
 {
-    "body": "Replying to [comment:38 fredrik.johansson]:\n> I can fix the permissions in the spkg. What is involved to put SPKG.txt and spkg-install under hg control?\n\nNever mind.  I did it myself: [http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg)",
+    "body": "Replying to [comment:38 fredrik.johansson]:\n> I can fix the permissions in the spkg. What is involved to put SPKG.txt and spkg-install under hg control?\n\n\nNever mind.  I did it myself: [http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg)",
     "created_at": "2011-05-04T12:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9968",
     "type": "issue_comment",
@@ -1129,6 +1126,7 @@ archive/issue_comments_099761.json:
 
 Replying to [comment:38 fredrik.johansson]:
 > I can fix the permissions in the spkg. What is involved to put SPKG.txt and spkg-install under hg control?
+
 
 Never mind.  I did it myself: [http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/mpmath-0.17.spkg)
 

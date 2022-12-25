@@ -3,7 +3,7 @@
 archive/issues_008042.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona\n\nKeywords: eclib modular symbols\n\n\n```\nE = EllipticCurve('858k2')\nfrom sage.libs.cremona.newforms import ECModularSymbol\nECModularSymbol(E)\n```\n\n\nproduces \n\n\n```\nFile \"newforms.pyx\", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)\nOverflowError: value too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8042\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona\n\nKeywords: eclib modular symbols\n\n```\nE = EllipticCurve('858k2')\nfrom sage.libs.cremona.newforms import ECModularSymbol\nECModularSymbol(E)\n```\n\nproduces \n\n```\nFile \"newforms.pyx\", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)\nOverflowError: value too large to convert to int\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8042\n\n",
     "created_at": "2010-01-23T00:14:37Z",
     "labels": [
         "component: modular forms",
@@ -22,22 +22,18 @@ CC:  @JohnCremona
 
 Keywords: eclib modular symbols
 
-
 ```
 E = EllipticCurve('858k2')
 from sage.libs.cremona.newforms import ECModularSymbol
 ECModularSymbol(E)
 ```
 
-
 produces 
-
 
 ```
 File "newforms.pyx", line 60, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1804)
 OverflowError: value too large to convert to int
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8042
 
@@ -50,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8042
 archive/issue_comments_070158.json:
 ```json
 {
-    "body": "Well, I can tell you what's going wrong here, and ways to work around it -- but I'll wait until I'm more coherent to post a patch.\n\nHere's what's happening: despite the fact that you're on a 64-bit machine, C says `sizeof(int)` is still `4`. However, Python knows it's a 64-bit box, so Python's `int` type is now a full 64 bits. So in the bit of code you called, and in several places in the NTL interface, we convert from Python `int`s to C `int`s. That's the underlying problem: we really want to be using `long` in this case, because it actually has room to store the values we care about. The NTL `ZZ` constructor is more than happy to take a long as input, so there's also no problem there.\n\nThe easiest fix is just to switch the type of the constructor in `sage/libs/cremona/defs.pxi` ... here's a diff:\n\n```\ndiff -r 868098cc41e9 sage/libs/cremona/defs.pxi\n--- a/sage/libs/cremona/defs.pxi        Sat Jan 23 00:06:24 2010 -0800\n+++ b/sage/libs/cremona/defs.pxi        Sat Jan 23 00:18:48 2010 -0800\n@@ -1,7 +1,7 @@\n cdef extern from \"eclib/interface.h\":\n     ctypedef struct bigint:  #eclib uses NTL in Sage -- we call Cremona's \"bigint\" ZZ_c.\n         pass\n-    ZZ_c new_bigint \"to_ZZ\"(int)\n+    ZZ_c new_bigint \"to_ZZ\"(long)\n     int I2int(ZZ_c)\n \n cdef extern from \"eclib/bigrat.h\":\n```\n\nThat fixes the issue. \n\nHowever, I suspect that this is something that pops up elsewhere -- so I'd like to at least look a few other places and fix this issue there, too. For instance, we have exactly the same issue in the NTL interface ... and it's easy enough to fix there, too.",
+    "body": "Well, I can tell you what's going wrong here, and ways to work around it -- but I'll wait until I'm more coherent to post a patch.\n\nHere's what's happening: despite the fact that you're on a 64-bit machine, C says `sizeof(int)` is still `4`. However, Python knows it's a 64-bit box, so Python's `int` type is now a full 64 bits. So in the bit of code you called, and in several places in the NTL interface, we convert from Python `int`s to C `int`s. That's the underlying problem: we really want to be using `long` in this case, because it actually has room to store the values we care about. The NTL `ZZ` constructor is more than happy to take a long as input, so there's also no problem there.\n\nThe easiest fix is just to switch the type of the constructor in `sage/libs/cremona/defs.pxi` ... here's a diff:\n\n```\ndiff -r 868098cc41e9 sage/libs/cremona/defs.pxi\n--- a/sage/libs/cremona/defs.pxi        Sat Jan 23 00:06:24 2010 -0800\n+++ b/sage/libs/cremona/defs.pxi        Sat Jan 23 00:18:48 2010 -0800\n@@ -1,7 +1,7 @@\n cdef extern from \"eclib/interface.h\":\n     ctypedef struct bigint:  #eclib uses NTL in Sage -- we call Cremona's \"bigint\" ZZ_c.\n         pass\n-    ZZ_c new_bigint \"to_ZZ\"(int)\n+    ZZ_c new_bigint \"to_ZZ\"(long)\n     int I2int(ZZ_c)\n \n cdef extern from \"eclib/bigrat.h\":\n```\nThat fixes the issue. \n\nHowever, I suspect that this is something that pops up elsewhere -- so I'd like to at least look a few other places and fix this issue there, too. For instance, we have exactly the same issue in the NTL interface ... and it's easy enough to fix there, too.",
     "created_at": "2010-01-23T08:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8042",
     "type": "issue_comment",
@@ -79,7 +75,6 @@ diff -r 868098cc41e9 sage/libs/cremona/defs.pxi
  
  cdef extern from "eclib/bigrat.h":
 ```
-
 That fixes the issue. 
 
 However, I suspect that this is something that pops up elsewhere -- so I'd like to at least look a few other places and fix this issue there, too. For instance, we have exactly the same issue in the NTL interface ... and it's easy enough to fix there, too.

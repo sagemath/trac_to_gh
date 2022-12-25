@@ -151,7 +151,7 @@ Otherwise, expect more reports like this one to remove GNUisms where it makes se
 archive/issue_comments_029141.json:
 ```json
 {
-    "body": "Replying to [comment:3 anakha]:\n> Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.\n> \n> Otherwise, expect more reports like this one to remove GNUisms where it makes sense.\n\nfreetype and eclib for now require gmake. We use bash for now and do not really plan to switch to a pure sh env since sh on Solaris is pretty broken. At least on FreeBSD the default location of bash is in /usr/local/bin and all shebangs of the scripts should not hard code the /bin/bash location.\n\nWe should continue this discussion on sage-devel though :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 anakha]:\n> Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.\n> \n> Otherwise, expect more reports like this one to remove GNUisms where it makes sense.\n\n\nfreetype and eclib for now require gmake. We use bash for now and do not really plan to switch to a pure sh env since sh on Solaris is pretty broken. At least on FreeBSD the default location of bash is in /usr/local/bin and all shebangs of the scripts should not hard code the /bin/bash location.\n\nWe should continue this discussion on sage-devel though :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-03T18:26:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4049",
     "type": "issue_comment",
@@ -164,6 +164,7 @@ Replying to [comment:3 anakha]:
 > Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.
 > 
 > Otherwise, expect more reports like this one to remove GNUisms where it makes sense.
+
 
 freetype and eclib for now require gmake. We use bash for now and do not really plan to switch to a pure sh env since sh on Solaris is pretty broken. At least on FreeBSD the default location of bash is in /usr/local/bin and all shebangs of the scripts should not hard code the /bin/bash location.
 

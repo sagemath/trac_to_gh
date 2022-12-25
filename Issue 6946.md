@@ -78,7 +78,7 @@ sympy/mpmath should probably be regarded as an internal module of sympy. It incl
 archive/issue_comments_057324.json:
 ```json
 {
-    "body": "Replying to [comment:2 fredrik.johansson]:\n> (Sorry, accidentally changed the description instead of posting a comment. Restored the original description.)\n> \n> sympy/mpmath should probably be regarded as an internal module of sympy. It includes some sympy-specific changes and is updated less frequently. More likely sympy/mpmath will go away some time in the future.\n\nMany thanks for the reply. I was unsure if I should create a mandriva package for mpmath, or assume it was unintended duplication of code. I even just updated the mpmath patch to also use sympy.mpmath from sage/libs/mpmath/utils.pyx\n\nI will add a python-mpmath package to mandriva, and revert the patch to use sympy.mpmath from my rpm. Guess for now it will also have duplicated %py_platsitedir/sympy/mpath and %py_platsitedir/mpath, what may be a source of confusion...",
+    "body": "Replying to [comment:2 fredrik.johansson]:\n> (Sorry, accidentally changed the description instead of posting a comment. Restored the original description.)\n> \n> sympy/mpmath should probably be regarded as an internal module of sympy. It includes some sympy-specific changes and is updated less frequently. More likely sympy/mpmath will go away some time in the future.\n\n\nMany thanks for the reply. I was unsure if I should create a mandriva package for mpmath, or assume it was unintended duplication of code. I even just updated the mpmath patch to also use sympy.mpmath from sage/libs/mpmath/utils.pyx\n\nI will add a python-mpmath package to mandriva, and revert the patch to use sympy.mpmath from my rpm. Guess for now it will also have duplicated %py_platsitedir/sympy/mpath and %py_platsitedir/mpath, what may be a source of confusion...",
     "created_at": "2009-09-17T23:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
@@ -91,6 +91,7 @@ Replying to [comment:2 fredrik.johansson]:
 > (Sorry, accidentally changed the description instead of posting a comment. Restored the original description.)
 > 
 > sympy/mpmath should probably be regarded as an internal module of sympy. It includes some sympy-specific changes and is updated less frequently. More likely sympy/mpmath will go away some time in the future.
+
 
 Many thanks for the reply. I was unsure if I should create a mandriva package for mpmath, or assume it was unintended duplication of code. I even just updated the mpmath patch to also use sympy.mpmath from sage/libs/mpmath/utils.pyx
 

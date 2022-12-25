@@ -54,7 +54,7 @@ Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachm
 archive/issue_comments_096148.json:
 ```json
 {
-    "body": "Patch expands the functionality of the `random_matrix` routine.  A matrix space is used to accumulate the base ring, dimensions and representation (sparse/dense).  This can then be passed to the new `random_*_matrix` routines where a matrix can actually be constructed and returned.\n\nDocumentation for previous behavior greatly expanded, notably for integer and rational matrices.  New routines are demonstrated, with clear directions (links, imports) to expanded documentation.\n\nHad to handle density and sparse keywords in a backwards-compatible fashion, so they are \"popped\" out of the `kwds` dictionary and passed as before to the matrix randomize() routine.  The keywords are now required and won't work as positional arguments.  Had to adjust code in the group theory isomorphism code in a couple of modules as a result.  Also the `random_matrix` command was employed coincidentally in a doctest in the lazy import routine.  I think the new version works just as well as a test, so I changed the output.\n\nThis code below looks like some artifact of the switch to allowing/disallowing zero entries.  I've left it in, though it *never* gets called in any of the tests (I checked).  Before my changes, `density` had a default value of 1, so you would have to consciously pass in `None` to make this happen.  It was not documented.\n\n\n```\n        if density is None:\n            A.randomize(density=float(1), nonzero=False, *args, **kwds)\n        else:\n            A.randomize(density=density, nonzero=True, *args, **kwds)\n```\n\n\nOne fix in mod n dense matrix code.  Could not figure out how `range(25)` was doing anything useful, and it was ending up in the algorithm argument, so in the end I just removed it and the affected test passes.",
+    "body": "Patch expands the functionality of the `random_matrix` routine.  A matrix space is used to accumulate the base ring, dimensions and representation (sparse/dense).  This can then be passed to the new `random_*_matrix` routines where a matrix can actually be constructed and returned.\n\nDocumentation for previous behavior greatly expanded, notably for integer and rational matrices.  New routines are demonstrated, with clear directions (links, imports) to expanded documentation.\n\nHad to handle density and sparse keywords in a backwards-compatible fashion, so they are \"popped\" out of the `kwds` dictionary and passed as before to the matrix randomize() routine.  The keywords are now required and won't work as positional arguments.  Had to adjust code in the group theory isomorphism code in a couple of modules as a result.  Also the `random_matrix` command was employed coincidentally in a doctest in the lazy import routine.  I think the new version works just as well as a test, so I changed the output.\n\nThis code below looks like some artifact of the switch to allowing/disallowing zero entries.  I've left it in, though it *never* gets called in any of the tests (I checked).  Before my changes, `density` had a default value of 1, so you would have to consciously pass in `None` to make this happen.  It was not documented.\n\n```\n        if density is None:\n            A.randomize(density=float(1), nonzero=False, *args, **kwds)\n        else:\n            A.randomize(density=density, nonzero=True, *args, **kwds)\n```\n\nOne fix in mod n dense matrix code.  Could not figure out how `range(25)` was doing anything useful, and it was ending up in the algorithm argument, so in the end I just removed it and the affected test passes.",
     "created_at": "2010-08-26T22:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -71,14 +71,12 @@ Had to handle density and sparse keywords in a backwards-compatible fashion, so 
 
 This code below looks like some artifact of the switch to allowing/disallowing zero entries.  I've left it in, though it *never* gets called in any of the tests (I checked).  Before my changes, `density` had a default value of 1, so you would have to consciously pass in `None` to make this happen.  It was not documented.
 
-
 ```
         if density is None:
             A.randomize(density=float(1), nonzero=False, *args, **kwds)
         else:
             A.randomize(density=density, nonzero=True, *args, **kwds)
 ```
-
 
 One fix in mod n dense matrix code.  Could not figure out how `range(25)` was doing anything useful, and it was ending up in the algorithm argument, so in the end I just removed it and the affected test passes.
 
@@ -127,7 +125,7 @@ Standalone patch
 archive/issue_comments_096151.json:
 ```json
 {
-    "body": "First patch contained:\n\n\n```\ncolumns = parent.nrows()\n```\n\n\nwhich is just plain wrong, but also `columns` was never referenced (which is why the doctests were unaffected).  Its gone now.  Use just the v2 patch.",
+    "body": "First patch contained:\n\n```\ncolumns = parent.nrows()\n```\n\nwhich is just plain wrong, but also `columns` was never referenced (which is why the doctests were unaffected).  Its gone now.  Use just the v2 patch.",
     "created_at": "2010-08-27T01:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -138,11 +136,9 @@ archive/issue_comments_096151.json:
 
 First patch contained:
 
-
 ```
 columns = parent.nrows()
 ```
-
 
 which is just plain wrong, but also `columns` was never referenced (which is why the doctests were unaffected).  Its gone now.  Use just the v2 patch.
 
@@ -171,7 +167,7 @@ Does this patch depend on any other patches?
 archive/issue_comments_096153.json:
 ```json
 {
-    "body": "Replying to [comment:3 wdj]:\n> Does this patch depend on any other patches?\n\nAh, yes, totally forgot.  It needs to have #9720 (just the v4 patch) applied first.  Thanks.",
+    "body": "Replying to [comment:3 wdj]:\n> Does this patch depend on any other patches?\n\n\nAh, yes, totally forgot.  It needs to have #9720 (just the v4 patch) applied first.  Thanks.",
     "created_at": "2010-08-27T17:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -182,6 +178,7 @@ archive/issue_comments_096153.json:
 
 Replying to [comment:3 wdj]:
 > Does this patch depend on any other patches?
+
 
 Ah, yes, totally forgot.  It needs to have #9720 (just the v4 patch) applied first.  Thanks.
 
@@ -228,7 +225,7 @@ This looks good to me.
 archive/issue_comments_096156.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> This looks good to me.\n\nThanks for your input.  I think this is much improved organized this way, and I finally did something about the documentation for the `random_matrix()` command.  ;-)\n\nLooks like this can go to positive review along with the rest of Billy's work.",
+    "body": "Replying to [comment:6 mhansen]:\n> This looks good to me.\n\n\nThanks for your input.  I think this is much improved organized this way, and I finally did something about the documentation for the `random_matrix()` command.  ;-)\n\nLooks like this can go to positive review along with the rest of Billy's work.",
     "created_at": "2010-08-30T03:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
@@ -239,6 +236,7 @@ archive/issue_comments_096156.json:
 
 Replying to [comment:6 mhansen]:
 > This looks good to me.
+
 
 Thanks for your input.  I think this is much improved organized this way, and I finally did something about the documentation for the `random_matrix()` command.  ;-)
 

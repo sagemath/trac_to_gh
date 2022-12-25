@@ -194,7 +194,7 @@ Looks good to me.  I've added the last patch which replaces the first and fixes 
 archive/issue_comments_014813.json:
 ```json
 {
-    "body": "No dice, i.e. rejects for all patches:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8311-2.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 4409.\n1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej\npatching file sage/misc/hg.py\nHunk #1 succeeded at 169 (offset 32 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8312.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 437.\n1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8313.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 449.\nHunk #2 FAILED at 2545.\nHunk #3 FAILED at 2625.\nHunk #4 FAILED at 5817.\nHunk #5 FAILED at 6459.\nHunk #6 FAILED at 6541.\nHunk #7 FAILED at 6813.\n7 out of 7 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "No dice, i.e. rejects for all patches:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8311-2.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 4409.\n1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej\npatching file sage/misc/hg.py\nHunk #1 succeeded at 169 (offset 32 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8312.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 437.\n1 out of 1 hunk FAILED -- saving rejects to file sage/calculus/calculus.py.rej\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.3.alpha0/devel/sage$ patch -p1 --dry-run < trac_2240_8313.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 449.\nHunk #2 FAILED at 2545.\nHunk #3 FAILED at 2625.\nHunk #4 FAILED at 5817.\nHunk #5 FAILED at 6459.\nHunk #6 FAILED at 6541.\nHunk #7 FAILED at 6813.\n7 out of 7 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-26T05:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
@@ -227,7 +227,6 @@ Hunk #6 FAILED at 6541.
 Hunk #7 FAILED at 6813.
 7 out of 7 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej
 ```
-
 
 Cheers,
 

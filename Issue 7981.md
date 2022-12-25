@@ -3,7 +3,7 @@
 archive/issues_007981.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
     "created_at": "2010-01-18T18:39:50Z",
     "labels": [
         "component: graphics",
@@ -22,13 +22,11 @@ CC:  wcauchois
 
 This animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):
 
-
 ```
 sage: var('t')
 sage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)
 sage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()
 ```
-
 
 Thanks to   	
 Johann Myrkraverk Oskarsson for reporting this.
@@ -211,7 +209,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069526.json:
 ```json
 {
-    "body": "Here is another effect of this, I think:\n\n\n```\nplot(x,(x,0,1),aspect_ratio=1).save('test.png')\n```\n\ndoes not save a graph with aspect ratio 1.",
+    "body": "Here is another effect of this, I think:\n\n```\nplot(x,(x,0,1),aspect_ratio=1).save('test.png')\n```\ndoes not save a graph with aspect ratio 1.",
     "created_at": "2010-11-10T16:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -222,11 +220,9 @@ archive/issue_comments_069526.json:
 
 Here is another effect of this, I think:
 
-
 ```
 plot(x,(x,0,1),aspect_ratio=1).save('test.png')
 ```
-
 does not save a graph with aspect ratio 1.
 
 
@@ -412,7 +408,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_069536.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  \n\nI don't remember exactly what I meant, but probably it was changing parameters of `save`.\n\n> I guess I mean to ask whether this is a good such change; usually there is a deprecation period.  After all, doctests catch very few of our use cases :)  What is wrong with the usual `*args,**kwds` syntax? \n\nI think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\n\n> As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n\nIsn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\n> Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n\nI added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?",
+    "body": "Replying to [comment:13 kcrisman]:\n> Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  \n\n\nI don't remember exactly what I meant, but probably it was changing parameters of `save`.\n\n> I guess I mean to ask whether this is a good such change; usually there is a deprecation period.  After all, doctests catch very few of our use cases :)  What is wrong with the usual `*args,**kwds` syntax? \n\n\nI think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\n\n> As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n\n\nIsn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\n> Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n\n\nI added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?",
     "created_at": "2011-01-13T03:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -424,17 +420,21 @@ archive/issue_comments_069536.json:
 Replying to [comment:13 kcrisman]:
 > Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  
 
+
 I don't remember exactly what I meant, but probably it was changing parameters of `save`.
 
 > I guess I mean to ask whether this is a good such change; usually there is a deprecation period.  After all, doctests catch very few of our use cases :)  What is wrong with the usual `*args,**kwds` syntax? 
+
 
 I think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.
 
 > As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!
 
+
 Isn't it a bug that `save` saves something in some cases when `savenow=False`?..
 
 > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(
+
 
 I added the doctest. Was it the only reason for "needs work" or you would like to have `save` parameters changed as well?
 
@@ -503,7 +503,7 @@ Apply trac-7981-save_ignores_preset_plotting_options.patch
 archive/issue_comments_069540.json:
 ```json
 {
-    "body": "Replying to [comment:14 novoselt]:\n> Replying to [comment:13 kcrisman]:\n> I think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) \nYeah, these two make sense.  It looks like dpi will still work, given `SHOW_OPTIONS`.  \n\n>As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\nOkay, I see what's going on here now.  Especially since the order would be open to suspicion!\n\n> > As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n> \n> Isn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\nNo, just an undocumented feature!  Since it doesn't save a *graphic*.  I agree this seems odd, though, so not complaining.\n\n> > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n> \n> I added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?\n\nNo, assuming this still applies by the buildbot, and since you've explained the parameter issue fine, that's okay.  The only reason I felt justified in overruling the original positive review was because it didn't actually include the doctest, though I had the other questions as well.",
+    "body": "Replying to [comment:14 novoselt]:\n> Replying to [comment:13 kcrisman]:\n> I think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) \n\nYeah, these two make sense.  It looks like dpi will still work, given `SHOW_OPTIONS`.  \n\n>As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\n\nOkay, I see what's going on here now.  Especially since the order would be open to suspicion!\n\n> > As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n\n> \n> Isn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\n\nNo, just an undocumented feature!  Since it doesn't save a *graphic*.  I agree this seems odd, though, so not complaining.\n\n> > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n\n> \n> I added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?\n\n\nNo, assuming this still applies by the buildbot, and since you've explained the parameter issue fine, that's okay.  The only reason I felt justified in overruling the original positive review was because it didn't actually include the doctest, though I had the other questions as well.",
     "created_at": "2011-01-13T03:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -515,20 +515,26 @@ archive/issue_comments_069540.json:
 Replying to [comment:14 novoselt]:
 > Replying to [comment:13 kcrisman]:
 > I think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) 
+
 Yeah, these two make sense.  It looks like dpi will still work, given `SHOW_OPTIONS`.  
 
 >As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.
+
 Okay, I see what's going on here now.  Especially since the order would be open to suspicion!
 
 > > As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!
+
 > 
 > Isn't it a bug that `save` saves something in some cases when `savenow=False`?..
+
 
 No, just an undocumented feature!  Since it doesn't save a *graphic*.  I agree this seems odd, though, so not complaining.
 
 > > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(
+
 > 
 > I added the doctest. Was it the only reason for "needs work" or you would like to have `save` parameters changed as well?
+
 
 No, assuming this still applies by the buildbot, and since you've explained the parameter issue fine, that's okay.  The only reason I felt justified in overruling the original positive review was because it didn't actually include the doctest, though I had the other questions as well.
 
@@ -574,7 +580,7 @@ archive/issue_events_019092.json:
 archive/issue_comments_069542.json:
 ```json
 {
-    "body": "There is a trivial error in this patch that however causes it to fail doctests.\n\n```\nWe check that Trac #7981 is fixed:: \n\n    sage: animate([plot(sin(x + float(k), (0, 2*pi), ymin=-5, ymax=5)) \n    ...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\nNotice that there is a parenthesis missing after `float(k)` which instead comes after `ymax=5`.  Patch coming up.",
+    "body": "There is a trivial error in this patch that however causes it to fail doctests.\n\n```\nWe check that Trac #7981 is fixed:: \n\n    sage: animate([plot(sin(x + float(k), (0, 2*pi), ymin=-5, ymax=5)) \n    ...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\nNotice that there is a parenthesis missing after `float(k)` which instead comes after `ymax=5`.  Patch coming up.",
     "created_at": "2011-01-14T02:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -591,7 +597,6 @@ We check that Trac #7981 is fixed::
     sage: animate([plot(sin(x + float(k), (0, 2*pi), ymin=-5, ymax=5)) 
     ...            for k in srange(0,2*pi,0.3)]).show() # optional
 ```
-
 Notice that there is a parenthesis missing after `float(k)` which instead comes after `ymax=5`.  Patch coming up.
 
 
@@ -657,7 +662,7 @@ reviewer patch
 archive/issue_comments_069546.json:
 ```json
 {
-    "body": "Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by @kcrisman created at 2011-01-17 18:42:01\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
+    "body": "Attachment [trac_7981-reviewer.patch](tarball://root/attachments/some-uuid/ticket7981/trac_7981-reviewer.patch) by @kcrisman created at 2011-01-17 18:42:01\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
     "created_at": "2011-01-17T18:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -674,7 +679,6 @@ Just an update - apparently
 sage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)
 ...            for k in srange(0,2*pi,0.3)]).show() # optional
 ```
-
 does not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.
 
 
@@ -720,7 +724,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_069549.json:
 ```json
 {
-    "body": "Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n\n```\n        sage: a.show()          # optional -- requires convert command\n```\n\nas well as several lines later\n\n```\n        sage: a.show() # optional -- requires convert command\n```\n\nso hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\nAlso, the actual issue with creating a file I have posted to sage-devel about; it's not 100% clear to me that this is a bug.  It just happened to have a bad effect here, which I changed from Andrey's patch.  But it's orthogonal to the ticket.\n\nSo putting back to 'needs review'.  I hope you will agree with me that this is in fact still worthy of positive review.\n\nNow, of course there is in the doctesting framework the issue that one can do optional tests with only certain keywords, so if one has `convert` one could run them with that keyword.  But in that case, the entire file `animate.py` is replete with violations of this, and I feel that should be a separate ticket.",
+    "body": "Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n\n```\n        sage: a.show()          # optional -- requires convert command\n```\nas well as several lines later\n\n```\n        sage: a.show() # optional -- requires convert command\n```\nso hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\nAlso, the actual issue with creating a file I have posted to sage-devel about; it's not 100% clear to me that this is a bug.  It just happened to have a bad effect here, which I changed from Andrey's patch.  But it's orthogonal to the ticket.\n\nSo putting back to 'needs review'.  I hope you will agree with me that this is in fact still worthy of positive review.\n\nNow, of course there is in the doctesting framework the issue that one can do optional tests with only certain keywords, so if one has `convert` one could run them with that keyword.  But in that case, the entire file `animate.py` is replete with violations of this, and I feel that should be a separate ticket.",
     "created_at": "2011-01-17T20:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -734,13 +738,11 @@ Hmm, but in many places in this file it says why such things are optional.   In 
 ```
         sage: a.show()          # optional -- requires convert command
 ```
-
 as well as several lines later
 
 ```
         sage: a.show() # optional -- requires convert command
 ```
-
 so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.
 
 Also, the actual issue with creating a file I have posted to sage-devel about; it's not 100% clear to me that this is a bug.  It just happened to have a bad effect here, which I changed from Andrey's patch.  But it's orthogonal to the ticket.
@@ -774,7 +776,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069551.json:
 ```json
 {
-    "body": "Replying to [comment:23 kcrisman]:\n> Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n> {{{\n>         sage: a.show()          # optional -- requires convert command\n> }}}\n> as well as several lines later\n> {{{\n>         sage: a.show() # optional -- requires convert command\n> }}}\n> so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\nPersonally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.",
+    "body": "Replying to [comment:23 kcrisman]:\n> Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n> \n> ```\n>         sage: a.show()          # optional -- requires convert command\n> ```\n> as well as several lines later\n> \n> ```\n>         sage: a.show() # optional -- requires convert command\n> ```\n> so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\n\nPersonally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.",
     "created_at": "2011-01-18T13:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -785,14 +787,17 @@ archive/issue_comments_069551.json:
 
 Replying to [comment:23 kcrisman]:
 > Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:
-> {{{
+> 
+> ```
 >         sage: a.show()          # optional -- requires convert command
-> }}}
+> ```
 > as well as several lines later
-> {{{
+> 
+> ```
 >         sage: a.show() # optional -- requires convert command
-> }}}
+> ```
 > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.
+
 
 Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.
 
@@ -803,7 +808,7 @@ Personally, I would write it a third time.  On the other hand, I don't care too 
 archive/issue_comments_069552.json:
 ```json
 {
-    "body": "> > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n> \n> Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.\n\nYes, I am.  This issue is pretty important, and the other issue is somewhat orthogonal.  I've opened another ticket for the issue about the optional keyword - this is now #10655.",
+    "body": "> > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\n> \n> Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.\n\n\nYes, I am.  This issue is pretty important, and the other issue is somewhat orthogonal.  I've opened another ticket for the issue about the optional keyword - this is now #10655.",
     "created_at": "2011-01-18T14:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -813,8 +818,10 @@ archive/issue_comments_069552.json:
 ```
 
 > > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.
+
 > 
 > Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.
+
 
 Yes, I am.  This issue is pretty important, and the other issue is somewhat orthogonal.  I've opened another ticket for the issue about the optional keyword - this is now #10655.
 
@@ -951,7 +958,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069560.json:
 ```json
 {
-    "body": "Replying to [comment:27 jdemeyer]:\n> Please specify which patches have to be applied.\nJust FYI, this was already noted in [comment:19 comment 19].",
+    "body": "Replying to [comment:27 jdemeyer]:\n> Please specify which patches have to be applied.\n\nJust FYI, this was already noted in [comment:19 comment 19].",
     "created_at": "2011-01-19T02:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7981",
     "type": "issue_comment",
@@ -962,6 +969,7 @@ archive/issue_comments_069560.json:
 
 Replying to [comment:27 jdemeyer]:
 > Please specify which patches have to be applied.
+
 Just FYI, this was already noted in [comment:19 comment 19].
 
 

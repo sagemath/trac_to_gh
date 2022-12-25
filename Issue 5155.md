@@ -3,7 +3,7 @@
 archive/issues_005155.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @lftabera @nexttime\n\nAll doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.\n\n```\nexport SAGE_TESTDIR=/scratch/mabshoff/tmp\n```\n\nand run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed\n\tsage -t -long devel/doc/tut/tut.tex # 5 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/databases/database.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/misc/package.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n\tsage -t -long devel/sage/sage/server/support.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed\n```\n\nThis ticket might need to be split up since it covers a rather large number of doctest failures.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @lftabera @nexttime\n\nAll doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.\n\n```\nexport SAGE_TESTDIR=/scratch/mabshoff/tmp\n```\nand run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed\n\tsage -t -long devel/doc/tut/tut.tex # 5 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/databases/database.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/misc/package.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n\tsage -t -long devel/sage/sage/server/support.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed\n```\nThis ticket might need to be split up since it covers a rather large number of doctest failures.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
     "created_at": "2009-02-02T01:25:42Z",
     "labels": [
         "component: doctest",
@@ -26,7 +26,6 @@ All doctests in Sage should pass when they are run as a user that does not own t
 ```
 export SAGE_TESTDIR=/scratch/mabshoff/tmp
 ```
-
 and run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:
 
 ```
@@ -43,7 +42,6 @@ and run the doctests on a Sage install that isn't owned by the user. When doing 
 	sage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed
 	sage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed
 ```
-
 This ticket might need to be split up since it covers a rather large number of doctest failures.
 
 Cheers,
@@ -79,7 +77,7 @@ Changing status from new to needs_review.
 archive/issue_comments_039381.json:
 ```json
 {
-    "body": "Before applying the patch, I get two doctest failures (with a non-writeable Sage install).  Applying the patch \"trac_5155.patch\" fixes both.  So positive review for that.\n\nThe scripts patch wasn't necessary to get those tests to pass, and it also doesn't apply cleanly to 4.3.1:\n\n```\napplying /Users/palmieri/Downloads/scripts_5155.patch\npatching file sage-doctest\nHunk #1 FAILED at 55\n1 out of 1 hunks FAILED -- saving rejects to file sage-doctest.rej\nunable to find 'sage-dsage-trial' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-dsage-trial.rej\npatching file sage-maketest\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\npatching file sage-test\nHunk #1 FAILED at 40\n1 out of 1 hunks FAILED -- saving rejects to file sage-test.rej\nsage-dsage-trial: No such file or directory\nabort: patch failed to apply\n```\n\nThe changes there look fine in principle, though.  So once it's rebased, positive review there, too.",
+    "body": "Before applying the patch, I get two doctest failures (with a non-writeable Sage install).  Applying the patch \"trac_5155.patch\" fixes both.  So positive review for that.\n\nThe scripts patch wasn't necessary to get those tests to pass, and it also doesn't apply cleanly to 4.3.1:\n\n```\napplying /Users/palmieri/Downloads/scripts_5155.patch\npatching file sage-doctest\nHunk #1 FAILED at 55\n1 out of 1 hunks FAILED -- saving rejects to file sage-doctest.rej\nunable to find 'sage-dsage-trial' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-dsage-trial.rej\npatching file sage-maketest\nHunk #1 succeeded at 1 with fuzz 1 (offset -1 lines).\npatching file sage-test\nHunk #1 FAILED at 40\n1 out of 1 hunks FAILED -- saving rejects to file sage-test.rej\nsage-dsage-trial: No such file or directory\nabort: patch failed to apply\n```\nThe changes there look fine in principle, though.  So once it's rebased, positive review there, too.",
     "created_at": "2010-01-21T21:04:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -107,7 +105,6 @@ Hunk #1 FAILED at 40
 sage-dsage-trial: No such file or directory
 abort: patch failed to apply
 ```
-
 The changes there look fine in principle, though.  So once it's rebased, positive review there, too.
 
 
@@ -164,7 +161,7 @@ All except quecad are trying to be solved in #9965
 archive/issue_comments_039384.json:
 ```json
 {
-    "body": "qepcad failures\n\n\n```\nsage -t -long \"devel/sage/sage/interfaces/qepcad.py\"        \n**********************************************************************\nFile \"/opt/SAGE/sage/devel/sage/sage/interfaces/qepcad.py\", line 638:\n    sage: _rewrite_qepcadrc()\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        _rewrite_qepcadrc()###line 638:\n    sage: _rewrite_qepcadrc()\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 660, in _rewrite_qepcadrc\n        open(fn, 'w').write(text)\n    IOError: [Errno 13] Permission denied: '/opt/SAGE/sage/local//default.qepcadrc'\n**********************************************************************\nFile \"/opt/SAGE/sage/devel/sage/sage/interfaces/qepcad.py\", line 689:\n    sage: Qepcad_expect(memcells=100000, logfile=sys.stdout)\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        Qepcad_expect(memcells=Integer(100000), logfile=sys.stdout)###line 689:\n    sage: Qepcad_expect(memcells=100000, logfile=sys.stdout)\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 692, in __init__\n        _rewrite_qepcadrc()\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 660, in _rewrite_qepcadrc\n        open(fn, 'w').write(text)\n    IOError: [Errno 13] Permission denied: '/opt/SAGE/sage/local//default.qepcadrc'\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_3\n   1 of   4 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/usuario/.sage//tmp/.doctest_qepcad.py\n         [1.9 s]\n```\n",
+    "body": "qepcad failures\n\n```\nsage -t -long \"devel/sage/sage/interfaces/qepcad.py\"        \n**********************************************************************\nFile \"/opt/SAGE/sage/devel/sage/sage/interfaces/qepcad.py\", line 638:\n    sage: _rewrite_qepcadrc()\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        _rewrite_qepcadrc()###line 638:\n    sage: _rewrite_qepcadrc()\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 660, in _rewrite_qepcadrc\n        open(fn, 'w').write(text)\n    IOError: [Errno 13] Permission denied: '/opt/SAGE/sage/local//default.qepcadrc'\n**********************************************************************\nFile \"/opt/SAGE/sage/devel/sage/sage/interfaces/qepcad.py\", line 689:\n    sage: Qepcad_expect(memcells=100000, logfile=sys.stdout)\nException raised:\n    Traceback (most recent call last):\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/SAGE/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        Qepcad_expect(memcells=Integer(100000), logfile=sys.stdout)###line 689:\n    sage: Qepcad_expect(memcells=100000, logfile=sys.stdout)\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 692, in __init__\n        _rewrite_qepcadrc()\n      File \"/opt/SAGE/sage/local/lib/python/site-packages/sage/interfaces/qepcad.py\", line 660, in _rewrite_qepcadrc\n        open(fn, 'w').write(text)\n    IOError: [Errno 13] Permission denied: '/opt/SAGE/sage/local//default.qepcadrc'\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_3\n   1 of   4 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/usuario/.sage//tmp/.doctest_qepcad.py\n         [1.9 s]\n```",
     "created_at": "2010-09-23T11:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -174,7 +171,6 @@ archive/issue_comments_039384.json:
 ```
 
 qepcad failures
-
 
 ```
 sage -t -long "devel/sage/sage/interfaces/qepcad.py"        
@@ -225,13 +221,12 @@ For whitespace errors, see the file /home/usuario/.sage//tmp/.doctest_qepcad.py
 
 
 
-
 ---
 
 archive/issue_comments_039385.json:
 ```json
 {
-    "body": "Another issue, if you compile sage but the very first access of sage is made by a user without write permissions, you get the following error:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 174, in <module>\n    t, R = install_moved()\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 18, in install_moved\n    write_flags_file()\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 82, in write_flags_file\n    open(flags_file,'w').write(get_flags_info())\nIOError: [Errno 13] Permission denied: '/opt/SAGE/sage-4.5.3/local/lib/sage-flags.txt'",
+    "body": "Another issue, if you compile sage but the very first access of sage is made by a user without write permissions, you get the following error:\n\n---\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n---\nTraceback (most recent call last):\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 174, in <module>\n    t, R = install_moved()\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 18, in install_moved\n    write_flags_file()\n  File \"/opt/SAGE/sage-4.5.3/local/bin/sage-location\", line 82, in write_flags_file\n    open(flags_file,'w').write(get_flags_info())\nIOError: [Errno 13] Permission denied: '/opt/SAGE/sage-4.5.3/local/lib/sage-flags.txt'",
     "created_at": "2010-09-23T14:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -242,8 +237,10 @@ archive/issue_comments_039385.json:
 
 Another issue, if you compile sage but the very first access of sage is made by a user without write permissions, you get the following error:
 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+---
+| Sage Version 4.5.3, Release Date: 2010-09-04                       |
+| Type notebook() for the GUI, and license() for information.        |
+---
 Traceback (most recent call last):
   File "/opt/SAGE/sage-4.5.3/local/bin/sage-location", line 174, in <module>
     t, R = install_moved()
@@ -260,7 +257,7 @@ IOError: [Errno 13] Permission denied: '/opt/SAGE/sage-4.5.3/local/lib/sage-flag
 archive/issue_comments_039386.json:
 ```json
 {
-    "body": "With Sage 4.7.2.alpha2, I see problems with qepcad and sympow.  I think the qepcad problem should be easy to solve, basically as mhansen did before:\n\n```diff\ndiff --git a/sage/interfaces/qepcad.py b/sage/interfaces/qepcad.py\n--- a/sage/interfaces/qepcad.py\n+++ b/sage/interfaces/qepcad.py\n@@ -636,14 +636,14 @@ def _rewrite_qepcadrc():\n     EXAMPLES:\n         sage: from sage.interfaces.qepcad import _rewrite_qepcadrc\n         sage: _rewrite_qepcadrc()\n-        sage: from sage.misc.misc import SAGE_LOCAL\n-        sage: open('%s/default.qepcadrc'%SAGE_LOCAL).readlines()[-1]\n+        sage: from sage.misc.misc import DOT_SAGE\n+        sage: open('%s/default.qepcadrc'%DOT_SAGE).readlines()[-1]\n         'SINGULAR .../local//bin'\n     \"\"\"\n     global _rewrote_qepcadrc\n     if _rewrote_qepcadrc: return\n \n-    SL = sage.misc.misc.SAGE_LOCAL\n+    SL = sage.misc.misc.DOT_SAGE\n     fn = '%s/default.qepcadrc'%SL\n     text = \\\n \"\"\"# THIS FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT\n```\n\nSympow will be harder to deal with, because of how the spkg is written: it tries to write files to SAGE_LOCAL/lib/sympow.  See [http://trac.sagemath.org/sage_trac/ticket/9703#comment:9](http://trac.sagemath.org/sage_trac/ticket/9703#comment:9) for a possible fix.\n\nI'm attaching a patch to try to deal with the situation when you run Sage for the very first time as a user without write permissions.\n\nFinally, there may be other issues if you compile Sage but don't run it, and then run doctests as a user without write permissions (the first time doctests get run, they might write some files which don't need to be written later).  These issues should be fixed, too.",
+    "body": "With Sage 4.7.2.alpha2, I see problems with qepcad and sympow.  I think the qepcad problem should be easy to solve, basically as mhansen did before:\n\n```diff\ndiff --git a/sage/interfaces/qepcad.py b/sage/interfaces/qepcad.py\n--- a/sage/interfaces/qepcad.py\n+++ b/sage/interfaces/qepcad.py\n@@ -636,14 +636,14 @@ def _rewrite_qepcadrc():\n     EXAMPLES:\n         sage: from sage.interfaces.qepcad import _rewrite_qepcadrc\n         sage: _rewrite_qepcadrc()\n-        sage: from sage.misc.misc import SAGE_LOCAL\n-        sage: open('%s/default.qepcadrc'%SAGE_LOCAL).readlines()[-1]\n+        sage: from sage.misc.misc import DOT_SAGE\n+        sage: open('%s/default.qepcadrc'%DOT_SAGE).readlines()[-1]\n         'SINGULAR .../local//bin'\n     \"\"\"\n     global _rewrote_qepcadrc\n     if _rewrote_qepcadrc: return\n \n-    SL = sage.misc.misc.SAGE_LOCAL\n+    SL = sage.misc.misc.DOT_SAGE\n     fn = '%s/default.qepcadrc'%SL\n     text = \\\n \"\"\"# THIS FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT\n```\nSympow will be harder to deal with, because of how the spkg is written: it tries to write files to SAGE_LOCAL/lib/sympow.  See [http://trac.sagemath.org/sage_trac/ticket/9703#comment:9](http://trac.sagemath.org/sage_trac/ticket/9703#comment:9) for a possible fix.\n\nI'm attaching a patch to try to deal with the situation when you run Sage for the very first time as a user without write permissions.\n\nFinally, there may be other issues if you compile Sage but don't run it, and then run doctests as a user without write permissions (the first time doctests get run, they might write some files which don't need to be written later).  These issues should be fixed, too.",
     "created_at": "2011-09-12T23:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -294,7 +291,6 @@ diff --git a/sage/interfaces/qepcad.py b/sage/interfaces/qepcad.py
      text = \
  """# THIS FILE IS AUTOMATICALLY GENERATED -- DO NOT EDIT
 ```
-
 Sympow will be harder to deal with, because of how the spkg is written: it tries to write files to SAGE_LOCAL/lib/sympow.  See [http://trac.sagemath.org/sage_trac/ticket/9703#comment:9](http://trac.sagemath.org/sage_trac/ticket/9703#comment:9) for a possible fix.
 
 I'm attaching a patch to try to deal with the situation when you run Sage for the very first time as a user without write permissions.
@@ -388,7 +384,7 @@ For the scripts patch:
 archive/issue_comments_039391.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> A few quick comments:\n> \n>  - you have a typo in line 93, \"eyactly\"\nNo idea how that happened...\n\n>  - on line 583, `# optional - qepcad, note \"algeraic\" [sic]`, this is not the way to format an optional doctest: it will only run if you do \"sage -t -optional-only=qepcad,not,algeraic,sic\" or something like that.\nVery true, thanks!\n\n> For the scripts patch:\n> \n>  - why not apply os.path.abspath to SAGE_ROOT?\nBecause `SAGE_ROOT` is already canonicalized by `realpath` at the top of that file:\n\n```\nSAGE_ROOT     = os.path.realpath(os.environ['SAGE_ROOT'])\n```\n",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> A few quick comments:\n> \n> - you have a typo in line 93, \"eyactly\"\n\nNo idea how that happened...\n\n>  - on line 583, `# optional - qepcad, note \"algeraic\" [sic]`, this is not the way to format an optional doctest: it will only run if you do \"sage -t -optional-only=qepcad,not,algeraic,sic\" or something like that.\n \nVery true, thanks!\n\n> For the scripts patch:\n> \n> - why not apply os.path.abspath to SAGE_ROOT?\n\nBecause `SAGE_ROOT` is already canonicalized by `realpath` at the top of that file:\n\n```\nSAGE_ROOT     = os.path.realpath(os.environ['SAGE_ROOT'])\n```",
     "created_at": "2011-10-17T18:47:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -400,21 +396,23 @@ archive/issue_comments_039391.json:
 Replying to [comment:14 jhpalmieri]:
 > A few quick comments:
 > 
->  - you have a typo in line 93, "eyactly"
+> - you have a typo in line 93, "eyactly"
+
 No idea how that happened...
 
 >  - on line 583, `# optional - qepcad, note "algeraic" [sic]`, this is not the way to format an optional doctest: it will only run if you do "sage -t -optional-only=qepcad,not,algeraic,sic" or something like that.
+ 
 Very true, thanks!
 
 > For the scripts patch:
 > 
->  - why not apply os.path.abspath to SAGE_ROOT?
+> - why not apply os.path.abspath to SAGE_ROOT?
+
 Because `SAGE_ROOT` is already canonicalized by `realpath` at the top of that file:
 
 ```
 SAGE_ROOT     = os.path.realpath(os.environ['SAGE_ROOT'])
 ```
-
 
 
 
@@ -441,7 +439,7 @@ Moved the "clean up" part of the qepcad patch to #11933.
 archive/issue_comments_039393.json:
 ```json
 {
-    "body": "For the scripts patch: should there be any error checking when writing to files?  If a sysadmin installs Sage, runs it once (to generate the appropriate files) and then moves it but doesn't run it again, it would be nice if other users got helpful error messages.  One issue is the code\n\n```\n    check_processor_flags()\n    # Note: install_moved() may also run e.g. initialize_pkgconfig_files().\n    if install_moved():\n        print \"The Sage installation tree may have moved\"\n        print \"(from %s to %s).\" % (OLD_SAGE_ROOT, SAGE_ROOT)\n```\n\nThe problem is that `check_processor_flags` and `install_moved` already try to write to files, so if permissions are bad, the message about the installation tree may not get printed.  I'm attaching a patch to apply on top of yours (basically wraps everything in a try...except block).\n\nAlso, as discussed at #11760, the alternate implementation (commented out) of searching for SAGE_ROOT using regular expressions was slower than the one currently used, so I just deleted the comments altogether.\n\nI'll keep looking at your patch.",
+    "body": "For the scripts patch: should there be any error checking when writing to files?  If a sysadmin installs Sage, runs it once (to generate the appropriate files) and then moves it but doesn't run it again, it would be nice if other users got helpful error messages.  One issue is the code\n\n```\n    check_processor_flags()\n    # Note: install_moved() may also run e.g. initialize_pkgconfig_files().\n    if install_moved():\n        print \"The Sage installation tree may have moved\"\n        print \"(from %s to %s).\" % (OLD_SAGE_ROOT, SAGE_ROOT)\n```\nThe problem is that `check_processor_flags` and `install_moved` already try to write to files, so if permissions are bad, the message about the installation tree may not get printed.  I'm attaching a patch to apply on top of yours (basically wraps everything in a try...except block).\n\nAlso, as discussed at #11760, the alternate implementation (commented out) of searching for SAGE_ROOT using regular expressions was slower than the one currently used, so I just deleted the comments altogether.\n\nI'll keep looking at your patch.",
     "created_at": "2011-10-17T21:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -459,7 +457,6 @@ For the scripts patch: should there be any error checking when writing to files?
         print "The Sage installation tree may have moved"
         print "(from %s to %s)." % (OLD_SAGE_ROOT, SAGE_ROOT)
 ```
-
 The problem is that `check_processor_flags` and `install_moved` already try to write to files, so if permissions are bad, the message about the installation tree may not get printed.  I'm attaching a patch to apply on top of yours (basically wraps everything in a try...except block).
 
 Also, as discussed at #11760, the alternate implementation (commented out) of searching for SAGE_ROOT using regular expressions was slower than the one currently used, so I just deleted the comments altogether.
@@ -491,7 +488,7 @@ John, you are assuming a failure means that there was a problem was permissions.
 archive/issue_comments_039395.json:
 ```json
 {
-    "body": "Replying to [comment:20 jdemeyer]:\n> John, you are assuming a failure means that there was a problem was permissions.  We should probably catch `IOError` (and also `OSError` perhaps?) and print the message which came with the exception.\n\nI think that a permissions problem is the most likely issue.  I've modified the patch a bit: if it looks like bad permissions, print a friendly error message.  If it's an `IOError` unrelated to permissions, explicitly raise the error.  If it's some other kind of error, don't catch it at all, so it should get raised, too.  You can test this by changing my patch: change the line\n\n```\nif e.strerror.find('Permission denied') != -1:\n```\n\nby changing `!=` to `==`, or on the previous line, change `IOError` to `ValueError` or something else irrelevant.  Move sage and make the directory unwriteable; then when you run sage, you should see the raw error message.",
+    "body": "Replying to [comment:20 jdemeyer]:\n> John, you are assuming a failure means that there was a problem was permissions.  We should probably catch `IOError` (and also `OSError` perhaps?) and print the message which came with the exception.\n\n\nI think that a permissions problem is the most likely issue.  I've modified the patch a bit: if it looks like bad permissions, print a friendly error message.  If it's an `IOError` unrelated to permissions, explicitly raise the error.  If it's some other kind of error, don't catch it at all, so it should get raised, too.  You can test this by changing my patch: change the line\n\n```\nif e.strerror.find('Permission denied') != -1:\n```\nby changing `!=` to `==`, or on the previous line, change `IOError` to `ValueError` or something else irrelevant.  Move sage and make the directory unwriteable; then when you run sage, you should see the raw error message.",
     "created_at": "2011-10-19T02:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -503,12 +500,12 @@ archive/issue_comments_039395.json:
 Replying to [comment:20 jdemeyer]:
 > John, you are assuming a failure means that there was a problem was permissions.  We should probably catch `IOError` (and also `OSError` perhaps?) and print the message which came with the exception.
 
+
 I think that a permissions problem is the most likely issue.  I've modified the patch a bit: if it looks like bad permissions, print a friendly error message.  If it's an `IOError` unrelated to permissions, explicitly raise the error.  If it's some other kind of error, don't catch it at all, so it should get raised, too.  You can test this by changing my patch: change the line
 
 ```
 if e.strerror.find('Permission denied') != -1:
 ```
-
 by changing `!=` to `==`, or on the previous line, change `IOError` to `ValueError` or something else irrelevant.  Move sage and make the directory unwriteable; then when you run sage, you should see the raw error message.
 
 
@@ -807,7 +804,7 @@ My only objection is the location of default.qepcadrc but since it is for an exp
 archive/issue_comments_039411.json:
 ```json
 {
-    "body": "Replying to [comment:44 fbissey]:\n> My only objection is the location of default.qepcadrc\nAlso, you shouldn't blame this ticket for that, it has always been like that.\n\nThanks for the review!",
+    "body": "Replying to [comment:44 fbissey]:\n> My only objection is the location of default.qepcadrc\n\nAlso, you shouldn't blame this ticket for that, it has always been like that.\n\nThanks for the review!",
     "created_at": "2013-01-12T13:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
@@ -818,6 +815,7 @@ archive/issue_comments_039411.json:
 
 Replying to [comment:44 fbissey]:
 > My only objection is the location of default.qepcadrc
+
 Also, you shouldn't blame this ticket for that, it has always been like that.
 
 Thanks for the review!

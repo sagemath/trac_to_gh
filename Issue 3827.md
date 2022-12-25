@@ -3,7 +3,7 @@
 archive/issues_003827.json:
 ```json
 {
-    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: finance, timeseries\n\nTimeSeries.randomize has a lognormal distribution generator built in along with uniform, normal, and semicircle. However, there is no docstring that says so! Simply need to add a line that looks like\n\n\n```\nINPUT:\n    distribution -- 'lognormal': mean loc and standard deviation scale\n```\n\n\nSee patch below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3827\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: finance, timeseries\n\nTimeSeries.randomize has a lognormal distribution generator built in along with uniform, normal, and semicircle. However, there is no docstring that says so! Simply need to add a line that looks like\n\n```\nINPUT:\n    distribution -- 'lognormal': mean loc and standard deviation scale\n```\n\nSee patch below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3827\n\n",
     "created_at": "2008-08-12T23:44:08Z",
     "labels": [
         "component: finance",
@@ -25,12 +25,10 @@ Keywords: finance, timeseries
 
 TimeSeries.randomize has a lognormal distribution generator built in along with uniform, normal, and semicircle. However, there is no docstring that says so! Simply need to add a line that looks like
 
-
 ```
 INPUT:
     distribution -- 'lognormal': mean loc and standard deviation scale
 ```
-
 
 See patch below.
 

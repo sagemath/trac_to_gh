@@ -3,7 +3,7 @@
 archive/issues_002886.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen you crash Sage you get this error message:\n\n```\n**********************************************************************\n\nOops, SAGE crashed. We do our best to make it stable, but...\n\nA crash report was automatically generated with the following information:\n  - A verbatim copy of the crash traceback.\n  - A copy of your input history during this session.\n  - Data on your current SAGE configuration.\n\nIt was left in the file named:\n\t'/Users/was/.sage/ipython/SAGE_crash_report.txt'\nIf you can email this file to the developers, the information in it will help\nthem in understanding and correcting the problem.\n\nYou can mail it to: William Stein at wstein@gmail.com\nwith the subject 'SAGE Crash Report'.\n\nIf you want to do it now, the following command will work (under Unix):\nmail -s 'SAGE Crash Report' wstein@gmail.com < /Users/was/.sage/ipython/SAGE_crash_report.txt\n\nTo ensure accurate tracking of this issue, please file a report about it at:\nhttp://www.sagemath.org:9002/sage_trac\n\n```\n\n\nIssues: \n  (1) People need accounts to file a report.  It might be much better to tell people to report to sage-support.\n\n  (2) the url for trac is now trac.sagemath.org/sage_trac\n\n--\n\nI think doing (2) would be fine to fix this ticket.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2886\n\n",
+    "body": "Assignee: @williamstein\n\nWhen you crash Sage you get this error message:\n\n```\n**********************************************************************\n\nOops, SAGE crashed. We do our best to make it stable, but...\n\nA crash report was automatically generated with the following information:\n  - A verbatim copy of the crash traceback.\n  - A copy of your input history during this session.\n  - Data on your current SAGE configuration.\n\nIt was left in the file named:\n\t'/Users/was/.sage/ipython/SAGE_crash_report.txt'\nIf you can email this file to the developers, the information in it will help\nthem in understanding and correcting the problem.\n\nYou can mail it to: William Stein at wstein@gmail.com\nwith the subject 'SAGE Crash Report'.\n\nIf you want to do it now, the following command will work (under Unix):\nmail -s 'SAGE Crash Report' wstein@gmail.com < /Users/was/.sage/ipython/SAGE_crash_report.txt\n\nTo ensure accurate tracking of this issue, please file a report about it at:\nhttp://www.sagemath.org:9002/sage_trac\n\n```\n\nIssues: \n  (1) People need accounts to file a report.  It might be much better to tell people to report to sage-support.\n\n  (2) the url for trac is now trac.sagemath.org/sage_trac\n\n--\n\nI think doing (2) would be fine to fix this ticket.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2886\n\n",
     "created_at": "2008-04-12T00:09:35Z",
     "labels": [
         "component: user interface",
@@ -45,7 +45,6 @@ To ensure accurate tracking of this issue, please file a report about it at:
 http://www.sagemath.org:9002/sage_trac
 
 ```
-
 
 Issues: 
   (1) People need accounts to file a report.  It might be much better to tell people to report to sage-support.

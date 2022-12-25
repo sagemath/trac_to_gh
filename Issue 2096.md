@@ -3,7 +3,7 @@
 archive/issues_002096.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMathematica does not have tab completion enabled.  To get a list of commands that start with \"Sli\", do:\n\n\n```\n?Sli*\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2096\n\n",
+    "body": "Assignee: @williamstein\n\nMathematica does not have tab completion enabled.  To get a list of commands that start with \"Sli\", do:\n\n```\n?Sli*\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2096\n\n",
     "created_at": "2008-02-08T01:54:10Z",
     "labels": [
         "component: interfaces",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 Mathematica does not have tab completion enabled.  To get a list of commands that start with "Sli", do:
 
-
 ```
 ?Sli*
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2096

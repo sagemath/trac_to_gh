@@ -143,7 +143,7 @@ This should fix #6882
 archive/issue_comments_079704.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> This should fix #6882\n\nWell, or at least *help* with the solution, anyway.",
+    "body": "Replying to [comment:5 jason]:\n> This should fix #6882\n\n\nWell, or at least *help* with the solution, anyway.",
     "created_at": "2010-05-03T17:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -154,6 +154,7 @@ archive/issue_comments_079704.json:
 
 Replying to [comment:5 jason]:
 > This should fix #6882
+
 
 Well, or at least *help* with the solution, anyway.
 
@@ -199,7 +200,7 @@ archive/issue_events_021211.json:
 archive/issue_comments_079706.json:
 ```json
 {
-    "body": "patch should be rebased, it fails to apply to Sage 5.11:\n\n```\nsage: hg_sage.import_patch(\"/tmp/trac-8734-maxima-vars.patch\")\ncd \"/home/zimmerma/Downloads/sage-5.11/devel/sage\" && sage --hg import   \"/tmp/trac-8734-maxima-vars.patch\"\napplying /tmp/trac-8734-maxima-vars.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 1450\nHunk #2 FAILED at 1461\n2 out of 2 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\npatching file sage/symbolic/assumptions.py\nHunk #1 FAILED at 100\n1 out of 1 hunks FAILED -- saving rejects to file sage/symbolic/assumptions.py.rej\nabort: patch failed to apply\n```\n\nPaul",
+    "body": "patch should be rebased, it fails to apply to Sage 5.11:\n\n```\nsage: hg_sage.import_patch(\"/tmp/trac-8734-maxima-vars.patch\")\ncd \"/home/zimmerma/Downloads/sage-5.11/devel/sage\" && sage --hg import   \"/tmp/trac-8734-maxima-vars.patch\"\napplying /tmp/trac-8734-maxima-vars.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 1450\nHunk #2 FAILED at 1461\n2 out of 2 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\npatching file sage/symbolic/assumptions.py\nHunk #1 FAILED at 100\n1 out of 1 hunks FAILED -- saving rejects to file sage/symbolic/assumptions.py.rej\nabort: patch failed to apply\n```\nPaul",
     "created_at": "2013-08-25T13:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -223,7 +224,6 @@ Hunk #1 FAILED at 100
 1 out of 1 hunks FAILED -- saving rejects to file sage/symbolic/assumptions.py.rej
 abort: patch failed to apply
 ```
-
 Paul
 
 
@@ -267,7 +267,7 @@ archive/issue_events_021213.json:
 archive/issue_comments_079707.json:
 ```json
 {
-    "body": "Rebased on 6.2.beta3\n\nPatch doesn't seem ready:\n\n```\nsage -t --long src/sage/symbolic/integration/integral.py  # 3 doctests failed\nsage -t --long src/sage/symbolic/assumptions.py  # 26 doctests failed\nsage -t --long src/sage/symbolic/pynac.pyx  # 1 doctest failed\nsage -t --long src/sage/symbolic/expression.pyx  # 21 doctests failed\nsage -t --long src/sage/calculus/desolvers.py  # 63 doctests failed\nsage -t --long src/sage/calculus/calculus.py  # 13 doctests failed\nsage -t --long src/sage/calculus/functional.py  # 1 doctest failed\n```\n\n----\nNew commits:",
+    "body": "Rebased on 6.2.beta3\n\nPatch doesn't seem ready:\n\n```\nsage -t --long src/sage/symbolic/integration/integral.py  # 3 doctests failed\nsage -t --long src/sage/symbolic/assumptions.py  # 26 doctests failed\nsage -t --long src/sage/symbolic/pynac.pyx  # 1 doctest failed\nsage -t --long src/sage/symbolic/expression.pyx  # 21 doctests failed\nsage -t --long src/sage/calculus/desolvers.py  # 63 doctests failed\nsage -t --long src/sage/calculus/calculus.py  # 13 doctests failed\nsage -t --long src/sage/calculus/functional.py  # 1 doctest failed\n```\n\n---\nNew commits:",
     "created_at": "2014-03-08T08:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -290,7 +290,7 @@ sage -t --long src/sage/calculus/calculus.py  # 13 doctests failed
 sage -t --long src/sage/calculus/functional.py  # 1 doctest failed
 ```
 
-----
+---
 New commits:
 
 
@@ -444,7 +444,7 @@ New commits:
 archive/issue_comments_079716.json:
 ```json
 {
-    "body": "\n```\nsage -t --long src/sage/functions/bessel.py  # 3 doctests failed\nsage -t --long src/sage/interfaces/maxima_abstract.py  # 16 doctests failed\nsage -t --long src/sage/tests/french_book/recequadiff.py  # 1 doctest failed\nsage -t --long src/sage/interfaces/maxima.py  # 2 doctests failed\nsage -t --long src/doc/en/constructions/calculus.rst  # 2 doctests failed\nsage -t --long src/sage/interfaces/maxima_lib.py  # 11 doctests failed\nsage -t --long src/sage/functions/other.py  # 4 doctests failed\nsage -t --long src/sage/functions/orthogonal_polys.py  # 5 doctests failed\nsage -t --long src/sage/symbolic/expression_conversions.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/interface.py  # 10 doctests failed\n```\n",
+    "body": "```\nsage -t --long src/sage/functions/bessel.py  # 3 doctests failed\nsage -t --long src/sage/interfaces/maxima_abstract.py  # 16 doctests failed\nsage -t --long src/sage/tests/french_book/recequadiff.py  # 1 doctest failed\nsage -t --long src/sage/interfaces/maxima.py  # 2 doctests failed\nsage -t --long src/doc/en/constructions/calculus.rst  # 2 doctests failed\nsage -t --long src/sage/interfaces/maxima_lib.py  # 11 doctests failed\nsage -t --long src/sage/functions/other.py  # 4 doctests failed\nsage -t --long src/sage/functions/orthogonal_polys.py  # 5 doctests failed\nsage -t --long src/sage/symbolic/expression_conversions.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/interface.py  # 10 doctests failed\n```",
     "created_at": "2014-04-15T11:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -452,7 +452,6 @@ archive/issue_comments_079716.json:
     "user": "https://github.com/vbraun"
 }
 ```
-
 
 ```
 sage -t --long src/sage/functions/bessel.py  # 3 doctests failed
@@ -466,7 +465,6 @@ sage -t --long src/sage/functions/orthogonal_polys.py  # 5 doctests failed
 sage -t --long src/sage/symbolic/expression_conversions.py  # 2 doctests failed
 sage -t --long src/sage/interfaces/interface.py  # 10 doctests failed
 ```
-
 
 
 
@@ -511,7 +509,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_079719.json:
 ```json
 {
-    "body": "Concerning the remaining doctests in `interfaces/maxima_abstract.py` I am at a loss at what to do. For example this\n\n```\nsage: x,y = var('x,y'); f = maxima.function('x','sin(x)')\nsage: type(f)\n<class 'sage.interfaces.maxima.MaximaElementFunction'>\nsage: g=maxima.cos(x)\nsage: type(g)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: f+g\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+g)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\n\nshows that while the `MaximaElementFunction f` has the variable `x` which is associated with `_SAGE_VAR_x` in Maxima (and calling the function works as expected), the `MaximaElement g` shows `_SAGE_VAR_x` which has of course no Maxima pendant (and calling the function bombs). Naively both should behave identically.\n\n\n```\nsage: h=SR(maxima.cos(x))\nsage: h\ncos(x)\nsage: h(2)\ncos(2)\nsage: f+h\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+h)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\n\nMoreover, if `g` gets converted to `SR` it behaves fine but when converted to `type(f)` by using it as rhs it gets `_SAGE_VAR_x` as parameter. What is the next step?",
+    "body": "Concerning the remaining doctests in `interfaces/maxima_abstract.py` I am at a loss at what to do. For example this\n\n```\nsage: x,y = var('x,y'); f = maxima.function('x','sin(x)')\nsage: type(f)\n<class 'sage.interfaces.maxima.MaximaElementFunction'>\nsage: g=maxima.cos(x)\nsage: type(g)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: f+g\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+g)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\nshows that while the `MaximaElementFunction f` has the variable `x` which is associated with `_SAGE_VAR_x` in Maxima (and calling the function works as expected), the `MaximaElement g` shows `_SAGE_VAR_x` which has of course no Maxima pendant (and calling the function bombs). Naively both should behave identically.\n\n```\nsage: h=SR(maxima.cos(x))\nsage: h\ncos(x)\nsage: h(2)\ncos(2)\nsage: f+h\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+h)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\nMoreover, if `g` gets converted to `SR` it behaves fine but when converted to `type(f)` by using it as rhs it gets `_SAGE_VAR_x` as parameter. What is the next step?",
     "created_at": "2014-04-17T08:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -534,9 +532,7 @@ cos(_SAGE_VAR_x)+sin(x)
 sage: (f+g)(2)
 cos(_SAGE_VAR_x)+sin(2)
 ```
-
 shows that while the `MaximaElementFunction f` has the variable `x` which is associated with `_SAGE_VAR_x` in Maxima (and calling the function works as expected), the `MaximaElement g` shows `_SAGE_VAR_x` which has of course no Maxima pendant (and calling the function bombs). Naively both should behave identically.
-
 
 ```
 sage: h=SR(maxima.cos(x))
@@ -549,7 +545,6 @@ cos(_SAGE_VAR_x)+sin(x)
 sage: (f+h)(2)
 cos(_SAGE_VAR_x)+sin(2)
 ```
-
 Moreover, if `g` gets converted to `SR` it behaves fine but when converted to `type(f)` by using it as rhs it gets `_SAGE_VAR_x` as parameter. What is the next step?
 
 
@@ -559,7 +554,7 @@ Moreover, if `g` gets converted to `SR` it behaves fine but when converted to `t
 archive/issue_comments_079720.json:
 ```json
 {
-    "body": "As far as I understand now, a `MaximaElementFunction` is a function defined within the Maxima process, and so `x` is the parameter name, not a registered variable. Thus the output `sin(x)` makes sense. OTOH any `_SAGE_VAR_x` that appears in a `MaximaElement` repr refers to a registered variable within Maxima that is associated with a registered Sage var named `x`. Let's interpret the above output in the light of this.\n> {{{\n> sage: f+g\n> cos(_SAGE_VAR_x)+sin(x)\n> }}}\nCorrect but can the user make sense of it?\n> {{{\n> sage: (f+g)(2)\n> cos(_SAGE_VAR_x)+sin(2)\n> }}}\nThat is not less correct than\n\n```\nsage: (sin(x)+cos(y))(2)\ncos(y) + sin(2)\n```\n\nand it just seems to be another case of `SR._call_element_()` where is stated: \"Note that you make get unexpected results when calling symbolic expressions and not explicitly giving the variables.\"\n\nMoreover, it was a hack that this worked at all in the `MaximaAbstractElementFunction._add_()` doctests because\n\n```\nsage: f = maxima.function('z','sin(z)')\nsage: f\nsin(z)\nsage: f(2)\nsin(2)\nsage: (sin(z))(2)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nNameError: name 'z' is not defined\n```\n",
+    "body": "As far as I understand now, a `MaximaElementFunction` is a function defined within the Maxima process, and so `x` is the parameter name, not a registered variable. Thus the output `sin(x)` makes sense. OTOH any `_SAGE_VAR_x` that appears in a `MaximaElement` repr refers to a registered variable within Maxima that is associated with a registered Sage var named `x`. Let's interpret the above output in the light of this.\n> {{{\n> sage: f+g\n> cos(_SAGE_VAR_x)+sin(x)\n> }}}\n\nCorrect but can the user make sense of it?\n> {{{\n> sage: (f+g)(2)\n> cos(_SAGE_VAR_x)+sin(2)\n> }}}\n\nThat is not less correct than\n\n```\nsage: (sin(x)+cos(y))(2)\ncos(y) + sin(2)\n```\nand it just seems to be another case of `SR._call_element_()` where is stated: \"Note that you make get unexpected results when calling symbolic expressions and not explicitly giving the variables.\"\n\nMoreover, it was a hack that this worked at all in the `MaximaAbstractElementFunction._add_()` doctests because\n\n```\nsage: f = maxima.function('z','sin(z)')\nsage: f\nsin(z)\nsage: f(2)\nsin(2)\nsage: (sin(z))(2)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nNameError: name 'z' is not defined\n```",
     "created_at": "2014-04-18T14:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -573,18 +568,19 @@ As far as I understand now, a `MaximaElementFunction` is a function defined with
 > sage: f+g
 > cos(_SAGE_VAR_x)+sin(x)
 > }}}
+
 Correct but can the user make sense of it?
 > {{{
 > sage: (f+g)(2)
 > cos(_SAGE_VAR_x)+sin(2)
 > }}}
+
 That is not less correct than
 
 ```
 sage: (sin(x)+cos(y))(2)
 cos(y) + sin(2)
 ```
-
 and it just seems to be another case of `SR._call_element_()` where is stated: "Note that you make get unexpected results when calling symbolic expressions and not explicitly giving the variables."
 
 Moreover, it was a hack that this worked at all in the `MaximaAbstractElementFunction._add_()` doctests because
@@ -600,7 +596,6 @@ sage: (sin(z))(2)
 NameError                                 Traceback (most recent call last)
 NameError: name 'z' is not defined
 ```
-
 
 
 
@@ -751,7 +746,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_079727.json:
 ```json
 {
-    "body": "Hi!  Thanks for keeping at this.  I'll try to look at it one final time soon - waiting for the latest beta to compile.  In the meantime:\n\nI like the renaming and doctesting of the missing assumption function, and I agree with your analysis of the Maxima 'parameters', as you call them - yes, those are completely separate from Sage.  I would encourage you to be even more explicit than\n\n```\nThe parameter ``x`` is different from the symbolic variable::\n```\n\nby saying something about it being a *Maxima* parameter versus *Sage* symbolic variable.  Does that make sense?\n\nAlso, don't worry too much about the 'todo' in `doc/en/constructions/calculus.rst`.  That is truly ancient, from the days where legendary heroes of yore managed to bring calculus functionality, despite awkward syntax, into an algebraic geometry program... meaning eventually that should be just rewritten to use \"native syntax\" or just folded into the calculus documentation.",
+    "body": "Hi!  Thanks for keeping at this.  I'll try to look at it one final time soon - waiting for the latest beta to compile.  In the meantime:\n\nI like the renaming and doctesting of the missing assumption function, and I agree with your analysis of the Maxima 'parameters', as you call them - yes, those are completely separate from Sage.  I would encourage you to be even more explicit than\n\n```\nThe parameter ``x`` is different from the symbolic variable::\n```\nby saying something about it being a *Maxima* parameter versus *Sage* symbolic variable.  Does that make sense?\n\nAlso, don't worry too much about the 'todo' in `doc/en/constructions/calculus.rst`.  That is truly ancient, from the days where legendary heroes of yore managed to bring calculus functionality, despite awkward syntax, into an algebraic geometry program... meaning eventually that should be just rewritten to use \"native syntax\" or just folded into the calculus documentation.",
     "created_at": "2014-06-06T14:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -767,7 +762,6 @@ I like the renaming and doctesting of the missing assumption function, and I agr
 ```
 The parameter ``x`` is different from the symbolic variable::
 ```
-
 by saying something about it being a *Maxima* parameter versus *Sage* symbolic variable.  Does that make sense?
 
 Also, don't worry too much about the 'todo' in `doc/en/constructions/calculus.rst`.  That is truly ancient, from the days where legendary heroes of yore managed to bring calculus functionality, despite awkward syntax, into an algebraic geometry program... meaning eventually that should be just rewritten to use "native syntax" or just folded into the calculus documentation.
@@ -822,7 +816,7 @@ So these are pretty minor things and hopefully I'll be able to find some time fo
 archive/issue_comments_079730.json:
 ```json
 {
-    "body": "Replying to [comment:37 kcrisman]:\n> Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\nSure, as long as you remember \"The perfect is the enemy of the good.\" \n> * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\nThere are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n>(Also, did you change all of the doctests with assumptions, or leave a few just so people see what the full form looks like?)\nYes.\n> * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\nNo, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\nYes and no. A lot was missing.\n> ...\n> So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\nI would assume this is caught by all those doctests using maxima.",
+    "body": "Replying to [comment:37 kcrisman]:\n> Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\n\nSure, as long as you remember \"The perfect is the enemy of the good.\" \n> * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n \nThere are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n>(Also, did you change all of the doctests with assumptions, or leave a few just so people see what the full form looks like?)\n\nYes.\n> * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n \nNo, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n \nYes and no. A lot was missing.\n> ...\n> So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n\nI would assume this is caught by all those doctests using maxima.",
     "created_at": "2014-06-17T15:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -833,17 +827,23 @@ archive/issue_comments_079730.json:
 
 Replying to [comment:37 kcrisman]:
 > Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.
+
 Sure, as long as you remember "The perfect is the enemy of the good." 
 > * Commit 	be9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?
+ 
 There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.
 >(Also, did you change all of the doctests with assumptions, or leave a few just so people see what the full form looks like?)
+
 Yes.
 > * Commit 	ced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?
+ 
 No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring
 > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?
+ 
 Yes and no. A lot was missing.
 > ...
 > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!
+
 I would assume this is caught by all those doctests using maxima.
 
 
@@ -889,7 +889,7 @@ The output changed recently and I forgot to fix one doctest.
 archive/issue_comments_079733.json:
 ```json
 {
-    "body": "> > Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\n> Sure, as long as you remember \"The perfect is the enemy of the good.\" \nOf course!\n> > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n> There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\nHmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\n> > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n> No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\nI'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\n> > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n> Yes and no. A lot was missing.\nI mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\n> > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n> I would assume this is caught by all those doctests using maxima.\nThat's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.",
+    "body": "> > Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\n\n> Sure, as long as you remember \"The perfect is the enemy of the good.\" \nOf course!\n> > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n \n> There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\nHmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\n> > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n \n> No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\nI'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\n> > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n \n> Yes and no. A lot was missing.\nI mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\n> > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n\n> I would assume this is caught by all those doctests using maxima.\nThat's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.",
     "created_at": "2014-06-17T16:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -899,18 +899,23 @@ archive/issue_comments_079733.json:
 ```
 
 > > Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.
+
 > Sure, as long as you remember "The perfect is the enemy of the good." 
 Of course!
 > > * Commit 	be9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?
+ 
 > There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.
 Hmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.
 > > * Commit 	ced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?
+ 
 > No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring
 I'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).
 > > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?
+ 
 > Yes and no. A lot was missing.
 I mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!
 > > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!
+
 > I would assume this is caught by all those doctests using maxima.
 That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.
 
@@ -921,7 +926,7 @@ That's my point - they may NOT catch a missing one, since we only remove things 
 archive/issue_comments_079734.json:
 ```json
 {
-    "body": "Replying to [comment:41 kcrisman]:\n> > > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n> > There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n> Hmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\nIt is really easy to find it out yourself: just change `RuntimeError` to something different like `NotImplementedError`, doctest, and you'll get:\n\n```\nsage -t src/sage/tests/french_book/recequadiff.py\n**********************************************************************\nFile \"src/sage/tests/french_book/recequadiff.py\", line 247, in sage.tests.french_book.recequadiff\nFailed example:\n    desolve(eq1,[f,x])\nExpected:\n    Traceback (most recent call last):\n      ...\n    TypeError: Computation failed ...\n    Is k positive, negative or zero?\nGot:\n    <BLANKLINE>\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 480, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 839, in execute\n        exec compiled in globs\n      File \"<doctest sage.tests.french_book.recequadiff[64]>\", line 1, in <module>\n        desolve(eq1,[f,x])\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/calculus/desolvers.py\", line 436, in desolve\n        soln = P(cmd)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 199, in __call__\n        return cls(self, x, name=name)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 626, in __init__\n        raise TypeError(x)\n    TypeError: ECL says: Maxima asks: Is _SAGE_VAR_k positive, negative or zero?\n```\n\n> > > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n> > No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> I'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\nThere were cases where there were two spaces in the output after 'Is '.\n> > > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n> > Yes and no. A lot was missing.\n> I mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\nI think his ansatz was what I would have done, too.\n> > > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n> > I would assume this is caught by all those doctests using maxima.\n> That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\nCan you please clarify: \"one might miss some places it is needed\"---what's the it here?",
+    "body": "Replying to [comment:41 kcrisman]:\n> > > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n \n> > There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n> Hmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\n\nIt is really easy to find it out yourself: just change `RuntimeError` to something different like `NotImplementedError`, doctest, and you'll get:\n\n```\nsage -t src/sage/tests/french_book/recequadiff.py\n**********************************************************************\nFile \"src/sage/tests/french_book/recequadiff.py\", line 247, in sage.tests.french_book.recequadiff\nFailed example:\n    desolve(eq1,[f,x])\nExpected:\n    Traceback (most recent call last):\n      ...\n    TypeError: Computation failed ...\n    Is k positive, negative or zero?\nGot:\n    <BLANKLINE>\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 480, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 839, in execute\n        exec compiled in globs\n      File \"<doctest sage.tests.french_book.recequadiff[64]>\", line 1, in <module>\n        desolve(eq1,[f,x])\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/calculus/desolvers.py\", line 436, in desolve\n        soln = P(cmd)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 199, in __call__\n        return cls(self, x, name=name)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 626, in __init__\n        raise TypeError(x)\n    TypeError: ECL says: Maxima asks: Is _SAGE_VAR_k positive, negative or zero?\n```\n> > > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n \n> > No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> I'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\n\nThere were cases where there were two spaces in the output after 'Is '.\n> > > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n \n> > Yes and no. A lot was missing.\n> I mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\n\nI think his ansatz was what I would have done, too.\n> > > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n\n> > I would assume this is caught by all those doctests using maxima.\n> That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\n\nCan you please clarify: \"one might miss some places it is needed\"---what's the it here?",
     "created_at": "2014-06-18T08:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -932,8 +937,10 @@ archive/issue_comments_079734.json:
 
 Replying to [comment:41 kcrisman]:
 > > > * Commit 	be9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?
+ 
 > > There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.
 > Hmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.
+
 It is really easy to find it out yourself: just change `RuntimeError` to something different like `NotImplementedError`, doctest, and you'll get:
 
 ```
@@ -964,18 +971,23 @@ Got:
         raise TypeError(x)
     TypeError: ECL says: Maxima asks: Is _SAGE_VAR_k positive, negative or zero?
 ```
-
 > > > * Commit 	ced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?
+ 
 > > No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring
 > I'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).
+
 There were cases where there were two spaces in the output after 'Is '.
 > > > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?
+ 
 > > Yes and no. A lot was missing.
 > I mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!
+
 I think his ansatz was what I would have done, too.
 > > > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!
+
 > > I would assume this is caught by all those doctests using maxima.
 > That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.
+
 Can you please clarify: "one might miss some places it is needed"---what's the it here?
 
 
@@ -985,7 +997,7 @@ Can you please clarify: "one might miss some places it is needed"---what's the i
 archive/issue_comments_079735.json:
 ```json
 {
-    "body": "> There were cases where there were two spaces in the output after 'Is '.\nAnnoying.\n> > That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\n> Can you please clarify: \"one might miss some places it is needed\"---what's the it here? \nWhat I mean is that if one had missed a place where we should have added `SAGE_VAR` but didn't, we might not know because the result would not need `SAGE_VAR` stripped from it, so it would perhaps still work.  But I'm not overly concerned about this ... because it would still work.\n\n----\n\nAnyway, if someone reviews the diffeq part before me (I won't have time before next week), that is all I think still needs review.  This will be great to finally have in!",
+    "body": "> There were cases where there were two spaces in the output after 'Is '.\n\nAnnoying.\n> > That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\n\n> Can you please clarify: \"one might miss some places it is needed\"---what's the it here? \nWhat I mean is that if one had missed a place where we should have added `SAGE_VAR` but didn't, we might not know because the result would not need `SAGE_VAR` stripped from it, so it would perhaps still work.  But I'm not overly concerned about this ... because it would still work.\n\n---\n\nAnyway, if someone reviews the diffeq part before me (I won't have time before next week), that is all I think still needs review.  This will be great to finally have in!",
     "created_at": "2014-06-18T15:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -995,12 +1007,14 @@ archive/issue_comments_079735.json:
 ```
 
 > There were cases where there were two spaces in the output after 'Is '.
+
 Annoying.
 > > That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.
+
 > Can you please clarify: "one might miss some places it is needed"---what's the it here? 
 What I mean is that if one had missed a place where we should have added `SAGE_VAR` but didn't, we might not know because the result would not need `SAGE_VAR` stripped from it, so it would perhaps still work.  But I'm not overly concerned about this ... because it would still work.
 
-----
+---
 
 Anyway, if someone reviews the diffeq part before me (I won't have time before next week), that is all I think still needs review.  This will be great to finally have in!
 
@@ -1011,7 +1025,7 @@ Anyway, if someone reviews the diffeq part before me (I won't have time before n
 archive/issue_comments_079736.json:
 ```json
 {
-    "body": "For the\n\n```\ntry:\n ....\nexcept ... as error:\n ...\n    raise error\n```\n\nin maxima_lib.py (and possibly elsewhere):\nIt's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.",
+    "body": "For the\n\n```\ntry:\n ....\nexcept ... as error:\n ...\n    raise error\n```\nin maxima_lib.py (and possibly elsewhere):\nIt's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.",
     "created_at": "2014-06-18T20:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1029,7 +1043,6 @@ except ... as error:
  ...
     raise error
 ```
-
 in maxima_lib.py (and possibly elsewhere):
 It's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.
 
@@ -1040,7 +1053,7 @@ It's *much* better to reraise an error with a bare `raise` rather than `raise er
 archive/issue_comments_079737.json:
 ```json
 {
-    "body": "Replying to [comment:44 nbruin]:\n> For the\n> {{{\n> try:\n>  ....\n> except ... as error:\n>  ...\n>     raise error\n> }}}\n> in maxima_lib.py (and possibly elsewhere):\n> It's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.\nIn this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\nhttp://www.gossamer-threads.com/lists/python/python/947257\n\n```\nIn Python 3 you could chain the exceptions with: \n\nexcept Exception as e: \nraise CustomException() from e \n\nThere is no such syntax in Python 2, but you could manually store and \nretrieve the __cause__ and __traceback__ attributes similarly to the \nway Python 3 does it. See PEP 3134 for full details. \n```\n\nhttp://legacy.python.org/dev/peps/pep-3134/\n\n```\nSometimes it can be useful for an exception handler to intentionally\n    re-raise an exception, either to provide extra information or to\n    translate an exception to another type. ...\n```\n",
+    "body": "Replying to [comment:44 nbruin]:\n> For the\n> \n> ```\n> try:\n>  ....\n> except ... as error:\n>  ...\n>     raise error\n> ```\n> in maxima_lib.py (and possibly elsewhere):\n> It's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.\n\nIn this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\nhttp://www.gossamer-threads.com/lists/python/python/947257\n\n```\nIn Python 3 you could chain the exceptions with: \n\nexcept Exception as e: \nraise CustomException() from e \n\nThere is no such syntax in Python 2, but you could manually store and \nretrieve the __cause__ and __traceback__ attributes similarly to the \nway Python 3 does it. See PEP 3134 for full details. \n```\nhttp://legacy.python.org/dev/peps/pep-3134/\n\n```\nSometimes it can be useful for an exception handler to intentionally\n    re-raise an exception, either to provide extra information or to\n    translate an exception to another type. ...\n```",
     "created_at": "2014-06-19T09:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1051,15 +1064,17 @@ archive/issue_comments_079737.json:
 
 Replying to [comment:44 nbruin]:
 > For the
-> {{{
+> 
+> ```
 > try:
 >  ....
 > except ... as error:
 >  ...
 >     raise error
-> }}}
+> ```
 > in maxima_lib.py (and possibly elsewhere):
 > It's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.
+
 In this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:
 http://www.gossamer-threads.com/lists/python/python/947257
 
@@ -1073,7 +1088,6 @@ There is no such syntax in Python 2, but you could manually store and
 retrieve the __cause__ and __traceback__ attributes similarly to the 
 way Python 3 does it. See PEP 3134 for full details. 
 ```
-
 http://legacy.python.org/dev/peps/pep-3134/
 
 ```
@@ -1081,7 +1095,6 @@ Sometimes it can be useful for an exception handler to intentionally
     re-raise an exception, either to provide extra information or to
     translate an exception to another type. ...
 ```
-
 
 
 
@@ -1108,7 +1121,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_079739.json:
 ```json
 {
-    "body": "Replying to [comment:45 rws]:\n> In this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\n\nGood to know! I don't have a strong opinion what type of error to return. However, without further inspection, I don't think you would know if the error is more appropriately a `ValueError`. You could get `RuntimeError(\"ECL says: I'm tired\")`for as far as you know at this point. So my guess is that it's not worth trying to do something with the error type.",
+    "body": "Replying to [comment:45 rws]:\n> In this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\n\n\nGood to know! I don't have a strong opinion what type of error to return. However, without further inspection, I don't think you would know if the error is more appropriately a `ValueError`. You could get `RuntimeError(\"ECL says: I'm tired\")`for as far as you know at this point. So my guess is that it's not worth trying to do something with the error type.",
     "created_at": "2014-06-19T13:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1119,6 +1132,7 @@ archive/issue_comments_079739.json:
 
 Replying to [comment:45 rws]:
 > In this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:
+
 
 Good to know! I don't have a strong opinion what type of error to return. However, without further inspection, I don't think you would know if the error is more appropriately a `ValueError`. You could get `RuntimeError("ECL says: I'm tired")`for as far as you know at this point. So my guess is that it's not worth trying to do something with the error type.
 
@@ -1153,7 +1167,7 @@ So, in my opinion, unless someone comes up with a better solution, this ticket w
 archive/issue_comments_079741.json:
 ```json
 {
-    "body": "Replying to [comment:48 rws]:\n> Secondly, to ask interactively for a missing assumption a message has to be given in the terminal different from the error message tied to the original `RuntimeError`. So, simply re-raising is not an option if you do not like `RuntimeError: ECL says: Maxima asks: Is _SAGE_VAR_a an integer?`.\n\nIn that case we know exactly what happened and the original traceback doesn't have to be kept. Raising a a fresh exception with a fresh traceback should be fine. It's when you find that the `RuntimeError` you've just caught is *not* the one you expected that the original traceback is valuable. And in that case you probably don't want to mess with the exception object itself either, so a bare `raise` should do the trick. The scenario of changing the error object but keeping the original traceback should be quite rare.\n\n> So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n\nwhich may be a very long time. It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.",
+    "body": "Replying to [comment:48 rws]:\n> Secondly, to ask interactively for a missing assumption a message has to be given in the terminal different from the error message tied to the original `RuntimeError`. So, simply re-raising is not an option if you do not like `RuntimeError: ECL says: Maxima asks: Is _SAGE_VAR_a an integer?`.\n\n\nIn that case we know exactly what happened and the original traceback doesn't have to be kept. Raising a a fresh exception with a fresh traceback should be fine. It's when you find that the `RuntimeError` you've just caught is *not* the one you expected that the original traceback is valuable. And in that case you probably don't want to mess with the exception object itself either, so a bare `raise` should do the trick. The scenario of changing the error object but keeping the original traceback should be quite rare.\n\n> So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n\n\nwhich may be a very long time. It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.",
     "created_at": "2014-06-20T12:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1165,9 +1179,11 @@ archive/issue_comments_079741.json:
 Replying to [comment:48 rws]:
 > Secondly, to ask interactively for a missing assumption a message has to be given in the terminal different from the error message tied to the original `RuntimeError`. So, simply re-raising is not an option if you do not like `RuntimeError: ECL says: Maxima asks: Is _SAGE_VAR_a an integer?`.
 
+
 In that case we know exactly what happened and the original traceback doesn't have to be kept. Raising a a fresh exception with a fresh traceback should be fine. It's when you find that the `RuntimeError` you've just caught is *not* the one you expected that the original traceback is valuable. And in that case you probably don't want to mess with the exception object itself either, so a bare `raise` should do the trick. The scenario of changing the error object but keeping the original traceback should be quite rare.
 
 > So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.
+
 
 which may be a very long time. It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.
 
@@ -1178,7 +1194,7 @@ which may be a very long time. It nice to do things in a Py2/Py3 compatible way 
 archive/issue_comments_079742.json:
 ```json
 {
-    "body": "> > So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n> \n> which may be a very long time. \nIndeed.\n> It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.\nI'm not quite clear on why this is the case.  I thought you said above to not let the perfect be the enemy of the good ;-)  It seems like just raising the original exception is a good compromise here; at the very least it should give *some* information, right?",
+    "body": "> > So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n\n> \n> which may be a very long time. \n\nIndeed.\n> It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.\n\nI'm not quite clear on why this is the case.  I thought you said above to not let the perfect be the enemy of the good ;-)  It seems like just raising the original exception is a good compromise here; at the very least it should give *some* information, right?",
     "created_at": "2014-06-20T13:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1188,10 +1204,13 @@ archive/issue_comments_079742.json:
 ```
 
 > > So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.
+
 > 
 > which may be a very long time. 
+
 Indeed.
 > It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.
+
 I'm not quite clear on why this is the case.  I thought you said above to not let the perfect be the enemy of the good ;-)  It seems like just raising the original exception is a good compromise here; at the very least it should give *some* information, right?
 
 
@@ -1259,7 +1278,7 @@ But it seems good, assuming I didn't miss any tests that fail...
 archive/issue_comments_079746.json:
 ```json
 {
-    "body": "> But it seems good, assuming I didn't miss any tests that fail...\nI didn't.  So as long as you give the answers I expect, we are all set here.",
+    "body": "> But it seems good, assuming I didn't miss any tests that fail...\n\nI didn't.  So as long as you give the answers I expect, we are all set here.",
     "created_at": "2014-06-26T14:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1269,6 +1288,7 @@ archive/issue_comments_079746.json:
 ```
 
 > But it seems good, assuming I didn't miss any tests that fail...
+
 I didn't.  So as long as you give the answers I expect, we are all set here.
 
 
@@ -1278,7 +1298,7 @@ I didn't.  So as long as you give the answers I expect, we are all set here.
 archive/issue_comments_079747.json:
 ```json
 {
-    "body": "Working from the bottom up ...\n\nReplying to [comment:54 kcrisman]:\n>  * We should probably just remove `desolve_system_strings`, see #8132 where it was first said to be obsolete, and it hasn't been in the global namespace since before 2010.  That is pretty much equivalent to a deprecation to me.  However, we should keep any non-overlapping examples - so maybe removal should be another ticket...\n\nThis is now #16568.",
+    "body": "Working from the bottom up ...\n\nReplying to [comment:54 kcrisman]:\n>  * We should probably just remove `desolve_system_strings`, see #8132 where it was first said to be obsolete, and it hasn't been in the global namespace since before 2010.  That is pretty much equivalent to a deprecation to me.  However, we should keep any non-overlapping examples - so maybe removal should be another ticket...\n\n\nThis is now #16568.",
     "created_at": "2014-06-27T14:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1291,6 +1311,7 @@ Working from the bottom up ...
 
 Replying to [comment:54 kcrisman]:
 >  * We should probably just remove `desolve_system_strings`, see #8132 where it was first said to be obsolete, and it hasn't been in the global namespace since before 2010.  That is pretty much equivalent to a deprecation to me.  However, we should keep any non-overlapping examples - so maybe removal should be another ticket...
+
 
 This is now #16568.
 
@@ -1319,7 +1340,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_079749.json:
 ```json
 {
-    "body": "Replying to [comment:54 kcrisman]:\n>  * In some of the sanitizing functions, you replace things like `'_SAGE_VAR_f` with `f`, but in others you only replace the independent variable that way.  Is that because of specific examples that didn't work, or was the context different, or... ? \nIt certainly was then because of specific examples. The removal of the code I think you mean makes no difference now, however.\n>  * I'm wondering whether the Sage translation would have just taken care of this in `soln.sage()`, but I guess it didn't.   Was there any possible change to the translation that could have done this, rather than getting into the ode wrapper code directly (which makes it harder to read)?  For instance, in `desolve_laplace` we convert the `de` to Maxima (presumably adding `SAGE_VAR`, add another `SAGE_VAR` from `f(x)` to `f(_SAGE_VAR_x)` (I think), and then proceed to remove only the `SAGE_VAR` from the *de*pendent variable.  So... that part isn't taken care of by the translation, but the independent variable still somehow is translated back correctly, but not forward within `de0=de._maxima_()`?  Yet in the `rk4` types this isn't a problem, apparently.\nWith the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.",
+    "body": "Replying to [comment:54 kcrisman]:\n>  * In some of the sanitizing functions, you replace things like `'_SAGE_VAR_f` with `f`, but in others you only replace the independent variable that way.  Is that because of specific examples that didn't work, or was the context different, or... ? \n \nIt certainly was then because of specific examples. The removal of the code I think you mean makes no difference now, however.\n>  * I'm wondering whether the Sage translation would have just taken care of this in `soln.sage()`, but I guess it didn't.   Was there any possible change to the translation that could have done this, rather than getting into the ode wrapper code directly (which makes it harder to read)?  For instance, in `desolve_laplace` we convert the `de` to Maxima (presumably adding `SAGE_VAR`, add another `SAGE_VAR` from `f(x)` to `f(_SAGE_VAR_x)` (I think), and then proceed to remove only the `SAGE_VAR` from the *de*pendent variable.  So... that part isn't taken care of by the translation, but the independent variable still somehow is translated back correctly, but not forward within `de0=de._maxima_()`?  Yet in the `rk4` types this isn't a problem, apparently.\n \nWith the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.",
     "created_at": "2014-06-29T08:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1330,8 +1351,10 @@ archive/issue_comments_079749.json:
 
 Replying to [comment:54 kcrisman]:
 >  * In some of the sanitizing functions, you replace things like `'_SAGE_VAR_f` with `f`, but in others you only replace the independent variable that way.  Is that because of specific examples that didn't work, or was the context different, or... ? 
+ 
 It certainly was then because of specific examples. The removal of the code I think you mean makes no difference now, however.
 >  * I'm wondering whether the Sage translation would have just taken care of this in `soln.sage()`, but I guess it didn't.   Was there any possible change to the translation that could have done this, rather than getting into the ode wrapper code directly (which makes it harder to read)?  For instance, in `desolve_laplace` we convert the `de` to Maxima (presumably adding `SAGE_VAR`, add another `SAGE_VAR` from `f(x)` to `f(_SAGE_VAR_x)` (I think), and then proceed to remove only the `SAGE_VAR` from the *de*pendent variable.  So... that part isn't taken care of by the translation, but the independent variable still somehow is translated back correctly, but not forward within `de0=de._maxima_()`?  Yet in the `rk4` types this isn't a problem, apparently.
+ 
 With the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.
 
 
@@ -1341,7 +1364,7 @@ With the above removal of superfluous code I don't see any different behaviour i
 archive/issue_comments_079750.json:
 ```json
 {
-    "body": "> With the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.\nAgain, I'm just confused because in `laplace/rk4` the dependent variable gets `_SAGE_VAR_` but in `desolve` it doesn't.  Maybe this isn't important, though.  And is the last change in `desolve` ok because putting things into Maxima takes care of the `_SAGE_VAR_` already?",
+    "body": "> With the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.\n\nAgain, I'm just confused because in `laplace/rk4` the dependent variable gets `_SAGE_VAR_` but in `desolve` it doesn't.  Maybe this isn't important, though.  And is the last change in `desolve` ok because putting things into Maxima takes care of the `_SAGE_VAR_` already?",
     "created_at": "2014-07-02T02:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1351,6 +1374,7 @@ archive/issue_comments_079750.json:
 ```
 
 > With the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.
+
 Again, I'm just confused because in `laplace/rk4` the dependent variable gets `_SAGE_VAR_` but in `desolve` it doesn't.  Maybe this isn't important, though.  And is the last change in `desolve` ok because putting things into Maxima takes care of the `_SAGE_VAR_` already?
 
 
@@ -1524,7 +1548,7 @@ Since the reviewed #6882 is orthogonal I set positive again. Thanks Karl-Dieter 
 archive/issue_comments_079760.json:
 ```json
 {
-    "body": "> I would be happy if you could have a look at #2516 too.\nSorry, that one I definitely like the idea of and have reviewed many similar ones in the past, but just don't have the time currently to review much new functionality carefully. :(",
+    "body": "> I would be happy if you could have a look at #2516 too.\n\nSorry, that one I definitely like the idea of and have reviewed many similar ones in the past, but just don't have the time currently to review much new functionality carefully. :(",
     "created_at": "2014-07-03T13:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
@@ -1534,6 +1558,7 @@ archive/issue_comments_079760.json:
 ```
 
 > I would be happy if you could have a look at #2516 too.
+
 Sorry, that one I definitely like the idea of and have reviewed many similar ones in the past, but just don't have the time currently to review much new functionality carefully. :(
 
 

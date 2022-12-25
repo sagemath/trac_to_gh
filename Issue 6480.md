@@ -3,7 +3,7 @@
 archive/issues_006480.json:
 ```json
 {
-    "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\n\nIn new symbolics, if I do the same I get\n\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
+    "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\nIn new symbolics, if I do the same I get\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
     "created_at": "2009-07-08T11:37:56Z",
     "labels": [
         "component: symbolics",
@@ -31,9 +31,7 @@ sage: g.subs_expr(f(x)==f(x)+df(x))
 diff(f(x) + df(x), x, 1)
 ```
 
-
 In new symbolics, if I do the same I get
-
 
 ```
 sage: g
@@ -41,7 +39,6 @@ D[0](f)(x)
 sage: g.subs_expr(f(x)==f(x)+df(x))
 D[0](f)(x)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6480
 
@@ -126,7 +123,7 @@ I feel like if that one is closed, we should have the list here, so I'm updating
 archive/issue_comments_052294.json:
 ```json
 {
-    "body": "I think these are different issues because `substitute_function` handles a narrowly defined set of cases, and it expects two functions (`f, g, sin`) not expressions (`f(x), diff(f(x),x)`) as function arguments. Cases above that are in the former category:\n\n```\nsage: f = function('f')(x)\n....: g = function('g')(x)\n....: df = f(x).diff(x)\nsage: f.substitute_function(f,g)\nf(x)\nsage: f(1).substitute_function(f,g)\nf(1)\nsage: df.substitute_function(f,g)\ndiff(f(x), x)\nsage: df(1).substitute_function(f,g)\nD[0](f)(1)\n```\n\nThe problem is that `f` and `g` are not function objects like `sin`. Taking this into account:\n\n```\nsage: f.substitute_function(f.operator(), g.operator())\ng(x)\nsage: f(1).substitute_function(f.operator(), g.operator())\ng(1)\nsage: df.substitute_function(f.operator(), g.operator())\ndiff(g(x), x)\nsage: df(1).substitute_function(f.operator(), g.operator())\nD[0](g)(1)\n```\n\nI opened #22401 for this.",
+    "body": "I think these are different issues because `substitute_function` handles a narrowly defined set of cases, and it expects two functions (`f, g, sin`) not expressions (`f(x), diff(f(x),x)`) as function arguments. Cases above that are in the former category:\n\n```\nsage: f = function('f')(x)\n....: g = function('g')(x)\n....: df = f(x).diff(x)\nsage: f.substitute_function(f,g)\nf(x)\nsage: f(1).substitute_function(f,g)\nf(1)\nsage: df.substitute_function(f,g)\ndiff(f(x), x)\nsage: df(1).substitute_function(f,g)\nD[0](f)(1)\n```\nThe problem is that `f` and `g` are not function objects like `sin`. Taking this into account:\n\n```\nsage: f.substitute_function(f.operator(), g.operator())\ng(x)\nsage: f(1).substitute_function(f.operator(), g.operator())\ng(1)\nsage: df.substitute_function(f.operator(), g.operator())\ndiff(g(x), x)\nsage: df(1).substitute_function(f.operator(), g.operator())\nD[0](g)(1)\n```\nI opened #22401 for this.",
     "created_at": "2017-02-21T09:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
@@ -150,7 +147,6 @@ diff(f(x), x)
 sage: df(1).substitute_function(f,g)
 D[0](f)(1)
 ```
-
 The problem is that `f` and `g` are not function objects like `sin`. Taking this into account:
 
 ```
@@ -163,7 +159,6 @@ diff(g(x), x)
 sage: df(1).substitute_function(f.operator(), g.operator())
 D[0](g)(1)
 ```
-
 I opened #22401 for this.
 
 
@@ -173,7 +168,7 @@ I opened #22401 for this.
 archive/issue_comments_052295.json:
 ```json
 {
-    "body": "Also, even if `subs` is fixed there is no way atm to get and use `diff(f(x)+g(x),x)`:\n\n```\nsage: diff(f(x)+g(x),x)\ndiff(f(x), x) + diff(g(x), x)\nsage: diff(f(x)+g(x),x,hold=True)\nTypeError: derivative() got an unexpected keyword argument 'hold'\n```\n\n`diff` is not a function, although it could well be theoretically:\n\n```\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _._dbgprinttree()\nfderivative f @0x34a8c00, hash=0x1023d75fb40091, flags=0xb, nops=1, params=0\n    x (symbol) @0x2895f10, serial=7, hash=0xe3706ef, flags=0xf, domain=0, iflags=0000000000000000\n    =====\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _.operator()\nD[0](f)\nsage: type(_)\n<class 'sage.symbolic.operators.FDerivativeOperator'>\n```\n\nI cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not opening a ticket. Just don't expect that as output from a fixed `subs`.",
+    "body": "Also, even if `subs` is fixed there is no way atm to get and use `diff(f(x)+g(x),x)`:\n\n```\nsage: diff(f(x)+g(x),x)\ndiff(f(x), x) + diff(g(x), x)\nsage: diff(f(x)+g(x),x,hold=True)\nTypeError: derivative() got an unexpected keyword argument 'hold'\n```\n`diff` is not a function, although it could well be theoretically:\n\n```\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _._dbgprinttree()\nfderivative f @0x34a8c00, hash=0x1023d75fb40091, flags=0xb, nops=1, params=0\n    x (symbol) @0x2895f10, serial=7, hash=0xe3706ef, flags=0xf, domain=0, iflags=0000000000000000\n    =====\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _.operator()\nD[0](f)\nsage: type(_)\n<class 'sage.symbolic.operators.FDerivativeOperator'>\n```\nI cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not opening a ticket. Just don't expect that as output from a fixed `subs`.",
     "created_at": "2017-02-21T14:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
@@ -190,7 +185,6 @@ diff(f(x), x) + diff(g(x), x)
 sage: diff(f(x)+g(x),x,hold=True)
 TypeError: derivative() got an unexpected keyword argument 'hold'
 ```
-
 `diff` is not a function, although it could well be theoretically:
 
 ```
@@ -207,7 +201,6 @@ D[0](f)
 sage: type(_)
 <class 'sage.symbolic.operators.FDerivativeOperator'>
 ```
-
 I cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not opening a ticket. Just don't expect that as output from a fixed `subs`.
 
 
@@ -217,7 +210,7 @@ I cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not op
 archive/issue_comments_052296.json:
 ```json
 {
-    "body": "So, what should work is\n\n```\n            sage: f = function('f')\n            sage: g = function('g')\n            sage: f(x).subs(f(x) == g(x))\n            g(x)\n            sage: f(x).subs(f == g)\n            g(x)\n            sage: f(x).subs({f : g})\n            g(x)\n            sage: df = f(x).diff(x); df\n            diff(f(x), x)\n            sage: df.subs(f(x) == g(x))\n            diff(g(x), x)\n            sage: df.subs(f == g)\n            diff(g(x), x)\n            sage: df.subs(f(x) == f(x) + g(x))\n            diff(f(x), x) + diff(g(x), x)\n            sage: df.subs(f == f + g)\n            diff(f(x), x) + diff(g(x), x)\n```\n\nbut it mostly doesn't:\n\n```\nFailed example:\n    f(x).subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[67]>\", line 1, in <module>\n        f(x).subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\nFailed example:\n    f(x).subs({f : g})\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[68]>\", line 1, in <module>\n        f(x).subs({f : g})\n      File \"sage/symbolic/expression.pyx\", line 4971, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:30001)\n        diff(f(x), x) + diff(g(x), x)\n      File \"sage/symbolic/expression.pyx\", line 2885, in sage.symbolic.expression.Expression.coerce_in (build/cythonized/sage/symbolic/expression.cpp:21682)\n        return self._parent._coerce_(z)\n      File \"sage/structure/parent_old.pyx\", line 241, in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:4949)\n        return self.coerce(x)\n      File \"sage/structure/parent.pyx\", line 1195, in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:11169)\n        raise TypeError(\"no canonical coercion from %s to %s\" % (parent(x), self))\n    TypeError: no canonical coercion from <class 'sage.symbolic.function_factory.NewSymbolicFunction'> to Symbolic Ring\n**********************************************************************\n    df.subs(f(x) == g(x))\nExpected:\n    diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[71]>\", line 1, in <module>\n        df.subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\n    df.subs(f(x) == f(x) + g(x))\nExpected:\n    diff(f(x), x) + diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == f + g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[73]>\", line 1, in <module>\n        df.subs(f == f + g)\n    TypeError: unsupported operand type(s) for +: 'NewSymbolicFunction' and 'NewSymbolicFunction'\n```\n",
+    "body": "So, what should work is\n\n```\n            sage: f = function('f')\n            sage: g = function('g')\n            sage: f(x).subs(f(x) == g(x))\n            g(x)\n            sage: f(x).subs(f == g)\n            g(x)\n            sage: f(x).subs({f : g})\n            g(x)\n            sage: df = f(x).diff(x); df\n            diff(f(x), x)\n            sage: df.subs(f(x) == g(x))\n            diff(g(x), x)\n            sage: df.subs(f == g)\n            diff(g(x), x)\n            sage: df.subs(f(x) == f(x) + g(x))\n            diff(f(x), x) + diff(g(x), x)\n            sage: df.subs(f == f + g)\n            diff(f(x), x) + diff(g(x), x)\n```\nbut it mostly doesn't:\n\n```\nFailed example:\n    f(x).subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[67]>\", line 1, in <module>\n        f(x).subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\nFailed example:\n    f(x).subs({f : g})\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[68]>\", line 1, in <module>\n        f(x).subs({f : g})\n      File \"sage/symbolic/expression.pyx\", line 4971, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:30001)\n        diff(f(x), x) + diff(g(x), x)\n      File \"sage/symbolic/expression.pyx\", line 2885, in sage.symbolic.expression.Expression.coerce_in (build/cythonized/sage/symbolic/expression.cpp:21682)\n        return self._parent._coerce_(z)\n      File \"sage/structure/parent_old.pyx\", line 241, in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:4949)\n        return self.coerce(x)\n      File \"sage/structure/parent.pyx\", line 1195, in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:11169)\n        raise TypeError(\"no canonical coercion from %s to %s\" % (parent(x), self))\n    TypeError: no canonical coercion from <class 'sage.symbolic.function_factory.NewSymbolicFunction'> to Symbolic Ring\n**********************************************************************\n    df.subs(f(x) == g(x))\nExpected:\n    diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[71]>\", line 1, in <module>\n        df.subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\n    df.subs(f(x) == f(x) + g(x))\nExpected:\n    diff(f(x), x) + diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == f + g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[73]>\", line 1, in <module>\n        df.subs(f == f + g)\n    TypeError: unsupported operand type(s) for +: 'NewSymbolicFunction' and 'NewSymbolicFunction'\n```",
     "created_at": "2017-02-22T07:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
@@ -248,7 +241,6 @@ So, what should work is
             sage: df.subs(f == f + g)
             diff(f(x), x) + diff(g(x), x)
 ```
-
 but it mostly doesn't:
 
 ```
@@ -329,7 +321,6 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_052297.json:
@@ -375,7 +366,7 @@ Nah, it was wrong, only `diff(f(x),x).subs(f(x) == g(x))` doesn't work.
 archive/issue_comments_052299.json:
 ```json
 {
-    "body": "Replying to [comment:11 rws]:\n> The above consists of three problems. The central one is the failure to `f(x).subs(f(x) == g(x))`; the `diff` case is probably only a result; it looks like this is a Pynac bug, and when fixed there it should be doctested here.\n\nThe special status of `fderivative` in Pynac (not a function) may be the reason, see also https://groups.google.com/d/msg/sage-support/lZ4AjbmvvQE/-BJ_xvMlAQAJ",
+    "body": "Replying to [comment:11 rws]:\n> The above consists of three problems. The central one is the failure to `f(x).subs(f(x) == g(x))`; the `diff` case is probably only a result; it looks like this is a Pynac bug, and when fixed there it should be doctested here.\n\n\nThe special status of `fderivative` in Pynac (not a function) may be the reason, see also https://groups.google.com/d/msg/sage-support/lZ4AjbmvvQE/-BJ_xvMlAQAJ",
     "created_at": "2017-02-23T06:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
@@ -386,6 +377,7 @@ archive/issue_comments_052299.json:
 
 Replying to [comment:11 rws]:
 > The above consists of three problems. The central one is the failure to `f(x).subs(f(x) == g(x))`; the `diff` case is probably only a result; it looks like this is a Pynac bug, and when fixed there it should be doctested here.
+
 
 The special status of `fderivative` in Pynac (not a function) may be the reason, see also https://groups.google.com/d/msg/sage-support/lZ4AjbmvvQE/-BJ_xvMlAQAJ
 

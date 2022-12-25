@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/16
 archive/issue_comments_000068.json:
 ```json
 {
-    "body": "\n```\n  * numpy and scipy now fixed\n  * soya is not and never will be supported\n```\n",
+    "body": "```\n  * numpy and scipy now fixed\n  * soya is not and never will be supported\n```",
     "created_at": "2007-01-12T21:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/16",
     "type": "issue_comment",
@@ -46,12 +46,10 @@ archive/issue_comments_000068.json:
 }
 ```
 
-
 ```
   * numpy and scipy now fixed
   * soya is not and never will be supported
 ```
-
 
 
 

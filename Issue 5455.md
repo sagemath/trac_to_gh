@@ -3,7 +3,7 @@
 archive/issues_005455.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nSaving and loading workspaces is broke in gap Itanium (SUSE). Also, loading of any packages is now mysteriously broken:\n\n\n```\nsage: !gap\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc\ngap> LoadPackage(\"braid\");\nfail\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5455\n\n",
+    "body": "Assignee: mabshoff\n\nSaving and loading workspaces is broke in gap Itanium (SUSE). Also, loading of any packages is now mysteriously broken:\n\n```\nsage: !gap\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc\ngap> LoadPackage(\"braid\");\nfail\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5455\n\n",
     "created_at": "2009-03-08T05:53:51Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_005455.json:
 Assignee: mabshoff
 
 Saving and loading workspaces is broke in gap Itanium (SUSE). Also, loading of any packages is now mysteriously broken:
-
 
 ```
 sage: !gap
@@ -50,7 +49,6 @@ GAP4, Version: 4.4.12 of 17-Dec-2008, ia64-unknown-linux-gnu-gcc
 gap> LoadPackage("braid");
 fail
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5455
 
@@ -122,7 +120,7 @@ Changing priority from major to blocker.
 archive/issue_comments_042197.json:
 ```json
 {
-    "body": "I'm testing my patch.  I noticed that this fails:\n\n```\nFile \"/home/wstein/iras/build/sage-3.4.alpha0/devel/sage/doc/en/constructions/linear_codes.rst\", line 29:\n    sage: C.minimum_distance()\nException raised:\n    RuntimeError: Gap produced error output\n    Variable: 'GeneratorMatCode' must have a value\n```\n\n\nI'm guessing the problem is that when use_workspace_cache is False, then certain packages don't get loaded, maybe.   This would be another separate bug in the gap interface.",
+    "body": "I'm testing my patch.  I noticed that this fails:\n\n```\nFile \"/home/wstein/iras/build/sage-3.4.alpha0/devel/sage/doc/en/constructions/linear_codes.rst\", line 29:\n    sage: C.minimum_distance()\nException raised:\n    RuntimeError: Gap produced error output\n    Variable: 'GeneratorMatCode' must have a value\n```\n\nI'm guessing the problem is that when use_workspace_cache is False, then certain packages don't get loaded, maybe.   This would be another separate bug in the gap interface.",
     "created_at": "2009-03-08T06:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5455",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ Exception raised:
     RuntimeError: Gap produced error output
     Variable: 'GeneratorMatCode' must have a value
 ```
-
 
 I'm guessing the problem is that when use_workspace_cache is False, then certain packages don't get loaded, maybe.   This would be another separate bug in the gap interface.
 

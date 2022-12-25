@@ -3,7 +3,7 @@
 archive/issues_004678.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: hg, libpng\n\nWhen trying hg_sage.commit() on OS X 10.5.5. I get the following error\n\n``` \nsage: hg_sage.commit()\ncd \"/Users/tjlahey/sage/devel/sage\" && hg diff  | less\ncd \"/Users/tjlahey/sage/devel/sage\" && hg commit  \ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/tjlahey/sage/local/lib//libPng.dylib\n\ntransaction abort!\nrollback completed\nabort: edit failed: mate killed by signal 5\n```\n\nSo, for some reason, there is a conflict with the system frameworks. Unfortunately, this can't be commented out like Macports or Fink.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4678\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: hg, libpng\n\nWhen trying hg_sage.commit() on OS X 10.5.5. I get the following error\n\n``` \nsage: hg_sage.commit()\ncd \"/Users/tjlahey/sage/devel/sage\" && hg diff  | less\ncd \"/Users/tjlahey/sage/devel/sage\" && hg commit  \ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/tjlahey/sage/local/lib//libPng.dylib\n\ntransaction abort!\nrollback completed\nabort: edit failed: mate killed by signal 5\n```\nSo, for some reason, there is a conflict with the system frameworks. Unfortunately, this can't be commented out like Macports or Fink.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4678\n\n",
     "created_at": "2008-12-02T18:14:53Z",
     "labels": [
         "component: misc",
@@ -34,7 +34,6 @@ transaction abort!
 rollback completed
 abort: edit failed: mate killed by signal 5
 ```
-
 So, for some reason, there is a conflict with the system frameworks. Unfortunately, this can't be commented out like Macports or Fink.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4678
@@ -89,7 +88,7 @@ Michael
 archive/issue_comments_035176.json:
 ```json
 {
-    "body": "This is just a regular build of Sage on OS X 10.5.5 (using make) after moving /opt out of the way. EDITOR is set to:\n\n``` \nEDITOR=mate -w\n```\n\nwhich calls TextMate, but it is crashing before then. If I use a Macports build of mercurial, I can run hg commit just fine (which is what I did after this crashed).\n\nI'll keep your statements about tickets in mind for the future. Sorry.",
+    "body": "This is just a regular build of Sage on OS X 10.5.5 (using make) after moving /opt out of the way. EDITOR is set to:\n\n``` \nEDITOR=mate -w\n```\nwhich calls TextMate, but it is crashing before then. If I use a Macports build of mercurial, I can run hg commit just fine (which is what I did after this crashed).\n\nI'll keep your statements about tickets in mind for the future. Sorry.",
     "created_at": "2008-12-02T19:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4678",
     "type": "issue_comment",
@@ -103,7 +102,6 @@ This is just a regular build of Sage on OS X 10.5.5 (using make) after moving /o
 ``` 
 EDITOR=mate -w
 ```
-
 which calls TextMate, but it is crashing before then. If I use a Macports build of mercurial, I can run hg commit just fine (which is what I did after this crashed).
 
 I'll keep your statements about tickets in mind for the future. Sorry.

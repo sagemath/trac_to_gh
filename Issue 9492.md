@@ -3,7 +3,7 @@
 archive/issues_009492.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nCC:  @mstreng\n\nMagma has 'em, so we should to:\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text306.htm\n\nSympy has them:\n   \n\nThis page has a Mathematica notebook with a function that computes them:\n\n   http://mathworld.wolfram.com/Swinnerton-DyerPolynomial.html\n\nI tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared to Magma.   For comparison, the 5th one takes 55 seconds in Mathematica, and in Magma it takes... 0.02 seconds.   \n\n\n```\n  n   time in seconds with Magma 2.15.11 on my macbook air\n----------------\n  5  | 0.02\n  6  | 0.18\n  7  | 6.68\n  8  | 99.99 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9492\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @mstreng\n\nMagma has 'em, so we should to:\n\n   http://magma.maths.usyd.edu.au/magma/htmlhelp/text306.htm\n\nSympy has them:\n   \n\nThis page has a Mathematica notebook with a function that computes them:\n\n   http://mathworld.wolfram.com/Swinnerton-DyerPolynomial.html\n\nI tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared to Magma.   For comparison, the 5th one takes 55 seconds in Mathematica, and in Magma it takes... 0.02 seconds.   \n\n```\n  n   time in seconds with Magma 2.15.11 on my macbook air\n----------------\n  5  | 0.02\n  6  | 0.18\n  7  | 6.68\n  8  | 99.99 \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9492\n\n",
     "created_at": "2010-07-13T22:40:49Z",
     "labels": [
         "component: misc",
@@ -33,7 +33,6 @@ This page has a Mathematica notebook with a function that computes them:
 
 I tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared to Magma.   For comparison, the 5th one takes 55 seconds in Mathematica, and in Magma it takes... 0.02 seconds.   
 
-
 ```
   n   time in seconds with Magma 2.15.11 on my macbook air
 ----------------
@@ -42,7 +41,6 @@ I tried it in Mathematica 7, and it is massively, dramatically *SLOW* compared t
   7  | 6.68
   8  | 99.99 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9492
 
@@ -111,7 +109,7 @@ Attachment [sd.sage](tarball://root/attachments/some-uuid/ticket9492/sd.sage) by
 archive/issue_comments_090967.json:
 ```json
 {
-    "body": "I think these are interesting because they are used in benchmarks for factoring and irreducibility testing.  See\n  http://www.shoup.net/ntl/doc/tour-time.html\n\nThe sdpoly3 function computes the 10th Swinnerton-Dyer poly of degree 2^10=1024 in < 20 seconds. \n\n```\nsage: time c = sdpoly3(10)\nCPU times: user 17.02 s, sys: 0.05 s, total: 17.07 s\nWall time: 17.50 s\n```\n",
+    "body": "I think these are interesting because they are used in benchmarks for factoring and irreducibility testing.  See\n  http://www.shoup.net/ntl/doc/tour-time.html\n\nThe sdpoly3 function computes the 10th Swinnerton-Dyer poly of degree 2^10=1024 in < 20 seconds. \n\n```\nsage: time c = sdpoly3(10)\nCPU times: user 17.02 s, sys: 0.05 s, total: 17.07 s\nWall time: 17.50 s\n```",
     "created_at": "2010-07-13T23:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -133,13 +131,12 @@ Wall time: 17.50 s
 
 
 
-
 ---
 
 archive/issue_comments_090968.json:
 ```json
 {
-    "body": "Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by @mstreng created at 2010-07-14 11:04:19\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```\n",
+    "body": "Attachment [sd2.sage](tarball://root/attachments/some-uuid/ticket9492/sd2.sage) by @mstreng created at 2010-07-14 11:04:19\n\nI just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see file sd2.sage. I found sdpoly5 to be slightly faster than sdpoly3 in the tests that I have run.\n\nWhen using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).\n\n```\nsage: time sdpoly5(12)\nCPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s\nWall time: 846.13 s\n\nsage: time sdpoly3(12)\nCPU times: user 861.84 s, sys: 0.01 s, total: 861.85 s\nWall time: 861.98 s\n```",
     "created_at": "2010-07-14T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -154,7 +151,6 @@ I just adapted sdpoly3 to use a binary tree. The result is called sdpoly5, see f
 
 When using naive polynomial multiplication, the algorithms sdpoly3 and sdpoly5 are asymptotically equivalent. As soon as FFT quasi-linear polynomial multiplication is implemented for interval arithmetic and examples become large, the algorithm sdpoly5 should be the faster one (quasi-linear).
 
-
 ```
 sage: time sdpoly5(12)
 CPU times: user 845.82 s, sys: 0.10 s, total: 845.92 s
@@ -167,13 +163,12 @@ Wall time: 861.98 s
 
 
 
-
 ---
 
 archive/issue_comments_090969.json:
 ```json
 {
-    "body": "> I just adapted sdpoly3 to use a binary tree.\n\nThanks.  But just a remark -- the Sage prod command already uses a binary tree, at least if the input is a list or of length < 1000.    See the file\n\n   devel/sage/sage/misc/misc_c.pyx\n\nwhich Robert Bradshaw wrote.   So putting \n\n```\n  prod(list( ... ))\n```\n\ninstead of \n\n\n```\n  prod( ...)\n```\n\n\nin sdpoly3 might be another approach.",
+    "body": "> I just adapted sdpoly3 to use a binary tree.\n\n\nThanks.  But just a remark -- the Sage prod command already uses a binary tree, at least if the input is a list or of length < 1000.    See the file\n\n   devel/sage/sage/misc/misc_c.pyx\n\nwhich Robert Bradshaw wrote.   So putting \n\n```\n  prod(list( ... ))\n```\ninstead of \n\n```\n  prod( ...)\n```\n\nin sdpoly3 might be another approach.",
     "created_at": "2010-07-14T12:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -184,6 +179,7 @@ archive/issue_comments_090969.json:
 
 > I just adapted sdpoly3 to use a binary tree.
 
+
 Thanks.  But just a remark -- the Sage prod command already uses a binary tree, at least if the input is a list or of length < 1000.    See the file
 
    devel/sage/sage/misc/misc_c.pyx
@@ -193,14 +189,11 @@ which Robert Bradshaw wrote.   So putting
 ```
   prod(list( ... ))
 ```
-
 instead of 
-
 
 ```
   prod( ...)
 ```
-
 
 in sdpoly3 might be another approach.
 
@@ -211,7 +204,7 @@ in sdpoly3 might be another approach.
 archive/issue_comments_090970.json:
 ```json
 {
-    "body": "I'm at a Singular conference, so I decided to try this problem using Singular polynomial quotient rings.  It's pretty good, though it doesn't beat interval arithmetic speed-wise.\n\n```\ndef sdpoly6(n):\n    R = PolynomialRing(QQ,n+1,names='x')\n    x = R.gens()\n    v = primes_first_n(n)\n    I = R.ideal([ x[i]^2-v[i] for i in range(len(v)) ])\n    S = R.quotient(I)\n    x = S.gens()\n    C = cartesian_product_iterator([[-1,1]]*n)\n    f = prod([ x[-1] + sum(s[i]*x[i] for i in range(n)) for s in C])\n    return f\n```\n\n\nSome timings:\n\n```\nsage: time a = sdpoly6(8)\nTime: CPU 0.71 s, Wall: 0.71 s\nsage: time a = sdpoly6(9)\nTime: CPU 3.44 s, Wall: 3.47 s\nsage: time a10 = sdpoly6(10)\nTime: CPU 29.03 s, Wall: 29.19 s\n```\n\n\nVery impressive for something non-numerical, IMHO...",
+    "body": "I'm at a Singular conference, so I decided to try this problem using Singular polynomial quotient rings.  It's pretty good, though it doesn't beat interval arithmetic speed-wise.\n\n```\ndef sdpoly6(n):\n    R = PolynomialRing(QQ,n+1,names='x')\n    x = R.gens()\n    v = primes_first_n(n)\n    I = R.ideal([ x[i]^2-v[i] for i in range(len(v)) ])\n    S = R.quotient(I)\n    x = S.gens()\n    C = cartesian_product_iterator([[-1,1]]*n)\n    f = prod([ x[-1] + sum(s[i]*x[i] for i in range(n)) for s in C])\n    return f\n```\n\nSome timings:\n\n```\nsage: time a = sdpoly6(8)\nTime: CPU 0.71 s, Wall: 0.71 s\nsage: time a = sdpoly6(9)\nTime: CPU 3.44 s, Wall: 3.47 s\nsage: time a10 = sdpoly6(10)\nTime: CPU 29.03 s, Wall: 29.19 s\n```\n\nVery impressive for something non-numerical, IMHO...",
     "created_at": "2010-07-14T13:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9492",
     "type": "issue_comment",
@@ -235,7 +228,6 @@ def sdpoly6(n):
     return f
 ```
 
-
 Some timings:
 
 ```
@@ -246,7 +238,6 @@ Time: CPU 3.44 s, Wall: 3.47 s
 sage: time a10 = sdpoly6(10)
 Time: CPU 29.03 s, Wall: 29.19 s
 ```
-
 
 Very impressive for something non-numerical, IMHO...
 

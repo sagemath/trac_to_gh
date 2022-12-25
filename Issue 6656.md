@@ -3,7 +3,7 @@
 archive/issues_006656.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nIn the [Sage Notebook Bugreports](http://spreadsheets.google.com/pub?key=pCwvGVwSMxTzT6E2xNdo5fA), there is a report of an error with typesetting Laurent series elements:\n\n```\nsage: R.<a,b>=PolynomialRing(QQ)\nsage: T.<x>=LaurentSeriesRing(R)\nsage: latex(a*x+b*x)\n'a + bx'\n```\n\nIt ought to be (a+b)x, but the parentheses are missing.  The attached patch should fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6656\n\n",
+    "body": "Assignee: @jhpalmieri\n\nIn the [Sage Notebook Bugreports](http://spreadsheets.google.com/pub?key=pCwvGVwSMxTzT6E2xNdo5fA), there is a report of an error with typesetting Laurent series elements:\n\n```\nsage: R.<a,b>=PolynomialRing(QQ)\nsage: T.<x>=LaurentSeriesRing(R)\nsage: latex(a*x+b*x)\n'a + bx'\n```\nIt ought to be (a+b)x, but the parentheses are missing.  The attached patch should fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6656\n\n",
     "created_at": "2009-07-29T19:05:01Z",
     "labels": [
         "component: algebra",
@@ -27,7 +27,6 @@ sage: T.<x>=LaurentSeriesRing(R)
 sage: latex(a*x+b*x)
 'a + bx'
 ```
-
 It ought to be (a+b)x, but the parentheses are missing.  The attached patch should fix this.
 
 
@@ -62,7 +61,7 @@ reviewer patch
 archive/issue_comments_054541.json:
 ```json
 {
-    "body": "Before the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<a,b> = PolynomialRing(QQ)\nsage: T.<x> = LaurentSeriesRing(R)\nsage: y = a*x + b*x\nsage: y._latex_()\n'a + bx'\nsage: latex(y)\na + bx\n```\n\nAfter the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: R.<a,b> = PolynomialRing(QQ)\nsage: T.<x> = LaurentSeriesRing(R)\nsage: y = a*x + b*x\nsage: y._latex_()\n'\\\\left(a + b\\\\right)x'\nsage: latex(y)\n\\left(a + b\\right)x\n```\n\nNote that one can also obtain the LaTeX representation of an object through the `latex()` function. So I'm attaching a patch on top of John's that also calls that function. If John is OK with the patch `trac_6656-reviewer.patch`, then the ticket has positive review from me.",
+    "body": "Before the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<a,b> = PolynomialRing(QQ)\nsage: T.<x> = LaurentSeriesRing(R)\nsage: y = a*x + b*x\nsage: y._latex_()\n'a + bx'\nsage: latex(y)\na + bx\n```\nAfter the patch:\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: R.<a,b> = PolynomialRing(QQ)\nsage: T.<x> = LaurentSeriesRing(R)\nsage: y = a*x + b*x\nsage: y._latex_()\n'\\\\left(a + b\\\\right)x'\nsage: latex(y)\n\\left(a + b\\right)x\n```\nNote that one can also obtain the LaTeX representation of an object through the `latex()` function. So I'm attaching a patch on top of John's that also calls that function. If John is OK with the patch `trac_6656-reviewer.patch`, then the ticket has positive review from me.",
     "created_at": "2009-08-03T01:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6656",
     "type": "issue_comment",
@@ -84,9 +83,9 @@ sage: y._latex_()
 sage: latex(y)
 a + bx
 ```
-
 After the patch:
-
+| Sage Version 4.1, Release Date: 2009-07-09                         |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -103,7 +102,6 @@ sage: y._latex_()
 sage: latex(y)
 \left(a + b\right)x
 ```
-
 Note that one can also obtain the LaTeX representation of an object through the `latex()` function. So I'm attaching a patch on top of John's that also calls that function. If John is OK with the patch `trac_6656-reviewer.patch`, then the ticket has positive review from me.
 
 

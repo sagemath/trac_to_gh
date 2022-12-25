@@ -3,7 +3,7 @@
 archive/issues_001205.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py\nsage -t  devel/sage-main/sage/modular/modform/numerical.py  **********************************************************************\nFile \"numerical.py\", line 53:\n    sage: n.ap(2)\nExpected:\n    [3.0, 0.61803398875, -1.61803398875]\nGot:\n    [0.326481263444, -0.241771189268, 0.632965191003]\n**********************************************************************\nFile \"numerical.py\", line 55:\n    sage: n.systems_of_eigenvalues(7)\nExpected:\n    [\n    [-1.61803398875, 2.2360679775, -3.2360679775],\n    [0.61803398875, -2.2360679775, 1.2360679775],\n    [3.0, 4.0, 6.0]\n    ]\nGot:\n    [\n    [-0.241771189268, -0.516457621465, -0.483542378535],\n    [0.326481263444, -1.65296252689, 0.652962526888],\n    [0.632965191003, -2.26593038201, 1.26593038201]\n    ]\n**********************************************************************\nFile \"numerical.py\", line 67:\n    sage: n.eigenvalues([2,3,5])\nExpected:\n    [[3.0, 0.61803398875, -1.61803398875],\n     [4.0, -2.2360679775, 2.2360679775],\n     [6.0, 1.2360679775, -3.2360679775]]\nGot:\n    [[0.326481263444, -0.241771189268, 0.632965191003], [-1.65296252689, -0.516457621465, -2.26593038201], [0.652962526888, -0.483542378535, 1.26593038201]]\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_1\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_numerical.py\n         [1.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1205\n\n",
+    "body": "Assignee: failure\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py\nsage -t  devel/sage-main/sage/modular/modform/numerical.py  **********************************************************************\nFile \"numerical.py\", line 53:\n    sage: n.ap(2)\nExpected:\n    [3.0, 0.61803398875, -1.61803398875]\nGot:\n    [0.326481263444, -0.241771189268, 0.632965191003]\n**********************************************************************\nFile \"numerical.py\", line 55:\n    sage: n.systems_of_eigenvalues(7)\nExpected:\n    [\n    [-1.61803398875, 2.2360679775, -3.2360679775],\n    [0.61803398875, -2.2360679775, 1.2360679775],\n    [3.0, 4.0, 6.0]\n    ]\nGot:\n    [\n    [-0.241771189268, -0.516457621465, -0.483542378535],\n    [0.326481263444, -1.65296252689, 0.652962526888],\n    [0.632965191003, -2.26593038201, 1.26593038201]\n    ]\n**********************************************************************\nFile \"numerical.py\", line 67:\n    sage: n.eigenvalues([2,3,5])\nExpected:\n    [[3.0, 0.61803398875, -1.61803398875],\n     [4.0, -2.2360679775, 2.2360679775],\n     [6.0, 1.2360679775, -3.2360679775]]\nGot:\n    [[0.326481263444, -0.241771189268, 0.632965191003], [-1.65296252689, -0.516457621465, -2.26593038201], [0.652962526888, -0.483542378535, 1.26593038201]]\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_1\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_numerical.py\n         [1.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1205\n\n",
     "created_at": "2007-11-19T00:13:59Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_001205.json:
 }
 ```
 Assignee: failure
-
 
 ```
 mabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0$ ./sage -t  devel/sage-main/sage/modular/modform/numerical.py
@@ -62,7 +61,6 @@ exit code: 256
 
 ----------------------------------------------------------------------
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_005002.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n```\nsage: C = CrystalOfTableaux(['B',2],shape=[3]) \nsage: C(rows=[[1,1,0]])\n```\n\nraises an exception though this is a legitimate B2 tableaux. This was\nanalyzed by Anne Schilling and others in this thread:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/cb02f961c41947e2?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5002\n\n",
     "created_at": "2009-01-17T17:03:36Z",
     "labels": [
         "component: combinatorics",
@@ -20,12 +20,10 @@ Assignee: @mwhansen
 
 CC:  sage-combinat
 
-
 ```
 sage: C = CrystalOfTableaux(['B',2],shape=[3]) 
 sage: C(rows=[[1,1,0]])
 ```
-
 
 raises an exception though this is a legitimate B2 tableaux. This was
 analyzed by Anne Schilling and others in this thread:
@@ -156,7 +154,7 @@ empty partition
 archive/issue_comments_038078.json:
 ```json
 {
-    "body": "This patch fixes three bugs.\n\nFirst, there is the bug originally reported in this ticket.\nSecond, there is the bug described at\nhttp://groups.google.com/group/sage-combinat-devel/msg/bce932c675b8b04a?hl=en\nThird, it fixes an exception on \n`Partition([]).outside_corners()`.\n\nIn addition there are a lot of documentation improvements.\n\nThe new class CrystalOfWords needs a docstring. Otherwise I found no problems.\n\nThe patch does not change the effect of `sage --testall`.\n\nThe patch applies cleanly on sage-3.4.1.rc1.\n\nPatch summary:\n\n\n```\nAdds index_set as a lazy_attribute method in class Crystal.\nRemoves class AffineCrystal which was prematurely implemented\nReplaces the cmp_elements method => lt_elements in ClassicalCrystalOfLetters.\nImplements __ne__, __lt__, __ge__ methods in class Letter.\nProperly indents docstrings for TensorProductOfCrystals.\nNew class CrystalOfWords.\nFullTensorProductOfCrystals inherits from CrystalOfWords.\ncall method of FullTensorProductOfCrystals is taken down.\nCrystalOfTableaux inherits from CrystalOfWords.\nDocstring revision for CrystalOfTableaux.\nCrystalOfTableaux __init__ method allows multiple shapes.\nCrystalOfTableaux gets new methods cartan_type and module_generator\nCrystalOfTableauxElement __init__ revisions\n```\n",
+    "body": "This patch fixes three bugs.\n\nFirst, there is the bug originally reported in this ticket.\nSecond, there is the bug described at\nhttp://groups.google.com/group/sage-combinat-devel/msg/bce932c675b8b04a?hl=en\nThird, it fixes an exception on \n`Partition([]).outside_corners()`.\n\nIn addition there are a lot of documentation improvements.\n\nThe new class CrystalOfWords needs a docstring. Otherwise I found no problems.\n\nThe patch does not change the effect of `sage --testall`.\n\nThe patch applies cleanly on sage-3.4.1.rc1.\n\nPatch summary:\n\n```\nAdds index_set as a lazy_attribute method in class Crystal.\nRemoves class AffineCrystal which was prematurely implemented\nReplaces the cmp_elements method => lt_elements in ClassicalCrystalOfLetters.\nImplements __ne__, __lt__, __ge__ methods in class Letter.\nProperly indents docstrings for TensorProductOfCrystals.\nNew class CrystalOfWords.\nFullTensorProductOfCrystals inherits from CrystalOfWords.\ncall method of FullTensorProductOfCrystals is taken down.\nCrystalOfTableaux inherits from CrystalOfWords.\nDocstring revision for CrystalOfTableaux.\nCrystalOfTableaux __init__ method allows multiple shapes.\nCrystalOfTableaux gets new methods cartan_type and module_generator\nCrystalOfTableauxElement __init__ revisions\n```",
     "created_at": "2009-04-08T15:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
@@ -183,7 +181,6 @@ The patch applies cleanly on sage-3.4.1.rc1.
 
 Patch summary:
 
-
 ```
 Adds index_set as a lazy_attribute method in class Crystal.
 Removes class AffineCrystal which was prematurely implemented
@@ -199,7 +196,6 @@ CrystalOfTableaux __init__ method allows multiple shapes.
 CrystalOfTableaux gets new methods cartan_type and module_generator
 CrystalOfTableauxElement __init__ revisions
 ```
-
 
 
 
@@ -285,7 +281,7 @@ Michael
 archive/issue_comments_038081.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> Hi, \n> \n> after some discussion about lazy attributed at SD 14 with \n> Nicolas the consensus at least from the non-combinat \n> developers was that lazy attributes should be avoided for \n> public API data structures. If you want to access the \n> index_set of a crystal we see no reason for the \n> inconsistency **A.data_set** while everywhere else \n> in Sage it would be **A.data_set()**. Caching can be done \n> in some other ways.\n\n+10   I very strongly agree with this.  The point isn't to argue about whether lazy attributes are good or bad, but that using them is inconsistent with hundreds of thousands of lines of existing Sage code, and we're definitely not going to change all that code.  For consistency, do not use them in the Sage library for \"user facing\" code.",
+    "body": "Replying to [comment:8 mabshoff]:\n> Hi, \n> \n> after some discussion about lazy attributed at SD 14 with \n> Nicolas the consensus at least from the non-combinat \n> developers was that lazy attributes should be avoided for \n> public API data structures. If you want to access the \n> index_set of a crystal we see no reason for the \n> inconsistency **A.data_set** while everywhere else \n> in Sage it would be **A.data_set()**. Caching can be done \n> in some other ways.\n\n\n+10   I very strongly agree with this.  The point isn't to argue about whether lazy attributes are good or bad, but that using them is inconsistent with hundreds of thousands of lines of existing Sage code, and we're definitely not going to change all that code.  For consistency, do not use them in the Sage library for \"user facing\" code.",
     "created_at": "2009-04-08T19:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
@@ -305,6 +301,7 @@ Replying to [comment:8 mabshoff]:
 > inconsistency **A.data_set** while everywhere else 
 > in Sage it would be **A.data_set()**. Caching can be done 
 > in some other ways.
+
 
 +10   I very strongly agree with this.  The point isn't to argue about whether lazy attributes are good or bad, but that using them is inconsistent with hundreds of thousands of lines of existing Sage code, and we're definitely not going to change all that code.  For consistency, do not use them in the Sage library for "user facing" code.
 
@@ -359,7 +356,7 @@ I suppose this is Michael's call, so this question is addressed mainly to him.
 archive/issue_comments_038084.json:
 ```json
 {
-    "body": "Replying to [comment:11 bump]:\n> Can the patch be merged (and this issue sorted out later) or does it need to be revised to avoid lazy_attributes?\n> \n> I suppose this is Michael's call, so this question is addressed mainly to him.\n\nI am reluctant to merge any large patch that is not on my blocker list at this point in general, but I would greatly prefer if the lazy_attribute issue in this patch was fixed. The main reason is that otherwise some of the API in crystals will be different in 3.4.1 until the fix is merged and there is no clean way to handle this. I think since this is a combinat patch, i.e. no Cython, it is relatively low risk. But we are at the moment sitting around trying to get all blockers resolved and put out 3.4.1.rc2, so if the fix appears it should appear quickly. \n\n`@`Nicolas: I did not see the patch by Anne, but I will look it up.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 bump]:\n> Can the patch be merged (and this issue sorted out later) or does it need to be revised to avoid lazy_attributes?\n> \n> I suppose this is Michael's call, so this question is addressed mainly to him.\n\n\nI am reluctant to merge any large patch that is not on my blocker list at this point in general, but I would greatly prefer if the lazy_attribute issue in this patch was fixed. The main reason is that otherwise some of the API in crystals will be different in 3.4.1 until the fix is merged and there is no clean way to handle this. I think since this is a combinat patch, i.e. no Cython, it is relatively low risk. But we are at the moment sitting around trying to get all blockers resolved and put out 3.4.1.rc2, so if the fix appears it should appear quickly. \n\n`@`Nicolas: I did not see the patch by Anne, but I will look it up.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T01:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5002",
     "type": "issue_comment",
@@ -372,6 +369,7 @@ Replying to [comment:11 bump]:
 > Can the patch be merged (and this issue sorted out later) or does it need to be revised to avoid lazy_attributes?
 > 
 > I suppose this is Michael's call, so this question is addressed mainly to him.
+
 
 I am reluctant to merge any large patch that is not on my blocker list at this point in general, but I would greatly prefer if the lazy_attribute issue in this patch was fixed. The main reason is that otherwise some of the API in crystals will be different in 3.4.1 until the fix is merged and there is no clean way to handle this. I think since this is a combinat patch, i.e. no Cython, it is relatively low risk. But we are at the moment sitting around trying to get all blockers resolved and put out 3.4.1.rc2, so if the fix appears it should appear quickly. 
 

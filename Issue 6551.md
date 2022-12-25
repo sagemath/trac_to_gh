@@ -3,7 +3,7 @@
 archive/issues_006551.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\n\nor even\n\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\nor even\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
     "created_at": "2009-07-18T00:25:01Z",
     "labels": [
         "component: algebra"
@@ -23,20 +23,16 @@ Keywords: print latex multivariate polynomial
 
 The printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):
 
-
 ```
 (-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y
 ```
 
-
 or even
-
 
 ```
 sage: xgcd((b+g)*y^2, (a+g)*y+b)
 ((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))
 ```
-
 
 The attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.
 
@@ -162,7 +158,7 @@ Here's a patch that applies cleanly on top of the #6500 patches. For what it's w
 archive/issue_comments_053321.json:
 ```json
 {
-    "body": "Hi Alex,\n\nI decided to run all doctests just to check that I had rebased the patch correctly, but there seems to be some funny business in quaternion algebras. This is with the #6500 patches and the rebased patch here, applied to 4.1:\n\n\n```\nsage -t  \"devel/sage/sage/algebras/quaternion_algebra_element.py\"                                      \n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quaternion_algebra_element.py\", line 17:           \n    sage: sage.algebras.quaternion_algebra_element.unpickle_QuaternionAlgebraElement_generic_v0(*t)    \nExpected:                                                                                              \n    2/3 + X*i - X^2*j + X^3*k                                                                          \nGot:                                                                                                   \n    2/3 + X*i + (-X^2)*j + X^3*k                                                                       \n**********************************************************************                                 \n```\n\nand\n\n```\n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quatalg/quaternion_algebra.py\", line 455:          \n    sage: QuaternionAlgebra(GF(17)(2),3).random_element()                                              \nExpected:                                                                                              \n    11 + 16*i + 4*j + 13*k                                                                             \nGot:                                                                                                   \n    11 - i + 4*j + 13*k                                                                                \n**********************************************************************                                 \n```\n\n\nThis has nothing to do with the rebasing, because I ran these two tests again using your original patch and without the #6500 patches and they failed in exactly the same way. Any idea what is going on here?\n\nDavid",
+    "body": "Hi Alex,\n\nI decided to run all doctests just to check that I had rebased the patch correctly, but there seems to be some funny business in quaternion algebras. This is with the #6500 patches and the rebased patch here, applied to 4.1:\n\n```\nsage -t  \"devel/sage/sage/algebras/quaternion_algebra_element.py\"                                      \n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quaternion_algebra_element.py\", line 17:           \n    sage: sage.algebras.quaternion_algebra_element.unpickle_QuaternionAlgebraElement_generic_v0(*t)    \nExpected:                                                                                              \n    2/3 + X*i - X^2*j + X^3*k                                                                          \nGot:                                                                                                   \n    2/3 + X*i + (-X^2)*j + X^3*k                                                                       \n**********************************************************************                                 \n```\nand\n\n```\n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quatalg/quaternion_algebra.py\", line 455:          \n    sage: QuaternionAlgebra(GF(17)(2),3).random_element()                                              \nExpected:                                                                                              \n    11 + 16*i + 4*j + 13*k                                                                             \nGot:                                                                                                   \n    11 - i + 4*j + 13*k                                                                                \n**********************************************************************                                 \n```\n\nThis has nothing to do with the rebasing, because I ran these two tests again using your original patch and without the #6500 patches and they failed in exactly the same way. Any idea what is going on here?\n\nDavid",
     "created_at": "2009-07-20T10:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -175,7 +171,6 @@ Hi Alex,
 
 I decided to run all doctests just to check that I had rebased the patch correctly, but there seems to be some funny business in quaternion algebras. This is with the #6500 patches and the rebased patch here, applied to 4.1:
 
-
 ```
 sage -t  "devel/sage/sage/algebras/quaternion_algebra_element.py"                                      
 **********************************************************************                                 
@@ -187,7 +182,6 @@ Got:
     2/3 + X*i + (-X^2)*j + X^3*k                                                                       
 **********************************************************************                                 
 ```
-
 and
 
 ```
@@ -200,7 +194,6 @@ Got:
     11 - i + 4*j + 13*k                                                                                
 **********************************************************************                                 
 ```
-
 
 This has nothing to do with the rebasing, because I ran these two tests again using your original patch and without the #6500 patches and they failed in exactly the same way. Any idea what is going on here?
 
@@ -275,7 +268,7 @@ I've added a small patch that takes care of this, and all tests (should) now pas
 archive/issue_comments_053325.json:
 ```json
 {
-    "body": "Unfortunately, the patch has bit-rotted:\n\n\n```\napplying trac_6551-rebased_for_6500.patch\npatching file sage/matrix/matrix_mpolynomial_dense.pyx\nHunk #1 FAILED at 0\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_mpolynomial_dense.pyx.rej\npatching file sage/rings/polynomial/polydict.pyx\nHunk #5 succeeded at 887 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/toy_buchberger.py\nHunk #1 FAILED at 53\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/toy_buchberger.py.rej\npatching file sage/schemes/elliptic_curves/ell_curve_isogeny.py\nHunk #7 FAILED at 1864\n1 out of 21 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_curve_isogeny.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6551-rebased_for_6500.patch\n```\n\n\nI read the patch and it looks fine so far. It is mainly a question of taste anyway IMHO. However, it might be worth checking for performance loses due to this patch (conversion to strings is used to communicate with Singular for instance)",
+    "body": "Unfortunately, the patch has bit-rotted:\n\n```\napplying trac_6551-rebased_for_6500.patch\npatching file sage/matrix/matrix_mpolynomial_dense.pyx\nHunk #1 FAILED at 0\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_mpolynomial_dense.pyx.rej\npatching file sage/rings/polynomial/polydict.pyx\nHunk #5 succeeded at 887 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/toy_buchberger.py\nHunk #1 FAILED at 53\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/toy_buchberger.py.rej\npatching file sage/schemes/elliptic_curves/ell_curve_isogeny.py\nHunk #7 FAILED at 1864\n1 out of 21 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_curve_isogeny.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6551-rebased_for_6500.patch\n```\n\nI read the patch and it looks fine so far. It is mainly a question of taste anyway IMHO. However, it might be worth checking for performance loses due to this patch (conversion to strings is used to communicate with Singular for instance)",
     "created_at": "2009-08-18T09:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -285,7 +278,6 @@ archive/issue_comments_053325.json:
 ```
 
 Unfortunately, the patch has bit-rotted:
-
 
 ```
 applying trac_6551-rebased_for_6500.patch
@@ -304,7 +296,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_6551-rebased_for_6500.patch
 ```
-
 
 I read the patch and it looks fine so far. It is mainly a question of taste anyway IMHO. However, it might be worth checking for performance loses due to this patch (conversion to strings is used to communicate with Singular for instance)
 
@@ -472,7 +463,7 @@ archive/issue_events_015456.json:
 archive/issue_comments_053328.json:
 ```json
 {
-    "body": "This ticket seems invalid. For the first example:\n\n\n```python\nsage: R.<x,y> = QQ[]\nsage: p = (-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\nsage: p\n-6/5*x^2*y^2 - 3*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 - 18*y^2 - 3/4*y\n```\n\n\nI cannot make the second example work (and this does not appear in the doctests).",
+    "body": "This ticket seems invalid. For the first example:\n\n```python\nsage: R.<x,y> = QQ[]\nsage: p = (-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\nsage: p\n-6/5*x^2*y^2 - 3*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 - 18*y^2 - 3/4*y\n```\n\nI cannot make the second example work (and this does not appear in the doctests).",
     "created_at": "2016-04-13T14:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
@@ -483,14 +474,12 @@ archive/issue_comments_053328.json:
 
 This ticket seems invalid. For the first example:
 
-
 ```python
 sage: R.<x,y> = QQ[]
 sage: p = (-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y
 sage: p
 -6/5*x^2*y^2 - 3*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 - 18*y^2 - 3/4*y
 ```
-
 
 I cannot make the second example work (and this does not appear in the doctests).
 

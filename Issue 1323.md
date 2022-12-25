@@ -3,7 +3,7 @@
 archive/issues_001323.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nFrom Chris Godsil's wishlist:\n\n\n```\n>>> Sometimes I want to construct graphs whose vertices are subspaces of a\n>>> vector space over a finite field. It could be useful to have a\n>>> generator for\n>>> the lines of the associated projective space, or even subspaces of a given\n>>> dimension.\n>> Is there an easy way to generate all of the subspaces of a vector space\n>> already in Sage, maybe restricted to a particular dimension, from the\n>> original vector space?\n> Maybe make a ticket for this?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1323\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nFrom Chris Godsil's wishlist:\n\n```\n>>> Sometimes I want to construct graphs whose vertices are subspaces of a\n>>> vector space over a finite field. It could be useful to have a\n>>> generator for\n>>> the lines of the associated projective space, or even subspaces of a given\n>>> dimension.\n>> Is there an easy way to generate all of the subspaces of a vector space\n>> already in Sage, maybe restricted to a particular dimension, from the\n>> original vector space?\n> Maybe make a ticket for this?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1323\n\n",
     "created_at": "2007-11-28T20:18:47Z",
     "labels": [
         "component: linear algebra"
@@ -21,7 +21,6 @@ CC:  @mwhansen
 
 From Chris Godsil's wishlist:
 
-
 ```
 >>> Sometimes I want to construct graphs whose vertices are subspaces of a
 >>> vector space over a finite field. It could be useful to have a
@@ -33,7 +32,6 @@ From Chris Godsil's wishlist:
 >> original vector space?
 > Maybe make a ticket for this?
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1323

@@ -59,7 +59,7 @@ Changing status from new to assigned.
 archive/issue_comments_039919.json:
 ```json
 {
-    "body": "This was not as simple than I thought it would be. To do this we need to do two things:\n\n* disable the SSE3 detection by making it return \"FAILURE\" unconditionally\n* select ARCH defaults that allow SSE2 on 32 and 64 bit boxen. ATLAS 3.8.2 only offers that for Hammer, i.e. ARCH=20.\n\nWhen doing both of the above on sage.math we get an libatlas.a without any SSE3 instructions:\n\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash libatlas.a \nfound SSE2 addpd: 2\nfound SSE2 addsd: 2\nfound SSE2 movapd: 208\nfound SSE2 movlpd: 131\nfound SSE2 movsd: 4057\nfound SSE2 movupd: 1\nfound SSE2 mulpd: 2\nfound SSE2 mulsd: 2\nfound SSE2 orpd: 174\nfound SSE2 unpcklpd: 1\nfound SSE2 xorpd: 174\n```\n\n\nContrast this with a PNI enabled ATLAS from the same machine:\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash \n/scratch/mabshoff/sage-3.3.rc1/local/lib/libatlas.a \nfound SSE2 pshufd: 394\nfound SSE2 addpd: 41840\nfound SSE2 addsd: 74197\nfound SSE2 andnpd: 3\nfound SSE2 andpd: 34\nfound SSE2 comisd: 1393\nfound SSE2 cvtsd2ss: 8\nfound SSE2 cvtsi2sd: 4\nfound SSE2 cvtss2sd: 20\nfound SSE2 divsd: 304\nfound SSE2 maxpd: 4\nfound SSE2 maxsd: 4\nfound SSE2 movapd: 108245\nfound SSE2 movhpd: 1092\nfound SSE2 movlpd: 1111\nfound SSE2 movmskpd: 8\nfound SSE2 movsd: 27295\nfound SSE2 movupd: 80\nfound SSE2 mulpd: 41882\nfound SSE2 mulsd: 79686\nfound SSE2 orpd: 1152\nfound SSE2 sqrtsd: 8\nfound SSE2 subsd: 1658\nfound SSE2 ucomisd: 1392\nfound SSE2 unpckhpd: 86\nfound SSE2 unpcklpd: 90\nfound SSE2 xorpd: 1151\nfound SSE3 haddpd: 1224\nfound SSE3 haddps: 530\nfound SSE3 movddup: 4\nfound SSE3 movshdup: 2\nfound SSE3 movsldup: 3\n```\n\nIt is unclear how much of a performance penalty there is when selecting a Hammer ATLAS for a P4 arch, but it could be substantial. Someone needs to collect some numbers. It might be a good idea to tune the P4 kernels by selecting `-A 16`, but this would require adding tuning info for that config in 64 bits.\n\nIn the long term it might be beneficial to build ATLAS libs on various CPUs and then use a runtime selection to put the best version in LD_LIBRARY_PATH. \n\nI will build an spkg with the above changes since the SSE3 issue is really becoming a problem. One should note that for optimum performance one needs to build from sources. \n\nCheers,\n\nMichael",
+    "body": "This was not as simple than I thought it would be. To do this we need to do two things:\n\n* disable the SSE3 detection by making it return \"FAILURE\" unconditionally\n* select ARCH defaults that allow SSE2 on 32 and 64 bit boxen. ATLAS 3.8.2 only offers that for Hammer, i.e. ARCH=20.\n\nWhen doing both of the above on sage.math we get an libatlas.a without any SSE3 instructions:\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash libatlas.a \nfound SSE2 addpd: 2\nfound SSE2 addsd: 2\nfound SSE2 movapd: 208\nfound SSE2 movlpd: 131\nfound SSE2 movsd: 4057\nfound SSE2 movupd: 1\nfound SSE2 mulpd: 2\nfound SSE2 mulsd: 2\nfound SSE2 orpd: 174\nfound SSE2 unpcklpd: 1\nfound SSE2 xorpd: 174\n```\n\nContrast this with a PNI enabled ATLAS from the same machine:\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash \n/scratch/mabshoff/sage-3.3.rc1/local/lib/libatlas.a \nfound SSE2 pshufd: 394\nfound SSE2 addpd: 41840\nfound SSE2 addsd: 74197\nfound SSE2 andnpd: 3\nfound SSE2 andpd: 34\nfound SSE2 comisd: 1393\nfound SSE2 cvtsd2ss: 8\nfound SSE2 cvtsi2sd: 4\nfound SSE2 cvtss2sd: 20\nfound SSE2 divsd: 304\nfound SSE2 maxpd: 4\nfound SSE2 maxsd: 4\nfound SSE2 movapd: 108245\nfound SSE2 movhpd: 1092\nfound SSE2 movlpd: 1111\nfound SSE2 movmskpd: 8\nfound SSE2 movsd: 27295\nfound SSE2 movupd: 80\nfound SSE2 mulpd: 41882\nfound SSE2 mulsd: 79686\nfound SSE2 orpd: 1152\nfound SSE2 sqrtsd: 8\nfound SSE2 subsd: 1658\nfound SSE2 ucomisd: 1392\nfound SSE2 unpckhpd: 86\nfound SSE2 unpcklpd: 90\nfound SSE2 xorpd: 1151\nfound SSE3 haddpd: 1224\nfound SSE3 haddps: 530\nfound SSE3 movddup: 4\nfound SSE3 movshdup: 2\nfound SSE3 movsldup: 3\n```\nIt is unclear how much of a performance penalty there is when selecting a Hammer ATLAS for a P4 arch, but it could be substantial. Someone needs to collect some numbers. It might be a good idea to tune the P4 kernels by selecting `-A 16`, but this would require adding tuning info for that config in 64 bits.\n\nIn the long term it might be beneficial to build ATLAS libs on various CPUs and then use a runtime selection to put the best version in LD_LIBRARY_PATH. \n\nI will build an spkg with the above changes since the SSE3 issue is really becoming a problem. One should note that for optimum performance one needs to build from sources. \n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T12:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5219",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ This was not as simple than I thought it would be. To do this we need to do two 
 
 When doing both of the above on sage.math we get an libatlas.a without any SSE3 instructions:
 
-
 ```
 atlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash libatlas.a 
 found SSE2 addpd: 2
@@ -90,7 +89,6 @@ found SSE2 orpd: 174
 found SSE2 unpcklpd: 1
 found SSE2 xorpd: 174
 ```
-
 
 Contrast this with a PNI enabled ATLAS from the same machine:
 
@@ -130,7 +128,6 @@ found SSE3 movddup: 4
 found SSE3 movshdup: 2
 found SSE3 movsldup: 3
 ```
-
 It is unclear how much of a performance penalty there is when selecting a Hammer ATLAS for a P4 arch, but it could be substantial. Someone needs to collect some numbers. It might be a good idea to tune the P4 kernels by selecting `-A 16`, but this would require adding tuning info for that config in 64 bits.
 
 In the long term it might be beneficial to build ATLAS libs on various CPUs and then use a runtime selection to put the best version in LD_LIBRARY_PATH. 
@@ -148,7 +145,7 @@ Michael
 archive/issue_comments_039920.json:
 ```json
 {
-    "body": "Ok, no need to do something stupid with the probes. Clint come to the rescue:\n\n```\n> * The other issue concerns selecting a maximum SSE level. Right now I\n>can pick some Arch, but the SSE level up to SSE3 (==PNI) is determined\n>by the probes. So even if I pick a PIII for example I end up with SSE3\n>>support if the CPU supplies it. So far the trick I am using is to have\n>the SSE probe unconditionally return \"FAILURE\", so that for example I\n>get a SSE2 only ATLAS on a CPU with SSE3 or more. Obviously\n>performance will suck, but in case of Sage it is between \"illegal\n>instructions\" and working binaries, so performance  is something I can\n>sacrifice for that.\n>\n>Is there a plan to make the SSE level selectable as a config option?\n\nNot only is there a plan, but it's been available since 3.8.0!  It's not\nthe easiest thing to grok, because one machine obviously can support many\nvector extensions.  Here is the line from 'configure --help':\n  -V #    # = ((1<<vecISA1) | (1<<vecISA2) | ... | (1<<vecISAN))\n\nNow, since xprint_enums for some reason doens't print these values out,\nI can oh so conveniently scope ATLAS/CONFIG/include/atlconf.h for:\n  enum ISAEXT {ISA_None=0, ISA_AV, ISA_SSE3, ISA_SSE2, ISA_SSE1, ISA_3DNow};\n\nTherefore, if I want no vector code at all, I throw '-V -0'; if I want\nSSE2 & 1 but not 3, I throw (1<<3)+(1<<4) = 8+16=24, so '-V 24', and\nbingo: no SSE3 even on a machine that does SSE3!\n\nCheers,\nClint\n```\n\n\nCheers,\n\nMichael",
+    "body": "Ok, no need to do something stupid with the probes. Clint come to the rescue:\n\n```\n> * The other issue concerns selecting a maximum SSE level. Right now I\n>can pick some Arch, but the SSE level up to SSE3 (==PNI) is determined\n>by the probes. So even if I pick a PIII for example I end up with SSE3\n>>support if the CPU supplies it. So far the trick I am using is to have\n>the SSE probe unconditionally return \"FAILURE\", so that for example I\n>get a SSE2 only ATLAS on a CPU with SSE3 or more. Obviously\n>performance will suck, but in case of Sage it is between \"illegal\n>instructions\" and working binaries, so performance  is something I can\n>sacrifice for that.\n>\n>Is there a plan to make the SSE level selectable as a config option?\n\nNot only is there a plan, but it's been available since 3.8.0!  It's not\nthe easiest thing to grok, because one machine obviously can support many\nvector extensions.  Here is the line from 'configure --help':\n  -V #    # = ((1<<vecISA1) | (1<<vecISA2) | ... | (1<<vecISAN))\n\nNow, since xprint_enums for some reason doens't print these values out,\nI can oh so conveniently scope ATLAS/CONFIG/include/atlconf.h for:\n  enum ISAEXT {ISA_None=0, ISA_AV, ISA_SSE3, ISA_SSE2, ISA_SSE1, ISA_3DNow};\n\nTherefore, if I want no vector code at all, I throw '-V -0'; if I want\nSSE2 & 1 but not 3, I throw (1<<3)+(1<<4) = 8+16=24, so '-V 24', and\nbingo: no SSE3 even on a machine that does SSE3!\n\nCheers,\nClint\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-21T06:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5219",
     "type": "issue_comment",
@@ -188,7 +185,6 @@ bingo: no SSE3 even on a machine that does SSE3!
 Cheers,
 Clint
 ```
-
 
 Cheers,
 

@@ -150,7 +150,7 @@ This needs to rebased against 4.0 since functions/special.py has changed.  The e
 archive/issue_comments_045890.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> This needs to rebased against 4.0 since functions/special.py has changed.  The elliptic_j function should be written to match those.\nWill do -- John",
+    "body": "Replying to [comment:5 mhansen]:\n> This needs to rebased against 4.0 since functions/special.py has changed.  The elliptic_j function should be written to match those.\n\nWill do -- John",
     "created_at": "2009-06-01T08:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
@@ -161,6 +161,7 @@ archive/issue_comments_045890.json:
 
 Replying to [comment:5 mhansen]:
 > This needs to rebased against 4.0 since functions/special.py has changed.  The elliptic_j function should be written to match those.
+
 Will do -- John
 
 

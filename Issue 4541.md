@@ -3,7 +3,7 @@
 archive/issues_004541.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: symmetric functions, kschur\n\nExample:\n\n\n```\nsage: ks3 = kSchurFunctions(QQ,3)\nsage: s = SFASchur(ks3.base_ring())\nsage: s(ks3(s([1,1,1,1])))\ns[1, 1, 1, 1] + t^3*s[4]\n```\n\n\nIn general, s(ks3(foo)) returns the_right_thing + bad_stuff  where bad_stuff is a sum of Schur functions with first part larger than 3.  Possibly, this is because the ks3->s conversion doesn't understand that the kschur's do not form a basis for all symmetric functions; only for the span of schur functions with first part <= k.  I will look more at this and see if I can't put up a patch, but assistance is very welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4541\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: symmetric functions, kschur\n\nExample:\n\n```\nsage: ks3 = kSchurFunctions(QQ,3)\nsage: s = SFASchur(ks3.base_ring())\nsage: s(ks3(s([1,1,1,1])))\ns[1, 1, 1, 1] + t^3*s[4]\n```\n\nIn general, s(ks3(foo)) returns the_right_thing + bad_stuff  where bad_stuff is a sum of Schur functions with first part larger than 3.  Possibly, this is because the ks3->s conversion doesn't understand that the kschur's do not form a basis for all symmetric functions; only for the span of schur functions with first part <= k.  I will look more at this and see if I can't put up a patch, but assistance is very welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4541\n\n",
     "created_at": "2008-11-17T20:01:47Z",
     "labels": [
         "component: combinatorics",
@@ -24,14 +24,12 @@ Keywords: symmetric functions, kschur
 
 Example:
 
-
 ```
 sage: ks3 = kSchurFunctions(QQ,3)
 sage: s = SFASchur(ks3.base_ring())
 sage: s(ks3(s([1,1,1,1])))
 s[1, 1, 1, 1] + t^3*s[4]
 ```
-
 
 In general, s(ks3(foo)) returns the_right_thing + bad_stuff  where bad_stuff is a sum of Schur functions with first part larger than 3.  Possibly, this is because the ks3->s conversion doesn't understand that the kschur's do not form a basis for all symmetric functions; only for the span of schur functions with first part <= k.  I will look more at this and see if I can't put up a patch, but assistance is very welcome!
 

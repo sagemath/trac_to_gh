@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1852
 archive/issue_comments_011690.json:
 ```json
 {
-    "body": "> Other questions: - why is R configured with --with-reccomended-packages=no ? \n> (perhaps it would be possible to offer the recommended packages as an optional package?)\n\nBecause `--with-recommended-packages=yes` takes 5 times to build as no. Simple as that.    And for the first few releases of R in Sage it makes sense to be conservative to keep breakage to a minimal.  We will revisit this... say now.\n\n> - why is the whoule source code of R installed in $SAGE_LOCAL/lib/r ?\n\nNo clue.  I didn't know that.  It is surprising.",
+    "body": "> Other questions: - why is R configured with --with-reccomended-packages=no ? \n> (perhaps it would be possible to offer the recommended packages as an optional package?)\n\n\nBecause `--with-recommended-packages=yes` takes 5 times to build as no. Simple as that.    And for the first few releases of R in Sage it makes sense to be conservative to keep breakage to a minimal.  We will revisit this... say now.\n\n> - why is the whoule source code of R installed in $SAGE_LOCAL/lib/r ?\n\n\nNo clue.  I didn't know that.  It is surprising.",
     "created_at": "2008-01-20T01:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1852",
     "type": "issue_comment",
@@ -61,9 +61,11 @@ archive/issue_comments_011690.json:
 > Other questions: - why is R configured with --with-reccomended-packages=no ? 
 > (perhaps it would be possible to offer the recommended packages as an optional package?)
 
+
 Because `--with-recommended-packages=yes` takes 5 times to build as no. Simple as that.    And for the first few releases of R in Sage it makes sense to be conservative to keep breakage to a minimal.  We will revisit this... say now.
 
 > - why is the whoule source code of R installed in $SAGE_LOCAL/lib/r ?
+
 
 No clue.  I didn't know that.  It is surprising.
 
@@ -74,7 +76,7 @@ No clue.  I didn't know that.  It is surprising.
 archive/issue_comments_011691.json:
 ```json
 {
-    "body": "Somebody (was?) does the following in spkg-install:\n\n```\n# For some reason make install sucks -- it doesn't copy the libraries or R bin over ??\n\ncp lib/* \"$SAGE_LOCAL\"/lib/\ncp bin/R \"$SAGE_LOCAL\"/bin/\n```\n\n\nVery, very odd to say the least.\n\nCheers,\n\nMichael",
+    "body": "Somebody (was?) does the following in spkg-install:\n\n```\n# For some reason make install sucks -- it doesn't copy the libraries or R bin over ??\n\ncp lib/* \"$SAGE_LOCAL\"/lib/\ncp bin/R \"$SAGE_LOCAL\"/bin/\n```\n\nVery, very odd to say the least.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-23T07:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1852",
     "type": "issue_comment",
@@ -91,7 +93,6 @@ Somebody (was?) does the following in spkg-install:
 cp lib/* "$SAGE_LOCAL"/lib/
 cp bin/R "$SAGE_LOCAL"/bin/
 ```
-
 
 Very, very odd to say the least.
 
@@ -203,7 +204,7 @@ Michael
 archive/issue_comments_011696.json:
 ```json
 {
-    "body": "I read the new spkg-install, built this package on all our test machines, and ran this test with success on all of them:\n\n\n```\nwas@debian32:~$ echo \"import rpy; rpy.r('2+2')\" | sage-2.10.1.alpha1/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1.alpha1, Release Date: 2008-01-21               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: 4.0\nsage: \n```\n\n\nSo thumbs up.",
+    "body": "I read the new spkg-install, built this package on all our test machines, and ran this test with success on all of them:\n\n```\nwas@debian32:~$ echo \"import rpy; rpy.r('2+2')\" | sage-2.10.1.alpha1/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1.alpha1, Release Date: 2008-01-21               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: 4.0\nsage: \n```\n\nSo thumbs up.",
     "created_at": "2008-01-25T15:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1852",
     "type": "issue_comment",
@@ -214,7 +215,6 @@ archive/issue_comments_011696.json:
 
 I read the new spkg-install, built this package on all our test machines, and ran this test with success on all of them:
 
-
 ```
 was@debian32:~$ echo "import rpy; rpy.r('2+2')" | sage-2.10.1.alpha1/sage
 ----------------------------------------------------------------------
@@ -224,7 +224,6 @@ was@debian32:~$ echo "import rpy; rpy.r('2+2')" | sage-2.10.1.alpha1/sage
 sage: 4.0
 sage: 
 ```
-
 
 So thumbs up.
 

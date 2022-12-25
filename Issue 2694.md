@@ -3,7 +3,7 @@
 archive/issues_002694.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nHecke algebra basis is not implemented.\nhere is how one can reproduce it:\n\n```\nsage: M=ModularSymbols(431,2,1)\nsage: C=M.cuspidal_submodule()\nsage: TT=C.hecke_algebra()\nsage: TT.basis()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/syazdani/sage-2.11.alpha1/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py in basis(self)\n    145\n    146     def basis(self):\n--> 147         raise NotImplementedError\n    148\n    149     def discriminant(self):\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2694\n\n",
+    "body": "Assignee: @craigcitro\n\nHecke algebra basis is not implemented.\nhere is how one can reproduce it:\n\n```\nsage: M=ModularSymbols(431,2,1)\nsage: C=M.cuspidal_submodule()\nsage: TT=C.hecke_algebra()\nsage: TT.basis()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/syazdani/sage-2.11.alpha1/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py in basis(self)\n    145\n    146     def basis(self):\n--> 147         raise NotImplementedError\n    148\n    149     def discriminant(self):\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2694\n\n",
     "created_at": "2008-03-28T05:02:07Z",
     "labels": [
         "component: modular forms",
@@ -40,7 +40,6 @@ sage: TT.basis()
 
 <type 'exceptions.NotImplementedError'>:
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2694
@@ -129,7 +128,7 @@ archive/issue_events_006291.json:
 archive/issue_comments_018502.json:
 ```json
 {
-    "body": "This works for me on `5.5.rc0`:\n\n```\nsage: M = ModularSymbols(431,2,1)\nsage: C = M.cuspidal_submodule()\nsage: TT = C.hecke_algebra()\nsage: TT.basis()\n[Hecke operator on Modular Symbols subspace of dimension 36 of Modular Symbols space of dimension 37 for Gamma_0(431) of weight 2 with sign 1 over Rational Field defined by:\n...\n36 x 36 dense matrix over Rational Field]\n```\n",
+    "body": "This works for me on `5.5.rc0`:\n\n```\nsage: M = ModularSymbols(431,2,1)\nsage: C = M.cuspidal_submodule()\nsage: TT = C.hecke_algebra()\nsage: TT.basis()\n[Hecke operator on Modular Symbols subspace of dimension 36 of Modular Symbols space of dimension 37 for Gamma_0(431) of weight 2 with sign 1 over Rational Field defined by:\n...\n36 x 36 dense matrix over Rational Field]\n```",
     "created_at": "2013-02-05T03:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
@@ -149,7 +148,6 @@ sage: TT.basis()
 ...
 36 x 36 dense matrix over Rational Field]
 ```
-
 
 
 

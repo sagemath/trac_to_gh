@@ -3,7 +3,7 @@
 archive/issues_005499.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis was originally reported on ticket #5076 but seems to be a separate issue.\n\n```\nsage: K = Qp(11,8)\nsage: a = 11^-2 + O(11^5)\nsage: a\n11^-2 + O(11^3)\n```\n\nBy contrast:\n\n```\nsage: K = Qp(11,8)\nsage: 11^(-2) + K(O(11^5))\n11^-2 + O(11^5)\n```\n\nNote that\n\n```\nsage: O(11^5).parent()\n11-adic Ring with capped relative precision 5\nsage: O(11^5).parent() == K\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5499\n\n",
+    "body": "Assignee: @williamstein\n\nThis was originally reported on ticket #5076 but seems to be a separate issue.\n\n```\nsage: K = Qp(11,8)\nsage: a = 11^-2 + O(11^5)\nsage: a\n11^-2 + O(11^3)\n```\nBy contrast:\n\n```\nsage: K = Qp(11,8)\nsage: 11^(-2) + K(O(11^5))\n11^-2 + O(11^5)\n```\nNote that\n\n```\nsage: O(11^5).parent()\n11-adic Ring with capped relative precision 5\nsage: O(11^5).parent() == K\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5499\n\n",
     "created_at": "2009-03-12T05:18:12Z",
     "labels": [
         "component: number theory",
@@ -26,7 +26,6 @@ sage: a = 11^-2 + O(11^5)
 sage: a
 11^-2 + O(11^3)
 ```
-
 By contrast:
 
 ```
@@ -34,7 +33,6 @@ sage: K = Qp(11,8)
 sage: 11^(-2) + K(O(11^5))
 11^-2 + O(11^5)
 ```
-
 Note that
 
 ```
@@ -43,7 +41,6 @@ sage: O(11^5).parent()
 sage: O(11^5).parent() == K
 False
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5499
@@ -117,7 +114,7 @@ Michael
 archive/issue_comments_042629.json:
 ```json
 {
-    "body": "This patch causes many doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 1 doctests failed\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_polynomial.rst # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/formal_group.py # 8 doctests failed\n\tsage -t -long devel/sage/doc/en/tutorial/tour_polynomial.rst # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/laurent_series_ring_element.pyx # 48 doctests failed\n\tsage -t -long devel/sage/sage/rings/laurent_series_ring.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/rings/big_oh.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # Segfault\n```\n\nThe last seems to get very slow, i.e. only the last step in the following computation\n\n```\nTrying:\n    E = EllipticCurve('37a')###line 585:_sage_    >>> E = EllipticCurve('37a')\nExpecting nothing\nok\nTrying:\n    E.is_supersingular(Integer(3))###line 586:_sage_    >>> E.is_supersingular(3)\nExpecting:\n    True\nok\nTrying:\n    h = E.padic_height(Integer(3), Integer(5))###line 588:_sage_    >>> h = E.padic_height(3, 5)\nExpecting nothing\nok\nTrying:\n    h(E.gens()[Integer(0)])###line 589:_sage_    >>> h(E.gens()[0])\nExpecting:\n    (2*3 + 2*3^2 + 3^3 + 2*3^4 + 2*3^5 + O(3^6), 3^2 + 3^3 + 3^4 + 3^5 + O(3^7))\n```\n\ntakes more than 3 minutes CPU time on sage.math.\n\nCheers,\n\nMichael",
+    "body": "This patch causes many doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 1 doctests failed\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_polynomial.rst # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/formal_group.py # 8 doctests failed\n\tsage -t -long devel/sage/doc/en/tutorial/tour_polynomial.rst # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/laurent_series_ring_element.pyx # 48 doctests failed\n\tsage -t -long devel/sage/sage/rings/laurent_series_ring.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/rings/big_oh.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # Segfault\n```\nThe last seems to get very slow, i.e. only the last step in the following computation\n\n```\nTrying:\n    E = EllipticCurve('37a')###line 585:_sage_    >>> E = EllipticCurve('37a')\nExpecting nothing\nok\nTrying:\n    E.is_supersingular(Integer(3))###line 586:_sage_    >>> E.is_supersingular(3)\nExpecting:\n    True\nok\nTrying:\n    h = E.padic_height(Integer(3), Integer(5))###line 588:_sage_    >>> h = E.padic_height(3, 5)\nExpecting nothing\nok\nTrying:\n    h(E.gens()[Integer(0)])###line 589:_sage_    >>> h(E.gens()[0])\nExpecting:\n    (2*3 + 2*3^2 + 3^3 + 2*3^4 + 2*3^5 + O(3^6), 3^2 + 3^3 + 3^4 + 3^5 + O(3^7))\n```\ntakes more than 3 minutes CPU time on sage.math.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
@@ -140,7 +137,6 @@ This patch causes many doctest failures:
 	sage -t -long devel/sage/sage/rings/big_oh.py # 2 doctests failed
 	sage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # Segfault
 ```
-
 The last seems to get very slow, i.e. only the last step in the following computation
 
 ```
@@ -162,7 +158,6 @@ Trying:
 Expecting:
     (2*3 + 2*3^2 + 3^3 + 2*3^4 + 2*3^5 + O(3^6), 3^2 + 3^3 + 3^4 + 3^5 + O(3^7))
 ```
-
 takes more than 3 minutes CPU time on sage.math.
 
 Cheers,
@@ -176,7 +171,7 @@ Michael
 archive/issue_comments_042630.json:
 ```json
 {
-    "body": "I was originally unsure whether this was simply because those doctests depended on the old behavior. But in fact there is a real problem with the patch, as I extracted from the second file on Michael's list.\n\n```\nsage: E=EllipticCurve('389a1')\nsage: X,Y=E.modular_parametrization()\nsage: q = X.parent().gen()\nsage: E.defining_polynomial()(X,Y,1)\n869*q^11 + 2151*q^12 - 2768*q^13 + O(q^14)\nsage: E.defining_polynomial()(X,Y,1) + O(q^11)\n870*q^11 + 2151*q^12 - 2768*q^13 + O(q^14)\n```\n",
+    "body": "I was originally unsure whether this was simply because those doctests depended on the old behavior. But in fact there is a real problem with the patch, as I extracted from the second file on Michael's list.\n\n```\nsage: E=EllipticCurve('389a1')\nsage: X,Y=E.modular_parametrization()\nsage: q = X.parent().gen()\nsage: E.defining_polynomial()(X,Y,1)\n869*q^11 + 2151*q^12 - 2768*q^13 + O(q^14)\nsage: E.defining_polynomial()(X,Y,1) + O(q^11)\n870*q^11 + 2151*q^12 - 2768*q^13 + O(q^14)\n```",
     "created_at": "2009-04-12T12:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
@@ -199,13 +194,12 @@ sage: E.defining_polynomial()(X,Y,1) + O(q^11)
 
 
 
-
 ---
 
 archive/issue_comments_042631.json:
 ```json
 {
-    "body": "To clarify my previous comment: before the patch, we have correctly:\n\n```\nsage: R.<q> = LaurentSeriesRing(Rationals())\nsage: O(q^14)\nO(q^14)\n```\n\nbut afterwards we have:\n\n```\nsage: R.<q> = LaurentSeriesRing(Rationals())\nsage: O(q^14)\nq^14\n```\n",
+    "body": "To clarify my previous comment: before the patch, we have correctly:\n\n```\nsage: R.<q> = LaurentSeriesRing(Rationals())\nsage: O(q^14)\nO(q^14)\n```\nbut afterwards we have:\n\n```\nsage: R.<q> = LaurentSeriesRing(Rationals())\nsage: O(q^14)\nq^14\n```",
     "created_at": "2009-04-12T14:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
@@ -221,7 +215,6 @@ sage: R.<q> = LaurentSeriesRing(Rationals())
 sage: O(q^14)
 O(q^14)
 ```
-
 but afterwards we have:
 
 ```
@@ -229,7 +222,6 @@ sage: R.<q> = LaurentSeriesRing(Rationals())
 sage: O(q^14)
 q^14
 ```
-
 
 
 

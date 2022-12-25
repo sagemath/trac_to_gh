@@ -247,7 +247,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_076090.json:
 ```json
 {
-    "body": "\n```\nsphinx-build -b html -d /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/doctrees/en/constructions    /home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/constructions /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/constructions\nRunning Sphinx v0.6.3\n...\n/home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/constructions/index.rst:28: (WARNING/2) toctree references unknown document u'functional_programming'\n...\nbuild succeeded, 1 warning.\n\n...\n\nsphinx-build -b html -d /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/doctrees/en/thematic_tutorials    /home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/thematic_tutorials /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/thematic_tutorials\nRunning Sphinx v0.6.3\nloading pickled environment... not found\nbuilding [html]: targets for 3 source files that are out of date\nupdating environment: 3 added, 0 changed, 0 removed\nreading sources... [ 33%] functional_programming\nreading sources... [ 66%] group_theory\nreading sources... [100%] index\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [ 33%] functional_programming\nwriting output... [ 66%] group_theory\nwriting output... [100%] index\n\nwriting additional files... genindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded.\nBuild finished.  The built documents can be found in /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/thematic_tutorials\n\n...\n```\n\n(The bottom part is just informational.)\n\nSo just little work needed (dangling reference).\n\nThanks though for fixing this \"eternal\" error... ;-)\n\n\nChanging this to \"critical\" and \"defect\", since actually this patch fixes a Sphinx build error.",
+    "body": "```\nsphinx-build -b html -d /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/doctrees/en/constructions    /home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/constructions /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/constructions\nRunning Sphinx v0.6.3\n...\n/home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/constructions/index.rst:28: (WARNING/2) toctree references unknown document u'functional_programming'\n...\nbuild succeeded, 1 warning.\n\n...\n\nsphinx-build -b html -d /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/doctrees/en/thematic_tutorials    /home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/thematic_tutorials /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/thematic_tutorials\nRunning Sphinx v0.6.3\nloading pickled environment... not found\nbuilding [html]: targets for 3 source files that are out of date\nupdating environment: 3 added, 0 changed, 0 removed\nreading sources... [ 33%] functional_programming\nreading sources... [ 66%] group_theory\nreading sources... [100%] index\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [ 33%] functional_programming\nwriting output... [ 66%] group_theory\nwriting output... [100%] index\n\nwriting additional files... genindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded.\nBuild finished.  The built documents can be found in /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/thematic_tutorials\n\n...\n```\n(The bottom part is just informational.)\n\nSo just little work needed (dangling reference).\n\nThanks though for fixing this \"eternal\" error... ;-)\n\n\nChanging this to \"critical\" and \"defect\", since actually this patch fixes a Sphinx build error.",
     "created_at": "2010-07-27T21:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -255,7 +255,6 @@ archive/issue_comments_076090.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```
 sphinx-build -b html -d /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/doctrees/en/constructions    /home/leif/sage-4.5.2.alpha1/devel/sage/doc/en/constructions /home/leif/sage-4.5.2.alpha1/devel/sage/doc/output/html/en/constructions
@@ -293,7 +292,6 @@ Build finished.  The built documents can be found in /home/leif/sage-4.5.2.alpha
 
 ...
 ```
-
 (The bottom part is just informational.)
 
 So just little work needed (dangling reference).
@@ -424,7 +422,7 @@ The (re)build of the HTML documents now works as expected (without new warnings)
 archive/issue_comments_076097.json:
 ```json
 {
-    "body": "> Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. \n\nI think it gets added in #8442.",
+    "body": "> Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. \n\n\nI think it gets added in #8442.",
     "created_at": "2010-07-28T00:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -435,6 +433,7 @@ archive/issue_comments_076097.json:
 
 > Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. 
 
+
 I think it gets added in #8442.
 
 
@@ -444,7 +443,7 @@ I think it gets added in #8442.
 archive/issue_comments_076098.json:
 ```json
 {
-    "body": "Replying to [comment:15 jhpalmieri]:\n> > Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. \n> \n> I think it gets added in #8442.\n\nSo can you merge the patch to `doc/en/website/templates/index.html` from http://trac.sagemath.org/sage_trac/attachment/ticket/8442/trac_8442-config.patch (if that's the correct one)?",
+    "body": "Replying to [comment:15 jhpalmieri]:\n> > Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. \n\n> \n> I think it gets added in #8442.\n\n\nSo can you merge the patch to `doc/en/website/templates/index.html` from http://trac.sagemath.org/sage_trac/attachment/ticket/8442/trac_8442-config.patch (if that's the correct one)?",
     "created_at": "2010-07-28T00:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -455,8 +454,10 @@ archive/issue_comments_076098.json:
 
 Replying to [comment:15 jhpalmieri]:
 > > Hmmm, I might be stupid, but I cannot find the Thematic Tutorials in (or from) the main index devel/sage/doc/output/html/en/index.html. 
+
 > 
 > I think it gets added in #8442.
+
 
 So can you merge the patch to `doc/en/website/templates/index.html` from http://trac.sagemath.org/sage_trac/attachment/ticket/8442/trac_8442-config.patch (if that's the correct one)?
 
@@ -656,7 +657,7 @@ archive/issue_events_020315.json:
 archive/issue_comments_076108.json:
 ```json
 {
-    "body": "Attachment [trac_8465-fix_typo.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-fix_typo.patch) by @qed777 created at 2010-07-29 04:47:16\n\nReplying to [comment:19 leif]:\n> == Note to the release managers ==\n \n> **Apply only trac_8465-v2.patch and** (despite its name) **trac_8442-config.patch.**\n\nI'm merging these and a new [attachment:trac_8465-fix_typo.patch] into 4.5.2.rc0.  Can someone please check the latter?  There's no need to add me as an author.",
+    "body": "Attachment [trac_8465-fix_typo.patch](tarball://root/attachments/some-uuid/ticket8465/trac_8465-fix_typo.patch) by @qed777 created at 2010-07-29 04:47:16\n\nReplying to [comment:19 leif]:\n> == Note to the release managers ==\n\n \n> **Apply only trac_8465-v2.patch and** (despite its name) **trac_8442-config.patch.**\n\n\nI'm merging these and a new [attachment:trac_8465-fix_typo.patch] into 4.5.2.rc0.  Can someone please check the latter?  There's no need to add me as an author.",
     "created_at": "2010-07-29T04:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8465",
     "type": "issue_comment",
@@ -669,8 +670,10 @@ Attachment [trac_8465-fix_typo.patch](tarball://root/attachments/some-uuid/ticke
 
 Replying to [comment:19 leif]:
 > == Note to the release managers ==
+
  
 > **Apply only trac_8465-v2.patch and** (despite its name) **trac_8442-config.patch.**
+
 
 I'm merging these and a new [attachment:trac_8465-fix_typo.patch] into 4.5.2.rc0.  Can someone please check the latter?  There's no need to add me as an author.
 

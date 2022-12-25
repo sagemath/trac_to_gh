@@ -282,7 +282,7 @@ archive/issue_comments_067040.json:
 archive/issue_comments_067041.json:
 ```json
 {
-    "body": "* Minor: Message at top of `main.sass` should also refer to the `readme.txt` (cf. `test_report.sass`.\n  * Just Se test 4050 fails with\n\n```\ntrac_7843-cell_listdir.patch\ntrac_7844-notebook_address.patch\ntrac_7847-empty_trash_ie_ff.patch\ntrac_7846-no_CODE_PY_symlinks.patch\ntrac_7650-sagenb_doctesting_v3.patch\ntrac_7786-template-jinja-idiomatic.4.patch\n```\n\n\n  !",
+    "body": "* Minor: Message at top of `main.sass` should also refer to the `readme.txt` (cf. `test_report.sass`.\n  * Just Se test 4050 fails with\n\n```\ntrac_7843-cell_listdir.patch\ntrac_7844-notebook_address.patch\ntrac_7847-empty_trash_ie_ff.patch\ntrac_7846-no_CODE_PY_symlinks.patch\ntrac_7650-sagenb_doctesting_v3.patch\ntrac_7786-template-jinja-idiomatic.4.patch\n```\n\n  !",
     "created_at": "2010-01-05T09:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -302,7 +302,6 @@ trac_7846-no_CODE_PY_symlinks.patch
 trac_7650-sagenb_doctesting_v3.patch
 trac_7786-template-jinja-idiomatic.4.patch
 ```
-
 
   !
 
@@ -523,7 +522,7 @@ New test options.  Should fix Se + doc tests.  Replaces previous.
 archive/issue_comments_067053.json:
 ```json
 {
-    "body": "V6 *might* help.  I've tested just FF 3.5.6 on Linux, so far.  Examples:\n\n```python\nimport sagenb.testing.run_tests as rt\n\n# Selenium.\nrt.setup_tests(environment='*firefox3 /usr/lib64/firefox-3.5.6/firefox')\nrt.run_any()\n\n# Selenium Grid.\nenvs = [\n    '*firefox',\n#    '*googlechrome',\n    '*iexplore',\n    '*opera',\n#    '*safari'\n    ]\n\nfor e in envs:\n    rt.setup_tests('192.168.50.99', False, e)\n    name = 'report_' + e.split()[0][1:] + '.html'\n    rt.run_any(make_report=True, report_filename=name)\n```\n\nFor other tickets:\n\n* Parallel testing.\n* Abstract away all `self.selenium` calls from `sagenb/tests/*`, i.e., put them all in a `notebook_test_case.SeleniumTestCase`.  Then we may be able to reuse `test_*` for pure `zope.testbrowser` tests --- \"just\" write a corresponding `notebook_test_case.ZTTestCase`.",
+    "body": "V6 *might* help.  I've tested just FF 3.5.6 on Linux, so far.  Examples:\n\n```python\nimport sagenb.testing.run_tests as rt\n\n# Selenium.\nrt.setup_tests(environment='*firefox3 /usr/lib64/firefox-3.5.6/firefox')\nrt.run_any()\n\n# Selenium Grid.\nenvs = [\n    '*firefox',\n#    '*googlechrome',\n    '*iexplore',\n    '*opera',\n#    '*safari'\n    ]\n\nfor e in envs:\n    rt.setup_tests('192.168.50.99', False, e)\n    name = 'report_' + e.split()[0][1:] + '.html'\n    rt.run_any(make_report=True, report_filename=name)\n```\nFor other tickets:\n\n* Parallel testing.\n* Abstract away all `self.selenium` calls from `sagenb/tests/*`, i.e., put them all in a `notebook_test_case.SeleniumTestCase`.  Then we may be able to reuse `test_*` for pure `zope.testbrowser` tests --- \"just\" write a corresponding `notebook_test_case.ZTTestCase`.",
     "created_at": "2010-01-06T15:38:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -555,7 +554,6 @@ for e in envs:
     name = 'report_' + e.split()[0][1:] + '.html'
     rt.run_any(make_report=True, report_filename=name)
 ```
-
 For other tickets:
 
 * Parallel testing.
@@ -662,7 +660,7 @@ Can we delete `twist.Reset_css`?
 archive/issue_comments_067059.json:
 ```json
 {
-    "body": "Replying to [comment:16 mpatel]:\n> Of course, please feel free to make changes!\n> \n> On the dependency graph:  Thanks!  Maybe we should include parts of the code (wrapped in a `try-except` block) in `template.py`?\n\nIt doesn't sound like it can be used by a non-developer, so I don't think it's worth including into the package. That's just my opinion though.",
+    "body": "Replying to [comment:16 mpatel]:\n> Of course, please feel free to make changes!\n> \n> On the dependency graph:  Thanks!  Maybe we should include parts of the code (wrapped in a `try-except` block) in `template.py`?\n\n\nIt doesn't sound like it can be used by a non-developer, so I don't think it's worth including into the package. That's just my opinion though.",
     "created_at": "2010-01-06T19:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -675,6 +673,7 @@ Replying to [comment:16 mpatel]:
 > Of course, please feel free to make changes!
 > 
 > On the dependency graph:  Thanks!  Maybe we should include parts of the code (wrapped in a `try-except` block) in `template.py`?
+
 
 It doesn't sound like it can be used by a non-developer, so I don't think it's worth including into the package. That's just my opinion though.
 
@@ -703,7 +702,7 @@ Should `NotebookSettingsPage.render` return a `HTMLResponse`, instead of a `Resp
 archive/issue_comments_067061.json:
 ```json
 {
-    "body": "Replying to [comment:19 mpatel]:\n> Can we delete `twist.Reset_css`?\n\nYes, we can.\n\n> Should NotebookSettingsPage.render return a HTMLResponse, instead of a Response? \n\nYes.\n\nBut I think this patch has way too many changes in it as is. The clean up on `twist.py` should probably be spun off to another ticket.",
+    "body": "Replying to [comment:19 mpatel]:\n> Can we delete `twist.Reset_css`?\n\n\nYes, we can.\n\n> Should NotebookSettingsPage.render return a HTMLResponse, instead of a Response? \n\n\nYes.\n\nBut I think this patch has way too many changes in it as is. The clean up on `twist.py` should probably be spun off to another ticket.",
     "created_at": "2010-01-06T19:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -715,9 +714,11 @@ archive/issue_comments_067061.json:
 Replying to [comment:19 mpatel]:
 > Can we delete `twist.Reset_css`?
 
+
 Yes, we can.
 
 > Should NotebookSettingsPage.render return a HTMLResponse, instead of a Response? 
+
 
 Yes.
 
@@ -730,7 +731,7 @@ But I think this patch has way too many changes in it as is. The clean up on `tw
 archive/issue_comments_067062.json:
 ```json
 {
-    "body": "Replying to [comment:22 timdumol]:\n> But I think this patch has way too many changes in it as is. The clean up on `twist.py` should probably be spun off to another ticket.\n\nSounds good.  I need to do this anyway for public / remote interacts.",
+    "body": "Replying to [comment:22 timdumol]:\n> But I think this patch has way too many changes in it as is. The clean up on `twist.py` should probably be spun off to another ticket.\n\n\nSounds good.  I need to do this anyway for public / remote interacts.",
     "created_at": "2010-01-06T19:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -741,6 +742,7 @@ archive/issue_comments_067062.json:
 
 Replying to [comment:22 timdumol]:
 > But I think this patch has way too many changes in it as is. The clean up on `twist.py` should probably be spun off to another ticket.
+
 
 Sounds good.  I need to do this anyway for public / remote interacts.
 
@@ -771,7 +773,7 @@ Further small fixes.  Replaces previous.
 archive/issue_comments_067064.json:
 ```json
 {
-    "body": "V8 should cover the problems above, except for deleting docbrowser cells, which is a known \"problem\" --- we don't save changes to these worksheets.  Anyway, to the extent it counts, my review is positive, except:\n\n* Is `_topbar.sass` missing?  When compiling, I see\n\n```\nSass::SyntaxError on line 29 of /.../sass/src/main.sass: File to import not found or unreadable: topbar.sass.\n```\n\n   If I comment out the ``@`import`, the generated `main.css` seems to be missing topbar directives.\n\nBy the way, I removed `template_error.html` and `base_popup.html`, since they don't appear to be used.  I also put `set div_wrap = true` in `cell.html` (when printing).  I apologize for going too far, in case I have.",
+    "body": "V8 should cover the problems above, except for deleting docbrowser cells, which is a known \"problem\" --- we don't save changes to these worksheets.  Anyway, to the extent it counts, my review is positive, except:\n\n* Is `_topbar.sass` missing?  When compiling, I see\n\n```\nSass::SyntaxError on line 29 of /.../sass/src/main.sass: File to import not found or unreadable: topbar.sass.\n```\n   If I comment out the ``@`import`, the generated `main.css` seems to be missing topbar directives.\n\nBy the way, I removed `template_error.html` and `base_popup.html`, since they don't appear to be used.  I also put `set div_wrap = true` in `cell.html` (when printing).  I apologize for going too far, in case I have.",
     "created_at": "2010-01-07T01:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -787,7 +789,6 @@ V8 should cover the problems above, except for deleting docbrowser cells, which 
 ```
 Sass::SyntaxError on line 29 of /.../sass/src/main.sass: File to import not found or unreadable: topbar.sass.
 ```
-
    If I comment out the ``@`import`, the generated `main.css` seems to be missing topbar directives.
 
 By the way, I removed `template_error.html` and `base_popup.html`, since they don't appear to be used.  I also put `set div_wrap = true` in `cell.html` (when printing).  I apologize for going too far, in case I have.
@@ -893,7 +894,7 @@ DOM ready / load event timing fixes.  Replaces previous.
 archive/issue_comments_067070.json:
 ```json
 {
-    "body": "In V10, I replaced `$(document).ready()` in a few places with either synchronous evaluation or `$(window).load()` (in particular, `$(document).load()` does not always work).  The main reason is timing --- the \"DOM ready\" event can fire too early for certain notebook initializations.  For example, evaluate\n\n```\nimport time\ntime.sleep(20)\nprint 'foo'\n```\n\nand reload the worksheet.  Published interacts are another, forthcoming example...\n\nI noticed that `Worksheet.html_cell_list` in V9\n\n* Referred to a non-existent template `published_worksheet.html`.\n* Is really no longer used.  The lone remaining call, in `twist.py` sends refreshed HTML that `notebook_lib.js` ignores.\n\nI've replaced the call with an empty string.  *However,* the main problem is that HTML for published worksheets is now no longer cached by the server.  Or am I mistaken?\n\nI'll try to fix this in V11...",
+    "body": "In V10, I replaced `$(document).ready()` in a few places with either synchronous evaluation or `$(window).load()` (in particular, `$(document).load()` does not always work).  The main reason is timing --- the \"DOM ready\" event can fire too early for certain notebook initializations.  For example, evaluate\n\n```\nimport time\ntime.sleep(20)\nprint 'foo'\n```\nand reload the worksheet.  Published interacts are another, forthcoming example...\n\nI noticed that `Worksheet.html_cell_list` in V9\n\n* Referred to a non-existent template `published_worksheet.html`.\n* Is really no longer used.  The lone remaining call, in `twist.py` sends refreshed HTML that `notebook_lib.js` ignores.\n\nI've replaced the call with an empty string.  *However,* the main problem is that HTML for published worksheets is now no longer cached by the server.  Or am I mistaken?\n\nI'll try to fix this in V11...",
     "created_at": "2010-01-08T16:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -909,7 +910,6 @@ import time
 time.sleep(20)
 print 'foo'
 ```
-
 and reload the worksheet.  Published interacts are another, forthcoming example...
 
 I noticed that `Worksheet.html_cell_list` in V9
@@ -1002,7 +1002,7 @@ Fix text cell typesetting.  Replaces previous.
 archive/issue_comments_067075.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by @qed777 created at 2010-01-08 22:11:45\n\nReplying to [comment:31 mpatel]:\n> If I save `$\\alpha$` in a text cell, then edit the cell again, I see `\u00cb` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.\nV12 should fix this.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by @qed777 created at 2010-01-08 22:11:45\n\nReplying to [comment:31 mpatel]:\n> If I save `$\\alpha$` in a text cell, then edit the cell again, I see `\u00cb` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.\n\nV12 should fix this.",
     "created_at": "2010-01-08T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -1015,6 +1015,7 @@ Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachme
 
 Replying to [comment:31 mpatel]:
 > If I save `$\alpha$` in a text cell, then edit the cell again, I see `Ë` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.
+
 V12 should fix this.
 
 
@@ -1024,7 +1025,7 @@ V12 should fix this.
 archive/issue_comments_067076.json:
 ```json
 {
-    "body": "I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\n\n```\nSphinx error:\n'utf8' codec can't decode bytes in position 746-749: invalid data\n```\n",
+    "body": "I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\n\n```\nSphinx error:\n'utf8' codec can't decode bytes in position 746-749: invalid data\n```",
     "created_at": "2010-01-09T00:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -1039,7 +1040,6 @@ I just noticed that Sphinx fails to build the reference manual.  The "problem" m
 Sphinx error:
 'utf8' codec can't decode bytes in position 746-749: invalid data
 ```
-
 
 
 
@@ -1066,7 +1066,7 @@ Fix HTML reference manual build.  Replaces previous.
 archive/issue_comments_067078.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by @qed777 created at 2010-01-09 02:55:25\n\nReplying to [comment:33 mpatel]:\n> I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\nV13 should fix this.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by @qed777 created at 2010-01-09 02:55:25\n\nReplying to [comment:33 mpatel]:\n> I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\n\nV13 should fix this.",
     "created_at": "2010-01-09T02:55:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -1079,6 +1079,7 @@ Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachme
 
 Replying to [comment:33 mpatel]:
 > I just noticed that Sphinx fails to build the reference manual.  The "problem" may be in `template.py`:
+
 V13 should fix this.
 
 
@@ -1106,7 +1107,7 @@ It seems the worksheet/cell layout is less compact than before.  It's probably e
 archive/issue_comments_067080.json:
 ```json
 {
-    "body": "Replying to [comment:35 mpatel]:\n> It seems the worksheet/cell layout is less compact than before.  It's probably easier to fix this at #7666.\nOr the same?  Anyway, possibilities for a completely different ticket:\n\n* Remove `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` from `td.cell_number` for cells with no output.\n* Put the green \"cell is running\" bar adjacent to the red \"cell is not evaluated\" line.  The latter is actually a border, but we could insert a fixed-width `div` element here.  We could make this a status-area for the whole cell (input + output), add a right-click menu (e.g., for select / insert / move / delete operations, etc.), an on-hover toolbar, etc.",
+    "body": "Replying to [comment:35 mpatel]:\n> It seems the worksheet/cell layout is less compact than before.  It's probably easier to fix this at #7666.\n\nOr the same?  Anyway, possibilities for a completely different ticket:\n\n* Remove `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` from `td.cell_number` for cells with no output.\n* Put the green \"cell is running\" bar adjacent to the red \"cell is not evaluated\" line.  The latter is actually a border, but we could insert a fixed-width `div` element here.  We could make this a status-area for the whole cell (input + output), add a right-click menu (e.g., for select / insert / move / delete operations, etc.), an on-hover toolbar, etc.",
     "created_at": "2010-01-09T23:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -1117,6 +1118,7 @@ archive/issue_comments_067080.json:
 
 Replying to [comment:35 mpatel]:
 > It seems the worksheet/cell layout is less compact than before.  It's probably easier to fix this at #7666.
+
 Or the same?  Anyway, possibilities for a completely different ticket:
 
 * Remove `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;` from `td.cell_number` for cells with no output.
@@ -1149,7 +1151,7 @@ Rebased on #7650 reviewer patch.
 archive/issue_comments_067082.json:
 ```json
 {
-    "body": "My patch series before up to this patch:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\n```\n",
+    "body": "My patch series before up to this patch:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\n```",
     "created_at": "2010-01-17T19:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
@@ -1160,7 +1162,6 @@ archive/issue_comments_067082.json:
 
 My patch series before up to this patch:
 
-
 ```
 trac_7650-sagenb_doctesting_v6.patch
 trac_7650-reviewer.patch
@@ -1169,7 +1170,6 @@ trac_7663-rstrip_prompt.patch
 trac_7847-empty-trash-no-referer.patch
 trac_7786-template-jinja-idiomatic.patch
 ```
-
 
 
 

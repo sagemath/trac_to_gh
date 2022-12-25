@@ -3,7 +3,7 @@
 archive/issues_003160.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\n+1 on making this change. It's very unusual for an is_ function to\nreturn anything but a bool :)\n- Hide quoted text -\n\nOn Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster@gmail.com> wrote:\n>\n>>  On the other hand, that Jerin was confused maybe strongly suggests\n>>  you might want to change the is_planar function to return True or\n>>  False, and have another function or a flag to get the nonplanar\n>>  subgroup.  In most of Sage foo.is_*() returns True or False, so maybe\n>>  is_planar() is confusing, especially from a readability point of view.\n>\n> I think I agree. The default behavior should be True/False, and an\n> option to return the present tuple should be available.\n>\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3160\n\n",
+    "body": "Assignee: @rlmill\n\n```\n+1 on making this change. It's very unusual for an is_ function to\nreturn anything but a bool :)\n- Hide quoted text -\n\nOn Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster@gmail.com> wrote:\n>\n>>  On the other hand, that Jerin was confused maybe strongly suggests\n>>  you might want to change the is_planar function to return True or\n>>  False, and have another function or a flag to get the nonplanar\n>>  subgroup.  In most of Sage foo.is_*() returns True or False, so maybe\n>>  is_planar() is confusing, especially from a readability point of view.\n>\n> I think I agree. The default behavior should be True/False, and an\n> option to return the present tuple should be available.\n>\n>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3160\n\n",
     "created_at": "2008-05-11T19:00:51Z",
     "labels": [
         "component: graph theory",
@@ -17,7 +17,6 @@ archive/issues_003160.json:
 }
 ```
 Assignee: @rlmill
-
 
 ```
 +1 on making this change. It's very unusual for an is_ function to
@@ -37,7 +36,6 @@ On Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster@gmail.com> wrote:
 >
 >
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3160
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7939
 archive/issue_comments_069110.json:
 ```json
 {
-    "body": "Note that just about every time I run all tests I get the following:\n\n\n```\nsage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\n\nAlthough, I never get this error when just running `sage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py`.",
+    "body": "Note that just about every time I run all tests I get the following:\n\n```\nsage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nAlthough, I never get this error when just running `sage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py`.",
     "created_at": "2010-01-18T19:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -44,14 +44,12 @@ archive/issue_comments_069110.json:
 
 Note that just about every time I run all tests I get the following:
 
-
 ```
 sage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 *** *** Error: TIMED OUT! *** ***
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 
 Although, I never get this error when just running `sage -t  ./sage/rings/polynomial/multi_polynomial_ideal.py`.
 
@@ -98,7 +96,7 @@ Changing component from algebra to doctest.
 archive/issue_comments_069113.json:
 ```json
 {
-    "body": "Robert wrote:\n> In running parallel doctests, I'm noticing that\n> multi_polynomial_ideal.py is taking a very long time. Often, I get\n> some sort of weird time out error (with the corresponding mysterious\n> error/segfault message) when doing parallel testing, but I never get\n> this error when it is testing alone. Also, when running tests, and\n> looking at top, I notice that neither the python process or the\n> Singular process ever goes above about 10% (or at least spends most of\n> its time down around 0%-1%). Any ideas what is going on?\n\nI am afraid I cannot contribute much. One relevant pointer could be that we are shuffling a lot of data between Singular and Sage, potentially via temporary files, this could explain why no process ever gets over 10%?",
+    "body": "Robert wrote:\n> In running parallel doctests, I'm noticing that\n> multi_polynomial_ideal.py is taking a very long time. Often, I get\n> some sort of weird time out error (with the corresponding mysterious\n> error/segfault message) when doing parallel testing, but I never get\n> this error when it is testing alone. Also, when running tests, and\n> looking at top, I notice that neither the python process or the\n> Singular process ever goes above about 10% (or at least spends most of\n> its time down around 0%-1%). Any ideas what is going on?\n\n\nI am afraid I cannot contribute much. One relevant pointer could be that we are shuffling a lot of data between Singular and Sage, potentially via temporary files, this could explain why no process ever gets over 10%?",
     "created_at": "2010-01-18T20:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -117,6 +115,7 @@ Robert wrote:
 > Singular process ever goes above about 10% (or at least spends most of
 > its time down around 0%-1%). Any ideas what is going on?
 
+
 I am afraid I cannot contribute much. One relevant pointer could be that we are shuffling a lot of data between Singular and Sage, potentially via temporary files, this could explain why no process ever gets over 10%?
 
 
@@ -126,7 +125,7 @@ I am afraid I cannot contribute much. One relevant pointer could be that we are 
 archive/issue_comments_069114.json:
 ```json
 {
-    "body": "I decided to take another look. In the attached patch I move most of the functions in `multi_polynomial_ideal.py` to the new libsingular functions interface which does not need pexpect or IPC in general. \n\nOn my Macbook Pro vanilla Sage 4.3 takes roughly **48** seconds to doctest `multi_polynomial_ideal.py`. With the attached patch applied it takes **26** seconds. I'd expect bigger improvements on machines with slow I/O (e.g. disks).\n\nAs a side-effect, a lot of the ideal operations are considerably (100x and such) faster now and the libsingular functions interface is more robust and handles more functions now.\n\nNote that I tried to be a bit smart about the creation of the libsingular functions. One can now do:\n\n\n```\nsage: primdecSYZ = sage.libs.singular.ff.primdec.primdecSYZ\n```\n\n\nwhich will load 'primdec.lib' first and then create a wrapper for `primdecSYZ` in that library. A referee should also register whether he/she likes or dislikes this interface.\n\nThe attached patch requires an updated SPKG which is available at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20100120.spkg\n\nI didn't mark any doctest `#long`, in fact, I added some doctests!",
+    "body": "I decided to take another look. In the attached patch I move most of the functions in `multi_polynomial_ideal.py` to the new libsingular functions interface which does not need pexpect or IPC in general. \n\nOn my Macbook Pro vanilla Sage 4.3 takes roughly **48** seconds to doctest `multi_polynomial_ideal.py`. With the attached patch applied it takes **26** seconds. I'd expect bigger improvements on machines with slow I/O (e.g. disks).\n\nAs a side-effect, a lot of the ideal operations are considerably (100x and such) faster now and the libsingular functions interface is more robust and handles more functions now.\n\nNote that I tried to be a bit smart about the creation of the libsingular functions. One can now do:\n\n```\nsage: primdecSYZ = sage.libs.singular.ff.primdec.primdecSYZ\n```\n\nwhich will load 'primdec.lib' first and then create a wrapper for `primdecSYZ` in that library. A referee should also register whether he/she likes or dislikes this interface.\n\nThe attached patch requires an updated SPKG which is available at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20100120.spkg\n\nI didn't mark any doctest `#long`, in fact, I added some doctests!",
     "created_at": "2010-01-20T17:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -143,11 +142,9 @@ As a side-effect, a lot of the ideal operations are considerably (100x and such)
 
 Note that I tried to be a bit smart about the creation of the libsingular functions. One can now do:
 
-
 ```
 sage: primdecSYZ = sage.libs.singular.ff.primdec.primdecSYZ
 ```
-
 
 which will load 'primdec.lib' first and then create a wrapper for `primdecSYZ` in that library. A referee should also register whether he/she likes or dislikes this interface.
 
@@ -200,7 +197,7 @@ Changing component from doctest to interfaces.
 archive/issue_comments_069117.json:
 ```json
 {
-    "body": "**sage.math:** \n* vanilla:\n\n```\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [360.3 s]\n```\n\n\n* patch: **105** seconds",
+    "body": "**sage.math:** \n* vanilla:\n\n```\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [360.3 s]\n```\n\n* patch: **105** seconds",
     "created_at": "2010-01-20T18:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -218,7 +215,6 @@ archive/issue_comments_069117.json:
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
          [360.3 s]
 ```
-
 
 * patch: **105** seconds
 
@@ -267,7 +263,7 @@ This is great stuff!  I'll try to look at it as soon as I get the released 4.3.1
 archive/issue_comments_069120.json:
 ```json
 {
-    "body": "Some details on how much faster single functions got:\n\n**vanilla**\n\n```python\nsage: P = PolynomialRing(GF(127),5,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: %time _ = I.triangular_decomposition()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 4.83 s\n\nsage: %timeit I.basis_is_groebner(); I.basis_is_groebner.clear_cache()\n10 loops, best of 3: 520 ms per loop\n\nsage: I = Ideal([P.random_element() for _ in range(P.ngens())])\nsage: %time _ = I.variety()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 4.25 s\n```\n\n\n**patch**\n\n```python\nsage: P = PolynomialRing(GF(127),5,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: %time _ = I.triangular_decomposition()\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.64 s\n\nsage: %timeit I.basis_is_groebner(); I.basis_is_groebner.clear_cache()\n1000 loops, best of 3: 1.98 ms per loop\n\nsage: I = Ideal([P.random_element() for _ in range(P.ngens())])\nsage: %time _ = I.variety()\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.64 s\n```\n\n\nAll timings on sage.math.",
+    "body": "Some details on how much faster single functions got:\n\n**vanilla**\n\n```python\nsage: P = PolynomialRing(GF(127),5,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: %time _ = I.triangular_decomposition()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 4.83 s\n\nsage: %timeit I.basis_is_groebner(); I.basis_is_groebner.clear_cache()\n10 loops, best of 3: 520 ms per loop\n\nsage: I = Ideal([P.random_element() for _ in range(P.ngens())])\nsage: %time _ = I.variety()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 4.25 s\n```\n\n**patch**\n\n```python\nsage: P = PolynomialRing(GF(127),5,'x')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: %time _ = I.triangular_decomposition()\nCPU times: user 0.05 s, sys: 0.00 s, total: 0.05 s\nWall time: 0.64 s\n\nsage: %timeit I.basis_is_groebner(); I.basis_is_groebner.clear_cache()\n1000 loops, best of 3: 1.98 ms per loop\n\nsage: I = Ideal([P.random_element() for _ in range(P.ngens())])\nsage: %time _ = I.variety()\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.64 s\n```\n\nAll timings on sage.math.",
     "created_at": "2010-01-20T23:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -296,7 +292,6 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 Wall time: 4.25 s
 ```
 
-
 **patch**
 
 ```python
@@ -315,7 +310,6 @@ CPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s
 Wall time: 0.64 s
 ```
 
-
 All timings on sage.math.
 
 
@@ -325,7 +319,7 @@ All timings on sage.math.
 archive/issue_comments_069121.json:
 ```json
 {
-    "body": "Hi!\nI did not try it.\nBut I am pleased about the refactorizations of the function interface:\nappend_... returns leftv.\nRegarding the passing of the attributes: \nI had something like that in mind. This is exactly, what is needed.\n\nRegarding the option handling. Maybe we should use Pythons with statement:\n\n```\nwith new_options:\n    ...\n```\n\n\nHere an example from PolyBoRi with rings instead of options\n\n```\n...\ndef __enter__(self):\n       old_ring=Ring()\n       class ContextGuard(object):\n           def __exit__(self, type, value, traceback):\n               old_ring.set()\n               return False\n       return ContextGuard()\n\n```\n\n\nBut this would affect the whole interface of the option class (not immediately setting options in singular...)\nSo, this is just a naive thought...\n\nCheers,\nMichael",
+    "body": "Hi!\nI did not try it.\nBut I am pleased about the refactorizations of the function interface:\nappend_... returns leftv.\nRegarding the passing of the attributes: \nI had something like that in mind. This is exactly, what is needed.\n\nRegarding the option handling. Maybe we should use Pythons with statement:\n\n```\nwith new_options:\n    ...\n```\n\nHere an example from PolyBoRi with rings instead of options\n\n```\n...\ndef __enter__(self):\n       old_ring=Ring()\n       class ContextGuard(object):\n           def __exit__(self, type, value, traceback):\n               old_ring.set()\n               return False\n       return ContextGuard()\n\n```\n\nBut this would affect the whole interface of the option class (not immediately setting options in singular...)\nSo, this is just a naive thought...\n\nCheers,\nMichael",
     "created_at": "2010-01-21T11:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -348,7 +342,6 @@ with new_options:
     ...
 ```
 
-
 Here an example from PolyBoRi with rings instead of options
 
 ```
@@ -363,7 +356,6 @@ def __enter__(self):
 
 ```
 
-
 But this would affect the whole interface of the option class (not immediately setting options in singular...)
 So, this is just a naive thought...
 
@@ -377,7 +369,7 @@ Michael
 archive/issue_comments_069122.json:
 ```json
 {
-    "body": "Passes tests for me.\n\nI tried to play with this a little bit, which lead to some questions:\n\n1. Is there any way to get tab-completion to work in this situation:\n\n\n```\nsage: groebner = sage.libs.singular.ff.gro<TAB>  ? cannot open `__members__.lib`\n   ? cannot open `__methods__.lib`\n   ? cannot open `trait_names.lib`\n   ? cannot open `_getAttributeNames.lib`\n```\n\n\n(If yes, maybe this should be a new ticket.)\n\n2. After I got over my laziness, I typed in the whole thing:\n\n\n```\nsage: groebner = sage.libs.singular.ff.groebner\nsage: P.<x, y> = QQ[]\nsage: I = P.ideal(x^2-y, x+y)\nsage: groebner(I)\n   ? error occurred in standard.lib::groebner line 850: `parameter def i_par; parameter  list #;  `\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\nsage: groebner(I, ring=P)\n   skipping text from `parameter` error at token `;`\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\nsage: from sage.libs.singular.function import SingularLibraryFunction\nsage: f = SingularLibraryFunction(\"groebner\")\nsage: f(I)\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\n```\n\n\nIs this a bug?  Or am I doing something silly?  If it's the latter, it would be good if there were an easy way for me to get help from the documentation.  I tried groebner? and groebner?? (which give very different results) but I couldn't get an answer quickly.\n\n\nSo I feel a little clueless at the moment.  I'm hoping your answers will help me out, and I'll look at this again.\n\n(I still think it's terrific stuff, though!)",
+    "body": "Passes tests for me.\n\nI tried to play with this a little bit, which lead to some questions:\n\n1. Is there any way to get tab-completion to work in this situation:\n\n```\nsage: groebner = sage.libs.singular.ff.gro<TAB>  ? cannot open `__members__.lib`\n   ? cannot open `__methods__.lib`\n   ? cannot open `trait_names.lib`\n   ? cannot open `_getAttributeNames.lib`\n```\n\n(If yes, maybe this should be a new ticket.)\n\n2. After I got over my laziness, I typed in the whole thing:\n\n```\nsage: groebner = sage.libs.singular.ff.groebner\nsage: P.<x, y> = QQ[]\nsage: I = P.ideal(x^2-y, x+y)\nsage: groebner(I)\n   ? error occurred in standard.lib::groebner line 850: `parameter def i_par; parameter  list #;  `\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\nsage: groebner(I, ring=P)\n   skipping text from `parameter` error at token `;`\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\nsage: from sage.libs.singular.function import SingularLibraryFunction\nsage: f = SingularLibraryFunction(\"groebner\")\nsage: f(I)\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/home/ghitza/<ipython console> in <module>()\n\nSystemError: NULL result without error in PyObject_Call\n```\n\nIs this a bug?  Or am I doing something silly?  If it's the latter, it would be good if there were an easy way for me to get help from the documentation.  I tried groebner? and groebner?? (which give very different results) but I couldn't get an answer quickly.\n\n\nSo I feel a little clueless at the moment.  I'm hoping your answers will help me out, and I'll look at this again.\n\n(I still think it's terrific stuff, though!)",
     "created_at": "2010-01-21T12:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -392,7 +384,6 @@ I tried to play with this a little bit, which lead to some questions:
 
 1. Is there any way to get tab-completion to work in this situation:
 
-
 ```
 sage: groebner = sage.libs.singular.ff.gro<TAB>  ? cannot open `__members__.lib`
    ? cannot open `__methods__.lib`
@@ -400,11 +391,9 @@ sage: groebner = sage.libs.singular.ff.gro<TAB>  ? cannot open `__members__.lib`
    ? cannot open `_getAttributeNames.lib`
 ```
 
-
 (If yes, maybe this should be a new ticket.)
 
 2. After I got over my laziness, I typed in the whole thing:
-
 
 ```
 sage: groebner = sage.libs.singular.ff.groebner
@@ -436,7 +425,6 @@ SystemError                               Traceback (most recent call last)
 
 SystemError: NULL result without error in PyObject_Call
 ```
-
 
 Is this a bug?  Or am I doing something silly?  If it's the latter, it would be good if there were an easy way for me to get help from the documentation.  I tried groebner? and groebner?? (which give very different results) but I couldn't get an answer quickly.
 
@@ -470,7 +458,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_069124.json:
 ```json
 {
-    "body": "Replying to [comment:11 AlexGhitza]:\n> 1. Is there any way to get tab-completion to work in this situation:\n\nYes, that should be possible since `ff` is just an object (so it only needs trait names or however this function is called).\n\nDo you like the name \"ff\" by the way (function factory)? It should be short but precise. \"factory\" is out, because there is a module in Singular called factory (for factorisation).\n \n> 2. After I got over my laziness, I typed in the whole thing:\n> \n> {{{\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = QQ[]\n> sage: I = P.ideal(x^2-y, x+y)\n> sage: groebner(I)\n> }}}\n\nWorks for me, I just tried it.\n \n> I tried groebner? and groebner?? (which give very different results) but I couldn't get an \nanswer quickly.\n\n`groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.\n\n> (I still think it's terrific stuff, though!)",
+    "body": "Replying to [comment:11 AlexGhitza]:\n> 1. Is there any way to get tab-completion to work in this situation:\n\n\nYes, that should be possible since `ff` is just an object (so it only needs trait names or however this function is called).\n\nDo you like the name \"ff\" by the way (function factory)? It should be short but precise. \"factory\" is out, because there is a module in Singular called factory (for factorisation).\n \n> 2. After I got over my laziness, I typed in the whole thing:\n> \n> \n> ```\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = QQ[]\n> sage: I = P.ideal(x^2-y, x+y)\n> sage: groebner(I)\n> ```\n\n\nWorks for me, I just tried it.\n \n> I tried groebner? and groebner?? (which give very different results) but I couldn't get an \n\nanswer quickly.\n\n`groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.\n\n> (I still think it's terrific stuff, though!)",
     "created_at": "2010-01-21T12:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -482,22 +470,26 @@ archive/issue_comments_069124.json:
 Replying to [comment:11 AlexGhitza]:
 > 1. Is there any way to get tab-completion to work in this situation:
 
+
 Yes, that should be possible since `ff` is just an object (so it only needs trait names or however this function is called).
 
 Do you like the name "ff" by the way (function factory)? It should be short but precise. "factory" is out, because there is a module in Singular called factory (for factorisation).
  
 > 2. After I got over my laziness, I typed in the whole thing:
 > 
-> {{{
+> 
+> ```
 > sage: groebner = sage.libs.singular.ff.groebner
 > sage: P.<x, y> = QQ[]
 > sage: I = P.ideal(x^2-y, x+y)
 > sage: groebner(I)
-> }}}
+> ```
+
 
 Works for me, I just tried it.
  
 > I tried groebner? and groebner?? (which give very different results) but I couldn't get an 
+
 answer quickly.
 
 `groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.
@@ -511,7 +503,7 @@ answer quickly.
 archive/issue_comments_069125.json:
 ```json
 {
-    "body": "Replying to [comment:10 PolyBoRi]:\n> Regarding the passing of the attributes: \n> I had something like that in mind. This is exactly, what is needed.\n\nActually, the interface should be: ` {obj:{'isSB':1}} ` because right now we don't support e.g. \"rank\" which takes an integer. I should probably change that before this patch goes in.\n \n> Regarding the option handling. Maybe we should use Pythons with statement:\n> {{{\n> with new_options:\n>     ...\n> }}}\n> But this would affect the whole interface of the option class (not immediately setting options in singular...)\n\nWe do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?\n\n\n```\nsage: opt = sage.libs.options.libsingular_options()\nsage: opt['redTail'] = True\nsage: with opt:\n...     blah?\n```\n\n\nMhh, does Cython support this yet?",
+    "body": "Replying to [comment:10 PolyBoRi]:\n> Regarding the passing of the attributes: \n> I had something like that in mind. This is exactly, what is needed.\n\n\nActually, the interface should be: ` {obj:{'isSB':1}} ` because right now we don't support e.g. \"rank\" which takes an integer. I should probably change that before this patch goes in.\n \n> Regarding the option handling. Maybe we should use Pythons with statement:\n> \n> ```\n> with new_options:\n>     ...\n> ```\n> But this would affect the whole interface of the option class (not immediately setting options in singular...)\n\n\nWe do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?\n\n```\nsage: opt = sage.libs.options.libsingular_options()\nsage: opt['redTail'] = True\nsage: with opt:\n...     blah?\n```\n\nMhh, does Cython support this yet?",
     "created_at": "2010-01-21T12:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -524,17 +516,19 @@ Replying to [comment:10 PolyBoRi]:
 > Regarding the passing of the attributes: 
 > I had something like that in mind. This is exactly, what is needed.
 
+
 Actually, the interface should be: ` {obj:{'isSB':1}} ` because right now we don't support e.g. "rank" which takes an integer. I should probably change that before this patch goes in.
  
 > Regarding the option handling. Maybe we should use Pythons with statement:
-> {{{
+> 
+> ```
 > with new_options:
 >     ...
-> }}}
+> ```
 > But this would affect the whole interface of the option class (not immediately setting options in singular...)
 
-We do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?
 
+We do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?
 
 ```
 sage: opt = sage.libs.options.libsingular_options()
@@ -542,7 +536,6 @@ sage: opt['redTail'] = True
 sage: with opt:
 ...     blah?
 ```
-
 
 Mhh, does Cython support this yet?
 
@@ -553,7 +546,7 @@ Mhh, does Cython support this yet?
 archive/issue_comments_069126.json:
 ```json
 {
-    "body": "> We do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?\n> \n> {{{\n> sage: opt = sage.libs.options.libsingular_options()\n> sage: opt['redTail'] = True\n> sage: with opt:\n> ...     blah?\n> }}}\n> \n\nThat would awesome and exception safe.\n\n> Mhh, does Cython support this yet?\n\nGood question.\n\nCheers,\nMichael",
+    "body": "> We do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?\n> \n> \n> ```\n> sage: opt = sage.libs.options.libsingular_options()\n> sage: opt['redTail'] = True\n> sage: with opt:\n> ...     blah?\n> ```\n> \n\n\nThat would awesome and exception safe.\n\n> Mhh, does Cython support this yet?\n\n\nGood question.\n\nCheers,\nMichael",
     "created_at": "2010-01-21T12:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -564,17 +557,20 @@ archive/issue_comments_069126.json:
 
 > We do that for the `redSB` context, so you can enforce reduced GBs within a context. So an example session could be?
 > 
-> {{{
+> 
+> ```
 > sage: opt = sage.libs.options.libsingular_options()
 > sage: opt['redTail'] = True
 > sage: with opt:
 > ...     blah?
-> }}}
+> ```
 > 
+
 
 That would awesome and exception safe.
 
 > Mhh, does Cython support this yet?
+
 
 Good question.
 
@@ -588,7 +584,7 @@ Michael
 archive/issue_comments_069127.json:
 ```json
 {
-    "body": "Replying to [comment:12 malb]:\n> Do you like the name \"ff\" by the way (function factory)? It should be short but precise. \"factory\" is out, because there is a module in Singular called factory (for factorisation).\n\nWell, the other possibility that springs to mind is \"funfact\" :)  Seriously, I think \"ff\" is fine.\n\n> \n> Works for me, I just tried it.\n\nAnd now it also works for me.  I restarted sage and tried it again and it seems fine.  I'm not sure what triggered it before.  I'll let you know if I happen to run into it again.\n\n>  \n> > I tried groebner? and groebner?? (which give very different results) but I couldn't get an \n> answer quickly.\n> \n> `groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.\n\nHere is what I get when I do these two:\n\nWith `groebner?` I get the Singular help followed by\n\n\n```\nCall def:       groebner(self, *args, ring=None, interruptible=True, attributes=None)\n\nCall docstring:\n    \n            Call this function with the provided arguments ``args`` in the\n            ring ``R``.\n    \n            INPUT:\n    \n            - ``args`` - a list of arguments\n    \n            - ``ring`` - a multivariate polynomial ring\n    \n            - ``interruptible`` - if ``True`` pressing Ctrl-C during the\n                                  execution of this function will\n                                  interrupt the computation (default: ``True``)\n    \n            - ``attributes`` - a dictionary of optional Singular\n                               attributes assigned to Singular objects (default: ``None``)\n    \n            EXAMPLE::\n    \n                sage: from sage.libs.singular.function import singular_function\n                sage: size = singular_function('size')\n                sage: P.<a,b,c> = PolynomialRing(QQ)\n                sage: size(a, ring=P)\n                1\n                sage: size(2r,ring=P)\n                1\n                sage: size(2, ring=P)\n                1\n                sage: size(2)\n                Traceback (most recent call last):\n                ...\n                ValueError: Could not detect ring.   \n                sage: size(Ideal([a*b + c, a + 1]), ring=P)\n                2\n                sage: size(Ideal([a*b + c, a + 1]))\n                2\n                sage: size(1,2, ring=P)\n                Traceback (most recent call last):                                          \n                ...\n                RuntimeError\n    \n                sage: size('foobar', ring=P)\n                6\n    \n            Show the usage of the optional ``attributes`` parameter::\n    \n                sage: P.<x,y,z> = PolynomialRing(QQ)\n                sage: I = Ideal([x^3*y^2 + 3*x^2*y^2*z + y^3*z^2 + z^5])\n                sage: I = Ideal(I.groebner_basis())\n                sage: hilb = sage.libs.singular.ff.hilb\n                sage: hilb(I) # Singular will print // ** _ is no standard basis\n    \n            So we tell Singular that ``I`` is indeed a Groebner basis::\n    \n                sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular\n```\n\n\nIf I do `groebner??` I get\n\n\n```\nType:           SingularLibraryFunction\nBase Class:     <type 'sage.libs.singular.function.SingularLibraryFunction'>\nString Form:    groebner (singular function)\nNamespace:      Interactive\nFile:           /home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nDefinition:     groebner(self, *args, ring=None, interruptible=True, attributes=None)\nSource:\ncdef class SingularLibraryFunction(SingularFunction):\n    \"\"\"\n    EXAMPLES::\n\n        sage: from sage.libs.singular.function import SingularLibraryFunction\n        sage: R.<x,y> = PolynomialRing(QQ, order='lex')\n        sage: I = R.ideal(x, x+1)\n        sage: f = SingularLibraryFunction(\"groebner\")\n        sage: f(I)\n        [1]\n    \"\"\"\n    def __init__(self, name):\n        \"\"\"\n        Construct a new Singular kernel function.\n\n        EXAMPLES::\n\n            sage: from sage.libs.singular.function import SingularLibraryFunction\n            sage: R.<x,y> = PolynomialRing(QQ, order='lex')\n            sage: I = R.ideal(x + 1, x*y + 1)\n            sage: f = SingularLibraryFunction(\"groebner\")\n            sage: f(I)\n            [y - 1, x + 1]\n        \"\"\"\n        super(SingularLibraryFunction,self).__init__(name)\n        self.call_handler = self.get_call_handler()\n\n    cdef BaseCallHandler get_call_handler(self):\n        cdef idhdl* singular_idhdl = ggetid(self._name, 0)\n        if singular_idhdl==NULL:\n            raise NameError(\"Function '%s' is not defined.\"%self._name)\n        if singular_idhdl.typ!=PROC_CMD:\n            raise ValueError(\"Not a procedure\")\n\n        cdef LibraryCallHandler res = LibraryCallHandler()\n        res.proc_idhdl = singular_idhdl\n        return res\n\n    cdef bint function_exists(self):\n        cdef idhdl* singular_idhdl = ggetid(self._name, 0)\n        return singular_idhdl!=NULLCall def:    groebner(self, *args, ring=None, interruptible=True, attributes=None)\n\nCall docstring:\n    \n            Call this function with the provided arguments ``args`` in the\n            ring ``R``.\n    \n            INPUT:\n    \n            - ``args`` - a list of arguments\n    \n            - ``ring`` - a multivariate polynomial ring\n    \n            - ``interruptible`` - if ``True`` pressing Ctrl-C during the\n                                  execution of this function will\n                                  interrupt the computation (default: ``True``)\n    \n            - ``attributes`` - a dictionary of optional Singular\n                               attributes assigned to Singular objects (default: ``None``)\n    \n            EXAMPLE::\n    \n                sage: from sage.libs.singular.function import singular_function\n                sage: size = singular_function('size')\n                sage: P.<a,b,c> = PolynomialRing(QQ)\n                sage: size(a, ring=P)\n                1\n                sage: size(2r,ring=P)\n                1\n                sage: size(2, ring=P)\n                1\n                sage: size(2)\n                Traceback (most recent call last):\n                ...\n                ValueError: Could not detect ring.   \n                sage: size(Ideal([a*b + c, a + 1]), ring=P)\n                2\n                sage: size(Ideal([a*b + c, a + 1]))\n                2\n                sage: size(1,2, ring=P)\n                Traceback (most recent call last):                                          \n                ...\n                RuntimeError\n    \n                sage: size('foobar', ring=P)\n                6\n    \n            Show the usage of the optional ``attributes`` parameter::\n    \n                sage: P.<x,y,z> = PolynomialRing(QQ)\n                sage: I = Ideal([x^3*y^2 + 3*x^2*y^2*z + y^3*z^2 + z^5])\n                sage: I = Ideal(I.groebner_basis())\n                sage: hilb = sage.libs.singular.ff.hilb\n                sage: hilb(I) # Singular will print // ** _ is no standard basis\n    \n            So we tell Singular that ``I`` is indeed a Groebner basis::\n    \n                sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular\n```\n\n\n(Sorry these are a bit long.)  But it looks like the first includes part, but not all, of the second.\n\nWhat would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n\n\n```\nsage: groebner = sage.libs.singular.ff.groebner\nsage: P.<x, y> = PolynomialRing(QQ)\nsage: I = P.ideal(x^2-y, y+x)\nsage: groebner(I)\n[x + y, y^2 - y]\n```\n\n\nand maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n\nIf that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.",
+    "body": "Replying to [comment:12 malb]:\n> Do you like the name \"ff\" by the way (function factory)? It should be short but precise. \"factory\" is out, because there is a module in Singular called factory (for factorisation).\n\n\nWell, the other possibility that springs to mind is \"funfact\" :)  Seriously, I think \"ff\" is fine.\n\n> \n> Works for me, I just tried it.\n\n\nAnd now it also works for me.  I restarted sage and tried it again and it seems fine.  I'm not sure what triggered it before.  I'll let you know if I happen to run into it again.\n\n>  \n\n> > I tried groebner? and groebner?? (which give very different results) but I couldn't get an \n> answer quickly.\n> \n> `groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.\n\n\nHere is what I get when I do these two:\n\nWith `groebner?` I get the Singular help followed by\n\n```\nCall def:       groebner(self, *args, ring=None, interruptible=True, attributes=None)\n\nCall docstring:\n    \n            Call this function with the provided arguments ``args`` in the\n            ring ``R``.\n    \n            INPUT:\n    \n            - ``args`` - a list of arguments\n    \n            - ``ring`` - a multivariate polynomial ring\n    \n            - ``interruptible`` - if ``True`` pressing Ctrl-C during the\n                                  execution of this function will\n                                  interrupt the computation (default: ``True``)\n    \n            - ``attributes`` - a dictionary of optional Singular\n                               attributes assigned to Singular objects (default: ``None``)\n    \n            EXAMPLE::\n    \n                sage: from sage.libs.singular.function import singular_function\n                sage: size = singular_function('size')\n                sage: P.<a,b,c> = PolynomialRing(QQ)\n                sage: size(a, ring=P)\n                1\n                sage: size(2r,ring=P)\n                1\n                sage: size(2, ring=P)\n                1\n                sage: size(2)\n                Traceback (most recent call last):\n                ...\n                ValueError: Could not detect ring.   \n                sage: size(Ideal([a*b + c, a + 1]), ring=P)\n                2\n                sage: size(Ideal([a*b + c, a + 1]))\n                2\n                sage: size(1,2, ring=P)\n                Traceback (most recent call last):                                          \n                ...\n                RuntimeError\n    \n                sage: size('foobar', ring=P)\n                6\n    \n            Show the usage of the optional ``attributes`` parameter::\n    \n                sage: P.<x,y,z> = PolynomialRing(QQ)\n                sage: I = Ideal([x^3*y^2 + 3*x^2*y^2*z + y^3*z^2 + z^5])\n                sage: I = Ideal(I.groebner_basis())\n                sage: hilb = sage.libs.singular.ff.hilb\n                sage: hilb(I) # Singular will print // ** _ is no standard basis\n    \n            So we tell Singular that ``I`` is indeed a Groebner basis::\n    \n                sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular\n```\n\nIf I do `groebner??` I get\n\n```\nType:           SingularLibraryFunction\nBase Class:     <type 'sage.libs.singular.function.SingularLibraryFunction'>\nString Form:    groebner (singular function)\nNamespace:      Interactive\nFile:           /home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nDefinition:     groebner(self, *args, ring=None, interruptible=True, attributes=None)\nSource:\ncdef class SingularLibraryFunction(SingularFunction):\n    \"\"\"\n    EXAMPLES::\n\n        sage: from sage.libs.singular.function import SingularLibraryFunction\n        sage: R.<x,y> = PolynomialRing(QQ, order='lex')\n        sage: I = R.ideal(x, x+1)\n        sage: f = SingularLibraryFunction(\"groebner\")\n        sage: f(I)\n        [1]\n    \"\"\"\n    def __init__(self, name):\n        \"\"\"\n        Construct a new Singular kernel function.\n\n        EXAMPLES::\n\n            sage: from sage.libs.singular.function import SingularLibraryFunction\n            sage: R.<x,y> = PolynomialRing(QQ, order='lex')\n            sage: I = R.ideal(x + 1, x*y + 1)\n            sage: f = SingularLibraryFunction(\"groebner\")\n            sage: f(I)\n            [y - 1, x + 1]\n        \"\"\"\n        super(SingularLibraryFunction,self).__init__(name)\n        self.call_handler = self.get_call_handler()\n\n    cdef BaseCallHandler get_call_handler(self):\n        cdef idhdl* singular_idhdl = ggetid(self._name, 0)\n        if singular_idhdl==NULL:\n            raise NameError(\"Function '%s' is not defined.\"%self._name)\n        if singular_idhdl.typ!=PROC_CMD:\n            raise ValueError(\"Not a procedure\")\n\n        cdef LibraryCallHandler res = LibraryCallHandler()\n        res.proc_idhdl = singular_idhdl\n        return res\n\n    cdef bint function_exists(self):\n        cdef idhdl* singular_idhdl = ggetid(self._name, 0)\n        return singular_idhdl!=NULLCall def:    groebner(self, *args, ring=None, interruptible=True, attributes=None)\n\nCall docstring:\n    \n            Call this function with the provided arguments ``args`` in the\n            ring ``R``.\n    \n            INPUT:\n    \n            - ``args`` - a list of arguments\n    \n            - ``ring`` - a multivariate polynomial ring\n    \n            - ``interruptible`` - if ``True`` pressing Ctrl-C during the\n                                  execution of this function will\n                                  interrupt the computation (default: ``True``)\n    \n            - ``attributes`` - a dictionary of optional Singular\n                               attributes assigned to Singular objects (default: ``None``)\n    \n            EXAMPLE::\n    \n                sage: from sage.libs.singular.function import singular_function\n                sage: size = singular_function('size')\n                sage: P.<a,b,c> = PolynomialRing(QQ)\n                sage: size(a, ring=P)\n                1\n                sage: size(2r,ring=P)\n                1\n                sage: size(2, ring=P)\n                1\n                sage: size(2)\n                Traceback (most recent call last):\n                ...\n                ValueError: Could not detect ring.   \n                sage: size(Ideal([a*b + c, a + 1]), ring=P)\n                2\n                sage: size(Ideal([a*b + c, a + 1]))\n                2\n                sage: size(1,2, ring=P)\n                Traceback (most recent call last):                                          \n                ...\n                RuntimeError\n    \n                sage: size('foobar', ring=P)\n                6\n    \n            Show the usage of the optional ``attributes`` parameter::\n    \n                sage: P.<x,y,z> = PolynomialRing(QQ)\n                sage: I = Ideal([x^3*y^2 + 3*x^2*y^2*z + y^3*z^2 + z^5])\n                sage: I = Ideal(I.groebner_basis())\n                sage: hilb = sage.libs.singular.ff.hilb\n                sage: hilb(I) # Singular will print // ** _ is no standard basis\n    \n            So we tell Singular that ``I`` is indeed a Groebner basis::\n    \n                sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular\n```\n\n(Sorry these are a bit long.)  But it looks like the first includes part, but not all, of the second.\n\nWhat would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n\n```\nsage: groebner = sage.libs.singular.ff.groebner\nsage: P.<x, y> = PolynomialRing(QQ)\nsage: I = P.ideal(x^2-y, y+x)\nsage: groebner(I)\n[x + y, y^2 - y]\n```\n\nand maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n\nIf that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.",
     "created_at": "2010-01-21T12:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -600,23 +596,26 @@ archive/issue_comments_069127.json:
 Replying to [comment:12 malb]:
 > Do you like the name "ff" by the way (function factory)? It should be short but precise. "factory" is out, because there is a module in Singular called factory (for factorisation).
 
+
 Well, the other possibility that springs to mind is "funfact" :)  Seriously, I think "ff" is fine.
 
 > 
 > Works for me, I just tried it.
 
+
 And now it also works for me.  I restarted sage and tried it again and it seems fine.  I'm not sure what triggered it before.  I'll let you know if I happen to run into it again.
 
 >  
+
 > > I tried groebner? and groebner?? (which give very different results) but I couldn't get an 
 > answer quickly.
 > 
 > `groebner?` will show you the Singular help while `groebner??` will show you the generic Singular function interface docstring. Maybe we should merge them in `groebner?`? Let me know in what order, and I can implement it.
 
+
 Here is what I get when I do these two:
 
 With `groebner?` I get the Singular help followed by
-
 
 ```
 Call def:       groebner(self, *args, ring=None, interruptible=True, attributes=None)
@@ -679,9 +678,7 @@ Call docstring:
                 sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular
 ```
 
-
 If I do `groebner??` I get
-
 
 ```
 Type:           SingularLibraryFunction
@@ -791,11 +788,9 @@ Call docstring:
                 sage: hilb(I,attributes={I:('isSB',)}) # no complaint from Singular
 ```
 
-
 (Sorry these are a bit long.)  But it looks like the first includes part, but not all, of the second.
 
 What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example
-
 
 ```
 sage: groebner = sage.libs.singular.ff.groebner
@@ -804,7 +799,6 @@ sage: I = P.ideal(x^2-y, y+x)
 sage: groebner(I)
 [x + y, y^2 - y]
 ```
-
 
 and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.
 
@@ -817,7 +811,7 @@ If that's not possible, maybe have a docstring that shows how to use some of the
 archive/issue_comments_069128.json:
 ```json
 {
-    "body": "> What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n> \n> {{{\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = PolynomialRing(QQ)\n> sage: I = P.ideal(x^2-y, y+x)\n> sage: groebner(I)\n> [x + y, y^2 - y]\n> }}}\n> \n> and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n> \n> If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.\n\nIMHO Sage specific documentation belongs in the layer around this generic Singular interface.\nYou can construct singular functions add wrap them in Sage functions/methods of Sage classes...\nThis means having orthogonality: The LibSingularFunction is responsible for calling Singular and gives Singulars original docs.\nIn the wrapper around you can do the Sage specific stuff, which includes documentation, but also making the interface more Pythonic.\nE.g. for groebner you might like to introduce keyword args.\n\n\n```\nSingular:\ngroebner(i,\"par2var\",\"slimgb\");\n\n```\n\n\n```\nPythonic:\ngroebner(i,algorithms=[\"slimgb\", \"std\"])\n```\n\nBut that would be the responsible of another layer;-).",
+    "body": "> What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n> \n> \n> ```\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = PolynomialRing(QQ)\n> sage: I = P.ideal(x^2-y, y+x)\n> sage: groebner(I)\n> [x + y, y^2 - y]\n> ```\n> \n> and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n> \n> If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.\n\n\nIMHO Sage specific documentation belongs in the layer around this generic Singular interface.\nYou can construct singular functions add wrap them in Sage functions/methods of Sage classes...\nThis means having orthogonality: The LibSingularFunction is responsible for calling Singular and gives Singulars original docs.\nIn the wrapper around you can do the Sage specific stuff, which includes documentation, but also making the interface more Pythonic.\nE.g. for groebner you might like to introduce keyword args.\n\n```\nSingular:\ngroebner(i,\"par2var\",\"slimgb\");\n\n```\n\n```\nPythonic:\ngroebner(i,algorithms=[\"slimgb\", \"std\"])\n```\nBut that would be the responsible of another layer;-).",
     "created_at": "2010-01-21T13:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -828,17 +822,19 @@ archive/issue_comments_069128.json:
 
 > What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example
 > 
-> {{{
+> 
+> ```
 > sage: groebner = sage.libs.singular.ff.groebner
 > sage: P.<x, y> = PolynomialRing(QQ)
 > sage: I = P.ideal(x^2-y, y+x)
 > sage: groebner(I)
 > [x + y, y^2 - y]
-> }}}
+> ```
 > 
 > and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.
 > 
 > If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.
+
 
 IMHO Sage specific documentation belongs in the layer around this generic Singular interface.
 You can construct singular functions add wrap them in Sage functions/methods of Sage classes...
@@ -846,19 +842,16 @@ This means having orthogonality: The LibSingularFunction is responsible for call
 In the wrapper around you can do the Sage specific stuff, which includes documentation, but also making the interface more Pythonic.
 E.g. for groebner you might like to introduce keyword args.
 
-
 ```
 Singular:
 groebner(i,"par2var","slimgb");
 
 ```
 
-
 ```
 Pythonic:
 groebner(i,algorithms=["slimgb", "std"])
 ```
-
 But that would be the responsible of another layer;-).
 
 
@@ -868,7 +861,7 @@ But that would be the responsible of another layer;-).
 archive/issue_comments_069129.json:
 ```json
 {
-    "body": "Replying to [comment:14 PolyBoRi]:\n> That would awesome and exception safe.\n> \n> > Mhh, does Cython support this yet?\n> \n> Good question.\n\nIt seems it does.",
+    "body": "Replying to [comment:14 PolyBoRi]:\n> That would awesome and exception safe.\n> \n> > Mhh, does Cython support this yet?\n\n> \n> Good question.\n\n\nIt seems it does.",
     "created_at": "2010-01-21T14:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -881,8 +874,10 @@ Replying to [comment:14 PolyBoRi]:
 > That would awesome and exception safe.
 > 
 > > Mhh, does Cython support this yet?
+
 > 
 > Good question.
+
 
 It seems it does.
 
@@ -893,7 +888,7 @@ It seems it does.
 archive/issue_comments_069130.json:
 ```json
 {
-    "body": "Replying to [comment:15 AlexGhitza]:\n\nFor `groebner??` I get the call docstring for the `SingularFunction`.\n\n> What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n> \n> {{{\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = PolynomialRing(QQ)\n> sage: I = P.ideal(x^2-y, y+x)\n> sage: groebner(I)\n> [x + y, y^2 - y]\n> }}}\n> \n> and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n> \n> If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.\n\nIt seems the second option is feasible.",
+    "body": "Replying to [comment:15 AlexGhitza]:\n\nFor `groebner??` I get the call docstring for the `SingularFunction`.\n\n> What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example\n> \n> \n> ```\n> sage: groebner = sage.libs.singular.ff.groebner\n> sage: P.<x, y> = PolynomialRing(QQ)\n> sage: I = P.ideal(x^2-y, y+x)\n> sage: groebner(I)\n> [x + y, y^2 - y]\n> ```\n> \n> and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.\n> \n> If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.\n\n\nIt seems the second option is feasible.",
     "created_at": "2010-01-21T14:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -908,17 +903,19 @@ For `groebner??` I get the call docstring for the `SingularFunction`.
 
 > What would I like to see?  (I'm not sure if this is feasible without a lot of work, but here goes.)  If I type `groebner?` I want to know how to use `groebner` from Sage.  For instance, seeing the example
 > 
-> {{{
+> 
+> ```
 > sage: groebner = sage.libs.singular.ff.groebner
 > sage: P.<x, y> = PolynomialRing(QQ)
 > sage: I = P.ideal(x^2-y, y+x)
 > sage: groebner(I)
 > [x + y, y^2 - y]
-> }}}
+> ```
 > 
 > and maybe a couple more showing other arguments/options would get me started with using the function.  So I would think that it's more useful and natural to have something like the above, followed by the Singular help that shows all the options, bells, and whistles.  Again, I don't know if this is feasible, but it would be nice.
 > 
 > If that's not possible, maybe have a docstring that shows how to use some of the more popular Singular functions from Sage.  If that's followed by the Singular help for the particular function I'm looking at at the moment, I should be able to put the two together and understand how to do things.
+
 
 It seems the second option is feasible.
 
@@ -954,7 +951,7 @@ I will work on this soon-ish, let me know if there are other issues I should add
 archive/issue_comments_069132.json:
 ```json
 {
-    "body": "Hmmm, tab completion is probably hard.\nYou might be interested to know, that there\nexists\nlistvar(proc) in Singular\nwhich is no function but a special command as proc is no first class object.\n\nI followed its trace to grammar.y:\n\n```\nLISTVAR_CMD '(' PROC_CMD ')'\n          {\n            list_cmd(PROC_CMD,NULL,\"// \",TRUE);\n          }\n```\n\nI actually prints something...",
+    "body": "Hmmm, tab completion is probably hard.\nYou might be interested to know, that there\nexists\nlistvar(proc) in Singular\nwhich is no function but a special command as proc is no first class object.\n\nI followed its trace to grammar.y:\n\n```\nLISTVAR_CMD '(' PROC_CMD ')'\n          {\n            list_cmd(PROC_CMD,NULL,\"// \",TRUE);\n          }\n```\nI actually prints something...",
     "created_at": "2010-01-21T15:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -977,7 +974,6 @@ LISTVAR_CMD '(' PROC_CMD ')'
             list_cmd(PROC_CMD,NULL,"// ",TRUE);
           }
 ```
-
 I actually prints something...
 
 
@@ -987,7 +983,7 @@ I actually prints something...
 archive/issue_comments_069133.json:
 ```json
 {
-    "body": "We use that already for the pexpect interface, I was thinking about only calling that but that wouldn't update the list once a new library is loaded in libsingular but not in Singular itself.\n\n\n```python\n    def trait_names(self):\n        \"\"\"\n         Return a list of all Singular commands.\n\n         EXAMPLES::\n\n             sage: singular.trait_names()\n             ['exteriorPower',\n              ...\n              'stdfglm']\n         \"\"\"\n        p = re.compile(\"// *([a-z0-9A-Z_]*).*\") #compiles regular expression\n        proclist = self.eval(\"listvar(proc)\").splitlines()\n        return [p.match(line).group(int(1)) for line in proclist]\n```\n",
+    "body": "We use that already for the pexpect interface, I was thinking about only calling that but that wouldn't update the list once a new library is loaded in libsingular but not in Singular itself.\n\n```python\n    def trait_names(self):\n        \"\"\"\n         Return a list of all Singular commands.\n\n         EXAMPLES::\n\n             sage: singular.trait_names()\n             ['exteriorPower',\n              ...\n              'stdfglm']\n         \"\"\"\n        p = re.compile(\"// *([a-z0-9A-Z_]*).*\") #compiles regular expression\n        proclist = self.eval(\"listvar(proc)\").splitlines()\n        return [p.match(line).group(int(1)) for line in proclist]\n```",
     "created_at": "2010-01-21T15:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -997,7 +993,6 @@ archive/issue_comments_069133.json:
 ```
 
 We use that already for the pexpect interface, I was thinking about only calling that but that wouldn't update the list once a new library is loaded in libsingular but not in Singular itself.
-
 
 ```python
     def trait_names(self):
@@ -1015,7 +1010,6 @@ We use that already for the pexpect interface, I was thinking about only calling
         proclist = self.eval("listvar(proc)").splitlines()
         return [p.match(line).group(int(1)) for line in proclist]
 ```
-
 
 
 
@@ -1050,7 +1044,7 @@ Michael
 archive/issue_comments_069135.json:
 ```json
 {
-    "body": "probably it comes down to\n\n\n```\nidhdl h=IDROOT;\nwhile (h!=NULL)\n  {\n  \n if (PROC_CMD == IDTYP(h))\n    {\n        do something...\n      }\n      h=IDNEXT(h);\n      \n      }\n```\n\n\nI seem already to be infected by the Singular code...",
+    "body": "probably it comes down to\n\n```\nidhdl h=IDROOT;\nwhile (h!=NULL)\n  {\n  \n if (PROC_CMD == IDTYP(h))\n    {\n        do something...\n      }\n      h=IDNEXT(h);\n      \n      }\n```\n\nI seem already to be infected by the Singular code...",
     "created_at": "2010-01-21T15:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1060,7 +1054,6 @@ archive/issue_comments_069135.json:
 ```
 
 probably it comes down to
-
 
 ```
 idhdl h=IDROOT;
@@ -1075,7 +1068,6 @@ while (h!=NULL)
       
       }
 ```
-
 
 I seem already to be infected by the Singular code...
 
@@ -1130,7 +1122,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_069138.json:
 ```json
 {
-    "body": "The attached updated patch should take care of all remaining known outstanding issues. \n\nFor instance, you can now do this:\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(127))\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: std = sage.libs.singular.ff.std\n\nsage: from sage.libs.singular.option import opt, opt_ctx\nsage: opt['redTail']\nTrue\n\nsage: std(I)[-1]\nd^2*e^6 + 28*b*c*d + ...\n\nsage: with opt_ctx(redTail=False,redSB=False):\n...      std(I)[-1]\nd^2*e^6 + 8*c^3 + ...\n\nsage: opt['redTail']\nTrue\n```\n",
+    "body": "The attached updated patch should take care of all remaining known outstanding issues. \n\nFor instance, you can now do this:\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(127))\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: std = sage.libs.singular.ff.std\n\nsage: from sage.libs.singular.option import opt, opt_ctx\nsage: opt['redTail']\nTrue\n\nsage: std(I)[-1]\nd^2*e^6 + 28*b*c*d + ...\n\nsage: with opt_ctx(redTail=False,redSB=False):\n...      std(I)[-1]\nd^2*e^6 + 8*c^3 + ...\n\nsage: opt['redTail']\nTrue\n```",
     "created_at": "2010-01-22T10:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1142,7 +1134,6 @@ archive/issue_comments_069138.json:
 The attached updated patch should take care of all remaining known outstanding issues. 
 
 For instance, you can now do this:
-
 
 ```python
 sage: P.<a,b,c,d,e> = PolynomialRing(GF(127))
@@ -1163,7 +1154,6 @@ d^2*e^6 + 8*c^3 + ...
 sage: opt['redTail']
 True
 ```
-
 
 
 
@@ -1208,7 +1198,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069141.json:
 ```json
 {
-    "body": "With the latest patch, I'm now seeing\n\n\n```\nsage -t -long \"libs/singular/__init__.py\"                   \n\t [0.1 s]\nsage -t -long \"libs/singular/function.pyx\"                  \n\t [2.9 s]\nsage -t -long \"libs/singular/function_factory.py\"           \n**********************************************************************\nFile \"/opt/sage-4.3.1/devel/sage-main/sage/libs/singular/function_factory.py\", line 51:\n    sage: \"std\" in sage.list.singular.ff.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ghitza/sage-devel/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/ghitza/sage-devel/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/ghitza/sage-devel/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n        \"std\" in sage.list.singular.ff.trait_names()###line 51:\n    sage: \"std\" in sage.list.singular.ff.trait_names()\n    AttributeError: 'module' object has no attribute 'list'\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_function_factory.py\n\t [1.5 s]\nexit code: 1024\nsage -t -long \"libs/singular/groebner_strategy.pyx\"         \n\t [1.5 s]\nsage -t -long \"libs/singular/option.pyx\"                    \n**********************************************************************\nFile \"/opt/sage-4.3.1/devel/sage-main/sage/libs/singular/option.pyx\", line 340:\n    sage: libsingular_verb_options\nExpected:\n    verbosity options for libSingular (current value 0x02000082)\nGot:\n    verbosity options for libSingular (current value 0x00002851)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_option.py\n\t [2.3 s]\nexit code: 1024\nsage -t -long \"libs/singular/polynomial.pyx\"                \n\t [1.5 s]\nsage -t -long \"libs/singular/ring.pyx\"                      \n\t [1.8 s]\nsage -t -long \"libs/singular/singular-cdefs.pxi\"            \n\t [1.4 s]\nsage -t -long \"libs/singular/singular.pxi\"                  \n\t [0.1 s]\nsage -t -long \"libs/singular/singular.pyx\"                  \n\t [1.6 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"libs/singular/function_factory.py\"\n\tsage -t -long \"libs/singular/option.pyx\"\nTotal time for all tests: 14.4 seconds\n```\n",
+    "body": "With the latest patch, I'm now seeing\n\n```\nsage -t -long \"libs/singular/__init__.py\"                   \n\t [0.1 s]\nsage -t -long \"libs/singular/function.pyx\"                  \n\t [2.9 s]\nsage -t -long \"libs/singular/function_factory.py\"           \n**********************************************************************\nFile \"/opt/sage-4.3.1/devel/sage-main/sage/libs/singular/function_factory.py\", line 51:\n    sage: \"std\" in sage.list.singular.ff.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ghitza/sage-devel/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/ghitza/sage-devel/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/ghitza/sage-devel/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n        \"std\" in sage.list.singular.ff.trait_names()###line 51:\n    sage: \"std\" in sage.list.singular.ff.trait_names()\n    AttributeError: 'module' object has no attribute 'list'\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_function_factory.py\n\t [1.5 s]\nexit code: 1024\nsage -t -long \"libs/singular/groebner_strategy.pyx\"         \n\t [1.5 s]\nsage -t -long \"libs/singular/option.pyx\"                    \n**********************************************************************\nFile \"/opt/sage-4.3.1/devel/sage-main/sage/libs/singular/option.pyx\", line 340:\n    sage: libsingular_verb_options\nExpected:\n    verbosity options for libSingular (current value 0x02000082)\nGot:\n    verbosity options for libSingular (current value 0x00002851)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_option.py\n\t [2.3 s]\nexit code: 1024\nsage -t -long \"libs/singular/polynomial.pyx\"                \n\t [1.5 s]\nsage -t -long \"libs/singular/ring.pyx\"                      \n\t [1.8 s]\nsage -t -long \"libs/singular/singular-cdefs.pxi\"            \n\t [1.4 s]\nsage -t -long \"libs/singular/singular.pxi\"                  \n\t [0.1 s]\nsage -t -long \"libs/singular/singular.pyx\"                  \n\t [1.6 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"libs/singular/function_factory.py\"\n\tsage -t -long \"libs/singular/option.pyx\"\nTotal time for all tests: 14.4 seconds\n```",
     "created_at": "2010-01-22T20:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1218,7 +1208,6 @@ archive/issue_comments_069141.json:
 ```
 
 With the latest patch, I'm now seeing
-
 
 ```
 sage -t -long "libs/singular/__init__.py"                   
@@ -1284,7 +1273,6 @@ The following tests failed:
 	sage -t -long "libs/singular/option.pyx"
 Total time for all tests: 14.4 seconds
 ```
-
 
 
 
@@ -1409,7 +1397,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069148.json:
 ```json
 {
-    "body": "Replying to [comment:29 AlexGhitza]:\n>One last question: in `rings/polynomial/multi_polynomial_ideal.py`, you left a handful of \n> lines commented out.  Was this by purpose, or just an oversight?\n\nI was a bit split about leaving the pexpect interface stuff in or throwing it out completely. Singular supports some of its ideal operations over the complex numbers, although they probably don't make much sense there (rounding errors, 0 != 0 etc.). libSingular does not support complex numbers yet (although it is implemented in #7577 and waits for input on a design decision) and thus theoretical we are loosing some functionality. Then again, we are loosing functionality which does not really make much sense (e.g. you want to be careful about computing a Gr\u00f6bner basis to get the variety of an ideal over CC) This is why I only half hearted removed the pexpect stuff (which supports CC).",
+    "body": "Replying to [comment:29 AlexGhitza]:\n>One last question: in `rings/polynomial/multi_polynomial_ideal.py`, you left a handful of \n> lines commented out.  Was this by purpose, or just an oversight?\n\n\nI was a bit split about leaving the pexpect interface stuff in or throwing it out completely. Singular supports some of its ideal operations over the complex numbers, although they probably don't make much sense there (rounding errors, 0 != 0 etc.). libSingular does not support complex numbers yet (although it is implemented in #7577 and waits for input on a design decision) and thus theoretical we are loosing some functionality. Then again, we are loosing functionality which does not really make much sense (e.g. you want to be careful about computing a Gr\u00f6bner basis to get the variety of an ideal over CC) This is why I only half hearted removed the pexpect stuff (which supports CC).",
     "created_at": "2010-01-23T12:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7939",
     "type": "issue_comment",
@@ -1421,6 +1409,7 @@ archive/issue_comments_069148.json:
 Replying to [comment:29 AlexGhitza]:
 >One last question: in `rings/polynomial/multi_polynomial_ideal.py`, you left a handful of 
 > lines commented out.  Was this by purpose, or just an oversight?
+
 
 I was a bit split about leaving the pexpect interface stuff in or throwing it out completely. Singular supports some of its ideal operations over the complex numbers, although they probably don't make much sense there (rounding errors, 0 != 0 etc.). libSingular does not support complex numbers yet (although it is implemented in #7577 and waits for input on a design decision) and thus theoretical we are loosing some functionality. Then again, we are loosing functionality which does not really make much sense (e.g. you want to be careful about computing a Gröbner basis to get the variety of an ideal over CC) This is why I only half hearted removed the pexpect stuff (which supports CC).
 

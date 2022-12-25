@@ -3,7 +3,7 @@
 archive/issues_009722.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ggrafendorfer @nexttime @jdemeyer @jaapspies\n\nReported by Georg Grafendorfer on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/42338e44dc36ae3f#42338e44dc36ae3f):\n\n```\nsage does not built on my machine, AMD Phenom(tm) II X4 925, Fedora\n13,\n\nhere are the relevant lines of the log file:\n\nShall we try to build pari 2.3.5 (released) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nmake[2]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nMaking gp in Olinux-x86_64\nmake[3]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nFile ../src/funclist not changed.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\ncat ../src/kernel/gmp/tune.h ../src/kernel/gmp/int.h ../src/kernel/\nnone/level1.h > parilvl1.h\ncat parilvl0.h parilvl1.h > pariinl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp.o ../src/gp/gp.c\ncd ../src/desc && /usr/bin/perl merge_822 ../functions/*/* > def-linux-\nx86_64-6659.tmp\nmv ../src/desc/def-linux-x86_64-6659.tmp ../src/desc/pari.desc\ncd ../src/desc && /usr/bin/perl gen_proto gp pari.desc > gp_init-linux-\nx86_64-6659.tmp\nmv ../src/desc/gp_init-linux-x86_64-6659.tmp ../src/gp/gp_init.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp_rl.o ../src/gp/gp_rl.c\ncd ../src/desc && /usr/bin/perl gen_proto highlevel pari.desc >\nhighlvl-linux-x86_64-6659.tmp\nmv ../src/desc/highlvl-linux-x86_64-6659.tmp ../src/gp/highlvl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -o whatnow.o ../src/gp/whatnow.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o plotport.o ../src/graph/plotport.c\ng++ -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../\nsrc/headers -I\"/usr/local\"/include  -o plotfltk.o ../src/graph/\nplotfltk.c\n../src/graph/plotfltk.c:27:19: error: FL/Fl.H: No such file or\ndirectory\n../src/graph/plotfltk.c:28:26: error: FL/Fl_Window.H: No such file or\ndirectory\n../src/graph/plotfltk.c:29:24: error: FL/fl_draw.H: No such file or\ndirectory\n../src/graph/plotfltk.c:31: error: expected class-name before '{'\ntoken\n../src/graph/plotfltk.c:45: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c:48: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c: In constructor 'Plotter::Plotter(long int*,\nlong int*, long int*, long int, const char*)':\n../src/graph/plotfltk.c:56: error: class 'Plotter' does not have any\nfield named 'Fl_Window'\n../src/graph/plotfltk.c:60: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:60: error: 'FL_WHITE' was not declared in this\nscope\n../src/graph/plotfltk.c:61: error: 'FL_BLACK' was not declared in this\nscope\n../src/graph/plotfltk.c:62: error: 'FL_BLUE' was not declared in this\nscope\n../src/graph/plotfltk.c:63: error: 'rgb_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:64: error: 'FL_RED' was not declared in this\nscope\n../src/graph/plotfltk.c:65: error: 'FL_GREEN' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoint(void*, long int,\nlong int)':\n../src/graph/plotfltk.c:73: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLine(void*, long int,\nlong int, long int, long int)':\n../src/graph/plotfltk.c:79: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawRectangle(void*, long\nint, long int, long int, long int)':\n../src/graph/plotfltk.c:85: error: 'fl_rect' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoints(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:92: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void SetForeground(void*, long\nint)':\n../src/graph/plotfltk.c:97: error: 'Fl_Color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: expected primary-expression before\n')' token\n../src/graph/plotfltk.c:97: error: expected ';' before 'data'\n../src/graph/plotfltk.c:98: error: 'fl_color' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLines(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:105: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawString(void*, long int,\nlong int, char*, long int)':\n../src/graph/plotfltk.c:111: error: 'fl_draw' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'void Plotter::draw()':\n../src/graph/plotfltk.c:118: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:119: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:121: error: 'FL_COURIER' was not declared in\nthis scope\n../src/graph/plotfltk.c:121: error: 'fl_font' was not declared in this\nscope\n../src/graph/plotfltk.c:122: error: 'FL_WHITE' was not declared in\nthis scope\n../src/graph/plotfltk.c:122: error: 'fl_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:123: error: 'fl_rectf' was not declared in\nthis scope\n../src/graph/plotfltk.c:133: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'int\nPlotter::handle(int)':\n../src/graph/plotfltk.c:140: error: 'FL_PUSH' was not declared in this\nscope\n../src/graph/plotfltk.c:141: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:155: error: 'class Plotter' has no member\nnamed 'x'\n../src/graph/plotfltk.c:156: error: 'class Plotter' has no member\nnamed 'y'\n../src/graph/plotfltk.c:157: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:158: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:159: error: 'class Plotter' has no member\nnamed 'fullscreen'\n../src/graph/plotfltk.c:163: error: 'class Plotter' has no member\nnamed 'fullscreen_off'\n../src/graph/plotfltk.c:164: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c: In function 'void rectdraw0(long int*, long\nint*, long int*, long int)':\n../src/graph/plotfltk.c:188: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:188: error: 'FL_DOUBLE' was not declared in\nthis scope\n../src/graph/plotfltk.c:188: error: 'FL_INDEX' was not declared in\nthis scope\n../src/graph/plotfltk.c:190: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c:191: error: 'class Plotter' has no member\nnamed 'box'\n../src/graph/plotfltk.c:191: error: 'FL_FLAT_BOX' was not declared in\nthis scope\n../src/graph/plotfltk.c:192: error: 'class Plotter' has no member\nnamed 'end'\n../src/graph/plotfltk.c:193: error: 'class Plotter' has no member\nnamed 'show'\n../src/graph/plotfltk.c:194: error: 'Fl' has not been declared\nmake[3]: *** [plotfltk.o] Error 1\nmake[3]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nError building GP \n```\n\nThere's now a [dedicated thread](http://groups.google.com/group/sage-release/browse_thread/thread/e1fe601e7e184479/e9a241101d3fb776#e9a241101d3fb776).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9722\n\n",
+    "body": "Assignee: tbd\n\nCC:  ggrafendorfer @nexttime @jdemeyer @jaapspies\n\nReported by Georg Grafendorfer on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/42338e44dc36ae3f#42338e44dc36ae3f):\n\n```\nsage does not built on my machine, AMD Phenom(tm) II X4 925, Fedora\n13,\n\nhere are the relevant lines of the log file:\n\nShall we try to build pari 2.3.5 (released) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nmake[2]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nMaking gp in Olinux-x86_64\nmake[3]: Entering directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nFile ../src/funclist not changed.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\ncat ../src/kernel/gmp/tune.h ../src/kernel/gmp/int.h ../src/kernel/\nnone/level1.h > parilvl1.h\ncat parilvl0.h parilvl1.h > pariinl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp.o ../src/gp/gp.c\ncd ../src/desc && /usr/bin/perl merge_822 ../functions/*/* > def-linux-\nx86_64-6659.tmp\nmv ../src/desc/def-linux-x86_64-6659.tmp ../src/desc/pari.desc\ncd ../src/desc && /usr/bin/perl gen_proto gp pari.desc > gp_init-linux-\nx86_64-6659.tmp\nmv ../src/desc/gp_init-linux-x86_64-6659.tmp ../src/gp/gp_init.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o gp_init.o ../src/gp/gp_init.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/language -I/scratch/sage-4.5.3.alpha0/local/\ninclude -o gp_rl.o ../src/gp/gp_rl.c\ncd ../src/desc && /usr/bin/perl gen_proto highlevel pari.desc >\nhighlvl-linux-x86_64-6659.tmp\nmv ../src/desc/highlvl-linux-x86_64-6659.tmp ../src/gp/highlvl.h\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -DDL_DFLT_NAME=NULL -o highlvl.o ../src/gp/highlvl.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -o whatnow.o ../src/gp/whatnow.c\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -\nI../src/headers -I../src/graph -o plotport.o ../src/graph/plotport.c\ng++ -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../\nsrc/headers -I\"/usr/local\"/include  -o plotfltk.o ../src/graph/\nplotfltk.c\n../src/graph/plotfltk.c:27:19: error: FL/Fl.H: No such file or\ndirectory\n../src/graph/plotfltk.c:28:26: error: FL/Fl_Window.H: No such file or\ndirectory\n../src/graph/plotfltk.c:29:24: error: FL/fl_draw.H: No such file or\ndirectory\n../src/graph/plotfltk.c:31: error: expected class-name before '{'\ntoken\n../src/graph/plotfltk.c:45: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c:48: error: 'Fl_Color' does not name a type\n../src/graph/plotfltk.c: In constructor 'Plotter::Plotter(long int*,\nlong int*, long int*, long int, const char*)':\n../src/graph/plotfltk.c:56: error: class 'Plotter' does not have any\nfield named 'Fl_Window'\n../src/graph/plotfltk.c:60: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:60: error: 'FL_WHITE' was not declared in this\nscope\n../src/graph/plotfltk.c:61: error: 'FL_BLACK' was not declared in this\nscope\n../src/graph/plotfltk.c:62: error: 'FL_BLUE' was not declared in this\nscope\n../src/graph/plotfltk.c:63: error: 'rgb_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:64: error: 'FL_RED' was not declared in this\nscope\n../src/graph/plotfltk.c:65: error: 'FL_GREEN' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoint(void*, long int,\nlong int)':\n../src/graph/plotfltk.c:73: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLine(void*, long int,\nlong int, long int, long int)':\n../src/graph/plotfltk.c:79: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawRectangle(void*, long\nint, long int, long int, long int)':\n../src/graph/plotfltk.c:85: error: 'fl_rect' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawPoints(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:92: error: 'fl_point' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void SetForeground(void*, long\nint)':\n../src/graph/plotfltk.c:97: error: 'Fl_Color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c:97: error: expected primary-expression before\n')' token\n../src/graph/plotfltk.c:97: error: expected ';' before 'data'\n../src/graph/plotfltk.c:98: error: 'fl_color' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawLines(void*, long int,\nplot_points*)':\n../src/graph/plotfltk.c:105: error: 'fl_line' was not declared in this\nscope\n../src/graph/plotfltk.c: In function 'void DrawString(void*, long int,\nlong int, char*, long int)':\n../src/graph/plotfltk.c:111: error: 'fl_draw' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'void Plotter::draw()':\n../src/graph/plotfltk.c:118: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:119: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:121: error: 'FL_COURIER' was not declared in\nthis scope\n../src/graph/plotfltk.c:121: error: 'fl_font' was not declared in this\nscope\n../src/graph/plotfltk.c:122: error: 'FL_WHITE' was not declared in\nthis scope\n../src/graph/plotfltk.c:122: error: 'fl_color' was not declared in\nthis scope\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:123: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:123: error: 'fl_rectf' was not declared in\nthis scope\n../src/graph/plotfltk.c:133: error: 'color' was not declared in this\nscope\n../src/graph/plotfltk.c: In member function 'int\nPlotter::handle(int)':\n../src/graph/plotfltk.c:140: error: 'FL_PUSH' was not declared in this\nscope\n../src/graph/plotfltk.c:141: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:155: error: 'class Plotter' has no member\nnamed 'x'\n../src/graph/plotfltk.c:156: error: 'class Plotter' has no member\nnamed 'y'\n../src/graph/plotfltk.c:157: error: 'class Plotter' has no member\nnamed 'w'\n../src/graph/plotfltk.c:158: error: 'class Plotter' has no member\nnamed 'h'\n../src/graph/plotfltk.c:159: error: 'class Plotter' has no member\nnamed 'fullscreen'\n../src/graph/plotfltk.c:163: error: 'class Plotter' has no member\nnamed 'fullscreen_off'\n../src/graph/plotfltk.c:164: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c: In function 'void rectdraw0(long int*, long\nint*, long int*, long int)':\n../src/graph/plotfltk.c:188: error: 'Fl' has not been declared\n../src/graph/plotfltk.c:188: error: 'FL_DOUBLE' was not declared in\nthis scope\n../src/graph/plotfltk.c:188: error: 'FL_INDEX' was not declared in\nthis scope\n../src/graph/plotfltk.c:190: error: 'class Plotter' has no member\nnamed 'size_range'\n../src/graph/plotfltk.c:191: error: 'class Plotter' has no member\nnamed 'box'\n../src/graph/plotfltk.c:191: error: 'FL_FLAT_BOX' was not declared in\nthis scope\n../src/graph/plotfltk.c:192: error: 'class Plotter' has no member\nnamed 'end'\n../src/graph/plotfltk.c:193: error: 'class Plotter' has no member\nnamed 'show'\n../src/graph/plotfltk.c:194: error: 'Fl' has not been declared\nmake[3]: *** [plotfltk.o] Error 1\nmake[3]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src/Olinux-x86_64'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/\npari-2.3.5.p2/src'\nError building GP \n```\nThere's now a [dedicated thread](http://groups.google.com/group/sage-release/browse_thread/thread/e1fe601e7e184479/e9a241101d3fb776#e9a241101d3fb776).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9722\n\n",
     "created_at": "2010-08-11T01:34:21Z",
     "labels": [
         "component: packages: standard",
@@ -198,7 +198,6 @@ make[2]: Leaving directory `/scratch/sage-4.5.3.alpha0/spkg/build/
 pari-2.3.5.p2/src'
 Error building GP 
 ```
-
 There's now a [dedicated thread](http://groups.google.com/group/sage-release/browse_thread/thread/e1fe601e7e184479/e9a241101d3fb776#e9a241101d3fb776).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9722
@@ -230,7 +229,7 @@ Georg, if I've correctly guessed your trac name, could you please update the [Sa
 archive/issue_comments_094750.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> Georg, if I've correctly guessed your trac name, could you please update the [Sage trac account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?\n\ndone, Georg",
+    "body": "Replying to [comment:1 mpatel]:\n> Georg, if I've correctly guessed your trac name, could you please update the [Sage trac account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?\n\n\ndone, Georg",
     "created_at": "2010-08-11T11:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -241,6 +240,7 @@ archive/issue_comments_094750.json:
 
 Replying to [comment:1 mpatel]:
 > Georg, if I've correctly guessed your trac name, could you please update the [Sage trac account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?
+
 
 done, Georg
 
@@ -395,7 +395,7 @@ Georg
 archive/issue_comments_094752.json:
 ```json
 {
-    "body": "Replying to [comment:3 ggrafendorfer]:\n> As suggested by leif i have made the admins here (eth z\u00fcrich) install fltk-devel (fltk is installed anyway),\n> still does not work, the log message looks different now:\n\n```\n...\ngcc  -o gp-dyn -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -Wl,--export-dynamic  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotfltk.o  -L\"/scratch/sage-4.5.3.alpha0/spkg/build/pari-2.3.5.p2/src/Olinux-x86_64\" -L/scratch/sage-4.5.3.alpha0/local/lib -lreadline -L/scratch/sage-4.5.3.alpha0/local/lib/ -ltermcap -L/scratch/sage-4.5.3.alpha0/local/lib -lpari -L\"/usr/local\"/lib -lfltk  -ldl -lm -L/scratch/sage-4.5.3.alpha0/local/lib -lgmp\n/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0@@CXXABI_1.3'\n/usr/bin/ld: note: '__gxx_personality_v0@@CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line\n/usr/lib64//libstdc++.so.6: could not read symbols: Invalid operation\ncollect2: ld returned 1 exit status\n...\n```\n\n\nThat's just the usual [Fedora 13 error](http://fedoraproject.org/wiki/DSOLinkBugs). ;-)\n\nThe simplest solution would be to uninstall FLTK completely, but since you seem to not have admin rights, we should perhaps fix this in the PARI package.\n\nThere's already a [new PARI Sage package underway](http://trac.sagemath.org/sage_trac/ticket/9343#comment:171), which is afaik intended to get merged into Sage 4.6, but I don't believe you want to wait for that.\n\nSo we have to decide if we want to provide a new intermediate PARI 2.3.5.p3 package here, to get merged into Sage 4.5.3. (I think we can solve this by a 9-character patch.)\n\nMitesh, your opinion?\n\nJeroen, perhaps you know if this is already fixed upstream/in svn 12577. (There are various ways to fix this.)",
+    "body": "Replying to [comment:3 ggrafendorfer]:\n> As suggested by leif i have made the admins here (eth z\u00fcrich) install fltk-devel (fltk is installed anyway),\n> still does not work, the log message looks different now:\n\n{{{\n...\ngcc  -o gp-dyn -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -Wl,--export-dynamic  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotfltk.o  -L\"/scratch/sage-4.5.3.alpha0/spkg/build/pari-2.3.5.p2/src/Olinux-x86_64\" -L/scratch/sage-4.5.3.alpha0/local/lib -lreadline -L/scratch/sage-4.5.3.alpha0/local/lib/ -ltermcap -L/scratch/sage-4.5.3.alpha0/local/lib -lpari -L\"/usr/local\"/lib -lfltk  -ldl -lm -L/scratch/sage-4.5.3.alpha0/local/lib -lgmp\n/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0`@``@`CXXABI_1.3'\n/usr/bin/ld: note: '__gxx_personality_v0`@``@`CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line\n/usr/lib64//libstdc++.so.6: could not read symbols: Invalid operation\ncollect2: ld returned 1 exit status\n...\n}}}\n\nThat's just the usual [Fedora 13 error](http://fedoraproject.org/wiki/DSOLinkBugs). ;-)\n\nThe simplest solution would be to uninstall FLTK completely, but since you seem to not have admin rights, we should perhaps fix this in the PARI package.\n\nThere's already a [new PARI Sage package underway](http://trac.sagemath.org/sage_trac/ticket/9343#comment:171), which is afaik intended to get merged into Sage 4.6, but I don't believe you want to wait for that.\n\nSo we have to decide if we want to provide a new intermediate PARI 2.3.5.p3 package here, to get merged into Sage 4.5.3. (I think we can solve this by a 9-character patch.)\n\nMitesh, your opinion?\n\nJeroen, perhaps you know if this is already fixed upstream/in svn 12577. (There are various ways to fix this.)",
     "created_at": "2010-08-11T16:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -408,16 +408,15 @@ Replying to [comment:3 ggrafendorfer]:
 > As suggested by leif i have made the admins here (eth zürich) install fltk-devel (fltk is installed anyway),
 > still does not work, the log message looks different now:
 
-```
+{{{
 ...
 gcc  -o gp-dyn -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -Wl,--export-dynamic  gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotfltk.o  -L"/scratch/sage-4.5.3.alpha0/spkg/build/pari-2.3.5.p2/src/Olinux-x86_64" -L/scratch/sage-4.5.3.alpha0/local/lib -lreadline -L/scratch/sage-4.5.3.alpha0/local/lib/ -ltermcap -L/scratch/sage-4.5.3.alpha0/local/lib -lpari -L"/usr/local"/lib -lfltk  -ldl -lm -L/scratch/sage-4.5.3.alpha0/local/lib -lgmp
-/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0@@CXXABI_1.3'
-/usr/bin/ld: note: '__gxx_personality_v0@@CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line
+/usr/bin/ld: plotfltk.o: undefined reference to symbol '__gxx_personality_v0`@``@`CXXABI_1.3'
+/usr/bin/ld: note: '__gxx_personality_v0`@``@`CXXABI_1.3' is defined in DSO /usr/lib64//libstdc++.so.6 so try adding it to the linker command line
 /usr/lib64//libstdc++.so.6: could not read symbols: Invalid operation
 collect2: ld returned 1 exit status
 ...
-```
-
+}}}
 
 That's just the usual [Fedora 13 error](http://fedoraproject.org/wiki/DSOLinkBugs). ;-)
 
@@ -438,7 +437,7 @@ Jeroen, perhaps you know if this is already fixed upstream/in svn 12577. (There 
 archive/issue_comments_094753.json:
 ```json
 {
-    "body": "> There's already a [new PARI Sage package underway](http://trac.sagemath.org/sage_trac/ticket/9343#comment:171), which is afaik intended to get merged into Sage 4.6, but I don't believe you want to wait for that.\n\nI'm not doing numerical calculations right now, but I'm trying to spread sage here (eth z\u00fcrich), which is a bit difficult if it does not built ;-), some of us are using it for teaching, the semester starts in middle of September, would be great to fix it until then,\n\nbtw, this bug exists since version after 4.3.4, which was the last which built correctly,\nI reported it two times before, but was ignored (once a workaround was given)),\n\nGeorg",
+    "body": "> There's already a [new PARI Sage package underway](http://trac.sagemath.org/sage_trac/ticket/9343#comment:171), which is afaik intended to get merged into Sage 4.6, but I don't believe you want to wait for that.\n\n\nI'm not doing numerical calculations right now, but I'm trying to spread sage here (eth z\u00fcrich), which is a bit difficult if it does not built ;-), some of us are using it for teaching, the semester starts in middle of September, would be great to fix it until then,\n\nbtw, this bug exists since version after 4.3.4, which was the last which built correctly,\nI reported it two times before, but was ignored (once a workaround was given)),\n\nGeorg",
     "created_at": "2010-08-11T17:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -448,6 +447,7 @@ archive/issue_comments_094753.json:
 ```
 
 > There's already a [new PARI Sage package underway](http://trac.sagemath.org/sage_trac/ticket/9343#comment:171), which is afaik intended to get merged into Sage 4.6, but I don't believe you want to wait for that.
+
 
 I'm not doing numerical calculations right now, but I'm trying to spread sage here (eth zürich), which is a bit difficult if it does not built ;-), some of us are using it for teaching, the semester starts in middle of September, would be great to fix it until then,
 
@@ -463,7 +463,7 @@ Georg
 archive/issue_comments_094754.json:
 ```json
 {
-    "body": "Replying to [comment:5 ggrafendorfer]:\n> btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n\nHmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\n\n> I reported it two times before, but was ignored (once a workaround was given)),\n\nWhere?\n\nAnyway, I think I have a trivial patch/new spkg ready.\n\nAre you familiar with patching spkgs? (Then you could apply it yourself immediately - or make sure it works on Fedora 13; I've only tested it on Ubuntu, where this is not an issue. It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)",
+    "body": "Replying to [comment:5 ggrafendorfer]:\n> btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n\n\nHmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\n\n> I reported it two times before, but was ignored (once a workaround was given)),\n\n\nWhere?\n\nAnyway, I think I have a trivial patch/new spkg ready.\n\nAre you familiar with patching spkgs? (Then you could apply it yourself immediately - or make sure it works on Fedora 13; I've only tested it on Ubuntu, where this is not an issue. It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)",
     "created_at": "2010-08-11T17:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -475,10 +475,12 @@ archive/issue_comments_094754.json:
 Replying to [comment:5 ggrafendorfer]:
 > btw, this bug exists since version after 4.3.4, which was the last which built correctly,
 
+
 Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)
 
 
 > I reported it two times before, but was ignored (once a workaround was given)),
+
 
 Where?
 
@@ -493,7 +495,7 @@ Are you familiar with patching spkgs? (Then you could apply it yourself immediat
 archive/issue_comments_094755.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n> Replying to [comment:5 ggrafendorfer]:\n> > btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n> \n> Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\nWe had Fedora 11 before, where the same error occured, my second report is here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c6f07d55a7b091c4?lnk=gst&q=built+error+fedora+11#c6f07d55a7b091c4\n\n> \n> Anyway, I think I have a trivial patch/new spkg ready.\n> \n> Are you familiar with patching spkgs?\n\nno, is it difficult, where is the new spkgs?\n\n> It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)\n\nSince all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,\n\nGeorg",
+    "body": "Replying to [comment:6 leif]:\n> Replying to [comment:5 ggrafendorfer]:\n> > btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n\n> \n> Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\n\nWe had Fedora 11 before, where the same error occured, my second report is here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c6f07d55a7b091c4?lnk=gst&q=built+error+fedora+11#c6f07d55a7b091c4\n\n> \n> Anyway, I think I have a trivial patch/new spkg ready.\n> \n> Are you familiar with patching spkgs?\n\n\nno, is it difficult, where is the new spkgs?\n\n> It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)\n\n\nSince all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,\n\nGeorg",
     "created_at": "2010-08-11T18:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -505,8 +507,10 @@ archive/issue_comments_094755.json:
 Replying to [comment:6 leif]:
 > Replying to [comment:5 ggrafendorfer]:
 > > btw, this bug exists since version after 4.3.4, which was the last which built correctly,
+
 > 
 > Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)
+
 
 We had Fedora 11 before, where the same error occured, my second report is here:
 
@@ -517,9 +521,11 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c
 > 
 > Are you familiar with patching spkgs?
 
+
 no, is it difficult, where is the new spkgs?
 
 > It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)
+
 
 Since all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,
 
@@ -550,7 +556,7 @@ Changing status from new to needs_review.
 archive/issue_comments_094757.json:
 ```json
 {
-    "body": "I've uploaded a patch to fix the second (i.e. the linker) error. Yet only tested on Ubuntu; *should* work for Fedora 13...\n\n\n```\n### pari-2.3.5.p3 (Leif Leonhardy, August 11th 2010)\n * #9722: Explicitly link against libstdc++ if FLTK is used, to support\n   Fedora 13.\n * TODO/FIXME: On Fedora 13, PARI tries to use FLTK even if just the\n   library (as opposed to the required developer) package of FLTK is\n   installed.\n```\n",
+    "body": "I've uploaded a patch to fix the second (i.e. the linker) error. Yet only tested on Ubuntu; *should* work for Fedora 13...\n\n```\n### pari-2.3.5.p3 (Leif Leonhardy, August 11th 2010)\n * #9722: Explicitly link against libstdc++ if FLTK is used, to support\n   Fedora 13.\n * TODO/FIXME: On Fedora 13, PARI tries to use FLTK even if just the\n   library (as opposed to the required developer) package of FLTK is\n   installed.\n```",
     "created_at": "2010-08-11T18:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -560,7 +566,6 @@ archive/issue_comments_094757.json:
 ```
 
 I've uploaded a patch to fix the second (i.e. the linker) error. Yet only tested on Ubuntu; *should* work for Fedora 13...
-
 
 ```
 ### pari-2.3.5.p3 (Leif Leonhardy, August 11th 2010)
@@ -573,13 +578,12 @@ I've uploaded a patch to fix the second (i.e. the linker) error. Yet only tested
 
 
 
-
 ---
 
 archive/issue_comments_094758.json:
 ```json
 {
-    "body": "Replying to [comment:7 ggrafendorfer]:\n> Replying to [comment:6 leif]:\n> > Replying to [comment:5 ggrafendorfer]:\n> > > btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n> > \n> > Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\nI of course meant the linker error.\n\n> We had Fedora 11 before, where the same error occured, my second report is here:\n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c6f07d55a7b091c4?lnk=gst&q=built+error+fedora+11#c6f07d55a7b091c4\n\nNice. A trivial work-around, if you simply want to compile Sage/PARI **without** FLTK is:\n\n```\nexport PARI_EXTRA_OPTS=\"--with-fltk=no\"\n```\n\n(This will complain that the directory `.../no` does not exist, but proceed building without FLTK.)\n\n> > Anyway, I think I have a trivial patch/new spkg ready.\n> > \n> > Are you familiar with patching spkgs?\n> \n> no, is it difficult, where is the new spkgs?\n\nI don't have an account on sage.math, so I could only put it into the volatile ftp directory. (But someone else could move it.)\n\nApplying patches to spkgs is relatively simple. If you have Mercurial (`hg`) installed:\n\n```sh\n$ tar xjf /path/to/pari-2.3.5.p2.spkg\n$ mv pari-2.3.5.p2 pari-2.3.5.p3\n$ cd pari-2.3.5.p3\n$ hg import /path/to/spkg-patch.patch # replace with appropriate filename\n$ cd ..\n$ tar cjf pari-2.3.5.p3.spkg pari-2.3.5.p3\n```\n\nThen you can install the new spkg the usual way (`./sage -i ...`, but perhaps first copy it over to `$SAGE_ROOT/spkg/standard` to get around limitations of `sage-spkg`, and then type `./sage -i pari-2.3.5.p3`).\n \n> > It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)\n> Since all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,\n\nOk, I've read this too late...\n\nWouldn't be bad then to install `libfltk-dev` on *all* machines... (I would assume the machines get configured/installed from a central server anyway.)",
+    "body": "Replying to [comment:7 ggrafendorfer]:\n> Replying to [comment:6 leif]:\n> > Replying to [comment:5 ggrafendorfer]:\n> > > btw, this bug exists since version after 4.3.4, which was the last which built correctly,\n\n> > \n> > Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)\n\n\nI of course meant the linker error.\n\n> We had Fedora 11 before, where the same error occured, my second report is here:\n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c6f07d55a7b091c4?lnk=gst&q=built+error+fedora+11#c6f07d55a7b091c4\n\n\nNice. A trivial work-around, if you simply want to compile Sage/PARI **without** FLTK is:\n\n```\nexport PARI_EXTRA_OPTS=\"--with-fltk=no\"\n```\n(This will complain that the directory `.../no` does not exist, but proceed building without FLTK.)\n\n> > Anyway, I think I have a trivial patch/new spkg ready.\n> > \n> > Are you familiar with patching spkgs?\n\n> \n> no, is it difficult, where is the new spkgs?\n\n\nI don't have an account on sage.math, so I could only put it into the volatile ftp directory. (But someone else could move it.)\n\nApplying patches to spkgs is relatively simple. If you have Mercurial (`hg`) installed:\n\n```sh\n$ tar xjf /path/to/pari-2.3.5.p2.spkg\n$ mv pari-2.3.5.p2 pari-2.3.5.p3\n$ cd pari-2.3.5.p3\n$ hg import /path/to/spkg-patch.patch # replace with appropriate filename\n$ cd ..\n$ tar cjf pari-2.3.5.p3.spkg pari-2.3.5.p3\n```\nThen you can install the new spkg the usual way (`./sage -i ...`, but perhaps first copy it over to `$SAGE_ROOT/spkg/standard` to get around limitations of `sage-spkg`, and then type `./sage -i pari-2.3.5.p3`).\n \n> > It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)\n\n> Since all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,\n\nOk, I've read this too late...\n\nWouldn't be bad then to install `libfltk-dev` on *all* machines... (I would assume the machines get configured/installed from a central server anyway.)",
     "created_at": "2010-08-11T19:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -592,8 +596,10 @@ Replying to [comment:7 ggrafendorfer]:
 > Replying to [comment:6 leif]:
 > > Replying to [comment:5 ggrafendorfer]:
 > > > btw, this bug exists since version after 4.3.4, which was the last which built correctly,
+
 > > 
 > > Hmmm, I don't think this error showed up before Fedora 13 was released... ;-)
+
 
 I of course meant the linker error.
 
@@ -601,19 +607,21 @@ I of course meant the linker error.
 > 
 > http://groups.google.com/group/sage-devel/browse_thread/thread/51630a0ef2f8989/c6f07d55a7b091c4?lnk=gst&q=built+error+fedora+11#c6f07d55a7b091c4
 
+
 Nice. A trivial work-around, if you simply want to compile Sage/PARI **without** FLTK is:
 
 ```
 export PARI_EXTRA_OPTS="--with-fltk=no"
 ```
-
 (This will complain that the directory `.../no` does not exist, but proceed building without FLTK.)
 
 > > Anyway, I think I have a trivial patch/new spkg ready.
 > > 
 > > Are you familiar with patching spkgs?
+
 > 
 > no, is it difficult, where is the new spkgs?
+
 
 I don't have an account on sage.math, so I could only put it into the volatile ftp directory. (But someone else could move it.)
 
@@ -627,10 +635,10 @@ $ hg import /path/to/spkg-patch.patch # replace with appropriate filename
 $ cd ..
 $ tar cjf pari-2.3.5.p3.spkg pari-2.3.5.p3
 ```
-
 Then you can install the new spkg the usual way (`./sage -i ...`, but perhaps first copy it over to `$SAGE_ROOT/spkg/standard` to get around limitations of `sage-spkg`, and then type `./sage -i pari-2.3.5.p3`).
  
 > > It does *not* fix the first error, i.e. PARI attempting to use FLTK despite no headers being present, since I currently cannot reproduce that. I could perhaps fix that later though.)
+
 > Since all the machines are the same, it should also fix the first error, since this is obviously the default state of the machines,
 
 Ok, I've read this too late...
@@ -684,7 +692,7 @@ Although I haven't tried it myself, it might be easier to set up and use [spkg-u
 archive/issue_comments_094761.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> If it helps, I don't mind merging an intermediate / incremental PARI package in the 4.5.3 series.\n\nOk.\n\n \n> Leif, I can make your package available on sage.math.  Since it's ~2 MB, just send it to me by email.\n\nI'm going to set up a Fedora box and will try to address the configuration error as well.\n\n> Although I haven't tried it myself, it might be easier to set up and use [spkg-upload](http://code.google.com/p/spkg-upload/).\n\nI'd need credentials from Minh, but the sun is just rising down under... :)",
+    "body": "Replying to [comment:12 mpatel]:\n> If it helps, I don't mind merging an intermediate / incremental PARI package in the 4.5.3 series.\n\n\nOk.\n\n \n> Leif, I can make your package available on sage.math.  Since it's ~2 MB, just send it to me by email.\n\n\nI'm going to set up a Fedora box and will try to address the configuration error as well.\n\n> Although I haven't tried it myself, it might be easier to set up and use [spkg-upload](http://code.google.com/p/spkg-upload/).\n\n\nI'd need credentials from Minh, but the sun is just rising down under... :)",
     "created_at": "2010-08-11T22:51:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -696,14 +704,17 @@ archive/issue_comments_094761.json:
 Replying to [comment:12 mpatel]:
 > If it helps, I don't mind merging an intermediate / incremental PARI package in the 4.5.3 series.
 
+
 Ok.
 
  
 > Leif, I can make your package available on sage.math.  Since it's ~2 MB, just send it to me by email.
 
+
 I'm going to set up a Fedora box and will try to address the configuration error as well.
 
 > Although I haven't tried it myself, it might be easier to set up and use [spkg-upload](http://code.google.com/p/spkg-upload/).
+
 
 I'd need credentials from Minh, but the sun is just rising down under... :)
 
@@ -714,7 +725,7 @@ I'd need credentials from Minh, but the sun is just rising down under... :)
 archive/issue_comments_094762.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> ggrafendorfer: could you please try to see if the problem is there when you compile PARI/GP by itself?  That is, download [http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz](http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz), do `./Configure && make` and see what happens.  If you can, please try it both with fltk-devel uninstalled and installed.  If it doesn't compile like that, it should be reported upstream.\n\nDone, on two different machines, one with ftlk + fltk-devel, one with fltk but without fltk-devel installed, both on Fedora 13 64bit, both failed after successful configuration, I reported this to the pari project,\n\nGeorg",
+    "body": "Replying to [comment:11 jdemeyer]:\n> ggrafendorfer: could you please try to see if the problem is there when you compile PARI/GP by itself?  That is, download [http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz](http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz), do `./Configure && make` and see what happens.  If you can, please try it both with fltk-devel uninstalled and installed.  If it doesn't compile like that, it should be reported upstream.\n\n\nDone, on two different machines, one with ftlk + fltk-devel, one with fltk but without fltk-devel installed, both on Fedora 13 64bit, both failed after successful configuration, I reported this to the pari project,\n\nGeorg",
     "created_at": "2010-08-12T15:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -725,6 +736,7 @@ archive/issue_comments_094762.json:
 
 Replying to [comment:11 jdemeyer]:
 > ggrafendorfer: could you please try to see if the problem is there when you compile PARI/GP by itself?  That is, download [http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz](http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.5.tar.gz), do `./Configure && make` and see what happens.  If you can, please try it both with fltk-devel uninstalled and installed.  If it doesn't compile like that, it should be reported upstream.
+
 
 Done, on two different machines, one with ftlk + fltk-devel, one with fltk but without fltk-devel installed, both on Fedora 13 64bit, both failed after successful configuration, I reported this to the pari project,
 
@@ -737,7 +749,7 @@ Georg
 archive/issue_comments_094763.json:
 ```json
 {
-    "body": "Here is my report to the pari project and the answer:\n\n> Hi,\n>\n> there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:\n>\n> http://trac.sagemath.org/sage_trac/ticket/9722\n>\n>\n> I tried to build pari separately (stand alone) but also does not work:\n>\n> After successful configuration pari does not build in 2 different cases:\n>\n> AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file \"log_with_fltk-devel\" attached\n>\n> Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file \"log_without_fltk-devel\" attached\n\nHello Georg,\n\nOn both system, there is libfltk library installed in /usr/local/lib64/, but no\nmatching header files in /usr/local/include is provided, so compiling fltk does not work.\nConfigure output a warning:\n\n###\n### libX11.so not found. Please install X11 development files.\n### They usually come in XFree86-devel (RPM) or xlibs-dev (Debian) packages\n###\n### X11 not found\n###\n\nSo either install XFree86-devel (or whathever is the correct name of fedora) or use\n--graphic=none to disable graphics.\n\nInstalling fltk and fltk-devel does not work because the version of fltk it provides is\nnot compatible with the one in /usr/local/lib64/ (this is only a guess).\n\nCheers,\nBill.",
+    "body": "Here is my report to the pari project and the answer:\n\n> Hi,\n\n>\n> there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:\n\n>\n> http://trac.sagemath.org/sage_trac/ticket/9722\n\n>\n>\n> I tried to build pari separately (stand alone) but also does not work:\n>\n> After successful configuration pari does not build in 2 different cases:\n>\n> AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file \"log_with_fltk-devel\" attached\n>\n> Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file \"log_without_fltk-devel\" attached\n\n\nHello Georg,\n\nOn both system, there is libfltk library installed in /usr/local/lib64/, but no\nmatching header files in /usr/local/include is provided, so compiling fltk does not work.\nConfigure output a warning:\n\n###\n### libX11.so not found. Please install X11 development files.\n### They usually come in XFree86-devel (RPM) or xlibs-dev (Debian) packages\n###\n### X11 not found\n###\n\nSo either install XFree86-devel (or whathever is the correct name of fedora) or use\n--graphic=none to disable graphics.\n\nInstalling fltk and fltk-devel does not work because the version of fltk it provides is\nnot compatible with the one in /usr/local/lib64/ (this is only a guess).\n\nCheers,\nBill.",
     "created_at": "2010-08-16T12:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -749,10 +761,13 @@ archive/issue_comments_094763.json:
 Here is my report to the pari project and the answer:
 
 > Hi,
+
 >
 > there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:
+
 >
 > http://trac.sagemath.org/sage_trac/ticket/9722
+
 >
 >
 > I tried to build pari separately (stand alone) but also does not work:
@@ -762,6 +777,7 @@ Here is my report to the pari project and the answer:
 > AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file "log_with_fltk-devel" attached
 >
 > Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file "log_without_fltk-devel" attached
+
 
 Hello Georg,
 
@@ -810,7 +826,7 @@ Changing keywords from "" to "FLTK, DSO, libstdc++, plotfltk, FL/Fl.H".
 archive/issue_comments_094765.json:
 ```json
 {
-    "body": "Replying to [comment:15 ggrafendorfer]:\n> Here is my report to the pari project and the answer:\n> \n> > Hi,\n> >\n> > there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:\n> >\n> > http://trac.sagemath.org/sage_trac/ticket/9722\n> >\n> >\n> > I tried to build pari separately (stand alone) but also does not work:\n> >\n> > After successful configuration pari does not build in 2 different cases:\n> >\n> > AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file \"log_with_fltk-devel\" attached\n> >\n> > Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file \"log_without_fltk-devel\" attached\n> \n> Hello Georg,\n> \n> On both system, there is libfltk library installed in /usr/local/lib64/, but no\n> matching header files in /usr/local/include is provided, so compiling fltk does not work.\n> Configure output a warning:\n> \n> ###\n> ### libX11.so not found. Please install X11 development files.\n> ### They usually come in XFree86-devel (RPM) or xlibs-dev (Debian) packages\n> ###\n> ### X11 not found\n> ###\n> \n> So either install XFree86-devel (or whathever is the correct name of fedora) or use\n> --graphic=none to disable graphics.\n> \n> Installing fltk and fltk-devel does not work because the version of fltk it provides is\n> not compatible with the one in /usr/local/lib64/ (this is only a guess).\n> \n> Cheers,\n> Bill.\n\nIn any case, PARI shouldn't attempt to build with FLTK support if no (or not matching) header files are present; the second (linker) error is also definitely a bug, which currently only shows up on Fedora 13 (and derivatives) due to [stricter linkage rules](http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).\n\nI couldn't (yet) reproduce the errors on 32-bit Fedora 13 though, most probably because *other* headers and libraries weren't installed. (I tested installing Sage's PARI spkg with only `fltk-1.1.10-1.fc13`, and then in addition `fltk-devel-1.1.10-1.fc13` installed; both with PARI 2.3.5 and the new PARI 2.4.3 svn snapshot from #9343.)\n\nI'll examine that later in more detail.",
+    "body": "Replying to [comment:15 ggrafendorfer]:\n> Here is my report to the pari project and the answer:\n> \n> > Hi,\n\n> >\n> > there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:\n\n> >\n> > http://trac.sagemath.org/sage_trac/ticket/9722\n\n> >\n> >\n> > I tried to build pari separately (stand alone) but also does not work:\n> >\n> > After successful configuration pari does not build in 2 different cases:\n> >\n> > AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file \"log_with_fltk-devel\" attached\n> >\n> > Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file \"log_without_fltk-devel\" attached\n\n> \n> Hello Georg,\n> \n> On both system, there is libfltk library installed in /usr/local/lib64/, but no\n> matching header files in /usr/local/include is provided, so compiling fltk does not work.\n> Configure output a warning:\n> \n> ###\n> ### libX11.so not found. Please install X11 development files.\n> ### They usually come in XFree86-devel (RPM) or xlibs-dev (Debian) packages\n> ###\n> ### X11 not found\n> ###\n> \n> So either install XFree86-devel (or whathever is the correct name of fedora) or use\n> --graphic=none to disable graphics.\n> \n> Installing fltk and fltk-devel does not work because the version of fltk it provides is\n> not compatible with the one in /usr/local/lib64/ (this is only a guess).\n> \n> Cheers,\n> Bill.\n\n\nIn any case, PARI shouldn't attempt to build with FLTK support if no (or not matching) header files are present; the second (linker) error is also definitely a bug, which currently only shows up on Fedora 13 (and derivatives) due to [stricter linkage rules](http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).\n\nI couldn't (yet) reproduce the errors on 32-bit Fedora 13 though, most probably because *other* headers and libraries weren't installed. (I tested installing Sage's PARI spkg with only `fltk-1.1.10-1.fc13`, and then in addition `fltk-devel-1.1.10-1.fc13` installed; both with PARI 2.3.5 and the new PARI 2.4.3 svn snapshot from #9343.)\n\nI'll examine that later in more detail.",
     "created_at": "2010-08-16T18:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -823,10 +839,13 @@ Replying to [comment:15 ggrafendorfer]:
 > Here is my report to the pari project and the answer:
 > 
 > > Hi,
+
 > >
 > > there are some problems with the pari package when building sage (http://www.sagemath.org) reported here:
+
 > >
 > > http://trac.sagemath.org/sage_trac/ticket/9722
+
 > >
 > >
 > > I tried to build pari separately (stand alone) but also does not work:
@@ -836,6 +855,7 @@ Replying to [comment:15 ggrafendorfer]:
 > > AMD Phenom II X4 925, Fedora 13, with fltk and fltk-devel installed: for log-message see file "log_with_fltk-devel" attached
 > >
 > > Esprimo 64bit, Fedora 13, with fltk, but not fltk-devel installed: for log-message see file "log_without_fltk-devel" attached
+
 > 
 > Hello Georg,
 > 
@@ -858,6 +878,7 @@ Replying to [comment:15 ggrafendorfer]:
 > 
 > Cheers,
 > Bill.
+
 
 In any case, PARI shouldn't attempt to build with FLTK support if no (or not matching) header files are present; the second (linker) error is also definitely a bug, which currently only shows up on Fedora 13 (and derivatives) due to [stricter linkage rules](http://fedoraproject.org/wiki/UnderstandingDSOLinkChange).
 
@@ -912,7 +933,7 @@ For now, can we bypass PARI's FLTK checks altogether because/when we use `--grap
 archive/issue_comments_094768.json:
 ```json
 {
-    "body": "Replying to [comment:18 mpatel]:\n> Should we reply to the PARI developers with Leif's points?\n> \n> For now, can we bypass PARI's FLTK checks altogether because/when we use `--graphic=none`?\n\nCf. also #9343. I couldn't reproduce PARI attempting to build FLTK on any system, including Fedora 13 (32-bit though).\n\nAnd we already pass `--graphic=none` to PARI's `Configure`...\n\n(I wonder if Georg *wanted* PARI to use X11/FLTK.)\n\nThe missing libstdc++ in `plotfltk`'s libraries is of course a bug (which my patch solves).",
+    "body": "Replying to [comment:18 mpatel]:\n> Should we reply to the PARI developers with Leif's points?\n> \n> For now, can we bypass PARI's FLTK checks altogether because/when we use `--graphic=none`?\n\n\nCf. also #9343. I couldn't reproduce PARI attempting to build FLTK on any system, including Fedora 13 (32-bit though).\n\nAnd we already pass `--graphic=none` to PARI's `Configure`...\n\n(I wonder if Georg *wanted* PARI to use X11/FLTK.)\n\nThe missing libstdc++ in `plotfltk`'s libraries is of course a bug (which my patch solves).",
     "created_at": "2010-08-19T09:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -925,6 +946,7 @@ Replying to [comment:18 mpatel]:
 > Should we reply to the PARI developers with Leif's points?
 > 
 > For now, can we bypass PARI's FLTK checks altogether because/when we use `--graphic=none`?
+
 
 Cf. also #9343. I couldn't reproduce PARI attempting to build FLTK on any system, including Fedora 13 (32-bit though).
 
@@ -959,7 +981,7 @@ s/build FLTK/build using FLTK/
 archive/issue_comments_094770.json:
 ```json
 {
-    "body": "We could in addition bypass (`if false && test ...`) this part of `Configure` for use with Sage:\n\n```sh\n...\nif test \"$optimization\" != profiling; then\n  . ./get_X11  # X11, X11_INC, X11_LIBS\n  . ./get_graphic_lib # which_graphic_lib\n  . ./get_fltk # FLTKDIR, FLTK_LIBS\n  . ./get_Qt   # QTDIR, QTLIB\n  echo \"Hi-Res Graphics: $which_graphic_lib\"\n  . ./get_readline # $_readline_list (includes 'readline')\nelse\n  which_graphic_lib=none\nfi\n...\n```\n\n\nBut that's not very nice, and unless I can reproduce the problem...\n\nAnd this would of course break graphics support for other users completely.",
+    "body": "We could in addition bypass (`if false && test ...`) this part of `Configure` for use with Sage:\n\n```sh\n...\nif test \"$optimization\" != profiling; then\n  . ./get_X11  # X11, X11_INC, X11_LIBS\n  . ./get_graphic_lib # which_graphic_lib\n  . ./get_fltk # FLTKDIR, FLTK_LIBS\n  . ./get_Qt   # QTDIR, QTLIB\n  echo \"Hi-Res Graphics: $which_graphic_lib\"\n  . ./get_readline # $_readline_list (includes 'readline')\nelse\n  which_graphic_lib=none\nfi\n...\n```\n\nBut that's not very nice, and unless I can reproduce the problem...\n\nAnd this would of course break graphics support for other users completely.",
     "created_at": "2010-08-19T09:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -984,7 +1006,6 @@ else
 fi
 ...
 ```
-
 
 But that's not very nice, and unless I can reproduce the problem...
 
@@ -1015,7 +1036,7 @@ Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI d
 archive/issue_comments_094772.json:
 ```json
 {
-    "body": "Georg, could you please check your environment settings?\n\n```sh\nuser@host$ printenv | grep fltk\n```\n\n\nI found PARI not resetting/initializing variables presumably intended to be locally used only...",
+    "body": "Georg, could you please check your environment settings?\n\n```sh\nuser@host$ printenv | grep fltk\n```\n\nI found PARI not resetting/initializing variables presumably intended to be locally used only...",
     "created_at": "2010-08-19T10:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1029,7 +1050,6 @@ Georg, could you please check your environment settings?
 ```sh
 user@host$ printenv | grep fltk
 ```
-
 
 I found PARI not resetting/initializing variables presumably intended to be locally used only...
 
@@ -1094,7 +1114,7 @@ Attachment [log_without_fltk-devel](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_094776.json:
 ```json
 {
-    "body": "Replying to [comment:22 leif]:\n> Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n\ndone, and here is my environment setting:\n\nggeorg`@`maschke% printenv | grep fltk\nggeorg`@`maschke% rpm -qa | grep fltk\nfltk-devel-1.1.10-1.fc13.x86_64\nfltk-1.1.10-1.fc13.x86_64\nggeorg`@`maschke%",
+    "body": "Replying to [comment:22 leif]:\n> Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n\n\ndone, and here is my environment setting:\n\nggeorg`@`maschke% printenv | grep fltk\nggeorg`@`maschke% rpm -qa | grep fltk\nfltk-devel-1.1.10-1.fc13.x86_64\nfltk-1.1.10-1.fc13.x86_64\nggeorg`@`maschke%",
     "created_at": "2010-08-19T14:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1105,6 +1125,7 @@ archive/issue_comments_094776.json:
 
 Replying to [comment:22 leif]:
 > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?
+
 
 done, and here is my environment setting:
 
@@ -1121,7 +1142,7 @@ ggeorg`@`maschke%
 archive/issue_comments_094777.json:
 ```json
 {
-    "body": "Replying to [comment:25 ggrafendorfer]:\n> Replying to [comment:22 leif]:\n> > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n> \n> done, and here is my environment setting:\n> \n\n```sh\nggeorg@maschke% printenv | grep fltk\nggeorg@maschke% rpm -qa | grep fltk\nfltk-devel-1.1.10-1.fc13.x86_64\nfltk-1.1.10-1.fc13.x86_64\nggeorg@maschke% \n```\n\n\nHmmm, I could [reproduce your compilation error](http://trac.sagemath.org/sage_trac/ticket/9343#comment:292) on Ubuntu, but only by e.g. `export with_fltk=yes` (with FLTK, but not its header files/devel package installed)...",
+    "body": "Replying to [comment:25 ggrafendorfer]:\n> Replying to [comment:22 leif]:\n> > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n\n> \n> done, and here is my environment setting:\n> \n\n{{{#!sh\nggeorg`@`maschke% printenv | grep fltk\nggeorg`@`maschke% rpm -qa | grep fltk\nfltk-devel-1.1.10-1.fc13.x86_64\nfltk-1.1.10-1.fc13.x86_64\nggeorg`@`maschke% \n}}}\n\nHmmm, I could [reproduce your compilation error](http://trac.sagemath.org/sage_trac/ticket/9343#comment:292) on Ubuntu, but only by e.g. `export with_fltk=yes` (with FLTK, but not its header files/devel package installed)...",
     "created_at": "2010-08-19T14:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1133,18 +1154,18 @@ archive/issue_comments_094777.json:
 Replying to [comment:25 ggrafendorfer]:
 > Replying to [comment:22 leif]:
 > > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?
+
 > 
 > done, and here is my environment setting:
 > 
 
-```sh
-ggeorg@maschke% printenv | grep fltk
-ggeorg@maschke% rpm -qa | grep fltk
+{{{#!sh
+ggeorg`@`maschke% printenv | grep fltk
+ggeorg`@`maschke% rpm -qa | grep fltk
 fltk-devel-1.1.10-1.fc13.x86_64
 fltk-1.1.10-1.fc13.x86_64
-ggeorg@maschke% 
-```
-
+ggeorg`@`maschke% 
+}}}
 
 Hmmm, I could [reproduce your compilation error](http://trac.sagemath.org/sage_trac/ticket/9343#comment:292) on Ubuntu, but only by e.g. `export with_fltk=yes` (with FLTK, but not its header files/devel package installed)...
 
@@ -1155,7 +1176,7 @@ Hmmm, I could [reproduce your compilation error](http://trac.sagemath.org/sage_t
 archive/issue_comments_094778.json:
 ```json
 {
-    "body": "Replying to [comment:25 ggrafendorfer]:\n> Replying to [comment:22 leif]:\n> > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n> \n> done\n\nThanks, does the same happen if you run `./Configure --graphic=none`?",
+    "body": "Replying to [comment:25 ggrafendorfer]:\n> Replying to [comment:22 leif]:\n> > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n\n> \n> done\n\n\nThanks, does the same happen if you run `./Configure --graphic=none`?",
     "created_at": "2010-08-19T15:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1167,8 +1188,10 @@ archive/issue_comments_094778.json:
 Replying to [comment:25 ggrafendorfer]:
 > Replying to [comment:22 leif]:
 > > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?
+
 > 
 > done
+
 
 Thanks, does the same happen if you run `./Configure --graphic=none`?
 
@@ -1179,7 +1202,7 @@ Thanks, does the same happen if you run `./Configure --graphic=none`?
 archive/issue_comments_094779.json:
 ```json
 {
-    "body": "Replying to [comment:27 leif]:\n> Replying to [comment:25 ggrafendorfer]:\n> > Replying to [comment:22 leif]:\n> > > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n> > \n> > done\n> \n> Thanks, does the same happen if you run `./Configure --graphic=none`?\n\nyes, I'll attach the log file,\n\nGeorg",
+    "body": "Replying to [comment:27 leif]:\n> Replying to [comment:25 ggrafendorfer]:\n> > Replying to [comment:22 leif]:\n> > > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?\n\n> > \n> > done\n\n> \n> Thanks, does the same happen if you run `./Configure --graphic=none`?\n\n\nyes, I'll attach the log file,\n\nGeorg",
     "created_at": "2010-08-19T15:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1192,10 +1215,13 @@ Replying to [comment:27 leif]:
 > Replying to [comment:25 ggrafendorfer]:
 > > Replying to [comment:22 leif]:
 > > > Georg, could you perhaps attach (upload) the two logfiles you sent to the PARI developers here, too?
+
 > > 
 > > done
+
 > 
 > Thanks, does the same happen if you run `./Configure --graphic=none`?
+
 
 yes, I'll attach the log file,
 
@@ -1208,7 +1234,7 @@ Georg
 archive/issue_comments_094780.json:
 ```json
 {
-    "body": "Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by @nexttime created at 2010-08-19 16:54:03\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n> \n> yes, I'll attach the log file,\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
+    "body": "Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-uuid/ticket9722/log_with_fltk-devel_--graphic=none) by @nexttime created at 2010-08-19 16:54:03\n\nReplying to [comment:28 ggrafendorfer]:\n> Replying to [comment:27 leif]:\n> > Thanks, does the same happen if you run `./Configure --graphic=none`?\n\n> \n> yes, I'll attach the log file,\n\n\nLOL, that's because you *don't* have *X11* development packages installed! :)\n\n`config/get_fltk`:\n\n```sh\nif test -z \"$with_fltk\"; then\n  case \"$which_graphic_lib\" in\n    fltk) with_fltk=yes;;\n  esac\n  if test -z \"$X11\"; then with_fltk=yes; fi\nfi\n...\n```\n\nPARI is really funny. I'll fix *all three* issues and upload a second patch here later...",
     "created_at": "2010-08-19T16:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1222,8 +1248,10 @@ Attachment [log_with_fltk-devel_--graphic=none](tarball://root/attachments/some-
 Replying to [comment:28 ggrafendorfer]:
 > Replying to [comment:27 leif]:
 > > Thanks, does the same happen if you run `./Configure --graphic=none`?
+
 > 
 > yes, I'll attach the log file,
+
 
 LOL, that's because you *don't* have *X11* development packages installed! :)
 
@@ -1238,7 +1266,6 @@ if test -z "$with_fltk"; then
 fi
 ...
 ```
-
 
 PARI is really funny. I'll fix *all three* issues and upload a second patch here later...
 
@@ -1287,7 +1314,7 @@ I haven't followed up on this ticket so much, but does the new version (see #934
 archive/issue_comments_094783.json:
 ```json
 {
-    "body": "Replying to [comment:30 jdemeyer]:\n> Whatever you do, it would be good to report these issues upstream.\n\nI thought *you* were our PARI spokesman... ;-)\n\n(I guess you'll speak French [too], btw.)\n\n> The PARI developers usually accept patches which fix bugs (although they are sometimes slow).\n\n:) I'm not that sure what the *intended* logic behind the graphics detection scripts is, so at least one of the fixes is rather targeted at PARI/GP *in Sage*.\n\nSo I'll first provide a patch for PARI 2.3.5[.p2] / Sage 4.5.3, then we can see what we report upstream and what we fix in (our) 2.4.3 svn / for #9343 / Sage 4.6.\n\n(The answer Georg got from upstream did not really address his problem btw.)\n \n> I haven't followed up on this ticket so much, but does the new version (see #9343) also need patching?\n\nYes, definitely, despite the scripts having changed between these versions.\nI've also commented on that at #9343 a few hours ago...",
+    "body": "Replying to [comment:30 jdemeyer]:\n> Whatever you do, it would be good to report these issues upstream.\n\n\nI thought *you* were our PARI spokesman... ;-)\n\n(I guess you'll speak French [too], btw.)\n\n> The PARI developers usually accept patches which fix bugs (although they are sometimes slow).\n\n\n:) I'm not that sure what the *intended* logic behind the graphics detection scripts is, so at least one of the fixes is rather targeted at PARI/GP *in Sage*.\n\nSo I'll first provide a patch for PARI 2.3.5[.p2] / Sage 4.5.3, then we can see what we report upstream and what we fix in (our) 2.4.3 svn / for #9343 / Sage 4.6.\n\n(The answer Georg got from upstream did not really address his problem btw.)\n \n> I haven't followed up on this ticket so much, but does the new version (see #9343) also need patching?\n\n\nYes, definitely, despite the scripts having changed between these versions.\nI've also commented on that at #9343 a few hours ago...",
     "created_at": "2010-08-19T18:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1299,11 +1326,13 @@ archive/issue_comments_094783.json:
 Replying to [comment:30 jdemeyer]:
 > Whatever you do, it would be good to report these issues upstream.
 
+
 I thought *you* were our PARI spokesman... ;-)
 
 (I guess you'll speak French [too], btw.)
 
 > The PARI developers usually accept patches which fix bugs (although they are sometimes slow).
+
 
 :) I'm not that sure what the *intended* logic behind the graphics detection scripts is, so at least one of the fixes is rather targeted at PARI/GP *in Sage*.
 
@@ -1312,6 +1341,7 @@ So I'll first provide a patch for PARI 2.3.5[.p2] / Sage 4.5.3, then we can see 
 (The answer Georg got from upstream did not really address his problem btw.)
  
 > I haven't followed up on this ticket so much, but does the new version (see #9343) also need patching?
+
 
 Yes, definitely, despite the scripts having changed between these versions.
 I've also commented on that at #9343 a few hours ago...
@@ -1323,7 +1353,7 @@ I've also commented on that at #9343 a few hours ago...
 archive/issue_comments_094784.json:
 ```json
 {
-    "body": "Replying to [comment:29 leif]:\n> PARI is really funny. I'll fix *all three* issues and upload a second patch here later...\n\nI would have guessed that adding `--graphic=none` makes `Configure` skip all graphics detection tests.\n\nI can make an updated spkg with your new patch and host it on sage.math.",
+    "body": "Replying to [comment:29 leif]:\n> PARI is really funny. I'll fix *all three* issues and upload a second patch here later...\n\n\nI would have guessed that adding `--graphic=none` makes `Configure` skip all graphics detection tests.\n\nI can make an updated spkg with your new patch and host it on sage.math.",
     "created_at": "2010-08-20T08:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1334,6 +1364,7 @@ archive/issue_comments_094784.json:
 
 Replying to [comment:29 leif]:
 > PARI is really funny. I'll fix *all three* issues and upload a second patch here later...
+
 
 I would have guessed that adding `--graphic=none` makes `Configure` skip all graphics detection tests.
 
@@ -1382,7 +1413,7 @@ Georg, could you look at [comment:ticket:9343:294 Jeroen's comment] at #9343 and
 archive/issue_comments_094787.json:
 ```json
 {
-    "body": "Cross-replying to [comment:ticket:9343:296 leif]:\n> I'm working on #9722 btw, still hoping that it will make it into 4.5.3, since I don't believe 4.6 will be ready in time, and/or don't expect people to install a brand new major release (despite the \".0\" missing) right before a new semester starts.\n\nThat's great!  Do you think, for any reason, it'll take more than two days, say, to fix all three problems?",
+    "body": "Cross-replying to [comment:ticket:9343:296 leif]:\n> I'm working on #9722 btw, still hoping that it will make it into 4.5.3, since I don't believe 4.6 will be ready in time, and/or don't expect people to install a brand new major release (despite the \".0\" missing) right before a new semester starts.\n\n\nThat's great!  Do you think, for any reason, it'll take more than two days, say, to fix all three problems?",
     "created_at": "2010-08-21T21:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1393,6 +1424,7 @@ archive/issue_comments_094787.json:
 
 Cross-replying to [comment:ticket:9343:296 leif]:
 > I'm working on #9722 btw, still hoping that it will make it into 4.5.3, since I don't believe 4.6 will be ready in time, and/or don't expect people to install a brand new major release (despite the ".0" missing) right before a new semester starts.
+
 
 That's great!  Do you think, for any reason, it'll take more than two days, say, to fix all three problems?
 
@@ -1510,7 +1542,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094793.json:
 ```json
 {
-    "body": "I've compiled a `pari-2.3.5.p4-preview.spkg` (changes not yet checked in, still testing on some systems with various combinations of parameters and installed packages):\n\n```\n### pari-2.3.5.p4 (Leif Leonhardy, August 23th 2010)\n * #9722: \"--graphic=none\" is now respected by PARI. We still look\n   for graphics libraries, but don't use them in that case (see below,\n   too).\n * #9722: Improved patch to config/get_fltk (makes sure the header\n   files are present, too, if the FLTK library was found - fixes\n   compiler error on IMHO misconfigured installations).\n   We still look for FLTK components even if \"--graphic=none\" was\n   specified, and print appropriate messages, but then simply do not\n   use them.\n * #9722: New patch to config/get_X11:\n   - Added/corrected/clarified messages regarding what was (not) found,\n     and if this is really relevant.\n   - An X11 library in */lib64/* will be found now, too (if we do a\n     64-bit build); on Fedora, libX11.so is located in /usr/lib64.\n   - Added comments.\n * spkg-install:\n   - Clear (unset) lots of variables that might (unintentionally) be\n     used by PARI; perhaps upstream should initialize them.\n   - Clear GP_INSTALL_PREFIX, which is interpreted by PARI.\n   - Added help & informational message regarding PARI_EXTRA_OPTS; in\n     addition, allow the user to override Sage's \"--graphic=none\"\n     since this now works (see above; we don't want to annoy users\n     that perhaps previously made use of GP's plotting support).\n * Clean-up in spkg-install:\n   - Quote more environment variables (including SAGE_LOCAL).\n   - Consistently use $UNAME instead of `uname` (set in sage-env).\n   - Added some comments.\n * NOTE: At least some of these changes should be incorporated into\n   our PARI 2.4.3 (svn 12577, see #9343), and/or reported upstream.\n   I haven't changed config/get_Qt. It seems Qt support is broken on\n   newer systems (because Qt <=3 is expected), but this doesn't break\n   the build, only Qt will not be used.\n```\n\nContact me if you are interested in testing this, too. (Appreciated.)\n\n-Leif",
+    "body": "I've compiled a `pari-2.3.5.p4-preview.spkg` (changes not yet checked in, still testing on some systems with various combinations of parameters and installed packages):\n\n```\n### pari-2.3.5.p4 (Leif Leonhardy, August 23th 2010)\n * #9722: \"--graphic=none\" is now respected by PARI. We still look\n   for graphics libraries, but don't use them in that case (see below,\n   too).\n * #9722: Improved patch to config/get_fltk (makes sure the header\n   files are present, too, if the FLTK library was found - fixes\n   compiler error on IMHO misconfigured installations).\n   We still look for FLTK components even if \"--graphic=none\" was\n   specified, and print appropriate messages, but then simply do not\n   use them.\n * #9722: New patch to config/get_X11:\n   - Added/corrected/clarified messages regarding what was (not) found,\n     and if this is really relevant.\n   - An X11 library in */lib64/* will be found now, too (if we do a\n     64-bit build); on Fedora, libX11.so is located in /usr/lib64.\n   - Added comments.\n * spkg-install:\n   - Clear (unset) lots of variables that might (unintentionally) be\n     used by PARI; perhaps upstream should initialize them.\n   - Clear GP_INSTALL_PREFIX, which is interpreted by PARI.\n   - Added help & informational message regarding PARI_EXTRA_OPTS; in\n     addition, allow the user to override Sage's \"--graphic=none\"\n     since this now works (see above; we don't want to annoy users\n     that perhaps previously made use of GP's plotting support).\n * Clean-up in spkg-install:\n   - Quote more environment variables (including SAGE_LOCAL).\n   - Consistently use $UNAME instead of `uname` (set in sage-env).\n   - Added some comments.\n * NOTE: At least some of these changes should be incorporated into\n   our PARI 2.4.3 (svn 12577, see #9343), and/or reported upstream.\n   I haven't changed config/get_Qt. It seems Qt support is broken on\n   newer systems (because Qt <=3 is expected), but this doesn't break\n   the build, only Qt will not be used.\n```\nContact me if you are interested in testing this, too. (Appreciated.)\n\n-Leif",
     "created_at": "2010-08-23T04:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1556,7 +1588,6 @@ I've compiled a `pari-2.3.5.p4-preview.spkg` (changes not yet checked in, still 
    newer systems (because Qt <=3 is expected), but this doesn't break
    the build, only Qt will not be used.
 ```
-
 Contact me if you are interested in testing this, too. (Appreciated.)
 
 -Leif
@@ -1588,7 +1619,7 @@ Note that this currently is just a diff, not a proper Mercurial patch ("changese
 archive/issue_comments_094795.json:
 ```json
 {
-    "body": "Replying to [comment:39 leif]:\n> I've attached a [diff between the p3 and the p4-preview spkg](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9722/trac_9722-pari-2.3.5.p3-p4.patch), in case anybody is interested... ;-)\n\nThat's a lot of stuff to look at :-)\n\nI am personally a fan of GNU `autoconf` for these situations because a lot of these checks can be simplified. However, I tried in vain to convince the PARI/GP developers to use `autoconf`. Maybe I should do it for Sage just to prove a point...",
+    "body": "Replying to [comment:39 leif]:\n> I've attached a [diff between the p3 and the p4-preview spkg](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9722/trac_9722-pari-2.3.5.p3-p4.patch), in case anybody is interested... ;-)\n\n\nThat's a lot of stuff to look at :-)\n\nI am personally a fan of GNU `autoconf` for these situations because a lot of these checks can be simplified. However, I tried in vain to convince the PARI/GP developers to use `autoconf`. Maybe I should do it for Sage just to prove a point...",
     "created_at": "2010-08-23T07:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1599,6 +1630,7 @@ archive/issue_comments_094795.json:
 
 Replying to [comment:39 leif]:
 > I've attached a [diff between the p3 and the p4-preview spkg](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9722/trac_9722-pari-2.3.5.p3-p4.patch), in case anybody is interested... ;-)
+
 
 That's a lot of stuff to look at :-)
 
@@ -1637,7 +1669,7 @@ I'll update the attached diff here, and after a bit more testing also a link to 
 archive/issue_comments_094797.json:
 ```json
 {
-    "body": "Replying to [comment:41 leif]:\n> Some people call it GNU autocrap...\nI know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.",
+    "body": "Replying to [comment:41 leif]:\n> Some people call it GNU autocrap...\n\nI know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.",
     "created_at": "2010-08-23T08:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1648,6 +1680,7 @@ archive/issue_comments_094797.json:
 
 Replying to [comment:41 leif]:
 > Some people call it GNU autocrap...
+
 I know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.
 
 
@@ -1695,7 +1728,7 @@ Just to ease seeing some of the changes I made... (Do not apply, it's in the pat
 archive/issue_comments_094800.json:
 ```json
 {
-    "body": "Replying to [comment:42 jdemeyer]:\n> Replying to [comment:41 leif]:\n> > Some people call it GNU autocrap...\n> I know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.\n\nI'm with Jeroen on that. Properly used, `autoconf` can simplify the build process considerably. \n\nOf course, any tool badly used can result in a mess. There's one part of Sage where `Makefile.am` is a file that one is expected to edit for \"site customisation\". Clearly the person using it did not have a clue what he/she was doing. \n\nI would strongly suggest the Pari developers move to `autoconf/automake`. I've personally not used `libtool` for development, so can't really comment on that. \n\nPari's system, where there are specific targets, is always going to be a problem when versions of operating systems change and people have different search order for their PATH. In contrast, the `autoconf` system tests what actually works, using the settings the person building the code has. \n\nAlso, the autoconf/automake mailing lists are very active and helpful. In contrast, I've found with `SCons`, which is another build tool used in Sage, that getting help is very difficult. That takes too much control away from the programmer. I know there's one part of Sage (I forget which) where a developer removed SCons code and replaced it by a Makefile. \n\nDave",
+    "body": "Replying to [comment:42 jdemeyer]:\n> Replying to [comment:41 leif]:\n> > Some people call it GNU autocrap...\n\n> I know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.\n\nI'm with Jeroen on that. Properly used, `autoconf` can simplify the build process considerably. \n\nOf course, any tool badly used can result in a mess. There's one part of Sage where `Makefile.am` is a file that one is expected to edit for \"site customisation\". Clearly the person using it did not have a clue what he/she was doing. \n\nI would strongly suggest the Pari developers move to `autoconf/automake`. I've personally not used `libtool` for development, so can't really comment on that. \n\nPari's system, where there are specific targets, is always going to be a problem when versions of operating systems change and people have different search order for their PATH. In contrast, the `autoconf` system tests what actually works, using the settings the person building the code has. \n\nAlso, the autoconf/automake mailing lists are very active and helpful. In contrast, I've found with `SCons`, which is another build tool used in Sage, that getting help is very difficult. That takes too much control away from the programmer. I know there's one part of Sage (I forget which) where a developer removed SCons code and replaced it by a Makefile. \n\nDave",
     "created_at": "2010-08-23T08:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1707,6 +1740,7 @@ archive/issue_comments_094800.json:
 Replying to [comment:42 jdemeyer]:
 > Replying to [comment:41 leif]:
 > > Some people call it GNU autocrap...
+
 > I know some people are against it (for reasons which I never fully understand), but given the choice between editing a configure.ac script and PARI's mess, I will choose the former.
 
 I'm with Jeroen on that. Properly used, `autoconf` can simplify the build process considerably. 
@@ -1772,7 +1806,7 @@ I've replaced the p4-preview diff by a Mercurial patch, and will shortly provide
 archive/issue_comments_094803.json:
 ```json
 {
-    "body": "Replying to [comment:44 leif]:\n> [...] will shortly provide a link to the \"final\" spkg, with all changes committed.\n\nNew spkg now available: http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg\n\n> *\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\nI think the easiest way to test this is to copy it into `$SAGE_ROOT/spkg/standard`, set and export `PARI_EXTRA_OPTS` as you like, and then do:\n\n```sh\n$ ./sage -f pari-2.3.5.p4 2>&1 | tee my_log-parameters.log\n```\n\nThe \"cumulative\" spkg install log automatically created by Sage is `$SAGE_ROOT/spkg/logs/pari-2.3.5.p4.log`.\n\nPotential settings for `PARI_EXTRA_OPTS` are:\n* empty / unset (no graphics support; default)\n* `--graphic=auto` (should use X11 if available)\n* `--with-fltk`\n* `--with-qt` (likely to not build on newer systems, requires some Qt development packages too, i.e. *can* lead to build errors; should disable graphics support if no Qt libraries are found)\n\nThanks for testing this; we really would like to release Sage 4.5.3[.rc0]...\n\nP.S.: Should work on all reported machines at ETH Z\u00fcrich, too (with or without `fltk-devel`, even if `--with-fltk` was specified). ;-)\n\nOf course Sage can also be built from scratch with this spkg; just copy the spkg as mentioned above to `spkg/standard` (Sage will automatically pick the newest), and then type `make` or `make build`.\n\n\n> (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n\nAlso installed without problems on Sage 4.5.2, now running `ptest`.\n\nP.P.S.: The positive review of this ticket currently only applies to the p3 spkg.",
+    "body": "Replying to [comment:44 leif]:\n> [...] will shortly provide a link to the \"final\" spkg, with all changes committed.\n\n\nNew spkg now available: http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg\n\n> *\"Please build, test, and report!  We'd love to hear about your experiences with this new package.\"*<sup>TM</sup>\n\n\nI think the easiest way to test this is to copy it into `$SAGE_ROOT/spkg/standard`, set and export `PARI_EXTRA_OPTS` as you like, and then do:\n\n```sh\n$ ./sage -f pari-2.3.5.p4 2>&1 | tee my_log-parameters.log\n```\nThe \"cumulative\" spkg install log automatically created by Sage is `$SAGE_ROOT/spkg/logs/pari-2.3.5.p4.log`.\n\nPotential settings for `PARI_EXTRA_OPTS` are:\n* empty / unset (no graphics support; default)\n* `--graphic=auto` (should use X11 if available)\n* `--with-fltk`\n* `--with-qt` (likely to not build on newer systems, requires some Qt development packages too, i.e. *can* lead to build errors; should disable graphics support if no Qt libraries are found)\n\nThanks for testing this; we really would like to release Sage 4.5.3[.rc0]...\n\nP.S.: Should work on all reported machines at ETH Z\u00fcrich, too (with or without `fltk-devel`, even if `--with-fltk` was specified). ;-)\n\nOf course Sage can also be built from scratch with this spkg; just copy the spkg as mentioned above to `spkg/standard` (Sage will automatically pick the newest), and then type `make` or `make build`.\n\n\n> (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n\n\nAlso installed without problems on Sage 4.5.2, now running `ptest`.\n\nP.P.S.: The positive review of this ticket currently only applies to the p3 spkg.",
     "created_at": "2010-08-23T11:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1784,16 +1818,17 @@ archive/issue_comments_094803.json:
 Replying to [comment:44 leif]:
 > [...] will shortly provide a link to the "final" spkg, with all changes committed.
 
+
 New spkg now available: http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg
 
 > *"Please build, test, and report!  We'd love to hear about your experiences with this new package."*<sup>TM</sup>
+
 
 I think the easiest way to test this is to copy it into `$SAGE_ROOT/spkg/standard`, set and export `PARI_EXTRA_OPTS` as you like, and then do:
 
 ```sh
 $ ./sage -f pari-2.3.5.p4 2>&1 | tee my_log-parameters.log
 ```
-
 The "cumulative" spkg install log automatically created by Sage is `$SAGE_ROOT/spkg/logs/pari-2.3.5.p4.log`.
 
 Potential settings for `PARI_EXTRA_OPTS` are:
@@ -1810,6 +1845,7 @@ Of course Sage can also be built from scratch with this spkg; just copy the spkg
 
 
 > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)
+
 
 Also installed without problems on Sage 4.5.2, now running `ptest`.
 
@@ -1876,7 +1912,7 @@ I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've p
 archive/issue_comments_094807.json:
 ```json
 {
-    "body": "Replying to [comment:34 mpatel]:\n> Georg, could you look at [comment:ticket:9343:294 Jeroen's comment] at #9343 and let us know any results?\n\nworked fine on fedora 13, http://trac.sagemath.org/sage_trac/ticket/9343#comment:307\nsorry for the delay, it's my office machine,\n\nGeorg",
+    "body": "Replying to [comment:34 mpatel]:\n> Georg, could you look at [comment:ticket:9343:294 Jeroen's comment] at #9343 and let us know any results?\n\n\nworked fine on fedora 13, http://trac.sagemath.org/sage_trac/ticket/9343#comment:307\nsorry for the delay, it's my office machine,\n\nGeorg",
     "created_at": "2010-08-23T13:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1887,6 +1923,7 @@ archive/issue_comments_094807.json:
 
 Replying to [comment:34 mpatel]:
 > Georg, could you look at [comment:ticket:9343:294 Jeroen's comment] at #9343 and let us know any results?
+
 
 worked fine on fedora 13, http://trac.sagemath.org/sage_trac/ticket/9343#comment:307
 sorry for the delay, it's my office machine,
@@ -1924,7 +1961,7 @@ I've updated the description with a link to the new package.
 archive/issue_comments_094809.json:
 ```json
 {
-    "body": "Replying to [comment:48 mpatel]:\n> I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).\n\nI get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)",
+    "body": "Replying to [comment:48 mpatel]:\n> I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).\n\n\nI get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)",
     "created_at": "2010-08-23T14:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1936,6 +1973,7 @@ archive/issue_comments_094809.json:
 Replying to [comment:48 mpatel]:
 > I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).
 
+
 I get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)
 
 
@@ -1945,7 +1983,7 @@ I get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)
 archive/issue_comments_094810.json:
 ```json
 {
-    "body": "Replying to [comment:51 leif]:\n> Replying to [comment:48 mpatel]:\n> > I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).\n> \n> I get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)\n\nOops.  I should have set `PARI_EXTRA_OPTS=--graphic=X11`.  With this, I don't get an error.",
+    "body": "Replying to [comment:51 leif]:\n> Replying to [comment:48 mpatel]:\n> > I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).\n\n> \n> I get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)\n\n\nOops.  I should have set `PARI_EXTRA_OPTS=--graphic=X11`.  With this, I don't get an error.",
     "created_at": "2010-08-23T14:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1957,8 +1995,10 @@ archive/issue_comments_094810.json:
 Replying to [comment:51 leif]:
 > Replying to [comment:48 mpatel]:
 > > I get a build failure with `PARI_EXTRA_OPTS=--graphic=x11` on sage.math.  I've put the log [here](http://sage.math.washington.edu/home/mpatel/trac/9722/sage.math--graphic=x11.log).
+
 > 
 > I get the same error when I pass `--graphic=this_funny_thing`. (Honestly.) ;-)
+
 
 Oops.  I should have set `PARI_EXTRA_OPTS=--graphic=X11`.  With this, I don't get an error.
 
@@ -1969,7 +2009,7 @@ Oops.  I should have set `PARI_EXTRA_OPTS=--graphic=X11`.  With this, I don't ge
 archive/issue_comments_094811.json:
 ```json
 {
-    "body": "\n```sh\n[leif@quadriga tmp]$ cd pari-2.3.5.p4/src/\n[leif@quadriga src]$ ./Configure --help\nConfiguring pari-2.3.5 (STABLE) \nUsage: Configure [-ask|-help|-g|-pg] [ --load <filename> ] [ --prefix=<dir> ]\n\nOptions: some names can be abbreviated to one character (e.g -h = -help)\n-a, --ask        interactive configuration\n-h, --help       this message\n-l, --load       skip Configure and specify a default config file\n-s, --static     build static GP binary only\n-v, --verbhelp   a longer help message\nBuild Options:\n  --host=<arch-osname>  target achitecture\n  --kernel=<kern>       kernel used\n  --graphic=<gr>        graphic library used (default X11) (none X11 Qt fltk)\n  --time=<fun>          timing function to use (getrusage times ftime)\n  --builddir=<dir>      directory where the object files will be created\nAdditional developer options:\n  -g              creates debugging version (in Oxxx.dbg)\n  -pg             creates profiling version (in Oxxx.prf)\n\nInstallation directories:\n  --prefix=<dir>        install files in <dir> (default /usr/local)\n  --share-prefix=<dir>  as 'prefix', for architecture independent files\n  --bindir=<dir>        for binaries\n  --emacsdir=<dir>      for emacs macros\n  --includedir=<dir>    for C header files\n  --libdir=<dir>        for libraries\n  --mandir=<dir>        for manual pages\n  --sysdatadir=<dir>    for architecture-dependent data\n  --datadir=<dir>       for architecture-independent data \n\nOptional libraries:\n  --without-readline          do not link with GNU readline\n  --with-readline[=DIR]       use GNU readline [prefix for readline files]\n  --with-readline-include=DIR specify location of readline headers\n  --with-readline-lib=DIR     specify location of readline libs\n  --with-ncurses-lib=DIR      specify location of ncurses lib (for readline)\n\n  --without-gmp               use the native kernel instead of GNU MP\n  --with-gmp[=DIR]            use the GMP kernel [prefix for gmp files]\n  --with-gmp-include=DIR      specify location of gmp headers\n  --with-gmp-lib=DIR          specify location of gmp libs\n\n  --with-qt[=DIR]        use the Qt graphical library [prefix for Qt dir.]\n  --with-fltk[=DIR]      use the FLTK graphical library [prefix for FLTK dir.]\n```\n\n\nOf course we (or actually upstream) should catch such.",
+    "body": "```sh\n[leif@quadriga tmp]$ cd pari-2.3.5.p4/src/\n[leif@quadriga src]$ ./Configure --help\nConfiguring pari-2.3.5 (STABLE) \nUsage: Configure [-ask|-help|-g|-pg] [ --load <filename> ] [ --prefix=<dir> ]\n\nOptions: some names can be abbreviated to one character (e.g -h = -help)\n-a, --ask        interactive configuration\n-h, --help       this message\n-l, --load       skip Configure and specify a default config file\n-s, --static     build static GP binary only\n-v, --verbhelp   a longer help message\nBuild Options:\n  --host=<arch-osname>  target achitecture\n  --kernel=<kern>       kernel used\n  --graphic=<gr>        graphic library used (default X11) (none X11 Qt fltk)\n  --time=<fun>          timing function to use (getrusage times ftime)\n  --builddir=<dir>      directory where the object files will be created\nAdditional developer options:\n  -g              creates debugging version (in Oxxx.dbg)\n  -pg             creates profiling version (in Oxxx.prf)\n\nInstallation directories:\n  --prefix=<dir>        install files in <dir> (default /usr/local)\n  --share-prefix=<dir>  as 'prefix', for architecture independent files\n  --bindir=<dir>        for binaries\n  --emacsdir=<dir>      for emacs macros\n  --includedir=<dir>    for C header files\n  --libdir=<dir>        for libraries\n  --mandir=<dir>        for manual pages\n  --sysdatadir=<dir>    for architecture-dependent data\n  --datadir=<dir>       for architecture-independent data \n\nOptional libraries:\n  --without-readline          do not link with GNU readline\n  --with-readline[=DIR]       use GNU readline [prefix for readline files]\n  --with-readline-include=DIR specify location of readline headers\n  --with-readline-lib=DIR     specify location of readline libs\n  --with-ncurses-lib=DIR      specify location of ncurses lib (for readline)\n\n  --without-gmp               use the native kernel instead of GNU MP\n  --with-gmp[=DIR]            use the GMP kernel [prefix for gmp files]\n  --with-gmp-include=DIR      specify location of gmp headers\n  --with-gmp-lib=DIR          specify location of gmp libs\n\n  --with-qt[=DIR]        use the Qt graphical library [prefix for Qt dir.]\n  --with-fltk[=DIR]      use the FLTK graphical library [prefix for FLTK dir.]\n```\n\nOf course we (or actually upstream) should catch such.",
     "created_at": "2010-08-23T14:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -1977,7 +2017,6 @@ archive/issue_comments_094811.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```sh
 [leif@quadriga tmp]$ cd pari-2.3.5.p4/src/
@@ -2028,7 +2067,6 @@ Optional libraries:
   --with-fltk[=DIR]      use the FLTK graphical library [prefix for FLTK dir.]
 ```
 
-
 Of course we (or actually upstream) should catch such.
 
 
@@ -2038,7 +2076,7 @@ Of course we (or actually upstream) should catch such.
 archive/issue_comments_094812.json:
 ```json
 {
-    "body": "Replying to [comment:50 mpatel]:\n> **But does PARI 2.4.3.svn-12577 fix the problem anyway?**  Georg, could you try installing Jeroen's spkg with\n> \n>  `./sage -f http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg`\n> \n> ?  Sage will not work properly without other the changes at #9343 (and related tickets; see [NewPARI](http://wiki.sagemath.org/NewPARI)), but it would help to know.  Thanks for your patience.\n\nAnd more importantly for this ticket, does Leif's [new spkg](http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg) help on the ETH Z\u00fcrich Fedora 13 machines?",
+    "body": "Replying to [comment:50 mpatel]:\n> **But does PARI 2.4.3.svn-12577 fix the problem anyway?**  Georg, could you try installing Jeroen's spkg with\n> \n>  `./sage -f http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg`\n> \n> ?  Sage will not work properly without other the changes at #9343 (and related tickets; see [NewPARI](http://wiki.sagemath.org/NewPARI)), but it would help to know.  Thanks for your patience.\n\n\nAnd more importantly for this ticket, does Leif's [new spkg](http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg) help on the ETH Z\u00fcrich Fedora 13 machines?",
     "created_at": "2010-08-23T14:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -2053,6 +2091,7 @@ Replying to [comment:50 mpatel]:
 >  `./sage -f http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg`
 > 
 > ?  Sage will not work properly without other the changes at #9343 (and related tickets; see [NewPARI](http://wiki.sagemath.org/NewPARI)), but it would help to know.  Thanks for your patience.
+
 
 And more importantly for this ticket, does Leif's [new spkg](http://spkg-upload.googlecode.com/files/pari-2.3.5.p4.spkg) help on the ETH Zürich Fedora 13 machines?
 
@@ -2099,7 +2138,7 @@ Combined p2-p4 SPKG patch
 archive/issue_comments_094815.json:
 ```json
 {
-    "body": "Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by @nexttime created at 2010-08-23 15:07:33\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
+    "body": "Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticket9722/trac_9722-combined.patch) by @nexttime created at 2010-08-23 15:07:33\n\nReplying to [comment:45 leif]:\n> Replying to [comment:44 leif]:\n> > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)\n\n> \n> Also installed without problems on Sage 4.5.2, now running `ptest`.\n\n\n* Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).\n* Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).\n* Passed `make ptestlong` with Sage 4.5.3.alpha1, Fedora 13 x86_64 (Core2, gcc 4.4.4).",
     "created_at": "2010-08-23T15:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -2113,8 +2152,10 @@ Attachment [trac_9722-combined.patch](tarball://root/attachments/some-uuid/ticke
 Replying to [comment:45 leif]:
 > Replying to [comment:44 leif]:
 > > (I've so far only tested the spkg on top of Sage 4.5.3.alpha0 and 4.5.3.alpha1.)
+
 > 
 > Also installed without problems on Sage 4.5.2, now running `ptest`.
+
 
 * Passed `make ptest` with Sage 4.5.2, Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3).
 * Passed `make test` with Sage 4.5.3.alpha1, Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3).
@@ -2169,7 +2210,7 @@ The patch looks messy though, it might be non-trivial to port to #9343.
 archive/issue_comments_094818.json:
 ```json
 {
-    "body": "Replying to [comment:56 mpatel]:\n> The p4 package installs cleanly with various legal settings for `PARI_EXTRA_OPTS` on bsd, redhawk, sage, and t2.math.  The long doctests then pass on redhawk and sage.math.  I'm now running the tests on bsd and t2.\n\nThe long doctests also pass on bsd and t2.",
+    "body": "Replying to [comment:56 mpatel]:\n> The p4 package installs cleanly with various legal settings for `PARI_EXTRA_OPTS` on bsd, redhawk, sage, and t2.math.  The long doctests then pass on redhawk and sage.math.  I'm now running the tests on bsd and t2.\n\n\nThe long doctests also pass on bsd and t2.",
     "created_at": "2010-08-23T19:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -2181,6 +2222,7 @@ archive/issue_comments_094818.json:
 Replying to [comment:56 mpatel]:
 > The p4 package installs cleanly with various legal settings for `PARI_EXTRA_OPTS` on bsd, redhawk, sage, and t2.math.  The long doctests then pass on redhawk and sage.math.  I'm now running the tests on bsd and t2.
 
+
 The long doctests also pass on bsd and t2.
 
 
@@ -2190,7 +2232,7 @@ The long doctests also pass on bsd and t2.
 archive/issue_comments_094819.json:
 ```json
 {
-    "body": "Replying to [comment:58 ggrafendorfer]:\n> building sage 4.5.3.alpha1 from scratch works fine now on fedora 13,\n\nGreat!\n\nReplying to [comment:59 jdemeyer]:\n> The patch looks messy though, it might be non-trivial to port to #9343. \n\nYes.  I think we can ask for Leif's help.\n\nAlthough I can't test every branch in the patched `Configure` script, the changes look correct to me.  The package also installs and tests well on a variety of systems.",
+    "body": "Replying to [comment:58 ggrafendorfer]:\n> building sage 4.5.3.alpha1 from scratch works fine now on fedora 13,\n\n\nGreat!\n\nReplying to [comment:59 jdemeyer]:\n> The patch looks messy though, it might be non-trivial to port to #9343. \n\n\nYes.  I think we can ask for Leif's help.\n\nAlthough I can't test every branch in the patched `Configure` script, the changes look correct to me.  The package also installs and tests well on a variety of systems.",
     "created_at": "2010-08-23T22:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9722",
     "type": "issue_comment",
@@ -2202,10 +2244,12 @@ archive/issue_comments_094819.json:
 Replying to [comment:58 ggrafendorfer]:
 > building sage 4.5.3.alpha1 from scratch works fine now on fedora 13,
 
+
 Great!
 
 Replying to [comment:59 jdemeyer]:
 > The patch looks messy though, it might be non-trivial to port to #9343. 
+
 
 Yes.  I think we can ask for Leif's help.
 

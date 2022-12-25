@@ -53,7 +53,7 @@ Changing status from new to assigned.
 archive/issue_comments_044809.json:
 ```json
 {
-    "body": "This works fine for me.\n\n\n```\nreal    13m57.018s\nuser    8m13.339s\nsys     4m13.032s\nSuccessfully installed gmp-mpir-1.0.rc8\n```\n",
+    "body": "This works fine for me.\n\n```\nreal    13m57.018s\nuser    8m13.339s\nsys     4m13.032s\nSuccessfully installed gmp-mpir-1.0.rc8\n```",
     "created_at": "2009-04-11T05:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5741",
     "type": "issue_comment",
@@ -64,14 +64,12 @@ archive/issue_comments_044809.json:
 
 This works fine for me.
 
-
 ```
 real    13m57.018s
 user    8m13.339s
 sys     4m13.032s
 Successfully installed gmp-mpir-1.0.rc8
 ```
-
 
 
 
@@ -102,7 +100,7 @@ Michael
 archive/issue_comments_044811.json:
 ```json
 {
-    "body": "This is basically the fix to make ATLAS detect an Atom as a Core2. There is 32 and 64 bit tuning info:\n\n```\ndiff -r 0de046c62166 patches/archinfo_x86.c\n--- a/patches/archinfo_x86.c\tSat Feb 21 00:57:22 2009 -0800\n+++ b/patches/archinfo_x86.c\tFri Apr 17 19:09:51 2009 -0700\n@@ -301,6 +301,7 @@\n          break;\n       case 15:\n       case 23:\n+      case 28:\n       case 29:\n          iret = IntCore2;\n          break;\n```\n\n\nCheers,\n\nMichael",
+    "body": "This is basically the fix to make ATLAS detect an Atom as a Core2. There is 32 and 64 bit tuning info:\n\n```\ndiff -r 0de046c62166 patches/archinfo_x86.c\n--- a/patches/archinfo_x86.c\tSat Feb 21 00:57:22 2009 -0800\n+++ b/patches/archinfo_x86.c\tFri Apr 17 19:09:51 2009 -0700\n@@ -301,6 +301,7 @@\n          break;\n       case 15:\n       case 23:\n+      case 28:\n       case 29:\n          iret = IntCore2;\n          break;\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T02:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5741",
     "type": "issue_comment",
@@ -126,7 +124,6 @@ diff -r 0de046c62166 patches/archinfo_x86.c
           iret = IntCore2;
           break;
 ```
-
 
 Cheers,
 

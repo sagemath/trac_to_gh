@@ -3,7 +3,7 @@
 archive/issues_000075.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nJoe Wetherell's idea:\n\nOn Fri, 22 Sep 2006 00:51:17 -0700, Joseph L Wetherell <jlwether`@`alum.mit.edu> wrote:\n\n>> I really want to agree with you, but I also want to know: what do we\n>> do in the situations I outlined before? For example, if you do\n\n```\n>>\n>> sage: M = Matrix(QQ, 2, 2, range(4))\n>> sage: f = M.charpoly()\n>> sage: g = M.charpoly()\n```\n\n>> Now f and g have different parents, but you *can't* coerce g to the\n>> parent of f (or vice versa), because you can't assume the generators\n>> match up.\n>\n> OK, so perhaps the problem is that charpoly needs another argument\n> -- namely the variable in which the characteristic polynomial\n> is to be expressed.\n\nThat's a great idea.  Having an optional\n\n```\n   f = M.charpoly(x)\n```\n\nand/or\n\n```\n   f = M.charpoly(PolynomialRing(ZZ))\n```\n\nwouldn't break anything (it's optional), and would be easy \nto implement, and really just makes sense.  I like it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/75\n\n",
+    "body": "Assignee: somebody\n\nJoe Wetherell's idea:\n\nOn Fri, 22 Sep 2006 00:51:17 -0700, Joseph L Wetherell <jlwether`@`alum.mit.edu> wrote:\n\n>> I really want to agree with you, but I also want to know: what do we\n>> do in the situations I outlined before? For example, if you do\n\n{{{\n>>\n>> sage: M = Matrix(QQ, 2, 2, range(4))\n>> sage: f = M.charpoly()\n>> sage: g = M.charpoly()\n\n}}}\n>> Now f and g have different parents, but you *can't* coerce g to the\n>> parent of f (or vice versa), because you can't assume the generators\n>> match up.\n\n>\n> OK, so perhaps the problem is that charpoly needs another argument\n> -- namely the variable in which the characteristic polynomial\n> is to be expressed.\n\n\nThat's a great idea.  Having an optional\n\n```\n   f = M.charpoly(x)\n```\nand/or\n\n```\n   f = M.charpoly(PolynomialRing(ZZ))\n```\nwouldn't break anything (it's optional), and would be easy \nto implement, and really just makes sense.  I like it. \n\nIssue created by migration from https://trac.sagemath.org/ticket/75\n\n",
     "created_at": "2006-09-22T13:04:13Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,33 +25,33 @@ On Fri, 22 Sep 2006 00:51:17 -0700, Joseph L Wetherell <jlwether`@`alum.mit.edu>
 >> I really want to agree with you, but I also want to know: what do we
 >> do in the situations I outlined before? For example, if you do
 
-```
+{{{
 >>
 >> sage: M = Matrix(QQ, 2, 2, range(4))
 >> sage: f = M.charpoly()
 >> sage: g = M.charpoly()
-```
 
+}}}
 >> Now f and g have different parents, but you *can't* coerce g to the
 >> parent of f (or vice versa), because you can't assume the generators
 >> match up.
+
 >
 > OK, so perhaps the problem is that charpoly needs another argument
 > -- namely the variable in which the characteristic polynomial
 > is to be expressed.
+
 
 That's a great idea.  Having an optional
 
 ```
    f = M.charpoly(x)
 ```
-
 and/or
 
 ```
    f = M.charpoly(PolynomialRing(ZZ))
 ```
-
 wouldn't break anything (it's optional), and would be easy 
 to implement, and really just makes sense.  I like it. 
 
@@ -66,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/75
 archive/issue_comments_000382.json:
 ```json
 {
-    "body": "\n```\n> I like this idea. What you're really saying is: evaluate charpoly on\n> some ring element that I hand you. If that ring element is the\n> generator of some polynomial ring, then the charpoly code should be\n> smart enough to work in that ring from the beginning. You can\n> actually do something like this already, with pretty neat notation,\n> at the loss of some efficiency:\n>\n> sage: M = Matrix(QQ, 2, 2, range(4))\n> sage: f = M.charpoly()\n> sage: f\n>   x^2 - 3*x - 2\n> sage: R.<y> = PolynomialRing(QQ)\n> sage: f.parent() is R\n> False\n> sage: f(y)\n>   y^2 - 3*y - 2\n> sage: f(y).parent() is R\n> True\n>\n> Actually the efficiency loss maybe isn't too bad, if the __call__\n> method is smart enough to recognise when it's passed the ring\n> generator, it can just copy the coefficients (faster than computing\n> charpoly!! at least for large degree).\n\nIn fact, we could make\n    M.charpoly(z)\nwork for any z in any ring at all.\n\n> But you're right, it would be good if you could supply the variable\n> directly. Should we put this on trac?\n\n```\n",
+    "body": "```\n> I like this idea. What you're really saying is: evaluate charpoly on\n> some ring element that I hand you. If that ring element is the\n> generator of some polynomial ring, then the charpoly code should be\n> smart enough to work in that ring from the beginning. You can\n> actually do something like this already, with pretty neat notation,\n> at the loss of some efficiency:\n>\n> sage: M = Matrix(QQ, 2, 2, range(4))\n> sage: f = M.charpoly()\n> sage: f\n>   x^2 - 3*x - 2\n> sage: R.<y> = PolynomialRing(QQ)\n> sage: f.parent() is R\n> False\n> sage: f(y)\n>   y^2 - 3*y - 2\n> sage: f(y).parent() is R\n> True\n>\n> Actually the efficiency loss maybe isn't too bad, if the __call__\n> method is smart enough to recognise when it's passed the ring\n> generator, it can just copy the coefficients (faster than computing\n> charpoly!! at least for large degree).\n\nIn fact, we could make\n    M.charpoly(z)\nwork for any z in any ring at all.\n\n> But you're right, it would be good if you could supply the variable\n> directly. Should we put this on trac?\n\n```",
     "created_at": "2006-09-22T13:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/75",
     "type": "issue_comment",
@@ -74,7 +74,6 @@ archive/issue_comments_000382.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > I like this idea. What you're really saying is: evaluate charpoly on
@@ -112,13 +111,12 @@ work for any z in any ring at all.
 
 
 
-
 ---
 
 archive/issue_comments_000383.json:
 ```json
 {
-    "body": "\n```\nSay I'm doing some calculations in a power series ring with default\nprecision = N. Then I call some subroutine that happens to do some\npower series ring calculations too. It's possible that the subroutine\nwill change the precision for its own purposes. When it returns, my\nprecision has mysteriously changed to M. This can lead to all kinds\nof subtle bugs. Basically it would mean that if you use the\nglobalised ring, then you don't have any assurances that its\nprecision won't change from one step to the next. Unless you mean to\nstore a separate ring for each possible precision? Or maybe you mean\nto force the precision to remain constant for the globalised ring?\n \nGlobalized rings should be immutable, so all defining properties such\nas default precision, variable print name, etc., should be fixed.\nSAGE currently doesn't have any mutability stuff for rings yet, but it\nshould, exactly for this reason.\n }}}\n\n\nDefault precision shouldn't be changeable anyways, though. (It is, but\nit shouldn't be.)\nIt would suck if you call a function and suddenly the default precision\nof your ring gets changed.\n \nWilliam",
+    "body": "```\nSay I'm doing some calculations in a power series ring with default\nprecision = N. Then I call some subroutine that happens to do some\npower series ring calculations too. It's possible that the subroutine\nwill change the precision for its own purposes. When it returns, my\nprecision has mysteriously changed to M. This can lead to all kinds\nof subtle bugs. Basically it would mean that if you use the\nglobalised ring, then you don't have any assurances that its\nprecision won't change from one step to the next. Unless you mean to\nstore a separate ring for each possible precision? Or maybe you mean\nto force the precision to remain constant for the globalised ring?\n \nGlobalized rings should be immutable, so all defining properties such\nas default precision, variable print name, etc., should be fixed.\nSAGE currently doesn't have any mutability stuff for rings yet, but it\nshould, exactly for this reason.\n }}}\n\n\nDefault precision shouldn't be changeable anyways, though. (It is, but\nit shouldn't be.)\nIt would suck if you call a function and suddenly the default precision\nof your ring gets changed.\n \nWilliam",
     "created_at": "2006-09-22T14:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/75",
     "type": "issue_comment",
@@ -126,7 +124,6 @@ archive/issue_comments_000383.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Say I'm doing some calculations in a power series ring with default

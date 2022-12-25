@@ -67,7 +67,7 @@ It's still a bit slow, #5093 should fix this.
 archive/issue_comments_043668.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* Coverage isn't 100%:\n\n\n```\nteragon:sage-3.4 wstein$ sage -coverage devel/sage/sage/plot/complex_plot.pyx \n----------------------------------------------------------------------\ndevel/sage/sage/plot/complex_plot.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/plot/complex_plot.pyx: 85% (6 of 7)\n\nMissing doctests:\n\t * get_minmax_data(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _render_on_subplot(self, subplot):\n\n```\n\n\n* I was puzzled why I couldn't change the aspect ratio (this is *not* a general problem with contour plots (say) in Sage):\n\n```\ntime complex_plot(zeta, (-5, 5), (-5, 5)).show(aspect_ratio=4)\n```\n\n\nOtherwise the code looks very *very* good.",
+    "body": "REFEREE REPORT:\n\n* Coverage isn't 100%:\n\n```\nteragon:sage-3.4 wstein$ sage -coverage devel/sage/sage/plot/complex_plot.pyx \n----------------------------------------------------------------------\ndevel/sage/sage/plot/complex_plot.pyx\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/plot/complex_plot.pyx: 85% (6 of 7)\n\nMissing doctests:\n\t * get_minmax_data(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _render_on_subplot(self, subplot):\n\n```\n\n* I was puzzled why I couldn't change the aspect ratio (this is *not* a general problem with contour plots (say) in Sage):\n\n```\ntime complex_plot(zeta, (-5, 5), (-5, 5)).show(aspect_ratio=4)\n```\n\nOtherwise the code looks very *very* good.",
     "created_at": "2009-04-09T06:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_043668.json:
 REFEREE REPORT:
 
 * Coverage isn't 100%:
-
 
 ```
 teragon:sage-3.4 wstein$ sage -coverage devel/sage/sage/plot/complex_plot.pyx 
@@ -97,13 +96,11 @@ Possibly wrong (function name doesn't occur in doctests):
 
 ```
 
-
 * I was puzzled why I couldn't change the aspect ratio (this is *not* a general problem with contour plots (say) in Sage):
 
 ```
 time complex_plot(zeta, (-5, 5), (-5, 5)).show(aspect_ratio=4)
 ```
-
 
 Otherwise the code looks very *very* good.
 
@@ -114,7 +111,7 @@ Otherwise the code looks very *very* good.
 archive/issue_comments_043669.json:
 ```json
 {
-    "body": "I added a doctest to get coverage up to 100%. \n\nAs for the aspect ratio issue, no idea. The same happens with density_plot: \n\n\n```\nsage: density_plot(sin(x) - sin(y), (-5,5), (-5,5)).show(aspect_ratio=4)\n```\n\n\nMaybe we could move that to a new ticket.",
+    "body": "I added a doctest to get coverage up to 100%. \n\nAs for the aspect ratio issue, no idea. The same happens with density_plot: \n\n```\nsage: density_plot(sin(x) - sin(y), (-5,5), (-5,5)).show(aspect_ratio=4)\n```\n\nMaybe we could move that to a new ticket.",
     "created_at": "2009-04-09T07:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -127,11 +124,9 @@ I added a doctest to get coverage up to 100%.
 
 As for the aspect ratio issue, no idea. The same happens with density_plot: 
 
-
 ```
 sage: density_plot(sin(x) - sin(y), (-5,5), (-5,5)).show(aspect_ratio=4)
 ```
-
 
 Maybe we could move that to a new ticket.
 
@@ -181,7 +176,7 @@ Michael
 archive/issue_comments_043671.json:
 ```json
 {
-    "body": "Hmm, there are also the following two doctest failures:\n\n```\nsage -t -long devel/sage/sage/plot/complex_plot.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/plot/complex_plot.pyx\", line 146:\n    sage: p = complex_plot(x^2-1, (-2, 2), (-2, 2))\nExpected nothing\nGot:\n    doctest:325: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n    doctest:5554: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n    doctest:5545: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/plot/complex_plot.pyx\", line 162:\n    sage: p.get_minmax_data()\nExpected:\n    {'xmax': 2.0, 'xmin': -1.0, 'ymax': 4.0, 'ymin': -3.0}\nGot:\n    {'xmin': -1.0, 'ymin': -3.0, 'ymax': 4.0, 'xmax': 2.0}\n**********************************************************************\n```\n\n\nThe first one is trivial to fix by adding the variables to the plot ranges, the second one is caused by the dictionary being printing differently, so it might be a good idea to print the minmax_data as a list in a consistent format.\n\nI am bumping this ticket to 3.4.2 - if it is fixed it can still go into 3.4.1.\n\nCheers,\n\nMichael",
+    "body": "Hmm, there are also the following two doctest failures:\n\n```\nsage -t -long devel/sage/sage/plot/complex_plot.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/plot/complex_plot.pyx\", line 146:\n    sage: p = complex_plot(x^2-1, (-2, 2), (-2, 2))\nExpected nothing\nGot:\n    doctest:325: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n    doctest:5554: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n    doctest:5545: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/plot/complex_plot.pyx\", line 162:\n    sage: p.get_minmax_data()\nExpected:\n    {'xmax': 2.0, 'xmin': -1.0, 'ymax': 4.0, 'ymin': -3.0}\nGot:\n    {'xmin': -1.0, 'ymin': -3.0, 'ymax': 4.0, 'xmax': 2.0}\n**********************************************************************\n```\n\nThe first one is trivial to fix by adding the variables to the plot ranges, the second one is caused by the dictionary being printing differently, so it might be a good idea to print the minmax_data as a list in a consistent format.\n\nI am bumping this ticket to 3.4.2 - if it is fixed it can still go into 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-10T02:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -211,7 +206,6 @@ Got:
     {'xmin': -1.0, 'ymin': -3.0, 'ymax': 4.0, 'xmax': 2.0}
 **********************************************************************
 ```
-
 
 The first one is trivial to fix by adding the variables to the plot ranges, the second one is caused by the dictionary being printing differently, so it might be a good idea to print the minmax_data as a list in a consistent format.
 
@@ -332,7 +326,7 @@ archive/issue_events_013201.json:
 archive/issue_comments_043674.json:
 ```json
 {
-    "body": "> I've updated the patch, should pass doctests now. \n\nAs a reviewer I am finding this very annoying.  It means I have to somehow revert the patch in my own tree before I can safely apply yours *and* it makes it very very hard for me to see what you actually changed.  I would *much* rather have a part 2 patch that applies on top of the first one. \n\nOn a clean 3.4.1.rc1 build (which I think never had #5606 applied, so far as I can tell) I get:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/5606/5606-complex-plot.patch'\n)\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5606/5606-complex-plot.patch\nLoading: [..]\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/1031/tmp_2.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/1031/tmp_2.patch\npatching file sage/misc/log.py\nHunk #1 FAILED at 64\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/log.py.rej\npatching file sage/misc/mathml.py\nHunk #1 FAILED at 26\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/mathml.py.rej\nfile sage/plot/complex_plot.pyx already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/complex_plot.pyx.rej\nabort: patch failed to apply\n\nsage: hg_sage.log()\nchangeset:   11933:470a0a0e9a2c\ntag:         tip\nuser:        mabshoff@sage.math.washington.edu\ndate:        Sun Apr 05 23:49:53 2009 -0700\nsummary:     3.4.1.rc1\n\n...\n```\n",
+    "body": "> I've updated the patch, should pass doctests now. \n\n\nAs a reviewer I am finding this very annoying.  It means I have to somehow revert the patch in my own tree before I can safely apply yours *and* it makes it very very hard for me to see what you actually changed.  I would *much* rather have a part 2 patch that applies on top of the first one. \n\nOn a clean 3.4.1.rc1 build (which I think never had #5606 applied, so far as I can tell) I get:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/5606/5606-complex-plot.patch'\n)\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5606/5606-complex-plot.patch\nLoading: [..]\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/1031/tmp_2.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/1031/tmp_2.patch\npatching file sage/misc/log.py\nHunk #1 FAILED at 64\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/log.py.rej\npatching file sage/misc/mathml.py\nHunk #1 FAILED at 26\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/mathml.py.rej\nfile sage/plot/complex_plot.pyx already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/plot/complex_plot.pyx.rej\nabort: patch failed to apply\n\nsage: hg_sage.log()\nchangeset:   11933:470a0a0e9a2c\ntag:         tip\nuser:        mabshoff@sage.math.washington.edu\ndate:        Sun Apr 05 23:49:53 2009 -0700\nsummary:     3.4.1.rc1\n\n...\n```",
     "created_at": "2009-04-10T14:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
@@ -342,6 +336,7 @@ archive/issue_comments_043674.json:
 ```
 
 > I've updated the patch, should pass doctests now. 
+
 
 As a reviewer I am finding this very annoying.  It means I have to somehow revert the patch in my own tree before I can safely apply yours *and* it makes it very very hard for me to see what you actually changed.  I would *much* rather have a part 2 patch that applies on top of the first one. 
 
@@ -375,7 +370,6 @@ summary:     3.4.1.rc1
 
 ...
 ```
-
 
 
 

@@ -68,7 +68,7 @@ archive/issue_events_008747.json:
 archive/issue_comments_027037.json:
 ```json
 {
-    "body": "The __call__ method on morphisms implements the same thing already.\n\n```\nsage: psi = CC['x'].hom([-CC['x'].0]) \nsage: J = ideal([CC['x'].0 + 1]); J \nPrincipal ideal (1.00000000000000*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\nsage: psi(J)\nPrincipal ideal ((-1.00000000000000)*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\n```\n\n\nThus it seems to me that  the following three lines \n\n\n```\n \t337\t        R = phi.codomain() \n \t338\t        image = R.ideal([phi(z) for z in self.gens()]) \n \t339\t        return image \n```\n\n\nshould be replaced by\n\n```\nreturn phi(R)\n```\n\n\n -- William",
+    "body": "The __call__ method on morphisms implements the same thing already.\n\n```\nsage: psi = CC['x'].hom([-CC['x'].0]) \nsage: J = ideal([CC['x'].0 + 1]); J \nPrincipal ideal (1.00000000000000*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\nsage: psi(J)\nPrincipal ideal ((-1.00000000000000)*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\n```\n\nThus it seems to me that  the following three lines \n\n```\n \t337\t        R = phi.codomain() \n \t338\t        image = R.ideal([phi(z) for z in self.gens()]) \n \t339\t        return image \n```\n\nshould be replaced by\n\n```\nreturn phi(R)\n```\n\n -- William",
     "created_at": "2008-08-13T02:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
@@ -87,9 +87,7 @@ sage: psi(J)
 Principal ideal ((-1.00000000000000)*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision
 ```
 
-
 Thus it seems to me that  the following three lines 
-
 
 ```
  	337	        R = phi.codomain() 
@@ -97,13 +95,11 @@ Thus it seems to me that  the following three lines
  	339	        return image 
 ```
 
-
 should be replaced by
 
 ```
 return phi(R)
 ```
-
 
  -- William
 
@@ -346,7 +342,7 @@ Michael
 archive/issue_comments_027047.json:
 ```json
 {
-    "body": "Replying to [comment:9 mabshoff]:\n> Merged 3812_doctest.patch **only** in Sage 3.4.1.rc2.\n> \n> Cheers,\n> \n> Michael\nSorry for the confusion: you are right, 100% credit to Nick and the last patch on its own includes his original plus my trivial fix.  John",
+    "body": "Replying to [comment:9 mabshoff]:\n> Merged 3812_doctest.patch **only** in Sage 3.4.1.rc2.\n> \n> Cheers,\n> \n> Michael\n\nSorry for the confusion: you are right, 100% credit to Nick and the last patch on its own includes his original plus my trivial fix.  John",
     "created_at": "2009-04-11T13:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
@@ -361,4 +357,5 @@ Replying to [comment:9 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 Sorry for the confusion: you are right, 100% credit to Nick and the last patch on its own includes his original plus my trivial fix.  John

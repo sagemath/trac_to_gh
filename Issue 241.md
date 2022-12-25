@@ -3,7 +3,7 @@
 archive/issues_000241.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nHi William,\n \nI don't consider this correct:\n \nsage: x = -8\nsage: x.mod(3)\n-2\nsage: x = 8\nsage: x.mod(3)\n2\n \nIf the convention where to return a value in (-n/2,n/2] rather than \n[0,n) then this could be justified.  But the output should depend \nonly on x in Z/3Z, not on the representative.\n \nIt is also called in a rather convoluted way -- by creating an \nideal then calling reduce on the ideal, then extracting the principal \ngenerator for the ideal.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/241\n\n",
+    "body": "Assignee: somebody\n\n```\nHi William,\n \nI don't consider this correct:\n \nsage: x = -8\nsage: x.mod(3)\n-2\nsage: x = 8\nsage: x.mod(3)\n2\n \nIf the convention where to return a value in (-n/2,n/2] rather than \n[0,n) then this could be justified.  But the output should depend \nonly on x in Z/3Z, not on the representative.\n \nIt is also called in a rather convoluted way -- by creating an \nideal then calling reduce on the ideal, then extracting the principal \ngenerator for the ideal.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/241\n\n",
     "created_at": "2007-02-03T19:13:09Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +16,6 @@ archive/issues_000241.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 Hi William,
@@ -38,7 +37,6 @@ It is also called in a rather convoluted way -- by creating an
 ideal then calling reduce on the ideal, then extracting the principal 
 generator for the ideal.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/241
 

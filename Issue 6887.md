@@ -158,7 +158,7 @@ Here's the patch, ready for review. There's more to be done but this is a useful
 archive/issue_comments_056803.json:
 ```json
 {
-    "body": "I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n\n\n```\nsage: hg_sage.apply('trac_6887-isogeny.patch')\n...\n/usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n\nabort: patch command failed: exited with status 2\n```\n",
+    "body": "I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n\n```\nsage: hg_sage.apply('trac_6887-isogeny.patch')\n...\n/usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n\nabort: patch command failed: exited with status 2\n```",
     "created_at": "2009-11-27T17:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -168,7 +168,6 @@ archive/issue_comments_056803.json:
 ```
 
 I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?
-
 
 ```
 sage: hg_sage.apply('trac_6887-isogeny.patch')
@@ -180,13 +179,12 @@ abort: patch command failed: exited with status 2
 
 
 
-
 ---
 
 archive/issue_comments_056804.json:
 ```json
 {
-    "body": "Replying to [comment:5 wuthrich]:\n> I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n> \n> {{{\n> sage: hg_sage.apply('trac_6887-isogeny.patch')\n> ...\n> /usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n> \n> abort: patch command failed: exited with status 2\n> }}}\n\nHow weird -- I did not edit any \"introspect\" files.  I will try to edit the patch, and try the result myself against 4.3.alpha0, and repost it.",
+    "body": "Replying to [comment:5 wuthrich]:\n> I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n> \n> \n> ```\n> sage: hg_sage.apply('trac_6887-isogeny.patch')\n> ...\n> /usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n> \n> abort: patch command failed: exited with status 2\n> ```\n\n\nHow weird -- I did not edit any \"introspect\" files.  I will try to edit the patch, and try the result myself against 4.3.alpha0, and repost it.",
     "created_at": "2009-11-27T20:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -198,13 +196,15 @@ archive/issue_comments_056804.json:
 Replying to [comment:5 wuthrich]:
 > I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?
 > 
-> {{{
+> 
+> ```
 > sage: hg_sage.apply('trac_6887-isogeny.patch')
 > ...
 > /usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>
 > 
 > abort: patch command failed: exited with status 2
-> }}}
+> ```
+
 
 How weird -- I did not edit any "introspect" files.  I will try to edit the patch, and try the result myself against 4.3.alpha0, and repost it.
 
@@ -437,7 +437,7 @@ Great work, Jenny. I wish I would find summer students of that level myself !
 archive/issue_comments_056815.json:
 ```json
 {
-    "body": "> I will search tomorrow if a ticket exists already for this. \n\nThis is \"well known\".  I'm not sure whose patch broke this, but I sure as heck wish this would get fixed!",
+    "body": "> I will search tomorrow if a ticket exists already for this. \n\n\nThis is \"well known\".  I'm not sure whose patch broke this, but I sure as heck wish this would get fixed!",
     "created_at": "2009-12-10T07:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -447,6 +447,7 @@ archive/issue_comments_056815.json:
 ```
 
 > I will search tomorrow if a ticket exists already for this. 
+
 
 This is "well known".  I'm not sure whose patch broke this, but I sure as heck wish this would get fixed!
 
@@ -544,7 +545,7 @@ archive/issue_events_016195.json:
 archive/issue_comments_056818.json:
 ```json
 {
-    "body": "Replying to [comment:16 was]:\n> This will be merged in first thing for 4.3.1.\nThat's fine -- thanks!",
+    "body": "Replying to [comment:16 was]:\n> This will be merged in first thing for 4.3.1.\n\nThat's fine -- thanks!",
     "created_at": "2009-12-24T10:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
@@ -555,6 +556,7 @@ archive/issue_comments_056818.json:
 
 Replying to [comment:16 was]:
 > This will be merged in first thing for 4.3.1.
+
 That's fine -- thanks!
 
 

@@ -3,7 +3,7 @@
 archive/issues_000169.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nFrom \"Luislang\" \n\nFollowing session says it all.\n \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
+    "body": "Assignee: @williamstein\n\n```\nFrom \"Luislang\" \n\nFollowing session says it all.\n \n--------------------------------------------------------\n--------------------------------------------------------\n \nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n _2 = [0]\nsage: s[:1]=[1]\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<console>\", line 1, in ?\n  File \"gen.pyx\", line 417, in gen.gen.__setitem__\nIndexError: index (slice(0, 1, None)) must be between 0 and 1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/169\n\n",
     "created_at": "2006-11-15T15:44:35Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_000169.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 From "Luislang" 
@@ -38,7 +37,6 @@ Traceback (most recent call last):
 IndexError: index (slice(0, 1, None)) must be between 0 and 1
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/169
 
 
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/169
 archive/issue_comments_000751.json:
 ```json
 {
-    "body": "\n```\n \nI'm not understanding your question. Lists are mutable:\nsage: L = [0,0]\nsage: L[:1] = [1]\nsage: L\n [1, 0]\npari vectors apparently are not. Are you saying they should be?\nOr is it that you don't like the error message?\n \nThe problem is simply that I only implemented __setitem__ in\nthe case of an integer input.  He wants a more general __setitem__\nto be implemented also for PARI vectors, which are mutable:\nsage: s=pari.vector(2,[0,0])\nsage: s[0] = 5\nsage: s\n[5, 0]\n \nI think the problem is that I didn't realize \"s[slice] = blah\"\nwas a standard Python idiom, so I didn't implement support for\nit for the PARI C-library interface.\n \n }}}",
+    "body": "```\n \nI'm not understanding your question. Lists are mutable:\nsage: L = [0,0]\nsage: L[:1] = [1]\nsage: L\n [1, 0]\npari vectors apparently are not. Are you saying they should be?\nOr is it that you don't like the error message?\n \nThe problem is simply that I only implemented __setitem__ in\nthe case of an integer input.  He wants a more general __setitem__\nto be implemented also for PARI vectors, which are mutable:\nsage: s=pari.vector(2,[0,0])\nsage: s[0] = 5\nsage: s\n[5, 0]\n \nI think the problem is that I didn't realize \"s[slice] = blah\"\nwas a standard Python idiom, so I didn't implement support for\nit for the PARI C-library interface.\n \n }}}",
     "created_at": "2006-11-15T15:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ archive/issue_comments_000751.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
  
@@ -91,7 +88,7 @@ it for the PARI C-library interface.
 archive/issue_comments_000752.json:
 ```json
 {
-    "body": "So William, would still consider this worth fixing? Sage 2.8.2-rc3 still has this issue roughly 18months later :(\n\n```\nsage: s=pari.vector(2,[0,0])\nsage: sage: s[:1]\n[0]\nsage: s[:1]=[1]\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/gen.pyx in gen.gen.__setitem__()\n\n<type 'exceptions.IndexError'>: index (slice(None, 1, None)) must be between 0 and 1\n```\n\n\nCheers,\n\nMichael",
+    "body": "So William, would still consider this worth fixing? Sage 2.8.2-rc3 still has this issue roughly 18months later :(\n\n```\nsage: s=pari.vector(2,[0,0])\nsage: sage: s[:1]\n[0]\nsage: s[:1]=[1]\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/gen.pyx in gen.gen.__setitem__()\n\n<type 'exceptions.IndexError'>: index (slice(None, 1, None)) must be between 0 and 1\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-23T12:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -116,7 +113,6 @@ sage: s[:1]=[1]
 
 <type 'exceptions.IndexError'>: index (slice(None, 1, None)) must be between 0 and 1
 ```
-
 
 Cheers,
 
@@ -180,7 +176,7 @@ Resolution: fixed
 archive/issue_comments_000754.json:
 ```json
 {
-    "body": "Actually, this is already fixed:\n\n\n```\nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n[0]\nsage: s[:1]=[1]\nTrue\n```\n\n\nThe `__getslice__` function is also already doctested, so no need to add more. I'm closing this as fixed.",
+    "body": "Actually, this is already fixed:\n\n```\nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n[0]\nsage: s[:1]=[1]\nTrue\n```\n\nThe `__getslice__` function is also already doctested, so no need to add more. I'm closing this as fixed.",
     "created_at": "2008-11-14T05:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -191,7 +187,6 @@ archive/issue_comments_000754.json:
 
 Actually, this is already fixed:
 
-
 ```
 sage: s=pari.vector(2,[0,0])
 sage: s[:1]
@@ -199,7 +194,6 @@ sage: s[:1]
 sage: s[:1]=[1]
 True
 ```
-
 
 The `__getslice__` function is also already doctested, so no need to add more. I'm closing this as fixed.
 
@@ -316,7 +310,7 @@ Changing assignee from @williamstein to @craigcitro.
 archive/issue_comments_000760.json:
 ```json
 {
-    "body": "Indeed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.rc0, Release Date: 2008-11-10                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n[0]\nsage: s[:1]=[1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.2.rc1/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.gen.__setitem__ (sage/libs/pari/gen.c:6394)()\n\nTypeError: int() argument must be a string or a number, not 'slice'\nsage: \n```\n",
+    "body": "Indeed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.rc0, Release Date: 2008-11-10                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: s=pari.vector(2,[0,0])\nsage: s[:1]\n[0]\nsage: s[:1]=[1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.2.rc1/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.gen.__setitem__ (sage/libs/pari/gen.c:6394)()\n\nTypeError: int() argument must be a string or a number, not 'slice'\nsage: \n```",
     "created_at": "2008-11-14T05:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -347,7 +341,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: int() argument must be a string or a number, not 'slice'
 sage: 
 ```
-
 
 
 
@@ -392,7 +385,7 @@ Okay, in exchange for being an idiot at reading, I went ahead and fixed this. At
 archive/issue_comments_000763.json:
 ```json
 {
-    "body": "First, __setslice__ is deprecated: http://www.python.org/doc/2.5.2/ref/sequence-methods.html\n\nInstead, check for a slice object in the __setitem__ function.\n\nAlso, the slice could have a step as well:\n\n\n```\nsage: a=[1,2,3,4,5,6,7,8,9]\nsage: a[2:8:2]\n[3, 5, 7]\n```\n",
+    "body": "First, __setslice__ is deprecated: http://www.python.org/doc/2.5.2/ref/sequence-methods.html\n\nInstead, check for a slice object in the __setitem__ function.\n\nAlso, the slice could have a step as well:\n\n```\nsage: a=[1,2,3,4,5,6,7,8,9]\nsage: a[2:8:2]\n[3, 5, 7]\n```",
     "created_at": "2008-11-14T15:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -407,13 +400,11 @@ Instead, check for a slice object in the __setitem__ function.
 
 Also, the slice could have a step as well:
 
-
 ```
 sage: a=[1,2,3,4,5,6,7,8,9]
 sage: a[2:8:2]
 [3, 5, 7]
 ```
-
 
 
 
@@ -534,7 +525,7 @@ Thanks for the generic normalize slice function.  Eventually, it would be great 
 archive/issue_comments_000770.json:
 ```json
 {
-    "body": "Oops:\n\n```\n        sage -t -long devel/sage/sage/tests/book_stein_modform.py # 7 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 47 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/integer.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/tests.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/submodule.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 4 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/hecke_operator_on_qexp.py # 11 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/half_integral.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/space.py # 61 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient_g1.py # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/cuspidal_submodule.py # 6 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/eisenstein_submodule.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/constructor.py # 6 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient_R.py # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/element.py # 49 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/module.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/constructor.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_newform.py # 11 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/morphism.py # 4 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_ambient_jacobian.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/homspace.py # 32 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar.py # 10 doctests failed\n        sage -t -long devel/sage/sage/libs/pari/gen.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 8 doctests failed\n```\n\nIs there a dependency I missed?\n\nCheers,\n\nMichael",
+    "body": "Oops:\n\n```\n        sage -t -long devel/sage/sage/tests/book_stein_modform.py # 7 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py # 47 doctests failed\n        sage -t -long devel/sage/sage/rings/number_field/number_field.py # 3 doctests failed\n        sage -t -long devel/sage/sage/rings/integer.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/tests.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/submodule.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 4 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/hecke_operator_on_qexp.py # 11 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/half_integral.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/space.py # 61 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient_g1.py # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/cuspidal_submodule.py # 6 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/eisenstein_submodule.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/constructor.py # 6 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient_R.py # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/ambient.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/element.py # 49 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/module.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/constructor.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_newform.py # 11 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/morphism.py # 4 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_ambient_jacobian.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/homspace.py # 32 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar.py # 10 doctests failed\n        sage -t -long devel/sage/sage/libs/pari/gen.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 8 doctests failed\n```\nIs there a dependency I missed?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T05:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -573,7 +564,6 @@ Oops:
         sage -t -long devel/sage/sage/libs/pari/gen.pyx # 1 doctests failed
         sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 8 doctests failed
 ```
-
 Is there a dependency I missed?
 
 Cheers,
@@ -665,7 +655,7 @@ I ran doctests on a couple of files as well as trying this out and looking at th
 archive/issue_comments_000775.json:
 ```json
 {
-    "body": "Mhh, odd things happen on 64 bit I assume:\n\n```\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/libs/pari/gen.pyx\", line 2714:\n    sage: pari(2**50).length()\nExpected:\n    4             \nGot:\n    1\n**********************************************************************\n```\n\nI would guess this is a 32 vs. 64 bit issue.\n\nCheers,\n\nMichael",
+    "body": "Mhh, odd things happen on 64 bit I assume:\n\n```\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/libs/pari/gen.pyx\", line 2714:\n    sage: pari(2**50).length()\nExpected:\n    4             \nGot:\n    1\n**********************************************************************\n```\nI would guess this is a 32 vs. 64 bit issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T06:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -687,7 +677,6 @@ Got:
     1
 **********************************************************************
 ```
-
 I would guess this is a 32 vs. 64 bit issue.
 
 Cheers,
@@ -701,7 +690,7 @@ Michael
 archive/issue_comments_000776.json:
 ```json
 {
-    "body": "\n```\n[10:22pm] mabshoff: craigcitro: One more think for #169 - looks like 32 vs. 64 bit maybe?\n[10:50pm] craigcitro: mabshoff: oops, i can't count.\n[10:50pm] craigcitro: i multiplied by 2 when i should have divided ...\n[10:50pm] craigcitro: the 4 should really be a 1\n[10:50pm] mabshoff: Don't tell me this fails on your box, too \n[10:51pm] mabshoff:\n[10:51pm] craigcitro: (it's already got cases for 32 vs 64 bit)\n[10:51pm] craigcitro: grin\n[10:51pm] mabshoff:\n[10:51pm] craigcitro: yeah, i was just being dumb.\n[10:51pm] mabshoff: Don't divide - craigcitro inside?\n[10:51pm] craigcitro: hahahahaha\n[10:51pm] mabshoff: Couldn't resist \n[10:51pm] craigcitro: should i make a new patch? or do you want to edit the patch?\n[10:51pm] mabshoff: I will edit the patch\n[10:51pm] craigcitro: k\n```\n",
+    "body": "```\n[10:22pm] mabshoff: craigcitro: One more think for #169 - looks like 32 vs. 64 bit maybe?\n[10:50pm] craigcitro: mabshoff: oops, i can't count.\n[10:50pm] craigcitro: i multiplied by 2 when i should have divided ...\n[10:50pm] craigcitro: the 4 should really be a 1\n[10:50pm] mabshoff: Don't tell me this fails on your box, too \n[10:51pm] mabshoff:\n[10:51pm] craigcitro: (it's already got cases for 32 vs 64 bit)\n[10:51pm] craigcitro: grin\n[10:51pm] mabshoff:\n[10:51pm] craigcitro: yeah, i was just being dumb.\n[10:51pm] mabshoff: Don't divide - craigcitro inside?\n[10:51pm] craigcitro: hahahahaha\n[10:51pm] mabshoff: Couldn't resist \n[10:51pm] craigcitro: should i make a new patch? or do you want to edit the patch?\n[10:51pm] mabshoff: I will edit the patch\n[10:51pm] craigcitro: k\n```",
     "created_at": "2008-11-21T06:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/169",
     "type": "issue_comment",
@@ -709,7 +698,6 @@ archive/issue_comments_000776.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [10:22pm] mabshoff: craigcitro: One more think for #169 - looks like 32 vs. 64 bit maybe?
@@ -729,7 +717,6 @@ archive/issue_comments_000776.json:
 [10:51pm] mabshoff: I will edit the patch
 [10:51pm] craigcitro: k
 ```
-
 
 
 

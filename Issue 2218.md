@@ -3,7 +3,7 @@
 archive/issues_002218.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  b.w.barker@smokejive.net\n\n\n```\nsage: v,c = var('v,c')\nsage: assume(c!=0)\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n...\n<type 'exceptions.TypeError'>: Computation failed since Maxima requested additional constraints (use assume):\nIs  c  zero or nonzero?\n```\n\n\nThis is caused by the following:\n\n```\nsage: eq = c != 0\nsage: eq._maxima_init_(assume=True)\n'(c)#(0)'\n\n(%i1) assume(c#0);\n`assume': `#' means syntactic nonequality in Maxima. Maybe you want to use `not equal'.\n -- an error.  To debug this try debugmode(true);\n\n```\n\nand is fixed by the following:\n\n```\nsage: sage.calculus.calculus.maxima.assume('notequal(c,0)');\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n-75*sqrt(c^2)*arcsin(sqrt(c^2)*v/c^2)/8 - v^5/(4*c^4*sqrt(1 - v^2/c^2)) - 17*v^3/(8*c^2*sqrt(1 - v^2/c^2)) + 83*v/(8*sqrt(1 - v^2/c^2))\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2218\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  b.w.barker@smokejive.net\n\n```\nsage: v,c = var('v,c')\nsage: assume(c!=0)\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n...\n<type 'exceptions.TypeError'>: Computation failed since Maxima requested additional constraints (use assume):\nIs  c  zero or nonzero?\n```\n\nThis is caused by the following:\n\n```\nsage: eq = c != 0\nsage: eq._maxima_init_(assume=True)\n'(c)#(0)'\n\n(%i1) assume(c#0);\n`assume': `#' means syntactic nonequality in Maxima. Maybe you want to use `not equal'.\n -- an error.  To debug this try debugmode(true);\n\n```\nand is fixed by the following:\n\n```\nsage: sage.calculus.calculus.maxima.assume('notequal(c,0)');\nsage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)\n-75*sqrt(c^2)*arcsin(sqrt(c^2)*v/c^2)/8 - v^5/(4*c^4*sqrt(1 - v^2/c^2)) - 17*v^3/(8*c^2*sqrt(1 - v^2/c^2)) + 83*v/(8*sqrt(1 - v^2/c^2))\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2218\n\n",
     "created_at": "2008-02-20T03:50:43Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @mwhansen
 
 CC:  b.w.barker@smokejive.net
 
-
 ```
 sage: v,c = var('v,c')
 sage: assume(c!=0)
@@ -29,7 +28,6 @@ sage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)
 <type 'exceptions.TypeError'>: Computation failed since Maxima requested additional constraints (use assume):
 Is  c  zero or nonzero?
 ```
-
 
 This is caused by the following:
 
@@ -43,7 +41,6 @@ sage: eq._maxima_init_(assume=True)
  -- an error.  To debug this try debugmode(true);
 
 ```
-
 and is fixed by the following:
 
 ```
@@ -52,7 +49,6 @@ sage: integral((1+v^2/c^2)^3/(1-v^2/c^2)^(3/2),v)
 -75*sqrt(c^2)*arcsin(sqrt(c^2)*v/c^2)/8 - v^5/(4*c^4*sqrt(1 - v^2/c^2)) - 17*v^3/(8*c^2*sqrt(1 - v^2/c^2)) + 83*v/(8*sqrt(1 - v^2/c^2))
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2218
 

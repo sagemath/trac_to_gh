@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_041611.json:
 ```json
 {
-    "body": "Replying to [ticket:5399 psinis]:\n> To be attached soon:\n> FinanceDate.py\n> easter.py\n> relativedelta.py\n\nI think it can be assumed that \"soon\" will never happen, given that 7 years have passed.",
+    "body": "Replying to [ticket:5399 psinis]:\n> To be attached soon:\n> FinanceDate.py\n> easter.py\n> relativedelta.py\n\n\nI think it can be assumed that \"soon\" will never happen, given that 7 years have passed.",
     "created_at": "2016-04-26T09:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5399",
     "type": "issue_comment",
@@ -69,6 +69,7 @@ Replying to [ticket:5399 psinis]:
 > FinanceDate.py
 > easter.py
 > relativedelta.py
+
 
 I think it can be assumed that "soon" will never happen, given that 7 years have passed.
 

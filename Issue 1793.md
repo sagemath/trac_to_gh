@@ -3,7 +3,7 @@
 archive/issues_001793.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @williamstein mabshoff\n\nThe attached bundle implements everything to make the following work:\n\n\n```\nsage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')\nsage: I = Ideal([\n    x11^2 + x12*x21 + x13*x31 + x14*x41,   x11*x12 + x12*x22 + x13*x32 + x14*x42,\n    x11*x13 + x12*x23 + x13*x33 + x14*x43, x11*x14 + x12*x24 + x13*x34 + x14*x44,\n    x11*x21 + x21*x22 + x23*x31 + x24*x41, x12*x21 + x22^2 + x23*x32 + x24*x42,\n    x13*x21 + x22*x23 + x23*x33 + x24*x43, x14*x21 + x22*x24 + x23*x34 + x24*x44,\n    x11*x31 + x21*x32 + x31*x33 + x34*x41, x12*x31 + x22*x32 + x32*x33 + x34*x42,\n    x13*x31 + x23*x32 + x33^2 + x34*x43,   x14*x31 + x24*x32 + x33*x34 + x34*x44,\n    x11*x41 + x21*x42 + x31*x43 + x41*x44, x12*x41 + x22*x42 + x32*x43 + x42*x44,\n    x13*x41 + x23*x42 + x33*x43 + x43*x44, x14*x41 + x24*x42 + x34*x43 + x44^2\n    ])\nsage: S = I.hilbert_series(); S\n(t^12 - 7*t^11 + 20*t^10 - 28*t^9 + 14*t^8 + 15*t^7 - 20*t^6 + 19*t^5 - 22*t^4 + 7*t^3 + 20*t^2 + 8*t + 1)/(t^8 - 8*t^7 + 28*t^6 - 56*t^5 + 70*t^4 - 56*t^3 + 28*t^2 - 8*t + 1)\n\nsage: H = I.hilbert_polynomial(); H\n1/180*t^7 + 7/90*t^6 + 293/360*t^5 + 61/36*t^4 + 1553/360*t^3 + 851/180*t^2 + 101/30*t + 1\n\nsage: L.<u> = LaurentSeriesRing(ZZ)\nsage: L(S)\n1 + 16*u + 120*u^2 + 575*u^3 + 2044*u^4 + 5927*u^5 + 14832*u^6 + 33209*u^7 + 68189*u^8 + 130642*u^9 + 236488*u^10 + 408288*u^11 + 677143*u^12 + 1084929*u^13 + 1686896*u^14 + 2554659*u^15 + 3779609*u^16 + 5476772*u^17 + 7789144*u^18 + 10892530*u^19 + O(u^20)\n\nsage: [H(n) for n in range(20)] # matches above for n>=5\n[1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]\n```\n\n\nHowever, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1793\n\n",
+    "body": "Assignee: @malb\n\nCC:  @williamstein mabshoff\n\nThe attached bundle implements everything to make the following work:\n\n```\nsage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')\nsage: I = Ideal([\n    x11^2 + x12*x21 + x13*x31 + x14*x41,   x11*x12 + x12*x22 + x13*x32 + x14*x42,\n    x11*x13 + x12*x23 + x13*x33 + x14*x43, x11*x14 + x12*x24 + x13*x34 + x14*x44,\n    x11*x21 + x21*x22 + x23*x31 + x24*x41, x12*x21 + x22^2 + x23*x32 + x24*x42,\n    x13*x21 + x22*x23 + x23*x33 + x24*x43, x14*x21 + x22*x24 + x23*x34 + x24*x44,\n    x11*x31 + x21*x32 + x31*x33 + x34*x41, x12*x31 + x22*x32 + x32*x33 + x34*x42,\n    x13*x31 + x23*x32 + x33^2 + x34*x43,   x14*x31 + x24*x32 + x33*x34 + x34*x44,\n    x11*x41 + x21*x42 + x31*x43 + x41*x44, x12*x41 + x22*x42 + x32*x43 + x42*x44,\n    x13*x41 + x23*x42 + x33*x43 + x43*x44, x14*x41 + x24*x42 + x34*x43 + x44^2\n    ])\nsage: S = I.hilbert_series(); S\n(t^12 - 7*t^11 + 20*t^10 - 28*t^9 + 14*t^8 + 15*t^7 - 20*t^6 + 19*t^5 - 22*t^4 + 7*t^3 + 20*t^2 + 8*t + 1)/(t^8 - 8*t^7 + 28*t^6 - 56*t^5 + 70*t^4 - 56*t^3 + 28*t^2 - 8*t + 1)\n\nsage: H = I.hilbert_polynomial(); H\n1/180*t^7 + 7/90*t^6 + 293/360*t^5 + 61/36*t^4 + 1553/360*t^3 + 851/180*t^2 + 101/30*t + 1\n\nsage: L.<u> = LaurentSeriesRing(ZZ)\nsage: L(S)\n1 + 16*u + 120*u^2 + 575*u^3 + 2044*u^4 + 5927*u^5 + 14832*u^6 + 33209*u^7 + 68189*u^8 + 130642*u^9 + 236488*u^10 + 408288*u^11 + 677143*u^12 + 1084929*u^13 + 1686896*u^14 + 2554659*u^15 + 3779609*u^16 + 5476772*u^17 + 7789144*u^18 + 10892530*u^19 + O(u^20)\n\nsage: [H(n) for n in range(20)] # matches above for n>=5\n[1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]\n```\n\nHowever, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1793\n\n",
     "created_at": "2008-01-16T14:28:48Z",
     "labels": [
         "component: commutative algebra"
@@ -20,7 +20,6 @@ Assignee: @malb
 CC:  @williamstein mabshoff
 
 The attached bundle implements everything to make the following work:
-
 
 ```
 sage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')
@@ -47,7 +46,6 @@ sage: L(S)
 sage: [H(n) for n in range(20)] # matches above for n>=5
 [1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]
 ```
-
 
 However, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.
 
@@ -214,7 +212,7 @@ The attached files `trac_1793_hilbert.patch` and `trac_1793_laurent.patch` re-im
 archive/issue_comments_011326.json:
 ```json
 {
-    "body": "I say apply both patches.\n\nI think that the Laurent series patch touches coercion code that will be completely rewritten soon, so I'm not worried that it's not particularily general.\n\nThere is an unclear comment in the hilbert_polynomial docstring.  The comment could be removed.  From IRC:\n\n```\nncalexan: malb: let's took 1793.\n[3:12pm] ncalexan: The docstring to hilbert_polynomial says, ' This $d$ is called the index of regularity of\n[3:12pm] ncalexan:  1116        $I$. '\n[3:12pm] ncalexan: Which $d$?  The minimal one?\n[3:13pm] malb: yes\n[3:13pm] malb:  for all but finitely many positive  integers $d$\n[3:14pm] malb: that encodes minimal for me?\n[3:15pm] ncalexan: malb: that is unclear to me.  Is there a function to return the index of regularity?\n[3:15pm] malb: no\n[3:15pm] ncalexan: If not, I say drop the remark.  Or clarify it.  Why is it there?\n[3:15pm] ncalexan: (The remark about $d$ being the index)\n[3:15pm] malb: because there should be such a function\n[3:15pm] malb: but I can drop it\n[3:16pm] ncalexan: malb: is that easy to determine?  'cuz it would be useful :)\n```\n",
+    "body": "I say apply both patches.\n\nI think that the Laurent series patch touches coercion code that will be completely rewritten soon, so I'm not worried that it's not particularily general.\n\nThere is an unclear comment in the hilbert_polynomial docstring.  The comment could be removed.  From IRC:\n\n```\nncalexan: malb: let's took 1793.\n[3:12pm] ncalexan: The docstring to hilbert_polynomial says, ' This $d$ is called the index of regularity of\n[3:12pm] ncalexan:  1116        $I$. '\n[3:12pm] ncalexan: Which $d$?  The minimal one?\n[3:13pm] malb: yes\n[3:13pm] malb:  for all but finitely many positive  integers $d$\n[3:14pm] malb: that encodes minimal for me?\n[3:15pm] ncalexan: malb: that is unclear to me.  Is there a function to return the index of regularity?\n[3:15pm] malb: no\n[3:15pm] ncalexan: If not, I say drop the remark.  Or clarify it.  Why is it there?\n[3:15pm] ncalexan: (The remark about $d$ being the index)\n[3:15pm] malb: because there should be such a function\n[3:15pm] malb: but I can drop it\n[3:16pm] ncalexan: malb: is that easy to determine?  'cuz it would be useful :)\n```",
     "created_at": "2008-02-14T23:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
@@ -245,7 +243,6 @@ ncalexan: malb: let's took 1793.
 [3:15pm] malb: but I can drop it
 [3:16pm] ncalexan: malb: is that easy to determine?  'cuz it would be useful :)
 ```
-
 
 
 

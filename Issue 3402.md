@@ -3,7 +3,7 @@
 archive/issues_003402.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage: dg = DiGraph({0 : [1], 1 : [0]})\nsage: dg.set_edge_label(0,1,5)\nsage: dg.set_edge_label(1,0,9)\nsage: dg.edges()\n[(0, 1, 5), (1, 0, 9)]\nsage: dg.outgoing_edges([1])\n[(1, 0, 9)]\nsage: dg.incoming_edges([1])\n[(0, 1, None)]\nsage: dg.outgoing_edges(0)\n[(0, 1, 5)]\nsage: dg.incoming_edges(0)\n[(1, 0, None)]\n```\n\n\nAs you can see, outgoing_edges remembers the labels but incoming_edges does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3402\n\n",
+    "body": "Assignee: tbd\n\n```\nsage: dg = DiGraph({0 : [1], 1 : [0]})\nsage: dg.set_edge_label(0,1,5)\nsage: dg.set_edge_label(1,0,9)\nsage: dg.edges()\n[(0, 1, 5), (1, 0, 9)]\nsage: dg.outgoing_edges([1])\n[(1, 0, 9)]\nsage: dg.incoming_edges([1])\n[(0, 1, None)]\nsage: dg.outgoing_edges(0)\n[(0, 1, 5)]\nsage: dg.incoming_edges(0)\n[(1, 0, None)]\n```\n\nAs you can see, outgoing_edges remembers the labels but incoming_edges does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3402\n\n",
     "created_at": "2008-06-12T05:48:36Z",
     "labels": [
         "component: algebra",
@@ -17,7 +17,6 @@ archive/issues_003402.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage: dg = DiGraph({0 : [1], 1 : [0]})
@@ -34,7 +33,6 @@ sage: dg.outgoing_edges(0)
 sage: dg.incoming_edges(0)
 [(1, 0, None)]
 ```
-
 
 As you can see, outgoing_edges remembers the labels but incoming_edges does not.
 

@@ -109,7 +109,7 @@ This looks good to me.  Is there a simple example that breaks the existing code?
 archive/issue_comments_067758.json:
 ```json
 {
-    "body": "You mean without this patch? Just use any non-ASCII character and attempt to evalaute it.\n\n\n```\nprint '\u00e9'\n```\n",
+    "body": "You mean without this patch? Just use any non-ASCII character and attempt to evalaute it.\n\n```\nprint '\u00e9'\n```",
     "created_at": "2010-01-06T20:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
@@ -120,11 +120,9 @@ archive/issue_comments_067758.json:
 
 You mean without this patch? Just use any non-ASCII character and attempt to evalaute it.
 
-
 ```
 print 'é'
 ```
-
 
 
 
@@ -133,7 +131,7 @@ print 'é'
 archive/issue_comments_067759.json:
 ```json
 {
-    "body": "Just to check: I should apply #7249, too.  Otherwise, even with this patch, `print '\u00e9'` raises\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1205, in render\n            max_out=HISTORY_MAX_OUTPUT)\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 17: ordinal not in range(128)\n```\n\nat least for me.",
+    "body": "Just to check: I should apply #7249, too.  Otherwise, even with this patch, `print '\u00e9'` raises\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1205, in render\n            max_out=HISTORY_MAX_OUTPUT)\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 17: ordinal not in range(128)\n```\nat least for me.",
     "created_at": "2010-01-06T20:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7835",
     "type": "issue_comment",
@@ -149,7 +147,6 @@ Just to check: I should apply #7249, too.  Otherwise, even with this patch, `pri
             max_out=HISTORY_MAX_OUTPUT)
         exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 17: ordinal not in range(128)
 ```
-
 at least for me.
 
 

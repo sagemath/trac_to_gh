@@ -3,7 +3,7 @@
 archive/issues_004214.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIt seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:\n\n\n```\nsage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1\nsage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])\nsage: P.elliptic_logarithm(precision=54)\nNaN\nsage: P.elliptic_logarithm(precision=55)\n0.2735052671206336\nsage: P.elliptic_logarithm()  # 100 bits\n0.27656204014107100870070982517\n```\n\n\nNote that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:\n\n\n```\n? \\p 16                                           \n   realprecision = 19 significant digits (16 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);\n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%6 = 0.2765620403\n? \\p 32                                                                       \n   realprecision = 38 significant digits (32 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);                            \n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%8 = 0.27656204014107061464076203097\n```\n\n\nWith the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).\n\nPossible solutions:\n\n1. add a flag `algorithm` to `elliptic_logarithm` and set it to \"pari\" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need\n\n2. find where Sage's algorithm loses so much precision and fix it\n\nI tend towards doing 1 right now and working on 2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4214\n\n",
+    "body": "Assignee: tbd\n\nIt seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:\n\n```\nsage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1\nsage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])\nsage: P.elliptic_logarithm(precision=54)\nNaN\nsage: P.elliptic_logarithm(precision=55)\n0.2735052671206336\nsage: P.elliptic_logarithm()  # 100 bits\n0.27656204014107100870070982517\n```\n\nNote that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:\n\n```\n? \\p 16                                           \n   realprecision = 19 significant digits (16 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);\n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%6 = 0.2765620403\n? \\p 32                                                                       \n   realprecision = 38 significant digits (32 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);                            \n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%8 = 0.27656204014107061464076203097\n```\n\nWith the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).\n\nPossible solutions:\n\n1. add a flag `algorithm` to `elliptic_logarithm` and set it to \"pari\" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need\n\n2. find where Sage's algorithm loses so much precision and fix it\n\nI tend towards doing 1 right now and working on 2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4214\n\n",
     "created_at": "2008-09-28T22:47:17Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 It seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:
 
-
 ```
 sage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1
 sage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])
@@ -32,9 +31,7 @@ sage: P.elliptic_logarithm()  # 100 bits
 0.27656204014107100870070982517
 ```
 
-
 Note that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:
-
 
 ```
 ? \p 16                                           
@@ -48,7 +45,6 @@ Note that, while we ask for a precision of 55 bits (about 16 decimal digits), we
 ? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])
 %8 = 0.27656204014107061464076203097
 ```
-
 
 With the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).
 
@@ -160,7 +156,7 @@ archive/issue_events_009545.json:
 archive/issue_comments_030561.json:
 ```json
 {
-    "body": "Hi Alex,\nunfortunately, the patch does not work yet. This is what I get before applying the patch:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1103:\n    sage: P.elliptic_logarithm(precision=55)\nExpected:\n    0.2735052644156991\nGot:\n    0.2735052671206336\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1105:\n    sage: P.elliptic_logarithm()  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   2 of  20 in __main__.example_33\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [35.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 35.2 seconds\n```\n\n\nBut after applying the patch (to vanilla Sage 3.1.3alpha3 on my Intel Mac OS X 10.4), I still get:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1120:\n    sage: P.elliptic_logarithm(algorithm='sage')  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_33\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [28.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 28.4 seconds\n```\n\n\nThus the patch got one failure away, but the other pertains.\n\nMaybe just use dots for the time being (see the following line) there in the doctest,\nas even these fewer digits already display what you want to show (accuracy problem\nof the Sage internal algorithm)?\n\n\n```\n0.2765620401410710087...\n```\n",
+    "body": "Hi Alex,\nunfortunately, the patch does not work yet. This is what I get before applying the patch:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1103:\n    sage: P.elliptic_logarithm(precision=55)\nExpected:\n    0.2735052644156991\nGot:\n    0.2735052671206336\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1105:\n    sage: P.elliptic_logarithm()  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   2 of  20 in __main__.example_33\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [35.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 35.2 seconds\n```\n\nBut after applying the patch (to vanilla Sage 3.1.3alpha3 on my Intel Mac OS X 10.4), I still get:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1120:\n    sage: P.elliptic_logarithm(algorithm='sage')  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_33\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [28.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 28.4 seconds\n```\n\nThus the patch got one failure away, but the other pertains.\n\nMaybe just use dots for the time being (see the following line) there in the doctest,\nas even these fewer digits already display what you want to show (accuracy problem\nof the Sage internal algorithm)?\n\n```\n0.2765620401410710087...\n```",
     "created_at": "2008-10-09T19:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
@@ -203,7 +199,6 @@ The following tests failed:
 Total time for all tests: 35.2 seconds
 ```
 
-
 But after applying the patch (to vanilla Sage 3.1.3alpha3 on my Intel Mac OS X 10.4), I still get:
 
 ```
@@ -230,18 +225,15 @@ The following tests failed:
 Total time for all tests: 28.4 seconds
 ```
 
-
 Thus the patch got one failure away, but the other pertains.
 
 Maybe just use dots for the time being (see the following line) there in the doctest,
 as even these fewer digits already display what you want to show (accuracy problem
 of the Sage internal algorithm)?
 
-
 ```
 0.2765620401410710087...
 ```
-
 
 
 
@@ -286,7 +278,7 @@ OK, so I've replaced the patch with one that should take care of these problems.
 archive/issue_comments_030564.json:
 ```json
 {
-    "body": "Well, it seems like whack-a-mole:\n\n```\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4971:\n    sage: e.ellpointtoz([0,0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[3]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0),Integer(0)])###line 4971:\n    sage: e.ellpointtoz([0,0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4975:\n    sage: e.ellpointtoz([0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[4]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0)])###line 4975:\n    sage: e.ellpointtoz([0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Well, it seems like whack-a-mole:\n\n```\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4971:\n    sage: e.ellpointtoz([0,0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[3]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0),Integer(0)])###line 4971:\n    sage: e.ellpointtoz([0,0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4975:\n    sage: e.ellpointtoz([0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[4]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0)])###line 4975:\n    sage: e.ellpointtoz([0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-10T21:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4214",
     "type": "issue_comment",
@@ -325,7 +317,6 @@ Exception raised:
     TypeError: function takes exactly 2 arguments (1 given)
 **********************************************************************
 ```
-
 
 Cheers,
 

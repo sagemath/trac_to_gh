@@ -3,7 +3,7 @@
 archive/issues_005028.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nKeywords: point2d\n\n\n```\nsage: point2d?\n...\nDocstring:\n    \n        A point of size `pointsize' defined by point = (x,y).\n        Point takes either a single tuple of coordinates or a list of tuples.\n    \n        Type point.options to see all options.\n    \n        EXAMPLES:\n            ...\n\nsage: point.options\nTraceback (most recent call last):\n...\nAttributeError: 'function' object has no attribute 'options'\nsage: point2d.options\n{'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5028\n\n",
+    "body": "Assignee: @seblabbe\n\nKeywords: point2d\n\n```\nsage: point2d?\n...\nDocstring:\n    \n        A point of size `pointsize' defined by point = (x,y).\n        Point takes either a single tuple of coordinates or a list of tuples.\n    \n        Type point.options to see all options.\n    \n        EXAMPLES:\n            ...\n\nsage: point.options\nTraceback (most recent call last):\n...\nAttributeError: 'function' object has no attribute 'options'\nsage: point2d.options\n{'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5028\n\n",
     "created_at": "2009-01-19T16:53:26Z",
     "labels": [
         "component: documentation"
@@ -18,7 +18,6 @@ archive/issues_005028.json:
 Assignee: @seblabbe
 
 Keywords: point2d
-
 
 ```
 sage: point2d?
@@ -40,7 +39,6 @@ AttributeError: 'function' object has no attribute 'options'
 sage: point2d.options
 {'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5028
 

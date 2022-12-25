@@ -3,7 +3,7 @@
 archive/issues_005637.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWithout the patch,\n\n```\n%html\ntest\n\\[ x^2 \\]\n```\n\nis not typeset with `x^2` in math mode.  With the patch, the above is treated just like \n\n```\n%html\ntest\n$$ x^2 $$\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5637\n\n",
+    "body": "Assignee: boothby\n\nWithout the patch,\n\n```\n%html\ntest\n\\[ x^2 \\]\n```\nis not typeset with `x^2` in math mode.  With the patch, the above is treated just like \n\n```\n%html\ntest\n$$ x^2 $$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5637\n\n",
     "created_at": "2009-03-30T00:57:53Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ Without the patch,
 test
 \[ x^2 \]
 ```
-
 is not typeset with `x^2` in math mode.  With the patch, the above is treated just like 
 
 ```
@@ -33,7 +32,6 @@ is not typeset with `x^2` in math mode.  With the patch, the above is treated ju
 test
 $$ x^2 $$
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5637

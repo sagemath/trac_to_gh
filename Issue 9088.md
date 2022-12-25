@@ -3,7 +3,7 @@
 archive/issues_009088.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman mhampton\n\nRight now, this fails:\n\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman mhampton\n\nRight now, this fails:\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
     "created_at": "2010-05-29T19:47:00Z",
     "labels": [
         "component: graphics",
@@ -23,11 +23,9 @@ CC:  @kcrisman mhampton
 
 Right now, this fails:
 
-
 ```
 line3d(( (0,0,0), (1,2,3) ))
 ```
-
 
 since the copy of the input data is not converted to a list.  This is an easy fix.
 
@@ -132,7 +130,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084266.json:
 ```json
 {
-    "body": "This patch and #9066 seem to conflict -- if I apply both, I get a doctest failure:\n\n```\nsage -t  \"devel/sage-reviewing/sage/plot/plot3d/shapes2.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 700:\n    sage: P.tachyon_repr(P.default_render_params())\nExpected:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture84'\nGot:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture85'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 717:\n    sage: P.obj_repr(P.default_render_params())[0][0:2]\nExpected:\n    ['g obj_1', 'usemtl texture86']\nGot:\n    ['g obj_1', 'usemtl texture87']\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 825:\n    sage: L.tachyon_repr(L.default_render_params())[0]\nExpected:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture126'\nGot:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture127'\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_13\n   1 of   4 in __main__.example_14\n   1 of   4 in __main__.example_19\n***Test Failed*** 3 failures.\n```\n\n\nThis doesn't come up if I apply either one of the patches on its own.",
+    "body": "This patch and #9066 seem to conflict -- if I apply both, I get a doctest failure:\n\n```\nsage -t  \"devel/sage-reviewing/sage/plot/plot3d/shapes2.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 700:\n    sage: P.tachyon_repr(P.default_render_params())\nExpected:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture84'\nGot:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture85'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 717:\n    sage: P.obj_repr(P.default_render_params())[0][0:2]\nExpected:\n    ['g obj_1', 'usemtl texture86']\nGot:\n    ['g obj_1', 'usemtl texture87']\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 825:\n    sage: L.tachyon_repr(L.default_render_params())[0]\nExpected:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture126'\nGot:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture127'\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_13\n   1 of   4 in __main__.example_14\n   1 of   4 in __main__.example_19\n***Test Failed*** 3 failures.\n```\n\nThis doesn't come up if I apply either one of the patches on its own.",
     "created_at": "2010-07-01T09:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
@@ -173,7 +171,6 @@ Got:
    1 of   4 in __main__.example_19
 ***Test Failed*** 3 failures.
 ```
-
 
 This doesn't come up if I apply either one of the patches on its own.
 

@@ -3,7 +3,7 @@
 archive/issues_001084.json:
 ```json
 {
-    "body": "Assignee: @ncalexan\n\nConsider this example:\n\n```\nsage: QQX = QQ['x']\nsage: K.<x> = QQX\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     K = QQ,names=(u'x',)); (x,) = K._first_ngens(Integer(1))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\n\nI don't care if this actually works; but if it doesn't, it should fail with a friendlier error message.  And where did the 'X' from QQX go?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1084\n\n",
+    "body": "Assignee: @ncalexan\n\nConsider this example:\n\n```\nsage: QQX = QQ['x']\nsage: K.<x> = QQX\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     K = QQ,names=(u'x',)); (x,) = K._first_ngens(Integer(1))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\nI don't care if this actually works; but if it doesn't, it should fail with a friendlier error message.  And where did the 'X' from QQX go?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1084\n\n",
     "created_at": "2007-11-03T20:09:14Z",
     "labels": [
         "component: user interface",
@@ -30,7 +30,6 @@ sage: K.<x> = QQX
                          ^
 <type 'exceptions.SyntaxError'>: invalid syntax
 ```
-
 
 I don't care if this actually works; but if it doesn't, it should fail with a friendlier error message.  And where did the 'X' from QQX go?
 

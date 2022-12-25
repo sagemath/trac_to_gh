@@ -3,7 +3,7 @@
 archive/issues_004977.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHi,\n\nIs there a reason why, in sage 3.2.2, the following works :\n\nsage: vector(vector((1, 6)))\n(1, 6)\n\nbut the following doesn't :\n\nsage: vector(vector((1, 6.8)))\nTraceback (most recent call last):\n...\nTypeError: _vector_() takes exactly one argument (0 given)\n\n???\n\nThank you,\n\nS\u00e9bastien Labb\u00e9\nUQAM\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4977\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHi,\n\nIs there a reason why, in sage 3.2.2, the following works :\n\nsage: vector(vector((1, 6)))\n(1, 6)\n\nbut the following doesn't :\n\nsage: vector(vector((1, 6.8)))\nTraceback (most recent call last):\n...\nTypeError: _vector_() takes exactly one argument (0 given)\n\n???\n\nThank you,\n\nS\u00e9bastien Labb\u00e9\nUQAM\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4977\n\n",
     "created_at": "2009-01-14T21:44:34Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_004977.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Hi,
@@ -45,7 +44,6 @@ UQAM
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4977
 
 
@@ -57,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4977
 archive/issue_comments_037876.json:
 ```json
 {
-    "body": "I want also to mention that the same problem was occuring when using the Symbolic Ring :\n\n```\nsage: vector(vector(SR, (1, sqrt(2)) ) )\n```\n",
+    "body": "I want also to mention that the same problem was occuring when using the Symbolic Ring :\n\n```\nsage: vector(vector(SR, (1, sqrt(2)) ) )\n```",
     "created_at": "2009-01-15T15:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4977",
     "type": "issue_comment",
@@ -71,7 +69,6 @@ I want also to mention that the same problem was occuring when using the Symboli
 ```
 sage: vector(vector(SR, (1, sqrt(2)) ) )
 ```
-
 
 
 

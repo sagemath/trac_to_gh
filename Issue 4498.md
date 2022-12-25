@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4498
 archive/issue_comments_033199.json:
 ```json
 {
-    "body": "\n```\narg(x)\n///\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/ronan/.sage/sage_notebook/worksheets/admin/0/code/127.py\",\nline 6, in <module>\n   exec compile(ur'arg(x)' + '\\n', '', 'single')\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/ZODB3-3.7.0-py2.5-linux-i686.egg/\", line 1, in <module>\n\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 67, in arg\n   except AttributeError: return CDF(x).arg()\n File \"complex_double.pyx\", line 286, in\nsage.rings.complex_double.ComplexDoubleField_class.__call__\n(sage/rings/complex_double.c:3324)\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1454, in _complex_double_\n   raise TypeError\nTypeError\n```\n",
+    "body": "```\narg(x)\n///\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/ronan/.sage/sage_notebook/worksheets/admin/0/code/127.py\",\nline 6, in <module>\n   exec compile(ur'arg(x)' + '\\n', '', 'single')\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/ZODB3-3.7.0-py2.5-linux-i686.egg/\", line 1, in <module>\n\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 67, in arg\n   except AttributeError: return CDF(x).arg()\n File \"complex_double.pyx\", line 286, in\nsage.rings.complex_double.ComplexDoubleField_class.__call__\n(sage/rings/complex_double.c:3324)\n File\n\"/home/ronan/progs/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1454, in _complex_double_\n   raise TypeError\nTypeError\n```",
     "created_at": "2008-11-11T23:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_033199.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-
 
 ```
 arg(x)
@@ -66,7 +65,6 @@ sage.rings.complex_double.ComplexDoubleField_class.__call__
    raise TypeError
 TypeError
 ```
-
 
 
 
@@ -150,7 +148,7 @@ Is this really an enchancement? As it is, just using arg(x) already raises an er
 archive/issue_comments_033203.json:
 ```json
 {
-    "body": "> Is this really an enchancement? As it is, just using arg(x) already \n> raises an error and everything that needs arg() must be implemented numerically. \n\nYes, this is an enhancement since it is implementing new functionality. \nIt would be a bug fix if there were a bug in the existing arg function, where it produced invalid results on supported input.\n\n -- William",
+    "body": "> Is this really an enchancement? As it is, just using arg(x) already \n> raises an error and everything that needs arg() must be implemented numerically. \n\n\nYes, this is an enhancement since it is implementing new functionality. \nIt would be a bug fix if there were a bug in the existing arg function, where it produced invalid results on supported input.\n\n -- William",
     "created_at": "2008-11-16T19:42:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -161,6 +159,7 @@ archive/issue_comments_033203.json:
 
 > Is this really an enchancement? As it is, just using arg(x) already 
 > raises an error and everything that needs arg() must be implemented numerically. 
+
 
 Yes, this is an enhancement since it is implementing new functionality. 
 It would be a bug fix if there were a bug in the existing arg function, where it produced invalid results on supported input.
@@ -336,7 +335,7 @@ There are a few small formatting issues, and it would be good to add an example 
 archive/issue_comments_033213.json:
 ```json
 {
-    "body": "\n```\n\nFile \"/Users/karl-dietercrisman/Downloads/sage-4.8.alpha5/devel/sage-main/sage/symbolic/random_tests.py\", line 16:\n    sage: [f for (one,f,arity) in _mk_full_functions()]\nExpected:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch,\n    arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh,\n    binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch,\n    dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec,\n    elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp,\n    factorial, floor, heaviside, imag_part, integrate,\n    kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin,\n    sinh, tan, tanh, unit_step, zeta, zetaderiv]\nGot:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch, arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh, arg, binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch, dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec, elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp, factorial, floor, heaviside, imag_part, integrate, kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin, sinh, tan, tanh, unit_step, zeta, zetaderiv]\n**********************************************************************\nFile \"/Users/karl-dietercrisman/Downloads/sage-4.8.alpha5/devel/sage-main/sage/symbolic/random_tests.py\", line 238:\n    sage: random_expr(5, verbose=True)\nExpected:\n    About to apply dirac_delta to [1]\n    About to apply arccsch to [0]\n    About to apply <built-in function add> to [0, arccsch(0)]\n    arccsch(0)\nGot:\n    About to apply dirac_delta to [1]\n    About to apply arcsec to [0]\n    About to apply <built-in function add> to [0, arcsec(0)]\n    arcsec(0)\n```\n",
+    "body": "```\n\nFile \"/Users/karl-dietercrisman/Downloads/sage-4.8.alpha5/devel/sage-main/sage/symbolic/random_tests.py\", line 16:\n    sage: [f for (one,f,arity) in _mk_full_functions()]\nExpected:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch,\n    arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh,\n    binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch,\n    dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec,\n    elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp,\n    factorial, floor, heaviside, imag_part, integrate,\n    kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin,\n    sinh, tan, tanh, unit_step, zeta, zetaderiv]\nGot:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch, arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh, arg, binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch, dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec, elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp, factorial, floor, heaviside, imag_part, integrate, kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin, sinh, tan, tanh, unit_step, zeta, zetaderiv]\n**********************************************************************\nFile \"/Users/karl-dietercrisman/Downloads/sage-4.8.alpha5/devel/sage-main/sage/symbolic/random_tests.py\", line 238:\n    sage: random_expr(5, verbose=True)\nExpected:\n    About to apply dirac_delta to [1]\n    About to apply arccsch to [0]\n    About to apply <built-in function add> to [0, arccsch(0)]\n    arccsch(0)\nGot:\n    About to apply dirac_delta to [1]\n    About to apply arcsec to [0]\n    About to apply <built-in function add> to [0, arcsec(0)]\n    arcsec(0)\n```",
     "created_at": "2012-01-12T15:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -344,7 +343,6 @@ archive/issue_comments_033213.json:
     "user": "https://github.com/kcrisman"
 }
 ```
-
 
 ```
 
@@ -378,13 +376,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_033214.json:
 ```json
 {
-    "body": "I think the Maxima translation may not be correct.\n\n```\n\n -- Function: carg (<z>)\n     Returns the complex argument of <z>.  The complex argument is an\n     angle `theta' in `(-%pi, %pi]' such that `r exp (theta %i) = <z>'\n     where `r' is the magnitude of <z>.\n\n     `carg' is a computational function, not a simplifying function.\n\n     See also `abs' (complex magnitude), `polarform', `rectform',\n     `realpart', and `imagpart'.\n\n     Examples:\n\n          (%i1) carg (1);\n          (%o1)                           0\n          (%i2) carg (1 + %i);\n                                         %pi\n          (%o2)                          ---\n                                          4\n          (%i3) carg (exp (%i));\n          (%o3)                           1\n          (%i4) carg (exp (%pi * %i));\n          (%o4)                          %pi\n          (%i5) carg (exp (3/2 * %pi * %i));\n                                          %pi\n          (%o5)                         - ---\n                                           2\n          (%i6) carg (17 * exp (2 * %i));\n          (%o6)                           2\n\n\n(%o3)                                true\n```\n\nSee also Barton Willis' [parg](http://maxima.sourceforge.net/docs/manual/en/maxima_80.html#Item_003a-parg), though that only works if having loaded `to_poly_solve`.",
+    "body": "I think the Maxima translation may not be correct.\n\n```\n\n -- Function: carg (<z>)\n     Returns the complex argument of <z>.  The complex argument is an\n     angle `theta' in `(-%pi, %pi]' such that `r exp (theta %i) = <z>'\n     where `r' is the magnitude of <z>.\n\n     `carg' is a computational function, not a simplifying function.\n\n     See also `abs' (complex magnitude), `polarform', `rectform',\n     `realpart', and `imagpart'.\n\n     Examples:\n\n          (%i1) carg (1);\n          (%o1)                           0\n          (%i2) carg (1 + %i);\n                                         %pi\n          (%o2)                          ---\n                                          4\n          (%i3) carg (exp (%i));\n          (%o3)                           1\n          (%i4) carg (exp (%pi * %i));\n          (%o4)                          %pi\n          (%i5) carg (exp (3/2 * %pi * %i));\n                                          %pi\n          (%o5)                         - ---\n                                           2\n          (%i6) carg (17 * exp (2 * %i));\n          (%o6)                           2\n\n\n(%o3)                                true\n```\nSee also Barton Willis' [parg](http://maxima.sourceforge.net/docs/manual/en/maxima_80.html#Item_003a-parg), though that only works if having loaded `to_poly_solve`.",
     "created_at": "2012-01-12T16:25:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -429,7 +426,6 @@ I think the Maxima translation may not be correct.
 
 (%o3)                                true
 ```
-
 See also Barton Willis' [parg](http://maxima.sourceforge.net/docs/manual/en/maxima_80.html#Item_003a-parg), though that only works if having loaded `to_poly_solve`.
 
 
@@ -457,7 +453,7 @@ Otherwise, all tests pass!
 archive/issue_comments_033216.json:
 ```json
 {
-    "body": "Do this to check the fix works.\n\n```\nsage: maxima(arg(x))\natan2(0,x)\nsage: maxima(arg(2+i))\natan(1/2)\nsage: maxima(arg(sqrt(2)+i))\natan(1/sqrt(2))\nsage: arg(2+i)\narctan(1/2)\nsage: arg(sqrt(2)+i)\narg(sqrt(2) + I)\n```\n\nIt also seems to help with the sqrt(2) issue, in a manner of speaking.  One could tell someone to do \n\n```\nsage: arg(sqrt(2)+i).simplify()\narctan(1/2*sqrt(2))\n```\n",
+    "body": "Do this to check the fix works.\n\n```\nsage: maxima(arg(x))\natan2(0,x)\nsage: maxima(arg(2+i))\natan(1/2)\nsage: maxima(arg(sqrt(2)+i))\natan(1/sqrt(2))\nsage: arg(2+i)\narctan(1/2)\nsage: arg(sqrt(2)+i)\narg(sqrt(2) + I)\n```\nIt also seems to help with the sqrt(2) issue, in a manner of speaking.  One could tell someone to do \n\n```\nsage: arg(sqrt(2)+i).simplify()\narctan(1/2*sqrt(2))\n```",
     "created_at": "2012-01-12T16:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -480,14 +476,12 @@ arctan(1/2)
 sage: arg(sqrt(2)+i)
 arg(sqrt(2) + I)
 ```
-
 It also seems to help with the sqrt(2) issue, in a manner of speaking.  One could tell someone to do 
 
 ```
 sage: arg(sqrt(2)+i).simplify()
 arctan(1/2*sqrt(2))
 ```
-
 
 
 
@@ -611,7 +605,7 @@ I give a positive review to Karen's patch. If someone can take a quick look at m
 archive/issue_comments_033223.json:
 ```json
 {
-    "body": "It doesn't appear that you messed anything up, except ...\n\n```\nsage: arg(3.0)\n---------------------------------------------------------------------------\n<snip>\n   1426             return x.arg()\n   1427         except AttributeError:\n-> 1428             from sage.rings.complex_field import CC\n   1429             x = CC(x)\n   1430             return x.arg()\n\nImportError: cannot import name CC\n```\n\nSo apparently that won't work.  Otherwise the changes are fine.",
+    "body": "It doesn't appear that you messed anything up, except ...\n\n```\nsage: arg(3.0)\n---------------------------------------------------------------------------\n<snip>\n   1426             return x.arg()\n   1427         except AttributeError:\n-> 1428             from sage.rings.complex_field import CC\n   1429             x = CC(x)\n   1430             return x.arg()\n\nImportError: cannot import name CC\n```\nSo apparently that won't work.  Otherwise the changes are fine.",
     "created_at": "2012-02-07T14:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -634,7 +628,6 @@ sage: arg(3.0)
 
 ImportError: cannot import name CC
 ```
-
 So apparently that won't work.  Otherwise the changes are fine.
 
 
@@ -790,7 +783,7 @@ archive/issue_events_010188.json:
 archive/issue_comments_033230.json:
 ```json
 {
-    "body": "I wondered; that makes sense.\n\nAll looks well.  Just a question - do you want to include any of the following as tests?\n\n```\nsage: arg(long(1000))\n0\nsage: arg(1j)\n1.57079632679490\nsage: arg(1J)\n1.57079632679490\nsage: arg(complex(0,1))\n1.57079632679490\nsage: arg(complex(1,0))\n0.000000000000000\nsage: arg(int(10))\n0\n```\n\nIt's not a big deal to me either way, I just wanted to test them.",
+    "body": "I wondered; that makes sense.\n\nAll looks well.  Just a question - do you want to include any of the following as tests?\n\n```\nsage: arg(long(1000))\n0\nsage: arg(1j)\n1.57079632679490\nsage: arg(1J)\n1.57079632679490\nsage: arg(complex(0,1))\n1.57079632679490\nsage: arg(complex(1,0))\n0.000000000000000\nsage: arg(int(10))\n0\n```\nIt's not a big deal to me either way, I just wanted to test them.",
     "created_at": "2012-02-07T16:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4498",
     "type": "issue_comment",
@@ -817,7 +810,6 @@ sage: arg(complex(1,0))
 sage: arg(int(10))
 0
 ```
-
 It's not a big deal to me either way, I just wanted to test them.
 
 

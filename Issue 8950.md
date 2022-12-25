@@ -355,7 +355,7 @@ I'll upload the correct one now, I hope I do it right this time :)
 archive/issue_comments_082279.json:
 ```json
 {
-    "body": "I got an error when applying your patch:\n\n\n```\napplying trac_8950_desolve_odeint.patch abort: malformed patch\n```\n\n\nThe patch says: \n\n\n```\ndiff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py\n--- a/sage/calculus/desolvers.py\tWed Jan 20 15:09:32 2010 -0800\n+++ b/sage/calculus/desolvers.py\tWed Jun 30 10:47:17 2010 +0200\n@@ -1053,3 +1053,270 @@\n     sol.extend(sol_2)\n \n     return sol\n+\n+def desolve_odeint(des, ics, times, dvars, ivar=None, compute_jac=False, args=()\n```\n\n\n\nbut the file desolvers.py has now more lines, and sol.extend is now on line 1220, not on line 1053. I'm not an expert on version control, but this makes me think that the patch was not applied because I'm using a more recent version of Sage than the one you used when you exported the patch. Maybe if you upgrade before exporting the patch I'll be able to apply it. I've tried to modify the patch manually but failed.",
+    "body": "I got an error when applying your patch:\n\n```\napplying trac_8950_desolve_odeint.patch abort: malformed patch\n```\n\nThe patch says: \n\n```\ndiff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py\n--- a/sage/calculus/desolvers.py\tWed Jan 20 15:09:32 2010 -0800\n+++ b/sage/calculus/desolvers.py\tWed Jun 30 10:47:17 2010 +0200\n@@ -1053,3 +1053,270 @@\n     sol.extend(sol_2)\n \n     return sol\n+\n+def desolve_odeint(des, ics, times, dvars, ivar=None, compute_jac=False, args=()\n```\n\n\nbut the file desolvers.py has now more lines, and sol.extend is now on line 1220, not on line 1053. I'm not an expert on version control, but this makes me think that the patch was not applied because I'm using a more recent version of Sage than the one you used when you exported the patch. Maybe if you upgrade before exporting the patch I'll be able to apply it. I've tried to modify the patch manually but failed.",
     "created_at": "2010-07-22T21:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -366,14 +366,11 @@ archive/issue_comments_082279.json:
 
 I got an error when applying your patch:
 
-
 ```
 applying trac_8950_desolve_odeint.patch abort: malformed patch
 ```
 
-
 The patch says: 
-
 
 ```
 diff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py
@@ -386,7 +383,6 @@ diff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py
 +
 +def desolve_odeint(des, ics, times, dvars, ivar=None, compute_jac=False, args=()
 ```
-
 
 
 but the file desolvers.py has now more lines, and sol.extend is now on line 1220, not on line 1053. I'm not an expert on version control, but this makes me think that the patch was not applied because I'm using a more recent version of Sage than the one you used when you exported the patch. Maybe if you upgrade before exporting the patch I'll be able to apply it. I've tried to modify the patch manually but failed.
@@ -420,7 +416,7 @@ Thanks for your time!
 archive/issue_comments_082281.json:
 ```json
 {
-    "body": "The patch is a little weird now: it contains first the old one and then the same code, but with instructions to include it in a different place. I couldn't use it, and I think trac has trouble with it, too, because it doesn't render the patch if you click on it, like it does usually. I can produce a patch from a fresh install if you want, but let's talk about the content first:\n\nIt pretty much works, but:\n\n1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? I would prefer either of these two approaches:\n\n   * Always require the parameter ivar\n   * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\n   1. compute all variables used in the functions passed as arguments:\n\n\n```\nall_vars = set([])\n\nfor de in des:\n    all_vars.update(set(de.variables()))\n```\n\n2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:\n2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:\n2. otherwise raise an error\n\n\n```\n...\nivars = all_vars - set(dvars)\nif len(ivars) == 1:\n    ivar = ivars.pop()\nelif not ivars:\n    safe_name = 't_' + str(dvars)\n    ivar = var(safe_name)\nelse:\n    raise ...\n\n```\n\nOriol: what's your opinion on this issue? \n\n2. I'd use:\n\n\n```\nJ=diff(des,dvars)\n```\n\n\ninstead of\n\n\n```\nJ=jacobian(des,dvars)\nJ=J[0][0]\n```\n\n\n3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\n4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\n5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\nI'm attaching a patch file with the changes above included. It probably won't merge cleanly into your Sage install, so I'm attaching the plain file desolvers.py directly. Please tell me what you think, and then we will ask for another reviewer.",
+    "body": "The patch is a little weird now: it contains first the old one and then the same code, but with instructions to include it in a different place. I couldn't use it, and I think trac has trouble with it, too, because it doesn't render the patch if you click on it, like it does usually. I can produce a patch from a fresh install if you want, but let's talk about the content first:\n\nIt pretty much works, but:\n\n1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? I would prefer either of these two approaches:\n\n   * Always require the parameter ivar\n   * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\n   1. compute all variables used in the functions passed as arguments:\n\n```\nall_vars = set([])\n\nfor de in des:\n    all_vars.update(set(de.variables()))\n```\n2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:\n2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:\n2. otherwise raise an error\n\n```\n...\nivars = all_vars - set(dvars)\nif len(ivars) == 1:\n    ivar = ivars.pop()\nelif not ivars:\n    safe_name = 't_' + str(dvars)\n    ivar = var(safe_name)\nelse:\n    raise ...\n\n```\nOriol: what's your opinion on this issue? \n\n2. I'd use:\n\n```\nJ=diff(des,dvars)\n```\n\ninstead of\n\n```\nJ=jacobian(des,dvars)\nJ=J[0][0]\n```\n\n3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\n4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\n5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\nI'm attaching a patch file with the changes above included. It probably won't merge cleanly into your Sage install, so I'm attaching the plain file desolvers.py directly. Please tell me what you think, and then we will ask for another reviewer.",
     "created_at": "2010-07-28T19:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -440,18 +436,15 @@ It pretty much works, but:
 
    1. compute all variables used in the functions passed as arguments:
 
-
 ```
 all_vars = set([])
 
 for de in des:
     all_vars.update(set(de.variables()))
 ```
-
 2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:
 2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:
 2. otherwise raise an error
-
 
 ```
 ...
@@ -465,25 +458,20 @@ else:
     raise ...
 
 ```
-
 Oriol: what's your opinion on this issue? 
 
 2. I'd use:
-
 
 ```
 J=diff(des,dvars)
 ```
 
-
 instead of
-
 
 ```
 J=jacobian(des,dvars)
 J=J[0][0]
 ```
-
 
 3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.
 
@@ -576,7 +564,7 @@ The patch ``trac_8950_desolve_odeint_3.patch`` is correct.
 archive/issue_comments_082286.json:
 ```json
 {
-    "body": "Thanks pang, I think the changes you've done are great! Here's my opinion:\n\nReplying to [comment:12 pang]:\n\n> 1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? \n\nYes, I think you're right, it's not safe to use the name 't' as default for the independent variable.\n\n\n> I would prefer either of these two approaches:\n> \n>  * Always require the parameter ivar\n>  * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\nI prefer the second approach, because in a lot of cases the independent variable is in fact (almost) meaningless. Besides, the code you've written is great, and I think it should work perfectly (well I've made a small correction, I'll explain later).\n\n\n> 2. I'd use:\n> \n> {{{\n> J=diff(des,dvars)\n> }}}\n> \n> instead of\n> \n> {{{\n> J=jacobian(des,dvars)\n> J=J[0][0]\n> }}}\n\nI agree, I just didn't think about that.\n\n\n> 3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\nAgain, totally agree.\n\n\n> 4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\nI still don't really understand why you don't like the test ``len(dvars)==0``, but it's true that the ``is_SymbolicVariable(dvars)`` test is more elegant. By the way, the first ``len(dvars)==0`` test is still there; is there any reason why the other one cannot be used?\n\n\n> 5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\nThanks, I didn't know that.\n\n\nI attach a new patch (trac_8950_odeint_4.patch), because I made some small changes:\n\n1. In the documentation, the description of 'ivar' said ' default is t', which is not anymore, so I changed it to just 'optional'.\n\n2. In one of the examples there was a mistake, because it used the time vector 'times' which was defined in a previous example and not the one that was defined in it, which was called 't'.\n\n3. At the beggining there was:\n\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\n\nHowever, in the case that ``len(dvars)==1`` is true, 'des.variables()' will give an error. So instead I wrote:\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        if len(dvars)==1:\n            des=des[0]\n            dvars=dvars[0]\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\n\nAs the redefinition 'dvars=dvars[0]' was already done afterwards, I moved it to here for simplicity.\n\nPlease, let me know your opinion. And thanks again for your work!",
+    "body": "Thanks pang, I think the changes you've done are great! Here's my opinion:\n\nReplying to [comment:12 pang]:\n\n> 1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? \n\n\nYes, I think you're right, it's not safe to use the name 't' as default for the independent variable.\n\n\n> I would prefer either of these two approaches:\n> \n> * Always require the parameter ivar\n> * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\n\nI prefer the second approach, because in a lot of cases the independent variable is in fact (almost) meaningless. Besides, the code you've written is great, and I think it should work perfectly (well I've made a small correction, I'll explain later).\n\n\n> 2. I'd use:\n> \n> \n> ```\n> J=diff(des,dvars)\n> ```\n> \n> instead of\n> \n> \n> ```\n> J=jacobian(des,dvars)\n> J=J[0][0]\n> ```\n\n\nI agree, I just didn't think about that.\n\n\n> 3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\n\nAgain, totally agree.\n\n\n> 4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\n\nI still don't really understand why you don't like the test ``len(dvars)==0``, but it's true that the ``is_SymbolicVariable(dvars)`` test is more elegant. By the way, the first ``len(dvars)==0`` test is still there; is there any reason why the other one cannot be used?\n\n\n> 5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\n\nThanks, I didn't know that.\n\n\nI attach a new patch (trac_8950_odeint_4.patch), because I made some small changes:\n\n1. In the documentation, the description of 'ivar' said ' default is t', which is not anymore, so I changed it to just 'optional'.\n\n2. In one of the examples there was a mistake, because it used the time vector 'times' which was defined in a previous example and not the one that was defined in it, which was called 't'.\n\n3. At the beggining there was:\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\nHowever, in the case that ``len(dvars)==1`` is true, 'des.variables()' will give an error. So instead I wrote:\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        if len(dvars)==1:\n            des=des[0]\n            dvars=dvars[0]\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\nAs the redefinition 'dvars=dvars[0]' was already done afterwards, I moved it to here for simplicity.\n\nPlease, let me know your opinion. And thanks again for your work!",
     "created_at": "2010-08-02T11:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -591,44 +579,52 @@ Replying to [comment:12 pang]:
 
 > 1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? 
 
+
 Yes, I think you're right, it's not safe to use the name 't' as default for the independent variable.
 
 
 > I would prefer either of these two approaches:
 > 
->  * Always require the parameter ivar
->  * Use some code like in `desolve_system_rk4` to try to guess the independent var:
+> * Always require the parameter ivar
+> * Use some code like in `desolve_system_rk4` to try to guess the independent var:
+
 
 I prefer the second approach, because in a lot of cases the independent variable is in fact (almost) meaningless. Besides, the code you've written is great, and I think it should work perfectly (well I've made a small correction, I'll explain later).
 
 
 > 2. I'd use:
 > 
-> {{{
+> 
+> ```
 > J=diff(des,dvars)
-> }}}
+> ```
 > 
 > instead of
 > 
-> {{{
+> 
+> ```
 > J=jacobian(des,dvars)
 > J=J[0][0]
-> }}}
+> ```
+
 
 I agree, I just didn't think about that.
 
 
 > 3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.
 
+
 Again, totally agree.
 
 
 > 4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.
 
+
 I still don't really understand why you don't like the test ``len(dvars)==0``, but it's true that the ``is_SymbolicVariable(dvars)`` test is more elegant. By the way, the first ``len(dvars)==0`` test is still there; is there any reason why the other one cannot be used?
 
 
 > 5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.
+
 
 Thanks, I didn't know that.
 
@@ -641,7 +637,6 @@ I attach a new patch (trac_8950_odeint_4.patch), because I made some small chang
 
 3. At the beggining there was:
 
-
 ```
 if ivar==None:
     if len(dvars)==0 or len(dvars)==1:
@@ -649,7 +644,6 @@ if ivar==None:
     else:
         ...
 ```
-
 
 However, in the case that ``len(dvars)==1`` is true, 'des.variables()' will give an error. So instead I wrote:
 
@@ -663,7 +657,6 @@ if ivar==None:
     else:
         ...
 ```
-
 
 As the redefinition 'dvars=dvars[0]' was already done afterwards, I moved it to here for simplicity.
 
@@ -732,7 +725,7 @@ Also, this is the Scipy one, correct?  Is there also a GSL desolver which could 
 archive/issue_comments_082290.json:
 ```json
 {
-    "body": "Replying to [comment:16 kcrisman]:\n> Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  \n\nI attached the file trac_8950_desolve_odeint_unified_4.patch, it contains all the changes contained in the previous patches. I'll be glad to hear your opinion!\n\n> Also, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.\n\nYes, this is the Scipy one. I think the class ode_solver uses the GSL desolver. I'm not sure if it's necessary to put it here too... however, I did a routine to initialize this class (from my point of view the initialization is a little bit tedious, particularly if you want to use symbolic functions but still want it to be fast). It needs some improvement though, when I finish it I'll tell you :)",
+    "body": "Replying to [comment:16 kcrisman]:\n> Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  \n\n\nI attached the file trac_8950_desolve_odeint_unified_4.patch, it contains all the changes contained in the previous patches. I'll be glad to hear your opinion!\n\n> Also, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.\n\n\nYes, this is the Scipy one. I think the class ode_solver uses the GSL desolver. I'm not sure if it's necessary to put it here too... however, I did a routine to initialize this class (from my point of view the initialization is a little bit tedious, particularly if you want to use symbolic functions but still want it to be fast). It needs some improvement though, when I finish it I'll tell you :)",
     "created_at": "2010-08-09T14:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -744,9 +737,11 @@ archive/issue_comments_082290.json:
 Replying to [comment:16 kcrisman]:
 > Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  
 
+
 I attached the file trac_8950_desolve_odeint_unified_4.patch, it contains all the changes contained in the previous patches. I'll be glad to hear your opinion!
 
 > Also, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.
+
 
 Yes, this is the Scipy one. I think the class ode_solver uses the GSL desolver. I'm not sure if it's necessary to put it here too... however, I did a routine to initialize this class (from my point of view the initialization is a little bit tedious, particularly if you want to use symbolic functions but still want it to be fast). It needs some improvement though, when I finish it I'll tell you :)
 
@@ -795,7 +790,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082293.json:
 ```json
 {
-    "body": "Replying to [comment:18 mhampton]:\n> This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.\n> \n> I am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.\n\nGreat, thanks. Maybe pang or kcrisman have some comments still.",
+    "body": "Replying to [comment:18 mhampton]:\n> This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.\n> \n> I am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.\n\n\nGreat, thanks. Maybe pang or kcrisman have some comments still.",
     "created_at": "2010-08-31T11:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -808,6 +803,7 @@ Replying to [comment:18 mhampton]:
 > This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.
 > 
 > I am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.
+
 
 Great, thanks. Maybe pang or kcrisman have some comments still.
 
@@ -874,7 +870,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_082297.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.\n\nThanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.",
+    "body": "Replying to [comment:20 mpatel]:\n> Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.\n\n\nThanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.",
     "created_at": "2010-09-07T14:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -886,6 +882,7 @@ archive/issue_comments_082297.json:
 Replying to [comment:20 mpatel]:
 > Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.
 
+
 Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.
 
 
@@ -895,7 +892,7 @@ Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] c
 archive/issue_comments_082298.json:
 ```json
 {
-    "body": "Replying to [comment:21 uri]:\n> Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n\nCould you check this?  I still see a header-less patch.",
+    "body": "Replying to [comment:21 uri]:\n> Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n\n\nCould you check this?  I still see a header-less patch.",
     "created_at": "2010-09-07T14:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -907,6 +904,7 @@ archive/issue_comments_082298.json:
 Replying to [comment:21 uri]:
 > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.
 
+
 Could you check this?  I still see a header-less patch.
 
 
@@ -916,7 +914,7 @@ Could you check this?  I still see a header-less patch.
 archive/issue_comments_082299.json:
 ```json
 {
-    "body": "Replying to [comment:22 mpatel]:\n> Replying to [comment:21 uri]:\n> > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n> \n> Could you check this?  I still see a header-less patch.\n\nYou're right, I must have re-uploaded the old patch, sorry. Now it's the correct one.",
+    "body": "Replying to [comment:22 mpatel]:\n> Replying to [comment:21 uri]:\n> > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n\n> \n> Could you check this?  I still see a header-less patch.\n\n\nYou're right, I must have re-uploaded the old patch, sorry. Now it's the correct one.",
     "created_at": "2010-09-07T15:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -928,8 +926,10 @@ archive/issue_comments_082299.json:
 Replying to [comment:22 mpatel]:
 > Replying to [comment:21 uri]:
 > > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.
+
 > 
 > Could you check this?  I still see a header-less patch.
+
 
 You're right, I must have re-uploaded the old patch, sorry. Now it's the correct one.
 
@@ -958,7 +958,7 @@ Great!  Could you fix the commit string so that the first line contains the tick
 archive/issue_comments_082301.json:
 ```json
 {
-    "body": "Attachment [trac_8950_desolve_odeint_unified_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_unified_4.patch) by uri created at 2010-09-07 15:43:13\n\nReplying to [comment:24 mpatel]:\n> Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\nI'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?",
+    "body": "Attachment [trac_8950_desolve_odeint_unified_4.patch](tarball://root/attachments/some-uuid/ticket8950/trac_8950_desolve_odeint_unified_4.patch) by uri created at 2010-09-07 15:43:13\n\nReplying to [comment:24 mpatel]:\n> Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\n\nI'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?",
     "created_at": "2010-09-07T15:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -971,6 +971,7 @@ Attachment [trac_8950_desolve_odeint_unified_4.patch](tarball://root/attachments
 
 Replying to [comment:24 mpatel]:
 > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.
+
 
 I'm not sure I did what you asked for: I created the patch again but edited the commit string using the "-e" command. Is that correct?
 
@@ -999,7 +1000,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082303.json:
 ```json
 {
-    "body": "Replying to [comment:25 uri]:\n> Replying to [comment:24 mpatel]:\n> > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n> \n> I'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?\n\nYes, that works.  Thanks!",
+    "body": "Replying to [comment:25 uri]:\n> Replying to [comment:24 mpatel]:\n> > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\n> \n> I'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?\n\n\nYes, that works.  Thanks!",
     "created_at": "2010-09-07T15:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
@@ -1011,8 +1012,10 @@ archive/issue_comments_082303.json:
 Replying to [comment:25 uri]:
 > Replying to [comment:24 mpatel]:
 > > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.
+
 > 
 > I'm not sure I did what you asked for: I created the patch again but edited the commit string using the "-e" command. Is that correct?
+
 
 Yes, that works.  Thanks!
 

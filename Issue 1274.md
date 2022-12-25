@@ -70,7 +70,7 @@ Attachment [trac_1274.patch](tarball://root/attachments/some-uuid/ticket1274/tra
 archive/issue_comments_007954.json:
 ```json
 {
-    "body": "This works now:\n\n\n```\nsage: r = singular.ring(0,'(x,y,z)','dp')\nsage: i = singular.ideal(['x^2','y^2','z^2'])\nsage: s = i.std()\nsage: singular.eval('hilb(%s)'%(s.name()))\n'// 1 t^0\\n// -3 t^2\\n// 3 t^4\\n// -1 t^6\\n\\n// 1 t^0\\n//\n3 t^1\\n// 3 t^2\\n// 1 t^3\\n// dimension (affine) = 0\\n//\ndegree (affine) = 8'\n\nsage: set_verbose(1)\nsage: singular.eval('hilb(%s)'%(s.name()))\n//         1 t^0\n//        -3 t^2\n//         3 t^4\n//        -1 t^6\n//         1 t^0\n//         3 t^1\n//         3 t^2\n//         1 t^3\n// dimension (affine) = 0\n// degree (affine)  = 8\n''\n\nsage: o = s.hilb()\n//         1 t^0\n//        -3 t^2\n//         3 t^4\n//        -1 t^6\n//         1 t^0\n//         3 t^1\n//         3 t^2\n//         1 t^3\n// dimension (affine) = 0\n// degree (affine)  = 8\n// ** right side is not a datum, assignment ignored\n\nsage: set_verbose(0)\nsage: o = s.hilb()\n```\n",
+    "body": "This works now:\n\n```\nsage: r = singular.ring(0,'(x,y,z)','dp')\nsage: i = singular.ideal(['x^2','y^2','z^2'])\nsage: s = i.std()\nsage: singular.eval('hilb(%s)'%(s.name()))\n'// 1 t^0\\n// -3 t^2\\n// 3 t^4\\n// -1 t^6\\n\\n// 1 t^0\\n//\n3 t^1\\n// 3 t^2\\n// 1 t^3\\n// dimension (affine) = 0\\n//\ndegree (affine) = 8'\n\nsage: set_verbose(1)\nsage: singular.eval('hilb(%s)'%(s.name()))\n//         1 t^0\n//        -3 t^2\n//         3 t^4\n//        -1 t^6\n//         1 t^0\n//         3 t^1\n//         3 t^2\n//         1 t^3\n// dimension (affine) = 0\n// degree (affine)  = 8\n''\n\nsage: o = s.hilb()\n//         1 t^0\n//        -3 t^2\n//         3 t^4\n//        -1 t^6\n//         1 t^0\n//         3 t^1\n//         3 t^2\n//         1 t^3\n// dimension (affine) = 0\n// degree (affine)  = 8\n// ** right side is not a datum, assignment ignored\n\nsage: set_verbose(0)\nsage: o = s.hilb()\n```",
     "created_at": "2008-01-18T18:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1274",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_007954.json:
 ```
 
 This works now:
-
 
 ```
 sage: r = singular.ring(0,'(x,y,z)','dp')
@@ -121,7 +120,6 @@ sage: o = s.hilb()
 sage: set_verbose(0)
 sage: o = s.hilb()
 ```
-
 
 
 

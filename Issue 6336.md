@@ -3,7 +3,7 @@
 archive/issues_006336.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n\t [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
+    "body": "Assignee: tbd\n\n```\n\t [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
     "created_at": "2009-06-16T15:20:05Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006336.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 	 [32.9 s]
@@ -33,7 +32,6 @@ Error: no "view" rule for type "application/x-dvi" passed its test case
 *** *** Error: TIMED OUT! *** ***
 	 [1800.1 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6336
 
@@ -64,7 +62,7 @@ Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/tra
 archive/issue_comments_050475.json:
 ```json
 {
-    "body": "Here's a patch.  This seems to fix this bug, but exposes another optional doctest failure (related to octave, I think): on sage.math, before the patch, I see the error message printed above.  After the patch, I don't, although I see this:\n\n```\nsage -t -optional \"devel/sage/doc/en/constructions/calculus.rst\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [360.1 s]\n```\n\nSo this patch is a partial fix.  Any takers for the octave timeout?",
+    "body": "Here's a patch.  This seems to fix this bug, but exposes another optional doctest failure (related to octave, I think): on sage.math, before the patch, I see the error message printed above.  After the patch, I don't, although I see this:\n\n```\nsage -t -optional \"devel/sage/doc/en/constructions/calculus.rst\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [360.1 s]\n```\nSo this patch is a partial fix.  Any takers for the octave timeout?",
     "created_at": "2009-06-16T19:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
@@ -82,7 +80,6 @@ sage -t -optional "devel/sage/doc/en/constructions/calculus.rst"
 *** *** Error: TIMED OUT! *** ***
 	 [360.1 s]
 ```
-
 So this patch is a partial fix.  Any takers for the octave timeout?
 
 

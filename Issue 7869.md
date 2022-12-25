@@ -3,7 +3,7 @@
 archive/issues_007869.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: cylindric,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\ndef cylindrical_plot(f,phiran,zran,**kwds):\n   phi=phiran[0]\n   z=zran[0]\n   Rho=(f*cos(phi),f*sin(phi),z)\n   return parametric_plot3d(Rho,phiran,zran,**kwds) \n```\n\n\nSeveral examples can be found in [http://www.sagenb.org/home/pub/1325/](http://www.sagenb.org/home/pub/1325/)\n\nFor simplicity's sake I have not added default values for the ploting domain, that tends to produce undesired results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7869\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: cylindric,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\ndef cylindrical_plot(f,phiran,zran,**kwds):\n   phi=phiran[0]\n   z=zran[0]\n   Rho=(f*cos(phi),f*sin(phi),z)\n   return parametric_plot3d(Rho,phiran,zran,**kwds) \n```\n\nSeveral examples can be found in [http://www.sagenb.org/home/pub/1325/](http://www.sagenb.org/home/pub/1325/)\n\nFor simplicity's sake I have not added default values for the ploting domain, that tends to produce undesired results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7869\n\n",
     "created_at": "2010-01-07T19:11:51Z",
     "labels": [
         "component: graphics",
@@ -31,7 +31,6 @@ def cylindrical_plot(f,phiran,zran,**kwds):
    Rho=(f*cos(phi),f*sin(phi),z)
    return parametric_plot3d(Rho,phiran,zran,**kwds) 
 ```
-
 
 Several examples can be found in [http://www.sagenb.org/home/pub/1325/](http://www.sagenb.org/home/pub/1325/)
 

@@ -113,7 +113,7 @@ replaces previous
 archive/issue_comments_045398.json:
 ```json
 {
-    "body": "The patch applies fine (to 3.4.1.rc3) and the docs build and look ok.\n\nIt seems a pity not to have any doctest for new_matrix(), so I have added one.  I also added \"indirect doctest\" where necessary and a load(dumps) test, so that we now have\n\n```\nsage/matrix/matrix1.pyx\nSCORE sage/matrix/matrix1.pyx: 97% (36 of 37)\n\nMissing doctests:\n\t * _singular_(self, singular=None):\n```\n\n\nI put \"positive review\" despite adding a little.\n\nThe new patch replaces the first one.",
+    "body": "The patch applies fine (to 3.4.1.rc3) and the docs build and look ok.\n\nIt seems a pity not to have any doctest for new_matrix(), so I have added one.  I also added \"indirect doctest\" where necessary and a load(dumps) test, so that we now have\n\n```\nsage/matrix/matrix1.pyx\nSCORE sage/matrix/matrix1.pyx: 97% (36 of 37)\n\nMissing doctests:\n\t * _singular_(self, singular=None):\n```\n\nI put \"positive review\" despite adding a little.\n\nThe new patch replaces the first one.",
     "created_at": "2009-04-18T15:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -133,7 +133,6 @@ SCORE sage/matrix/matrix1.pyx: 97% (36 of 37)
 Missing doctests:
 	 * _singular_(self, singular=None):
 ```
-
 
 I put "positive review" despite adding a little.
 
@@ -168,7 +167,7 @@ Michael
 archive/issue_comments_045400.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> I put \"positive review\" despite adding a little.\n\nI'm not sure if I can/should review your changes, but they are fine and I approve. :)\n\nI didn't know about the \"indirect doctest\", nor really how to write a load/dumps test. Thanks for adding those.\n\nThank you also for writing the new_matrix doctest. Perhaps I should open another ticket for improving the MatrixSpace documentation.",
+    "body": "Replying to [comment:4 cremona]:\n> I put \"positive review\" despite adding a little.\n\n\nI'm not sure if I can/should review your changes, but they are fine and I approve. :)\n\nI didn't know about the \"indirect doctest\", nor really how to write a load/dumps test. Thanks for adding those.\n\nThank you also for writing the new_matrix doctest. Perhaps I should open another ticket for improving the MatrixSpace documentation.",
     "created_at": "2009-04-18T22:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -179,6 +178,7 @@ archive/issue_comments_045400.json:
 
 Replying to [comment:4 cremona]:
 > I put "positive review" despite adding a little.
+
 
 I'm not sure if I can/should review your changes, but they are fine and I approve. :)
 
@@ -193,7 +193,7 @@ Thank you also for writing the new_matrix doctest. Perhaps I should open another
 archive/issue_comments_045401.json:
 ```json
 {
-    "body": "Oops?\n\n```\nBuilding modified file sage/matrix/matrix1.pyx.\nExecute 1 commands (using 1 threads)\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/sage-3.4.2.alpha0/devel/sage-main -o sage/matrix/matrix1.c sage/matrix/matrix1.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\ninclude \"../ext/stdsage.pxi\"\ninclude \"../ext/python.pxi\"\n\nimport sage.modules.free_module\n\nTESTS::\n    ^\n------------------------------------------------------------\n```\n\nAdding appropriate `\"\"\"` fixes it.\n\nCheers,\n\nMichael",
+    "body": "Oops?\n\n```\nBuilding modified file sage/matrix/matrix1.pyx.\nExecute 1 commands (using 1 threads)\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/sage-3.4.2.alpha0/devel/sage-main -o sage/matrix/matrix1.c sage/matrix/matrix1.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\ninclude \"../ext/stdsage.pxi\"\ninclude \"../ext/python.pxi\"\n\nimport sage.modules.free_module\n\nTESTS::\n    ^\n------------------------------------------------------------\n```\nAdding appropriate `\"\"\"` fixes it.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-22T07:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
@@ -221,7 +221,6 @@ TESTS::
     ^
 ------------------------------------------------------------
 ```
-
 Adding appropriate `"""` fixes it.
 
 Cheers,

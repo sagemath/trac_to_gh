@@ -150,7 +150,7 @@ Is this correct?
 archive/issue_comments_044450.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> I assume that to test this (on an amd64 ubuntu machine) I should\n> \n> (1) create a clone of 3.4.1.rc3\n> \n> (2) install http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gap-4.4.10.p11.spkg\n> \n> (3) apply the patches trac_5697-doctest.patch and then trac_5697-functional.patch \n\nAs mentioned above first functional, then doctests.\n\n> Is this correct?\n\nYes, modulo the patch order.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 wdj]:\n> I assume that to test this (on an amd64 ubuntu machine) I should\n> \n> (1) create a clone of 3.4.1.rc3\n> \n> (2) install http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gap-4.4.10.p11.spkg\n> \n> (3) apply the patches trac_5697-doctest.patch and then trac_5697-functional.patch \n\n\nAs mentioned above first functional, then doctests.\n\n> Is this correct?\n\n\nYes, modulo the patch order.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-19T15:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5697",
     "type": "issue_comment",
@@ -168,9 +168,11 @@ Replying to [comment:4 wdj]:
 > 
 > (3) apply the patches trac_5697-doctest.patch and then trac_5697-functional.patch 
 
+
 As mentioned above first functional, then doctests.
 
 > Is this correct?
+
 
 Yes, modulo the patch order.
 
@@ -185,7 +187,7 @@ Michael
 archive/issue_comments_044451.json:
 ```json
 {
-    "body": "* 1 the spkg works and with the two patches applied, all tests pass.\n\n\n* Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\n* The other changes look fine, in the other patch. \n\nInstall the spkg ends with\n\n```\nmake[1]: Leaving directory `/scratch/wstein/build/sage-3.4.1.rc2/spkg/build/gap-4.4.10.p11/src/pkg/guava3.4/src/leon'\ncp: omitting directory `../../bin'\ncp: cannot stat `cp': No such file or directory\n\nreal    1m17.533s\nuser    0m58.840s\nsys     0m9.180s\nSuccessfully installed gap-4.4.10.p11\n```\n\n\nThat `cp: cannot stat `cp': No such file or directory` worries me. \n\nFix or explain that, and this gets a positive review.",
+    "body": "* 1 the spkg works and with the two patches applied, all tests pass.\n\n\n* Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\n* The other changes look fine, in the other patch. \n\nInstall the spkg ends with\n\n```\nmake[1]: Leaving directory `/scratch/wstein/build/sage-3.4.1.rc2/spkg/build/gap-4.4.10.p11/src/pkg/guava3.4/src/leon'\ncp: omitting directory `../../bin'\ncp: cannot stat `cp': No such file or directory\n\nreal    1m17.533s\nuser    0m58.840s\nsys     0m9.180s\nSuccessfully installed gap-4.4.10.p11\n```\n\nThat `cp: cannot stat `cp': No such file or directory` worries me. \n\nFix or explain that, and this gets a positive review.",
     "created_at": "2009-04-19T19:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5697",
     "type": "issue_comment",
@@ -213,7 +215,6 @@ user    0m58.840s
 sys     0m9.180s
 Successfully installed gap-4.4.10.p11
 ```
-
 
 That `cp: cannot stat `cp': No such file or directory` worries me. 
 
@@ -248,7 +249,7 @@ Michael
 archive/issue_comments_044453.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n\n> * Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\nIf we don't need to set the random_seed we should not set the random seed. Once GAP 4.4.12+ works as expected it should be more or less trivial to take the two patches and revert them. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 was]:\n\n> * Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\n\nIf we don't need to set the random_seed we should not set the random seed. Once GAP 4.4.12+ works as expected it should be more or less trivial to take the two patches and revert them. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-19T23:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5697",
     "type": "issue_comment",
@@ -260,6 +261,7 @@ archive/issue_comments_044453.json:
 Replying to [comment:6 was]:
 
 > * Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.
+
 
 If we don't need to set the random_seed we should not set the random seed. Once GAP 4.4.12+ works as expected it should be more or less trivial to take the two patches and revert them. 
 

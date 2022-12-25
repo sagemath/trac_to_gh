@@ -3,7 +3,7 @@
 archive/issues_004637.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nConsider this session:\n\n```\nbsd:padics was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: padic_printing.sep('][')\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(11, print_mode=\"digits\")(1/3)\n...73737373737373737374\nsage: Qp(17, print_mode=\"digits\")(1/3)\n...B5B5B5B5B5B5B5B5B5B6\nsage: Qp(97, print_mode=\"digits\")(1/3)\n...64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][65\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: padic_printing.sep('|')\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: Qp(997, print_mode=\"digits\")(1/3)\n...664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|665\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(3, print_mode=\"digits\")(1/3)\n....1\nsage: Qp(5, print_mode=\"digits\")(1/3)\n...31313131313131313132\n```\n\n| Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nBasically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!\n\nSolution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. \n\n\n```\nsage: Qp(5, print_mode=\"digits\", sep='|')\nTypeError: Qp() got an unexpected keyword argument 'sep'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4637\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nConsider this session:\n\n```\nbsd:padics was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: padic_printing.sep('][')\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(11, print_mode=\"digits\")(1/3)\n...73737373737373737374\nsage: Qp(17, print_mode=\"digits\")(1/3)\n...B5B5B5B5B5B5B5B5B5B6\nsage: Qp(97, print_mode=\"digits\")(1/3)\n...64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][64][65\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: padic_printing.sep('|')\nsage: Qp(389, print_mode=\"digits\")(1/3)\n...259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][129][259][130\nsage: Qp(997, print_mode=\"digits\")(1/3)\n...664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|664|665\nsage: Qp(7, print_mode=\"digits\")(1/3)\n...44444444444444444445\nsage: Qp(3, print_mode=\"digits\")(1/3)\n....1\nsage: Qp(5, print_mode=\"digits\")(1/3)\n...31313131313131313132\n```\n| Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nBasically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!\n\nSolution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. \n\n```\nsage: Qp(5, print_mode=\"digits\", sep='|')\nTypeError: Qp() got an unexpected keyword argument 'sep'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4637\n\n",
     "created_at": "2008-11-27T06:58:30Z",
     "labels": [
         "component: number theory",
@@ -53,19 +53,16 @@ sage: Qp(3, print_mode="digits")(1/3)
 sage: Qp(5, print_mode="digits")(1/3)
 ...31313131313131313132
 ```
-
 | Sage Version 3.2.1.alpha2, Release Date: 2008-11-26                |
 | Type notebook() for the GUI, and license() for information.        |
 Basically the print separator for p-adic fields depends on what the global padic_printing.sep(...) thing happens to have been set at when that field was first created.  There seems to be absolutely no way to change it later.  The dependence is also totally baffling?  Why the hell does it change for 97 but not 17, 11, 7?  WTF!?!
 
 Solution -- make the frickin' separator a property of the field that must be passed in.  Notice now that isn't even possible.  totally get rid of this stupid padic_printing object. 
 
-
 ```
 sage: Qp(5, print_mode="digits", sep='|')
 TypeError: Qp() got an unexpected keyword argument 'sep'
 ```
-
 
 
 
@@ -118,7 +115,7 @@ I know there are still problems.  But all doctests currently pass, I don't know 
 archive/issue_comments_034811.json:
 ```json
 {
-    "body": "First comment: your choice of ... for eliding terms in printing conflicts with the doctest framework; could that be .. or something different?  For example, in factory.py around line 150,\n\n\n```\n        sage: T = Qp(5, print_mode='series', print_max_terms=4); b = R(-70700); repr(b)                                                  \n        '2*5^2 + 4*5^3 + 5^4 + 2*5^5 + ... + O(5^22)'\n```\n\n\nis *not* testing what you think it is -- the doctester matches ... inside of strings!  (You've typoed, and you meant `T(-70700)`.)",
+    "body": "First comment: your choice of ... for eliding terms in printing conflicts with the doctest framework; could that be .. or something different?  For example, in factory.py around line 150,\n\n```\n        sage: T = Qp(5, print_mode='series', print_max_terms=4); b = R(-70700); repr(b)                                                  \n        '2*5^2 + 4*5^3 + 5^4 + 2*5^5 + ... + O(5^22)'\n```\n\nis *not* testing what you think it is -- the doctester matches ... inside of strings!  (You've typoed, and you meant `T(-70700)`.)",
     "created_at": "2009-03-18T18:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
@@ -129,12 +126,10 @@ archive/issue_comments_034811.json:
 
 First comment: your choice of ... for eliding terms in printing conflicts with the doctest framework; could that be .. or something different?  For example, in factory.py around line 150,
 
-
 ```
         sage: T = Qp(5, print_mode='series', print_max_terms=4); b = R(-70700); repr(b)                                                  
         '2*5^2 + 4*5^3 + 5^4 + 2*5^5 + ... + O(5^22)'
 ```
-
 
 is *not* testing what you think it is -- the doctester matches ... inside of strings!  (You've typoed, and you meant `T(-70700)`.)
 
@@ -192,7 +187,7 @@ Fair criticisms.  The current model of passing in parameters hasn't really stood
 archive/issue_comments_034814.json:
 ```json
 {
-    "body": "REMARK: \n\nThis patch introduces 5 new functions with no doctests, hence fails what I consider *the most basic* review criterion:\n\n```\n\t360\t    def _sep(self): \n \t361\t        return self.sep \n \t362\t \n \t363\t    def _alphabet(self): \n \t364\t        return self.alphabet \n \t365\t \n \t366\t    def _max_ram_terms(self): \n \t367\t        return self.max_ram_terms \n \t368\t \n \t369\t    def _max_unram_terms(self): \n \t370\t        return self.max_unram_terms \n \t371\t \n \t372\t    def _max_terse_terms(self): \n \t373\t        return self.max_terse_terms  \n```\n",
+    "body": "REMARK: \n\nThis patch introduces 5 new functions with no doctests, hence fails what I consider *the most basic* review criterion:\n\n```\n\t360\t    def _sep(self): \n \t361\t        return self.sep \n \t362\t \n \t363\t    def _alphabet(self): \n \t364\t        return self.alphabet \n \t365\t \n \t366\t    def _max_ram_terms(self): \n \t367\t        return self.max_ram_terms \n \t368\t \n \t369\t    def _max_unram_terms(self): \n \t370\t        return self.max_unram_terms \n \t371\t \n \t372\t    def _max_terse_terms(self): \n \t373\t        return self.max_terse_terms  \n```",
     "created_at": "2009-04-10T17:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4637",
     "type": "issue_comment",
@@ -221,7 +216,6 @@ This patch introduces 5 new functions with no doctests, hence fails what I consi
  	372	    def _max_terse_terms(self): 
  	373	        return self.max_terse_terms  
 ```
-
 
 
 

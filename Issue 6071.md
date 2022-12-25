@@ -143,7 +143,7 @@ I am adding William to the CC list, since he certainly knows about weight 1 form
 archive/issue_comments_048238.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThere is not a single example in this patch of computing an Eisenstein series of weight 1.  Can you add some examples?\n\n\nAlso, this seems very very wrong to me:\n\n```\n \t361\t        try: \n \t362\t            d = self.dimension() \n \t363\t        except NotImplementedError: \n \t364\t            d = self._dim_eisenstein() \n \t365\t        self.__module = free_module.VectorSpace(self.base_ring(), d) \n```\n\n\nYou've changed the dimension for *ambient* modular forms spaces to return the dimension of the Eisenstein subspace in case the dimension function isn't implemented.  What if I take a space with both a cuspidal and eisenstein part -- it'll just say the dimension of the whole space is the dimension of the eisenstein subspace. Somehow I have the feeling you made this change to get things to work in a special case of interest to you, not worrying that you might break other cases.",
+    "body": "REFEREE REPORT:\n\nThere is not a single example in this patch of computing an Eisenstein series of weight 1.  Can you add some examples?\n\n\nAlso, this seems very very wrong to me:\n\n```\n \t361\t        try: \n \t362\t            d = self.dimension() \n \t363\t        except NotImplementedError: \n \t364\t            d = self._dim_eisenstein() \n \t365\t        self.__module = free_module.VectorSpace(self.base_ring(), d) \n```\n\nYou've changed the dimension for *ambient* modular forms spaces to return the dimension of the Eisenstein subspace in case the dimension function isn't implemented.  What if I take a space with both a cuspidal and eisenstein part -- it'll just say the dimension of the whole space is the dimension of the eisenstein subspace. Somehow I have the feeling you made this change to get things to work in a special case of interest to you, not worrying that you might break other cases.",
     "created_at": "2009-06-20T14:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
@@ -166,7 +166,6 @@ Also, this seems very very wrong to me:
  	364	            d = self._dim_eisenstein() 
  	365	        self.__module = free_module.VectorSpace(self.base_ring(), d) 
 ```
-
 
 You've changed the dimension for *ambient* modular forms spaces to return the dimension of the Eisenstein subspace in case the dimension function isn't implemented.  What if I take a space with both a cuspidal and eisenstein part -- it'll just say the dimension of the whole space is the dimension of the eisenstein subspace. Somehow I have the feeling you made this change to get things to work in a special case of interest to you, not worrying that you might break other cases.
 
@@ -237,7 +236,7 @@ Replaces previous patch
 archive/issue_comments_048242.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* This comment must be changed, and I've changed it in the attached referee patch:\n\n\n```\nFile:           /scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/modular/modform/ambient.py\nDefinition:     M.module(self)\nDocstring:\n    \n            Return the underlying free module corresponding to this space of\n            modular forms. This is a free module (viewed as a tuple space) of\n            the same dimension as this space over the same base ring.\n```\n\nThis is because of the following example:\n\n```\nsage: M = ModularForms(Gamma1(23), 1,prec=20); M\nModular Forms space of dimension (unknown) for Congruence Subgroup Gamma1(23) of weight 1 over Rational Field\nsage: M.module()\nVector space of dimension 11 over Rational Field\n```\n\nso it is now no longer the case that `M.module().dimension() == M.dimension()` as is stated in the docstring.\nThe change should just be to state that \"If the dimension of M can be computed, then [same as before].  Otherwise, the dimension of M.module() may be smaller.  E.g., in the case of weight 1 forms...\"  Then include an example in the docstring that illustrates this. \n\n\nThis ticket should be changed to \"[with patch; positive review]\" as soon as somebody else signs off on the referee patch I've attached.",
+    "body": "REFEREE REPORT:\n\n* This comment must be changed, and I've changed it in the attached referee patch:\n\n```\nFile:           /scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/modular/modform/ambient.py\nDefinition:     M.module(self)\nDocstring:\n    \n            Return the underlying free module corresponding to this space of\n            modular forms. This is a free module (viewed as a tuple space) of\n            the same dimension as this space over the same base ring.\n```\nThis is because of the following example:\n\n```\nsage: M = ModularForms(Gamma1(23), 1,prec=20); M\nModular Forms space of dimension (unknown) for Congruence Subgroup Gamma1(23) of weight 1 over Rational Field\nsage: M.module()\nVector space of dimension 11 over Rational Field\n```\nso it is now no longer the case that `M.module().dimension() == M.dimension()` as is stated in the docstring.\nThe change should just be to state that \"If the dimension of M can be computed, then [same as before].  Otherwise, the dimension of M.module() may be smaller.  E.g., in the case of weight 1 forms...\"  Then include an example in the docstring that illustrates this. \n\n\nThis ticket should be changed to \"[with patch; positive review]\" as soon as somebody else signs off on the referee patch I've attached.",
     "created_at": "2009-07-21T04:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6071",
     "type": "issue_comment",
@@ -250,7 +249,6 @@ REFEREE REPORT:
 
 * This comment must be changed, and I've changed it in the attached referee patch:
 
-
 ```
 File:           /scratch/wstein/build/sage-4.1/local/lib/python2.6/site-packages/sage/modular/modform/ambient.py
 Definition:     M.module(self)
@@ -260,7 +258,6 @@ Docstring:
             modular forms. This is a free module (viewed as a tuple space) of
             the same dimension as this space over the same base ring.
 ```
-
 This is because of the following example:
 
 ```
@@ -269,7 +266,6 @@ Modular Forms space of dimension (unknown) for Congruence Subgroup Gamma1(23) of
 sage: M.module()
 Vector space of dimension 11 over Rational Field
 ```
-
 so it is now no longer the case that `M.module().dimension() == M.dimension()` as is stated in the docstring.
 The change should just be to state that "If the dimension of M can be computed, then [same as before].  Otherwise, the dimension of M.module() may be smaller.  E.g., in the case of weight 1 forms..."  Then include an example in the docstring that illustrates this. 
 

@@ -3,7 +3,7 @@
 archive/issues_001902.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\n> sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?\n> [...]\n> Docstring:\n> \n>             Return a generator of self. All elements x of self are\n>             expressed as log_{self.gen()}(p) internally. If self is\n>             a prime field this method returns 1.\n> \n> (The sentence \"If self is a prime field...\" is wrong, but the first\n> sentence is correct.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1902\n\n",
+    "body": "Assignee: somebody\n\n```\n> sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?\n> [...]\n> Docstring:\n> \n>             Return a generator of self. All elements x of self are\n>             expressed as log_{self.gen()}(p) internally. If self is\n>             a prime field this method returns 1.\n> \n> (The sentence \"If self is a prime field...\" is wrong, but the first\n> sentence is correct.)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1902\n\n",
     "created_at": "2008-01-24T00:37:08Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_001902.json:
 ```
 Assignee: somebody
 
-
 ```
 > sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?
 > [...]
@@ -31,7 +30,6 @@ Assignee: somebody
 > (The sentence "If self is a prime field..." is wrong, but the first
 > sentence is correct.)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1902
 

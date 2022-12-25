@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5913
 archive/issue_comments_046647.json:
 ```json
 {
-    "body": "Some offlist emails about this\n\n```\nI agree, graph coloring is rather important.  You might want to look at http://www.cs.ualberta.ca/~joe/Coloring/ which has a lot of good links.  As a stop-gap, it's possible to easily transform a graph-coloring problem into a satisfiability problem and hand it to a SAT solver (like minisat).  This works ok for fairly small graphs, but more specialized algorithms seem to work much better when the graphs get at all large.\n\nVictor\n\nGodsil had suggested looking at Joe Culberson's program a while ago,\nbut as far as I know, nobody has looked into this.\n\n(  http://www.cs.ualberta.ca/~joe/Coloring/Colorsrc/index.html  )\n\nI can bring this up during the Friday session as an alternative\nproject for someone to try if you want.\n\nRobert L. Miller\n\nIt looks like Joe Culberson's programs don't have a clearly defined\nlicense, just something kind of \"as is\"/no-warranty -ish. Maybe you\nshould email him and ask him to allow us to distribute it under\nGPLv2+...\n\nAnother thing to look at is the recent paper of Miroslav Velev (which I've attached).  To implement this it would involve implementing his algorithms (probably in SAGE) for translating the graph coloring problem into SAT input and then passing it to Minisat.  He says that by his encodings he's gotten speedups of 3 orders of magnitude, and is competitive (or better) than the existing coloring programs.\n```\n",
+    "body": "Some offlist emails about this\n\n```\nI agree, graph coloring is rather important.  You might want to look at http://www.cs.ualberta.ca/~joe/Coloring/ which has a lot of good links.  As a stop-gap, it's possible to easily transform a graph-coloring problem into a satisfiability problem and hand it to a SAT solver (like minisat).  This works ok for fairly small graphs, but more specialized algorithms seem to work much better when the graphs get at all large.\n\nVictor\n\nGodsil had suggested looking at Joe Culberson's program a while ago,\nbut as far as I know, nobody has looked into this.\n\n(  http://www.cs.ualberta.ca/~joe/Coloring/Colorsrc/index.html  )\n\nI can bring this up during the Friday session as an alternative\nproject for someone to try if you want.\n\nRobert L. Miller\n\nIt looks like Joe Culberson's programs don't have a clearly defined\nlicense, just something kind of \"as is\"/no-warranty -ish. Maybe you\nshould email him and ask him to allow us to distribute it under\nGPLv2+...\n\nAnother thing to look at is the recent paper of Miroslav Velev (which I've attached).  To implement this it would involve implementing his algorithms (probably in SAGE) for translating the graph coloring problem into SAT input and then passing it to Minisat.  He says that by his encodings he's gotten speedups of 3 orders of magnitude, and is competitive (or better) than the existing coloring programs.\n```",
     "created_at": "2009-04-27T18:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
@@ -72,13 +72,12 @@ Another thing to look at is the recent paper of Miroslav Velev (which I've attac
 
 
 
-
 ---
 
 archive/issue_comments_046648.json:
 ```json
 {
-    "body": "\n```\n>> from sage.graphs import graph_coloring\n>> G = Graph(\"Fooba\")\n>> C = graph_coloring.first_coloring(4)\n>> G.show(vertex_colors=C)\n\nWhy does this have to be obfuscated?   Nobody will ever find this by doing\n\n  G.<tab> \n\nwith a graph.    Is it because you didn't view the code as ready? \n\nIf the code is \"ready\",  this will make solving #5913 fairly easy -- just add a function to graphs that calls graph_coloring.first_coloring. \n\n -- William\n\n```\n",
+    "body": "```\n>> from sage.graphs import graph_coloring\n>> G = Graph(\"Fooba\")\n>> C = graph_coloring.first_coloring(4)\n>> G.show(vertex_colors=C)\n\nWhy does this have to be obfuscated?   Nobody will ever find this by doing\n\n  G.<tab> \n\nwith a graph.    Is it because you didn't view the code as ready? \n\nIf the code is \"ready\",  this will make solving #5913 fairly easy -- just add a function to graphs that calls graph_coloring.first_coloring. \n\n -- William\n\n```",
     "created_at": "2009-04-27T19:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
@@ -86,7 +85,6 @@ archive/issue_comments_046648.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 >> from sage.graphs import graph_coloring
@@ -108,13 +106,12 @@ If the code is "ready",  this will make solving #5913 fairly easy -- just add a 
 
 
 
-
 ---
 
 archive/issue_comments_046649.json:
 ```json
 {
-    "body": "rlm, could you throw in something like\n\n```\nG.plot(vertex_colors=c)\n```\n\nto your example, since it is very nice to visualize what happens, and it's extra nice to not have to spend 5 minutes digging through the plot docs to remember to use vertex_colors.  Also, you can be clear that the html colors dict answer works with plot, but the partition one doesn't.   It's just 1-2 more lines.",
+    "body": "rlm, could you throw in something like\n\n```\nG.plot(vertex_colors=c)\n```\nto your example, since it is very nice to visualize what happens, and it's extra nice to not have to spend 5 minutes digging through the plot docs to remember to use vertex_colors.  Also, you can be clear that the html colors dict answer works with plot, but the partition one doesn't.   It's just 1-2 more lines.",
     "created_at": "2009-04-27T19:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
@@ -128,7 +125,6 @@ rlm, could you throw in something like
 ```
 G.plot(vertex_colors=c)
 ```
-
 to your example, since it is very nice to visualize what happens, and it's extra nice to not have to spend 5 minutes digging through the plot docs to remember to use vertex_colors.  Also, you can be clear that the html colors dict answer works with plot, but the partition one doesn't.   It's just 1-2 more lines.
 
 
@@ -156,7 +152,7 @@ Done!
 archive/issue_comments_046651.json:
 ```json
 {
-    "body": "The coloring doctest will fail, since it involves a dictionary whose order is random:\n\n```\nsage -t  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/graphs/graph.py\", line 8846:\n    sage: H = G.coloring(hex_colors=True); H\nExpected:\n    {'#0000ff': [4], '#00ff00': [1, 2, 3], '#ff0000': [0, 5, 6]}\nGot:\n    {'#00ff00': [1, 2, 3], '#ff0000': [0, 5, 6], '#0000ff': [4]}\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_162\n***Test Failed*** 1 failures.\n```\n\n\nNothing else fails, and nothing else is wrong with this patch as far as I can tell.",
+    "body": "The coloring doctest will fail, since it involves a dictionary whose order is random:\n\n```\nsage -t  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/graphs/graph.py\", line 8846:\n    sage: H = G.coloring(hex_colors=True); H\nExpected:\n    {'#0000ff': [4], '#00ff00': [1, 2, 3], '#ff0000': [0, 5, 6]}\nGot:\n    {'#00ff00': [1, 2, 3], '#ff0000': [0, 5, 6], '#0000ff': [4]}\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_162\n***Test Failed*** 1 failures.\n```\n\nNothing else fails, and nothing else is wrong with this patch as far as I can tell.",
     "created_at": "2009-04-28T14:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
@@ -181,7 +177,6 @@ Got:
    1 of   7 in __main__.example_162
 ***Test Failed*** 1 failures.
 ```
-
 
 Nothing else fails, and nothing else is wrong with this patch as far as I can tell.
 

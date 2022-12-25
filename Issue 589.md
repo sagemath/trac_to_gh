@@ -3,7 +3,7 @@
 archive/issues_000589.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn 9/4/07, Jonathan Bober <jwbober@gmail.com> wrote:\n> My memory could be wrong, but I feel that this exact problem has\n> occurred before. (The problem of running scripts on the command line not\n> working -- not necessarily the exact same underlying cause for the\n> problem.)\n>\n> This kind of basic functionality should probably be tested somewhere\n> automatically. Maybe a doctect with a line like\n>\n> sage: os.system('.\\sage something_or_other.sage')\n>\n> might work. Or maybe this would need to be somehow tested outside the\n> doctest framework. I don't know. Just a thought.\n\nTrue.\n\nImplement some doctests like that  and post a patch to trac. :-)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/589\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 9/4/07, Jonathan Bober <jwbober@gmail.com> wrote:\n> My memory could be wrong, but I feel that this exact problem has\n> occurred before. (The problem of running scripts on the command line not\n> working -- not necessarily the exact same underlying cause for the\n> problem.)\n>\n> This kind of basic functionality should probably be tested somewhere\n> automatically. Maybe a doctect with a line like\n>\n> sage: os.system('.\\sage something_or_other.sage')\n>\n> might work. Or maybe this would need to be somehow tested outside the\n> doctest framework. I don't know. Just a thought.\n\nTrue.\n\nImplement some doctests like that  and post a patch to trac. :-)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/589\n\n",
     "created_at": "2007-09-05T14:14:31Z",
     "labels": [
         "component: packages: standard"
@@ -16,7 +16,6 @@ archive/issues_000589.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On 9/4/07, Jonathan Bober <jwbober@gmail.com> wrote:
@@ -37,7 +36,6 @@ True.
 
 Implement some doctests like that  and post a patch to trac. :-)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/589
 

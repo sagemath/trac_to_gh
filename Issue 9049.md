@@ -3,7 +3,7 @@
 archive/issues_009049.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nI'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?\n\n\n```\nS.<t>=PolynomialRing(QQ)\nF.<q>=QQ.extension(t^4+1)\nR.<x,y>=PolynomialRing(F)\nI=R.ideal(x,y^4+1)\nI.variety()\n```\n\n\nThis produces the following error message:\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nValueError: Length must be equal to the degree of this number field\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_11.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Uy48dD49UG9seW5vbWlhbFJpbmcoUVEpCkYuPHE+PVFRLmV4dGVuc2lvbih0XjQrMSkKUi48eCx5Pj1Qb2x5bm9taWFsUmluZyhGKQpJPVIuaWRlYWwoeCx5XjQrMSkKSS52YXJpZXR5KCk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpZcwb0q/___code___.py\", line 7, in <module>\n    exec compile(u'I.variety()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2094, in variety\n    TI = self.triangular_decomposition('singular:triangLfak')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 901, in triangular_decomposition\n    is_groebner = self.basis_is_groebner()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 322, in __call__\n    return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 466, in _instance_call\n    cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1666, in basis_is_groebner\n    F = matrix(R, 1, self.ngens(), self.gens())\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/constructor.py\", line 652, in matrix\n    return matrix_space.MatrixSpace(ring, nrows, ncols, sparse=sparse)(entries)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce) \n  File \"matrix_generic_dense.pyx\", line 68, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:1997)\n  File \"multi_polynomial_libsingular.pyx\", line 758, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7176)\n  File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.py\", line 1023, in _element_constructor_\n    raise ValueError, \"Length must be equal to the degree of this number field\"\nValueError: Length must be equal to the degree of this number field\n\nIssue created by migration from https://trac.sagemath.org/ticket/9049\n\n",
+    "body": "Assignee: @aghitza\n\nI'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?\n\n```\nS.<t>=PolynomialRing(QQ)\nF.<q>=QQ.extension(t^4+1)\nR.<x,y>=PolynomialRing(F)\nI=R.ideal(x,y^4+1)\nI.variety()\n```\n\nThis produces the following error message:\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nValueError: Length must be equal to the degree of this number field\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_11.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Uy48dD49UG9seW5vbWlhbFJpbmcoUVEpCkYuPHE+PVFRLmV4dGVuc2lvbih0XjQrMSkKUi48eCx5Pj1Qb2x5bm9taWFsUmluZyhGKQpJPVIuaWRlYWwoeCx5XjQrMSkKSS52YXJpZXR5KCk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpZcwb0q/___code___.py\", line 7, in <module>\n    exec compile(u'I.variety()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2094, in variety\n    TI = self.triangular_decomposition('singular:triangLfak')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 901, in triangular_decomposition\n    is_groebner = self.basis_is_groebner()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 322, in __call__\n    return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 466, in _instance_call\n    cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1666, in basis_is_groebner\n    F = matrix(R, 1, self.ngens(), self.gens())\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/constructor.py\", line 652, in matrix\n    return matrix_space.MatrixSpace(ring, nrows, ncols, sparse=sparse)(entries)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce) \n  File \"matrix_generic_dense.pyx\", line 68, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:1997)\n  File \"multi_polynomial_libsingular.pyx\", line 758, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7176)\n  File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.py\", line 1023, in _element_constructor_\n    raise ValueError, \"Length must be equal to the degree of this number field\"\nValueError: Length must be equal to the degree of this number field\n\nIssue created by migration from https://trac.sagemath.org/ticket/9049\n\n",
     "created_at": "2010-05-25T20:37:38Z",
     "labels": [
         "component: algebraic geometry",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 I'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?
 
-
 ```
 S.<t>=PolynomialRing(QQ)
 F.<q>=QQ.extension(t^4+1)
@@ -28,7 +27,6 @@ R.<x,y>=PolynomialRing(F)
 I=R.ideal(x,y^4+1)
 I.variety()
 ```
-
 
 This produces the following error message:
           	
@@ -105,7 +103,7 @@ I just made the error message to be a code block.
 archive/issue_comments_083642.json:
 ```json
 {
-    "body": "I can verify that the bug still exists in v4.4.3.\nThis seems to be because of I.gens() is returning a tuple, while I.basis_is_groebner,  specifically the line\n\n```\n F = matrix(R, 1, self.ngens(), self.gens())\n```\n\nexpects I.gens() to be a list. Did I.gens() change its return type recently? A quick hack converting self.gens() to a list solves the problem. Should I provide that patch?",
+    "body": "I can verify that the bug still exists in v4.4.3.\nThis seems to be because of I.gens() is returning a tuple, while I.basis_is_groebner,  specifically the line\n\n```\n F = matrix(R, 1, self.ngens(), self.gens())\n```\nexpects I.gens() to be a list. Did I.gens() change its return type recently? A quick hack converting self.gens() to a list solves the problem. Should I provide that patch?",
     "created_at": "2010-06-23T17:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -120,7 +118,6 @@ This seems to be because of I.gens() is returning a tuple, while I.basis_is_groe
 ```
  F = matrix(R, 1, self.ngens(), self.gens())
 ```
-
 expects I.gens() to be a list. Did I.gens() change its return type recently? A quick hack converting self.gens() to a list solves the problem. Should I provide that patch?
 
 
@@ -130,7 +127,7 @@ expects I.gens() to be a list. Did I.gens() change its return type recently? A q
 archive/issue_comments_083643.json:
 ```json
 {
-    "body": ">Should I provide that patch? \n\nThat would be great. Thanks!",
+    "body": ">Should I provide that patch? \n\n\nThat would be great. Thanks!",
     "created_at": "2010-06-24T18:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -140,6 +137,7 @@ archive/issue_comments_083643.json:
 ```
 
 >Should I provide that patch? 
+
 
 That would be great. Thanks!
 
@@ -373,7 +371,7 @@ alternative patch
 archive/issue_comments_083655.json:
 ```json
 {
-    "body": "Thanks! That was quick. :)\n\nI suggest to replace the check\n\n```\nif not isinstance(entries, list):\n```\n\nwith\n\n```\nif not isinstance(entries, (list, tuple)):\n```\n\ninstead of accepting `ValueError`s as well.\n\nattachment:trac_9049_bug_in_matrices_from_tuples.take2.patch includes this alternative approach.\n\nPlease switch this to `positive_review` if you agree with my changes.",
+    "body": "Thanks! That was quick. :)\n\nI suggest to replace the check\n\n```\nif not isinstance(entries, list):\n```\nwith\n\n```\nif not isinstance(entries, (list, tuple)):\n```\ninstead of accepting `ValueError`s as well.\n\nattachment:trac_9049_bug_in_matrices_from_tuples.take2.patch includes this alternative approach.\n\nPlease switch this to `positive_review` if you agree with my changes.",
     "created_at": "2010-09-24T21:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -389,13 +387,11 @@ I suggest to replace the check
 ```
 if not isinstance(entries, list):
 ```
-
 with
 
 ```
 if not isinstance(entries, (list, tuple)):
 ```
-
 instead of accepting `ValueError`s as well.
 
 attachment:trac_9049_bug_in_matrices_from_tuples.take2.patch includes this alternative approach.
@@ -427,7 +423,7 @@ I thought about it, but I was not sure if it is necessary somewhere later to hav
 archive/issue_comments_083657.json:
 ```json
 {
-    "body": "`Sequence`s are lists:\n\n```\nsage: t = Sequence([1..5])\nsage: isinstance(t, list)\nTrue\n```\n\n\nExplicitly checking for the condition you are testing is better than trial and error. You cannot know the meaning of the `ValueError` returned from the base rings `__call__` method, especially in such a generic setting. \n\nIMHO, that `try` & `except` block should be cleaned up. However it's hard to do so as it is, since this is a generic constructor, there are no doctests or specification of what the acceptable input is and doctesting the whole sage library takes hours on my laptop.\n\nPlease reconsider my suggestion, with the \"better safe then sorry\" motto in mind.",
+    "body": "`Sequence`s are lists:\n\n```\nsage: t = Sequence([1..5])\nsage: isinstance(t, list)\nTrue\n```\n\nExplicitly checking for the condition you are testing is better than trial and error. You cannot know the meaning of the `ValueError` returned from the base rings `__call__` method, especially in such a generic setting. \n\nIMHO, that `try` & `except` block should be cleaned up. However it's hard to do so as it is, since this is a generic constructor, there are no doctests or specification of what the acceptable input is and doctesting the whole sage library takes hours on my laptop.\n\nPlease reconsider my suggestion, with the \"better safe then sorry\" motto in mind.",
     "created_at": "2010-09-24T21:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
@@ -443,7 +439,6 @@ sage: t = Sequence([1..5])
 sage: isinstance(t, list)
 True
 ```
-
 
 Explicitly checking for the condition you are testing is better than trial and error. You cannot know the meaning of the `ValueError` returned from the base rings `__call__` method, especially in such a generic setting. 
 

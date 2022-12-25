@@ -90,7 +90,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079907.json:
 ```json
 {
-    "body": "Failures:\n\n```\nsage -t -only-optional=glpk,cbc \"devel/sage-main/sage/graphs/graph_coloring.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0-cbc/devel/sage-main/sage/graphs/graph_coloring.py\", line 749:\n    sage: all([g1.has_edge(e) or g2.has_edge(e) for e in g.edges()])  # optional - GLPK, CBC\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0-cbc/devel/sage-main/sage/graphs/graph_coloring.py\", line 922:\n    sage: all([ any([gg.has_edge(e) for gg in colors]) for e in g.edges()])     # optional - GLPK, CBC\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
+    "body": "Failures:\n\n```\nsage -t -only-optional=glpk,cbc \"devel/sage-main/sage/graphs/graph_coloring.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0-cbc/devel/sage-main/sage/graphs/graph_coloring.py\", line 749:\n    sage: all([g1.has_edge(e) or g2.has_edge(e) for e in g.edges()])  # optional - GLPK, CBC\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0-cbc/devel/sage-main/sage/graphs/graph_coloring.py\", line 922:\n    sage: all([ any([gg.has_edge(e) for gg in colors]) for e in g.edges()])     # optional - GLPK, CBC\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```",
     "created_at": "2010-06-21T21:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
@@ -119,7 +119,6 @@ Got:
     False
 **********************************************************************
 ```
-
 
 
 

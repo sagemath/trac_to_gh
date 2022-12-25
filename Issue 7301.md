@@ -118,7 +118,7 @@ Nathann
 archive/issue_comments_060738.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> I'm glad to hear it !! This is my second attempt at a contribution to the Combinatorics section, and I hope you will find it useful :-)\n> \n> The odd thing is that if I knew of the Gale Ryser theorem, I never heard of the theorem you are talking about, when it clearly should be the opposite... Could you tell me what this theorem is about ? I was not able to find it using \"haval\" on Google, and I am very interested in what it could be :-)\n> \n> The only direct use I could make of this theorem in Graph Theory \n> is deciding whether there exists a bipartite graph with a given \n> degree sequence... Is that the result you are mentionning ? :-)\n> \n\n\nYes, I believe that is it. But I think the Haval-??? Theorem generalizes that a bit.\n\n\n> And by the way, I only wrote this function for squares matrices when it is not required.. Thinking about bipartite graphs helped me notice :-)\n> \n> Nathann",
+    "body": "Replying to [comment:4 ncohen]:\n> I'm glad to hear it !! This is my second attempt at a contribution to the Combinatorics section, and I hope you will find it useful :-)\n> \n> The odd thing is that if I knew of the Gale Ryser theorem, I never heard of the theorem you are talking about, when it clearly should be the opposite... Could you tell me what this theorem is about ? I was not able to find it using \"haval\" on Google, and I am very interested in what it could be :-)\n> \n> The only direct use I could make of this theorem in Graph Theory \n> is deciding whether there exists a bipartite graph with a given \n> degree sequence... Is that the result you are mentionning ? :-)\n> \n\n\n\nYes, I believe that is it. But I think the Haval-??? Theorem generalizes that a bit.\n\n\n> And by the way, I only wrote this function for squares matrices when it is not required.. Thinking about bipartite graphs helped me notice :-)\n> \n> Nathann",
     "created_at": "2009-12-03T12:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ Replying to [comment:4 ncohen]:
 > is deciding whether there exists a bipartite graph with a given 
 > degree sequence... Is that the result you are mentionning ? :-)
 > 
+
 
 
 Yes, I believe that is it. But I think the Haval-??? Theorem generalizes that a bit.
@@ -170,7 +171,7 @@ Now with non-square matrices ;-)
 archive/issue_comments_060740.json:
 ```json
 {
-    "body": "Hi there,\n\nThere is something I don't get in the doc:\n\n```\nThe Gale Ryser theorem asserts that if `p_1,p_2` are two \npartitions of `n` of respective lengths `k_1,k_2`, then there is \na binary `k_1\\times k_2` matrix `M` such that `p_1` is the vector \nof row sums and `p_2` is the vector of column sums of `M`, if \nand only if `p_2` dominates `p_1`.\n```\n\nI suggest that the role of `p_1` and `p_2` are not symmetric... Is this really a \"if and only if\" ? If you transpose the matrix then the role of `p_1` and `p_2` are exchanged... Or dominate is not the same as dominance order...\n\nAm I definitely confused ???\n\nFlorent",
+    "body": "Hi there,\n\nThere is something I don't get in the doc:\n\n```\nThe Gale Ryser theorem asserts that if `p_1,p_2` are two \npartitions of `n` of respective lengths `k_1,k_2`, then there is \na binary `k_1\\times k_2` matrix `M` such that `p_1` is the vector \nof row sums and `p_2` is the vector of column sums of `M`, if \nand only if `p_2` dominates `p_1`.\n```\nI suggest that the role of `p_1` and `p_2` are not symmetric... Is this really a \"if and only if\" ? If you transpose the matrix then the role of `p_1` and `p_2` are exchanged... Or dominate is not the same as dominance order...\n\nAm I definitely confused ???\n\nFlorent",
     "created_at": "2009-12-07T23:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -190,7 +191,6 @@ a binary `k_1\times k_2` matrix `M` such that `p_1` is the vector
 of row sums and `p_2` is the vector of column sums of `M`, if 
 and only if `p_2` dominates `p_1`.
 ```
-
 I suggest that the role of `p_1` and `p_2` are not symmetric... Is this really a "if and only if" ? If you transpose the matrix then the role of `p_1` and `p_2` are exchanged... Or dominate is not the same as dominance order...
 
 Am I definitely confused ???
@@ -251,7 +251,7 @@ Thanks very much for working on this! I know this is a bit vague, so please ask 
 archive/issue_comments_060743.json:
 ```json
 {
-    "body": "Replying to [comment:10 wdj]:\n\n> He is not satisfied with your implementation. He had problems with the wording of the documentation, though he admitted this was only a minor issue. (For example, \"dominated\" should be \"majorized\"...) \n\nThis is clearly a question of community. Those kind of matrix problem arise in the representation theory of Symmetric Groups or in symmetric functions and in this context I've allways seen the order called dominance order. See eg:  Macdonald, I. G. Symmetric Functions and Hall Polynomials, 2nd ed. Oxford, England: Oxford University Press, 1995.\n\n> More important, he believed, was that the only construction implemented was a special one (in particular, Ryser's construction was not implemented). Without being specific, he said that more options should be available to the user, to allow for different types of features/constructions.\n> (For example, one could allow matrices taken from another subset of numbers, as opposed to just {0,1}.)\n\nAgain in the theory of symmetric function and descent algebra of the symmetric group, it is useful not to give a single solution but to give all of them, without restricting et entries of the matrix to be smaller than one (i.e. any non negative integer). Moreover the order of the input is important so that I'd rather have the input to be composition rather than partition. However I don't know if in this case we need a different enumeration algorithm. You can have a look at  http://mupad-combinat.sourceforge.net/doc/en/combinat/integerMatrices.html\nto see what we had in MuPAD-Combinat.\n \n> He was also hoping to have a construction of the graph-theoretic analog (given a possible degree sequence, construct a graph having that degree sequence). I presume though that, if you decided to implement that, you would create a separate ticket.\n> \n> Thanks very much for working on this! I know this is a bit vague, so please ask questions and I will ask for more details from my colleague.",
+    "body": "Replying to [comment:10 wdj]:\n\n> He is not satisfied with your implementation. He had problems with the wording of the documentation, though he admitted this was only a minor issue. (For example, \"dominated\" should be \"majorized\"...) \n\n\nThis is clearly a question of community. Those kind of matrix problem arise in the representation theory of Symmetric Groups or in symmetric functions and in this context I've allways seen the order called dominance order. See eg:  Macdonald, I. G. Symmetric Functions and Hall Polynomials, 2nd ed. Oxford, England: Oxford University Press, 1995.\n\n> More important, he believed, was that the only construction implemented was a special one (in particular, Ryser's construction was not implemented). Without being specific, he said that more options should be available to the user, to allow for different types of features/constructions.\n> (For example, one could allow matrices taken from another subset of numbers, as opposed to just {0,1}.)\n\n\nAgain in the theory of symmetric function and descent algebra of the symmetric group, it is useful not to give a single solution but to give all of them, without restricting et entries of the matrix to be smaller than one (i.e. any non negative integer). Moreover the order of the input is important so that I'd rather have the input to be composition rather than partition. However I don't know if in this case we need a different enumeration algorithm. You can have a look at  http://mupad-combinat.sourceforge.net/doc/en/combinat/integerMatrices.html\nto see what we had in MuPAD-Combinat.\n \n> He was also hoping to have a construction of the graph-theoretic analog (given a possible degree sequence, construct a graph having that degree sequence). I presume though that, if you decided to implement that, you would create a separate ticket.\n> \n> Thanks very much for working on this! I know this is a bit vague, so please ask questions and I will ask for more details from my colleague.",
     "created_at": "2009-12-08T06:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -264,10 +264,12 @@ Replying to [comment:10 wdj]:
 
 > He is not satisfied with your implementation. He had problems with the wording of the documentation, though he admitted this was only a minor issue. (For example, "dominated" should be "majorized"...) 
 
+
 This is clearly a question of community. Those kind of matrix problem arise in the representation theory of Symmetric Groups or in symmetric functions and in this context I've allways seen the order called dominance order. See eg:  Macdonald, I. G. Symmetric Functions and Hall Polynomials, 2nd ed. Oxford, England: Oxford University Press, 1995.
 
 > More important, he believed, was that the only construction implemented was a special one (in particular, Ryser's construction was not implemented). Without being specific, he said that more options should be available to the user, to allow for different types of features/constructions.
 > (For example, one could allow matrices taken from another subset of numbers, as opposed to just {0,1}.)
+
 
 Again in the theory of symmetric function and descent algebra of the symmetric group, it is useful not to give a single solution but to give all of them, without restricting et entries of the matrix to be smaller than one (i.e. any non negative integer). Moreover the order of the input is important so that I'd rather have the input to be composition rather than partition. However I don't know if in this case we need a different enumeration algorithm. You can have a look at  http://mupad-combinat.sourceforge.net/doc/en/combinat/integerMatrices.html
 to see what we had in MuPAD-Combinat.
@@ -311,7 +313,7 @@ Nathann
 archive/issue_comments_060745.json:
 ```json
 {
-    "body": "No, I think this is a useful patch. Also, I agree that the enumeration problem is a separate ticket. I am not an expert, so to review your patch, which I think is interesting, I am told to read\n\n\n```\nCombinatorial Matrix Theory\nby Brualdi and Ryser, Chapter 6\n\nCombinatorial Matrix Classes\nBy Brualdi (I think this has a whole chapter on A(R,S), the \nset of (0,1)-matrices with prescribed row sums R and col sums S.\n\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\n\nThey shouldn't take long to read but I don't own these and will \nhave to make a trip to the library, which I will try to do tomorrow.\n \nI was also told of a very interesting application of the Gale-Ryser\ntheorem to medical imaging (which you may already know about):\n\n\n```\nDiscrete tomography\nhttp://en.wikipedia.org/wiki/Discrete_tomography\n```\n",
+    "body": "No, I think this is a useful patch. Also, I agree that the enumeration problem is a separate ticket. I am not an expert, so to review your patch, which I think is interesting, I am told to read\n\n```\nCombinatorial Matrix Theory\nby Brualdi and Ryser, Chapter 6\n\nCombinatorial Matrix Classes\nBy Brualdi (I think this has a whole chapter on A(R,S), the \nset of (0,1)-matrices with prescribed row sums R and col sums S.\n\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\nThey shouldn't take long to read but I don't own these and will \nhave to make a trip to the library, which I will try to do tomorrow.\n \nI was also told of a very interesting application of the Gale-Ryser\ntheorem to medical imaging (which you may already know about):\n\n```\nDiscrete tomography\nhttp://en.wikipedia.org/wiki/Discrete_tomography\n```",
     "created_at": "2009-12-08T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -321,7 +323,6 @@ archive/issue_comments_060745.json:
 ```
 
 No, I think this is a useful patch. Also, I agree that the enumeration problem is a separate ticket. I am not an expert, so to review your patch, which I think is interesting, I am told to read
-
 
 ```
 Combinatorial Matrix Theory
@@ -334,13 +335,11 @@ set of (0,1)-matrices with prescribed row sums R and col sums S.
 Combinatorial Mathematics
 By Ryser (has a chapter on A(R,S))
 ```
-
 They shouldn't take long to read but I don't own these and will 
 have to make a trip to the library, which I will try to do tomorrow.
  
 I was also told of a very interesting application of the Gale-Ryser
 theorem to medical imaging (which you may already know about):
-
 
 ```
 Discrete tomography
@@ -349,13 +348,12 @@ http://en.wikipedia.org/wiki/Discrete_tomography
 
 
 
-
 ---
 
 archive/issue_comments_060746.json:
 ```json
 {
-    "body": "Replying to [comment:12 ncohen]:\n> Hello everybody !!!  \n\n...\n\n> \n> Besides, your friend was talking about \"different subsets of numbers\". Well, \n> I only met this problem for 0-1 matrices and I assume your are not talking about \n> replacing 0 by x and 1 by y... Do you mean that there is a version of this theorem \n> working simultaneously for several types of different variables (with two partitions \n> per type of variable, etc...)  ?? This would interest me very much !!\n> \n\n\nYes, he indicated that a very simple modification of the construction should \nallow one to construct matrices whose entries are in (say) {0,1, ..., m-1}, \nwith give column sums and given row sums if one exists. (Here m > 1 is\na user-supplied integer which is m=2 in your current implementation.)\n\n\n> Thank you for your interest !\n> \n> Nathann",
+    "body": "Replying to [comment:12 ncohen]:\n> Hello everybody !!!  \n\n\n...\n\n> \n> Besides, your friend was talking about \"different subsets of numbers\". Well, \n> I only met this problem for 0-1 matrices and I assume your are not talking about \n> replacing 0 by x and 1 by y... Do you mean that there is a version of this theorem \n> working simultaneously for several types of different variables (with two partitions \n> per type of variable, etc...)  ?? This would interest me very much !!\n> \n\n\n\nYes, he indicated that a very simple modification of the construction should \nallow one to construct matrices whose entries are in (say) {0,1, ..., m-1}, \nwith give column sums and given row sums if one exists. (Here m > 1 is\na user-supplied integer which is m=2 in your current implementation.)\n\n\n> Thank you for your interest !\n> \n> Nathann",
     "created_at": "2009-12-08T13:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -367,6 +365,7 @@ archive/issue_comments_060746.json:
 Replying to [comment:12 ncohen]:
 > Hello everybody !!!  
 
+
 ...
 
 > 
@@ -376,6 +375,7 @@ Replying to [comment:12 ncohen]:
 > working simultaneously for several types of different variables (with two partitions 
 > per type of variable, etc...)  ?? This would interest me very much !!
 > 
+
 
 
 Yes, he indicated that a very simple modification of the construction should 
@@ -395,7 +395,7 @@ a user-supplied integer which is m=2 in your current implementation.)
 archive/issue_comments_060747.json:
 ```json
 {
-    "body": "Nathann:\n\nI have started reading these books and spoken to my colleague again. The book\n\n\n```\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\n\nhas a construction (due to Ryser) which is in many cases more valuable than the construction implemented (due to Gale). Moreover, the implementation of the construction assumes that the R,S have no\ntrailing 0's. It seems natural to assume that the user can simply remove any trailing 0's in the input sequence (I thought so myself). However, my colleague assures me that if you could implement the exact same function but allow for trailing 0's then the function would be more useful.\n\nI need to digest the Ryser algorithm better but thought I would post this update FYI.",
+    "body": "Nathann:\n\nI have started reading these books and spoken to my colleague again. The book\n\n```\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\nhas a construction (due to Ryser) which is in many cases more valuable than the construction implemented (due to Gale). Moreover, the implementation of the construction assumes that the R,S have no\ntrailing 0's. It seems natural to assume that the user can simply remove any trailing 0's in the input sequence (I thought so myself). However, my colleague assures me that if you could implement the exact same function but allow for trailing 0's then the function would be more useful.\n\nI need to digest the Ryser algorithm better but thought I would post this update FYI.",
     "created_at": "2009-12-10T12:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -408,12 +408,10 @@ Nathann:
 
 I have started reading these books and spoken to my colleague again. The book
 
-
 ```
 Combinatorial Mathematics
 By Ryser (has a chapter on A(R,S))
 ```
-
 has a construction (due to Ryser) which is in many cases more valuable than the construction implemented (due to Gale). Moreover, the implementation of the construction assumes that the R,S have no
 trailing 0's. It seems natural to assume that the user can simply remove any trailing 0's in the input sequence (I thought so myself). However, my colleague assures me that if you could implement the exact same function but allow for trailing 0's then the function would be more useful.
 
@@ -470,7 +468,7 @@ Hope it helps!
 archive/issue_comments_060750.json:
 ```json
 {
-    "body": "Replying to [comment:17 wdj]:\n> Please see\n> http://sage.math.washignton.edu/home/wdj/sagefiles/gale-ryser.sage\n> Hope it helps!\n\nMake that http://sage.math.washington.edu/home/wdj/sagefiles/gale-ryser.sage",
+    "body": "Replying to [comment:17 wdj]:\n> Please see\n> http://sage.math.washignton.edu/home/wdj/sagefiles/gale-ryser.sage\n> Hope it helps!\n\n\nMake that http://sage.math.washington.edu/home/wdj/sagefiles/gale-ryser.sage",
     "created_at": "2009-12-13T22:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -483,6 +481,7 @@ Replying to [comment:17 wdj]:
 > Please see
 > http://sage.math.washignton.edu/home/wdj/sagefiles/gale-ryser.sage
 > Hope it helps!
+
 
 Make that http://sage.math.washington.edu/home/wdj/sagefiles/gale-ryser.sage
 
@@ -520,7 +519,7 @@ Nathann
 archive/issue_comments_060752.json:
 ```json
 {
-    "body": "Replying to [comment:19 ncohen]:\n> Excellent !!! Well, could you send your code as a patch to replace mine \n> then, as it does not use LP ? :-)\n>\n\n\nI will submit my code to my colleague, who does not use Sage \nor know how to program (as far as I know) but can read Python:-)\n\nHe already said that you have implemented Gale's algorithm, and\nI have implemented Ryser. He does not agree that your implementation\nshould be replaced by mine. Perhaps we make my implementation\nthe default since it seems \"more elementary\" than yours? \n\nMore later when I receive his report.\n\n \n> two remarks though : \n> \n>     * Perhaps \"slider\" could be defined inside the gale_ryser function, \n> except if it can be useful in other parts of Sage\n>     * The order defined on the partitions is equivalent to the the \n> function \"dominates\" in the Partition class.. In my patch it was written \n> as p2.conjugate().dominates(p1), so it may not be necessary to rewrite it\n> \n> Great work !! :-)\n> \n> Nathann",
+    "body": "Replying to [comment:19 ncohen]:\n> Excellent !!! Well, could you send your code as a patch to replace mine \n> then, as it does not use LP ? :-)\n\n>\n\n\nI will submit my code to my colleague, who does not use Sage \nor know how to program (as far as I know) but can read Python:-)\n\nHe already said that you have implemented Gale's algorithm, and\nI have implemented Ryser. He does not agree that your implementation\nshould be replaced by mine. Perhaps we make my implementation\nthe default since it seems \"more elementary\" than yours? \n\nMore later when I receive his report.\n\n \n> two remarks though : \n> \n> * Perhaps \"slider\" could be defined inside the gale_ryser function, \n> except if it can be useful in other parts of Sage\n> * The order defined on the partitions is equivalent to the the \n> function \"dominates\" in the Partition class.. In my patch it was written \n> as p2.conjugate().dominates(p1), so it may not be necessary to rewrite it\n> \n> Great work !! :-)\n> \n> Nathann",
     "created_at": "2009-12-14T21:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -532,6 +531,7 @@ archive/issue_comments_060752.json:
 Replying to [comment:19 ncohen]:
 > Excellent !!! Well, could you send your code as a patch to replace mine 
 > then, as it does not use LP ? :-)
+
 >
 
 
@@ -548,9 +548,9 @@ More later when I receive his report.
  
 > two remarks though : 
 > 
->     * Perhaps "slider" could be defined inside the gale_ryser function, 
+> * Perhaps "slider" could be defined inside the gale_ryser function, 
 > except if it can be useful in other parts of Sage
->     * The order defined on the partitions is equivalent to the the 
+> * The order defined on the partitions is equivalent to the the 
 > function "dominates" in the Partition class.. In my patch it was written 
 > as p2.conjugate().dominates(p1), so it may not be necessary to rewrite it
 > 
@@ -647,7 +647,7 @@ Nathann
 archive/issue_comments_060757.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n> Now with non-square matrices ;-)\n\n\nWhat does this mean? You still have\n\n\n```\n        if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```\n",
+    "body": "Replying to [comment:6 ncohen]:\n> Now with non-square matrices ;-)\n\n\n\nWhat does this mean? You still have\n\n```\n        if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```",
     "created_at": "2009-12-27T23:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -660,8 +660,8 @@ Replying to [comment:6 ncohen]:
 > Now with non-square matrices ;-)
 
 
-What does this mean? You still have
 
+What does this mean? You still have
 
 ```
         if sum(p1) != sum(p2):
@@ -670,13 +670,12 @@ What does this mean? You still have
 
 
 
-
 ---
 
 archive/issue_comments_060758.json:
 ```json
 {
-    "body": "Replying to [comment:25 wdj]:\n> Replying to [comment:6 ncohen]:\n> > Now with non-square matrices ;-)\n> \n> \n> What does this mean? You still have\n> \n> {{{\n>         if sum(p1) != sum(p2):\n>             raise ValueError(\"The two partitions must sum to the same value.\")\n> }}}\n\nSorry, dumb question.\n\nThis is what I should have asked: The condition\n\n\n```\n       if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```\n\nshould be replaced by a condition on p1 and the *conjugate* of p2,\nshouldn't it?",
+    "body": "Replying to [comment:25 wdj]:\n> Replying to [comment:6 ncohen]:\n> > Now with non-square matrices ;-)\n\n> \n> \n> What does this mean? You still have\n> \n> \n> ```\n>         if sum(p1) != sum(p2):\n>             raise ValueError(\"The two partitions must sum to the same value.\")\n> ```\n\n\nSorry, dumb question.\n\nThis is what I should have asked: The condition\n\n```\n       if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```\nshould be replaced by a condition on p1 and the *conjugate* of p2,\nshouldn't it?",
     "created_at": "2009-12-28T01:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -688,25 +687,26 @@ archive/issue_comments_060758.json:
 Replying to [comment:25 wdj]:
 > Replying to [comment:6 ncohen]:
 > > Now with non-square matrices ;-)
+
 > 
 > 
 > What does this mean? You still have
 > 
-> {{{
+> 
+> ```
 >         if sum(p1) != sum(p2):
 >             raise ValueError("The two partitions must sum to the same value.")
-> }}}
+> ```
+
 
 Sorry, dumb question.
 
 This is what I should have asked: The condition
 
-
 ```
        if sum(p1) != sum(p2):
             raise ValueError("The two partitions must sum to the same value.")
 ```
-
 should be replaced by a condition on p1 and the *conjugate* of p2,
 shouldn't it?
 
@@ -801,7 +801,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060763.json:
 ```json
 {
-    "body": "In reply to an email Nathann Cohen sent me:\n\n> Several questions about your patch :\n> \u00a0 \u00a0* Do you think function slider01 is useful by itself in the\n> integer_vector class ( and if so, under, should'nt it be renamed to be\n> more \"explicit\", if possible ? ) ? My advice is that it may be better\n> to move it *inside* of function fale_ryser_theorem\n\n\nPython has a mechanism for \"private\" functions like slider01, so\nI renamed it _slider01. I think that is better than hiding it inside\ngale_ryser_theorem. Is that okay?\n\n\n> \u00a0 \u00a0* There is one commented line in is_gale_ryser\n> \u00a0 \u00a0* Why don't you want to use the method Partition.dominates for\n> your test in is_gale_ryser ?\n\n\nI think this will not work, if you want to allow trailing 0's.\nMaybe I am missing something?\n\n\n> \u00a0 \u00a0* Why do you say that the LP formulation is Gale's construction ?\n> You mean that Gale proved this result using LinearProgramming ? If so,\n> do you have access to an electronic version of the text you are citing\n> ? I'd be extremely interested in giving it a look... Very few\n> theretical results are proved using LP :-)\n\nI was told that by my colleague which is much much more of an expert on\nthis stuff. I have not read Gale's paper and don't know of an electronic version.\n\n\n> \u00a0 \u00a0* In you docstrings you frequently use $$ for LaTeX expressions.\n> As I never saw it anywhere in Sphinx, I do not know whether it works :\n> I always use ` instead of $. Is the documentation built correctly this\n> way ? I prefer your $ to my usual `, so I'm interested in the\n> answer....\n\n\nI changed all $ to '. Thanks!\n\n\n> \u00a0 \u00a0* I will be running tests to compare the speed of your\n> construction of the matrices... I expect your method to be much faster\n> than mine, perhaps something about it should be said in the docstrings\n> \u00a0 \u00a0* I do not know if it is a requirement of Sphinx, but Minh ( who I\n> claim is perfection made flesh ) gave me several \"needs work\" because\n> of the way I formatted docstrings for References. What I take for\n> model now is the functions citing Cliquer in the graph.py file. The\n> document's keys are not integers but \"the usual\" concatenations of the\n> authors'initials and the year, for example [Ryser63] and [Gale57].\n> Besides, they appear with a trailing _ when used to cite the paper.\n> You are bound to find one if you look for the string \"]_\" in Sage's\n> files ( but you will definitely find them if you look for \"Cliquer\" in\n> sage/graphs/graph.py\"\n\n\nThank you for the reference! I think the docstrings are okay now.\n\n\n> \u00a0 \u00a0* In gale_ryser_theorem the two :: after EXAMPLES should be\n> removed for the generated documentation to be correct. Same thing\n> after References, and in slider01. The sign :: is saying to Sphinx\n> that what is following is a piece of Sage code. So you should only\n> write them when it is the case, for example after EXAMPLES in\n> is_gale_ryser. It may be better to generate the documentation to check\n> that it is visually correct :-)\n\n\nDone. Thanks.\n\n\n>\n> I will be keeping an eye on Sage-devel to be kept aware of the next\n> alpha release... I tried alpha0 which failed to compile on my computer\n> and I am at the moment without any Sage install available ( I have\n> sage.math in case of need, though ). I hope it will be available soon\n> :-))))))",
+    "body": "In reply to an email Nathann Cohen sent me:\n\n> Several questions about your patch :\n> * Do you think function slider01 is useful by itself in the\n> integer_vector class ( and if so, under, should'nt it be renamed to be\n> more \"explicit\", if possible ? ) ? My advice is that it may be better\n> to move it *inside* of function fale_ryser_theorem\n\n\n\nPython has a mechanism for \"private\" functions like slider01, so\nI renamed it _slider01. I think that is better than hiding it inside\ngale_ryser_theorem. Is that okay?\n\n\n> \u00a0 \u00a0* There is one commented line in is_gale_ryser\n> \u00a0 \u00a0* Why don't you want to use the method Partition.dominates for\n \n> your test in is_gale_ryser ?\n\n\nI think this will not work, if you want to allow trailing 0's.\nMaybe I am missing something?\n\n\n> \u00a0 \u00a0* Why do you say that the LP formulation is Gale's construction ?\n \n> You mean that Gale proved this result using LinearProgramming ? If so,\n> do you have access to an electronic version of the text you are citing\n> ? I'd be extremely interested in giving it a look... Very few\n> theretical results are proved using LP :-)\n\n\nI was told that by my colleague which is much much more of an expert on\nthis stuff. I have not read Gale's paper and don't know of an electronic version.\n\n\n> \u00a0 \u00a0* In you docstrings you frequently use $$ for LaTeX expressions.\n \n> As I never saw it anywhere in Sphinx, I do not know whether it works :\n> I always use ` instead of $. Is the documentation built correctly this\n> way ? I prefer your $ to my usual `, so I'm interested in the\n> answer....\n\n\n\nI changed all $ to '. Thanks!\n\n\n> \u00a0 \u00a0* I will be running tests to compare the speed of your\n \n> construction of the matrices... I expect your method to be much faster\n> than mine, perhaps something about it should be said in the docstrings\n> * I do not know if it is a requirement of Sphinx, but Minh ( who I\n> claim is perfection made flesh ) gave me several \"needs work\" because\n> of the way I formatted docstrings for References. What I take for\n> model now is the functions citing Cliquer in the graph.py file. The\n> document's keys are not integers but \"the usual\" concatenations of the\n> authors'initials and the year, for example [Ryser63] and [Gale57].\n> Besides, they appear with a trailing _ when used to cite the paper.\n> You are bound to find one if you look for the string \"]_\" in Sage's\n> files ( but you will definitely find them if you look for \"Cliquer\" in\n> sage/graphs/graph.py\"\n\n\n\nThank you for the reference! I think the docstrings are okay now.\n\n\n> \u00a0 \u00a0* In gale_ryser_theorem the two :: after EXAMPLES should be\n \n> removed for the generated documentation to be correct. Same thing\n> after References, and in slider01. The sign :: is saying to Sphinx\n> that what is following is a piece of Sage code. So you should only\n> write them when it is the case, for example after EXAMPLES in\n> is_gale_ryser. It may be better to generate the documentation to check\n> that it is visually correct :-)\n\n\n\nDone. Thanks.\n\n\n>\n>   I will be keeping an eye on Sage-devel to be kept aware of the next\n>   alpha release... I tried alpha0 which failed to compile on my computer\n>   and I am at the moment without any Sage install available ( I have\n>   sage.math in case of need, though ). I hope it will be available soon\n>   :-))))))",
     "created_at": "2010-01-06T20:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -813,10 +813,11 @@ archive/issue_comments_060763.json:
 In reply to an email Nathann Cohen sent me:
 
 > Several questions about your patch :
->    * Do you think function slider01 is useful by itself in the
+> * Do you think function slider01 is useful by itself in the
 > integer_vector class ( and if so, under, should'nt it be renamed to be
 > more "explicit", if possible ? ) ? My advice is that it may be better
 > to move it *inside* of function fale_ryser_theorem
+
 
 
 Python has a mechanism for "private" functions like slider01, so
@@ -826,6 +827,7 @@ gale_ryser_theorem. Is that okay?
 
 >    * There is one commented line in is_gale_ryser
 >    * Why don't you want to use the method Partition.dominates for
+ 
 > your test in is_gale_ryser ?
 
 
@@ -834,29 +836,34 @@ Maybe I am missing something?
 
 
 >    * Why do you say that the LP formulation is Gale's construction ?
+ 
 > You mean that Gale proved this result using LinearProgramming ? If so,
 > do you have access to an electronic version of the text you are citing
 > ? I'd be extremely interested in giving it a look... Very few
 > theretical results are proved using LP :-)
+
 
 I was told that by my colleague which is much much more of an expert on
 this stuff. I have not read Gale's paper and don't know of an electronic version.
 
 
 >    * In you docstrings you frequently use $$ for LaTeX expressions.
+ 
 > As I never saw it anywhere in Sphinx, I do not know whether it works :
 > I always use ` instead of $. Is the documentation built correctly this
 > way ? I prefer your $ to my usual `, so I'm interested in the
 > answer....
 
 
+
 I changed all $ to '. Thanks!
 
 
 >    * I will be running tests to compare the speed of your
+ 
 > construction of the matrices... I expect your method to be much faster
 > than mine, perhaps something about it should be said in the docstrings
->    * I do not know if it is a requirement of Sphinx, but Minh ( who I
+> * I do not know if it is a requirement of Sphinx, but Minh ( who I
 > claim is perfection made flesh ) gave me several "needs work" because
 > of the way I formatted docstrings for References. What I take for
 > model now is the functions citing Cliquer in the graph.py file. The
@@ -868,10 +875,12 @@ I changed all $ to '. Thanks!
 > sage/graphs/graph.py"
 
 
+
 Thank you for the reference! I think the docstrings are okay now.
 
 
 >    * In gale_ryser_theorem the two :: after EXAMPLES should be
+ 
 > removed for the generated documentation to be correct. Same thing
 > after References, and in slider01. The sign :: is saying to Sphinx
 > that what is following is a piece of Sage code. So you should only
@@ -880,15 +889,16 @@ Thank you for the reference! I think the docstrings are okay now.
 > that it is visually correct :-)
 
 
+
 Done. Thanks.
 
 
 >
-> I will be keeping an eye on Sage-devel to be kept aware of the next
-> alpha release... I tried alpha0 which failed to compile on my computer
-> and I am at the moment without any Sage install available ( I have
-> sage.math in case of need, though ). I hope it will be available soon
-> :-))))))
+>   I will be keeping an eye on Sage-devel to be kept aware of the next
+>   alpha release... I tried alpha0 which failed to compile on my computer
+>   and I am at the moment without any Sage install available ( I have
+>   sage.math in case of need, though ). I hope it will be available soon
+>   :-))))))
 
 
 
@@ -938,7 +948,7 @@ Nathann
 archive/issue_comments_060766.json:
 ```json
 {
-    "body": "> Python has a mechanism for \"private\" functions like slider01, so\n> I renamed it _slider01. I think that is better than hiding it inside\n> gale_ryser_theorem. Is that okay?\n\nWell, do you think slider01 could be used by ither methods ?\n\n> I think this will not work, if you want to allow trailing 0's.\n> Maybe I am missing something?\nThe Gale-Ryser theorem tells you that given two partitions, there is a matrix satisfying the constraints if and only if the domination criterion is checked. Well, the point you made about trailing 0's is that you do not necessarily want the column's sums in your final matrix to be *sorted in decreasing order*. When you have a binary matrix, though, you can modify it by inverting two columns without changin the rows sums, and the columns sum still have the same set of sums. So instead of just taking care of trailing 0, the best may be to take care of non-sorted sequences, which is the general case of the theorem.\n\n> I was told that by my colleague which is much much more of an expert on\n> this stuff. I have not read Gale's paper and don't know of an electronic version.\nThen the best is to :\n* Cite the reference to justify the names Gale's method and Ryser's method\n* Alternatively, use algorithm=\"LP\" instead of Gale, as we can not say more without references ( plus it gives some enlightenment as to the algorithm used and the complexity )\n\nNathann",
+    "body": "> Python has a mechanism for \"private\" functions like slider01, so\n> I renamed it _slider01. I think that is better than hiding it inside\n> gale_ryser_theorem. Is that okay?\n\n\nWell, do you think slider01 could be used by ither methods ?\n\n> I think this will not work, if you want to allow trailing 0's.\n> Maybe I am missing something?\n\nThe Gale-Ryser theorem tells you that given two partitions, there is a matrix satisfying the constraints if and only if the domination criterion is checked. Well, the point you made about trailing 0's is that you do not necessarily want the column's sums in your final matrix to be *sorted in decreasing order*. When you have a binary matrix, though, you can modify it by inverting two columns without changin the rows sums, and the columns sum still have the same set of sums. So instead of just taking care of trailing 0, the best may be to take care of non-sorted sequences, which is the general case of the theorem.\n\n> I was told that by my colleague which is much much more of an expert on\n> this stuff. I have not read Gale's paper and don't know of an electronic version.\n\nThen the best is to :\n* Cite the reference to justify the names Gale's method and Ryser's method\n* Alternatively, use algorithm=\"LP\" instead of Gale, as we can not say more without references ( plus it gives some enlightenment as to the algorithm used and the complexity )\n\nNathann",
     "created_at": "2010-01-10T08:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
@@ -951,14 +961,17 @@ archive/issue_comments_060766.json:
 > I renamed it _slider01. I think that is better than hiding it inside
 > gale_ryser_theorem. Is that okay?
 
+
 Well, do you think slider01 could be used by ither methods ?
 
 > I think this will not work, if you want to allow trailing 0's.
 > Maybe I am missing something?
+
 The Gale-Ryser theorem tells you that given two partitions, there is a matrix satisfying the constraints if and only if the domination criterion is checked. Well, the point you made about trailing 0's is that you do not necessarily want the column's sums in your final matrix to be *sorted in decreasing order*. When you have a binary matrix, though, you can modify it by inverting two columns without changin the rows sums, and the columns sum still have the same set of sums. So instead of just taking care of trailing 0, the best may be to take care of non-sorted sequences, which is the general case of the theorem.
 
 > I was told that by my colleague which is much much more of an expert on
 > this stuff. I have not read Gale's paper and don't know of an electronic version.
+
 Then the best is to :
 * Cite the reference to justify the names Gale's method and Ryser's method
 * Alternatively, use algorithm="LP" instead of Gale, as we can not say more without references ( plus it gives some enlightenment as to the algorithm used and the complexity )

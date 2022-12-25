@@ -3,7 +3,7 @@
 archive/issues_009024.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\n'tachyon' has a script called 'Make-arch' which has various architectures. But there was not one for 64-bit Solaris on x86. The code in Sage currently uses the target 'solaris-pthreads-gcc' - see below\n\n\n```\nif [ $UNAME = \"SunOS\" ]; then\n    make solaris-pthreads-gcc\n    finished\nfi\n```\n\n\nThat target consists of the lines:\n\n\n```\nsolaris-pthreads-gcc:\n        $(MAKE) all \\\n        \"ARCH = solaris-pthreads-gcc\" \\\n        \"CC = gcc\" \\\n        \"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS $(MISCFLAGS) -DTHR -DUSEPOSIXTHREADS\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread\"\n```\n\n\nNote there are two problems with this. \n\n* '-O6' is not an option for gcc. \n* There is no option to make this build 64-bit objects. \n\nThese problems should be easily solved. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9024\n\n",
+    "body": "Assignee: drkirkby\n\n'tachyon' has a script called 'Make-arch' which has various architectures. But there was not one for 64-bit Solaris on x86. The code in Sage currently uses the target 'solaris-pthreads-gcc' - see below\n\n```\nif [ $UNAME = \"SunOS\" ]; then\n    make solaris-pthreads-gcc\n    finished\nfi\n```\n\nThat target consists of the lines:\n\n```\nsolaris-pthreads-gcc:\n        $(MAKE) all \\\n        \"ARCH = solaris-pthreads-gcc\" \\\n        \"CC = gcc\" \\\n        \"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS $(MISCFLAGS) -DTHR -DUSEPOSIXTHREADS\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread\"\n```\n\nNote there are two problems with this. \n\n* '-O6' is not an option for gcc. \n* There is no option to make this build 64-bit objects. \n\nThese problems should be easily solved. \n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9024\n\n",
     "created_at": "2010-05-23T22:05:30Z",
     "labels": [
         "component: porting: solaris",
@@ -20,7 +20,6 @@ Assignee: drkirkby
 
 'tachyon' has a script called 'Make-arch' which has various architectures. But there was not one for 64-bit Solaris on x86. The code in Sage currently uses the target 'solaris-pthreads-gcc' - see below
 
-
 ```
 if [ $UNAME = "SunOS" ]; then
     make solaris-pthreads-gcc
@@ -28,9 +27,7 @@ if [ $UNAME = "SunOS" ]; then
 fi
 ```
 
-
 That target consists of the lines:
-
 
 ```
 solaris-pthreads-gcc:
@@ -43,7 +40,6 @@ solaris-pthreads-gcc:
         "STRIP = strip" \
         "LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread"
 ```
-
 
 Note there are two problems with this. 
 
@@ -66,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9024
 archive/issue_comments_083356.json:
 ```json
 {
-    "body": "The attached patch has a new target which I called 'solaris-pthreads-gcc-64-bit'\n\n\n```\nsolaris-pthreads-gcc-64-bit:\n        $(MAKE) all \\\n        \"ARCH = solaris-pthreads-gcc\" \\\n        \"CC = gcc\" \\\n        \"CFLAGS = -Wall -O4 -m64 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS $(MISCFLAGS) -DTHR -DUSEPOSIXTHREADS\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread\"\n\n```\n\n\nNote the '-O6' has been changed to '-O4' and a -m64 added. The revised spkg-install then builds tachyon differently for 32 and 64-bit builds. \n\n\n```\nif [ $UNAME = \"SunOS\" ]; then\n    if [ \"x$SAGE64\" = xyes ] ; then\n       # There was nothing suitable for 64-bit mode with \n       # gcc, so I made a new target. David Kirkby, May 2010. \n       make solaris-pthreads-gcc-64-bit\n    else\n       make solaris-pthreads-gcc\n    fi\n    finished\nfi\n```\n\n\nThe new package can be found at:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/tachyon-0.98beta.p11.spkg\n\nNote:\n\nThe file patches/Make-arch.patch was a bit out of date - someone had obviously updated patches/Make-arch without changing patches/Make-arch.patch. This has now been resolved too. \n\nDave",
+    "body": "The attached patch has a new target which I called 'solaris-pthreads-gcc-64-bit'\n\n```\nsolaris-pthreads-gcc-64-bit:\n        $(MAKE) all \\\n        \"ARCH = solaris-pthreads-gcc\" \\\n        \"CC = gcc\" \\\n        \"CFLAGS = -Wall -O4 -m64 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS $(MISCFLAGS) -DTHR -DUSEPOSIXTHREADS\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"LIBS = -L. -ltachyon $(MISCLIB) -lm -lpthread\"\n\n```\n\nNote the '-O6' has been changed to '-O4' and a -m64 added. The revised spkg-install then builds tachyon differently for 32 and 64-bit builds. \n\n```\nif [ $UNAME = \"SunOS\" ]; then\n    if [ \"x$SAGE64\" = xyes ] ; then\n       # There was nothing suitable for 64-bit mode with \n       # gcc, so I made a new target. David Kirkby, May 2010. \n       make solaris-pthreads-gcc-64-bit\n    else\n       make solaris-pthreads-gcc\n    fi\n    finished\nfi\n```\n\nThe new package can be found at:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/tachyon-0.98beta.p11.spkg\n\nNote:\n\nThe file patches/Make-arch.patch was a bit out of date - someone had obviously updated patches/Make-arch without changing patches/Make-arch.patch. This has now been resolved too. \n\nDave",
     "created_at": "2010-05-23T22:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9024",
     "type": "issue_comment",
@@ -76,7 +72,6 @@ archive/issue_comments_083356.json:
 ```
 
 The attached patch has a new target which I called 'solaris-pthreads-gcc-64-bit'
-
 
 ```
 solaris-pthreads-gcc-64-bit:
@@ -91,9 +86,7 @@ solaris-pthreads-gcc-64-bit:
 
 ```
 
-
 Note the '-O6' has been changed to '-O4' and a -m64 added. The revised spkg-install then builds tachyon differently for 32 and 64-bit builds. 
-
 
 ```
 if [ $UNAME = "SunOS" ]; then
@@ -107,7 +100,6 @@ if [ $UNAME = "SunOS" ]; then
     finished
 fi
 ```
-
 
 The new package can be found at:
 
@@ -200,7 +192,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083361.json:
 ```json
 {
-    "body": "Looks ok to me on Open Solaris:\n\n\n\n```\nSuccessfully installed tachyon-0.98beta.p11\nYou can safely delete the temporary build directory\n/export/home/jaap/sage_port/sage-4.4.3/spkg/build/tachyon-0.98beta.p11\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing tachyon-0.98beta.p11.spkg\n-bash-4.0$ file local/bin/tachyon \nlocal/bin/tachyon:      ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, stripped\n-bash-4.0$ \n\n```\n\n\nAlso tested on other platforms (Fedora 32 bit and 64 bit)\n\nPositive review.\n\nJaap",
+    "body": "Looks ok to me on Open Solaris:\n\n\n```\nSuccessfully installed tachyon-0.98beta.p11\nYou can safely delete the temporary build directory\n/export/home/jaap/sage_port/sage-4.4.3/spkg/build/tachyon-0.98beta.p11\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing tachyon-0.98beta.p11.spkg\n-bash-4.0$ file local/bin/tachyon \nlocal/bin/tachyon:      ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, stripped\n-bash-4.0$ \n\n```\n\nAlso tested on other platforms (Fedora 32 bit and 64 bit)\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-10T15:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9024",
     "type": "issue_comment",
@@ -210,7 +202,6 @@ archive/issue_comments_083361.json:
 ```
 
 Looks ok to me on Open Solaris:
-
 
 
 ```
@@ -225,7 +216,6 @@ local/bin/tachyon:      ELF 64-bit LSB executable AMD64 Version 1, dynamically l
 -bash-4.0$ 
 
 ```
-
 
 Also tested on other platforms (Fedora 32 bit and 64 bit)
 

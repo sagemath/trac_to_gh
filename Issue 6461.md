@@ -84,7 +84,7 @@ Bottomline: positive review except some nitpicks.
 archive/issue_comments_052120.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\nUnfortunately, I don't have access to the original paper by Schaefer, and neither do my institution. I relied on the note at\n\nhttp://bitterroot.vancouver.wsu.edu/cs427_Spring09/docs/sdes.pdf\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\nBefore switching to using `__cmp__()`, I used `==` for comparing objects. But then doing `a == loads(dumps(a))` consistently returned `False` for me. Let me try it again.\n\n\n\n>  *  it is a bit confusing that P is often the plaintext (cf. C for ciphertext) and the permutation, but that might be a problem in the paper\nAh... the notes I referenced above uses `IP` to denote the initial permutation and `IP^-1` for its inverse. Perhaps that is less confusing you think?\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\nThat can be done.",
+    "body": "Replying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\n \nUnfortunately, I don't have access to the original paper by Schaefer, and neither do my institution. I relied on the note at\n\nhttp://bitterroot.vancouver.wsu.edu/cs427_Spring09/docs/sdes.pdf\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n \nBefore switching to using `__cmp__()`, I used `==` for comparing objects. But then doing `a == loads(dumps(a))` consistently returned `False` for me. Let me try it again.\n\n\n\n>  *  it is a bit confusing that P is often the plaintext (cf. C for ciphertext) and the permutation, but that might be a problem in the paper\n \nAh... the notes I referenced above uses `IP` to denote the initial permutation and `IP^-1` for its inverse. Perhaps that is less confusing you think?\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\n \nThat can be done.",
     "created_at": "2009-07-16T12:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
@@ -95,6 +95,7 @@ archive/issue_comments_052120.json:
 
 Replying to [comment:2 malb]:
 >  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?
+ 
 Unfortunately, I don't have access to the original paper by Schaefer, and neither do my institution. I relied on the note at
 
 http://bitterroot.vancouver.wsu.edu/cs427_Spring09/docs/sdes.pdf
@@ -103,16 +104,19 @@ http://bitterroot.vancouver.wsu.edu/cs427_Spring09/docs/sdes.pdf
 
 
 >  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html
+ 
 Before switching to using `__cmp__()`, I used `==` for comparing objects. But then doing `a == loads(dumps(a))` consistently returned `False` for me. Let me try it again.
 
 
 
 >  *  it is a bit confusing that P is often the plaintext (cf. C for ciphertext) and the permutation, but that might be a problem in the paper
+ 
 Ah... the notes I referenced above uses `IP` to denote the initial permutation and `IP^-1` for its inverse. Perhaps that is less confusing you think?
 
 
 
 >  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1
+ 
 That can be done.
 
 
@@ -158,7 +162,7 @@ based on Sage 4.1.1.alpha0
 archive/issue_comments_052123.json:
 ```json
 {
-    "body": "Attachment [trac_6461-sdes.patch](tarball://root/attachments/some-uuid/ticket6461/trac_6461-sdes.patch) by mvngu created at 2009-07-24 21:05:06\n\nReplying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\n\nThere are no official test vectors for simplified DES. Even the original paper by Schaefer doesn't contain any such vectors.\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\nThe latest patch `trac_6461-sdes.patch` now uses `__eq__()`. I have also modified the class `MiniAES` in `sage/crypto/block_cipher/miniaes.py` so it now also uses `__eq__()`.\n\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\n\nDone.",
+    "body": "Attachment [trac_6461-sdes.patch](tarball://root/attachments/some-uuid/ticket6461/trac_6461-sdes.patch) by mvngu created at 2009-07-24 21:05:06\n\nReplying to [comment:2 malb]:\n>  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?\n\n\nThere are no official test vectors for simplified DES. Even the original paper by Schaefer doesn't contain any such vectors.\n\n\n\n\n>  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html\n\n\nThe latest patch `trac_6461-sdes.patch` now uses `__eq__()`. I have also modified the class `MiniAES` in `sage/crypto/block_cipher/miniaes.py` so it now also uses `__eq__()`.\n\n\n\n\n>  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1\n\n\nDone.",
     "created_at": "2009-07-24T21:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
@@ -172,6 +176,7 @@ Attachment [trac_6461-sdes.patch](tarball://root/attachments/some-uuid/ticket646
 Replying to [comment:2 malb]:
 >  * I assume that the specification implemented is correct, I didn't check against the paper, are there official test vectors?
 
+
 There are no official test vectors for simplified DES. Even the original paper by Schaefer doesn't contain any such vectors.
 
 
@@ -179,12 +184,14 @@ There are no official test vectors for simplified DES. Even the original paper b
 
 >  * `__cmp__` expects you to return an integer (-1,0,1) and not `True` or `False`, cf. http://docs.python.org/reference/datamodel.html
 
+
 The latest patch `trac_6461-sdes.patch` now uses `__eq__()`. I have also modified the class `MiniAES` in `sage/crypto/block_cipher/miniaes.py` so it now also uses `__eq__()`.
 
 
 
 
 >  * it would be nice to have an `sbox(n)` function to return the S-Boxes 0 and 1
+
 
 Done.
 

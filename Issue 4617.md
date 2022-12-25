@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4617
 archive/issue_comments_034588.json:
 ```json
 {
-    "body": "Replying to [ticket:4617 SimonKing]:\n> William suggested to mark it `optional -- admin`, I am not sure what that means. [it means that it would only be tested when we do sage -t -only_optional=admin, where admin means \"tested by the admin who has write privileges to the sage install]\n\nThanks! \n\n>  * uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.\n\n... which probably also requires admin privileges. So, the to-be-created doctests for #4587 will also be optional -- admin, right?",
+    "body": "Replying to [ticket:4617 SimonKing]:\n> William suggested to mark it `optional -- admin`, I am not sure what that means. [it means that it would only be tested when we do sage -t -only_optional=admin, where admin means \"tested by the admin who has write privileges to the sage install]\n\n\nThanks! \n\n>  * uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.\n\n\n... which probably also requires admin privileges. So, the to-be-created doctests for #4587 will also be optional -- admin, right?",
     "created_at": "2008-11-25T20:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4617",
     "type": "issue_comment",
@@ -55,9 +55,11 @@ archive/issue_comments_034588.json:
 Replying to [ticket:4617 SimonKing]:
 > William suggested to mark it `optional -- admin`, I am not sure what that means. [it means that it would only be tested when we do sage -t -only_optional=admin, where admin means "tested by the admin who has write privileges to the sage install]
 
+
 Thanks! 
 
 >  * uninstalling it is done by removing the list entry and deleting the file `test-dummy.spkg`.
+
 
 ... which probably also requires admin privileges. So, the to-be-created doctests for #4587 will also be optional -- admin, right?
 

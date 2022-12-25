@@ -3,7 +3,7 @@
 archive/issues_003128.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe docstring for the function PolynomialRing states\n\n```\n    OUTPUT:\n        PolynomialRing(base_ring, name, sparse=False) returns a univariate\n        polynomial ring; all other input formats return a multivariate\n        polynomial ring.\n```\n\nwhich is not what PolynomialRing actually does, since\n\n```\nsage: PolynomialRing(QQ, names=['x'])\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nEither PolynomialRing has a bug or the docstring should be corrected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3128\n\n",
+    "body": "Assignee: tbd\n\nThe docstring for the function PolynomialRing states\n\n```\n    OUTPUT:\n        PolynomialRing(base_ring, name, sparse=False) returns a univariate\n        polynomial ring; all other input formats return a multivariate\n        polynomial ring.\n```\nwhich is not what PolynomialRing actually does, since\n\n```\nsage: PolynomialRing(QQ, names=['x'])\nUnivariate Polynomial Ring in x over Rational Field\n```\nEither PolynomialRing has a bug or the docstring should be corrected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3128\n\n",
     "created_at": "2008-05-07T22:31:00Z",
     "labels": [
         "component: algebra",
@@ -27,14 +27,12 @@ The docstring for the function PolynomialRing states
         polynomial ring; all other input formats return a multivariate
         polynomial ring.
 ```
-
 which is not what PolynomialRing actually does, since
 
 ```
 sage: PolynomialRing(QQ, names=['x'])
 Univariate Polynomial Ring in x over Rational Field
 ```
-
 Either PolynomialRing has a bug or the docstring should be corrected.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3128
@@ -104,7 +102,7 @@ I think the new doc string covers all use cases. It also provides the corner cas
 archive/issue_comments_021628.json:
 ```json
 {
-    "body": "\n```\nNote that a multivariate polynomial ring is returned even if the \ngiven number of variables is zero or one. \n```\n\n\nshould be replaced with\n\n\n```\nNote that a multivariate polynomial ring is returned when an explicit number is given.\n```\n",
+    "body": "```\nNote that a multivariate polynomial ring is returned even if the \ngiven number of variables is zero or one. \n```\n\nshould be replaced with\n\n```\nNote that a multivariate polynomial ring is returned when an explicit number is given.\n```",
     "created_at": "2009-01-24T09:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3128",
     "type": "issue_comment",
@@ -113,20 +111,16 @@ archive/issue_comments_021628.json:
 }
 ```
 
-
 ```
 Note that a multivariate polynomial ring is returned even if the 
 given number of variables is zero or one. 
 ```
 
-
 should be replaced with
-
 
 ```
 Note that a multivariate polynomial ring is returned when an explicit number is given.
 ```
-
 
 
 

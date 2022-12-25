@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1541
 archive/issue_comments_009809.json:
 ```json
 {
-    "body": "On sage.math, applied to alpha2:\n\n```\nsage -t  devel/sage-main/sage/crypto/mq/sr.py               sh: line 1: 31648 Segmentation fault      /home/rlmill/release/sage-2.9.1.alpha3/local/bin/python .doctest_sr.py >.doctest/out 2>.doctest/err\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n```\n",
+    "body": "On sage.math, applied to alpha2:\n\n```\nsage -t  devel/sage-main/sage/crypto/mq/sr.py               sh: line 1: 31648 Segmentation fault      /home/rlmill/release/sage-2.9.1.alpha3/local/bin/python .doctest_sr.py >.doctest/out 2>.doctest/err\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n```",
     "created_at": "2007-12-21T22:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
@@ -55,7 +55,6 @@ sage -t  devel/sage-main/sage/crypto/mq/sr.py               sh: line 1: 31648 Se
 
 A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 
 
 
@@ -139,7 +138,7 @@ Make the methods of BooleanPolynomial in __getattr__ directly available.
 archive/issue_comments_009814.json:
 ```json
 {
-    "body": "Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by @burcin created at 2007-12-27 13:52:29\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\n\nWith the patch:\n\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```\n",
+    "body": "Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by @burcin created at 2007-12-27 13:52:29\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\nWith the patch:\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```",
     "created_at": "2007-12-27T13:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
@@ -155,7 +154,6 @@ Following Martin's comments on the slowdown caused by using `__getattr__` in `Bo
 Some timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):
 
 Without the patch:
-
 
 ```
 sage: P = BooleanPolynomialRing(100,'x')
@@ -173,9 +171,7 @@ sage: %timeit c = p.constant()
 100000 loops, best of 3: 2.02 µs per loop
 ```
 
-
 With the patch:
-
 
 ```
 sage: %timeit s = p.set()
@@ -189,7 +185,6 @@ sage: %timeit n = p.navigation()
 sage: %timeit c = p.constant()
 1000000 loops, best of 3: 305 ns per loop
 ```
-
 
 
 
@@ -236,7 +231,7 @@ attachment:polybori-coercion.patch is now ticket #1667.
 archive/issue_comments_009817.json:
 ```json
 {
-    "body": "Replying to [comment:6 burcin]:\n> This patch adds coercion from `ZZ`, and `GF(2)` to `BooleanPolynomialRing`, so Martin's patch needs to be revised.\n\nIn the sense that the comments are outdated?",
+    "body": "Replying to [comment:6 burcin]:\n> This patch adds coercion from `ZZ`, and `GF(2)` to `BooleanPolynomialRing`, so Martin's patch needs to be revised.\n\n\nIn the sense that the comments are outdated?",
     "created_at": "2008-01-06T13:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
@@ -247,6 +242,7 @@ archive/issue_comments_009817.json:
 
 Replying to [comment:6 burcin]:
 > This patch adds coercion from `ZZ`, and `GF(2)` to `BooleanPolynomialRing`, so Martin's patch needs to be revised.
+
 
 In the sense that the comments are outdated?
 

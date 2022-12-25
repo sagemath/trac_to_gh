@@ -90,7 +90,7 @@ The only reason for `pipestatus` was that we did not want to rely on bash versio
 archive/issue_comments_091504.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n> Or just **create** `pipestatus` in `spkg-install`; \n\nThis will not work.   The problem is that spkg-install isn't run until after pipestatus is needed. \n\n> it's an almost trivial script,\n\nI disagree -- It's 33 lines long, and  I read it for 2 minutes and didn't fully understand it.",
+    "body": "Replying to [comment:2 leif]:\n> Or just **create** `pipestatus` in `spkg-install`; \n\n\nThis will not work.   The problem is that spkg-install isn't run until after pipestatus is needed. \n\n> it's an almost trivial script,\n\n\nI disagree -- It's 33 lines long, and  I read it for 2 minutes and didn't fully understand it.",
     "created_at": "2010-07-17T13:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -102,9 +102,11 @@ archive/issue_comments_091504.json:
 Replying to [comment:2 leif]:
 > Or just **create** `pipestatus` in `spkg-install`; 
 
+
 This will not work.   The problem is that spkg-install isn't run until after pipestatus is needed. 
 
 > it's an almost trivial script,
+
 
 I disagree -- It's 33 lines long, and  I read it for 2 minutes and didn't fully understand it.
 
@@ -191,7 +193,7 @@ Btw, you can drop the parentheses in the >=3.0 version, since we don't have to s
 archive/issue_comments_091509.json:
 ```json
 {
-    "body": "And `pipestatus`'s\n\n```sh\nif [ -z \"$1\" ]; then\n  # usage error ...\n```\n\nshould be\n\n```sh\nif [ $# -ne 2 ]; then\n  # usage error ...\n```\n",
+    "body": "And `pipestatus`'s\n\n```sh\nif [ -z \"$1\" ]; then\n  # usage error ...\n```\nshould be\n\n```sh\nif [ $# -ne 2 ]; then\n  # usage error ...\n```",
     "created_at": "2010-07-17T14:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -206,14 +208,12 @@ And `pipestatus`'s
 if [ -z "$1" ]; then
   # usage error ...
 ```
-
 should be
 
 ```sh
 if [ $# -ne 2 ]; then
   # usage error ...
 ```
-
 
 
 
@@ -306,7 +306,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091514.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n> Please review.  Since spkg/install is pulled in by SAGE_ROOT/local/bin/spkg-update, this should fix the problem.\n\nI just noticed I had written `spkg-install` instead of `spkg/install`... :/\n\nOf course I prefer generating a version-specific `pipestatus`, but if it is a temporary solution, I'm ok with omitting it.\n\nI'd though at least fix `pipestatus`'s parameter checking as I did in my second version:\n\n```sh\n...\n  cat > pipestatus <<EOF\n#!/usr/bin/env bash\n\nif [ \\$# -ne 2 -o -z \"\\$1\" -o -z \"\\$2\" ]; then\n    echo \"Run two commands in a pipeline 'CMD1 | CMD2' and exit\"\n    echo \"with the exit status of CMD1, *not* that of CMD2.\"\n    echo \"\\$0 cmd1 cmd2\"\n    exit\nfi\n...\n```\n\n\nDropping the parentheses around `(set -o pipefail; eval \"\\$1 | \\$2\")` is optional, but you should remove `-n` from the `echo` in your `install`.\n\nWe cannot yet test upgrading from e.g. 4.4.4 though, can we?\n\n(I've tried your `install` there, it's ok when `deps` etc. get updated, too.)\n\nIn any case, add a\n\n```sh\n    chmod +x pipestatus\n```\n\nafter the `cat`...",
+    "body": "Replying to [comment:9 was]:\n> Please review.  Since spkg/install is pulled in by SAGE_ROOT/local/bin/spkg-update, this should fix the problem.\n\n\nI just noticed I had written `spkg-install` instead of `spkg/install`... :/\n\nOf course I prefer generating a version-specific `pipestatus`, but if it is a temporary solution, I'm ok with omitting it.\n\nI'd though at least fix `pipestatus`'s parameter checking as I did in my second version:\n\n```sh\n...\n  cat > pipestatus <<EOF\n#!/usr/bin/env bash\n\nif [ \\$# -ne 2 -o -z \"\\$1\" -o -z \"\\$2\" ]; then\n    echo \"Run two commands in a pipeline 'CMD1 | CMD2' and exit\"\n    echo \"with the exit status of CMD1, *not* that of CMD2.\"\n    echo \"\\$0 cmd1 cmd2\"\n    exit\nfi\n...\n```\n\nDropping the parentheses around `(set -o pipefail; eval \"\\$1 | \\$2\")` is optional, but you should remove `-n` from the `echo` in your `install`.\n\nWe cannot yet test upgrading from e.g. 4.4.4 though, can we?\n\n(I've tried your `install` there, it's ok when `deps` etc. get updated, too.)\n\nIn any case, add a\n\n```sh\n    chmod +x pipestatus\n```\nafter the `cat`...",
     "created_at": "2010-07-17T15:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -317,6 +317,7 @@ archive/issue_comments_091514.json:
 
 Replying to [comment:9 was]:
 > Please review.  Since spkg/install is pulled in by SAGE_ROOT/local/bin/spkg-update, this should fix the problem.
+
 
 I just noticed I had written `spkg-install` instead of `spkg/install`... :/
 
@@ -338,7 +339,6 @@ fi
 ...
 ```
 
-
 Dropping the parentheses around `(set -o pipefail; eval "\$1 | \$2")` is optional, but you should remove `-n` from the `echo` in your `install`.
 
 We cannot yet test upgrading from e.g. 4.4.4 though, can we?
@@ -350,7 +350,6 @@ In any case, add a
 ```sh
     chmod +x pipestatus
 ```
-
 after the `cat`...
 
 
@@ -360,7 +359,7 @@ after the `cat`...
 archive/issue_comments_091515.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n>  (3) Do diff spkg/pipestatus spkg/pipestatus.orig and observe that the diff is just a single blank line.\n\nUnfortunately, the blank line is in the wrong place. `#!` **must** be the first characters in the file, otherwise strange things happen...",
+    "body": "Replying to [comment:9 was]:\n>  (3) Do diff spkg/pipestatus spkg/pipestatus.orig and observe that the diff is just a single blank line.\n\n\nUnfortunately, the blank line is in the wrong place. `#!` **must** be the first characters in the file, otherwise strange things happen...",
     "created_at": "2010-07-17T17:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -371,6 +370,7 @@ archive/issue_comments_091515.json:
 
 Replying to [comment:9 was]:
 >  (3) Do diff spkg/pipestatus spkg/pipestatus.orig and observe that the diff is just a single blank line.
+
 
 Unfortunately, the blank line is in the wrong place. `#!` **must** be the first characters in the file, otherwise strange things happen...
 
@@ -461,7 +461,7 @@ Thanks again for fixing this.
 archive/issue_comments_091520.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> Upgrading from 4.4.4 to 4.5 works for me on sage.math with [attachment:install.2].  The long doctests pass.  This is with `MAKE=\"-j12\"` and `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  A separate, completely serial upgrade with MAKE unset is still running.\n\n> Starting with \"4.5\" on sage.math, I copied [attachment:install.2] to `spkg/` and made a new source distribution with `sage -sdist 4.5.1`.  This builds with `MAKE=\"-j20\"` and `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  The long doctests pass.  Another build with just `MAKE=\"-j16\"` is still running.\n\nThose builds' long doctests also pass, as do those for a completely serial build of \"4.5.1\" from scratch on sage.math.\n\nI'm attempting to upgrade from a 4.3.0.1 binary on t2.  I'm also building 4.4.4 on bsd.math so that I can test `sage -upgrade`.\n\nBut so far, my review is positive.",
+    "body": "Replying to [comment:13 mpatel]:\n> Upgrading from 4.4.4 to 4.5 works for me on sage.math with [attachment:install.2].  The long doctests pass.  This is with `MAKE=\"-j12\"` and `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  A separate, completely serial upgrade with MAKE unset is still running.\n\n\n> Starting with \"4.5\" on sage.math, I copied [attachment:install.2] to `spkg/` and made a new source distribution with `sage -sdist 4.5.1`.  This builds with `MAKE=\"-j20\"` and `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  The long doctests pass.  Another build with just `MAKE=\"-j16\"` is still running.\n\n\nThose builds' long doctests also pass, as do those for a completely serial build of \"4.5.1\" from scratch on sage.math.\n\nI'm attempting to upgrade from a 4.3.0.1 binary on t2.  I'm also building 4.4.4 on bsd.math so that I can test `sage -upgrade`.\n\nBut so far, my review is positive.",
     "created_at": "2010-07-18T01:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -473,7 +473,9 @@ archive/issue_comments_091520.json:
 Replying to [comment:13 mpatel]:
 > Upgrading from 4.4.4 to 4.5 works for me on sage.math with [attachment:install.2].  The long doctests pass.  This is with `MAKE="-j12"` and `SAGE_PARALLEL_SPKG_BUILD="yes"`.  A separate, completely serial upgrade with MAKE unset is still running.
 
+
 > Starting with "4.5" on sage.math, I copied [attachment:install.2] to `spkg/` and made a new source distribution with `sage -sdist 4.5.1`.  This builds with `MAKE="-j20"` and `SAGE_PARALLEL_SPKG_BUILD="yes"`.  The long doctests pass.  Another build with just `MAKE="-j16"` is still running.
+
 
 Those builds' long doctests also pass, as do those for a completely serial build of "4.5.1" from scratch on sage.math.
 
@@ -512,7 +514,7 @@ Can someone check that the small changes made from `install` to `install.2` are 
 archive/issue_comments_091522.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.\n\nThe upgrade from 4.4.4 to \"4.5.1\" on t2 is now working on Singular --- the Sage and Gap packages remain.  No problems so far.  I need to sleep soon; I'll report again as soon as possible.\n\nAlso, \"4.5.1\" also builds from scratch on bsd.math.  The long doctests pass.",
+    "body": "Replying to [comment:15 mpatel]:\n> I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.\n\n\nThe upgrade from 4.4.4 to \"4.5.1\" on t2 is now working on Singular --- the Sage and Gap packages remain.  No problems so far.  I need to sleep soon; I'll report again as soon as possible.\n\nAlso, \"4.5.1\" also builds from scratch on bsd.math.  The long doctests pass.",
     "created_at": "2010-07-18T10:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -523,6 +525,7 @@ archive/issue_comments_091522.json:
 
 Replying to [comment:15 mpatel]:
 > I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.
+
 
 The upgrade from 4.4.4 to "4.5.1" on t2 is now working on Singular --- the Sage and Gap packages remain.  No problems so far.  I need to sleep soon; I'll report again as soon as possible.
 
@@ -571,7 +574,7 @@ Looks very good.  Thanks guys!!
 archive/issue_comments_091525.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> Can someone check that the small changes made from `install` to `install.2` are OK?\n\nYes. Positive review, too.",
+    "body": "Replying to [comment:15 mpatel]:\n> Can someone check that the small changes made from `install` to `install.2` are OK?\n\n\nYes. Positive review, too.",
     "created_at": "2010-07-18T15:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -582,6 +585,7 @@ archive/issue_comments_091525.json:
 
 Replying to [comment:15 mpatel]:
 > Can someone check that the small changes made from `install` to `install.2` are OK?
+
 
 Yes. Positive review, too.
 
@@ -610,7 +614,7 @@ In the long run, we should use something like `pipestatus` in `$SAGE_ROOT/makefi
 archive/issue_comments_091527.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.\n\nUpgrading from 4.4.4 to \"4.5.1\" works on t2.  The long doctests pass.",
+    "body": "Replying to [comment:15 mpatel]:\n> I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.\n\n\nUpgrading from 4.4.4 to \"4.5.1\" works on t2.  The long doctests pass.",
     "created_at": "2010-07-18T16:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9528",
     "type": "issue_comment",
@@ -621,6 +625,7 @@ archive/issue_comments_091527.json:
 
 Replying to [comment:15 mpatel]:
 > I'm still building 4.4.4 on t2, but I think we're ready for the real 4.5.
+
 
 Upgrading from 4.4.4 to "4.5.1" works on t2.  The long doctests pass.
 

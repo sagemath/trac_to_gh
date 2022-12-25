@@ -3,7 +3,7 @@
 archive/issues_003889.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec\n\nNumber field element sqrt should support the extend parameter in analogy with other sqrt functions.\n\n\n```\nsage: ZZ(4).sqrt(extend=False)\n2\nsage: CyclotomicField(4)(4).sqrt(extend=False)\n...\nTypeError: 'extend' is an invalid keyword argument for this function\n```\n\n\nIf it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3889\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec\n\nNumber field element sqrt should support the extend parameter in analogy with other sqrt functions.\n\n```\nsage: ZZ(4).sqrt(extend=False)\n2\nsage: CyclotomicField(4)(4).sqrt(extend=False)\n...\nTypeError: 'extend' is an invalid keyword argument for this function\n```\n\nIf it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3889\n\n",
     "created_at": "2008-08-18T13:50:47Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  @tscrim @videlec
 
 Number field element sqrt should support the extend parameter in analogy with other sqrt functions.
 
-
 ```
 sage: ZZ(4).sqrt(extend=False)
 2
@@ -30,7 +29,6 @@ sage: CyclotomicField(4)(4).sqrt(extend=False)
 ...
 TypeError: 'extend' is an invalid keyword argument for this function
 ```
-
 
 If it would even have the parameter and raise a NotImplementedError if extend==True, that would aid in writing generic code for the present.
 
@@ -324,7 +322,7 @@ It might be good to allow `extend` to take a string input to set the extension's
 archive/issue_comments_027700.json:
 ```json
 {
-    "body": "I can see 2 places where a parameter \"name\" is used:\n\n```\nsrc/sage/rings/power_series_ring_element.pyx:    def sqrt(self, prec=None, extend=False, all=False, name=None):\nsrc/sage/rings/ring_extension_element.pyx:    def sqrt(self, extend=True, all=False, name=None):\n```\n",
+    "body": "I can see 2 places where a parameter \"name\" is used:\n\n```\nsrc/sage/rings/power_series_ring_element.pyx:    def sqrt(self, prec=None, extend=False, all=False, name=None):\nsrc/sage/rings/ring_extension_element.pyx:    def sqrt(self, extend=True, all=False, name=None):\n```",
     "created_at": "2020-10-20T07:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -339,7 +337,6 @@ I can see 2 places where a parameter "name" is used:
 src/sage/rings/power_series_ring_element.pyx:    def sqrt(self, prec=None, extend=False, all=False, name=None):
 src/sage/rings/ring_extension_element.pyx:    def sqrt(self, extend=True, all=False, name=None):
 ```
-
 
 
 
@@ -384,7 +381,7 @@ I have added an optional parameter for the name.
 archive/issue_comments_027703.json:
 ```json
 {
-    "body": "The specicifications does not match the following behavior\n\n```\nsage: CyclotomicField(4)(2).sqrt(extend=False)\nsqrt(2)\n```\n\nOf course, this is no due to your changes, but this function is just wrong in returning symbolic ring stuff without notice.",
+    "body": "The specicifications does not match the following behavior\n\n```\nsage: CyclotomicField(4)(2).sqrt(extend=False)\nsqrt(2)\n```\nOf course, this is no due to your changes, but this function is just wrong in returning symbolic ring stuff without notice.",
     "created_at": "2020-10-20T09:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -399,7 +396,6 @@ The specicifications does not match the following behavior
 sage: CyclotomicField(4)(2).sqrt(extend=False)
 sqrt(2)
 ```
-
 Of course, this is no due to your changes, but this function is just wrong in returning symbolic ring stuff without notice.
 
 
@@ -427,7 +423,7 @@ Et donc ? que faire ?
 archive/issue_comments_027705.json:
 ```json
 {
-    "body": "Replying to [comment:16 chapoton]:\n> Et donc ? que faire ?\n\nMany ways to solve it\n\n1. Do not return symbolic as one can do `SR(my_stuff).sqrt()`\n\n2. Add a `symbolic` argument\n\n3. Make `extend` a three fold alternative\n   - `extend=None`: old behavior\n   - `extend=False`: return in the current number field or raise an error\n   - `extend=True`: return in the current number field or an extended one if needed",
+    "body": "Replying to [comment:16 chapoton]:\n> Et donc ? que faire ?\n\n\nMany ways to solve it\n\n1. Do not return symbolic as one can do `SR(my_stuff).sqrt()`\n\n2. Add a `symbolic` argument\n\n3. Make `extend` a three fold alternative\n   - `extend=None`: old behavior\n   - `extend=False`: return in the current number field or raise an error\n   - `extend=True`: return in the current number field or an extended one if needed",
     "created_at": "2020-10-20T09:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -438,6 +434,7 @@ archive/issue_comments_027705.json:
 
 Replying to [comment:16 chapoton]:
 > Et donc ? que faire ?
+
 
 Many ways to solve it
 
@@ -601,7 +598,7 @@ Je ne comprends pas pourquoi la deprecation n'est pas déclenchée par le doctes
 archive/issue_comments_027714.json:
 ```json
 {
-    "body": "Replying to [comment:25 chapoton]:\n> Je ne comprends pas pourquoi la deprecation n'est pas d\u00e9clench\u00e9e par le doctest.\n\nhttps://trac.sagemath.org/ticket/28500",
+    "body": "Replying to [comment:25 chapoton]:\n> Je ne comprends pas pourquoi la deprecation n'est pas d\u00e9clench\u00e9e par le doctest.\n\n\nhttps://trac.sagemath.org/ticket/28500",
     "created_at": "2020-10-21T19:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -612,6 +609,7 @@ archive/issue_comments_027714.json:
 
 Replying to [comment:25 chapoton]:
 > Je ne comprends pas pourquoi la deprecation n'est pas déclenchée par le doctest.
+
 
 https://trac.sagemath.org/ticket/28500
 
@@ -662,7 +660,7 @@ It is very unnatural if it isn't well-defined if the volume is positive or negat
 archive/issue_comments_027717.json:
 ```json
 {
-    "body": "Replying to [comment:28 gh-kliem]:\n> The problem I'm having with `src/sage/geometry/polyhedron.base.py` is the following:\n> \n> Given a number field `K` with specified embedding into `AA`. How do I obtain a positive square root (i.e. the parent has a specified embedding as well).\n> \n> It is very unnatural if it isn't well-defined if the volume is positive or negative.\n\nJust move the volume answer to `AA`. A number field version can easily be reconstructed\n\n```\nsage: K.<sqrt2> = QuadraticField(2, embedding=AA(2).sqrt())                                                                                                                                    \nsage: v = AA(12*sqrt2 - 15).sqrt()                                                                                                                                                             \nsage: L, vL, phi = v.as_number_field_element(minimal=True, embedded=True)                                                                                                                      \nsage: vL                                                                                                                                                                                       \n-a^3 + a^2 + 4*a + 3\nsage: vL.n()                                                                                                                                                                                   \n1.40376734129169\n```\n",
+    "body": "Replying to [comment:28 gh-kliem]:\n> The problem I'm having with `src/sage/geometry/polyhedron.base.py` is the following:\n> \n> Given a number field `K` with specified embedding into `AA`. How do I obtain a positive square root (i.e. the parent has a specified embedding as well).\n> \n> It is very unnatural if it isn't well-defined if the volume is positive or negative.\n\n\nJust move the volume answer to `AA`. A number field version can easily be reconstructed\n\n```\nsage: K.<sqrt2> = QuadraticField(2, embedding=AA(2).sqrt())                                                                                                                                    \nsage: v = AA(12*sqrt2 - 15).sqrt()                                                                                                                                                             \nsage: L, vL, phi = v.as_number_field_element(minimal=True, embedded=True)                                                                                                                      \nsage: vL                                                                                                                                                                                       \n-a^3 + a^2 + 4*a + 3\nsage: vL.n()                                                                                                                                                                                   \n1.40376734129169\n```",
     "created_at": "2020-10-26T09:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -678,6 +676,7 @@ Replying to [comment:28 gh-kliem]:
 > 
 > It is very unnatural if it isn't well-defined if the volume is positive or negative.
 
+
 Just move the volume answer to `AA`. A number field version can easily be reconstructed
 
 ```
@@ -692,13 +691,12 @@ sage: vL.n()
 
 
 
-
 ---
 
 archive/issue_comments_027718.json:
 ```json
 {
-    "body": "This works for the volume of polyhedra now.\n\nI did change the behaviour. The new default `None` is deprecated now and `extend=False` raises a `ValueError` to be consistent with other rings. The new default should then be `extend=True` once we remove the deprecation warning.\n\nThe `QR` method of method of matrices does not raise correctly a `TypeError`, if the base ring does not support the required roots. (Before it would sometimes implicitly extend even though the documentation tells us that the base ring must support roots.)\n----\nNew commits:",
+    "body": "This works for the volume of polyhedra now.\n\nI did change the behaviour. The new default `None` is deprecated now and `extend=False` raises a `ValueError` to be consistent with other rings. The new default should then be `extend=True` once we remove the deprecation warning.\n\nThe `QR` method of method of matrices does not raise correctly a `TypeError`, if the base ring does not support the required roots. (Before it would sometimes implicitly extend even though the documentation tells us that the base ring must support roots.)\n\n---\nNew commits:",
     "created_at": "2020-10-26T11:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -712,7 +710,8 @@ This works for the volume of polyhedra now.
 I did change the behaviour. The new default `None` is deprecated now and `extend=False` raises a `ValueError` to be consistent with other rings. The new default should then be `extend=True` once we remove the deprecation warning.
 
 The `QR` method of method of matrices does not raise correctly a `TypeError`, if the base ring does not support the required roots. (Before it would sometimes implicitly extend even though the documentation tells us that the base ring must support roots.)
-----
+
+---
 New commits:
 
 
@@ -1018,7 +1017,7 @@ Of course one could argue, that this behavior isn't optimal and there are better
 archive/issue_comments_027734.json:
 ```json
 {
-    "body": "I am a little worried about this change:\n\n```diff\ndiff --git a/src/sage/matrix/matrix2.pyx b/src/sage/matrix/matrix2.pyx\nindex 5e190ea..7ce4196 100644\n--- a/src/sage/matrix/matrix2.pyx\n+++ b/src/sage/matrix/matrix2.pyx\n@@ -10136,7 +10136,7 @@ cdef class Matrix(Matrix1):\n             hip = v.hermitian_inner_product(v)\n             if hip != 0:\n                 try:\n-                    scale = sqrt(hip)\n+                    scale = sqrt(hip, extend=False)\n                     q = (1/scale)*v\n                     Q.append(q)\n                     R[row,i] = scale\n```\n\nSince this can take in general rings, such as one whose elements could have a `sqrt` that does not take `extend` as a parameter, this could behave differently than before. How would you classify this behavior? A bug in the `sqrt` implementation? Or am I just being paranoid about this?",
+    "body": "I am a little worried about this change:\n\n```diff\ndiff --git a/src/sage/matrix/matrix2.pyx b/src/sage/matrix/matrix2.pyx\nindex 5e190ea..7ce4196 100644\n--- a/src/sage/matrix/matrix2.pyx\n+++ b/src/sage/matrix/matrix2.pyx\n@@ -10136,7 +10136,7 @@ cdef class Matrix(Matrix1):\n             hip = v.hermitian_inner_product(v)\n             if hip != 0:\n                 try:\n-                    scale = sqrt(hip)\n+                    scale = sqrt(hip, extend=False)\n                     q = (1/scale)*v\n                     Q.append(q)\n                     R[row,i] = scale\n```\nSince this can take in general rings, such as one whose elements could have a `sqrt` that does not take `extend` as a parameter, this could behave differently than before. How would you classify this behavior? A bug in the `sqrt` implementation? Or am I just being paranoid about this?",
     "created_at": "2021-01-12T00:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3889",
     "type": "issue_comment",
@@ -1044,7 +1043,6 @@ index 5e190ea..7ce4196 100644
                      Q.append(q)
                      R[row,i] = scale
 ```
-
 Since this can take in general rings, such as one whose elements could have a `sqrt` that does not take `extend` as a parameter, this could behave differently than before. How would you classify this behavior? A bug in the `sqrt` implementation? Or am I just being paranoid about this?
 
 

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1143
 archive/issue_comments_006926.json:
 ```json
 {
-    "body": "Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by @williamstein created at 2007-11-11 15:32:10\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\n\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
+    "body": "Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by @williamstein created at 2007-11-11 15:32:10\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
     "created_at": "2007-11-11T15:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ You might want to provide only one interface to numerical quadrature
 (which might call GSL or Maxima or Pari with some options), and also
 allow for arbitrary precision quadrature (it seems only Pari/GP allows this).
 ```
-
 and he's right -- it's just calling maxima.  So the above patch would
 actually break the docs!
 

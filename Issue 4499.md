@@ -3,7 +3,7 @@
 archive/issues_004499.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCurrently, we have\n\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
+    "body": "Assignee: cwitty\n\nCurrently, we have\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
     "created_at": "2008-11-12T01:16:42Z",
     "labels": [
         "component: misc",
@@ -21,7 +21,6 @@ Assignee: cwitty
 
 Currently, we have
 
-
 ```
 sage: latex(sech)
 \sech
@@ -29,9 +28,7 @@ sage: latex(csch)
 \csch
 ```
 
-
 Apparently \sech and \csch are not recognized in LaTeX.  These should be
-
 
 ```
 sage: latex(sech)
@@ -39,7 +36,6 @@ sage: latex(sech)
 sage: latex(csch)
 \text{csch}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4499
 
@@ -106,7 +102,7 @@ Changing status from new to assigned.
 archive/issue_comments_033240.json:
 ```json
 {
-    "body": "I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch **trac_4499.patch** against sage-3.1.4, we'd get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\sech'\nsage: asech._latex_()\n'\\\\sech^{-1}'\nsage: arcsech._latex_()\n'\\\\sech^{-1}'\nsage: latex(sech)\n\\sech\nsage: latex(asech)\n\\sech^{-1}\nsage: latex(arcsech)\n\\sech^{-1}\nsage:\nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\csch'\nsage: acsch._latex_()\n'\\\\csch^{-1}'\nsage: arccsch._latex_()\n'\\\\csch^{-1}'\nsage: latex(csch)\n\\csch\nsage: latex(acsch)\n\\csch^{-1}\nsage: latex(arccsch)\n\\csch^{-1}\n```\n\nAs far as I know, the returned LaTeX strings would cause tex-live to go berserk and complain about \"Undefined control sequence\" even if we compile with or without the macro `\\usepackage{amsmath,amssymb,amsthm`} in the preamble of a .tex file.\n\n\n\nAfter applying the patch against sage-3.1.4, we get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\text{sech}'\nsage: asech._latex_()\n'\\\\text{sech}^{-1}'\nsage: arcsech._latex_()\n'\\\\text{sech}^{-1}'\nsage: latex(sech)\n\\text{sech}\nsage: latex(asech)\n\\text{sech}^{-1}\nsage: latex(arcsech)\n\\text{sech}^{-1}\nsage: \nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\text{csch}'\nsage: acsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: arccsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: \nsage: latex(csch)\n\\text{csch}\nsage: latex(acsch)\n\\text{csch}^{-1}\nsage: latex(arccsch)\n\\text{csch}^{-1}\n```\n\nThe returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\\usepackage{amsmath`}.",
+    "body": "I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch **trac_4499.patch** against sage-3.1.4, we'd get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\sech'\nsage: asech._latex_()\n'\\\\sech^{-1}'\nsage: arcsech._latex_()\n'\\\\sech^{-1}'\nsage: latex(sech)\n\\sech\nsage: latex(asech)\n\\sech^{-1}\nsage: latex(arcsech)\n\\sech^{-1}\nsage:\nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\csch'\nsage: acsch._latex_()\n'\\\\csch^{-1}'\nsage: arccsch._latex_()\n'\\\\csch^{-1}'\nsage: latex(csch)\n\\csch\nsage: latex(acsch)\n\\csch^{-1}\nsage: latex(arccsch)\n\\csch^{-1}\n```\nAs far as I know, the returned LaTeX strings would cause tex-live to go berserk and complain about \"Undefined control sequence\" even if we compile with or without the macro `\\usepackage{amsmath,amssymb,amsthm`} in the preamble of a .tex file.\n\n\n\nAfter applying the patch against sage-3.1.4, we get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\text{sech}'\nsage: asech._latex_()\n'\\\\text{sech}^{-1}'\nsage: arcsech._latex_()\n'\\\\text{sech}^{-1}'\nsage: latex(sech)\n\\text{sech}\nsage: latex(asech)\n\\text{sech}^{-1}\nsage: latex(arcsech)\n\\text{sech}^{-1}\nsage: \nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\text{csch}'\nsage: acsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: arccsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: \nsage: latex(csch)\n\\text{csch}\nsage: latex(acsch)\n\\text{csch}^{-1}\nsage: latex(arccsch)\n\\text{csch}^{-1}\n```\nThe returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\\usepackage{amsmath`}.",
     "created_at": "2008-11-12T03:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
@@ -146,7 +142,6 @@ sage: latex(acsch)
 sage: latex(arccsch)
 \csch^{-1}
 ```
-
 As far as I know, the returned LaTeX strings would cause tex-live to go berserk and complain about "Undefined control sequence" even if we compile with or without the macro `\usepackage{amsmath,amssymb,amsthm`} in the preamble of a .tex file.
 
 
@@ -183,7 +178,6 @@ sage: latex(acsch)
 sage: latex(arccsch)
 \text{csch}^{-1}
 ```
-
 The returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\usepackage{amsmath`}.
 
 

@@ -3,7 +3,7 @@
 archive/issues_001428.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
     "created_at": "2007-12-08T14:53:32Z",
     "labels": [
         "component: linear algebra"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 CC:  dfdeshom@gmail.com
 
-
 ```
 Hallo!
 
@@ -33,7 +32,6 @@ into Sage?
 
 Sander
 ```
-
 
 Basically all that needs to be done is to translate the real code over to the complex case.
 

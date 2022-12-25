@@ -3,7 +3,7 @@
 archive/issues_002648.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nThe octave.version() command is returning '.1.73' when it should\nalmost certainly be returning '2.1.73'\n\nThis has been verified on three systems:\n-- Sage 2.10.1 running in the Windows VM\n-- Sage 2.10.3 running in the Windows VM\n-- sagenb.org\n\nIf this is in fact a bug, I wonder if it is a bug in this command\nalone or a more general bug having to do with returning strings from\nOctave\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: octave.min([1,2,3])\n 1\nsage: octave.version()\n'.1.73'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2648\n\n",
+    "body": "Assignee: @williamstein\n\n```\nThe octave.version() command is returning '.1.73' when it should\nalmost certainly be returning '2.1.73'\n\nThis has been verified on three systems:\n-- Sage 2.10.1 running in the Windows VM\n-- Sage 2.10.3 running in the Windows VM\n-- sagenb.org\n\nIf this is in fact a bug, I wonder if it is a bug in this command\nalone or a more general bug having to do with returning strings from\nOctave\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: octave.min([1,2,3])\n 1\nsage: octave.version()\n'.1.73'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2648\n\n",
     "created_at": "2008-03-22T18:10:02Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_002648.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 The octave.version() command is returning '.1.73' when it should
@@ -41,7 +40,6 @@ sage: octave.min([1,2,3])
 sage: octave.version()
 '.1.73'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2648
 

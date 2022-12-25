@@ -3,7 +3,7 @@
 archive/issues_000137.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nExample:\n\n\n```\n%form\n\nEnter an integer n=300\nEnter a prime p=2\nShow prime factors only primes=False\nOperate on primes op=\n  * sum\n  * product\n\n{{{\n  v = factor(n%p)\n  if primes:\n    for i in v:\n      print i[0]\n  else:\n    for i in v:\n      print \"%d**%d\"%i\n  if op == \"sum\"\n    print \"Sum of prime factors\"\n    s = 0\n    for i in v:\n      s += i[0]*i[1]\n    print s\n  if op == \"product\"\n    print \"Product of distinct prime factors\"\n    s = 1\n    for i in v:\n      s *= i[0]\n    print s\n}}}\n\n```\n\n\nThe above would make an interactive widget which would make an input form for the variables used in the code block.  A submit button would read the input fields and display output from the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/137\n\n",
+    "body": "Assignee: boothby\n\nExample:\n\n```\n%form\n\nEnter an integer n=300\nEnter a prime p=2\nShow prime factors only primes=False\nOperate on primes op=\n  * sum\n  * product\n\n{{{\n  v = factor(n%p)\n  if primes:\n    for i in v:\n      print i[0]\n  else:\n    for i in v:\n      print \"%d**%d\"%i\n  if op == \"sum\"\n    print \"Sum of prime factors\"\n    s = 0\n    for i in v:\n      s += i[0]*i[1]\n    print s\n  if op == \"product\"\n    print \"Product of distinct prime factors\"\n    s = 1\n    for i in v:\n      s *= i[0]\n    print s\n}}}\n\n```\n\nThe above would make an interactive widget which would make an input form for the variables used in the code block.  A submit button would read the input fields and display output from the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/137\n\n",
     "created_at": "2006-10-18T23:59:58Z",
     "labels": [
         "component: notebook",
@@ -19,7 +19,6 @@ archive/issues_000137.json:
 Assignee: boothby
 
 Example:
-
 
 ```
 %form
@@ -54,7 +53,6 @@ Operate on primes op=
 }}}
 
 ```
-
 
 The above would make an interactive widget which would make an input form for the variables used in the code block.  A submit button would read the input fields and display output from the code.
 

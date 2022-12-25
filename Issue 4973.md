@@ -231,7 +231,7 @@ As a note, the patches to be applied, in order:
 archive/issue_comments_037811.json:
 ```json
 {
-    "body": "Doctests pass. I've tried lots of the doc examples and they are faster or the same as the old code, except for the following case.  These commands are each executed in a fresh Sage session.\n\n\n```\n\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nSo, positive review if this regression is fixed.",
+    "body": "Doctests pass. I've tried lots of the doc examples and they are faster or the same as the old code, except for the following case.  These commands are each executed in a fresh Sage session.\n\n```\n\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\nSo, positive review if this regression is fixed.",
     "created_at": "2009-01-16T01:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -241,7 +241,6 @@ archive/issue_comments_037811.json:
 ```
 
 Doctests pass. I've tried lots of the doc examples and they are faster or the same as the old code, except for the following case.  These commands are each executed in a fresh Sage session.
-
 
 ```
 
@@ -266,7 +265,6 @@ sage: timeit('M[[1,2],[0,1,2]]')
 sage: timeit('M[[1,2],[0,1,2]]')
 625 loops, best of 3: 143 µs per loop
 ```
-
 
 So, positive review if this regression is fixed.
 
@@ -297,7 +295,7 @@ Patch attached that fixes the regression (at least on my machine).
 archive/issue_comments_037813.json:
 ```json
 {
-    "body": "Okay, pt3 fixes the regression.  Here are my new timings:\n\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nSo we're faster than the original code again.\n\nGreat job. Positive review, with the doctest fix that I'm going to post in a second.  I presume that mabshoff will run all doctests on it to make sure that there are no errors in other code because of the additional capabilities.",
+    "body": "Okay, pt3 fixes the regression.  Here are my new timings:\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\nSo we're faster than the original code again.\n\nGreat job. Positive review, with the doctest fix that I'm going to post in a second.  I presume that mabshoff will run all doctests on it to make sure that there are no errors in other code because of the additional capabilities.",
     "created_at": "2009-01-16T02:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -307,7 +305,6 @@ archive/issue_comments_037813.json:
 ```
 
 Okay, pt3 fixes the regression.  Here are my new timings:
-
 
 ```
 AFTER PATCH:
@@ -331,7 +328,6 @@ sage: timeit('M[[1,2],[0,1,2]]')
 sage: timeit('M[[1,2],[0,1,2]]')
 625 loops, best of 3: 143 µs per loop
 ```
-
 
 So we're faster than the original code again.
 
@@ -380,7 +376,7 @@ Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/d
 archive/issue_comments_037816.json:
 ```json
 {
-    "body": "I mean, *here* are my new timings after the regression fix in pt3.patch:\n\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nI copied the wrong thing before.",
+    "body": "I mean, *here* are my new timings after the regression fix in pt3.patch:\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\nI copied the wrong thing before.",
     "created_at": "2009-01-16T02:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -390,7 +386,6 @@ archive/issue_comments_037816.json:
 ```
 
 I mean, *here* are my new timings after the regression fix in pt3.patch:
-
 
 ```
 AFTER PATCH:
@@ -415,7 +410,6 @@ sage: timeit('M[[1,2],[0,1,2]]')
 625 loops, best of 3: 143 µs per loop
 ```
 
-
 I copied the wrong thing before.
 
 
@@ -425,7 +419,7 @@ I copied the wrong thing before.
 archive/issue_comments_037817.json:
 ```json
 {
-    "body": "Grrr, apparently I again copied the wrong thing.  So much for middle-click vs. ctrl-v.\n\n*here* are the new timings:\n\n\n```\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 125 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 120 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 124 \u00b5s per loop\n```\n",
+    "body": "Grrr, apparently I again copied the wrong thing.  So much for middle-click vs. ctrl-v.\n\n*here* are the new timings:\n\n```\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 125 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 120 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 124 \u00b5s per loop\n```",
     "created_at": "2009-01-16T02:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -437,7 +431,6 @@ archive/issue_comments_037817.json:
 Grrr, apparently I again copied the wrong thing.  So much for middle-click vs. ctrl-v.
 
 *here* are the new timings:
-
 
 ```
 sage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)
@@ -451,13 +444,12 @@ sage: timeit('M[[1,2],[0,1,2]]')
 
 
 
-
 ---
 
 archive/issue_comments_037818.json:
 ```json
 {
-    "body": "BTW, now it's even faster to write\n\n\n```\nrow_index, col_index = key_tuple\n```\n\n\nThen \n\n\n```\nrow_index = key_tuple[0] \ncol_index = key_tuple[1]\n```\n",
+    "body": "BTW, now it's even faster to write\n\n```\nrow_index, col_index = key_tuple\n```\n\nThen \n\n```\nrow_index = key_tuple[0] \ncol_index = key_tuple[1]\n```",
     "created_at": "2009-01-16T19:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -468,20 +460,16 @@ archive/issue_comments_037818.json:
 
 BTW, now it's even faster to write
 
-
 ```
 row_index, col_index = key_tuple
 ```
 
-
 Then 
-
 
 ```
 row_index = key_tuple[0] 
 col_index = key_tuple[1]
 ```
-
 
 
 
@@ -508,7 +496,7 @@ Though do either of those keep up with directly using `PyTuple_GET_ITEM`? I didn
 archive/issue_comments_037820.json:
 ```json
 {
-    "body": "Here's the actual generated code for `x,y = t`\n\n\n```\n    if (PyTuple_CheckExact(__pyx_v_t) && PyTuple_GET_SIZE(__pyx_v_t) == 2) {\n    PyObject* tuple = __pyx_v_t;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 0);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_x);\n    __pyx_v_x = __pyx_2;\n    __pyx_2 = 0;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 1);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_y);\n    __pyx_v_y = __pyx_2;\n    __pyx_2 = 0;\n  }\n  else {\n     [generic code]\n  }\n```\n\n\nIf `t` is declared to be a tuple, half of the first check shouldn't be needed (I don't think this optimization is in place yet). So it should be as fast as type check + length check + PyTuple_GET_ITEM. In any case, it's faster than indexing not using PyTyple_GET_ITEM.",
+    "body": "Here's the actual generated code for `x,y = t`\n\n```\n    if (PyTuple_CheckExact(__pyx_v_t) && PyTuple_GET_SIZE(__pyx_v_t) == 2) {\n    PyObject* tuple = __pyx_v_t;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 0);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_x);\n    __pyx_v_x = __pyx_2;\n    __pyx_2 = 0;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 1);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_y);\n    __pyx_v_y = __pyx_2;\n    __pyx_2 = 0;\n  }\n  else {\n     [generic code]\n  }\n```\n\nIf `t` is declared to be a tuple, half of the first check shouldn't be needed (I don't think this optimization is in place yet). So it should be as fast as type check + length check + PyTuple_GET_ITEM. In any case, it's faster than indexing not using PyTyple_GET_ITEM.",
     "created_at": "2009-01-16T20:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
@@ -518,7 +506,6 @@ archive/issue_comments_037820.json:
 ```
 
 Here's the actual generated code for `x,y = t`
-
 
 ```
     if (PyTuple_CheckExact(__pyx_v_t) && PyTuple_GET_SIZE(__pyx_v_t) == 2) {
@@ -538,7 +525,6 @@ Here's the actual generated code for `x,y = t`
      [generic code]
   }
 ```
-
 
 If `t` is declared to be a tuple, half of the first check shouldn't be needed (I don't think this optimization is in place yet). So it should be as fast as type check + length check + PyTuple_GET_ITEM. In any case, it's faster than indexing not using PyTyple_GET_ITEM.
 

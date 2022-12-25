@@ -3,7 +3,7 @@
 archive/issues_007839.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nConsider:\n\n\n```\nsage: P.<q> = LaurentPolynomialRing(QQ)\nsage: q in P\nTrue\nsage: P(q)\nq\nsage: q^(-1) in P\nTrue\nsage: P(q^(-1))\n```\n\n\nThe last statement raises an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7839\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nConsider:\n\n```\nsage: P.<q> = LaurentPolynomialRing(QQ)\nsage: q in P\nTrue\nsage: P(q)\nq\nsage: q^(-1) in P\nTrue\nsage: P(q^(-1))\n```\n\nThe last statement raises an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7839\n\n",
     "created_at": "2010-01-04T04:47:29Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  sage-combinat
 
 Consider:
 
-
 ```
 sage: P.<q> = LaurentPolynomialRing(QQ)
 sage: q in P
@@ -33,7 +32,6 @@ sage: q^(-1) in P
 True
 sage: P(q^(-1))
 ```
-
 
 The last statement raises an exception.
 

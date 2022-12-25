@@ -3,7 +3,7 @@
 archive/issues_008688.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: latex((x+2)/(x^3+1))\n\\frac{{\\left(x + 2\\right)}}{{\\left(x^{3} + 1\\right)}}\n```\n\n\nNote the extra parenthesis in the numerator and denominator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8688\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: latex((x+2)/(x^3+1))\n\\frac{{\\left(x + 2\\right)}}{{\\left(x^{3} + 1\\right)}}\n```\n\nNote the extra parenthesis in the numerator and denominator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8688\n\n",
     "created_at": "2010-04-14T22:31:13Z",
     "labels": [
         "component: symbolics",
@@ -18,12 +18,10 @@ archive/issues_008688.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: latex((x+2)/(x^3+1))
 \frac{{\left(x + 2\right)}}{{\left(x^{3} + 1\right)}}
 ```
-
 
 Note the extra parenthesis in the numerator and denominator.
 

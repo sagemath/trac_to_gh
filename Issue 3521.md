@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3521
 archive/issue_comments_024766.json:
 ```json
 {
-    "body": "For me this illustrates the bug more clearly:\n\n```\nsage: M = ModularSymbols(Gamma1(13),2)\nsage: M\nModular Symbols space of dimension 15 for Gamma_1(13) of weight 2 with sign 0 and over Rational Field\nsage: M.atkin_lehner_operator(13).matrix()^2 == 1\nTrue\nsage: M = ModularSymbols(DirichletGroup(13).0^2)\nsage: M.atkin_lehner_operator(13).matrix()^2 == 1\nFalse\nsage: M.atkin_lehner_operator(13).matrix()^2 \n\n[         1          0          0          0]\n[         0          1          0          0]\n[-zeta6 - 1          0          1  zeta6 + 1]\n[ zeta6 + 1          0          0     -zeta6]\n```\n",
+    "body": "For me this illustrates the bug more clearly:\n\n```\nsage: M = ModularSymbols(Gamma1(13),2)\nsage: M\nModular Symbols space of dimension 15 for Gamma_1(13) of weight 2 with sign 0 and over Rational Field\nsage: M.atkin_lehner_operator(13).matrix()^2 == 1\nTrue\nsage: M = ModularSymbols(DirichletGroup(13).0^2)\nsage: M.atkin_lehner_operator(13).matrix()^2 == 1\nFalse\nsage: M.atkin_lehner_operator(13).matrix()^2 \n\n[         1          0          0          0]\n[         0          1          0          0]\n[-zeta6 - 1          0          1  zeta6 + 1]\n[ zeta6 + 1          0          0     -zeta6]\n```",
     "created_at": "2008-06-27T14:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ sage: M.atkin_lehner_operator(13).matrix()^2
 [-zeta6 - 1          0          1  zeta6 + 1]
 [ zeta6 + 1          0          0     -zeta6]
 ```
-
 
 
 

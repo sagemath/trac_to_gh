@@ -106,7 +106,7 @@ archive/issue_events_002782.json:
 archive/issue_comments_006203.json:
 ```json
 {
-    "body": "I spent a few hours trying to come up with a smart way of doing this, and then I decided to see exactly how bad it is to do log(x,10).  The upshot is that I couldn't come up with an integer large enough that taking the log isn't practically instantaneous.  Hence the patch.\n\nHere's an example:\n\n```\nsage: time n=100000000000000000**10000000+1\nCPU times: user 53.12 s, sys: 0.52 s, total: 53.65 s\nWall time: 53.76\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n170000001\n```\n\n\nNote that it takes significantly longer to actually compute n than to get the number of digits.",
+    "body": "I spent a few hours trying to come up with a smart way of doing this, and then I decided to see exactly how bad it is to do log(x,10).  The upshot is that I couldn't come up with an integer large enough that taking the log isn't practically instantaneous.  Hence the patch.\n\nHere's an example:\n\n```\nsage: time n=100000000000000000**10000000+1\nCPU times: user 53.12 s, sys: 0.52 s, total: 53.65 s\nWall time: 53.76\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n170000001\n```\n\nNote that it takes significantly longer to actually compute n than to get the number of digits.",
     "created_at": "2008-01-27T07:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ Wall time: 0.00
 170000001
 ```
 
-
 Note that it takes significantly longer to actually compute n than to get the number of digits.
 
 
@@ -139,7 +138,7 @@ Note that it takes significantly longer to actually compute n than to get the nu
 archive/issue_comments_006204.json:
 ```json
 {
-    "body": "If this is supposed to give the exact number of digits... it doesn't.\n\nThe algorithm correctly says that the first number has 1001 digits; but the next two numbers actually have 1000 digits and the algorithm says 1001.\n\n\n```\nsage: RR(10^1000).abs().log(10).floor() + 1\n1001\nsage: RR(10^1000 - 1).abs().log(10).floor() + 1\n1001\nsage: RR(10^1000 - 10^900).abs().log(10).floor() + 1\n1001\n```\n",
+    "body": "If this is supposed to give the exact number of digits... it doesn't.\n\nThe algorithm correctly says that the first number has 1001 digits; but the next two numbers actually have 1000 digits and the algorithm says 1001.\n\n```\nsage: RR(10^1000).abs().log(10).floor() + 1\n1001\nsage: RR(10^1000 - 1).abs().log(10).floor() + 1\n1001\nsage: RR(10^1000 - 10^900).abs().log(10).floor() + 1\n1001\n```",
     "created_at": "2008-01-27T08:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
@@ -152,7 +151,6 @@ If this is supposed to give the exact number of digits... it doesn't.
 
 The algorithm correctly says that the first number has 1001 digits; but the next two numbers actually have 1000 digits and the algorithm says 1001.
 
-
 ```
 sage: RR(10^1000).abs().log(10).floor() + 1
 1001
@@ -161,7 +159,6 @@ sage: RR(10^1000 - 1).abs().log(10).floor() + 1
 sage: RR(10^1000 - 10^900).abs().log(10).floor() + 1
 1001
 ```
-
 
 
 
@@ -190,7 +187,7 @@ revised patch
 archive/issue_comments_006206.json:
 ```json
 {
-    "body": "Carl: thanks a lot for catching this.  I love this refereeing thing!\n\nI've put up a new patch, hopefully correct this time.\n\nHere's the (again, simple) idea:  Since my one-liner gave the same result as GMP's sizeinbase function, I ditched my earlier try and just called sizeinbase, which gives me a number guess, which is either the correct number of digits, or 1+ that.  To figure out which one is which, we simply need to compare our integer with the integer base**(guess-1).\n\nThat's what the patch does.  I've played around with this for very large numbers and the running time seems to be dominated by computing base**(guess-1); sizeinbase and the comparison are practically instantaneous.  So ndigits() now has roughly the same running time as creating n itself (which, I would guess, is linear in the size of n).  Here are some examples:\n\n\n```\nsage: time n=10^1000\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1001\nsage: time n=10^1000-1\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1000\nsage: time n=10^1000-10^900\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1000\nsage: time n=100000000000000000^10000000-1\nCPU times: user 29.66 s, sys: 0.42 s, total: 30.08 s\nWall time: 30.07\nsage: time n.ndigits()\nCPU times: user 29.64 s, sys: 0.40 s, total: 30.03 s\nWall time: 30.03\n170000000\n```\n",
+    "body": "Carl: thanks a lot for catching this.  I love this refereeing thing!\n\nI've put up a new patch, hopefully correct this time.\n\nHere's the (again, simple) idea:  Since my one-liner gave the same result as GMP's sizeinbase function, I ditched my earlier try and just called sizeinbase, which gives me a number guess, which is either the correct number of digits, or 1+ that.  To figure out which one is which, we simply need to compare our integer with the integer base**(guess-1).\n\nThat's what the patch does.  I've played around with this for very large numbers and the running time seems to be dominated by computing base**(guess-1); sizeinbase and the comparison are practically instantaneous.  So ndigits() now has roughly the same running time as creating n itself (which, I would guess, is linear in the size of n).  Here are some examples:\n\n```\nsage: time n=10^1000\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1001\nsage: time n=10^1000-1\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1000\nsage: time n=10^1000-10^900\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time n.ndigits()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n1000\nsage: time n=100000000000000000^10000000-1\nCPU times: user 29.66 s, sys: 0.42 s, total: 30.08 s\nWall time: 30.07\nsage: time n.ndigits()\nCPU times: user 29.64 s, sys: 0.40 s, total: 30.03 s\nWall time: 30.03\n170000000\n```",
     "created_at": "2008-01-27T23:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
@@ -206,7 +203,6 @@ I've put up a new patch, hopefully correct this time.
 Here's the (again, simple) idea:  Since my one-liner gave the same result as GMP's sizeinbase function, I ditched my earlier try and just called sizeinbase, which gives me a number guess, which is either the correct number of digits, or 1+ that.  To figure out which one is which, we simply need to compare our integer with the integer base**(guess-1).
 
 That's what the patch does.  I've played around with this for very large numbers and the running time seems to be dominated by computing base**(guess-1); sizeinbase and the comparison are practically instantaneous.  So ndigits() now has roughly the same running time as creating n itself (which, I would guess, is linear in the size of n).  Here are some examples:
-
 
 ```
 sage: time n=10^1000
@@ -238,7 +234,6 @@ CPU times: user 29.64 s, sys: 0.40 s, total: 30.03 s
 Wall time: 30.03
 170000000
 ```
-
 
 
 

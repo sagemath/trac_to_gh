@@ -3,7 +3,7 @@
 archive/issues_000836.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries_dokchitser(15)\n```\n\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries_dokchitser(15)\n```\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
     "created_at": "2007-10-06T22:59:20Z",
     "labels": [
         "component: number theory",
@@ -18,19 +18,16 @@ archive/issues_000836.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: e = EllipticCurve([1,1,0,-63900,-1964465932632])
 sage: L = e.Lseries_dokchitser(15)
 ```
-
 
 This leads to
 
 ```
 <type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/836
 
@@ -112,7 +109,7 @@ archive/issue_events_002356.json:
 archive/issue_comments_005153.json:
 ```json
 {
-    "body": "Hmm, things go wrong at a different point now:\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries().dokchitser(15)\nsage: L(1)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/lfunctions/dokchitser.py in __call__(self, s, c)\n    314             raise ArithmeticError, z\n    315         elif '***' in z:\n--> 316             raise RuntimeError, z\n    317         elif 'Warning' in z:\n    318             i = z.rfind('\\n')\n\n<type 'exceptions.RuntimeError'>:   ***   I was expecting an integer here: lfundigits\n                                         ^----------\n```\n",
+    "body": "Hmm, things go wrong at a different point now:\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries().dokchitser(15)\nsage: L(1)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/lfunctions/dokchitser.py in __call__(self, s, c)\n    314             raise ArithmeticError, z\n    315         elif '***' in z:\n--> 316             raise RuntimeError, z\n    317         elif 'Warning' in z:\n    318             i = z.rfind('\\n')\n\n<type 'exceptions.RuntimeError'>:   ***   I was expecting an integer here: lfundigits\n                                         ^----------\n```",
     "created_at": "2007-11-03T20:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
@@ -142,7 +139,6 @@ sage: L(1)
 <type 'exceptions.RuntimeError'>:   ***   I was expecting an integer here: lfundigits
                                          ^----------
 ```
-
 
 
 

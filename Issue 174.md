@@ -190,7 +190,7 @@ Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174
 archive/issue_comments_000802.json:
 ```json
 {
-    "body": "Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by @williamstein created at 2008-02-17 01:14:22\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
+    "body": "Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by @williamstein created at 2008-02-17 01:14:22\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
     "created_at": "2008-02-17T01:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -211,7 +211,6 @@ patches to 2.10.2.alpha0, then do hg_sage.send(...).
 The code is well documented, works well (very well tested with
 automated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:
 
-
 ```
 sage: a = random_matrix(ZZ,200,x=0,y=9)
 sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
@@ -223,7 +222,6 @@ sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 '249M+'
 ```
-
 
 I suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...
 
@@ -268,7 +266,7 @@ archive/issue_events_000326.json:
 archive/issue_comments_000803.json:
 ```json
 {
-    "body": "Here's a big leak:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9); e = a.hermite_form(proof=False); p = a.pivots()\nsage: get_memory_usage()\n'192M+'\nsage: w = e._add_row_and_maintain_echelon_form(random_matrix(ZZ,1,200), p)\nsage: get_memory_usage()\n'210M+'\n```\n",
+    "body": "Here's a big leak:\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9); e = a.hermite_form(proof=False); p = a.pivots()\nsage: get_memory_usage()\n'192M+'\nsage: w = e._add_row_and_maintain_echelon_form(random_matrix(ZZ,1,200), p)\nsage: get_memory_usage()\n'210M+'\n```",
     "created_at": "2008-02-17T01:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -279,7 +277,6 @@ archive/issue_comments_000803.json:
 
 Here's a big leak:
 
-
 ```
 sage: a = random_matrix(ZZ,200,x=0,y=9); e = a.hermite_form(proof=False); p = a.pivots()
 sage: get_memory_usage()
@@ -288,7 +285,6 @@ sage: w = e._add_row_and_maintain_echelon_form(random_matrix(ZZ,1,200), p)
 sage: get_memory_usage()
 '210M+'
 ```
-
 
 
 
@@ -317,7 +313,7 @@ ok, the file at http://sage.math.washington.edu/home/was/patches/hnf.hg has all 
 archive/issue_comments_000805.json:
 ```json
 {
-    "body": "Ok, running the final bundle under valgrind with \n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n```\n\ndoesn't leak at all. Excellent. So positive review on memory leak issues.\n\nCheers,\n\nMichael",
+    "body": "Ok, running the final bundle under valgrind with \n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n```\ndoesn't leak at all. Excellent. So positive review on memory leak issues.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-17T03:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
@@ -334,7 +330,6 @@ sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 sage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()
 ```
-
 doesn't leak at all. Excellent. So positive review on memory leak issues.
 
 Cheers,

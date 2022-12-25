@@ -70,7 +70,7 @@ archive/issue_events_005245.json:
 archive/issue_comments_014394.json:
 ```json
 {
-    "body": "There are some typos.  Lines 964 and 965 don't line up, and line 968 should say \"Sextic twist\".\n\n\n```\n\t963\t \n956\t964\t        if self.j_invariant() !=K(0): \n957\t965\t            raise ValueError, \"Sextic twist not defined when j!=1728\" \n \t966\t \n \t967\t        if D.is_zero(): \n \t968\t            raise ValueError, \"quartic twist requires a nonzero argument\" \n```\n",
+    "body": "There are some typos.  Lines 964 and 965 don't line up, and line 968 should say \"Sextic twist\".\n\n```\n\t963\t \n956\t964\t        if self.j_invariant() !=K(0): \n957\t965\t            raise ValueError, \"Sextic twist not defined when j!=1728\" \n \t966\t \n \t967\t        if D.is_zero(): \n \t968\t            raise ValueError, \"quartic twist requires a nonzero argument\" \n```",
     "created_at": "2008-02-17T19:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ archive/issue_comments_014394.json:
 
 There are some typos.  Lines 964 and 965 don't line up, and line 968 should say "Sextic twist".
 
-
 ```
 	963	 
 956	964	        if self.j_invariant() !=K(0): 
@@ -90,7 +89,6 @@ There are some typos.  Lines 964 and 965 don't line up, and line 968 should say 
  	967	        if D.is_zero(): 
  	968	            raise ValueError, "quartic twist requires a nonzero argument" 
 ```
-
 
 
 
@@ -137,7 +135,7 @@ Patch 8314.patch fixes the typo and improved docstrings, but I could not see the
 archive/issue_comments_014397.json:
 ```json
 {
-    "body": "This should be applied.  What I meant by 'not line up' was that they are incongruous:\n\n```\nif self.j_invariant() !=K(0): raise ValueError, \"Sextic twist not defined when j!=1728\"\n```\n\nThe test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix?",
+    "body": "This should be applied.  What I meant by 'not line up' was that they are incongruous:\n\n```\nif self.j_invariant() !=K(0): raise ValueError, \"Sextic twist not defined when j!=1728\"\n```\nThe test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix?",
     "created_at": "2008-02-17T20:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
@@ -151,7 +149,6 @@ This should be applied.  What I meant by 'not line up' was that they are incongr
 ```
 if self.j_invariant() !=K(0): raise ValueError, "Sextic twist not defined when j!=1728"
 ```
-
 The test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix?
 
 
@@ -181,7 +178,7 @@ and finally....
 archive/issue_comments_014399.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncalexan]:\n> This should be applied.  What I meant by 'not line up' was that they are incongruous:\n> {{{\n> if self.j_invariant() !=K(0): raise ValueError, \"Sextic twist not defined when j!=1728\"\n> }}}\n> The test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix? \n\n You are quite right, the error message should have had 0 instead of 1728.  Patch 8315.patch fizes that.  Sorry.",
+    "body": "Replying to [comment:4 ncalexan]:\n> This should be applied.  What I meant by 'not line up' was that they are incongruous:\n> \n> ```\n> if self.j_invariant() !=K(0): raise ValueError, \"Sextic twist not defined when j!=1728\"\n> ```\n> The test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix? \n\n\n You are quite right, the error message should have had 0 instead of 1728.  Patch 8315.patch fizes that.  Sorry.",
     "created_at": "2008-02-17T20:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
@@ -192,10 +189,12 @@ archive/issue_comments_014399.json:
 
 Replying to [comment:4 ncalexan]:
 > This should be applied.  What I meant by 'not line up' was that they are incongruous:
-> {{{
+> 
+> ```
 > if self.j_invariant() !=K(0): raise ValueError, "Sextic twist not defined when j!=1728"
-> }}}
+> ```
 > The test is for $K(0)$ but the message reads $j != 1728$.  What is the correct fix? 
+
 
  You are quite right, the error message should have had 0 instead of 1728.  Patch 8315.patch fizes that.  Sorry.
 

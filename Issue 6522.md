@@ -70,7 +70,7 @@ Note that we will likely need deprecation warnings.  See discussion at #6521.
 archive/issue_comments_053081.json:
 ```json
 {
-    "body": "There is one small problem with this.  Doing the naive change - \n\n```\n    def __copy__(self, implementation='networkx', sparse=None):\n```\n\nyields:\n\n```\nsage: g=Graph({0:[0,1,1,2]})\nsage: copy(g)\nLooped multi-graph on 3 vertices\nsage: g.__copy__(sparse=True)\nLooped multi-graph on 3 vertices\nsage: copy(g,sparse=True)\n---------------------------------------------------------------------------\nTypeError: copy() got an unexpected keyword argument 'sparse'\n```\n\nIt's not clear to me how to deal with this; changing the global 'copy' to handle keywords seems ill-advised.  On the other hand, there definitely is code (elsewhere) that uses the keywords implementation and sparse, at least in graph_generators.py.",
+    "body": "There is one small problem with this.  Doing the naive change - \n\n```\n    def __copy__(self, implementation='networkx', sparse=None):\n```\nyields:\n\n```\nsage: g=Graph({0:[0,1,1,2]})\nsage: copy(g)\nLooped multi-graph on 3 vertices\nsage: g.__copy__(sparse=True)\nLooped multi-graph on 3 vertices\nsage: copy(g,sparse=True)\n---------------------------------------------------------------------------\nTypeError: copy() got an unexpected keyword argument 'sparse'\n```\nIt's not clear to me how to deal with this; changing the global 'copy' to handle keywords seems ill-advised.  On the other hand, there definitely is code (elsewhere) that uses the keywords implementation and sparse, at least in graph_generators.py.",
     "created_at": "2009-11-18T15:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ There is one small problem with this.  Doing the naive change -
 ```
     def __copy__(self, implementation='networkx', sparse=None):
 ```
-
 yields:
 
 ```
@@ -97,7 +96,6 @@ sage: copy(g,sparse=True)
 ---------------------------------------------------------------------------
 TypeError: copy() got an unexpected keyword argument 'sparse'
 ```
-
 It's not clear to me how to deal with this; changing the global 'copy' to handle keywords seems ill-advised.  On the other hand, there definitely is code (elsewhere) that uses the keywords implementation and sparse, at least in graph_generators.py.
 
 
@@ -199,7 +197,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_053087.json:
 ```json
 {
-    "body": "I can't say that I agree with the point of this ticket.\n\nCertainly there should be a `__copy__` defined for graphs, so that\n\n```\nsage: G = copy(Graph())\n```\n\nworks. However, the main use case of the `copy` method for graphs (for me, at least) is when I want to change underlying implementations. What was\n\n```\nsage: G = graphs.PetersenGraph()\nsage: C = G.copy(implementation='c_graph', sparse=False)\n```\n\nwon't work as\n\n```\nsage: G = graphs.PetersenGraph()\nsage: copy(G, implementation='c_graph', sparse=False)\n```\n\nbut instead we now need to do:\n\n```\nsage: G = graphs.PetersenGraph()\nsage: C = G.__copy__(implementation='c_graph', sparse=False)\n```\n\n\nWhich is an ugly, pointless change in API. Why don't we just define `__copy__`, and acknowledge that in some cases, it makes sense for objects to have a `copy` method?",
+    "body": "I can't say that I agree with the point of this ticket.\n\nCertainly there should be a `__copy__` defined for graphs, so that\n\n```\nsage: G = copy(Graph())\n```\nworks. However, the main use case of the `copy` method for graphs (for me, at least) is when I want to change underlying implementations. What was\n\n```\nsage: G = graphs.PetersenGraph()\nsage: C = G.copy(implementation='c_graph', sparse=False)\n```\nwon't work as\n\n```\nsage: G = graphs.PetersenGraph()\nsage: copy(G, implementation='c_graph', sparse=False)\n```\nbut instead we now need to do:\n\n```\nsage: G = graphs.PetersenGraph()\nsage: C = G.__copy__(implementation='c_graph', sparse=False)\n```\n\nWhich is an ugly, pointless change in API. Why don't we just define `__copy__`, and acknowledge that in some cases, it makes sense for objects to have a `copy` method?",
     "created_at": "2009-12-15T21:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
@@ -215,28 +213,24 @@ Certainly there should be a `__copy__` defined for graphs, so that
 ```
 sage: G = copy(Graph())
 ```
-
 works. However, the main use case of the `copy` method for graphs (for me, at least) is when I want to change underlying implementations. What was
 
 ```
 sage: G = graphs.PetersenGraph()
 sage: C = G.copy(implementation='c_graph', sparse=False)
 ```
-
 won't work as
 
 ```
 sage: G = graphs.PetersenGraph()
 sage: copy(G, implementation='c_graph', sparse=False)
 ```
-
 but instead we now need to do:
 
 ```
 sage: G = graphs.PetersenGraph()
 sage: C = G.__copy__(implementation='c_graph', sparse=False)
 ```
-
 
 Which is an ugly, pointless change in API. Why don't we just define `__copy__`, and acknowledge that in some cases, it makes sense for objects to have a `copy` method?
 

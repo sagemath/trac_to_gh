@@ -3,7 +3,7 @@
 archive/issues_007052.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nPlaying around with some graphs I noticed that even though the graph below (the McGee graph) not is bipartite, it is claimed to have chromatic number 2 (This should be 3).\n\nThe error seems to be in the calculation of the chromatic polynomial, as there is no chromatic root (x-2) in the factorization of the chromatic polynomial, which is then used to say that there exists 2-colorings of the graph.\n\n\nCode to reproduce:\n\n```\nG = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\\\n            5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\\\n            11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\\\n            15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\\\n            21:[9,20,22], 22:[5,21,23], 23:[0,16,22]})\nprint G.is_bipartite()\nprint G.chromatic_number()\nprint G.chromatic_polynomial().factor()\n```\n\nOutput from code above:\n\n```\nFalse\n2\n(x - 1) * x * (x^22 - 35*x^21 + 595*x^20 - 6545*x^19 + 52360*x^18 -\n324632*x^17 + 1623128*x^16 - 6723558*x^15 + 23521860*x^14 -\n70477280*x^13 + 182703380*x^12 - 412698250*x^11 + 815778984*x^10 +\n2881630536*x^9 + 2143156981*x^8 + 1464159543*x^7 + 3227470630*x^6 +\n1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -\n257225680*x + 42167160)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7052\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nPlaying around with some graphs I noticed that even though the graph below (the McGee graph) not is bipartite, it is claimed to have chromatic number 2 (This should be 3).\n\nThe error seems to be in the calculation of the chromatic polynomial, as there is no chromatic root (x-2) in the factorization of the chromatic polynomial, which is then used to say that there exists 2-colorings of the graph.\n\n\nCode to reproduce:\n\n```\nG = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\\\n            5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\\\n            11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\\\n            15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\\\n            21:[9,20,22], 22:[5,21,23], 23:[0,16,22]})\nprint G.is_bipartite()\nprint G.chromatic_number()\nprint G.chromatic_polynomial().factor()\n```\nOutput from code above:\n\n```\nFalse\n2\n(x - 1) * x * (x^22 - 35*x^21 + 595*x^20 - 6545*x^19 + 52360*x^18 -\n324632*x^17 + 1623128*x^16 - 6723558*x^15 + 23521860*x^14 -\n70477280*x^13 + 182703380*x^12 - 412698250*x^11 + 815778984*x^10 +\n2881630536*x^9 + 2143156981*x^8 + 1464159543*x^7 + 3227470630*x^6 +\n1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -\n257225680*x + 42167160)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7052\n\n",
     "created_at": "2009-09-28T15:43:21Z",
     "labels": [
         "component: graph theory",
@@ -38,7 +38,6 @@ print G.is_bipartite()
 print G.chromatic_number()
 print G.chromatic_polynomial().factor()
 ```
-
 Output from code above:
 
 ```
@@ -51,7 +50,6 @@ False
 1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -
 257225680*x + 42167160)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7052
 
@@ -82,7 +80,7 @@ Allow for larger coeffecients in chromatic polynomial. Add McGee graph generator
 archive/issue_comments_058263.json:
 ```json
 {
-    "body": "Attachment [trac_7052.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052.patch) by @haaninjo created at 2009-10-05 07:42:53\n\nFigured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.\n\nComparison of the computed chromatic polynomial for the McGee graph using Sage and using a program made by Pearce and Haggard[1]:\n\nChromatic polynomial using Pearce:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 - 2229115744*x^11 +\n3556493741*x^10 - 4973964734*x^9 + 6058278383*x^8 - 6356758192*x^7 +\n5650054983*x^6 - 4146754706*x^5 + 2415720549*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nUsing Sage:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 + 2065851552*x^11 -\n738473555*x^10 - 678997438*x^9 + 1763311087*x^8 - 2061790896*x^7 +\n1355087687*x^6 + 148212590*x^5 - 1879246747*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nIf we now look at the coefficients for x^11 we see that the difference between them is \n\n```\n2065851552 - (-2229115744) = 4294967296 = 2^32\n```\n\ni.e  32-bit integer.\n\nsolution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)\n\nAttaching a patch that changes relevant variables to long long, as well as adding the McGee graph to named graphs as a doctest to show that the changes give a correct answer (the chromatic number should be 3).\n\n\n[1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/",
+    "body": "Attachment [trac_7052.patch](tarball://root/attachments/some-uuid/ticket7052/trac_7052.patch) by @haaninjo created at 2009-10-05 07:42:53\n\nFigured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.\n\nComparison of the computed chromatic polynomial for the McGee graph using Sage and using a program made by Pearce and Haggard[1]:\n\nChromatic polynomial using Pearce:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 - 2229115744*x^11 +\n3556493741*x^10 - 4973964734*x^9 + 6058278383*x^8 - 6356758192*x^7 +\n5650054983*x^6 - 4146754706*x^5 + 2415720549*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\nUsing Sage:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 + 2065851552*x^11 -\n738473555*x^10 - 678997438*x^9 + 1763311087*x^8 - 2061790896*x^7 +\n1355087687*x^6 + 148212590*x^5 - 1879246747*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\nIf we now look at the coefficients for x^11 we see that the difference between them is \n\n```\n2065851552 - (-2229115744) = 4294967296 = 2^32\n```\ni.e  32-bit integer.\n\nsolution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)\n\nAttaching a patch that changes relevant variables to long long, as well as adding the McGee graph to named graphs as a doctest to show that the changes give a correct answer (the chromatic number should be 3).\n\n\n[1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/",
     "created_at": "2009-10-05T07:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7052",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ x^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +
 299392840*x^2 - 42167160*x
 ```
 
-
 Using Sage:
 
 ```
@@ -120,13 +117,11 @@ x^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +
 299392840*x^2 - 42167160*x
 ```
 
-
 If we now look at the coefficients for x^11 we see that the difference between them is 
 
 ```
 2065851552 - (-2229115744) = 4294967296 = 2^32
 ```
-
 i.e  32-bit integer.
 
 solution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)

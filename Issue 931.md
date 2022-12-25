@@ -3,7 +3,7 @@
 archive/issues_000931.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI think SAGE is still the only mathematical\nsoftware with an implementation of the permanent function for\nnon-square matrices over an arbitrary field!\n\nBut it is frickin' slow, as William could have said.\nCalculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's\nover the main diagonal.\n\n\nOver ZZ:\n> sage: time f(13,4)\n> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s\n> Wall time: 4.08\n>  1596800\n\n\nOver QQ\n> sage: time f(13,4)\n> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s\n> Wall time: 8.56\n>  1596800\n\nMy all C-program with ints based on gmp:\n> [jaap`@`paix perm_gmp]$ time ./ds 13 4\n> 1596800\n> real    0m0.328s\n> user    0m0.326s\n> sys     0m0.003s\n> [jaap`@`paix perm_gmp]$ \n\nIn the reference manual it still says that the code is optimized\nonly for matrices over QQ :-)!\n\nWhat we need is optimization for integer matrices (followed by more\noptimization for (0,1) matrices, eventually for (-1,0,1) matrices.\nThat are the matrices that 'count' in applications.).\n\nA speed boost can be achieved replacing 'my' pure Python function\n_combinations, to be found in sage.structure.sequence, with a real fast\nimplementation in C/Cython.\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/931\n\n",
+    "body": "Assignee: @williamstein\n\nI think SAGE is still the only mathematical\nsoftware with an implementation of the permanent function for\nnon-square matrices over an arbitrary field!\n\nBut it is frickin' slow, as William could have said.\nCalculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's\nover the main diagonal.\n\n\nOver ZZ:\n> sage: time f(13,4)\n> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s\n> Wall time: 4.08\n>  1596800\n\n\n\nOver QQ\n> sage: time f(13,4)\n> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s\n> Wall time: 8.56\n>  1596800\n\n\nMy all C-program with ints based on gmp:\n> [jaap`@`paix perm_gmp]$ time ./ds 13 4\n> 1596800\n> real    0m0.328s\n> user    0m0.326s\n> sys     0m0.003s\n> [jaap`@`paix perm_gmp]$ \n\n\nIn the reference manual it still says that the code is optimized\nonly for matrices over QQ :-)!\n\nWhat we need is optimization for integer matrices (followed by more\noptimization for (0,1) matrices, eventually for (-1,0,1) matrices.\nThat are the matrices that 'count' in applications.).\n\nA speed boost can be achieved replacing 'my' pure Python function\n_combinations, to be found in sage.structure.sequence, with a real fast\nimplementation in C/Cython.\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/931\n\n",
     "created_at": "2007-10-19T18:44:51Z",
     "labels": [
         "component: linear algebra"
@@ -33,11 +33,13 @@ Over ZZ:
 >  1596800
 
 
+
 Over QQ
 > sage: time f(13,4)
 > CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s
 > Wall time: 8.56
 >  1596800
+
 
 My all C-program with ints based on gmp:
 > [jaap`@`paix perm_gmp]$ time ./ds 13 4
@@ -46,6 +48,7 @@ My all C-program with ints based on gmp:
 > user    0m0.326s
 > sys     0m0.003s
 > [jaap`@`paix perm_gmp]$ 
+
 
 In the reference manual it still says that the code is optimized
 only for matrices over QQ :-)!
@@ -125,7 +128,7 @@ archive/issue_events_002557.json:
 archive/issue_comments_005672.json:
 ```json
 {
-    "body": "I'm sorry for the double attachment!\n\nTiming\n\n\n```\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 25.20 s, sys: 0.46 s, total: 25.65 s\nWall time: 26.08\n```\n\n\nin sage-2.8.9:\n\n\n```\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 42.64 s, sys: 1.12 s, total: 43.76 s\nWall time: 43.96\n\n```\n\n\nThis is not the last word on this issue.\n\nJaap",
+    "body": "I'm sorry for the double attachment!\n\nTiming\n\n```\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 25.20 s, sys: 0.46 s, total: 25.65 s\nWall time: 26.08\n```\n\nin sage-2.8.9:\n\n```\nsage: time dance(7)\nh^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840\nCPU times: user 42.64 s, sys: 1.12 s, total: 43.76 s\nWall time: 43.96\n\n```\n\nThis is not the last word on this issue.\n\nJaap",
     "created_at": "2007-10-25T22:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
@@ -138,7 +141,6 @@ I'm sorry for the double attachment!
 
 Timing
 
-
 ```
 sage: time dance(7)
 h^7 - 14*h^6 + 126*h^5 - 700*h^4 + 2625*h^3 - 6342*h^2 + 9072*h - 5840
@@ -146,9 +148,7 @@ CPU times: user 25.20 s, sys: 0.46 s, total: 25.65 s
 Wall time: 26.08
 ```
 
-
 in sage-2.8.9:
-
 
 ```
 sage: time dance(7)
@@ -157,7 +157,6 @@ CPU times: user 42.64 s, sys: 1.12 s, total: 43.76 s
 Wall time: 43.96
 
 ```
-
 
 This is not the last word on this issue.
 

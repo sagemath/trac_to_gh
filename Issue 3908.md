@@ -3,7 +3,7 @@
 archive/issues_003908.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCurrently there is a major memory leak in fast_float because it uses `__del__` instead of `__dealloc__`.  (Python uses `__del__`, Cython uses `__dealloc__`.)\n\nBefore:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7ab4b54>\nsage: get_memory_usage()\n163.6328125\n```\n\n\nAfter:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7b18b54>\nsage: get_memory_usage()\n117.98828125\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3908\n\n",
+    "body": "Assignee: jkantor\n\nCurrently there is a major memory leak in fast_float because it uses `__del__` instead of `__dealloc__`.  (Python uses `__del__`, Cython uses `__dealloc__`.)\n\nBefore:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7ab4b54>\nsage: get_memory_usage()\n163.6328125\n```\n\nAfter:\n\n```\nsage: from sage.ext.fast_eval import fast_float_constant\nsage: get_memory_usage()\n117.859375\nsage: print sum([fast_float_constant(3.0)] * 2000)\n<sage.ext.fast_eval.FastDoubleFunc object at 0xb7b18b54>\nsage: get_memory_usage()\n117.98828125\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3908\n\n",
     "created_at": "2008-08-20T02:57:54Z",
     "labels": [
         "component: numerical",
@@ -32,7 +32,6 @@ sage: get_memory_usage()
 163.6328125
 ```
 
-
 After:
 
 ```
@@ -44,7 +43,6 @@ sage: print sum([fast_float_constant(3.0)] * 2000)
 sage: get_memory_usage()
 117.98828125
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3908
@@ -76,7 +74,7 @@ Attachment [trac3908-fast_float-memleak.patch](tarball://root/attachments/some-u
 archive/issue_comments_027901.json:
 ```json
 {
-    "body": "This patch actually makes it worse: Before:\n\n```\n==12210== LEAK SUMMARY:\n==12210==    definitely lost: 152,380 bytes in 5,433 blocks.\n==12210==      possibly lost: 338,476 bytes in 965 blocks.\n==12210==    still reachable: 34,336,340 bytes in 211,430 blocks.\n==12210==         suppressed: 300,797 bytes in 4,764 blocks.\n```\n\nAfter:\n\n```\n==25373== LEAK SUMMARY:\n==25373==    definitely lost: 311,287 bytes in 5,364 blocks.\n==25373==      possibly lost: 338,986 bytes in 969 blocks.\n==25373==    still reachable: 34,331,200 bytes in 211,437 blocks.\n==25373==         suppressed: 0 bytes in 0 blocks.\n==25373== Rerun with --leak-check=full to see details of leaked memory.\n```\n\n\n:(\n\nCheers,\n\nMichael",
+    "body": "This patch actually makes it worse: Before:\n\n```\n==12210== LEAK SUMMARY:\n==12210==    definitely lost: 152,380 bytes in 5,433 blocks.\n==12210==      possibly lost: 338,476 bytes in 965 blocks.\n==12210==    still reachable: 34,336,340 bytes in 211,430 blocks.\n==12210==         suppressed: 300,797 bytes in 4,764 blocks.\n```\nAfter:\n\n```\n==25373== LEAK SUMMARY:\n==25373==    definitely lost: 311,287 bytes in 5,364 blocks.\n==25373==      possibly lost: 338,986 bytes in 969 blocks.\n==25373==    still reachable: 34,331,200 bytes in 211,437 blocks.\n==25373==         suppressed: 0 bytes in 0 blocks.\n==25373== Rerun with --leak-check=full to see details of leaked memory.\n```\n\n:(\n\nCheers,\n\nMichael",
     "created_at": "2008-08-20T18:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3908",
     "type": "issue_comment",
@@ -94,7 +92,6 @@ This patch actually makes it worse: Before:
 ==12210==    still reachable: 34,336,340 bytes in 211,430 blocks.
 ==12210==         suppressed: 300,797 bytes in 4,764 blocks.
 ```
-
 After:
 
 ```
@@ -105,7 +102,6 @@ After:
 ==25373==         suppressed: 0 bytes in 0 blocks.
 ==25373== Rerun with --leak-check=full to see details of leaked memory.
 ```
-
 
 :(
 
@@ -142,7 +138,7 @@ Michael
 archive/issue_comments_027903.json:
 ```json
 {
-    "body": "Positive review. It does not fix all the issue, but it reduces the problem significantly:\n\n```\n==12941== LEAK SUMMARY:\n==12941==    definitely lost: 7,300 bytes in 600 blocks.\n==12941==    indirectly lost: 3,483 bytes in 5 blocks.\n==12941==      possibly lost: 338,598 bytes in 964 blocks.\n==12941==    still reachable: 34,339,261 bytes in 211,436 blocks.\n==12941==         suppressed: 300,797 bytes in 4,764 blocks.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Positive review. It does not fix all the issue, but it reduces the problem significantly:\n\n```\n==12941== LEAK SUMMARY:\n==12941==    definitely lost: 7,300 bytes in 600 blocks.\n==12941==    indirectly lost: 3,483 bytes in 5 blocks.\n==12941==      possibly lost: 338,598 bytes in 964 blocks.\n==12941==    still reachable: 34,339,261 bytes in 211,436 blocks.\n==12941==         suppressed: 300,797 bytes in 4,764 blocks.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-20T19:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3908",
     "type": "issue_comment",
@@ -161,7 +157,6 @@ Positive review. It does not fix all the issue, but it reduces the problem signi
 ==12941==    still reachable: 34,339,261 bytes in 211,436 blocks.
 ==12941==         suppressed: 300,797 bytes in 4,764 blocks.
 ```
-
 
 Cheers,
 

@@ -242,7 +242,7 @@ In any case, this happens whether or not I apply the patch above.
 archive/issue_comments_054050.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> This [attachment:trac_6614-jsmath_repo.patch alternative patch] deletes `doc/common/static/jsmath` and adds jsMath to `doc/common/conf.py`'s list of `html_static_path`s.\nIt may be necessary to delete `doc/common/static/jsmath` manually, after applying the patch.",
+    "body": "Replying to [comment:3 mpatel]:\n> This [attachment:trac_6614-jsmath_repo.patch alternative patch] deletes `doc/common/static/jsmath` and adds jsMath to `doc/common/conf.py`'s list of `html_static_path`s.\n\nIt may be necessary to delete `doc/common/static/jsmath` manually, after applying the patch.",
     "created_at": "2009-08-03T18:40:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -253,6 +253,7 @@ archive/issue_comments_054050.json:
 
 Replying to [comment:3 mpatel]:
 > This [attachment:trac_6614-jsmath_repo.patch alternative patch] deletes `doc/common/static/jsmath` and adds jsMath to `doc/common/conf.py`'s list of `html_static_path`s.
+
 It may be necessary to delete `doc/common/static/jsmath` manually, after applying the patch.
 
 
@@ -279,7 +280,7 @@ archive/issue_events_015615.json:
 archive/issue_comments_054051.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Since Sphinx recursively copies the only the contents of the static paths, jsMath no longer gets its own directory in `_static`.  I've changed `jsmath_path` to `'easy/load.js'`.\n\nAlso, since the jsMath files all begin with \"jsMath\", we don't have to worry about name clashes (except, I suppose, the names of the subdirectories of jsMath, but I hope this won't be an issue).\n\nAnyway, it looks good to me.  I did manually delete `doc/common/static/jsmath`, and the documentation build correctly, with or without the \"--jsmath\" switch, and jsMath was active when reading docs off-line and on.  The patch is large, but almost all of it consists of deleting files in `doc/common/static/jsmath`; the only \"interesting\" part is at the very beginning, the changes to `conf.py`.  The changes there look good, both the new stuff and tidying up the old stuff (using `os.path.join` instead of \"+\", for example).\n\nI hope I'm not missing anything, but I think it gets a positive review.  Apply only [trac_6614-jsmath_repo_v2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6614/trac_6614-jsmath_repo_v2.patch).",
+    "body": "Replying to [comment:3 mpatel]:\n> Since Sphinx recursively copies the only the contents of the static paths, jsMath no longer gets its own directory in `_static`.  I've changed `jsmath_path` to `'easy/load.js'`.\n\n\nAlso, since the jsMath files all begin with \"jsMath\", we don't have to worry about name clashes (except, I suppose, the names of the subdirectories of jsMath, but I hope this won't be an issue).\n\nAnyway, it looks good to me.  I did manually delete `doc/common/static/jsmath`, and the documentation build correctly, with or without the \"--jsmath\" switch, and jsMath was active when reading docs off-line and on.  The patch is large, but almost all of it consists of deleting files in `doc/common/static/jsmath`; the only \"interesting\" part is at the very beginning, the changes to `conf.py`.  The changes there look good, both the new stuff and tidying up the old stuff (using `os.path.join` instead of \"+\", for example).\n\nI hope I'm not missing anything, but I think it gets a positive review.  Apply only [trac_6614-jsmath_repo_v2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6614/trac_6614-jsmath_repo_v2.patch).",
     "created_at": "2009-08-20T21:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -290,6 +291,7 @@ archive/issue_comments_054051.json:
 
 Replying to [comment:3 mpatel]:
 > Since Sphinx recursively copies the only the contents of the static paths, jsMath no longer gets its own directory in `_static`.  I've changed `jsmath_path` to `'easy/load.js'`.
+
 
 Also, since the jsMath files all begin with "jsMath", we don't have to worry about name clashes (except, I suppose, the names of the subdirectories of jsMath, but I hope this won't be an issue).
 
@@ -304,7 +306,7 @@ I hope I'm not missing anything, but I think it gets a positive review.  Apply o
 archive/issue_comments_054052.json:
 ```json
 {
-    "body": "I left alone the following line in `MANIFEST.in`\n\n```\nrecursive-include doc/common/static *\n```\n\nI assume this is OK, although it's somewhat more than we need just now.",
+    "body": "I left alone the following line in `MANIFEST.in`\n\n```\nrecursive-include doc/common/static *\n```\nI assume this is OK, although it's somewhat more than we need just now.",
     "created_at": "2009-08-22T13:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -318,7 +320,6 @@ I left alone the following line in `MANIFEST.in`
 ```
 recursive-include doc/common/static *
 ```
-
 I assume this is OK, although it's somewhat more than we need just now.
 
 
@@ -426,7 +427,7 @@ I also manually deleted the directory `doc/common/static/jsmath`.
 archive/issue_comments_054057.json:
 ```json
 {
-    "body": "We're working on Sage-specific jsMath customizations for the documentation at #6673.  \n\nThe screenshots appear to be missing, at least for me.\n\nFrom the [changelog](http://www.math.union.edu/~dpvc/jsMath/changes.html) for jsMath 3.6c:\n\n```\n* Worked around another problem with Firefox 3.5's single-origin policy for\n  local files that would cause jsMath not to be able to load external\n  components.\n```\n\nThis may address the \"aside\" above, unless it's besides the aside's point.",
+    "body": "We're working on Sage-specific jsMath customizations for the documentation at #6673.  \n\nThe screenshots appear to be missing, at least for me.\n\nFrom the [changelog](http://www.math.union.edu/~dpvc/jsMath/changes.html) for jsMath 3.6c:\n\n```\n* Worked around another problem with Firefox 3.5's single-origin policy for\n  local files that would cause jsMath not to be able to load external\n  components.\n```\nThis may address the \"aside\" above, unless it's besides the aside's point.",
     "created_at": "2009-08-30T07:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6614",
     "type": "issue_comment",
@@ -446,7 +447,6 @@ From the [changelog](http://www.math.union.edu/~dpvc/jsMath/changes.html) for js
   local files that would cause jsMath not to be able to load external
   components.
 ```
-
 This may address the "aside" above, unless it's besides the aside's point.
 
 

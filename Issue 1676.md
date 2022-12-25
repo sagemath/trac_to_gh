@@ -85,7 +85,7 @@ archive/issue_events_004123.json:
 archive/issue_comments_010606.json:
 ```json
 {
-    "body": "With this and the patch from #1675 applied I get:\nBefore:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nPatch applied to Sage 2.9.2.rc0.\n\nCheers,\n\nMichael",
+    "body": "With this and the patch from #1675 applied I get:\nBefore:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\nPatch applied to Sage 2.9.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T22:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1676",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Before:
 ==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.
 ==6600==         suppressed: 0 bytes in 0 blocks.
 ```
-
 After:
 
 ```
@@ -114,7 +113,6 @@ After:
 ==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.
 ==6600==         suppressed: 0 bytes in 0 blocks.
 ```
-
 Patch applied to Sage 2.9.2.rc0.
 
 Cheers,
@@ -128,7 +126,7 @@ Michael
 archive/issue_comments_010607.json:
 ```json
 {
-    "body": "Oops:\n\nAfter:\n\n```\n==16192== LEAK SUMMARY:\n==16192==    definitely lost: 0 bytes in 0 blocks.\n==16192==      possibly lost: 261,881 bytes in 713 blocks.\n==16192==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==16192==         suppressed: 0 bytes in 0 blocks.\n```\n",
+    "body": "Oops:\n\nAfter:\n\n```\n==16192== LEAK SUMMARY:\n==16192==    definitely lost: 0 bytes in 0 blocks.\n==16192==      possibly lost: 261,881 bytes in 713 blocks.\n==16192==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==16192==         suppressed: 0 bytes in 0 blocks.\n```",
     "created_at": "2008-01-03T22:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1676",
     "type": "issue_comment",
@@ -148,4 +146,3 @@ After:
 ==16192==    still reachable: 39,070,317 bytes in 19,102 blocks.
 ==16192==         suppressed: 0 bytes in 0 blocks.
 ```
-

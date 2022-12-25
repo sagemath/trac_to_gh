@@ -3,7 +3,7 @@
 archive/issues_007727.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nThe following code fails with cryptid PariError:\n\n```\nsage: L.<a>=NumberField(x^3+2/3*x+3)\nsage: L.optimized_representation()\n```\n\n\nThe exact failure happens on the command f.polred(2), but I'm not sure what's wrong with it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7727\n\n",
+    "body": "Assignee: @loefflerd\n\nThe following code fails with cryptid PariError:\n\n```\nsage: L.<a>=NumberField(x^3+2/3*x+3)\nsage: L.optimized_representation()\n```\n\nThe exact failure happens on the command f.polred(2), but I'm not sure what's wrong with it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7727\n\n",
     "created_at": "2009-12-17T20:50:02Z",
     "labels": [
         "component: number fields",
@@ -24,7 +24,6 @@ The following code fails with cryptid PariError:
 sage: L.<a>=NumberField(x^3+2/3*x+3)
 sage: L.optimized_representation()
 ```
-
 
 The exact failure happens on the command f.polred(2), but I'm not sure what's wrong with it.
 

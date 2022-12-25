@@ -51,7 +51,7 @@ Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_029194.json:
 ```json
 {
-    "body": "I'm getting an error trying to apply this patch to a fresh 3.1.2:\n\n\n```\npatching file sage/interfaces/expect.py\nHunk #1 FAILED at 1385\n1 out of 1 hunk FAILED -- saving rejects to file sage/interfaces/expect.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\n```\n",
+    "body": "I'm getting an error trying to apply this patch to a fresh 3.1.2:\n\n```\npatching file sage/interfaces/expect.py\nHunk #1 FAILED at 1385\n1 out of 1 hunk FAILED -- saving rejects to file sage/interfaces/expect.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\n```",
     "created_at": "2008-09-20T04:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ archive/issue_comments_029194.json:
 
 I'm getting an error trying to apply this patch to a fresh 3.1.2:
 
-
 ```
 patching file sage/interfaces/expect.py
 Hunk #1 FAILED at 1385
@@ -70,7 +69,6 @@ Hunk #1 FAILED at 1385
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 ```
-
 
 
 
@@ -151,7 +149,7 @@ Looks good to me.
 archive/issue_comments_029199.json:
 ```json
 {
-    "body": "One thing I notice with this patch is that sr.py now takes around 650 seconds instead of 450 or so:\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n         [655.1 s]\n```\n\nI am still merging the patch, but can we get this issue fixed next?\n\nCheers,\n\nMichael",
+    "body": "One thing I notice with this patch is that sr.py now takes around 650 seconds instead of 450 or so:\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n         [655.1 s]\n```\nI am still merging the patch, but can we get this issue fixed next?\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T04:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ One thing I notice with this patch is that sr.py now takes around 650 seconds in
 sage -t -long devel/sage/sage/crypto/mq/sr.py
          [655.1 s]
 ```
-
 I am still merging the patch, but can we get this issue fixed next?
 
 Cheers,
@@ -286,7 +283,7 @@ See #4186 for a fix.
 archive/issue_comments_029205.json:
 ```json
 {
-    "body": "Replying to [comment:9 robertwb]:\n> Interestingly enough, on my machine `sage -t sage/crypto/mq/sr.py`, so it is just the (single) long doctest that provides the slowdown. \n\nYeah, in that doctest we do some wacky coercion into some mv polynomial ring with a couple thousand variables, so this is really an interesting test case. This was first discussed at SD6 in Bristol, so it just shows how much the coercion re-re-write has been an interesting road :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 robertwb]:\n> Interestingly enough, on my machine `sage -t sage/crypto/mq/sr.py`, so it is just the (single) long doctest that provides the slowdown. \n\n\nYeah, in that doctest we do some wacky coercion into some mv polynomial ring with a couple thousand variables, so this is really an interesting test case. This was first discussed at SD6 in Bristol, so it just shows how much the coercion re-re-write has been an interesting road :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T08:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
@@ -297,6 +294,7 @@ archive/issue_comments_029205.json:
 
 Replying to [comment:9 robertwb]:
 > Interestingly enough, on my machine `sage -t sage/crypto/mq/sr.py`, so it is just the (single) long doctest that provides the slowdown. 
+
 
 Yeah, in that doctest we do some wacky coercion into some mv polynomial ring with a couple thousand variables, so this is really an interesting test case. This was first discussed at SD6 in Bristol, so it just shows how much the coercion re-re-write has been an interesting road :)
 

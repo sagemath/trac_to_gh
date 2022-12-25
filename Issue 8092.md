@@ -112,7 +112,7 @@ The attached patch seems to work for me.  `DOT_SAGE/init.sage` is equivalent to
 archive/issue_comments_070788.json:
 ```json
 {
-    "body": "Oops!\n\n```\nexcept KeyError, IOError:\n```\n\nshould be\n\n```\nexcept (KeyError, IOError):\n```\n\n\nThis is one of those very annoying tricky mistakes people make with Python exceptions...",
+    "body": "Oops!\n\n```\nexcept KeyError, IOError:\n```\nshould be\n\n```\nexcept (KeyError, IOError):\n```\n\nThis is one of those very annoying tricky mistakes people make with Python exceptions...",
     "created_at": "2010-01-27T18:04:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8092",
     "type": "issue_comment",
@@ -126,13 +126,11 @@ Oops!
 ```
 except KeyError, IOError:
 ```
-
 should be
 
 ```
 except (KeyError, IOError):
 ```
-
 
 This is one of those very annoying tricky mistakes people make with Python exceptions...
 

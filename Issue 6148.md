@@ -3,7 +3,7 @@
 archive/issues_006148.json:
 ```json
 {
-    "body": "In sage-4.0.rc1 if I define:\n\n\n\n```\nsage: r(u) = floor(u) - 2*floor(u/2)\nsage: s(u) = ceil(u) - 2*ceil(u/2)\n```\n\n\nThe following gives an incorrect plot:\n\n\n```\nsage: plot(r, (0, 10))\n```\n\n\nbut\n\n\n```\nsage: plot([r], (0, 10))\n```\n\n\ngives the correct plot.\n\nFor ceil it is even worse\n\n\n```\nsage: plot([s], (0, 10))\n```\n\n\ngives the correct plot, but\n\n\n```\nsage: plot(s, (0, 10))\n```\n\n\ngives a runtime error:\n\n\n```\nRuntimeError: maximum recursion depth exceeded\n```\n\n\nAll of this works correctly in sage-3.4.2, so it is probably\nrelated to the new symbolics.\n\nAdditionally\n\n\n```\nsage: r(0)\n-2*floor(0)\n```\n\n\nbut\n\n```\nsage: s(0)\n0\n```\n\n\nas expected.\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6148\n\n",
+    "body": "In sage-4.0.rc1 if I define:\n\n\n```\nsage: r(u) = floor(u) - 2*floor(u/2)\nsage: s(u) = ceil(u) - 2*ceil(u/2)\n```\n\nThe following gives an incorrect plot:\n\n```\nsage: plot(r, (0, 10))\n```\n\nbut\n\n```\nsage: plot([r], (0, 10))\n```\n\ngives the correct plot.\n\nFor ceil it is even worse\n\n```\nsage: plot([s], (0, 10))\n```\n\ngives the correct plot, but\n\n```\nsage: plot(s, (0, 10))\n```\n\ngives a runtime error:\n\n```\nRuntimeError: maximum recursion depth exceeded\n```\n\nAll of this works correctly in sage-3.4.2, so it is probably\nrelated to the new symbolics.\n\nAdditionally\n\n```\nsage: r(0)\n-2*floor(0)\n```\n\nbut\n\n```\nsage: s(0)\n0\n```\n\nas expected.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6148\n\n",
     "created_at": "2009-05-28T12:27:21Z",
     "labels": [
         "component: symbolics",
@@ -19,66 +19,52 @@ archive/issues_006148.json:
 In sage-4.0.rc1 if I define:
 
 
-
 ```
 sage: r(u) = floor(u) - 2*floor(u/2)
 sage: s(u) = ceil(u) - 2*ceil(u/2)
 ```
 
-
 The following gives an incorrect plot:
-
 
 ```
 sage: plot(r, (0, 10))
 ```
 
-
 but
-
 
 ```
 sage: plot([r], (0, 10))
 ```
 
-
 gives the correct plot.
 
 For ceil it is even worse
-
 
 ```
 sage: plot([s], (0, 10))
 ```
 
-
 gives the correct plot, but
-
 
 ```
 sage: plot(s, (0, 10))
 ```
 
-
 gives a runtime error:
-
 
 ```
 RuntimeError: maximum recursion depth exceeded
 ```
-
 
 All of this works correctly in sage-3.4.2, so it is probably
 related to the new symbolics.
 
 Additionally
 
-
 ```
 sage: r(0)
 -2*floor(0)
 ```
-
 
 but
 
@@ -87,9 +73,7 @@ sage: s(0)
 0
 ```
 
-
 as expected.
-
 
 ```
 

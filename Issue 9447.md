@@ -71,7 +71,7 @@ Changing component from algebra to misc.
 archive/issue_comments_090384.json:
 ```json
 {
-    "body": "These all seem to be gone in `5.9.beta1`:\n\n```\ntravis@travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R \"except:\" .\n./numerical/backends/glpk_backend.cpp:            /*except:*/ {\n./structure/list_clone_timings_cy.c:        /*except:*/ {\n./plot/plot3d/bugs.txt:        except:       # TODO -- this would catch control-C,etc. -- FIX THIS TO CATCH WHAT IS RAISED!!!!\n./libs/singular/function.cpp:        /*except:*/ {\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n0\n```\n",
+    "body": "These all seem to be gone in `5.9.beta1`:\n\n```\ntravis@travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R \"except:\" .\n./numerical/backends/glpk_backend.cpp:            /*except:*/ {\n./structure/list_clone_timings_cy.c:        /*except:*/ {\n./plot/plot3d/bugs.txt:        except:       # TODO -- this would catch control-C,etc. -- FIX THIS TO CATCH WHAT IS RAISED!!!!\n./libs/singular/function.cpp:        /*except:*/ {\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n0\n```",
     "created_at": "2013-04-01T19:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ travis@travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R "except:
 sage: len(search_src("except:",interact=False).splitlines())
 0
 ```
-
 
 
 

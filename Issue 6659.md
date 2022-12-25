@@ -55,7 +55,7 @@ Robert or Rob, can one of you review this so it can go into 4.1.1?
 archive/issue_comments_054563.json:
 ```json
 {
-    "body": "An example of a speedup:\n\nBEFORE:\n\n\n```\nsage: a=random_matrix(GF(2), 50000, density=0.0001,sparse=True)\nsage: len(a.nonzero_positions())\n125063\nsage: c=DiGraph(50000)\nsage: c.add_edges(a.nonzero_positions())\nsage: %time\nsage: e=c.cores(with_labels=True)\nCPU time: 429.14 s,  Wall time: 430.89 s\n```\n\n\nAFTER:\n\n\n```\nsage: d=c.cores(with_labels=True)\nCPU time: 1.86 s,  Wall time: 1.86 s\nsage: e==d\nTrue\n```\n",
+    "body": "An example of a speedup:\n\nBEFORE:\n\n```\nsage: a=random_matrix(GF(2), 50000, density=0.0001,sparse=True)\nsage: len(a.nonzero_positions())\n125063\nsage: c=DiGraph(50000)\nsage: c.add_edges(a.nonzero_positions())\nsage: %time\nsage: e=c.cores(with_labels=True)\nCPU time: 429.14 s,  Wall time: 430.89 s\n```\n\nAFTER:\n\n```\nsage: d=c.cores(with_labels=True)\nCPU time: 1.86 s,  Wall time: 1.86 s\nsage: e==d\nTrue\n```",
     "created_at": "2009-07-30T09:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ An example of a speedup:
 
 BEFORE:
 
-
 ```
 sage: a=random_matrix(GF(2), 50000, density=0.0001,sparse=True)
 sage: len(a.nonzero_positions())
@@ -80,9 +79,7 @@ sage: e=c.cores(with_labels=True)
 CPU time: 429.14 s,  Wall time: 430.89 s
 ```
 
-
 AFTER:
-
 
 ```
 sage: d=c.cores(with_labels=True)
@@ -90,7 +87,6 @@ CPU time: 1.86 s,  Wall time: 1.86 s
 sage: e==d
 True
 ```
-
 
 
 

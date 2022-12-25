@@ -79,7 +79,7 @@ I don't really know what makes it slow. I suspect the use of "hash" is costly bu
 archive/issue_comments_038813.json:
 ```json
 {
-    "body": "Replying to [comment:2 ylchapuy]:\n> I don't really know what makes it slow. I suspect the use of \"hash\" is costly but I see no other way to partition generically a group in approximately equal size chunks.\n\nThat is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.",
+    "body": "Replying to [comment:2 ylchapuy]:\n> I don't really know what makes it slow. I suspect the use of \"hash\" is costly but I see no other way to partition generically a group in approximately equal size chunks.\n\n\nThat is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.",
     "created_at": "2009-01-25T17:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -91,6 +91,7 @@ archive/issue_comments_038813.json:
 Replying to [comment:2 ylchapuy]:
 > I don't really know what makes it slow. I suspect the use of "hash" is costly but I see no other way to partition generically a group in approximately equal size chunks.
 
+
 That is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.
 
 
@@ -100,7 +101,7 @@ That is probably right.  It might be worth putting in a comment (or a docstring 
 archive/issue_comments_038814.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> Replying to [comment:2 ylchapuy]:\n> > I don't really know what makes it slow. I suspect the use of \"hash\" is costly but I see no other way to partition generically a group in approximately equal size chunks.\n> \n> That is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.\n\npatch modified to adress the above comment. The hash function is now a parameter of the pollard_rho function to give future developers an easy way to customize it.",
+    "body": "Replying to [comment:3 cremona]:\n> Replying to [comment:2 ylchapuy]:\n> > I don't really know what makes it slow. I suspect the use of \"hash\" is costly but I see no other way to partition generically a group in approximately equal size chunks.\n\n> \n> That is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.\n\n\npatch modified to adress the above comment. The hash function is now a parameter of the pollard_rho function to give future developers an easy way to customize it.",
     "created_at": "2009-01-25T18:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -112,8 +113,10 @@ archive/issue_comments_038814.json:
 Replying to [comment:3 cremona]:
 > Replying to [comment:2 ylchapuy]:
 > > I don't really know what makes it slow. I suspect the use of "hash" is costly but I see no other way to partition generically a group in approximately equal size chunks.
+
 > 
 > That is probably right.  It might be worth putting in a comment (or a docstring sentence aimed at future developers) saying that the efficiency of the functions depends on having a fast hash.
+
 
 patch modified to adress the above comment. The hash function is now a parameter of the pollard_rho function to give future developers an easy way to customize it.
 
@@ -154,7 +157,7 @@ None of these is at all serious, and think this additoin is basically very good.
 archive/issue_comments_038816.json:
 ```json
 {
-    "body": "a patch is on the way. I also removed to debug printings I forgot and added my authorship. \n\nConcerning comparison, the benefit of Pollard rho algorithm comes only with quite big examples and I don't think it's a good idea for doctests. Here's one example.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: get_memory_usage()\n113.9765625\nsage: F.<a>=GF(2^118)\nsage: g=F.multiplicative_generator()\nsage: u=g^15726718062461913153073925660344578\nsage: time discrete_log(u,g,algorithm=\"rho\")\nCPU times: user 56.06 s, sys: 0.20 s, total: 56.26 s\nWall time: 56.39 s\n15726718062461913153073925660344578\nsage: get_memory_usage()\n116.03515625\nsage: time discrete_log(u,g,algorithm=\"bsgs\")\nCPU times: user 46.74 s, sys: 0.54 s, total: 47.29 s\nWall time: 47.47 s\n15726718062461913153073925660344578\nsage: get_memory_usage()\n392.89453125\n```\n\nactually, Pollard rho is not so slow :)",
+    "body": "a patch is on the way. I also removed to debug printings I forgot and added my authorship. \n\nConcerning comparison, the benefit of Pollard rho algorithm comes only with quite big examples and I don't think it's a good idea for doctests. Here's one example.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: get_memory_usage()\n113.9765625\nsage: F.<a>=GF(2^118)\nsage: g=F.multiplicative_generator()\nsage: u=g^15726718062461913153073925660344578\nsage: time discrete_log(u,g,algorithm=\"rho\")\nCPU times: user 56.06 s, sys: 0.20 s, total: 56.26 s\nWall time: 56.39 s\n15726718062461913153073925660344578\nsage: get_memory_usage()\n116.03515625\nsage: time discrete_log(u,g,algorithm=\"bsgs\")\nCPU times: user 46.74 s, sys: 0.54 s, total: 47.29 s\nWall time: 47.47 s\n15726718062461913153073925660344578\nsage: get_memory_usage()\n392.89453125\n```\nactually, Pollard rho is not so slow :)",
     "created_at": "2009-01-26T08:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -189,7 +192,6 @@ Wall time: 47.47 s
 sage: get_memory_usage()
 392.89453125
 ```
-
 actually, Pollard rho is not so slow :)
 
 
@@ -235,7 +237,7 @@ if someone reviews this patch, he might have a look at #5112 implementing Pollar
 archive/issue_comments_038819.json:
 ```json
 {
-    "body": "I am having trouble applying the new patch.  I have a 3.3.alpha2 build, so #5088 is already merged.  I apply trac-5098.patch ok.  Then I apply trac-5098-review.patch but get several hunks failing.\n\nThis might just be me being stupid, so it would be good if someone else tried.\n\nWhile I am here though, you did not quite understand my third point in the original review:  I did not mean that a new doctest should illustrate the greater efficiency (or not) of the new algorithm, but it should at least illustrate how to use the new parameter.  e.g. take one of the existing examples and compute it bothe ways and check that they are equal:\n\n```\n        sage: F.<a>=GF(2^63)\n        sage: g=F.gen()\n        sage: u=g**123456789\n        sage: discrete_log(u,g,algorithm='bsgs') == discrete_log(u,g,algorithm='rho')\n        True\n```\n",
+    "body": "I am having trouble applying the new patch.  I have a 3.3.alpha2 build, so #5088 is already merged.  I apply trac-5098.patch ok.  Then I apply trac-5098-review.patch but get several hunks failing.\n\nThis might just be me being stupid, so it would be good if someone else tried.\n\nWhile I am here though, you did not quite understand my third point in the original review:  I did not mean that a new doctest should illustrate the greater efficiency (or not) of the new algorithm, but it should at least illustrate how to use the new parameter.  e.g. take one of the existing examples and compute it bothe ways and check that they are equal:\n\n```\n        sage: F.<a>=GF(2^63)\n        sage: g=F.gen()\n        sage: u=g**123456789\n        sage: discrete_log(u,g,algorithm='bsgs') == discrete_log(u,g,algorithm='rho')\n        True\n```",
     "created_at": "2009-01-28T20:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -257,7 +259,6 @@ While I am here though, you did not quite understand my third point in the origi
         sage: discrete_log(u,g,algorithm='bsgs') == discrete_log(u,g,algorithm='rho')
         True
 ```
-
 
 
 
@@ -305,7 +306,7 @@ Thanks -- I am quite happy now, and give this a positive review!  Now I will go 
 archive/issue_comments_038822.json:
 ```json
 {
-    "body": "The latest patch causes the following doctest failure: From\n\n```\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/rings/integer_mod.pyx\", line 444:\n   sage: sage.groups.generic.discrete_log(a,b)\nExpected:\n   Traceback (most recent call last):\n   ...\n   ZeroDivisionError: Inverse does not exist.\n```\n\nwe get to\n\n```\nArithmeticError: multiplicative order of 4 not defined since it is not a unit modulo 100\n```\n\n\nWilliam doesn't like either one, but he is about to comment himself.\n\nCheers,\n\nMichael",
+    "body": "The latest patch causes the following doctest failure: From\n\n```\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/rings/integer_mod.pyx\", line 444:\n   sage: sage.groups.generic.discrete_log(a,b)\nExpected:\n   Traceback (most recent call last):\n   ...\n   ZeroDivisionError: Inverse does not exist.\n```\nwe get to\n\n```\nArithmeticError: multiplicative order of 4 not defined since it is not a unit modulo 100\n```\n\nWilliam doesn't like either one, but he is about to comment himself.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T02:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -324,13 +325,11 @@ Expected:
    ...
    ZeroDivisionError: Inverse does not exist.
 ```
-
 we get to
 
 ```
 ArithmeticError: multiplicative order of 4 not defined since it is not a unit modulo 100
 ```
-
 
 William doesn't like either one, but he is about to comment himself.
 
@@ -345,7 +344,7 @@ Michael
 archive/issue_comments_038823.json:
 ```json
 {
-    "body": "\n```\n William:  Hmm.\nBetter would be a statement that the discrete log doesn't exist.\nOr that it might but the algorithm implemented can't tell.\nI don't like either error.\n me:  Well, I will comment on the ticket and then you can comment there on the record.\n William:  The log does exist.\nso it would be much better to get a NotImplementedError when things go wrong.\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n William:  Hmm.\nBetter would be a statement that the discrete log doesn't exist.\nOr that it might but the algorithm implemented can't tell.\nI don't like either error.\n me:  Well, I will comment on the ticket and then you can comment there on the record.\n William:  The log does exist.\nso it would be much better to get a NotImplementedError when things go wrong.\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T02:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -353,7 +352,6 @@ archive/issue_comments_038823.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
  William:  Hmm.
@@ -364,7 +362,6 @@ I don't like either error.
  William:  The log does exist.
 so it would be much better to get a NotImplementedError when things go wrong.
 ```
-
 
 Cheers,
 
@@ -543,7 +540,7 @@ What should I do to make those patches the right way ?
 archive/issue_comments_038831.json:
 ```json
 {
-    "body": "Replying to [comment:22 ylchapuy]:\n> First: The patches to apply are the last two only; is there a way to remove the other ones?\n\nRight now only trac admins can delete patches. I will delete all but the two last patches shortly.\n\nSome times it is interesting for credit and historic purposes to keep old patches around, but in this case it should be no problem to delete them.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:22 ylchapuy]:\n> First: The patches to apply are the last two only; is there a way to remove the other ones?\n\n\nRight now only trac admins can delete patches. I will delete all but the two last patches shortly.\n\nSome times it is interesting for credit and historic purposes to keep old patches around, but in this case it should be no problem to delete them.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T14:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -554,6 +551,7 @@ archive/issue_comments_038831.json:
 
 Replying to [comment:22 ylchapuy]:
 > First: The patches to apply are the last two only; is there a way to remove the other ones?
+
 
 Right now only trac admins can delete patches. I will delete all but the two last patches shortly.
 
@@ -570,7 +568,7 @@ Michael
 archive/issue_comments_038832.json:
 ```json
 {
-    "body": "I have some issues with trac-5098-doctest.patch:\n\n1. There should be a doctest that illustrates every single exception that can be raised.  For example this patch adds\n\n```\nraise NotImplementedError, \"The current implementation of Pollard Rho algorithm needs to have (a multiple of) the order of the base\" \n```\n\non line 543, but there is no doctest that illustrates this.\n\n2. Line 758, The %s\"%base business is bad.  \n\n```\nraise NotImplementedError, \"we currently need to know the order of the base %s\"%(base) }}}\nI used to write a lot of exceptions like this, since for Magma we did that.  But in Magma, they aren't exceptions that can be caught -- any single exception stops the program.  In Sage, exceptions can be caught and occur as part of the normal flow of execution of a program.  Once in 2006 there was a simple calculation David Harvey was doing, and he was very confused because it was taking several minutes to do something trivial.  It turned out this was because in the course of the computation an exception was raised and caught (e.g., because of some coercion model stuff), and the exception was written like the one before -- it was a string that printed the element involved in the coercion, and the str(...) conversion of the element took *minutes*.   That was what dominated the calculation.  As a result I realized that I had completely messed up in using that pattern for implementing exceptions in Sage, and had to go through the whole codebase and rewrite all such exceptions. \n\nJust to hammer this home, consider \n{{{\nsage: a = Mod(16, 100); b = Mod(-4,10^10^7)\nsage: try: w = sage.groups.generic.discrete_log(a,b)\n      except: pass\n[hang forever!]\n}}}\nand if it ever did come back, imagine what that exception would look like!",
+    "body": "I have some issues with trac-5098-doctest.patch:\n\n1. There should be a doctest that illustrates every single exception that can be raised.  For example this patch adds\n\n```\nraise NotImplementedError, \"The current implementation of Pollard Rho algorithm needs to have (a multiple of) the order of the base\" \n```\non line 543, but there is no doctest that illustrates this.\n\n2. Line 758, The %s\"%base business is bad.  \n\n```\nraise NotImplementedError, \"we currently need to know the order of the base %s\"%(base) }}}\nI used to write a lot of exceptions like this, since for Magma we did that.  But in Magma, they aren't exceptions that can be caught -- any single exception stops the program.  In Sage, exceptions can be caught and occur as part of the normal flow of execution of a program.  Once in 2006 there was a simple calculation David Harvey was doing, and he was very confused because it was taking several minutes to do something trivial.  It turned out this was because in the course of the computation an exception was raised and caught (e.g., because of some coercion model stuff), and the exception was written like the one before -- it was a string that printed the element involved in the coercion, and the str(...) conversion of the element took *minutes*.   That was what dominated the calculation.  As a result I realized that I had completely messed up in using that pattern for implementing exceptions in Sage, and had to go through the whole codebase and rewrite all such exceptions. \n\nJust to hammer this home, consider \n{{{\nsage: a = Mod(16, 100); b = Mod(-4,10^10^7)\nsage: try: w = sage.groups.generic.discrete_log(a,b)\n      except: pass\n[hang forever!]\n}}}\nand if it ever did come back, imagine what that exception would look like!",
     "created_at": "2009-02-15T07:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -586,7 +584,6 @@ I have some issues with trac-5098-doctest.patch:
 ```
 raise NotImplementedError, "The current implementation of Pollard Rho algorithm needs to have (a multiple of) the order of the base" 
 ```
-
 on line 543, but there is no doctest that illustrates this.
 
 2. Line 758, The %s"%base business is bad.  
@@ -611,7 +608,7 @@ and if it ever did come back, imagine what that exception would look like!
 archive/issue_comments_038833.json:
 ```json
 {
-    "body": "Here's some irc chatter about the \"%s\"%base exception business. There are perhaps thousands (?) of instances of this in Sage now.\n\n```\n23:46 < wstein> They can be \"silent killers\" :-)\n23:46 < mabs> wstein: can an opinion on the broken combinat pickles?\n23:47 < mabs> can -> got\n23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep \"raise\" \"%s\" |wc -l\n23:48 < wstein> 6750\n23:48 < mabs> *OUCH*\n23:48 < wstein> It's not always bad.\n23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep \"raise\" \"%s\" |wc -l\n23:48 < wstein> Oops.\n23:49 < wstein> sage: search_src(\"raise\",\"%s\") # also shows them.\n23:49 < wstein> It's only the ones that have elements that could easily be large in the exception that\n23:49 < wstein> are a danger.\n23:49 < wstein> But a quick glance suggests there are probably thousands of these still.\n23:50 < mabs> Yes, I thought the comment was good since I never knew about that problem.\n23:50 < wstein> Especially in the combinat and coding theory code...\n23:50 < mabs> :)\n23:50 < wstein> One can just do search_src(\"raise\",\"%s\")\n23:50 < wstein> look to see which exceptions are funny, and quickly craft examples where\n23:50 < wstein> things seem to hang for stupid reasons instead of raising an exception.\n23:51 < wstein> Where hang = create a base-10 string rep for something in memory, then try to display a bazillion characters to screen.\n```\n",
+    "body": "Here's some irc chatter about the \"%s\"%base exception business. There are perhaps thousands (?) of instances of this in Sage now.\n\n```\n23:46 < wstein> They can be \"silent killers\" :-)\n23:46 < mabs> wstein: can an opinion on the broken combinat pickles?\n23:47 < mabs> can -> got\n23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep \"raise\" \"%s\" |wc -l\n23:48 < wstein> 6750\n23:48 < mabs> *OUCH*\n23:48 < wstein> It's not always bad.\n23:48 < wstein> wstein@sage:/space/wstein/sage-3.3.rc0$ ./sage -grep \"raise\" \"%s\" |wc -l\n23:48 < wstein> Oops.\n23:49 < wstein> sage: search_src(\"raise\",\"%s\") # also shows them.\n23:49 < wstein> It's only the ones that have elements that could easily be large in the exception that\n23:49 < wstein> are a danger.\n23:49 < wstein> But a quick glance suggests there are probably thousands of these still.\n23:50 < mabs> Yes, I thought the comment was good since I never knew about that problem.\n23:50 < wstein> Especially in the combinat and coding theory code...\n23:50 < mabs> :)\n23:50 < wstein> One can just do search_src(\"raise\",\"%s\")\n23:50 < wstein> look to see which exceptions are funny, and quickly craft examples where\n23:50 < wstein> things seem to hang for stupid reasons instead of raising an exception.\n23:51 < wstein> Where hang = create a base-10 string rep for something in memory, then try to display a bazillion characters to screen.\n```",
     "created_at": "2009-02-15T07:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -647,13 +644,12 @@ Here's some irc chatter about the "%s"%base exception business. There are perhap
 
 
 
-
 ---
 
 archive/issue_comments_038834.json:
 ```json
 {
-    "body": "A comment by cwitty about my suggestion that every exception should be doctested:\n\n```\n00:07 < cwitty> wstein: re your comment on #5098: I've added exceptions to Sage that I have no idea how \n                to doctest.\n00:07 < wstein> cwitty -- for that patch I think they would all be easy.\n00:07 < wstein> I had that in mind.\n00:07 < cwitty> I sort of suspect that hitting them may require working in a number field of degree \n                several billion, but I'm not positive.\n00:07 < wstein> cwitty -- at least you can give a reason for not doctesting the ones you don't test.\n00:08 < wstein> I don't mean for that to be some absolute rule.\n00:08 < wstein> Just a general guideline.\n00:08 < wstein> But you have a good point.\n00:08 < wstein> I'll paste this to the ticket.\n00:09 < wstein> The last thing I wrote in sage was something involving gap.py and the \"This should \n                never happen\" exception.\n00:09 < wstein> That can't be doctested :-)\n00:09 < wstein> So you're right.\n```\n",
+    "body": "A comment by cwitty about my suggestion that every exception should be doctested:\n\n```\n00:07 < cwitty> wstein: re your comment on #5098: I've added exceptions to Sage that I have no idea how \n                to doctest.\n00:07 < wstein> cwitty -- for that patch I think they would all be easy.\n00:07 < wstein> I had that in mind.\n00:07 < cwitty> I sort of suspect that hitting them may require working in a number field of degree \n                several billion, but I'm not positive.\n00:07 < wstein> cwitty -- at least you can give a reason for not doctesting the ones you don't test.\n00:08 < wstein> I don't mean for that to be some absolute rule.\n00:08 < wstein> Just a general guideline.\n00:08 < wstein> But you have a good point.\n00:08 < wstein> I'll paste this to the ticket.\n00:09 < wstein> The last thing I wrote in sage was something involving gap.py and the \"This should \n                never happen\" exception.\n00:09 < wstein> That can't be doctested :-)\n00:09 < wstein> So you're right.\n```",
     "created_at": "2009-02-15T08:14:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5098",
     "type": "issue_comment",
@@ -681,7 +677,6 @@ A comment by cwitty about my suggestion that every exception should be doctested
 00:09 < wstein> That can't be doctested :-)
 00:09 < wstein> So you're right.
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007054.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n> 16:42 < williamstein> On \"upload a file\" at the bottom it should say \"Upload or Create File\" not just \"Upload\".\n\n\n> 16:42 < williamstein> trivial template change\n\nIssue created by migration from https://trac.sagemath.org/ticket/7054\n\n",
     "created_at": "2009-09-28T17:56:32Z",
     "labels": [
         "component: algebra",
@@ -23,6 +23,7 @@ CC:  @williamstein
 Keywords: sagenb notebook
 
 > 16:42 < williamstein> On "upload a file" at the bottom it should say "Upload or Create File" not just "Upload".
+
 
 > 16:42 < williamstein> trivial template change
 

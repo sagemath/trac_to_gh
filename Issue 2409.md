@@ -3,7 +3,7 @@
 archive/issues_002409.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe command \n\n```\nsage: plot(x+1,(x,1,4))\n```\n\nproduces a very nice line with slope 1 (and I love the syntax which I think is a moderately recent improvement!).\n\nBy analogy,\n\n```\nsage: plot(1,(x,1,4))\n```\n\nshould produce a horizontal line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2409\n\n",
+    "body": "Assignee: @williamstein\n\nThe command \n\n```\nsage: plot(x+1,(x,1,4))\n```\nproduces a very nice line with slope 1 (and I love the syntax which I think is a moderately recent improvement!).\n\nBy analogy,\n\n```\nsage: plot(1,(x,1,4))\n```\nshould produce a horizontal line.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2409\n\n",
     "created_at": "2008-03-06T20:33:24Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ The command
 ```
 sage: plot(x+1,(x,1,4))
 ```
-
 produces a very nice line with slope 1 (and I love the syntax which I think is a moderately recent improvement!).
 
 By analogy,
@@ -31,7 +30,6 @@ By analogy,
 ```
 sage: plot(1,(x,1,4))
 ```
-
 should produce a horizontal line.
 
 

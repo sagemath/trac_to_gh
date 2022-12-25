@@ -3,7 +3,7 @@
 archive/issues_005857.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nE.list() doesn't work, but list(E) works fine.\n\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
+    "body": "Assignee: @williamstein\n\nE.list() doesn't work, but list(E) works fine.\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
     "created_at": "2009-04-22T15:47:55Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_005857.json:
 Assignee: @williamstein
 
 E.list() doesn't work, but list(E) works fine.
-
 
 ```
 sage: E = EllipticCurve(GF(11), [1,2])
@@ -40,7 +39,6 @@ sage: list(E)
  (2 : 1 : 1),
 ...
 ```
-
 
 See also #5856
 

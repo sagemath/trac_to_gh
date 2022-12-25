@@ -163,7 +163,7 @@ Jaap
 archive/issue_comments_015973.json:
 ```json
 {
-    "body": "Replying to [comment:4 jsp]:\n> Sorry for the duplicate! I missed that. But I could not resist to send my patch!\n> \n> What do you think?\n> \n> Cheers,\n> \n> Jaap\n> \n\nHi Jaap,\nI'm willing to sacrifice a little elegance for speed gains. My function seems to be faster so far:\n\n```\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.42 s, sys: 0.13 s, total: 0.55 s\nWall time: 0.55\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.48 s, sys: 0.05 s, total: 0.53 s\nWall time: 0.54\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.49 s, sys: 0.05 s, total: 0.54 s\nWall time: 0.53\n```\n\n\nvs\n\n```\nLoading SAGE library. Current Mercurial branch is: jaap\n\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.73 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.74 s, sys: 0.10 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.72 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.83\n```\n\n\nAll times are on sage.math. If you can do better, great :)",
+    "body": "Replying to [comment:4 jsp]:\n> Sorry for the duplicate! I missed that. But I could not resist to send my patch!\n> \n> What do you think?\n> \n> Cheers,\n> \n> Jaap\n> \n\n\nHi Jaap,\nI'm willing to sacrifice a little elegance for speed gains. My function seems to be faster so far:\n\n```\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.42 s, sys: 0.13 s, total: 0.55 s\nWall time: 0.55\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.48 s, sys: 0.05 s, total: 0.53 s\nWall time: 0.54\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.49 s, sys: 0.05 s, total: 0.54 s\nWall time: 0.53\n```\n\nvs\n\n```\nLoading SAGE library. Current Mercurial branch is: jaap\n\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.73 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.74 s, sys: 0.10 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.72 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.83\n```\n\nAll times are on sage.math. If you can do better, great :)",
     "created_at": "2008-03-12T18:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
@@ -181,6 +181,7 @@ Replying to [comment:4 jsp]:
 > 
 > Jaap
 > 
+
 
 Hi Jaap,
 I'm willing to sacrifice a little elegance for speed gains. My function seems to be faster so far:
@@ -200,7 +201,6 @@ sage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));
 CPU times: user 0.49 s, sys: 0.05 s, total: 0.54 s
 Wall time: 0.53
 ```
-
 
 vs
 
@@ -222,7 +222,6 @@ CPU times: user 0.72 s, sys: 0.12 s, total: 0.84 s
 Wall time: 0.83
 ```
 
-
 All times are on sage.math. If you can do better, great :)
 
 
@@ -232,7 +231,7 @@ All times are on sage.math. If you can do better, great :)
 archive/issue_comments_015974.json:
 ```json
 {
-    "body": "Ok, time is money. So I better give a positive review.\n\nOne question before I do so:\nwhy not cdef i an j?\n\n```\n        cdef Py_ssize_t nrows, ncols,i,j,k,r\n\n```\n\n\nAll test in deve/sage/sage/matrix passed.",
+    "body": "Ok, time is money. So I better give a positive review.\n\nOne question before I do so:\nwhy not cdef i an j?\n\n```\n        cdef Py_ssize_t nrows, ncols,i,j,k,r\n\n```\n\nAll test in deve/sage/sage/matrix passed.",
     "created_at": "2008-03-14T13:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
@@ -250,7 +249,6 @@ why not cdef i an j?
         cdef Py_ssize_t nrows, ncols,i,j,k,r
 
 ```
-
 
 All test in deve/sage/sage/matrix passed.
 
@@ -279,7 +277,7 @@ Attachment [2372.patch](tarball://root/attachments/some-uuid/ticket2372/2372.pat
 archive/issue_comments_015976.json:
 ```json
 {
-    "body": "Replying to [comment:6 jsp]:\n> why not cdef i an j?\n> {{{\n>         cdef Py_ssize_t nrows, ncols,i,j,k,r\n> \n> }}}\n\nGood point. I've added these declarations and updated the patch (2372.patch). All tests in sage/matrix pass.",
+    "body": "Replying to [comment:6 jsp]:\n> why not cdef i an j?\n> \n> ```\n>         cdef Py_ssize_t nrows, ncols,i,j,k,r\n> \n> ```\n\n\nGood point. I've added these declarations and updated the patch (2372.patch). All tests in sage/matrix pass.",
     "created_at": "2008-03-14T14:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2372",
     "type": "issue_comment",
@@ -290,10 +288,12 @@ archive/issue_comments_015976.json:
 
 Replying to [comment:6 jsp]:
 > why not cdef i an j?
-> {{{
+> 
+> ```
 >         cdef Py_ssize_t nrows, ncols,i,j,k,r
 > 
-> }}}
+> ```
+
 
 Good point. I've added these declarations and updated the patch (2372.patch). All tests in sage/matrix pass.
 

@@ -3,7 +3,7 @@
 archive/issues_005079.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThis is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.\n\n\n```\n   1.exp() -> RealNumber(1.e)xp()\n   1.rational_reconstruction() -> 1.ational_reconstruction()\n   1.e+10 -> RealNumber(1.e)+10\n   1._xgcd() -> RealNumber(1.)_xgcd()\n```\n\n\nOne patch should do it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5079\n\n",
+    "body": "Assignee: boothby\n\nThis is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.\n\n```\n   1.exp() -> RealNumber(1.e)xp()\n   1.rational_reconstruction() -> 1.ational_reconstruction()\n   1.e+10 -> RealNumber(1.e)+10\n   1._xgcd() -> RealNumber(1.)_xgcd()\n```\n\nOne patch should do it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5079\n\n",
     "created_at": "2009-01-23T22:29:27Z",
     "labels": [
         "component: interfaces",
@@ -20,14 +20,12 @@ Assignee: boothby
 
 This is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.
 
-
 ```
    1.exp() -> RealNumber(1.e)xp()
    1.rational_reconstruction() -> 1.ational_reconstruction()
    1.e+10 -> RealNumber(1.e)+10
    1._xgcd() -> RealNumber(1.)_xgcd()
 ```
-
 
 One patch should do it all.
 
@@ -118,7 +116,7 @@ Note that this depends on #5078 being applied.
 archive/issue_comments_038603.json:
 ```json
 {
-    "body": "This patch causes various test failures all seemingly of the type\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/server/notebook/twist.py\nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/server/notebook/twist.py\", line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[4]>\", line 1, in <module>\n        W = n.new_worksheet_with_title_from_text('Sage', owner='sage')###line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 930, in new_worksheet_with_title_from_text\n        W = self.create_new_worksheet(name, owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 623, in create_new_worksheet\n        auto_publish = False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 248, in __init__\n        self.save_snapshot(owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1640, in save_snapshot\n        E = self.edit_text()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1823, in edit_text\n        t = C.edit_text().strip()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 783, in edit_text\n        s = self.plain_text(ncols, prompts, max_out)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 760, in plain_text\n        out = self.output_text(ncols, raw=True, html=False, allow_interact=False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 1240, in output_text\n        is_interact = self.is_interactive_cell()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 917, in is_interactive_cell\n        s, _ = strip_string_literals(self.input_text())\n    ValueError: too many values to unpack\n**********************************************************************\n```\n\nThe failures are in \n\n```\n\tsage -t -long devel/sage/sage/server/notebook/cell.py # 85 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/worksheet.py # 289 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 19 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes various test failures all seemingly of the type\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/server/notebook/twist.py\nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/server/notebook/twist.py\", line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[4]>\", line 1, in <module>\n        W = n.new_worksheet_with_title_from_text('Sage', owner='sage')###line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 930, in new_worksheet_with_title_from_text\n        W = self.create_new_worksheet(name, owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 623, in create_new_worksheet\n        auto_publish = False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 248, in __init__\n        self.save_snapshot(owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1640, in save_snapshot\n        E = self.edit_text()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1823, in edit_text\n        t = C.edit_text().strip()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 783, in edit_text\n        s = self.plain_text(ncols, prompts, max_out)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 760, in plain_text\n        out = self.output_text(ncols, raw=True, html=False, allow_interact=False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 1240, in output_text\n        is_interact = self.is_interactive_cell()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 917, in is_interactive_cell\n        s, _ = strip_string_literals(self.input_text())\n    ValueError: too many values to unpack\n**********************************************************************\n```\nThe failures are in \n\n```\n\tsage -t -long devel/sage/sage/server/notebook/cell.py # 85 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/worksheet.py # 289 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 19 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T17:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -167,7 +165,6 @@ Exception raised:
     ValueError: too many values to unpack
 **********************************************************************
 ```
-
 The failures are in 
 
 ```
@@ -176,7 +173,6 @@ The failures are in
 	sage -t -long devel/sage/sage/server/notebook/twist.py # 3 doctests failed
 	sage -t -long devel/sage/sage/server/notebook/notebook.py # 19 doctests failed
 ```
-
 
 Cheers,
 
@@ -211,7 +207,7 @@ Michael
 archive/issue_comments_038605.json:
 ```json
 {
-    "body": "Attachment [5079-notebook.patch](tarball://root/attachments/some-uuid/ticket5079/5079-notebook.patch) by boothby created at 2009-01-24 19:51:58\n\nThe above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:\n\n\n\n```\nsage: search_src('strip_string_literals')\nmisc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block \nmisc/preparser.py:def strip_string_literals(code, state=None):\nmisc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', \"b\", 'c', \"d\\\"\"]''')\nmisc/preparser.py:        sage: print strip_string_literals(r'-\"\\\\\\\"\"-\"\\\\\"-')[0]\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"[a, '''b''', c, '']\")\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"code '#' # ccc 't'\"); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('s = \"some'); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('thing\" * 5', state); s\nmisc/preparser.py:        L, literals, quote_state = strip_string_literals(line, quote_state)\nmisc/preparser.py:        contents, literals, state = strip_string_literals(contents)\nmisc/preparser.py:    code, literals, state = strip_string_literals(code)\nserver/notebook/cell.py:from   sage.misc.preparser import strip_string_literals\nserver/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]\n```\n",
+    "body": "Attachment [5079-notebook.patch](tarball://root/attachments/some-uuid/ticket5079/5079-notebook.patch) by boothby created at 2009-01-24 19:51:58\n\nThe above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:\n\n\n```\nsage: search_src('strip_string_literals')\nmisc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block \nmisc/preparser.py:def strip_string_literals(code, state=None):\nmisc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', \"b\", 'c', \"d\\\"\"]''')\nmisc/preparser.py:        sage: print strip_string_literals(r'-\"\\\\\\\"\"-\"\\\\\"-')[0]\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"[a, '''b''', c, '']\")\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"code '#' # ccc 't'\"); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('s = \"some'); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('thing\" * 5', state); s\nmisc/preparser.py:        L, literals, quote_state = strip_string_literals(line, quote_state)\nmisc/preparser.py:        contents, literals, state = strip_string_literals(contents)\nmisc/preparser.py:    code, literals, state = strip_string_literals(code)\nserver/notebook/cell.py:from   sage.misc.preparser import strip_string_literals\nserver/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]\n```",
     "created_at": "2009-01-24T19:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
@@ -223,7 +219,6 @@ archive/issue_comments_038605.json:
 Attachment [5079-notebook.patch](tarball://root/attachments/some-uuid/ticket5079/5079-notebook.patch) by boothby created at 2009-01-24 19:51:58
 
 The above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:
-
 
 
 ```
@@ -243,7 +238,6 @@ misc/preparser.py:    code, literals, state = strip_string_literals(code)
 server/notebook/cell.py:from   sage.misc.preparser import strip_string_literals
 server/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]
 ```
-
 
 
 

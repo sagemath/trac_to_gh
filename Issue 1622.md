@@ -128,7 +128,7 @@ python-gnutls
 archive/issue_comments_010302.json:
 ```json
 {
-    "body": "Replying to [comment:4 yi]:\n> Also, here is a list of related packages that need to be updated as well:\n> \n> opencdk\n> libgcrypt\n> libgpg-error\n> python-gnutls\n\nYou are correct that once we update GNUTLS we at least need to update OpenCDK, but I will also update the others in one swoop. I will do this after I switch python to ucs4 though, which is the big goal for alpha2.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 yi]:\n> Also, here is a list of related packages that need to be updated as well:\n> \n> opencdk\n> libgcrypt\n> libgpg-error\n> python-gnutls\n\n\nYou are correct that once we update GNUTLS we at least need to update OpenCDK, but I will also update the others in one swoop. I will do this after I switch python to ucs4 though, which is the big goal for alpha2.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-11T10:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1622",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ Replying to [comment:4 yi]:
 > libgcrypt
 > libgpg-error
 > python-gnutls
+
 
 You are correct that once we update GNUTLS we at least need to update OpenCDK, but I will also update the others in one swoop. I will do this after I switch python to ucs4 though, which is the big goal for alpha2.
 

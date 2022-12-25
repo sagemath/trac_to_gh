@@ -3,7 +3,7 @@
 archive/issues_000821.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nChange K.ideal to K.fractional_ideal for number fields. \n\n\n```\nOn 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:\n> \n> I think what you're saying makes sense. Maybe introduce a method\n> fractionalideal, specific to number fields?\n\nIt should be \n\n    K.fractional_ideal(...)\n\nI agree.  I've opened a trac ticket (and accepted it):\n   \n\n> \n> Soroosh\n> On Wed, Oct 03, 2007 at 10:44:49AM -0400, David Harvey wrote:\n> > I find this very confusing:\n> >\n> > sage: F.<a> = QuadraticField(-5)\n> > sage: F.ideal(6)\n> > Fractional ideal (6) of Number Field in a with defining polynomial\n> > x^2 + 5\n> >\n> > sage: QQ.ideal(6)\n> > Principal ideal (1) of Rational Field\n> >\n> > This means that if I write code that can work over an arbitrary\n> > number field, I have to write special cases for Q. I think it's a bad\n> > idea to use the name \"ideal\" for the method that gives an ideal of\n> > the ring of integers. I think we should give this a different name.\n> >\n> > Any thoughts?\n> >\n> > david\n> >\n> >\n> >\n> \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/821\n\n",
+    "body": "Assignee: @williamstein\n\nChange K.ideal to K.fractional_ideal for number fields. \n\n```\nOn 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:\n> \n> I think what you're saying makes sense. Maybe introduce a method\n> fractionalideal, specific to number fields?\n\nIt should be \n\n    K.fractional_ideal(...)\n\nI agree.  I've opened a trac ticket (and accepted it):\n   \n\n> \n> Soroosh\n> On Wed, Oct 03, 2007 at 10:44:49AM -0400, David Harvey wrote:\n> > I find this very confusing:\n> >\n> > sage: F.<a> = QuadraticField(-5)\n> > sage: F.ideal(6)\n> > Fractional ideal (6) of Number Field in a with defining polynomial\n> > x^2 + 5\n> >\n> > sage: QQ.ideal(6)\n> > Principal ideal (1) of Rational Field\n> >\n> > This means that if I write code that can work over an arbitrary\n> > number field, I have to write special cases for Q. I think it's a bad\n> > idea to use the name \"ideal\" for the method that gives an ideal of\n> > the ring of integers. I think we should give this a different name.\n> >\n> > Any thoughts?\n> >\n> > david\n> >\n> >\n> >\n> \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/821\n\n",
     "created_at": "2007-10-04T04:59:48Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_000821.json:
 Assignee: @williamstein
 
 Change K.ideal to K.fractional_ideal for number fields. 
-
 
 ```
 On 10/3/07, Soroosh Yazdani <syazdani@math.berkeley.edu> wrote:
@@ -61,7 +60,6 @@ I agree.  I've opened a trac ticket (and accepted it):
 > 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/821
 
@@ -128,7 +126,7 @@ I think this has been done already; in sage-2.10.1, number fields have a method 
 archive/issue_comments_005077.json:
 ```json
 {
-    "body": "\n```\n10:47 < mhansen_> wstein: Is #821 fixed?\n10:49 < wstein> mhansen_ -- 821 is not fixed.\n10:49 < wstein> I think it would be trivial to fix.\n10:49 < wstein> I would be ok with just making it so this works:\n10:49 < wstein> sage: QQ.fractional_ideal(6)\n10:50 < wstein> I.e., adding fractional_ideal = ideal in the rational_field.py code.\n10:50 < wstein> Then the ticket could be closed.\n\n```\n",
+    "body": "```\n10:47 < mhansen_> wstein: Is #821 fixed?\n10:49 < wstein> mhansen_ -- 821 is not fixed.\n10:49 < wstein> I think it would be trivial to fix.\n10:49 < wstein> I would be ok with just making it so this works:\n10:49 < wstein> sage: QQ.fractional_ideal(6)\n10:50 < wstein> I.e., adding fractional_ideal = ideal in the rational_field.py code.\n10:50 < wstein> Then the ticket could be closed.\n\n```",
     "created_at": "2008-02-27T18:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
@@ -136,7 +134,6 @@ archive/issue_comments_005077.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 10:47 < mhansen_> wstein: Is #821 fixed?
@@ -151,13 +148,12 @@ archive/issue_comments_005077.json:
 
 
 
-
 ---
 
 archive/issue_comments_005078.json:
 ```json
 {
-    "body": "It might also be good to deprecate the ideal function for a number field completely, since it is confusing that the result is not an ideal of the number field, but a fractional ideal of the ring of integers.  We could fully support ideals of K, but that could be really confusing and bug prone.  The best thing would be to make\n\n```\n def ideal(self, ...):\n```\n\nfor number fields raise a clear exception (ValueError or NotImplementedError) that said \"use fractional_ideal\" instead.",
+    "body": "It might also be good to deprecate the ideal function for a number field completely, since it is confusing that the result is not an ideal of the number field, but a fractional ideal of the ring of integers.  We could fully support ideals of K, but that could be really confusing and bug prone.  The best thing would be to make\n\n```\n def ideal(self, ...):\n```\nfor number fields raise a clear exception (ValueError or NotImplementedError) that said \"use fractional_ideal\" instead.",
     "created_at": "2008-02-27T18:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
@@ -171,7 +167,6 @@ It might also be good to deprecate the ideal function for a number field complet
 ```
  def ideal(self, ...):
 ```
-
 for number fields raise a clear exception (ValueError or NotImplementedError) that said "use fractional_ideal" instead.
 
 
@@ -248,7 +243,7 @@ archive/issue_events_002318.json:
 archive/issue_comments_005079.json:
 ```json
 {
-    "body": "Fixed some time before Sage 3.0.rc0: \n\n```\n[07:00] <mabshoff> wstein: what is your take on #821 ?\n[07:10] <wstein> close #821.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Fixed some time before Sage 3.0.rc0: \n\n```\n[07:00] <mabshoff> wstein: what is your take on #821 ?\n[07:10] <wstein> close #821.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T05:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/821",
     "type": "issue_comment",
@@ -263,7 +258,6 @@ Fixed some time before Sage 3.0.rc0:
 [07:00] <mabshoff> wstein: what is your take on #821 ?
 [07:10] <wstein> close #821.
 ```
-
 
 Cheers,
 

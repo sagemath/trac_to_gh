@@ -3,7 +3,7 @@
 archive/issues_001104.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: ideal arguments\n\n\n```\nsage: Ideal(3, 5)\nPrincipal ideal (3) of Integer Ring\n```\n\n\nMisleading!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1104\n\n",
+    "body": "Assignee: somebody\n\nKeywords: ideal arguments\n\n```\nsage: Ideal(3, 5)\nPrincipal ideal (3) of Integer Ring\n```\n\nMisleading!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1104\n\n",
     "created_at": "2007-11-05T04:21:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,12 +21,10 @@ Assignee: somebody
 
 Keywords: ideal arguments
 
-
 ```
 sage: Ideal(3, 5)
 Principal ideal (3) of Integer Ring
 ```
-
 
 Misleading!
 
@@ -92,7 +90,7 @@ archive/issue_events_002963.json:
 archive/issue_comments_006658.json:
 ```json
 {
-    "body": "It actually does exactly what it is supposed to do in the documentation [from Ideal?]:\n\n```\n        Alternatively, one can also call this function with the syntax\n             Ideal(gens)\n        where gens is a nonempty list of generators or a single generator.\n```\n\nFrom Sage 2.9.1.1:\n\n```\nsage: R.<x,y> = QQ[]\nsage: R\nMultivariate Polynomial Ring in x, y over Rational Field\nsage: R.ideal(x^2,x-y)\nIdeal (x^2, x - y) of Multivariate Polynomial Ring in x, y over Rational Field\nsage: Ideal([x^2,x-y])\nIdeal (x^2, x - y) of Multivariate Polynomial Ring in x, y over Rational Field\nsage: Ideal(x^2,x-y)\nPrincipal ideal (x^2) of Multivariate Polynomial Ring in x, y over Rational Field\n```\n",
+    "body": "It actually does exactly what it is supposed to do in the documentation [from Ideal?]:\n\n```\n        Alternatively, one can also call this function with the syntax\n             Ideal(gens)\n        where gens is a nonempty list of generators or a single generator.\n```\nFrom Sage 2.9.1.1:\n\n```\nsage: R.<x,y> = QQ[]\nsage: R\nMultivariate Polynomial Ring in x, y over Rational Field\nsage: R.ideal(x^2,x-y)\nIdeal (x^2, x - y) of Multivariate Polynomial Ring in x, y over Rational Field\nsage: Ideal([x^2,x-y])\nIdeal (x^2, x - y) of Multivariate Polynomial Ring in x, y over Rational Field\nsage: Ideal(x^2,x-y)\nPrincipal ideal (x^2) of Multivariate Polynomial Ring in x, y over Rational Field\n```",
     "created_at": "2007-12-26T03:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ It actually does exactly what it is supposed to do in the documentation [from Id
              Ideal(gens)
         where gens is a nonempty list of generators or a single generator.
 ```
-
 From Sage 2.9.1.1:
 
 ```
@@ -125,13 +122,12 @@ Principal ideal (x^2) of Multivariate Polynomial Ring in x, y over Rational Fiel
 
 
 
-
 ---
 
 archive/issue_comments_006659.json:
 ```json
 {
-    "body": "The patch fixes the problem pointed out by Nick, and makes Ideal() complain loudly rather than return the wrong thing in other cases.\n\nBefore:\n\n\n```\nsage: Ideal(3,5)\nPrincipal ideal (3) of Integer Ring\nsage: Ideal(ZZ,3,5)\nPrincipal ideal (3) of Integer Ring\n```\n\n\nAfter:\n\n\n```\nsage: Ideal(3,5)\nPrincipal ideal (1) of Integer Ring\nsage: Ideal(ZZ,3,5)\n...\n\n<type 'exceptions.TypeError'>: coerce must be either True or False\n```\n",
+    "body": "The patch fixes the problem pointed out by Nick, and makes Ideal() complain loudly rather than return the wrong thing in other cases.\n\nBefore:\n\n```\nsage: Ideal(3,5)\nPrincipal ideal (3) of Integer Ring\nsage: Ideal(ZZ,3,5)\nPrincipal ideal (3) of Integer Ring\n```\n\nAfter:\n\n```\nsage: Ideal(3,5)\nPrincipal ideal (1) of Integer Ring\nsage: Ideal(ZZ,3,5)\n...\n\n<type 'exceptions.TypeError'>: coerce must be either True or False\n```",
     "created_at": "2008-02-16T23:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
@@ -144,7 +140,6 @@ The patch fixes the problem pointed out by Nick, and makes Ideal() complain loud
 
 Before:
 
-
 ```
 sage: Ideal(3,5)
 Principal ideal (3) of Integer Ring
@@ -152,9 +147,7 @@ sage: Ideal(ZZ,3,5)
 Principal ideal (3) of Integer Ring
 ```
 
-
 After:
-
 
 ```
 sage: Ideal(3,5)
@@ -167,13 +160,12 @@ sage: Ideal(ZZ,3,5)
 
 
 
-
 ---
 
 archive/issue_comments_006660.json:
 ```json
 {
-    "body": "Sorry this patch doesn't work right. With the patch I get for example:\n\n```\nsage: Ideal(2, 4, 6)\n[...]\n<type 'exceptions.TypeError'>: coerce must be either True or False\n```\n\nwhich is still very confusing.\n\nThe recursive function call is not the right way to do this. Should use the `def func(*x, **kwds)` idiom instead; to see an example, look at\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R.ideal??\n```\n",
+    "body": "Sorry this patch doesn't work right. With the patch I get for example:\n\n```\nsage: Ideal(2, 4, 6)\n[...]\n<type 'exceptions.TypeError'>: coerce must be either True or False\n```\nwhich is still very confusing.\n\nThe recursive function call is not the right way to do this. Should use the `def func(*x, **kwds)` idiom instead; to see an example, look at\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R.ideal??\n```",
     "created_at": "2008-02-23T02:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
@@ -189,7 +181,6 @@ sage: Ideal(2, 4, 6)
 [...]
 <type 'exceptions.TypeError'>: coerce must be either True or False
 ```
-
 which is still very confusing.
 
 The recursive function call is not the right way to do this. Should use the `def func(*x, **kwds)` idiom instead; to see an example, look at
@@ -198,7 +189,6 @@ The recursive function call is not the right way to do this. Should use the `def
 sage: R.<x> = PolynomialRing(ZZ)
 sage: R.ideal??
 ```
-
 
 
 

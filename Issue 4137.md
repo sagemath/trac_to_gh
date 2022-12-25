@@ -105,7 +105,7 @@ huh, so where's the patch and the positive review? :)
 archive/issue_comments_029978.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> huh, so where's the patch and the positive review? :)\n\nYou will know once binaries have been posted :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 jason]:\n> huh, so where's the patch and the positive review? :)\n\n\nYou will know once binaries have been posted :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-17T04:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4137",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ archive/issue_comments_029978.json:
 
 Replying to [comment:2 jason]:
 > huh, so where's the patch and the positive review? :)
+
 
 You will know once binaries have been posted :)
 

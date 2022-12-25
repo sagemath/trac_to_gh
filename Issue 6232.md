@@ -3,7 +3,7 @@
 archive/issues_006232.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\n\nhttp://webloria.loria.fr/~zimmerma/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NSF might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
+    "body": "Assignee: @malb\n\nCC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\nhttp://webloria.loria.fr/~zimmerma/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NSF might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
     "created_at": "2009-06-06T12:48:45Z",
     "labels": [
         "component: packages: standard",
@@ -24,7 +24,6 @@ Keywords: linear algebra, factoring, number theory
 
 CADO-NFS is an implementation of the number field sieve:
 
-
 ```
 CADO is sponsored by the French Research Agency (ANR).
 It started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum’s team (IECN Nancy). 
@@ -35,7 +34,6 @@ Objectives:
    records, but to routinely factor numbers of 155 digits
  * use that code base to try new ideas and/or new algorithms
 ```
-
 
 http://webloria.loria.fr/~zimmerma/talks/cado.pdf
 
@@ -126,7 +124,7 @@ Changing component from packages: standard to packages: optional.
 archive/issue_comments_049628.json:
 ```json
 {
-    "body": "I use this ticket to report an issue related to CADO-NFS. I'm not sure the problem is due to Sage. I could open a separate ticket if needed.\n\nThe issue is the following. Some colleague wrote the following Sage code to call CADO-NFS\nfrom Sage:\n\n```\nimport subprocess\ndef my_exec_factor(nbr):\n    cmd = ['/tmp/cado-nfs-1.1/factor.sh', str(nbr)]\n    process = subprocess.Popen(cmd, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)\n    output, unused_err = process.communicate()\n    retcode = process.poll()\n    if retcode:\n        print \"Output :\"\n        print output\n        raise subprocess.CalledProcessError(retcode, cmd)\n    return output\n\nres=my_exec_factor(90377629292003121684002147101760858109247336549001090677693)\n\nr=[]\nfor i in res.splitlines()[-6].split(' '):\n    r.append(Integer(i))\nprint r\n```\n\nWhen used with CADO-NFS 1.1, this code works fine.\n\nHowever with CADO-NFS 2.1.1 it fails:\n\n```\nsage: %runfile /tmp/garambois.sage\nOutput :\n(debug mode, temporary files will be kept in /tmp/cado.mru0w9AeIM)\nFatal Python error: Py_Initialize: Unable to get the locale encoding\n  File \"/usr/local/sage-6.0-x86_64-Linux/local/lib/python/encodings/__init__.py\", line 123\n    raise CodecRegistryError,\\\n                            ^\nSyntaxError: invalid syntax\n\nCurrent thread 0x00002b81297f1700 (most recent call first):\n/tmp/cado-nfs-2.1.1/factor.sh: line 242: 13296 Aborted                 \"${TIMEOUT[@]}\" $PYTHON $cadofactor \"$t/param\" N=$n tasks.execpath=\"$bindir\" tasks.threads=$cores tasks.workdir=\"$t\" slaves.hostnames=\"$hostnames\" slaves.nrclients=$slaves slaves.scriptpath=\"$scriptpath\" \"$server_address\" slaves.basepath=\"$t/client/\" \"$@\"\nFAILED ; data left in /tmp/cado.mru0w9AeIM\n\n---------------------------------------------------------------------------\nCalledProcessError                        Traceback (most recent call last)\n<ipython-input-1-cf20ddc02bb1> in <module>()\n----> 1 get_ipython().magic(u'runfile /tmp/garambois.sage')\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in magic(self, arg_s)\n   2134         magic_name, _, magic_arg_s = arg_s.partition(' ')\n   2135         magic_name = magic_name.lstrip(prefilter.ESC_MAGIC)\n-> 2136         return self.run_line_magic(magic_name, magic_arg_s)\n   2137 \n   2138     #-------------------------------------------------------------------------\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in run_line_magic(self, magic_name, line)\n   2060                 args.append(sys._getframe(stack_depth).f_locals)\n   2061             with self.builtin_trap:\n-> 2062                 result = fn(*args)\n   2063             return result\n   2064 \n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/sage_extension.pyc in runfile(self, s)\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/magic.pyc in <lambda>(f, *a, **k)\n    189     # but it's overkill for just that one bit of state.\n    190     def magic_deco(arg):\n--> 191         call = lambda f, *a, **k: f(*a, **k)\n    192 \n    193         if callable(arg):\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/sage_extension.pyc in runfile(self, s)\n     77         \"\"\"\n     78         from sage.misc.preparser import load_wrap\n---> 79         return self.shell.ex(load_wrap(s, attach=False))\n     80 \n     81     @line_magic\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in ex(self, cmd)\n   2382         \"\"\"Execute a normal python statement in user namespace.\"\"\"\n   2383         with self.builtin_trap:\n-> 2384             exec cmd in self.user_global_ns, self.user_ns\n   2385 \n   2386     def ev(self, expr):\n\n<string> in <module>()\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1770             # Preparse in memory only for speed.\n   1771             exec_file_is(fpath)\n-> 1772             exec preparse_file(open(fpath).read()) + \"\\n\" in globals\n   1773     elif fpath.endswith('.spyx') or fpath.endswith('.pyx'):\n   1774         exec_file_is(fpath)\n\n<string> in <module>()\n\n<string> in my_exec_factor(nbr)\n\nCalledProcessError: Command '['/tmp/cado-nfs-2.1.1/factor.sh', '90377629292003121684002147101760858109247336549001090677693']' returned non-zero exit status 134\n```\n\nMy guess is that there is an interaction between the version of Python used by CADO-NFS 2.1.1 (Python 3) and the one used by Sage (Python 2.7). (Note that CADO-NFS 1.1 did not use Python but Perl instead.)\n\nCan anybody reproduce that problem? Any idea how to solve it?\n\nPaul",
+    "body": "I use this ticket to report an issue related to CADO-NFS. I'm not sure the problem is due to Sage. I could open a separate ticket if needed.\n\nThe issue is the following. Some colleague wrote the following Sage code to call CADO-NFS\nfrom Sage:\n\n```\nimport subprocess\ndef my_exec_factor(nbr):\n    cmd = ['/tmp/cado-nfs-1.1/factor.sh', str(nbr)]\n    process = subprocess.Popen(cmd, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)\n    output, unused_err = process.communicate()\n    retcode = process.poll()\n    if retcode:\n        print \"Output :\"\n        print output\n        raise subprocess.CalledProcessError(retcode, cmd)\n    return output\n\nres=my_exec_factor(90377629292003121684002147101760858109247336549001090677693)\n\nr=[]\nfor i in res.splitlines()[-6].split(' '):\n    r.append(Integer(i))\nprint r\n```\nWhen used with CADO-NFS 1.1, this code works fine.\n\nHowever with CADO-NFS 2.1.1 it fails:\n\n```\nsage: %runfile /tmp/garambois.sage\nOutput :\n(debug mode, temporary files will be kept in /tmp/cado.mru0w9AeIM)\nFatal Python error: Py_Initialize: Unable to get the locale encoding\n  File \"/usr/local/sage-6.0-x86_64-Linux/local/lib/python/encodings/__init__.py\", line 123\n    raise CodecRegistryError,\\\n                            ^\nSyntaxError: invalid syntax\n\nCurrent thread 0x00002b81297f1700 (most recent call first):\n/tmp/cado-nfs-2.1.1/factor.sh: line 242: 13296 Aborted                 \"${TIMEOUT[@]}\" $PYTHON $cadofactor \"$t/param\" N=$n tasks.execpath=\"$bindir\" tasks.threads=$cores tasks.workdir=\"$t\" slaves.hostnames=\"$hostnames\" slaves.nrclients=$slaves slaves.scriptpath=\"$scriptpath\" \"$server_address\" slaves.basepath=\"$t/client/\" \"$@\"\nFAILED ; data left in /tmp/cado.mru0w9AeIM\n\n---------------------------------------------------------------------------\nCalledProcessError                        Traceback (most recent call last)\n<ipython-input-1-cf20ddc02bb1> in <module>()\n----> 1 get_ipython().magic(u'runfile /tmp/garambois.sage')\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in magic(self, arg_s)\n   2134         magic_name, _, magic_arg_s = arg_s.partition(' ')\n   2135         magic_name = magic_name.lstrip(prefilter.ESC_MAGIC)\n-> 2136         return self.run_line_magic(magic_name, magic_arg_s)\n   2137 \n   2138     #-------------------------------------------------------------------------\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in run_line_magic(self, magic_name, line)\n   2060                 args.append(sys._getframe(stack_depth).f_locals)\n   2061             with self.builtin_trap:\n-> 2062                 result = fn(*args)\n   2063             return result\n   2064 \n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/sage_extension.pyc in runfile(self, s)\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/magic.pyc in <lambda>(f, *a, **k)\n    189     # but it's overkill for just that one bit of state.\n    190     def magic_deco(arg):\n--> 191         call = lambda f, *a, **k: f(*a, **k)\n    192 \n    193         if callable(arg):\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/sage_extension.pyc in runfile(self, s)\n     77         \"\"\"\n     78         from sage.misc.preparser import load_wrap\n---> 79         return self.shell.ex(load_wrap(s, attach=False))\n     80 \n     81     @line_magic\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/IPython/core/interactiveshell.pyc in ex(self, cmd)\n   2382         \"\"\"Execute a normal python statement in user namespace.\"\"\"\n   2383         with self.builtin_trap:\n-> 2384             exec cmd in self.user_global_ns, self.user_ns\n   2385 \n   2386     def ev(self, expr):\n\n<string> in <module>()\n\n/usr/local/sage-6.0-x86_64-Linux/local/lib/python2.7/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1770             # Preparse in memory only for speed.\n   1771             exec_file_is(fpath)\n-> 1772             exec preparse_file(open(fpath).read()) + \"\\n\" in globals\n   1773     elif fpath.endswith('.spyx') or fpath.endswith('.pyx'):\n   1774         exec_file_is(fpath)\n\n<string> in <module>()\n\n<string> in my_exec_factor(nbr)\n\nCalledProcessError: Command '['/tmp/cado-nfs-2.1.1/factor.sh', '90377629292003121684002147101760858109247336549001090677693']' returned non-zero exit status 134\n```\nMy guess is that there is an interaction between the version of Python used by CADO-NFS 2.1.1 (Python 3) and the one used by Sage (Python 2.7). (Note that CADO-NFS 1.1 did not use Python but Perl instead.)\n\nCan anybody reproduce that problem? Any idea how to solve it?\n\nPaul",
     "created_at": "2015-06-03T11:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
@@ -160,7 +158,6 @@ for i in res.splitlines()[-6].split(' '):
     r.append(Integer(i))
 print r
 ```
-
 When used with CADO-NFS 1.1, this code works fine.
 
 However with CADO-NFS 2.1.1 it fails:
@@ -236,7 +233,6 @@ CalledProcessError                        Traceback (most recent call last)
 
 CalledProcessError: Command '['/tmp/cado-nfs-2.1.1/factor.sh', '90377629292003121684002147101760858109247336549001090677693']' returned non-zero exit status 134
 ```
-
 My guess is that there is an interaction between the version of Python used by CADO-NFS 2.1.1 (Python 3) and the one used by Sage (Python 2.7). (Note that CADO-NFS 1.1 did not use Python but Perl instead.)
 
 Can anybody reproduce that problem? Any idea how to solve it?
@@ -270,7 +266,7 @@ Paul
 archive/issue_comments_049630.json:
 ```json
 {
-    "body": "thanks to Alexander Kruppa, the solution is to undefine the environment variables PYTHONHOME and PYTHONPATH:\n\n```\nimport subprocess, os\ndef my_exec_factor(nbr):\n    cmd = ['/tmp/cado-nfs-2.1.1/factor.sh', str(nbr)]\n    my_env = os.environ\n    if my_env.has_key(\"PYTHONHOME\"):\n       my_env.pop(\"PYTHONHOME\")\n    if my_env.has_key(\"PYTHONPATH\"):\n       my_env.pop(\"PYTHONPATH\")\n    process = subprocess.Popen(cmd, stderr=subprocess.STDOUT, stdout=subprocess.PIPE, env=my_env)\n    output, unused_err = process.communicate()\n    retcode = process.poll()\n    if retcode:\n        print \"Output :\"\n        print output\n        raise subprocess.CalledProcessError(retcode, cmd)\n    return output\n```\n",
+    "body": "thanks to Alexander Kruppa, the solution is to undefine the environment variables PYTHONHOME and PYTHONPATH:\n\n```\nimport subprocess, os\ndef my_exec_factor(nbr):\n    cmd = ['/tmp/cado-nfs-2.1.1/factor.sh', str(nbr)]\n    my_env = os.environ\n    if my_env.has_key(\"PYTHONHOME\"):\n       my_env.pop(\"PYTHONHOME\")\n    if my_env.has_key(\"PYTHONPATH\"):\n       my_env.pop(\"PYTHONPATH\")\n    process = subprocess.Popen(cmd, stderr=subprocess.STDOUT, stdout=subprocess.PIPE, env=my_env)\n    output, unused_err = process.communicate()\n    retcode = process.poll()\n    if retcode:\n        print \"Output :\"\n        print output\n        raise subprocess.CalledProcessError(retcode, cmd)\n    return output\n```",
     "created_at": "2015-06-03T15:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
@@ -302,13 +298,12 @@ def my_exec_factor(nbr):
 
 
 
-
 ---
 
 archive/issue_comments_049631.json:
 ```json
 {
-    "body": "in addition, one should unset PATH:\n\n```\n    if my_env.has_key(\"PATH\"):\n       my_env.pop(\"PATH\")\n```\n\nand replace `res.splitlines()[-6]` by `res.splitlines()[-2]` for CADO-NFS 2.1.1.\n\nPaul",
+    "body": "in addition, one should unset PATH:\n\n```\n    if my_env.has_key(\"PATH\"):\n       my_env.pop(\"PATH\")\n```\nand replace `res.splitlines()[-6]` by `res.splitlines()[-2]` for CADO-NFS 2.1.1.\n\nPaul",
     "created_at": "2015-06-04T09:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
@@ -323,7 +318,6 @@ in addition, one should unset PATH:
     if my_env.has_key("PATH"):
        my_env.pop("PATH")
 ```
-
 and replace `res.splitlines()[-6]` by `res.splitlines()[-2]` for CADO-NFS 2.1.1.
 
 Paul
@@ -353,7 +347,7 @@ fixed typo in description (CADO-NSF -> CADO-NFS)
 archive/issue_comments_049633.json:
 ```json
 {
-    "body": "I have no access to https://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues but I want to report this: \n\n\n```\n$ cado-nfs.py 10000000000000000000009070000000000000000000063\nRuntimeError: no parameter file found for c47 (tried c47, c45)\n```\n\nafter mixing up `factor/params.c30` and `factor/params.c60` into `factor/params.c45`:\n\n```\n$ cado-nfs.py 10000000000000000000009070000000000000000000063\nInfo:root: Using default parameter file /usr/share/cado-nfs-3.0.0/factor/params.c45\n...\n10000000000000000000009 1000000000000000000000007\n```\n",
+    "body": "I have no access to https://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues but I want to report this: \n\n```\n$ cado-nfs.py 10000000000000000000009070000000000000000000063\nRuntimeError: no parameter file found for c47 (tried c47, c45)\n```\nafter mixing up `factor/params.c30` and `factor/params.c60` into `factor/params.c45`:\n\n```\n$ cado-nfs.py 10000000000000000000009070000000000000000000063\nInfo:root: Using default parameter file /usr/share/cado-nfs-3.0.0/factor/params.c45\n...\n10000000000000000000009 1000000000000000000000007\n```",
     "created_at": "2021-11-21T11:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
@@ -364,12 +358,10 @@ archive/issue_comments_049633.json:
 
 I have no access to https://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues but I want to report this: 
 
-
 ```
 $ cado-nfs.py 10000000000000000000009070000000000000000000063
 RuntimeError: no parameter file found for c47 (tried c47, c45)
 ```
-
 after mixing up `factor/params.c30` and `factor/params.c60` into `factor/params.c45`:
 
 ```
@@ -381,13 +373,12 @@ Info:root: Using default parameter file /usr/share/cado-nfs-3.0.0/factor/params.
 
 
 
-
 ---
 
 archive/issue_comments_049634.json:
 ```json
 {
-    "body": "Hi Andrew,\n\n> I have no access to \u200bhttps://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues\n\nThe relevant bit of info is https://sympa.inria.fr/sympa/arc/cado-nfs/2020-10/msg00006.html (the link was dead for yet another fallout of this infrastructure change, sorry for that). TL;DR: send me an e-mail, I'll happily open you an account.\n\nAs regards your feature request: the number field sieve as a factoring algorithm does not really make sense for numbers that small. You would be much better off trying to use another piece of code to factor 45-digit integers (check out yafu, for example). This is the reason why we didn't care to write parameter files for these sizes.\n\nThe reason for the existence of the 30-digit file is different: it's used for continuous integration.\n\nIf you really really want to factor a 45-digit number with NFS, the approach that you have taken is the right one: interpolate between nearby parameter files. A first working guess is unlikely to be \"optimal\", but again, there's zero chance that NFS is \"optimal\" in this size range anyway. (patches with contributed parameter files are welcome, of course!)",
+    "body": "Hi Andrew,\n\n> I have no access to \u200bhttps://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues\n\n\nThe relevant bit of info is https://sympa.inria.fr/sympa/arc/cado-nfs/2020-10/msg00006.html (the link was dead for yet another fallout of this infrastructure change, sorry for that). TL;DR: send me an e-mail, I'll happily open you an account.\n\nAs regards your feature request: the number field sieve as a factoring algorithm does not really make sense for numbers that small. You would be much better off trying to use another piece of code to factor 45-digit integers (check out yafu, for example). This is the reason why we didn't care to write parameter files for these sizes.\n\nThe reason for the existence of the 30-digit file is different: it's used for continuous integration.\n\nIf you really really want to factor a 45-digit number with NFS, the approach that you have taken is the right one: interpolate between nearby parameter files. A first working guess is unlikely to be \"optimal\", but again, there's zero chance that NFS is \"optimal\" in this size range anyway. (patches with contributed parameter files are welcome, of course!)",
     "created_at": "2021-11-22T03:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
@@ -399,6 +390,7 @@ archive/issue_comments_049634.json:
 Hi Andrew,
 
 > I have no access to ​https://gitlab.inria.fr/cado-nfs/cado-nfs/-/issues
+
 
 The relevant bit of info is https://sympa.inria.fr/sympa/arc/cado-nfs/2020-10/msg00006.html (the link was dead for yet another fallout of this infrastructure change, sorry for that). TL;DR: send me an e-mail, I'll happily open you an account.
 

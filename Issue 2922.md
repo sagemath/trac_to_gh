@@ -205,7 +205,7 @@ I'd like to be able to pass the scale kwarg to quiver, is that what we're talkin
 archive/issue_comments_020082.json:
 ```json
 {
-    "body": "Replying to [comment:8 edrex]:\n> I'd like to be able to pass the scale kwarg to quiver, is that what we're talking about doing?\n\nyes.",
+    "body": "Replying to [comment:8 edrex]:\n> I'd like to be able to pass the scale kwarg to quiver, is that what we're talking about doing?\n\n\nyes.",
     "created_at": "2009-10-20T15:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
@@ -216,6 +216,7 @@ archive/issue_comments_020082.json:
 
 Replying to [comment:8 edrex]:
 > I'd like to be able to pass the scale kwarg to quiver, is that what we're talking about doing?
+
 
 yes.
 
@@ -246,7 +247,7 @@ Is this ready to wrap?  We've definitely updated mpl since a year and a half ago
 archive/issue_comments_020084.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n\n> Is this ready to wrap?  We've definitely updated mpl since a year and a half ago.\n\nYes, it should be ready to wrap now.",
+    "body": "Replying to [comment:10 kcrisman]:\n\n> Is this ready to wrap?  We've definitely updated mpl since a year and a half ago.\n\n\nYes, it should be ready to wrap now.",
     "created_at": "2011-04-17T00:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
@@ -258,6 +259,7 @@ archive/issue_comments_020084.json:
 Replying to [comment:10 kcrisman]:
 
 > Is this ready to wrap?  We've definitely updated mpl since a year and a half ago.
+
 
 Yes, it should be ready to wrap now.
 

@@ -160,7 +160,7 @@ I won't reopen this, as that's pushing things.  But I think you're cutting off t
 archive/issue_comments_086182.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n\n> I won't reopen this, as that's pushing things.  But I think you're cutting off the discussion way too soon.\n\n(I mean, I won't personally reopen this right now, but I really wish you would revert your decision to shut it down so abruptly, especially considering that this ticket does *not* revert the changes in #8276, and in fact makes #8276 not break the deprecation policy).",
+    "body": "Replying to [comment:4 jason]:\n\n> I won't reopen this, as that's pushing things.  But I think you're cutting off the discussion way too soon.\n\n\n(I mean, I won't personally reopen this right now, but I really wish you would revert your decision to shut it down so abruptly, especially considering that this ticket does *not* revert the changes in #8276, and in fact makes #8276 not break the deprecation policy).",
     "created_at": "2010-06-11T08:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
@@ -172,6 +172,7 @@ archive/issue_comments_086182.json:
 Replying to [comment:4 jason]:
 
 > I won't reopen this, as that's pushing things.  But I think you're cutting off the discussion way too soon.
+
 
 (I mean, I won't personally reopen this right now, but I really wish you would revert your decision to shut it down so abruptly, especially considering that this ticket does *not* revert the changes in #8276, and in fact makes #8276 not break the deprecation policy).
 
@@ -222,7 +223,7 @@ because clearly if the confusion above stemmed from a discussion on sage-devel, 
 archive/issue_comments_086185.json:
 ```json
 {
-    "body": "Hey Jason,\n\nFollowing test in sage/misc/sagedoc.py (line 1089) is now broken.\n\n\n```\nsage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n```\n\n\nYou did run full tests before posting this, didn't you?  ;-)  More commentary in the morning.\n\nRob",
+    "body": "Hey Jason,\n\nFollowing test in sage/misc/sagedoc.py (line 1089) is now broken.\n\n```\nsage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n```\n\nYou did run full tests before posting this, didn't you?  ;-)  More commentary in the morning.\n\nRob",
     "created_at": "2010-06-14T05:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
@@ -235,11 +236,9 @@ Hey Jason,
 
 Following test in sage/misc/sagedoc.py (line 1089) is now broken.
 
-
 ```
 sage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]
 ```
-
 
 You did run full tests before posting this, didn't you?  ;-)  More commentary in the morning.
 
@@ -394,7 +393,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086191.json:
 ```json
 {
-    "body": "Replying to [comment:8 rbeezer]:\n> Hey Jason,\n> \n> Following test in sage/misc/sagedoc.py (line 1089) is now broken.\n> \n> {{{\n> sage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n> }}}\n> \n> You did run full tests before posting this, didn't you?  ;-)  \n\nNo, I didn't run full doctests before posting the patch, so thanks for catching this!  I believe I tested the matrix directory, though.\n\nWhen you say you have a review ready to go, do you mean that you have a reviewer patch to fix the doctest error, or should I do that?",
+    "body": "Replying to [comment:8 rbeezer]:\n> Hey Jason,\n> \n> Following test in sage/misc/sagedoc.py (line 1089) is now broken.\n> \n> \n> ```\n> sage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n> ```\n> \n> You did run full tests before posting this, didn't you?  ;-)  \n\n\nNo, I didn't run full doctests before posting the patch, so thanks for catching this!  I believe I tested the matrix directory, though.\n\nWhen you say you have a review ready to go, do you mean that you have a reviewer patch to fix the doctest error, or should I do that?",
     "created_at": "2010-06-14T16:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
@@ -408,11 +407,13 @@ Replying to [comment:8 rbeezer]:
 > 
 > Following test in sage/misc/sagedoc.py (line 1089) is now broken.
 > 
-> {{{
+> 
+> ```
 > sage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]
-> }}}
+> ```
 > 
 > You did run full tests before posting this, didn't you?  ;-)  
+
 
 No, I didn't run full doctests before posting the patch, so thanks for catching this!  I believe I tested the matrix directory, though.
 

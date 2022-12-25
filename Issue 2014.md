@@ -3,7 +3,7 @@
 archive/issues_002014.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/matplotlib-0.91.1.p2/src/._MANIFEST.in\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2014\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/matplotlib-0.91.1.p2/src/._MANIFEST.in\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2014\n\n",
     "created_at": "2008-01-31T23:26:20Z",
     "labels": [
         "component: packages: standard",
@@ -18,11 +18,9 @@ archive/issues_002014.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/matplotlib-0.91.1.p2/src/._MANIFEST.in
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2014
 

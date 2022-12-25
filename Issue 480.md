@@ -71,7 +71,7 @@ archive/issue_events_001222.json:
 archive/issue_comments_002384.json:
 ```json
 {
-    "body": "From http://www.ittvis.com/services/techtip.asp?ttid=3092:\n\n```\nTo rectify this issue, you can either:\n\n    * Change the default security context for IDL by issuing the command:\n\n      chcon -t texrel_shlib_t /usr/local/rsi/idl_6.1/bin/bin.linux.x86/*.so\n```\n\n\nCheers,\n\nM ichael",
+    "body": "From http://www.ittvis.com/services/techtip.asp?ttid=3092:\n\n```\nTo rectify this issue, you can either:\n\n    * Change the default security context for IDL by issuing the command:\n\n      chcon -t texrel_shlib_t /usr/local/rsi/idl_6.1/bin/bin.linux.x86/*.so\n```\n\nCheers,\n\nM ichael",
     "created_at": "2007-12-06T20:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ To rectify this issue, you can either:
       chcon -t texrel_shlib_t /usr/local/rsi/idl_6.1/bin/bin.linux.x86/*.so
 ```
 
-
 Cheers,
 
 M ichael
@@ -102,7 +101,7 @@ M ichael
 archive/issue_comments_002385.json:
 ```json
 {
-    "body": "\n```\nOn my CENTOS 5 system, I found the SELinux errors can be avoided by setting SELinux to \"permissive\" rather than \"enforced.\"  \"Disabled\" was not necessary.  Lots of software seems to be affected by the new tighted SELinux settings, including Mathematica.\nThanks for your great work on SAGE!\n```\n",
+    "body": "```\nOn my CENTOS 5 system, I found the SELinux errors can be avoided by setting SELinux to \"permissive\" rather than \"enforced.\"  \"Disabled\" was not necessary.  Lots of software seems to be affected by the new tighted SELinux settings, including Mathematica.\nThanks for your great work on SAGE!\n```",
     "created_at": "2007-12-24T06:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/480",
     "type": "issue_comment",
@@ -111,12 +110,10 @@ archive/issue_comments_002385.json:
 }
 ```
 
-
 ```
 On my CENTOS 5 system, I found the SELinux errors can be avoided by setting SELinux to "permissive" rather than "enforced."  "Disabled" was not necessary.  Lots of software seems to be affected by the new tighted SELinux settings, including Mathematica.
 Thanks for your great work on SAGE!
 ```
-
 
 
 

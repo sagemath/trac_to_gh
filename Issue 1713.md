@@ -3,7 +3,7 @@
 archive/issues_001713.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis didn't work, now it does:\n\n\n```\nsage: sr = mq.SR(allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\nsage: F == sage0(F)._sage_()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1713\n\n",
+    "body": "Assignee: @malb\n\nThis didn't work, now it does:\n\n```\nsage: sr = mq.SR(allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\nsage: F == sage0(F)._sage_()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1713\n\n",
     "created_at": "2008-01-07T14:01:39Z",
     "labels": [
         "component: interfaces",
@@ -20,14 +20,12 @@ Assignee: @malb
 
 This didn't work, now it does:
 
-
 ```
 sage: sr = mq.SR(allow_zero_inversions=True)
 sage: F,s = sr.polynomial_system()
 sage: F == sage0(F)._sage_()
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1713
 

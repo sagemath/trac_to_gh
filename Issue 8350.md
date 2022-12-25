@@ -3,7 +3,7 @@
 archive/issues_008350.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.\n\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a')  # this vertex should go left or right\nsage: (bg.left, bg.right)  # one of these should contain vertex 'a'\n([], [])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8350\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a')  # this vertex should go left or right\nsage: (bg.left, bg.right)  # one of these should contain vertex 'a'\n([], [])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8350\n\n",
     "created_at": "2010-02-24T18:04:42Z",
     "labels": [
         "component: graph theory",
@@ -24,14 +24,12 @@ Keywords: BipartiteGraph
 
 BipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.
 
-
 ```
 sage: bg = BipartiteGraph()
 sage: bg.add_vertex('a')  # this vertex should go left or right
 sage: (bg.left, bg.right)  # one of these should contain vertex 'a'
 ([], [])
 ```
-
 
 
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8350
 archive/issue_comments_074444.json:
 ```json
 {
-    "body": "How about this solution:\n\n1(a).  To properly add a vertex to a BipartiteGraph object, specify keyword left or right as True.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a', left=True)  # new syntax\nsage: bg.left\n['a']\n```\n\n\n1(b).  add_vertices() can use a list for left or right (default right to None).  We could also allow left/right to be a single boolean and apply that to every element in the list.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices(['a', 'b', 'c'], left=[True, False, True])\n```\n\n\n2.  With no specific instruction, add_vertex will convert the current BipartiteGraph back to a Graph.  (Is this allowed/possible?)\n\n```\nsage: g = BipartiteGraph()\nsage: g.add_vertex('a')  # no left/right specified, so revert to a Graph\nsage: g\nGraph on 1 vertex\nsage: type(g)\n<class 'sage.graphs.graph.Graph'>\n```\n",
+    "body": "How about this solution:\n\n1(a).  To properly add a vertex to a BipartiteGraph object, specify keyword left or right as True.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a', left=True)  # new syntax\nsage: bg.left\n['a']\n```\n\n1(b).  add_vertices() can use a list for left or right (default right to None).  We could also allow left/right to be a single boolean and apply that to every element in the list.\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertices(['a', 'b', 'c'], left=[True, False, True])\n```\n\n2.  With no specific instruction, add_vertex will convert the current BipartiteGraph back to a Graph.  (Is this allowed/possible?)\n\n```\nsage: g = BipartiteGraph()\nsage: g.add_vertex('a')  # no left/right specified, so revert to a Graph\nsage: g\nGraph on 1 vertex\nsage: type(g)\n<class 'sage.graphs.graph.Graph'>\n```",
     "created_at": "2010-02-24T18:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
@@ -66,14 +64,12 @@ sage: bg.left
 ['a']
 ```
 
-
 1(b).  add_vertices() can use a list for left or right (default right to None).  We could also allow left/right to be a single boolean and apply that to every element in the list.
 
 ```
 sage: bg = BipartiteGraph()
 sage: bg.add_vertices(['a', 'b', 'c'], left=[True, False, True])
 ```
-
 
 2.  With no specific instruction, add_vertex will convert the current BipartiteGraph back to a Graph.  (Is this allowed/possible?)
 
@@ -85,7 +81,6 @@ Graph on 1 vertex
 sage: type(g)
 <class 'sage.graphs.graph.Graph'>
 ```
-
 
 
 
@@ -156,7 +151,7 @@ Since algorithms should only call functions that are in the public interface of 
 archive/issue_comments_074448.json:
 ```json
 {
-    "body": "jason: thanks for the reply, see also my sage-devel post that I was finishing as you posted here. :-)\n\nReplying to [comment:4 jason]:\n> ...snip...\n> The main point behind the bipartite graph class is that it is represented more efficiently than the normal graphs are, right?  That's a storage layer question, which seems like it should be a lower-level thing than the algorithm layer.  Maybe in the long run, it would be better to create a backend for bipartite graphs (like the cgraph backend, or the networkx backend).\n\nNo, it's not an issue of efficiency.  BipartiteGraph subclasses from Graph and so inherits most of its functionality that way.  *Additionally*, the .left and .right attributes indicate the vertex partition.  Most of the problems come from adding vertices without specifying a partition (e.g. GenericGraph.is_circular_planar()), removing vertices without updating the partition (old delete_vertex, see #8330), or assuming everything is either a Graph or DiGraph (e.g. GenericGraph.union()).\n\n> Since algorithms should only call functions that are in the public interface of the backend, algorithms should just work.  We might have to augment the public interface between backends and the graph theory code to handle the extra arguments (like in add_vertex) for different backends, though.\n\nYes, to a point.  Since all Python methods are \"virtual\", overriding a few methods like delete_vertex and add_vertex will work for many cases.  You're right, though, some of the Graph and GenericGraph code will need to be aware of the BipartiteGraph case.  Or I gave some other options in the sage-devel post.  :-)\n\nThanks!  -Ryan",
+    "body": "jason: thanks for the reply, see also my sage-devel post that I was finishing as you posted here. :-)\n\nReplying to [comment:4 jason]:\n> ...snip...\n> The main point behind the bipartite graph class is that it is represented more efficiently than the normal graphs are, right?  That's a storage layer question, which seems like it should be a lower-level thing than the algorithm layer.  Maybe in the long run, it would be better to create a backend for bipartite graphs (like the cgraph backend, or the networkx backend).\n\n\nNo, it's not an issue of efficiency.  BipartiteGraph subclasses from Graph and so inherits most of its functionality that way.  *Additionally*, the .left and .right attributes indicate the vertex partition.  Most of the problems come from adding vertices without specifying a partition (e.g. GenericGraph.is_circular_planar()), removing vertices without updating the partition (old delete_vertex, see #8330), or assuming everything is either a Graph or DiGraph (e.g. GenericGraph.union()).\n\n> Since algorithms should only call functions that are in the public interface of the backend, algorithms should just work.  We might have to augment the public interface between backends and the graph theory code to handle the extra arguments (like in add_vertex) for different backends, though.\n\n\nYes, to a point.  Since all Python methods are \"virtual\", overriding a few methods like delete_vertex and add_vertex will work for many cases.  You're right, though, some of the Graph and GenericGraph code will need to be aware of the BipartiteGraph case.  Or I gave some other options in the sage-devel post.  :-)\n\nThanks!  -Ryan",
     "created_at": "2010-02-26T17:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
@@ -171,9 +166,11 @@ Replying to [comment:4 jason]:
 > ...snip...
 > The main point behind the bipartite graph class is that it is represented more efficiently than the normal graphs are, right?  That's a storage layer question, which seems like it should be a lower-level thing than the algorithm layer.  Maybe in the long run, it would be better to create a backend for bipartite graphs (like the cgraph backend, or the networkx backend).
 
+
 No, it's not an issue of efficiency.  BipartiteGraph subclasses from Graph and so inherits most of its functionality that way.  *Additionally*, the .left and .right attributes indicate the vertex partition.  Most of the problems come from adding vertices without specifying a partition (e.g. GenericGraph.is_circular_planar()), removing vertices without updating the partition (old delete_vertex, see #8330), or assuming everything is either a Graph or DiGraph (e.g. GenericGraph.union()).
 
 > Since algorithms should only call functions that are in the public interface of the backend, algorithms should just work.  We might have to augment the public interface between backends and the graph theory code to handle the extra arguments (like in add_vertex) for different backends, though.
+
 
 Yes, to a point.  Since all Python methods are "virtual", overriding a few methods like delete_vertex and add_vertex will work for many cases.  You're right, though, some of the Graph and GenericGraph code will need to be aware of the BipartiteGraph case.  Or I gave some other options in the sage-devel post.  :-)
 

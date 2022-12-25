@@ -3,7 +3,7 @@
 archive/issues_007066.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used (#7021) \n\nDespite CC being set to Sun's compiler, sympow ignores this. \n\n\n```\nsympow-1.018.1.p6/src/Configure\nsympow-1.018.1.p6/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nRM = rm\nGREP = grep\nGP = gp\nSED = sed\nSH = sh\nUNAME = uname\nusing gcc\nCC = gcc\nYou do not appear to have an x86 based system --- not using fpu.c\nCP = cp\nMKDIR = mkdir\nTOUCH = touch\nTAR = tar\nMakefile has been re-made. Use make if you wish to build SYMPOW\n\n**ATTENTION** If you wish build SYMPOW, please ensure beforehand\nthat the various licenses of your C compiler, linker, assembler, etc.\nallow you to create a derived work based on SYMPOW and your C libraries\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/sympow-1.018.1.p6/src'\ngcc -O3   -c -o analrank.o analrank.c\ngcc -O3   -c -o analytic.o analytic.c\ngcc -O3   -c -o compute.o compute.c\ngcc -O3   -c -o compute2.o compute2.c\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7066\n\n",
+    "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used (#7021) \n\nDespite CC being set to Sun's compiler, sympow ignores this. \n\n```\nsympow-1.018.1.p6/src/Configure\nsympow-1.018.1.p6/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nRM = rm\nGREP = grep\nGP = gp\nSED = sed\nSH = sh\nUNAME = uname\nusing gcc\nCC = gcc\nYou do not appear to have an x86 based system --- not using fpu.c\nCP = cp\nMKDIR = mkdir\nTOUCH = touch\nTAR = tar\nMakefile has been re-made. Use make if you wish to build SYMPOW\n\n**ATTENTION** If you wish build SYMPOW, please ensure beforehand\nthat the various licenses of your C compiler, linker, assembler, etc.\nallow you to create a derived work based on SYMPOW and your C libraries\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/sympow-1.018.1.p6/src'\ngcc -O3   -c -o analrank.o analrank.c\ngcc -O3   -c -o analytic.o analytic.c\ngcc -O3   -c -o compute.o compute.c\ngcc -O3   -c -o compute2.o compute2.c\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7066\n\n",
     "created_at": "2009-09-29T12:42:13Z",
     "labels": [
         "component: algebra",
@@ -26,7 +26,6 @@ Using
 * An updated configure script to allow the Sun compiler to be used (#7021) 
 
 Despite CC being set to Sun's compiler, sympow ignores this. 
-
 
 ```
 sympow-1.018.1.p6/src/Configure
@@ -66,7 +65,6 @@ gcc -O3   -c -o analytic.o analytic.c
 gcc -O3   -c -o compute.o compute.c
 gcc -O3   -c -o compute2.o compute2.c
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7066
 

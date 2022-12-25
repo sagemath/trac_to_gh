@@ -88,7 +88,7 @@ There is a new version of this, apparently supported by both Maplesoft and NSERC
 archive/issue_comments_001045.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> There is a new version of this, apparently supported by both Maplesoft and NSERC, at [this link](http://glooscap.cs.dal.ca:8087/standard).\n\nI am sure that their names are only there because the work was done on grants funded by them. Jon Borwein is no longer at Dalhousie and I don't think there is much of his group left there either. You'll be interfacing with unmaintained code.",
+    "body": "Replying to [comment:4 kcrisman]:\n> There is a new version of this, apparently supported by both Maplesoft and NSERC, at [this link](http://glooscap.cs.dal.ca:8087/standard).\n\n\nI am sure that their names are only there because the work was done on grants funded by them. Jon Borwein is no longer at Dalhousie and I don't think there is much of his group left there either. You'll be interfacing with unmaintained code.",
     "created_at": "2010-01-20T01:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/237",
     "type": "issue_comment",
@@ -99,6 +99,7 @@ archive/issue_comments_001045.json:
 
 Replying to [comment:4 kcrisman]:
 > There is a new version of this, apparently supported by both Maplesoft and NSERC, at [this link](http://glooscap.cs.dal.ca:8087/standard).
+
 
 I am sure that their names are only there because the work was done on grants funded by them. Jon Borwein is no longer at Dalhousie and I don't think there is much of his group left there either. You'll be interfacing with unmaintained code.
 
@@ -300,7 +301,7 @@ Yes, it would be great if Sage interfaced with it!  I would have used it last we
 archive/issue_comments_001056.json:
 ```json
 {
-    "body": "Ok, then let's work hard so that you could have used it last week `:-P`\n\nWell, I wrote a few lines of code and it \"works\", but there are some problems for which I would like everybody's advice.\n\n\n```\nsage: ask_ISC(3.14)                         \nAsking ISC what it knows about 3.14000000000000\nNo result found in ISC\n```\n\n\nThat's the first problem : 3.14, for Sage, is equal to 3.1400000000. Which, for ISC, is totally different.\n\nThere's a way out if we only feed the function with a string instead, but it's not a good way out for it should ultimately be a method of Sage constants...\n\nSecond problem, which is just technical : where should this method appear ? Where in the code ? Or should it appear nowhere, and just be available as a function in a module ?\n\nThen, the output.\n\n\n```\nsage: ask_ISC(\"3.14\")\nAsking ISC what it knows about 3.14\n3140000117869847 sin(Pi*4/35)*sin(Pi*19/54)\n3140000181376111 Lehmer^sr(Pi)/2^(1/3)\n3140000375403483 sum(1/(5^n+(31/2*n^2-27/2*n+51)),n=1..inf)\n3140000446459760 (K(1/sr(2))+GAM(5/24))^Golomb\n3140000895104510 GAM(2/3)-Li4(1/2)^ln(Pi)\n3140001879986726 (exp(1/Pi)+5)/(-arctan(1/2)+2/3)\n...\n```\n\n\nI don't think that it would make sense to return a Python object for I have no idea what one could want to do with it automatically. Most of the symbolic formulas have no meaning in Sage, so it's really just for the user to see. Right now the method returns nothing and just prints the result. The only think that may be cool to add would be a nice way to display such results in the notebook, but I would like to hear your advice on the possible outputs too `:-)`\n\nAnd you can try this small patch if you want in the meantime.\n\nHave fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunnn !!!\n\nNathann",
+    "body": "Ok, then let's work hard so that you could have used it last week `:-P`\n\nWell, I wrote a few lines of code and it \"works\", but there are some problems for which I would like everybody's advice.\n\n```\nsage: ask_ISC(3.14)                         \nAsking ISC what it knows about 3.14000000000000\nNo result found in ISC\n```\n\nThat's the first problem : 3.14, for Sage, is equal to 3.1400000000. Which, for ISC, is totally different.\n\nThere's a way out if we only feed the function with a string instead, but it's not a good way out for it should ultimately be a method of Sage constants...\n\nSecond problem, which is just technical : where should this method appear ? Where in the code ? Or should it appear nowhere, and just be available as a function in a module ?\n\nThen, the output.\n\n```\nsage: ask_ISC(\"3.14\")\nAsking ISC what it knows about 3.14\n3140000117869847 sin(Pi*4/35)*sin(Pi*19/54)\n3140000181376111 Lehmer^sr(Pi)/2^(1/3)\n3140000375403483 sum(1/(5^n+(31/2*n^2-27/2*n+51)),n=1..inf)\n3140000446459760 (K(1/sr(2))+GAM(5/24))^Golomb\n3140000895104510 GAM(2/3)-Li4(1/2)^ln(Pi)\n3140001879986726 (exp(1/Pi)+5)/(-arctan(1/2)+2/3)\n...\n```\n\nI don't think that it would make sense to return a Python object for I have no idea what one could want to do with it automatically. Most of the symbolic formulas have no meaning in Sage, so it's really just for the user to see. Right now the method returns nothing and just prints the result. The only think that may be cool to add would be a nice way to display such results in the notebook, but I would like to hear your advice on the possible outputs too `:-)`\n\nAnd you can try this small patch if you want in the meantime.\n\nHave fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuunnn !!!\n\nNathann",
     "created_at": "2013-04-27T11:17:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/237",
     "type": "issue_comment",
@@ -313,13 +314,11 @@ Ok, then let's work hard so that you could have used it last week `:-P`
 
 Well, I wrote a few lines of code and it "works", but there are some problems for which I would like everybody's advice.
 
-
 ```
 sage: ask_ISC(3.14)                         
 Asking ISC what it knows about 3.14000000000000
 No result found in ISC
 ```
-
 
 That's the first problem : 3.14, for Sage, is equal to 3.1400000000. Which, for ISC, is totally different.
 
@@ -328,7 +327,6 @@ There's a way out if we only feed the function with a string instead, but it's n
 Second problem, which is just technical : where should this method appear ? Where in the code ? Or should it appear nowhere, and just be available as a function in a module ?
 
 Then, the output.
-
 
 ```
 sage: ask_ISC("3.14")
@@ -341,7 +339,6 @@ Asking ISC what it knows about 3.14
 3140001879986726 (exp(1/Pi)+5)/(-arctan(1/2)+2/3)
 ...
 ```
-
 
 I don't think that it would make sense to return a Python object for I have no idea what one could want to do with it automatically. Most of the symbolic formulas have no meaning in Sage, so it's really just for the user to see. Right now the method returns nothing and just prints the result. The only think that may be cool to add would be a nice way to display such results in the notebook, but I would like to hear your advice on the possible outputs too `:-)`
 

@@ -3,7 +3,7 @@
 archive/issues_006642.json:
 ```json
 {
-    "body": "CC:  mvngu @jasongrout @burcin @robertwb\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d):\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n```\n\nshould produce\n\n```\n     [sin(theta) == cos(theta)]\n```\n\nbut instead it produces\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:21764)()\n\nTypeError: solve() takes at least 1 positional argument (0 given)\n```\n\nProviding a second argument 'theta' gives another error:\n\n```\n    sage: solve(cos(theta)==sin(theta), theta)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:22291)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1380 \n   1381     def __call__(self, *args, **kwds):\n-> 1382         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1383 \n   1384     def help(self):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in function_call(self, function, args, kwds)\n   1288                                        [s.name() for s in args],\n   1289                                        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])\n-> 1290         return self.new(s)\n   1291 \n   1292     def _function_call_string(self, function, args, kwds):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in new(self, code)\n   1084 \n   1085     def new(self, code):\n-> 1086         return self(code)\n   1087 \n   1088     ###################################################################\n\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1019 \n   1020         if isinstance(x, basestring):\n-> 1021             return cls(self, x, name=name)\n   1022         try:\n   1023             return self._coerce_from_special_method(x)\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1423             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1424                 self._session_number = -1\n-> 1425                 raise TypeError, x\n   1426         self._session_number = parent._session_number\n   1427 \n\nTypeError: Error executing code in Maxima\nCODE:\n\tsage4 : to_poly_solve(sage0,sage3)$\nMaxima ERROR:\n\t\nNonalgebraic argument given to 'topoly'\n#0: to_poly_solve(e=cos(theta) = sin(theta),vars=theta)(topoly_solver.mac line 10)\n```\n\nThe first version of this -- `solve(cos(theta)==sin(theta))` -- is in the tutorial, and so presumably used to work.  \n\nSee #6572 for a related ticket which, among other things, tells doctesting to skip this test in the tutorial.  If the underlying problem is solved, the test in the tutorial should be restored, and of course a test should be put into the main Sage code illustrating that it now works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6642\n\n",
+    "body": "CC:  mvngu @jasongrout @burcin @robertwb\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d):\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n```\nshould produce\n\n```\n     [sin(theta) == cos(theta)]\n```\nbut instead it produces\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:21764)()\n\nTypeError: solve() takes at least 1 positional argument (0 given)\n```\nProviding a second argument 'theta' gives another error:\n\n```\n    sage: solve(cos(theta)==sin(theta), theta)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:22291)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1380 \n   1381     def __call__(self, *args, **kwds):\n-> 1382         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1383 \n   1384     def help(self):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in function_call(self, function, args, kwds)\n   1288                                        [s.name() for s in args],\n   1289                                        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])\n-> 1290         return self.new(s)\n   1291 \n   1292     def _function_call_string(self, function, args, kwds):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in new(self, code)\n   1084 \n   1085     def new(self, code):\n-> 1086         return self(code)\n   1087 \n   1088     ###################################################################\n\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1019 \n   1020         if isinstance(x, basestring):\n-> 1021             return cls(self, x, name=name)\n   1022         try:\n   1023             return self._coerce_from_special_method(x)\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1423             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1424                 self._session_number = -1\n-> 1425                 raise TypeError, x\n   1426         self._session_number = parent._session_number\n   1427 \n\nTypeError: Error executing code in Maxima\nCODE:\n\tsage4 : to_poly_solve(sage0,sage3)$\nMaxima ERROR:\n\t\nNonalgebraic argument given to 'topoly'\n#0: to_poly_solve(e=cos(theta) = sin(theta),vars=theta)(topoly_solver.mac line 10)\n```\nThe first version of this -- `solve(cos(theta)==sin(theta))` -- is in the tutorial, and so presumably used to work.  \n\nSee #6572 for a related ticket which, among other things, tells doctesting to skip this test in the tutorial.  If the underlying problem is solved, the test in the tutorial should be restored, and of course a test should be put into the main Sage code illustrating that it now works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6642\n\n",
     "created_at": "2009-07-27T17:13:55Z",
     "labels": [
         "component: symbolics",
@@ -24,13 +24,11 @@ From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread
      sage: theta = var('theta')
      sage: solve(cos(theta)==sin(theta))
 ```
-
 should produce
 
 ```
      [sin(theta) == cos(theta)]
 ```
-
 but instead it produces
 
 ```
@@ -50,7 +48,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: solve() takes at least 1 positional argument (0 given)
 ```
-
 Providing a second argument 'theta' gives another error:
 
 ```
@@ -113,7 +110,6 @@ Maxima ERROR:
 Nonalgebraic argument given to 'topoly'
 #0: to_poly_solve(e=cos(theta) = sin(theta),vars=theta)(topoly_solver.mac line 10)
 ```
-
 The first version of this -- `solve(cos(theta)==sin(theta))` -- is in the tutorial, and so presumably used to work.  
 
 See #6572 for a related ticket which, among other things, tells doctesting to skip this test in the tutorial.  If the underlying problem is solved, the test in the tutorial should be restored, and of course a test should be put into the main Sage code illustrating that it now works.
@@ -167,7 +163,7 @@ This should fix the problem.  The behavior of explicit_solutions has been clarif
 archive/issue_comments_054360.json:
 ```json
 {
-    "body": "In 4.1.2.alpha1, I'm getting something odd when I don't specify `explicit_solutions`:\n\n```\nsage: solve(sin(x) == cos(x), x, explicit_solutions=False)\n[sin(x) == cos(x)]\nsage: solve(sin(x) == cos(x), x, explicit_solutions=True)\n[]\nsage: solve(sin(x) == cos(x), x)\n[x == r2, x == r1]\n```\n\nI think at least two changes are in order, if I understand the code right: first, change the default value for explicit_solutions from \"None\" to \"False\".  As it stands, in the \"if\" block that starts with the line\n\n```\nif explicit_solutions is not False:\n```\n\nthe code is executed if explicit_solutions is None or True, but not if it's False.  I suppose this line could be changed to\n\n```\nif bool(explicit_solutions) is not False:\n```\n\nSecond, several comments (\"We only reach this if explicit_solutions is None\", \"This is fine because explicit_solutions is None\") may need to be changed to reflect this.\n\nOf course, I could be misunderstanding everything, and we want \"False\", \"True\", and \"None\" to each behave differently.  If so, this needs to be documented; for example, \"explicit_solutions\" is not a bool in this case.",
+    "body": "In 4.1.2.alpha1, I'm getting something odd when I don't specify `explicit_solutions`:\n\n```\nsage: solve(sin(x) == cos(x), x, explicit_solutions=False)\n[sin(x) == cos(x)]\nsage: solve(sin(x) == cos(x), x, explicit_solutions=True)\n[]\nsage: solve(sin(x) == cos(x), x)\n[x == r2, x == r1]\n```\nI think at least two changes are in order, if I understand the code right: first, change the default value for explicit_solutions from \"None\" to \"False\".  As it stands, in the \"if\" block that starts with the line\n\n```\nif explicit_solutions is not False:\n```\nthe code is executed if explicit_solutions is None or True, but not if it's False.  I suppose this line could be changed to\n\n```\nif bool(explicit_solutions) is not False:\n```\nSecond, several comments (\"We only reach this if explicit_solutions is None\", \"This is fine because explicit_solutions is None\") may need to be changed to reflect this.\n\nOf course, I could be misunderstanding everything, and we want \"False\", \"True\", and \"None\" to each behave differently.  If so, this needs to be documented; for example, \"explicit_solutions\" is not a bool in this case.",
     "created_at": "2009-09-08T20:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -186,19 +182,16 @@ sage: solve(sin(x) == cos(x), x, explicit_solutions=True)
 sage: solve(sin(x) == cos(x), x)
 [x == r2, x == r1]
 ```
-
 I think at least two changes are in order, if I understand the code right: first, change the default value for explicit_solutions from "None" to "False".  As it stands, in the "if" block that starts with the line
 
 ```
 if explicit_solutions is not False:
 ```
-
 the code is executed if explicit_solutions is None or True, but not if it's False.  I suppose this line could be changed to
 
 ```
 if bool(explicit_solutions) is not False:
 ```
-
 Second, several comments ("We only reach this if explicit_solutions is None", "This is fine because explicit_solutions is None") may need to be changed to reflect this.
 
 Of course, I could be misunderstanding everything, and we want "False", "True", and "None" to each behave differently.  If so, this needs to be documented; for example, "explicit_solutions" is not a bool in this case.
@@ -306,7 +299,7 @@ Also, there is one doctest I am currently not testing.  It is fixed in the CVS v
 archive/issue_comments_054366.json:
 ```json
 {
-    "body": "This seems to fix the issue with the tutorial.  On the other hand, on sage.math, I'm getting a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/rings/number_field/number_field_element.pyx\", line 1421:\n    sage: SR(a)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[20]>\", line 1, in <module>\n        SR(a)###line 1421:\n    sage: SR(a)\n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4174)\n      File \"coerce_maps.pyx\", line 156, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4067)\n      File \"number_field_element.pyx\", line 1468, in sage.rings.number_field.number_field_element.NumberFieldElement._symbolic_ (sage/rings/number_field/number_field_element.cpp:11860)\n    TypeError: Unable to solve by radicals.\n```\n",
+    "body": "This seems to fix the issue with the tutorial.  On the other hand, on sage.math, I'm getting a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/devel/sage/sage/rings/number_field/number_field_element.pyx\", line 1421:\n    sage: SR(a)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[20]>\", line 1, in <module>\n        SR(a)###line 1421:\n    sage: SR(a)\n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4174)\n      File \"coerce_maps.pyx\", line 156, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4067)\n      File \"number_field_element.pyx\", line 1468, in sage.rings.number_field.number_field_element.NumberFieldElement._symbolic_ (sage/rings/number_field/number_field_element.cpp:11860)\n    TypeError: Unable to solve by radicals.\n```",
     "created_at": "2009-10-05T20:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -341,7 +334,6 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_054367.json:
@@ -369,7 +361,7 @@ If an approximation is still desired, it's easy to pass to_poly_solve=True in at
 archive/issue_comments_054368.json:
 ```json
 {
-    "body": "Well, it does say right before the doctest (lines 1416-1418 of number_field_element.pyx)\n\n```\n        For degree greater than 5, sometimes Galois theory prevents a\n        closed-form solution.  In this case, a numerical approximation\n        is used::\n```\n\nGiven this and the output of the doctest (-1.1673040153), I think numerical approximation is the way to go.  Do you want to make a new patch with this change (and also fixing the \"approximtae\" typo that you pointed out)?  I think that it can be given a positive review if it passes all doctests.",
+    "body": "Well, it does say right before the doctest (lines 1416-1418 of number_field_element.pyx)\n\n```\n        For degree greater than 5, sometimes Galois theory prevents a\n        closed-form solution.  In this case, a numerical approximation\n        is used::\n```\nGiven this and the output of the doctest (-1.1673040153), I think numerical approximation is the way to go.  Do you want to make a new patch with this change (and also fixing the \"approximtae\" typo that you pointed out)?  I think that it can be given a positive review if it passes all doctests.",
     "created_at": "2009-10-08T02:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -385,7 +377,6 @@ Well, it does say right before the doctest (lines 1416-1418 of number_field_elem
         closed-form solution.  In this case, a numerical approximation
         is used::
 ```
-
 Given this and the output of the doctest (-1.1673040153), I think numerical approximation is the way to go.  Do you want to make a new patch with this change (and also fixing the "approximtae" typo that you pointed out)?  I think that it can be given a positive review if it passes all doctests.
 
 
@@ -395,7 +386,7 @@ Given this and the output of the doctest (-1.1673040153), I think numerical appr
 archive/issue_comments_054369.json:
 ```json
 {
-    "body": "> Do you want to make a new patch \n\nSorry, this is silly.  I'll make a referee's patch since you already said exactly what to do.  I'm running doctests now, and if all goes well, I'll post the referee's patch and a positive review.",
+    "body": "> Do you want to make a new patch \n\n\nSorry, this is silly.  I'll make a referee's patch since you already said exactly what to do.  I'm running doctests now, and if all goes well, I'll post the referee's patch and a positive review.",
     "created_at": "2009-10-08T03:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
@@ -405,6 +396,7 @@ archive/issue_comments_054369.json:
 ```
 
 > Do you want to make a new patch 
+
 
 Sorry, this is silly.  I'll make a referee's patch since you already said exactly what to do.  I'm running doctests now, and if all goes well, I'll post the referee's patch and a positive review.
 

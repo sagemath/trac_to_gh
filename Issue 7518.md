@@ -3,7 +3,7 @@
 archive/issues_007518.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\n\nwhereas\n\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\nwhereas\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
     "created_at": "2009-11-23T07:00:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ CC:  david.kirkby@onetel.net
 
 Observe:
 
-
 ```
 sage: Q.<x> = ZZ[]
 sage: gcd(Q(2),x^2)
@@ -31,9 +30,7 @@ sage: xgcd(Q(2),x^2)
 <hang forever!>
 ```
 
-
 whereas
-
 
 ```
 sage: Q.<x> = PolynomialRing(ZZ,implementation="NTL")
@@ -44,7 +41,6 @@ sage: gcd(Q(2),x^2)
 sage: xgcd(Q(2),x^2)
 (4, 2, 0)
 ```
-
 
 works fine.
 
@@ -96,7 +92,7 @@ That Report Upstream button is *annoying*.  I just reported it upstream, and the
 archive/issue_comments_063569.json:
 ```json
 {
-    "body": "\n```\nfrom\tBill Hart <goodwillhart@googlemail.com>\nto\tWilliam Stein <wstein@gmail.com>\ndate\tThu, Dec 24, 2009 at 5:23 PM\nsubject\tRe: flint bug maybe\n\t\nhide details 5:23 PM (7 hours ago)\n\t\nYes, it is a (fairly trivial) flint bug. I'll try and issue a fix later today.\n\nThanks.\n\nBill.\n```\n",
+    "body": "```\nfrom\tBill Hart <goodwillhart@googlemail.com>\nto\tWilliam Stein <wstein@gmail.com>\ndate\tThu, Dec 24, 2009 at 5:23 PM\nsubject\tRe: flint bug maybe\n\t\nhide details 5:23 PM (7 hours ago)\n\t\nYes, it is a (fairly trivial) flint bug. I'll try and issue a fix later today.\n\nThanks.\n\nBill.\n```",
     "created_at": "2009-12-25T08:33:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
@@ -104,7 +100,6 @@ archive/issue_comments_063569.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 from	Bill Hart <goodwillhart@googlemail.com>
@@ -120,7 +115,6 @@ Thanks.
 
 Bill.
 ```
-
 
 
 
@@ -151,7 +145,7 @@ What I think would be usefully added is 'Reported upstream. Useful feedback'. So
 archive/issue_comments_063571.json:
 ```json
 {
-    "body": "\n```\nOK, I persisted with the very slow machine and got flint-1.5.1\nreleased, which fixes this bug. All the test code passes, including\nthe test function I wrote for the case reported.\n-- Bill Hart\n```\n",
+    "body": "```\nOK, I persisted with the very slow machine and got flint-1.5.1\nreleased, which fixes this bug. All the test code passes, including\nthe test function I wrote for the case reported.\n-- Bill Hart\n```",
     "created_at": "2009-12-25T18:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
@@ -160,14 +154,12 @@ archive/issue_comments_063571.json:
 }
 ```
 
-
 ```
 OK, I persisted with the very slow machine and got flint-1.5.1
 released, which fixes this bug. All the test code passes, including
 the test function I wrote for the case reported.
 -- Bill Hart
 ```
-
 
 
 
@@ -232,7 +224,7 @@ Changing assignee from @aghitza to tbd.
 archive/issue_comments_063575.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> Is anyone looking up updating the flint package in Sage to cure this bug? According to this ticket, flint 1.5.1 was released 8 months ago. \n> \n> Dave \n\nI'm upgrading FLINT to 1.5.2 (not 1.6, at least for the moment, nor 2.x) for a couple of reasons (e.g. failing to build the test suite with MPIR 2.x, cf. #9858, #8664; ARM support, cf. #10328). I had an almost ready spkg last year, but now have to rebase my changes since the p5 has meanwhile become a p9. (There's a lot wrong with this spkg, especially the `makefile`, but also `spkg-install` and even `SPKG.txt`.)\n\nI so far can confirm that the failing example given above works with FLINT 1.5.2, so this ticket can most probably be closed when a new FLINT spkg has been merged.\n\nStay tuned on #9858.",
+    "body": "Replying to [comment:7 drkirkby]:\n> Is anyone looking up updating the flint package in Sage to cure this bug? According to this ticket, flint 1.5.1 was released 8 months ago. \n> \n> Dave \n\n\nI'm upgrading FLINT to 1.5.2 (not 1.6, at least for the moment, nor 2.x) for a couple of reasons (e.g. failing to build the test suite with MPIR 2.x, cf. #9858, #8664; ARM support, cf. #10328). I had an almost ready spkg last year, but now have to rebase my changes since the p5 has meanwhile become a p9. (There's a lot wrong with this spkg, especially the `makefile`, but also `spkg-install` and even `SPKG.txt`.)\n\nI so far can confirm that the failing example given above works with FLINT 1.5.2, so this ticket can most probably be closed when a new FLINT spkg has been merged.\n\nStay tuned on #9858.",
     "created_at": "2011-09-01T22:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
@@ -245,6 +237,7 @@ Replying to [comment:7 drkirkby]:
 > Is anyone looking up updating the flint package in Sage to cure this bug? According to this ticket, flint 1.5.1 was released 8 months ago. 
 > 
 > Dave 
+
 
 I'm upgrading FLINT to 1.5.2 (not 1.6, at least for the moment, nor 2.x) for a couple of reasons (e.g. failing to build the test suite with MPIR 2.x, cf. #9858, #8664; ARM support, cf. #10328). I had an almost ready spkg last year, but now have to rebase my changes since the p5 has meanwhile become a p9. (There's a lot wrong with this spkg, especially the `makefile`, but also `spkg-install` and even `SPKG.txt`.)
 

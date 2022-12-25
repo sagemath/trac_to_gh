@@ -3,7 +3,7 @@
 archive/issues_001726.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIncluding a very, very experimental spkg for mayavi2. This may go like this:\n\n\n```\nOk, I got the sources.\nsvn co https://svn.enthought.com/svn/enthought/autobuild enthought.autobuild\n\nThey are now in a directory mayavi_2.0.20080106/mayavi_build\n\nCopying egg_builder.py into it.\n\nNow I don't run python egg_builder.py :)\nInstead I write an spkg_install script.\n\nBut first of all we want to remove all directories not needed to build mayavi2.\nAny help appreciated!\n\nMayavi (requires: Traits, TraitsGUI, EnvisageCore, AppTools)\n\n     * enthought.mayavi\n     * enthought.tvtk\n\nLet's pretend all unnecessary directories are gone. Now my spkg_install\nscript looks like:\n\n#!/bin/sh\n\ncd mayavi_build\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*\n\nUnder the condition that all external dependencies are fullfilled,\nthis will install mayavi2 in the sage environment.\nIs this correct? What are precisely the external dependencies for this build?\nwxPython +\nsetuptools +\nvtk +\nswig ?\npyrex +\nPIL -\n\nNow cd .. and do\nsage -pkg mayavi_2.0.20080106\n\nAnd after some time we have mayavi_2.0.20080106.spkg ready for testing.\n\n[jaap@paix sagefiles]$ ls -l mayavi_2.0.20080106*\n-rw-rw-r-- 1 jaap jaap 54051652 2008-01-06 21:43 mayavi_2.0.20080106.spkg\n\nmayavi_2.0.20080106:\ntotal 8\ndrwxrwxr-x 50 jaap jaap 4096 2008-01-06 21:06 mayavi_build\n-rw-rw-r--  1 jaap jaap  106 2008-01-06 21:40 spkg-install\n\nThe spkg is *big* also because all the ets source is still in it!\n\nLet's do it now. I'm trying this on my latest installed sage-2.9.2\nThis may take some time :), mostly in building the dependencies.\n\nCheers,\n\nJaap\n\n```\n\n\nIn the near future this will become easier. External dependencies should be resolved by making a \"meta\"-package.\n\n\nFor some premature results (Fedora 7/8) see:\nhttp://picasaweb.google.nl/j.spies88/Mayavi2FromSage\n\nSee also: http://sage.math.washington.edu/home/jsp/spkg/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1726\n\n",
+    "body": "Assignee: @williamstein\n\nIncluding a very, very experimental spkg for mayavi2. This may go like this:\n\n```\nOk, I got the sources.\nsvn co https://svn.enthought.com/svn/enthought/autobuild enthought.autobuild\n\nThey are now in a directory mayavi_2.0.20080106/mayavi_build\n\nCopying egg_builder.py into it.\n\nNow I don't run python egg_builder.py :)\nInstead I write an spkg_install script.\n\nBut first of all we want to remove all directories not needed to build mayavi2.\nAny help appreciated!\n\nMayavi (requires: Traits, TraitsGUI, EnvisageCore, AppTools)\n\n     * enthought.mayavi\n     * enthought.tvtk\n\nLet's pretend all unnecessary directories are gone. Now my spkg_install\nscript looks like:\n\n#!/bin/sh\n\ncd mayavi_build\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*\n\nUnder the condition that all external dependencies are fullfilled,\nthis will install mayavi2 in the sage environment.\nIs this correct? What are precisely the external dependencies for this build?\nwxPython +\nsetuptools +\nvtk +\nswig ?\npyrex +\nPIL -\n\nNow cd .. and do\nsage -pkg mayavi_2.0.20080106\n\nAnd after some time we have mayavi_2.0.20080106.spkg ready for testing.\n\n[jaap@paix sagefiles]$ ls -l mayavi_2.0.20080106*\n-rw-rw-r-- 1 jaap jaap 54051652 2008-01-06 21:43 mayavi_2.0.20080106.spkg\n\nmayavi_2.0.20080106:\ntotal 8\ndrwxrwxr-x 50 jaap jaap 4096 2008-01-06 21:06 mayavi_build\n-rw-rw-r--  1 jaap jaap  106 2008-01-06 21:40 spkg-install\n\nThe spkg is *big* also because all the ets source is still in it!\n\nLet's do it now. I'm trying this on my latest installed sage-2.9.2\nThis may take some time :), mostly in building the dependencies.\n\nCheers,\n\nJaap\n\n```\n\nIn the near future this will become easier. External dependencies should be resolved by making a \"meta\"-package.\n\n\nFor some premature results (Fedora 7/8) see:\nhttp://picasaweb.google.nl/j.spies88/Mayavi2FromSage\n\nSee also: http://sage.math.washington.edu/home/jsp/spkg/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1726\n\n",
     "created_at": "2008-01-08T22:23:50Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,6 @@ archive/issues_001726.json:
 Assignee: @williamstein
 
 Including a very, very experimental spkg for mayavi2. This may go like this:
-
 
 ```
 Ok, I got the sources.
@@ -84,7 +83,6 @@ Cheers,
 Jaap
 
 ```
-
 
 In the near future this will become easier. External dependencies should be resolved by making a "meta"-package.
 

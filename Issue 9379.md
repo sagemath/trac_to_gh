@@ -80,7 +80,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089001.json:
 ```json
 {
-    "body": "It might be better to somehow use the CC environment variable!\n\n```\n\nflat:~ wstein$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n/Users/wstein\nsage subshell$ echo $CC\ngcc\n/Users/wstein\nsage subshell$ \n```\n",
+    "body": "It might be better to somehow use the CC environment variable!\n\n```\n\nflat:~ wstein$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n/Users/wstein\nsage subshell$ echo $CC\ngcc\n/Users/wstein\nsage subshell$ \n```",
     "created_at": "2010-07-06T13:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -110,13 +110,12 @@ sage subshell$
 
 
 
-
 ---
 
 archive/issue_comments_089002.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> It might be better to somehow use the CC environment variable!\n> {{{\n> \n> flat:~ wstein$ sage -sh\n> \n> Starting subshell with Sage environment variables set.\n> Be sure to exit when you are done and do not do anything\n> with other copies of Sage!\n> \n> Bypassing shell configuration files ...\n> \n> /Users/wstein\n> sage subshell$ echo $CC\n> gcc\n> /Users/wstein\n> sage subshell$ \n> }}}\n\n\nYes, I would agree - using of the CC environment variable would be preferable. \n\nIf $(CC) does not work, try ${CC}. The target does not have 'gcc' in the name, so there is no reason to hard-code gcc. \n\nDave",
+    "body": "Replying to [comment:3 was]:\n> It might be better to somehow use the CC environment variable!\n> \n> ```\n> \n> flat:~ wstein$ sage -sh\n> \n> Starting subshell with Sage environment variables set.\n> Be sure to exit when you are done and do not do anything\n> with other copies of Sage!\n> \n> Bypassing shell configuration files ...\n> \n> /Users/wstein\n> sage subshell$ echo $CC\n> gcc\n> /Users/wstein\n> sage subshell$ \n> ```\n\n\n\nYes, I would agree - using of the CC environment variable would be preferable. \n\nIf $(CC) does not work, try ${CC}. The target does not have 'gcc' in the name, so there is no reason to hard-code gcc. \n\nDave",
     "created_at": "2010-07-06T18:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -127,7 +126,8 @@ archive/issue_comments_089002.json:
 
 Replying to [comment:3 was]:
 > It might be better to somehow use the CC environment variable!
-> {{{
+> 
+> ```
 > 
 > flat:~ wstein$ sage -sh
 > 
@@ -142,7 +142,8 @@ Replying to [comment:3 was]:
 > gcc
 > /Users/wstein
 > sage subshell$ 
-> }}}
+> ```
+
 
 
 Yes, I would agree - using of the CC environment variable would be preferable. 
@@ -270,7 +271,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_089009.json:
 ```json
 {
-    "body": "Replying to [ticket:9379 mariah]:\n> Sage built on skynet/cleo (ia64-Linux-rhel) \n> fails the following test when run on \n> skynet/iras (ia64-Linux-suse):\n> \n> ./sage -t -long \"devel/sage/sage/plot/plot3d/tachyon.py\"\n> \n> The reason is because tachyon is being\n> built with cc rather than gcc.\n\nIs this really true?  I would like to know how using a different compiler can cause a doctest to fail.  What is the doctest error?  Maybe changing `cc` to `gcc` fixes the issue, but is that really the right fix?",
+    "body": "Replying to [ticket:9379 mariah]:\n> Sage built on skynet/cleo (ia64-Linux-rhel) \n> fails the following test when run on \n> skynet/iras (ia64-Linux-suse):\n> \n> ./sage -t -long \"devel/sage/sage/plot/plot3d/tachyon.py\"\n> \n> The reason is because tachyon is being\n> built with cc rather than gcc.\n\n\nIs this really true?  I would like to know how using a different compiler can cause a doctest to fail.  What is the doctest error?  Maybe changing `cc` to `gcc` fixes the issue, but is that really the right fix?",
     "created_at": "2011-01-09T07:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -288,6 +289,7 @@ Replying to [ticket:9379 mariah]:
 > 
 > The reason is because tachyon is being
 > built with cc rather than gcc.
+
 
 Is this really true?  I would like to know how using a different compiler can cause a doctest to fail.  What is the doctest error?  Maybe changing `cc` to `gcc` fixes the issue, but is that really the right fix?
 
@@ -477,7 +479,7 @@ Patch to Make.arch that removed CC, AR, RANLIB overrides
 archive/issue_comments_089019.json:
 ```json
 {
-    "body": "Replying to [comment:14 vbraun]:\n\n> The gcc wrapper from #10572 automatically \n>   1. calls gcc when cc is invoked, and\n>   1. adds the `--hash-style=both` option.\n> I double checked that this allows one to build `tachyon` on cleo, copy `tachyon` to iras, and successfully doctest on iras.\n\nBe careful. Both Intel and Sun/Oracle produce compilers for x86 that are not called 'gcc'. On other platforms compilers can have all manner of names - aCC is one I can think of.\n\nDave",
+    "body": "Replying to [comment:14 vbraun]:\n\n> The gcc wrapper from #10572 automatically \n> 1. calls gcc when cc is invoked, and\n> 2. adds the `--hash-style=both` option.\n> I double checked that this allows one to build `tachyon` on cleo, copy `tachyon` to iras, and successfully doctest on iras.\n\n\nBe careful. Both Intel and Sun/Oracle produce compilers for x86 that are not called 'gcc'. On other platforms compilers can have all manner of names - aCC is one I can think of.\n\nDave",
     "created_at": "2011-02-16T08:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
@@ -489,9 +491,10 @@ archive/issue_comments_089019.json:
 Replying to [comment:14 vbraun]:
 
 > The gcc wrapper from #10572 automatically 
->   1. calls gcc when cc is invoked, and
->   1. adds the `--hash-style=both` option.
+> 1. calls gcc when cc is invoked, and
+> 2. adds the `--hash-style=both` option.
 > I double checked that this allows one to build `tachyon` on cleo, copy `tachyon` to iras, and successfully doctest on iras.
+
 
 Be careful. Both Intel and Sun/Oracle produce compilers for x86 that are not called 'gcc'. On other platforms compilers can have all manner of names - aCC is one I can think of.
 

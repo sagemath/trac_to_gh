@@ -3,7 +3,7 @@
 archive/issues_001914.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis works in python:\n\n```\n>>> print \"abc \\\"def\\\"\"\nabc \"def\"\n```\n\n\nbut it's broken in sage:\n\n```\nsage: print \"abc \\\"def\\\"\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     print \"abc \\\"def._backslash_()\"\"\n                                    ^\n<type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1914\n\n",
+    "body": "Assignee: @williamstein\n\nThis works in python:\n\n```\n>>> print \"abc \\\"def\\\"\"\nabc \"def\"\n```\n\nbut it's broken in sage:\n\n```\nsage: print \"abc \\\"def\\\"\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     print \"abc \\\"def._backslash_()\"\"\n                                    ^\n<type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1914\n\n",
     "created_at": "2008-01-24T16:55:08Z",
     "labels": [
         "component: user interface",
@@ -25,7 +25,6 @@ This works in python:
 abc "def"
 ```
 
-
 but it's broken in sage:
 
 ```
@@ -36,7 +35,6 @@ sage: print "abc \"def\""
                                     ^
 <type 'exceptions.SyntaxError'>: EOL while scanning single-quoted string
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1914
@@ -123,7 +121,7 @@ archive/issue_events_004610.json:
 archive/issue_comments_012099.json:
 ```json
 {
-    "body": "This works for me on 3.0.2-rc2. There is also the following doctest in sage/misc/preparser.py around line 40 to cover this:\n\n\n```\nA string with escaped quotes in it (the point here is that the\npreparser doesn't get confused by the internal quotes):\n    sage: \"\\\"Yes,\\\" he said.\"\n    '\"Yes,\" he said.'\n    sage: s = \"\\\\\"; s\n    '\\\\'\n```\n\n\nI think this bug can safely be resolved as worksforme.",
+    "body": "This works for me on 3.0.2-rc2. There is also the following doctest in sage/misc/preparser.py around line 40 to cover this:\n\n```\nA string with escaped quotes in it (the point here is that the\npreparser doesn't get confused by the internal quotes):\n    sage: \"\\\"Yes,\\\" he said.\"\n    '\"Yes,\" he said.'\n    sage: s = \"\\\\\"; s\n    '\\\\'\n```\n\nI think this bug can safely be resolved as worksforme.",
     "created_at": "2008-05-24T09:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1914",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ archive/issue_comments_012099.json:
 
 This works for me on 3.0.2-rc2. There is also the following doctest in sage/misc/preparser.py around line 40 to cover this:
 
-
 ```
 A string with escaped quotes in it (the point here is that the
 preparser doesn't get confused by the internal quotes):
@@ -143,7 +140,6 @@ preparser doesn't get confused by the internal quotes):
     sage: s = "\\"; s
     '\\'
 ```
-
 
 I think this bug can safely be resolved as worksforme.
 

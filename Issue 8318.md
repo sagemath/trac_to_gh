@@ -3,7 +3,7 @@
 archive/issues_008318.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nWhen I coded the `overlap_partition` function in 2007, the purpose was to study equations on words. But, when the sage-words code was merged into sage in december 2008, the disjoint set data structure was not ready so that sage-words got merged without it. That is why `overlap_partition` returns a set of sets (and also why I don't use the function ever since then).\n\nThe disjoint set data structure got merged into sage recently : #6775. So this patch changes the behavior of `overlap_partition` to its initial goal.\n\nBEFORE (sage-4.3.2):\n\n\n```\nsage: w = Words(range(10))(range(10))\nsage: w.overlap_partition(w,3)\n{{0, 9, 3, 6}, {1, 4, 7}, {8, 2, 5}}\nsage: \nsage: type(_)\n<class 'sage.sets.set.Set_object_enumerated'>\n```\n\n\nWITH THE PATCH:\n\nThe following example illustrates that a word that overlaps with itself has a period :\n\n\n```\nsage: w = Words(range(10))(range(10))\nsage: p = w.overlap_partition(w, 3)\nsage: type(p)\n<type 'sage.sets.disjoint_set.DisjointSet_of_hashables'>\nsage: d = p.element_to_root_dict()\nsage: m = WordMorphism(d)\nsage: print m\nWordMorphism: 0->3, 1->4, 2->5, 3->3, 4->4, 5->5, 6->3, 7->4, 8->5, 9->3\nsage: m(w)\nword: 3453453453\n```\n\n\nThe following example shows that if the image of a word under an involution f overlaps its square, then it is f-symmetric i.e. the product of two f-palindromes :\n\n\n```\nsage: W = Words([-11,-9,..,11])\nsage: w = W([1,3,..,11])\nsage: w\nword: 1,3,5,7,9,11\nsage: inv = lambda x:-x\nsage: f = WordMorphism(dict( (a, inv(a)) for a in W.alphabet()))\nsage: print f\nWordMorphism: -1->1, -11->11, -3->3, -5->5, -7->7, -9->9, 1->-1, 11->-11, 3->-3, 5->-5, 7->-7, 9->-9\nsage: p = (w*w).overlap_partition(f(w).reversal(), 2, involution=inv)\nsage: m = WordMorphism(p.element_to_root_dict())\nsage: m(w)\nword: 1,-1,5,7,-7,-5\nsage: m(w).is_symmetric(f)\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8318\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nWhen I coded the `overlap_partition` function in 2007, the purpose was to study equations on words. But, when the sage-words code was merged into sage in december 2008, the disjoint set data structure was not ready so that sage-words got merged without it. That is why `overlap_partition` returns a set of sets (and also why I don't use the function ever since then).\n\nThe disjoint set data structure got merged into sage recently : #6775. So this patch changes the behavior of `overlap_partition` to its initial goal.\n\nBEFORE (sage-4.3.2):\n\n```\nsage: w = Words(range(10))(range(10))\nsage: w.overlap_partition(w,3)\n{{0, 9, 3, 6}, {1, 4, 7}, {8, 2, 5}}\nsage: \nsage: type(_)\n<class 'sage.sets.set.Set_object_enumerated'>\n```\n\nWITH THE PATCH:\n\nThe following example illustrates that a word that overlaps with itself has a period :\n\n```\nsage: w = Words(range(10))(range(10))\nsage: p = w.overlap_partition(w, 3)\nsage: type(p)\n<type 'sage.sets.disjoint_set.DisjointSet_of_hashables'>\nsage: d = p.element_to_root_dict()\nsage: m = WordMorphism(d)\nsage: print m\nWordMorphism: 0->3, 1->4, 2->5, 3->3, 4->4, 5->5, 6->3, 7->4, 8->5, 9->3\nsage: m(w)\nword: 3453453453\n```\n\nThe following example shows that if the image of a word under an involution f overlaps its square, then it is f-symmetric i.e. the product of two f-palindromes :\n\n```\nsage: W = Words([-11,-9,..,11])\nsage: w = W([1,3,..,11])\nsage: w\nword: 1,3,5,7,9,11\nsage: inv = lambda x:-x\nsage: f = WordMorphism(dict( (a, inv(a)) for a in W.alphabet()))\nsage: print f\nWordMorphism: -1->1, -11->11, -3->3, -5->5, -7->7, -9->9, 1->-1, 11->-11, 3->-3, 5->-5, 7->-7, 9->-9\nsage: p = (w*w).overlap_partition(f(w).reversal(), 2, involution=inv)\nsage: m = WordMorphism(p.element_to_root_dict())\nsage: m(w)\nword: 1,-1,5,7,-7,-5\nsage: m(w).is_symmetric(f)\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8318\n\n",
     "created_at": "2010-02-21T02:27:56Z",
     "labels": [
         "component: combinatorics"
@@ -25,7 +25,6 @@ The disjoint set data structure got merged into sage recently : #6775. So this p
 
 BEFORE (sage-4.3.2):
 
-
 ```
 sage: w = Words(range(10))(range(10))
 sage: w.overlap_partition(w,3)
@@ -35,11 +34,9 @@ sage: type(_)
 <class 'sage.sets.set.Set_object_enumerated'>
 ```
 
-
 WITH THE PATCH:
 
 The following example illustrates that a word that overlaps with itself has a period :
-
 
 ```
 sage: w = Words(range(10))(range(10))
@@ -54,9 +51,7 @@ sage: m(w)
 word: 3453453453
 ```
 
-
 The following example shows that if the image of a word under an involution f overlaps its square, then it is f-symmetric i.e. the product of two f-palindromes :
-
 
 ```
 sage: W = Words([-11,-9,..,11])
@@ -74,7 +69,6 @@ word: 1,-1,5,7,-7,-5
 sage: m(w).is_symmetric(f)
 True
 ```
-
 
 
 

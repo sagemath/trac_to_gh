@@ -353,7 +353,7 @@ Merged iml-copyright.2.patch in Sage 3.0.alpha0
 archive/issue_comments_014430.json:
 ```json
 {
-    "body": "Re genus2reduction-copyright2.patch:\n\n```\n[22:07] <mabshoff> wstein: genus2reduction is GPL V3? Is that really the case?\n[22:07] <wstein> No.\n[22:07] <wstein> genus2reduction is gpl v2+\n[22:07] <mabshoff> ok, then that patch by Tim is *wrong*\n[22:07] <wstein> I got it licened way way before gpl v3 ever existed.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Re genus2reduction-copyright2.patch:\n\n```\n[22:07] <mabshoff> wstein: genus2reduction is GPL V3? Is that really the case?\n[22:07] <wstein> No.\n[22:07] <wstein> genus2reduction is gpl v2+\n[22:07] <mabshoff> ok, then that patch by Tim is *wrong*\n[22:07] <wstein> I got it licened way way before gpl v3 ever existed.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T20:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
@@ -371,7 +371,6 @@ Re genus2reduction-copyright2.patch:
 [22:07] <mabshoff> ok, then that patch by Tim is *wrong*
 [22:07] <wstein> I got it licened way way before gpl v3 ever existed.
 ```
-
 
 Cheers,
 
@@ -406,7 +405,7 @@ At least one of us is confused.
 archive/issue_comments_014432.json:
 ```json
 {
-    "body": "Replying to [comment:4 tabbott]:\n> Unless I'm mistaken, the patch says gplv2+, not gplv3.  I'm looking at\n> \n> http://trac.sagemath.org/sage_trac/attachment/ticket/2199/genus2reduction-copyright.patch\n> \n> At least one of us is confused.\n\nAnd that would be me. Sorry, got too many patches in play and tabs open in firefox :)\n\nCheers.\n\nMichael",
+    "body": "Replying to [comment:4 tabbott]:\n> Unless I'm mistaken, the patch says gplv2+, not gplv3.  I'm looking at\n> \n> http://trac.sagemath.org/sage_trac/attachment/ticket/2199/genus2reduction-copyright.patch\n> \n> At least one of us is confused.\n\n\nAnd that would be me. Sorry, got too many patches in play and tabs open in firefox :)\n\nCheers.\n\nMichael",
     "created_at": "2008-04-01T20:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
@@ -421,6 +420,7 @@ Replying to [comment:4 tabbott]:
 > http://trac.sagemath.org/sage_trac/attachment/ticket/2199/genus2reduction-copyright.patch
 > 
 > At least one of us is confused.
+
 
 And that would be me. Sorry, got too many patches in play and tabs open in firefox :)
 
@@ -507,7 +507,7 @@ Attachment [tachyon-copyright.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_014437.json:
 ```json
 {
-    "body": "John Stone sent me the following email, so I've generated a copyright file for tachyon.\n\nDate: Fri, 4 Apr 2008 14:32:34 -0500\nFrom: John Stone <johns`@`ks.uiuc.edu>\nTo: Timothy G Abbott <tabbott`@`MIT.EDU>\nX-Spam-Score: 0.12\nSubject: Re: tachyon license\nParts/Attachments:\n   1 Shown    60 lines  Text\n   2   OK     28 lines  Text\n----------------------------------------\n\n\nTim,\n  Please find attached an updated Tachyon license which you are free\nto use with any of the existing releases I've made.  I provided this to\nIntel so they could include Tachyon with their open source TBB release\nas well.  (they are using an older rev of Tachyon so a new release\ndidn't help their situation)\n\nI'll try and get a new release package posted soon.\n\nCheers,\n  John Stone\n  johns`@`ks.uiuc.edu\n  john.stone`@`gmail.com\n\n/*\n* Copyright (c) 1994-2008 John E. Stone\n* All rights reserved.\n *\n* Redistribution and use in source and binary forms, with or without\n* modification, are permitted provided that the following conditions\n* are met:\n* 1. Redistributions of source code must retain the above copyright\n*    notice, this list of conditions and the following disclaimer.\n* 2. Redistributions in binary form must reproduce the above copyright\n*    notice, this list of conditions and the following disclaimer in the\n*    documentation and/or other materials provided with the distribution.\n* 3. The name of the author may not be used to endorse or promote products\n*    derived from this software without specific prior written permission.\n *\n* THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\n* OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n* ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\n* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n* OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n* SUCH DAMAGE.\n */",
+    "body": "John Stone sent me the following email, so I've generated a copyright file for tachyon.\n\nDate: Fri, 4 Apr 2008 14:32:34 -0500\nFrom: John Stone <johns`@`ks.uiuc.edu>\nTo: Timothy G Abbott <tabbott`@`MIT.EDU>\nX-Spam-Score: 0.12\nSubject: Re: tachyon license\nParts/Attachments:\n   1 Shown    60 lines  Text\n   2   OK     28 lines  Text\n\n---\n\n\nTim,\n  Please find attached an updated Tachyon license which you are free\nto use with any of the existing releases I've made.  I provided this to\nIntel so they could include Tachyon with their open source TBB release\nas well.  (they are using an older rev of Tachyon so a new release\ndidn't help their situation)\n\nI'll try and get a new release package posted soon.\n\nCheers,\n  John Stone\n  johns`@`ks.uiuc.edu\n  john.stone`@`gmail.com\n\n/*\n* Copyright (c) 1994-2008 John E. Stone\n* All rights reserved.\n *\n* Redistribution and use in source and binary forms, with or without\n* modification, are permitted provided that the following conditions\n* are met:\n* 1. Redistributions of source code must retain the above copyright\n*    notice, this list of conditions and the following disclaimer.\n* 2. Redistributions in binary form must reproduce the above copyright\n*    notice, this list of conditions and the following disclaimer in the\n*    documentation and/or other materials provided with the distribution.\n* 3. The name of the author may not be used to endorse or promote products\n*    derived from this software without specific prior written permission.\n *\n* THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\n* OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n* ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\n* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n* OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n* SUCH DAMAGE.\n */",
     "created_at": "2008-04-07T06:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
@@ -526,7 +526,8 @@ Subject: Re: tachyon license
 Parts/Attachments:
    1 Shown    60 lines  Text
    2   OK     28 lines  Text
-----------------------------------------
+
+---
 
 
 Tim,

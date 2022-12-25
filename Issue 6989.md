@@ -3,7 +3,7 @@
 archive/issues_006989.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\n\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
+    "body": "Assignee: @williamstein\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
     "created_at": "2009-09-22T17:49:16Z",
     "labels": [
         "component: graphics",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 This issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:
 
-
 ```
 sage: mypoints = [vector([1,2,3]), vector([4,5,6])]
 sage: type(mypoints[0])
 <type 'sage.modules.vector_integer_dense.Vector_integer_dense'>
 ```
-
 but then:
 
 ```
@@ -34,7 +32,6 @@ sage: L = line3d(mypoints)
 sage: type(mypoints[0])
 <type 'tuple'>
 ```
-
 
 so vectors are changed to tuples.
 

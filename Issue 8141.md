@@ -3,7 +3,7 @@
 archive/issues_008141.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nFont families (typefaces?) on rendered Sage Notebook pages.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/533afb39f9f8220f).\n\nNote: Server administrators can already save\n\n```\nhttp://server/css/main.css\n```\n\nto\n\n```\nDOT_SAGE/notebook.css\n```\n\nand edit the latter, according to taste.\n\nLinks:\n\n* http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml\n* http://safalra.com/web-design/typography/web-safe-fonts-myth/\n* http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/\n\nIssue created by migration from https://trac.sagemath.org/ticket/8141\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nFont families (typefaces?) on rendered Sage Notebook pages.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/533afb39f9f8220f).\n\nNote: Server administrators can already save\n\n```\nhttp://server/css/main.css\n```\nto\n\n```\nDOT_SAGE/notebook.css\n```\nand edit the latter, according to taste.\n\nLinks:\n\n* http://www.codestyle.org/css/font-family/BuildBetterCSSFontStacks.shtml\n* http://safalra.com/web-design/typography/web-safe-fonts-myth/\n* http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/\n\nIssue created by migration from https://trac.sagemath.org/ticket/8141\n\n",
     "created_at": "2010-02-01T06:23:42Z",
     "labels": [
         "component: notebook",
@@ -30,13 +30,11 @@ Note: Server administrators can already save
 ```
 http://server/css/main.css
 ```
-
 to
 
 ```
 DOT_SAGE/notebook.css
 ```
-
 and edit the latter, according to taste.
 
 Links:
@@ -76,7 +74,7 @@ More consistent use of font stack mixins.  sagenb repository.
 archive/issue_comments_071462.json:
 ```json
 {
-    "body": "The main purpose of the patch is to use the SASS font stack mixins in `sagenb/sass/src/partials/_mixins.sass` throughout the notebook stylesheets.\n\nI've replaced the original sans-serif stack\n\n```\n\"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif\n```\n\nwith\n\n```\n'Arial', 'Helvetica', sans-serif\n```\n\nin an attempt to reproduce the pre-#7786 fonts.  But I don't have a strong opinion on what we should use.  Feel free to use other sets!",
+    "body": "The main purpose of the patch is to use the SASS font stack mixins in `sagenb/sass/src/partials/_mixins.sass` throughout the notebook stylesheets.\n\nI've replaced the original sans-serif stack\n\n```\n\"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif\n```\nwith\n\n```\n'Arial', 'Helvetica', sans-serif\n```\nin an attempt to reproduce the pre-#7786 fonts.  But I don't have a strong opinion on what we should use.  Feel free to use other sets!",
     "created_at": "2010-02-01T06:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8141",
     "type": "issue_comment",
@@ -92,13 +90,11 @@ I've replaced the original sans-serif stack
 ```
 "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif
 ```
-
 with
 
 ```
 'Arial', 'Helvetica', sans-serif
 ```
-
 in an attempt to reproduce the pre-#7786 fonts.  But I don't have a strong opinion on what we should use.  Feel free to use other sets!
 
 

@@ -3,7 +3,7 @@
 archive/issues_001401.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\n\nInstead Sage should do this:\n\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
+    "body": "Assignee: @williamstein\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\nInstead Sage should do this:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
     "created_at": "2007-12-04T23:57:36Z",
     "labels": [
         "component: linear algebra"
@@ -31,9 +31,7 @@ sage: a
 [3 4]
 ```
 
-
 Instead Sage should do this:
-
 
 ```
 sage: a = matrix(ZZ, 2, [1..4])
@@ -44,7 +42,6 @@ sage: a.row(1)
 sage: a[1][0] = 5
 boom!
 ```
-
 
 Where boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.
 

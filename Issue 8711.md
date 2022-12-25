@@ -85,7 +85,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079358.json:
 ```json
 {
-    "body": "Building the reference manual of Sage 4.4.alpha0 results in the following warnings:\n\n```\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.add_cycle:5: (ERROR/3) Unexpected indentation.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.vertex_cover:26: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:18: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\nThe attached patch resolves those warnings as claimed.",
+    "body": "Building the reference manual of Sage 4.4.alpha0 results in the following warnings:\n\n```\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.add_cycle:5: (ERROR/3) Unexpected indentation.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.vertex_cover:26: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:18: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\nThe attached patch resolves those warnings as claimed.",
     "created_at": "2010-04-18T07:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8711",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ Building the reference manual of Sage 4.4.alpha0 results in the following warnin
 /dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:15: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 /dev/shm/mvngu/sandbox/sage-4.4.alpha0-8711-ref/local/lib/python2.6/site-packages/sage/symbolic/units.py:docstring of sage.symbolic.units.unitdocs:18: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
 ```
-
 The attached patch resolves those warnings as claimed.
 
 

@@ -107,7 +107,7 @@ This will be obsolete when #7244 is completed.
 archive/issue_comments_059138.json:
 ```json
 {
-    "body": "Replying to [comment:2 rbeezer]:\n> This will be obsolete when #7244 is completed.\n\nShould'nt this ticket be closed as duplicate ?",
+    "body": "Replying to [comment:2 rbeezer]:\n> This will be obsolete when #7244 is completed.\n\n\nShould'nt this ticket be closed as duplicate ?",
     "created_at": "2009-11-22T17:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
@@ -118,6 +118,7 @@ archive/issue_comments_059138.json:
 
 Replying to [comment:2 rbeezer]:
 > This will be obsolete when #7244 is completed.
+
 
 Should'nt this ticket be closed as duplicate ?
 

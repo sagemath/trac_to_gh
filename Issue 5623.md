@@ -71,7 +71,7 @@ Works for me.  I'd like to see the test.sage file be reworked into a Test class 
 archive/issue_comments_043824.json:
 ```json
 {
-    "body": "OOps.\n\n\n```\nsage: g = Graph()\nsage: c = 0\nsage: for h in graph_coloring.all_graph_colorings(g,0,False): c+=1\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n",
+    "body": "OOps.\n\n```\nsage: g = Graph()\nsage: c = 0\nsage: for h in graph_coloring.all_graph_colorings(g,0,False): c+=1\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```",
     "created_at": "2009-03-30T06:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ archive/issue_comments_043824.json:
 ```
 
 OOps.
-
 
 ```
 sage: g = Graph()
@@ -96,7 +95,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 
 

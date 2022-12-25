@@ -3,7 +3,7 @@
 archive/issues_004390.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: EllipticCurve('675b').heegner_index(-11)\nTraceback (most recent call last):\n...\nTypeError: regulator() got an unexpected keyword argument 'verbose'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4390\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: EllipticCurve('675b').heegner_index(-11)\nTraceback (most recent call last):\n...\nTypeError: regulator() got an unexpected keyword argument 'verbose'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4390\n\n",
     "created_at": "2008-10-30T05:35:53Z",
     "labels": [
         "component: number theory",
@@ -18,14 +18,12 @@ archive/issues_004390.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: EllipticCurve('675b').heegner_index(-11)
 Traceback (most recent call last):
 ...
 TypeError: regulator() got an unexpected keyword argument 'verbose'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4390
 

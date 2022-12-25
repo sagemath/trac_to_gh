@@ -139,7 +139,7 @@ BTW, in gap_packages there is a GPL'd package called braid that might help here.
 archive/issue_comments_005403.json:
 ```json
 {
-    "body": "Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n\n```\n    The packages sonata, guava, factint, gapdoc, grape, design, toric,\n    and laguna are loaded in all cases before the workspace is saved,\n    if they are available.\n```\n\n\n```\n    g = Gap(use_workspace_cache=False, max_workspace_size=None)\n    for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n                'gapdoc', 'grape', 'design', \\\n                'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n        try:\n            g.load_package(pkg, verbose=verbose)\n```\n",
+    "body": "Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n\n```\n    The packages sonata, guava, factint, gapdoc, grape, design, toric,\n    and laguna are loaded in all cases before the workspace is saved,\n    if they are available.\n```\n\n```\n    g = Gap(use_workspace_cache=False, max_workspace_size=None)\n    for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n                'gapdoc', 'grape', 'design', \\\n                'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n        try:\n            g.load_package(pkg, verbose=verbose)\n```",
     "created_at": "2009-12-30T05:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ Incidentally, apparently the braid package is now autoloaded, though it doesn't 
     if they are available.
 ```
 
-
 ```
     g = Gap(use_workspace_cache=False, max_workspace_size=None)
     for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \
@@ -168,13 +167,12 @@ Incidentally, apparently the braid package is now autoloaded, though it doesn't 
 
 
 
-
 ---
 
 archive/issue_comments_005404.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n> {{{\n>     The packages sonata, guava, factint, gapdoc, grape, design, toric,\n>     and laguna are loaded in all cases before the workspace is saved,\n>     if they are available.\n> }}}\n> {{{\n>     g = Gap(use_workspace_cache=False, max_workspace_size=None)\n>     for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n>                 'gapdoc', 'grape', 'design', \\\n>                 'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n>         try:\n>             g.load_package(pkg, verbose=verbose)\n> }}}\n\nI think this problem with HAP was fixed long ago.\n\nAlso, I think I had to repackage braid recently because of some loading problems it had. I don't remember the details. Maybe it was because of a problem with gap 4.4.12 and since we use 4.4.10, it is not an issue?",
+    "body": "Replying to [comment:5 kcrisman]:\n> Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:\n> \n> ```\n>     The packages sonata, guava, factint, gapdoc, grape, design, toric,\n>     and laguna are loaded in all cases before the workspace is saved,\n>     if they are available.\n> ```\n> \n> ```\n>     g = Gap(use_workspace_cache=False, max_workspace_size=None)\n>     for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \\\n>                 'gapdoc', 'grape', 'design', \\\n>                 'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)\n>         try:\n>             g.load_package(pkg, verbose=verbose)\n> ```\n\n\nI think this problem with HAP was fixed long ago.\n\nAlso, I think I had to repackage braid recently because of some loading problems it had. I don't remember the details. Maybe it was because of a problem with gap 4.4.12 and since we use 4.4.10, it is not an issue?",
     "created_at": "2009-12-30T12:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
@@ -185,19 +183,22 @@ archive/issue_comments_005404.json:
 
 Replying to [comment:5 kcrisman]:
 > Incidentally, apparently the braid package is now autoloaded, though it doesn't seem to be used anywhere.  This is improperly documented in interfaces/gap.py, though:
-> {{{
+> 
+> ```
 >     The packages sonata, guava, factint, gapdoc, grape, design, toric,
 >     and laguna are loaded in all cases before the workspace is saved,
 >     if they are available.
-> }}}
-> {{{
+> ```
+> 
+> ```
 >     g = Gap(use_workspace_cache=False, max_workspace_size=None)
 >     for pkg in ['ctbllib', 'sonata', 'guava', 'factint', \
 >                 'gapdoc', 'grape', 'design', \
 >                 'toric', 'laguna', 'braid']:   # NOTE: Do *not* autoload hap - it screws up PolynomialRing(Rationals,2)
 >         try:
 >             g.load_package(pkg, verbose=verbose)
-> }}}
+> ```
+
 
 I think this problem with HAP was fixed long ago.
 

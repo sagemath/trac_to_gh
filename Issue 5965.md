@@ -3,7 +3,7 @@
 archive/issues_005965.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @williamstein @jdemeyer @jhpalmieri @mkoeppe @dimpase @orlitzky\n\nSage requires both pseudoterminals (for pexpect) and shared memory (for pyprocessing semaphores). On modern linux, those are implemented via special filesystem mounts:\n- `/dev/pts` for pseudoterminals (of type `devpts`)\n- `/dev/shm` for shared memory (of type `tmpfs`)\nA normal system has those mounts active. However, running sage in a chroot fails in weird ways if we neglect to mount those inside the chroot:\n- the first one makes pexpect interfaces to fail, e.g.:\n\n```\nsage: gap(2)\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10828/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1002             return cls(self, x, name=name)\n   1003         try:\n-> 1004             return self._coerce_from_special_method(x)\n   1005         except TypeError:\n   1006             raise\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1026             s = '_gp_'\n   1027         try:\n-> 1028             return (x.__getattribute__(s))(self)\n   1029         except AttributeError:\n   1030             return self(x._interface_init_())\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:3370)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3018)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1000             return x\n   1001         if isinstance(x, basestring):\n-> 1002             return cls(self, x, name=name)\n   1003         try:\n   1004             return self._coerce_from_special_method(x)\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1375             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1376                 self._session_number = -1\n-> 1377                 raise TypeError, x\n   1378         self._session_number = parent._session_number\n   1379 \n\nTypeError: Unable to start gap because the command 'gap -r -b -p -T -o 9999G /opt/sage-3.4.1-x86_64-Linux/data//extcode/gap/sage.g' failed.\n```\n\n- the second one makes pyprocessing to fail, which can be reproduced by:\n\n```\nsage: import processing, processing.synchronize                      \nsage: processing._processing.SemLock(processing.synchronize.BOUNDED_SEMAPHORE, 1)                           \n---------------------------------------------------------------------------\nOSError                                   Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10892/_home_tornaria__sage_init_sage_0.py in <module>()\n\nOSError: [Errno 38] Function not implemented\n```\n\nBoth failures are detected by doctests. The first one all over the place, and the second one by doctests in `sage/parallel/multiprocessing.py` and `sage/parallel/decorate.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5965\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @jdemeyer @jhpalmieri @mkoeppe @dimpase @orlitzky\n\nSage requires both pseudoterminals (for pexpect) and shared memory (for pyprocessing semaphores). On modern linux, those are implemented via special filesystem mounts:\n- `/dev/pts` for pseudoterminals (of type `devpts`)\n- `/dev/shm` for shared memory (of type `tmpfs`)\nA normal system has those mounts active. However, running sage in a chroot fails in weird ways if we neglect to mount those inside the chroot:\n- the first one makes pexpect interfaces to fail, e.g.:\n\n```\nsage: gap(2)\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10828/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1002             return cls(self, x, name=name)\n   1003         try:\n-> 1004             return self._coerce_from_special_method(x)\n   1005         except TypeError:\n   1006             raise\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1026             s = '_gp_'\n   1027         try:\n-> 1028             return (x.__getattribute__(s))(self)\n   1029         except AttributeError:\n   1030             return self(x._interface_init_())\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:3370)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3018)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1000             return x\n   1001         if isinstance(x, basestring):\n-> 1002             return cls(self, x, name=name)\n   1003         try:\n   1004             return self._coerce_from_special_method(x)\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1375             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1376                 self._session_number = -1\n-> 1377                 raise TypeError, x\n   1378         self._session_number = parent._session_number\n   1379 \n\nTypeError: Unable to start gap because the command 'gap -r -b -p -T -o 9999G /opt/sage-3.4.1-x86_64-Linux/data//extcode/gap/sage.g' failed.\n```\n- the second one makes pyprocessing to fail, which can be reproduced by:\n\n```\nsage: import processing, processing.synchronize                      \nsage: processing._processing.SemLock(processing.synchronize.BOUNDED_SEMAPHORE, 1)                           \n---------------------------------------------------------------------------\nOSError                                   Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10892/_home_tornaria__sage_init_sage_0.py in <module>()\n\nOSError: [Errno 38] Function not implemented\n```\nBoth failures are detected by doctests. The first one all over the place, and the second one by doctests in `sage/parallel/multiprocessing.py` and `sage/parallel/decorate.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5965\n\n",
     "created_at": "2009-05-02T23:41:40Z",
     "labels": [
         "component: distribution",
@@ -68,7 +68,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: Unable to start gap because the command 'gap -r -b -p -T -o 9999G /opt/sage-3.4.1-x86_64-Linux/data//extcode/gap/sage.g' failed.
 ```
-
 - the second one makes pyprocessing to fail, which can be reproduced by:
 
 ```
@@ -81,7 +80,6 @@ OSError                                   Traceback (most recent call last)
 
 OSError: [Errno 38] Function not implemented
 ```
-
 Both failures are detected by doctests. The first one all over the place, and the second one by doctests in `sage/parallel/multiprocessing.py` and `sage/parallel/decorate.py`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5965
@@ -316,7 +314,7 @@ Where does this go?
 archive/issue_comments_047158.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Where does this go?\n\nWherever the check for, e.g. sage-flags.txt is done, i.e. at startup. The idea is to make sure that those two features are available, because they are actually required by Sage, and if they are missing the error messages tend to be very confusing (see the description for a taste).\n\nNote that this actually happens at least when one does a quick chroot and doesn't mount either /dev/pts and /dev/shm.\n\nJust to record the relative importance of the two: pseudottys are absolutely required for sage (pexpect), while shared memory seems to be only used through pyprocessing, i.e. maybe only dsage needs it.",
+    "body": "Replying to [comment:6 was]:\n> Where does this go?\n\n\nWherever the check for, e.g. sage-flags.txt is done, i.e. at startup. The idea is to make sure that those two features are available, because they are actually required by Sage, and if they are missing the error messages tend to be very confusing (see the description for a taste).\n\nNote that this actually happens at least when one does a quick chroot and doesn't mount either /dev/pts and /dev/shm.\n\nJust to record the relative importance of the two: pseudottys are absolutely required for sage (pexpect), while shared memory seems to be only used through pyprocessing, i.e. maybe only dsage needs it.",
     "created_at": "2009-05-28T12:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -327,6 +325,7 @@ archive/issue_comments_047158.json:
 
 Replying to [comment:6 was]:
 > Where does this go?
+
 
 Wherever the check for, e.g. sage-flags.txt is done, i.e. at startup. The idea is to make sure that those two features are available, because they are actually required by Sage, and if they are missing the error messages tend to be very confusing (see the description for a taste).
 
@@ -779,7 +778,7 @@ Changing component from distribution to build: configure.
 archive/issue_comments_047173.json:
 ```json
 {
-    "body": "Is this still necessary? If so, it's pretty easy to hack into the `./configure` script:\n\n\n```patch\ndiff --git a/configure.ac b/configure.ac\nindex 78cc95febc..35763c77ac 100644\n--- a/configure.ac\n+++ b/configure.ac\n@@ -150,7 +150,21 @@ The Sage community would also appreciate any patches you s$\n\n # The following are all supported platforms.\n *-*-freebsd*);;\n-*-*-linux*);;\n+*-*-linux*)\n+# We need /dev/pts and /dev/shm mounted on Linux, see Trac 5965.\n+if ! test -d /dev/pts; then\n+AC_MSG_ERROR([[\n+A filesystem of type devpts must be mounted at /dev/pts on Linux.\n+See the pts(4) man page.\n+]])\n+fi\n+if ! test -d /dev/shm; then\n+AC_MSG_ERROR([[\n+A filesystem of type tmpfs must be mounted at /dev/shm on Linux.\n+See the shm_overview(7) man page.\n+]])\n+fi\n+;;\n *-*-darwin*);;\n *-*-solaris*);;\n *-*-cygwin*);;\n```\n",
+    "body": "Is this still necessary? If so, it's pretty easy to hack into the `./configure` script:\n\n```patch\ndiff --git a/configure.ac b/configure.ac\nindex 78cc95febc..35763c77ac 100644\n--- a/configure.ac\n+++ b/configure.ac\n@@ -150,7 +150,21 @@ The Sage community would also appreciate any patches you s$\n\n # The following are all supported platforms.\n *-*-freebsd*);;\n-*-*-linux*);;\n+*-*-linux*)\n+# We need /dev/pts and /dev/shm mounted on Linux, see Trac 5965.\n+if ! test -d /dev/pts; then\n+AC_MSG_ERROR([[\n+A filesystem of type devpts must be mounted at /dev/pts on Linux.\n+See the pts(4) man page.\n+]])\n+fi\n+if ! test -d /dev/shm; then\n+AC_MSG_ERROR([[\n+A filesystem of type tmpfs must be mounted at /dev/shm on Linux.\n+See the shm_overview(7) man page.\n+]])\n+fi\n+;;\n *-*-darwin*);;\n *-*-solaris*);;\n *-*-cygwin*);;\n```",
     "created_at": "2020-08-31T02:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -789,7 +788,6 @@ archive/issue_comments_047173.json:
 ```
 
 Is this still necessary? If so, it's pretty easy to hack into the `./configure` script:
-
 
 ```patch
 diff --git a/configure.ac b/configure.ac
@@ -823,7 +821,6 @@ index 78cc95febc..35763c77ac 100644
 
 
 
-
 ---
 
 archive/issue_comments_047174.json:
@@ -847,7 +844,7 @@ we can add this (and perhaps even a test that /dev/shm is user-writeable (cf com
 archive/issue_comments_047175.json:
 ```json
 {
-    "body": "Replying to [comment:24 dimpase]:\n> nowadays there are no weird environments left where these things are broken.\n\nThey were accidentally left out of a chroot in the original report. Catching them at `./configure` just saves a lot of time, since otherwise you go through the whole build and get an incomprehensible test failure a few hours later.\n\nMy main question is, do these things still depend on `/dev/pts` and `/dev/shm` at all? A lot can change in 11 years. And if it's pexpect/pyprocessing that are trying to use them, then it might make more sense to send this check upstream.",
+    "body": "Replying to [comment:24 dimpase]:\n> nowadays there are no weird environments left where these things are broken.\n\n\nThey were accidentally left out of a chroot in the original report. Catching them at `./configure` just saves a lot of time, since otherwise you go through the whole build and get an incomprehensible test failure a few hours later.\n\nMy main question is, do these things still depend on `/dev/pts` and `/dev/shm` at all? A lot can change in 11 years. And if it's pexpect/pyprocessing that are trying to use them, then it might make more sense to send this check upstream.",
     "created_at": "2020-08-31T11:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -858,6 +855,7 @@ archive/issue_comments_047175.json:
 
 Replying to [comment:24 dimpase]:
 > nowadays there are no weird environments left where these things are broken.
+
 
 They were accidentally left out of a chroot in the original report. Catching them at `./configure` just saves a lot of time, since otherwise you go through the whole build and get an incomprehensible test failure a few hours later.
 
@@ -888,7 +886,7 @@ by the way https://github.com/pexpect/pexpect/releases/tag/4.8.0 - our's is 4.6,
 archive/issue_comments_047177.json:
 ```json
 {
-    "body": "Replying to [comment:25 mjo]:\n> My main question is, do these things still depend on `/dev/pts` and `/dev/shm` at all? A lot can change in 11 years. \n\nI think it's a tale from ancient linux times. If it is ever reported again, we know what to do.",
+    "body": "Replying to [comment:25 mjo]:\n> My main question is, do these things still depend on `/dev/pts` and `/dev/shm` at all? A lot can change in 11 years. \n\n\nI think it's a tale from ancient linux times. If it is ever reported again, we know what to do.",
     "created_at": "2020-09-03T02:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -899,6 +897,7 @@ archive/issue_comments_047177.json:
 
 Replying to [comment:25 mjo]:
 > My main question is, do these things still depend on `/dev/pts` and `/dev/shm` at all? A lot can change in 11 years. 
+
 
 I think it's a tale from ancient linux times. If it is ever reported again, we know what to do.
 
@@ -1049,7 +1048,7 @@ Resolution: invalid
 archive/issue_comments_047183.json:
 ```json
 {
-    "body": "Replying to [comment:26 dimpase]:\n> by the way https://github.com/pexpect/pexpect/releases/tag/4.8.0 - ours is 4.6, more than 2 years old.\n\nTicket #29240, merged in Sage 9.2.beta11 (released 2020-09-02),\nupgraded to pexpect 4.8.0.",
+    "body": "Replying to [comment:26 dimpase]:\n> by the way https://github.com/pexpect/pexpect/releases/tag/4.8.0 - ours is 4.6, more than 2 years old.\n\n\nTicket #29240, merged in Sage 9.2.beta11 (released 2020-09-02),\nupgraded to pexpect 4.8.0.",
     "created_at": "2021-04-01T07:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
@@ -1060,6 +1059,7 @@ archive/issue_comments_047183.json:
 
 Replying to [comment:26 dimpase]:
 > by the way https://github.com/pexpect/pexpect/releases/tag/4.8.0 - ours is 4.6, more than 2 years old.
+
 
 Ticket #29240, merged in Sage 9.2.beta11 (released 2020-09-02),
 upgraded to pexpect 4.8.0.

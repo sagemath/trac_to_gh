@@ -55,7 +55,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_050738.json:
 ```json
 {
-    "body": "(NOTE -- I rethought this in the last paragraph below, but didn't delete the stuff above, in case it is useful still.)\n\nHow I would implement this:\n\n```\n sage -t foo.sws\n```\n\nwould\n\n1. extract foo.sws into a temporary directory.  Try to use builtin library calls instead of calling tar on the command line, if possible.  Note that foo.sws is a .tar.bz2\n\n2. Ignore everything not in {{}}'s.  I'm using {{ instead of triple {'s to avoid trac's wiki preformat mode.\n\n3. Create a file foo.py.  For each chunk of code \n\n```\n{{\ninput lines\n///\noutput lines\n```\n\ninsert into the file foo.py lines:\n\n```\nsage: sage.server.notebook.cell.eval_for_testing(r\"\"\"input lines\ninput lines...\"\"\")\noutput lines\n```\n\nsince I think how the notebook works is best simulated by using the sage0 pexpect interface (that's what the notebook really uses).  \n\n4. Doctest foo.py using `sage -t foo.py` and let normal doctest report the results.  Possibly postprocess the `print sage0.eval(r\"\"\"` wrapper crap out of the result.\n\n\nThe above plan has the advantage that it reduces things to the existing python doctest framework instead of trying to write another doctest system.   One disadvantage is that using sage0 means that two Python processes are spawned instead of 1.\n\nThe function `sage.server.notebook.cell.eval_for_testing` has not been written.  It would make a blank directory, call sage0.eval -- just like the notebook does -- then apply all transformations the notebook does on output.  \n\nActually, writing the above makes me think that this problem is harder than I thought when I started writing this comment!  The problem is the output is potentially very complicated, since it can be a bunch of sagexxx.png files, html, etc.   Maybe a better approach is to completely use the notebook codebase -- as is done in all the notebook doctesting -- to run a *copy* of the whole worksheet (a sort of evaluate all) -- then simply compare the original's output to the copy's.",
+    "body": "(NOTE -- I rethought this in the last paragraph below, but didn't delete the stuff above, in case it is useful still.)\n\nHow I would implement this:\n\n```\n sage -t foo.sws\n```\nwould\n\n1. extract foo.sws into a temporary directory.  Try to use builtin library calls instead of calling tar on the command line, if possible.  Note that foo.sws is a .tar.bz2\n\n2. Ignore everything not in {{}}'s.  I'm using {{ instead of triple {'s to avoid trac's wiki preformat mode.\n\n3. Create a file foo.py.  For each chunk of code \n\n```\n{{\ninput lines\n///\noutput lines\n```\ninsert into the file foo.py lines:\n\n```\nsage: sage.server.notebook.cell.eval_for_testing(r\"\"\"input lines\ninput lines...\"\"\")\noutput lines\n```\nsince I think how the notebook works is best simulated by using the sage0 pexpect interface (that's what the notebook really uses).  \n\n4. Doctest foo.py using `sage -t foo.py` and let normal doctest report the results.  Possibly postprocess the `print sage0.eval(r\"\"\"` wrapper crap out of the result.\n\n\nThe above plan has the advantage that it reduces things to the existing python doctest framework instead of trying to write another doctest system.   One disadvantage is that using sage0 means that two Python processes are spawned instead of 1.\n\nThe function `sage.server.notebook.cell.eval_for_testing` has not been written.  It would make a blank directory, call sage0.eval -- just like the notebook does -- then apply all transformations the notebook does on output.  \n\nActually, writing the above makes me think that this problem is harder than I thought when I started writing this comment!  The problem is the output is potentially very complicated, since it can be a bunch of sagexxx.png files, html, etc.   Maybe a better approach is to completely use the notebook codebase -- as is done in all the notebook doctesting -- to run a *copy* of the whole worksheet (a sort of evaluate all) -- then simply compare the original's output to the copy's.",
     "created_at": "2009-06-18T19:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ How I would implement this:
 ```
  sage -t foo.sws
 ```
-
 would
 
 1. extract foo.sws into a temporary directory.  Try to use builtin library calls instead of calling tar on the command line, if possible.  Note that foo.sws is a .tar.bz2
@@ -86,7 +85,6 @@ input lines
 ///
 output lines
 ```
-
 insert into the file foo.py lines:
 
 ```
@@ -94,7 +92,6 @@ sage: sage.server.notebook.cell.eval_for_testing(r"""input lines
 input lines...""")
 output lines
 ```
-
 since I think how the notebook works is best simulated by using the sage0 pexpect interface (that's what the notebook really uses).  
 
 4. Doctest foo.py using `sage -t foo.py` and let normal doctest report the results.  Possibly postprocess the `print sage0.eval(r"""` wrapper crap out of the result.

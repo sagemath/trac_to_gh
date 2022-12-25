@@ -3,7 +3,7 @@
 archive/issues_009911.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ryan\n\nIn #7154, the rename_keyword deprecation decorator has an extra argument.  Right now, it's:\n\n\n```\n@rename_keyword(deprecated='Sage 4.6', deprecated_option='thickness', thickness='width') \n```\n\n\nbut should just be\n\n\n```\n@rename_keyword(deprecated='Sage 4.6', thickness='width') \n```\n\n\nMy bad for not catching this in the review stage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9912\n\n",
+    "body": "Assignee: jason, was\n\nCC:  ryan\n\nIn #7154, the rename_keyword deprecation decorator has an extra argument.  Right now, it's:\n\n```\n@rename_keyword(deprecated='Sage 4.6', deprecated_option='thickness', thickness='width') \n```\n\nbut should just be\n\n```\n@rename_keyword(deprecated='Sage 4.6', thickness='width') \n```\n\nMy bad for not catching this in the review stage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9912\n\n",
     "created_at": "2010-09-15T13:47:29Z",
     "labels": [
         "component: graphics",
@@ -22,19 +22,15 @@ CC:  ryan
 
 In #7154, the rename_keyword deprecation decorator has an extra argument.  Right now, it's:
 
-
 ```
 @rename_keyword(deprecated='Sage 4.6', deprecated_option='thickness', thickness='width') 
 ```
 
-
 but should just be
-
 
 ```
 @rename_keyword(deprecated='Sage 4.6', thickness='width') 
 ```
-
 
 My bad for not catching this in the review stage.
 
@@ -49,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9912
 archive/issue_comments_098427.json:
 ```json
 {
-    "body": "Just for the record, this then also needs to be fixed:\n\n```\nsage -t -long \"devel/sage/sage/geometry/polyhedra.py\"       \n**********************************************************************\nFile \"/home/leif/Sage/sage-4.6.alpha1/devel/sage/sage/geometry/polyhedra.py\", line 1270:\n    sage: p1.projection().show() + p2.projection().show() + p3.projection().show()\nExpected nothing\nGot:\n    doctest:4555: DeprecationWarning: (Since Sage 4.6) use the option 'width' instead of 'thickness'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_66\n***Test Failed*** 1 failures.\n```\n",
+    "body": "Just for the record, this then also needs to be fixed:\n\n```\nsage -t -long \"devel/sage/sage/geometry/polyhedra.py\"       \n**********************************************************************\nFile \"/home/leif/Sage/sage-4.6.alpha1/devel/sage/sage/geometry/polyhedra.py\", line 1270:\n    sage: p1.projection().show() + p2.projection().show() + p3.projection().show()\nExpected nothing\nGot:\n    doctest:4555: DeprecationWarning: (Since Sage 4.6) use the option 'width' instead of 'thickness'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_66\n***Test Failed*** 1 failures.\n```",
     "created_at": "2010-09-16T09:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
@@ -74,7 +70,6 @@ Got:
    1 of  14 in __main__.example_66
 ***Test Failed*** 1 failures.
 ```
-
 
 
 
@@ -103,7 +98,7 @@ If not, I'll run ptestlong to check.
 archive/issue_comments_098429.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Leif: is that the only failure in all long doctests (i.e., ptestlong or similar?)\n\nThe only one related to this (`DeprecationWarning`) with the *unreleased* 4.6.alpha1.\n\nIf you put the deprecation warning into the doctest (\"expected\"), don't forget to not hard-code the line number (from `ncadoctest.py`!).",
+    "body": "Replying to [comment:2 jason]:\n> Leif: is that the only failure in all long doctests (i.e., ptestlong or similar?)\n\n\nThe only one related to this (`DeprecationWarning`) with the *unreleased* 4.6.alpha1.\n\nIf you put the deprecation warning into the doctest (\"expected\"), don't forget to not hard-code the line number (from `ncadoctest.py`!).",
     "created_at": "2010-09-16T09:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
@@ -114,6 +109,7 @@ archive/issue_comments_098429.json:
 
 Replying to [comment:2 jason]:
 > Leif: is that the only failure in all long doctests (i.e., ptestlong or similar?)
+
 
 The only one related to this (`DeprecationWarning`) with the *unreleased* 4.6.alpha1.
 

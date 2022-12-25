@@ -188,7 +188,7 @@ Adding a section on the notebook; adding the missing plots; some proof reading
 archive/issue_comments_079105.json:
 ```json
 {
-    "body": "Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by @simon-king-jena created at 2010-04-19 09:20:20\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
+    "body": "Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/some-uuid/ticket8698/trac_8698-tour-de-sage_reviewer.patch) by @simon-king-jena created at 2010-04-19 09:20:20\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
     "created_at": "2010-04-19T09:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
@@ -202,9 +202,11 @@ Attachment [trac_8698-tour-de-sage_reviewer.patch](tarball://root/attachments/so
 Replying to [comment:5 leif]:
 > I think what's at all meant by "Notebook" has to be explained, too. 
 
+
 Good idea (and perhaps it would make sense to have this in English, too).
 
 > It would be nice if you could supply a patch on top of Minh's.
+
 
 Done. 
 
@@ -264,7 +266,7 @@ But I think this should be fixed once there are more comments of another reviewe
 archive/issue_comments_079108.json:
 ```json
 {
-    "body": "Replying to [comment:6 SimonKing]:\n> Minh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nThe Sage tour is much shorter than the installation guide. So I think the tour would be the first to get into the Sage standard documentation. Thank you for reviewing the tour.",
+    "body": "Replying to [comment:6 SimonKing]:\n> Minh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\n\nThe Sage tour is much shorter than the installation guide. So I think the tour would be the first to get into the Sage standard documentation. Thank you for reviewing the tour.",
     "created_at": "2010-04-19T10:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
@@ -275,6 +277,7 @@ archive/issue_comments_079108.json:
 
 Replying to [comment:6 SimonKing]:
 > Minh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?
+
 
 The Sage tour is much shorter than the installation guide. So I think the tour would be the first to get into the Sage standard documentation. Thank you for reviewing the tour.
 
@@ -435,7 +438,7 @@ Changing keywords from "" to "german".
 archive/issue_comments_079112.json:
 ```json
 {
-    "body": "Here is a git branch, passing tests and with html building correctly. I think it can be considered as needs review.\n----\nNew commits:",
+    "body": "Here is a git branch, passing tests and with html building correctly. I think it can be considered as needs review.\n\n---\nNew commits:",
     "created_at": "2014-07-19T20:51:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8698",
     "type": "issue_comment",
@@ -445,7 +448,8 @@ archive/issue_comments_079112.json:
 ```
 
 Here is a git branch, passing tests and with html building correctly. I think it can be considered as needs review.
-----
+
+---
 New commits:
 
 

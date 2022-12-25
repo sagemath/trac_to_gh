@@ -3,7 +3,7 @@
 archive/issues_005533.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  cwitty\n\nApparently, recompiling a .spyx file creates a new module and/or creates a new dummy class.  This gets in the way of pickling.  For example, start from a command prompt and follow the instructions using the attached junk7.spyx.\n\n```\nsage  # at the command prompt, start Sage\nsage: load 'junk7.spyx'\nsage: # make an insignificant change to junk7.spyx so it will recompile...\nsage: load 'junk7.spyx'\nsage: MyClass().greet()\nGreetings!\nsage: import pickle\nsage: fi = file('junk7.pjr', 'w')\nsage: pickle.dump(MyClass(), fi)\nsage: fi.close()\nsage: exit  # returns to the command line\n\nsage  # now restart sage from the command line\nsage: load 'junk7.spyx'\nsage: import pickle\nsage: fi = file('junk7.pjr', 'r')\nsage: tmp = pickle.load(fi)\n---------------------------------------------------------------------------\nImportError\n...\nImportError: No module named _home_ryan_uva_prng_well_sage_junk7_spyx_1\n```\n\nSo the error is trying to import the module.  Apparently compiling a .spyx file creates a new Python module each time?  Other than exiting Sage every time I want to recompile, I don't see a way around this problem -- or a way to fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5533\n\n",
+    "body": "Assignee: cwitty\n\nCC:  cwitty\n\nApparently, recompiling a .spyx file creates a new module and/or creates a new dummy class.  This gets in the way of pickling.  For example, start from a command prompt and follow the instructions using the attached junk7.spyx.\n\n```\nsage  # at the command prompt, start Sage\nsage: load 'junk7.spyx'\nsage: # make an insignificant change to junk7.spyx so it will recompile...\nsage: load 'junk7.spyx'\nsage: MyClass().greet()\nGreetings!\nsage: import pickle\nsage: fi = file('junk7.pjr', 'w')\nsage: pickle.dump(MyClass(), fi)\nsage: fi.close()\nsage: exit  # returns to the command line\n\nsage  # now restart sage from the command line\nsage: load 'junk7.spyx'\nsage: import pickle\nsage: fi = file('junk7.pjr', 'r')\nsage: tmp = pickle.load(fi)\n---------------------------------------------------------------------------\nImportError\n...\nImportError: No module named _home_ryan_uva_prng_well_sage_junk7_spyx_1\n```\nSo the error is trying to import the module.  Apparently compiling a .spyx file creates a new Python module each time?  Other than exiting Sage every time I want to recompile, I don't see a way around this problem -- or a way to fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5533\n\n",
     "created_at": "2009-03-16T19:41:11Z",
     "labels": [
         "component: misc",
@@ -45,7 +45,6 @@ ImportError
 ...
 ImportError: No module named _home_ryan_uva_prng_well_sage_junk7_spyx_1
 ```
-
 So the error is trying to import the module.  Apparently compiling a .spyx file creates a new Python module each time?  Other than exiting Sage every time I want to recompile, I don't see a way around this problem -- or a way to fix it.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5533

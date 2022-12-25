@@ -3,7 +3,7 @@
 archive/issues_003212.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCurrently, rescale_row and rescale_col don't allow you to rescale by something mathematically right but outside the current matrix base ring.  Discussion from sage-devel follows.\n\n> Under the current scaling code, this happens: \n> sage: N.rescale_col(2,i/2) \n> --------------------------------------------------------------------------- \n> <type 'exceptions.TypeError'>             Traceback (most recent call \n> last) \n> <snip> \n> <type 'exceptions.TypeError'>: unable to convert I/2 to a rational \n\n\nYep, this is orthogonal.  You're just suggesting that scale_row \nbe improved. \n> What I am wondering is whether throwing an exception of TypeError \n> under the current code should be replaced by a try statement first \n> attempting N.changering(??) . The problem is I have no idea what to \n> use for ??, because unfortunately i/2 lives in Symbolic Ring, not in \n> CC, so I can't just put in ??=parent(i/2). \n\n\nThe Sequence constructor is the canonical answer to this question. \nGiven any list v of Sage object it will find a canonical place to put \nthem all: \nsage: v = [3, I/2] \nsage: w = Sequence(v) \nsage: w \n[3, I/2] \nsage: w.universe() \nSymbolic Ring\n\nIssue created by migration from https://trac.sagemath.org/ticket/3212\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, rescale_row and rescale_col don't allow you to rescale by something mathematically right but outside the current matrix base ring.  Discussion from sage-devel follows.\n\n> Under the current scaling code, this happens: \n> sage: N.rescale_col(2,i/2) \n> \n> ---\n> <type 'exceptions.TypeError'>             Traceback (most recent call \n> last) \n> <snip> \n> <type 'exceptions.TypeError'>: unable to convert I/2 to a rational \n\n\n\nYep, this is orthogonal.  You're just suggesting that scale_row \nbe improved. \n> What I am wondering is whether throwing an exception of TypeError \n> under the current code should be replaced by a try statement first \n> attempting N.changering(??) . The problem is I have no idea what to \n> use for ??, because unfortunately i/2 lives in Symbolic Ring, not in \n> CC, so I can't just put in ??=parent(i/2). \n\n\n\nThe Sequence constructor is the canonical answer to this question. \nGiven any list v of Sage object it will find a canonical place to put \nthem all: \nsage: v = [3, I/2] \nsage: w = Sequence(v) \nsage: w \n[3, I/2] \nsage: w.universe() \nSymbolic Ring\n\nIssue created by migration from https://trac.sagemath.org/ticket/3212\n\n",
     "created_at": "2008-05-15T16:31:37Z",
     "labels": [
         "component: linear algebra",
@@ -22,11 +22,13 @@ Currently, rescale_row and rescale_col don't allow you to rescale by something m
 
 > Under the current scaling code, this happens: 
 > sage: N.rescale_col(2,i/2) 
-> --------------------------------------------------------------------------- 
+> 
+> ---
 > <type 'exceptions.TypeError'>             Traceback (most recent call 
 > last) 
 > <snip> 
 > <type 'exceptions.TypeError'>: unable to convert I/2 to a rational 
+
 
 
 Yep, this is orthogonal.  You're just suggesting that scale_row 
@@ -36,6 +38,7 @@ be improved.
 > attempting N.changering(??) . The problem is I have no idea what to 
 > use for ??, because unfortunately i/2 lives in Symbolic Ring, not in 
 > CC, so I can't just put in ??=parent(i/2). 
+
 
 
 The Sequence constructor is the canonical answer to this question. 

@@ -3,7 +3,7 @@
 archive/issues_004453.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor any elliptic curve over QQ of rank >= 2 the heegner_index command must always give 0 as output.   So the following 1 at the end is just wrong.\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: D = E.heegner_discriminants_list(1)[0]\nsage: D\n-7\nsage: E.heegner_index(D)\n1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4453\n\n",
+    "body": "Assignee: @williamstein\n\nFor any elliptic curve over QQ of rank >= 2 the heegner_index command must always give 0 as output.   So the following 1 at the end is just wrong.\n\n```\nsage: E = EllipticCurve('389a')\nsage: D = E.heegner_discriminants_list(1)[0]\nsage: D\n-7\nsage: E.heegner_index(D)\n1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4453\n\n",
     "created_at": "2008-11-06T14:47:03Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 For any elliptic curve over QQ of rank >= 2 the heegner_index command must always give 0 as output.   So the following 1 at the end is just wrong.
 
-
 ```
 sage: E = EllipticCurve('389a')
 sage: D = E.heegner_discriminants_list(1)[0]
@@ -30,7 +29,6 @@ sage: D
 sage: E.heegner_index(D)
 1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4453
 
@@ -171,7 +169,7 @@ I added a new patch which changes the above to "Some higher rank examples" with 
 archive/issue_comments_032768.json:
 ```json
 {
-    "body": "I get two hunk failures when applying [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) on top of Sage 4.3.3.alpha0:\n\n```\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4453/trac_4453.2.patch && hg qpush\nadding trac_4453.2.patch to series file\napplying trac_4453.2.patch\npatching file sage/schemes/elliptic_curves/heegner.py\nHunk #3 FAILED at 6350\nHunk #4 succeeded at 6370 with fuzz 2 (offset -12 lines).\nHunk #5 FAILED at 6430\n2 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/heegner.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_4453.2.patch\n```\n\nThe attachment [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) needs rebase against Sage 4.3.3.alpha0.",
+    "body": "I get two hunk failures when applying [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) on top of Sage 4.3.3.alpha0:\n\n```\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4453/trac_4453.2.patch && hg qpush\nadding trac_4453.2.patch to series file\napplying trac_4453.2.patch\npatching file sage/schemes/elliptic_curves/heegner.py\nHunk #3 FAILED at 6350\nHunk #4 succeeded at 6370 with fuzz 2 (offset -12 lines).\nHunk #5 FAILED at 6430\n2 out of 5 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/heegner.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_4453.2.patch\n```\nThe attachment [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) needs rebase against Sage 4.3.3.alpha0.",
     "created_at": "2010-02-13T05:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -197,7 +195,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_4453.2.patch
 ```
-
 The attachment [trac_4453.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/4453/trac_4453.2.patch) needs rebase against Sage 4.3.3.alpha0.
 
 
@@ -279,7 +276,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_032773.json:
 ```json
 {
-    "body": "With the forthcoming 4.5.2 (4.5.2.rc0 + #9226) and the rebased patch, I get a doctest failure:\n\n```python\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6465:\n    sage: E.heegner_index(-8, descent_second_limit=16)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_229[14]>\", line 1, in <module>\n        E.heegner_index(-Integer(8), descent_second_limit=Integer(16))###line 6465: \n    sage: E.heegner_index(-8, descent_second_limit=16)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6485, in heegner_index\n        if check_rank and self.rank() >= 2:\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1741, in rank\n        raise RuntimeError, 'Rank not provably correct.'\n    RuntimeError: Rank not provably correct.\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_229\n***Test Failed*** 1 failures.\n```\n",
+    "body": "With the forthcoming 4.5.2 (4.5.2.rc0 + #9226) and the rebased patch, I get a doctest failure:\n\n```python\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6465:\n    sage: E.heegner_index(-8, descent_second_limit=16)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_229[14]>\", line 1, in <module>\n        E.heegner_index(-Integer(8), descent_second_limit=Integer(16))###line 6465: \n    sage: E.heegner_index(-8, descent_second_limit=16)\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6485, in heegner_index\n        if check_rank and self.rank() >= 2:\n      File \"/mnt/usb1/scratch/mpatel/apps/sage-4.5.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1741, in rank\n        raise RuntimeError, 'Rank not provably correct.'\n    RuntimeError: Rank not provably correct.\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_229\n***Test Failed*** 1 failures.\n```",
     "created_at": "2010-08-07T09:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -316,7 +313,6 @@ Exception raised:
    1 of  21 in __main__.example_229
 ***Test Failed*** 1 failures.
 ```
-
 
 
 
@@ -360,7 +356,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_032775.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> With the forthcoming 4.5.2 (4.5.2.rc0 + #9226) and the rebased patch, I get a doctest failure:\n\nThat should be \"4.5.2 (4.5.2.rc1 + #9226)\".",
+    "body": "Replying to [comment:8 mpatel]:\n> With the forthcoming 4.5.2 (4.5.2.rc0 + #9226) and the rebased patch, I get a doctest failure:\n\n\nThat should be \"4.5.2 (4.5.2.rc1 + #9226)\".",
     "created_at": "2010-08-07T10:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -372,6 +368,7 @@ archive/issue_comments_032775.json:
 Replying to [comment:8 mpatel]:
 > With the forthcoming 4.5.2 (4.5.2.rc0 + #9226) and the rebased patch, I get a doctest failure:
 
+
 That should be "4.5.2 (4.5.2.rc1 + #9226)".
 
 
@@ -381,7 +378,7 @@ That should be "4.5.2 (4.5.2.rc1 + #9226)".
 archive/issue_comments_032776.json:
 ```json
 {
-    "body": "this patch still applies fine to 4.7.1, and the new examples in the patch seem to work.\nHowever the description says that the following should give 0 and not `+Infinity`:\n\n```\nsage: E = EllipticCurve('389a')\nsage: E.heegner_index(-7)\n+Infinity\n```\n\nIs the description wrong?\n\nPaul",
+    "body": "this patch still applies fine to 4.7.1, and the new examples in the patch seem to work.\nHowever the description says that the following should give 0 and not `+Infinity`:\n\n```\nsage: E = EllipticCurve('389a')\nsage: E.heegner_index(-7)\n+Infinity\n```\nIs the description wrong?\n\nPaul",
     "created_at": "2011-09-15T16:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -398,7 +395,6 @@ sage: E = EllipticCurve('389a')
 sage: E.heegner_index(-7)
 +Infinity
 ```
-
 Is the description wrong?
 
 Paul
@@ -503,7 +499,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032782.json:
 ```json
 {
-    "body": "the failure mentioned in comment [comment:8] is still there:\n\n```\nsage: E = EllipticCurve([0, 0, 1, -34874, -2506691])\nsage: E.heegner_index(-8, descent_second_limit=16)\n...\nRuntimeError: Rank not provably correct.\n```\n\nthus this ticket needs work.\n\nPaul",
+    "body": "the failure mentioned in comment [comment:8] is still there:\n\n```\nsage: E = EllipticCurve([0, 0, 1, -34874, -2506691])\nsage: E.heegner_index(-8, descent_second_limit=16)\n...\nRuntimeError: Rank not provably correct.\n```\nthus this ticket needs work.\n\nPaul",
     "created_at": "2011-09-16T09:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4453",
     "type": "issue_comment",
@@ -520,7 +516,6 @@ sage: E.heegner_index(-8, descent_second_limit=16)
 ...
 RuntimeError: Rank not provably correct.
 ```
-
 thus this ticket needs work.
 
 Paul

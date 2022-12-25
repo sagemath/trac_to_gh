@@ -3,7 +3,7 @@
 archive/issues_004851.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe title seems complicated but the problem is easy to see: if one creates a worksheet with an apostrophe in the title, like this:\n\n```\nI'm an apostrophe\n```\n\nthen saves, quits, and reloads the worksheet, the title is now:\n\n```\nI&apos;m an apostrophe\n```\n\nIf you quit and reload the worksheet, the title becomes:\n\n```\nI&amp;apos;m an apostrophe\n```\n\n...and so on. The ampersand is replaced by \"`&amp;`\", and then THAT ampersand gets replaced by...and so on. The problem seems to happen with any HTML entity. I'm seeing this with 3.2.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4851\n\n",
+    "body": "Assignee: boothby\n\nThe title seems complicated but the problem is easy to see: if one creates a worksheet with an apostrophe in the title, like this:\n\n```\nI'm an apostrophe\n```\nthen saves, quits, and reloads the worksheet, the title is now:\n\n```\nI&apos;m an apostrophe\n```\nIf you quit and reload the worksheet, the title becomes:\n\n```\nI&amp;apos;m an apostrophe\n```\n...and so on. The ampersand is replaced by \"`&amp;`\", and then THAT ampersand gets replaced by...and so on. The problem seems to happen with any HTML entity. I'm seeing this with 3.2.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4851\n\n",
     "created_at": "2008-12-22T07:34:52Z",
     "labels": [
         "component: notebook",
@@ -23,19 +23,16 @@ The title seems complicated but the problem is easy to see: if one creates a wor
 ```
 I'm an apostrophe
 ```
-
 then saves, quits, and reloads the worksheet, the title is now:
 
 ```
 I&apos;m an apostrophe
 ```
-
 If you quit and reload the worksheet, the title becomes:
 
 ```
 I&amp;apos;m an apostrophe
 ```
-
 ...and so on. The ampersand is replaced by "`&amp;`", and then THAT ampersand gets replaced by...and so on. The problem seems to happen with any HTML entity. I'm seeing this with 3.2.2.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4851

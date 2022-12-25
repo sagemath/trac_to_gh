@@ -87,7 +87,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094079.json:
 ```json
 {
-    "body": "Applies fine to 4.5.3.alpha1.   Perhaps it would be good to have a doctest showing this:\n\n```\nsage: AdditiveAbelianGroup([1])._latex_()\n'\\\\frac{\\\\ZZ}{1\\\\ZZ}'\n```\n\nwhich is not what a mathematician would write (perhaps change it to '0'). \n\nI have given a positive review anyway, but would be happy to re-review with this changed and/or doctested.",
+    "body": "Applies fine to 4.5.3.alpha1.   Perhaps it would be good to have a doctest showing this:\n\n```\nsage: AdditiveAbelianGroup([1])._latex_()\n'\\\\frac{\\\\ZZ}{1\\\\ZZ}'\n```\nwhich is not what a mathematician would write (perhaps change it to '0'). \n\nI have given a positive review anyway, but would be happy to re-review with this changed and/or doctested.",
     "created_at": "2010-08-22T13:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ Applies fine to 4.5.3.alpha1.   Perhaps it would be good to have a doctest showi
 sage: AdditiveAbelianGroup([1])._latex_()
 '\\frac{\\ZZ}{1\\ZZ}'
 ```
-
 which is not what a mathematician would write (perhaps change it to '0'). 
 
 I have given a positive review anyway, but would be happy to re-review with this changed and/or doctested.
@@ -132,7 +131,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094081.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> which is not what a mathematician would write (perhaps change it to '0'). \n\nYes, I like the '0' suggestion, I'll make that change and post an updated patch shortly.  Thanks for the suggestion.\n\n> I have given a positive review anyway, but would be happy to re-review with this changed and/or doctested.",
+    "body": "Replying to [comment:2 cremona]:\n> which is not what a mathematician would write (perhaps change it to '0'). \n\n\nYes, I like the '0' suggestion, I'll make that change and post an updated patch shortly.  Thanks for the suggestion.\n\n> I have given a positive review anyway, but would be happy to re-review with this changed and/or doctested.",
     "created_at": "2010-08-22T18:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -143,6 +142,7 @@ archive/issue_comments_094081.json:
 
 Replying to [comment:2 cremona]:
 > which is not what a mathematician would write (perhaps change it to '0'). 
+
 
 Yes, I like the '0' suggestion, I'll make that change and post an updated patch shortly.  Thanks for the suggestion.
 
@@ -216,7 +216,7 @@ Rob
 archive/issue_comments_094085.json:
 ```json
 {
-    "body": "Second patch looks good.  (I was just thinking of testing for the trivial group, but this is more general.)\n\nAbelian groups are in the reference manual:  doc/en/reference/groups.rst has\n\n```\n   sage/groups/abelian_gps/abelian_group\n   sage/groups/abelian_gps/abelian_group_element\n   sage/groups/abelian_gps/abelian_group_morphism\n   sage/groups/abelian_gps/dual_abelian_group\n```\n\n\nThere are some formatting issues with those but not caused by this patch.",
+    "body": "Second patch looks good.  (I was just thinking of testing for the trivial group, but this is more general.)\n\nAbelian groups are in the reference manual:  doc/en/reference/groups.rst has\n\n```\n   sage/groups/abelian_gps/abelian_group\n   sage/groups/abelian_gps/abelian_group_element\n   sage/groups/abelian_gps/abelian_group_morphism\n   sage/groups/abelian_gps/dual_abelian_group\n```\n\nThere are some formatting issues with those but not caused by this patch.",
     "created_at": "2010-08-22T21:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -235,7 +235,6 @@ Abelian groups are in the reference manual:  doc/en/reference/groups.rst has
    sage/groups/abelian_gps/abelian_group_morphism
    sage/groups/abelian_gps/dual_abelian_group
 ```
-
 
 There are some formatting issues with those but not caused by this patch.
 
@@ -264,7 +263,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094087.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> Second patch looks good.  (I was just thinking of testing for the trivial group, but this is more general.)\n> \n> Abelian groups are in the reference manual:  doc/en/reference/groups.rst has\n> {{{\n>    sage/groups/abelian_gps/abelian_group\n>    sage/groups/abelian_gps/abelian_group_element\n>    sage/groups/abelian_gps/abelian_group_morphism\n>    sage/groups/abelian_gps/dual_abelian_group\n> }}}\n> \n> There are some formatting issues with those but not caused by this patch.\n\nSorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!",
+    "body": "Replying to [comment:5 cremona]:\n> Second patch looks good.  (I was just thinking of testing for the trivial group, but this is more general.)\n> \n> Abelian groups are in the reference manual:  doc/en/reference/groups.rst has\n> \n> ```\n>    sage/groups/abelian_gps/abelian_group\n>    sage/groups/abelian_gps/abelian_group_element\n>    sage/groups/abelian_gps/abelian_group_morphism\n>    sage/groups/abelian_gps/dual_abelian_group\n> ```\n> \n> There are some formatting issues with those but not caused by this patch.\n\n\nSorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!",
     "created_at": "2010-08-22T21:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -277,14 +276,16 @@ Replying to [comment:5 cremona]:
 > Second patch looks good.  (I was just thinking of testing for the trivial group, but this is more general.)
 > 
 > Abelian groups are in the reference manual:  doc/en/reference/groups.rst has
-> {{{
+> 
+> ```
 >    sage/groups/abelian_gps/abelian_group
 >    sage/groups/abelian_gps/abelian_group_element
 >    sage/groups/abelian_gps/abelian_group_morphism
 >    sage/groups/abelian_gps/dual_abelian_group
-> }}}
+> ```
 > 
 > There are some formatting issues with those but not caused by this patch.
+
 
 Sorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!
 
@@ -295,7 +296,7 @@ Sorry, my mistake -- abelian_groups are not additive_abelian_groups, and the lat
 archive/issue_comments_094088.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Sorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!\n\nNew ticket at #9783 which I will try to make some progress on.\n\nRelease manager:  Only apply the v2 patch.",
+    "body": "Replying to [comment:6 cremona]:\n> Sorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!\n\n\nNew ticket at #9783 which I will try to make some progress on.\n\nRelease manager:  Only apply the v2 patch.",
     "created_at": "2010-08-22T23:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9696",
     "type": "issue_comment",
@@ -306,6 +307,7 @@ archive/issue_comments_094088.json:
 
 Replying to [comment:6 cremona]:
 > Sorry, my mistake -- abelian_groups are not additive_abelian_groups, and the latter are not included.  Something for another ticket!
+
 
 New ticket at #9783 which I will try to make some progress on.
 

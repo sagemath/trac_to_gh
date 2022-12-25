@@ -3,7 +3,7 @@
 archive/issues_005865.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAdd some documentation to README.txt that explains the \n\n\n```\nexport SAGE_SIMD_FLAG=\"SSE2\"\n```\n\n\nflag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5865\n\n",
+    "body": "Assignee: tba\n\nAdd some documentation to README.txt that explains the \n\n```\nexport SAGE_SIMD_FLAG=\"SSE2\"\n```\n\nflag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5865\n\n",
     "created_at": "2009-04-23T06:38:41Z",
     "labels": [
         "component: documentation",
@@ -21,11 +21,9 @@ Assignee: tba
 
 Add some documentation to README.txt that explains the 
 
-
 ```
 export SAGE_SIMD_FLAG="SSE2"
 ```
-
 
 flag, which makes it so one can build SAGE with ATLAS without sse3 optimizations.  This is slower but works on way more machines.
 

@@ -3,7 +3,7 @@
 archive/issues_006087.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill @orlitzky\n\nEven though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g=graphs.CubeGraph(3)\nsage: \nsage: g.relabel()\nsage: g.automorphism_group(partition=[[0,1,2],[3,4,5]])\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6087\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @orlitzky\n\nEven though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g=graphs.CubeGraph(3)\nsage: \nsage: g.relabel()\nsage: g.automorphism_group(partition=[[0,1,2],[3,4,5]])\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6087\n\n",
     "created_at": "2009-05-19T21:38:06Z",
     "labels": [
         "component: graph theory",
@@ -21,7 +21,6 @@ Assignee: @rlmill
 CC:  @rlmill @orlitzky
 
 Even though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:
-
 
 ```
 ----------------------------------------------------------------------
@@ -42,7 +41,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6087

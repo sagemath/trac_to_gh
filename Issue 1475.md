@@ -3,7 +3,7 @@
 archive/issues_001475.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n[07:23am] ikaruga2099: while make test is running.... do you know how to enable the auto latex output (as per the presentation on the website)? Currently, if I do latex(command), I get back text not a typeset equation...\n[07:23am] william-doctest-: lprint()\n[07:24am] ikaruga2099: oh.... is there a way to have that called automatically?\n[07:26am] william-doctest-: Not *yet*.  It's planned.  I'll create a trac ticket.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1475\n\n",
+    "body": "Assignee: boothby\n\n```\n[07:23am] ikaruga2099: while make test is running.... do you know how to enable the auto latex output (as per the presentation on the website)? Currently, if I do latex(command), I get back text not a typeset equation...\n[07:23am] william-doctest-: lprint()\n[07:24am] ikaruga2099: oh.... is there a way to have that called automatically?\n[07:26am] william-doctest-: Not *yet*.  It's planned.  I'll create a trac ticket.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1475\n\n",
     "created_at": "2007-12-12T15:28:19Z",
     "labels": [
         "component: notebook",
@@ -18,14 +18,12 @@ archive/issues_001475.json:
 ```
 Assignee: boothby
 
-
 ```
 [07:23am] ikaruga2099: while make test is running.... do you know how to enable the auto latex output (as per the presentation on the website)? Currently, if I do latex(command), I get back text not a typeset equation...
 [07:23am] william-doctest-: lprint()
 [07:24am] ikaruga2099: oh.... is there a way to have that called automatically?
 [07:26am] william-doctest-: Not *yet*.  It's planned.  I'll create a trac ticket.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1475
 

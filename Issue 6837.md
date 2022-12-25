@@ -3,7 +3,7 @@
 archive/issues_006837.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nIn Koblitz's book \"Introduction to Elliptic Curves and Modular Forms\", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \\chi_1(n) a_n q^n is a modular form in M_k(\\Gamma_0(MN<sup>2),\\chi\\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\\chi given f and chi.\n\n\n```\ndef twist(f,chi):\n        r\"\"\"\n        This function returns the twist of the modular form f by the Dirichlet character chi\n\n        INPUT:\n\n        - ``f`` - a modular form\n\n        - ``chi`` - a Dirichlet character\n\n        OUTPUT:\n\n        f_\\chi, the twist of f by chi; if f(q)=sum_{n=0}^infty a_n q^n, then f_chi(q)=sum_{n=0}^infty chi(n) a_n q^n ([Koblitz]).\n\n        EXAMPLES:\n\n        Here is a basic example:\n\n        ::\n\n                sage: f=CuspForms(11,2).0\n                sage: f.q_expansion(6)\n                q - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\n                sage: eps=DirichletGroup(3).0\n                sage: f.twist(eps)\n                q + 2*q^2 + 2*q^4 - q^5 + O(q^6)\n\n        ::\n\n        NOTES:\n        This function is rather slow when chi is not a quadratic character; this may be improved with a new definition of the Sturm bound.\n\n        REFERENCES:\n\n        - [Koblitz], Neal Koblitz, \"Introduction to Elliptic Curves and Modular Forms\", Springer GTM 97, 1993, Proposition III.3.17.\n\n        AUTHORS:\n\n        - L. J. P. Kilford (2009-08-28)\n\n        \"\"\"\n        DG_MNsq=DirichletGroup(f.level()*chi.modulus()^2)\n        basering=DG_MNsq.base_ring()\n        M_k_MNsq=ModularForms(DG_MNsq(self.character())*DG_MNsq(chi)^2,self.weight(),base_ring=basering)\n        bound=M_k_MNsq.sturm_bound()+1\n        PSR.<q>=PowerSeriesRing(DG_MNsq.base_ring())\n        f_twist=PSR([self[i]*chi(i) for i in xrange(0,bound+2)])+O(q^bound)\n        return M_k_MNsq(f_twist)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6837\n\n",
+    "body": "Assignee: @craigcitro\n\nIn Koblitz's book \"Introduction to Elliptic Curves and Modular Forms\", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \\chi_1(n) a_n q^n is a modular form in M_k(\\Gamma_0(MN<sup>2),\\chi\\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\\chi given f and chi.\n\n```\ndef twist(f,chi):\n        r\"\"\"\n        This function returns the twist of the modular form f by the Dirichlet character chi\n\n        INPUT:\n\n        - ``f`` - a modular form\n\n        - ``chi`` - a Dirichlet character\n\n        OUTPUT:\n\n        f_\\chi, the twist of f by chi; if f(q)=sum_{n=0}^infty a_n q^n, then f_chi(q)=sum_{n=0}^infty chi(n) a_n q^n ([Koblitz]).\n\n        EXAMPLES:\n\n        Here is a basic example:\n\n        ::\n\n                sage: f=CuspForms(11,2).0\n                sage: f.q_expansion(6)\n                q - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\n                sage: eps=DirichletGroup(3).0\n                sage: f.twist(eps)\n                q + 2*q^2 + 2*q^4 - q^5 + O(q^6)\n\n        ::\n\n        NOTES:\n        This function is rather slow when chi is not a quadratic character; this may be improved with a new definition of the Sturm bound.\n\n        REFERENCES:\n\n        - [Koblitz], Neal Koblitz, \"Introduction to Elliptic Curves and Modular Forms\", Springer GTM 97, 1993, Proposition III.3.17.\n\n        AUTHORS:\n\n        - L. J. P. Kilford (2009-08-28)\n\n        \"\"\"\n        DG_MNsq=DirichletGroup(f.level()*chi.modulus()^2)\n        basering=DG_MNsq.base_ring()\n        M_k_MNsq=ModularForms(DG_MNsq(self.character())*DG_MNsq(chi)^2,self.weight(),base_ring=basering)\n        bound=M_k_MNsq.sturm_bound()+1\n        PSR.<q>=PowerSeriesRing(DG_MNsq.base_ring())\n        f_twist=PSR([self[i]*chi(i) for i in xrange(0,bound+2)])+O(q^bound)\n        return M_k_MNsq(f_twist)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6837\n\n",
     "created_at": "2009-08-28T15:38:45Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_006837.json:
 Assignee: @craigcitro
 
 In Koblitz's book "Introduction to Elliptic Curves and Modular Forms", Proposition III.3.17, it is proved that if f(q)=sum_{n=0}^infinity a_n q^n is the Fourier expansion of a modular form in M_k(Gamma_0(M),chi) and chi_1 is a primitive Dirichlet character modulo N, then f_chi(q)=sum_{n=0}^infinity \chi_1(n) a_n q^n is a modular form in M_k(\Gamma_0(MN<sup>2),\chi\chi_1</sup>2). This is a proposed method for objects of type 'sage.modular.modform.element.ModularFormElement' which will create f_\chi given f and chi.
-
 
 ```
 def twist(f,chi):
@@ -172,7 +171,7 @@ Note that the code is indeed rather slow, even with the patch at #6836.  But sin
 archive/issue_comments_056275.json:
 ```json
 {
-    "body": "* There should be an empty line before `... math:`.\n\n  * I don't know why, but Lloyd's first names are transformed into 12. 10. 16. in the reference page.\n\n  * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].\n\n\n```\nsage: M = CuspForms(11,2)\nsage: f = M.0\nsage: chi = DirichletGroup(3).0\nsage: fchi = f.twist(chi)\nsage: fchi\nq + 2*q^2 + 2*q^4 - q^5 + O(q^6)\nsage: fchi.twist(chi)\n```\n\n\n\n* If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?",
+    "body": "* There should be an empty line before `... math:`.\n\n  * I don't know why, but Lloyd's first names are transformed into 12. 10. 16. in the reference page.\n\n  * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].\n\n```\nsage: M = CuspForms(11,2)\nsage: f = M.0\nsage: chi = DirichletGroup(3).0\nsage: fchi = f.twist(chi)\nsage: fchi\nq + 2*q^2 + 2*q^4 - q^5 + O(q^6)\nsage: fchi.twist(chi)\n```\n\n\n* If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?",
     "created_at": "2010-02-01T17:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -187,7 +186,6 @@ archive/issue_comments_056275.json:
 
   * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].
 
-
 ```
 sage: M = CuspForms(11,2)
 sage: f = M.0
@@ -197,7 +195,6 @@ sage: fchi
 q + 2*q^2 + 2*q^4 - q^5 + O(q^6)
 sage: fchi.twist(chi)
 ```
-
 
 
 * If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?
@@ -227,7 +224,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_056277.json:
 ```json
 {
-    "body": "Replying to [comment:3 wuthrich]:\n\n>  * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].\n\nI don't agree: twisting by chi and then by chi<sup>-1</sup> shouldn't give the original answer back again, it should give some oldform at possibly higher level, whose q-expansion has zeros at coefficients that aren't prime to the conductor of chi. Looking for some associated minimal-level form is tempting, but it's not going to make sense when the original form f is not an eigenform.\n\nThere is a question, however, as to what level the answer should be returned at when M and N are not coprime. I would contend that the answer should be returned as an element of the modular forms space of level LCM(N, N'M, M<sup>2</sup>) where N is the level of f, N' is the conductor of the character of f, and M is the conductor of the character we're twisting by. This is more or less the best bound you can get without knowing more about f; see Atkin and Li, \"Twists of newforms and pseudo-eigenvalues of W-operators\". (Perhaps there should be an optional argument for what level to look in, so the user can override the default.)\n\n>  * If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?\n\nIt does, see line 460 of the patch. This is just a notational issue, one man's M_k(Gamma_0(N), chi) is another man's M_k(Gamma_1(N), chi).",
+    "body": "Replying to [comment:3 wuthrich]:\n\n>  * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].\n\n\nI don't agree: twisting by chi and then by chi<sup>-1</sup> shouldn't give the original answer back again, it should give some oldform at possibly higher level, whose q-expansion has zeros at coefficients that aren't prime to the conductor of chi. Looking for some associated minimal-level form is tempting, but it's not going to make sense when the original form f is not an eigenform.\n\nThere is a question, however, as to what level the answer should be returned at when M and N are not coprime. I would contend that the answer should be returned as an element of the modular forms space of level LCM(N, N'M, M<sup>2</sup>) where N is the level of f, N' is the conductor of the character of f, and M is the conductor of the character we're twisting by. This is more or less the best bound you can get without knowing more about f; see Atkin and Li, \"Twists of newforms and pseudo-eigenvalues of W-operators\". (Perhaps there should be an optional argument for what level to look in, so the user can override the default.)\n\n>  * If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?\n\n\nIt does, see line 460 of the patch. This is just a notational issue, one man's M_k(Gamma_0(N), chi) is another man's M_k(Gamma_1(N), chi).",
     "created_at": "2010-04-12T15:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -240,11 +237,13 @@ Replying to [comment:3 wuthrich]:
 
 >  * I think one should catch the case when the conductor of the character is not coprime to the level of the modular form. Note that the if you twist a form that has been twisted by chi with chi again, the level should go down not up. I believe that the correct assumption are in [Mazur-Tate-Teitelbaum].
 
+
 I don't agree: twisting by chi and then by chi<sup>-1</sup> shouldn't give the original answer back again, it should give some oldform at possibly higher level, whose q-expansion has zeros at coefficients that aren't prime to the conductor of chi. Looking for some associated minimal-level form is tempting, but it's not going to make sense when the original form f is not an eigenform.
 
 There is a question, however, as to what level the answer should be returned at when M and N are not coprime. I would contend that the answer should be returned as an element of the modular forms space of level LCM(N, N'M, M<sup>2</sup>) where N is the level of f, N' is the conductor of the character of f, and M is the conductor of the character we're twisting by. This is more or less the best bound you can get without knowing more about f; see Atkin and Li, "Twists of newforms and pseudo-eigenvalues of W-operators". (Perhaps there should be an optional argument for what level to look in, so the user can override the default.)
 
 >  * If the form is on Gamma_0(N) and one twists with a character modulo N, I think it should change the Nebetypus, no ?
+
 
 It does, see line 460 of the patch. This is just a notational issue, one man's M_k(Gamma_0(N), chi) is another man's M_k(Gamma_1(N), chi).
 
@@ -500,7 +499,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_056285.json:
 ```json
 {
-    "body": "bad use of unicode dash in one reference : \n\n```\nInventiones math. 48 (1978), 221\u00e2\u20ac\u201c243.\n```\n\nshould just be\n\n```\nInventiones Math. 48 (1978), 221-243.\n```\n",
+    "body": "bad use of unicode dash in one reference : \n\n```\nInventiones math. 48 (1978), 221\u00e2\u20ac\u201c243.\n```\nshould just be\n\n```\nInventiones Math. 48 (1978), 221-243.\n```",
     "created_at": "2015-04-02T19:37:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -514,7 +513,6 @@ bad use of unicode dash in one reference :
 ```
 Inventiones math. 48 (1978), 221â€“243.
 ```
-
 should just be
 
 ```
@@ -523,13 +521,12 @@ Inventiones Math. 48 (1978), 221-243.
 
 
 
-
 ---
 
 archive/issue_comments_056286.json:
 ```json
 {
-    "body": "Replying to [comment:16 chapoton]:\n> bad use of unicode dash in one reference\nI can fix this of course, but why is it bad?  The file is declared as utf-8 on the first line.",
+    "body": "Replying to [comment:16 chapoton]:\n> bad use of unicode dash in one reference\n\nI can fix this of course, but why is it bad?  The file is declared as utf-8 on the first line.",
     "created_at": "2015-04-02T19:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -540,6 +537,7 @@ archive/issue_comments_056286.json:
 
 Replying to [comment:16 chapoton]:
 > bad use of unicode dash in one reference
+
 I can fix this of course, but why is it bad?  The file is declared as utf-8 on the first line.
 
 
@@ -605,7 +603,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_056290.json:
 ```json
 {
-    "body": "I tested this and all test passed. However, I am not sure about the implementation. There is only one (rather trivial) test in the documentations. So I played around a bit.\n\nCurrently it fails if the form is a `NewForm` as explained in  #18086 .\n\nIt also fails if f does not have a neben character:\n\n```\nsage: M = CuspForms(Gamma1(13),4)\nsage: f = M.basis()[13]\nsage: G = DirichletGroup(11)\nsage: chi = G.0\nsage: f.twist(chi)\n```\n\n\ngives `ValueError: Form is not an eigenvector for <2>`\n\nSimilarly it fails when the character has values outside the field of coefficients of f:\n\n\n```\nsage: M = CuspForms(Gamma0(37),2)\nsage: f = M.0\nsage: G = DirichletGroup(11)\nsage: chi = G.0\nsage: chi\nDirichlet character modulo 11 of conductor 11 mapping 2 |--> zeta10\nsage: f.twist(chi)\n```\n\n\nreturns `ValueError: No coercion defined`.\n\nNow some of these problems may be due to user choosing bad input. But that should be checked in the function or (at the least) be documented. Alas, I revert it to needs work.\n\nHowever I do thank you for picking up this old ticket and working on it. I really would like to see this work in Sage. Thanks for picking up on David Loeffler's comments.",
+    "body": "I tested this and all test passed. However, I am not sure about the implementation. There is only one (rather trivial) test in the documentations. So I played around a bit.\n\nCurrently it fails if the form is a `NewForm` as explained in  #18086 .\n\nIt also fails if f does not have a neben character:\n\n```\nsage: M = CuspForms(Gamma1(13),4)\nsage: f = M.basis()[13]\nsage: G = DirichletGroup(11)\nsage: chi = G.0\nsage: f.twist(chi)\n```\n\ngives `ValueError: Form is not an eigenvector for <2>`\n\nSimilarly it fails when the character has values outside the field of coefficients of f:\n\n```\nsage: M = CuspForms(Gamma0(37),2)\nsage: f = M.0\nsage: G = DirichletGroup(11)\nsage: chi = G.0\nsage: chi\nDirichlet character modulo 11 of conductor 11 mapping 2 |--> zeta10\nsage: f.twist(chi)\n```\n\nreturns `ValueError: No coercion defined`.\n\nNow some of these problems may be due to user choosing bad input. But that should be checked in the function or (at the least) be documented. Alas, I revert it to needs work.\n\nHowever I do thank you for picking up this old ticket and working on it. I really would like to see this work in Sage. Thanks for picking up on David Loeffler's comments.",
     "created_at": "2015-04-08T11:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -628,11 +626,9 @@ sage: chi = G.0
 sage: f.twist(chi)
 ```
 
-
 gives `ValueError: Form is not an eigenvector for <2>`
 
 Similarly it fails when the character has values outside the field of coefficients of f:
-
 
 ```
 sage: M = CuspForms(Gamma0(37),2)
@@ -643,7 +639,6 @@ sage: chi
 Dirichlet character modulo 11 of conductor 11 mapping 2 |--> zeta10
 sage: f.twist(chi)
 ```
-
 
 returns `ValueError: No coercion defined`.
 
@@ -694,7 +689,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056293.json:
 ```json
 {
-    "body": "Replying to [comment:20 wuthrich]:\n> I tested this and all test passed. However, I am not sure about the implementation. There is only one (rather trivial) test in the documentations. So I played around a bit.\nThanks!\n\n> Currently it fails if the form is a `NewForm` as explained in  #18086 .\nI moved the method to the class `ModularFormElement`, so that `Newform` does not even have a `twist` method anymore until #18086.\n\n> It also fails if f does not have a neben character:\n> [...]\n> Similarly it fails when the character has values outside the field of coefficients of f:\n> [...]\nBoth of these should now be fixed.  I added different examples to the doctests than the ones you gave because they seemed to take forever.",
+    "body": "Replying to [comment:20 wuthrich]:\n> I tested this and all test passed. However, I am not sure about the implementation. There is only one (rather trivial) test in the documentations. So I played around a bit.\n\nThanks!\n\n> Currently it fails if the form is a `NewForm` as explained in  #18086 .\n\nI moved the method to the class `ModularFormElement`, so that `Newform` does not even have a `twist` method anymore until #18086.\n\n> It also fails if f does not have a neben character:\n> [...]\n> Similarly it fails when the character has values outside the field of coefficients of f:\n> [...]\n\nBoth of these should now be fixed.  I added different examples to the doctests than the ones you gave because they seemed to take forever.",
     "created_at": "2015-04-09T09:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6837",
     "type": "issue_comment",
@@ -705,15 +700,18 @@ archive/issue_comments_056293.json:
 
 Replying to [comment:20 wuthrich]:
 > I tested this and all test passed. However, I am not sure about the implementation. There is only one (rather trivial) test in the documentations. So I played around a bit.
+
 Thanks!
 
 > Currently it fails if the form is a `NewForm` as explained in  #18086 .
+
 I moved the method to the class `ModularFormElement`, so that `Newform` does not even have a `twist` method anymore until #18086.
 
 > It also fails if f does not have a neben character:
 > [...]
 > Similarly it fails when the character has values outside the field of coefficients of f:
 > [...]
+
 Both of these should now be fixed.  I added different examples to the doctests than the ones you gave because they seemed to take forever.
 
 

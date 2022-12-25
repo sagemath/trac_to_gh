@@ -3,7 +3,7 @@
 archive/issues_005685.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: nth root rational integer\n\nAs discussed here: http://groups.google.co.uk/group/sage-nt/browse_thread/thread/4c6e60b6a20cabae#\n\nI do not like this inconsistency between ZZ and QQ:\n\n\n```\nsage: a=ZZ(8)\nsage: a.nth_root(3)\n2\nsage: b=QQ(8)\nsage: b.nth_root(3)\n2\nsage: a.nth_root(2)\n2\nsage: b.nth_root(2)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/13463/_home_masgaj_sage_egros_sage_5.py\nin <module>()\n\n/local/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/rational.so\nin sage.rings.rational.Rational.nth_root\n(sage/rings/rational.c:8888)()\n\nValueError: not a perfect nth power\n```\n\n\nI cannot think of a reason why we have an nth_root function on\nintegers which silently truncates a real root for positive argument\nand gives a ValueError for negative ones.\n\nThe attached ticket deals with this, and at the same time adds a couple of extra utilities which I needed for rational numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5685\n\n",
+    "body": "Assignee: somebody\n\nKeywords: nth root rational integer\n\nAs discussed here: http://groups.google.co.uk/group/sage-nt/browse_thread/thread/4c6e60b6a20cabae#\n\nI do not like this inconsistency between ZZ and QQ:\n\n```\nsage: a=ZZ(8)\nsage: a.nth_root(3)\n2\nsage: b=QQ(8)\nsage: b.nth_root(3)\n2\nsage: a.nth_root(2)\n2\nsage: b.nth_root(2)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/13463/_home_masgaj_sage_egros_sage_5.py\nin <module>()\n\n/local/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/rational.so\nin sage.rings.rational.Rational.nth_root\n(sage/rings/rational.c:8888)()\n\nValueError: not a perfect nth power\n```\n\nI cannot think of a reason why we have an nth_root function on\nintegers which silently truncates a real root for positive argument\nand gives a ValueError for negative ones.\n\nThe attached ticket deals with this, and at the same time adds a couple of extra utilities which I needed for rational numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5685\n\n",
     "created_at": "2009-04-04T20:55:32Z",
     "labels": [
         "component: basic arithmetic"
@@ -22,7 +22,6 @@ Keywords: nth root rational integer
 As discussed here: http://groups.google.co.uk/group/sage-nt/browse_thread/thread/4c6e60b6a20cabae#
 
 I do not like this inconsistency between ZZ and QQ:
-
 
 ```
 sage: a=ZZ(8)
@@ -46,7 +45,6 @@ in sage.rings.rational.Rational.nth_root
 
 ValueError: not a perfect nth power
 ```
-
 
 I cannot think of a reason why we have an nth_root function on
 integers which silently truncates a real root for positive argument
@@ -101,7 +99,7 @@ Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_
 archive/issue_comments_044368.json:
 ```json
 {
-    "body": "* The new code you added to extended_integer_ring.py is this:\n\n```\n \t199\t    def nth_root(self, n, truncate_mode=0): \n \t200\t        temp = Integer.nth_root(self, n, truncate_mode) \n \t201\t        if truncate_mode: \n \t202\t            return self.parent()(temp[0]), temp[1]\n```\n\nThere is no documentation or docstring or doctests.\n\n* In integer.pyx:\n\n```\ndef nth_root(self, int n, int truncate_mode=0): \n```\n\nShould the truncate_mode be of type bint (=boolean int)?\n\nOtherwise, I like this patch. \n\n -- William",
+    "body": "* The new code you added to extended_integer_ring.py is this:\n\n```\n \t199\t    def nth_root(self, n, truncate_mode=0): \n \t200\t        temp = Integer.nth_root(self, n, truncate_mode) \n \t201\t        if truncate_mode: \n \t202\t            return self.parent()(temp[0]), temp[1]\n```\nThere is no documentation or docstring or doctests.\n\n* In integer.pyx:\n\n```\ndef nth_root(self, int n, int truncate_mode=0): \n```\nShould the truncate_mode be of type bint (=boolean int)?\n\nOtherwise, I like this patch. \n\n -- William",
     "created_at": "2009-04-10T14:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ archive/issue_comments_044368.json:
  	201	        if truncate_mode: 
  	202	            return self.parent()(temp[0]), temp[1]
 ```
-
 There is no documentation or docstring or doctests.
 
 * In integer.pyx:
@@ -126,7 +123,6 @@ There is no documentation or docstring or doctests.
 ```
 def nth_root(self, int n, int truncate_mode=0): 
 ```
-
 Should the truncate_mode be of type bint (=boolean int)?
 
 Otherwise, I like this patch. 
@@ -178,7 +174,7 @@ I have added a new patch which replaces the previous one and adds a docstring as
 archive/issue_comments_044371.json:
 ```json
 {
-    "body": "I'm fine with this patch.  John, if you want to polish it some more, this error message reads funny:\n\n\n```\nsage: a = 9\nsage: a.nth_root(3)\n...\nValueError: 9 is not an 3'th power\n```\n",
+    "body": "I'm fine with this patch.  John, if you want to polish it some more, this error message reads funny:\n\n```\nsage: a = 9\nsage: a.nth_root(3)\n...\nValueError: 9 is not an 3'th power\n```",
     "created_at": "2009-04-12T04:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -189,14 +185,12 @@ archive/issue_comments_044371.json:
 
 I'm fine with this patch.  John, if you want to polish it some more, this error message reads funny:
 
-
 ```
 sage: a = 9
 sage: a.nth_root(3)
 ...
 ValueError: 9 is not an 3'th power
 ```
-
 
 
 
@@ -267,7 +261,7 @@ Michael
 archive/issue_comments_044375.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n> Hmm, this patch set depends on the existence of sage/rings/extended_integer_ring.py which was removed in #5735. Could you rebase these three patches or is the removal of that file an issue? \n> \n> Cheers,\n> \n> Michael\nThat should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John",
+    "body": "Replying to [comment:7 mabshoff]:\n> Hmm, this patch set depends on the existence of sage/rings/extended_integer_ring.py which was removed in #5735. Could you rebase these three patches or is the removal of that file an issue? \n> \n> Cheers,\n> \n> Michael\n\nThat should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John",
     "created_at": "2009-04-13T09:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -282,6 +276,7 @@ Replying to [comment:7 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 That should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John
 
 
@@ -291,7 +286,7 @@ That should not be an issue at all, just ignore the bit of the patch which touch
 archive/issue_comments_044376.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n\nHi John,\n\n> That should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John\n\nOk, I will take care of this in the morning. I know also know why RobertWB's patch at #5735 had rejection issues since he must have had this patch in his que.\n\nI am reinstating the positive review and will merge all three patches into one modulo the changes for files that no longer exist.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n\nHi John,\n\n> That should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John\n\n\nOk, I will take care of this in the morning. I know also know why RobertWB's patch at #5735 had rejection issues since he must have had this patch in his que.\n\nI am reinstating the positive review and will merge all three patches into one modulo the changes for files that no longer exist.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T09:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -305,6 +300,7 @@ Replying to [comment:8 cremona]:
 Hi John,
 
 > That should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John
+
 
 Ok, I will take care of this in the morning. I know also know why RobertWB's patch at #5735 had rejection issues since he must have had this patch in his que.
 
@@ -359,7 +355,7 @@ I have uploaded a new rebased patch replacing all three (in fact the first was a
 archive/issue_comments_044379.json:
 ```json
 {
-    "body": "Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n\n```\nsage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \npatching file sage/rings/integer.pyx\npatching file sage/rings/qqbar.py\npatching file sage/rings/rational.pyx\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\npatching file sage/rings/integer.pyx\nHunk #2 FAILED at 1538.\nHunk #3 succeeded at 1564 (offset -13 lines).\nHunk #4 FAILED at 1604.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatching file sage/rings/number_field/order.py\npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 1218 (offset -37 lines).\nHunk #2 succeeded at 1242 (offset -37 lines).\n```\n\n\nI will poke around later and see what the problem is.\n\nCheers,\n\nMichael",
+    "body": "Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n\n```\nsage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \npatching file sage/rings/integer.pyx\npatching file sage/rings/qqbar.py\npatching file sage/rings/rational.pyx\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\npatching file sage/rings/integer.pyx\nHunk #2 FAILED at 1538.\nHunk #3 succeeded at 1564 (offset -13 lines).\nHunk #4 FAILED at 1604.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatching file sage/rings/number_field/order.py\npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 1218 (offset -37 lines).\nHunk #2 succeeded at 1242 (offset -37 lines).\n```\n\nI will poke around later and see what the problem is.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T22:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -387,7 +383,6 @@ Hunk #1 succeeded at 1218 (offset -37 lines).
 Hunk #2 succeeded at 1242 (offset -37 lines).
 ```
 
-
 I will poke around later and see what the problem is.
 
 Cheers,
@@ -401,7 +396,7 @@ Michael
 archive/issue_comments_044380.json:
 ```json
 {
-    "body": "Replying to [comment:11 mabshoff]:\n> Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n> {{{\n> sage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \n> patching file sage/rings/integer.pyx\n> patching file sage/rings/qqbar.py\n> patching file sage/rings/rational.pyx\n> patching file sage/schemes/elliptic_curves/ell_rational_field.py\n> patching file sage/rings/integer.pyx\n> Hunk #2 FAILED at 1538.\n> Hunk #3 succeeded at 1564 (offset -13 lines).\n> Hunk #4 FAILED at 1604.\n> 2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\n> patching file sage/rings/number_field/order.py\n> patching file sage/rings/rational.pyx\n> Hunk #1 succeeded at 1218 (offset -37 lines).\n> Hunk #2 succeeded at 1242 (offset -37 lines).\n> }}}\n> \n> I will poke around later and see what the problem is.\n> \n> Cheers,\n> \n> Michael\n\nIt must be something else merged since 3.4.1.rc2 since I just tried again and had no problems with 3.4.1.rc2 + 5735 patches + the latest one here.",
+    "body": "Replying to [comment:11 mabshoff]:\n> Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n> \n> ```\n> sage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \n> patching file sage/rings/integer.pyx\n> patching file sage/rings/qqbar.py\n> patching file sage/rings/rational.pyx\n> patching file sage/schemes/elliptic_curves/ell_rational_field.py\n> patching file sage/rings/integer.pyx\n> Hunk #2 FAILED at 1538.\n> Hunk #3 succeeded at 1564 (offset -13 lines).\n> Hunk #4 FAILED at 1604.\n> 2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\n> patching file sage/rings/number_field/order.py\n> patching file sage/rings/rational.pyx\n> Hunk #1 succeeded at 1218 (offset -37 lines).\n> Hunk #2 succeeded at 1242 (offset -37 lines).\n> ```\n> \n> I will poke around later and see what the problem is.\n> \n> Cheers,\n> \n> Michael\n\n\nIt must be something else merged since 3.4.1.rc2 since I just tried again and had no problems with 3.4.1.rc2 + 5735 patches + the latest one here.",
     "created_at": "2009-04-14T11:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -412,7 +407,8 @@ archive/issue_comments_044380.json:
 
 Replying to [comment:11 mabshoff]:
 > Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: 
-> {{{
+> 
+> ```
 > sage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch 
 > patching file sage/rings/integer.pyx
 > patching file sage/rings/qqbar.py
@@ -427,13 +423,14 @@ Replying to [comment:11 mabshoff]:
 > patching file sage/rings/rational.pyx
 > Hunk #1 succeeded at 1218 (offset -37 lines).
 > Hunk #2 succeeded at 1242 (offset -37 lines).
-> }}}
+> ```
 > 
 > I will poke around later and see what the problem is.
 > 
 > Cheers,
 > 
 > Michael
+
 
 It must be something else merged since 3.4.1.rc2 since I just tried again and had no problems with 3.4.1.rc2 + 5735 patches + the latest one here.
 
@@ -541,7 +538,7 @@ archive/issue_events_013369.json:
 archive/issue_comments_044384.json:
 ```json
 {
-    "body": "Replying to [comment:14 mabshoff]:\n> Merged trac_5685_new.patch in Sage 3.4.1.rc3.\n> \n> Cheers,\n> \n> Michael\n\nThanks -- I hope I was not doing anything wrong in making the patch -- I used hg queues to combine the earlier ones and add the new stuff, but did not do a \"hg qfold\" as I think I should have done.  Sorry.",
+    "body": "Replying to [comment:14 mabshoff]:\n> Merged trac_5685_new.patch in Sage 3.4.1.rc3.\n> \n> Cheers,\n> \n> Michael\n\n\nThanks -- I hope I was not doing anything wrong in making the patch -- I used hg queues to combine the earlier ones and add the new stuff, but did not do a \"hg qfold\" as I think I should have done.  Sorry.",
     "created_at": "2009-04-15T08:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
@@ -556,5 +553,6 @@ Replying to [comment:14 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Thanks -- I hope I was not doing anything wrong in making the patch -- I used hg queues to combine the earlier ones and add the new stuff, but did not do a "hg qfold" as I think I should have done.  Sorry.

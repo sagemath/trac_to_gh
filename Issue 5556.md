@@ -3,7 +3,7 @@
 archive/issues_005556.json:
 ```json
 {
-    "body": "CC:  @burcin @robertwb\n\nKeywords: symbolic gamma log function numerical approximation\n\nSo this is incredibly awful:\n\n\n```\nsage: gamma(RealField(100)(3/4))\n1.2254167024651776451290983034\nsage: gamma(3/4).n(100)\n1.2254167024651776429777783051\n```\n\n\n(for the record, the first one is correct)\n\nand this doesn't agree with that:\n\n\n```\nsage: log(2).n(100)\n0.69314718055994530941723212146\nsage: log(RealField(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Devel/RiemannTheta/riemann_theta.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in log(x, base)\n   9242             return x.log()\n   9243         except AttributeError: \n-> 9244             return ln(x)\n   9245     else:\n   9246         try:\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in ln(x)\n   9189         0.693147180559945\n   9190     \"\"\"\n-> 9191     return function_log(x)\n   9192 \n   9193 def log(x, base=None):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x, *args)\n   7542             return getattr(x, self._repr_())(*args)\n   7543         except AttributeError:\n-> 7544             return SymbolicComposition(self, SR(x))\n   7545 \n   7546     def _approx_(self, x):  # must *always* be called with a float x as input.\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)\n    507 \n    508     def _coerce_impl(self, x):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a SymbolicExpression.\"%type(x)\n    569 \n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type 'sage.rings.real_mpfr.RealField'>' into a SymbolicExpression.\nsage: log(RealField(2))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5556\n\n",
+    "body": "CC:  @burcin @robertwb\n\nKeywords: symbolic gamma log function numerical approximation\n\nSo this is incredibly awful:\n\n```\nsage: gamma(RealField(100)(3/4))\n1.2254167024651776451290983034\nsage: gamma(3/4).n(100)\n1.2254167024651776429777783051\n```\n\n(for the record, the first one is correct)\n\nand this doesn't agree with that:\n\n```\nsage: log(2).n(100)\n0.69314718055994530941723212146\nsage: log(RealField(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Devel/RiemannTheta/riemann_theta.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in log(x, base)\n   9242             return x.log()\n   9243         except AttributeError: \n-> 9244             return ln(x)\n   9245     else:\n   9246         try:\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in ln(x)\n   9189         0.693147180559945\n   9190     \"\"\"\n-> 9191     return function_log(x)\n   9192 \n   9193 def log(x, base=None):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x, *args)\n   7542             return getattr(x, self._repr_())(*args)\n   7543         except AttributeError:\n-> 7544             return SymbolicComposition(self, SR(x))\n   7545 \n   7546     def _approx_(self, x):  # must *always* be called with a float x as input.\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)\n    507 \n    508     def _coerce_impl(self, x):\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/calculus/calculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a SymbolicExpression.\"%type(x)\n    569 \n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type 'sage.rings.real_mpfr.RealField'>' into a SymbolicExpression.\nsage: log(RealField(2))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5556\n\n",
     "created_at": "2009-03-18T05:54:30Z",
     "labels": [
         "component: symbolics",
@@ -23,7 +23,6 @@ Keywords: symbolic gamma log function numerical approximation
 
 So this is incredibly awful:
 
-
 ```
 sage: gamma(RealField(100)(3/4))
 1.2254167024651776451290983034
@@ -31,11 +30,9 @@ sage: gamma(3/4).n(100)
 1.2254167024651776429777783051
 ```
 
-
 (for the record, the first one is correct)
 
 and this doesn't agree with that:
-
 
 ```
 sage: log(2).n(100)
@@ -85,7 +82,6 @@ TypeError: cannot coerce type '<type 'sage.rings.real_mpfr.RealField'>' into a S
 sage: log(RealField(2))
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5556
 
 
@@ -97,7 +93,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5556
 archive/issue_comments_043148.json:
 ```json
 {
-    "body": "I just realized I goofed, I meant:\n\n\n```\nsage: log(2).n(100)\n0.69314718055994530941723212146\nsage: log(RealField(100)(2))\n0.69314718055994530941723212146\n```\n\n\nwhich works as expected.  But the symbolic gamma function is still wrong, and egregiously wrong at that!",
+    "body": "I just realized I goofed, I meant:\n\n```\nsage: log(2).n(100)\n0.69314718055994530941723212146\nsage: log(RealField(100)(2))\n0.69314718055994530941723212146\n```\n\nwhich works as expected.  But the symbolic gamma function is still wrong, and egregiously wrong at that!",
     "created_at": "2009-03-18T05:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5556",
     "type": "issue_comment",
@@ -108,14 +104,12 @@ archive/issue_comments_043148.json:
 
 I just realized I goofed, I meant:
 
-
 ```
 sage: log(2).n(100)
 0.69314718055994530941723212146
 sage: log(RealField(100)(2))
 0.69314718055994530941723212146
 ```
-
 
 which works as expected.  But the symbolic gamma function is still wrong, and egregiously wrong at that!
 
@@ -144,7 +138,7 @@ The problem is that gamma(3/4) is automatically evaluated to precision 53, and t
 archive/issue_comments_043150.json:
 ```json
 {
-    "body": "Actually, belay that.  There are a few such functions out there.  E.g., \n\n```\nsage: sin(SR(3/4))\nsin(3/4)\nsage: sin(3/4)\nsin(3/4)\nsage: gamma(SR(3/4))\ngamma(3/4)\nsage: gamma(3/4)\n1.22541670246518\nsage: zeta(SR(3/4))\nzeta(3/4)\nsage: zeta(3/4)\n-3.44128538694522\n```\n\nSo the problem lies in gamma itself (and friends).  Most likely fix at this point is adding a prec keyword, as in sqrt.",
+    "body": "Actually, belay that.  There are a few such functions out there.  E.g., \n\n```\nsage: sin(SR(3/4))\nsin(3/4)\nsage: sin(3/4)\nsin(3/4)\nsage: gamma(SR(3/4))\ngamma(3/4)\nsage: gamma(3/4)\n1.22541670246518\nsage: zeta(SR(3/4))\nzeta(3/4)\nsage: zeta(3/4)\n-3.44128538694522\n```\nSo the problem lies in gamma itself (and friends).  Most likely fix at this point is adding a prec keyword, as in sqrt.",
     "created_at": "2009-09-30T14:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5556",
     "type": "issue_comment",
@@ -169,7 +163,6 @@ zeta(3/4)
 sage: zeta(3/4)
 -3.44128538694522
 ```
-
 So the problem lies in gamma itself (and friends).  Most likely fix at this point is adding a prec keyword, as in sqrt.
 
 

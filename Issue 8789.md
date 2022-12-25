@@ -3,7 +3,7 @@
 archive/issues_008789.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nStarting score in sage-4.4:\n\n```\nfree_module_element.pyx: 47% (50 of 105)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8789\n\n",
+    "body": "Assignee: tbd\n\nStarting score in sage-4.4:\n\n```\nfree_module_element.pyx: 47% (50 of 105)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8789\n\n",
     "created_at": "2010-04-28T04:16:47Z",
     "labels": [
         "component: doctest coverage"
@@ -22,7 +22,6 @@ Starting score in sage-4.4:
 ```
 free_module_element.pyx: 47% (50 of 105)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8789
@@ -110,7 +109,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080348.json:
 ```json
 {
-    "body": "Attachment [trac_8789_part2-rebased.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2-rebased.patch) by mvngu created at 2010-05-08 03:44:58\n\nThe second patch doesn't apply when applied on top of the first one:\n\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789.patch && hg qpush \nadding trac_8789.patch to series file\napplying trac_8789.patch\nnow at: trac_8789.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789_part2.patch && hg qpush \nadding trac_8789_part2.patch to series file\napplying trac_8789_part2.patch\npatching file sage/modules/free_module_element.pyx\nHunk #1 FAILED at 439\nHunk #2 FAILED at 576\nHunk #3 FAILED at 2137\n3 out of 3 hunks FAILED -- saving rejects to file sage/modules/free_module_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8789_part2.patch\n```\n\n\nI have attached a rebase of the second patch.",
+    "body": "Attachment [trac_8789_part2-rebased.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2-rebased.patch) by mvngu created at 2010-05-08 03:44:58\n\nThe second patch doesn't apply when applied on top of the first one:\n\n```sh\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789.patch && hg qpush \nadding trac_8789.patch to series file\napplying trac_8789.patch\nnow at: trac_8789.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789_part2.patch && hg qpush \nadding trac_8789_part2.patch to series file\napplying trac_8789_part2.patch\npatching file sage/modules/free_module_element.pyx\nHunk #1 FAILED at 439\nHunk #2 FAILED at 576\nHunk #3 FAILED at 2137\n3 out of 3 hunks FAILED -- saving rejects to file sage/modules/free_module_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8789_part2.patch\n```\n\nI have attached a rebase of the second patch.",
     "created_at": "2010-05-08T03:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8789",
     "type": "issue_comment",
@@ -122,7 +121,6 @@ archive/issue_comments_080348.json:
 Attachment [trac_8789_part2-rebased.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2-rebased.patch) by mvngu created at 2010-05-08 03:44:58
 
 The second patch doesn't apply when applied on top of the first one:
-
 
 ```sh
 [mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8789/trac_8789.patch && hg qpush 
@@ -141,7 +139,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8789_part2.patch
 ```
-
 
 I have attached a rebase of the second patch.
 

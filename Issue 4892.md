@@ -3,7 +3,7 @@
 archive/issues_004892.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: real complex precision\n\ngeorg.grafendorfer reported this to sage-support:\n\n```\nsage: a = CC(-5).n(prec=100)\nsage: b = ComplexField(100)(-5)\nsage: a == b\nTrue\nsage: type(a) == type(b)\nFalse\nsage: ln(a)\nNaN\nsage: ln(b)\n1.6094379124341003746007593332 + 3.1415926535897932384626433833*I\n```\n\nThe issue is that both a and b are equal to -5 (exactly, to 100 bit precision) but a is a Real while b is a Complex.  This happens because \n\n```\nLooking at the code for numerical_approx() in sage.misc.functional,\nthis happens because the attempt to coerce z into RealField(100)\nsucceeds.  To fix this (if it is agreed that it is a bug) that\nfunction would need to test the type of the input and return something\nof the same type (real/complex).\n```\n\nThe suggested fix is that the numerical_approx function should always return a complex number to the appropriate precsion if the input has type complex, even if the coercion into a real succeeded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4892\n\n",
+    "body": "Assignee: somebody\n\nKeywords: real complex precision\n\ngeorg.grafendorfer reported this to sage-support:\n\n```\nsage: a = CC(-5).n(prec=100)\nsage: b = ComplexField(100)(-5)\nsage: a == b\nTrue\nsage: type(a) == type(b)\nFalse\nsage: ln(a)\nNaN\nsage: ln(b)\n1.6094379124341003746007593332 + 3.1415926535897932384626433833*I\n```\nThe issue is that both a and b are equal to -5 (exactly, to 100 bit precision) but a is a Real while b is a Complex.  This happens because \n\n```\nLooking at the code for numerical_approx() in sage.misc.functional,\nthis happens because the attempt to coerce z into RealField(100)\nsucceeds.  To fix this (if it is agreed that it is a bug) that\nfunction would need to test the type of the input and return something\nof the same type (real/complex).\n```\nThe suggested fix is that the numerical_approx function should always return a complex number to the appropriate precsion if the input has type complex, even if the coercion into a real succeeded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4892\n\n",
     "created_at": "2008-12-30T09:40:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -34,7 +34,6 @@ NaN
 sage: ln(b)
 1.6094379124341003746007593332 + 3.1415926535897932384626433833*I
 ```
-
 The issue is that both a and b are equal to -5 (exactly, to 100 bit precision) but a is a Real while b is a Complex.  This happens because 
 
 ```
@@ -44,7 +43,6 @@ succeeds.  To fix this (if it is agreed that it is a bug) that
 function would need to test the type of the input and return something
 of the same type (real/complex).
 ```
-
 The suggested fix is that the numerical_approx function should always return a complex number to the appropriate precsion if the input has type complex, even if the coercion into a real succeeded.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4892
@@ -130,7 +128,7 @@ Looks good to me.
 archive/issue_comments_037027.json:
 ```json
 {
-    "body": "This patch causes the following doctest failure:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/modules/vector_double_dense.pyx\nsage -t -long \"devel/sage/sage/modules/vector_double_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/modules/vector_double_dense.pyx\", line 531:\n    sage: _.parent()\nExpected:\n    Vector space of dimension 3 over Real Field with 53 bits of precision\nGot:\n    Vector space of dimension 3 over Complex Field with 53 bits of precision\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/modules/vector_double_dense.pyx\", line 535:\n    sage: _.parent()\nExpected:\n    Vector space of dimension 3 over Real Field with 75 bits of precision\nGot:\n    Vector space of dimension 3 over Complex Field with 75 bits of precision\n**********************************************************************\n```\n\n\nGiven that this is vector_double_dense.pyx it seems odd.\n\nCheers,\n\nMichael",
+    "body": "This patch causes the following doctest failure:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/modules/vector_double_dense.pyx\nsage -t -long \"devel/sage/sage/modules/vector_double_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/modules/vector_double_dense.pyx\", line 531:\n    sage: _.parent()\nExpected:\n    Vector space of dimension 3 over Real Field with 53 bits of precision\nGot:\n    Vector space of dimension 3 over Complex Field with 53 bits of precision\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/modules/vector_double_dense.pyx\", line 535:\n    sage: _.parent()\nExpected:\n    Vector space of dimension 3 over Real Field with 75 bits of precision\nGot:\n    Vector space of dimension 3 over Complex Field with 75 bits of precision\n**********************************************************************\n```\n\nGiven that this is vector_double_dense.pyx it seems odd.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-25T02:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
@@ -160,7 +158,6 @@ Got:
     Vector space of dimension 3 over Complex Field with 75 bits of precision
 **********************************************************************
 ```
-
 
 Given that this is vector_double_dense.pyx it seems odd.
 

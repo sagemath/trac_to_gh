@@ -3,7 +3,7 @@
 archive/issues_006954.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
     "created_at": "2009-09-18T08:41:21Z",
     "labels": [
         "component: user interface"
@@ -21,13 +21,11 @@ Keywords: latex
 
 The attached patch implements latex output for dictionaries:
 
-
 ```
 sage: var('x,y')
 sage: latex({x: y^2, y: 1/2})
 \left\{y\rightarrow \frac{1}{2}, x\rightarrow y^{2}\right\}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6954
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6954
 archive/issue_comments_057395.json:
 ```json
 {
-    "body": "Two comments: first, this doesn't pass doctests, due to ordering issues in dictionaries:\n\n```\n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/misc/latex.py\", line 257:\n    sage: latex(d)\nExpected:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), z\\rightarrow \\left[1, 2, x^{2}\\right], y\\rightarrow 2, x\\rightarrow \\frac{1}{2} \\, y\\right\\}\nGot:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), x\\rightarrow \\frac{1}{2} \\, y, y\\rightarrow 2, z\\rightarrow \\left[1, 2, x^{2}\\right]\\right\\}\n```\n\nThis is on a Mac, OS X 10.5, 32-bit.  Doctests pass on 64-bit OS X.  Maybe there should be different doctests depending on 32-bit vs. 64-bit, as in the `__hash__` method in `sage/rings/padics/padic_capped_relative_element.pyx`.  (Or maybe it's not a 32/64-bit issue; maybe the doctest should just be modified so order doesn't matter.)\n\nSecond, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)",
+    "body": "Two comments: first, this doesn't pass doctests, due to ordering issues in dictionaries:\n\n```\n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/misc/latex.py\", line 257:\n    sage: latex(d)\nExpected:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), z\\rightarrow \\left[1, 2, x^{2}\\right], y\\rightarrow 2, x\\rightarrow \\frac{1}{2} \\, y\\right\\}\nGot:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), x\\rightarrow \\frac{1}{2} \\, y, y\\rightarrow 2, z\\rightarrow \\left[1, 2, x^{2}\\right]\\right\\}\n```\nThis is on a Mac, OS X 10.5, 32-bit.  Doctests pass on 64-bit OS X.  Maybe there should be different doctests depending on 32-bit vs. 64-bit, as in the `__hash__` method in `sage/rings/padics/padic_capped_relative_element.pyx`.  (Or maybe it's not a 32/64-bit issue; maybe the doctest should just be modified so order doesn't matter.)\n\nSecond, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)",
     "created_at": "2009-09-18T17:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ Expected:
 Got:
     \left\{2\rightarrow x + \sin\left(y^{2}\right), x\rightarrow \frac{1}{2} \, y, y\rightarrow 2, z\rightarrow \left[1, 2, x^{2}\right]\right\}
 ```
-
 This is on a Mac, OS X 10.5, 32-bit.  Doctests pass on 64-bit OS X.  Maybe there should be different doctests depending on 32-bit vs. 64-bit, as in the `__hash__` method in `sage/rings/padics/padic_capped_relative_element.pyx`.  (Or maybe it's not a 32/64-bit issue; maybe the doctest should just be modified so order doesn't matter.)
 
 Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)
@@ -72,7 +69,7 @@ Second, I think I would prefer a colon rather than an arrow: I think the typeset
 archive/issue_comments_057396.json:
 ```json
 {
-    "body": "Replying to [comment:1 jhpalmieri]:\n\n> Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)\n\nI agree; we should have a colon, since there isn't a completely standard latex notation for dictionaries, and a colon will be less likely to confuse the user who is used to seeing it as text.",
+    "body": "Replying to [comment:1 jhpalmieri]:\n\n> Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)\n\n\nI agree; we should have a colon, since there isn't a completely standard latex notation for dictionaries, and a colon will be less likely to confuse the user who is used to seeing it as text.",
     "created_at": "2009-09-19T03:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
@@ -84,6 +81,7 @@ archive/issue_comments_057396.json:
 Replying to [comment:1 jhpalmieri]:
 
 > Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)
+
 
 I agree; we should have a colon, since there isn't a completely standard latex notation for dictionaries, and a colon will be less likely to confuse the user who is used to seeing it as text.
 
@@ -150,7 +148,7 @@ this myself.
 archive/issue_comments_057400.json:
 ```json
 {
-    "body": "I like the colon better; thanks.  I'm having problems with the same doctest, though, and I don't think it's a 32/64-bit issue; I get one answer with a 32-bit build on a mac, a different answer with a 64-bit build on a mac, and still a different answer on sage.math.  So maybe the doctest should be modified so order doesn't matter, say a dictionary with a single entry like\n\n```\nsage: d = {(1,2,3): [y/2, sin(z^2)]}\nsage: latex(d)\n...\n```\n\nI'm attaching a patch which makes this change.  I'll give the main patch (trac_6954-latex_dict.patch) a positive review, and if my change is okay, the whole ticket should get a positive review.",
+    "body": "I like the colon better; thanks.  I'm having problems with the same doctest, though, and I don't think it's a 32/64-bit issue; I get one answer with a 32-bit build on a mac, a different answer with a 64-bit build on a mac, and still a different answer on sage.math.  So maybe the doctest should be modified so order doesn't matter, say a dictionary with a single entry like\n\n```\nsage: d = {(1,2,3): [y/2, sin(z^2)]}\nsage: latex(d)\n...\n```\nI'm attaching a patch which makes this change.  I'll give the main patch (trac_6954-latex_dict.patch) a positive review, and if my change is okay, the whole ticket should get a positive review.",
     "created_at": "2009-09-23T17:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6954",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ sage: d = {(1,2,3): [y/2, sin(z^2)]}
 sage: latex(d)
 ...
 ```
-
 I'm attaching a patch which makes this change.  I'll give the main patch (trac_6954-latex_dict.patch) a positive review, and if my change is okay, the whole ticket should get a positive review.
 
 

@@ -107,7 +107,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_052848.json:
 ```json
 {
-    "body": "This might not be as easy as it seems. In my merge tree, I tried removing the pyprocessing spkg, and edited `spkg/install` and `spkg/standard/deps` to get rid of the rules relating to building pyprocessing. Based on this tree with pyprocessing removed, I cut a source tarball and parallel compile (using \"export MAKE='make -j4'\") everything from source. Trouble kicks in while compiling the Sage library. Here's a relevant snippet from the install log:\n\n```\nBuilding modified file sage/ext/interpreters/wrapper_el.pyx.\nExecute 248 commands (using 4 threads)\nTraceback (most recent call last):\n  File \"setup.py\", line 752, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 249, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 188, in execute_list_of_commands_in_parallel\n    from processing import Pool\nImportError: No module named processing\nsage: There was an error installing modified sage library code.\n\n\nreal    0m3.261s\nuser    0m2.540s\nsys     0m0.770s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    0m7.376s\nuser    0m5.570s\nsys     0m1.820s\nsage: An error occurred while installing sage-4.3.1.alpha0-take1\n```\n\nThe build error cannot be due to the patches or updated spkg's in my merge tree. I also tried cutting a source tarball of my merge tree (with pyprocessing intact where it is), and compile everything from source. This went OK. Removing pyrocessing would need to wait after releasing Sage 4.3.2.alpha0. I'm putting this back to \"needs work\". The likely place to look is the file `devel/sage-main/setup.py`, especially the following function:\n\n```python\ndef execute_list_of_commands_in_parallel(command_list, nthreads):\n    \"\"\"                                                                                                                                                                                                                            \n    INPUT:                                                                                                                                                                                                                         \n        command_list -- a list of pairs, consisting of a                                                                                                                                                                           \n             function to call and its argument                                                                                                                                                                                     \n        nthreads -- integer; number of threads to use                                                                                                                                                                              \n                                                                                                                                                                                                                                   \n    OUTPUT:                                                                                                                                                                                                                        \n        Executes the given list of commands, possibly in parallel,                                                                                                                                                                 \n        using nthreads threads.  Terminates setup.py with an exit code of 1                                                                                                                                                        \n        if an error occurs in any subcommand.                                                                                                                                                                                      \n                                                                                                                                                                                                                                   \n    WARNING: commands are run roughly in order, but of course successive                                                                                                                                                           \n    commands may be run at the same time.                                                                                                                                                                                          \n    \"\"\"\n    print \"Execute %s commands (using %s threads)\"%(len(command_list), min(len(command_list),nthreads))\n    from processing import Pool\n    p = Pool(nthreads)\n    for r in p.imap(apply_pair, command_list):\n        if r:\n            print \"Parallel build failed with status %s.\"%r\n            sys.exit(1)\n```\n",
+    "body": "This might not be as easy as it seems. In my merge tree, I tried removing the pyprocessing spkg, and edited `spkg/install` and `spkg/standard/deps` to get rid of the rules relating to building pyprocessing. Based on this tree with pyprocessing removed, I cut a source tarball and parallel compile (using \"export MAKE='make -j4'\") everything from source. Trouble kicks in while compiling the Sage library. Here's a relevant snippet from the install log:\n\n```\nBuilding modified file sage/ext/interpreters/wrapper_el.pyx.\nExecute 248 commands (using 4 threads)\nTraceback (most recent call last):\n  File \"setup.py\", line 752, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 249, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 188, in execute_list_of_commands_in_parallel\n    from processing import Pool\nImportError: No module named processing\nsage: There was an error installing modified sage library code.\n\n\nreal    0m3.261s\nuser    0m2.540s\nsys     0m0.770s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    0m7.376s\nuser    0m5.570s\nsys     0m1.820s\nsage: An error occurred while installing sage-4.3.1.alpha0-take1\n```\nThe build error cannot be due to the patches or updated spkg's in my merge tree. I also tried cutting a source tarball of my merge tree (with pyprocessing intact where it is), and compile everything from source. This went OK. Removing pyrocessing would need to wait after releasing Sage 4.3.2.alpha0. I'm putting this back to \"needs work\". The likely place to look is the file `devel/sage-main/setup.py`, especially the following function:\n\n```python\ndef execute_list_of_commands_in_parallel(command_list, nthreads):\n    \"\"\"                                                                                                                                                                                                                            \n    INPUT:                                                                                                                                                                                                                         \n        command_list -- a list of pairs, consisting of a                                                                                                                                                                           \n             function to call and its argument                                                                                                                                                                                     \n        nthreads -- integer; number of threads to use                                                                                                                                                                              \n                                                                                                                                                                                                                                   \n    OUTPUT:                                                                                                                                                                                                                        \n        Executes the given list of commands, possibly in parallel,                                                                                                                                                                 \n        using nthreads threads.  Terminates setup.py with an exit code of 1                                                                                                                                                        \n        if an error occurs in any subcommand.                                                                                                                                                                                      \n                                                                                                                                                                                                                                   \n    WARNING: commands are run roughly in order, but of course successive                                                                                                                                                           \n    commands may be run at the same time.                                                                                                                                                                                          \n    \"\"\"\n    print \"Execute %s commands (using %s threads)\"%(len(command_list), min(len(command_list),nthreads))\n    from processing import Pool\n    p = Pool(nthreads)\n    for r in p.imap(apply_pair, command_list):\n        if r:\n            print \"Parallel build failed with status %s.\"%r\n            sys.exit(1)\n```",
     "created_at": "2010-01-26T15:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -143,7 +143,6 @@ user    0m5.570s
 sys     0m1.820s
 sage: An error occurred while installing sage-4.3.1.alpha0-take1
 ```
-
 The build error cannot be due to the patches or updated spkg's in my merge tree. I also tried cutting a source tarball of my merge tree (with pyprocessing intact where it is), and compile everything from source. This went OK. Removing pyrocessing would need to wait after releasing Sage 4.3.2.alpha0. I'm putting this back to "needs work". The likely place to look is the file `devel/sage-main/setup.py`, especially the following function:
 
 ```python
@@ -170,7 +169,6 @@ def execute_list_of_commands_in_parallel(command_list, nthreads):
             print "Parallel build failed with status %s."%r
             sys.exit(1)
 ```
-
 
 
 
@@ -217,7 +215,7 @@ Adam
 archive/issue_comments_052851.json:
 ```json
 {
-    "body": "First, we need a patch to the sage library changing any remaining imports of \"processing\" to \"multiprocessing\"; this involves changes to parallel/multiprocessing.py, plus perhaps changing the name of that file (so that in parallel/decorate.py, a line like `import multiprocessing` means import parallel/multiprocessing.py, while in parallel/multiprocessing.py, a line like `from multiprocessing import Pool` means to import the Python multiprocessing module).\n\nThe file SAGE_ROOT/devel/sage/setup.py also imports from the processing module, so that needs to be changed.\n\nAlso, as awebb suggests, the api seems to have changed: when I make these changes and run doctests on sage/parallel/, I get errors like\n\n```\nAttributeError: 'Pool' object has no attribute 'imapUnordered'\n```\n\n\nAfter making the appropriate changes, perhaps we should test everything by moving the pyprocessing files out of SAGE_ROOT/local/lib/python/site-packages/ to make sure they're not being loaded?",
+    "body": "First, we need a patch to the sage library changing any remaining imports of \"processing\" to \"multiprocessing\"; this involves changes to parallel/multiprocessing.py, plus perhaps changing the name of that file (so that in parallel/decorate.py, a line like `import multiprocessing` means import parallel/multiprocessing.py, while in parallel/multiprocessing.py, a line like `from multiprocessing import Pool` means to import the Python multiprocessing module).\n\nThe file SAGE_ROOT/devel/sage/setup.py also imports from the processing module, so that needs to be changed.\n\nAlso, as awebb suggests, the api seems to have changed: when I make these changes and run doctests on sage/parallel/, I get errors like\n\n```\nAttributeError: 'Pool' object has no attribute 'imapUnordered'\n```\n\nAfter making the appropriate changes, perhaps we should test everything by moving the pyprocessing files out of SAGE_ROOT/local/lib/python/site-packages/ to make sure they're not being loaded?",
     "created_at": "2010-01-26T19:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -235,7 +233,6 @@ Also, as awebb suggests, the api seems to have changed: when I make these change
 ```
 AttributeError: 'Pool' object has no attribute 'imapUnordered'
 ```
-
 
 After making the appropriate changes, perhaps we should test everything by moving the pyprocessing files out of SAGE_ROOT/local/lib/python/site-packages/ to make sure they're not being loaded?
 
@@ -300,7 +297,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052855.json:
 ```json
 {
-    "body": "Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by @jhpalmieri created at 2010-01-26 19:57:35\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
+    "body": "Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by @jhpalmieri created at 2010-01-26 19:57:35\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
     "created_at": "2010-01-26T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -317,7 +314,6 @@ Here are two patches, one for the scripts repo and one for the main repo.  Note 
 SAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py
 SAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py
 ```
-
 (Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)
 
 I haven't run a full test suite yet, but "sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/" passes all tests for me.
@@ -365,7 +361,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052858.json:
 ```json
 {
-    "body": "Here are the steps I took:\n\n1. Applied [trac_6503-scripts.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6503/trac_6503-scripts.patch) to the scripts repository.\n2. Applied [trac_6503-sage.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6503/trac_6503-sage.patch) to the Sage library.\n3. Removed `pyprocessing-0.52.p0.spkg` from the standard spkg repository.\n4. Removed the following lines from `spkg/install`:\n {{{\nPYPROCESSING=`$newest pyprocessing`\nexport PYPROCESSING\n }}}\n1. Changed the following line in `spkg/standard/deps`\n {{{\n      $(INST)/$(ZNPOLY) $(INST)/$(POLYTOPES_DB) $(INST)/$(PYPROCESSING) $(INST)/$(GHMM) \\\n }}}\n to this line\n {{{\n      $(INST)/$(ZNPOLY) $(INST)/$(POLYTOPES_DB) $(INST)/$(GHMM) \\\n }}}\n Removed the lines:\n {{{\n$(INST)/$(PYPROCESSING): $(BASE) $(INST)/$(PYTHON)\n        $(SAGE_SPKG) $(PYPROCESSING) 2>&1\n }}}\n Removed the line:\n {{{\n                  $(INST)/$(PYPROCESSING) \\\n }}}\n \nThe above steps were implemented against Sage 4.3.2.alpha0. Afterwards, I packaged up this version of Sage but with pyprocessing removed as per the above instructions. I then built this version of Sage from source, but received the following error:\n\n```\nbuilding 'sage.ext.interpreters.wrapper_el' extension\nTraceback (most recent call last):\n  File \"setup.py\", line 920, in <module>\n    include_dirs = include_dirs)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/core.py\", line 152, in setup\n    dist.run_commands()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 975, in run_commands\n    self.run_command(cmd)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/install.py\", line 577, in run\n    self.run_command('build')\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/build.py\", line 134, in run\n    self.run_command(cmd_name)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/build_ext.py\", line 340, in run\n    self.build_extensions()\n  File \"setup.py\", line 323, in build_extensions\n    from processing import Pool\nImportError: No module named processing\nsage: There was an error installing modified sage library code.\n```\n\nI also note that the file `devel/sage-main/setup.py` has these lines:\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from processing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\n\nfrom line 320. It uses the pyprocessing spkg, when in fact this spkg has been removed as per the proposal of this ticket. Perhaps this could be a reason for the above build error I received. A fix is to change the above lines to use multiprocessing instead of processing. I'm investigating this approach, in addition to John's patches.",
+    "body": "Here are the steps I took:\n\n1. Applied [trac_6503-scripts.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6503/trac_6503-scripts.patch) to the scripts repository.\n2. Applied [trac_6503-sage.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6503/trac_6503-sage.patch) to the Sage library.\n3. Removed `pyprocessing-0.52.p0.spkg` from the standard spkg repository.\n4. Removed the following lines from `spkg/install`:\n {{{\nPYPROCESSING=`$newest pyprocessing`\nexport PYPROCESSING\n }}}\n1. Changed the following line in `spkg/standard/deps`\n {{{\n      $(INST)/$(ZNPOLY) $(INST)/$(POLYTOPES_DB) $(INST)/$(PYPROCESSING) $(INST)/$(GHMM) \\\n }}}\n to this line\n {{{\n      $(INST)/$(ZNPOLY) $(INST)/$(POLYTOPES_DB) $(INST)/$(GHMM) \\\n }}}\n Removed the lines:\n {{{\n$(INST)/$(PYPROCESSING): $(BASE) $(INST)/$(PYTHON)\n        $(SAGE_SPKG) $(PYPROCESSING) 2>&1\n }}}\n Removed the line:\n {{{\n                  $(INST)/$(PYPROCESSING) \\\n }}}\n \nThe above steps were implemented against Sage 4.3.2.alpha0. Afterwards, I packaged up this version of Sage but with pyprocessing removed as per the above instructions. I then built this version of Sage from source, but received the following error:\n\n```\nbuilding 'sage.ext.interpreters.wrapper_el' extension\nTraceback (most recent call last):\n  File \"setup.py\", line 920, in <module>\n    include_dirs = include_dirs)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/core.py\", line 152, in setup\n    dist.run_commands()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 975, in run_commands\n    self.run_command(cmd)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/install.py\", line 577, in run\n    self.run_command('build')\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/build.py\", line 134, in run\n    self.run_command(cmd_name)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/distutils/command/build_ext.py\", line 340, in run\n    self.build_extensions()\n  File \"setup.py\", line 323, in build_extensions\n    from processing import Pool\nImportError: No module named processing\nsage: There was an error installing modified sage library code.\n```\nI also note that the file `devel/sage-main/setup.py` has these lines:\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from processing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\nfrom line 320. It uses the pyprocessing spkg, when in fact this spkg has been removed as per the proposal of this ticket. Perhaps this could be a reason for the above build error I received. A fix is to change the above lines to use multiprocessing instead of processing. I'm investigating this approach, in addition to John's patches.",
     "created_at": "2010-01-31T17:29:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -434,7 +430,6 @@ Traceback (most recent call last):
 ImportError: No module named processing
 sage: There was an error installing modified sage library code.
 ```
-
 I also note that the file `devel/sage-main/setup.py` has these lines:
 
 ```
@@ -444,7 +439,6 @@ I also note that the file `devel/sage-main/setup.py` has these lines:
                from processing import Pool
                p = Pool(min(ncpus, len(extensions_to_compile)))
 ```
-
 from line 320. It uses the pyprocessing spkg, when in fact this spkg has been removed as per the proposal of this ticket. Perhaps this could be a reason for the above build error I received. A fix is to change the above lines to use multiprocessing instead of processing. I'm investigating this approach, in addition to John's patches.
 
 
@@ -454,7 +448,7 @@ from line 320. It uses the pyprocessing spkg, when in fact this spkg has been re
 archive/issue_comments_052859.json:
 ```json
 {
-    "body": "In the file `devel/sage-main/setup.py`, changing the following lines\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from processing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\n\nto these\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from multiprocessing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\n\nresults in the build process hanging at\n\n```\nbuilding 'sage.ext.interpreters.wrapper_el' extension\nException in thread Thread-3:\nTraceback (most recent call last):\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/threading.py\", line 525, in __bootstrap_inner\n    self.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/threading.py\", line 477, in run\n    self.__target(*self.__args, **self.__kwargs)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/multiprocessing/pool.py\", line 225, in _handle_tasks\n    put(task)\nPicklingError: Can't pickle <type 'instancemethod'>: attribute lookup __builtin__.instancemethod failed\n```\n",
+    "body": "In the file `devel/sage-main/setup.py`, changing the following lines\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from processing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\nto these\n\n```\n            # If there were any extensions that needed to be                    \n            # rebuilt, dispatch them using pyprocessing.                        \n            if extensions_to_compile:\n               from multiprocessing import Pool\n               p = Pool(min(ncpus, len(extensions_to_compile)))\n```\nresults in the build process hanging at\n\n```\nbuilding 'sage.ext.interpreters.wrapper_el' extension\nException in thread Thread-3:\nTraceback (most recent call last):\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/threading.py\", line 525, in __bootstrap_inner\n    self.run()\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/threading.py\", line 477, in run\n    self.__target(*self.__args, **self.__kwargs)\n  File \"/dev/shm/mvngu/sandbox/sage-4.3.2.alpha0-8115/local/lib/python/multiprocessing/pool.py\", line 225, in _handle_tasks\n    put(task)\nPicklingError: Can't pickle <type 'instancemethod'>: attribute lookup __builtin__.instancemethod failed\n```",
     "created_at": "2010-01-31T19:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -472,7 +466,6 @@ In the file `devel/sage-main/setup.py`, changing the following lines
                from processing import Pool
                p = Pool(min(ncpus, len(extensions_to_compile)))
 ```
-
 to these
 
 ```
@@ -482,7 +475,6 @@ to these
                from multiprocessing import Pool
                p = Pool(min(ncpus, len(extensions_to_compile)))
 ```
-
 results in the build process hanging at
 
 ```
@@ -500,13 +492,12 @@ PicklingError: Can't pickle <type 'instancemethod'>: attribute lookup __builtin_
 
 
 
-
 ---
 
 archive/issue_comments_052860.json:
 ```json
 {
-    "body": "It is interesting that doing a single-threaded build on Solaris, pyprocessing failed on Solaris after applying the patch at \n\nhttp://bugs.python.org/issue1759169 \n\nHowever, after touching \n\n\n```\n$ touch spkg/installed/pyprocessing-0.52.p0\n```\n\n\nso the Sage library built without problems on Solaris 10 (SPARC)\n\nCould it be the fact a parallel build was performed that caused the problems observed? \n\nDave",
+    "body": "It is interesting that doing a single-threaded build on Solaris, pyprocessing failed on Solaris after applying the patch at \n\nhttp://bugs.python.org/issue1759169 \n\nHowever, after touching \n\n```\n$ touch spkg/installed/pyprocessing-0.52.p0\n```\n\nso the Sage library built without problems on Solaris 10 (SPARC)\n\nCould it be the fact a parallel build was performed that caused the problems observed? \n\nDave",
     "created_at": "2010-02-25T15:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -521,11 +512,9 @@ http://bugs.python.org/issue1759169
 
 However, after touching 
 
-
 ```
 $ touch spkg/installed/pyprocessing-0.52.p0
 ```
-
 
 so the Sage library built without problems on Solaris 10 (SPARC)
 
@@ -643,7 +632,7 @@ You should get the pickling error he described above.
 archive/issue_comments_052866.json:
 ```json
 {
-    "body": "Replying to [comment:14 drkirkby]:\n> Note also that #8191, which already has positive review and I believe will be in the next release, needs changes to spkg/install and spkg/standard/deps. These need to be coordinated with patches. \n> \n> I'd love to try your fixes, but I'm not sure how to apply a patch like this to the Sage library. Perhaps if you could give me an idiots buide to how to do this with Mercurial, I'll try it. \n\nIn my opinion, Mercurial queues are the easiest way to do these things.  Have a look at the quick startup guide at:\n\nhttp://wiki.sagemath.org/MercurialQueues",
+    "body": "Replying to [comment:14 drkirkby]:\n> Note also that #8191, which already has positive review and I believe will be in the next release, needs changes to spkg/install and spkg/standard/deps. These need to be coordinated with patches. \n> \n> I'd love to try your fixes, but I'm not sure how to apply a patch like this to the Sage library. Perhaps if you could give me an idiots buide to how to do this with Mercurial, I'll try it. \n\n\nIn my opinion, Mercurial queues are the easiest way to do these things.  Have a look at the quick startup guide at:\n\nhttp://wiki.sagemath.org/MercurialQueues",
     "created_at": "2010-02-27T04:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -656,6 +645,7 @@ Replying to [comment:14 drkirkby]:
 > Note also that #8191, which already has positive review and I believe will be in the next release, needs changes to spkg/install and spkg/standard/deps. These need to be coordinated with patches. 
 > 
 > I'd love to try your fixes, but I'm not sure how to apply a patch like this to the Sage library. Perhaps if you could give me an idiots buide to how to do this with Mercurial, I'll try it. 
+
 
 In my opinion, Mercurial queues are the easiest way to do these things.  Have a look at the quick startup guide at:
 
@@ -924,7 +914,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_052881.json:
 ```json
 {
-    "body": "Hurray! Parallel build works and parallel doctesting works also. I often use the following little script to parallel build and doctest after the build is done:\n\n```sh\n#!/bin/sh\nexport DOT_SAGE=/dev/shm/mvngu/dot_sage/<x.y.z>\nexport MAKE='make -j6'\nmake\nmake ptestlong\n```\n\nThis script first requires that I edit the following line in `makefile`\n\n```\nNUM_THREADS=0 # 0 interpreted as min(8, multiprocessing.cpu_count())\n```\n\nto result in \n\n```\nNUM_THREADS=8 # 0 interpreted as min(8, multiprocessing.cpu_count())\n```\n\nI also attempted parallel doctest with\n\n```\n./sage -tp 12 -long devel/sage-main/\n```\n\nAs far as the parallel compilation and parallel doctesting of Sage is concerned, they went OK without pyprocessing. Now is the time to remove pyprocessing and instead use the Python library module `multiprocessing`. A big thank you to John and Mike for the hard work!",
+    "body": "Hurray! Parallel build works and parallel doctesting works also. I often use the following little script to parallel build and doctest after the build is done:\n\n```sh\n#!/bin/sh\nexport DOT_SAGE=/dev/shm/mvngu/dot_sage/<x.y.z>\nexport MAKE='make -j6'\nmake\nmake ptestlong\n```\nThis script first requires that I edit the following line in `makefile`\n\n```\nNUM_THREADS=0 # 0 interpreted as min(8, multiprocessing.cpu_count())\n```\nto result in \n\n```\nNUM_THREADS=8 # 0 interpreted as min(8, multiprocessing.cpu_count())\n```\nI also attempted parallel doctest with\n\n```\n./sage -tp 12 -long devel/sage-main/\n```\nAs far as the parallel compilation and parallel doctesting of Sage is concerned, they went OK without pyprocessing. Now is the time to remove pyprocessing and instead use the Python library module `multiprocessing`. A big thank you to John and Mike for the hard work!",
     "created_at": "2010-03-03T01:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
@@ -942,25 +932,21 @@ export MAKE='make -j6'
 make
 make ptestlong
 ```
-
 This script first requires that I edit the following line in `makefile`
 
 ```
 NUM_THREADS=0 # 0 interpreted as min(8, multiprocessing.cpu_count())
 ```
-
 to result in 
 
 ```
 NUM_THREADS=8 # 0 interpreted as min(8, multiprocessing.cpu_count())
 ```
-
 I also attempted parallel doctest with
 
 ```
 ./sage -tp 12 -long devel/sage-main/
 ```
-
 As far as the parallel compilation and parallel doctesting of Sage is concerned, they went OK without pyprocessing. Now is the time to remove pyprocessing and instead use the Python library module `multiprocessing`. A big thank you to John and Mike for the hard work!
 
 

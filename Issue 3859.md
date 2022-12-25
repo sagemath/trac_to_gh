@@ -3,7 +3,7 @@
 archive/issues_003859.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: plot3d, Line, corner_cutoff, smoothing\n\nsage.plot.plot3d.shapes2.Line defines a corner_cutoff parameter.\n\nIt functions to smooth lines passed to it if the cosine of the angle is greater than corner_cutoff (why??? - I'm filing another ticket about this).\n\nWe want to be able to turn the smoothing of lines off, which would happen if corner_cutoff = 1 worked.\n\nExample of breakage:  (line3d calles sage.plot.plot3d.shapes2.Line)\n\n```\nline3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\n\nA doctest sage: from sage.plot.plot3d.shapes2 import Line\n\n```\n              sage: Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)], corner_cutoff=1).corners()\n              [(0, 0, 0), (1, 0, 0), (2, 1, 0)]\n```\n\nWorks, but calling line3d or Line with these parameters fails with NoneType object unsubscriptable.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3859\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: plot3d, Line, corner_cutoff, smoothing\n\nsage.plot.plot3d.shapes2.Line defines a corner_cutoff parameter.\n\nIt functions to smooth lines passed to it if the cosine of the angle is greater than corner_cutoff (why??? - I'm filing another ticket about this).\n\nWe want to be able to turn the smoothing of lines off, which would happen if corner_cutoff = 1 worked.\n\nExample of breakage:  (line3d calles sage.plot.plot3d.shapes2.Line)\n\n```\nline3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\nA doctest sage: from sage.plot.plot3d.shapes2 import Line\n\n```\n              sage: Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)], corner_cutoff=1).corners()\n              [(0, 0, 0), (1, 0, 0), (2, 1, 0)]\n```\nWorks, but calling line3d or Line with these parameters fails with NoneType object unsubscriptable.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3859\n\n",
     "created_at": "2008-08-14T22:11:31Z",
     "labels": [
         "component: graphics",
@@ -33,14 +33,12 @@ Example of breakage:  (line3d calles sage.plot.plot3d.shapes2.Line)
 ```
 line3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)
 ```
-
 A doctest sage: from sage.plot.plot3d.shapes2 import Line
 
 ```
               sage: Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)], corner_cutoff=1).corners()
               [(0, 0, 0), (1, 0, 0), (2, 1, 0)]
 ```
-
 Works, but calling line3d or Line with these parameters fails with NoneType object unsubscriptable.
 
 
@@ -213,7 +211,7 @@ Changing status from new to needs_review.
 archive/issue_comments_027430.json:
 ```json
 {
-    "body": "Here is a proposal, that corrects several minor wrong points in the code of **Line** and add more doc.\n----\nNew commits:",
+    "body": "Here is a proposal, that corrects several minor wrong points in the code of **Line** and add more doc.\n\n---\nNew commits:",
     "created_at": "2014-12-27T21:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
@@ -223,7 +221,8 @@ archive/issue_comments_027430.json:
 ```
 
 Here is a proposal, that corrects several minor wrong points in the code of **Line** and add more doc.
-----
+
+---
 New commits:
 
 
@@ -337,7 +336,7 @@ Hello, review, anybody ?
 archive/issue_comments_027433.json:
 ```json
 {
-    "body": "Either I don't understand the description of what `corner_cutoff` is supposed to do, or the first example from the ticket's description still doesn't work for me:\n\n```\nsage: line3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\n\nproduces a smooth line in jmol.",
+    "body": "Either I don't understand the description of what `corner_cutoff` is supposed to do, or the first example from the ticket's description still doesn't work for me:\n\n```\nsage: line3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\nproduces a smooth line in jmol.",
     "created_at": "2015-04-09T08:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
@@ -351,7 +350,6 @@ Either I don't understand the description of what `corner_cutoff` is supposed to
 ```
 sage: line3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)
 ```
-
 produces a smooth line in jmol.
 
 
@@ -596,7 +594,7 @@ PING ? nobody out there ?
 archive/issue_comments_027441.json:
 ```json
 {
-    "body": "Well, someone is out there but they don't always have time... My only Sage time has been with sagenb lately.  But I felt sorry for your ping so I try to make time tonight.\n\n\n```\nThe parameter ``corner_cutoff`` is a bound for the cosine of the\n        angle made by two successive segments. This angle is close to\n        `\\pi` if the two successive segments are almost aligned and close\n        to `0` if the path has a strong peak. \n```\n\nMaybe one could add parenthetically \"(and hence the cosine is close to 1)\" or the like as appropriate in the two places this occurs?\n\n\n```\n+        sage: N = 11\n+        sage: c = -0.4\n+        sage: sum([Line([(i,1,0), (i,0,0), (i,cos(2*pi*i/N), sin(2*pi*i/N))],\n+        ....:     corner_cutoff=c,\n+        ....:     color='red' if cos(2*pi*i/N)>=c else 'blue')\n+        ....:     for i in range(N+1)])\n```\n\nSuper-useful!  I made it into an interact to test things, very nice.\n\nI do have a question about this.  Why do you have to change the way this works?  Why not leave the bounds at 1 and -1 and not switch them?  I hate to say the magic word deprecation, and in any case this is just a flat-out change.\n\nFor instance, I would say that the angle is nearly *zero* if the segments \"keep on going\" and is close to 180 degrees if the segments change direction (peak).  So the original seems closer to my thinking - it's not the angle at the actual point of contact of the two segments, but rather the angle between the *vectors* formed by the two (directed) line segments that is in question.\n\nDoes that make sense?\n\nI also have to admit that with #3861 that the output of \n\n```\nLine([(0,0,0),(1,0,0),(2,1,0),(0,1,0)],corner_cutoff=-.5) # current ticket\n```\n\nis bizarre and does not look like the 2d version style in any case.\n\nAnyway, otherwise this seems to work as advertised.  Should end users have access to `max_len` in `Line`?  Currently I don't think that's really possible.  But maybe that's okay.",
+    "body": "Well, someone is out there but they don't always have time... My only Sage time has been with sagenb lately.  But I felt sorry for your ping so I try to make time tonight.\n\n```\nThe parameter ``corner_cutoff`` is a bound for the cosine of the\n        angle made by two successive segments. This angle is close to\n        `\\pi` if the two successive segments are almost aligned and close\n        to `0` if the path has a strong peak. \n```\nMaybe one could add parenthetically \"(and hence the cosine is close to 1)\" or the like as appropriate in the two places this occurs?\n\n```\n+        sage: N = 11\n+        sage: c = -0.4\n+        sage: sum([Line([(i,1,0), (i,0,0), (i,cos(2*pi*i/N), sin(2*pi*i/N))],\n+        ....:     corner_cutoff=c,\n+        ....:     color='red' if cos(2*pi*i/N)>=c else 'blue')\n+        ....:     for i in range(N+1)])\n```\nSuper-useful!  I made it into an interact to test things, very nice.\n\nI do have a question about this.  Why do you have to change the way this works?  Why not leave the bounds at 1 and -1 and not switch them?  I hate to say the magic word deprecation, and in any case this is just a flat-out change.\n\nFor instance, I would say that the angle is nearly *zero* if the segments \"keep on going\" and is close to 180 degrees if the segments change direction (peak).  So the original seems closer to my thinking - it's not the angle at the actual point of contact of the two segments, but rather the angle between the *vectors* formed by the two (directed) line segments that is in question.\n\nDoes that make sense?\n\nI also have to admit that with #3861 that the output of \n\n```\nLine([(0,0,0),(1,0,0),(2,1,0),(0,1,0)],corner_cutoff=-.5) # current ticket\n```\nis bizarre and does not look like the 2d version style in any case.\n\nAnyway, otherwise this seems to work as advertised.  Should end users have access to `max_len` in `Line`?  Currently I don't think that's really possible.  But maybe that's okay.",
     "created_at": "2015-12-16T03:40:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
@@ -607,16 +605,13 @@ archive/issue_comments_027441.json:
 
 Well, someone is out there but they don't always have time... My only Sage time has been with sagenb lately.  But I felt sorry for your ping so I try to make time tonight.
 
-
 ```
 The parameter ``corner_cutoff`` is a bound for the cosine of the
         angle made by two successive segments. This angle is close to
         `\pi` if the two successive segments are almost aligned and close
         to `0` if the path has a strong peak. 
 ```
-
 Maybe one could add parenthetically "(and hence the cosine is close to 1)" or the like as appropriate in the two places this occurs?
-
 
 ```
 +        sage: N = 11
@@ -626,7 +621,6 @@ Maybe one could add parenthetically "(and hence the cosine is close to 1)" or th
 +        ....:     color='red' if cos(2*pi*i/N)>=c else 'blue')
 +        ....:     for i in range(N+1)])
 ```
-
 Super-useful!  I made it into an interact to test things, very nice.
 
 I do have a question about this.  Why do you have to change the way this works?  Why not leave the bounds at 1 and -1 and not switch them?  I hate to say the magic word deprecation, and in any case this is just a flat-out change.
@@ -640,7 +634,6 @@ I also have to admit that with #3861 that the output of
 ```
 Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)],corner_cutoff=-.5) # current ticket
 ```
-
 is bizarre and does not look like the 2d version style in any case.
 
 Anyway, otherwise this seems to work as advertised.  Should end users have access to `max_len` in `Line`?  Currently I don't think that's really possible.  But maybe that's okay.

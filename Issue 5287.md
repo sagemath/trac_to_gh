@@ -70,7 +70,7 @@ Michael
 archive/issue_comments_040551.json:
 ```json
 {
-    "body": "REVIEW:\n\n# In the file sbox.py\n\nI don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S(long(7))\nTypeError: object of type 'long' has no len()\n```\n\n\nI don't like this:\n\n```\nfrom sage.all import vector \n```\n\nCould you import it a little more precisely?\n\nI *really* don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^6)\noutputs a *million page* exception!\n```\n\n\n# sr.py\n\n* I'm glad you're fixing your email address. However, even after this patch there are at least 30 other places in the sage core library with your old address:\n\n```\nsage: search_src('malb@informatik.uni-bremen.de')\nover 30 lines output\n```\n\n\n* Regarding\n\n```\nsage: I.variety() # order is random-ish \n```\n\nYou could make the output into a sorted list (instead of a dict) so the output can be checked exactly.\n\n* Here is a backslash without r\"\"\":\n\n```\n \t1451\t        \"\"\" \n \t1452\t        Return a dictionary to access variables in \\code{self.R} by \n \t1453\t        their names. \n```\n\n\n* I wish this function had more tests, which at a minimum illustrated all the options:\n\n```\ndef inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):\n```\n\nRight now many of the options aren't tested at all.",
+    "body": "REVIEW:\n\n# In the file sbox.py\n\nI don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S(long(7))\nTypeError: object of type 'long' has no len()\n```\n\nI don't like this:\n\n```\nfrom sage.all import vector \n```\nCould you import it a little more precisely?\n\nI *really* don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^6)\noutputs a *million page* exception!\n```\n\n# sr.py\n\n* I'm glad you're fixing your email address. However, even after this patch there are at least 30 other places in the sage core library with your old address:\n\n```\nsage: search_src('malb@informatik.uni-bremen.de')\nover 30 lines output\n```\n\n* Regarding\n\n```\nsage: I.variety() # order is random-ish \n```\nYou could make the output into a sorted list (instead of a dict) so the output can be checked exactly.\n\n* Here is a backslash without r\"\"\":\n\n```\n \t1451\t        \"\"\" \n \t1452\t        Return a dictionary to access variables in \\code{self.R} by \n \t1453\t        their names. \n```\n\n* I wish this function had more tests, which at a minimum illustrated all the options:\n\n```\ndef inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):\n```\nRight now many of the options aren't tested at all.",
     "created_at": "2009-02-18T00:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -91,13 +91,11 @@ sage: S(long(7))
 TypeError: object of type 'long' has no len()
 ```
 
-
 I don't like this:
 
 ```
 from sage.all import vector 
 ```
-
 Could you import it a little more precisely?
 
 I *really* don't like this:
@@ -108,7 +106,6 @@ sage: S([1]*10^6)
 outputs a *million page* exception!
 ```
 
-
 # sr.py
 
 * I'm glad you're fixing your email address. However, even after this patch there are at least 30 other places in the sage core library with your old address:
@@ -118,13 +115,11 @@ sage: search_src('malb@informatik.uni-bremen.de')
 over 30 lines output
 ```
 
-
 * Regarding
 
 ```
 sage: I.variety() # order is random-ish 
 ```
-
 You could make the output into a sorted list (instead of a dict) so the output can be checked exactly.
 
 * Here is a backslash without r""":
@@ -135,13 +130,11 @@ You could make the output into a sorted list (instead of a dict) so the output c
  	1453	        their names. 
 ```
 
-
 * I wish this function had more tests, which at a minimum illustrated all the options:
 
 ```
 def inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):
 ```
-
 Right now many of the options aren't tested at all.
 
 
@@ -171,7 +164,7 @@ addresses referee's concerns
 archive/issue_comments_040553.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> I don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S(long(7))\nTypeError: object of type 'long' has no len()\n```\n\n\n*fixed*\n\n> I don't like this:\n\n```\nfrom sage.all import vector \n```\n\n\n*fixed*\n\n> I *really* don't like this:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^6)\noutputs a *million page* exception!\n```\n\n\nThe string of the TypeError depends on the length of the string of X now. I assume this might be controversial?\n \n> I'm glad you're fixing your email address. However, even after this patch there are at least \n> 30 other places in the sage core library with your old address:\n\n`@`informatik.uni-bremen.de still works so I see no rush fixing all those. Also, it seems Uni-Bremen is more generous when it comes to old e-mail addresses, you get to keep them forever. On the other hand, I'm not so sure about RHUL. The main reason I'm adding `M.R.Albrecht` to `sr.py` is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\n\n> Regarding\n\n```\nsage: I.variety() # order is random-ish \n```\n\n\nIt is printed sorted now, but I didn't change what variety() returns, just the doctest.\n\n> Here is a backslash without `r\"\"\"`\n\n*fixed*\n\n>  I wish this function had more tests, which at a minimum illustrated all the options:\n\n```\ndef inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):\n```\n\n\nI added one more doctest. Note that most options are ignored anyway (as documented in the docstring).",
+    "body": "Replying to [comment:2 was]:\n> I don't like this:\n\n{{{\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S(long(7))\nTypeError: object of type 'long' has no len()\n}}}\n\n*fixed*\n\n> I don't like this:\n\n{{{\nfrom sage.all import vector \n}}}\n\n*fixed*\n\n> I *really* don't like this:\n\n{{{\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^6)\noutputs a *million page* exception!\n}}}\n\nThe string of the TypeError depends on the length of the string of X now. I assume this might be controversial?\n \n> I'm glad you're fixing your email address. However, even after this patch there are at least \n> 30 other places in the sage core library with your old address:\n\n\n`@`informatik.uni-bremen.de still works so I see no rush fixing all those. Also, it seems Uni-Bremen is more generous when it comes to old e-mail addresses, you get to keep them forever. On the other hand, I'm not so sure about RHUL. The main reason I'm adding `M.R.Albrecht` to `sr.py` is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\n\n> Regarding\n\n{{{\nsage: I.variety() # order is random-ish \n}}}\n\nIt is printed sorted now, but I didn't change what variety() returns, just the doctest.\n\n> Here is a backslash without `r\"\"\"`\n\n\n*fixed*\n\n>  I wish this function had more tests, which at a minimum illustrated all the options:\n\n{{{\ndef inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):\n}}}\n\nI added one more doctest. Note that most options are ignored anyway (as documented in the docstring).",
     "created_at": "2009-02-18T11:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -183,59 +176,56 @@ archive/issue_comments_040553.json:
 Replying to [comment:2 was]:
 > I don't like this:
 
-```
+{{{
 sage: S = mq.SBox([7,6,0,4,2,5,1,3])
 sage: S(long(7))
 TypeError: object of type 'long' has no len()
-```
-
+}}}
 
 *fixed*
 
 > I don't like this:
 
-```
+{{{
 from sage.all import vector 
-```
-
+}}}
 
 *fixed*
 
 > I *really* don't like this:
 
-```
+{{{
 sage: S = mq.SBox([7,6,0,4,2,5,1,3])
 sage: S([1]*10^6)
 outputs a *million page* exception!
-```
-
+}}}
 
 The string of the TypeError depends on the length of the string of X now. I assume this might be controversial?
  
 > I'm glad you're fixing your email address. However, even after this patch there are at least 
 > 30 other places in the sage core library with your old address:
 
+
 `@`informatik.uni-bremen.de still works so I see no rush fixing all those. Also, it seems Uni-Bremen is more generous when it comes to old e-mail addresses, you get to keep them forever. On the other hand, I'm not so sure about RHUL. The main reason I'm adding `M.R.Albrecht` to `sr.py` is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.
 
 > Regarding
 
-```
+{{{
 sage: I.variety() # order is random-ish 
-```
-
+}}}
 
 It is printed sorted now, but I didn't change what variety() returns, just the doctest.
 
 > Here is a backslash without `r"""`
 
+
 *fixed*
 
 >  I wish this function had more tests, which at a minimum illustrated all the options:
 
-```
+{{{
 def inversion_polynomials_single_sbox(self, x=None, w=None, biaffine_only=None, correct_only=None, groebner=False):
-```
-
+}}}
 
 I added one more doctest. Note that most options are ignored anyway (as documented in the docstring).
 
@@ -246,7 +236,7 @@ I added one more doctest. Note that most options are ignored anyway (as document
 archive/issue_comments_040554.json:
 ```json
 {
-    "body": "* \n> The string of the TypeError? depends on the length of the string \n> of X now. I assume this might be controversial? \n\nThat's not much better, since computing len(str(X)) can take a very long time:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^9)\n[wait 15 minutes]\nTypeError: Cannot apply SBox to provided element.\n```\n\n\n* \"The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\"\n\nWouldnt it then be better to explicitly somehow emphasize that this module is authored by a student at RHUL working with the group that defined SR originally, and maybe give a reference to where it originally appeared (?).  It just seems that you are being perhaps more subtle than necessary. \n\n* \n\n```\nsage: I.variety() # order is random-ish \n```\n\n\"It is printed sorted now, but I didn't change what variety() returns, just the doctest.\"\n\nThat doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. \n\n* \"Note that most options are ignored anyway (as documented in the docstring).\"\n\nThere could be a test that illustrates the options all being ignored, which is in the TESTS: section. \n\nI'm going to give this a positive review, since perhaps I'm being overly picky.  I don't feel all my referee remarks were addressed.   I'll leave Martin doing the other changes or not up to his conscious.",
+    "body": "* \n> The string of the TypeError? depends on the length of the string \n> of X now. I assume this might be controversial? \n\n\nThat's not much better, since computing len(str(X)) can take a very long time:\n\n```\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^9)\n[wait 15 minutes]\nTypeError: Cannot apply SBox to provided element.\n```\n\n* \"The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\"\n\nWouldnt it then be better to explicitly somehow emphasize that this module is authored by a student at RHUL working with the group that defined SR originally, and maybe give a reference to where it originally appeared (?).  It just seems that you are being perhaps more subtle than necessary. \n\n* \n\n```\nsage: I.variety() # order is random-ish \n```\n\"It is printed sorted now, but I didn't change what variety() returns, just the doctest.\"\n\nThat doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. \n\n* \"Note that most options are ignored anyway (as documented in the docstring).\"\n\nThere could be a test that illustrates the options all being ignored, which is in the TESTS: section. \n\nI'm going to give this a positive review, since perhaps I'm being overly picky.  I don't feel all my referee remarks were addressed.   I'll leave Martin doing the other changes or not up to his conscious.",
     "created_at": "2009-02-20T05:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -259,6 +249,7 @@ archive/issue_comments_040554.json:
 > The string of the TypeError? depends on the length of the string 
 > of X now. I assume this might be controversial? 
 
+
 That's not much better, since computing len(str(X)) can take a very long time:
 
 ```
@@ -267,7 +258,6 @@ sage: S([1]*10^9)
 [wait 15 minutes]
 TypeError: Cannot apply SBox to provided element.
 ```
-
 
 * "The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant."
 
@@ -278,7 +268,6 @@ Wouldnt it then be better to explicitly somehow emphasize that this module is au
 ```
 sage: I.variety() # order is random-ish 
 ```
-
 "It is printed sorted now, but I didn't change what variety() returns, just the doctest."
 
 That doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. 
@@ -370,7 +359,7 @@ Resolution: fixed
 archive/issue_comments_040558.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> That's not much better, since computing len(str(X)) can take a very long time:\n {{{\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^9)\n[wait 15 minutes]\nTypeError: Cannot apply SBox to provided element.\n }}}\n\nNote that the above example does not show what you mean to show:\n\n\n```\nsage: %time l = [1]*10^9\nCPU times: user 11.19 s, sys: 5.13 s, total: 16.32 s\nWall time: 16.31 s\nsage: %time len(l)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1000000000\n```\n\n\ni.e. you're timing the creation of the list --- which is outside of the `SBox` class.\n\n> * \"The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\"\n> \n> Wouldnt it then be better to explicitly somehow emphasize that this module is authored by a student at RHUL working with the group that defined SR originally, and maybe give a reference to where it originally appeared (?).  It just seems that you are being perhaps more subtle than necessary. \n\nA reference is already given in the module documentation. I don't think adding an explicit statement about authorship is necessary. It's just when people look explicitly they see it. I have no strong feelings about this either way though so if you feel it would improve things, I can address that.\n\n> >\n> > \"It is printed sorted now, but I didn't change what variety() returns, just the doctest.\"\n> \n> That doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. \n\nI don't understand, the doctest is now:\n\n\n```\n   sage: I = F.ideal()\n   sage: for V in I.variety():\n   ...    for k,v in sorted(V.iteritems()):\n   ...       print k,v\n   ...    print \n```\n\n\nhow does that allow the addition of wrong points? Do you mean I should evaluate the ideal members on all points to show that the result is correct ... hmmm, I could add that.\n\n> * \"Note that most options are ignored anyway (as documented in the docstring).\"\n> \n> There could be a test that illustrates the options all being ignored, which is in the TESTS: section. \n\nI'll open a new ticket addressing that.",
+    "body": "Replying to [comment:4 was]:\n> That's not much better, since computing len(str(X)) can take a very long time:\n\n {{{\nsage: S = mq.SBox([7,6,0,4,2,5,1,3])\nsage: S([1]*10^9)\n[wait 15 minutes]\nTypeError: Cannot apply SBox to provided element.\n }}}\n\nNote that the above example does not show what you mean to show:\n\n```\nsage: %time l = [1]*10^9\nCPU times: user 11.19 s, sys: 5.13 s, total: 16.32 s\nWall time: 16.31 s\nsage: %time len(l)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1000000000\n```\n\ni.e. you're timing the creation of the list --- which is outside of the `SBox` class.\n\n> * \"The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant.\"\n> \n> Wouldnt it then be better to explicitly somehow emphasize that this module is authored by a student at RHUL working with the group that defined SR originally, and maybe give a reference to where it originally appeared (?).  It just seems that you are being perhaps more subtle than necessary. \n\n\nA reference is already given in the module documentation. I don't think adding an explicit statement about authorship is necessary. It's just when people look explicitly they see it. I have no strong feelings about this either way though so if you feel it would improve things, I can address that.\n\n> >\n> > \"It is printed sorted now, but I didn't change what variety() returns, just the doctest.\"\n\n> \n> That doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. \n\n\nI don't understand, the doctest is now:\n\n```\n   sage: I = F.ideal()\n   sage: for V in I.variety():\n   ...    for k,v in sorted(V.iteritems()):\n   ...       print k,v\n   ...    print \n```\n\nhow does that allow the addition of wrong points? Do you mean I should evaluate the ideal members on all points to show that the result is correct ... hmmm, I could add that.\n\n> * \"Note that most options are ignored anyway (as documented in the docstring).\"\n> \n> There could be a test that illustrates the options all being ignored, which is in the TESTS: section. \n\n\nI'll open a new ticket addressing that.",
     "created_at": "2009-02-20T11:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -381,6 +370,7 @@ archive/issue_comments_040558.json:
 
 Replying to [comment:4 was]:
 > That's not much better, since computing len(str(X)) can take a very long time:
+
  {{{
 sage: S = mq.SBox([7,6,0,4,2,5,1,3])
 sage: S([1]*10^9)
@@ -389,7 +379,6 @@ TypeError: Cannot apply SBox to provided element.
  }}}
 
 Note that the above example does not show what you mean to show:
-
 
 ```
 sage: %time l = [1]*10^9
@@ -401,22 +390,23 @@ Wall time: 0.00 s
 1000000000
 ```
 
-
 i.e. you're timing the creation of the list --- which is outside of the `SBox` class.
 
 > * "The main reason I'm adding M.R.Albrecht to sr.py is to indicate that someone from RHUL worked on this. Since a team from RHUL defined SR in the first place, some people might consider this relevant."
 > 
 > Wouldnt it then be better to explicitly somehow emphasize that this module is authored by a student at RHUL working with the group that defined SR originally, and maybe give a reference to where it originally appeared (?).  It just seems that you are being perhaps more subtle than necessary. 
 
+
 A reference is already given in the module documentation. I don't think adding an explicit statement about authorship is necessary. It's just when people look explicitly they see it. I have no strong feelings about this either way though so if you feel it would improve things, I can address that.
 
 > >
 > > "It is printed sorted now, but I didn't change what variety() returns, just the doctest."
+
 > 
 > That doesn't help at all, since in sage-3.4 variety could suddenly return some wrong points, and this doctest would never catch that. 
 
-I don't understand, the doctest is now:
 
+I don't understand, the doctest is now:
 
 ```
    sage: I = F.ideal()
@@ -426,12 +416,12 @@ I don't understand, the doctest is now:
    ...    print 
 ```
 
-
 how does that allow the addition of wrong points? Do you mean I should evaluate the ideal members on all points to show that the result is correct ... hmmm, I could add that.
 
 > * "Note that most options are ignored anyway (as documented in the docstring)."
 > 
 > There could be a test that illustrates the options all being ignored, which is in the TESTS: section. 
+
 
 I'll open a new ticket addressing that.
 
@@ -460,7 +450,7 @@ See #5321
 archive/issue_comments_040560.json:
 ```json
 {
-    "body": "> Note that the above example does not show what you mean to show:\n> \n\n```\nsage: %time l = [1]*10^9\nCPU times: user 11.19 s, sys: 5.13 s, total: 16.32 s\nWall time: 16.31 s\nsage: %time len(l)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1000000000\n```\n\n>\n> i.e. you're timing the creation of the list --- which is outside of the `SBox` class.\n\nArgh, I am an idiot. Strike that comment I fully get your point.",
+    "body": "> Note that the above example does not show what you mean to show:\n> \n\n{{{\nsage: %time l = [1]*10^9\nCPU times: user 11.19 s, sys: 5.13 s, total: 16.32 s\nWall time: 16.31 s\nsage: %time len(l)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1000000000\n}}}\n>\n>i.e. you're timing the creation of the list --- which is outside of the `SBox` class.\n\n\nArgh, I am an idiot. Strike that comment I fully get your point.",
     "created_at": "2009-02-21T03:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5287",
     "type": "issue_comment",
@@ -472,7 +462,7 @@ archive/issue_comments_040560.json:
 > Note that the above example does not show what you mean to show:
 > 
 
-```
+{{{
 sage: %time l = [1]*10^9
 CPU times: user 11.19 s, sys: 5.13 s, total: 16.32 s
 Wall time: 16.31 s
@@ -480,9 +470,9 @@ sage: %time len(l)
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 1000000000
-```
-
+}}}
 >
-> i.e. you're timing the creation of the list --- which is outside of the `SBox` class.
+>i.e. you're timing the creation of the list --- which is outside of the `SBox` class.
+
 
 Argh, I am an idiot. Strike that comment I fully get your point.

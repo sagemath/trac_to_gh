@@ -218,7 +218,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054673.json:
 ```json
 {
-    "body": "\n```\n\tsage -t  devel/sage-main/sage/modular/modsym/space.py # Segfault\n\tsage -t  devel/sage-main/sage/algebras/group_algebra.py # 5 doctests failed\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed\n```\n",
+    "body": "```\n\tsage -t  devel/sage-main/sage/modular/modsym/space.py # Segfault\n\tsage -t  devel/sage-main/sage/algebras/group_algebra.py # 5 doctests failed\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed\n```",
     "created_at": "2010-01-20T09:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -227,13 +227,11 @@ archive/issue_comments_054673.json:
 }
 ```
 
-
 ```
 	sage -t  devel/sage-main/sage/modular/modsym/space.py # Segfault
 	sage -t  devel/sage-main/sage/algebras/group_algebra.py # 5 doctests failed
 	sage -t  devel/sage-main/sage/interfaces/sage0.py # 1 doctests failed
 ```
-
 
 
 
@@ -372,7 +370,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054680.json:
 ```json
 {
-    "body": "I spent quite a while rebasing this to 4.5.alpha1. I will upload the rebased patch; but I was disappointed to find that there is still a serious issue that needs to be addressed.\n\nThe problem is that unpickling elements of group algebras created using the old code fails; you can't replace a class name with a function name and expect it to unpickle seamlessly. It ends up expecting `sage.algebras.group_algebra.GroupAlgebraElement` to be a class which can just be filled in with the pickled `__dict__` values, not a callable. This is what I get if I pickle a group algebra element without the patch, apply the patch and try to unpickle:\n\n```\nsage: load(\"/home/masiao/gpalg.sobj\")\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/algebras/<ipython console> in <module>()\n\n/storage/masiao/sage-4.5.alpha1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7577)()\n\n/storage/masiao/sage-4.5.alpha1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)()\n\nUnpicklingError: NEWOBJ class argument isn't a type object\n```\n",
+    "body": "I spent quite a while rebasing this to 4.5.alpha1. I will upload the rebased patch; but I was disappointed to find that there is still a serious issue that needs to be addressed.\n\nThe problem is that unpickling elements of group algebras created using the old code fails; you can't replace a class name with a function name and expect it to unpickle seamlessly. It ends up expecting `sage.algebras.group_algebra.GroupAlgebraElement` to be a class which can just be filled in with the pickled `__dict__` values, not a callable. This is what I get if I pickle a group algebra element without the patch, apply the patch and try to unpickle:\n\n```\nsage: load(\"/home/masiao/gpalg.sobj\")\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/algebras/<ipython console> in <module>()\n\n/storage/masiao/sage-4.5.alpha1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7577)()\n\n/storage/masiao/sage-4.5.alpha1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)()\n\nUnpicklingError: NEWOBJ class argument isn't a type object\n```",
     "created_at": "2010-07-03T09:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
@@ -398,7 +396,6 @@ UnpicklingError                           Traceback (most recent call last)
 
 UnpicklingError: NEWOBJ class argument isn't a type object
 ```
-
 
 
 

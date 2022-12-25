@@ -3,7 +3,7 @@
 archive/issues_005940.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
     "created_at": "2009-04-29T17:03:47Z",
     "labels": [
         "component: graph theory",
@@ -18,14 +18,12 @@ archive/issues_005940.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: g = graphs.KrackhardtKiteGraph()
 sage: g.is_circular_planar()
 Traceback...
 IndexError: list index out of range
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5940
 

@@ -187,7 +187,7 @@ Michael
 archive/issue_comments_023716.json:
 ```json
 {
-    "body": "We have some deprecation warning that causes a number of doctests:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/padics/padic_base_generic.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/interpolation.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/fft.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/dwt.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/ode.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 1 doctests failed\n        sage -t -long devel/sage/sage/finance/time_series.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/calculus/desolvers.py # 1 doctests failed\n```\n\nSpecifically:\n\n```\nsage -t -long devel/sage/sage/finance/time_series.pyx       \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/time_series.py\", line 926:\n    sage: v.plot(points=True)\nExpected nothing\nGot:\n    doctest:4821: DeprecationWarning: replace \"faceted=False\" with \"edgecolors='none'\"\n    <BLANKLINE>\n**********************************************************************\n```\n\nPatch coming up.\n\nCheers,\n\nMichael",
+    "body": "We have some deprecation warning that causes a number of doctests:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/padics/padic_base_generic.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/interpolation.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/fft.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/dwt.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/gsl/ode.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/plot/plot.py # 1 doctests failed\n        sage -t -long devel/sage/sage/finance/time_series.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/calculus/desolvers.py # 1 doctests failed\n```\nSpecifically:\n\n```\nsage -t -long devel/sage/sage/finance/time_series.pyx       \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/time_series.py\", line 926:\n    sage: v.plot(points=True)\nExpected nothing\nGot:\n    doctest:4821: DeprecationWarning: replace \"faceted=False\" with \"edgecolors='none'\"\n    <BLANKLINE>\n**********************************************************************\n```\nPatch coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T10:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
@@ -212,7 +212,6 @@ We have some deprecation warning that causes a number of doctests:
         sage -t -long devel/sage/sage/finance/time_series.pyx # 1 doctests failed
         sage -t -long devel/sage/sage/calculus/desolvers.py # 1 doctests failed
 ```
-
 Specifically:
 
 ```
@@ -226,7 +225,6 @@ Got:
     <BLANKLINE>
 **********************************************************************
 ```
-
 Patch coming up.
 
 Cheers,
@@ -240,7 +238,7 @@ Michael
 archive/issue_comments_023717.json:
 ```json
 {
-    "body": "With the following code all doctests pass:\n\n```\n    def _render_on_subplot(self,subplot):\n        options = self.options()\n        c = to_mpl_color(options['rgbcolor'])\n        a = float(options['alpha'])\n        s = int(options['pointsize'])\n        scatteroptions={}\n        if not faceted: scatteroptions['edgecolors'] = 'none'\n        subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, **scatteroptions)\n\n```\n",
+    "body": "With the following code all doctests pass:\n\n```\n    def _render_on_subplot(self,subplot):\n        options = self.options()\n        c = to_mpl_color(options['rgbcolor'])\n        a = float(options['alpha'])\n        s = int(options['pointsize'])\n        scatteroptions={}\n        if not faceted: scatteroptions['edgecolors'] = 'none'\n        subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, **scatteroptions)\n\n```",
     "created_at": "2008-08-27T11:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
@@ -262,7 +260,6 @@ With the following code all doctests pass:
         subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, **scatteroptions)
 
 ```
-
 
 
 

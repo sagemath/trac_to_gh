@@ -3,7 +3,7 @@
 archive/issues_004694.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: plot??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function plot at 0xb6f1f454>\nNamespace:      Interactive\nFile:           /.../site-packages/sage/plot/misc.py\nDefinition:     plot(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            for old_name, new_name in self.renames.items():\n                if kwds.has_key(old_name) and not kwds.has_key(new_name):\n                    kwds[new_name] = kwds[old_name]\n                    del kwds[old_name]\n            return func(*args, **kwds)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4694\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: plot??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function plot at 0xb6f1f454>\nNamespace:      Interactive\nFile:           /.../site-packages/sage/plot/misc.py\nDefinition:     plot(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            for old_name, new_name in self.renames.items():\n                if kwds.has_key(old_name) and not kwds.has_key(new_name):\n                    kwds[new_name] = kwds[old_name]\n                    del kwds[old_name]\n            return func(*args, **kwds)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4694\n\n",
     "created_at": "2008-12-04T10:28:11Z",
     "labels": [
         "component: user interface",
@@ -17,7 +17,6 @@ archive/issues_004694.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: plot??
@@ -36,7 +35,6 @@ Source:
                     del kwds[old_name]
             return func(*args, **kwds)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4694

@@ -3,7 +3,7 @@
 archive/issues_000132.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n```\nOn Sun, 15 Oct 2006 04:20:55 -0700, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:\n\n> Hello,\n>\n> I am having a little trouble finding out why the following code segment\n> doesn't work as expected\n>\n> f = maxima.function('x', 'sin(x)')\n> g = f.integrate('x')\n> h = f*g \t\t\t\t// Here sage return different answers on different executions\n>\n> If I define h as\n>\n> def h(n):\n> \treturn f(n)*g(n)\n>\n> then everything seems to work fine.\n>\n> I have attached a hopefully small (42.8 KB) png image showing the above\n> mentioned code executed inside a sage notebook.\n\nWhat's happening is that f and g both wrap maxima objects and\nwhen you multipy you get something that wraps a maxima object.\nYou can get the names of them and see that multiplying just gives\nthe name of the product.    The solution is for somebody (e.g., me)\nto define arithmetic operations on maxima.function objects, i.e.,\nadding to the MaximaFunction class in devel/sage/sage/interfaces/maxima.py.\nYour problem is a NotImplementedError. \n\nThe reason the answer is different at different times is that the\nvariables in maxima that SAGE uses are named consecutively. \n\nsage: f = maxima.function('x','sin(x)')\nsage: g = f.integrate('x')\nsage: f.name()\n'sage0'\nsage: g.name()\n'sage2'\nsage: f*g\nsage0*sage2\nsage: f\nsin(x)\nsage: g\n-cos(x)\nsage: f(10)\nsin(10)\nsage: f(10.)\n-.5440211108893698\nsage: (f*g)(10.0)\n(sage0*sage2)[10.0]\nsage: h = f*g\nsage: h(10.0)\n(sage0*sage2)[10.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/132\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n```\nOn Sun, 15 Oct 2006 04:20:55 -0700, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:\n\n> Hello,\n>\n> I am having a little trouble finding out why the following code segment\n> doesn't work as expected\n>\n> f = maxima.function('x', 'sin(x)')\n> g = f.integrate('x')\n> h = f*g \t\t\t\t// Here sage return different answers on different executions\n>\n> If I define h as\n>\n> def h(n):\n> \treturn f(n)*g(n)\n>\n> then everything seems to work fine.\n>\n> I have attached a hopefully small (42.8 KB) png image showing the above\n> mentioned code executed inside a sage notebook.\n\nWhat's happening is that f and g both wrap maxima objects and\nwhen you multipy you get something that wraps a maxima object.\nYou can get the names of them and see that multiplying just gives\nthe name of the product.    The solution is for somebody (e.g., me)\nto define arithmetic operations on maxima.function objects, i.e.,\nadding to the MaximaFunction class in devel/sage/sage/interfaces/maxima.py.\nYour problem is a NotImplementedError. \n\nThe reason the answer is different at different times is that the\nvariables in maxima that SAGE uses are named consecutively. \n\nsage: f = maxima.function('x','sin(x)')\nsage: g = f.integrate('x')\nsage: f.name()\n'sage0'\nsage: g.name()\n'sage2'\nsage: f*g\nsage0*sage2\nsage: f\nsin(x)\nsage: g\n-cos(x)\nsage: f(10)\nsin(10)\nsage: f(10.)\n-.5440211108893698\nsage: (f*g)(10.0)\n(sage0*sage2)[10.0]\nsage: h = f*g\nsage: h(10.0)\n(sage0*sage2)[10.0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/132\n\n",
     "created_at": "2006-10-15T16:16:39Z",
     "labels": [
         "component: interfaces",
@@ -19,7 +19,6 @@ archive/issues_000132.json:
 Assignee: @williamstein
 
 CC:  @mwhansen
-
 
 ```
 On Sun, 15 Oct 2006 04:20:55 -0700, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:
@@ -77,7 +76,6 @@ sage: h(10.0)
 (sage0*sage2)[10.0]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/132
 
 
@@ -124,7 +122,7 @@ Implements basic arithmetic for MaximaFunction
 archive/issue_comments_000614.json:
 ```json
 {
-    "body": "Attachment [MaximaFunctionArith.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith.patch) by @simon-king-jena created at 2008-08-14 16:47:18\n\nI am surprised that this old ticket was never closed.\n\nI do not claim that i produced high-performance code. However, the following things are now possible:\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=f.integrate('x')\nsage: h=maxima.function('y','cos(y)')\nsage: 2*f\n2*sin(x)\nsage: f*g\n-cos(x)*sin(x)\nsage: g*h\n-cos(x)*cos(y)\nsage: (g*h)(3,4)\n-cos(3)*cos(4)\nsage: (g-f)\n-sin(x)-cos(x)\nsage: g^f\n(-cos(x))^sin(x)\nsage: f^g\n1/sin(x)^cos(x)\n```\n\n\nThere remains the following problem (if it is a problem):\n\n```\nsage: f+x\nsin(x)+x  # works\nsage: 2+f\nsin(x)+2  # works\nsage: x+f\nx + sage0 # doesn't work!\n```\n\nThis is -- i guess -- due to automatic coercion: `x+f` is the same as \n\n```\nsage: x+x.parent()(f)\nx + sage0\n```\n\nwhile `f+x` is the same as\n\n```\nsage: f+f.parent()(x)\nsin(x)+x\n```\n",
+    "body": "Attachment [MaximaFunctionArith.patch](tarball://root/attachments/some-uuid/ticket132/MaximaFunctionArith.patch) by @simon-king-jena created at 2008-08-14 16:47:18\n\nI am surprised that this old ticket was never closed.\n\nI do not claim that i produced high-performance code. However, the following things are now possible:\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=f.integrate('x')\nsage: h=maxima.function('y','cos(y)')\nsage: 2*f\n2*sin(x)\nsage: f*g\n-cos(x)*sin(x)\nsage: g*h\n-cos(x)*cos(y)\nsage: (g*h)(3,4)\n-cos(3)*cos(4)\nsage: (g-f)\n-sin(x)-cos(x)\nsage: g^f\n(-cos(x))^sin(x)\nsage: f^g\n1/sin(x)^cos(x)\n```\n\nThere remains the following problem (if it is a problem):\n\n```\nsage: f+x\nsin(x)+x  # works\nsage: 2+f\nsin(x)+2  # works\nsage: x+f\nx + sage0 # doesn't work!\n```\nThis is -- i guess -- due to automatic coercion: `x+f` is the same as \n\n```\nsage: x+x.parent()(f)\nx + sage0\n```\nwhile `f+x` is the same as\n\n```\nsage: f+f.parent()(x)\nsin(x)+x\n```",
     "created_at": "2008-08-14T16:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -159,7 +157,6 @@ sage: f^g
 1/sin(x)^cos(x)
 ```
 
-
 There remains the following problem (if it is a problem):
 
 ```
@@ -170,21 +167,18 @@ sin(x)+2  # works
 sage: x+f
 x + sage0 # doesn't work!
 ```
-
 This is -- i guess -- due to automatic coercion: `x+f` is the same as 
 
 ```
 sage: x+x.parent()(f)
 x + sage0
 ```
-
 while `f+x` is the same as
 
 ```
 sage: f+f.parent()(x)
 sin(x)+x
 ```
-
 
 
 
@@ -227,7 +221,7 @@ archive/issue_events_000256.json:
 archive/issue_comments_000615.json:
 ```json
 {
-    "body": "1. I forgot to include doc tests. This is done with the follow-up patch (to be applied after the first).\n\n   2. Also, there was a problem with the order of arguments:\n\n```\nsage: a=maxima.function('x,y','cos(y)+sin(x)')\nsage: b=maxima.function('x,y','cos(y)-cos(x)')\nsage: (a+b)(2,3)\nsin(3)-cos(3)+2*cos(2)\n```\n\n Hence, in `(a+b)`, `x` is the second (not the first) argument.\n\n The methods from the second patch order the arguments lexicographically. I think this is the most natural solution:\n\n```\nsage: a=maxima.function('x,y','cos(y)+sin(x)')\nsage: b=maxima.function('x,y','cos(y)-cos(x)')\nsage: (a+b)(2,3)\n2*cos(3)+sin(2)-cos(2)\n```\n\n\n3. A method `__rpow__` is now also in the second patch.\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=maxima('-cos(x)') # not a function\nsage: g^f\n(-cos(x))^sin(x)\nsage: _(2)\n(-cos(2))^sin(2)\n```\n",
+    "body": "1. I forgot to include doc tests. This is done with the follow-up patch (to be applied after the first).\n\n   2. Also, there was a problem with the order of arguments:\n\n```\nsage: a=maxima.function('x,y','cos(y)+sin(x)')\nsage: b=maxima.function('x,y','cos(y)-cos(x)')\nsage: (a+b)(2,3)\nsin(3)-cos(3)+2*cos(2)\n```\n Hence, in `(a+b)`, `x` is the second (not the first) argument.\n\n The methods from the second patch order the arguments lexicographically. I think this is the most natural solution:\n\n```\nsage: a=maxima.function('x,y','cos(y)+sin(x)')\nsage: b=maxima.function('x,y','cos(y)-cos(x)')\nsage: (a+b)(2,3)\n2*cos(3)+sin(2)-cos(2)\n```\n\n3. A method `__rpow__` is now also in the second patch.\n\n```\nsage: f=maxima.function('x','sin(x)')\nsage: g=maxima('-cos(x)') # not a function\nsage: g^f\n(-cos(x))^sin(x)\nsage: _(2)\n(-cos(2))^sin(2)\n```",
     "created_at": "2008-08-15T07:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/132",
     "type": "issue_comment",
@@ -246,7 +240,6 @@ sage: b=maxima.function('x,y','cos(y)-cos(x)')
 sage: (a+b)(2,3)
 sin(3)-cos(3)+2*cos(2)
 ```
-
  Hence, in `(a+b)`, `x` is the second (not the first) argument.
 
  The methods from the second patch order the arguments lexicographically. I think this is the most natural solution:
@@ -258,7 +251,6 @@ sage: (a+b)(2,3)
 2*cos(3)+sin(2)-cos(2)
 ```
 
-
 3. A method `__rpow__` is now also in the second patch.
 
 ```
@@ -269,7 +261,6 @@ sage: g^f
 sage: _(2)
 (-cos(2))^sin(2)
 ```
-
 
 
 

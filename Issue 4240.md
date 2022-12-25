@@ -124,7 +124,7 @@ Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket42
 archive/issue_comments_030757.json:
 ```json
 {
-    "body": "Hi,\n\nseveral issues.\nOn the one hand, the first patch does not apply cleanly against 3.1.3 alpha series, since the hunk in gap.py does not fit (the \"prompt\" funtion to be removed did get a doctest, so the automatism breaks).\nMore severely, there are invalid absolute paths in beginning with \"/home/wstein/\", specific to your local install, see what I get:\n\n\n```\nsage -t -long devel/sage-main/sage/interfaces/magma.py      **********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Can't open package spec file /home/wstein/sage/data/extcode/magma/spec2 for reading (No such file or directory)\nGot:\n    Traceback (most recent call last):\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[3]>\", line 1, in <module>\n        magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)###line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 605, in attach_spec\n        raise RuntimeError, s.strip()\n    RuntimeError: Can't open package spec file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/data/extcode/magma/spec2 for reading (No such file or directory)\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 626:\n    sage: print magma.load(SAGE_TMP + 'a.m')\nExpected:\n    Loading \"/home/wstein/.sage//temp/one/.../a.m\"\n    hi\nGot:\n    Loading \"/Users/georgweber/.sage//temp/susanne_webers_computer.local/602/a.m\"\n    hi\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 930:\n    sage: magma.get_verbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 948:\n    sage: magma.GetVerbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\n4 items had failures:\n   1 of   4 in __main__.example_18\n   1 of   5 in __main__.example_19\n   1 of   3 in __main__.example_27\n   1 of   3 in __main__.example_28\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/.doctest_magma.py\n         [34.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\nTotal time for all tests: 34.6 seconds\n```\n\n\nThe path issues should go away with some triple dots.\n\nHowever, I have no idea yet what that last \"Groebner\" issue is (Expected: 2; Got: 0).\n\nMy Magma install says: \"Magma V2.14-9\", what does yours say?\n\nCheers,\ngsw",
+    "body": "Hi,\n\nseveral issues.\nOn the one hand, the first patch does not apply cleanly against 3.1.3 alpha series, since the hunk in gap.py does not fit (the \"prompt\" funtion to be removed did get a doctest, so the automatism breaks).\nMore severely, there are invalid absolute paths in beginning with \"/home/wstein/\", specific to your local install, see what I get:\n\n```\nsage -t -long devel/sage-main/sage/interfaces/magma.py      **********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Can't open package spec file /home/wstein/sage/data/extcode/magma/spec2 for reading (No such file or directory)\nGot:\n    Traceback (most recent call last):\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[3]>\", line 1, in <module>\n        magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)###line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 605, in attach_spec\n        raise RuntimeError, s.strip()\n    RuntimeError: Can't open package spec file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/data/extcode/magma/spec2 for reading (No such file or directory)\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 626:\n    sage: print magma.load(SAGE_TMP + 'a.m')\nExpected:\n    Loading \"/home/wstein/.sage//temp/one/.../a.m\"\n    hi\nGot:\n    Loading \"/Users/georgweber/.sage//temp/susanne_webers_computer.local/602/a.m\"\n    hi\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 930:\n    sage: magma.get_verbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 948:\n    sage: magma.GetVerbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\n4 items had failures:\n   1 of   4 in __main__.example_18\n   1 of   5 in __main__.example_19\n   1 of   3 in __main__.example_27\n   1 of   3 in __main__.example_28\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/.doctest_magma.py\n         [34.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\nTotal time for all tests: 34.6 seconds\n```\n\nThe path issues should go away with some triple dots.\n\nHowever, I have no idea yet what that last \"Groebner\" issue is (Expected: 2; Got: 0).\n\nMy Magma install says: \"Magma V2.14-9\", what does yours say?\n\nCheers,\ngsw",
     "created_at": "2008-10-11T22:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -138,7 +138,6 @@ Hi,
 several issues.
 On the one hand, the first patch does not apply cleanly against 3.1.3 alpha series, since the hunk in gap.py does not fit (the "prompt" funtion to be removed did get a doctest, so the automatism breaks).
 More severely, there are invalid absolute paths in beginning with "/home/wstein/", specific to your local install, see what I get:
-
 
 ```
 sage -t -long devel/sage-main/sage/interfaces/magma.py      **********************************************************************
@@ -200,7 +199,6 @@ The following tests failed:
 Total time for all tests: 34.6 seconds
 ```
 
-
 The path issues should go away with some triple dots.
 
 However, I have no idea yet what that last "Groebner" issue is (Expected: 2; Got: 0).
@@ -238,7 +236,7 @@ This does not go away just using triple dots in paths, instead some environment 
 archive/issue_comments_030759.json:
 ```json
 {
-    "body": "> not apply cleanly against 3.1.3 alpha \n\nIt's against 3.1.2.\n\nRegarding the Groebner output, I think you didn't apply all the patches, since you have\n\n```\nsage: magma.get_verbose(\"Groebner\")\n```\n\nin your log above, but the input line should be\n\n```\nsage: magma.get_verbose(\"Groebner\")        # optional\n```\n\n\nIn particular, you are doing\n\n```\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\n```\n\nwhich with the third patch above should essentially do almost nothing, since\nyou forgot to put --optional.\n\n\nRegarding\n> we try to load a package, that can't be found. This does not go away \n> just using triple dots in paths, instead some environment variable magic \n> has to be used, but might explain the Groebner thing. \n\nIt is unrelated to Groebner.  This will go away by putting in some ...'s.",
+    "body": "> not apply cleanly against 3.1.3 alpha \n\n\nIt's against 3.1.2.\n\nRegarding the Groebner output, I think you didn't apply all the patches, since you have\n\n```\nsage: magma.get_verbose(\"Groebner\")\n```\nin your log above, but the input line should be\n\n```\nsage: magma.get_verbose(\"Groebner\")        # optional\n```\n\nIn particular, you are doing\n\n```\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\n```\nwhich with the third patch above should essentially do almost nothing, since\nyou forgot to put --optional.\n\n\nRegarding\n> we try to load a package, that can't be found. This does not go away \n> just using triple dots in paths, instead some environment variable magic \n> has to be used, but might explain the Groebner thing. \n\n\nIt is unrelated to Groebner.  This will go away by putting in some ...'s.",
     "created_at": "2008-10-12T12:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -249,6 +247,7 @@ archive/issue_comments_030759.json:
 
 > not apply cleanly against 3.1.3 alpha 
 
+
 It's against 3.1.2.
 
 Regarding the Groebner output, I think you didn't apply all the patches, since you have
@@ -256,20 +255,17 @@ Regarding the Groebner output, I think you didn't apply all the patches, since y
 ```
 sage: magma.get_verbose("Groebner")
 ```
-
 in your log above, but the input line should be
 
 ```
 sage: magma.get_verbose("Groebner")        # optional
 ```
 
-
 In particular, you are doing
 
 ```
         sage -t -long devel/sage-main/sage/interfaces/magma.py
 ```
-
 which with the third patch above should essentially do almost nothing, since
 you forgot to put --optional.
 
@@ -278,6 +274,7 @@ Regarding
 > we try to load a package, that can't be found. This does not go away 
 > just using triple dots in paths, instead some environment variable magic 
 > has to be used, but might explain the Groebner thing. 
+
 
 It is unrelated to Groebner.  This will go away by putting in some ...'s.
 
@@ -288,7 +285,7 @@ It is unrelated to Groebner.  This will go away by putting in some ...'s.
 archive/issue_comments_030760.json:
 ```json
 {
-    "body": "I fixed all the problems and a trivial reviewer patch is coming up. I did delete two hunks from the part3 patch since it contained fixes already done independently due to a previous patch. Tests pass with and without optional except two failures due to using Magma 2.13 instead of 2.14 on the test machine, but I can live with that:\n\n```\nsage -t -long -optional devel/sage/sage/interfaces/magma.py \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 90:\n    sage: print M2\nExpected:\n    Space of modular forms on Gamma_1(5) with character $.1, weight 2, and dimension 2 over Integer Ring.\nGot:\n    Space of modular forms on Gamma_1(5) with character all conjugates of [$.1], weight 2, and dimension 2 over Integer Ring.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 92:\n    sage: print M2.Basis()   # note -- this has been changed to be *wrong* as below in Magma 2.14!!\nExpected:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + 50*q^8 + 30*q^10 + O(q^12),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + 5*q^8 + 7*q^9 + 5*q^10 + 12*q^11 + O(q^12)\n    ]\nGot:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + O(q^8),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + O(q^8)\n    ]\n**********************************************************************\n```\n",
+    "body": "I fixed all the problems and a trivial reviewer patch is coming up. I did delete two hunks from the part3 patch since it contained fixes already done independently due to a previous patch. Tests pass with and without optional except two failures due to using Magma 2.13 instead of 2.14 on the test machine, but I can live with that:\n\n```\nsage -t -long -optional devel/sage/sage/interfaces/magma.py \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 90:\n    sage: print M2\nExpected:\n    Space of modular forms on Gamma_1(5) with character $.1, weight 2, and dimension 2 over Integer Ring.\nGot:\n    Space of modular forms on Gamma_1(5) with character all conjugates of [$.1], weight 2, and dimension 2 over Integer Ring.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 92:\n    sage: print M2.Basis()   # note -- this has been changed to be *wrong* as below in Magma 2.14!!\nExpected:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + 50*q^8 + 30*q^10 + O(q^12),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + 5*q^8 + 7*q^9 + 5*q^10 + 12*q^11 + O(q^12)\n    ]\nGot:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + O(q^8),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + O(q^8)\n    ]\n**********************************************************************\n```",
     "created_at": "2008-10-12T15:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
@@ -323,7 +320,6 @@ Got:
     ]
 **********************************************************************
 ```
-
 
 
 

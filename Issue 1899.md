@@ -3,7 +3,7 @@
 archive/issues_001899.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: Graph(matrix([[1,2],[3,4]]),loops=True)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/home/jason/download/sage-2.10-Linux-i686-Linux/devel/sage-main/sage/combinat/<ipython console> in <module>()\n\n/home/was/build/sage-2.10/local/lib/python2.5/site-packages/sage/graphs/graph.py in __init__(self, data, pos, loops, format, boundary, weighted, **kwds)\n\n<type 'exceptions.NameError'>: global name 'multiedges' is not defined\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1899\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: Graph(matrix([[1,2],[3,4]]),loops=True)\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/home/jason/download/sage-2.10-Linux-i686-Linux/devel/sage-main/sage/combinat/<ipython console> in <module>()\n\n/home/was/build/sage-2.10/local/lib/python2.5/site-packages/sage/graphs/graph.py in __init__(self, data, pos, loops, format, boundary, weighted, **kwds)\n\n<type 'exceptions.NameError'>: global name 'multiedges' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1899\n\n",
     "created_at": "2008-01-23T22:19:40Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_001899.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: Graph(matrix([[1,2],[3,4]]),loops=True)
 ---------------------------------------------------------------------------
@@ -30,7 +29,6 @@ sage: Graph(matrix([[1,2],[3,4]]),loops=True)
 
 <type 'exceptions.NameError'>: global name 'multiedges' is not defined
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1899

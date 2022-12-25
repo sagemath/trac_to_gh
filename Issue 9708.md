@@ -3,7 +3,7 @@
 archive/issues_009708.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @kcrisman @novoselt @kini @gutow\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @novoselt @kini @gutow\n\nI tried the plot3d example that involves \"mesh=True\" and it is completely broken.  The plot simply doesn't show a mesh at all.\n\n```\nplot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)\n```\n[This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9708\n\n",
     "created_at": "2010-08-08T00:49:42Z",
     "labels": [
         "component: graphics",
@@ -25,7 +25,6 @@ I tried the plot3d example that involves "mesh=True" and it is completely broken
 ```
 plot3d(sin(x-y)*y*cos(x),(x,-3,3),(y,-3,3), mesh=True)
 ```
-
 [This is the Trac macro *a 3d plot, but with no mesh* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#a 3d plot, but with no mesh-macro)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9708
@@ -151,7 +150,7 @@ I don't have much time to look at this now, but it is very mysterious as #6184,
 archive/issue_comments_094469.json:
 ```json
 {
-    "body": "This just came up again (see [this interact](http://aleph.sagemath.org/?q=36ba599a-ded6-4afe-97da-2a16b4d166c2), for instance) in the PREP 2012 workshop, as I was trying to help someone set orientation.\n\nRepeating Jason's example from this context,\n\n```\n    p2=plot3d(f(x,y),(x,-5,5),(y,-5,5))\n    show(p2,figsize=3,mesh=True,orientation=(0,0,0,0))\n```\n\nworks, but \n\n```\n    p2=plot3d(f(x,y),(x,-5,5),(y,-5,5),mesh=True,orientation=(0,0,0,0))\n```\n\ndoesn't.  (Doesn't matter what `f` is, pick your favorite.)\n\n#6184 turns out to be a red herring; we are not passing the keywords on, as Jason pointed out.  Hopefully this won't be too hard to fix.",
+    "body": "This just came up again (see [this interact](http://aleph.sagemath.org/?q=36ba599a-ded6-4afe-97da-2a16b4d166c2), for instance) in the PREP 2012 workshop, as I was trying to help someone set orientation.\n\nRepeating Jason's example from this context,\n\n```\n    p2=plot3d(f(x,y),(x,-5,5),(y,-5,5))\n    show(p2,figsize=3,mesh=True,orientation=(0,0,0,0))\n```\nworks, but \n\n```\n    p2=plot3d(f(x,y),(x,-5,5),(y,-5,5),mesh=True,orientation=(0,0,0,0))\n```\ndoesn't.  (Doesn't matter what `f` is, pick your favorite.)\n\n#6184 turns out to be a red herring; we are not passing the keywords on, as Jason pointed out.  Hopefully this won't be too hard to fix.",
     "created_at": "2012-06-28T21:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
@@ -168,13 +167,11 @@ Repeating Jason's example from this context,
     p2=plot3d(f(x,y),(x,-5,5),(y,-5,5))
     show(p2,figsize=3,mesh=True,orientation=(0,0,0,0))
 ```
-
 works, but 
 
 ```
     p2=plot3d(f(x,y),(x,-5,5),(y,-5,5),mesh=True,orientation=(0,0,0,0))
 ```
-
 doesn't.  (Doesn't matter what `f` is, pick your favorite.)
 
 #6184 turns out to be a red herring; we are not passing the keywords on, as Jason pointed out.  Hopefully this won't be too hard to fix.
@@ -323,7 +320,7 @@ archive/issue_events_024283.json:
 archive/issue_comments_094471.json:
 ```json
 {
-    "body": "Okay, I think the problem here is likely to be that in all the 3d plot stuff in `src/sage/plot/plot3d/plot3d.py` usually puts ALL keywords into something like\n\n```\ntexture = Texture(kwds)\n```\n\nand it's never seen again.  But in `src/sage/plot/plot3d/texture.py` the initialization of `Texture_class` (which is called by `Texture`) is\n\n```\n    def __init__(self, id, color=(.4, .4, 1), opacity=1, ambient=0.5, diffuse=1, specular=0, shininess=1, name=None, **kwds):\n```\n\nnever then uses any of the `kwds`.  I can imagine fixing this by *only* allowing \"used\" keywords to be passed on to `Texture` and the rest (somehow) are passed on to `show()`, or by doing something in `Texture_class`.  I would prefer the former.",
+    "body": "Okay, I think the problem here is likely to be that in all the 3d plot stuff in `src/sage/plot/plot3d/plot3d.py` usually puts ALL keywords into something like\n\n```\ntexture = Texture(kwds)\n```\nand it's never seen again.  But in `src/sage/plot/plot3d/texture.py` the initialization of `Texture_class` (which is called by `Texture`) is\n\n```\n    def __init__(self, id, color=(.4, .4, 1), opacity=1, ambient=0.5, diffuse=1, specular=0, shininess=1, name=None, **kwds):\n```\nnever then uses any of the `kwds`.  I can imagine fixing this by *only* allowing \"used\" keywords to be passed on to `Texture` and the rest (somehow) are passed on to `show()`, or by doing something in `Texture_class`.  I would prefer the former.",
     "created_at": "2014-11-06T17:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9708",
     "type": "issue_comment",
@@ -337,11 +334,9 @@ Okay, I think the problem here is likely to be that in all the 3d plot stuff in 
 ```
 texture = Texture(kwds)
 ```
-
 and it's never seen again.  But in `src/sage/plot/plot3d/texture.py` the initialization of `Texture_class` (which is called by `Texture`) is
 
 ```
     def __init__(self, id, color=(.4, .4, 1), opacity=1, ambient=0.5, diffuse=1, specular=0, shininess=1, name=None, **kwds):
 ```
-
 never then uses any of the `kwds`.  I can imagine fixing this by *only* allowing "used" keywords to be passed on to `Texture` and the rest (somehow) are passed on to `show()`, or by doing something in `Texture_class`.  I would prefer the former.

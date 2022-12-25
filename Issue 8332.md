@@ -68,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074073.json:
 ```json
 {
-    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -224,7 +223,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_074081.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> I applied both patches on top of a 4.3.5 build on 32-bit ubuntu, after previously applying the relevant bundle & patches from #8128.\n> \n> With the first patch I tested all and found only the one failure mentioned aboue in sage/structures/parent.pyx.  With the second patch this now passes.\n> \n> Positive review!  Now on to #7880...\n\nSorry that should read #8218.",
+    "body": "Replying to [comment:6 cremona]:\n> I applied both patches on top of a 4.3.5 build on 32-bit ubuntu, after previously applying the relevant bundle & patches from #8128.\n> \n> With the first patch I tested all and found only the one failure mentioned aboue in sage/structures/parent.pyx.  With the second patch this now passes.\n> \n> Positive review!  Now on to #7880...\n\n\nSorry that should read #8218.",
     "created_at": "2010-04-05T13:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8332",
     "type": "issue_comment",
@@ -239,6 +238,7 @@ Replying to [comment:6 cremona]:
 > With the first patch I tested all and found only the one failure mentioned aboue in sage/structures/parent.pyx.  With the second patch this now passes.
 > 
 > Positive review!  Now on to #7880...
+
 
 Sorry that should read #8218.
 

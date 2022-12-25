@@ -3,7 +3,7 @@
 archive/issues_007773.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @robertwb @malb @roed314 wstein\n\nOn this machine I got memory errors, some of wich are reported by glibc-2.11 as double free:\n\n*** glibc detected *** python: double free or corruption (fasttop):\n\n\n```\n       sage -t  devel/sage/sage/groups/generic.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_space.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_sparse.pyx # Segfault\n       sage -t  devel/sage/sage/matrix/matrix2.pyx # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py # Segfault\n[snipped]\n```\n\n\nValgrind to the rescue! I made a new optional spkg:\n[http://trac.sagemath.org/sage_trac/ticket/7766](http://trac.sagemath.org/sage_trac/ticket/7766)\n\nRebuild sage-4.3 with SAGE_VALGRIND=\"yes\", installed valgrind-3.6.0.svn with the help of \n[http://wiki.sagemath.org/ValgrindingSage](http://wiki.sagemath.org/ValgrindingSage)\n\n./sage -t -valgrind devel/sage/sage/matrix/matrix_sparse.pyx\n\nSome results:\n\n\n```\n==8933== Invalid free() / delete / delete[]\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x20D1B78F: gmp_randclass::~gmp_randclass() (gmpxx.h:3248)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n==8933==  Address 0x347fd730 is 0 bytes inside a block of size 8 free'd\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n\n```\n\n\nThe complete report can be found on my homepage on sage.math\n(i'll put a link here as soon sage.math is up again) valgrind_memcheck_test_matrix_sparse.bz2\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7773\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @robertwb @malb @roed314 wstein\n\nOn this machine I got memory errors, some of wich are reported by glibc-2.11 as double free:\n\n*** glibc detected *** python: double free or corruption (fasttop):\n\n```\n       sage -t  devel/sage/sage/groups/generic.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_space.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_sparse.pyx # Segfault\n       sage -t  devel/sage/sage/matrix/matrix2.pyx # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py # Segfault\n[snipped]\n```\n\nValgrind to the rescue! I made a new optional spkg:\n[http://trac.sagemath.org/sage_trac/ticket/7766](http://trac.sagemath.org/sage_trac/ticket/7766)\n\nRebuild sage-4.3 with SAGE_VALGRIND=\"yes\", installed valgrind-3.6.0.svn with the help of \n[http://wiki.sagemath.org/ValgrindingSage](http://wiki.sagemath.org/ValgrindingSage)\n\n./sage -t -valgrind devel/sage/sage/matrix/matrix_sparse.pyx\n\nSome results:\n\n```\n==8933== Invalid free() / delete / delete[]\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x20D1B78F: gmp_randclass::~gmp_randclass() (gmpxx.h:3248)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n==8933==  Address 0x347fd730 is 0 bytes inside a block of size 8 free'd\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n\n```\n\nThe complete report can be found on my homepage on sage.math\n(i'll put a link here as soon sage.math is up again) valgrind_memcheck_test_matrix_sparse.bz2\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7773\n\n",
     "created_at": "2009-12-27T13:52:40Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ On this machine I got memory errors, some of wich are reported by glibc-2.11 as 
 
 *** glibc detected *** python: double free or corruption (fasttop):
 
-
 ```
        sage -t  devel/sage/sage/groups/generic.py # Segfault
        sage -t  devel/sage/sage/matrix/matrix_space.py # Segfault
@@ -36,7 +35,6 @@ On this machine I got memory errors, some of wich are reported by glibc-2.11 as 
 [snipped]
 ```
 
-
 Valgrind to the rescue! I made a new optional spkg:
 [http://trac.sagemath.org/sage_trac/ticket/7766](http://trac.sagemath.org/sage_trac/ticket/7766)
 
@@ -46,7 +44,6 @@ Rebuild sage-4.3 with SAGE_VALGRIND="yes", installed valgrind-3.6.0.svn with the
 ./sage -t -valgrind devel/sage/sage/matrix/matrix_sparse.pyx
 
 Some results:
-
 
 ```
 ==8933== Invalid free() / delete / delete[]
@@ -73,7 +70,6 @@ Some results:
 
 ```
 
-
 The complete report can be found on my homepage on sage.math
 (i'll put a link here as soon sage.math is up again) valgrind_memcheck_test_matrix_sparse.bz2
 
@@ -90,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7773
 archive/issue_comments_066886.json:
 ```json
 {
-    "body": "\n```\nGokhan Sever wrote:\n> Hello,\n> \n> uname -a\n> Linux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC\n> 2009 i686 i686 i386 GNU/Linux\n> \n> Getting many errors after ./sage -testall\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \tsage -t  \"devel/sage/sage/modules/free_module.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/coding/code_constructions.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/coding/linear_code.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/groups/generic.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/ssmod/ssmod.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modform/ambient.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modsym/space.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modsym/modsym.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix_space.py\" # Segfault\n\n\n\n```\n\n\nFinally someone with test failures that relate to mine on Fedora 12 x86_64!\n\nJaap",
+    "body": "```\nGokhan Sever wrote:\n> Hello,\n> \n> uname -a\n> Linux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC\n> 2009 i686 i686 i386 GNU/Linux\n> \n> Getting many errors after ./sage -testall\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \tsage -t  \"devel/sage/sage/modules/free_module.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/coding/code_constructions.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/coding/linear_code.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/groups/generic.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/ssmod/ssmod.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modform/ambient.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modsym/space.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/modular/modsym/modsym.py\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\" # Segfault\n> \tsage -t  \"devel/sage/sage/matrix/matrix_space.py\" # Segfault\n\n\n\n```\n\nFinally someone with test failures that relate to mine on Fedora 12 x86_64!\n\nJaap",
     "created_at": "2010-01-28T01:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -98,7 +94,6 @@ archive/issue_comments_066886.json:
     "user": "https://github.com/jaapspies"
 }
 ```
-
 
 ```
 Gokhan Sever wrote:
@@ -128,7 +123,6 @@ Gokhan Sever wrote:
 
 
 ```
-
 
 Finally someone with test failures that relate to mine on Fedora 12 x86_64!
 
@@ -177,7 +171,7 @@ Doctest error log added.
 archive/issue_comments_066889.json:
 ```json
 {
-    "body": "I get a similar failure with linear_codes.py on a Core 2 Duo under Fedora 12 (sage 4.3.1):\n\n```\nsage -t  \"devel/sage-main/sage/coding/linear_code.py\"       \n*** glibc detected *** python: double free or corruption (fasttop): 0x000000000528e970 ***\n======= Backtrace: =========\n/lib64/libc.so.6[0x308e874a76]\n/lib64/libc.so.6(exit+0xe2)[0x308e835b82]\npython[0x4bc46a]\npython(PyErr_PrintEx+0x1a5)[0x4bc685]\npython(PyRun_SimpleFileExFlags+0x1e0)[0x4bd3d0]\npython(Py_Main+0x9af)[0x413e1f]\n/lib64/libc.so.6(__libc_start_main+0xfd)[0x308e81eb1d]\npython[0x413079]\n```\n\nAll files reported by Gokhan Sever fail. In particular modsym says:\n\n```\n*** glibc detected *** python: corrupted double-linked list: 0x0000000006119c00 ***\n```\n",
+    "body": "I get a similar failure with linear_codes.py on a Core 2 Duo under Fedora 12 (sage 4.3.1):\n\n```\nsage -t  \"devel/sage-main/sage/coding/linear_code.py\"       \n*** glibc detected *** python: double free or corruption (fasttop): 0x000000000528e970 ***\n======= Backtrace: =========\n/lib64/libc.so.6[0x308e874a76]\n/lib64/libc.so.6(exit+0xe2)[0x308e835b82]\npython[0x4bc46a]\npython(PyErr_PrintEx+0x1a5)[0x4bc685]\npython(PyRun_SimpleFileExFlags+0x1e0)[0x4bd3d0]\npython(Py_Main+0x9af)[0x413e1f]\n/lib64/libc.so.6(__libc_start_main+0xfd)[0x308e81eb1d]\npython[0x413079]\n```\nAll files reported by Gokhan Sever fail. In particular modsym says:\n\n```\n*** glibc detected *** python: corrupted double-linked list: 0x0000000006119c00 ***\n```",
     "created_at": "2010-02-05T18:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -201,7 +195,6 @@ python(Py_Main+0x9af)[0x413e1f]
 /lib64/libc.so.6(__libc_start_main+0xfd)[0x308e81eb1d]
 python[0x413079]
 ```
-
 All files reported by Gokhan Sever fail. In particular modsym says:
 
 ```
@@ -210,13 +203,12 @@ All files reported by Gokhan Sever fail. In particular modsym says:
 
 
 
-
 ---
 
 archive/issue_comments_066890.json:
 ```json
 {
-    "body": "I encounter a similar error with Fedora 12 on Intel Pentium M:\n\nmy cpuinfo:\n\n```\nprocessor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 9\nmodel name\t: Intel(R) Pentium(R) M processor 1600MHz\nstepping\t: 5\ncpu MHz\t\t: 1600.000\ncache size\t: 1024 KB\nfdiv_bug\t: no\nhlt_bug\t\t: no\nf00f_bug\t: no\ncoma_bug\t: no\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 2\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr mce cx8 mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 tm pbe up bts est tm2\nbogomips\t: 3189.39\nclflush size\t: 64\npower management:\n```\n\n\nmy gcc -v:\n\n```\nUsing built-in specs.\nTarget: i686-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux\nThread model: posix\ngcc version 4.4.3 20100127 (Red Hat 4.4.3-4) (GCC) \n```\n\n\n\nmy lsb_release:\n\n```\nLSB Version:\t:core-3.1-ia32:core-3.1-noarch:core-3.2-ia32:core-3.2-noarch:desktop-3.1-ia32:desktop-3.1-noarch:desktop-3.2-ia32:desktop-3.2-noarch\nDistributor ID:\tFedora\nDescription:\tFedora release 12 (Constantine)\nRelease:\t12\nCodename:\tConstantine\n```\n\n\nlast lines of test.log:\n\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/misc/functional.py\"\n\tsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modules/free_module.py\" # Segfault\n\tsage -t  \"devel/sage/sage/groups/generic.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/polynomial/polynomial_quotient_ring_element.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_morphism.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/number_field/number_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_ext_pari.py\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix_space.py\" # Segfault\n\tsage -t  \"devel/sage/sage/graphs/graph_plot.py\"\n\tsage -t  \"devel/sage/sage/coding/linear_code.py\" # Segfault\n\tsage -t  \"devel/sage/sage/coding/code_constructions.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/ssmod/ssmod.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modsym/modsym.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modsym/space.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modform/ambient.py\" # Segfault\n\tsage -t  \"devel/sage/sage/tests/benchmark.py\" # Segfault\nTotal time for all tests: 12153.0 seconds\n\n```\n\n\ndetailed failure results:\n\n\n```\n[erik@localhost sage-4.3.3.alpha1]$ ./sage -t devel/sage-main/sage/coding/linear_code.py \nsage -t  \"devel/sage-main/sage/coding/linear_code.py\"       \n*** glibc detected *** python: double free or corruption (fasttop): 0x0bbfb540 ***\n======= Backtrace: =========\n/lib/libc.so.6[0x296751]\n/home/erik/src/sage-4.3.3.alpha1/local/lib/python/site-packages/sage/rings/memory.so(+0x106d)[0xeeb06d]\n/home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3(__gmpz_clear+0x2a)[0x1b52ba]\n/lib/libc.so.6(exit+0xdf)[0x25609f]\npython[0x80f36d7]\npython(PyErr_PrintEx+0x18d)[0x80f38bd]\npython(PyErr_Print+0x12)[0x80f3ac2]\npython(PyRun_SimpleFileExFlags+0x1ab)[0x80f45db]\npython(Py_Main+0xa88)[0x80586d8]\npython(main+0x1b)[0x805791b]\n/lib/libc.so.6(__libc_start_main+0xe6)[0x23ebb6]\npython[0x8057861]\n======= Memory map: ========\n00106000-00108000 r-xp 00000000 08:03 414026     /lib/libkeyutils-1.2.so\n00108000-00109000 rw-p 00001000 08:03 414026     /lib/libkeyutils-1.2.so\n00110000-00114000 r-xp 00000000 08:03 162524     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/select.so\n00114000-00116000 rw-p 00003000 08:03 162524     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/select.so\n00116000-00118000 r-xp 00000000 08:03 416226     /lib/libutil-2.11.1.so\n00118000-00119000 r--p 00001000 08:03 416226     /lib/libutil-2.11.1.so\n00119000-0011a000 rw-p 00002000 08:03 416226     /lib/libutil-2.11.1.so\n0011a000-0012a000 r-xp 00000000 08:03 694112     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/c_lib/libcsage.so\n0012a000-0012b000 rw-p 0000f000 08:03 694112     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/c_lib/libcsage.so\n0012b000-0013d000 r-xp 00000000 08:03 676319     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/misc/misc_c.so\n0013d000-00144000 rw-p 00012000 08:03 676319     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/misc/misc_c.so\n00144000-00145000 r-xp 00000000 08:03 162527     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_bisect.so\n00145000-00146000 rw-p 00001000 08:03 162527     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_bisect.so\n00146000-00148000 r-xp 00000000 08:03 162536     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_hashlib.so\n00148000-00149000 rw-p 00002000 08:03 162536     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_hashlib.so\n00149000-00176000 r-xp 00000000 08:03 57413      /lib/libgssapi_krb5.so.2.2\n00176000-00177000 rw-p 0002d000 08:03 57413      /lib/libgssapi_krb5.so.2.2\n00177000-00178000 rwxp 00000000 00:00 0 \n00179000-001a3000 r-xp 00000000 08:03 57410      /lib/libk5crypto.so.3.1\n001a3000-001a4000 rw-p 0002a000 08:03 57410      /lib/libk5crypto.so.3.1\n001a4000-00201000 r-xp 00000000 08:03 98113      /home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3.4.6\n00201000-00202000 rw-p 0005c000 08:03 98113      /home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3.4.6\n00202000-00204000 r-xp 00000000 08:03 162534     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_heapq.so\n00204000-00206000 rw-p 00002000 08:03 162534     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_heapq.so\n00206000-00224000 r-xp 00000000 08:03 413969     /lib/ld-2.11.1.so\n00224000-00225000 r--p 0001d000 08:03 413969     /lib/ld-2.11.1.so\n00225000-00226000 rw-p 0001e000 08:03 413969     /lib/ld-2.11.1.so\n00226000-00227000 r-xp 00000000 08:03 162523     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/crypt.so\n00227000-00228000 rw-p 00000000 08:03 162523     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/crypt.so\n00228000-00397000 r-xp 00000000 08:03 413971     /lib/libc-2.11.1.so\n00397000-00399000 r--p 0016e000 08:03 413971     /lib/libc-2.11.1.so\n00399000-0039a000 rw-p 00170000 08:03 413971     /lib/libc-2.11.1.so\n0039a000-0039d000 rw-p 00000000 00:00 0 \n0039d000-0039e000 r-xp 00000000 08:03 576385     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/libs/flint/flint.so\n0039e000-0039f000 rw-p 00001000 08:03 576385     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/libs/flint/flint.so\n0039f000-003a2000 r-xp 00000000 08:03 414002     /lib/libdl-2.11.1.so\n003a2000-003a3000 r--p 00002000 08:03 414002     /lib/libdl-2.11.1.so\n003a3000-003a4000 rw-p 00003000 08:03 414002     /lib/libdl-2.11.1.so\n003a6000-003bc000 r-xp 00000000 08:03 413981     /lib/libpthread-2.11.1.so\n003bc000-003bd000 r--p 00015000 08:03 413981     /lib/libpthread-2.11.1.so\n003bd000-003be000 rw-p 00016000 08:03 413981     /lib/libpthread-2.11.1.so\n003be000-003c0000 rw-p 00000000 00:00 0 \n003c2000-003ea000 r-xp 00000000 08:03 413990     /lib/libm-2.11.1.so\n003ea000-003eb000 r--p 00027000 08:03 413990     /lib/libm-2.11.1.so\n003eb000-003ec000 rw-p 00028000 08:03 413990     /lib/libm-2.11.1.so\n003ec000-003ed000 r-xp 00000000 08:03 162562     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_weakref.so\n003ed000-003ee000 rw-p 00000000 08:03 162562     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_weakref.so\n003ee000-003f5000 r-xp 00000000 08:03 162561     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/itertools.so\n003f5000-003f8000 rw-p 00006000 08:03 162561     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/itertools.so\n003f8000-00408000 r-xp 00000000 08:03 162526     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/cPickle.so\n00408000-00409000 rw-p 0000f000 08:03 162526     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/cPickle.so\n00409000-00420000 r-xp 00000000 08:03 162507     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/bz2.so\n00420000-00423000 rw-p 00016000 08:03 162507     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/bz2.so\n00423000-00452000 r-xp 00000000 08:03 416038     /lib/libncursesw.so.5.7\n00452000-00453000 rw-p 0002f000 08:03 416038     /lib/libncursesw.so.5.7\n00453000-00456000 r-xp 00000000 08:03 162518     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/termios.so\n00456000-00458000 rw-p 00002000 08:03 162518     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/termios.so\n00458000-0045b000 r-xp 00000000 08:03 162540     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/readline.so\n0045b000-0045d000 rw-p 00002000 08:03 162540     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/readline.so\n0045d000-00474000 r-xp 00000000 08:03 162519     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_ctypes.so\n00474000-00477000 rw-p 00016000 08:03 162519     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_ctypes.so\n00477000-0047a000 r-xp 00000000 08:03 162567     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_lsprof.so\n0047a000-0047b000 rw-p 00002000 08:03 162567     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_lsprof.so\n0047b000-00481000 r-xp 00000000 08:03 584404     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/structure/parent_base.so\n00481000-00482000 rw-p 00006000 08:03 584404     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/structure/parent_base.soA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n\t [40.5 s]\n\n```\n",
+    "body": "I encounter a similar error with Fedora 12 on Intel Pentium M:\n\nmy cpuinfo:\n\n```\nprocessor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 9\nmodel name\t: Intel(R) Pentium(R) M processor 1600MHz\nstepping\t: 5\ncpu MHz\t\t: 1600.000\ncache size\t: 1024 KB\nfdiv_bug\t: no\nhlt_bug\t\t: no\nf00f_bug\t: no\ncoma_bug\t: no\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 2\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr mce cx8 mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 tm pbe up bts est tm2\nbogomips\t: 3189.39\nclflush size\t: 64\npower management:\n```\n\nmy gcc -v:\n\n```\nUsing built-in specs.\nTarget: i686-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux\nThread model: posix\ngcc version 4.4.3 20100127 (Red Hat 4.4.3-4) (GCC) \n```\n\n\nmy lsb_release:\n\n```\nLSB Version:\t:core-3.1-ia32:core-3.1-noarch:core-3.2-ia32:core-3.2-noarch:desktop-3.1-ia32:desktop-3.1-noarch:desktop-3.2-ia32:desktop-3.2-noarch\nDistributor ID:\tFedora\nDescription:\tFedora release 12 (Constantine)\nRelease:\t12\nCodename:\tConstantine\n```\n\nlast lines of test.log:\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/misc/functional.py\"\n\tsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modules/free_module.py\" # Segfault\n\tsage -t  \"devel/sage/sage/groups/generic.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/polynomial/polynomial_quotient_ring_element.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_morphism.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/number_field/number_field.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # Segfault\n\tsage -t  \"devel/sage/sage/rings/finite_field_ext_pari.py\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix_sparse.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix2.pyx\" # Segfault\n\tsage -t  \"devel/sage/sage/matrix/matrix_space.py\" # Segfault\n\tsage -t  \"devel/sage/sage/graphs/graph_plot.py\"\n\tsage -t  \"devel/sage/sage/coding/linear_code.py\" # Segfault\n\tsage -t  \"devel/sage/sage/coding/code_constructions.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/ssmod/ssmod.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modsym/modsym.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modsym/space.py\" # Segfault\n\tsage -t  \"devel/sage/sage/modular/modform/ambient.py\" # Segfault\n\tsage -t  \"devel/sage/sage/tests/benchmark.py\" # Segfault\nTotal time for all tests: 12153.0 seconds\n\n```\n\ndetailed failure results:\n\n```\n[erik@localhost sage-4.3.3.alpha1]$ ./sage -t devel/sage-main/sage/coding/linear_code.py \nsage -t  \"devel/sage-main/sage/coding/linear_code.py\"       \n*** glibc detected *** python: double free or corruption (fasttop): 0x0bbfb540 ***\n======= Backtrace: =========\n/lib/libc.so.6[0x296751]\n/home/erik/src/sage-4.3.3.alpha1/local/lib/python/site-packages/sage/rings/memory.so(+0x106d)[0xeeb06d]\n/home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3(__gmpz_clear+0x2a)[0x1b52ba]\n/lib/libc.so.6(exit+0xdf)[0x25609f]\npython[0x80f36d7]\npython(PyErr_PrintEx+0x18d)[0x80f38bd]\npython(PyErr_Print+0x12)[0x80f3ac2]\npython(PyRun_SimpleFileExFlags+0x1ab)[0x80f45db]\npython(Py_Main+0xa88)[0x80586d8]\npython(main+0x1b)[0x805791b]\n/lib/libc.so.6(__libc_start_main+0xe6)[0x23ebb6]\npython[0x8057861]\n======= Memory map: ========\n00106000-00108000 r-xp 00000000 08:03 414026     /lib/libkeyutils-1.2.so\n00108000-00109000 rw-p 00001000 08:03 414026     /lib/libkeyutils-1.2.so\n00110000-00114000 r-xp 00000000 08:03 162524     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/select.so\n00114000-00116000 rw-p 00003000 08:03 162524     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/select.so\n00116000-00118000 r-xp 00000000 08:03 416226     /lib/libutil-2.11.1.so\n00118000-00119000 r--p 00001000 08:03 416226     /lib/libutil-2.11.1.so\n00119000-0011a000 rw-p 00002000 08:03 416226     /lib/libutil-2.11.1.so\n0011a000-0012a000 r-xp 00000000 08:03 694112     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/c_lib/libcsage.so\n0012a000-0012b000 rw-p 0000f000 08:03 694112     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/c_lib/libcsage.so\n0012b000-0013d000 r-xp 00000000 08:03 676319     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/misc/misc_c.so\n0013d000-00144000 rw-p 00012000 08:03 676319     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/misc/misc_c.so\n00144000-00145000 r-xp 00000000 08:03 162527     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_bisect.so\n00145000-00146000 rw-p 00001000 08:03 162527     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_bisect.so\n00146000-00148000 r-xp 00000000 08:03 162536     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_hashlib.so\n00148000-00149000 rw-p 00002000 08:03 162536     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_hashlib.so\n00149000-00176000 r-xp 00000000 08:03 57413      /lib/libgssapi_krb5.so.2.2\n00176000-00177000 rw-p 0002d000 08:03 57413      /lib/libgssapi_krb5.so.2.2\n00177000-00178000 rwxp 00000000 00:00 0 \n00179000-001a3000 r-xp 00000000 08:03 57410      /lib/libk5crypto.so.3.1\n001a3000-001a4000 rw-p 0002a000 08:03 57410      /lib/libk5crypto.so.3.1\n001a4000-00201000 r-xp 00000000 08:03 98113      /home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3.4.6\n00201000-00202000 rw-p 0005c000 08:03 98113      /home/erik/src/sage-4.3.3.alpha1/local/lib/libgmp.so.3.4.6\n00202000-00204000 r-xp 00000000 08:03 162534     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_heapq.so\n00204000-00206000 rw-p 00002000 08:03 162534     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_heapq.so\n00206000-00224000 r-xp 00000000 08:03 413969     /lib/ld-2.11.1.so\n00224000-00225000 r--p 0001d000 08:03 413969     /lib/ld-2.11.1.so\n00225000-00226000 rw-p 0001e000 08:03 413969     /lib/ld-2.11.1.so\n00226000-00227000 r-xp 00000000 08:03 162523     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/crypt.so\n00227000-00228000 rw-p 00000000 08:03 162523     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/crypt.so\n00228000-00397000 r-xp 00000000 08:03 413971     /lib/libc-2.11.1.so\n00397000-00399000 r--p 0016e000 08:03 413971     /lib/libc-2.11.1.so\n00399000-0039a000 rw-p 00170000 08:03 413971     /lib/libc-2.11.1.so\n0039a000-0039d000 rw-p 00000000 00:00 0 \n0039d000-0039e000 r-xp 00000000 08:03 576385     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/libs/flint/flint.so\n0039e000-0039f000 rw-p 00001000 08:03 576385     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/libs/flint/flint.so\n0039f000-003a2000 r-xp 00000000 08:03 414002     /lib/libdl-2.11.1.so\n003a2000-003a3000 r--p 00002000 08:03 414002     /lib/libdl-2.11.1.so\n003a3000-003a4000 rw-p 00003000 08:03 414002     /lib/libdl-2.11.1.so\n003a6000-003bc000 r-xp 00000000 08:03 413981     /lib/libpthread-2.11.1.so\n003bc000-003bd000 r--p 00015000 08:03 413981     /lib/libpthread-2.11.1.so\n003bd000-003be000 rw-p 00016000 08:03 413981     /lib/libpthread-2.11.1.so\n003be000-003c0000 rw-p 00000000 00:00 0 \n003c2000-003ea000 r-xp 00000000 08:03 413990     /lib/libm-2.11.1.so\n003ea000-003eb000 r--p 00027000 08:03 413990     /lib/libm-2.11.1.so\n003eb000-003ec000 rw-p 00028000 08:03 413990     /lib/libm-2.11.1.so\n003ec000-003ed000 r-xp 00000000 08:03 162562     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_weakref.so\n003ed000-003ee000 rw-p 00000000 08:03 162562     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_weakref.so\n003ee000-003f5000 r-xp 00000000 08:03 162561     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/itertools.so\n003f5000-003f8000 rw-p 00006000 08:03 162561     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/itertools.so\n003f8000-00408000 r-xp 00000000 08:03 162526     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/cPickle.so\n00408000-00409000 rw-p 0000f000 08:03 162526     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/cPickle.so\n00409000-00420000 r-xp 00000000 08:03 162507     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/bz2.so\n00420000-00423000 rw-p 00016000 08:03 162507     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/bz2.so\n00423000-00452000 r-xp 00000000 08:03 416038     /lib/libncursesw.so.5.7\n00452000-00453000 rw-p 0002f000 08:03 416038     /lib/libncursesw.so.5.7\n00453000-00456000 r-xp 00000000 08:03 162518     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/termios.so\n00456000-00458000 rw-p 00002000 08:03 162518     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/termios.so\n00458000-0045b000 r-xp 00000000 08:03 162540     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/readline.so\n0045b000-0045d000 rw-p 00002000 08:03 162540     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/readline.so\n0045d000-00474000 r-xp 00000000 08:03 162519     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_ctypes.so\n00474000-00477000 rw-p 00016000 08:03 162519     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_ctypes.so\n00477000-0047a000 r-xp 00000000 08:03 162567     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_lsprof.so\n0047a000-0047b000 rw-p 00002000 08:03 162567     /home/erik/src/sage-4.3.3.alpha1/local/lib/python2.6/lib-dynload/_lsprof.so\n0047b000-00481000 r-xp 00000000 08:03 584404     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/structure/parent_base.so\n00481000-00482000 rw-p 00006000 08:03 584404     /home/erik/src/sage-4.3.3.alpha1/devel/sage-main/build/sage/structure/parent_base.soA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n\t [40.5 s]\n\n```",
     "created_at": "2010-02-21T18:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -252,7 +244,6 @@ clflush size	: 64
 power management:
 ```
 
-
 my gcc -v:
 
 ```
@@ -262,7 +253,6 @@ Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/u
 Thread model: posix
 gcc version 4.4.3 20100127 (Red Hat 4.4.3-4) (GCC) 
 ```
-
 
 
 my lsb_release:
@@ -275,9 +265,7 @@ Release:	12
 Codename:	Constantine
 ```
 
-
 last lines of test.log:
-
 
 ```
 The following tests failed:
@@ -311,9 +299,7 @@ Total time for all tests: 12153.0 seconds
 
 ```
 
-
 detailed failure results:
-
 
 ```
 [erik@localhost sage-4.3.3.alpha1]$ ./sage -t devel/sage-main/sage/coding/linear_code.py 
@@ -404,7 +390,6 @@ python[0x8057861]
 
 
 
-
 ---
 
 archive/issue_comments_066891.json:
@@ -447,7 +432,7 @@ Changing assignee from GeorgSWeber to @zimmermann6.
 archive/issue_comments_066893.json:
 ```json
 {
-    "body": "With sage-4.3.3 I've isolated the problem in `finite_field_morphism.py` to:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: H = Hom(GF(32, 'a'), GF(1024, 'b'))\nsage: H[1]\nRing morphism:\n  From: Finite Field in a of size 2^5\n  To:   Finite Field in b of size 2^10\n  Defn: a |--> b^7 + b^5\nsage: quit\nExiting SAGE (CPU time 0m0.54s, Wall time 0m7.06s).\n/usr/local/sage-4.3.3/sage/local/bin/sage-sage: line 206:  4274 Segmentation fault      (core dumped) sage-ipython \"$@\" -i\n```\n\n(Note the problem does not happen during the Sage session, but only when we quit Sage and it\ntries to free the memory.) The run of `sage -memcheck` with that session is available on\nhttp://www.loria.fr/~zimmerma/sage-memcheck.4232.\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nNote: I could not try `sage -memcheck` on sage.math since it did quit immediately, with the\nfollowing in the sage.memcheck file:\n\n```\n==29083== FATAL: can't open suppressions file '/usr/local/sage/local/lib/valgrind/sage.supp'\n```\n\nIt seems the directory `/usr/local/sage/local/lib/valgrind` is missing, and the file\n`sage.supp` in it (for my test above on my laptop, I did create an empty sage.supp file).",
+    "body": "With sage-4.3.3 I've isolated the problem in `finite_field_morphism.py` to:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: H = Hom(GF(32, 'a'), GF(1024, 'b'))\nsage: H[1]\nRing morphism:\n  From: Finite Field in a of size 2^5\n  To:   Finite Field in b of size 2^10\n  Defn: a |--> b^7 + b^5\nsage: quit\nExiting SAGE (CPU time 0m0.54s, Wall time 0m7.06s).\n/usr/local/sage-4.3.3/sage/local/bin/sage-sage: line 206:  4274 Segmentation fault      (core dumped) sage-ipython \"$@\" -i\n```\n(Note the problem does not happen during the Sage session, but only when we quit Sage and it\ntries to free the memory.) The run of `sage -memcheck` with that session is available on\nhttp://www.loria.fr/~zimmerma/sage-memcheck.4232.\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nNote: I could not try `sage -memcheck` on sage.math since it did quit immediately, with the\nfollowing in the sage.memcheck file:\n\n```\n==29083== FATAL: can't open suppressions file '/usr/local/sage/local/lib/valgrind/sage.supp'\n```\nIt seems the directory `/usr/local/sage/local/lib/valgrind` is missing, and the file\n`sage.supp` in it (for my test above on my laptop, I did create an empty sage.supp file).",
     "created_at": "2010-02-27T23:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -471,7 +456,6 @@ sage: quit
 Exiting SAGE (CPU time 0m0.54s, Wall time 0m7.06s).
 /usr/local/sage-4.3.3/sage/local/bin/sage-sage: line 206:  4274 Segmentation fault      (core dumped) sage-ipython "$@" -i
 ```
-
 (Note the problem does not happen during the Sage session, but only when we quit Sage and it
 tries to free the memory.) The run of `sage -memcheck` with that session is available on
 http://www.loria.fr/~zimmerma/sage-memcheck.4232.
@@ -483,7 +467,6 @@ following in the sage.memcheck file:
 ```
 ==29083== FATAL: can't open suppressions file '/usr/local/sage/local/lib/valgrind/sage.supp'
 ```
-
 It seems the directory `/usr/local/sage/local/lib/valgrind` is missing, and the file
 `sage.supp` in it (for my test above on my laptop, I did create an empty sage.supp file).
 
@@ -494,7 +477,7 @@ It seems the directory `/usr/local/sage/local/lib/valgrind` is missing, and the 
 archive/issue_comments_066894.json:
 ```json
 {
-    "body": "I don't have these two lines failing on v4.3.3 comparing to my 4.3.2.alpha0 tests:\n\nUsing ./sage -testall\n\n\tsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\"\n\n\tsage -t  \"devel/sage/sage/libs/cremona/newforms.pyx\"\n\n\n```\nuname -a\nLinux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC 2009 i686 i686 i386 GNU/Linux\n```\n",
+    "body": "I don't have these two lines failing on v4.3.3 comparing to my 4.3.2.alpha0 tests:\n\nUsing ./sage -testall\n\n\tsage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\"\n\n\tsage -t  \"devel/sage/sage/libs/cremona/newforms.pyx\"\n\n```\nuname -a\nLinux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC 2009 i686 i686 i386 GNU/Linux\n```",
     "created_at": "2010-03-03T21:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -511,12 +494,10 @@ Using ./sage -testall
 
 	sage -t  "devel/sage/sage/libs/cremona/newforms.pyx"
 
-
 ```
 uname -a
 Linux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC 2009 i686 i686 i386 GNU/Linux
 ```
-
 
 
 
@@ -525,7 +506,7 @@ Linux ccn 2.6.31.9-174.fc12.i686.PAE #1 SMP Mon Dec 21 06:04:56 UTC 2009 i686 i6
 archive/issue_comments_066895.json:
 ```json
 {
-    "body": "thanks to Robert Bradshaw, I was able to isolate the following test case:\n\n```\nH = Hom(GF(32, 'a'), GF(1024, 'b'))\nD = H.domain()\nC = H.codomain()\nf = D.modulus()\ng = C['x'](f)\nr = g.roots()\nr = [r[0]]\nprint r[0][0]\nv = D.hom(r[0][0], C)\nquit\n```\n\nwhere the Segfault does not occur without the last instruction `v = D.hom(r[0][0], C)`.\nNow D.hom is a builtin with Givaro...",
+    "body": "thanks to Robert Bradshaw, I was able to isolate the following test case:\n\n```\nH = Hom(GF(32, 'a'), GF(1024, 'b'))\nD = H.domain()\nC = H.codomain()\nf = D.modulus()\ng = C['x'](f)\nr = g.roots()\nr = [r[0]]\nprint r[0][0]\nv = D.hom(r[0][0], C)\nquit\n```\nwhere the Segfault does not occur without the last instruction `v = D.hom(r[0][0], C)`.\nNow D.hom is a builtin with Givaro...",
     "created_at": "2010-03-05T20:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -548,7 +529,6 @@ print r[0][0]
 v = D.hom(r[0][0], C)
 quit
 ```
-
 where the Segfault does not occur without the last instruction `v = D.hom(r[0][0], C)`.
 Now D.hom is a builtin with Givaro...
 
@@ -595,7 +575,7 @@ I don't have time to look at this this weekend, but only note that GF(32) and GF
 archive/issue_comments_066898.json:
 ```json
 {
-    "body": "David,\n\n> but only note that GF(32) and GF(1024) are FiniteField_ntl_gf2e objects\n\nare you sure? I get:\n\n```\nsage: R=GF(32,'a')\nsage: parent(R)\n<type 'sage.rings.finite_field_givaro.FiniteField_givaro'>\n```\n\nIs there a way to force GF() to use Givaro or Ntl?",
+    "body": "David,\n\n> but only note that GF(32) and GF(1024) are FiniteField_ntl_gf2e objects\n\n\nare you sure? I get:\n\n```\nsage: R=GF(32,'a')\nsage: parent(R)\n<type 'sage.rings.finite_field_givaro.FiniteField_givaro'>\n```\nIs there a way to force GF() to use Givaro or Ntl?",
     "created_at": "2010-03-06T20:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -608,6 +588,7 @@ David,
 
 > but only note that GF(32) and GF(1024) are FiniteField_ntl_gf2e objects
 
+
 are you sure? I get:
 
 ```
@@ -615,7 +596,6 @@ sage: R=GF(32,'a')
 sage: parent(R)
 <type 'sage.rings.finite_field_givaro.FiniteField_givaro'>
 ```
-
 Is there a way to force GF() to use Givaro or Ntl?
 
 
@@ -645,7 +625,7 @@ I don't know what's going on if it's givaro.
 archive/issue_comments_066900.json:
 ```json
 {
-    "body": "> You should be able to use the impl keyword to GF to get other implementations. \n\nI wasn't able to find how to use the `impl` keyword, but with the following it works:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: F = sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e\nsage: H = Hom(F(32, 'a'), F(1024, 'b'))\nsage: D = H.domain()\nsage: C = H.codomain()\nsage: f = D.modulus()\nsage: g = C['x'](f)\nsage: r = g.roots()\nsage: r = [r[0]]\nsage: print r[0][0]\nb^4 + b^3 + b\nsage: D.hom(r[0][0], C)\nRing morphism:\n  From: Finite Field in a of size 2^5\n  To:   Finite Field in b of size 2^10\n  Defn: a |--> b^4 + b^3 + b\nsage: quit\nExiting SAGE (CPU time 0m0.25s, Wall time 0m3.09s).\n[zimmerma@coing ~]$\n```\n\nNo SegFault occurs with NTL, which shows the problem is linked with Givaro.",
+    "body": "> You should be able to use the impl keyword to GF to get other implementations. \n\n\nI wasn't able to find how to use the `impl` keyword, but with the following it works:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: F = sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e\nsage: H = Hom(F(32, 'a'), F(1024, 'b'))\nsage: D = H.domain()\nsage: C = H.codomain()\nsage: f = D.modulus()\nsage: g = C['x'](f)\nsage: r = g.roots()\nsage: r = [r[0]]\nsage: print r[0][0]\nb^4 + b^3 + b\nsage: D.hom(r[0][0], C)\nRing morphism:\n  From: Finite Field in a of size 2^5\n  To:   Finite Field in b of size 2^10\n  Defn: a |--> b^4 + b^3 + b\nsage: quit\nExiting SAGE (CPU time 0m0.25s, Wall time 0m3.09s).\n[zimmerma@coing ~]$\n```\nNo SegFault occurs with NTL, which shows the problem is linked with Givaro.",
     "created_at": "2010-03-07T18:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -655,6 +635,7 @@ archive/issue_comments_066900.json:
 ```
 
 > You should be able to use the impl keyword to GF to get other implementations. 
+
 
 I wasn't able to find how to use the `impl` keyword, but with the following it works:
 
@@ -681,7 +662,6 @@ sage: quit
 Exiting SAGE (CPU time 0m0.25s, Wall time 0m3.09s).
 [zimmerma@coing ~]$
 ```
-
 No SegFault occurs with NTL, which shows the problem is linked with Givaro.
 
 
@@ -691,7 +671,7 @@ No SegFault occurs with NTL, which shows the problem is linked with Givaro.
 archive/issue_comments_066901.json:
 ```json
 {
-    "body": "I tried again the 22 tests which did produce a Segfault, by changing zech_log_bound from 2<sup>16</sup> to\n2 in rings/finite_field.py, thus disabling Givaro for extension fields. I get no Segfault any more.\nHowever, 9 of the 22 tests do fail, for example:\n\n```\n[zimmerma@coing sage]$ sage -t matrix/matrix_space.py\nsage -t  \"devel/sage-7773/sage/matrix/matrix_space.py\"      \n**********************************************************************\nFile \"/usr/local/sage-4.3.3/sage/devel/sage-7773/sage/matrix/matrix_space.py\", line 1222:\n    sage: Mat(GF(9,'a'),3,sparse=True).random_element()\nExpected:\n    [    2*a       a       1]\n    [      2       1 2*a + 1]\n    [      a       2       2]\nGot:\n    [  a + 2 2*a + 1       a]\n    [2*a + 2     2*a       0]\n    [      0     2*a       0]\n```\n\nI'm not sure we can doctest the result of the `random_element` method.\nIn other words, is it normal that some tests do fail if one changes `zech_log_bound`?\nShould I open a separate ticket for this?",
+    "body": "I tried again the 22 tests which did produce a Segfault, by changing zech_log_bound from 2<sup>16</sup> to\n2 in rings/finite_field.py, thus disabling Givaro for extension fields. I get no Segfault any more.\nHowever, 9 of the 22 tests do fail, for example:\n\n```\n[zimmerma@coing sage]$ sage -t matrix/matrix_space.py\nsage -t  \"devel/sage-7773/sage/matrix/matrix_space.py\"      \n**********************************************************************\nFile \"/usr/local/sage-4.3.3/sage/devel/sage-7773/sage/matrix/matrix_space.py\", line 1222:\n    sage: Mat(GF(9,'a'),3,sparse=True).random_element()\nExpected:\n    [    2*a       a       1]\n    [      2       1 2*a + 1]\n    [      a       2       2]\nGot:\n    [  a + 2 2*a + 1       a]\n    [2*a + 2     2*a       0]\n    [      0     2*a       0]\n```\nI'm not sure we can doctest the result of the `random_element` method.\nIn other words, is it normal that some tests do fail if one changes `zech_log_bound`?\nShould I open a separate ticket for this?",
     "created_at": "2010-03-07T19:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -719,7 +699,6 @@ Got:
     [2*a + 2     2*a       0]
     [      0     2*a       0]
 ```
-
 I'm not sure we can doctest the result of the `random_element` method.
 In other words, is it normal that some tests do fail if one changes `zech_log_bound`?
 Should I open a separate ticket for this?
@@ -749,7 +728,7 @@ Changing assignee from @zimmermann6 to GeorgSWeber.
 archive/issue_comments_066903.json:
 ```json
 {
-    "body": "With sage 4.3.5, this problem is still there:\n\n```\nsage -t  groups/generic.py # Killed/crashed\nsage -t  coding/code_constructions.py # Killed/crashed\nsage -t  matrix/matrix_sparse.pyx # Killed/crashed\nsage -t  coding/linear_code.py # Killed/crashed\nsage -t  matrix/matrix_space.py # Killed/crashed\nsage -t  modular/ssmod/ssmod.py # Killed/crashed\nsage -t  modular/modform/ambient.py # Killed/crashed\nsage -t  modular/modsym/space.py # Killed/crashed\nsage -t  modules/free_module.py # Killed/crashed\nsage -t  matrix/matrix2.pyx # Killed/crashed\nsage -t  rings/finite_field_morphism.py # Killed/crashed\nsage -t  rings/finite_field_ntl_gf2e.pyx # Killed/crashed\nsage -t  rings/finite_field_ext_pari.py # Killed/crashed\nsage -t  rings/polynomial/polynomial_quotient_ring_element.py # Killed/crashed\nsage -t  rings/number_field/number_field_rel.py # Killed/crashed\nsage -t  schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # Killed/crashed\nsage -t  rings/number_field/number_field.py # Killed/crashed\nsage -t  schemes/hyperelliptic_curves/hyperelliptic_generic.py # Killed/crashed\nsage -t  tests/benchmark.py # Killed/crashed\nsage -t  schemes/elliptic_curves/ell_point.py # Killed/crashed\nsage -t  modular/modsym/modsym.py # File not found\n```\n",
+    "body": "With sage 4.3.5, this problem is still there:\n\n```\nsage -t  groups/generic.py # Killed/crashed\nsage -t  coding/code_constructions.py # Killed/crashed\nsage -t  matrix/matrix_sparse.pyx # Killed/crashed\nsage -t  coding/linear_code.py # Killed/crashed\nsage -t  matrix/matrix_space.py # Killed/crashed\nsage -t  modular/ssmod/ssmod.py # Killed/crashed\nsage -t  modular/modform/ambient.py # Killed/crashed\nsage -t  modular/modsym/space.py # Killed/crashed\nsage -t  modules/free_module.py # Killed/crashed\nsage -t  matrix/matrix2.pyx # Killed/crashed\nsage -t  rings/finite_field_morphism.py # Killed/crashed\nsage -t  rings/finite_field_ntl_gf2e.pyx # Killed/crashed\nsage -t  rings/finite_field_ext_pari.py # Killed/crashed\nsage -t  rings/polynomial/polynomial_quotient_ring_element.py # Killed/crashed\nsage -t  rings/number_field/number_field_rel.py # Killed/crashed\nsage -t  schemes/hyperelliptic_curves/hyperelliptic_finite_field.py # Killed/crashed\nsage -t  rings/number_field/number_field.py # Killed/crashed\nsage -t  schemes/hyperelliptic_curves/hyperelliptic_generic.py # Killed/crashed\nsage -t  tests/benchmark.py # Killed/crashed\nsage -t  schemes/elliptic_curves/ell_point.py # Killed/crashed\nsage -t  modular/modsym/modsym.py # File not found\n```",
     "created_at": "2010-04-20T11:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -786,7 +765,6 @@ sage -t  modular/modsym/modsym.py # File not found
 
 
 
-
 ---
 
 archive/issue_comments_066904.json:
@@ -812,7 +790,7 @@ Jaap
 archive/issue_comments_066905.json:
 ```json
 {
-    "body": "Jaap,\n\n> All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! \n\ngreat! Did you still have those failures with 4.4? This shows that the culprit is Sage and not\nFedora 12, and it would be good to investigate which package is the culprit. What were the main\npackage upgrades in 4.4.1?\n\nPaul",
+    "body": "Jaap,\n\n> All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! \n\n\ngreat! Did you still have those failures with 4.4? This shows that the culprit is Sage and not\nFedora 12, and it would be good to investigate which package is the culprit. What were the main\npackage upgrades in 4.4.1?\n\nPaul",
     "created_at": "2010-05-02T09:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -824,6 +802,7 @@ archive/issue_comments_066905.json:
 Jaap,
 
 > All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! 
+
 
 great! Did you still have those failures with 4.4? This shows that the culprit is Sage and not
 Fedora 12, and it would be good to investigate which package is the culprit. What were the main
@@ -838,7 +817,7 @@ Paul
 archive/issue_comments_066906.json:
 ```json
 {
-    "body": "Replying to [comment:18 zimmerma]:\n> Jaap,\n> \n> > All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! \n> \n> great! Did you still have those failures with 4.4? This shows that the culprit is Sage and not\n> Fedora 12, and it would be good to investigate which package is the culprit. What were the main\n> package upgrades in 4.4.1?\n> \n\nThe failures were still there in sage-4.4.1.alpha0. I'll try alpha1.\n\nsage-4.4.1.alpha2 failed to build.\n\nJaap\n\n\n> Paul",
+    "body": "Replying to [comment:18 zimmerma]:\n> Jaap,\n> \n> > All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! \n\n> \n> great! Did you still have those failures with 4.4? This shows that the culprit is Sage and not\n> Fedora 12, and it would be good to investigate which package is the culprit. What were the main\n> package upgrades in 4.4.1?\n> \n\n\nThe failures were still there in sage-4.4.1.alpha0. I'll try alpha1.\n\nsage-4.4.1.alpha2 failed to build.\n\nJaap\n\n\n> Paul",
     "created_at": "2010-05-02T12:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -851,11 +830,13 @@ Replying to [comment:18 zimmerma]:
 > Jaap,
 > 
 > > All this doctest failures went away for me with the release of sage-4.4.1.alpha3!!!! 
+
 > 
 > great! Did you still have those failures with 4.4? This shows that the culprit is Sage and not
 > Fedora 12, and it would be good to investigate which package is the culprit. What were the main
 > package upgrades in 4.4.1?
 > 
+
 
 The failures were still there in sage-4.4.1.alpha0. I'll try alpha1.
 
@@ -897,7 +878,7 @@ Jaap
 archive/issue_comments_066908.json:
 ```json
 {
-    "body": "Jaap,\n\n> sage-4.4.1.alpha1 was a mess on Fedora 12. \n> In sage-4.4.1.rc0 all test passed. \n\nthus the problem disappeared between both. Can you guess from the Changelog which package might\nbe the culprit? I would guess it is a basic package like Pari/GP.\n\nPaul",
+    "body": "Jaap,\n\n> sage-4.4.1.alpha1 was a mess on Fedora 12. \n> In sage-4.4.1.rc0 all test passed. \n\n\nthus the problem disappeared between both. Can you guess from the Changelog which package might\nbe the culprit? I would guess it is a basic package like Pari/GP.\n\nPaul",
     "created_at": "2010-05-02T15:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
@@ -910,6 +891,7 @@ Jaap,
 
 > sage-4.4.1.alpha1 was a mess on Fedora 12. 
 > In sage-4.4.1.rc0 all test passed. 
+
 
 thus the problem disappeared between both. Can you guess from the Changelog which package might
 be the culprit? I would guess it is a basic package like Pari/GP.

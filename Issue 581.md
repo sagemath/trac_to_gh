@@ -70,7 +70,7 @@ The diff itself can be downloaded from http://linalg.org/projects/linalg/changes
 archive/issue_comments_002994.json:
 ```json
 {
-    "body": "By the way: The fix for #498 never made it into 2.8.3:\n\n```\nsage: M=Matrix(Integers(),20,20,L)\nsage: M.det()\nERROR in reconstruction ?\n\n0\nsage: M.rank()\n20\nsage:\n```\n\nWilliam, do you have a clue what happened to the fixed spkg? I certainly send you a link. The SPKG.txt also doesn't contain my change log entry.\n\nCheers,\n\nMichael",
+    "body": "By the way: The fix for #498 never made it into 2.8.3:\n\n```\nsage: M=Matrix(Integers(),20,20,L)\nsage: M.det()\nERROR in reconstruction ?\n\n0\nsage: M.rank()\n20\nsage:\n```\nWilliam, do you have a clue what happened to the fixed spkg? I certainly send you a link. The SPKG.txt also doesn't contain my change log entry.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-03T19:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ sage: M.rank()
 20
 sage:
 ```
-
 William, do you have a clue what happened to the fixed spkg? I certainly send you a link. The SPKG.txt also doesn't contain my change log entry.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_009634.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman jpflori @rwst\n\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\n\nFrom kcrisman:\nIs this a bug?  I would say yes, because\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\n\nworks, but maybe we want to have it be a specific integer if the top\nnumber is given?  Any input?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman jpflori @rwst\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\nFrom kcrisman:\nIs this a bug?  I would say yes, because\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\nworks, but maybe we want to have it be a specific integer if the top\nnumber is given?  Any input?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
     "created_at": "2010-07-29T07:29:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 CC:  @kcrisman jpflori @rwst
 
-
 ```
 sage: var('k')
 k 
@@ -31,7 +30,6 @@ sage: binomial(3,k)
 TypeError: Either m or x-m must be an integer 
 ```
 
-
 From kcrisman:
 Is this a bug?  I would say yes, because
 
@@ -39,7 +37,6 @@ Is this a bug?  I would say yes, because
 sage: binomial(x,k)
 binomial(x, k)
 ```
-
 works, but maybe we want to have it be a specific integer if the top
 number is given?  Any input?
 
@@ -165,7 +162,7 @@ archive/issue_events_024020.json:
 archive/issue_comments_093216.json:
 ```json
 {
-    "body": "Replying to [comment:2 burcin]:\n> attachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n> \n\nGood catch; I was pretty sure we had rewritten that at some point, but I have trouble following the imports.\n\n> This still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. \n\n> We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.\nIs that part of this ticket?  Are you saying that the numerical approximation has slowed down dramatically from the `rings.arith` version?",
+    "body": "Replying to [comment:2 burcin]:\n> attachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n> \n\n\nGood catch; I was pretty sure we had rewritten that at some point, but I have trouble following the imports.\n\n> This still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. \n\n\n> We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.\n\nIs that part of this ticket?  Are you saying that the numerical approximation has slowed down dramatically from the `rings.arith` version?",
     "created_at": "2011-04-25T15:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -178,11 +175,14 @@ Replying to [comment:2 burcin]:
 > attachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.
 > 
 
+
 Good catch; I was pretty sure we had rewritten that at some point, but I have trouble following the imports.
 
 > This still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. 
 
+
 > We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.
+
 Is that part of this ticket?  Are you saying that the numerical approximation has slowed down dramatically from the `rings.arith` version?
 
 
@@ -356,7 +356,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_093222.json:
 ```json
 {
-    "body": "The patch2 does not apply cleanly, with two hunks failing, which I fixed manually, and push it to git. However:\n\n```\nsage -t src/sage/functions/other.py  # 18 doctests failed\nsage -t src/sage/combinat/partition.py  # 2 doctests failed\nsage -t src/sage/rings/arith.py  # 1 doctest failed\nsage -t src/sage/symbolic/expression.pyx  # 2 doctests failed\n```\n\n----\nNew commits:",
+    "body": "The patch2 does not apply cleanly, with two hunks failing, which I fixed manually, and push it to git. However:\n\n```\nsage -t src/sage/functions/other.py  # 18 doctests failed\nsage -t src/sage/combinat/partition.py  # 2 doctests failed\nsage -t src/sage/rings/arith.py  # 1 doctest failed\nsage -t src/sage/symbolic/expression.pyx  # 2 doctests failed\n```\n\n---\nNew commits:",
     "created_at": "2014-02-14T15:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -374,7 +374,7 @@ sage -t src/sage/rings/arith.py  # 1 doctest failed
 sage -t src/sage/symbolic/expression.pyx  # 2 doctests failed
 ```
 
-----
+---
 New commits:
 
 
@@ -510,7 +510,7 @@ OK I retested after merge, though only combinat. The number in that commit messa
 archive/issue_comments_093230.json:
 ```json
 {
-    "body": "The branch loses the \"Polynomial\" global which causes a number of doctest falures\n\n```\nsage -t --long src/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"src/sage/rings/polynomial/polynomial_element.pyx\", line 2592, in sage.rings.polynomial.polynomial_element.Polynomial.denominator\nFailed example:\n    isinstance(x.numerator() / x.denominator(), Polynomial)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/buildbot/sage/redhawk-1/sage_git/build/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 480, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/scratch/buildbot/sage/redhawk-1/sage_git/build/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 839, in execute\n        exec compiled in globs\n      File \"<doctest sage.rings.polynomial.polynomial_element.Polynomial.denominator[13]>\", line 1, in <module>\n        isinstance(x.numerator() / x.denominator(), Polynomial)\n    NameError: name 'Polynomial' is not defined\n```\n",
+    "body": "The branch loses the \"Polynomial\" global which causes a number of doctest falures\n\n```\nsage -t --long src/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"src/sage/rings/polynomial/polynomial_element.pyx\", line 2592, in sage.rings.polynomial.polynomial_element.Polynomial.denominator\nFailed example:\n    isinstance(x.numerator() / x.denominator(), Polynomial)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/buildbot/sage/redhawk-1/sage_git/build/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 480, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/scratch/buildbot/sage/redhawk-1/sage_git/build/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 839, in execute\n        exec compiled in globs\n      File \"<doctest sage.rings.polynomial.polynomial_element.Polynomial.denominator[13]>\", line 1, in <module>\n        isinstance(x.numerator() / x.denominator(), Polynomial)\n    NameError: name 'Polynomial' is not defined\n```",
     "created_at": "2014-02-21T14:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -537,7 +537,6 @@ Exception raised:
         isinstance(x.numerator() / x.denominator(), Polynomial)
     NameError: name 'Polynomial' is not defined
 ```
-
 
 
 
@@ -586,7 +585,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_093233.json:
 ```json
 {
-    "body": "Replying to [comment:17 rws]:\n> Evidently he should have submitted the import cleanup separately.\nIndeed.",
+    "body": "Replying to [comment:17 rws]:\n> Evidently he should have submitted the import cleanup separately.\n\nIndeed.",
     "created_at": "2014-02-21T17:58:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
@@ -597,6 +596,7 @@ archive/issue_comments_093233.json:
 
 Replying to [comment:17 rws]:
 > Evidently he should have submitted the import cleanup separately.
+
 Indeed.
 
 

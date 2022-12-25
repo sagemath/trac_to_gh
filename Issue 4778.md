@@ -53,7 +53,7 @@ Changing component from optional packages to interfaces.
 archive/issue_comments_036137.json:
 ```json
 {
-    "body": "Installed scilab-5.0.3 with ./configure --without-javasci --without-gui\n\nHad to install matio\n\n\n\n```\n[jaap@paix scilab-5.0.3]$ bin/scilab -nogui\nWarning: Localization issue: Error while binding the domain from /home/jaap/downloads/scilab-5.0.3/../locale/ or /home/jaap/downloads/scilab-5.0.3/locale/: Switch to the default language (English).\n        ___________________________________________        \n                       scilab-5.0.3\n\n                 Consortium Scilab (DIGITEO)\n               Copyright (c) 1989-2008 (INRIA)\n               Copyright (c) 1989-2007 (ENPC)\n        ___________________________________________        \n \n \nStartup execution:\n  loading initial environment\n \n-->\n\n```\n\n\nRunning ./sage -t -optional -verbose devel/sage/sage/interfaces/scilab.py\n\n1 failure:\n\n\n```\nTrying:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpecting:\n       1.000D+10\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2.alpha2/devel/sage/sage/interfaces/scilab.py\", line 106, in __main__.example_0\nFailed example:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpected:\n       1.000D+10\nGot:\n    <BLANKLINE>\n    <BLANKLINE>\n        1.000E+10\n\n```\n\n\nSee: [http://sage.math.washington.edu/home/jsp/tests/scilabtest.log](http://sage.math.washington.edu/home/jsp/tests/scilabtest.log)\n\nNo failures in matrix1.pyx\n\nSo no positive review yet.\n\nJaap",
+    "body": "Installed scilab-5.0.3 with ./configure --without-javasci --without-gui\n\nHad to install matio\n\n\n```\n[jaap@paix scilab-5.0.3]$ bin/scilab -nogui\nWarning: Localization issue: Error while binding the domain from /home/jaap/downloads/scilab-5.0.3/../locale/ or /home/jaap/downloads/scilab-5.0.3/locale/: Switch to the default language (English).\n        ___________________________________________        \n                       scilab-5.0.3\n\n                 Consortium Scilab (DIGITEO)\n               Copyright (c) 1989-2008 (INRIA)\n               Copyright (c) 1989-2007 (ENPC)\n        ___________________________________________        \n \n \nStartup execution:\n  loading initial environment\n \n-->\n\n```\n\nRunning ./sage -t -optional -verbose devel/sage/sage/interfaces/scilab.py\n\n1 failure:\n\n```\nTrying:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpecting:\n       1.000D+10\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2.alpha2/devel/sage/sage/interfaces/scilab.py\", line 106, in __main__.example_0\nFailed example:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpected:\n       1.000D+10\nGot:\n    <BLANKLINE>\n    <BLANKLINE>\n        1.000E+10\n\n```\n\nSee: [http://sage.math.washington.edu/home/jsp/tests/scilabtest.log](http://sage.math.washington.edu/home/jsp/tests/scilabtest.log)\n\nNo failures in matrix1.pyx\n\nSo no positive review yet.\n\nJaap",
     "created_at": "2008-12-15T15:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ archive/issue_comments_036137.json:
 Installed scilab-5.0.3 with ./configure --without-javasci --without-gui
 
 Had to install matio
-
 
 
 ```
@@ -87,11 +86,9 @@ Startup execution:
 
 ```
 
-
 Running ./sage -t -optional -verbose devel/sage/sage/interfaces/scilab.py
 
 1 failure:
-
 
 ```
 Trying:
@@ -110,7 +107,6 @@ Got:
         1.000E+10
 
 ```
-
 
 See: [http://sage.math.washington.edu/home/jsp/tests/scilabtest.log](http://sage.math.washington.edu/home/jsp/tests/scilabtest.log)
 
@@ -169,7 +165,7 @@ Jaap
 archive/issue_comments_036140.json:
 ```json
 {
-    "body": "Replying to [comment:3 jsp]:\n> Substitute:\n> \n> s/1.000D/1.000E/\n> \n> and most people will be happy :-)! For instance you with a positive review.\n> \n> Jaap\n> \n\n[jaap`@`paix sage-3.2.2.alpha2]$ ./sage -t -optional devel/sage/sage/interfaces/scilab.py \nsage -t -optional \"devel/sage/sage/interfaces/scilab.py\"    \n\t [9.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.9 seconds",
+    "body": "Replying to [comment:3 jsp]:\n> Substitute:\n> \n> s/1.000D/1.000E/\n> \n> and most people will be happy :-)! For instance you with a positive review.\n> \n> Jaap\n> \n\n\n[jaap`@`paix sage-3.2.2.alpha2]$ ./sage -t -optional devel/sage/sage/interfaces/scilab.py \nsage -t -optional \"devel/sage/sage/interfaces/scilab.py\"    \n\t [9.9 s]\n \n---\nAll tests passed!\nTotal time for all tests: 9.9 seconds",
     "created_at": "2008-12-15T23:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -188,11 +184,12 @@ Replying to [comment:3 jsp]:
 > Jaap
 > 
 
+
 [jaap`@`paix sage-3.2.2.alpha2]$ ./sage -t -optional devel/sage/sage/interfaces/scilab.py 
 sage -t -optional "devel/sage/sage/interfaces/scilab.py"    
 	 [9.9 s]
  
-----------------------------------------------------------------------
+---
 All tests passed!
 Total time for all tests: 9.9 seconds
 
@@ -221,7 +218,7 @@ patch file, with preliminary E notation fix for doctest
 archive/issue_comments_036142.json:
 ```json
 {
-    "body": "Attachment [trac_11129_Scilab-interface.patch](tarball://root/attachments/some-uuid/ticket4778/trac_11129_Scilab-interface.patch) by @jaapspies created at 2008-12-16 00:40:57\n\nLooks good to me:\n\n\n\n```\n137 tests in 24 items.\n137 passed and 0 failed.\nTest passed.\n\t [8.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.0 seconds\n\n```\n",
+    "body": "Attachment [trac_11129_Scilab-interface.patch](tarball://root/attachments/some-uuid/ticket4778/trac_11129_Scilab-interface.patch) by @jaapspies created at 2008-12-16 00:40:57\n\nLooks good to me:\n\n\n```\n137 tests in 24 items.\n137 passed and 0 failed.\nTest passed.\n\t [8.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.0 seconds\n\n```",
     "created_at": "2008-12-16T00:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -235,7 +232,6 @@ Attachment [trac_11129_Scilab-interface.patch](tarball://root/attachments/some-u
 Looks good to me:
 
 
-
 ```
 137 tests in 24 items.
 137 passed and 0 failed.
@@ -247,7 +243,6 @@ All tests passed!
 Total time for all tests: 8.0 seconds
 
 ```
-
 
 
 
@@ -297,7 +292,7 @@ Michael
 archive/issue_comments_036144.json:
 ```json
 {
-    "body": "This patch needs two simple one line fixes to make more doctests optional:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/scilab.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 269:\n    sage: scilab.eval(\"5\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        scilab.eval(\"5\")###line 269:\n    sage: scilab.eval(\"5\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 271:\n    sage: scilab.eval(\"d=44\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        scilab.eval(\"d=44\")###line 271:\n    sage: scilab.eval(\"d=44\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.rc1/tmp/.doctest_scilab.py\n\t [2.3 s]\nexit code: 1024\n```\n\n\nReviewer patch coming up.\n\nCheers,\n\nMichael",
+    "body": "This patch needs two simple one line fixes to make more doctests optional:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/scilab.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 269:\n    sage: scilab.eval(\"5\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        scilab.eval(\"5\")###line 269:\n    sage: scilab.eval(\"5\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 271:\n    sage: scilab.eval(\"d=44\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        scilab.eval(\"d=44\")###line 271:\n    sage: scilab.eval(\"d=44\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.rc1/tmp/.doctest_scilab.py\n\t [2.3 s]\nexit code: 1024\n```\n\nReviewer patch coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-17T15:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -369,7 +364,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.r
 exit code: 1024
 ```
 
-
 Reviewer patch coming up.
 
 Cheers,
@@ -383,7 +377,7 @@ Michael
 archive/issue_comments_036145.json:
 ```json
 {
-    "body": "By the way:\n\n```\n        EXAMPLES:\n            sage: scilab.eval(\"5\")                      # optional - scilab\n            'ans  =\\n \\n    5.'\n            sage: scilab.eval(\"d=44\")                   # optional - scilab\n            'd  =\\n \\n    44.'\n```\n\nThis is plain ugly and needs to be fixed, i.e. stripping out the newlines and spaces.\n\nCheers,\n\nMichael",
+    "body": "By the way:\n\n```\n        EXAMPLES:\n            sage: scilab.eval(\"5\")                      # optional - scilab\n            'ans  =\\n \\n    5.'\n            sage: scilab.eval(\"d=44\")                   # optional - scilab\n            'd  =\\n \\n    44.'\n```\nThis is plain ugly and needs to be fixed, i.e. stripping out the newlines and spaces.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-17T15:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4778",
     "type": "issue_comment",
@@ -401,7 +395,6 @@ By the way:
             sage: scilab.eval("d=44")                   # optional - scilab
             'd  =\n \n    44.'
 ```
-
 This is plain ugly and needs to be fixed, i.e. stripping out the newlines and spaces.
 
 Cheers,

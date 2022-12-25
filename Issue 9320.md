@@ -280,7 +280,7 @@ this one just needs a little more doc (three functions need doctests)
 archive/issue_comments_087697.json:
 ```json
 {
-    "body": "Here is a git branch\n----\nNew commits:",
+    "body": "Here is a git branch\n\n---\nNew commits:",
     "created_at": "2014-03-15T09:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -290,7 +290,8 @@ archive/issue_comments_087697.json:
 ```
 
 Here is a git branch
-----
+
+---
 New commits:
 
 
@@ -336,7 +337,7 @@ It would be good if some expert of elliptic curve could provide correct doctests
 archive/issue_comments_087700.json:
 ```json
 {
-    "body": "I suggest that a good source of examples would be elliptic curves over number fields where we know the associated modular form, since the root number at a bad prime should match the Atkin-Lehner eigenvalue.  (The alternative would be to compue a whole lot of examples with Magma, but that would make me uncomfortable;  nevertheless we should of course check that our results are compatible with Magma.)\n\nThere is no issue when the primes have multiplicative reduction, since then the root number is very easy being minus E.ap, i.e. depends only on whether the number of points on the reduction is p+1 or p-1 (of course \"p\" means Norm(p) in the number field case).  It's the case of additive reduction at primes dividing 2 or 3 which are harder.\n\nHere is one taken from my thesis (see http://www.numdam.org/numdam-bin/search?h=nc&id=CM_1984__51_3_275_0&format=complete):\n\n```\nK.<i>=QuadraticField(-1)\nE=EllipticCurve([1+i, 1+i, 0,i,0])\nP2=K.ideal(i+i)\nE.root_number(P2)\n-1\n```\n\nwhich I checked with Magma.  The conductor here is `P2^2 * P41`.\n\nIs this what you want?  How many examples do you need?\n\n\nTables of elliptic curves over number fields do exist, and were in fact one of the topics of last week's Curves and Automorphic Forms workshop in Arizona.",
+    "body": "I suggest that a good source of examples would be elliptic curves over number fields where we know the associated modular form, since the root number at a bad prime should match the Atkin-Lehner eigenvalue.  (The alternative would be to compue a whole lot of examples with Magma, but that would make me uncomfortable;  nevertheless we should of course check that our results are compatible with Magma.)\n\nThere is no issue when the primes have multiplicative reduction, since then the root number is very easy being minus E.ap, i.e. depends only on whether the number of points on the reduction is p+1 or p-1 (of course \"p\" means Norm(p) in the number field case).  It's the case of additive reduction at primes dividing 2 or 3 which are harder.\n\nHere is one taken from my thesis (see http://www.numdam.org/numdam-bin/search?h=nc&id=CM_1984__51_3_275_0&format=complete):\n\n```\nK.<i>=QuadraticField(-1)\nE=EllipticCurve([1+i, 1+i, 0,i,0])\nP2=K.ideal(i+i)\nE.root_number(P2)\n-1\n```\nwhich I checked with Magma.  The conductor here is `P2^2 * P41`.\n\nIs this what you want?  How many examples do you need?\n\n\nTables of elliptic curves over number fields do exist, and were in fact one of the topics of last week's Curves and Automorphic Forms workshop in Arizona.",
     "created_at": "2014-03-18T09:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -358,7 +359,6 @@ P2=K.ideal(i+i)
 E.root_number(P2)
 -1
 ```
-
 which I checked with Magma.  The conductor here is `P2^2 * P41`.
 
 Is this what you want?  How many examples do you need?
@@ -393,7 +393,7 @@ Do you really mean `K.ideal(i+i)` ?
 archive/issue_comments_087702.json:
 ```json
 {
-    "body": "Replying to [comment:14 chapoton]:\n> One example would be enough, I think if it is bad at both 2 and 3. Maybe one can just use the one above as \"indirect doctest\" ?\n> \nI'll find another example at 3.  I don't know the code but I expect that it also depends on factors such as the ramification degree of the prime, so I'll give an example over Q(sqrt-3) with additive reduction at 3.  Wait for it...\n\n> Do you really mean `K.ideal(i+i)` ?\nYes",
+    "body": "Replying to [comment:14 chapoton]:\n> One example would be enough, I think if it is bad at both 2 and 3. Maybe one can just use the one above as \"indirect doctest\" ?\n> \n\nI'll find another example at 3.  I don't know the code but I expect that it also depends on factors such as the ramification degree of the prime, so I'll give an example over Q(sqrt-3) with additive reduction at 3.  Wait for it...\n\n> Do you really mean `K.ideal(i+i)` ?\n\nYes",
     "created_at": "2014-03-18T13:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -405,9 +405,11 @@ archive/issue_comments_087702.json:
 Replying to [comment:14 chapoton]:
 > One example would be enough, I think if it is bad at both 2 and 3. Maybe one can just use the one above as "indirect doctest" ?
 > 
+
 I'll find another example at 3.  I don't know the code but I expect that it also depends on factors such as the ramification degree of the prime, so I'll give an example over Q(sqrt-3) with additive reduction at 3.  Wait for it...
 
 > Do you really mean `K.ideal(i+i)` ?
+
 Yes
 
 
@@ -417,7 +419,7 @@ Yes
 archive/issue_comments_087703.json:
 ```json
 {
-    "body": "An example which is additive at 3:\n\n```\nsage: K.<r> = NumberField(x^2-x+1)\nsage: E = EllipticCurve([r-1,r,1,r-1,-1])\nsage: P3 = K.ideal(2*r-1)\nsage: assert P3.is_prime() and P3.norm()==3\nsage: assert E.has_additive_reduction(P3)\nsage: assert P.root_number(P3)==1 ## not implemented\n```\n\nHere the value is taken from page 115 of my thesis, and agrees with Magma's value.\n\nFor additional testing we could put in an 'algorithm' parameter which could be 'magma' and then (of course) only work when Magma is installed, so you could have optional doctests conditional on Magma of the form\n\n```\nassert E.root_number(P) == E.root_number(P, algorithm='magma')\n```\n",
+    "body": "An example which is additive at 3:\n\n```\nsage: K.<r> = NumberField(x^2-x+1)\nsage: E = EllipticCurve([r-1,r,1,r-1,-1])\nsage: P3 = K.ideal(2*r-1)\nsage: assert P3.is_prime() and P3.norm()==3\nsage: assert E.has_additive_reduction(P3)\nsage: assert P.root_number(P3)==1 ## not implemented\n```\nHere the value is taken from page 115 of my thesis, and agrees with Magma's value.\n\nFor additional testing we could put in an 'algorithm' parameter which could be 'magma' and then (of course) only work when Magma is installed, so you could have optional doctests conditional on Magma of the form\n\n```\nassert E.root_number(P) == E.root_number(P, algorithm='magma')\n```",
     "created_at": "2014-03-18T13:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -436,7 +438,6 @@ sage: assert P3.is_prime() and P3.norm()==3
 sage: assert E.has_additive_reduction(P3)
 sage: assert P.root_number(P3)==1 ## not implemented
 ```
-
 Here the value is taken from page 115 of my thesis, and agrees with Magma's value.
 
 For additional testing we could put in an 'algorithm' parameter which could be 'magma' and then (of course) only work when Magma is installed, so you could have optional doctests conditional on Magma of the form
@@ -444,7 +445,6 @@ For additional testing we could put in an 'algorithm' parameter which could be '
 ```
 assert E.root_number(P) == E.root_number(P, algorithm='magma')
 ```
-
 
 
 
@@ -511,7 +511,7 @@ Not being in my field of expertise, I will now leave this ticket in more able ha
 archive/issue_comments_087707.json:
 ```json
 {
-    "body": "I had a quick look at this and there are indeed major issues with the local root number at places above 2 when the reduction is additive, potentially good. That is in the function `_root_number_local_2` in `ell_number_field.py`.\n\nWith the current commit above we get an error for\n\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: E = EllipticCurve([1+i, 1+i, 0, i, 0])\nsage: P2 = K.ideal(1+i)\nsage: E.root_number(P2)\n```\n\n\nbecause line 1966 tries to create and extension with a reducible polynomial `K2 = K.extension(t**2+E.a2()*t+E.a4(), 'a2')`. I guess - but it would take me some time to read the sources - that K2 should just be K in this case.\n\nHowever there are other issues. For instance\n  \n\n```\nsage: E = EllipticCurve([1+i,0,0,0,i])\nsage: E._root_number_local_2(P2)\n```\n\n\ngoes \"bang\".\n\nI would think the code without the very bad case at places above 2 is ok and that could already go in. So I see two possible futures for this ticket:\n\n1. Someone fixes these issues above 2 or\n\n2. We raise an `NotImplementedError` if the reduction is additive and potentially good at a place above 2 and open a new ticket for fixing the problem.\n\nI can help with 2), but I won't have time to do 1). But maybe there is someone out there who would.",
+    "body": "I had a quick look at this and there are indeed major issues with the local root number at places above 2 when the reduction is additive, potentially good. That is in the function `_root_number_local_2` in `ell_number_field.py`.\n\nWith the current commit above we get an error for\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: E = EllipticCurve([1+i, 1+i, 0, i, 0])\nsage: P2 = K.ideal(1+i)\nsage: E.root_number(P2)\n```\n\nbecause line 1966 tries to create and extension with a reducible polynomial `K2 = K.extension(t**2+E.a2()*t+E.a4(), 'a2')`. I guess - but it would take me some time to read the sources - that K2 should just be K in this case.\n\nHowever there are other issues. For instance\n  \n```\nsage: E = EllipticCurve([1+i,0,0,0,i])\nsage: E._root_number_local_2(P2)\n```\n\ngoes \"bang\".\n\nI would think the code without the very bad case at places above 2 is ok and that could already go in. So I see two possible futures for this ticket:\n\n1. Someone fixes these issues above 2 or\n\n2. We raise an `NotImplementedError` if the reduction is additive and potentially good at a place above 2 and open a new ticket for fixing the problem.\n\nI can help with 2), but I won't have time to do 1). But maybe there is someone out there who would.",
     "created_at": "2014-03-31T13:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -524,7 +524,6 @@ I had a quick look at this and there are indeed major issues with the local root
 
 With the current commit above we get an error for
 
-
 ```
 sage: K.<i> = QuadraticField(-1)
 sage: E = EllipticCurve([1+i, 1+i, 0, i, 0])
@@ -532,17 +531,14 @@ sage: P2 = K.ideal(1+i)
 sage: E.root_number(P2)
 ```
 
-
 because line 1966 tries to create and extension with a reducible polynomial `K2 = K.extension(t**2+E.a2()*t+E.a4(), 'a2')`. I guess - but it would take me some time to read the sources - that K2 should just be K in this case.
 
 However there are other issues. For instance
   
-
 ```
 sage: E = EllipticCurve([1+i,0,0,0,i])
 sage: E._root_number_local_2(P2)
 ```
-
 
 goes "bang".
 
@@ -926,7 +922,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_087728.json:
 ```json
 {
-    "body": "Merged with 8.6.beta1\n----\nNew commits:",
+    "body": "Merged with 8.6.beta1\n\n---\nNew commits:",
     "created_at": "2019-01-05T09:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
@@ -936,7 +932,8 @@ archive/issue_comments_087728.json:
 ```
 
 Merged with 8.6.beta1
-----
+
+---
 New commits:
 
 

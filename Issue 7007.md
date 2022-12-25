@@ -3,7 +3,7 @@
 archive/issues_007007.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n[20:22] <jason-> here's something funny:\n[20:22] <jason-> sage: QQ['t'].gen()\n[20:22] <jason-> t\n[20:22] <jason-> sage: RR['t'].gen()\n[20:22] <jason-> 1.00000000000000*t\n[20:23] <jason-> what's the extra 1.0000000 in there for?\n[20:24] <jason-> that means that I get a very funny variables() function:\n[20:24] <jason-> sage: R.<t>=RR[]\n[20:24] <jason-> sage: (t^2).variables()\n[20:24] <jason-> (1.00000000000000*t,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7007\n\n",
+    "body": "Assignee: tbd\n\n```\n[20:22] <jason-> here's something funny:\n[20:22] <jason-> sage: QQ['t'].gen()\n[20:22] <jason-> t\n[20:22] <jason-> sage: RR['t'].gen()\n[20:22] <jason-> 1.00000000000000*t\n[20:23] <jason-> what's the extra 1.0000000 in there for?\n[20:24] <jason-> that means that I get a very funny variables() function:\n[20:24] <jason-> sage: R.<t>=RR[]\n[20:24] <jason-> sage: (t^2).variables()\n[20:24] <jason-> (1.00000000000000*t,)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7007\n\n",
     "created_at": "2009-09-25T01:29:49Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_007007.json:
 ```
 Assignee: tbd
 
-
 ```
 [20:22] <jason-> here's something funny:
 [20:22] <jason-> sage: QQ['t'].gen()
@@ -32,7 +31,6 @@ Assignee: tbd
 [20:24] <jason-> (1.00000000000000*t,)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7007
 
 
@@ -44,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7007
 archive/issue_comments_057836.json:
 ```json
 {
-    "body": "Same problem: \n\n```\nsage: RDF['t'].gen(0)\n1.0*t\n```\n",
+    "body": "Same problem: \n\n```\nsage: RDF['t'].gen(0)\n1.0*t\n```",
     "created_at": "2009-09-25T01:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
@@ -59,7 +57,6 @@ Same problem:
 sage: RDF['t'].gen(0)
 1.0*t
 ```
-
 
 
 
@@ -86,7 +83,7 @@ This is nice, but it's a little troubling that it returns things looking "exact"
 archive/issue_comments_057838.json:
 ```json
 {
-    "body": "Maybe the more natural fix to this is to change symbolic/expression_conversions.py in PolynomialConverter.__init__ , where instead of checking repr(v) one would check ring.base_ring()(1)*v, I think.  For this to work, there needs to be consistency in the representations of these, of course.\n\nHowever, as it turns out, somebody (Pynac?) simplifies like this patch does already, but for the symbolic ring, though only for the case with Ring(1), not Ring(2) or others.\n\n```\nsage: RR(1)*x\nx\nsage: RR(2)*x\n2.000..000*x\n```\n\nReverting that to at least printing 1.0 (and cutting off the extra zeros, which happens for RDF) seems to be the best strategy.  Then one could change PolynomialConverter.  But I don't know how to fix Pynac representations of this kind.\n\nIncidentally, note that #5755 probably will be fixed by this ticket, one way or another (the current patch fixes it, though as noted above not in a manner to my liking).",
+    "body": "Maybe the more natural fix to this is to change symbolic/expression_conversions.py in PolynomialConverter.__init__ , where instead of checking repr(v) one would check ring.base_ring()(1)*v, I think.  For this to work, there needs to be consistency in the representations of these, of course.\n\nHowever, as it turns out, somebody (Pynac?) simplifies like this patch does already, but for the symbolic ring, though only for the case with Ring(1), not Ring(2) or others.\n\n```\nsage: RR(1)*x\nx\nsage: RR(2)*x\n2.000..000*x\n```\nReverting that to at least printing 1.0 (and cutting off the extra zeros, which happens for RDF) seems to be the best strategy.  Then one could change PolynomialConverter.  But I don't know how to fix Pynac representations of this kind.\n\nIncidentally, note that #5755 probably will be fixed by this ticket, one way or another (the current patch fixes it, though as noted above not in a manner to my liking).",
     "created_at": "2009-09-29T18:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7007",
     "type": "issue_comment",
@@ -105,7 +102,6 @@ x
 sage: RR(2)*x
 2.000..000*x
 ```
-
 Reverting that to at least printing 1.0 (and cutting off the extra zeros, which happens for RDF) seems to be the best strategy.  Then one could change PolynomialConverter.  But I don't know how to fix Pynac representations of this kind.
 
 Incidentally, note that #5755 probably will be fixed by this ticket, one way or another (the current patch fixes it, though as noted above not in a manner to my liking).

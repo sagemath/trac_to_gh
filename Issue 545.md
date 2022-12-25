@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/545
 archive/issue_comments_002746.json:
 ```json
 {
-    "body": "To do:\n\n1. log.statement(...) could return a \"LogicalStatement\" object, which has a nice print  method -- __repr__(self) --, and a _latex_ method.  \n\n```\n   class LogicalStatement:\n      def __init__(self, ...)\n          ...\n```\n\nThen this might work:\n\n```\n    sage: s = log.statement(\"a&b|!(c|a)\")\n    sage: s\n    a&b|!(c|a)\n    sage: s & s\n    a&b|!(c|a)&a&b|!(c|a)\n    sage: s.truthtable()\n    ...\n    sage: show(s.truthtable())    # calls _latex\n    nice typeset version\n```\n\n\n2. Here:\n\n```\n  sage: s = log.statement(\"a&&b\")\n  Malformed Statement\n```\n\n    instead of printing, do \n\n```\n       raise ValueError, \"malformed statement\"\n```\n\n\n\n3. Don't use \"eval\" for a name, since that's a builtin Python.  \n\n4. Shift this over to line up with the r:\n\n```\ndef eval(toks):\n    r\"\"\"\n        This function is for internal use by the class SymbollicLogic.\n        It returns 'True' if the exression contained in toks would\n```\n\n\n5. Every function should have example doctests.  And to test do this:\n\n```\n$ cd SAGE_ROOT/devel/sage/sage/logic\n$ sage -t logic.py    \n```\n\n\n6.  varaibles --> variables\n\n7. Delete the vars stuff from the inputs in the docs here and clarify how they are used elsewhere:\n\n```\n\n        INPUT:\n            self -- the calling object\n            s -- a string containing the logic expression to be manipulated\n            global vars -- a dictionary with the variable names and\n                          their current boolean value\n            global vars_order -- a list of the variable names in\n                                the order they were found\n```\n\n   Also, at the top of the file document that vars and vars_order are used\nto simplify passing information around between various eval* functions.\nOr better just make all the eval functions be methods of the LogicalStatement class, if that makes sense. \n\n8. Possibly clarify what valid variable names are -- in the error message.",
+    "body": "To do:\n\n1. log.statement(...) could return a \"LogicalStatement\" object, which has a nice print  method -- __repr__(self) --, and a _latex_ method.  \n\n```\n   class LogicalStatement:\n      def __init__(self, ...)\n          ...\n```\nThen this might work:\n\n```\n    sage: s = log.statement(\"a&b|!(c|a)\")\n    sage: s\n    a&b|!(c|a)\n    sage: s & s\n    a&b|!(c|a)&a&b|!(c|a)\n    sage: s.truthtable()\n    ...\n    sage: show(s.truthtable())    # calls _latex\n    nice typeset version\n```\n\n2. Here:\n\n```\n  sage: s = log.statement(\"a&&b\")\n  Malformed Statement\n```\n    instead of printing, do \n\n```\n       raise ValueError, \"malformed statement\"\n```\n\n\n3. Don't use \"eval\" for a name, since that's a builtin Python.  \n\n4. Shift this over to line up with the r:\n\n```\ndef eval(toks):\n    r\"\"\"\n        This function is for internal use by the class SymbollicLogic.\n        It returns 'True' if the exression contained in toks would\n```\n\n5. Every function should have example doctests.  And to test do this:\n\n```\n$ cd SAGE_ROOT/devel/sage/sage/logic\n$ sage -t logic.py    \n```\n\n6.  varaibles --> variables\n\n7. Delete the vars stuff from the inputs in the docs here and clarify how they are used elsewhere:\n\n```\n\n        INPUT:\n            self -- the calling object\n            s -- a string containing the logic expression to be manipulated\n            global vars -- a dictionary with the variable names and\n                          their current boolean value\n            global vars_order -- a list of the variable names in\n                                the order they were found\n```\n   Also, at the top of the file document that vars and vars_order are used\nto simplify passing information around between various eval* functions.\nOr better just make all the eval functions be methods of the LogicalStatement class, if that makes sense. \n\n8. Possibly clarify what valid variable names are -- in the error message.",
     "created_at": "2007-08-31T21:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ To do:
       def __init__(self, ...)
           ...
 ```
-
 Then this might work:
 
 ```
@@ -63,20 +62,17 @@ Then this might work:
     nice typeset version
 ```
 
-
 2. Here:
 
 ```
   sage: s = log.statement("a&&b")
   Malformed Statement
 ```
-
     instead of printing, do 
 
 ```
        raise ValueError, "malformed statement"
 ```
-
 
 
 3. Don't use "eval" for a name, since that's a builtin Python.  
@@ -90,14 +86,12 @@ def eval(toks):
         It returns 'True' if the exression contained in toks would
 ```
 
-
 5. Every function should have example doctests.  And to test do this:
 
 ```
 $ cd SAGE_ROOT/devel/sage/sage/logic
 $ sage -t logic.py    
 ```
-
 
 6.  varaibles --> variables
 
@@ -113,7 +107,6 @@ $ sage -t logic.py
             global vars_order -- a list of the variable names in
                                 the order they were found
 ```
-
    Also, at the top of the file document that vars and vars_order are used
 to simplify passing information around between various eval* functions.
 Or better just make all the eval functions be methods of the LogicalStatement class, if that makes sense. 
@@ -249,7 +242,7 @@ single character)
 archive/issue_comments_002752.json:
 ```json
 {
-    "body": "Comment from the author about the new version\n\n```\nHi William,\n\nSorry about the long delay with getting this code to you, I got a little sidetracked with school and all.  But, here it is.  At this point I believe I've fixed all the issues listed in ticket 545 as well as incorporating all of Pablo De Napoli's ideas and implementing cnf conversions and a DIMACS satformat output method.  I'm not sure if you want to post the code on the trac ticket, or in the repository, or elsewhere.  If you could let me know where it goes I can start soliciting advice on the devel group though.\n\nI have some ideas/questions for where the code should go next, but getting this release accepted first is probably at the top of the list.\n\n-Chris Gorecki\n```\n",
+    "body": "Comment from the author about the new version\n\n```\nHi William,\n\nSorry about the long delay with getting this code to you, I got a little sidetracked with school and all.  But, here it is.  At this point I believe I've fixed all the issues listed in ticket 545 as well as incorporating all of Pablo De Napoli's ideas and implementing cnf conversions and a DIMACS satformat output method.  I'm not sure if you want to post the code on the trac ticket, or in the repository, or elsewhere.  If you could let me know where it goes I can start soliciting advice on the devel group though.\n\nI have some ideas/questions for where the code should go next, but getting this release accepted first is probably at the top of the list.\n\n-Chris Gorecki\n```",
     "created_at": "2008-01-23T04:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -272,13 +265,12 @@ I have some ideas/questions for where the code should go next, but getting this 
 
 
 
-
 ---
 
 archive/issue_comments_002753.json:
 ```json
 {
-    "body": "From Pablo De Napoli:\n\n```\nChris: many thanks for sending the new version of your code.\nI think that it is a great work. Actually I see that you have\nimplemented many of\nmy previous suggestions like: using the the builting True/False\nfrom python instead of strings, using a tree to parse propositional\nformulas, avoid using the OPAN/CPAN tokens, etc.) and thank you for adding me\nas an author (eventhough\nI've not actually writen a single line of the code)\n\n I'll review it in more detail and tell you if I see something that can\nbe still improved.\n\nPablo\n```\n",
+    "body": "From Pablo De Napoli:\n\n```\nChris: many thanks for sending the new version of your code.\nI think that it is a great work. Actually I see that you have\nimplemented many of\nmy previous suggestions like: using the the builting True/False\nfrom python instead of strings, using a tree to parse propositional\nformulas, avoid using the OPAN/CPAN tokens, etc.) and thank you for adding me\nas an author (eventhough\nI've not actually writen a single line of the code)\n\n I'll review it in more detail and tell you if I see something that can\nbe still improved.\n\nPablo\n```",
     "created_at": "2008-01-25T17:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -304,7 +296,6 @@ be still improved.
 
 Pablo
 ```
-
 
 
 
@@ -385,7 +376,7 @@ I *think* I managed to turn the bundle into a patch against sage-3.0.alpha4.  I 
 archive/issue_comments_002756.json:
 ```json
 {
-    "body": "While browsing the code I noticed lots of stuff that seemed overly verbose (and inefficient), e.g. \n\n\n```\n        124     def eval_ifthen_op(lval, rval): \n \t125\t    r\"\"\" \n \t126\t    This function returns the logical 'ifthen' operator applied to lval and rval. \n \t127\t \n \t128\t    INPUT: \n \t129\t        lval -- boolean value to the left of the ifthen operator. \n \t130\t        rval -- boolean value appearing to the right of the ifthen operator. \n \t131\t                                     \n \t132\t    OUTPUT: \n \t133\t        Returns the logical 'ifthen' operator applied to lval and rval.   \n \t134\t \n \t135\t    EXAMPLES: \n \t136\t        sage: import booleval \n \t137\t        sage: booleval.eval_ifthen_op(True, False) \n \t138\t        False \n \t139\t        sage: booleval.eval_ifthen_op(False, False) \n \t140\t        True \n \t141\t    \"\"\" \n \t142\t    if(lval == False and rval == False): \n \t143\t        return True \n \t144\t    elif(lval == False and rval == True): \n \t145\t        return True \n \t146\t    elif(lval == True and rval == False): \n \t147\t        return False \n \t148\t    elif(lval == True and rval == True): \n \t149\t        return True \n```\n\n\nwhich could be summarized as \n\n```\nreturn not lval or rval\n```\n\n\nAlso, the operators are passed around (and compared) as strings everywhere (sometimes '&', sometimes 'and'). I think it would be better to use `operator.not_`, `operator.and_`, etc. and use `is` to compare, and then one can also write stuff like \n\n```\nreturn op(lval, rval)\n```\n\n\nrather than having big if-then-else statements. \n\nHaving a global `__vars` seems fragile as well. \n\nSorry it's taken so long to get this in, the boolean formula simplification stuff looks good, I just think some of it could be greatly improved.",
+    "body": "While browsing the code I noticed lots of stuff that seemed overly verbose (and inefficient), e.g. \n\n```\n        124     def eval_ifthen_op(lval, rval): \n \t125\t    r\"\"\" \n \t126\t    This function returns the logical 'ifthen' operator applied to lval and rval. \n \t127\t \n \t128\t    INPUT: \n \t129\t        lval -- boolean value to the left of the ifthen operator. \n \t130\t        rval -- boolean value appearing to the right of the ifthen operator. \n \t131\t                                     \n \t132\t    OUTPUT: \n \t133\t        Returns the logical 'ifthen' operator applied to lval and rval.   \n \t134\t \n \t135\t    EXAMPLES: \n \t136\t        sage: import booleval \n \t137\t        sage: booleval.eval_ifthen_op(True, False) \n \t138\t        False \n \t139\t        sage: booleval.eval_ifthen_op(False, False) \n \t140\t        True \n \t141\t    \"\"\" \n \t142\t    if(lval == False and rval == False): \n \t143\t        return True \n \t144\t    elif(lval == False and rval == True): \n \t145\t        return True \n \t146\t    elif(lval == True and rval == False): \n \t147\t        return False \n \t148\t    elif(lval == True and rval == True): \n \t149\t        return True \n```\n\nwhich could be summarized as \n\n```\nreturn not lval or rval\n```\n\nAlso, the operators are passed around (and compared) as strings everywhere (sometimes '&', sometimes 'and'). I think it would be better to use `operator.not_`, `operator.and_`, etc. and use `is` to compare, and then one can also write stuff like \n\n```\nreturn op(lval, rval)\n```\n\nrather than having big if-then-else statements. \n\nHaving a global `__vars` seems fragile as well. \n\nSorry it's taken so long to get this in, the boolean formula simplification stuff looks good, I just think some of it could be greatly improved.",
     "created_at": "2008-05-14T17:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -395,7 +386,6 @@ archive/issue_comments_002756.json:
 ```
 
 While browsing the code I noticed lots of stuff that seemed overly verbose (and inefficient), e.g. 
-
 
 ```
         124     def eval_ifthen_op(lval, rval): 
@@ -426,20 +416,17 @@ While browsing the code I noticed lots of stuff that seemed overly verbose (and 
  	149	        return True 
 ```
 
-
 which could be summarized as 
 
 ```
 return not lval or rval
 ```
 
-
 Also, the operators are passed around (and compared) as strings everywhere (sometimes '&', sometimes 'and'). I think it would be better to use `operator.not_`, `operator.and_`, etc. and use `is` to compare, and then one can also write stuff like 
 
 ```
 return op(lval, rval)
 ```
-
 
 rather than having big if-then-else statements. 
 
@@ -567,7 +554,7 @@ This release should address all the issues in sekine.pdf.
 archive/issue_comments_002763.json:
 ```json
 {
-    "body": "For the patch **logic.patch**, below are some possible fixes for improving its documentation. I was reviewing the plain text version of the diff, not the online version. This accounts for the number that precedes each line in the diffs below. In other words, such a number refers to the line number in the downloaded, plain text diff file, which should simplify the task of reviewing my suggestions.\n\n\n\n1.\n\n```\n36 -    Evaluates the tree using the boolean values contained in dictinary\n36 +    Evaluates the tree using the boolean values contained in dictionary\n```\n\n\n2.\n\n```\n40 -        tree -- a list of three elements corrospsponding to a branch of a\n40 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n\n3.\n\n```\n67 -        tree -- a list of three elements corrospsponding to a branch of a\n67 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n\n4.\n\n```\n201 -    underscores and aplphanumerics.  Parentheses may be used to\n201 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n\n5.\n\n```\n320 -            tree -- a list continaing the parse tree of the expression.\n320 +            tree -- a list containing the parse tree of the expression.\n```\n\n\n6.\n\n```\n322 -                  with each variable occuring only once.\n322 +                  with each variable occurring only once.\n```\n\n\n7.\n\n```\n486 -        Returns two statements atatched by the -> operator.\n486 +        Returns two statements attached by the -> operator.\n```\n\n\n8.\n\n```\n494 -            ithen'ed together.\n494 +            ifthen'ed together.\n```\n\n\n9.\n\n```\n563 -            start -- an interger representing the row of the truth\n563 +            start -- an integer representing the row of the truth\n```\n\n\n10.\n\n```\n564 -                     table from which to start intilized to 0 which\n564 +                     table from which to start initialized to 0, which\n```\n\n\n11.\n\n```\n568 -                   to be created.  It is intilized to the last row of the\n568 +                   to be created.  It is initialized to the last row of the\n```\n\n\n12.\n\n```\n601 -            When sent with no start or end paramaters this is an\n601 +            When sent with no start or end parameters, this is an\n```\n\n\n13.\n\n```\n680 -        It does this by applying a set of rules that are gaurenteed to convert the\n680 +        It does this by applying a set of rules that are guaranteed to convert the\n```\n\n\n14.\n\n```\n700 -            is typically prefered, but results can vary.\n700 +            is typically preferred, but results can vary.\n```\n\n\n15.\n\n```\n718 -            A string representing the satformat represetatin of this object.\n718 +            A string representing the satformat representation of this object.\n```\n\n\n16.\n\n```\n881 -            Returns a new statement that is the first statement attatched to\n881 +            Returns a new statement that is the first statement attached to\n```\n\n\n17.\n\n```\n950 -        if-thens, and xor opperations to operations only involving and/or operations.\n950 +        if-then, and xor operations to operations only involving and/or operations.\n```\n\n\n18.\n\n```\n954 -            tree -- a list of three elements corrospsponding to a branch of a\n954 +            tree -- a list of three elements corresponding to a branch of a\n```\n\n\n19.\n\n```\n1068 -        This function converts the string expression asscociated with an instance\n1068 +        This function converts the string expression associated with an instance\n```\n\n\n20.\n\n```\n1902 -        # FUTHER REDUCE COVER WITH EPI\n1902 +        # FURTHER REDUCE COVER WITH EPI\n```\n\n\n21.\n\n```\n1948 -    An unforunate side affect of the Quine-McCluskey system is that x !=\n1948 +    An unfortunate side effect of the Quine-McCluskey system is that x !=\n```\n\n\n22.\n\n```\n1977 -Module that creates and modifys parse trees of well formed\n1977 +Module that creates and modifies parse trees of well formed\n```\n\n\n23.\n\n```\n2003 -    This function produces a parse tree from a boolen formula s.\n2003 +    This function produces a parse tree from a boolean formula s.\n```\n\n\n24.\n\n```\n2042 -        Returns a list of tokens corrosponding to s.\n2042 +        Returns a list of tokens corresponding to s.\n```\n\n\n25.\n\n```\n2137 -             are occuring.\n2137 +             are occurring.\n```\n\n\n26.\n\n```\n2267 -It is not an error to use nonsenical numeric inputs.\n2267 +It is not an error to use nonsensical numeric inputs.\n```\n\n\n27.\n\n```\n2326 -                  with each variable occuring only once.\n2326 +                  with each variable occurring only once.\n```\n\n\n28.\n\n```\n2370 -        Strange paramaters can lead to the table header with no body.\n2370 +        Strange parameters can lead to the table header with no body.\n```\n\n\n29.\n\n```\n2415 -        Strange paramaters can lead to the table header with no body.\n2415 +        Strange parameters can lead to a table header with no body.\n```\n\n\n30.\n\n```\n2478 -    Formulas consist of the operators &, |, ~, ^, ->, <->, corrosponding\n2478 +    Formulas consist of the operators &, |, ~, ^, ->, <->, corresponding\n```\n\n\n31.\n\n```\n2481 -    underscores and aplphanumerics.  Parentheses may be used to\n2481 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n\n32.\n\n```\n362 -        Returns a latex representation of this statement.\n362 +        Returns a LaTeX representation of this statement.\n```\n\n\n33.\n\n```\n368 -            Returns the latex representation of this statement.\n368 +            Returns the LaTeX representation of this statement.\n```\n\n\n34.\n\n```\n384 +            other --the left hand side statement.\n384 +            other -- the left hand side statement.\n```\n\n\n35.\n\n```\n404 +            other --the left hand side statement.\n404 +            other -- the left hand side statement.\n```\n\n\n36.\n\n```\n425 -            other --the left hand side statement.\n425 +            other -- the left hand side statement.\n```\n\n\n37.\n\n```\n446 -            other --the left hand side statement.\n446 +            other -- the left hand side statement.\n```\n\n\n38.\n\n```\n467 -            other --the left hand side statement.\n467 +            other -- the left hand side statement.\n```\n\n\n39.\n\n```\n490 -            other --the left hand side statement.\n490 +            other -- the left hand side statement.\n```\n\n\n40.\n\n```\n511 -            other --the left hand side statement.\n511 +            other -- the left hand side statement.\n```\n\n\n41.\n\n```\n533 -            other --the left hand side statement.\n533 +            other -- the left hand side statement.\n```\n\n\n42.\n\n```\n537 -            right hand side and false otherwise.\n537 +            right hand side, and false otherwise.\n```\n\n\n43.\n\n```\n558 -        start inclusive and end exclusive so a truthtable(0, 2) will include\n558 +        start inclusive and end exclusive so truthtable(0, 2) will include\n```\n\n\n44.\n\n```\n572 -            Returns the truthtable (a 2-d array with the creating statement\n572 +            Returns the truthtable (a 2-D array with the creating statement\n```\n\n\n45. Please carefully read through the following snippet from the original diff file:\n\n```\n590 +        We can now create truthtable of rows 1 to 5\n591 +            sage: s.truthtable(1, 5)\n592 +            a      b      c      value\n593 +            False  False  True   False\n594 +            False  True   False  True\n595 +            False  True   True   False\n596 +            True   False  False  False\n```\n\nWhy \"rows 1 to 5\" when you're using the command `s.truthtable(1, 5)`? My understanding is that `s.truthtable(1, 5)` includes row 1 all the way up to but excluding row 5. In effect, that command actually creates 4 rows, excluding the standard header row. Perhaps you might want to consider this diff:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 4, inclusive.\n```\n\nor this one:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 5, exclusive.\n```\n\n\n\n46.\n\n```\n637 -        It does this by examining the truthtable of the formula.\n637 +        It does this by examining the truth table of the formula.\n```\n\n\n47.\n\n```\n653 -            This method creates the cnf parse tree by examining the logic\n653 +            This method creates the CNF parse tree by examining the logic\n```\n\n\n48.\n\n```\n699 -            Unless a formula is already in (or close to) being in cnf convert_cnf()\n699 +            Unless a formula is already in (or close to) being in CNF, convert_cnf()\n```\n\n\n49. No tabs, please. This issue is especially important since we're using Python and most folks who program in Python use only spaces --- NOT tabs --- for their indentation. For official reasons why tabs are not used, please refer to [PEP 666](http://www.python.org/dev/peps/pep-0666/). The [Sage Developer's Guide](http://www.sagemath.org/doc/prog/prog.html) provides various general guidelines to be adhered to when writing code (and documentation) to be included within Sage itself. In particular, you might want to consult [this section](http://www.sagemath.org/doc/prog/node6.html). If you feel that my comment is unfair to you, please don't flame me. Instead, provide me with reasons why it's unfair (to you). If your reasons turn out to be valid and they show that I'm being unfair, I'd stand corrected and offer you my apology.\n\n```\n711 -\t    See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n711 +        See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n```\n\n\n50.\n\n```\n730 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n730 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n\n51.\n\n```\n806 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n806 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n\n52.\n\n```\n838 -        '~', operators.\n838 +        '~' operators.\n```\n\n\n53.\n\n```\n1117 -            The next operator in the string\n1117 +            The next operator in the string.\n```\n\n\n54.\n\n```\n1276 -        Will create a composite functor which will add 1, multiply by\n1276 +        will create a composite functor which will add 1, multiply by\n```\n\n\n55.\n\n```\n1343 -    is defined so that that tc(ast) returns the count of ts.  The\n1343 +    is defined so that tc(ast) returns the count of ts.  The\n```\n\n\n56.\n\n```\n1575 -    The exclusive-or operator, will turn into:\n1575 +    The exclusive-or operator will turn into:\n```\n\n\n57.\n\n```\n1945 -    DNF formulae generated from prepositional logic ASTs as described\n1945 +    DNF formulae generated from propositional logic ASTs as described\n```\n\n\n58.\n\n```\n2216 -A logic table is essentially a 2-d array that is created by the statement class\n2216 +A logic table is essentially a 2-D array that is created by the statement class\n```\n\n\n59.\n\n```\n2221 -For instance, with the variables A, B, and C the truthtable looks like:\n2221 +For instance, with the variables A, B, and C the truth table looks like:\n```\n\n\n60.\n\n```\n2233 -This is equivalent to counting in binary, where a table would appear thusly;\n2233 +This is equivalent to counting in binary, where a table would appear thus:\n```\n\n\n61.\n\n```\n2279 -If one argument is provided truthtable defaults to the end.\n2279 +If one argument is provided, truthtable defaults to the end.\n```\n\n\n62.\n\n```\n2291 -If the second argument is negative truthtable defaults to the end.\n2291 +If the second argument is negative, truthtable defaults to the end.\n```\n\n\n63.\n\n```\n2324 -            t -- a 2-d array containing the table values\n2324 +            t -- a 2-D array containing the table values.\n```\n\n\n64.\n\n```\n2396 -            self -- the calling object: not used\n2396 +            self -- the calling object: not used.\n```\n\n\n65.\n\n```\n2454 -            self -- the calling object: not used\n2454 +            self -- the calling object: not used.\n```\n\n\n66.\n\n```\n2592 -    Formula returns an instance if BooleanFormula if possible, and throws\n2592 +    Formula returns an instance of BooleanFormula if possible, and throws\n```\n",
+    "body": "For the patch **logic.patch**, below are some possible fixes for improving its documentation. I was reviewing the plain text version of the diff, not the online version. This accounts for the number that precedes each line in the diffs below. In other words, such a number refers to the line number in the downloaded, plain text diff file, which should simplify the task of reviewing my suggestions.\n\n\n\n1.\n\n```\n36 -    Evaluates the tree using the boolean values contained in dictinary\n36 +    Evaluates the tree using the boolean values contained in dictionary\n```\n\n2.\n\n```\n40 -        tree -- a list of three elements corrospsponding to a branch of a\n40 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n3.\n\n```\n67 -        tree -- a list of three elements corrospsponding to a branch of a\n67 +        tree -- a list of three elements corresponding to a branch of a\n```\n\n4.\n\n```\n201 -    underscores and aplphanumerics.  Parentheses may be used to\n201 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n5.\n\n```\n320 -            tree -- a list continaing the parse tree of the expression.\n320 +            tree -- a list containing the parse tree of the expression.\n```\n\n6.\n\n```\n322 -                  with each variable occuring only once.\n322 +                  with each variable occurring only once.\n```\n\n7.\n\n```\n486 -        Returns two statements atatched by the -> operator.\n486 +        Returns two statements attached by the -> operator.\n```\n\n8.\n\n```\n494 -            ithen'ed together.\n494 +            ifthen'ed together.\n```\n\n9.\n\n```\n563 -            start -- an interger representing the row of the truth\n563 +            start -- an integer representing the row of the truth\n```\n\n10.\n\n```\n564 -                     table from which to start intilized to 0 which\n564 +                     table from which to start initialized to 0, which\n```\n\n11.\n\n```\n568 -                   to be created.  It is intilized to the last row of the\n568 +                   to be created.  It is initialized to the last row of the\n```\n\n12.\n\n```\n601 -            When sent with no start or end paramaters this is an\n601 +            When sent with no start or end parameters, this is an\n```\n\n13.\n\n```\n680 -        It does this by applying a set of rules that are gaurenteed to convert the\n680 +        It does this by applying a set of rules that are guaranteed to convert the\n```\n\n14.\n\n```\n700 -            is typically prefered, but results can vary.\n700 +            is typically preferred, but results can vary.\n```\n\n15.\n\n```\n718 -            A string representing the satformat represetatin of this object.\n718 +            A string representing the satformat representation of this object.\n```\n\n16.\n\n```\n881 -            Returns a new statement that is the first statement attatched to\n881 +            Returns a new statement that is the first statement attached to\n```\n\n17.\n\n```\n950 -        if-thens, and xor opperations to operations only involving and/or operations.\n950 +        if-then, and xor operations to operations only involving and/or operations.\n```\n\n18.\n\n```\n954 -            tree -- a list of three elements corrospsponding to a branch of a\n954 +            tree -- a list of three elements corresponding to a branch of a\n```\n\n19.\n\n```\n1068 -        This function converts the string expression asscociated with an instance\n1068 +        This function converts the string expression associated with an instance\n```\n\n20.\n\n```\n1902 -        # FUTHER REDUCE COVER WITH EPI\n1902 +        # FURTHER REDUCE COVER WITH EPI\n```\n\n21.\n\n```\n1948 -    An unforunate side affect of the Quine-McCluskey system is that x !=\n1948 +    An unfortunate side effect of the Quine-McCluskey system is that x !=\n```\n\n22.\n\n```\n1977 -Module that creates and modifys parse trees of well formed\n1977 +Module that creates and modifies parse trees of well formed\n```\n\n23.\n\n```\n2003 -    This function produces a parse tree from a boolen formula s.\n2003 +    This function produces a parse tree from a boolean formula s.\n```\n\n24.\n\n```\n2042 -        Returns a list of tokens corrosponding to s.\n2042 +        Returns a list of tokens corresponding to s.\n```\n\n25.\n\n```\n2137 -             are occuring.\n2137 +             are occurring.\n```\n\n26.\n\n```\n2267 -It is not an error to use nonsenical numeric inputs.\n2267 +It is not an error to use nonsensical numeric inputs.\n```\n\n27.\n\n```\n2326 -                  with each variable occuring only once.\n2326 +                  with each variable occurring only once.\n```\n\n28.\n\n```\n2370 -        Strange paramaters can lead to the table header with no body.\n2370 +        Strange parameters can lead to the table header with no body.\n```\n\n29.\n\n```\n2415 -        Strange paramaters can lead to the table header with no body.\n2415 +        Strange parameters can lead to a table header with no body.\n```\n\n30.\n\n```\n2478 -    Formulas consist of the operators &, |, ~, ^, ->, <->, corrosponding\n2478 +    Formulas consist of the operators &, |, ~, ^, ->, <->, corresponding\n```\n\n31.\n\n```\n2481 -    underscores and aplphanumerics.  Parentheses may be used to\n2481 +    underscores and alphanumerics.  Parentheses may be used to\n```\n\n32.\n\n```\n362 -        Returns a latex representation of this statement.\n362 +        Returns a LaTeX representation of this statement.\n```\n\n33.\n\n```\n368 -            Returns the latex representation of this statement.\n368 +            Returns the LaTeX representation of this statement.\n```\n\n34.\n\n```\n384 +            other --the left hand side statement.\n384 +            other -- the left hand side statement.\n```\n\n35.\n\n```\n404 +            other --the left hand side statement.\n404 +            other -- the left hand side statement.\n```\n\n36.\n\n```\n425 -            other --the left hand side statement.\n425 +            other -- the left hand side statement.\n```\n\n37.\n\n```\n446 -            other --the left hand side statement.\n446 +            other -- the left hand side statement.\n```\n\n38.\n\n```\n467 -            other --the left hand side statement.\n467 +            other -- the left hand side statement.\n```\n\n39.\n\n```\n490 -            other --the left hand side statement.\n490 +            other -- the left hand side statement.\n```\n\n40.\n\n```\n511 -            other --the left hand side statement.\n511 +            other -- the left hand side statement.\n```\n\n41.\n\n```\n533 -            other --the left hand side statement.\n533 +            other -- the left hand side statement.\n```\n\n42.\n\n```\n537 -            right hand side and false otherwise.\n537 +            right hand side, and false otherwise.\n```\n\n43.\n\n```\n558 -        start inclusive and end exclusive so a truthtable(0, 2) will include\n558 +        start inclusive and end exclusive so truthtable(0, 2) will include\n```\n\n44.\n\n```\n572 -            Returns the truthtable (a 2-d array with the creating statement\n572 +            Returns the truthtable (a 2-D array with the creating statement\n```\n\n45. Please carefully read through the following snippet from the original diff file:\n\n```\n590 +        We can now create truthtable of rows 1 to 5\n591 +            sage: s.truthtable(1, 5)\n592 +            a      b      c      value\n593 +            False  False  True   False\n594 +            False  True   False  True\n595 +            False  True   True   False\n596 +            True   False  False  False\n```\nWhy \"rows 1 to 5\" when you're using the command `s.truthtable(1, 5)`? My understanding is that `s.truthtable(1, 5)` includes row 1 all the way up to but excluding row 5. In effect, that command actually creates 4 rows, excluding the standard header row. Perhaps you might want to consider this diff:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 4, inclusive.\n```\nor this one:\n\n```\n590 -        We can now create truthtable of rows 1 to 5\n590 +        We can now create a truth table of rows 1 to 5, exclusive.\n```\n\n\n46.\n\n```\n637 -        It does this by examining the truthtable of the formula.\n637 +        It does this by examining the truth table of the formula.\n```\n\n47.\n\n```\n653 -            This method creates the cnf parse tree by examining the logic\n653 +            This method creates the CNF parse tree by examining the logic\n```\n\n48.\n\n```\n699 -            Unless a formula is already in (or close to) being in cnf convert_cnf()\n699 +            Unless a formula is already in (or close to) being in CNF, convert_cnf()\n```\n\n49. No tabs, please. This issue is especially important since we're using Python and most folks who program in Python use only spaces --- NOT tabs --- for their indentation. For official reasons why tabs are not used, please refer to [PEP 666](http://www.python.org/dev/peps/pep-0666/). The [Sage Developer's Guide](http://www.sagemath.org/doc/prog/prog.html) provides various general guidelines to be adhered to when writing code (and documentation) to be included within Sage itself. In particular, you might want to consult [this section](http://www.sagemath.org/doc/prog/node6.html). If you feel that my comment is unfair to you, please don't flame me. Instead, provide me with reasons why it's unfair (to you). If your reasons turn out to be valid and they show that I'm being unfair, I'd stand corrected and offer you my apology.\n\n```\n711 -\t    See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n711 +        See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a\n```\n\n50.\n\n```\n730 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n730 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n51.\n\n```\n806 -            cnf form by a call to convert_cnf() or convert_cnf_recur()\n806 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),\n```\n\n52.\n\n```\n838 -        '~', operators.\n838 +        '~' operators.\n```\n\n53.\n\n```\n1117 -            The next operator in the string\n1117 +            The next operator in the string.\n```\n\n54.\n\n```\n1276 -        Will create a composite functor which will add 1, multiply by\n1276 +        will create a composite functor which will add 1, multiply by\n```\n\n55.\n\n```\n1343 -    is defined so that that tc(ast) returns the count of ts.  The\n1343 +    is defined so that tc(ast) returns the count of ts.  The\n```\n\n56.\n\n```\n1575 -    The exclusive-or operator, will turn into:\n1575 +    The exclusive-or operator will turn into:\n```\n\n57.\n\n```\n1945 -    DNF formulae generated from prepositional logic ASTs as described\n1945 +    DNF formulae generated from propositional logic ASTs as described\n```\n\n58.\n\n```\n2216 -A logic table is essentially a 2-d array that is created by the statement class\n2216 +A logic table is essentially a 2-D array that is created by the statement class\n```\n\n59.\n\n```\n2221 -For instance, with the variables A, B, and C the truthtable looks like:\n2221 +For instance, with the variables A, B, and C the truth table looks like:\n```\n\n60.\n\n```\n2233 -This is equivalent to counting in binary, where a table would appear thusly;\n2233 +This is equivalent to counting in binary, where a table would appear thus:\n```\n\n61.\n\n```\n2279 -If one argument is provided truthtable defaults to the end.\n2279 +If one argument is provided, truthtable defaults to the end.\n```\n\n62.\n\n```\n2291 -If the second argument is negative truthtable defaults to the end.\n2291 +If the second argument is negative, truthtable defaults to the end.\n```\n\n63.\n\n```\n2324 -            t -- a 2-d array containing the table values\n2324 +            t -- a 2-D array containing the table values.\n```\n\n64.\n\n```\n2396 -            self -- the calling object: not used\n2396 +            self -- the calling object: not used.\n```\n\n65.\n\n```\n2454 -            self -- the calling object: not used\n2454 +            self -- the calling object: not used.\n```\n\n66.\n\n```\n2592 -    Formula returns an instance if BooleanFormula if possible, and throws\n2592 +    Formula returns an instance of BooleanFormula if possible, and throws\n```",
     "created_at": "2008-10-28T02:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -587,14 +574,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 36 +    Evaluates the tree using the boolean values contained in dictionary
 ```
 
-
 2.
 
 ```
 40 -        tree -- a list of three elements corrospsponding to a branch of a
 40 +        tree -- a list of three elements corresponding to a branch of a
 ```
-
 
 3.
 
@@ -603,14 +588,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 67 +        tree -- a list of three elements corresponding to a branch of a
 ```
 
-
 4.
 
 ```
 201 -    underscores and aplphanumerics.  Parentheses may be used to
 201 +    underscores and alphanumerics.  Parentheses may be used to
 ```
-
 
 5.
 
@@ -619,14 +602,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 320 +            tree -- a list containing the parse tree of the expression.
 ```
 
-
 6.
 
 ```
 322 -                  with each variable occuring only once.
 322 +                  with each variable occurring only once.
 ```
-
 
 7.
 
@@ -635,14 +616,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 486 +        Returns two statements attached by the -> operator.
 ```
 
-
 8.
 
 ```
 494 -            ithen'ed together.
 494 +            ifthen'ed together.
 ```
-
 
 9.
 
@@ -651,14 +630,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 563 +            start -- an integer representing the row of the truth
 ```
 
-
 10.
 
 ```
 564 -                     table from which to start intilized to 0 which
 564 +                     table from which to start initialized to 0, which
 ```
-
 
 11.
 
@@ -667,14 +644,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 568 +                   to be created.  It is initialized to the last row of the
 ```
 
-
 12.
 
 ```
 601 -            When sent with no start or end paramaters this is an
 601 +            When sent with no start or end parameters, this is an
 ```
-
 
 13.
 
@@ -683,14 +658,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 680 +        It does this by applying a set of rules that are guaranteed to convert the
 ```
 
-
 14.
 
 ```
 700 -            is typically prefered, but results can vary.
 700 +            is typically preferred, but results can vary.
 ```
-
 
 15.
 
@@ -699,14 +672,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 718 +            A string representing the satformat representation of this object.
 ```
 
-
 16.
 
 ```
 881 -            Returns a new statement that is the first statement attatched to
 881 +            Returns a new statement that is the first statement attached to
 ```
-
 
 17.
 
@@ -715,14 +686,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 950 +        if-then, and xor operations to operations only involving and/or operations.
 ```
 
-
 18.
 
 ```
 954 -            tree -- a list of three elements corrospsponding to a branch of a
 954 +            tree -- a list of three elements corresponding to a branch of a
 ```
-
 
 19.
 
@@ -731,14 +700,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 1068 +        This function converts the string expression associated with an instance
 ```
 
-
 20.
 
 ```
 1902 -        # FUTHER REDUCE COVER WITH EPI
 1902 +        # FURTHER REDUCE COVER WITH EPI
 ```
-
 
 21.
 
@@ -747,14 +714,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 1948 +    An unfortunate side effect of the Quine-McCluskey system is that x !=
 ```
 
-
 22.
 
 ```
 1977 -Module that creates and modifys parse trees of well formed
 1977 +Module that creates and modifies parse trees of well formed
 ```
-
 
 23.
 
@@ -763,14 +728,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 2003 +    This function produces a parse tree from a boolean formula s.
 ```
 
-
 24.
 
 ```
 2042 -        Returns a list of tokens corrosponding to s.
 2042 +        Returns a list of tokens corresponding to s.
 ```
-
 
 25.
 
@@ -779,14 +742,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 2137 +             are occurring.
 ```
 
-
 26.
 
 ```
 2267 -It is not an error to use nonsenical numeric inputs.
 2267 +It is not an error to use nonsensical numeric inputs.
 ```
-
 
 27.
 
@@ -795,14 +756,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 2326 +                  with each variable occurring only once.
 ```
 
-
 28.
 
 ```
 2370 -        Strange paramaters can lead to the table header with no body.
 2370 +        Strange parameters can lead to the table header with no body.
 ```
-
 
 29.
 
@@ -811,14 +770,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 2415 +        Strange parameters can lead to a table header with no body.
 ```
 
-
 30.
 
 ```
 2478 -    Formulas consist of the operators &, |, ~, ^, ->, <->, corrosponding
 2478 +    Formulas consist of the operators &, |, ~, ^, ->, <->, corresponding
 ```
-
 
 31.
 
@@ -827,14 +784,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 2481 +    underscores and alphanumerics.  Parentheses may be used to
 ```
 
-
 32.
 
 ```
 362 -        Returns a latex representation of this statement.
 362 +        Returns a LaTeX representation of this statement.
 ```
-
 
 33.
 
@@ -843,14 +798,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 368 +            Returns the LaTeX representation of this statement.
 ```
 
-
 34.
 
 ```
 384 +            other --the left hand side statement.
 384 +            other -- the left hand side statement.
 ```
-
 
 35.
 
@@ -859,14 +812,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 404 +            other -- the left hand side statement.
 ```
 
-
 36.
 
 ```
 425 -            other --the left hand side statement.
 425 +            other -- the left hand side statement.
 ```
-
 
 37.
 
@@ -875,14 +826,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 446 +            other -- the left hand side statement.
 ```
 
-
 38.
 
 ```
 467 -            other --the left hand side statement.
 467 +            other -- the left hand side statement.
 ```
-
 
 39.
 
@@ -891,14 +840,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 490 +            other -- the left hand side statement.
 ```
 
-
 40.
 
 ```
 511 -            other --the left hand side statement.
 511 +            other -- the left hand side statement.
 ```
-
 
 41.
 
@@ -907,14 +854,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 533 +            other -- the left hand side statement.
 ```
 
-
 42.
 
 ```
 537 -            right hand side and false otherwise.
 537 +            right hand side, and false otherwise.
 ```
-
 
 43.
 
@@ -923,14 +868,12 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 558 +        start inclusive and end exclusive so truthtable(0, 2) will include
 ```
 
-
 44.
 
 ```
 572 -            Returns the truthtable (a 2-d array with the creating statement
 572 +            Returns the truthtable (a 2-D array with the creating statement
 ```
-
 
 45. Please carefully read through the following snippet from the original diff file:
 
@@ -943,21 +886,18 @@ For the patch **logic.patch**, below are some possible fixes for improving its d
 595 +            False  True   True   False
 596 +            True   False  False  False
 ```
-
 Why "rows 1 to 5" when you're using the command `s.truthtable(1, 5)`? My understanding is that `s.truthtable(1, 5)` includes row 1 all the way up to but excluding row 5. In effect, that command actually creates 4 rows, excluding the standard header row. Perhaps you might want to consider this diff:
 
 ```
 590 -        We can now create truthtable of rows 1 to 5
 590 +        We can now create a truth table of rows 1 to 4, inclusive.
 ```
-
 or this one:
 
 ```
 590 -        We can now create truthtable of rows 1 to 5
 590 +        We can now create a truth table of rows 1 to 5, exclusive.
 ```
-
 
 
 46.
@@ -967,14 +907,12 @@ or this one:
 637 +        It does this by examining the truth table of the formula.
 ```
 
-
 47.
 
 ```
 653 -            This method creates the cnf parse tree by examining the logic
 653 +            This method creates the CNF parse tree by examining the logic
 ```
-
 
 48.
 
@@ -983,14 +921,12 @@ or this one:
 699 +            Unless a formula is already in (or close to) being in CNF, convert_cnf()
 ```
 
-
 49. No tabs, please. This issue is especially important since we're using Python and most folks who program in Python use only spaces --- NOT tabs --- for their indentation. For official reasons why tabs are not used, please refer to [PEP 666](http://www.python.org/dev/peps/pep-0666/). The [Sage Developer's Guide](http://www.sagemath.org/doc/prog/prog.html) provides various general guidelines to be adhered to when writing code (and documentation) to be included within Sage itself. In particular, you might want to consult [this section](http://www.sagemath.org/doc/prog/node6.html). If you feel that my comment is unfair to you, please don't flame me. Instead, provide me with reasons why it's unfair (to you). If your reasons turn out to be valid and they show that I'm being unfair, I'd stand corrected and offer you my apology.
 
 ```
 711 -	    See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a
 711 +        See www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps for a
 ```
-
 
 50.
 
@@ -999,14 +935,12 @@ or this one:
 730 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),
 ```
 
-
 51.
 
 ```
 806 -            cnf form by a call to convert_cnf() or convert_cnf_recur()
 806 +            CNF form by a call to convert_cnf() or convert_cnf_recur(),
 ```
-
 
 52.
 
@@ -1015,14 +949,12 @@ or this one:
 838 +        '~' operators.
 ```
 
-
 53.
 
 ```
 1117 -            The next operator in the string
 1117 +            The next operator in the string.
 ```
-
 
 54.
 
@@ -1031,14 +963,12 @@ or this one:
 1276 +        will create a composite functor which will add 1, multiply by
 ```
 
-
 55.
 
 ```
 1343 -    is defined so that that tc(ast) returns the count of ts.  The
 1343 +    is defined so that tc(ast) returns the count of ts.  The
 ```
-
 
 56.
 
@@ -1047,14 +977,12 @@ or this one:
 1575 +    The exclusive-or operator will turn into:
 ```
 
-
 57.
 
 ```
 1945 -    DNF formulae generated from prepositional logic ASTs as described
 1945 +    DNF formulae generated from propositional logic ASTs as described
 ```
-
 
 58.
 
@@ -1063,14 +991,12 @@ or this one:
 2216 +A logic table is essentially a 2-D array that is created by the statement class
 ```
 
-
 59.
 
 ```
 2221 -For instance, with the variables A, B, and C the truthtable looks like:
 2221 +For instance, with the variables A, B, and C the truth table looks like:
 ```
-
 
 60.
 
@@ -1079,14 +1005,12 @@ or this one:
 2233 +This is equivalent to counting in binary, where a table would appear thus:
 ```
 
-
 61.
 
 ```
 2279 -If one argument is provided truthtable defaults to the end.
 2279 +If one argument is provided, truthtable defaults to the end.
 ```
-
 
 62.
 
@@ -1095,14 +1019,12 @@ or this one:
 2291 +If the second argument is negative, truthtable defaults to the end.
 ```
 
-
 63.
 
 ```
 2324 -            t -- a 2-d array containing the table values
 2324 +            t -- a 2-D array containing the table values.
 ```
-
 
 64.
 
@@ -1111,7 +1033,6 @@ or this one:
 2396 +            self -- the calling object: not used.
 ```
 
-
 65.
 
 ```
@@ -1119,14 +1040,12 @@ or this one:
 2454 +            self -- the calling object: not used.
 ```
 
-
 66.
 
 ```
 2592 -    Formula returns an instance if BooleanFormula if possible, and throws
 2592 +    Formula returns an instance of BooleanFormula if possible, and throws
 ```
-
 
 
 
@@ -1159,7 +1078,7 @@ Michael
 archive/issue_comments_002765.json:
 ```json
 {
-    "body": "Replying to [comment:23 mabshoff]:\n> you should really post patches on top of given patches to make it easier to apply your changes.\nYou mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?",
+    "body": "Replying to [comment:23 mabshoff]:\n> you should really post patches on top of given patches to make it easier to apply your changes.\n\nYou mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?",
     "created_at": "2008-10-28T02:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1170,6 +1089,7 @@ archive/issue_comments_002765.json:
 
 Replying to [comment:23 mabshoff]:
 > you should really post patches on top of given patches to make it easier to apply your changes.
+
 You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?
 
 
@@ -1179,7 +1099,7 @@ You mean like applying the original patch first, then upload a patch of the patc
 archive/issue_comments_002766.json:
 ```json
 {
-    "body": "Replying to [comment:24 mvngu]:\n\n> You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n\nYes, exactly.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:24 mvngu]:\n\n> You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n\n\nYes, exactly.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T02:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1191,6 +1111,7 @@ archive/issue_comments_002766.json:
 Replying to [comment:24 mvngu]:
 
 > You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?
+
 
 Yes, exactly.
 
@@ -1231,7 +1152,7 @@ Michael
 archive/issue_comments_002768.json:
 ```json
 {
-    "body": "Replying to [comment:25 mabshoff]:\n> Replying to [comment:24 mvngu]:\n> \n> > You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n> \n> Yes, exactly.\n\n\nI'm having trouble applying the patch **logic.hg**. For example, I've received this abort message:\n\n```\nsage: hg_sage.patch(\"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\")\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg import   \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\"\napplying /home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\nabort: no diffs found\n```\n\nOK, so perhaps it's because **logic.hg** is bzip2 compressed:\n\n```\n$ file logic.hg \nlogic.hg: Mercurial changeset bundle (bzip2 compressed)\n```\n\nBut why can't I do bunzip2:\n\n```\n$ bunzip2 logic.hg \nbunzip2: Can't guess original name for logic.hg -- using logic.hg.out\nbunzip2: logic.hg is not a bzip2 file.\n```\n\nAny other way(s) of getting the diff file(s) bundled in **logic.hg**?",
+    "body": "Replying to [comment:25 mabshoff]:\n> Replying to [comment:24 mvngu]:\n> \n> > You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?\n\n> \n> Yes, exactly.\n\n\n\nI'm having trouble applying the patch **logic.hg**. For example, I've received this abort message:\n\n```\nsage: hg_sage.patch(\"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\")\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg status\ncd \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage\" && hg import   \"/home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\"\napplying /home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg\nabort: no diffs found\n```\nOK, so perhaps it's because **logic.hg** is bzip2 compressed:\n\n```\n$ file logic.hg \nlogic.hg: Mercurial changeset bundle (bzip2 compressed)\n```\nBut why can't I do bunzip2:\n\n```\n$ bunzip2 logic.hg \nbunzip2: Can't guess original name for logic.hg -- using logic.hg.out\nbunzip2: logic.hg is not a bzip2 file.\n```\nAny other way(s) of getting the diff file(s) bundled in **logic.hg**?",
     "created_at": "2008-10-28T05:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1244,8 +1165,10 @@ Replying to [comment:25 mabshoff]:
 > Replying to [comment:24 mvngu]:
 > 
 > > You mean like applying the original patch first, then upload a patch of the patched file? Is that what you mean?
+
 > 
 > Yes, exactly.
+
 
 
 I'm having trouble applying the patch **logic.hg**. For example, I've received this abort message:
@@ -1258,14 +1181,12 @@ cd "/home/mvngu/usr/bin/sage-3.1.4/devel/sage" && hg import   "/home/mvngu/usr/b
 applying /home/mvngu/usr/bin/sage-3.1.4/devel/sage-mvngu-review/patch-review/logic.hg
 abort: no diffs found
 ```
-
 OK, so perhaps it's because **logic.hg** is bzip2 compressed:
 
 ```
 $ file logic.hg 
 logic.hg: Mercurial changeset bundle (bzip2 compressed)
 ```
-
 But why can't I do bunzip2:
 
 ```
@@ -1273,7 +1194,6 @@ $ bunzip2 logic.hg
 bunzip2: Can't guess original name for logic.hg -- using logic.hg.out
 bunzip2: logic.hg is not a bzip2 file.
 ```
-
 Any other way(s) of getting the diff file(s) bundled in **logic.hg**?
 
 
@@ -1361,7 +1281,7 @@ Improve latex output for boolean formulas, fix a few spelling mistakes
 archive/issue_comments_002773.json:
 ```json
 {
-    "body": "Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/devel/sage/!?  This code should go in SAGE_ROOT/devel/sage/sage/logic and be properly imported.  I'm really confused about what happened here.\n\n\n```\nwas@sage:~/build/sage-3.2.rc1/devel/sage$ ls\nbooleval.py     build     c_lib    install         MANIFEST.in      PKG-INFO     README.txt    sage-push          spkg-delauto\nboolformula.py  build.py  clib.py  logicparser.py  module_list.py   propcalc.py  sage          setup.py           spkg-dist\nboolopt.py      bundle    export   logictable.py   module_list.pyc  pull         sagebuild.py  spkg-debian-maybe  spkg-install\n```\n\n\nNote the boolformula.py, etc., above.",
+    "body": "Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/devel/sage/!?  This code should go in SAGE_ROOT/devel/sage/sage/logic and be properly imported.  I'm really confused about what happened here.\n\n```\nwas@sage:~/build/sage-3.2.rc1/devel/sage$ ls\nbooleval.py     build     c_lib    install         MANIFEST.in      PKG-INFO     README.txt    sage-push          spkg-delauto\nboolformula.py  build.py  clib.py  logicparser.py  module_list.py   propcalc.py  sage          setup.py           spkg-dist\nboolopt.py      bundle    export   logictable.py   module_list.pyc  pull         sagebuild.py  spkg-debian-maybe  spkg-install\n```\n\nNote the boolformula.py, etc., above.",
     "created_at": "2008-11-27T08:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1372,14 +1292,12 @@ archive/issue_comments_002773.json:
 
 Bizarrely this patch put *all* the new code in a bunch of files in SAGE_ROOT/devel/sage/!?  This code should go in SAGE_ROOT/devel/sage/sage/logic and be properly imported.  I'm really confused about what happened here.
 
-
 ```
 was@sage:~/build/sage-3.2.rc1/devel/sage$ ls
 booleval.py     build     c_lib    install         MANIFEST.in      PKG-INFO     README.txt    sage-push          spkg-delauto
 boolformula.py  build.py  clib.py  logicparser.py  module_list.py   propcalc.py  sage          setup.py           spkg-dist
 boolopt.py      bundle    export   logictable.py   module_list.pyc  pull         sagebuild.py  spkg-debian-maybe  spkg-install
 ```
-
 
 Note the boolformula.py, etc., above.
 
@@ -1615,7 +1533,7 @@ Michael
 archive/issue_comments_002782.json:
 ```json
 {
-    "body": "Reopened: The coverage of this code **sucks**:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/\nbooleval.py: 100% (3 of 3)\nboolformula.py: 93% (30 of 32)\nboolopt.py: 0% (0 of 55)\nlogic.py: 16% (3 of 18)\nlogicparser.py: 100% (5 of 5)\nlogictable.py: 100% (4 of 4)\npropcalc.py: 100% (1 of 1)\n```\n\n\nCheers,\n\nMichael",
+    "body": "Reopened: The coverage of this code **sucks**:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1$ ./sage -coverageall devel//sage/sage/logic/\nbooleval.py: 100% (3 of 3)\nboolformula.py: 93% (30 of 32)\nboolopt.py: 0% (0 of 55)\nlogic.py: 16% (3 of 18)\nlogicparser.py: 100% (5 of 5)\nlogictable.py: 100% (4 of 4)\npropcalc.py: 100% (1 of 1)\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T01:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1636,7 +1554,6 @@ logicparser.py: 100% (5 of 5)
 logictable.py: 100% (4 of 4)
 propcalc.py: 100% (1 of 1)
 ```
-
 
 Cheers,
 
@@ -1701,7 +1618,7 @@ archive/issue_events_001432.json:
 archive/issue_comments_002785.json:
 ```json
 {
-    "body": "Thanks for catching the two \"long\" doctest failures I let slip by. They're indeed trivial to fix.\n\nConcerning the coverage: I'm at a loss here.\n\nPlease see my \"Note 4\" from above about the file \"boolopt.py\", which would have either to be refactored (i.e. rewritten) completely, or one would have to add lots of meaningless doctests, look at the following code snippet:\n\n```\n    def visit_prop(self, node, children):\n        self.props.add(children[0])\n\n    def visit_notprop(self, node, children):\n        self.props.add(children[0])\n\n    def transform_node(self, node, children):\n        return [[tuple([node] + children)]]\n\n    def transform_or(self, node, children):\n        return children[0] + children[1]\n\n\n```\n\n\nThoughts?\n\nCheers, gsw",
+    "body": "Thanks for catching the two \"long\" doctest failures I let slip by. They're indeed trivial to fix.\n\nConcerning the coverage: I'm at a loss here.\n\nPlease see my \"Note 4\" from above about the file \"boolopt.py\", which would have either to be refactored (i.e. rewritten) completely, or one would have to add lots of meaningless doctests, look at the following code snippet:\n\n```\n    def visit_prop(self, node, children):\n        self.props.add(children[0])\n\n    def visit_notprop(self, node, children):\n        self.props.add(children[0])\n\n    def transform_node(self, node, children):\n        return [[tuple([node] + children)]]\n\n    def transform_or(self, node, children):\n        return children[0] + children[1]\n\n\n```\n\nThoughts?\n\nCheers, gsw",
     "created_at": "2009-01-23T20:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1731,7 +1648,6 @@ Please see my "Note 4" from above about the file "boolopt.py", which would have 
 
 
 ```
-
 
 Thoughts?
 
@@ -1883,7 +1799,7 @@ Bring doctest coverage of boolformula.py up to 100%
 archive/issue_comments_002792.json:
 ```json
 {
-    "body": "Replying to [comment:42 GeorgSWeber]:\n> - add the two missing doctests to boolformula.py (very easy)\nThis is done by `trac_545_boolformula-doctests.patch`.",
+    "body": "Replying to [comment:42 GeorgSWeber]:\n> - add the two missing doctests to boolformula.py (very easy)\n \nThis is done by `trac_545_boolformula-doctests.patch`.",
     "created_at": "2009-02-25T10:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
@@ -1894,6 +1810,7 @@ archive/issue_comments_002792.json:
 
 Replying to [comment:42 GeorgSWeber]:
 > - add the two missing doctests to boolformula.py (very easy)
+ 
 This is done by `trac_545_boolformula-doctests.patch`.
 
 

@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3788
 archive/issue_comments_026878.json:
 ```json
 {
-    "body": "Hi Robert,\n\nEverything looks good except I got one little doctest failure:\n\n\n```\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 204:\n    sage: matrix(GF(7), 2, 2, [-1, int(-2), GF(7)(-3), 1/4])\nExpected:\n    [6 2]\n    [4 2]\nGot:\n    [6 0]\n    [4 2]\n```\n\n\nShouldn't int(-2) go to 5 instead of either 2 or 0?",
+    "body": "Hi Robert,\n\nEverything looks good except I got one little doctest failure:\n\n```\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 204:\n    sage: matrix(GF(7), 2, 2, [-1, int(-2), GF(7)(-3), 1/4])\nExpected:\n    [6 2]\n    [4 2]\nGot:\n    [6 0]\n    [4 2]\n```\n\nShouldn't int(-2) go to 5 instead of either 2 or 0?",
     "created_at": "2008-08-07T16:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ Hi Robert,
 
 Everything looks good except I got one little doctest failure:
 
-
 ```
 File "/opt/sage/tmp/matrix_modn_dense.py", line 204:
     sage: matrix(GF(7), 2, 2, [-1, int(-2), GF(7)(-3), 1/4])
@@ -59,7 +58,6 @@ Got:
     [6 0]
     [4 2]
 ```
-
 
 Shouldn't int(-2) go to 5 instead of either 2 or 0?
 
@@ -108,7 +106,7 @@ The patch has been updated.
 archive/issue_comments_026881.json:
 ```json
 {
-    "body": "With the new patch, I get these failures:\n\n\n```\nsage -t  devel/sage-work/sage/matrix/matrix_modn_dense.pyx  **********************************************************************\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 26:\n    sage: a^2\nExpected:\n    [ 3 23 31]\n    [20 17 29]\n    [25 16  0]\nGot:\n    [ 0 23 31]\n    [ 0 17 29]\n    [ 0 16  0]\n**********************************************************************\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 42:\n    sage: b*a\nExpected:\n    [15 18 21]\n    [20 17 29]\nGot:\n    [ 0 18 21]\n    [ 0 17 29]\n**********************************************************************\n```\n",
+    "body": "With the new patch, I get these failures:\n\n```\nsage -t  devel/sage-work/sage/matrix/matrix_modn_dense.pyx  **********************************************************************\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 26:\n    sage: a^2\nExpected:\n    [ 3 23 31]\n    [20 17 29]\n    [25 16  0]\nGot:\n    [ 0 23 31]\n    [ 0 17 29]\n    [ 0 16  0]\n**********************************************************************\nFile \"/opt/sage/tmp/matrix_modn_dense.py\", line 42:\n    sage: b*a\nExpected:\n    [15 18 21]\n    [20 17 29]\nGot:\n    [ 0 18 21]\n    [ 0 17 29]\n**********************************************************************\n```",
     "created_at": "2008-08-07T17:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3788",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ archive/issue_comments_026881.json:
 ```
 
 With the new patch, I get these failures:
-
 
 ```
 sage -t  devel/sage-work/sage/matrix/matrix_modn_dense.pyx  **********************************************************************
@@ -143,7 +140,6 @@ Got:
     [ 0 17 29]
 **********************************************************************
 ```
-
 
 
 

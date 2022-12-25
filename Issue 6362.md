@@ -111,7 +111,7 @@ There is problem that one cannot provide testcase... i.e. the issue is during co
 archive/issue_comments_050784.json:
 ```json
 {
-    "body": "I told upstream about this bug and they replied:\n\n```\nThanks for the patch - we agree with it\nand have integrated it into Singular.\n -- Hans Schoenemann\n```\n\n\nThat's a positive review from the singular project director.",
+    "body": "I told upstream about this bug and they replied:\n\n```\nThanks for the patch - we agree with it\nand have integrated it into Singular.\n -- Hans Schoenemann\n```\n\nThat's a positive review from the singular project director.",
     "created_at": "2009-06-23T13:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -127,7 +127,6 @@ Thanks for the patch - we agree with it
 and have integrated it into Singular.
  -- Hans Schoenemann
 ```
-
 
 That's a positive review from the singular project director.
 
@@ -326,7 +325,7 @@ Changing priority from major to blocker.
 archive/issue_comments_050795.json:
 ```json
 {
-    "body": "I checked the changes (after some tutoring from was and jhpalmieri) against the default package included with 4.0.2, released 18 Jun and against the source included with the spkg.\n\nIs there an error in line 725 of patches/mpr_complex.cc? The original source file src/kernel/mpr_complex.cc contains\n\n```\n          sprintf(out,\"%s\",currRing->parameter[0]);\n```\n\nbut the patch contains\n\n```\n          sprintf(out,currRing->parameter[0]);\n```\n\nWhat happened to the \"%s\"? I thought that was required.\n\nEverything else looks fine.",
+    "body": "I checked the changes (after some tutoring from was and jhpalmieri) against the default package included with 4.0.2, released 18 Jun and against the source included with the spkg.\n\nIs there an error in line 725 of patches/mpr_complex.cc? The original source file src/kernel/mpr_complex.cc contains\n\n```\n          sprintf(out,\"%s\",currRing->parameter[0]);\n```\nbut the patch contains\n\n```\n          sprintf(out,currRing->parameter[0]);\n```\nWhat happened to the \"%s\"? I thought that was required.\n\nEverything else looks fine.",
     "created_at": "2009-07-03T05:44:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -342,13 +341,11 @@ Is there an error in line 725 of patches/mpr_complex.cc? The original source fil
 ```
           sprintf(out,"%s",currRing->parameter[0]);
 ```
-
 but the patch contains
 
 ```
           sprintf(out,currRing->parameter[0]);
 ```
-
 What happened to the "%s"? I thought that was required.
 
 Everything else looks fine.
@@ -432,7 +429,7 @@ Fixed description in ticked to make sure which one is latest, as with Johns revi
 archive/issue_comments_050800.json:
 ```json
 {
-    "body": "The spkg causes several doctest failures when built on sage-4.1.alpha3:\n\n```\n        sage -t -long devel/sage/sage/rings/quotient_ring.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/term_order.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_singular_interface.py # 6 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 11 doctests failed\n        sage -t -long devel/sage/sage/interfaces/singular.py # 10 doctests failed\n```\n\n\nThese all seem to be just from the way Singular is printing things, e.g.:\n\n```\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/interfaces/singular.py\", line 975:\n    sage: singular.current_ring()\nExpected:\n    //   characteristic : 127\n    //   number of vars : 3\n    //        block   1 : ordering rp\n    //                  : names    x y z\n    //        block   2 : ordering C\nGot:\n    //   characteristic : 127\n    //   number of vars : 3\n    //        block   1 : ordering rp\n    //                  : names    xyz\n    //        block   2 : ordering C\n**********************************************************************\n```\n\n\nI assume this is nothing major. If someone wants to post a patch, I will gladly finish the review.",
+    "body": "The spkg causes several doctest failures when built on sage-4.1.alpha3:\n\n```\n        sage -t -long devel/sage/sage/rings/quotient_ring.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/term_order.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_singular_interface.py # 6 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 11 doctests failed\n        sage -t -long devel/sage/sage/interfaces/singular.py # 10 doctests failed\n```\n\nThese all seem to be just from the way Singular is printing things, e.g.:\n\n```\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/interfaces/singular.py\", line 975:\n    sage: singular.current_ring()\nExpected:\n    //   characteristic : 127\n    //   number of vars : 3\n    //        block   1 : ordering rp\n    //                  : names    x y z\n    //        block   2 : ordering C\nGot:\n    //   characteristic : 127\n    //   number of vars : 3\n    //        block   1 : ordering rp\n    //                  : names    xyz\n    //        block   2 : ordering C\n**********************************************************************\n```\n\nI assume this is nothing major. If someone wants to post a patch, I will gladly finish the review.",
     "created_at": "2009-07-03T16:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -452,7 +449,6 @@ The spkg causes several doctest failures when built on sage-4.1.alpha3:
         sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 11 doctests failed
         sage -t -long devel/sage/sage/interfaces/singular.py # 10 doctests failed
 ```
-
 
 These all seem to be just from the way Singular is printing things, e.g.:
 
@@ -474,7 +470,6 @@ Got:
     //        block   2 : ordering C
 **********************************************************************
 ```
-
 
 I assume this is nothing major. If someone wants to post a patch, I will gladly finish the review.
 
@@ -557,7 +552,7 @@ Wouldn't it make more sense to not change things upstream, and just fix the doct
 archive/issue_comments_050805.json:
 ```json
 {
-    "body": "I guess the change looks like it wasn't intended, they massively changed Print(\"%s\", ...) (without space after %s) and Print(...) into PrintS(...), printing variable names without spaces or any other means of separation between them doesn't seem like something anyone wants...\n\nalso, what about:\n\n```\nS = singular.ring('real', '(xx,yy)', 'lp')\n```\n\nvs\n\n```\nR = singular.ring('real', '(x,xyy)', 'lp')\n```\n\nthat looks same when variables are printed without separation?",
+    "body": "I guess the change looks like it wasn't intended, they massively changed Print(\"%s\", ...) (without space after %s) and Print(...) into PrintS(...), printing variable names without spaces or any other means of separation between them doesn't seem like something anyone wants...\n\nalso, what about:\n\n```\nS = singular.ring('real', '(xx,yy)', 'lp')\n```\nvs\n\n```\nR = singular.ring('real', '(x,xyy)', 'lp')\n```\nthat looks same when variables are printed without separation?",
     "created_at": "2009-07-03T17:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -573,13 +568,11 @@ also, what about:
 ```
 S = singular.ring('real', '(xx,yy)', 'lp')
 ```
-
 vs
 
 ```
 R = singular.ring('real', '(x,xyy)', 'lp')
 ```
-
 that looks same when variables are printed without separation?
 
 
@@ -623,7 +616,7 @@ archive/issue_events_014972.json:
 archive/issue_comments_050807.json:
 ```json
 {
-    "body": "Replying to [comment:26 aginiewicz]:\n> I guess the change looks like it wasn't intended\n\nIndeed, I talked to upstream about it and they consider this a bug (which they fixed in CVS).",
+    "body": "Replying to [comment:26 aginiewicz]:\n> I guess the change looks like it wasn't intended\n\n\nIndeed, I talked to upstream about it and they consider this a bug (which they fixed in CVS).",
     "created_at": "2009-07-04T13:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -635,6 +628,7 @@ archive/issue_comments_050807.json:
 Replying to [comment:26 aginiewicz]:
 > I guess the change looks like it wasn't intended
 
+
 Indeed, I talked to upstream about it and they consider this a bug (which they fixed in CVS).
 
 
@@ -644,7 +638,7 @@ Indeed, I talked to upstream about it and they consider this a bug (which they f
 archive/issue_comments_050808.json:
 ```json
 {
-    "body": "As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build on OS X, neither 10.4 nor 10.5. Changing the line 201 in /src/factory/GNUmakefile.in:\n\n```\nfactoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)\n```\n\ninto the following two lines:\n\n```\nfactoryobj :=   $(factorysrc:%.cc=%.o)\nfactoryobj :=   $(factoryobj:%.y=%.o)\n```\n\nmade the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:\n\n```\nImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so, 2): Symbol not found: ___eprintf\n  Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib\n  Expected in: dynamic lookup\n```\n\nThis might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)\n\nFor the record, skipping through the install logs, I spotted another error (this time \"copy'n'paste\") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:\n\n```\n\t-$(RANLIB) ${libdir}/libsingfac_g.a\n\t-$(RANLIB) ${libdir}/libsingfac_g.a\n```\n\nand it is obvious from the surrounding lines, that the line 158 should end with \"..._p.a\" instead of \"..._g.a\".\n\n`@`Martin:\nWould you please report the findings so far upstream?",
+    "body": "As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build on OS X, neither 10.4 nor 10.5. Changing the line 201 in /src/factory/GNUmakefile.in:\n\n```\nfactoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)\n```\ninto the following two lines:\n\n```\nfactoryobj :=   $(factorysrc:%.cc=%.o)\nfactoryobj :=   $(factoryobj:%.y=%.o)\n```\nmade the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:\n\n```\nImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so, 2): Symbol not found: ___eprintf\n  Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib\n  Expected in: dynamic lookup\n```\nThis might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)\n\nFor the record, skipping through the install logs, I spotted another error (this time \"copy'n'paste\") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:\n\n```\n\t-$(RANLIB) ${libdir}/libsingfac_g.a\n\t-$(RANLIB) ${libdir}/libsingfac_g.a\n```\nand it is obvious from the surrounding lines, that the line 158 should end with \"..._p.a\" instead of \"..._g.a\".\n\n`@`Martin:\nWould you please report the findings so far upstream?",
     "created_at": "2009-07-06T19:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -658,14 +652,12 @@ As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build
 ```
 factoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)
 ```
-
 into the following two lines:
 
 ```
 factoryobj :=   $(factorysrc:%.cc=%.o)
 factoryobj :=   $(factoryobj:%.y=%.o)
 ```
-
 made the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:
 
 ```
@@ -673,7 +665,6 @@ ImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-pac
   Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib
   Expected in: dynamic lookup
 ```
-
 This might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)
 
 For the record, skipping through the install logs, I spotted another error (this time "copy'n'paste") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:
@@ -682,7 +673,6 @@ For the record, skipping through the install logs, I spotted another error (this
 	-$(RANLIB) ${libdir}/libsingfac_g.a
 	-$(RANLIB) ${libdir}/libsingfac_g.a
 ```
-
 and it is obvious from the surrounding lines, that the line 158 should end with "..._p.a" instead of "..._g.a".
 
 `@`Martin:
@@ -695,7 +685,7 @@ Would you please report the findings so far upstream?
 archive/issue_comments_050809.json:
 ```json
 {
-    "body": "Replying to [comment:29 GeorgSWeber]:\n> As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build on OS X, neither 10.4 nor 10.5. Changing the line 201 in /src/factory/GNUmakefile.in:\n> {{{\n> factoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)\n> }}}\n> into the following two lines:\n> {{{\n> factoryobj :=   $(factorysrc:%.cc=%.o)\n> factoryobj :=   $(factoryobj:%.y=%.o)\n> }}}\n> made the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:\n> {{{\n> ImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so, 2): Symbol not found: ___eprintf\n>   Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib\n>   Expected in: dynamic lookup\n> }}}\n> This might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)\n> \n> For the record, skipping through the install logs, I spotted another error (this time \"copy'n'paste\") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:\n> {{{\n> \t-$(RANLIB) ${libdir}/libsingfac_g.a\n> \t-$(RANLIB) ${libdir}/libsingfac_g.a\n> }}}\n> and it is obvious from the surrounding lines, that the line 158 should end with \"..._p.a\" instead of \"..._g.a\".\n> \n> `@`Martin:\n> Would you please report the findings so far upstream?\n\nOh, that's something already... but anyway, if I can suggest something, maybe [#6470](http://trac.sagemath.org/sage_trac/ticket/6470) would be better for continuation of this (closed) ticket? It will be better exposed that way I think",
+    "body": "Replying to [comment:29 GeorgSWeber]:\n> As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build on OS X, neither 10.4 nor 10.5. Changing the line 201 in /src/factory/GNUmakefile.in:\n> \n> ```\n> factoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)\n> ```\n> into the following two lines:\n> \n> ```\n> factoryobj :=   $(factorysrc:%.cc=%.o)\n> factoryobj :=   $(factoryobj:%.y=%.o)\n> ```\n> made the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:\n> \n> ```\n> ImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so, 2): Symbol not found: ___eprintf\n>   Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib\n>   Expected in: dynamic lookup\n> ```\n> This might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)\n> \n> For the record, skipping through the install logs, I spotted another error (this time \"copy'n'paste\") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:\n> \n> ```\n> \t-$(RANLIB) ${libdir}/libsingfac_g.a\n> \t-$(RANLIB) ${libdir}/libsingfac_g.a\n> ```\n> and it is obvious from the surrounding lines, that the line 158 should end with \"..._p.a\" instead of \"..._g.a\".\n> \n> `@`Martin:\n> Would you please report the findings so far upstream?\n\n\nOh, that's something already... but anyway, if I can suggest something, maybe [#6470](http://trac.sagemath.org/sage_trac/ticket/6470) would be better for continuation of this (closed) ticket? It will be better exposed that way I think",
     "created_at": "2009-07-06T19:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
@@ -706,31 +696,36 @@ archive/issue_comments_050809.json:
 
 Replying to [comment:29 GeorgSWeber]:
 > As contained in Sage-4.1.rc0, singular-3-1-0-4-20090703.spkg does not even build on OS X, neither 10.4 nor 10.5. Changing the line 201 in /src/factory/GNUmakefile.in:
-> {{{
+> 
+> ```
 > factoryobj :=   $(factorysrc:%.cc=%.o) $(factorysrc:%.y=%.o)
-> }}}
+> ```
 > into the following two lines:
-> {{{
+> 
+> ```
 > factoryobj :=   $(factorysrc:%.cc=%.o)
 > factoryobj :=   $(factoryobj:%.y=%.o)
-> }}}
+> ```
 > made the resulting Singular spkg build on OS X 10.4. But after installing it into Sage-4.1.rc0, Sage doesn't even start, it fails with:
-> {{{
+> 
+> ```
 > ImportError: dlopen(/Users/Shared/sage/sage-4.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so, 2): Symbol not found: ___eprintf
 >   Referenced from: /Users/Shared/sage/sage-4.1.rc0/local/lib//libsingular.dylib
 >   Expected in: dynamic lookup
-> }}}
+> ```
 > This might be due to the fact that I had dropped in the 3.1.0.2 Singular spkg before, so I am re-running the build from the start. (I doubt that it'll help, but let's see.)
 > 
 > For the record, skipping through the install logs, I spotted another error (this time "copy'n'paste") in the Singular 3.1.0.4 build scripts. In /src/libfac/Makefile.in, the two identical lines 157/158 read:
-> {{{
+> 
+> ```
 > 	-$(RANLIB) ${libdir}/libsingfac_g.a
 > 	-$(RANLIB) ${libdir}/libsingfac_g.a
-> }}}
+> ```
 > and it is obvious from the surrounding lines, that the line 158 should end with "..._p.a" instead of "..._g.a".
 > 
 > `@`Martin:
 > Would you please report the findings so far upstream?
+
 
 Oh, that's something already... but anyway, if I can suggest something, maybe [#6470](http://trac.sagemath.org/sage_trac/ticket/6470) would be better for continuation of this (closed) ticket? It will be better exposed that way I think
 

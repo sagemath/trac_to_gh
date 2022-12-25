@@ -3,7 +3,7 @@
 archive/issues_008096.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @malb\n\nMultiplication of small square matrices is ridiculously slow:\n\n```\nsage: for d in range(1, 100):\n...    print d\n...    A = random_matrix(GF(3), d)\n...    B = random_matrix(GF(3), d)\n...    timeit(\"C = A*B\")\n    \n\n1\n625 loops, best of 3: 93.8 \u00b5s per loop\n2\n625 loops, best of 3: 93.9 \u00b5s per loop\n3\n625 loops, best of 3: 94.2 \u00b5s per loop\n4\n625 loops, best of 3: 94.1 \u00b5s per loop\n5\n625 loops, best of 3: 94.7 \u00b5s per loop\n6\n625 loops, best of 3: 94.9 \u00b5s per loop\n7\n625 loops, best of 3: 95.2 \u00b5s per loop\n8\n625 loops, best of 3: 95.8 \u00b5s per loop\n9\n625 loops, best of 3: 96.8 \u00b5s per loop\n10\n625 loops, best of 3: 97.6 \u00b5s per loop\n11\n625 loops, best of 3: 98.1 \u00b5s per loop\n12\n625 loops, best of 3: 101 \u00b5s per loop\n13\n625 loops, best of 3: 101 \u00b5s per loop\n14\n625 loops, best of 3: 104 \u00b5s per loop\n15\n625 loops, best of 3: 104 \u00b5s per loop\n16\n625 loops, best of 3: 108 \u00b5s per loop\n17\n625 loops, best of 3: 108 \u00b5s per loop\n18\n625 loops, best of 3: 113 \u00b5s per loop\n19\n625 loops, best of 3: 112 \u00b5s per loop\n20\n625 loops, best of 3: 118 \u00b5s per loop\n21\n625 loops, best of 3: 117 \u00b5s per loop\n22\n625 loops, best of 3: 125 \u00b5s per loop\n23\n625 loops, best of 3: 123 \u00b5s per loop\n24\n625 loops, best of 3: 133 \u00b5s per loop\n25\n625 loops, best of 3: 129 \u00b5s per loop\n26\n625 loops, best of 3: 143 \u00b5s per loop\n27\n625 loops, best of 3: 137 \u00b5s per loop\n28\n625 loops, best of 3: 155 \u00b5s per loop\n29\n625 loops, best of 3: 147 \u00b5s per loop\n30\n625 loops, best of 3: 166 \u00b5s per loop\n31\n625 loops, best of 3: 157 \u00b5s per loop\n32\n625 loops, best of 3: 179 \u00b5s per loop\n33\n625 loops, best of 3: 168 \u00b5s per loop\n34\n625 loops, best of 3: 196 \u00b5s per loop\n35\n625 loops, best of 3: 182 \u00b5s per loop\n36\n625 loops, best of 3: 214 \u00b5s per loop\n37\n625 loops, best of 3: 198 \u00b5s per loop\n38\n625 loops, best of 3: 234 \u00b5s per loop\n39\n625 loops, best of 3: 213 \u00b5s per loop\n40\n625 loops, best of 3: 255 \u00b5s per loop\n41\n625 loops, best of 3: 231 \u00b5s per loop\n42\n625 loops, best of 3: 279 \u00b5s per loop\n43\n625 loops, best of 3: 251 \u00b5s per loop\n44\n625 loops, best of 3: 307 \u00b5s per loop\n45\n625 loops, best of 3: 271 \u00b5s per loop\n46\n625 loops, best of 3: 335 \u00b5s per loop\n47\n625 loops, best of 3: 298 \u00b5s per loop\n48\n625 loops, best of 3: 363 \u00b5s per loop\n49\n625 loops, best of 3: 319 \u00b5s per loop\n50\n625 loops, best of 3: 401 \u00b5s per loop\n51\n625 loops, best of 3: 346 \u00b5s per loop\n```\n\n\nHere's a profile of the 1x1 case:\n\n\n```\n625 loops, best of 3: 91.7 \u00b5s per loop\n         810004 function calls in 5.980 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.100    0.000    0.100    0.000 :0(IntegerMod)\n    30000    0.080    0.000    0.080    0.000 :0(append)\n    10000    0.030    0.000    0.030    0.000 :0(base_ring)\n    10000    0.150    0.000    0.900    0.000 :0(category)\n    40000    0.250    0.000    0.290    0.000 :0(has_key)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.030    0.000    0.030    0.000 :0(is_Matrix)\n    80000    0.250    0.000    0.250    0.000 :0(isinstance)\n    30000    0.070    0.000    0.070    0.000 :0(keys)\n    30000    0.040    0.000    0.040    0.000 :0(len)\n    30001    0.080    0.000    0.080    0.000 :0(range)\n    10000    0.030    0.000    0.030    0.000 :0(setdefault)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n    30000    0.140    0.000    0.140    0.000 :0(sorted)\n        1    0.380    0.380    5.980    5.980 <string>:1(<module>)\n    30000    0.250    0.000    1.750    0.000 cachefunc.py:155(get_key)\n    10000    0.060    0.000    0.850    0.000 cachefunc.py:220(__call__)\n    10000    0.060    0.000    0.090    0.000 cachefunc.py:254(get_cache)\n    10000    0.050    0.000    0.050    0.000 cachefunc.py:275(__get__)\n    20000    0.270    0.000    1.550    0.000 cachefunc.py:76(__call__)\n    20000    0.060    0.000    0.060    0.000 cachefunc.py:95(get_cache)\n    10000    0.070    0.000    2.520    0.000 category.py:459(__contains__)\n    10000    0.360    0.000    1.550    0.000 category.py:651(is_subcategory)\n    20000    0.120    0.000    1.670    0.000 classcall_metaclass.py:64(__call__)\n    20000    0.040    0.000    0.040    0.000 finite_field_prime_modn.py:121(characteristic)\n    20000    0.110    0.000    0.110    0.000 finite_field_prime_modn.py:187(order)\n    30000    1.010    0.000    1.500    0.000 function_mangling.py:205(fix_to_pos)\n    30000    0.080    0.000    0.080    0.000 function_mangling.py:261(<genexpr>)\n    40000    0.290    0.000    0.390    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.050    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.450    0.000    0.710    0.000 matrix_space.py:1035(matrix)\n    10000    0.140    0.000    4.000    0.000 matrix_space.py:1089(matrix_space)\n    10000    0.200    0.000    3.830    0.000 matrix_space.py:110(MatrixSpace)\n    10000    0.000    0.000    0.000    0.000 matrix_space.py:1112(ncols)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1124(nrows)\n    10000    0.310    0.000    1.270    0.000 matrix_space.py:271(__call__)\n    10000    0.000    0.000    0.000    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    5.980    5.980 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n    90000    0.270    0.000    0.270    0.000 unique_representation.py:454(__eq__)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8096\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @malb\n\nMultiplication of small square matrices is ridiculously slow:\n\n```\nsage: for d in range(1, 100):\n...    print d\n...    A = random_matrix(GF(3), d)\n...    B = random_matrix(GF(3), d)\n...    timeit(\"C = A*B\")\n    \n\n1\n625 loops, best of 3: 93.8 \u00b5s per loop\n2\n625 loops, best of 3: 93.9 \u00b5s per loop\n3\n625 loops, best of 3: 94.2 \u00b5s per loop\n4\n625 loops, best of 3: 94.1 \u00b5s per loop\n5\n625 loops, best of 3: 94.7 \u00b5s per loop\n6\n625 loops, best of 3: 94.9 \u00b5s per loop\n7\n625 loops, best of 3: 95.2 \u00b5s per loop\n8\n625 loops, best of 3: 95.8 \u00b5s per loop\n9\n625 loops, best of 3: 96.8 \u00b5s per loop\n10\n625 loops, best of 3: 97.6 \u00b5s per loop\n11\n625 loops, best of 3: 98.1 \u00b5s per loop\n12\n625 loops, best of 3: 101 \u00b5s per loop\n13\n625 loops, best of 3: 101 \u00b5s per loop\n14\n625 loops, best of 3: 104 \u00b5s per loop\n15\n625 loops, best of 3: 104 \u00b5s per loop\n16\n625 loops, best of 3: 108 \u00b5s per loop\n17\n625 loops, best of 3: 108 \u00b5s per loop\n18\n625 loops, best of 3: 113 \u00b5s per loop\n19\n625 loops, best of 3: 112 \u00b5s per loop\n20\n625 loops, best of 3: 118 \u00b5s per loop\n21\n625 loops, best of 3: 117 \u00b5s per loop\n22\n625 loops, best of 3: 125 \u00b5s per loop\n23\n625 loops, best of 3: 123 \u00b5s per loop\n24\n625 loops, best of 3: 133 \u00b5s per loop\n25\n625 loops, best of 3: 129 \u00b5s per loop\n26\n625 loops, best of 3: 143 \u00b5s per loop\n27\n625 loops, best of 3: 137 \u00b5s per loop\n28\n625 loops, best of 3: 155 \u00b5s per loop\n29\n625 loops, best of 3: 147 \u00b5s per loop\n30\n625 loops, best of 3: 166 \u00b5s per loop\n31\n625 loops, best of 3: 157 \u00b5s per loop\n32\n625 loops, best of 3: 179 \u00b5s per loop\n33\n625 loops, best of 3: 168 \u00b5s per loop\n34\n625 loops, best of 3: 196 \u00b5s per loop\n35\n625 loops, best of 3: 182 \u00b5s per loop\n36\n625 loops, best of 3: 214 \u00b5s per loop\n37\n625 loops, best of 3: 198 \u00b5s per loop\n38\n625 loops, best of 3: 234 \u00b5s per loop\n39\n625 loops, best of 3: 213 \u00b5s per loop\n40\n625 loops, best of 3: 255 \u00b5s per loop\n41\n625 loops, best of 3: 231 \u00b5s per loop\n42\n625 loops, best of 3: 279 \u00b5s per loop\n43\n625 loops, best of 3: 251 \u00b5s per loop\n44\n625 loops, best of 3: 307 \u00b5s per loop\n45\n625 loops, best of 3: 271 \u00b5s per loop\n46\n625 loops, best of 3: 335 \u00b5s per loop\n47\n625 loops, best of 3: 298 \u00b5s per loop\n48\n625 loops, best of 3: 363 \u00b5s per loop\n49\n625 loops, best of 3: 319 \u00b5s per loop\n50\n625 loops, best of 3: 401 \u00b5s per loop\n51\n625 loops, best of 3: 346 \u00b5s per loop\n```\n\nHere's a profile of the 1x1 case:\n\n```\n625 loops, best of 3: 91.7 \u00b5s per loop\n         810004 function calls in 5.980 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.100    0.000    0.100    0.000 :0(IntegerMod)\n    30000    0.080    0.000    0.080    0.000 :0(append)\n    10000    0.030    0.000    0.030    0.000 :0(base_ring)\n    10000    0.150    0.000    0.900    0.000 :0(category)\n    40000    0.250    0.000    0.290    0.000 :0(has_key)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.030    0.000    0.030    0.000 :0(is_Matrix)\n    80000    0.250    0.000    0.250    0.000 :0(isinstance)\n    30000    0.070    0.000    0.070    0.000 :0(keys)\n    30000    0.040    0.000    0.040    0.000 :0(len)\n    30001    0.080    0.000    0.080    0.000 :0(range)\n    10000    0.030    0.000    0.030    0.000 :0(setdefault)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n    30000    0.140    0.000    0.140    0.000 :0(sorted)\n        1    0.380    0.380    5.980    5.980 <string>:1(<module>)\n    30000    0.250    0.000    1.750    0.000 cachefunc.py:155(get_key)\n    10000    0.060    0.000    0.850    0.000 cachefunc.py:220(__call__)\n    10000    0.060    0.000    0.090    0.000 cachefunc.py:254(get_cache)\n    10000    0.050    0.000    0.050    0.000 cachefunc.py:275(__get__)\n    20000    0.270    0.000    1.550    0.000 cachefunc.py:76(__call__)\n    20000    0.060    0.000    0.060    0.000 cachefunc.py:95(get_cache)\n    10000    0.070    0.000    2.520    0.000 category.py:459(__contains__)\n    10000    0.360    0.000    1.550    0.000 category.py:651(is_subcategory)\n    20000    0.120    0.000    1.670    0.000 classcall_metaclass.py:64(__call__)\n    20000    0.040    0.000    0.040    0.000 finite_field_prime_modn.py:121(characteristic)\n    20000    0.110    0.000    0.110    0.000 finite_field_prime_modn.py:187(order)\n    30000    1.010    0.000    1.500    0.000 function_mangling.py:205(fix_to_pos)\n    30000    0.080    0.000    0.080    0.000 function_mangling.py:261(<genexpr>)\n    40000    0.290    0.000    0.390    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.050    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.450    0.000    0.710    0.000 matrix_space.py:1035(matrix)\n    10000    0.140    0.000    4.000    0.000 matrix_space.py:1089(matrix_space)\n    10000    0.200    0.000    3.830    0.000 matrix_space.py:110(MatrixSpace)\n    10000    0.000    0.000    0.000    0.000 matrix_space.py:1112(ncols)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1124(nrows)\n    10000    0.310    0.000    1.270    0.000 matrix_space.py:271(__call__)\n    10000    0.000    0.000    0.000    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    5.980    5.980 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n    90000    0.270    0.000    0.270    0.000 unique_representation.py:454(__eq__)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8096\n\n",
     "created_at": "2010-01-27T20:32:00Z",
     "labels": [
         "component: linear algebra",
@@ -135,9 +135,7 @@ sage: for d in range(1, 100):
 625 loops, best of 3: 346 µs per loop
 ```
 
-
 Here's a profile of the 1x1 case:
-
 
 ```
 625 loops, best of 3: 91.7 µs per loop
@@ -188,7 +186,6 @@ Here's a profile of the 1x1 case:
     90000    0.270    0.000    0.270    0.000 unique_representation.py:454(__eq__)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8096
 
 
@@ -236,7 +233,7 @@ Attachment [8096-new_matrix.patch](tarball://root/attachments/some-uuid/ticket80
 archive/issue_comments_070854.json:
 ```json
 {
-    "body": "I'm not sure that I did this in the right place, but it cuts the time to multiply two 1x1 matrices down to 1/3 of the previous time -- which is still dog slow, but significantly better.  As a reference,\n\n\n```\nsage: A = GF(3).random_element()\nsage: B = GF(3).random_element()\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 142 ns per loop\n```\n\n\nand with this patch, I'm getting:\n\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 32.5 \u00b5s per loop\n\nsage: import profile\nsage: profile.run(\"for i in range(10000): C = A*B\")\n         250004 function calls in 1.840 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.120    0.000    0.120    0.000 :0(IntegerMod)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.060    0.000    0.060    0.000 :0(is_Matrix)\n    70000    0.190    0.000    0.190    0.000 :0(isinstance)\n        1    0.000    0.000    0.000    0.000 :0(range)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n        1    0.400    0.400    1.840    1.840 <string>:1(<module>)\n    20000    0.060    0.000    0.060    0.000 finite_field_prime_modn.py:121(characteristic)\n    40000    0.230    0.000    0.350    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.060    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.390    0.000    0.720    0.000 matrix_space.py:1035(matrix)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1112(ncols)\n    10000    0.020    0.000    0.020    0.000 matrix_space.py:1124(nrows)\n    10000    0.160    0.000    1.100    0.000 matrix_space.py:271(__call__)\n    10000    0.050    0.000    0.050    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    1.840    1.840 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n```\n",
+    "body": "I'm not sure that I did this in the right place, but it cuts the time to multiply two 1x1 matrices down to 1/3 of the previous time -- which is still dog slow, but significantly better.  As a reference,\n\n```\nsage: A = GF(3).random_element()\nsage: B = GF(3).random_element()\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 142 ns per loop\n```\n\nand with this patch, I'm getting:\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 32.5 \u00b5s per loop\n\nsage: import profile\nsage: profile.run(\"for i in range(10000): C = A*B\")\n         250004 function calls in 1.840 CPU seconds\n\n   Ordered by: standard name\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    40000    0.120    0.000    0.120    0.000 :0(IntegerMod)\n    10000    0.070    0.000    0.070    0.000 :0(hasattr)\n    10000    0.060    0.000    0.060    0.000 :0(is_Matrix)\n    70000    0.190    0.000    0.190    0.000 :0(isinstance)\n        1    0.000    0.000    0.000    0.000 :0(range)\n        1    0.000    0.000    0.000    0.000 :0(setprofile)\n        1    0.400    0.400    1.840    1.840 <string>:1(<module>)\n    20000    0.060    0.000    0.060    0.000 finite_field_prime_modn.py:121(characteristic)\n    40000    0.230    0.000    0.350    0.000 integer_mod_ring.py:733(__call__)\n    10000    0.060    0.000    0.070    0.000 matrix_group_element.py:68(is_MatrixGroupElement)\n    10000    0.390    0.000    0.720    0.000 matrix_space.py:1035(matrix)\n    10000    0.030    0.000    0.030    0.000 matrix_space.py:1112(ncols)\n    10000    0.020    0.000    0.020    0.000 matrix_space.py:1124(nrows)\n    10000    0.160    0.000    1.100    0.000 matrix_space.py:271(__call__)\n    10000    0.050    0.000    0.050    0.000 misc.py:514(get_verbose)\n        1    0.000    0.000    1.840    1.840 profile:0(for i in range(10000): C = A*B)\n        0    0.000             0.000          profile:0(profiler)\n```",
     "created_at": "2010-01-28T01:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -247,7 +244,6 @@ archive/issue_comments_070854.json:
 
 I'm not sure that I did this in the right place, but it cuts the time to multiply two 1x1 matrices down to 1/3 of the previous time -- which is still dog slow, but significantly better.  As a reference,
 
-
 ```
 sage: A = GF(3).random_element()
 sage: B = GF(3).random_element()
@@ -255,9 +251,7 @@ sage: timeit("C = A*B")
 625 loops, best of 3: 142 ns per loop
 ```
 
-
 and with this patch, I'm getting:
-
 
 ```
 sage: d = 1
@@ -294,7 +288,6 @@ sage: profile.run("for i in range(10000): C = A*B")
 
 
 
-
 ---
 
 archive/issue_comments_070855.json:
@@ -318,7 +311,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070856.json:
 ```json
 {
-    "body": "Replying to [comment:2 boothby]:\n\n> ... As a reference, ` sage: A = GF(3).random_element() sage: B = GF(3).random_element() sage: timeit(\"C = A*B\") 625 loops, best of 3: ``142 ns`` per loop ` and with this patch, I'm getting: {{{ sage: d = 1 sage: A = random_matrix(GF(3), d) sage: B = random_matrix(GF(3), d) sage: timeit(\"C = A*B\") 625 loops, best of 3: 32.5 \u00b5s per loop\n\nBut 32.5 \u00b5s (with the patch) is much *slower *than `142 ns (without the patch)!`",
+    "body": "Replying to [comment:2 boothby]:\n\n> ... As a reference, ` sage: A = GF(3).random_element() sage: B = GF(3).random_element() sage: timeit(\"C = A*B\") 625 loops, best of 3: ``142 ns`` per loop ` and with this patch, I'm getting: {{{ sage: d = 1 sage: A = random_matrix(GF(3), d) sage: B = random_matrix(GF(3), d) sage: timeit(\"C = A*B\") 625 loops, best of 3: 32.5 \u00b5s per loop\n\n\nBut 32.5 \u00b5s (with the patch) is much *slower *than `142 ns (without the patch)!`",
     "created_at": "2010-01-30T23:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -330,6 +323,7 @@ archive/issue_comments_070856.json:
 Replying to [comment:2 boothby]:
 
 > ... As a reference, ` sage: A = GF(3).random_element() sage: B = GF(3).random_element() sage: timeit("C = A*B") 625 loops, best of 3: ``142 ns`` per loop ` and with this patch, I'm getting: {{{ sage: d = 1 sage: A = random_matrix(GF(3), d) sage: B = random_matrix(GF(3), d) sage: timeit("C = A*B") 625 loops, best of 3: 32.5 µs per loop
+
 
 But 32.5 µs (with the patch) is much *slower *than `142 ns (without the patch)!`
 
@@ -360,7 +354,7 @@ I'd like the 32.5µs to go away, but I don't know how much of that would be poss
 archive/issue_comments_070858.json:
 ```json
 {
-    "body": "Replying to [comment:4 boothby]:\n\n> You'll note that the 32.5\u00b5s is matrix-by-matrix, whereas the 142ns is element-by-element.  Before my patch, the matrix-by-matrix time was 101\u00b5s. I'd like the 32.5\u00b5s to go away, but I don't know how much of that would be possible, at the moment.\n\nOK, then it is an improvement. I hope to be able to do some refereeing later today or tomorrow.\n\nAnyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By \"slow\", I mean \"compared with MeatAxe matrices as provided by my cohomology spkg\":\n\n\n```\nsage: from pGroupCohomology.mtx import MTX\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n625 loops, best of 3: 99.6 \u00c2\u00b5s per loop\nsage: timeit(\"c=a*b\")\n625 loops, best of 3: 1.01 \u00c2\u00b5s per loop\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\nsage: A = random_matrix(F,100)\nsage: B = random_matrix(F,100)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n125 loops, best of 3: 2.43 ms per loop\nsage: timeit(\"c=a*b\")\n625 loops, best of 3: 376 \u00c2\u00b5s per loop\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\n```\n",
+    "body": "Replying to [comment:4 boothby]:\n\n> You'll note that the 32.5\u00b5s is matrix-by-matrix, whereas the 142ns is element-by-element.  Before my patch, the matrix-by-matrix time was 101\u00b5s. I'd like the 32.5\u00b5s to go away, but I don't know how much of that would be possible, at the moment.\n\n\nOK, then it is an improvement. I hope to be able to do some refereeing later today or tomorrow.\n\nAnyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By \"slow\", I mean \"compared with MeatAxe matrices as provided by my cohomology spkg\":\n\n```\nsage: from pGroupCohomology.mtx import MTX\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n625 loops, best of 3: 99.6 \u00c2\u00b5s per loop\nsage: timeit(\"c=a*b\")\n625 loops, best of 3: 1.01 \u00c2\u00b5s per loop\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\nsage: A = random_matrix(F,100)\nsage: B = random_matrix(F,100)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n125 loops, best of 3: 2.43 ms per loop\nsage: timeit(\"c=a*b\")\n625 loops, best of 3: 376 \u00c2\u00b5s per loop\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\n```",
     "created_at": "2010-01-31T09:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -373,10 +367,10 @@ Replying to [comment:4 boothby]:
 
 > You'll note that the 32.5µs is matrix-by-matrix, whereas the 142ns is element-by-element.  Before my patch, the matrix-by-matrix time was 101µs. I'd like the 32.5µs to go away, but I don't know how much of that would be possible, at the moment.
 
+
 OK, then it is an improvement. I hope to be able to do some refereeing later today or tomorrow.
 
 Anyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By "slow", I mean "compared with MeatAxe matrices as provided by my cohomology spkg":
-
 
 ```
 sage: from pGroupCohomology.mtx import MTX
@@ -405,13 +399,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_070859.json:
 ```json
 {
-    "body": "Replying to [comment:5 SimonKing]:\n\n> Anyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By \"slow\", I mean \"compared with MeatAxe matrices as provided by my cohomology spkg\":\n\nThis is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.",
+    "body": "Replying to [comment:5 SimonKing]:\n\n> Anyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By \"slow\", I mean \"compared with MeatAxe matrices as provided by my cohomology spkg\":\n\n\nThis is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.",
     "created_at": "2010-01-31T10:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -424,6 +417,7 @@ Replying to [comment:5 SimonKing]:
 
 > Anyway, I still wonder why basic matrix operations in Sage tend to be so slow. I mean, do any complicated operations with parents happen behind the scenes? By "slow", I mean "compared with MeatAxe matrices as provided by my cohomology spkg":
 
+
 This is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.
 
 
@@ -433,7 +427,7 @@ This is because they have only been optimized for large dimension and word-sized
 archive/issue_comments_070860.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n\n> This is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.\n\nYou just lost the bet.\n\n\n```\nsage: from pGroupCohomology.mtx import MTX\nsage: F = GF(3)\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n5 loops, best of 3: 12.6 s per loop\nsage: timeit(\"c=a*b\")\n5 loops, best of 3: 2.01 s per loop\nsage: C = A*B\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\n```\n\nWhen I did some benchmarks two years ago, I was often astonished how MeatAxe outperformed the usual matrices in Sage in basic operations such as computing hash, copying, getting the list of coefficients, changing a coefficient, etc: Hash and copying took *seconds* for size 10000x10000!\n\nI complained, and things did improve: hash and copy is alright. But with the above matrix, loads(dumps(A)) did not terminate after a minute, and ate 90% of my computer's memory.",
+    "body": "Replying to [comment:6 robertwb]:\n\n> This is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.\n\n\nYou just lost the bet.\n\n```\nsage: from pGroupCohomology.mtx import MTX\nsage: F = GF(3)\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: a = MTX(3,[list(r) for r in A.rows()])\nsage: b = MTX(3,[list(r) for r in B.rows()])\nsage: timeit(\"C=A*B\")\n5 loops, best of 3: 12.6 s per loop\nsage: timeit(\"c=a*b\")\n5 loops, best of 3: 2.01 s per loop\nsage: C = A*B\nsage: a*b == MTX(3,[list(r) for r in C.rows()])\nTrue\n```\nWhen I did some benchmarks two years ago, I was often astonished how MeatAxe outperformed the usual matrices in Sage in basic operations such as computing hash, copying, getting the list of coefficients, changing a coefficient, etc: Hash and copying took *seconds* for size 10000x10000!\n\nI complained, and things did improve: hash and copy is alright. But with the above matrix, loads(dumps(A)) did not terminate after a minute, and ate 90% of my computer's memory.",
     "created_at": "2010-01-31T11:52:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -446,8 +440,8 @@ Replying to [comment:6 robertwb]:
 
 > This is because they have only been optimized for large dimension and word-sized p. I bet MeatAxe is slower for 1000 x 1000 matrices.
 
-You just lost the bet.
 
+You just lost the bet.
 
 ```
 sage: from pGroupCohomology.mtx import MTX
@@ -464,7 +458,6 @@ sage: C = A*B
 sage: a*b == MTX(3,[list(r) for r in C.rows()])
 True
 ```
-
 When I did some benchmarks two years ago, I was often astonished how MeatAxe outperformed the usual matrices in Sage in basic operations such as computing hash, copying, getting the list of coefficients, changing a coefficient, etc: Hash and copying took *seconds* for size 10000x10000!
 
 I complained, and things did improve: hash and copy is alright. But with the above matrix, loads(dumps(A)) did not terminate after a minute, and ate 90% of my computer's memory.
@@ -496,7 +489,7 @@ apply on top of previous
 archive/issue_comments_070862.json:
 ```json
 {
-    "body": "SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic? At least one can do\n\n\n```\nsage: A = random_matrix(GF(3), 2000)\nsage: B = random_matrix(GF(3), 2000)\nsage: %timeit A._multiply_linbox(B)\n5 loops, best of 3: 1.9 s per loop\n```\n\n\nbut I agree the current state of matrices are in quite a bit of a mess. Granted, most of this code was written *way* back before Sage had the quality control it has now, just to get something up and running, and hasn't been touched since. (They're pretty good over Z and Q, which is what I use...)\n\nTom: Your patch looks good, positive review to that. I've posted another patch which provides another 2x speedup. There's still a lot of cruft it goes through, and matrix_space could really stand to be cythonized (there are 3 mandatory Python calls on it every time a matrix is created), but I don't have time to dig through it now.",
+    "body": "SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic? At least one can do\n\n```\nsage: A = random_matrix(GF(3), 2000)\nsage: B = random_matrix(GF(3), 2000)\nsage: %timeit A._multiply_linbox(B)\n5 loops, best of 3: 1.9 s per loop\n```\n\nbut I agree the current state of matrices are in quite a bit of a mess. Granted, most of this code was written *way* back before Sage had the quality control it has now, just to get something up and running, and hasn't been touched since. (They're pretty good over Z and Q, which is what I use...)\n\nTom: Your patch looks good, positive review to that. I've posted another patch which provides another 2x speedup. There's still a lot of cruft it goes through, and matrix_space could really stand to be cythonized (there are 3 mandatory Python calls on it every time a matrix is created), but I don't have time to dig through it now.",
     "created_at": "2010-01-31T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -507,14 +500,12 @@ archive/issue_comments_070862.json:
 
 SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic? At least one can do
 
-
 ```
 sage: A = random_matrix(GF(3), 2000)
 sage: B = random_matrix(GF(3), 2000)
 sage: %timeit A._multiply_linbox(B)
 5 loops, best of 3: 1.9 s per loop
 ```
-
 
 but I agree the current state of matrices are in quite a bit of a mess. Granted, most of this code was written *way* back before Sage had the quality control it has now, just to get something up and running, and hasn't been touched since. (They're pretty good over Z and Q, which is what I use...)
 
@@ -527,7 +518,7 @@ Tom: Your patch looks good, positive review to that. I've posted another patch w
 archive/issue_comments_070863.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n\n> SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic?\n\nYes. Over a non-prime field:\n\n\n```\nsage: F = GF(8,'t')\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: from pGroupCohomology.mtx import MTX\nsage: a = MTX(8,[list(r) for r in A.rows()])\nsage: b = MTX(8,[list(r) for r in B.rows()])\nsage: %time c = a*b\nCPU times: user 5.19 s, sys: 0.00 s, total: 5.19 s\nWall time: 5.19 s\nsage: %time C = A*B\n```\n\nThe last line took several minutes, and it was not possible to interrupt with Ctrl-c. So, I had to kill the Python process.\n\nAnd with a bigger prime, comparing against linbox:\n\n\n```\nsage: F = GF(37)\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: a = MTX(37,[list(r) for r in A.rows()])\nsage: b = MTX(37,[list(r) for r in B.rows()])\nsage: %time c = a*b\nCPU times: user 11.83 s, sys: 0.00 s, total: 11.84 s\nWall time: 11.87 s\nsage: %time C = A._multiply_linbox(B)\nCPU times: user 1.82 s, sys: 0.00 s, total: 1.82 s\nWall time: 1.82 s\nsage: %time C = A*B\nCPU times: user 12.65 s, sys: 0.00 s, total: 12.65 s\nWall time: 12.70 s\n```\n\nIn other words, for bigger fields, linbox is clearly better than MeatAxe, but the overhead kills it.\n\n> At least one can do ` sage: A = random_matrix(GF(3), 2000) sage: B = random_matrix(GF(3), 2000) sage: %timeit A._multiply_linbox(B) 5 loops, best of 3: 1.9 s per loop`\n\nAgain, there is a huge overhead. But at what point? I mean, the parents of A and B are the same, so, it can't be in the coercion model. And if two matrices have the same parent, then I'd expect that `A*B` would simply call A._multiply_linbox(B).\n\n> Tom: Your patch looks good, positive review to that. I've posted another patch which provides another 2x speedup. There's still a lot of cruft it goes through, and matrix_space could really stand to be cythonized (there are 3 mandatory Python calls on it every time a matrix is created), but I don't have time to dig through it now.\n\nWhich means, a third person (e.g.) should review both Tom's and your patch, right?",
+    "body": "Replying to [comment:8 robertwb]:\n\n> SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic?\n\n\nYes. Over a non-prime field:\n\n```\nsage: F = GF(8,'t')\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: from pGroupCohomology.mtx import MTX\nsage: a = MTX(8,[list(r) for r in A.rows()])\nsage: b = MTX(8,[list(r) for r in B.rows()])\nsage: %time c = a*b\nCPU times: user 5.19 s, sys: 0.00 s, total: 5.19 s\nWall time: 5.19 s\nsage: %time C = A*B\n```\nThe last line took several minutes, and it was not possible to interrupt with Ctrl-c. So, I had to kill the Python process.\n\nAnd with a bigger prime, comparing against linbox:\n\n```\nsage: F = GF(37)\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: a = MTX(37,[list(r) for r in A.rows()])\nsage: b = MTX(37,[list(r) for r in B.rows()])\nsage: %time c = a*b\nCPU times: user 11.83 s, sys: 0.00 s, total: 11.84 s\nWall time: 11.87 s\nsage: %time C = A._multiply_linbox(B)\nCPU times: user 1.82 s, sys: 0.00 s, total: 1.82 s\nWall time: 1.82 s\nsage: %time C = A*B\nCPU times: user 12.65 s, sys: 0.00 s, total: 12.65 s\nWall time: 12.70 s\n```\nIn other words, for bigger fields, linbox is clearly better than MeatAxe, but the overhead kills it.\n\n> At least one can do ` sage: A = random_matrix(GF(3), 2000) sage: B = random_matrix(GF(3), 2000) sage: %timeit A._multiply_linbox(B) 5 loops, best of 3: 1.9 s per loop`\n\n\nAgain, there is a huge overhead. But at what point? I mean, the parents of A and B are the same, so, it can't be in the coercion model. And if two matrices have the same parent, then I'd expect that `A*B` would simply call A._multiply_linbox(B).\n\n> Tom: Your patch looks good, positive review to that. I've posted another patch which provides another 2x speedup. There's still a lot of cruft it goes through, and matrix_space could really stand to be cythonized (there are 3 mandatory Python calls on it every time a matrix is created), but I don't have time to dig through it now.\n\n\nWhich means, a third person (e.g.) should review both Tom's and your patch, right?",
     "created_at": "2010-01-31T16:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -540,8 +531,8 @@ Replying to [comment:8 robertwb]:
 
 > SimonKing: I'm impressed and depressed. Is MeatAxe's runtime a function of the characteristic?
 
-Yes. Over a non-prime field:
 
+Yes. Over a non-prime field:
 
 ```
 sage: F = GF(8,'t')
@@ -555,11 +546,9 @@ CPU times: user 5.19 s, sys: 0.00 s, total: 5.19 s
 Wall time: 5.19 s
 sage: %time C = A*B
 ```
-
 The last line took several minutes, and it was not possible to interrupt with Ctrl-c. So, I had to kill the Python process.
 
 And with a bigger prime, comparing against linbox:
-
 
 ```
 sage: F = GF(37)
@@ -577,14 +566,15 @@ sage: %time C = A*B
 CPU times: user 12.65 s, sys: 0.00 s, total: 12.65 s
 Wall time: 12.70 s
 ```
-
 In other words, for bigger fields, linbox is clearly better than MeatAxe, but the overhead kills it.
 
 > At least one can do ` sage: A = random_matrix(GF(3), 2000) sage: B = random_matrix(GF(3), 2000) sage: %timeit A._multiply_linbox(B) 5 loops, best of 3: 1.9 s per loop`
 
+
 Again, there is a huge overhead. But at what point? I mean, the parents of A and B are the same, so, it can't be in the coercion model. And if two matrices have the same parent, then I'd expect that `A*B` would simply call A._multiply_linbox(B).
 
 > Tom: Your patch looks good, positive review to that. I've posted another patch which provides another 2x speedup. There's still a lot of cruft it goes through, and matrix_space could really stand to be cythonized (there are 3 mandatory Python calls on it every time a matrix is created), but I don't have time to dig through it now.
+
 
 Which means, a third person (e.g.) should review both Tom's and your patch, right?
 
@@ -595,7 +585,7 @@ Which means, a third person (e.g.) should review both Tom's and your patch, righ
 archive/issue_comments_070864.json:
 ```json
 {
-    "body": "With the patch, I get:\n\n\n```\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: %timeit C = A*B\n625 loops, best of 3: 14.9 \u00b5s per loop # was: 99.6 \u00c2\u00b5s\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: %timeit C = A*B\n5 loops, best of 3: 12.4 s per loop # was: 12.6 s\n```\n\nSo, there is only a small improvement. But it *is* an improvement.\n\nI currently do sage -testall. If it passes, I'll give it a positive review, and suggest to open two new tickets, one concerning the overhead in multiplying matrices, the other concerning the problem that loads(dumps()) fails on big matrices.",
+    "body": "With the patch, I get:\n\n```\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: %timeit C = A*B\n625 loops, best of 3: 14.9 \u00b5s per loop # was: 99.6 \u00c2\u00b5s\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: %timeit C = A*B\n5 loops, best of 3: 12.4 s per loop # was: 12.6 s\n```\nSo, there is only a small improvement. But it *is* an improvement.\n\nI currently do sage -testall. If it passes, I'll give it a positive review, and suggest to open two new tickets, one concerning the overhead in multiplying matrices, the other concerning the problem that loads(dumps()) fails on big matrices.",
     "created_at": "2010-01-31T16:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -605,7 +595,6 @@ archive/issue_comments_070864.json:
 ```
 
 With the patch, I get:
-
 
 ```
 sage: F = GF(3)
@@ -618,7 +607,6 @@ sage: B = random_matrix(F,2000)
 sage: %timeit C = A*B
 5 loops, best of 3: 12.4 s per loop # was: 12.6 s
 ```
-
 So, there is only a small improvement. But it *is* an improvement.
 
 I currently do sage -testall. If it passes, I'll give it a positive review, and suggest to open two new tickets, one concerning the overhead in multiplying matrices, the other concerning the problem that loads(dumps()) fails on big matrices.
@@ -726,7 +714,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_070870.json:
 ```json
 {
-    "body": "I think it is worth while to revive that ticket!\n\nThere has been some work done in the past, e.g., on #10763 (already merged) and #11589. I therefore suggest to start with determining the status quo (performance wise). \n\nThe following is with sage-4.7.rc2 (which contains #10763) and #11589. I provide the timings with sage-4.6.2 in square brackets:\n\n```\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: %timeit C = A*B\n625 loops, best of 3: 36.6 \u00b5s per loop\n[625 loops, best of 3: 54.6 \u00b5s per loop]\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: %timeit C = A*B\n5 loops, best of 3: 8.36 s per loop\n[5 loops, best of 3: 8.27 s per loop]\n```\n\n\nSo, part of the issue with small matrices is resolved. The second patch [attachment:8096-new_matrix.patch] is actually obsoleted by #10763 and #11589, and the first patch needs to be rebased.\n\nHowever, large matrices are still not nice. We have seen that linbox provides a much faster multiplication. Wouldn't it be a valid approach to use linbox more often? Perhaps make it the default over finite fields?",
+    "body": "I think it is worth while to revive that ticket!\n\nThere has been some work done in the past, e.g., on #10763 (already merged) and #11589. I therefore suggest to start with determining the status quo (performance wise). \n\nThe following is with sage-4.7.rc2 (which contains #10763) and #11589. I provide the timings with sage-4.6.2 in square brackets:\n\n```\nsage: F = GF(3)\nsage: A = random_matrix(F,3)\nsage: B = random_matrix(F,3)\nsage: %timeit C = A*B\n625 loops, best of 3: 36.6 \u00b5s per loop\n[625 loops, best of 3: 54.6 \u00b5s per loop]\nsage: A = random_matrix(F,2000)\nsage: B = random_matrix(F,2000)\nsage: %timeit C = A*B\n5 loops, best of 3: 8.36 s per loop\n[5 loops, best of 3: 8.27 s per loop]\n```\n\nSo, part of the issue with small matrices is resolved. The second patch [attachment:8096-new_matrix.patch] is actually obsoleted by #10763 and #11589, and the first patch needs to be rebased.\n\nHowever, large matrices are still not nice. We have seen that linbox provides a much faster multiplication. Wouldn't it be a valid approach to use linbox more often? Perhaps make it the default over finite fields?",
     "created_at": "2011-07-12T14:03:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -754,7 +742,6 @@ sage: %timeit C = A*B
 5 loops, best of 3: 8.36 s per loop
 [5 loops, best of 3: 8.27 s per loop]
 ```
-
 
 So, part of the issue with small matrices is resolved. The second patch [attachment:8096-new_matrix.patch] is actually obsoleted by #10763 and #11589, and the first patch needs to be rebased.
 
@@ -807,7 +794,7 @@ I guess that the generic Strassen-Winograd implementation in sage.matrix.strasse
 archive/issue_comments_070873.json:
 ```json
 {
-    "body": "Here is another data point concerning slowness - ridiculous slowness, actually - of matrix multiplication in Sage. The following is with sage-4.7.1.rc1 plus the patches from #11589:\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\n# I think the following is already WAY too slow!\nsage: %time A = MS.random_element()\nCPU times: user 38.42 s, sys: 0.13 s, total: 38.55 s\nWall time: 38.67 s\nsage: B = MS.random_element()\nsage: %time C = A*B\n^C^C^C^C^C^C^C^C^C^C^C^C^C^C\n```\n\n\nIn other words:\n\n1. The computation can not be interrupted, which is a bug.\n2. The computation takes more than 45 minutes!!!\n3. The computation takes more than 880 MB.\n\nAs much as I see, GF(2) is the *only* finite field such that multiplication of square matrices over that field is not blatantly slow in Sage.\n\nIt makes me wonder if we shouldn't use a different package for matrix multiplication over finite fields different from GF(2).\n\nAs much as I know, there already is an experimental version for matrices over `GF(2^n)`, isn't it, Martin? How fast is it?\n\nOver finite prime fields, we could use Linbox. There are tickets to do so.\n\nBut What about finite non-prime fields? Would it be a reasonable idea to use something based on `MeatAxe`?\n\nI will very likely be using a Sage wrapper for `MeatAxe` matrices in my current project. So, I'll do the work anyway. From my perspective, the only question is whether we can/should use it by default in Sage.\n\nHere are some relevant data:\n\n1. I work on top of `MeatAxe 2.2.4`. That version is identic with 2.2.3, with one important difference. While all other meataxe versions are `GPL 2`, version 2.2.4 is `GPL 2+`. In fact, that version was made after I wanted to use meataxe 2.2.3 in my group cohomology package and asked Michael Ringe whether he could provide it in `GPL 2+`. \n\n2. I am not just wrapping it, in fact I am branching meataxe. I improved the implementation of the \"school book\" multiplication in meataxe, and I implemented Strassen-Winograd multiplication, which had so far been missing in meataxe.\n\n3. It would provide a vastly better performance. The above 5000x5000 multiplication over GF(4) with the school book method needs 173.68 CPU seconds and about 200 MB. With Strassen-Winograd, it is  only 85.04 CPU seconds, using less than 280 MB.\n\n4. Concerning prime fields: A multiplication of two 5000x5000 matrices A, B over GF(5) using `A._multipliy_linbox(B)` needs 21.49 CPU seconds and 1.2 GB(!). Using school book multiplication in meataxe, it is 46.70 s and 140 MB, or 30.29 CPU seconds and 160 MB using Strassen-Winograd.\n\n__Conclusion__\n\n* The licence of `MeatAxe 2.2.4` would be fine.\n\n* The default matrix multiplication over finite fields that is currently provided in Sage is not competitive at all.\n\n* Over prime fields, Linbox is still faster, but my implementation of Strassen multiplication needs only one tenth of the memory.\n\n* As far as I know, Linbox does not officially support non-prime fields, in contrast to meataxe. And Meataxe is a lot faster than the current implementation in Sage, except for GF(2).\n\n* My meataxe wrapper could still be improved - I have no idea of how to optimize the use of L1 and L2 cache, and would need help to do so.\n\n* Big disadvantage of my current meataxe wrapper: It only supports field sizes less than 256. There is a \"big\" version of meataxe that can deal with field sizes of up to `2^16-1`, but I did not wrap it yet, and I don't know how difficult it would be.\n\nAs I said: I will work on that wrapper anyway, because it seems well suited for my current project. But would it make sense in Sage as a default implementation for matrices over small finite fields (or at least over the non-prime fields)?",
+    "body": "Here is another data point concerning slowness - ridiculous slowness, actually - of matrix multiplication in Sage. The following is with sage-4.7.1.rc1 plus the patches from #11589:\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\n# I think the following is already WAY too slow!\nsage: %time A = MS.random_element()\nCPU times: user 38.42 s, sys: 0.13 s, total: 38.55 s\nWall time: 38.67 s\nsage: B = MS.random_element()\nsage: %time C = A*B\n^C^C^C^C^C^C^C^C^C^C^C^C^C^C\n```\n\nIn other words:\n\n1. The computation can not be interrupted, which is a bug.\n2. The computation takes more than 45 minutes!!!\n3. The computation takes more than 880 MB.\n\nAs much as I see, GF(2) is the *only* finite field such that multiplication of square matrices over that field is not blatantly slow in Sage.\n\nIt makes me wonder if we shouldn't use a different package for matrix multiplication over finite fields different from GF(2).\n\nAs much as I know, there already is an experimental version for matrices over `GF(2^n)`, isn't it, Martin? How fast is it?\n\nOver finite prime fields, we could use Linbox. There are tickets to do so.\n\nBut What about finite non-prime fields? Would it be a reasonable idea to use something based on `MeatAxe`?\n\nI will very likely be using a Sage wrapper for `MeatAxe` matrices in my current project. So, I'll do the work anyway. From my perspective, the only question is whether we can/should use it by default in Sage.\n\nHere are some relevant data:\n\n1. I work on top of `MeatAxe 2.2.4`. That version is identic with 2.2.3, with one important difference. While all other meataxe versions are `GPL 2`, version 2.2.4 is `GPL 2+`. In fact, that version was made after I wanted to use meataxe 2.2.3 in my group cohomology package and asked Michael Ringe whether he could provide it in `GPL 2+`. \n\n2. I am not just wrapping it, in fact I am branching meataxe. I improved the implementation of the \"school book\" multiplication in meataxe, and I implemented Strassen-Winograd multiplication, which had so far been missing in meataxe.\n\n3. It would provide a vastly better performance. The above 5000x5000 multiplication over GF(4) with the school book method needs 173.68 CPU seconds and about 200 MB. With Strassen-Winograd, it is  only 85.04 CPU seconds, using less than 280 MB.\n\n4. Concerning prime fields: A multiplication of two 5000x5000 matrices A, B over GF(5) using `A._multipliy_linbox(B)` needs 21.49 CPU seconds and 1.2 GB(!). Using school book multiplication in meataxe, it is 46.70 s and 140 MB, or 30.29 CPU seconds and 160 MB using Strassen-Winograd.\n\n__Conclusion__\n\n* The licence of `MeatAxe 2.2.4` would be fine.\n\n* The default matrix multiplication over finite fields that is currently provided in Sage is not competitive at all.\n\n* Over prime fields, Linbox is still faster, but my implementation of Strassen multiplication needs only one tenth of the memory.\n\n* As far as I know, Linbox does not officially support non-prime fields, in contrast to meataxe. And Meataxe is a lot faster than the current implementation in Sage, except for GF(2).\n\n* My meataxe wrapper could still be improved - I have no idea of how to optimize the use of L1 and L2 cache, and would need help to do so.\n\n* Big disadvantage of my current meataxe wrapper: It only supports field sizes less than 256. There is a \"big\" version of meataxe that can deal with field sizes of up to `2^16-1`, but I did not wrap it yet, and I don't know how difficult it would be.\n\nAs I said: I will work on that wrapper anyway, because it seems well suited for my current project. But would it make sense in Sage as a default implementation for matrices over small finite fields (or at least over the non-prime fields)?",
     "created_at": "2011-08-11T17:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -828,7 +815,6 @@ sage: B = MS.random_element()
 sage: %time C = A*B
 ^C^C^C^C^C^C^C^C^C^C^C^C^C^C
 ```
-
 
 In other words:
 
@@ -917,7 +903,7 @@ I'm curious: have you compared with the matrix multiplication routines in flint 
 archive/issue_comments_070876.json:
 ```json
 {
-    "body": "Replying to [comment:19 jason]:\n> I'm curious: have you compared with the matrix multiplication routines in flint 2? http://www.flintlib.org/\n\nPerhaps I am confusing things; but the impression that I got from polynomials in Sage is that flint and ntl are over the rationals and the integers. Does flint also do finite fields? Is the relevant part of flint available in Sage, or do I need to install flint separately?",
+    "body": "Replying to [comment:19 jason]:\n> I'm curious: have you compared with the matrix multiplication routines in flint 2? http://www.flintlib.org/\n\n\nPerhaps I am confusing things; but the impression that I got from polynomials in Sage is that flint and ntl are over the rationals and the integers. Does flint also do finite fields? Is the relevant part of flint available in Sage, or do I need to install flint separately?",
     "created_at": "2011-08-11T18:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -928,6 +914,7 @@ archive/issue_comments_070876.json:
 
 Replying to [comment:19 jason]:
 > I'm curious: have you compared with the matrix multiplication routines in flint 2? http://www.flintlib.org/
+
 
 Perhaps I am confusing things; but the impression that I got from polynomials in Sage is that flint and ntl are over the rationals and the integers. Does flint also do finite fields? Is the relevant part of flint available in Sage, or do I need to install flint separately?
 
@@ -956,7 +943,7 @@ Flint 2.20 (which is not in Sage yet, IIRC) apparently handles Z mod n matrices.
 archive/issue_comments_070878.json:
 ```json
 {
-    "body": "Replying to [comment:21 jason]:\n> Flint 2.20 (which is not in Sage yet, IIRC) apparently handles Z mod n matrices.  See section 19 of the manual: http://www.flintlib.org/flint-2.2.pdf.\n\nYep, I was just reading the documentation.\n\nThey have matrices over Z/nZ, but I don't see finite fields mentioned. Except prime fields, of course. They go up to `n=2^64-1`, which Meataxe can't manage, even in the big implementation (the field size must be less than `2^16`).\n\nConcerning comparison of matrix operations, one must not forget higher level operations. To compute the echelon form of a 5000x5000 matrix over GF(5), the default implementation in Sage needs 12.65 s and 1.2 GB on my machine. _echelonize_linbox needs the same.\n\nMeataxe needs much less memory, but 45 seconds. Admittedly I did not care about echelonization in meataxe, since I don't need it for my application. Hm. That could be a show stopper.",
+    "body": "Replying to [comment:21 jason]:\n> Flint 2.20 (which is not in Sage yet, IIRC) apparently handles Z mod n matrices.  See section 19 of the manual: http://www.flintlib.org/flint-2.2.pdf.\n\n\nYep, I was just reading the documentation.\n\nThey have matrices over Z/nZ, but I don't see finite fields mentioned. Except prime fields, of course. They go up to `n=2^64-1`, which Meataxe can't manage, even in the big implementation (the field size must be less than `2^16`).\n\nConcerning comparison of matrix operations, one must not forget higher level operations. To compute the echelon form of a 5000x5000 matrix over GF(5), the default implementation in Sage needs 12.65 s and 1.2 GB on my machine. _echelonize_linbox needs the same.\n\nMeataxe needs much less memory, but 45 seconds. Admittedly I did not care about echelonization in meataxe, since I don't need it for my application. Hm. That could be a show stopper.",
     "created_at": "2011-08-11T18:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -967,6 +954,7 @@ archive/issue_comments_070878.json:
 
 Replying to [comment:21 jason]:
 > Flint 2.20 (which is not in Sage yet, IIRC) apparently handles Z mod n matrices.  See section 19 of the manual: http://www.flintlib.org/flint-2.2.pdf.
+
 
 Yep, I was just reading the documentation.
 
@@ -1041,7 +1029,7 @@ Just a heads-up: flint2 should hold up well for a 32-bit or 64-bit prime field, 
 archive/issue_comments_070882.json:
 ```json
 {
-    "body": "> As much as I know, there already is an experimental version for matrices over \n> GF(2^n), isn't it, Martin? How fast is it?\n\nSorry, I completely missed this question. M4RIE, i.e. dense linear algebra over GF(2<sup>e</sup>) for 2 <= e <= 10, is either about as fast as Magma or much faster. Actually, it's not experimental but a fully working patch + library has been around for ages, it was agreed months ago it would go into Sage, there has just not been enough push to finish the review: #9562\n\nHere's a summary of the current approach & performance:\n\nhttp://martinralbrecht.files.wordpress.com/2011/03/20110330_-_m4ri_-_nancy.pdf\n\nTo compare with your results:\n\n**Karatsuba**\n\n\n```python\nsage: K.<a> = GF(4)\nsage: A = random_matrix(K,5000,5000)\nsage: B = random_matrix(K,5000,5000)\nsage: %time C=A*B\nCPU times: user 0.51 s, sys: 0.01 s, total: 0.52 s\nWall time: 0.52 s\n```\n\n\n**Travolta**\n\n\n```python\nsage: K.<a> = GF(4)\nsage: A = random_matrix(K,5000,5000)\nsage: B = random_matrix(K,5000,5000)\nsage: %time C=A._multiply_travolta(B)\nCPU times: user 1.19 s, sys: 0.00 s, total: 1.20 s\nWall time: 1.20 s\n```\n\n\nSo both algorithms in M4RIE are much faster than ~80 seconds. I didn't precisely measure memory consumption though. \n\n\n\n> The default matrix multiplication over finite fields that is currently provided in Sage is  not competitive at all.\n\nVery much agreed!\n\n> Over prime fields, Linbox is still faster, but my implementation of Strassen multiplication needs only one tenth of the memory.\n\nI hope to fix this next week at Sage Days, i.e. to wrap LinBox properly.\n\n> As far as I know, Linbox does not officially support non-prime fields, in contrast to meataxe. And Meataxe is a lot faster than the current implementation in Sage, except for GF(2).\n\nCl\u00e9ment told me that LinBox does support non-prime fields we just never wrapped them in Sage.\n\n> My meataxe wrapper could still be improved - I have no idea of how to optimize the use of L1 and L2 cache, and would need help to do so.\n\nLet's move that to e-mail.\n\n> Big disadvantage of my current meataxe wrapper: It only supports field sizes less than 256. \n\nI don't think it's that big of an issue, a lot of applications need small fields!",
+    "body": "> As much as I know, there already is an experimental version for matrices over \n> GF(2^n), isn't it, Martin? How fast is it?\n\n\nSorry, I completely missed this question. M4RIE, i.e. dense linear algebra over GF(2<sup>e</sup>) for 2 <= e <= 10, is either about as fast as Magma or much faster. Actually, it's not experimental but a fully working patch + library has been around for ages, it was agreed months ago it would go into Sage, there has just not been enough push to finish the review: #9562\n\nHere's a summary of the current approach & performance:\n\nhttp://martinralbrecht.files.wordpress.com/2011/03/20110330_-_m4ri_-_nancy.pdf\n\nTo compare with your results:\n\n**Karatsuba**\n\n```python\nsage: K.<a> = GF(4)\nsage: A = random_matrix(K,5000,5000)\nsage: B = random_matrix(K,5000,5000)\nsage: %time C=A*B\nCPU times: user 0.51 s, sys: 0.01 s, total: 0.52 s\nWall time: 0.52 s\n```\n\n**Travolta**\n\n```python\nsage: K.<a> = GF(4)\nsage: A = random_matrix(K,5000,5000)\nsage: B = random_matrix(K,5000,5000)\nsage: %time C=A._multiply_travolta(B)\nCPU times: user 1.19 s, sys: 0.00 s, total: 1.20 s\nWall time: 1.20 s\n```\n\nSo both algorithms in M4RIE are much faster than ~80 seconds. I didn't precisely measure memory consumption though. \n\n\n\n> The default matrix multiplication over finite fields that is currently provided in Sage is  not competitive at all.\n\n\nVery much agreed!\n\n> Over prime fields, Linbox is still faster, but my implementation of Strassen multiplication needs only one tenth of the memory.\n\n\nI hope to fix this next week at Sage Days, i.e. to wrap LinBox properly.\n\n> As far as I know, Linbox does not officially support non-prime fields, in contrast to meataxe. And Meataxe is a lot faster than the current implementation in Sage, except for GF(2).\n\n\nCl\u00e9ment told me that LinBox does support non-prime fields we just never wrapped them in Sage.\n\n> My meataxe wrapper could still be improved - I have no idea of how to optimize the use of L1 and L2 cache, and would need help to do so.\n\n\nLet's move that to e-mail.\n\n> Big disadvantage of my current meataxe wrapper: It only supports field sizes less than 256. \n\n\nI don't think it's that big of an issue, a lot of applications need small fields!",
     "created_at": "2011-08-15T15:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1053,6 +1041,7 @@ archive/issue_comments_070882.json:
 > As much as I know, there already is an experimental version for matrices over 
 > GF(2^n), isn't it, Martin? How fast is it?
 
+
 Sorry, I completely missed this question. M4RIE, i.e. dense linear algebra over GF(2<sup>e</sup>) for 2 <= e <= 10, is either about as fast as Magma or much faster. Actually, it's not experimental but a fully working patch + library has been around for ages, it was agreed months ago it would go into Sage, there has just not been enough push to finish the review: #9562
 
 Here's a summary of the current approach & performance:
@@ -1063,7 +1052,6 @@ To compare with your results:
 
 **Karatsuba**
 
-
 ```python
 sage: K.<a> = GF(4)
 sage: A = random_matrix(K,5000,5000)
@@ -1073,9 +1061,7 @@ CPU times: user 0.51 s, sys: 0.01 s, total: 0.52 s
 Wall time: 0.52 s
 ```
 
-
 **Travolta**
-
 
 ```python
 sage: K.<a> = GF(4)
@@ -1086,28 +1072,32 @@ CPU times: user 1.19 s, sys: 0.00 s, total: 1.20 s
 Wall time: 1.20 s
 ```
 
-
 So both algorithms in M4RIE are much faster than ~80 seconds. I didn't precisely measure memory consumption though. 
 
 
 
 > The default matrix multiplication over finite fields that is currently provided in Sage is  not competitive at all.
 
+
 Very much agreed!
 
 > Over prime fields, Linbox is still faster, but my implementation of Strassen multiplication needs only one tenth of the memory.
+
 
 I hope to fix this next week at Sage Days, i.e. to wrap LinBox properly.
 
 > As far as I know, Linbox does not officially support non-prime fields, in contrast to meataxe. And Meataxe is a lot faster than the current implementation in Sage, except for GF(2).
 
+
 Clément told me that LinBox does support non-prime fields we just never wrapped them in Sage.
 
 > My meataxe wrapper could still be improved - I have no idea of how to optimize the use of L1 and L2 cache, and would need help to do so.
 
+
 Let's move that to e-mail.
 
 > Big disadvantage of my current meataxe wrapper: It only supports field sizes less than 256. 
+
 
 I don't think it's that big of an issue, a lot of applications need small fields!
 
@@ -1118,7 +1108,7 @@ I don't think it's that big of an issue, a lot of applications need small fields
 archive/issue_comments_070883.json:
 ```json
 {
-    "body": "One more data point.\n\nAgain, this is with #9562:\n\n\n```python\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: %time A = MS.random_element()\nCPU times: user 0.46 s, sys: 0.01 s, total: 0.46 s\nWall time: 0.47 s\nsage: B = MS.random_element()\nsage: %time C = A*B \nCPU times: user 22.69 s, sys: 0.06 s, total: 22.75 s\nWall time: 22.84 s\n```\n\n\nNote that we only implemented Travolta for GF(2<sup>6</sup>) so far. With Karatsuba we expect to get close to 4.5 seconds, because:\n\n\n```python\nsage: A = random_matrix(GF(2),5000,5000)\nsage: B = random_matrix(GF(2),5000,5000)\nsage: %timeit C=A*B\n5 loops, best of 3: 249 ms per loop\n```\n\n\nand the best known formula for degree 5 polynomials needs 17 such multiplications: \n\nhttp://www.csd.uwo.ca/~eschost/Exam/Montgomery--Five_six_and_seven_terms_Karatsuba-like_formulae.pdf",
+    "body": "One more data point.\n\nAgain, this is with #9562:\n\n```python\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: %time A = MS.random_element()\nCPU times: user 0.46 s, sys: 0.01 s, total: 0.46 s\nWall time: 0.47 s\nsage: B = MS.random_element()\nsage: %time C = A*B \nCPU times: user 22.69 s, sys: 0.06 s, total: 22.75 s\nWall time: 22.84 s\n```\n\nNote that we only implemented Travolta for GF(2<sup>6</sup>) so far. With Karatsuba we expect to get close to 4.5 seconds, because:\n\n```python\nsage: A = random_matrix(GF(2),5000,5000)\nsage: B = random_matrix(GF(2),5000,5000)\nsage: %timeit C=A*B\n5 loops, best of 3: 249 ms per loop\n```\n\nand the best known formula for degree 5 polynomials needs 17 such multiplications: \n\nhttp://www.csd.uwo.ca/~eschost/Exam/Montgomery--Five_six_and_seven_terms_Karatsuba-like_formulae.pdf",
     "created_at": "2011-08-15T15:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1131,7 +1121,6 @@ One more data point.
 
 Again, this is with #9562:
 
-
 ```python
 sage: MS = MatrixSpace(GF(64,'a'),5000,5000)
 sage: %time A = MS.random_element()
@@ -1143,9 +1132,7 @@ CPU times: user 22.69 s, sys: 0.06 s, total: 22.75 s
 Wall time: 22.84 s
 ```
 
-
 Note that we only implemented Travolta for GF(2<sup>6</sup>) so far. With Karatsuba we expect to get close to 4.5 seconds, because:
-
 
 ```python
 sage: A = random_matrix(GF(2),5000,5000)
@@ -1153,7 +1140,6 @@ sage: B = random_matrix(GF(2),5000,5000)
 sage: %timeit C=A*B
 5 loops, best of 3: 249 ms per loop
 ```
-
 
 and the best known formula for degree 5 polynomials needs 17 such multiplications: 
 
@@ -1166,7 +1152,7 @@ http://www.csd.uwo.ca/~eschost/Exam/Montgomery--Five_six_and_seven_terms_Karatsu
 archive/issue_comments_070884.json:
 ```json
 {
-    "body": "... and Magma for comparison:\n\nGF(2<sup>2</sup>):\n\n\n```\nMagma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]\nType ? for help.  Type <Ctrl>-D to quit.\n> K<a> := GF(4);               \n> A:=RandomMatrix(K,5000,5000);\n> B:=RandomMatrix(K,5000,5000);\n> time C:=A*B;                 \nTime: 2.130\n```\n\n\nGF(2<sup>6</sup>):\n\n\n```\nMagma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]\nType ? for help.  Type <Ctrl>-D to quit.\n> K<a> := GF(64);\n> A:=RandomMatrix(K,5000,5000);\n> B:=RandomMatrix(K,5000,5000); \n> time C:=A*B;\nTime: 273.310\n```\n\n\nIt seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?",
+    "body": "... and Magma for comparison:\n\nGF(2<sup>2</sup>):\n\n```\nMagma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]\nType ? for help.  Type <Ctrl>-D to quit.\n> K<a> := GF(4);               \n> A:=RandomMatrix(K,5000,5000);\n> B:=RandomMatrix(K,5000,5000);\n> time C:=A*B;                 \nTime: 2.130\n```\n\nGF(2<sup>6</sup>):\n\n```\nMagma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]\nType ? for help.  Type <Ctrl>-D to quit.\n> K<a> := GF(64);\n> A:=RandomMatrix(K,5000,5000);\n> B:=RandomMatrix(K,5000,5000); \n> time C:=A*B;\nTime: 273.310\n```\n\nIt seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?",
     "created_at": "2011-08-15T15:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1179,7 +1165,6 @@ archive/issue_comments_070884.json:
 
 GF(2<sup>2</sup>):
 
-
 ```
 Magma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]
 Type ? for help.  Type <Ctrl>-D to quit.
@@ -1190,9 +1175,7 @@ Type ? for help.  Type <Ctrl>-D to quit.
 Time: 2.130
 ```
 
-
 GF(2<sup>6</sup>):
-
 
 ```
 Magma V2.15-10    Mon Aug 15 2011 16:41:46 on road     [Seed = 3840120025]
@@ -1203,7 +1186,6 @@ Type ? for help.  Type <Ctrl>-D to quit.
 > time C:=A*B;
 Time: 273.310
 ```
-
 
 It seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?
 
@@ -1236,7 +1218,7 @@ Concerning my application, it probably was a very wise decision that my programs
 archive/issue_comments_070886.json:
 ```json
 {
-    "body": "Replying to [comment:28 malb]:\n> ... and Magma for comparison:\n> \n> GF(2<sup>2</sup>):\n> ...\n> Time: 2.130\n\nThat beats Meataxe by a factor of 12 :-(\n\n> GF(2<sup>6</sup>):\n> ...\n> Time: 273.310\n> It seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?\n\nAmazing! The Meataxe approach is very simple: Row-first storage of data, as many field elements stored in one Byte as possible (hence, over `GF(2^6)` we have two marks per byte), and multiplication tables that allow to multiply a field element with a whole byte in one go. \nThe rest is school book or Strassen-Winograd multiplication.\n\nAnyway. M4RIE seems to be a lot faster, and I am looking forward to use it!",
+    "body": "Replying to [comment:28 malb]:\n> ... and Magma for comparison:\n> \n> GF(2<sup>2</sup>):\n> ...\n> Time: 2.130\n\n\nThat beats Meataxe by a factor of 12 :-(\n\n> GF(2<sup>6</sup>):\n> ...\n> Time: 273.310\n> It seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?\n\n\nAmazing! The Meataxe approach is very simple: Row-first storage of data, as many field elements stored in one Byte as possible (hence, over `GF(2^6)` we have two marks per byte), and multiplication tables that allow to multiply a field element with a whole byte in one go. \nThe rest is school book or Strassen-Winograd multiplication.\n\nAnyway. M4RIE seems to be a lot faster, and I am looking forward to use it!",
     "created_at": "2011-08-15T16:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1252,12 +1234,14 @@ Replying to [comment:28 malb]:
 > ...
 > Time: 2.130
 
+
 That beats Meataxe by a factor of 12 :-(
 
 > GF(2<sup>6</sup>):
 > ...
 > Time: 273.310
 > It seems your MeatAxe fork is faster than Magma for GF(2<sup>6</sup>)?
+
 
 Amazing! The Meataxe approach is very simple: Row-first storage of data, as many field elements stored in one Byte as possible (hence, over `GF(2^6)` we have two marks per byte), and multiplication tables that allow to multiply a field element with a whole byte in one go. 
 The rest is school book or Strassen-Winograd multiplication.
@@ -1313,7 +1297,7 @@ Btw. it takes 80 seconds for you to do 5,000 x 5,000 over GF(2<sup>2</sup>) and 
 archive/issue_comments_070889.json:
 ```json
 {
-    "body": "Replying to [comment:31 malb]:\n> correct link:  http://martinralbrecht.files.wordpress.com/2011/03/20110330_-_m4ri_-_nancy1.pdf\n\nThank you!\n\n> What does \"two marks per byte\" mean? \n\nSorry, where's my head? For field size 64, only one mark per byte is used, and it is [xxxxxx00][xxxxxx00].\n\nMeataxe packs as many field elements into a single byte as possible. Hence, if you work over GF(5) then a triple of field elements will be packed into one byte. That is since 5<sup>3</sup> is smaller than 256, but 5<sup>4</sup> is bigger.\n\nSo, really quite simplistic. No bit slicing or anything fancy.",
+    "body": "Replying to [comment:31 malb]:\n> correct link:  http://martinralbrecht.files.wordpress.com/2011/03/20110330_-_m4ri_-_nancy1.pdf\n\n\nThank you!\n\n> What does \"two marks per byte\" mean? \n\n\nSorry, where's my head? For field size 64, only one mark per byte is used, and it is [xxxxxx00][xxxxxx00].\n\nMeataxe packs as many field elements into a single byte as possible. Hence, if you work over GF(5) then a triple of field elements will be packed into one byte. That is since 5<sup>3</sup> is smaller than 256, but 5<sup>4</sup> is bigger.\n\nSo, really quite simplistic. No bit slicing or anything fancy.",
     "created_at": "2011-08-15T16:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1325,9 +1309,11 @@ archive/issue_comments_070889.json:
 Replying to [comment:31 malb]:
 > correct link:  http://martinralbrecht.files.wordpress.com/2011/03/20110330_-_m4ri_-_nancy1.pdf
 
+
 Thank you!
 
 > What does "two marks per byte" mean? 
+
 
 Sorry, where's my head? For field size 64, only one mark per byte is used, and it is [xxxxxx00][xxxxxx00].
 
@@ -1342,7 +1328,7 @@ So, really quite simplistic. No bit slicing or anything fancy.
 archive/issue_comments_070890.json:
 ```json
 {
-    "body": "Martin, I just found that M4RIE just needs 10.42 seconds resp. 8.78 seconds on my computer for multiplying two random 5000x5000 matrices over GF(64).\n\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: A = MS.random_element()\nsage: type(A)\n<type 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense'>\nsage: B = MS.random_element()\nsage: %time C = A*B\nCPU times: user 10.42 s, sys: 0.15 s, total: 10.56 s\nWall time: 10.60 s\nsage: %time C = A._mult\nA._multiply_classical  A._multiply_karatsuba  A._multiply_strassen   A._multiply_travolta\nsage: %time C = A._multiply_travolta(B)\nCPU times: user 8.73 s, sys: 0.02 s, total: 8.75 s\nWall time: 8.78 s\n```\n\n\nThat's awesome! For these particular matrices, the Meataxe fork needs 85.26 seconds. Hopefully I'll be able to review #9562 tomorrow.",
+    "body": "Martin, I just found that M4RIE just needs 10.42 seconds resp. 8.78 seconds on my computer for multiplying two random 5000x5000 matrices over GF(64).\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: A = MS.random_element()\nsage: type(A)\n<type 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense'>\nsage: B = MS.random_element()\nsage: %time C = A*B\nCPU times: user 10.42 s, sys: 0.15 s, total: 10.56 s\nWall time: 10.60 s\nsage: %time C = A._mult\nA._multiply_classical  A._multiply_karatsuba  A._multiply_strassen   A._multiply_travolta\nsage: %time C = A._multiply_travolta(B)\nCPU times: user 8.73 s, sys: 0.02 s, total: 8.75 s\nWall time: 8.78 s\n```\n\nThat's awesome! For these particular matrices, the Meataxe fork needs 85.26 seconds. Hopefully I'll be able to review #9562 tomorrow.",
     "created_at": "2011-08-15T17:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1352,7 +1338,6 @@ archive/issue_comments_070890.json:
 ```
 
 Martin, I just found that M4RIE just needs 10.42 seconds resp. 8.78 seconds on my computer for multiplying two random 5000x5000 matrices over GF(64).
-
 
 ```
 sage: MS = MatrixSpace(GF(64,'a'),5000,5000)
@@ -1369,7 +1354,6 @@ sage: %time C = A._multiply_travolta(B)
 CPU times: user 8.73 s, sys: 0.02 s, total: 8.75 s
 Wall time: 8.78 s
 ```
-
 
 That's awesome! For these particular matrices, the Meataxe fork needs 85.26 seconds. Hopefully I'll be able to review #9562 tomorrow.
 
@@ -1505,7 +1489,7 @@ archive/issue_events_019378.json:
 archive/issue_comments_070897.json:
 ```json
 {
-    "body": "Replying to [comment:38 davidloeffler]:\n> These patches do not apply correctly on either the current release or the current beta (see patchbot logs).\n\nNo surprise that two-year-old patches don't apply anymore. I am rebasing them now, producing a single patch replacing the two. I am not totally sure, but I think the ideas of the second patch are already in Sage - need to verify it, though.",
+    "body": "Replying to [comment:38 davidloeffler]:\n> These patches do not apply correctly on either the current release or the current beta (see patchbot logs).\n\n\nNo surprise that two-year-old patches don't apply anymore. I am rebasing them now, producing a single patch replacing the two. I am not totally sure, but I think the ideas of the second patch are already in Sage - need to verify it, though.",
     "created_at": "2012-03-10T20:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1516,6 +1500,7 @@ archive/issue_comments_070897.json:
 
 Replying to [comment:38 davidloeffler]:
 > These patches do not apply correctly on either the current release or the current beta (see patchbot logs).
+
 
 No surprise that two-year-old patches don't apply anymore. I am rebasing them now, producing a single patch replacing the two. I am not totally sure, but I think the ideas of the second patch are already in Sage - need to verify it, though.
 
@@ -1544,7 +1529,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070899.json:
 ```json
 {
-    "body": "I have rebased the patches, combining them into one patch. In fact, a part (but not all) of the second patch is not needed anymore, since the creation of the zero matrix has been improved in another ticket.\n\nHere is evidence that the patch still does improve the timings for the computation of small matrices - even after we have switched to linbox:\n\nWithout patch:\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 40.5 \u00b5s per loop\n```\n\n\nWith the patch:\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 18.5 \u00b5s per loop\n```\n\n\nI need to run the doctests, though. But needs review.\n\nApply trac8096_speedup_matrix_parent.patch",
+    "body": "I have rebased the patches, combining them into one patch. In fact, a part (but not all) of the second patch is not needed anymore, since the creation of the zero matrix has been improved in another ticket.\n\nHere is evidence that the patch still does improve the timings for the computation of small matrices - even after we have switched to linbox:\n\nWithout patch:\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 40.5 \u00b5s per loop\n```\n\nWith the patch:\n\n```\nsage: d = 1\nsage: A = random_matrix(GF(3), d)\nsage: B = random_matrix(GF(3), d)\nsage: timeit(\"C = A*B\")\n625 loops, best of 3: 18.5 \u00b5s per loop\n```\n\nI need to run the doctests, though. But needs review.\n\nApply trac8096_speedup_matrix_parent.patch",
     "created_at": "2012-03-10T20:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1567,7 +1552,6 @@ sage: timeit("C = A*B")
 625 loops, best of 3: 40.5 µs per loop
 ```
 
-
 With the patch:
 
 ```
@@ -1577,7 +1561,6 @@ sage: B = random_matrix(GF(3), d)
 sage: timeit("C = A*B")
 625 loops, best of 3: 18.5 µs per loop
 ```
-
 
 I need to run the doctests, though. But needs review.
 
@@ -1590,7 +1573,7 @@ Apply trac8096_speedup_matrix_parent.patch
 archive/issue_comments_070900.json:
 ```json
 {
-    "body": "Here is the example from the ticket description.\n\nWithout the patch:\n\n```\nsage: for d in range(1, 70):\n....:     print d,\n....:     A = random_matrix(GF(3), d)\n....:     B = random_matrix(GF(3), d)\n....:     timeit(\"C = A*B\")\n....:     \n1 625 loops, best of 3: 41 \u00b5s per loop\n2 625 loops, best of 3: 41.1 \u00b5s per loop\n3 625 loops, best of 3: 41 \u00b5s per loop\n4 625 loops, best of 3: 41.4 \u00b5s per loop\n5 625 loops, best of 3: 41.6 \u00b5s per loop\n6 625 loops, best of 3: 42.4 \u00b5s per loop\n7 625 loops, best of 3: 42.9 \u00b5s per loop\n8 625 loops, best of 3: 43.3 \u00b5s per loop\n9 625 loops, best of 3: 43.5 \u00b5s per loop\n10 625 loops, best of 3: 44.1 \u00b5s per loop\n11 625 loops, best of 3: 44.8 \u00b5s per loop\n12 625 loops, best of 3: 45.5 \u00b5s per loop\n13 625 loops, best of 3: 46.3 \u00b5s per loop\n14 625 loops, best of 3: 47.6 \u00b5s per loop\n15 625 loops, best of 3: 48.8 \u00b5s per loop\n16 625 loops, best of 3: 50.4 \u00b5s per loop\n17 625 loops, best of 3: 51.8 \u00b5s per loop\n18 625 loops, best of 3: 53.4 \u00b5s per loop\n19 625 loops, best of 3: 54.7 \u00b5s per loop\n20 625 loops, best of 3: 56.5 \u00b5s per loop\n21 625 loops, best of 3: 58.4 \u00b5s per loop\n22 625 loops, best of 3: 60.8 \u00b5s per loop\n23 625 loops, best of 3: 63.3 \u00b5s per loop\n24 625 loops, best of 3: 61.7 \u00b5s per loop\n25 625 loops, best of 3: 64.1 \u00b5s per loop\n26 625 loops, best of 3: 66.3 \u00b5s per loop\n27 625 loops, best of 3: 70.3 \u00b5s per loop\n28 625 loops, best of 3: 72.7 \u00b5s per loop\n29 625 loops, best of 3: 75.2 \u00b5s per loop\n30 625 loops, best of 3: 79.4 \u00b5s per loop\n31 625 loops, best of 3: 82 \u00b5s per loop\n32 625 loops, best of 3: 86.5 \u00b5s per loop\n33 625 loops, best of 3: 89.8 \u00b5s per loop\n34 625 loops, best of 3: 94.3 \u00b5s per loop\n35 625 loops, best of 3: 98.1 \u00b5s per loop\n36 625 loops, best of 3: 92.1 \u00b5s per loop\n37 625 loops, best of 3: 95.9 \u00b5s per loop\n38 625 loops, best of 3: 100 \u00b5s per loop\n39 625 loops, best of 3: 105 \u00b5s per loop\n40 625 loops, best of 3: 109 \u00b5s per loop\n41 625 loops, best of 3: 117 \u00b5s per loop\n42 625 loops, best of 3: 123 \u00b5s per loop\n43 625 loops, best of 3: 129 \u00b5s per loop\n44 625 loops, best of 3: 136 \u00b5s per loop\n45 625 loops, best of 3: 142 \u00b5s per loop\n46 625 loops, best of 3: 149 \u00b5s per loop\n47 625 loops, best of 3: 156 \u00b5s per loop\n48 625 loops, best of 3: 146 \u00b5s per loop\n49 625 loops, best of 3: 154 \u00b5s per loop\n50 625 loops, best of 3: 161 \u00b5s per loop\n51 625 loops, best of 3: 168 \u00b5s per loop\n52 625 loops, best of 3: 177 \u00b5s per loop\n53 625 loops, best of 3: 185 \u00b5s per loop\n54 625 loops, best of 3: 194 \u00b5s per loop\n55 625 loops, best of 3: 202 \u00b5s per loop\n56 625 loops, best of 3: 213 \u00b5s per loop\n57 625 loops, best of 3: 222 \u00b5s per loop\n58 625 loops, best of 3: 234 \u00b5s per loop\n59 625 loops, best of 3: 244 \u00b5s per loop\n60 625 loops, best of 3: 225 \u00b5s per loop\n61 625 loops, best of 3: 235 \u00b5s per loop\n62 625 loops, best of 3: 248 \u00b5s per loop\n63 625 loops, best of 3: 260 \u00b5s per loop\n64 625 loops, best of 3: 271 \u00b5s per loop\n65 625 loops, best of 3: 287 \u00b5s per loop\n66 625 loops, best of 3: 297 \u00b5s per loop\n67 625 loops, best of 3: 311 \u00b5s per loop\n68 625 loops, best of 3: 324 \u00b5s per loop\n69 625 loops, best of 3: 340 \u00b5s per loop\n```\n\n\nWith the patch:\n\n```\nsage: for d in range(1, 70):\n....:     print d,\n....:     A = random_matrix(GF(3), d)\n....:     B = random_matrix(GF(3), d)\n....:     timeit(\"C = A*B\")\n....:     \n1 625 loops, best of 3: 18.3 \u00b5s per loop\n2 625 loops, best of 3: 18.4 \u00b5s per loop\n3 625 loops, best of 3: 18.5 \u00b5s per loop\n4 625 loops, best of 3: 18.8 \u00b5s per loop\n5 625 loops, best of 3: 18.9 \u00b5s per loop\n6 625 loops, best of 3: 19.5 \u00b5s per loop\n7 625 loops, best of 3: 19.9 \u00b5s per loop\n8 625 loops, best of 3: 20.3 \u00b5s per loop\n9 625 loops, best of 3: 21 \u00b5s per loop\n10 625 loops, best of 3: 21.4 \u00b5s per loop\n11 625 loops, best of 3: 22 \u00b5s per loop\n12 625 loops, best of 3: 22.4 \u00b5s per loop\n13 625 loops, best of 3: 23.9 \u00b5s per loop\n14 625 loops, best of 3: 24.9 \u00b5s per loop\n15 625 loops, best of 3: 25.6 \u00b5s per loop\n16 625 loops, best of 3: 27.2 \u00b5s per loop\n17 625 loops, best of 3: 28.2 \u00b5s per loop\n18 625 loops, best of 3: 29.8 \u00b5s per loop\n19 625 loops, best of 3: 31.4 \u00b5s per loop\n20 625 loops, best of 3: 33.1 \u00b5s per loop\n21 625 loops, best of 3: 35 \u00b5s per loop\n22 625 loops, best of 3: 37.2 \u00b5s per loop\n23 625 loops, best of 3: 39.4 \u00b5s per loop\n24 625 loops, best of 3: 38.3 \u00b5s per loop\n25 625 loops, best of 3: 40.9 \u00b5s per loop\n26 625 loops, best of 3: 43.2 \u00b5s per loop\n27 625 loops, best of 3: 46 \u00b5s per loop\n28 625 loops, best of 3: 49 \u00b5s per loop\n29 625 loops, best of 3: 51.9 \u00b5s per loop\n30 625 loops, best of 3: 55.2 \u00b5s per loop\n31 625 loops, best of 3: 58.3 \u00b5s per loop\n32 625 loops, best of 3: 62.8 \u00b5s per loop\n33 625 loops, best of 3: 66.9 \u00b5s per loop\n34 625 loops, best of 3: 71.1 \u00b5s per loop\n35 625 loops, best of 3: 75.1 \u00b5s per loop\n36 625 loops, best of 3: 68.1 \u00b5s per loop\n37 625 loops, best of 3: 72.3 \u00b5s per loop\n38 625 loops, best of 3: 76.9 \u00b5s per loop\n39 625 loops, best of 3: 81.7 \u00b5s per loop\n40 625 loops, best of 3: 85.8 \u00b5s per loop\n41 625 loops, best of 3: 94.2 \u00b5s per loop\n42 625 loops, best of 3: 99.8 \u00b5s per loop\n43 625 loops, best of 3: 106 \u00b5s per loop\n44 625 loops, best of 3: 112 \u00b5s per loop\n45 625 loops, best of 3: 119 \u00b5s per loop\n46 625 loops, best of 3: 126 \u00b5s per loop\n47 625 loops, best of 3: 132 \u00b5s per loop\n48 625 loops, best of 3: 123 \u00b5s per loop\n49 625 loops, best of 3: 130 \u00b5s per loop\n50 625 loops, best of 3: 137 \u00b5s per loop\n51 625 loops, best of 3: 145 \u00b5s per loop\n52 625 loops, best of 3: 153 \u00b5s per loop\n53 625 loops, best of 3: 162 \u00b5s per loop\n54 625 loops, best of 3: 170 \u00b5s per loop\n55 625 loops, best of 3: 180 \u00b5s per loop\n56 625 loops, best of 3: 190 \u00b5s per loop\n57 625 loops, best of 3: 200 \u00b5s per loop\n58 625 loops, best of 3: 210 \u00b5s per loop\n59 625 loops, best of 3: 221 \u00b5s per loop\n60 625 loops, best of 3: 202 \u00b5s per loop\n61 625 loops, best of 3: 212 \u00b5s per loop\n62 625 loops, best of 3: 224 \u00b5s per loop\n63 625 loops, best of 3: 237 \u00b5s per loop\n64 625 loops, best of 3: 248 \u00b5s per loop\n65 625 loops, best of 3: 263 \u00b5s per loop\n66 625 loops, best of 3: 276 \u00b5s per loop\n67 625 loops, best of 3: 288 \u00b5s per loop\n68 625 loops, best of 3: 305 \u00b5s per loop\n69 625 loops, best of 3: 318 \u00b5s per loop\n```\n\n\nSo, there is an improvement for bigger matrices as well.",
+    "body": "Here is the example from the ticket description.\n\nWithout the patch:\n\n```\nsage: for d in range(1, 70):\n....:     print d,\n....:     A = random_matrix(GF(3), d)\n....:     B = random_matrix(GF(3), d)\n....:     timeit(\"C = A*B\")\n....:     \n1 625 loops, best of 3: 41 \u00b5s per loop\n2 625 loops, best of 3: 41.1 \u00b5s per loop\n3 625 loops, best of 3: 41 \u00b5s per loop\n4 625 loops, best of 3: 41.4 \u00b5s per loop\n5 625 loops, best of 3: 41.6 \u00b5s per loop\n6 625 loops, best of 3: 42.4 \u00b5s per loop\n7 625 loops, best of 3: 42.9 \u00b5s per loop\n8 625 loops, best of 3: 43.3 \u00b5s per loop\n9 625 loops, best of 3: 43.5 \u00b5s per loop\n10 625 loops, best of 3: 44.1 \u00b5s per loop\n11 625 loops, best of 3: 44.8 \u00b5s per loop\n12 625 loops, best of 3: 45.5 \u00b5s per loop\n13 625 loops, best of 3: 46.3 \u00b5s per loop\n14 625 loops, best of 3: 47.6 \u00b5s per loop\n15 625 loops, best of 3: 48.8 \u00b5s per loop\n16 625 loops, best of 3: 50.4 \u00b5s per loop\n17 625 loops, best of 3: 51.8 \u00b5s per loop\n18 625 loops, best of 3: 53.4 \u00b5s per loop\n19 625 loops, best of 3: 54.7 \u00b5s per loop\n20 625 loops, best of 3: 56.5 \u00b5s per loop\n21 625 loops, best of 3: 58.4 \u00b5s per loop\n22 625 loops, best of 3: 60.8 \u00b5s per loop\n23 625 loops, best of 3: 63.3 \u00b5s per loop\n24 625 loops, best of 3: 61.7 \u00b5s per loop\n25 625 loops, best of 3: 64.1 \u00b5s per loop\n26 625 loops, best of 3: 66.3 \u00b5s per loop\n27 625 loops, best of 3: 70.3 \u00b5s per loop\n28 625 loops, best of 3: 72.7 \u00b5s per loop\n29 625 loops, best of 3: 75.2 \u00b5s per loop\n30 625 loops, best of 3: 79.4 \u00b5s per loop\n31 625 loops, best of 3: 82 \u00b5s per loop\n32 625 loops, best of 3: 86.5 \u00b5s per loop\n33 625 loops, best of 3: 89.8 \u00b5s per loop\n34 625 loops, best of 3: 94.3 \u00b5s per loop\n35 625 loops, best of 3: 98.1 \u00b5s per loop\n36 625 loops, best of 3: 92.1 \u00b5s per loop\n37 625 loops, best of 3: 95.9 \u00b5s per loop\n38 625 loops, best of 3: 100 \u00b5s per loop\n39 625 loops, best of 3: 105 \u00b5s per loop\n40 625 loops, best of 3: 109 \u00b5s per loop\n41 625 loops, best of 3: 117 \u00b5s per loop\n42 625 loops, best of 3: 123 \u00b5s per loop\n43 625 loops, best of 3: 129 \u00b5s per loop\n44 625 loops, best of 3: 136 \u00b5s per loop\n45 625 loops, best of 3: 142 \u00b5s per loop\n46 625 loops, best of 3: 149 \u00b5s per loop\n47 625 loops, best of 3: 156 \u00b5s per loop\n48 625 loops, best of 3: 146 \u00b5s per loop\n49 625 loops, best of 3: 154 \u00b5s per loop\n50 625 loops, best of 3: 161 \u00b5s per loop\n51 625 loops, best of 3: 168 \u00b5s per loop\n52 625 loops, best of 3: 177 \u00b5s per loop\n53 625 loops, best of 3: 185 \u00b5s per loop\n54 625 loops, best of 3: 194 \u00b5s per loop\n55 625 loops, best of 3: 202 \u00b5s per loop\n56 625 loops, best of 3: 213 \u00b5s per loop\n57 625 loops, best of 3: 222 \u00b5s per loop\n58 625 loops, best of 3: 234 \u00b5s per loop\n59 625 loops, best of 3: 244 \u00b5s per loop\n60 625 loops, best of 3: 225 \u00b5s per loop\n61 625 loops, best of 3: 235 \u00b5s per loop\n62 625 loops, best of 3: 248 \u00b5s per loop\n63 625 loops, best of 3: 260 \u00b5s per loop\n64 625 loops, best of 3: 271 \u00b5s per loop\n65 625 loops, best of 3: 287 \u00b5s per loop\n66 625 loops, best of 3: 297 \u00b5s per loop\n67 625 loops, best of 3: 311 \u00b5s per loop\n68 625 loops, best of 3: 324 \u00b5s per loop\n69 625 loops, best of 3: 340 \u00b5s per loop\n```\n\nWith the patch:\n\n```\nsage: for d in range(1, 70):\n....:     print d,\n....:     A = random_matrix(GF(3), d)\n....:     B = random_matrix(GF(3), d)\n....:     timeit(\"C = A*B\")\n....:     \n1 625 loops, best of 3: 18.3 \u00b5s per loop\n2 625 loops, best of 3: 18.4 \u00b5s per loop\n3 625 loops, best of 3: 18.5 \u00b5s per loop\n4 625 loops, best of 3: 18.8 \u00b5s per loop\n5 625 loops, best of 3: 18.9 \u00b5s per loop\n6 625 loops, best of 3: 19.5 \u00b5s per loop\n7 625 loops, best of 3: 19.9 \u00b5s per loop\n8 625 loops, best of 3: 20.3 \u00b5s per loop\n9 625 loops, best of 3: 21 \u00b5s per loop\n10 625 loops, best of 3: 21.4 \u00b5s per loop\n11 625 loops, best of 3: 22 \u00b5s per loop\n12 625 loops, best of 3: 22.4 \u00b5s per loop\n13 625 loops, best of 3: 23.9 \u00b5s per loop\n14 625 loops, best of 3: 24.9 \u00b5s per loop\n15 625 loops, best of 3: 25.6 \u00b5s per loop\n16 625 loops, best of 3: 27.2 \u00b5s per loop\n17 625 loops, best of 3: 28.2 \u00b5s per loop\n18 625 loops, best of 3: 29.8 \u00b5s per loop\n19 625 loops, best of 3: 31.4 \u00b5s per loop\n20 625 loops, best of 3: 33.1 \u00b5s per loop\n21 625 loops, best of 3: 35 \u00b5s per loop\n22 625 loops, best of 3: 37.2 \u00b5s per loop\n23 625 loops, best of 3: 39.4 \u00b5s per loop\n24 625 loops, best of 3: 38.3 \u00b5s per loop\n25 625 loops, best of 3: 40.9 \u00b5s per loop\n26 625 loops, best of 3: 43.2 \u00b5s per loop\n27 625 loops, best of 3: 46 \u00b5s per loop\n28 625 loops, best of 3: 49 \u00b5s per loop\n29 625 loops, best of 3: 51.9 \u00b5s per loop\n30 625 loops, best of 3: 55.2 \u00b5s per loop\n31 625 loops, best of 3: 58.3 \u00b5s per loop\n32 625 loops, best of 3: 62.8 \u00b5s per loop\n33 625 loops, best of 3: 66.9 \u00b5s per loop\n34 625 loops, best of 3: 71.1 \u00b5s per loop\n35 625 loops, best of 3: 75.1 \u00b5s per loop\n36 625 loops, best of 3: 68.1 \u00b5s per loop\n37 625 loops, best of 3: 72.3 \u00b5s per loop\n38 625 loops, best of 3: 76.9 \u00b5s per loop\n39 625 loops, best of 3: 81.7 \u00b5s per loop\n40 625 loops, best of 3: 85.8 \u00b5s per loop\n41 625 loops, best of 3: 94.2 \u00b5s per loop\n42 625 loops, best of 3: 99.8 \u00b5s per loop\n43 625 loops, best of 3: 106 \u00b5s per loop\n44 625 loops, best of 3: 112 \u00b5s per loop\n45 625 loops, best of 3: 119 \u00b5s per loop\n46 625 loops, best of 3: 126 \u00b5s per loop\n47 625 loops, best of 3: 132 \u00b5s per loop\n48 625 loops, best of 3: 123 \u00b5s per loop\n49 625 loops, best of 3: 130 \u00b5s per loop\n50 625 loops, best of 3: 137 \u00b5s per loop\n51 625 loops, best of 3: 145 \u00b5s per loop\n52 625 loops, best of 3: 153 \u00b5s per loop\n53 625 loops, best of 3: 162 \u00b5s per loop\n54 625 loops, best of 3: 170 \u00b5s per loop\n55 625 loops, best of 3: 180 \u00b5s per loop\n56 625 loops, best of 3: 190 \u00b5s per loop\n57 625 loops, best of 3: 200 \u00b5s per loop\n58 625 loops, best of 3: 210 \u00b5s per loop\n59 625 loops, best of 3: 221 \u00b5s per loop\n60 625 loops, best of 3: 202 \u00b5s per loop\n61 625 loops, best of 3: 212 \u00b5s per loop\n62 625 loops, best of 3: 224 \u00b5s per loop\n63 625 loops, best of 3: 237 \u00b5s per loop\n64 625 loops, best of 3: 248 \u00b5s per loop\n65 625 loops, best of 3: 263 \u00b5s per loop\n66 625 loops, best of 3: 276 \u00b5s per loop\n67 625 loops, best of 3: 288 \u00b5s per loop\n68 625 loops, best of 3: 305 \u00b5s per loop\n69 625 loops, best of 3: 318 \u00b5s per loop\n```\n\nSo, there is an improvement for bigger matrices as well.",
     "created_at": "2012-03-10T21:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1681,7 +1664,6 @@ sage: for d in range(1, 70):
 69 625 loops, best of 3: 340 µs per loop
 ```
 
-
 With the patch:
 
 ```
@@ -1762,7 +1744,6 @@ sage: for d in range(1, 70):
 69 625 loops, best of 3: 318 µs per loop
 ```
 
-
 So, there is an improvement for bigger matrices as well.
 
 
@@ -1830,7 +1811,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070904.json:
 ```json
 {
-    "body": "Replying to [comment:44 davidloeffler]:\n> Curiously the latest version doesn't seem to build on 5.0.beta7: the patch applies, but the modified cython file `matrix_window.pyx` won't build. (See patchbot logs; I also reproduced this separately by hand.)\n\nOops. Apparently, while removing white space, I have also removed something else. Sorry, I'll update it in a minute.",
+    "body": "Replying to [comment:44 davidloeffler]:\n> Curiously the latest version doesn't seem to build on 5.0.beta7: the patch applies, but the modified cython file `matrix_window.pyx` won't build. (See patchbot logs; I also reproduced this separately by hand.)\n\n\nOops. Apparently, while removing white space, I have also removed something else. Sorry, I'll update it in a minute.",
     "created_at": "2012-03-11T12:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8096",
     "type": "issue_comment",
@@ -1841,6 +1822,7 @@ archive/issue_comments_070904.json:
 
 Replying to [comment:44 davidloeffler]:
 > Curiously the latest version doesn't seem to build on 5.0.beta7: the patch applies, but the modified cython file `matrix_window.pyx` won't build. (See patchbot logs; I also reproduced this separately by hand.)
+
 
 Oops. Apparently, while removing white space, I have also removed something else. Sorry, I'll update it in a minute.
 

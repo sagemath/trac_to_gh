@@ -3,7 +3,7 @@
 archive/issues_006555.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nWhen I start up the notebook in 4.1, I get:\n\n\n```\nsage: notebook()\nThe notebook files are stored in: /home/grout/.sage//sage_notebook\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n/home/grout/sage/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import os, md5, sys\n```\n\n\n\nIt looks like this was fixed a while ago in twisted: http://twistedmatrix.com/trac/ticket/2763\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6555\n\n",
+    "body": "Assignee: boothby\n\nWhen I start up the notebook in 4.1, I get:\n\n```\nsage: notebook()\nThe notebook files are stored in: /home/grout/.sage//sage_notebook\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n/home/grout/sage/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import os, md5, sys\n```\n\n\nIt looks like this was fixed a while ago in twisted: http://twistedmatrix.com/trac/ticket/2763\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6555\n\n",
     "created_at": "2009-07-18T19:27:35Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 When I start up the notebook in 4.1, I get:
 
-
 ```
 sage: notebook()
 The notebook files are stored in: /home/grout/.sage//sage_notebook
@@ -32,7 +31,6 @@ The notebook files are stored in: /home/grout/.sage//sage_notebook
 /home/grout/sage/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead
   import os, md5, sys
 ```
-
 
 
 It looks like this was fixed a while ago in twisted: http://twistedmatrix.com/trac/ticket/2763

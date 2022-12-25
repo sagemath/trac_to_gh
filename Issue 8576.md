@@ -3,7 +3,7 @@
 archive/issues_008576.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, real fields\n\nAfter this patch, QQ,ZZ,... inherit properly from categories: \n\n\n```\nsage: QQ.category()\nCategory of fields\nsage: TestSuite(QQ).run()\n```\n\n\nThis patch also documents the following effect discovered by TestSuite:\n\n```\n    sage: CDF = ComplexDoubleField()\n    sage: x = CDF.an_element()\n    sage: x\n    1.0*I\n    sage: x*x, x**2, x*x == x**2\n    (-1.0, -1.0 + 1.22460635382e-16*I, False)\n```\n\nThis effect won't be touched by this patch. Should anyone consider this as a bug, please open a new ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8576\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, real fields\n\nAfter this patch, QQ,ZZ,... inherit properly from categories: \n\n```\nsage: QQ.category()\nCategory of fields\nsage: TestSuite(QQ).run()\n```\n\nThis patch also documents the following effect discovered by TestSuite:\n\n```\n    sage: CDF = ComplexDoubleField()\n    sage: x = CDF.an_element()\n    sage: x\n    1.0*I\n    sage: x*x, x**2, x*x == x**2\n    (-1.0, -1.0 + 1.22460635382e-16*I, False)\n```\nThis effect won't be touched by this patch. Should anyone consider this as a bug, please open a new ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8576\n\n",
     "created_at": "2010-03-22T10:16:15Z",
     "labels": [
         "component: algebra"
@@ -23,13 +23,11 @@ Keywords: categories, real fields
 
 After this patch, QQ,ZZ,... inherit properly from categories: 
 
-
 ```
 sage: QQ.category()
 Category of fields
 sage: TestSuite(QQ).run()
 ```
-
 
 This patch also documents the following effect discovered by TestSuite:
 
@@ -41,7 +39,6 @@ This patch also documents the following effect discovered by TestSuite:
     sage: x*x, x**2, x*x == x**2
     (-1.0, -1.0 + 1.22460635382e-16*I, False)
 ```
-
 This effect won't be touched by this patch. Should anyone consider this as a bug, please open a new ticket.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8576

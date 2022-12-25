@@ -239,7 +239,7 @@ Paul
 archive/issue_comments_089308.json:
 ```json
 {
-    "body": "Replying to [comment:6 zimmerma]:\n> Yann, please could you review this? What you have to do (William please correct me if needed):\n\nSounds good to me. \n\nI've been advertising your book to all the French people I meet in Paris, e.g., at Euroscipy, and also to Bernandi at Jussieu today (he's one of the original PARI guys).",
+    "body": "Replying to [comment:6 zimmerma]:\n> Yann, please could you review this? What you have to do (William please correct me if needed):\n\n\nSounds good to me. \n\nI've been advertising your book to all the French people I meet in Paris, e.g., at Euroscipy, and also to Bernandi at Jussieu today (he's one of the original PARI guys).",
     "created_at": "2010-07-12T20:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -250,6 +250,7 @@ archive/issue_comments_089308.json:
 
 Replying to [comment:6 zimmerma]:
 > Yann, please could you review this? What you have to do (William please correct me if needed):
+
 
 Sounds good to me. 
 
@@ -262,7 +263,7 @@ I've been advertising your book to all the French people I meet in Paris, e.g., 
 archive/issue_comments_089309.json:
 ```json
 {
-    "body": "Replying to [comment:7 was]:\n> I've been advertising your book to all the French people I meet in Paris, e.g., at Euroscipy, and also to Bernandi at Jussieu today (he's one of the original PARI guys).\nthanks, some people of my lab who were at Euroscipy indeed told me today that they heard of our book there!\nPaul",
+    "body": "Replying to [comment:7 was]:\n> I've been advertising your book to all the French people I meet in Paris, e.g., at Euroscipy, and also to Bernandi at Jussieu today (he's one of the original PARI guys).\n\nthanks, some people of my lab who were at Euroscipy indeed told me today that they heard of our book there!\nPaul",
     "created_at": "2010-07-12T21:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -273,6 +274,7 @@ archive/issue_comments_089309.json:
 
 Replying to [comment:7 was]:
 > I've been advertising your book to all the French people I meet in Paris, e.g., at Euroscipy, and also to Bernandi at Jussieu today (he's one of the original PARI guys).
+
 thanks, some people of my lab who were at Euroscipy indeed told me today that they heard of our book there!
 Paul
 
@@ -283,7 +285,7 @@ Paul
 archive/issue_comments_089310.json:
 ```json
 {
-    "body": "Replying to [comment:6 zimmerma]:\n> Yann, please could you review this? What you have to do (William please correct me if needed):\n> \n> 1) [optional] check the content of the numbertheory.py file matches the corresponding chapter of the book. I write \"optional\" since this should be our (the authors of the book) responsability.\n> \n> 2) check the new doctests pass with the latest Sage version (we used 4.4.4)\n> \n> Paul\n\nSorry for the delay.\nAll tests passed with Sage 4.5.2.\n\nRegarding the `timeit` issue, you could change \n\n```\n    sage: %timeit (a^e) # not tested\n```\n\nfor\n\n```\n    sage: timeit('a^e') # random\n```\n\n\n(and also `# long` for some of them).\n\nI put it to `need info` for now, but feel free either to change this and ask me for a review (I'll be faster this time) or don't change anything and give a positive review.\n\n Yann",
+    "body": "Replying to [comment:6 zimmerma]:\n> Yann, please could you review this? What you have to do (William please correct me if needed):\n> \n> 1) [optional] check the content of the numbertheory.py file matches the corresponding chapter of the book. I write \"optional\" since this should be our (the authors of the book) responsability.\n> \n> 2) check the new doctests pass with the latest Sage version (we used 4.4.4)\n> \n> Paul\n\n\nSorry for the delay.\nAll tests passed with Sage 4.5.2.\n\nRegarding the `timeit` issue, you could change \n\n```\n    sage: %timeit (a^e) # not tested\n```\nfor\n\n```\n    sage: timeit('a^e') # random\n```\n\n(and also `# long` for some of them).\n\nI put it to `need info` for now, but feel free either to change this and ask me for a review (I'll be faster this time) or don't change anything and give a positive review.\n\n Yann",
     "created_at": "2010-08-15T21:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -301,6 +303,7 @@ Replying to [comment:6 zimmerma]:
 > 
 > Paul
 
+
 Sorry for the delay.
 All tests passed with Sage 4.5.2.
 
@@ -309,13 +312,11 @@ Regarding the `timeit` issue, you could change
 ```
     sage: %timeit (a^e) # not tested
 ```
-
 for
 
 ```
     sage: timeit('a^e') # random
 ```
-
 
 (and also `# long` for some of them).
 
@@ -466,7 +467,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089318.json:
 ```json
 {
-    "body": "> Paul, if you agree with my reviewer's patch, you can give this ticket a positive review. \n\nyes I agree.\nPaul",
+    "body": "> Paul, if you agree with my reviewer's patch, you can give this ticket a positive review. \n\n\nyes I agree.\nPaul",
     "created_at": "2010-09-01T19:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -476,6 +477,7 @@ archive/issue_comments_089318.json:
 ```
 
 > Paul, if you agree with my reviewer's patch, you can give this ticket a positive review. 
+
 
 yes I agree.
 Paul
@@ -523,7 +525,7 @@ Could someone please update both patches with more descriptive commit strings (a
 archive/issue_comments_089321.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> Could someone please update both patches with more descriptive commit strings (and change the status back to \"positive review\")?\n\ndone with a combined patch (apply only that one). Is that what you wanted?\n\nPaul",
+    "body": "Replying to [comment:13 mpatel]:\n> Could someone please update both patches with more descriptive commit strings (and change the status back to \"positive review\")?\n\n\ndone with a combined patch (apply only that one). Is that what you wanted?\n\nPaul",
     "created_at": "2010-09-06T18:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -534,6 +536,7 @@ archive/issue_comments_089321.json:
 
 Replying to [comment:13 mpatel]:
 > Could someone please update both patches with more descriptive commit strings (and change the status back to "positive review")?
+
 
 done with a combined patch (apply only that one). Is that what you wanted?
 
@@ -590,7 +593,7 @@ apply only this patch
 archive/issue_comments_089324.json:
 ```json
 {
-    "body": "Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by @zimmermann6 created at 2010-09-07 08:14:04\n\n> Could you update the just first line of the combined patch? \n\ndone.\nPaul",
+    "body": "Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by @zimmermann6 created at 2010-09-07 08:14:04\n\n> Could you update the just first line of the combined patch? \n\n\ndone.\nPaul",
     "created_at": "2010-09-07T08:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9395",
     "type": "issue_comment",
@@ -602,6 +605,7 @@ archive/issue_comments_089324.json:
 Attachment [trac_9395_combined.patch](tarball://root/attachments/some-uuid/ticket9395/trac_9395_combined.patch) by @zimmermann6 created at 2010-09-07 08:14:04
 
 > Could you update the just first line of the combined patch? 
+
 
 done.
 Paul

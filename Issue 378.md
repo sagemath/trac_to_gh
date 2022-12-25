@@ -3,7 +3,7 @@
 archive/issues_000378.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  rossk\n\n\n```\nUtpal Sarkar <doetoe@gmail.com> \t\nto sage-support\n\t\nshow details\n\t 9:17 am (7 minutes ago) \n\nI thought it could work something like this:\nAs a command line option it could be like an include path or a library\npath to gcc, i.e. every option \"-I path\" (or any other name of the\nswitch, this is the one for includes in gcc) is added to the existing\ndefault list of paths. This could be useful e.g. when calling sage\nfrom a launcher, in which case you could put these options in the\nlauncher so that it will always be called with these paths when ran\nfrom the launcher.\nAs an environment variable it could work just like LD_LIBRARY_PATH,\nPYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some\nother separator) whose constituents are also added to the existing\nlist of paths. For reasons of implementation, maybe it is easier to\njust use PYTHONPATH for sage files as well.\nIf this list would be directly accessible from sage, as in python\nwhere it is stored in sys.path (which is read/write), and moreover\nthere were the possibility to specify a startup script which would be\nexecuted just before entering the session (like in magma when called\nwith -s, or in bash and many other linux programs where it is a\nstandard file .bashrc), then you could also append your paths to the\nstandard list in the startup script.\nWhen calling \"load\" or \"attach\" from sage with a non-absolute path, it\nwould cycle through this list, concatenating the paths with the string\npassed to load or attach, until it finds the file.\nIf you consider this useful, and you could implement any of these in\nsage, that would be great!\n\nThanks,\n\nUtpal\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  rossk\n\n```\nUtpal Sarkar <doetoe@gmail.com> \t\nto sage-support\n\t\nshow details\n\t 9:17 am (7 minutes ago) \n\nI thought it could work something like this:\nAs a command line option it could be like an include path or a library\npath to gcc, i.e. every option \"-I path\" (or any other name of the\nswitch, this is the one for includes in gcc) is added to the existing\ndefault list of paths. This could be useful e.g. when calling sage\nfrom a launcher, in which case you could put these options in the\nlauncher so that it will always be called with these paths when ran\nfrom the launcher.\nAs an environment variable it could work just like LD_LIBRARY_PATH,\nPYTHONPATH or MAGMA_PATH: a list of paths separated by colons (or some\nother separator) whose constituents are also added to the existing\nlist of paths. For reasons of implementation, maybe it is easier to\njust use PYTHONPATH for sage files as well.\nIf this list would be directly accessible from sage, as in python\nwhere it is stored in sys.path (which is read/write), and moreover\nthere were the possibility to specify a startup script which would be\nexecuted just before entering the session (like in magma when called\nwith -s, or in bash and many other linux programs where it is a\nstandard file .bashrc), then you could also append your paths to the\nstandard list in the startup script.\nWhen calling \"load\" or \"attach\" from sage with a non-absolute path, it\nwould cycle through this list, concatenating the paths with the string\npassed to load or attach, until it finds the file.\nIf you consider this useful, and you could implement any of these in\nsage, that would be great!\n\nThanks,\n\nUtpal\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/378\n\n",
     "created_at": "2007-05-25T16:28:34Z",
     "labels": [
         "component: user interface",
@@ -19,7 +19,6 @@ archive/issues_000378.json:
 Assignee: @williamstein
 
 CC:  rossk
-
 
 ```
 Utpal Sarkar <doetoe@gmail.com> 	
@@ -60,7 +59,6 @@ Utpal
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/378
 
@@ -329,7 +327,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_001806.json:
 ```json
 {
-    "body": "Replying to [comment:10 timdumol]:\n> Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n\nBoth ideas sound great.  I can't make the changes immediately, but I'll try to attach a new patch soon.",
+    "body": "Replying to [comment:10 timdumol]:\n> Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n\n\nBoth ideas sound great.  I can't make the changes immediately, but I'll try to attach a new patch soon.",
     "created_at": "2010-06-23T01:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -340,6 +338,7 @@ archive/issue_comments_001806.json:
 
 Replying to [comment:10 timdumol]:
 > Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append("~/foo"). What do you think?
+
 
 Both ideas sound great.  I can't make the changes immediately, but I'll try to attach a new patch soon.
 
@@ -386,7 +385,7 @@ Available as another reviewer if you need one.
 archive/issue_comments_001809.json:
 ```json
 {
-    "body": "Is this still alive? I found myself in need of this functionality today and was surprised it is not there; how does anyone use the notebook locally without it?\n\nAnyway, I'd like to help out fixing or reviewing if necessary.\nI've only glanced at the current patch but found this anomaly: Shouldn't line 1399 be changed to \n\n```\nwhile '' in _load_attach_path:\n```\n\nso as to remove any number of empty entries (e.g. if user wrote SAGE_LOAD_ATTACH_PATH = \":::::foo::\")\n\nCheers, Johan",
+    "body": "Is this still alive? I found myself in need of this functionality today and was surprised it is not there; how does anyone use the notebook locally without it?\n\nAnyway, I'd like to help out fixing or reviewing if necessary.\nI've only glanced at the current patch but found this anomaly: Shouldn't line 1399 be changed to \n\n```\nwhile '' in _load_attach_path:\n```\nso as to remove any number of empty entries (e.g. if user wrote SAGE_LOAD_ATTACH_PATH = \":::::foo::\")\n\nCheers, Johan",
     "created_at": "2010-10-21T09:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -403,7 +402,6 @@ I've only glanced at the current patch but found this anomaly: Shouldn't line 13
 ```
 while '' in _load_attach_path:
 ```
-
 so as to remove any number of empty entries (e.g. if user wrote SAGE_LOAD_ATTACH_PATH = ":::::foo::")
 
 Cheers, Johan
@@ -433,7 +431,7 @@ Thanks for the interest!  Unfortunately, I've been busy with other tasks (Sage a
 archive/issue_comments_001811.json:
 ```json
 {
-    "body": "Replying to [comment:10 timdumol]:\n> Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n\nI've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.\n\nFailing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.\n\nThis requires caution on the part of the user and the programmer.  For example, `reset_load_attach_path()` can't include\n\n```\nload_attach_path = ['.']\n```\n\n\ninstead it has to do\n\n```\nwhile load_attach_path != []:\n    load_attach_path.pop()\nload_attach_path.append('.')\n```\n\n\nIf the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.\n\nSo it's possible to expose the `load_attach_path` array to the user, and I've written most of a patch that does this, but there's lots of things that could go wrong so I'd suggest sticking to the existing patch's approach of hiding behind a function.  If others think that the pros outweigh the cons then I'll tidy up the patch and upload it.\n\nThoughts?",
+    "body": "Replying to [comment:10 timdumol]:\n> Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n\n\nI've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.\n\nFailing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.\n\nThis requires caution on the part of the user and the programmer.  For example, `reset_load_attach_path()` can't include\n\n```\nload_attach_path = ['.']\n```\n\ninstead it has to do\n\n```\nwhile load_attach_path != []:\n    load_attach_path.pop()\nload_attach_path.append('.')\n```\n\nIf the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.\n\nSo it's possible to expose the `load_attach_path` array to the user, and I've written most of a patch that does this, but there's lots of things that could go wrong so I'd suggest sticking to the existing patch's approach of hiding behind a function.  If others think that the pros outweigh the cons then I'll tidy up the patch and upload it.\n\nThoughts?",
     "created_at": "2010-11-04T05:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -445,6 +443,7 @@ archive/issue_comments_001811.json:
 Replying to [comment:10 timdumol]:
 > Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append("~/foo"). What do you think?
 
+
 I've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.
 
 Failing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.
@@ -455,7 +454,6 @@ This requires caution on the part of the user and the programmer.  For example, 
 load_attach_path = ['.']
 ```
 
-
 instead it has to do
 
 ```
@@ -463,7 +461,6 @@ while load_attach_path != []:
     load_attach_path.pop()
 load_attach_path.append('.')
 ```
-
 
 If the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.
 
@@ -538,7 +535,7 @@ Assuming that no-one comes up with a robust and convenient way to expose the arr
 archive/issue_comments_001815.json:
 ```json
 {
-    "body": "Reviewing this on 4.6.1.alpha1 - should I be using 4.6?\n\n\n```\n/scratch/rossk/sage-4.6.1/devel/sage$ hg qpush\napplying trac_378-load_attach_path.2.1.patch\npatching file sage/misc/all.py\nHunk #1 FAILED at 57\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/all.py.rej\npatching file sage/misc/preparser.py\nHunk #1 FAILED at 1390\nHunk #2 FAILED at 1488\nHunk #3 FAILED at 1497\nHunk #4 FAILED at 1533\nHunk #5 FAILED at 1568\nHunk #6 FAILED at 1582\nHunk #7 FAILED at 1593\nHunk #8 FAILED at 1608\nHunk #9 FAILED at 1618\nHunk #10 FAILED at 1771\n10 out of 10 hunks FAILED -- saving rejects to file sage/misc/preparser.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_378-load_attach_path.2.1.patch\n```\n",
+    "body": "Reviewing this on 4.6.1.alpha1 - should I be using 4.6?\n\n```\n/scratch/rossk/sage-4.6.1/devel/sage$ hg qpush\napplying trac_378-load_attach_path.2.1.patch\npatching file sage/misc/all.py\nHunk #1 FAILED at 57\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/all.py.rej\npatching file sage/misc/preparser.py\nHunk #1 FAILED at 1390\nHunk #2 FAILED at 1488\nHunk #3 FAILED at 1497\nHunk #4 FAILED at 1533\nHunk #5 FAILED at 1568\nHunk #6 FAILED at 1582\nHunk #7 FAILED at 1593\nHunk #8 FAILED at 1608\nHunk #9 FAILED at 1618\nHunk #10 FAILED at 1771\n10 out of 10 hunks FAILED -- saving rejects to file sage/misc/preparser.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_378-load_attach_path.2.1.patch\n```",
     "created_at": "2010-11-05T02:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -548,7 +545,6 @@ archive/issue_comments_001815.json:
 ```
 
 Reviewing this on 4.6.1.alpha1 - should I be using 4.6?
-
 
 ```
 /scratch/rossk/sage-4.6.1/devel/sage$ hg qpush
@@ -572,7 +568,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_378-load_attach_path.2.1.patch
 ```
-
 
 
 
@@ -619,7 +614,7 @@ Sorry, I'm new to mercurial queues and stuffed up the patch (it did rely on the 
 archive/issue_comments_001818.json:
 ```json
 {
-    "body": "Replying to [comment:19 flawrence]:\n> Sorry, I'm new to mercurial queues and stuffed up the patch (it did rely on the other patch after all).  The new patch I just uploaded should work on 4.6 without mpatel's patch, and hopefully 4.6.alpha1 too.\n\nIm new to mercurial queues too (and much more :-). Thought youd like to know your new patch was error free. (Ill test over the weekend and report back when I can - sorry it cant be sooner).",
+    "body": "Replying to [comment:19 flawrence]:\n> Sorry, I'm new to mercurial queues and stuffed up the patch (it did rely on the other patch after all).  The new patch I just uploaded should work on 4.6 without mpatel's patch, and hopefully 4.6.alpha1 too.\n\n\nIm new to mercurial queues too (and much more :-). Thought youd like to know your new patch was error free. (Ill test over the weekend and report back when I can - sorry it cant be sooner).",
     "created_at": "2010-11-05T08:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -631,6 +626,7 @@ archive/issue_comments_001818.json:
 Replying to [comment:19 flawrence]:
 > Sorry, I'm new to mercurial queues and stuffed up the patch (it did rely on the other patch after all).  The new patch I just uploaded should work on 4.6 without mpatel's patch, and hopefully 4.6.alpha1 too.
 
+
 Im new to mercurial queues too (and much more :-). Thought youd like to know your new patch was error free. (Ill test over the weekend and report back when I can - sorry it cant be sooner).
 
 
@@ -640,7 +636,7 @@ Im new to mercurial queues too (and much more :-). Thought youd like to know you
 archive/issue_comments_001819.json:
 ```json
 {
-    "body": "Replying to [comment:16 flawrence]:\n> Replying to [comment:10 timdumol]:\n> > Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n> \n> I've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.\n> \n> Failing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.\n> \n> This requires caution on the part of the user and the programmer.  For example, `reset_load_attach_path()` can't include\n> {{{\n> load_attach_path = ['.']\n> }}}\n> \n> instead it has to do\n> {{{\n> while load_attach_path != []:\n>     load_attach_path.pop()\n> load_attach_path.append('.')\n> }}}\n> \n> If the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.\n> \n> So it's possible to expose the `load_attach_path` array to the user, and I've written most of a patch that does this, but there's lots of things that could go wrong so I'd suggest sticking to the existing patch's approach of hiding behind a function.  If others think that the pros outweigh the cons then I'll tidy up the patch and upload it.\n> \n> Thoughts?\n \nVery astute! I was almost finished with my own patch, falling into all the same holes as you describe :-) Your concern at least begs the question on whether this is what we want to do, as it might fool some users. However, a possible usage pattern - in case load_attach_path is fully exposed - is the following\n\n\n```\n   import sage.misc.preparser as pre\n   pre.load_attach_path = [ ... ]\n```\n\n\nStill, this is not very nice, and doesn't really fit into the \"import sage.all\" scheme. A third possibility is to \"decide\" that we might very well need such global variables in other places, stemming from various other foundational modules, and therefore introduce a new module sage.misc.globals to hold these. When Sage launches, it imports this module as \"globals\", and so, for any global variable - say load_attach_path -, the user would access it and modify it as globals.load_attach_path. I don't think that would be unnatural at all. However, it might be overkill if load_attach_path is the _only_ such conceivable global value, but for some reason (perhaps the sheer size of Sage), I can't really think it is.\n\nIf none of these sound compelling, then I vote yes on the current form (I haven't tested the patch, that is). My only comment on the current patch, is that maybe there should be a TODO (or a fix ;-) ) in reset_load_attach_path(), which notes that probably the elements of SAGE_LOAD_ATTACH_PATH should be uniquified while preserving the order (thus, list(set(_load_attach_path)) is no good). After that the while could be reverted to an if again when removing the empty element.\n\nOtherwise good work. I'm looking forward to this patch in Sage, whatever the format :-)\nCheers, Johan",
+    "body": "Replying to [comment:16 flawrence]:\n> Replying to [comment:10 timdumol]:\n> > Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append(\"~/foo\"). What do you think?\n\n> \n> I've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.\n> \n> Failing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.\n> \n> This requires caution on the part of the user and the programmer.  For example, `reset_load_attach_path()` can't include\n> \n> ```\n> load_attach_path = ['.']\n> ```\n> \n> instead it has to do\n> \n> ```\n> while load_attach_path != []:\n>     load_attach_path.pop()\n> load_attach_path.append('.')\n> ```\n> \n> If the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.\n> \n> So it's possible to expose the `load_attach_path` array to the user, and I've written most of a patch that does this, but there's lots of things that could go wrong so I'd suggest sticking to the existing patch's approach of hiding behind a function.  If others think that the pros outweigh the cons then I'll tidy up the patch and upload it.\n> \n> Thoughts?\n\n \nVery astute! I was almost finished with my own patch, falling into all the same holes as you describe :-) Your concern at least begs the question on whether this is what we want to do, as it might fool some users. However, a possible usage pattern - in case load_attach_path is fully exposed - is the following\n\n```\n   import sage.misc.preparser as pre\n   pre.load_attach_path = [ ... ]\n```\n\nStill, this is not very nice, and doesn't really fit into the \"import sage.all\" scheme. A third possibility is to \"decide\" that we might very well need such global variables in other places, stemming from various other foundational modules, and therefore introduce a new module sage.misc.globals to hold these. When Sage launches, it imports this module as \"globals\", and so, for any global variable - say load_attach_path -, the user would access it and modify it as globals.load_attach_path. I don't think that would be unnatural at all. However, it might be overkill if load_attach_path is the _only_ such conceivable global value, but for some reason (perhaps the sheer size of Sage), I can't really think it is.\n\nIf none of these sound compelling, then I vote yes on the current form (I haven't tested the patch, that is). My only comment on the current patch, is that maybe there should be a TODO (or a fix ;-) ) in reset_load_attach_path(), which notes that probably the elements of SAGE_LOAD_ATTACH_PATH should be uniquified while preserving the order (thus, list(set(_load_attach_path)) is no good). After that the while could be reverted to an if again when removing the empty element.\n\nOtherwise good work. I'm looking forward to this patch in Sage, whatever the format :-)\nCheers, Johan",
     "created_at": "2010-11-05T08:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -652,37 +648,39 @@ archive/issue_comments_001819.json:
 Replying to [comment:16 flawrence]:
 > Replying to [comment:10 timdumol]:
 > > Things work perfectly, but I think it might be better to follow the Python stdlib in exposing the array itself, instead of covering it in a function (`sys.path` instead of `sys.path()`, so similarly, `load_attach_path` instead of `load_attach_path()`). Also, it might be handy to `os.path.expand_user` any paths handed to the function, so you could have load_attach_path.append("~/foo"). What do you think?
+
 > 
 > I've had a bit of a hack at exposing the array itself, but there are problems making it sufficiently global.  `sys.path` works for the stdlib because `path` is a variable in the `sys` module.  The logical thing to do here is to create a `load_attach_path` variable in the preparser module, but following the stdlib analogy this would require the user to edit `sage.misc.preparser.load_attach_path`, which is not very user friendly.
 > 
 > Failing this, it looks like the best you can do is a `from sage.misc.preparser import load_attach_path`, but this is a fragile state of affairs: if you reassign `load_attach_path` anywhere, either from sage's command line or by calling some function like `sage.misc.preparser.reset_load_attach_path()`, you end up with a situation where `load_attach_path` and `sage.misc.preparser.load_attach_path` are different objects.
 > 
 > This requires caution on the part of the user and the programmer.  For example, `reset_load_attach_path()` can't include
-> {{{
+> 
+> ```
 > load_attach_path = ['.']
-> }}}
+> ```
 > 
 > instead it has to do
-> {{{
+> 
+> ```
 > while load_attach_path != []:
 >     load_attach_path.pop()
 > load_attach_path.append('.')
-> }}}
+> ```
 > 
 > If the user accidentally reassigns `load_attach_path` in the command line, they'll have to re-run `from sage.misc.preparser import load_attach_path`.  I don't think that this step can be included in a `reset_load_attach_path()` function due to the different scopes.
 > 
 > So it's possible to expose the `load_attach_path` array to the user, and I've written most of a patch that does this, but there's lots of things that could go wrong so I'd suggest sticking to the existing patch's approach of hiding behind a function.  If others think that the pros outweigh the cons then I'll tidy up the patch and upload it.
 > 
 > Thoughts?
+
  
 Very astute! I was almost finished with my own patch, falling into all the same holes as you describe :-) Your concern at least begs the question on whether this is what we want to do, as it might fool some users. However, a possible usage pattern - in case load_attach_path is fully exposed - is the following
-
 
 ```
    import sage.misc.preparser as pre
    pre.load_attach_path = [ ... ]
 ```
-
 
 Still, this is not very nice, and doesn't really fit into the "import sage.all" scheme. A third possibility is to "decide" that we might very well need such global variables in other places, stemming from various other foundational modules, and therefore introduce a new module sage.misc.globals to hold these. When Sage launches, it imports this module as "globals", and so, for any global variable - say load_attach_path -, the user would access it and modify it as globals.load_attach_path. I don't think that would be unnatural at all. However, it might be overkill if load_attach_path is the _only_ such conceivable global value, but for some reason (perhaps the sheer size of Sage), I can't really think it is.
 
@@ -698,7 +696,7 @@ Cheers, Johan
 archive/issue_comments_001820.json:
 ```json
 {
-    "body": "Thanks to everyone for working on this ticket!\n\nOne question that may relate to how/whether we \"expose\" the path list:  Would users want Sage to search some paths recursively for files to load or attach?  How would we store this information?  Perhaps as\n\n```python\n['/some/path', ('/a/path/to/search/recursively', True), '/another/path']\n```\n\n?  Of course, this needn't hold up this ticket.",
+    "body": "Thanks to everyone for working on this ticket!\n\nOne question that may relate to how/whether we \"expose\" the path list:  Would users want Sage to search some paths recursively for files to load or attach?  How would we store this information?  Perhaps as\n\n```python\n['/some/path', ('/a/path/to/search/recursively', True), '/another/path']\n```\n?  Of course, this needn't hold up this ticket.",
     "created_at": "2010-11-05T10:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -714,7 +712,6 @@ One question that may relate to how/whether we "expose" the path list:  Would us
 ```python
 ['/some/path', ('/a/path/to/search/recursively', True), '/another/path']
 ```
-
 ?  Of course, this needn't hold up this ticket.
 
 
@@ -724,7 +721,7 @@ One question that may relate to how/whether we "expose" the path list:  Would us
 archive/issue_comments_001821.json:
 ```json
 {
-    "body": "Replying to [comment:21 jsrn]:\n\n>  My only comment on the current patch, is that maybe there should be a TODO (or a fix ;-) ) in reset_load_attach_path(), which notes that probably the elements of SAGE_LOAD_ATTACH_PATH should be uniquified while preserving the order (thus, list(set(_load_attach_path)) is no good). After that the while could be reverted to an if again when removing the empty element.\n\nDo we really need to test for uniqueness at all? It's the user's fault if they get it wrong, and the only negative consequence I see is that attaching/loading files (not the sort of operation that sits deep in a loop) a tiny tiny bit slower.  Python doesn't check for uniqueness in sys.path, BASH doesn't check for uniqueness in $PATH.  AFAIK the main argument for uniqueness is aesthetics; perhaps we can leave this to the user rather than try to tidy up after them (and perhaps do something unexpected in the process)?\n\nReplying to [comment:22 mpatel]:\n>One question that may relate to how/whether we \"expose\" the path list: Would users want Sage to search some paths recursively for files to load or attach? How would we store this information?\n\nThis is an interesting question.  I think it would be a nice feature.  Since we don't actually expose the path array, it would be easy to add such features later, so it's probably best as a new ticket.\n\n\nI also noticed that I was fat-fingered typing the name of the new patch - 387 instead of 378.  *sigh*",
+    "body": "Replying to [comment:21 jsrn]:\n\n>  My only comment on the current patch, is that maybe there should be a TODO (or a fix ;-) ) in reset_load_attach_path(), which notes that probably the elements of SAGE_LOAD_ATTACH_PATH should be uniquified while preserving the order (thus, list(set(_load_attach_path)) is no good). After that the while could be reverted to an if again when removing the empty element.\n\n\nDo we really need to test for uniqueness at all? It's the user's fault if they get it wrong, and the only negative consequence I see is that attaching/loading files (not the sort of operation that sits deep in a loop) a tiny tiny bit slower.  Python doesn't check for uniqueness in sys.path, BASH doesn't check for uniqueness in $PATH.  AFAIK the main argument for uniqueness is aesthetics; perhaps we can leave this to the user rather than try to tidy up after them (and perhaps do something unexpected in the process)?\n\nReplying to [comment:22 mpatel]:\n>One question that may relate to how/whether we \"expose\" the path list: Would users want Sage to search some paths recursively for files to load or attach? How would we store this information?\n\n\nThis is an interesting question.  I think it would be a nice feature.  Since we don't actually expose the path array, it would be easy to add such features later, so it's probably best as a new ticket.\n\n\nI also noticed that I was fat-fingered typing the name of the new patch - 387 instead of 378.  *sigh*",
     "created_at": "2010-11-05T14:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -737,10 +734,12 @@ Replying to [comment:21 jsrn]:
 
 >  My only comment on the current patch, is that maybe there should be a TODO (or a fix ;-) ) in reset_load_attach_path(), which notes that probably the elements of SAGE_LOAD_ATTACH_PATH should be uniquified while preserving the order (thus, list(set(_load_attach_path)) is no good). After that the while could be reverted to an if again when removing the empty element.
 
+
 Do we really need to test for uniqueness at all? It's the user's fault if they get it wrong, and the only negative consequence I see is that attaching/loading files (not the sort of operation that sits deep in a loop) a tiny tiny bit slower.  Python doesn't check for uniqueness in sys.path, BASH doesn't check for uniqueness in $PATH.  AFAIK the main argument for uniqueness is aesthetics; perhaps we can leave this to the user rather than try to tidy up after them (and perhaps do something unexpected in the process)?
 
 Replying to [comment:22 mpatel]:
 >One question that may relate to how/whether we "expose" the path list: Would users want Sage to search some paths recursively for files to load or attach? How would we store this information?
+
 
 This is an interesting question.  I think it would be a nice feature.  Since we don't actually expose the path array, it would be easy to add such features later, so it's probably best as a new ticket.
 
@@ -790,7 +789,7 @@ You shouldn't have to import `load_attach_path()` manually.  Applying the patch 
 archive/issue_comments_001824.json:
 ```json
 {
-    "body": "Replying to [comment:25 flawrence]:\n> You shouldn't have to import `load_attach_path()` manually.  Applying the patch and rebuilding on 4.6 worked for me.  Maybe you forgot to rebuild sage after applying the most recent patch?\n\nDoh! Certainly did forget and rebuilding worked - thanks!",
+    "body": "Replying to [comment:25 flawrence]:\n> You shouldn't have to import `load_attach_path()` manually.  Applying the patch and rebuilding on 4.6 worked for me.  Maybe you forgot to rebuild sage after applying the most recent patch?\n\n\nDoh! Certainly did forget and rebuilding worked - thanks!",
     "created_at": "2010-11-06T05:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -801,6 +800,7 @@ archive/issue_comments_001824.json:
 
 Replying to [comment:25 flawrence]:
 > You shouldn't have to import `load_attach_path()` manually.  Applying the patch and rebuilding on 4.6 worked for me.  Maybe you forgot to rebuild sage after applying the most recent patch?
+
 
 Doh! Certainly did forget and rebuilding worked - thanks!
 
@@ -829,7 +829,7 @@ I exercised this reasonably well and the functionality is great. After it passed
 archive/issue_comments_001826.json:
 ```json
 {
-    "body": "Replying to [comment:27 rossk]:\n>I renamed the folder that had the attached file (to see what would happen). The error was not unexpected: \"OSError: [Errno 2] No such file or directory: ...\". But this error persisted no matter what was done afterwards (even just \"1+1\"!). I had to get out of Sage to start again.\n\nI've checked and this happens even without this patch applied, so it's a separate issue I think.  Not much error checking is done for attached files!  I've started ticket #10229 for this.",
+    "body": "Replying to [comment:27 rossk]:\n>I renamed the folder that had the attached file (to see what would happen). The error was not unexpected: \"OSError: [Errno 2] No such file or directory: ...\". But this error persisted no matter what was done afterwards (even just \"1+1\"!). I had to get out of Sage to start again.\n\n\nI've checked and this happens even without this patch applied, so it's a separate issue I think.  Not much error checking is done for attached files!  I've started ticket #10229 for this.",
     "created_at": "2010-11-06T13:53:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -840,6 +840,7 @@ archive/issue_comments_001826.json:
 
 Replying to [comment:27 rossk]:
 >I renamed the folder that had the attached file (to see what would happen). The error was not unexpected: "OSError: [Errno 2] No such file or directory: ...". But this error persisted no matter what was done afterwards (even just "1+1"!). I had to get out of Sage to start again.
+
 
 I've checked and this happens even without this patch applied, so it's a separate issue I think.  Not much error checking is done for attached files!  I've started ticket #10229 for this.
 
@@ -868,7 +869,7 @@ Because the functionality is important, it works as designed, and passed all tes
 archive/issue_comments_001828.json:
 ```json
 {
-    "body": "It may be too late for the following suggestions but Ill put them forward in case you think they have enough merit to refactor the code now (otherwise ignore them or they can go in another ticket). They are based on the idea that the main things we want to do with a path is: (1) start Sage with a sensible default (2) display what the current path is (3) set the path (4) add a folder to the end/beginning of the path (5) reset the path (6) totally clear the path. (I acknowledge some ideas have come from other packages e.g. matlab). So here's is how the path may be made to work in the future. Please let me know what you think. These are just ideas and doesnt change the good work youve already done - thanks for that!  \n\n\n```\n# display the default attach-path (unless a SAGE_ATTACH_PATH environment variable is set, then the attach-path when Sage starts is the path in SAGE_ATTACH_PATH)\nsage: attach_path()\n['.']\n\n# set the attach path to a list of folders: ['./folder1','./folder2']\n# (Note: if you want the current directory '.' included, you must specify it)\nsage: attach_path(['folder1','folder2'])\n\n# append to the (end of) attach path\nsage: attach_path_join(attach_path(), ['folder3'])\n\n# display the attach path \nsage: attach_path()\n['folder1','folder2','folder3']\n\n# add to the start of the attach path\nsage: attach_path_join(['folder0'], attach_path())\n\n# display the attach path again\nsage: attach_path()\n['folder0','folder1','folder2','folder3']\n\n# append to the (end of) attach path *recursively*\nsage: attach_path_join_subfolders(attach_path(), ['folder4'])\n\n# display the attach path \nsage: attach_path()\n['folder0','folder1','folder2','folder3','folder4','folder4/dir1','folder4/dir2']\n\n# reset the attach path - sets the attach path to the default \nsage: reset_attach_path()\n\n# clear the attach path - sets it to '' i.e. neither '.' nor SAGE_ATTACH_PATH  are included (when you want to ensure no implicit attaching is done or to rebuild the path from scratch)\nsage: clear_attach_path()\n\n# display the attach path \nsage: attach_path()\n[]\n```\n",
+    "body": "It may be too late for the following suggestions but Ill put them forward in case you think they have enough merit to refactor the code now (otherwise ignore them or they can go in another ticket). They are based on the idea that the main things we want to do with a path is: (1) start Sage with a sensible default (2) display what the current path is (3) set the path (4) add a folder to the end/beginning of the path (5) reset the path (6) totally clear the path. (I acknowledge some ideas have come from other packages e.g. matlab). So here's is how the path may be made to work in the future. Please let me know what you think. These are just ideas and doesnt change the good work youve already done - thanks for that!  \n\n```\n# display the default attach-path (unless a SAGE_ATTACH_PATH environment variable is set, then the attach-path when Sage starts is the path in SAGE_ATTACH_PATH)\nsage: attach_path()\n['.']\n\n# set the attach path to a list of folders: ['./folder1','./folder2']\n# (Note: if you want the current directory '.' included, you must specify it)\nsage: attach_path(['folder1','folder2'])\n\n# append to the (end of) attach path\nsage: attach_path_join(attach_path(), ['folder3'])\n\n# display the attach path \nsage: attach_path()\n['folder1','folder2','folder3']\n\n# add to the start of the attach path\nsage: attach_path_join(['folder0'], attach_path())\n\n# display the attach path again\nsage: attach_path()\n['folder0','folder1','folder2','folder3']\n\n# append to the (end of) attach path *recursively*\nsage: attach_path_join_subfolders(attach_path(), ['folder4'])\n\n# display the attach path \nsage: attach_path()\n['folder0','folder1','folder2','folder3','folder4','folder4/dir1','folder4/dir2']\n\n# reset the attach path - sets the attach path to the default \nsage: reset_attach_path()\n\n# clear the attach path - sets it to '' i.e. neither '.' nor SAGE_ATTACH_PATH  are included (when you want to ensure no implicit attaching is done or to rebuild the path from scratch)\nsage: clear_attach_path()\n\n# display the attach path \nsage: attach_path()\n[]\n```",
     "created_at": "2010-11-06T20:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/378",
     "type": "issue_comment",
@@ -878,7 +879,6 @@ archive/issue_comments_001828.json:
 ```
 
 It may be too late for the following suggestions but Ill put them forward in case you think they have enough merit to refactor the code now (otherwise ignore them or they can go in another ticket). They are based on the idea that the main things we want to do with a path is: (1) start Sage with a sensible default (2) display what the current path is (3) set the path (4) add a folder to the end/beginning of the path (5) reset the path (6) totally clear the path. (I acknowledge some ideas have come from other packages e.g. matlab). So here's is how the path may be made to work in the future. Please let me know what you think. These are just ideas and doesnt change the good work youve already done - thanks for that!  
-
 
 ```
 # display the default attach-path (unless a SAGE_ATTACH_PATH environment variable is set, then the attach-path when Sage starts is the path in SAGE_ATTACH_PATH)
@@ -920,7 +920,6 @@ sage: clear_attach_path()
 sage: attach_path()
 []
 ```
-
 
 
 

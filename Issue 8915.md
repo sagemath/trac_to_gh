@@ -3,7 +3,7 @@
 archive/issues_008915.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nKeywords: dyck_words\n\ndocumentation in several functions are missing description\n\n```\n    def associated_parenthesis(self, pos):\n        \"\"\"\n        EXAMPLES::\n        \n            sage: DyckWord([1, 0]).associated_parenthesis(0)\n            1\n```\n\n\nWorking on patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/8915\n\n",
+    "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nKeywords: dyck_words\n\ndocumentation in several functions are missing description\n\n```\n    def associated_parenthesis(self, pos):\n        \"\"\"\n        EXAMPLES::\n        \n            sage: DyckWord([1, 0]).associated_parenthesis(0)\n            1\n```\n\nWorking on patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/8915\n\n",
     "created_at": "2010-05-07T16:08:33Z",
     "labels": [
         "component: documentation",
@@ -33,7 +33,6 @@ documentation in several functions are missing description
             sage: DyckWord([1, 0]).associated_parenthesis(0)
             1
 ```
-
 
 Working on patch
 

@@ -3,7 +3,7 @@
 archive/issues_006860.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n[hangs forever]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6860\n\n",
     "created_at": "2009-09-02T02:22:05Z",
     "labels": [
         "component: number theory",
@@ -18,12 +18,10 @@ archive/issues_006860.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: dimension_cusp_forms(Gamma(11))
 [hangs forever]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6860
 
@@ -54,7 +52,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_056476.json:
 ```json
 {
-    "body": "Wait, I'm just impatient, since:\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n26\n```\n\n\nSo I'm changing this to an enhancement, since I think this should be fast.",
+    "body": "Wait, I'm just impatient, since:\n\n```\nsage: dimension_cusp_forms(Gamma(11))\n26\n```\n\nSo I'm changing this to an enhancement, since I think this should be fast.",
     "created_at": "2009-09-02T13:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ Wait, I'm just impatient, since:
 sage: dimension_cusp_forms(Gamma(11))
 26
 ```
-
 
 So I'm changing this to an enhancement, since I think this should be fast.
 
@@ -116,7 +113,7 @@ Changing status from new to needs_review.
 archive/issue_comments_056479.json:
 ```json
 {
-    "body": "This has now been fastified:\n\n```python\nsage: %time dimension_cusp_forms(Gamma(10^28+731))                             \nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 1.54 s\n36274370885528165103530592700784546931709800073501194539717685491542679896172544001\n```\n\n(and most of that is the time taken to factor the level). I propose closing this as fixed.",
+    "body": "This has now been fastified:\n\n```python\nsage: %time dimension_cusp_forms(Gamma(10^28+731))                             \nCPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s\nWall time: 1.54 s\n36274370885528165103530592700784546931709800073501194539717685491542679896172544001\n```\n(and most of that is the time taken to factor the level). I propose closing this as fixed.",
     "created_at": "2013-07-22T15:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6860",
     "type": "issue_comment",
@@ -133,7 +130,6 @@ CPU times: user 0.04 s, sys: 0.02 s, total: 0.06 s
 Wall time: 1.54 s
 36274370885528165103530592700784546931709800073501194539717685491542679896172544001
 ```
-
 (and most of that is the time taken to factor the level). I propose closing this as fixed.
 
 

@@ -3,7 +3,7 @@
 archive/issues_004645.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRight in the middle of setup.py we find:\n\n```\n\nfrom module_list import ext_modules\n\n```\n\nwithout further comment.\n\nMove this line to the very top of setup.py and surround it be huge helpful comments.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4645\n\n",
+    "body": "Assignee: mabshoff\n\nRight in the middle of setup.py we find:\n\n```\n\nfrom module_list import ext_modules\n\n```\nwithout further comment.\n\nMove this line to the very top of setup.py and surround it be huge helpful comments.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4645\n\n",
     "created_at": "2008-11-28T21:47:12Z",
     "labels": [
         "component: build"
@@ -24,7 +24,6 @@ Right in the middle of setup.py we find:
 from module_list import ext_modules
 
 ```
-
 without further comment.
 
 Move this line to the very top of setup.py and surround it be huge helpful comments.

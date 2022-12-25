@@ -3,7 +3,7 @@
 archive/issues_003775.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nHowever, this is what happens when I invoke maxima, from the sage\ndirectory:\n\n$ /Applications/sage/local/bin/maxima\ndyld: Library not loaded: /Users/was/build/sage-3.0.5/local/lib/\nlibreadline.5.2.dylib\n  Referenced from: /Applications/sage/local/lib/maxima/5.13.0/binary-\nclisp/lisp.run\n  Reason: image not found\nTrace/BPT trap \n```\n\nThe solution is to source local/bin/sage-env before starting Maxima.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3775\n\n",
+    "body": "Assignee: mabshoff\n\n```\nHowever, this is what happens when I invoke maxima, from the sage\ndirectory:\n\n$ /Applications/sage/local/bin/maxima\ndyld: Library not loaded: /Users/was/build/sage-3.0.5/local/lib/\nlibreadline.5.2.dylib\n  Referenced from: /Applications/sage/local/lib/maxima/5.13.0/binary-\nclisp/lisp.run\n  Reason: image not found\nTrace/BPT trap \n```\nThe solution is to source local/bin/sage-env before starting Maxima.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3775\n\n",
     "created_at": "2008-08-05T17:29:39Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_003775.json:
 ```
 Assignee: mabshoff
 
-
 ```
 However, this is what happens when I invoke maxima, from the sage
 directory:
@@ -32,7 +31,6 @@ clisp/lisp.run
   Reason: image not found
 Trace/BPT trap 
 ```
-
 The solution is to source local/bin/sage-env before starting Maxima.
 
 Cheers,

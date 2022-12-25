@@ -3,7 +3,7 @@
 archive/issues_001120.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf possible #E is computed over the prime subfield now.\n\n\n```\nsage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()\n8\nsage: k.<a> = GF(3^3)\nsage: l = [a^2 + 1, 2*a^2 + 2*a + 1, a^2 + a + 1, 2, 2*a]\nsage: EllipticCurve(k,l).cardinality()\nWARNING: Using very very stupid algorithm for counting\npoints over non-prime finite field. Please rewrite.\nSee the file ell_finite_field.py.\n29\n\nsage: l = [1, 1, 0, 2, 0]\nsage: EllipticCurve(k,l).cardinality()\n38\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1120\n\n",
+    "body": "Assignee: @williamstein\n\nIf possible #E is computed over the prime subfield now.\n\n```\nsage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()\n8\nsage: k.<a> = GF(3^3)\nsage: l = [a^2 + 1, 2*a^2 + 2*a + 1, a^2 + a + 1, 2, 2*a]\nsage: EllipticCurve(k,l).cardinality()\nWARNING: Using very very stupid algorithm for counting\npoints over non-prime finite field. Please rewrite.\nSee the file ell_finite_field.py.\n29\n\nsage: l = [1, 1, 0, 2, 0]\nsage: EllipticCurve(k,l).cardinality()\n38\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1120\n\n",
     "created_at": "2007-11-07T15:51:26Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 If possible #E is computed over the prime subfield now.
 
-
 ```
 sage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()
 8
@@ -36,7 +35,6 @@ sage: l = [1, 1, 0, 2, 0]
 sage: EllipticCurve(k,l).cardinality()
 38
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1120
 
@@ -120,7 +118,7 @@ Resolution: fixed
 archive/issue_comments_006751.json:
 ```json
 {
-    "body": "Merged in 2.8.13.alpha1\n\nApplied with slight fuzz:\n\n```\nmabshoff@sage:$hg import ell_finite_field_order.patch\napplying ell_finite_field_order.patch\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #4 succeeded at 330 with fuzz 1 (offset 0 lines).\n```\n\n\nCheers,\n\nMichael",
+    "body": "Merged in 2.8.13.alpha1\n\nApplied with slight fuzz:\n\n```\nmabshoff@sage:$hg import ell_finite_field_order.patch\napplying ell_finite_field_order.patch\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #4 succeeded at 330 with fuzz 1 (offset 0 lines).\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-11-19T21:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1120",
     "type": "issue_comment",
@@ -139,7 +137,6 @@ applying ell_finite_field_order.patch
 patching file sage/schemes/elliptic_curves/ell_finite_field.py
 Hunk #4 succeeded at 330 with fuzz 1 (offset 0 lines).
 ```
-
 
 Cheers,
 

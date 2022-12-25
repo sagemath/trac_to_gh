@@ -90,7 +90,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069414.json:
 ```json
 {
-    "body": "Passes all doctests on Sage 4.3.1.rc0 with or without the patch. To run the optional doctests that require Guava: After applying the patch, install the optional Guava package by installing the package [gap_packages-4.4.10_6.spkg](http://www.sagemath.org/packages/optional/gap_packages-4.4.10_6.spkg). Running doctest on \"sage/coding/code_bounds.py\" with the options\n\n```\n-t -long -optional\n```\n\nresults in all doctests passed. Positive review.",
+    "body": "Passes all doctests on Sage 4.3.1.rc0 with or without the patch. To run the optional doctests that require Guava: After applying the patch, install the optional Guava package by installing the package [gap_packages-4.4.10_6.spkg](http://www.sagemath.org/packages/optional/gap_packages-4.4.10_6.spkg). Running doctest on \"sage/coding/code_bounds.py\" with the options\n\n```\n-t -long -optional\n```\nresults in all doctests passed. Positive review.",
     "created_at": "2010-01-18T06:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7971",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Passes all doctests on Sage 4.3.1.rc0 with or without the patch. To run the opti
 ```
 -t -long -optional
 ```
-
 results in all doctests passed. Positive review.
 
 

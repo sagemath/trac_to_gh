@@ -89,7 +89,7 @@ Changing status from new to assigned.
 archive/issue_comments_005689.json:
 ```json
 {
-    "body": "\n```\n[21:20] <wstein> #935 -- reject.\n[21:20] <mabshoff> Why?\n[21:20] <wstein> Those files *should* be in sage.\n[21:20] <mabshoff> So why aren't they in the repo?\n[21:20] <wstein> probably they didn't get included because of a mistake in MANIFEST.in.\n[21:20] <mabshoff> ok\n[21:21] <mabshoff> So mark #935 as invalid?\n[21:21] <wstein> at least the one that doctests cvxopt, scipy, definitely should be remade.\n[21:21] <mabshoff> That is another ticket.\n[21:21] <wstein> It's not invalid, it's just that the fix isn't exactly right.\n```\n",
+    "body": "```\n[21:20] <wstein> #935 -- reject.\n[21:20] <mabshoff> Why?\n[21:20] <wstein> Those files *should* be in sage.\n[21:20] <mabshoff> So why aren't they in the repo?\n[21:20] <wstein> probably they didn't get included because of a mistake in MANIFEST.in.\n[21:20] <mabshoff> ok\n[21:21] <mabshoff> So mark #935 as invalid?\n[21:21] <wstein> at least the one that doctests cvxopt, scipy, definitely should be remade.\n[21:21] <mabshoff> That is another ticket.\n[21:21] <wstein> It's not invalid, it's just that the fix isn't exactly right.\n```",
     "created_at": "2007-10-20T19:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ archive/issue_comments_005689.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [21:20] <wstein> #935 -- reject.
@@ -111,7 +110,6 @@ archive/issue_comments_005689.json:
 [21:21] <mabshoff> That is another ticket.
 [21:21] <wstein> It's not invalid, it's just that the fix isn't exactly right.
 ```
-
 
 
 

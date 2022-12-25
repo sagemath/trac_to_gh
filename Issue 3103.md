@@ -3,7 +3,7 @@
 archive/issues_003103.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan rbradshaw @jasongrout\n\nKeywords: vector CDF coerce\n\nWith\n\n```\nsage: version()\n'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'\n```\n\nI get the following coercion errors:\n\n\n```\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Ambient free module of rank 2 over the principal ideal domain Integer Ring'\nsage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3103\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan rbradshaw @jasongrout\n\nKeywords: vector CDF coerce\n\nWith\n\n```\nsage: version()\n'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'\n```\nI get the following coercion errors:\n\n```\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Ambient free module of rank 2 over the principal ideal domain Integer Ring'\nsage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3103\n\n",
     "created_at": "2008-05-05T04:12:05Z",
     "labels": [
         "component: linear algebra",
@@ -28,9 +28,7 @@ With
 sage: version()
 'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'
 ```
-
 I get the following coercion errors:
-
 
 ```
 sage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])
@@ -56,7 +54,6 @@ sage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])
 
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3103
 
@@ -86,7 +83,7 @@ archive/issue_events_007011.json:
 archive/issue_comments_021389.json:
 ```json
 {
-    "body": "This is not due to coercion, but rather that dot product is not implemented for CDF^n. \n\n\n```\nsage: (CDF^2)([1,2]) * (CDF^2)([2,3])\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"element.pyx\", line 1884, in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10398)\n  File \"element.pyx\", line 1898, in sage.structure.element.Vector._dot_product_c (sage/structure/element.c:10564)\n  File \"element.pyx\", line 1904, in sage.structure.element.Vector._dot_product_c_impl (sage/structure/element.c:10649)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Complex Double Field'\n```\n\n\nWhich, looking at element.pyx line 1904 shows that _dot_product_c_impl was never implemented for CDF. This should almost certainly be a NotImplementedError, or something like that, not a TypeError. In fact, there should just be a generic implementation.",
+    "body": "This is not due to coercion, but rather that dot product is not implemented for CDF^n. \n\n```\nsage: (CDF^2)([1,2]) * (CDF^2)([2,3])\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"element.pyx\", line 1884, in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10398)\n  File \"element.pyx\", line 1898, in sage.structure.element.Vector._dot_product_c (sage/structure/element.c:10564)\n  File \"element.pyx\", line 1904, in sage.structure.element.Vector._dot_product_c_impl (sage/structure/element.c:10649)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Complex Double Field'\n```\n\nWhich, looking at element.pyx line 1904 shows that _dot_product_c_impl was never implemented for CDF. This should almost certainly be a NotImplementedError, or something like that, not a TypeError. In fact, there should just be a generic implementation.",
     "created_at": "2008-05-08T16:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
@@ -96,7 +93,6 @@ archive/issue_comments_021389.json:
 ```
 
 This is not due to coercion, but rather that dot product is not implemented for CDF^n. 
-
 
 ```
 sage: (CDF^2)([1,2]) * (CDF^2)([2,3])
@@ -108,7 +104,6 @@ Traceback (most recent call last):
   File "element.pyx", line 1904, in sage.structure.element.Vector._dot_product_c_impl (sage/structure/element.c:10649)
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Complex Double Field'
 ```
-
 
 Which, looking at element.pyx line 1904 shows that _dot_product_c_impl was never implemented for CDF. This should almost certainly be a NotImplementedError, or something like that, not a TypeError. In fact, there should just be a generic implementation.
 
@@ -155,7 +150,7 @@ The patch solves the problem and cleans up a lot of old code.
 archive/issue_comments_021392.json:
 ```json
 {
-    "body": "This patch causes a number of doctest failures:\n\n```\n        sage -t -long devel/sage/sage/modular/modsym/space.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/constructor.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/module.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_newform.py # 19 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_ambient_jacobian.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/homspace.py # 2 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes a number of doctest failures:\n\n```\n        sage -t -long devel/sage/sage/modular/modsym/space.py # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/constructor.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/module.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_newform.py # 19 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_ambient_jacobian.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/homspace.py # 2 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-06-23T04:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
@@ -176,7 +171,6 @@ This patch causes a number of doctest failures:
         sage -t -long devel/sage/sage/modular/abvar/homspace.py # 2 doctests failed
 ```
 
-
 Cheers,
 
 Michael
@@ -188,7 +182,7 @@ Michael
 archive/issue_comments_021393.json:
 ```json
 {
-    "body": "In Sage 3.4.1.rc2, this works:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n8.0\n```\n\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nSo this sounds like it is fixed.  However, are there nice doctests from the above patch that could be added to the current code?  Nick?",
+    "body": "In Sage 3.4.1.rc2, this works:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n8.0\n```\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\nSo this sounds like it is fixed.  However, are there nice doctests from the above patch that could be added to the current code?  Nick?",
     "created_at": "2009-04-15T06:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
@@ -199,14 +193,12 @@ archive/issue_comments_021393.json:
 
 In Sage 3.4.1.rc2, this works:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 sage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])
 8.0
 ```
-
 | Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |
 | Type notebook() for the GUI, and license() for information.        |
 So this sounds like it is fixed.  However, are there nice doctests from the above patch that could be added to the current code?  Nick?

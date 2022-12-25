@@ -3,7 +3,7 @@
 archive/issues_007262.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein @robertwb\n\nKeywords: elliptic curves, isogeny,\n\nCurrently sage returns a pair of rational functions when asked \n\n\n```\nE = EllipticCurve('11a1')\nE.multiplication_by_n(7)\n```\n\n\nI would be better if this creates a EllipticCurveIsogeny object from E to E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7262\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein @robertwb\n\nKeywords: elliptic curves, isogeny,\n\nCurrently sage returns a pair of rational functions when asked \n\n```\nE = EllipticCurve('11a1')\nE.multiplication_by_n(7)\n```\n\nI would be better if this creates a EllipticCurveIsogeny object from E to E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7262\n\n",
     "created_at": "2009-10-21T09:26:49Z",
     "labels": [
         "component: elliptic curves",
@@ -25,12 +25,10 @@ Keywords: elliptic curves, isogeny,
 
 Currently sage returns a pair of rational functions when asked 
 
-
 ```
 E = EllipticCurve('11a1')
 E.multiplication_by_n(7)
 ```
-
 
 I would be better if this creates a EllipticCurveIsogeny object from E to E.
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7262
 archive/issue_comments_060197.json:
 ```json
 {
-    "body": "moving an email discussion forward, John said :\n\n> So, do we want to allow any (separable) isogeny to be created from the\n> full x-coordinate rational map (or from its numerator and\n> denominator)?  That soulds like a good idea _provided_ that (1) we can\n> do it, more cheaply that discarding the numerator and calling existing\n> code, and also perhaps (2) we have a way of checking the validity.\n\nI would send both coordinates to the constructor. Your code of constructing them is faster than what the generic isogeny-code will do. \n\n> As a first step, suppose we only allow this when the codomain is also\n> specified (as we can do in this case).  Then checking validity is\n> quite easy (you get the y-coordinate by differentiating and scaling\n> appropriately and then plug into the equation of the codomain -- I can\n> write this out properly if you do not follow me.)\n\nYes, that is what I will do. I do not think that we will need this option of specifying an isogeny when the codomain is not known. One could always send the denominator as a kernel_polynomial which will create the codomain.\n\nOf course there is an obvious extension that should be added here. Complex multiplication, like multiplication_by_n(2*i+3). Also we could make automorphisms into a group and create a endomorphism ring... oh but I am dreaming some steps ahead of what I will do about this ticket.\n\nChris.",
+    "body": "moving an email discussion forward, John said :\n\n> So, do we want to allow any (separable) isogeny to be created from the\n> full x-coordinate rational map (or from its numerator and\n> denominator)?  That soulds like a good idea _provided_ that (1) we can\n> do it, more cheaply that discarding the numerator and calling existing\n> code, and also perhaps (2) we have a way of checking the validity.\n\n\nI would send both coordinates to the constructor. Your code of constructing them is faster than what the generic isogeny-code will do. \n\n> As a first step, suppose we only allow this when the codomain is also\n> specified (as we can do in this case).  Then checking validity is\n> quite easy (you get the y-coordinate by differentiating and scaling\n> appropriately and then plug into the equation of the codomain -- I can\n> write this out properly if you do not follow me.)\n\n\nYes, that is what I will do. I do not think that we will need this option of specifying an isogeny when the codomain is not known. One could always send the denominator as a kernel_polynomial which will create the codomain.\n\nOf course there is an obvious extension that should be added here. Complex multiplication, like multiplication_by_n(2*i+3). Also we could make automorphisms into a group and create a endomorphism ring... oh but I am dreaming some steps ahead of what I will do about this ticket.\n\nChris.",
     "created_at": "2009-10-21T09:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -62,6 +60,7 @@ moving an email discussion forward, John said :
 > do it, more cheaply that discarding the numerator and calling existing
 > code, and also perhaps (2) we have a way of checking the validity.
 
+
 I would send both coordinates to the constructor. Your code of constructing them is faster than what the generic isogeny-code will do. 
 
 > As a first step, suppose we only allow this when the codomain is also
@@ -69,6 +68,7 @@ I would send both coordinates to the constructor. Your code of constructing them
 > quite easy (you get the y-coordinate by differentiating and scaling
 > appropriately and then plug into the equation of the codomain -- I can
 > write this out properly if you do not follow me.)
+
 
 Yes, that is what I will do. I do not think that we will need this option of specifying an isogeny when the codomain is not known. One could always send the denominator as a kernel_polynomial which will create the codomain.
 
@@ -267,7 +267,7 @@ Yep, that's exactly what's in the patch.
 archive/issue_comments_060206.json:
 ```json
 {
-    "body": "Am I doing something stupid here?  The patch applies fine but when I run the test I get\nthis from ell_generic.py:\n\n```\n    sage: E.multiplication_by_m_isogeny(7)\n    AttributeError: 'EllipticCurve_rational_field' object has no attribute 'multiplication_by_m_isogeny'\n```\n\nwhich makes no sense since E has type `EllipticCurve_rational_field` which derived from `EllipticCurve_generic`, which is where multiplication_by_m_isogeny() is defined.",
+    "body": "Am I doing something stupid here?  The patch applies fine but when I run the test I get\nthis from ell_generic.py:\n\n```\n    sage: E.multiplication_by_m_isogeny(7)\n    AttributeError: 'EllipticCurve_rational_field' object has no attribute 'multiplication_by_m_isogeny'\n```\nwhich makes no sense since E has type `EllipticCurve_rational_field` which derived from `EllipticCurve_generic`, which is where multiplication_by_m_isogeny() is defined.",
     "created_at": "2010-01-20T20:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -283,7 +283,6 @@ this from ell_generic.py:
     sage: E.multiplication_by_m_isogeny(7)
     AttributeError: 'EllipticCurve_rational_field' object has no attribute 'multiplication_by_m_isogeny'
 ```
-
 which makes no sense since E has type `EllipticCurve_rational_field` which derived from `EllipticCurve_generic`, which is where multiplication_by_m_isogeny() is defined.
 
 
@@ -293,7 +292,7 @@ which makes no sense since E has type `EllipticCurve_rational_field` which deriv
 archive/issue_comments_060207.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n> Am I doing something stupid here?  \n\nApologies, I patched a clone but ran the main branch.  Stupid!\n\nTests do pass.  Positive review soon, I expect!",
+    "body": "Replying to [comment:10 cremona]:\n> Am I doing something stupid here?  \n\n\nApologies, I patched a clone but ran the main branch.  Stupid!\n\nTests do pass.  Positive review soon, I expect!",
     "created_at": "2010-01-20T20:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -304,6 +303,7 @@ archive/issue_comments_060207.json:
 
 Replying to [comment:10 cremona]:
 > Am I doing something stupid here?  
+
 
 Apologies, I patched a clone but ran the main branch.  Stupid!
 
@@ -352,7 +352,7 @@ Looks good to me.  I wanted to do more tests (over number fields and finite fiel
 archive/issue_comments_060210.json:
 ```json
 {
-    "body": "Oops.  \n\n```\nsage: E = EllipticCurve('11a1')\nsage: E.multiplication_by_m_isogeny(4)\n```\n\nBoom.",
+    "body": "Oops.  \n\n```\nsage: E = EllipticCurve('11a1')\nsage: E.multiplication_by_m_isogeny(4)\n```\nBoom.",
     "created_at": "2010-01-20T21:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -367,7 +367,6 @@ Oops.
 sage: E = EllipticCurve('11a1')
 sage: E.multiplication_by_m_isogeny(4)
 ```
-
 Boom.
 
 
@@ -395,7 +394,7 @@ Well, the error that pops up in that case is just an exception being raised by t
 archive/issue_comments_060212.json:
 ```json
 {
-    "body": "I also add that the following problem with the documentation should be adjusted, too...\n\n\n```\n/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_generic.py:docstring of sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic.multiplication_by_m_isogeny:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```\n\n\nBy the way, is it considered \"good coding\" to cut lines at 80 characters ? I never thought about this and I am happy to follow that rule, if others desire that.",
+    "body": "I also add that the following problem with the documentation should be adjusted, too...\n\n```\n/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_generic.py:docstring of sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic.multiplication_by_m_isogeny:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```\n\nBy the way, is it considered \"good coding\" to cut lines at 80 characters ? I never thought about this and I am happy to follow that rule, if others desire that.",
     "created_at": "2010-01-20T21:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -406,11 +405,9 @@ archive/issue_comments_060212.json:
 
 I also add that the following problem with the documentation should be adjusted, too...
 
-
 ```
 /usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_generic.py:docstring of sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic.multiplication_by_m_isogeny:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 ```
-
 
 By the way, is it considered "good coding" to cut lines at 80 characters ? I never thought about this and I am happy to follow that rule, if others desire that.
 
@@ -443,7 +440,7 @@ Chris, what're your thoughts on the exception John ran into? What would you like
 archive/issue_comments_060214.json:
 ```json
 {
-    "body": "Looking at the code, I see that this is not doing exactly what my original idea was when I opened this trac. The reason this is so slow is that a lot of computations will be done several times. I thought that one should create the isogeny without running through the current init of the object. I think all data is known easily once the division polynomial is computed.\n\nOf course, we can leave it like that by now, but I would suggest to open a further ticket to improve this.\n\nAnother ugly thing is\n\n```\nsage: phi.codomain() == phi.domain()\nFalse\n```\n\n\nOne should set the post_isomorphism correctly.\n\nAs to the 4-isogeny, this is indeed not implemented since it is a bit more complicated. The best would be to have the composition of morphisms defined and then to defined by iterating [2]. We can leave it like that by now. It is a shame though.",
+    "body": "Looking at the code, I see that this is not doing exactly what my original idea was when I opened this trac. The reason this is so slow is that a lot of computations will be done several times. I thought that one should create the isogeny without running through the current init of the object. I think all data is known easily once the division polynomial is computed.\n\nOf course, we can leave it like that by now, but I would suggest to open a further ticket to improve this.\n\nAnother ugly thing is\n\n```\nsage: phi.codomain() == phi.domain()\nFalse\n```\n\nOne should set the post_isomorphism correctly.\n\nAs to the 4-isogeny, this is indeed not implemented since it is a bit more complicated. The best would be to have the composition of morphisms defined and then to defined by iterating [2]. We can leave it like that by now. It is a shame though.",
     "created_at": "2010-01-20T21:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7262",
     "type": "issue_comment",
@@ -462,7 +459,6 @@ Another ugly thing is
 sage: phi.codomain() == phi.domain()
 False
 ```
-
 
 One should set the post_isomorphism correctly.
 

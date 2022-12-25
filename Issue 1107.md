@@ -66,7 +66,7 @@ The patch is good.
 archive/issue_comments_006678.json:
 ```json
 {
-    "body": "The patch no longer applies cleanly:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/devel/sage$ hg import minkowski.patch\napplying minkowski.patch\npatching file sage/rings/rational_field.py\nHunk #1 succeeded at 298 with fuzz 2 (offset 23 lines).\nHunk #2 FAILED at 362\nHunk #3 FAILED at 370\nHunk #4 FAILED at 378\n3 out of 4 hunks FAILED -- saving rejects to file sage/rings/rational_field.py.rej\nabort: patch failed to apply\n```\n\n\nCheers,\n\nMichaell",
+    "body": "The patch no longer applies cleanly:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycles/sage-2.8.13.alpha0/devel/sage$ hg import minkowski.patch\napplying minkowski.patch\npatching file sage/rings/rational_field.py\nHunk #1 succeeded at 298 with fuzz 2 (offset 23 lines).\nHunk #2 FAILED at 362\nHunk #3 FAILED at 370\nHunk #4 FAILED at 378\n3 out of 4 hunks FAILED -- saving rejects to file sage/rings/rational_field.py.rej\nabort: patch failed to apply\n```\n\nCheers,\n\nMichaell",
     "created_at": "2007-11-19T21:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ Hunk #4 FAILED at 378
 abort: patch failed to apply
 ```
 
-
 Cheers,
 
 Michaell
@@ -101,7 +100,7 @@ Michaell
 archive/issue_comments_006679.json:
 ```json
 {
-    "body": "\n```\ncwitty: williamstein, did you notice mabshoff's comment on your #1107 patch?  Evidently it no longer applies.\n[9:13pm] williamstein: Thanks.  \n[9:16pm] williamstein: actually it's fine -- the one hunk that doesn't get applied with 1107 doesn't apply because it is already applied in the current sage.\n[9:16pm] williamstein: So it's OK.  Just ignore the one hunk that fails. \n```\n",
+    "body": "```\ncwitty: williamstein, did you notice mabshoff's comment on your #1107 patch?  Evidently it no longer applies.\n[9:13pm] williamstein: Thanks.  \n[9:16pm] williamstein: actually it's fine -- the one hunk that doesn't get applied with 1107 doesn't apply because it is already applied in the current sage.\n[9:16pm] williamstein: So it's OK.  Just ignore the one hunk that fails. \n```",
     "created_at": "2007-11-27T05:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
@@ -109,7 +108,6 @@ archive/issue_comments_006679.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 cwitty: williamstein, did you notice mabshoff's comment on your #1107 patch?  Evidently it no longer applies.
@@ -120,13 +118,12 @@ cwitty: williamstein, did you notice mabshoff's comment on your #1107 patch?  Ev
 
 
 
-
 ---
 
 archive/issue_comments_006680.json:
 ```json
 {
-    "body": "\n```\n\n[9:17pm] cwitty: The three hunks that don't get applied, you mean?  (Judging from mabshoff's comment.)\n[9:20pm] williamstein: Yes, that's what I meant.  Thanks.\n```\n",
+    "body": "```\n\n[9:17pm] cwitty: The three hunks that don't get applied, you mean?  (Judging from mabshoff's comment.)\n[9:20pm] williamstein: Yes, that's what I meant.  Thanks.\n```",
     "created_at": "2007-11-27T05:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
@@ -135,13 +132,11 @@ archive/issue_comments_006680.json:
 }
 ```
 
-
 ```
 
 [9:17pm] cwitty: The three hunks that don't get applied, you mean?  (Judging from mabshoff's comment.)
 [9:20pm] williamstein: Yes, that's what I meant.  Thanks.
 ```
-
 
 
 

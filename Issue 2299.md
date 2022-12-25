@@ -113,7 +113,7 @@ As for latex in docstrings... I don't care either way.  I think it should be lat
 archive/issue_comments_015220.json:
 ```json
 {
-    "body": "Just a quick remark.  You can make a zero matrix using the matrix function:\n\n\n```\nsage: matrix(ZZ, 2,3)\n[0 0 0]\n[0 0 0]\n```\n\n\nI don't think that's a good reason not to add zero_matrix and identity_matrix\nfunctions though, both of which I would like to have too.",
+    "body": "Just a quick remark.  You can make a zero matrix using the matrix function:\n\n```\nsage: matrix(ZZ, 2,3)\n[0 0 0]\n[0 0 0]\n```\n\nI don't think that's a good reason not to add zero_matrix and identity_matrix\nfunctions though, both of which I would like to have too.",
     "created_at": "2008-02-25T18:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
@@ -124,13 +124,11 @@ archive/issue_comments_015220.json:
 
 Just a quick remark.  You can make a zero matrix using the matrix function:
 
-
 ```
 sage: matrix(ZZ, 2,3)
 [0 0 0]
 [0 0 0]
 ```
-
 
 I don't think that's a good reason not to add zero_matrix and identity_matrix
 functions though, both of which I would like to have too.
@@ -160,7 +158,7 @@ I think zero_ and identity_ declare programmer intent nicely.  Will someone say 
 archive/issue_comments_015222.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nI definitely think these functions should go in, but with TWO caveats. \n\n1. I think the zero_matrix should have an option to be nonsquare though.  Please post another patch that adds that, so, e.g.,\n\n\n```\nsage: zero_matrix(ZZ, 2,3)\n[0 0 0]\n[0 0 0]\n```\n\n\nworks. \n\n2. There should be a sparse option for both zero_matrix and\nidentity_matrix.\n\n\n```\nsage: zero_matrix(ZZ, 2,3, sparse=True).parent()\nFull MatrixSpace of 2 by 3 sparse matrices over Integer Ring\n```\n\n\n -- William",
+    "body": "REFEREE REPORT:\n\nI definitely think these functions should go in, but with TWO caveats. \n\n1. I think the zero_matrix should have an option to be nonsquare though.  Please post another patch that adds that, so, e.g.,\n\n```\nsage: zero_matrix(ZZ, 2,3)\n[0 0 0]\n[0 0 0]\n```\n\nworks. \n\n2. There should be a sparse option for both zero_matrix and\nidentity_matrix.\n\n```\nsage: zero_matrix(ZZ, 2,3, sparse=True).parent()\nFull MatrixSpace of 2 by 3 sparse matrices over Integer Ring\n```\n\n -- William",
     "created_at": "2008-02-25T18:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
@@ -175,25 +173,21 @@ I definitely think these functions should go in, but with TWO caveats.
 
 1. I think the zero_matrix should have an option to be nonsquare though.  Please post another patch that adds that, so, e.g.,
 
-
 ```
 sage: zero_matrix(ZZ, 2,3)
 [0 0 0]
 [0 0 0]
 ```
 
-
 works. 
 
 2. There should be a sparse option for both zero_matrix and
 identity_matrix.
 
-
 ```
 sage: zero_matrix(ZZ, 2,3, sparse=True).parent()
 Full MatrixSpace of 2 by 3 sparse matrices over Integer Ring
 ```
-
 
  -- William
 

@@ -3,7 +3,7 @@
 archive/issues_008790.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n\t * combine(self, statement1, statement2):\n\t * simplify(self, table):\n\t * prove(self, statement):\n\n\nMissing doctests:\n\t * get_bit(x, c):\n\t * eval(toks):\n\t * eval_ltor_toks(lrtoks):\n\t * reduce_bins(lrtoks):\n\t * reduce_monos(lrtoks):\n\t * eval_mon_op(args):\n\t * eval_bin_op(args):\n\t * eval_and_op(lval, rval):\n\t * eval_or_op(lval, rval):\n\t * eval_ifthen_op(lval, rval):\n\t * eval_iff_op(lval, rval):\n\t * tokenize(s, toks):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n\t * combine(self, statement1, statement2):\n\t * simplify(self, table):\n\t * prove(self, statement):\n\n\nMissing doctests:\n\t * get_bit(x, c):\n\t * eval(toks):\n\t * eval_ltor_toks(lrtoks):\n\t * reduce_bins(lrtoks):\n\t * reduce_monos(lrtoks):\n\t * eval_mon_op(args):\n\t * eval_bin_op(args):\n\t * eval_and_op(lval, rval):\n\t * eval_or_op(lval, rval):\n\t * eval_ifthen_op(lval, rval):\n\t * eval_iff_op(lval, rval):\n\t * tokenize(s, toks):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
     "created_at": "2010-04-28T04:35:34Z",
     "labels": [
         "component: documentation"
@@ -48,7 +48,6 @@ Missing doctests:
 	 * eval_iff_op(lval, rval):
 	 * tokenize(s, toks):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8790
 
@@ -302,7 +301,7 @@ archive/issue_events_021430.json:
 archive/issue_comments_080357.json:
 ```json
 {
-    "body": "I get\n\n```\n./sage --coverage src/sage/logic/logic.py \n------------------------------------------------------------------------\nSCORE src/sage/logic/logic.py: 100.0% (18 of 18)\n------------------------------------------------------------------------\n```\n",
+    "body": "I get\n\n```\n./sage --coverage src/sage/logic/logic.py \n------------------------------------------------------------------------\nSCORE src/sage/logic/logic.py: 100.0% (18 of 18)\n------------------------------------------------------------------------\n```",
     "created_at": "2014-06-22T14:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
@@ -319,7 +318,6 @@ I get
 SCORE src/sage/logic/logic.py: 100.0% (18 of 18)
 ------------------------------------------------------------------------
 ```
-
 
 
 

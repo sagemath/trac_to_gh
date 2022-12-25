@@ -175,7 +175,7 @@ Resolution: fixed
 archive/issue_comments_074652.json:
 ```json
 {
-    "body": "Merged in this order:\n\n1. [trac_8365_PolynomialRings_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365_PolynomialRings_doc.patch)\n2. [trac_8365-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365-reviewer.patch)\n\nMarc: Avoid putting the following line in your patch file:\n\n```\nexporting patch:\n```\n\nIt would result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.",
+    "body": "Merged in this order:\n\n1. [trac_8365_PolynomialRings_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365_PolynomialRings_doc.patch)\n2. [trac_8365-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8365/trac_8365-reviewer.patch)\n\nMarc: Avoid putting the following line in your patch file:\n\n```\nexporting patch:\n```\nIt would result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.",
     "created_at": "2010-03-02T22:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8365",
     "type": "issue_comment",
@@ -194,5 +194,4 @@ Marc: Avoid putting the following line in your patch file:
 ```
 exporting patch:
 ```
-
 It would result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.

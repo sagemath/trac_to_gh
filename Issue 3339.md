@@ -116,7 +116,7 @@ Tachyon has been upgraded fairly recently - is this maybe no longer an issue?
 archive/issue_comments_023143.json:
 ```json
 {
-    "body": "I just tried the same command, and now the only problem is that which is documented in the SPKG.txt\n\n```\nOnly in Downloads/TestTachyon/tachyon/: msvc\nOnly in Downloads/TestTachyon/tachyon/: scenes\n```\n\nSo this ticket can be closed.",
+    "body": "I just tried the same command, and now the only problem is that which is documented in the SPKG.txt\n\n```\nOnly in Downloads/TestTachyon/tachyon/: msvc\nOnly in Downloads/TestTachyon/tachyon/: scenes\n```\nSo this ticket can be closed.",
     "created_at": "2011-06-28T16:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ I just tried the same command, and now the only problem is that which is documen
 Only in Downloads/TestTachyon/tachyon/: msvc
 Only in Downloads/TestTachyon/tachyon/: scenes
 ```
-
 So this ticket can be closed.
 
 

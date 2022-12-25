@@ -70,7 +70,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064944.json:
 ```json
 {
-    "body": "Hi,\n\nI'm curious how users will even *know* to do this:\n\n```\n:To use SageTeX, both Sage and LaTeX need to know about it. If you have\ninstalled this spkg, then Sage knows about SageTeX; now you need to make\nLaTeX aware of it. The easiest thing to do is to ...\n```\n\n\nthe only reason I know to do the things listed there so I can use SageTex is because I happen to have looked in the spkg after installing it and was looking at SPKG.txt.   When this package is standard in Sage, how will users know how to use and set it up?  Binaries won't even include that SPKG.txt file, since SAGE binaries don't include the contents of any spkg files. \n\nOne solution, which I think would be extremely appropriate, is for you to add a new section to the Sage tutorial explaining how to use and get going with SageTex.  It's such a killer feature, that I think this is reasonable and worth it.    Let's make SageTex one of the centerpieces of Sage!",
+    "body": "Hi,\n\nI'm curious how users will even *know* to do this:\n\n```\n:To use SageTeX, both Sage and LaTeX need to know about it. If you have\ninstalled this spkg, then Sage knows about SageTeX; now you need to make\nLaTeX aware of it. The easiest thing to do is to ...\n```\n\nthe only reason I know to do the things listed there so I can use SageTex is because I happen to have looked in the spkg after installing it and was looking at SPKG.txt.   When this package is standard in Sage, how will users know how to use and set it up?  Binaries won't even include that SPKG.txt file, since SAGE binaries don't include the contents of any spkg files. \n\nOne solution, which I think would be extremely appropriate, is for you to add a new section to the Sage tutorial explaining how to use and get going with SageTex.  It's such a killer feature, that I think this is reasonable and worth it.    Let's make SageTex one of the centerpieces of Sage!",
     "created_at": "2009-12-08T07:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ I'm curious how users will even *know* to do this:
 installed this spkg, then Sage knows about SageTeX; now you need to make
 LaTeX aware of it. The easiest thing to do is to ...
 ```
-
 
 the only reason I know to do the things listed there so I can use SageTex is because I happen to have looked in the spkg after installing it and was looking at SPKG.txt.   When this package is standard in Sage, how will users know how to use and set it up?  Binaries won't even include that SPKG.txt file, since SAGE binaries don't include the contents of any spkg files. 
 
@@ -119,7 +118,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064946.json:
 ```json
 {
-    "body": "Hi,\n\nWhy not make all this config stuff automatic?\n\n\"For Linux/Unix users, do\n\n```\n  cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/\n```\n\nFor OS X users with MacTeX:\n\n```\n  cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/\n```\n\nAfter you've copied over the necessary files, you'll need to update\nTeX's database so that it can find them. Run \"`texhash $HOME/texmf`\"\n(replace the texmf directory as appropriate) to do this.\"\n\nI don't think the above is as easy as it could be...  I like to make things really easy, e.g., setting up a twisted webserver to server the Sage notebook app is `notebook()`.",
+    "body": "Hi,\n\nWhy not make all this config stuff automatic?\n\n\"For Linux/Unix users, do\n\n```\n  cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/\n```\nFor OS X users with MacTeX:\n\n```\n  cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/\n```\nAfter you've copied over the necessary files, you'll need to update\nTeX's database so that it can find them. Run \"`texhash $HOME/texmf`\"\n(replace the texmf directory as appropriate) to do this.\"\n\nI don't think the above is as easy as it could be...  I like to make things really easy, e.g., setting up a twisted webserver to server the Sage notebook app is `notebook()`.",
     "created_at": "2009-12-08T07:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -137,13 +136,11 @@ Why not make all this config stuff automatic?
 ```
   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/
 ```
-
 For OS X users with MacTeX:
 
 ```
   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/
 ```
-
 After you've copied over the necessary files, you'll need to update
 TeX's database so that it can find them. Run "`texhash $HOME/texmf`"
 (replace the texmf directory as appropriate) to do this."
@@ -157,7 +154,7 @@ I don't think the above is as easy as it could be...  I like to make things real
 archive/issue_comments_064947.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Why not make all this config stuff automatic?\n> \n> \"For Linux/Unix users, do\n> {{{\n>   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/\n> }}}\n> For OS X users with MacTeX:\n> {{{\n>   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/\n> }}}\n> After you've copied over the necessary files, you'll need to update\n> TeX's database so that it can find them. Run \"`texhash $HOME/texmf`\"\n> (replace the texmf directory as appropriate) to do this.\"\n\nOne problem that I see is that there are different TeX distributions, and not all of them may automatically look in home directories for a texmf/ tree. Some users may also not want the default installation of Sage (which will now install SageTeX) to create those directories and files in their $HOME. \n\n> I don't think the above is as easy as it could be...  I like to make things really easy, e.g., setting up a twisted webserver to server the Sage notebook app is `notebook()`.\n\nI agree, it's not very simple, but we are now interacting not only with Sage (which is a large software system) but with TeX, another large -- and quite different -- software system. And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time -- so I'm guessing we could run into very old systems.\n\nI'll look and see if there's a reasonably effective way to autodetect if $HOME/texmf will get picked up by TeX. I also like the idea of putting some basic installation instructions and pointers to the rest of the documentation into the tutorial.",
+    "body": "Replying to [comment:6 was]:\n> Why not make all this config stuff automatic?\n> \n> \"For Linux/Unix users, do\n> \n> ```\n>   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/\n> ```\n> For OS X users with MacTeX:\n> \n> ```\n>   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/\n> ```\n> After you've copied over the necessary files, you'll need to update\n> TeX's database so that it can find them. Run \"`texhash $HOME/texmf`\"\n> (replace the texmf directory as appropriate) to do this.\"\n\n\nOne problem that I see is that there are different TeX distributions, and not all of them may automatically look in home directories for a texmf/ tree. Some users may also not want the default installation of Sage (which will now install SageTeX) to create those directories and files in their $HOME. \n\n> I don't think the above is as easy as it could be...  I like to make things really easy, e.g., setting up a twisted webserver to server the Sage notebook app is `notebook()`.\n\n\nI agree, it's not very simple, but we are now interacting not only with Sage (which is a large software system) but with TeX, another large -- and quite different -- software system. And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time -- so I'm guessing we could run into very old systems.\n\nI'll look and see if there's a reasonably effective way to autodetect if $HOME/texmf will get picked up by TeX. I also like the idea of putting some basic installation instructions and pointers to the rest of the documentation into the tutorial.",
     "created_at": "2009-12-08T08:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -170,20 +167,24 @@ Replying to [comment:6 was]:
 > Why not make all this config stuff automatic?
 > 
 > "For Linux/Unix users, do
-> {{{
+> 
+> ```
 >   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/texmf/
-> }}}
+> ```
 > For OS X users with MacTeX:
-> {{{
+> 
+> ```
 >   cp -r $SAGE_ROOT/local/share/texmf/ $HOME/Library/texmf/
-> }}}
+> ```
 > After you've copied over the necessary files, you'll need to update
 > TeX's database so that it can find them. Run "`texhash $HOME/texmf`"
 > (replace the texmf directory as appropriate) to do this."
 
+
 One problem that I see is that there are different TeX distributions, and not all of them may automatically look in home directories for a texmf/ tree. Some users may also not want the default installation of Sage (which will now install SageTeX) to create those directories and files in their $HOME. 
 
 > I don't think the above is as easy as it could be...  I like to make things really easy, e.g., setting up a twisted webserver to server the Sage notebook app is `notebook()`.
+
 
 I agree, it's not very simple, but we are now interacting not only with Sage (which is a large software system) but with TeX, another large -- and quite different -- software system. And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time -- so I'm guessing we could run into very old systems.
 
@@ -196,7 +197,7 @@ I'll look and see if there's a reasonably effective way to autodetect if $HOME/t
 archive/issue_comments_064948.json:
 ```json
 {
-    "body": "Replying to [comment:7 ddrake]:\n> And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time\n\nOops, I don't mean to say that Sage isn't supposed to be stable! Just that TeX moves very slowly, in stark contrast to Sage.",
+    "body": "Replying to [comment:7 ddrake]:\n> And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time\n\n\nOops, I don't mean to say that Sage isn't supposed to be stable! Just that TeX moves very slowly, in stark contrast to Sage.",
     "created_at": "2009-12-08T08:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -207,6 +208,7 @@ archive/issue_comments_064948.json:
 
 Replying to [comment:7 ddrake]:
 > And unlike Sage, a TeX installation is supposed to be very stable and work the same way for a long, long time
+
 
 Oops, I don't mean to say that Sage isn't supposed to be stable! Just that TeX moves very slowly, in stark contrast to Sage.
 
@@ -387,7 +389,7 @@ Changing priority from major to critical.
 archive/issue_comments_064958.json:
 ```json
 {
-    "body": "I've just read through all the patches and they look excellent.  I didn't test that the sphinx is valid or that the sagetex example actually works.  If somebody verifies that, then positive review. \n\n> Can/Should that be part of this ticket, or should it be a different one? \n\nIt would make sense to make it part of this one. \n\nI'm changing the priority on this to critical for sage-4.3.1. \n\n -- William",
+    "body": "I've just read through all the patches and they look excellent.  I didn't test that the sphinx is valid or that the sagetex example actually works.  If somebody verifies that, then positive review. \n\n> Can/Should that be part of this ticket, or should it be a different one? \n\n\nIt would make sense to make it part of this one. \n\nI'm changing the priority on this to critical for sage-4.3.1. \n\n -- William",
     "created_at": "2009-12-24T20:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -399,6 +401,7 @@ archive/issue_comments_064958.json:
 I've just read through all the patches and they look excellent.  I didn't test that the sphinx is valid or that the sagetex example actually works.  If somebody verifies that, then positive review. 
 
 > Can/Should that be part of this ticket, or should it be a different one? 
+
 
 It would make sense to make it part of this one. 
 
@@ -603,7 +606,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064969.json:
 ```json
 {
-    "body": "Replying to [comment:21 jhpalmieri]:\n> A few comments: overall, the documentation patch is good, but unfortunately it needs to be rebased.  Since you have to do that, I wonder if, in the reference manual, the file sagetex.rst needs to be in the new directory \"other\", or whether it should just be in the top ref manual directory.  Not a big deal.\n\nI'll put it in the \"other\" directory. I just guessed when I put sagetex.rst where it is.\n\n> Also, is it worth mentioning in the documentation that if you have several copies of sagetex.sty lying around, you need to make sure that the most recent one gets read first?  I just ran into this problem because I had installed an old version a while ago which was shadowing the more recent one.  Again, not a big deal, and if you think this should be done but don't want to bother now, it can be delayed to another ticket.\n\nI'll add a bit about this. It's one of the biggest problems with SageTeX.\n\n> For a future version of sagetex, should sagetex print its version each time you latex the file, so that users can see what version is actually being used?\n\nI've thought about some kind of mechanism that would check for version mismatch, but don't have any easily-implementable ideas at the moment. I think this would be best in another ticket.\n\n> The spkg looks good, and seems to indicate in the right places that it's now a standard spkg.  Does anything else need to be checked?\n\nI don't think so. If you can install the spkg, follow the TeX installation directions, and successfully use it on a document, I think it's good to go.\n\nI have 4.3.1 compiled, so I'll rebase and adjust the documentation, and open a ticket for the version mismatch stuff.",
+    "body": "Replying to [comment:21 jhpalmieri]:\n> A few comments: overall, the documentation patch is good, but unfortunately it needs to be rebased.  Since you have to do that, I wonder if, in the reference manual, the file sagetex.rst needs to be in the new directory \"other\", or whether it should just be in the top ref manual directory.  Not a big deal.\n\n\nI'll put it in the \"other\" directory. I just guessed when I put sagetex.rst where it is.\n\n> Also, is it worth mentioning in the documentation that if you have several copies of sagetex.sty lying around, you need to make sure that the most recent one gets read first?  I just ran into this problem because I had installed an old version a while ago which was shadowing the more recent one.  Again, not a big deal, and if you think this should be done but don't want to bother now, it can be delayed to another ticket.\n\n\nI'll add a bit about this. It's one of the biggest problems with SageTeX.\n\n> For a future version of sagetex, should sagetex print its version each time you latex the file, so that users can see what version is actually being used?\n\n\nI've thought about some kind of mechanism that would check for version mismatch, but don't have any easily-implementable ideas at the moment. I think this would be best in another ticket.\n\n> The spkg looks good, and seems to indicate in the right places that it's now a standard spkg.  Does anything else need to be checked?\n\n\nI don't think so. If you can install the spkg, follow the TeX installation directions, and successfully use it on a document, I think it's good to go.\n\nI have 4.3.1 compiled, so I'll rebase and adjust the documentation, and open a ticket for the version mismatch stuff.",
     "created_at": "2010-01-22T00:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -615,17 +618,21 @@ archive/issue_comments_064969.json:
 Replying to [comment:21 jhpalmieri]:
 > A few comments: overall, the documentation patch is good, but unfortunately it needs to be rebased.  Since you have to do that, I wonder if, in the reference manual, the file sagetex.rst needs to be in the new directory "other", or whether it should just be in the top ref manual directory.  Not a big deal.
 
+
 I'll put it in the "other" directory. I just guessed when I put sagetex.rst where it is.
 
 > Also, is it worth mentioning in the documentation that if you have several copies of sagetex.sty lying around, you need to make sure that the most recent one gets read first?  I just ran into this problem because I had installed an old version a while ago which was shadowing the more recent one.  Again, not a big deal, and if you think this should be done but don't want to bother now, it can be delayed to another ticket.
+
 
 I'll add a bit about this. It's one of the biggest problems with SageTeX.
 
 > For a future version of sagetex, should sagetex print its version each time you latex the file, so that users can see what version is actually being used?
 
+
 I've thought about some kind of mechanism that would check for version mismatch, but don't have any easily-implementable ideas at the moment. I think this would be best in another ticket.
 
 > The spkg looks good, and seems to indicate in the right places that it's now a standard spkg.  Does anything else need to be checked?
+
 
 I don't think so. If you can install the spkg, follow the TeX installation directions, and successfully use it on a document, I think it's good to go.
 
@@ -790,7 +797,7 @@ Is `md5sum.check` meant to be a realization of the ideas at #329 specifically fo
 archive/issue_comments_064978.json:
 ```json
 {
-    "body": "Replying to [comment:27 mvngu]:\n> Is `md5sum.check` meant to be a realization of the ideas at #329 specifically for the SageTeX spkg?\n\nYes. I was trying to be ahead of the curve and get my spkg compatible right away...but nothing has happened with that. Should I just remove that?",
+    "body": "Replying to [comment:27 mvngu]:\n> Is `md5sum.check` meant to be a realization of the ideas at #329 specifically for the SageTeX spkg?\n\n\nYes. I was trying to be ahead of the curve and get my spkg compatible right away...but nothing has happened with that. Should I just remove that?",
     "created_at": "2010-01-25T00:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -802,6 +809,7 @@ archive/issue_comments_064978.json:
 Replying to [comment:27 mvngu]:
 > Is `md5sum.check` meant to be a realization of the ideas at #329 specifically for the SageTeX spkg?
 
+
 Yes. I was trying to be ahead of the curve and get my spkg compatible right away...but nothing has happened with that. Should I just remove that?
 
 
@@ -811,7 +819,7 @@ Yes. I was trying to be ahead of the curve and get my spkg compatible right away
 archive/issue_comments_064979.json:
 ```json
 {
-    "body": "Replying to [comment:28 ddrake]:\n> Should I just remove that?\n\nNo, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. I find the verification instructions at #329 to be very helpful, which make me think about an idea for implementing a patch to automatically verify the check sum in an spkg. But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).",
+    "body": "Replying to [comment:28 ddrake]:\n> Should I just remove that?\n\n\nNo, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. I find the verification instructions at #329 to be very helpful, which make me think about an idea for implementing a patch to automatically verify the check sum in an spkg. But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).",
     "created_at": "2010-01-25T00:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -823,6 +831,7 @@ archive/issue_comments_064979.json:
 Replying to [comment:28 ddrake]:
 > Should I just remove that?
 
+
 No, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. I find the verification instructions at #329 to be very helpful, which make me think about an idea for implementing a patch to automatically verify the check sum in an spkg. But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).
 
 
@@ -832,7 +841,7 @@ No, I think you can leave the MD5 check sum file as is for now as a realization 
 archive/issue_comments_064980.json:
 ```json
 {
-    "body": "Replying to [comment:29 mvngu]:\n> But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).\n\nUsing the spkg name sounds like a good idea. I think verifying file integrity is important enough, and the number of files created small enough, so that having all those files in SAGE_PACKAGES/build worth it.",
+    "body": "Replying to [comment:29 mvngu]:\n> But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).\n\n\nUsing the spkg name sounds like a good idea. I think verifying file integrity is important enough, and the number of files created small enough, so that having all those files in SAGE_PACKAGES/build worth it.",
     "created_at": "2010-01-25T08:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -843,6 +852,7 @@ archive/issue_comments_064980.json:
 
 Replying to [comment:29 mvngu]:
 > But if other spkg's in the future also have a file named `md5sum.check`, it can be difficult to know which check file belongs to which package (because they're all given the same name). But if each spkg has its own integrity check file named, say, `spkg-name.md5` then `SAGE_PACKAGES/build` would be inundated with MD5 sum files (unless you delete them upon successful verification).
+
 
 Using the spkg name sounds like a good idea. I think verifying file integrity is important enough, and the number of files created small enough, so that having all those files in SAGE_PACKAGES/build worth it.
 
@@ -1024,7 +1034,7 @@ See #8144 for a follow-up to this ticket.
 archive/issue_comments_064989.json:
 ```json
 {
-    "body": "Replying to [comment:29 mvngu]:\n> No, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. \n\nNote I commented on #329 that I believe 'cksum' is better than md5, since\n\n* The command to compute an md5 checksum is called by different names on different systems. 'md5' and 'md5sum' are two I've come across. On Solaris one has to use 'digest -a md5 filename'\n* I suspect on some cut-down Linux distros, no such command exits - it is not part of POSIX. \n* In contrast, 'cksum' is specified by POSIX, it is portable across all platforms as POSIX specifies the algorithm, and further that whilst not quite such a good test as 'md5', the probability of getting a false result is less than 2.4 x 10^-10.",
+    "body": "Replying to [comment:29 mvngu]:\n> No, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. \n\n\nNote I commented on #329 that I believe 'cksum' is better than md5, since\n\n* The command to compute an md5 checksum is called by different names on different systems. 'md5' and 'md5sum' are two I've come across. On Solaris one has to use 'digest -a md5 filename'\n* I suspect on some cut-down Linux distros, no such command exits - it is not part of POSIX. \n* In contrast, 'cksum' is specified by POSIX, it is portable across all platforms as POSIX specifies the algorithm, and further that whilst not quite such a good test as 'md5', the probability of getting a false result is less than 2.4 x 10^-10.",
     "created_at": "2010-03-07T13:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
@@ -1035,6 +1045,7 @@ archive/issue_comments_064989.json:
 
 Replying to [comment:29 mvngu]:
 > No, I think you can leave the MD5 check sum file as is for now as a realization of the ideas at #329. The SageTeX spkg is the only package implementing the integrity check ideas at #329. 
+
 
 Note I commented on #329 that I believe 'cksum' is better than md5, since
 

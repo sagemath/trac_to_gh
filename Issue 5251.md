@@ -3,7 +3,7 @@
 archive/issues_005251.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: A \\ matrix(QQ,2,1,[1,2])\n\n[  0]\n[1/2]\nsage: A \\ matrix(QQ,2,1,[1/3,2/3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1))/Integer(3),Integer(2)/Integer(3)])\n                                                                ^\nSyntaxError: invalid syntax\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5251\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: A \\ matrix(QQ,2,1,[1,2])\n\n[  0]\n[1/2]\nsage: A \\ matrix(QQ,2,1,[1/3,2/3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1))/Integer(3),Integer(2)/Integer(3)])\n                                                                ^\nSyntaxError: invalid syntax\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5251\n\n",
     "created_at": "2009-02-13T00:06:12Z",
     "labels": [
         "component: misc",
@@ -17,7 +17,6 @@ archive/issues_005251.json:
 }
 ```
 Assignee: cwitty
-
 
 ```
 sage: A = matrix(QQ,2,2,[1..4])
@@ -33,7 +32,6 @@ sage: A \ matrix(QQ,2,1,[1/3,2/3])
 SyntaxError: invalid syntax
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5251
 
@@ -102,7 +100,7 @@ I posted a patch which fixes this, but I don't completely understand the intenti
 archive/issue_comments_040211.json:
 ```json
 {
-    "body": "I read the stopping condition code, and realized it is easy to make up many other examples that break the \\ notation, even after the above patch is applied:\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: matrix(QQ,2,1,[1/3,\"2/3\"])  # valid notation\n\n[1/3]\n[2/3]\nsage: A \\ matrix(QQ,2,1,[1/3,\"2/3\"])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)\"2/3\"])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,'2/3'])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)'2/3'])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,2*3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),Integer(2))*Integer(3)])\n                                                                                      ^\nSyntaxError: invalid syntax\n```\n\n\nThe point of the stopping condition is that one should be able to do, e.g.,\n\n```\nA \\ stuff # this does something, \n```\n\nand get\n\n```\nA._backslash_(stuff)  # this does something\n```\n\ninstead of\n\n```\nA._backslash_(stuff  # this does something)\n```\n\nAnother example:\n\n```\nA \\ B + C\n```\n\nshould become\n\n```\nA._backslash_(B) + C\n```\n\n\nNow that is *not* correctly parsed:\n\n```\nsage: preparse('A \\ B + C')\n'A ._backslash_( B + C)'\n```\n\nIt should be parsed to\n\n```\nA._backslash_(B) + C\n```\n\n\nHere is another that isn't correctly parsed:\n\n```\nsage: preparse( 'A\\eval(\"C+D\")' )\n'A._backslash_(eval()\"C+D\")'\n```\n\n\nIt should be\n\n```\nA._backslash_(eval(\"C+D\"))\n```\n\n\nFinally, the / was there before because of precedence.  I.e., the following\nis now wrong after the patch:\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x  / Integer(5))'\n```\n\nbut we should get\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x ) / Integer(5)'\n```\n\nsince precedence of backslash should be left to right (just like that of /).\n\n\n----\n\nComments:\n\n1. I find the backslash notation -- which is from Matlab -- very useful and do use it all the time. Otherwise, I wouldn't have noticed the bug I reported in this ticket.\n\n2. Clearly whoever (=me, of course!) implemented this in preparser.py did a very bad job, and this is an extremely buggy feature with the potential to lead to serious confusion and wrong answers.  It's not the sort of thing that should be implemented without using a more sophisticated parsing technique.  \n\n3. I almost think it would be better that this feature didn't exist given the bugs I listed above.",
+    "body": "I read the stopping condition code, and realized it is easy to make up many other examples that break the \\ notation, even after the above patch is applied:\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: matrix(QQ,2,1,[1/3,\"2/3\"])  # valid notation\n\n[1/3]\n[2/3]\nsage: A \\ matrix(QQ,2,1,[1/3,\"2/3\"])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)\"2/3\"])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,'2/3'])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)'2/3'])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,2*3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),Integer(2))*Integer(3)])\n                                                                                      ^\nSyntaxError: invalid syntax\n```\n\nThe point of the stopping condition is that one should be able to do, e.g.,\n\n```\nA \\ stuff # this does something, \n```\nand get\n\n```\nA._backslash_(stuff)  # this does something\n```\ninstead of\n\n```\nA._backslash_(stuff  # this does something)\n```\nAnother example:\n\n```\nA \\ B + C\n```\nshould become\n\n```\nA._backslash_(B) + C\n```\n\nNow that is *not* correctly parsed:\n\n```\nsage: preparse('A \\ B + C')\n'A ._backslash_( B + C)'\n```\nIt should be parsed to\n\n```\nA._backslash_(B) + C\n```\n\nHere is another that isn't correctly parsed:\n\n```\nsage: preparse( 'A\\eval(\"C+D\")' )\n'A._backslash_(eval()\"C+D\")'\n```\n\nIt should be\n\n```\nA._backslash_(eval(\"C+D\"))\n```\n\nFinally, the / was there before because of precedence.  I.e., the following\nis now wrong after the patch:\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x  / Integer(5))'\n```\nbut we should get\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x ) / Integer(5)'\n```\nsince precedence of backslash should be left to right (just like that of /).\n\n\n---\n\nComments:\n\n1. I find the backslash notation -- which is from Matlab -- very useful and do use it all the time. Otherwise, I wouldn't have noticed the bug I reported in this ticket.\n\n2. Clearly whoever (=me, of course!) implemented this in preparser.py did a very bad job, and this is an extremely buggy feature with the potential to lead to serious confusion and wrong answers.  It's not the sort of thing that should be implemented without using a more sophisticated parsing technique.  \n\n3. I almost think it would be better that this feature didn't exist given the bugs I listed above.",
     "created_at": "2009-02-15T07:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
@@ -141,37 +139,31 @@ sage: A \ matrix(QQ,2,1,[1/3,2*3])
 SyntaxError: invalid syntax
 ```
 
-
 The point of the stopping condition is that one should be able to do, e.g.,
 
 ```
 A \ stuff # this does something, 
 ```
-
 and get
 
 ```
 A._backslash_(stuff)  # this does something
 ```
-
 instead of
 
 ```
 A._backslash_(stuff  # this does something)
 ```
-
 Another example:
 
 ```
 A \ B + C
 ```
-
 should become
 
 ```
 A._backslash_(B) + C
 ```
-
 
 Now that is *not* correctly parsed:
 
@@ -179,13 +171,11 @@ Now that is *not* correctly parsed:
 sage: preparse('A \ B + C')
 'A ._backslash_( B + C)'
 ```
-
 It should be parsed to
 
 ```
 A._backslash_(B) + C
 ```
-
 
 Here is another that isn't correctly parsed:
 
@@ -194,13 +184,11 @@ sage: preparse( 'A\eval("C+D")' )
 'A._backslash_(eval()"C+D")'
 ```
 
-
 It should be
 
 ```
 A._backslash_(eval("C+D"))
 ```
-
 
 Finally, the / was there before because of precedence.  I.e., the following
 is now wrong after the patch:
@@ -209,18 +197,16 @@ is now wrong after the patch:
 sage: preparse('A \\ x  / 5')
 'A ._backslash_( x  / Integer(5))'
 ```
-
 but we should get
 
 ```
 sage: preparse('A \\ x  / 5')
 'A ._backslash_( x ) / Integer(5)'
 ```
-
 since precedence of backslash should be left to right (just like that of /).
 
 
-----
+---
 
 Comments:
 
@@ -237,7 +223,7 @@ Comments:
 archive/issue_comments_040212.json:
 ```json
 {
-    "body": "\n```\n22:57 < wstein> mhansen -- Hi -- I posted some remarks on #5251\n22:58 < mhansen> I'm reading them now.\n22:58 < wstein> I'm ashamed of how bad the preparser is on \\.\n22:58 < wstein> It's all my fault, of course.\n22:58 < wstein> I also just wrote Robertwb to ask him to comment on the ticket... even though that\n                might mean waiting for his\n22:58 < wstein> feedback until Monday.\n23:02 < mhansen> One quick fix on the safe side would be to eliminate the stopping condition.  That's\n                 how I figured it was implemented anyway.  I only thought a simple \"A \\ x\" syntax was\n                 supported.\n23:02 < wstein> A\\x + B\\y would be a disaster.\n23:02 < wstein> Of course, it already is :-)\n23:02 < mabs> :)\n23:02 < wstein> sage: preparse(r'A\\x + B\\y')\n23:02 < wstein> 'A._backslash_(x + B)._backslash_(y)'\n23:03 < mhansen> Obviously no one has used it for anything too involved :-)\n23:03 < wstein> without the stopping, we would have\n23:03 < wstein> sage: preparse(r'v = A\\x  # find the solution')\n23:03 < wstein> 'v = A._backslash_(x  )# find the solution'\n23:03 < wstein> oops\n23:03 < wstein> that's now\n23:03 < wstein> we would have\n23:03 < wstein> 'v = A._backslash_(x  # find the solution)'\n23:04 < wstein> I wonder if we should deprecate it?\n23:04 < wstein> I like the feature, but the implementation is so bad.\n23:04 < wstein> And doing it right might be quite hard.\n23:04 < wstein> Also, it clearly can't be used that much...\n23:05 < mhansen> I would probably throw in a deprecation warning until we do a proper fix.\n23:05 < wstein> Use, I definitely mean by deprecate that there would be a deprecation warning.\n23:05 < mhansen> Just so anyone who uses it knows there are \"issues\".\n23:05 < wstein> Yep.\n23:05 < wstein> How to do it -- ?\n23:05 < wstein> One way would be to add something to A._backslash_\n23:05 < wstein> The other would be to actually make the preparser itself emit a warning as it preparses.\n23:05 < wstein> The latter would be more robust.\n23:06 < mhansen> That was what I was envisioning.\n23:06 < wstein> It's possible other code already in preparser.py can be used though to quickly fix this\n                problem well.\n23:06 < wstein> Robertwb wrote is particularly good at this sort of thing, being a \"compiler guy\".\n23:06 < mhansen> Agreed.  He has some other improvements to the preparser at #5106.\n```\n",
+    "body": "```\n22:57 < wstein> mhansen -- Hi -- I posted some remarks on #5251\n22:58 < mhansen> I'm reading them now.\n22:58 < wstein> I'm ashamed of how bad the preparser is on \\.\n22:58 < wstein> It's all my fault, of course.\n22:58 < wstein> I also just wrote Robertwb to ask him to comment on the ticket... even though that\n                might mean waiting for his\n22:58 < wstein> feedback until Monday.\n23:02 < mhansen> One quick fix on the safe side would be to eliminate the stopping condition.  That's\n                 how I figured it was implemented anyway.  I only thought a simple \"A \\ x\" syntax was\n                 supported.\n23:02 < wstein> A\\x + B\\y would be a disaster.\n23:02 < wstein> Of course, it already is :-)\n23:02 < mabs> :)\n23:02 < wstein> sage: preparse(r'A\\x + B\\y')\n23:02 < wstein> 'A._backslash_(x + B)._backslash_(y)'\n23:03 < mhansen> Obviously no one has used it for anything too involved :-)\n23:03 < wstein> without the stopping, we would have\n23:03 < wstein> sage: preparse(r'v = A\\x  # find the solution')\n23:03 < wstein> 'v = A._backslash_(x  )# find the solution'\n23:03 < wstein> oops\n23:03 < wstein> that's now\n23:03 < wstein> we would have\n23:03 < wstein> 'v = A._backslash_(x  # find the solution)'\n23:04 < wstein> I wonder if we should deprecate it?\n23:04 < wstein> I like the feature, but the implementation is so bad.\n23:04 < wstein> And doing it right might be quite hard.\n23:04 < wstein> Also, it clearly can't be used that much...\n23:05 < mhansen> I would probably throw in a deprecation warning until we do a proper fix.\n23:05 < wstein> Use, I definitely mean by deprecate that there would be a deprecation warning.\n23:05 < mhansen> Just so anyone who uses it knows there are \"issues\".\n23:05 < wstein> Yep.\n23:05 < wstein> How to do it -- ?\n23:05 < wstein> One way would be to add something to A._backslash_\n23:05 < wstein> The other would be to actually make the preparser itself emit a warning as it preparses.\n23:05 < wstein> The latter would be more robust.\n23:06 < mhansen> That was what I was envisioning.\n23:06 < wstein> It's possible other code already in preparser.py can be used though to quickly fix this\n                problem well.\n23:06 < wstein> Robertwb wrote is particularly good at this sort of thing, being a \"compiler guy\".\n23:06 < mhansen> Agreed.  He has some other improvements to the preparser at #5106.\n```",
     "created_at": "2009-02-15T07:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
@@ -245,7 +231,6 @@ archive/issue_comments_040212.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 22:57 < wstein> mhansen -- Hi -- I posted some remarks on #5251
@@ -289,7 +274,6 @@ archive/issue_comments_040212.json:
 23:06 < wstein> Robertwb wrote is particularly good at this sort of thing, being a "compiler guy".
 23:06 < mhansen> Agreed.  He has some other improvements to the preparser at #5106.
 ```
-
 
 
 

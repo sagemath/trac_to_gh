@@ -3,7 +3,7 @@
 archive/issues_005942.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  cwitty @mwhansen\n\nThis seems bad to me...\n\n```\nsage: p=RealIntervalField(4)(pi)\nsage: p.str(style='brackets')\n'[3.00 .. 3.25]'\nsage: p\n4.?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5942\n\n",
+    "body": "Assignee: somebody\n\nCC:  cwitty @mwhansen\n\nThis seems bad to me...\n\n```\nsage: p=RealIntervalField(4)(pi)\nsage: p.str(style='brackets')\n'[3.00 .. 3.25]'\nsage: p\n4.?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5942\n\n",
     "created_at": "2009-04-29T22:05:36Z",
     "labels": [
         "component: basic arithmetic",
@@ -29,7 +29,6 @@ sage: p.str(style='brackets')
 sage: p
 4.?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5942
 

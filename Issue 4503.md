@@ -3,7 +3,7 @@
 archive/issues_004503.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @jasongrout\n\nKeywords: numerical noise, matrix\n\n(This has only been reported on intel macs running 10.4 or 10.5.)\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):\n\n\n```\nsage: m = matrix(RDF,3,2,range(6)); m\n\n[0.0 1.0]\n[2.0 3.0]\n[4.0 5.0]\nsage: U,S,V = m.SVD()\nsage: U*S*V.transpose()   # random low order bits\n\n[0.0 1.0]\n[2.0 3.0]\n[4.0 5.0]\n\nmax((U*S*V.transpose()-m).list())\n1.7763568394e-15 \n```\n\n\nThis leads to a doctest failure for `matrix_double_dense.py`.\n\nJason Grout suggests:\n\n```\nOkay, apparently the doctest just needs a looser bound; what you get is\nstill within reason for numerical issues.  Currently we see if that\nmaximum is < 1e-15.  Changing it to 1e-14 should fix this.\n```\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/4503\n\n",
+    "body": "Assignee: somebody\n\nCC:  @jasongrout\n\nKeywords: numerical noise, matrix\n\n(This has only been reported on intel macs running 10.4 or 10.5.)\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):\n\n```\nsage: m = matrix(RDF,3,2,range(6)); m\n\n[0.0 1.0]\n[2.0 3.0]\n[4.0 5.0]\nsage: U,S,V = m.SVD()\nsage: U*S*V.transpose()   # random low order bits\n\n[0.0 1.0]\n[2.0 3.0]\n[4.0 5.0]\n\nmax((U*S*V.transpose()-m).list())\n1.7763568394e-15 \n```\n\nThis leads to a doctest failure for `matrix_double_dense.py`.\n\nJason Grout suggests:\n\n```\nOkay, apparently the doctest just needs a looser bound; what you get is\nstill within reason for numerical issues.  Currently we see if that\nmaximum is < 1e-15.  Changing it to 1e-14 should fix this.\n```\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/4503\n\n",
     "created_at": "2008-11-12T17:59:39Z",
     "labels": [
         "component: linear algebra",
@@ -26,7 +26,6 @@ Keywords: numerical noise, matrix
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/fae59a9a9a53b8c0):
 
-
 ```
 sage: m = matrix(RDF,3,2,range(6)); m
 
@@ -44,7 +43,6 @@ max((U*S*V.transpose()-m).list())
 1.7763568394e-15 
 ```
 
-
 This leads to a doctest failure for `matrix_double_dense.py`.
 
 Jason Grout suggests:
@@ -54,7 +52,6 @@ Okay, apparently the doctest just needs a looser bound; what you get is
 still within reason for numerical issues.  Currently we see if that
 maximum is < 1e-15.  Changing it to 1e-14 should fix this.
 ```
-
  
 
 Issue created by migration from https://trac.sagemath.org/ticket/4503

@@ -3,7 +3,7 @@
 archive/issues_005360.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: sphinx transform.\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\n\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\n\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\n\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\n\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: sphinx transform.\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
     "created_at": "2009-02-24T18:09:05Z",
     "labels": [
         "component: documentation",
@@ -32,12 +32,10 @@ Keywords: sphinx transform.
 + sage: nb.add_user('Mark','password',",force=True)
 ```
 
-
 ```
 - sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) 
 + sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', ", W) 
 ```
-
 It looks like a bad Idea...
 
 I probably miss some so that a systematic replace `,",` by `,'',` should solve the problem.    
@@ -48,13 +46,11 @@ I probably miss some so that a systematic replace `,",` by `,'',` should solve t
 ```
 Returns a plain-text version of the worksheet with \{\{\{\}\}\} wiki-formatting,
 ```
-
 into 
 
 ```
 Returns a plain-text version of the worksheet with `` 
 ```
-
 looks suspicious to me. 
 
 * function edit_save: lost ` {{{` }}}:
@@ -63,14 +59,12 @@ looks suspicious to me.
 ignore_ids -- bool (default: False); if True ignore all the 
               id's in the `` code block. 
 ```
-
 is now:
 
 ```
 -  ``ignore_ids`` - bool (default: False); if True 
    ignore all the id's in the code block. 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5360
@@ -106,7 +100,7 @@ Michael
 archive/issue_comments_041218.json:
 ```json
 {
-    "body": "After the merge of #5653, it seems that ```, ```, and ```` render properly in the notebook. Try, e.g.,\n\n```\nsage.server.notebook.worksheet.Worksheet.edit_save?\nsage.server.notebook.worksheet.Worksheet.edit_text?\nsage.server.notebook.notebook.Notebook.import_worksheet?\n```\n",
+    "body": "After the merge of #5653, it seems that ```, ```, and ```` render properly in the notebook. Try, e.g.,\n\n```\nsage.server.notebook.worksheet.Worksheet.edit_save?\nsage.server.notebook.worksheet.Worksheet.edit_text?\nsage.server.notebook.notebook.Notebook.import_worksheet?\n```",
     "created_at": "2009-08-10T10:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
@@ -122,7 +116,6 @@ sage.server.notebook.worksheet.Worksheet.edit_save?
 sage.server.notebook.worksheet.Worksheet.edit_text?
 sage.server.notebook.notebook.Notebook.import_worksheet?
 ```
-
 
 
 

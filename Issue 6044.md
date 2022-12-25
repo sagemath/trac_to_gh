@@ -80,7 +80,7 @@ archive/issue_events_014194.json:
 archive/issue_comments_048043.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.\n> \n> Cheers,\n> \n> Michael\nNo problem, though it is likely to have been reviewed within a day or two!",
+    "body": "Replying to [comment:1 mabshoff]:\n> This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.\n> \n> Cheers,\n> \n> Michael\n\nNo problem, though it is likely to have been reviewed within a day or two!",
     "created_at": "2009-05-15T14:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
@@ -95,6 +95,7 @@ Replying to [comment:1 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 No problem, though it is likely to have been reviewed within a day or two!
 
 

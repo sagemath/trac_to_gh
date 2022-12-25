@@ -116,7 +116,7 @@ Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.pat
 archive/issue_comments_016951.json:
 ```json
 {
-    "body": "This patch needs to be rebase. It fails to apply cleanly against my current merge tree:\n\n```\nsage-3.0.alpha3/devel/sage$ patch -p1 < trac_2507_rings.quotient_ring_element.patch\npatching file sage/rings/quotient_ring_element.py\nHunk #1 FAILED at 66.\nHunk #2 succeeded at 147 (offset 2 lines).\nHunk #3 succeeded at 274 (offset 2 lines).\n```\n\nCheers,\n\nMichael",
+    "body": "This patch needs to be rebase. It fails to apply cleanly against my current merge tree:\n\n```\nsage-3.0.alpha3/devel/sage$ patch -p1 < trac_2507_rings.quotient_ring_element.patch\npatching file sage/rings/quotient_ring_element.py\nHunk #1 FAILED at 66.\nHunk #2 succeeded at 147 (offset 2 lines).\nHunk #3 succeeded at 274 (offset 2 lines).\n```\nCheers,\n\nMichael",
     "created_at": "2008-04-07T23:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -134,7 +134,6 @@ Hunk #1 FAILED at 66.
 Hunk #2 succeeded at 147 (offset 2 lines).
 Hunk #3 succeeded at 274 (offset 2 lines).
 ```
-
 Cheers,
 
 Michael
@@ -146,7 +145,7 @@ Michael
 archive/issue_comments_016952.json:
 ```json
 {
-    "body": "I **really** like that someone sat down to write doctests for `quotient_ring_element.py`, but I see some issues:\n\n\n```\nsage: Q = ZZ.quotient(10*ZZ)\nsage: type(Q)\n<class 'sage.rings.integer_mod_ring.IntegerModRing_generic'>\nsage: type(Q.gen())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n```\n\n\nand\n\n\n```\nsage: R.<a> = QuotientRing(QQ[x], x^2 + 1)\nsage: type(R)\n<class 'sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing_field'>\nsage: type(a)\n<class 'sage.rings.polynomial.polynomial_quotient_ring_element.PolynomialQuotientRingElement'>\n```\n\n\nThus, the documentation doesn't actually illustrate the class. AFAIK this class is mainly useful/used for multivariate polynomial rings. This theory reinforced by the `lm()` and `monomials()` methods. This class is just a mess, maybe?",
+    "body": "I **really** like that someone sat down to write doctests for `quotient_ring_element.py`, but I see some issues:\n\n```\nsage: Q = ZZ.quotient(10*ZZ)\nsage: type(Q)\n<class 'sage.rings.integer_mod_ring.IntegerModRing_generic'>\nsage: type(Q.gen())\n<type 'sage.rings.integer_mod.IntegerMod_int'>\n```\n\nand\n\n```\nsage: R.<a> = QuotientRing(QQ[x], x^2 + 1)\nsage: type(R)\n<class 'sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing_field'>\nsage: type(a)\n<class 'sage.rings.polynomial.polynomial_quotient_ring_element.PolynomialQuotientRingElement'>\n```\n\nThus, the documentation doesn't actually illustrate the class. AFAIK this class is mainly useful/used for multivariate polynomial rings. This theory reinforced by the `lm()` and `monomials()` methods. This class is just a mess, maybe?",
     "created_at": "2008-04-10T23:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -157,7 +156,6 @@ archive/issue_comments_016952.json:
 
 I **really** like that someone sat down to write doctests for `quotient_ring_element.py`, but I see some issues:
 
-
 ```
 sage: Q = ZZ.quotient(10*ZZ)
 sage: type(Q)
@@ -166,9 +164,7 @@ sage: type(Q.gen())
 <type 'sage.rings.integer_mod.IntegerMod_int'>
 ```
 
-
 and
-
 
 ```
 sage: R.<a> = QuotientRing(QQ[x], x^2 + 1)
@@ -177,7 +173,6 @@ sage: type(R)
 sage: type(a)
 <class 'sage.rings.polynomial.polynomial_quotient_ring_element.PolynomialQuotientRingElement'>
 ```
-
 
 Thus, the documentation doesn't actually illustrate the class. AFAIK this class is mainly useful/used for multivariate polynomial rings. This theory reinforced by the `lm()` and `monomials()` methods. This class is just a mess, maybe?
 
@@ -336,7 +331,7 @@ archive/issue_comments_016960.json:
 archive/issue_comments_016961.json:
 ```json
 {
-    "body": "First, two trivial issues with the patch `trac_2507.patch`. The double colon on line 48 is not indented properly. It should be aligned with the double colon on line 53. Also, the docstring for `_div_` is a bit confusing due to excessive use of the word \"quotient\". The word \"quotient\" as used in\n\n```\n263\t        Quotient of quotient ring element ``self`` by another quotient ring \n264\t        element, ``right``. If the quotient is `R/I`, the division is \n265\t        carried out in `R` and then reduced to `R/I`.\n```\n\nhas two meanings: to denote division of one element by another; and to mean a quotient ring. When division is intended, I think \"division\" should be used instead of quotient. So line 263 of the docstring can be changed as follows to avoid confusion/ambiguity:\n\n```\n263\t        Division of quotient ring element ``self`` by another quotient ring \n264\t        element, ``right``. If the quotient is `R/I`, the division is \n265\t        carried out in `R` and then reduced to `R/I`.\n```\n\nThe other issue is that in the constructor signature\n\n```\n77\t    def __init__(self, parent, rep, reduce=True):\n```\n\nthe input are not documented. My knowledge of quotient rings is pretty limited, and it can be difficult to work out what each of the arguments `parent`, `rep` and `reduce=True` means, and how to use them properly.",
+    "body": "First, two trivial issues with the patch `trac_2507.patch`. The double colon on line 48 is not indented properly. It should be aligned with the double colon on line 53. Also, the docstring for `_div_` is a bit confusing due to excessive use of the word \"quotient\". The word \"quotient\" as used in\n\n```\n263\t        Quotient of quotient ring element ``self`` by another quotient ring \n264\t        element, ``right``. If the quotient is `R/I`, the division is \n265\t        carried out in `R` and then reduced to `R/I`.\n```\nhas two meanings: to denote division of one element by another; and to mean a quotient ring. When division is intended, I think \"division\" should be used instead of quotient. So line 263 of the docstring can be changed as follows to avoid confusion/ambiguity:\n\n```\n263\t        Division of quotient ring element ``self`` by another quotient ring \n264\t        element, ``right``. If the quotient is `R/I`, the division is \n265\t        carried out in `R` and then reduced to `R/I`.\n```\nThe other issue is that in the constructor signature\n\n```\n77\t    def __init__(self, parent, rep, reduce=True):\n```\nthe input are not documented. My knowledge of quotient rings is pretty limited, and it can be difficult to work out what each of the arguments `parent`, `rep` and `reduce=True` means, and how to use them properly.",
     "created_at": "2009-05-11T02:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
@@ -352,7 +347,6 @@ First, two trivial issues with the patch `trac_2507.patch`. The double colon on 
 264	        element, ``right``. If the quotient is `R/I`, the division is 
 265	        carried out in `R` and then reduced to `R/I`.
 ```
-
 has two meanings: to denote division of one element by another; and to mean a quotient ring. When division is intended, I think "division" should be used instead of quotient. So line 263 of the docstring can be changed as follows to avoid confusion/ambiguity:
 
 ```
@@ -360,13 +354,11 @@ has two meanings: to denote division of one element by another; and to mean a qu
 264	        element, ``right``. If the quotient is `R/I`, the division is 
 265	        carried out in `R` and then reduced to `R/I`.
 ```
-
 The other issue is that in the constructor signature
 
 ```
 77	    def __init__(self, parent, rep, reduce=True):
 ```
-
 the input are not documented. My knowledge of quotient rings is pretty limited, and it can be difficult to work out what each of the arguments `parent`, `rep` and `reduce=True` means, and how to use them properly.
 
 

@@ -3,7 +3,7 @@
 archive/issues_009152.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
     "created_at": "2010-06-05T17:39:17Z",
     "labels": [
         "component: packages: standard"
@@ -23,13 +23,11 @@ I plan to release mpmath 0.15 very soon. This will require some simple modificat
 
 Some testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check
 
-
 ```
 sage: import mpmath
 sage: mpmath.runtests()
 sage: mpmath.doctests()
 ```
-
 
 The patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.
 
@@ -82,7 +80,7 @@ I've released mpmath-0.15; providing spkg as attachment.
 archive/issue_comments_085305.json:
 ```json
 {
-    "body": "I installed the spkg and patch into 4.4.4.alpha0. \"runtests\" worked fine (finished in 12.9 seconds, compared to 15.7 for the mpmath shipped in 4.4.3), but \"doctests\" had one failure:\n\n```\nqbarfrom**********************************************************************\nFile \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/functions/functions.py\", line ?, in NoName\nFailed example:\n    qbarfrom(m=extraprec(20)(mfrom)(qbar=0.25))  # ill-conditioned\nException raised:\n    Traceback (most recent call last):\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python/doctest.py\", line 1241, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest NoName[4]>\", line 1, in <module>\n        qbarfrom(m=extraprec(20)(mfrom)(qbar=0.25))  # ill-conditioned\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/ctx_mp.py\", line 1228, in __call__\n        g.__name__ = f.__name__\n    AttributeError: 'mfrom' object has no attribute '__name__'\n**********************************************************************\nFile \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/functions/functions.py\", line ?, in NoName\nFailed example:\n    qbarfrom(k=extraprec(20)(kfrom)(qbar=0.25))  # ill-conditioned\nException raised:\n    Traceback (most recent call last):\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python/doctest.py\", line 1241, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest NoName[5]>\", line 1, in <module>\n        qbarfrom(k=extraprec(20)(kfrom)(qbar=0.25))  # ill-conditioned\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/ctx_mp.py\", line 1228, in __call__\n        g.__name__ = f.__name__\n    AttributeError: 'kfrom' object has no attribute '__name__'\n0.003\n```\n\nIn 4.4.3, all the doctests pass.\n\nAlso, I think it's considered best to not post spkgs as ticket attachments -- usually you just put it somewhere on the web (your sage.math home directory is good) and post the link.",
+    "body": "I installed the spkg and patch into 4.4.4.alpha0. \"runtests\" worked fine (finished in 12.9 seconds, compared to 15.7 for the mpmath shipped in 4.4.3), but \"doctests\" had one failure:\n\n```\nqbarfrom**********************************************************************\nFile \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/functions/functions.py\", line ?, in NoName\nFailed example:\n    qbarfrom(m=extraprec(20)(mfrom)(qbar=0.25))  # ill-conditioned\nException raised:\n    Traceback (most recent call last):\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python/doctest.py\", line 1241, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest NoName[4]>\", line 1, in <module>\n        qbarfrom(m=extraprec(20)(mfrom)(qbar=0.25))  # ill-conditioned\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/ctx_mp.py\", line 1228, in __call__\n        g.__name__ = f.__name__\n    AttributeError: 'mfrom' object has no attribute '__name__'\n**********************************************************************\nFile \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/functions/functions.py\", line ?, in NoName\nFailed example:\n    qbarfrom(k=extraprec(20)(kfrom)(qbar=0.25))  # ill-conditioned\nException raised:\n    Traceback (most recent call last):\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python/doctest.py\", line 1241, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest NoName[5]>\", line 1, in <module>\n        qbarfrom(k=extraprec(20)(kfrom)(qbar=0.25))  # ill-conditioned\n      File \"/home/drake/s/sage-4.4.4.alpha0/local/lib/python2.6/site-packages/mpmath/ctx_mp.py\", line 1228, in __call__\n        g.__name__ = f.__name__\n    AttributeError: 'kfrom' object has no attribute '__name__'\n0.003\n```\nIn 4.4.3, all the doctests pass.\n\nAlso, I think it's considered best to not post spkgs as ticket attachments -- usually you just put it somewhere on the web (your sage.math home directory is good) and post the link.",
     "created_at": "2010-06-09T23:48:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -122,7 +120,6 @@ Exception raised:
     AttributeError: 'kfrom' object has no attribute '__name__'
 0.003
 ```
-
 In 4.4.3, all the doctests pass.
 
 Also, I think it's considered best to not post spkgs as ticket attachments -- usually you just put it somewhere on the web (your sage.math home directory is good) and post the link.
@@ -351,7 +348,7 @@ I think applying the two sage repository patches to 4.5.alpha0 will fix all or n
 archive/issue_comments_085316.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> I think applying the two sage repository patches to 4.5.alpha0 will fix all or nearly all of its [doctest failures](http://groups.google.com/group/sage-release/browse_thread/thread/28b187636fda282b).\n\nAt first glance (testing only the 10 files that had doctest failures), **yes**, i.e. applying these two patches to alpha0 fixes them **all** (see also sage-release).\n\nCurrently running complete tests (ptestlong) again...",
+    "body": "Replying to [comment:12 mpatel]:\n> I think applying the two sage repository patches to 4.5.alpha0 will fix all or nearly all of its [doctest failures](http://groups.google.com/group/sage-release/browse_thread/thread/28b187636fda282b).\n\n\nAt first glance (testing only the 10 files that had doctest failures), **yes**, i.e. applying these two patches to alpha0 fixes them **all** (see also sage-release).\n\nCurrently running complete tests (ptestlong) again...",
     "created_at": "2010-06-26T16:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -362,6 +359,7 @@ archive/issue_comments_085316.json:
 
 Replying to [comment:12 mpatel]:
 > I think applying the two sage repository patches to 4.5.alpha0 will fix all or nearly all of its [doctest failures](http://groups.google.com/group/sage-release/browse_thread/thread/28b187636fda282b).
+
 
 At first glance (testing only the 10 files that had doctest failures), **yes**, i.e. applying these two patches to alpha0 fixes them **all** (see also sage-release).
 
@@ -374,7 +372,7 @@ Currently running complete tests (ptestlong) again...
 archive/issue_comments_085317.json:
 ```json
 {
-    "body": "\n```\nchangeset:   14535:97280db338bf\ntag:         tip\nuser:        Fredrik Johansson <fredrik.johansson@gmail.com>\ndate:        Thu Jun 10 02:23:59 2010 +0200\nsummary:     fix wrapped mpmath functions to retain __name__ attribute\n\nchangeset:   14534:ebf36c5d4051\nuser:        Fredrik Johansson <fredrik.johansson@gmail.com>\ndate:        Sat Jun 05 19:25:42 2010 +0200\nsummary:     update mpmath extension module for mpmath 0.15 compatibility\n\nchangeset:   14533:5c14ca9acdd3\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Fri Jun 25 05:11:33 2010 -0700\nsummary:     4.5.alpha0\n```\n\n\n\nUbuntu 9.04 x86_64 (Core2), gcc 4.5.0, `make ptestlong`:\n\n```\nAll tests passed!\nTotal time for all tests: 2147.1 seconds\n\nreal\t36m19.732s\nuser\t80m12.569s\nsys\t6m45.373s\nleif@quadriga:~/sage-4.5.alpha0/devel/sage-9152$ \n```\n",
+    "body": "```\nchangeset:   14535:97280db338bf\ntag:         tip\nuser:        Fredrik Johansson <fredrik.johansson@gmail.com>\ndate:        Thu Jun 10 02:23:59 2010 +0200\nsummary:     fix wrapped mpmath functions to retain __name__ attribute\n\nchangeset:   14534:ebf36c5d4051\nuser:        Fredrik Johansson <fredrik.johansson@gmail.com>\ndate:        Sat Jun 05 19:25:42 2010 +0200\nsummary:     update mpmath extension module for mpmath 0.15 compatibility\n\nchangeset:   14533:5c14ca9acdd3\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Fri Jun 25 05:11:33 2010 -0700\nsummary:     4.5.alpha0\n```\n\n\nUbuntu 9.04 x86_64 (Core2), gcc 4.5.0, `make ptestlong`:\n\n```\nAll tests passed!\nTotal time for all tests: 2147.1 seconds\n\nreal\t36m19.732s\nuser\t80m12.569s\nsys\t6m45.373s\nleif@quadriga:~/sage-4.5.alpha0/devel/sage-9152$ \n```",
     "created_at": "2010-06-26T17:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
@@ -382,7 +380,6 @@ archive/issue_comments_085317.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```
 changeset:   14535:97280db338bf
@@ -403,7 +400,6 @@ summary:     4.5.alpha0
 ```
 
 
-
 Ubuntu 9.04 x86_64 (Core2), gcc 4.5.0, `make ptestlong`:
 
 ```
@@ -415,7 +411,6 @@ user	80m12.569s
 sys	6m45.373s
 leif@quadriga:~/sage-4.5.alpha0/devel/sage-9152$ 
 ```
-
 
 
 

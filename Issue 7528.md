@@ -66,7 +66,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_063697.json:
 ```json
 {
-    "body": "I'm ready to give this a positive review, except there is a conflict:\n\n\n```\nGiven a complete bipartite graph `K_{n,m}`, the minimum  \noutdegree of an orientation is  \n`\\left\\lceil \\frac {nm} {n+m}\\right\\rceil`:: \n\nsage: g = graphs.CompleteBipartiteGraph(3,4) \nsage: o = g.minimum_outdegree_orientation() # optional - requires GLPK or CBC \nsage: max(o.out_degree()) == ceil((4*3)/(3+4)) # optional - requires GLPK or CBC \nTrue\n```\n\n\nShould \"the minimum outdegree\" be \"the smallest possible maximum outdegree\", or something similar?",
+    "body": "I'm ready to give this a positive review, except there is a conflict:\n\n```\nGiven a complete bipartite graph `K_{n,m}`, the minimum  \noutdegree of an orientation is  \n`\\left\\lceil \\frac {nm} {n+m}\\right\\rceil`:: \n\nsage: g = graphs.CompleteBipartiteGraph(3,4) \nsage: o = g.minimum_outdegree_orientation() # optional - requires GLPK or CBC \nsage: max(o.out_degree()) == ceil((4*3)/(3+4)) # optional - requires GLPK or CBC \nTrue\n```\n\nShould \"the minimum outdegree\" be \"the smallest possible maximum outdegree\", or something similar?",
     "created_at": "2009-12-15T17:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7528",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ archive/issue_comments_063697.json:
 ```
 
 I'm ready to give this a positive review, except there is a conflict:
-
 
 ```
 Given a complete bipartite graph `K_{n,m}`, the minimum  
@@ -88,7 +87,6 @@ sage: o = g.minimum_outdegree_orientation() # optional - requires GLPK or CBC
 sage: max(o.out_degree()) == ceil((4*3)/(3+4)) # optional - requires GLPK or CBC 
 True
 ```
-
 
 Should "the minimum outdegree" be "the smallest possible maximum outdegree", or something similar?
 

@@ -3,7 +3,7 @@
 archive/issues_008457.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nMostly of this sort:\n\n```\ncategories/examples/finite_semigroups.rst:6: (WARNING/2) error while formatting signature for sage.categories.examples.finite_semigroups.LeftRegularBand.Element.wrapped_class.center: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\nThis may happen because `wrapped_class = str` is [an alias of] a builtin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8457\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nMostly of this sort:\n\n```\ncategories/examples/finite_semigroups.rst:6: (WARNING/2) error while formatting signature for sage.categories.examples.finite_semigroups.LeftRegularBand.Element.wrapped_class.center: arg is not a module, class, method, function, traceback, frame, or code object\n```\nThis may happen because `wrapped_class = str` is [an alias of] a builtin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8457\n\n",
     "created_at": "2010-03-06T10:10:37Z",
     "labels": [
         "component: documentation",
@@ -25,7 +25,6 @@ Mostly of this sort:
 ```
 categories/examples/finite_semigroups.rst:6: (WARNING/2) error while formatting signature for sage.categories.examples.finite_semigroups.LeftRegularBand.Element.wrapped_class.center: arg is not a module, class, method, function, traceback, frame, or code object
 ```
-
 This may happen because `wrapped_class = str` is [an alias of] a builtin.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8457

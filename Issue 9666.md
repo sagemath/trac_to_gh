@@ -103,7 +103,7 @@ You need to add a doctest that illustrates use of the hash function, on both 32 
 archive/issue_comments_093693.json:
 ```json
 {
-    "body": "When I ran the test suite there were a bunch of failures in\n\n   devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n\ne.g.,\n\n```\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.2.rc0/devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1141:\n    sage: D.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\nExpected:\n    [2, -a - 1, -a]\nGot:\n    [2, -a - 1, a]\n```\n",
+    "body": "When I ran the test suite there were a bunch of failures in\n\n   devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n\ne.g.,\n\n```\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.2.rc0/devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1141:\n    sage: D.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\nExpected:\n    [2, -a - 1, -a]\nGot:\n    [2, -a - 1, a]\n```",
     "created_at": "2010-08-03T02:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9666",
     "type": "issue_comment",
@@ -126,7 +126,6 @@ Expected:
 Got:
     [2, -a - 1, a]
 ```
-
 
 
 

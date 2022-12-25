@@ -57,7 +57,7 @@ Attachment [sbox.patch](tarball://root/attachments/some-uuid/ticket2501/sbox.pat
 archive/issue_comments_016915.json:
 ```json
 {
-    "body": "> It might be a bit controversial if this functionality  should go in (it is not math but applied math)\n\nIt's not controversial at all, in my opinion -- this should *definitely* go in.\n\n\"Applied math\" belongs squarely within the mission of Sage, and S-Box's most certainly do.",
+    "body": "> It might be a bit controversial if this functionality  should go in (it is not math but applied math)\n\n\nIt's not controversial at all, in my opinion -- this should *definitely* go in.\n\n\"Applied math\" belongs squarely within the mission of Sage, and S-Box's most certainly do.",
     "created_at": "2008-03-12T18:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2501",
     "type": "issue_comment",
@@ -67,6 +67,7 @@ archive/issue_comments_016915.json:
 ```
 
 > It might be a bit controversial if this functionality  should go in (it is not math but applied math)
+
 
 It's not controversial at all, in my opinion -- this should *definitely* go in.
 

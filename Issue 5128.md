@@ -3,7 +3,7 @@
 archive/issues_005128.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nilesjohnson\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\n\nExample use:\n\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nilesjohnson\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\nExample use:\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
     "created_at": "2009-01-29T11:56:58Z",
     "labels": [
         "component: graphics"
@@ -20,7 +20,6 @@ Assignee: @williamstein
 CC:  @nilesjohnson
 
 This provides an easy way to make a matplotlib image and combine it with other Graphics() objects:
-
 
 ```
 class Matplotlib_Primitive(GraphicPrimitive):
@@ -60,9 +59,7 @@ def matplotlib_plot(mat):
     return g
 ```
 
-
 Example use:
-
 
 ```
 A=random_matrix(RDF,100)
@@ -73,7 +70,6 @@ B=A.numpy().astype(float)
 im = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)
 matplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])
 ```
-
 
 
 This just needs to be put in a file in the plot/ directory and an entry added to all.py.
@@ -179,7 +175,7 @@ What still needs to be done on this?  It would be really good to get this functi
 archive/issue_comments_039115.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> What still needs to be done on this?  It would be really good to get this functionality in now that #5448 is merged, so that other tickets could use it.  Am I correct that currently there is no way to create a Sage graphics object from a mpl one - the process is one direction only?\n\nThat's correct.  This ticket is the other direction.",
+    "body": "Replying to [comment:4 kcrisman]:\n> What still needs to be done on this?  It would be really good to get this functionality in now that #5448 is merged, so that other tickets could use it.  Am I correct that currently there is no way to create a Sage graphics object from a mpl one - the process is one direction only?\n\n\nThat's correct.  This ticket is the other direction.",
     "created_at": "2009-09-17T16:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
@@ -190,6 +186,7 @@ archive/issue_comments_039115.json:
 
 Replying to [comment:4 kcrisman]:
 > What still needs to be done on this?  It would be really good to get this functionality in now that #5448 is merged, so that other tickets could use it.  Am I correct that currently there is no way to create a Sage graphics object from a mpl one - the process is one direction only?
+
 
 That's correct.  This ticket is the other direction.
 
@@ -491,7 +488,7 @@ archive/issue_events_011887.json:
 archive/issue_comments_039125.json:
 ```json
 {
-    "body": "> The matplotlib thread is here: http://thread.gmane.org/gmane.comp.python.matplotlib.general/19547\nThis server is not only down, the replacement news.gmane.io is not exactly obvious how to access this one any more.  I *think* that this is the discussion in question: https://discourse.matplotlib.org/t/saving-images-using-pure-matplotlib-in-sage-cuts-off-the-bottom-part-and-produces-corrupt-file/12286/7 or possibly https://discourse.matplotlib.org/t/saving-an-axes-to-draw-in-a-different-figure/12185\n\nSee also https://groups.google.com/g/sage-support/c/N2cgEW3QUG4 for a SageTeX point of view.\n\n> It sounds like we'll probably have to wait until someone (one of us??) volunteers to help on the matplotlib side.\nI wonder what the current state of the art is.",
+    "body": "> The matplotlib thread is here: http://thread.gmane.org/gmane.comp.python.matplotlib.general/19547\n\nThis server is not only down, the replacement news.gmane.io is not exactly obvious how to access this one any more.  I *think* that this is the discussion in question: https://discourse.matplotlib.org/t/saving-images-using-pure-matplotlib-in-sage-cuts-off-the-bottom-part-and-produces-corrupt-file/12286/7 or possibly https://discourse.matplotlib.org/t/saving-an-axes-to-draw-in-a-different-figure/12185\n\nSee also https://groups.google.com/g/sage-support/c/N2cgEW3QUG4 for a SageTeX point of view.\n\n> It sounds like we'll probably have to wait until someone (one of us??) volunteers to help on the matplotlib side.\n\nI wonder what the current state of the art is.",
     "created_at": "2021-07-23T13:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
@@ -501,9 +498,11 @@ archive/issue_comments_039125.json:
 ```
 
 > The matplotlib thread is here: http://thread.gmane.org/gmane.comp.python.matplotlib.general/19547
+
 This server is not only down, the replacement news.gmane.io is not exactly obvious how to access this one any more.  I *think* that this is the discussion in question: https://discourse.matplotlib.org/t/saving-images-using-pure-matplotlib-in-sage-cuts-off-the-bottom-part-and-produces-corrupt-file/12286/7 or possibly https://discourse.matplotlib.org/t/saving-an-axes-to-draw-in-a-different-figure/12185
 
 See also https://groups.google.com/g/sage-support/c/N2cgEW3QUG4 for a SageTeX point of view.
 
 > It sounds like we'll probably have to wait until someone (one of us??) volunteers to help on the matplotlib side.
+
 I wonder what the current state of the art is.

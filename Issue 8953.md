@@ -88,7 +88,7 @@ Changing priority from major to minor.
 archive/issue_comments_082372.json:
 ```json
 {
-    "body": "Doctests fail:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/graphs/graph.py\", line 1458:\n    sage: g.is_perfect()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[5]>\", line 1, in <module>\n        g.is_perfect()###line 1458:\n    sage: g.is_perfect()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/graphs/graph.py\", line 1516, in is_perfect\n        counter_example = self.induced_subgraph_search(graphs.CycleGraph(i))\n    AttributeError: 'Graph' object has no attribute 'induced_subgraph_search'\n**********************************************************************\n```\n\nfor example. Also, you should explain what a perfect graph is in the docstring, before quoting the theorem.",
+    "body": "Doctests fail:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/graphs/graph.py\", line 1458:\n    sage: g.is_perfect()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[5]>\", line 1, in <module>\n        g.is_perfect()###line 1458:\n    sage: g.is_perfect()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/graphs/graph.py\", line 1516, in is_perfect\n        counter_example = self.induced_subgraph_search(graphs.CycleGraph(i))\n    AttributeError: 'Graph' object has no attribute 'induced_subgraph_search'\n**********************************************************************\n```\nfor example. Also, you should explain what a perfect graph is in the docstring, before quoting the theorem.",
     "created_at": "2010-06-17T20:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8953",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ Exception raised:
     AttributeError: 'Graph' object has no attribute 'induced_subgraph_search'
 **********************************************************************
 ```
-
 for example. Also, you should explain what a perfect graph is in the docstring, before quoting the theorem.
 
 
@@ -262,7 +261,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082380.json:
 ```json
 {
-    "body": "After sage-4.5.alpha1 is released, this will lead to a failed doctest:\n\n\n```\n**********************************************************************\nFile \"/scratch/rlmill/release/sage-4.5.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1629:\n    sage: g.is_perfect()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_11[5]>\", line 1, in <module>\n        g.is_perfect()###line 1629:\n    sage: g.is_perfect()\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/lib/python/site-packages/sage/graphs/graph.py\", line 1702, in is_perfect\n        counter_example = self.subgraph_search(graphs.CycleGraph(i), induced = True).complement()\n    AttributeError: 'NoneType' object has no attribute 'complement'  \n**********************************************************************\n```\n",
+    "body": "After sage-4.5.alpha1 is released, this will lead to a failed doctest:\n\n```\n**********************************************************************\nFile \"/scratch/rlmill/release/sage-4.5.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1629:\n    sage: g.is_perfect()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_11[5]>\", line 1, in <module>\n        g.is_perfect()###line 1629:\n    sage: g.is_perfect()\n      File \"/scratch/rlmill/release/sage-4.5.alpha1/local/lib/python/site-packages/sage/graphs/graph.py\", line 1702, in is_perfect\n        counter_example = self.subgraph_search(graphs.CycleGraph(i), induced = True).complement()\n    AttributeError: 'NoneType' object has no attribute 'complement'  \n**********************************************************************\n```",
     "created_at": "2010-06-29T00:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8953",
     "type": "issue_comment",
@@ -272,7 +271,6 @@ archive/issue_comments_082380.json:
 ```
 
 After sage-4.5.alpha1 is released, this will lead to a failed doctest:
-
 
 ```
 **********************************************************************
@@ -294,7 +292,6 @@ Exception raised:
     AttributeError: 'NoneType' object has no attribute 'complement'  
 **********************************************************************
 ```
-
 
 
 

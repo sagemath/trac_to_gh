@@ -3,7 +3,7 @@
 archive/issues_003139.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nIn the html tutorial, section 3.10, a couple of times \"sage_notebook\"\nis typset in \"math mode\", so that \"n\" appearars as a subscript to \"e\".\n\nNikos\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3139\n\n",
+    "body": "Assignee: tba\n\n```\nIn the html tutorial, section 3.10, a couple of times \"sage_notebook\"\nis typset in \"math mode\", so that \"n\" appearars as a subscript to \"e\".\n\nNikos\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3139\n\n",
     "created_at": "2008-05-09T01:20:48Z",
     "labels": [
         "component: documentation",
@@ -18,14 +18,12 @@ archive/issues_003139.json:
 ```
 Assignee: tba
 
-
 ```
 In the html tutorial, section 3.10, a couple of times "sage_notebook"
 is typset in "math mode", so that "n" appearars as a subscript to "e".
 
 Nikos
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3139
 

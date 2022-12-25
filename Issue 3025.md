@@ -3,7 +3,7 @@
 archive/issues_003025.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
     "created_at": "2008-04-25T20:57:56Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_003025.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: V = VectorSpace(GF(2),10, sparse=True)
 sage: w = V(0)
@@ -28,7 +27,6 @@ sage: print w[0]
 sage: print type(w[0])
 <type 'sage.rings.integer.Integer'>
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3025

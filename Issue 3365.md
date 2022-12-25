@@ -3,7 +3,7 @@
 archive/issues_003365.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nMichael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., \n\n\n```\n%c\nint foo(int a, int b) { return(a*b);}\n```\n\n\n\n```\nfoo(2r,3r)\n///\n6\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3365\n\n",
+    "body": "Assignee: cwitty\n\nMichael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., \n\n```\n%c\nint foo(int a, int b) { return(a*b);}\n```\n\n```\nfoo(2r,3r)\n///\n6\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3365\n\n",
     "created_at": "2008-06-04T18:39:54Z",
     "labels": [
         "component: misc",
@@ -20,20 +20,16 @@ Assignee: cwitty
 
 Michael Schmitz -- a student in Math 480 -- created this code.  It makes it so you can do %c in a notebook cell and write pure C functions.  Very fun.  E.g., 
 
-
 ```
 %c
 int foo(int a, int b) { return(a*b);}
 ```
-
-
 
 ```
 foo(2r,3r)
 ///
 6
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3365
 

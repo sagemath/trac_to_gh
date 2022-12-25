@@ -3,7 +3,7 @@
 archive/issues_002086.json:
 ```json
 {
-    "body": "Assignee: tba\n\nConsider:\n\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: I =  Ideal([x, y])\nsage: I.reduced_basis?\n    x.__init__(...) initializes x; see x.__class__.__doc__ for signature\n\nsage: I.reduced_basis??\n    def wrapper(*args, **kwds):\n        with RedSBContext():\n            return func(*args, **kwds)\n```\n\n\nwhich is caused by the ``@`redSB` decorator. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2086\n\n",
+    "body": "Assignee: tba\n\nConsider:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: I =  Ideal([x, y])\nsage: I.reduced_basis?\n    x.__init__(...) initializes x; see x.__class__.__doc__ for signature\n\nsage: I.reduced_basis??\n    def wrapper(*args, **kwds):\n        with RedSBContext():\n            return func(*args, **kwds)\n```\n\nwhich is caused by the ``@`redSB` decorator. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2086\n\n",
     "created_at": "2008-02-07T17:22:26Z",
     "labels": [
         "component: documentation",
@@ -20,7 +20,6 @@ Assignee: tba
 
 Consider:
 
-
 ```
 sage: P.<x,y> = PolynomialRing(QQ)
 sage: I =  Ideal([x, y])
@@ -32,7 +31,6 @@ sage: I.reduced_basis??
         with RedSBContext():
             return func(*args, **kwds)
 ```
-
 
 which is caused by the ``@`redSB` decorator. 
 

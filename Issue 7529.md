@@ -130,7 +130,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063707.json:
 ```json
 {
-    "body": "This installs fine on 4.4.2.a0, passes sage -testall both before and after installing glpk (except for unrelated failures).\n\nAlso, the docs look good and I tested it on other examples and it works as claimed:\n\n\n```\nsage: g = graphs.RandomGNP(20,.3) \nsage: h = graphs.RandomGNP(20,.2) \nsage: j = g+h\nsage: j.density()\n49/390\nsage: h.density()\n3/19\nsage: g.density()\n34/95\nsage: RR(g.density())\n0.357894736842105\nsage: RR(h.density())\n0.157894736842105\nsage: j.maximum_average_degree()\n34/5\nsage: h.average_degree()\n3\nsage: g.average_degree()\n34/5\n```\n",
+    "body": "This installs fine on 4.4.2.a0, passes sage -testall both before and after installing glpk (except for unrelated failures).\n\nAlso, the docs look good and I tested it on other examples and it works as claimed:\n\n```\nsage: g = graphs.RandomGNP(20,.3) \nsage: h = graphs.RandomGNP(20,.2) \nsage: j = g+h\nsage: j.density()\n49/390\nsage: h.density()\n3/19\nsage: g.density()\n34/95\nsage: RR(g.density())\n0.357894736842105\nsage: RR(h.density())\n0.157894736842105\nsage: j.maximum_average_degree()\n34/5\nsage: h.average_degree()\n3\nsage: g.average_degree()\n34/5\n```",
     "created_at": "2010-05-12T12:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ archive/issue_comments_063707.json:
 This installs fine on 4.4.2.a0, passes sage -testall both before and after installing glpk (except for unrelated failures).
 
 Also, the docs look good and I tested it on other examples and it works as claimed:
-
 
 ```
 sage: g = graphs.RandomGNP(20,.3) 
@@ -165,7 +164,6 @@ sage: h.average_degree()
 sage: g.average_degree()
 34/5
 ```
-
 
 
 
@@ -216,7 +214,7 @@ archive/issue_comments_063709.json:
 archive/issue_comments_063710.json:
 ```json
 {
-    "body": "Replying to [comment:6 bascorp2]:\n> [print pictures](http://like-search.info/)\n\nThis looks like spam but I didn't try the link.",
+    "body": "Replying to [comment:6 bascorp2]:\n> [print pictures](http://like-search.info/)\n\n\nThis looks like spam but I didn't try the link.",
     "created_at": "2010-05-26T10:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
@@ -227,6 +225,7 @@ archive/issue_comments_063710.json:
 
 Replying to [comment:6 bascorp2]:
 > [print pictures](http://like-search.info/)
+
 
 This looks like spam but I didn't try the link.
 

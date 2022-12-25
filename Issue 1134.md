@@ -3,7 +3,7 @@
 archive/issues_001134.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:\n[...]\n> > Woah!  Can someone explain to me the various calls above?  I'd think\n> > this should take epsilon time to coerce the elements of the sequence.\n> > Or perhaps is there another better way to coerce into Z_F (or,\n> > equivalently for me, F)?\n> >\n> \n> There is without a doubt something fishy going on with coercion. See\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> also malb's report with polynomial rings at\n> http://www.sagetrac.org/sage_trac/ticket/1046\n\nI have some doubt that John Voight's observation above has  to do with\nMalb's speed regression report.    I think it's just that a particular way\nof constructing elements in an order (coercing from a list) hasn't been optimized\none speck since when we implement orders a month ago.   And code that\nhas had zero optimization tends to be slow.  The sort answer is that *right now*\nit's vastly faster to construct the element of the order via doing arithmetic\ninstead of explicitly coercing in a list, since we've optimized arithmetic more.\nSee the timings and examples in the worksheet below. \n```\n\n\ncoerce speed question from john voight\nsystem:sage\n\n\n```\nid=0|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     for i in range(n):\n         Z_F([5,1])\n```\n\n\n\n```\nid=1|\ntime stupid_function(10^4)\n///\nCPU time: 7.88 s,  Wall time: 9.31 s\n```\n\n\n\n```\nid=10|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     a,b = Z_F.gens()\n     for i in range(n):\n         w = a + 5*b\n```\n\n\n\n```\nid=11|\ntime stupid_function(10^4)\n///\nCPU time: 0.05 s,  Wall time: 0.05 s\n```\n\n\n\n```\nid=2|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     for i in range(n):\n         K([5,1])\n```\n\n\n\n```\nid=3|\ntime stupid_function(10^4)\n///\nCPU time: 4.81 s,  Wall time: 4.88 s\n```\n\n\n\n```\nid=4|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     v = [5,1]\n     for i in range(n):\n         K(v)\n```\n\n\n\n```\nid=5|\ntime stupid_function(10^4)\n///\nCPU time: 4.78 s,  Wall time: 4.81 s\n```\n\n\n\n```\nid=6|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     one = K(1); t = K.gen(); five = K(5)\n     for i in range(n):\n         w = five*t + one\n```\n\n\n\n```\nid=7|\ntime stupid_function(10^4)\n///\nCPU time: 0.04 s,  Wall time: 0.04 s\n```\n\n\n\n```\nid=8|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     t = K.gen()\n     for i in range(n):\n         w = 5*t + 1\n```\n\n\n\n```\nid=9|\ntime stupid_function(10^4)\n///\nCPU time: 0.38 s,  Wall time: 0.38 s\n```\n\n\n\n\n\n```\nid=12|\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1134\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:\n[...]\n> > Woah!  Can someone explain to me the various calls above?  I'd think\n> > this should take epsilon time to coerce the elements of the sequence.\n> > Or perhaps is there another better way to coerce into Z_F (or,\n> > equivalently for me, F)?\n> >\n> \n> There is without a doubt something fishy going on with coercion. See\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> also malb's report with polynomial rings at\n> http://www.sagetrac.org/sage_trac/ticket/1046\n\nI have some doubt that John Voight's observation above has  to do with\nMalb's speed regression report.    I think it's just that a particular way\nof constructing elements in an order (coercing from a list) hasn't been optimized\none speck since when we implement orders a month ago.   And code that\nhas had zero optimization tends to be slow.  The sort answer is that *right now*\nit's vastly faster to construct the element of the order via doing arithmetic\ninstead of explicitly coercing in a list, since we've optimized arithmetic more.\nSee the timings and examples in the worksheet below. \n```\n\ncoerce speed question from john voight\nsystem:sage\n\n```\nid=0|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     for i in range(n):\n         Z_F([5,1])\n```\n\n```\nid=1|\ntime stupid_function(10^4)\n///\nCPU time: 7.88 s,  Wall time: 9.31 s\n```\n\n```\nid=10|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     a,b = Z_F.gens()\n     for i in range(n):\n         w = a + 5*b\n```\n\n```\nid=11|\ntime stupid_function(10^4)\n///\nCPU time: 0.05 s,  Wall time: 0.05 s\n```\n\n```\nid=2|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     for i in range(n):\n         K([5,1])\n```\n\n```\nid=3|\ntime stupid_function(10^4)\n///\nCPU time: 4.81 s,  Wall time: 4.88 s\n```\n\n```\nid=4|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     v = [5,1]\n     for i in range(n):\n         K(v)\n```\n\n```\nid=5|\ntime stupid_function(10^4)\n///\nCPU time: 4.78 s,  Wall time: 4.81 s\n```\n\n```\nid=6|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     one = K(1); t = K.gen(); five = K(5)\n     for i in range(n):\n         w = five*t + one\n```\n\n```\nid=7|\ntime stupid_function(10^4)\n///\nCPU time: 0.04 s,  Wall time: 0.04 s\n```\n\n```\nid=8|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     t = K.gen()\n     for i in range(n):\n         w = 5*t + 1\n```\n\n```\nid=9|\ntime stupid_function(10^4)\n///\nCPU time: 0.38 s,  Wall time: 0.38 s\n```\n\n\n\n```\nid=12|\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1134\n\n",
     "created_at": "2007-11-09T08:20:30Z",
     "labels": [
         "component: number theory"
@@ -16,7 +16,6 @@ archive/issues_001134.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:
@@ -42,10 +41,8 @@ instead of explicitly coercing in a list, since we've optimized arithmetic more.
 See the timings and examples in the worksheet below. 
 ```
 
-
 coerce speed question from john voight
 system:sage
-
 
 ```
 id=0|
@@ -55,16 +52,12 @@ def stupid_function(n):
          Z_F([5,1])
 ```
 
-
-
 ```
 id=1|
 time stupid_function(10^4)
 ///
 CPU time: 7.88 s,  Wall time: 9.31 s
 ```
-
-
 
 ```
 id=10|
@@ -75,16 +68,12 @@ def stupid_function(n):
          w = a + 5*b
 ```
 
-
-
 ```
 id=11|
 time stupid_function(10^4)
 ///
 CPU time: 0.05 s,  Wall time: 0.05 s
 ```
-
-
 
 ```
 id=2|
@@ -94,16 +83,12 @@ def stupid_function(n):
          K([5,1])
 ```
 
-
-
 ```
 id=3|
 time stupid_function(10^4)
 ///
 CPU time: 4.81 s,  Wall time: 4.88 s
 ```
-
-
 
 ```
 id=4|
@@ -114,16 +99,12 @@ def stupid_function(n):
          K(v)
 ```
 
-
-
 ```
 id=5|
 time stupid_function(10^4)
 ///
 CPU time: 4.78 s,  Wall time: 4.81 s
 ```
-
-
 
 ```
 id=6|
@@ -134,16 +115,12 @@ def stupid_function(n):
          w = five*t + one
 ```
 
-
-
 ```
 id=7|
 time stupid_function(10^4)
 ///
 CPU time: 0.04 s,  Wall time: 0.04 s
 ```
-
-
 
 ```
 id=8|
@@ -154,8 +131,6 @@ def stupid_function(n):
          w = 5*t + 1
 ```
 
-
-
 ```
 id=9|
 time stupid_function(10^4)
@@ -165,13 +140,10 @@ CPU time: 0.38 s,  Wall time: 0.38 s
 
 
 
-
-
 ```
 id=12|
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1134
 
@@ -184,7 +156,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1134
 archive/issue_comments_006852.json:
 ```json
 {
-    "body": "Attached bundle partially addresses this issue, by implementing a fast QQ => quadratic number field element coercion. Currently this only affects implicit coercions, but when Robert+David's new coercion framework is finished, it should help explicit coercions too. But it still doesn't totally address the issue for this ticket.\n\nExample:\n\n\n```\ndef stupid_function(n):\n    Z_F = NumberField(x^2-x-1, 't')\n    y = Z_F.gen()\n    u = 2/3\n    for i in range(n):\n        z = y + u\n\ntime stupid_function(50000)\n```\n\n\n\nBefore:\n\n```\nTime: CPU 13.68 s, Wall: 14.07 s\n```\n\n\nAfter:\n\n```\nTime: CPU 0.25 s, Wall: 0.52 s\n```\n",
+    "body": "Attached bundle partially addresses this issue, by implementing a fast QQ => quadratic number field element coercion. Currently this only affects implicit coercions, but when Robert+David's new coercion framework is finished, it should help explicit coercions too. But it still doesn't totally address the issue for this ticket.\n\nExample:\n\n```\ndef stupid_function(n):\n    Z_F = NumberField(x^2-x-1, 't')\n    y = Z_F.gen()\n    u = 2/3\n    for i in range(n):\n        z = y + u\n\ntime stupid_function(50000)\n```\n\n\nBefore:\n\n```\nTime: CPU 13.68 s, Wall: 14.07 s\n```\n\nAfter:\n\n```\nTime: CPU 0.25 s, Wall: 0.52 s\n```",
     "created_at": "2007-11-14T23:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
@@ -196,7 +168,6 @@ archive/issue_comments_006852.json:
 Attached bundle partially addresses this issue, by implementing a fast QQ => quadratic number field element coercion. Currently this only affects implicit coercions, but when Robert+David's new coercion framework is finished, it should help explicit coercions too. But it still doesn't totally address the issue for this ticket.
 
 Example:
-
 
 ```
 def stupid_function(n):
@@ -210,20 +181,17 @@ time stupid_function(50000)
 ```
 
 
-
 Before:
 
 ```
 Time: CPU 13.68 s, Wall: 14.07 s
 ```
 
-
 After:
 
 ```
 Time: CPU 0.25 s, Wall: 0.52 s
 ```
-
 
 
 
@@ -523,7 +491,7 @@ archive/issue_events_003036.json:
 archive/issue_comments_006862.json:
 ```json
 {
-    "body": "With some careful merge I was able to make the patch applied and work on sage-6.3.beta3. But, the map `list_to_quadratic_field_element` is completely useless as there is no gain at all. Moreover, it is one more map added to the list of conversions. So I would suggest to not add it with that ticket.\n\nOne interesting optimization in the ticket is the `check` parameter added to the `_element_constructor_`. Do you agree if I provide a branch that contains only that?\n\nAlso, as it was said in comment:9 most of the time in the construction is spent in checking. So it would be worth to optimize it. The longest part comes from decomposing a vector on a given basis as the timings below show.\n\nThe construction takes roughly 600 micro seconds\n\n```\nsage: K = NumberField(x^2-x-1, 't')\nsage: Z_F = K.maximal_order()\nsage: x = K([5,1])\nsage: %timeit Z_F(x)\n1000 loops, best of 3: 674 \u00b5s per loop\n```\n\nBut most of the time is spent in checking that some vector belong to some submodule\n\n```\nsage: %timeit K.vector_space()      # <--- this is very quick\n1000000 loops, best of 3: 431 ns per loop\nsage: embedding = K.vector_space()[2]\nsage: embedding\nIsomorphism map:\n  From: Number Field in t with defining polynomial x^2 - x - 1\n  To:   Vector space of dimension 2 over Rational Field\nsage: %timeit embedding(x)          # <--- this is quick\n10000 loops, best of 3: 49.8 \u00b5s per loop\nsage: v = phi(x)\nsage: %timeit v in Z_F._module_rep  # <--- this is damn slow\n1000 loops, best of 3: 608 \u00b5s per loop\n```\n\nAnd in `__contains__` of `FreeModule`, the mess comes from calling `coordinates` that decompose the vector on the basis of the module:\n\n```\nsage: V = Z_F._module_rep\nsage: %timeit V.coordinates(v)\n1000 loops, best of 3: 612 \u00b5s per loop\n```\n",
+    "body": "With some careful merge I was able to make the patch applied and work on sage-6.3.beta3. But, the map `list_to_quadratic_field_element` is completely useless as there is no gain at all. Moreover, it is one more map added to the list of conversions. So I would suggest to not add it with that ticket.\n\nOne interesting optimization in the ticket is the `check` parameter added to the `_element_constructor_`. Do you agree if I provide a branch that contains only that?\n\nAlso, as it was said in comment:9 most of the time in the construction is spent in checking. So it would be worth to optimize it. The longest part comes from decomposing a vector on a given basis as the timings below show.\n\nThe construction takes roughly 600 micro seconds\n\n```\nsage: K = NumberField(x^2-x-1, 't')\nsage: Z_F = K.maximal_order()\nsage: x = K([5,1])\nsage: %timeit Z_F(x)\n1000 loops, best of 3: 674 \u00b5s per loop\n```\nBut most of the time is spent in checking that some vector belong to some submodule\n\n```\nsage: %timeit K.vector_space()      # <--- this is very quick\n1000000 loops, best of 3: 431 ns per loop\nsage: embedding = K.vector_space()[2]\nsage: embedding\nIsomorphism map:\n  From: Number Field in t with defining polynomial x^2 - x - 1\n  To:   Vector space of dimension 2 over Rational Field\nsage: %timeit embedding(x)          # <--- this is quick\n10000 loops, best of 3: 49.8 \u00b5s per loop\nsage: v = phi(x)\nsage: %timeit v in Z_F._module_rep  # <--- this is damn slow\n1000 loops, best of 3: 608 \u00b5s per loop\n```\nAnd in `__contains__` of `FreeModule`, the mess comes from calling `coordinates` that decompose the vector on the basis of the module:\n\n```\nsage: V = Z_F._module_rep\nsage: %timeit V.coordinates(v)\n1000 loops, best of 3: 612 \u00b5s per loop\n```",
     "created_at": "2014-06-13T18:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
@@ -547,7 +515,6 @@ sage: x = K([5,1])
 sage: %timeit Z_F(x)
 1000 loops, best of 3: 674 µs per loop
 ```
-
 But most of the time is spent in checking that some vector belong to some submodule
 
 ```
@@ -564,7 +531,6 @@ sage: v = phi(x)
 sage: %timeit v in Z_F._module_rep  # <--- this is damn slow
 1000 loops, best of 3: 608 µs per loop
 ```
-
 And in `__contains__` of `FreeModule`, the mess comes from calling `coordinates` that decompose the vector on the basis of the module:
 
 ```
@@ -572,7 +538,6 @@ sage: V = Z_F._module_rep
 sage: %timeit V.coordinates(v)
 1000 loops, best of 3: 612 µs per loop
 ```
-
 
 
 

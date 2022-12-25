@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6756
 archive/issue_comments_055501.json:
 ```json
 {
-    "body": "Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by @ncalexan created at 2009-08-21 17:21:03\n\nI am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/\" -*-\nsage-test started at Fri Aug 21 10:18:46\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 4 /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\n\nreal\t0m2.361s\nuser\t0m1.297s\nsys\t0m0.591s\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 1 files doing 4 jobs in parallel\nsage -t  derivative.py\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n    sage: f(x).diff(x)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 53:\n    sage: diff(f(x), x, 1)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 68:\n    sage: h.diff(x)\nExpected:\n    diff(f(x), x, n + 1)\nGot:\n    D[0](diff)(f(x), x, n)*D[0](f)(x) + D[1](diff)(f(x), x, n)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 112:\n    sage: f(x^2).diff(x)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 118:\n    sage: f(x^2).diff(x)\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 121:\n    sage: f(sin(x^2)).diff(x)\nExpected:\n    2*x*cos(x^2)*diff(f(sin(x^2)), sin(x^2), 1)\nGot:\n    2*x*D[0](f)(sin(x^2))*cos(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 124:\n    sage: g(x,f(x)).diff(x)\nExpected:\n    diff(f(x), x, 1)*diff(g(x, f(x)), f(x), 1) + diff(g(x, f(x)), x, 1)\nGot:\n    D[0](f)(x)*D[1](g)(x, f(x)) + D[0](g)(x, f(x))\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 129:\n    sage: symbolic_diff(f(x^2), x, 1)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 138:\n    sage: g(x,x).diff(x)\nExpected:\n    2*diff(g(x, x), x, 1)\nGot:\n    D[0](g)(x, x) + D[1](g)(x, x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 147:\n    sage: h = f(x).diff(x); h\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 149:\n    sage: h.subs(f(x)==x^4)\nExpected:\n    4*x^3\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 155:\n    sage: h = f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 157:\n    sage: h.subs(f(x^2)==x^4)\nExpected:\n    4*x^3\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 159:\n    sage: symbolic_diff(f(x)^2, f(x), 1)\nExpected:\n    2*f(x)\nGot:\n    diff(f(x)^2, f(x), 1)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 186:\n    sage: h = f(x).diff(x) + f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1) +  diff(f(x), x, 1)\nGot:\n    2*x*D[0](f)(x^2) + D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 217:\n    sage: f(x,y).diff(x,y)\nExpected:\n    diff(f(x, y), x, 1, y, 1)\nGot:\n    D[0, 1](f)(x, y)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 219:\n    sage: f(x,y).diff(x,2)\nExpected:\n    diff(f(x, y), x, 2)\nGot:\n    D[0, 0](f)(x, y)\n**********************************************************************\n2 items had failures:\n  15 of  40 in __main__.example_1\n   2 of  10 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/tmp/.doctest_derivative.py\n\t [3.8 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage-main/sage/symbolic/derivative.py # 17 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4.1 seconds\n\nsage-test finished with failing tests at Fri Aug 21 10:18:53\n```\n\n\nWhen I work from the command line, I get things like\n\n```\nsage: default_level=set_diff_derivative_level()\nsage: set_diff_derivative_level(1)\nsage: f(x) = function('f', x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/mero.local/93112/_Users_ncalexan__sage_init_sage_1.py in <module>()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.function (sage/calculus/var.c:709)()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.SFunction.__call__ (sage/symbolic/function.cpp:4655)()\n\nTypeError: Symbolic function f takes exactly 2 arguments (1 given)\n```\n\n\nSo there must be some calculus or symbolic patches that I'm missing.  Any suggestions?",
+    "body": "Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by @ncalexan created at 2009-08-21 17:21:03\n\nI am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/\" -*-\nsage-test started at Fri Aug 21 10:18:46\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 4 /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\n\nreal\t0m2.361s\nuser\t0m1.297s\nsys\t0m0.591s\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 1 files doing 4 jobs in parallel\nsage -t  derivative.py\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n    sage: f(x).diff(x)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 53:\n    sage: diff(f(x), x, 1)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 68:\n    sage: h.diff(x)\nExpected:\n    diff(f(x), x, n + 1)\nGot:\n    D[0](diff)(f(x), x, n)*D[0](f)(x) + D[1](diff)(f(x), x, n)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 112:\n    sage: f(x^2).diff(x)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 118:\n    sage: f(x^2).diff(x)\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 121:\n    sage: f(sin(x^2)).diff(x)\nExpected:\n    2*x*cos(x^2)*diff(f(sin(x^2)), sin(x^2), 1)\nGot:\n    2*x*D[0](f)(sin(x^2))*cos(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 124:\n    sage: g(x,f(x)).diff(x)\nExpected:\n    diff(f(x), x, 1)*diff(g(x, f(x)), f(x), 1) + diff(g(x, f(x)), x, 1)\nGot:\n    D[0](f)(x)*D[1](g)(x, f(x)) + D[0](g)(x, f(x))\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 129:\n    sage: symbolic_diff(f(x^2), x, 1)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 138:\n    sage: g(x,x).diff(x)\nExpected:\n    2*diff(g(x, x), x, 1)\nGot:\n    D[0](g)(x, x) + D[1](g)(x, x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 147:\n    sage: h = f(x).diff(x); h\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 149:\n    sage: h.subs(f(x)==x^4)\nExpected:\n    4*x^3\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 155:\n    sage: h = f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 157:\n    sage: h.subs(f(x^2)==x^4)\nExpected:\n    4*x^3\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 159:\n    sage: symbolic_diff(f(x)^2, f(x), 1)\nExpected:\n    2*f(x)\nGot:\n    diff(f(x)^2, f(x), 1)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 186:\n    sage: h = f(x).diff(x) + f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1) +  diff(f(x), x, 1)\nGot:\n    2*x*D[0](f)(x^2) + D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 217:\n    sage: f(x,y).diff(x,y)\nExpected:\n    diff(f(x, y), x, 1, y, 1)\nGot:\n    D[0, 1](f)(x, y)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 219:\n    sage: f(x,y).diff(x,2)\nExpected:\n    diff(f(x, y), x, 2)\nGot:\n    D[0, 0](f)(x, y)\n**********************************************************************\n2 items had failures:\n  15 of  40 in __main__.example_1\n   2 of  10 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/tmp/.doctest_derivative.py\n\t [3.8 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage-main/sage/symbolic/derivative.py # 17 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4.1 seconds\n\nsage-test finished with failing tests at Fri Aug 21 10:18:53\n```\n\nWhen I work from the command line, I get things like\n\n```\nsage: default_level=set_diff_derivative_level()\nsage: set_diff_derivative_level(1)\nsage: f(x) = function('f', x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/mero.local/93112/_Users_ncalexan__sage_init_sage_1.py in <module>()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.function (sage/calculus/var.c:709)()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.SFunction.__call__ (sage/symbolic/function.cpp:4655)()\n\nTypeError: Symbolic function f takes exactly 2 arguments (1 given)\n```\n\nSo there must be some calculus or symbolic patches that I'm missing.  Any suggestions?",
     "created_at": "2009-08-21T17:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_055501.json:
 Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by @ncalexan created at 2009-08-21 17:21:03
 
 I am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures
-
 
 ```
 -*- mode: sage-test; default-directory: "~/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/" -*-
@@ -200,7 +199,6 @@ Total time for all tests: 4.1 seconds
 sage-test finished with failing tests at Fri Aug 21 10:18:53
 ```
 
-
 When I work from the command line, I get things like
 
 ```
@@ -219,7 +217,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: Symbolic function f takes exactly 2 arguments (1 given)
 ```
 
-
 So there must be some calculus or symbolic patches that I'm missing.  Any suggestions?
 
 
@@ -229,7 +226,7 @@ So there must be some calculus or symbolic patches that I'm missing.  Any sugges
 archive/issue_comments_055502.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncalexan]:\n> I am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n>\n\n```\n \n **********************************************************************\n File \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n     sage: f(x).diff(x)\n Expected:\n     diff(f(x), x, 1)\n Got:\n     D[0](f)(x)\n```\n\n\n\n\n\n\nThanks Nick for trying it out. From this error, it seems \"diff_derivative_level\" flag wasn't set to\nvalue greater than \"0\". It could be that \"set_diff_derivative_level()\" failed to set it properly.\n\n\n\n\n> When I work from the command line, I get things like\n> {{{\n> sage: default_level=set_diff_derivative_level()\n> sage: set_diff_derivative_level(1)\n> sage: f(x) = function('f', x)\n> ---------------------------------------------------------------------------\n> TypeError: Symbolic function f takes exactly 2 arguments (1 given)\n> }}}\n\n\n\n\nThis looks really weired to me. Does it work before calling \"set_diff_derivative_level()\"?\n\n\nI can suggest you to check three things\n\n  (1) Ensure in \"symbolic/pynac.pyx\" you have a line:\n\n```\n      \"cdef public int diff_derivative_level = 0\"\n```\n\n   May be you can set it to \"1\", to enable \"diff\" by default.\n\n\n  (2) In \"symbolic/all.py\" you have a line:\n\n```\n     \"from derivative import symbolic_diff\"\n```\n\n  (3) In \"calculus/calculus.py\" the following line is commented out or removed\n\n```\n      \"syms['diff'] = dummy_diff\"\n```\n\nIf these three lines are fine then it should work. Some doctests may it still\nfail if \"set_diff_derivative_level()\" isn't working properly but you can\nalways change value in (1) manually without using it.\n\nPlease let me know if that works.\n\nBest,",
+    "body": "Replying to [comment:2 ncalexan]:\n> I am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n\n>\n\n```\n \n **********************************************************************\n File \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n     sage: f(x).diff(x)\n Expected:\n     diff(f(x), x, 1)\n Got:\n     D[0](f)(x)\n```\n\n\n\n\n\nThanks Nick for trying it out. From this error, it seems \"diff_derivative_level\" flag wasn't set to\nvalue greater than \"0\". It could be that \"set_diff_derivative_level()\" failed to set it properly.\n\n\n\n\n> When I work from the command line, I get things like\n> \n> ```\n> sage: default_level=set_diff_derivative_level()\n> sage: set_diff_derivative_level(1)\n> sage: f(x) = function('f', x)\n> ---------------------------------------------------------------------------\n> TypeError: Symbolic function f takes exactly 2 arguments (1 given)\n> ```\n\n\n\n\n\nThis looks really weired to me. Does it work before calling \"set_diff_derivative_level()\"?\n\n\nI can suggest you to check three things\n\n  (1) Ensure in \"symbolic/pynac.pyx\" you have a line:\n\n```\n      \"cdef public int diff_derivative_level = 0\"\n```\n   May be you can set it to \"1\", to enable \"diff\" by default.\n\n\n  (2) In \"symbolic/all.py\" you have a line:\n\n```\n     \"from derivative import symbolic_diff\"\n```\n  (3) In \"calculus/calculus.py\" the following line is commented out or removed\n\n```\n      \"syms['diff'] = dummy_diff\"\n```\nIf these three lines are fine then it should work. Some doctests may it still\nfail if \"set_diff_derivative_level()\" isn't working properly but you can\nalways change value in (1) manually without using it.\n\nPlease let me know if that works.\n\nBest,",
     "created_at": "2009-08-21T18:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -240,6 +237,7 @@ archive/issue_comments_055502.json:
 
 Replying to [comment:2 ncalexan]:
 > I am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures
+
 >
 
 ```
@@ -257,7 +255,6 @@ Replying to [comment:2 ncalexan]:
 
 
 
-
 Thanks Nick for trying it out. From this error, it seems "diff_derivative_level" flag wasn't set to
 value greater than "0". It could be that "set_diff_derivative_level()" failed to set it properly.
 
@@ -265,13 +262,15 @@ value greater than "0". It could be that "set_diff_derivative_level()" failed to
 
 
 > When I work from the command line, I get things like
-> {{{
+> 
+> ```
 > sage: default_level=set_diff_derivative_level()
 > sage: set_diff_derivative_level(1)
 > sage: f(x) = function('f', x)
 > ---------------------------------------------------------------------------
 > TypeError: Symbolic function f takes exactly 2 arguments (1 given)
-> }}}
+> ```
+
 
 
 
@@ -286,7 +285,6 @@ I can suggest you to check three things
 ```
       "cdef public int diff_derivative_level = 0"
 ```
-
    May be you can set it to "1", to enable "diff" by default.
 
 
@@ -295,13 +293,11 @@ I can suggest you to check three things
 ```
      "from derivative import symbolic_diff"
 ```
-
   (3) In "calculus/calculus.py" the following line is commented out or removed
 
 ```
       "syms['diff'] = dummy_diff"
 ```
-
 If these three lines are fine then it should work. Some doctests may it still
 fail if "set_diff_derivative_level()" isn't working properly but you can
 always change value in (1) manually without using it.
@@ -389,7 +385,7 @@ Aha, very interesting, you pattern match via the `symbolic_diff` object.  This i
 archive/issue_comments_055507.json:
 ```json
 {
-    "body": "I would like to evaluate various derivatives numerically, but there's no obvious way to do so.\n\n```\nsage: def f(v, n): print v; return v**n\n....: \nsage: g(x, y).derivative(x, 1).subs( symbolic_diff(g(x, y), w0, w1) == f(w0, w1) )\n$0\nx\n```\n\n\nI would like to have my `f` examine w0 and w1 to determine the correct variable, derivative, etc.  But if you look, f gets evaluated with the wild card objects (it must -- that's how python works.)\n\nSo I need to match the wild cards, then calculate the function, then substitute.  Just longer, that's all.",
+    "body": "I would like to evaluate various derivatives numerically, but there's no obvious way to do so.\n\n```\nsage: def f(v, n): print v; return v**n\n....: \nsage: g(x, y).derivative(x, 1).subs( symbolic_diff(g(x, y), w0, w1) == f(w0, w1) )\n$0\nx\n```\n\nI would like to have my `f` examine w0 and w1 to determine the correct variable, derivative, etc.  But if you look, f gets evaluated with the wild card objects (it must -- that's how python works.)\n\nSo I need to match the wild cards, then calculate the function, then substitute.  Just longer, that's all.",
     "created_at": "2009-08-26T19:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -407,7 +403,6 @@ sage: g(x, y).derivative(x, 1).subs( symbolic_diff(g(x, y), w0, w1) == f(w0, w1)
 $0
 x
 ```
-
 
 I would like to have my `f` examine w0 and w1 to determine the correct variable, derivative, etc.  But if you look, f gets evaluated with the wild card objects (it must -- that's how python works.)
 
@@ -480,7 +475,7 @@ Patches updated to include Nick's suggestion to move "set_diff_derivative_level"
 archive/issue_comments_055511.json:
 ```json
 {
-    "body": "It seems that applying chain rule to these inert derivatives can lead to wrong answers:\n\n\n```\nsage: f = function('f')\nsage: set_diff_derivative_level(2)\nsage: f(y,y).diff(y,1)\n2*diff(f(y, y), y, 1)\n```\n\n\nCompare with the answer we get now:\n\n```\nsage: set_diff_derivative_level(0)\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\n```\n\n\nThis example is from p. 26 (second page) in\n\n\n```\nWester, M. and Steinberg, S. 1983. An extension to MACSYMA's concept of functional differentiation.\n   SIGSAM Bull. 17, 3-4 (Aug. 1983), 25-30.\n```\n\n\nYou can get the article here:  http://doi.acm.org/10.1145/1089338.1089343 \n\nIt was the first reference on the paper mentioned by RJF in this post:\n\nhttp://groups.google.com/group/sage-devel/msg/6db333cbf8ea0a53\n\nThe paper RJF cites is\n\n\n```\nGolden, J. P. 1985. Differentiation of unknown functions in MACSYMA.\n   SIGSAM Bull. 19, 2 (May. 1985), 19-24.\n```\n\n\nwhich you can get here:\n\nhttp://doi.acm.org/10.1145/1089402.1089405\n\n\nI suggest removing the chain rule from this implementation altogether and keeping it as an alternative *inert* derivative. Then the implementation can be moved within the Sage library completely as a subclass of SFunction. We should also implement conversions between the partial derivative format and this one. This page gives a recipe on how this can be done:\n\nhttp://209.85.129.132/search?q=cache%3Ahttp%3A%2F%2Fwww.mapleprimes.com%2Fforum%2Fd-diff-conversion%23comment-8243\n\n(The link points to the google cache since mapleprimes.com is down.)\n\nNick, if you give examples of how you want pattern matching on derivatives to work, we can see how to make the current implementation support these. Pattern matching capabilities of `fderivative` in GiNaC definitely need to be improved. Looking at what functionality maple and MMA provides could also help.",
+    "body": "It seems that applying chain rule to these inert derivatives can lead to wrong answers:\n\n```\nsage: f = function('f')\nsage: set_diff_derivative_level(2)\nsage: f(y,y).diff(y,1)\n2*diff(f(y, y), y, 1)\n```\n\nCompare with the answer we get now:\n\n```\nsage: set_diff_derivative_level(0)\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\n```\n\nThis example is from p. 26 (second page) in\n\n```\nWester, M. and Steinberg, S. 1983. An extension to MACSYMA's concept of functional differentiation.\n   SIGSAM Bull. 17, 3-4 (Aug. 1983), 25-30.\n```\n\nYou can get the article here:  http://doi.acm.org/10.1145/1089338.1089343 \n\nIt was the first reference on the paper mentioned by RJF in this post:\n\nhttp://groups.google.com/group/sage-devel/msg/6db333cbf8ea0a53\n\nThe paper RJF cites is\n\n```\nGolden, J. P. 1985. Differentiation of unknown functions in MACSYMA.\n   SIGSAM Bull. 19, 2 (May. 1985), 19-24.\n```\n\nwhich you can get here:\n\nhttp://doi.acm.org/10.1145/1089402.1089405\n\n\nI suggest removing the chain rule from this implementation altogether and keeping it as an alternative *inert* derivative. Then the implementation can be moved within the Sage library completely as a subclass of SFunction. We should also implement conversions between the partial derivative format and this one. This page gives a recipe on how this can be done:\n\nhttp://209.85.129.132/search?q=cache%3Ahttp%3A%2F%2Fwww.mapleprimes.com%2Fforum%2Fd-diff-conversion%23comment-8243\n\n(The link points to the google cache since mapleprimes.com is down.)\n\nNick, if you give examples of how you want pattern matching on derivatives to work, we can see how to make the current implementation support these. Pattern matching capabilities of `fderivative` in GiNaC definitely need to be improved. Looking at what functionality maple and MMA provides could also help.",
     "created_at": "2009-09-06T12:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -491,14 +486,12 @@ archive/issue_comments_055511.json:
 
 It seems that applying chain rule to these inert derivatives can lead to wrong answers:
 
-
 ```
 sage: f = function('f')
 sage: set_diff_derivative_level(2)
 sage: f(y,y).diff(y,1)
 2*diff(f(y, y), y, 1)
 ```
-
 
 Compare with the answer we get now:
 
@@ -508,15 +501,12 @@ sage: f(y,y).diff(y,1)
 D[0](f)(y, y) + D[1](f)(y, y)
 ```
 
-
 This example is from p. 26 (second page) in
-
 
 ```
 Wester, M. and Steinberg, S. 1983. An extension to MACSYMA's concept of functional differentiation.
    SIGSAM Bull. 17, 3-4 (Aug. 1983), 25-30.
 ```
-
 
 You can get the article here:  http://doi.acm.org/10.1145/1089338.1089343 
 
@@ -526,12 +516,10 @@ http://groups.google.com/group/sage-devel/msg/6db333cbf8ea0a53
 
 The paper RJF cites is
 
-
 ```
 Golden, J. P. 1985. Differentiation of unknown functions in MACSYMA.
    SIGSAM Bull. 19, 2 (May. 1985), 19-24.
 ```
-
 
 which you can get here:
 
@@ -553,7 +541,7 @@ Nick, if you give examples of how you want pattern matching on derivatives to wo
 archive/issue_comments_055512.json:
 ```json
 {
-    "body": "Replying to [comment:10 burcin]:\n> It seems that applying chain rule to these inert derivatives can lead to wrong answers:\n> \n\n```\nsage: f = function('f')\nsage: set_diff_derivative_level(2)\nsage: f(y,y).diff(y,1)\n2*diff(f(y, y), y, 1)\n```\n\n> \n> Compare with the answer we get now:\n\n```\nsage: set_diff_derivative_level(0)\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\n```\n\n> \n> This example is from p. 26 (second page) in ....\n\n> I suggest removing the chain rule from this implementation altogether and keeping it as an alternative *inert* \n\n\nThanks for the reference and I am certainly aware of this issue. If you read the\ndocstring then you will find that I have even documented it. Furthermore, I also \nposted this issue for discussion to sage-devel (but without any definite conclusion)\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/c8d257981e3e3d98\n\nFollowing are my comments:\n\n  (1) f(y,y) is not a genuine function of two variables. So asking for its chain rule, pretending it to be a function of multiple variables, is itself incorrect assertion.\n\n  (2) I don't think even D[] derivative output is much better in this regard, specially if you implement and allow substitution of f(y,y). For example. consider the substitution: f(y,y) = y in \"D[0](f)(y, y) + D[1](f)(y, y)\", then you will get the same wrong answer from D[] as from \"diff\".\n      \n  (3) Applying chain rule is just an option in new diff implementation and certainly not the default option. However, this could be useful sometime (for example in computing Euler-Lagrange equation using functional derivative of a formal functional \"S(f(y), g(y))\" this feature is needed. In fact, this was the reason for implementing this feature.)\n\nSo I am sorry to differ from your opinion about removing this feature.\n\n\n  \n\n> Then the implementation can be moved within the Sage library completely as a \n> subclass of SFunction. \n\n\n\n\nAs I posted in the sage-devel, I initially implemented this within Sage as SFunction \nsub-class (as you suggest). Then I re-implemented this in c++ as pynac native implementation \nbecause this is 10-15 times faster than the Sage implementation.\n\n\nWhy do you want to have a slower implementation of diff than a faster one?\n\n\n\n\n> We should also implement conversions between the partial derivative format and this one. \n> This page gives a recipe on how this can be done:\n> \n> http://209.85.129.132/search?q=cache%3Ahttp%3A%2F%2Fwww.mapleprimes.com%2Fforum%2Fd-diff-conversion%23comment-8243\n\n\n\n\nI agree that we need this conversion at least to restore compatibility of D[] with Maxima which is badly broken now because of D[] derivative. However, I don't agree that I should implement this conversion and certainly not as a pre-requirement for accepting this patch.   \n\nGiven above arguments, I am reverting back to \"needs review\" status.",
+    "body": "Replying to [comment:10 burcin]:\n> It seems that applying chain rule to these inert derivatives can lead to wrong answers:\n> \n\n{{{\nsage: f = function('f')\nsage: set_diff_derivative_level(2)\nsage: f(y,y).diff(y,1)\n2*diff(f(y, y), y, 1)\n}}}\n> \n> Compare with the answer we get now:\n\n{{{\nsage: set_diff_derivative_level(0)\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\n}}}\n> \n> This example is from p. 26 (second page) in ....\n\n\n> I suggest removing the chain rule from this implementation altogether and keeping it as an alternative *inert* \n\n\n\nThanks for the reference and I am certainly aware of this issue. If you read the\ndocstring then you will find that I have even documented it. Furthermore, I also \nposted this issue for discussion to sage-devel (but without any definite conclusion)\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/c8d257981e3e3d98\n\nFollowing are my comments:\n\n  (1) f(y,y) is not a genuine function of two variables. So asking for its chain rule, pretending it to be a function of multiple variables, is itself incorrect assertion.\n\n  (2) I don't think even D[] derivative output is much better in this regard, specially if you implement and allow substitution of f(y,y). For example. consider the substitution: f(y,y) = y in \"D[0](f)(y, y) + D[1](f)(y, y)\", then you will get the same wrong answer from D[] as from \"diff\".\n      \n  (3) Applying chain rule is just an option in new diff implementation and certainly not the default option. However, this could be useful sometime (for example in computing Euler-Lagrange equation using functional derivative of a formal functional \"S(f(y), g(y))\" this feature is needed. In fact, this was the reason for implementing this feature.)\n\nSo I am sorry to differ from your opinion about removing this feature.\n\n\n  \n\n> Then the implementation can be moved within the Sage library completely as a \n> subclass of SFunction. \n\n\n\n\n\nAs I posted in the sage-devel, I initially implemented this within Sage as SFunction \nsub-class (as you suggest). Then I re-implemented this in c++ as pynac native implementation \nbecause this is 10-15 times faster than the Sage implementation.\n\n\nWhy do you want to have a slower implementation of diff than a faster one?\n\n\n\n\n> We should also implement conversions between the partial derivative format and this one. \n> This page gives a recipe on how this can be done:\n> \n> http://209.85.129.132/search?q=cache%3Ahttp%3A%2F%2Fwww.mapleprimes.com%2Fforum%2Fd-diff-conversion%23comment-8243\n\n\n\n\n\nI agree that we need this conversion at least to restore compatibility of D[] with Maxima which is badly broken now because of D[] derivative. However, I don't agree that I should implement this conversion and certainly not as a pre-requirement for accepting this patch.   \n\nGiven above arguments, I am reverting back to \"needs review\" status.",
     "created_at": "2009-09-06T20:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -566,26 +554,26 @@ Replying to [comment:10 burcin]:
 > It seems that applying chain rule to these inert derivatives can lead to wrong answers:
 > 
 
-```
+{{{
 sage: f = function('f')
 sage: set_diff_derivative_level(2)
 sage: f(y,y).diff(y,1)
 2*diff(f(y, y), y, 1)
-```
-
+}}}
 > 
 > Compare with the answer we get now:
 
-```
+{{{
 sage: set_diff_derivative_level(0)
 sage: f(y,y).diff(y,1)
 D[0](f)(y, y) + D[1](f)(y, y)
-```
-
+}}}
 > 
 > This example is from p. 26 (second page) in ....
 
+
 > I suggest removing the chain rule from this implementation altogether and keeping it as an alternative *inert* 
+
 
 
 Thanks for the reference and I am certainly aware of this issue. If you read the
@@ -613,6 +601,7 @@ So I am sorry to differ from your opinion about removing this feature.
 
 
 
+
 As I posted in the sage-devel, I initially implemented this within Sage as SFunction 
 sub-class (as you suggest). Then I re-implemented this in c++ as pynac native implementation 
 because this is 10-15 times faster than the Sage implementation.
@@ -631,6 +620,7 @@ Why do you want to have a slower implementation of diff than a faster one?
 
 
 
+
 I agree that we need this conversion at least to restore compatibility of D[] with Maxima which is badly broken now because of D[] derivative. However, I don't agree that I should implement this conversion and certainly not as a pre-requirement for accepting this patch.   
 
 Given above arguments, I am reverting back to "needs review" status.
@@ -642,7 +632,7 @@ Given above arguments, I am reverting back to "needs review" status.
 archive/issue_comments_055513.json:
 ```json
 {
-    "body": "Replying to [comment:11 gmhossain]:\n>   (2) I don't think even D[] derivative output is much better in this regard, specially if you implement and allow substitution of f(y,y). For example. consider the substitution: f(y,y) = y in \"D[0](f)(y, y) + D[1](f)(y, y)\", then you will get the same wrong answer from D[] as from \"diff\".\n\nThis substitution doesn't make sense mathematically. D[0](f)(y,y) doesn't contain f(y,y), there is nothing to substitute.\n\nBill Page had answered this point earlier:\n\nhttp://groups.google.com/group/sage-devel/msg/e6ded8f5e28a5aab\n\nThis message by him in the same thread might be more helpful:\n\nhttp://groups.google.com/group/sage-devel/msg/98cc070640578f0c\n\n\nNote that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.",
+    "body": "Replying to [comment:11 gmhossain]:\n>   (2) I don't think even D[] derivative output is much better in this regard, specially if you implement and allow substitution of f(y,y). For example. consider the substitution: f(y,y) = y in \"D[0](f)(y, y) + D[1](f)(y, y)\", then you will get the same wrong answer from D[] as from \"diff\".\n\n\nThis substitution doesn't make sense mathematically. D[0](f)(y,y) doesn't contain f(y,y), there is nothing to substitute.\n\nBill Page had answered this point earlier:\n\nhttp://groups.google.com/group/sage-devel/msg/e6ded8f5e28a5aab\n\nThis message by him in the same thread might be more helpful:\n\nhttp://groups.google.com/group/sage-devel/msg/98cc070640578f0c\n\n\nNote that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.",
     "created_at": "2009-09-06T21:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -653,6 +643,7 @@ archive/issue_comments_055513.json:
 
 Replying to [comment:11 gmhossain]:
 >   (2) I don't think even D[] derivative output is much better in this regard, specially if you implement and allow substitution of f(y,y). For example. consider the substitution: f(y,y) = y in "D[0](f)(y, y) + D[1](f)(y, y)", then you will get the same wrong answer from D[] as from "diff".
+
 
 This substitution doesn't make sense mathematically. D[0](f)(y,y) doesn't contain f(y,y), there is nothing to substitute.
 
@@ -674,7 +665,7 @@ Note that with these patches, the result of `f(y,y).diff(y)` is twice that of th
 archive/issue_comments_055514.json:
 ```json
 {
-    "body": "Replying to [comment:12 burcin]:\n> Replying to [comment:11 gmhossain]:\n>  For example. consider the substitution: f(y,y) = y \n> \n> This substitution doesn't make sense mathematically.\n\nHmm, if you bring mathematical sense into argument then does it\nmake mathematical sense asking for applying chain rule at the\nfirst place for this case?\n\n> Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.\n\nThis is not accurate. \n\nAbove will happen only when an user wants to apply chain rule by explicitly setting \ndiff_derivative_level to \"2\" or more and certainly NOT in default diff level of \"1\". \nIf some user wants to use some setting that are not default then its reasonable to\nexpect users to read the documentation to be aware of the assumptions associated with\nthe settings.",
+    "body": "Replying to [comment:12 burcin]:\n> Replying to [comment:11 gmhossain]:\n>  For example. consider the substitution: f(y,y) = y \n> \n> This substitution doesn't make sense mathematically.\n\n\nHmm, if you bring mathematical sense into argument then does it\nmake mathematical sense asking for applying chain rule at the\nfirst place for this case?\n\n> Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.\n\n\nThis is not accurate. \n\nAbove will happen only when an user wants to apply chain rule by explicitly setting \ndiff_derivative_level to \"2\" or more and certainly NOT in default diff level of \"1\". \nIf some user wants to use some setting that are not default then its reasonable to\nexpect users to read the documentation to be aware of the assumptions associated with\nthe settings.",
     "created_at": "2009-09-06T22:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -689,11 +680,13 @@ Replying to [comment:12 burcin]:
 > 
 > This substitution doesn't make sense mathematically.
 
+
 Hmm, if you bring mathematical sense into argument then does it
 make mathematical sense asking for applying chain rule at the
 first place for this case?
 
 > Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.
+
 
 This is not accurate. 
 
@@ -710,7 +703,7 @@ the settings.
 archive/issue_comments_055515.json:
 ```json
 {
-    "body": "Replying to [comment:13 gmhossain]:\n> Replying to [comment:12 burcin]:\n> > Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.\n> \n> This is not accurate. \n> \n> Above will happen only when an user wants to apply chain rule by explicitly setting \n> diff_derivative_level to \"2\" or more and certainly NOT in default diff level of \"1\". \n> If some user wants to use some setting that are not default then its reasonable to\n> expect users to read the documentation to be aware of the assumptions associated with\n> the settings.\n\nSo you agree that setting this level to 2 gives wrong results. In comment:10, I tried to say that this option that gives wrong results should be removed.\n\nWe can then merge this *inert* derivative with the global `diff` command by adding a keyword option `hold`. E.g.,\n\n\n```\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\nsage: f(y,y).diff(y,1,hold=True)\ndiff(f(y, y), y, 1)\n```\n",
+    "body": "Replying to [comment:13 gmhossain]:\n> Replying to [comment:12 burcin]:\n> > Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.\n\n> \n> This is not accurate. \n> \n> Above will happen only when an user wants to apply chain rule by explicitly setting \n> diff_derivative_level to \"2\" or more and certainly NOT in default diff level of \"1\". \n> If some user wants to use some setting that are not default then its reasonable to\n> expect users to read the documentation to be aware of the assumptions associated with\n> the settings.\n\n\nSo you agree that setting this level to 2 gives wrong results. In comment:10, I tried to say that this option that gives wrong results should be removed.\n\nWe can then merge this *inert* derivative with the global `diff` command by adding a keyword option `hold`. E.g.,\n\n```\nsage: f(y,y).diff(y,1)\nD[0](f)(y, y) + D[1](f)(y, y)\nsage: f(y,y).diff(y,1,hold=True)\ndiff(f(y, y), y, 1)\n```",
     "created_at": "2009-09-06T23:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -722,6 +715,7 @@ archive/issue_comments_055515.json:
 Replying to [comment:13 gmhossain]:
 > Replying to [comment:12 burcin]:
 > > Note that with these patches, the result of `f(y,y).diff(y)` is twice that of the current implementation.
+
 > 
 > This is not accurate. 
 > 
@@ -731,10 +725,10 @@ Replying to [comment:13 gmhossain]:
 > expect users to read the documentation to be aware of the assumptions associated with
 > the settings.
 
+
 So you agree that setting this level to 2 gives wrong results. In comment:10, I tried to say that this option that gives wrong results should be removed.
 
 We can then merge this *inert* derivative with the global `diff` command by adding a keyword option `hold`. E.g.,
-
 
 ```
 sage: f(y,y).diff(y,1)
@@ -745,13 +739,12 @@ diff(f(y, y), y, 1)
 
 
 
-
 ---
 
 archive/issue_comments_055516.json:
 ```json
 {
-    "body": "Replying to [comment:14 burcin]:\n>\n> So you agree that setting this level to 2 gives wrong results. \n\nYes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.\n\nI have been working on a patch that will check the arguments of the function while applying chain\nrule and can warn/raise appropriate errors. However, I am planning to do this in next \nrevision and after having some feedbacks from its users.\n   \n> We can then merge this *inert* derivative with the global `diff` command by \n> adding a keyword option `hold`. E.g.,\n\nSure. However, it would be premature to merge this with global \"diff\" now, given its a \nnew implementation and there could be issue which are not yet known. So I would prefer \nto wait couple of release cycles before considering such a move.",
+    "body": "Replying to [comment:14 burcin]:\n>\n> So you agree that setting this level to 2 gives wrong results. \n\n\nYes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.\n\nI have been working on a patch that will check the arguments of the function while applying chain\nrule and can warn/raise appropriate errors. However, I am planning to do this in next \nrevision and after having some feedbacks from its users.\n   \n> We can then merge this *inert* derivative with the global `diff` command by \n> adding a keyword option `hold`. E.g.,\n\n\nSure. However, it would be premature to merge this with global \"diff\" now, given its a \nnew implementation and there could be issue which are not yet known. So I would prefer \nto wait couple of release cycles before considering such a move.",
     "created_at": "2009-09-07T03:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -764,6 +757,7 @@ Replying to [comment:14 burcin]:
 >
 > So you agree that setting this level to 2 gives wrong results. 
 
+
 Yes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.
 
 I have been working on a patch that will check the arguments of the function while applying chain
@@ -772,6 +766,7 @@ revision and after having some feedbacks from its users.
    
 > We can then merge this *inert* derivative with the global `diff` command by 
 > adding a keyword option `hold`. E.g.,
+
 
 Sure. However, it would be premature to merge this with global "diff" now, given its a 
 new implementation and there could be issue which are not yet known. So I would prefer 
@@ -784,7 +779,7 @@ to wait couple of release cycles before considering such a move.
 archive/issue_comments_055517.json:
 ```json
 {
-    "body": "Replying to [comment:15 gmhossain]:\n> Replying to [comment:14 burcin]:\n> >\n> > So you agree that setting this level to 2 gives wrong results. \n> \n> Yes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.\n\nWhat do you think is \"mathematically dubious\"?\n\nUsing the notation and definitions for derivatives and partial derivatives from here respectively:\n\nhttp://books.google.at/books?id=e54cqeAmf4QC&pg=PA267#v=onepage\n\nhttp://books.google.at/books?id=e54cqeAmf4QC&pg=PA495#v=onepage\n\nLet U be an open subset of the complex numbers, f: UxU -> C, y in U. Then by Proposition 3.5 here\n\nhttp://books.google.at/books?id=LzhkCF9ZsUgC&&pg=PA10#v=onepage\n\nwe have\n\n\\frac{df}{dy} (y,y) = D_1 f(y, y) + D_2 f(y, y).\n\nNote that on the left hand side there is a *total* derivative.\n\nIn the current Sage syntax, \"diff\" denotes a total derivative, and \"D\" denotes a partial derivative. The statement above translates to the Sage notation as:\n\ndiff(f(y,y), y) = D[0](f)(y,y) + D[1](f)(y,y)\n\nWhich you can also calculate by:\n\n\n```\nsage: diff(f(y,y),y)\nD[0](f)(y, y) + D[1](f)(y, y)\n```\n\n\n----\n\nWith your patch we get:\n\n\n```\nsage: set_diff_derivative_level(2)\nsage: diff(f(y,y),y)\n2*diff(f(y, y), y, 1)\nsage: latex(diff(f(y,y),y))\n2 \\, {\\frac{\\partial}{\\partial y}f\\left(y, y\\right)}\n```\n\n\nCan you explain what `diff(f(y,y), y, 1)` or in typeset form `\\frac{\\partial}{\\partial y}f(y,y)` means?\n\n----\n\n> I have been working on a patch that will check the arguments of the function while applying chain\n> rule and can warn/raise appropriate errors. However, I am planning to do this in next \n> revision and after having some feedbacks from its users.\n\nAre you saying that we should merge this problematic version, and you'll fix things later? This is not how the development process works. We can review and merge the known good parts from your patch, and you can submit the rest in a different ticket later. \n\n\n> > We can then merge this *inert* derivative with the global `diff` command by \n> > adding a keyword option `hold`. E.g.,\n> \n> Sure. However, it would be premature to merge this with global \"diff\" now, given its a \n> new implementation and there could be issue which are not yet known. So I would prefer \n> to wait couple of release cycles before considering such a move. \n\nShould it really be merged into Sage if it's so premature? The point of the review to make sure that it doesn't have these problems.\n\nI don't have any more time to waste on this. I suggest you either \n* read the references I linked to in comment:10, and explain clearly what you do to remedy the problems discussed there or,\n* remove the problematic parts from your patch.",
+    "body": "Replying to [comment:15 gmhossain]:\n> Replying to [comment:14 burcin]:\n> >\n> > So you agree that setting this level to 2 gives wrong results. \n\n> \n> Yes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.\n\n\nWhat do you think is \"mathematically dubious\"?\n\nUsing the notation and definitions for derivatives and partial derivatives from here respectively:\n\nhttp://books.google.at/books?id=e54cqeAmf4QC&pg=PA267#v=onepage\n\nhttp://books.google.at/books?id=e54cqeAmf4QC&pg=PA495#v=onepage\n\nLet U be an open subset of the complex numbers, f: UxU -> C, y in U. Then by Proposition 3.5 here\n\nhttp://books.google.at/books?id=LzhkCF9ZsUgC&&pg=PA10#v=onepage\n\nwe have\n\n\\frac{df}{dy} (y,y) = D_1 f(y, y) + D_2 f(y, y).\n\nNote that on the left hand side there is a *total* derivative.\n\nIn the current Sage syntax, \"diff\" denotes a total derivative, and \"D\" denotes a partial derivative. The statement above translates to the Sage notation as:\n\ndiff(f(y,y), y) = D[0](f)(y,y) + D[1](f)(y,y)\n\nWhich you can also calculate by:\n\n```\nsage: diff(f(y,y),y)\nD[0](f)(y, y) + D[1](f)(y, y)\n```\n\n---\n\nWith your patch we get:\n\n```\nsage: set_diff_derivative_level(2)\nsage: diff(f(y,y),y)\n2*diff(f(y, y), y, 1)\nsage: latex(diff(f(y,y),y))\n2 \\, {\\frac{\\partial}{\\partial y}f\\left(y, y\\right)}\n```\n\nCan you explain what `diff(f(y,y), y, 1)` or in typeset form `\\frac{\\partial}{\\partial y}f(y,y)` means?\n\n---\n\n> I have been working on a patch that will check the arguments of the function while applying chain\n> rule and can warn/raise appropriate errors. However, I am planning to do this in next \n> revision and after having some feedbacks from its users.\n\n\nAre you saying that we should merge this problematic version, and you'll fix things later? This is not how the development process works. We can review and merge the known good parts from your patch, and you can submit the rest in a different ticket later. \n\n\n> > We can then merge this *inert* derivative with the global `diff` command by \n> > adding a keyword option `hold`. E.g.,\n\n> \n> Sure. However, it would be premature to merge this with global \"diff\" now, given its a \n> new implementation and there could be issue which are not yet known. So I would prefer \n> to wait couple of release cycles before considering such a move. \n\n\nShould it really be merged into Sage if it's so premature? The point of the review to make sure that it doesn't have these problems.\n\nI don't have any more time to waste on this. I suggest you either \n* read the references I linked to in comment:10, and explain clearly what you do to remedy the problems discussed there or,\n* remove the problematic parts from your patch.",
     "created_at": "2009-09-08T08:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -797,8 +792,10 @@ Replying to [comment:15 gmhossain]:
 > Replying to [comment:14 burcin]:
 > >
 > > So you agree that setting this level to 2 gives wrong results. 
+
 > 
 > Yes, but ONLY for mathematically dubious inputs. Please don't generalize, it doesn't help anyone.
+
 
 What do you think is "mathematically dubious"?
 
@@ -824,17 +821,14 @@ diff(f(y,y), y) = D[0](f)(y,y) + D[1](f)(y,y)
 
 Which you can also calculate by:
 
-
 ```
 sage: diff(f(y,y),y)
 D[0](f)(y, y) + D[1](f)(y, y)
 ```
 
-
-----
+---
 
 With your patch we get:
-
 
 ```
 sage: set_diff_derivative_level(2)
@@ -844,24 +838,26 @@ sage: latex(diff(f(y,y),y))
 2 \, {\frac{\partial}{\partial y}f\left(y, y\right)}
 ```
 
-
 Can you explain what `diff(f(y,y), y, 1)` or in typeset form `\frac{\partial}{\partial y}f(y,y)` means?
 
-----
+---
 
 > I have been working on a patch that will check the arguments of the function while applying chain
 > rule and can warn/raise appropriate errors. However, I am planning to do this in next 
 > revision and after having some feedbacks from its users.
+
 
 Are you saying that we should merge this problematic version, and you'll fix things later? This is not how the development process works. We can review and merge the known good parts from your patch, and you can submit the rest in a different ticket later. 
 
 
 > > We can then merge this *inert* derivative with the global `diff` command by 
 > > adding a keyword option `hold`. E.g.,
+
 > 
 > Sure. However, it would be premature to merge this with global "diff" now, given its a 
 > new implementation and there could be issue which are not yet known. So I would prefer 
 > to wait couple of release cycles before considering such a move. 
+
 
 Should it really be merged into Sage if it's so premature? The point of the review to make sure that it doesn't have these problems.
 
@@ -931,7 +927,7 @@ archive/issue_events_015929.json:
 archive/issue_comments_055520.json:
 ```json
 {
-    "body": "We have this now. Close?\n\n```\nsage: var('x,y,z')                                                                                                          \n(x, y, z)\nsage: function('f')                                                                                                         \nf\nsage: f(x,y,z).diff(x,z,y,z)                                                                                                \ndiff(f(x, y, z), x, y, z, z)\n```\n",
+    "body": "We have this now. Close?\n\n```\nsage: var('x,y,z')                                                                                                          \n(x, y, z)\nsage: function('f')                                                                                                         \nf\nsage: f(x,y,z).diff(x,z,y,z)                                                                                                \ndiff(f(x, y, z), x, y, z, z)\n```",
     "created_at": "2021-09-23T17:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -950,7 +946,6 @@ f
 sage: f(x,y,z).diff(x,z,y,z)                                                                                                
 diff(f(x, y, z), x, y, z, z)
 ```
-
 
 
 
@@ -977,7 +972,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_055522.json:
 ```json
 {
-    "body": "It's hard to tell exactly the scope of this ticket, but from the thread, it seems like one of the primary things wanted was a way to represent \n\n```\nsage: f(g(x)).diff(x)\ndiff(f(g(x)), x)\n```\n\ninstead of what's in Sage now:\n\n```\nsage: f(g(x)).diff(x)\nD[0](f)(g(x))*diff(g(x), x)\n```\n",
+    "body": "It's hard to tell exactly the scope of this ticket, but from the thread, it seems like one of the primary things wanted was a way to represent \n\n```\nsage: f(g(x)).diff(x)\ndiff(f(g(x)), x)\n```\ninstead of what's in Sage now:\n\n```\nsage: f(g(x)).diff(x)\nD[0](f)(g(x))*diff(g(x), x)\n```",
     "created_at": "2021-09-23T17:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
@@ -992,14 +987,12 @@ It's hard to tell exactly the scope of this ticket, but from the thread, it seem
 sage: f(g(x)).diff(x)
 diff(f(g(x)), x)
 ```
-
 instead of what's in Sage now:
 
 ```
 sage: f(g(x)).diff(x)
 D[0](f)(g(x))*diff(g(x), x)
 ```
-
 
 
 

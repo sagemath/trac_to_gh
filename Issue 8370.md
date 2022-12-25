@@ -112,7 +112,7 @@ Thank you.
 archive/issue_comments_074695.json:
 ```json
 {
-    "body": "Never mind, I just found out.\n\n\n```\nsage -docbuild fr/tutorial html\n```\n",
+    "body": "Never mind, I just found out.\n\n```\nsage -docbuild fr/tutorial html\n```",
     "created_at": "2010-03-06T10:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -123,11 +123,9 @@ archive/issue_comments_074695.json:
 
 Never mind, I just found out.
 
-
 ```
 sage -docbuild fr/tutorial html
 ```
-
 
 
 
@@ -185,7 +183,7 @@ That's pretty much it. As soon as you confirm my changes, I'll be ready to set t
 archive/issue_comments_074698.json:
 ```json
 {
-    "body": "Sorry for the delay.\n\nReplying to [comment:2 abmasse]:\n> This is a good idea. If I'm alright, this patch is adding a missing section to the French tutorial that is mainly a translation of the same section (already present) in English ?\n\nIndeed.\n\nReplying to [comment:5 abmasse]:\n> I reviewed your patch. Everything is ok, I made a few changes which are not errors, but mainly suggestions, so if you don't agree with any of it, feel very free to remove them or tell me to remove them. To summarize, I did the following modifications.\n> \n> 1. Since the tabbing is four spaces for Python code in general (not mandatory, but encouraged), I reformatted your examples so that they all start at distance four from the beginning of the lines.\n\nHere I just stuck to the style of the English version.  But you are right that (most?) other sections of the original tutorial use four spaces.\n\n> 2. For the sage blocks illustrating your examples, you always put `::` alone on a line, while you could put it at the end of the preceding text explaining the example. The effect is that the sentence ends with `:` and the block example follows. This is not a mistake, but this is what I've seen in other patches.\n\nSame here, except that the format with `::` on its own line seems to be used consistently in the tutorial (in both languages).  I don't think it's a big deal anyway.\n\nHowever, in some cases, you put a space between the `::` and the preceding word, so that there is no colon (and no period either) in the output.  Was that deliberate?  \n\n> 3. I did some rephrasing. These are only suggestions, if you don't agree with all or some of it, let me know.\n> \n> 4. You forgot to put the word \"plot\" between backticks in one place. I corrected that.\n\nSeems fine to me. Btw, I also checked that the our patches apply correctly on top of 4.3.4 + patches from #8242.",
+    "body": "Sorry for the delay.\n\nReplying to [comment:2 abmasse]:\n> This is a good idea. If I'm alright, this patch is adding a missing section to the French tutorial that is mainly a translation of the same section (already present) in English ?\n\n\nIndeed.\n\nReplying to [comment:5 abmasse]:\n> I reviewed your patch. Everything is ok, I made a few changes which are not errors, but mainly suggestions, so if you don't agree with any of it, feel very free to remove them or tell me to remove them. To summarize, I did the following modifications.\n> \n> 1. Since the tabbing is four spaces for Python code in general (not mandatory, but encouraged), I reformatted your examples so that they all start at distance four from the beginning of the lines.\n\n\nHere I just stuck to the style of the English version.  But you are right that (most?) other sections of the original tutorial use four spaces.\n\n> 2. For the sage blocks illustrating your examples, you always put `::` alone on a line, while you could put it at the end of the preceding text explaining the example. The effect is that the sentence ends with `:` and the block example follows. This is not a mistake, but this is what I've seen in other patches.\n\n\nSame here, except that the format with `::` on its own line seems to be used consistently in the tutorial (in both languages).  I don't think it's a big deal anyway.\n\nHowever, in some cases, you put a space between the `::` and the preceding word, so that there is no colon (and no period either) in the output.  Was that deliberate?  \n\n> 3. I did some rephrasing. These are only suggestions, if you don't agree with all or some of it, let me know.\n> \n> 4. You forgot to put the word \"plot\" between backticks in one place. I corrected that.\n\n\nSeems fine to me. Btw, I also checked that the our patches apply correctly on top of 4.3.4 + patches from #8242.",
     "created_at": "2010-03-26T21:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -199,6 +197,7 @@ Sorry for the delay.
 Replying to [comment:2 abmasse]:
 > This is a good idea. If I'm alright, this patch is adding a missing section to the French tutorial that is mainly a translation of the same section (already present) in English ?
 
+
 Indeed.
 
 Replying to [comment:5 abmasse]:
@@ -206,9 +205,11 @@ Replying to [comment:5 abmasse]:
 > 
 > 1. Since the tabbing is four spaces for Python code in general (not mandatory, but encouraged), I reformatted your examples so that they all start at distance four from the beginning of the lines.
 
+
 Here I just stuck to the style of the English version.  But you are right that (most?) other sections of the original tutorial use four spaces.
 
 > 2. For the sage blocks illustrating your examples, you always put `::` alone on a line, while you could put it at the end of the preceding text explaining the example. The effect is that the sentence ends with `:` and the block example follows. This is not a mistake, but this is what I've seen in other patches.
+
 
 Same here, except that the format with `::` on its own line seems to be used consistently in the tutorial (in both languages).  I don't think it's a big deal anyway.
 
@@ -217,6 +218,7 @@ However, in some cases, you put a space between the `::` and the preceding word,
 > 3. I did some rephrasing. These are only suggestions, if you don't agree with all or some of it, let me know.
 > 
 > 4. You forgot to put the word "plot" between backticks in one place. I corrected that.
+
 
 Seems fine to me. Btw, I also checked that the our patches apply correctly on top of 4.3.4 + patches from #8242.
 
@@ -293,7 +295,7 @@ Nathann
 archive/issue_comments_074702.json:
 ```json
 {
-    "body": "Attachment [trac_8370_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_fixes.patch) by abmasse created at 2010-04-15 20:38:22\n\nHello, everyone !\n\nI'm very sorry for the delay... I just moved back to Montreal and haven't had much time lately to work on Sage patches. I looked once again at the three patches, applied them, checked the documentation generated by Sage and run `sage -t` on the `tour_functions.rst` file. Everything looked fine and all tests passed. Therefore, I give this patch a positive review.\n\nFor the release manager, please apply the patches in the following order\n\n\n```\ntrac_8370_tour_functions_french.patch\ntrac_8370_review-abm.patch\ntrac_8370_fixes.patch\n```\n\n\nand disregard `trac_8370_merged+doctest_fixes.patch`.\n\nThank you for your patience!",
+    "body": "Attachment [trac_8370_fixes.patch](tarball://root/attachments/some-uuid/ticket8370/trac_8370_fixes.patch) by abmasse created at 2010-04-15 20:38:22\n\nHello, everyone !\n\nI'm very sorry for the delay... I just moved back to Montreal and haven't had much time lately to work on Sage patches. I looked once again at the three patches, applied them, checked the documentation generated by Sage and run `sage -t` on the `tour_functions.rst` file. Everything looked fine and all tests passed. Therefore, I give this patch a positive review.\n\nFor the release manager, please apply the patches in the following order\n\n```\ntrac_8370_tour_functions_french.patch\ntrac_8370_review-abm.patch\ntrac_8370_fixes.patch\n```\n\nand disregard `trac_8370_merged+doctest_fixes.patch`.\n\nThank you for your patience!",
     "created_at": "2010-04-15T20:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8370",
     "type": "issue_comment",
@@ -310,13 +312,11 @@ I'm very sorry for the delay... I just moved back to Montreal and haven't had mu
 
 For the release manager, please apply the patches in the following order
 
-
 ```
 trac_8370_tour_functions_french.patch
 trac_8370_review-abm.patch
 trac_8370_fixes.patch
 ```
-
 
 and disregard `trac_8370_merged+doctest_fixes.patch`.
 

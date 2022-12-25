@@ -58,7 +58,7 @@ The patch looks good, applies cleanly and doctests pass. However, do we really n
 archive/issue_comments_057279.json:
 ```json
 {
-    "body": "Replying to [comment:1 malb]:\n> The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?\n\nI assume you are referring to the hyperelliptic curves part?  Yes, I think so.  Otherwise, some doctests fail.  I haven't tried to fully understand the mathematics of that part, but it seems to depend on the assumption gcd(a,0) == a.\n\nSebastian",
+    "body": "Replying to [comment:1 malb]:\n> The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?\n\n\nI assume you are referring to the hyperelliptic curves part?  Yes, I think so.  Otherwise, some doctests fail.  I haven't tried to fully understand the mathematics of that part, but it seems to depend on the assumption gcd(a,0) == a.\n\nSebastian",
     "created_at": "2009-09-19T19:25:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
@@ -69,6 +69,7 @@ archive/issue_comments_057279.json:
 
 Replying to [comment:1 malb]:
 > The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?
+
 
 I assume you are referring to the hyperelliptic curves part?  Yes, I think so.  Otherwise, some doctests fail.  I haven't tried to fully understand the mathematics of that part, but it seems to depend on the assumption gcd(a,0) == a.
 

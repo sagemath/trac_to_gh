@@ -3,7 +3,7 @@
 archive/issues_003002.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nA lot of configure scripts seem to check for\nfortran, even if they don't use it. It appears the relevant\nenvironment variables are F77 and FFLAGS. Anyway, the variable\nSAGE_FORTRAN seems to be honored fine for the packages that actually\nneed fortran.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3002\n\n",
+    "body": "Assignee: mabshoff\n\n```\nA lot of configure scripts seem to check for\nfortran, even if they don't use it. It appears the relevant\nenvironment variables are F77 and FFLAGS. Anyway, the variable\nSAGE_FORTRAN seems to be honored fine for the packages that actually\nneed fortran.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3002\n\n",
     "created_at": "2008-04-22T16:52:04Z",
     "labels": [
         "component: spkg-check",
@@ -18,7 +18,6 @@ archive/issues_003002.json:
 ```
 Assignee: mabshoff
 
-
 ```
 A lot of configure scripts seem to check for
 fortran, even if they don't use it. It appears the relevant
@@ -26,7 +25,6 @@ environment variables are F77 and FFLAGS. Anyway, the variable
 SAGE_FORTRAN seems to be honored fine for the packages that actually
 need fortran.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3002
 

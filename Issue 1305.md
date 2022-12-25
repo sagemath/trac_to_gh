@@ -3,7 +3,7 @@
 archive/issues_001305.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nOriginal from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.\n\n\n```\n>>> (d) Bipartite graphs: We will need to deal with some incidence structures,\n>>> and these can be encoded as bipartite graphs. We want to get the point\n>>> graphs and line graphs of incidence structures. If we have a procedure to\n>>> convert a graph G to an incidence structure of vertices and edges, then\n>>> the line graph of the incidence structure is the line graph of G.\n>> Do we have a way to represent and work with incidence structures in Sage\n>> natively?\n> Graphs and codes are implemented, but I don't think designs are.\n> Ultimately, there should be an incidence structure class which they\n> inherit from etc etc etc. Definitely a wishlist ticket, and likely a\n> good coding sprint idea for Sage Days 7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1305\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nOriginal from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.\n\n```\n>>> (d) Bipartite graphs: We will need to deal with some incidence structures,\n>>> and these can be encoded as bipartite graphs. We want to get the point\n>>> graphs and line graphs of incidence structures. If we have a procedure to\n>>> convert a graph G to an incidence structure of vertices and edges, then\n>>> the line graph of the incidence structure is the line graph of G.\n>> Do we have a way to represent and work with incidence structures in Sage\n>> natively?\n> Graphs and codes are implemented, but I don't think designs are.\n> Ultimately, there should be an incidence structure class which they\n> inherit from etc etc etc. Definitely a wishlist ticket, and likely a\n> good coding sprint idea for Sage Days 7.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1305\n\n",
     "created_at": "2007-11-28T19:50:39Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +21,6 @@ CC:  sage-combinat
 
 Original from Chris Godsil's wishlist, with reply by Jason Grout and second reply by Robert Miller.
 
-
 ```
 >>> (d) Bipartite graphs: We will need to deal with some incidence structures,
 >>> and these can be encoded as bipartite graphs. We want to get the point
@@ -36,7 +35,6 @@ Original from Chris Godsil's wishlist, with reply by Jason Grout and second repl
 > good coding sprint idea for Sage Days 7.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1305
 
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1305
 archive/issue_comments_008187.json:
 ```json
 {
-    "body": "Also from Chris Godsil (hrm, with :\n\n\n```\n>>> It would be very useful to be able to form incidence structures from\n>>> differ-\n>>> ence sets. Here the input would be a group G and some subsets S_1 , . .\n>>> . , S_m ;\n>>> the point set of the incidence structure would be G, and the blocks would\n>>> be the translates S^g_i for i = 1, . . . , m and g in G. Even just the\n>>> case G = Z^d_m\n>>> would be a good start.\n```\n",
+    "body": "Also from Chris Godsil (hrm, with :\n\n```\n>>> It would be very useful to be able to form incidence structures from\n>>> differ-\n>>> ence sets. Here the input would be a group G and some subsets S_1 , . .\n>>> . , S_m ;\n>>> the point set of the incidence structure would be G, and the blocks would\n>>> be the translates S^g_i for i = 1, . . . , m and g in G. Even just the\n>>> case G = Z^d_m\n>>> would be a good start.\n```",
     "created_at": "2007-11-28T20:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1305",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ archive/issue_comments_008187.json:
 ```
 
 Also from Chris Godsil (hrm, with :
-
 
 ```
 >>> It would be very useful to be able to form incidence structures from
@@ -70,7 +67,6 @@ Also from Chris Godsil (hrm, with :
 >>> case G = Z^d_m
 >>> would be a good start.
 ```
-
 
 
 

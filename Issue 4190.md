@@ -3,7 +3,7 @@
 archive/issues_004190.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\n\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
     "created_at": "2008-09-24T11:21:35Z",
     "labels": [
         "component: number theory",
@@ -28,7 +28,6 @@ sage: w = OK.ring_generators()[0]
 sage: 1/w in OK
 True
 ```
-
 I tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.
 
 I discovered this when trying to find out whether one element of OK was divisible by another -- "x.divides(y)" raises an error, and "y/x in OK" always returns True, which isn't very helpful; the best I could find was "y in x*OK" which seems to give the right results.
@@ -162,7 +161,7 @@ Changing status from new to assigned.
 archive/issue_comments_030342.json:
 ```json
 {
-    "body": "Good work. Note that as of the latest alpha, both cdef and normal classes use _div_. Also, given the way these two are implemented, you could just reset the _parent slot instead of using the `__call__` method which is probably eating up a large chunk of the time. \n\nAs for your question about whether or not it belongs in the fraction field, the convention is to have division return elements of the fraction field, so go ahead and remove that commented code. \n\n\n```\nsage: parent(4/2)\nRational Field\n```\n",
+    "body": "Good work. Note that as of the latest alpha, both cdef and normal classes use _div_. Also, given the way these two are implemented, you could just reset the _parent slot instead of using the `__call__` method which is probably eating up a large chunk of the time. \n\nAs for your question about whether or not it belongs in the fraction field, the convention is to have division return elements of the fraction field, so go ahead and remove that commented code. \n\n```\nsage: parent(4/2)\nRational Field\n```",
     "created_at": "2008-09-25T11:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -175,12 +174,10 @@ Good work. Note that as of the latest alpha, both cdef and normal classes use _d
 
 As for your question about whether or not it belongs in the fraction field, the convention is to have division return elements of the fraction field, so go ahead and remove that commented code. 
 
-
 ```
 sage: parent(4/2)
 Rational Field
 ```
-
 
 
 
@@ -209,7 +206,7 @@ OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I
 archive/issue_comments_030344.json:
 ```json
 {
-    "body": "Replying to [comment:6 davidloeffler]:\n\nHi David,\n\n> OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to \"needs work\" to reflect this.\n\nThere are usually development binaries for sage.math which you just need to unpack on that machine and you are ready to go to do development work in an instant. Ironically there is no 3.1.3.alpha1 binary at the moment since I am valgrinding the release for the next day or so and I cannot bdist since that will impact the running jobs. But there will be an alpha2 binary. If you need a sage.math account just ping me by email.\n\n> (PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)\n\nThere is no such thing, even as it has been requested a lot. One thing to do is to unpack the new source tarball and to move the new spkgs into $SAGE_ROOT/spkg/standard and then invoke make. That will pretty much do an in place upgrade.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 davidloeffler]:\n\nHi David,\n\n> OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to \"needs work\" to reflect this.\n\n\nThere are usually development binaries for sage.math which you just need to unpack on that machine and you are ready to go to do development work in an instant. Ironically there is no 3.1.3.alpha1 binary at the moment since I am valgrinding the release for the next day or so and I cannot bdist since that will impact the running jobs. But there will be an alpha2 binary. If you need a sage.math account just ping me by email.\n\n> (PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)\n\n\nThere is no such thing, even as it has been requested a lot. One thing to do is to unpack the new source tarball and to move the new spkgs into $SAGE_ROOT/spkg/standard and then invoke make. That will pretty much do an in place upgrade.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T16:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -224,9 +221,11 @@ Hi David,
 
 > OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to "needs work" to reflect this.
 
+
 There are usually development binaries for sage.math which you just need to unpack on that machine and you are ready to go to do development work in an instant. Ironically there is no 3.1.3.alpha1 binary at the moment since I am valgrinding the release for the next day or so and I cannot bdist since that will impact the running jobs. But there will be an alpha2 binary. If you need a sage.math account just ping me by email.
 
 > (PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)
+
 
 There is no such thing, even as it has been requested a lot. One thing to do is to unpack the new source tarball and to move the new spkgs into $SAGE_ROOT/spkg/standard and then invoke make. That will pretty much do an in place upgrade.
 
@@ -279,7 +278,7 @@ I've uploaded a new patch, taking into account the changes to the coercion model
 archive/issue_comments_030347.json:
 ```json
 {
-    "body": "Question: is it necessary to have three versions of this?   Would it not be enough to have one and the others would work just by inheritance?\n\nApart from that, I noticed that the doctest has a duplicate line (repeated 3 times!).\n\nI tried to find out what code is run when you say \"a in OK\" but I have absolutely no idea.  I could not find any `__contains__` function which seemed to be relevant.  Does this work via some coercion magic, or by chance, or what have I missed?\n\nThe patch applies fine to 3.2.alpha3.  All tests in number_field/ pass.  You should add this doctest (from the original post):\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nFalse\n```\n",
+    "body": "Question: is it necessary to have three versions of this?   Would it not be enough to have one and the others would work just by inheritance?\n\nApart from that, I noticed that the doctest has a duplicate line (repeated 3 times!).\n\nI tried to find out what code is run when you say \"a in OK\" but I have absolutely no idea.  I could not find any `__contains__` function which seemed to be relevant.  Does this work via some coercion magic, or by chance, or what have I missed?\n\nThe patch applies fine to 3.2.alpha3.  All tests in number_field/ pass.  You should add this doctest (from the original post):\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nFalse\n```",
     "created_at": "2008-11-13T13:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -302,7 +301,6 @@ sage: w = OK.ring_generators()[0]
 sage: 1/w in OK
 False
 ```
-
 
 
 
@@ -333,7 +331,7 @@ I am in India at the moment and it is late evening local time; I will get to wor
 archive/issue_comments_030349.json:
 ```json
 {
-    "body": "Replying to [comment:10 davidloeffler]:\n> As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. \n\nOK, too bad.\n\n> \n> As far as I can tell, the \"a in OK\" is calling some very generic code (probably in sage.structure.Parent at a guess) which checks whether or not a.parent() is OK, and if it isn't, attempts to coerce a into OK via OK's __ call __ method, returning False if this fails.\n\nYou are right.  In fact one way to see where this is happening is to try OK(1/a) (where 1/a is not in OK) and see where the TypeError comes from, in this case order.py, in OK's `__call__` function.\n\n> \n> I am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.\n\nNo hurry.  If you had time to look at #4392, even better!",
+    "body": "Replying to [comment:10 davidloeffler]:\n> As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. \n\n\nOK, too bad.\n\n> \n> As far as I can tell, the \"a in OK\" is calling some very generic code (probably in sage.structure.Parent at a guess) which checks whether or not a.parent() is OK, and if it isn't, attempts to coerce a into OK via OK's __ call __ method, returning False if this fails.\n\n\nYou are right.  In fact one way to see where this is happening is to try OK(1/a) (where 1/a is not in OK) and see where the TypeError comes from, in this case order.py, in OK's `__call__` function.\n\n> \n> I am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.\n\n\nNo hurry.  If you had time to look at #4392, even better!",
     "created_at": "2008-11-13T16:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4190",
     "type": "issue_comment",
@@ -345,15 +343,18 @@ archive/issue_comments_030349.json:
 Replying to [comment:10 davidloeffler]:
 > As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. 
 
+
 OK, too bad.
 
 > 
 > As far as I can tell, the "a in OK" is calling some very generic code (probably in sage.structure.Parent at a guess) which checks whether or not a.parent() is OK, and if it isn't, attempts to coerce a into OK via OK's __ call __ method, returning False if this fails.
 
+
 You are right.  In fact one way to see where this is happening is to try OK(1/a) (where 1/a is not in OK) and see where the TypeError comes from, in this case order.py, in OK's `__call__` function.
 
 > 
 > I am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.
+
 
 No hurry.  If you had time to look at #4392, even better!
 

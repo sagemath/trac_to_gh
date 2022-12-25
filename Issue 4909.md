@@ -67,7 +67,7 @@ Attachment [sage.dsage-final.patch](tarball://root/attachments/some-uuid/ticket4
 archive/issue_comments_037186.json:
 ```json
 {
-    "body": "A little problem:\n\n```\nNote that configuration files will be stored in the  \n    directory \\code{\\$DOT\\_SAGE/dsage}.\n```\n\nIs replaced now by\n\n```\nNote that configuration files will be stored in the directory \n``$DOT \nSage/dsage``. \n```\n \nthe \"_\" must be kept. \n\nOtherwise this is correct. \n\nCheers,\n\nFlorent",
+    "body": "A little problem:\n\n```\nNote that configuration files will be stored in the  \n    directory \\code{\\$DOT\\_SAGE/dsage}.\n```\nIs replaced now by\n\n```\nNote that configuration files will be stored in the directory \n``$DOT \nSage/dsage``. \n``` \nthe \"_\" must be kept. \n\nOtherwise this is correct. \n\nCheers,\n\nFlorent",
     "created_at": "2009-02-24T17:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
@@ -82,15 +82,13 @@ A little problem:
 Note that configuration files will be stored in the  
     directory \code{\$DOT\_SAGE/dsage}.
 ```
-
 Is replaced now by
 
 ```
 Note that configuration files will be stored in the directory 
 ``$DOT 
 Sage/dsage``. 
-```
- 
+``` 
 the "_" must be kept. 
 
 Otherwise this is correct. 

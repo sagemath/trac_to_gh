@@ -95,7 +95,7 @@ Is there a minimal example we can submit that reproduces the problem?
 archive/issue_comments_062587.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Mistaking inner classes for aliased attributes seems likely to be a Sphinx bug that we should report upstream, e.g., to [sphinx-dev](http://groups.google.com/group/sphinx-dev).\n> \n> Is there a minimal example we can submit that reproduces the problem?\n\nI've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed.",
+    "body": "Replying to [comment:3 mpatel]:\n> Mistaking inner classes for aliased attributes seems likely to be a Sphinx bug that we should report upstream, e.g., to [sphinx-dev](http://groups.google.com/group/sphinx-dev).\n> \n> Is there a minimal example we can submit that reproduces the problem?\n\n\nI've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed.",
     "created_at": "2010-02-17T20:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -108,6 +108,7 @@ Replying to [comment:3 mpatel]:
 > Mistaking inner classes for aliased attributes seems likely to be a Sphinx bug that we should report upstream, e.g., to [sphinx-dev](http://groups.google.com/group/sphinx-dev).
 > 
 > Is there a minimal example we can submit that reproduces the problem?
+
 
 I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed.
 
@@ -136,7 +137,7 @@ Patch to experiment the interaction Sphinx/NestedMetaclass
 archive/issue_comments_062589.json:
 ```json
 {
-    "body": "Attachment [trac_7448-nested_class_sphinx_exper-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx_exper-fh.patch) by @hivert created at 2010-02-17 21:21:55\n\n> I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. \n\nMore info on this: to workaround python's nested class pickle bug we put any class which contain a nested class into `NestedMetaclass`. The main purpose of this metaclass is to change the class `__name__` with the help of the function\n`modify_for_nested_pickle`. As a result sphinx has the impression that the class is an alias. Demonstration: if I comment line 112 of nested_class.py\n\n```\ndiff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py\n--- a/sage/misc/nested_class.py\n+++ b/sage/misc/nested_class.py\n@@ -108,7 +108,7 @@ def modify_for_nested_pickle(cls, name_p\n             if v.__name__ == name and v.__module__ == module.__name__ and getattr(module, name, None) is not v:\n                 # OK, probably this is a nested class.\n                 dotted_name = name_prefix + '.' + name\n-                v.__name__ = dotted_name\n+                # v.__name__ = dotted_name\n                 setattr(module, dotted_name, v)\n                 modify_for_nested_pickle(v, dotted_name, module)\n```\n\nThen everything works fine. Any idea to solve this ?",
+    "body": "Attachment [trac_7448-nested_class_sphinx_exper-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx_exper-fh.patch) by @hivert created at 2010-02-17 21:21:55\n\n> I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. \n\n\nMore info on this: to workaround python's nested class pickle bug we put any class which contain a nested class into `NestedMetaclass`. The main purpose of this metaclass is to change the class `__name__` with the help of the function\n`modify_for_nested_pickle`. As a result sphinx has the impression that the class is an alias. Demonstration: if I comment line 112 of nested_class.py\n\n```\ndiff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py\n--- a/sage/misc/nested_class.py\n+++ b/sage/misc/nested_class.py\n@@ -108,7 +108,7 @@ def modify_for_nested_pickle(cls, name_p\n             if v.__name__ == name and v.__module__ == module.__name__ and getattr(module, name, None) is not v:\n                 # OK, probably this is a nested class.\n                 dotted_name = name_prefix + '.' + name\n-                v.__name__ = dotted_name\n+                # v.__name__ = dotted_name\n                 setattr(module, dotted_name, v)\n                 modify_for_nested_pickle(v, dotted_name, module)\n```\nThen everything works fine. Any idea to solve this ?",
     "created_at": "2010-02-17T21:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -148,6 +149,7 @@ archive/issue_comments_062589.json:
 Attachment [trac_7448-nested_class_sphinx_exper-fh.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx_exper-fh.patch) by @hivert created at 2010-02-17 21:21:55
 
 > I've made some experiments. Actually it seems that the problem is a bad interaction between sphinx and the particular metaclass `NestedMetaclass` we have to use to work around the nested class pickling bug of python. If you apply the attached patch, you'll see that `TestParent1` is correctly rendered whereas the other parent are not. I think this is a lead which should be followed. 
+
 
 More info on this: to workaround python's nested class pickle bug we put any class which contain a nested class into `NestedMetaclass`. The main purpose of this metaclass is to change the class `__name__` with the help of the function
 `modify_for_nested_pickle`. As a result sphinx has the impression that the class is an alias. Demonstration: if I comment line 112 of nested_class.py
@@ -165,7 +167,6 @@ diff --git a/sage/misc/nested_class.py b/sage/misc/nested_class.py
                  setattr(module, dotted_name, v)
                  modify_for_nested_pickle(v, dotted_name, module)
 ```
-
 Then everything works fine. Any idea to solve this ?
 
 
@@ -211,7 +212,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_062592.json:
 ```json
 {
-    "body": "This should solve the problem:\nApplying\n\n```\nautodoc.py.patch\n```\n \nto\n\n```\nSphinx-0.6.3-py2.6.egg/sphinx/ext/autodoc.py\n```\n\nand `trac_7448-nested_class_sphinx-fh.patch`\nshould solve the problem.",
+    "body": "This should solve the problem:\nApplying\n\n```\nautodoc.py.patch\n``` \nto\n\n```\nSphinx-0.6.3-py2.6.egg/sphinx/ext/autodoc.py\n```\nand `trac_7448-nested_class_sphinx-fh.patch`\nshould solve the problem.",
     "created_at": "2010-02-17T23:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -225,14 +226,12 @@ Applying
 
 ```
 autodoc.py.patch
-```
- 
+``` 
 to
 
 ```
 Sphinx-0.6.3-py2.6.egg/sphinx/ext/autodoc.py
 ```
-
 and `trac_7448-nested_class_sphinx-fh.patch`
 should solve the problem.
 
@@ -302,7 +301,7 @@ Florent, off to bed :-)
 archive/issue_comments_062596.json:
 ```json
 {
-    "body": "Replying to [comment:9 hivert]:\n> Since I'm patching the sources of sphinx, I probably need something like rebuilding sphinx spkg. Unfortunately, I don't know how to do this. Help welcome ! \n\nHere's a new spkg:\n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p5.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p5.spkg)\n\n(I haven't tested the patch here, just implemented it and built the spkg.  Please check the file autodoc.py to make sure I patched it right.)",
+    "body": "Replying to [comment:9 hivert]:\n> Since I'm patching the sources of sphinx, I probably need something like rebuilding sphinx spkg. Unfortunately, I don't know how to do this. Help welcome ! \n\n\nHere's a new spkg:\n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p5.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p5.spkg)\n\n(I haven't tested the patch here, just implemented it and built the spkg.  Please check the file autodoc.py to make sure I patched it right.)",
     "created_at": "2010-02-18T04:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -313,6 +312,7 @@ archive/issue_comments_062596.json:
 
 Replying to [comment:9 hivert]:
 > Since I'm patching the sources of sphinx, I probably need something like rebuilding sphinx spkg. Unfortunately, I don't know how to do this. Help welcome ! 
+
 
 Here's a new spkg:
 
@@ -345,7 +345,7 @@ To test this, do we need to add sage.misc.nested_class and/or sage.misc.nested_c
 archive/issue_comments_062598.json:
 ```json
 {
-    "body": "Hi John,\n\nReplying to [comment:12 jhpalmieri]:\n> (I haven't tested the patch here, just implemented it and built the spkg. Please check the file autodoc.py to make sure I patched it right.)  \n\nThank for this. Is this normal that the file\n\n```\n./patches/autodoc.py\n```\n\ncontains the modifications, whereas\n\n```\n./src/sphinx/ext/autodoc.py\n```\n\ndoesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. \n\n> To test this, do we need to add sage.misc.nested_class and/or sage.misc.nested_class_test to the reference manual?\n\nNo you don't ! Moreover, sage.misc.nested_class has already been added since #8250 merged in sage-4.3.3.alpha1. If you want to see the result pick a random file with nested class. They are plenty of them in categories, see eg\n\n```\nsage/categories/semigroups.py\n```\n\nwhich has many thing implemented in nested classes. \n\nNote that now that we do see nested classes, we find out that they are plenty of room for improvement in those docs. It will be the purpose of an (or more probably several) other ticket.",
+    "body": "Hi John,\n\nReplying to [comment:12 jhpalmieri]:\n> (I haven't tested the patch here, just implemented it and built the spkg. Please check the file autodoc.py to make sure I patched it right.)  \n\n\nThank for this. Is this normal that the file\n\n```\n./patches/autodoc.py\n```\ncontains the modifications, whereas\n\n```\n./src/sphinx/ext/autodoc.py\n```\ndoesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. \n\n> To test this, do we need to add sage.misc.nested_class and/or sage.misc.nested_class_test to the reference manual?\n\n\nNo you don't ! Moreover, sage.misc.nested_class has already been added since #8250 merged in sage-4.3.3.alpha1. If you want to see the result pick a random file with nested class. They are plenty of them in categories, see eg\n\n```\nsage/categories/semigroups.py\n```\nwhich has many thing implemented in nested classes. \n\nNote that now that we do see nested classes, we find out that they are plenty of room for improvement in those docs. It will be the purpose of an (or more probably several) other ticket.",
     "created_at": "2010-02-18T07:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -359,28 +359,27 @@ Hi John,
 Replying to [comment:12 jhpalmieri]:
 > (I haven't tested the patch here, just implemented it and built the spkg. Please check the file autodoc.py to make sure I patched it right.)  
 
+
 Thank for this. Is this normal that the file
 
 ```
 ./patches/autodoc.py
 ```
-
 contains the modifications, whereas
 
 ```
 ./src/sphinx/ext/autodoc.py
 ```
-
 doesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. 
 
 > To test this, do we need to add sage.misc.nested_class and/or sage.misc.nested_class_test to the reference manual?
+
 
 No you don't ! Moreover, sage.misc.nested_class has already been added since #8250 merged in sage-4.3.3.alpha1. If you want to see the result pick a random file with nested class. They are plenty of them in categories, see eg
 
 ```
 sage/categories/semigroups.py
 ```
-
 which has many thing implemented in nested classes. 
 
 Note that now that we do see nested classes, we find out that they are plenty of room for improvement in those docs. It will be the purpose of an (or more probably several) other ticket.
@@ -414,7 +413,7 @@ Florent will post an improved patch, but not right away. So if there is an emerg
 archive/issue_comments_062600.json:
 ```json
 {
-    "body": "Replying to [comment:13 hivert]:\n> Thank for this. Is this normal that the file ./patches/autodoc.py\n> contains the modifications, whereas\n> ./src/sphinx/ext/autodoc.py\n> doesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. \n\nYes, it's normal: in a typical spkg, the \"src\" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  \n\nI noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.",
+    "body": "Replying to [comment:13 hivert]:\n> Thank for this. Is this normal that the file ./patches/autodoc.py\n> contains the modifications, whereas\n> ./src/sphinx/ext/autodoc.py\n> doesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. \n\n\nYes, it's normal: in a typical spkg, the \"src\" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  \n\nI noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.",
     "created_at": "2010-02-18T16:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -429,6 +428,7 @@ Replying to [comment:13 hivert]:
 > ./src/sphinx/ext/autodoc.py
 > doesn't ? It seems that the answer is yes and that the former replace the later during build. Everthing seems to be ok. 
 
+
 Yes, it's normal: in a typical spkg, the "src" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  
 
 I noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.
@@ -440,7 +440,7 @@ I noticed that the nested classes in categories/coxeter_groups seem to be render
 archive/issue_comments_062601.json:
 ```json
 {
-    "body": "> Yes, it's normal: in a typical spkg, the \"src\" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  \n\nSo that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? \n \n> I noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.\n\nCool !",
+    "body": "> Yes, it's normal: in a typical spkg, the \"src\" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  \n\n\nSo that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? \n \n> I noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.\n\n\nCool !",
     "created_at": "2010-02-18T16:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -451,9 +451,11 @@ archive/issue_comments_062601.json:
 
 > Yes, it's normal: in a typical spkg, the "src" directory is supposed to contain the original unmodified source, and then it gets patched by running spkg-install.  
 
+
 So that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? 
  
 > I noticed that the nested classes in categories/coxeter_groups seem to be rendered correctly, so I guess that's good evidence that it's working.
+
 
 Cool !
 
@@ -464,7 +466,7 @@ Cool !
 archive/issue_comments_062602.json:
 ```json
 {
-    "body": "Replying to [comment:16 hivert]:\n> So that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? \n\nYou should update `patches/autodoc.py` and also `patches/autodoc.patch`: this one never gets used, but it's helpful to see how autodoc.py was actually changed.  While in the patches directory, I just do something like `diff -u ../src/sphinx/ext/autodoc.py autodoc.py > autodoc.patch`.\n\nYou might also update SPKG.txt, which includes the change log.  I put your name down for the new patch to autodoc.py, for example.  You also need to decide if you need to bump the patch level up: just keep the directory as it is, sphinx-0.6.3.p5, or rename it to sphinx-0.6.3.p6.  I think if you're just tinkering with this patch, keep it as \"p5\".\n\nFinally, going to the directory containing sphinx-0.6.3.p5, you run \"sage -pkg sphinx-0.6.3.p5\" to create the spkg file.",
+    "body": "Replying to [comment:16 hivert]:\n> So that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? \n\n\nYou should update `patches/autodoc.py` and also `patches/autodoc.patch`: this one never gets used, but it's helpful to see how autodoc.py was actually changed.  While in the patches directory, I just do something like `diff -u ../src/sphinx/ext/autodoc.py autodoc.py > autodoc.patch`.\n\nYou might also update SPKG.txt, which includes the change log.  I put your name down for the new patch to autodoc.py, for example.  You also need to decide if you need to bump the patch level up: just keep the directory as it is, sphinx-0.6.3.p5, or rename it to sphinx-0.6.3.p6.  I think if you're just tinkering with this patch, keep it as \"p5\".\n\nFinally, going to the directory containing sphinx-0.6.3.p5, you run \"sage -pkg sphinx-0.6.3.p5\" to create the spkg file.",
     "created_at": "2010-02-18T17:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -475,6 +477,7 @@ archive/issue_comments_062602.json:
 
 Replying to [comment:16 hivert]:
 > So that if I want to update the spkg, I only need to update the file in `patch/autodoc.py` file, commit it with hg and tar the whole thing, am I right ? 
+
 
 You should update `patches/autodoc.py` and also `patches/autodoc.patch`: this one never gets used, but it's helpful to see how autodoc.py was actually changed.  While in the patches directory, I just do something like `diff -u ../src/sphinx/ext/autodoc.py autodoc.py > autodoc.patch`.
 
@@ -607,7 +610,7 @@ After this ticket is reviewed, I'll rebase #7549.
 archive/issue_comments_062609.json:
 ```json
 {
-    "body": "An off-topic note about\n\n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\nI think we can suppress these by using `import random` and calling `random.random()`.",
+    "body": "An off-topic note about\n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\nI think we can suppress these by using `import random` and calling `random.random()`.",
     "created_at": "2010-02-21T00:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -618,12 +621,10 @@ archive/issue_comments_062609.json:
 
 An off-topic note about
 
-
 ```
 combinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object
 combinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object
 ```
-
 I think we can suppress these by using `import random` and calling `random.random()`.
 
 
@@ -633,7 +634,7 @@ I think we can suppress these by using `import random` and calling `random.rando
 archive/issue_comments_062610.json:
 ```json
 {
-    "body": "Replying to [comment:21 mpatel]:\n> I think we can suppress these by using `import random` and calling `random.random()`.\nSee #8326.",
+    "body": "Replying to [comment:21 mpatel]:\n> I think we can suppress these by using `import random` and calling `random.random()`.\n\nSee #8326.",
     "created_at": "2010-02-22T06:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -644,6 +645,7 @@ archive/issue_comments_062610.json:
 
 Replying to [comment:21 mpatel]:
 > I think we can suppress these by using `import random` and calling `random.random()`.
+
 See #8326.
 
 
@@ -707,7 +709,7 @@ Attachment [autodoc.py.2.patch](tarball://root/attachments/some-uuid/ticket7448/
 archive/issue_comments_062614.json:
 ```json
 {
-    "body": "Attachment [trac_7448-nested_class_sphinx-fh.3.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.3.patch) by @hivert created at 2010-02-23 20:20:28\n\nHi there ! I just uploaded what should be the final version of this patch:\n`autodoc.py` and `autodoc.py.2.patch` and ` trac_7448-nested_class_sphinx-fh.3.patch`. If you wan't to test the rendering you can comment\n\n```\n__all__ = [] # Don't document any parents\n```\n \nat the beginning of `nested_class_test.py`.",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.3.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.3.patch) by @hivert created at 2010-02-23 20:20:28\n\nHi there ! I just uploaded what should be the final version of this patch:\n`autodoc.py` and `autodoc.py.2.patch` and ` trac_7448-nested_class_sphinx-fh.3.patch`. If you wan't to test the rendering you can comment\n\n```\n__all__ = [] # Don't document any parents\n``` \nat the beginning of `nested_class_test.py`.",
     "created_at": "2010-02-23T20:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -723,8 +725,7 @@ Hi there ! I just uploaded what should be the final version of this patch:
 
 ```
 __all__ = [] # Don't document any parents
-```
- 
+``` 
 at the beginning of `nested_class_test.py`.
 
 
@@ -788,7 +789,7 @@ Rebased for queue in comment.  Apply only this patch.
 archive/issue_comments_062618.json:
 ```json
 {
-    "body": "Attachment [trac_7448-nested_class_sphinx-fh.4.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.4.patch) by @qed777 created at 2010-02-24 04:32:56\n\nV4 is rebased for the following queue:\n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n```\n\nWith #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\nQuestions:\n\n* Are there objections to making the unpicklable class check optional?  We could add a command-line option. \n* Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n\n```diff\ndiff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py\n--- a/doc/common/sage_autodoc.py\n+++ b/doc/common/sage_autodoc.py\n@@ -848,7 +848,9 @@ class ClassDocumenter(ModuleLevelDocumen\n         # as data/attribute\n         if ret:\n             if hasattr(self.object, '__name__'):\n-                self.doc_as_attr = (self.objpath[-1] != self.object.__name__)\n+                name = self.object.__name__\n+                self.doc_as_attr = (self.objpath != name.split('.') and \n+                                    self.check_module())\n             else:\n                 self.doc_as_attr = True\n         return ret\n```\n\n  and make it easier to upgrade to newer Sphinx versions.\n\nNote: We have made changes to `environment.py` and `highlighting.py` and other changes to `autodoc.py`.  But Georg Brandl has recently committed a [change](http://bitbucket.org/birkenfeld/sphinx/changeset/ee86e8563c6f/) --- requested by Mike Hansen? --- that should allow us to revert to the upstream `enviroment.py` and `autodoc.py`, modulo this ticket.  Actually, I think we can avoid patching `highlighting.py`, too, if we [subclass Pygments' Python lexer](http://pygments.org/docs/lexerdevelopment/).",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.4.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.4.patch) by @qed777 created at 2010-02-24 04:32:56\n\nV4 is rebased for the following queue:\n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n```\nWith #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\nQuestions:\n\n* Are there objections to making the unpicklable class check optional?  We could add a command-line option. \n* Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n\n```diff\ndiff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py\n--- a/doc/common/sage_autodoc.py\n+++ b/doc/common/sage_autodoc.py\n@@ -848,7 +848,9 @@ class ClassDocumenter(ModuleLevelDocumen\n         # as data/attribute\n         if ret:\n             if hasattr(self.object, '__name__'):\n-                self.doc_as_attr = (self.objpath[-1] != self.object.__name__)\n+                name = self.object.__name__\n+                self.doc_as_attr = (self.objpath != name.split('.') and \n+                                    self.check_module())\n             else:\n                 self.doc_as_attr = True\n         return ret\n```\n  and make it easier to upgrade to newer Sphinx versions.\n\nNote: We have made changes to `environment.py` and `highlighting.py` and other changes to `autodoc.py`.  But Georg Brandl has recently committed a [change](http://bitbucket.org/birkenfeld/sphinx/changeset/ee86e8563c6f/) --- requested by Mike Hansen? --- that should allow us to revert to the upstream `enviroment.py` and `autodoc.py`, modulo this ticket.  Actually, I think we can avoid patching `highlighting.py`, too, if we [subclass Pygments' Python lexer](http://pygments.org/docs/lexerdevelopment/).",
     "created_at": "2010-02-24T04:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -807,7 +808,6 @@ trac_8244-conf-autodoc.2.patch
 trac_8244-sagedoc.patch
 trac_7448-nested_class_sphinx-fh.4.patch
 ```
-
 With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].
 
 Questions:
@@ -831,7 +831,6 @@ diff --git a/doc/common/sage_autodoc.py b/doc/common/sage_autodoc.py
                  self.doc_as_attr = True
          return ret
 ```
-
   and make it easier to upgrade to newer Sphinx versions.
 
 Note: We have made changes to `environment.py` and `highlighting.py` and other changes to `autodoc.py`.  But Georg Brandl has recently committed a [change](http://bitbucket.org/birkenfeld/sphinx/changeset/ee86e8563c6f/) --- requested by Mike Hansen? --- that should allow us to revert to the upstream `enviroment.py` and `autodoc.py`, modulo this ticket.  Actually, I think we can avoid patching `highlighting.py`, too, if we [subclass Pygments' Python lexer](http://pygments.org/docs/lexerdevelopment/).
@@ -843,7 +842,7 @@ Note: We have made changes to `environment.py` and `highlighting.py` and other c
 archive/issue_comments_062619.json:
 ```json
 {
-    "body": "Replying to [comment:26 mpatel]:\n> V4 is rebased for the following queue:\n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n```\n\n\nThanks for this !\n> With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\nWhat do you mean by refresh here ? \n\n> Questions:\n> \n>  * Are there objections to making the unpicklable class check optional?  We could add a command-line option.\n\nNo objection ! Actually I think this has nothing to do with sphinx and it should be tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  \n\n>  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n>   and make it easier to upgrade to newer Sphinx versions.\n\nSure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.",
+    "body": "Replying to [comment:26 mpatel]:\n> V4 is rebased for the following queue:\n\n{{{\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.2.patch\ntrac_8244-sagedoc.patch\ntrac_7448-nested_class_sphinx-fh.4.patch\n}}}\n\nThanks for this !\n> With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\n\nWhat do you mean by refresh here ? \n\n> Questions:\n> \n> * Are there objections to making the unpicklable class check optional?  We could add a command-line option.\n\n\nNo objection ! Actually I think this has nothing to do with sphinx and it should be tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  \n\n>  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n>    and make it easier to upgrade to newer Sphinx versions.\n\n\nSure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.",
     "created_at": "2010-02-28T08:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -855,27 +854,29 @@ archive/issue_comments_062619.json:
 Replying to [comment:26 mpatel]:
 > V4 is rebased for the following queue:
 
-```
+{{{
 trac_8244-slot_wrapper_argspec.patch
 trac_8244-conf-autodoc.2.patch
 trac_8244-sagedoc.patch
 trac_7448-nested_class_sphinx-fh.4.patch
-```
-
+}}}
 
 Thanks for this !
 > With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].
+
 
 What do you mean by refresh here ? 
 
 > Questions:
 > 
->  * Are there objections to making the unpicklable class check optional?  We could add a command-line option.
+> * Are there objections to making the unpicklable class check optional?  We could add a command-line option.
+
 
 No objection ! Actually I think this has nothing to do with sphinx and it should be tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  
 
 >  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:
->   and make it easier to upgrade to newer Sphinx versions.
+>    and make it easier to upgrade to newer Sphinx versions.
+
 
 Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.
 
@@ -886,7 +887,7 @@ Sure ! Please do ! I won't have much time working on this so I'll appreciate som
 archive/issue_comments_062620.json:
 ```json
 {
-    "body": "Replying to [comment:27 hivert]:\n> > With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n> What do you mean by refresh here ? \n\nJust that I suggest any further changes be updates to that patch, via `hg qrefresh`, if it's appropriate.\n\n> >  * Are there objections to making the unpicklable class check optional?  We could add a command-line option.\n> No objection ! Actually I think this has nothing to do with sphinx and it should be \n> tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  \n\nSince it doesn't seem to belong in the docbuild system, can we put this check elsewhere, e.g., in the unit/doc-testing system?  And restrict this ticket to nested class rendering?\n\n> >  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n> >   and make it easier to upgrade to newer Sphinx versions.\n> Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n\nI tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI may be overreacting.  Thoughts?",
+    "body": "Replying to [comment:27 hivert]:\n> > With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].\n\n> What do you mean by refresh here ? \n\nJust that I suggest any further changes be updates to that patch, via `hg qrefresh`, if it's appropriate.\n\n> >  * Are there objections to making the unpicklable class check optional?  We could add a command-line option.\n \n> No objection ! Actually I think this has nothing to do with sphinx and it should be \n> tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  \n\n\nSince it doesn't seem to belong in the docbuild system, can we put this check elsewhere, e.g., in the unit/doc-testing system?  And restrict this ticket to nested class rendering?\n\n> >  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:\n> >    and make it easier to upgrade to newer Sphinx versions.\n \n> Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n\nI tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI may be overreacting.  Thoughts?",
     "created_at": "2010-03-03T00:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -897,18 +898,22 @@ archive/issue_comments_062620.json:
 
 Replying to [comment:27 hivert]:
 > > With #8244, we don't need to update the `sphinx-*.spkg`, so please refresh [attachment:trac_7448-nested_class_sphinx-fh.4.patch].
+
 > What do you mean by refresh here ? 
 
 Just that I suggest any further changes be updates to that patch, via `hg qrefresh`, if it's appropriate.
 
 > >  * Are there objections to making the unpicklable class check optional?  We could add a command-line option.
+ 
 > No objection ! Actually I think this has nothing to do with sphinx and it should be 
 > tested during the import. I put it here because if a class is detected as unpicklable, there is a very good chance it ends up typeset incorrectly by sphinx.  
+
 
 Since it doesn't seem to belong in the docbuild system, can we put this check elsewhere, e.g., in the unit/doc-testing system?  And restrict this ticket to nested class rendering?
 
 > >  * Also, is it possible to move the check into a processing function in `conf.py`? Then we could minimize our changes to `autodoc`:
-> >   and make it easier to upgrade to newer Sphinx versions.
+> >    and make it easier to upgrade to newer Sphinx versions.
+ 
 > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  
 
 I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.
@@ -940,7 +945,7 @@ Only fix rendering of nested classes.
 archive/issue_comments_062622.json:
 ```json
 {
-    "body": "Attachment [trac_7448-nested_class_sphinx-fh.5.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.5.patch) by @qed777 created at 2010-03-06 00:47:04\n\nReplying to [comment:28 mpatel]:\n> > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n> I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.",
+    "body": "Attachment [trac_7448-nested_class_sphinx-fh.5.patch](tarball://root/attachments/some-uuid/ticket7448/trac_7448-nested_class_sphinx-fh.5.patch) by @qed777 created at 2010-03-06 00:47:04\n\nReplying to [comment:28 mpatel]:\n> > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n\n> I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n\nI've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.",
     "created_at": "2010-03-06T00:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -953,6 +958,7 @@ Attachment [trac_7448-nested_class_sphinx-fh.5.patch](tarball://root/attachments
 
 Replying to [comment:28 mpatel]:
 > > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  
+
 > I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.
 
 I've attached V5, which should "just" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.
@@ -981,7 +987,7 @@ archive/issue_events_017662.json:
 archive/issue_comments_062623.json:
 ```json
 {
-    "body": "Replying to [comment:29 mpatel]:\n> Replying to [comment:28 mpatel]:\n> > > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n> > I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n> \n> I've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.\n\nHi Mitesh,\n\nThanks for taking care of this ! I'm Ok with the change you made to my patches so that I suppose I'm allowed to put a positive review on this ticket.",
+    "body": "Replying to [comment:29 mpatel]:\n> Replying to [comment:28 mpatel]:\n> > > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  \n\n> > I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.\n> \n> I've attached V5, which should \"just\" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.\n\n\nHi Mitesh,\n\nThanks for taking care of this ! I'm Ok with the change you made to my patches so that I suppose I'm allowed to put a positive review on this ticket.",
     "created_at": "2010-03-06T10:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7448",
     "type": "issue_comment",
@@ -993,9 +999,11 @@ archive/issue_comments_062623.json:
 Replying to [comment:29 mpatel]:
 > Replying to [comment:28 mpatel]:
 > > > Sure ! Please do ! I won't have much time working on this so I'll appreciate someone take over those if the architecture is changed.  
+
 > > I tried doing this and didn't have instant success.  But as you suggest, it might be better to do this elsewhere.
 > 
 > I've attached V5, which should "just" fix Sphinx's rendering of nested classes.  To the extent it counts, my review is positive.  Could someone please review V5 for this ticket?  I've opened #8452 for the nested class pickling check and will make a patch for that.
+
 
 Hi Mitesh,
 

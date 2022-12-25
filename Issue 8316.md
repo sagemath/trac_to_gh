@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8316
 archive/issue_comments_073633.json:
 ```json
 {
-    "body": "SageNB no longer depends on Jinja.  The Sage library does:\n\n```sh\n$ cd SAGE_ROOT/devel/sage-main/sage\n$ grep jinja `find -name \\*.py\\*` |grep import\n./server/notebook/template.py:import jinja\n./ext/gen_interpreters.py:from jinja import Environment\n./ext/gen_interpreters.py:from jinja.datastructure import ComplainingUndefined\n```\n",
+    "body": "SageNB no longer depends on Jinja.  The Sage library does:\n\n```sh\n$ cd SAGE_ROOT/devel/sage-main/sage\n$ grep jinja `find -name \\*.py\\*` |grep import\n./server/notebook/template.py:import jinja\n./ext/gen_interpreters.py:from jinja import Environment\n./ext/gen_interpreters.py:from jinja.datastructure import ComplainingUndefined\n```",
     "created_at": "2010-03-05T00:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ $ grep jinja `find -name \*.py\*` |grep import
 ./ext/gen_interpreters.py:from jinja import Environment
 ./ext/gen_interpreters.py:from jinja.datastructure import ComplainingUndefined
 ```
-
 
 
 
@@ -195,7 +194,7 @@ Diff of `spkg/install` vs. #8306.
 archive/issue_comments_073641.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by @qed777 created at 2010-06-14 08:58:58\n\nWith V1 of the patch, `sage -b` gives\n\n\n```python\n[...]\nBuilding interpreters for fast_callable\nTraceback (most recent call last):\n  File \"setup.py\", line 109, in <module>\n    sage.ext.gen_interpreters.rebuild(SAGE_DEVEL + 'sage/sage/ext/interpreters')\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3823, in rebuild\n    build_interp(interp, dir)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3788, in build_interp\n    interp = ig.get_interpreter()\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3318, in get_interpreter\n    self.write_interpreter(buff.write)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 2974, in write_interpreter\n    \"\"\", s=s, self=self, i=indent_lines))\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 177, in je\n    return tmpl.render(kwargs)\n  File \"<template>\", line 4, in top-level template code\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 132, in call\n    return __obj(*args, **kwargs)\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 403, in _fail_with_undefined_error\n    raise self._undefined_exception(hint)\njinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'\nsage: There was an error installing modified sage library code.\n```\n\nThe docstring for `jinja2.runtime.TemplateReference` is \"The `self` in templates.\"  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?\n\nV2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?\n\nI'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by @qed777 created at 2010-06-14 08:58:58\n\nWith V1 of the patch, `sage -b` gives\n\n```python\n[...]\nBuilding interpreters for fast_callable\nTraceback (most recent call last):\n  File \"setup.py\", line 109, in <module>\n    sage.ext.gen_interpreters.rebuild(SAGE_DEVEL + 'sage/sage/ext/interpreters')\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3823, in rebuild\n    build_interp(interp, dir)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3788, in build_interp\n    interp = ig.get_interpreter()\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3318, in get_interpreter\n    self.write_interpreter(buff.write)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 2974, in write_interpreter\n    \"\"\", s=s, self=self, i=indent_lines))\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 177, in je\n    return tmpl.render(kwargs)\n  File \"<template>\", line 4, in top-level template code\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 132, in call\n    return __obj(*args, **kwargs)\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 403, in _fail_with_undefined_error\n    raise self._undefined_exception(hint)\njinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'\nsage: There was an error installing modified sage library code.\n```\nThe docstring for `jinja2.runtime.TemplateReference` is \"The `self` in templates.\"  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?\n\nV2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?\n\nI'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.",
     "created_at": "2010-06-14T08:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
@@ -207,7 +206,6 @@ archive/issue_comments_073641.json:
 Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by @qed777 created at 2010-06-14 08:58:58
 
 With V1 of the patch, `sage -b` gives
-
 
 ```python
 [...]
@@ -233,7 +231,6 @@ Traceback (most recent call last):
 jinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'
 sage: There was an error installing modified sage library code.
 ```
-
 The docstring for `jinja2.runtime.TemplateReference` is "The `self` in templates."  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?
 
 V2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?

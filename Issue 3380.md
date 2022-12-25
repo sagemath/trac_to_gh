@@ -3,7 +3,7 @@
 archive/issues_003380.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nThere is a performance bug that causes a fairly large performance drop on\nall architectures.  This bug is present in both ATLAS 3.8.0 and 3.8.1.\nThe explanation and fix is available at:\n   http://math-atlas.sourceforge.net/errata.html#JITcpBug\n\nRegards,\nClint\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3380\n\n",
+    "body": "Assignee: mabshoff\n\n```\nThere is a performance bug that causes a fairly large performance drop on\nall architectures.  This bug is present in both ATLAS 3.8.0 and 3.8.1.\nThe explanation and fix is available at:\n   http://math-atlas.sourceforge.net/errata.html#JITcpBug\n\nRegards,\nClint\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3380\n\n",
     "created_at": "2008-06-06T23:05:43Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_003380.json:
 ```
 Assignee: mabshoff
 
-
 ```
 There is a performance bug that causes a fairly large performance drop on
 all architectures.  This bug is present in both ATLAS 3.8.0 and 3.8.1.
@@ -29,7 +28,6 @@ The explanation and fix is available at:
 Regards,
 Clint
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3380
 
@@ -60,7 +58,7 @@ Changing status from new to assigned.
 archive/issue_comments_023619.json:
 ```json
 {
-    "body": "The errata says specifically:\n\n```\nBad GEMM call causes performance drop for all architectures\nA piece of duplicated code causes a special-case code to be used \nfor all GEMM problems, which reduces performance on all architectures \nand almost all problems. To fix, comment out (or delete) lines 191-194 \nof ATLAS/src/blas/gemm/ATL_gemmXX.c, which read:\n\n         {\n            mm2 = mm1;\n            mm1 = Mjoin(PATL,mmJITcp);\n         }\n\n(notice these 4 lines are a duplicate of the for lines above. \n```\n\n\nCheers,\n\nMichael",
+    "body": "The errata says specifically:\n\n```\nBad GEMM call causes performance drop for all architectures\nA piece of duplicated code causes a special-case code to be used \nfor all GEMM problems, which reduces performance on all architectures \nand almost all problems. To fix, comment out (or delete) lines 191-194 \nof ATLAS/src/blas/gemm/ATL_gemmXX.c, which read:\n\n         {\n            mm2 = mm1;\n            mm1 = Mjoin(PATL,mmJITcp);\n         }\n\n(notice these 4 lines are a duplicate of the for lines above. \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-06-06T23:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3380",
     "type": "issue_comment",
@@ -85,7 +83,6 @@ of ATLAS/src/blas/gemm/ATL_gemmXX.c, which read:
 
 (notice these 4 lines are a duplicate of the for lines above. 
 ```
-
 
 Cheers,
 

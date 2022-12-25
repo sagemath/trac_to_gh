@@ -3,7 +3,7 @@
 archive/issues_002887.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTom Boothby just did this and here's his code. \n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n   var v = cell_element_cache[id];\n   if(v == undefined)\n       v = cell_element_cache[id] = get_cell(id)\n   return v;\n}\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2887\n\n",
+    "body": "Assignee: boothby\n\nTom Boothby just did this and here's his code. \n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n   var v = cell_element_cache[id];\n   if(v == undefined)\n       v = cell_element_cache[id] = get_cell(id)\n   return v;\n}\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2887\n\n",
     "created_at": "2008-04-12T00:20:11Z",
     "labels": [
         "component: notebook"
@@ -29,7 +29,6 @@ function get_cell2(id) {
 }
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2887

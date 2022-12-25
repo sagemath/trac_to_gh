@@ -3,7 +3,7 @@
 archive/issues_001821.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nFLINT 1.0.6 fixes the issue on the teragrid machine. It's just a\nworkaround. I've no idea what was really wrong. It might be that when\nthey implemented the builtin they forgot about arithmetic shift\nissues. At any rate it seems to be broken only when you ask for the\nnumber of bits of 0. The patch just treats this as a special case. The\ntests now pass on that machine, and still pass on sage.math.\n\nAt first I thought it had to do with the fact that the builtin returns\nan int, which is 32 bits, whilst a long is 64 bits. But I was unable\nto fix it under this assumption.\n\nhttp://www.flintlib.org/\n\nBill.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1821\n\n",
+    "body": "Assignee: mabshoff\n\n```\nFLINT 1.0.6 fixes the issue on the teragrid machine. It's just a\nworkaround. I've no idea what was really wrong. It might be that when\nthey implemented the builtin they forgot about arithmetic shift\nissues. At any rate it seems to be broken only when you ask for the\nnumber of bits of 0. The patch just treats this as a special case. The\ntests now pass on that machine, and still pass on sage.math.\n\nAt first I thought it had to do with the fact that the builtin returns\nan int, which is 32 bits, whilst a long is 64 bits. But I was unable\nto fix it under this assumption.\n\nhttp://www.flintlib.org/\n\nBill.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1821\n\n",
     "created_at": "2008-01-18T01:04:04Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_001821.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 FLINT 1.0.6 fixes the issue on the teragrid machine. It's just a
@@ -35,7 +34,6 @@ http://www.flintlib.org/
 
 Bill.
 ```
-
 
 Cheers,
 

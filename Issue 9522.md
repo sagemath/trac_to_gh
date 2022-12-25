@@ -3,7 +3,7 @@
 archive/issues_009522.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFrom the end of MPIR's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\n\nWe should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9522\n\n",
+    "body": "Assignee: tbd\n\nFrom the end of MPIR's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\nWe should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9522\n\n",
     "created_at": "2010-07-17T01:02:45Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ if [ "$SAGE_CHECK" = "yes" ]; then
     cd ..; ./spkg-check
 fi
 ```
-
 We should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:
 
 ```sh
@@ -37,7 +36,6 @@ We should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:
         ./spkg-check
         if [ $? -ne 0 ]; then
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9522
 
@@ -70,7 +68,7 @@ I though haven't checked if Mike deleted the superfluous test suite invocation i
 archive/issue_comments_091382.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.\n\nDone, he *did* remove it. So **this ticket can be closed as duplicate as soon as #8664 gets merged**.",
+    "body": "Replying to [comment:1 leif]:\n> I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.\n\n\nDone, he *did* remove it. So **this ticket can be closed as duplicate as soon as #8664 gets merged**.",
     "created_at": "2010-08-26T21:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9522",
     "type": "issue_comment",
@@ -81,6 +79,7 @@ archive/issue_comments_091382.json:
 
 Replying to [comment:1 leif]:
 > I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.
+
 
 Done, he *did* remove it. So **this ticket can be closed as duplicate as soon as #8664 gets merged**.
 

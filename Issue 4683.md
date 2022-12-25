@@ -3,7 +3,7 @@
 archive/issues_004683.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nUsing sage 3.2 (compiled from sources) on a 32-bit Core Duo machine running Debian Etch,\nwhen performing\n\n```\ngeorg@HILBERT:~/Daten/Sync/Phd/Code/sde$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\n```\n\nmemory consumption increases about 70Mb which each command (at least on my machine),\nthis does not happen if one writes\n\n```\nsage: v = [CDF(i^2.) for n in range(50000)]\n```\n\n, however, results are the same,\n\nGeorg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4683\n\n",
+    "body": "Assignee: somebody\n\nUsing sage 3.2 (compiled from sources) on a 32-bit Core Duo machine running Debian Etch,\nwhen performing\n\n```\ngeorg@HILBERT:~/Daten/Sync/Phd/Code/sde$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: v = [CDF(i)^2 for n in range(50000)]\n```\nmemory consumption increases about 70Mb which each command (at least on my machine),\nthis does not happen if one writes\n\n```\nsage: v = [CDF(i^2.) for n in range(50000)]\n```\n, however, results are the same,\n\nGeorg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4683\n\n",
     "created_at": "2008-12-03T01:12:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,14 +31,12 @@ sage: v = [CDF(i)^2 for n in range(50000)]
 sage: v = [CDF(i)^2 for n in range(50000)]
 sage: v = [CDF(i)^2 for n in range(50000)]
 ```
-
 memory consumption increases about 70Mb which each command (at least on my machine),
 this does not happen if one writes
 
 ```
 sage: v = [CDF(i^2.) for n in range(50000)]
 ```
-
 , however, results are the same,
 
 Georg
@@ -115,7 +113,7 @@ archive/issue_events_010722.json:
 archive/issue_comments_035233.json:
 ```json
 {
-    "body": "#4639 fixes the vast majority of the problem here, but:\n\n```\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n421.88671875\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.140625\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.15234375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.40625\n```\n\nSo still some small leak to go. I will poke around post 3.2.2.\n\nCheers,\n\nMichael",
+    "body": "#4639 fixes the vast majority of the problem here, but:\n\n```\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n421.88671875\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.140625\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.15234375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n422.40625\n```\nSo still some small leak to go. I will poke around post 3.2.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-17T04:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4683",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ sage: v = [CDF(i)^2 for n in range(50000)]
 sage: get_memory_usage()
 422.40625
 ```
-
 So still some small leak to go. I will poke around post 3.2.2.
 
 Cheers,
@@ -154,7 +151,7 @@ Michael
 archive/issue_comments_035234.json:
 ```json
 {
-    "body": "Hmmm:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n134.1328125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.578125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\nsage: get_memory_usage()\n136.7734375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\n```\n",
+    "body": "Hmmm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n134.1328125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.578125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\nsage: get_memory_usage()\n136.7734375\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n136.7734375\n```",
     "created_at": "2009-06-03T07:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4683",
     "type": "issue_comment",
@@ -164,7 +161,6 @@ archive/issue_comments_035234.json:
 ```
 
 Hmmm:
-
 
 ```
 ----------------------------------------------------------------------
@@ -187,7 +183,6 @@ sage: v = [CDF(i)^2 for n in range(50000)]
 sage: get_memory_usage()
 136.7734375
 ```
-
 
 
 

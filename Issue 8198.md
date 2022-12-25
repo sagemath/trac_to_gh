@@ -3,7 +3,7 @@
 archive/issues_008198.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @nilesjohnson jpflori\n\nKeywords: padics vector\n\nTrying to resolve #4656, I found the following unpleasant bug.\n\nthis looks good :\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: x\nO(5)\nsage: x*R(1)\nO(5)\n```\n\n\nBut when multiplied with the identity matrix the precision is lost\n\n```\nsage: I = matrix(R, [[1,0],[0,1]])\nsage: v = vector([R(1),x])\nsage: v\n(1 + O(5^5), O(5))\nsage: v*I\n(1 + O(5^5), 0)\nsage: v[0]*I[1,0] + v[1]*I[1,1]\nO(5)\n```\n\n\nThis causes things like\n\n```\nsage: M = matrix(R,[[1,2],[3,4]])\nsage: M*v\n(1 + O(5^5), 3 + O(5^5))\nsage: v[0]*M[0,0] + v[1]*M[0,1]\n1 + O(5)\nsage: v[0]*M[1,0] + v[1]*M[1,1]\n3 + O(5)\n```\n\n\nThis is an even worse example, which could be a different bug\n\n```\nsage: vv = vector(x)\nsage: vv\n(0)\nsage: vv[0]\n0\nsage: x\nO(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8198\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @nilesjohnson jpflori\n\nKeywords: padics vector\n\nTrying to resolve #4656, I found the following unpleasant bug.\n\nthis looks good :\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: x\nO(5)\nsage: x*R(1)\nO(5)\n```\n\nBut when multiplied with the identity matrix the precision is lost\n\n```\nsage: I = matrix(R, [[1,0],[0,1]])\nsage: v = vector([R(1),x])\nsage: v\n(1 + O(5^5), O(5))\nsage: v*I\n(1 + O(5^5), 0)\nsage: v[0]*I[1,0] + v[1]*I[1,1]\nO(5)\n```\n\nThis causes things like\n\n```\nsage: M = matrix(R,[[1,2],[3,4]])\nsage: M*v\n(1 + O(5^5), 3 + O(5^5))\nsage: v[0]*M[0,0] + v[1]*M[0,1]\n1 + O(5)\nsage: v[0]*M[1,0] + v[1]*M[1,1]\n3 + O(5)\n```\n\nThis is an even worse example, which could be a different bug\n\n```\nsage: vv = vector(x)\nsage: vv\n(0)\nsage: vv[0]\n0\nsage: x\nO(5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8198\n\n",
     "created_at": "2010-02-05T22:52:30Z",
     "labels": [
         "component: padics",
@@ -35,7 +35,6 @@ sage: x*R(1)
 O(5)
 ```
 
-
 But when multiplied with the identity matrix the precision is lost
 
 ```
@@ -49,7 +48,6 @@ sage: v[0]*I[1,0] + v[1]*I[1,1]
 O(5)
 ```
 
-
 This causes things like
 
 ```
@@ -62,7 +60,6 @@ sage: v[0]*M[1,0] + v[1]*M[1,1]
 3 + O(5)
 ```
 
-
 This is an even worse example, which could be a different bug
 
 ```
@@ -74,7 +71,6 @@ sage: vv[0]
 sage: x
 O(5)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8198
 
@@ -107,7 +103,7 @@ Resolving the bug would result in the resolution of #4656, too, I believe.
 archive/issue_comments_072173.json:
 ```json
 {
-    "body": "I found this bug also, while working on #9457.  After a fair bit of struggling with elliptic curve code, I now think this is a significant part of the problem.\n\nI noticed the following also; I can't tell if it's the same bug or not.\n\n```\nsage: R = QQ.completion(5,5)\nsage: P.<T> = R[]\nsage: Q.<T> = R[[]]\nsage: P(R(0).add_bigoh(-1))\n(O(5^-1))\nsage: Q(R(0).add_bigoh(-1))\n0\nsage: P(R(0).add_bigoh(2))\n(O(5^2))\nsage: Q(R(0).add_bigoh(2))\n0\nsage: Q(R(1).add_bigoh(2))\n1 + O(5^2)\nsage: Q(R(1).add_bigoh(-1))\n0\nsage: Q(R(1/25).add_bigoh(-1))\n5^-2 + O(5^-1)\n```\n",
+    "body": "I found this bug also, while working on #9457.  After a fair bit of struggling with elliptic curve code, I now think this is a significant part of the problem.\n\nI noticed the following also; I can't tell if it's the same bug or not.\n\n```\nsage: R = QQ.completion(5,5)\nsage: P.<T> = R[]\nsage: Q.<T> = R[[]]\nsage: P(R(0).add_bigoh(-1))\n(O(5^-1))\nsage: Q(R(0).add_bigoh(-1))\n0\nsage: P(R(0).add_bigoh(2))\n(O(5^2))\nsage: Q(R(0).add_bigoh(2))\n0\nsage: Q(R(1).add_bigoh(2))\n1 + O(5^2)\nsage: Q(R(1).add_bigoh(-1))\n0\nsage: Q(R(1/25).add_bigoh(-1))\n5^-2 + O(5^-1)\n```",
     "created_at": "2010-08-03T23:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
@@ -142,13 +138,12 @@ sage: Q(R(1/25).add_bigoh(-1))
 
 
 
-
 ---
 
 archive/issue_comments_072174.json:
 ```json
 {
-    "body": "Replying to [comment:2 niles]:\n> I noticed the following also; I can't tell if it's the same bug or not.\n\noh, this seems to be the same as #4656",
+    "body": "Replying to [comment:2 niles]:\n> I noticed the following also; I can't tell if it's the same bug or not.\n\n\noh, this seems to be the same as #4656",
     "created_at": "2010-08-03T23:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
@@ -160,6 +155,7 @@ archive/issue_comments_072174.json:
 Replying to [comment:2 niles]:
 > I noticed the following also; I can't tell if it's the same bug or not.
 
+
 oh, this seems to be the same as #4656
 
 
@@ -169,7 +165,7 @@ oh, this seems to be the same as #4656
 archive/issue_comments_072175.json:
 ```json
 {
-    "body": "I narrowed down the last issue above. (vector calls Sequence which calls list):\n\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: list(x)\n[0]\n```\n\n\nagain the element is set to zero. The problem here is different than the original case. In fact list(x) should raise an error, just like list(0) does. \n\n\n```\nsage: list([x,x]) \n[O(5), O(5)]\n```\n\n\nworks correctly. So this is really about matrix multiplication.",
+    "body": "I narrowed down the last issue above. (vector calls Sequence which calls list):\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: list(x)\n[0]\n```\n\nagain the element is set to zero. The problem here is different than the original case. In fact list(x) should raise an error, just like list(0) does. \n\n```\nsage: list([x,x]) \n[O(5), O(5)]\n```\n\nworks correctly. So this is really about matrix multiplication.",
     "created_at": "2011-01-27T11:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
@@ -180,7 +176,6 @@ archive/issue_comments_072175.json:
 
 I narrowed down the last issue above. (vector calls Sequence which calls list):
 
-
 ```
 sage: R = Qp(5,5)
 sage: x = R(5).add_bigoh(1)
@@ -188,15 +183,12 @@ sage: list(x)
 [0]
 ```
 
-
 again the element is set to zero. The problem here is different than the original case. In fact list(x) should raise an error, just like list(0) does. 
-
 
 ```
 sage: list([x,x]) 
 [O(5), O(5)]
 ```
-
 
 works correctly. So this is really about matrix multiplication.
 
@@ -297,7 +289,7 @@ I don't even understand where vector * matrix multiplication is implemented...
 archive/issue_comments_072178.json:
 ```json
 {
-    "body": "Replying to [comment:8 wuthrich]:\n> I don't even understand where vector * matrix multiplication is implemented...\nIn `sage/matrix/matrix0.pyx` (I discovered this when working on #804).  It tries to be too smart for its own good and skips entries of the vector that are equal to 0...  I made a patch and am now testing it.",
+    "body": "Replying to [comment:8 wuthrich]:\n> I don't even understand where vector * matrix multiplication is implemented...\n\nIn `sage/matrix/matrix0.pyx` (I discovered this when working on #804).  It tries to be too smart for its own good and skips entries of the vector that are equal to 0...  I made a patch and am now testing it.",
     "created_at": "2014-04-11T01:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
@@ -308,6 +300,7 @@ archive/issue_comments_072178.json:
 
 Replying to [comment:8 wuthrich]:
 > I don't even understand where vector * matrix multiplication is implemented...
+
 In `sage/matrix/matrix0.pyx` (I discovered this when working on #804).  It tries to be too smart for its own good and skips entries of the vector that are equal to 0...  I made a patch and am now testing it.
 
 

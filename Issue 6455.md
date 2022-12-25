@@ -3,7 +3,7 @@
 archive/issues_006455.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: Tate Sharafevich group, Elliptic curves\n\nWilliam Stein found a bug in `p_primary_part`, namely\n\n\n```\nsage: E = EllipticCurve([-19,34]); E.cremona_label()  # y^2 = x^3 - 19*x + 34\n'944e1'\nsage: S = E.sha(); S\nShafarevich-Tate group for the Elliptic Curve defined by y^2 = x^3 -\n19*x + 34 over Rational Field\nsage: E.ap(5)\n-3\nsage: factor(944)\n2^4 * 59\nsage: S.an_padic(5)\nTraceback (most recent call last):\n...\nValueError: can not twist a curve of conductor (=472) by the quadratic\ntwist (=-4).\n```\n\n\nThe problem is at 2 and 3, we have to check if we are allowed to twist.\n\n\nAnd John Cremona suggested \n\n*Is it possible to add a doctest illustrating the suggestion to \"try an_padic instead\"? That would be useful for the reference manual.*\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6455\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: Tate Sharafevich group, Elliptic curves\n\nWilliam Stein found a bug in `p_primary_part`, namely\n\n```\nsage: E = EllipticCurve([-19,34]); E.cremona_label()  # y^2 = x^3 - 19*x + 34\n'944e1'\nsage: S = E.sha(); S\nShafarevich-Tate group for the Elliptic Curve defined by y^2 = x^3 -\n19*x + 34 over Rational Field\nsage: E.ap(5)\n-3\nsage: factor(944)\n2^4 * 59\nsage: S.an_padic(5)\nTraceback (most recent call last):\n...\nValueError: can not twist a curve of conductor (=472) by the quadratic\ntwist (=-4).\n```\n\nThe problem is at 2 and 3, we have to check if we are allowed to twist.\n\n\nAnd John Cremona suggested \n\n*Is it possible to add a doctest illustrating the suggestion to \"try an_padic instead\"? That would be useful for the reference manual.*\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6455\n\n",
     "created_at": "2009-07-01T13:57:06Z",
     "labels": [
         "component: number theory",
@@ -25,7 +25,6 @@ Keywords: Tate Sharafevich group, Elliptic curves
 
 William Stein found a bug in `p_primary_part`, namely
 
-
 ```
 sage: E = EllipticCurve([-19,34]); E.cremona_label()  # y^2 = x^3 - 19*x + 34
 '944e1'
@@ -42,7 +41,6 @@ Traceback (most recent call last):
 ValueError: can not twist a curve of conductor (=472) by the quadratic
 twist (=-4).
 ```
-
 
 The problem is at 2 and 3, we have to check if we are allowed to twist.
 

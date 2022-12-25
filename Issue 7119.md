@@ -3,7 +3,7 @@
 archive/issues_007119.json:
 ```json
 {
-    "body": "Assignee: Kwankyu Lee\n\nThere is a tiny bug in the polydict implementation of multivariate\npolynomial ring. \n\n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import MPolynomialRing_polydict\nsage: R.<x,y>=MPolynomialRing_polydict(GF(2),2,order='lex')\nsage: R\nMultivariate Polynomial Ring in x, y over Finite Field of size 2\nsage: f=x+y\nsage: f.lt()\n-x\nsage: f.lm()\n-x\n```\n\n\nThe minus sign in \"-x\" is redundant\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7119\n\n",
+    "body": "Assignee: Kwankyu Lee\n\nThere is a tiny bug in the polydict implementation of multivariate\npolynomial ring. \n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import MPolynomialRing_polydict\nsage: R.<x,y>=MPolynomialRing_polydict(GF(2),2,order='lex')\nsage: R\nMultivariate Polynomial Ring in x, y over Finite Field of size 2\nsage: f=x+y\nsage: f.lt()\n-x\nsage: f.lm()\n-x\n```\n\nThe minus sign in \"-x\" is redundant\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7119\n\n",
     "created_at": "2009-10-05T04:49:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ Assignee: Kwankyu Lee
 There is a tiny bug in the polydict implementation of multivariate
 polynomial ring. 
 
-
 ```
 sage: from sage.rings.polynomial.multi_polynomial_ring import MPolynomialRing_polydict
 sage: R.<x,y>=MPolynomialRing_polydict(GF(2),2,order='lex')
@@ -34,7 +33,6 @@ sage: f.lt()
 sage: f.lm()
 -x
 ```
-
 
 The minus sign in "-x" is redundant
 
@@ -180,7 +178,7 @@ I think patching the polydict.pyx so as not to rely on the "zero" paramter might
 archive/issue_comments_058906.json:
 ```json
 {
-    "body": "What does the TESTS: label do? When I build the reference the Test section is also included. In which case, why not just add to the Examples section (separated by a line with a :: to start a new section)?\n\nI think it would be easier to use something like:\n\n```\nsage: R.<x,y>=PolynomialRing(GF(2),2,order='lex')\nsage: f=x+y\nsage: f.lt()\nx\n```\n\n\nThen you don't need the long import statement.  What do you think?\n\nAdam",
+    "body": "What does the TESTS: label do? When I build the reference the Test section is also included. In which case, why not just add to the Examples section (separated by a line with a :: to start a new section)?\n\nI think it would be easier to use something like:\n\n```\nsage: R.<x,y>=PolynomialRing(GF(2),2,order='lex')\nsage: f=x+y\nsage: f.lt()\nx\n```\n\nThen you don't need the long import statement.  What do you think?\n\nAdam",
     "created_at": "2009-10-12T11:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
@@ -199,7 +197,6 @@ sage: f=x+y
 sage: f.lt()
 x
 ```
-
 
 Then you don't need the long import statement.  What do you think?
 

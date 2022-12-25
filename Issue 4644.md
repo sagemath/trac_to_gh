@@ -3,7 +3,7 @@
 archive/issues_004644.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe used to have:\n\n\n```\n[jaap@paix sage-3.1.1]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nSage subshell$ exit\nexit\nExited Sage subshell.\n[jaap@paix sage-3.1.1]$ \n\n```\n\n\nBut in sage-3.2:\n\n\n```\n[jaap@paix sage-3.2]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[jaap@paix sage-3.2]$ \n\n```\n\n\nI've been bitten by this once more!\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4644\n\n",
+    "body": "Assignee: @williamstein\n\nWe used to have:\n\n```\n[jaap@paix sage-3.1.1]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nSage subshell$ exit\nexit\nExited Sage subshell.\n[jaap@paix sage-3.1.1]$ \n\n```\n\nBut in sage-3.2:\n\n```\n[jaap@paix sage-3.2]$ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[jaap@paix sage-3.2]$ \n\n```\n\nI've been bitten by this once more!\n\nJaap\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4644\n\n",
     "created_at": "2008-11-28T18:24:42Z",
     "labels": [
         "component: user interface",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 We used to have:
 
-
 ```
 [jaap@paix sage-3.1.1]$ ./sage -sh
 
@@ -35,9 +34,7 @@ Exited Sage subshell.
 
 ```
 
-
 But in sage-3.2:
-
 
 ```
 [jaap@paix sage-3.2]$ ./sage -sh
@@ -49,7 +46,6 @@ with other copies of Sage!
 [jaap@paix sage-3.2]$ 
 
 ```
-
 
 I've been bitten by this once more!
 
@@ -96,7 +92,7 @@ Michael
 archive/issue_comments_034889.json:
 ```json
 {
-    "body": "Ok, sorry. We had a discussion long time ago. You said you were bitten by this many times!\n\nDue to #4512 mhansen:\nCould we at least have a PS1 that includes the current directory? I always hated it when I was on a machine where \"sage -sh\" didn't use my existing PS1.\n\n\nWe now have the trouble of finding out which shell we use!\n\n\n```\nExited Sage subshell.\n[jaap@paix sage-3.2.1.rc0]$ vi local/bin/sage-sage\n[jaap@paix sage-3.2.1.rc0]$ ./sage -sh\n/usr/bin/env: bash -x: No such file or directory\n[jaap@paix sage-3.2.1.rc0]$ which bash\n/bin/bash\n[jaap@paix sage-3.2.1.rc0]$ local/bin/sage-sage\n/usr/bin/env: bash -x: No such file or directory\n[jaap@paix sage-3.2.1.rc0]$ \n\n```\n\n\nJaap",
+    "body": "Ok, sorry. We had a discussion long time ago. You said you were bitten by this many times!\n\nDue to #4512 mhansen:\nCould we at least have a PS1 that includes the current directory? I always hated it when I was on a machine where \"sage -sh\" didn't use my existing PS1.\n\n\nWe now have the trouble of finding out which shell we use!\n\n```\nExited Sage subshell.\n[jaap@paix sage-3.2.1.rc0]$ vi local/bin/sage-sage\n[jaap@paix sage-3.2.1.rc0]$ ./sage -sh\n/usr/bin/env: bash -x: No such file or directory\n[jaap@paix sage-3.2.1.rc0]$ which bash\n/bin/bash\n[jaap@paix sage-3.2.1.rc0]$ local/bin/sage-sage\n/usr/bin/env: bash -x: No such file or directory\n[jaap@paix sage-3.2.1.rc0]$ \n\n```\n\nJaap",
     "created_at": "2008-12-03T16:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
@@ -113,7 +109,6 @@ Could we at least have a PS1 that includes the current directory? I always hated
 
 We now have the trouble of finding out which shell we use!
 
-
 ```
 Exited Sage subshell.
 [jaap@paix sage-3.2.1.rc0]$ vi local/bin/sage-sage
@@ -126,7 +121,6 @@ Exited Sage subshell.
 [jaap@paix sage-3.2.1.rc0]$ 
 
 ```
-
 
 Jaap
 
@@ -159,7 +153,7 @@ Jaap
 archive/issue_comments_034891.json:
 ```json
 {
-    "body": "From sage-devel:\n\n\n```\nWilliam Stein wrote:\n\n> The justification for the existence of \"./sage -sh\" is that you can\n> type \"exit\" to get out of that subshell, and all the Sage environment\n> variables are no longer defined.  Also, on some systems \"./sage -sh\"\n> changes the prompt as a reminder (it's a bug that it doesn't do this\n> on all systems).\n>\n+1\n\nThis is http://trac.sagemath.org/sage_trac/ticket/4644\nI opened 6 month ago.\n\nWe have to thank Mike Hansen and Craig Citro for this :)\n\nhttp://trac.sagemath.org/sage_trac/ticket/4512\n\nMike:\n> Could we at least have a PS1 that includes the current directory? I always hated it when I was on a machine where \"sage -sh\" didn't use my existing PS1.\n\nCraig:\n> Yeah, that would be very reasonable.\n\nJaap\n\n\n```\n",
+    "body": "From sage-devel:\n\n```\nWilliam Stein wrote:\n\n> The justification for the existence of \"./sage -sh\" is that you can\n> type \"exit\" to get out of that subshell, and all the Sage environment\n> variables are no longer defined.  Also, on some systems \"./sage -sh\"\n> changes the prompt as a reminder (it's a bug that it doesn't do this\n> on all systems).\n>\n+1\n\nThis is http://trac.sagemath.org/sage_trac/ticket/4644\nI opened 6 month ago.\n\nWe have to thank Mike Hansen and Craig Citro for this :)\n\nhttp://trac.sagemath.org/sage_trac/ticket/4512\n\nMike:\n> Could we at least have a PS1 that includes the current directory? I always hated it when I was on a machine where \"sage -sh\" didn't use my existing PS1.\n\nCraig:\n> Yeah, that would be very reasonable.\n\nJaap\n\n\n```",
     "created_at": "2009-06-09T15:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4644",
     "type": "issue_comment",
@@ -169,7 +163,6 @@ archive/issue_comments_034891.json:
 ```
 
 From sage-devel:
-
 
 ```
 William Stein wrote:
@@ -199,7 +192,6 @@ Jaap
 
 
 ```
-
 
 
 

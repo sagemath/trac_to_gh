@@ -3,7 +3,7 @@
 archive/issues_000637.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n> 1) It would be nice if one could upload directly the text of a\n>    worksheet to SAGE and have it automatically evaluated as an\n>    uploaded worksheet.\n\nI like this suggestion.  It has always been on my (perhaps only mental)\ntodo list. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/637\n\n",
+    "body": "Assignee: boothby\n\n```\n> 1) It would be nice if one could upload directly the text of a\n>    worksheet to SAGE and have it automatically evaluated as an\n>    uploaded worksheet.\n\nI like this suggestion.  It has always been on my (perhaps only mental)\ntodo list. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/637\n\n",
     "created_at": "2007-09-11T04:39:49Z",
     "labels": [
         "component: notebook"
@@ -17,7 +17,6 @@ archive/issues_000637.json:
 ```
 Assignee: boothby
 
-
 ```
 > 1) It would be nice if one could upload directly the text of a
 >    worksheet to SAGE and have it automatically evaluated as an
@@ -26,7 +25,6 @@ Assignee: boothby
 I like this suggestion.  It has always been on my (perhaps only mental)
 todo list. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/637
 
@@ -74,7 +72,7 @@ archive/issue_events_001698.json:
 archive/issue_comments_003271.json:
 ```json
 {
-    "body": "\n```\n21:39 < boothby> wstein -- can we close #637?\n21:40 < wstein> no.\n21:40 < wstein> I don't think so.\n21:40 < wstein> The idea was supposed to be that you could make a wiki\n21:40 < wstein> marked up .txt file, with {{{'s\n21:40 < wstein> and upload it.\n21:40 < wstein> And get a worksheet.\n```\n",
+    "body": "```\n21:39 < boothby> wstein -- can we close #637?\n21:40 < wstein> no.\n21:40 < wstein> I don't think so.\n21:40 < wstein> The idea was supposed to be that you could make a wiki\n21:40 < wstein> marked up .txt file, with {{{'s\n21:40 < wstein> and upload it.\n21:40 < wstein> And get a worksheet.\n```",
     "created_at": "2008-03-17T04:43:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -82,7 +80,6 @@ archive/issue_comments_003271.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 21:39 < boothby> wstein -- can we close #637?
@@ -96,13 +93,12 @@ archive/issue_comments_003271.json:
 
 
 
-
 ---
 
 archive/issue_comments_003272.json:
 ```json
 {
-    "body": "\n```\n19:55 < tclemans> for the upload a plain text worksheet ticket: would it just\n                  work to create an empty worksheet and then call edit_save\n                  with the plain text?\n19:55 < wstein-3121> tclemans -- yep.\n19:55 < wstein-3121> That's exactly right.\n```\n",
+    "body": "```\n19:55 < tclemans> for the upload a plain text worksheet ticket: would it just\n                  work to create an empty worksheet and then call edit_save\n                  with the plain text?\n19:55 < wstein-3121> tclemans -- yep.\n19:55 < wstein-3121> That's exactly right.\n```",
     "created_at": "2008-05-11T02:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -111,7 +107,6 @@ archive/issue_comments_003272.json:
 }
 ```
 
-
 ```
 19:55 < tclemans> for the upload a plain text worksheet ticket: would it just
                   work to create an empty worksheet and then call edit_save
@@ -119,7 +114,6 @@ archive/issue_comments_003272.json:
 19:55 < wstein-3121> tclemans -- yep.
 19:55 < wstein-3121> That's exactly right.
 ```
-
 
 
 
@@ -167,7 +161,7 @@ The attached patch:
 archive/issue_comments_003275.json:
 ```json
 {
-    "body": "I can't seem to apply the patch.\n\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/637/sage-637.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/637/sage-637.patch?format=raw\nLoading: [..]\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg status\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg status\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg import   \"/home/tclemans/.sage/temp/sage/27583/tmp_0.patch\"\napplying /home/tclemans/.sage/temp/sage/27583/tmp_0.patch\npatching file sage/server/notebook/notebook.py\nHunk #1 FAILED at 148\n1 out of 4 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\nabort: patch failed to apply\nsage: version()\n'SAGE Version 3.0.1, Release Date: 2008-05-05'\n```\n",
+    "body": "I can't seem to apply the patch.\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/637/sage-637.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/637/sage-637.patch?format=raw\nLoading: [..]\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg status\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg status\ncd \"/home/tclemans/sage-3.0/devel/sage\" && hg import   \"/home/tclemans/.sage/temp/sage/27583/tmp_0.patch\"\napplying /home/tclemans/.sage/temp/sage/27583/tmp_0.patch\npatching file sage/server/notebook/notebook.py\nHunk #1 FAILED at 148\n1 out of 4 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\nabort: patch failed to apply\nsage: version()\n'SAGE Version 3.0.1, Release Date: 2008-05-05'\n```",
     "created_at": "2008-05-11T14:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -177,7 +171,6 @@ archive/issue_comments_003275.json:
 ```
 
 I can't seem to apply the patch.
-
 
 ```
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/637/sage-637.patch?format=raw')
@@ -194,7 +187,6 @@ abort: patch failed to apply
 sage: version()
 'SAGE Version 3.0.1, Release Date: 2008-05-05'
 ```
-
 
 
 
@@ -225,7 +217,7 @@ Michael
 archive/issue_comments_003277.json:
 ```json
 {
-    "body": "I applied the patches in the following order and had no problems:\n\n```\n1733\n1864\n2359\n2636\n2884\n2992\n3024\n3053\n637\n```\n",
+    "body": "I applied the patches in the following order and had no problems:\n\n```\n1733\n1864\n2359\n2636\n2884\n2992\n3024\n3053\n637\n```",
     "created_at": "2008-05-12T06:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -250,13 +242,12 @@ I applied the patches in the following order and had no problems:
 
 
 
-
 ---
 
 archive/issue_comments_003278.json:
 ```json
 {
-    "body": "Works, except when I tried to upload a rather old (from SD3) worksheet:\n\n\n```\n2008-05-11 22:47:55-0700 [-] cd \"/home/boothby/.sage/temp/eight/32244/dir_1\"; tar -jxf \"/home/boothby/.sage/temp/eight/32244/dir_0/pippenger.sws\"\n2008-05-11 22:47:55-0700 [-] Exception rendering:\n2008-05-11 22:47:55-0700 [-] Unhandled Error\n        Traceback (most recent call last):\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 609, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 586, in _deferGenerator\n            deferred.callback(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 242, in callback\n            self._startRunCallbacks(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 307, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 230, in <lambda>\n            ).addCallback(lambda res: self.render(request))\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 326, in render\n            W = notebook.import_worksheet(filename, self.username)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 800, in import_worksheet\n            return self._import_worksheet_sws(filename, owner)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 882, in _import_worksheet_sws\n            worksheet_txt = open(text_filename).read()\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/boothby/.sage/temp/eight/32244/dir_1/pippenger/worksheet.txt'\n```\n\n\nIt would be nice be able to recover this.  It isn't a problem (for me) to do this manually, and this is probably irrelevant to this ticket.",
+    "body": "Works, except when I tried to upload a rather old (from SD3) worksheet:\n\n```\n2008-05-11 22:47:55-0700 [-] cd \"/home/boothby/.sage/temp/eight/32244/dir_1\"; tar -jxf \"/home/boothby/.sage/temp/eight/32244/dir_0/pippenger.sws\"\n2008-05-11 22:47:55-0700 [-] Exception rendering:\n2008-05-11 22:47:55-0700 [-] Unhandled Error\n        Traceback (most recent call last):\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 609, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 586, in _deferGenerator\n            deferred.callback(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 242, in callback\n            self._startRunCallbacks(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 307, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 230, in <lambda>\n            ).addCallback(lambda res: self.render(request))\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 326, in render\n            W = notebook.import_worksheet(filename, self.username)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 800, in import_worksheet\n            return self._import_worksheet_sws(filename, owner)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 882, in _import_worksheet_sws\n            worksheet_txt = open(text_filename).read()\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/boothby/.sage/temp/eight/32244/dir_1/pippenger/worksheet.txt'\n```\n\nIt would be nice be able to recover this.  It isn't a problem (for me) to do this manually, and this is probably irrelevant to this ticket.",
     "created_at": "2008-05-12T06:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -266,7 +257,6 @@ archive/issue_comments_003278.json:
 ```
 
 Works, except when I tried to upload a rather old (from SD3) worksheet:
-
 
 ```
 2008-05-11 22:47:55-0700 [-] cd "/home/boothby/.sage/temp/eight/32244/dir_1"; tar -jxf "/home/boothby/.sage/temp/eight/32244/dir_0/pippenger.sws"
@@ -294,7 +284,6 @@ Works, except when I tried to upload a rather old (from SD3) worksheet:
             worksheet_txt = open(text_filename).read()
         exceptions.IOError: [Errno 2] No such file or directory: '/home/boothby/.sage/temp/eight/32244/dir_1/pippenger/worksheet.txt'
 ```
-
 
 It would be nice be able to recover this.  It isn't a problem (for me) to do this manually, and this is probably irrelevant to this ticket.
 
@@ -344,7 +333,7 @@ Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637
 archive/issue_comments_003281.json:
 ```json
 {
-    "body": "This occurs whenever I try to upload from a URL:\n\n\n```\n2008-05-14 18:28:20-0700 [-] Unhandled Error\n        Traceback (most recent call last):\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 609, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 586, in _deferGenerator\n            deferred.callback(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 242, in callback\n            self._startRunCallbacks(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 307, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 230, in <lambda>\n            ).addCallback(lambda res: self.render(request))\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 333, in render\n            os.unlink(filename)\n        exceptions.UnboundLocalError: local variable 'filename' referenced before assignment\n```\n",
+    "body": "This occurs whenever I try to upload from a URL:\n\n```\n2008-05-14 18:28:20-0700 [-] Unhandled Error\n        Traceback (most recent call last):\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 609, in gotResult\n            _deferGenerator(g, deferred)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 586, in _deferGenerator\n            deferred.callback(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 242, in callback\n            self._startRunCallbacks(result)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 307, in _startRunCallbacks\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 230, in <lambda>\n            ).addCallback(lambda res: self.render(request))\n          File \"/home/boothby/sage-3.0.2.alpha0/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 333, in render\n            os.unlink(filename)\n        exceptions.UnboundLocalError: local variable 'filename' referenced before assignment\n```",
     "created_at": "2008-05-15T02:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
@@ -354,7 +343,6 @@ archive/issue_comments_003281.json:
 ```
 
 This occurs whenever I try to upload from a URL:
-
 
 ```
 2008-05-14 18:28:20-0700 [-] Unhandled Error
@@ -376,7 +364,6 @@ This occurs whenever I try to upload from a URL:
             os.unlink(filename)
         exceptions.UnboundLocalError: local variable 'filename' referenced before assignment
 ```
-
 
 
 

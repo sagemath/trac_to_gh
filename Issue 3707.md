@@ -74,7 +74,7 @@ Thanks for the review. I'll write doctests and learn about late_import() to see 
 archive/issue_comments_026252.json:
 ```json
 {
-    "body": "Replying to [comment:3 certik]:\n> Thanks for the review. I'll write doctests and learn about late_import() to see how I could use it.\n\nExamples of this idea (we don't have a framework for that), can be found in:\n\n* `sage.rings.finite_field_givaro`\n* `sage.libs.pari.gen`\n* `sage.rings.integer`\n\nLooking at those should get you started.",
+    "body": "Replying to [comment:3 certik]:\n> Thanks for the review. I'll write doctests and learn about late_import() to see how I could use it.\n\n\nExamples of this idea (we don't have a framework for that), can be found in:\n\n* `sage.rings.finite_field_givaro`\n* `sage.libs.pari.gen`\n* `sage.rings.integer`\n\nLooking at those should get you started.",
     "created_at": "2008-08-10T16:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -85,6 +85,7 @@ archive/issue_comments_026252.json:
 
 Replying to [comment:3 certik]:
 > Thanks for the review. I'll write doctests and learn about late_import() to see how I could use it.
+
 
 Examples of this idea (we don't have a framework for that), can be found in:
 
@@ -243,7 +244,7 @@ Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_026260.json:
 ```json
 {
-    "body": "My review is +1, only please apply this patch:\n\ntrac_3707_fixup.2.patch\n\ninstead of yours. The diff is this:\n\n```\n$ hg di\ndiff -r 25553a0bd339 sage/calculus/calculus.py\n--- a/sage/calculus/calculus.py\tMon Aug 18 11:04:52 2008 +0100\n+++ b/sage/calculus/calculus.py\tTue Aug 19 15:18:50 2008 -0700\n@@ -5099,7 +5099,8 @@\n \n         EXAMPLE:\n             sage: x,y = var('x,y')\n-            sage: sympy(x) # indirect doctest\n+            sage: import sympy\n+            sage: sympy.sympify(x) # indirect doctest\n             x\n         \"\"\"\n```\n\n\n\nyour version didn't pass doctests, but this should fix it. \n\nThanks again for the patch you did, it really helps. I hope all should be fine now. I'll attache the result of sage tests once it finishes.",
+    "body": "My review is +1, only please apply this patch:\n\ntrac_3707_fixup.2.patch\n\ninstead of yours. The diff is this:\n\n```\n$ hg di\ndiff -r 25553a0bd339 sage/calculus/calculus.py\n--- a/sage/calculus/calculus.py\tMon Aug 18 11:04:52 2008 +0100\n+++ b/sage/calculus/calculus.py\tTue Aug 19 15:18:50 2008 -0700\n@@ -5099,7 +5099,8 @@\n \n         EXAMPLE:\n             sage: x,y = var('x,y')\n-            sage: sympy(x) # indirect doctest\n+            sage: import sympy\n+            sage: sympy.sympify(x) # indirect doctest\n             x\n         \"\"\"\n```\n\n\nyour version didn't pass doctests, but this should fix it. \n\nThanks again for the patch you did, it really helps. I hope all should be fine now. I'll attache the result of sage tests once it finishes.",
     "created_at": "2008-08-19T22:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
@@ -273,7 +274,6 @@ diff -r 25553a0bd339 sage/calculus/calculus.py
              x
          """
 ```
-
 
 
 your version didn't pass doctests, but this should fix it. 

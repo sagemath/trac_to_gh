@@ -3,7 +3,7 @@
 archive/issues_007370.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  ylchapuy\n\nThis should work\n\n\n```\nsage: K = GF(11^5,'a')\nsage: K.list()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7370\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  ylchapuy\n\nThis should work\n\n```\nsage: K = GF(11^5,'a')\nsage: K.list()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7370\n\n",
     "created_at": "2009-11-01T17:06:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,12 +22,10 @@ CC:  ylchapuy
 
 This should work
 
-
 ```
 sage: K = GF(11^5,'a')
 sage: K.list()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7370
 

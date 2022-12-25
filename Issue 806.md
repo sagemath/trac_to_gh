@@ -3,7 +3,7 @@
 archive/issues_000806.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following code causes incorrect output:\n\n```\nsage: M=random_matrix(ZZ,3,2)\n\nsage: M.elementary_divisors()\n [1, 1, 0]\n\nsage: edivs=M.elementary_divisors()\n\nsage: edivs.pop()\n 0\n\nsage: edivs\n [1, 1]\n\nsage: M.elementary_divisors()\n [1, 1]\n```\n\nThe problem seems to be elementary_divisors() caches the result, but returns a mutable object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/806\n\n",
+    "body": "Assignee: @williamstein\n\nThe following code causes incorrect output:\n\n```\nsage: M=random_matrix(ZZ,3,2)\n\nsage: M.elementary_divisors()\n [1, 1, 0]\n\nsage: edivs=M.elementary_divisors()\n\nsage: edivs.pop()\n 0\n\nsage: edivs\n [1, 1]\n\nsage: M.elementary_divisors()\n [1, 1]\n```\nThe problem seems to be elementary_divisors() caches the result, but returns a mutable object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/806\n\n",
     "created_at": "2007-10-03T14:52:20Z",
     "labels": [
         "component: linear algebra",
@@ -37,7 +37,6 @@ sage: edivs
 sage: M.elementary_divisors()
  [1, 1]
 ```
-
 The problem seems to be elementary_divisors() caches the result, but returns a mutable object.
 
 Issue created by migration from https://trac.sagemath.org/ticket/806
@@ -51,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/806
 archive/issue_comments_004854.json:
 ```json
 {
-    "body": "Patch attached.\n\n\n```\nsage: M=random_matrix(ZZ,3,2)\nsage: \nsage: M.elementary_divisors()\n[1, 1, 0]\nsage: edivs = M.elementary_divisors()\nsage: edivs.pop()\n0\nsage: edivs\n[1, 1]\nsage: M.elementary_divisors()\n[1, 1, 0]\n```\n",
+    "body": "Patch attached.\n\n```\nsage: M=random_matrix(ZZ,3,2)\nsage: \nsage: M.elementary_divisors()\n[1, 1, 0]\nsage: edivs = M.elementary_divisors()\nsage: edivs.pop()\n0\nsage: edivs\n[1, 1]\nsage: M.elementary_divisors()\n[1, 1, 0]\n```",
     "created_at": "2007-10-04T11:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/806",
     "type": "issue_comment",
@@ -61,7 +60,6 @@ archive/issue_comments_004854.json:
 ```
 
 Patch attached.
-
 
 ```
 sage: M=random_matrix(ZZ,3,2)
@@ -76,7 +74,6 @@ sage: edivs
 sage: M.elementary_divisors()
 [1, 1, 0]
 ```
-
 
 
 

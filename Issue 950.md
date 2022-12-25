@@ -3,7 +3,7 @@
 archive/issues_000950.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe only obstruction right now is that it doesn't build on OS X:\n\n\n```\n\nif ! grep darwin sysinfo.gap ; then ( cd bin/i686-apple-darwin8.10.1-gcc ; strip gap) ; fi\nGAParch=i686-apple-darwin8.10.1-gcc\n( test -d bin || mkdir bin; \\\ntest -d bin/i686-apple-darwin8.10.1-gcc || mkdir bin/i686-apple-darwin8.10.1-gcc; cd bin/i686-apple-darwin8.10.1-gcc; \\\nmake -f ../../Makefile all2 CC=\"gcc\" CFLAGS=\"-O2\"; \\\n        cp wtdist ../wtdist; cp desauto ../desauto )\ngcc -c -O2 -o leonconv.o -c ../../src/leonconv.c\n../../src/leonconv.c:2:20: error: malloc.h: No such file or directory\n../../src/leonconv.c: In function 'main':\n../../src/leonconv.c:17: warning: incompatible implicit declaration of built-in function 'exit'\n../../src/leonconv.c:28: warning: incompatible implicit declaration of built-in function 'exit'\n../../src/leonconv.c: In function 'EquivalentToGuave':\n../../src/leonconv.c:121: warning: incompatible implicit declaration of built-in function 'exit'\nmake[1]: *** [leonconv.o] Error 1\ncp: wtdist: No such file or directory\ncp: desauto: No such file or directory\nmake: *** [all] Error 1\n\nreal    2m23.081s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/950\n\n",
+    "body": "Assignee: @williamstein\n\nThe only obstruction right now is that it doesn't build on OS X:\n\n```\n\nif ! grep darwin sysinfo.gap ; then ( cd bin/i686-apple-darwin8.10.1-gcc ; strip gap) ; fi\nGAParch=i686-apple-darwin8.10.1-gcc\n( test -d bin || mkdir bin; \\\ntest -d bin/i686-apple-darwin8.10.1-gcc || mkdir bin/i686-apple-darwin8.10.1-gcc; cd bin/i686-apple-darwin8.10.1-gcc; \\\nmake -f ../../Makefile all2 CC=\"gcc\" CFLAGS=\"-O2\"; \\\n        cp wtdist ../wtdist; cp desauto ../desauto )\ngcc -c -O2 -o leonconv.o -c ../../src/leonconv.c\n../../src/leonconv.c:2:20: error: malloc.h: No such file or directory\n../../src/leonconv.c: In function 'main':\n../../src/leonconv.c:17: warning: incompatible implicit declaration of built-in function 'exit'\n../../src/leonconv.c:28: warning: incompatible implicit declaration of built-in function 'exit'\n../../src/leonconv.c: In function 'EquivalentToGuave':\n../../src/leonconv.c:121: warning: incompatible implicit declaration of built-in function 'exit'\nmake[1]: *** [leonconv.o] Error 1\ncp: wtdist: No such file or directory\ncp: desauto: No such file or directory\nmake: *** [all] Error 1\n\nreal    2m23.081s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/950\n\n",
     "created_at": "2007-10-20T21:07:44Z",
     "labels": [
         "component: packages: standard"
@@ -18,7 +18,6 @@ archive/issues_000950.json:
 Assignee: @williamstein
 
 The only obstruction right now is that it doesn't build on OS X:
-
 
 ```
 
@@ -42,7 +41,6 @@ make: *** [all] Error 1
 
 real    2m23.081s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/950
 

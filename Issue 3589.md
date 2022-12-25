@@ -3,7 +3,7 @@
 archive/issues_003589.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.0.4.alpha2-x86-Linux-fc8/tmp/number_field.py\",\nline 3630:\n   sage: K.embeddings(CC)\nExpected:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\nGot:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3589\n\n",
+    "body": "Assignee: failure\n\n```\nsage -t  devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.0.4.alpha2-x86-Linux-fc8/tmp/number_field.py\",\nline 3630:\n   sage: K.embeddings(CC)\nExpected:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947436 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\nGot:\n   [\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n   Ring morphism:\n     From: Number Field in a with defining polynomial x^3 - 2\n     To:   Complex Field with 53 bits of precision\n     Defn: a |--> 1.25992104989487\n   ]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3589\n\n",
     "created_at": "2008-07-07T20:31:16Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_003589.json:
 }
 ```
 Assignee: failure
-
 
 ```
 sage -t  devel/sage/sage/rings/number_field/number_field.py
@@ -57,7 +56,6 @@ Got:
      Defn: a |--> 1.25992104989487
    ]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3589
 
@@ -164,7 +162,7 @@ Looks good. Would it be safer to kill a few more digits, just to prevent having 
 archive/issue_comments_025318.json:
 ```json
 {
-    "body": "Replying to [comment:3 craigcitro]:\n> Looks good. Would it be safer to kill a few more digits, just to prevent having a similar ticket at some point?\n\nNo, we should only kill the digits needed, not any more. Otherwise numeric stability would go out the window :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 craigcitro]:\n> Looks good. Would it be safer to kill a few more digits, just to prevent having a similar ticket at some point?\n\n\nNo, we should only kill the digits needed, not any more. Otherwise numeric stability would go out the window :)\n\nCheers,\n\nMichael",
     "created_at": "2008-07-07T21:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3589",
     "type": "issue_comment",
@@ -175,6 +173,7 @@ archive/issue_comments_025318.json:
 
 Replying to [comment:3 craigcitro]:
 > Looks good. Would it be safer to kill a few more digits, just to prevent having a similar ticket at some point?
+
 
 No, we should only kill the digits needed, not any more. Otherwise numeric stability would go out the window :)
 

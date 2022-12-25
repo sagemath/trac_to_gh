@@ -75,7 +75,7 @@ Second, when I was editing the tutorial and running 'make tut' and 'make paper-l
 archive/issue_comments_023208.json:
 ```json
 {
-    "body": "Hi, \n\nCould you explain why you removed the section on Distributed Computing, section 2.13? Right now I don't agree with the removal of that section. I helped with reviewing it several months back and found it very accessible.\n\nThe Table of Contents needs to be updated, for example:\n\n```\n2.1 Arithmetical binary operator precedence\n2.2 Assignment, Equality, Functions, Indentation, and Counting\n2.3 Basic, and not-so-basic, Rings\n... etc\n```\n\nto \n\n```\n2.1 Assignment, Equality, and Arithmetic\n2.2 Getting Help\n2.3 Functions, Indentation, and Counting\n... etc\n```\n",
+    "body": "Hi, \n\nCould you explain why you removed the section on Distributed Computing, section 2.13? Right now I don't agree with the removal of that section. I helped with reviewing it several months back and found it very accessible.\n\nThe Table of Contents needs to be updated, for example:\n\n```\n2.1 Arithmetical binary operator precedence\n2.2 Assignment, Equality, Functions, Indentation, and Counting\n2.3 Basic, and not-so-basic, Rings\n... etc\n```\nto \n\n```\n2.1 Assignment, Equality, and Arithmetic\n2.2 Getting Help\n2.3 Functions, Indentation, and Counting\n... etc\n```",
     "created_at": "2008-06-02T06:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ The Table of Contents needs to be updated, for example:
 2.3 Basic, and not-so-basic, Rings
 ... etc
 ```
-
 to 
 
 ```
@@ -105,7 +104,6 @@ to
 2.3 Functions, Indentation, and Counting
 ... etc
 ```
-
 
 
 
@@ -136,7 +134,7 @@ Sorry about the mistake.
 archive/issue_comments_023210.json:
 ```json
 {
-    "body": "Thanks for the comments.\n\nRegarding the table of contents, that may be related to the .aux file problem that I mentioned.  In any case, the table of contents should be regenerated automatically from the tex file.\n\nRegarding the distributed computing stuff, I don't mind putting it back, but I think it doesn't belong in the guided tour (chapter 2).  Maybe it belongs in its own chapter, between the current chapters 5 (programming) and 6 (afterword).  I was also thinking that maybe it didn't belong in a tutorial: a tutorial is not supposed to be a complete reference guide, and I was wondering if this material was perhaps too specialized.\n\nI also found that section choppy: several very short subsections, with titles like \"Introduction\", \"Overview\", and \"Quick start\".  These should probably be combined into one subsection, or maybe two.  I was also a little nervous about whether this whole section was actually complete, because there were some lines commented out like \n\n\n```\n% \\subsection{Deploying dsage} % (fold)\n% To be written...\n% % section deploying_workers (end)\n% \n% \\subsection{Upgrading workers} % (fold)\n% \n% % subsection upgrading_workers (end)\n```\n\n\nIf you think it's okay with these parts missing, and if you think that this material belongs in the tutorial (not just in the reference guide or somewhere else), I'm fine putting it back (but later in the tutorial).  At some point, I think it needs some tightening and rewriting.  Let me know, and I'll make a new patch reinstating it.",
+    "body": "Thanks for the comments.\n\nRegarding the table of contents, that may be related to the .aux file problem that I mentioned.  In any case, the table of contents should be regenerated automatically from the tex file.\n\nRegarding the distributed computing stuff, I don't mind putting it back, but I think it doesn't belong in the guided tour (chapter 2).  Maybe it belongs in its own chapter, between the current chapters 5 (programming) and 6 (afterword).  I was also thinking that maybe it didn't belong in a tutorial: a tutorial is not supposed to be a complete reference guide, and I was wondering if this material was perhaps too specialized.\n\nI also found that section choppy: several very short subsections, with titles like \"Introduction\", \"Overview\", and \"Quick start\".  These should probably be combined into one subsection, or maybe two.  I was also a little nervous about whether this whole section was actually complete, because there were some lines commented out like \n\n```\n% \\subsection{Deploying dsage} % (fold)\n% To be written...\n% % section deploying_workers (end)\n% \n% \\subsection{Upgrading workers} % (fold)\n% \n% % subsection upgrading_workers (end)\n```\n\nIf you think it's okay with these parts missing, and if you think that this material belongs in the tutorial (not just in the reference guide or somewhere else), I'm fine putting it back (but later in the tutorial).  At some point, I think it needs some tightening and rewriting.  Let me know, and I'll make a new patch reinstating it.",
     "created_at": "2008-06-02T17:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
@@ -153,7 +151,6 @@ Regarding the distributed computing stuff, I don't mind putting it back, but I t
 
 I also found that section choppy: several very short subsections, with titles like "Introduction", "Overview", and "Quick start".  These should probably be combined into one subsection, or maybe two.  I was also a little nervous about whether this whole section was actually complete, because there were some lines commented out like 
 
-
 ```
 % \subsection{Deploying dsage} % (fold)
 % To be written...
@@ -163,7 +160,6 @@ I also found that section choppy: several very short subsections, with titles li
 % 
 % % subsection upgrading_workers (end)
 ```
-
 
 If you think it's okay with these parts missing, and if you think that this material belongs in the tutorial (not just in the reference guide or somewhere else), I'm fine putting it back (but later in the tutorial).  At some point, I think it needs some tightening and rewriting.  Let me know, and I'll make a new patch reinstating it.
 
@@ -274,7 +270,7 @@ The html version is also there, in case you want to look at that (although latex
 archive/issue_comments_023216.json:
 ```json
 {
-    "body": "I printed the tutorial and read it over. It seems to flow better but I have a few minor comments.\n\n1. It would be great if you could get rid of *all* the cases where the text runs into the margins even a tiny bit. The reason why is that for the amazon version of the book (uploaded via createspace.com, as opposed to lulu.com) *any* margin overruns result in the *entire* book being rejected automatically. I fould overruns on pages 8, 16 and 68, but may have missed some.\n2. At some point, \"SAGE Constructions'' will go away and be replaced by \"SAGE Cookbook\". It would not hurt to simply remove the references to the \"Constructions\" document now.\n3. The Examples on page 49 and 52 (which actually started on p 51) have a SAGE banner stating that SAGE is licensed under the GPLv2. Since this has changed to GPLv2+, my feeling is that the examples should be updated to prevent misleading information from leaking out.\n4. On page 82, one reads\n\n\n```\nsage: w         # random 0x number\n<generator object at 0xb0853d6c>\n```\n\nI wonder if\n\n\n```\nsage: w            # vvvvvvvvvv random 0x number\n<generator object at 0xb0853d6c>\n```\n\nmight be clearer?",
+    "body": "I printed the tutorial and read it over. It seems to flow better but I have a few minor comments.\n\n1. It would be great if you could get rid of *all* the cases where the text runs into the margins even a tiny bit. The reason why is that for the amazon version of the book (uploaded via createspace.com, as opposed to lulu.com) *any* margin overruns result in the *entire* book being rejected automatically. I fould overruns on pages 8, 16 and 68, but may have missed some.\n2. At some point, \"SAGE Constructions'' will go away and be replaced by \"SAGE Cookbook\". It would not hurt to simply remove the references to the \"Constructions\" document now.\n3. The Examples on page 49 and 52 (which actually started on p 51) have a SAGE banner stating that SAGE is licensed under the GPLv2. Since this has changed to GPLv2+, my feeling is that the examples should be updated to prevent misleading information from leaking out.\n4. On page 82, one reads\n\n```\nsage: w         # random 0x number\n<generator object at 0xb0853d6c>\n```\nI wonder if\n\n```\nsage: w            # vvvvvvvvvv random 0x number\n<generator object at 0xb0853d6c>\n```\nmight be clearer?",
     "created_at": "2008-06-07T19:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
@@ -290,20 +286,16 @@ I printed the tutorial and read it over. It seems to flow better but I have a fe
 3. The Examples on page 49 and 52 (which actually started on p 51) have a SAGE banner stating that SAGE is licensed under the GPLv2. Since this has changed to GPLv2+, my feeling is that the examples should be updated to prevent misleading information from leaking out.
 4. On page 82, one reads
 
-
 ```
 sage: w         # random 0x number
 <generator object at 0xb0853d6c>
 ```
-
 I wonder if
-
 
 ```
 sage: w            # vvvvvvvvvv random 0x number
 <generator object at 0xb0853d6c>
 ```
-
 might be clearer?
 
 

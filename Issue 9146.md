@@ -68,7 +68,7 @@ There is an spkg at http://sage.math.washington.edu/home/mhansen/libpng-1.2.35.p
 archive/issue_comments_085264.json:
 ```json
 {
-    "body": "I tried installing on linux and:\n\n\n```\n\nmake[2]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/build/libpng-1.2.35.p2/src'\nmake[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/build/libpng-1.2.35.p2/src'\n./spkg-install: line 55: syntax error near unexpected token `fi'\n./spkg-install: line 55: `fi'\n\n```\n",
+    "body": "I tried installing on linux and:\n\n```\n\nmake[2]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/build/libpng-1.2.35.p2/src'\nmake[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/build/libpng-1.2.35.p2/src'\n./spkg-install: line 55: syntax error near unexpected token `fi'\n./spkg-install: line 55: `fi'\n\n```",
     "created_at": "2010-06-05T05:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_085264.json:
 
 I tried installing on linux and:
 
-
 ```
 
 make[2]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/build/libpng-1.2.35.p2/src'
@@ -88,7 +87,6 @@ make[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/sage-4.4.3.rc0/spkg/b
 ./spkg-install: line 55: `fi'
 
 ```
-
 
 
 
@@ -134,7 +132,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_085267.json:
 ```json
 {
-    "body": "It doesn't work yet on Cygwin itself (on a clean install):\n\n```\n\nmake[2]: Leaving directory `/home/wstein/sage-4.4.3/spkg/build/libpng-1.2.35.p2/src'\ncp: cannot stat `/home/wstein/sage-4.4.3/local/bin/cygpng12-0.dll': No such file or directory\nError installing libpng\n\nreal    6m25.233s\nuser    1m28.601s\nsys     4m59.953s\n```\n",
+    "body": "It doesn't work yet on Cygwin itself (on a clean install):\n\n```\n\nmake[2]: Leaving directory `/home/wstein/sage-4.4.3/spkg/build/libpng-1.2.35.p2/src'\ncp: cannot stat `/home/wstein/sage-4.4.3/local/bin/cygpng12-0.dll': No such file or directory\nError installing libpng\n\nreal    6m25.233s\nuser    1m28.601s\nsys     4m59.953s\n```",
     "created_at": "2010-06-05T05:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9146",
     "type": "issue_comment",
@@ -155,7 +153,6 @@ real    6m25.233s
 user    1m28.601s
 sys     4m59.953s
 ```
-
 
 
 

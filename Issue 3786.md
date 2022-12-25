@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3786
 archive/issue_comments_026860.json:
 ```json
 {
-    "body": "Is this based on 3.1.alpha0?\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: coding\nsage: hg_sage.apply(\"/home/wdj/sagefiles/trac3786-linear_binary_codes.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg import   \"/home/wdj/sagefiles/trac3786-linear_binary_codes.patch\"\napplying /home/wdj/sagefiles/trac3786-linear_binary_codes.patch\npatching file setup.py\nHunk #1 FAILED at 680\n1 out of 1 hunk FAILED -- saving rejects to file setup.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Is this based on 3.1.alpha0?\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: coding\nsage: hg_sage.apply(\"/home/wdj/sagefiles/trac3786-linear_binary_codes.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.alpha0/devel/sage\" && hg import   \"/home/wdj/sagefiles/trac3786-linear_binary_codes.patch\"\napplying /home/wdj/sagefiles/trac3786-linear_binary_codes.patch\npatching file setup.py\nHunk #1 FAILED at 680\n1 out of 1 hunk FAILED -- saving rejects to file setup.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-08-07T10:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_026860.json:
 ```
 
 Is this based on 3.1.alpha0?
-
 
 ```
 ----------------------------------------------------------------------
@@ -57,7 +56,6 @@ Hunk #1 FAILED at 680
 1 out of 1 hunk FAILED -- saving rejects to file setup.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -124,7 +122,7 @@ As a general question, I'd like to know will this code will make it easier to cr
 archive/issue_comments_026864.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> some of the key functions (for me anyway) had only fairly trivial examples attached to them...\n> people who type \"sage: B.automorphism_group?\" won't find any interesting examples, though people who type \"sage: B.run?\" will.\n\nThis is meant to be a developer-level file, not a user-level file. Much like `binary_code.pyx`, it is supposed to be doing the work behind the scenes, when someone does something like B.permutation_automorphism_group() where B is a normal LinearCode over GF(2). The docstring for B.run() contains a large number of doctests to ensure that the file is working properly, but the idea is that since the objects in this file are never exported, only minimal examples are necessary for each function in order to see the syntax, in order for developers to plug into it.\n\n> As a general question, I'd like to know will this code will make it easier to create a fast matrix_automorphism function? \n\nThe objects and methods of this file bring us about half way from #3676 to having a matrix automorphism group function. They also bring us about half way to linear codes in general, and all of these are on my list, probably for when I get back from SD9, I'm not sure. Expect them soon, however (as well as hypergraphs!).",
+    "body": "Replying to [comment:4 wdj]:\n> some of the key functions (for me anyway) had only fairly trivial examples attached to them...\n> people who type \"sage: B.automorphism_group?\" won't find any interesting examples, though people who type \"sage: B.run?\" will.\n\n\nThis is meant to be a developer-level file, not a user-level file. Much like `binary_code.pyx`, it is supposed to be doing the work behind the scenes, when someone does something like B.permutation_automorphism_group() where B is a normal LinearCode over GF(2). The docstring for B.run() contains a large number of doctests to ensure that the file is working properly, but the idea is that since the objects in this file are never exported, only minimal examples are necessary for each function in order to see the syntax, in order for developers to plug into it.\n\n> As a general question, I'd like to know will this code will make it easier to create a fast matrix_automorphism function? \n\n\nThe objects and methods of this file bring us about half way from #3676 to having a matrix automorphism group function. They also bring us about half way to linear codes in general, and all of these are on my list, probably for when I get back from SD9, I'm not sure. Expect them soon, however (as well as hypergraphs!).",
     "created_at": "2008-08-10T17:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
@@ -137,9 +135,11 @@ Replying to [comment:4 wdj]:
 > some of the key functions (for me anyway) had only fairly trivial examples attached to them...
 > people who type "sage: B.automorphism_group?" won't find any interesting examples, though people who type "sage: B.run?" will.
 
+
 This is meant to be a developer-level file, not a user-level file. Much like `binary_code.pyx`, it is supposed to be doing the work behind the scenes, when someone does something like B.permutation_automorphism_group() where B is a normal LinearCode over GF(2). The docstring for B.run() contains a large number of doctests to ensure that the file is working properly, but the idea is that since the objects in this file are never exported, only minimal examples are necessary for each function in order to see the syntax, in order for developers to plug into it.
 
 > As a general question, I'd like to know will this code will make it easier to create a fast matrix_automorphism function? 
+
 
 The objects and methods of this file bring us about half way from #3676 to having a matrix automorphism group function. They also bring us about half way to linear codes in general, and all of these are on my list, probably for when I get back from SD9, I'm not sure. Expect them soon, however (as well as hypergraphs!).
 

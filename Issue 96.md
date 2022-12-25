@@ -3,7 +3,7 @@
 archive/issues_000096.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> computed is for m=1001.  In testing the function I found something  \n> strange and maybe you can explain this.  The following code works fine  \n> when I type it into the terminal.\n>\n> m=201\n> time chi.bernoulli(m)\n> time bernq(m, chi)\n>\n> But when I try to load this code from a .SAGE file, I get an error.  Any  \n> suggestions?\n\nHere's a temporary work-around.  Get rid of the \"time\" commands.  \nUse something like this instead:\n\nt = cputime()\nprint chi.bernoulli(m)\n\netc.\n\nThat said, I consider this a bug, and will post it to the tracker. \n\nWilliam\n```\n\n\nExample code:\n\n\n```\nsha:~/tmp was$ more a.sage\ntime 2*3\nsha:~/tmp was$ sage a.sage\n  File \"a.py\", line 3\n    time Integer(2)*Integer(3)\n               ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/96\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> computed is for m=1001.  In testing the function I found something  \n> strange and maybe you can explain this.  The following code works fine  \n> when I type it into the terminal.\n>\n> m=201\n> time chi.bernoulli(m)\n> time bernq(m, chi)\n>\n> But when I try to load this code from a .SAGE file, I get an error.  Any  \n> suggestions?\n\nHere's a temporary work-around.  Get rid of the \"time\" commands.  \nUse something like this instead:\n\nt = cputime()\nprint chi.bernoulli(m)\n\netc.\n\nThat said, I consider this a bug, and will post it to the tracker. \n\nWilliam\n```\n\nExample code:\n\n```\nsha:~/tmp was$ more a.sage\ntime 2*3\nsha:~/tmp was$ sage a.sage\n  File \"a.py\", line 3\n    time Integer(2)*Integer(3)\n               ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/96\n\n",
     "created_at": "2006-09-29T03:18:33Z",
     "labels": [
         "component: user interface",
@@ -18,7 +18,6 @@ archive/issues_000096.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 > computed is for m=1001.  In testing the function I found something  
@@ -45,9 +44,7 @@ That said, I consider this a bug, and will post it to the tracker.
 William
 ```
 
-
 Example code:
-
 
 ```
 sha:~/tmp was$ more a.sage
@@ -58,7 +55,6 @@ sha:~/tmp was$ sage a.sage
                ^
 SyntaxError: invalid syntax
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/96
 
@@ -104,7 +100,7 @@ archive/issue_events_000195.json:
 archive/issue_comments_000458.json:
 ```json
 {
-    "body": "Fixed.\n\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169206024 28800\n# Node ID 8833f0a4a8e04425abe51cd6bb2f74530cbc81e1\n# Parent  854831432a611d7c3591506c59037c5c22b08897\nFix trac #96 -- time works for scripts.\n\ndiff -r 854831432a61 -r 8833f0a4a8e0 sage/misc/interpreter.py\n--- a/sage/misc/interpreter.py  Fri Jan 19 03:20:10 2007 -0800\n+++ b/sage/misc/interpreter.py  Fri Jan 19 03:27:04 2007 -0800\n@@ -363,7 +363,7 @@ def process_file(name):\n     name2 = \"%s/%s.py\"%(dir,name[:name.find('.')])\n     os.chdir(dir)\n     contents = open(name).read()\n-    parsed = preparse_file(contents, attached) \n+    parsed = preparse_file(contents, attached, do_time=True) \n     os.chdir(cur)\n     W = open(name2,'w')\n     W.write('#'*70+'\\n')\ndiff -r 854831432a61 -r 8833f0a4a8e0 sage/server/notebook/worksheet.py\n--- a/sage/server/notebook/worksheet.py Fri Jan 19 03:20:10 2007 -0800\n+++ b/sage/server/notebook/worksheet.py Fri Jan 19 03:27:04 2007 -0800\n@@ -849,7 +849,7 @@ class Worksheet:\n         return t\n \n     def preparse(self, s):\n-        s = preparse_file(s, magic=False, do_time=False,\n+        s = preparse_file(s, magic=False, do_time=True,\n                           ignore_prompts=False)\n         return s\n\n```\n",
+    "body": "Fixed.\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169206024 28800\n# Node ID 8833f0a4a8e04425abe51cd6bb2f74530cbc81e1\n# Parent  854831432a611d7c3591506c59037c5c22b08897\nFix trac #96 -- time works for scripts.\n\ndiff -r 854831432a61 -r 8833f0a4a8e0 sage/misc/interpreter.py\n--- a/sage/misc/interpreter.py  Fri Jan 19 03:20:10 2007 -0800\n+++ b/sage/misc/interpreter.py  Fri Jan 19 03:27:04 2007 -0800\n@@ -363,7 +363,7 @@ def process_file(name):\n     name2 = \"%s/%s.py\"%(dir,name[:name.find('.')])\n     os.chdir(dir)\n     contents = open(name).read()\n-    parsed = preparse_file(contents, attached) \n+    parsed = preparse_file(contents, attached, do_time=True) \n     os.chdir(cur)\n     W = open(name2,'w')\n     W.write('#'*70+'\\n')\ndiff -r 854831432a61 -r 8833f0a4a8e0 sage/server/notebook/worksheet.py\n--- a/sage/server/notebook/worksheet.py Fri Jan 19 03:20:10 2007 -0800\n+++ b/sage/server/notebook/worksheet.py Fri Jan 19 03:27:04 2007 -0800\n@@ -849,7 +849,7 @@ class Worksheet:\n         return t\n \n     def preparse(self, s):\n-        s = preparse_file(s, magic=False, do_time=False,\n+        s = preparse_file(s, magic=False, do_time=True,\n                           ignore_prompts=False)\n         return s\n\n```",
     "created_at": "2007-01-19T11:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/96",
     "type": "issue_comment",
@@ -114,7 +110,6 @@ archive/issue_comments_000458.json:
 ```
 
 Fixed.
-
 
 ```
 
@@ -150,7 +145,6 @@ diff -r 854831432a61 -r 8833f0a4a8e0 sage/server/notebook/worksheet.py
          return s
 
 ```
-
 
 
 

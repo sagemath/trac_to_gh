@@ -113,7 +113,7 @@ In terms of naming, perhaps _magma_convert_ would be another alternative (coerci
 archive/issue_comments_029860.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> Looks good to me. This looks like it's more magma -> sage (I can't get number fields back into Sage for example), but that doesn't look like the intent of the ticket. \n> \n> In terms of naming, perhaps _magma_convert_ would be another alternative (coercion happens implicitly, conversion only when explicitly asked for). The caching architecture looks fine. \n\nSo the rename would turn this into a positive review?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 robertwb]:\n> Looks good to me. This looks like it's more magma -> sage (I can't get number fields back into Sage for example), but that doesn't look like the intent of the ticket. \n> \n> In terms of naming, perhaps _magma_convert_ would be another alternative (coercion happens implicitly, conversion only when explicitly asked for). The caching architecture looks fine. \n\n\nSo the rename would turn this into a positive review?\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T00:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
@@ -126,6 +126,7 @@ Replying to [comment:3 robertwb]:
 > Looks good to me. This looks like it's more magma -> sage (I can't get number fields back into Sage for example), but that doesn't look like the intent of the ticket. 
 > 
 > In terms of naming, perhaps _magma_convert_ would be another alternative (coercion happens implicitly, conversion only when explicitly asked for). The caching architecture looks fine. 
+
 
 So the rename would turn this into a positive review?
 
@@ -216,7 +217,7 @@ I'm happy with the code.
 archive/issue_comments_029865.json:
 ```json
 {
-    "body": "Attachment [trac_4126_manually-merged-hunks.patch](tarball://root/attachments/some-uuid/ticket4126/trac_4126_manually-merged-hunks.patch) by mabshoff created at 2008-09-26 05:05:58\n\nThe following two hunks\n\n```\n@@ -5300,6 +5301,14 @@\n         return NumberField_cyclotomic_v1, (self.__n, self.variable_name())\n\n     def _magma_init_(self):\n+        # TODO: I really don't like this on multiple levels.\n+        # (1) it kills a global symbol self.gen()\n+        # (2) it abuses how conversion works and throws in an extra define.\n+        # (3) a cyclo field in a funny generator wouldn't get converted to\n+        #     one with the right name via this.\n+        # (4) One should define _magma_coerce_ instead of _magma_init_\n+        #     in this case, probably.\n+        #    -- William\n         return 'CyclotomicField(%s); %s:=CyclotomicField(%s).1;'%(self.__n, self.gen(), self.__n)\n\n     def _repr_(self):\n```\n\nand\n\n```\n@@ -5306,7 +5306,7 @@\n         # (2) it abuses how conversion works and throws in an extra define.\n         # (3) a cyclo field in a funny generator wouldn't get converted to\n         #     one with the right name via this.\n-        # (4) One should define _magma_coerce_ instead of _magma_init_\n+        # (4) One should define _magma_convert_ instead of _magma_init_\n         #     in this case, probably.\n         #    -- William\n         return 'CyclotomicField(%s); %s:=CyclotomicField(%s).1;'%(self.__n, self.gen(), self.__n)\n```\n\ndid not apply cleanly against my merge tree, so I committed them manually. Patch is attached.\n\nCheers,\n\nMichael",
+    "body": "Attachment [trac_4126_manually-merged-hunks.patch](tarball://root/attachments/some-uuid/ticket4126/trac_4126_manually-merged-hunks.patch) by mabshoff created at 2008-09-26 05:05:58\n\nThe following two hunks\n\n```\n@@ -5300,6 +5301,14 @@\n         return NumberField_cyclotomic_v1, (self.__n, self.variable_name())\n\n     def _magma_init_(self):\n+        # TODO: I really don't like this on multiple levels.\n+        # (1) it kills a global symbol self.gen()\n+        # (2) it abuses how conversion works and throws in an extra define.\n+        # (3) a cyclo field in a funny generator wouldn't get converted to\n+        #     one with the right name via this.\n+        # (4) One should define _magma_coerce_ instead of _magma_init_\n+        #     in this case, probably.\n+        #    -- William\n         return 'CyclotomicField(%s); %s:=CyclotomicField(%s).1;'%(self.__n, self.gen(), self.__n)\n\n     def _repr_(self):\n```\nand\n\n```\n@@ -5306,7 +5306,7 @@\n         # (2) it abuses how conversion works and throws in an extra define.\n         # (3) a cyclo field in a funny generator wouldn't get converted to\n         #     one with the right name via this.\n-        # (4) One should define _magma_coerce_ instead of _magma_init_\n+        # (4) One should define _magma_convert_ instead of _magma_init_\n         #     in this case, probably.\n         #    -- William\n         return 'CyclotomicField(%s); %s:=CyclotomicField(%s).1;'%(self.__n, self.gen(), self.__n)\n```\ndid not apply cleanly against my merge tree, so I committed them manually. Patch is attached.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T05:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
@@ -246,7 +247,6 @@ The following two hunks
 
      def _repr_(self):
 ```
-
 and
 
 ```
@@ -260,7 +260,6 @@ and
          #    -- William
          return 'CyclotomicField(%s); %s:=CyclotomicField(%s).1;'%(self.__n, self.gen(), self.__n)
 ```
-
 did not apply cleanly against my merge tree, so I committed them manually. Patch is attached.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_003747.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R = Integers(17^5)\nsage: R(17)^5\n1419857\n```\n\n\nThe answer should be zero.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3747\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R = Integers(17^5)\nsage: R(17)^5\n1419857\n```\n\nThe answer should be zero.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3747\n\n",
     "created_at": "2008-07-30T14:14:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,13 +19,11 @@ archive/issues_003747.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R = Integers(17^5)
 sage: R(17)^5
 1419857
 ```
-
 
 The answer should be zero.
 

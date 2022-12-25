@@ -107,7 +107,7 @@ Attachment [trac_3563.2.patch](tarball://root/attachments/some-uuid/ticket3563/t
 archive/issue_comments_025129.json:
 ```json
 {
-    "body": "Looks good to me, and\n\n```\n[05:11am] mabshoff: ok, fixed the tests, passes on OSX and not-OSX: #3563\n```\n",
+    "body": "Looks good to me, and\n\n```\n[05:11am] mabshoff: ok, fixed the tests, passes on OSX and not-OSX: #3563\n```",
     "created_at": "2008-09-15T12:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3563",
     "type": "issue_comment",
@@ -121,7 +121,6 @@ Looks good to me, and
 ```
 [05:11am] mabshoff: ok, fixed the tests, passes on OSX and not-OSX: #3563
 ```
-
 
 
 

@@ -58,7 +58,7 @@ Applies to 4.0.2
 archive/issue_comments_051029.json:
 ```json
 {
-    "body": "For the most part this looks good, and specifically I wasn't able to find any precision issues. \n\n* I think the elliptic exponential should actually return a point on E(C), not just a tuple (x,y)\n\n* The docstring in elliptic exponential about to_Weierstrass is wrong. (Maybe it could be to_curve, default True to give something on E(C), false returning the raw `(wp(z), wp'(z))`.\n\n* The `antilogarithm` shouldn't simply discard the imaginary part: \n\n\n```\nsage: E = EllipticCurve('389a')\nsage: z0 = CC(1.76776906963, 0.303020775118)\nsage: E.elliptic_exponential(z0)\n(1.00012725137998 + 1.00002216580174*I,\n 0.000229106700941339 + 2.00010160734906*I)\nsage: E.antilogarithm(z0, 10)\n(1 : 0 : 1)\n```\n",
+    "body": "For the most part this looks good, and specifically I wasn't able to find any precision issues. \n\n* I think the elliptic exponential should actually return a point on E(C), not just a tuple (x,y)\n\n* The docstring in elliptic exponential about to_Weierstrass is wrong. (Maybe it could be to_curve, default True to give something on E(C), false returning the raw `(wp(z), wp'(z))`.\n\n* The `antilogarithm` shouldn't simply discard the imaginary part: \n\n```\nsage: E = EllipticCurve('389a')\nsage: z0 = CC(1.76776906963, 0.303020775118)\nsage: E.elliptic_exponential(z0)\n(1.00012725137998 + 1.00002216580174*I,\n 0.000229106700941339 + 2.00010160734906*I)\nsage: E.antilogarithm(z0, 10)\n(1 : 0 : 1)\n```",
     "created_at": "2009-06-25T10:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ For the most part this looks good, and specifically I wasn't able to find any pr
 
 * The `antilogarithm` shouldn't simply discard the imaginary part: 
 
-
 ```
 sage: E = EllipticCurve('389a')
 sage: z0 = CC(1.76776906963, 0.303020775118)
@@ -88,13 +87,12 @@ sage: E.antilogarithm(z0, 10)
 
 
 
-
 ---
 
 archive/issue_comments_051030.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> For the most part this looks good, and specifically I wasn't able to find any precision issues. \n> \n> * I think the elliptic exponential should actually return a point on E(C), not just a tuple (x,y)\n\nOK, I'll do that.  I literally had not tried that!\n\n> \n> * The docstring in elliptic exponential about to_Weierstrass is wrong. (Maybe it could be to_curve, default True to give something on E(C), false returning the raw `(wp(z), wp'(z))`.\n\nI'll check that out.\n\n> \n> * The `antilogarithm` shouldn't simply discard the imaginary part: \n> \n> {{{\n> sage: E = EllipticCurve('389a')\n> sage: z0 = CC(1.76776906963, 0.303020775118)\n> sage: E.elliptic_exponential(z0)\n> (1.00012725137998 + 1.00002216580174*I,\n>  0.000229106700941339 + 2.00010160734906*I)\n> sage: E.antilogarithm(z0, 10)\n> (1 : 0 : 1)\n> }}}\n\nMy reasoning is that you only use this function when you have reason to believe that the result is actually a rational point, so in particular it is real.  Can I just clarify the docstring?  Note that this function is never going to be able to give a provable result, at best it will retrun a rational point whose elliptic log is close to the input value, but it is still a useful thing to have.",
+    "body": "Replying to [comment:2 robertwb]:\n> For the most part this looks good, and specifically I wasn't able to find any precision issues. \n> \n> * I think the elliptic exponential should actually return a point on E(C), not just a tuple (x,y)\n\n\nOK, I'll do that.  I literally had not tried that!\n\n> \n> * The docstring in elliptic exponential about to_Weierstrass is wrong. (Maybe it could be to_curve, default True to give something on E(C), false returning the raw `(wp(z), wp'(z))`.\n\n\nI'll check that out.\n\n> \n> * The `antilogarithm` shouldn't simply discard the imaginary part: \n> \n> \n> ```\n> sage: E = EllipticCurve('389a')\n> sage: z0 = CC(1.76776906963, 0.303020775118)\n> sage: E.elliptic_exponential(z0)\n> (1.00012725137998 + 1.00002216580174*I,\n>  0.000229106700941339 + 2.00010160734906*I)\n> sage: E.antilogarithm(z0, 10)\n> (1 : 0 : 1)\n> ```\n\n\nMy reasoning is that you only use this function when you have reason to believe that the result is actually a rational point, so in particular it is real.  Can I just clarify the docstring?  Note that this function is never going to be able to give a provable result, at best it will retrun a rational point whose elliptic log is close to the input value, but it is still a useful thing to have.",
     "created_at": "2009-06-25T12:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -108,17 +106,20 @@ Replying to [comment:2 robertwb]:
 > 
 > * I think the elliptic exponential should actually return a point on E(C), not just a tuple (x,y)
 
+
 OK, I'll do that.  I literally had not tried that!
 
 > 
 > * The docstring in elliptic exponential about to_Weierstrass is wrong. (Maybe it could be to_curve, default True to give something on E(C), false returning the raw `(wp(z), wp'(z))`.
+
 
 I'll check that out.
 
 > 
 > * The `antilogarithm` shouldn't simply discard the imaginary part: 
 > 
-> {{{
+> 
+> ```
 > sage: E = EllipticCurve('389a')
 > sage: z0 = CC(1.76776906963, 0.303020775118)
 > sage: E.elliptic_exponential(z0)
@@ -126,7 +127,8 @@ I'll check that out.
 >  0.000229106700941339 + 2.00010160734906*I)
 > sage: E.antilogarithm(z0, 10)
 > (1 : 0 : 1)
-> }}}
+> ```
+
 
 My reasoning is that you only use this function when you have reason to believe that the result is actually a rational point, so in particular it is real.  Can I just clarify the docstring?  Note that this function is never going to be able to give a provable result, at best it will retrun a rational point whose elliptic log is close to the input value, but it is still a useful thing to have.
 
@@ -277,7 +279,7 @@ I agree with all the changes you made -- thanks for all the attention to detail!
 archive/issue_comments_051038.json:
 ```json
 {
-    "body": "Doctest failure when applied to 4.1.alpha1 -- this one looks pretty easy.\n\n\n```\nsage -t -long devel/sage/sage/symbolic/pynac.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.1.alpha1/devel/sage-main/sage/symbolic/pynac.pyx\", line 850:\n    sage: py_imag(RR(1))\nExpected:\n    0\nGot:\n    0.000000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_pynac.py\n         [2.1 s]\n```\n",
+    "body": "Doctest failure when applied to 4.1.alpha1 -- this one looks pretty easy.\n\n```\nsage -t -long devel/sage/sage/symbolic/pynac.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.1.alpha1/devel/sage-main/sage/symbolic/pynac.pyx\", line 850:\n    sage: py_imag(RR(1))\nExpected:\n    0\nGot:\n    0.000000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_pynac.py\n         [2.1 s]\n```",
     "created_at": "2009-06-27T02:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
@@ -287,7 +289,6 @@ archive/issue_comments_051038.json:
 ```
 
 Doctest failure when applied to 4.1.alpha1 -- this one looks pretty easy.
-
 
 ```
 sage -t -long devel/sage/sage/symbolic/pynac.pyx
@@ -305,7 +306,6 @@ Got:
 For whitespace errors, see the file /space/boothby/sage-4.1.alpha1/tmp/.doctest_pynac.py
          [2.1 s]
 ```
-
 
 
 

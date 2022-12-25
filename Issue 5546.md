@@ -3,7 +3,7 @@
 archive/issues_005546.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @robertwb\n\nReported by Alex Raichev on sage-support:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y', ns=1)\n(x, y)\nsage: f= x+y\nsage: type(f)\n<type 'sage.symbolic.expression.Expression'>\nsage: jacobian(f,[x,y])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/arai021/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctions.pyc in jacobian(functions, variables)\n    136\n    137     if not isinstance(variables, (tuple, list)) and not\nis_Vector(variables):\n    138         variables = [variables]\n    139\n--> 140     return matrix([[diff(f, v) for v in variables] for f in  \nfunctions])\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctional.pyc in derivative(f, *args, **kwds)\n    145         pass\n    146     if not isinstance(f, SymbolicExpression):\n--> 147         f = SR(f)  \n    148     return f.derivative(*args, **kwds)\n    149\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s\n[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)  \n    507\n    508     def _coerce_impl(self, x):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a  \nSymbolicExpression.\"%type(x)\n    569\n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type\n'sage.symbolic.expression.Expression'>' into a SymbolicExpression.  \n```\n\n\n`sage.symbolic.expression.Expression` doesn't support .derivative(), and the interface to .diff() doesn't match the Sage conventions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5546\n\n",
+    "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @robertwb\n\nReported by Alex Raichev on sage-support:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y', ns=1)\n(x, y)\nsage: f= x+y\nsage: type(f)\n<type 'sage.symbolic.expression.Expression'>\nsage: jacobian(f,[x,y])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/arai021/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctions.pyc in jacobian(functions, variables)\n    136\n    137     if not isinstance(variables, (tuple, list)) and not\nis_Vector(variables):\n    138         variables = [variables]\n    139\n--> 140     return matrix([[diff(f, v) for v in variables] for f in  \nfunctions])\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctional.pyc in derivative(f, *args, **kwds)\n    145         pass\n    146     if not isinstance(f, SymbolicExpression):\n--> 147         f = SR(f)  \n    148     return f.derivative(*args, **kwds)\n    149\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s\n[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)  \n    507\n    508     def _coerce_impl(self, x):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a  \nSymbolicExpression.\"%type(x)\n    569\n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type\n'sage.symbolic.expression.Expression'>' into a SymbolicExpression.  \n```\n\n`sage.symbolic.expression.Expression` doesn't support .derivative(), and the interface to .diff() doesn't match the Sage conventions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5546\n\n",
     "created_at": "2009-03-17T09:36:03Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Assignee: @burcin
 CC:  wstein @mwhansen @robertwb
 
 Reported by Alex Raichev on sage-support:
-
 
 ```
 ----------------------------------------------------------------------
@@ -78,7 +77,6 @@ SymbolicExpression."%type(x)
 TypeError: cannot coerce type '<type
 'sage.symbolic.expression.Expression'>' into a SymbolicExpression.  
 ```
-
 
 `sage.symbolic.expression.Expression` doesn't support .derivative(), and the interface to .diff() doesn't match the Sage conventions.
 
@@ -167,7 +165,7 @@ make pynac expressions use the multi_derivative framework
 archive/issue_comments_043060.json:
 ```json
 {
-    "body": "With these two patches applied, you can get some wild things:\n\n\n```\nsage: var('x,y,z',ns=1)\n(x, y, z)\nsage: M = matrix(2,2,[x,y,z,x])\nsage: M.base_ring()\nNew Symbolic Ring\nsage: v = vector([x,y])\nsage: v.base_ring()\nNew Symbolic Ring\nsage: M * v\nException exceptions.TypeError: 'mutable matrices are unhashable' in 'sage.modules.free_module_element.FreeModuleElement._cmp_same_ambient_c' ignored\n<ERROR: mutable matrices are unhashable>\n(([x y]\n[z x])*x, ([x y]\n[z x])*y)\nsage: v * M\n(x^2 + y*z, 2*x*y)\nsage: M * v\n<ERROR: mutable matrices are unhashable>\n(([x y]\n[z x])*x, ([x y]\n[z x])*y)\nsage: v * M * v\n2*x*y^2 + (x^2 + y*z)*x\nsage: v * (M * v)\n/Users/ncalexan/.sage/temp/dhcp_v007_000.mobile.uci.edu/36399/_Users_ncalexan__sage_init_sage_0.py:1: RuntimeWarning: tp_compare didn't return -1 or -2 for exception\n  # -*- coding: utf-8 -*-\n([x y] + ([x y]\n```\n",
+    "body": "With these two patches applied, you can get some wild things:\n\n```\nsage: var('x,y,z',ns=1)\n(x, y, z)\nsage: M = matrix(2,2,[x,y,z,x])\nsage: M.base_ring()\nNew Symbolic Ring\nsage: v = vector([x,y])\nsage: v.base_ring()\nNew Symbolic Ring\nsage: M * v\nException exceptions.TypeError: 'mutable matrices are unhashable' in 'sage.modules.free_module_element.FreeModuleElement._cmp_same_ambient_c' ignored\n<ERROR: mutable matrices are unhashable>\n(([x y]\n[z x])*x, ([x y]\n[z x])*y)\nsage: v * M\n(x^2 + y*z, 2*x*y)\nsage: M * v\n<ERROR: mutable matrices are unhashable>\n(([x y]\n[z x])*x, ([x y]\n[z x])*y)\nsage: v * M * v\n2*x*y^2 + (x^2 + y*z)*x\nsage: v * (M * v)\n/Users/ncalexan/.sage/temp/dhcp_v007_000.mobile.uci.edu/36399/_Users_ncalexan__sage_init_sage_0.py:1: RuntimeWarning: tp_compare didn't return -1 or -2 for exception\n  # -*- coding: utf-8 -*-\n([x y] + ([x y]\n```",
     "created_at": "2009-04-09T17:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
@@ -177,7 +175,6 @@ archive/issue_comments_043060.json:
 ```
 
 With these two patches applied, you can get some wild things:
-
 
 ```
 sage: var('x,y,z',ns=1)
@@ -208,7 +205,6 @@ sage: v * (M * v)
   # -*- coding: utf-8 -*-
 ([x y] + ([x y]
 ```
-
 
 
 
@@ -281,7 +277,7 @@ Comments on how to proceed?
 archive/issue_comments_043064.json:
 ```json
 {
-    "body": "> Comments on how to proceed? \n\nI'd just like to remark that Mike Hansen is probably the best person I've ever met at using rebasing patches and using revision control systems.  With him, I would not be worried about doing something that conflicts with what he has done or with circular trac dependencies.",
+    "body": "> Comments on how to proceed? \n\n\nI'd just like to remark that Mike Hansen is probably the best person I've ever met at using rebasing patches and using revision control systems.  With him, I would not be worried about doing something that conflicts with what he has done or with circular trac dependencies.",
     "created_at": "2009-04-24T15:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
@@ -291,6 +287,7 @@ archive/issue_comments_043064.json:
 ```
 
 > Comments on how to proceed? 
+
 
 I'd just like to remark that Mike Hansen is probably the best person I've ever met at using rebasing patches and using revision control systems.  With him, I would not be worried about doing something that conflicts with what he has done or with circular trac dependencies.
 

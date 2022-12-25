@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2625
 archive/issue_comments_017999.json:
 ```json
 {
-    "body": "Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by @robertwb created at 2008-03-26 06:27:18\n\nI wasn't able to apply this to 2.10.4\n\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
+    "body": "Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/pb_singular.patch) by @robertwb created at 2008-03-26 06:27:18\n\nI wasn't able to apply this to 2.10.4\n\n```\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 FAILED at 120\nHunk #2 FAILED at 148\n2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\nabort: patch failed to apply\n```\n\nare there other dependancies? \n\nLooking at the patch, it looks pretty good. The only comment I have is that __interface shouldn't have to be declared in `pbori.pxd`--it should already be there from ring.pxd",
     "created_at": "2008-03-26T06:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ Attachment [pb_singular.patch](tarball://root/attachments/some-uuid/ticket2625/p
 
 I wasn't able to apply this to 2.10.4
 
-
 ```
 patching file sage/rings/polynomial/pbori.pyx
 Hunk #1 FAILED at 120
@@ -65,7 +64,6 @@ Hunk #2 FAILED at 148
 2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej
 abort: patch failed to apply
 ```
-
 
 are there other dependancies? 
 
@@ -96,7 +94,7 @@ archive/issue_comments_018000.json:
 archive/issue_comments_018001.json:
 ```json
 {
-    "body": "Replying to [comment:1 robertwb]:\n> I wasn't able to apply this to 2.10.4\n> \n> {{{\n> patching file sage/rings/polynomial/pbori.pyx\n> Hunk #1 FAILED at 120\n> Hunk #2 FAILED at 148\n> 2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\n> abort: patch failed to apply\n> }}}\n> \n> are there other dependancies? \n\nI just checked, this ticket depends on #2622 and #2611 . After these two have been applied it applies cleanly.\n\n> Looking at the patch, it looks pretty good. The only comment I have is that `__interface` shouldn't have to be declared in `pbori.pxd` -- it should already be there from `ring.pxd` \n\nIt isn't:\n\n```\nsage: search_src(\"__interface\")\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nstructure/sage_object.pyx:                X = self.__interface[I]\nstructure/sage_object.pyx:                    self.__interface = {}\nstructure/sage_object.pyx:                    # an __interface attribute.\nstructure/sage_object.pyx:                self.__interface[I] = X\nrings/polynomial/pbori.pyx:        self.__interface = {}\nrings/ring.pxd:    cdef public object __interface\nrings/polynomial/pbori.pxd:    cdef public object __interface\n```\n\n| SAGE Version 2.10.4, Release Date: 2008-03-17                      |\n| Type notebook() for the GUI, and license() for information.        |\nThat definition in `ring.pxd` is for `FiniteField`.",
+    "body": "Replying to [comment:1 robertwb]:\n> I wasn't able to apply this to 2.10.4\n> \n> \n> ```\n> patching file sage/rings/polynomial/pbori.pyx\n> Hunk #1 FAILED at 120\n> Hunk #2 FAILED at 148\n> 2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej\n> abort: patch failed to apply\n> ```\n> \n> are there other dependancies? \n\n\nI just checked, this ticket depends on #2622 and #2611 . After these two have been applied it applies cleanly.\n\n> Looking at the patch, it looks pretty good. The only comment I have is that `__interface` shouldn't have to be declared in `pbori.pxd` -- it should already be there from `ring.pxd` \n\n\nIt isn't:\n\n```\nsage: search_src(\"__interface\")\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nstructure/sage_object.pyx:                X = self.__interface[I]\nstructure/sage_object.pyx:                    self.__interface = {}\nstructure/sage_object.pyx:                    # an __interface attribute.\nstructure/sage_object.pyx:                self.__interface[I] = X\nrings/polynomial/pbori.pyx:        self.__interface = {}\nrings/ring.pxd:    cdef public object __interface\nrings/polynomial/pbori.pxd:    cdef public object __interface\n```\n| SAGE Version 2.10.4, Release Date: 2008-03-17                      |\n| Type notebook() for the GUI, and license() for information.        |\nThat definition in `ring.pxd` is for `FiniteField`.",
     "created_at": "2008-03-26T11:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2625",
     "type": "issue_comment",
@@ -108,19 +106,22 @@ archive/issue_comments_018001.json:
 Replying to [comment:1 robertwb]:
 > I wasn't able to apply this to 2.10.4
 > 
-> {{{
+> 
+> ```
 > patching file sage/rings/polynomial/pbori.pyx
 > Hunk #1 FAILED at 120
 > Hunk #2 FAILED at 148
 > 2 out of 11 hunks FAILED -- saving rejects to file sage/rings/polynomial/pbori.pyx.rej
 > abort: patch failed to apply
-> }}}
+> ```
 > 
 > are there other dependancies? 
+
 
 I just checked, this ticket depends on #2622 and #2611 . After these two have been applied it applies cleanly.
 
 > Looking at the patch, it looks pretty good. The only comment I have is that `__interface` shouldn't have to be declared in `pbori.pxd` -- it should already be there from `ring.pxd` 
+
 
 It isn't:
 
@@ -136,7 +137,6 @@ rings/polynomial/pbori.pyx:        self.__interface = {}
 rings/ring.pxd:    cdef public object __interface
 rings/polynomial/pbori.pxd:    cdef public object __interface
 ```
-
 | SAGE Version 2.10.4, Release Date: 2008-03-17                      |
 | Type notebook() for the GUI, and license() for information.        |
 That definition in `ring.pxd` is for `FiniteField`.

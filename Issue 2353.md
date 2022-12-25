@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2353
 archive/issue_comments_015783.json:
 ```json
 {
-    "body": "> See ticket:2000 about this issue as well, though I don't see creating multivariate\n> polynomial rings with only 1 variable as a valid use case to keep MPolynomialRing.\n\nYep, since this works I agree with you:\n\n```\nsage: type(PolynomialRing(QQ,'x',1))\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: type(PolynomialRing(QQ,'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_field'>\n```\n\n\nWilliam",
+    "body": "> See ticket:2000 about this issue as well, though I don't see creating multivariate\n> polynomial rings with only 1 variable as a valid use case to keep MPolynomialRing.\n\n\nYep, since this works I agree with you:\n\n```\nsage: type(PolynomialRing(QQ,'x',1))\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: type(PolynomialRing(QQ,'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_field'>\n```\n\nWilliam",
     "created_at": "2008-02-29T21:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
@@ -51,6 +51,7 @@ archive/issue_comments_015783.json:
 > See ticket:2000 about this issue as well, though I don't see creating multivariate
 > polynomial rings with only 1 variable as a valid use case to keep MPolynomialRing.
 
+
 Yep, since this works I agree with you:
 
 ```
@@ -59,7 +60,6 @@ sage: type(PolynomialRing(QQ,'x',1))
 sage: type(PolynomialRing(QQ,'x'))
 <class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_field'>
 ```
-
 
 William
 
@@ -144,7 +144,7 @@ Changing status from new to assigned.
 archive/issue_comments_015788.json:
 ```json
 {
-    "body": "Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by @burcin created at 2008-05-11 02:17:44\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
+    "body": "Attachment [2353_deprecate_MPolynomialRing-doc_changes.patch](tarball://root/attachments/some-uuid/ticket2353/2353_deprecate_MPolynomialRing-doc_changes.patch) by @burcin created at 2008-05-11 02:17:44\n\nattachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MPolynomialRing` using Python's `warnings` module. It also prepends the docstring for `PolynomialRing` with the text:\n\n```\n    This function is deprecated and will be removed in a future version of\n    Sage. Please use PolynomialRing instead.\n\n    If you have questions regarding this function and it's replacement,\n    please send your comments to sage-support@googlegroups.com.\n```\n\nattachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.",
     "created_at": "2008-05-11T02:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
@@ -164,7 +164,6 @@ attachment:2353_deprecate_MPolynomialRing.patch adds a deprecation notice to `MP
     If you have questions regarding this function and it's replacement,
     please send your comments to sage-support@googlegroups.com.
 ```
-
 
 attachment:2353_deprecate_MPolynomialRing-doc_changes.patch replaces occurences of `MPolynomialRing` in the documentation with `PolynomialRing`. I don't know why the file `commontex/patchlevel.tex` appears in this patch.
 
@@ -193,7 +192,7 @@ Positive review, patches look good. The date/version string change for the doc p
 archive/issue_comments_015790.json:
 ```json
 {
-    "body": "The were some small problems with the doc patch:\n\n```\n--- a/tut/tut.tex       Sun May 04 11:23:15 2008 -0700\n+++ b/tut/tut.tex       Sun May 11 04:01:36 2008 +0200\n@@ -947,12 +947,10 @@ in one of two ways.\n \\index{polynomial!ring of multivariate}\n\n \\begin{verbatim}\n-sage: R = MPolynomialRing(GF(5),3,\"z\")\n+sage: R = PolynomialRing(GF(5),3,\"z\")\n sage: R\n Multivariate Polynomial Ring in z0, z1, z2 over Finite Field of size 5\n \\end{verbatim}\n-(The object \\code{MPolynomialRing(GF(5),3,\"z\")} is the same as\n-the object \\code{MPolynomialRing(GF(5),3,\"z\")}.)\n Just as for univariate polynomials, there is an alternative more\n compact notation:\n \\begin{verbatim}\n```\n\n\nThis conflicts with some work done by John Palmieri, so I resolved that manually.\n\nCheers,\n\nMichael",
+    "body": "The were some small problems with the doc patch:\n\n```\n--- a/tut/tut.tex       Sun May 04 11:23:15 2008 -0700\n+++ b/tut/tut.tex       Sun May 11 04:01:36 2008 +0200\n@@ -947,12 +947,10 @@ in one of two ways.\n \\index{polynomial!ring of multivariate}\n\n \\begin{verbatim}\n-sage: R = MPolynomialRing(GF(5),3,\"z\")\n+sage: R = PolynomialRing(GF(5),3,\"z\")\n sage: R\n Multivariate Polynomial Ring in z0, z1, z2 over Finite Field of size 5\n \\end{verbatim}\n-(The object \\code{MPolynomialRing(GF(5),3,\"z\")} is the same as\n-the object \\code{MPolynomialRing(GF(5),3,\"z\")}.)\n Just as for univariate polynomials, there is an alternative more\n compact notation:\n \\begin{verbatim}\n```\n\nThis conflicts with some work done by John Palmieri, so I resolved that manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-04T18:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2353",
     "type": "issue_comment",
@@ -222,7 +221,6 @@ The were some small problems with the doc patch:
  compact notation:
  \begin{verbatim}
 ```
-
 
 This conflicts with some work done by John Palmieri, so I resolved that manually.
 

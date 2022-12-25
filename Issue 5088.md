@@ -88,7 +88,7 @@ Can you post some timings comparing your new code to sage before your new code..
 archive/issue_comments_038693.json:
 ```json
 {
-    "body": "With a smooth order:\n\n```\nsage: factor(5^15-1)\n2^2 * 11 * 31 * 71 * 181 * 1741\n```\n\nBEFORE:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(5^15)\nsage: g=F.gen()\nsage: u=g^123456789\nsage: time log(u,g)\nCPU times: user 271.39 s, sys: 4.72 s, total: 276.11 s\nWall time: 276.96 s\n123456789\nsage: get_memory_usage()\n378.21875\n```\n\nAFTER:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: F.<a>=GF(5^15)\nsage: g=F.gen()\nsage: u=g^123456789\nsage: time log(u,g)\nCPU times: user 0.14 s, sys: 0.00 s, total: 0.14 s\nWall time: 0.16 s\n123456789\nsage: get_memory_usage()\n115.8984375\n```\n",
+    "body": "With a smooth order:\n\n```\nsage: factor(5^15-1)\n2^2 * 11 * 31 * 71 * 181 * 1741\n```\nBEFORE:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(5^15)\nsage: g=F.gen()\nsage: u=g^123456789\nsage: time log(u,g)\nCPU times: user 271.39 s, sys: 4.72 s, total: 276.11 s\nWall time: 276.96 s\n123456789\nsage: get_memory_usage()\n378.21875\n```\nAFTER:\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: F.<a>=GF(5^15)\nsage: g=F.gen()\nsage: u=g^123456789\nsage: time log(u,g)\nCPU times: user 0.14 s, sys: 0.00 s, total: 0.14 s\nWall time: 0.16 s\n123456789\nsage: get_memory_usage()\n115.8984375\n```",
     "created_at": "2009-01-24T16:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5088",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ With a smooth order:
 sage: factor(5^15-1)
 2^2 * 11 * 31 * 71 * 181 * 1741
 ```
-
 BEFORE:
 
 ```
@@ -119,9 +118,9 @@ Wall time: 276.96 s
 sage: get_memory_usage()
 378.21875
 ```
-
 AFTER:
-
+| Sage Version 3.2.3, Release Date: 2009-01-05                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -136,7 +135,6 @@ Wall time: 0.16 s
 sage: get_memory_usage()
 115.8984375
 ```
-
 
 
 
@@ -163,7 +161,7 @@ NICE!
 archive/issue_comments_038695.json:
 ```json
 {
-    "body": "and a not so smooth example\n\n```\nsage:factor(3^13-1)\n2 * 797161\n```\n\nBEFORE:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(3**13)\nsage: g=F.gen()\nsage: u=g^1234567\nsage: timeit('log(u,g)')\n5 loops, best of 3: 1.54 s per loop\nsage: get_memory_usage()\n155.11328125\n```\n\nAFTER:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: F.<a>=GF(3**13)\nsage: g=F.gen()\nsage: u=g^1234567\nsage: timeit('log(u,g)')\n5 loops, best of 3: 931 ms per loop\nsage: get_memory_usage()\n139.4296875\n```\n",
+    "body": "and a not so smooth example\n\n```\nsage:factor(3^13-1)\n2 * 797161\n```\nBEFORE:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<a>=GF(3**13)\nsage: g=F.gen()\nsage: u=g^1234567\nsage: timeit('log(u,g)')\n5 loops, best of 3: 1.54 s per loop\nsage: get_memory_usage()\n155.11328125\n```\nAFTER:\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: yann\nsage: F.<a>=GF(3**13)\nsage: g=F.gen()\nsage: u=g^1234567\nsage: timeit('log(u,g)')\n5 loops, best of 3: 931 ms per loop\nsage: get_memory_usage()\n139.4296875\n```",
     "created_at": "2009-01-24T16:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5088",
     "type": "issue_comment",
@@ -178,7 +176,6 @@ and a not so smooth example
 sage:factor(3^13-1)
 2 * 797161
 ```
-
 BEFORE:
 
 ```
@@ -192,9 +189,9 @@ sage: timeit('log(u,g)')
 sage: get_memory_usage()
 155.11328125
 ```
-
 AFTER:
-
+| Sage Version 3.2.3, Release Date: 2009-01-05                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -207,7 +204,6 @@ sage: timeit('log(u,g)')
 sage: get_memory_usage()
 139.4296875
 ```
-
 
 
 
@@ -298,7 +294,7 @@ Michael
 archive/issue_comments_038699.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n> John: William already gave this a positive review.\n\nOK, I saw that after saying I would do it.  I did have two doctest failures but they seem to be unrelated since they also fail in my unpatched main branch, and are probably due to the messed up upgrade.\n\n> \n> Merged in Sage 3.3.alpha2\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:7 mabshoff]:\n> John: William already gave this a positive review.\n\n\nOK, I saw that after saying I would do it.  I did have two doctest failures but they seem to be unrelated since they also fail in my unpatched main branch, and are probably due to the messed up upgrade.\n\n> \n> Merged in Sage 3.3.alpha2\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2009-01-24T18:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5088",
     "type": "issue_comment",
@@ -309,6 +305,7 @@ archive/issue_comments_038699.json:
 
 Replying to [comment:7 mabshoff]:
 > John: William already gave this a positive review.
+
 
 OK, I saw that after saying I would do it.  I did have two doctest failures but they seem to be unrelated since they also fail in my unpatched main branch, and are probably due to the messed up upgrade.
 

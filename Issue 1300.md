@@ -3,7 +3,7 @@
 archive/issues_001300.json:
 ```json
 {
-    "body": "Assignee: Martin Albrecht\n\nCC:  @malb\n\nKeywords: Singular matrix\n\nWhen Singular prints a matrix M then it tries to keep the row-column structure of M visible on screen. If this is impossible (for large polynomials), the entries are abbreviated:\n\n```\n> ring r = 7,(x(1..2)),dp;\n> matrix M[1][3] = x(1)^7*x(2)-x(1)*x(2)^7, x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12, x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18;\n> print(M);\nx(1)^7*x(2)-x(1)*x(2)^7,M[1,2],M[1,3]\n```\n\n\nThe Singular developers have good reasons for it and wouldn't like to change it.\n\nUnfortunate consequence for Sage: Creating this matrix via the Singular interface, it is assigned an automatically generated name; printing it, Singular uses that name, that the user probably is not aware of:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\nsage: print M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\n```\n\n\nI believe it is confusing for the user to be confronted with variable names that he/she has not defined him/herself. Therefore i think the printing of Singular-matrices in Sage should be customized.\n\n**Remarks**\n* Singular's reason for abbreviation is obvious: When printing a matrix, its shape should be apparent. This problem should also be addressed in some way by a new version of `SingularElement.__str__`.\n* One **solution mimicking Singular's behaviour** is to replace the automatically generated name (`sage1` in the example above) by the user-defined name (`M` in the example above). In that way, one has an output that preserves the shape of the matrix but reduces confusion of the user by cryptic variable names.\n* Singular provides several other ways to show a matrix; perhaps you'll find one of them nicer. \n\n-----\nIn the following, i show several ways to continue the Singular-example above, which may provide a nicer printing.\n\n```\n> LIB \"inout.lib\";\n// ** loaded /usr/local/lib/Singular/3-0-3/LIB/inout.lib (1.28,2006/07/20)\n> pmat(M);\nx(1)^7*x(2)-x(1)*x(2)^7,\nx(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,\nx(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n> pmat(M,14);\nx(1)^7*x(2)-x( x(1)^12-2*x(1) x(1)^18+2*x(1)\n```\n\nThe first shows everything without abbreviation, even though this destroys the visible matrix shape. The latter shows at most the leading 15 letters of each column, which is another form of abbreviation. However, for the last two polynomials, it is impossible to guess whether they are abbreviated or not!\n\n**I think this is a solution that could almost be adopted by Sage.** However, IMHO, the user __must__ be alerted about the presence of an abbreviation, e.g., by appending '`...`' if there has been an abbreviation. So, the following output would be clearer:\n\n```\nx(1)^7*x(2)-x(... x(1)^12-2*x(1)... x(1)^18+2*x(1)...\n```\n\n-----\n\n```\n> M;\nM[1,1]=x(1)^7*x(2)-x(1)*x(2)^7\nM[1,2]=x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12\nM[1,3]=x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n```\n\nThis is not good, since this doesn't show the shape of the matrix and, called via the interface, would again show the automatically generated variable name.\n-----\n\n```\n> print(M,\"%l\");\nmatrix(ideal(x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18),1,3)\n```\n\nThis shows a definition of the matrix, but the shape is invisible\n\nSorry for such long description of a minor problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1300\n\n",
+    "body": "Assignee: Martin Albrecht\n\nCC:  @malb\n\nKeywords: Singular matrix\n\nWhen Singular prints a matrix M then it tries to keep the row-column structure of M visible on screen. If this is impossible (for large polynomials), the entries are abbreviated:\n\n```\n> ring r = 7,(x(1..2)),dp;\n> matrix M[1][3] = x(1)^7*x(2)-x(1)*x(2)^7, x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12, x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18;\n> print(M);\nx(1)^7*x(2)-x(1)*x(2)^7,M[1,2],M[1,3]\n```\n\nThe Singular developers have good reasons for it and wouldn't like to change it.\n\nUnfortunate consequence for Sage: Creating this matrix via the Singular interface, it is assigned an automatically generated name; printing it, Singular uses that name, that the user probably is not aware of:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\nsage: print M\nx(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]\n```\n\nI believe it is confusing for the user to be confronted with variable names that he/she has not defined him/herself. Therefore i think the printing of Singular-matrices in Sage should be customized.\n\n**Remarks**\n* Singular's reason for abbreviation is obvious: When printing a matrix, its shape should be apparent. This problem should also be addressed in some way by a new version of `SingularElement.__str__`.\n* One **solution mimicking Singular's behaviour** is to replace the automatically generated name (`sage1` in the example above) by the user-defined name (`M` in the example above). In that way, one has an output that preserves the shape of the matrix but reduces confusion of the user by cryptic variable names.\n* Singular provides several other ways to show a matrix; perhaps you'll find one of them nicer. \n\n---\nIn the following, i show several ways to continue the Singular-example above, which may provide a nicer printing.\n\n```\n> LIB \"inout.lib\";\n// ** loaded /usr/local/lib/Singular/3-0-3/LIB/inout.lib (1.28,2006/07/20)\n> pmat(M);\nx(1)^7*x(2)-x(1)*x(2)^7,\nx(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,\nx(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n> pmat(M,14);\nx(1)^7*x(2)-x( x(1)^12-2*x(1) x(1)^18+2*x(1)\n```\nThe first shows everything without abbreviation, even though this destroys the visible matrix shape. The latter shows at most the leading 15 letters of each column, which is another form of abbreviation. However, for the last two polynomials, it is impossible to guess whether they are abbreviated or not!\n\n**I think this is a solution that could almost be adopted by Sage.** However, IMHO, the user __must__ be alerted about the presence of an abbreviation, e.g., by appending '`...`' if there has been an abbreviation. So, the following output would be clearer:\n\n```\nx(1)^7*x(2)-x(... x(1)^12-2*x(1)... x(1)^18+2*x(1)...\n```\n\n---\n\n```\n> M;\nM[1,1]=x(1)^7*x(2)-x(1)*x(2)^7\nM[1,2]=x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12\nM[1,3]=x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18\n```\nThis is not good, since this doesn't show the shape of the matrix and, called via the interface, would again show the automatically generated variable name.\n\n---\n\n```\n> print(M,\"%l\");\nmatrix(ideal(x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18),1,3)\n```\nThis shows a definition of the matrix, but the shape is invisible\n\nSorry for such long description of a minor problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1300\n\n",
     "created_at": "2007-11-28T16:43:37Z",
     "labels": [
         "component: interfaces",
@@ -32,7 +32,6 @@ When Singular prints a matrix M then it tries to keep the row-column structure o
 x(1)^7*x(2)-x(1)*x(2)^7,M[1,2],M[1,3]
 ```
 
-
 The Singular developers have good reasons for it and wouldn't like to change it.
 
 Unfortunate consequence for Sage: Creating this matrix via the Singular interface, it is assigned an automatically generated name; printing it, Singular uses that name, that the user probably is not aware of:
@@ -46,7 +45,6 @@ sage: print M
 x(1)^7*x(2)-x(1)*x(2)^7,sage1[1,2],sage1[1,3]
 ```
 
-
 I believe it is confusing for the user to be confronted with variable names that he/she has not defined him/herself. Therefore i think the printing of Singular-matrices in Sage should be customized.
 
 **Remarks**
@@ -54,7 +52,7 @@ I believe it is confusing for the user to be confronted with variable names that
 * One **solution mimicking Singular's behaviour** is to replace the automatically generated name (`sage1` in the example above) by the user-defined name (`M` in the example above). In that way, one has an output that preserves the shape of the matrix but reduces confusion of the user by cryptic variable names.
 * Singular provides several other ways to show a matrix; perhaps you'll find one of them nicer. 
 
------
+---
 In the following, i show several ways to continue the Singular-example above, which may provide a nicer printing.
 
 ```
@@ -67,7 +65,6 @@ x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)
 > pmat(M,14);
 x(1)^7*x(2)-x( x(1)^12-2*x(1) x(1)^18+2*x(1)
 ```
-
 The first shows everything without abbreviation, even though this destroys the visible matrix shape. The latter shows at most the leading 15 letters of each column, which is another form of abbreviation. However, for the last two polynomials, it is impossible to guess whether they are abbreviated or not!
 
 **I think this is a solution that could almost be adopted by Sage.** However, IMHO, the user __must__ be alerted about the presence of an abbreviation, e.g., by appending '`...`' if there has been an abbreviation. So, the following output would be clearer:
@@ -76,7 +73,7 @@ The first shows everything without abbreviation, even though this destroys the v
 x(1)^7*x(2)-x(... x(1)^12-2*x(1)... x(1)^18+2*x(1)...
 ```
 
------
+---
 
 ```
 > M;
@@ -84,15 +81,14 @@ M[1,1]=x(1)^7*x(2)-x(1)*x(2)^7
 M[1,2]=x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12
 M[1,3]=x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18
 ```
-
 This is not good, since this doesn't show the shape of the matrix and, called via the interface, would again show the automatically generated variable name.
------
+
+---
 
 ```
 > print(M,"%l");
 matrix(ideal(x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18),1,3)
 ```
-
 This shows a definition of the matrix, but the shape is invisible
 
 Sorry for such long description of a minor problem.
@@ -161,7 +157,7 @@ Changing component from interfaces to commutative algebra.
 archive/issue_comments_008140.json:
 ```json
 {
-    "body": "As i mentioned, `pmat` (in Singular's `inout.lib`) may help. However, up to now, this function did only display a matrix on screen (it had no return value!), and if a polynomial was truncated, the user hasn't been notified.\n\nI just changed `pmat` in Singular's cvs repository. Now, it returns a string, truncations are made visible, and the column separator now is \", \" (before, it was sometimes \" \" and sometimes \",\").\n\nI don't know if the rest of the Singular team accepts this change (after all, a change from \"no return\" to \"return a string\" is non-trivial). If this is the case, i think using `pmat` in the method `__str__` (and perhaps `__repr__`) for `SingularElement`s of type `matrix`, choosing the parameter so that the matrix fits on screen, may help to close this ticket.\n\nExamples using the new pmat:\n\n```\nsage: singular.LIB(\"inout.lib\")\nsage: R=singular.ring(0,'(x,y,z)','dp')\nsage: I=singular.ideal('x','z+3y','x+y','z')\nsage: M=(I^2).matrix(3,3)\nsage: M\n\nx^2,      3*x*y+x*z,      x^2+x*y,\nx*z,      9*y^2+6*y*z+z^2,3*x*y+3*y^2+x*z+y*z,\n3*y*z+z^2,x^2+2*x*y+y^2,  x*z+y*z\nsage: M.pmat()\n\nx^2,       3*x*y+x*z,       x^2+x*y,\nx*z,       9*y^2+6*y*z+z^2, 3*x*y+3*y^2+x*z+y*z,\n3*y*z+z^2, x^2+2*x*y+y^2,   x*z+y*z\n# note the additional blanc space; i find it nicer this way.\nsage: M.pmat(7)\n\nx^2,     3*x*y.., x^2+x*y,\nx*z,     9*y^2.., 3*x*y..,\n3*y*z.., x^2+2.., x*z+y*z\n# Now it is clear which polynomials are truncated and which are not!\n```\n",
+    "body": "As i mentioned, `pmat` (in Singular's `inout.lib`) may help. However, up to now, this function did only display a matrix on screen (it had no return value!), and if a polynomial was truncated, the user hasn't been notified.\n\nI just changed `pmat` in Singular's cvs repository. Now, it returns a string, truncations are made visible, and the column separator now is \", \" (before, it was sometimes \" \" and sometimes \",\").\n\nI don't know if the rest of the Singular team accepts this change (after all, a change from \"no return\" to \"return a string\" is non-trivial). If this is the case, i think using `pmat` in the method `__str__` (and perhaps `__repr__`) for `SingularElement`s of type `matrix`, choosing the parameter so that the matrix fits on screen, may help to close this ticket.\n\nExamples using the new pmat:\n\n```\nsage: singular.LIB(\"inout.lib\")\nsage: R=singular.ring(0,'(x,y,z)','dp')\nsage: I=singular.ideal('x','z+3y','x+y','z')\nsage: M=(I^2).matrix(3,3)\nsage: M\n\nx^2,      3*x*y+x*z,      x^2+x*y,\nx*z,      9*y^2+6*y*z+z^2,3*x*y+3*y^2+x*z+y*z,\n3*y*z+z^2,x^2+2*x*y+y^2,  x*z+y*z\nsage: M.pmat()\n\nx^2,       3*x*y+x*z,       x^2+x*y,\nx*z,       9*y^2+6*y*z+z^2, 3*x*y+3*y^2+x*z+y*z,\n3*y*z+z^2, x^2+2*x*y+y^2,   x*z+y*z\n# note the additional blanc space; i find it nicer this way.\nsage: M.pmat(7)\n\nx^2,     3*x*y.., x^2+x*y,\nx*z,     9*y^2.., 3*x*y..,\n3*y*z.., x^2+2.., x*z+y*z\n# Now it is clear which polynomials are truncated and which are not!\n```",
     "created_at": "2007-11-29T14:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
@@ -204,7 +200,6 @@ x*z,     9*y^2.., 3*x*y..,
 
 
 
-
 ---
 
 archive/issue_comments_008141.json:
@@ -228,7 +223,7 @@ Is the change in the newest Singular upstream? If so, we can make use of it. If 
 archive/issue_comments_008142.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n> Is the change in the newest Singular upstream? If so, we can make use of it. If not, we should wait for it to hit the official Singular release.\n\nI realize that we still didn't finish to work on it. \n\nYes, it is in the official release, and the above example \n\n```\nsage: M.pmat(7)\nx^2,     3*x*y.., x^2+x*y,\nx*z,     9*y^2.., 3*x*y..,\n3*y*z.., x^2+2.., x*z+y*z\n```\n\nis now the standard behaviour.",
+    "body": "Replying to [comment:4 malb]:\n> Is the change in the newest Singular upstream? If so, we can make use of it. If not, we should wait for it to hit the official Singular release.\n\n\nI realize that we still didn't finish to work on it. \n\nYes, it is in the official release, and the above example \n\n```\nsage: M.pmat(7)\nx^2,     3*x*y.., x^2+x*y,\nx*z,     9*y^2.., 3*x*y..,\n3*y*z.., x^2+2.., x*z+y*z\n```\nis now the standard behaviour.",
     "created_at": "2008-08-14T10:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
@@ -240,6 +235,7 @@ archive/issue_comments_008142.json:
 Replying to [comment:4 malb]:
 > Is the change in the newest Singular upstream? If so, we can make use of it. If not, we should wait for it to hit the official Singular release.
 
+
 I realize that we still didn't finish to work on it. 
 
 Yes, it is in the official release, and the above example 
@@ -250,7 +246,6 @@ x^2,     3*x*y.., x^2+x*y,
 x*z,     9*y^2.., 3*x*y..,
 3*y*z.., x^2+2.., x*z+y*z
 ```
-
 is now the standard behaviour.
 
 
@@ -280,7 +275,7 @@ Try to avoid autogenerated names when printing pexpect objects
 archive/issue_comments_008144.json:
 ```json
 {
-    "body": "Printing Singular matrices relies on some `__repr__` method from `expect.py`. I changed it as follows:\n1. Get the output suggested by self.parent()\n2. If this output contains self._name then we need to do something, because the appearance of an autogenerated name may confuse the user:\n   * If self has a customized name, then use it!\n   * Otherwise, if self is a `SingularElement` of type matrix then try `pmat`\n   * Otherwise, return the output suggested by self.parent() (even though it contains an autogenerated name).\n\nHence, my patch changes the usual behaviour only if either the object has a custom name, or it happens to be a singular matrix, in which case the polynomials will be cut by default after 20 characters.\n\nHence, the example is like this, which i think is an improvement:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x.., x(1)^12-2*x(1)^9*x.., x(1)^18+2*x(1)^15*..\nsage: M.rename('T')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,T[1,2],T[1,3]\n```\n\n\nCertainly the \"cut point\" (now 20 characters) could be customized. Any suggestions how this should be done?",
+    "body": "Printing Singular matrices relies on some `__repr__` method from `expect.py`. I changed it as follows:\n1. Get the output suggested by self.parent()\n2. If this output contains self._name then we need to do something, because the appearance of an autogenerated name may confuse the user:\n   * If self has a customized name, then use it!\n   * Otherwise, if self is a `SingularElement` of type matrix then try `pmat`\n   * Otherwise, return the output suggested by self.parent() (even though it contains an autogenerated name).\n\nHence, my patch changes the usual behaviour only if either the object has a custom name, or it happens to be a singular matrix, in which case the polynomials will be cut by default after 20 characters.\n\nHence, the example is like this, which i think is an improvement:\n\n```\nsage: R=singular.ring(7,'(x(1..2))','dp')\nsage: M=singular.matrix(1,3,'x(1)^7*x(2)-x(1)*x(2)^7,x(1)^12-2*x(1)^9*x(2)^3-x(1)^6*x(2)^6+2*x(1)^3*x(2)^9+x(2)^12,x(1)^18+2*x(1)^15*x(2)^3+3*x(1)^12*x(2)^6+3*x(1)^6*x(2)^12-2*x(1)^3*x(2)^15+x(2)^18')\nsage: M\nx(1)^7*x(2)-x(1)*x.., x(1)^12-2*x(1)^9*x.., x(1)^18+2*x(1)^15*..\nsage: M.rename('T')\nsage: M\nx(1)^7*x(2)-x(1)*x(2)^7,T[1,2],T[1,3]\n```\n\nCertainly the \"cut point\" (now 20 characters) could be customized. Any suggestions how this should be done?",
     "created_at": "2008-08-14T11:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
@@ -309,7 +304,6 @@ sage: M.rename('T')
 sage: M
 x(1)^7*x(2)-x(1)*x(2)^7,T[1,2],T[1,3]
 ```
-
 
 Certainly the "cut point" (now 20 characters) could be customized. Any suggestions how this should be done?
 
@@ -362,7 +356,7 @@ I'll give Simon's patch a positive review if my patch is applied afterwards. So 
 archive/issue_comments_008147.json:
 ```json
 {
-    "body": "Replying to [comment:8 malb]:\n> **Review**\n>  * no doctest was added to demonstrate the new behavior (added in attached patch)\n>  * `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).\n> \n> I'll give Simon's patch a positive review if my patch is applied afterwards. So my patch needs a review.\n\nI agree with you that the `__repr__` method in `expect.py` should be overwritten with a method in `singular.py`. The doc test shows one the new feature for Singular matrices. Also, doc tests pass.\n\nSo, up to here, i give Martin's patch a positive review.\n\nHowever, one new feature for the `__repr__` method (custom names) is not in the doc tests. Therefore i'll create another patch, with an additional doc test.",
+    "body": "Replying to [comment:8 malb]:\n> **Review**\n> * no doctest was added to demonstrate the new behavior (added in attached patch)\n> * `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).\n> \n> I'll give Simon's patch a positive review if my patch is applied afterwards. So my patch needs a review.\n\n\nI agree with you that the `__repr__` method in `expect.py` should be overwritten with a method in `singular.py`. The doc test shows one the new feature for Singular matrices. Also, doc tests pass.\n\nSo, up to here, i give Martin's patch a positive review.\n\nHowever, one new feature for the `__repr__` method (custom names) is not in the doc tests. Therefore i'll create another patch, with an additional doc test.",
     "created_at": "2008-08-18T22:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1300",
     "type": "issue_comment",
@@ -373,10 +367,11 @@ archive/issue_comments_008147.json:
 
 Replying to [comment:8 malb]:
 > **Review**
->  * no doctest was added to demonstrate the new behavior (added in attached patch)
->  * `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).
+> * no doctest was added to demonstrate the new behavior (added in attached patch)
+> * `expect.py` is not the right place for Singular specific interface issue, thus it should be moved code to `singular.py` (done in attached patch).
 > 
 > I'll give Simon's patch a positive review if my patch is applied afterwards. So my patch needs a review.
+
 
 I agree with you that the `__repr__` method in `expect.py` should be overwritten with a method in `singular.py`. The doc test shows one the new feature for Singular matrices. Also, doc tests pass.
 

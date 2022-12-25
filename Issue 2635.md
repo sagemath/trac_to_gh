@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2635
 archive/issue_comments_018065.json:
 ```json
 {
-    "body": "\n```\n\nOn Fri, Mar 21, 2008 at 11:22 AM, Marshall Hampton <hamptonio@gmail.com> wrote:\n> \n>  If I kill my notebook session, and then restart, it seems that often\n>  the \"+\" character has been stripped from my worksheets.  However, this\n>  doesn't always happen.  It does happen frequently, using 2.10.4 on\n>  both ppc and intel macs.\n>  \n>  Can anyone else reproduce this?\n\nI think this is a ** MAJOR BUG ** introduced by a new feature that Tom Boothby\njust implemented in the notebook (and that I didn't catch in the referee process).  \nThis is definitely a block for 2.11.    Try the following to replicate it:\n   1. Create a new blank worksheet with several blank cells\n   2. Type 2+2 in the first cell -- do *NOT* press shift enter. \n   3. Simply move the cursor out of the first cell to the second one (use down arrow).\n   4. Now refresh the page -- or better leave the page and go back and refresh.\n  The plus sign vanishes!\n\nThe problem is that when you change a cell and move the cursor out,\nthe changed cell is incorrectly sent back to the server.   To avoid this\nfor now, never ever change a cell without shift-entering it. \n\nWilliam\n\n```\n",
+    "body": "```\n\nOn Fri, Mar 21, 2008 at 11:22 AM, Marshall Hampton <hamptonio@gmail.com> wrote:\n> \n>  If I kill my notebook session, and then restart, it seems that often\n>  the \"+\" character has been stripped from my worksheets.  However, this\n>  doesn't always happen.  It does happen frequently, using 2.10.4 on\n>  both ppc and intel macs.\n>  \n>  Can anyone else reproduce this?\n\nI think this is a ** MAJOR BUG ** introduced by a new feature that Tom Boothby\njust implemented in the notebook (and that I didn't catch in the referee process).  \nThis is definitely a block for 2.11.    Try the following to replicate it:\n   1. Create a new blank worksheet with several blank cells\n   2. Type 2+2 in the first cell -- do *NOT* press shift enter. \n   3. Simply move the cursor out of the first cell to the second one (use down arrow).\n   4. Now refresh the page -- or better leave the page and go back and refresh.\n  The plus sign vanishes!\n\nThe problem is that when you change a cell and move the cursor out,\nthe changed cell is incorrectly sent back to the server.   To avoid this\nfor now, never ever change a cell without shift-entering it. \n\nWilliam\n\n```",
     "created_at": "2008-03-21T19:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2635",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_018065.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -71,7 +70,6 @@ for now, never ever change a cell without shift-entering it.
 William
 
 ```
-
 
 
 

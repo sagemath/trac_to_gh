@@ -132,7 +132,7 @@ Must be placed in DB_HOME/reflexive_polytopes
 archive/issue_comments_066022.json:
 ```json
 {
-    "body": "4 sobj files should be removed and replaced with two attached text files.\n\nAfter some thinking and adjusting internal functions it turned out to be possible to reduce computing time for databases from 15 minutes to about 5 seconds (by avoiding extra checks and using initial polytopes in normal form), which is about 10 times longer than it was taking to load pickled files, but still seems quite reasonable to me as a once-per-session computation. It also now has the advantage of cached points (which are dropped during pickling for faster unpickling).\n\nTiming (on sage.math):\n\nBefore (with sobj's):\n\n\n```\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.51 s, sys: 0.02 s, total: 0.53 s\nWall time: 0.54 s\n4319\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4319\n\n```\n\n\nAfter (with text data files):\n\n\n```\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 5.04 s, sys: 0.25 s, total: 5.29 s\nWall time: 5.90 s\n4319\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4319\n```\n",
+    "body": "4 sobj files should be removed and replaced with two attached text files.\n\nAfter some thinking and adjusting internal functions it turned out to be possible to reduce computing time for databases from 15 minutes to about 5 seconds (by avoiding extra checks and using initial polytopes in normal form), which is about 10 times longer than it was taking to load pickled files, but still seems quite reasonable to me as a once-per-session computation. It also now has the advantage of cached points (which are dropped during pickling for faster unpickling).\n\nTiming (on sage.math):\n\nBefore (with sobj's):\n\n```\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.51 s, sys: 0.02 s, total: 0.53 s\nWall time: 0.54 s\n4319\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4319\n\n```\n\nAfter (with text data files):\n\n```\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 5.04 s, sys: 0.25 s, total: 5.29 s\nWall time: 5.90 s\n4319\nsage: time len(ReflexivePolytopes(3))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n4319\n```",
     "created_at": "2009-12-17T07:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
@@ -149,7 +149,6 @@ Timing (on sage.math):
 
 Before (with sobj's):
 
-
 ```
 sage: time len(ReflexivePolytopes(3))
 CPU times: user 0.51 s, sys: 0.02 s, total: 0.53 s
@@ -162,9 +161,7 @@ Wall time: 0.00 s
 
 ```
 
-
 After (with text data files):
-
 
 ```
 sage: time len(ReflexivePolytopes(3))
@@ -176,7 +173,6 @@ CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 4319
 ```
-
 
 
 
@@ -329,7 +325,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066031.json:
 ```json
 {
-    "body": "\n```\n Please remember to update the relevant ticket fields --- the release\n managers use an automated script to generate lists of merged tickets.\n\n```\n",
+    "body": "```\n Please remember to update the relevant ticket fields --- the release\n managers use an automated script to generate lists of merged tickets.\n\n```",
     "created_at": "2010-02-11T13:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
@@ -338,13 +334,11 @@ archive/issue_comments_066031.json:
 }
 ```
 
-
 ```
  Please remember to update the relevant ticket fields --- the release
  managers use an automated script to generate lists of merged tickets.
 
 ```
-
 
 
 

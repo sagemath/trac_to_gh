@@ -3,7 +3,7 @@
 archive/issues_000738.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
+    "body": "Assignee: @robertwb\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
     "created_at": "2007-09-22T21:58:39Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_000738.json:
 }
 ```
 Assignee: @robertwb
-
 
 ```
 There's a bug in matrix2.pyx which is making my new
@@ -41,7 +40,6 @@ sage: R([1/2, 3/4, 5/6, 7/8], check=False)
 
 I'm sure one of you can fix this much faster than I can....
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/738
 

@@ -162,7 +162,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_064628.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n> here it is !!! This may  well be the tenth version of this function which has been \n> written 6 months ago :p\n> \n> Nathann\n\nSorry for the long delay in refereeing. \n\nIt applies okay to 4.3.rc0 on ubuntu 9.04 32 bit, and passes \nsage -testall except for the failures that I got without the \npatch installed (in calculus and nf_introduction). The documentation also\nlooks satisfactory to me. The optional test\n\n\n```\nsage -t -optional \"devel/sage/sage/graphs/graph.py\n```\n\ngave rise to (in particular) the following failure\n\n```\nwdj@wdj-virtualbox:~/sagefiles/sage-4.3.rc0$ ./sage -t -optional \"devel/sage/sage/graphs/graph.py\"\nsage -t -optional \"devel/sage/sage/graphs/graph.py\"         \nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-4.3.rc0/devel/sage/sage/graphs/graph.py\", line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_59[3]>\", line 1, in <module>\n        g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC###line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 3316, in matching\n        return p.solve(objective_only=True)\n      File \"mip.pyx\", line 945, in sage.numerical.mip.MixedIntegerLinearProgram.solve (sage/numerical/mip.c:7177)\n    ValueError: There does not seem to be any solver installed. Please visit http://www.sagemath.org/doc/tutorial/tour_LP.html for more informations.\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_59\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/.sage//tmp/.doctest_graph.py\n\t [74.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/graphs/graph.py\"\n```\n\n\nDoes this seem related to your patch? glpk is installed, to the error message\n(\"solver not installed\") seems wrong, or at least is unexpected by me.",
+    "body": "Replying to [comment:5 ncohen]:\n> here it is !!! This may  well be the tenth version of this function which has been \n> written 6 months ago :p\n> \n> Nathann\n\n\nSorry for the long delay in refereeing. \n\nIt applies okay to 4.3.rc0 on ubuntu 9.04 32 bit, and passes \nsage -testall except for the failures that I got without the \npatch installed (in calculus and nf_introduction). The documentation also\nlooks satisfactory to me. The optional test\n\n```\nsage -t -optional \"devel/sage/sage/graphs/graph.py\n```\ngave rise to (in particular) the following failure\n\n```\nwdj@wdj-virtualbox:~/sagefiles/sage-4.3.rc0$ ./sage -t -optional \"devel/sage/sage/graphs/graph.py\"\nsage -t -optional \"devel/sage/sage/graphs/graph.py\"         \nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-4.3.rc0/devel/sage/sage/graphs/graph.py\", line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_59[3]>\", line 1, in <module>\n        g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC###line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 3316, in matching\n        return p.solve(objective_only=True)\n      File \"mip.pyx\", line 945, in sage.numerical.mip.MixedIntegerLinearProgram.solve (sage/numerical/mip.c:7177)\n    ValueError: There does not seem to be any solver installed. Please visit http://www.sagemath.org/doc/tutorial/tour_LP.html for more informations.\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_59\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/.sage//tmp/.doctest_graph.py\n\t [74.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/graphs/graph.py\"\n```\n\nDoes this seem related to your patch? glpk is installed, to the error message\n(\"solver not installed\") seems wrong, or at least is unexpected by me.",
     "created_at": "2009-12-15T02:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
@@ -177,6 +177,7 @@ Replying to [comment:5 ncohen]:
 > 
 > Nathann
 
+
 Sorry for the long delay in refereeing. 
 
 It applies okay to 4.3.rc0 on ubuntu 9.04 32 bit, and passes 
@@ -184,11 +185,9 @@ sage -testall except for the failures that I got without the
 patch installed (in calculus and nf_introduction). The documentation also
 looks satisfactory to me. The optional test
 
-
 ```
 sage -t -optional "devel/sage/sage/graphs/graph.py
 ```
-
 gave rise to (in particular) the following failure
 
 ```
@@ -230,7 +229,6 @@ The following tests failed:
 
 	sage -t -optional "devel/sage/sage/graphs/graph.py"
 ```
-
 
 Does this seem related to your patch? glpk is installed, to the error message
 ("solver not installed") seems wrong, or at least is unexpected by me.

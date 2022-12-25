@@ -3,7 +3,7 @@
 archive/issues_002807.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nLine 26 of c_lib/src/interrupt.c says:\n\n\n```\n if ( _signals.mpio && 1 ) {\n```\n\n\nit should probably be\n\n\n```\nif ( _signals.mpio & 1 ) {\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2807\n\n",
+    "body": "Assignee: cwitty\n\nLine 26 of c_lib/src/interrupt.c says:\n\n```\n if ( _signals.mpio && 1 ) {\n```\n\nit should probably be\n\n```\nif ( _signals.mpio & 1 ) {\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2807\n\n",
     "created_at": "2008-04-05T14:50:26Z",
     "labels": [
         "component: misc",
@@ -20,19 +20,15 @@ Assignee: cwitty
 
 Line 26 of c_lib/src/interrupt.c says:
 
-
 ```
  if ( _signals.mpio && 1 ) {
 ```
 
-
 it should probably be
-
 
 ```
 if ( _signals.mpio & 1 ) {
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2807
@@ -64,7 +60,7 @@ Attachment [2807.patch](tarball://root/attachments/some-uuid/ticket2807/2807.pat
 archive/issue_comments_019230.json:
 ```json
 {
-    "body": "I've made a patch, have no idea if it will work.\n\n\n```\n[10:45am] dmharvey: that's #2807\n[10:46am] mabshoff: Well, let's hope we close more tickets today than we open.\n[10:46am] dmharvey: I can easily close that one, but I wonder if it will introduce strange bugs....\n[10:46am] malb: this line means: we always use Sage's signal handler\n[10:47am] malb: which isn't too bad apparently if it handles all the signals we come across ;-)\n[10:47am] malb: it probably won't change much\n[10:47am] dmharvey: i will make a patch\n```\n",
+    "body": "I've made a patch, have no idea if it will work.\n\n```\n[10:45am] dmharvey: that's #2807\n[10:46am] mabshoff: Well, let's hope we close more tickets today than we open.\n[10:46am] dmharvey: I can easily close that one, but I wonder if it will introduce strange bugs....\n[10:46am] malb: this line means: we always use Sage's signal handler\n[10:47am] malb: which isn't too bad apparently if it handles all the signals we come across ;-)\n[10:47am] malb: it probably won't change much\n[10:47am] dmharvey: i will make a patch\n```",
     "created_at": "2008-04-05T15:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2807",
     "type": "issue_comment",
@@ -75,7 +71,6 @@ archive/issue_comments_019230.json:
 
 I've made a patch, have no idea if it will work.
 
-
 ```
 [10:45am] dmharvey: that's #2807
 [10:46am] mabshoff: Well, let's hope we close more tickets today than we open.
@@ -85,7 +80,6 @@ I've made a patch, have no idea if it will work.
 [10:47am] malb: it probably won't change much
 [10:47am] dmharvey: i will make a patch
 ```
-
 
 
 

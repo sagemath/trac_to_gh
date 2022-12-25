@@ -3,7 +3,7 @@
 archive/issues_008902.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Subsets constructor\n\n\n```\nsage: S2 = Subsets(2)\nsage: S2([])\n<type 'sage.structure.parent.Set_generic'>\nsage: S2([1])\n<type 'sage.structure.parent.Set_generic'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8902\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Subsets constructor\n\n```\nsage: S2 = Subsets(2)\nsage: S2([])\n<type 'sage.structure.parent.Set_generic'>\nsage: S2([1])\n<type 'sage.structure.parent.Set_generic'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8902\n\n",
     "created_at": "2010-05-06T02:30:52Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  sage-combinat
 
 Keywords: Subsets constructor
 
-
 ```
 sage: S2 = Subsets(2)
 sage: S2([])
@@ -30,7 +29,6 @@ sage: S2([])
 sage: S2([1])
 <type 'sage.structure.parent.Set_generic'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8902
 
@@ -115,7 +113,7 @@ Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some
 archive/issue_comments_081812.json:
 ```json
 {
-    "body": "Nicolas on sage-combinat series file:\n\n```\ntrac_8902-subsets_call_fix-fh.patch               # Positive review, assuming tests pass (NT)\n```\n\nI got a all test passes on massena.\n\nNote: the category related problem we discussed on the phone is postponed until #8910 in the patch `trac_8910-subsets_an_element-fh.patch`. \n\nIf you are ok with that can you put a positive review ?",
+    "body": "Nicolas on sage-combinat series file:\n\n```\ntrac_8902-subsets_call_fix-fh.patch               # Positive review, assuming tests pass (NT)\n```\nI got a all test passes on massena.\n\nNote: the category related problem we discussed on the phone is postponed until #8910 in the patch `trac_8910-subsets_an_element-fh.patch`. \n\nIf you are ok with that can you put a positive review ?",
     "created_at": "2010-05-31T10:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
@@ -129,7 +127,6 @@ Nicolas on sage-combinat series file:
 ```
 trac_8902-subsets_call_fix-fh.patch               # Positive review, assuming tests pass (NT)
 ```
-
 I got a all test passes on massena.
 
 Note: the category related problem we discussed on the phone is postponed until #8910 in the patch `trac_8910-subsets_an_element-fh.patch`. 

@@ -3,7 +3,7 @@
 archive/issues_002919.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\npartitions_c.cc does not build with gcc 4.3 since it dislikes \n\n```\ntemplate <> static inline dd_real pi() { return dd_pi; }\n```\n\nThe attached patch fixes those issues, compile tested with gcc 4.3, 4.1 and 4.0\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/2919\n\n",
+    "body": "Assignee: mabshoff\n\npartitions_c.cc does not build with gcc 4.3 since it dislikes \n\n```\ntemplate <> static inline dd_real pi() { return dd_pi; }\n```\nThe attached patch fixes those issues, compile tested with gcc 4.3, 4.1 and 4.0\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/2919\n\n",
     "created_at": "2008-04-14T19:28:37Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ partitions_c.cc does not build with gcc 4.3 since it dislikes
 ```
 template <> static inline dd_real pi() { return dd_pi; }
 ```
-
 The attached patch fixes those issues, compile tested with gcc 4.3, 4.1 and 4.0
 
 Cheers,

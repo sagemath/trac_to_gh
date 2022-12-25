@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_089723.json:
 ```json
 {
-    "body": "Creating a large forest : \n\n\n```\ng = graphs.RandomGNP(300,.1)\ng = g.subgraph(edges=g.min_spanning_tree())\ng.delete_edges([e for e in g.edges() if random()<.5])\nsage: g.sparse6_string()\n':~?Ck_O?gF?MAo?_??W@_AC?D`G?oE_I@GU?EE??`s@GCa??gb?[CWQa[BW?ak?wp@AEGt?m@GE_IM_?_A?g?`Y@WA_aOoAcSDHH?QAgGc{CwI`AEgPdS?HW?QCWC_IVOCeCCXc@yAW@e_Axn?U[_DfOAhu?M]?\\\\fgDX}@y_??`e?Ga_m`o?ggIG@`EGGY_AcOBhK?IT?Ye?I_uAGNhwCwRiC?WGiO?Yf?A?g?ikEIl?]AGAjC@Ir@alOJ_YAwJ_AAGAk?AgF_I?W@\\\nkW?g@kk@JL?QroN_A?zX?U?WFlw@WAmG@GD`q@Zf?M{?G_y{oa_Q|oO_E~?IoC@KGBfA_@osEw@p??wF_BD?L_rE_?poCk]?NGoCqW?[h?aAWE'\n```\n\n\nThen using two different versions of is_forest \n\n\n```\nsage: %timeit g.is_forest()\n125 loops, best of 3: 5.06 ms per loop\n\nsage: %timeit g.is_forest()\n5 loops, best of 3: 43.8 ms per loop\n```\n\n\nShort and useful... All I love ! :-)\n\nNathann",
+    "body": "Creating a large forest : \n\n```\ng = graphs.RandomGNP(300,.1)\ng = g.subgraph(edges=g.min_spanning_tree())\ng.delete_edges([e for e in g.edges() if random()<.5])\nsage: g.sparse6_string()\n':~?Ck_O?gF?MAo?_??W@_AC?D`G?oE_I@GU?EE??`s@GCa??gb?[CWQa[BW?ak?wp@AEGt?m@GE_IM_?_A?g?`Y@WA_aOoAcSDHH?QAgGc{CwI`AEgPdS?HW?QCWC_IVOCeCCXc@yAW@e_Axn?U[_DfOAhu?M]?\\\\fgDX}@y_??`e?Ga_m`o?ggIG@`EGGY_AcOBhK?IT?Ye?I_uAGNhwCwRiC?WGiO?Yf?A?g?ikEIl?]AGAjC@Ir@alOJ_YAwJ_AAGAk?AgF_I?W@\\\nkW?g@kk@JL?QroN_A?zX?U?WFlw@WAmG@GD`q@Zf?M{?G_y{oa_Q|oO_E~?IoC@KGBfA_@osEw@p??wF_BD?L_rE_?poCk]?NGoCqW?[h?aAWE'\n```\n\nThen using two different versions of is_forest \n\n```\nsage: %timeit g.is_forest()\n125 loops, best of 3: 5.06 ms per loop\n\nsage: %timeit g.is_forest()\n5 loops, best of 3: 43.8 ms per loop\n```\n\nShort and useful... All I love ! :-)\n\nNathann",
     "created_at": "2010-07-04T11:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ archive/issue_comments_089723.json:
 
 Creating a large forest : 
 
-
 ```
 g = graphs.RandomGNP(300,.1)
 g = g.subgraph(edges=g.min_spanning_tree())
@@ -93,9 +92,7 @@ sage: g.sparse6_string()
 kW?g@kk@JL?QroN_A?zX?U?WFlw@WAmG@GD`q@Zf?M{?G_y{oa_Q|oO_E~?IoC@KGBfA_@osEw@p??wF_BD?L_rE_?poCk]?NGoCqW?[h?aAWE'
 ```
 
-
 Then using two different versions of is_forest 
-
 
 ```
 sage: %timeit g.is_forest()
@@ -104,7 +101,6 @@ sage: %timeit g.is_forest()
 sage: %timeit g.is_forest()
 5 loops, best of 3: 43.8 ms per loop
 ```
-
 
 Short and useful... All I love ! :-)
 
@@ -135,7 +131,7 @@ See [comment:ticket:9925:20 comment 20ff] at #9925 for a flaky doctest that #942
 archive/issue_comments_089725.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> See [comment:ticket:9925:20 comment 20ff] at #9925 for a flaky doctest that #9422 and #10067 should fix.\n\nI've opened #10081 for this failure.",
+    "body": "Replying to [comment:3 mpatel]:\n> See [comment:ticket:9925:20 comment 20ff] at #9925 for a flaky doctest that #9422 and #10067 should fix.\n\n\nI've opened #10081 for this failure.",
     "created_at": "2010-10-06T04:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9422",
     "type": "issue_comment",
@@ -146,6 +142,7 @@ archive/issue_comments_089725.json:
 
 Replying to [comment:3 mpatel]:
 > See [comment:ticket:9925:20 comment 20ff] at #9925 for a flaky doctest that #9422 and #10067 should fix.
+
 
 I've opened #10081 for this failure.
 

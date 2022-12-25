@@ -3,7 +3,7 @@
 archive/issues_009174.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1098:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1102:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2*log(3)/log(2) - 2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1195:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1198:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1201:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    log(3)/log(2) - 1\n**********************************************************************\n2 items had failures:\n   3 of  30 in __main__.example_18\n   3 of  11 in __main__.example_19\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py\n\t [29.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9174\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1098:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1102:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2*log(3)/log(2) - 2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1195:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1198:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1201:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    log(3)/log(2) - 1\n**********************************************************************\n2 items had failures:\n   3 of  30 in __main__.example_18\n   3 of  11 in __main__.example_19\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py\n\t [29.1 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9174\n\n",
     "created_at": "2010-06-07T04:57:52Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009174.json:
 Assignee: tbd
 
 CC:  jpflori @dimpase @kcrisman
-
 
 ```
 
@@ -74,7 +73,6 @@ Got:
 For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py
 	 [29.1 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9174
 
@@ -250,7 +248,7 @@ And the test passes for me (64bits W7 + 5.6.rc0).
 archive/issue_comments_085681.json:
 ```json
 {
-    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\nDon't forget to try these by hand as well.  In the past I've had failures only in the terminal.",
+    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\n\nDon't forget to try these by hand as well.  In the past I've had failures only in the terminal.",
     "created_at": "2013-01-15T18:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
@@ -260,6 +258,7 @@ archive/issue_comments_085681.json:
 ```
 
 > And the test passes for me (64bits W7 + 5.6.rc0).
+
 Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.
 
 

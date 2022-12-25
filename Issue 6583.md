@@ -179,7 +179,7 @@ Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_053677.json:
 ```json
 {
-    "body": "Applying the patch and doing \"sage -t\" yields some failures, probably because you assume the large cremona database is installed, but it isn't:\n\n```\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: E = EllipticCurve('59450i')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[12]>\", line 1, in <module>\n        E = EllipticCurve('59450i')###line 1093:\n    sage: E = EllipticCurve('59450i')\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 216, in EllipticCurve\n        return ell_rational_field.EllipticCurve_rational_field(x)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 191, in __init__\n        X = sage.databases.cremona.CremonaDatabase()[label]\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 383, in __getitem__\n        return self.elliptic_curve(N)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 570, in elliptic_curve\n        raise RuntimeError, message\n    RuntimeError: There is no elliptic curve with label 59450i in the default database; try installing the optional package database_cremona_ellcurve-20071019 which contains all curves of conductor up to 130000\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1095:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        from sage.schemes.elliptic_curves.descent import test_valuation as tv###line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\n    ImportError: No module named descent\n**********************************************************************\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 57: \n    sage: for i in [1..20]:\n       print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 2, in <module>\n        print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\n    NameError: name 'tv' is not defined\n**********************************************************************\n2 items had failures:\n   2 of  24 in __main__.example_18\n   2 of   4 in __main__.example_2\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1.2.alpha1/tmp/.doctest_descent_two_isogeny.py\n         [3.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\nTotal time for all tests: 3.4 seconds\nwstein@sage:~/build/sage-4.1.2.alpha1$ \n```\n",
+    "body": "Applying the patch and doing \"sage -t\" yields some failures, probably because you assume the large cremona database is installed, but it isn't:\n\n```\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: E = EllipticCurve('59450i')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[12]>\", line 1, in <module>\n        E = EllipticCurve('59450i')###line 1093:\n    sage: E = EllipticCurve('59450i')\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 216, in EllipticCurve\n        return ell_rational_field.EllipticCurve_rational_field(x)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 191, in __init__\n        X = sage.databases.cremona.CremonaDatabase()[label]\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 383, in __getitem__\n        return self.elliptic_curve(N)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 570, in elliptic_curve\n        raise RuntimeError, message\n    RuntimeError: There is no elliptic curve with label 59450i in the default database; try installing the optional package database_cremona_ellcurve-20071019 which contains all curves of conductor up to 130000\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1095:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        from sage.schemes.elliptic_curves.descent import test_valuation as tv###line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\n    ImportError: No module named descent\n**********************************************************************\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 57: \n    sage: for i in [1..20]:\n       print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 2, in <module>\n        print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\n    NameError: name 'tv' is not defined\n**********************************************************************\n2 items had failures:\n   2 of  24 in __main__.example_18\n   2 of   4 in __main__.example_2\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1.2.alpha1/tmp/.doctest_descent_two_isogeny.py\n         [3.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\nTotal time for all tests: 3.4 seconds\nwstein@sage:~/build/sage-4.1.2.alpha1$ \n```",
     "created_at": "2009-09-22T14:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -274,7 +274,6 @@ wstein@sage:~/build/sage-4.1.2.alpha1$
 
 
 
-
 ---
 
 archive/issue_comments_053678.json:
@@ -364,7 +363,7 @@ Secondly, the isogeny patch I am finishing up will allow 2-isogenies (and more) 
 archive/issue_comments_053682.json:
 ```json
 {
-    "body": "Here's an example where mwrank does not do a second descent, where the runtime is approximately 90 times faster:\n\n\n```\nsage: E = EllipticCurve('676a1')\nsage: from sage.schemes.elliptic_curves.descent_two_isogeny import two_descent_by_two_isogeny\nsage: timeit('two_descent_by_two_isogeny(E)')\n125 loops, best of 3: 2.83 ms per loop\nsage: A = E.mwrank_curve()\nsage: timeit('A.two_descent(verbose=False)')\n5 loops, best of 3: 252 ms per loop\n```\n\n\nI ran the following to compare times in general:\n\n\n```\nsage: for E in cremona_optimal_curves(range(200)):\n...    if E.torsion_order()%2 == 0:\n...        t = walltime()\n...        E.mwrank_curve().two_descent(verbose=False, second_descent=False)\n...        t = walltime(t)\n...        s = walltime()\n...        _ = two_descent_by_two_isogeny(E)\n...        s = walltime(s)\n```\n\n\nmwrank is always slower by a factor of at least 5, almost always slower by a factor of at least 20, and frequently slower by factors of up to 150.",
+    "body": "Here's an example where mwrank does not do a second descent, where the runtime is approximately 90 times faster:\n\n```\nsage: E = EllipticCurve('676a1')\nsage: from sage.schemes.elliptic_curves.descent_two_isogeny import two_descent_by_two_isogeny\nsage: timeit('two_descent_by_two_isogeny(E)')\n125 loops, best of 3: 2.83 ms per loop\nsage: A = E.mwrank_curve()\nsage: timeit('A.two_descent(verbose=False)')\n5 loops, best of 3: 252 ms per loop\n```\n\nI ran the following to compare times in general:\n\n```\nsage: for E in cremona_optimal_curves(range(200)):\n...    if E.torsion_order()%2 == 0:\n...        t = walltime()\n...        E.mwrank_curve().two_descent(verbose=False, second_descent=False)\n...        t = walltime(t)\n...        s = walltime()\n...        _ = two_descent_by_two_isogeny(E)\n...        s = walltime(s)\n```\n\nmwrank is always slower by a factor of at least 5, almost always slower by a factor of at least 20, and frequently slower by factors of up to 150.",
     "created_at": "2009-12-01T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -374,7 +373,6 @@ archive/issue_comments_053682.json:
 ```
 
 Here's an example where mwrank does not do a second descent, where the runtime is approximately 90 times faster:
-
 
 ```
 sage: E = EllipticCurve('676a1')
@@ -386,9 +384,7 @@ sage: timeit('A.two_descent(verbose=False)')
 5 loops, best of 3: 252 ms per loop
 ```
 
-
 I ran the following to compare times in general:
-
 
 ```
 sage: for E in cremona_optimal_curves(range(200)):
@@ -401,7 +397,6 @@ sage: for E in cremona_optimal_curves(range(200)):
 ...        s = walltime(s)
 ```
 
-
 mwrank is always slower by a factor of at least 5, almost always slower by a factor of at least 20, and frequently slower by factors of up to 150.
 
 
@@ -411,7 +406,7 @@ mwrank is always slower by a factor of at least 5, almost always slower by a fac
 archive/issue_comments_053683.json:
 ```json
 {
-    "body": "Maybe this is a more accurate comparison:\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve(); t = walltime()\n        A.two_descent(verbose=False, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n28.023321958157503\n```\n\n\nThus the average speedup is 28x.",
+    "body": "Maybe this is a more accurate comparison:\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve(); t = walltime()\n        A.two_descent(verbose=False, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n28.023321958157503\n```\n\nThus the average speedup is 28x.",
     "created_at": "2009-12-01T19:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -440,7 +435,6 @@ sage: sum(L)/len(L)
 28.023321958157503
 ```
 
-
 Thus the average speedup is 28x.
 
 
@@ -450,7 +444,7 @@ Thus the average speedup is 28x.
 archive/issue_comments_053684.json:
 ```json
 {
-    "body": "For the curious, standard deviation:\n\n```\nsage: sqrt(sum([(l - 28.0233)^2 for l in L])/len(L))\n10.6330410085500\n```\n",
+    "body": "For the curious, standard deviation:\n\n```\nsage: sqrt(sum([(l - 28.0233)^2 for l in L])/len(L))\n10.6330410085500\n```",
     "created_at": "2009-12-01T19:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -465,7 +459,6 @@ For the curious, standard deviation:
 sage: sqrt(sum([(l - 28.0233)^2 for l in L])/len(L))
 10.6330410085500
 ```
-
 
 
 
@@ -492,7 +485,7 @@ Robert -- I am quite prepared to believe that your code is fast, but all these t
 archive/issue_comments_053686.json:
 ```json
 {
-    "body": "I was just trying to address your question whether there were examples where this was better than mwrank. Your second comment, \"any enhanced performance comes from the use of the more recent version of ratpoints\" is very false: if I remove the use of ratpoints altogether, the speedup factors increase!\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve()\n        t = walltime()\n        A.two_descent(verbose=False, selmer_only=True, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E, selmer_only=True)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n147.24136054804828\n```\n\n\nThus I argue that this code is definitely worth including, especially since this exact code was the main motivation for including ratpoints in Sage in the first place. I don't know what \"typical\" means regarding the conductor bound, especially since I'm primarily interested in curves with small conductor. I spent a long time optimizing this code, and I'd rather not see that work getting lost to the four winds.\n\n(John-- Maybe I'm just missing your point?)",
+    "body": "I was just trying to address your question whether there were examples where this was better than mwrank. Your second comment, \"any enhanced performance comes from the use of the more recent version of ratpoints\" is very false: if I remove the use of ratpoints altogether, the speedup factors increase!\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve()\n        t = walltime()\n        A.two_descent(verbose=False, selmer_only=True, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E, selmer_only=True)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n147.24136054804828\n```\n\nThus I argue that this code is definitely worth including, especially since this exact code was the main motivation for including ratpoints in Sage in the first place. I don't know what \"typical\" means regarding the conductor bound, especially since I'm primarily interested in curves with small conductor. I spent a long time optimizing this code, and I'd rather not see that work getting lost to the four winds.\n\n(John-- Maybe I'm just missing your point?)",
     "created_at": "2009-12-01T21:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -521,7 +514,6 @@ sage: for E in cremona_optimal_curves(range(200)):
 sage: sum(L)/len(L)
 147.24136054804828
 ```
-
 
 Thus I argue that this code is definitely worth including, especially since this exact code was the main motivation for including ratpoints in Sage in the first place. I don't know what "typical" means regarding the conductor bound, especially since I'm primarily interested in curves with small conductor. I spent a long time optimizing this code, and I'd rather not see that work getting lost to the four winds.
 
@@ -597,7 +589,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053690.json:
 ```json
 {
-    "body": "REPORT:\n\n1. I can't apply the patch to 4.3.alpha1:\n\n```\npatching file sage/libs/flint/zmod_poly.pxd\nHunk #2 FAILED at 249\n1 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly.pxd.rej\nabort: patch failed to apply\n```\n\n\nThe rebase is trivial, and I've posted it.\n\n---\n\n2. The main concern in Chris's report is just that this code doesn't yet do enough.  However, rlm isn't just writing this as some one-off thing for a little project.  He's doing his Ph.D. thesis mostly on descent (and its applications), and this is what he'll be working on fulltime, probably for the next year (for his thesis, then his postdoc).  So I think getting this in now makes *perfect* sense, instead of waiting until we get a big patch bomb later. \n\n3. All those cdef'd methods with no doctests and minimal documentation isn't good, just as Chris says.  You could open another ticket and fix that, since it will make it way easier for others to work on (and use in surprising ways!) this code if those functions are documented and tested.  For each cdef'd method, just make a corresponding def'd method called \"test_...\" that calls the cdef'd method, then put the tests there.   You already do just that in *some* cases, e.g., `def test_els(a,b,c,d,e):`. \n\n4. Docstrings like this would be more readable if they used latex:\n\n```\nGiven an elliptic curve E with a two-isogeny phi : E --> E' and dual isogeny \n \t799\t    phi', runs a two-isogeny descent on E, returning n1, n2, n1' and n2'. Here \n \t800\t    n1 is the number of quartic covers found with a rational point, and n2 is \n \t801\t    the number which are ELS. \n```\n\n\n5. All tests pass with this code applied to sage-4.3.alpha1.\n\nIn summary:\n\nI've applied the patches, skimmed them, and run the test suite.  Positive review.",
+    "body": "REPORT:\n\n1. I can't apply the patch to 4.3.alpha1:\n\n```\npatching file sage/libs/flint/zmod_poly.pxd\nHunk #2 FAILED at 249\n1 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly.pxd.rej\nabort: patch failed to apply\n```\n\nThe rebase is trivial, and I've posted it.\n\n---\n\n2. The main concern in Chris's report is just that this code doesn't yet do enough.  However, rlm isn't just writing this as some one-off thing for a little project.  He's doing his Ph.D. thesis mostly on descent (and its applications), and this is what he'll be working on fulltime, probably for the next year (for his thesis, then his postdoc).  So I think getting this in now makes *perfect* sense, instead of waiting until we get a big patch bomb later. \n\n3. All those cdef'd methods with no doctests and minimal documentation isn't good, just as Chris says.  You could open another ticket and fix that, since it will make it way easier for others to work on (and use in surprising ways!) this code if those functions are documented and tested.  For each cdef'd method, just make a corresponding def'd method called \"test_...\" that calls the cdef'd method, then put the tests there.   You already do just that in *some* cases, e.g., `def test_els(a,b,c,d,e):`. \n\n4. Docstrings like this would be more readable if they used latex:\n\n```\nGiven an elliptic curve E with a two-isogeny phi : E --> E' and dual isogeny \n \t799\t    phi', runs a two-isogeny descent on E, returning n1, n2, n1' and n2'. Here \n \t800\t    n1 is the number of quartic covers found with a rational point, and n2 is \n \t801\t    the number which are ELS. \n```\n\n5. All tests pass with this code applied to sage-4.3.alpha1.\n\nIn summary:\n\nI've applied the patches, skimmed them, and run the test suite.  Positive review.",
     "created_at": "2009-12-09T00:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
@@ -617,7 +609,6 @@ Hunk #2 FAILED at 249
 abort: patch failed to apply
 ```
 
-
 The rebase is trivial, and I've posted it.
 
 ---
@@ -634,7 +625,6 @@ Given an elliptic curve E with a two-isogeny phi : E --> E' and dual isogeny
  	800	    n1 is the number of quartic covers found with a rational point, and n2 is 
  	801	    the number which are ELS. 
 ```
-
 
 5. All tests pass with this code applied to sage-4.3.alpha1.
 

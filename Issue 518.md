@@ -103,7 +103,7 @@ archive/issue_events_001330.json:
 archive/issue_comments_002609.json:
 ```json
 {
-    "body": "I am unable to apply this patch:\n\n```\nhg_sage.sage: hg_sage.apply('mw-indentation.patch')\ncd \"/home/was/s/devel/sage\" && hg status\ncd \"/home/was/s/devel/sage\" && hg status\ncd \"/home/was/s/devel/sage\" && hg import   \"/home/was/Desktop/mw-indentation.patch\"\napplying /home/was/Desktop/mw-indentation.patch\nsage/schemes/elliptic_curves/monsky_washnitzer.py\nHunk #1 FAILED at 60.\nHunk #7 FAILED at 1150.\nHunk #8 FAILED at 1215.\n3 out of 9 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/monsky_washnitzer.py.rej\nabort: patch command failed: exited with status 1\nsage:\n```\n\n\nAnd it really genuinely is mostly not applied.",
+    "body": "I am unable to apply this patch:\n\n```\nhg_sage.sage: hg_sage.apply('mw-indentation.patch')\ncd \"/home/was/s/devel/sage\" && hg status\ncd \"/home/was/s/devel/sage\" && hg status\ncd \"/home/was/s/devel/sage\" && hg import   \"/home/was/Desktop/mw-indentation.patch\"\napplying /home/was/Desktop/mw-indentation.patch\nsage/schemes/elliptic_curves/monsky_washnitzer.py\nHunk #1 FAILED at 60.\nHunk #7 FAILED at 1150.\nHunk #8 FAILED at 1215.\n3 out of 9 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/monsky_washnitzer.py.rej\nabort: patch command failed: exited with status 1\nsage:\n```\n\nAnd it really genuinely is mostly not applied.",
     "created_at": "2007-09-05T04:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ abort: patch command failed: exited with status 1
 sage:
 ```
 
-
 And it really genuinely is mostly not applied.
 
 
@@ -139,7 +138,7 @@ And it really genuinely is mostly not applied.
 archive/issue_comments_002610.json:
 ```json
 {
-    "body": "\n```\n[11:18] <dmharvey> #518: okay, I guess I'll just go through and do it again at some point. I think the real problem here is to do with trac. I posted the patch a while back, but it didn't get rolled into the repository until now. But meanwhile you and robert had done a bunch of things.\n```\n",
+    "body": "```\n[11:18] <dmharvey> #518: okay, I guess I'll just go through and do it again at some point. I think the real problem here is to do with trac. I posted the patch a while back, but it didn't get rolled into the repository until now. But meanwhile you and robert had done a bunch of things.\n```",
     "created_at": "2007-09-06T18:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
@@ -148,11 +147,9 @@ archive/issue_comments_002610.json:
 }
 ```
 
-
 ```
 [11:18] <dmharvey> #518: okay, I guess I'll just go through and do it again at some point. I think the real problem here is to do with trac. I posted the patch a while back, but it didn't get rolled into the repository until now. But meanwhile you and robert had done a bunch of things.
 ```
-
 
 
 

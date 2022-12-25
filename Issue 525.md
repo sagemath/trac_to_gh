@@ -51,7 +51,7 @@ SAGe build notes
 archive/issue_comments_002653.json:
 ```json
 {
-    "body": "From Section 10:\n\n```\nThe call to bison will probably go away in future versions of SAGE, but at present (version 2.7.3, version 2.8) it is helpful to force install bison as part of preparing the ground for later packages.\n```\n\nThis issue has been resolved.\n\nCheers,\n\nMichael",
+    "body": "From Section 10:\n\n```\nThe call to bison will probably go away in future versions of SAGE, but at present (version 2.7.3, version 2.8) it is helpful to force install bison as part of preparing the ground for later packages.\n```\nThis issue has been resolved.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-30T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/525",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ From Section 10:
 ```
 The call to bison will probably go away in future versions of SAGE, but at present (version 2.7.3, version 2.8) it is helpful to force install bison as part of preparing the ground for later packages.
 ```
-
 This issue has been resolved.
 
 Cheers,
@@ -137,7 +136,7 @@ For another example, it seems like a bad idea (items 3 and 4) to delete the old 
 archive/issue_comments_002657.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n\nHi John,\n\n> Is this ticket still relevant? If so, can someone explain its purpose to me? Who is the target audience for the attached document?\n\nI don't think so.\n\n> For example, the document says 'These instructions assume a basic level of Unix command-line fluency.' But in this case, how much of this needs to be explained?\n> \n> For another example, it seems like a bad idea (items 3 and 4) to delete the old copy of sage, at least not until you're sure that the new one doesn't break things (the way the notebook was somewhat broken for a few releases). If we want instructions like this somewhere (in the installation guide, I suppose), I would not include them as is...\n\nThey do suggest outright bad things like building Sage with sudo privileges. It is much, much better to build Sage as a user, -bdist and then move the result into a user accessible location. Another bad thing it to give the sage script an absolute patch since these days the location of a link is automatically resolved.\n\nConsequently: closed as wontfix.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 jhpalmieri]:\n\nHi John,\n\n> Is this ticket still relevant? If so, can someone explain its purpose to me? Who is the target audience for the attached document?\n\n\nI don't think so.\n\n> For example, the document says 'These instructions assume a basic level of Unix command-line fluency.' But in this case, how much of this needs to be explained?\n> \n> For another example, it seems like a bad idea (items 3 and 4) to delete the old copy of sage, at least not until you're sure that the new one doesn't break things (the way the notebook was somewhat broken for a few releases). If we want instructions like this somewhere (in the installation guide, I suppose), I would not include them as is...\n\n\nThey do suggest outright bad things like building Sage with sudo privileges. It is much, much better to build Sage as a user, -bdist and then move the result into a user accessible location. Another bad thing it to give the sage script an absolute patch since these days the location of a link is automatically resolved.\n\nConsequently: closed as wontfix.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T19:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/525",
     "type": "issue_comment",
@@ -152,11 +151,13 @@ Hi John,
 
 > Is this ticket still relevant? If so, can someone explain its purpose to me? Who is the target audience for the attached document?
 
+
 I don't think so.
 
 > For example, the document says 'These instructions assume a basic level of Unix command-line fluency.' But in this case, how much of this needs to be explained?
 > 
 > For another example, it seems like a bad idea (items 3 and 4) to delete the old copy of sage, at least not until you're sure that the new one doesn't break things (the way the notebook was somewhat broken for a few releases). If we want instructions like this somewhere (in the installation guide, I suppose), I would not include them as is...
+
 
 They do suggest outright bad things like building Sage with sudo privileges. It is much, much better to build Sage as a user, -bdist and then move the result into a user accessible location. Another bad thing it to give the sage script an absolute patch since these days the location of a link is automatically resolved.
 

@@ -3,7 +3,7 @@
 archive/issues_007077.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nwith 4.1.1:\n\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nwith 4.1.1:\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
     "created_at": "2009-09-29T19:51:09Z",
     "labels": [
         "component: algebra",
@@ -23,7 +23,6 @@ CC:  @mwhansen
 
 with 4.1.1:
 
-
 ```
 sage: x,y,z=polygens(QQ,'x,y,z')
 sage: (x^2).variables()
@@ -32,7 +31,6 @@ sage: x=polygen(QQ)
 sage: (x^2).variables()
 (x,)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7077
 

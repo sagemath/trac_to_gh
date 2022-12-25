@@ -3,7 +3,7 @@
 archive/issues_002112.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: SR(2) in ZZ\nFalse\n```\n\n\nThis is easy to fix by having __contains__ use bool(foo==bar) rather than just foo == bar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2112\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: SR(2) in ZZ\nFalse\n```\n\nThis is easy to fix by having __contains__ use bool(foo==bar) rather than just foo == bar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2112\n\n",
     "created_at": "2008-02-08T13:02:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,12 +19,10 @@ archive/issues_002112.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: SR(2) in ZZ
 False
 ```
-
 
 This is easy to fix by having __contains__ use bool(foo==bar) rather than just foo == bar.
 

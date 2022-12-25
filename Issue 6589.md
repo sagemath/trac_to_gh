@@ -104,7 +104,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053828.json:
 ```json
 {
-    "body": "Also in `5.5.rc0`:\n\n```\ntravis@travis-virtualbox:~/sage-5.5.rc0/devel/sage/sage$ sage -coverage rings/laurent_series_ring.py \n----------------------------------------------------------------------\nrings/laurent_series_ring.py\nSCORE rings/laurent_series_ring.py: 100% (25 of 25)\n----------------------------------------------------------------------\n```\n",
+    "body": "Also in `5.5.rc0`:\n\n```\ntravis@travis-virtualbox:~/sage-5.5.rc0/devel/sage/sage$ sage -coverage rings/laurent_series_ring.py \n----------------------------------------------------------------------\nrings/laurent_series_ring.py\nSCORE rings/laurent_series_ring.py: 100% (25 of 25)\n----------------------------------------------------------------------\n```",
     "created_at": "2013-02-05T18:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6589",
     "type": "issue_comment",
@@ -122,7 +122,6 @@ rings/laurent_series_ring.py
 SCORE rings/laurent_series_ring.py: 100% (25 of 25)
 ----------------------------------------------------------------------
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004048.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002\n\n```\nsage: GF(241^2, 'a')(1).minpoly() \nx + 240 \nsage: GF(241, 'a')(1).minpoly() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call   \nlast) \n... \nAttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   \nattribute 'minpoly' \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4048\n\n",
+    "body": "Assignee: @williamstein\n\nNick Alexander reports in https://groups.google.com/group/sage-devel/browse_thread/thread/e5538e40d2b89002\n\n```\nsage: GF(241^2, 'a')(1).minpoly() \nx + 240 \nsage: GF(241, 'a')(1).minpoly() \n--------------------------------------------------------------------------- \nAttributeError                            Traceback (most recent call   \nlast) \n... \nAttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   \nattribute 'minpoly' \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4048\n\n",
     "created_at": "2008-09-03T17:43:18Z",
     "labels": [
         "component: linear algebra",
@@ -31,7 +31,6 @@ last)
 AttributeError: 'sage.rings.integer_mod.IntegerMod_int' object has no   
 attribute 'minpoly' 
 ```
-
 
 
 

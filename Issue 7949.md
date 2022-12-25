@@ -3,7 +3,7 @@
 archive/issues_007949.json:
 ```json
 {
-    "body": "Assignee: spancratz\n\nKeywords: bit shift, integer mod ring\n\nCurrently, some code for bit-shifts in Z/(n) looks like\n\n\n```\n    def __lshift__(IntegerMod_gmp self, int right):\n        ...\n        cdef IntegerMod_gmp x\n        x = self._new_c()\n        mpz_mul_2exp(x.value, self.value, right)\n        mpz_fdiv_r(x.value, x.value, self.__modulus.sageInteger.value)\n        return x\n```\n\n\nwhere the method ``mpz_mul_2exp`` expect an ``unsigned long``.  Negative values of ``right`` thus cause undesired integral promotion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7949\n\n",
+    "body": "Assignee: spancratz\n\nKeywords: bit shift, integer mod ring\n\nCurrently, some code for bit-shifts in Z/(n) looks like\n\n```\n    def __lshift__(IntegerMod_gmp self, int right):\n        ...\n        cdef IntegerMod_gmp x\n        x = self._new_c()\n        mpz_mul_2exp(x.value, self.value, right)\n        mpz_fdiv_r(x.value, x.value, self.__modulus.sageInteger.value)\n        return x\n```\n\nwhere the method ``mpz_mul_2exp`` expect an ``unsigned long``.  Negative values of ``right`` thus cause undesired integral promotion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7949\n\n",
     "created_at": "2010-01-16T17:43:34Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ Keywords: bit shift, integer mod ring
 
 Currently, some code for bit-shifts in Z/(n) looks like
 
-
 ```
     def __lshift__(IntegerMod_gmp self, int right):
         ...
@@ -33,7 +32,6 @@ Currently, some code for bit-shifts in Z/(n) looks like
         mpz_fdiv_r(x.value, x.value, self.__modulus.sageInteger.value)
         return x
 ```
-
 
 where the method ``mpz_mul_2exp`` expect an ``unsigned long``.  Negative values of ``right`` thus cause undesired integral promotion.
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7949
 archive/issue_comments_069237.json:
 ```json
 {
-    "body": "Looking at the related methods for types ``IntegerMod_int``, note that\n\n```\n    def __rshift__(IntegerMod_int self, int right):\n        ...\n        return self._new_c(self.ivalue >> right)\n```\n\nHere, the code ignores right shifts with negative values of ``right``, in which case one has to take the modulus.\n\nThe patch (to be attached) will address this, too.",
+    "body": "Looking at the related methods for types ``IntegerMod_int``, note that\n\n```\n    def __rshift__(IntegerMod_int self, int right):\n        ...\n        return self._new_c(self.ivalue >> right)\n```\nHere, the code ignores right shifts with negative values of ``right``, in which case one has to take the modulus.\n\nThe patch (to be attached) will address this, too.",
     "created_at": "2010-01-16T18:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7949",
     "type": "issue_comment",
@@ -64,7 +62,6 @@ Looking at the related methods for types ``IntegerMod_int``, note that
         ...
         return self._new_c(self.ivalue >> right)
 ```
-
 Here, the code ignores right shifts with negative values of ``right``, in which case one has to take the modulus.
 
 The patch (to be attached) will address this, too.

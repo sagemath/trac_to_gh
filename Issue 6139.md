@@ -3,7 +3,7 @@
 archive/issues_006139.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  mvngu\n\nKeywords: crypto, mq, sbox\n\nThis should work:\n\n\n```\nsage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)\nsage: S(0)\n3\nsage: S([0,0,0])\n[1, 1]\n```\n\n\nreported by Sajan.S on [sage-support] (27.5.09)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6139\n\n",
+    "body": "Assignee: @malb\n\nCC:  mvngu\n\nKeywords: crypto, mq, sbox\n\nThis should work:\n\n```\nsage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)\nsage: S(0)\n3\nsage: S([0,0,0])\n[1, 1]\n```\n\nreported by Sajan.S on [sage-support] (27.5.09)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6139\n\n",
     "created_at": "2009-05-27T12:20:18Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ Keywords: crypto, mq, sbox
 
 This should work:
 
-
 ```
 sage: S = mq.SBox(3, 0, 1, 3, 1, 0, 2, 2)
 sage: S(0)
@@ -32,7 +31,6 @@ sage: S(0)
 sage: S([0,0,0])
 [1, 1]
 ```
-
 
 reported by Sajan.S on [sage-support] (27.5.09)
 

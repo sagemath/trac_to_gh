@@ -127,7 +127,7 @@ This patch also changes a deprecated call to MPFR, and redefines several functio
 archive/issue_comments_082459.json:
 ```json
 {
-    "body": "Attachment [trac_8960-reviewer.patch](tarball://root/attachments/some-uuid/ticket8960/trac_8960-reviewer.patch) by mvngu created at 2010-05-15 04:03:14\n\nChanges in the reviewer patch include:\n\n* Typo fixes.\n* Fix errors/warnings with LaTeX markups in docstrings.\n* Use error types, e.g. IndexError, etc., as callables in accordance with Python 3.x.\n* Don't LaTeX expressions wherever that makes sense. For example, something like\n {{{\n`self`\n }}}\n would actually LaTeX the word \"self\".\n\nIncidentally, I came across the following line\n\n```\nelif PY_TYPE_CHECK(x, gen) and typ((<gen>x).g) == t_REAL:\n```\n\nfrom the function\n\n```\ncdef _set(self, x, int base):\n        # This should not be called except when the number is being created.    \n        # Real Numbers are supposed to be immutable.\n<...>\n```\n\nNotice the call\n\n```\ntyp((<gen>x).g)\n```\n\nShould this be\n\n```\ntype((<gen>x).g)\n```\n\nThat is, use \"type\" instead of \"typ\"?\n\n\n\nApart from the above, I'm OK with Jason's changes. So only my patch needs review by anyone but me.",
+    "body": "Attachment [trac_8960-reviewer.patch](tarball://root/attachments/some-uuid/ticket8960/trac_8960-reviewer.patch) by mvngu created at 2010-05-15 04:03:14\n\nChanges in the reviewer patch include:\n\n* Typo fixes.\n* Fix errors/warnings with LaTeX markups in docstrings.\n* Use error types, e.g. IndexError, etc., as callables in accordance with Python 3.x.\n* Don't LaTeX expressions wherever that makes sense. For example, something like\n {{{\n`self`\n }}}\n would actually LaTeX the word \"self\".\n\nIncidentally, I came across the following line\n\n```\nelif PY_TYPE_CHECK(x, gen) and typ((<gen>x).g) == t_REAL:\n```\nfrom the function\n\n```\ncdef _set(self, x, int base):\n        # This should not be called except when the number is being created.    \n        # Real Numbers are supposed to be immutable.\n<...>\n```\nNotice the call\n\n```\ntyp((<gen>x).g)\n```\nShould this be\n\n```\ntype((<gen>x).g)\n```\nThat is, use \"type\" instead of \"typ\"?\n\n\n\nApart from the above, I'm OK with Jason's changes. So only my patch needs review by anyone but me.",
     "created_at": "2010-05-15T04:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
@@ -154,7 +154,6 @@ Incidentally, I came across the following line
 ```
 elif PY_TYPE_CHECK(x, gen) and typ((<gen>x).g) == t_REAL:
 ```
-
 from the function
 
 ```
@@ -163,19 +162,16 @@ cdef _set(self, x, int base):
         # Real Numbers are supposed to be immutable.
 <...>
 ```
-
 Notice the call
 
 ```
 typ((<gen>x).g)
 ```
-
 Should this be
 
 ```
 type((<gen>x).g)
 ```
-
 That is, use "type" instead of "typ"?
 
 

@@ -199,7 +199,7 @@ This ticket is now obsolete and superseded by #11874.
 archive/issue_comments_079850.json:
 ```json
 {
-    "body": "Replying to [comment:10 jason]:\n> This ticket is now obsolete and superseded by #11874.\nPlease explain what you mean with this.",
+    "body": "Replying to [comment:10 jason]:\n> This ticket is now obsolete and superseded by #11874.\n\nPlease explain what you mean with this.",
     "created_at": "2011-12-14T22:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8741",
     "type": "issue_comment",
@@ -210,6 +210,7 @@ archive/issue_comments_079850.json:
 
 Replying to [comment:10 jason]:
 > This ticket is now obsolete and superseded by #11874.
+
 Please explain what you mean with this.
 
 

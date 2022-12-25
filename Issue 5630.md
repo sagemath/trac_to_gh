@@ -72,7 +72,7 @@ Changing status from new to assigned.
 archive/issue_comments_043883.json:
 ```json
 {
-    "body": "This doctest fails for me on 32-bit OS X:\n\n```\nteragon:sage-3.4 wstein$ sage -t devel/sage/sage/schemes/generic/spec.py \nsage -t  \"devel/sage/sage/schemes/generic/spec.py\"          \n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4/devel/sage/sage/schemes/generic/spec.py\", line 116:\n    sage: Spec(QQ) < 5\nExpected:\n    True\nGot:\n    False\n```\n\n\nSince the result is meaningless, you could flag it \n\n```\nsage:  spec(QQ) < 5   # random -- platform dependent\n```\n\n\nor instead have a test\n\n```\nsage: spec(QQ) == 5\nFalse\n```\n\n\nIf you fix this one issue, then this will get \"positive review\" from me.",
+    "body": "This doctest fails for me on 32-bit OS X:\n\n```\nteragon:sage-3.4 wstein$ sage -t devel/sage/sage/schemes/generic/spec.py \nsage -t  \"devel/sage/sage/schemes/generic/spec.py\"          \n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4/devel/sage/sage/schemes/generic/spec.py\", line 116:\n    sage: Spec(QQ) < 5\nExpected:\n    True\nGot:\n    False\n```\n\nSince the result is meaningless, you could flag it \n\n```\nsage:  spec(QQ) < 5   # random -- platform dependent\n```\n\nor instead have a test\n\n```\nsage: spec(QQ) == 5\nFalse\n```\n\nIf you fix this one issue, then this will get \"positive review\" from me.",
     "created_at": "2009-03-29T17:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
@@ -95,13 +95,11 @@ Got:
     False
 ```
 
-
 Since the result is meaningless, you could flag it 
 
 ```
 sage:  spec(QQ) < 5   # random -- platform dependent
 ```
-
 
 or instead have a test
 
@@ -109,7 +107,6 @@ or instead have a test
 sage: spec(QQ) == 5
 False
 ```
-
 
 If you fix this one issue, then this will get "positive review" from me.
 

@@ -87,7 +87,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080775.json:
 ```json
 {
-    "body": "Patch applies to 4.4;  tests pass (I checked all sage/schemes/elliptic_curves).\n\nIn the first file patched, was there a reason for not changing the TypeError in lines 1093/4 to another ValueError?\n\nIn the second:  there are essentially identical blocks of code in lines 1052-1068 and 1360-1376.  But the typo (s to z) was only fixed in one place.  So the other needs fixing too.\n\nIn the \"logic simplification\" bit of the patch -- this is not correct now!  If z's parent is (say) QQ then after the patch, z will have been coerced into CC but C will be set to QQ.  So this now fails:\n\n```\nsage: E = EllipticCurve('14a1')\nsage: L = E.period_lattice()\nsage: L.coordinates(1)\n```\n\n\nFinally, your description is a little unkind!  I spent a long time trying this out -- though I do admit, of course, that I clearly did not test every line.  Perhaps we need to add some more doctests?",
+    "body": "Patch applies to 4.4;  tests pass (I checked all sage/schemes/elliptic_curves).\n\nIn the first file patched, was there a reason for not changing the TypeError in lines 1093/4 to another ValueError?\n\nIn the second:  there are essentially identical blocks of code in lines 1052-1068 and 1360-1376.  But the typo (s to z) was only fixed in one place.  So the other needs fixing too.\n\nIn the \"logic simplification\" bit of the patch -- this is not correct now!  If z's parent is (say) QQ then after the patch, z will have been coerced into CC but C will be set to QQ.  So this now fails:\n\n```\nsage: E = EllipticCurve('14a1')\nsage: L = E.period_lattice()\nsage: L.coordinates(1)\n```\n\nFinally, your description is a little unkind!  I spent a long time trying this out -- though I do admit, of course, that I clearly did not test every line.  Perhaps we need to add some more doctests?",
     "created_at": "2010-04-29T08:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ sage: E = EllipticCurve('14a1')
 sage: L = E.period_lattice()
 sage: L.coordinates(1)
 ```
-
 
 Finally, your description is a little unkind!  I spent a long time trying this out -- though I do admit, of course, that I clearly did not test every line.  Perhaps we need to add some more doctests?
 
@@ -200,7 +199,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080780.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n> The file has some tabs in the docstring, so I'm hesitant to add any doctests until I've upgraded (there was a lot of detabification in the last release that bit me before). For the time being, I've reverted to the original logic, just fixing the typo. \n\nI used to be one of the tab culprits but I have now properly configured emacs on all the machines I use not to use them!\n\n> \n> Thanks for looking at this barrage of tickets I've just posted!\n\nWell, I feel it's my duty to do so...\n\nI am looking at the new patch now.",
+    "body": "Replying to [comment:5 robertwb]:\n> The file has some tabs in the docstring, so I'm hesitant to add any doctests until I've upgraded (there was a lot of detabification in the last release that bit me before). For the time being, I've reverted to the original logic, just fixing the typo. \n\n\nI used to be one of the tab culprits but I have now properly configured emacs on all the machines I use not to use them!\n\n> \n> Thanks for looking at this barrage of tickets I've just posted!\n\n\nWell, I feel it's my duty to do so...\n\nI am looking at the new patch now.",
     "created_at": "2010-04-29T10:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8815",
     "type": "issue_comment",
@@ -212,10 +211,12 @@ archive/issue_comments_080780.json:
 Replying to [comment:5 robertwb]:
 > The file has some tabs in the docstring, so I'm hesitant to add any doctests until I've upgraded (there was a lot of detabification in the last release that bit me before). For the time being, I've reverted to the original logic, just fixing the typo. 
 
+
 I used to be one of the tab culprits but I have now properly configured emacs on all the machines I use not to use them!
 
 > 
 > Thanks for looking at this barrage of tickets I've just posted!
+
 
 Well, I feel it's my duty to do so...
 

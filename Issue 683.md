@@ -3,7 +3,7 @@
 archive/issues_000683.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n     --  The response to `latex?' seems to be out of date.\n\n            %latex\n            The equation y^2 = x^3 + x defines an elliptic curve.\n            We have 2006 = SAGE{factor(2006)}.\n\n    I thought it was a great credit to SAGE that when I edited the sample input\n    in what seemed the obvious way, enclosing the math in $$ and changing SAGE\n    to \\sage, that it worked as expected.\n\n```\n\n\n\n\n\nAh, you've found a bug.  What happens is that all SAGE documentation\nis de-texed before displaying in the notebook (in plain text format).  Unfortunately\nthis detexing makes the documentation for latex appear completely\nwrong!  \n\nThe solution is probably to come up with a notation to tell SAGE not\nto do the detexing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/683\n\n",
+    "body": "Assignee: boothby\n\n```\n     --  The response to `latex?' seems to be out of date.\n\n            %latex\n            The equation y^2 = x^3 + x defines an elliptic curve.\n            We have 2006 = SAGE{factor(2006)}.\n\n    I thought it was a great credit to SAGE that when I edited the sample input\n    in what seemed the obvious way, enclosing the math in $$ and changing SAGE\n    to \\sage, that it worked as expected.\n\n```\n\n\n\n\nAh, you've found a bug.  What happens is that all SAGE documentation\nis de-texed before displaying in the notebook (in plain text format).  Unfortunately\nthis detexing makes the documentation for latex appear completely\nwrong!  \n\nThe solution is probably to come up with a notation to tell SAGE not\nto do the detexing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/683\n\n",
     "created_at": "2007-09-17T21:52:21Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_000683.json:
 ```
 Assignee: boothby
 
-
 ```
      --  The response to `latex?' seems to be out of date.
 
@@ -31,7 +30,6 @@ Assignee: boothby
     to \sage, that it worked as expected.
 
 ```
-
 
 
 
@@ -90,7 +88,7 @@ Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_003531.json:
 ```json
 {
-    "body": "683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
+    "body": "683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
     "created_at": "2007-11-04T07:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
@@ -104,13 +102,11 @@ archive/issue_comments_003531.json:
 The first line of a docstring is parsed as a comma-separated list of
 directives (no whitespace in directives!).  For example:
 
-
 ```
 r"""nodetex,notyetimplemented
 ...
 """
 ```
-
 
 If 'nodetex' is one of the directives, then no (la)tex code is stripped from
 the docstring.  The model was the 'nodoctest' directive already found at the

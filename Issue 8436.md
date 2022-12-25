@@ -149,7 +149,7 @@ Trial patch attached.
 archive/issue_comments_075607.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Just in case: You can also double-click on typeset output to see the source.\n\nThis is not the same. Double-click shows a gray window with the source of ONE typeset output and if you have used several show(...) in one cell (or in a cycle), you need to do if for each of them separately.",
+    "body": "Replying to [comment:3 mpatel]:\n> Just in case: You can also double-click on typeset output to see the source.\n\n\nThis is not the same. Double-click shows a gray window with the source of ONE typeset output and if you have used several show(...) in one cell (or in a cycle), you need to do if for each of them separately.",
     "created_at": "2010-03-05T04:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8436",
     "type": "issue_comment",
@@ -160,6 +160,7 @@ archive/issue_comments_075607.json:
 
 Replying to [comment:3 mpatel]:
 > Just in case: You can also double-click on typeset output to see the source.
+
 
 This is not the same. Double-click shows a gray window with the source of ONE typeset output and if you have used several show(...) in one cell (or in a cycle), you need to do if for each of them separately.
 

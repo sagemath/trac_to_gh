@@ -3,7 +3,7 @@
 archive/issues_009689.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nWhilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099\n\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 498\\\n3:\n    sage: maxima('sinh(1.0)')\nExpected:\n    1.175201193643801\nGot:\n    1.175201193643802\n```\n\n\nA computation with Mathematica, using 60 digits of precision gives \n\n\n```\nIn[2]:= N[Sinh[1],60]\n\nOut[2]= 1.17520119364380145688238185059560081515571798133409587022957\n```\n\n\nThe absolute error on Solaris x86 is slighly higher than seen on some other systems, but this is still a perfectly acceptable result.\n\nThis should be fairly easy to fix. I'll make a patch later today\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9689\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nWhilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 498\\\n3:\n    sage: maxima('sinh(1.0)')\nExpected:\n    1.175201193643801\nGot:\n    1.175201193643802\n```\n\nA computation with Mathematica, using 60 digits of precision gives \n\n```\nIn[2]:= N[Sinh[1],60]\n\nOut[2]= 1.17520119364380145688238185059560081515571798133409587022957\n```\n\nThe absolute error on Solaris x86 is slighly higher than seen on some other systems, but this is still a perfectly acceptable result.\n\nThis should be fairly easy to fix. I'll make a patch later today\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9689\n\n",
     "created_at": "2010-08-05T08:27:45Z",
     "labels": [
         "component: doctest coverage",
@@ -22,7 +22,6 @@ CC:  @jhpalmieri
 
 Whilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099
 
-
 ```
 sage -t  -long devel/sage/sage/symbolic/expression.pyx
 **********************************************************************
@@ -35,16 +34,13 @@ Got:
     1.175201193643802
 ```
 
-
 A computation with Mathematica, using 60 digits of precision gives 
-
 
 ```
 In[2]:= N[Sinh[1],60]
 
 Out[2]= 1.17520119364380145688238185059560081515571798133409587022957
 ```
-
 
 The absolute error on Solaris x86 is slighly higher than seen on some other systems, but this is still a perfectly acceptable result.
 
@@ -63,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9689
 archive/issue_comments_094019.json:
 ```json
 {
-    "body": "I just realise the second failure shown on #9099\n\n\n```\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n```\n\n\nis the same file (devel/sage-main/sage/symbolic/expression.pyx) as this simple numerical noise issue. Hopefully be solved too. That's a less obvious problem to solve though. \n\nAny ideas anyone?",
+    "body": "I just realise the second failure shown on #9099\n\n```\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n```\n\nis the same file (devel/sage-main/sage/symbolic/expression.pyx) as this simple numerical noise issue. Hopefully be solved too. That's a less obvious problem to solve though. \n\nAny ideas anyone?",
     "created_at": "2010-08-05T17:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
@@ -74,14 +70,12 @@ archive/issue_comments_094019.json:
 
 I just realise the second failure shown on #9099
 
-
 ```
 Expected:
     0.881373587019543
 Got:
     .8813735870195429
 ```
-
 
 is the same file (devel/sage-main/sage/symbolic/expression.pyx) as this simple numerical noise issue. Hopefully be solved too. That's a less obvious problem to solve though. 
 
@@ -132,7 +126,7 @@ Solves the numerical noise issue computing sinh(1.0). The archsinh case is more 
 archive/issue_comments_094022.json:
 ```json
 {
-    "body": "It's not very pretty, but \n\n```\nabs(float(maxima('asinh(1.0)')) - 0.881373587019543) < 1e-15\n```\n\nor\n\n```\nmaxima('abs(asinh(1.0) - 0.881373587019543)') < 1e-15\n```\n\nwork for the other test.  Or:\n\n```\nsage: float(maxima('asinh(1.0)'))\n0.8813735870195429...\n```\n",
+    "body": "It's not very pretty, but \n\n```\nabs(float(maxima('asinh(1.0)')) - 0.881373587019543) < 1e-15\n```\nor\n\n```\nmaxima('abs(asinh(1.0) - 0.881373587019543)') < 1e-15\n```\nwork for the other test.  Or:\n\n```\nsage: float(maxima('asinh(1.0)'))\n0.8813735870195429...\n```",
     "created_at": "2010-08-05T23:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
@@ -146,20 +140,17 @@ It's not very pretty, but
 ```
 abs(float(maxima('asinh(1.0)')) - 0.881373587019543) < 1e-15
 ```
-
 or
 
 ```
 maxima('abs(asinh(1.0) - 0.881373587019543)') < 1e-15
 ```
-
 work for the other test.  Or:
 
 ```
 sage: float(maxima('asinh(1.0)'))
 0.8813735870195429...
 ```
-
 
 
 
@@ -270,7 +261,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094028.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> This looks fine to me and passed tests (in that file) on both 32-bit and 64-bit ubuntu.\n\nThank you for the review John. \n\nDave",
+    "body": "Replying to [comment:8 cremona]:\n> This looks fine to me and passed tests (in that file) on both 32-bit and 64-bit ubuntu.\n\n\nThank you for the review John. \n\nDave",
     "created_at": "2010-08-12T18:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
@@ -281,6 +272,7 @@ archive/issue_comments_094028.json:
 
 Replying to [comment:8 cremona]:
 > This looks fine to me and passed tests (in that file) on both 32-bit and 64-bit ubuntu.
+
 
 Thank you for the review John. 
 

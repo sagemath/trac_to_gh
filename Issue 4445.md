@@ -3,7 +3,7 @@
 archive/issues_004445.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nConsider:\n\n\n```\nsage: g=graphs.HeawoodGraph()\nsage: g.is_isomorphic(g)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in is_isomorphic(self, other, certify, verbosity, edge_labels)\n   6540             G2 = other; partition2 = [other.vertices()]\n   6541         from sage.misc.flatten import flatten\n-> 6542         isom = isomorphic(G, G2, partition, flatten(partition2, max_level=1), (self._directed or self.loops()), 1)\n   6543         if not isom and certify:\n   6544             return False, None\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/partn_ref/refinement_graphs.so in sage.groups.perm_gps.partn_ref.refinement_graphs.isomorphic (sage/groups/perm_gps/partn_ref/refinement_graphs.c:9946)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\n\nHowever, \n\n```\nsage: g.is_isomorphic(graphs.HeawoodGraph())\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4445\n\n",
+    "body": "Assignee: @rlmill\n\nConsider:\n\n```\nsage: g=graphs.HeawoodGraph()\nsage: g.is_isomorphic(g)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in is_isomorphic(self, other, certify, verbosity, edge_labels)\n   6540             G2 = other; partition2 = [other.vertices()]\n   6541         from sage.misc.flatten import flatten\n-> 6542         isom = isomorphic(G, G2, partition, flatten(partition2, max_level=1), (self._directed or self.loops()), 1)\n   6543         if not isom and certify:\n   6544             return False, None\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/partn_ref/refinement_graphs.so in sage.groups.perm_gps.partn_ref.refinement_graphs.isomorphic (sage/groups/perm_gps/partn_ref/refinement_graphs.c:9946)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\nHowever, \n\n```\nsage: g.is_isomorphic(graphs.HeawoodGraph())\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4445\n\n",
     "created_at": "2008-11-05T15:04:17Z",
     "labels": [
         "component: graph theory",
@@ -19,7 +19,6 @@ archive/issues_004445.json:
 Assignee: @rlmill
 
 Consider:
-
 
 ```
 sage: g=graphs.HeawoodGraph()
@@ -41,14 +40,12 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'NoneType' object is unsubscriptable
 ```
 
-
 However, 
 
 ```
 sage: g.is_isomorphic(graphs.HeawoodGraph())
 True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4445

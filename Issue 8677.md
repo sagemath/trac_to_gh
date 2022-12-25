@@ -3,7 +3,7 @@
 archive/issues_008677.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nIn a recent thread: http://groups.google.com/group/sage-devel/browse_thread/thread/97f1e17019caf2d0# it was reported, that  \" sage 4.3.5 won't build on Red Hat Enterprise Linux 5.4: File exists: '/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure' \" The partial log output was:\n\n\n```\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o sage/stats/hmm/chmm.c\nsage/stats/hmm/chmm.pyx\nsage/stats/hmm/chmm.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/stats/hmm/chmm.pyx\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o\nsage/structure/coerce_dict.c sage/structure/coerce_dict.pyx\nsage/structure/coerce_dict.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure/coerce_dict.pyx\npython `which cython` --emTraceback (most recent call last):\n   File \"setup.py\", line 754, in <module>\n     execute_list_of_commands(queue)\n   File \"setup.py\", line 250, in execute_list_of_commands\n     execute_list_of_commands_in_parallel(command_list, nthreads)\n   File \"setup.py\", line 191, in execute_list_of_commands_in_parallel\n     for r in p.imap(apply_pair, command_list):\n   File\n\"/usr/local_machine/sage-4.3.5/local/lib/python/multiprocessing/pool.py\",\nline 520, in next\n     raise value\nOSError: [Errno 17] File exists:\n'/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    1m56.499s\nuser    8m27.884s\nsys     0m19.321s\nsage: An error occurred while installing sage-4.3.5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /usr/local_machine/sage-4.3.5/install.log.  Describe your computer,\noperating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5 and type 'make\ncheck' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5' &&\n'/usr/local_machine/sage-4.3.5/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/sage-4.3.5] Error 1\nmake[1]: Leaving directory `/usr/local_machine/sage-4.3.5/spkg'\n\nreal    59m35.961s\nuser    64m50.926s\nsys     11m16.115s\nError building Sage.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent_base.pyx:63:4:\nOverriding cdef method with def method.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent.pyx:118:4:\ndict already a builtin Cython type \n```\n\nMy suspicion is, that the reason is some race condition in checking, whether during the build some directory has to be newly added, or already exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8677\n\n",
+    "body": "Assignee: GeorgSWeber\n\nIn a recent thread: http://groups.google.com/group/sage-devel/browse_thread/thread/97f1e17019caf2d0# it was reported, that  \" sage 4.3.5 won't build on Red Hat Enterprise Linux 5.4: File exists: '/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure' \" The partial log output was:\n\n```\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o sage/stats/hmm/chmm.c\nsage/stats/hmm/chmm.pyx\nsage/stats/hmm/chmm.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/stats/hmm/chmm.pyx\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o\nsage/structure/coerce_dict.c sage/structure/coerce_dict.pyx\nsage/structure/coerce_dict.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure/coerce_dict.pyx\npython `which cython` --emTraceback (most recent call last):\n   File \"setup.py\", line 754, in <module>\n     execute_list_of_commands(queue)\n   File \"setup.py\", line 250, in execute_list_of_commands\n     execute_list_of_commands_in_parallel(command_list, nthreads)\n   File \"setup.py\", line 191, in execute_list_of_commands_in_parallel\n     for r in p.imap(apply_pair, command_list):\n   File\n\"/usr/local_machine/sage-4.3.5/local/lib/python/multiprocessing/pool.py\",\nline 520, in next\n     raise value\nOSError: [Errno 17] File exists:\n'/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    1m56.499s\nuser    8m27.884s\nsys     0m19.321s\nsage: An error occurred while installing sage-4.3.5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /usr/local_machine/sage-4.3.5/install.log.  Describe your computer,\noperating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5 and type 'make\ncheck' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5' &&\n'/usr/local_machine/sage-4.3.5/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/sage-4.3.5] Error 1\nmake[1]: Leaving directory `/usr/local_machine/sage-4.3.5/spkg'\n\nreal    59m35.961s\nuser    64m50.926s\nsys     11m16.115s\nError building Sage.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent_base.pyx:63:4:\nOverriding cdef method with def method.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent.pyx:118:4:\ndict already a builtin Cython type \n```\nMy suspicion is, that the reason is some race condition in checking, whether during the build some directory has to be newly added, or already exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8677\n\n",
     "created_at": "2010-04-12T20:58:49Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_008677.json:
 Assignee: GeorgSWeber
 
 In a recent thread: http://groups.google.com/group/sage-devel/browse_thread/thread/97f1e17019caf2d0# it was reported, that  " sage 4.3.5 won't build on Red Hat Enterprise Linux 5.4: File exists: '/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure' " The partial log output was:
-
 
 ```
 python `which cython` --embed-positions --directive cdivision=True
@@ -80,7 +79,6 @@ warning:
 /usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent.pyx:118:4:
 dict already a builtin Cython type 
 ```
-
 My suspicion is, that the reason is some race condition in checking, whether during the build some directory has to be newly added, or already exists.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8677
@@ -248,7 +246,7 @@ Should we do as Craig suggests above, e.g., `pass` in the `except` block if `dir
 archive/issue_comments_078841.json:
 ```json
 {
-    "body": "A correctly working NFSv3 shouldn't need the `async` options to achieve fast writes, but maybe some older servers/clients are being used? With `async`, data will be corrupted if the server crashes, but thats probably acceptable on a build system.\n\nI take issue with the patch, however. The current race seems to be \n\n```\n    if not os.path.exists(path): \n        # another process can create path here\n        os.makedirs(path) \n        # error!\n```\n\nThe correct fix would be to replace the whole if clause with \n\n```\n    try: \n        os.makedirs(path) \n    except OSError: \n        pass \n```\n\nBut the patch mixes up both. It still contains the original race and then hacks around it to trap the error.",
+    "body": "A correctly working NFSv3 shouldn't need the `async` options to achieve fast writes, but maybe some older servers/clients are being used? With `async`, data will be corrupted if the server crashes, but thats probably acceptable on a build system.\n\nI take issue with the patch, however. The current race seems to be \n\n```\n    if not os.path.exists(path): \n        # another process can create path here\n        os.makedirs(path) \n        # error!\n```\nThe correct fix would be to replace the whole if clause with \n\n```\n    try: \n        os.makedirs(path) \n    except OSError: \n        pass \n```\nBut the patch mixes up both. It still contains the original race and then hacks around it to trap the error.",
     "created_at": "2010-10-02T09:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -267,7 +265,6 @@ I take issue with the patch, however. The current race seems to be
         os.makedirs(path) 
         # error!
 ```
-
 The correct fix would be to replace the whole if clause with 
 
 ```
@@ -276,7 +273,6 @@ The correct fix would be to replace the whole if clause with
     except OSError: 
         pass 
 ```
-
 But the patch mixes up both. It still contains the original race and then hacks around it to trap the error.
 
 
@@ -286,7 +282,7 @@ But the patch mixes up both. It still contains the original race and then hacks 
 archive/issue_comments_078842.json:
 ```json
 {
-    "body": "> A correctly working NFSv3 shouldn't need the async options to achieve fast writes\n\nAre you just making this up, or?!\n\n> The correct fix would be to replace the whole if clause with ...\n\nI strongly disagree.  I see no point in not including the\n\n```\nif not os.path.exists(dirname):\n```\n\ncode, since that makes perfect sense when doing a serial build, which is what most people do.",
+    "body": "> A correctly working NFSv3 shouldn't need the async options to achieve fast writes\n\n\nAre you just making this up, or?!\n\n> The correct fix would be to replace the whole if clause with ...\n\n\nI strongly disagree.  I see no point in not including the\n\n```\nif not os.path.exists(dirname):\n```\ncode, since that makes perfect sense when doing a serial build, which is what most people do.",
     "created_at": "2010-10-02T17:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -297,16 +293,17 @@ archive/issue_comments_078842.json:
 
 > A correctly working NFSv3 shouldn't need the async options to achieve fast writes
 
+
 Are you just making this up, or?!
 
 > The correct fix would be to replace the whole if clause with ...
+
 
 I strongly disagree.  I see no point in not including the
 
 ```
 if not os.path.exists(dirname):
 ```
-
 code, since that makes perfect sense when doing a serial build, which is what most people do.
 
 
@@ -316,7 +313,7 @@ code, since that makes perfect sense when doing a serial build, which is what mo
 archive/issue_comments_078843.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> Are you just making this up, or?!\n\nThats what the aforementioned FAQ says:\n\n```\nFor the Linux implementation of NFS Version 3, using the \"async\" export option to allow faster writes is no longer necessary. NFS Version 3 explicitly allows a server to reply before writing data to disk, under controlled circumstances.\n```\n\n\n> I strongly disagree.  I see no point in not including the\n> if not os.path.exists(dirname):\n\nThe point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...",
+    "body": "Replying to [comment:8 was]:\n> Are you just making this up, or?!\n\n\nThats what the aforementioned FAQ says:\n\n```\nFor the Linux implementation of NFS Version 3, using the \"async\" export option to allow faster writes is no longer necessary. NFS Version 3 explicitly allows a server to reply before writing data to disk, under controlled circumstances.\n```\n\n> I strongly disagree.  I see no point in not including the\n> if not os.path.exists(dirname):\n\n\nThe point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...",
     "created_at": "2010-10-02T17:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -328,15 +325,16 @@ archive/issue_comments_078843.json:
 Replying to [comment:8 was]:
 > Are you just making this up, or?!
 
+
 Thats what the aforementioned FAQ says:
 
 ```
 For the Linux implementation of NFS Version 3, using the "async" export option to allow faster writes is no longer necessary. NFS Version 3 explicitly allows a server to reply before writing data to disk, under controlled circumstances.
 ```
 
-
 > I strongly disagree.  I see no point in not including the
 > if not os.path.exists(dirname):
+
 
 The point is that the pattern "if (look at filesystem) then (modify filesystem)" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...
 
@@ -347,7 +345,7 @@ The point is that the pattern "if (look at filesystem) then (modify filesystem)"
 archive/issue_comments_078844.json:
 ```json
 {
-    "body": "Replying to [comment:9 vbraun]:\n> Replying to [comment:8 was]:\n> > I strongly disagree.  I see no point in not including the\n> > if not os.path.exists(dirname):\n> The point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...\n\nWhat if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.",
+    "body": "Replying to [comment:9 vbraun]:\n> Replying to [comment:8 was]:\n> > I strongly disagree.  I see no point in not including the\n> > if not os.path.exists(dirname):\n\n> The point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...\n\nWhat if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.",
     "created_at": "2010-10-02T22:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -360,6 +358,7 @@ Replying to [comment:9 vbraun]:
 > Replying to [comment:8 was]:
 > > I strongly disagree.  I see no point in not including the
 > > if not os.path.exists(dirname):
+
 > The point is that the pattern "if (look at filesystem) then (modify filesystem)" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...
 
 What if we use William's solution for the first "hunk" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.
@@ -391,7 +390,7 @@ Alternate version, fix commit string.  Apply just one patch.
 archive/issue_comments_078846.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> What if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.\n\nI've add a patch that does this.",
+    "body": "Replying to [comment:10 mpatel]:\n> What if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.\n\n\nI've add a patch that does this.",
     "created_at": "2010-10-05T05:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -402,6 +401,7 @@ archive/issue_comments_078846.json:
 
 Replying to [comment:10 mpatel]:
 > What if we use William's solution for the first "hunk" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.
+
 
 I've add a patch that does this.
 
@@ -450,7 +450,7 @@ Yet another alternate version
 archive/issue_comments_078849.json:
 ```json
 {
-    "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by @qed777 created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
+    "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by @qed777 created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
     "created_at": "2010-10-10T04:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -480,7 +480,6 @@ Traceback (most recent call last):
 NameError: global name 'path' is not defined
 sage: There was an error installing modified sage library code.
 ```
-
 This doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?
 
 
@@ -490,7 +489,7 @@ This doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?
 archive/issue_comments_078850.json:
 ```json
 {
-    "body": "> This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n\nProbably on lines 687-690, \"path\" should be \"dirname\"?  I'm attaching a new version with this change.  Since all of the other patches list William as the author, I'm doing the same for this one...",
+    "body": "> This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n\n\nProbably on lines 687-690, \"path\" should be \"dirname\"?  I'm attaching a new version with this change.  Since all of the other patches list William as the author, I'm doing the same for this one...",
     "created_at": "2010-10-11T20:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -500,6 +499,7 @@ archive/issue_comments_078850.json:
 ```
 
 > This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?
+
 
 Probably on lines 687-690, "path" should be "dirname"?  I'm attaching a new version with this change.  Since all of the other patches list William as the author, I'm doing the same for this one...
 
@@ -530,7 +530,7 @@ Still another alternate version
 archive/issue_comments_078852.json:
 ```json
 {
-    "body": "Replying to [comment:14 jhpalmieri]:\n> > This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n> \n> Probably on lines 687-690, \"path\" should be \"dirname\"? [...]\n\n\"D'oh!\" Thanks, John.",
+    "body": "Replying to [comment:14 jhpalmieri]:\n> > This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n\n> \n> Probably on lines 687-690, \"path\" should be \"dirname\"? [...]\n\n\n\"D'oh!\" Thanks, John.",
     "created_at": "2010-10-11T21:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
@@ -541,8 +541,10 @@ archive/issue_comments_078852.json:
 
 Replying to [comment:14 jhpalmieri]:
 > > This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?
+
 > 
 > Probably on lines 687-690, "path" should be "dirname"? [...]
+
 
 "D'oh!" Thanks, John.
 

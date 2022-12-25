@@ -3,7 +3,7 @@
 archive/issues_000180.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n[justin]: Hmmm...it's actually \"-s -i\".  The 'sage' command seems to care about the order of switches; \"-f -i\" works, while \"-i -f\" doesn't.  \"-i -s\" does not save the results, while '-s -i' does.  Is that intentional?\n[11:54am] was389: it's a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/180\n\n",
+    "body": "Assignee: @williamstein\n\n```\n[justin]: Hmmm...it's actually \"-s -i\".  The 'sage' command seems to care about the order of switches; \"-f -i\" works, while \"-i -f\" doesn't.  \"-i -s\" does not save the results, while '-s -i' does.  Is that intentional?\n[11:54am] was389: it's a bug.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/180\n\n",
     "created_at": "2006-12-10T19:59:06Z",
     "labels": [
         "component: packages: standard",
@@ -19,12 +19,10 @@ archive/issues_000180.json:
 ```
 Assignee: @williamstein
 
-
 ```
 [justin]: Hmmm...it's actually "-s -i".  The 'sage' command seems to care about the order of switches; "-f -i" works, while "-i -f" doesn't.  "-i -s" does not save the results, while '-s -i' does.  Is that intentional?
 [11:54am] was389: it's a bug.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/180
 

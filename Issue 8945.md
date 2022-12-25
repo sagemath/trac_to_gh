@@ -3,7 +3,7 @@
 archive/issues_008945.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @williamstein @JohnCremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\n\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein @JohnCremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
     "created_at": "2010-05-10T17:01:33Z",
     "labels": [
         "component: modular forms",
@@ -30,7 +30,6 @@ sage: EllipticCurve('225c').aplist(50)
 sage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]
 [0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]
 ```
-
 
 This is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!
 
@@ -96,7 +95,7 @@ Maybe it's best to not attempt to fix this issue, and to live with the fact that
 archive/issue_comments_082224.json:
 ```json
 {
-    "body": "You are right.  I changed the ordering explicitly at William's request, to agree with what he is using for more general modular forms.  But the rule of the game is that after publishing tables I do not want to change all the labels of all the curves with hindsight.  So the database labelling is \"old\".\n\nAlso in eclib src/g0n/newforms.cc you see\n\n```\n  if((n1ds>1)&&(modulus<130000)) // reorder into old order\n    {\n      if(verbose) \n\t{\n\t  cout<<\"Reordering newforms into old order as N<130000\"<<endl;\n\t  //\t  cout<<\"Before sorting:\\n\"; display();\n\t}\n      sort(1);\n      if(verbose) \n\t{\n\t  //\t  cout<<\"After sorting:\\n\"; display();\n\t}\n```\n\nshowing that the output of eclib itself uses old ordering for N<130,000 (only).",
+    "body": "You are right.  I changed the ordering explicitly at William's request, to agree with what he is using for more general modular forms.  But the rule of the game is that after publishing tables I do not want to change all the labels of all the curves with hindsight.  So the database labelling is \"old\".\n\nAlso in eclib src/g0n/newforms.cc you see\n\n```\n  if((n1ds>1)&&(modulus<130000)) // reorder into old order\n    {\n      if(verbose) \n\t{\n\t  cout<<\"Reordering newforms into old order as N<130000\"<<endl;\n\t  //\t  cout<<\"Before sorting:\\n\"; display();\n\t}\n      sort(1);\n      if(verbose) \n\t{\n\t  //\t  cout<<\"After sorting:\\n\"; display();\n\t}\n```\nshowing that the output of eclib itself uses old ordering for N<130,000 (only).",
     "created_at": "2010-05-12T14:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
@@ -123,7 +122,6 @@ Also in eclib src/g0n/newforms.cc you see
 	  //	  cout<<"After sorting:\n"; display();
 	}
 ```
-
 showing that the output of eclib itself uses old ordering for N<130,000 (only).
 
 
@@ -133,7 +131,7 @@ showing that the output of eclib itself uses old ordering for N<130,000 (only).
 archive/issue_comments_082225.json:
 ```json
 {
-    "body": "One way of dealing with this would be as follows:  for levels up to 130000 and weight 2 newforms for Gamma_0(N), the decomposition function could sort the forms according to the sorting of the curves in the database.  This would be a real pain to do (though only once!) since -- as I pointed out earlier -- there is no simple way to do this for levels < 450 or so.  All one needs is a slave to work out around 400 cases like this:\n\n```\nsage: [EllipticCurve('225'+l).aplist(20) for l in 'abcde']\n[[0, 0, 0, -5, 0, -5, 0, -1], [0, 0, 0, 5, 0, 5, 0, -1], [-1, 0, 0, 0, 4, 2, 2, 4], [2, 0, 0, 3, -2, -1, 2, -5], [-2, 0, 0, -3, -2, 1, -2, -5]]\nsage: [[Newform('225'+l,names='a')[p] for p in prime_range(20)] for l in 'cdbea']\n[[0, 0, 0, -5, 0, -5, 0, -1], [0, 0, 0, 5, 0, 5, 0, -1], [-1, 0, 0, 0, 4, 2, 2, 4], [2, 0, 0, 3, -2, -1, 2, -5], [-2, 0, 0, -3, -2, 1, -2, -5]]\n```\n\nso as far as level 225 is concerned, 'cdbea' does the trick.\n\nIn eclib's src/g0n/curvesort.cc there are lots of lines like this:\n\n```\ncase 222: return EDACB[form]; break;\n```\n\nwhere\n\n```\nint EDACB[] = {4,3,0,2,1};\n```\n\nwhich I tediously worked out by hand around 20 years ago...",
+    "body": "One way of dealing with this would be as follows:  for levels up to 130000 and weight 2 newforms for Gamma_0(N), the decomposition function could sort the forms according to the sorting of the curves in the database.  This would be a real pain to do (though only once!) since -- as I pointed out earlier -- there is no simple way to do this for levels < 450 or so.  All one needs is a slave to work out around 400 cases like this:\n\n```\nsage: [EllipticCurve('225'+l).aplist(20) for l in 'abcde']\n[[0, 0, 0, -5, 0, -5, 0, -1], [0, 0, 0, 5, 0, 5, 0, -1], [-1, 0, 0, 0, 4, 2, 2, 4], [2, 0, 0, 3, -2, -1, 2, -5], [-2, 0, 0, -3, -2, 1, -2, -5]]\nsage: [[Newform('225'+l,names='a')[p] for p in prime_range(20)] for l in 'cdbea']\n[[0, 0, 0, -5, 0, -5, 0, -1], [0, 0, 0, 5, 0, 5, 0, -1], [-1, 0, 0, 0, 4, 2, 2, 4], [2, 0, 0, 3, -2, -1, 2, -5], [-2, 0, 0, -3, -2, 1, -2, -5]]\n```\nso as far as level 225 is concerned, 'cdbea' does the trick.\n\nIn eclib's src/g0n/curvesort.cc there are lots of lines like this:\n\n```\ncase 222: return EDACB[form]; break;\n```\nwhere\n\n```\nint EDACB[] = {4,3,0,2,1};\n```\nwhich I tediously worked out by hand around 20 years ago...",
     "created_at": "2010-10-03T17:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
@@ -150,7 +148,6 @@ sage: [EllipticCurve('225'+l).aplist(20) for l in 'abcde']
 sage: [[Newform('225'+l,names='a')[p] for p in prime_range(20)] for l in 'cdbea']
 [[0, 0, 0, -5, 0, -5, 0, -1], [0, 0, 0, 5, 0, 5, 0, -1], [-1, 0, 0, 0, 4, 2, 2, 4], [2, 0, 0, 3, -2, -1, 2, -5], [-2, 0, 0, -3, -2, 1, -2, -5]]
 ```
-
 so as far as level 225 is concerned, 'cdbea' does the trick.
 
 In eclib's src/g0n/curvesort.cc there are lots of lines like this:
@@ -158,13 +155,11 @@ In eclib's src/g0n/curvesort.cc there are lots of lines like this:
 ```
 case 222: return EDACB[form]; break;
 ```
-
 where
 
 ```
 int EDACB[] = {4,3,0,2,1};
 ```
-
 which I tediously worked out by hand around 20 years ago...
 
 
@@ -316,7 +311,7 @@ Personally, I am more concerned with getting the curve/newform labels in the lmf
 archive/issue_comments_082227.json:
 ```json
 {
-    "body": "> Sorry -- you can write \"to do\" but that will not make *me* do it!\n\nI just used the 'todo'-stopgap label to mark tickets which describes issues leading \nto potential silent wrong results. \n\nSince I checked about one third of open tickets, I estimate\nthat currently there are about 80-100 known bugs which silently lead to wrong results.",
+    "body": "> Sorry -- you can write \"to do\" but that will not make *me* do it!\n\n\nI just used the 'todo'-stopgap label to mark tickets which describes issues leading \nto potential silent wrong results. \n\nSince I checked about one third of open tickets, I estimate\nthat currently there are about 80-100 known bugs which silently lead to wrong results.",
     "created_at": "2015-08-24T17:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
@@ -326,6 +321,7 @@ archive/issue_comments_082227.json:
 ```
 
 > Sorry -- you can write "to do" but that will not make *me* do it!
+
 
 I just used the 'todo'-stopgap label to mark tickets which describes issues leading 
 to potential silent wrong results. 

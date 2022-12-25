@@ -3,7 +3,7 @@
 archive/issues_008645.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @nbruin @williamstein mvngu @qed777 @jdemeyer\n\nKeywords: maxima, ecl\n\nWith the recent ECL update #8275, maxima package doesn't install the ECL library (which was added in #7287). The library is built, but put in an unexpected location. Here is the end of the log:\n\n\n```\n;;; Note: Invoking external command:\n;;;   ranlib /home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/libmaxima.a\n;;; Note: Invoking external command:\n;;;   gcc \"-I/home/burcin/sage/sage-4.3.2/local/include/\"  -I/home/burcin/sage/sage-4.3.2/local/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64  -O2  -g  -Wall  -fPIC  -Dlinux -O -w -c \"/tmp/ECLINITEsuxJJ.c\" -o \"/tmp/ECLINITEsuxJJ.o\"\n;;; Note: Invoking external command:\n;;;   gcc -o \"/home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/maxima.fasb\" -L\"/home/burcin/sage/sage-4.3.2/local/lib/\" \"/tmp/ECLINITEsuxJJ.o\" \"/home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/libmaxima.a\"   -shared  -L/home/burcin/sage/sage-4.3.2/local/lib  -L/home/burcin/sage/sage-4.3.2/local/lib  -lecl  -lgmp -lgc -ldl  -lm \ninstalling Maxima library as /home/burcin/sage/sage-4.3.2/local/lib/ecl//maxima.fas\ncp: cannot stat `maxima.fasb': No such file or directory\n\nreal    3m15.250s\nuser    2m34.586s\nsys     0m19.645s\nSuccessfully installed maxima-5.20.1\n```\n\n\nNote that the return value of the cp command is not checked.\n\nThe files are here:\n\n\n```\nburcin@karr ~/sage/sage-4.3.2 $ ls ~/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/\nlibmaxima.a  maxima.fasb  \n```\n\n\nAny ideas why?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8645\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @nbruin @williamstein mvngu @qed777 @jdemeyer\n\nKeywords: maxima, ecl\n\nWith the recent ECL update #8275, maxima package doesn't install the ECL library (which was added in #7287). The library is built, but put in an unexpected location. Here is the end of the log:\n\n```\n;;; Note: Invoking external command:\n;;;   ranlib /home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/libmaxima.a\n;;; Note: Invoking external command:\n;;;   gcc \"-I/home/burcin/sage/sage-4.3.2/local/include/\"  -I/home/burcin/sage/sage-4.3.2/local/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64  -O2  -g  -Wall  -fPIC  -Dlinux -O -w -c \"/tmp/ECLINITEsuxJJ.c\" -o \"/tmp/ECLINITEsuxJJ.o\"\n;;; Note: Invoking external command:\n;;;   gcc -o \"/home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/maxima.fasb\" -L\"/home/burcin/sage/sage-4.3.2/local/lib/\" \"/tmp/ECLINITEsuxJJ.o\" \"/home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/libmaxima.a\"   -shared  -L/home/burcin/sage/sage-4.3.2/local/lib  -L/home/burcin/sage/sage-4.3.2/local/lib  -lecl  -lgmp -lgc -ldl  -lm \ninstalling Maxima library as /home/burcin/sage/sage-4.3.2/local/lib/ecl//maxima.fas\ncp: cannot stat `maxima.fasb': No such file or directory\n\nreal    3m15.250s\nuser    2m34.586s\nsys     0m19.645s\nSuccessfully installed maxima-5.20.1\n```\n\nNote that the return value of the cp command is not checked.\n\nThe files are here:\n\n```\nburcin@karr ~/sage/sage-4.3.2 $ ls ~/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/\nlibmaxima.a  maxima.fasb  \n```\n\nAny ideas why?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8645\n\n",
     "created_at": "2010-04-02T22:58:34Z",
     "labels": [
         "component: algebra",
@@ -25,7 +25,6 @@ Keywords: maxima, ecl
 
 With the recent ECL update #8275, maxima package doesn't install the ECL library (which was added in #7287). The library is built, but put in an unexpected location. Here is the end of the log:
 
-
 ```
 ;;; Note: Invoking external command:
 ;;;   ranlib /home/burcin/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/libmaxima.a
@@ -42,17 +41,14 @@ sys     0m19.645s
 Successfully installed maxima-5.20.1
 ```
 
-
 Note that the return value of the cp command is not checked.
 
 The files are here:
-
 
 ```
 burcin@karr ~/sage/sage-4.3.2 $ ls ~/.cache/common-lisp/ecl-10.2.1-linux-x86-64/home/burcin/sage/sage-4.3.2/spkg/build/maxima-5.20.1/src/src/
 libmaxima.a  maxima.fasb  
 ```
-
 
 Any ideas why?
 
@@ -133,7 +129,7 @@ If after upgrading you still can't manage getting maxima.fasb in a sane location
 archive/issue_comments_078278.json:
 ```json
 {
-    "body": "This may be of some help. I tried building with ECL 10.4.1. As announced in\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e094589b2d99be8a/ab26bd29b3a8990a\nwe need a patch (attached there) to Maxima 5.20.1 to let it build.\n\nThe following instruction *should* do the trick\n\n```\n(require 'asdf)\n(load \"maxima-build.lisp\")\n(asdf:make-build :maxima :type :fasl :move-here \".\")\n```\n\nbut for me they lead to an error\n\n```\nCannot rename the file #P\"/home/nbruin/.cache/common-lisp/ecl-10.4.1-linux-x86-64/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb\" to #P\"/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb\".\nExplanation: Invalid cross-device link.\n```\n\nThis error message indicates:\n* that ECL is trying to do exactly the right thing\n* that it's trying to do the move with a hard link, which it shouldn't try. That's a straightforward error, which will probably be fixed in ECL 10.4.2.\n\nSo my guess is that this issue should be fixable quite soon by upgrading.\n\nOh, and the line\n\n```\ncp maxima.fasb $ECLLIB/maxima.fas\n```\n\nshould be changed to\n\n```\ncp maxima.fasb $ECLLIB || echo \"Failed to build maxima.fasb\"; exit 1\n```\n\nso that errors like this get caught next time and because ECL 10.4 supposedly natively recognizes .fasb files.",
+    "body": "This may be of some help. I tried building with ECL 10.4.1. As announced in\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e094589b2d99be8a/ab26bd29b3a8990a\nwe need a patch (attached there) to Maxima 5.20.1 to let it build.\n\nThe following instruction *should* do the trick\n\n```\n(require 'asdf)\n(load \"maxima-build.lisp\")\n(asdf:make-build :maxima :type :fasl :move-here \".\")\n```\nbut for me they lead to an error\n\n```\nCannot rename the file #P\"/home/nbruin/.cache/common-lisp/ecl-10.4.1-linux-x86-64/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb\" to #P\"/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb\".\nExplanation: Invalid cross-device link.\n```\nThis error message indicates:\n* that ECL is trying to do exactly the right thing\n* that it's trying to do the move with a hard link, which it shouldn't try. That's a straightforward error, which will probably be fixed in ECL 10.4.2.\n\nSo my guess is that this issue should be fixable quite soon by upgrading.\n\nOh, and the line\n\n```\ncp maxima.fasb $ECLLIB/maxima.fas\n```\nshould be changed to\n\n```\ncp maxima.fasb $ECLLIB || echo \"Failed to build maxima.fasb\"; exit 1\n```\nso that errors like this get caught next time and because ECL 10.4 supposedly natively recognizes .fasb files.",
     "created_at": "2010-04-14T06:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -153,14 +149,12 @@ The following instruction *should* do the trick
 (load "maxima-build.lisp")
 (asdf:make-build :maxima :type :fasl :move-here ".")
 ```
-
 but for me they lead to an error
 
 ```
 Cannot rename the file #P"/home/nbruin/.cache/common-lisp/ecl-10.4.1-linux-x86-64/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb" to #P"/usr/local/sage/4.3.4/spkg/build/maxima-5.20.1/src/src/maxima.fasb".
 Explanation: Invalid cross-device link.
 ```
-
 This error message indicates:
 * that ECL is trying to do exactly the right thing
 * that it's trying to do the move with a hard link, which it shouldn't try. That's a straightforward error, which will probably be fixed in ECL 10.4.2.
@@ -172,13 +166,11 @@ Oh, and the line
 ```
 cp maxima.fasb $ECLLIB/maxima.fas
 ```
-
 should be changed to
 
 ```
 cp maxima.fasb $ECLLIB || echo "Failed to build maxima.fasb"; exit 1
 ```
-
 so that errors like this get caught next time and because ECL 10.4 supposedly natively recognizes .fasb files.
 
 
@@ -188,7 +180,7 @@ so that errors like this get caught next time and because ECL 10.4 supposedly na
 archive/issue_comments_078279.json:
 ```json
 {
-    "body": "This should solve the problem:\n\n```\nmkdir ./lisp-cache\n```\n\nthen in lisp:\n\n```\n(require 'asdf)\n(setf asdf::*user-cache* (truename \"./lisp-cache\"))\n(load \"maxima-build.lisp\")\n(asdf:make-build :maxima :type :fasl :move-here \".\")\n```\n\n\n* this directory is guaranteed to be on the same file system\n* the cache is not accidentally on a slower (/home) file system\n* the cache gets wiped when spkg/build/maxima-5.20.1 does.\n* no interference with a possible cache that the user privately might have in ecl\n\nSo, what needs to be done is:\n\n* upgrade to ecl 10.4.1\n* patch Maxima to build with ecl 10.4.1\n* patch maxima's spkg-install with the above changes so that maxima.fasb gets built in the right place.",
+    "body": "This should solve the problem:\n\n```\nmkdir ./lisp-cache\n```\nthen in lisp:\n\n```\n(require 'asdf)\n(setf asdf::*user-cache* (truename \"./lisp-cache\"))\n(load \"maxima-build.lisp\")\n(asdf:make-build :maxima :type :fasl :move-here \".\")\n```\n\n* this directory is guaranteed to be on the same file system\n* the cache is not accidentally on a slower (/home) file system\n* the cache gets wiped when spkg/build/maxima-5.20.1 does.\n* no interference with a possible cache that the user privately might have in ecl\n\nSo, what needs to be done is:\n\n* upgrade to ecl 10.4.1\n* patch Maxima to build with ecl 10.4.1\n* patch maxima's spkg-install with the above changes so that maxima.fasb gets built in the right place.",
     "created_at": "2010-04-14T15:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -202,7 +194,6 @@ This should solve the problem:
 ```
 mkdir ./lisp-cache
 ```
-
 then in lisp:
 
 ```
@@ -211,7 +202,6 @@ then in lisp:
 (load "maxima-build.lisp")
 (asdf:make-build :maxima :type :fasl :move-here ".")
 ```
-
 
 * this directory is guaranteed to be on the same file system
 * the cache is not accidentally on a slower (/home) file system
@@ -670,7 +660,7 @@ If #9264 gets merged then this ticked can be closed as resolved.
 archive/issue_comments_078296.json:
 ```json
 {
-    "body": "Replying to [comment:16 nbruin]:\n> If #9264 gets merged then this ticked can be closed as resolved.\n\nAre you sure that is correct? #9264 only makes changes to ECL, not Maxima. So the revised Maxima package at  http://sage.math.washington.edu/home/nbruin/maxima-5.20.1.p1.spkg must still be merged. What does not need merging is the ECL patch attached here, as that is covered by #9264\n\n\nDave",
+    "body": "Replying to [comment:16 nbruin]:\n> If #9264 gets merged then this ticked can be closed as resolved.\n\n\nAre you sure that is correct? #9264 only makes changes to ECL, not Maxima. So the revised Maxima package at  http://sage.math.washington.edu/home/nbruin/maxima-5.20.1.p1.spkg must still be merged. What does not need merging is the ECL patch attached here, as that is covered by #9264\n\n\nDave",
     "created_at": "2010-06-21T09:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -681,6 +671,7 @@ archive/issue_comments_078296.json:
 
 Replying to [comment:16 nbruin]:
 > If #9264 gets merged then this ticked can be closed as resolved.
+
 
 Are you sure that is correct? #9264 only makes changes to ECL, not Maxima. So the revised Maxima package at  http://sage.math.washington.edu/home/nbruin/maxima-5.20.1.p1.spkg must still be merged. What does not need merging is the ECL patch attached here, as that is covered by #9264
 
@@ -694,7 +685,7 @@ Dave
 archive/issue_comments_078297.json:
 ```json
 {
-    "body": "Replying to [comment:17 drkirkby]:\n\n> Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.\n\nExcept for the \"Important\" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.\n\n(incidentally, on #9264 it would have helped a lot if you had also run \"make test\" or \"make ptest\" after the successful build. One of the issues on #8731 was that it people were unsure whether the doctest failures were due to the ECL upgrade or the maxima upgrade. We now know it's just due to maxima 5.21 behaving differently)",
+    "body": "Replying to [comment:17 drkirkby]:\n\n> Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.\n\n\nExcept for the \"Important\" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.\n\n(incidentally, on #9264 it would have helped a lot if you had also run \"make test\" or \"make ptest\" after the successful build. One of the issues on #8731 was that it people were unsure whether the doctest failures were due to the ECL upgrade or the maxima upgrade. We now know it's just due to maxima 5.21 behaving differently)",
     "created_at": "2010-06-21T18:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -706,6 +697,7 @@ archive/issue_comments_078297.json:
 Replying to [comment:17 drkirkby]:
 
 > Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.
+
 
 Except for the "Important" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.
 
@@ -736,7 +728,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078299.json:
 ```json
 {
-    "body": "Replying to [comment:18 nbruin]:\n> Replying to [comment:17 drkirkby]:\n> \n> > Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.\n> \n> Except for the \"Important\" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.\n\n\nThat was my point - upgrading just ECL would not have worked. \n \n> (incidentally, on #9264 it would have helped a lot if you had also run \"make test\" or \"make ptest\" after the successful build. One of the issues on #8731 was that it people were unsure whether the doctest failures were due to the ECL upgrade or the maxima upgrade. We now know it's just due to maxima 5.21 behaving differently)\n\nOK, point taken. \n\nIt would be good if there was a list of doc tests associated with each package, so its possible to quickly test if changes break any tests. \n\nAnyway, positive review. \n\n == Note to release manager ==\nThis ticket, and #9264 need to be merged together. Merging  #9264 without this one will cause problems. \nDave \n\nDave",
+    "body": "Replying to [comment:18 nbruin]:\n> Replying to [comment:17 drkirkby]:\n> \n> > Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.\n\n> \n> Except for the \"Important\" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.\n\n\n\nThat was my point - upgrading just ECL would not have worked. \n \n> (incidentally, on #9264 it would have helped a lot if you had also run \"make test\" or \"make ptest\" after the successful build. One of the issues on #8731 was that it people were unsure whether the doctest failures were due to the ECL upgrade or the maxima upgrade. We now know it's just due to maxima 5.21 behaving differently)\n\n\nOK, point taken. \n\nIt would be good if there was a list of doc tests associated with each package, so its possible to quickly test if changes break any tests. \n\nAnyway, positive review. \n\n == Note to release manager ==\nThis ticket, and #9264 need to be merged together. Merging  #9264 without this one will cause problems. \nDave \n\nDave",
     "created_at": "2010-06-21T20:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -749,13 +741,16 @@ Replying to [comment:18 nbruin]:
 > Replying to [comment:17 drkirkby]:
 > 
 > > Are you sure that is correct? #9264 only makes changes to ECL, not Maxima.
+
 > 
 > Except for the "Important" section and the comment in the positive review. Only upgrading ECL will lead to maxima not building, so no doctests will pass. A successful merge has to include a change to maxima.
+
 
 
 That was my point - upgrading just ECL would not have worked. 
  
 > (incidentally, on #9264 it would have helped a lot if you had also run "make test" or "make ptest" after the successful build. One of the issues on #8731 was that it people were unsure whether the doctest failures were due to the ECL upgrade or the maxima upgrade. We now know it's just due to maxima 5.21 behaving differently)
+
 
 OK, point taken. 
 
@@ -846,7 +841,7 @@ Could any of the changes here be related to the problems at #9460?
 archive/issue_comments_078303.json:
 ```json
 {
-    "body": "Replying to [comment:21 mpatel]:\n> Could any of the changes here be related to the problems at #9460?\nPossibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n\nDave",
+    "body": "Replying to [comment:21 mpatel]:\n> Could any of the changes here be related to the problems at #9460?\n\nPossibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n\nDave",
     "created_at": "2010-07-09T08:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -857,6 +852,7 @@ archive/issue_comments_078303.json:
 
 Replying to [comment:21 mpatel]:
 > Could any of the changes here be related to the problems at #9460?
+
 Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. 
 
 Dave
@@ -868,7 +864,7 @@ Dave
 archive/issue_comments_078304.json:
 ```json
 {
-    "body": "Replying to [comment:22 drkirkby]:\n> Replying to [comment:21 mpatel]:\n> > Could any of the changes here be related to the problems at #9460?\n> Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n\nWilliam, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.",
+    "body": "Replying to [comment:22 drkirkby]:\n> Replying to [comment:21 mpatel]:\n> > Could any of the changes here be related to the problems at #9460?\n\n> Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n\nWilliam, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.",
     "created_at": "2010-07-09T09:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -880,6 +876,7 @@ archive/issue_comments_078304.json:
 Replying to [comment:22 drkirkby]:
 > Replying to [comment:21 mpatel]:
 > > Could any of the changes here be related to the problems at #9460?
+
 > Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. 
 
 William, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.
@@ -891,7 +888,7 @@ William, AFAIK, reported those failures on the first alpha in the 4.5 series tha
 archive/issue_comments_078305.json:
 ```json
 {
-    "body": "Replying to [comment:23 rlm]:\n> Replying to [comment:22 drkirkby]:\n> > Replying to [comment:21 mpatel]:\n> > > Could any of the changes here be related to the problems at #9460?\n> > Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n> \n> William, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.\n\nIn which case reverting this would be sensible, though it we be good if we could if we could find the circumstances in which the problem occurs - there is a note that it may occur only if Sage is built from a script. \n\nDave",
+    "body": "Replying to [comment:23 rlm]:\n> Replying to [comment:22 drkirkby]:\n> > Replying to [comment:21 mpatel]:\n> > > Could any of the changes here be related to the problems at #9460?\n\n> > Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. \n> \n> William, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.\n\n\nIn which case reverting this would be sensible, though it we be good if we could if we could find the circumstances in which the problem occurs - there is a note that it may occur only if Sage is built from a script. \n\nDave",
     "created_at": "2010-07-09T09:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -904,9 +901,11 @@ Replying to [comment:23 rlm]:
 > Replying to [comment:22 drkirkby]:
 > > Replying to [comment:21 mpatel]:
 > > > Could any of the changes here be related to the problems at #9460?
+
 > > Possibly, though I don't recall seeing reports of this against sage-4.5.alpha0, which was when this ticket was merged. 
 > 
 > William, AFAIK, reported those failures on the first alpha in the 4.5 series that he tested. So it is quite possible.
+
 
 In which case reverting this would be sensible, though it we be good if we could if we could find the circumstances in which the problem occurs - there is a note that it may occur only if Sage is built from a script. 
 
@@ -919,7 +918,7 @@ Dave
 archive/issue_comments_078306.json:
 ```json
 {
-    "body": "It seems that there are unchecked in changes in the spkg:\n\n```sh\n$ tar xvf sage-4.5.alpha4/spkg/standard/maxima-5.20.1.p1.spkg\n$ cd maxima-5.20.1.p1\n$ hg stat\n? patches/defsystem.lisp\n? patches/ecl-port.lisp\n```\n",
+    "body": "It seems that there are unchecked in changes in the spkg:\n\n```sh\n$ tar xvf sage-4.5.alpha4/spkg/standard/maxima-5.20.1.p1.spkg\n$ cd maxima-5.20.1.p1\n$ hg stat\n? patches/defsystem.lisp\n? patches/ecl-port.lisp\n```",
     "created_at": "2010-07-09T23:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -937,7 +936,6 @@ $ hg stat
 ? patches/defsystem.lisp
 ? patches/ecl-port.lisp
 ```
-
 
 
 
@@ -998,7 +996,7 @@ Resolution changed from fixed to
 archive/issue_comments_078309.json:
 ```json
 {
-    "body": "This is marked as minor, but I've found it causes Maxima to fail to install on bsd.math, so it breaks the build. \n\n\n```\n;;;   gcc -o \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.fas\" -L\"/Users/kirkby/sage-4.5.alpha1/local/lib/\" \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.o\"   -bundle  -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -lffi -lecl  -lgmp   -lm \n; loading system definition from\n; /Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/maxima.asd\n; into #<ASDF0 package>\n;;; Loading \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/maxima.asd\"\n; registering #<SYSTEM :MAXIMA 4321128880> as MAXIMA\nAn error occurred during initialization:\nUnknown keyword :MOVE-HERE.\n\ninstalling Maxima library as /Users/kirkby/sage-4.5.alpha1/local/lib/ecl//maxima.fas\ncp: cannot stat `maxima.fasb': No such file or directory\n***********************************************************\nFailed to install maxima.fasb as a library\n***********************************************************\n\nreal\t4m45.305s\nuser\t3m35.767s\nsys\t0m41.909s\nsage: An error occurred while installing maxima-5.20.1.p1\n```\n\n\nThat's not a minor problem to me, if it stops Sage building.",
+    "body": "This is marked as minor, but I've found it causes Maxima to fail to install on bsd.math, so it breaks the build. \n\n```\n;;;   gcc -o \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.fas\" -L\"/Users/kirkby/sage-4.5.alpha1/local/lib/\" \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.o\"   -bundle  -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -lffi -lecl  -lgmp   -lm \n; loading system definition from\n; /Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/maxima.asd\n; into #<ASDF0 package>\n;;; Loading \"/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/maxima.asd\"\n; registering #<SYSTEM :MAXIMA 4321128880> as MAXIMA\nAn error occurred during initialization:\nUnknown keyword :MOVE-HERE.\n\ninstalling Maxima library as /Users/kirkby/sage-4.5.alpha1/local/lib/ecl//maxima.fas\ncp: cannot stat `maxima.fasb': No such file or directory\n***********************************************************\nFailed to install maxima.fasb as a library\n***********************************************************\n\nreal\t4m45.305s\nuser\t3m35.767s\nsys\t0m41.909s\nsage: An error occurred while installing maxima-5.20.1.p1\n```\n\nThat's not a minor problem to me, if it stops Sage building.",
     "created_at": "2010-09-17T00:47:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -1008,7 +1006,6 @@ archive/issue_comments_078309.json:
 ```
 
 This is marked as minor, but I've found it causes Maxima to fail to install on bsd.math, so it breaks the build. 
-
 
 ```
 ;;;   gcc -o "/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.fas" -L"/Users/kirkby/sage-4.5.alpha1/local/lib/" "/Users/kirkby/sage-4.5.alpha1/spkg/build/maxima-5.20.1.p1/src/src/ECL001STjrNf.o"   -bundle  -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -L/Users/kirkby/sage-4.5.alpha1/local/lib -m64   -lffi -lecl  -lgmp   -lm 
@@ -1032,7 +1029,6 @@ sys	0m41.909s
 sage: An error occurred while installing maxima-5.20.1.p1
 ```
 
-
 That's not a minor problem to me, if it stops Sage building.
 
 
@@ -1042,7 +1038,7 @@ That's not a minor problem to me, if it stops Sage building.
 archive/issue_comments_078310.json:
 ```json
 {
-    "body": "Replying to [comment:28 drkirkby]:\n\n```\n> Unknown keyword :MOVE-HERE.\n> \n> installing Maxima library as /Users/kirkby/sage-4.5.alpha1/local/lib/ecl//maxima.fas\n> cp: cannot stat `maxima.fasb': No such file or directory\n> ***********************************************************\n> Failed to install maxima.fasb as a library\n> ***********************************************************\n> \n> real\t4m45.305s\n> user\t3m35.767s\n> sys\t0m41.909s\n> sage: An error occurred while installing maxima-5.20.1.p1\n```\n\nThe package maxima-5.20.1.p1 is designed to be built on ecl 10.4.1 or later. In order to use the :MOVE-HERE keyword, I had to upgrade to ecl 10.4.1.\n\nI think sage is still shipping maxima-5.20.1.p0 with ecl 10.2.1, which silently fails to build maxima.fasb. Hence the original filing as \"minor\": a library that by default isn't used silently fails to build.",
+    "body": "Replying to [comment:28 drkirkby]:\n\n```\n> Unknown keyword :MOVE-HERE.\n> \n> installing Maxima library as /Users/kirkby/sage-4.5.alpha1/local/lib/ecl//maxima.fas\n> cp: cannot stat `maxima.fasb': No such file or directory\n> ***********************************************************\n> Failed to install maxima.fasb as a library\n> ***********************************************************\n> \n> real\t4m45.305s\n> user\t3m35.767s\n> sys\t0m41.909s\n> sage: An error occurred while installing maxima-5.20.1.p1\n```\nThe package maxima-5.20.1.p1 is designed to be built on ecl 10.4.1 or later. In order to use the :MOVE-HERE keyword, I had to upgrade to ecl 10.4.1.\n\nI think sage is still shipping maxima-5.20.1.p0 with ecl 10.2.1, which silently fails to build maxima.fasb. Hence the original filing as \"minor\": a library that by default isn't used silently fails to build.",
     "created_at": "2010-09-18T03:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -1067,7 +1063,6 @@ Replying to [comment:28 drkirkby]:
 > sys	0m41.909s
 > sage: An error occurred while installing maxima-5.20.1.p1
 ```
-
 The package maxima-5.20.1.p1 is designed to be built on ecl 10.4.1 or later. In order to use the :MOVE-HERE keyword, I had to upgrade to ecl 10.4.1.
 
 I think sage is still shipping maxima-5.20.1.p0 with ecl 10.2.1, which silently fails to build maxima.fasb. Hence the original filing as "minor": a library that by default isn't used silently fails to build.
@@ -1125,7 +1120,7 @@ But in general, you'd expect dependent packages to be - you know - dependent :-)
 archive/issue_comments_078313.json:
 ```json
 {
-    "body": "Replying to [comment:31 nbruin]:\n> I don't think that is true. I think maxima-5.20.1.p0 will build an executable on ecl 10.4.1\nSorry, I take that back. That must have been before coffee. The point of \".p1\" was to fix library building and detect failure of it, but in the process needed an ecl upgrade (because 10.2.1 was a snapshot of the building system in flux), which required further patches to maxima (announced and supplied by Juanjo -- Maxima is part of the ECL test suite, so he knows when Maxima/ECL breaks)",
+    "body": "Replying to [comment:31 nbruin]:\n> I don't think that is true. I think maxima-5.20.1.p0 will build an executable on ecl 10.4.1\n\nSorry, I take that back. That must have been before coffee. The point of \".p1\" was to fix library building and detect failure of it, but in the process needed an ecl upgrade (because 10.2.1 was a snapshot of the building system in flux), which required further patches to maxima (announced and supplied by Juanjo -- Maxima is part of the ECL test suite, so he knows when Maxima/ECL breaks)",
     "created_at": "2010-09-21T17:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -1136,6 +1131,7 @@ archive/issue_comments_078313.json:
 
 Replying to [comment:31 nbruin]:
 > I don't think that is true. I think maxima-5.20.1.p0 will build an executable on ecl 10.4.1
+
 Sorry, I take that back. That must have been before coffee. The point of ".p1" was to fix library building and detect failure of it, but in the process needed an ecl upgrade (because 10.2.1 was a snapshot of the building system in flux), which required further patches to maxima (announced and supplied by Juanjo -- Maxima is part of the ECL test suite, so he knows when Maxima/ECL breaks)
 
 
@@ -1145,7 +1141,7 @@ Sorry, I take that back. That must have been before coffee. The point of ".p1" w
 archive/issue_comments_078314.json:
 ```json
 {
-    "body": "Replying to [comment:31 nbruin]:\n> But in general, you'd expect dependent packages to be - you know - dependent :-).\n\nYes, but the current Sage build (and upgrade) process doesn't really reflect this... ;-)\n\n(We use `make`, but `sage-spkg` usually just reports a dependent package was already installed; our current scheme lacks version requirements almost completely.)\n\nFor the *rebuild dependent packages on upgrade* issue, there's #9896 (needs review; not limited to MacOS X). :)",
+    "body": "Replying to [comment:31 nbruin]:\n> But in general, you'd expect dependent packages to be - you know - dependent :-).\n\n\nYes, but the current Sage build (and upgrade) process doesn't really reflect this... ;-)\n\n(We use `make`, but `sage-spkg` usually just reports a dependent package was already installed; our current scheme lacks version requirements almost completely.)\n\nFor the *rebuild dependent packages on upgrade* issue, there's #9896 (needs review; not limited to MacOS X). :)",
     "created_at": "2010-09-24T12:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8645",
     "type": "issue_comment",
@@ -1156,6 +1152,7 @@ archive/issue_comments_078314.json:
 
 Replying to [comment:31 nbruin]:
 > But in general, you'd expect dependent packages to be - you know - dependent :-).
+
 
 Yes, but the current Sage build (and upgrade) process doesn't really reflect this... ;-)
 

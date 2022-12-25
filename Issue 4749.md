@@ -3,7 +3,7 @@
 archive/issues_004749.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\n\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
     "created_at": "2008-12-10T01:00:06Z",
     "labels": [
         "component: number theory"
@@ -28,7 +28,6 @@ E11 = E.change_ring(GF(11))
 E11(R) 
  BOOM!
 ```
-
 But it should clear denominators and coerce in the triple like so:
 
 ```
@@ -37,7 +36,6 @@ def reduce(R, p):
     d = LCM(x.denominator(), y.denominator())
     return R.curve().change_ring(GF(p))([x*d,y*d,d])
 ```
-
 }}}
 
 Issue created by migration from https://trac.sagemath.org/ticket/4749
@@ -159,7 +157,7 @@ Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/47
 archive/issue_comments_035872.json:
 ```json
 {
-    "body": "I have to give this a negative review.  This code does not treat the case where the point is 0 (i.e. E(0)).  It fails to reduce E(0) since the E.xy() will crash.  In the example, E11(E(0)) works ok since the __call__ function must test the input via is_zero() so that works, but:\n\n```\nsage: S = E11._reduce_point(E(0), 11)\n---------------------------------------------------------------------------\nZeroDivisionError  \n```\n\n\nSecondly, I don't know why this code is in ell_generic.  It only applies to elliptic curves defined over Q.  I think it belongs in ell_point.py, as a member function of class  EllipticCurvePoint_number_field.\n\nI noticed this patch just when I was working on something almost identical, though my code works over number fields.  So I would like to replace this patch with another, not just to correct the small glitch of E(0), but to make it work over number fields.  In fact, here is a chunk of code I wrote before I saw this patch posted in here with no changes:\n\n```\n        if K is rings.QQ:\n            pi = P\n        else:\n            pi = K.uniformizer(P)\n\n        # Make sure the curve is integral and locally minimal at P:\n        Emin = E.local_minimal_model(P)\n        urst = E.isomorphism_to(Emin)\n        Q = urst(self)\n\n        # Scale the homogeneous coordinates of the point to be primitive:\n        xyz = list(Q)\n        e = min([c.valuation(P) for c in xyz])\n        if e !=0:            \n            if K is rings.QQ:\n                pi = P\n            else:\n                pi = K.uniformizer(P)\n            pie = pi**e\n            xyz = [c/pie for c in xyz]\n```\n\nThis was just to get homogeneous coordinates in which one of x,y,z is a unit mod P, but then you could directly construct a point on the reduction from it.  (I was also concerned with having a non-minimal model at P.) \n\nI expect that I will post an alternative patch here before long.",
+    "body": "I have to give this a negative review.  This code does not treat the case where the point is 0 (i.e. E(0)).  It fails to reduce E(0) since the E.xy() will crash.  In the example, E11(E(0)) works ok since the __call__ function must test the input via is_zero() so that works, but:\n\n```\nsage: S = E11._reduce_point(E(0), 11)\n---------------------------------------------------------------------------\nZeroDivisionError  \n```\n\nSecondly, I don't know why this code is in ell_generic.  It only applies to elliptic curves defined over Q.  I think it belongs in ell_point.py, as a member function of class  EllipticCurvePoint_number_field.\n\nI noticed this patch just when I was working on something almost identical, though my code works over number fields.  So I would like to replace this patch with another, not just to correct the small glitch of E(0), but to make it work over number fields.  In fact, here is a chunk of code I wrote before I saw this patch posted in here with no changes:\n\n```\n        if K is rings.QQ:\n            pi = P\n        else:\n            pi = K.uniformizer(P)\n\n        # Make sure the curve is integral and locally minimal at P:\n        Emin = E.local_minimal_model(P)\n        urst = E.isomorphism_to(Emin)\n        Q = urst(self)\n\n        # Scale the homogeneous coordinates of the point to be primitive:\n        xyz = list(Q)\n        e = min([c.valuation(P) for c in xyz])\n        if e !=0:            \n            if K is rings.QQ:\n                pi = P\n            else:\n                pi = K.uniformizer(P)\n            pie = pi**e\n            xyz = [c/pie for c in xyz]\n```\nThis was just to get homogeneous coordinates in which one of x,y,z is a unit mod P, but then you could directly construct a point on the reduction from it.  (I was also concerned with having a non-minimal model at P.) \n\nI expect that I will post an alternative patch here before long.",
     "created_at": "2008-12-19T17:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
@@ -175,7 +173,6 @@ sage: S = E11._reduce_point(E(0), 11)
 ---------------------------------------------------------------------------
 ZeroDivisionError  
 ```
-
 
 Secondly, I don't know why this code is in ell_generic.  It only applies to elliptic curves defined over Q.  I think it belongs in ell_point.py, as a member function of class  EllipticCurvePoint_number_field.
 
@@ -203,7 +200,6 @@ I noticed this patch just when I was working on something almost identical, thou
             pie = pi**e
             xyz = [c/pie for c in xyz]
 ```
-
 This was just to get homogeneous coordinates in which one of x,y,z is a unit mod P, but then you could directly construct a point on the reduction from it.  (I was also concerned with having a non-minimal model at P.) 
 
 I expect that I will post an alternative patch here before long.

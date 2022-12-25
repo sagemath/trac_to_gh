@@ -141,7 +141,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071189.json:
 ```json
 {
-    "body": "I don't understand this. I exported the patch after adding the two new files to hg. Then I apply it to a new clone.\n\n The patch applies fine and the tests pass. But when I do -docbuild reference html it tells me that it can not find the new files :\n\n\n```\n /usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/modular_parametrization'                                 \n/usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/gal_reps'     \n```\n\n\n I must be doing something stupidly wrong. Help !",
+    "body": "I don't understand this. I exported the patch after adding the two new files to hg. Then I apply it to a new clone.\n\n The patch applies fine and the tests pass. But when I do -docbuild reference html it tells me that it can not find the new files :\n\n```\n /usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/modular_parametrization'                                 \n/usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/gal_reps'     \n```\n\n I must be doing something stupidly wrong. Help !",
     "created_at": "2010-02-01T23:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -154,12 +154,10 @@ I don't understand this. I exported the patch after adding the two new files to 
 
  The patch applies fine and the tests pass. But when I do -docbuild reference html it tells me that it can not find the new files :
 
-
 ```
  /usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/modular_parametrization'                                 
 /usr/local/sage/devel/sage/doc/en/reference/plane_curves.rst:7: (WARNING/2) toctree references unknown document u'sage/schemes/elliptic_curves/gal_reps'     
 ```
-
 
  I must be doing something stupidly wrong. Help !
 
@@ -188,7 +186,7 @@ updated.
 archive/issue_comments_071191.json:
 ```json
 {
-    "body": "Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by @JohnCremona created at 2010-02-02 09:54:27\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
+    "body": "Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by @JohnCremona created at 2010-02-02 09:54:27\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
     "created_at": "2010-02-02T09:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -209,7 +207,6 @@ sage -docbuild reference html worked fine for me (it warned about
 /home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree
 /home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree
 ```
-
 but that's not from this patch!)
 
 I have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.
@@ -239,7 +236,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071193.json:
 ```json
 {
-    "body": "My queue for 4.3.3.alpha0 is\n\n\n```\ntrac_8219.patch\ntrac_3683-upgrade_moinmoin.patch\ntrac_8183-French_pdf.patch\ntrac_8190-docbuild.patch\ntrac_8184-eclib.patch\ntrac_8184-indentation.patch\ntrac_8155.patch\ntrac_8124-selmer-nf.review.patch\ntrac_7575.patch\ntrac_7575-followup.patch\ntrac_8189-hg.patch\ntrac_7935.patch\ntrac_7935b.2.patch\n```\n\n\nCould you let me know how I should apply #8118 and #4453?  Thanks!",
+    "body": "My queue for 4.3.3.alpha0 is\n\n```\ntrac_8219.patch\ntrac_3683-upgrade_moinmoin.patch\ntrac_8183-French_pdf.patch\ntrac_8190-docbuild.patch\ntrac_8184-eclib.patch\ntrac_8184-indentation.patch\ntrac_8155.patch\ntrac_8124-selmer-nf.review.patch\ntrac_7575.patch\ntrac_7575-followup.patch\ntrac_8189-hg.patch\ntrac_7935.patch\ntrac_7935b.2.patch\n```\n\nCould you let me know how I should apply #8118 and #4453?  Thanks!",
     "created_at": "2010-02-10T11:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -249,7 +246,6 @@ archive/issue_comments_071193.json:
 ```
 
 My queue for 4.3.3.alpha0 is
-
 
 ```
 trac_8219.patch
@@ -266,7 +262,6 @@ trac_8189-hg.patch
 trac_7935.patch
 trac_7935b.2.patch
 ```
-
 
 Could you let me know how I should apply #8118 and #4453?  Thanks!
 
@@ -295,7 +290,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_071195.json:
 ```json
 {
-    "body": "I get hunk failures when applying [trac_8118.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8118/trac_8118.patch) to Sage 4.3.3.alpha0:\n\n```\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8118/trac_8118.patch && hg qpush\nadding trac_8118.patch to series file\napplying trac_8118.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 FAILED at 45\nHunk #7 succeeded at 4141 with fuzz 2 (offset 99 lines).\nHunk #16 FAILED at 5294\nHunk #17 FAILED at 5327\nHunk #18 FAILED at 5367\nHunk #19 FAILED at 5381\nHunk #20 FAILED at 5576\nHunk #21 FAILED at 5589\nHunk #22 FAILED at 5610\nHunk #23 FAILED at 5620\nHunk #24 FAILED at 5692\nHunk #25 FAILED at 5702\nHunk #26 FAILED at 5717\nHunk #27 FAILED at 5728\n13 out of 28 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8118.patch\n```\n\nPerhaps the attachment needs a rebase.",
+    "body": "I get hunk failures when applying [trac_8118.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8118/trac_8118.patch) to Sage 4.3.3.alpha0:\n\n```\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sage-4.3.3.alpha0/devel/sage-main\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8118/trac_8118.patch && hg qpush\nadding trac_8118.patch to series file\napplying trac_8118.patch\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 FAILED at 45\nHunk #7 succeeded at 4141 with fuzz 2 (offset 99 lines).\nHunk #16 FAILED at 5294\nHunk #17 FAILED at 5327\nHunk #18 FAILED at 5367\nHunk #19 FAILED at 5381\nHunk #20 FAILED at 5576\nHunk #21 FAILED at 5589\nHunk #22 FAILED at 5610\nHunk #23 FAILED at 5620\nHunk #24 FAILED at 5692\nHunk #25 FAILED at 5702\nHunk #26 FAILED at 5717\nHunk #27 FAILED at 5728\n13 out of 28 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8118.patch\n```\nPerhaps the attachment needs a rebase.",
     "created_at": "2010-02-13T05:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
@@ -332,7 +327,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8118.patch
 ```
-
 Perhaps the attachment needs a rebase.
 
 

@@ -3,7 +3,7 @@
 archive/issues_005903.json:
 ```json
 {
-    "body": "Assignee: @timabbott\n\nCC:  @nexttime\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  @nexttime\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
     "created_at": "2009-04-26T06:03:37Z",
     "labels": [
         "component: debian-package"
@@ -22,7 +22,6 @@ CC:  @nexttime
 The dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.
 
 These directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:
-
 
 ```
 cddlib-094f
@@ -51,7 +50,6 @@ sympow-1.018.1.p6
 tachyon-0.98beta.p8
 zn_poly-0.9.p0
 ```
-
 
 Since this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.
 
@@ -140,7 +138,7 @@ Some of the packages in the list have meanwhile been upgraded or updated; I'm no
 archive/issue_comments_046572.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> I've \"informed\" the Tachyon and the (three) Lcalc upgrade/update tickets...\n\nAnd that of genus2reduction (#9591).",
+    "body": "Replying to [comment:4 leif]:\n> I've \"informed\" the Tachyon and the (three) Lcalc upgrade/update tickets...\n\n\nAnd that of genus2reduction (#9591).",
     "created_at": "2010-09-03T23:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
@@ -151,6 +149,7 @@ archive/issue_comments_046572.json:
 
 Replying to [comment:4 leif]:
 > I've "informed" the Tachyon and the (three) Lcalc upgrade/update tickets...
+
 
 And that of genus2reduction (#9591).
 
@@ -197,7 +196,7 @@ Ticket #5281 removes the dist directory from tachyon.
 archive/issue_comments_046575.json:
 ```json
 {
-    "body": "Code to identify packages with dist directory\n\n\n```/usr/bin/python\n\n# search spkgs for dist directory \n#\n# assumes you start in spkg/standard\n\nimport sys,os,subprocess\n\ncur = os.getcwd()\nprint cur\n\nfor filename in os.listdir(\".\"):\n  if filename.endswith(\".spkg\"):\n    val = subprocess.check_output([\"file\", filename])\n    if val.find(\"bzip2\") > -1:\n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename +\".tar.bz2\"])\n      subprocess.check_output([\"bunzip2\", basename + \".tar.bz2\"])\n    else: # fortran.spkg (only tar'ed) \n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename + \".tar\"])\n    subprocess.check_output([\"tar\", \"xf\", basename + \".tar\"])\n    if os.path.exists(cur + \"/\" + basename + \"/dist\") == True:\n      print filename\n```\n",
+    "body": "Code to identify packages with dist directory\n\n```/usr/bin/python\n\n# search spkgs for dist directory \n#\n# assumes you start in spkg/standard\n\nimport sys,os,subprocess\n\ncur = os.getcwd()\nprint cur\n\nfor filename in os.listdir(\".\"):\n  if filename.endswith(\".spkg\"):\n    val = subprocess.check_output([\"file\", filename])\n    if val.find(\"bzip2\") > -1:\n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename +\".tar.bz2\"])\n      subprocess.check_output([\"bunzip2\", basename + \".tar.bz2\"])\n    else: # fortran.spkg (only tar'ed) \n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename + \".tar\"])\n    subprocess.check_output([\"tar\", \"xf\", basename + \".tar\"])\n    if os.path.exists(cur + \"/\" + basename + \"/dist\") == True:\n      print filename\n```",
     "created_at": "2011-05-19T19:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5903",
     "type": "issue_comment",
@@ -207,7 +206,6 @@ archive/issue_comments_046575.json:
 ```
 
 Code to identify packages with dist directory
-
 
 ```/usr/bin/python
 
@@ -234,7 +232,6 @@ for filename in os.listdir("."):
     if os.path.exists(cur + "/" + basename + "/dist") == True:
       print filename
 ```
-
 
 
 

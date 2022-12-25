@@ -3,7 +3,7 @@
 archive/issues_007997.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\n\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\n\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\n\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
     "created_at": "2010-01-19T15:09:00Z",
     "labels": [
         "component: notebook"
@@ -28,7 +28,6 @@ def __print_if_not_none(expr):
     if expr is not None:
         print expr
 ```
-
 An Expr node is anything like
 
 ```
@@ -37,7 +36,6 @@ do_foo()
 for i in range(10):
     i
 ```
-
 Which will be replaced by
 
 ```
@@ -46,7 +44,6 @@ __print_if_not_none(do_foo())
 for i in range(10):
     __print_if_not_none(i)
 ```
-
 Which will output
 
 ```
@@ -56,7 +53,6 @@ Which will output
 ...
 9
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7997
 
@@ -293,7 +289,7 @@ Completely working (hopefully) implementation of a local WorksheetProcess. Need 
 archive/issue_comments_069755.json:
 ```json
 {
-    "body": "Hi,\n\nI have managed to finish the local implementation of WorksheetProcess_PipesImplementation (WPPI), and I have found it to be roughly 251.3 ms faster than WorksheetProcess_ExpectImplementation (WPEI). The patch, however, makes WPEI and its remote equivalent useless, due to an API change on the WorksheetProcess interface. This means that to finish this patch, a remote implementation must be made, and that both be *very* thoroughly tested.\n\nHere are the benchmark results, if anyone's interested:\n\n\n```\nsage: from sagenb.interfaces.pipes_interface import WorksheetProcess_PipesImpl as WPPI\nsage: wp = WPPI()\n\n# This is without the print_expressions, which is not equivalent to what WPEI does. Mean: 251.53 \u00b5s\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 488 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 451 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 424 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 481 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 479 \u00b5s per loop\n\nsage: wp.execute('from sage.all_notebook import *; import sagenb', preparse=False, print_expressions=False)\n\n# This, on the other hand, is. Mean: 680 \u00b5s\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 734 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 601 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 739 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\n\n# Note, this has preparsing. This checks to see if the speedup scales. It does not.\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 21.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.6 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 17.7 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.7 ms per loop\n```\n\n\nBy contrast, here is the benchmark for WPEI:\n\n\n```\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation as WPEI\nsage: wp = WPEI()\n\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n\n# Transmission lag is much slower than computation time, which accounts for the lack of difference, I think.\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n```\n",
+    "body": "Hi,\n\nI have managed to finish the local implementation of WorksheetProcess_PipesImplementation (WPPI), and I have found it to be roughly 251.3 ms faster than WorksheetProcess_ExpectImplementation (WPEI). The patch, however, makes WPEI and its remote equivalent useless, due to an API change on the WorksheetProcess interface. This means that to finish this patch, a remote implementation must be made, and that both be *very* thoroughly tested.\n\nHere are the benchmark results, if anyone's interested:\n\n```\nsage: from sagenb.interfaces.pipes_interface import WorksheetProcess_PipesImpl as WPPI\nsage: wp = WPPI()\n\n# This is without the print_expressions, which is not equivalent to what WPEI does. Mean: 251.53 \u00b5s\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 488 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 451 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 424 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 481 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 479 \u00b5s per loop\n\nsage: wp.execute('from sage.all_notebook import *; import sagenb', preparse=False, print_expressions=False)\n\n# This, on the other hand, is. Mean: 680 \u00b5s\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 734 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 601 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 739 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\n\n# Note, this has preparsing. This checks to see if the speedup scales. It does not.\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 21.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.6 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 17.7 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.7 ms per loop\n```\n\nBy contrast, here is the benchmark for WPEI:\n\n```\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation as WPEI\nsage: wp = WPEI()\n\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n\n# Transmission lag is much slower than computation time, which accounts for the lack of difference, I think.\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n```",
     "created_at": "2010-04-02T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
@@ -307,7 +303,6 @@ Hi,
 I have managed to finish the local implementation of WorksheetProcess_PipesImplementation (WPPI), and I have found it to be roughly 251.3 ms faster than WorksheetProcess_ExpectImplementation (WPEI). The patch, however, makes WPEI and its remote equivalent useless, due to an API change on the WorksheetProcess interface. This means that to finish this patch, a remote implementation must be made, and that both be *very* thoroughly tested.
 
 Here are the benchmark results, if anyone's interested:
-
 
 ```
 sage: from sagenb.interfaces.pipes_interface import WorksheetProcess_PipesImpl as WPPI
@@ -352,9 +347,7 @@ sage: timeit("""wp.execute('[x for x in primes(1e4)]')\nwhile wp.is_computing():
 25 loops, best of 3: 19.7 ms per loop
 ```
 
-
 By contrast, here is the benchmark for WPEI:
-
 
 ```
 sage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation as WPEI
@@ -383,7 +376,6 @@ sage: sage: timeit("""wp.execute('[x for x in primes(1e4)]')\nwhile wp.is_comput
 sage: sage: timeit("""wp.execute('[x for x in primes(1e4)]')\nwhile wp.is_computing(): wp.output_status()""")
 5 loops, best of 3: 252 ms per loop
 ```
-
 
 
 
@@ -432,7 +424,7 @@ Completely working implementation of a remote WorksheetProcess. Deprecates pexep
 archive/issue_comments_069758.json:
 ```json
 {
-    "body": "Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by @TimDumol created at 2010-04-03 15:44:17\n\nTom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.\n\nThis version of the patch is hopefully the final version of the patch. It does the following:\n\n* Uses ast to replace the displayhook_hack in `sagenb.misc.format`, this was achieved through the efforts of me and Alex Leone (thank you!).\n\n  * The new version, now named `parse_display_expr`, can now print either the last expression, as before:\n\n\n```\n1\n2\n3\n----\n3\n```\n\n\n  or all root level expressions:\n\n\n```\n1\n2\nfor x in range(3):\n    x\n3\n-----\n1\n2\n3\n```\n\n\n  or all expressions:\n\n\n```\n1\n2\nfor x in range(2):\n    x\n3\n-----\n1\n2\n0\n1\n3\n```\n\n\n     This new functionality is customizable via the Notebook Settings page.\n\n* Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.\n\n  * The local implementation (`WorksheetProcess_PipesImpl`) is on average 251.3 ms faster than the pexpect based one.\n\n  * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.\n\n* It now formats tracebacks as:\n\n\n```\nTraceback (most recent call last):\n  Line 7, in <module>\n    bar()\n  Line 5, in bar\n    foo()\n  Line 2, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\ninstead of:\n\n\n```\nTraceback (most recent call last):    def baz():\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 13, in <module>\n    baz()\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 10, in baz\n    bar()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 7, in bar\n    foo()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 4, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\nwhich have their line numbers offset by +2, also.",
+    "body": "Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by @TimDumol created at 2010-04-03 15:44:17\n\nTom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.\n\nThis version of the patch is hopefully the final version of the patch. It does the following:\n\n* Uses ast to replace the displayhook_hack in `sagenb.misc.format`, this was achieved through the efforts of me and Alex Leone (thank you!).\n\n  * The new version, now named `parse_display_expr`, can now print either the last expression, as before:\n\n```\n1\n2\n3\n----\n3\n```\n\n  or all root level expressions:\n\n```\n1\n2\nfor x in range(3):\n    x\n3\n-----\n1\n2\n3\n```\n\n  or all expressions:\n\n```\n1\n2\nfor x in range(2):\n    x\n3\n-----\n1\n2\n0\n1\n3\n```\n\n     This new functionality is customizable via the Notebook Settings page.\n\n* Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.\n\n  * The local implementation (`WorksheetProcess_PipesImpl`) is on average 251.3 ms faster than the pexpect based one.\n\n  * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.\n\n* It now formats tracebacks as:\n\n```\nTraceback (most recent call last):\n  Line 7, in <module>\n    bar()\n  Line 5, in bar\n    foo()\n  Line 2, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\ninstead of:\n\n```\nTraceback (most recent call last):    def baz():\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 13, in <module>\n    baz()\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 10, in baz\n    bar()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 7, in bar\n    foo()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 4, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\nwhich have their line numbers offset by +2, also.",
     "created_at": "2010-04-03T15:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
@@ -451,7 +443,6 @@ This version of the patch is hopefully the final version of the patch. It does t
 
   * The new version, now named `parse_display_expr`, can now print either the last expression, as before:
 
-
 ```
 1
 2
@@ -460,9 +451,7 @@ This version of the patch is hopefully the final version of the patch. It does t
 3
 ```
 
-
   or all root level expressions:
-
 
 ```
 1
@@ -476,9 +465,7 @@ for x in range(3):
 3
 ```
 
-
   or all expressions:
-
 
 ```
 1
@@ -494,7 +481,6 @@ for x in range(2):
 3
 ```
 
-
      This new functionality is customizable via the Notebook Settings page.
 
 * Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.
@@ -504,7 +490,6 @@ for x in range(2):
   * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.
 
 * It now formats tracebacks as:
-
 
 ```
 Traceback (most recent call last):
@@ -517,9 +502,7 @@ Traceback (most recent call last):
 Exception: Hello
 ```
 
-
 instead of:
-
 
 ```
 Traceback (most recent call last):    def baz():
@@ -537,7 +520,6 @@ Traceback (most recent call last):    def baz():
     raise Exception("Hello")
 Exception: Hello
 ```
-
 
 which have their line numbers offset by +2, also.
 
@@ -829,7 +811,7 @@ I had a student complain the other day that Sage only did one thing at a time, s
 archive/issue_comments_069771.json:
 ```json
 {
-    "body": "I have a setup where I have apache forward port 80 to port 8000, and Sage runs the notebook on port 8000.  I also use the server_pool option.  I applied this patch to a slightly modified 4.5.2.  I logged in.  When I tried to open a new worksheet, I got the following error in the log (and I got an error page in the browser):\n\n\n```\n2010-09-28 16:42:52-0500 [HTTPChannel,0,127.0.0.1] User 'jason.grout' logged in.\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] ERROR initializing compute process:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] \n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] find_next_available_port() takes at least 2 arguments (1 given)\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Exception rendering:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 181, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 284, in _continue\n\t    self.unpause()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 280, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/twist.py\", line 1534, in render\n\t    self.worksheet.sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2836, in sage\n\t    self.initialize_sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2806, in initialize_sage\n\t    raise RuntimeError(msg)\n\texceptions.RuntimeError: find_next_available_port() takes at least 2 arguments (1 given)\n```\n",
+    "body": "I have a setup where I have apache forward port 80 to port 8000, and Sage runs the notebook on port 8000.  I also use the server_pool option.  I applied this patch to a slightly modified 4.5.2.  I logged in.  When I tried to open a new worksheet, I got the following error in the log (and I got an error page in the browser):\n\n```\n2010-09-28 16:42:52-0500 [HTTPChannel,0,127.0.0.1] User 'jason.grout' logged in.\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] ERROR initializing compute process:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] \n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] find_next_available_port() takes at least 2 arguments (1 given)\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Exception rendering:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 181, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 284, in _continue\n\t    self.unpause()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 280, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/twist.py\", line 1534, in render\n\t    self.worksheet.sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2836, in sage\n\t    self.initialize_sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2806, in initialize_sage\n\t    raise RuntimeError(msg)\n\texceptions.RuntimeError: find_next_available_port() takes at least 2 arguments (1 given)\n```",
     "created_at": "2010-09-28T21:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
@@ -839,7 +821,6 @@ archive/issue_comments_069771.json:
 ```
 
 I have a setup where I have apache forward port 80 to port 8000, and Sage runs the notebook on port 8000.  I also use the server_pool option.  I applied this patch to a slightly modified 4.5.2.  I logged in.  When I tried to open a new worksheet, I got the following error in the log (and I got an error page in the browser):
-
 
 ```
 2010-09-28 16:42:52-0500 [HTTPChannel,0,127.0.0.1] User 'jason.grout' logged in.
@@ -876,7 +857,6 @@ I have a setup where I have apache forward port 80 to port 8000, and Sage runs t
 	    raise RuntimeError(msg)
 	exceptions.RuntimeError: find_next_available_port() takes at least 2 arguments (1 given)
 ```
-
 
 
 

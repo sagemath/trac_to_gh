@@ -3,7 +3,7 @@
 archive/issues_003877.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nLook at the differences between\n\n\n```\nsage: arrow((0,0), (100, 100))\n```\n\n\nand\n\n\n```\nsage: arrow((0,0), (1/1000, 1/1000))\n```\n\n\nThis depends on #3806.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3877\n\n",
+    "body": "Assignee: @williamstein\n\nLook at the differences between\n\n```\nsage: arrow((0,0), (100, 100))\n```\n\nand\n\n```\nsage: arrow((0,0), (1/1000, 1/1000))\n```\n\nThis depends on #3806.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3877\n\n",
     "created_at": "2008-08-15T21:35:54Z",
     "labels": [
         "component: graphics",
@@ -21,19 +21,15 @@ Assignee: @williamstein
 
 Look at the differences between
 
-
 ```
 sage: arrow((0,0), (100, 100))
 ```
 
-
 and
-
 
 ```
 sage: arrow((0,0), (1/1000, 1/1000))
 ```
-
 
 This depends on #3806.
 
@@ -84,7 +80,7 @@ Scaling seems to be working. There is still a problem with arrows, but it is out
 archive/issue_comments_027598.json:
 ```json
 {
-    "body": "Replying to [comment:2 itolkov]:\n> Scaling seems to be working. There is still a problem with arrows, but it is outside this defect.\n\nYou are overriding passed width and other parameters. According to the docs,\n\n```\nsage: arrow((1, 1), (3, 3), width=0.05)\n```\n\n\nI didn't notice this before.",
+    "body": "Replying to [comment:2 itolkov]:\n> Scaling seems to be working. There is still a problem with arrows, but it is outside this defect.\n\n\nYou are overriding passed width and other parameters. According to the docs,\n\n```\nsage: arrow((1, 1), (3, 3), width=0.05)\n```\n\nI didn't notice this before.",
     "created_at": "2008-08-16T19:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3877",
     "type": "issue_comment",
@@ -96,12 +92,12 @@ archive/issue_comments_027598.json:
 Replying to [comment:2 itolkov]:
 > Scaling seems to be working. There is still a problem with arrows, but it is outside this defect.
 
+
 You are overriding passed width and other parameters. According to the docs,
 
 ```
 sage: arrow((1, 1), (3, 3), width=0.05)
 ```
-
 
 I didn't notice this before.
 
@@ -267,7 +263,7 @@ This should be taken care of at the same time as #3880
 archive/issue_comments_027606.json:
 ```json
 {
-    "body": "Take it back, this is different from #3880. I also wonder why arrows are skewed so badly: after #3880, take a look at\n\n```\nsage: arrow((-.1,-.1), (0,0))\n```\n\nThe skewing isn't as bad here as I've seen it elsewhere, but I wonder why it is doing this...",
+    "body": "Take it back, this is different from #3880. I also wonder why arrows are skewed so badly: after #3880, take a look at\n\n```\nsage: arrow((-.1,-.1), (0,0))\n```\nThe skewing isn't as bad here as I've seen it elsewhere, but I wonder why it is doing this...",
     "created_at": "2008-08-19T01:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3877",
     "type": "issue_comment",
@@ -281,7 +277,6 @@ Take it back, this is different from #3880. I also wonder why arrows are skewed 
 ```
 sage: arrow((-.1,-.1), (0,0))
 ```
-
 The skewing isn't as bad here as I've seen it elsewhere, but I wonder why it is doing this...
 
 

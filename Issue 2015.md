@@ -3,7 +3,7 @@
 archive/issues_002015.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/auth/._credsetup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/._demo.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/._setup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/patches/._web2_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/patches/._twisted_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/._spkg-install\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2015\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/auth/._credsetup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/._demo.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/._setup.py\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/patches/._web2_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/patches/._twisted_gnutls.patch\nsage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/._spkg-install\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2015\n\n",
     "created_at": "2008-01-31T23:26:55Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_002015.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/auth/._credsetup.py
 sage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/src/doc/examples/._demo.py
@@ -27,7 +26,6 @@ sage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/twistedweb2-20070619/patches/._we
 sage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/patches/._twisted_gnutls.patch
 sage-2.10.1.rc3/spkg/standard/twisted-2.5.0.p8/._spkg-install
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2015
 

@@ -106,7 +106,7 @@ Attachment [Sage-2.10.alpha3-update-license.patch](tarball://root/attachments/so
 archive/issue_comments_011072.json:
 ```json
 {
-    "body": "I have applied the patch to Sage 2.10.alpha3 due to the following statement from the last post in the thread linked above:\n\n```\n> Wait, are you saying that you would not allow your code to be re-licensed\n> \"GPL v2 or later\" for Sage?   Or, are you just saying you don't like it,\n> but you would do it.\n\nAt this time I'm just saying that I don't like it. \n```\n\n\nI have also send an email to Gonzalo asking for explicit confirmation - but I do not think that the above line could be misinterpreted to mean anything but an agreement to relicense under \"GPL v2 or later\". \n\nCheers,\n\nMichael",
+    "body": "I have applied the patch to Sage 2.10.alpha3 due to the following statement from the last post in the thread linked above:\n\n```\n> Wait, are you saying that you would not allow your code to be re-licensed\n> \"GPL v2 or later\" for Sage?   Or, are you just saying you don't like it,\n> but you would do it.\n\nAt this time I'm just saying that I don't like it. \n```\n\nI have also send an email to Gonzalo asking for explicit confirmation - but I do not think that the above line could be misinterpreted to mean anything but an agreement to relicense under \"GPL v2 or later\". \n\nCheers,\n\nMichael",
     "created_at": "2008-01-15T04:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1759",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ I have applied the patch to Sage 2.10.alpha3 due to the following statement from
 
 At this time I'm just saying that I don't like it. 
 ```
-
 
 I have also send an email to Gonzalo asking for explicit confirmation - but I do not think that the above line could be misinterpreted to mean anything but an agreement to relicense under "GPL v2 or later". 
 

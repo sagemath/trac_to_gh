@@ -3,7 +3,7 @@
 archive/issues_001466.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777\n\n\n```\nAha!  Great!\n\nThis reminds we that when I started using the notebook interface, it\ntook me an embarrassingly long time to discover what was meant by the\nphrase\n'click to the left for traceback'.  I found this message confusing\nbecause there is nothing to the left to click on.  At first I thought\nthis was a strange way\nof saying `left-click'.  Eventually I worked it out by accident.  I\nsuggest a more verbose message along the lines of\n`for traceback, click in the blank area just to the left of this\nline'.  Or put something to click on, maybe along the lines of the\nbrackets in\nthe mathematica notebook, which has a hierarchical grouping mechanism\nwhereby groups of cells can be hidden or expanded together.\n(Of course maybe sage does too, and I just don't know about it!)\n\nCheers,\n\nPeter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1466\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n```\nAha!  Great!\n\nThis reminds we that when I started using the notebook interface, it\ntook me an embarrassingly long time to discover what was meant by the\nphrase\n'click to the left for traceback'.  I found this message confusing\nbecause there is nothing to the left to click on.  At first I thought\nthis was a strange way\nof saying `left-click'.  Eventually I worked it out by accident.  I\nsuggest a more verbose message along the lines of\n`for traceback, click in the blank area just to the left of this\nline'.  Or put something to click on, maybe along the lines of the\nbrackets in\nthe mathematica notebook, which has a hierarchical grouping mechanism\nwhereby groups of cells can be hidden or expanded together.\n(Of course maybe sage does too, and I just don't know about it!)\n\nCheers,\n\nPeter\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1466\n\n",
     "created_at": "2007-12-12T06:22:38Z",
     "labels": [
         "component: notebook"
@@ -18,7 +18,6 @@ archive/issues_001466.json:
 Assignee: boothby
 
 CC:  @qed777
-
 
 ```
 Aha!  Great!
@@ -42,7 +41,6 @@ Cheers,
 
 Peter
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1466
 

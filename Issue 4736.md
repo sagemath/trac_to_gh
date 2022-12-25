@@ -3,7 +3,7 @@
 archive/issues_004736.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\n\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
+    "body": "Assignee: @garyfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
     "created_at": "2008-12-07T05:46:15Z",
     "labels": [
         "component: doctest coverage",
@@ -27,13 +27,11 @@ Exception exceptions.TypeError: 'cannot convert a (= 1) to OP' in
 function: mult(1)
        [3.1 s]
 ```
-
 When running "-tp 8 -long" the failure is reported as:
 
 ```
  sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed
 ```
-
 
 Cheers,
 
@@ -86,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_035689.json:
 ```json
 {
-    "body": "Patch looks nice, but there are two small problems:\n\nFor -t the new line is missing before the time is being printed. I consider this cosmetic, but other people might be annoyed:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/homogeneous.py\"       \t [3.1 s]\n```\n\nCTRL-C isn't caught properly - at least it shouldn't print \"Error!!!\" with \"-t\":\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/jack.py\"              Error!!!\n\t [8.5 s]\n```\n\nFor -tp CTRL-C now seems to kill all doctests:\n\n```\nsage -t  devel/doc/const/const.tex\nError!!!\n\n\t [1.8 s]\nsage -t  devel/doc/tut/tut.tex\nError!!!\n\n\t [1.7 s]\nsage -t  devel/doc/prog/prog.tex\nError!!!\n\n\t [1.8 s]\n\nThe following tests failed:\n\n\tsage -t  devel/doc/const/const.tex # KeyboardInterrupt\n\tsage -t  devel/doc/tut/tut.tex # KeyboardInterrupt\n\tsage -t  devel/doc/prog/prog.tex # KeyboardInterrupt\n-------------------------------------------------------------------\n```\n\nI think this is the desired behavior since now the timeout kills run away jobs properly.\n\nCheers,\n\nMichael",
+    "body": "Patch looks nice, but there are two small problems:\n\nFor -t the new line is missing before the time is being printed. I consider this cosmetic, but other people might be annoyed:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/homogeneous.py\"       \t [3.1 s]\n```\nCTRL-C isn't caught properly - at least it shouldn't print \"Error!!!\" with \"-t\":\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/jack.py\"              Error!!!\n\t [8.5 s]\n```\nFor -tp CTRL-C now seems to kill all doctests:\n\n```\nsage -t  devel/doc/const/const.tex\nError!!!\n\n\t [1.8 s]\nsage -t  devel/doc/tut/tut.tex\nError!!!\n\n\t [1.7 s]\nsage -t  devel/doc/prog/prog.tex\nError!!!\n\n\t [1.8 s]\n\nThe following tests failed:\n\n\tsage -t  devel/doc/const/const.tex # KeyboardInterrupt\n\tsage -t  devel/doc/tut/tut.tex # KeyboardInterrupt\n\tsage -t  devel/doc/prog/prog.tex # KeyboardInterrupt\n-------------------------------------------------------------------\n```\nI think this is the desired behavior since now the timeout kills run away jobs properly.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-07T06:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
@@ -102,14 +100,12 @@ For -t the new line is missing before the time is being printed. I consider this
 ```
 sage -t  "devel/sage/sage/combinat/sf/homogeneous.py"       	 [3.1 s]
 ```
-
 CTRL-C isn't caught properly - at least it shouldn't print "Error!!!" with "-t":
 
 ```
 sage -t  "devel/sage/sage/combinat/sf/jack.py"              Error!!!
 	 [8.5 s]
 ```
-
 For -tp CTRL-C now seems to kill all doctests:
 
 ```
@@ -133,7 +129,6 @@ The following tests failed:
 	sage -t  devel/doc/prog/prog.tex # KeyboardInterrupt
 -------------------------------------------------------------------
 ```
-
 I think this is the desired behavior since now the timeout kills run away jobs properly.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_006883.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nI got the following failure when compiling Sage 4.1.2.alpha0:\n\n```\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: System gmp library requested but not found.\nFailed to configure ECL ... exiting\n\nreal    0m3.427s\nuser    0m1.095s\nsys     0m2.049s\nsage: An error occurred while installing ecl-9.8.4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4 and type 'make'.\nInstead type \"/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/ecl-9.8.4] Error 1\n\nreal    0m7.189s\nuser    0m2.507s\nsys     0m3.197s\nError building Sage.\n```\n\nThis was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6883\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nI got the following failure when compiling Sage 4.1.2.alpha0:\n\n```\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: System gmp library requested but not found.\nFailed to configure ECL ... exiting\n\nreal    0m3.427s\nuser    0m1.095s\nsys     0m2.049s\nsage: An error occurred while installing ecl-9.8.4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4 and type 'make'.\nInstead type \"/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/sandbox-64/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/ecl-9.8.4] Error 1\n\nreal    0m7.189s\nuser    0m2.507s\nsys     0m3.197s\nError building Sage.\n```\nThis was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6883\n\n",
     "created_at": "2009-09-04T06:36:43Z",
     "labels": [
         "component: packages: standard",
@@ -49,7 +49,6 @@ user    0m2.507s
 sys     0m3.197s
 Error building Sage.
 ```
-
 This was on Mac OS X 10.5.8 (bsd.math.washington.edu), compiling in 64-bit mode.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6883
@@ -113,7 +112,7 @@ Dave
 archive/issue_comments_056767.json:
 ```json
 {
-    "body": "One of the problems is the following line in the file `spkg-install` of the ECL spkg:\n\n```\n./configure --prefix=$SAGE_LOCAL --with-system-gmp --enable-boehm=system\n```\n\nDeleting the argument `--with-system-gmp` and the build would go OK, but then it would fail on t2.math. Deleting `--enable-boehm=system` and the build would go fine. I have created an updated spkg at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.spkg\n\n\n\nwhose file `spkg-install` now only has this configuration line:\n\n```\n./configure --prefix=$SAGE_LOCAL\n```\n\nI also did some general clean up such as removing the empty directory `build` and reformatting comments so that they are no more than 80 characters in length. I'm now building Sage 4.1.2.alpha0 from scratch with the above updated ECL package. The machines sage.math, mod.math, and geom.math are all near capacity so I have been experiencing difficulty getting Sage to compile on those machines since ATLAS complained about errors while tuning itself. Here are the platforms on which I'm currently compiling Sage 4.1.2.alpha0 from scratch with my updated ecl-9.8.4.p0.spkg:\n\n* bsd.math in 32-bit mode\n* bsd.math in 64-bit mode\n* t2.math\n* cicero on SkyNet (x86 Fedora 9 with GCC 4.4.1)\n* eno on SkyNet (x86_64 Fedora 9 with GCC 4.4.1)\n* lena on SkyNet (x86_64 RHEL Server 5.3 with GeForce GPUs and GCC 4.4.1)\n\nFor bsd.math, I have copied fortran-OSX64-20090120.spkg and ecl-9.8.4.p0.spkg to the directory /Users/mvngu/apps/. Here are the steps I took to start building Sage 4.1.2.alpha0 in 64-bit mode with ecl-9.8.4.p0.spkg:\n\n```\n[mvngu@bsd ~]$ pwd\n/Users/mvngu\n[mvngu@bsd ~]$ tar -xf apps/sage-4.1.2.alpha0.tar -C /scratch/mvngu/sandbox-64/alpha/\n[mvngu@bsd ~]$ cd /scratch/mvngu/sandbox-64/alpha/sage-4.1.2.alpha0/\n[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/fortran-20071120.p5.spkg\n[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/fortran-OSX64-20090120.spkg spkg/standard/\n[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/ecl-9.8.4.spkg \n[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/ecl-9.8.4.p0.spkg spkg/standard/\n[mvngu@bsd sage-4.1.2.alpha0]$ export SAGE64=yes\n[mvngu@bsd sage-4.1.2.alpha0]$ make\n```\n\nWhen `make` terminates, it would report success. But actually if you then start Sage with\n\n```\n./sage -br main\n```\n\nyou would get many errors. You now need to open the file\n\n```\nSAGE_ROOT/devel/sage-main/sage/graphs/all.py\n```\n\nand comment out the line\n\n```\nfrom sage.graphs.cliquer import *\n```\n\nThen start `make` again:\n\n```\nmake\n```\n\nWhen it terminates, start Sage again with\n\n```\n./sage -br main\n```\n\nThis time, Sage should load fine without any errors.",
+    "body": "One of the problems is the following line in the file `spkg-install` of the ECL spkg:\n\n```\n./configure --prefix=$SAGE_LOCAL --with-system-gmp --enable-boehm=system\n```\nDeleting the argument `--with-system-gmp` and the build would go OK, but then it would fail on t2.math. Deleting `--enable-boehm=system` and the build would go fine. I have created an updated spkg at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.spkg\n\n\n\nwhose file `spkg-install` now only has this configuration line:\n\n```\n./configure --prefix=$SAGE_LOCAL\n```\nI also did some general clean up such as removing the empty directory `build` and reformatting comments so that they are no more than 80 characters in length. I'm now building Sage 4.1.2.alpha0 from scratch with the above updated ECL package. The machines sage.math, mod.math, and geom.math are all near capacity so I have been experiencing difficulty getting Sage to compile on those machines since ATLAS complained about errors while tuning itself. Here are the platforms on which I'm currently compiling Sage 4.1.2.alpha0 from scratch with my updated ecl-9.8.4.p0.spkg:\n\n* bsd.math in 32-bit mode\n* bsd.math in 64-bit mode\n* t2.math\n* cicero on SkyNet (x86 Fedora 9 with GCC 4.4.1)\n* eno on SkyNet (x86_64 Fedora 9 with GCC 4.4.1)\n* lena on SkyNet (x86_64 RHEL Server 5.3 with GeForce GPUs and GCC 4.4.1)\n\nFor bsd.math, I have copied fortran-OSX64-20090120.spkg and ecl-9.8.4.p0.spkg to the directory /Users/mvngu/apps/. Here are the steps I took to start building Sage 4.1.2.alpha0 in 64-bit mode with ecl-9.8.4.p0.spkg:\n\n```\n[mvngu@bsd ~]$ pwd\n/Users/mvngu\n[mvngu@bsd ~]$ tar -xf apps/sage-4.1.2.alpha0.tar -C /scratch/mvngu/sandbox-64/alpha/\n[mvngu@bsd ~]$ cd /scratch/mvngu/sandbox-64/alpha/sage-4.1.2.alpha0/\n[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/fortran-20071120.p5.spkg\n[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/fortran-OSX64-20090120.spkg spkg/standard/\n[mvngu@bsd sage-4.1.2.alpha0]$ rm -rf spkg/standard/ecl-9.8.4.spkg \n[mvngu@bsd sage-4.1.2.alpha0]$ cp -rf /Users/mvngu/apps/ecl-9.8.4.p0.spkg spkg/standard/\n[mvngu@bsd sage-4.1.2.alpha0]$ export SAGE64=yes\n[mvngu@bsd sage-4.1.2.alpha0]$ make\n```\nWhen `make` terminates, it would report success. But actually if you then start Sage with\n\n```\n./sage -br main\n```\nyou would get many errors. You now need to open the file\n\n```\nSAGE_ROOT/devel/sage-main/sage/graphs/all.py\n```\nand comment out the line\n\n```\nfrom sage.graphs.cliquer import *\n```\nThen start `make` again:\n\n```\nmake\n```\nWhen it terminates, start Sage again with\n\n```\n./sage -br main\n```\nThis time, Sage should load fine without any errors.",
     "created_at": "2009-09-06T06:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -127,7 +126,6 @@ One of the problems is the following line in the file `spkg-install` of the ECL 
 ```
 ./configure --prefix=$SAGE_LOCAL --with-system-gmp --enable-boehm=system
 ```
-
 Deleting the argument `--with-system-gmp` and the build would go OK, but then it would fail on t2.math. Deleting `--enable-boehm=system` and the build would go fine. I have created an updated spkg at
 
 
@@ -141,7 +139,6 @@ whose file `spkg-install` now only has this configuration line:
 ```
 ./configure --prefix=$SAGE_LOCAL
 ```
-
 I also did some general clean up such as removing the empty directory `build` and reformatting comments so that they are no more than 80 characters in length. I'm now building Sage 4.1.2.alpha0 from scratch with the above updated ECL package. The machines sage.math, mod.math, and geom.math are all near capacity so I have been experiencing difficulty getting Sage to compile on those machines since ATLAS complained about errors while tuning itself. Here are the platforms on which I'm currently compiling Sage 4.1.2.alpha0 from scratch with my updated ecl-9.8.4.p0.spkg:
 
 * bsd.math in 32-bit mode
@@ -165,37 +162,31 @@ For bsd.math, I have copied fortran-OSX64-20090120.spkg and ecl-9.8.4.p0.spkg to
 [mvngu@bsd sage-4.1.2.alpha0]$ export SAGE64=yes
 [mvngu@bsd sage-4.1.2.alpha0]$ make
 ```
-
 When `make` terminates, it would report success. But actually if you then start Sage with
 
 ```
 ./sage -br main
 ```
-
 you would get many errors. You now need to open the file
 
 ```
 SAGE_ROOT/devel/sage-main/sage/graphs/all.py
 ```
-
 and comment out the line
 
 ```
 from sage.graphs.cliquer import *
 ```
-
 Then start `make` again:
 
 ```
 make
 ```
-
 When it terminates, start Sage again with
 
 ```
 ./sage -br main
 ```
-
 This time, Sage should load fine without any errors.
 
 
@@ -225,7 +216,7 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.sp
 archive/issue_comments_056769.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> David Kirkby's updated spkg with changes committed in his name:\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.spkg\n\n\n\nkirkby's 4th attempt at an updated spkg is up at this same place. All changes have been committed in this name.",
+    "body": "Replying to [comment:3 mvngu]:\n> David Kirkby's updated spkg with changes committed in his name:\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.spkg\n\n\n\nkirkby's 4th attempt at an updated spkg is up at this same place. All changes have been committed in this name.",
     "created_at": "2009-09-07T04:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -236,6 +227,7 @@ archive/issue_comments_056769.json:
 
 Replying to [comment:3 mvngu]:
 > David Kirkby's updated spkg with changes committed in his name:
+
 http://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecl-9.8.4.p0.spkg
 
 
@@ -249,7 +241,7 @@ kirkby's 4th attempt at an updated spkg is up at this same place. All changes ha
 archive/issue_comments_056770.json:
 ```json
 {
-    "body": "With the most recent spkg (\"kirby's 4th attempt\"), I get a failure right after configuring in 64-bit OS X:\n\n```\nConfiguration complete. To build ECL, issue make in this directory.\ncd build; make\ncp /Applications/sage_builds/sage-4.1.2.alpha0-64bit/spkg/build/ecl-9.8.4.p0/src/src/util/gdbinit .gdbinit\nif (echo c gc gmp | grep gmp); then \\\n\t  cd gmp && make install && \\\n\t  cd .. && mv include/gmp.h ecl/ && rmdir include &&  \\\n\t  mv ./libgmp.a ./libeclgmp.a; \\\n\tfi\nc gc gmp\nmake[2]: *** No rule to make target `install'.  Stop.\nmake[1]: *** [libeclgmp.a] Error 2\n```\n\nIt seems to build successfully in 32-bit OS X.\n\nAfter executing \"export MAKE='make -j2' \", it fails in 32-bit OS X:\n\n```\n----------------------------------------------------------------------\nLibraries have been installed in:\n   /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/build\n\nIf you ever happen to want to link against installed libraries\nin a given directory, LIBDIR, you must either use libtool, and\nspecify the full pathname of the library, or use the `-LLIBDIR'\nflag during linking and do at least one of the following:\n   - add LIBDIR to the `DYLD_LIBRARY_PATH' environment variable\n     during execution\n\nSee any operating system documentation about shared libraries for\nmore information, such as the ld(1) and ld.so(8) manual pages.\n----------------------------------------------------------------------\ncd c; make -j2\nmake[2]: warning: -jN forced in submake: disabling jobserver mode.\ncat /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/symbols_list.h | \\\n\tsed -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*NULL,.*}%{\\1,NULL}%g' \\\n\t    -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*\\([^,]*\\),.*}%{\\1,\"\\2\"}%g' \\\n\t    -e 's%{NULL.*%{NULL,NULL}};%' > /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/symbols_list2.h\nif test -f ../CROSS-DPP ; then ../CROSS-DPP /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/main.d main.c ; else ./dpp /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/main.d main.c ; fi\n/bin/sh: ./dpp: No such file or directory\nmake[2]: *** [main.c] Error 127\nmake[2]: *** Waiting for unfinished jobs....\nmake[1]: *** [libeclmin.a] Error 2\nmake: *** [all] Error 2\n```\n",
+    "body": "With the most recent spkg (\"kirby's 4th attempt\"), I get a failure right after configuring in 64-bit OS X:\n\n```\nConfiguration complete. To build ECL, issue make in this directory.\ncd build; make\ncp /Applications/sage_builds/sage-4.1.2.alpha0-64bit/spkg/build/ecl-9.8.4.p0/src/src/util/gdbinit .gdbinit\nif (echo c gc gmp | grep gmp); then \\\n\t  cd gmp && make install && \\\n\t  cd .. && mv include/gmp.h ecl/ && rmdir include &&  \\\n\t  mv ./libgmp.a ./libeclgmp.a; \\\n\tfi\nc gc gmp\nmake[2]: *** No rule to make target `install'.  Stop.\nmake[1]: *** [libeclgmp.a] Error 2\n```\nIt seems to build successfully in 32-bit OS X.\n\nAfter executing \"export MAKE='make -j2' \", it fails in 32-bit OS X:\n\n```\n----------------------------------------------------------------------\nLibraries have been installed in:\n   /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/build\n\nIf you ever happen to want to link against installed libraries\nin a given directory, LIBDIR, you must either use libtool, and\nspecify the full pathname of the library, or use the `-LLIBDIR'\nflag during linking and do at least one of the following:\n   - add LIBDIR to the `DYLD_LIBRARY_PATH' environment variable\n     during execution\n\nSee any operating system documentation about shared libraries for\nmore information, such as the ld(1) and ld.so(8) manual pages.\n----------------------------------------------------------------------\ncd c; make -j2\nmake[2]: warning: -jN forced in submake: disabling jobserver mode.\ncat /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/symbols_list.h | \\\n\tsed -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*NULL,.*}%{\\1,NULL}%g' \\\n\t    -e 's%{\\([A-Z ]*.*\".*\"\\),[^,]*,[ ]*\\([^,]*\\),.*}%{\\1,\"\\2\"}%g' \\\n\t    -e 's%{NULL.*%{NULL,NULL}};%' > /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/symbols_list2.h\nif test -f ../CROSS-DPP ; then ../CROSS-DPP /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/main.d main.c ; else ./dpp /Applications/sage_builds/sage-4.1.2.alpha0/spkg/build/ecl-9.8.4.p0/src/src/c/main.d main.c ; fi\n/bin/sh: ./dpp: No such file or directory\nmake[2]: *** [main.c] Error 127\nmake[2]: *** Waiting for unfinished jobs....\nmake[1]: *** [libeclmin.a] Error 2\nmake: *** [all] Error 2\n```",
     "created_at": "2009-09-07T05:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -273,7 +265,6 @@ c gc gmp
 make[2]: *** No rule to make target `install'.  Stop.
 make[1]: *** [libeclgmp.a] Error 2
 ```
-
 It seems to build successfully in 32-bit OS X.
 
 After executing "export MAKE='make -j2' ", it fails in 32-bit OS X:
@@ -309,7 +300,6 @@ make: *** [all] Error 2
 
 
 
-
 ---
 
 archive/issue_comments_056771.json:
@@ -333,7 +323,7 @@ Changing keywords from "" to "os x ecl cvs".
 archive/issue_comments_056772.json:
 ```json
 {
-    "body": "This is now solved I believe. I have tested a revised .spkg on \n\n* 32-bit OS X (bsd.math)\n* 64-bit OS X (bsd.math)\n* 32-bit Solaris (Sun of mine)\n* 64-bit Solaris (Sun of mine)\n* 64-bit linux (sage.math)\n\nThe basic problem was that ecl 9.8.4 would not build on OS X in 64-bit mode. That is acknowledged by the main ECL developer. Hence no changes to spkg-install alone will solve that. \n\nThis is a package I created from a CVS snapshot of ECL. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4-cvs-13th-Sept-2009-3rd-try/ecl-9.8.4-cvs-13th-Sept-2009.spkg\n\nThe snapshot was taken on 13th September (as indicated by the name). It incorporates changes by Minh Nguyen too, so now the configure line is simply:\n\n\n```\n./configure --prefix=$SAGE_LOCAL\n```\n\n \nHere's the build results from 64-bit OS X (the subject of this ticket), but it also works on the other systems I have tried it on. \n\n\n```\nExtracting package /Users/kirkby/64/sage-4.1.2.alpha1/spkg/standard/ecl-9.8.4-cvs-13th-Sept-2009.spkg ...\n-rw-r--r-- 1 kirkby staff 4797805 Sep 15 00:08 /Users/kirkby/64/sage-4.1.2.alpha1/spkg/standard/ecl-9.8.4-cvs-13th-Sept-2009.spkg\necl-9.8.4-cvs-13th-Sept-2009/\necl-9.8.4-cvs-13th-Sept-2009/build/\necl-9.8.4-cvs-13th-Sept-2009/build/build/\n<SNIP>\necl-9.8.4-cvs-13th-Sept-2009/spkg-install\necl-9.8.4-cvs-13th-Sept-2009/ecl-9.8.4-cvs-13th-Sept-2009.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nDarwin bsd.local 9.8.0 Darwin Kernel Version 9.8.0: Wed Jul 15 16:55:01 PDT 2009; root:xnu-1228.15.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin9\nConfigured with: /var/tmp/gcc/gcc-5493~1/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=i686-apple-darwin9 --with-arch=apple --with-tune=generic --host=i686-apple-darwin9 --target=i686-apple-darwin9\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5493)\n****************************************************\nBuilding a 64-bit version of ECL\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -m64  -g  -Wall\nUsing CXXFLAGS= -O2  -m64  -g  -Wall\nUsing FCFLAGS= -O2  -m64  -g  -Wall\nUsing F77FLAGS= -O2  -m64  -g  -Wall\nUsing CPPFLAGS= -I/Users/kirkby/64/sage-4.1.2.alpha1/local/include\nUsing LDFLAGS= -L/Users/kirkby/64/sage-4.1.2.alpha1/local/lib -m64\nUsing ABI=64\nconfigure scripts and/or makefiles might override these later\n\nCreating directory `build'\nSwitching to directory `build' to continue configuration.\nchecking build system type... pentium3-apple-darwin9.8.0\nchecking host system type... pentium3-apple-darwin9.8.0\nchecking for gcc... gcc\n<SNIP>\nfor i in *.asd; do /Users/mvngu/usr/bin/install -c -m 644 ${i} /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/; done\nfor i in c/dpp ecl_min `cat MODULES`; do \\\n          case $i in \\\n            *.fas) /Users/mvngu/usr/bin/install -c $i /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/;; \\\n            *) /Users/mvngu/usr/bin/install -c -m 644 $i /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/;; \\\n          esac \\\n        done\n\nreal    2m34.619s\nuser    1m50.851s\nsys     0m41.021s\nSuccessfully installed ecl-9.8.4-cvs-13th-Sept-2009\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing ecl-9.8.4-cvs-13th-Sept-2009.spkg\n```\n",
+    "body": "This is now solved I believe. I have tested a revised .spkg on \n\n* 32-bit OS X (bsd.math)\n* 64-bit OS X (bsd.math)\n* 32-bit Solaris (Sun of mine)\n* 64-bit Solaris (Sun of mine)\n* 64-bit linux (sage.math)\n\nThe basic problem was that ecl 9.8.4 would not build on OS X in 64-bit mode. That is acknowledged by the main ECL developer. Hence no changes to spkg-install alone will solve that. \n\nThis is a package I created from a CVS snapshot of ECL. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4-cvs-13th-Sept-2009-3rd-try/ecl-9.8.4-cvs-13th-Sept-2009.spkg\n\nThe snapshot was taken on 13th September (as indicated by the name). It incorporates changes by Minh Nguyen too, so now the configure line is simply:\n\n```\n./configure --prefix=$SAGE_LOCAL\n```\n \nHere's the build results from 64-bit OS X (the subject of this ticket), but it also works on the other systems I have tried it on. \n\n```\nExtracting package /Users/kirkby/64/sage-4.1.2.alpha1/spkg/standard/ecl-9.8.4-cvs-13th-Sept-2009.spkg ...\n-rw-r--r-- 1 kirkby staff 4797805 Sep 15 00:08 /Users/kirkby/64/sage-4.1.2.alpha1/spkg/standard/ecl-9.8.4-cvs-13th-Sept-2009.spkg\necl-9.8.4-cvs-13th-Sept-2009/\necl-9.8.4-cvs-13th-Sept-2009/build/\necl-9.8.4-cvs-13th-Sept-2009/build/build/\n<SNIP>\necl-9.8.4-cvs-13th-Sept-2009/spkg-install\necl-9.8.4-cvs-13th-Sept-2009/ecl-9.8.4-cvs-13th-Sept-2009.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nDarwin bsd.local 9.8.0 Darwin Kernel Version 9.8.0: Wed Jul 15 16:55:01 PDT 2009; root:xnu-1228.15.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin9\nConfigured with: /var/tmp/gcc/gcc-5493~1/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=i686-apple-darwin9 --with-arch=apple --with-tune=generic --host=i686-apple-darwin9 --target=i686-apple-darwin9\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5493)\n****************************************************\nBuilding a 64-bit version of ECL\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -m64  -g  -Wall\nUsing CXXFLAGS= -O2  -m64  -g  -Wall\nUsing FCFLAGS= -O2  -m64  -g  -Wall\nUsing F77FLAGS= -O2  -m64  -g  -Wall\nUsing CPPFLAGS= -I/Users/kirkby/64/sage-4.1.2.alpha1/local/include\nUsing LDFLAGS= -L/Users/kirkby/64/sage-4.1.2.alpha1/local/lib -m64\nUsing ABI=64\nconfigure scripts and/or makefiles might override these later\n\nCreating directory `build'\nSwitching to directory `build' to continue configuration.\nchecking build system type... pentium3-apple-darwin9.8.0\nchecking host system type... pentium3-apple-darwin9.8.0\nchecking for gcc... gcc\n<SNIP>\nfor i in *.asd; do /Users/mvngu/usr/bin/install -c -m 644 ${i} /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/; done\nfor i in c/dpp ecl_min `cat MODULES`; do \\\n          case $i in \\\n            *.fas) /Users/mvngu/usr/bin/install -c $i /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/;; \\\n            *) /Users/mvngu/usr/bin/install -c -m 644 $i /Users/kirkby/64/sage-4.1.2.alpha1/local/lib/ecl-9.8.4/;; \\\n          esac \\\n        done\n\nreal    2m34.619s\nuser    1m50.851s\nsys     0m41.021s\nSuccessfully installed ecl-9.8.4-cvs-13th-Sept-2009\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing ecl-9.8.4-cvs-13th-Sept-2009.spkg\n```",
     "created_at": "2009-09-15T11:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -358,14 +348,11 @@ http://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4-cvs-13th-Sep
 
 The snapshot was taken on 13th September (as indicated by the name). It incorporates changes by Minh Nguyen too, so now the configure line is simply:
 
-
 ```
 ./configure --prefix=$SAGE_LOCAL
 ```
-
  
 Here's the build results from 64-bit OS X (the subject of this ticket), but it also works on the other systems I have tried it on. 
-
 
 ```
 Extracting package /Users/kirkby/64/sage-4.1.2.alpha1/spkg/standard/ecl-9.8.4-cvs-13th-Sept-2009.spkg ...
@@ -436,7 +423,6 @@ Finished installing ecl-9.8.4-cvs-13th-Sept-2009.spkg
 
 
 
-
 ---
 
 archive/issue_comments_056773.json:
@@ -464,7 +450,7 @@ I deleted the empty directory "build" and the file "ecl-9.8.4-cvs-13th-Sept-2009
 archive/issue_comments_056774.json:
 ```json
 {
-    "body": "I didn't build from scratch: just \"sage -f ecl...spkg\" followed by \"sage -f spkg/standard/maxima...spkg\".   This is with Sage 4.1.2.alpha1.\n\nOn 32-bit Mac OS X, compiled successfully.  One nonrepeatable test failure: \"sage -t -long \"devel/sage/sage/graphs/graph_plot.py\".  I'm not going to worry about it, because it passes tests when I do it again.\n\nOn 64-bit Mac OS X, compiled successfully.  Apart from the test failures because of the lack of cliquer, one failure: \n\n```\nsage -t -long \"devel/sage/sage/interfaces/maxima.py\"        \n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.1.2.alpha1-64bit/devel/sage/sage/interfaces/maxima.py\", line 2108:\n    sage: list(v)\nExpected:\n    [0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\nGot:\n    [0, x, , 3*x^3, 4*x^4, 5*x^5]\n**********************************************************************\n```\n\nIs this a serious issue, or just something to do with the new version of maxima?  Why do I only get it in a 64-bit build?",
+    "body": "I didn't build from scratch: just \"sage -f ecl...spkg\" followed by \"sage -f spkg/standard/maxima...spkg\".   This is with Sage 4.1.2.alpha1.\n\nOn 32-bit Mac OS X, compiled successfully.  One nonrepeatable test failure: \"sage -t -long \"devel/sage/sage/graphs/graph_plot.py\".  I'm not going to worry about it, because it passes tests when I do it again.\n\nOn 64-bit Mac OS X, compiled successfully.  Apart from the test failures because of the lack of cliquer, one failure: \n\n```\nsage -t -long \"devel/sage/sage/interfaces/maxima.py\"        \n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.1.2.alpha1-64bit/devel/sage/sage/interfaces/maxima.py\", line 2108:\n    sage: list(v)\nExpected:\n    [0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\nGot:\n    [0, x, , 3*x^3, 4*x^4, 5*x^5]\n**********************************************************************\n```\nIs this a serious issue, or just something to do with the new version of maxima?  Why do I only get it in a 64-bit build?",
     "created_at": "2009-09-15T23:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -490,7 +476,6 @@ Got:
     [0, x, , 3*x^3, 4*x^4, 5*x^5]
 **********************************************************************
 ```
-
 Is this a serious issue, or just something to do with the new version of maxima?  Why do I only get it in a 64-bit build?
 
 
@@ -520,7 +505,7 @@ based on Sage 4.1.2.alpha1
 archive/issue_comments_056776.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> Is this a serious issue, or just something to do with the new version of maxima? \nIt's an issue with data representation. On the surface you see nothing wrong, even on sage.math:\n\n```\nsage: v = maxima('create_list(i*x^i,i,0,5)')\nsage: L = list(v)\nsage: [e for e in L]\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\nsage: L\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\n```\n\nEach member of the list `L` is a `MaximaElement` object. So we should use the method `_sage_()` to convert these objects to Sage objects:\n\n```\nsage: [type(e) for e in L]\n[<class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>]\nsage: [e._sage_() for e in L]\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\n```\n\nDisplaying `MaximaElement` objects as is can be dangerous because sometimes they have escape sequences, which result in unexpected behaviours:\n\n```\nsage: [str(e) for e in L]\n\n['                                       0',\n '                                       x',\n '                                        2\\r\\n                                     2 x',\n '                                        3\\r\\n                                     3 x',\n '                                        4\\r\\n                                     4 x',\n '                                        5\\r\\n                                     5 x']\nsage: [latex(e) for e in L]\n[0, x, 2\\,x^2, 3\\,x^3, 4\\,x^4, 5\\,x^5]\n```\n\nThe patch `trac_6883-proper-display.patch` should fix the doctest problem on 64-bit OS X 10.5.",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> Is this a serious issue, or just something to do with the new version of maxima? \n\nIt's an issue with data representation. On the surface you see nothing wrong, even on sage.math:\n\n```\nsage: v = maxima('create_list(i*x^i,i,0,5)')\nsage: L = list(v)\nsage: [e for e in L]\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\nsage: L\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\n```\nEach member of the list `L` is a `MaximaElement` object. So we should use the method `_sage_()` to convert these objects to Sage objects:\n\n```\nsage: [type(e) for e in L]\n[<class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>,\n <class 'sage.interfaces.maxima.MaximaElement'>]\nsage: [e._sage_() for e in L]\n[0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]\n```\nDisplaying `MaximaElement` objects as is can be dangerous because sometimes they have escape sequences, which result in unexpected behaviours:\n\n```\nsage: [str(e) for e in L]\n\n['                                       0',\n '                                       x',\n '                                        2\\r\\n                                     2 x',\n '                                        3\\r\\n                                     3 x',\n '                                        4\\r\\n                                     4 x',\n '                                        5\\r\\n                                     5 x']\nsage: [latex(e) for e in L]\n[0, x, 2\\,x^2, 3\\,x^3, 4\\,x^4, 5\\,x^5]\n```\nThe patch `trac_6883-proper-display.patch` should fix the doctest problem on 64-bit OS X 10.5.",
     "created_at": "2009-09-16T02:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6883",
     "type": "issue_comment",
@@ -531,6 +516,7 @@ archive/issue_comments_056776.json:
 
 Replying to [comment:8 jhpalmieri]:
 > Is this a serious issue, or just something to do with the new version of maxima? 
+
 It's an issue with data representation. On the surface you see nothing wrong, even on sage.math:
 
 ```
@@ -541,7 +527,6 @@ sage: [e for e in L]
 sage: L
 [0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]
 ```
-
 Each member of the list `L` is a `MaximaElement` object. So we should use the method `_sage_()` to convert these objects to Sage objects:
 
 ```
@@ -555,7 +540,6 @@ sage: [type(e) for e in L]
 sage: [e._sage_() for e in L]
 [0, x, 2*x^2, 3*x^3, 4*x^4, 5*x^5]
 ```
-
 Displaying `MaximaElement` objects as is can be dangerous because sometimes they have escape sequences, which result in unexpected behaviours:
 
 ```
@@ -570,7 +554,6 @@ sage: [str(e) for e in L]
 sage: [latex(e) for e in L]
 [0, x, 2\,x^2, 3\,x^3, 4\,x^4, 5\,x^5]
 ```
-
 The patch `trac_6883-proper-display.patch` should fix the doctest problem on 64-bit OS X 10.5.
 
 

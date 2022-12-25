@@ -3,7 +3,7 @@
 archive/issues_007954.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kwankyu\n\nReported by Ronald van Luijk:\n\nbecause the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:\n\n\n```\nA.<x,y,z>=AffineSpace(QQ,3)\nC=Curve([x-y,x-z])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7954\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kwankyu\n\nReported by Ronald van Luijk:\n\nbecause the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:\n\n```\nA.<x,y,z>=AffineSpace(QQ,3)\nC=Curve([x-y,x-z])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7954\n\n",
     "created_at": "2010-01-16T18:15:19Z",
     "labels": [
         "component: algebraic geometry",
@@ -24,12 +24,10 @@ Reported by Ronald van Luijk:
 
 because the Curve constructor automatically interprets a homogeneous polynomial in 3 variables as a projective curve, the following doesn't work:
 
-
 ```
 A.<x,y,z>=AffineSpace(QQ,3)
 C=Curve([x-y,x-z])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7954
 
@@ -116,7 +114,7 @@ the previous patch was part 1.  apply this after that one.
 archive/issue_comments_069289.json:
 ```json
 {
-    "body": "Hi,\n\nI made some important improvements to the patch while refereeing it.  However, it is clear after looking at this code for a bit that there is a *MAJOR* design flaw (which Willem pointed out to me in person).  The flaw is this in plane_curve/affine_curve.py:\n\n```\nclass AffineSpaceCurve_generic(Curve_generic, AlgebraicScheme_subscheme_affine):\n    def _repr_type(self):\n        return \"Affine Space\"\n```\n\nHowever, Curve_generic is very much a *plane* curve:\n\n```\nclass Curve_generic(AlgebraicScheme_subscheme):\n...\n    def defining_polynomial(self):\n        return self.defining_polynomials()[0]\n```\n\n\nThus the *isa* relationship that *must* be satisfied by derivation of objects is broken.\n\nThe space curve code must be completely moved out of this directory to the appropriate place.",
+    "body": "Hi,\n\nI made some important improvements to the patch while refereeing it.  However, it is clear after looking at this code for a bit that there is a *MAJOR* design flaw (which Willem pointed out to me in person).  The flaw is this in plane_curve/affine_curve.py:\n\n```\nclass AffineSpaceCurve_generic(Curve_generic, AlgebraicScheme_subscheme_affine):\n    def _repr_type(self):\n        return \"Affine Space\"\n```\nHowever, Curve_generic is very much a *plane* curve:\n\n```\nclass Curve_generic(AlgebraicScheme_subscheme):\n...\n    def defining_polynomial(self):\n        return self.defining_polynomials()[0]\n```\n\nThus the *isa* relationship that *must* be satisfied by derivation of objects is broken.\n\nThe space curve code must be completely moved out of this directory to the appropriate place.",
     "created_at": "2010-01-17T09:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
@@ -134,7 +132,6 @@ class AffineSpaceCurve_generic(Curve_generic, AlgebraicScheme_subscheme_affine):
     def _repr_type(self):
         return "Affine Space"
 ```
-
 However, Curve_generic is very much a *plane* curve:
 
 ```
@@ -143,7 +140,6 @@ class Curve_generic(AlgebraicScheme_subscheme):
     def defining_polynomial(self):
         return self.defining_polynomials()[0]
 ```
-
 
 Thus the *isa* relationship that *must* be satisfied by derivation of objects is broken.
 
@@ -345,7 +341,7 @@ archive/issue_events_019040.json:
 archive/issue_comments_069292.json:
 ```json
 {
-    "body": "The issue seems to have been solved now by adding `A`mbient space argument to the `Curve` constructor.\n\n\n```\nsage: A.<x,y,z>=AffineSpace(QQ,3)\nsage: C = Curve([x-y,y-z],A)\nsage: C\nAffine Curve over Rational Field defined by x - y, y - z\n```\n",
+    "body": "The issue seems to have been solved now by adding `A`mbient space argument to the `Curve` constructor.\n\n```\nsage: A.<x,y,z>=AffineSpace(QQ,3)\nsage: C = Curve([x-y,y-z],A)\nsage: C\nAffine Curve over Rational Field defined by x - y, y - z\n```",
     "created_at": "2020-07-06T09:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7954",
     "type": "issue_comment",
@@ -356,14 +352,12 @@ archive/issue_comments_069292.json:
 
 The issue seems to have been solved now by adding `A`mbient space argument to the `Curve` constructor.
 
-
 ```
 sage: A.<x,y,z>=AffineSpace(QQ,3)
 sage: C = Curve([x-y,y-z],A)
 sage: C
 Affine Curve over Rational Field defined by x - y, y - z
 ```
-
 
 
 

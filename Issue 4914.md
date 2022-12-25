@@ -48,7 +48,7 @@ Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/tra
 archive/issue_comments_037217.json:
 ```json
 {
-    "body": "(1) This does not implement the docstring changes in\nhttp://trac.sagemath.org/sage_trac/ticket/3749\n\n(2) The only conversion problem is see is \n\n* in abelian_group:\n\n\n```\n \t129\t- [C2] ----, A course in computational algebraic number theory, \n \t130\t  Springer, 1996. [R] J. Rotman, An introduction to the theory of \n \t131\t  groups, 4th ed, Springer, 1995. \n \t132\t \n```\n\nshould be\n\n\n```\n \t129\t- [C2] ----, A course in computational algebraic number theory, \n \t130\t  Springer, 1996. \n        131       [R] J. Rotman, An introduction to the theory of \n \t132\t  groups, 4th ed, Springer, 1995. \n \t133\n```\n\n\t \n(3) What is the purpose of linear.py?? (Open a separate trac ticket?)",
+    "body": "(1) This does not implement the docstring changes in\nhttp://trac.sagemath.org/sage_trac/ticket/3749\n\n(2) The only conversion problem is see is \n\n* in abelian_group:\n\n```\n \t129\t- [C2] ----, A course in computational algebraic number theory, \n \t130\t  Springer, 1996. [R] J. Rotman, An introduction to the theory of \n \t131\t  groups, 4th ed, Springer, 1995. \n \t132\t \n```\nshould be\n\n```\n \t129\t- [C2] ----, A course in computational algebraic number theory, \n \t130\t  Springer, 1996. \n        131       [R] J. Rotman, An introduction to the theory of \n \t132\t  groups, 4th ed, Springer, 1995. \n \t133\n```\n\t \n(3) What is the purpose of linear.py?? (Open a separate trac ticket?)",
     "created_at": "2009-01-02T11:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -64,16 +64,13 @@ http://trac.sagemath.org/sage_trac/ticket/3749
 
 * in abelian_group:
 
-
 ```
  	129	- [C2] ----, A course in computational algebraic number theory, 
  	130	  Springer, 1996. [R] J. Rotman, An introduction to the theory of 
  	131	  groups, 4th ed, Springer, 1995. 
  	132	 
 ```
-
 should be
-
 
 ```
  	129	- [C2] ----, A course in computational algebraic number theory, 
@@ -82,7 +79,6 @@ should be
  	132	  groups, 4th ed, Springer, 1995. 
  	133
 ```
-
 	 
 (3) What is the purpose of linear.py?? (Open a separate trac ticket?)
 
@@ -133,7 +129,7 @@ Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/t
 archive/issue_comments_037220.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> Regarding (1), those changes haven't been merged into Sage.\n\nYes, anything not in Sage will likely need to be rebased. The fast that the ReST conversion is coming has been known for *many weeks* and was mentioned numerous times on sage-devel.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 mhansen]:\n> Regarding (1), those changes haven't been merged into Sage.\n\n\nYes, anything not in Sage will likely need to be rebased. The fast that the ReST conversion is coming has been known for *many weeks* and was mentioned numerous times on sage-devel.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T20:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -144,6 +140,7 @@ archive/issue_comments_037220.json:
 
 Replying to [comment:3 mhansen]:
 > Regarding (1), those changes haven't been merged into Sage.
+
 
 Yes, anything not in Sage will likely need to be rebased. The fast that the ReST conversion is coming has been known for *many weeks* and was mentioned numerous times on sage-devel.
 
@@ -176,7 +173,7 @@ That being said, I'll make a signup list for people who would like new files con
 archive/issue_comments_037222.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> That being said, I'll make a signup list for people who would like new files converted over / patches to be rebased to help ease the transition.\n\nAbsolutely, but given the wide publicity this received no one can reading sage-devel can claim to be surprised by this. And this shows exactly why people need to be behind their patches to get them reviewed so that they don't bitrot.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 mhansen]:\n> That being said, I'll make a signup list for people who would like new files converted over / patches to be rebased to help ease the transition.\n\n\nAbsolutely, but given the wide publicity this received no one can reading sage-devel can claim to be surprised by this. And this shows exactly why people need to be behind their patches to get them reviewed so that they don't bitrot.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T20:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
@@ -187,6 +184,7 @@ archive/issue_comments_037222.json:
 
 Replying to [comment:5 mhansen]:
 > That being said, I'll make a signup list for people who would like new files converted over / patches to be rebased to help ease the transition.
+
 
 Absolutely, but given the wide publicity this received no one can reading sage-devel can claim to be surprised by this. And this shows exactly why people need to be behind their patches to get them reviewed so that they don't bitrot.
 

@@ -102,7 +102,7 @@ I'll try to work through the details of the `get_min_max_data` and test thorough
 archive/issue_comments_085992.json:
 ```json
 {
-    "body": "Thank you for this careful review\n\n> * Class def examples for reference guide\n\nDone, if you mean examples in the docstring of the class Ellipse\n\n> * 'circle' still shows up a few times\n\nNo more (I hope)\n\n> * plot3d should open ticket or test `NotImplementedError`\n\nI will. But as I really do not like the one it is implemented for circle for many different reasons I don't know how general should be the corresponding ticket...\n\n> * I like that options are given explicitly in arc(), as well as test of `NotImplementedError`\n\nNow there is. And I add a link from the sage.plot.plot\n\n> I'll try to work through the details of the `get_min_max_data` and test thoroughly on this and #9076 as soon as these things are addressed, because in general they're both good wraps and add much-needed functionality.\n\nThe get_min_max_data for ellipse is just obtained by computing corresponding critical points. This is not the good way for arc but I will make an effort for it (as it is not too much complicate).",
+    "body": "Thank you for this careful review\n\n> * Class def examples for reference guide\n\n\nDone, if you mean examples in the docstring of the class Ellipse\n\n> * 'circle' still shows up a few times\n\n\nNo more (I hope)\n\n> * plot3d should open ticket or test `NotImplementedError`\n\n\nI will. But as I really do not like the one it is implemented for circle for many different reasons I don't know how general should be the corresponding ticket...\n\n> * I like that options are given explicitly in arc(), as well as test of `NotImplementedError`\n\n\nNow there is. And I add a link from the sage.plot.plot\n\n> I'll try to work through the details of the `get_min_max_data` and test thoroughly on this and #9076 as soon as these things are addressed, because in general they're both good wraps and add much-needed functionality.\n\n\nThe get_min_max_data for ellipse is just obtained by computing corresponding critical points. This is not the good way for arc but I will make an effort for it (as it is not too much complicate).",
     "created_at": "2010-06-14T16:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -115,21 +115,26 @@ Thank you for this careful review
 
 > * Class def examples for reference guide
 
+
 Done, if you mean examples in the docstring of the class Ellipse
 
 > * 'circle' still shows up a few times
+
 
 No more (I hope)
 
 > * plot3d should open ticket or test `NotImplementedError`
 
+
 I will. But as I really do not like the one it is implemented for circle for many different reasons I don't know how general should be the corresponding ticket...
 
 > * I like that options are given explicitly in arc(), as well as test of `NotImplementedError`
 
+
 Now there is. And I add a link from the sage.plot.plot
 
 > I'll try to work through the details of the `get_min_max_data` and test thoroughly on this and #9076 as soon as these things are addressed, because in general they're both good wraps and add much-needed functionality.
+
 
 The get_min_max_data for ellipse is just obtained by computing corresponding critical points. This is not the good way for arc but I will make an effort for it (as it is not too much complicate).
 
@@ -457,7 +462,7 @@ Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commi
 archive/issue_comments_086010.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.\nThe following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.",
+    "body": "Replying to [comment:13 mpatel]:\n> Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.\n\nThe following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.",
     "created_at": "2010-08-16T12:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -468,6 +473,7 @@ archive/issue_comments_086010.json:
 
 Replying to [comment:13 mpatel]:
 > Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.
+
 The following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.
 
 
@@ -549,7 +555,7 @@ Attachment [trac_9203-ellipse.2.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_086015.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> Replying to [comment:13 mpatel]:\n> > Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.\n> The following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.\n\nThanks for updating the patch.\n\nSince the 4.5.3 series is now in feature freeze --- it's just open to blocker problems such as build errors, doctest fixes, etc. --- and we'll merge the PARI upgrade into 4.6.alpha0, it's very likely that merging this ticket and #9076 will have to wait until 4.6.alpha1, at least.",
+    "body": "Replying to [comment:14 kcrisman]:\n> Replying to [comment:13 mpatel]:\n> > Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.\n\n> The following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.\n\nThanks for updating the patch.\n\nSince the 4.5.3 series is now in feature freeze --- it's just open to blocker problems such as build errors, doctest fixes, etc. --- and we'll merge the PARI upgrade into 4.6.alpha0, it's very likely that merging this ticket and #9076 will have to wait until 4.6.alpha1, at least.",
     "created_at": "2010-08-16T21:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9203",
     "type": "issue_comment",
@@ -561,6 +567,7 @@ archive/issue_comments_086015.json:
 Replying to [comment:14 kcrisman]:
 > Replying to [comment:13 mpatel]:
 > > Please update [attachment:trac_9203-ellipse.patch] with a more descriptive commit string.
+
 > The following patch is simply a hand-edited version to include a better commit message - it was not actually committed.  If that doesn't work/apply, we'll have to wait for the author to do this - but it would be really great to get this in!  Release manager can revert to positive review if this is satisfying.
 
 Thanks for updating the patch.

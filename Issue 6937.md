@@ -3,7 +3,7 @@
 archive/issues_006937.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @craigcitro\n\nWe expect the following example to take about 10 seconds:\n\n\n```\nsage: @cached_function\nsage: def foo(x = 5):\n...       print \"computing foo(%s)\"%x\n...       sleep(10)\n...       return 0\nsage: w = walltime()\nsage: foo()\ncomputing foo(5)\nsage: foo(5)\ncomputing foo(5)\nsage: foo(x=5)\ncomputing foo(5)\nsage: print \"that took %s seconds!\"%walltime(w)\nthat took 29.9967029095 seconds!\n```\n\n\n... but that obviously isn't the case.  fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6937\n\n",
+    "body": "Assignee: boothby\n\nCC:  @craigcitro\n\nWe expect the following example to take about 10 seconds:\n\n```\nsage: @cached_function\nsage: def foo(x = 5):\n...       print \"computing foo(%s)\"%x\n...       sleep(10)\n...       return 0\nsage: w = walltime()\nsage: foo()\ncomputing foo(5)\nsage: foo(5)\ncomputing foo(5)\nsage: foo(x=5)\ncomputing foo(5)\nsage: print \"that took %s seconds!\"%walltime(w)\nthat took 29.9967029095 seconds!\n```\n\n... but that obviously isn't the case.  fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6937\n\n",
     "created_at": "2009-09-15T20:06:23Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ CC:  @craigcitro
 
 We expect the following example to take about 10 seconds:
 
-
 ```
 sage: @cached_function
 sage: def foo(x = 5):
@@ -41,7 +40,6 @@ sage: print "that took %s seconds!"%walltime(w)
 that took 29.9967029095 seconds!
 ```
 
-
 ... but that obviously isn't the case.  fix it!
 
 Issue created by migration from https://trac.sagemath.org/ticket/6937
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6937
 archive/issue_comments_057234.json:
 ```json
 {
-    "body": "Here's a problem:\n\n\n```\nsage: class Foo:\n    def bar(self, a, b, c=0, d=None):\n        return a\nsage: A = Foo()\nsage: A.bar(1,2,3,4)\n1\nsage: from sage.misc.function_mangling import ArgumentFixer\nsage: AA = ArgumentFixer(A.bar)\nsage: AA.fix_to_named(1,2,3,4)\n((), (('self', 1), ('a', 2), ('b', 3), ('c', 4), ('d', None)))\n\n```\n\n\nHere, self isn't 1. a should be 1.",
+    "body": "Here's a problem:\n\n```\nsage: class Foo:\n    def bar(self, a, b, c=0, d=None):\n        return a\nsage: A = Foo()\nsage: A.bar(1,2,3,4)\n1\nsage: from sage.misc.function_mangling import ArgumentFixer\nsage: AA = ArgumentFixer(A.bar)\nsage: AA.fix_to_named(1,2,3,4)\n((), (('self', 1), ('a', 2), ('b', 3), ('c', 4), ('d', None)))\n\n```\n\nHere, self isn't 1. a should be 1.",
     "created_at": "2009-09-19T20:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ archive/issue_comments_057234.json:
 ```
 
 Here's a problem:
-
 
 ```
 sage: class Foo:
@@ -80,7 +77,6 @@ sage: AA.fix_to_named(1,2,3,4)
 ((), (('self', 1), ('a', 2), ('b', 3), ('c', 4), ('d', None)))
 
 ```
-
 
 Here, self isn't 1. a should be 1.
 

@@ -3,7 +3,7 @@
 archive/issues_000655.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
+    "body": "Assignee: @williamstein\n\nApparently, LinBox can compute echelon forms for sparse matrices over finite fields. And it seems to be faster than what we have now:\n\nSAGE:\n\n```\nsage: A = random_matrix(GF(127),10000,10000,density=0.0002,sparse=True)\nsage: time A.echelonize()\nCPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s\n```\n\nLinBox:\n\n```\nmatrix size :10000x10000\ndensity = 0.0002\nsize before = 19981\nGaussian elimination (no reordering)...done (9.08057 s)\nDONE\nsize after = 0 # Bug\n```\n\nI was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.\n\nAlso, it claims to support GF(q) which is very very slow in SAGE right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/655\n\n",
     "created_at": "2007-09-14T09:22:40Z",
     "labels": [
         "component: linear algebra"
@@ -27,7 +27,6 @@ sage: time A.echelonize()
 CPU times: user 99.64 s, sys: 0.22 s, total: 99.85 s
 ```
 
-
 LinBox:
 
 ```
@@ -38,7 +37,6 @@ Gaussian elimination (no reordering)...done (9.08057 s)
 DONE
 size after = 0 # Bug
 ```
-
 
 I was told that `SparseMatrixBase::NoReordering` works but `InPlaceLinearPivoting` crashes.
 

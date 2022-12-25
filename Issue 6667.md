@@ -3,7 +3,7 @@
 archive/issues_006667.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\n\nThis should be [16, 9, 9, 3].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: newton polygon\n\nThis is as simple as I can make it at the moment:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: K = Qp(2, prec=5)\nsage: P.<x> = K[]\nsage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)\nsage: f.newton_polygon()\n[(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]\n```\n| Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:\n\n```\nsage: f.newton_slopes()\n[16, 8, 10, 3]\n```\n\nThis should be [16, 9, 9, 3].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6667\n\n",
     "created_at": "2009-08-03T08:00:58Z",
     "labels": [
         "component: padics",
@@ -22,7 +22,6 @@ Keywords: newton polygon
 
 This is as simple as I can make it at the moment:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -37,17 +36,14 @@ sage: f = P(x^4 + 2^3*x^3 + 2^13*x^2 + 2^21*x + 2^37)
 sage: f.newton_polygon()
 [(0, 37), (1, 21), (2, 13), (3, 3), (4, 0)]
 ```
-
 | Sage Version 4.1.1.rc0, Release Date: 2009-07-29                   |
 | Type notebook() for the GUI, and license() for information.        |
 This is wrong, as it's not convex (the point (2,13) should not be there).  Indeed, note that the sequence of Newton slopes is not non-increasing:
-
 
 ```
 sage: f.newton_slopes()
 [16, 8, 10, 3]
 ```
-
 
 This should be [16, 9, 9, 3].
 
@@ -176,7 +172,7 @@ bot is happy, is there somebody out there for a review ?
 archive/issue_comments_054637.json:
 ```json
 {
-    "body": "Here is a patch taking in account precision issues (see discussion in ticket #14828).\n\n-----\n\nFor the bot: apply only [attachment:trac_6667_caruso.patch]",
+    "body": "Here is a patch taking in account precision issues (see discussion in ticket #14828).\n\n---\n\nFor the bot: apply only [attachment:trac_6667_caruso.patch]",
     "created_at": "2013-08-27T08:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -187,7 +183,7 @@ archive/issue_comments_054637.json:
 
 Here is a patch taking in account precision issues (see discussion in ticket #14828).
 
------
+---
 
 For the bot: apply only [attachment:trac_6667_caruso.patch]
 
@@ -258,7 +254,7 @@ in my opinion, it would be good to add examples for the two other raise statemen
 archive/issue_comments_054641.json:
 ```json
 {
-    "body": "Replying to [comment:10 chapoton]:\n> here is a review patch, with only minor changes to your code\n\nThanks!\n\n> in my opinion, it would be good to add examples for the two other raise statements.\n\nActually, I believe that they can't occur but it seemed to be really safer to check them anyway. (I added a comment in the code to mention that.)\n\nI also corrected another bug: the valuation of the coefficients are not the values in the list `self._valadded` but these values augmented by `self._valbase` (as far as I understand David's code). As a consequence, the computation was wrong when the gcd of all coefficients was not 1. I added a doctest to check this issue.\n\nApply only [attachment:trac_6667_caruso_revised.patch] (it includes your review).",
+    "body": "Replying to [comment:10 chapoton]:\n> here is a review patch, with only minor changes to your code\n\n\nThanks!\n\n> in my opinion, it would be good to add examples for the two other raise statements.\n\n\nActually, I believe that they can't occur but it seemed to be really safer to check them anyway. (I added a comment in the code to mention that.)\n\nI also corrected another bug: the valuation of the coefficients are not the values in the list `self._valadded` but these values augmented by `self._valbase` (as far as I understand David's code). As a consequence, the computation was wrong when the gcd of all coefficients was not 1. I added a doctest to check this issue.\n\nApply only [attachment:trac_6667_caruso_revised.patch] (it includes your review).",
     "created_at": "2013-08-27T20:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6667",
     "type": "issue_comment",
@@ -270,9 +266,11 @@ archive/issue_comments_054641.json:
 Replying to [comment:10 chapoton]:
 > here is a review patch, with only minor changes to your code
 
+
 Thanks!
 
 > in my opinion, it would be good to add examples for the two other raise statements.
+
 
 Actually, I believe that they can't occur but it seemed to be really safer to check them anyway. (I added a comment in the code to mention that.)
 

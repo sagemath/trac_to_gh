@@ -3,7 +3,7 @@
 archive/issues_005771.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @rbeezer\n\nRight now on sagenb latex is not installed. So when someone evaluates a %latex cell, i.e. someone == Bill Hart, it just hangs:\n\n```\nmabshoff@sagenb:~$ latex\nThe program 'latex' is currently not installed.  You can install it by typing:\nsudo apt-get install texlive-latex-base\n-bash: latex: command not found\nmabshoff@sagenb:~$ echo $?\n127\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5771\n\n",
     "created_at": "2009-04-13T03:21:10Z",
     "labels": [
         "component: misc",
@@ -30,7 +30,6 @@ sudo apt-get install texlive-latex-base
 mabshoff@sagenb:~$ echo $?
 127
 ```
-
 
 Cheers,
 
@@ -147,7 +146,7 @@ So I'm ready to give a positive review with adjusted doctests - everything else 
 archive/issue_comments_045055.json:
 ```json
 {
-    "body": "Here's a new patch.  This deletes the initial doctests for have_dvipng (etc.); I think the remaining doctests still adequately test whether the functions are working, and should work in any order of execution.  For the doctest failures when latex is missing, I just changed the doctests like this:\n\n```\n-        sage: _run_latex_(file)\n+        sage: _run_latex_(file) # random - depends on whether latex is installed\n```\n \nand similarly for the `png` doctest.  Do you think that's good enough?  It now passes all tests for me if latex and pdflatex are missing.",
+    "body": "Here's a new patch.  This deletes the initial doctests for have_dvipng (etc.); I think the remaining doctests still adequately test whether the functions are working, and should work in any order of execution.  For the doctest failures when latex is missing, I just changed the doctests like this:\n\n```\n-        sage: _run_latex_(file)\n+        sage: _run_latex_(file) # random - depends on whether latex is installed\n``` \nand similarly for the `png` doctest.  Do you think that's good enough?  It now passes all tests for me if latex and pdflatex are missing.",
     "created_at": "2009-06-11T19:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
@@ -161,8 +160,7 @@ Here's a new patch.  This deletes the initial doctests for have_dvipng (etc.); I
 ```
 -        sage: _run_latex_(file)
 +        sage: _run_latex_(file) # random - depends on whether latex is installed
-```
- 
+``` 
 and similarly for the `png` doctest.  Do you think that's good enough?  It now passes all tests for me if latex and pdflatex are missing.
 
 
@@ -190,7 +188,7 @@ Attachment [trac_5771.patch](tarball://root/attachments/some-uuid/ticket5771/tra
 archive/issue_comments_045057.json:
 ```json
 {
-    "body": "I was thinking today about the doctest failure with the global variable being set in the \"wrong\" order.  We've seen that movie before with this file, no?  :-;\n\nLatex patch applies and builds against 4.0.1, now passes randomized testing on sage/misc/latex.py, documentation builds properly.\n\nI think the current doctests are fine.  My thought for the two that failed with missing latex and missing pdflatex were along the lines of the following (but I haven't tested this at all).\n\n\n```\nsage: h, s = have_pdflatex(), png(ZZ[x], \"zz.png\", do_in_background=False)\nsage: (h and s == None) or (not(h) and s.find('Error: PDFLatex') == 0)\nTrue\n```\n\n\nThat'd cover both possibilities, which was not really possible before the two new \"have_xxx\" checks.  So consider that simply a suggestion for the next time you are sprucing up the doctests in this file.\n\nPositive review.\n\nRelease manager: Apply #6089 before the \"trac_5771.patch\" patch.",
+    "body": "I was thinking today about the doctest failure with the global variable being set in the \"wrong\" order.  We've seen that movie before with this file, no?  :-;\n\nLatex patch applies and builds against 4.0.1, now passes randomized testing on sage/misc/latex.py, documentation builds properly.\n\nI think the current doctests are fine.  My thought for the two that failed with missing latex and missing pdflatex were along the lines of the following (but I haven't tested this at all).\n\n```\nsage: h, s = have_pdflatex(), png(ZZ[x], \"zz.png\", do_in_background=False)\nsage: (h and s == None) or (not(h) and s.find('Error: PDFLatex') == 0)\nTrue\n```\n\nThat'd cover both possibilities, which was not really possible before the two new \"have_xxx\" checks.  So consider that simply a suggestion for the next time you are sprucing up the doctests in this file.\n\nPositive review.\n\nRelease manager: Apply #6089 before the \"trac_5771.patch\" patch.",
     "created_at": "2009-06-12T00:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
@@ -205,13 +203,11 @@ Latex patch applies and builds against 4.0.1, now passes randomized testing on s
 
 I think the current doctests are fine.  My thought for the two that failed with missing latex and missing pdflatex were along the lines of the following (but I haven't tested this at all).
 
-
 ```
 sage: h, s = have_pdflatex(), png(ZZ[x], "zz.png", do_in_background=False)
 sage: (h and s == None) or (not(h) and s.find('Error: PDFLatex') == 0)
 True
 ```
-
 
 That'd cover both possibilities, which was not really possible before the two new "have_xxx" checks.  So consider that simply a suggestion for the next time you are sprucing up the doctests in this file.
 
@@ -244,7 +240,7 @@ Oh, I see, that's a nice idea.
 archive/issue_comments_045059.json:
 ```json
 {
-    "body": "Replying to [comment:6 jhpalmieri]:\n> Oh, I see, that's a nice idea.\n\nI tried to do something similar on #5975 (which is coming along) and it didn't work so well.  The error messages come along via a \"print\", so are not part of a string that can be tested easily.\n\nThe minute you lose control over the user's environment it gets quite messy.  Oh well, ....",
+    "body": "Replying to [comment:6 jhpalmieri]:\n> Oh, I see, that's a nice idea.\n\n\nI tried to do something similar on #5975 (which is coming along) and it didn't work so well.  The error messages come along via a \"print\", so are not part of a string that can be tested easily.\n\nThe minute you lose control over the user's environment it gets quite messy.  Oh well, ....",
     "created_at": "2009-06-12T05:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5771",
     "type": "issue_comment",
@@ -255,6 +251,7 @@ archive/issue_comments_045059.json:
 
 Replying to [comment:6 jhpalmieri]:
 > Oh, I see, that's a nice idea.
+
 
 I tried to do something similar on #5975 (which is coming along) and it didn't work so well.  The error messages come along via a "print", so are not part of a string that can be tested easily.
 

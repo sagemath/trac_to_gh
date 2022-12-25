@@ -144,7 +144,7 @@ Attachment [trac_5680-flint_zmod_poly_enhancements.patch](tarball://root/attachm
 archive/issue_comments_044340.json:
 ```json
 {
-    "body": "With Sage 4.2.alpha1, I get the following failures:\n\n\n```\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py # 18 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py # 15 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py # 5 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py # 1 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py # 2 doctests failed\n```\n\n\nAlso, in squarefree_decomposition, there is an \"EXAMPLES:\" that needs to be \"EXAMPLES::\".",
+    "body": "With Sage 4.2.alpha1, I get the following failures:\n\n```\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py # 18 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py # 15 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py # 5 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py # 1 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py # 2 doctests failed\n```\n\nAlso, in squarefree_decomposition, there is an \"EXAMPLES:\" that needs to be \"EXAMPLES::\".",
     "created_at": "2009-10-21T07:37:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5680",
     "type": "issue_comment",
@@ -155,7 +155,6 @@ archive/issue_comments_044340.json:
 
 With Sage 4.2.alpha1, I get the following failures:
 
-
 ```
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py # 18 doctests failed
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py # 15 doctests failed
@@ -163,7 +162,6 @@ With Sage 4.2.alpha1, I get the following failures:
         sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py # 1 doctests failed
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py # 2 doctests failed
 ```
-
 
 Also, in squarefree_decomposition, there is an "EXAMPLES:" that needs to be "EXAMPLES::".
 

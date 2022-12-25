@@ -3,7 +3,7 @@
 archive/issues_008335.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti\n\nImplements coercion within lattices of finite fields lying above the same prime.\n\n\n```\nsage: k = GF(9)\nsage: l = GF(27)\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\n\nThis feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nFinite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.\n\nAlso adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti\n\nImplements coercion within lattices of finite fields lying above the same prime.\n\n```\nsage: k = GF(9)\nsage: l = GF(27)\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\nThis feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nFinite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.\n\nAlso adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
     "created_at": "2010-02-23T17:26:08Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstr
 
 Implements coercion within lattices of finite fields lying above the same prime.
 
-
 ```
 sage: k = GF(9)
 sage: l = GF(27)
@@ -31,7 +30,6 @@ z6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1
 sage: x.parent()
 Finite Field in z6 of size 3^6
 ```
-
 
 This feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.
 
@@ -86,7 +84,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_074157.json:
 ```json
 {
-    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -166,7 +163,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074161.json:
 ```json
 {
-    "body": "This doesn't apply cleanly: the patch `8335_pseudo_conway.patch` seems to conflict with something. FWIW, I am using 4.4.alpha0 with qseries\n\n```\ntrac_8446.patch\ntrac_8446_microfix.patch\ntrac_8722.patch\n7883_ideals.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch\n8335_pseudo_conway.patch\n```\n",
+    "body": "This doesn't apply cleanly: the patch `8335_pseudo_conway.patch` seems to conflict with something. FWIW, I am using 4.4.alpha0 with qseries\n\n```\ntrac_8446.patch\ntrac_8446_microfix.patch\ntrac_8722.patch\n7883_ideals.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch\n8335_pseudo_conway.patch\n```",
     "created_at": "2010-04-20T10:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -189,7 +186,6 @@ trac_8722.patch
 7585_12_1_fixes.patch
 8335_pseudo_conway.patch
 ```
-
 
 
 
@@ -348,7 +344,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074170.json:
 ```json
 {
-    "body": "I still get the following failures on 4.7.1.alpha4 with 8335_pseudo_conway.patch and 8335_finite_field_coerce_vs_47.patch applied:\n\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/rings/finite_rings/constructor.py # 1 doctests failed\n```\n",
+    "body": "I still get the following failures on 4.7.1.alpha4 with 8335_pseudo_conway.patch and 8335_finite_field_coerce_vs_47.patch applied:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/rings/finite_rings/constructor.py # 1 doctests failed\n```",
     "created_at": "2011-07-13T07:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -359,12 +355,10 @@ archive/issue_comments_074170.json:
 
 I still get the following failures on 4.7.1.alpha4 with 8335_pseudo_conway.patch and 8335_finite_field_coerce_vs_47.patch applied:
 
-
 ```
 	sage -t -long devel/sage/sage/matrix/matrix2.pyx # 2 doctests failed
 	sage -t -long devel/sage/sage/rings/finite_rings/constructor.py # 1 doctests failed
 ```
-
 
 
 
@@ -1033,7 +1027,7 @@ Should really be ok now... sorry for the noise.
 archive/issue_comments_074204.json:
 ```json
 {
-    "body": "Got the following failures\n\n\n```\nsage -t -long devel/sage/sage/coding/code_constructions.py # 90 doctests failed\nsage -t -long devel/sage/doc/en/thematic_tutorials/group_theory.rst # 1 doctests failed\nsage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py # 1 doctests failed\nsage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 1 doctests failed\nsage -t -long devel/sage/sage/homology/examples.py # 7 doctests failed\n```\n\n\nThey seem unrelated, though, and disapperead upon second testing. I'll dig the code and try to give a review in the next weeks.",
+    "body": "Got the following failures\n\n```\nsage -t -long devel/sage/sage/coding/code_constructions.py # 90 doctests failed\nsage -t -long devel/sage/doc/en/thematic_tutorials/group_theory.rst # 1 doctests failed\nsage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py # 1 doctests failed\nsage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 1 doctests failed\nsage -t -long devel/sage/sage/homology/examples.py # 7 doctests failed\n```\n\nThey seem unrelated, though, and disapperead upon second testing. I'll dig the code and try to give a review in the next weeks.",
     "created_at": "2013-02-25T18:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1044,7 +1038,6 @@ archive/issue_comments_074204.json:
 
 Got the following failures
 
-
 ```
 sage -t -long devel/sage/sage/coding/code_constructions.py # 90 doctests failed
 sage -t -long devel/sage/doc/en/thematic_tutorials/group_theory.rst # 1 doctests failed
@@ -1052,7 +1045,6 @@ sage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py # 1 doctests
 sage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 1 doctests failed
 sage -t -long devel/sage/sage/homology/examples.py # 7 doctests failed
 ```
-
 
 They seem unrelated, though, and disapperead upon second testing. I'll dig the code and try to give a review in the next weeks.
 
@@ -1104,7 +1096,7 @@ Note that I did not check that the patches still cleanly apply, that may be an i
 archive/issue_comments_074207.json:
 ```json
 {
-    "body": "Replying to [comment:42 jpflori]:\n> Did anyone actually had the time to look at this?\nI started to look at it a while ago\u2026\n\n> So what's left to do is to review the rebasing and changes I introduced.\nThat's good to know. I don't want to make any promises about reviewing this but I would certainly like to see this in sage. In any case, I won't review this in the next three weeks.",
+    "body": "Replying to [comment:42 jpflori]:\n> Did anyone actually had the time to look at this?\n\nI started to look at it a while ago\u2026\n\n> So what's left to do is to review the rebasing and changes I introduced.\n\nThat's good to know. I don't want to make any promises about reviewing this but I would certainly like to see this in sage. In any case, I won't review this in the next three weeks.",
     "created_at": "2013-05-13T16:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1115,9 +1107,11 @@ archive/issue_comments_074207.json:
 
 Replying to [comment:42 jpflori]:
 > Did anyone actually had the time to look at this?
+
 I started to look at it a while ago…
 
 > So what's left to do is to review the rebasing and changes I introduced.
+
 That's good to know. I don't want to make any promises about reviewing this but I would certainly like to see this in sage. In any case, I won't review this in the next three weeks.
 
 
@@ -1239,7 +1233,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_074214.json:
 ```json
 {
-    "body": "Hi,\n\nThe doc in `constructor.py` says\n\n\n```\n - ``modulus`` - blabla\n   - 'default': a Conway polynomial is used if in the database. Otherwise \n     a sparse polynomial is used for binary fields and a \n     random polynomial is used for other characteristics. \n```\n\n\nbut I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default\u00a0? It is utterly slow\u00a0!\n\n\n```\nsage: %time k = GF(next_prime(100000)^2) \nCPU times: user 16.41 s, sys: 0.05 s, total: 16.45 s\nWall time: 16.18 s\nsage: %time l = GF(next_prime(100000)^3) \nCPU times: user 60.19 s, sys: 0.07 s, total: 60.26 s\nWall time: 59.97 s\nsage: %time (k.gen() + l.gen()).parent()\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.07 s\nFinite Field in z6 of size 100003^6\n```\n\n\nCompare this with Magma\n\n\n```\n> time k := GF(NextPrime(100000)^2);                                                                                                  \nTime: 0.000\n> time l := GF(NextPrime(100000)^3); \nTime: 0.000\n\n> time CommonOverfield(l, k);              \nTime: 0.030\n```\n\n\nWouldn't it be better to keep using ``random`` as default, and give error messages suggesting to use ``conway`` when the user tries to add/multiply/whatever two elements in different fields?\n\n\nOn another note, I get the following messages (I suppressed them from the output above for readability).\n\n\n```\nsage: k = GF(next_prime(10000)^11)\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n```\n\n\nAny ideas on these?",
+    "body": "Hi,\n\nThe doc in `constructor.py` says\n\n```\n - ``modulus`` - blabla\n   - 'default': a Conway polynomial is used if in the database. Otherwise \n     a sparse polynomial is used for binary fields and a \n     random polynomial is used for other characteristics. \n```\n\nbut I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default\u00a0? It is utterly slow\u00a0!\n\n```\nsage: %time k = GF(next_prime(100000)^2) \nCPU times: user 16.41 s, sys: 0.05 s, total: 16.45 s\nWall time: 16.18 s\nsage: %time l = GF(next_prime(100000)^3) \nCPU times: user 60.19 s, sys: 0.07 s, total: 60.26 s\nWall time: 59.97 s\nsage: %time (k.gen() + l.gen()).parent()\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.07 s\nFinite Field in z6 of size 100003^6\n```\n\nCompare this with Magma\n\n```\n> time k := GF(NextPrime(100000)^2);                                                                                                  \nTime: 0.000\n> time l := GF(NextPrime(100000)^3); \nTime: 0.000\n\n> time CommonOverfield(l, k);              \nTime: 0.030\n```\n\nWouldn't it be better to keep using ``random`` as default, and give error messages suggesting to use ``conway`` when the user tries to add/multiply/whatever two elements in different fields?\n\n\nOn another note, I get the following messages (I suppressed them from the output above for readability).\n\n```\nsage: k = GF(next_prime(10000)^11)\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n  ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n```\n\nAny ideas on these?",
     "created_at": "2013-06-17T16:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1252,7 +1246,6 @@ Hi,
 
 The doc in `constructor.py` says
 
-
 ```
  - ``modulus`` - blabla
    - 'default': a Conway polynomial is used if in the database. Otherwise 
@@ -1260,9 +1253,7 @@ The doc in `constructor.py` says
      random polynomial is used for other characteristics. 
 ```
 
-
 but I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default ? It is utterly slow !
-
 
 ```
 sage: %time k = GF(next_prime(100000)^2) 
@@ -1277,9 +1268,7 @@ Wall time: 0.07 s
 Finite Field in z6 of size 100003^6
 ```
 
-
 Compare this with Magma
-
 
 ```
 > time k := GF(NextPrime(100000)^2);                                                                                                  
@@ -1291,12 +1280,10 @@ Time: 0.000
 Time: 0.030
 ```
 
-
 Wouldn't it be better to keep using ``random`` as default, and give error messages suggesting to use ``conway`` when the user tries to add/multiply/whatever two elements in different fields?
 
 
 On another note, I get the following messages (I suppressed them from the output above for readability).
-
 
 ```
 sage: k = GF(next_prime(10000)^11)
@@ -1316,7 +1303,6 @@ sage: k = GF(next_prime(10000)^11)
   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
 ```
 
-
 Any ideas on these?
 
 
@@ -1326,7 +1312,7 @@ Any ideas on these?
 archive/issue_comments_074215.json:
 ```json
 {
-    "body": "Replying to [comment:49 defeo]:\n> Hi,\n> \n> The doc in `constructor.py` says\n> \n> {{{\n>  - ``modulus`` - blabla\n>    - 'default': a Conway polynomial is used if in the database. Otherwise \n>      a sparse polynomial is used for binary fields and a \n>      random polynomial is used for other characteristics. \n> }}}\n> \n> but I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default\u00a0? It is utterly slow\u00a0!\nIt is and is expected to be.\n> \n> {{{\n> sage: %time k = GF(next_prime(100000)^2) \n> CPU times: user 16.41 s, sys: 0.05 s, total: 16.45 s\n> Wall time: 16.18 s\n> sage: %time l = GF(next_prime(100000)^3) \n> CPU times: user 60.19 s, sys: 0.07 s, total: 60.26 s\n> Wall time: 59.97 s\n> sage: %time (k.gen() + l.gen()).parent()\n> CPU times: user 0.08 s, sys: 0.00 s, total: 0.09 s\n> Wall time: 0.07 s\n> Finite Field in z6 of size 100003^6\n> }}}\n> \n> Compare this with Magma\n> \n> {{{\n> > time k := GF(NextPrime(100000)^2);                                                                                                  \n> Time: 0.000\n> > time l := GF(NextPrime(100000)^3); \n> Time: 0.000\n> \n> > time CommonOverfield(l, k);              \n> Time: 0.030\n> }}}\n> \nI think the rationale is that Sage did not support finite fields with unnamed generator before this patch.\nSo IIRC you could simply not do the above.\nIf you do something which used to work like\n\n```\nK.<a> = GF(182918291829182918291892819)\n```\n\n(assuming the random typing is some prime power)\nI think it still picks up a random modulus as before (and is fast enough).\n\nI agree it's kind of a bad thing to provide a new (but still natural, especially for Magma's users) way to create finite fields which is horribly slow.\nSo we might want to fix this.\n\nAlso note that this ticket only provides lattices for finite fields created with pseudo-conway polynomials.\nThe goal is not to provide (compatible) embeddings for all finite fields (as Magma is capable of).\n> Wouldn't it be better to keep using ``random`` as default, and give error messages suggesting to use ``conway`` when the user tries to add/multiply/whatever two elements in different fields?\n> \n> \n> On another note, I get the following messages (I suppressed them from the output above for readability).\n> \n> {{{\n> sage: k = GF(next_prime(10000)^11)\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n> }}}\n> \n> Any ideas on these?\nNo idea, I'll check tomorrow.",
+    "body": "Replying to [comment:49 defeo]:\n> Hi,\n> \n> The doc in `constructor.py` says\n> \n> \n> ```\n>  - ``modulus`` - blabla\n>    - 'default': a Conway polynomial is used if in the database. Otherwise \n>      a sparse polynomial is used for binary fields and a \n>      random polynomial is used for other characteristics. \n> ```\n> \n> but I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default\u00a0? It is utterly slow\u00a0!\n\nIt is and is expected to be.\n> \n> \n> ```\n> sage: %time k = GF(next_prime(100000)^2) \n> CPU times: user 16.41 s, sys: 0.05 s, total: 16.45 s\n> Wall time: 16.18 s\n> sage: %time l = GF(next_prime(100000)^3) \n> CPU times: user 60.19 s, sys: 0.07 s, total: 60.26 s\n> Wall time: 59.97 s\n> sage: %time (k.gen() + l.gen()).parent()\n> CPU times: user 0.08 s, sys: 0.00 s, total: 0.09 s\n> Wall time: 0.07 s\n> Finite Field in z6 of size 100003^6\n> ```\n> \n> Compare this with Magma\n> \n> \n> ```\n> > time k := GF(NextPrime(100000)^2);                                                                                                  \n> Time: 0.000\n> > time l := GF(NextPrime(100000)^3); \n> Time: 0.000\n> \n> > time CommonOverfield(l, k);              \n> Time: 0.030\n> ```\n> \n\nI think the rationale is that Sage did not support finite fields with unnamed generator before this patch.\nSo IIRC you could simply not do the above.\nIf you do something which used to work like\n\n```\nK.<a> = GF(182918291829182918291892819)\n```\n(assuming the random typing is some prime power)\nI think it still picks up a random modulus as before (and is fast enough).\n\nI agree it's kind of a bad thing to provide a new (but still natural, especially for Magma's users) way to create finite fields which is horribly slow.\nSo we might want to fix this.\n\nAlso note that this ticket only provides lattices for finite fields created with pseudo-conway polynomials.\nThe goal is not to provide (compatible) embeddings for all finite fields (as Magma is capable of).\n> Wouldn't it be better to keep using ``random`` as default, and give error messages suggesting to use ``conway`` when the user tries to add/multiply/whatever two elements in different fields?\n> \n> \n> On another note, I get the following messages (I suppressed them from the output above for readability).\n> \n> \n> ```\n> sage: k = GF(next_prime(10000)^11)\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n>   ***   Warning: Mod(a,b)^n with n >> b : wasteful.\n> ```\n> \n> Any ideas on these?\n\nNo idea, I'll check tomorrow.",
     "created_at": "2013-06-17T16:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1340,17 +1326,20 @@ Replying to [comment:49 defeo]:
 > 
 > The doc in `constructor.py` says
 > 
-> {{{
+> 
+> ```
 >  - ``modulus`` - blabla
 >    - 'default': a Conway polynomial is used if in the database. Otherwise 
 >      a sparse polynomial is used for binary fields and a 
 >      random polynomial is used for other characteristics. 
-> }}}
+> ```
 > 
 > but I got the impression that the default is to use pseudo-conway. By the way, is it reasonable to use pseudo-conway as default ? It is utterly slow !
+
 It is and is expected to be.
 > 
-> {{{
+> 
+> ```
 > sage: %time k = GF(next_prime(100000)^2) 
 > CPU times: user 16.41 s, sys: 0.05 s, total: 16.45 s
 > Wall time: 16.18 s
@@ -1361,11 +1350,12 @@ It is and is expected to be.
 > CPU times: user 0.08 s, sys: 0.00 s, total: 0.09 s
 > Wall time: 0.07 s
 > Finite Field in z6 of size 100003^6
-> }}}
+> ```
 > 
 > Compare this with Magma
 > 
-> {{{
+> 
+> ```
 > > time k := GF(NextPrime(100000)^2);                                                                                                  
 > Time: 0.000
 > > time l := GF(NextPrime(100000)^3); 
@@ -1373,8 +1363,9 @@ It is and is expected to be.
 > 
 > > time CommonOverfield(l, k);              
 > Time: 0.030
-> }}}
+> ```
 > 
+
 I think the rationale is that Sage did not support finite fields with unnamed generator before this patch.
 So IIRC you could simply not do the above.
 If you do something which used to work like
@@ -1382,7 +1373,6 @@ If you do something which used to work like
 ```
 K.<a> = GF(182918291829182918291892819)
 ```
-
 (assuming the random typing is some prime power)
 I think it still picks up a random modulus as before (and is fast enough).
 
@@ -1396,7 +1386,8 @@ The goal is not to provide (compatible) embeddings for all finite fields (as Mag
 > 
 > On another note, I get the following messages (I suppressed them from the output above for readability).
 > 
-> {{{
+> 
+> ```
 > sage: k = GF(next_prime(10000)^11)
 >   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
 >   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
@@ -1412,9 +1403,10 @@ The goal is not to provide (compatible) embeddings for all finite fields (as Mag
 >   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
 >   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
 >   ***   Warning: Mod(a,b)^n with n >> b : wasteful.
-> }}}
+> ```
 > 
 > Any ideas on these?
+
 No idea, I'll check tomorrow.
 
 
@@ -1460,7 +1452,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_074218.json:
 ```json
 {
-    "body": "There was some actual bug in the code which triggered the computation of the pseudo-Conway polynomials tree twice in the case where the extension degree was prime.\nFirst the way it should, and then using the same arguments as in the case where this degree is not prime which at some point triggered the computation of the power of modular integer with a small modulus and a huge exponent and PARI rants when you do that;\njust try\n\n```\nMod(3,5)._pari_()**28172187218728127182718271821982918291829182918291\n```\n\n\nSo the newly uploaded patch makes it so we only build the tree once as we always should have, and at least in Luca's example it prevents PARI rants to get on the screen.",
+    "body": "There was some actual bug in the code which triggered the computation of the pseudo-Conway polynomials tree twice in the case where the extension degree was prime.\nFirst the way it should, and then using the same arguments as in the case where this degree is not prime which at some point triggered the computation of the power of modular integer with a small modulus and a huge exponent and PARI rants when you do that;\njust try\n\n```\nMod(3,5)._pari_()**28172187218728127182718271821982918291829182918291\n```\n\nSo the newly uploaded patch makes it so we only build the tree once as we always should have, and at least in Luca's example it prevents PARI rants to get on the screen.",
     "created_at": "2013-06-18T14:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1476,7 +1468,6 @@ just try
 ```
 Mod(3,5)._pari_()**28172187218728127182718271821982918291829182918291
 ```
-
 
 So the newly uploaded patch makes it so we only build the tree once as we always should have, and at least in Luca's example it prevents PARI rants to get on the screen.
 
@@ -1505,7 +1496,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074220.json:
 ```json
 {
-    "body": "If you try\n\n```\nGF(next_prime(10000)^12\n```\n\nwhich is a non-prime extension you still get PARI's rants on-screen.\n\nMore worrying is that\n\n```\nGF(next_prime(10000)^14)\n```\n\nfails with an AssertionError.",
+    "body": "If you try\n\n```\nGF(next_prime(10000)^12\n```\nwhich is a non-prime extension you still get PARI's rants on-screen.\n\nMore worrying is that\n\n```\nGF(next_prime(10000)^14)\n```\nfails with an AssertionError.",
     "created_at": "2013-06-18T14:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1519,7 +1510,6 @@ If you try
 ```
 GF(next_prime(10000)^12
 ```
-
 which is a non-prime extension you still get PARI's rants on-screen.
 
 More worrying is that
@@ -1527,7 +1517,6 @@ More worrying is that
 ```
 GF(next_prime(10000)^14)
 ```
-
 fails with an AssertionError.
 
 
@@ -1630,7 +1619,7 @@ So now we're back with the problems from http://trac.sagemath.org/sage_trac/tick
 archive/issue_comments_074226.json:
 ```json
 {
-    "body": "This already fails with:\n\n```\nfind_pseudo_conway_polynomial_tree(5,6,False)\n```\n",
+    "body": "This already fails with:\n\n```\nfind_pseudo_conway_polynomial_tree(5,6,False)\n```",
     "created_at": "2013-06-20T11:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1644,7 +1633,6 @@ This already fails with:
 ```
 find_pseudo_conway_polynomial_tree(5,6,False)
 ```
-
 
 
 
@@ -1671,7 +1659,7 @@ I think the problem is that we don't (or not anymore, there used to be two calls
 archive/issue_comments_074228.json:
 ```json
 {
-    "body": "That was easily fixed.\n\nNote that\n\n```\nfind_pseudo_conway_polynomial_tree(11,14,False)\n```\n\nseems to enter an infinite loop.",
+    "body": "That was easily fixed.\n\nNote that\n\n```\nfind_pseudo_conway_polynomial_tree(11,14,False)\n```\nseems to enter an infinite loop.",
     "created_at": "2013-06-20T12:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1687,7 +1675,6 @@ Note that
 ```
 find_pseudo_conway_polynomial_tree(11,14,False)
 ```
-
 seems to enter an infinite loop.
 
 
@@ -1715,7 +1702,7 @@ Ok, it seems the main issue now is that nth_root is slow for big parameters (or 
 archive/issue_comments_074230.json:
 ```json
 {
-    "body": "The ovrflow happens because I wanted to let nth_root return all roots rather than just one as in David's code.\n\nUsing David's approach let the calculation for\n\n```\nGF(next_prime(10000**14))\n```\n\nfinish (although we still get PARI's warnings but that's \"not really\" a problem).",
+    "body": "The ovrflow happens because I wanted to let nth_root return all roots rather than just one as in David's code.\n\nUsing David's approach let the calculation for\n\n```\nGF(next_prime(10000**14))\n```\nfinish (although we still get PARI's warnings but that's \"not really\" a problem).",
     "created_at": "2013-06-20T13:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1731,7 +1718,6 @@ Using David's approach let the calculation for
 ```
 GF(next_prime(10000**14))
 ```
-
 finish (although we still get PARI's warnings but that's "not really" a problem).
 
 
@@ -1888,7 +1874,7 @@ Added some doctests hopefully showing that embeddings are correct and compatible
 archive/issue_comments_074239.json:
 ```json
 {
-    "body": "Ok, the last tests I added:\n\n```\n\n        sage: old_exists_cp = sage.rings.finite_rings.constructor.exists_conway_polynomial\n        sage: sage.rings.finite_rings.constructor.exists_conway_polynomial = lambda p, n: False\n        sage: k = GF(3**10)\n        sage: l = GF(3**20)\n        sage: k.modulus() == conway_polynomial(3, 10)\n        False\n        sage: l(k.gen()**10) == l(k.gen())**10\n        True\n        sage: del k, l\n        sage: import gc\n        sage: gc.collect();\n        sage: sage.rings.finite_rings.constructor.exists_conway_polynomial = old_exists_cp\n```\n\nintroduced some failures in the test:\n\n```\nsage: GF.other_keys(key, K)\n            [(9, ('a',), x^2 + 2*x + 2, None, '{}', 3, 2, True),\n             (9, ('a',), x^2 + 2*x + 2, 'givaro', '{}', 3, 2, True)]\n```\n\nIndeed, although I explicitely asked to delete k and l and restored a proper exists_... function, the field GF(3**20) stay cached and so the pseudo-Conway, but not Conway, modulus used to build GF(3**2).\n\nThe reason for that is that we performed arithmetic on elements of k and l which triggered creation of an embedding of k into l which prevents the collection of k and l.\nThis is bad and is surely the same problem as in #14711.\n\nSo I just removed the hack forcing the use of pseudo-Conway polynomials.",
+    "body": "Ok, the last tests I added:\n\n```\n\n        sage: old_exists_cp = sage.rings.finite_rings.constructor.exists_conway_polynomial\n        sage: sage.rings.finite_rings.constructor.exists_conway_polynomial = lambda p, n: False\n        sage: k = GF(3**10)\n        sage: l = GF(3**20)\n        sage: k.modulus() == conway_polynomial(3, 10)\n        False\n        sage: l(k.gen()**10) == l(k.gen())**10\n        True\n        sage: del k, l\n        sage: import gc\n        sage: gc.collect();\n        sage: sage.rings.finite_rings.constructor.exists_conway_polynomial = old_exists_cp\n```\nintroduced some failures in the test:\n\n```\nsage: GF.other_keys(key, K)\n            [(9, ('a',), x^2 + 2*x + 2, None, '{}', 3, 2, True),\n             (9, ('a',), x^2 + 2*x + 2, 'givaro', '{}', 3, 2, True)]\n```\nIndeed, although I explicitely asked to delete k and l and restored a proper exists_... function, the field GF(3**20) stay cached and so the pseudo-Conway, but not Conway, modulus used to build GF(3**2).\n\nThe reason for that is that we performed arithmetic on elements of k and l which triggered creation of an embedding of k into l which prevents the collection of k and l.\nThis is bad and is surely the same problem as in #14711.\n\nSo I just removed the hack forcing the use of pseudo-Conway polynomials.",
     "created_at": "2013-06-20T17:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1914,7 +1900,6 @@ Ok, the last tests I added:
         sage: gc.collect();
         sage: sage.rings.finite_rings.constructor.exists_conway_polynomial = old_exists_cp
 ```
-
 introduced some failures in the test:
 
 ```
@@ -1922,7 +1907,6 @@ sage: GF.other_keys(key, K)
             [(9, ('a',), x^2 + 2*x + 2, None, '{}', 3, 2, True),
              (9, ('a',), x^2 + 2*x + 2, 'givaro', '{}', 3, 2, True)]
 ```
-
 Indeed, although I explicitely asked to delete k and l and restored a proper exists_... function, the field GF(3**20) stay cached and so the pseudo-Conway, but not Conway, modulus used to build GF(3**2).
 
 The reason for that is that we performed arithmetic on elements of k and l which triggered creation of an embedding of k into l which prevents the collection of k and l.
@@ -1979,7 +1963,7 @@ With your patch, each implementation gets an increased dependence on string valu
 archive/issue_comments_074242.json:
 ```json
 {
-    "body": "Replying to [comment:71 pbruin]:\n> In relation to #12142, I am currently working on a patch that makes the construction of irreducible polynomials independent of the finite field implementations (prime_modn, givaro, ntl_gf2e, ext_pari and the future pari_ffelt).  Currently every finite field implementation has to do its own parsing of string values of modulus (like 'conway', 'random' etc.).  It would be more elegant to handle all these string values in the generic constructor, and always pass an actual polynomial to the finite field implementation.\n> \n> In the current version of Sage, the only situation in which the implementation needs to know whether the field is defined by a Conway polynomial is when converting elements to GAP.  This means that always passing a polynomial as the modulus is fine, as long as one can check if the polynomial is a Conway polynomial if and when it is needed.  This is easy to do by checking the database.\nBeware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\nIn particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n\nAlso note that the real nice addition of this patch is mainly the compatible embeddings.\nIndeed, for practical purposes, it seems that only the Conway polynomials from the databse will be used.\nConstructing pseudo-Conway polynomials is quite as  slow as contructions genuine Conway polynomials so when you will actually use them, i.e. for quite large parameters because you have to be outside of the Conway database, it will already be quite slow and unpractical.\n\n> \n> With your patch, each implementation gets an increased dependence on string values for the modulus parameter.  I am wondering if this can be avoided by doing all the pseudo-Conway related stuff inside the generic finite field code.\n> \n> [...to be continued...]",
+    "body": "Replying to [comment:71 pbruin]:\n> In relation to #12142, I am currently working on a patch that makes the construction of irreducible polynomials independent of the finite field implementations (prime_modn, givaro, ntl_gf2e, ext_pari and the future pari_ffelt).  Currently every finite field implementation has to do its own parsing of string values of modulus (like 'conway', 'random' etc.).  It would be more elegant to handle all these string values in the generic constructor, and always pass an actual polynomial to the finite field implementation.\n> \n> In the current version of Sage, the only situation in which the implementation needs to know whether the field is defined by a Conway polynomial is when converting elements to GAP.  This means that always passing a polynomial as the modulus is fine, as long as one can check if the polynomial is a Conway polynomial if and when it is needed.  This is easy to do by checking the database.\n\nBeware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\nIn particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n\nAlso note that the real nice addition of this patch is mainly the compatible embeddings.\nIndeed, for practical purposes, it seems that only the Conway polynomials from the databse will be used.\nConstructing pseudo-Conway polynomials is quite as  slow as contructions genuine Conway polynomials so when you will actually use them, i.e. for quite large parameters because you have to be outside of the Conway database, it will already be quite slow and unpractical.\n\n> \n> With your patch, each implementation gets an increased dependence on string values for the modulus parameter.  I am wondering if this can be avoided by doing all the pseudo-Conway related stuff inside the generic finite field code.\n> \n> [...to be continued...]",
     "created_at": "2013-06-26T10:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -1992,6 +1976,7 @@ Replying to [comment:71 pbruin]:
 > In relation to #12142, I am currently working on a patch that makes the construction of irreducible polynomials independent of the finite field implementations (prime_modn, givaro, ntl_gf2e, ext_pari and the future pari_ffelt).  Currently every finite field implementation has to do its own parsing of string values of modulus (like 'conway', 'random' etc.).  It would be more elegant to handle all these string values in the generic constructor, and always pass an actual polynomial to the finite field implementation.
 > 
 > In the current version of Sage, the only situation in which the implementation needs to know whether the field is defined by a Conway polynomial is when converting elements to GAP.  This means that always passing a polynomial as the modulus is fine, as long as one can check if the polynomial is a Conway polynomial if and when it is needed.  This is easy to do by checking the database.
+
 Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.
 In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.
 
@@ -2011,7 +1996,7 @@ Constructing pseudo-Conway polynomials is quite as  slow as contructions genuine
 archive/issue_comments_074243.json:
 ```json
 {
-    "body": "Replying to [comment:72 jpflori]:\n> Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\n> In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n\nOK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.\n\n> Also note that the real nice addition of this patch is mainly the compatible embeddings.\n\nI agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.\n\nIn particular, I am not sure if it is wise to say in the documentation/specification that this compatibility is achieved using (pseudo-)Conway polynomials, since different implementations are imaginable.  I am thinking of the standard models for finite fields by Lenstra and de Smit, which are constructed in a way that does not seem to be related to Conway polynomials.\n\nFrom a conceptual point of view, it is desirable that GF(p<sup>n</sup>) without any arguments should refer to the unique subfield of cardinality p<sup>n</sup> *inside a chosen algebraic closure* of GF(p).  This gives 'compatible embeddings' the very simple meaning of 'inclusions within an algebraic closure'.\n\nSuch an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.\n\nHere is how I would hope a hypothetical future Sage session to look like:\n\n\n```\nsage: p = 5\nsage: Fpbar = GF(p).algebraic_closure()\nsage: Fpbar\nAlgebraic closure of Finite Field of size 5\nsage: Fa = GF(p^2, 'a')\nsage: Fa\nFinite field in a of size 5^2\nsage: is_subfield(Fa, Fpbar)\nFalse\nsage: Fb = GF(p^2)\nSubfield of size 5^2 of Algebraic closure of Finite Field of size 5\nsage: is_subfield(Fb, Fpbar)\nTrue\nsage: type(Fpbar)\n<class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>\n```\n\nWould something like this be easy to achieve once this ticket has been implemented?",
+    "body": "Replying to [comment:72 jpflori]:\n> Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\n> In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n\n\nOK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.\n\n> Also note that the real nice addition of this patch is mainly the compatible embeddings.\n\n\nI agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.\n\nIn particular, I am not sure if it is wise to say in the documentation/specification that this compatibility is achieved using (pseudo-)Conway polynomials, since different implementations are imaginable.  I am thinking of the standard models for finite fields by Lenstra and de Smit, which are constructed in a way that does not seem to be related to Conway polynomials.\n\nFrom a conceptual point of view, it is desirable that GF(p<sup>n</sup>) without any arguments should refer to the unique subfield of cardinality p<sup>n</sup> *inside a chosen algebraic closure* of GF(p).  This gives 'compatible embeddings' the very simple meaning of 'inclusions within an algebraic closure'.\n\nSuch an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.\n\nHere is how I would hope a hypothetical future Sage session to look like:\n\n```\nsage: p = 5\nsage: Fpbar = GF(p).algebraic_closure()\nsage: Fpbar\nAlgebraic closure of Finite Field of size 5\nsage: Fa = GF(p^2, 'a')\nsage: Fa\nFinite field in a of size 5^2\nsage: is_subfield(Fa, Fpbar)\nFalse\nsage: Fb = GF(p^2)\nSubfield of size 5^2 of Algebraic closure of Finite Field of size 5\nsage: is_subfield(Fb, Fpbar)\nTrue\nsage: type(Fpbar)\n<class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>\n```\nWould something like this be easy to achieve once this ticket has been implemented?",
     "created_at": "2013-06-26T12:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2024,9 +2009,11 @@ Replying to [comment:72 jpflori]:
 > Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.
 > In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.
 
+
 OK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.
 
 > Also note that the real nice addition of this patch is mainly the compatible embeddings.
+
 
 I agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.
 
@@ -2037,7 +2024,6 @@ From a conceptual point of view, it is desirable that GF(p<sup>n</sup>) without 
 Such an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.
 
 Here is how I would hope a hypothetical future Sage session to look like:
-
 
 ```
 sage: p = 5
@@ -2056,7 +2042,6 @@ True
 sage: type(Fpbar)
 <class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>
 ```
-
 Would something like this be easy to achieve once this ticket has been implemented?
 
 
@@ -2066,7 +2051,7 @@ Would something like this be easy to achieve once this ticket has been implement
 archive/issue_comments_074244.json:
 ```json
 {
-    "body": "Replying to [comment:73 pbruin]:\n> Replying to [comment:72 jpflori]:\n> > Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\n> > In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n> \n> OK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.\n> \n> > Also note that the real nice addition of this patch is mainly the compatible embeddings.\n> \n> I agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.\nAgreed.\nBut it just happened I stumled upon this ticket which already looked usable (and was two years old) and thought \"oh, let's already get this in; later on we can design better constructions of compatible embeddings and get something more general and fast\".\nSo I decided to postpone the design of a cool and fast system in #8751 and only deal with \"lattices using (pseudo) Conway polynomials\" here.\nIt's better to have something than nothing.\n> \n> In particular, I am not sure if it is wise to say in the documentation/specification that this compatibility is achieved using (pseudo-)Conway polynomials, since different implementations are imaginable.  I am thinking of the standard models for finite fields by Lenstra and de Smit, which are constructed in a way that does not seem to be related to Conway polynomials.\n> \nI completely agree that using Conway polynomials is a no go as soon as you quit fields of small cardinalities.\nI've met Eric Rains who participated in the Magma implementation (or at least the algos behind it) and he was nice enough to share with me a draft describing the algos used.\n\nDe Feo and Schost and others are also producing nice paper on how to build p- or l-adic towers of finite fields.\nWhat is very nice is that they avoid linear algebra (what Magma may not completely do).\n> From a conceptual point of view, it is desirable that GF(p<sup>n</sup>) without any arguments should refer to the unique subfield of cardinality p<sup>n</sup> *inside a chosen algebraic closure* of GF(p).  This gives 'compatible embeddings' the very simple meaning of 'inclusions within an algebraic closure'.\n> \n> Such an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.\n> \nI agree, so it makes sense to have a pseudo Conway implementation and other ones later.\n> Here is how I would hope a hypothetical future Sage session to look like:\n> \n> {{{\n> sage: p = 5\n> sage: Fpbar = GF(p).algebraic_closure()\n> sage: Fpbar\n> Algebraic closure of Finite Field of size 5\n> sage: Fa = GF(p^2, 'a')\n> sage: Fa\n> Finite field in a of size 5^2\n> sage: is_subfield(Fa, Fpbar)\n> False\n> sage: Fb = GF(p^2)\n> Subfield of size 5^2 of Algebraic closure of Finite Field of size 5\n> sage: is_subfield(Fb, Fpbar)\n> True\n> sage: type(Fpbar)\n> <class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>\n> }}}\n> Would something like this be easy to achieve once this ticket has been implemented?",
+    "body": "Replying to [comment:73 pbruin]:\n> Replying to [comment:72 jpflori]:\n> > Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.\n> > In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.\n\n> \n> OK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.\n> \n> > Also note that the real nice addition of this patch is mainly the compatible embeddings.\n\n> \n> I agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.\n\nAgreed.\nBut it just happened I stumled upon this ticket which already looked usable (and was two years old) and thought \"oh, let's already get this in; later on we can design better constructions of compatible embeddings and get something more general and fast\".\nSo I decided to postpone the design of a cool and fast system in #8751 and only deal with \"lattices using (pseudo) Conway polynomials\" here.\nIt's better to have something than nothing.\n> \n> In particular, I am not sure if it is wise to say in the documentation/specification that this compatibility is achieved using (pseudo-)Conway polynomials, since different implementations are imaginable.  I am thinking of the standard models for finite fields by Lenstra and de Smit, which are constructed in a way that does not seem to be related to Conway polynomials.\n> \n\nI completely agree that using Conway polynomials is a no go as soon as you quit fields of small cardinalities.\nI've met Eric Rains who participated in the Magma implementation (or at least the algos behind it) and he was nice enough to share with me a draft describing the algos used.\n\nDe Feo and Schost and others are also producing nice paper on how to build p- or l-adic towers of finite fields.\nWhat is very nice is that they avoid linear algebra (what Magma may not completely do).\n> From a conceptual point of view, it is desirable that GF(p<sup>n</sup>) without any arguments should refer to the unique subfield of cardinality p<sup>n</sup> *inside a chosen algebraic closure* of GF(p).  This gives 'compatible embeddings' the very simple meaning of 'inclusions within an algebraic closure'.\n> \n> Such an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.\n> \n\nI agree, so it makes sense to have a pseudo Conway implementation and other ones later.\n> Here is how I would hope a hypothetical future Sage session to look like:\n> \n> \n> ```\n> sage: p = 5\n> sage: Fpbar = GF(p).algebraic_closure()\n> sage: Fpbar\n> Algebraic closure of Finite Field of size 5\n> sage: Fa = GF(p^2, 'a')\n> sage: Fa\n> Finite field in a of size 5^2\n> sage: is_subfield(Fa, Fpbar)\n> False\n> sage: Fb = GF(p^2)\n> Subfield of size 5^2 of Algebraic closure of Finite Field of size 5\n> sage: is_subfield(Fb, Fpbar)\n> True\n> sage: type(Fpbar)\n> <class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>\n> ```\n> Would something like this be easy to achieve once this ticket has been implemented?",
     "created_at": "2013-06-26T12:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2079,12 +2064,15 @@ Replying to [comment:73 pbruin]:
 > Replying to [comment:72 jpflori]:
 > > Beware that the last patch which contains my modification to the two original patches by David changes quite a lot of thing.
 > > In particular, I think that with it modulus contains the real modulus as well and I use additional attributes to check for pseudo-Conway construction.
+
 > 
 > OK, I'll try to find out if and how my ideas about making the choice of polynomial independently of the finite field implementation can be harmonised with your patch.  At first sight there does not seem to be a huge clash.  I am mostly worried about the use of strings like 'conwayz' as a modulus, which really seems to be overloading this parameter too much.
 > 
 > > Also note that the real nice addition of this patch is mainly the compatible embeddings.
+
 > 
 > I agree that this is a very desirable thing to have, and it is also nice to be able to simply type ``F = GF(p<sup>n</sup>)`` without having to care about variable names and embeddings.  I do think it is good to think carefully about how exactly to accomplish this.
+
 Agreed.
 But it just happened I stumled upon this ticket which already looked usable (and was two years old) and thought "oh, let's already get this in; later on we can design better constructions of compatible embeddings and get something more general and fast".
 So I decided to postpone the design of a cool and fast system in #8751 and only deal with "lattices using (pseudo) Conway polynomials" here.
@@ -2092,6 +2080,7 @@ It's better to have something than nothing.
 > 
 > In particular, I am not sure if it is wise to say in the documentation/specification that this compatibility is achieved using (pseudo-)Conway polynomials, since different implementations are imaginable.  I am thinking of the standard models for finite fields by Lenstra and de Smit, which are constructed in a way that does not seem to be related to Conway polynomials.
 > 
+
 I completely agree that using Conway polynomials is a no go as soon as you quit fields of small cardinalities.
 I've met Eric Rains who participated in the Magma implementation (or at least the algos behind it) and he was nice enough to share with me a draft describing the algos used.
 
@@ -2101,10 +2090,12 @@ What is very nice is that they avoid linear algebra (what Magma may not complete
 > 
 > Such an algebraic closure could be implemented in different ways, for example via (pseudo-)Conway polynomials; algebraic closures of GF(p) resulting from different methods would be non-canonically isomorphic.  There might be a default choice that could change in the future, and the user should be able to specify which algebraic closure should be taken.
 > 
+
 I agree, so it makes sense to have a pseudo Conway implementation and other ones later.
 > Here is how I would hope a hypothetical future Sage session to look like:
 > 
-> {{{
+> 
+> ```
 > sage: p = 5
 > sage: Fpbar = GF(p).algebraic_closure()
 > sage: Fpbar
@@ -2120,7 +2111,7 @@ I agree, so it makes sense to have a pseudo Conway implementation and other ones
 > True
 > sage: type(Fpbar)
 > <class 'sage.rings.AlgebraicClosureFiniteField_pseudo_conway'>
-> }}}
+> ```
 > Would something like this be easy to achieve once this ticket has been implemented?
 
 
@@ -2170,7 +2161,7 @@ See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few follow
 archive/issue_comments_074247.json:
 ```json
 {
-    "body": "Replying to [comment:76 jpflori]:\n> I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).\n\nIn the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.\n\n> I also agree returning the zero ring would be a better thing to do.\n> But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...\n> See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).\n\nThen it seems to me that the generic constructions should be fixed.  Until then, any new code should take care that it does not use these constructions in cases where they fail.",
+    "body": "Replying to [comment:76 jpflori]:\n> I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).\n\n\nIn the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.\n\n> I also agree returning the zero ring would be a better thing to do.\n> But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...\n> See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).\n\n\nThen it seems to me that the generic constructions should be fixed.  Until then, any new code should take care that it does not use these constructions in cases where they fail.",
     "created_at": "2013-06-26T13:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2182,11 +2173,13 @@ archive/issue_comments_074247.json:
 Replying to [comment:76 jpflori]:
 > I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).
 
+
 In the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.
 
 > I also agree returning the zero ring would be a better thing to do.
 > But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...
 > See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).
+
 
 Then it seems to me that the generic constructions should be fixed.  Until then, any new code should take care that it does not use these constructions in cases where they fail.
 
@@ -2197,7 +2190,7 @@ Then it seems to me that the generic constructions should be fixed.  Until then,
 archive/issue_comments_074248.json:
 ```json
 {
-    "body": "Replying to [comment:77 pbruin]:\n> Replying to [comment:76 jpflori]:\n> > I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).\n> \n> In the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.\n> \n> > I also agree returning the zero ring would be a better thing to do.\n> > But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...\n> > See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).\n> \n> Then it seems to me that the generic constructions should be fixed.  Until then, any new code should \ntake care that it does not use these constructions in cases where they fail.\nOf course.\nBut avoiding the coercion model is not that easy.\n\nI'll give it a shot, but I cannot promise to come up with anything working.\nObviously I would have done that earlier if it was really easy.",
+    "body": "Replying to [comment:77 pbruin]:\n> Replying to [comment:76 jpflori]:\n> > I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).\n\n> \n> In the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.\n> \n> > I also agree returning the zero ring would be a better thing to do.\n> > But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...\n> > See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).\n\n> \n> Then it seems to me that the generic constructions should be fixed.  Until then, any new code should \n\ntake care that it does not use these constructions in cases where they fail.\nOf course.\nBut avoiding the coercion model is not that easy.\n\nI'll give it a shot, but I cannot promise to come up with anything working.\nObviously I would have done that earlier if it was really easy.",
     "created_at": "2013-06-26T14:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2209,14 +2202,17 @@ archive/issue_comments_074248.json:
 Replying to [comment:77 pbruin]:
 > Replying to [comment:76 jpflori]:
 > > I think it was the historical Sage behavior until some recent ticket (don't really remember, you should be able to devise which one by looking at the hg log).
+
 > 
 > In the comments it says that the behaviour used to be to return the integer 0 (?!), and that this was corrected in #9138.  Now that the current implementation is correct, it would be very bad to change something fundamental like this just to make new patches work.
 > 
 > > I also agree returning the zero ring would be a better thing to do.
 > > But then it breaks a bunch of generic constructions in Sage such as polynomial rings over {0} and quotients of it...
 > > See http://trac.sagemath.org/sage_trac/ticket/8335#comment:24 and the few following comments (in case you manage to make some sense of my lonely rants).
+
 > 
 > Then it seems to me that the generic constructions should be fixed.  Until then, any new code should 
+
 take care that it does not use these constructions in cases where they fail.
 Of course.
 But avoiding the coercion model is not that easy.
@@ -2275,7 +2271,7 @@ I have some failing tests on top of 5.11.b3 but they seem completely unrelated (
 archive/issue_comments_074251.json:
 ```json
 {
-    "body": "Continuing the discussion from #13214; in the context of my remark\n\n>> there should probably be two categories into which a finite field can be put:\n>> - the category of all finite fields. In this category, between any two objects there are either several morphisms or none at all, but no canonical one.\n>> - the category of finite subfields of a given algebraic closure of Fp. In this category there is at most one morphism beteen any two objects, namely the inclusion qua subfields of the given algebraic closure.\n\nJean-Pierre Flori wrote (referring to the second option)\n\n> #8335 provides such an imlementation, though it not really practical for large fields and there is no proper categorical framework as you suggest.\n> This framework could be implemented in an independent ticket (and should if we want to be able to merge some tickets in a finite amount of time).\n\nCertainly; both this ticket and #13214 are already large enough.  The question is whether (a draft of) a categorical framework (i.e. algebraic closure of **F**<sub>*p*</sub>) should be made first, or whether the new code from this ticket should be inserted into the current framework (which implements the first of the two categories) and be moved to a new framework as soon as we have it.\n\nI would personally prefer the first option to keep things better packaged; this patch seems to make (pseudo-)Conway polynomials pop up in many different places, and moving them all to one place would require another intrusive Trac ticket later.",
+    "body": "Continuing the discussion from #13214; in the context of my remark\n\n>> there should probably be two categories into which a finite field can be put:\n>> - the category of all finite fields. In this category, between any two objects there are either several morphisms or none at all, but no canonical one.\n>> - the category of finite subfields of a given algebraic closure of Fp. In this category there is at most one morphism beteen any two objects, namely the inclusion qua subfields of the given algebraic closure.\n\n\nJean-Pierre Flori wrote (referring to the second option)\n\n> #8335 provides such an imlementation, though it not really practical for large fields and there is no proper categorical framework as you suggest.\n> This framework could be implemented in an independent ticket (and should if we want to be able to merge some tickets in a finite amount of time).\n\n\nCertainly; both this ticket and #13214 are already large enough.  The question is whether (a draft of) a categorical framework (i.e. algebraic closure of **F**<sub>*p*</sub>) should be made first, or whether the new code from this ticket should be inserted into the current framework (which implements the first of the two categories) and be moved to a new framework as soon as we have it.\n\nI would personally prefer the first option to keep things better packaged; this patch seems to make (pseudo-)Conway polynomials pop up in many different places, and moving them all to one place would require another intrusive Trac ticket later.",
     "created_at": "2013-06-26T16:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2290,10 +2286,12 @@ Continuing the discussion from #13214; in the context of my remark
 >> - the category of all finite fields. In this category, between any two objects there are either several morphisms or none at all, but no canonical one.
 >> - the category of finite subfields of a given algebraic closure of Fp. In this category there is at most one morphism beteen any two objects, namely the inclusion qua subfields of the given algebraic closure.
 
+
 Jean-Pierre Flori wrote (referring to the second option)
 
 > #8335 provides such an imlementation, though it not really practical for large fields and there is no proper categorical framework as you suggest.
 > This framework could be implemented in an independent ticket (and should if we want to be able to merge some tickets in a finite amount of time).
+
 
 Certainly; both this ticket and #13214 are already large enough.  The question is whether (a draft of) a categorical framework (i.e. algebraic closure of **F**<sub>*p*</sub>) should be made first, or whether the new code from this ticket should be inserted into the current framework (which implements the first of the two categories) and be moved to a new framework as soon as we have it.
 
@@ -2306,7 +2304,7 @@ I would personally prefer the first option to keep things better packaged; this 
 archive/issue_comments_074252.json:
 ```json
 {
-    "body": "Replying to [comment:81 pbruin]:\n> I would personally prefer the first option to keep things better packaged; this patch seems to make (pseudo-)Conway polynomials pop up in many different places, and moving them all to one place would require another intrusive Trac ticket later.\nAs far as functionalities are concerned, remember that Sage currently does not support \n\n```\nK = GF(p^n)\n```\n\nSo pseudo Conway polynomials never appear where they did not use to.\nIf you issue the command line which is currently supported:\n\n```\nK.<a> = GF(p^n)\n```\n\nyou will get the exact same behavior as before, unless he specifies modulus=\"conway\" and wants an extension of too large cardinality; maybe that should be changed back.\n\nNevertheless I agree that a user coming from Magma where\n\n```\nK := GF(p, n);\n```\n\nworks might be confused...\nThough the user might although expect embeddings of finite fields to work out of the box.\n\nBut as I just realized I guess your concern is about the dissemination of code.\nFrom what I see, apart from code in finite_field_base.py, changes to specific finite field implementations mostly consists in replacing the part about Conway polynomials and tweak it to work with pseudo-Conway ones as well.\nNonetheless it's true that properly moving all of that later will be intrusive.\n\nBut what about plain Conway polynomials? Shouldn't that be moved as well?\nOr do we consider they are standard enough to belong in the FiniteFields() category?\nBut if they do it would be a waste not to use automagically the fact that they provide simple embeddings into each other, wouldn't it? though it would make the separation between the plain finite fields and subfields of a given algebraic closure blurrier.\n\n(As you can guess, I'd prefer to get this merged first especially because I hate seeing functional code bitrotting for years on trac, but I get your point :))",
+    "body": "Replying to [comment:81 pbruin]:\n> I would personally prefer the first option to keep things better packaged; this patch seems to make (pseudo-)Conway polynomials pop up in many different places, and moving them all to one place would require another intrusive Trac ticket later.\n\nAs far as functionalities are concerned, remember that Sage currently does not support \n\n```\nK = GF(p^n)\n```\nSo pseudo Conway polynomials never appear where they did not use to.\nIf you issue the command line which is currently supported:\n\n```\nK.<a> = GF(p^n)\n```\nyou will get the exact same behavior as before, unless he specifies modulus=\"conway\" and wants an extension of too large cardinality; maybe that should be changed back.\n\nNevertheless I agree that a user coming from Magma where\n\n```\nK := GF(p, n);\n```\nworks might be confused...\nThough the user might although expect embeddings of finite fields to work out of the box.\n\nBut as I just realized I guess your concern is about the dissemination of code.\nFrom what I see, apart from code in finite_field_base.py, changes to specific finite field implementations mostly consists in replacing the part about Conway polynomials and tweak it to work with pseudo-Conway ones as well.\nNonetheless it's true that properly moving all of that later will be intrusive.\n\nBut what about plain Conway polynomials? Shouldn't that be moved as well?\nOr do we consider they are standard enough to belong in the FiniteFields() category?\nBut if they do it would be a waste not to use automagically the fact that they provide simple embeddings into each other, wouldn't it? though it would make the separation between the plain finite fields and subfields of a given algebraic closure blurrier.\n\n(As you can guess, I'd prefer to get this merged first especially because I hate seeing functional code bitrotting for years on trac, but I get your point :))",
     "created_at": "2013-06-26T17:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2317,19 +2315,18 @@ archive/issue_comments_074252.json:
 
 Replying to [comment:81 pbruin]:
 > I would personally prefer the first option to keep things better packaged; this patch seems to make (pseudo-)Conway polynomials pop up in many different places, and moving them all to one place would require another intrusive Trac ticket later.
+
 As far as functionalities are concerned, remember that Sage currently does not support 
 
 ```
 K = GF(p^n)
 ```
-
 So pseudo Conway polynomials never appear where they did not use to.
 If you issue the command line which is currently supported:
 
 ```
 K.<a> = GF(p^n)
 ```
-
 you will get the exact same behavior as before, unless he specifies modulus="conway" and wants an extension of too large cardinality; maybe that should be changed back.
 
 Nevertheless I agree that a user coming from Magma where
@@ -2337,7 +2334,6 @@ Nevertheless I agree that a user coming from Magma where
 ```
 K := GF(p, n);
 ```
-
 works might be confused...
 Though the user might although expect embeddings of finite fields to work out of the box.
 
@@ -2358,7 +2354,7 @@ But if they do it would be a waste not to use automagically the fact that they p
 archive/issue_comments_074253.json:
 ```json
 {
-    "body": "Replying to [comment:82 jpflori]:\n\n> As far as functionalities are concerned, remember that Sage currently does not support \n> {{{\n> K = GF(p^n)\n> }}}\n> So pseudo Conway polynomials never appear where they did not use to.\n> If you issue the command line which is currently supported:\n> {{{\n> K.<a> = GF(p^n)\n> }}}\n> you will get the exact same behavior as before, unless he specifies modulus=\"conway\" and wants an extension of too large cardinality; maybe that should be changed back.\n\nDeciding what exactly `GF(p^n)` should mean (if it should mean anything at all) is an important design decision, and it is not at all obvious that Sage should make the same choice as Magma.  Probably it is better not to make this decision in this ticket, which already adds a lot of code.  Besides, letting an important change of behaviour depend whether the user specify a variable name or not sounds like a risky idea.  \n\n> But what about plain Conway polynomials? Shouldn't that be moved as well?\n> Or do we consider they are standard enough to belong in the FiniteFields() category?\n\nThey certainly belong to the general finite fields code, but not in any specific implementation, in my opinion.  In fact, the goal of the (by now 2) patches that I'm about to post is as follows:\n\n- write a method `PolynomialRing_dense_finite_field.irreducible_element` (somewhat surprisingly the class did not exist yet) to generate an irreducible polynomial in that polynomial ring, allowing the user to optionally specify an algorithm (Adleman-Lenstra, Conway, random, lexicographically first, sparse);\n\n- modify the `FiniteField` constructor to call this algorithm if the `modulus` argument is a string or `None`, and always pass an actual polynomial to the implementation class.\n\nFor backward compatibility (unpickling), the existing implementations will continue to accept string values for the parameter `modulus`, but new ones (such as the new PARI interface, see #12142) won't have to.  The idea is that the specific implementations should \"concentrate on doing their job\", and things related to magic values of `modulus` should be in only one place.\n\n> But if they do it would be a waste not to use automagically the fact that they provide simple embeddings into each other, wouldn't it?\n\nAs I see it, that should depend on whether you are in the category of all finite fields or in the category of subfields of an algebraic closure of **F**<sub>*p*</sub>.\n\n> (As you can guess, I'd prefer to get this merged first especially because I hate seeing functional code bitrotting for years on trac, but I get your point :))\n\nOf course I understand that you want to see this finally appear in Sage, and I agree that it is a shame that Sage could have had something like this for years and still doesn't.  I guess it will be easier if this big ticket is split into smaller pieces.  It tries to do many rather different things at once: implement pseudo-Conway polynomials, adapt the construction of finite fields to use these, implement automatic coercion between the resulting fields, give a meaning to `GF(p^n)`, and in the process add some new methods to polynomial elements.  This makes it harder than necessary to understand and to review.",
+    "body": "Replying to [comment:82 jpflori]:\n\n> As far as functionalities are concerned, remember that Sage currently does not support \n> \n> ```\n> K = GF(p^n)\n> ```\n> So pseudo Conway polynomials never appear where they did not use to.\n> If you issue the command line which is currently supported:\n> \n> ```\n> K.<a> = GF(p^n)\n> ```\n> you will get the exact same behavior as before, unless he specifies modulus=\"conway\" and wants an extension of too large cardinality; maybe that should be changed back.\n\n\nDeciding what exactly `GF(p^n)` should mean (if it should mean anything at all) is an important design decision, and it is not at all obvious that Sage should make the same choice as Magma.  Probably it is better not to make this decision in this ticket, which already adds a lot of code.  Besides, letting an important change of behaviour depend whether the user specify a variable name or not sounds like a risky idea.  \n\n> But what about plain Conway polynomials? Shouldn't that be moved as well?\n> Or do we consider they are standard enough to belong in the FiniteFields() category?\n\n\nThey certainly belong to the general finite fields code, but not in any specific implementation, in my opinion.  In fact, the goal of the (by now 2) patches that I'm about to post is as follows:\n\n- write a method `PolynomialRing_dense_finite_field.irreducible_element` (somewhat surprisingly the class did not exist yet) to generate an irreducible polynomial in that polynomial ring, allowing the user to optionally specify an algorithm (Adleman-Lenstra, Conway, random, lexicographically first, sparse);\n\n- modify the `FiniteField` constructor to call this algorithm if the `modulus` argument is a string or `None`, and always pass an actual polynomial to the implementation class.\n\nFor backward compatibility (unpickling), the existing implementations will continue to accept string values for the parameter `modulus`, but new ones (such as the new PARI interface, see #12142) won't have to.  The idea is that the specific implementations should \"concentrate on doing their job\", and things related to magic values of `modulus` should be in only one place.\n\n> But if they do it would be a waste not to use automagically the fact that they provide simple embeddings into each other, wouldn't it?\n\n\nAs I see it, that should depend on whether you are in the category of all finite fields or in the category of subfields of an algebraic closure of **F**<sub>*p*</sub>.\n\n> (As you can guess, I'd prefer to get this merged first especially because I hate seeing functional code bitrotting for years on trac, but I get your point :))\n\n\nOf course I understand that you want to see this finally appear in Sage, and I agree that it is a shame that Sage could have had something like this for years and still doesn't.  I guess it will be easier if this big ticket is split into smaller pieces.  It tries to do many rather different things at once: implement pseudo-Conway polynomials, adapt the construction of finite fields to use these, implement automatic coercion between the resulting fields, give a meaning to `GF(p^n)`, and in the process add some new methods to polynomial elements.  This makes it harder than necessary to understand and to review.",
     "created_at": "2013-06-26T23:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2370,20 +2366,24 @@ archive/issue_comments_074253.json:
 Replying to [comment:82 jpflori]:
 
 > As far as functionalities are concerned, remember that Sage currently does not support 
-> {{{
+> 
+> ```
 > K = GF(p^n)
-> }}}
+> ```
 > So pseudo Conway polynomials never appear where they did not use to.
 > If you issue the command line which is currently supported:
-> {{{
+> 
+> ```
 > K.<a> = GF(p^n)
-> }}}
+> ```
 > you will get the exact same behavior as before, unless he specifies modulus="conway" and wants an extension of too large cardinality; maybe that should be changed back.
+
 
 Deciding what exactly `GF(p^n)` should mean (if it should mean anything at all) is an important design decision, and it is not at all obvious that Sage should make the same choice as Magma.  Probably it is better not to make this decision in this ticket, which already adds a lot of code.  Besides, letting an important change of behaviour depend whether the user specify a variable name or not sounds like a risky idea.  
 
 > But what about plain Conway polynomials? Shouldn't that be moved as well?
 > Or do we consider they are standard enough to belong in the FiniteFields() category?
+
 
 They certainly belong to the general finite fields code, but not in any specific implementation, in my opinion.  In fact, the goal of the (by now 2) patches that I'm about to post is as follows:
 
@@ -2395,9 +2395,11 @@ For backward compatibility (unpickling), the existing implementations will conti
 
 > But if they do it would be a waste not to use automagically the fact that they provide simple embeddings into each other, wouldn't it?
 
+
 As I see it, that should depend on whether you are in the category of all finite fields or in the category of subfields of an algebraic closure of **F**<sub>*p*</sub>.
 
 > (As you can guess, I'd prefer to get this merged first especially because I hate seeing functional code bitrotting for years on trac, but I get your point :))
+
 
 Of course I understand that you want to see this finally appear in Sage, and I agree that it is a shame that Sage could have had something like this for years and still doesn't.  I guess it will be easier if this big ticket is split into smaller pieces.  It tries to do many rather different things at once: implement pseudo-Conway polynomials, adapt the construction of finite fields to use these, implement automatic coercion between the resulting fields, give a meaning to `GF(p^n)`, and in the process add some new methods to polynomial elements.  This makes it harder than necessary to understand and to review.
 
@@ -2434,7 +2436,7 @@ There are many solutions to the compatibly embedded finite fields problem, no on
 archive/issue_comments_074255.json:
 ```json
 {
-    "body": "Replying to [comment:84 defeo]:\n> Replying to [comment:83 pbruin]:\n> \n> This discussion looks like the dear old dichotomy between quick feature integration and long specification design. \n\nNot quite; I am not at all advocating long specification design, and quick integration of new features (which I am all for) is in fact easier if they are smaller and don't intrude in places where they don't have to.\n\n> Having some kind of support for lattices of finite fields has been a long standing request. I agree with pbruin that a better interface between generic finite fields and their actual implementation would be beneficial. But this ticket is ready for review, while pbruin's is not.\n\nThe part that is relevant for this ticket is now ready for review: see #14832 and #14833.\n\n> Would it be that hard to adapt pbruin's or any other interface if this ticket is merged? I'm willing to give positive review to this ticket, if it stands some more testing, and it doesn't mess too much with #12142. \n\nI am actually in favour of quickly solving the main things that this ticket does (implementing pseudo-Conway polynomials and coercion between different finite fields).  I just think it shouldn't add more code to the finite fields implementations (Givaro, PARI etc.), and should not (or at least not yet) fix a meaning for `GF(p^n)`.",
+    "body": "Replying to [comment:84 defeo]:\n> Replying to [comment:83 pbruin]:\n> \n> This discussion looks like the dear old dichotomy between quick feature integration and long specification design. \n\n\nNot quite; I am not at all advocating long specification design, and quick integration of new features (which I am all for) is in fact easier if they are smaller and don't intrude in places where they don't have to.\n\n> Having some kind of support for lattices of finite fields has been a long standing request. I agree with pbruin that a better interface between generic finite fields and their actual implementation would be beneficial. But this ticket is ready for review, while pbruin's is not.\n\n\nThe part that is relevant for this ticket is now ready for review: see #14832 and #14833.\n\n> Would it be that hard to adapt pbruin's or any other interface if this ticket is merged? I'm willing to give positive review to this ticket, if it stands some more testing, and it doesn't mess too much with #12142. \n\n\nI am actually in favour of quickly solving the main things that this ticket does (implementing pseudo-Conway polynomials and coercion between different finite fields).  I just think it shouldn't add more code to the finite fields implementations (Givaro, PARI etc.), and should not (or at least not yet) fix a meaning for `GF(p^n)`.",
     "created_at": "2013-06-27T07:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2448,13 +2450,16 @@ Replying to [comment:84 defeo]:
 > 
 > This discussion looks like the dear old dichotomy between quick feature integration and long specification design. 
 
+
 Not quite; I am not at all advocating long specification design, and quick integration of new features (which I am all for) is in fact easier if they are smaller and don't intrude in places where they don't have to.
 
 > Having some kind of support for lattices of finite fields has been a long standing request. I agree with pbruin that a better interface between generic finite fields and their actual implementation would be beneficial. But this ticket is ready for review, while pbruin's is not.
 
+
 The part that is relevant for this ticket is now ready for review: see #14832 and #14833.
 
 > Would it be that hard to adapt pbruin's or any other interface if this ticket is merged? I'm willing to give positive review to this ticket, if it stands some more testing, and it doesn't mess too much with #12142. 
+
 
 I am actually in favour of quickly solving the main things that this ticket does (implementing pseudo-Conway polynomials and coercion between different finite fields).  I just think it shouldn't add more code to the finite fields implementations (Givaro, PARI etc.), and should not (or at least not yet) fix a meaning for `GF(p^n)`.
 
@@ -2519,7 +2524,7 @@ Changing keywords from "days49" to "days49 sd51".
 archive/issue_comments_074259.json:
 ```json
 {
-    "body": "Replying to [comment:86 jpflori]:\n> Ok, so I'll be the nice guy and try to rebase this ticket on top of your tickets.\nWonderful; these (#12142 and dependencies, maybe also #14888) should now be fairly stable.",
+    "body": "Replying to [comment:86 jpflori]:\n> Ok, so I'll be the nice guy and try to rebase this ticket on top of your tickets.\n\nWonderful; these (#12142 and dependencies, maybe also #14888) should now be fairly stable.",
     "created_at": "2013-07-13T21:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2530,6 +2535,7 @@ archive/issue_comments_074259.json:
 
 Replying to [comment:86 jpflori]:
 > Ok, so I'll be the nice guy and try to rebase this ticket on top of your tickets.
+
 Wonderful; these (#12142 and dependencies, maybe also #14888) should now be fairly stable.
 
 
@@ -2579,7 +2585,7 @@ archive/issue_comments_074261.json:
 archive/issue_comments_074262.json:
 ```json
 {
-    "body": "Replying to [comment:88 jpflori]:\n> I've begun rebasing, cleaning and splitting in a better way the patches here.\n> \n> I have one question: in several finite field constructors based on a given implementation (let's say FiniteField_givaro), you can still pass the \"modulus\" parameter as a string and the routine corresponding to the given type of modulus is called.\n> IMHO this kind of defeats what Peter tried to do in #14832 and #14833 (though it predates these patcehs of course).\n> Any objection to change this behavior and instead more or less call the new irreducible_element function with the appropriate \"algorithm\" parameter?\n\nNo, I have no objection to a more unified way of generating the modulus.",
+    "body": "Replying to [comment:88 jpflori]:\n> I've begun rebasing, cleaning and splitting in a better way the patches here.\n> \n> I have one question: in several finite field constructors based on a given implementation (let's say FiniteField_givaro), you can still pass the \"modulus\" parameter as a string and the routine corresponding to the given type of modulus is called.\n> IMHO this kind of defeats what Peter tried to do in #14832 and #14833 (though it predates these patcehs of course).\n> Any objection to change this behavior and instead more or less call the new irreducible_element function with the appropriate \"algorithm\" parameter?\n\n\nNo, I have no objection to a more unified way of generating the modulus.",
     "created_at": "2013-07-18T22:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2594,6 +2600,7 @@ Replying to [comment:88 jpflori]:
 > I have one question: in several finite field constructors based on a given implementation (let's say FiniteField_givaro), you can still pass the "modulus" parameter as a string and the routine corresponding to the given type of modulus is called.
 > IMHO this kind of defeats what Peter tried to do in #14832 and #14833 (though it predates these patcehs of course).
 > Any objection to change this behavior and instead more or less call the new irreducible_element function with the appropriate "algorithm" parameter?
+
 
 No, I have no objection to a more unified way of generating the modulus.
 
@@ -2743,7 +2750,7 @@ Once #14957 and #14958 are stable enough, the next step will be to update [attac
 archive/issue_comments_074270.json:
 ```json
 {
-    "body": "The patch [attachment:trac_8335_sd51.patch] contains the changes that remain after splitting off #14957 and #14958, and has been rebased on 5.11.beta3 + (dependencies of this ticket).\n\n```\nPatchbot: apply trac_8335_sd51.patch\n```\n",
+    "body": "The patch [attachment:trac_8335_sd51.patch] contains the changes that remain after splitting off #14957 and #14958, and has been rebased on 5.11.beta3 + (dependencies of this ticket).\n\n```\nPatchbot: apply trac_8335_sd51.patch\n```",
     "created_at": "2013-07-24T14:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2757,7 +2764,6 @@ The patch [attachment:trac_8335_sd51.patch] contains the changes that remain aft
 ```
 Patchbot: apply trac_8335_sd51.patch
 ```
-
 
 
 
@@ -2804,7 +2810,7 @@ unified, rebased and cleaned up
 archive/issue_comments_074273.json:
 ```json
 {
-    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by @pjbruin created at 2013-07-29 12:08:49\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\n\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```\n",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by @pjbruin created at 2013-07-29 12:08:49\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```",
     "created_at": "2013-07-29T12:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -2822,7 +2828,6 @@ The syntax for constructing finite fields using Conway polynomials that admit au
 ```
 sage: F.<a> = FiniteField(5^3, conway=True, prefix='z')
 ```
-
 This is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.
 
 Older patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.
@@ -2834,7 +2839,6 @@ For patchbot:
 ```
 apply trac_8335-finite_field_coerce-5.11.b3.patch
 ```
-
 
 
 
@@ -3014,7 +3018,7 @@ Has anyone open a ticket for that?
 archive/issue_comments_074283.json:
 ```json
 {
-    "body": "Replying to [comment:106 jpflori]:\n> We should make some big changes when implementing the AlgebraicClosure thing...\n> Has anyone open a ticket for that?\nNot yet, as far as I have been able to find out; I can do it now.",
+    "body": "Replying to [comment:106 jpflori]:\n> We should make some big changes when implementing the AlgebraicClosure thing...\n> Has anyone open a ticket for that?\n\nNot yet, as far as I have been able to find out; I can do it now.",
     "created_at": "2013-07-31T15:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -3026,6 +3030,7 @@ archive/issue_comments_074283.json:
 Replying to [comment:106 jpflori]:
 > We should make some big changes when implementing the AlgebraicClosure thing...
 > Has anyone open a ticket for that?
+
 Not yet, as far as I have been able to find out; I can do it now.
 
 
@@ -3035,7 +3040,7 @@ Not yet, as far as I have been able to find out; I can do it now.
 archive/issue_comments_074284.json:
 ```json
 {
-    "body": "Replying to [comment:106 jpflori]:\n> In fact, the more I think about it, the less I like the way things are stored in the pseudo-Conway polynomial code.\n\nI dislike it too.  It is problematic to store pseudo-Conway lattices globally in a Sage session (at least until they are garbage-collected) given that they are not uniquely defined.\n\nIt appears that the user could do the following:\n- create a finite field *k*<sub>0</sub> using a primitive polynomial *f*<sub>0</sub>\n- throw away *k*<sub>0</sub>, causing the pseudo-Conway lattice containing *f*<sub>0</sub> to be garbage-collected\n- create a field *k*<sub>1</sub> using exactly the same command as for *k*<sub>0</sub>; this will be isomorphic to *k*<sub>0</sub>, but will in general be defined by a polynomial *f*<sub>1</sub> that is different from *f*<sub>0</sub>\n- end up with a *k*<sub>1</sub> that is incompatible with things that were constructed with the help of *k*<sub>0</sub> (e.g. extensions of *k*<sub>0</sub>), even though both of them were generated using pseudo-Conway polynomials.\n\nI was also worried that storing the pseudo-Conway lattice in the finite field would mean that we would forever have to keep suitable pickling/unpickling code around to deal with this.  Actually, this is not necessary, since the pseudo-Conway lattice can be reconstructed from the defining polynomial.  However, this does not seem to solve the above problem.  Using strong references does not solve it either.  In both cases, the user may pickle *k*<sub>0</sub>, restart Sage, create *k*<sub>1</sub>, and finally unpickle *k*<sub>0</sub>; then again *k*<sub>0</sub> and *k*<sub>1</sub> will be different in general.\n\nAll of this is basically a manifestation of the fact that \"the\" field of *p<sup>n</sup>* elements is only defined up to non-canonical isomorphism.",
+    "body": "Replying to [comment:106 jpflori]:\n> In fact, the more I think about it, the less I like the way things are stored in the pseudo-Conway polynomial code.\n\n\nI dislike it too.  It is problematic to store pseudo-Conway lattices globally in a Sage session (at least until they are garbage-collected) given that they are not uniquely defined.\n\nIt appears that the user could do the following:\n- create a finite field *k*<sub>0</sub> using a primitive polynomial *f*<sub>0</sub>\n- throw away *k*<sub>0</sub>, causing the pseudo-Conway lattice containing *f*<sub>0</sub> to be garbage-collected\n- create a field *k*<sub>1</sub> using exactly the same command as for *k*<sub>0</sub>; this will be isomorphic to *k*<sub>0</sub>, but will in general be defined by a polynomial *f*<sub>1</sub> that is different from *f*<sub>0</sub>\n- end up with a *k*<sub>1</sub> that is incompatible with things that were constructed with the help of *k*<sub>0</sub> (e.g. extensions of *k*<sub>0</sub>), even though both of them were generated using pseudo-Conway polynomials.\n\nI was also worried that storing the pseudo-Conway lattice in the finite field would mean that we would forever have to keep suitable pickling/unpickling code around to deal with this.  Actually, this is not necessary, since the pseudo-Conway lattice can be reconstructed from the defining polynomial.  However, this does not seem to solve the above problem.  Using strong references does not solve it either.  In both cases, the user may pickle *k*<sub>0</sub>, restart Sage, create *k*<sub>1</sub>, and finally unpickle *k*<sub>0</sub>; then again *k*<sub>0</sub> and *k*<sub>1</sub> will be different in general.\n\nAll of this is basically a manifestation of the fact that \"the\" field of *p<sup>n</sup>* elements is only defined up to non-canonical isomorphism.",
     "created_at": "2013-07-31T17:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -3046,6 +3051,7 @@ archive/issue_comments_074284.json:
 
 Replying to [comment:106 jpflori]:
 > In fact, the more I think about it, the less I like the way things are stored in the pseudo-Conway polynomial code.
+
 
 I dislike it too.  It is problematic to store pseudo-Conway lattices globally in a Sage session (at least until they are garbage-collected) given that they are not uniquely defined.
 
@@ -3087,7 +3093,7 @@ Having AlgebraicClosure object will surely greatly simplify this.
 archive/issue_comments_074286.json:
 ```json
 {
-    "body": "Replying to [comment:109 jpflori]:\n> I suggest we store a strong to the (top of the) lattice in the FF for the moment\n\nWe could do that to make garbage collection less likely, but it won't really solve the problem, see comment:108.\n\n> And let's think of a better design for #14990.\n> Having AlgebraicClosure object will surely greatly simplify this.\n\nYes, the more I think about it, the more convinced I am that algebraic closures are the only real solution to the problem of compatible embeddings.\n\nJenny Cooley suggested the following idea, which I think is a good compromise: implement this ticket only for standard (not pseudo-) Conway polynomials.  Hopefully this would suffice for most practical purposes, and since they are uniquely determined, we wouldn't have to come up with half-baked solutions to the caching problem.  In #14990 (which I am working on now), pseudo-Conway polynomials can then finally be put to use, and they will be cached in the algebraic closure, where they really belong.",
+    "body": "Replying to [comment:109 jpflori]:\n> I suggest we store a strong to the (top of the) lattice in the FF for the moment\n\n\nWe could do that to make garbage collection less likely, but it won't really solve the problem, see comment:108.\n\n> And let's think of a better design for #14990.\n> Having AlgebraicClosure object will surely greatly simplify this.\n\n\nYes, the more I think about it, the more convinced I am that algebraic closures are the only real solution to the problem of compatible embeddings.\n\nJenny Cooley suggested the following idea, which I think is a good compromise: implement this ticket only for standard (not pseudo-) Conway polynomials.  Hopefully this would suffice for most practical purposes, and since they are uniquely determined, we wouldn't have to come up with half-baked solutions to the caching problem.  In #14990 (which I am working on now), pseudo-Conway polynomials can then finally be put to use, and they will be cached in the algebraic closure, where they really belong.",
     "created_at": "2013-08-01T14:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -3099,10 +3105,12 @@ archive/issue_comments_074286.json:
 Replying to [comment:109 jpflori]:
 > I suggest we store a strong to the (top of the) lattice in the FF for the moment
 
+
 We could do that to make garbage collection less likely, but it won't really solve the problem, see comment:108.
 
 > And let's think of a better design for #14990.
 > Having AlgebraicClosure object will surely greatly simplify this.
+
 
 Yes, the more I think about it, the more convinced I am that algebraic closures are the only real solution to the problem of compatible embeddings.
 
@@ -3189,7 +3197,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074291.json:
 ```json
 {
-    "body": "For patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3-14888.patch\u200b, trac_8335-no_pseudo.patch\u200b \n```\n\nNote: [attachment:trac_8335-rebase_14958.patch\u200b] is not needed if we go for this approach.",
+    "body": "For patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3-14888.patch\u200b, trac_8335-no_pseudo.patch\u200b \n```\nNote: [attachment:trac_8335-rebase_14958.patch\u200b] is not needed if we go for this approach.",
     "created_at": "2013-08-02T11:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
@@ -3203,7 +3211,6 @@ For patchbot:
 ```
 apply trac_8335-finite_field_coerce-5.11.b3-14888.patch​, trac_8335-no_pseudo.patch​ 
 ```
-
 Note: [attachment:trac_8335-rebase_14958.patch​] is not needed if we go for this approach.
 
 

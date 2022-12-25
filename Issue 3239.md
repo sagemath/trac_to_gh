@@ -174,7 +174,7 @@ Best regards,
 archive/issue_comments_022385.json:
 ```json
 {
-    "body": "Replying to [comment:3 PolyBoRi]:\n> Hi Michael,\n> could you check, whether SConstruct.generic.patch does the Job on cygwin? Also, the first part of the cpu_stats.c.patch could be avoided by setting the predefines more sensitive in the construct file. I'll have a look at that issue in the next days.\n> Best regards,\n>   Alexander\n\nHi Alexander,\n\nthat looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n\nRe cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 PolyBoRi]:\n> Hi Michael,\n> could you check, whether SConstruct.generic.patch does the Job on cygwin? Also, the first part of the cpu_stats.c.patch could be avoided by setting the predefines more sensitive in the construct file. I'll have a look at that issue in the next days.\n> Best regards,\n>   Alexander\n\n\nHi Alexander,\n\nthat looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n\nRe cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T23:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3239",
     "type": "issue_comment",
@@ -188,6 +188,7 @@ Replying to [comment:3 PolyBoRi]:
 > could you check, whether SConstruct.generic.patch does the Job on cygwin? Also, the first part of the cpu_stats.c.patch could be avoided by setting the predefines more sensitive in the construct file. I'll have a look at that issue in the next days.
 > Best regards,
 >   Alexander
+
 
 Hi Alexander,
 
@@ -224,7 +225,7 @@ More generic patch, which obsoletes both patches above
 archive/issue_comments_022387.json:
 ```json
 {
-    "body": "Attachment [SConstruct.generic.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.generic.patch) by PolyBoRi created at 2008-05-18 23:25:11\n\nHi Michael,\n> that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n> \n> Re cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\nI've uploaded an extended version of the patch, which should fix both problems from SConstruct, so the cpu_stats.c patch will be obsolete.\n\nBest regards,\n  Alexander",
+    "body": "Attachment [SConstruct.generic.patch](tarball://root/attachments/some-uuid/ticket3239/SConstruct.generic.patch) by PolyBoRi created at 2008-05-18 23:25:11\n\nHi Michael,\n> that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. \n> \n> Re cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.\n\nI've uploaded an extended version of the patch, which should fix both problems from SConstruct, so the cpu_stats.c patch will be obsolete.\n\nBest regards,\n  Alexander",
     "created_at": "2008-05-18T23:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3239",
     "type": "issue_comment",
@@ -239,6 +240,7 @@ Hi Michael,
 > that looks like a likely fix. Right now I don't have a Cygwin env setup up to test, but it won't take long. 
 > 
 > Re cpu_stats.c: it looks like the sledge hammer approach and we conditionally copy it into the PolyBoRi tree on Cygwin only. Any cleaner solution is appreciated and I plan to write some Win2K+ specific patches that uses the native Windows infrastructure for accounting and memory consumption. I already did so for CoCoALib, so it should be an easy fix.
+
 I've uploaded an extended version of the patch, which should fix both problems from SConstruct, so the cpu_stats.c patch will be obsolete.
 
 Best regards,

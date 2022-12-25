@@ -80,7 +80,7 @@ Ticket #7440 has upgraded the optional Valgrind spkg to version 3.5.0. Tim Dumol
 archive/issue_comments_066801.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n> Ticket #7440 has upgraded the optional Valgrind spkg to version 3.5.0. Tim Dumol has agreed to maintain that spkg.\n\n\nvalgrind-3.5.0 didn't compile with Fedora 12 64 bit.\n\nJaap",
+    "body": "Replying to [comment:2 mvngu]:\n> Ticket #7440 has upgraded the optional Valgrind spkg to version 3.5.0. Tim Dumol has agreed to maintain that spkg.\n\n\n\nvalgrind-3.5.0 didn't compile with Fedora 12 64 bit.\n\nJaap",
     "created_at": "2010-01-23T10:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -91,6 +91,7 @@ archive/issue_comments_066801.json:
 
 Replying to [comment:2 mvngu]:
 > Ticket #7440 has upgraded the optional Valgrind spkg to version 3.5.0. Tim Dumol has agreed to maintain that spkg.
+
 
 
 valgrind-3.5.0 didn't compile with Fedora 12 64 bit.
@@ -140,7 +141,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066804.json:
 ```json
 {
-    "body": "Replying to [comment:4 timdumol]:\n> It may be worth rebasing this on #7440. `spkg-install` was updated on #7440 to detect Darwin 9.0 as well, on which Valgrind 3.5.0 works on. Also, mabshoff's name should be removed from the package, as per #7738. Feel free to add your own name to the maintainers list as well. Those issues aside, the package seems to work perfectly here. Nice work.\n\nHi Tim,\n\nWould you mind taking over? I'm not a valgrind expert as Michael was.\n\nI have some problems with sage -t on Fedora 12 64 bit on my computer with i7 860 processor. So I tried valgrind. It came up with some issues. See:\n[http://trac.sagemath.org/sage_trac/ticket/7773](http://trac.sagemath.org/sage_trac/ticket/7773) \n\nJaap",
+    "body": "Replying to [comment:4 timdumol]:\n> It may be worth rebasing this on #7440. `spkg-install` was updated on #7440 to detect Darwin 9.0 as well, on which Valgrind 3.5.0 works on. Also, mabshoff's name should be removed from the package, as per #7738. Feel free to add your own name to the maintainers list as well. Those issues aside, the package seems to work perfectly here. Nice work.\n\n\nHi Tim,\n\nWould you mind taking over? I'm not a valgrind expert as Michael was.\n\nI have some problems with sage -t on Fedora 12 64 bit on my computer with i7 860 processor. So I tried valgrind. It came up with some issues. See:\n[http://trac.sagemath.org/sage_trac/ticket/7773](http://trac.sagemath.org/sage_trac/ticket/7773) \n\nJaap",
     "created_at": "2010-01-23T22:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -151,6 +152,7 @@ archive/issue_comments_066804.json:
 
 Replying to [comment:4 timdumol]:
 > It may be worth rebasing this on #7440. `spkg-install` was updated on #7440 to detect Darwin 9.0 as well, on which Valgrind 3.5.0 works on. Also, mabshoff's name should be removed from the package, as per #7738. Feel free to add your own name to the maintainers list as well. Those issues aside, the package seems to work perfectly here. Nice work.
+
 
 Hi Tim,
 
@@ -287,7 +289,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066811.json:
 ```json
 {
-    "body": "The package does not work for me (on `openSUSE 12.1 \"Asparagus\"`). It fails with\n\n```\nchecking for a supported OS... ok (linux-gnu)\nchecking for the kernel version... unsupported (3.1.0-1.2-desktop)\nconfigure: error: Valgrind works on kernels 2.4, 2.6\nerror configuring valgrind 3.6.1\n\nreal    0m2.260s\nuser    0m0.347s\nsys     0m0.382s\n************************************************************************\nError installing package valgrind-3.6.1\n************************************************************************\nPlease email sage-devel (http://groups.google.com/group/sage-devel)\nexplaining the problem and including the relevant part of the log file\n  /home/simon/SAGE/sage-4.8.alpha3/spkg/logs/valgrind-3.6.1.log\n```\n",
+    "body": "The package does not work for me (on `openSUSE 12.1 \"Asparagus\"`). It fails with\n\n```\nchecking for a supported OS... ok (linux-gnu)\nchecking for the kernel version... unsupported (3.1.0-1.2-desktop)\nconfigure: error: Valgrind works on kernels 2.4, 2.6\nerror configuring valgrind 3.6.1\n\nreal    0m2.260s\nuser    0m0.347s\nsys     0m0.382s\n************************************************************************\nError installing package valgrind-3.6.1\n************************************************************************\nPlease email sage-devel (http://groups.google.com/group/sage-devel)\nexplaining the problem and including the relevant part of the log file\n  /home/simon/SAGE/sage-4.8.alpha3/spkg/logs/valgrind-3.6.1.log\n```",
     "created_at": "2011-12-25T21:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -314,7 +316,6 @@ Please email sage-devel (http://groups.google.com/group/sage-devel)
 explaining the problem and including the relevant part of the log file
   /home/simon/SAGE/sage-4.8.alpha3/spkg/logs/valgrind-3.6.1.log
 ```
-
 
 
 
@@ -483,7 +484,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066820.json:
 ```json
 {
-    "body": "Replying to [comment:18 jpflori]:\n> I guess that make should be replaced by $MAKE in both spkg-check and spkg-install.\n\nDone.\n\n> The SAGE_LOCAL logic should also be added to spkg-check.\n\nIt probably doesn't need it since it will run after spkg-install succeeded, but I added it anyway since it's safer than way.  Is there a way to run the tests of an already installed package?\n\n> Some message should be printed if tests fail.\n\nDone.\n\n> The updated changelog in SPKG.txt is wrong (3.6.1 instead of 3.7.0).\n\nOops.\n\n> I guess the hg log could contain this ticket number at the beginning (#7766: ...)\n\nGood point.\n\n> Moreover the spkg should be named .... .p0.spkg.\n\nI thought I read that if there were no patches to upstream then we weren't supposed to put the `.p0` on it, but I changed it since I don't really know.\n\nThanks for taking the time to review this.",
+    "body": "Replying to [comment:18 jpflori]:\n> I guess that make should be replaced by $MAKE in both spkg-check and spkg-install.\n\n\nDone.\n\n> The SAGE_LOCAL logic should also be added to spkg-check.\n\n\nIt probably doesn't need it since it will run after spkg-install succeeded, but I added it anyway since it's safer than way.  Is there a way to run the tests of an already installed package?\n\n> Some message should be printed if tests fail.\n\n\nDone.\n\n> The updated changelog in SPKG.txt is wrong (3.6.1 instead of 3.7.0).\n\n\nOops.\n\n> I guess the hg log could contain this ticket number at the beginning (#7766: ...)\n\n\nGood point.\n\n> Moreover the spkg should be named .... .p0.spkg.\n\n\nI thought I read that if there were no patches to upstream then we weren't supposed to put the `.p0` on it, but I changed it since I don't really know.\n\nThanks for taking the time to review this.",
     "created_at": "2012-02-16T21:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -495,25 +496,31 @@ archive/issue_comments_066820.json:
 Replying to [comment:18 jpflori]:
 > I guess that make should be replaced by $MAKE in both spkg-check and spkg-install.
 
+
 Done.
 
 > The SAGE_LOCAL logic should also be added to spkg-check.
+
 
 It probably doesn't need it since it will run after spkg-install succeeded, but I added it anyway since it's safer than way.  Is there a way to run the tests of an already installed package?
 
 > Some message should be printed if tests fail.
 
+
 Done.
 
 > The updated changelog in SPKG.txt is wrong (3.6.1 instead of 3.7.0).
+
 
 Oops.
 
 > I guess the hg log could contain this ticket number at the beginning (#7766: ...)
 
+
 Good point.
 
 > Moreover the spkg should be named .... .p0.spkg.
+
 
 I thought I read that if there were no patches to upstream then we weren't supposed to put the `.p0` on it, but I changed it since I don't really know.
 
@@ -566,7 +573,7 @@ For the check I'm not aware of any way to do that without rebuilding the package
 archive/issue_comments_066823.json:
 ```json
 {
-    "body": "Replying to [comment:22 jpflori]:\n> About the p0, the problem was that the directory inside the archive was named with a p0 but not the spkg itself so sage would not find it after decompression.\n> \n> So removing the p0 from both might be a better choice :)\n\nOh I see now.  Let me know if you want me to change it.  I don't know how big of a deal having a `.p0` or not is.",
+    "body": "Replying to [comment:22 jpflori]:\n> About the p0, the problem was that the directory inside the archive was named with a p0 but not the spkg itself so sage would not find it after decompression.\n> \n> So removing the p0 from both might be a better choice :)\n\n\nOh I see now.  Let me know if you want me to change it.  I don't know how big of a deal having a `.p0` or not is.",
     "created_at": "2012-02-17T07:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -579,6 +586,7 @@ Replying to [comment:22 jpflori]:
 > About the p0, the problem was that the directory inside the archive was named with a p0 but not the spkg itself so sage would not find it after decompression.
 > 
 > So removing the p0 from both might be a better choice :)
+
 
 Oh I see now.  Let me know if you want me to change it.  I don't know how big of a deal having a `.p0` or not is.
 
@@ -651,7 +659,7 @@ If you do agree, or if you don"t as wel, I'll put this as positive review.
 archive/issue_comments_066827.json:
 ```json
 {
-    "body": "Replying to [comment:26 jpflori]:\n> I've made the mentioned changes and some minor other changes. I've also updated the descr/license in the SPKG file.\n> \n> The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) \n\nFWIW I had to add `.fr` to the server to get the spkg.\n\n> Ivan: If you don't mind, it may be a good idea to add yourself as a maintainer?\n\nYeah, I can be a maintainer.  I took your spkg and added myself as maintainer in SPKG.txt.  New version is at \n\nhttp://boxen.math.washington.edu/home/iandrus/valgrind-3.7.0.spkg\n\nYour patches look good BTW.\n\n> If you do agree, or if you don\"t as wel, I'll put this as positive review.\n\nExcellent.  Thanks again.",
+    "body": "Replying to [comment:26 jpflori]:\n> I've made the mentioned changes and some minor other changes. I've also updated the descr/license in the SPKG file.\n> \n> The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) \n\n\nFWIW I had to add `.fr` to the server to get the spkg.\n\n> Ivan: If you don't mind, it may be a good idea to add yourself as a maintainer?\n\n\nYeah, I can be a maintainer.  I took your spkg and added myself as maintainer in SPKG.txt.  New version is at \n\nhttp://boxen.math.washington.edu/home/iandrus/valgrind-3.7.0.spkg\n\nYour patches look good BTW.\n\n> If you do agree, or if you don\"t as wel, I'll put this as positive review.\n\n\nExcellent.  Thanks again.",
     "created_at": "2012-02-24T15:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7766",
     "type": "issue_comment",
@@ -665,9 +673,11 @@ Replying to [comment:26 jpflori]:
 > 
 > The updated spkg is at [http://perso.telecom-paristech/~flori/sage/valgrind-3.7.0.spkg](http://perso.telecom-paristech/%7Eflori/sage/valgrind-3.7.0.spkg) 
 
+
 FWIW I had to add `.fr` to the server to get the spkg.
 
 > Ivan: If you don't mind, it may be a good idea to add yourself as a maintainer?
+
 
 Yeah, I can be a maintainer.  I took your spkg and added myself as maintainer in SPKG.txt.  New version is at 
 
@@ -676,6 +686,7 @@ http://boxen.math.washington.edu/home/iandrus/valgrind-3.7.0.spkg
 Your patches look good BTW.
 
 > If you do agree, or if you don"t as wel, I'll put this as positive review.
+
 
 Excellent.  Thanks again.
 

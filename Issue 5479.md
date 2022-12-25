@@ -3,7 +3,7 @@
 archive/issues_005479.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRoi Docampo found this:\n\n```\nsage: S = Spec(ZZ)\nsage: S\nSpectrum of Integer Ring\nsage: S(3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/6737/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/spec.pyc in __call__(self, x)\n    112         Create a point of this scheme.\n    113         \"\"\"\n--> 114         return point.SchemePoint_spec(self, x)\n    115 \n    116     def coordinate_ring(self):\n\nAttributeError: 'module' object has no attribute 'SchemePoint_spec'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5479\n\n",
+    "body": "Assignee: @williamstein\n\nRoi Docampo found this:\n\n```\nsage: S = Spec(ZZ)\nsage: S\nSpectrum of Integer Ring\nsage: S(3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/6737/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/schemes/generic/spec.pyc in __call__(self, x)\n    112         Create a point of this scheme.\n    113         \"\"\"\n--> 114         return point.SchemePoint_spec(self, x)\n    115 \n    116     def coordinate_ring(self):\n\nAttributeError: 'module' object has no attribute 'SchemePoint_spec'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5479\n\n",
     "created_at": "2009-03-11T04:09:10Z",
     "labels": [
         "component: algebraic geometry",
@@ -39,7 +39,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'module' object has no attribute 'SchemePoint_spec'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5479
 

@@ -3,7 +3,7 @@
 archive/issues_007767.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  david.kirkby@onetel.net\n\nOn a Sun Ultra 27, running Open Solaris 06/2009 and gcc 4.3.4, I get the following error when trying to build PARI:\n\nI've not looked yet, but the chances are it some GNUism passing inappropriate flags to the compiler. It might be a problem with pari, or it might be a problem in something Sage does, so at this point in time, I've not reported this upstream, despite the fact it might be an upstream bug. \n\n\n```\npari-2.3.3.p5/src/CHANGES-2.2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4/ --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nConfiguring pari-2.3.3 (STABLE) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/ccs/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/ccs/bin/ranlib\n...perl is /usr/bin/perl\n...I could not find emacs.\n******************************************************************\n* C compiler does not work. PARI/GP requires an ANSI C compiler! *\n* Aborting.                                                      *\n******************************************************************\nCompiler was: gcc\nERROR - configure PARI with readline and gmp failed.\n\nreal\t0m0.145s\nuser\t0m0.047s\nsys\t0m0.053s\nsage: An error occurred while installing pari-2.3.3.p5\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7767\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  david.kirkby@onetel.net\n\nOn a Sun Ultra 27, running Open Solaris 06/2009 and gcc 4.3.4, I get the following error when trying to build PARI:\n\nI've not looked yet, but the chances are it some GNUism passing inappropriate flags to the compiler. It might be a problem with pari, or it might be a problem in something Sage does, so at this point in time, I've not reported this upstream, despite the fact it might be an upstream bug. \n\n```\npari-2.3.3.p5/src/CHANGES-2.2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4/ --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nConfiguring pari-2.3.3 (STABLE) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/ccs/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/ccs/bin/ranlib\n...perl is /usr/bin/perl\n...I could not find emacs.\n******************************************************************\n* C compiler does not work. PARI/GP requires an ANSI C compiler! *\n* Aborting.                                                      *\n******************************************************************\nCompiler was: gcc\nERROR - configure PARI with readline and gmp failed.\n\nreal\t0m0.145s\nuser\t0m0.047s\nsys\t0m0.053s\nsage: An error occurred while installing pari-2.3.3.p5\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7767\n\n",
     "created_at": "2009-12-26T03:39:14Z",
     "labels": [
         "component: porting: solaris",
@@ -23,7 +23,6 @@ CC:  david.kirkby@onetel.net
 On a Sun Ultra 27, running Open Solaris 06/2009 and gcc 4.3.4, I get the following error when trying to build PARI:
 
 I've not looked yet, but the chances are it some GNUism passing inappropriate flags to the compiler. It might be a problem with pari, or it might be a problem in something Sage does, so at this point in time, I've not reported this upstream, despite the fact it might be an upstream bug. 
-
 
 ```
 pari-2.3.3.p5/src/CHANGES-2.2
@@ -67,7 +66,6 @@ sage: An error occurred while installing pari-2.3.3.p5
 
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7767
 
 
@@ -97,7 +95,7 @@ Is this issue fixed by #9343?  If yes, we can close this ticket.
 archive/issue_comments_066838.json:
 ```json
 {
-    "body": "Replying to [comment:1 jdemeyer]:\n> Is this issue fixed by #9343?  If yes, we can close this ticket.\nAt this point in time, #9343 has not been merged to any stable release (only alphas), so I think currently this ticket should stay open. \n\nIn theory  #9343 could be reverted, though I doubt that will happen.",
+    "body": "Replying to [comment:1 jdemeyer]:\n> Is this issue fixed by #9343?  If yes, we can close this ticket.\n\nAt this point in time, #9343 has not been merged to any stable release (only alphas), so I think currently this ticket should stay open. \n\nIn theory  #9343 could be reverted, though I doubt that will happen.",
     "created_at": "2010-09-28T02:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7767",
     "type": "issue_comment",
@@ -108,6 +106,7 @@ archive/issue_comments_066838.json:
 
 Replying to [comment:1 jdemeyer]:
 > Is this issue fixed by #9343?  If yes, we can close this ticket.
+
 At this point in time, #9343 has not been merged to any stable release (only alphas), so I think currently this ticket should stay open. 
 
 In theory  #9343 could be reverted, though I doubt that will happen.

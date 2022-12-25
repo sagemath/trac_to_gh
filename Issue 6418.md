@@ -52,7 +52,7 @@ I still get about 5 warnings when building the reference manual. That's better t
 archive/issue_comments_051444.json:
 ```json
 {
-    "body": "Replying to [comment:1 mvngu]:\n> I still get about 5 warnings when building the reference manual. That's better than 10 warnings.\n\nI only get three warnings: the \"favicon\" message (ticket #5799), and two warnings in sage.misc.misc which I don't know how to fix:\n\n```\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: \"No module named MainClass\", please check your spelling and sys.path\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it reported error: \"No module named MainClass.NestedClass\", please check your spelling and sys.path\n```\n",
+    "body": "Replying to [comment:1 mvngu]:\n> I still get about 5 warnings when building the reference manual. That's better than 10 warnings.\n\n\nI only get three warnings: the \"favicon\" message (ticket #5799), and two warnings in sage.misc.misc which I don't know how to fix:\n\n```\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: \"No module named MainClass\", please check your spelling and sys.path\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it reported error: \"No module named MainClass.NestedClass\", please check your spelling and sys.path\n```",
     "created_at": "2009-06-26T01:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6418",
     "type": "issue_comment",
@@ -64,13 +64,13 @@ archive/issue_comments_051444.json:
 Replying to [comment:1 mvngu]:
 > I still get about 5 warnings when building the reference manual. That's better than 10 warnings.
 
+
 I only get three warnings: the "favicon" message (ticket #5799), and two warnings in sage.misc.misc which I don't know how to fix:
 
 ```
 WARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: "No module named MainClass", please check your spelling and sys.path
 WARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: (WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it reported error: "No module named MainClass.NestedClass", please check your spelling and sys.path
 ```
-
 
 
 

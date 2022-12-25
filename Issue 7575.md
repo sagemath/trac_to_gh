@@ -3,7 +3,7 @@
 archive/issues_007575.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThe documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\n\nDespite:\n\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\nDespite:\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7575\n\n",
     "created_at": "2009-12-01T21:56:26Z",
     "labels": [
         "component: elliptic curves",
@@ -27,9 +27,7 @@ bounds. However that function, while it displays a lot of output,
 returns no values.
 ```
 
-
 However, this doesn't work, because `EllipticCurve.gens` doesn't know about it:
-
 
 ```
 sage: x,y=var('x,y')
@@ -39,16 +37,13 @@ sage: E.gens()
 *BOOM*
 ```
 
-
 Despite:
-
 
 ```
 sage: A = E.mwrank_curve()
 sage: A.gens()
 [[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7575
 
@@ -61,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7575
 archive/issue_comments_064362.json:
 ```json
 {
-    "body": "With the patch `trac_7575-heegner_index_example.patch` applied on top of (sage-4.3 plus) #7576 and #7819, I get the following:\n\n\n```\nsage: E = EllipticCurve('123a1')\nsage: E.prove_BSD(verbosity=2)\np = 2: true by 2-descent\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...<SNIP>...\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/libs/mwrank/interface.pyc in gens(self)\n    310         \"\"\"\n    311         self.saturate()\n--> 312         return eval(self.__two_descent_data().getbasis().replace(\":\",\",\"))\n    313 \n    314     def certain(self):\n\nRuntimeError: \n```\n",
+    "body": "With the patch `trac_7575-heegner_index_example.patch` applied on top of (sage-4.3 plus) #7576 and #7819, I get the following:\n\n```\nsage: E = EllipticCurve('123a1')\nsage: E.prove_BSD(verbosity=2)\np = 2: true by 2-descent\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...<SNIP>...\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/libs/mwrank/interface.pyc in gens(self)\n    310         \"\"\"\n    311         self.saturate()\n--> 312         return eval(self.__two_descent_data().getbasis().replace(\":\",\",\"))\n    313 \n    314     def certain(self):\n\nRuntimeError: \n```",
     "created_at": "2010-01-02T15:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -71,7 +66,6 @@ archive/issue_comments_064362.json:
 ```
 
 With the patch `trac_7575-heegner_index_example.patch` applied on top of (sage-4.3 plus) #7576 and #7819, I get the following:
-
 
 ```
 sage: E = EllipticCurve('123a1')
@@ -89,7 +83,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: 
 ```
-
 
 
 
@@ -156,7 +149,7 @@ Another thought:  perhaps we should have a class to hold a list of all mwrank-op
 archive/issue_comments_064366.json:
 ```json
 {
-    "body": "Here is another part where using the library would help:\n\n```\nsage: EllipticCurve([1, 1, 1, -9718914979, 370891890941633]).mwrank()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (47, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (362, 0))\n\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.1.rc1/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in mwrank(self, options)\n    484             from sage.interfaces.all import Mwrank\n    485             mwrank = Mwrank(options=options)\n--> 486         return mwrank(list(self.a_invariants()))\n    487 \n    488     def conductor(self, algorithm=\"pari\"):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/mwrank.pyc in __call__(self, cmd)\n     75 \n     76     def __call__(self, cmd):\n---> 77         return self.eval(str(cmd))\n     78 \n     79     def eval(self, *args, **kwds):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/mwrank.pyc in eval(self, *args, **kwds)\n     95             # Doing _start again fixes that always. See trac #5157.\n     96             self._start()\n---> 97         return Expect.eval(self, *args, **kwds)\n     98 \n     99     def console(self):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in eval(self, code, strip, synchronize, locals, **kwds)\n    981         try:\n    982             with gc_disabled():\n--> 983                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    984         except KeyboardInterrupt:\n    985             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    666                         # we expect to get an EOF if we're quitting.\n    667                         return ''\n--> 668                     raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,self, line)\n    669                 out = E.before\n    670             else:\n\nRuntimeError: End Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0xebec738>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Users/rlmill/sage-4.3.1.rc1/local/bin/mwrank\nargs: ['/Users/rlmill/sage-4.3.1.rc1/local/bin/mwrank']\npatterns:\n    Enter curve: \nbuffer (last 100 chars): \nbefore (last 100 chars): up to 232549 (square a first...)\nAttempt to round -9608958007.0937 to a long int fails, aborting!\n\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 90387\nchild_fd: 7\ntimeout: None\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 10000\nsearchwindowsize: None\ndelaybeforesend: 0\nMwrank crashed executing [1, 1, 1, -9718914979, 370891890941633]\n```\n",
+    "body": "Here is another part where using the library would help:\n\n```\nsage: EllipticCurve([1, 1, 1, -9718914979, 370891890941633]).mwrank()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (47, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (362, 0))\n\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/rlmill/sage-4.3.1.rc1/devel/sage-main/<ipython console> in <module>()\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in mwrank(self, options)\n    484             from sage.interfaces.all import Mwrank\n    485             mwrank = Mwrank(options=options)\n--> 486         return mwrank(list(self.a_invariants()))\n    487 \n    488     def conductor(self, algorithm=\"pari\"):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/mwrank.pyc in __call__(self, cmd)\n     75 \n     76     def __call__(self, cmd):\n---> 77         return self.eval(str(cmd))\n     78 \n     79     def eval(self, *args, **kwds):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/mwrank.pyc in eval(self, *args, **kwds)\n     95             # Doing _start again fixes that always. See trac #5157.\n     96             self._start()\n---> 97         return Expect.eval(self, *args, **kwds)\n     98 \n     99     def console(self):\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in eval(self, code, strip, synchronize, locals, **kwds)\n    981         try:\n    982             with gc_disabled():\n--> 983                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    984         except KeyboardInterrupt:\n    985             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/Users/rlmill/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    666                         # we expect to get an EOF if we're quitting.\n    667                         return ''\n--> 668                     raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,self, line)\n    669                 out = E.before\n    670             else:\n\nRuntimeError: End Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0xebec738>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Users/rlmill/sage-4.3.1.rc1/local/bin/mwrank\nargs: ['/Users/rlmill/sage-4.3.1.rc1/local/bin/mwrank']\npatterns:\n    Enter curve: \nbuffer (last 100 chars): \nbefore (last 100 chars): up to 232549 (square a first...)\nAttempt to round -9608958007.0937 to a long int fails, aborting!\n\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 90387\nchild_fd: 7\ntimeout: None\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 10000\nsearchwindowsize: None\ndelaybeforesend: 0\nMwrank crashed executing [1, 1, 1, -9718914979, 370891890941633]\n```",
     "created_at": "2010-01-19T21:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -246,7 +239,6 @@ Mwrank crashed executing [1, 1, 1, -9718914979, 370891890941633]
 
 
 
-
 ---
 
 archive/issue_comments_064367.json:
@@ -272,7 +264,7 @@ As we are planning to replace the pexpect interface entirely this will be dealt 
 archive/issue_comments_064368.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> This behaviour is supposed to be caught by mwrank C++ code, so that this can be detected gracefully by using the ok() function.\n\nOn looking into it, I see that this will need a patch to the file src/qrank/mrank1.cc, since I just call abort() when I try to round to a long int and it overflows.  Instead I need to catch that properly.  (Pity C++ does not have the try/except functionality of python).\n\nSo this particular bug / behaviour needs to be flagged as \"report upstream (done) and wait for a patch from upstream (on my todo list)\".\n\n\n> \n> As we are planning to replace the pexpect interface entirely this will be dealt with.  (There is absolutely no reason to use the interactive interface when everything can be found from the library interface.)",
+    "body": "Replying to [comment:5 cremona]:\n> This behaviour is supposed to be caught by mwrank C++ code, so that this can be detected gracefully by using the ok() function.\n\n\nOn looking into it, I see that this will need a patch to the file src/qrank/mrank1.cc, since I just call abort() when I try to round to a long int and it overflows.  Instead I need to catch that properly.  (Pity C++ does not have the try/except functionality of python).\n\nSo this particular bug / behaviour needs to be flagged as \"report upstream (done) and wait for a patch from upstream (on my todo list)\".\n\n\n> \n> As we are planning to replace the pexpect interface entirely this will be dealt with.  (There is absolutely no reason to use the interactive interface when everything can be found from the library interface.)",
     "created_at": "2010-01-19T22:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -283,6 +275,7 @@ archive/issue_comments_064368.json:
 
 Replying to [comment:5 cremona]:
 > This behaviour is supposed to be caught by mwrank C++ code, so that this can be detected gracefully by using the ok() function.
+
 
 On looking into it, I see that this will need a patch to the file src/qrank/mrank1.cc, since I just call abort() when I try to round to a long int and it overflows.  Instead I need to catch that properly.  (Pity C++ does not have the try/except functionality of python).
 
@@ -299,7 +292,7 @@ So this particular bug / behaviour needs to be flagged as "report upstream (done
 archive/issue_comments_064369.json:
 ```json
 {
-    "body": "The documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\n\nDespite:\n\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```\n",
+    "body": "The documentation for `EllipticCurve.gens` says:\n\n```\nHINT: If you would like to control the height bounds used in the\n2-descent, first call the two_descent function with those height\nbounds. However that function, while it displays a lot of output,\nreturns no values.\n```\n\nHowever, this doesn't work, because `EllipticCurve.gens` doesn't know about it:\n\n```\nsage: x,y=var('x,y')\nsage: E = EllipticCurve(y^2 + x*y + y == x^3 - 10525529*x - 21714803524)\nsage: E.two_descent(second_limit=11, verbose=False)\nsage: E.gens()\n*BOOM*\n```\n\nDespite:\n\n```\nsage: A = E.mwrank_curve()\nsage: A.gens()\n[[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]\n```",
     "created_at": "2010-01-19T22:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -317,9 +310,7 @@ bounds. However that function, while it displays a lot of output,
 returns no values.
 ```
 
-
 However, this doesn't work, because `EllipticCurve.gens` doesn't know about it:
-
 
 ```
 sage: x,y=var('x,y')
@@ -329,16 +320,13 @@ sage: E.gens()
 *BOOM*
 ```
 
-
 Despite:
-
 
 ```
 sage: A = E.mwrank_curve()
 sage: A.gens()
 [[1737553736529419603224344006006032245457891558644991945121564365621L, -1605018042749306385493128932071874233128412498544999275367916849231954L, 2038538889602737161869943561394015059980551394212496529475951L]]
 ```
-
 
 
 
@@ -564,7 +552,7 @@ Recap: apply everything from #8184, #8155 and #8124 in that order and then both 
 archive/issue_comments_064381.json:
 ```json
 {
-    "body": "In preparing for 4.3.3.alpha0, I noticed a [minor?] problem : After I run `sage -t ell_rational_field.py`, there's a new untracked file in the repository:\n\n```\n$ hg stat\n? sage/schemes/elliptic_curves/PRIMES\nm\n```\n\nIt contains `16180561` and sometimes `19047851`.  If this is easy to fix, feel free to add another follow-up patch here.",
+    "body": "In preparing for 4.3.3.alpha0, I noticed a [minor?] problem : After I run `sage -t ell_rational_field.py`, there's a new untracked file in the repository:\n\n```\n$ hg stat\n? sage/schemes/elliptic_curves/PRIMES\nm\n```\nIt contains `16180561` and sometimes `19047851`.  If this is easy to fix, feel free to add another follow-up patch here.",
     "created_at": "2010-02-11T00:16:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -580,7 +568,6 @@ $ hg stat
 ? sage/schemes/elliptic_curves/PRIMES
 m
 ```
-
 It contains `16180561` and sometimes `19047851`.  If this is easy to fix, feel free to add another follow-up patch here.
 
 
@@ -691,7 +678,7 @@ I'm not quite sure why this has arisen as an issue now, since mwrank/eclib have 
 archive/issue_comments_064387.json:
 ```json
 {
-    "body": "Is it a consequence of\n\n```diff\n-             algorithm='mwrank_shell',\n+             algorithm='mwrank_lib',\n```\n\nin `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?",
+    "body": "Is it a consequence of\n\n```diff\n-             algorithm='mwrank_shell',\n+             algorithm='mwrank_lib',\n```\nin `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?",
     "created_at": "2010-02-11T11:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -706,7 +693,6 @@ Is it a consequence of
 -             algorithm='mwrank_shell',
 +             algorithm='mwrank_lib',
 ```
-
 in `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?
 
 
@@ -716,7 +702,7 @@ in `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank
 archive/issue_comments_064388.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Is it a consequence of\n> {{{\n> #!diff\n> -             algorithm='mwrank_shell',\n> +             algorithm='mwrank_lib',\n> }}}\n> in `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?\n\nNo, that should not make any difference.",
+    "body": "Replying to [comment:20 mpatel]:\n> Is it a consequence of\n> \n> ```\n> #!diff\n> -             algorithm='mwrank_shell',\n> +             algorithm='mwrank_lib',\n> ```\n> in `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?\n\n\nNo, that should not make any difference.",
     "created_at": "2010-02-11T11:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -727,12 +713,14 @@ archive/issue_comments_064388.json:
 
 Replying to [comment:20 mpatel]:
 > Is it a consequence of
-> {{{
+> 
+> ```
 > #!diff
 > -             algorithm='mwrank_shell',
 > +             algorithm='mwrank_lib',
-> }}}
+> ```
 > in `EllipticCurve_rational_field.gens` and/or `EllipticCurve_rational_field.rank`?
+
 
 No, that should not make any difference.
 
@@ -841,7 +829,7 @@ One solution would be to *only* output to the file PRIMES if it already exists. 
 archive/issue_comments_064393.json:
 ```json
 {
-    "body": "Replying to [comment:24 cremona]:\n> One solution would be to *only* output to the file PRIMES if it already exists.\n\nWouldn't it be better to simply set the location to something in `DOT_SAGE`, instead of the current directory?",
+    "body": "Replying to [comment:24 cremona]:\n> One solution would be to *only* output to the file PRIMES if it already exists.\n\n\nWouldn't it be better to simply set the location to something in `DOT_SAGE`, instead of the current directory?",
     "created_at": "2010-02-11T17:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -852,6 +840,7 @@ archive/issue_comments_064393.json:
 
 Replying to [comment:24 cremona]:
 > One solution would be to *only* output to the file PRIMES if it already exists.
+
 
 Wouldn't it be better to simply set the location to something in `DOT_SAGE`, instead of the current directory?
 
@@ -880,7 +869,7 @@ Trouble is, eclib currently does not allow this to be changed, it always uses th
 archive/issue_comments_064395.json:
 ```json
 {
-    "body": "I inserted diagnostic \"cout\" statements in `extra_prime_class::~extra_prime_class` and ran a few tests.  It seems the destructor always gets called, but the timing --- and whether `PRIMES` is actually written to the file system, it seems --- depends on whether I use the library or pexpect interface.\n\nThe pexpect interface reads `SAGE_ROOT/data/extcode/mwrank/PRIMES`.  But it doesn't update this file when I quit the Sage command line.  However, if I run\n\n```\nsage -c \"EllipticCurve([1,0,0,0,37455]).rank(proof=False)\"\n```\n\nthen \"hg stat\", for example, confirms the file has changed.\n\nWould it help to call a `exitprimes` method explicitly, near the end of `main`?  This *might* avoid problems related to when the runtime calls the destructor.\n\nDisclaimer:  I'm not at all familiar with eclib.",
+    "body": "I inserted diagnostic \"cout\" statements in `extra_prime_class::~extra_prime_class` and ran a few tests.  It seems the destructor always gets called, but the timing --- and whether `PRIMES` is actually written to the file system, it seems --- depends on whether I use the library or pexpect interface.\n\nThe pexpect interface reads `SAGE_ROOT/data/extcode/mwrank/PRIMES`.  But it doesn't update this file when I quit the Sage command line.  However, if I run\n\n```\nsage -c \"EllipticCurve([1,0,0,0,37455]).rank(proof=False)\"\n```\nthen \"hg stat\", for example, confirms the file has changed.\n\nWould it help to call a `exitprimes` method explicitly, near the end of `main`?  This *might* avoid problems related to when the runtime calls the destructor.\n\nDisclaimer:  I'm not at all familiar with eclib.",
     "created_at": "2010-02-15T13:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7575",
     "type": "issue_comment",
@@ -896,7 +885,6 @@ The pexpect interface reads `SAGE_ROOT/data/extcode/mwrank/PRIMES`.  But it does
 ```
 sage -c "EllipticCurve([1,0,0,0,37455]).rank(proof=False)"
 ```
-
 then "hg stat", for example, confirms the file has changed.
 
 Would it help to call a `exitprimes` method explicitly, near the end of `main`?  This *might* avoid problems related to when the runtime calls the destructor.

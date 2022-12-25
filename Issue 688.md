@@ -3,7 +3,7 @@
 archive/issues_000688.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider:\n\n\n```\nsage: P.<x,y>  = PolynomialRing(GF(2),2)\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: Q = P.quo(I)\nsage: Q._singular_()\n\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\nsage: Q(x)\nxbar\nsage: Q(x)._singular_()\n--------------------------------------------------------------\n<type 'exceptions.TypeError'> Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: Singular error:\n   ? `xbar` is undefined\n   ? error occurred in STDIN line 185: `def sage69=xbar;`\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/688\n\n",
+    "body": "Assignee: @williamstein\n\nConsider:\n\n```\nsage: P.<x,y>  = PolynomialRing(GF(2),2)\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: Q = P.quo(I)\nsage: Q._singular_()\n\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\nsage: Q(x)\nxbar\nsage: Q(x)._singular_()\n--------------------------------------------------------------\n<type 'exceptions.TypeError'> Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: Singular error:\n   ? `xbar` is undefined\n   ? error occurred in STDIN line 185: `def sage69=xbar;`\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/688\n\n",
     "created_at": "2007-09-18T13:09:54Z",
     "labels": [
         "component: interfaces",
@@ -19,7 +19,6 @@ archive/issues_000688.json:
 Assignee: @williamstein
 
 Consider:
-
 
 ```
 sage: P.<x,y>  = PolynomialRing(GF(2),2)
@@ -45,7 +44,6 @@ sage: Q(x)._singular_()
    ? `xbar` is undefined
    ? error occurred in STDIN line 185: `def sage69=xbar;`
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/688
 

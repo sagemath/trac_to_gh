@@ -194,7 +194,7 @@ Resolution: fixed
 archive/issue_comments_038241.json:
 ```json
 {
-    "body": "> I got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments,\n\n\nThanks, Robert, for raising this issue and have it fixed. With trac now able to display diff comments, it has made my life easier when it comes to crediting patch authors. Previously, I would need to download a patch in raw text format in order to see the patch author's name (and I'm bad at spelling people's names).",
+    "body": "> I got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments,\n\n\n\nThanks, Robert, for raising this issue and have it fixed. With trac now able to display diff comments, it has made my life easier when it comes to crediting patch authors. Previously, I would need to download a patch in raw text format in order to see the patch author's name (and I'm bad at spelling people's names).",
     "created_at": "2009-01-26T08:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
@@ -204,6 +204,7 @@ archive/issue_comments_038241.json:
 ```
 
 > I got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments,
+
 
 
 Thanks, Robert, for raising this issue and have it fixed. With trac now able to display diff comments, it has made my life easier when it comes to crediting patch authors. Previously, I would need to download a patch in raw text format in order to see the patch author's name (and I'm bad at spelling people's names).

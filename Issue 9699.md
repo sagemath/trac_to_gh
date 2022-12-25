@@ -124,7 +124,7 @@ Please apply instead of trac_9699.patch.
 archive/issue_comments_094142.json:
 ```json
 {
-    "body": "Replying to [comment:3 rlm]:\n> I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?\n\nThe option `barycentric` is now set to True by default.",
+    "body": "Replying to [comment:3 rlm]:\n> I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?\n\n\nThe option `barycentric` is now set to True by default.",
     "created_at": "2010-08-08T02:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ archive/issue_comments_094142.json:
 Replying to [comment:3 rlm]:
 > I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?
 
+
 The option `barycentric` is now set to True by default.
 
 
@@ -145,7 +146,7 @@ The option `barycentric` is now set to True by default.
 archive/issue_comments_094143.json:
 ```json
 {
-    "body": "Replying to [comment:3 rlm]:\n> I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?\n\nSorry, I forgot to be more specific. Please apply trac_9699_2.patch instead of trac_9699.patch.\n\n\nIn trac_9699_2.patch the option `barycentric` is now set to be True by default.",
+    "body": "Replying to [comment:3 rlm]:\n> I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?\n\n\nSorry, I forgot to be more specific. Please apply trac_9699_2.patch instead of trac_9699.patch.\n\n\nIn trac_9699_2.patch the option `barycentric` is now set to be True by default.",
     "created_at": "2010-08-08T02:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -156,6 +157,7 @@ archive/issue_comments_094143.json:
 
 Replying to [comment:3 rlm]:
 > I wonder if the default for `barycentric` shouldn't be True instead of False. It looks a bit nicer that way, so why not make it the default?
+
 
 Sorry, I forgot to be more specific. Please apply trac_9699_2.patch instead of trac_9699.patch.
 
@@ -209,7 +211,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_094146.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n\n> Well, if such an option is the default, shouldn't we just replace the actual code with it ?\n\nI think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?\n\nFidel",
+    "body": "Replying to [comment:6 ncohen]:\n\n> Well, if such an option is the default, shouldn't we just replace the actual code with it ?\n\n\nI think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?\n\nFidel",
     "created_at": "2010-09-13T01:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -221,6 +223,7 @@ archive/issue_comments_094146.json:
 Replying to [comment:6 ncohen]:
 
 > Well, if such an option is the default, shouldn't we just replace the actual code with it ?
+
 
 I think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?
 
@@ -251,7 +254,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_094148.json:
 ```json
 {
-    "body": "> I think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?\n\nNo, not anymore... But now I would suggest to mention these properties in the docstring. Sorry for asking it this late, but I am concerned about avoiding to have in Sage at the same time two pieces of code doing the same thing in different ways, and writing it in such a way that one of them is never used.. That's why I wondered whether it would be better to completely replace the current implementation with yours instead of having two version. If the current version has properties that yours do not have, then you are right : it should remain available, but this is not very useful if nobody knows these properties exists.... Hence, where you documented the keyword ``barycentric`` \n\n\n```\n- ``barycentric`` - whether or not to use barycentric coordinates. \n```\n\n\nit would be nice to also mention that setting it to ``None`` means having an embedding in a O(n)*O(n) grid with integer coordinates, as you just taught me.. Otherwise it's very unlikely people would disable a feature with no computation time to earn...nothing `:-)`\n\nNathann",
+    "body": "> I think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?\n\n\nNo, not anymore... But now I would suggest to mention these properties in the docstring. Sorry for asking it this late, but I am concerned about avoiding to have in Sage at the same time two pieces of code doing the same thing in different ways, and writing it in such a way that one of them is never used.. That's why I wondered whether it would be better to completely replace the current implementation with yours instead of having two version. If the current version has properties that yours do not have, then you are right : it should remain available, but this is not very useful if nobody knows these properties exists.... Hence, where you documented the keyword ``barycentric`` \n\n```\n- ``barycentric`` - whether or not to use barycentric coordinates. \n```\n\nit would be nice to also mention that setting it to ``None`` means having an embedding in a O(n)*O(n) grid with integer coordinates, as you just taught me.. Otherwise it's very unlikely people would disable a feature with no computation time to earn...nothing `:-)`\n\nNathann",
     "created_at": "2010-09-13T07:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -262,13 +265,12 @@ archive/issue_comments_094148.json:
 
 > I think the previous implementation features interesting properties. It provided a straightline embedding in an O(n) by O(n) grid, so in particular all the coordinates are integers. Would you still suggest to replace the code completely?
 
-No, not anymore... But now I would suggest to mention these properties in the docstring. Sorry for asking it this late, but I am concerned about avoiding to have in Sage at the same time two pieces of code doing the same thing in different ways, and writing it in such a way that one of them is never used.. That's why I wondered whether it would be better to completely replace the current implementation with yours instead of having two version. If the current version has properties that yours do not have, then you are right : it should remain available, but this is not very useful if nobody knows these properties exists.... Hence, where you documented the keyword ``barycentric`` 
 
+No, not anymore... But now I would suggest to mention these properties in the docstring. Sorry for asking it this late, but I am concerned about avoiding to have in Sage at the same time two pieces of code doing the same thing in different ways, and writing it in such a way that one of them is never used.. That's why I wondered whether it would be better to completely replace the current implementation with yours instead of having two version. If the current version has properties that yours do not have, then you are right : it should remain available, but this is not very useful if nobody knows these properties exists.... Hence, where you documented the keyword ``barycentric`` 
 
 ```
 - ``barycentric`` - whether or not to use barycentric coordinates. 
 ```
-
 
 it would be nice to also mention that setting it to ``None`` means having an embedding in a O(n)*O(n) grid with integer coordinates, as you just taught me.. Otherwise it's very unlikely people would disable a feature with no computation time to earn...nothing `:-)`
 
@@ -301,7 +303,7 @@ Please apply instead of previous patches.
 archive/issue_comments_094150.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n\n> But now I would suggest to mention these properties in the docstring.\n\nThese properties are now mentioned in the docstring :)\n\nFidel",
+    "body": "Replying to [comment:8 ncohen]:\n\n> But now I would suggest to mention these properties in the docstring.\n\n\nThese properties are now mentioned in the docstring :)\n\nFidel",
     "created_at": "2010-09-22T04:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -314,6 +316,7 @@ Replying to [comment:8 ncohen]:
 
 > But now I would suggest to mention these properties in the docstring.
 
+
 These properties are now mentioned in the docstring :)
 
 Fidel
@@ -325,7 +328,7 @@ Fidel
 archive/issue_comments_094151.json:
 ```json
 {
-    "body": "Hello !!\n\nI noticed a typo in your patch \n\n```\nthen coordinates will bi in the grid. \n```\n\n\nSo I first wrote a small one to fix it, then ended up fixing one or two other docstrings, or adding to them the information you had put in the first description or ``barycentric``.. Well, if somebody can test my patch, he can set this ticket to \"positive review\", as yours is good to go !\n\nThanksssssssssssssss ! :-)\n\nNathann",
+    "body": "Hello !!\n\nI noticed a typo in your patch \n\n```\nthen coordinates will bi in the grid. \n```\n\nSo I first wrote a small one to fix it, then ended up fixing one or two other docstrings, or adding to them the information you had put in the first description or ``barycentric``.. Well, if somebody can test my patch, he can set this ticket to \"positive review\", as yours is good to go !\n\nThanksssssssssssssss ! :-)\n\nNathann",
     "created_at": "2010-09-22T08:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -342,7 +345,6 @@ I noticed a typo in your patch
 then coordinates will bi in the grid. 
 ```
 
-
 So I first wrote a small one to fix it, then ended up fixing one or two other docstrings, or adding to them the information you had put in the first description or ``barycentric``.. Well, if somebody can test my patch, he can set this ticket to "positive review", as yours is good to go !
 
 Thanksssssssssssssss ! :-)
@@ -356,7 +358,7 @@ Nathann
 archive/issue_comments_094152.json:
 ```json
 {
-    "body": "Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by @rlmill created at 2010-11-11 13:15:42\n\nDoctest fail:\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
+    "body": "Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by @rlmill created at 2010-11-11 13:15:42\n\nDoctest fail:\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
     "created_at": "2010-11-11T13:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -369,7 +371,6 @@ Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-u
 
 Doctest fail:
 
-
 ```
 sage -t -long ./sage/graphs/generic_graph.py
 **********************************************************************
@@ -381,7 +382,6 @@ Got:
     {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}
 **********************************************************************
 ```
-
 
 Also, all of the positions should be the same format: here some are tuples and others are lists.
 
@@ -505,7 +505,7 @@ archive/issue_events_024234.json:
 archive/issue_comments_094158.json:
 ```json
 {
-    "body": "Has this been tested on various systems?  The kind of output like\n\n```\n{0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}\n```\n\nhas a tendency of being quite system-dependent because of precision issues.\n\nIn any case, if all you did was add an option, why did the output change?",
+    "body": "Has this been tested on various systems?  The kind of output like\n\n```\n{0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}\n```\nhas a tendency of being quite system-dependent because of precision issues.\n\nIn any case, if all you did was add an option, why did the output change?",
     "created_at": "2010-11-26T22:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -519,7 +519,6 @@ Has this been tested on various systems?  The kind of output like
 ```
 {0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}
 ```
-
 has a tendency of being quite system-dependent because of precision issues.
 
 In any case, if all you did was add an option, why did the output change?
@@ -549,7 +548,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_094160.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Has this been tested on various systems?  \nI have not tested it on various systems.\n\n> In any case, if all you did was add an option, why did the output change?\n\nThe option barycentric was no just added, it was made the default option, as suggested by rlm in \n\n[http://trac.sagemath.org/sage_trac/ticket/9699?replyto=15#comment:3](http://trac.sagemath.org/sage_trac/ticket/9699?replyto=15#comment:3)",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Has this been tested on various systems?  \n\nI have not tested it on various systems.\n\n> In any case, if all you did was add an option, why did the output change?\n\n\nThe option barycentric was no just added, it was made the default option, as suggested by rlm in \n\n[http://trac.sagemath.org/sage_trac/ticket/9699?replyto=15#comment:3](http://trac.sagemath.org/sage_trac/ticket/9699?replyto=15#comment:3)",
     "created_at": "2010-11-26T23:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -560,9 +559,11 @@ archive/issue_comments_094160.json:
 
 Replying to [comment:15 jdemeyer]:
 > Has this been tested on various systems?  
+
 I have not tested it on various systems.
 
 > In any case, if all you did was add an option, why did the output change?
+
 
 The option barycentric was no just added, it was made the default option, as suggested by rlm in 
 
@@ -575,7 +576,7 @@ The option barycentric was no just added, it was made the default option, as sug
 archive/issue_comments_094161.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> {{{\n> {0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}\n> }}}\n\nJeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up.",
+    "body": "Replying to [comment:15 jdemeyer]:\n> {{{\n> {0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}\n> }}}\n\n\nJeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up.",
     "created_at": "2010-11-26T23:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -588,6 +589,7 @@ Replying to [comment:15 jdemeyer]:
 > {{{
 > {0: [0.0, 1.0], 1: [0.866025403784, -0.5], 2: [-0.866025403784, -0.5], 3: [0.433012701892, -0.25], 4: [-0.288675134595, -1.85037170771e-16], 5: [0.288675134595, 3.70074341542e-17], 6: [0.144337567297, 0.25]}
 > }}}
+
 
 Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up.
 
@@ -652,7 +654,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094165.json:
 ```json
 {
-    "body": "Attachment [trac_9699_5.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_5.patch) by fidelbarrera created at 2010-11-27 04:33:49\n\nReplying to [comment:17 rlm]: \n> Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. \n\nReplaced things like `0.866025403784` with `0.86...`.\n\nPlease see trac_9699_5.patch instead of previous versions.",
+    "body": "Attachment [trac_9699_5.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699_5.patch) by fidelbarrera created at 2010-11-27 04:33:49\n\nReplying to [comment:17 rlm]: \n> Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. \n\n\nReplaced things like `0.866025403784` with `0.86...`.\n\nPlease see trac_9699_5.patch instead of previous versions.",
     "created_at": "2010-11-27T04:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -665,6 +667,7 @@ Attachment [trac_9699_5.patch](tarball://root/attachments/some-uuid/ticket9699/t
 
 Replying to [comment:17 rlm]: 
 > Jeroen is right. You should replace things like `0.866025403784` with `0.86...` so that numerical issues don't crop up. 
+
 
 Replaced things like `0.866025403784` with `0.86...`.
 
@@ -731,7 +734,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094169.json:
 ```json
 {
-    "body": "It seems I pressed submit too soon. Indeed all tests pass on the 64 bit system.\n\nHowever on the 32-bit system, things seem to freeze at the following test:\n\n```\nTrying:\n    g = graphs.BalancedTree(Integer(3),Integer(4))###line 2658:_sage_    >>> g = graphs.BalancedTree(3,4)\nExpecting nothing\nok\nTrying:\n    g.set_planar_positions(test=True)###line 2659:_sage_    >>> g.set_planar_positions(test=True)\nExpecting:\n    True\n```\n",
+    "body": "It seems I pressed submit too soon. Indeed all tests pass on the 64 bit system.\n\nHowever on the 32-bit system, things seem to freeze at the following test:\n\n```\nTrying:\n    g = graphs.BalancedTree(Integer(3),Integer(4))###line 2658:_sage_    >>> g = graphs.BalancedTree(3,4)\nExpecting nothing\nok\nTrying:\n    g.set_planar_positions(test=True)###line 2659:_sage_    >>> g.set_planar_positions(test=True)\nExpecting:\n    True\n```",
     "created_at": "2010-11-28T16:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
@@ -754,7 +757,6 @@ Trying:
 Expecting:
     True
 ```
-
 
 
 

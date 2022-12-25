@@ -3,7 +3,7 @@
 archive/issues_002477.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[a much better looking plot]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2477\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[a much better looking plot]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2477\n\n",
     "created_at": "2008-03-11T23:13:24Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_002477.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: g = graphs.PetersenGraph()
 sage: g.plot3d()
@@ -27,7 +26,6 @@ sage: g = graphs.PetersenGraph()
 sage: g.plot3d(aspect_ratio=[1,1,1])
 [a much better looking plot]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2477
 
@@ -58,7 +56,7 @@ Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.pat
 archive/issue_comments_016738.json:
 ```json
 {
-    "body": "This is a different bug, but the funny thing is my experience is\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[an even crappier looking plot]\n```\n\nThe new plot has vertices with holes in them. I have no idea what is causing this at all.",
+    "body": "This is a different bug, but the funny thing is my experience is\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[an even crappier looking plot]\n```\nThe new plot has vertices with holes in them. I have no idea what is causing this at all.",
     "created_at": "2008-03-14T14:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
@@ -77,7 +75,6 @@ sage: g = graphs.PetersenGraph()
 sage: g.plot3d(aspect_ratio=[1,1,1])
 [an even crappier looking plot]
 ```
-
 The new plot has vertices with holes in them. I have no idea what is causing this at all.
 
 
@@ -104,7 +101,7 @@ archive/issue_events_005851.json:
 archive/issue_comments_016739.json:
 ```json
 {
-    "body": "I think the patch ought to use:\n\n\n```\naspect_ratio = kwds.setdefault('aspect_ratio', [1,1,1])\n```\n\n\nor even just\n\n\n```\nkwds.setdefault('aspect_ratio', [1,1,1])\n```\n\n\nwhich is the python way to do this.",
+    "body": "I think the patch ought to use:\n\n```\naspect_ratio = kwds.setdefault('aspect_ratio', [1,1,1])\n```\n\nor even just\n\n```\nkwds.setdefault('aspect_ratio', [1,1,1])\n```\n\nwhich is the python way to do this.",
     "created_at": "2008-03-29T20:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
@@ -115,19 +112,15 @@ archive/issue_comments_016739.json:
 
 I think the patch ought to use:
 
-
 ```
 aspect_ratio = kwds.setdefault('aspect_ratio', [1,1,1])
 ```
 
-
 or even just
-
 
 ```
 kwds.setdefault('aspect_ratio', [1,1,1])
 ```
-
 
 which is the python way to do this.
 

@@ -3,7 +3,7 @@
 archive/issues_004218.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe following sage snippets show (some of) the problems.  First, we set\nthe stage:\n\n```\nsage: F1.<a> = GF(2^7)\nsage: P1.<x>=PolynomialRing(F1)\nsage: f=x^2+x+F1(1)\nsage: F2=F1.extension(f,'u')\nsage: F2\nUnivariate Quotient Polynomial Ring in u over Finite Field in a of size 2^7 with modulus u^2 + u + 1\nsage: a in F2\nTrue\n```\n\n\nFirst problem:\n\n```\nsage: for i in xrange(100):\n   ....:         r = F2.random_element()\n   ....:     if r != F2(0) and r != F2(1):\n   ....:             print \"Yoicks! r=%s\"%r\n   ....: \nsage: \n```\n\nNo output means that 100 random elements of F2 are either\n0 or 1, which seems somehow incorrect.\n\nThe next oddity is\n\n```\nsage: F1.order()\n128\nsage: F2.order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/SandBox/Justin/sb/sage-3.1.1/<ipython console> in <module>()\n\n/SandBox/Justin/sb/sage-3.1.1/ring.pyx in sage.rings.ring.Ring.order (sage/rings/ring.c:4108)()\n\nNotImplementedError: \n```\n\nShouldn't .order() work for extensions as well as those directly defined?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4218\n\n",
+    "body": "Assignee: tbd\n\nThe following sage snippets show (some of) the problems.  First, we set\nthe stage:\n\n```\nsage: F1.<a> = GF(2^7)\nsage: P1.<x>=PolynomialRing(F1)\nsage: f=x^2+x+F1(1)\nsage: F2=F1.extension(f,'u')\nsage: F2\nUnivariate Quotient Polynomial Ring in u over Finite Field in a of size 2^7 with modulus u^2 + u + 1\nsage: a in F2\nTrue\n```\n\nFirst problem:\n\n```\nsage: for i in xrange(100):\n   ....:         r = F2.random_element()\n   ....:     if r != F2(0) and r != F2(1):\n   ....:             print \"Yoicks! r=%s\"%r\n   ....: \nsage: \n```\nNo output means that 100 random elements of F2 are either\n0 or 1, which seems somehow incorrect.\n\nThe next oddity is\n\n```\nsage: F1.order()\n128\nsage: F2.order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/SandBox/Justin/sb/sage-3.1.1/<ipython console> in <module>()\n\n/SandBox/Justin/sb/sage-3.1.1/ring.pyx in sage.rings.ring.Ring.order (sage/rings/ring.c:4108)()\n\nNotImplementedError: \n```\nShouldn't .order() work for extensions as well as those directly defined?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4218\n\n",
     "created_at": "2008-09-29T20:21:44Z",
     "labels": [
         "component: algebra",
@@ -32,7 +32,6 @@ sage: a in F2
 True
 ```
 
-
 First problem:
 
 ```
@@ -43,7 +42,6 @@ sage: for i in xrange(100):
    ....: 
 sage: 
 ```
-
 No output means that 100 random elements of F2 are either
 0 or 1, which seems somehow incorrect.
 
@@ -62,7 +60,6 @@ NotImplementedError                       Traceback (most recent call last)
 
 NotImplementedError: 
 ```
-
 Shouldn't .order() work for extensions as well as those directly defined?
 
 
@@ -173,7 +170,7 @@ The attached patch resolves the issues reported above, by implementing methods r
 archive/issue_comments_030596.json:
 ```json
 {
-    "body": "Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by @JohnCremona created at 2008-12-21 18:08:33\n\nPositive review.  Patch applies cleanly to 3.2.2 and doctests in sage/rings/polynomial pass.\n\nI did notice while testing that this does not work:\n\n```\nsage: R.<x>=ZZ[]\nsage: S=ZZ.extension(x^3-2,'a')\nsage: S.order()\n---------------------------------------------------------------------------\nNotImplementedError    \n```\n\nand also that `S.random_element()` gives a random integer (I think).  Another ticket perhaps?",
+    "body": "Attachment [trac_4218.patch](tarball://root/attachments/some-uuid/ticket4218/trac_4218.patch) by @JohnCremona created at 2008-12-21 18:08:33\n\nPositive review.  Patch applies cleanly to 3.2.2 and doctests in sage/rings/polynomial pass.\n\nI did notice while testing that this does not work:\n\n```\nsage: R.<x>=ZZ[]\nsage: S=ZZ.extension(x^3-2,'a')\nsage: S.order()\n---------------------------------------------------------------------------\nNotImplementedError    \n```\nand also that `S.random_element()` gives a random integer (I think).  Another ticket perhaps?",
     "created_at": "2008-12-21T18:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4218",
     "type": "issue_comment",
@@ -195,7 +192,6 @@ sage: S.order()
 ---------------------------------------------------------------------------
 NotImplementedError    
 ```
-
 and also that `S.random_element()` gives a random integer (I think).  Another ticket perhaps?
 
 

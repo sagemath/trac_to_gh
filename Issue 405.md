@@ -3,7 +3,7 @@
 archive/issues_000405.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn 7/26/07, David Joyner <wdjoyner@gmail.com> wrote:\n> On 7/26/07, mak <mak@math.uvic.ca> wrote:\n> > 1.  How do I change the entire row or column of a matrix at once?  In\n> > pari, I could do e.g. a=[1,2,3;4,5,6], and then put a[1,]=[0,0,0],\n> > which would give a=[0,0,0;4,5,6].  What's the sage equivalent?\n\nThere is no SAGE equivalent yet.  David's example might be helpful\nbelow though.  The best you could in SAGE is set each entry\none at a time right now.  I should add something.  \n\ndef set_row(A, r, v):\n    for i in range(A.ncols()):\n         A[r, i] = v[i]\n\nI'm not sure how we forgot to ever do this. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/405\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 7/26/07, David Joyner <wdjoyner@gmail.com> wrote:\n> On 7/26/07, mak <mak@math.uvic.ca> wrote:\n> > 1.  How do I change the entire row or column of a matrix at once?  In\n> > pari, I could do e.g. a=[1,2,3;4,5,6], and then put a[1,]=[0,0,0],\n> > which would give a=[0,0,0;4,5,6].  What's the sage equivalent?\n\nThere is no SAGE equivalent yet.  David's example might be helpful\nbelow though.  The best you could in SAGE is set each entry\none at a time right now.  I should add something.  \n\ndef set_row(A, r, v):\n    for i in range(A.ncols()):\n         A[r, i] = v[i]\n\nI'm not sure how we forgot to ever do this. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/405\n\n",
     "created_at": "2007-07-26T15:23:45Z",
     "labels": [
         "component: algebraic geometry"
@@ -16,7 +16,6 @@ archive/issues_000405.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On 7/26/07, David Joyner <wdjoyner@gmail.com> wrote:
@@ -35,7 +34,6 @@ def set_row(A, r, v):
 
 I'm not sure how we forgot to ever do this. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/405
 

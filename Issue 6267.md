@@ -3,7 +3,7 @@
 archive/issues_006267.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mvngu\n\nKeywords: latex, variables\n\nSage (4.0.1) typesets two different variables as same latex string\n\n\n```\nvar('xi, xi_')\nlatex(xi)\n\\xi\nlatex(xi_)\n\\xi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6267\n\n",
+    "body": "Assignee: cwitty\n\nCC:  mvngu\n\nKeywords: latex, variables\n\nSage (4.0.1) typesets two different variables as same latex string\n\n```\nvar('xi, xi_')\nlatex(xi)\n\\xi\nlatex(xi_)\n\\xi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6267\n\n",
     "created_at": "2009-06-12T15:19:15Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ Keywords: latex, variables
 
 Sage (4.0.1) typesets two different variables as same latex string
 
-
 ```
 var('xi, xi_')
 latex(xi)
@@ -32,7 +31,6 @@ latex(xi)
 latex(xi_)
 \xi
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6267
 
@@ -63,7 +61,7 @@ Is this a bug?  I thought it was a design decision.
 archive/issue_comments_049964.json:
 ```json
 {
-    "body": "Note the following choice Sage makes (by design):\n\n\n```\nsage: latex(var('x0'))\nx_{0}\nsage: latex(var('x_0'))\nx_{0}\n```\n",
+    "body": "Note the following choice Sage makes (by design):\n\n```\nsage: latex(var('x0'))\nx_{0}\nsage: latex(var('x_0'))\nx_{0}\n```",
     "created_at": "2009-06-12T18:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
@@ -74,14 +72,12 @@ archive/issue_comments_049964.json:
 
 Note the following choice Sage makes (by design):
 
-
 ```
 sage: latex(var('x0'))
 x_{0}
 sage: latex(var('x_0'))
 x_{0}
 ```
-
 
 
 

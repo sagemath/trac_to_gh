@@ -3,7 +3,7 @@
 archive/issues_001764.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe url in trac emails is typically something like\n\n```\nhttp://modular.math.washington.edu:9002/sage_trac/ticket/1657\n```\n\nbut it should be\n\n```\nhttp://trac.sagemath.org/sage_trac/ticket/1657\n```\n\n\nThis is very bad, because people behind certain firewalls can only\nview the latter URL and not the former.  Also the latter URL is stable,\nbut the former could easily change, e.g., if I run trac on a different port. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1764\n\n",
+    "body": "Assignee: mabshoff\n\nThe url in trac emails is typically something like\n\n```\nhttp://modular.math.washington.edu:9002/sage_trac/ticket/1657\n```\nbut it should be\n\n```\nhttp://trac.sagemath.org/sage_trac/ticket/1657\n```\n\nThis is very bad, because people behind certain firewalls can only\nview the latter URL and not the former.  Also the latter URL is stable,\nbut the former could easily change, e.g., if I run trac on a different port. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1764\n\n",
     "created_at": "2008-01-13T04:46:12Z",
     "labels": [
         "component: website/wiki",
@@ -23,13 +23,11 @@ The url in trac emails is typically something like
 ```
 http://modular.math.washington.edu:9002/sage_trac/ticket/1657
 ```
-
 but it should be
 
 ```
 http://trac.sagemath.org/sage_trac/ticket/1657
 ```
-
 
 This is very bad, because people behind certain firewalls can only
 view the latter URL and not the former.  Also the latter URL is stable,

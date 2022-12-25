@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8868
 archive/issue_comments_081378.json:
 ```json
 {
-    "body": "Some comments from #8834:\nR install guide says:\n\n```\nUnless you do not want to view graphs on-screen you need \u2018X11\u2019 installed, including its headers and client libraries. For recent Fedora distributions it means (at least) \u2018libX11\u2019, \u2018libX11-devel\u2019, \u2018libXt\u2019 and \u2018libXt-devel\u2019. On Debian we recommend the meta-package \u2018xorg-dev\u2019. If you really do not want these you will need to explicitly configure R without X11, using --with-x=no.\n```\n\nBut see [this](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/Devices.html), which talks about the devices more generally, as well as the R_DEFAULT_DEVICE variable.  In particular, the [pdf](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/pdf.html) output, or png via the [bitmap](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/dev2bitmap.html) function, could be platform-independent enough to reinstate doctests for R graphics.  Though the bitmap function apparently needs ghostscript, though, which we also can't always count on being present, I don't think.",
+    "body": "Some comments from #8834:\nR install guide says:\n\n```\nUnless you do not want to view graphs on-screen you need \u2018X11\u2019 installed, including its headers and client libraries. For recent Fedora distributions it means (at least) \u2018libX11\u2019, \u2018libX11-devel\u2019, \u2018libXt\u2019 and \u2018libXt-devel\u2019. On Debian we recommend the meta-package \u2018xorg-dev\u2019. If you really do not want these you will need to explicitly configure R without X11, using --with-x=no.\n```\nBut see [this](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/Devices.html), which talks about the devices more generally, as well as the R_DEFAULT_DEVICE variable.  In particular, the [pdf](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/pdf.html) output, or png via the [bitmap](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/dev2bitmap.html) function, could be platform-independent enough to reinstate doctests for R graphics.  Though the bitmap function apparently needs ghostscript, though, which we also can't always count on being present, I don't think.",
     "created_at": "2010-05-04T15:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ R install guide says:
 ```
 Unless you do not want to view graphs on-screen you need ‘X11’ installed, including its headers and client libraries. For recent Fedora distributions it means (at least) ‘libX11’, ‘libX11-devel’, ‘libXt’ and ‘libXt-devel’. On Debian we recommend the meta-package ‘xorg-dev’. If you really do not want these you will need to explicitly configure R without X11, using --with-x=no.
 ```
-
 But see [this](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/Devices.html), which talks about the devices more generally, as well as the R_DEFAULT_DEVICE variable.  In particular, the [pdf](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/pdf.html) output, or png via the [bitmap](http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/dev2bitmap.html) function, could be platform-independent enough to reinstate doctests for R graphics.  Though the bitmap function apparently needs ghostscript, though, which we also can't always count on being present, I don't think.
 
 
@@ -114,7 +113,7 @@ cc:ing drkirkby only because he knows about Sage components picking up (or not) 
 archive/issue_comments_081382.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> Hmm, that's bad.  We include libpng as part of Sage, as far as I know (libpng-1.2.35.p2.spkg).  So somehow R wasn't picking up the Sage copy of libpng.   That is very interesting.  And bad.\n> \n> cc:ing drkirkby only because he knows about Sage components picking up (or not) non-Sage libraries.\n\nUsing Sage 4.6.1.alpha0 on my OpenSolaris 06/2009 machine, I just run those two commands given on ask.sagemath.question:\n\n\n```\nsage:  r.eval('capabilities(\"png\")')\n'  png \\nFALSE '\nsage: r.eval('capabilities(\"X11\")')\n'  X11 \\nFALSE '\nsage: \n```\n\n\nlooks like I have neither PNG or X support built in. This is odd. When I check `spkg/logs/r-2.10.1.p4.log` I see:\n\n\n```\nchecking if libpng version >= 1.0.5... yes\n```\n\n\nthen later \n\n\n```\nR is now configured for i386-pc-solaris2.11\n\n  Source directory:          .\n  Installation directory:    /export/home/drkirkby/sage-4.6.1.alpha0/local\n\n  C compiler:                gcc -std=gnu99  -I/export/home/drkirkby/sage-4.6.1.alpha0/local/include -L/export/home/drkirkby/sage-4.6.1.alpha0/local/lib/\n  Fortran 77 compiler:       sage_fortran  -g -O2\n\n  C++ compiler:              g++  -g -O2\n  Fortran 90/95 compiler:    sage_fortran -g -O2\n  Obj-C compiler:\n\n  Interfaces supported:\n  External libraries:        readline\n  Additional capabilities:   PNG, JPEG, TIFF, NLS\n  Options enabled:           shared R library, shared BLAS, R profiling, Java\n\n  Recommended packages:      yes\n```\n\n\nSo despite PNG support apparently built in, `r.eval('capabilities(\"png\")')` indicates otherwise. \n\nIt's difficult to know what to trust. \n\nDave",
+    "body": "Replying to [comment:4 kcrisman]:\n> Hmm, that's bad.  We include libpng as part of Sage, as far as I know (libpng-1.2.35.p2.spkg).  So somehow R wasn't picking up the Sage copy of libpng.   That is very interesting.  And bad.\n> \n> cc:ing drkirkby only because he knows about Sage components picking up (or not) non-Sage libraries.\n\n\nUsing Sage 4.6.1.alpha0 on my OpenSolaris 06/2009 machine, I just run those two commands given on ask.sagemath.question:\n\n```\nsage:  r.eval('capabilities(\"png\")')\n'  png \\nFALSE '\nsage: r.eval('capabilities(\"X11\")')\n'  X11 \\nFALSE '\nsage: \n```\n\nlooks like I have neither PNG or X support built in. This is odd. When I check `spkg/logs/r-2.10.1.p4.log` I see:\n\n```\nchecking if libpng version >= 1.0.5... yes\n```\n\nthen later \n\n```\nR is now configured for i386-pc-solaris2.11\n\n  Source directory:          .\n  Installation directory:    /export/home/drkirkby/sage-4.6.1.alpha0/local\n\n  C compiler:                gcc -std=gnu99  -I/export/home/drkirkby/sage-4.6.1.alpha0/local/include -L/export/home/drkirkby/sage-4.6.1.alpha0/local/lib/\n  Fortran 77 compiler:       sage_fortran  -g -O2\n\n  C++ compiler:              g++  -g -O2\n  Fortran 90/95 compiler:    sage_fortran -g -O2\n  Obj-C compiler:\n\n  Interfaces supported:\n  External libraries:        readline\n  Additional capabilities:   PNG, JPEG, TIFF, NLS\n  Options enabled:           shared R library, shared BLAS, R profiling, Java\n\n  Recommended packages:      yes\n```\n\nSo despite PNG support apparently built in, `r.eval('capabilities(\"png\")')` indicates otherwise. \n\nIt's difficult to know what to trust. \n\nDave",
     "created_at": "2010-11-09T18:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
@@ -128,8 +127,8 @@ Replying to [comment:4 kcrisman]:
 > 
 > cc:ing drkirkby only because he knows about Sage components picking up (or not) non-Sage libraries.
 
-Using Sage 4.6.1.alpha0 on my OpenSolaris 06/2009 machine, I just run those two commands given on ask.sagemath.question:
 
+Using Sage 4.6.1.alpha0 on my OpenSolaris 06/2009 machine, I just run those two commands given on ask.sagemath.question:
 
 ```
 sage:  r.eval('capabilities("png")')
@@ -139,17 +138,13 @@ sage: r.eval('capabilities("X11")')
 sage: 
 ```
 
-
 looks like I have neither PNG or X support built in. This is odd. When I check `spkg/logs/r-2.10.1.p4.log` I see:
-
 
 ```
 checking if libpng version >= 1.0.5... yes
 ```
 
-
 then later 
-
 
 ```
 R is now configured for i386-pc-solaris2.11
@@ -172,7 +167,6 @@ R is now configured for i386-pc-solaris2.11
   Recommended packages:      yes
 ```
 
-
 So despite PNG support apparently built in, `r.eval('capabilities("png")')` indicates otherwise. 
 
 It's difficult to know what to trust. 
@@ -186,7 +180,7 @@ Dave
 archive/issue_comments_081383.json:
 ```json
 {
-    "body": "Just putting this info here - from [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/7d911e59a649eaf6/9ab984487050b968):\n\n```\nThis binary package works for me without having xorg-dev packages/ \nheaders installed, i.e. \nsage -sh \nR \ndemo(graphics) \nproduces the demo-plots. During creation of the binaries the headers \nare needed, but not for execution\n```\n",
+    "body": "Just putting this info here - from [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/7d911e59a649eaf6/9ab984487050b968):\n\n```\nThis binary package works for me without having xorg-dev packages/ \nheaders installed, i.e. \nsage -sh \nR \ndemo(graphics) \nproduces the demo-plots. During creation of the binaries the headers \nare needed, but not for execution\n```",
     "created_at": "2011-01-12T16:43:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
@@ -206,7 +200,6 @@ demo(graphics)
 produces the demo-plots. During creation of the binaries the headers 
 are needed, but not for execution
 ```
-
 
 
 
@@ -233,7 +226,7 @@ See also [this R-devel thread](https://stat.ethz.ch/pipermail/r-devel/2011-April
 archive/issue_comments_081385.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> See also [this R-devel thread](https://stat.ethz.ch/pipermail/r-devel/2011-April/060600.html) for more information which may lead us to a resolution.\n\nIn particular, it looks like one has to compile on a machine (if Linux) that has a working display in order for png to pick up the X11.  That sounds weird to me, but it's how it's written.  Or we have to use Cairo, which I don't know that we want to add to the tarball.",
+    "body": "Replying to [comment:7 kcrisman]:\n> See also [this R-devel thread](https://stat.ethz.ch/pipermail/r-devel/2011-April/060600.html) for more information which may lead us to a resolution.\n\n\nIn particular, it looks like one has to compile on a machine (if Linux) that has a working display in order for png to pick up the X11.  That sounds weird to me, but it's how it's written.  Or we have to use Cairo, which I don't know that we want to add to the tarball.",
     "created_at": "2011-04-21T13:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8868",
     "type": "issue_comment",
@@ -244,6 +237,7 @@ archive/issue_comments_081385.json:
 
 Replying to [comment:7 kcrisman]:
 > See also [this R-devel thread](https://stat.ethz.ch/pipermail/r-devel/2011-April/060600.html) for more information which may lead us to a resolution.
+
 
 In particular, it looks like one has to compile on a machine (if Linux) that has a working display in order for png to pick up the X11.  That sounds weird to me, but it's how it's written.  Or we have to use Cairo, which I don't know that we want to add to the tarball.
 

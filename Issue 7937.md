@@ -3,7 +3,7 @@
 archive/issues_007937.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nThe SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):\n\n```sh\nhg stat\n! sass/config.rb\n! sass/readme.txt\n! sass/src/account_settings.sass\n! sass/src/main.sass\n! sass/src/master.sass\n! sass/src/partials/_mixins.sass\n! sass/src/registration.sass\n! sass/src/test_report.sass\n! sass/src/typography/_base.sass\n! sass/src/user_management.sass\n? release_notes.txt\n? setup.cfg\n```\n\nI think we just need to patch the `MANIFEST.in`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7937\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nThe SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):\n\n```sh\nhg stat\n! sass/config.rb\n! sass/readme.txt\n! sass/src/account_settings.sass\n! sass/src/main.sass\n! sass/src/master.sass\n! sass/src/partials/_mixins.sass\n! sass/src/registration.sass\n! sass/src/test_report.sass\n! sass/src/typography/_base.sass\n! sass/src/user_management.sass\n? release_notes.txt\n? setup.cfg\n```\nI think we just need to patch the `MANIFEST.in`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7937\n\n",
     "created_at": "2010-01-15T18:49:44Z",
     "labels": [
         "component: notebook",
@@ -38,7 +38,6 @@ hg stat
 ? release_notes.txt
 ? setup.cfg
 ```
-
 I think we just need to patch the `MANIFEST.in`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7937

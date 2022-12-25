@@ -3,7 +3,7 @@
 archive/issues_007015.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nthe ratpoints spkg builds an executable we just throw away.  On Cygwin it fails though changing the link order from\n\n```\n\t    -lgmp -lm -lratpoints\n\tto\n\t    -lm -lratpoints -lgmp\n```\n\nwould fix the problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7015\n\n",
+    "body": "Assignee: mabshoff\n\nthe ratpoints spkg builds an executable we just throw away.  On Cygwin it fails though changing the link order from\n\n```\n\t    -lgmp -lm -lratpoints\n\tto\n\t    -lm -lratpoints -lgmp\n```\nwould fix the problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7015\n\n",
     "created_at": "2009-09-25T22:15:09Z",
     "labels": [
         "component: packages: standard",
@@ -25,7 +25,6 @@ the ratpoints spkg builds an executable we just throw away.  On Cygwin it fails 
 	to
 	    -lm -lratpoints -lgmp
 ```
-
 would fix the problem. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7015
@@ -59,7 +58,7 @@ Here is the spkg:
 archive/issue_comments_057952.json:
 ```json
 {
-    "body": "The only change in the spkg package is:\n\n\n```\n-make\n+make libratpoints.a\n```\n\n\nsince this is all that is needed, it's +1 from me.",
+    "body": "The only change in the spkg package is:\n\n```\n-make\n+make libratpoints.a\n```\n\nsince this is all that is needed, it's +1 from me.",
     "created_at": "2009-09-25T22:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_comment",
@@ -70,12 +69,10 @@ archive/issue_comments_057952.json:
 
 The only change in the spkg package is:
 
-
 ```
 -make
 +make libratpoints.a
 ```
-
 
 since this is all that is needed, it's +1 from me.
 

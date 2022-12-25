@@ -3,7 +3,7 @@
 archive/issues_001765.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @dfdeshom\n\n\n```\nsage: var(\"s,i,b,m,g\");\nsage: sys = [ m*(1-s) - b*s*i, b*s*i-g*i ];\nsage: equilibria = solve(sys,s,i);\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n> solve's\n> syntax seems assymetric as used here.  Shouldn't the second argument\n> be a sequence of variables?\n\nYou mean like this:\n\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\nThat seems like a really good idea.\nNote that right now at least you can do the following\n(note the *) and it will work:\n\nsage: solve(sys, *[s, i])\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n```\n\n\nThis would be very easy to implement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1765\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dfdeshom\n\n```\nsage: var(\"s,i,b,m,g\");\nsage: sys = [ m*(1-s) - b*s*i, b*s*i-g*i ];\nsage: equilibria = solve(sys,s,i);\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n> solve's\n> syntax seems assymetric as used here.  Shouldn't the second argument\n> be a sequence of variables?\n\nYou mean like this:\n\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\nThat seems like a really good idea.\nNote that right now at least you can do the following\n(note the *) and it will work:\n\nsage: solve(sys, *[s, i])\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n```\n\nThis would be very easy to implement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1765\n\n",
     "created_at": "2008-01-13T05:24:26Z",
     "labels": [
         "component: calculus"
@@ -18,7 +18,6 @@ archive/issues_001765.json:
 Assignee: @williamstein
 
 CC:  @dfdeshom
-
 
 ```
 sage: var("s,i,b,m,g");
@@ -43,7 +42,6 @@ sage: solve(sys, *[s, i])
 [[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]
 
 ```
-
 
 This would be very easy to implement. 
 
@@ -93,7 +91,7 @@ archive/issue_events_004282.json:
 archive/issue_comments_011118.json:
 ```json
 {
-    "body": "The patch doesn't actually do what the description asks for; more precisely, instead of the desired behavior\n\n\n```\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n```\n\n\nthis still throws a ValueError.",
+    "body": "The patch doesn't actually do what the description asks for; more precisely, instead of the desired behavior\n\n```\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n```\n\nthis still throws a ValueError.",
     "created_at": "2008-03-13T12:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
@@ -104,12 +102,10 @@ archive/issue_comments_011118.json:
 
 The patch doesn't actually do what the description asks for; more precisely, instead of the desired behavior
 
-
 ```
 sage: solve(sys, [s, i])              # this is not implemented
 [[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]
 ```
-
 
 this still throws a ValueError.
 

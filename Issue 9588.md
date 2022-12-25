@@ -3,7 +3,7 @@
 archive/issues_009588.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: is_prime_power\n\nCurrently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.\n\n\n```\nsage: is_prime_power(1/2197)\nTrue\nsage: is_prime_power(1/100)\nFalse\nsage: is_prime_power(2/5)\nFalse\n```\n\n\nThis is also the behavior of Mathematica's PrimePowerQ function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9588\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: is_prime_power\n\nCurrently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.\n\n```\nsage: is_prime_power(1/2197)\nTrue\nsage: is_prime_power(1/100)\nFalse\nsage: is_prime_power(2/5)\nFalse\n```\n\nThis is also the behavior of Mathematica's PrimePowerQ function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9588\n\n",
     "created_at": "2010-07-23T14:55:18Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ Keywords: is_prime_power
 
 Currently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.
 
-
 ```
 sage: is_prime_power(1/2197)
 True
@@ -31,7 +30,6 @@ False
 sage: is_prime_power(2/5)
 False
 ```
-
 
 This is also the behavior of Mathematica's PrimePowerQ function.
 
@@ -138,7 +136,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092560.json:
 ```json
 {
-    "body": "Replying to [comment:2 cwitty]:\n\nThanks for the pointers.  Please let me know if I missed something else from the guidelines (it's my first patch).\n\n> Doesn't apply to sage-4.5.2.alpha0.  Could you update your patch?\n\nI downloaded the most recent available sage (4.5) and made a new patch.  Does this solve the issue?  If not, what can I do?",
+    "body": "Replying to [comment:2 cwitty]:\n\nThanks for the pointers.  Please let me know if I missed something else from the guidelines (it's my first patch).\n\n> Doesn't apply to sage-4.5.2.alpha0.  Could you update your patch?\n\n\nI downloaded the most recent available sage (4.5) and made a new patch.  Does this solve the issue?  If not, what can I do?",
     "created_at": "2010-07-24T22:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
@@ -152,6 +150,7 @@ Replying to [comment:2 cwitty]:
 Thanks for the pointers.  Please let me know if I missed something else from the guidelines (it's my first patch).
 
 > Doesn't apply to sage-4.5.2.alpha0.  Could you update your patch?
+
 
 I downloaded the most recent available sage (4.5) and made a new patch.  Does this solve the issue?  If not, what can I do?
 

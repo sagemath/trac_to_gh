@@ -71,7 +71,7 @@ Michael
 archive/issue_comments_026565.json:
 ```json
 {
-    "body": "It's there:\n\n\n```\nsage: G = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\nsage: G.is_cyclic()\nFalse\nsage:        \n```\n",
+    "body": "It's there:\n\n```\nsage: G = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\nsage: G.is_cyclic()\nFalse\nsage:        \n```",
     "created_at": "2008-07-31T14:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ archive/issue_comments_026565.json:
 
 It's there:
 
-
 ```
 sage: G = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])
 sage: G.is_cyclic()
@@ -92,13 +91,12 @@ sage:
 
 
 
-
 ---
 
 archive/issue_comments_026566.json:
 ```json
 {
-    "body": "It isn't there for AbelianGroup:\n\n\n```\nF = AbelianGroup(3,[2]*3)\nF.is_cyclic()\n```\n\n\ngives\n\n\n```\nTraceback (click to the left for traceback)\n...\nAttributeError: 'AbelianGroup_class' object has no attribute 'is_cyclic'\n```\n",
+    "body": "It isn't there for AbelianGroup:\n\n```\nF = AbelianGroup(3,[2]*3)\nF.is_cyclic()\n```\n\ngives\n\n```\nTraceback (click to the left for traceback)\n...\nAttributeError: 'AbelianGroup_class' object has no attribute 'is_cyclic'\n```",
     "created_at": "2008-07-31T15:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -109,22 +107,18 @@ archive/issue_comments_026566.json:
 
 It isn't there for AbelianGroup:
 
-
 ```
 F = AbelianGroup(3,[2]*3)
 F.is_cyclic()
 ```
 
-
 gives
-
 
 ```
 Traceback (click to the left for traceback)
 ...
 AttributeError: 'AbelianGroup_class' object has no attribute 'is_cyclic'
 ```
-
 
 
 
@@ -208,7 +202,7 @@ The attached patch passes sage -t and seems to do the job.
 archive/issue_comments_026571.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThis implementation is wrong and inefficient.\n\n1. Wrong -- the group Z/2 + Z/4 is cyclic.\n\n```\nsage: AbelianGroup([2,4]).is_cyclic()\nTrue\n```\n\n\n\n2. Inefficient -- even if it were right, the actual way it is coded is inefficient, since once you find a duplicate you would be done.  No need to iterate through the whole loop then check a flag at the end.\n\n\n---\n\nI just noticed that the function elementary_divisors on finite abelian groups isn't documented, in that it doesn't say what it does.   Since it could be ambiguous I wish it were documented. \n\nI think A.is_cyclic() should be true if and only if every element of the output of elementary_divisors is coprime.  Given that factoring prime powers is fast, the following should be a reasonable is_cyclic function (and it's only 2 lines!):\n\n```\nsage: def is_cyclic(A):\n    v = [a.factor()[0][0] if a else 0 for a in A.elementary_divisors()]\n    return len(v) == len(set(v))\n```\n\n\nThis works on finite groups:\n\n```\nsage: is_cyclic(AbelianGroup([3,5]))\nTrue\nsage: is_cyclic(AbelianGroup([2,4]))\nFalse\nsage: is_cyclic(AbelianGroup([2,2]))\nFalse\nsage: is_cyclic(AbelianGroup([6]))\nTrue\nsage: is_cyclic(AbelianGroup([15,1,21]))\nFalse\n```\n\n\nThis fails on infinite groups since the function elementary_divisors itself has a bug on infinite groups!\n\n```\nsage: AbelianGroup([0,5]).elementary_divisors()\n...\nArithmeticError: Prime factorization of 0 not defined.\n```\n\n\nI think the above should return [0,5].\n\nThat said, it is disturbing that elementary_divisors isn't documented, and moreover the choice of definition is inconsistent with the one for matrices over ZZ (made by pari, actually):\n\n```\nsage: a = matrix(ZZ, 3, [0,0,0, 0,5,0, 0,0,3]) ; a\n[0 0 0]\n[0 5 0]\n[0 0 3]\nsage: a.elementary_divisors()\n[1, 15, 0]\nsage: AbelianGroup([5,3]).elementary_divisors()\n[3, 5]\n```\n\n\nSo elementary_divisors for matrices gives invariants d_i where d_1 | d_2 | ..., \nWith that choice of elementary divisors definition, the is_cyclic function would be easy:\n\n```\ndef is_cyclic(A):\n    return len(A.elementary_divisors()) <= 1\n```\n\n\nI think the elementary_divisors function for abelian groups could be \"cheesily\" fixed for now by just defining things in terms of matrices:\n\n```\nsage: def elementary_divisors(A):\n....:     v = A.invariants()\n....:     return diagonal_matrix(ZZ,v).elementary_divisors()\n....: \nsage: elementary_divisors(AbelianGroup([5,3]))\n[1, 15]\nsage: elementary_divisors(AbelianGroup([0,0,5,3]))\n[1, 15, 0, 0]\n```\n\nThis obviously sucks because of the waste of memory (a matrix takes more), but is good because at least it is definitely *correct* and consistent, and I think correct and consistent is more important than speed.  We can fix the speed later once this consistency is established and tested. \n\nSummary: \n1. Change elementary_divisors to use matrices for consistency and correctness, and fix all corresponding doctests.\n\n2. Change is_cyclic to just be \"len(self.elementary_divisors()) <= 1\", and add much better doctests for is_cyclic, e.g, testing infinite groups and Z/2 x Z/3, etc.",
+    "body": "REFEREE REPORT:\n\nThis implementation is wrong and inefficient.\n\n1. Wrong -- the group Z/2 + Z/4 is cyclic.\n\n```\nsage: AbelianGroup([2,4]).is_cyclic()\nTrue\n```\n\n\n2. Inefficient -- even if it were right, the actual way it is coded is inefficient, since once you find a duplicate you would be done.  No need to iterate through the whole loop then check a flag at the end.\n\n\n---\n\nI just noticed that the function elementary_divisors on finite abelian groups isn't documented, in that it doesn't say what it does.   Since it could be ambiguous I wish it were documented. \n\nI think A.is_cyclic() should be true if and only if every element of the output of elementary_divisors is coprime.  Given that factoring prime powers is fast, the following should be a reasonable is_cyclic function (and it's only 2 lines!):\n\n```\nsage: def is_cyclic(A):\n    v = [a.factor()[0][0] if a else 0 for a in A.elementary_divisors()]\n    return len(v) == len(set(v))\n```\n\nThis works on finite groups:\n\n```\nsage: is_cyclic(AbelianGroup([3,5]))\nTrue\nsage: is_cyclic(AbelianGroup([2,4]))\nFalse\nsage: is_cyclic(AbelianGroup([2,2]))\nFalse\nsage: is_cyclic(AbelianGroup([6]))\nTrue\nsage: is_cyclic(AbelianGroup([15,1,21]))\nFalse\n```\n\nThis fails on infinite groups since the function elementary_divisors itself has a bug on infinite groups!\n\n```\nsage: AbelianGroup([0,5]).elementary_divisors()\n...\nArithmeticError: Prime factorization of 0 not defined.\n```\n\nI think the above should return [0,5].\n\nThat said, it is disturbing that elementary_divisors isn't documented, and moreover the choice of definition is inconsistent with the one for matrices over ZZ (made by pari, actually):\n\n```\nsage: a = matrix(ZZ, 3, [0,0,0, 0,5,0, 0,0,3]) ; a\n[0 0 0]\n[0 5 0]\n[0 0 3]\nsage: a.elementary_divisors()\n[1, 15, 0]\nsage: AbelianGroup([5,3]).elementary_divisors()\n[3, 5]\n```\n\nSo elementary_divisors for matrices gives invariants d_i where d_1 | d_2 | ..., \nWith that choice of elementary divisors definition, the is_cyclic function would be easy:\n\n```\ndef is_cyclic(A):\n    return len(A.elementary_divisors()) <= 1\n```\n\nI think the elementary_divisors function for abelian groups could be \"cheesily\" fixed for now by just defining things in terms of matrices:\n\n```\nsage: def elementary_divisors(A):\n....:     v = A.invariants()\n....:     return diagonal_matrix(ZZ,v).elementary_divisors()\n....: \nsage: elementary_divisors(AbelianGroup([5,3]))\n[1, 15]\nsage: elementary_divisors(AbelianGroup([0,0,5,3]))\n[1, 15, 0, 0]\n```\nThis obviously sucks because of the waste of memory (a matrix takes more), but is good because at least it is definitely *correct* and consistent, and I think correct and consistent is more important than speed.  We can fix the speed later once this consistency is established and tested. \n\nSummary: \n1. Change elementary_divisors to use matrices for consistency and correctness, and fix all corresponding doctests.\n\n2. Change is_cyclic to just be \"len(self.elementary_divisors()) <= 1\", and add much better doctests for is_cyclic, e.g, testing infinite groups and Z/2 x Z/3, etc.",
     "created_at": "2008-12-11T23:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -229,7 +223,6 @@ True
 ```
 
 
-
 2. Inefficient -- even if it were right, the actual way it is coded is inefficient, since once you find a duplicate you would be done.  No need to iterate through the whole loop then check a flag at the end.
 
 
@@ -244,7 +237,6 @@ sage: def is_cyclic(A):
     v = [a.factor()[0][0] if a else 0 for a in A.elementary_divisors()]
     return len(v) == len(set(v))
 ```
-
 
 This works on finite groups:
 
@@ -261,7 +253,6 @@ sage: is_cyclic(AbelianGroup([15,1,21]))
 False
 ```
 
-
 This fails on infinite groups since the function elementary_divisors itself has a bug on infinite groups!
 
 ```
@@ -269,7 +260,6 @@ sage: AbelianGroup([0,5]).elementary_divisors()
 ...
 ArithmeticError: Prime factorization of 0 not defined.
 ```
-
 
 I think the above should return [0,5].
 
@@ -286,7 +276,6 @@ sage: AbelianGroup([5,3]).elementary_divisors()
 [3, 5]
 ```
 
-
 So elementary_divisors for matrices gives invariants d_i where d_1 | d_2 | ..., 
 With that choice of elementary divisors definition, the is_cyclic function would be easy:
 
@@ -294,7 +283,6 @@ With that choice of elementary divisors definition, the is_cyclic function would
 def is_cyclic(A):
     return len(A.elementary_divisors()) <= 1
 ```
-
 
 I think the elementary_divisors function for abelian groups could be "cheesily" fixed for now by just defining things in terms of matrices:
 
@@ -308,7 +296,6 @@ sage: elementary_divisors(AbelianGroup([5,3]))
 sage: elementary_divisors(AbelianGroup([0,0,5,3]))
 [1, 15, 0, 0]
 ```
-
 This obviously sucks because of the waste of memory (a matrix takes more), but is good because at least it is definitely *correct* and consistent, and I think correct and consistent is more important than speed.  We can fix the speed later once this consistency is established and tested. 
 
 Summary: 
@@ -363,7 +350,7 @@ Apply other patch first. Based on 3.2.2.alpha1
 archive/issue_comments_026574.json:
 ```json
 {
-    "body": "Followed instructions almost to the letter. (I think the code for \n\n\n```\ndef elementary_divisors...\n```\n\n\ngiven above needed a minor change.) Passes sage -t. I will report problems with sage -testall. (This takes a long time on my machine ubuntu 8.10 machine currently.) Hope it is okay to post the patch first.",
+    "body": "Followed instructions almost to the letter. (I think the code for \n\n```\ndef elementary_divisors...\n```\n\ngiven above needed a minor change.) Passes sage -t. I will report problems with sage -testall. (This takes a long time on my machine ubuntu 8.10 machine currently.) Hope it is okay to post the patch first.",
     "created_at": "2008-12-12T02:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -374,11 +361,9 @@ archive/issue_comments_026574.json:
 
 Followed instructions almost to the letter. (I think the code for 
 
-
 ```
 def elementary_divisors...
 ```
-
 
 given above needed a minor change.) Passes sage -t. I will report problems with sage -testall. (This takes a long time on my machine ubuntu 8.10 machine currently.) Hope it is okay to post the patch first.
 
@@ -389,7 +374,7 @@ given above needed a minor change.) Passes sage -t. I will report problems with 
 archive/issue_comments_026575.json:
 ```json
 {
-    "body": "* Is this statement that is in the docs still true? \"Thus we see that the \"invariants\" are not the invariant factors but the \"elementary divisors\" (in the terminology of Rotman [R]).\"\n\n  * It doesn't make sense to include in the docs that paragraph about how to compute the elementary divisors, because we didn't implement that algorithm.  It would make sense to include that paragraph as a comment and say -- when somebody wants to speed this code up, please implement this algorithm.\n\n  * Is this actually necessary:\n\n```\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\n\nSince I think that the only possible way 1 can be in evids is if evids = [1], in which case the group is trivial, hence cyclic.",
+    "body": "* Is this statement that is in the docs still true? \"Thus we see that the \"invariants\" are not the invariant factors but the \"elementary divisors\" (in the terminology of Rotman [R]).\"\n\n  * It doesn't make sense to include in the docs that paragraph about how to compute the elementary divisors, because we didn't implement that algorithm.  It would make sense to include that paragraph as a comment and say -- when somebody wants to speed this code up, please implement this algorithm.\n\n  * Is this actually necessary:\n\n```\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\nSince I think that the only possible way 1 can be in evids is if evids = [1], in which case the group is trivial, hence cyclic.",
     "created_at": "2008-12-12T17:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -408,7 +393,6 @@ archive/issue_comments_026575.json:
  	665	        if 1 in edivs: 
  	666	            edivs.remove(1) 
 ```
-
 Since I think that the only possible way 1 can be in evids is if evids = [1], in which case the group is trivial, hence cyclic.
 
 
@@ -418,7 +402,7 @@ Since I think that the only possible way 1 can be in evids is if evids = [1], in
 archive/issue_comments_026576.json:
 ```json
 {
-    "body": "In reply to \n\n\n```\nIs this actually necessary:\n\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\n\n\nAs elementary_divisors is implemented:\n\n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[1, 6]\n```\n\n\nBut we probably should have \n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[6]\n```\n\n\nsince you want the elementary divisor of AbelianGroup([2,3]) to be the same as that of AbelianGroup([6]). \n\nI'll try to fix this too.",
+    "body": "In reply to \n\n```\nIs this actually necessary:\n\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\n\nAs elementary_divisors is implemented:\n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[1, 6]\n```\n\nBut we probably should have \n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[6]\n```\n\nsince you want the elementary divisor of AbelianGroup([2,3]) to be the same as that of AbelianGroup([6]). \n\nI'll try to fix this too.",
     "created_at": "2008-12-12T23:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3749",
     "type": "issue_comment",
@@ -429,7 +413,6 @@ archive/issue_comments_026576.json:
 
 In reply to 
 
-
 ```
 Is this actually necessary:
 
@@ -437,9 +420,7 @@ Is this actually necessary:
  	666	            edivs.remove(1) 
 ```
 
-
 As elementary_divisors is implemented:
-
 
 ```
 sage: J = AbelianGroup([2,3])
@@ -448,7 +429,6 @@ sage: J.invariants()
 sage: J.elementary_divisors()
 [1, 6]
 ```
-
 
 But we probably should have 
 
@@ -459,7 +439,6 @@ sage: J.invariants()
 sage: J.elementary_divisors()
 [6]
 ```
-
 
 since you want the elementary divisor of AbelianGroup([2,3]) to be the same as that of AbelianGroup([6]). 
 

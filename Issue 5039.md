@@ -156,7 +156,7 @@ Attachment [trac_5039-disjoint_set-ts.patch](tarball://root/attachments/some-uui
 archive/issue_comments_038307.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> * Could you update the ticket's title and description ?\nDone\n\n> * Why did you move the description of the data structure from the module to the function ? `:-/` I prefer when it is at the top of the html documentation, and here you have no idea of what is happening in that module... Plus there is a function and three classes in that module, so something should be said at the module level `:-/`\n\nThe main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\n> * I know it's not the point of this ticket but what would you think of changing `cardinality()` so that it actually returns the cardinality of the partition, and not the cardinality of its union ? And have another method named \"`number_of_elements`\" which would return what `cardinality` currently returns ? Would make more sense, wouldn't it ? It does not have to be in this ticket, though.\n\nPart of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\n> Nice patch though ! Always good to improve the doc `:-)`\n\nThank you. Ready for review again.",
+    "body": "Replying to [comment:4 ncohen]:\n> * Could you update the ticket's title and description ?\n \nDone\n\n> * Why did you move the description of the data structure from the module to the function ? `:-/` I prefer when it is at the top of the html documentation, and here you have no idea of what is happening in that module... Plus there is a function and three classes in that module, so something should be said at the module level `:-/`\n\n\nThe main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\n> * I know it's not the point of this ticket but what would you think of changing `cardinality()` so that it actually returns the cardinality of the partition, and not the cardinality of its union ? And have another method named \"`number_of_elements`\" which would return what `cardinality` currently returns ? Would make more sense, wouldn't it ? It does not have to be in this ticket, though.\n\n\nPart of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\n> Nice patch though ! Always good to improve the doc `:-)`\n\n\nThank you. Ready for review again.",
     "created_at": "2013-03-27T23:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
@@ -167,17 +167,21 @@ archive/issue_comments_038307.json:
 
 Replying to [comment:4 ncohen]:
 > * Could you update the ticket's title and description ?
+ 
 Done
 
 > * Why did you move the description of the data structure from the module to the function ? `:-/` I prefer when it is at the top of the html documentation, and here you have no idea of what is happening in that module... Plus there is a function and three classes in that module, so something should be said at the module level `:-/`
+
 
 The main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.
 
 > * I know it's not the point of this ticket but what would you think of changing `cardinality()` so that it actually returns the cardinality of the partition, and not the cardinality of its union ? And have another method named "`number_of_elements`" which would return what `cardinality` currently returns ? Would make more sense, wouldn't it ? It does not have to be in this ticket, though.
 
+
 Part of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.
 
 > Nice patch though ! Always good to improve the doc `:-)`
+
 
 Thank you. Ready for review again.
 
@@ -224,7 +228,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_038310.json:
 ```json
 {
-    "body": "Hellooooooooooooo !!!!\n\n> The main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\nHmmmmm.. Well, I have the opposite view. With time I add more and more stuff at module level because I use Sage's documentation through Google, and it's hard to find the documentation when it's lost among dozens of functions :-)\n\nhttp://www.sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/vertex_separation.html\n\nBut well, for as long as we fight by adding doc in Sage this fight is a good fight `:-P`\n\n> Part of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\nGot it !\n\nHave fuuuuuuuuuuuuuuuuuuuuun !\n\nNathann",
+    "body": "Hellooooooooooooo !!!!\n\n> The main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\n\nHmmmmm.. Well, I have the opposite view. With time I add more and more stuff at module level because I use Sage's documentation through Google, and it's hard to find the documentation when it's lost among dozens of functions :-)\n\nhttp://www.sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/vertex_separation.html\n\nBut well, for as long as we fight by adding doc in Sage this fight is a good fight `:-P`\n\n> Part of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\n\nGot it !\n\nHave fuuuuuuuuuuuuuuuuuuuuun !\n\nNathann",
     "created_at": "2013-03-28T09:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
@@ -237,6 +241,7 @@ Hellooooooooooooo !!!!
 
 > The main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.
 
+
 Hmmmmm.. Well, I have the opposite view. With time I add more and more stuff at module level because I use Sage's documentation through Google, and it's hard to find the documentation when it's lost among dozens of functions :-)
 
 http://www.sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/vertex_separation.html
@@ -244,6 +249,7 @@ http://www.sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/ve
 But well, for as long as we fight by adding doc in Sage this fight is a good fight `:-P`
 
 > Part of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.
+
 
 Got it !
 
@@ -374,7 +380,7 @@ Sébastien
 archive/issue_comments_038316.json:
 ```json
 {
-    "body": "Replying to [comment:11 slabbe]:\n\n> Having doc in the top of the module (for web doc browsing) vs in the\n> the class (for ?  interactive doc browsing) is a good question.\n\nYup.\n\n> One answer could be to copy the same information in both place...\n\nNah, don't duplicate. Better one good piece of documentation than two\nthings that will diverge.\n\n> At least now, there is a link at the top of the module linking to\n> the class...\n\nI aim to put class-specific documentation in the class (so that it can\nbe accessed by introspection on the class; that's often how the user\nwill get to that). And when there is more than one class, to put an\noverview/tutorial in the module. With cross links.\n\nCheers,\n                                   Nicolas",
+    "body": "Replying to [comment:11 slabbe]:\n\n> Having doc in the top of the module (for web doc browsing) vs in the\n> the class (for ?  interactive doc browsing) is a good question.\n\n\nYup.\n\n> One answer could be to copy the same information in both place...\n\n\nNah, don't duplicate. Better one good piece of documentation than two\nthings that will diverge.\n\n> At least now, there is a link at the top of the module linking to\n> the class...\n\n\nI aim to put class-specific documentation in the class (so that it can\nbe accessed by introspection on the class; that's often how the user\nwill get to that). And when there is more than one class, to put an\noverview/tutorial in the module. With cross links.\n\nCheers,\n                                   Nicolas",
     "created_at": "2013-04-02T13:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5039",
     "type": "issue_comment",
@@ -388,15 +394,18 @@ Replying to [comment:11 slabbe]:
 > Having doc in the top of the module (for web doc browsing) vs in the
 > the class (for ?  interactive doc browsing) is a good question.
 
+
 Yup.
 
 > One answer could be to copy the same information in both place...
+
 
 Nah, don't duplicate. Better one good piece of documentation than two
 things that will diverge.
 
 > At least now, there is a link at the top of the module linking to
 > the class...
+
 
 I aim to put class-specific documentation in the class (so that it can
 be accessed by introspection on the class; that's often how the user

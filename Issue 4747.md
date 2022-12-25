@@ -48,7 +48,7 @@ Attachment [trac_4747.patch](tarball://root/attachments/some-uuid/ticket4747/tra
 archive/issue_comments_035848.json:
 ```json
 {
-    "body": "Patch applies fine and test ok on 32-bit but on 64-bit I get this:\n\n```\nsage -t  \"sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\"**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\", line 319:\n    sage: hash(Cusp(1/3))\nExpected:\n    3713081631933328131    \nGot:\n    163512108431620420\n**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\", line 322:\n    sage: hash(Cusp(oo))\nExpected:\n    3713081631936575706    \nGot:\n    6982220252595711780\n**********************************************************************\n```\n\n\nI am amazed at the effect this has on the speed.  Hashing is not something I ever think about, but clearly I should!",
+    "body": "Patch applies fine and test ok on 32-bit but on 64-bit I get this:\n\n```\nsage -t  \"sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\"**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\", line 319:\n    sage: hash(Cusp(1/3))\nExpected:\n    3713081631933328131    \nGot:\n    163512108431620420\n**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage-hash/sage/modular/cusps.py\", line 322:\n    sage: hash(Cusp(oo))\nExpected:\n    3713081631936575706    \nGot:\n    6982220252595711780\n**********************************************************************\n```\n\nI am amazed at the effect this has on the speed.  Hashing is not something I ever think about, but clearly I should!",
     "created_at": "2008-12-09T22:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ Got:
 **********************************************************************
 ```
 
-
 I am amazed at the effect this has on the speed.  Hashing is not something I ever think about, but clearly I should!
 
 
@@ -105,7 +104,7 @@ John -- is there any chance you forgot to do a `sage -b` before testing this pat
 archive/issue_comments_035850.json:
 ```json
 {
-    "body": "Replying to [comment:2 craigcitro]:\n> John -- is there any chance you forgot to do a `sage -b` before testing this patch? I'm only suspicious because the incorrect values getting returned are exactly the values that `hash(Cusp(1/3))` and `hash(Cusp(oo))` returned **before** the patch ...\n\nMay be.  I'll try again.",
+    "body": "Replying to [comment:2 craigcitro]:\n> John -- is there any chance you forgot to do a `sage -b` before testing this patch? I'm only suspicious because the incorrect values getting returned are exactly the values that `hash(Cusp(1/3))` and `hash(Cusp(oo))` returned **before** the patch ...\n\n\nMay be.  I'll try again.",
     "created_at": "2008-12-14T11:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
@@ -116,6 +115,7 @@ archive/issue_comments_035850.json:
 
 Replying to [comment:2 craigcitro]:
 > John -- is there any chance you forgot to do a `sage -b` before testing this patch? I'm only suspicious because the incorrect values getting returned are exactly the values that `hash(Cusp(1/3))` and `hash(Cusp(oo))` returned **before** the patch ...
+
 
 May be.  I'll try again.
 
@@ -196,7 +196,7 @@ Merged in Sage 3.2.2.rc0
 archive/issue_comments_035854.json:
 ```json
 {
-    "body": "This patch causes the following doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/modular/congroup.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 540, in __main__.example_25\nFailed example:\n    Gamma0(Integer(36)).cusps()###line 514:_sage_    >>> Gamma0(36).cusps()\nExpected:\n    {1/6, 1/4, 1/3, 1/2, 1/9, 0, 1/18, 5/12, Infinity, 1/12, 2/3, 5/6}\nGot:\n    {1/2, 0, 1/3, 1/12, 5/6, 5/12, 1/4, 1/18, 1/6, 1/9, 2/3, Infinity}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1064, in __main__.example_48\nFailed example:\n    Gamma1(Integer(5))._find_cusps()###line 1283:_sage_    >>> Gamma1(5)._find_cusps()Expected:\n    {0, Infinity, 1/2, 2/5}\nGot:    {0, 1/2, Infinity, 2/5}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1066, in __main__.example_48\nFailed example:\n    Gamma1(Integer(35))._find_cusps()###line 1285:_sage_    >>> Gamma1(35)._find_cusps()\nExpected:\n    {3/35, 9/10, 9/14, 11/35, 3/14, 9/35, 3/10, 11/14, 8/35, 4/7, 8/15, Infinity, 13/14, 16/35, 13/35, 0, 4/15, 1/13, 2/35, 1/11, 1/10, 1/17, 1/1\n6, 1/15, 1/14, 1/7, 1/6, 1/5, 1/4, 1/3, 1/2, 6/35, 1/9, 1/8, 6/7, 3/5, 3/7, 7/10, 4/35, 2/5, 17/35, 2/7, 5/7, 1/12, 4/5, 5/14, 12/35, 2/15}\nGot:\n    {4/7, 1/3, 3/35, 16/35, 1/17, 1/15, 6/35, 1/6, 11/14, 3/7, 2/5, 1/11, 4/35, 3/14, 1/2, 6/7, 3/10, 1/14, 1/5, 2/35, 7/10, 5/7, 1/10, 8/15, 0, \n9/14, 13/35, 4/5, 1/13, 1/4, 11/35, 9/10, 1/9, 8/35, Infinity, 12/35, 3/5, 2/7, 1/12, 13/14, 4/15, 9/35, 5/14, 1/8, 17/35, 1/7, 2/15, 1/16}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1397, in __main__.example_65\nFailed example:\n    Gamma0(Integer(90))._find_cusps()###line 1681:_sage_    >>> Gamma0(90)._find_cusps()\nExpected:\n    {1/6, 1/5, 1/3, 1/2, 11/30, 1/9, 2/3, 1/30, Infinity, 5/6, 1/45, 0, 1/18, 1/10, 1/15, 2/15}\nGot:\n    {0, 1/3, 11/30, 5/6, 1/15, 1/10, 2/3, 1/9, Infinity, 1/2, 1/45, 1/18, 1/5, 2/15, 1/6, 1/30}\n**********************************************************************\n```\n\n\nThoughts? \n\nCheers,\n\nMichael",
+    "body": "This patch causes the following doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/modular/congroup.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 540, in __main__.example_25\nFailed example:\n    Gamma0(Integer(36)).cusps()###line 514:_sage_    >>> Gamma0(36).cusps()\nExpected:\n    {1/6, 1/4, 1/3, 1/2, 1/9, 0, 1/18, 5/12, Infinity, 1/12, 2/3, 5/6}\nGot:\n    {1/2, 0, 1/3, 1/12, 5/6, 5/12, 1/4, 1/18, 1/6, 1/9, 2/3, Infinity}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1064, in __main__.example_48\nFailed example:\n    Gamma1(Integer(5))._find_cusps()###line 1283:_sage_    >>> Gamma1(5)._find_cusps()Expected:\n    {0, Infinity, 1/2, 2/5}\nGot:    {0, 1/2, Infinity, 2/5}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1066, in __main__.example_48\nFailed example:\n    Gamma1(Integer(35))._find_cusps()###line 1285:_sage_    >>> Gamma1(35)._find_cusps()\nExpected:\n    {3/35, 9/10, 9/14, 11/35, 3/14, 9/35, 3/10, 11/14, 8/35, 4/7, 8/15, Infinity, 13/14, 16/35, 13/35, 0, 4/15, 1/13, 2/35, 1/11, 1/10, 1/17, 1/1\n6, 1/15, 1/14, 1/7, 1/6, 1/5, 1/4, 1/3, 1/2, 6/35, 1/9, 1/8, 6/7, 3/5, 3/7, 7/10, 4/35, 2/5, 17/35, 2/7, 5/7, 1/12, 4/5, 5/14, 12/35, 2/15}\nGot:\n    {4/7, 1/3, 3/35, 16/35, 1/17, 1/15, 6/35, 1/6, 11/14, 3/7, 2/5, 1/11, 4/35, 3/14, 1/2, 6/7, 3/10, 1/14, 1/5, 2/35, 7/10, 5/7, 1/10, 8/15, 0, \n9/14, 13/35, 4/5, 1/13, 1/4, 11/35, 9/10, 1/9, 8/35, Infinity, 12/35, 3/5, 2/7, 1/12, 13/14, 4/15, 9/35, 5/14, 1/8, 17/35, 1/7, 2/15, 1/16}\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/modular/congroup.py\", line 1397, in __main__.example_65\nFailed example:\n    Gamma0(Integer(90))._find_cusps()###line 1681:_sage_    >>> Gamma0(90)._find_cusps()\nExpected:\n    {1/6, 1/5, 1/3, 1/2, 11/30, 1/9, 2/3, 1/30, Infinity, 5/6, 1/45, 0, 1/18, 1/10, 1/15, 2/15}\nGot:\n    {0, 1/3, 11/30, 5/6, 1/15, 1/10, 2/3, 1/9, Infinity, 1/2, 1/45, 1/18, 1/5, 2/15, 1/6, 1/30}\n**********************************************************************\n```\n\nThoughts? \n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T18:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4747",
     "type": "issue_comment",
@@ -243,7 +243,6 @@ Got:
     {0, 1/3, 11/30, 5/6, 1/15, 1/10, 2/3, 1/9, Infinity, 1/2, 1/45, 1/18, 1/5, 2/15, 1/6, 1/30}
 **********************************************************************
 ```
-
 
 Thoughts? 
 

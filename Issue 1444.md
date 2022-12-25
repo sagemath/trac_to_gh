@@ -3,7 +3,7 @@
 archive/issues_001444.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nHi,\n\nThere are a few very serious (but easy to fix)\nproblems with the current sage and upcoming packages\nthat involving hardcoding of paths.  These\nwill cause problems if you move a sage install.\n\nPOLYBORI:\nI noticed this in a SAGE_ROOT/local/bin/:\n\n   lrwxr-xr-x  1 was  was       47 Dec  4 10:52 ipbori -> /Users/was/s/local/share/polybori/ipbori/ipbori\n\nThat link *must* not be hard coded.  Make sure this gets fixed before polybori is in sage.\n\nSINGULAR (very serious):\n   Several Singular-related files in SAGE_ROOT/local/bin/ have hardcoded paths.\n   This makes it so singular will fail to work for everybody who downloads a sage\n   binary right now :-(. \n\n   The package singular-3-0-4-1-20071209.spkg fixes the problem.  Just do \n   sage -upgrade to get it, or download it from \n       http://sagemath.org/packages/standard/singular-3-0-4-1-20071209.spkg\n\nBZIP2:\n   Some minor path hardcoding problems.  Easy to fix.  I've put the file that needs\nto be replaced here...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1444\n\n",
+    "body": "Assignee: mabshoff\n\n```\nHi,\n\nThere are a few very serious (but easy to fix)\nproblems with the current sage and upcoming packages\nthat involving hardcoding of paths.  These\nwill cause problems if you move a sage install.\n\nPOLYBORI:\nI noticed this in a SAGE_ROOT/local/bin/:\n\n   lrwxr-xr-x  1 was  was       47 Dec  4 10:52 ipbori -> /Users/was/s/local/share/polybori/ipbori/ipbori\n\nThat link *must* not be hard coded.  Make sure this gets fixed before polybori is in sage.\n\nSINGULAR (very serious):\n   Several Singular-related files in SAGE_ROOT/local/bin/ have hardcoded paths.\n   This makes it so singular will fail to work for everybody who downloads a sage\n   binary right now :-(. \n\n   The package singular-3-0-4-1-20071209.spkg fixes the problem.  Just do \n   sage -upgrade to get it, or download it from \n       http://sagemath.org/packages/standard/singular-3-0-4-1-20071209.spkg\n\nBZIP2:\n   Some minor path hardcoding problems.  Easy to fix.  I've put the file that needs\nto be replaced here...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1444\n\n",
     "created_at": "2007-12-10T01:11:39Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_001444.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 Hi,
@@ -48,7 +47,6 @@ BZIP2:
    Some minor path hardcoding problems.  Easy to fix.  I've put the file that needs
 to be replaced here...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1444
 

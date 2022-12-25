@@ -92,7 +92,7 @@ The attachment should allow you to do these things from the Sage command line an
 archive/issue_comments_076986.json:
 ```json
 {
-    "body": "From IRC:\n\n```\n16:33 < mhansen> I don't think things like group_theory_tutorial should be at \n                 the top-level.\n16:34 < mvngu> mhansen: Another way is: browse_sage_doc(\"group_theory_tutorial\")\n16:34 < mvngu> The original goal was to able to do sage.groups.tutorial()\n16:35 < mvngu> But I can't figure out how to put the group theory tutorial \n               within the Sage library, and to also list it within the thematic \n               tutorials page.\n16:40 < palmieri> Put this in sage/groups/__init__.py:  from sage.misc.sagedoc \n                  import browse_sage_doc\n16:40 < palmieri> tutorial = browse_sage_doc.group_theory_tutorial\n16:40 < mvngu> OK. Let try...\n16:40 < palmieri> Put those two lines in sage/groups/__init__.py\n16:41 < palmieri> Or maybe \"from sage.misc.sagedoc import groups_tutorial as \n                  tutorial\"\n16:41 < mvngu> The last syntax looks better.\n```\n",
+    "body": "From IRC:\n\n```\n16:33 < mhansen> I don't think things like group_theory_tutorial should be at \n                 the top-level.\n16:34 < mvngu> mhansen: Another way is: browse_sage_doc(\"group_theory_tutorial\")\n16:34 < mvngu> The original goal was to able to do sage.groups.tutorial()\n16:35 < mvngu> But I can't figure out how to put the group theory tutorial \n               within the Sage library, and to also list it within the thematic \n               tutorials page.\n16:40 < palmieri> Put this in sage/groups/__init__.py:  from sage.misc.sagedoc \n                  import browse_sage_doc\n16:40 < palmieri> tutorial = browse_sage_doc.group_theory_tutorial\n16:40 < mvngu> OK. Let try...\n16:40 < palmieri> Put those two lines in sage/groups/__init__.py\n16:41 < palmieri> Or maybe \"from sage.misc.sagedoc import groups_tutorial as \n                  tutorial\"\n16:41 < mvngu> The last syntax looks better.\n```",
     "created_at": "2010-03-14T00:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ From IRC:
                   tutorial"
 16:41 < mvngu> The last syntax looks better.
 ```
-
 
 
 
@@ -238,7 +237,7 @@ That is, there is only one tutorial for each Sage top level module.
 archive/issue_comments_076992.json:
 ```json
 {
-    "body": "In addition to #8442, does this also depend on #8465 and #8469?  Without those, commands like `browse_sage_doc.funcprogramming_tutorial` (available via tab completion) don't work and give a message \n\n```\nOSError: The document 'thematic_tutorials/functional_programming' does not exist.  Please build it\nwith 'sage -docbuild thematic_tutorials/functional_programming html --jsmath' and try again.\n```\n\nwhich is misleading, since that command won't succeed.\n\nI have no idea if there is any good way to doctest functions like \n\n```\n    def faq(self):\n        \"\"\"\n        The Sage FAQ. A collection of frequently asked questions, together\n        with answers to those questions.\n        \"\"\"\n        self._open(\"faq\")\n```\n\nIt would be nice to not lower our coverage by including functions like this.  Here's an idea: replace the function by\n\n```\nfaq = lambda self: self._open('faq')\n```\n\nOr is that cheating? This belongs on another ticket, in any case.\n\nGiven my understanding of the dependencies, this gets a positive review.",
+    "body": "In addition to #8442, does this also depend on #8465 and #8469?  Without those, commands like `browse_sage_doc.funcprogramming_tutorial` (available via tab completion) don't work and give a message \n\n```\nOSError: The document 'thematic_tutorials/functional_programming' does not exist.  Please build it\nwith 'sage -docbuild thematic_tutorials/functional_programming html --jsmath' and try again.\n```\nwhich is misleading, since that command won't succeed.\n\nI have no idea if there is any good way to doctest functions like \n\n```\n    def faq(self):\n        \"\"\"\n        The Sage FAQ. A collection of frequently asked questions, together\n        with answers to those questions.\n        \"\"\"\n        self._open(\"faq\")\n```\nIt would be nice to not lower our coverage by including functions like this.  Here's an idea: replace the function by\n\n```\nfaq = lambda self: self._open('faq')\n```\nOr is that cheating? This belongs on another ticket, in any case.\n\nGiven my understanding of the dependencies, this gets a positive review.",
     "created_at": "2010-06-23T17:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -253,7 +252,6 @@ In addition to #8442, does this also depend on #8465 and #8469?  Without those, 
 OSError: The document 'thematic_tutorials/functional_programming' does not exist.  Please build it
 with 'sage -docbuild thematic_tutorials/functional_programming html --jsmath' and try again.
 ```
-
 which is misleading, since that command won't succeed.
 
 I have no idea if there is any good way to doctest functions like 
@@ -266,13 +264,11 @@ I have no idea if there is any good way to doctest functions like
         """
         self._open("faq")
 ```
-
 It would be nice to not lower our coverage by including functions like this.  Here's an idea: replace the function by
 
 ```
 faq = lambda self: self._open('faq')
 ```
-
 Or is that cheating? This belongs on another ticket, in any case.
 
 Given my understanding of the dependencies, this gets a positive review.
@@ -405,7 +401,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076999.json:
 ```json
 {
-    "body": "On my mac: when I run doctests on sagedoc.py, my browser opens up several different windows.  I don't think this is a good idea.     Maybe the lines\n\n```\n    sage: faq() \n    sage: thematic_tutorials() \n    sage: funcprogramming_tutorial() \n    sage: sage.groups.tutorial() \n```\n\nshould be labeled `# not tested` instead?  Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)",
+    "body": "On my mac: when I run doctests on sagedoc.py, my browser opens up several different windows.  I don't think this is a good idea.     Maybe the lines\n\n```\n    sage: faq() \n    sage: thematic_tutorials() \n    sage: funcprogramming_tutorial() \n    sage: sage.groups.tutorial() \n```\nshould be labeled `# not tested` instead?  Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)",
     "created_at": "2010-08-11T21:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -422,7 +418,6 @@ On my mac: when I run doctests on sagedoc.py, my browser opens up several differ
     sage: funcprogramming_tutorial() 
     sage: sage.groups.tutorial() 
 ```
-
 should be labeled `# not tested` instead?  Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)
 
 
@@ -569,7 +564,7 @@ archive/issue_events_020557.json:
 archive/issue_comments_077001.json:
 ```json
 {
-    "body": "Replying to [comment:11 jhpalmieri]:\n> Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)\n\nOr `thematic_tutorials.funcprogramming_tutorial()` which would be useful in conjunction with `thematic_tutorials.<tab>`. Only one entry point for all thematic tutorials seem more reasonable.\n\nVincent",
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)\n\n\nOr `thematic_tutorials.funcprogramming_tutorial()` which would be useful in conjunction with `thematic_tutorials.<tab>`. Only one entry point for all thematic tutorials seem more reasonable.\n\nVincent",
     "created_at": "2014-08-29T18:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
@@ -580,6 +575,7 @@ archive/issue_comments_077001.json:
 
 Replying to [comment:11 jhpalmieri]:
 > Also, do we need to have `funcprogramming_tutorial()` as a top-level command, or is it good enough to have `thematic_tutorials()`?  (This is a genuine question: I don't know which way is better.)
+
 
 Or `thematic_tutorials.funcprogramming_tutorial()` which would be useful in conjunction with `thematic_tutorials.<tab>`. Only one entry point for all thematic tutorials seem more reasonable.
 

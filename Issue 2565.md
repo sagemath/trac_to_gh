@@ -179,7 +179,7 @@ There is an off-by-one error in the IPython input/output history; I don't know i
 archive/issue_comments_017450.json:
 ```json
 {
-    "body": "Replying to [comment:2 ddrake]:\n> The `log.patch.1` patch fixes the directory problems and the xdg-open problem. It also removes the MathML logger (by commenting it out and removing from all.py) w.\n\nHi Dan, thanks for seeing this. Could you completely remove this class (log_mathml)? It's not that useful anymore.\n\nThe patch looks good and the logger works! I have 2 requests: it would be nice if the docs specified that the log directory has to be a *relative* path. Also: when you instantiate the logger, you could return a message saying where the log file is being saved\n\n```\nsage: log_text()\nLogging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt\n```\n",
+    "body": "Replying to [comment:2 ddrake]:\n> The `log.patch.1` patch fixes the directory problems and the xdg-open problem. It also removes the MathML logger (by commenting it out and removing from all.py) w.\n\n\nHi Dan, thanks for seeing this. Could you completely remove this class (log_mathml)? It's not that useful anymore.\n\nThe patch looks good and the logger works! I have 2 requests: it would be nice if the docs specified that the log directory has to be a *relative* path. Also: when you instantiate the logger, you could return a message saying where the log file is being saved\n\n```\nsage: log_text()\nLogging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt\n```",
     "created_at": "2008-03-27T04:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
@@ -190,6 +190,7 @@ archive/issue_comments_017450.json:
 
 Replying to [comment:2 ddrake]:
 > The `log.patch.1` patch fixes the directory problems and the xdg-open problem. It also removes the MathML logger (by commenting it out and removing from all.py) w.
+
 
 Hi Dan, thanks for seeing this. Could you completely remove this class (log_mathml)? It's not that useful anymore.
 
@@ -202,13 +203,12 @@ Logging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt
 
 
 
-
 ---
 
 archive/issue_comments_017451.json:
 ```json
 {
-    "body": "Replying to [comment:7 dfdeshom]:\n> The patch looks good and the logger works! I have 2 requests: it would be nice if the docs specified that the log directory has to be a *relative* path. Also: when you instantiate the logger, you could return a message saying where the log file is being saved\n\n```\nsage: log_text()\nLogging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt\n```\n\n> \n\nI've added the message, removed the MathML logger, and will update the patch momentarily. As for the paths, it's not necessary to use relative paths: you can do\n\n```\nsage: log_text('/tmp')\n```\n\nand you get a directory in the `/tmp` directory. If you don't begin the path with a slash, it gets put into your home directory: doing `log_text('foo')` logs into a directory like `/home/drake/foo/log-2008-03-27-151949`.",
+    "body": "Replying to [comment:7 dfdeshom]:\n> The patch looks good and the logger works! I have 2 requests: it would be nice if the docs specified that the log directory has to be a *relative* path. Also: when you instantiate the logger, you could return a message saying where the log file is being saved\n\n{{{\nsage: log_text()\nLogging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt\n}}}\n> \n\n\nI've added the message, removed the MathML logger, and will update the patch momentarily. As for the paths, it's not necessary to use relative paths: you can do\n\n```\nsage: log_text('/tmp')\n```\nand you get a directory in the `/tmp` directory. If you don't begin the path with a slash, it gets put into your home directory: doing `log_text('foo')` logs into a directory like `/home/drake/foo/log-2008-03-27-151949`.",
     "created_at": "2008-03-27T06:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
@@ -220,19 +220,18 @@ archive/issue_comments_017451.json:
 Replying to [comment:7 dfdeshom]:
 > The patch looks good and the logger works! I have 2 requests: it would be nice if the docs specified that the log directory has to be a *relative* path. Also: when you instantiate the logger, you could return a message saying where the log file is being saved
 
-```
+{{{
 sage: log_text()
 Logging all commands to ~/custom/sage/log/log-2008-03-26-202848/logfile.txt
-```
-
+}}}
 > 
+
 
 I've added the message, removed the MathML logger, and will update the patch momentarily. As for the paths, it's not necessary to use relative paths: you can do
 
 ```
 sage: log_text('/tmp')
 ```
-
 and you get a directory in the `/tmp` directory. If you don't begin the path with a slash, it gets put into your home directory: doing `log_text('foo')` logs into a directory like `/home/drake/foo/log-2008-03-27-151949`.
 
 
@@ -260,7 +259,7 @@ Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.pat
 archive/issue_comments_017453.json:
 ```json
 {
-    "body": "Both issues have been addressed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: log_text()\nNow logging to /home/mabshoff/.sage/log/log-2008-03-27-004430/sagelog.txt\nText Logger\nsage:\nExiting SAGE (CPU time 0m0.01s, Wall time 0m7.41s).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: log_text(\"/tmp\")\nNow logging to /tmp/log-2008-03-27-004454/sagelog.txt\nText Logger\nsage:\nExiting SAGE (CPU time 0m0.02s, Wall time 0m8.70s).\n```\n\nSo: positive review!",
+    "body": "Both issues have been addressed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: log_text()\nNow logging to /home/mabshoff/.sage/log/log-2008-03-27-004430/sagelog.txt\nText Logger\nsage:\nExiting SAGE (CPU time 0m0.01s, Wall time 0m7.41s).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.11.alpha1, Release Date: 2008-03-22                 |\n| Type notebook() for the GUI, and license() for information.        |\nsage: log_text(\"/tmp\")\nNow logging to /tmp/log-2008-03-27-004454/sagelog.txt\nText Logger\nsage:\nExiting SAGE (CPU time 0m0.02s, Wall time 0m8.70s).\n```\nSo: positive review!",
     "created_at": "2008-03-27T07:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
@@ -293,7 +292,6 @@ Text Logger
 sage:
 Exiting SAGE (CPU time 0m0.02s, Wall time 0m8.70s).
 ```
-
 So: positive review!
 
 

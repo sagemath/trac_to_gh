@@ -3,7 +3,7 @@
 archive/issues_005478.json:
 ```json
 {
-    "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nKeywords: combinat, partitions, gap\n\nI have code that does the same as\n\n```\nRestrictedPartitions(3000, [1000, 500, 100, 50, 10])\n```\n\nbut about 5.5 times faster...and on my system,\n\n```\nRestrictedPartitions(5000, [1000, 500, 100, 50, 10])\n```\n\nuses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.\n\nI need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5478\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nKeywords: combinat, partitions, gap\n\nI have code that does the same as\n\n```\nRestrictedPartitions(3000, [1000, 500, 100, 50, 10])\n```\nbut about 5.5 times faster...and on my system,\n\n```\nRestrictedPartitions(5000, [1000, 500, 100, 50, 10])\n```\nuses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.\n\nI need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5478\n\n",
     "created_at": "2009-03-11T03:46:36Z",
     "labels": [
         "component: combinatorics",
@@ -27,13 +27,11 @@ I have code that does the same as
 ```
 RestrictedPartitions(3000, [1000, 500, 100, 50, 10])
 ```
-
 but about 5.5 times faster...and on my system,
 
 ```
 RestrictedPartitions(5000, [1000, 500, 100, 50, 10])
 ```
-
 uses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.
 
 I need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5478
 archive/issue_comments_042403.json:
 ```json
 {
-    "body": "Maybe I should add that I'm interested, of course, in *iterating* through all those partitions. Just running \"`RestrictedPartitions(3000, [1000, 500, 100, 50, 10])`\" is very fast because it just returns an iterator. The actual code I'm running is stuff like\n\n```\nsum(1 for p in RestrictedPartitions(...))\n```\n",
+    "body": "Maybe I should add that I'm interested, of course, in *iterating* through all those partitions. Just running \"`RestrictedPartitions(3000, [1000, 500, 100, 50, 10])`\" is very fast because it just returns an iterator. The actual code I'm running is stuff like\n\n```\nsum(1 for p in RestrictedPartitions(...))\n```",
     "created_at": "2009-03-11T03:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -63,7 +61,6 @@ Maybe I should add that I'm interested, of course, in *iterating* through all th
 ```
 sum(1 for p in RestrictedPartitions(...))
 ```
-
 
 
 
@@ -126,7 +123,7 @@ A little ego update to the patch -- I added myself to the authors list. Anyone r
 archive/issue_comments_042407.json:
 ```json
 {
-    "body": "Some benchmarks (all on sage.math):\n\n\n```\nBEFORE\nsage: get_memory_usage()\n695.7421875\nsage: ps = RestrictedPartitions(100, ([1,6..100] + [4,9..100]))\nsage: %time sum(1 for p in ps)\nCPU times: user 26.89 s, sys: 1.11 s, total: 28.00 s\nWall time: 28.69 s\n74040\nsage: get_memory_usage()\n1781.41796875\n```\n\n\n\n```\nAFTER\nsage: get_memory_usage()\n699.828125\nsage: ps = Partitions(100, parts_in=([1,6..100] + [4,9..100]))\nsage: %time sum(1 for p in ps)\nCPU times: user 4.96 s, sys: 0.02 s, total: 4.98 s\nWall time: 4.98 s\n74040\nsage: get_memory_usage()\n699.828125\n```\n\n\nThe above example which prompted this ticket:\n\n\n```\nBEFORE\nsage: get_memory_usage()\n695.73828125\nsage: ps = RestrictedPartitions(3000, [10,50,100,500,1000])\nsage: %time sum(1 for p in ps)\nCPU times: user 5.69 s, sys: 0.21 s, total: 5.90 s\nWall time: 6.05 s\n3506\nsage: get_memory_usage()\n935.48046875\n```\n\n\n\n```\nAFTER\nsage: get_memory_usage()\n699.82421875\nsage: ps = Partitions(3000, parts_in=[10,50,100,500,1000])\nsage: %time sum(1 for p in ps)\nCPU times: user 1.08 s, sys: 0.00 s, total: 1.08 s\nWall time: 1.09 s\n3506\nsage: get_memory_usage()\n699.82421875\n```\n",
+    "body": "Some benchmarks (all on sage.math):\n\n```\nBEFORE\nsage: get_memory_usage()\n695.7421875\nsage: ps = RestrictedPartitions(100, ([1,6..100] + [4,9..100]))\nsage: %time sum(1 for p in ps)\nCPU times: user 26.89 s, sys: 1.11 s, total: 28.00 s\nWall time: 28.69 s\n74040\nsage: get_memory_usage()\n1781.41796875\n```\n\n```\nAFTER\nsage: get_memory_usage()\n699.828125\nsage: ps = Partitions(100, parts_in=([1,6..100] + [4,9..100]))\nsage: %time sum(1 for p in ps)\nCPU times: user 4.96 s, sys: 0.02 s, total: 4.98 s\nWall time: 4.98 s\n74040\nsage: get_memory_usage()\n699.828125\n```\n\nThe above example which prompted this ticket:\n\n```\nBEFORE\nsage: get_memory_usage()\n695.73828125\nsage: ps = RestrictedPartitions(3000, [10,50,100,500,1000])\nsage: %time sum(1 for p in ps)\nCPU times: user 5.69 s, sys: 0.21 s, total: 5.90 s\nWall time: 6.05 s\n3506\nsage: get_memory_usage()\n935.48046875\n```\n\n```\nAFTER\nsage: get_memory_usage()\n699.82421875\nsage: ps = Partitions(3000, parts_in=[10,50,100,500,1000])\nsage: %time sum(1 for p in ps)\nCPU times: user 1.08 s, sys: 0.00 s, total: 1.08 s\nWall time: 1.09 s\n3506\nsage: get_memory_usage()\n699.82421875\n```",
     "created_at": "2009-03-28T03:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -136,7 +133,6 @@ archive/issue_comments_042407.json:
 ```
 
 Some benchmarks (all on sage.math):
-
 
 ```
 BEFORE
@@ -151,8 +147,6 @@ sage: get_memory_usage()
 1781.41796875
 ```
 
-
-
 ```
 AFTER
 sage: get_memory_usage()
@@ -166,9 +160,7 @@ sage: get_memory_usage()
 699.828125
 ```
 
-
 The above example which prompted this ticket:
-
 
 ```
 BEFORE
@@ -183,8 +175,6 @@ sage: get_memory_usage()
 935.48046875
 ```
 
-
-
 ```
 AFTER
 sage: get_memory_usage()
@@ -197,7 +187,6 @@ Wall time: 1.09 s
 sage: get_memory_usage()
 699.82421875
 ```
-
 
 
 
@@ -363,7 +352,7 @@ Florent
 archive/issue_comments_042415.json:
 ```json
 {
-    "body": "Replying to [comment:10 hivert]:\n> Some comment on the first patch:\n> \n> I'm not a native English speaker but it seems to me that \n>   If ``starting=p`` is passed, then the combinatorial class of partitions greater than or equal to `p` in lexicographic order is returned. \n> is clearer if phrased\n>   If ``starting=p`` is passed, then the combinatorial class of partitions with part greater than or equal to `p` in lexicographic order is returned.\n\n\"p\" refers to a partition, not to a part, so the text is okay. Perhaps we should make that more clear, though. I plan on opening a ticket to improve the documentation in partition.py, so we can do that then.\n\nReplying to [comment:9 hivert]:\n> > Anyone reviewing this might want to look at my test script: restricted_partitions_test_suite.sage. I've run over 10,000 successful tests with it.\n> \n> This script is great. I should be put in sage in one place or one other. If someone tries to \n> optimize your code (eg: Cythonize), he surely will be happy to have your test code. Why not \n> shipping it into the patch with a more explicit name and a one-line example on how to use it \n> with the comment \" #longtest \" ? \n\nWell, right now, the script only halts if it finds an error, so it would be a really, really long test. :)\n\nThe tests also can use lots of memory, since it puts a list of the partitions into memory. But if anyone thinks (a mildly modified version of) the script should get run on a \"long\" test, I'm happy to have it included.",
+    "body": "Replying to [comment:10 hivert]:\n> Some comment on the first patch:\n> \n> I'm not a native English speaker but it seems to me that \n>   If ``starting=p`` is passed, then the combinatorial class of partitions greater than or equal to `p` in lexicographic order is returned. \n> is clearer if phrased\n>   If ``starting=p`` is passed, then the combinatorial class of partitions with part greater than or equal to `p` in lexicographic order is returned.\n\n\n\"p\" refers to a partition, not to a part, so the text is okay. Perhaps we should make that more clear, though. I plan on opening a ticket to improve the documentation in partition.py, so we can do that then.\n\nReplying to [comment:9 hivert]:\n> > Anyone reviewing this might want to look at my test script: restricted_partitions_test_suite.sage. I've run over 10,000 successful tests with it.\n\n> \n> This script is great. I should be put in sage in one place or one other. If someone tries to \n> optimize your code (eg: Cythonize), he surely will be happy to have your test code. Why not \n> shipping it into the patch with a more explicit name and a one-line example on how to use it \n> with the comment \" #longtest \" ? \n\n\nWell, right now, the script only halts if it finds an error, so it would be a really, really long test. :)\n\nThe tests also can use lots of memory, since it puts a list of the partitions into memory. But if anyone thinks (a mildly modified version of) the script should get run on a \"long\" test, I'm happy to have it included.",
     "created_at": "2009-04-10T04:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
@@ -380,15 +369,18 @@ Replying to [comment:10 hivert]:
 > is clearer if phrased
 >   If ``starting=p`` is passed, then the combinatorial class of partitions with part greater than or equal to `p` in lexicographic order is returned.
 
+
 "p" refers to a partition, not to a part, so the text is okay. Perhaps we should make that more clear, though. I plan on opening a ticket to improve the documentation in partition.py, so we can do that then.
 
 Replying to [comment:9 hivert]:
 > > Anyone reviewing this might want to look at my test script: restricted_partitions_test_suite.sage. I've run over 10,000 successful tests with it.
+
 > 
 > This script is great. I should be put in sage in one place or one other. If someone tries to 
 > optimize your code (eg: Cythonize), he surely will be happy to have your test code. Why not 
 > shipping it into the patch with a more explicit name and a one-line example on how to use it 
 > with the comment " #longtest " ? 
+
 
 Well, right now, the script only halts if it finds an error, so it would be a really, really long test. :)
 

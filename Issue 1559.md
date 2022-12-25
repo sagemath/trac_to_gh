@@ -98,7 +98,7 @@ Better still, make it easy to set the temp directory -- so the user can set the 
 archive/issue_comments_009910.json:
 ```json
 {
-    "body": "From recreating this ticket (as a dupe, since I never saw it), since it didn't get fixed for a long time:\n\nWhen\n\n```\n sage: load filename.spyx\n```\n\nis done repeatedly on a specific single file filename.spyx, after about 3-4\ntries Sage tries to delete some files.  On some NFS mounted filesystems, there\nare lock files, and these can't be deleted for permissions reasons.  Instead of \nsage gracefully continuing on it fails at this point, and bombs out.  This makes\nloading cython files fail henceforth, making spyx files completely useless.\n\nThe fix is probably just to put a try/except block around any code that deletes files that is related to attaching and loading [s]pyx files.\n\nDeleting the temp files is completely not needed -- it's just to save disk space. They'll be cleaned up by the sage-cleaner at some point anyways.",
+    "body": "From recreating this ticket (as a dupe, since I never saw it), since it didn't get fixed for a long time:\n\nWhen\n\n```\n sage: load filename.spyx\n```\nis done repeatedly on a specific single file filename.spyx, after about 3-4\ntries Sage tries to delete some files.  On some NFS mounted filesystems, there\nare lock files, and these can't be deleted for permissions reasons.  Instead of \nsage gracefully continuing on it fails at this point, and bombs out.  This makes\nloading cython files fail henceforth, making spyx files completely useless.\n\nThe fix is probably just to put a try/except block around any code that deletes files that is related to attaching and loading [s]pyx files.\n\nDeleting the temp files is completely not needed -- it's just to save disk space. They'll be cleaned up by the sage-cleaner at some point anyways.",
     "created_at": "2008-01-31T04:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
@@ -114,7 +114,6 @@ When
 ```
  sage: load filename.spyx
 ```
-
 is done repeatedly on a specific single file filename.spyx, after about 3-4
 tries Sage tries to delete some files.  On some NFS mounted filesystems, there
 are lock files, and these can't be deleted for permissions reasons.  Instead of 

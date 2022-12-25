@@ -3,7 +3,7 @@
 archive/issues_008355.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
     "created_at": "2010-02-25T00:25:00Z",
     "labels": [
         "component: graphics",
@@ -21,14 +21,12 @@ Assignee: @williamstein
 
 CC:  @kcrisman
 
-
 ```
 sage: hue(.5,.5,.5)
 Traceback (click to the left of this block for traceback)
 ...
 TypeError: can't multiply sequence by non-int of type 'float'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8355
 
@@ -272,7 +270,7 @@ Confirmed.  But should we add a patch that confirms this, as in the previous pat
 archive/issue_comments_074509.json:
 ```json
 {
-    "body": "I've created a patch that confirms\n\n```\nsage: hue(.5,.5,.5)\n(0.25, 0.5, 0.5)\n```\n\nin the doctest of hue and applies to sage-4.6.1.rc1.",
+    "body": "I've created a patch that confirms\n\n```\nsage: hue(.5,.5,.5)\n(0.25, 0.5, 0.5)\n```\nin the doctest of hue and applies to sage-4.6.1.rc1.",
     "created_at": "2011-01-09T22:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
@@ -287,7 +285,6 @@ I've created a patch that confirms
 sage: hue(.5,.5,.5)
 (0.25, 0.5, 0.5)
 ```
-
 in the doctest of hue and applies to sage-4.6.1.rc1.
 
 

@@ -3,7 +3,7 @@
 archive/issues_004391.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t -long -optional devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/ell_finite_field.py\", line 102:\n    sage: magma(E) # optional -- requires Magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        magma(E) # optional -- requires Magma###line 102:\n    sage: magma(E) # optional -- requires Magma\n    NameError: name 'E' is not defined\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4391\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long -optional devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/ell_finite_field.py\", line 102:\n    sage: magma(E) # optional -- requires Magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        magma(E) # optional -- requires Magma###line 102:\n    sage: magma(E) # optional -- requires Magma\n    NameError: name 'E' is not defined\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4391\n\n",
     "created_at": "2008-10-30T06:41:42Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_004391.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage -t -long -optional devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py
@@ -34,7 +33,6 @@ Exception raised:
     NameError: name 'E' is not defined
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4391
 

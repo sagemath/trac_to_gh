@@ -3,7 +3,7 @@
 archive/issues_000673.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest, real double\n\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest, real double\n\n```\nsage -t  rings/real_double.pyx                              **********************************************************************\nFile \"real_double.pyx\", line 952:\n    sage: RDF(0).log()\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\nFile \"real_double.pyx\", line 954:\n    sage: RDF(-1).log()\nExpected:\n    nan\nGot:\n    -NaN\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/673\n\n",
     "created_at": "2007-09-17T00:34:27Z",
     "labels": [
         "component: packages",
@@ -19,7 +19,6 @@ archive/issues_000673.json:
 Assignee: @williamstein
 
 Keywords: Solaris 10, doctest, real double
-
 
 ```
 sage -t  rings/real_double.pyx                              **********************************************************************
@@ -38,7 +37,6 @@ Got:
     -NaN
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/673
 

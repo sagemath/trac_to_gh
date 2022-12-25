@@ -55,7 +55,7 @@ archive/issue_events_012597.json:
 archive/issue_comments_041787.json:
 ```json
 {
-    "body": "The documentation links mostly work once the needed html documentation has been created, i.e.\n\n```\n./sage -docbuild reference html\n./sage -docbuild tutorial html\n./sage -docbuild developer html\n./sage -docbuild constructions html\n```\n\nThe only thing not working after that is the \"Fast Static Versions of the Documentation\" link from the main help page.\n\nCheers,\n\nMichael",
+    "body": "The documentation links mostly work once the needed html documentation has been created, i.e.\n\n```\n./sage -docbuild reference html\n./sage -docbuild tutorial html\n./sage -docbuild developer html\n./sage -docbuild constructions html\n```\nThe only thing not working after that is the \"Fast Static Versions of the Documentation\" link from the main help page.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-09T19:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ The documentation links mostly work once the needed html documentation has been 
 ./sage -docbuild developer html
 ./sage -docbuild constructions html
 ```
-
 The only thing not working after that is the "Fast Static Versions of the Documentation" link from the main help page.
 
 Cheers,
@@ -254,7 +253,7 @@ Michael
 archive/issue_comments_041796.json:
 ```json
 {
-    "body": "Does this depend on another ticket?  If not, trac_5414-install.diff has the line \n\n```\n\"$SAGE_LOCAL/bin\"/sage-docbuild --jsmath all html\n```\n\nand I don't see a file sage-docbuild anywhere.  Should it be \"sage -docbuild\"?",
+    "body": "Does this depend on another ticket?  If not, trac_5414-install.diff has the line \n\n```\n\"$SAGE_LOCAL/bin\"/sage-docbuild --jsmath all html\n```\nand I don't see a file sage-docbuild anywhere.  Should it be \"sage -docbuild\"?",
     "created_at": "2009-03-11T17:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5414",
     "type": "issue_comment",
@@ -268,7 +267,6 @@ Does this depend on another ticket?  If not, trac_5414-install.diff has the line
 ```
 "$SAGE_LOCAL/bin"/sage-docbuild --jsmath all html
 ```
-
 and I don't see a file sage-docbuild anywhere.  Should it be "sage -docbuild"?
 
 

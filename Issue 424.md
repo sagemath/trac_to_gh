@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/424
 archive/issue_comments_002114.json:
 ```json
 {
-    "body": "I tried for a while to get the patch to work.  I think it doesn't work against\nthe latest GMP release (plain vanilla), which is newer than the last change of that patch:\n\n\n```\n`echo gcd | sed 's/_$//'`    -O2 -m64 -mtune=k8 -c -o gcd.lo gcd.c\n gcc -DHAVE_CONFIG_H -I. -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_gcd -O2 -m64 -mtune=k8 -c gcd.c  -fPIC -DPIC -o .libs/gcd.o\ngcd.c: In function 'gcd_schoenhage':\ngcd.c:702: error: storage size of 'hgcd' isn't known\ngcd.c:703: error: storage size of 'quotients' isn't known\ngcd.c:704: error: array type has incomplete element type\ngcd.c:748: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\ngcd.c:748: error: (Each undeclared identifier is reported only once\ngcd.c:748: error: for each function it appears in.)\ngcd.c:778: error: storage size of '__nhgcd_swap4_left_tmp' isn't known\ngcd.c:796: error: invalid use of undefined type 'struct hgcd_row'\ngcd.c:800: error: storage size of '__nhgcd_swap4_2_tmp' isn't known\ngcd.c: In function '__gmpn_gcd':\ngcd.c:831: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\nmake[2]: *** [gcd.lo] Error 1\nmake[2]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src/mpn'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src'\nmake: *** [all] Error 2\n```\n\n\nThis isn't a problem with autoconf, etc.,  -- it s  a problem with the patch simply not working.\n\nWilliam",
+    "body": "I tried for a while to get the patch to work.  I think it doesn't work against\nthe latest GMP release (plain vanilla), which is newer than the last change of that patch:\n\n```\n`echo gcd | sed 's/_$//'`    -O2 -m64 -mtune=k8 -c -o gcd.lo gcd.c\n gcc -DHAVE_CONFIG_H -I. -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_gcd -O2 -m64 -mtune=k8 -c gcd.c  -fPIC -DPIC -o .libs/gcd.o\ngcd.c: In function 'gcd_schoenhage':\ngcd.c:702: error: storage size of 'hgcd' isn't known\ngcd.c:703: error: storage size of 'quotients' isn't known\ngcd.c:704: error: array type has incomplete element type\ngcd.c:748: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\ngcd.c:748: error: (Each undeclared identifier is reported only once\ngcd.c:748: error: for each function it appears in.)\ngcd.c:778: error: storage size of '__nhgcd_swap4_left_tmp' isn't known\ngcd.c:796: error: invalid use of undefined type 'struct hgcd_row'\ngcd.c:800: error: storage size of '__nhgcd_swap4_2_tmp' isn't known\ngcd.c: In function '__gmpn_gcd':\ngcd.c:831: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\nmake[2]: *** [gcd.lo] Error 1\nmake[2]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src/mpn'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src'\nmake: *** [all] Error 2\n```\n\nThis isn't a problem with autoconf, etc.,  -- it s  a problem with the patch simply not working.\n\nWilliam",
     "created_at": "2007-08-16T09:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
@@ -44,7 +44,6 @@ archive/issue_comments_002114.json:
 
 I tried for a while to get the patch to work.  I think it doesn't work against
 the latest GMP release (plain vanilla), which is newer than the last change of that patch:
-
 
 ```
 `echo gcd | sed 's/_$//'`    -O2 -m64 -mtune=k8 -c -o gcd.lo gcd.c
@@ -67,7 +66,6 @@ make[1]: *** [all-recursive] Error 1
 make[1]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src'
 make: *** [all] Error 2
 ```
-
 
 This isn't a problem with autoconf, etc.,  -- it s  a problem with the patch simply not working.
 

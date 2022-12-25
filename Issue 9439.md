@@ -3,7 +3,7 @@
 archive/issues_009439.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @kcrisman @pjbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane\n\nImplementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')\n```\n\nThere are more examples in the file.\n\n\nDepandancy:\n\n* #9076: plot arc of circles\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @kcrisman @pjbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane\n\nImplementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')\n```\nThere are more examples in the file.\n\n\nDepandancy:\n\n* #9076: plot arc of circles\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
     "created_at": "2010-07-06T16:13:33Z",
     "labels": [
         "component: geometry"
@@ -28,7 +28,6 @@ The actual file is almost complete for working with the hyperbolic plane as the 
 ```
 sage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')
 ```
-
 There are more examples in the file.
 
 
@@ -146,7 +145,7 @@ archive/issue_events_023331.json:
 archive/issue_comments_090221.json:
 ```json
 {
-    "body": "> Are you planning on finishing this?  It would be very good to have an upper half plane implementation.  \n\nYes. But if you have time and motivation, go on. But there are problems (see below)\n\n> There are a few things that need to be improved though.  Accessing attributes directly (e.g. with spam._value) is not good.  Please use accessor methods instead (i.e. a method named value() that returns _value); this improves the separation of interface and implementation.\n\nCan be done.\n\n> Near the real line, the hyperbolic distance becomes become HUGE compared to the Euclidean distance.  Representing a point as a complex number thus leads to numeric instability.  It is therefore better to implement a point by a pair of a matrix ((a,b),(c,d)) and a complex number z (thus representing (az+b)/(cz+d)).\n\nI agree on the fact that near the real line it is unstable but disagree on the fact that we need a 5 dimensional object (an element of SL(2,R) and a complex number) to record a 2 dimensional object (a point in the half plane). The best option would be to store only the SL(2,R) matrix m such that the point is the image by z of the point i. Two matrices give the same point iff they are congruent modulo SO(2).\n\nProblems\n--------\n\n1) The main problem with that project is about of action by matrices. It would be natural that matrices act on the upper half plane. But there are many instances\n* element of ArithmeticSubgroup (SL(2,Z)) which is implemented\n* element of groups SL(2,R) or GL(2,R) or ...\n* a matrix with real coefficient\n* ...\nI had trouble with the coercion system in order to be able to use any of the type above.\n\n2) In the actual implementation, the geodesics that pass to infinity in the half plane model have an arbitrary maximum height. I did not find a good way to draw them depending on what is asked in the final .show(). In the same veine, a circle with radius 1 very near the boundary should not be drawn as it is less than one pixel...",
+    "body": "> Are you planning on finishing this?  It would be very good to have an upper half plane implementation.  \n\n\nYes. But if you have time and motivation, go on. But there are problems (see below)\n\n> There are a few things that need to be improved though.  Accessing attributes directly (e.g. with spam._value) is not good.  Please use accessor methods instead (i.e. a method named value() that returns _value); this improves the separation of interface and implementation.\n\n\nCan be done.\n\n> Near the real line, the hyperbolic distance becomes become HUGE compared to the Euclidean distance.  Representing a point as a complex number thus leads to numeric instability.  It is therefore better to implement a point by a pair of a matrix ((a,b),(c,d)) and a complex number z (thus representing (az+b)/(cz+d)).\n\n\nI agree on the fact that near the real line it is unstable but disagree on the fact that we need a 5 dimensional object (an element of SL(2,R) and a complex number) to record a 2 dimensional object (a point in the half plane). The best option would be to store only the SL(2,R) matrix m such that the point is the image by z of the point i. Two matrices give the same point iff they are congruent modulo SO(2).\n\nProblems\n\n---\n\n1) The main problem with that project is about of action by matrices. It would be natural that matrices act on the upper half plane. But there are many instances\n* element of ArithmeticSubgroup (SL(2,Z)) which is implemented\n* element of groups SL(2,R) or GL(2,R) or ...\n* a matrix with real coefficient\n* ...\nI had trouble with the coercion system in order to be able to use any of the type above.\n\n2) In the actual implementation, the geodesics that pass to infinity in the half plane model have an arbitrary maximum height. I did not find a good way to draw them depending on what is asked in the final .show(). In the same veine, a circle with radius 1 very near the boundary should not be drawn as it is less than one pixel...",
     "created_at": "2011-12-10T19:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -157,18 +156,22 @@ archive/issue_comments_090221.json:
 
 > Are you planning on finishing this?  It would be very good to have an upper half plane implementation.  
 
+
 Yes. But if you have time and motivation, go on. But there are problems (see below)
 
 > There are a few things that need to be improved though.  Accessing attributes directly (e.g. with spam._value) is not good.  Please use accessor methods instead (i.e. a method named value() that returns _value); this improves the separation of interface and implementation.
+
 
 Can be done.
 
 > Near the real line, the hyperbolic distance becomes become HUGE compared to the Euclidean distance.  Representing a point as a complex number thus leads to numeric instability.  It is therefore better to implement a point by a pair of a matrix ((a,b),(c,d)) and a complex number z (thus representing (az+b)/(cz+d)).
 
+
 I agree on the fact that near the real line it is unstable but disagree on the fact that we need a 5 dimensional object (an element of SL(2,R) and a complex number) to record a 2 dimensional object (a point in the half plane). The best option would be to store only the SL(2,R) matrix m such that the point is the image by z of the point i. Two matrices give the same point iff they are congruent modulo SO(2).
 
 Problems
---------
+
+---
 
 1) The main problem with that project is about of action by matrices. It would be natural that matrices act on the upper half plane. But there are many instances
 * element of ArithmeticSubgroup (SL(2,Z)) which is implemented
@@ -422,7 +425,7 @@ This looks neat: I just wanted to encourage you guys to keep working on it.  I j
 archive/issue_comments_090234.json:
 ```json
 {
-    "body": "Replying to [comment:9 roed]:\n> This looks neat: I just wanted to encourage you guys to keep working on it.  I just had a request for plotting fundamental domains of congruence subgroups....\n\nI just notice that it is yet possible to draw fundamental domain for congruence subgroups using Farey symbols (#11709, integrated since sage-5.0).\n\n\n```\nsage: FareySymbol(Gamma(3)).fundamental_domain()\n```\n",
+    "body": "Replying to [comment:9 roed]:\n> This looks neat: I just wanted to encourage you guys to keep working on it.  I just had a request for plotting fundamental domains of congruence subgroups....\n\n\nI just notice that it is yet possible to draw fundamental domain for congruence subgroups using Farey symbols (#11709, integrated since sage-5.0).\n\n```\nsage: FareySymbol(Gamma(3)).fundamental_domain()\n```",
     "created_at": "2012-07-22T00:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -434,13 +437,12 @@ archive/issue_comments_090234.json:
 Replying to [comment:9 roed]:
 > This looks neat: I just wanted to encourage you guys to keep working on it.  I just had a request for plotting fundamental domains of congruence subgroups....
 
-I just notice that it is yet possible to draw fundamental domain for congruence subgroups using Farey symbols (#11709, integrated since sage-5.0).
 
+I just notice that it is yet possible to draw fundamental domain for congruence subgroups using Farey symbols (#11709, integrated since sage-5.0).
 
 ```
 sage: FareySymbol(Gamma(3)).fundamental_domain()
 ```
-
 
 
 
@@ -684,7 +686,7 @@ I intend to comb through the previously attached patches and merge what I can.  
 archive/issue_comments_090246.json:
 ```json
 {
-    "body": "Replying to [comment:21 glaun]:\n> I atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n\nGreat! Good job!\n\n> Also note the following negative things:\n> * Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n\nThis was a *bad* suggestion! It's great that you avoid it.\n\n> * My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n\nI will have a look as soon as possible.\n\n> * Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\n> I intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.\n\nidem.\n\nTwo points:\n\n- an important feature that you seem to avoid is the unit tangent bundle of the hyperbolic plane which is isomorphic to PSL(2,R). One great thing would be to have another object `TangentVector` (with a matrix as data). The action of PSL(2,R) on the unit tangent bundle is then just matrix multiplication. \n- your example worksheet should definitely be a thematic tutorial for the Sage documentation\n\nI suggest that we open two new tickets for those features.\n\nThanks again for your work on this. I am starting the review and will be back with more technical remarks shortly.",
+    "body": "Replying to [comment:21 glaun]:\n> I atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n\n\nGreat! Good job!\n\n> Also note the following negative things:\n> * Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n\n\nThis was a *bad* suggestion! It's great that you avoid it.\n\n> * My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n\n\nI will have a look as soon as possible.\n\n> * Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\n> I intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.\n\n\nidem.\n\nTwo points:\n\n- an important feature that you seem to avoid is the unit tangent bundle of the hyperbolic plane which is isomorphic to PSL(2,R). One great thing would be to have another object `TangentVector` (with a matrix as data). The action of PSL(2,R) on the unit tangent bundle is then just matrix multiplication. \n- your example worksheet should definitely be a thematic tutorial for the Sage documentation\n\nI suggest that we open two new tickets for those features.\n\nThanks again for your work on this. I am starting the review and will be back with more technical remarks shortly.",
     "created_at": "2013-06-26T14:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -696,19 +698,23 @@ archive/issue_comments_090246.json:
 Replying to [comment:21 glaun]:
 > I atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:
 
+
 Great! Good job!
 
 > Also note the following negative things:
 > * Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.
 
+
 This was a *bad* suggestion! It's great that you avoid it.
 
 > * My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.
+
 
 I will have a look as soon as possible.
 
 > * Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.
 > I intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.
+
 
 idem.
 
@@ -728,7 +734,7 @@ Thanks again for your work on this. I am starting the review and will be back wi
 archive/issue_comments_090247.json:
 ```json
 {
-    "body": "> Two points:\n> \n> - an important feature that you seem to avoid is the unit tangent bundle of the hyperbolic plane which is isomorphic to PSL(2,R). One great thing would be to have another object `TangentVector` (with a matrix as data). The action of PSL(2,R) on the unit tangent bundle is then just matrix multiplication. \n> - your example worksheet should definitely be a thematic tutorial for the Sage documentation\n\nThanks, I'll look into both of these soon.  I have some code for working in Minkowski (2,1) space that I want to use to implement the hyperboloid model in the Lie algebra sl(2,R) since that's what I use in my own research.  Several of the functions are for working in SL(2,R)/PSL(2,R).  I can take a look at that and see what can be appropriated for use in a TangentVector object.",
+    "body": "> Two points:\n> \n> - an important feature that you seem to avoid is the unit tangent bundle of the hyperbolic plane which is isomorphic to PSL(2,R). One great thing would be to have another object `TangentVector` (with a matrix as data). The action of PSL(2,R) on the unit tangent bundle is then just matrix multiplication. \n> - your example worksheet should definitely be a thematic tutorial for the Sage documentation\n\n\nThanks, I'll look into both of these soon.  I have some code for working in Minkowski (2,1) space that I want to use to implement the hyperboloid model in the Lie algebra sl(2,R) since that's what I use in my own research.  Several of the functions are for working in SL(2,R)/PSL(2,R).  I can take a look at that and see what can be appropriated for use in a TangentVector object.",
     "created_at": "2013-06-26T18:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -742,6 +748,7 @@ archive/issue_comments_090247.json:
 > - an important feature that you seem to avoid is the unit tangent bundle of the hyperbolic plane which is isomorphic to PSL(2,R). One great thing would be to have another object `TangentVector` (with a matrix as data). The action of PSL(2,R) on the unit tangent bundle is then just matrix multiplication. 
 > - your example worksheet should definitely be a thematic tutorial for the Sage documentation
 
+
 Thanks, I'll look into both of these soon.  I have some code for working in Minkowski (2,1) space that I want to use to implement the hyperboloid model in the Lie algebra sl(2,R) since that's what I use in my own research.  Several of the functions are for working in SL(2,R)/PSL(2,R).  I can take a look at that and see what can be appropriated for use in a TangentVector object.
 
 
@@ -751,7 +758,7 @@ Thanks, I'll look into both of these soon.  I have some code for working in Mink
 archive/issue_comments_090248.json:
 ```json
 {
-    "body": "Hi Greg,\n\nThere are many nice features in the patch but I did not start to play with. You should start by a big clean:\n\n1) there should be no trailing whitespace\n\n2) the organization of each file should be a header which consists of a string with authors the copyright statement and then the code. There should not be several headers and copyright statements.\n\n3) all methods and functions should be commented and doctested. Running `sage -coverage` gives\n\n```\nSCORE hyperbolic_object.py: 10.0% (1 of 10)\n\nMissing documentation:\n     * line 40: def to_model(self, model)\n     * line 49: def to_UHP(self)\n     * line 52: def uhp_representation(self)\n     * line 55: def model_representation(self)\n     * line 58: def representation_in_model(self, model=None)\n     * line 96: def to_model(self, model, **options)\n     * line 108: def graphics_options(self)\n\nMissing doctests:\n     * line 33: def __init__(self, args, **graphics_options)\n     * line 88: def __init__(self, args, **graphics_options)\n```\n\n\n4) the files should be properly included in the sage documentation\n\nNow, more serious issues\n\n5) the objects from your module must be lazy imported and not imported in the global namespace (in order to not slow down sage startup)\n\n6) the method `show` should not return a graphics object but should rather shows it! You could rename it `plot`.\n\n7) I agree that it is misleading but `CC` in Sage is not the set of complex number! In particular the test `x in CC` does not answer to the question \"does my object `x` modelizes some complex number ?\". Precisely `CC` is the set of floating point complex number with 53 bits of precision. But is it on purpose that you want `x in CC` as coordinates for a point in the upper half plane ?\n\n8) The string representation \"Hyperbolic point whose representation in the Upper Half Plane is +Infinity\" is definitely too long! Why not \"Point in HH +Infinity\".\n\nAnd finally a design question (which perhaps should be thought of first)\n\n9) I think that the fact of being conformal or bounded etc is not a property of a HyperbolicObject but rather a property of the underlying model. You decided to not design a class for each model, was it on purpose? Such a class may contain all these property. As you see, in my initial patch, it was possible to write\n\n```\nsage: HH\nHyperbolic plane\nsage: HH(0)\nBoundary point 0\n```\n\nI would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.",
+    "body": "Hi Greg,\n\nThere are many nice features in the patch but I did not start to play with. You should start by a big clean:\n\n1) there should be no trailing whitespace\n\n2) the organization of each file should be a header which consists of a string with authors the copyright statement and then the code. There should not be several headers and copyright statements.\n\n3) all methods and functions should be commented and doctested. Running `sage -coverage` gives\n\n```\nSCORE hyperbolic_object.py: 10.0% (1 of 10)\n\nMissing documentation:\n     * line 40: def to_model(self, model)\n     * line 49: def to_UHP(self)\n     * line 52: def uhp_representation(self)\n     * line 55: def model_representation(self)\n     * line 58: def representation_in_model(self, model=None)\n     * line 96: def to_model(self, model, **options)\n     * line 108: def graphics_options(self)\n\nMissing doctests:\n     * line 33: def __init__(self, args, **graphics_options)\n     * line 88: def __init__(self, args, **graphics_options)\n```\n\n4) the files should be properly included in the sage documentation\n\nNow, more serious issues\n\n5) the objects from your module must be lazy imported and not imported in the global namespace (in order to not slow down sage startup)\n\n6) the method `show` should not return a graphics object but should rather shows it! You could rename it `plot`.\n\n7) I agree that it is misleading but `CC` in Sage is not the set of complex number! In particular the test `x in CC` does not answer to the question \"does my object `x` modelizes some complex number ?\". Precisely `CC` is the set of floating point complex number with 53 bits of precision. But is it on purpose that you want `x in CC` as coordinates for a point in the upper half plane ?\n\n8) The string representation \"Hyperbolic point whose representation in the Upper Half Plane is +Infinity\" is definitely too long! Why not \"Point in HH +Infinity\".\n\nAnd finally a design question (which perhaps should be thought of first)\n\n9) I think that the fact of being conformal or bounded etc is not a property of a HyperbolicObject but rather a property of the underlying model. You decided to not design a class for each model, was it on purpose? Such a class may contain all these property. As you see, in my initial patch, it was possible to write\n\n```\nsage: HH\nHyperbolic plane\nsage: HH(0)\nBoundary point 0\n```\nI would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.",
     "created_at": "2013-06-26T19:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -787,7 +794,6 @@ Missing doctests:
      * line 88: def __init__(self, args, **graphics_options)
 ```
 
-
 4) the files should be properly included in the sage documentation
 
 Now, more serious issues
@@ -810,7 +816,6 @@ Hyperbolic plane
 sage: HH(0)
 Boundary point 0
 ```
-
 I would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.
 
 
@@ -820,7 +825,7 @@ I would prefer to have a dedicated class for each model and be able to construct
 archive/issue_comments_090249.json:
 ```json
 {
-    "body": "Thanks for the feedback!  I didn't know exactly what to do about tests in what was intended to be an abstract class (hyperbeolic_object) that shouldn't be instantiated.  I see now that there are other abstract classes in sage and they all have poper doctests, so I'll go ahead and add those in.  That should be very simple, as should the rest of the cleanup.\n\nThe other issues you mentioned are all things I thought might be problems, so I've given them all a little bit of thought already\n\nReplying to [comment:24 vdelecroix]:\n\n\n> 4) the files should be properly included in the sage documentation\n\nOkay, will do.\n\n> Now, more serious issues\n> \n> 5) the objects from your module must be lazy imported and not imported in the global namespace (in order to not slow down sage startup)\n\nOkay, I will change this.\n\n> \n> 6) the method `show` should not return a graphics object but should rather shows it! You could rename it `plot`.\n\nI'm actually not quite sure what the difference is.  Do you mean that show should make a system call to the default viewer?  Is it not sufficient to call a method that makes that call for me?  I've noticed in one other module that plot() is implemented and show() is an alias for plot.  Would this be a workaround?   \n\n> 7) I agree that it is misleading but `CC` in Sage is not the set of complex number! In particular the test `x in CC` does not answer to the question \"does my object `x` modelizes some complex number ?\". Precisely `CC` is the set of floating point complex number with 53 bits of precision. But is it on purpose that you want `x in CC` as coordinates for a point in the upper half plane ?\n\nThis is a hack. I wanted a function that returned True for things that can be converted into floating point complex numbers and \"2 + I in CC\" returns True even though \"2 + I\" is a symbolic expression.  I didn't want to test more explicitly for symbolic complex numbers because I don't know the symbolic system well enough to be sure to catch all possible cases.  And I didn't want to have a test condition that relied on the symbolic apparatus because via profiling I found many cases in which calling functions that were in the symbolics library slowed everything to a crawl.  So \"x in CC\" quickly checks whether something is the right type of object to have \"imag()\" called on it sensibly.  I more than welcome suggestions on how to solve this problem more elegantly without slowing down code.  As an example, the functions _clean_points and _shorten_symbolic are both very ugly to my tastes, but I wrote each to address specific issues that arose in profiling and their impact is significant.  In a similar way, I find 'x in CC' to be unfortunate but useful.\n\n> 8) The string representation \"Hyperbolic point whose representation in the Upper Half Plane is +Infinity\" is definitely too long! Why not \"Point in HH +Infinity\".\n\nThe long strings were a request, and I agree they're much too long.  I'll go ahead and change them.  I'd like them to contain information about the model, though so that there is less confusion when performing conversion. \n \n> And finally a design question (which perhaps should be thought of first)\n> \n> 9) I think that the fact of being conformal or bounded etc is not a property of a HyperbolicObject but rather a property of the underlying model. You decided to not design a class for each model, was it on purpose? Such a class may contain all these property. As you see, in my initial patch, it was possible to write\n> {{{\n> sage: HH\n> Hyperbolic plane\n> sage: HH(0)\n> Boundary point 0\n> }}}\n> I would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.\n\nI think your way of doing it sounds  much better than mine. I had actually been planning on looking more closely at your structure and applying it to mine as a next step.  I'll look into this starting tomorrow.",
+    "body": "Thanks for the feedback!  I didn't know exactly what to do about tests in what was intended to be an abstract class (hyperbeolic_object) that shouldn't be instantiated.  I see now that there are other abstract classes in sage and they all have poper doctests, so I'll go ahead and add those in.  That should be very simple, as should the rest of the cleanup.\n\nThe other issues you mentioned are all things I thought might be problems, so I've given them all a little bit of thought already\n\nReplying to [comment:24 vdelecroix]:\n\n\n> 4) the files should be properly included in the sage documentation\n\n\nOkay, will do.\n\n> Now, more serious issues\n> \n> 5) the objects from your module must be lazy imported and not imported in the global namespace (in order to not slow down sage startup)\n\n\nOkay, I will change this.\n\n> \n> 6) the method `show` should not return a graphics object but should rather shows it! You could rename it `plot`.\n\n\nI'm actually not quite sure what the difference is.  Do you mean that show should make a system call to the default viewer?  Is it not sufficient to call a method that makes that call for me?  I've noticed in one other module that plot() is implemented and show() is an alias for plot.  Would this be a workaround?   \n\n> 7) I agree that it is misleading but `CC` in Sage is not the set of complex number! In particular the test `x in CC` does not answer to the question \"does my object `x` modelizes some complex number ?\". Precisely `CC` is the set of floating point complex number with 53 bits of precision. But is it on purpose that you want `x in CC` as coordinates for a point in the upper half plane ?\n\n\nThis is a hack. I wanted a function that returned True for things that can be converted into floating point complex numbers and \"2 + I in CC\" returns True even though \"2 + I\" is a symbolic expression.  I didn't want to test more explicitly for symbolic complex numbers because I don't know the symbolic system well enough to be sure to catch all possible cases.  And I didn't want to have a test condition that relied on the symbolic apparatus because via profiling I found many cases in which calling functions that were in the symbolics library slowed everything to a crawl.  So \"x in CC\" quickly checks whether something is the right type of object to have \"imag()\" called on it sensibly.  I more than welcome suggestions on how to solve this problem more elegantly without slowing down code.  As an example, the functions _clean_points and _shorten_symbolic are both very ugly to my tastes, but I wrote each to address specific issues that arose in profiling and their impact is significant.  In a similar way, I find 'x in CC' to be unfortunate but useful.\n\n> 8) The string representation \"Hyperbolic point whose representation in the Upper Half Plane is +Infinity\" is definitely too long! Why not \"Point in HH +Infinity\".\n\n\nThe long strings were a request, and I agree they're much too long.  I'll go ahead and change them.  I'd like them to contain information about the model, though so that there is less confusion when performing conversion. \n \n> And finally a design question (which perhaps should be thought of first)\n> \n> 9) I think that the fact of being conformal or bounded etc is not a property of a HyperbolicObject but rather a property of the underlying model. You decided to not design a class for each model, was it on purpose? Such a class may contain all these property. As you see, in my initial patch, it was possible to write\n> \n> ```\n> sage: HH\n> Hyperbolic plane\n> sage: HH(0)\n> Boundary point 0\n> ```\n> I would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.\n\n\nI think your way of doing it sounds  much better than mine. I had actually been planning on looking more closely at your structure and applying it to mine as a next step.  I'll look into this starting tomorrow.",
     "created_at": "2013-06-27T04:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -838,37 +843,44 @@ Replying to [comment:24 vdelecroix]:
 
 > 4) the files should be properly included in the sage documentation
 
+
 Okay, will do.
 
 > Now, more serious issues
 > 
 > 5) the objects from your module must be lazy imported and not imported in the global namespace (in order to not slow down sage startup)
 
+
 Okay, I will change this.
 
 > 
 > 6) the method `show` should not return a graphics object but should rather shows it! You could rename it `plot`.
 
+
 I'm actually not quite sure what the difference is.  Do you mean that show should make a system call to the default viewer?  Is it not sufficient to call a method that makes that call for me?  I've noticed in one other module that plot() is implemented and show() is an alias for plot.  Would this be a workaround?   
 
 > 7) I agree that it is misleading but `CC` in Sage is not the set of complex number! In particular the test `x in CC` does not answer to the question "does my object `x` modelizes some complex number ?". Precisely `CC` is the set of floating point complex number with 53 bits of precision. But is it on purpose that you want `x in CC` as coordinates for a point in the upper half plane ?
 
+
 This is a hack. I wanted a function that returned True for things that can be converted into floating point complex numbers and "2 + I in CC" returns True even though "2 + I" is a symbolic expression.  I didn't want to test more explicitly for symbolic complex numbers because I don't know the symbolic system well enough to be sure to catch all possible cases.  And I didn't want to have a test condition that relied on the symbolic apparatus because via profiling I found many cases in which calling functions that were in the symbolics library slowed everything to a crawl.  So "x in CC" quickly checks whether something is the right type of object to have "imag()" called on it sensibly.  I more than welcome suggestions on how to solve this problem more elegantly without slowing down code.  As an example, the functions _clean_points and _shorten_symbolic are both very ugly to my tastes, but I wrote each to address specific issues that arose in profiling and their impact is significant.  In a similar way, I find 'x in CC' to be unfortunate but useful.
 
 > 8) The string representation "Hyperbolic point whose representation in the Upper Half Plane is +Infinity" is definitely too long! Why not "Point in HH +Infinity".
+
 
 The long strings were a request, and I agree they're much too long.  I'll go ahead and change them.  I'd like them to contain information about the model, though so that there is less confusion when performing conversion. 
  
 > And finally a design question (which perhaps should be thought of first)
 > 
 > 9) I think that the fact of being conformal or bounded etc is not a property of a HyperbolicObject but rather a property of the underlying model. You decided to not design a class for each model, was it on purpose? Such a class may contain all these property. As you see, in my initial patch, it was possible to write
-> {{{
+> 
+> ```
 > sage: HH
 > Hyperbolic plane
 > sage: HH(0)
 > Boundary point 0
-> }}}
+> ```
 > I would prefer to have a dedicated class for each model and be able to construct point/geodesic/polygons from the class (via for example ``HH.point(data)``, ``HH.geodesic(data)``, etc). You may also move the `random_element` methods and the various conversions between the models into this parent class.
+
 
 I think your way of doing it sounds  much better than mine. I had actually been planning on looking more closely at your structure and applying it to mine as a next step.  I'll look into this starting tomorrow.
 
@@ -905,7 +917,7 @@ I've addressed issues 1-4, and I was hoping you wouldn't mind giving me some gui
 archive/issue_comments_090251.json:
 ```json
 {
-    "body": "Hi,\n\nReplying to [comment:26 glaun]:\n> I've addressed issues 1-4, and I was hoping you wouldn't mind giving me some guidance about how to handle the remaining issues.  Specifically, I have the following questions:\n> \n> 1) Should I post a patch for the fixes of 1-4?  Or should I wait until I fix the remaining issues?  More generally, should I err on the side of posting more patches (so more people can help) or posting only ones that seem more significant?\n\nNot necessarily. You can fold your two patches into one and post only the update version of your previous patch (to fold two patches `hg qfold`).\n \n> 2) I like the structure of your code, and I aim to emulate it.  Does it make sense for me to combine your class structure with the features in mine and post it in skeletal form before fixing all of the functions?  For example, I could post a class diagram, or just an outline of the modules with the guts removed. Or is this step likely to be more work with little payoff?  I would ideally like the structure to be as democratically decided as possible.\n\nYour code definitely contains much more material than mine. If you like better the structure I drafted you are free to reuse it. If you post anything on trac it is always better that it is working code.\n\nIn my opinion, as you are currently working on that project, you may choose the datastructure you prefer and indicate **clearly** in the documentation the concept, why did you choose that design and why did you discard the other ones.\n\n> 3) I find your usage of HyperbolicPlane for the upper half plane to be confusing since the HyperbolicDisc is also topologically a plane. \n\nI agree. It was just because I always find HH and DD in textbooks and did not ask myself more questions.\n\n> I'm used to referring to both as the hyperbolic plane, and I typically differentiate them by specifying which model of the plane.  I have been using the abbreviations UHP, PD, KM, and HM which were just decided by fiat to be short and convenient.  Is there anything you dislike about this approach to naming?  I worry that HyperbolicUHP is too cryptic, but HyperbolicUpperHalfPlane is too long.\n\nI like better UHP, PD, KM and HM but I think they should not be imported in the standard namespace as such (because it is not clear how the user may find them). What about something like:\n\n```\nsage: hyperbolic_geometry.upper_half_plane()\nThe upper half plane\nsage: hyperbolic_geometry.UHP\nThe upper half plane\netc\n```\n\nThat way, we may use tab completion. But perhaps, \"hyperbolic_geometry\" is a bit too long. If somebody want it in the global namespace it is still possible to do\n\n```\nsage: from sage.XXX.hyperbolic_geometry import *\nsage: UHP\nThe upper half plane\n```\n\n\nVincent",
+    "body": "Hi,\n\nReplying to [comment:26 glaun]:\n> I've addressed issues 1-4, and I was hoping you wouldn't mind giving me some guidance about how to handle the remaining issues.  Specifically, I have the following questions:\n> \n> 1) Should I post a patch for the fixes of 1-4?  Or should I wait until I fix the remaining issues?  More generally, should I err on the side of posting more patches (so more people can help) or posting only ones that seem more significant?\n\n\nNot necessarily. You can fold your two patches into one and post only the update version of your previous patch (to fold two patches `hg qfold`).\n \n> 2) I like the structure of your code, and I aim to emulate it.  Does it make sense for me to combine your class structure with the features in mine and post it in skeletal form before fixing all of the functions?  For example, I could post a class diagram, or just an outline of the modules with the guts removed. Or is this step likely to be more work with little payoff?  I would ideally like the structure to be as democratically decided as possible.\n\n\nYour code definitely contains much more material than mine. If you like better the structure I drafted you are free to reuse it. If you post anything on trac it is always better that it is working code.\n\nIn my opinion, as you are currently working on that project, you may choose the datastructure you prefer and indicate **clearly** in the documentation the concept, why did you choose that design and why did you discard the other ones.\n\n> 3) I find your usage of HyperbolicPlane for the upper half plane to be confusing since the HyperbolicDisc is also topologically a plane. \n\n\nI agree. It was just because I always find HH and DD in textbooks and did not ask myself more questions.\n\n> I'm used to referring to both as the hyperbolic plane, and I typically differentiate them by specifying which model of the plane.  I have been using the abbreviations UHP, PD, KM, and HM which were just decided by fiat to be short and convenient.  Is there anything you dislike about this approach to naming?  I worry that HyperbolicUHP is too cryptic, but HyperbolicUpperHalfPlane is too long.\n\n\nI like better UHP, PD, KM and HM but I think they should not be imported in the standard namespace as such (because it is not clear how the user may find them). What about something like:\n\n```\nsage: hyperbolic_geometry.upper_half_plane()\nThe upper half plane\nsage: hyperbolic_geometry.UHP\nThe upper half plane\netc\n```\nThat way, we may use tab completion. But perhaps, \"hyperbolic_geometry\" is a bit too long. If somebody want it in the global namespace it is still possible to do\n\n```\nsage: from sage.XXX.hyperbolic_geometry import *\nsage: UHP\nThe upper half plane\n```\n\nVincent",
     "created_at": "2013-07-03T13:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -921,9 +933,11 @@ Replying to [comment:26 glaun]:
 > 
 > 1) Should I post a patch for the fixes of 1-4?  Or should I wait until I fix the remaining issues?  More generally, should I err on the side of posting more patches (so more people can help) or posting only ones that seem more significant?
 
+
 Not necessarily. You can fold your two patches into one and post only the update version of your previous patch (to fold two patches `hg qfold`).
  
 > 2) I like the structure of your code, and I aim to emulate it.  Does it make sense for me to combine your class structure with the features in mine and post it in skeletal form before fixing all of the functions?  For example, I could post a class diagram, or just an outline of the modules with the guts removed. Or is this step likely to be more work with little payoff?  I would ideally like the structure to be as democratically decided as possible.
+
 
 Your code definitely contains much more material than mine. If you like better the structure I drafted you are free to reuse it. If you post anything on trac it is always better that it is working code.
 
@@ -931,9 +945,11 @@ In my opinion, as you are currently working on that project, you may choose the 
 
 > 3) I find your usage of HyperbolicPlane for the upper half plane to be confusing since the HyperbolicDisc is also topologically a plane. 
 
+
 I agree. It was just because I always find HH and DD in textbooks and did not ask myself more questions.
 
 > I'm used to referring to both as the hyperbolic plane, and I typically differentiate them by specifying which model of the plane.  I have been using the abbreviations UHP, PD, KM, and HM which were just decided by fiat to be short and convenient.  Is there anything you dislike about this approach to naming?  I worry that HyperbolicUHP is too cryptic, but HyperbolicUpperHalfPlane is too long.
+
 
 I like better UHP, PD, KM and HM but I think they should not be imported in the standard namespace as such (because it is not clear how the user may find them). What about something like:
 
@@ -944,7 +960,6 @@ sage: hyperbolic_geometry.UHP
 The upper half plane
 etc
 ```
-
 That way, we may use tab completion. But perhaps, "hyperbolic_geometry" is a bit too long. If somebody want it in the global namespace it is still possible to do
 
 ```
@@ -952,7 +967,6 @@ sage: from sage.XXX.hyperbolic_geometry import *
 sage: UHP
 The upper half plane
 ```
-
 
 Vincent
 
@@ -1392,7 +1406,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090269.json:
 ```json
 {
-    "body": "patchbot fails with `make doc`:\n\n```\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:47: ERROR: Unexpected indentation.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:56: WARNING: Literal block ends without a blank line; unexpected unindent.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:56: SEVERE: Missing matching underline for section title overline.\n[geometry ] =======\n[geometry ] sage/geometry/hyperplane_arrangement/arrangement\n[geometry ] sage/geometry/hyperplane_arrangement/library\n[geometry ] /scratch/sage/local/lib/python2.7/site-packages/sage/geometry/hyperbolic_space/hyperbolic_model.py:docstring of sage.geometry.hyperbolic_space.hyperbolic_model:14: ERROR: Unexpected indentation.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_bdry_point.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_geodesic.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_interface.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_isometry.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_methods.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_model.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_point.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/affine_subspace.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/arrangement.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/hyperplane.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/library.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/linear_expression.rst:: WARNING: document isn't included in any toctree\nError building the documentation.\nTraceback (most recent call last):\n  File \"/scratch/sage/src/doc/common/builder.py\", line 1477, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/sage/src/doc/common/builder.py\", line 276, in _wrapper\n    getattr(get_builder(document), 'inventory')(*args, **kwds)\n  File \"/scratch/sage/src/doc/common/builder.py\", line 487, in _wrapper\n    x.get(99999)\n  File \"/scratch/sage/local/lib/python/multiprocessing/pool.py\", line 554, in get\n    raise self._value\nOSError: [geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:47: ERROR: Unexpected indentation.\n\nmake: *** [doc-html] Error 1\n```\n",
+    "body": "patchbot fails with `make doc`:\n\n```\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:47: ERROR: Unexpected indentation.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:56: WARNING: Literal block ends without a blank line; unexpected unindent.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:56: SEVERE: Missing matching underline for section title overline.\n[geometry ] =======\n[geometry ] sage/geometry/hyperplane_arrangement/arrangement\n[geometry ] sage/geometry/hyperplane_arrangement/library\n[geometry ] /scratch/sage/local/lib/python2.7/site-packages/sage/geometry/hyperbolic_space/hyperbolic_model.py:docstring of sage.geometry.hyperbolic_space.hyperbolic_model:14: ERROR: Unexpected indentation.\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_bdry_point.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_geodesic.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_interface.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_isometry.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_methods.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_model.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperbolic_space/hyperbolic_point.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/affine_subspace.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/arrangement.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/hyperplane.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/hyperplane_arrangement/library.rst:: WARNING: document isn't included in any toctree\n[geometry ] /scratch/sage/src/doc/en/reference/geometry/sage/geometry/linear_expression.rst:: WARNING: document isn't included in any toctree\nError building the documentation.\nTraceback (most recent call last):\n  File \"/scratch/sage/src/doc/common/builder.py\", line 1477, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/sage/src/doc/common/builder.py\", line 276, in _wrapper\n    getattr(get_builder(document), 'inventory')(*args, **kwds)\n  File \"/scratch/sage/src/doc/common/builder.py\", line 487, in _wrapper\n    x.get(99999)\n  File \"/scratch/sage/local/lib/python/multiprocessing/pool.py\", line 554, in get\n    raise self._value\nOSError: [geometry ] /scratch/sage/src/doc/en/reference/geometry/index.rst:47: ERROR: Unexpected indentation.\n\nmake: *** [doc-html] Error 1\n```",
     "created_at": "2014-05-16T14:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1440,13 +1454,12 @@ make: *** [doc-html] Error 1
 
 
 
-
 ---
 
 archive/issue_comments_090270.json:
 ```json
 {
-    "body": "here is new branch, with working doc. I have made small corrections in the doc.\n----\nNew commits:",
+    "body": "here is new branch, with working doc. I have made small corrections in the doc.\n\n---\nNew commits:",
     "created_at": "2014-06-25T19:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1456,7 +1469,8 @@ archive/issue_comments_090270.json:
 ```
 
 here is new branch, with working doc. I have made small corrections in the doc.
-----
+
+---
 New commits:
 
 
@@ -1526,7 +1540,7 @@ I will have to think more about the first one. The second should be done at some
 archive/issue_comments_090274.json:
 ```json
 {
-    "body": "I'm glad to see other people working on this ticket!  I tried to pull the updates and rebuild sage, but it won't build. It may be a few days before I have time to debug the build process and get back to work on this ticket.\n\nIn response to your points, I'm fine with a restructure as long as we talk it through first.  \n\n* Its design now uses abstract base classes for geodesics, isometries, and points.  In the current organization, the \"database\" of facts about the underlying space are in hyperbolic_model, divided by model.  The \"database\" of calculation methods are in hyperbolic_methods, of which only the methods in the upper half plane are implemented.  I think these should be separate because it allows someone to implement a model without ever having to see the details of how calculations are done. I suppose we could put the database somewhere else, like in a dictionary or database if that's wise.  I don't have strong opinions about that.  Is the organization unclear?  Let me know if you have specific ideas in mind, or even if you just want to discuss overall design philosophy.\n\n* I wasn't aware of `__classcall__` when I wrote it.  I was basically just going for doing a clean design.  It seems like `__classcall__` might be a modularity violation?  I'll look into it more.\n\n* It sounds like you're objecting to importing the interfaces into the global namespace.  I'm fine with getting rid of those imports.  We could do something like\n\n```\nUHP = HyperbolicPlane(\"upper half plane\")\nUHP.point(I)\n```\n\nand then only import HyperbolicPlane.  Is that the sort of thing you had in mind?  Or maybe something like\n\n\n```\np = HyperbolicPoint(I, \"upper half plane\") # Create point 0 + I.\n```\n",
+    "body": "I'm glad to see other people working on this ticket!  I tried to pull the updates and rebuild sage, but it won't build. It may be a few days before I have time to debug the build process and get back to work on this ticket.\n\nIn response to your points, I'm fine with a restructure as long as we talk it through first.  \n\n* Its design now uses abstract base classes for geodesics, isometries, and points.  In the current organization, the \"database\" of facts about the underlying space are in hyperbolic_model, divided by model.  The \"database\" of calculation methods are in hyperbolic_methods, of which only the methods in the upper half plane are implemented.  I think these should be separate because it allows someone to implement a model without ever having to see the details of how calculations are done. I suppose we could put the database somewhere else, like in a dictionary or database if that's wise.  I don't have strong opinions about that.  Is the organization unclear?  Let me know if you have specific ideas in mind, or even if you just want to discuss overall design philosophy.\n\n* I wasn't aware of `__classcall__` when I wrote it.  I was basically just going for doing a clean design.  It seems like `__classcall__` might be a modularity violation?  I'll look into it more.\n\n* It sounds like you're objecting to importing the interfaces into the global namespace.  I'm fine with getting rid of those imports.  We could do something like\n\n```\nUHP = HyperbolicPlane(\"upper half plane\")\nUHP.point(I)\n```\nand then only import HyperbolicPlane.  Is that the sort of thing you had in mind?  Or maybe something like\n\n```\np = HyperbolicPoint(I, \"upper half plane\") # Create point 0 + I.\n```",
     "created_at": "2014-06-28T12:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1549,14 +1563,11 @@ In response to your points, I'm fine with a restructure as long as we talk it th
 UHP = HyperbolicPlane("upper half plane")
 UHP.point(I)
 ```
-
 and then only import HyperbolicPlane.  Is that the sort of thing you had in mind?  Or maybe something like
-
 
 ```
 p = HyperbolicPoint(I, "upper half plane") # Create point 0 + I.
 ```
-
 
 
 
@@ -1653,7 +1664,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_090278.json:
 ```json
 {
-    "body": "Okay, so I've done a major refactoring in which I move everything into Sage's category/parent/element framework. In doing so, I figured out why all of the ``@`classmethod` bothered me (beyond the somewhat maze-like path of methods); it was emulating a singleton pattern using classes rather than instances. To me, this is a bad practice, so I'm now using `UniqueRepresentation` (although this would benefit from switching to #15247). So here's the other major points and structure.\n\n* The models are parents using the `WithRealizations` framework, and the points are the elements. I've setup the maps between the models are coercions and have methods to also translate the geodesics and isometries. Geodesics are just `SageObject`'s, but isometries are morphisms.\n* I've changed the naming of some of the methods to better reflect their operation (in particular, `orientation_preserving` to `preserves_orientation`).\n* I've kept most of the ease of implementing new models but by using the coercions instead of the methods class.\n* I've implemented a custom hash for isometries since compared equal but had different hashes.\n* More strict handling of points vs. coordinates and isometries vs. matrices. This makes the programmers/users take more care about where things belong and what one can do with them. This adds a little more burden of wrapping and unwrapping, but it shouldn't make things much (significant) difference in timings (I didn't check). Yet I would argue this is a better way of doing things.\n* Removed the `**graphic_options` from things like `perpendicular_bisector` because it seemed out of place and makes it easier to keep things consistent (plus 2 distinct steps for distinct operations).\n* There is only one big lazy import needed, and that is for `HyperbolicPlane`, which is the global entry point. I've added a method `HyperbolicSpace` for the future, but I didn't import it into the global namespace.\n\nQuestions:\n\n* If given an isometry, does one ask if it \"is orientation preserving\" or \"preserves orientation\"?\n* Should we keep with the `get_*` (ex. `get_point`) or just drop it to `*` (ex. `point` resp.)? I'm somewhat in favor of the way it is now, but I don't have a strong opinion.\n\nTodo for positive review:\n\n* Add doctests to remaining `hyperbolic_coercion.py` methods.\n* Fix doctest failures coming from `_to_std_geod`. I'm pretty sure it is not suppose to return an isometry (which is what causes the doctest failures). Please advise.\n\nTodos for the future:\n\n* Make custom endosets for each model with the isometries as elements and coercions implemented once homsets work with the coersion model (#14279 and possibly others).\n* Implement a category for metric spaces.\n\nI was quite impressed with the code and the interactions between everything and hope we can get more of (hyperbolic) geometry into Sage. So please test out, look over, and play with the refactored version (making sure everything works as before).\n\nPS - Phew, finally had some time to sit down to think and work through this. Sorry it took so long.\n----\nNew commits:",
+    "body": "Okay, so I've done a major refactoring in which I move everything into Sage's category/parent/element framework. In doing so, I figured out why all of the ``@`classmethod` bothered me (beyond the somewhat maze-like path of methods); it was emulating a singleton pattern using classes rather than instances. To me, this is a bad practice, so I'm now using `UniqueRepresentation` (although this would benefit from switching to #15247). So here's the other major points and structure.\n\n* The models are parents using the `WithRealizations` framework, and the points are the elements. I've setup the maps between the models are coercions and have methods to also translate the geodesics and isometries. Geodesics are just `SageObject`'s, but isometries are morphisms.\n* I've changed the naming of some of the methods to better reflect their operation (in particular, `orientation_preserving` to `preserves_orientation`).\n* I've kept most of the ease of implementing new models but by using the coercions instead of the methods class.\n* I've implemented a custom hash for isometries since compared equal but had different hashes.\n* More strict handling of points vs. coordinates and isometries vs. matrices. This makes the programmers/users take more care about where things belong and what one can do with them. This adds a little more burden of wrapping and unwrapping, but it shouldn't make things much (significant) difference in timings (I didn't check). Yet I would argue this is a better way of doing things.\n* Removed the `**graphic_options` from things like `perpendicular_bisector` because it seemed out of place and makes it easier to keep things consistent (plus 2 distinct steps for distinct operations).\n* There is only one big lazy import needed, and that is for `HyperbolicPlane`, which is the global entry point. I've added a method `HyperbolicSpace` for the future, but I didn't import it into the global namespace.\n\nQuestions:\n\n* If given an isometry, does one ask if it \"is orientation preserving\" or \"preserves orientation\"?\n* Should we keep with the `get_*` (ex. `get_point`) or just drop it to `*` (ex. `point` resp.)? I'm somewhat in favor of the way it is now, but I don't have a strong opinion.\n\nTodo for positive review:\n\n* Add doctests to remaining `hyperbolic_coercion.py` methods.\n* Fix doctest failures coming from `_to_std_geod`. I'm pretty sure it is not suppose to return an isometry (which is what causes the doctest failures). Please advise.\n\nTodos for the future:\n\n* Make custom endosets for each model with the isometries as elements and coercions implemented once homsets work with the coersion model (#14279 and possibly others).\n* Implement a category for metric spaces.\n\nI was quite impressed with the code and the interactions between everything and hope we can get more of (hyperbolic) geometry into Sage. So please test out, look over, and play with the refactored version (making sure everything works as before).\n\nPS - Phew, finally had some time to sit down to think and work through this. Sorry it took so long.\n\n---\nNew commits:",
     "created_at": "2014-09-14T07:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1690,7 +1701,8 @@ Todos for the future:
 I was quite impressed with the code and the interactions between everything and hope we can get more of (hyperbolic) geometry into Sage. So please test out, look over, and play with the refactored version (making sure everything works as before).
 
 PS - Phew, finally had some time to sit down to think and work through this. Sorry it took so long.
-----
+
+---
 New commits:
 
 
@@ -1718,7 +1730,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_090280.json:
 ```json
 {
-    "body": "Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.\n\nThere are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.\n----\nNew commits:",
+    "body": "Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.\n\nThere are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.\n\n---\nNew commits:",
     "created_at": "2014-09-30T01:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1730,7 +1742,8 @@ archive/issue_comments_090280.json:
 Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.
 
 There are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.
-----
+
+---
 New commits:
 
 
@@ -1740,7 +1753,7 @@ New commits:
 archive/issue_comments_090281.json:
 ```json
 {
-    "body": "Replying to [comment:54 glaun]:\n> Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.\n\nNot a problem. I hope a lot of the design is clear and makes sense. There's still a general question of what to do with subsets (here geodesics) of a given set (the entire plane) in terms of parents (so we can induce coercions on the subsets [geodesics]), but that is a separate, quite large, and probably thorny issue that we can't solve here.\n\n> There are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.\n\nLet me know as things get merged in and I can review those changes so we can get this included into Sage.\n\nFYI, a typo got introduced in `c612e31`:\n\n```diff\n@@ -528,7 +528,7 @@ class HyperbolicGeodesic(SageObject):\n          \"\"\"\n          return self._cached_geodesic.reflection_involution().to_model(self._model)\n\n-     def common_perpendicular(self, other):\n+     def common_perpendicula(self, other):\n          r\"\"\"\n          Return the unique hyperbolic geodesic perpendicular to two given\n          geodesics, if such a geodesic exists. If none exists, raise a\n```\n",
+    "body": "Replying to [comment:54 glaun]:\n> Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.\n\n\nNot a problem. I hope a lot of the design is clear and makes sense. There's still a general question of what to do with subsets (here geodesics) of a given set (the entire plane) in terms of parents (so we can induce coercions on the subsets [geodesics]), but that is a separate, quite large, and probably thorny issue that we can't solve here.\n\n> There are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.\n\n\nLet me know as things get merged in and I can review those changes so we can get this included into Sage.\n\nFYI, a typo got introduced in `c612e31`:\n\n```diff\n@@ -528,7 +528,7 @@ class HyperbolicGeodesic(SageObject):\n          \"\"\"\n          return self._cached_geodesic.reflection_involution().to_model(self._model)\n\n-     def common_perpendicular(self, other):\n+     def common_perpendicula(self, other):\n          r\"\"\"\n          Return the unique hyperbolic geodesic perpendicular to two given\n          geodesics, if such a geodesic exists. If none exists, raise a\n```",
     "created_at": "2014-09-30T04:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1752,9 +1765,11 @@ archive/issue_comments_090281.json:
 Replying to [comment:54 glaun]:
 > Thanks for your help on the code.  I'm glad you were able to get things working with the sage parent/element/etc framework.  I wasn't quite sure how to do that.
 
+
 Not a problem. I hope a lot of the design is clear and makes sense. There's still a general question of what to do with subsets (here geodesics) of a given set (the entire plane) in terms of parents (so we can induce coercions on the subsets [geodesics]), but that is a separate, quite large, and probably thorny issue that we can't solve here.
 
 > There are still bugs that I know about and have fixed in other branches, but which haven't been merged into this branch yet.  I'll hopefully have time to commit a patch that fixes the remaining bugs that I know about in the next week or two.
+
 
 Let me know as things get merged in and I can review those changes so we can get this included into Sage.
 
@@ -1771,7 +1786,6 @@ FYI, a typo got introduced in `c612e31`:
           Return the unique hyperbolic geodesic perpendicular to two given
           geodesics, if such a geodesic exists. If none exists, raise a
 ```
-
 
 
 
@@ -1842,7 +1856,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_090285.json:
 ```json
 {
-    "body": "Sorry to have disappeared for a while.  I had an insane schedule for a few weeks.  I just pushed the latest code I have.  It passes all tests and has 100% coverage.\n\nI fixed the one major bug that I knew about.  The bug had to do with orientation-reversing isometries in the two models that use SO(2,1); namely, the hyperboloid model and the Klein disk.  I solved the problem by doing isometry multiplication in the upeer half plane model.\n----\nNew commits:\n----\nNew commits:",
+    "body": "Sorry to have disappeared for a while.  I had an insane schedule for a few weeks.  I just pushed the latest code I have.  It passes all tests and has 100% coverage.\n\nI fixed the one major bug that I knew about.  The bug had to do with orientation-reversing isometries in the two models that use SO(2,1); namely, the hyperboloid model and the Klein disk.  I solved the problem by doing isometry multiplication in the upeer half plane model.\n\n---\nNew commits:\n|                                                                                                                                          |                                            |\n|------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|\n|[b558754](http://git.sagemath.org/sage.git/commit/?id=b558754ec2a6ca610ed14d1831e35002384c483c)|`Fixed a bug in isometry_from_fixed_points.`|\n|[45392f4](http://git.sagemath.org/sage.git/commit/?id=45392f410cf0167d30400acf14365dbe1a1c7772)|`Partial progress toward getting reflection_involution working properly with coercion UHP -> PD.`|\n|[1f8d109](http://git.sagemath.org/sage.git/commit/?id=1f8d109f32f891e450905d75fe6bf081382316eb)|`May need to roll this one back.  Uncertain if it's an improvement.`|\n|[6d7c46d](http://git.sagemath.org/sage.git/commit/?id=6d7c46ddcf8e6f495e8b0e8856b3a28098576db6)|`Fixed associativity issue with PD orientation-preserving and orientation-reversing isometries.`|\n|[81ecbb0](http://git.sagemath.org/sage.git/commit/?id=81ecbb069f88098e38e88d590f1708bab089cd1e)|`Fixed test failures caused by the previous bug fixes.`|\n|[a1c4496](http://git.sagemath.org/sage.git/commit/?id=a1c4496109c119d3d44cacf31b6c87108dab1ba8)|`Added tests to hyperbolic_isometry.py.`|\n---\nNew commits:",
     "created_at": "2014-11-03T15:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1854,9 +1868,18 @@ archive/issue_comments_090285.json:
 Sorry to have disappeared for a while.  I had an insane schedule for a few weeks.  I just pushed the latest code I have.  It passes all tests and has 100% coverage.
 
 I fixed the one major bug that I knew about.  The bug had to do with orientation-reversing isometries in the two models that use SO(2,1); namely, the hyperboloid model and the Klein disk.  I solved the problem by doing isometry multiplication in the upeer half plane model.
-----
+
+---
 New commits:
-----
+|                                                                                                                                          |                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+|[b558754](http://git.sagemath.org/sage.git/commit/?id=b558754ec2a6ca610ed14d1831e35002384c483c)|`Fixed a bug in isometry_from_fixed_points.`|
+|[45392f4](http://git.sagemath.org/sage.git/commit/?id=45392f410cf0167d30400acf14365dbe1a1c7772)|`Partial progress toward getting reflection_involution working properly with coercion UHP -> PD.`|
+|[1f8d109](http://git.sagemath.org/sage.git/commit/?id=1f8d109f32f891e450905d75fe6bf081382316eb)|`May need to roll this one back.  Uncertain if it's an improvement.`|
+|[6d7c46d](http://git.sagemath.org/sage.git/commit/?id=6d7c46ddcf8e6f495e8b0e8856b3a28098576db6)|`Fixed associativity issue with PD orientation-preserving and orientation-reversing isometries.`|
+|[81ecbb0](http://git.sagemath.org/sage.git/commit/?id=81ecbb069f88098e38e88d590f1708bab089cd1e)|`Fixed test failures caused by the previous bug fixes.`|
+|[a1c4496](http://git.sagemath.org/sage.git/commit/?id=a1c4496109c119d3d44cacf31b6c87108dab1ba8)|`Added tests to hyperbolic_isometry.py.`|
+---
 New commits:
 
 
@@ -1884,7 +1907,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_090287.json:
 ```json
 {
-    "body": "No worries; I completely understand (and will likely have to do the same thing shortly).\n\nSo, I've updated it to the latest develop version, fixed (trivial) doctests from that, and added full coverage to `hyperbolic_coercion.py` (which I should've done in the first place). If there are no obvious major bugs, then you can set a positive review.\n----\nNew commits:",
+    "body": "No worries; I completely understand (and will likely have to do the same thing shortly).\n\nSo, I've updated it to the latest develop version, fixed (trivial) doctests from that, and added full coverage to `hyperbolic_coercion.py` (which I should've done in the first place). If there are no obvious major bugs, then you can set a positive review.\n\n---\nNew commits:",
     "created_at": "2014-11-03T19:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -1896,7 +1919,8 @@ archive/issue_comments_090287.json:
 No worries; I completely understand (and will likely have to do the same thing shortly).
 
 So, I've updated it to the latest develop version, fixed (trivial) doctests from that, and added full coverage to `hyperbolic_coercion.py` (which I should've done in the first place). If there are no obvious major bugs, then you can set a positive review.
-----
+
+---
 New commits:
 
 
@@ -2016,7 +2040,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_090294.json:
 ```json
 {
-    "body": "I am a bit worried by the fact that some tests are longer than 1s, see\n\n```\nsage -bt --long --warn-long src/sage/geometry/hyperbolic_space/*.py\n```\n\nOtherwise, things look good.",
+    "body": "I am a bit worried by the fact that some tests are longer than 1s, see\n\n```\nsage -bt --long --warn-long src/sage/geometry/hyperbolic_space/*.py\n```\nOtherwise, things look good.",
     "created_at": "2015-03-16T20:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
@@ -2030,7 +2054,6 @@ I am a bit worried by the fact that some tests are longer than 1s, see
 ```
 sage -bt --long --warn-long src/sage/geometry/hyperbolic_space/*.py
 ```
-
 Otherwise, things look good.
 
 

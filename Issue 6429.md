@@ -3,7 +3,7 @@
 archive/issues_006429.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @dandrake @craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\n\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @dandrake @craigcitro\n\nAs discussed in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/603e2b5337993fc6?tvc=2) on sage-devel, the search_src, search_doc, and search_def functions use the unix 'find' command, and since there are different versions of the command which take incompatible arguments, there are problems with those functions.  The attached patch reworks all of these to use pure Python rather than 'find'.  It might be a little slower, but it should be more robust.\n\nThis patch also adds two new arguments to those functions.  From the docstring:\n\n```\n    - ``path_re`` (optional, default '') - regular expression which\n      the filename (including the path) must match.\n\n    - ``module`` (optional, default 'sage') - the module in which to\n      search.  The default is 'sage', the entire Sage library.\n```\n(Actually, `module` doesn't make sense for search_doc, so it's not available there.)\n\nFor example:\n\n```\nsearch_src(\"matrix\", module=\"sage.calculus\")\n```\nwith tab completion available as you type in \"sage.calculus\", or to accomplish essentially the same thing:\n\n```\nsearch_src(\"matrix\", path_re=\"calc\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6429\n\n",
     "created_at": "2009-06-27T03:34:20Z",
     "labels": [
         "component: misc",
@@ -31,7 +31,6 @@ This patch also adds two new arguments to those functions.  From the docstring:
     - ``module`` (optional, default 'sage') - the module in which to
       search.  The default is 'sage', the entire Sage library.
 ```
-
 (Actually, `module` doesn't make sense for search_doc, so it's not available there.)
 
 For example:
@@ -39,13 +38,11 @@ For example:
 ```
 search_src("matrix", module="sage.calculus")
 ```
-
 with tab completion available as you type in "sage.calculus", or to accomplish essentially the same thing:
 
 ```
 search_src("matrix", path_re="calc")
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6429
 
@@ -99,7 +96,7 @@ Okay, this new patch just adds my name to the AUTHORS block.  Line numbers would
 archive/issue_comments_051538.json:
 ```json
 {
-    "body": "The trac server is not letting me upload patches, so you can get my line numbers patch from http://sage.math.washington.edu/home/drake/trac_6429_line_numbers.patch.\n\nFor the search functions, it includes line numbers just like \"`grep -nH`\":\n\n```\ncombinat/yang_baxter_graph.py:530:    def __init__(self, partition):\n```\n\nwith the line number between colons. For search_doc, this admittedly doesn't really make sense, but it does no harm to include it. When in the notebook, no line numbers are produced, since users will view the results with a web browser, and \"jump to this line in the source code\" is not a typical web browser feature. Fortunately, the `format_search_as_html` function worked without alteration. I did write up a way to include a list of line numbers in the notebook output, but since it's not so useful I ditched it.\n\nWith the line numbers, you could now automatically look up functions and docstrings; for example, in some kind of external editor, if you wanted functions related to set partitions, the editor could run\n\n```\nsage -c 'print search_def(\"partition\", \"set\", interact=False)'\n```\n\nin a background shell, and then offer a menu with the resulting files, and be able to jump right to the correct location.\n\nYour patch gets a positive review, although I've only tested it on sage.math and bsd.math (so, 64-bit Ubuntu and OS X 10.5)...but now that you're doing everything in Python, it's hard to see how this could fail on different platforms. (Famous last words?)  What do you think of the line numbers patch?",
+    "body": "The trac server is not letting me upload patches, so you can get my line numbers patch from http://sage.math.washington.edu/home/drake/trac_6429_line_numbers.patch.\n\nFor the search functions, it includes line numbers just like \"`grep -nH`\":\n\n```\ncombinat/yang_baxter_graph.py:530:    def __init__(self, partition):\n```\nwith the line number between colons. For search_doc, this admittedly doesn't really make sense, but it does no harm to include it. When in the notebook, no line numbers are produced, since users will view the results with a web browser, and \"jump to this line in the source code\" is not a typical web browser feature. Fortunately, the `format_search_as_html` function worked without alteration. I did write up a way to include a list of line numbers in the notebook output, but since it's not so useful I ditched it.\n\nWith the line numbers, you could now automatically look up functions and docstrings; for example, in some kind of external editor, if you wanted functions related to set partitions, the editor could run\n\n```\nsage -c 'print search_def(\"partition\", \"set\", interact=False)'\n```\nin a background shell, and then offer a menu with the resulting files, and be able to jump right to the correct location.\n\nYour patch gets a positive review, although I've only tested it on sage.math and bsd.math (so, 64-bit Ubuntu and OS X 10.5)...but now that you're doing everything in Python, it's hard to see how this could fail on different platforms. (Famous last words?)  What do you think of the line numbers patch?",
     "created_at": "2009-06-29T06:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -115,7 +112,6 @@ For the search functions, it includes line numbers just like "`grep -nH`":
 ```
 combinat/yang_baxter_graph.py:530:    def __init__(self, partition):
 ```
-
 with the line number between colons. For search_doc, this admittedly doesn't really make sense, but it does no harm to include it. When in the notebook, no line numbers are produced, since users will view the results with a web browser, and "jump to this line in the source code" is not a typical web browser feature. Fortunately, the `format_search_as_html` function worked without alteration. I did write up a way to include a list of line numbers in the notebook output, but since it's not so useful I ditched it.
 
 With the line numbers, you could now automatically look up functions and docstrings; for example, in some kind of external editor, if you wanted functions related to set partitions, the editor could run
@@ -123,7 +119,6 @@ With the line numbers, you could now automatically look up functions and docstri
 ```
 sage -c 'print search_def("partition", "set", interact=False)'
 ```
-
 in a background shell, and then offer a menu with the resulting files, and be able to jump right to the correct location.
 
 Your patch gets a positive review, although I've only tested it on sage.math and bsd.math (so, 64-bit Ubuntu and OS X 10.5)...but now that you're doing everything in Python, it's hard to see how this could fail on different platforms. (Famous last words?)  What do you think of the line numbers patch?
@@ -171,7 +166,7 @@ Okay, trac was restarted and now the patch is available here.
 archive/issue_comments_051541.json:
 ```json
 {
-    "body": "Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by @jhpalmieri created at 2009-06-30 00:18:21\n\n> What do you think of the line numbers patch?\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
+    "body": "Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429/trac_6429_ref.patch) by @jhpalmieri created at 2009-06-30 00:18:21\n\n> What do you think of the line numbers patch?\n\n\nLooks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.\n\nApply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.",
     "created_at": "2009-06-30T00:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -184,6 +179,7 @@ Attachment [trac_6429_ref.patch](tarball://root/attachments/some-uuid/ticket6429
 
 > What do you think of the line numbers patch?
 
+
 Looks good except that line numbers are indexed starting at 0, and I think the first line of a file should be line 1, not line 0.  I've added a referee's patch to fix this.
 
 Apply all three patches in this order: sagedoc_6429.patch, trac_6429_line_numbers.patch, trac_6429_ref.patch.
@@ -195,7 +191,7 @@ Apply all three patches in this order: sagedoc_6429.patch, trac_6429_line_number
 archive/issue_comments_051542.json:
 ```json
 {
-    "body": "Some timings (on an Intel iMac running OS X 10.5):\n\nBefore the patch:\n\n```\nsage: time s = search_src('matrix', interact=False)\nCPU times: user 1.54 s, sys: 2.46 s, total: 4.00 s\nWall time: 4.50 s\n```\n\nAfter the patch:\n\n```\nsage: time s = search_src('matrix', interact=False)\nCPU times: user 2.15 s, sys: 0.16 s, total: 2.31 s\nWall time: 2.31 s\n```\n\n\nOn sage.math, it's also faster after the patch, but not by quite the same margin: Wall time 2.03 s before the patch, 1.42 s after.",
+    "body": "Some timings (on an Intel iMac running OS X 10.5):\n\nBefore the patch:\n\n```\nsage: time s = search_src('matrix', interact=False)\nCPU times: user 1.54 s, sys: 2.46 s, total: 4.00 s\nWall time: 4.50 s\n```\nAfter the patch:\n\n```\nsage: time s = search_src('matrix', interact=False)\nCPU times: user 2.15 s, sys: 0.16 s, total: 2.31 s\nWall time: 2.31 s\n```\n\nOn sage.math, it's also faster after the patch, but not by quite the same margin: Wall time 2.03 s before the patch, 1.42 s after.",
     "created_at": "2009-06-30T16:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6429",
     "type": "issue_comment",
@@ -213,7 +209,6 @@ sage: time s = search_src('matrix', interact=False)
 CPU times: user 1.54 s, sys: 2.46 s, total: 4.00 s
 Wall time: 4.50 s
 ```
-
 After the patch:
 
 ```
@@ -221,7 +216,6 @@ sage: time s = search_src('matrix', interact=False)
 CPU times: user 2.15 s, sys: 0.16 s, total: 2.31 s
 Wall time: 2.31 s
 ```
-
 
 On sage.math, it's also faster after the patch, but not by quite the same margin: Wall time 2.03 s before the patch, 1.42 s after.
 

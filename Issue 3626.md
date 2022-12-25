@@ -3,7 +3,7 @@
 archive/issues_003626.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @rlmill\n\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n\n... which makes sense, given the code...\n\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
+    "body": "Assignee: boothby\n\nCC:  @rlmill\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n... which makes sense, given the code...\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
     "created_at": "2008-07-09T18:49:36Z",
     "labels": [
         "component: graph theory",
@@ -21,7 +21,6 @@ Assignee: boothby
 
 CC:  @rlmill
 
-
 ```
 sage: G = Graph("George")
 sage: G.set_boundary(set([1,2,3]))
@@ -29,9 +28,7 @@ sage: G.get_boundary()
 []
 ```
 
-
 ... which makes sense, given the code...
-
 
 ```
     def set_boundary(self, boundary):
@@ -42,7 +39,6 @@ sage: G.get_boundary()
     def set_embedding(self, embedding):
         ...
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3626

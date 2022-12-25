@@ -3,7 +3,7 @@
 archive/issues_007162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby @jaapspies\n\nI'm trying to build sage-4.1.2 on disk.math.washington.edu (opensolaris x86) and had to change the spkg-install of gd-2.0.35.p2:\n\n```\n# We explicitly disable X support, since (1) X is not a SAGE dependency,\n# and (2) the gd build fails on a lot of OS X PPC machines when X is enabled.\n./configure --prefix=\"$SAGE_LOCAL\" --without-jpeg --without-x --without-xpm --with-zlib=\"$SAGE_LOCAL\" --with-freetype=\"$SAGE_LOCAL\"\n```\n\n\nI added `--without-xpm`.\n\nMaybe we should make this standard?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7162\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein drkirkby @jaapspies\n\nI'm trying to build sage-4.1.2 on disk.math.washington.edu (opensolaris x86) and had to change the spkg-install of gd-2.0.35.p2:\n\n```\n# We explicitly disable X support, since (1) X is not a SAGE dependency,\n# and (2) the gd build fails on a lot of OS X PPC machines when X is enabled.\n./configure --prefix=\"$SAGE_LOCAL\" --without-jpeg --without-x --without-xpm --with-zlib=\"$SAGE_LOCAL\" --with-freetype=\"$SAGE_LOCAL\"\n```\n\nI added `--without-xpm`.\n\nMaybe we should make this standard?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7162\n\n",
     "created_at": "2009-10-08T20:07:15Z",
     "labels": [
         "component: porting: solaris",
@@ -28,7 +28,6 @@ I'm trying to build sage-4.1.2 on disk.math.washington.edu (opensolaris x86) and
 # and (2) the gd build fails on a lot of OS X PPC machines when X is enabled.
 ./configure --prefix="$SAGE_LOCAL" --without-jpeg --without-x --without-xpm --with-zlib="$SAGE_LOCAL" --with-freetype="$SAGE_LOCAL"
 ```
-
 
 I added `--without-xpm`.
 
@@ -106,7 +105,7 @@ http://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.
 archive/issue_comments_059266.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> A revised .spkg can be found at \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.p3.spkg\n\nThis change make the build depend on setting export CFLAGS=-m64\n\nIs this a good thing to  do?\n\nJaap",
+    "body": "Replying to [comment:2 drkirkby]:\n> A revised .spkg can be found at \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.p3.spkg\n\n\nThis change make the build depend on setting export CFLAGS=-m64\n\nIs this a good thing to  do?\n\nJaap",
     "created_at": "2010-01-02T21:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7162",
     "type": "issue_comment",
@@ -119,6 +118,7 @@ Replying to [comment:2 drkirkby]:
 > A revised .spkg can be found at 
 > 
 > http://boxen.math.washington.edu/home/kirkby/portability/gd-2.0.35.p3/gd-2.0.35.p3.spkg
+
 
 This change make the build depend on setting export CFLAGS=-m64
 
@@ -133,7 +133,7 @@ Jaap
 archive/issue_comments_059267.json:
 ```json
 {
-    "body": "Hi, \nyou have a point, but there was some logic to this. \n\nThe purpose of the ticket which William opened was to add \n\n\n```\n--without-xpm\n```\n\n\nto the line where the configure script it invoked. The ticket had nothing to to with SAGE64.\n\nI think whilst trying to build on Solaris in 64-bit mode, you should set CFLAGS and CXXFLAGS to include -m64, as that will allow **some** packages to build without making changes to their spkg-install files. This is one such package. \n\nI've written two scripts (#7505) which check what the compiler is (GCC, Sun Studio, HP, IBM etc). That ticket already has positive review. \n\nI've written an updated version of sage-env, #7818 which is awaiting review. That will uses those two script, determine the right compiler flag, then automatically export the right compiler flag to CFLAGS. \n\nAs such, I believe making only the change William suggested is sufficient in this case. Just export CFLAGS and CXXFLAGS to include -m64, and expect that in the next release or two, that will happen automatically for you. Doing this, will reduce somewhat the number of spkg-install files that need editing. \n\nDave",
+    "body": "Hi, \nyou have a point, but there was some logic to this. \n\nThe purpose of the ticket which William opened was to add \n\n```\n--without-xpm\n```\n\nto the line where the configure script it invoked. The ticket had nothing to to with SAGE64.\n\nI think whilst trying to build on Solaris in 64-bit mode, you should set CFLAGS and CXXFLAGS to include -m64, as that will allow **some** packages to build without making changes to their spkg-install files. This is one such package. \n\nI've written two scripts (#7505) which check what the compiler is (GCC, Sun Studio, HP, IBM etc). That ticket already has positive review. \n\nI've written an updated version of sage-env, #7818 which is awaiting review. That will uses those two script, determine the right compiler flag, then automatically export the right compiler flag to CFLAGS. \n\nAs such, I believe making only the change William suggested is sufficient in this case. Just export CFLAGS and CXXFLAGS to include -m64, and expect that in the next release or two, that will happen automatically for you. Doing this, will reduce somewhat the number of spkg-install files that need editing. \n\nDave",
     "created_at": "2010-01-02T22:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7162",
     "type": "issue_comment",
@@ -147,11 +147,9 @@ you have a point, but there was some logic to this.
 
 The purpose of the ticket which William opened was to add 
 
-
 ```
 --without-xpm
 ```
-
 
 to the line where the configure script it invoked. The ticket had nothing to to with SAGE64.
 

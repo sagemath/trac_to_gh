@@ -3,7 +3,7 @@
 archive/issues_005721.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @dwbump sage-combinat\n\nBefore:\n\n\n```\nsage -t  \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n\t [125.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 125.0 seconds\n```\n\n\nAfter:\n\n\n```\n\t [22.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 22.8 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5721\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @dwbump sage-combinat\n\nBefore:\n\n```\nsage -t  \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n\t [125.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 125.0 seconds\n```\n\nAfter:\n\n```\n\t [22.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 22.8 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5721\n\n",
     "created_at": "2009-04-09T01:59:42Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  @dwbump sage-combinat
 
 Before:
 
-
 ```
 sage -t  "devel/sage-main/sage/combinat/root_system/weyl_characters.py"
 	 [125.0 s]
@@ -32,9 +31,7 @@ All tests passed!
 Total time for all tests: 125.0 seconds
 ```
 
-
 After:
-
 
 ```
 	 [22.8 s]
@@ -43,7 +40,6 @@ After:
 All tests passed!
 Total time for all tests: 22.8 seconds
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5721
 
@@ -74,7 +70,7 @@ Attachment [trac_5721.patch](tarball://root/attachments/some-uuid/ticket5721/tra
 archive/issue_comments_044611.json:
 ```json
 {
-    "body": "This is highly desirable as a 3 to 5-fold speedup of all the functions in `weyl_character.py`.\n\nI got some new errors with sage-3.4.1.rc1 after applying the patch.\n\nI had failures in\n\n\n```\ncombinat/root_system/ambient_space.py\ncombinat/sf/kschur.py\ncombinat/sf/jack.py\ncombinat/sf/hall_littlewood.py\n```\n",
+    "body": "This is highly desirable as a 3 to 5-fold speedup of all the functions in `weyl_character.py`.\n\nI got some new errors with sage-3.4.1.rc1 after applying the patch.\n\nI had failures in\n\n```\ncombinat/root_system/ambient_space.py\ncombinat/sf/kschur.py\ncombinat/sf/jack.py\ncombinat/sf/hall_littlewood.py\n```",
     "created_at": "2009-04-09T18:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -89,14 +85,12 @@ I got some new errors with sage-3.4.1.rc1 after applying the patch.
 
 I had failures in
 
-
 ```
 combinat/root_system/ambient_space.py
 combinat/sf/kschur.py
 combinat/sf/jack.py
 combinat/sf/hall_littlewood.py
 ```
-
 
 
 
@@ -129,7 +123,7 @@ Michael
 archive/issue_comments_044613.json:
 ```json
 {
-    "body": "I did glance over the patch and this is also something that needs to be fixed for 32 bit boxen:\n\n```\n \t182\t    def __hash__(self): \n \t183\t        \"\"\" \n \t184\t        EXAMPLES:: \n \t185\t         \n \t186\t            sage: e = RootSystem(['A',2]).ambient_space() \n \t187\t            sage: hash(e.simple_root(0)) \n \t188\t            -4601450286177489034          # 64-bit \n```\n\n\nI am also not yet 100% convinced that **`@`cached_method** does not cause memory leaks, but I have no evidence or test case to prove my suspicion :)\n\nCheers,\n\nMichael",
+    "body": "I did glance over the patch and this is also something that needs to be fixed for 32 bit boxen:\n\n```\n \t182\t    def __hash__(self): \n \t183\t        \"\"\" \n \t184\t        EXAMPLES:: \n \t185\t         \n \t186\t            sage: e = RootSystem(['A',2]).ambient_space() \n \t187\t            sage: hash(e.simple_root(0)) \n \t188\t            -4601450286177489034          # 64-bit \n```\n\nI am also not yet 100% convinced that **`@`cached_method** does not cause memory leaks, but I have no evidence or test case to prove my suspicion :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T19:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -149,7 +143,6 @@ I did glance over the patch and this is also something that needs to be fixed fo
  	187	            sage: hash(e.simple_root(0)) 
  	188	            -4601450286177489034          # 64-bit 
 ```
-
 
 I am also not yet 100% convinced that **`@`cached_method** does not cause memory leaks, but I have no evidence or test case to prove my suspicion :)
 
@@ -237,7 +230,7 @@ Michael
 archive/issue_comments_044616.json:
 ```json
 {
-    "body": "The problem seems to be in free_module.py.\n\nIn order for __cmp__ method to work with free group elements, no\nterms may occur with zero coefficient. But debugging the failure in\njack.py we find that after Mike's patch:\n\n\n```\nsage: Z = ZonalPolynomials(QQ)\nsage: p = Partition([2,2,1])\nsage: a = p.hook_product(2)*Z(p)\nsage: a._monomial_coefficients\n{[1, 1, 1, 1, 1]: 0, [2, 1, 1, 1]: 0, [2, 2, 1]: 40}\n```\n\n\nreferring to the patch, the fragment following the comment\n\n`#Remove all entries that are equal to 0`\n\nmight be incorrect.\n\nFor efficiency, the changes in ambient_space.py seem more important than the changes in free_module.py. If we revert the changes in free_module.py we still get about a 3 fold speedup, running `sage -t weyl_characters.py` in about 19 seconds - see above for other timings.\n\nBut if we revert the changes in ambient_space.py there is no improvement.\n\nThe changes in free_module.py could therefore be abandoned.",
+    "body": "The problem seems to be in free_module.py.\n\nIn order for __cmp__ method to work with free group elements, no\nterms may occur with zero coefficient. But debugging the failure in\njack.py we find that after Mike's patch:\n\n```\nsage: Z = ZonalPolynomials(QQ)\nsage: p = Partition([2,2,1])\nsage: a = p.hook_product(2)*Z(p)\nsage: a._monomial_coefficients\n{[1, 1, 1, 1, 1]: 0, [2, 1, 1, 1]: 0, [2, 2, 1]: 40}\n```\n\nreferring to the patch, the fragment following the comment\n\n`#Remove all entries that are equal to 0`\n\nmight be incorrect.\n\nFor efficiency, the changes in ambient_space.py seem more important than the changes in free_module.py. If we revert the changes in free_module.py we still get about a 3 fold speedup, running `sage -t weyl_characters.py` in about 19 seconds - see above for other timings.\n\nBut if we revert the changes in ambient_space.py there is no improvement.\n\nThe changes in free_module.py could therefore be abandoned.",
     "created_at": "2009-04-12T04:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -252,7 +245,6 @@ In order for __cmp__ method to work with free group elements, no
 terms may occur with zero coefficient. But debugging the failure in
 jack.py we find that after Mike's patch:
 
-
 ```
 sage: Z = ZonalPolynomials(QQ)
 sage: p = Partition([2,2,1])
@@ -260,7 +252,6 @@ sage: a = p.hook_product(2)*Z(p)
 sage: a._monomial_coefficients
 {[1, 1, 1, 1, 1]: 0, [2, 1, 1, 1]: 0, [2, 2, 1]: 40}
 ```
-
 
 referring to the patch, the fragment following the comment
 
@@ -411,7 +402,7 @@ Note that we do need to test it on a 32-bit box to get the missing hash value.
 archive/issue_comments_044622.json:
 ```json
 {
-    "body": "Here is the 32 bit run:\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/ambient_space.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc2/devel/sage/sage/combinat/root_system/ambient_space.py\", line 185:\n    sage: hash(e.simple_root(0))\nExpected nothing\nGot:\n    549810038\n**********************************************************************\n```\n\nI will post a reviewer patch shortly.\n\nCheers,\n\nMichael",
+    "body": "Here is the 32 bit run:\n\n```\nsage -t -long \"devel/sage/sage/combinat/root_system/ambient_space.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc2/devel/sage/sage/combinat/root_system/ambient_space.py\", line 185:\n    sage: hash(e.simple_root(0))\nExpected nothing\nGot:\n    549810038\n**********************************************************************\n```\nI will post a reviewer patch shortly.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T09:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5721",
     "type": "issue_comment",
@@ -432,7 +423,6 @@ Got:
     549810038
 **********************************************************************
 ```
-
 I will post a reviewer patch shortly.
 
 Cheers,

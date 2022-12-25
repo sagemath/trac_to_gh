@@ -3,7 +3,7 @@
 archive/issues_000203.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nArgh!  Curves over extension fields don't work?\n \nsage: E\nElliptic Curve defined by y^2  = x^3 + x over Finite Field in a of size 5^2\n \nsage: P\n(a : 2*a + 4 : 1)\n \nsage: P+P+P+P+P\n(2*a + 3 : 2*a : 1)\n \nsage: 5*P\n(0 : 1 : 0)\n\n \nsage: 5*P\n(0 : 1 : 0)\n \nsage: P*5\n(2*a + 3 : 2*a : 1)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/203\n\n",
+    "body": "Assignee: @williamstein\n\n```\nArgh!  Curves over extension fields don't work?\n \nsage: E\nElliptic Curve defined by y^2  = x^3 + x over Finite Field in a of size 5^2\n \nsage: P\n(a : 2*a + 4 : 1)\n \nsage: P+P+P+P+P\n(2*a + 3 : 2*a : 1)\n \nsage: 5*P\n(0 : 1 : 0)\n\n \nsage: 5*P\n(0 : 1 : 0)\n \nsage: P*5\n(2*a + 3 : 2*a : 1)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/203\n\n",
     "created_at": "2007-01-21T03:44:16Z",
     "labels": [
         "component: algebraic geometry",
@@ -17,7 +17,6 @@ archive/issues_000203.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Argh!  Curves over extension fields don't work?
@@ -41,7 +40,6 @@ sage: 5*P
 sage: P*5
 (2*a + 3 : 2*a : 1)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/203
 

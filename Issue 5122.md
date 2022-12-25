@@ -3,7 +3,7 @@
 archive/issues_005122.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should draw a point at the origin in 2d:\n\n```\nE = EllipticCurve('37a')\nP = E([0,0])\npoint(P)\n```\n\n\nIt used to work but is now broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5122\n\n",
+    "body": "Assignee: @williamstein\n\nThis should draw a point at the origin in 2d:\n\n```\nE = EllipticCurve('37a')\nP = E([0,0])\npoint(P)\n```\n\nIt used to work but is now broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5122\n\n",
     "created_at": "2009-01-28T20:09:46Z",
     "labels": [
         "component: graphics",
@@ -25,7 +25,6 @@ E = EllipticCurve('37a')
 P = E([0,0])
 point(P)
 ```
-
 
 It used to work but is now broken.
 

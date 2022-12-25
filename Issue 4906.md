@@ -131,7 +131,7 @@ maybe there is a better solution using the new functionalities of REST?
 archive/issue_comments_037156.json:
 ```json
 {
-    "body": "in the function overlap_partition of the file word.py, the paragraph \n\n\n```\n-            These three couples correspond to the pairs of letters one above \n-            the other in the following overlap :\n-                    cheval\n-                       abcdef\n-            The symmetric, reflexive and transitive closure of $R_{u,v,d}$\n-            defines the following partition of the alphabet $A$:\n-            $\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}$.\n```\n\n\nbecame \n\n\n```\n+        These three couples correspond to the pairs of letters one above\n+        the other in the following overlap : cheval abcdef The symmetric,\n+        reflexive and transitive closure of `R_{u,v,d}` defines\n+        the following partition of the alphabet `A`:\n+        `\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}`.\n```\n\n\nbut I would prefer \n\n\n```\n+        These three couples correspond to the pairs of letters one above\n+        the other in the following overlap : \n+             cheval \n+                abcdef \n+        The symmetric, reflexive and transitive closure of `R_{u,v,d}` defines\n+        the following partition of the alphabet `A`:\n+        `\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}`.\n```\n\n\nmaybe there is a better solution using the new functionalities of REST?",
+    "body": "in the function overlap_partition of the file word.py, the paragraph \n\n```\n-            These three couples correspond to the pairs of letters one above \n-            the other in the following overlap :\n-                    cheval\n-                       abcdef\n-            The symmetric, reflexive and transitive closure of $R_{u,v,d}$\n-            defines the following partition of the alphabet $A$:\n-            $\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}$.\n```\n\nbecame \n\n```\n+        These three couples correspond to the pairs of letters one above\n+        the other in the following overlap : cheval abcdef The symmetric,\n+        reflexive and transitive closure of `R_{u,v,d}` defines\n+        the following partition of the alphabet `A`:\n+        `\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}`.\n```\n\nbut I would prefer \n\n```\n+        These three couples correspond to the pairs of letters one above\n+        the other in the following overlap : \n+             cheval \n+                abcdef \n+        The symmetric, reflexive and transitive closure of `R_{u,v,d}` defines\n+        the following partition of the alphabet `A`:\n+        `\\{\\{a, b, v\\}, \\{c, l\\}, \\{d\\}, \\{e\\}, \\{f\\}, \\{h\\}\\}`.\n```\n\nmaybe there is a better solution using the new functionalities of REST?",
     "created_at": "2009-01-04T02:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -141,7 +141,6 @@ archive/issue_comments_037156.json:
 ```
 
 in the function overlap_partition of the file word.py, the paragraph 
-
 
 ```
 -            These three couples correspond to the pairs of letters one above 
@@ -153,9 +152,7 @@ in the function overlap_partition of the file word.py, the paragraph
 -            $\{\{a, b, v\}, \{c, l\}, \{d\}, \{e\}, \{f\}, \{h\}\}$.
 ```
 
-
 became 
-
 
 ```
 +        These three couples correspond to the pairs of letters one above
@@ -165,9 +162,7 @@ became
 +        `\{\{a, b, v\}, \{c, l\}, \{d\}, \{e\}, \{f\}, \{h\}\}`.
 ```
 
-
 but I would prefer 
-
 
 ```
 +        These three couples correspond to the pairs of letters one above
@@ -179,7 +174,6 @@ but I would prefer
 +        `\{\{a, b, v\}, \{c, l\}, \{d\}, \{e\}, \{f\}, \{h\}\}`.
 ```
 
-
 maybe there is a better solution using the new functionalities of REST?
 
 
@@ -189,7 +183,7 @@ maybe there is a better solution using the new functionalities of REST?
 archive/issue_comments_037157.json:
 ```json
 {
-    "body": "In the wordmorphism file, was the following change wanted?\n\n\n```\n-            \n-        Use the arrows ('->') correctly:\n+        \n+        Use the arrows ('-') correctly::\n+        \n             sage: WordMorphism('a->ab,b-')\n             Traceback (most recent call last):\n             ...\n@@ -63,38 +72,50 @@\n             Traceback (most recent call last):\n             ...\n             ValueError: The second and third characters must be '->' (not '-]')\n```\n",
+    "body": "In the wordmorphism file, was the following change wanted?\n\n```\n-            \n-        Use the arrows ('->') correctly:\n+        \n+        Use the arrows ('-') correctly::\n+        \n             sage: WordMorphism('a->ab,b-')\n             Traceback (most recent call last):\n             ...\n@@ -63,38 +72,50 @@\n             Traceback (most recent call last):\n             ...\n             ValueError: The second and third characters must be '->' (not '-]')\n```",
     "created_at": "2009-01-04T02:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -199,7 +193,6 @@ archive/issue_comments_037157.json:
 ```
 
 In the wordmorphism file, was the following change wanted?
-
 
 ```
 -            
@@ -215,7 +208,6 @@ In the wordmorphism file, was the following change wanted?
              ...
              ValueError: The second and third characters must be '->' (not '-]')
 ```
-
 
 
 
@@ -248,7 +240,7 @@ slabbe
 archive/issue_comments_037159.json:
 ```json
 {
-    "body": "Replying to [comment:7 slabbe]:\n> Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?\n\nYes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.",
+    "body": "Replying to [comment:7 slabbe]:\n> Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?\n\n\nYes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.",
     "created_at": "2009-01-04T03:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -260,6 +252,7 @@ archive/issue_comments_037159.json:
 Replying to [comment:7 slabbe]:
 > Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?
 
+
 Yes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.
 
 
@@ -269,7 +262,7 @@ Yes, you can do this in ReST using #. to mark the number.  I'll post a patch whi
 archive/issue_comments_037160.json:
 ```json
 {
-    "body": "Replying to [comment:8 mhansen]:\n> Replying to [comment:7 slabbe]:\n> > Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?\n> \n> Yes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.\n\nOk, so if you want to do some of those tonigh, by memory, I would tell you to look at the constructor of WordMorphism, __pow__ of word.py and __call__ of WordMorphism.",
+    "body": "Replying to [comment:8 mhansen]:\n> Replying to [comment:7 slabbe]:\n> > Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?\n\n> \n> Yes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.\n\n\nOk, so if you want to do some of those tonigh, by memory, I would tell you to look at the constructor of WordMorphism, __pow__ of word.py and __call__ of WordMorphism.",
     "created_at": "2009-01-04T03:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -281,8 +274,10 @@ archive/issue_comments_037160.json:
 Replying to [comment:8 mhansen]:
 > Replying to [comment:7 slabbe]:
 > > Sometimes, there are numbered enumeration that were not changed by the above patche (see for example the constructor of WordMorphism ). But maybe there is a good way to do an enumeration without writting the numbers using REST? Do we want to convert those right now also?
+
 > 
 > Yes, you can do this in ReST using #. to mark the number.  I'll post a patch which fixes some of these things later tonight.
+
 
 Ok, so if you want to do some of those tonigh, by memory, I would tell you to look at the constructor of WordMorphism, __pow__ of word.py and __call__ of WordMorphism.
 
@@ -347,7 +342,7 @@ I've posted a tiny fix to make doctests pass in sage.combinat.* after sphinxific
 archive/issue_comments_037164.json:
 ```json
 {
-    "body": "I've been through the file from `alternating_sign_matrix.py`\nto `sage/combinat/graph_path.py` in alphabetic order and from `species/characteristic_species.py` to `yamanouchi.py`. \n\nHere is my list of corrections:\n\n\n```\nFile alternating_sign_matrix.py\n===============================\n* Function_next_column_iterator: typo \nReturns a generator for all columbs of height height properly\n                            columns\n\t\t\t    \n\nFile choose_nk.py\n=================\n*  function _comb_largest(a,b,x): The < are missing. \n-    Returns the largest w < a such that binomial(w,b) <= x.\n+    Returns the largest w a such that binomial(w,b) = x.\n\n\nFile combinat.py\n=================\n\nIn the web page, the Integrated patch about Bell's polynomial still contains\nlatex command (Ticket #5109) in particular: \n$$ B_{n,k}(x_1, x_2, ldots, x_{n-k+1}) = sum_{sum{j_i}=k, sum{i j_i} =n}\nfrac{n!}{j_1!j_2!ldots} frac{x_1}{1!}^j_1 frac{x_2}{2!}^j_2 ldots $$\n\n* Function unordered_tuples: typo\n+    An unordered tuple of length k of set is a unordered selection with\n                                              an\n\nFile composition.py\n===================\n\nThe definition of Peak is wrong. This is the definition for permutations.\n         The peaks are the positions i in the compositions such that\n-        self[i-1] < self[i] > self[i+1].  Note that len(self)-1 is\n-        never a peak.\n\nThe peaks of a composition are the descents which does not imediately follows\nanother descent. The function seems to be also completely wrong: in mupad we\nhad: \n>> compositions::peaks([1, 1, 3, 1, 2, 1, 3])\n  [5, 8]\n\nFile crystals.py\n================\n* class FastCrystal: The < are missing. \n-    integral. It is assumed that l1 >= l2 >= 0.  If l1\n+    integral. It is assumed that l1 = l2 = 0. If l1 and l2 are\n\n* class CrystalOfTableaux: The < are missing.\n-    a partition of length <= type[1]. Produces a classical crystal with\n+    partition of length = type[1]. Produces a classical crystal with\n\nFile designs/incidence_structures.py\n====================================\n\n* function block_design_checker: Misspelled argnument name:\n-            lmbda - each t-tuple of points should be incident with lmda blocks\n+            lmbda - each t-tuple of points should be incident with lmbda blocks\n\n* The doc after __init__ do not appear in the compiled doc. Is it normal ?\n\nFile dlx.py\n===========\n\n* In the doc all the matrices have been smashed eg:\n-            [\n-             [1, [i_11,i_12,...,i_1r]]\n-             ...\n-             [m, [i_m1,i_m2,...,i_ms]]\n-            ]\n-        where M[j][i_jk] = 1. \nis now\n[ [1, [i_11,i_12,...,i_1r]] ... [m,\n+        [i_m1,i_m2,...,i_ms]] ] where M[j][i_jk] = 1.\n\nAnd later on:\n-            1110\n-            1010\n-            0100\n-            0001\n-\n+        \n+        1110 1010 0100 0001\n+        \nThis is no more readable.\n\n* same remark on the code of _covercolumn:\n* same remark on the code of _uncovercolumn:\n\n\nfile matrices/dlxcpp.p\n======================\nSame problem as dlx.py. (actually the doc is the same, there should be a link\nrather than a copy paste). \n\n\n\nFile free_module.py\n===================\n\n* function _apply_module_morphism: Strange quotes. \n         INPUT:\n-            -- x : a element of self\n-            -- f : a function that takes in a combinatorial object\n+        -   x : a element of self\n+        \n+        -```` - f : a function that takes in a combinatorial\n          ^^^^\n\nFile matrices/latin.py\n======================\n\n* The main doc seems to have been removed !!! :\n-Latin squares\n-\n-A {\\it latin square} of order $n$ is an $n \\times n$ array such that\n[... one page removed] \n-TESTS:\n-    sage: L = elementary_abelian_2group(3)\n-    sage: L == loads(dumps(L))\n-    True\n+Latin Squares\n\n* function __init__: missing comparison sign : < \n-        at row r, column c is empty if and only if L[r, c] < 0. In this \n+        if L[r, c] 0. In this way we allow partial latin squares and can\n\n\n* function actual_row_col_sym_sizes: Please keep the brackets. \n-        {0, 1, ..., m} (no holes in that list).\n+           0, 1, ..., m (no holes in that list).\n\n* function filled_cells_map: Please keep the braclets:\n-        Number the filled cells of self with integers from {1, 2, 3, ...}.\n+        Number the filled cells of self with integers from 1, 2, 3, ....\n\n\t  \nFile integer_list.py\n====================\n\n* function comp2floor: there is a missing arrow:\n-    Given a composition, returns the lowest regular function N->N above\n+    Given a composition, returns the lowest regular function N-N above\n\n* same in comp2ceil:\n-    Given a composition, returns the lowest regular function N->N below\n+    Given a composition, returns the lowest regular function N-N below\n\n\n\nFile integer_vector.py\n======================\n\n* class class IntegerVectors_nnondescents: the itemize should be kept:\n-    The combinatorial class of integer vectors v graded by two parameters:\n-     - n: the sum of the parts of v\n-     - comp: the non descents composition of v\n+    The combinatorial class of integer vectors v graded by two\n+    parameters: - n: the sum of the parts of v - comp: the non descents\n+    composition of v\n\n* missing arrow:\n-    maximal (for the natural left->right reading) in their orbit by the\n+    maximal (for the natural left-right reading) in their orbit by the\n\n\nFile species/series.py:\n=======================\n\ndef _power_gen(self): The exponent is missing\n-        Returns a generator for all the powers self^k starting with\n+        Returns a generator for all the powers selfk starting with k = 1.\n\n\nFile species/structure.py\n==========================\n* Main doc: In the equation the \"|\" should not be lost !\n-BB = o + o*BB + o*|*BB\n+BB = o + o\\*BB + o\\*\\*BB\n\n\nFile tableau.py\n===============\n\n* function descents: Missing comparison sign\n\n-        Returns a list of the boxes (i,j) such that\n-        self[i][j] > self[i-1][j].\n+        Returns a list of the boxes (i,j) such that self[i][j]\n+        self[i-1][j].\n\nwords/morphism.py\n=================\n\n* class WordMorphism: missing > \n-        Use the arrows ('->') correctly:\n+        Use the arrows ('-') correctly::\n\n\nwords/suffix_trees.py\n* function __init__: The presentation should be kept:\n-        function t is defined as\n-                t(-1,a) = 0 for all letters a; and\n-                t(x',a) = y' for all x',y' \\in Q such that y = xa,\n-        and the suffix link function is defined as\n-                suffix_link(0) = -1;\n-                suffix_link(x') = y', if x = ay for some letter a.\n+        purposes of the algorithm, there is also an auxiliary state -1. The\n+        transition function t is defined as t(-1,a) = 0 for all letters a;\n+        and t(x',a) = y' for all x',y' Q such that y = xa, and the suffix\n+        link function is defined as suffix_link(0) = -1; suffix_link(x')\n+        = y', if x = ay for some letter a.\n\n* function _find_transition: the bracket should be kept (python code):\n-            ._transition_function = {..., node: {(i,j): target_node, ...} }\n+        ._transition_function = ..., node: (i,j): target_node, ...\n\n\nwords/word.py\n=============\n\n* function swap_increase: missing comparison sign:\n-        Returns the word with positions i and i+1 exchanged\n-        if self[i] > self[i+1]. Otherwise, it returns self.\n+        Returns the word with positions i and i+1 exchanged if self[i]\n+        self[i+1]. Otherwise, it returns self.\n\n* same for function swap_decrease.\n```\n",
+    "body": "I've been through the file from `alternating_sign_matrix.py`\nto `sage/combinat/graph_path.py` in alphabetic order and from `species/characteristic_species.py` to `yamanouchi.py`. \n\nHere is my list of corrections:\n\n```\nFile alternating_sign_matrix.py\n===============================\n* Function_next_column_iterator: typo \nReturns a generator for all columbs of height height properly\n                            columns\n\t\t\t    \n\nFile choose_nk.py\n=================\n*  function _comb_largest(a,b,x): The < are missing. \n-    Returns the largest w < a such that binomial(w,b) <= x.\n+    Returns the largest w a such that binomial(w,b) = x.\n\n\nFile combinat.py\n=================\n\nIn the web page, the Integrated patch about Bell's polynomial still contains\nlatex command (Ticket #5109) in particular: \n$$ B_{n,k}(x_1, x_2, ldots, x_{n-k+1}) = sum_{sum{j_i}=k, sum{i j_i} =n}\nfrac{n!}{j_1!j_2!ldots} frac{x_1}{1!}^j_1 frac{x_2}{2!}^j_2 ldots $$\n\n* Function unordered_tuples: typo\n+    An unordered tuple of length k of set is a unordered selection with\n                                              an\n\nFile composition.py\n===================\n\nThe definition of Peak is wrong. This is the definition for permutations.\n         The peaks are the positions i in the compositions such that\n-        self[i-1] < self[i] > self[i+1].  Note that len(self)-1 is\n-        never a peak.\n\nThe peaks of a composition are the descents which does not imediately follows\nanother descent. The function seems to be also completely wrong: in mupad we\nhad: \n>> compositions::peaks([1, 1, 3, 1, 2, 1, 3])\n  [5, 8]\n\nFile crystals.py\n================\n* class FastCrystal: The < are missing. \n-    integral. It is assumed that l1 >= l2 >= 0.  If l1\n+    integral. It is assumed that l1 = l2 = 0. If l1 and l2 are\n\n* class CrystalOfTableaux: The < are missing.\n-    a partition of length <= type[1]. Produces a classical crystal with\n+    partition of length = type[1]. Produces a classical crystal with\n\nFile designs/incidence_structures.py\n====================================\n\n* function block_design_checker: Misspelled argnument name:\n-            lmbda - each t-tuple of points should be incident with lmda blocks\n+            lmbda - each t-tuple of points should be incident with lmbda blocks\n\n* The doc after __init__ do not appear in the compiled doc. Is it normal ?\n\nFile dlx.py\n===========\n\n* In the doc all the matrices have been smashed eg:\n-            [\n-             [1, [i_11,i_12,...,i_1r]]\n-             ...\n-             [m, [i_m1,i_m2,...,i_ms]]\n-            ]\n-        where M[j][i_jk] = 1. \nis now\n[ [1, [i_11,i_12,...,i_1r]] ... [m,\n+        [i_m1,i_m2,...,i_ms]] ] where M[j][i_jk] = 1.\n\nAnd later on:\n-            1110\n-            1010\n-            0100\n-            0001\n-\n+        \n+        1110 1010 0100 0001\n+        \nThis is no more readable.\n\n* same remark on the code of _covercolumn:\n* same remark on the code of _uncovercolumn:\n\n\nfile matrices/dlxcpp.p\n======================\nSame problem as dlx.py. (actually the doc is the same, there should be a link\nrather than a copy paste). \n\n\n\nFile free_module.py\n===================\n\n* function _apply_module_morphism: Strange quotes. \n         INPUT:\n-            -- x : a element of self\n-            -- f : a function that takes in a combinatorial object\n+        -   x : a element of self\n+        \n+        -```` - f : a function that takes in a combinatorial\n          ^^^^\n\nFile matrices/latin.py\n======================\n\n* The main doc seems to have been removed !!! :\n-Latin squares\n-\n-A {\\it latin square} of order $n$ is an $n \\times n$ array such that\n[... one page removed] \n-TESTS:\n-    sage: L = elementary_abelian_2group(3)\n-    sage: L == loads(dumps(L))\n-    True\n+Latin Squares\n\n* function __init__: missing comparison sign : < \n-        at row r, column c is empty if and only if L[r, c] < 0. In this \n+        if L[r, c] 0. In this way we allow partial latin squares and can\n\n\n* function actual_row_col_sym_sizes: Please keep the brackets. \n-        {0, 1, ..., m} (no holes in that list).\n+           0, 1, ..., m (no holes in that list).\n\n* function filled_cells_map: Please keep the braclets:\n-        Number the filled cells of self with integers from {1, 2, 3, ...}.\n+        Number the filled cells of self with integers from 1, 2, 3, ....\n\n\t  \nFile integer_list.py\n====================\n\n* function comp2floor: there is a missing arrow:\n-    Given a composition, returns the lowest regular function N->N above\n+    Given a composition, returns the lowest regular function N-N above\n\n* same in comp2ceil:\n-    Given a composition, returns the lowest regular function N->N below\n+    Given a composition, returns the lowest regular function N-N below\n\n\n\nFile integer_vector.py\n======================\n\n* class class IntegerVectors_nnondescents: the itemize should be kept:\n-    The combinatorial class of integer vectors v graded by two parameters:\n-     - n: the sum of the parts of v\n-     - comp: the non descents composition of v\n+    The combinatorial class of integer vectors v graded by two\n+    parameters: - n: the sum of the parts of v - comp: the non descents\n+    composition of v\n\n* missing arrow:\n-    maximal (for the natural left->right reading) in their orbit by the\n+    maximal (for the natural left-right reading) in their orbit by the\n\n\nFile species/series.py:\n=======================\n\ndef _power_gen(self): The exponent is missing\n-        Returns a generator for all the powers self^k starting with\n+        Returns a generator for all the powers selfk starting with k = 1.\n\n\nFile species/structure.py\n==========================\n* Main doc: In the equation the \"|\" should not be lost !\n-BB = o + o*BB + o*|*BB\n+BB = o + o\\*BB + o\\*\\*BB\n\n\nFile tableau.py\n===============\n\n* function descents: Missing comparison sign\n\n-        Returns a list of the boxes (i,j) such that\n-        self[i][j] > self[i-1][j].\n+        Returns a list of the boxes (i,j) such that self[i][j]\n+        self[i-1][j].\n\nwords/morphism.py\n=================\n\n* class WordMorphism: missing > \n-        Use the arrows ('->') correctly:\n+        Use the arrows ('-') correctly::\n\n\nwords/suffix_trees.py\n* function __init__: The presentation should be kept:\n-        function t is defined as\n-                t(-1,a) = 0 for all letters a; and\n-                t(x',a) = y' for all x',y' \\in Q such that y = xa,\n-        and the suffix link function is defined as\n-                suffix_link(0) = -1;\n-                suffix_link(x') = y', if x = ay for some letter a.\n+        purposes of the algorithm, there is also an auxiliary state -1. The\n+        transition function t is defined as t(-1,a) = 0 for all letters a;\n+        and t(x',a) = y' for all x',y' Q such that y = xa, and the suffix\n+        link function is defined as suffix_link(0) = -1; suffix_link(x')\n+        = y', if x = ay for some letter a.\n\n* function _find_transition: the bracket should be kept (python code):\n-            ._transition_function = {..., node: {(i,j): target_node, ...} }\n+        ._transition_function = ..., node: (i,j): target_node, ...\n\n\nwords/word.py\n=============\n\n* function swap_increase: missing comparison sign:\n-        Returns the word with positions i and i+1 exchanged\n-        if self[i] > self[i+1]. Otherwise, it returns self.\n+        Returns the word with positions i and i+1 exchanged if self[i]\n+        self[i+1]. Otherwise, it returns self.\n\n* same for function swap_decrease.\n```",
     "created_at": "2009-02-23T22:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -360,7 +355,6 @@ I've been through the file from `alternating_sign_matrix.py`
 to `sage/combinat/graph_path.py` in alphabetic order and from `species/characteristic_species.py` to `yamanouchi.py`. 
 
 Here is my list of corrections:
-
 
 ```
 File alternating_sign_matrix.py
@@ -593,7 +587,6 @@ words/word.py
 
 
 
-
 ---
 
 archive/issue_comments_037165.json:
@@ -618,7 +611,7 @@ My corrections for files between integer_list.py and permutations_nk.py (include
 archive/issue_comments_037166.json:
 ```json
 {
-    "body": "In `dyck_word.py`:\n\n> The bouncing ball will strike the diagonal at places $(0, 0), (j_1, j_1), (j_2, j_2), ... ,(j_r-1, j_r-1), (j_r, j_r) = (n, n)$.\n\nThe dollar signs are showing.\n\nIn `dlx.py`, the docstring for DLXMatrix needs some work; the matrices aren't displayed correctly. The file is `dlx.py` in Sage, but seems to be [dlxcpp.py](http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/combinat/matrices/dlxcpp.html) in the conversion?\n\nThis is something we may want to fix later, but the lowercase L looks like a slash; see [here](http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/combinat/finite_class.html) at the top: `sage.combinat.finite_class.FiniteCombinatorialClass(l)` looks like there's a slash between the parentheses. Perhaps a different letter could be used?",
+    "body": "In `dyck_word.py`:\n\n> The bouncing ball will strike the diagonal at places $(0, 0), (j_1, j_1), (j_2, j_2), ... ,(j_r-1, j_r-1), (j_r, j_r) = (n, n)$.\n\n\nThe dollar signs are showing.\n\nIn `dlx.py`, the docstring for DLXMatrix needs some work; the matrices aren't displayed correctly. The file is `dlx.py` in Sage, but seems to be [dlxcpp.py](http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/combinat/matrices/dlxcpp.html) in the conversion?\n\nThis is something we may want to fix later, but the lowercase L looks like a slash; see [here](http://sage.math.washington.edu/home/mhansen/sage/devel/sage/doc/output/html/en/reference/sage/combinat/finite_class.html) at the top: `sage.combinat.finite_class.FiniteCombinatorialClass(l)` looks like there's a slash between the parentheses. Perhaps a different letter could be used?",
     "created_at": "2009-02-24T00:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -630,6 +623,7 @@ archive/issue_comments_037166.json:
 In `dyck_word.py`:
 
 > The bouncing ball will strike the diagonal at places $(0, 0), (j_1, j_1), (j_2, j_2), ... ,(j_r-1, j_r-1), (j_r, j_r) = (n, n)$.
+
 
 The dollar signs are showing.
 
@@ -662,7 +656,7 @@ Comments on the patch by Nicolas
 archive/issue_comments_037168.json:
 ```json
 {
-    "body": "Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by @hivert created at 2009-02-24 09:38:57\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n```\n \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```\n",
+    "body": "Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by @hivert created at 2009-02-24 09:38:57\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n``` \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```",
     "created_at": "2009-02-24T09:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -682,8 +676,7 @@ New corrections concerning set_partition.py and set_partition_ordered.py:
 ```
 -    Returns True if s < t otherwise it returns False.
 +    Returns True if s t otherwise it returns False.
-```
- 
+``` 
 
  == File ordered_set_partition.py ==
 
@@ -700,13 +693,12 @@ New corrections concerning set_partition.py and set_partition_ordered.py:
 
 
 
-
 ---
 
 archive/issue_comments_037169.json:
 ```json
 {
-    "body": "New corrections by Vincent Delecroix and myself on the files:\n\n```\n sage/combinat/q_analogues.py\n sage/combinat/ranker.py\n sage/combinat/restricted_growth.py\n sage/combinat/ribbon.py\n sage/combinat/ribbon_tableau.py\n```\n\n\n\n## File ranker.py\n\n* Function from_list(l): missing \":\" after output + quote\n\n```\n+ OUTPUT [rank, unrank] - functions\n```\n\nshould be probably\n\n```\nOUTPUT ::\n     ``[rank, unrank]`` - functions\n```\n\n\n## File ribbon_tableau.py\n\n* class RibonTableau_class :: method length(): missing 's' added 'x'\n\n```\n- Returns the length of the ribbons into a ribbon tableau.\n+ Return the length of the ribbons into a ribbon tableaux.\n```\n\n* function spin_polynomial_square: missing \">\" and \"^\"\n\n```\n-    length, with the substitution t -> t^2 made.\n+    length, with the substitution t - t2 made.\n```\n\n\n## File root_system/dynkin_diagram.py\n\n* function column: composed latex subscripts seems to have been lost:\n\n```\n-        of tuples (i, a_{i,j})\n+        (or iterator) of tuples (i, a_i,j)\n]}}\nshould be probably\n{{{\n+        (or iterator) of tuples `(i, a_{i,j})`.\n}}}\n```\n\n\n* same remark for the function row\n\n\n## File root_system/weyl_characters.py\n\n* function branch_weyl_character: lots of problems:\n  - input is garlbed:\n\n```\n-    INPUT:\n-       chi - a character of G\n-       R - the Weyl Character Ring of G\n-       S - the Weyl Character Ring of H\n-       rule - a set of r dominant weights in H where r is the rank of G.\n+    INPUT: chi - a character of G R - the Weyl Character Ring of G S -\n+    the Weyl Character Ring of H rule - a set of r dominant weights in\n+    H where r is the rank of G.\n```\n\n- lots of lost > in arrows:\n\n```\n-    connected. This excludes branching rules such as A3 -> A1 x A1, which are\n+    connected. This excludes branching rules such as A3 - A1 x A1,\n```\n\n- the rule for branching type are also garbled (three series):\n\n```\n-    ['A',r] -> ['A',r-1]\n-    ['B',r] -> ['A',r-1]\n   [...]\n-    ['G',2] -> ['A',1] (short root) (not implemented yet)\n+    ['A',r] - ['A',r-1] ['B',r] - ['A',r-1] ['B',r] - ['B',r-1] ['C',r]\n+    - ['A',r-1] ['C',r] - ['C',r-1] ['D',r] - ['A',r-1] ['D',r] -\n+    ['D',r-1] ['E',r] - ['A',r-1] r = 6,7,8 (not implemented yet)\n+    ['E',r] - ['D',r-1] r = 6,7,8 (not implemented yet) ['E',r] -\n+    ['E',r-1] r = 6,7 (not implemented yet) ['F',4] - ['B',3] (not\n```\n\n- In the example starting with  \"Here A3(x,y,z,w) can be understood as a representation of SL(4)\": missing \">\":\n\n```\n-    square representation SL(4) --> GL(6) admits an invariant symmetric\n-    bilinear form, so is a representation SL(4) --> SO(6) that lifts to\n-    an isomorphism SL(4) --> Spin(6).  Conversely, there are two\n-    isomorphisms SO(6) --> SL(4), of which we've selected one.\n+    square representation SL(4) - GL(6) admits an invariant symmetric\n+    bilinear form, so is a representation SL(4) - SO(6) that lifts to\n+    an isomorphism SL(4) - Spin(6). Conversely, there are two\n+    isomorphisms SO(6) - SL(4), of which we've selected one.\n```\n\n\n\n## file root_system/weyl_group.py\n\n* function WeylGroup:\n\n```\n+    INPUT: ct - a Cartan Type.\n```\n\nshould probably be\n\n```\n   INPUT::\n   \n       ``ct`` - a Cartan Type.\n```\n\n\n* function  simple_reflection: typo\n\n```\n+        Returns the `i^th` simple reflection.\n```\n\nshould be\n\n```\n+        Returns the `i`-th simple reflection.\n```\n",
+    "body": "New corrections by Vincent Delecroix and myself on the files:\n\n```\n sage/combinat/q_analogues.py\n sage/combinat/ranker.py\n sage/combinat/restricted_growth.py\n sage/combinat/ribbon.py\n sage/combinat/ribbon_tableau.py\n```\n\n\n## File ranker.py\n\n* Function from_list(l): missing \":\" after output + quote\n\n```\n+ OUTPUT [rank, unrank] - functions\n```\nshould be probably\n\n```\nOUTPUT ::\n     ``[rank, unrank]`` - functions\n```\n\n## File ribbon_tableau.py\n\n* class RibonTableau_class :: method length(): missing 's' added 'x'\n\n```\n- Returns the length of the ribbons into a ribbon tableau.\n+ Return the length of the ribbons into a ribbon tableaux.\n```\n* function spin_polynomial_square: missing \">\" and \"^\"\n\n```\n-    length, with the substitution t -> t^2 made.\n+    length, with the substitution t - t2 made.\n```\n\n## File root_system/dynkin_diagram.py\n\n* function column: composed latex subscripts seems to have been lost:\n\n```\n-        of tuples (i, a_{i,j})\n+        (or iterator) of tuples (i, a_i,j)\n]}}\nshould be probably\n{{{\n+        (or iterator) of tuples `(i, a_{i,j})`.\n}}}\n```\n\n* same remark for the function row\n\n\n## File root_system/weyl_characters.py\n\n* function branch_weyl_character: lots of problems:\n  - input is garlbed:\n\n```\n-    INPUT:\n-       chi - a character of G\n-       R - the Weyl Character Ring of G\n-       S - the Weyl Character Ring of H\n-       rule - a set of r dominant weights in H where r is the rank of G.\n+    INPUT: chi - a character of G R - the Weyl Character Ring of G S -\n+    the Weyl Character Ring of H rule - a set of r dominant weights in\n+    H where r is the rank of G.\n```\n- lots of lost > in arrows:\n\n```\n-    connected. This excludes branching rules such as A3 -> A1 x A1, which are\n+    connected. This excludes branching rules such as A3 - A1 x A1,\n```\n- the rule for branching type are also garbled (three series):\n\n```\n-    ['A',r] -> ['A',r-1]\n-    ['B',r] -> ['A',r-1]\n   [...]\n-    ['G',2] -> ['A',1] (short root) (not implemented yet)\n+    ['A',r] - ['A',r-1] ['B',r] - ['A',r-1] ['B',r] - ['B',r-1] ['C',r]\n+    - ['A',r-1] ['C',r] - ['C',r-1] ['D',r] - ['A',r-1] ['D',r] -\n+    ['D',r-1] ['E',r] - ['A',r-1] r = 6,7,8 (not implemented yet)\n+    ['E',r] - ['D',r-1] r = 6,7,8 (not implemented yet) ['E',r] -\n+    ['E',r-1] r = 6,7 (not implemented yet) ['F',4] - ['B',3] (not\n```\n- In the example starting with  \"Here A3(x,y,z,w) can be understood as a representation of SL(4)\": missing \">\":\n\n```\n-    square representation SL(4) --> GL(6) admits an invariant symmetric\n-    bilinear form, so is a representation SL(4) --> SO(6) that lifts to\n-    an isomorphism SL(4) --> Spin(6).  Conversely, there are two\n-    isomorphisms SO(6) --> SL(4), of which we've selected one.\n+    square representation SL(4) - GL(6) admits an invariant symmetric\n+    bilinear form, so is a representation SL(4) - SO(6) that lifts to\n+    an isomorphism SL(4) - Spin(6). Conversely, there are two\n+    isomorphisms SO(6) - SL(4), of which we've selected one.\n```\n\n\n## file root_system/weyl_group.py\n\n* function WeylGroup:\n\n```\n+    INPUT: ct - a Cartan Type.\n```\nshould probably be\n\n```\n   INPUT::\n   \n       ``ct`` - a Cartan Type.\n```\n\n* function  simple_reflection: typo\n\n```\n+        Returns the `i^th` simple reflection.\n```\nshould be\n\n```\n+        Returns the `i`-th simple reflection.\n```",
     "created_at": "2009-02-24T10:12:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
@@ -726,7 +718,6 @@ New corrections by Vincent Delecroix and myself on the files:
 ```
 
 
-
 ## File ranker.py
 
 * Function from_list(l): missing ":" after output + quote
@@ -734,14 +725,12 @@ New corrections by Vincent Delecroix and myself on the files:
 ```
 + OUTPUT [rank, unrank] - functions
 ```
-
 should be probably
 
 ```
 OUTPUT ::
      ``[rank, unrank]`` - functions
 ```
-
 
 ## File ribbon_tableau.py
 
@@ -751,14 +740,12 @@ OUTPUT ::
 - Returns the length of the ribbons into a ribbon tableau.
 + Return the length of the ribbons into a ribbon tableaux.
 ```
-
 * function spin_polynomial_square: missing ">" and "^"
 
 ```
 -    length, with the substitution t -> t^2 made.
 +    length, with the substitution t - t2 made.
 ```
-
 
 ## File root_system/dynkin_diagram.py
 
@@ -773,7 +760,6 @@ should be probably
 +        (or iterator) of tuples `(i, a_{i,j})`.
 }}}
 ```
-
 
 * same remark for the function row
 
@@ -793,14 +779,12 @@ should be probably
 +    the Weyl Character Ring of H rule - a set of r dominant weights in
 +    H where r is the rank of G.
 ```
-
 - lots of lost > in arrows:
 
 ```
 -    connected. This excludes branching rules such as A3 -> A1 x A1, which are
 +    connected. This excludes branching rules such as A3 - A1 x A1,
 ```
-
 - the rule for branching type are also garbled (three series):
 
 ```
@@ -814,7 +798,6 @@ should be probably
 +    ['E',r] - ['D',r-1] r = 6,7,8 (not implemented yet) ['E',r] -
 +    ['E',r-1] r = 6,7 (not implemented yet) ['F',4] - ['B',3] (not
 ```
-
 - In the example starting with  "Here A3(x,y,z,w) can be understood as a representation of SL(4)": missing ">":
 
 ```
@@ -829,7 +812,6 @@ should be probably
 ```
 
 
-
 ## file root_system/weyl_group.py
 
 * function WeylGroup:
@@ -837,7 +819,6 @@ should be probably
 ```
 +    INPUT: ct - a Cartan Type.
 ```
-
 should probably be
 
 ```
@@ -846,19 +827,16 @@ should probably be
        ``ct`` - a Cartan Type.
 ```
 
-
 * function  simple_reflection: typo
 
 ```
 +        Returns the `i^th` simple reflection.
 ```
-
 should be
 
 ```
 +        Returns the `i`-th simple reflection.
 ```
-
 
 
 

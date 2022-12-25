@@ -3,7 +3,7 @@
 archive/issues_007750.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nIf you call search_doc and one piece of the Sage docs are missing, this patch prints the following warning (and then proceeds with the search):\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build this with 'sage -docbuild fr/tutorial html'.\n```\n\nIf more than one piece is missing, it prints this warning:\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/en/developer\n/Applications/sage/devel/sage/doc/output/html/en/installation\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build these with 'sage -docbuild DOCUMENT html',\nwhere DOCUMENT is one of 'developer', 'installation', 'fr/tutorial', \nor you can use 'sage -docbuild all html' to build all of the missing documentation.\n```\n\nYou can test this by installing the patch and selectively deleting and building pieces of the documentation.  You don't need to restart Sage between deletions or builds -- do that in another window, and each call to search_doc will check for existence of the docs each time.\n\nThere are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7750\n\n",
+    "body": "Assignee: mvngu\n\nIf you call search_doc and one piece of the Sage docs are missing, this patch prints the following warning (and then proceeds with the search):\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build this with 'sage -docbuild fr/tutorial html'.\n```\nIf more than one piece is missing, it prints this warning:\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/en/developer\n/Applications/sage/devel/sage/doc/output/html/en/installation\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build these with 'sage -docbuild DOCUMENT html',\nwhere DOCUMENT is one of 'developer', 'installation', 'fr/tutorial', \nor you can use 'sage -docbuild all html' to build all of the missing documentation.\n```\nYou can test this by installing the patch and selectively deleting and building pieces of the documentation.  You don't need to restart Sage between deletions or builds -- do that in another window, and each call to search_doc will check for existence of the docs each time.\n\nThere are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7750\n\n",
     "created_at": "2009-12-22T21:14:50Z",
     "labels": [
         "component: documentation",
@@ -28,7 +28,6 @@ so documentation search results may be incomplete:
 
 You can build this with 'sage -docbuild fr/tutorial html'.
 ```
-
 If more than one piece is missing, it prints this warning:
 
 ```
@@ -44,7 +43,6 @@ You can build these with 'sage -docbuild DOCUMENT html',
 where DOCUMENT is one of 'developer', 'installation', 'fr/tutorial', 
 or you can use 'sage -docbuild all html' to build all of the missing documentation.
 ```
-
 You can test this by installing the patch and selectively deleting and building pieces of the documentation.  You don't need to restart Sage between deletions or builds -- do that in another window, and each call to search_doc will check for existence of the docs each time.
 
 There are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.

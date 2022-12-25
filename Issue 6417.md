@@ -94,7 +94,7 @@ archive/issue_comments_051438.json:
 archive/issue_comments_051439.json:
 ```json
 {
-    "body": "> sage -t \"devel/sage-main/sage/misc/latex.py\" fails after applying this patch.\n\nAs my comment says, doctests don't pass until you apply the patch at #6434.  Once #6434 gets in, this one is ready to go.  Is there some way to label this besides \"positive review\" to indicate this?",
+    "body": "> sage -t \"devel/sage-main/sage/misc/latex.py\" fails after applying this patch.\n\n\nAs my comment says, doctests don't pass until you apply the patch at #6434.  Once #6434 gets in, this one is ready to go.  Is there some way to label this besides \"positive review\" to indicate this?",
     "created_at": "2009-07-03T20:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6417",
     "type": "issue_comment",
@@ -105,6 +105,7 @@ archive/issue_comments_051439.json:
 
 > sage -t "devel/sage-main/sage/misc/latex.py" fails after applying this patch.
 
+
 As my comment says, doctests don't pass until you apply the patch at #6434.  Once #6434 gets in, this one is ready to go.  Is there some way to label this besides "positive review" to indicate this?
 
 
@@ -114,7 +115,7 @@ As my comment says, doctests don't pass until you apply the patch at #6434.  Onc
 archive/issue_comments_051440.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> > sage -t \"devel/sage-main/sage/misc/latex.py\" fails after applying this patch.\n> \n> As my comment says, doctests don't pass until you apply the patch at #6434.\n\nMy bad, wasn't paying enough attention.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> > sage -t \"devel/sage-main/sage/misc/latex.py\" fails after applying this patch.\n\n> \n> As my comment says, doctests don't pass until you apply the patch at #6434.\n\n\nMy bad, wasn't paying enough attention.",
     "created_at": "2009-07-04T00:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6417",
     "type": "issue_comment",
@@ -125,8 +126,10 @@ archive/issue_comments_051440.json:
 
 Replying to [comment:4 jhpalmieri]:
 > > sage -t "devel/sage-main/sage/misc/latex.py" fails after applying this patch.
+
 > 
 > As my comment says, doctests don't pass until you apply the patch at #6434.
+
 
 My bad, wasn't paying enough attention.
 

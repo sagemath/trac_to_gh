@@ -67,7 +67,7 @@ Looks good to me.
 archive/issue_comments_015422.json:
 ```json
 {
-    "body": "No dice against my merge tree:\n\n```\nhg unbundle trac_2323_dsage-tut.hg\nadding changesets\ntransaction abort!\nrollback completed\nabort: unknown parent 2af41ec9da8d!\n```\n\nPlease post a flattened patch or tell me which patches to merge first.\n\nCheers,\n\nMichael",
+    "body": "No dice against my merge tree:\n\n```\nhg unbundle trac_2323_dsage-tut.hg\nadding changesets\ntransaction abort!\nrollback completed\nabort: unknown parent 2af41ec9da8d!\n```\nPlease post a flattened patch or tell me which patches to merge first.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-27T23:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ transaction abort!
 rollback completed
 abort: unknown parent 2af41ec9da8d!
 ```
-
 Please post a flattened patch or tell me which patches to merge first.
 
 Cheers,

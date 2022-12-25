@@ -3,7 +3,7 @@
 archive/issues_001194.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
     "created_at": "2007-11-17T19:50:47Z",
     "labels": [
         "component: calculus",
@@ -24,7 +24,6 @@ Consider this:
 sage: (-1)^(1/4)
 -1^(1/4)
 ```
-
 
 This should be printed `(-1)^(1/4)`, instead.
 

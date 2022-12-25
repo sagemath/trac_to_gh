@@ -3,7 +3,7 @@
 archive/issues_005368.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis gives an infinite loop in the command line or notebook:\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis gives an infinite loop in the command line or notebook:\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
     "created_at": "2009-02-25T04:08:50Z",
     "labels": [
         "component: graphics",
@@ -27,7 +27,6 @@ var('x,y')
 plot3d(x*y^2 - sin(x), (-1,1), (-1,1))
 ```
 
-
 Pretty bad!!
 
 Issue created by migration from https://trac.sagemath.org/ticket/5368
@@ -41,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5368
 archive/issue_comments_041267.json:
 ```json
 {
-    "body": "This is (probably) because fast_float isn't being used for some weird reason:\n\n```\nsage: var('x,y')\n(x, y)\nsage: plot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\nException exceptions.KeyboardInterrupt: KeyboardInterrupt() in  ignored\n^C^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n",
+    "body": "This is (probably) because fast_float isn't being used for some weird reason:\n\n```\nsage: var('x,y')\n(x, y)\nsage: plot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\nException exceptions.KeyboardInterrupt: KeyboardInterrupt() in  ignored\n^C^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```",
     "created_at": "2009-02-25T23:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5368",
     "type": "issue_comment",
@@ -62,7 +61,6 @@ Exception exceptions.KeyboardInterrupt: KeyboardInterrupt() in  ignored
 ^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...
 ^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...
 ```
-
 
 
 

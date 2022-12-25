@@ -93,7 +93,7 @@ The hg repository in the spkg has unchecked-in changes.  Other than this, is thi
 archive/issue_comments_079614.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> The hg repository in the spkg has unchecked-in changes.  Other than this, is this ready for review?\n \nIMHO there should be a short explanation (in SPKG.txt?) on how to make modifications to patches. The whole autoconf/automake machinery is not so trivial...\n\nThanks,\nDima",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> The hg repository in the spkg has unchecked-in changes.  Other than this, is this ready for review?\n\n \nIMHO there should be a short explanation (in SPKG.txt?) on how to make modifications to patches. The whole autoconf/automake machinery is not so trivial...\n\nThanks,\nDima",
     "created_at": "2010-04-21T17:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -104,6 +104,7 @@ archive/issue_comments_079614.json:
 
 Replying to [comment:3 jhpalmieri]:
 > The hg repository in the spkg has unchecked-in changes.  Other than this, is this ready for review?
+
  
 IMHO there should be a short explanation (in SPKG.txt?) on how to make modifications to patches. The whole autoconf/automake machinery is not so trivial...
 
@@ -173,7 +174,7 @@ I checked in the changes and the package is ready for review.
 archive/issue_comments_079618.json:
 ```json
 {
-    "body": "Replying to [comment:6 vbraun]:\n> Dima: \"autoreconf -f\" regenerates all auto-generated files. If you want to make changes to the autotools sources you need to read the autoconf manual or ask the friendly package maintainer. Once you understand what autoconf does the organization of the patches/ directory should be self-explanatory (but then, I'm biased :-)\n\nIMHO it is unusual to have sources and configuration files reside in a directory tree like this one.\nE.g. it's unclear in which directory autoreconf must be run...\nAlthough I must admit last time I messed around with autotools config files 11 years ago. :-)\n\n\n> \n> I checked in the changes and the package is ready for review.",
+    "body": "Replying to [comment:6 vbraun]:\n> Dima: \"autoreconf -f\" regenerates all auto-generated files. If you want to make changes to the autotools sources you need to read the autoconf manual or ask the friendly package maintainer. Once you understand what autoconf does the organization of the patches/ directory should be self-explanatory (but then, I'm biased :-)\n\n\nIMHO it is unusual to have sources and configuration files reside in a directory tree like this one.\nE.g. it's unclear in which directory autoreconf must be run...\nAlthough I must admit last time I messed around with autotools config files 11 years ago. :-)\n\n\n> \n> I checked in the changes and the package is ready for review.",
     "created_at": "2010-04-22T04:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -184,6 +185,7 @@ archive/issue_comments_079618.json:
 
 Replying to [comment:6 vbraun]:
 > Dima: "autoreconf -f" regenerates all auto-generated files. If you want to make changes to the autotools sources you need to read the autoconf manual or ask the friendly package maintainer. Once you understand what autoconf does the organization of the patches/ directory should be self-explanatory (but then, I'm biased :-)
+
 
 IMHO it is unusual to have sources and configuration files reside in a directory tree like this one.
 E.g. it's unclear in which directory autoreconf must be run...
@@ -283,7 +285,7 @@ Dave
 archive/issue_comments_079622.json:
 ```json
 {
-    "body": "Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n\n> Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n\nWell, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)",
+    "body": "Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n\n> Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n\n\nWell, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)",
     "created_at": "2010-04-22T15:27:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -296,6 +298,7 @@ Have any of these issues with cddlib been reported upstream?  The configure scri
 
 > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.
 
+
 Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)
 
 
@@ -305,7 +308,7 @@ Well, maybe it's something in my setup on t2 in particular; I haven't heard that
 archive/issue_comments_079623.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n\nI happen to know Komei Fukuda, the cdd(lib) author, (even had a joint paper with him quite a while ago).\nI'll write to him, once the spkg is ready.\n\nDima\n\n\n> \n> > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n> \n> Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n\n\nI happen to know Komei Fukuda, the cdd(lib) author, (even had a joint paper with him quite a while ago).\nI'll write to him, once the spkg is ready.\n\nDima\n\n\n> \n> > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n\n> \n> Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)",
     "created_at": "2010-04-22T16:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -317,6 +320,7 @@ archive/issue_comments_079623.json:
 Replying to [comment:10 jhpalmieri]:
 > Have any of these issues with cddlib been reported upstream?  The configure script should allow "--with-gmp=..." -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the "Report Upstream" field accordingly?
 
+
 I happen to know Komei Fukuda, the cdd(lib) author, (even had a joint paper with him quite a while ago).
 I'll write to him, once the spkg is ready.
 
@@ -325,6 +329,7 @@ Dima
 
 > 
 > > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.
+
 > 
 > Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)
 
@@ -335,7 +340,7 @@ Dima
 archive/issue_comments_079624.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n> \n> > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n> \n> Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)\n\nFor the record, I started having those problems on my Fedora box already at 4.3.4 (probably when the cddlib spkg was merged).",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> Have any of these issues with cddlib been reported upstream?  The configure script should allow \"--with-gmp=...\" -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the \"Report Upstream\" field accordingly?\n> \n> > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.\n\n> \n> Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)\n\n\nFor the record, I started having those problems on my Fedora box already at 4.3.4 (probably when the cddlib spkg was merged).",
     "created_at": "2010-04-22T16:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -348,8 +353,10 @@ Replying to [comment:10 jhpalmieri]:
 > Have any of these issues with cddlib been reported upstream?  The configure script should allow "--with-gmp=..." -- we shouldn't have to hack it in ourselves.  Can someone please contact the cddlib people about this, and then change the "Report Upstream" field accordingly?
 > 
 > > Why this should suddenly be a problem is a bit puzzling to me, given cddlib-094f.p5.spkg was merged into sage 4.3.4 and 4.3.4 built on 't2' OK.
+
 > 
 > Well, maybe it's something in my setup on t2 in particular; I haven't heard that Minh (for example) has had this trouble building on t2.  (It also seems to fix Kiran's problem on his linux box.)
+
 
 For the record, I started having those problems on my Fedora box already at 4.3.4 (probably when the cddlib spkg was merged).
 
@@ -360,7 +367,7 @@ For the record, I started having those problems on my Fedora box already at 4.3.
 archive/issue_comments_079625.json:
 ```json
 {
-    "body": "Replying to [comment:11 dimpase]:\n> I happen to know Komei Fukuda, the cdd(lib) author, (even had a joint paper with him quite a while ago).\n> I'll write to him, once the spkg is ready.\n> \n> Dima\n\nI think he needs to add an AC_ARG_WITH into configure.ac. There must be many packages in Sage which allow the location of gmp to be specified, so there must be plenty of examples of how to do it. I suspect mpfr is probably the best place to look, as the mpfr developers seem to know what they are doing with autoconf/automake. \n\nBut I agree with Dima, that there should be an explanation of what files are in the patches/autogenerated directory. \n\nThere also needs to be a Mercurial patch added on the ticket once the wording is sorted out. \n\nDave",
+    "body": "Replying to [comment:11 dimpase]:\n> I happen to know Komei Fukuda, the cdd(lib) author, (even had a joint paper with him quite a while ago).\n> I'll write to him, once the spkg is ready.\n> \n> Dima\n\n\nI think he needs to add an AC_ARG_WITH into configure.ac. There must be many packages in Sage which allow the location of gmp to be specified, so there must be plenty of examples of how to do it. I suspect mpfr is probably the best place to look, as the mpfr developers seem to know what they are doing with autoconf/automake. \n\nBut I agree with Dima, that there should be an explanation of what files are in the patches/autogenerated directory. \n\nThere also needs to be a Mercurial patch added on the ticket once the wording is sorted out. \n\nDave",
     "created_at": "2010-04-22T21:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8730",
     "type": "issue_comment",
@@ -374,6 +381,7 @@ Replying to [comment:11 dimpase]:
 > I'll write to him, once the spkg is ready.
 > 
 > Dima
+
 
 I think he needs to add an AC_ARG_WITH into configure.ac. There must be many packages in Sage which allow the location of gmp to be specified, so there must be plenty of examples of how to do it. I suspect mpfr is probably the best place to look, as the mpfr developers seem to know what they are doing with autoconf/automake. 
 

@@ -3,7 +3,7 @@
 archive/issues_003067.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis happens for all matrices:\n\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens for all matrices:\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
     "created_at": "2008-04-30T15:23:45Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 This happens for all matrices:
 
-
 ```
 sage: m = matrix([])
 sage: m.numeric_array()
@@ -29,7 +28,6 @@ sage: q= random_matrix(ZZ,2)
 sage: q.numeric_array()
 <type 'exceptions.ImportError'>: No module named Numeric
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3067
 

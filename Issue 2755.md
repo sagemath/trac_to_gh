@@ -385,7 +385,7 @@ Michael
 archive/issue_comments_018903.json:
 ```json
 {
-    "body": "Ok, good news and bad news:\n\nBad news first: tice_polytope2.patch needs a rebase against Sage 3.0.1.alpha1 - out in 10 minutes.\n\n```\nsage-3.0.1.alpha1/devel/sage$ patch -p1 --dry-run < lattice_polytope2.patch\npatching file sage/geometry/all.py\nHunk #1 succeeded at 3 with fuzz 1 (offset 2 lines).\npatching file sage/geometry/lattice_polytope.py\nHunk #2 FAILED at 57.\n1 out of 50 hunks FAILED -- saving rejects to file sage/geometry/lattice_polytope.py.rej\n```\n\nBut I create a spkg with the polytope db data with all four files, which has been merged in Sage 3.0.1.alpha1.\n\nCheers,\n\nMichael",
+    "body": "Ok, good news and bad news:\n\nBad news first: tice_polytope2.patch needs a rebase against Sage 3.0.1.alpha1 - out in 10 minutes.\n\n```\nsage-3.0.1.alpha1/devel/sage$ patch -p1 --dry-run < lattice_polytope2.patch\npatching file sage/geometry/all.py\nHunk #1 succeeded at 3 with fuzz 1 (offset 2 lines).\npatching file sage/geometry/lattice_polytope.py\nHunk #2 FAILED at 57.\n1 out of 50 hunks FAILED -- saving rejects to file sage/geometry/lattice_polytope.py.rej\n```\nBut I create a spkg with the polytope db data with all four files, which has been merged in Sage 3.0.1.alpha1.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-01T06:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
@@ -406,7 +406,6 @@ patching file sage/geometry/lattice_polytope.py
 Hunk #2 FAILED at 57.
 1 out of 50 hunks FAILED -- saving rejects to file sage/geometry/lattice_polytope.py.rej
 ```
-
 But I create a spkg with the polytope db data with all four files, which has been merged in Sage 3.0.1.alpha1.
 
 Cheers,
@@ -438,7 +437,7 @@ Sorry for a probably dumb question, but what is a "rebase?"
 archive/issue_comments_018905.json:
 ```json
 {
-    "body": "Replying to [comment:12 novoselt]:\n> Sorry for a probably dumb question, but what is a \"rebase?\"\n\nHi,\n\nno dumb questions here, just dumb answers. \"rebase\" in this context means that you should fix the patch so it does apply cleanly against the latest release. 3.0.1.alpha1 just came out and there is a binary for sage.math in case you don't want to build from scratch yourself. The problem in the patch was in the second hunk and since that was a rather large one I didn't want to fiddle in it and potentially break things. \n\nLet me know if you have any more questions.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 novoselt]:\n> Sorry for a probably dumb question, but what is a \"rebase?\"\n\n\nHi,\n\nno dumb questions here, just dumb answers. \"rebase\" in this context means that you should fix the patch so it does apply cleanly against the latest release. 3.0.1.alpha1 just came out and there is a binary for sage.math in case you don't want to build from scratch yourself. The problem in the patch was in the second hunk and since that was a rather large one I didn't want to fiddle in it and potentially break things. \n\nLet me know if you have any more questions.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-01T07:10:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
@@ -449,6 +448,7 @@ archive/issue_comments_018905.json:
 
 Replying to [comment:12 novoselt]:
 > Sorry for a probably dumb question, but what is a "rebase?"
+
 
 Hi,
 
@@ -505,7 +505,7 @@ ZZ conversion patch still should be applied, I forgot about that one.
 archive/issue_comments_018908.json:
 ```json
 {
-    "body": "The two new patches apply, but now I get the following, probably harmless, doctest failure:\n\n```\nsage -t  devel/sage/sage/rings/number_field/totallyreal_rel.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.1.rc0/tmp/totallyreal_rel.py\", line 98:\n    sage: sage.rings.number_field.totallyreal_rel.integral_elements_in_box(K, [[0,5],[0,5]])\nExpected:\n    [0, 5, 3, -alpha + 2, -alpha + 3, 1, 2, 4, alpha + 2, alpha + 3]\nGot:\n    [0, 5, -alpha + 2, -alpha + 3, 1, 2, 3, 4, alpha + 2, alpha + 3]\n**********************************************************************\n```\n\nI will contact Craig Citro and John Voight to see what their take on this is. Once this is resolved I will merge both patches.\n\nCheers,\n\nMichael",
+    "body": "The two new patches apply, but now I get the following, probably harmless, doctest failure:\n\n```\nsage -t  devel/sage/sage/rings/number_field/totallyreal_rel.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.1.rc0/tmp/totallyreal_rel.py\", line 98:\n    sage: sage.rings.number_field.totallyreal_rel.integral_elements_in_box(K, [[0,5],[0,5]])\nExpected:\n    [0, 5, 3, -alpha + 2, -alpha + 3, 1, 2, 4, alpha + 2, alpha + 3]\nGot:\n    [0, 5, -alpha + 2, -alpha + 3, 1, 2, 3, 4, alpha + 2, alpha + 3]\n**********************************************************************\n```\nI will contact Craig Citro and John Voight to see what their take on this is. Once this is resolved I will merge both patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-02T10:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
@@ -527,7 +527,6 @@ Got:
     [0, 5, -alpha + 2, -alpha + 3, 1, 2, 3, 4, alpha + 2, alpha + 3]
 **********************************************************************
 ```
-
 I will contact Craig Citro and John Voight to see what their take on this is. Once this is resolved I will merge both patches.
 
 Cheers,
@@ -541,7 +540,7 @@ Michael
 archive/issue_comments_018909.json:
 ```json
 {
-    "body": "John says:\n\n```\nYes, the ordering of the elements does not at all affect the\ncorrectness of the output--the most mathematically correct thing would\nbe to output a set.   This change can be due to any number of things,\nbut it's probably not worth ascertaining the exact cause.\n\nJV \n```\n\nErgo: positive review since I will fix the doctest issue. Let's hope this is not CPU or endianess dependent.\n\nCheers,\n\nMichael",
+    "body": "John says:\n\n```\nYes, the ordering of the elements does not at all affect the\ncorrectness of the output--the most mathematically correct thing would\nbe to output a set.   This change can be due to any number of things,\nbut it's probably not worth ascertaining the exact cause.\n\nJV \n```\nErgo: positive review since I will fix the doctest issue. Let's hope this is not CPU or endianess dependent.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-02T17:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2755",
     "type": "issue_comment",
@@ -560,7 +559,6 @@ but it's probably not worth ascertaining the exact cause.
 
 JV 
 ```
-
 Ergo: positive review since I will fix the doctest issue. Let's hope this is not CPU or endianess dependent.
 
 Cheers,

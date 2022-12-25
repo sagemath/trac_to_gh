@@ -3,7 +3,7 @@
 archive/issues_005676.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
     "created_at": "2009-04-03T16:26:19Z",
     "labels": [
         "component: user interface",
@@ -21,14 +21,12 @@ Assignee: @williamstein
 
 CC:  @robertwb
 
-
 ```
     sage: 0xe
     Traceback (most recent call last)
     ...
     TypeError: Unable to convert x (='0xe') to real number.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5676
 

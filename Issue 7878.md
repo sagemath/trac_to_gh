@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_068333.json:
 ```json
 {
-    "body": "## How to test\nTo test this patch you will need to have Sun Studio installed. \n\n\n```\n$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc \n       1       1      12\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n       1       1      11\n```\n\n\nNote how the current version of testcxx.sh outputs 12 characters, not 11. There is an extra space. With the attached patch, any spaces are removed, so the outputs from the two commands are identical. This is important if one wishes to test that the compilers are the same.",
+    "body": "## How to test\nTo test this patch you will need to have Sun Studio installed. \n\n```\n$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc \n       1       1      12\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n       1       1      11\n```\n\nNote how the current version of testcxx.sh outputs 12 characters, not 11. There is an extra space. With the attached patch, any spaces are removed, so the outputs from the two commands are identical. This is important if one wishes to test that the compilers are the same.",
     "created_at": "2010-01-11T20:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7878",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_068333.json:
 
 ## How to test
 To test this patch you will need to have Sun Studio installed. 
-
 
 ```
 $ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc 
@@ -94,7 +93,6 @@ drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc
        1       1      11
 ```
 
-
 Note how the current version of testcxx.sh outputs 12 characters, not 11. There is an extra space. With the attached patch, any spaces are removed, so the outputs from the two commands are identical. This is important if one wishes to test that the compilers are the same.
 
 
@@ -104,7 +102,7 @@ Note how the current version of testcxx.sh outputs 12 characters, not 11. There 
 archive/issue_comments_068334.json:
 ```json
 {
-    "body": "Before:\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC\nSun_Studio \njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      12\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc\n      1       1      11\n\n```\n\n\nAfter the patch\n\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      11\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n      1       1      11\n\n```\n\n\n\nWorks ok, so positive review\n\nJaap",
+    "body": "Before:\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC\nSun_Studio \njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      12\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc\n      1       1      11\n\n```\n\nAfter the patch\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      11\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n      1       1      11\n\n```\n\n\nWorks ok, so positive review\n\nJaap",
     "created_at": "2010-01-27T22:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7878",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ archive/issue_comments_068334.json:
 ```
 
 Before:
-
 
 
 ```
@@ -129,9 +126,7 @@ jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstud
 
 ```
 
-
 After the patch
-
 
 
 
@@ -142,7 +137,6 @@ jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstud
       1       1      11
 
 ```
-
 
 
 Works ok, so positive review

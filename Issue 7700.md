@@ -3,7 +3,7 @@
 archive/issues_007700.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @gvol\n\nThis file:\n\n```\nsage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage\n```\n\n\nis a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    \n\nIf the answer is: \"it's a binary from some random guy of the 'net that nobody knows\"... then maybe we should be worried!\n\nHow to resolve this ticket:  For starters, add a README.txt to the directory: sage-4.3.rc0/data/extcode/sage/ext/mac-app that answers the above questions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7700\n\n",
+    "body": "Assignee: tbd\n\nCC:  @gvol\n\nThis file:\n\n```\nsage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage\n```\n\nis a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    \n\nIf the answer is: \"it's a binary from some random guy of the 'net that nobody knows\"... then maybe we should be worried!\n\nHow to resolve this ticket:  For starters, add a README.txt to the directory: sage-4.3.rc0/data/extcode/sage/ext/mac-app that answers the above questions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7700\n\n",
     "created_at": "2009-12-16T01:39:55Z",
     "labels": [
         "component: packages",
@@ -25,7 +25,6 @@ This file:
 ```
 sage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage
 ```
-
 
 is a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    
 

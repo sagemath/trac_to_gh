@@ -58,7 +58,7 @@ so what patch was this (i.e., ticket number)?
 archive/issue_comments_058307.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> so what patch was this (i.e., ticket number)?\n\n#6568. The template problems are being found, and hopefully we can backport the fixes to the old notebook, if we are not to switch to the new separated notebook.",
+    "body": "Replying to [comment:1 jason]:\n> so what patch was this (i.e., ticket number)?\n\n\n#6568. The template problems are being found, and hopefully we can backport the fixes to the old notebook, if we are not to switch to the new separated notebook.",
     "created_at": "2009-09-29T15:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_comment",
@@ -69,6 +69,7 @@ archive/issue_comments_058307.json:
 
 Replying to [comment:1 jason]:
 > so what patch was this (i.e., ticket number)?
+
 
 #6568. The template problems are being found, and hopefully we can backport the fixes to the old notebook, if we are not to switch to the new separated notebook.
 

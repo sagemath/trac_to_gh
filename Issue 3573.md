@@ -168,7 +168,7 @@ This ticket comes with an spkg. Alas, I don't have administrative privileges on 
 archive/issue_comments_025190.json:
 ```json
 {
-    "body": "For the documentation in the patch `sage-3573-opentick2.patch`, here are some possible fixes to typos:\n\n1. The word \"minutely\" is usually associated with considering something in close details. The expression \"by minute\" (or something similar) more accurately describes a time interval.\n\n```\n-data on a variety of time intervals: hourly, minutely, or even\n+data on a variety of time intervals: hourly, by minute, or even\n```\n\n\n\n2. Again, a similar comment to that in 1. applies here. I would use \"by second\" or something similar, but not \"secondly\", which hardly describes a time interval.\n\n```\n-hourly, minutely, and even secondly. To enable use of opentick, enter\n+hourly, by minute, and even by second. To enable use of opentick, enter \n```\n\n\n\n3. Again, a similar comment to that in 2. applies here.\n\n```\n-to obtain data on an hourly, minutely, or even secondly rate. This\n+to obtain data on an hourly rate, or by minute, or even by second. This\n```\n\n\n\n4. \n\n```\n-enddate are \\code{datetime.date} objects. Retreives data using the\n+enddate are \\code{datetime.date} objects. Retrieves data using the\n```\n\n\n\n5.\n\n```\n-Return string representation of Opentick interface.\n+Return a string representation of Opentick interface.\n```\n\n\n\n6.\n\n```\n-in once of the following two formats where the time\n+in one of the following two formats where the time\n```\n\n\n\n7.\n\n```\n-Where 'Mon' is the first three letters of the coressponding month.\n+where 'Mon' is the first three letters of the corresponding month.\n```\n\n\n\nDisclaimer: I'm an Australian, so maybe my suggestions don't make sense.",
+    "body": "For the documentation in the patch `sage-3573-opentick2.patch`, here are some possible fixes to typos:\n\n1. The word \"minutely\" is usually associated with considering something in close details. The expression \"by minute\" (or something similar) more accurately describes a time interval.\n\n```\n-data on a variety of time intervals: hourly, minutely, or even\n+data on a variety of time intervals: hourly, by minute, or even\n```\n\n\n2. Again, a similar comment to that in 1. applies here. I would use \"by second\" or something similar, but not \"secondly\", which hardly describes a time interval.\n\n```\n-hourly, minutely, and even secondly. To enable use of opentick, enter\n+hourly, by minute, and even by second. To enable use of opentick, enter \n```\n\n\n3. Again, a similar comment to that in 2. applies here.\n\n```\n-to obtain data on an hourly, minutely, or even secondly rate. This\n+to obtain data on an hourly rate, or by minute, or even by second. This\n```\n\n\n4. \n\n```\n-enddate are \\code{datetime.date} objects. Retreives data using the\n+enddate are \\code{datetime.date} objects. Retrieves data using the\n```\n\n\n5.\n\n```\n-Return string representation of Opentick interface.\n+Return a string representation of Opentick interface.\n```\n\n\n6.\n\n```\n-in once of the following two formats where the time\n+in one of the following two formats where the time\n```\n\n\n7.\n\n```\n-Where 'Mon' is the first three letters of the coressponding month.\n+where 'Mon' is the first three letters of the corresponding month.\n```\n\n\nDisclaimer: I'm an Australian, so maybe my suggestions don't make sense.",
     "created_at": "2008-10-26T13:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
@@ -187,14 +187,12 @@ For the documentation in the patch `sage-3573-opentick2.patch`, here are some po
 ```
 
 
-
 2. Again, a similar comment to that in 1. applies here. I would use "by second" or something similar, but not "secondly", which hardly describes a time interval.
 
 ```
 -hourly, minutely, and even secondly. To enable use of opentick, enter
 +hourly, by minute, and even by second. To enable use of opentick, enter 
 ```
-
 
 
 3. Again, a similar comment to that in 2. applies here.
@@ -205,14 +203,12 @@ For the documentation in the patch `sage-3573-opentick2.patch`, here are some po
 ```
 
 
-
 4. 
 
 ```
 -enddate are \code{datetime.date} objects. Retreives data using the
 +enddate are \code{datetime.date} objects. Retrieves data using the
 ```
-
 
 
 5.
@@ -223,7 +219,6 @@ For the documentation in the patch `sage-3573-opentick2.patch`, here are some po
 ```
 
 
-
 6.
 
 ```
@@ -232,14 +227,12 @@ For the documentation in the patch `sage-3573-opentick2.patch`, here are some po
 ```
 
 
-
 7.
 
 ```
 -Where 'Mon' is the first three letters of the coressponding month.
 +where 'Mon' is the first three letters of the corresponding month.
 ```
-
 
 
 Disclaimer: I'm an Australian, so maybe my suggestions don't make sense.

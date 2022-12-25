@@ -3,7 +3,7 @@
 archive/issues_009705.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nThe following are three cells in a magma-mode notebook worksheet, together with output (there should be none). Each is valid magma code, but the first one produces an error. The other two examples show that shortening the line by changing its content or by placing a line break make the error go away.\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_6.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'_<x>:=PolynomialRing(Rationals());\\\\nrepeat\\\\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\\\\nuntil Roots(g) ne [];', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\nOUT:\n\n>> load \"/home/nobody/.sage//temp/ella.cecm.sfu.ca/21960//interface//tmp21960\"\n   ^\nUser error: bad syntax\n\n>> until Roots(g) ne [];\n   ^\nUser error: bad syntax\n```\n\n\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=x^3+b*x+c where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2\n     where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9705\n\n",
+    "body": "Assignee: jason, was\n\nThe following are three cells in a magma-mode notebook worksheet, together with output (there should be none). Each is valid magma code, but the first one produces an error. The other two examples show that shortening the line by changing its content or by placing a line break make the error go away.\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_6.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'_<x>:=PolynomialRing(Rationals());\\\\nrepeat\\\\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\\\\nuntil Roots(g) ne [];', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage/4.4.4/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2 where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\nOUT:\n\n>> load \"/home/nobody/.sage//temp/ella.cecm.sfu.ca/21960//interface//tmp21960\"\n   ^\nUser error: bad syntax\n\n>> until Roots(g) ne [];\n   ^\nUser error: bad syntax\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=x^3+b*x+c where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\n```\n_<x>:=PolynomialRing(Rationals());\nrepeat\n  g:=3*b*x^4+18*c*x^3-6*b^2*x^2-6*b*c*x-b^3-9*c^2\n     where b:=Random([-10..10]) where c:=Random([-10..10]);\nuntil Roots(g) ne [];\n///\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9705\n\n",
     "created_at": "2010-08-07T20:53:05Z",
     "labels": [
         "component: notebook",
@@ -52,8 +52,6 @@ User error: bad syntax
 User error: bad syntax
 ```
 
-
-
 ```
 _<x>:=PolynomialRing(Rationals());
 repeat
@@ -61,8 +59,6 @@ repeat
 until Roots(g) ne [];
 ///
 ```
-
-
 
 ```
 _<x>:=PolynomialRing(Rationals());
@@ -72,7 +68,6 @@ repeat
 until Roots(g) ne [];
 ///
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9705
 
@@ -105,7 +100,7 @@ As you see in the first input, a temporary file is used for the first three line
 archive/issue_comments_094276.json:
 ```json
 {
-    "body": "Here's a similar but even stranger example. This valid Magma which should return nothing, but it returns an error when evaluated in a notebook cell:\n\n```\nMR:=MatrixRing(Rationals(),4); \nembed:=function(A); \nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \nend function;\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_27.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'MR:=MatrixRing(Rationals(),4); \\\\nembed:=function(A); \\\\nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \\\\nend function;', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/sage-x64/devel/sagenb-main/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/scratch/sage-x64/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:MR:=MatrixRing(Rationals(),4); \nembed:=function(A); \nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \nend function;\nOUT:\n\n>> load \"/home/r1/kedlaya/.sage//temp/dwork.mit.edu/32584//interface//tmp32588\n   ^\nUser error: bad syntax\n\n>> end function;\n   ^\nUser error: bad syntax\n```\n\nApparently the last line got separated from the rest by mistake. The same sort of thing happens if I concatenate the first two commands into one line and the other two into a second line. But if I make the line even longer by concatenating all four commands together, the error vanishes!\n\n```\nMR:=MatrixRing(Rationals(),4); embed:=function(A); return MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); end function;\n///\n```\n\nI can also avoid the error by slightly shortening the third line in the original (e.g., by changing the last nonzero matrix entry to 0).\n\nI suppose what's going on is that Sage never breaks up an individual line, but it does or does not concatenate multiple lines into the same temporary file based on length considerations. This clearly needs to be done more intelligently.",
+    "body": "Here's a similar but even stranger example. This valid Magma which should return nothing, but it returns an error when evaluated in a notebook cell:\n\n```\nMR:=MatrixRing(Rationals(),4); \nembed:=function(A); \nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \nend function;\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_27.py\", line 10, in <module>\n    exec compile(u\"print _support_.syseval(magma, u'MR:=MatrixRing(Rationals(),4); \\\\nembed:=function(A); \\\\nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \\\\nend function;', __SAGE_TMP_DIR__)\" + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"/scratch/sage-x64/devel/sagenb-main/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/scratch/sage-x64/local/lib/python2.6/site-packages/sage/interfaces/magma.py\", line 523, in eval\n    raise RuntimeError, \"Error evaluating Magma code.\\nIN:%s\\nOUT:%s\"%(x, ans)\nRuntimeError: Error evaluating Magma code.\nIN:MR:=MatrixRing(Rationals(),4); \nembed:=function(A); \nreturn MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); \nend function;\nOUT:\n\n>> load \"/home/r1/kedlaya/.sage//temp/dwork.mit.edu/32584//interface//tmp32588\n   ^\nUser error: bad syntax\n\n>> end function;\n   ^\nUser error: bad syntax\n```\nApparently the last line got separated from the rest by mistake. The same sort of thing happens if I concatenate the first two commands into one line and the other two into a second line. But if I make the line even longer by concatenating all four commands together, the error vanishes!\n\n```\nMR:=MatrixRing(Rationals(),4); embed:=function(A); return MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); end function;\n///\n```\nI can also avoid the error by slightly shortening the third line in the original (e.g., by changing the last nonzero matrix entry to 0).\n\nI suppose what's going on is that Sage never breaks up an individual line, but it does or does not concatenate multiple lines into the same temporary file based on length considerations. This clearly needs to be done more intelligently.",
     "created_at": "2011-02-28T03:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -147,14 +142,12 @@ User error: bad syntax
    ^
 User error: bad syntax
 ```
-
 Apparently the last line got separated from the rest by mistake. The same sort of thing happens if I concatenate the first two commands into one line and the other two into a second line. But if I make the line even longer by concatenating all four commands together, the error vanishes!
 
 ```
 MR:=MatrixRing(Rationals(),4); embed:=function(A); return MR!Matrix([[A[1][1],A[1][2],0,0],[A[2][1],A[2][2],0,0],[0,0,A[1][1],A[1][2]],[0,0,0,A[2][2]]]); end function;
 ///
 ```
-
 I can also avoid the error by slightly shortening the third line in the original (e.g., by changing the last nonzero matrix entry to 0).
 
 I suppose what's going on is that Sage never breaks up an individual line, but it does or does not concatenate multiple lines into the same temporary file based on length considerations. This clearly needs to be done more intelligently.
@@ -296,7 +289,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094284.json:
 ```json
 {
-    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma.Magma.eval:33: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma:33: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma.Magma.eval:33: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma:33: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2011-03-27T20:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -311,7 +304,6 @@ Problems while building the documentation:
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma.Magma.eval:33: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma:33: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 
@@ -434,7 +426,7 @@ I will have a second look.
 archive/issue_comments_094291.json:
 ```json
 {
-    "body": "When applying your patches, I get:\n\n```\n$ ./sage -b\n[...]\n$ make doc-html\n[...]\nsphinx-build -b html -d /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/doctrees/en/reference    /usr/local/src/sage-4.7.alpha2/devel/sage/doc/en/reference /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/html/en/reference\nRunning Sphinx v1.0.4\nloading pickled environment... done\nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: 0 added, 2 changed, 0 removed\nreading sources... [ 50%] sage/interfaces/expect\nreading sources... [100%] sage/interfaces/magma\n\n/usr/local/src/sage-4.7.alpha2/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma.Magma.eval:33: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/usr/local/src/sage-4.7.alpha2/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma:33: (ERROR/3) Unexpected indentation.\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [ 25%] index\nwriting output... [ 50%] interfaces\nwriting output... [ 75%] sage/interfaces/expect\nwriting output... [100%] sage/interfaces/magma\n\nwriting additional files... genindex py-modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 2 warnings.\nBuild finished.  The built documents can be found in /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/html/en/reference\n[...]\n```\n\nI will have a look to fix this.",
+    "body": "When applying your patches, I get:\n\n```\n$ ./sage -b\n[...]\n$ make doc-html\n[...]\nsphinx-build -b html -d /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/doctrees/en/reference    /usr/local/src/sage-4.7.alpha2/devel/sage/doc/en/reference /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/html/en/reference\nRunning Sphinx v1.0.4\nloading pickled environment... done\nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: 0 added, 2 changed, 0 removed\nreading sources... [ 50%] sage/interfaces/expect\nreading sources... [100%] sage/interfaces/magma\n\n/usr/local/src/sage-4.7.alpha2/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma.Magma.eval:33: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/usr/local/src/sage-4.7.alpha2/local/lib/python2.6/site-packages/sage/interfaces/magma.py:docstring of sage.interfaces.magma:33: (ERROR/3) Unexpected indentation.\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [ 25%] index\nwriting output... [ 50%] interfaces\nwriting output... [ 75%] sage/interfaces/expect\nwriting output... [100%] sage/interfaces/magma\n\nwriting additional files... genindex py-modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 2 warnings.\nBuild finished.  The built documents can be found in /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/html/en/reference\n[...]\n```\nI will have a look to fix this.",
     "created_at": "2011-04-04T18:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -477,7 +469,6 @@ build succeeded, 2 warnings.
 Build finished.  The built documents can be found in /usr/local/src/sage-4.7.alpha2/devel/sage/doc/output/html/en/reference
 [...]
 ```
-
 I will have a look to fix this.
 
 
@@ -523,7 +514,7 @@ Indeed, the \n are not necessary as they are replaced by '' anyway. The point of
 archive/issue_comments_094294.json:
 ```json
 {
-    "body": "Replying to [comment:14 mraum]:\n> Indeed, the \\n are not necessary as they are replaced by '' anyway. The point of the patch was, that before it was split again later. You might already have a patch for this. If not, let me know, and I will prepare one.\n\nYou better do it as I don't know nor have Magma.",
+    "body": "Replying to [comment:14 mraum]:\n> Indeed, the \\n are not necessary as they are replaced by '' anyway. The point of the patch was, that before it was split again later. You might already have a patch for this. If not, let me know, and I will prepare one.\n\n\nYou better do it as I don't know nor have Magma.",
     "created_at": "2011-04-07T14:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9705",
     "type": "issue_comment",
@@ -534,6 +525,7 @@ archive/issue_comments_094294.json:
 
 Replying to [comment:14 mraum]:
 > Indeed, the \n are not necessary as they are replaced by '' anyway. The point of the patch was, that before it was split again later. You might already have a patch for this. If not, let me know, and I will prepare one.
+
 
 You better do it as I don't know nor have Magma.
 

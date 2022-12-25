@@ -3,7 +3,7 @@
 archive/issues_007095.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAfter testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 12 files that all fail doctests with \"myserious error\":\n\n\n```\nwstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l\n      12\n```\n\n\nThe files with failures are:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/gsl/interpolation.pyx\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/constants.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7095\n\n",
+    "body": "Assignee: tbd\n\nAfter testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 12 files that all fail doctests with \"myserious error\":\n\n```\nwstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l\n      12\n```\n\nThe files with failures are:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/gsl/interpolation.pyx\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/constants.py\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7095\n\n",
     "created_at": "2009-10-01T20:05:26Z",
     "labels": [
         "component: porting",
@@ -21,12 +21,10 @@ Assignee: tbd
 
 After testing sage-4.1.2.rc0 (and applying a tiny numerical noise fix), we have 12 files that all fail doctests with "myserious error":
 
-
 ```
 wstein@bsd:~/build/sage-4.1.2.rc0$ grep mysterious testlong.log |wc -l
       12
 ```
-
 
 The files with failures are:
 
@@ -44,7 +42,6 @@ The files with failures are:
         sage -t -long "devel/sage/sage/symbolic/expression.pyx"
         sage -t -long "devel/sage/sage/symbolic/function.pyx"
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7095
 
@@ -74,7 +71,7 @@ archive/issue_events_016776.json:
 archive/issue_comments_058512.json:
 ```json
 {
-    "body": "A good example:\n\n```\nsage: factorial(factorial(x))\n\nProgram received signal SIGABRT, Aborted.\n0x00007fff82adf096 in __kill ()\n(gdb) bt\n#0  0x00007fff82adf096 in __kill ()\n#1  0x00007fff82b800c2 in abort ()\n#2  0x0000000100204d51 in uw_init_context_1 ()\n#3  0x00000001002054cc in _Unwind_Resume ()\n#4  0x000000010742c4cb in __gnu_cxx::new_allocator<GiNaC::ex>::deallocate () at new_allocator.h:97\n#5  0x000000010742c4cb in std::_Vector_base<GiNaC::ex, std::allocator<GiNaC::ex> >::_M_deallocate () at new_allocator.h:137\n#6  0x000000010742c4cb in ~auto_ptr [inlined] () at new_allocator.h:123\n#7  0x000000010742c4cb in ~vector [inlined] () at new_allocator.h:593\n#8  0x000000010742c4cb in ~_Vector_base [inlined] () at /usr/include/c++/4.2.1/memory:259\n#9  0x000000010742c4cb in GiNaC::container<std::vector>::subs (this=0x10b010e70, m=@0x7fff5fbfbdb0, options=0) at new_allocator.h:271\n#10 0x00000001077b5923 in GiNaC::ex::subs () at /Users/was/build/sage-4.1.2.rc0/local/include/pynac/ex.h:827\n#11 0x00000001077b5923 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=0x10b1a9638, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=0x10b059480) at ex.h:13728\n#12 0x0000000100006fd2 in PyObject_Call (func=0x10b18ca28, arg=0x10b1b0c50, kw=0x0) at Objects/abstract.c:2492\n#13 0x0000000107799f2d in __pyx_pf_4sage_8symbolic_10expression_10Expression_test_relation (__pyx_v_self=0x109bea7a0, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=<value temporarily unavailable, due to optimizations>) at sage/symbolic/expression.cpp:9041\n#14 0x0000000100006fd2 in PyObject_Call (func=0x1006c7200, arg=0x100230050, kw=0x0) at Objects/abstract.c:2492\n#15 0x00000001077a6d84 in __pyx_pf_4sage_8symbolic_10expression_10Expression___nonzero__ (__pyx_v_self=0x109bea7a0) at sage/symbolic/expression.cpp:7677\n#16 0x000000010004d336 in PyObject_IsTrue (v=<value temporarily unavailable, due to optimizations>) at Objects/object.c:1547\n#17 0x00000001000b1ec3 in PyEval_EvalFrameEx (f=0x10b066620, throwflag=<value temporarily unavailable, due to optimizations>) at Python/ceval.c:2185\n#18 0x00000001000b7650 in PyEval_EvalCodeEx (co=0x103c33300, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10b1b0c28, argcount=1, kws=0x10b00b4f0, kwcount=0, defs=0x103c46d68, defcount=1, closure=0x0) at Python/ceval.c:2968\n#19 0x0000000100035f0d in function_call (func=0x103c47848, arg=0x10b1b0c10, kw=0x10b062680) at Objects/funcobject.c:524\n#20 0x0000000100006fd2 in PyObject_Call (func=0x103c47848, arg=0x10b1b0c10, kw=0x10b062680) at Objects/abstract.c:2492\n#21 0x00000001000b1a92 in PyEval_EvalFrameEx (f=0x10b066410, throwflag=<value temporarily unavailable, due to optimizations>) at Python/ceval.c:4019\n```\n",
+    "body": "A good example:\n\n```\nsage: factorial(factorial(x))\n\nProgram received signal SIGABRT, Aborted.\n0x00007fff82adf096 in __kill ()\n(gdb) bt\n#0  0x00007fff82adf096 in __kill ()\n#1  0x00007fff82b800c2 in abort ()\n#2  0x0000000100204d51 in uw_init_context_1 ()\n#3  0x00000001002054cc in _Unwind_Resume ()\n#4  0x000000010742c4cb in __gnu_cxx::new_allocator<GiNaC::ex>::deallocate () at new_allocator.h:97\n#5  0x000000010742c4cb in std::_Vector_base<GiNaC::ex, std::allocator<GiNaC::ex> >::_M_deallocate () at new_allocator.h:137\n#6  0x000000010742c4cb in ~auto_ptr [inlined] () at new_allocator.h:123\n#7  0x000000010742c4cb in ~vector [inlined] () at new_allocator.h:593\n#8  0x000000010742c4cb in ~_Vector_base [inlined] () at /usr/include/c++/4.2.1/memory:259\n#9  0x000000010742c4cb in GiNaC::container<std::vector>::subs (this=0x10b010e70, m=@0x7fff5fbfbdb0, options=0) at new_allocator.h:271\n#10 0x00000001077b5923 in GiNaC::ex::subs () at /Users/was/build/sage-4.1.2.rc0/local/include/pynac/ex.h:827\n#11 0x00000001077b5923 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=0x10b1a9638, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=0x10b059480) at ex.h:13728\n#12 0x0000000100006fd2 in PyObject_Call (func=0x10b18ca28, arg=0x10b1b0c50, kw=0x0) at Objects/abstract.c:2492\n#13 0x0000000107799f2d in __pyx_pf_4sage_8symbolic_10expression_10Expression_test_relation (__pyx_v_self=0x109bea7a0, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=<value temporarily unavailable, due to optimizations>) at sage/symbolic/expression.cpp:9041\n#14 0x0000000100006fd2 in PyObject_Call (func=0x1006c7200, arg=0x100230050, kw=0x0) at Objects/abstract.c:2492\n#15 0x00000001077a6d84 in __pyx_pf_4sage_8symbolic_10expression_10Expression___nonzero__ (__pyx_v_self=0x109bea7a0) at sage/symbolic/expression.cpp:7677\n#16 0x000000010004d336 in PyObject_IsTrue (v=<value temporarily unavailable, due to optimizations>) at Objects/object.c:1547\n#17 0x00000001000b1ec3 in PyEval_EvalFrameEx (f=0x10b066620, throwflag=<value temporarily unavailable, due to optimizations>) at Python/ceval.c:2185\n#18 0x00000001000b7650 in PyEval_EvalCodeEx (co=0x103c33300, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10b1b0c28, argcount=1, kws=0x10b00b4f0, kwcount=0, defs=0x103c46d68, defcount=1, closure=0x0) at Python/ceval.c:2968\n#19 0x0000000100035f0d in function_call (func=0x103c47848, arg=0x10b1b0c10, kw=0x10b062680) at Objects/funcobject.c:524\n#20 0x0000000100006fd2 in PyObject_Call (func=0x103c47848, arg=0x10b1b0c10, kw=0x10b062680) at Objects/abstract.c:2492\n#21 0x00000001000b1a92 in PyEval_EvalFrameEx (f=0x10b066410, throwflag=<value temporarily unavailable, due to optimizations>) at Python/ceval.c:4019\n```",
     "created_at": "2009-10-02T21:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -117,13 +114,12 @@ Program received signal SIGABRT, Aborted.
 
 
 
-
 ---
 
 archive/issue_comments_058513.json:
 ```json
 {
-    "body": "Some of these errors seems to arise from `test_relation` in `sage/symbolic/expression.pyx`.  Checking out\n\n```\nbool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))\n```\n\nwhich gives rise to the \"mysterious error\"  in `sage/functions/hyperbolic.py`, I find the following phenomena (with Mac OS X 10.61, 2 GHz Intel Core 2 Duo, 2 GB):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: sinh(x).subs({x: 2})\nsinh(2)\nsage: sinh(x).subs({x: 2.2})\n4.45710517053589\nsage: sinh(x).subs({x: RIF(2.2)})\n4.457105170535895?\nsage: sinh(x).subs({x: CIF(2.2)})\n/Users/mafwc/sage-4.1.2.rc0/local/bin/sage-sage: line 202:  2260 Abort trap              sage-ipython \"$@\" -i\n```\n\nand similarly for cosh, tanh and several other hyperbolic functions.  But\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: coth(x).subs({x: 2})\ncoth(2)\nsage: coth(x).subs({x: 2.2})\ncoth(2.20000000000000)\nsage: coth(x).subs({x: RIF(2.2)})\ncoth(2.2000000000000002?)\nsage: coth(x).subs({x: CIF(2.2)})\ncoth(2.2000000000000002?)\nsage: \n```\n\nThere's a serious inconsistency here, and clearly a problems with `CIF`.",
+    "body": "Some of these errors seems to arise from `test_relation` in `sage/symbolic/expression.pyx`.  Checking out\n\n```\nbool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))\n```\nwhich gives rise to the \"mysterious error\"  in `sage/functions/hyperbolic.py`, I find the following phenomena (with Mac OS X 10.61, 2 GHz Intel Core 2 Duo, 2 GB):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: sinh(x).subs({x: 2})\nsinh(2)\nsage: sinh(x).subs({x: 2.2})\n4.45710517053589\nsage: sinh(x).subs({x: RIF(2.2)})\n4.457105170535895?\nsage: sinh(x).subs({x: CIF(2.2)})\n/Users/mafwc/sage-4.1.2.rc0/local/bin/sage-sage: line 202:  2260 Abort trap              sage-ipython \"$@\" -i\n```\nand similarly for cosh, tanh and several other hyperbolic functions.  But\n| Sage Version 4.1.2.rc0, Release Date: 2009-09-30                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: coth(x).subs({x: 2})\ncoth(2)\nsage: coth(x).subs({x: 2.2})\ncoth(2.20000000000000)\nsage: coth(x).subs({x: RIF(2.2)})\ncoth(2.2000000000000002?)\nsage: coth(x).subs({x: CIF(2.2)})\ncoth(2.2000000000000002?)\nsage: \n```\nThere's a serious inconsistency here, and clearly a problems with `CIF`.",
     "created_at": "2009-10-05T08:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -137,7 +133,6 @@ Some of these errors seems to arise from `test_relation` in `sage/symbolic/expre
 ```
 bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))
 ```
-
 which gives rise to the "mysterious error"  in `sage/functions/hyperbolic.py`, I find the following phenomena (with Mac OS X 10.61, 2 GHz Intel Core 2 Duo, 2 GB):
 
 ```
@@ -157,9 +152,9 @@ sage: sinh(x).subs({x: RIF(2.2)})
 sage: sinh(x).subs({x: CIF(2.2)})
 /Users/mafwc/sage-4.1.2.rc0/local/bin/sage-sage: line 202:  2260 Abort trap              sage-ipython "$@" -i
 ```
-
 and similarly for cosh, tanh and several other hyperbolic functions.  But
-
+| Sage Version 4.1.2.rc0, Release Date: 2009-09-30                   |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -178,7 +173,6 @@ sage: coth(x).subs({x: CIF(2.2)})
 coth(2.2000000000000002?)
 sage: 
 ```
-
 There's a serious inconsistency here, and clearly a problems with `CIF`.
 
 
@@ -260,7 +254,7 @@ Dave
 archive/issue_comments_058517.json:
 ```json
 {
-    "body": "> Major progress -- a lot of problems appear to just \"go away\" when \n> using GCC-4.0.x! In particular, the above issue with \"Abort Trap\" goes away.\n\nNOTE: Actually, it is only in 32-bit mode that this Abort Trap issue goes away.  In 64-bit mode with gcc-4.0.x, the problem remains.   Unfortunately a full build in 32-bit mode has 97 files that have failing doctests.  In 64-bit mode the one remaining problem above doesn't go away, and we still have tons of failures.   So using GCC-4.0.x is no solution at all, unfortunately... not even close.",
+    "body": "> Major progress -- a lot of problems appear to just \"go away\" when \n> using GCC-4.0.x! In particular, the above issue with \"Abort Trap\" goes away.\n\n\nNOTE: Actually, it is only in 32-bit mode that this Abort Trap issue goes away.  In 64-bit mode with gcc-4.0.x, the problem remains.   Unfortunately a full build in 32-bit mode has 97 files that have failing doctests.  In 64-bit mode the one remaining problem above doesn't go away, and we still have tons of failures.   So using GCC-4.0.x is no solution at all, unfortunately... not even close.",
     "created_at": "2009-10-11T00:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -271,6 +265,7 @@ archive/issue_comments_058517.json:
 
 > Major progress -- a lot of problems appear to just "go away" when 
 > using GCC-4.0.x! In particular, the above issue with "Abort Trap" goes away.
+
 
 NOTE: Actually, it is only in 32-bit mode that this Abort Trap issue goes away.  In 64-bit mode with gcc-4.0.x, the problem remains.   Unfortunately a full build in 32-bit mode has 97 files that have failing doctests.  In 64-bit mode the one remaining problem above doesn't go away, and we still have tons of failures.   So using GCC-4.0.x is no solution at all, unfortunately... not even close.
 
@@ -299,7 +294,7 @@ The `factorial(factorial(x))` error above is really from `factorial(CIF(1))` whi
 archive/issue_comments_058519.json:
 ```json
 {
-    "body": "No, the problem isn't CIF, since:\n\n```\nsage: factorial(CC(1.0))\n^P/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67490 Abort trap              sage-ipython \"$@\" -i\nsage: factorial(CDF(1.0))\n/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67569 Abort trap              sage-ipython \"$@\" -i\n\n```\n",
+    "body": "No, the problem isn't CIF, since:\n\n```\nsage: factorial(CC(1.0))\n^P/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67490 Abort trap              sage-ipython \"$@\" -i\nsage: factorial(CDF(1.0))\n/Users/was/build/sage-4.1.2.rc1.alpha3/local/bin/sage-sage: line 202: 67569 Abort trap              sage-ipython \"$@\" -i\n\n```",
     "created_at": "2009-10-11T01:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -320,13 +315,12 @@ sage: factorial(CDF(1.0))
 
 
 
-
 ---
 
 archive/issue_comments_058520.json:
 ```json
 {
-    "body": "I wonder about lines 123--124 of local/lib/python/config/Makefile (which have been there since at least 3.1.4):\n\n```\nMACOSX_DEPLOYMENT_TARGET=10.3\nexport MACOSX_DEPLOYMENT_TARGET\n```\n\nIt seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form\n\n```\n#warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.\n```\n\nWhether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).",
+    "body": "I wonder about lines 123--124 of local/lib/python/config/Makefile (which have been there since at least 3.1.4):\n\n```\nMACOSX_DEPLOYMENT_TARGET=10.3\nexport MACOSX_DEPLOYMENT_TARGET\n```\nIt seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form\n\n```\n#warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.\n```\nWhether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).",
     "created_at": "2009-10-15T07:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -341,13 +335,11 @@ I wonder about lines 123--124 of local/lib/python/config/Makefile (which have be
 MACOSX_DEPLOYMENT_TARGET=10.3
 export MACOSX_DEPLOYMENT_TARGET
 ```
-
 It seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form
 
 ```
 #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.
 ```
-
 Whether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).
 
 
@@ -397,7 +389,7 @@ Dave
 archive/issue_comments_058523.json:
 ```json
 {
-    "body": "> Given the comment I put on sage-devel about there two quite respectable parties \n> believing gcc 4.3.3 is the most stable gcc, it might be worth trying a build\n> with gcc 4.3.3.\n\nMy understanding is that there is no GCC 4.3.3 for OS X.  There's only 4.2.x and 4.0.x, as provided by Apple.    I don't think Apple has ported GCC > 4.2 to OS X yet. \n\n> Although it will lengthen the build process a bit, I would be tempted to enable all > the mpfr tests by default. They have a habbit of finding compiler bugs. Having known > of several mpfr test failures, my experience has always been that the test is ok, . \n> and mpfr has discovered a bug in other code. In one case it was the Solaris memset() > call, but on an several cases it is gcc bugs.\n\nI think effort would be better spent making `export SPKG_CHECK=\"yes\"` fully work; then we would always do test builds of Sage with that flag set, and hence run all tests.",
+    "body": "> Given the comment I put on sage-devel about there two quite respectable parties \n> believing gcc 4.3.3 is the most stable gcc, it might be worth trying a build\n> with gcc 4.3.3.\n\n\nMy understanding is that there is no GCC 4.3.3 for OS X.  There's only 4.2.x and 4.0.x, as provided by Apple.    I don't think Apple has ported GCC > 4.2 to OS X yet. \n\n> Although it will lengthen the build process a bit, I would be tempted to enable all > the mpfr tests by default. They have a habbit of finding compiler bugs. Having known > of several mpfr test failures, my experience has always been that the test is ok, . \n> and mpfr has discovered a bug in other code. In one case it was the Solaris memset() > call, but on an several cases it is gcc bugs.\n\n\nI think effort would be better spent making `export SPKG_CHECK=\"yes\"` fully work; then we would always do test builds of Sage with that flag set, and hence run all tests.",
     "created_at": "2009-11-29T22:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -410,10 +402,12 @@ archive/issue_comments_058523.json:
 > believing gcc 4.3.3 is the most stable gcc, it might be worth trying a build
 > with gcc 4.3.3.
 
+
 My understanding is that there is no GCC 4.3.3 for OS X.  There's only 4.2.x and 4.0.x, as provided by Apple.    I don't think Apple has ported GCC > 4.2 to OS X yet. 
 
 > Although it will lengthen the build process a bit, I would be tempted to enable all > the mpfr tests by default. They have a habbit of finding compiler bugs. Having known > of several mpfr test failures, my experience has always been that the test is ok, . 
 > and mpfr has discovered a bug in other code. In one case it was the Solaris memset() > call, but on an several cases it is gcc bugs.
+
 
 I think effort would be better spent making `export SPKG_CHECK="yes"` fully work; then we would always do test builds of Sage with that flag set, and hence run all tests.
 
@@ -483,7 +477,7 @@ archive/issue_events_016778.json:
 archive/issue_comments_058525.json:
 ```json
 {
-    "body": "Replying to [comment:10 fwclarke]:\n> I wonder about lines 123--124 of local/lib/python/config/Makefile (which have been there since at least 3.1.4):\n> {{{\n> MACOSX_DEPLOYMENT_TARGET=10.3\n> export MACOSX_DEPLOYMENT_TARGET\n> }}}\n> It seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form\n> {{{\n> #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.\n> }}}\n> Whether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).\n\nThis message is fixed (it seems) in Python 2.6.4 -- we use 2.6.2 right now.  Updating to 2.6.4 doesn't help with the main problem here, though.\n\nHere are a few random comments which don't tell me much, but maybe they'll help someone else.  The failure in arith.py is a false positive: it is from the function `factorial`, but the doctest is actually calling `factorial` from functions/other.py.  If you preface the doctests in arith.py with something like `from sage.rings.arith import factorial`, then doctests for that file pass.  Maybe this should be done anyway?\n\nRe the error in rings/polynomial/pbori.pyx: it's weird.  If I put in some print statements, then I find that the problem comes from the line\n\n```\n        gb = groebner_basis(self.gens(), **kwds)\n```\n\nThis calls the function `groebner_basis` in polybori.gbcore, which ends when it hits a massive \"return\" statement (in the nested function `call_algorithm`).  I can change that statement from\n\n```\nreturn  ...blah...\n```\n\nto \n\n```\nXX = ...blah...\nprint XX\nreturn XX\n```\n\nand it successfully prints `XX`, but then it crashes.\n\nRe the error in plot/text.py: this one can be reproduced in pure Python as follows:\n\n```\n$ sage -python\nPython 2.6.2 (r262:71600, Dec 10 2009, 21:33:56) \n[GCC 4.2.1 (Apple Inc. build 5646) (dot 1)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import matplotlib.pyplot as plt\n>>> plt.plot([1,2,3])\n[<matplotlib.lines.Line2D object at 0x101eb2490>]\n>>> plt.savefig('a.pdf')\n/Applications/sage/local/bin/sage-sage: line 356: 62648 Abort trap              python \"$@\"\n```\n\nThis seems interesting; does it help to have a failure coming from pure Python?\n\nMost of the others seem to call `bool` and perhaps are related to ginac?",
+    "body": "Replying to [comment:10 fwclarke]:\n> I wonder about lines 123--124 of local/lib/python/config/Makefile (which have been there since at least 3.1.4):\n> \n> ```\n> MACOSX_DEPLOYMENT_TARGET=10.3\n> export MACOSX_DEPLOYMENT_TARGET\n> ```\n> It seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form\n> \n> ```\n> #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.\n> ```\n> Whether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).\n\n\nThis message is fixed (it seems) in Python 2.6.4 -- we use 2.6.2 right now.  Updating to 2.6.4 doesn't help with the main problem here, though.\n\nHere are a few random comments which don't tell me much, but maybe they'll help someone else.  The failure in arith.py is a false positive: it is from the function `factorial`, but the doctest is actually calling `factorial` from functions/other.py.  If you preface the doctests in arith.py with something like `from sage.rings.arith import factorial`, then doctests for that file pass.  Maybe this should be done anyway?\n\nRe the error in rings/polynomial/pbori.pyx: it's weird.  If I put in some print statements, then I find that the problem comes from the line\n\n```\n        gb = groebner_basis(self.gens(), **kwds)\n```\nThis calls the function `groebner_basis` in polybori.gbcore, which ends when it hits a massive \"return\" statement (in the nested function `call_algorithm`).  I can change that statement from\n\n```\nreturn  ...blah...\n```\nto \n\n```\nXX = ...blah...\nprint XX\nreturn XX\n```\nand it successfully prints `XX`, but then it crashes.\n\nRe the error in plot/text.py: this one can be reproduced in pure Python as follows:\n\n```\n$ sage -python\nPython 2.6.2 (r262:71600, Dec 10 2009, 21:33:56) \n[GCC 4.2.1 (Apple Inc. build 5646) (dot 1)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import matplotlib.pyplot as plt\n>>> plt.plot([1,2,3])\n[<matplotlib.lines.Line2D object at 0x101eb2490>]\n>>> plt.savefig('a.pdf')\n/Applications/sage/local/bin/sage-sage: line 356: 62648 Abort trap              python \"$@\"\n```\nThis seems interesting; does it help to have a failure coming from pure Python?\n\nMost of the others seem to call `bool` and perhaps are related to ginac?",
     "created_at": "2009-12-21T07:11:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -494,15 +488,18 @@ archive/issue_comments_058525.json:
 
 Replying to [comment:10 fwclarke]:
 > I wonder about lines 123--124 of local/lib/python/config/Makefile (which have been there since at least 3.1.4):
-> {{{
+> 
+> ```
 > MACOSX_DEPLOYMENT_TARGET=10.3
 > export MACOSX_DEPLOYMENT_TARGET
-> }}}
+> ```
 > It seems to be these lines that are giving rise (in 10.6 but not in 10.5) to many warnings of the form
-> {{{
+> 
+> ```
 > #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.
-> }}}
+> ```
 > Whether this is causing the problems, I don't know, but it does need to be changed (presumably to 10.4).
+
 
 This message is fixed (it seems) in Python 2.6.4 -- we use 2.6.2 right now.  Updating to 2.6.4 doesn't help with the main problem here, though.
 
@@ -513,13 +510,11 @@ Re the error in rings/polynomial/pbori.pyx: it's weird.  If I put in some print 
 ```
         gb = groebner_basis(self.gens(), **kwds)
 ```
-
 This calls the function `groebner_basis` in polybori.gbcore, which ends when it hits a massive "return" statement (in the nested function `call_algorithm`).  I can change that statement from
 
 ```
 return  ...blah...
 ```
-
 to 
 
 ```
@@ -527,7 +522,6 @@ XX = ...blah...
 print XX
 return XX
 ```
-
 and it successfully prints `XX`, but then it crashes.
 
 Re the error in plot/text.py: this one can be reproduced in pure Python as follows:
@@ -543,7 +537,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> plt.savefig('a.pdf')
 /Applications/sage/local/bin/sage-sage: line 356: 62648 Abort trap              python "$@"
 ```
-
 This seems interesting; does it help to have a failure coming from pure Python?
 
 Most of the others seem to call `bool` and perhaps are related to ginac?
@@ -595,7 +588,7 @@ See #7022 for perhaps the same matplotlib issue.
 archive/issue_comments_058528.json:
 ```json
 {
-    "body": "Replying to [comment:17 drkirkby]:\n> There's a lot of patches to the python .spkg file. Some look to me like they might be old and perhaps not needed any more. (There's things done because they caused problems in python 2.5). \n> \n> It might be worth updating to 2.6.4 (which is only a bug-fix upgrade), then looking at seeing what python patches are actually necessary, so making a clearer python package. \n> \n> It could be one of the patches which is causing the failures. \n\nI tried building a new Python 2.6.4 spkg (not for general distribution, just for working on this ticket).  In doing so, I got rid of all of the patches except for those to two files: pickle.py and cPickle.c.  It looks like a lot of the other issues have been fixed, but I'm not sure.  In any case, I still get the same doctest failures, and I don't see how the two remaining patches could be causing this.",
+    "body": "Replying to [comment:17 drkirkby]:\n> There's a lot of patches to the python .spkg file. Some look to me like they might be old and perhaps not needed any more. (There's things done because they caused problems in python 2.5). \n> \n> It might be worth updating to 2.6.4 (which is only a bug-fix upgrade), then looking at seeing what python patches are actually necessary, so making a clearer python package. \n> \n> It could be one of the patches which is causing the failures. \n\n\nI tried building a new Python 2.6.4 spkg (not for general distribution, just for working on this ticket).  In doing so, I got rid of all of the patches except for those to two files: pickle.py and cPickle.c.  It looks like a lot of the other issues have been fixed, but I'm not sure.  In any case, I still get the same doctest failures, and I don't see how the two remaining patches could be causing this.",
     "created_at": "2009-12-24T06:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -610,6 +603,7 @@ Replying to [comment:17 drkirkby]:
 > It might be worth updating to 2.6.4 (which is only a bug-fix upgrade), then looking at seeing what python patches are actually necessary, so making a clearer python package. 
 > 
 > It could be one of the patches which is causing the failures. 
+
 
 I tried building a new Python 2.6.4 spkg (not for general distribution, just for working on this ticket).  In doing so, I got rid of all of the patches except for those to two files: pickle.py and cPickle.c.  It looks like a lot of the other issues have been fixed, but I'm not sure.  In any case, I still get the same doctest failures, and I don't see how the two remaining patches could be causing this.
 
@@ -690,7 +684,7 @@ archive/issue_events_016780.json:
 archive/issue_comments_058531.json:
 ```json
 {
-    "body": "Hi,\n\nFor what it is worth...\n\nI built GCC 4.4.2 from source with the configure line (with backslashes not included below):\n\n```\n../gcc-4.4.2/configure --enable-languages=c,c++,fortran \n--with-gmp=/Users/was/build/sage-4.3/local/ \n--with-tune=generic --build=x86_64-apple-darwin10 \n--host=x86_64-apple-darwin10 --target=x86_64-apple-darwin10 \n--prefix=/Users/was/build/gcc/gcc-4.4.2/local/ \n--with-mpfr=/Users/was/build/sage-4.3/local/  \n```\n\n\nI then built Sage, skipping a few things:\n\n```\nsage: !more BUILD_NOTES.txt\n \n* twisted -- skipped \n\n* ratpoints -- comment out fnested-functions option!\n\n* sagenb -- skipped\n\n* skipped ecl and maxima\nsage: hg_sage.diff()\ncd \"/Users/was/build/gcc/gcc-4.4.2/sage-4.3/devel/sage\" && hg diff  | less\ndiff -r 21efb0b3fc47 sage/all.py\n--- a/sage/all.py       Thu Dec 24 09:44:02 2009 -0800\n+++ b/sage/all.py       Tue Jan 05 11:44:26 2010 -0800\n@@ -41,7 +41,7 @@\n #Import twisted.persisted.styles in order to allow things like\n #modules to be pickles\n \n-import twisted.persisted.styles\n+#import twisted.persisted.styles\n \n```\n\n\nand... many (but not all) of the bugs reported above *VANISH*.\n\n```\nsage: sys.maxint                                                                                          \n9223372036854775807                                                                                       \nsage: factorial(factorial(x))                                                                             \nfactorial(factorial(x))                                                                                   \nsage: factorial(CC(1.0))                                                                                  \n1.00000000000000                                                                                          \nsage: factorial(CDF(1.0))                                                                                 \n1.0                                                                                                       \nsage: sinh(x).subs({x:CIF(2.2)})\n                                                                         \n/Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 24620 Abort trap              sage-\nipython \"$@\" -i       \n```\n\n\nUnder gdb:\n\n```\nsage: sinh(x).subs({x:CIF(2.2)})                                                                          \n                                                                                                          \nProgram received signal SIGABRT, Aborted.                                                                 \n0x00007fff823fffe6 in __kill ()                                                                           \n(gdb) bt                                                                                                  \n#0  0x00007fff823fffe6 in __kill ()                                                                       \n#1  0x00007fff824a0e32 in abort ()                                                                        \n#2  0x000000010070bd51 in uw_init_context_1 ()                                                            \n#3  0x000000010070c4cc in _Unwind_Resume ()                                                               \n#4  0x00000001073a033f in GiNaC::function::eval ()                                                        \n#5  0x000000010733a072 in GiNaC::ex::construct_from_basic ()                                              \n#6  0x0000000107393ce6 in GiNaC::function::thiscontainer ()                                               \n#7  0x000000010730f24f in GiNaC::container<std::vector>::subs (this=<value temporarily unavailable, due to\n optimizations>, m=@0x7fff5fbfd270, options=0) at container.h:591                                         \n#8  0x0000000107661b70 in GiNaC::ptr<GiNaC::basic>::operator= () at ex.h:827                              \n#9  operator= [inlined] () at /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/include/pynac/ptr.h:75        \n#10 0x0000000107661b70 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=<val\nue temporarily unavailable, due to optimizations>, __pyx_args=0x1, __pyx_kwds=<value temporarily unavailab\nle, due to optimizations>) at ex.h:13761           \n```\n\n\nI didn't try building my own linker or binutils.   \n\nAlso:\n\n```\nsage: plot(sin)                                                                                           \n/Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 25006 Abort trap              sage-\nipython \"$@\" -i \n```\n\n\nSo, no dice.  The problem must be somewhere else...\n\nWilliam",
+    "body": "Hi,\n\nFor what it is worth...\n\nI built GCC 4.4.2 from source with the configure line (with backslashes not included below):\n\n```\n../gcc-4.4.2/configure --enable-languages=c,c++,fortran \n--with-gmp=/Users/was/build/sage-4.3/local/ \n--with-tune=generic --build=x86_64-apple-darwin10 \n--host=x86_64-apple-darwin10 --target=x86_64-apple-darwin10 \n--prefix=/Users/was/build/gcc/gcc-4.4.2/local/ \n--with-mpfr=/Users/was/build/sage-4.3/local/  \n```\n\nI then built Sage, skipping a few things:\n\n```\nsage: !more BUILD_NOTES.txt\n \n* twisted -- skipped \n\n* ratpoints -- comment out fnested-functions option!\n\n* sagenb -- skipped\n\n* skipped ecl and maxima\nsage: hg_sage.diff()\ncd \"/Users/was/build/gcc/gcc-4.4.2/sage-4.3/devel/sage\" && hg diff  | less\ndiff -r 21efb0b3fc47 sage/all.py\n--- a/sage/all.py       Thu Dec 24 09:44:02 2009 -0800\n+++ b/sage/all.py       Tue Jan 05 11:44:26 2010 -0800\n@@ -41,7 +41,7 @@\n #Import twisted.persisted.styles in order to allow things like\n #modules to be pickles\n \n-import twisted.persisted.styles\n+#import twisted.persisted.styles\n \n```\n\nand... many (but not all) of the bugs reported above *VANISH*.\n\n```\nsage: sys.maxint                                                                                          \n9223372036854775807                                                                                       \nsage: factorial(factorial(x))                                                                             \nfactorial(factorial(x))                                                                                   \nsage: factorial(CC(1.0))                                                                                  \n1.00000000000000                                                                                          \nsage: factorial(CDF(1.0))                                                                                 \n1.0                                                                                                       \nsage: sinh(x).subs({x:CIF(2.2)})\n                                                                         \n/Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 24620 Abort trap              sage-\nipython \"$@\" -i       \n```\n\nUnder gdb:\n\n```\nsage: sinh(x).subs({x:CIF(2.2)})                                                                          \n                                                                                                          \nProgram received signal SIGABRT, Aborted.                                                                 \n0x00007fff823fffe6 in __kill ()                                                                           \n(gdb) bt                                                                                                  \n#0  0x00007fff823fffe6 in __kill ()                                                                       \n#1  0x00007fff824a0e32 in abort ()                                                                        \n#2  0x000000010070bd51 in uw_init_context_1 ()                                                            \n#3  0x000000010070c4cc in _Unwind_Resume ()                                                               \n#4  0x00000001073a033f in GiNaC::function::eval ()                                                        \n#5  0x000000010733a072 in GiNaC::ex::construct_from_basic ()                                              \n#6  0x0000000107393ce6 in GiNaC::function::thiscontainer ()                                               \n#7  0x000000010730f24f in GiNaC::container<std::vector>::subs (this=<value temporarily unavailable, due to\n optimizations>, m=@0x7fff5fbfd270, options=0) at container.h:591                                         \n#8  0x0000000107661b70 in GiNaC::ptr<GiNaC::basic>::operator= () at ex.h:827                              \n#9  operator= [inlined] () at /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/include/pynac/ptr.h:75        \n#10 0x0000000107661b70 in __pyx_pf_4sage_8symbolic_10expression_10Expression_substitute (__pyx_v_self=<val\nue temporarily unavailable, due to optimizations>, __pyx_args=0x1, __pyx_kwds=<value temporarily unavailab\nle, due to optimizations>) at ex.h:13761           \n```\n\nI didn't try building my own linker or binutils.   \n\nAlso:\n\n```\nsage: plot(sin)                                                                                           \n/Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 25006 Abort trap              sage-\nipython \"$@\" -i \n```\n\nSo, no dice.  The problem must be somewhere else...\n\nWilliam",
     "created_at": "2010-01-05T19:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -713,7 +707,6 @@ I built GCC 4.4.2 from source with the configure line (with backslashes not incl
 --prefix=/Users/was/build/gcc/gcc-4.4.2/local/ 
 --with-mpfr=/Users/was/build/sage-4.3/local/  
 ```
-
 
 I then built Sage, skipping a few things:
 
@@ -741,7 +734,6 @@ diff -r 21efb0b3fc47 sage/all.py
  
 ```
 
-
 and... many (but not all) of the bugs reported above *VANISH*.
 
 ```
@@ -758,7 +750,6 @@ sage: sinh(x).subs({x:CIF(2.2)})
 /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 24620 Abort trap              sage-
 ipython "$@" -i       
 ```
-
 
 Under gdb:
 
@@ -784,7 +775,6 @@ ue temporarily unavailable, due to optimizations>, __pyx_args=0x1, __pyx_kwds=<v
 le, due to optimizations>) at ex.h:13761           
 ```
 
-
 I didn't try building my own linker or binutils.   
 
 Also:
@@ -794,7 +784,6 @@ sage: plot(sin)
 /Users/was/build/gcc/gcc-4.4.2/sage-4.3/local/bin/sage-sage: line 206: 25006 Abort trap              sage-
 ipython "$@" -i 
 ```
-
 
 So, no dice.  The problem must be somewhere else...
 
@@ -807,7 +796,7 @@ William
 archive/issue_comments_058532.json:
 ```json
 {
-    "body": "Just for kicks, I also tried this:\n\n```\nexport PATH=\"/Developer/usr/bin:$PATH\"\nexport CC=\"llvm-gcc\"\nexport CXX=\"llvm-g++\"\n```\n\nand built Sage 4.3.1.alpha0.  I had to skip boehm_gc, but everything else built.  (Why did ecl build without boehm_gc?)  I get the same errors:\n\n```\nsage -t  \"devel/sage/sage/calculus/wester.py\"               \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nand\n\n```\nsage: sys.maxint\n9223372036854775807\nsage: sage: sinh(x).subs({x:CIF(2.2)})\n/Applications/sage_builds/sage-4.3.1.alpha0-llvm/local/bin/sage-sage: line 206: 89942 Abort trap\nsage-ipython \"$@\" -i\n```\n\n\nBy the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst # Segfault\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/introduction.rst # Segfault\n\tsage -t -long devel/sage/doc/en/constructions/interface_issues.rst # Segfault\n\tsage -t -long devel/sage/doc/en/constructions/plotting.rst # Segfault\n\tsage -t -long devel/sage/doc/en/numerical_sage/scipy.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_algebra.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_functions.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_plotting.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/a_tour_of_sage/index.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_algebra.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_plotting.rst # Segfault\n\tsage -t -long devel/sage/sage/calculus/desolvers.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/calculus.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/functional.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/tests.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/wester.py # Segfault\n\tsage -t -long devel/sage/sage/categories/category.py # Segfault\n\tsage -t -long devel/sage/sage/categories/finite_coxeter_groups.py # Segfault\n\tsage -t -long devel/sage/sage/categories/primer.py # Segfault\n\tsage -t -long devel/sage/sage/categories/examples/finite_semigroups.py # Segfault\n\tsage -t -long devel/sage/sage/categories/examples/finite_weyl_groups.py # Segfault\n\tsage -t -long devel/sage/sage/coding/code_bounds.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/yang_baxter_graph.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/crystals/crystals.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/posets/hasse_diagram.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/posets/posets.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/paths.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/suffix_trees.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/word.py # Segfault\n\tsage -t -long devel/sage/sage/finance/time_series.pyx # Segfault\n\tsage -t -long devel/sage/sage/functions/hyperbolic.py # Segfault\n\tsage -t -long devel/sage/sage/functions/log.py # Segfault\n\tsage -t -long devel/sage/sage/functions/other.py # Segfault\n\tsage -t -long devel/sage/sage/functions/piecewise.py # Segfault\n\tsage -t -long devel/sage/sage/functions/special.py # Segfault\n\tsage -t -long devel/sage/sage/functions/transcendental.py # Segfault\n\tsage -t -long devel/sage/sage/functions/trig.py # Segfault\n\tsage -t -long devel/sage/sage/functions/prime_pi.pyx # Segfault\n\tsage -t -long devel/sage/sage/geometry/lattice_polytope.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/bipartite_graph.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/cliquer.pyx # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_bundle.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_generators.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_plot.py # Segfault\n\tsage -t -long devel/sage/sage/groups/group.pyx # Segfault\n\tsage -t -long devel/sage/sage/groups/perm_gps/cubegroup.py # Segfault\n\tsage -t -long devel/sage/sage/gsl/dwt.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/fft.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/interpolation.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/probability_distribution.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # Segfault\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # Segfault\n\tsage -t -long devel/sage/sage/matrix/matrix_symbolic_dense.pyx # Segfault\n\tsage -t -long devel/sage/sage/modular/overconvergent/genus0.py # Segfault\n\tsage -t -long devel/sage/sage/modules/free_module_element.pyx # Segfault\n\tsage -t -long devel/sage/sage/numerical/optimize.py # Segfault\n\tsage -t -long devel/sage/sage/plot/animate.py # Segfault\n\tsage -t -long devel/sage/sage/plot/arrow.py # Segfault\n\tsage -t -long devel/sage/sage/plot/bar_chart.py # Segfault\n\tsage -t -long devel/sage/sage/plot/bezier_path.py # Segfault\n\tsage -t -long devel/sage/sage/plot/colors.py # Segfault\n\tsage -t -long devel/sage/sage/plot/circle.py # Segfault\n\tsage -t -long devel/sage/sage/plot/contour_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/complex_plot.pyx # Segfault\n\tsage -t -long devel/sage/sage/plot/disk.py # Segfault\n\tsage -t -long devel/sage/sage/plot/density_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/line.py # Segfault\n\tsage -t -long devel/sage/sage/plot/matrix_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/plot_field.py # Segfault\n\tsage -t -long devel/sage/sage/plot/polygon.py # Segfault\n\tsage -t -long devel/sage/sage/plot/point.py # Segfault\n\tsage -t -long devel/sage/sage/plot/primitive.py # Segfault\n\tsage -t -long devel/sage/sage/plot/scatter_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/step.py # Segfault\n\tsage -t -long devel/sage/sage/plot/text.py # Segfault\n\tsage -t -long devel/sage/sage/rings/arith.py # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/plane_curves/affine_curve.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/plane_curves/projective_curve.py # Segfault\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # Segfault\n\tsage -t -long devel/sage/sage/symbolic/expression.pyx # Segfault\n\tsage -t -long devel/sage/sage/symbolic/function.pyx # Segfault\n\tsage -t -long devel/sage/sage/tests/book_stein_ent.py # Segfault\n```\n",
+    "body": "Just for kicks, I also tried this:\n\n```\nexport PATH=\"/Developer/usr/bin:$PATH\"\nexport CC=\"llvm-gcc\"\nexport CXX=\"llvm-g++\"\n```\nand built Sage 4.3.1.alpha0.  I had to skip boehm_gc, but everything else built.  (Why did ecl build without boehm_gc?)  I get the same errors:\n\n```\nsage -t  \"devel/sage/sage/calculus/wester.py\"               \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\nand\n\n```\nsage: sys.maxint\n9223372036854775807\nsage: sage: sinh(x).subs({x:CIF(2.2)})\n/Applications/sage_builds/sage-4.3.1.alpha0-llvm/local/bin/sage-sage: line 206: 89942 Abort trap\nsage-ipython \"$@\" -i\n```\n\nBy the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/doc/en/a_tour_of_sage/index.rst # Segfault\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/introduction.rst # Segfault\n\tsage -t -long devel/sage/doc/en/constructions/interface_issues.rst # Segfault\n\tsage -t -long devel/sage/doc/en/constructions/plotting.rst # Segfault\n\tsage -t -long devel/sage/doc/en/numerical_sage/scipy.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_algebra.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_functions.rst # Segfault\n\tsage -t -long devel/sage/doc/en/tutorial/tour_plotting.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/a_tour_of_sage/index.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_algebra.rst # Segfault\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_plotting.rst # Segfault\n\tsage -t -long devel/sage/sage/calculus/desolvers.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/calculus.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/functional.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/tests.py # Segfault\n\tsage -t -long devel/sage/sage/calculus/wester.py # Segfault\n\tsage -t -long devel/sage/sage/categories/category.py # Segfault\n\tsage -t -long devel/sage/sage/categories/finite_coxeter_groups.py # Segfault\n\tsage -t -long devel/sage/sage/categories/primer.py # Segfault\n\tsage -t -long devel/sage/sage/categories/examples/finite_semigroups.py # Segfault\n\tsage -t -long devel/sage/sage/categories/examples/finite_weyl_groups.py # Segfault\n\tsage -t -long devel/sage/sage/coding/code_bounds.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/yang_baxter_graph.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/crystals/crystals.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/posets/hasse_diagram.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/posets/posets.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/paths.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/suffix_trees.py # Segfault\n\tsage -t -long devel/sage/sage/combinat/words/word.py # Segfault\n\tsage -t -long devel/sage/sage/finance/time_series.pyx # Segfault\n\tsage -t -long devel/sage/sage/functions/hyperbolic.py # Segfault\n\tsage -t -long devel/sage/sage/functions/log.py # Segfault\n\tsage -t -long devel/sage/sage/functions/other.py # Segfault\n\tsage -t -long devel/sage/sage/functions/piecewise.py # Segfault\n\tsage -t -long devel/sage/sage/functions/special.py # Segfault\n\tsage -t -long devel/sage/sage/functions/transcendental.py # Segfault\n\tsage -t -long devel/sage/sage/functions/trig.py # Segfault\n\tsage -t -long devel/sage/sage/functions/prime_pi.pyx # Segfault\n\tsage -t -long devel/sage/sage/geometry/lattice_polytope.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/bipartite_graph.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/cliquer.pyx # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_bundle.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_generators.py # Segfault\n\tsage -t -long devel/sage/sage/graphs/graph_plot.py # Segfault\n\tsage -t -long devel/sage/sage/groups/group.pyx # Segfault\n\tsage -t -long devel/sage/sage/groups/perm_gps/cubegroup.py # Segfault\n\tsage -t -long devel/sage/sage/gsl/dwt.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/fft.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/interpolation.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/probability_distribution.pyx # Segfault\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # Segfault\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # Segfault\n\tsage -t -long devel/sage/sage/matrix/matrix_symbolic_dense.pyx # Segfault\n\tsage -t -long devel/sage/sage/modular/overconvergent/genus0.py # Segfault\n\tsage -t -long devel/sage/sage/modules/free_module_element.pyx # Segfault\n\tsage -t -long devel/sage/sage/numerical/optimize.py # Segfault\n\tsage -t -long devel/sage/sage/plot/animate.py # Segfault\n\tsage -t -long devel/sage/sage/plot/arrow.py # Segfault\n\tsage -t -long devel/sage/sage/plot/bar_chart.py # Segfault\n\tsage -t -long devel/sage/sage/plot/bezier_path.py # Segfault\n\tsage -t -long devel/sage/sage/plot/colors.py # Segfault\n\tsage -t -long devel/sage/sage/plot/circle.py # Segfault\n\tsage -t -long devel/sage/sage/plot/contour_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/complex_plot.pyx # Segfault\n\tsage -t -long devel/sage/sage/plot/disk.py # Segfault\n\tsage -t -long devel/sage/sage/plot/density_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/line.py # Segfault\n\tsage -t -long devel/sage/sage/plot/matrix_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/plot_field.py # Segfault\n\tsage -t -long devel/sage/sage/plot/polygon.py # Segfault\n\tsage -t -long devel/sage/sage/plot/point.py # Segfault\n\tsage -t -long devel/sage/sage/plot/primitive.py # Segfault\n\tsage -t -long devel/sage/sage/plot/scatter_plot.py # Segfault\n\tsage -t -long devel/sage/sage/plot/step.py # Segfault\n\tsage -t -long devel/sage/sage/plot/text.py # Segfault\n\tsage -t -long devel/sage/sage/rings/arith.py # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # Segfault\n\tsage -t -long devel/sage/sage/rings/polynomial/polynomial_element.pyx # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/plane_curves/affine_curve.py # Segfault\n\tsage -t -long devel/sage/sage/schemes/plane_curves/projective_curve.py # Segfault\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # Segfault\n\tsage -t -long devel/sage/sage/symbolic/expression.pyx # Segfault\n\tsage -t -long devel/sage/sage/symbolic/function.pyx # Segfault\n\tsage -t -long devel/sage/sage/tests/book_stein_ent.py # Segfault\n```",
     "created_at": "2010-01-05T23:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -823,14 +812,12 @@ export PATH="/Developer/usr/bin:$PATH"
 export CC="llvm-gcc"
 export CXX="llvm-g++"
 ```
-
 and built Sage 4.3.1.alpha0.  I had to skip boehm_gc, but everything else built.  (Why did ecl build without boehm_gc?)  I get the same errors:
 
 ```
 sage -t  "devel/sage/sage/calculus/wester.py"               
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 and
 
 ```
@@ -840,7 +827,6 @@ sage: sage: sinh(x).subs({x:CIF(2.2)})
 /Applications/sage_builds/sage-4.3.1.alpha0-llvm/local/bin/sage-sage: line 206: 89942 Abort trap
 sage-ipython "$@" -i
 ```
-
 
 By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures:
 
@@ -943,7 +929,6 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_058533.json:
@@ -979,7 +964,7 @@ Dave
 archive/issue_comments_058534.json:
 ```json
 {
-    "body": "> By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures\n\nI'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...\n\n> I don't know if this Intel compiler takes the same options as gcc, but I suspect it would.  http://software.intel.com/en-us/articles/intel-software-development-products-for-mac-os-x/ You can get a free trial.\n\nUnfortunately, for OS X, I only see a C++ compiler, not a C compiler.",
+    "body": "> By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures\n\n\nI'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...\n\n> I don't know if this Intel compiler takes the same options as gcc, but I suspect it would.  http://software.intel.com/en-us/articles/intel-software-development-products-for-mac-os-x/ You can get a free trial.\n\n\nUnfortunately, for OS X, I only see a C++ compiler, not a C compiler.",
     "created_at": "2010-01-06T03:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -990,9 +975,11 @@ archive/issue_comments_058534.json:
 
 > By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures
 
+
 I'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...
 
 > I don't know if this Intel compiler takes the same options as gcc, but I suspect it would.  http://software.intel.com/en-us/articles/intel-software-development-products-for-mac-os-x/ You can get a free trial.
+
 
 Unfortunately, for OS X, I only see a C++ compiler, not a C compiler.
 
@@ -1003,7 +990,7 @@ Unfortunately, for OS X, I only see a C++ compiler, not a C compiler.
 archive/issue_comments_058535.json:
 ```json
 {
-    "body": "Replying to [comment:24 jhpalmieri]:\n> > By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures\n> \n> I'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...\n\nOn bsd.math.washington.edu I get only a few failures:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/log.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t -long \"devel/sage/sage/plot/text.py\"\n        sage -t -long \"devel/sage/sage/rings/arith.py\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\n\nI think the issue is $HOME/.matplotlib, which has a font cache.  On bsd.math if I *delete* that directory, then all plotting is broken:\n\n```\nsage: plot(sin)                                                                                           \n/Users/was/build/sage-4.3.1.alpha0/local/bin/sage-sage: line 206: 80224 Abort trap              sage-ipyth\non \"$@\" -i                                                                                                \nwstein@bsd:~/build/sage-4.3.1.alpha0$ \n```\n\n\nIf I put the font cache file back then plotting works fine again:\n\n```\nwstein@bsd:~/build/sage-4.3.1.alpha0$ rm -rf ~/.matplotlib\nwstein@bsd:~/build/sage-4.3.1.alpha0$ mv ~/.matplotlib-x ~/.matplotlib\nwstein@bsd:~/build/sage-4.3.1.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nWARNING: There is one major unsolved bug in some versions of\nSage on OS X 10.6 that causes an 'Abort trap' crash when\ndoing certain symbolic computations.\nSee http://trac.sagemath.org/sage_trac/ticket/7095/.\nsage: plot(sin)\n| Sage Version 4.3.1.alpha0, Release Date: 2010-01-04                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: \n```\n\n\nThus the fix I made so that matplotlib would work with OS X 10.6 and Sage *must* have been reverted/removed/wrecked somehow.  Great. \n\nSo as of now, for somebody without an old .matplotlib from 4.2.1, it is *impossible* to do any plotting or anything else involving matplotlib with OS X 10.6.",
+    "body": "Replying to [comment:24 jhpalmieri]:\n> > By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures\n\n> \n> I'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...\n\n\nOn bsd.math.washington.edu I get only a few failures:\n\n```\n        sage -t -long \"devel/sage/sage/calculus/tests.py\"\n        sage -t -long \"devel/sage/sage/calculus/wester.py\"\n        sage -t -long \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t -long \"devel/sage/sage/functions/log.py\"\n        sage -t -long \"devel/sage/sage/functions/other.py\"\n        sage -t -long \"devel/sage/sage/functions/trig.py\"\n        sage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n        sage -t -long \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t -long \"devel/sage/sage/plot/text.py\"\n        sage -t -long \"devel/sage/sage/rings/arith.py\"\n        sage -t -long \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n        sage -t -long \"devel/sage/sage/symbolic/function.pyx\"\n```\n\nI think the issue is $HOME/.matplotlib, which has a font cache.  On bsd.math if I *delete* that directory, then all plotting is broken:\n\n```\nsage: plot(sin)                                                                                           \n/Users/was/build/sage-4.3.1.alpha0/local/bin/sage-sage: line 206: 80224 Abort trap              sage-ipyth\non \"$@\" -i                                                                                                \nwstein@bsd:~/build/sage-4.3.1.alpha0$ \n```\n\nIf I put the font cache file back then plotting works fine again:\n\n```\nwstein@bsd:~/build/sage-4.3.1.alpha0$ rm -rf ~/.matplotlib\nwstein@bsd:~/build/sage-4.3.1.alpha0$ mv ~/.matplotlib-x ~/.matplotlib\nwstein@bsd:~/build/sage-4.3.1.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nWARNING: There is one major unsolved bug in some versions of\nSage on OS X 10.6 that causes an 'Abort trap' crash when\ndoing certain symbolic computations.\nSee http://trac.sagemath.org/sage_trac/ticket/7095/.\nsage: plot(sin)\n| Sage Version 4.3.1.alpha0, Release Date: 2010-01-04                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: \n```\n\nThus the fix I made so that matplotlib would work with OS X 10.6 and Sage *must* have been reverted/removed/wrecked somehow.  Great. \n\nSo as of now, for somebody without an old .matplotlib from 4.2.1, it is *impossible* to do any plotting or anything else involving matplotlib with OS X 10.6.",
     "created_at": "2010-01-06T03:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1014,8 +1001,10 @@ archive/issue_comments_058535.json:
 
 Replying to [comment:24 jhpalmieri]:
 > > By the way, with an ordinary (gcc 4.2.1) build of 4.3.1.alpha0, I'm now getting over 90 files with failures
+
 > 
 > I'm seeing this on one OS X 10.6 machine, but not another one, so I'm confused...
+
 
 On bsd.math.washington.edu I get only a few failures:
 
@@ -1035,7 +1024,6 @@ On bsd.math.washington.edu I get only a few failures:
         sage -t -long "devel/sage/sage/symbolic/function.pyx"
 ```
 
-
 I think the issue is $HOME/.matplotlib, which has a font cache.  On bsd.math if I *delete* that directory, then all plotting is broken:
 
 ```
@@ -1044,7 +1032,6 @@ sage: plot(sin)
 on "$@" -i                                                                                                
 wstein@bsd:~/build/sage-4.3.1.alpha0$ 
 ```
-
 
 If I put the font cache file back then plotting works fine again:
 
@@ -1068,7 +1055,6 @@ sage: plot(sin)
 | Type notebook() for the GUI, and license() for information.        |
 sage: 
 ```
-
 
 Thus the fix I made so that matplotlib would work with OS X 10.6 and Sage *must* have been reverted/removed/wrecked somehow.  Great. 
 
@@ -1148,7 +1134,7 @@ But with my computer, "uname -r" returns "10.2.0", not "10.0.0". How do you modi
 archive/issue_comments_058539.json:
 ```json
 {
-    "body": "I hate to bring this up, but didn't drkirkby think that -a and -o were not so good for such scripts?  I can't remember if they were just deprecated or actual so-called \"Gnuisms\"...\n\nOn the plus side, I think jhpalmieri is probably right.  Could the following help?\n\n```\nstring1 < string2\nTrue if string1 sorts before string2 lexicographically in the current locale. \nstring1 > string2\nTrue if string1 sorts after string2 lexicographically in the current locale.\n```\n\nso maybe a cleaned-up version of \n\n```\nif [ $UNAME = \"Darwin\" && [uname -r > \"10.0.0\" || uname -r = \"10.0.0\"]]; then\n```\n\ncould work?  Just a naive thought.  Obviously this would only help with the mpl issue, not the rest.",
+    "body": "I hate to bring this up, but didn't drkirkby think that -a and -o were not so good for such scripts?  I can't remember if they were just deprecated or actual so-called \"Gnuisms\"...\n\nOn the plus side, I think jhpalmieri is probably right.  Could the following help?\n\n```\nstring1 < string2\nTrue if string1 sorts before string2 lexicographically in the current locale. \nstring1 > string2\nTrue if string1 sorts after string2 lexicographically in the current locale.\n```\nso maybe a cleaned-up version of \n\n```\nif [ $UNAME = \"Darwin\" && [uname -r > \"10.0.0\" || uname -r = \"10.0.0\"]]; then\n```\ncould work?  Just a naive thought.  Obviously this would only help with the mpl issue, not the rest.",
     "created_at": "2010-01-06T17:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1167,13 +1153,11 @@ True if string1 sorts before string2 lexicographically in the current locale.
 string1 > string2
 True if string1 sorts after string2 lexicographically in the current locale.
 ```
-
 so maybe a cleaned-up version of 
 
 ```
 if [ $UNAME = "Darwin" && [uname -r > "10.0.0" || uname -r = "10.0.0"]]; then
 ```
-
 could work?  Just a naive thought.  Obviously this would only help with the mpl issue, not the rest.
 
 
@@ -1250,7 +1234,7 @@ Pass this on to your Mac developers...Apple on Wednesday began widespread testin
 archive/issue_comments_058543.json:
 ```json
 {
-    "body": "From the discussion at #7856:\n> Finally, if SAGE64 is set and we're on DARWIN, is it worth making some of the other changes in [http://blog.hyperjeff.net/?p=160](http://blog.hyperjeff.net/?p=160)?  For example, in src/make.osx, changing \n> {{{\n> CFLAGS=\"-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk\"\n> LDFLAGS=\"-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk\"\n> }}}\n> so that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)\nSeveral posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?\n\n-arch arch\nCompile for the specified target architecture arch. The allowable values are `i386', `x86_64', `ppc' and `ppc64'. Multiple options work, and direct the compiler to produce \u201cuniversal\u201d binaries including object code for each architecture specified with -arch. This option only works if assembler and libraries are available for each architecture specified. (APPLE ONLY) \n-Xarch_arch option\nApply option to the command line for architecture arch. This is useful for specifying an option that should only apply to one architecture when building a \u201cuniversal\u201d binary. (APPLE ONLY) \n\nSecond comment - in Sage 4.3 on Macintel 10.5:\n\n```\nsage: sinh(CIF(2.2))\nTraceback:\n...\nTypeError: Unable to convert x (='2.2000000000000002?') to real number\n```\n\nand similarly for cosh and tanh.  The reason it doesn't happen for coth (and sech and csch) is because that is not a Ginac function, apparently - it inherits from HyberbolicFunction, which inherits from BuiltInFunction, but sinh and friends inherit from GinacFunction.  So apparently these errors are somehow related to Ginac trying (incorrectly) to just turn CIF(2.2) into a real number via RealNumber._set() in real_mpfr.pyx), though of course the abort trap is much, much worse than a fairly informative TypeError!  But anyway these are avoidable elsewhere, at least in principle.\n\nPlease let me know if these comments are not useful.  I really want to help resolve this but don't want to cloud things with ignorance.  Maybe I should ask for an account on bsd.math to help?",
+    "body": "From the discussion at #7856:\n> Finally, if SAGE64 is set and we're on DARWIN, is it worth making some of the other changes in [http://blog.hyperjeff.net/?p=160](http://blog.hyperjeff.net/?p=160)?  For example, in src/make.osx, changing \n> \n> ```\n> CFLAGS=\"-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk\"\n> LDFLAGS=\"-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk\"\n> ```\n> so that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)\n\nSeveral posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?\n\n-arch arch\nCompile for the specified target architecture arch. The allowable values are `i386', `x86_64', `ppc' and `ppc64'. Multiple options work, and direct the compiler to produce \u201cuniversal\u201d binaries including object code for each architecture specified with -arch. This option only works if assembler and libraries are available for each architecture specified. (APPLE ONLY) \n-Xarch_arch option\nApply option to the command line for architecture arch. This is useful for specifying an option that should only apply to one architecture when building a \u201cuniversal\u201d binary. (APPLE ONLY) \n\nSecond comment - in Sage 4.3 on Macintel 10.5:\n\n```\nsage: sinh(CIF(2.2))\nTraceback:\n...\nTypeError: Unable to convert x (='2.2000000000000002?') to real number\n```\nand similarly for cosh and tanh.  The reason it doesn't happen for coth (and sech and csch) is because that is not a Ginac function, apparently - it inherits from HyberbolicFunction, which inherits from BuiltInFunction, but sinh and friends inherit from GinacFunction.  So apparently these errors are somehow related to Ginac trying (incorrectly) to just turn CIF(2.2) into a real number via RealNumber._set() in real_mpfr.pyx), though of course the abort trap is much, much worse than a fairly informative TypeError!  But anyway these are avoidable elsewhere, at least in principle.\n\nPlease let me know if these comments are not useful.  I really want to help resolve this but don't want to cloud things with ignorance.  Maybe I should ask for an account on bsd.math to help?",
     "created_at": "2010-01-08T01:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1261,11 +1245,13 @@ archive/issue_comments_058543.json:
 
 From the discussion at #7856:
 > Finally, if SAGE64 is set and we're on DARWIN, is it worth making some of the other changes in [http://blog.hyperjeff.net/?p=160](http://blog.hyperjeff.net/?p=160)?  For example, in src/make.osx, changing 
-> {{{
+> 
+> ```
 > CFLAGS="-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
 > LDFLAGS="-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk"
-> }}}
+> ```
 > so that "-arch ppc" gets changed to "-arch x86_64"?  (That web page also suggests adding "FFLAGS", and making a few other changes.  We can defer these until later, also.)
+
 Several posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?
 
 -arch arch
@@ -1281,7 +1267,6 @@ Traceback:
 ...
 TypeError: Unable to convert x (='2.2000000000000002?') to real number
 ```
-
 and similarly for cosh and tanh.  The reason it doesn't happen for coth (and sech and csch) is because that is not a Ginac function, apparently - it inherits from HyberbolicFunction, which inherits from BuiltInFunction, but sinh and friends inherit from GinacFunction.  So apparently these errors are somehow related to Ginac trying (incorrectly) to just turn CIF(2.2) into a real number via RealNumber._set() in real_mpfr.pyx), though of course the abort trap is much, much worse than a fairly informative TypeError!  But anyway these are avoidable elsewhere, at least in principle.
 
 Please let me know if these comments are not useful.  I really want to help resolve this but don't want to cloud things with ignorance.  Maybe I should ask for an account on bsd.math to help?
@@ -1293,7 +1278,7 @@ Please let me know if these comments are not useful.  I really want to help reso
 archive/issue_comments_058544.json:
 ```json
 {
-    "body": "Replying to [comment:33 kcrisman]:\n> From the discussion at #7856:\n\n> > so that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)\n> Several posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?\n\nSince I don't use OS X (though I do have an account on bsd.math), I don't really claim to know what compiler options may or may not be appropriate on that platform. Ask me about Solaris and I'd be more help! \n\nHowever, if it is felt desirable to set specific options like -arch, then I would suggest you would want to do that on **all** binaries in Sage. In which case, the recent updates to 'sage-env' (#7818) would be the place to put such options. \n\nsage-env could easily be modified to inject specific flags for specific versions of OS X. I currently add -m64 if SAGE64 is set to yes, but there is no reason it could not behave differently on different versions of OS X. \n\nSince the options set by sage-env are harmless (-g, -Wall and -m64 if SAGE64 is set to \"yes\"), it would be necessary to ensure any packages start by using $CFLAGS, and not simply set CFLAGS to something they want. (Currently this is not consistent from package to package.)\n\nIf you think forcing options on people might be a bad idea, then you could document that they set them their self. Another option would be to set them in sage-env, but have an option where potentially risky flags could be overridden with an environment variable. \n\nA quick way to try a set of options on all package might be to make use of the gcc -dumpspecs and create a *specs file*. Then add options to the specs file. I've done this to force -Wall on gcc, but you could probably do likewise to force a set of options. It would be a fast way to test this idea. Otherwise, you are going to have to loads of spkg-install files, which gets very tedious!\n\nI've tried to force specific options on gcc with a wrapper script, but that has not been totally successful. Some packages break - sqlite being the first one. \n\nDave",
+    "body": "Replying to [comment:33 kcrisman]:\n> From the discussion at #7856:\n\n\n> > so that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)\n\n> Several posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?\n\nSince I don't use OS X (though I do have an account on bsd.math), I don't really claim to know what compiler options may or may not be appropriate on that platform. Ask me about Solaris and I'd be more help! \n\nHowever, if it is felt desirable to set specific options like -arch, then I would suggest you would want to do that on **all** binaries in Sage. In which case, the recent updates to 'sage-env' (#7818) would be the place to put such options. \n\nsage-env could easily be modified to inject specific flags for specific versions of OS X. I currently add -m64 if SAGE64 is set to yes, but there is no reason it could not behave differently on different versions of OS X. \n\nSince the options set by sage-env are harmless (-g, -Wall and -m64 if SAGE64 is set to \"yes\"), it would be necessary to ensure any packages start by using $CFLAGS, and not simply set CFLAGS to something they want. (Currently this is not consistent from package to package.)\n\nIf you think forcing options on people might be a bad idea, then you could document that they set them their self. Another option would be to set them in sage-env, but have an option where potentially risky flags could be overridden with an environment variable. \n\nA quick way to try a set of options on all package might be to make use of the gcc -dumpspecs and create a *specs file*. Then add options to the specs file. I've done this to force -Wall on gcc, but you could probably do likewise to force a set of options. It would be a fast way to test this idea. Otherwise, you are going to have to loads of spkg-install files, which gets very tedious!\n\nI've tried to force specific options on gcc with a wrapper script, but that has not been totally successful. Some packages break - sqlite being the first one. \n\nDave",
     "created_at": "2010-01-08T02:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1305,7 +1290,9 @@ archive/issue_comments_058544.json:
 Replying to [comment:33 kcrisman]:
 > From the discussion at #7856:
 
+
 > > so that "-arch ppc" gets changed to "-arch x86_64"?  (That web page also suggests adding "FFLAGS", and making a few other changes.  We can defer these until later, also.)
+
 > Several posts I saw elsewhere seem to indicate that one possible fix to problems of this sort is to use -arch i386 instead of no -arch option to fix some compiling problems on Snow Leopard; it seems like the -m64 is really the option that is important for actually doing 64-bit.  Note that -arch is an apple only compiler option, and in theory makes universal binaries, so that one could do -arch i386 -arch x86_64 -arch ppc.  It seems like removing -arch ppc might break PPC support, though?
 
 Since I don't use OS X (though I do have an account on bsd.math), I don't really claim to know what compiler options may or may not be appropriate on that platform. Ask me about Solaris and I'd be more help! 
@@ -1532,7 +1519,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058555.json:
 ```json
 {
-    "body": "A quick few points. \n\n* My patch removed 'set -e', which removed some degree of error checking. But I overcome that by adding an additional error check that the Itanium patch was installed (see lines line 100-103 of my patch). That has have been lost. \n* An extra line added in spkg-install \n\n```\ncp patches/readline.c-spacebug src/Modules/readline.c\n```\n\n has no check for an error. I think it would be wise to add one. \n* The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. \n\nIt's good in general to see Python was updated. I've often wondered if an update would cure any problems, but I was put off of doing so by the number of patches which were applied. \n\n\nI've stuck my name as a reviewer, but it needs someone with OS X experience to look over this too. \n\nDave",
+    "body": "A quick few points. \n\n* My patch removed 'set -e', which removed some degree of error checking. But I overcome that by adding an additional error check that the Itanium patch was installed (see lines line 100-103 of my patch). That has have been lost. \n* An extra line added in spkg-install \n\n```\ncp patches/readline.c-spacebug src/Modules/readline.c\n```\n has no check for an error. I think it would be wise to add one. \n* The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. \n\nIt's good in general to see Python was updated. I've often wondered if an update would cure any problems, but I was put off of doing so by the number of patches which were applied. \n\n\nI've stuck my name as a reviewer, but it needs someone with OS X experience to look over this too. \n\nDave",
     "created_at": "2010-01-15T00:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1549,7 +1536,6 @@ A quick few points.
 ```
 cp patches/readline.c-spacebug src/Modules/readline.c
 ```
-
  has no check for an error. I think it would be wise to add one. 
 * The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. 
 
@@ -1567,7 +1553,7 @@ Dave
 archive/issue_comments_058556.json:
 ```json
 {
-    "body": "Replying to [comment:39 drkirkby]:\n>  * My patch removed 'set -e', which removed some degree of error checking. But I overcome that by adding an additional error check that the Itanium patch was installed (see lines line 100-103 of my patch). That has have been lost. \n\n>  An extra line added in spkg-install `cp patches/readline.c-spacebug src/Modules/readline.c`\n>  has no check for an error. I think it would be wise to add one. \n\nRight now there is an \"if ... then ... else\" block which deals with both readline issues, and after this block, it says\n\n```\nif [ $? -ne 0 ]; then\n    echo \"Error copying patched readline.c\"\n    exit 1\nfi\n```\n\n\nShouldn't this perform the appropriate error check if either of the readline issues fails?  I don't really know shell scripts, so maybe we need \"[ $? -ne 0 ]\" within the \"if\" part and also within the \"else\" part.\n\n>  * The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. \n\nOops, sorry, that's easy enough to fix.  I'll post the new version just changing this.  Let me know about the readline issues.",
+    "body": "Replying to [comment:39 drkirkby]:\n>  * My patch removed 'set -e', which removed some degree of error checking. But I overcome that by adding an additional error check that the Itanium patch was installed (see lines line 100-103 of my patch). That has have been lost. \n\n\n>  An extra line added in spkg-install `cp patches/readline.c-spacebug src/Modules/readline.c`\n>  has no check for an error. I think it would be wise to add one. \n\n\nRight now there is an \"if ... then ... else\" block which deals with both readline issues, and after this block, it says\n\n```\nif [ $? -ne 0 ]; then\n    echo \"Error copying patched readline.c\"\n    exit 1\nfi\n```\n\nShouldn't this perform the appropriate error check if either of the readline issues fails?  I don't really know shell scripts, so maybe we need \"[ $? -ne 0 ]\" within the \"if\" part and also within the \"else\" part.\n\n>  * The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. \n\n\nOops, sorry, that's easy enough to fix.  I'll post the new version just changing this.  Let me know about the readline issues.",
     "created_at": "2010-01-15T01:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1579,8 +1565,10 @@ archive/issue_comments_058556.json:
 Replying to [comment:39 drkirkby]:
 >  * My patch removed 'set -e', which removed some degree of error checking. But I overcome that by adding an additional error check that the Itanium patch was installed (see lines line 100-103 of my patch). That has have been lost. 
 
+
 >  An extra line added in spkg-install `cp patches/readline.c-spacebug src/Modules/readline.c`
 >  has no check for an error. I think it would be wise to add one. 
+
 
 Right now there is an "if ... then ... else" block which deals with both readline issues, and after this block, it says
 
@@ -1591,10 +1579,10 @@ if [ $? -ne 0 ]; then
 fi
 ```
 
-
 Shouldn't this perform the appropriate error check if either of the readline issues fails?  I don't really know shell scripts, so maybe we need "[ $? -ne 0 ]" within the "if" part and also within the "else" part.
 
 >  * The spelling of my name in SPKG.txt is incorrect. I would not bother mentioning it, but since this update removes some of the error checking, you might as well fix it at the same time as fixing the error checking. 
+
 
 Oops, sorry, that's easy enough to fix.  I'll post the new version just changing this.  Let me know about the readline issues.
 
@@ -1641,7 +1629,7 @@ Yes you are correct, the *if-else-fi* should take care of that. Don't bother abo
 archive/issue_comments_058559.json:
 ```json
 {
-    "body": "I fixed drkirkby's name anyway -- the link I posted gives the new version.\n\nOn my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new python spkg and the new matplotlib spkg, plus the two patches here for the Sage library):\n\n```\nAll tests passed!\n```\n\nWhat do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.",
+    "body": "I fixed drkirkby's name anyway -- the link I posted gives the new version.\n\nOn my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new python spkg and the new matplotlib spkg, plus the two patches here for the Sage library):\n\n```\nAll tests passed!\n```\nWhat do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.",
     "created_at": "2010-01-15T03:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1657,7 +1645,6 @@ On my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new
 ```
 All tests passed!
 ```
-
 What do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.
 
 
@@ -1667,7 +1654,7 @@ What do we need to do for a positive review? I'm happy with it, but I'm listed a
 archive/issue_comments_058560.json:
 ```json
 {
-    "body": "Replying to [comment:43 jhpalmieri]:\n> On my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new python spkg and the new matplotlib spkg, plus the two patches here for the Sage library):\n> {{{\n> All tests passed!\n> }}}\n> What do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.\n\nI'm marking this as positive review. It *will* be in sage-4.3.1, so we might as well merge it and send it out for testing.",
+    "body": "Replying to [comment:43 jhpalmieri]:\n> On my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new python spkg and the new matplotlib spkg, plus the two patches here for the Sage library):\n> \n> ```\n> All tests passed!\n> ```\n> What do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.\n\n\nI'm marking this as positive review. It *will* be in sage-4.3.1, so we might as well merge it and send it out for testing.",
     "created_at": "2010-01-16T03:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1678,10 +1665,12 @@ archive/issue_comments_058560.json:
 
 Replying to [comment:43 jhpalmieri]:
 > On my OS X 10.6 machine, with a fresh build (based on 4.3.1.alpha2, with the new python spkg and the new matplotlib spkg, plus the two patches here for the Sage library):
-> {{{
+> 
+> ```
 > All tests passed!
-> }}}
+> ```
 > What do we need to do for a positive review? I'm happy with it, but I'm listed as one of the authors.  Probably someone else should look it over, too.
+
 
 I'm marking this as positive review. It *will* be in sage-4.3.1, so we might as well merge it and send it out for testing.
 
@@ -1840,7 +1829,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_058569.json:
 ```json
 {
-    "body": "Good work so far, but it seems that at least the numpy spkg also needs to be updated, e.g. by adding the lines:\n\n```\n    if [ `uname` = \"Darwin\" ]; then\n        # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n        # cause lots of random \"Abort trap\" issues on OSX. see trac\n        # #7095 for an example.\n        MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n        MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n        export MACOSX_DEPLOYMENT_TARGET\n    fi\n```\n\nfrom the python spkg-install also to the numpy spg-install.\n\nMore precisely, on my MacIntel with OS X 10.4, I just tried to build sage-4.3.1.rc0 from scratch, with only the two new spkgs from this ticket thrown in. The build choked on numpy with:\n\n```\n...\ngcc -L/Users/Shared/sage/test/sage-4.3.1.rc0_7095/sage-4.3.1.rc0/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/mtrand.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/randomkit.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/initarray.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/distributions.o -Lbuild/temp.macosx-10.4-i386-2.6 -o build/lib.macosx-10.4-i386-2.6/numpy/random/mtrand.so\nrunning scons\nrunning build_scripts\ncreating build/scripts.macosx-10.4-i386-2.6\nCreating build/scripts.macosx-10.4-i386-2.6/f2py\n  adding 'build/scripts.macosx-10.4-i386-2.6/f2py' to scripts\nchanging mode of build/scripts.macosx-10.4-i386-2.6/f2py from 644 to 755\nerror: Can't install when cross-compiling\nError building numpy.\n\nreal\t1m5.507s\nuser\t0m55.447s\nsys\t0m5.804s\nsage: An error occurred while installing numpy-1.3.0.p2\n...\n```\n\nBut after setting \"export MACOSX_DEPLOYMENT_TARGET=10.4\" manually on the command line, then issuing another \"make\", the build would run OK for numpy and continue (not finished yet, currently at the singular spkg).",
+    "body": "Good work so far, but it seems that at least the numpy spkg also needs to be updated, e.g. by adding the lines:\n\n```\n    if [ `uname` = \"Darwin\" ]; then\n        # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n        # cause lots of random \"Abort trap\" issues on OSX. see trac\n        # #7095 for an example.\n        MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n        MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n        export MACOSX_DEPLOYMENT_TARGET\n    fi\n```\nfrom the python spkg-install also to the numpy spg-install.\n\nMore precisely, on my MacIntel with OS X 10.4, I just tried to build sage-4.3.1.rc0 from scratch, with only the two new spkgs from this ticket thrown in. The build choked on numpy with:\n\n```\n...\ngcc -L/Users/Shared/sage/test/sage-4.3.1.rc0_7095/sage-4.3.1.rc0/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/mtrand.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/randomkit.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/initarray.o build/temp.macosx-10.4-i386-2.6/numpy/random/mtrand/distributions.o -Lbuild/temp.macosx-10.4-i386-2.6 -o build/lib.macosx-10.4-i386-2.6/numpy/random/mtrand.so\nrunning scons\nrunning build_scripts\ncreating build/scripts.macosx-10.4-i386-2.6\nCreating build/scripts.macosx-10.4-i386-2.6/f2py\n  adding 'build/scripts.macosx-10.4-i386-2.6/f2py' to scripts\nchanging mode of build/scripts.macosx-10.4-i386-2.6/f2py from 644 to 755\nerror: Can't install when cross-compiling\nError building numpy.\n\nreal\t1m5.507s\nuser\t0m55.447s\nsys\t0m5.804s\nsage: An error occurred while installing numpy-1.3.0.p2\n...\n```\nBut after setting \"export MACOSX_DEPLOYMENT_TARGET=10.4\" manually on the command line, then issuing another \"make\", the build would run OK for numpy and continue (not finished yet, currently at the singular spkg).",
     "created_at": "2010-01-16T20:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1861,7 +1850,6 @@ Good work so far, but it seems that at least the numpy spkg also needs to be upd
         export MACOSX_DEPLOYMENT_TARGET
     fi
 ```
-
 from the python spkg-install also to the numpy spg-install.
 
 More precisely, on my MacIntel with OS X 10.4, I just tried to build sage-4.3.1.rc0 from scratch, with only the two new spkgs from this ticket thrown in. The build choked on numpy with:
@@ -1884,7 +1872,6 @@ sys	0m5.804s
 sage: An error occurred while installing numpy-1.3.0.p2
 ...
 ```
-
 But after setting "export MACOSX_DEPLOYMENT_TARGET=10.4" manually on the command line, then issuing another "make", the build would run OK for numpy and continue (not finished yet, currently at the singular spkg).
 
 
@@ -1894,7 +1881,7 @@ But after setting "export MACOSX_DEPLOYMENT_TARGET=10.4" manually on the command
 archive/issue_comments_058570.json:
 ```json
 {
-    "body": "\n```\n    if [ `uname` = \"Darwin\" ]; then\n        # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n        # cause lots of random \"Abort trap\" issues on OSX. see trac\n        # #7095 for an example.\n        MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n        MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n        export MACOSX_DEPLOYMENT_TARGET\n    fi\n```\n\nShould we just add these lines to sage-env?",
+    "body": "```\n    if [ `uname` = \"Darwin\" ]; then\n        # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n        # cause lots of random \"Abort trap\" issues on OSX. see trac\n        # #7095 for an example.\n        MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n        MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n        export MACOSX_DEPLOYMENT_TARGET\n    fi\n```\nShould we just add these lines to sage-env?",
     "created_at": "2010-01-16T20:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1902,7 +1889,6 @@ archive/issue_comments_058570.json:
     "user": "https://github.com/jhpalmieri"
 }
 ```
-
 
 ```
     if [ `uname` = "Darwin" ]; then
@@ -1914,7 +1900,6 @@ archive/issue_comments_058570.json:
         export MACOSX_DEPLOYMENT_TARGET
     fi
 ```
-
 Should we just add these lines to sage-env?
 
 
@@ -1924,7 +1909,7 @@ Should we just add these lines to sage-env?
 archive/issue_comments_058571.json:
 ```json
 {
-    "body": "Replying to [comment:50 jhpalmieri]:\n> {{{\n>     if [ `uname` = \"Darwin\" ]; then\n>         # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n>         # cause lots of random \"Abort trap\" issues on OSX. see trac\n>         # #7095 for an example.\n>         MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n>         MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n>         export MACOSX_DEPLOYMENT_TARGET\n>     fi\n> }}}\n> Should we just add these lines to sage-env?\n\nYes, this is probably the best solution. Any more votes?",
+    "body": "Replying to [comment:50 jhpalmieri]:\n> {{{\n>     if [ `uname` = \"Darwin\" ]; then\n>         # set MACOSX_DEPLOYMENT_TARGET -- if set incorrectly, this can\n>         # cause lots of random \"Abort trap\" issues on OSX. see trac\n>         # #7095 for an example.\n>         MACOSX_VERSION=`uname -r | awk -F. '{print $1}'`\n>         MACOSX_DEPLOYMENT_TARGET=10.$[$MACOSX_VERSION-4]\n>         export MACOSX_DEPLOYMENT_TARGET\n>     fi\n> }}}\n> Should we just add these lines to sage-env?\n\n\nYes, this is probably the best solution. Any more votes?",
     "created_at": "2010-01-16T20:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1945,6 +1930,7 @@ Replying to [comment:50 jhpalmieri]:
 >     fi
 > }}}
 > Should we just add these lines to sage-env?
+
 
 Yes, this is probably the best solution. Any more votes?
 
@@ -1973,7 +1959,7 @@ Update: The scipy spkg has the same problem (with the same solution) as the nump
 archive/issue_comments_058573.json:
 ```json
 {
-    "body": "Replying to [comment:50 jhpalmieri]:\n> Should we just add these lines to sage-env?\n\nI'm +1 on this. Has someone rolled a new patch/spkg, or should I do it tonight?",
+    "body": "Replying to [comment:50 jhpalmieri]:\n> Should we just add these lines to sage-env?\n\n\nI'm +1 on this. Has someone rolled a new patch/spkg, or should I do it tonight?",
     "created_at": "2010-01-17T00:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -1984,6 +1970,7 @@ archive/issue_comments_058573.json:
 
 Replying to [comment:50 jhpalmieri]:
 > Should we just add these lines to sage-env?
+
 
 I'm +1 on this. Has someone rolled a new patch/spkg, or should I do it tonight?
 
@@ -2210,7 +2197,7 @@ Looks OK to me.
 archive/issue_comments_058585.json:
 ```json
 {
-    "body": "Replying to [comment:58 jhpalmieri]:\n> Hi Craig,\n> \n> Could you also post a copy of the modified sage-env?  There are two copies in sage, one in SAGE_ROOT/local/bin which is part of sage_scripts, and another one (which should be identical) in SAGE_ROOT/spkg/base -- I think this one gets run at the start of the make process.  Does it ever get run later?  Anyway, we should make sure that the two copies are the same, and the release manager might need sage-env posted here for that.\n\nThere is actually an hg repo in spkg/base, so you can just submit patches... I've checked in the changes recommended here, so don't worry about it this time.\n\nUpdated python and matplotlib spkgs, applied trac_7095.patch, trac_7095-ref.patch, and sage-scripts_trac_7095.patch, and then copied the new sage-env file to spkg/base (checking in the changes there).\n\n.....If sage-env is copied from spkg/base to local/bin, then why is it under revision control in both places!? This should probably be fixed, and documented better.",
+    "body": "Replying to [comment:58 jhpalmieri]:\n> Hi Craig,\n> \n> Could you also post a copy of the modified sage-env?  There are two copies in sage, one in SAGE_ROOT/local/bin which is part of sage_scripts, and another one (which should be identical) in SAGE_ROOT/spkg/base -- I think this one gets run at the start of the make process.  Does it ever get run later?  Anyway, we should make sure that the two copies are the same, and the release manager might need sage-env posted here for that.\n\n\nThere is actually an hg repo in spkg/base, so you can just submit patches... I've checked in the changes recommended here, so don't worry about it this time.\n\nUpdated python and matplotlib spkgs, applied trac_7095.patch, trac_7095-ref.patch, and sage-scripts_trac_7095.patch, and then copied the new sage-env file to spkg/base (checking in the changes there).\n\n.....If sage-env is copied from spkg/base to local/bin, then why is it under revision control in both places!? This should probably be fixed, and documented better.",
     "created_at": "2010-01-18T17:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7095",
     "type": "issue_comment",
@@ -2223,6 +2210,7 @@ Replying to [comment:58 jhpalmieri]:
 > Hi Craig,
 > 
 > Could you also post a copy of the modified sage-env?  There are two copies in sage, one in SAGE_ROOT/local/bin which is part of sage_scripts, and another one (which should be identical) in SAGE_ROOT/spkg/base -- I think this one gets run at the start of the make process.  Does it ever get run later?  Anyway, we should make sure that the two copies are the same, and the release manager might need sage-env posted here for that.
+
 
 There is actually an hg repo in spkg/base, so you can just submit patches... I've checked in the changes recommended here, so don't worry about it this time.
 

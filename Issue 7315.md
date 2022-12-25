@@ -3,7 +3,7 @@
 archive/issues_007315.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom [ this thread]: \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\n\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
+    "body": "Assignee: @burcin\n\nFrom [ this thread]: \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
     "created_at": "2009-10-26T19:56:08Z",
     "labels": [
         "component: calculus",
@@ -36,7 +36,6 @@ sage: sin(m*pi).simplify()
 sage: sin(n*pi).simplify()
 sin(pi*n)
 ```
-
 The problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7315
@@ -68,7 +67,7 @@ Unfortunately, #1163 doesn't fix this either.
 archive/issue_comments_061013.json:
 ```json
 {
-    "body": "The problem is actually because list removal is called in GenericDeclaration.forget(), so this is about behavior of list iteration in Python when you remove elements:\n\n```\n>>> L=[1,2,3,4]\n>>> for x in L:\n...     L.remove(x)\n...     x\n...     L\n... \n1\n[2, 3, 4]\n3\n[2, 4]\n```\n\nSo this piece of code is apparently using the wrong/un-Pythonic way of removing items from a list.",
+    "body": "The problem is actually because list removal is called in GenericDeclaration.forget(), so this is about behavior of list iteration in Python when you remove elements:\n\n```\n>>> L=[1,2,3,4]\n>>> for x in L:\n...     L.remove(x)\n...     x\n...     L\n... \n1\n[2, 3, 4]\n3\n[2, 4]\n```\nSo this piece of code is apparently using the wrong/un-Pythonic way of removing items from a list.",
     "created_at": "2009-10-26T20:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
@@ -91,7 +90,6 @@ The problem is actually because list removal is called in GenericDeclaration.for
 3
 [2, 4]
 ```
-
 So this piece of code is apparently using the wrong/un-Pythonic way of removing items from a list.
 
 

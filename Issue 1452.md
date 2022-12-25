@@ -214,7 +214,7 @@ archive/issue_events_003709.json:
 archive/issue_comments_009330.json:
 ```json
 {
-    "body": "Actually, #2641 doesn't seem to quite fix the problem. Although the compiler outputs the line:\n\n```\ngcc -O2 -o desauto \\\n\t  desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o \\\n\t  code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o \\\n\t  errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o \\\n\t  oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o \\\n\t  primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o \\\n\t  readper.o rprique.o storage.o token.o util.o\n```\n\nThe output must be getting clobbered somewhere. I'm looking for it now...",
+    "body": "Actually, #2641 doesn't seem to quite fix the problem. Although the compiler outputs the line:\n\n```\ngcc -O2 -o desauto \\\n\t  desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o \\\n\t  code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o \\\n\t  errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o \\\n\t  oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o \\\n\t  primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o \\\n\t  readper.o rprique.o storage.o token.o util.o\n```\nThe output must be getting clobbered somewhere. I'm looking for it now...",
     "created_at": "2008-03-30T18:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
@@ -234,7 +234,6 @@ gcc -O2 -o desauto \
 	  primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o \
 	  readper.o rprique.o storage.o token.o util.o
 ```
-
 The output must be getting clobbered somewhere. I'm looking for it now...
 
 
@@ -475,7 +474,7 @@ The latest GAP package (I checked in David's p3 changes to the hg repo, as well 
 archive/issue_comments_009342.json:
 ```json
 {
-    "body": "Somebody has been adding crap files to the spkg again:\n\n```\n.hg\n._.hg\n.hgignore\n._.hgignore\npatches\n._patches\n._spkg-install\nspkg-install\n._SPKG.txt\nSPKG.txt\nsrc\n._src\n```\n\nI did skip the 1,200 others. But I will remove all those crap files.\n\nCheers,\n\nMichael",
+    "body": "Somebody has been adding crap files to the spkg again:\n\n```\n.hg\n._.hg\n.hgignore\n._.hgignore\npatches\n._patches\n._spkg-install\nspkg-install\n._SPKG.txt\nSPKG.txt\nsrc\n._src\n```\nI did skip the 1,200 others. But I will remove all those crap files.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-31T20:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
@@ -500,7 +499,6 @@ SPKG.txt
 src
 ._src
 ```
-
 I did skip the 1,200 others. But I will remove all those crap files.
 
 Cheers,

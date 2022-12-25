@@ -3,7 +3,7 @@
 archive/issues_007922.json:
 ```json
 {
-    "body": "Assignee: @dwbump\n\nCC:  @dwbump sage-combinat\n\nFirst issue caught by #7921:\n\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\n\nI assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules\nand categories.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  @dwbump sage-combinat\n\nFirst issue caught by #7921:\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\nI assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules\nand categories.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
     "created_at": "2010-01-13T16:14:55Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  @dwbump sage-combinat
 
 First issue caught by #7921:
 
-
 ```
 sage: A2 = WeylCharacterRing(['A',2])
 sage: a2 = WeightRing(A2)
@@ -33,7 +32,6 @@ Traceback (most recent call last):
 AssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)
 ```
 
-
 Indeed:
 
 ```
@@ -41,7 +39,6 @@ sage: x = a2.an_element()
 sage: x == loads(dumps(x))
 False
 ```
-
 
 I assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules
 and categories.
@@ -835,7 +832,7 @@ archive/issue_events_018982.json:
 archive/issue_comments_068844.json:
 ```json
 {
-    "body": "Replying to [comment:18 jdemeyer]:\n> This needs a few small fixes:\n>  1. at various places `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the indentation is inconsistent.  It should be 4 spaces but in the newly added examples it is more or less random.\n>  1. in `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the test on line 250 takes a very long time but is not marked as such.\n> \n> Please add an additional patch fixing these issues.\n\nFixing the indentation is now #14678. The very long time is not necessary anymore, most likely thanks to the optimizations in #13391 (the example takes 0.22s on my machine).",
+    "body": "Replying to [comment:18 jdemeyer]:\n> This needs a few small fixes:\n> 1. at various places `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the indentation is inconsistent.  It should be 4 spaces but in the newly added examples it is more or less random.\n> 2. in `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the test on line 250 takes a very long time but is not marked as such.\n> \n> Please add an additional patch fixing these issues.\n\n\nFixing the indentation is now #14678. The very long time is not necessary anymore, most likely thanks to the optimizations in #13391 (the example takes 0.22s on my machine).",
     "created_at": "2013-06-03T13:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
@@ -846,9 +843,10 @@ archive/issue_comments_068844.json:
 
 Replying to [comment:18 jdemeyer]:
 > This needs a few small fixes:
->  1. at various places `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the indentation is inconsistent.  It should be 4 spaces but in the newly added examples it is more or less random.
->  1. in `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the test on line 250 takes a very long time but is not marked as such.
+> 1. at various places `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the indentation is inconsistent.  It should be 4 spaces but in the newly added examples it is more or less random.
+> 2. in `doc/en/thematic_tutorials/lie/weyl_character_ring.rst`, the test on line 250 takes a very long time but is not marked as such.
 > 
 > Please add an additional patch fixing these issues.
+
 
 Fixing the indentation is now #14678. The very long time is not necessary anymore, most likely thanks to the optimizations in #13391 (the example takes 0.22s on my machine).

@@ -57,7 +57,7 @@ If patches/setup.py is not needed, then it needs to be deleted from the reposito
 archive/issue_comments_056948.json:
 ```json
 {
-    "body": "Sorry about that.  I created the patch and then didn't copy setup.py.  The spkg-install file now includes a line\n\n```\n$CP patches/setup.py src/setup.py\n```\n",
+    "body": "Sorry about that.  I created the patch and then didn't copy setup.py.  The spkg-install file now includes a line\n\n```\n$CP patches/setup.py src/setup.py\n```",
     "created_at": "2009-09-22T18:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6906",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ Sorry about that.  I created the patch and then didn't copy setup.py.  The spkg-
 ```
 $CP patches/setup.py src/setup.py
 ```
-
 
 
 

@@ -74,7 +74,7 @@ I don't know if this is ready for review yet, but here are a few comments:
 archive/issue_comments_076059.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> I don't know if this is ready for review yet, but here are a few comments:\n\nThis is a work in progress.\n\n\n\n\n>  - there is a typo in one of the links (found by using \"sage -docbuild faq linkcheck\", which I just discovered!).  This is fixed in my small patch.  \n\nThank you.\n\n\n\n\n>  - should this be added to the \"website\" docbuild target?  (I'm not sure; arguments could be made either way, I think.)\n\nThe docbuild target \"faq\" is automatically added. The index.html page of the website has been changed to include the FAQ.\n\n\n\n\n>  - this document doesn't match up very well with the FAQ on the wiki.  Why?\n\nThe FAQ on the Sage wiki is a mess. The current ticket is an attempt to pull together information from the FAQ on the wiki and other sources. The resulting information is then to be organized following the model of the [Django FAQ](http://docs.djangoproject.com/en/1.1/faq/).",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> I don't know if this is ready for review yet, but here are a few comments:\n\n\nThis is a work in progress.\n\n\n\n\n>  - there is a typo in one of the links (found by using \"sage -docbuild faq linkcheck\", which I just discovered!).  This is fixed in my small patch.  \n\n\nThank you.\n\n\n\n\n>  - should this be added to the \"website\" docbuild target?  (I'm not sure; arguments could be made either way, I think.)\n\n\nThe docbuild target \"faq\" is automatically added. The index.html page of the website has been changed to include the FAQ.\n\n\n\n\n>  - this document doesn't match up very well with the FAQ on the wiki.  Why?\n\n\nThe FAQ on the Sage wiki is a mess. The current ticket is an attempt to pull together information from the FAQ on the wiki and other sources. The resulting information is then to be organized following the model of the [Django FAQ](http://docs.djangoproject.com/en/1.1/faq/).",
     "created_at": "2010-03-11T01:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
@@ -86,12 +86,14 @@ archive/issue_comments_076059.json:
 Replying to [comment:5 jhpalmieri]:
 > I don't know if this is ready for review yet, but here are a few comments:
 
+
 This is a work in progress.
 
 
 
 
 >  - there is a typo in one of the links (found by using "sage -docbuild faq linkcheck", which I just discovered!).  This is fixed in my small patch.  
+
 
 Thank you.
 
@@ -100,12 +102,14 @@ Thank you.
 
 >  - should this be added to the "website" docbuild target?  (I'm not sure; arguments could be made either way, I think.)
 
+
 The docbuild target "faq" is automatically added. The index.html page of the website has been changed to include the FAQ.
 
 
 
 
 >  - this document doesn't match up very well with the FAQ on the wiki.  Why?
+
 
 The FAQ on the Sage wiki is a mess. The current ticket is an attempt to pull together information from the FAQ on the wiki and other sources. The resulting information is then to be organized following the model of the [Django FAQ](http://docs.djangoproject.com/en/1.1/faq/).
 
@@ -226,7 +230,7 @@ CalTech is using Sage. See http://www.its.caltech.edu/~awalker/sage.html. Update
 archive/issue_comments_076066.json:
 ```json
 {
-    "body": "The documents build without error and they look good, in both html and pdf.  I have a few comments about the content:\n\n- in faq-general.rst, at the end: do we need to include instructions for building the documentation, since it is downloadable, included in any binary distribution, and automatically built when building any source distribution?  Note that you can also build the docs using\n\n```\nmake doc   or    make doc-html \nmake doc-pdf\n```\n\n I don't know if it's worth mentioning these alternatives.  In the same part, I would suggest changing the path to the documentation: replace \"sage-main\" by \"sage\".   Also in the same part, in the spirit of #21 and standard GNU-style command line options, how about changing `sage -docbuild ...` to `sage --docbuild ...`, and similarly for `sage -help` and `sage -advanced`?  (Same issue with \"you need to invoke Sage with the option ``-python``\" in faq-usage.rst, and perhaps elsewhere -- I haven't done a careful search.)\n\n- for faq-usage.rst, the prerequisites: should we mention LaTeX as a suggested package?",
+    "body": "The documents build without error and they look good, in both html and pdf.  I have a few comments about the content:\n\n- in faq-general.rst, at the end: do we need to include instructions for building the documentation, since it is downloadable, included in any binary distribution, and automatically built when building any source distribution?  Note that you can also build the docs using\n\n```\nmake doc   or    make doc-html \nmake doc-pdf\n```\n I don't know if it's worth mentioning these alternatives.  In the same part, I would suggest changing the path to the documentation: replace \"sage-main\" by \"sage\".   Also in the same part, in the spirit of #21 and standard GNU-style command line options, how about changing `sage -docbuild ...` to `sage --docbuild ...`, and similarly for `sage -help` and `sage -advanced`?  (Same issue with \"you need to invoke Sage with the option ``-python``\" in faq-usage.rst, and perhaps elsewhere -- I haven't done a careful search.)\n\n- for faq-usage.rst, the prerequisites: should we mention LaTeX as a suggested package?",
     "created_at": "2010-04-06T21:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
@@ -243,7 +247,6 @@ The documents build without error and they look good, in both html and pdf.  I h
 make doc   or    make doc-html 
 make doc-pdf
 ```
-
  I don't know if it's worth mentioning these alternatives.  In the same part, I would suggest changing the path to the documentation: replace "sage-main" by "sage".   Also in the same part, in the spirit of #21 and standard GNU-style command line options, how about changing `sage -docbuild ...` to `sage --docbuild ...`, and similarly for `sage -help` and `sage -advanced`?  (Same issue with "you need to invoke Sage with the option ``-python``" in faq-usage.rst, and perhaps elsewhere -- I haven't done a careful search.)
 
 - for faq-usage.rst, the prerequisites: should we mention LaTeX as a suggested package?
@@ -410,7 +413,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076075.json:
 ```json
 {
-    "body": "Attachment [trac_8464-doctest.patch](tarball://root/attachments/some-uuid/ticket8464/trac_8464-doctest.patch) by mvngu created at 2010-05-17 05:31:22\n\nAfter applying all three patches to Sage 4.4.2.rc0, running doctests resulted in the following failure:\n\n\n```\n[mvngu@sage sage-4.4.2.rc0]$ ./sage -t -long devel/sage-main/doc/en/faq/faq-usage.rstsage -t -long \"devel/sage-main/doc/en/faq/faq-usage.rst\"    \n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.4.2.rc0/devel/sage-main/doc/en/faq/faq-usage.rst\", line 134:\n    sage: load(\"simple.py\")\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        load(\"simple.py\")###line 134:\n    sage: load(\"simple.py\")\n      File \"sage_object.pyx\", line 698, in sage.structure.sage_object.load (sage/structure/sage_object.c:7304)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/lib/python/site-packages/sage/misc/preparser.py\", line 1501, in load\n        execfile(filename, globals)\n    IOError: [Errno 2] No such file or directory: 'simple.py'\n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.4.2.rc0/devel/sage-main/doc/en/faq/faq-usage.rst\", line 138:\n    sage: attach(\"simple.py\")\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        attach(\"simple.py\")###line 138:\n    sage: attach(\"simple.py\")\n      File \"session.pyx\", line 425, in sage.misc.session.attach (sage/misc/session.c:2017)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/lib/python/site-packages/sage/misc/preparser.py\", line 1501, in load\n        execfile(filename, globals)\n    IOError: [Errno 2] No such file or directory: 'simple.py'\n```\n\n\nI have attached a patch to resolve this. Anyone care for another trivial review?",
+    "body": "Attachment [trac_8464-doctest.patch](tarball://root/attachments/some-uuid/ticket8464/trac_8464-doctest.patch) by mvngu created at 2010-05-17 05:31:22\n\nAfter applying all three patches to Sage 4.4.2.rc0, running doctests resulted in the following failure:\n\n```\n[mvngu@sage sage-4.4.2.rc0]$ ./sage -t -long devel/sage-main/doc/en/faq/faq-usage.rstsage -t -long \"devel/sage-main/doc/en/faq/faq-usage.rst\"    \n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.4.2.rc0/devel/sage-main/doc/en/faq/faq-usage.rst\", line 134:\n    sage: load(\"simple.py\")\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        load(\"simple.py\")###line 134:\n    sage: load(\"simple.py\")\n      File \"sage_object.pyx\", line 698, in sage.structure.sage_object.load (sage/structure/sage_object.c:7304)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/lib/python/site-packages/sage/misc/preparser.py\", line 1501, in load\n        execfile(filename, globals)\n    IOError: [Errno 2] No such file or directory: 'simple.py'\n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.4.2.rc0/devel/sage-main/doc/en/faq/faq-usage.rst\", line 138:\n    sage: attach(\"simple.py\")\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        attach(\"simple.py\")###line 138:\n    sage: attach(\"simple.py\")\n      File \"session.pyx\", line 425, in sage.misc.session.attach (sage/misc/session.c:2017)\n      File \"/dev/shm/mvngu/release/sage-4.4.2.rc0/local/lib/python/site-packages/sage/misc/preparser.py\", line 1501, in load\n        execfile(filename, globals)\n    IOError: [Errno 2] No such file or directory: 'simple.py'\n```\n\nI have attached a patch to resolve this. Anyone care for another trivial review?",
     "created_at": "2010-05-17T05:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
@@ -422,7 +425,6 @@ archive/issue_comments_076075.json:
 Attachment [trac_8464-doctest.patch](tarball://root/attachments/some-uuid/ticket8464/trac_8464-doctest.patch) by mvngu created at 2010-05-17 05:31:22
 
 After applying all three patches to Sage 4.4.2.rc0, running doctests resulted in the following failure:
-
 
 ```
 [mvngu@sage sage-4.4.2.rc0]$ ./sage -t -long devel/sage-main/doc/en/faq/faq-usage.rstsage -t -long "devel/sage-main/doc/en/faq/faq-usage.rst"    
@@ -463,7 +465,6 @@ Exception raised:
         execfile(filename, globals)
     IOError: [Errno 2] No such file or directory: 'simple.py'
 ```
-
 
 I have attached a patch to resolve this. Anyone care for another trivial review?
 

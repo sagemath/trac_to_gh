@@ -78,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059199.json:
 ```json
 {
-    "body": "The attached patch, which depends \"somewhat\" (`twist.py`) on #7110, adds two challenge-response methods for new user registration:\n\n* Simple question and answer, e.g., \"How many bits are in one byte?\"\n* [reCAPTCHA](http://recaptcha.net/).\n\nThe code for both is in the new file `sagenb.notebook.challenge.py`.  I've also\n\n* Rewritten `twist.RegistrationPage` for linearity.\n* Modified `registration.html` and added the template `recaptcha.html`.\n* Added several options to `sagenb.notebook.server_conf.defaults`:\n\n```python\ndefaults = {\n             [...]\n             'email': True,\n             'challenge': True,\n             'challenge_type': 'simple',\n#             'challenge_type': 'recaptcha',\n             'recaptcha_public_key': '',\n             'recaptcha_private_key': '',\n            }\n```\n\n\nOne way to test the \"simple\" challenge, after applying the patch:\n\n* Backup `~/.sage`\n* Delete `~/.sage`\n* `sage`\n* `sage: import sagenb.notebook.notebook_object as n; n.notebook(accounts=True)`\n* Enter admin's password twice.\n* Browse to `http://localhost:8000`\n* Log out, if necessary, and click on \"Sign up for a new Sage Notebook account\".\n* Try to sign up for new accounts.\n\nTo test the \"recaptcha\" challenge, [sign up](http://recaptcha.net/whyrecaptcha.html) for a [reCAPTCHA](http://recaptcha.net/) key, update `server_conf.py`, and follow the steps above.",
+    "body": "The attached patch, which depends \"somewhat\" (`twist.py`) on #7110, adds two challenge-response methods for new user registration:\n\n* Simple question and answer, e.g., \"How many bits are in one byte?\"\n* [reCAPTCHA](http://recaptcha.net/).\n\nThe code for both is in the new file `sagenb.notebook.challenge.py`.  I've also\n\n* Rewritten `twist.RegistrationPage` for linearity.\n* Modified `registration.html` and added the template `recaptcha.html`.\n* Added several options to `sagenb.notebook.server_conf.defaults`:\n\n```python\ndefaults = {\n             [...]\n             'email': True,\n             'challenge': True,\n             'challenge_type': 'simple',\n#             'challenge_type': 'recaptcha',\n             'recaptcha_public_key': '',\n             'recaptcha_private_key': '',\n            }\n```\n\nOne way to test the \"simple\" challenge, after applying the patch:\n\n* Backup `~/.sage`\n* Delete `~/.sage`\n* `sage`\n* `sage: import sagenb.notebook.notebook_object as n; n.notebook(accounts=True)`\n* Enter admin's password twice.\n* Browse to `http://localhost:8000`\n* Log out, if necessary, and click on \"Sign up for a new Sage Notebook account\".\n* Try to sign up for new accounts.\n\nTo test the \"recaptcha\" challenge, [sign up](http://recaptcha.net/whyrecaptcha.html) for a [reCAPTCHA](http://recaptcha.net/) key, update `server_conf.py`, and follow the steps above.",
     "created_at": "2009-10-08T17:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ defaults = {
              'recaptcha_private_key': '',
             }
 ```
-
 
 One way to test the "simple" challenge, after applying the patch:
 
@@ -212,7 +211,7 @@ As before, please edit `sagenb.notebook.server_conf.py` to set up and enable the
 archive/issue_comments_059204.json:
 ```json
 {
-    "body": "Reminder: Fix doctests, e.g.,\n\n```\nsage: tmp = tmp_dir() \nsage: import sagenb.notebook.notebook as n \nsage: nb = n.Notebook(tmp) \n```\n\nbroken by the new `.sagenb` directory name requirement(?).",
+    "body": "Reminder: Fix doctests, e.g.,\n\n```\nsage: tmp = tmp_dir() \nsage: import sagenb.notebook.notebook as n \nsage: nb = n.Notebook(tmp) \n```\nbroken by the new `.sagenb` directory name requirement(?).",
     "created_at": "2009-10-14T11:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
@@ -228,7 +227,6 @@ sage: tmp = tmp_dir()
 sage: import sagenb.notebook.notebook as n 
 sage: nb = n.Notebook(tmp) 
 ```
-
 broken by the new `.sagenb` directory name requirement(?).
 
 

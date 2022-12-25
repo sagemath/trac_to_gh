@@ -3,7 +3,7 @@
 archive/issues_008873.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeMoudle(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @nthiery\n\nConsider the following code:\n\n```\nsage: G = Zmod(5)\nsage: A = CombinatorialFreeModule(QQ, G)\nsage: B = CombinatorialFreeMoudle(ZZ, G)\nsage: A(G(1))\nB[1]\nsage: B(G(1))\nTypeError\n```\n\nThis should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8873\n\n",
     "created_at": "2010-05-04T19:16:11Z",
     "labels": [
         "component: categories",
@@ -31,7 +31,6 @@ B[1]
 sage: B(G(1))
 TypeError
 ```
-
 
 This should probably work the same for both.  My guess is that this will involve moving some VectorSpace code up to ModuleWithBasis, but I haven't investigated yet.
 
@@ -311,7 +310,7 @@ Changing component from categories to coercion.
 archive/issue_comments_081422.json:
 ```json
 {
-    "body": "The problem actually stems from this:\n\n```\nsage: G(1) in ZZ\nTrue\nsage: G(1) in QQ\nFalse\n```\n\nFirst off, I think this behavior is very inconsistent. Pertaining to this ticket, I think this should be fixed as it was made explicit that we wanted an element of the indexing set. The natural thing to do would be to check the parent matches the indexing set provided the indices do not coerce into the base ring (to avoid the ambiguity). Yet this has a subtly with say you take `4 / 2`, this is now in `QQ`, and pass that to a CFM with indices QQ and base ring ZZ and you might unexpectedly get `B[2]` as opposed to `2*B[0]` (or whatever the one basis element is).\n\nAlthough I guess for modules, there is no ambiguity; it's only for unital algebras that such a conversion is (naturally) defined, right? So perhaps we want to refactor things around and have separate behavior for non-unital algebras.\n\nThoughts?\n\nEdit - I have no idea why the owner changed...",
+    "body": "The problem actually stems from this:\n\n```\nsage: G(1) in ZZ\nTrue\nsage: G(1) in QQ\nFalse\n```\nFirst off, I think this behavior is very inconsistent. Pertaining to this ticket, I think this should be fixed as it was made explicit that we wanted an element of the indexing set. The natural thing to do would be to check the parent matches the indexing set provided the indices do not coerce into the base ring (to avoid the ambiguity). Yet this has a subtly with say you take `4 / 2`, this is now in `QQ`, and pass that to a CFM with indices QQ and base ring ZZ and you might unexpectedly get `B[2]` as opposed to `2*B[0]` (or whatever the one basis element is).\n\nAlthough I guess for modules, there is no ambiguity; it's only for unital algebras that such a conversion is (naturally) defined, right? So perhaps we want to refactor things around and have separate behavior for non-unital algebras.\n\nThoughts?\n\nEdit - I have no idea why the owner changed...",
     "created_at": "2014-11-06T01:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8873",
     "type": "issue_comment",
@@ -328,7 +327,6 @@ True
 sage: G(1) in QQ
 False
 ```
-
 First off, I think this behavior is very inconsistent. Pertaining to this ticket, I think this should be fixed as it was made explicit that we wanted an element of the indexing set. The natural thing to do would be to check the parent matches the indexing set provided the indices do not coerce into the base ring (to avoid the ambiguity). Yet this has a subtly with say you take `4 / 2`, this is now in `QQ`, and pass that to a CFM with indices QQ and base ring ZZ and you might unexpectedly get `B[2]` as opposed to `2*B[0]` (or whatever the one basis element is).
 
 Although I guess for modules, there is no ambiguity; it's only for unital algebras that such a conversion is (naturally) defined, right? So perhaps we want to refactor things around and have separate behavior for non-unital algebras.

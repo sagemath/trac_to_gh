@@ -58,7 +58,7 @@ The attached patch depends on #5569
 archive/issue_comments_043394.json:
 ```json
 {
-    "body": "First I applied the patch at #5569 against Sage 3.4, then I applied the patch on this ticket. Doctesting gave me timed out errors:\n\n```\n[mvngu@sage sage-3.4]$ sage -t -long devel/sage-5576/sage/crypto/mq/\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sbox.py\"      \n         [11.3 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystemgenerator.py\"\n         [7.6 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"        \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [1800.5 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystem.py\"\n         [24.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"\nTotal time for all tests: 1843.9 seconds\n```\n",
+    "body": "First I applied the patch at #5569 against Sage 3.4, then I applied the patch on this ticket. Doctesting gave me timed out errors:\n\n```\n[mvngu@sage sage-3.4]$ sage -t -long devel/sage-5576/sage/crypto/mq/\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sbox.py\"      \n         [11.3 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystemgenerator.py\"\n         [7.6 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"        \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [1800.5 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystem.py\"\n         [24.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"\nTotal time for all tests: 1843.9 seconds\n```",
     "created_at": "2009-03-27T06:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ The following tests failed:
         sage -t -long "devel/sage-5576/sage/crypto/mq/sr.py"
 Total time for all tests: 1843.9 seconds
 ```
-
 
 
 
@@ -135,7 +134,7 @@ I fixed the underlying issue and will raise a question on [sage-devel] how to de
 archive/issue_comments_043397.json:
 ```json
 {
-    "body": "With the latest stable version sage-3.4.2, i.e. the \"post-final\" 3.4.2 version, I get the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 5576\nsage: hg_sage.apply(\"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\")\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg import   \"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\"\napplying /home/mvngu/patch/5576/mpolynomialsystem_rest.patch\npatching file sage/crypto/mq/mpolynomialsystem.py\nHunk #7 FAILED at 262\nHunk #8 FAILED at 277\nHunk #9 FAILED at 314\nHunk #22 FAILED at 652\n4 out of 51 hunks FAILED -- saving rejects to file sage/crypto/mq/mpolynomialsystem.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "With the latest stable version sage-3.4.2, i.e. the \"post-final\" 3.4.2 version, I get the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 5576\nsage: hg_sage.apply(\"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\")\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg import   \"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\"\napplying /home/mvngu/patch/5576/mpolynomialsystem_rest.patch\npatching file sage/crypto/mq/mpolynomialsystem.py\nHunk #7 FAILED at 262\nHunk #8 FAILED at 277\nHunk #9 FAILED at 314\nHunk #22 FAILED at 652\n4 out of 51 hunks FAILED -- saving rejects to file sage/crypto/mq/mpolynomialsystem.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-05-08T01:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
@@ -163,7 +162,6 @@ Hunk #22 FAILED at 652
 4 out of 51 hunks FAILED -- saving rejects to file sage/crypto/mq/mpolynomialsystem.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -208,7 +206,7 @@ Attachment [mpolynomialsystem_rest.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_043400.json:
 ```json
 {
-    "body": "\n```\n[01:15] <mhansen> malb: You need to fix the REFERENCES section in eliminate_linear_variables([01:16] <malb> what about it?\n[01:18] <mhansen> The text after the .. should all be aligned.\n[01:18] <mhansen> (on the left.\n```\n\n\nfixed in updated patch.",
+    "body": "```\n[01:15] <mhansen> malb: You need to fix the REFERENCES section in eliminate_linear_variables([01:16] <malb> what about it?\n[01:18] <mhansen> The text after the .. should all be aligned.\n[01:18] <mhansen> (on the left.\n```\n\nfixed in updated patch.",
     "created_at": "2009-05-12T00:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5576",
     "type": "issue_comment",
@@ -217,13 +215,11 @@ archive/issue_comments_043400.json:
 }
 ```
 
-
 ```
 [01:15] <mhansen> malb: You need to fix the REFERENCES section in eliminate_linear_variables([01:16] <malb> what about it?
 [01:18] <mhansen> The text after the .. should all be aligned.
 [01:18] <mhansen> (on the left.
 ```
-
 
 fixed in updated patch.
 

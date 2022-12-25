@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1070
 archive/issue_comments_006464.json:
 ```json
 {
-    "body": "This has been fixed during Sage 3.2 or so with the new build system. For example the following change makes the ecm extension depend on libecm.a:\n\n```\n--- a/module_list.py    Tue Dec 16 16:52:43 2008 +0000\n+++ b/module_list.py    Wed Dec 17 06:23:47 2008 -0800\n@@ -339,7 +339,8 @@\n     \n     Extension('sage.libs.libecm',\n               sources = ['sage/libs/libecm.pyx'],\n-              libraries = ['ecm', 'gmp']),\n+              libraries = ['ecm', 'gmp'],\n+              depends = [SAGE_ROOT + \"/local/lib/libecm.a\"]),\n      \n     Extension('sage.libs.mwrank.mwrank',\n               sources = [\"sage/libs/mwrank/mwrank.pyx\",\n```\n\nTouching libecm.a now leads to a rebuild of the ecm extension.\n\nCheers,\n\nMichael",
+    "body": "This has been fixed during Sage 3.2 or so with the new build system. For example the following change makes the ecm extension depend on libecm.a:\n\n```\n--- a/module_list.py    Tue Dec 16 16:52:43 2008 +0000\n+++ b/module_list.py    Wed Dec 17 06:23:47 2008 -0800\n@@ -339,7 +339,8 @@\n     \n     Extension('sage.libs.libecm',\n               sources = ['sage/libs/libecm.pyx'],\n-              libraries = ['ecm', 'gmp']),\n+              libraries = ['ecm', 'gmp'],\n+              depends = [SAGE_ROOT + \"/local/lib/libecm.a\"]),\n      \n     Extension('sage.libs.mwrank.mwrank',\n               sources = [\"sage/libs/mwrank/mwrank.pyx\",\n```\nTouching libecm.a now leads to a rebuild of the ecm extension.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-17T14:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1070",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ This has been fixed during Sage 3.2 or so with the new build system. For example
      Extension('sage.libs.mwrank.mwrank',
                sources = ["sage/libs/mwrank/mwrank.pyx",
 ```
-
 Touching libecm.a now leads to a rebuild of the ecm extension.
 
 Cheers,

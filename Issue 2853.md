@@ -97,7 +97,7 @@ Attachment [2853.patch](tarball://root/attachments/some-uuid/ticket2853/2853.pat
 archive/issue_comments_019540.json:
 ```json
 {
-    "body": "Hi Dan,\n\nI've updated a patch to move the tests for .weight() to the docstring for the definition of weight.  There is an issue with ['G',2] though:\n\n\nBefore the patch:\n\n```\nsage: C = CrystalOfLetters(['G',2])\nsage: hwvs = C.highest_weight_vectors()\nsage: wlr = C.weight_lattice_realization()\nsage: v = hwvs[0]; v\n1\nsage: v.weight()\n(1, 0, -1)\nsage: wlr.weyl_dimension(v.weight())\n7\n```\n\n\nAfter the patch:\n\n```\nsage: C = CrystalOfLetters(['G',2])\nsage: wlr = C.weight_lattice_realization()\nsage: hwvs = C.highest_weight_vectors()\nsage: hwvs\n[1]\nsage: v = hwvs[0]; v\n1\nsage: v.weight()\n(-1, 0, 1)\nsage: wlr.weyl_dimension(v.weight())\n0\n```\n",
+    "body": "Hi Dan,\n\nI've updated a patch to move the tests for .weight() to the docstring for the definition of weight.  There is an issue with ['G',2] though:\n\n\nBefore the patch:\n\n```\nsage: C = CrystalOfLetters(['G',2])\nsage: hwvs = C.highest_weight_vectors()\nsage: wlr = C.weight_lattice_realization()\nsage: v = hwvs[0]; v\n1\nsage: v.weight()\n(1, 0, -1)\nsage: wlr.weyl_dimension(v.weight())\n7\n```\n\nAfter the patch:\n\n```\nsage: C = CrystalOfLetters(['G',2])\nsage: wlr = C.weight_lattice_realization()\nsage: hwvs = C.highest_weight_vectors()\nsage: hwvs\n[1]\nsage: v = hwvs[0]; v\n1\nsage: v.weight()\n(-1, 0, 1)\nsage: wlr.weyl_dimension(v.weight())\n0\n```",
     "created_at": "2008-04-08T09:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ sage: wlr.weyl_dimension(v.weight())
 7
 ```
 
-
 After the patch:
 
 ```
@@ -141,7 +140,6 @@ sage: v.weight()
 sage: wlr.weyl_dimension(v.weight())
 0
 ```
-
 
 
 
@@ -171,7 +169,7 @@ Dan
 archive/issue_comments_019542.json:
 ```json
 {
-    "body": "Replying to [comment:3 bump]:\n> I was unable to confirm the problem with G2. I applied the patch in the modified form\n> that you posted, and sage: wlr.weyl_dimension(v.weight()) returns 7 for me.\n> \n> Dan\n\nHi Dan,\n\nI can confirm that with 3.0.alpha2 and your patch applied wlr.weyl_dimension(v.weight()) returns 0. With what build did you try? Are there any other patches you have in your tree?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 bump]:\n> I was unable to confirm the problem with G2. I applied the patch in the modified form\n> that you posted, and sage: wlr.weyl_dimension(v.weight()) returns 7 for me.\n> \n> Dan\n\n\nHi Dan,\n\nI can confirm that with 3.0.alpha2 and your patch applied wlr.weyl_dimension(v.weight()) returns 0. With what build did you try? Are there any other patches you have in your tree?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T17:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -185,6 +183,7 @@ Replying to [comment:3 bump]:
 > that you posted, and sage: wlr.weyl_dimension(v.weight()) returns 7 for me.
 > 
 > Dan
+
 
 Hi Dan,
 
@@ -201,7 +200,7 @@ Michael
 archive/issue_comments_019543.json:
 ```json
 {
-    "body": "> Hi Dan,\n> \n> I can confirm that with 3.0.alpha2 and your patch applied wlr.weyl_dimension(v.weight()) returns 0. With what build did you try? Are there any other patches you have in your tree?\n> \n> Cheers,\n> \n> Michael\n\nI did this with 3.0-alph0 and no other patches. I can install 3.0.alpha2 and debug the patch.\n\nDan",
+    "body": "> Hi Dan,\n> \n> I can confirm that with 3.0.alpha2 and your patch applied wlr.weyl_dimension(v.weight()) returns 0. With what build did you try? Are there any other patches you have in your tree?\n> \n> Cheers,\n> \n> Michael\n\n\nI did this with 3.0-alph0 and no other patches. I can install 3.0.alpha2 and debug the patch.\n\nDan",
     "created_at": "2008-04-08T19:49:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2853",
     "type": "issue_comment",
@@ -217,6 +216,7 @@ archive/issue_comments_019543.json:
 > Cheers,
 > 
 > Michael
+
 
 I did this with 3.0-alph0 and no other patches. I can install 3.0.alpha2 and debug the patch.
 

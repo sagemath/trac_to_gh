@@ -105,7 +105,7 @@ There looks like a typo on line 6293.
 archive/issue_comments_072517.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> There looks like a typo on line 6293.\n\nAcutally no. The statement \"raise\" raises the last exception one has cached and this is exactly what I want. If the SMNF can't be obtainted by means of the algorithm implemented at the moment - and this is indicated by an ArithmeticError - I check whether I can do it diffently. If not the original ArithmeticError with its trac back is the most useful error message.\nDo you think diffently about this?\n\nThe best would be to check whether a ring is a PID or not. Then decide on the algorithm to use. But this isn't even implemented for ZZ, so no chance to do it.",
+    "body": "Replying to [comment:2 cremona]:\n> There looks like a typo on line 6293.\n\n\nAcutally no. The statement \"raise\" raises the last exception one has cached and this is exactly what I want. If the SMNF can't be obtainted by means of the algorithm implemented at the moment - and this is indicated by an ArithmeticError - I check whether I can do it diffently. If not the original ArithmeticError with its trac back is the most useful error message.\nDo you think diffently about this?\n\nThe best would be to check whether a ring is a PID or not. Then decide on the algorithm to use. But this isn't even implemented for ZZ, so no chance to do it.",
     "created_at": "2010-02-21T14:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8226",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ archive/issue_comments_072517.json:
 
 Replying to [comment:2 cremona]:
 > There looks like a typo on line 6293.
+
 
 Acutally no. The statement "raise" raises the last exception one has cached and this is exactly what I want. If the SMNF can't be obtainted by means of the algorithm implemented at the moment - and this is indicated by an ArithmeticError - I check whether I can do it diffently. If not the original ArithmeticError with its trac back is the most useful error message.
 Do you think diffently about this?

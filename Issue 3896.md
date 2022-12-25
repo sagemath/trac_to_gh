@@ -81,7 +81,7 @@ Michael
 archive/issue_comments_027791.json:
 ```json
 {
-    "body": "This Cython update breaks the Sage library for me:\n\n```\nBuilding sage/matrix/misc.c because it depends on sage/matrix/misc.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/devel/sage-main -o sage/matrix/misc.c sage/matrix/misc.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\nimport  sage.structure.element\n\ncdef class RealNumber(sage.structure.element.RingElement)  # forward decl\n\ncdef class RealField(sage.rings.ring.Field):\n    cdef object __weakref__\n               ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/devel/sage-main/sage/rings/real_mpfr.pxd:18:16: '__weakref__' redeclared \nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\n\nCheers,\n\nMichael",
+    "body": "This Cython update breaks the Sage library for me:\n\n```\nBuilding sage/matrix/misc.c because it depends on sage/matrix/misc.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/devel/sage-main -o sage/matrix/misc.c sage/matrix/misc.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\nimport  sage.structure.element\n\ncdef class RealNumber(sage.structure.element.RingElement)  # forward decl\n\ncdef class RealField(sage.rings.ring.Field):\n    cdef object __weakref__\n               ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.alpha0/devel/sage-main/sage/rings/real_mpfr.pxd:18:16: '__weakref__' redeclared \nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-22T20:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ cdef class RealField(sage.rings.ring.Field):
 sage: Error running cython.
 sage: There was an error installing modified sage library code.
 ```
-
 
 Cheers,
 

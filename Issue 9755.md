@@ -3,7 +3,7 @@
 archive/issues_009755.json:
 ```json
 {
-    "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nThe following was reported to me by Nicolas Thi\u00e9ry and Lenny Tevlin.\n\n\n```\nR.<q,t> = ZZ[]\nR = FractionField(R)\nP = MacdonaldPolynomialsP(R,q,t) \nQ = HallLittlewoodQ(R,t) # or Q or P (Qp = H)\nPh=HallLittlewoodP(R,t)\nSF = SymmetricFunctions(R)\nSF.inject_shorthands()\nQ(s.one())\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'int' object has no attribute 'subs'\n```\n\nThe same error occurs with `Ph(s.one())`, although `P(s.one())` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9755\n\n",
+    "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: symmetric functions\n\nThe following was reported to me by Nicolas Thi\u00e9ry and Lenny Tevlin.\n\n```\nR.<q,t> = ZZ[]\nR = FractionField(R)\nP = MacdonaldPolynomialsP(R,q,t) \nQ = HallLittlewoodQ(R,t) # or Q or P (Qp = H)\nPh=HallLittlewoodP(R,t)\nSF = SymmetricFunctions(R)\nSF.inject_shorthands()\nQ(s.one())\n\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'int' object has no attribute 'subs'\n```\nThe same error occurs with `Ph(s.one())`, although `P(s.one())` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9755\n\n",
     "created_at": "2010-08-17T15:27:40Z",
     "labels": [
         "component: combinatorics",
@@ -24,7 +24,6 @@ Keywords: symmetric functions
 
 The following was reported to me by Nicolas Thiéry and Lenny Tevlin.
 
-
 ```
 R.<q,t> = ZZ[]
 R = FractionField(R)
@@ -39,7 +38,6 @@ Traceback (click to the left of this block for traceback)
 ...
 AttributeError: 'int' object has no attribute 'subs'
 ```
-
 The same error occurs with `Ph(s.one())`, although `P(s.one())` works.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9755
@@ -214,7 +212,7 @@ Attachment [trac_9755_hall_littlewood_coercions-jb.patch](tarball://root/attachm
 archive/issue_comments_095396.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Could someone make the commit string a bit more descriptive, e.g., `#9755: Fix coercion problem for Hall-Littlewood polynomials`?\n\nOops, sorry about that.  Fixed.",
+    "body": "Replying to [comment:4 mpatel]:\n> Could someone make the commit string a bit more descriptive, e.g., `#9755: Fix coercion problem for Hall-Littlewood polynomials`?\n\n\nOops, sorry about that.  Fixed.",
     "created_at": "2010-09-18T14:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
@@ -225,6 +223,7 @@ archive/issue_comments_095396.json:
 
 Replying to [comment:4 mpatel]:
 > Could someone make the commit string a bit more descriptive, e.g., `#9755: Fix coercion problem for Hall-Littlewood polynomials`?
+
 
 Oops, sorry about that.  Fixed.
 
@@ -271,7 +270,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095399.json:
 ```json
 {
-    "body": "Could you move `#9755: Fix...` to the first line of the commit string?  Otherwise, `hg log` gives, e.g.,\n\n```\nchangeset:   14948:0b3960059b6c\ntag:         qtip\ntag:         trac_9755_hall_littlewood_coercions-jb.patch\ntag:         tip\nuser:        Jason Bandlow <...>\ndate:        Thu Aug 19 15:08:26 2010 -0400\nsummary:     [mq]: trac_9755_hall_littlewood_coercions-jb.patch\n```\n",
+    "body": "Could you move `#9755: Fix...` to the first line of the commit string?  Otherwise, `hg log` gives, e.g.,\n\n```\nchangeset:   14948:0b3960059b6c\ntag:         qtip\ntag:         trac_9755_hall_littlewood_coercions-jb.patch\ntag:         tip\nuser:        Jason Bandlow <...>\ndate:        Thu Aug 19 15:08:26 2010 -0400\nsummary:     [mq]: trac_9755_hall_littlewood_coercions-jb.patch\n```",
     "created_at": "2010-09-18T20:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
@@ -291,7 +290,6 @@ user:        Jason Bandlow <...>
 date:        Thu Aug 19 15:08:26 2010 -0400
 summary:     [mq]: trac_9755_hall_littlewood_coercions-jb.patch
 ```
-
 
 
 
@@ -336,7 +334,7 @@ Sorry.  How's the new version (I forgot to overwrite the old one)?
 archive/issue_comments_095402.json:
 ```json
 {
-    "body": "Replying to [comment:8 jbandlow]:\n> Sorry.  How's the new version (I forgot to overwrite the old one)?\n\nNo worries.  V2 looks good.  Thanks!",
+    "body": "Replying to [comment:8 jbandlow]:\n> Sorry.  How's the new version (I forgot to overwrite the old one)?\n\n\nNo worries.  V2 looks good.  Thanks!",
     "created_at": "2010-09-18T22:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9755",
     "type": "issue_comment",
@@ -347,6 +345,7 @@ archive/issue_comments_095402.json:
 
 Replying to [comment:8 jbandlow]:
 > Sorry.  How's the new version (I forgot to overwrite the old one)?
+
 
 No worries.  V2 looks good.  Thanks!
 

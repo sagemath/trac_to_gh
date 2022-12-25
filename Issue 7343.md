@@ -90,7 +90,7 @@ More test cases to come, but I feel that having a test suite included asap is es
 archive/issue_comments_061336.json:
 ```json
 {
-    "body": "Running the test suite:\n\n```\nsage: from sagenb.testing.run_tests import run_tests; run_tests()\n```\n\n\nNote that this requires an instance of the Selenium server running on port 4444. The Selenium server can be downloaded from http://seleniumhq.org/download/ as part of the Selenium RC package and can be run with `java -jar selenium-server.jar`. This could not be included in the patch due to possible conflicts with the system binaries and libraries (Firefox, etc.).",
+    "body": "Running the test suite:\n\n```\nsage: from sagenb.testing.run_tests import run_tests; run_tests()\n```\n\nNote that this requires an instance of the Selenium server running on port 4444. The Selenium server can be downloaded from http://seleniumhq.org/download/ as part of the Selenium RC package and can be run with `java -jar selenium-server.jar`. This could not be included in the patch due to possible conflicts with the system binaries and libraries (Firefox, etc.).",
     "created_at": "2009-10-29T04:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Running the test suite:
 ```
 sage: from sagenb.testing.run_tests import run_tests; run_tests()
 ```
-
 
 Note that this requires an instance of the Selenium server running on port 4444. The Selenium server can be downloaded from http://seleniumhq.org/download/ as part of the Selenium RC package and can be run with `java -jar selenium-server.jar`. This could not be included in the patch due to possible conflicts with the system binaries and libraries (Firefox, etc.).
 
@@ -247,7 +246,7 @@ Tweaked a few tests.  See the comment.  Apply only this patch.
 archive/issue_comments_061344.json:
 ```json
 {
-    "body": "Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by @qed777 created at 2009-11-01 10:45:58\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
+    "body": "Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by @qed777 created at 2009-11-01 10:45:58\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
     "created_at": "2009-11-01T10:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -267,13 +266,11 @@ Version 5:
 ```python
 sel.get_eval('window.evaluate_cell_introspection(1, null, null);')
 ```
-
    instead of
 
 ```python
 self.tab('cell_input_1')
 ```
-
    For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.
 
 * Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,
@@ -281,7 +278,6 @@ self.tab('cell_input_1')
 ```
         exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html
 ```
-
    if I publish a worksheet, visit "Published," and try a search.  Restarting the server fixes the problem.
 
 Anyway, this is great work!  To the extent it counts, my review is positive.
@@ -311,7 +307,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061346.json:
 ```json
 {
-    "body": "A sample Selenium-RC startup script:\n\n```sh\n#!/bin/bash\nJAVA=\"/usr/java/latest/bin/java\"\nSEL_DIR=\"/home/apps/selenium/selenium-remote-control-1.0.1/selenium-serve\nr-1.0.1\"\n\nFF_BROW=\"*firefox3\"\nFF_EXEC=\"/usr/lib64/firefox-3.5.3/firefox\"\nFF_PROF=\"/home/sage/selenium/firefox/selenium1\"\nOP_BROW=\"*opera\"\nOP_EXEC=\"/usr/lib/opera/opera\"\nCR_BROW=\"*chrome\"\nCR_EXEC=\"/usr/lib64/chromium-browser/chromium-browser\"\n\nBROW=\"$FF_BROW\"\nBROW_EXEC=\"$FF_EXEC\"\n\nOPTS=\"\"\n#OPTS=\"$OPTS -firefoxProfileTemplate $FF_PROF\"\nOPTS=\"$OPTS -singleWindow\"\n#OPTS=\"$OPTS -browserSessionReuse\"\n#OPTS=\"$OPTS -ensureCleanSession\"\n#OPTS=\"$OPTS -debug\"\n#OPTS=\"$OPTS -browserSideLog\"\n#OPTS=\"$OPTS -log test.log\"\n#OPTS=\"$OPTS -trustAllSSLCertificates\"\n#OPTS=\"$OPTS -forcedBrowserMode $BROW\"\nOPTS=\"$OPTS -forcedBrowserModeRestOfLine $BROW $BROW_EXEC\"\n\n$JAVA -jar \"$SEL_DIR/selenium-server.jar\" $* $OPTS \n```\n\n\nNote: Opera 10 and Chromium are not supported.",
+    "body": "A sample Selenium-RC startup script:\n\n```sh\n#!/bin/bash\nJAVA=\"/usr/java/latest/bin/java\"\nSEL_DIR=\"/home/apps/selenium/selenium-remote-control-1.0.1/selenium-serve\nr-1.0.1\"\n\nFF_BROW=\"*firefox3\"\nFF_EXEC=\"/usr/lib64/firefox-3.5.3/firefox\"\nFF_PROF=\"/home/sage/selenium/firefox/selenium1\"\nOP_BROW=\"*opera\"\nOP_EXEC=\"/usr/lib/opera/opera\"\nCR_BROW=\"*chrome\"\nCR_EXEC=\"/usr/lib64/chromium-browser/chromium-browser\"\n\nBROW=\"$FF_BROW\"\nBROW_EXEC=\"$FF_EXEC\"\n\nOPTS=\"\"\n#OPTS=\"$OPTS -firefoxProfileTemplate $FF_PROF\"\nOPTS=\"$OPTS -singleWindow\"\n#OPTS=\"$OPTS -browserSessionReuse\"\n#OPTS=\"$OPTS -ensureCleanSession\"\n#OPTS=\"$OPTS -debug\"\n#OPTS=\"$OPTS -browserSideLog\"\n#OPTS=\"$OPTS -log test.log\"\n#OPTS=\"$OPTS -trustAllSSLCertificates\"\n#OPTS=\"$OPTS -forcedBrowserMode $BROW\"\nOPTS=\"$OPTS -forcedBrowserModeRestOfLine $BROW $BROW_EXEC\"\n\n$JAVA -jar \"$SEL_DIR/selenium-server.jar\" $* $OPTS \n```\n\nNote: Opera 10 and Chromium are not supported.",
     "created_at": "2009-11-04T16:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -354,7 +350,6 @@ OPTS="$OPTS -forcedBrowserModeRestOfLine $BROW $BROW_EXEC"
 $JAVA -jar "$SEL_DIR/selenium-server.jar" $* $OPTS 
 ```
 
-
 Note: Opera 10 and Chromium are not supported.
 
 
@@ -364,7 +359,7 @@ Note: Opera 10 and Chromium are not supported.
 archive/issue_comments_061347.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> Possibly useful: [HTMLTestRunner.py](http://tungwaiyip.info/software/HTMLTestRunner.html)?\n\nSee #7390.",
+    "body": "Replying to [comment:5 mpatel]:\n> Possibly useful: [HTMLTestRunner.py](http://tungwaiyip.info/software/HTMLTestRunner.html)?\n\n\nSee #7390.",
     "created_at": "2009-11-04T20:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -375,6 +370,7 @@ archive/issue_comments_061347.json:
 
 Replying to [comment:5 mpatel]:
 > Possibly useful: [HTMLTestRunner.py](http://tungwaiyip.info/software/HTMLTestRunner.html)?
+
 
 See #7390.
 
@@ -527,7 +523,7 @@ Notes:
 archive/issue_comments_061354.json:
 ```json
 {
-    "body": "Good news, I think:  We can use FunkLoad to create a new worksheet, enter/evaluate a cell, and check for updates every 0.25 seconds.  We just need to send a [conditional] sequence of HTTP GET and POST requests.  Unless there are objections, I'll try to carry this further, along the lines of the Selenium test suite.   To the extent that FL is pure Python, its \"functional\" and load tests should run on multiple platforms.\n\nNote: I did need to make one change to FL's redirect handling code: \n\n```diff\n--- trunk/src/funkload/FunkLoadTestCase.py      2009-11-11 02:31:27.000000000 -0800\n+++ funkload/src/funkload/FunkLoadTestCase.py   2009-10-14 14:51:19.000000000 -0700\n@@ -277,6 +277,9 @@ class FunkLoadTestCase(unittest.TestCase\n             thread_sleep()              # give a chance to other threads\n             while response.code in (301, 302, 303, 307) and max_redirect_count:\n                 # Figure the location - which may be relative\n+                cookie = response.headers.get('Set-Cookie')\n+                if cookie:\n+                    self.setHeader('cookie', cookie)\n                 newurl = response.headers['Location']\n                 url = urljoin(url_in, newurl)\n                 # save the current url as the base for future redirects\n```\n",
+    "body": "Good news, I think:  We can use FunkLoad to create a new worksheet, enter/evaluate a cell, and check for updates every 0.25 seconds.  We just need to send a [conditional] sequence of HTTP GET and POST requests.  Unless there are objections, I'll try to carry this further, along the lines of the Selenium test suite.   To the extent that FL is pure Python, its \"functional\" and load tests should run on multiple platforms.\n\nNote: I did need to make one change to FL's redirect handling code: \n\n```diff\n--- trunk/src/funkload/FunkLoadTestCase.py      2009-11-11 02:31:27.000000000 -0800\n+++ funkload/src/funkload/FunkLoadTestCase.py   2009-10-14 14:51:19.000000000 -0700\n@@ -277,6 +277,9 @@ class FunkLoadTestCase(unittest.TestCase\n             thread_sleep()              # give a chance to other threads\n             while response.code in (301, 302, 303, 307) and max_redirect_count:\n                 # Figure the location - which may be relative\n+                cookie = response.headers.get('Set-Cookie')\n+                if cookie:\n+                    self.setHeader('cookie', cookie)\n                 newurl = response.headers['Location']\n                 url = urljoin(url_in, newurl)\n                 # save the current url as the base for future redirects\n```",
     "created_at": "2009-11-11T11:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -557,7 +553,6 @@ Note: I did need to make one change to FL's redirect handling code:
 
 
 
-
 ---
 
 archive/issue_comments_061355.json:
@@ -581,7 +576,7 @@ By the way FL, uses [gnuplot](http://www.gnuplot.info/) to make graphs for bench
 archive/issue_comments_061356.json:
 ```json
 {
-    "body": "Replying to [comment:15 mpatel]:\n> Good news, I think:  We can use FunkLoad to create a new worksheet, enter/evaluate a cell, and check for updates every 0.25 seconds.  We just need to send a [conditional] sequence of HTTP GET and POST requests.  Unless there are objections, I'll try to carry this further, along the lines of the Selenium test suite.   To the extent that FL is pure Python, its \"functional\" and load tests should run on multiple platforms.\n> [snip]\n\nNoting that FunkLoad apparently requires patching before it is fully usable, what are the disadvantages to using `zope.testbrowser`, which seems to be better maintained and planned? I haven't tried it personally yet though, so I my impression may be wrong.",
+    "body": "Replying to [comment:15 mpatel]:\n> Good news, I think:  We can use FunkLoad to create a new worksheet, enter/evaluate a cell, and check for updates every 0.25 seconds.  We just need to send a [conditional] sequence of HTTP GET and POST requests.  Unless there are objections, I'll try to carry this further, along the lines of the Selenium test suite.   To the extent that FL is pure Python, its \"functional\" and load tests should run on multiple platforms.\n> [snip]\n\n\nNoting that FunkLoad apparently requires patching before it is fully usable, what are the disadvantages to using `zope.testbrowser`, which seems to be better maintained and planned? I haven't tried it personally yet though, so I my impression may be wrong.",
     "created_at": "2009-11-11T11:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -593,6 +588,7 @@ archive/issue_comments_061356.json:
 Replying to [comment:15 mpatel]:
 > Good news, I think:  We can use FunkLoad to create a new worksheet, enter/evaluate a cell, and check for updates every 0.25 seconds.  We just need to send a [conditional] sequence of HTTP GET and POST requests.  Unless there are objections, I'll try to carry this further, along the lines of the Selenium test suite.   To the extent that FL is pure Python, its "functional" and load tests should run on multiple platforms.
 > [snip]
+
 
 Noting that FunkLoad apparently requires patching before it is fully usable, what are the disadvantages to using `zope.testbrowser`, which seems to be better maintained and planned? I haven't tried it personally yet though, so I my impression may be wrong.
 
@@ -641,7 +637,7 @@ I would think that load tests are quite important, since http://sagenb.org serve
 archive/issue_comments_061359.json:
 ```json
 {
-    "body": "> By the way, this ticket depends on #7309, #7310, and #7332. \n\nThanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.",
+    "body": "> By the way, this ticket depends on #7309, #7310, and #7332. \n\n\nThanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.",
     "created_at": "2009-11-11T16:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -651,6 +647,7 @@ archive/issue_comments_061359.json:
 ```
 
 > By the way, this ticket depends on #7309, #7310, and #7332. 
+
 
 Thanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.
 
@@ -685,7 +682,7 @@ c. Load - FL, Gr.
 archive/issue_comments_061361.json:
 ```json
 {
-    "body": "Replying to [comment:20 was]:\n> > By the way, this ticket depends on #7309, #7310, and #7332. \n> \n> Thanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.\n\nFor 4.2.1, it may also be worthwhile to include one or more of these bug fixes: #7316, #7318, #7339, #7354, #7385.",
+    "body": "Replying to [comment:20 was]:\n> > By the way, this ticket depends on #7309, #7310, and #7332. \n\n> \n> Thanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.\n\n\nFor 4.2.1, it may also be worthwhile to include one or more of these bug fixes: #7316, #7318, #7339, #7354, #7385.",
     "created_at": "2009-11-11T17:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
@@ -696,8 +693,10 @@ archive/issue_comments_061361.json:
 
 Replying to [comment:20 was]:
 > > By the way, this ticket depends on #7309, #7310, and #7332. 
+
 > 
 > Thanks for pointing this out.  The sagenb-0.4.1 release I made that was going to to go into sage-4.2.1 contains #7343 but not #7309, #7310, and #7332.  I'll merge those.
+
 
 For 4.2.1, it may also be worthwhile to include one or more of these bug fixes: #7316, #7318, #7339, #7354, #7385.
 

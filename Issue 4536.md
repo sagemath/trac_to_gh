@@ -89,7 +89,7 @@ Also, you don't need to use backslashes to continue lines if it occurs with in p
 archive/issue_comments_033742.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> Hi John,\n> \n> Just one quick comment. Is there a reason you are manually doing the caching instead of using the cached_method decorator in sage/misc/cachefunc.py?  I think the result is a bit cleaner.\n\nQuick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n\n> \n> Also, you don't need to use backslashes to continue lines if it occurs with in parens or brackets because Python knows that they need to be closed.\n\nOK -- I'll remember that for next time (and if I get to revising this patch I'll remove them).\n\nThanks\n\n> \n> --Mike",
+    "body": "Replying to [comment:1 mhansen]:\n> Hi John,\n> \n> Just one quick comment. Is there a reason you are manually doing the caching instead of using the cached_method decorator in sage/misc/cachefunc.py?  I think the result is a bit cleaner.\n\n\nQuick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n\n> \n> Also, you don't need to use backslashes to continue lines if it occurs with in parens or brackets because Python knows that they need to be closed.\n\n\nOK -- I'll remember that for next time (and if I get to revising this patch I'll remove them).\n\nThanks\n\n> \n> --Mike",
     "created_at": "2008-11-17T09:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
@@ -103,10 +103,12 @@ Replying to [comment:1 mhansen]:
 > 
 > Just one quick comment. Is there a reason you are manually doing the caching instead of using the cached_method decorator in sage/misc/cachefunc.py?  I think the result is a bit cleaner.
 
+
 Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.
 
 > 
 > Also, you don't need to use backslashes to continue lines if it occurs with in parens or brackets because Python knows that they need to be closed.
+
 
 OK -- I'll remember that for next time (and if I get to revising this patch I'll remove them).
 
@@ -122,7 +124,7 @@ Thanks
 archive/issue_comments_033743.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n\nThe cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py\n\nThat's exactly what the cached_method decorator does except that it also handles the case where arguments are passed into the method.  The values are cached in a dictionary attribute on the object itself so it gets garbage collected correctly.  It also supports things such as clearing the cache, etc.",
+    "body": "Replying to [comment:2 cremona]:\n> Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n\n\nThe cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py\n\nThat's exactly what the cached_method decorator does except that it also handles the case where arguments are passed into the method.  The values are cached in a dictionary attribute on the object itself so it gets garbage collected correctly.  It also supports things such as clearing the cache, etc.",
     "created_at": "2008-11-17T11:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
@@ -133,6 +135,7 @@ archive/issue_comments_033743.json:
 
 Replying to [comment:2 cremona]:
 > Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.
+
 
 The cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py
 
@@ -145,7 +148,7 @@ That's exactly what the cached_method decorator does except that it also handles
 archive/issue_comments_033744.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> Replying to [comment:2 cremona]:\n> > Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n> \n> The cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py\n> \n> That's exactly what the cached_method decorator does except that it also handles the case where arguments are passed into the method.  The values are cached in a dictionary attribute on the object itself so it gets garbage collected correctly.  It also supports things such as clearing the cache, etc.\n\nThat looks brilliant, and had completely passed me by.  I'll start using it right away!  It would also be a good idea to start to systematically use it all over (wouldn't it) -- then people would see it and use it themselves.",
+    "body": "Replying to [comment:3 mhansen]:\n> Replying to [comment:2 cremona]:\n> > Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.\n\n> \n> The cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py\n> \n> That's exactly what the cached_method decorator does except that it also handles the case where arguments are passed into the method.  The values are cached in a dictionary attribute on the object itself so it gets garbage collected correctly.  It also supports things such as clearing the cache, etc.\n\n\nThat looks brilliant, and had completely passed me by.  I'll start using it right away!  It would also be a good idea to start to systematically use it all over (wouldn't it) -- then people would see it and use it themselves.",
     "created_at": "2008-11-17T12:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
@@ -157,10 +160,12 @@ archive/issue_comments_033744.json:
 Replying to [comment:3 mhansen]:
 > Replying to [comment:2 cremona]:
 > > Quick answer: it never occurred to me to do it any other way!  But isn't it completely standard in Sage that when an object has a property (such as the norm for an ideal) then one computes it the first time and caches it so that further requests for the property used the cached value?  This is surely different from caching values of a function.
+
 > 
 > The cached_method decorator is relatively new which is why it isn't in use throughout Sage.  For an example, see the groebner_basis method in sage/rings/polynomial/multi_polynomial_ideal.py
 > 
 > That's exactly what the cached_method decorator does except that it also handles the case where arguments are passed into the method.  The values are cached in a dictionary attribute on the object itself so it gets garbage collected correctly.  It also supports things such as clearing the cache, etc.
+
 
 That looks brilliant, and had completely passed me by.  I'll start using it right away!  It would also be a good idea to start to systematically use it all over (wouldn't it) -- then people would see it and use it themselves.
 
@@ -191,7 +196,7 @@ The second patch trac-4536-2.patch fixes a bug in the first implementation of re
 archive/issue_comments_033746.json:
 ```json
 {
-    "body": "Patches install and compile fine under 3.2, and all doctests in sage/rings/number_field pass.\n\nBut I'm not happy with the is_coprime() method for fractional ideals. I thought the outcome of the discussion on the sage-nt list was that coprime for fractional ideals means disjoint supports, but I got this:\n\n\n```\nsage: E.<a> = NumberField(x^5 + 7*x^4 + 18*x^2 + x - 3)\nsage: OE = E.ring_of_integers()\nsage: i,j,k = [u[0] for u in factor(3*OE)] # three distinct prime ideals of degrees 3,1,1\nsage: (i/j).is_coprime(j/k)\nTrue\nsage: (j/k).is_coprime(j/k)\nTrue\n```\n\n\nThe problem here is that the fractional ideal j/k has norm 1, and the code falsely assumes that if norm(i) and norm(j) are coprime, then i and j must be coprime. Thus the code will say that j/k is coprime to everything (including itself).",
+    "body": "Patches install and compile fine under 3.2, and all doctests in sage/rings/number_field pass.\n\nBut I'm not happy with the is_coprime() method for fractional ideals. I thought the outcome of the discussion on the sage-nt list was that coprime for fractional ideals means disjoint supports, but I got this:\n\n```\nsage: E.<a> = NumberField(x^5 + 7*x^4 + 18*x^2 + x - 3)\nsage: OE = E.ring_of_integers()\nsage: i,j,k = [u[0] for u in factor(3*OE)] # three distinct prime ideals of degrees 3,1,1\nsage: (i/j).is_coprime(j/k)\nTrue\nsage: (j/k).is_coprime(j/k)\nTrue\n```\n\nThe problem here is that the fractional ideal j/k has norm 1, and the code falsely assumes that if norm(i) and norm(j) are coprime, then i and j must be coprime. Thus the code will say that j/k is coprime to everything (including itself).",
     "created_at": "2008-11-25T06:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4536",
     "type": "issue_comment",
@@ -204,7 +209,6 @@ Patches install and compile fine under 3.2, and all doctests in sage/rings/numbe
 
 But I'm not happy with the is_coprime() method for fractional ideals. I thought the outcome of the discussion on the sage-nt list was that coprime for fractional ideals means disjoint supports, but I got this:
 
-
 ```
 sage: E.<a> = NumberField(x^5 + 7*x^4 + 18*x^2 + x - 3)
 sage: OE = E.ring_of_integers()
@@ -214,7 +218,6 @@ True
 sage: (j/k).is_coprime(j/k)
 True
 ```
-
 
 The problem here is that the fractional ideal j/k has norm 1, and the code falsely assumes that if norm(i) and norm(j) are coprime, then i and j must be coprime. Thus the code will say that j/k is coprime to everything (including itself).
 

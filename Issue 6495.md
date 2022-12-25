@@ -96,7 +96,7 @@ On cross-PDF document links:  It seems that Sphinx does not produce these.  This
 archive/issue_comments_052463.json:
 ```json
 {
-    "body": "On the `\\ZZ` in `arithgroup.tex`:  It seems the problem stems from `\\`@`title` in\n\n```\n    \\ifsphinxpdfoutput\n      \\begingroup\n      % This \\def is required to deal with multi-line authors; it               \n      % changes \\\\ to ', ' (comma-space), making it pass muster for             \n      % generating document info in the PDF file.                               \n      \\def\\\\{, }\n      \\pdfinfo{\n        /Author (\\@author)\n        /Title (\\@title)\n      }\n      \\endgroup\n    \\fi\n```\n\nin Sphinx's `manual.cls`.  For some reason, the `\\math*` font commands do not work in this context.  I gather that `\\mathbf` is preferred, but one workaround is to use\n\n```\nArithmetic Subgroups of `{\\rm SL}_2({\\bf Z})`\n```\n\nin place of \n\n```\nArithmetic Subgroups of `{\\rm SL}_2(\\ZZ)`\n```\n\nin `arithgroup.rst`.",
+    "body": "On the `\\ZZ` in `arithgroup.tex`:  It seems the problem stems from `\\`@`title` in\n\n```\n    \\ifsphinxpdfoutput\n      \\begingroup\n      % This \\def is required to deal with multi-line authors; it               \n      % changes \\\\ to ', ' (comma-space), making it pass muster for             \n      % generating document info in the PDF file.                               \n      \\def\\\\{, }\n      \\pdfinfo{\n        /Author (\\@author)\n        /Title (\\@title)\n      }\n      \\endgroup\n    \\fi\n```\nin Sphinx's `manual.cls`.  For some reason, the `\\math*` font commands do not work in this context.  I gather that `\\mathbf` is preferred, but one workaround is to use\n\n```\nArithmetic Subgroups of `{\\rm SL}_2({\\bf Z})`\n```\nin place of \n\n```\nArithmetic Subgroups of `{\\rm SL}_2(\\ZZ)`\n```\nin `arithgroup.rst`.",
     "created_at": "2009-09-11T08:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -121,19 +121,16 @@ On the `\ZZ` in `arithgroup.tex`:  It seems the problem stems from `\`@`title` i
       \endgroup
     \fi
 ```
-
 in Sphinx's `manual.cls`.  For some reason, the `\math*` font commands do not work in this context.  I gather that `\mathbf` is preferred, but one workaround is to use
 
 ```
 Arithmetic Subgroups of `{\rm SL}_2({\bf Z})`
 ```
-
 in place of 
 
 ```
 Arithmetic Subgroups of `{\rm SL}_2(\ZZ)`
 ```
-
 in `arithgroup.rst`.
 
 
@@ -163,7 +160,7 @@ Another approach.  Depends on #7549.  Still experimental.  This patch only.  sag
 archive/issue_comments_052465.json:
 ```json
 {
-    "body": "The [attachment:trac_6495-reference_breakup.patch new patch] may make it possible to build and update reference manual chapters semi-independently.  I think we can use the [intersphinx extension](http://sphinx.pocoo.org/ext/intersphinx.html) to fix the cross-chapter references.  But we'll need to build the manual twice, a la LaTeX.\n\nTo build just a chapter, try, e.g.,\n\n```\nsage -docbuild reference/algebras html -juiv3\n```\n\n\nStill to do:\n\n* Make a combined index page and search page.\n* Check that PDF generation works.\n* Combine chapter PDF files into one large [optional] PDF file (with [pdfjam's](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) pdfjoin)?\n* Use a specific LaTeX doc title in each `conf.py`.\n* Fix the \"Arithmetic Subgroups\" heading on the top-level page.\n* Use a visual, 2D layout for the top-level page?  Group by general area?  Add icons?\n* Get a reply from [sphinx-dev](http://groups.google.com/group/sphinx-dev/browse_thread/thread/c8e6f0683c65930a) about making relative paths work.\n* Build docs in parallel (cf. #6255) with [multiprocessing](http://docs.python.org/library/multiprocessing.html)?\n* Replace the \"website\" PDF link?\n* User-friendliness improvements.\n* Encourage more compact chapters?  It seems that \"Combinatorics\" takes the most time and memory.\n* ...",
+    "body": "The [attachment:trac_6495-reference_breakup.patch new patch] may make it possible to build and update reference manual chapters semi-independently.  I think we can use the [intersphinx extension](http://sphinx.pocoo.org/ext/intersphinx.html) to fix the cross-chapter references.  But we'll need to build the manual twice, a la LaTeX.\n\nTo build just a chapter, try, e.g.,\n\n```\nsage -docbuild reference/algebras html -juiv3\n```\n\nStill to do:\n\n* Make a combined index page and search page.\n* Check that PDF generation works.\n* Combine chapter PDF files into one large [optional] PDF file (with [pdfjam's](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) pdfjoin)?\n* Use a specific LaTeX doc title in each `conf.py`.\n* Fix the \"Arithmetic Subgroups\" heading on the top-level page.\n* Use a visual, 2D layout for the top-level page?  Group by general area?  Add icons?\n* Get a reply from [sphinx-dev](http://groups.google.com/group/sphinx-dev/browse_thread/thread/c8e6f0683c65930a) about making relative paths work.\n* Build docs in parallel (cf. #6255) with [multiprocessing](http://docs.python.org/library/multiprocessing.html)?\n* Replace the \"website\" PDF link?\n* User-friendliness improvements.\n* Encourage more compact chapters?  It seems that \"Combinatorics\" takes the most time and memory.\n* ...",
     "created_at": "2009-11-29T19:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -179,7 +176,6 @@ To build just a chapter, try, e.g.,
 ```
 sage -docbuild reference/algebras html -juiv3
 ```
-
 
 Still to do:
 
@@ -317,7 +313,7 @@ Sphinx caches "foreign" object inventories in a document's `environment.pickle`.
 archive/issue_comments_052472.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n> Sphinx caches \"foreign\" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.\nAnother [sphinx-dev query](http://groups.google.com/group/sphinx-dev/browse_thread/thread/7c0238fe2b8b8b56/e0969058c69b65de?#e0969058c69b65de).",
+    "body": "Replying to [comment:9 mpatel]:\n> Sphinx caches \"foreign\" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.\n\nAnother [sphinx-dev query](http://groups.google.com/group/sphinx-dev/browse_thread/thread/7c0238fe2b8b8b56/e0969058c69b65de?#e0969058c69b65de).",
     "created_at": "2009-12-06T00:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -328,6 +324,7 @@ archive/issue_comments_052472.json:
 
 Replying to [comment:9 mpatel]:
 > Sphinx caches "foreign" object inventories in a document's `environment.pickle`.  These now use a lot of disk space.
+
 Another [sphinx-dev query](http://groups.google.com/group/sphinx-dev/browse_thread/thread/7c0238fe2b8b8b56/e0969058c69b65de?#e0969058c69b65de).
 
 
@@ -403,7 +400,7 @@ archive/issue_events_015334.json:
 archive/issue_comments_052475.json:
 ```json
 {
-    "body": "Replying to [comment:13 vbraun]:\n> \n> I tried the patch on Sage-4.7.1.alpha4 without any other patches applied:\n>   * Only the main page has proper css. For example, `html/en/reference/cmd/index.html` refers to `_static/sage.css` but the correct path would be `../_static/sage.css`.\n\nThis was a mistake in the previous version: it was supposed to create a link from `reference/_static` to `reference/cmd/_static`.  Now it should work.\n\n>   * patch conflicts with #11251 (todo extension). Given that the latter is already positively reviewed, maybe this ticket could be rebased on top of it?\n\nGood point.  This raises another problem: intersphinx doesn't easily pass todo lists between different documents, so I don't know how to get a master todo list for the Sage library.  Right now, I've put the todolist for each module after its table of contents.  I think combinat is the only module with any actual to do elements.\n\n>   * During the sage build, I think we should then run the docbuilder twice for the reference manual. Perhaps this should always be done for `sage -docbuild all`. \n\nDone: `sage -docbuild all` now builds the reference manual twice.  I also added a few print statements to the docbuild process.\n\n>   * Can we make output less verbose? The whole intersphinx output scrolled forever off my screen. Ideally, an interspinx failure to find an inventory file would only add one extra line at the end of the build along the lines of \"You should re-run docbuild to get references right.\"\n\nI've tried to do this when doing `sage -docbuild all` and not in general, but it may be suppressing too much output.  (In the first pass, all warnings are suppressed, including intersphinx warnings, and in the second pass, any warnings should be printed.  But in the second pass, it's just rewriting output, taking intersphinx links into account -- it's not reading the sources a second time, so it doesn't produce warnings about missing bibliographic references.)\n\nOther issues:\n\n- In PDF output, this produces one PDF file for each module, but there is no \"master\" file linking to them. I hope we can create one. Should it be an html file or a PDF file?\n\n- We could perhaps speed things up more by breaking the `combinat` module, which is by far the largest, into several pieces.  This can happen on another ticket.\n\n- I've reorganized the main index for the reference manual, grouping modules together by topic.  I hope it's easier to find things this way.  I wonder if we can get intersphinx to produce a master index for all of the documents...\n\n- in the old version, at least on my computer, when I clicked on the Sage logo in the top left corner, it wasn't taking me to the right place.  I've fixed that.  Along the same lines, with the new reorganization, the other links on the top line look a little funny to me in the reference manual.  They looked worse before and I've tried to clean them up, but maybe they could use more work?",
+    "body": "Replying to [comment:13 vbraun]:\n> \n> I tried the patch on Sage-4.7.1.alpha4 without any other patches applied:\n> * Only the main page has proper css. For example, `html/en/reference/cmd/index.html` refers to `_static/sage.css` but the correct path would be `../_static/sage.css`.\n\n\nThis was a mistake in the previous version: it was supposed to create a link from `reference/_static` to `reference/cmd/_static`.  Now it should work.\n\n>   * patch conflicts with #11251 (todo extension). Given that the latter is already positively reviewed, maybe this ticket could be rebased on top of it?\n\n\nGood point.  This raises another problem: intersphinx doesn't easily pass todo lists between different documents, so I don't know how to get a master todo list for the Sage library.  Right now, I've put the todolist for each module after its table of contents.  I think combinat is the only module with any actual to do elements.\n\n>   * During the sage build, I think we should then run the docbuilder twice for the reference manual. Perhaps this should always be done for `sage -docbuild all`. \n\n\nDone: `sage -docbuild all` now builds the reference manual twice.  I also added a few print statements to the docbuild process.\n\n>   * Can we make output less verbose? The whole intersphinx output scrolled forever off my screen. Ideally, an interspinx failure to find an inventory file would only add one extra line at the end of the build along the lines of \"You should re-run docbuild to get references right.\"\n\n\nI've tried to do this when doing `sage -docbuild all` and not in general, but it may be suppressing too much output.  (In the first pass, all warnings are suppressed, including intersphinx warnings, and in the second pass, any warnings should be printed.  But in the second pass, it's just rewriting output, taking intersphinx links into account -- it's not reading the sources a second time, so it doesn't produce warnings about missing bibliographic references.)\n\nOther issues:\n\n- In PDF output, this produces one PDF file for each module, but there is no \"master\" file linking to them. I hope we can create one. Should it be an html file or a PDF file?\n\n- We could perhaps speed things up more by breaking the `combinat` module, which is by far the largest, into several pieces.  This can happen on another ticket.\n\n- I've reorganized the main index for the reference manual, grouping modules together by topic.  I hope it's easier to find things this way.  I wonder if we can get intersphinx to produce a master index for all of the documents...\n\n- in the old version, at least on my computer, when I clicked on the Sage logo in the top left corner, it wasn't taking me to the right place.  I've fixed that.  Along the same lines, with the new reorganization, the other links on the top line look a little funny to me in the reference manual.  They looked worse before and I've tried to clean them up, but maybe they could use more work?",
     "created_at": "2011-07-08T17:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -415,19 +412,23 @@ archive/issue_comments_052475.json:
 Replying to [comment:13 vbraun]:
 > 
 > I tried the patch on Sage-4.7.1.alpha4 without any other patches applied:
->   * Only the main page has proper css. For example, `html/en/reference/cmd/index.html` refers to `_static/sage.css` but the correct path would be `../_static/sage.css`.
+> * Only the main page has proper css. For example, `html/en/reference/cmd/index.html` refers to `_static/sage.css` but the correct path would be `../_static/sage.css`.
+
 
 This was a mistake in the previous version: it was supposed to create a link from `reference/_static` to `reference/cmd/_static`.  Now it should work.
 
 >   * patch conflicts with #11251 (todo extension). Given that the latter is already positively reviewed, maybe this ticket could be rebased on top of it?
 
+
 Good point.  This raises another problem: intersphinx doesn't easily pass todo lists between different documents, so I don't know how to get a master todo list for the Sage library.  Right now, I've put the todolist for each module after its table of contents.  I think combinat is the only module with any actual to do elements.
 
 >   * During the sage build, I think we should then run the docbuilder twice for the reference manual. Perhaps this should always be done for `sage -docbuild all`. 
 
+
 Done: `sage -docbuild all` now builds the reference manual twice.  I also added a few print statements to the docbuild process.
 
 >   * Can we make output less verbose? The whole intersphinx output scrolled forever off my screen. Ideally, an interspinx failure to find an inventory file would only add one extra line at the end of the build along the lines of "You should re-run docbuild to get references right."
+
 
 I've tried to do this when doing `sage -docbuild all` and not in general, but it may be suppressing too much output.  (In the first pass, all warnings are suppressed, including intersphinx warnings, and in the second pass, any warnings should be printed.  But in the second pass, it's just rewriting output, taking intersphinx links into account -- it's not reading the sources a second time, so it doesn't produce warnings about missing bibliographic references.)
 
@@ -504,7 +505,7 @@ Okay, so this is not the most elegant solution, but in the most recent patch, in
 archive/issue_comments_052479.json:
 ```json
 {
-    "body": "Here's a new version; the only difference is this change to SAGE_ROOT/devel/sage/spkg-dist:\n\n```diff\ndiff --git a/spkg-dist b/spkg-dist\n--- a/spkg-dist\n+++ b/spkg-dist\n@@ -38,15 +38,23 @@ fi\n \n # Remove the .cython_hash file, since including this in the bdist will\n # completely break \"sage -br\". \n-# Also, do not distribute these build files (.os and .os); \n+# Also, do not distribute these build files (.so and .os);\n # it wastes space and causes problems!\n \n-rm -f .cython_hash c_lib/*.so c_lib/*.os  \n+rm -f .cython_hash c_lib/*.so c_lib/*.os\n \n # Delete all the autogenerated files, since they will get created again\n # when SAGE is built or upgraded.  \n cd sage; \"$CUR\"/spkg-delauto .; cd ..\n \n+# Delete the autogenerated files in the doc directory.\n+rm -rf doc/output\n+rm -rf doc/en/reference/sage\n+rm -rf doc/en/reference/sagenb\n+rm -rf doc/en/reference/static\n+rm -rf doc/en/reference/templates\n+rm -rf doc/en/reference/*/sage sage/doc/en/reference/*/static sage/doc/en/reference/*/templates\n+\n # Create the sdist using Python's distutils.\n python setup.py sdist\n```\n\nThis makes for a slightly smaller sage-....spkg file, and more importantly, if the old autogenerated files are there, they can confuse the docbuild process.",
+    "body": "Here's a new version; the only difference is this change to SAGE_ROOT/devel/sage/spkg-dist:\n\n```diff\ndiff --git a/spkg-dist b/spkg-dist\n--- a/spkg-dist\n+++ b/spkg-dist\n@@ -38,15 +38,23 @@ fi\n \n # Remove the .cython_hash file, since including this in the bdist will\n # completely break \"sage -br\". \n-# Also, do not distribute these build files (.os and .os); \n+# Also, do not distribute these build files (.so and .os);\n # it wastes space and causes problems!\n \n-rm -f .cython_hash c_lib/*.so c_lib/*.os  \n+rm -f .cython_hash c_lib/*.so c_lib/*.os\n \n # Delete all the autogenerated files, since they will get created again\n # when SAGE is built or upgraded.  \n cd sage; \"$CUR\"/spkg-delauto .; cd ..\n \n+# Delete the autogenerated files in the doc directory.\n+rm -rf doc/output\n+rm -rf doc/en/reference/sage\n+rm -rf doc/en/reference/sagenb\n+rm -rf doc/en/reference/static\n+rm -rf doc/en/reference/templates\n+rm -rf doc/en/reference/*/sage sage/doc/en/reference/*/static sage/doc/en/reference/*/templates\n+\n # Create the sdist using Python's distutils.\n python setup.py sdist\n```\nThis makes for a slightly smaller sage-....spkg file, and more importantly, if the old autogenerated files are there, they can confuse the docbuild process.",
     "created_at": "2011-07-13T23:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -545,7 +546,6 @@ diff --git a/spkg-dist b/spkg-dist
  # Create the sdist using Python's distutils.
  python setup.py sdist
 ```
-
 This makes for a slightly smaller sage-....spkg file, and more importantly, if the old autogenerated files are there, they can confuse the docbuild process.
 
 
@@ -555,7 +555,7 @@ This makes for a slightly smaller sage-....spkg file, and more importantly, if t
 archive/issue_comments_052480.json:
 ```json
 {
-    "body": "Some recent timings on sage.math.  \n\nBefore the patch:\n\n```\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference html\n...\nreal\t17m49.313s\nuser\t16m57.530s\nsys\t0m45.390s\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference pdf\n...\nreal\t26m3.623s\nuser\t24m40.290s\nsys\t0m43.030s\n```\n\nAfter the patch:\n\n```\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference html\n...\nreal\t2m30.092s\nuser\t10m34.900s\nsys\t1m12.590s\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference pdf\n...\nreal\t3m35.064s\nuser\t15m49.790s\nsys\t1m11.070s\n```\n",
+    "body": "Some recent timings on sage.math.  \n\nBefore the patch:\n\n```\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference html\n...\nreal\t17m49.313s\nuser\t16m57.530s\nsys\t0m45.390s\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference pdf\n...\nreal\t26m3.623s\nuser\t24m40.290s\nsys\t0m43.030s\n```\nAfter the patch:\n\n```\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference html\n...\nreal\t2m30.092s\nuser\t10m34.900s\nsys\t1m12.590s\n\n$ rm -rf SAGE_ROOT/devel/sage/doc/output\n$ time sage -docbuild reference pdf\n...\nreal\t3m35.064s\nuser\t15m49.790s\nsys\t1m11.070s\n```",
     "created_at": "2011-07-13T23:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -583,7 +583,6 @@ real	26m3.623s
 user	24m40.290s
 sys	0m43.030s
 ```
-
 After the patch:
 
 ```
@@ -605,13 +604,12 @@ sys	1m11.070s
 
 
 
-
 ---
 
 archive/issue_comments_052481.json:
 ```json
 {
-    "body": "Question: if you type \"sage -docbuild -D\" now, it says\n\n```\n$ sage -docbuild -D\nDOCUMENTs:\n    de/tutorial          a_tour_of_sage       bordeaux_2008        \n    constructions        developer            faq                  \n    installation         numerical_sage       reference            \n    thematic_tutorials   tutorial             website              \n    fr/a_tour_of_sage    fr/tutorial          ru/tutorial          \n    all  (!)             \n(!) Builds everything.\n```\n\nShould we also mention \"reference/MODULE\" as a valid target?",
+    "body": "Question: if you type \"sage -docbuild -D\" now, it says\n\n```\n$ sage -docbuild -D\nDOCUMENTs:\n    de/tutorial          a_tour_of_sage       bordeaux_2008        \n    constructions        developer            faq                  \n    installation         numerical_sage       reference            \n    thematic_tutorials   tutorial             website              \n    fr/a_tour_of_sage    fr/tutorial          ru/tutorial          \n    all  (!)             \n(!) Builds everything.\n```\nShould we also mention \"reference/MODULE\" as a valid target?",
     "created_at": "2011-07-13T23:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -633,7 +631,6 @@ DOCUMENTs:
     all  (!)             
 (!) Builds everything.
 ```
-
 Should we also mention "reference/MODULE" as a valid target?
 
 
@@ -735,7 +732,7 @@ Could you post a link to the generated docs so people could browse them?
 archive/issue_comments_052487.json:
 ```json
 {
-    "body": "Replying to [comment:24 robertwb]:\n> Could you post a link to the generated docs so people could browse them? \n\nGood idea:\n\n- [html version](http://sage.math.washington.edu/home/palmieri/misc/6495/output/html/en/reference/)\n- [PDF version](http://sage.math.washington.edu/home/palmieri/misc/6495/output/pdf/en/reference/) (this points to an html document which has links to the pieces of the reference manual in PDF format)",
+    "body": "Replying to [comment:24 robertwb]:\n> Could you post a link to the generated docs so people could browse them? \n\n\nGood idea:\n\n- [html version](http://sage.math.washington.edu/home/palmieri/misc/6495/output/html/en/reference/)\n- [PDF version](http://sage.math.washington.edu/home/palmieri/misc/6495/output/pdf/en/reference/) (this points to an html document which has links to the pieces of the reference manual in PDF format)",
     "created_at": "2011-07-26T17:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -746,6 +743,7 @@ archive/issue_comments_052487.json:
 
 Replying to [comment:24 robertwb]:
 > Could you post a link to the generated docs so people could browse them? 
+
 
 Good idea:
 
@@ -795,7 +793,7 @@ Testing this against sage-4.8.alpha1 + #10620...
 archive/issue_comments_052490.json:
 ```json
 {
-    "body": "Against sage-4.8.alpha1:\n\n```\npatching file doc/en/reference/games/index.rst\nHunk #1 FAILED at 6\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/games/index.rst.rej\npatching file doc/en/reference/graphs/index.rst\nHunk #1 succeeded at 52 with fuzz 1 (offset 2 lines).\nabort: patch failed to apply\n```\n",
+    "body": "Against sage-4.8.alpha1:\n\n```\npatching file doc/en/reference/games/index.rst\nHunk #1 FAILED at 6\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/games/index.rst.rej\npatching file doc/en/reference/graphs/index.rst\nHunk #1 succeeded at 52 with fuzz 1 (offset 2 lines).\nabort: patch failed to apply\n```",
     "created_at": "2011-11-11T23:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -814,7 +812,6 @@ patching file doc/en/reference/graphs/index.rst
 Hunk #1 succeeded at 52 with fuzz 1 (offset 2 lines).
 abort: patch failed to apply
 ```
-
 
 
 
@@ -897,7 +894,7 @@ By the way, the default in the new patch is to build serially.  I've also added 
 archive/issue_comments_052495.json:
 ```json
 {
-    "body": "Some other possible changes: in the parallel-building code (from builder.py)\n\n```python\n            from multiprocessing import Pool, cpu_count\n            max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n            pool = Pool(min(max_cpus, cpu_count()))\n```\n\nperhaps change \"else 1\" to \"else 2\"?  As it is, building serially (with max_cpus set to 1) is slower than the current system, because in the new system, the manual has to be built twice to resolve cross-references.\n\nWe could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.",
+    "body": "Some other possible changes: in the parallel-building code (from builder.py)\n\n```python\n            from multiprocessing import Pool, cpu_count\n            max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n            pool = Pool(min(max_cpus, cpu_count()))\n```\nperhaps change \"else 1\" to \"else 2\"?  As it is, building serially (with max_cpus set to 1) is slower than the current system, because in the new system, the manual has to be built twice to resolve cross-references.\n\nWe could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.",
     "created_at": "2011-11-12T03:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -913,7 +910,6 @@ Some other possible changes: in the parallel-building code (from builder.py)
             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1
             pool = Pool(min(max_cpus, cpu_count()))
 ```
-
 perhaps change "else 1" to "else 2"?  As it is, building serially (with max_cpus set to 1) is slower than the current system, because in the new system, the manual has to be built twice to resolve cross-references.
 
 We could also change "pool" to just "Pool(cpu_count())" or "Pool(int(1.5 * cpu_count()))" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.
@@ -925,7 +921,7 @@ We could also change "pool" to just "Pool(cpu_count())" or "Pool(int(1.5 * cpu_c
 archive/issue_comments_052496.json:
 ```json
 {
-    "body": "Replying to [comment:34 jhpalmieri]:\n> Some other possible changes: in the parallel-building code (from builder.py)\n> {{{\n> #!python\n>             from multiprocessing import Pool, cpu_count\n>             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n>             pool = Pool(min(max_cpus, cpu_count()))\n> }}}\n> perhaps change \"else 1\" to \"else 2\"?\nWhy?  It wouldn't make sense to build with more processes than there are CPUs.\n\n> We could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.\nWhy?  It wouldn't make sense to build with more processes than there are CPUs.\n\nAs I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.",
+    "body": "Replying to [comment:34 jhpalmieri]:\n> Some other possible changes: in the parallel-building code (from builder.py)\n> \n> ```\n> #!python\n>             from multiprocessing import Pool, cpu_count\n>             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n>             pool = Pool(min(max_cpus, cpu_count()))\n> ```\n> perhaps change \"else 1\" to \"else 2\"?\n\nWhy?  It wouldn't make sense to build with more processes than there are CPUs.\n\n> We could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.\n\nWhy?  It wouldn't make sense to build with more processes than there are CPUs.\n\nAs I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.",
     "created_at": "2011-11-12T07:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -936,16 +932,19 @@ archive/issue_comments_052496.json:
 
 Replying to [comment:34 jhpalmieri]:
 > Some other possible changes: in the parallel-building code (from builder.py)
-> {{{
+> 
+> ```
 > #!python
 >             from multiprocessing import Pool, cpu_count
 >             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1
 >             pool = Pool(min(max_cpus, cpu_count()))
-> }}}
+> ```
 > perhaps change "else 1" to "else 2"?
+
 Why?  It wouldn't make sense to build with more processes than there are CPUs.
 
 > We could also change "pool" to just "Pool(cpu_count())" or "Pool(int(1.5 * cpu_count()))" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.
+
 Why?  It wouldn't make sense to build with more processes than there are CPUs.
 
 As I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.
@@ -957,7 +956,7 @@ As I mentioned on sage-devel, I don't like that there is an option to doctest in
 archive/issue_comments_052497.json:
 ```json
 {
-    "body": "Replying to [comment:35 jdemeyer]:\n> Replying to [comment:34 jhpalmieri]:\n> > Some other possible changes: in the parallel-building code (from builder.py)\n> > {{{\n> > #!python\n> >             from multiprocessing import Pool, cpu_count\n> >             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n> >             pool = Pool(min(max_cpus, cpu_count()))\n> > }}}\n> > perhaps change \"else 1\" to \"else 2\"?\n> Why?  It wouldn't make sense to build with more processes than there are CPUs.\n\nThis version still does `min(max_cpus, cpu_count())`, so it won't use more processes than there are CPUs.\n\n> > We could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.\n> Why?  It wouldn't make sense to build with more processes than there are CPUs.\n\nI see lots of suggestions on the internet to set `MAKE=make -jN` where `N` is 1.5 * (the number of cpus), or 1 or 2 more than the number of cpus.  Why not here as well?\n\n> As I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.\n\nI think maybe two variables: one (`SAGE_PARALLEL`) to enable parallel processes, one (`SAGE_NUM_THREADS`) to determine the maximum number of processes.  The first could be \"no\" by default, and the second could be \"0\" by default, meaning use `cpu_count()` or `min(8, cpu_count())` or some other variant on this, the way we do with `NUM_THREADS` in `Makefile` and `sage-ptest`.  Then it's easy to turn on and off without remembering how many cores your machine has.",
+    "body": "Replying to [comment:35 jdemeyer]:\n> Replying to [comment:34 jhpalmieri]:\n> > Some other possible changes: in the parallel-building code (from builder.py)\n> > \n> > ```\n> > #!python\n> >             from multiprocessing import Pool, cpu_count\n> >             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1\n> >             pool = Pool(min(max_cpus, cpu_count()))\n> > ```\n> > perhaps change \"else 1\" to \"else 2\"?\n\n> Why?  It wouldn't make sense to build with more processes than there are CPUs.\n\nThis version still does `min(max_cpus, cpu_count())`, so it won't use more processes than there are CPUs.\n\n> > We could also change \"pool\" to just \"Pool(cpu_count())\" or \"Pool(int(1.5 * cpu_count()))\" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.\n\n> Why?  It wouldn't make sense to build with more processes than there are CPUs.\n\nI see lots of suggestions on the internet to set `MAKE=make -jN` where `N` is 1.5 * (the number of cpus), or 1 or 2 more than the number of cpus.  Why not here as well?\n\n> As I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.\n\n\nI think maybe two variables: one (`SAGE_PARALLEL`) to enable parallel processes, one (`SAGE_NUM_THREADS`) to determine the maximum number of processes.  The first could be \"no\" by default, and the second could be \"0\" by default, meaning use `cpu_count()` or `min(8, cpu_count())` or some other variant on this, the way we do with `NUM_THREADS` in `Makefile` and `sage-ptest`.  Then it's easy to turn on and off without remembering how many cores your machine has.",
     "created_at": "2011-11-12T15:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -969,23 +968,27 @@ archive/issue_comments_052497.json:
 Replying to [comment:35 jdemeyer]:
 > Replying to [comment:34 jhpalmieri]:
 > > Some other possible changes: in the parallel-building code (from builder.py)
-> > {{{
+> > 
+> > ```
 > > #!python
 > >             from multiprocessing import Pool, cpu_count
 > >             max_cpus = 8 if SAGE_PARALLEL_DOCBUILD else 1
 > >             pool = Pool(min(max_cpus, cpu_count()))
-> > }}}
+> > ```
 > > perhaps change "else 1" to "else 2"?
+
 > Why?  It wouldn't make sense to build with more processes than there are CPUs.
 
 This version still does `min(max_cpus, cpu_count())`, so it won't use more processes than there are CPUs.
 
 > > We could also change "pool" to just "Pool(cpu_count())" or "Pool(int(1.5 * cpu_count()))" or something like that, eliminating the minimum of 8 and possibly increasing the maximum.
+
 > Why?  It wouldn't make sense to build with more processes than there are CPUs.
 
 I see lots of suggestions on the internet to set `MAKE=make -jN` where `N` is 1.5 * (the number of cpus), or 1 or 2 more than the number of cpus.  Why not here as well?
 
 > As I mentioned on sage-devel, I don't like that there is an option to doctest in parallel, a different option to build the docs in parallel, a different option to build in parallel...  I would say: let there be one environment variable `SAGE_NUM_PROCESSES` or something like that and use that for everything.
+
 
 I think maybe two variables: one (`SAGE_PARALLEL`) to enable parallel processes, one (`SAGE_NUM_THREADS`) to determine the maximum number of processes.  The first could be "no" by default, and the second could be "0" by default, meaning use `cpu_count()` or `min(8, cpu_count())` or some other variant on this, the way we do with `NUM_THREADS` in `Makefile` and `sage-ptest`.  Then it's easy to turn on and off without remembering how many cores your machine has.
 
@@ -1014,7 +1017,7 @@ Why not exactly one environment variable "MAKE" which gets set to "make -jN" for
 archive/issue_comments_052499.json:
 ```json
 {
-    "body": "Replying to [comment:37 was]:\n> Why not exactly one environment variable \"MAKE\" which gets set to \"make -jN\" for some N, and that is it?\n\nThat's an interesting idea.  See #12016.",
+    "body": "Replying to [comment:37 was]:\n> Why not exactly one environment variable \"MAKE\" which gets set to \"make -jN\" for some N, and that is it?\n\n\nThat's an interesting idea.  See #12016.",
     "created_at": "2011-11-12T20:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1025,6 +1028,7 @@ archive/issue_comments_052499.json:
 
 Replying to [comment:37 was]:
 > Why not exactly one environment variable "MAKE" which gets set to "make -jN" for some N, and that is it?
+
 
 That's an interesting idea.  See #12016.
 
@@ -1053,7 +1057,7 @@ Here's a new patch which uses the setting of `MAKE` to build docs in parallel (o
 archive/issue_comments_052501.json:
 ```json
 {
-    "body": "Replying to [comment:39 jhpalmieri]:\n> For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.\n\nIndeed!",
+    "body": "Replying to [comment:39 jhpalmieri]:\n> For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.\n\n\nIndeed!",
     "created_at": "2011-11-14T08:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1065,6 +1069,7 @@ archive/issue_comments_052501.json:
 Replying to [comment:39 jhpalmieri]:
 > For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.
 
+
 Indeed!
 
 
@@ -1074,7 +1079,7 @@ Indeed!
 archive/issue_comments_052502.json:
 ```json
 {
-    "body": "Replying to [comment:39 jhpalmieri]:\n> Here's a new patch which uses the setting of `MAKE` to build docs in parallel (or not).  It's very similar to the code in `sage-ptest` from #12016, except that when you run `sage-ptest`, the assumption should be that you want to work in parallel, so the default number of threads (if MAKE is not set) is min(8, #cpus).  For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.\n\nSo then we don't need the environment variable `SAGE_PARALLEL_DOCBUILD`, nor the `Makefile` patch, anymore.",
+    "body": "Replying to [comment:39 jhpalmieri]:\n> Here's a new patch which uses the setting of `MAKE` to build docs in parallel (or not).  It's very similar to the code in `sage-ptest` from #12016, except that when you run `sage-ptest`, the assumption should be that you want to work in parallel, so the default number of threads (if MAKE is not set) is min(8, #cpus).  For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.\n\n\nSo then we don't need the environment variable `SAGE_PARALLEL_DOCBUILD`, nor the `Makefile` patch, anymore.",
     "created_at": "2011-11-14T09:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1085,6 +1090,7 @@ archive/issue_comments_052502.json:
 
 Replying to [comment:39 jhpalmieri]:
 > Here's a new patch which uses the setting of `MAKE` to build docs in parallel (or not).  It's very similar to the code in `sage-ptest` from #12016, except that when you run `sage-ptest`, the assumption should be that you want to work in parallel, so the default number of threads (if MAKE is not set) is min(8, #cpus).  For doc building, we shouldn't assume parallel building by default, I guess, so the default number of threads is 1.
+
 
 So then we don't need the environment variable `SAGE_PARALLEL_DOCBUILD`, nor the `Makefile` patch, anymore.
 
@@ -1113,7 +1119,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052504.json:
 ```json
 {
-    "body": "With sage-4.8.alpha1, I get\n\n```\nBuilding reference manual, first pass.\n\nsphinx-build -b html -d /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/doctrees/en/reference   -A hide_pdf_links=1 -Q  /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/en/reference /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/html/en/reference\nBuild finished.  The built documents can be found in /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/html/en/reference\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 1332, in <module>\n    getattr(get_builder(name), type)()\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 288, in _wrapper\n    getattr(get_builder(document), 'html')(*args, **kwds)\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 405, in _wrapper\n    N = re.search('(-j|--jobs[=]?)\\s*([0-9]*)', MAKE).groups()[1]\nUnboundLocalError: local variable 're' referenced before assignment\nmake: *** [doc-html] Error 1\n```\n",
+    "body": "With sage-4.8.alpha1, I get\n\n```\nBuilding reference manual, first pass.\n\nsphinx-build -b html -d /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/doctrees/en/reference   -A hide_pdf_links=1 -Q  /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/en/reference /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/html/en/reference\nBuild finished.  The built documents can be found in /mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/output/html/en/reference\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 1332, in <module>\n    getattr(get_builder(name), type)()\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 288, in _wrapper\n    getattr(get_builder(document), 'html')(*args, **kwds)\n  File \"/mnt/usb1/scratch/jdemeyer/merger/sage-4.8.alpha2/devel/sage/doc/common/builder.py\", line 405, in _wrapper\n    N = re.search('(-j|--jobs[=]?)\\s*([0-9]*)', MAKE).groups()[1]\nUnboundLocalError: local variable 're' referenced before assignment\nmake: *** [doc-html] Error 1\n```",
     "created_at": "2011-11-14T11:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1142,13 +1148,12 @@ make: *** [doc-html] Error 1
 
 
 
-
 ---
 
 archive/issue_comments_052505.json:
 ```json
 {
-    "body": "> So then we don't need the environment variable SAGE_PARALLEL_DOCBUILD, nor the Makefile patch, anymore.\n\nRight, fixed.  Also, I added `import re` into builder.py; this should fix the other problem as well.",
+    "body": "> So then we don't need the environment variable SAGE_PARALLEL_DOCBUILD, nor the Makefile patch, anymore.\n\n\nRight, fixed.  Also, I added `import re` into builder.py; this should fix the other problem as well.",
     "created_at": "2011-11-14T20:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1158,6 +1163,7 @@ archive/issue_comments_052505.json:
 ```
 
 > So then we don't need the environment variable SAGE_PARALLEL_DOCBUILD, nor the Makefile patch, anymore.
+
 
 Right, fixed.  Also, I added `import re` into builder.py; this should fix the other problem as well.
 
@@ -1264,7 +1270,7 @@ Changing keywords from "sd32" to "".
 archive/issue_comments_052511.json:
 ```json
 {
-    "body": "Rebased to 5.0.beta13, but the intersphinx stuff needs fixing (the use of intersphinx here conflicts with the changes in #9128, and I haven't fixed this).  Part 1 of the patch was mostly generated automatically using the attached script. After running the script, I removed lines like `.. _ch:algebras:` (from algebras/index.rst, in this case) by hand.\n\nReplying to [comment:45 jdemeyer]:\n> Regarding #12016: you should simply use the value of `SAGE_NUM_THREADS`, nothing fancier than that.\n\nOkay, done.\n\n> Regarding `spkg-dist`: this is essentially a duplicate of #12081 and #12086, so this patch should be removed.  In any case, removing the files from `MANIFEST.in` is the proper way of dealing with this, as opposed to removing the files before packaging the repository.  Ideally, `sage-sdist` should not change the current Sage source tree at all.\n\nI removed that part of the patch.\n\n> What's the rationale for adding all these files to `doc/common/themes/sageref`?\n\nThe new structure of the reference manual, in particular the new directory structure, means we need new templates for the files coming from `reference/algebras/index.rst`, as opposed to the old templates, which work for the main file `reference/index.rst`.\n\n> Instead of always building twice, would it be possible to **detect** whether the manual has already been built once.  For example, if I want both the HTML and PDF documentation, the current patch would do 4 passes, even if 3 would be sufficient.\n\nI don't know how to do this.",
+    "body": "Rebased to 5.0.beta13, but the intersphinx stuff needs fixing (the use of intersphinx here conflicts with the changes in #9128, and I haven't fixed this).  Part 1 of the patch was mostly generated automatically using the attached script. After running the script, I removed lines like `.. _ch:algebras:` (from algebras/index.rst, in this case) by hand.\n\nReplying to [comment:45 jdemeyer]:\n> Regarding #12016: you should simply use the value of `SAGE_NUM_THREADS`, nothing fancier than that.\n\n\nOkay, done.\n\n> Regarding `spkg-dist`: this is essentially a duplicate of #12081 and #12086, so this patch should be removed.  In any case, removing the files from `MANIFEST.in` is the proper way of dealing with this, as opposed to removing the files before packaging the repository.  Ideally, `sage-sdist` should not change the current Sage source tree at all.\n\n\nI removed that part of the patch.\n\n> What's the rationale for adding all these files to `doc/common/themes/sageref`?\n\n\nThe new structure of the reference manual, in particular the new directory structure, means we need new templates for the files coming from `reference/algebras/index.rst`, as opposed to the old templates, which work for the main file `reference/index.rst`.\n\n> Instead of always building twice, would it be possible to **detect** whether the manual has already been built once.  For example, if I want both the HTML and PDF documentation, the current patch would do 4 passes, even if 3 would be sufficient.\n\n\nI don't know how to do this.",
     "created_at": "2012-04-18T04:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1278,17 +1284,21 @@ Rebased to 5.0.beta13, but the intersphinx stuff needs fixing (the use of inters
 Replying to [comment:45 jdemeyer]:
 > Regarding #12016: you should simply use the value of `SAGE_NUM_THREADS`, nothing fancier than that.
 
+
 Okay, done.
 
 > Regarding `spkg-dist`: this is essentially a duplicate of #12081 and #12086, so this patch should be removed.  In any case, removing the files from `MANIFEST.in` is the proper way of dealing with this, as opposed to removing the files before packaging the repository.  Ideally, `sage-sdist` should not change the current Sage source tree at all.
+
 
 I removed that part of the patch.
 
 > What's the rationale for adding all these files to `doc/common/themes/sageref`?
 
+
 The new structure of the reference manual, in particular the new directory structure, means we need new templates for the files coming from `reference/algebras/index.rst`, as opposed to the old templates, which work for the main file `reference/index.rst`.
 
 > Instead of always building twice, would it be possible to **detect** whether the manual has already been built once.  For example, if I want both the HTML and PDF documentation, the current patch would do 4 passes, even if 3 would be sufficient.
+
 
 I don't know how to do this.
 
@@ -1317,7 +1327,7 @@ This patch would allow building the reference manual with less memory usage.  1.
 archive/issue_comments_052513.json:
 ```json
 {
-    "body": "I do get several warnings when building the HTML manual.  The following is repeated many times:\n\n```\nsphinx-build -b html -d /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/doctrees/de/tutorial   -A hide_pdf_links=1  /fast_scr\natch/jdemeyer/sage-5.0.beta13/devel/sage/doc/de/tutorial /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/de/tutorial\nRunning Sphinx v1.1.2\nloading translations [de]... done\nloading pickled environment... not yet created\nloading intersphinx inventory from /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/common/python.inv...\nloading intersphinx inventory from /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/objects.inv...\nWARNING: intersphinx inventory '/fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/objects.inv' not fetchable\ndue to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/htm\nl/en/reference/objects.inv'\nbuilding [html]: targets for 22 source files that are out of date\nupdating environment: 22 added, 0 changed, 0 removed\n[...]\nBuild finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/de/tutorial\n```\n\n\nThere are several of the form:\n\n```\nsphinx-build -b html -d /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/doctrees/en/reference/schemes   -A hide_pdf_links=1  -q  -a  /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/en/reference/schemes /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/schemes\nNone:37: WARNING: citation not found: Fulton\nBuild finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/schemes\n```\n",
+    "body": "I do get several warnings when building the HTML manual.  The following is repeated many times:\n\n```\nsphinx-build -b html -d /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/doctrees/de/tutorial   -A hide_pdf_links=1  /fast_scr\natch/jdemeyer/sage-5.0.beta13/devel/sage/doc/de/tutorial /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/de/tutorial\nRunning Sphinx v1.1.2\nloading translations [de]... done\nloading pickled environment... not yet created\nloading intersphinx inventory from /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/common/python.inv...\nloading intersphinx inventory from /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/objects.inv...\nWARNING: intersphinx inventory '/fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/objects.inv' not fetchable\ndue to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/htm\nl/en/reference/objects.inv'\nbuilding [html]: targets for 22 source files that are out of date\nupdating environment: 22 added, 0 changed, 0 removed\n[...]\nBuild finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/de/tutorial\n```\n\nThere are several of the form:\n\n```\nsphinx-build -b html -d /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/doctrees/en/reference/schemes   -A hide_pdf_links=1  -q  -a  /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/en/reference/schemes /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/schemes\nNone:37: WARNING: citation not found: Fulton\nBuild finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/schemes\n```",
     "created_at": "2012-04-18T11:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1345,7 +1355,6 @@ updating environment: 22 added, 0 changed, 0 removed
 Build finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/de/tutorial
 ```
 
-
 There are several of the form:
 
 ```
@@ -1353,7 +1362,6 @@ sphinx-build -b html -d /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/ou
 None:37: WARNING: citation not found: Fulton
 Build finished.  The built documents can be found in /fast_scratch/jdemeyer/sage-5.0.beta13/devel/sage/doc/output/html/en/reference/schemes
 ```
-
 
 
 
@@ -1439,7 +1447,7 @@ John
 archive/issue_comments_052517.json:
 ```json
 {
-    "body": "Hi John,\n\nThanks for the quick answer.\n\n> This is in pretty good shape, but it's not perfect. It undoes some of what\n> you did in #9128 (mainly because I haven't tried to rewrite the patch to do\n> it differently), and in particular, I'm not sure that the other parts of the\n> Sage documentation can use intersphinx to access information from the\n> reference manual.\n\nI'll have a look at it. Please do not hesitate to ask for some more\nexplanation on the hack I did with intersphinx. Is there a specific reason why\nyou doubt intersphinx will work for the other part of the doc ?\n\n> There are also issues with having to build the reference manual twice so\n> that all of the references are resolved. This is not ideal.\n\nIt doesn't seem to be a huge problem with LaTeX, since this never has been\nsolved since years... Though I never seen a LaTeX compilation as long as\nSage's doc.\n\n> I think that doing the reading and/or writing in parallel would be good, but\n> given the size of the reference manual, breaking it into pieces seems\n> worthwhile as well.\n\nI agree.\n\n> If the parallel reading and writing help to cut down on the memory usage,\n> which seems to be getting out of hand, then maybe that is good enough for\n> now.  (At least on sage.math, the writing part seems to take way too long,\n> so doing that in parallel might help significantly.)\n\nI don't think it will cut down memory usage in any way. I'd rather expect the\ncontrary. My solution seems to be working but since I currently for a sage for\nevery single file, a lot of time is wasted in forking. I'll try to improve it\ntomorrow.\n\n> So if you have a workable solution which accomplishes some of what is done\n> here, and perhaps does it more simply, go right ahead. I'll take a look at\n> your comments at #6255.\n\nI don't think I really will. As I said I'll probably trade speed against\nmemory usage... I'll keep you in touch.\n\nCheers,\n\nFlorent",
+    "body": "Hi John,\n\nThanks for the quick answer.\n\n> This is in pretty good shape, but it's not perfect. It undoes some of what\n> you did in #9128 (mainly because I haven't tried to rewrite the patch to do\n> it differently), and in particular, I'm not sure that the other parts of the\n> Sage documentation can use intersphinx to access information from the\n> reference manual.\n\n\nI'll have a look at it. Please do not hesitate to ask for some more\nexplanation on the hack I did with intersphinx. Is there a specific reason why\nyou doubt intersphinx will work for the other part of the doc ?\n\n> There are also issues with having to build the reference manual twice so\n> that all of the references are resolved. This is not ideal.\n\n\nIt doesn't seem to be a huge problem with LaTeX, since this never has been\nsolved since years... Though I never seen a LaTeX compilation as long as\nSage's doc.\n\n> I think that doing the reading and/or writing in parallel would be good, but\n> given the size of the reference manual, breaking it into pieces seems\n> worthwhile as well.\n\n\nI agree.\n\n> If the parallel reading and writing help to cut down on the memory usage,\n> which seems to be getting out of hand, then maybe that is good enough for\n> now.  (At least on sage.math, the writing part seems to take way too long,\n> so doing that in parallel might help significantly.)\n\n\nI don't think it will cut down memory usage in any way. I'd rather expect the\ncontrary. My solution seems to be working but since I currently for a sage for\nevery single file, a lot of time is wasted in forking. I'll try to improve it\ntomorrow.\n\n> So if you have a workable solution which accomplishes some of what is done\n> here, and perhaps does it more simply, go right ahead. I'll take a look at\n> your comments at #6255.\n\n\nI don't think I really will. As I said I'll probably trade speed against\nmemory usage... I'll keep you in touch.\n\nCheers,\n\nFlorent",
     "created_at": "2012-04-20T22:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1458,12 +1466,14 @@ Thanks for the quick answer.
 > Sage documentation can use intersphinx to access information from the
 > reference manual.
 
+
 I'll have a look at it. Please do not hesitate to ask for some more
 explanation on the hack I did with intersphinx. Is there a specific reason why
 you doubt intersphinx will work for the other part of the doc ?
 
 > There are also issues with having to build the reference manual twice so
 > that all of the references are resolved. This is not ideal.
+
 
 It doesn't seem to be a huge problem with LaTeX, since this never has been
 solved since years... Though I never seen a LaTeX compilation as long as
@@ -1473,12 +1483,14 @@ Sage's doc.
 > given the size of the reference manual, breaking it into pieces seems
 > worthwhile as well.
 
+
 I agree.
 
 > If the parallel reading and writing help to cut down on the memory usage,
 > which seems to be getting out of hand, then maybe that is good enough for
 > now.  (At least on sage.math, the writing part seems to take way too long,
 > so doing that in parallel might help significantly.)
+
 
 I don't think it will cut down memory usage in any way. I'd rather expect the
 contrary. My solution seems to be working but since I currently for a sage for
@@ -1488,6 +1500,7 @@ tomorrow.
 > So if you have a workable solution which accomplishes some of what is done
 > here, and perhaps does it more simply, go right ahead. I'll take a look at
 > your comments at #6255.
+
 
 I don't think I really will. As I said I'll probably trade speed against
 memory usage... I'll keep you in touch.
@@ -1503,7 +1516,7 @@ Florent
 archive/issue_comments_052518.json:
 ```json
 {
-    "body": "Replying to [comment:54 hivert]:\n> I don't think it will cut down memory usage in any way. I'd rather expect the\n> contrary.\nMemory usage is already too much, so anything that further increases memory usage is very bad.",
+    "body": "Replying to [comment:54 hivert]:\n> I don't think it will cut down memory usage in any way. I'd rather expect the\n> contrary.\n\nMemory usage is already too much, so anything that further increases memory usage is very bad.",
     "created_at": "2012-04-21T10:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1515,6 +1528,7 @@ archive/issue_comments_052518.json:
 Replying to [comment:54 hivert]:
 > I don't think it will cut down memory usage in any way. I'd rather expect the
 > contrary.
+
 Memory usage is already too much, so anything that further increases memory usage is very bad.
 
 
@@ -1524,7 +1538,7 @@ Memory usage is already too much, so anything that further increases memory usag
 archive/issue_comments_052519.json:
 ```json
 {
-    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:54 hivert]:\n> > I don't think it will cut down memory usage in any way. I'd rather expect the\n> > contrary.\n> Memory usage is already too much, so anything that further increases memory usage is very bad.\n\nI respectfully disagree if \n- it is optional\n- it divide by more than 10 the documentation compile time",
+    "body": "Replying to [comment:55 jdemeyer]:\n> Replying to [comment:54 hivert]:\n> > I don't think it will cut down memory usage in any way. I'd rather expect the\n> > contrary.\n\n> Memory usage is already too much, so anything that further increases memory usage is very bad.\n\nI respectfully disagree if \n- it is optional\n- it divide by more than 10 the documentation compile time",
     "created_at": "2012-04-21T11:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1537,6 +1551,7 @@ Replying to [comment:55 jdemeyer]:
 > Replying to [comment:54 hivert]:
 > > I don't think it will cut down memory usage in any way. I'd rather expect the
 > > contrary.
+
 > Memory usage is already too much, so anything that further increases memory usage is very bad.
 
 I respectfully disagree if 
@@ -1550,7 +1565,7 @@ I respectfully disagree if
 archive/issue_comments_052520.json:
 ```json
 {
-    "body": "Replying to [comment:56 hivert]:\n> Replying to [comment:55 jdemeyer]:\n> > Replying to [comment:54 hivert]:\n> > > I don't think it will cut down memory usage in any way. I'd rather expect the\n> > > contrary.\n> > Memory usage is already too much, so anything that further increases memory usage is very bad.\n\nLike adding more modules and functions to the Sage library, and rising the \"doc[test] coverage\"... ;-)\n\n\n\n\n> I respectfully disagree if \n> - it is optional\n\nThat would be fine.\n\n> - it divides by more than 10 the documentation compile time\n\nWow... :P",
+    "body": "Replying to [comment:56 hivert]:\n> Replying to [comment:55 jdemeyer]:\n> > Replying to [comment:54 hivert]:\n> > > I don't think it will cut down memory usage in any way. I'd rather expect the\n> > > contrary.\n\n> > Memory usage is already too much, so anything that further increases memory usage is very bad.\n\nLike adding more modules and functions to the Sage library, and rising the \"doc[test] coverage\"... ;-)\n\n\n\n\n> I respectfully disagree if \n> - it is optional\n\n\nThat would be fine.\n\n> - it divides by more than 10 the documentation compile time\n\n\nWow... :P",
     "created_at": "2012-04-21T13:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1564,6 +1579,7 @@ Replying to [comment:56 hivert]:
 > > Replying to [comment:54 hivert]:
 > > > I don't think it will cut down memory usage in any way. I'd rather expect the
 > > > contrary.
+
 > > Memory usage is already too much, so anything that further increases memory usage is very bad.
 
 Like adding more modules and functions to the Sage library, and rising the "doc[test] coverage"... ;-)
@@ -1574,9 +1590,11 @@ Like adding more modules and functions to the Sage library, and rising the "doc[
 > I respectfully disagree if 
 > - it is optional
 
+
 That would be fine.
 
 > - it divides by more than 10 the documentation compile time
+
 
 Wow... :P
 
@@ -1678,7 +1696,7 @@ Florent
 archive/issue_comments_052524.json:
 ```json
 {
-    "body": "I just attached a new patch which defines a new builder for creating the pickle and `object.inv` file. It can be called by \n\n```\nsage -docbuild DOCUMENT invpickle\n```\n\nIt is automatically called for the first pass when building `DOCUMENT=all`. As a consequence on my laptop the first pass in only 2 min and a half long. \n\nFlorent",
+    "body": "I just attached a new patch which defines a new builder for creating the pickle and `object.inv` file. It can be called by \n\n```\nsage -docbuild DOCUMENT invpickle\n```\nIt is automatically called for the first pass when building `DOCUMENT=all`. As a consequence on my laptop the first pass in only 2 min and a half long. \n\nFlorent",
     "created_at": "2012-04-23T21:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1692,7 +1710,6 @@ I just attached a new patch which defines a new builder for creating the pickle 
 ```
 sage -docbuild DOCUMENT invpickle
 ```
-
 It is automatically called for the first pass when building `DOCUMENT=all`. As a consequence on my laptop the first pass in only 2 min and a half long. 
 
 Florent
@@ -1727,7 +1744,7 @@ Florent
 archive/issue_comments_052526.json:
 ```json
 {
-    "body": "There is also a failure:\n\n```\nsage -t  builder.py\nFile \"/home/data/Sage-Install/sage-5.0.beta13/devel/sage-doc/doc/common/builder.py\", line 862:\n    [...]\n    sage: builder.ReferenceBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n      File \"/home/data/Sage-Install/sage-5.0.beta13/devel/sage/doc/common/builder.py\", line 409, in _wrapper\n        getattr(DocBuilder(self.name, lang), format)(*args, **kwds)\n    AttributeError: 'DocBuilder' object has no attribute 'auto_rest_filename'\n```\n",
+    "body": "There is also a failure:\n\n```\nsage -t  builder.py\nFile \"/home/data/Sage-Install/sage-5.0.beta13/devel/sage-doc/doc/common/builder.py\", line 862:\n    [...]\n    sage: builder.ReferenceBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n      File \"/home/data/Sage-Install/sage-5.0.beta13/devel/sage/doc/common/builder.py\", line 409, in _wrapper\n        getattr(DocBuilder(self.name, lang), format)(*args, **kwds)\n    AttributeError: 'DocBuilder' object has no attribute 'auto_rest_filename'\n```",
     "created_at": "2012-04-23T23:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1747,7 +1764,6 @@ File "/home/data/Sage-Install/sage-5.0.beta13/devel/sage-doc/doc/common/builder.
         getattr(DocBuilder(self.name, lang), format)(*args, **kwds)
     AttributeError: 'DocBuilder' object has no attribute 'auto_rest_filename'
 ```
-
 
 
 
@@ -1786,7 +1802,7 @@ By the way, mpatel should get a lot of the credit for this; he wrote the origina
 archive/issue_comments_052528.json:
 ```json
 {
-    "body": "I got two doctest failures (after applying your patch), which can be fixed with this patch:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -200,7 +200,7 @@ class DocBuilder(object):\n             sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n             sage: b = builder.DocBuilder('tutorial')\n             sage: b._output_formats()\n-            ['changes', 'html', 'htmlhelp', 'json', 'latex', 'linkcheck', 'pickle', 'web']\n+            ['changes', 'html', 'htmlhelp', 'invpickle', 'json', 'latex', 'linkcheck', 'pickle', 'web']\n \n         \"\"\"\n         #Go through all the attributes of self and check to\n@@ -859,7 +859,7 @@ class ReferenceSubBuilder(DocBuilder):\n \n             sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n             sage: import builder\n-            sage: builder.ReferenceBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n+            sage: builder.ReferenceSubBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n             '.../devel/sage/doc/en/reference/sage/combinat/partition.rst'\n         \"\"\"\n         return self.dir + os.path.sep + module_name.replace('.',os.path.sep) + '.rst'\n```\n",
+    "body": "I got two doctest failures (after applying your patch), which can be fixed with this patch:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -200,7 +200,7 @@ class DocBuilder(object):\n             sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n             sage: b = builder.DocBuilder('tutorial')\n             sage: b._output_formats()\n-            ['changes', 'html', 'htmlhelp', 'json', 'latex', 'linkcheck', 'pickle', 'web']\n+            ['changes', 'html', 'htmlhelp', 'invpickle', 'json', 'latex', 'linkcheck', 'pickle', 'web']\n \n         \"\"\"\n         #Go through all the attributes of self and check to\n@@ -859,7 +859,7 @@ class ReferenceSubBuilder(DocBuilder):\n \n             sage: import os, sys; sys.path.append(os.environ['SAGE_DOC']+'/common/'); import builder\n             sage: import builder\n-            sage: builder.ReferenceBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n+            sage: builder.ReferenceSubBuilder(\"reference\").auto_rest_filename(\"sage.combinat.partition\")\n             '.../devel/sage/doc/en/reference/sage/combinat/partition.rst'\n         \"\"\"\n         return self.dir + os.path.sep + module_name.replace('.',os.path.sep) + '.rst'\n```",
     "created_at": "2012-04-24T18:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1820,7 +1836,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
          """
          return self.dir + os.path.sep + module_name.replace('.',os.path.sep) + '.rst'
 ```
-
 
 
 
@@ -1919,7 +1934,7 @@ I will try to post any progress that I make, and you should do likewise, so we d
 archive/issue_comments_052532.json:
 ```json
 {
-    "body": "As far as handling ctrl-c, I found [this question](http://stackoverflow.com/questions/1408356/keyboard-interrupts-with-pythons-multiprocessing-pool). It seems we can replace `pool.apply_async(ARGS)` with `pool.apply_async(ARGS).get(999999)`. This apparently adds a (very long) timeout to the process, and it apparently works around a bug in Python. In practice, it seems to work for me.\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -415,7 +415,7 @@ class ReferenceBuilder(AllBuilder):\n             for doc in self.get_all_documents(refdir):\n                 pool.apply_async(build_ref_doc,\n                                  (doc, lang, format,\n-                                  os.path.split(output_dir)[0]) + args, kwds)\n+                                  os.path.split(output_dir)[0]) + args, kwds).get(999999)\n             pool.close()\n             pool.join()\n             if format == 'html':\n```\n",
+    "body": "As far as handling ctrl-c, I found [this question](http://stackoverflow.com/questions/1408356/keyboard-interrupts-with-pythons-multiprocessing-pool). It seems we can replace `pool.apply_async(ARGS)` with `pool.apply_async(ARGS).get(999999)`. This apparently adds a (very long) timeout to the process, and it apparently works around a bug in Python. In practice, it seems to work for me.\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -415,7 +415,7 @@ class ReferenceBuilder(AllBuilder):\n             for doc in self.get_all_documents(refdir):\n                 pool.apply_async(build_ref_doc,\n                                  (doc, lang, format,\n-                                  os.path.split(output_dir)[0]) + args, kwds)\n+                                  os.path.split(output_dir)[0]) + args, kwds).get(999999)\n             pool.close()\n             pool.join()\n             if format == 'html':\n```",
     "created_at": "2012-04-25T05:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1947,13 +1962,12 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
 
 
 
-
 ---
 
 archive/issue_comments_052533.json:
 ```json
 {
-    "body": "Replying to [comment:68 jhpalmieri]:\n>  - I really like the idea of the invpickle builder, so please continue with that. I don't have any better suggestions for the name.\n\nOne should perhaps just expand the name to contain \"inventory\"; \"pickle\" is IMHO minor (or irrelevant) and won't tell most(?) people much.\n \n>  - The verbosity of intersphinx is a minor issue. If we can reduce it, that would be fine, but it's not the highest priority, in my opinion.\n\nMine, too.  Although I hate Sphinx's / Sage's current messages already, especially since *\"Build succeeded.  The built documents can be found in ...\"* is **always** printed, so is plain wrong in case of an error.  (We tried to fix that once, but then I think Jeroen decided to keep it as is.)\n\n>  - I think it shouldn't be too hard to parallelize building the rest of the docs. We want to do it so that hitting ctrl-c will quit the build. I think we should try using tools from sage.parallel rather than the Python multiprocessing module. If you want to work on that, that would be great.\n\nWhy not just use `make`?  Either add (and change the) targets in the top-level `Makefile`, or add one to `devel/sage/doc/`.  To me seems cleanest (preferably the latter), and docbuilding IMHO shouldn't depend [more] on the Sage library [as needed / it already does].",
+    "body": "Replying to [comment:68 jhpalmieri]:\n>  - I really like the idea of the invpickle builder, so please continue with that. I don't have any better suggestions for the name.\n\n\nOne should perhaps just expand the name to contain \"inventory\"; \"pickle\" is IMHO minor (or irrelevant) and won't tell most(?) people much.\n \n>  - The verbosity of intersphinx is a minor issue. If we can reduce it, that would be fine, but it's not the highest priority, in my opinion.\n\n\nMine, too.  Although I hate Sphinx's / Sage's current messages already, especially since *\"Build succeeded.  The built documents can be found in ...\"* is **always** printed, so is plain wrong in case of an error.  (We tried to fix that once, but then I think Jeroen decided to keep it as is.)\n\n>  - I think it shouldn't be too hard to parallelize building the rest of the docs. We want to do it so that hitting ctrl-c will quit the build. I think we should try using tools from sage.parallel rather than the Python multiprocessing module. If you want to work on that, that would be great.\n\n\nWhy not just use `make`?  Either add (and change the) targets in the top-level `Makefile`, or add one to `devel/sage/doc/`.  To me seems cleanest (preferably the latter), and docbuilding IMHO shouldn't depend [more] on the Sage library [as needed / it already does].",
     "created_at": "2012-04-25T05:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -1965,13 +1979,16 @@ archive/issue_comments_052533.json:
 Replying to [comment:68 jhpalmieri]:
 >  - I really like the idea of the invpickle builder, so please continue with that. I don't have any better suggestions for the name.
 
+
 One should perhaps just expand the name to contain "inventory"; "pickle" is IMHO minor (or irrelevant) and won't tell most(?) people much.
  
 >  - The verbosity of intersphinx is a minor issue. If we can reduce it, that would be fine, but it's not the highest priority, in my opinion.
 
+
 Mine, too.  Although I hate Sphinx's / Sage's current messages already, especially since *"Build succeeded.  The built documents can be found in ..."* is **always** printed, so is plain wrong in case of an error.  (We tried to fix that once, but then I think Jeroen decided to keep it as is.)
 
 >  - I think it shouldn't be too hard to parallelize building the rest of the docs. We want to do it so that hitting ctrl-c will quit the build. I think we should try using tools from sage.parallel rather than the Python multiprocessing module. If you want to work on that, that would be great.
+
 
 Why not just use `make`?  Either add (and change the) targets in the top-level `Makefile`, or add one to `devel/sage/doc/`.  To me seems cleanest (preferably the latter), and docbuilding IMHO shouldn't depend [more] on the Sage library [as needed / it already does].
 
@@ -2000,7 +2017,7 @@ The problem with using `make` is that I want to be able to run `sage --docbuild 
 archive/issue_comments_052535.json:
 ```json
 {
-    "body": "Replying to [comment:69 jhpalmieri]:\n> As far as handling ctrl-c, I found [this question](http://stackoverflow.com/questions/1408356/keyboard-interrupts-with-pythons-multiprocessing-pool). It seems we can replace `pool.apply_async(ARGS)` with `pool.apply_async(ARGS).get(999999)`. This apparently adds a (very long) timeout to the process, and it apparently works around a bug in Python. In practice, it seems to work for me.\n\nDoes it really work ? For me is seems that ctrl-c is now working but the doc is no more compiling in parallel.\n\nFlorent",
+    "body": "Replying to [comment:69 jhpalmieri]:\n> As far as handling ctrl-c, I found [this question](http://stackoverflow.com/questions/1408356/keyboard-interrupts-with-pythons-multiprocessing-pool). It seems we can replace `pool.apply_async(ARGS)` with `pool.apply_async(ARGS).get(999999)`. This apparently adds a (very long) timeout to the process, and it apparently works around a bug in Python. In practice, it seems to work for me.\n\n\nDoes it really work ? For me is seems that ctrl-c is now working but the doc is no more compiling in parallel.\n\nFlorent",
     "created_at": "2012-05-01T20:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2011,6 +2028,7 @@ archive/issue_comments_052535.json:
 
 Replying to [comment:69 jhpalmieri]:
 > As far as handling ctrl-c, I found [this question](http://stackoverflow.com/questions/1408356/keyboard-interrupts-with-pythons-multiprocessing-pool). It seems we can replace `pool.apply_async(ARGS)` with `pool.apply_async(ARGS).get(999999)`. This apparently adds a (very long) timeout to the process, and it apparently works around a bug in Python. In practice, it seems to work for me.
+
 
 Does it really work ? For me is seems that ctrl-c is now working but the doc is no more compiling in parallel.
 
@@ -2023,7 +2041,7 @@ Florent
 archive/issue_comments_052536.json:
 ```json
 {
-    "body": "Concerning todos (and maybe indexes too), I think I've found an alternative:\nthey are pickled in the files `environment.pickle`. Here is an example, in\nthe directory `doc/output/doctrees/en/reference/modules`:\n\n```\nsage: import cPickle\nsage: f = open('environment.pickle', 'rb')\nsage: env = cPickle.load(f)\nsage: f.close()\nsage: env.todo_all_todos\n[{'docname': 'sage/modules/free_module', 'source': u'/home/data/Sage-Install/sage-5.0.beta14/local/lib/python2.7/site-packages/sage/modules/free_module.py:docstring of sage.modules.free_module.FreeModuleFactory', 'todo': <todo_node: <title...><paragraph...>>, 'lineno': 122, 'target': <target: >}]\nsage: env.indexentries.keys()\n['index', 'sage/modules/free_module_element', 'sage/modules/real_double_vector', 'sage/modules/matrix_morphism', 'sage/modules/fg_pid/fgp_module', 'sage/modules/free_module_homspace', 'sage/modules/vector_space_homspace', 'sage/modules/fg_pid/fgp_element', 'sage/modules/complex_double_vector', 'sage/modules/fg_pid/fgp_morphism', 'sage/modules/vector_callable_symbolic_dense', 'sage/modules/module', 'sage/modules/free_module_morphism', 'sage/modules/vector_space_morphism', 'sage/modules/free_module']\n```\n\nSo it seems that we can get them from there from the pickle concatenate them\nand let sphinx output the todo list and the index.\n\nFlorent",
+    "body": "Concerning todos (and maybe indexes too), I think I've found an alternative:\nthey are pickled in the files `environment.pickle`. Here is an example, in\nthe directory `doc/output/doctrees/en/reference/modules`:\n\n```\nsage: import cPickle\nsage: f = open('environment.pickle', 'rb')\nsage: env = cPickle.load(f)\nsage: f.close()\nsage: env.todo_all_todos\n[{'docname': 'sage/modules/free_module', 'source': u'/home/data/Sage-Install/sage-5.0.beta14/local/lib/python2.7/site-packages/sage/modules/free_module.py:docstring of sage.modules.free_module.FreeModuleFactory', 'todo': <todo_node: <title...><paragraph...>>, 'lineno': 122, 'target': <target: >}]\nsage: env.indexentries.keys()\n['index', 'sage/modules/free_module_element', 'sage/modules/real_double_vector', 'sage/modules/matrix_morphism', 'sage/modules/fg_pid/fgp_module', 'sage/modules/free_module_homspace', 'sage/modules/vector_space_homspace', 'sage/modules/fg_pid/fgp_element', 'sage/modules/complex_double_vector', 'sage/modules/fg_pid/fgp_morphism', 'sage/modules/vector_callable_symbolic_dense', 'sage/modules/module', 'sage/modules/free_module_morphism', 'sage/modules/vector_space_morphism', 'sage/modules/free_module']\n```\nSo it seems that we can get them from there from the pickle concatenate them\nand let sphinx output the todo list and the index.\n\nFlorent",
     "created_at": "2012-05-01T21:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2046,7 +2064,6 @@ sage: env.todo_all_todos
 sage: env.indexentries.keys()
 ['index', 'sage/modules/free_module_element', 'sage/modules/real_double_vector', 'sage/modules/matrix_morphism', 'sage/modules/fg_pid/fgp_module', 'sage/modules/free_module_homspace', 'sage/modules/vector_space_homspace', 'sage/modules/fg_pid/fgp_element', 'sage/modules/complex_double_vector', 'sage/modules/fg_pid/fgp_morphism', 'sage/modules/vector_callable_symbolic_dense', 'sage/modules/module', 'sage/modules/free_module_morphism', 'sage/modules/vector_space_morphism', 'sage/modules/free_module']
 ```
-
 So it seems that we can get them from there from the pickle concatenate them
 and let sphinx output the todo list and the index.
 
@@ -2059,7 +2076,7 @@ Florent
 archive/issue_comments_052537.json:
 ```json
 {
-    "body": "Replying to [comment:73 hivert]:\n> So it seems that we can get them from there from the pickle concatenate them\n> and let sphinx output the todo list and the index.\n\nI've a proof of concept which seems to be working upto two problems:\n\n- The generated links to the \"original entry\" generated by `app.builder.get_relative_uri` is missing the subdirectory (ie: \"reference/sage/modules/...\" instead of \"reference/modules/sage/modules/...\". This could probably either be fixed by fixing the builder or playing with symlinks.\n\n- if one recompile the doc twice, all the todos are duplicated. This could probably also be fixed by removing duplicates or clearing the todo-list at the right moment.\n\nI think both problem can be fixed.",
+    "body": "Replying to [comment:73 hivert]:\n> So it seems that we can get them from there from the pickle concatenate them\n> and let sphinx output the todo list and the index.\n\n\nI've a proof of concept which seems to be working upto two problems:\n\n- The generated links to the \"original entry\" generated by `app.builder.get_relative_uri` is missing the subdirectory (ie: \"reference/sage/modules/...\" instead of \"reference/modules/sage/modules/...\". This could probably either be fixed by fixing the builder or playing with symlinks.\n\n- if one recompile the doc twice, all the todos are duplicated. This could probably also be fixed by removing duplicates or clearing the todo-list at the right moment.\n\nI think both problem can be fixed.",
     "created_at": "2012-05-01T23:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2071,6 +2088,7 @@ archive/issue_comments_052537.json:
 Replying to [comment:73 hivert]:
 > So it seems that we can get them from there from the pickle concatenate them
 > and let sphinx output the todo list and the index.
+
 
 I've a proof of concept which seems to be working upto two problems:
 
@@ -2172,7 +2190,7 @@ inventory builder + merge todo list & html / js indexes
 archive/issue_comments_052542.json:
 ```json
 {
-    "body": "Attachment [invbuilder.patch](tarball://root/attachments/some-uuid/ticket6495/invbuilder.patch) by @hivert created at 2012-05-07 01:09:43\n\n> Citations may be an issue, in particular if the same reference is cited\n> twice in two different parts of the reference manual: we may just need to\n> add another copy of the citation, or perhaps a master list of citations that\n> gets used by everything. I don't know if that's practical.\n\nI've probably a way to handle cross-citation as well. They are stored in the\nenvironement and I can get them to gather the link in the main reference\nmanual, exactly the way I gather TODO and indexes. It is just a little more\ntricky because I need to redispatch them to the other documents. I'm\nexperimenting...\n\nFlorent",
+    "body": "Attachment [invbuilder.patch](tarball://root/attachments/some-uuid/ticket6495/invbuilder.patch) by @hivert created at 2012-05-07 01:09:43\n\n> Citations may be an issue, in particular if the same reference is cited\n> twice in two different parts of the reference manual: we may just need to\n> add another copy of the citation, or perhaps a master list of citations that\n> gets used by everything. I don't know if that's practical.\n\n\nI've probably a way to handle cross-citation as well. They are stored in the\nenvironement and I can get them to gather the link in the main reference\nmanual, exactly the way I gather TODO and indexes. It is just a little more\ntricky because I need to redispatch them to the other documents. I'm\nexperimenting...\n\nFlorent",
     "created_at": "2012-05-07T01:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2187,6 +2205,7 @@ Attachment [invbuilder.patch](tarball://root/attachments/some-uuid/ticket6495/in
 > twice in two different parts of the reference manual: we may just need to
 > add another copy of the citation, or perhaps a master list of citations that
 > gets used by everything. I don't know if that's practical.
+
 
 I've probably a way to handle cross-citation as well. They are stored in the
 environement and I can get them to gather the link in the main reference
@@ -2295,7 +2314,7 @@ Thanks, John
 archive/issue_comments_052547.json:
 ```json
 {
-    "body": "Hi John,\n\nReplying to [comment:81 jhpalmieri]:\n> I am quite busy with other things right now, so I hope you can get people at Sage Days 38 to take a good look at this. Maybe you can figure out the ctrl-c issue as well; maybe tinkering with what I had might work; if not, the link I provided had some other ideas, too.\n\nwell, they are very few people knowing the documentation building system here and I used quite a few Sphinx internal stuff. I think a good reviewer would be George Brandle himself but I need to sit for a moment to write him an e-mail.\n\nCheers,\n\nFlorent",
+    "body": "Hi John,\n\nReplying to [comment:81 jhpalmieri]:\n> I am quite busy with other things right now, so I hope you can get people at Sage Days 38 to take a good look at this. Maybe you can figure out the ctrl-c issue as well; maybe tinkering with what I had might work; if not, the link I provided had some other ideas, too.\n\n\nwell, they are very few people knowing the documentation building system here and I used quite a few Sphinx internal stuff. I think a good reviewer would be George Brandle himself but I need to sit for a moment to write him an e-mail.\n\nCheers,\n\nFlorent",
     "created_at": "2012-05-08T05:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2308,6 +2327,7 @@ Hi John,
 
 Replying to [comment:81 jhpalmieri]:
 > I am quite busy with other things right now, so I hope you can get people at Sage Days 38 to take a good look at this. Maybe you can figure out the ctrl-c issue as well; maybe tinkering with what I had might work; if not, the link I provided had some other ideas, too.
+
 
 well, they are very few people knowing the documentation building system here and I used quite a few Sphinx internal stuff. I think a good reviewer would be George Brandle himself but I need to sit for a moment to write him an e-mail.
 
@@ -2440,7 +2460,7 @@ One more update to part 4, to fix a few doctests.
 archive/issue_comments_052554.json:
 ```json
 {
-    "body": "I think this looks very good. I'm just about ready to give Florent's part a positive review. Two questions: can we reinstate the `-Q` flag for the first pass on the reference manual, to silence all of the warnings? Also, I see this warning message; do you know if it's important?\n\n```\npreparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\n\n(This occurs if I do `sage --docbuild all html`, at the end of the second pass through the reference manual.)\n\nI'm attaching one more version of the part 4 patch, just to fix a few typos and grammar issues in the files Florent added.",
+    "body": "I think this looks very good. I'm just about ready to give Florent's part a positive review. Two questions: can we reinstate the `-Q` flag for the first pass on the reference manual, to silence all of the warnings? Also, I see this warning message; do you know if it's important?\n\n```\npreparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\n(This occurs if I do `sage --docbuild all html`, at the end of the second pass through the reference manual.)\n\nI'm attaching one more version of the part 4 patch, just to fix a few typos and grammar issues in the files Florent added.",
     "created_at": "2012-05-21T20:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2454,7 +2474,6 @@ I think this looks very good. I'm just about ready to give Florent's part a posi
 ```
 preparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
 ```
-
 (This occurs if I do `sage --docbuild all html`, at the end of the second pass through the reference manual.)
 
 I'm attaching one more version of the part 4 patch, just to fix a few typos and grammar issues in the files Florent added.
@@ -2466,7 +2485,7 @@ I'm attaching one more version of the part 4 patch, just to fix a few typos and 
 archive/issue_comments_052555.json:
 ```json
 {
-    "body": "Hi John,\n\n> I think this looks very good. I'm just about ready to give Florent's part a\n> positive review.\n\nWow !!! This is extremely cool. Thanks a lot ! I'm sorry for my current\nsilence. I didn't had the time to look at your part4 code. I'll try to do it\nshortly.\n\n> Two questions: can we reinstate the `-Q` flag for the first pass on the\n> reference manual, to silence all of the warnings?\n\nNo problem. I just wanted to have some idea of the progress and forgot to\nswitch back to a silent mode.\n\n> Also, I see this warning message; do you know if it's important?\n\n```\npreparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\n\n> (This occurs if I do `sage --docbuild all html`, at the end of the second\npass through the reference manual.)\n\nI'm not sure now. I'll though I had silenced this warning. Give me a few day\nto investigate a little more. It is probably not important as the produced\nindex is correct but I may be missing to merge somme part of it.\n\n> I'm attaching one more version of the part 4 patch, just to fix a few typos\n> and grammar issues in the files Florent added.\n\nThanks for those rereading. I planned to polish more the code and try to get\nsome feedback from Sphinx and didn't find the time. However I now think that\nwe should let the code enter sage as soon as possible because it allows the\ndoc to compile on small machine. At sage days 48, with mguaypaq (see above) we\nmanage to compile the documentation in a seemingly satisfactory way on a 1GB\nmachine. Moreover its a requirement to the feature #12878 which I think is\ndefinitely needed at least for huge classes such as graphs...\n\nThanks a lot,\n\nFlorent",
+    "body": "Hi John,\n\n> I think this looks very good. I'm just about ready to give Florent's part a\n> positive review.\n\n\nWow !!! This is extremely cool. Thanks a lot ! I'm sorry for my current\nsilence. I didn't had the time to look at your part4 code. I'll try to do it\nshortly.\n\n> Two questions: can we reinstate the `-Q` flag for the first pass on the\n> reference manual, to silence all of the warnings?\n\n\nNo problem. I just wanted to have some idea of the progress and forgot to\nswitch back to a silent mode.\n\n> Also, I see this warning message; do you know if it's important?\n\n{{{\npreparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n}}}\n> (This occurs if I do `sage --docbuild all html`, at the end of the second\n\npass through the reference manual.)\n\nI'm not sure now. I'll though I had silenced this warning. Give me a few day\nto investigate a little more. It is probably not important as the produced\nindex is correct but I may be missing to merge somme part of it.\n\n> I'm attaching one more version of the part 4 patch, just to fix a few typos\n> and grammar issues in the files Florent added.\n\n\nThanks for those rereading. I planned to polish more the code and try to get\nsome feedback from Sphinx and didn't find the time. However I now think that\nwe should let the code enter sage as soon as possible because it allows the\ndoc to compile on small machine. At sage days 48, with mguaypaq (see above) we\nmanage to compile the documentation in a seemingly satisfactory way on a 1GB\nmachine. Moreover its a requirement to the feature #12878 which I think is\ndefinitely needed at least for huge classes such as graphs...\n\nThanks a lot,\n\nFlorent",
     "created_at": "2012-05-21T22:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2480,6 +2499,7 @@ Hi John,
 > I think this looks very good. I'm just about ready to give Florent's part a
 > positive review.
 
+
 Wow !!! This is extremely cool. Thanks a lot ! I'm sorry for my current
 silence. I didn't had the time to look at your part4 code. I'll try to do it
 shortly.
@@ -2487,16 +2507,17 @@ shortly.
 > Two questions: can we reinstate the `-Q` flag for the first pass on the
 > reference manual, to silence all of the warnings?
 
+
 No problem. I just wanted to have some idea of the progress and forgot to
 switch back to a silent mode.
 
 > Also, I see this warning message; do you know if it's important?
 
-```
+{{{
 preparing documents... WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
-```
-
+}}}
 > (This occurs if I do `sage --docbuild all html`, at the end of the second
+
 pass through the reference manual.)
 
 I'm not sure now. I'll though I had silenced this warning. Give me a few day
@@ -2505,6 +2526,7 @@ index is correct but I may be missing to merge somme part of it.
 
 > I'm attaching one more version of the part 4 patch, just to fix a few typos
 > and grammar issues in the files Florent added.
+
 
 Thanks for those rereading. I planned to polish more the code and try to get
 some feedback from Sphinx and didn't find the time. However I now think that
@@ -2561,7 +2583,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052558.json:
 ```json
 {
-    "body": "This needs to be rebased to sage-5.1.beta5:\n\n```\napplying /release/merger/patches/trac_6495-part2-everything-else.patch\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\n1 out of 2 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatching file doc/en/reference/misc/index.rst\nHunk #1 succeeded at 31 with fuzz 1 (offset 3 lines).\nabort: patch failed to apply\n```\n",
+    "body": "This needs to be rebased to sage-5.1.beta5:\n\n```\napplying /release/merger/patches/trac_6495-part2-everything-else.patch\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\n1 out of 2 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatching file doc/en/reference/misc/index.rst\nHunk #1 succeeded at 31 with fuzz 1 (offset 3 lines).\nabort: patch failed to apply\n```",
     "created_at": "2012-06-19T13:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2581,7 +2603,6 @@ patching file doc/en/reference/misc/index.rst
 Hunk #1 succeeded at 31 with fuzz 1 (offset 3 lines).
 abort: patch failed to apply
 ```
-
 
 
 
@@ -2770,7 +2791,7 @@ I get tons of warnings (1043 to be precise) when building the manuals.  I don't 
 archive/issue_comments_052567.json:
 ```json
 {
-    "body": "Rebased because of #12299. I'll try to work on the warnings. I think it might be best to only suppress the warnings when you run `sage --docbuild all html`, because that is when both passes of the reference manual are actually run, and the first pass is designed to be fast: it just produces the inventory files, not html output. If you run `sage --docbuild reference html`, then it will just do one pass, html format.\n\nEdit: actually, the warnings are easy to get rid of. Florent intentionally left them there while working on the ticket: see these lines in builder.py:\n\n```python\n        global ALLSPHINXOPTS\n        # ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n        ALLSPHINXOPTS += ' -D multidoc_first_pass=1'\n```\n\nIf we uncomment the second line and remove the third, the warnings will go away. I'll incorporate this change into the 4th patch.",
+    "body": "Rebased because of #12299. I'll try to work on the warnings. I think it might be best to only suppress the warnings when you run `sage --docbuild all html`, because that is when both passes of the reference manual are actually run, and the first pass is designed to be fast: it just produces the inventory files, not html output. If you run `sage --docbuild reference html`, then it will just do one pass, html format.\n\nEdit: actually, the warnings are easy to get rid of. Florent intentionally left them there while working on the ticket: see these lines in builder.py:\n\n```python\n        global ALLSPHINXOPTS\n        # ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n        ALLSPHINXOPTS += ' -D multidoc_first_pass=1'\n```\nIf we uncomment the second line and remove the third, the warnings will go away. I'll incorporate this change into the 4th patch.",
     "created_at": "2012-06-27T20:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2788,7 +2809,6 @@ Edit: actually, the warnings are easy to get rid of. Florent intentionally left 
         # ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'
         ALLSPHINXOPTS += ' -D multidoc_first_pass=1'
 ```
-
 If we uncomment the second line and remove the third, the warnings will go away. I'll incorporate this change into the 4th patch.
 
 
@@ -2816,7 +2836,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052569.json:
 ```json
 {
-    "body": "I see one warning now:\n\n```\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\n\nI don't know what this means. The search index looks pretty good to me. Florent might have some idea, when he has a chance to look at this.",
+    "body": "I see one warning now:\n\n```\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\nI don't know what this means. The search index looks pretty good to me. Florent might have some idea, when he has a chance to look at this.",
     "created_at": "2012-06-27T21:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2830,7 +2850,6 @@ I see one warning now:
 ```
 WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
 ```
-
 I don't know what this means. The search index looks pretty good to me. Florent might have some idea, when he has a chance to look at this.
 
 
@@ -2840,7 +2859,7 @@ I don't know what this means. The search index looks pretty good to me. Florent 
 archive/issue_comments_052570.json:
 ```json
 {
-    "body": "In addition to the warning mentioned [comment:105 in comment #105], I have a question about `.buildinfo` files. It seems that on the first pass through the reference manual, these files contain lines like\n\n```\nconfig: 6a23e6beb735e39dc46994bfb813cf55\ntags: fbb0d17656682115ca4d033fb2f83ba1\n```\n\nOn the second pass, these files get overwritten, and the new files have\n\n```\nconfig:\ntags:\n```\n\nThen running `sage --docbuild reference all` produces warnings like\n\n```\nWARNING: unsupported build info format in '.../devel/sage/doc/output/html/en/reference/libs/.buildinfo', building all\n```\n\nand then everything is rebuilt again. I propose this change, which seems to fix this issue:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -300,7 +300,7 @@ class AllBuilder(object):\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n-        ALLSPHINXOPTS = ALLSPHINXOPTS.replace('-Q', '-q') + ' -a '\n+        ALLSPHINXOPTS = ALLSPHINXOPTS.replace('-Q', '-q') + ' '\n         for document in refs:\n             getattr(get_builder(document), name)(*args, **kwds)\n \n```\n",
+    "body": "In addition to the warning mentioned [comment:105 in comment #105], I have a question about `.buildinfo` files. It seems that on the first pass through the reference manual, these files contain lines like\n\n```\nconfig: 6a23e6beb735e39dc46994bfb813cf55\ntags: fbb0d17656682115ca4d033fb2f83ba1\n```\nOn the second pass, these files get overwritten, and the new files have\n\n```\nconfig:\ntags:\n```\nThen running `sage --docbuild reference all` produces warnings like\n\n```\nWARNING: unsupported build info format in '.../devel/sage/doc/output/html/en/reference/libs/.buildinfo', building all\n```\nand then everything is rebuilt again. I propose this change, which seems to fix this issue:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -300,7 +300,7 @@ class AllBuilder(object):\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n-        ALLSPHINXOPTS = ALLSPHINXOPTS.replace('-Q', '-q') + ' -a '\n+        ALLSPHINXOPTS = ALLSPHINXOPTS.replace('-Q', '-q') + ' '\n         for document in refs:\n             getattr(get_builder(document), name)(*args, **kwds)\n \n```",
     "created_at": "2012-07-10T04:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2855,20 +2874,17 @@ In addition to the warning mentioned [comment:105 in comment #105], I have a que
 config: 6a23e6beb735e39dc46994bfb813cf55
 tags: fbb0d17656682115ca4d033fb2f83ba1
 ```
-
 On the second pass, these files get overwritten, and the new files have
 
 ```
 config:
 tags:
 ```
-
 Then running `sage --docbuild reference all` produces warnings like
 
 ```
 WARNING: unsupported build info format in '.../devel/sage/doc/output/html/en/reference/libs/.buildinfo', building all
 ```
-
 and then everything is rebuilt again. I propose this change, which seems to fix this issue:
 
 ```diff
@@ -2885,7 +2901,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
              getattr(get_builder(document), name)(*args, **kwds)
  
 ```
-
 
 
 
@@ -2966,7 +2981,7 @@ Florent: any chance you can work on this? I think that the only thing needed rev
 archive/issue_comments_052575.json:
 ```json
 {
-    "body": "Hi John,\n\nReplying to [comment:118 jhpalmieri]:\n> Florent: any chance you can work on this? I think that the only thing needed reviewing is the part 4 patch. (There is also the warning at [comment:105 comment 105], but I think that the actual output is good, so suppressing the warning would be nice but not absolutely necessary. You might also look at [comment:110 comment 110], but I can't reproduce that issue right now.)\n\nYes ! And thanks for your work and your patience. This is very high on my\npriority list, but it has to remain after the list \"things that must be done\nright now\" (such as teaching or meeting the dead-line to get money for\nSage-Combinat) or even \"thing that should have been done\nyesterday\". Unfortunately, until the end of September, I will still be moving\na flat, so I definitely won't be able to work during the Week-End. I\ndefinitely want to do this done ASAP. So I didn't give-up, but the summer\ndidn't went as expected and I had to stop working on sage for a few\nmonth. Please ping me in the first week of October if I didn't manage to do it\n.\n\nCheers,\n\nFlorent",
+    "body": "Hi John,\n\nReplying to [comment:118 jhpalmieri]:\n> Florent: any chance you can work on this? I think that the only thing needed reviewing is the part 4 patch. (There is also the warning at [comment:105 comment 105], but I think that the actual output is good, so suppressing the warning would be nice but not absolutely necessary. You might also look at [comment:110 comment 110], but I can't reproduce that issue right now.)\n\n\nYes ! And thanks for your work and your patience. This is very high on my\npriority list, but it has to remain after the list \"things that must be done\nright now\" (such as teaching or meeting the dead-line to get money for\nSage-Combinat) or even \"thing that should have been done\nyesterday\". Unfortunately, until the end of September, I will still be moving\na flat, so I definitely won't be able to work during the Week-End. I\ndefinitely want to do this done ASAP. So I didn't give-up, but the summer\ndidn't went as expected and I had to stop working on sage for a few\nmonth. Please ping me in the first week of October if I didn't manage to do it\n.\n\nCheers,\n\nFlorent",
     "created_at": "2012-09-12T05:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -2979,6 +2994,7 @@ Hi John,
 
 Replying to [comment:118 jhpalmieri]:
 > Florent: any chance you can work on this? I think that the only thing needed reviewing is the part 4 patch. (There is also the warning at [comment:105 comment 105], but I think that the actual output is good, so suppressing the warning would be nice but not absolutely necessary. You might also look at [comment:110 comment 110], but I can't reproduce that issue right now.)
+
 
 Yes ! And thanks for your work and your patience. This is very high on my
 priority list, but it has to remain after the list "things that must be done
@@ -3038,7 +3054,7 @@ Made #13143 a dependency and rebased to that.
 archive/issue_comments_052578.json:
 ```json
 {
-    "body": "Hi John,\n\nReplying to [comment:121 jhpalmieri]:\n> Made #13143 a dependency and rebased to that.\n\nConsider me as pinged. And don't hesitate to email me more aggressively if nothing come up before the end of the week. \n\nFlorent",
+    "body": "Hi John,\n\nReplying to [comment:121 jhpalmieri]:\n> Made #13143 a dependency and rebased to that.\n\n\nConsider me as pinged. And don't hesitate to email me more aggressively if nothing come up before the end of the week. \n\nFlorent",
     "created_at": "2012-10-01T19:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3051,6 +3067,7 @@ Hi John,
 
 Replying to [comment:121 jhpalmieri]:
 > Made #13143 a dependency and rebased to that.
+
 
 Consider me as pinged. And don't hesitate to email me more aggressively if nothing come up before the end of the week. 
 
@@ -3159,7 +3176,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052584.json:
 ```json
 {
-    "body": "> What sort of problems do you see? As far as environment variables, setting `MAKE` is the right thing to do: `export MAKE='make -j2'` for example.\n\nLots of \n\n```\nWARNING: intersphinx inventory '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv'\n```\n\nstuff.\n\n```\nbuild succeeded, 1074 warnings.\n```\n\nThat's while building `reference html`, and now I see upon careful reading of the ticket description that perhaps that's implicitly expected.  When I build the whole documentation as a target, I don't get this problem, though I do get one warning:\n\n```\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```\n",
+    "body": "> What sort of problems do you see? As far as environment variables, setting `MAKE` is the right thing to do: `export MAKE='make -j2'` for example.\n\n\nLots of \n\n```\nWARNING: intersphinx inventory '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv'\n```\nstuff.\n\n```\nbuild succeeded, 1074 warnings.\n```\nThat's while building `reference html`, and now I see upon careful reading of the ticket description that perhaps that's implicitly expected.  When I build the whole documentation as a target, I don't get this problem, though I do get one warning:\n\n```\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\n```",
     "created_at": "2012-12-13T17:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3170,24 +3187,22 @@ archive/issue_comments_052584.json:
 
 > What sort of problems do you see? As far as environment variables, setting `MAKE` is the right thing to do: `export MAKE='make -j2'` for example.
 
+
 Lots of 
 
 ```
 WARNING: intersphinx inventory '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/Users/.../sage-5.5.rc0/devel/sage/doc/output/html/en/reference/monoids/objects.inv'
 ```
-
 stuff.
 
 ```
 build succeeded, 1074 warnings.
 ```
-
 That's while building `reference html`, and now I see upon careful reading of the ticket description that perhaps that's implicitly expected.  When I build the whole documentation as a target, I don't get this problem, though I do get one warning:
 
 ```
 WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
 ```
-
 
 
 
@@ -3256,7 +3271,7 @@ Does this patch enable links like `:func:`plot()`` from other manuals (e.g. the 
 archive/issue_comments_052588.json:
 ```json
 {
-    "body": "> I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.\nJohn, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.",
+    "body": "> I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.\n\nJohn, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.",
     "created_at": "2013-01-03T19:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3266,6 +3281,7 @@ archive/issue_comments_052588.json:
 ```
 
 > I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.
+
 John, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.
 
 
@@ -3275,7 +3291,7 @@ John, is this even possible under this setup? It would really be a shame to hold
 archive/issue_comments_052589.json:
 ```json
 {
-    "body": "Replying to [comment:132 jdemeyer]:\n> Does this patch enable links like `:func:`plot()`` from other manuals (e.g. the developer manual) to the reference manual?\n\nI think so, but it ought to be tested. You might need to specify the cross-reference more explicitly, the way you might if you want to reference the Python docs, for instance.\n\nReplying to [comment:133 kcrisman]:\n> > I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.\n> John, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.\n\nI thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)\n\nI'll try to look into both of these. Anyone else is welcome, also. Florent, do you have any time these days?",
+    "body": "Replying to [comment:132 jdemeyer]:\n> Does this patch enable links like `:func:`plot()`` from other manuals (e.g. the developer manual) to the reference manual?\n\n\nI think so, but it ought to be tested. You might need to specify the cross-reference more explicitly, the way you might if you want to reference the Python docs, for instance.\n\nReplying to [comment:133 kcrisman]:\n> > I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.\n\n> John, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.\n\nI thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)\n\nI'll try to look into both of these. Anyone else is welcome, also. Florent, do you have any time these days?",
     "created_at": "2013-01-03T20:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3287,10 +3303,12 @@ archive/issue_comments_052589.json:
 Replying to [comment:132 jdemeyer]:
 > Does this patch enable links like `:func:`plot()`` from other manuals (e.g. the developer manual) to the reference manual?
 
+
 I think so, but it ought to be tested. You might need to specify the cross-reference more explicitly, the way you might if you want to reference the Python docs, for instance.
 
 Replying to [comment:133 kcrisman]:
 > > I consider it a requirement that there are no visible warnings/errors when building the documentation from scratch. Otherwise, it becomes difficult to differentiate warnings caused by this ticket from true warnings.
+
 > John, is this even possible under this setup? It would really be a shame to hold this up but Jeroen makes a good point as well.
 
 I thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)
@@ -3304,7 +3322,7 @@ I'll try to look into both of these. Anyone else is welcome, also. Florent, do y
 archive/issue_comments_052590.json:
 ```json
 {
-    "body": "please rebase for 5.6.beta3:\n\n```\n$sage-5.6.beta3/devel/sage$ ../../sage -hg qpushapplying trac_6495-all-in-one.patch\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\n1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_6495-all-in-one.patch\n```\n",
+    "body": "please rebase for 5.6.beta3:\n\n```\n$sage-5.6.beta3/devel/sage$ ../../sage -hg qpushapplying trac_6495-all-in-one.patch\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\n1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_6495-all-in-one.patch\n```",
     "created_at": "2013-01-11T12:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3327,13 +3345,12 @@ errors during apply, please fix and refresh trac_6495-all-in-one.patch
 
 
 
-
 ---
 
 archive/issue_comments_052591.json:
 ```json
 {
-    "body": "Replying to [comment:134 jhpalmieri]:\n> I thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)\n> \n> I'll try to look into both of these. Anyone else is welcome, also. Florent, do you have any time these days?\n\nI'm deeply sorry for letting time pass and not finishing this one... I'll be in Sage-Days in Edimbourg in two weeks so I hopefully will finish this one.\n\nFlorent",
+    "body": "Replying to [comment:134 jhpalmieri]:\n> I thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)\n> \n> I'll try to look into both of these. Anyone else is welcome, also. Florent, do you have any time these days?\n\n\nI'm deeply sorry for letting time pass and not finishing this one... I'll be in Sage-Days in Edimbourg in two weeks so I hopefully will finish this one.\n\nFlorent",
     "created_at": "2013-01-11T13:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3346,6 +3363,7 @@ Replying to [comment:134 jhpalmieri]:
 > I thought that Florent had ideas about how to get rid of the one remaining warning. (As I said before, the intersphinx warnings are turned off on the first pass through the reference manual when you do `sage --docbuild all html`, and I think this is appropriate.)
 > 
 > I'll try to look into both of these. Anyone else is welcome, also. Florent, do you have any time these days?
+
 
 I'm deeply sorry for letting time pass and not finishing this one... I'll be in Sage-Days in Edimbourg in two weeks so I hopefully will finish this one.
 
@@ -3454,7 +3472,7 @@ Another approach to parallel building (not that we want to throw away all of thi
 archive/issue_comments_052597.json:
 ```json
 {
-    "body": "Replying to [comment:141 jhpalmieri]:\n> Another approach to parallel building (not that we want to throw away all of this work): [a proposed patch to Sphinx](https://bitbucket.org/birkenfeld/sphinx/pull-request/108/wip-parallel-build-experimentation/diff).\nIt only parallelizes the \"writing output\" phase, not the \"reading\" phase, so it cannot be that useful.\n\n> I don't know if using this proposal would affect Sphinx's memory usage, though\nMost likely not.",
+    "body": "Replying to [comment:141 jhpalmieri]:\n> Another approach to parallel building (not that we want to throw away all of this work): [a proposed patch to Sphinx](https://bitbucket.org/birkenfeld/sphinx/pull-request/108/wip-parallel-build-experimentation/diff).\n\nIt only parallelizes the \"writing output\" phase, not the \"reading\" phase, so it cannot be that useful.\n\n> I don't know if using this proposal would affect Sphinx's memory usage, though\n\nMost likely not.",
     "created_at": "2013-01-14T16:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3465,9 +3483,11 @@ archive/issue_comments_052597.json:
 
 Replying to [comment:141 jhpalmieri]:
 > Another approach to parallel building (not that we want to throw away all of this work): [a proposed patch to Sphinx](https://bitbucket.org/birkenfeld/sphinx/pull-request/108/wip-parallel-build-experimentation/diff).
+
 It only parallelizes the "writing output" phase, not the "reading" phase, so it cannot be that useful.
 
 > I don't know if using this proposal would affect Sphinx's memory usage, though
+
 Most likely not.
 
 
@@ -3495,7 +3515,7 @@ Just for fun, I packaged it: [http://boxen.math.washington.edu/home/jdemeyer/spk
 archive/issue_comments_052599.json:
 ```json
 {
-    "body": "Replying to [comment:142 jdemeyer]:\n> It only parallelizes the \"writing output\" phase, not the \"reading\" phase, so it cannot be that useful.\n\nThis is more or less what I did when experimenting on #6255. At that time, since I was building the whole documentation it increased the memory usage. By the way, we probably should close #6255 at some point as a duplicate of this one.\n\nFlorent",
+    "body": "Replying to [comment:142 jdemeyer]:\n> It only parallelizes the \"writing output\" phase, not the \"reading\" phase, so it cannot be that useful.\n\n\nThis is more or less what I did when experimenting on #6255. At that time, since I was building the whole documentation it increased the memory usage. By the way, we probably should close #6255 at some point as a duplicate of this one.\n\nFlorent",
     "created_at": "2013-01-14T17:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3506,6 +3526,7 @@ archive/issue_comments_052599.json:
 
 Replying to [comment:142 jdemeyer]:
 > It only parallelizes the "writing output" phase, not the "reading" phase, so it cannot be that useful.
+
 
 This is more or less what I did when experimenting on #6255. At that time, since I was building the whole documentation it increased the memory usage. By the way, we probably should close #6255 at some point as a duplicate of this one.
 
@@ -3558,7 +3579,7 @@ Having said all of that, do the errors you get suggest problems with our paralle
 archive/issue_comments_052602.json:
 ```json
 {
-    "body": "Replying to [comment:146 jhpalmieri]:\n> Having said all of that, do the errors you get suggest problems with our parallel code?\nI didn't use any code from this ticket, I only used the patch you linked to for parallel Sphinx writing.",
+    "body": "Replying to [comment:146 jhpalmieri]:\n> Having said all of that, do the errors you get suggest problems with our parallel code?\n\nI didn't use any code from this ticket, I only used the patch you linked to for parallel Sphinx writing.",
     "created_at": "2013-01-15T07:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3569,6 +3590,7 @@ archive/issue_comments_052602.json:
 
 Replying to [comment:146 jhpalmieri]:
 > Having said all of that, do the errors you get suggest problems with our parallel code?
+
 I didn't use any code from this ticket, I only used the patch you linked to for parallel Sphinx writing.
 
 
@@ -3616,7 +3638,7 @@ Rebased to 5.6.rc0 (among other things, dealing with the addition of `doc/en/ref
 archive/issue_comments_052605.json:
 ```json
 {
-    "body": "This is an answer to Mike Hansen:\n\nHe asked if the page url are kept or not. The answer is that they moved:\nFor example:\n\n```\ndoc/output/html/en/reference/sage/symbolic/expression.html\n```\n\nis now\n\n```\ndoc/output/html/en/reference/calculus/sage/symbolic/expression.html\n```\n\nSo the location is not kept.\n\nFlorent",
+    "body": "This is an answer to Mike Hansen:\n\nHe asked if the page url are kept or not. The answer is that they moved:\nFor example:\n\n```\ndoc/output/html/en/reference/sage/symbolic/expression.html\n```\nis now\n\n```\ndoc/output/html/en/reference/calculus/sage/symbolic/expression.html\n```\nSo the location is not kept.\n\nFlorent",
     "created_at": "2013-01-22T01:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3633,13 +3655,11 @@ For example:
 ```
 doc/output/html/en/reference/sage/symbolic/expression.html
 ```
-
 is now
 
 ```
 doc/output/html/en/reference/calculus/sage/symbolic/expression.html
 ```
-
 So the location is not kept.
 
 Florent
@@ -3651,7 +3671,7 @@ Florent
 archive/issue_comments_052606.json:
 ```json
 {
-    "body": "Replying to [comment:149 hivert]:\n> This is an answer to Mike Hansen:\n> \n> He asked if the page url are kept or not. The answer is that they moved:\nHmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?",
+    "body": "Replying to [comment:149 hivert]:\n> This is an answer to Mike Hansen:\n> \n> He asked if the page url are kept or not. The answer is that they moved:\n\nHmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?",
     "created_at": "2013-01-22T01:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3664,6 +3684,7 @@ Replying to [comment:149 hivert]:
 > This is an answer to Mike Hansen:
 > 
 > He asked if the page url are kept or not. The answer is that they moved:
+
 Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?
 
 
@@ -3673,7 +3694,7 @@ Hmm, I was dimly aware of this but didn't think it through.  That will break a l
 archive/issue_comments_052607.json:
 ```json
 {
-    "body": "Replying to [comment:150 kcrisman]:\n> Replying to [comment:149 hivert]:\n> > This is an answer to Mike Hansen:\n> > \n> > He asked if the page url are kept or not. The answer is that they moved:\n> Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?\n\nthere are several options:\n\n1. use `.htaccess` thing to fix this on any particular website;\n \n2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;\n\n3.  maybe sphinx can help in this business, I don't know.\n\nIn any event we do not want to keep the old links around forever, I think, so there should be some kind of deprecation being turned on.",
+    "body": "Replying to [comment:150 kcrisman]:\n> Replying to [comment:149 hivert]:\n> > This is an answer to Mike Hansen:\n> > \n> > He asked if the page url are kept or not. The answer is that they moved:\n\n> Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?\n\nthere are several options:\n\n1. use `.htaccess` thing to fix this on any particular website;\n \n2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;\n\n3.  maybe sphinx can help in this business, I don't know.\n\nIn any event we do not want to keep the old links around forever, I think, so there should be some kind of deprecation being turned on.",
     "created_at": "2013-01-24T04:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3687,6 +3708,7 @@ Replying to [comment:150 kcrisman]:
 > > This is an answer to Mike Hansen:
 > > 
 > > He asked if the page url are kept or not. The answer is that they moved:
+
 > Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?
 
 there are several options:
@@ -3706,7 +3728,7 @@ In any event we do not want to keep the old links around forever, I think, so th
 archive/issue_comments_052608.json:
 ```json
 {
-    "body": "> > > He asked if the page url are kept or not. The answer is that they moved:\n> > Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?\n> \n> there are several options:\n> \n>  1. use `.htaccess` thing to fix this on any particular website;\n>  \n>  2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;\n> \n>  3.  maybe sphinx can help in this business, I don't know.\n\nI don't thinks it does. On the contrary, it makes it a nightmare (at least to me). Sphinx made the assumption that creating a new document needs creating a new directory (storing html, markup, indexes...). Since we splitting the reference manual in different documents we had to move files around.\n\nMike Hansen was considering implementing something which is close to option 2, because it it seems that option 1 is not easily doable (whereas I'm starting to now more than a little about Sphinx, I shamefully admitting that I don't know how to write/configure a website). \n\nFlorent",
+    "body": "> > > He asked if the page url are kept or not. The answer is that they moved:\n\n> > Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?\n> \n> there are several options:\n> \n> 1. use `.htaccess` thing to fix this on any particular website;\n>  \n> 2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;\n> \n> 3.  maybe sphinx can help in this business, I don't know.\n\n\nI don't thinks it does. On the contrary, it makes it a nightmare (at least to me). Sphinx made the assumption that creating a new document needs creating a new directory (storing html, markup, indexes...). Since we splitting the reference manual in different documents we had to move files around.\n\nMike Hansen was considering implementing something which is close to option 2, because it it seems that option 1 is not easily doable (whereas I'm starting to now more than a little about Sphinx, I shamefully admitting that I don't know how to write/configure a website). \n\nFlorent",
     "created_at": "2013-01-24T10:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3716,15 +3738,17 @@ archive/issue_comments_052608.json:
 ```
 
 > > > He asked if the page url are kept or not. The answer is that they moved:
+
 > > Hmm, I was dimly aware of this but didn't think it through.  That will break a loooot of links (e.g., on ask.sagemath.org).  Is there any way to auto-generate forwarding or 'mirrors' from the old pages?
 > 
 > there are several options:
 > 
->  1. use `.htaccess` thing to fix this on any particular website;
+> 1. use `.htaccess` thing to fix this on any particular website;
 >  
->  2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;
+> 2.  write a script to look through all `href` targets in each file with changed location, and create for it a file with forwards;
 > 
->  3.  maybe sphinx can help in this business, I don't know.
+> 3.  maybe sphinx can help in this business, I don't know.
+
 
 I don't thinks it does. On the contrary, it makes it a nightmare (at least to me). Sphinx made the assumption that creating a new document needs creating a new directory (storing html, markup, indexes...). Since we splitting the reference manual in different documents we had to move files around.
 
@@ -3762,7 +3786,7 @@ Having said that, Apache `mod_rewrite` could be used to dull some of the pain an
 archive/issue_comments_052610.json:
 ```json
 {
-    "body": "Replying to [comment:154 vbraun]:\n> Having said that, Apache `mod_rewrite` could be used to dull some of the pain and automatically guess the new location.\n\nCan you really use mod_rewrite to do this?  You have to turn a request like reference/sage/symbolic/expression.html to something like reference/calculus/sage/symbolic/expression.html .  So, you'd have to walk to filesystem in order to find out the analog of \"calculus\".",
+    "body": "Replying to [comment:154 vbraun]:\n> Having said that, Apache `mod_rewrite` could be used to dull some of the pain and automatically guess the new location.\n\n\nCan you really use mod_rewrite to do this?  You have to turn a request like reference/sage/symbolic/expression.html to something like reference/calculus/sage/symbolic/expression.html .  So, you'd have to walk to filesystem in order to find out the analog of \"calculus\".",
     "created_at": "2013-01-24T12:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3774,6 +3798,7 @@ archive/issue_comments_052610.json:
 Replying to [comment:154 vbraun]:
 > Having said that, Apache `mod_rewrite` could be used to dull some of the pain and automatically guess the new location.
 
+
 Can you really use mod_rewrite to do this?  You have to turn a request like reference/sage/symbolic/expression.html to something like reference/calculus/sage/symbolic/expression.html .  So, you'd have to walk to filesystem in order to find out the analog of "calculus".
 
 
@@ -3783,7 +3808,7 @@ Can you really use mod_rewrite to do this?  You have to turn a request like refe
 archive/issue_comments_052611.json:
 ```json
 {
-    "body": "Yes and no... its not beautiful but you can just add a rule for each `sage/` subdirectory that does the equivalent of \n\n```\nsed s-sage/symbolic-calculus/sage/symbolic-\n```\n",
+    "body": "Yes and no... its not beautiful but you can just add a rule for each `sage/` subdirectory that does the equivalent of \n\n```\nsed s-sage/symbolic-calculus/sage/symbolic-\n```",
     "created_at": "2013-01-24T12:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3797,7 +3822,6 @@ Yes and no... its not beautiful but you can just add a rule for each `sage/` sub
 ```
 sed s-sage/symbolic-calculus/sage/symbolic-
 ```
-
 
 
 
@@ -3824,7 +3848,7 @@ Attachment [trac_6495-redirect_html.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_052613.json:
 ```json
 {
-    "body": "Replying to [comment:157 vbraun]:\n> Yes and no... its not beautiful but you can just add a rule for each `sage/` subdirectory that does the equivalent of \n> {{{\n> sed s-sage/symbolic-calculus/sage/symbolic-\n> }}}\n\nI don't think that you can really do this since it isn't guaranteed that all of the files that are in say sage/misc/ will all go to the same document.\n\nI wrote a patch which adds small HTML files to do the redirect.  I've looked through Florent's code as well, and things seem fine to me -- trac_6495-all-in-one.patch and trac-6495_silence_warning-fh.patch .\n\nIf someone reviews trac_6495-redirect_html.patch , we can mark this as positive_review.",
+    "body": "Replying to [comment:157 vbraun]:\n> Yes and no... its not beautiful but you can just add a rule for each `sage/` subdirectory that does the equivalent of \n> \n> ```\n> sed s-sage/symbolic-calculus/sage/symbolic-\n> ```\n\n\nI don't think that you can really do this since it isn't guaranteed that all of the files that are in say sage/misc/ will all go to the same document.\n\nI wrote a patch which adds small HTML files to do the redirect.  I've looked through Florent's code as well, and things seem fine to me -- trac_6495-all-in-one.patch and trac-6495_silence_warning-fh.patch .\n\nIf someone reviews trac_6495-redirect_html.patch , we can mark this as positive_review.",
     "created_at": "2013-01-24T16:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3835,9 +3859,11 @@ archive/issue_comments_052613.json:
 
 Replying to [comment:157 vbraun]:
 > Yes and no... its not beautiful but you can just add a rule for each `sage/` subdirectory that does the equivalent of 
-> {{{
+> 
+> ```
 > sed s-sage/symbolic-calculus/sage/symbolic-
-> }}}
+> ```
+
 
 I don't think that you can really do this since it isn't guaranteed that all of the files that are in say sage/misc/ will all go to the same document.
 
@@ -3852,7 +3878,7 @@ If someone reviews trac_6495-redirect_html.patch , we can mark this as positive_
 archive/issue_comments_052614.json:
 ```json
 {
-    "body": "> I wrote a patch which adds small HTML files to do the redirect.  I've looked through Florent's code as well, and things seem fine to me -- trac_6495-all-in-one.patch and trac-6495_silence_warning-fh.patch .\n> \n> If someone reviews trac_6495-redirect_html.patch , we can mark this as positive_review.\n\nThank you so much for adding this, Mike - I hope to try it out tonight and see if it works fine, but I doubt I'll be competent to give positive review.\n\nHere is a question about all the patches.  There are a lot of functions (esp. underscore ones) in doc/... that have no doctests.  Problem?  (This includes Mike's new function, but is not limited to it.)  Hope this isn't evil to ask.",
+    "body": "> I wrote a patch which adds small HTML files to do the redirect.  I've looked through Florent's code as well, and things seem fine to me -- trac_6495-all-in-one.patch and trac-6495_silence_warning-fh.patch .\n> \n> If someone reviews trac_6495-redirect_html.patch , we can mark this as positive_review.\n\n\nThank you so much for adding this, Mike - I hope to try it out tonight and see if it works fine, but I doubt I'll be competent to give positive review.\n\nHere is a question about all the patches.  There are a lot of functions (esp. underscore ones) in doc/... that have no doctests.  Problem?  (This includes Mike's new function, but is not limited to it.)  Hope this isn't evil to ask.",
     "created_at": "2013-01-24T19:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3864,6 +3890,7 @@ archive/issue_comments_052614.json:
 > I wrote a patch which adds small HTML files to do the redirect.  I've looked through Florent's code as well, and things seem fine to me -- trac_6495-all-in-one.patch and trac-6495_silence_warning-fh.patch .
 > 
 > If someone reviews trac_6495-redirect_html.patch , we can mark this as positive_review.
+
 
 Thank you so much for adding this, Mike - I hope to try it out tonight and see if it works fine, but I doubt I'll be competent to give positive review.
 
@@ -3894,7 +3921,7 @@ I have yet to test [attachment:trac_6495-redirect_html.patch], but the docstring
 archive/issue_comments_052616.json:
 ```json
 {
-    "body": "If I run `sage --docbuild all html`, at the end of the second pass for the reference manual, I see\n\n```\n*******************SKIPPING Load indexer call*******************\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\nBuild finished.  The built documents can be found in /scratch/palmieri/6495/sage-5.7.beta0/devel/sage/doc/output/html/en/reference\n```\n\nSo the warning isn't gone.",
+    "body": "If I run `sage --docbuild all html`, at the end of the second pass for the reference manual, I see\n\n```\n*******************SKIPPING Load indexer call*******************\nWARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.\nBuild finished.  The built documents can be found in /scratch/palmieri/6495/sage-5.7.beta0/devel/sage/doc/output/html/en/reference\n```\nSo the warning isn't gone.",
     "created_at": "2013-01-24T20:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3910,7 +3937,6 @@ If I run `sage --docbuild all html`, at the end of the second pass for the refer
 WARNING: search index couldn't be loaded, but not all documents will be built: the index will be incomplete.
 Build finished.  The built documents can be found in /scratch/palmieri/6495/sage-5.7.beta0/devel/sage/doc/output/html/en/reference
 ```
-
 So the warning isn't gone.
 
 
@@ -3956,7 +3982,7 @@ Rebased to 5.7.beta0.
 archive/issue_comments_052619.json:
 ```json
 {
-    "body": "[attachment:trac_6495-redirect_html.patch] doesn't quite work, because `os.path.split(path)` always returns a list of length 2. With this change, it works for me:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -391,7 +391,7 @@ class WebsiteBuilder(DocBuilder):\n                     redirect_filename = os.path.join(reference_dir, shorter_path, filename)\n \n                     # the number of levels up we need to use in the relative url\n-                    levels_up = len(os.path.split(shorter_path))\n+                    levels_up = len(shorter_path.split(os.sep))\n \n                     # the relative url that we will redirect to\n                     redirect_url = \"/\".join(['..']*levels_up + [document_name, shorter_path, filename])\n```\n\nFix that, and fix the docstring for the html method, and I think this part is good. \n\nThe warning is still an issue, and I don't know why it still shows up during the second pass for the reference manual when doing `sage --docbuild all html` but not when running `sage --docbuild reference html` twice. Florent, any ideas? Does anyone else see this?\n\nkcrisman, I don't know about doctests for all of these methods.",
+    "body": "[attachment:trac_6495-redirect_html.patch] doesn't quite work, because `os.path.split(path)` always returns a list of length 2. With this change, it works for me:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -391,7 +391,7 @@ class WebsiteBuilder(DocBuilder):\n                     redirect_filename = os.path.join(reference_dir, shorter_path, filename)\n \n                     # the number of levels up we need to use in the relative url\n-                    levels_up = len(os.path.split(shorter_path))\n+                    levels_up = len(shorter_path.split(os.sep))\n \n                     # the relative url that we will redirect to\n                     redirect_url = \"/\".join(['..']*levels_up + [document_name, shorter_path, filename])\n```\nFix that, and fix the docstring for the html method, and I think this part is good. \n\nThe warning is still an issue, and I don't know why it still shows up during the second pass for the reference manual when doing `sage --docbuild all html` but not when running `sage --docbuild reference html` twice. Florent, any ideas? Does anyone else see this?\n\nkcrisman, I don't know about doctests for all of these methods.",
     "created_at": "2013-01-25T06:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -3981,7 +4007,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
                      # the relative url that we will redirect to
                      redirect_url = "/".join(['..']*levels_up + [document_name, shorter_path, filename])
 ```
-
 Fix that, and fix the docstring for the html method, and I think this part is good. 
 
 The warning is still an issue, and I don't know why it still shows up during the second pass for the reference manual when doing `sage --docbuild all html` but not when running `sage --docbuild reference html` twice. Florent, any ideas? Does anyone else see this?
@@ -4213,7 +4238,7 @@ Attachment [trac_6495-docstrings.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_052631.json:
 ```json
 {
-    "body": "Replying to [comment:175 jhpalmieri]:\n> Well, the docstrings are still a bit of a mess. Here's a patch; maybe the last one? \n\nThanks for this cleanup. I'm positive reviewing these new changes.\n\nFlorent",
+    "body": "Replying to [comment:175 jhpalmieri]:\n> Well, the docstrings are still a bit of a mess. Here's a patch; maybe the last one? \n\n\nThanks for this cleanup. I'm positive reviewing these new changes.\n\nFlorent",
     "created_at": "2013-01-25T17:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4224,6 +4249,7 @@ archive/issue_comments_052631.json:
 
 Replying to [comment:175 jhpalmieri]:
 > Well, the docstrings are still a bit of a mess. Here's a patch; maybe the last one? 
+
 
 Thanks for this cleanup. I'm positive reviewing these new changes.
 
@@ -4236,7 +4262,7 @@ Florent
 archive/issue_comments_052632.json:
 ```json
 {
-    "body": "Replying to [comment:170 jdemeyer]:\n> This conflicts with #12719 and should be rebased.\n\nI don't see any conflicts: starting with 5.7.beta0, I applied the patches from #12719 and then the patches here with no problem. Can you clarify?",
+    "body": "Replying to [comment:170 jdemeyer]:\n> This conflicts with #12719 and should be rebased.\n\n\nI don't see any conflicts: starting with 5.7.beta0, I applied the patches from #12719 and then the patches here with no problem. Can you clarify?",
     "created_at": "2013-01-25T19:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4247,6 +4273,7 @@ archive/issue_comments_052632.json:
 
 Replying to [comment:170 jdemeyer]:
 > This conflicts with #12719 and should be rebased.
+
 
 I don't see any conflicts: starting with 5.7.beta0, I applied the patches from #12719 and then the patches here with no problem. Can you clarify?
 
@@ -4371,7 +4398,7 @@ Florent, thank you for all of your help with this; your contributions have made 
 archive/issue_comments_052639.json:
 ```json
 {
-    "body": "Replying to [comment:181 jhpalmieri]:\n> Florent, thank you for all of your help with this; your contributions have\n> made this much better. And much of the thanks goes to Mitesh Patel, wherever\n> he is, who put in most of the original work on the patch.\n\nAnd thanks a lot for your patience, awaiting for me, not giving up, keeping\ntrying to have this patch moving forward and constantly rebasing it.",
+    "body": "Replying to [comment:181 jhpalmieri]:\n> Florent, thank you for all of your help with this; your contributions have\n> made this much better. And much of the thanks goes to Mitesh Patel, wherever\n> he is, who put in most of the original work on the patch.\n\n\nAnd thanks a lot for your patience, awaiting for me, not giving up, keeping\ntrying to have this patch moving forward and constantly rebasing it.",
     "created_at": "2013-01-27T09:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4384,6 +4411,7 @@ Replying to [comment:181 jhpalmieri]:
 > Florent, thank you for all of your help with this; your contributions have
 > made this much better. And much of the thanks goes to Mitesh Patel, wherever
 > he is, who put in most of the original work on the patch.
+
 
 And thanks a lot for your patience, awaiting for me, not giving up, keeping
 trying to have this patch moving forward and constantly rebasing it.
@@ -4447,7 +4475,7 @@ Updated script.
 archive/issue_comments_052641.json:
 ```json
 {
-    "body": "\n```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:\n```\n\nand\n\n```\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:77: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/solvers/dimacs'\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'\n```\n",
+    "body": "```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:\n```\nand\n\n```\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:77: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/solvers/dimacs'\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'\n/release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'\n```",
     "created_at": "2013-01-27T13:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4456,11 +4484,9 @@ archive/issue_comments_052641.json:
 }
 ```
 
-
 ```
 WARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:
 ```
-
 and
 
 ```
@@ -4468,7 +4494,6 @@ and
 /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'
 /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'
 ```
-
 
 
 
@@ -4495,7 +4520,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_052643.json:
 ```json
 {
-    "body": "First of all, let me express my frustration: `#%)&<sup>`@`$(&%#</sup>#%`\n\n> {{{\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:77: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/solvers/dimacs'\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'\n> }}}\nThough I don't yet fully understand why, looking at the other doc suggest that\nreplacing the three `:maxdepth: 1` by `:maxdepth: 2` should solve this\nparticular problem. I don't have time to propose a patch now.\n\nReplying to [comment:185 jdemeyer]:\n> {{{\n> WARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:\n> }}}\n\nTo investigate this one I need to install `sage-5.7.beta2` which takes\ntime. Jeroen, could you give a some context for this second error. I've never\nseen it but I only used `sage-5.6.rc1`.\n\nCheers,\n\nFlorent",
+    "body": "First of all, let me express my frustration: `#%)&<sup>`@`$(&%#</sup>#%`\n\n> {{{\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:77: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/solvers/dimacs'\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'\n> /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'\n> }}}\n\nThough I don't yet fully understand why, looking at the other doc suggest that\nreplacing the three `:maxdepth: 1` by `:maxdepth: 2` should solve this\nparticular problem. I don't have time to propose a patch now.\n\nReplying to [comment:185 jdemeyer]:\n> {{{\n> WARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:\n> }}}\n\n\nTo investigate this one I need to install `sage-5.7.beta2` which takes\ntime. Jeroen, could you give a some context for this second error. I've never\nseen it but I only used `sage-5.6.rc1`.\n\nCheers,\n\nFlorent",
     "created_at": "2013-01-27T21:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4511,6 +4536,7 @@ First of all, let me express my frustration: `#%)&<sup>`@`$(&%#</sup>#%`
 > /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:104: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/converters/polybori'
 > /release/merger/sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:124: WARNING: toctree contains reference to nonexisting document 'sat/sage/sat/boolean_polynomials'
 > }}}
+
 Though I don't yet fully understand why, looking at the other doc suggest that
 replacing the three `:maxdepth: 1` by `:maxdepth: 2` should solve this
 particular problem. I don't have time to propose a patch now.
@@ -4519,6 +4545,7 @@ Replying to [comment:185 jdemeyer]:
 > {{{
 > WARNING: intersphinx inventory '/release/merger/sage-5.7.beta2/devel/sage/doc/output/html/en/reference/combinat/objects.inv' not readable due to AssertionError:
 > }}}
+
 
 To investigate this one I need to install `sage-5.7.beta2` which takes
 time. Jeroen, could you give a some context for this second error. I've never
@@ -4535,7 +4562,7 @@ Florent
 archive/issue_comments_052644.json:
 ```json
 {
-    "body": "I don't understand these problems, either. I've never seen the one about the intersphinx inventory. For the other one, aside from `maxdepth: 1`, the other difference is that sage.sat is not imported anywhere:\n\n```\nsage: sage.sat\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/Desktop/Sage_stuff/sage_builds/6495/sage-5.7.beta0/<ipython console> in <module>()\n\nAttributeError: 'module' object has no attribute 'sat'\n```\n\nCould that be related? Should that be fixed in any case?",
+    "body": "I don't understand these problems, either. I've never seen the one about the intersphinx inventory. For the other one, aside from `maxdepth: 1`, the other difference is that sage.sat is not imported anywhere:\n\n```\nsage: sage.sat\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/Desktop/Sage_stuff/sage_builds/6495/sage-5.7.beta0/<ipython console> in <module>()\n\nAttributeError: 'module' object has no attribute 'sat'\n```\nCould that be related? Should that be fixed in any case?",
     "created_at": "2013-01-27T21:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4555,7 +4582,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'module' object has no attribute 'sat'
 ```
-
 Could that be related? Should that be fixed in any case?
 
 
@@ -4601,7 +4627,7 @@ Changing assignee from tba to @jdemeyer.
 archive/issue_comments_052647.json:
 ```json
 {
-    "body": "Replying to [comment:188 jdemeyer]:\n> See the logfile [attachment:dochtml.log] (this is from a second build, note the error message is slightly different).\n\nI'm seriously scared that it could come from a race condition, an nightmare to debug. Is it deterministic ?",
+    "body": "Replying to [comment:188 jdemeyer]:\n> See the logfile [attachment:dochtml.log] (this is from a second build, note the error message is slightly different).\n\n\nI'm seriously scared that it could come from a race condition, an nightmare to debug. Is it deterministic ?",
     "created_at": "2013-01-28T08:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4613,6 +4639,7 @@ archive/issue_comments_052647.json:
 Replying to [comment:188 jdemeyer]:
 > See the logfile [attachment:dochtml.log] (this is from a second build, note the error message is slightly different).
 
+
 I'm seriously scared that it could come from a race condition, an nightmare to debug. Is it deterministic ?
 
 
@@ -4622,7 +4649,7 @@ I'm seriously scared that it could come from a race condition, an nightmare to d
 archive/issue_comments_052648.json:
 ```json
 {
-    "body": "On what platforms, and how reliably, do you see the `WARNING: intersphinx inventory ...`?\n\nFor the other problem, this patch fixes it for me:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -274,7 +274,7 @@ class AllBuilder(object):\n         global ALLSPHINXOPTS\n         ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n         for document in refs:\n-            getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            getattr(get_builder(document), name)(*args, **kwds)\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n```\n\nOr perhaps we should use this one:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -274,7 +274,10 @@ class AllBuilder(object):\n         global ALLSPHINXOPTS\n         ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n         for document in refs:\n-            getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            if name == 'pdf':\n+                getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            else:\n+                getattr(get_builder(document), name)(*args, **kwds)\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n```\n\nWith an html build, building with this patch does not take any more time. Opinions?",
+    "body": "On what platforms, and how reliably, do you see the `WARNING: intersphinx inventory ...`?\n\nFor the other problem, this patch fixes it for me:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -274,7 +274,7 @@ class AllBuilder(object):\n         global ALLSPHINXOPTS\n         ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n         for document in refs:\n-            getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            getattr(get_builder(document), name)(*args, **kwds)\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n```\nOr perhaps we should use this one:\n\n```diff\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -274,7 +274,10 @@ class AllBuilder(object):\n         global ALLSPHINXOPTS\n         ALLSPHINXOPTS += ' -Q -D multidoc_first_pass=1'\n         for document in refs:\n-            getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            if name == 'pdf':\n+                getattr(get_builder(document), 'inventory')(*args, **kwds)\n+            else:\n+                getattr(get_builder(document), name)(*args, **kwds)\n         logger.warning(\"Building reference manual, second pass.\\n\")\n         ALLSPHINXOPTS = ALLSPHINXOPTS.replace(\n             'multidoc_first_pass=1', 'multidoc_first_pass=0')\n```\nWith an html build, building with this patch does not take any more time. Opinions?",
     "created_at": "2013-01-28T19:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4649,7 +4676,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
          ALLSPHINXOPTS = ALLSPHINXOPTS.replace(
              'multidoc_first_pass=1', 'multidoc_first_pass=0')
 ```
-
 Or perhaps we should use this one:
 
 ```diff
@@ -4669,7 +4695,6 @@ diff --git a/doc/common/builder.py b/doc/common/builder.py
          ALLSPHINXOPTS = ALLSPHINXOPTS.replace(
              'multidoc_first_pass=1', 'multidoc_first_pass=0')
 ```
-
 With an html build, building with this patch does not take any more time. Opinions?
 
 
@@ -4679,7 +4704,7 @@ With an html build, building with this patch does not take any more time. Opinio
 archive/issue_comments_052649.json:
 ```json
 {
-    "body": "By the way, the new version of the script doesn't work on OS X, because OS X uses a BSD version of `sed` which is not completely compatible with the linux version. To get it to work, you have to make these changes:\n\n```diff\n--- a/trac_6495-script.sh\t2013-01-27 03:44:32.000000000 -0800\n+++ b/trac_6495-script.sh\t2013-01-28 10:53:39.000000000 -0800\n@@ -16,9 +16,9 @@\n do\n     hg rename $f.rst $f/index.rst\n     # delete lines of the form \".. _ch:blah\"\n-    sed -e 's|^\\.\\. _ch:.*$||' -i $f/index.rst\n+    sed -e 's|^\\.\\. _ch:.*$||' -i '' $f/index.rst\n     # remove resulting blank lines from top of file\n-    sed -e '/./,$!d' -i $f/index.rst\n+    sed -e '/./,$!d' -i '' $f/index.rst\n     cat >$f/conf.py <<EOF\n # -*- coding: utf-8 -*-\n # This file is execfile()d with the current directory set to its\n@@ -47,7 +47,7 @@\n cp cmd/conf.py combinat/conf.py\n hg add combinat/conf.py\n # in combinat/index.rst: change \"../sage/combinat/blah\" to \"sage/combinat/blah\"\n-sed -e \"s|\\.\\./||\" -i combinat/index.rst\n+sed -e \"s|\\.\\./||\" -i '' combinat/index.rst\n \n cat >> combinat/index.rst <<EOF\n \n```\n",
+    "body": "By the way, the new version of the script doesn't work on OS X, because OS X uses a BSD version of `sed` which is not completely compatible with the linux version. To get it to work, you have to make these changes:\n\n```diff\n--- a/trac_6495-script.sh\t2013-01-27 03:44:32.000000000 -0800\n+++ b/trac_6495-script.sh\t2013-01-28 10:53:39.000000000 -0800\n@@ -16,9 +16,9 @@\n do\n     hg rename $f.rst $f/index.rst\n     # delete lines of the form \".. _ch:blah\"\n-    sed -e 's|^\\.\\. _ch:.*$||' -i $f/index.rst\n+    sed -e 's|^\\.\\. _ch:.*$||' -i '' $f/index.rst\n     # remove resulting blank lines from top of file\n-    sed -e '/./,$!d' -i $f/index.rst\n+    sed -e '/./,$!d' -i '' $f/index.rst\n     cat >$f/conf.py <<EOF\n # -*- coding: utf-8 -*-\n # This file is execfile()d with the current directory set to its\n@@ -47,7 +47,7 @@\n cp cmd/conf.py combinat/conf.py\n hg add combinat/conf.py\n # in combinat/index.rst: change \"../sage/combinat/blah\" to \"sage/combinat/blah\"\n-sed -e \"s|\\.\\./||\" -i combinat/index.rst\n+sed -e \"s|\\.\\./||\" -i '' combinat/index.rst\n \n cat >> combinat/index.rst <<EOF\n \n```",
     "created_at": "2013-01-28T19:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4718,13 +4743,12 @@ By the way, the new version of the script doesn't work on OS X, because OS X use
 
 
 
-
 ---
 
 archive/issue_comments_052650.json:
 ```json
 {
-    "body": "Replying to [comment:190 jhpalmieri]:\n> On what platforms\nOnly tried `sage.math` so far.\n\n> and how reliably, do you see the `WARNING: intersphinx inventory ...`?\nTwo out of two builds so far.",
+    "body": "Replying to [comment:190 jhpalmieri]:\n> On what platforms\n\nOnly tried `sage.math` so far.\n\n> and how reliably, do you see the `WARNING: intersphinx inventory ...`?\n\nTwo out of two builds so far.",
     "created_at": "2013-01-29T07:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4735,9 +4759,11 @@ archive/issue_comments_052650.json:
 
 Replying to [comment:190 jhpalmieri]:
 > On what platforms
+
 Only tried `sage.math` so far.
 
 > and how reliably, do you see the `WARNING: intersphinx inventory ...`?
+
 Two out of two builds so far.
 
 
@@ -4765,7 +4791,7 @@ script used to generate "part 1" patch
 archive/issue_comments_052652.json:
 ```json
 {
-    "body": "Attachment [trac_6495-script.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script.sh) by @jdemeyer created at 2013-01-29 16:00:29\n\nThird attempt, now it's the notebook which gives problems:\n\n```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n```\n\n\nSo it's certainly not deterministic, but quite likely that **something** goes wrong.",
+    "body": "Attachment [trac_6495-script.sh](tarball://root/attachments/some-uuid/ticket6495/trac_6495-script.sh) by @jdemeyer created at 2013-01-29 16:00:29\n\nThird attempt, now it's the notebook which gives problems:\n\n```\nWARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n```\n\nSo it's certainly not deterministic, but quite likely that **something** goes wrong.",
     "created_at": "2013-01-29T16:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4782,7 +4808,6 @@ Third attempt, now it's the notebook which gives problems:
 WARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version
 ```
 
-
 So it's certainly not deterministic, but quite likely that **something** goes wrong.
 
 
@@ -4792,7 +4817,7 @@ So it's certainly not deterministic, but quite likely that **something** goes wr
 archive/issue_comments_052653.json:
 ```json
 {
-    "body": "Hi there,\n\nReplying to [comment:193 jdemeyer]:\n> Third attempt, now it's the notebook which gives problems:\n> {{{\n> WARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n> }}}\n>\n> So it's certainly not deterministic, but quite likely that **something** goes wrong.\n\nUnfortunately the one week window for sage days I had is over. I didn't had\ntime to make any experiment, and I don't expect to find much time to work on\nthis in the forthcoming days (the new semester is starting and I'm moving from\none house to another in two weeks).\n\nAnyway, I have a guess one what could be happening. The first pass of\ncompilation is designed to build the intersphinx inventory. However, they are\nrewritten during the second phase. Due to parallelism, it is fairly possible\nthat one process is trying to read the inventory just at the time another one\nis writing it. The more process you have, the larger the probability of this\nhappening. This explain why we don't see this on small laptop. I'm not sure\nhow to test that this is precisely what's happening. But if it's the case, the\nsolution should be easy: similarly to what I did recently for indexes, we\nshould deactivate the output of the inventory for a second pass compilation of\na sub-document.\n\nDoes anyone have time to experiment more ?",
+    "body": "Hi there,\n\nReplying to [comment:193 jdemeyer]:\n> Third attempt, now it's the notebook which gives problems:\n> \n> ```\n> WARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version\n> ```\n\n>\n> So it's certainly not deterministic, but quite likely that **something** goes wrong.\n\n\nUnfortunately the one week window for sage days I had is over. I didn't had\ntime to make any experiment, and I don't expect to find much time to work on\nthis in the forthcoming days (the new semester is starting and I'm moving from\none house to another in two weeks).\n\nAnyway, I have a guess one what could be happening. The first pass of\ncompilation is designed to build the intersphinx inventory. However, they are\nrewritten during the second phase. Due to parallelism, it is fairly possible\nthat one process is trying to read the inventory just at the time another one\nis writing it. The more process you have, the larger the probability of this\nhappening. This explain why we don't see this on small laptop. I'm not sure\nhow to test that this is precisely what's happening. But if it's the case, the\nsolution should be easy: similarly to what I did recently for indexes, we\nshould deactivate the output of the inventory for a second pass compilation of\na sub-document.\n\nDoes anyone have time to experiment more ?",
     "created_at": "2013-01-29T18:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4805,11 +4830,14 @@ Hi there,
 
 Replying to [comment:193 jdemeyer]:
 > Third attempt, now it's the notebook which gives problems:
-> {{{
+> 
+> ```
 > WARNING: intersphinx inventory '/release/merger/sage-5.7.beta3/devel/sage/doc/output/html/en/reference/notebook/objects.inv' not readable due to ValueError: unknown or unsupported inventory version
-> }}}
+> ```
+
 >
 > So it's certainly not deterministic, but quite likely that **something** goes wrong.
+
 
 Unfortunately the one week window for sage days I had is over. I didn't had
 time to make any experiment, and I don't expect to find much time to work on
@@ -4854,7 +4882,7 @@ I have not been able to reproduce this on sage.math. I've tried building in /scr
 archive/issue_comments_052655.json:
 ```json
 {
-    "body": "Replying to [comment:195 jhpalmieri]:\n> Could there be something about /release that's contributing to this?\nIt's quite a fast disk, could that play a role?\n\n> Jeroen, what do you have `MAKE` set to?\n\n```\nMAKE=make -j6\n```\n",
+    "body": "Replying to [comment:195 jhpalmieri]:\n> Could there be something about /release that's contributing to this?\n\nIt's quite a fast disk, could that play a role?\n\n> Jeroen, what do you have `MAKE` set to?\n\n{{{\nMAKE=make -j6\n}}}",
     "created_at": "2013-01-29T18:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4865,14 +4893,14 @@ archive/issue_comments_052655.json:
 
 Replying to [comment:195 jhpalmieri]:
 > Could there be something about /release that's contributing to this?
+
 It's quite a fast disk, could that play a role?
 
 > Jeroen, what do you have `MAKE` set to?
 
-```
+{{{
 MAKE=make -j6
-```
-
+}}}
 
 
 
@@ -4899,7 +4927,7 @@ You just have to `strace -o logfile -ff` the build process, then you'll see who 
 archive/issue_comments_052657.json:
 ```json
 {
-    "body": "> You just have to `strace -o logfile -ff` the build process, then you'll see who is writing to the offending file. Also, can we have a beta with this ticket? Too many patches ;-)\n+1",
+    "body": "> You just have to `strace -o logfile -ff` the build process, then you'll see who is writing to the offending file. Also, can we have a beta with this ticket? Too many patches ;-)\n\n+1",
     "created_at": "2013-01-29T19:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4909,6 +4937,7 @@ archive/issue_comments_052657.json:
 ```
 
 > You just have to `strace -o logfile -ff` the build process, then you'll see who is writing to the offending file. Also, can we have a beta with this ticket? Too many patches ;-)
+
 +1
 
 
@@ -4936,7 +4965,7 @@ archive/issue_comments_052658.json:
 archive/issue_comments_052659.json:
 ```json
 {
-    "body": "Wow, going fast already.\n\n```\nElapsed time: 284.1 seconds.\n```\n\nJust a *slight* improvement.\n\nI couldn't find (i.e., browser says it's not there)\n\nfile:///Users/.../sage-5.7.beta1_6495/devel/sage-main/doc/output/html/en/reference/functions.html\n\nand the like, but most redirection of actual pages of content seem to be working fine - it's the old ones corresponding to \n\nfile:///Users/.../sage-5.7.beta1_6495/devel/sage-main/doc/output/html/en/reference/functions/index.html\n\nthat seem to have not been \"translated\" properly.",
+    "body": "Wow, going fast already.\n\n```\nElapsed time: 284.1 seconds.\n```\nJust a *slight* improvement.\n\nI couldn't find (i.e., browser says it's not there)\n\nfile:///Users/.../sage-5.7.beta1_6495/devel/sage-main/doc/output/html/en/reference/functions.html\n\nand the like, but most redirection of actual pages of content seem to be working fine - it's the old ones corresponding to \n\nfile:///Users/.../sage-5.7.beta1_6495/devel/sage-main/doc/output/html/en/reference/functions/index.html\n\nthat seem to have not been \"translated\" properly.",
     "created_at": "2013-01-30T03:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -4950,7 +4979,6 @@ Wow, going fast already.
 ```
 Elapsed time: 284.1 seconds.
 ```
-
 Just a *slight* improvement.
 
 I couldn't find (i.e., browser says it's not there)
@@ -5010,7 +5038,7 @@ I've started by adding a framework to suppress unwanted messages and print the o
 archive/issue_comments_052662.json:
 ```json
 {
-    "body": "The issue was indeed that the object inventory was written to and read from parallel processes. Sphinx makes no attempt to update the `object.inv` atomically.\n\nI've changed things such that\n* the inventory build process outputs to `output/inventory` and does not read inventory\n* the second pass then reads the object inventory from `output/inventory` and writes to `output/html`\n\nNow I don't see any races any more. The first stage still warns erroneously about a few missing citations, but thats not a big deal. \n\nAlso, the whole thing runs just shy of 200 seconds on my desktop (i7-3770K)\n\n```\nsage -docbuild all html\n...\nElapsed time: 196.5 seconds.\nDone building the documentation!\n```\n",
+    "body": "The issue was indeed that the object inventory was written to and read from parallel processes. Sphinx makes no attempt to update the `object.inv` atomically.\n\nI've changed things such that\n* the inventory build process outputs to `output/inventory` and does not read inventory\n* the second pass then reads the object inventory from `output/inventory` and writes to `output/html`\n\nNow I don't see any races any more. The first stage still warns erroneously about a few missing citations, but thats not a big deal. \n\nAlso, the whole thing runs just shy of 200 seconds on my desktop (i7-3770K)\n\n```\nsage -docbuild all html\n...\nElapsed time: 196.5 seconds.\nDone building the documentation!\n```",
     "created_at": "2013-02-01T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5035,7 +5063,6 @@ sage -docbuild all html
 Elapsed time: 196.5 seconds.
 Done building the documentation!
 ```
-
 
 
 
@@ -5082,7 +5109,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052665.json:
 ```json
 {
-    "body": "Not sure why you removed the script, because the patches still fail to apply:\n\n```\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\nHunk #3 FAILED at 66\n2 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatching file doc/en/reference/groups/index.rst\nHunk #2 succeeded at 39 with fuzz 1 (offset 9 lines).\nabort: patch failed to apply\n```\n",
+    "body": "Not sure why you removed the script, because the patches still fail to apply:\n\n```\npatching file doc/en/reference/combinat/index.rst\nHunk #1 FAILED at 3\nHunk #3 FAILED at 66\n2 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/combinat/index.rst.rej\npatching file doc/en/reference/groups/index.rst\nHunk #2 succeeded at 39 with fuzz 1 (offset 9 lines).\nabort: patch failed to apply\n```",
     "created_at": "2013-02-01T16:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5102,7 +5129,6 @@ patching file doc/en/reference/groups/index.rst
 Hunk #2 succeeded at 39 with fuzz 1 (offset 9 lines).
 abort: patch failed to apply
 ```
-
 
 
 
@@ -5223,7 +5249,7 @@ The only thing left to review would be my final patch. I made all changes that I
 archive/issue_comments_052672.json:
 ```json
 {
-    "body": "I haven't verified that the intersphinx warning is gone, but I see two other possible problems: I get a warning \n\n```\n[reference] .../sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:: WARNING: document isn't included in any toctree\n```\n\nalong with some citations not being found. Also with [attachment:trac_6495_separate_inventory.patch], the build is a bit slower than without: on my OS X box (with only two threads), the fastest time with the patch was 858 seconds, and more typical (5 out of 6 runs) was 885 seconds or more. Without the patch, the slowest time was 813 seconds.  On sage.math, with `MAKE=\"make -j12\"`: with the patch, 450 seconds, without the patch, 390 seconds.",
+    "body": "I haven't verified that the intersphinx warning is gone, but I see two other possible problems: I get a warning \n\n```\n[reference] .../sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:: WARNING: document isn't included in any toctree\n```\nalong with some citations not being found. Also with [attachment:trac_6495_separate_inventory.patch], the build is a bit slower than without: on my OS X box (with only two threads), the fastest time with the patch was 858 seconds, and more typical (5 out of 6 runs) was 885 seconds or more. Without the patch, the slowest time was 813 seconds.  On sage.math, with `MAKE=\"make -j12\"`: with the patch, 450 seconds, without the patch, 390 seconds.",
     "created_at": "2013-02-01T23:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5237,7 +5263,6 @@ I haven't verified that the intersphinx warning is gone, but I see two other pos
 ```
 [reference] .../sage-5.7.beta2/devel/sage/doc/en/reference/sat/index.rst:: WARNING: document isn't included in any toctree
 ```
-
 along with some citations not being found. Also with [attachment:trac_6495_separate_inventory.patch], the build is a bit slower than without: on my OS X box (with only two threads), the fastest time with the patch was 858 seconds, and more typical (5 out of 6 runs) was 885 seconds or more. Without the patch, the slowest time was 813 seconds.  On sage.math, with `MAKE="make -j12"`: with the patch, 450 seconds, without the patch, 390 seconds.
 
 
@@ -5287,7 +5312,7 @@ The last patch fixes the unlisted sat subdoc and moves the citations pickle to t
 archive/issue_comments_052675.json:
 ```json
 {
-    "body": "> Are you always nuking the output directory for timings?\n\nYes. Good catch on finding sat not being listed in `multidocs_subdoc_list`, by the way.",
+    "body": "> Are you always nuking the output directory for timings?\n\n\nYes. Good catch on finding sat not being listed in `multidocs_subdoc_list`, by the way.",
     "created_at": "2013-02-02T16:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5298,6 +5323,7 @@ archive/issue_comments_052675.json:
 
 > Are you always nuking the output directory for timings?
 
+
 Yes. Good catch on finding sat not being listed in `multidocs_subdoc_list`, by the way.
 
 
@@ -5307,7 +5333,7 @@ Yes. Good catch on finding sat not being listed in `multidocs_subdoc_list`, by t
 archive/issue_comments_052676.json:
 ```json
 {
-    "body": "I'm pretty happy with the latest patches, but I'm not quite ready to give a positive review. In my testing, I'm not seeing the intersphinx warning any more, but I was only sporadically able to reproduce it in the first place.\n\nWith the current `useless_chatter` settings, on the first pass through the reference manual, I see two summaries\n\n```\n[polynomia] build succeeded, 1 warning.\n[geometry ] build succeeded, 3 warnings.\n```\n\nThe actual warnings are suppressed, though. Should these message be suppressed (or modified), also? Otherwise, someone might wonder what the warnings actually were.",
+    "body": "I'm pretty happy with the latest patches, but I'm not quite ready to give a positive review. In my testing, I'm not seeing the intersphinx warning any more, but I was only sporadically able to reproduce it in the first place.\n\nWith the current `useless_chatter` settings, on the first pass through the reference manual, I see two summaries\n\n```\n[polynomia] build succeeded, 1 warning.\n[geometry ] build succeeded, 3 warnings.\n```\nThe actual warnings are suppressed, though. Should these message be suppressed (or modified), also? Otherwise, someone might wonder what the warnings actually were.",
     "created_at": "2013-02-04T04:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5324,7 +5350,6 @@ With the current `useless_chatter` settings, on the first pass through the refer
 [polynomia] build succeeded, 1 warning.
 [geometry ] build succeeded, 3 warnings.
 ```
-
 The actual warnings are suppressed, though. Should these message be suppressed (or modified), also? Otherwise, someone might wonder what the warnings actually were.
 
 
@@ -5334,7 +5359,7 @@ The actual warnings are suppressed, though. Should these message be suppressed (
 archive/issue_comments_052677.json:
 ```json
 {
-    "body": "Another thing: if I have built the documentation already and then run `./sage --docbuild reference html`, then all of the output from building the individual parts of the reference manual is suppressed, so there is a long pause (several minutes, enough to wonder whether it's hung), and then finally \n\n```\n[reference] Compiling the master document\n[reference] updating environment: 0 added, 0 changed, 1098 removed\n[reference] Merging environment/index files...\n```\n",
+    "body": "Another thing: if I have built the documentation already and then run `./sage --docbuild reference html`, then all of the output from building the individual parts of the reference manual is suppressed, so there is a long pause (several minutes, enough to wonder whether it's hung), and then finally \n\n```\n[reference] Compiling the master document\n[reference] updating environment: 0 added, 0 changed, 1098 removed\n[reference] Merging environment/index files...\n```",
     "created_at": "2013-02-04T06:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5353,13 +5378,12 @@ Another thing: if I have built the documentation already and then run `./sage --
 
 
 
-
 ---
 
 archive/issue_comments_052678.json:
 ```json
 {
-    "body": "Maybe just removing one line from `useless_chatter` would address my last point:\n\n```diff\ndiff --git a/doc/common/custom-sphinx-build.py b/doc/common/custom-sphinx-build.py\n--- a/doc/common/custom-sphinx-build.py\n+++ b/doc/common/custom-sphinx-build.py\n@@ -31,7 +31,6 @@\n     re.compile('^Compiling a sub-document'),\n     re.compile('^updating environment: 0 added, 0 changed, 0 removed'),\n     re.compile('^looking for now-outdated files... none found'),\n-    re.compile('^no targets are out of date.'),\n     re.compile('^building \\[.*\\]: targets for 0 source files that are out of date'),\n     re.compile('^loading pickled environment... done'),\n     re.compile('^loading cross citations... done \\([0-9]* citations\\).')\n```\n\ndoesn't look too bad: if you change one file in `homology` then rebuild the docs, then you get\n\n```\n[polynomia] no targets are out of date.\n[combinat ] no targets are out of date.\n[cmd      ] no targets are out of date.\n[arithgrou] no targets are out of date.\n[graphs   ] no targets are out of date.\n[misc     ] no targets are out of date.\n...\n```\n\nuntil it finally gets to something which has changed.",
+    "body": "Maybe just removing one line from `useless_chatter` would address my last point:\n\n```diff\ndiff --git a/doc/common/custom-sphinx-build.py b/doc/common/custom-sphinx-build.py\n--- a/doc/common/custom-sphinx-build.py\n+++ b/doc/common/custom-sphinx-build.py\n@@ -31,7 +31,6 @@\n     re.compile('^Compiling a sub-document'),\n     re.compile('^updating environment: 0 added, 0 changed, 0 removed'),\n     re.compile('^looking for now-outdated files... none found'),\n-    re.compile('^no targets are out of date.'),\n     re.compile('^building \\[.*\\]: targets for 0 source files that are out of date'),\n     re.compile('^loading pickled environment... done'),\n     re.compile('^loading cross citations... done \\([0-9]* citations\\).')\n```\ndoesn't look too bad: if you change one file in `homology` then rebuild the docs, then you get\n\n```\n[polynomia] no targets are out of date.\n[combinat ] no targets are out of date.\n[cmd      ] no targets are out of date.\n[arithgrou] no targets are out of date.\n[graphs   ] no targets are out of date.\n[misc     ] no targets are out of date.\n...\n```\nuntil it finally gets to something which has changed.",
     "created_at": "2013-02-04T17:00:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5383,7 +5407,6 @@ diff --git a/doc/common/custom-sphinx-build.py b/doc/common/custom-sphinx-build.
      re.compile('^loading pickled environment... done'),
      re.compile('^loading cross citations... done \([0-9]* citations\).')
 ```
-
 doesn't look too bad: if you change one file in `homology` then rebuild the docs, then you get
 
 ```
@@ -5395,7 +5418,6 @@ doesn't look too bad: if you change one file in `homology` then rebuild the docs
 [misc     ] no targets are out of date.
 ...
 ```
-
 until it finally gets to something which has changed.
 
 
@@ -5443,7 +5465,7 @@ Attachment [trac_6495-filtering.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_052681.json:
 ```json
 {
-    "body": "Attachment [trac-6495_silence_warning-fh.v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.v2.patch) by @jhpalmieri created at 2013-02-06 04:01:38\n\nI rebased the patches to 5.7.beta3. The only change of substance: in the \"part2\" patch:\n\n```diff\ndiff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py\n--- a/sage/graphs/graph_plot.py\n+++ b/sage/graphs/graph_plot.py\n@@ -106,7 +106,7 @@\n       settings from ``DEFAULT_SHOW_OPTIONS`` only affects ``G.show()``.\n \n     * In order to define a default value permanently, you can add a couple of\n-      lines to :doc:`Sage's startup scripts <../../startup>`. Example ::\n+      lines to `Sage's startup scripts <../../../cmd/startup.html>`_. Example ::\n \n        sage: import sage.graphs.graph_plot\n        sage: sage.graphs.graph_plot.DEFAULT_SHOW_OPTIONS['figsize'] = [4,4]\n```\n\n(The only change to the \"part3\" patch was to change the commit message.) With the newest patch ([attachment:trac_6495-filtering.patch]), all superfluous warnings are suppressed. I'm happy with this now.\n\nI think it might be best to include every single patch, or else credit will not get assigned appropriately; for example, the old \"all in one\" patch combined my work (which is really based on mpatel's, but I don't know how to get his name back in here...) with Florent's.",
+    "body": "Attachment [trac-6495_silence_warning-fh.v2.patch](tarball://root/attachments/some-uuid/ticket6495/trac-6495_silence_warning-fh.v2.patch) by @jhpalmieri created at 2013-02-06 04:01:38\n\nI rebased the patches to 5.7.beta3. The only change of substance: in the \"part2\" patch:\n\n```diff\ndiff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py\n--- a/sage/graphs/graph_plot.py\n+++ b/sage/graphs/graph_plot.py\n@@ -106,7 +106,7 @@\n       settings from ``DEFAULT_SHOW_OPTIONS`` only affects ``G.show()``.\n \n     * In order to define a default value permanently, you can add a couple of\n-      lines to :doc:`Sage's startup scripts <../../startup>`. Example ::\n+      lines to `Sage's startup scripts <../../../cmd/startup.html>`_. Example ::\n \n        sage: import sage.graphs.graph_plot\n        sage: sage.graphs.graph_plot.DEFAULT_SHOW_OPTIONS['figsize'] = [4,4]\n```\n(The only change to the \"part3\" patch was to change the commit message.) With the newest patch ([attachment:trac_6495-filtering.patch]), all superfluous warnings are suppressed. I'm happy with this now.\n\nI think it might be best to include every single patch, or else credit will not get assigned appropriately; for example, the old \"all in one\" patch combined my work (which is really based on mpatel's, but I don't know how to get his name back in here...) with Florent's.",
     "created_at": "2013-02-06T04:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5470,7 +5492,6 @@ diff --git a/sage/graphs/graph_plot.py b/sage/graphs/graph_plot.py
         sage: import sage.graphs.graph_plot
         sage: sage.graphs.graph_plot.DEFAULT_SHOW_OPTIONS['figsize'] = [4,4]
 ```
-
 (The only change to the "part3" patch was to change the commit message.) With the newest patch ([attachment:trac_6495-filtering.patch]), all superfluous warnings are suppressed. I'm happy with this now.
 
 I think it might be best to include every single patch, or else credit will not get assigned appropriately; for example, the old "all in one" patch combined my work (which is really based on mpatel's, but I don't know how to get his name back in here...) with Florent's.
@@ -5577,7 +5598,7 @@ Attachment [trac_6495-part3-the-remaining-vs-5.7.beta4.patch](tarball://root/att
 archive/issue_comments_052687.json:
 ```json
 {
-    "body": "Aha, now I understand! It starts with doc/en/reference/rings_standard.rst, adds one line and moves the result to doc/en/reference/rings_standard/index.rst.\n\nProblem: The line\n\n```\nsage/rings/universal_cyclotomic_field/universal_cyclotomic_field\n```\n\ndoes not exist in sage-5.7.beta2.\n\nIn what ticket has this line been introduced? That would be a new dependency.",
+    "body": "Aha, now I understand! It starts with doc/en/reference/rings_standard.rst, adds one line and moves the result to doc/en/reference/rings_standard/index.rst.\n\nProblem: The line\n\n```\nsage/rings/universal_cyclotomic_field/universal_cyclotomic_field\n```\ndoes not exist in sage-5.7.beta2.\n\nIn what ticket has this line been introduced? That would be a new dependency.",
     "created_at": "2013-02-09T22:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5593,7 +5614,6 @@ Problem: The line
 ```
 sage/rings/universal_cyclotomic_field/universal_cyclotomic_field
 ```
-
 does not exist in sage-5.7.beta2.
 
 In what ticket has this line been introduced? That would be a new dependency.
@@ -5625,7 +5645,7 @@ Simon: the patches should apply to 5.7.beta4, and probably only to this version.
 archive/issue_comments_052689.json:
 ```json
 {
-    "body": "Bad. It seems that I managed to destroy my sage-5.7.beta2 by this patch. No idea how that happened. Could it be that popping the patch does not revert all changes?\n\nReplying to [comment:221 jhpalmieri]:\n> [Here's a tar file](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495.tar) for 5.7.beta4 source with these patches applied.\n\nI currently don't have the bandwith to download a Sage tarball.",
+    "body": "Bad. It seems that I managed to destroy my sage-5.7.beta2 by this patch. No idea how that happened. Could it be that popping the patch does not revert all changes?\n\nReplying to [comment:221 jhpalmieri]:\n> [Here's a tar file](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495.tar) for 5.7.beta4 source with these patches applied.\n\n\nI currently don't have the bandwith to download a Sage tarball.",
     "created_at": "2013-02-09T22:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5638,6 +5658,7 @@ Bad. It seems that I managed to destroy my sage-5.7.beta2 by this patch. No idea
 
 Replying to [comment:221 jhpalmieri]:
 > [Here's a tar file](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495.tar) for 5.7.beta4 source with these patches applied.
+
 
 I currently don't have the bandwith to download a Sage tarball.
 
@@ -5670,7 +5691,7 @@ Is there a good way with mercurial to find out all of the recent changes to file
 archive/issue_comments_052691.json:
 ```json
 {
-    "body": "Replying to [comment:223 jhpalmieri]:\n> How about downloading [just the sage library spkg](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495/spkg/standard/sage-5.7.beta4-6495.spkg) (which is 57M)?\n\nThat could be a good idea.",
+    "body": "Replying to [comment:223 jhpalmieri]:\n> How about downloading [just the sage library spkg](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495/spkg/standard/sage-5.7.beta4-6495.spkg) (which is 57M)?\n\n\nThat could be a good idea.",
     "created_at": "2013-02-09T22:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5681,6 +5702,7 @@ archive/issue_comments_052691.json:
 
 Replying to [comment:223 jhpalmieri]:
 > How about downloading [just the sage library spkg](http://sage.math.washington.edu/home/palmieri/misc/6495/sage-5.7.beta4-6495/spkg/standard/sage-5.7.beta4-6495.spkg) (which is 57M)?
+
 
 That could be a good idea.
 
@@ -5825,7 +5847,7 @@ script used to generate "part 1" patch
 archive/issue_comments_052699.json:
 ```json
 {
-    "body": "> [attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)\nI suppose so that the history is preserved.  That said, it would be helpful to have that ability for at least some users.\n\nGiven your post at [this sage-support thread](https://groups.google.com/forum/?fromgroups=#!topic/sage-support/vj_W8wc9Mic), now it's really exciting to think about this getting in.",
+    "body": "> [attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)\n\nI suppose so that the history is preserved.  That said, it would be helpful to have that ability for at least some users.\n\nGiven your post at [this sage-support thread](https://groups.google.com/forum/?fromgroups=#!topic/sage-support/vj_W8wc9Mic), now it's really exciting to think about this getting in.",
     "created_at": "2013-02-10T04:11:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5835,6 +5857,7 @@ archive/issue_comments_052699.json:
 ```
 
 > [attachment:trac_6495-script-jhp.2.sh] is identical to the old script; it can be deleted. (Why can't I delete my own attachments?)
+
 I suppose so that the history is preserved.  That said, it would be helpful to have that ability for at least some users.
 
 Given your post at [this sage-support thread](https://groups.google.com/forum/?fromgroups=#!topic/sage-support/vj_W8wc9Mic), now it's really exciting to think about this getting in.
@@ -5882,7 +5905,7 @@ That said: I am not totally sure, but my impression is that building the documen
 archive/issue_comments_052702.json:
 ```json
 {
-    "body": "OK, processing the `LaTeX` files seems less trivial than I thought, and does take time.\n\nCurrently, I am seeing a lot of unresolved references, and one fatal error:\n\n```\n...\n\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.26942 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n? \n! Emergency stop.\n ...                                              \n                                                  \nl.26942 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on categories.log.\nmake: *** [categories.pdf] Fehler 1\nBuild finished.  The built documents can be found in /home/simon/SAGE/debug/sage-5.7.beta2/devel/sage/doc/output/pdf/en/reference/categories\n[coding   ] building [latex]: all documents\n[coding   ] updating environment: [config changed] 6 added, 0 changed, 0 removed\n[coding   ] reading sources... [ 16%] index\n...\n```\n\n\nI suppose there will automatically be a second run, which resolves the cross-references. And we will see about the fatal error.",
+    "body": "OK, processing the `LaTeX` files seems less trivial than I thought, and does take time.\n\nCurrently, I am seeing a lot of unresolved references, and one fatal error:\n\n```\n...\n\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.26942 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n? \n! Emergency stop.\n ...                                              \n                                                  \nl.26942 \\begin{Verbatim}[commandchars=\\\\\\{\\}]\n                                             \n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on categories.log.\nmake: *** [categories.pdf] Fehler 1\nBuild finished.  The built documents can be found in /home/simon/SAGE/debug/sage-5.7.beta2/devel/sage/doc/output/pdf/en/reference/categories\n[coding   ] building [latex]: all documents\n[coding   ] updating environment: [config changed] 6 added, 0 changed, 0 removed\n[coding   ] reading sources... [ 16%] index\n...\n```\n\nI suppose there will automatically be a second run, which resolves the cross-references. And we will see about the fatal error.",
     "created_at": "2013-02-10T08:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5922,7 +5945,6 @@ Build finished.  The built documents can be found in /home/simon/SAGE/debug/sage
 ...
 ```
 
-
 I suppose there will automatically be a second run, which resolves the cross-references. And we will see about the fatal error.
 
 
@@ -5932,7 +5954,7 @@ I suppose there will automatically be a second run, which resolves the cross-ref
 archive/issue_comments_052703.json:
 ```json
 {
-    "body": "OK, the links in the pdf and the mathematics in the html do not seem to work.\n\nFor example, I am looking at the documentation of sage.structure.coerce, The Coercion Model.\n\nI see\n\n```\nCoercions are canonical (possibly modulo a finite number of deterministic choices) morphisms, and the set of all coercions between all parents forms a commuting diagram (modulo possibly rounding issues). [Math Processing Error] is an example of a coercion. These are invoked implicitly by the coercion model.\n```\n\nin the html. It is fine in the pdf.\n\nBoth in pdf and html, I read\n\n```\nFor more information on how to specify coercions, conversions, and actions, see the documentation for Parent.\n\nclass sage.structure.coerce.CoercionModel_cache_maps\n\n    Bases: sage.structure.element.CoercionModel\n\n    See also sage.categories.pushout\n```\n\n\nI would expect the \"see the documentation for Parent\" and \"See also sage.categories.pushout\" come with a link, but apparently that has been forgotten (bug in the documentation).\n\nIn the html, `Bases: sage.structure.element.CoercionModel` is a link. In the pdf, it is *not* a link. I guess it should be a link in pdf, too, isn't it?",
+    "body": "OK, the links in the pdf and the mathematics in the html do not seem to work.\n\nFor example, I am looking at the documentation of sage.structure.coerce, The Coercion Model.\n\nI see\n\n```\nCoercions are canonical (possibly modulo a finite number of deterministic choices) morphisms, and the set of all coercions between all parents forms a commuting diagram (modulo possibly rounding issues). [Math Processing Error] is an example of a coercion. These are invoked implicitly by the coercion model.\n```\nin the html. It is fine in the pdf.\n\nBoth in pdf and html, I read\n\n```\nFor more information on how to specify coercions, conversions, and actions, see the documentation for Parent.\n\nclass sage.structure.coerce.CoercionModel_cache_maps\n\n    Bases: sage.structure.element.CoercionModel\n\n    See also sage.categories.pushout\n```\n\nI would expect the \"see the documentation for Parent\" and \"See also sage.categories.pushout\" come with a link, but apparently that has been forgotten (bug in the documentation).\n\nIn the html, `Bases: sage.structure.element.CoercionModel` is a link. In the pdf, it is *not* a link. I guess it should be a link in pdf, too, isn't it?",
     "created_at": "2013-02-10T09:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -5950,7 +5972,6 @@ I see
 ```
 Coercions are canonical (possibly modulo a finite number of deterministic choices) morphisms, and the set of all coercions between all parents forms a commuting diagram (modulo possibly rounding issues). [Math Processing Error] is an example of a coercion. These are invoked implicitly by the coercion model.
 ```
-
 in the html. It is fine in the pdf.
 
 Both in pdf and html, I read
@@ -5964,7 +5985,6 @@ class sage.structure.coerce.CoercionModel_cache_maps
 
     See also sage.categories.pushout
 ```
-
 
 I would expect the "see the documentation for Parent" and "See also sage.categories.pushout" come with a link, but apparently that has been forgotten (bug in the documentation).
 
@@ -5995,7 +6015,7 @@ And now the good news: When I added my (not yet completed) thematic tutorial on 
 archive/issue_comments_052705.json:
 ```json
 {
-    "body": "Replying to [comment:235 SimonKing]:\n> OK, the links in the pdf and the mathematics in the html do not seem to work.\n\nFor the links in the pdf, I don't know what to do about that. Intersphinx seems to work only in html, not pdf, or at least that's what I gather from [its documentation](http://sphinx-doc.org/ext/intersphinx.html). I don't even know if it's possible to put relative links into a PDF file. \n\nFor mathematics in the html, I don't see this at all, either on OS X (with any of the browsers I've tried) or on sage.math. See [the coercion model page](http://sage.math.washington.edu/home/palmieri/misc/6495-jsmath/html/en/reference/coercion/sage/structure/coerce.html) on sage.math, for instance -- this renders fine for me with my browser.\n\nDid you delete the directory `devel/sage/doc/output` before the first attempt at a parallel build? If not, maybe there were artifacts there which caused problems. Otherwise, I don't know what's causing it. What is your OS and what is your browser?\n\nReplying to [comment:236 SimonKing]:\n> And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.\n\nGreat.",
+    "body": "Replying to [comment:235 SimonKing]:\n> OK, the links in the pdf and the mathematics in the html do not seem to work.\n\n\nFor the links in the pdf, I don't know what to do about that. Intersphinx seems to work only in html, not pdf, or at least that's what I gather from [its documentation](http://sphinx-doc.org/ext/intersphinx.html). I don't even know if it's possible to put relative links into a PDF file. \n\nFor mathematics in the html, I don't see this at all, either on OS X (with any of the browsers I've tried) or on sage.math. See [the coercion model page](http://sage.math.washington.edu/home/palmieri/misc/6495-jsmath/html/en/reference/coercion/sage/structure/coerce.html) on sage.math, for instance -- this renders fine for me with my browser.\n\nDid you delete the directory `devel/sage/doc/output` before the first attempt at a parallel build? If not, maybe there were artifacts there which caused problems. Otherwise, I don't know what's causing it. What is your OS and what is your browser?\n\nReplying to [comment:236 SimonKing]:\n> And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.\n\n\nGreat.",
     "created_at": "2013-02-10T21:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6007,6 +6027,7 @@ archive/issue_comments_052705.json:
 Replying to [comment:235 SimonKing]:
 > OK, the links in the pdf and the mathematics in the html do not seem to work.
 
+
 For the links in the pdf, I don't know what to do about that. Intersphinx seems to work only in html, not pdf, or at least that's what I gather from [its documentation](http://sphinx-doc.org/ext/intersphinx.html). I don't even know if it's possible to put relative links into a PDF file. 
 
 For mathematics in the html, I don't see this at all, either on OS X (with any of the browsers I've tried) or on sage.math. See [the coercion model page](http://sage.math.washington.edu/home/palmieri/misc/6495-jsmath/html/en/reference/coercion/sage/structure/coerce.html) on sage.math, for instance -- this renders fine for me with my browser.
@@ -6015,6 +6036,7 @@ Did you delete the directory `devel/sage/doc/output` before the first attempt at
 
 Replying to [comment:236 SimonKing]:
 > And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.
+
 
 Great.
 
@@ -6025,7 +6047,7 @@ Great.
 archive/issue_comments_052706.json:
 ```json
 {
-    "body": "Replying to [comment:237 jhpalmieri]:\n> Did you delete the directory `devel/sage/doc/output` before the first attempt at a parallel build?\n\nI deleted it, and I think I did not do a parallel build (or at least, I did not define MAKE to be `make -j2`).\n\n> If not, maybe there were artifacts there which caused problems. Otherwise, I don't know what's causing it. What is your OS and what is your browser?\n\n`openSuse` 12.1 Asparagus, and Firefox 18.0\n\n> Replying to [comment:236 SimonKing]:\n> > And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.\n\nAnd that's why I wonder: The maths is fine in the tutorial, but not in the reference manual.\n\nI just observed: When I load a page from the reference manual, there is a message on the lower left corner of my browser, `Loading [MathJax]/jax/output/HTML-CSS/imageFonts.js`, and a bit later there is a message \"File failed to load\" (but too quickly disappearing, I didn't manage to copy the message).",
+    "body": "Replying to [comment:237 jhpalmieri]:\n> Did you delete the directory `devel/sage/doc/output` before the first attempt at a parallel build?\n\n\nI deleted it, and I think I did not do a parallel build (or at least, I did not define MAKE to be `make -j2`).\n\n> If not, maybe there were artifacts there which caused problems. Otherwise, I don't know what's causing it. What is your OS and what is your browser?\n\n\n`openSuse` 12.1 Asparagus, and Firefox 18.0\n\n> Replying to [comment:236 SimonKing]:\n> > And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.\n\n\nAnd that's why I wonder: The maths is fine in the tutorial, but not in the reference manual.\n\nI just observed: When I load a page from the reference manual, there is a message on the lower left corner of my browser, `Loading [MathJax]/jax/output/HTML-CSS/imageFonts.js`, and a bit later there is a message \"File failed to load\" (but too quickly disappearing, I didn't manage to copy the message).",
     "created_at": "2013-02-10T22:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6037,14 +6059,17 @@ archive/issue_comments_052706.json:
 Replying to [comment:237 jhpalmieri]:
 > Did you delete the directory `devel/sage/doc/output` before the first attempt at a parallel build?
 
+
 I deleted it, and I think I did not do a parallel build (or at least, I did not define MAKE to be `make -j2`).
 
 > If not, maybe there were artifacts there which caused problems. Otherwise, I don't know what's causing it. What is your OS and what is your browser?
+
 
 `openSuse` 12.1 Asparagus, and Firefox 18.0
 
 > Replying to [comment:236 SimonKing]:
 > > And now the good news: When I added my (not yet completed) thematic tutorial on categories and coercion, both the mathematical type-setting *and* the links to the reference manual (!) work fine.
+
 
 And that's why I wonder: The maths is fine in the tutorial, but not in the reference manual.
 
@@ -6077,7 +6102,7 @@ Simon's issue sounds a lot like http://docs.mathjax.org/en/v1.1-latest/installat
 archive/issue_comments_052708.json:
 ```json
 {
-    "body": "Replying to [comment:239 vbraun]:\n> To debug Firefox issues: Tools->Web Developer->Web Console. \n> \n> Simon's issue sounds a lot like http://docs.mathjax.org/en/v1.1-latest/installation.html#firefox-and-local-fonts. Either use a different browser or install the stix fonts.\n\nWould this explain why the maths typesetting is fine in one document and broken in another document?",
+    "body": "Replying to [comment:239 vbraun]:\n> To debug Firefox issues: Tools->Web Developer->Web Console. \n> \n> Simon's issue sounds a lot like http://docs.mathjax.org/en/v1.1-latest/installation.html#firefox-and-local-fonts. Either use a different browser or install the stix fonts.\n\n\nWould this explain why the maths typesetting is fine in one document and broken in another document?",
     "created_at": "2013-02-11T14:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6091,6 +6116,7 @@ Replying to [comment:239 vbraun]:
 > 
 > Simon's issue sounds a lot like http://docs.mathjax.org/en/v1.1-latest/installation.html#firefox-and-local-fonts. Either use a different browser or install the stix fonts.
 
+
 Would this explain why the maths typesetting is fine in one document and broken in another document?
 
 
@@ -6100,7 +6126,7 @@ Would this explain why the maths typesetting is fine in one document and broken 
 archive/issue_comments_052709.json:
 ```json
 {
-    "body": "Replying to [comment:240 SimonKing]:\n> Would this explain why the maths typesetting is fine in one document and broken in another document?\n\nYes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.",
+    "body": "Replying to [comment:240 SimonKing]:\n> Would this explain why the maths typesetting is fine in one document and broken in another document?\n\n\nYes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.",
     "created_at": "2013-02-11T14:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6112,6 +6138,7 @@ archive/issue_comments_052709.json:
 Replying to [comment:240 SimonKing]:
 > Would this explain why the maths typesetting is fine in one document and broken in another document?
 
+
 Yes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.
 
 
@@ -6121,7 +6148,7 @@ Yes. It depends on whether or not mathjax is loaded from the same directory as t
 archive/issue_comments_052710.json:
 ```json
 {
-    "body": "Replying to [comment:241 vbraun]:\n> Replying to [comment:240 SimonKing]:\n> > Would this explain why the maths typesetting is fine in one document and broken in another document?\n> \n> Yes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.\n\nOK, by installing the fonts as suggested on the link you provided, I can now see the reference manual in all its beauty.",
+    "body": "Replying to [comment:241 vbraun]:\n> Replying to [comment:240 SimonKing]:\n> > Would this explain why the maths typesetting is fine in one document and broken in another document?\n\n> \n> Yes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.\n\n\nOK, by installing the fonts as suggested on the link you provided, I can now see the reference manual in all its beauty.",
     "created_at": "2013-02-11T15:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6133,8 +6160,10 @@ archive/issue_comments_052710.json:
 Replying to [comment:241 vbraun]:
 > Replying to [comment:240 SimonKing]:
 > > Would this explain why the maths typesetting is fine in one document and broken in another document?
+
 > 
 > Yes. It depends on whether or not mathjax is loaded from the same directory as the document. And we don't plaster a copy of mathjax into every subdirectory.
+
 
 OK, by installing the fonts as suggested on the link you provided, I can now see the reference manual in all its beauty.
 
@@ -6165,7 +6194,7 @@ There are no inter-document links to specific anchors in the PDF reference manua
 archive/issue_comments_052712.json:
 ```json
 {
-    "body": "Replying to [comment:243 vbraun]:\n> Is there anything left to review? \n\nThe only unreviewed parts are [attachment:trac_6495-filtering.patch] and the change to [attachment:trac_6495-part1-moving-files-link.patch] to use symbolic links for `reference/MODULE/conf.py` (see [comment:229]).",
+    "body": "Replying to [comment:243 vbraun]:\n> Is there anything left to review? \n\n\nThe only unreviewed parts are [attachment:trac_6495-filtering.patch] and the change to [attachment:trac_6495-part1-moving-files-link.patch] to use symbolic links for `reference/MODULE/conf.py` (see [comment:229]).",
     "created_at": "2013-02-12T15:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6176,6 +6205,7 @@ archive/issue_comments_052712.json:
 
 Replying to [comment:243 vbraun]:
 > Is there anything left to review? 
+
 
 The only unreviewed parts are [attachment:trac_6495-filtering.patch] and the change to [attachment:trac_6495-part1-moving-files-link.patch] to use symbolic links for `reference/MODULE/conf.py` (see [comment:229]).
 
@@ -6294,7 +6324,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_052717.json:
 ```json
 {
-    "body": "It still doesn't quite work completely. During one build, I got\n\n```\nBuilding reference manual, first pass.\n\n[polynomia] Exception occurred:\n[polynomia] File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 880, in load_eof\n[polynomia] raise EOFError\n[polynomia] EOFError\n[polynomia] The full traceback has been saved in /tmp/release/sphinx-err-2hqEZ_.log, if you want to report the issue to the developers.\n[polynomia] Please also report this if it was a user error, so that a better error message can be provided next time.\n[polynomia] Either send bugs to the mailing list at <http://groups.google.com/group/sphinx-dev/>,\n[polynomia] or report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!\n```\n\nwhere the \"full traceback\" reads\n\n```\n# Sphinx version: 1.1.2\n# Python version: 2.7.3\n# Docutils version: 0.7 release\n# Jinja2 version: 2.5.5\nTraceback (most recent call last):\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/cmdline.py\", line 188, in main\n    warningiserror, tags)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/application.py\", line 114, in __init__\n    self.setup_extension(extension)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/application.py\", line 247, in setup_extension\n    mod = __import__(extension, None, None, ['setup'])\n  File \"/release/merger/sage-5.8.beta0/devel/sage-main/doc/common/sage_autodoc.py\", line 35, in <module>\n    from sphinx.pycode import ModuleAnalyzer, PycodeError\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/__init__.py\", line 25, in <module>\n    pygrammar = driver.load_grammar(_grammarfile)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/pgen2/driver.py\", line 135, in load_grammar\n    g.load(gp)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/pgen2/grammar.py\", line 96, in load\n    d = pickle.load(f)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 1378, in load\n    return Unpickler(file).load()\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 858, in load\n    dispatch[key](self)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 880, in load_eof\n    raise EOFError\nEOFError\n```\n\nThe second pass of this build starts with:\n\n```\nBuilding reference manual, second pass.\n\n[polynomia] loading pickled environment... not yet created\n[homology ] loading pickled environment... not yet created\n[polynomia] WARNING: intersphinx inventory '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv'\n```\n\n\nSee [attachment:dochtml.log]",
+    "body": "It still doesn't quite work completely. During one build, I got\n\n```\nBuilding reference manual, first pass.\n\n[polynomia] Exception occurred:\n[polynomia] File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 880, in load_eof\n[polynomia] raise EOFError\n[polynomia] EOFError\n[polynomia] The full traceback has been saved in /tmp/release/sphinx-err-2hqEZ_.log, if you want to report the issue to the developers.\n[polynomia] Please also report this if it was a user error, so that a better error message can be provided next time.\n[polynomia] Either send bugs to the mailing list at <http://groups.google.com/group/sphinx-dev/>,\n[polynomia] or report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!\n```\nwhere the \"full traceback\" reads\n\n```\n# Sphinx version: 1.1.2\n# Python version: 2.7.3\n# Docutils version: 0.7 release\n# Jinja2 version: 2.5.5\nTraceback (most recent call last):\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/cmdline.py\", line 188, in main\n    warningiserror, tags)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/application.py\", line 114, in __init__\n    self.setup_extension(extension)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/application.py\", line 247, in setup_extension\n    mod = __import__(extension, None, None, ['setup'])\n  File \"/release/merger/sage-5.8.beta0/devel/sage-main/doc/common/sage_autodoc.py\", line 35, in <module>\n    from sphinx.pycode import ModuleAnalyzer, PycodeError\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/__init__.py\", line 25, in <module>\n    pygrammar = driver.load_grammar(_grammarfile)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/pgen2/driver.py\", line 135, in load_grammar\n    g.load(gp)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/pycode/pgen2/grammar.py\", line 96, in load\n    d = pickle.load(f)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 1378, in load\n    return Unpickler(file).load()\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 858, in load\n    dispatch[key](self)\n  File \"/release/merger/sage-5.8.beta0/local/lib/python/pickle.py\", line 880, in load_eof\n    raise EOFError\nEOFError\n```\nThe second pass of this build starts with:\n\n```\nBuilding reference manual, second pass.\n\n[polynomia] loading pickled environment... not yet created\n[homology ] loading pickled environment... not yet created\n[polynomia] WARNING: intersphinx inventory '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv'\n```\n\nSee [attachment:dochtml.log]",
     "created_at": "2013-02-13T11:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6317,7 +6347,6 @@ Building reference manual, first pass.
 [polynomia] Either send bugs to the mailing list at <http://groups.google.com/group/sphinx-dev/>,
 [polynomia] or report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!
 ```
-
 where the "full traceback" reads
 
 ```
@@ -6348,7 +6377,6 @@ Traceback (most recent call last):
     raise EOFError
 EOFError
 ```
-
 The second pass of this build starts with:
 
 ```
@@ -6358,7 +6386,6 @@ Building reference manual, second pass.
 [homology ] loading pickled environment... not yet created
 [polynomia] WARNING: intersphinx inventory '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/release/merger/sage-5.8.beta0/devel/sage/doc/output/inventory/en/reference/polynomial_rings/objects.inv'
 ```
-
 
 See [attachment:dochtml.log]
 
@@ -6405,7 +6432,7 @@ I think the best place to solve this would be in the Sphinx installer: generate 
 archive/issue_comments_052720.json:
 ```json
 {
-    "body": "So I don't know exactly what to do. We could create a script like this in the Sphinx spkg, and then run it as part of the installation. How does that sound?\n\n```python\n\n# Code taken from sphinx/pycode/__init__.py to generate the grammar pickle.\n\nfrom os import path\nfrom sphinx import package_dir\nfrom sphinx.pycode.pgen2 import driver\n\n# load the Python grammar\n_grammarfile = path.join(package_dir, 'pycode', 'Grammar.txt')\npygrammar = driver.load_grammar(_grammarfile)\n```\n",
+    "body": "So I don't know exactly what to do. We could create a script like this in the Sphinx spkg, and then run it as part of the installation. How does that sound?\n\n```python\n\n# Code taken from sphinx/pycode/__init__.py to generate the grammar pickle.\n\nfrom os import path\nfrom sphinx import package_dir\nfrom sphinx.pycode.pgen2 import driver\n\n# load the Python grammar\n_grammarfile = path.join(package_dir, 'pycode', 'Grammar.txt')\npygrammar = driver.load_grammar(_grammarfile)\n```",
     "created_at": "2013-02-13T19:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6428,7 +6455,6 @@ from sphinx.pycode.pgen2 import driver
 _grammarfile = path.join(package_dir, 'pycode', 'Grammar.txt')
 pygrammar = driver.load_grammar(_grammarfile)
 ```
-
 
 
 
@@ -6512,7 +6538,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_052725.json:
 ```json
 {
-    "body": "The spkg is not clean:\n\n```\n$ hg status\n? create_grammar_pickle.py~\n```\n",
+    "body": "The spkg is not clean:\n\n```\n$ hg status\n? create_grammar_pickle.py~\n```",
     "created_at": "2013-02-14T07:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6527,7 +6553,6 @@ The spkg is not clean:
 $ hg status
 ? create_grammar_pickle.py~
 ```
-
 
 
 
@@ -6608,7 +6633,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_052730.json:
 ```json
 {
-    "body": "In `devel/sage/doc/common/custom-sphinx-build.py`, you write\n\n```\n    def write(self, str):\n        try:\n            self._write(str)\n        except:\n            import traceback\n            traceback.print_exc(file=self._stream)\n```\n\nOne should never use bare `except:` statements, because these usually catch too much, for example `KeyboardInterrupt`s. Use `except StandardError` if you want to catch all errors, or catch a specific exception instead.\n\nAnd in `devel/sage/doc/common/themes/sageref/layout.html`, indentation is done mostly with spaces but there are a few TABs. You should use spaces consistently.\n\nBut most importantly: the code actually seems to work now! It still needs buildbot testing though.",
+    "body": "In `devel/sage/doc/common/custom-sphinx-build.py`, you write\n\n```\n    def write(self, str):\n        try:\n            self._write(str)\n        except:\n            import traceback\n            traceback.print_exc(file=self._stream)\n```\nOne should never use bare `except:` statements, because these usually catch too much, for example `KeyboardInterrupt`s. Use `except StandardError` if you want to catch all errors, or catch a specific exception instead.\n\nAnd in `devel/sage/doc/common/themes/sageref/layout.html`, indentation is done mostly with spaces but there are a few TABs. You should use spaces consistently.\n\nBut most importantly: the code actually seems to work now! It still needs buildbot testing though.",
     "created_at": "2013-02-15T08:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6627,7 +6652,6 @@ In `devel/sage/doc/common/custom-sphinx-build.py`, you write
             import traceback
             traceback.print_exc(file=self._stream)
 ```
-
 One should never use bare `except:` statements, because these usually catch too much, for example `KeyboardInterrupt`s. Use `except StandardError` if you want to catch all errors, or catch a specific exception instead.
 
 And in `devel/sage/doc/common/themes/sageref/layout.html`, indentation is done mostly with spaces but there are a few TABs. You should use spaces consistently.
@@ -6807,7 +6831,7 @@ Anne
 archive/issue_comments_052739.json:
 ```json
 {
-    "body": "Replying to [comment:261 aschilling]:\n> Could I make one suggestion (perhaps for a later ticket)? Compiling the docs does not say any longer where to look on one's machine for the compiled docs. This was a very useful feature beforehand!\n\nSee #14148.",
+    "body": "Replying to [comment:261 aschilling]:\n> Could I make one suggestion (perhaps for a later ticket)? Compiling the docs does not say any longer where to look on one's machine for the compiled docs. This was a very useful feature beforehand!\n\n\nSee #14148.",
     "created_at": "2013-02-19T23:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6495",
     "type": "issue_comment",
@@ -6818,6 +6842,7 @@ archive/issue_comments_052739.json:
 
 Replying to [comment:261 aschilling]:
 > Could I make one suggestion (perhaps for a later ticket)? Compiling the docs does not say any longer where to look on one's machine for the compiled docs. This was a very useful feature beforehand!
+
 
 See #14148.
 

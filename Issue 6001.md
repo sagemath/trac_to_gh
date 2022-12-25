@@ -82,7 +82,7 @@ For now, this should be javascript_local/introspect.js
 archive/issue_comments_047644.json:
 ```json
 {
-    "body": "I've attached a first take.  Directions:\n\n* Apply [attachment:ticket:5653:docstring.4.patch docstring.4.patch] from #5653.\n\n* Apply [attachment:ticket:6001:trac_6001_tearout_docstring_v1.patch trac_6001_tearout_docstring_v1.patch].\n\n* Save [attachment:ticket:6001:introspect_v1.js introspect_v1.js] to `javascript_local/introspect.js`, that is,\n\n```\nSAGE_ROOT/local/notebook/javascript/introspect.js\n```\n\n\n* Remove .lock and .html files from the doc cache.  The default location is `DOT_SAGE/sage_notebook/doc/`",
+    "body": "I've attached a first take.  Directions:\n\n* Apply [attachment:ticket:5653:docstring.4.patch docstring.4.patch] from #5653.\n\n* Apply [attachment:ticket:6001:trac_6001_tearout_docstring_v1.patch trac_6001_tearout_docstring_v1.patch].\n\n* Save [attachment:ticket:6001:introspect_v1.js introspect_v1.js] to `javascript_local/introspect.js`, that is,\n\n```\nSAGE_ROOT/local/notebook/javascript/introspect.js\n```\n\n* Remove .lock and .html files from the doc cache.  The default location is `DOT_SAGE/sage_notebook/doc/`",
     "created_at": "2009-05-06T23:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ I've attached a first take.  Directions:
 ```
 SAGE_ROOT/local/notebook/javascript/introspect.js
 ```
-
 
 * Remove .lock and .html files from the doc cache.  The default location is `DOT_SAGE/sage_notebook/doc/`
 
@@ -182,7 +181,7 @@ Firefox 3 Linux snapshot of "torn out" docstrings
 archive/issue_comments_047648.json:
 ```json
 {
-    "body": "Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by @qed777 created at 2009-05-07 01:49:55\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\n\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
+    "body": "Attachment [tornout_firefox.png](tarball://root/attachments/some-uuid/ticket6001/tornout_firefox.png) by @qed777 created at 2009-05-07 01:49:55\n\nUnexciting inaction shots:\n\n<img src=\"tearout_opera.png\" width=200px, right>\n<img src=\"tornout_firefox.png\" width=200px, left>\n\nThis ticket could *really* use *your* help.\n\nBy the way, to get rounded [docstring] borders in Firefox 3, put something like\n\n```\ndiv.docstring {\n    -moz-border-radius: 0.5em;\n    -webkit-border-radius: 0.5em;\n}\n```\nin `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.",
     "created_at": "2009-05-07T01:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -208,7 +207,6 @@ div.docstring {
     -webkit-border-radius: 0.5em;
 }
 ```
-
 in `DOT_SAGE/notebook.css` .  I haven't tested this in Safari.
 
 
@@ -258,7 +256,7 @@ Attempted support for WebKit browsers.  Replaces v1.
 archive/issue_comments_047651.json:
 ```json
 {
-    "body": "I've tested the new, possibly improved [attachment:introspect_v2.js `introspect.js`] on Fedora 9 Linux in Firefox 3.0.10, Opera 9.64, and a Qt 4.5.0 WebKit-based \"browser\" demo.\n\nI'm not sure about how well the latter, which I found in `/usr/lib64/qt4/demos/browser,` approximates Safari.  It returns\n\n```\n\"Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3)  demobrowser/0.1\"\n```\n\nwhen I enter `navigator.userAgent` in the JavaScript console (check the \"Tools\" menu or right-click on any element, then click on \"Inspect\").  To get \"tab\" introspection working, I just added `'sl':keyboard_saf` near the end of `keyboards.py.`  Perhaps this is related to ticket #4046.\n\nAnyway, it seems all the browsers have their own way of doing just about everything, and no major UI library handles pop-ups seamlessly across browsers.  We may not (cannot?) get identical behavior on all major browsers.\n\nSome possible tests, besides the obvious:\n\n* Check whether multiple tear-outs from a worksheet go to a common window.\n* Ditto, from multiple worksheets.\n* Ditto, after reloading a worksheet(s).\n* Ditto, after navigating to another domain (e.g., `google.com`) in a tear-out window(s) (see [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy)).\n* Check the behavior when tear-outs go to an *unsized* window and the browser is set to open tabs vs. set to open windows.\n* Ditto for *sized* windows.\n\nFor the latter, see the `window.open()` lines in `introspect.js.`  In Firefox, I still get a blank tab when I force new windows to open in tabs and use unsized pop-ups.  I have got this to work with a somewhat different approach, but I haven't yet reconciled it with what's in v2.\n\nDrag-and-drop sometimes behaves oddly in Firefox, adding copious spurious placeholders to the list.  I've noticed this after I navigate to a different domain in a tear-out window, forcing the script to open a new window.  I think this is a jQuery [UI] bug, since it goes away when I substitute the latest versions.  This and other quirks may be a good reason to upgrade both.  Worst case: Disable some tear-out features for certain browsers.\n\nSome ideas, though my patience with browser \"programming\" has all but vanished:\n\n* Do something server-side instead or in addition.\n* Add a top-level toolbar to the tear-out window, e.g., to toggle, close, resize all docstrings.\n* Add a simple \"cell\" input that calls `window.opener.evaluate_cell_inspection().`\n* Cookies, preferably chocolate.\n\nSome ideas related to #5653:\n\n* Collect anonymous statistics on docstring access: compute correlations, do Bayesian predictions, rank the greatest (and worst) docstring writers of ***all time***.\n* Generate a large graph of all docstrings and their cross-links.  Drive the graph theorists wild.  Actually, I think it's rather sparse at the moment.  Not an [expander](http://en.wikipedia.org/wiki/Expander_graph)?\n* Upgrade Sphinx and test the Qt help builder, though it may [need work](http://groups.google.com/group/sphinx-dev/browse_thread/thread/64dd226d9b4cec36/6fa3e0d251dae768#6fa3e0d251dae768).  Try running Qt's `assistant` (`assistant-qt4` on Fedora 9) for a taste.\n* Add \"PDF\" to the toolbar, with maybe a rude surprise for PDF plug-in users.\n* One-click copy-pasting of examples for the truly lazy.",
+    "body": "I've tested the new, possibly improved [attachment:introspect_v2.js `introspect.js`] on Fedora 9 Linux in Firefox 3.0.10, Opera 9.64, and a Qt 4.5.0 WebKit-based \"browser\" demo.\n\nI'm not sure about how well the latter, which I found in `/usr/lib64/qt4/demos/browser,` approximates Safari.  It returns\n\n```\n\"Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3)  demobrowser/0.1\"\n```\nwhen I enter `navigator.userAgent` in the JavaScript console (check the \"Tools\" menu or right-click on any element, then click on \"Inspect\").  To get \"tab\" introspection working, I just added `'sl':keyboard_saf` near the end of `keyboards.py.`  Perhaps this is related to ticket #4046.\n\nAnyway, it seems all the browsers have their own way of doing just about everything, and no major UI library handles pop-ups seamlessly across browsers.  We may not (cannot?) get identical behavior on all major browsers.\n\nSome possible tests, besides the obvious:\n\n* Check whether multiple tear-outs from a worksheet go to a common window.\n* Ditto, from multiple worksheets.\n* Ditto, after reloading a worksheet(s).\n* Ditto, after navigating to another domain (e.g., `google.com`) in a tear-out window(s) (see [same origin policy](http://en.wikipedia.org/wiki/Same_origin_policy)).\n* Check the behavior when tear-outs go to an *unsized* window and the browser is set to open tabs vs. set to open windows.\n* Ditto for *sized* windows.\n\nFor the latter, see the `window.open()` lines in `introspect.js.`  In Firefox, I still get a blank tab when I force new windows to open in tabs and use unsized pop-ups.  I have got this to work with a somewhat different approach, but I haven't yet reconciled it with what's in v2.\n\nDrag-and-drop sometimes behaves oddly in Firefox, adding copious spurious placeholders to the list.  I've noticed this after I navigate to a different domain in a tear-out window, forcing the script to open a new window.  I think this is a jQuery [UI] bug, since it goes away when I substitute the latest versions.  This and other quirks may be a good reason to upgrade both.  Worst case: Disable some tear-out features for certain browsers.\n\nSome ideas, though my patience with browser \"programming\" has all but vanished:\n\n* Do something server-side instead or in addition.\n* Add a top-level toolbar to the tear-out window, e.g., to toggle, close, resize all docstrings.\n* Add a simple \"cell\" input that calls `window.opener.evaluate_cell_inspection().`\n* Cookies, preferably chocolate.\n\nSome ideas related to #5653:\n\n* Collect anonymous statistics on docstring access: compute correlations, do Bayesian predictions, rank the greatest (and worst) docstring writers of ***all time***.\n* Generate a large graph of all docstrings and their cross-links.  Drive the graph theorists wild.  Actually, I think it's rather sparse at the moment.  Not an [expander](http://en.wikipedia.org/wiki/Expander_graph)?\n* Upgrade Sphinx and test the Qt help builder, though it may [need work](http://groups.google.com/group/sphinx-dev/browse_thread/thread/64dd226d9b4cec36/6fa3e0d251dae768#6fa3e0d251dae768).  Try running Qt's `assistant` (`assistant-qt4` on Fedora 9) for a taste.\n* Add \"PDF\" to the toolbar, with maybe a rude surprise for PDF plug-in users.\n* One-click copy-pasting of examples for the truly lazy.",
     "created_at": "2009-05-19T17:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -274,7 +272,6 @@ I'm not sure about how well the latter, which I found in `/usr/lib64/qt4/demos/b
 ```
 "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3)  demobrowser/0.1"
 ```
-
 when I enter `navigator.userAgent` in the JavaScript console (check the "Tools" menu or right-click on any element, then click on "Inspect").  To get "tab" introspection working, I just added `'sl':keyboard_saf` near the end of `keyboards.py.`  Perhaps this is related to ticket #4046.
 
 Anyway, it seems all the browsers have their own way of doing just about everything, and no major UI library handles pop-ups seamlessly across browsers.  We may not (cannot?) get identical behavior on all major browsers.
@@ -412,7 +409,7 @@ Goes with introspect_v4.js.
 archive/issue_comments_047657.json:
 ```json
 {
-    "body": "Version 4 is available.  New features: multiple columns, height limits.  Tested on Linux in Opera 9 and Firefox 3.  Note: Drag-and-drop in the latter is still problematic, but a jQuery/UI upgrade will fix this.  To do:\n* Add a function to \"balance\" or \"equalize\" columns, either by the number of docstrings or, perhaps, instantaneous total height.\n* Query sage-devel for volunteers to design nice icons?\n* Test on Mac OS X, though I can't do this myself.\n* Re-test on Windows.\n\nBy the way, running\n\n```\nhtml('<script>introspect.test1(10)</script>')\n```\n\nin a cell should open 10 docstrings selected not quite at random.  Alternatively, evaluate `introspect.test1(10)` in [Firebug's](http://getfirebug.com/) console.  See the code for details.",
+    "body": "Version 4 is available.  New features: multiple columns, height limits.  Tested on Linux in Opera 9 and Firefox 3.  Note: Drag-and-drop in the latter is still problematic, but a jQuery/UI upgrade will fix this.  To do:\n* Add a function to \"balance\" or \"equalize\" columns, either by the number of docstrings or, perhaps, instantaneous total height.\n* Query sage-devel for volunteers to design nice icons?\n* Test on Mac OS X, though I can't do this myself.\n* Re-test on Windows.\n\nBy the way, running\n\n```\nhtml('<script>introspect.test1(10)</script>')\n```\nin a cell should open 10 docstrings selected not quite at random.  Alternatively, evaluate `introspect.test1(10)` in [Firebug's](http://getfirebug.com/) console.  See the code for details.",
     "created_at": "2009-06-04T10:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6001",
     "type": "issue_comment",
@@ -432,7 +429,6 @@ By the way, running
 ```
 html('<script>introspect.test1(10)</script>')
 ```
-
 in a cell should open 10 docstrings selected not quite at random.  Alternatively, evaluate `introspect.test1(10)` in [Firebug's](http://getfirebug.com/) console.  See the code for details.
 
 

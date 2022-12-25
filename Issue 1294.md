@@ -3,7 +3,7 @@
 archive/issues_001294.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: v=vector(QQ,[1,2,3])\nsage: v.n()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.Element.n()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/functional.py in numerical_approx(x, prec, digits)\n    731             return sage.rings.real_mpfr.RealField(prec)(x)\n    732         except TypeError:\n--> 733             return sage.rings.complex_field.ComplexField(prec)(x)\n    734\n    735 n = numerical_approx\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    179             except AttributeError:\n    180                 pass\n--> 181         return complex_number.ComplexNumber(self, x, im)\n    182\n    183     def _coerce_impl(self, x):\n\n/home/grout/sage/devel/sage-main/sage/graphs/complex_number.pyx in sage.rings.complex_number.ComplexNumber.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber\n```\n\n\nI'm not sure what it should do, but maybe call n() on each entry would make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1294\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: v=vector(QQ,[1,2,3])\nsage: v.n()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.Element.n()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/functional.py in numerical_approx(x, prec, digits)\n    731             return sage.rings.real_mpfr.RealField(prec)(x)\n    732         except TypeError:\n--> 733             return sage.rings.complex_field.ComplexField(prec)(x)\n    734\n    735 n = numerical_approx\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    179             except AttributeError:\n    180                 pass\n--> 181         return complex_number.ComplexNumber(self, x, im)\n    182\n    183     def _coerce_impl(self, x):\n\n/home/grout/sage/devel/sage-main/sage/graphs/complex_number.pyx in sage.rings.complex_number.ComplexNumber.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber\n```\n\nI'm not sure what it should do, but maybe call n() on each entry would make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1294\n\n",
     "created_at": "2007-11-27T23:13:24Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_001294.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: v=vector(QQ,[1,2,3])
@@ -48,7 +47,6 @@ sage: v.n()
 
 <type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber
 ```
-
 
 I'm not sure what it should do, but maybe call n() on each entry would make sense.
 

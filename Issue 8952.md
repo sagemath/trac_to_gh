@@ -170,7 +170,7 @@ Attached is the patch that should perform the required task. odd_girth() compute
 archive/issue_comments_082335.json:
 ```json
 {
-    "body": "Azi,\n\nI took a quick look and it looks promising, especially since characteristic polynomials are quite fast in Sage.  I can look closer when I have a bit more time.\n\nFor now, documentation needs some work.  For example:\n\n\n```\nAny complete graph on more than 2 vertices contains a triangle and has thus odd girth 3 \n\n\t            G = graphs.CompleteGraph(10) \n\t            sage: G.odd_girth() \n\t            3\n```\n\n\nneeds a double colon after the lead-in sentence (all 3 of your verbatim blocks need this).  And your line creating the complete graph needs a `sage:` preceding it.\n\nCurrent documentation style needs \"INPUT\" and \"OUTPUT\" blocks - look around for examples.  They will be pretty simple in this case.\n\nYou can catch some of these yourself:\n\n\n```\nsage -b\nsage -docbuild reference html\n```\n\n\nwill rebuild the documentation and you can view the html file for mess-ups with the doc string.\n\nAnd\n\n\n```\nsage -t <source file>\n```\n\n\nwill find broken tests.\n\nRob",
+    "body": "Azi,\n\nI took a quick look and it looks promising, especially since characteristic polynomials are quite fast in Sage.  I can look closer when I have a bit more time.\n\nFor now, documentation needs some work.  For example:\n\n```\nAny complete graph on more than 2 vertices contains a triangle and has thus odd girth 3 \n\n\t            G = graphs.CompleteGraph(10) \n\t            sage: G.odd_girth() \n\t            3\n```\n\nneeds a double colon after the lead-in sentence (all 3 of your verbatim blocks need this).  And your line creating the complete graph needs a `sage:` preceding it.\n\nCurrent documentation style needs \"INPUT\" and \"OUTPUT\" blocks - look around for examples.  They will be pretty simple in this case.\n\nYou can catch some of these yourself:\n\n```\nsage -b\nsage -docbuild reference html\n```\n\nwill rebuild the documentation and you can view the html file for mess-ups with the doc string.\n\nAnd\n\n```\nsage -t <source file>\n```\n\nwill find broken tests.\n\nRob",
     "created_at": "2012-09-26T02:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -185,7 +185,6 @@ I took a quick look and it looks promising, especially since characteristic poly
 
 For now, documentation needs some work.  For example:
 
-
 ```
 Any complete graph on more than 2 vertices contains a triangle and has thus odd girth 3 
 
@@ -194,29 +193,24 @@ Any complete graph on more than 2 vertices contains a triangle and has thus odd 
 	            3
 ```
 
-
 needs a double colon after the lead-in sentence (all 3 of your verbatim blocks need this).  And your line creating the complete graph needs a `sage:` preceding it.
 
 Current documentation style needs "INPUT" and "OUTPUT" blocks - look around for examples.  They will be pretty simple in this case.
 
 You can catch some of these yourself:
 
-
 ```
 sage -b
 sage -docbuild reference html
 ```
 
-
 will rebuild the documentation and you can view the html file for mess-ups with the doc string.
 
 And
 
-
 ```
 sage -t <source file>
 ```
-
 
 will find broken tests.
 
@@ -347,7 +341,7 @@ The patch was produced using the following guide http://www.sagemath.org/doc/dev
 archive/issue_comments_082342.json:
 ```json
 {
-    "body": "Replying to [comment:11 azi]:\n> The patch was produced using the following guide http://www.sagemath.org/doc/developer/walk_through.html#creating-a-change\n\nWell, I sort of hope not, since I wrote that guide.  ;-)  It looks like something wasn't done quite right.\n\nGuide discusses two approaches:  clones and queues.  I cannot even begin to help if I don't know which approach you are taking.  Let me know.\n\nRob",
+    "body": "Replying to [comment:11 azi]:\n> The patch was produced using the following guide http://www.sagemath.org/doc/developer/walk_through.html#creating-a-change\n\n\nWell, I sort of hope not, since I wrote that guide.  ;-)  It looks like something wasn't done quite right.\n\nGuide discusses two approaches:  clones and queues.  I cannot even begin to help if I don't know which approach you are taking.  Let me know.\n\nRob",
     "created_at": "2012-09-26T19:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -358,6 +352,7 @@ archive/issue_comments_082342.json:
 
 Replying to [comment:11 azi]:
 > The patch was produced using the following guide http://www.sagemath.org/doc/developer/walk_through.html#creating-a-change
+
 
 Well, I sort of hope not, since I wrote that guide.  ;-)  It looks like something wasn't done quite right.
 
@@ -425,7 +420,7 @@ archive/issue_comments_082344.json:
 archive/issue_comments_082345.json:
 ```json
 {
-    "body": "Ahem...\n\n\n```\nsage: graphs.CycleGraph(5).odd_girth()\n+Infinity\n```\n\n\nWith this additional patch, the functions looks more similar to what page 45 of \"Algebraic Graph Theory\" seems to say `:-)`\n\nNathann",
+    "body": "Ahem...\n\n```\nsage: graphs.CycleGraph(5).odd_girth()\n+Infinity\n```\n\nWith this additional patch, the functions looks more similar to what page 45 of \"Algebraic Graph Theory\" seems to say `:-)`\n\nNathann",
     "created_at": "2012-10-01T15:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -436,12 +431,10 @@ archive/issue_comments_082345.json:
 
 Ahem...
 
-
 ```
 sage: graphs.CycleGraph(5).odd_girth()
 +Infinity
 ```
-
 
 With this additional patch, the functions looks more similar to what page 45 of "Algebraic Graph Theory" seems to say `:-)`
 
@@ -472,7 +465,7 @@ Apply trac_8952_odd_girth_consolidated.patch trac_8952_odd_girth-bugfix.patch
 archive/issue_comments_082347.json:
 ```json
 {
-    "body": "Replying to [comment:16 ncohen]:\n> With this additional patch, the functions looks more similar to what page 45 of \"Algebraic Graph Theory\" seems to say `:-)`\n\nI'd been meaning to suggest stepping by -2, mostly for clarity, and less code.  I hadn't realized there was a problem, though!  Good catch.",
+    "body": "Replying to [comment:16 ncohen]:\n> With this additional patch, the functions looks more similar to what page 45 of \"Algebraic Graph Theory\" seems to say `:-)`\n\n\nI'd been meaning to suggest stepping by -2, mostly for clarity, and less code.  I hadn't realized there was a problem, though!  Good catch.",
     "created_at": "2012-10-01T17:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8952",
     "type": "issue_comment",
@@ -483,6 +476,7 @@ archive/issue_comments_082347.json:
 
 Replying to [comment:16 ncohen]:
 > With this additional patch, the functions looks more similar to what page 45 of "Algebraic Graph Theory" seems to say `:-)`
+
 
 I'd been meaning to suggest stepping by -2, mostly for clarity, and less code.  I hadn't realized there was a problem, though!  Good catch.
 

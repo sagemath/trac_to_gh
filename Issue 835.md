@@ -3,7 +3,7 @@
 archive/issues_000835.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIf a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:\n\n\n```\nsage: Integer(RR(2.0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/835\n\n",
+    "body": "Assignee: somebody\n\nIf a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:\n\n```\nsage: Integer(RR(2.0))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/david/sage-2.8.5/<ipython console> in <module>()\n\n/Users/david/sage-2.8.5/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/835\n\n",
     "created_at": "2007-10-06T15:33:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 If a real number is exactly an integer, it should be possible to coerce to an Integer, but this is what happens:
 
-
 ```
 sage: Integer(RR(2.0))
 ---------------------------------------------------------------------------
@@ -32,7 +31,6 @@ sage: Integer(RR(2.0))
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/835

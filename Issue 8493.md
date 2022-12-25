@@ -239,7 +239,7 @@ I am happy with this (as original reviewer).  I looked at the new patch, but hav
 archive/issue_comments_076480.json:
 ```json
 {
-    "body": "Replying to [comment:5 davidloeffler]:\n> I'm taking the liberty of setting it straight back to \"positive_review\".\n\nI think that's fine.  It applies cleanly to 4.4.alpha0; I'm checking doctests and will report if there are any problems.  Otherwise, it will get merged into 4.4.alpha1.",
+    "body": "Replying to [comment:5 davidloeffler]:\n> I'm taking the liberty of setting it straight back to \"positive_review\".\n\n\nI think that's fine.  It applies cleanly to 4.4.alpha0; I'm checking doctests and will report if there are any problems.  Otherwise, it will get merged into 4.4.alpha1.",
     "created_at": "2010-04-17T18:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
@@ -250,6 +250,7 @@ archive/issue_comments_076480.json:
 
 Replying to [comment:5 davidloeffler]:
 > I'm taking the liberty of setting it straight back to "positive_review".
+
 
 I think that's fine.  It applies cleanly to 4.4.alpha0; I'm checking doctests and will report if there are any problems.  Otherwise, it will get merged into 4.4.alpha1.
 

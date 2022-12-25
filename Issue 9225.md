@@ -3,7 +3,7 @@
 archive/issues_009225.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @wjp @nexttime @rbeezer\n\nWhen we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\n\nWhat other columns would be useful?  Coverage?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wjp @nexttime @rbeezer\n\nWhen we doctest several files in parallel or in sequence, it might be helpful to print stats relating to the test suite's progress, e.g.,\n\n```sh\n$ sage -t monoids/\nsage -t  \"monoids/monoid.py\"\n 1/10    1.9 s / 1.9 s\nsage -t  \"monoids/free_monoid.py\"\n 2/10    2.0 s / 3.9 s\n[...]\n```\nWhat other columns would be useful?  Coverage?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9225\n\n",
     "created_at": "2010-06-12T10:18:49Z",
     "labels": [
         "component: doctest coverage",
@@ -30,7 +30,6 @@ sage -t  "monoids/free_monoid.py"
  2/10    2.0 s / 3.9 s
 [...]
 ```
-
 What other columns would be useful?  Coverage?
 
 Issue created by migration from https://trac.sagemath.org/ticket/9225
@@ -62,7 +61,7 @@ If we widen the scope here a bit:  We should use [optparse](http://docs.python.o
 archive/issue_comments_086414.json:
 ```json
 {
-    "body": "Other possibilities, probably mentioned before and probably for other tickets:\n\n* \"Librarify:\" Make it possible to doctest files and objects from the Sage command-line or notebook, e.g.,\n\n```python\nsage: doctest('file.sage', long=True, optional=['axiom', 'magma'])\nsage: doctest(os.path.join(SAGE_ROOT, 'devel', 'sage', 'sage', 'monoids'), processes=4)\nsage: stats = {}     # Collect errors, counts, timings, etc.\nsage: doctest(['foo.py', 'bar.pyx'], stats=stats)\nsage: def f():\n....:     \"\"\"\n....:     sage: f()\n....:     1\n....:     \"\"\"\n....:     return 1\n....: \nsage: doctest(f)\n```\n\n\n* Doctest the doctesting framework!  I think we could include [comment:ticket:9449:13 this example], at least.\n\n* An option to run an individual `file.py`'s \"examples\" (i.e., the files `example_*` functions) in parallel.",
+    "body": "Other possibilities, probably mentioned before and probably for other tickets:\n\n* \"Librarify:\" Make it possible to doctest files and objects from the Sage command-line or notebook, e.g.,\n\n```python\nsage: doctest('file.sage', long=True, optional=['axiom', 'magma'])\nsage: doctest(os.path.join(SAGE_ROOT, 'devel', 'sage', 'sage', 'monoids'), processes=4)\nsage: stats = {}     # Collect errors, counts, timings, etc.\nsage: doctest(['foo.py', 'bar.pyx'], stats=stats)\nsage: def f():\n....:     \"\"\"\n....:     sage: f()\n....:     1\n....:     \"\"\"\n....:     return 1\n....: \nsage: doctest(f)\n```\n\n* Doctest the doctesting framework!  I think we could include [comment:ticket:9449:13 this example], at least.\n\n* An option to run an individual `file.py`'s \"examples\" (i.e., the files `example_*` functions) in parallel.",
     "created_at": "2010-07-09T00:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
@@ -89,7 +88,6 @@ sage: def f():
 ....: 
 sage: doctest(f)
 ```
-
 
 * Doctest the doctesting framework!  I think we could include [comment:ticket:9449:13 this example], at least.
 
@@ -156,7 +154,7 @@ I have a suspicion that some doctests fail when the system is under heavy load. 
 archive/issue_comments_086418.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> A way to upload anonymized test stats and system information to a remote server?\nYes, but with the option of giving a name if one wishes to. It will make problems easier to manage if people did give a name + email, but certainly make it optional.",
+    "body": "Replying to [comment:5 mpatel]:\n> A way to upload anonymized test stats and system information to a remote server?\n\nYes, but with the option of giving a name if one wishes to. It will make problems easier to manage if people did give a name + email, but certainly make it optional.",
     "created_at": "2010-08-27T11:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
@@ -167,6 +165,7 @@ archive/issue_comments_086418.json:
 
 Replying to [comment:5 mpatel]:
 > A way to upload anonymized test stats and system information to a remote server?
+
 Yes, but with the option of giving a name if one wishes to. It will make problems easier to manage if people did give a name + email, but certainly make it optional.
 
 
@@ -176,7 +175,7 @@ Yes, but with the option of giving a name if one wishes to. It will make problem
 archive/issue_comments_086419.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> Also potentially useful: doctesting the same file multiple times in parallel.  I think this is just a matter of generating in `sage-doctest` a unique name, e.g., `.doctest_foo-R3X87S.py` for each run on `foo.py`.\n\nThis is #9739.",
+    "body": "Replying to [comment:6 mpatel]:\n> Also potentially useful: doctesting the same file multiple times in parallel.  I think this is just a matter of generating in `sage-doctest` a unique name, e.g., `.doctest_foo-R3X87S.py` for each run on `foo.py`.\n\n\nThis is #9739.",
     "created_at": "2010-08-27T22:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
@@ -188,6 +187,7 @@ archive/issue_comments_086419.json:
 Replying to [comment:6 mpatel]:
 > Also potentially useful: doctesting the same file multiple times in parallel.  I think this is just a matter of generating in `sage-doctest` a unique name, e.g., `.doctest_foo-R3X87S.py` for each run on `foo.py`.
 
+
 This is #9739.
 
 
@@ -197,7 +197,7 @@ This is #9739.
 archive/issue_comments_086420.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.\nThough if you look at that link, it says its been depreciated in favor of `argparse`. \n\nDave",
+    "body": "Replying to [comment:2 mpatel]:\n> If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.\n\nThough if you look at that link, it says its been depreciated in favor of `argparse`. \n\nDave",
     "created_at": "2010-08-27T22:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
@@ -208,6 +208,7 @@ archive/issue_comments_086420.json:
 
 Replying to [comment:2 mpatel]:
 > If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.
+
 Though if you look at that link, it says its been depreciated in favor of `argparse`. 
 
 Dave
@@ -219,7 +220,7 @@ Dave
 archive/issue_comments_086421.json:
 ```json
 {
-    "body": "Replying to [comment:11 drkirkby]:\n> Replying to [comment:2 mpatel]:\n> > If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.\n> Though if you look at that link, it says its been depreciated in favor of `argparse`. \n\nThat's why I inserted \"at least,\" but I should have more specific.  We'll need to upgrade to Python 2.7 to use [argparse](http://docs.python.org/library/argparse.html#module-argparse) readily.  [argparse](http://code.google.com/p/argparse/) used to be an independent project.",
+    "body": "Replying to [comment:11 drkirkby]:\n> Replying to [comment:2 mpatel]:\n> > If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.\n\n> Though if you look at that link, it says its been depreciated in favor of `argparse`. \n\nThat's why I inserted \"at least,\" but I should have more specific.  We'll need to upgrade to Python 2.7 to use [argparse](http://docs.python.org/library/argparse.html#module-argparse) readily.  [argparse](http://code.google.com/p/argparse/) used to be an independent project.",
     "created_at": "2010-08-28T00:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9225",
     "type": "issue_comment",
@@ -231,6 +232,7 @@ archive/issue_comments_086421.json:
 Replying to [comment:11 drkirkby]:
 > Replying to [comment:2 mpatel]:
 > > If we widen the scope here a bit:  We should use [optparse](http://docs.python.org/library/optparse.html), at least, to handle command-line arguments.
+
 > Though if you look at that link, it says its been depreciated in favor of `argparse`. 
 
 That's why I inserted "at least," but I should have more specific.  We'll need to upgrade to Python 2.7 to use [argparse](http://docs.python.org/library/argparse.html#module-argparse) readily.  [argparse](http://code.google.com/p/argparse/) used to be an independent project.

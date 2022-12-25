@@ -3,7 +3,7 @@
 archive/issues_005785.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: CDF vector norm\n\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: CDF vector norm\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
     "created_at": "2009-04-14T15:55:27Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 Keywords: CDF vector norm
 
-
 ```
 sage: v = vector(CDF, [2, 2])
 sage: v - v
@@ -31,7 +30,6 @@ sage: v = vector(CC, [2, 2])
 sage: (v - v).norm()
 0.000000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5785
 
@@ -62,7 +60,7 @@ Changing assignee from @williamstein to somebody.
 archive/issue_comments_045195.json:
 ```json
 {
-    "body": "The problem is this:\n\n\n```\nsage: RDF(0)^(1/2)\nNaN\n```\n",
+    "body": "The problem is this:\n\n```\nsage: RDF(0)^(1/2)\nNaN\n```",
     "created_at": "2009-04-15T05:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
@@ -73,12 +71,10 @@ archive/issue_comments_045195.json:
 
 The problem is this:
 
-
 ```
 sage: RDF(0)^(1/2)
 NaN
 ```
-
 
 
 
@@ -143,7 +139,7 @@ Added a doctest.
 archive/issue_comments_045199.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Does #5782 fix this?\n\nIt looks like the same bug, having a doctest added ought to be enough to close this ticket once it is merged.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 jason]:\n> Does #5782 fix this?\n\n\nIt looks like the same bug, having a doctest added ought to be enough to close this ticket once it is merged.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T21:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
@@ -154,6 +150,7 @@ archive/issue_comments_045199.json:
 
 Replying to [comment:2 jason]:
 > Does #5782 fix this?
+
 
 It looks like the same bug, having a doctest added ought to be enough to close this ticket once it is merged.
 

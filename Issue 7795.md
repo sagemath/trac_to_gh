@@ -3,7 +3,7 @@
 archive/issues_007795.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: MPolynomialRing_libsingular segfault with high exponents\n\nIn the following example, a segfault occurs. Shouldn't an error be raised instead?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: type(P)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: z^(3^10)\nz^59049\nsage: z^(3^11)\nz^177147\nsage: (z^3 + T*z)^(3^4)\nz^243 + T^81*z^81\nsage: (z^3 + T*z)^(3^7)\nz^6561 + T^2187*z^2187\nsage: (z^3 + T*z)^(3^10)\nz^177147 + T^59049*z^59049\nsage: (z^3 + T*z)^(3^15)\n/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7795\n\n",
+    "body": "Assignee: @malb\n\nKeywords: MPolynomialRing_libsingular segfault with high exponents\n\nIn the following example, a segfault occurs. Shouldn't an error be raised instead?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: type(P)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: z^(3^10)\nz^59049\nsage: z^(3^11)\nz^177147\nsage: (z^3 + T*z)^(3^4)\nz^243 + T^81*z^81\nsage: (z^3 + T*z)^(3^7)\nz^6561 + T^2187*z^2187\nsage: (z^3 + T*z)^(3^10)\nz^177147 + T^59049*z^59049\nsage: (z^3 + T*z)^(3^15)\n/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7795\n\n",
     "created_at": "2009-12-30T11:05:21Z",
     "labels": [
         "component: commutative algebra",
@@ -40,7 +40,6 @@ z^177147 + T^59049*z^59049
 sage: (z^3 + T*z)^(3^15)
 /home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython "$@" -i
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7795
@@ -127,7 +126,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067186.json:
 ```json
 {
-    "body": "I did `sage -tp 2 devel/sage` and obtained\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py # 89 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/laurent_polynomial.pyx # 123 doctests failed\n        sage -t  devel/sage/sage/combinat/kazhdan_lusztig.py # 5 doctests failed\n        sage -t  devel/sage/sage/algebras/iwahori_hecke_algebra.py # 17 doctests failed\n```\n\n\nAt least in one case, it seems that in some places one needed to add further arguments to ring constructors.",
+    "body": "I did `sage -tp 2 devel/sage` and obtained\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/laurent_polynomial_ring.py # 89 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/laurent_polynomial.pyx # 123 doctests failed\n        sage -t  devel/sage/sage/combinat/kazhdan_lusztig.py # 5 doctests failed\n        sage -t  devel/sage/sage/algebras/iwahori_hecke_algebra.py # 17 doctests failed\n```\n\nAt least in one case, it seems that in some places one needed to add further arguments to ring constructors.",
     "created_at": "2010-07-15T21:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
@@ -147,7 +146,6 @@ The following tests failed:
         sage -t  devel/sage/sage/combinat/kazhdan_lusztig.py # 5 doctests failed
         sage -t  devel/sage/sage/algebras/iwahori_hecke_algebra.py # 17 doctests failed
 ```
-
 
 At least in one case, it seems that in some places one needed to add further arguments to ring constructors.
 
@@ -194,7 +192,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067189.json:
 ```json
 {
-    "body": "Some random timings:\n\nWithout the patch\n\n```\nsage: R.<x,y,z> = GF(3)[]\nsage: p = R.random_element()\nsage: p\n-y^2 + x*z - z^2 - z\nsage: timeit('q=p^100')\n125 loops, best of 3: 6.24 ms per loop\n```\n\n\nWith the new patch and the same polynomial, I get:\n\n```\nsage: timeit('q=p^100')\n125 loops, best of 3: 2.99 ms per loop\n```\n\n\nSo, this is already good news!\n\nCriticism: The patch still does not provide doctests showing that the problem is fixed. I am now running doctests, and if they pass, I'll try to add a proper doctest via reviewer patch.",
+    "body": "Some random timings:\n\nWithout the patch\n\n```\nsage: R.<x,y,z> = GF(3)[]\nsage: p = R.random_element()\nsage: p\n-y^2 + x*z - z^2 - z\nsage: timeit('q=p^100')\n125 loops, best of 3: 6.24 ms per loop\n```\n\nWith the new patch and the same polynomial, I get:\n\n```\nsage: timeit('q=p^100')\n125 loops, best of 3: 2.99 ms per loop\n```\n\nSo, this is already good news!\n\nCriticism: The patch still does not provide doctests showing that the problem is fixed. I am now running doctests, and if they pass, I'll try to add a proper doctest via reviewer patch.",
     "created_at": "2010-07-21T14:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
@@ -216,14 +214,12 @@ sage: timeit('q=p^100')
 125 loops, best of 3: 6.24 ms per loop
 ```
 
-
 With the new patch and the same polynomial, I get:
 
 ```
 sage: timeit('q=p^100')
 125 loops, best of 3: 2.99 ms per loop
 ```
-
 
 So, this is already good news!
 
@@ -469,7 +465,7 @@ In this case, please set the milestone to sage-duplicate/invalid/wontfix.
 archive/issue_comments_067201.json:
 ```json
 {
-    "body": "Replying to [comment:13 Bouillaguet]:\n> This cannot possibly be doctested, so we might as well close this.\n\nI disagree, in two regards.\n\nFirst of all, if no error is raised and no crash occurs, then apparently the example is different. Could be a 32-bit versus 64-bit problem. Or not? I don't think that the problem I originally reported was 32 bit.\n\nSo, one should try to find an example in which a segfault used to occur, but an error is raised now. Can someone please test whether the following segfaults with sage-4.3?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: (T+z)^(5^15)\nTraceback (most recent call last):\n...\nOverflowError: Exponent overflow (30517578125).\n```\n\n\nIf that test segfaults in old Sage versions, then it is a valid test (in particular, those types of bugs *can* be tested against).\n\nSo, who has old Sage versions hanging around?",
+    "body": "Replying to [comment:13 Bouillaguet]:\n> This cannot possibly be doctested, so we might as well close this.\n\n\nI disagree, in two regards.\n\nFirst of all, if no error is raised and no crash occurs, then apparently the example is different. Could be a 32-bit versus 64-bit problem. Or not? I don't think that the problem I originally reported was 32 bit.\n\nSo, one should try to find an example in which a segfault used to occur, but an error is raised now. Can someone please test whether the following segfaults with sage-4.3?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: (T+z)^(5^15)\nTraceback (most recent call last):\n...\nOverflowError: Exponent overflow (30517578125).\n```\n\nIf that test segfaults in old Sage versions, then it is a valid test (in particular, those types of bugs *can* be tested against).\n\nSo, who has old Sage versions hanging around?",
     "created_at": "2013-01-04T21:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
@@ -480,6 +476,7 @@ archive/issue_comments_067201.json:
 
 Replying to [comment:13 Bouillaguet]:
 > This cannot possibly be doctested, so we might as well close this.
+
 
 I disagree, in two regards.
 
@@ -496,7 +493,6 @@ Traceback (most recent call last):
 OverflowError: Exponent overflow (30517578125).
 ```
 
-
 If that test segfaults in old Sage versions, then it is a valid test (in particular, those types of bugs *can* be tested against).
 
 So, who has old Sage versions hanging around?
@@ -508,7 +504,7 @@ So, who has old Sage versions hanging around?
 archive/issue_comments_067202.json:
 ```json
 {
-    "body": "Replying to [comment:15 SimonKing]:\n> So, who has old Sage versions hanging around?\n\nUnfortunately, with sage-4.7.beta1, the error is already raised (i.e., no segfault).",
+    "body": "Replying to [comment:15 SimonKing]:\n> So, who has old Sage versions hanging around?\n\n\nUnfortunately, with sage-4.7.beta1, the error is already raised (i.e., no segfault).",
     "created_at": "2013-01-04T21:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
@@ -519,6 +515,7 @@ archive/issue_comments_067202.json:
 
 Replying to [comment:15 SimonKing]:
 > So, who has old Sage versions hanging around?
+
 
 Unfortunately, with sage-4.7.beta1, the error is already raised (i.e., no segfault).
 
@@ -565,7 +562,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_067205.json:
 ```json
 {
-    "body": "Replying to [comment:15 SimonKing]:\n> First of all, if no error is raised and no crash occurs, then apparently the example is different. \n\nI don't think so. My understanding is that the problem has been fixed inside [lib]singular. Testing this particular example is difficult because the computation takes many hours. It used to crash, but it now works.",
+    "body": "Replying to [comment:15 SimonKing]:\n> First of all, if no error is raised and no crash occurs, then apparently the example is different. \n\n\nI don't think so. My understanding is that the problem has been fixed inside [lib]singular. Testing this particular example is difficult because the computation takes many hours. It used to crash, but it now works.",
     "created_at": "2013-01-06T09:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
@@ -576,6 +573,7 @@ archive/issue_comments_067205.json:
 
 Replying to [comment:15 SimonKing]:
 > First of all, if no error is raised and no crash occurs, then apparently the example is different. 
+
 
 I don't think so. My understanding is that the problem has been fixed inside [lib]singular. Testing this particular example is difficult because the computation takes many hours. It used to crash, but it now works.
 

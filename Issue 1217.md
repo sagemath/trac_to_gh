@@ -3,7 +3,7 @@
 archive/issues_001217.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\n\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
+    "body": "Assignee: @malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
     "created_at": "2007-11-20T15:54:11Z",
     "labels": [
         "component: packages: standard",
@@ -34,7 +34,6 @@ On IRC:
 [11:48] <wjp> hm, so it might not be usable as an error code
 [11:49] <malb> yes, but I am not sure, we could ask Damien?
 ```
-
 For a patch see fplll2.patch from #1188.
 
 Cheers,
@@ -106,7 +105,7 @@ Changing keywords from "wjp" to "".
 archive/issue_comments_007535.json:
 ```json
 {
-    "body": "I think that we should check for != 0 in all fpLLL calls that are guaranteed to return an LLL-reduced basis, including 'wrapper'.\n\nRationale: Damien Stehl\u00e9 writes:\n\n```\nInternally, LLL calls may fail (which is why we need the wrapper). If\na LLL call returns 0, then it went fine. Otherwise, it can return -1\nor a positive value. -1 means that there were too many loop iterations\n(very unfrequent), and >0 means that the size-reduction failed (much\nmore frequent if the precision is not high enough).\n```\n\nThis means that a positive value indicates a non-reduced basis, which is an error condition for the proved fpLLL functions. (The actual returned value kappa seems to indicate the row in which the size-reduction failed.)\n\nmalb: on IRC, you mentioned a testcase that triggered a positive return value in the main wrapper. Which one? The doctest in `fplll.pyx`'s `wrapper()` seems to work for me. (I tried ~20 times since it has random input.)",
+    "body": "I think that we should check for != 0 in all fpLLL calls that are guaranteed to return an LLL-reduced basis, including 'wrapper'.\n\nRationale: Damien Stehl\u00e9 writes:\n\n```\nInternally, LLL calls may fail (which is why we need the wrapper). If\na LLL call returns 0, then it went fine. Otherwise, it can return -1\nor a positive value. -1 means that there were too many loop iterations\n(very unfrequent), and >0 means that the size-reduction failed (much\nmore frequent if the precision is not high enough).\n```\nThis means that a positive value indicates a non-reduced basis, which is an error condition for the proved fpLLL functions. (The actual returned value kappa seems to indicate the row in which the size-reduction failed.)\n\nmalb: on IRC, you mentioned a testcase that triggered a positive return value in the main wrapper. Which one? The doctest in `fplll.pyx`'s `wrapper()` seems to work for me. (I tried ~20 times since it has random input.)",
     "created_at": "2008-01-16T19:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
@@ -126,7 +125,6 @@ or a positive value. -1 means that there were too many loop iterations
 (very unfrequent), and >0 means that the size-reduction failed (much
 more frequent if the precision is not high enough).
 ```
-
 This means that a positive value indicates a non-reduced basis, which is an error condition for the proved fpLLL functions. (The actual returned value kappa seems to indicate the row in which the size-reduction failed.)
 
 malb: on IRC, you mentioned a testcase that triggered a positive return value in the main wrapper. Which one? The doctest in `fplll.pyx`'s `wrapper()` seems to work for me. (I tried ~20 times since it has random input.)
@@ -198,7 +196,7 @@ Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.pat
 archive/issue_comments_007539.json:
 ```json
 {
-    "body": "The patch looks good and applies cleanly, but:\n\n\n```\nFile \"fplll.pyx\", line 162:\n    sage: F.wrapper()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/malb/SAGE/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[4]>\", line 1, in <module>\n        F.wrapper()###line 162:\n    sage: F.wrapper()\n      File \"fplll.pyx\", line 187, in sage.libs.fplll.fplll.FP_LLL.wrapper\n        raise RuntimeError, \"fpLLL returned %d != 0\"%ret\n    RuntimeError: fpLLL returned 3 != 0\n```\n\n\nThis is on a 64-bit Linux. I assume this can be reproduced on `sage.math`.\n\nPS: Trying something bold and reassigning this ticket to wjp, feel free to bounce it.",
+    "body": "The patch looks good and applies cleanly, but:\n\n```\nFile \"fplll.pyx\", line 162:\n    sage: F.wrapper()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/malb/SAGE/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[4]>\", line 1, in <module>\n        F.wrapper()###line 162:\n    sage: F.wrapper()\n      File \"fplll.pyx\", line 187, in sage.libs.fplll.fplll.FP_LLL.wrapper\n        raise RuntimeError, \"fpLLL returned %d != 0\"%ret\n    RuntimeError: fpLLL returned 3 != 0\n```\n\nThis is on a 64-bit Linux. I assume this can be reproduced on `sage.math`.\n\nPS: Trying something bold and reassigning this ticket to wjp, feel free to bounce it.",
     "created_at": "2008-01-18T17:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
@@ -208,7 +206,6 @@ archive/issue_comments_007539.json:
 ```
 
 The patch looks good and applies cleanly, but:
-
 
 ```
 File "fplll.pyx", line 162:
@@ -224,7 +221,6 @@ Exception raised:
         raise RuntimeError, "fpLLL returned %d != 0"%ret
     RuntimeError: fpLLL returned 3 != 0
 ```
-
 
 This is on a 64-bit Linux. I assume this can be reproduced on `sage.math`.
 
@@ -255,7 +251,7 @@ Changing assignee from @malb to @wjp.
 archive/issue_comments_007541.json:
 ```json
 {
-    "body": "\n```\nsage: from sage.libs.fplll.fplll import FP_LLL\nsage: W = random_matrix(ZZ,7,7)\nsage: W # result random\n\n[ -1  -1  -5  -1  -1  -8   3]\n[  2   1   1   3  -3  -6   1]\n[  1   1   1  -1  -3   1   2]\n[ -2   2   1   1 -58  -1  -2]\n[  1   1   1  -1   1  -3  -1]\n[ -1   1   1   1   3   2 -31]\n[  1  -1  -3   1   1  -2   1]\n\nsage: print W.list()\n\n[-1, -1, -5, -1, -1, -8, 3, 2, 1, 1, 3, -3, -6, 1, 1, 1, 1, -1, -3, 1, 2, -2, 2, 1, 1, -58, -1, -2, 1, 1, 1, -1, 1, -3, -1, -1, 1, 1, 1, 3, 2, -31, 1, -1, -3, 1, 1, -2, 1]\n\nsage: F = FP_LLL(W)\nsage: F.wrapper()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n/home/malb/<ipython console> in <module>()\n/home/malb/fplll.pyx in sage.libs.fplll.fplll.FP_LLL.wrapper()\n<type 'exceptions.RuntimeError'>: fpLLL returned 3 != 0\nsage: F._sage_()\n[                    1                     1                     1                    -1                     1                    -3                    -1]\n[                    1                     1                     1                    -1                    -3                     1                     2]\n[                    1                    -1                    -3                     1                     1                    -2                     1]\n[  1889035965444230183   -782769071737015336  -3454574108918260854    782769071737015340 -16557708108281492442  14115538695983654830  14617827127031307303]\n[                   -5                    -1                    -1                    -1                    -1                    -2                     0]\n[                   -4                     4                     3                     3                     4                    -1                     6]\n[                   -4                     9                    -3                     1                  \n```\n",
+    "body": "```\nsage: from sage.libs.fplll.fplll import FP_LLL\nsage: W = random_matrix(ZZ,7,7)\nsage: W # result random\n\n[ -1  -1  -5  -1  -1  -8   3]\n[  2   1   1   3  -3  -6   1]\n[  1   1   1  -1  -3   1   2]\n[ -2   2   1   1 -58  -1  -2]\n[  1   1   1  -1   1  -3  -1]\n[ -1   1   1   1   3   2 -31]\n[  1  -1  -3   1   1  -2   1]\n\nsage: print W.list()\n\n[-1, -1, -5, -1, -1, -8, 3, 2, 1, 1, 3, -3, -6, 1, 1, 1, 1, -1, -3, 1, 2, -2, 2, 1, 1, -58, -1, -2, 1, 1, 1, -1, 1, -3, -1, -1, 1, 1, 1, 3, 2, -31, 1, -1, -3, 1, 1, -2, 1]\n\nsage: F = FP_LLL(W)\nsage: F.wrapper()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n/home/malb/<ipython console> in <module>()\n/home/malb/fplll.pyx in sage.libs.fplll.fplll.FP_LLL.wrapper()\n<type 'exceptions.RuntimeError'>: fpLLL returned 3 != 0\nsage: F._sage_()\n[                    1                     1                     1                    -1                     1                    -3                    -1]\n[                    1                     1                     1                    -1                    -3                     1                     2]\n[                    1                    -1                    -3                     1                     1                    -2                     1]\n[  1889035965444230183   -782769071737015336  -3454574108918260854    782769071737015340 -16557708108281492442  14115538695983654830  14617827127031307303]\n[                   -5                    -1                    -1                    -1                    -1                    -2                     0]\n[                   -4                     4                     3                     3                     4                    -1                     6]\n[                   -4                     9                    -3                     1                  \n```",
     "created_at": "2008-01-18T17:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
@@ -263,7 +259,6 @@ archive/issue_comments_007541.json:
     "user": "https://github.com/malb"
 }
 ```
-
 
 ```
 sage: from sage.libs.fplll.fplll import FP_LLL
@@ -298,7 +293,6 @@ sage: F._sage_()
 [                   -4                     4                     3                     3                     4                    -1                     6]
 [                   -4                     9                    -3                     1                  
 ```
-
 
 
 

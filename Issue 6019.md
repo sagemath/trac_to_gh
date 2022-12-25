@@ -3,7 +3,7 @@
 archive/issues_006019.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nI forgot to disable the automatic Hecke-invariance check, and to use the already-calculated dual free module, when calling the submodule constructor to constructing new subspaces of modular forms spaces. \n\nThat meant that the very time-consuming functions `_is_hecke_invariant_free_module` and `dual_free_module` were getting called, which slowed down the computation *ridiculously*.\n\nBefore:\n\n```\nsage: C = CuspForms(12, 8)\nsage: time C.new_submodule()\nCPU times: user 217.98 s, sys: 0.39 s, total: 218.37 s\nWall time: 229.00 s\nModular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field\n```\n\n\nAfter:\n\n```\nsage: time C.new_submodule()\nCPU times: user 1.55 s, sys: 0.02 s, total: 1.57 s\nWall time: 1.58 s\nModular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field\n```\n\n\nSo that's a speedup by a factor of 139 in this example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6019\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nI forgot to disable the automatic Hecke-invariance check, and to use the already-calculated dual free module, when calling the submodule constructor to constructing new subspaces of modular forms spaces. \n\nThat meant that the very time-consuming functions `_is_hecke_invariant_free_module` and `dual_free_module` were getting called, which slowed down the computation *ridiculously*.\n\nBefore:\n\n```\nsage: C = CuspForms(12, 8)\nsage: time C.new_submodule()\nCPU times: user 217.98 s, sys: 0.39 s, total: 218.37 s\nWall time: 229.00 s\nModular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field\n```\n\nAfter:\n\n```\nsage: time C.new_submodule()\nCPU times: user 1.55 s, sys: 0.02 s, total: 1.57 s\nWall time: 1.58 s\nModular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field\n```\n\nSo that's a speedup by a factor of 139 in this example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6019\n\n",
     "created_at": "2009-05-11T10:16:52Z",
     "labels": [
         "component: modular forms",
@@ -34,7 +34,6 @@ Wall time: 229.00 s
 Modular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field
 ```
 
-
 After:
 
 ```
@@ -43,7 +42,6 @@ CPU times: user 1.55 s, sys: 0.02 s, total: 1.57 s
 Wall time: 1.58 s
 Modular Forms subspace of dimension 2 of Modular Forms space of dimension 17 for Congruence Subgroup Gamma0(12) ofweight 8 over Rational Field
 ```
-
 
 So that's a speedup by a factor of 139 in this example.
 

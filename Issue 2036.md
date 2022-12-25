@@ -3,7 +3,7 @@
 archive/issues_002036.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: matrix(SR, 5, [1..5^2]).charpoly().expand()\n-x^5 + 65*x^4 + 250*x^3\nsage: matrix(QQ, 5, [1..5^2]).charpoly()\nx^5 - 65*x^4 - 250*x^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2036\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: matrix(SR, 5, [1..5^2]).charpoly().expand()\n-x^5 + 65*x^4 + 250*x^3\nsage: matrix(QQ, 5, [1..5^2]).charpoly()\nx^5 - 65*x^4 - 250*x^3\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2036\n\n",
     "created_at": "2008-02-03T04:18:45Z",
     "labels": [
         "component: calculus",
@@ -19,14 +19,12 @@ archive/issues_002036.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: matrix(SR, 5, [1..5^2]).charpoly().expand()
 -x^5 + 65*x^4 + 250*x^3
 sage: matrix(QQ, 5, [1..5^2]).charpoly()
 x^5 - 65*x^4 - 250*x^3
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2036
 

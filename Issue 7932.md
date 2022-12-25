@@ -3,7 +3,7 @@
 archive/issues_007932.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\n#6595 fixed a long standing bug which prevented Sage building on Solaris 10 (SPARC) if Sun Studio was installed. That allowed Sage to build properly on Solaris 10, so I set up \n\nhttp://t2nb.math.washington.edu:8000/\n\nwhich clearly states \n\n*v4.3-patched-for-Solaris(SPARC)*\n\n**Some changes(s) between Sage 4.3 and sage-4.3.1.alpha2 have completely broken the build on Solaris, so sage-4.3.1.alpha2 will not build on Solaris 10 (SPARC)**. I noticed this on my own Sun Blade 2000, but have also observed it on 't2'. \n\nBoth my Sun Blade 2000 and 't2' use gcc 4.4.1. Neither compiler has been changed in any way since 4.3 was released. \n\nI'm marking this as a blocker, as Sage would have built for the first time in years on Solaris 10 if this bug had not been introduced. This newly introduced bug needs fixing.\n\nI have created a tar file /rootpool2/local/kirkby/newly-broken-Solaris-build-sage-4.3.1.alpha2.tar on 't2' so I have record of this. I've made the permissions on /rootpool2/local/kirkby/sage-4.3.1.alpha2 world writable, so anyone who feels able to try to test this. (or grab the tar file and do it elsewhere). \n\nDave \n\n\n\n```\ngcc -shared build/temp.solaris-2.10-sun4v-2.6/sage/quadratic_forms/quadratic_form__evaluate.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/quadratic_forms/quadratic_form__evaluate.so\nbuilding 'sage.rings.bernmm' extension\ncreating build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_modp.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_modp_util.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp_util.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_rat.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_rat.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp_util.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_rat.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lgmp -lntl -lstdc++ -lpthread -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/rings/bernmm.so\nbuilding 'sage.rings.bernoulli_mod_p' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -Isage/libs/ntl/ -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernoulli_mod_p.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lntl -lstdc++ -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.so\nbuilding 'sage.rings.complex_double' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/complex_double.c -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/complex_double.o -std=c99 -D_XPG6 -w\nsage/rings/complex_double.c: In function \u2018__pyx_t_double_complex_from_parts\u2019:\nsage/rings/complex_double.c:14891: error: \u2018_Complex_I\u2019 undeclared (first use in this function)\nsage/rings/complex_double.c:14891: error: (Each undeclared identifier is reported only once\nsage/rings/complex_double.c:14891: error: for each function it appears in.)\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    181m48.343s\nuser    147m51.334s\nsys     7m45.185s\nsage: An error occurred while installing sage-4.3.1.alpha2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /rootpool2/local/kirkby/sage-4.3.1.alpha2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg/build/sage-4.3.1.alpha2 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg/build/sage-4.3.1.alpha2' && '/rootpool2/local/kirkby/sage-4.3.1.alpha2/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/sage-4.3.1.alpha2] Error 1\nmake[1]: Leaving directory `/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg'\n\nreal    1536m11.177s\nuser    1092m45.904s\nsys     102m19.699s\nError building Sage.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7932\n\n",
+    "body": "Assignee: drkirkby\n\n#6595 fixed a long standing bug which prevented Sage building on Solaris 10 (SPARC) if Sun Studio was installed. That allowed Sage to build properly on Solaris 10, so I set up \n\nhttp://t2nb.math.washington.edu:8000/\n\nwhich clearly states \n\n*v4.3-patched-for-Solaris(SPARC)*\n\n**Some changes(s) between Sage 4.3 and sage-4.3.1.alpha2 have completely broken the build on Solaris, so sage-4.3.1.alpha2 will not build on Solaris 10 (SPARC)**. I noticed this on my own Sun Blade 2000, but have also observed it on 't2'. \n\nBoth my Sun Blade 2000 and 't2' use gcc 4.4.1. Neither compiler has been changed in any way since 4.3 was released. \n\nI'm marking this as a blocker, as Sage would have built for the first time in years on Solaris 10 if this bug had not been introduced. This newly introduced bug needs fixing.\n\nI have created a tar file /rootpool2/local/kirkby/newly-broken-Solaris-build-sage-4.3.1.alpha2.tar on 't2' so I have record of this. I've made the permissions on /rootpool2/local/kirkby/sage-4.3.1.alpha2 world writable, so anyone who feels able to try to test this. (or grab the tar file and do it elsewhere). \n\nDave \n\n\n```\ngcc -shared build/temp.solaris-2.10-sun4v-2.6/sage/quadratic_forms/quadratic_form__evaluate.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/quadratic_forms/quadratic_form__evaluate.so\nbuilding 'sage.rings.bernmm' extension\ncreating build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_modp.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_modp_util.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp_util.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -DTHREAD_STACK_SIZE=4096 -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernmm/bern_rat.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_rat.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_modp_util.o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernmm/bern_rat.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lgmp -lntl -lstdc++ -lpthread -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/rings/bernmm.so\nbuilding 'sage.rings.bernoulli_mod_p' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -Isage/libs/ntl/ -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/bernoulli_mod_p.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//lib -lcsage -lntl -lstdc++ -lstdc++ -lntl -o build/lib.solaris-2.10-sun4v-2.6/sage/rings/bernoulli_mod_p.so\nbuilding 'sage.rings.complex_double' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha2/local/include/python2.6 -c sage/rings/complex_double.c -o build/temp.solaris-2.10-sun4v-2.6/sage/rings/complex_double.o -std=c99 -D_XPG6 -w\nsage/rings/complex_double.c: In function \u2018__pyx_t_double_complex_from_parts\u2019:\nsage/rings/complex_double.c:14891: error: \u2018_Complex_I\u2019 undeclared (first use in this function)\nsage/rings/complex_double.c:14891: error: (Each undeclared identifier is reported only once\nsage/rings/complex_double.c:14891: error: for each function it appears in.)\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    181m48.343s\nuser    147m51.334s\nsys     7m45.185s\nsage: An error occurred while installing sage-4.3.1.alpha2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /rootpool2/local/kirkby/sage-4.3.1.alpha2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg/build/sage-4.3.1.alpha2 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg/build/sage-4.3.1.alpha2' && '/rootpool2/local/kirkby/sage-4.3.1.alpha2/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/sage-4.3.1.alpha2] Error 1\nmake[1]: Leaving directory `/rootpool2/local/kirkby/sage-4.3.1.alpha2/spkg'\n\nreal    1536m11.177s\nuser    1092m45.904s\nsys     102m19.699s\nError building Sage.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7932\n\n",
     "created_at": "2010-01-15T01:32:35Z",
     "labels": [
         "component: porting: solaris",
@@ -36,7 +36,6 @@ I'm marking this as a blocker, as Sage would have built for the first time in ye
 I have created a tar file /rootpool2/local/kirkby/newly-broken-Solaris-build-sage-4.3.1.alpha2.tar on 't2' so I have record of this. I've made the permissions on /rootpool2/local/kirkby/sage-4.3.1.alpha2 world writable, so anyone who feels able to try to test this. (or grab the tar file and do it elsewhere). 
 
 Dave 
-
 
 
 ```
@@ -89,7 +88,6 @@ user    1092m45.904s
 sys     102m19.699s
 Error building Sage.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7932
 
@@ -166,7 +164,7 @@ I think it boils down to this: the file http://sage.math.washington.edu/home/rob
 archive/issue_comments_069001.json:
 ```json
 {
-    "body": "I've no idea why, but it does build and run as expected with the Sun Studio compiler on t2.math.washington.edu (a Sun T5240 SPARC)\n\n\n```\nkirkby@t2:[~] $ /opt/SUNWspro/bin/cc  simple_complex.c\nkirkby@t2:[~] $ ./a.out\nCYTHON_CCOMPLEX 1\n```\n\n\nand also on my Sun Sun Ultra 27 (Intel Xeon) with Sun Studio 12.1\n\n\n```\ndrkirkby@hawk:~$ /opt/sunstudio12.1/bin/cc simple_complex.c\ndrkirkby@hawk:~$ ./a.out\nCYTHON_CCOMPLEX 1\n```\n\n\nbut as you say, not on t2 if one uses 'gcc'. Nor does it build with gcc on my Sun Ultra 27 which has gcc 4.3.4 (the least buggy gcc according to some). \n\n\n```\ndrkirkby@hawk:~$ gcc  simple_complex.c\nsimple_complex.c: In function \u2018__pyx_t_double_complex_from_parts\u2019:\nsimple_complex.c:20: error: \u2018_Complex_I\u2019 undeclared (first use in this function)\nsimple_complex.c:20: error: (Each undeclared identifier is reported only once\nsimple_complex.c:20: error: for each function it appears in.)\n```\n\n\nThis rather makes me think it is gcc bug, rather than a system header file. \n\nDave",
+    "body": "I've no idea why, but it does build and run as expected with the Sun Studio compiler on t2.math.washington.edu (a Sun T5240 SPARC)\n\n```\nkirkby@t2:[~] $ /opt/SUNWspro/bin/cc  simple_complex.c\nkirkby@t2:[~] $ ./a.out\nCYTHON_CCOMPLEX 1\n```\n\nand also on my Sun Sun Ultra 27 (Intel Xeon) with Sun Studio 12.1\n\n```\ndrkirkby@hawk:~$ /opt/sunstudio12.1/bin/cc simple_complex.c\ndrkirkby@hawk:~$ ./a.out\nCYTHON_CCOMPLEX 1\n```\n\nbut as you say, not on t2 if one uses 'gcc'. Nor does it build with gcc on my Sun Ultra 27 which has gcc 4.3.4 (the least buggy gcc according to some). \n\n```\ndrkirkby@hawk:~$ gcc  simple_complex.c\nsimple_complex.c: In function \u2018__pyx_t_double_complex_from_parts\u2019:\nsimple_complex.c:20: error: \u2018_Complex_I\u2019 undeclared (first use in this function)\nsimple_complex.c:20: error: (Each undeclared identifier is reported only once\nsimple_complex.c:20: error: for each function it appears in.)\n```\n\nThis rather makes me think it is gcc bug, rather than a system header file. \n\nDave",
     "created_at": "2010-01-15T08:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7932",
     "type": "issue_comment",
@@ -177,16 +175,13 @@ archive/issue_comments_069001.json:
 
 I've no idea why, but it does build and run as expected with the Sun Studio compiler on t2.math.washington.edu (a Sun T5240 SPARC)
 
-
 ```
 kirkby@t2:[~] $ /opt/SUNWspro/bin/cc  simple_complex.c
 kirkby@t2:[~] $ ./a.out
 CYTHON_CCOMPLEX 1
 ```
 
-
 and also on my Sun Sun Ultra 27 (Intel Xeon) with Sun Studio 12.1
-
 
 ```
 drkirkby@hawk:~$ /opt/sunstudio12.1/bin/cc simple_complex.c
@@ -194,9 +189,7 @@ drkirkby@hawk:~$ ./a.out
 CYTHON_CCOMPLEX 1
 ```
 
-
 but as you say, not on t2 if one uses 'gcc'. Nor does it build with gcc on my Sun Ultra 27 which has gcc 4.3.4 (the least buggy gcc according to some). 
-
 
 ```
 drkirkby@hawk:~$ gcc  simple_complex.c
@@ -205,7 +198,6 @@ simple_complex.c:20: error: ‘_Complex_I’ undeclared (first use in this funct
 simple_complex.c:20: error: (Each undeclared identifier is reported only once
 simple_complex.c:20: error: for each function it appears in.)
 ```
-
 
 This rather makes me think it is gcc bug, rather than a system header file. 
 
@@ -244,7 +236,7 @@ Dave
 archive/issue_comments_069003.json:
 ```json
 {
-    "body": "See spkg at http://sage/home/robertwb/cython/cython-0.12.p1\n\nThis changes \n\n\n```\n#if CYTHON_CCOMPLEX\n  #ifdef __cplusplus\n    #include <complex>\n  #else\n    #include <complex.h>\n  #endif\n#endif\n```\n\n\nto\n\n\n```\n#if CYTHON_CCOMPLEX\n  #ifdef __cplusplus\n    #include <complex>\n  #else\n    #include <complex.h>\n    #if defined(__sun__) && defined(__GNUC__)\n      #undef _Complex_I\n      #define _Complex_I 1j\n    #endif\n  #endif\n#endif\n```\n\n\nbut it feels a bit hackish.",
+    "body": "See spkg at http://sage/home/robertwb/cython/cython-0.12.p1\n\nThis changes \n\n```\n#if CYTHON_CCOMPLEX\n  #ifdef __cplusplus\n    #include <complex>\n  #else\n    #include <complex.h>\n  #endif\n#endif\n```\n\nto\n\n```\n#if CYTHON_CCOMPLEX\n  #ifdef __cplusplus\n    #include <complex>\n  #else\n    #include <complex.h>\n    #if defined(__sun__) && defined(__GNUC__)\n      #undef _Complex_I\n      #define _Complex_I 1j\n    #endif\n  #endif\n#endif\n```\n\nbut it feels a bit hackish.",
     "created_at": "2010-01-16T00:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7932",
     "type": "issue_comment",
@@ -257,7 +249,6 @@ See spkg at http://sage/home/robertwb/cython/cython-0.12.p1
 
 This changes 
 
-
 ```
 #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
@@ -268,9 +259,7 @@ This changes
 #endif
 ```
 
-
 to
-
 
 ```
 #if CYTHON_CCOMPLEX
@@ -285,7 +274,6 @@ to
   #endif
 #endif
 ```
-
 
 but it feels a bit hackish.
 

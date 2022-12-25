@@ -3,7 +3,7 @@
 archive/issues_001736.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis was part of #1612: the sturm_bound() method seems not to work\n\n\n```\nsage: S37=CuspForms(37,2)\nsage: S37.sturm_bound()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/sage-2.9.3/devel/sage-alex/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modform/space.py in sturm_bound(self, M)\n    919         if M != None:\n    920             raise NotImplementedError\n--> 921         if self.__sturm_bound == None:\n    922             # the +1 below is because O(q^prec) has precision prec.\n    923             self.__sturm_bound = int(\\\n\n<type 'exceptions.AttributeError'>: 'CuspidalSubmodule_g0_Q' object has no attribute '_ModularFormsSpace__sturm_bound'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1736\n\n",
+    "body": "Assignee: @aghitza\n\nThis was part of #1612: the sturm_bound() method seems not to work\n\n```\nsage: S37=CuspForms(37,2)\nsage: S37.sturm_bound()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/opt/sage-2.9.3/devel/sage-alex/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modform/space.py in sturm_bound(self, M)\n    919         if M != None:\n    920             raise NotImplementedError\n--> 921         if self.__sturm_bound == None:\n    922             # the +1 below is because O(q^prec) has precision prec.\n    923             self.__sturm_bound = int(\\\n\n<type 'exceptions.AttributeError'>: 'CuspidalSubmodule_g0_Q' object has no attribute '_ModularFormsSpace__sturm_bound'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1736\n\n",
     "created_at": "2008-01-09T12:40:32Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_001736.json:
 Assignee: @aghitza
 
 This was part of #1612: the sturm_bound() method seems not to work
-
 
 ```
 sage: S37=CuspForms(37,2)
@@ -38,7 +37,6 @@ sage: S37.sturm_bound()
 
 <type 'exceptions.AttributeError'>: 'CuspidalSubmodule_g0_Q' object has no attribute '_ModularFormsSpace__sturm_bound'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1736

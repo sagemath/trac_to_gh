@@ -314,7 +314,7 @@ Thanks for your helpful suggestion. I will look into it.
 archive/issue_comments_065725.json:
 ```json
 {
-    "body": "I added the `Floyd-Warshall` implementation of `SciPy`. It's working well but it's not as fast as expected. In fact, most of the time is wasted in turning the graph to a Numpy array and then turning the results to required dict of dicts.\n\n\n```\nsage: D = digraphs.RandomDirectedGNP(30, .33)\nsage: for u, v in D.edges(labels=False):\n....:     D.set_edge_label(u, v, randrange(100))\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_Boost')\nCPU times: user 6.44 ms, sys: 517 \u00b5s, total: 6.96 ms\nWall time: 6.56 ms\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_SciPy')\nCPU times: user 30.2 ms, sys: 1.85 ms, total: 32 ms\nWall time: 30.6 ms\n```\n\n\n```\nsage: D = digraphs.RandomDirectedGNP(300, .33)\nsage: for u, v in D.edges(labels=False):\n....:     D.set_edge_label(u, v, randrange(100))\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_Boost')\nCPU times: user 2.73 s, sys: 18.6 ms, total: 2.75 s\nWall time: 2.76 s\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_SciPy')\nCPU times: user 1.95 s, sys: 61.6 ms, total: 2.01 s\nWall time: 2.13 s\n```\n\n----\nNew commits:",
+    "body": "I added the `Floyd-Warshall` implementation of `SciPy`. It's working well but it's not as fast as expected. In fact, most of the time is wasted in turning the graph to a Numpy array and then turning the results to required dict of dicts.\n\n```\nsage: D = digraphs.RandomDirectedGNP(30, .33)\nsage: for u, v in D.edges(labels=False):\n....:     D.set_edge_label(u, v, randrange(100))\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_Boost')\nCPU times: user 6.44 ms, sys: 517 \u00b5s, total: 6.96 ms\nWall time: 6.56 ms\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_SciPy')\nCPU times: user 30.2 ms, sys: 1.85 ms, total: 32 ms\nWall time: 30.6 ms\n```\n\n```\nsage: D = digraphs.RandomDirectedGNP(300, .33)\nsage: for u, v in D.edges(labels=False):\n....:     D.set_edge_label(u, v, randrange(100))\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_Boost')\nCPU times: user 2.73 s, sys: 18.6 ms, total: 2.75 s\nWall time: 2.76 s\nsage: %time _ = D.shortest_path_all_pairs(by_weight=True, algorithm='Floyd-Warshall_SciPy')\nCPU times: user 1.95 s, sys: 61.6 ms, total: 2.01 s\nWall time: 2.13 s\n```\n\n---\nNew commits:",
     "created_at": "2021-10-16T16:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7676",
     "type": "issue_comment",
@@ -324,7 +324,6 @@ archive/issue_comments_065725.json:
 ```
 
 I added the `Floyd-Warshall` implementation of `SciPy`. It's working well but it's not as fast as expected. In fact, most of the time is wasted in turning the graph to a Numpy array and then turning the results to required dict of dicts.
-
 
 ```
 sage: D = digraphs.RandomDirectedGNP(30, .33)
@@ -338,7 +337,6 @@ CPU times: user 30.2 ms, sys: 1.85 ms, total: 32 ms
 Wall time: 30.6 ms
 ```
 
-
 ```
 sage: D = digraphs.RandomDirectedGNP(300, .33)
 sage: for u, v in D.edges(labels=False):
@@ -351,7 +349,7 @@ CPU times: user 1.95 s, sys: 61.6 ms, total: 2.01 s
 Wall time: 2.13 s
 ```
 
-----
+---
 New commits:
 
 
@@ -431,7 +429,7 @@ So scipy thinks of graphs as matrices, there no special format/backend?
 archive/issue_comments_065728.json:
 ```json
 {
-    "body": "When you look at the code of scipy (for instance, https://github.com/scipy/scipy/blob/master/scipy/sparse/csgraph/_shortest_path.pyx), the input parameter is always\n\n```\n    csgraph : array, matrix, or sparse matrix, 2 dimensions\n        The N x N array of distances representing the input graph.\n```\n\nYou can also check method `validate_graph` in https://github.com/scipy/scipy/blob/master/scipy/sparse/csgraph/_validation.py. It may convert from one matrix format to another.",
+    "body": "When you look at the code of scipy (for instance, https://github.com/scipy/scipy/blob/master/scipy/sparse/csgraph/_shortest_path.pyx), the input parameter is always\n\n```\n    csgraph : array, matrix, or sparse matrix, 2 dimensions\n        The N x N array of distances representing the input graph.\n```\nYou can also check method `validate_graph` in https://github.com/scipy/scipy/blob/master/scipy/sparse/csgraph/_validation.py. It may convert from one matrix format to another.",
     "created_at": "2021-12-04T12:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7676",
     "type": "issue_comment",
@@ -446,7 +444,6 @@ When you look at the code of scipy (for instance, https://github.com/scipy/scipy
     csgraph : array, matrix, or sparse matrix, 2 dimensions
         The N x N array of distances representing the input graph.
 ```
-
 You can also check method `validate_graph` in https://github.com/scipy/scipy/blob/master/scipy/sparse/csgraph/_validation.py. It may convert from one matrix format to another.
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4497
 archive/issue_comments_033196.json:
 ```json
 {
-    "body": "Why this ticket? We already have\n\n```\nsage: log_b?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function log at 0x29b33f0>\nNamespace:\tInteractive\nFile:\t\t/Users/michaelabshoff/Desktop/sage-3.1.3.rc0/local/lib/python2.5/site-packages/sage/misc/functional.py\nDefinition:\tlog_b(x, b=None)\nDocstring:\n    \n        Return the log of x to the base b.  The default base is e.\n    \n        INPUT:\n            x -- number\n            b -- base (default: None, which means natural log)\n            \n        OUTPUT:\n            number\n    \n        NOTE: In Magma, the order of arguments is reversed from in\n        SAGE, i.e., the base is given first.  We use the opposite\n        ordering, so the base can be viewed as an optional second\n        argument.\n```\n\nOne could obviously implement log10, but why pollute the global namespace even more?\n\nCheers,\n\nMichael",
+    "body": "Why this ticket? We already have\n\n```\nsage: log_b?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function log at 0x29b33f0>\nNamespace:\tInteractive\nFile:\t\t/Users/michaelabshoff/Desktop/sage-3.1.3.rc0/local/lib/python2.5/site-packages/sage/misc/functional.py\nDefinition:\tlog_b(x, b=None)\nDocstring:\n    \n        Return the log of x to the base b.  The default base is e.\n    \n        INPUT:\n            x -- number\n            b -- base (default: None, which means natural log)\n            \n        OUTPUT:\n            number\n    \n        NOTE: In Magma, the order of arguments is reversed from in\n        SAGE, i.e., the base is given first.  We use the opposite\n        ordering, so the base can be viewed as an optional second\n        argument.\n```\nOne could obviously implement log10, but why pollute the global namespace even more?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-12T14:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4497",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ Docstring:
         ordering, so the base can be viewed as an optional second
         argument.
 ```
-
 One could obviously implement log10, but why pollute the global namespace even more?
 
 Cheers,

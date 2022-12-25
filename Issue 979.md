@@ -3,7 +3,7 @@
 archive/issues_000979.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
     "created_at": "2007-10-24T03:49:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,12 +19,10 @@ archive/issues_000979.json:
 ```
 Assignee: @mwhansen
 
-
 ```
 sage: a = .00000000000000000000001;a
 0.000000000000000000000010000000000000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/979
 
@@ -124,7 +122,7 @@ archive/issue_events_002708.json:
 archive/issue_comments_005953.json:
 ```json
 {
-    "body": "I believe this has already been taken care of.\n\nIn 2.8.15, we have\n\n\n```\nsage: a = .00000000000000000000001;a\n1.00000000000000e-23\n```\n",
+    "body": "I believe this has already been taken care of.\n\nIn 2.8.15, we have\n\n```\nsage: a = .00000000000000000000001;a\n1.00000000000000e-23\n```",
     "created_at": "2007-12-06T21:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
@@ -137,12 +135,10 @@ I believe this has already been taken care of.
 
 In 2.8.15, we have
 
-
 ```
 sage: a = .00000000000000000000001;a
 1.00000000000000e-23
 ```
-
 
 
 

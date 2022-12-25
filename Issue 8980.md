@@ -3,7 +3,7 @@
 archive/issues_008980.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nwjlaffin@dellbees$ pwd\n/sage/local/lib/gap-4.4.12/bin/x86_64-unknown-linux-gnu-gcc\nwjlaffin@dellbees$ grep build -n gac\n54:gap_bin=/sage/spkg/build/gap-4.4.12.p3/src/bin/x86_64-unknown-linux-gnu-gcc\n```\n\n\nChanging the bin path to the path given by pwd fixes the problem. Needs a robust fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8980\n\n",
+    "body": "Assignee: tbd\n\n```\nwjlaffin@dellbees$ pwd\n/sage/local/lib/gap-4.4.12/bin/x86_64-unknown-linux-gnu-gcc\nwjlaffin@dellbees$ grep build -n gac\n54:gap_bin=/sage/spkg/build/gap-4.4.12.p3/src/bin/x86_64-unknown-linux-gnu-gcc\n```\n\nChanging the bin path to the path given by pwd fixes the problem. Needs a robust fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8980\n\n",
     "created_at": "2010-05-17T00:50:06Z",
     "labels": [
         "component: packages: standard",
@@ -19,14 +19,12 @@ archive/issues_008980.json:
 ```
 Assignee: tbd
 
-
 ```
 wjlaffin@dellbees$ pwd
 /sage/local/lib/gap-4.4.12/bin/x86_64-unknown-linux-gnu-gcc
 wjlaffin@dellbees$ grep build -n gac
 54:gap_bin=/sage/spkg/build/gap-4.4.12.p3/src/bin/x86_64-unknown-linux-gnu-gcc
 ```
-
 
 Changing the bin path to the path given by pwd fixes the problem. Needs a robust fix.
 

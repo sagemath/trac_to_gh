@@ -3,7 +3,7 @@
 archive/issues_007372.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @malb ylchapuy\n\nKeywords: finite field iterator\n\n\n```\nsage: K.<a>=GF(2^16)\nsage: K.list()\n...\nTypeError: 'sage.rings.ring.FiniteFieldIterator' object is not iterable\n```\n\n\nSee #7366 for smaller fields (givaro implementation), this is for fields as large as 2^16.\n\nDiscussion: http://groups.google.com/group/sage-devel/browse_thread/thread/f141bdaaebf4bcbf\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7372\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @malb ylchapuy\n\nKeywords: finite field iterator\n\n```\nsage: K.<a>=GF(2^16)\nsage: K.list()\n...\nTypeError: 'sage.rings.ring.FiniteFieldIterator' object is not iterable\n```\n\nSee #7366 for smaller fields (givaro implementation), this is for fields as large as 2^16.\n\nDiscussion: http://groups.google.com/group/sage-devel/browse_thread/thread/f141bdaaebf4bcbf\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7372\n\n",
     "created_at": "2009-11-01T23:57:36Z",
     "labels": [
         "component: algebra",
@@ -22,14 +22,12 @@ CC:  @malb ylchapuy
 
 Keywords: finite field iterator
 
-
 ```
 sage: K.<a>=GF(2^16)
 sage: K.list()
 ...
 TypeError: 'sage.rings.ring.FiniteFieldIterator' object is not iterable
 ```
-
 
 See #7366 for smaller fields (givaro implementation), this is for fields as large as 2^16.
 

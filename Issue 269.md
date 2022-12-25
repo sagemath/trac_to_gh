@@ -72,7 +72,7 @@ archive/issue_events_000589.json:
 archive/issue_comments_001258.json:
 ```json
 {
-    "body": "Replying to [ticket:269 dmharvey]:\n> So far we only have add, sub, neg, various versions of mul, and div.\n> \n> We also need floordiv, mod, invert, pow.\n> \n> These would be very useful in p-adics, and need to happen for other reasons too.\n\nIs exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)",
+    "body": "Replying to [ticket:269 dmharvey]:\n> So far we only have add, sub, neg, various versions of mul, and div.\n> \n> We also need floordiv, mod, invert, pow.\n> \n> These would be very useful in p-adics, and need to happen for other reasons too.\n\n\nIs exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)",
     "created_at": "2007-10-06T19:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/269",
     "type": "issue_comment",
@@ -88,6 +88,7 @@ Replying to [ticket:269 dmharvey]:
 > 
 > These would be very useful in p-adics, and need to happen for other reasons too.
 
+
 Is exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)
 
 
@@ -97,7 +98,7 @@ Is exact division (that is, division where the caller knows that there is no rem
 archive/issue_comments_001259.json:
 ```json
 {
-    "body": "Replying to [comment:3 cwitty]:\n> Replying to [ticket:269 dmharvey]:\n> > So far we only have add, sub, neg, various versions of mul, and div.\n> > \n> > We also need floordiv, mod, invert, pow.\n> > \n> > These would be very useful in p-adics, and need to happen for other reasons too.\n> \n> Is exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)\n\nI definitely think that exact division should be included in the arithmetic architecture.  This is not because it's common, but because there is a bunch of daft coercion code in most !__floordiv!__ implementations.  All this needs to be fixed and the fix is a common boiler-plate prefix on these functions.  Or, a much better alternative is to include it in the arithmetic hierarchy and write that boilerplate coercion once at the head of the tree.\n\nI think that gcd (and maybe xgcd) should also be on this list.",
+    "body": "Replying to [comment:3 cwitty]:\n> Replying to [ticket:269 dmharvey]:\n> > So far we only have add, sub, neg, various versions of mul, and div.\n> > \n> > We also need floordiv, mod, invert, pow.\n> > \n> > These would be very useful in p-adics, and need to happen for other reasons too.\n\n> \n> Is exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)\n\n\nI definitely think that exact division should be included in the arithmetic architecture.  This is not because it's common, but because there is a bunch of daft coercion code in most !__floordiv!__ implementations.  All this needs to be fixed and the fix is a common boiler-plate prefix on these functions.  Or, a much better alternative is to include it in the arithmetic hierarchy and write that boilerplate coercion once at the head of the tree.\n\nI think that gcd (and maybe xgcd) should also be on this list.",
     "created_at": "2008-03-19T12:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/269",
     "type": "issue_comment",
@@ -113,8 +114,10 @@ Replying to [comment:3 cwitty]:
 > > We also need floordiv, mod, invert, pow.
 > > 
 > > These would be very useful in p-adics, and need to happen for other reasons too.
+
 > 
 > Is exact division (that is, division where the caller knows that there is no remainder) common enough to belong here?  (There's an implementation for Integer already, where the method is called divide_knowing_divisible_by() and calls mpz_divexact().)
+
 
 I definitely think that exact division should be included in the arithmetic architecture.  This is not because it's common, but because there is a bunch of daft coercion code in most !__floordiv!__ implementations.  All this needs to be fixed and the fix is a common boiler-plate prefix on these functions.  Or, a much better alternative is to include it in the arithmetic hierarchy and write that boilerplate coercion once at the head of the tree.
 
@@ -333,7 +336,7 @@ archive/issue_events_000599.json:
 archive/issue_comments_001262.json:
 ```json
 {
-    "body": "Jeroen, what is the rationale for\n\n```\ncpdef _mod_(self, Element other)\n```\n\ninstead of\n\n```\ncpdef Element _mod_(self, Element other)\n```\n\nIn a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?",
+    "body": "Jeroen, what is the rationale for\n\n```\ncpdef _mod_(self, Element other)\n```\ninstead of\n\n```\ncpdef Element _mod_(self, Element other)\n```\nIn a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?",
     "created_at": "2016-01-22T12:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/269",
     "type": "issue_comment",
@@ -347,13 +350,11 @@ Jeroen, what is the rationale for
 ```
 cpdef _mod_(self, Element other)
 ```
-
 instead of
 
 ```
 cpdef Element _mod_(self, Element other)
 ```
-
 In a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?
 
 
@@ -363,7 +364,7 @@ In a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?
 archive/issue_comments_001263.json:
 ```json
 {
-    "body": "Replying to [comment:19 vdelecroix]:\n> In a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?\n\nSure, but I don't know how common that is.\n\nI want to avoid unneeded checking. If you do something like\n\n```\ncpdef Element _foo_(self, other):\n    x = ...\n    return x\n```\n\nthen Cython will add a check that `x` is actually of type `Element`. I think (but this is just a wild guess) that the slow-down of these extra checks does not justify the few cases where the check might improve performance.",
+    "body": "Replying to [comment:19 vdelecroix]:\n> In a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?\n\n\nSure, but I don't know how common that is.\n\nI want to avoid unneeded checking. If you do something like\n\n```\ncpdef Element _foo_(self, other):\n    x = ...\n    return x\n```\nthen Cython will add a check that `x` is actually of type `Element`. I think (but this is just a wild guess) that the slow-down of these extra checks does not justify the few cases where the check might improve performance.",
     "created_at": "2016-01-22T12:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/269",
     "type": "issue_comment",
@@ -375,6 +376,7 @@ archive/issue_comments_001263.json:
 Replying to [comment:19 vdelecroix]:
 > In a situtation like `e1._mod_(e2)._add_(e3)` Cython would be happier. No?
 
+
 Sure, but I don't know how common that is.
 
 I want to avoid unneeded checking. If you do something like
@@ -384,7 +386,6 @@ cpdef Element _foo_(self, other):
     x = ...
     return x
 ```
-
 then Cython will add a check that `x` is actually of type `Element`. I think (but this is just a wild guess) that the slow-down of these extra checks does not justify the few cases where the check might improve performance.
 
 

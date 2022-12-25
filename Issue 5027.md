@@ -3,7 +3,7 @@
 archive/issues_005027.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: groebner, toy, toy_d_basis\n\nI get this failure on an intel mac:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5027\n\n",
+    "body": "Assignee: tbd\n\nKeywords: groebner, toy, toy_d_basis\n\nI get this failure on an intel mac:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5027\n\n",
     "created_at": "2009-01-19T16:13:02Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ Keywords: groebner, toy, toy_d_basis
 
 I get this failure on an intel mac:
 
-
 ```
 sage -t  "devel/sage/sage/rings/polynomial/toy_d_basis.py"
 **********************************************************************
@@ -34,7 +33,6 @@ Got:
     [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]
 ********************************************************************** 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5027
 
@@ -123,7 +121,7 @@ Attachment [trac_5027.patch](tarball://root/attachments/some-uuid/ticket5027/tra
 archive/issue_comments_038226.json:
 ```json
 {
-    "body": "After applying the patch:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n\t [9.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.5 seconds\n[jaap@paix sage-3.3.alpha4]$ \n\n```\n\n\nOn fedora 9, 32 bits.\n\nJaap",
+    "body": "After applying the patch:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n\t [9.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.5 seconds\n[jaap@paix sage-3.3.alpha4]$ \n\n```\n\nOn fedora 9, 32 bits.\n\nJaap",
     "created_at": "2009-02-05T15:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
@@ -133,7 +131,6 @@ archive/issue_comments_038226.json:
 ```
 
 After applying the patch:
-
 
 ```
 sage -t  "devel/sage/sage/rings/polynomial/toy_d_basis.py"  
@@ -145,7 +142,6 @@ Total time for all tests: 9.5 seconds
 [jaap@paix sage-3.3.alpha4]$ 
 
 ```
-
 
 On fedora 9, 32 bits.
 

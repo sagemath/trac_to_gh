@@ -3,7 +3,7 @@
 archive/issues_000808.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following does not work and it seems to fail in an odd way wrt. the preparser\n\n```\nP1.<t> = QQ[].fraction_field()\n```\n\nThere doesn't seem to be a convenient way of constructing a rational function field\nwith a named variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/808\n\n",
+    "body": "Assignee: somebody\n\nThe following does not work and it seems to fail in an odd way wrt. the preparser\n\n```\nP1.<t> = QQ[].fraction_field()\n```\nThere doesn't seem to be a convenient way of constructing a rational function field\nwith a named variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/808\n\n",
     "created_at": "2007-10-03T15:40:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ The following does not work and it seems to fail in an odd way wrt. the preparse
 ```
 P1.<t> = QQ[].fraction_field()
 ```
-
 There doesn't seem to be a convenient way of constructing a rational function field
 with a named variable.
 

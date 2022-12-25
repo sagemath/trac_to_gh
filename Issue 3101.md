@@ -3,7 +3,7 @@
 archive/issues_003101.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nSome people have reported mwrank.so missing some symbols at startup when compiled with pbuild, but the old build system is fine.\n\nWorking:\n\n```\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/mwrank/mwrank.o \nbuild/temp.linux-x86_64-2.5/sage/libs/mwrank/wrap.o -L/scratch/mabshoff/\nrelease-cycle/sage-3.0.1.final/local//lib -lcsage -lcurvesntl -lg0nntl \n-ljcntl -lrankntl -lntl -lgmp -lgmpxx -lstdc++ -lm -lpari -lstdc++ -lntl \n-o build/lib.linux-x86_64-2.5/sage/libs/mwrank/mwrank.so\n```\n\n\nNon-working:\n\n```\ngcc -O3 -g -fwrapv -shared -fno-strict-aliasing /mnt/drive_hda1/sagefiles/\nsage-3.0.1.rc0/devel/sage/build/temp/sage/libs/mwrank/mwrank.o -L/home/wdj/\nwdj/sagefiles/sage-3.0.1.rc0/local/lib  -lcsage  -lcurvesntl  -lg0nntl  \n-ljcntl  -lrankntl  -lntl -lgmp  -lgmpxx  -lstdc++  -lm  -lpari  -lstdc++  \n-lntl  -o /mnt/drive_hda1/sagefiles/sage-3.0.1.rc0/devel/sage-main/build/\nsage/libs/mwrank/mwrank.so\n```\n\n\nmwrank.so is a C wrapper around a C++ extension, so on some systems the linker ends up either being stupid or clever depending on your perspective. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3101\n\n",
+    "body": "Assignee: @garyfurnish\n\nSome people have reported mwrank.so missing some symbols at startup when compiled with pbuild, but the old build system is fine.\n\nWorking:\n\n```\ng++ -pthread -shared build/temp.linux-x86_64-2.5/sage/libs/mwrank/mwrank.o \nbuild/temp.linux-x86_64-2.5/sage/libs/mwrank/wrap.o -L/scratch/mabshoff/\nrelease-cycle/sage-3.0.1.final/local//lib -lcsage -lcurvesntl -lg0nntl \n-ljcntl -lrankntl -lntl -lgmp -lgmpxx -lstdc++ -lm -lpari -lstdc++ -lntl \n-o build/lib.linux-x86_64-2.5/sage/libs/mwrank/mwrank.so\n```\n\nNon-working:\n\n```\ngcc -O3 -g -fwrapv -shared -fno-strict-aliasing /mnt/drive_hda1/sagefiles/\nsage-3.0.1.rc0/devel/sage/build/temp/sage/libs/mwrank/mwrank.o -L/home/wdj/\nwdj/sagefiles/sage-3.0.1.rc0/local/lib  -lcsage  -lcurvesntl  -lg0nntl  \n-ljcntl  -lrankntl  -lntl -lgmp  -lgmpxx  -lstdc++  -lm  -lpari  -lstdc++  \n-lntl  -o /mnt/drive_hda1/sagefiles/sage-3.0.1.rc0/devel/sage-main/build/\nsage/libs/mwrank/mwrank.so\n```\n\nmwrank.so is a C wrapper around a C++ extension, so on some systems the linker ends up either being stupid or clever depending on your perspective. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3101\n\n",
     "created_at": "2008-05-04T04:12:24Z",
     "labels": [
         "component: pbuild",
@@ -31,7 +31,6 @@ release-cycle/sage-3.0.1.final/local//lib -lcsage -lcurvesntl -lg0nntl
 -o build/lib.linux-x86_64-2.5/sage/libs/mwrank/mwrank.so
 ```
 
-
 Non-working:
 
 ```
@@ -42,7 +41,6 @@ wdj/sagefiles/sage-3.0.1.rc0/local/lib  -lcsage  -lcurvesntl  -lg0nntl
 -lntl  -o /mnt/drive_hda1/sagefiles/sage-3.0.1.rc0/devel/sage-main/build/
 sage/libs/mwrank/mwrank.so
 ```
-
 
 mwrank.so is a C wrapper around a C++ extension, so on some systems the linker ends up either being stupid or clever depending on your perspective. 
 

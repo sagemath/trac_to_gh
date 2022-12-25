@@ -3,7 +3,7 @@
 archive/issues_000595.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere is a problem reported on sage-support by David DeGeorge:\n\n\n```\nDear Developers\nI am running Suse 10.1  and\nsage-2.8.3-32bit-linux-suse10-i686-Linux\nI can't get lie to build. It complains about not finding -lcurses.\nlibcurses.a is\nnot in a standard place (it is in /usr/lib/curses), I tried adding a\nsymbolic link to\n/usr/lib but then the build failed in readline.\n1. Here is the part where -lcurses was the problem\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o\ngettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o\npoly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lcurses\n/usr/lib/gcc/i586-suse-linux/4.1.0/../../../../i586-suse-linux/bin/ld:\ncannot find -lcurses\n2. Here is a part of what happened after I added a link in /usr/lib to\n/usr/lib/curses/libcurses.a\n\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o\ngettype.o getval\nue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o\nprint.o getl.o dat\ne.o static/*.o box/*.o -lreadline -lcurses\nlearn.o: In function `Learn':\nlearn.c:(.text+0x542): warning: the use of `tmpnam' is dangerous, better\nuse `mkstemp'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetnum'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgoto'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetflag'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tputs'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetent'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetstr'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/595\n\n",
+    "body": "Assignee: @williamstein\n\nHere is a problem reported on sage-support by David DeGeorge:\n\n```\nDear Developers\nI am running Suse 10.1  and\nsage-2.8.3-32bit-linux-suse10-i686-Linux\nI can't get lie to build. It complains about not finding -lcurses.\nlibcurses.a is\nnot in a standard place (it is in /usr/lib/curses), I tried adding a\nsymbolic link to\n/usr/lib but then the build failed in readline.\n1. Here is the part where -lcurses was the problem\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o\ngettype.o getvalue.o init.o learn.o main.o mem.o node.o onoff.o output.o\npoly.o sym.o print.o getl.o date.o static/*.o box/*.o -lreadline -lcurses\n/usr/lib/gcc/i586-suse-linux/4.1.0/../../../../i586-suse-linux/bin/ld:\ncannot find -lcurses\n2. Here is a part of what happened after I added a link in /usr/lib to\n/usr/lib/curses/libcurses.a\n\ngcc  -o Lie.exe lexer.o parser.o non-ANSI.o bigint.o binmat.o creatop.o\ngettype.o getval\nue.o init.o learn.o main.o mem.o node.o onoff.o output.o poly.o sym.o\nprint.o getl.o dat\ne.o static/*.o box/*.o -lreadline -lcurses\nlearn.o: In function `Learn':\nlearn.c:(.text+0x542): warning: the use of `tmpnam' is dangerous, better\nuse `mkstemp'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetnum'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgoto'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetflag'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tputs'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetent'\n/usr/local/sage-2.8.3-32bit-linux-suse10-i686-Linux/local/lib/libreadline.so:\nundefined\nreference to `tgetstr'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/595\n\n",
     "created_at": "2007-09-05T18:01:06Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,7 +19,6 @@ archive/issues_000595.json:
 Assignee: @williamstein
 
 Here is a problem reported on sage-support by David DeGeorge:
-
 
 ```
 Dear Developers
@@ -66,7 +65,6 @@ reference to `tgetent'
 undefined
 reference to `tgetstr'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/595
 

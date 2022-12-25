@@ -3,7 +3,7 @@
 archive/issues_001578.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
+    "body": "Assignee: @malb\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
     "created_at": "2007-12-21T03:53:30Z",
     "labels": [
         "component: commutative algebra",
@@ -28,7 +28,6 @@ Makes diff do its thing multiple time if requested.
 -    def diff(self, MPolynomial_libsingular variable, have_ring=True):
 +    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1578
 
@@ -221,7 +220,7 @@ I agree that f.diff(x,3) looks better, though.
 archive/issue_comments_010030.json:
 ```json
 {
-    "body": "We should probably note that this is supported by symbolic polynomials already.\n\n\n```\nsage: x,y=var('x y')\nsage: f=exp(2*x*y)\nsage: f.diff(x)\n2*y*e^(2*x*y)\nsage: f.diff(x,x)\n4*y^2*e^(2*x*y)\nsage: f.diff(x,2)\n4*y^2*e^(2*x*y)\nsage: f.diff(x,2,y)\n8*x*y^2*e^(2*x*y) + 8*y*e^(2*x*y)\nsage: f.diff(x,2,y,y)\n16*x^2*y^2*e^(2*x*y) + 32*x*y*e^(2*x*y) + 8*e^(2*x*y)\nsage: f.diff(x,2,y,2)\n16*x^2*y^2*e^(2*x*y) + 32*x*y*e^(2*x*y) + 8*e^(2*x*y)\n```\n",
+    "body": "We should probably note that this is supported by symbolic polynomials already.\n\n```\nsage: x,y=var('x y')\nsage: f=exp(2*x*y)\nsage: f.diff(x)\n2*y*e^(2*x*y)\nsage: f.diff(x,x)\n4*y^2*e^(2*x*y)\nsage: f.diff(x,2)\n4*y^2*e^(2*x*y)\nsage: f.diff(x,2,y)\n8*x*y^2*e^(2*x*y) + 8*y*e^(2*x*y)\nsage: f.diff(x,2,y,y)\n16*x^2*y^2*e^(2*x*y) + 32*x*y*e^(2*x*y) + 8*e^(2*x*y)\nsage: f.diff(x,2,y,2)\n16*x^2*y^2*e^(2*x*y) + 32*x*y*e^(2*x*y) + 8*e^(2*x*y)\n```",
     "created_at": "2008-02-04T17:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
@@ -231,7 +230,6 @@ archive/issue_comments_010030.json:
 ```
 
 We should probably note that this is supported by symbolic polynomials already.
-
 
 ```
 sage: x,y=var('x y')
@@ -249,7 +247,6 @@ sage: f.diff(x,2,y,y)
 sage: f.diff(x,2,y,2)
 16*x^2*y^2*e^(2*x*y) + 32*x*y*e^(2*x*y) + 8*e^(2*x*y)
 ```
-
 
 
 

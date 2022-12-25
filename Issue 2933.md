@@ -3,7 +3,7 @@
 archive/issues_002933.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSubstitution with a dictionary as input is broken.  Notice below in the\nthird input that the dictionary is ignored?!\n\n\n```\nsage: function('f',x)\nf(x)\nsage: (f(x)).substitute(f=log)\nlog(x)\nsage: (f(x)).substitute({f:log})\nf(x)\nsage: type(f(x))\n<class 'sage.calculus.calculus.SymbolicFunctionEvaluation'>\nsage: (x^3 + 1).substitute(x=5)\n126\nsage: (x^3 + 1).substitute({x:5})\n126\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2933\n\n",
+    "body": "Assignee: @williamstein\n\nSubstitution with a dictionary as input is broken.  Notice below in the\nthird input that the dictionary is ignored?!\n\n```\nsage: function('f',x)\nf(x)\nsage: (f(x)).substitute(f=log)\nlog(x)\nsage: (f(x)).substitute({f:log})\nf(x)\nsage: type(f(x))\n<class 'sage.calculus.calculus.SymbolicFunctionEvaluation'>\nsage: (x^3 + 1).substitute(x=5)\n126\nsage: (x^3 + 1).substitute({x:5})\n126\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2933\n\n",
     "created_at": "2008-04-15T15:02:46Z",
     "labels": [
         "component: calculus",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 Substitution with a dictionary as input is broken.  Notice below in the
 third input that the dictionary is ignored?!
 
-
 ```
 sage: function('f',x)
 f(x)
@@ -36,7 +35,6 @@ sage: (x^3 + 1).substitute(x=5)
 sage: (x^3 + 1).substitute({x:5})
 126
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2933
 

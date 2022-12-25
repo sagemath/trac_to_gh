@@ -95,7 +95,7 @@ Changing status from new to needs_work.
 archive/issue_comments_089552.json:
 ```json
 {
-    "body": "Knowing about the lll_reduce function and finally getting back to this ticket, I've just created a patch which simply moves the function lll_reduce to ell_number_field.  I've also included doctests over quadratic number fields.  \n\nOne note, this code isn't very robust.  For example, in many cases the height pairing matrix is *not* positive definite.  In this case \n\"the output depends on the undocumented behaviour of PARI's ``lllgram()``  function\", which means there is a divide by zero error.  Here's an example:\n\n\n```\n            sage: Qrt5.<rt5>=NumberField(x^2-5)\n            sage: E = EllipticCurve([0,5-rt5,0,rt5,0])\n            sage: QuadraticForm(E.height_pairing_matrix(E.gens())).is_positive_definite()\n            False\n            sage: E.lll_reduce(E.gens())\n            Exception raised:\n            Traceback (most recent call last):\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n            self.run_one_example(test, example, filename, compileflags)\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n            OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n            compileflags, 1) in test.globs\n            File \"<doctest __main__.example_39[8]>\", line 1, in <module>\n            E.lll_reduce(E.gens())###line 2106:\n            sage: E.lll_reduce(E.gens())\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 2117, in lll_reduce\n            U = pari(height_matrix).lllgram().python()\n            File \"gen.pyx\", line 7749, in sage.libs.pari.gen.gen.lllgram (sage/libs/pari/gen.c:34364)\n            File \"gen.pyx\", line 9851, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:46022)\n            PariError: division by zero (27)\n```\n",
+    "body": "Knowing about the lll_reduce function and finally getting back to this ticket, I've just created a patch which simply moves the function lll_reduce to ell_number_field.  I've also included doctests over quadratic number fields.  \n\nOne note, this code isn't very robust.  For example, in many cases the height pairing matrix is *not* positive definite.  In this case \n\"the output depends on the undocumented behaviour of PARI's ``lllgram()``  function\", which means there is a divide by zero error.  Here's an example:\n\n```\n            sage: Qrt5.<rt5>=NumberField(x^2-5)\n            sage: E = EllipticCurve([0,5-rt5,0,rt5,0])\n            sage: QuadraticForm(E.height_pairing_matrix(E.gens())).is_positive_definite()\n            False\n            sage: E.lll_reduce(E.gens())\n            Exception raised:\n            Traceback (most recent call last):\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n            self.run_one_example(test, example, filename, compileflags)\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n            OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n            compileflags, 1) in test.globs\n            File \"<doctest __main__.example_39[8]>\", line 1, in <module>\n            E.lll_reduce(E.gens())###line 2106:\n            sage: E.lll_reduce(E.gens())\n            File \"/Users/aly/Desktop/sage-4.6.1.rc1/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 2117, in lll_reduce\n            U = pari(height_matrix).lllgram().python()\n            File \"gen.pyx\", line 7749, in sage.libs.pari.gen.gen.lllgram (sage/libs/pari/gen.c:34364)\n            File \"gen.pyx\", line 9851, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:46022)\n            PariError: division by zero (27)\n```",
     "created_at": "2011-01-12T06:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ Knowing about the lll_reduce function and finally getting back to this ticket, I
 
 One note, this code isn't very robust.  For example, in many cases the height pairing matrix is *not* positive definite.  In this case 
 "the output depends on the undocumented behaviour of PARI's ``lllgram()``  function", which means there is a divide by zero error.  Here's an example:
-
 
 ```
             sage: Qrt5.<rt5>=NumberField(x^2-5)
@@ -133,7 +132,6 @@ One note, this code isn't very robust.  For example, in many cases the height pa
             File "gen.pyx", line 9851, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:46022)
             PariError: division by zero (27)
 ```
-
 
 
 
@@ -312,7 +310,7 @@ Changing keywords from "LLL, rank" to "LLL, rank, sd35.5".
 archive/issue_comments_089562.json:
 ```json
 {
-    "body": "all doctests pass on top of sage-4.8.alpha6.\n\nHowever I suggest adding an example checking the relation between the input points, `newpoints`\nand the output matrix `U`:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: Pi = E.gens()\nsage: Qi, U = E.lll_reduce(Pi)\nsage: all(sum(U[i,j]*Pi[i] for i in range(4)) == Qi[j] for j in range(4))\nTrue\n```\n\n\nAnd please add an example where an `height_matrix` is given, for example\n(this also gives an example where the precision matters):\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: Pi = E.gens()\nsage: H=E.height_pairing_matrix(Pi,3)\nsage: E.lll_reduce(Pi,height_matrix=H)\n([(-4 : 1 : 1), (-3 : 5 : 1), (-2 : 6 : 1), (1 : -7 : 1)], [1 0 0 1]\n[0 1 0 1]\n[0 0 0 1]\n[0 0 1 1])\n```\n\n\nAlso, I guess \"number of bits of precision of result\" should read \"number of bits of precision of intermediate computations\" (in fact the precision of the height matrix computation, which is\ngiven as input to Pari).\n\nPaul\n\nPS: the doctest coverage could be 100% if we could remove the deprecate function\n`local_information`. Can this be done?",
+    "body": "all doctests pass on top of sage-4.8.alpha6.\n\nHowever I suggest adding an example checking the relation between the input points, `newpoints`\nand the output matrix `U`:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: Pi = E.gens()\nsage: Qi, U = E.lll_reduce(Pi)\nsage: all(sum(U[i,j]*Pi[i] for i in range(4)) == Qi[j] for j in range(4))\nTrue\n```\n\nAnd please add an example where an `height_matrix` is given, for example\n(this also gives an example where the precision matters):\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: Pi = E.gens()\nsage: H=E.height_pairing_matrix(Pi,3)\nsage: E.lll_reduce(Pi,height_matrix=H)\n([(-4 : 1 : 1), (-3 : 5 : 1), (-2 : 6 : 1), (1 : -7 : 1)], [1 0 0 1]\n[0 1 0 1]\n[0 0 0 1]\n[0 0 1 1])\n```\n\nAlso, I guess \"number of bits of precision of result\" should read \"number of bits of precision of intermediate computations\" (in fact the precision of the height matrix computation, which is\ngiven as input to Pari).\n\nPaul\n\nPS: the doctest coverage could be 100% if we could remove the deprecate function\n`local_information`. Can this be done?",
     "created_at": "2012-01-11T15:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -334,7 +332,6 @@ sage: all(sum(U[i,j]*Pi[i] for i in range(4)) == Qi[j] for j in range(4))
 True
 ```
 
-
 And please add an example where an `height_matrix` is given, for example
 (this also gives an example where the precision matters):
 
@@ -348,7 +345,6 @@ sage: E.lll_reduce(Pi,height_matrix=H)
 [0 0 0 1]
 [0 0 1 1])
 ```
-
 
 Also, I guess "number of bits of precision of result" should read "number of bits of precision of intermediate computations" (in fact the precision of the height matrix computation, which is
 given as input to Pari).
@@ -475,7 +471,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089569.json:
 ```json
 {
-    "body": "Replying to [comment:13 cremona]:\n> I did the rebasing but am now also adding the tests suggested by Paul Zimmermann's comment 9.\nDone, so back to \"needs review\".",
+    "body": "Replying to [comment:13 cremona]:\n> I did the rebasing but am now also adding the tests suggested by Paul Zimmermann's comment 9.\n\nDone, so back to \"needs review\".",
     "created_at": "2013-08-21T15:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9411",
     "type": "issue_comment",
@@ -486,6 +482,7 @@ archive/issue_comments_089569.json:
 
 Replying to [comment:13 cremona]:
 > I did the rebasing but am now also adding the tests suggested by Paul Zimmermann's comment 9.
+
 Done, so back to "needs review".
 
 

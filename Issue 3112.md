@@ -3,7 +3,7 @@
 archive/issues_003112.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner @mwhansen\n\n\n```\nsage: for B in self_orthogonal_binary_codes(8,3):\n....:     print B.gen_mat()\n....:     print\n....:     \n[1 1]\n\n[1 1 0 0]\n[0 0 1 1]\n\n[1 0 1 0 0 0]\n[0 1 0 1 0 0]\n[0 0 0 0 1 1]\n\n[1 1 1 1]\n\n[1 1 1 1 0 0]\n[0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 1 0 1 0 1 1]\n\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n\n[1 1 1 1 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 1 0 0 0 1 1 1]\n\n[1 1 1 1 1 1 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3112\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner @mwhansen\n\n```\nsage: for B in self_orthogonal_binary_codes(8,3):\n....:     print B.gen_mat()\n....:     print\n....:     \n[1 1]\n\n[1 1 0 0]\n[0 0 1 1]\n\n[1 0 1 0 0 0]\n[0 1 0 1 0 0]\n[0 0 0 0 1 1]\n\n[1 1 1 1]\n\n[1 1 1 1 0 0]\n[0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 1 0 1 0 1 1]\n\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n\n[1 1 1 1 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 1 0 0 0 1 1 1]\n\n[1 1 1 1 1 1 1 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3112\n\n",
     "created_at": "2008-05-06T18:57:03Z",
     "labels": [
         "component: coding theory"
@@ -18,7 +18,6 @@ archive/issues_003112.json:
 Assignee: @rlmill
 
 CC:  @wdjoyner @mwhansen
-
 
 ```
 sage: for B in self_orthogonal_binary_codes(8,3):
@@ -71,7 +70,6 @@ sage: for B in self_orthogonal_binary_codes(8,3):
 
 [1 1 1 1 1 1 1 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3112
 
@@ -189,7 +187,7 @@ Regarding 3, the codes are built up recursively, so the program is naturally com
 archive/issue_comments_021488.json:
 ```json
 {
-    "body": "1. This seems to be a bug:\n\n\n```\nsage: B = self_orthogonal_binary_codes(8,4,4)\nsage: for C in B: print C.gen_mat()\n....:\n[1 1 1 1]\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n[1 0 0 1 1 0 1 0]\n[0 1 0 1 1 1 0 0]\n[0 0 1 0 1 1 1 0]\n[0 0 0 1 0 1 1 1]\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n[1 1 1 1 1 1 1 1]\nsage: for C in B: print C.gen_mat()\n....:\nsage:                          \n```\n\nIt appears B cannot be re-used!??\n\n2. Can the docstring for this command explain what kind of object the output is?\nA natural thing for a user to try is to pick off the first element:\n\n\n```\nsage: B = self_orthogonal_binary_codes(8,4,4)\nsage: B[0]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.1/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'generator' object is unsubscriptable\n```\n\nBut as you see, a type error is raised.\n\n3. Check this out:\n\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: G = C.automorphism_group_binary_code()\nsage: G.order()/MathieuGroup(22).order()\n2\n```\n\nThis is very interesting!",
+    "body": "1. This seems to be a bug:\n\n```\nsage: B = self_orthogonal_binary_codes(8,4,4)\nsage: for C in B: print C.gen_mat()\n....:\n[1 1 1 1]\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n[1 0 0 1 1 0 1 0]\n[0 1 0 1 1 1 0 0]\n[0 0 1 0 1 1 1 0]\n[0 0 0 1 0 1 1 1]\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n[1 1 1 1 1 1 1 1]\nsage: for C in B: print C.gen_mat()\n....:\nsage:                          \n```\nIt appears B cannot be re-used!??\n\n2. Can the docstring for this command explain what kind of object the output is?\nA natural thing for a user to try is to pick off the first element:\n\n```\nsage: B = self_orthogonal_binary_codes(8,4,4)\nsage: B[0]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.1/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'generator' object is unsubscriptable\n```\nBut as you see, a type error is raised.\n\n3. Check this out:\n\n```\nsage: C = QuasiQuadraticResidueCode(11)\nsage: G = C.automorphism_group_binary_code()\nsage: G.order()/MathieuGroup(22).order()\n2\n```\nThis is very interesting!",
     "created_at": "2008-05-07T18:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -199,7 +197,6 @@ archive/issue_comments_021488.json:
 ```
 
 1. This seems to be a bug:
-
 
 ```
 sage: B = self_orthogonal_binary_codes(8,4,4)
@@ -225,12 +222,10 @@ sage: for C in B: print C.gen_mat()
 ....:
 sage:                          
 ```
-
 It appears B cannot be re-used!??
 
 2. Can the docstring for this command explain what kind of object the output is?
 A natural thing for a user to try is to pick off the first element:
-
 
 ```
 sage: B = self_orthogonal_binary_codes(8,4,4)
@@ -242,11 +237,9 @@ sage: B[0]
 
 <type 'exceptions.TypeError'>: 'generator' object is unsubscriptable
 ```
-
 But as you see, a type error is raised.
 
 3. Check this out:
-
 
 ```
 sage: C = QuasiQuadraticResidueCode(11)
@@ -254,7 +247,6 @@ sage: G = C.automorphism_group_binary_code()
 sage: G.order()/MathieuGroup(22).order()
 2
 ```
-
 This is very interesting!
 
 
@@ -320,7 +312,7 @@ What this patch provides is a Python iterator. If someone wants to make a nicer 
 archive/issue_comments_021492.json:
 ```json
 {
-    "body": "The 2 patches apply cleanly to 3.0.1 and pass sage -testall.\n\n1. This segfault is a problem:\n\nsage: len(list(self_orthogonal_binary_codes(8, 4, d=1, equal=True)))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nThis is a rather nasty segfault which does not return the command line\nin the terminal window....\n\nOnce this is fixed, it would be useful for doctesting (and user's understanding) \nto include something like this in the docstring.\n\n2. Minor issue: instead of \n\n\n```\n    Generates all (permutation equivalence classes of) self-orthogonal binary\n    linear codes of length in [1..n] and dimension in [1..k].\n    \n    NOTE:\n    Technically, what is returned is a set of representatives of these classes.\n```\n\nI would say something like\n\n\n```\n    Returns a Python iterator which generates a complete set of representatives of \n    all permutation equivalence classes of self-orthogonal binary linear codes of \n    length in [1..n] and dimension in [1..k].\n```\n\n\n3. Other than these, looks good to me.",
+    "body": "The 2 patches apply cleanly to 3.0.1 and pass sage -testall.\n\n1. This segfault is a problem:\n\nsage: len(list(self_orthogonal_binary_codes(8, 4, d=1, equal=True)))\n\n\n---\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n\n---\n\nThis is a rather nasty segfault which does not return the command line\nin the terminal window....\n\nOnce this is fixed, it would be useful for doctesting (and user's understanding) \nto include something like this in the docstring.\n\n2. Minor issue: instead of \n\n```\n    Generates all (permutation equivalence classes of) self-orthogonal binary\n    linear codes of length in [1..n] and dimension in [1..k].\n    \n    NOTE:\n    Technically, what is returned is a set of representatives of these classes.\n```\nI would say something like\n\n```\n    Returns a Python iterator which generates a complete set of representatives of \n    all permutation equivalence classes of self-orthogonal binary linear codes of \n    length in [1..n] and dimension in [1..k].\n```\n\n3. Other than these, looks good to me.",
     "created_at": "2008-05-11T16:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -336,14 +328,15 @@ The 2 patches apply cleanly to 3.0.1 and pass sage -testall.
 sage: len(list(self_orthogonal_binary_codes(8, 4, d=1, equal=True)))
 
 
-------------------------------------------------------------
+---
 Unhandled SIGSEGV: A segmentation fault occured in SAGE.
 This probably occured because a *compiled* component
 of SAGE has a bug in it (typically accessing invalid memory)
 or is not properly wrapped with _sig_on, _sig_off.
 You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
-------------------------------------------------------------
+
+---
 
 This is a rather nasty segfault which does not return the command line
 in the terminal window....
@@ -353,7 +346,6 @@ to include something like this in the docstring.
 
 2. Minor issue: instead of 
 
-
 ```
     Generates all (permutation equivalence classes of) self-orthogonal binary
     linear codes of length in [1..n] and dimension in [1..k].
@@ -361,16 +353,13 @@ to include something like this in the docstring.
     NOTE:
     Technically, what is returned is a set of representatives of these classes.
 ```
-
 I would say something like
-
 
 ```
     Returns a Python iterator which generates a complete set of representatives of 
     all permutation equivalence classes of self-orthogonal binary linear codes of 
     length in [1..n] and dimension in [1..k].
 ```
-
 
 3. Other than these, looks good to me.
 
@@ -381,7 +370,7 @@ I would say something like
 archive/issue_comments_021493.json:
 ```json
 {
-    "body": "One more (minor notational) thing: I think the use of the parameter d in the function\n\n\n```\nself_orthogonal_binary_codes(8, 4, d=2,...\n```\n\ngoes against standard notation. Usually, d represents the minimum distance and either b or c represent the divisibility factor. Probably b is preferable here since c is somethings used for codewords.",
+    "body": "One more (minor notational) thing: I think the use of the parameter d in the function\n\n```\nself_orthogonal_binary_codes(8, 4, d=2,...\n```\ngoes against standard notation. Usually, d represents the minimum distance and either b or c represent the divisibility factor. Probably b is preferable here since c is somethings used for codewords.",
     "created_at": "2008-05-11T16:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -392,11 +381,9 @@ archive/issue_comments_021493.json:
 
 One more (minor notational) thing: I think the use of the parameter d in the function
 
-
 ```
 self_orthogonal_binary_codes(8, 4, d=2,...
 ```
-
 goes against standard notation. Usually, d represents the minimum distance and either b or c represent the divisibility factor. Probably b is preferable here since c is somethings used for codewords.
 
 
@@ -526,7 +513,7 @@ That should do it.
 archive/issue_comments_021500.json:
 ```json
 {
-    "body": "Oops, the patch no longer applies cleanly:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/devel/sage$ patch -p1 < trac_3112-socodes.patch\npatching file sage/coding/all.py\npatching file sage/coding/binary_code.pxd\npatching file sage/coding/binary_code.pyx\nHunk #2 FAILED at 34.\nHunk #3 succeeded at 72 (offset 2 lines).\nHunk #4 succeeded at 534 (offset 2 lines).\nHunk #5 succeeded at 549 (offset 2 lines).\nHunk #6 succeeded at 570 (offset 2 lines).\nHunk #7 succeeded at 588 (offset 2 lines).\nHunk #8 succeeded at 615 (offset 2 lines).\nHunk #9 succeeded at 833 (offset 2 lines).\nHunk #10 succeeded at 847 (offset 2 lines).\nHunk #11 succeeded at 940 (offset 2 lines).\nHunk #12 succeeded at 954 (offset 2 lines).\nHunk #13 succeeded at 1202 (offset 2 lines).\nHunk #14 succeeded at 1249 (offset 2 lines).\nHunk #15 succeeded at 1275 (offset 2 lines).\nHunk #16 succeeded at 1810 (offset 2 lines).\nHunk #17 succeeded at 1818 (offset 2 lines).\nHunk #18 succeeded at 1838 (offset 2 lines).\nHunk #19 succeeded at 1848 (offset 2 lines).\nHunk #20 succeeded at 2110 (offset 2 lines).\nHunk #21 succeeded at 2347 (offset 2 lines).\nHunk #22 succeeded at 2377 (offset 2 lines).\nHunk #23 succeeded at 2397 (offset 2 lines).\nHunk #24 succeeded at 2414 (offset 2 lines).\nHunk #25 succeeded at 2434 (offset 2 lines).\nHunk #26 succeeded at 2445 (offset 2 lines).\nHunk #27 succeeded at 2533 (offset 2 lines).\nHunk #28 succeeded at 2603 (offset 2 lines).\nHunk #29 succeeded at 2621 (offset 2 lines).\nHunk #30 succeeded at 2665 (offset 2 lines).\nHunk #31 succeeded at 2691 (offset 2 lines).\nHunk #32 succeeded at 2706 (offset 2 lines).\nHunk #33 succeeded at 2774 (offset 2 lines).\nHunk #34 succeeded at 2795 (offset 2 lines).\nHunk #35 succeeded at 2809 (offset 2 lines).\nHunk #36 succeeded at 2827 (offset 2 lines).\nHunk #37 succeeded at 2848 (offset 2 lines).\nHunk #38 succeeded at 2858 (offset 2 lines).\nHunk #39 succeeded at 2920 (offset 2 lines).\nHunk #40 succeeded at 2992 (offset 2 lines).\nHunk #41 succeeded at 3093 (offset 2 lines).\nHunk #42 succeeded at 3168 (offset 2 lines).\nHunk #43 succeeded at 3195 (offset 2 lines).\nHunk #44 succeeded at 3221 (offset 2 lines).\nHunk #45 succeeded at 3303 (offset 2 lines).\nHunk #46 succeeded at 3499 (offset 2 lines).\nHunk #47 succeeded at 3518 (offset 2 lines).\n1 out of 47 hunks FAILED -- saving rejects to file sage/coding/binary_code.pyx.rej\npatching file sage/coding/linear_code.py\nHunk #5 succeeded at 1491 (offset 9 lines).\n```\n\nFeel free to rebase it against my tree on sage.math with the above path. There are still some doctests missing, but let's get this merged and open a follow up ticket.\n\nCheers,\n\nMichael",
+    "body": "Oops, the patch no longer applies cleanly:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/devel/sage$ patch -p1 < trac_3112-socodes.patch\npatching file sage/coding/all.py\npatching file sage/coding/binary_code.pxd\npatching file sage/coding/binary_code.pyx\nHunk #2 FAILED at 34.\nHunk #3 succeeded at 72 (offset 2 lines).\nHunk #4 succeeded at 534 (offset 2 lines).\nHunk #5 succeeded at 549 (offset 2 lines).\nHunk #6 succeeded at 570 (offset 2 lines).\nHunk #7 succeeded at 588 (offset 2 lines).\nHunk #8 succeeded at 615 (offset 2 lines).\nHunk #9 succeeded at 833 (offset 2 lines).\nHunk #10 succeeded at 847 (offset 2 lines).\nHunk #11 succeeded at 940 (offset 2 lines).\nHunk #12 succeeded at 954 (offset 2 lines).\nHunk #13 succeeded at 1202 (offset 2 lines).\nHunk #14 succeeded at 1249 (offset 2 lines).\nHunk #15 succeeded at 1275 (offset 2 lines).\nHunk #16 succeeded at 1810 (offset 2 lines).\nHunk #17 succeeded at 1818 (offset 2 lines).\nHunk #18 succeeded at 1838 (offset 2 lines).\nHunk #19 succeeded at 1848 (offset 2 lines).\nHunk #20 succeeded at 2110 (offset 2 lines).\nHunk #21 succeeded at 2347 (offset 2 lines).\nHunk #22 succeeded at 2377 (offset 2 lines).\nHunk #23 succeeded at 2397 (offset 2 lines).\nHunk #24 succeeded at 2414 (offset 2 lines).\nHunk #25 succeeded at 2434 (offset 2 lines).\nHunk #26 succeeded at 2445 (offset 2 lines).\nHunk #27 succeeded at 2533 (offset 2 lines).\nHunk #28 succeeded at 2603 (offset 2 lines).\nHunk #29 succeeded at 2621 (offset 2 lines).\nHunk #30 succeeded at 2665 (offset 2 lines).\nHunk #31 succeeded at 2691 (offset 2 lines).\nHunk #32 succeeded at 2706 (offset 2 lines).\nHunk #33 succeeded at 2774 (offset 2 lines).\nHunk #34 succeeded at 2795 (offset 2 lines).\nHunk #35 succeeded at 2809 (offset 2 lines).\nHunk #36 succeeded at 2827 (offset 2 lines).\nHunk #37 succeeded at 2848 (offset 2 lines).\nHunk #38 succeeded at 2858 (offset 2 lines).\nHunk #39 succeeded at 2920 (offset 2 lines).\nHunk #40 succeeded at 2992 (offset 2 lines).\nHunk #41 succeeded at 3093 (offset 2 lines).\nHunk #42 succeeded at 3168 (offset 2 lines).\nHunk #43 succeeded at 3195 (offset 2 lines).\nHunk #44 succeeded at 3221 (offset 2 lines).\nHunk #45 succeeded at 3303 (offset 2 lines).\nHunk #46 succeeded at 3499 (offset 2 lines).\nHunk #47 succeeded at 3518 (offset 2 lines).\n1 out of 47 hunks FAILED -- saving rejects to file sage/coding/binary_code.pyx.rej\npatching file sage/coding/linear_code.py\nHunk #5 succeeded at 1491 (offset 9 lines).\n```\nFeel free to rebase it against my tree on sage.math with the above path. There are still some doctests missing, but let's get this merged and open a follow up ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-22T20:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
@@ -592,7 +579,6 @@ Hunk #47 succeeded at 3518 (offset 2 lines).
 patching file sage/coding/linear_code.py
 Hunk #5 succeeded at 1491 (offset 9 lines).
 ```
-
 Feel free to rebase it against my tree on sage.math with the above path. There are still some doctests missing, but let's get this merged and open a follow up ticket.
 
 Cheers,

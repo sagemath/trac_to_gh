@@ -127,7 +127,7 @@ Nice.  I'll try to review it if someone else doesn't get there first.  Do you th
 archive/issue_comments_039479.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> Nice.  I'll try to review it if someone else doesn't get there first.  Do you think we'd need a deprecation period, or is it unlikely anyone would actually use this other than in the files in question?\nI think it's unlikely, since it's barely used in Sage itself.  Besides, Sage code shouldn't be affected:\n\n```\nsage: BinaryTree()\n```\n\nshould work just as before.\n\nI don't even know how to deprecate a *module name* (as opposed to a function).",
+    "body": "Replying to [comment:3 kcrisman]:\n> Nice.  I'll try to review it if someone else doesn't get there first.  Do you think we'd need a deprecation period, or is it unlikely anyone would actually use this other than in the files in question?\n  \nI think it's unlikely, since it's barely used in Sage itself.  Besides, Sage code shouldn't be affected:\n\n```\nsage: BinaryTree()\n```\nshould work just as before.\n\nI don't even know how to deprecate a *module name* (as opposed to a function).",
     "created_at": "2012-09-25T20:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
@@ -138,12 +138,12 @@ archive/issue_comments_039479.json:
 
 Replying to [comment:3 kcrisman]:
 > Nice.  I'll try to review it if someone else doesn't get there first.  Do you think we'd need a deprecation period, or is it unlikely anyone would actually use this other than in the files in question?
+  
 I think it's unlikely, since it's barely used in Sage itself.  Besides, Sage code shouldn't be affected:
 
 ```
 sage: BinaryTree()
 ```
-
 should work just as before.
 
 I don't even know how to deprecate a *module name* (as opposed to a function).
@@ -155,7 +155,7 @@ I don't even know how to deprecate a *module name* (as opposed to a function).
 archive/issue_comments_039480.json:
 ```json
 {
-    "body": "> I don't even know how to deprecate a *module name* (as opposed to a function).\nGood point, which is why I didn't do it before.\n\nThis looks good.  I guess at some point this was supposed to have a lot more than binary trees :)  Running irrelevant tests now, but the relevant ones were fine.  I'm getting some errors, but they seem unrelated - I'll look into it.",
+    "body": "> I don't even know how to deprecate a *module name* (as opposed to a function).\n\nGood point, which is why I didn't do it before.\n\nThis looks good.  I guess at some point this was supposed to have a lot more than binary trees :)  Running irrelevant tests now, but the relevant ones were fine.  I'm getting some errors, but they seem unrelated - I'll look into it.",
     "created_at": "2012-09-26T01:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5160",
     "type": "issue_comment",
@@ -165,6 +165,7 @@ archive/issue_comments_039480.json:
 ```
 
 > I don't even know how to deprecate a *module name* (as opposed to a function).
+
 Good point, which is why I didn't do it before.
 
 This looks good.  I guess at some point this was supposed to have a lot more than binary trees :)  Running irrelevant tests now, but the relevant ones were fine.  I'm getting some errors, but they seem unrelated - I'll look into it.

@@ -3,7 +3,7 @@
 archive/issues_009529.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @fchapoton @tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @fchapoton @tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
     "created_at": "2010-07-17T12:56:30Z",
     "labels": [
         "component: algebra",
@@ -30,7 +30,6 @@ sage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;
 > done
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9529
@@ -62,7 +61,7 @@ See also #5906.
 archive/issue_comments_091530.json:
 ```json
 {
-    "body": "\n```\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5.rc1/devel/sage-main/sage/graphs/graph_plot.py\", line 267:\n    sage: GP.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[13]>\", line 1, in <module>\n        GP.plot()###line 267:\n    sage: GP.plot()\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook   \n        print_obj(sys.stdout, obj)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370) \n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 915, in _repr_\n        self.show()\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 1437, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 1973, in save\n        figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/figure.py\", line 1032, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/backend_bases.py\", line 1455, in print_figure\n        **kwargs)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 366, in print_png\n        filename_or_obj, self.figure.dpi)\n    RuntimeError: Error building image\n**********************************************************************\n```\n",
+    "body": "```\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5.rc1/devel/sage-main/sage/graphs/graph_plot.py\", line 267:\n    sage: GP.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[13]>\", line 1, in <module>\n        GP.plot()###line 267:\n    sage: GP.plot()\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook   \n        print_obj(sys.stdout, obj)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1370) \n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 915, in _repr_\n        self.show()\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 1437, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/sage/plot/plot.py\", line 1973, in save\n        figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/figure.py\", line 1032, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/backend_bases.py\", line 1455, in print_figure\n        **kwargs)\n      File \"/scratch/rlmill/sage-4.5.rc1/local/lib/python/site-packages/matplotlib/backends/backend_agg.py\", line 366, in print_png\n        filename_or_obj, self.figure.dpi)\n    RuntimeError: Error building image\n**********************************************************************\n```",
     "created_at": "2010-07-17T12:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
@@ -70,7 +69,6 @@ archive/issue_comments_091530.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 **********************************************************************
@@ -110,13 +108,12 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_091531.json:
 ```json
 {
-    "body": "To reproduce this fairly quickly, type:\n\n```\nsage.plot.plot.DOCTEST_MODE = True\nwhile True:\n    d = DiGraph({}, loops=True, multiedges=True, sparse=True)\n    d.add_edges([(0,0,'a'),(0,0,'b'),(0,1,'c'),(0,1,'d'),\n            (0,1,'e'),(0,1,'f'),(0,1,'f'),(2,1,'g'),(2,2,'h')])\n    GP = d.graphplot(vertex_size=100, edge_labels=True, color_by_label=True, edge_style='dashed')\n    GP.set_edges(edge_style='solid')\n    GP.plot()\n```\n\nat a sage: prompt.\n\nI spent some time looking into this; here are the results I found before I gave up.\n\nWe draw our plots with bbox_inches='tight', which means:\n\n```\n            Bbox in inches. Only the given portion of the figure is\n            saved. If 'tight', try to figure out the tight bbox of\n            the figure.\n```\n\n\nThere's also a parameter pad_inches:\n\n```\n            Amount of padding around the figure when bbox_inches is\n            'tight'.\n```\n\n\nmatplotlib gets its \"tight bbox\" with the appropriately-named get_tightbbox() function, in src/lib/matplotlib/figure.py.  Its docstring proclaims,\n\n```\n        It only accounts axes title, axis labels, and axis\n        ticklabels. Needs improvement.\n```\n\nand it's true, it does need improvement.\n\nOur graph_plot figure has \"empty\" axes (no title, labels, or ticklabel), but it does have an axes object with a size, which gets used for the tight bbox.  I believe that size comes indirectly from get_minmax_data in sage/plot/plot.py, but I'm not sure.\n\nI can think of a few possibilities to fix the problem, ordered from best to worst.\n\n1) Fix matplotlib get_tightbbox() to actually be a bounding box for the drawing, not just for the \"axes\".  This would definitely be best... it would also fix problems like graphs with loops going off the edge of the plot, etc.\n\n2) Adjust our get_minmax_data functions to be closer to a correct bounding box.  For instance, currently get_minmax_data on a Text object only looks at the center of the text, and doesn't take the size into account.  There's a limit to how good a job we could do, though... we don't want to start digging through font metrics, etc.\n\n3) Set pad_inches to make all our plots \"a little bit bigger\".  The downside, of course, is that this simple approach would affect *all* our plots.\n\nLike I said, I'm giving up now.",
+    "body": "To reproduce this fairly quickly, type:\n\n```\nsage.plot.plot.DOCTEST_MODE = True\nwhile True:\n    d = DiGraph({}, loops=True, multiedges=True, sparse=True)\n    d.add_edges([(0,0,'a'),(0,0,'b'),(0,1,'c'),(0,1,'d'),\n            (0,1,'e'),(0,1,'f'),(0,1,'f'),(2,1,'g'),(2,2,'h')])\n    GP = d.graphplot(vertex_size=100, edge_labels=True, color_by_label=True, edge_style='dashed')\n    GP.set_edges(edge_style='solid')\n    GP.plot()\n```\nat a sage: prompt.\n\nI spent some time looking into this; here are the results I found before I gave up.\n\nWe draw our plots with bbox_inches='tight', which means:\n\n```\n            Bbox in inches. Only the given portion of the figure is\n            saved. If 'tight', try to figure out the tight bbox of\n            the figure.\n```\n\nThere's also a parameter pad_inches:\n\n```\n            Amount of padding around the figure when bbox_inches is\n            'tight'.\n```\n\nmatplotlib gets its \"tight bbox\" with the appropriately-named get_tightbbox() function, in src/lib/matplotlib/figure.py.  Its docstring proclaims,\n\n```\n        It only accounts axes title, axis labels, and axis\n        ticklabels. Needs improvement.\n```\nand it's true, it does need improvement.\n\nOur graph_plot figure has \"empty\" axes (no title, labels, or ticklabel), but it does have an axes object with a size, which gets used for the tight bbox.  I believe that size comes indirectly from get_minmax_data in sage/plot/plot.py, but I'm not sure.\n\nI can think of a few possibilities to fix the problem, ordered from best to worst.\n\n1) Fix matplotlib get_tightbbox() to actually be a bounding box for the drawing, not just for the \"axes\".  This would definitely be best... it would also fix problems like graphs with loops going off the edge of the plot, etc.\n\n2) Adjust our get_minmax_data functions to be closer to a correct bounding box.  For instance, currently get_minmax_data on a Text object only looks at the center of the text, and doesn't take the size into account.  There's a limit to how good a job we could do, though... we don't want to start digging through font metrics, etc.\n\n3) Set pad_inches to make all our plots \"a little bit bigger\".  The downside, of course, is that this simple approach would affect *all* our plots.\n\nLike I said, I'm giving up now.",
     "created_at": "2010-07-17T19:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
@@ -137,7 +134,6 @@ while True:
     GP.set_edges(edge_style='solid')
     GP.plot()
 ```
-
 at a sage: prompt.
 
 I spent some time looking into this; here are the results I found before I gave up.
@@ -150,7 +146,6 @@ We draw our plots with bbox_inches='tight', which means:
             the figure.
 ```
 
-
 There's also a parameter pad_inches:
 
 ```
@@ -158,14 +153,12 @@ There's also a parameter pad_inches:
             'tight'.
 ```
 
-
 matplotlib gets its "tight bbox" with the appropriately-named get_tightbbox() function, in src/lib/matplotlib/figure.py.  Its docstring proclaims,
 
 ```
         It only accounts axes title, axis labels, and axis
         ticklabels. Needs improvement.
 ```
-
 and it's true, it does need improvement.
 
 Our graph_plot figure has "empty" axes (no title, labels, or ticklabel), but it does have an axes object with a size, which gets used for the tight bbox.  I believe that size comes indirectly from get_minmax_data in sage/plot/plot.py, but I'm not sure.

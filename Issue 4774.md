@@ -109,7 +109,7 @@ Changing assignee from tbd to mabshoff.
 archive/issue_comments_036084.json:
 ```json
 {
-    "body": "\n```\n[03:47] <mabshoff> jason-: if you want to update matplotlib make sure to base it off the spkg in 3.2.2.a2.\n[03:47] <jason-> okay\n[03:47] <mabshoff> This one: http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.2/alpha2/matplotlib-0.98.3.p4.spkg\n```\n",
+    "body": "```\n[03:47] <mabshoff> jason-: if you want to update matplotlib make sure to base it off the spkg in 3.2.2.a2.\n[03:47] <jason-> okay\n[03:47] <mabshoff> This one: http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.2/alpha2/matplotlib-0.98.3.p4.spkg\n```",
     "created_at": "2008-12-13T09:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -118,13 +118,11 @@ archive/issue_comments_036084.json:
 }
 ```
 
-
 ```
 [03:47] <mabshoff> jason-: if you want to update matplotlib make sure to base it off the spkg in 3.2.2.a2.
 [03:47] <jason-> okay
 [03:47] <mabshoff> This one: http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.2/alpha2/matplotlib-0.98.3.p4.spkg
 ```
-
 
 
 
@@ -251,7 +249,7 @@ It should be ready to be reviewed now.
 archive/issue_comments_036091.json:
 ```json
 {
-    "body": "Once I've deleted the old `matplotlibrc` files from everywhere, as proposed in\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/11704ed70dc0d6e3\n\nI get failures related to `ft2font`:\n\n\n```\nsage: from matplotlib import ft2font\n\nImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/ft2font.so, 2): Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib\n\n```\n\n\nTrying it again doesn't even give the error again: Sage just thrashes.",
+    "body": "Once I've deleted the old `matplotlibrc` files from everywhere, as proposed in\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/11704ed70dc0d6e3\n\nI get failures related to `ft2font`:\n\n```\nsage: from matplotlib import ft2font\n\nImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/ft2font.so, 2): Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib\n\n```\n\nTrying it again doesn't even give the error again: Sage just thrashes.",
     "created_at": "2009-02-05T22:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -266,7 +264,6 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/11704ed70dc0d6e3
 
 I get failures related to `ft2font`:
 
-
 ```
 sage: from matplotlib import ft2font
 
@@ -275,7 +272,6 @@ ImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packa
   Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib
 
 ```
-
 
 Trying it again doesn't even give the error again: Sage just thrashes.
 
@@ -306,7 +302,7 @@ Positive review for the spkg and patches. The thread above resolved the `matplot
 archive/issue_comments_036093.json:
 ```json
 {
-    "body": "OK, moving `/opt/local` out of the way wasn't enough:\n\n\n```\nsage: from matplotlib.pyplot import scatter\n\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n<SNIP>\n/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py in <module>()\n     18 \n     19 import matplotlib\n---> 20 from matplotlib.backends import _macosx\n     21 \n     22 def show():\n\nImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/backends/_macosx.so, 2): Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib\n```\n\n\nSo... wtf the linker is doing in `/System/Library/Frameworks` I can't say, but something is not right in Dodge.",
+    "body": "OK, moving `/opt/local` out of the way wasn't enough:\n\n```\nsage: from matplotlib.pyplot import scatter\n\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n<SNIP>\n/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py in <module>()\n     18 \n     19 import matplotlib\n---> 20 from matplotlib.backends import _macosx\n     21 \n     22 def show():\n\nImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packages/matplotlib/backends/_macosx.so, 2): Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib\n```\n\nSo... wtf the linker is doing in `/System/Library/Frameworks` I can't say, but something is not right in Dodge.",
     "created_at": "2009-02-06T00:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -316,7 +312,6 @@ archive/issue_comments_036093.json:
 ```
 
 OK, moving `/opt/local` out of the way wasn't enough:
-
 
 ```
 sage: from matplotlib.pyplot import scatter
@@ -335,7 +330,6 @@ ImportError: dlopen(/Users/rlmill/sage-3.3.alpha5/local/lib/python2.5/site-packa
   Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO
   Expected in: /Users/rlmill/sage-3.3.alpha5/local/lib//libpng12.0.dylib
 ```
-
 
 So... wtf the linker is doing in `/System/Library/Frameworks` I can't say, but something is not right in Dodge.
 
@@ -380,7 +374,7 @@ archive/issue_events_010906.json:
 archive/issue_comments_036094.json:
 ```json
 {
-    "body": "This spkg is twice as large as the previous:\n\n```\n-rw-r--r--@ 1 michaelabshoff  staff  4845513 Feb  2 17:28 matplotlib-0.98.3.p5.spkg\n-rw-r--r--  1 michaelabshoff  staff  8833439 Feb  5 16:52 matplotlib-svn6821.spkg\n```\n\nThere was some discussion on the matplotlib list about the new tarballs containing more documentation than the old ones, so we should look into getting rid of some of the documentation.\n\nThis spkg is important to get graph related plotting improvements into Sage, so let's try for 3.3.\n\nCheers,\n\nMichael",
+    "body": "This spkg is twice as large as the previous:\n\n```\n-rw-r--r--@ 1 michaelabshoff  staff  4845513 Feb  2 17:28 matplotlib-0.98.3.p5.spkg\n-rw-r--r--  1 michaelabshoff  staff  8833439 Feb  5 16:52 matplotlib-svn6821.spkg\n```\nThere was some discussion on the matplotlib list about the new tarballs containing more documentation than the old ones, so we should look into getting rid of some of the documentation.\n\nThis spkg is important to get graph related plotting improvements into Sage, so let's try for 3.3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T01:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -395,7 +389,6 @@ This spkg is twice as large as the previous:
 -rw-r--r--@ 1 michaelabshoff  staff  4845513 Feb  2 17:28 matplotlib-0.98.3.p5.spkg
 -rw-r--r--  1 michaelabshoff  staff  8833439 Feb  5 16:52 matplotlib-svn6821.spkg
 ```
-
 There was some discussion on the matplotlib list about the new tarballs containing more documentation than the old ones, so we should look into getting rid of some of the documentation.
 
 This spkg is important to get graph related plotting improvements into Sage, so let's try for 3.3.
@@ -459,7 +452,7 @@ Michael
 archive/issue_comments_036097.json:
 ```json
 {
-    "body": "I debugged this some more with rlm and the problem is the following:\n\n```\nOPTIONAL USETEX DEPENDENCIES\n               dvipng: /System/Library/Frameworks/ApplicationServices.frame\n                       work/Versions/A/Frameworks/ImageIO.framework/Version\n                       s/A/ImageIO\n          ghostscript: 8.62\n                latex: 3.1415926\n```\n\nSo killing dvipng support on OSX for now should solve the problem. His dvipng comes out of usr/texbin/dvipng.\n\nAnd while looking at this problem I also come up with a workable fix for the libpng issue once and for all - see \n\n   http://groups.google.com/group/sage-devel/t/5c655c1e1a2dc0b8\n\nCheers,\n\nMichael",
+    "body": "I debugged this some more with rlm and the problem is the following:\n\n```\nOPTIONAL USETEX DEPENDENCIES\n               dvipng: /System/Library/Frameworks/ApplicationServices.frame\n                       work/Versions/A/Frameworks/ImageIO.framework/Version\n                       s/A/ImageIO\n          ghostscript: 8.62\n                latex: 3.1415926\n```\nSo killing dvipng support on OSX for now should solve the problem. His dvipng comes out of usr/texbin/dvipng.\n\nAnd while looking at this problem I also come up with a workable fix for the libpng issue once and for all - see \n\n   http://groups.google.com/group/sage-devel/t/5c655c1e1a2dc0b8\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T01:39:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -478,7 +471,6 @@ OPTIONAL USETEX DEPENDENCIES
           ghostscript: 8.62
                 latex: 3.1415926
 ```
-
 So killing dvipng support on OSX for now should solve the problem. His dvipng comes out of usr/texbin/dvipng.
 
 And while looking at this problem I also come up with a workable fix for the libpng issue once and for all - see 
@@ -496,7 +488,7 @@ Michael
 archive/issue_comments_036098.json:
 ```json
 {
-    "body": "Ok, the culprit is this extension: \n\n```\ndef build_macosx(ext_modules, packages):\n    global BUILT_MACOSX\n    if BUILT_MACOSX: return # only build it if you you haven't already\n    module = Extension('matplotlib.backends._macosx',\n                       ['src/_macosx.m'],\n                       extra_link_args = ['-framework','Cocoa'],\n                      )\n    add_numpy_flags(module)\n    ext_modules.append(module)\n    BUILT_MACOSX = True\n```\n\nSince it links against a framework the only fix might be to fix the libpng.dylib issue on OSX once and for all.\n\nCheers,\n\nMichael",
+    "body": "Ok, the culprit is this extension: \n\n```\ndef build_macosx(ext_modules, packages):\n    global BUILT_MACOSX\n    if BUILT_MACOSX: return # only build it if you you haven't already\n    module = Extension('matplotlib.backends._macosx',\n                       ['src/_macosx.m'],\n                       extra_link_args = ['-framework','Cocoa'],\n                      )\n    add_numpy_flags(module)\n    ext_modules.append(module)\n    BUILT_MACOSX = True\n```\nSince it links against a framework the only fix might be to fix the libpng.dylib issue on OSX once and for all.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T02:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -519,7 +511,6 @@ def build_macosx(ext_modules, packages):
     ext_modules.append(module)
     BUILT_MACOSX = True
 ```
-
 Since it links against a framework the only fix might be to fix the libpng.dylib issue on OSX once and for all.
 
 Cheers,
@@ -569,7 +560,7 @@ uh, that release is 0.98.5.3.
 archive/issue_comments_036101.json:
 ```json
 {
-    "body": "Here are the directories that changed by more than 100Kb.  A negative number means the directory decreased by that many kb.  A positive number means it increased by that many kb:\n\n\n```\n('src/lib', -4280)\n('src/lib/mpl_examples', -3108)\n('src/lib/enthought', -1936)\n('src/lib/enthought/traits', -1892)\n('src/lib/mpl_examples/data', -1840)\n('src/lib/enthought/traits/ui', -1012)\n('src/lib/mpl_examples/pylab_examples', -728)\n('src/lib/enthought/traits/ui/tk', -316)\n('src/lib/enthought/traits/tests', -240)\n('src/lib/mpl_examples/user_interfaces', -140)\n('src/lib/enthought/traits/ui/tests', -124)\n('src/lib/mpl_examples/api', -112)\n```\n\n\n\n```\n('src/doc/api', 104)\n('src/examples/tests/pngsuite', 108)\n('src/unit', 116)\n('src/examples/tests', 120)\n('src/examples/user_interfaces', 144)\n('src/examples/api', 144)\n('src/lib/matplotlib/mpl-data', 480)\n('src/lib/matplotlib/mpl-data/example', 528)\n('src/lib/matplotlib', 764)\n('src/examples/pylab_examples', 840)\n('src/doc/_static', 1216)\n('src/src', 1340)\n('src/examples/data', 2152)\n('src/doc/pyplots', 2424)\n('src/examples', 3696)\n('src/doc', 3828)\n('src/', 4688)\n```\n",
+    "body": "Here are the directories that changed by more than 100Kb.  A negative number means the directory decreased by that many kb.  A positive number means it increased by that many kb:\n\n```\n('src/lib', -4280)\n('src/lib/mpl_examples', -3108)\n('src/lib/enthought', -1936)\n('src/lib/enthought/traits', -1892)\n('src/lib/mpl_examples/data', -1840)\n('src/lib/enthought/traits/ui', -1012)\n('src/lib/mpl_examples/pylab_examples', -728)\n('src/lib/enthought/traits/ui/tk', -316)\n('src/lib/enthought/traits/tests', -240)\n('src/lib/mpl_examples/user_interfaces', -140)\n('src/lib/enthought/traits/ui/tests', -124)\n('src/lib/mpl_examples/api', -112)\n```\n\n```\n('src/doc/api', 104)\n('src/examples/tests/pngsuite', 108)\n('src/unit', 116)\n('src/examples/tests', 120)\n('src/examples/user_interfaces', 144)\n('src/examples/api', 144)\n('src/lib/matplotlib/mpl-data', 480)\n('src/lib/matplotlib/mpl-data/example', 528)\n('src/lib/matplotlib', 764)\n('src/examples/pylab_examples', 840)\n('src/doc/_static', 1216)\n('src/src', 1340)\n('src/examples/data', 2152)\n('src/doc/pyplots', 2424)\n('src/examples', 3696)\n('src/doc', 3828)\n('src/', 4688)\n```",
     "created_at": "2009-02-13T16:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -579,7 +570,6 @@ archive/issue_comments_036101.json:
 ```
 
 Here are the directories that changed by more than 100Kb.  A negative number means the directory decreased by that many kb.  A positive number means it increased by that many kb:
-
 
 ```
 ('src/lib', -4280)
@@ -595,8 +585,6 @@ Here are the directories that changed by more than 100Kb.  A negative number mea
 ('src/lib/enthought/traits/ui/tests', -124)
 ('src/lib/mpl_examples/api', -112)
 ```
-
-
 
 ```
 ('src/doc/api', 104)
@@ -617,7 +605,6 @@ Here are the directories that changed by more than 100Kb.  A negative number mea
 ('src/doc', 3828)
 ('src/', 4688)
 ```
-
 
 
 
@@ -919,7 +906,7 @@ Michael
 archive/issue_comments_036115.json:
 ```json
 {
-    "body": "On sage.math we are having problems with the tkagg backend. It used to happen only occasionally, but now it happens every time I doctest plot.py:\n\n```\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/plot/plot.py\", line 172:\n    sage: grid(True)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[60]>\", line 1, in <module>\n        grid(True)###line 172:\n    sage: grid(True)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 2453, in grid\n        ret =  gca().grid(*args, **kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 572, in gca\n        ax =  gcf().gca(**kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 274, in gcf\n        return figure()\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 252, in figure\n        **kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/backends/backend_tkagg.py\", line 90, in new_figure_manager\n        window = Tk.Tk()\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/lib-tk/Tkinter.py\", line 1636, in __init__\n        self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)\n    TclError: no display name and no $DISPLAY environment variable\n```\n\n\nWe already disable tkagg on Itanium/Linux, so let's get rid of it globally.\n\nCheers,\n\nMichael",
+    "body": "On sage.math we are having problems with the tkagg backend. It used to happen only occasionally, but now it happens every time I doctest plot.py:\n\n```\nFile \"/scratch/mabshoff/sage-3.3.rc1/devel/sage/sage/plot/plot.py\", line 172:\n    sage: grid(True)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[60]>\", line 1, in <module>\n        grid(True)###line 172:\n    sage: grid(True)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 2453, in grid\n        ret =  gca().grid(*args, **kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 572, in gca\n        ax =  gcf().gca(**kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 274, in gcf\n        return figure()\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 252, in figure\n        **kwargs)\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/site-packages/matplotlib/backends/backend_tkagg.py\", line 90, in new_figure_manager\n        window = Tk.Tk()\n      File \"/scratch/mabshoff/sage-3.3.rc1/local/lib/python2.5/lib-tk/Tkinter.py\", line 1636, in __init__\n        self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)\n    TclError: no display name and no $DISPLAY environment variable\n```\n\nWe already disable tkagg on Itanium/Linux, so let's get rid of it globally.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T11:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
@@ -958,7 +945,6 @@ Exception raised:
         self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
     TclError: no display name and no $DISPLAY environment variable
 ```
-
 
 We already disable tkagg on Itanium/Linux, so let's get rid of it globally.
 

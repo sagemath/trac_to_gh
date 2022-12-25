@@ -87,7 +87,7 @@ In the meantime the interface to ratpoints which rlm wrote can be enhanced in va
 archive/issue_comments_053619.json:
 ```json
 {
-    "body": "At #7021, drkirkby updates prereq to 0.4 and writes \"If gcc is used as the C compiler, the configure script checks it is at least gcc 4.0.1.\" Does this updated spkg invalidate this ticket? Here's a conversation on IRC:\n\n```\n23:14 < mvngu> williamstein: At #7021, I see drkirkby's note \"If gcc is used as \n               the C compiler, the configure script checks it is at least gcc \n               4.0.1\". This makes me wonder about the GCC 3.4.x requirement at \n               #6580.\n23:14 < williamstein> good point.\n23:15 < williamstein> maybe we should just move ahead and forget about \n                      supporting gcc-3.4.\n23:15 < williamstein> I would be ok with that.\n23:15 < williamstein> in which case 6580 could be invalidated.\n23:15 < mvngu> williamstein: I don't know of any machine using GCC 3.4.x.\n23:15 < williamstein> yep\n23:15 < williamstein> that's why we didn't notice until after the release.\n```\n",
+    "body": "At #7021, drkirkby updates prereq to 0.4 and writes \"If gcc is used as the C compiler, the configure script checks it is at least gcc 4.0.1.\" Does this updated spkg invalidate this ticket? Here's a conversation on IRC:\n\n```\n23:14 < mvngu> williamstein: At #7021, I see drkirkby's note \"If gcc is used as \n               the C compiler, the configure script checks it is at least gcc \n               4.0.1\". This makes me wonder about the GCC 3.4.x requirement at \n               #6580.\n23:14 < williamstein> good point.\n23:15 < williamstein> maybe we should just move ahead and forget about \n                      supporting gcc-3.4.\n23:15 < williamstein> I would be ok with that.\n23:15 < williamstein> in which case 6580 could be invalidated.\n23:15 < mvngu> williamstein: I don't know of any machine using GCC 3.4.x.\n23:15 < williamstein> yep\n23:15 < williamstein> that's why we didn't notice until after the release.\n```",
     "created_at": "2009-09-27T06:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ At #7021, drkirkby updates prereq to 0.4 and writes "If gcc is used as the C com
 23:15 < williamstein> yep
 23:15 < williamstein> that's why we didn't notice until after the release.
 ```
-
 
 
 

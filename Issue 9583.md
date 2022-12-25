@@ -3,7 +3,7 @@
 archive/issues_009583.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby @jhpalmieri @johnperry-math @malb simonking @nexttime\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\nt2.math: seems to build successfully, but I get the following when I\ntry to start sage:\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\nI haven't tried to debug this.  I don't know how to use gdb, in any\ncase.  Any suggestions about what the problem might be?  You can find\nthe build in /scratch/palmieri/.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9583\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby @jhpalmieri @johnperry-math @malb simonking @nexttime\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\nt2.math: seems to build successfully, but I get the following when I\ntry to start sage:\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\nI haven't tried to debug this.  I don't know how to use gdb, in any\ncase.  Any suggestions about what the problem might be?  You can find\nthe build in /scratch/palmieri/.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9583\n\n",
     "created_at": "2010-07-23T08:01:49Z",
     "labels": [
         "component: porting: solaris",
@@ -41,7 +41,6 @@ case.  Any suggestions about what the problem might be?  You can find
 the build in /scratch/palmieri/.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9583
 
 
@@ -53,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9583
 archive/issue_comments_092413.json:
 ```json
 {
-    "body": "I've seen this, too, with\n\n```sh\n$ env MAKE=\"make -j64\" SAGE_PARALLEL_SPKG_BUILD=\"yes\" make build\n```\n\n(I've deleted the build to make room in t2's /scratch.)\n\nIf it helps:  We merged only sage library patches (no new spkgs) in 4.5.2.alpha0.",
+    "body": "I've seen this, too, with\n\n```sh\n$ env MAKE=\"make -j64\" SAGE_PARALLEL_SPKG_BUILD=\"yes\" make build\n```\n(I've deleted the build to make room in t2's /scratch.)\n\nIf it helps:  We merged only sage library patches (no new spkgs) in 4.5.2.alpha0.",
     "created_at": "2010-07-23T08:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -67,7 +66,6 @@ I've seen this, too, with
 ```sh
 $ env MAKE="make -j64" SAGE_PARALLEL_SPKG_BUILD="yes" make build
 ```
-
 (I've deleted the build to make room in t2's /scratch.)
 
 If it helps:  We merged only sage library patches (no new spkgs) in 4.5.2.alpha0.
@@ -79,7 +77,7 @@ If it helps:  We merged only sage library patches (no new spkgs) in 4.5.2.alpha0
 archive/issue_comments_092414.json:
 ```json
 {
-    "body": "I just checked if anything odd had happened on 't2'. There are no obvious errors in the log file - just the usual ones related to the fact 'disk.math' has been mis-configured. \n\n\n\n```\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_LOOKUP got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_LOOKUP got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./sergey/core (rnode_pt: 30107802420) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul 22 05:56:37 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul 22 05:56:37 t2  Action: NR_STALE \nJul 22 05:56:37 t2  NFS4 error: NFS4ERR_STALE   \nJul 22 06:26:59 t2 sshd[11907]: [ID 800047 auth.crit] fatal: Write failed: Broken pipe\nJul 22 07:40:45 t2 sshd[18797]: [ID 800047 auth.crit] fatal: Write failed: Broken pipe\nJul 22 09:16:24 t2 sshd[7318]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer\nJul 22 11:11:05 t2 sshd[6504]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer\n```\n\n\nNo messages today, so its probably not a problem on 't2'. \n\nDave",
+    "body": "I just checked if anything odd had happened on 't2'. There are no obvious errors in the log file - just the usual ones related to the fact 'disk.math' has been mis-configured. \n\n\n```\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_LOOKUP got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_LOOKUP got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_GETATTR got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul 22 05:56:37 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./sergey/core (rnode_pt: 30107802420) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul 22 05:56:37 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul 22 05:56:37 t2  Action: NR_STALE \nJul 22 05:56:37 t2  NFS4 error: NFS4ERR_STALE   \nJul 22 06:26:59 t2 sshd[11907]: [ID 800047 auth.crit] fatal: Write failed: Broken pipe\nJul 22 07:40:45 t2 sshd[18797]: [ID 800047 auth.crit] fatal: Write failed: Broken pipe\nJul 22 09:16:24 t2 sshd[7318]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer\nJul 22 11:11:05 t2 sshd[6504]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer\n```\n\nNo messages today, so its probably not a problem on 't2'. \n\nDave",
     "created_at": "2010-07-23T09:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ archive/issue_comments_092414.json:
 ```
 
 I just checked if anything odd had happened on 't2'. There are no obvious errors in the log file - just the usual ones related to the fact 'disk.math' has been mis-configured. 
-
 
 
 ```
@@ -108,7 +105,6 @@ Jul 22 09:16:24 t2 sshd[7318]: [ID 800047 auth.crit] fatal: Read from socket fai
 Jul 22 11:11:05 t2 sshd[6504]: [ID 800047 auth.crit] fatal: Read from socket failed: Connection reset by peer
 ```
 
-
 No messages today, so its probably not a problem on 't2'. 
 
 Dave
@@ -120,7 +116,7 @@ Dave
 archive/issue_comments_092415.json:
 ```json
 {
-    "body": "Bisection indicates that #1396 is the source of the problem:\n\n```\n[...]\ngood    trac_9012.patch\n        9114_doc_infinite_polynomial.patch\n        trac_9114-reviewer.patch\ngood    trac_9207.patch\ngood    trac%236922_final.patch\ngood    trac_9499.patch\nbad     trac1396-singular_options.2.patch\n        trac_9111.patch\n        trac_9111-doc-edits.patch\n        trac_9111-doc_addition.patch\n        trac_9373.patch\n        trac_9375-graph-doctests.patch\nbad     trac_9485-strongly_connected_componnents_digraph-fix-nt.patch\n[...]\n```\n",
+    "body": "Bisection indicates that #1396 is the source of the problem:\n\n```\n[...]\ngood    trac_9012.patch\n        9114_doc_infinite_polynomial.patch\n        trac_9114-reviewer.patch\ngood    trac_9207.patch\ngood    trac%236922_final.patch\ngood    trac_9499.patch\nbad     trac1396-singular_options.2.patch\n        trac_9111.patch\n        trac_9111-doc-edits.patch\n        trac_9111-doc_addition.patch\n        trac_9373.patch\n        trac_9375-graph-doctests.patch\nbad     trac_9485-strongly_connected_componnents_digraph-fix-nt.patch\n[...]\n```",
     "created_at": "2010-07-24T00:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -151,7 +147,6 @@ bad     trac_9485-strongly_connected_componnents_digraph-fix-nt.patch
 
 
 
-
 ---
 
 archive/issue_comments_092416.json:
@@ -175,7 +170,7 @@ We merged #1396's [attachment:ticket:1396:trac1396-singular_options.2.patch trac
 archive/issue_comments_092417.json:
 ```json
 {
-    "body": "I got the same problem on a SPARC of mine, but managed to quite easily find the problem running \n\n\n```\nsage -gdb\n```\n\n\nHere we can see what line  causes the problem, though I expect it is auto generated by Cython, so knowing which line of python it is might be more difficult. \n\n\n```\ndrkirkby@redstart:~/32/sage-4.5.2.alpha0$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n/export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/sage-ipython\nGNU gdb (GDB) 7.0.1\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"sparc-sun-solaris2.10\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from /export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/python...done.\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\nPython 2.6.4 (r264:75706, Jul 23 2010, 17:40:08) \n[GCC 4.4.3] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n| Sage Version 4.5.2.alpha0, Release Date: 2010-07-21                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 1 (LWP 1)]\n0xfa660a74 in __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=<value optimized out>) at sage/libs/singular/option.cpp:1800\n1800      Kstd1_mu = __pyx_t_5;\nCurrent language:  auto\nThe current source language is \"auto; currently c++\".\n(gdb) br __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load\nBreakpoint 1 at 0xfa6606d8: file sage/libs/singular/option.cpp, line 1679.\n(gdb) run\nThe program being debugged has been started already.\nStart it from the beginning? (y or n) y\nStarting program: /export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/python -i\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\nPython 2.6.4 (r264:75706, Jul 23 2010, 17:40:08) \n[GCC 4.4.3] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[Switching to Thread 1 (LWP 1)]\n\nBreakpoint 1, __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=0x0) at sage/libs/singular/option.cpp:1679\n1679      if (unlikely(__pyx_kwds)) {\n(gdb) s\n1669    static PyObject *__pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {\n(gdb) n\n0xfa6532d8 in call_frame_dummy ()\n   from /export/home/drkirkby/32/sage-4.5.2.alpha0/local/lib/python2.6/site-packages/sage/libs/singular/option.so\n(gdb) n\nSingle stepping until exit from function call_frame_dummy, \nwhich has no line number information.\n__pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, __pyx_args=0x1e58310, \n    __pyx_kwds=0x0) at sage/libs/singular/option.cpp:1679\n1679      if (unlikely(__pyx_kwds)) {\n(gdb) n\n1701        switch (PyTuple_GET_SIZE(__pyx_args)) {\n(gdb) n\n1702          case  1: __pyx_v_value = PyTuple_GET_ITEM(__pyx_args, 0);\n(gdb) n\n1714      __Pyx_INCREF((PyObject *)__pyx_v_self);\n(gdb) \n1715      __Pyx_INCREF(__pyx_v_value);\n(gdb) \n1724      __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, Py_None, Py_EQ); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1715      __Pyx_INCREF(__pyx_v_value);\n(gdb) \n1724      __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, Py_None, Py_EQ); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1726      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1727      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1728      if (__pyx_t_2) {\n(gdb) \n1762      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 0, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1764      __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1769      __pyx_t_1 = PyObject_Call(((PyObject *)((PyObject*)&PyInt_Type)), __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1766      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);\n(gdb) \n1769      __pyx_t_1 = PyObject_Call(((PyObject *)((PyObject*)&PyInt_Type)), __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1771      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n(gdb) \n5168        if (likely(PyInt_Check(x))) {\n(gdb) \n1773      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1774      (((struct __pyx_obj_4sage_4libs_8singular_6option_LibSingularOptions_abstract *)__pyx_v_self)->global_options[0]) = __pyx_t_4;\n(gdb) \n1783      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 1, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 285; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1785      __pyx_t_5 = __Pyx_PyInt_AsInt(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 285; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1786      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1787      Kstd1_deg = __pyx_t_5;\n(gdb) \n1796      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 2, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 286; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1798      __pyx_t_5 = __Pyx_PyInt_AsInt(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 286; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1799      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1802      __pyx_r = Py_None; __Pyx_INCREF(Py_None);\n(gdb) \n1800      Kstd1_mu = __pyx_t_5;\n(gdb) \n\nProgram received signal SIGSEGV, Segmentation fault.\n0xfa660a74 in __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=<value optimized out>) at sage/libs/singular/option.cpp:1800\n1800      Kstd1_mu = __pyx_t_5;\n(gdb) \n```\n\n\nDave",
+    "body": "I got the same problem on a SPARC of mine, but managed to quite easily find the problem running \n\n```\nsage -gdb\n```\n\nHere we can see what line  causes the problem, though I expect it is auto generated by Cython, so knowing which line of python it is might be more difficult. \n\n```\ndrkirkby@redstart:~/32/sage-4.5.2.alpha0$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n/export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/sage-ipython\nGNU gdb (GDB) 7.0.1\nCopyright (C) 2009 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"sparc-sun-solaris2.10\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from /export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/python...done.\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\nPython 2.6.4 (r264:75706, Jul 23 2010, 17:40:08) \n[GCC 4.4.3] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n| Sage Version 4.5.2.alpha0, Release Date: 2010-07-21                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 1 (LWP 1)]\n0xfa660a74 in __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=<value optimized out>) at sage/libs/singular/option.cpp:1800\n1800      Kstd1_mu = __pyx_t_5;\nCurrent language:  auto\nThe current source language is \"auto; currently c++\".\n(gdb) br __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load\nBreakpoint 1 at 0xfa6606d8: file sage/libs/singular/option.cpp, line 1679.\n(gdb) run\nThe program being debugged has been started already.\nStart it from the beginning? (y or n) y\nStarting program: /export/home/drkirkby/32/sage-4.5.2.alpha0/local/bin/python -i\n[Thread debugging using libthread_db enabled]\n[New Thread 1 (LWP 1)]\nPython 2.6.4 (r264:75706, Jul 23 2010, 17:40:08) \n[GCC 4.4.3] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[Switching to Thread 1 (LWP 1)]\n\nBreakpoint 1, __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=0x0) at sage/libs/singular/option.cpp:1679\n1679      if (unlikely(__pyx_kwds)) {\n(gdb) s\n1669    static PyObject *__pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {\n(gdb) n\n0xfa6532d8 in call_frame_dummy ()\n   from /export/home/drkirkby/32/sage-4.5.2.alpha0/local/lib/python2.6/site-packages/sage/libs/singular/option.so\n(gdb) n\nSingle stepping until exit from function call_frame_dummy, \nwhich has no line number information.\n__pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, __pyx_args=0x1e58310, \n    __pyx_kwds=0x0) at sage/libs/singular/option.cpp:1679\n1679      if (unlikely(__pyx_kwds)) {\n(gdb) n\n1701        switch (PyTuple_GET_SIZE(__pyx_args)) {\n(gdb) n\n1702          case  1: __pyx_v_value = PyTuple_GET_ITEM(__pyx_args, 0);\n(gdb) n\n1714      __Pyx_INCREF((PyObject *)__pyx_v_self);\n(gdb) \n1715      __Pyx_INCREF(__pyx_v_value);\n(gdb) \n1724      __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, Py_None, Py_EQ); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1715      __Pyx_INCREF(__pyx_v_value);\n(gdb) \n1724      __pyx_t_1 = PyObject_RichCompare(__pyx_v_value, Py_None, Py_EQ); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1726      __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1727      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1728      if (__pyx_t_2) {\n(gdb) \n1762      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 0, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1764      __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1769      __pyx_t_1 = PyObject_Call(((PyObject *)((PyObject*)&PyInt_Type)), __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1766      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);\n(gdb) \n1769      __pyx_t_1 = PyObject_Call(((PyObject *)((PyObject*)&PyInt_Type)), __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 282; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1771      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;\n(gdb) \n5168        if (likely(PyInt_Check(x))) {\n(gdb) \n1773      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1774      (((struct __pyx_obj_4sage_4libs_8singular_6option_LibSingularOptions_abstract *)__pyx_v_self)->global_options[0]) = __pyx_t_4;\n(gdb) \n1783      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 1, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 285; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1785      __pyx_t_5 = __Pyx_PyInt_AsInt(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 285; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1786      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1787      Kstd1_deg = __pyx_t_5;\n(gdb) \n1796      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_value, 2, sizeof(long), PyInt_FromLong); if (!__pyx_t_1) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 286; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1798      __pyx_t_5 = __Pyx_PyInt_AsInt(__pyx_t_1); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 286; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) \n1799      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;\n(gdb) \n1802      __pyx_r = Py_None; __Pyx_INCREF(Py_None);\n(gdb) \n1800      Kstd1_mu = __pyx_t_5;\n(gdb) \n\nProgram received signal SIGSEGV, Segmentation fault.\n0xfa660a74 in __pyx_pf_4sage_4libs_8singular_6option_27LibSingularOptions_abstract_load (__pyx_v_self=0x1f2b8f0, \n    __pyx_args=0x1e58310, __pyx_kwds=<value optimized out>) at sage/libs/singular/option.cpp:1800\n1800      Kstd1_mu = __pyx_t_5;\n(gdb) \n```\n\nDave",
     "created_at": "2010-07-24T01:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -186,14 +181,11 @@ archive/issue_comments_092417.json:
 
 I got the same problem on a SPARC of mine, but managed to quite easily find the problem running 
 
-
 ```
 sage -gdb
 ```
 
-
 Here we can see what line  causes the problem, though I expect it is auto generated by Cython, so knowing which line of python it is might be more difficult. 
-
 
 ```
 drkirkby@redstart:~/32/sage-4.5.2.alpha0$ ./sage -gdb
@@ -321,7 +313,6 @@ Program received signal SIGSEGV, Segmentation fault.
 (gdb) 
 ```
 
-
 Dave
 
 
@@ -331,7 +322,7 @@ Dave
 archive/issue_comments_092418.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> We merged #1396's [attachment:ticket:1396:trac1396-singular_options.2.patch trac1396-singular_options.2.patch] in the sage repository's revision 14701.\n\nWhat Mercuaial command could one use to reverse that? If I knew what I was going, perhaps I could revese it and rebuild the Sage library. But I don't know how to do this. \n\nDave",
+    "body": "Replying to [comment:4 mpatel]:\n> We merged #1396's [attachment:ticket:1396:trac1396-singular_options.2.patch trac1396-singular_options.2.patch] in the sage repository's revision 14701.\n\n\nWhat Mercuaial command could one use to reverse that? If I knew what I was going, perhaps I could revese it and rebuild the Sage library. But I don't know how to do this. \n\nDave",
     "created_at": "2010-07-24T01:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -342,6 +333,7 @@ archive/issue_comments_092418.json:
 
 Replying to [comment:4 mpatel]:
 > We merged #1396's [attachment:ticket:1396:trac1396-singular_options.2.patch trac1396-singular_options.2.patch] in the sage repository's revision 14701.
+
 
 What Mercuaial command could one use to reverse that? If I knew what I was going, perhaps I could revese it and rebuild the Sage library. But I don't know how to do this. 
 
@@ -400,7 +392,7 @@ After replacing `libs/singular/option.pyx` with the one from sage-4.5.rc1 (the v
 archive/issue_comments_092421.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> After replacing `libs/singular/option.pyx` with the one from sage-4.5.rc1 (the version I happen to have lying around), and doing `sage -b`, sage started without segfaulting.  I assume that a bunch of doctests will break now since I haven't backed out all of the changes from #1396, but this file does seem to be the problem.\n\nThank you John. I will try that. \n\nIt would be nice to know if there was a good way to do this in Mercurial though. Adding patches is quite easy, but I assume there is a way to back them out even after they have been committed.",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> After replacing `libs/singular/option.pyx` with the one from sage-4.5.rc1 (the version I happen to have lying around), and doing `sage -b`, sage started without segfaulting.  I assume that a bunch of doctests will break now since I haven't backed out all of the changes from #1396, but this file does seem to be the problem.\n\n\nThank you John. I will try that. \n\nIt would be nice to know if there was a good way to do this in Mercurial though. Adding patches is quite easy, but I assume there is a way to back them out even after they have been committed.",
     "created_at": "2010-07-24T09:29:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -411,6 +403,7 @@ archive/issue_comments_092421.json:
 
 Replying to [comment:8 jhpalmieri]:
 > After replacing `libs/singular/option.pyx` with the one from sage-4.5.rc1 (the version I happen to have lying around), and doing `sage -b`, sage started without segfaulting.  I assume that a bunch of doctests will break now since I haven't backed out all of the changes from #1396, but this file does seem to be the problem.
+
 
 Thank you John. I will try that. 
 
@@ -423,7 +416,7 @@ It would be nice to know if there was a good way to do this in Mercurial though.
 archive/issue_comments_092422.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n> It would be nice to know if there was a good way to do this in Mercurial though. Adding patches is quite easy, but I assume there is a way to back them out even after they have been committed. \n\nYou could try\n\n* `hg up 14700` to check out revision 14700.  To undo this, run `hg up`, which checks out the \"tip\" revision.\n* Or `hg revert -r 14700 libs/singular/option.pyx` to revert just `option.pyx`.  To undo this, run `hg revert --all`, which should revert all files to their \"tip\" version.\n\nYou also could try `patch -R` with the original patch, though I haven't done this.  But I think the complexity of undoing just a given patch depends on whether subsequent commits modified the same files.  \n\nBy the way, there's also `hg bisect`, which I didn't use above because I had 4.5.1 + an unfinished queue available.  But we might find it [useful](http://stackoverflow.com/questions/2511704/is-there-a-recommended-command-for-hg-bisect-command) for tracking down doctest failures, crashes, etc.",
+    "body": "Replying to [comment:9 drkirkby]:\n> It would be nice to know if there was a good way to do this in Mercurial though. Adding patches is quite easy, but I assume there is a way to back them out even after they have been committed. \n\n\nYou could try\n\n* `hg up 14700` to check out revision 14700.  To undo this, run `hg up`, which checks out the \"tip\" revision.\n* Or `hg revert -r 14700 libs/singular/option.pyx` to revert just `option.pyx`.  To undo this, run `hg revert --all`, which should revert all files to their \"tip\" version.\n\nYou also could try `patch -R` with the original patch, though I haven't done this.  But I think the complexity of undoing just a given patch depends on whether subsequent commits modified the same files.  \n\nBy the way, there's also `hg bisect`, which I didn't use above because I had 4.5.1 + an unfinished queue available.  But we might find it [useful](http://stackoverflow.com/questions/2511704/is-there-a-recommended-command-for-hg-bisect-command) for tracking down doctest failures, crashes, etc.",
     "created_at": "2010-07-24T10:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -434,6 +427,7 @@ archive/issue_comments_092422.json:
 
 Replying to [comment:9 drkirkby]:
 > It would be nice to know if there was a good way to do this in Mercurial though. Adding patches is quite easy, but I assume there is a way to back them out even after they have been committed. 
+
 
 You could try
 
@@ -469,7 +463,7 @@ I should add that it sometimes helps to run `hg qpop -a` before checking out or 
 archive/issue_comments_092424.json:
 ```json
 {
-    "body": "Hi!\n\nReplying to [comment:3 mpatel]:\n> Bisection indicates that #1396 is the source of the problem:\n\nThen I think I should explain what portion of that patch I think might be related, and my reasons for writing it.\n\nAs David find out using `sage -gdb`, the segfault occurs in `sage.libs.singular.option.LibSingularOptions_abstract.load`, and the C-code in the traceback suggests that it is exactly in line 286 of the Cython file,\n\n```\nKstd1_mu  = value[2] \n```\n\n\nWhat happens at startup?\n\nIn line 666 of option.pyx, some `LibSingularOptions` object is created, and in line 667, the method `reset_default()` is called. There, we have\n\n```\n    from sage.libs.singular.singular import _saved_options \n    self.load(_saved_options)\n```\n\n\nWhere does _saved_options come from?\n\n_saved_options is defined in line 51 of sage/libs/singular/singular.pyx. It is immediately initialised with some value, which I explicitly did in order to *prevent* a segfault caused by accessing an uninitialised C-variable. But the true initialisation (with the actual value used by libsingular) is then done at line 675.\n\nIn particular, `value[2]` in the segfaulting line should be initialised to the value 0. So, I don't see why it should be a problem to assign this to the int variable `Kstd1_mu`.\n\nI am not familiar with t2, and I don't know whether I would be able to build sage on it (I don't even know if I have an account). So, could you please test (by adding print commands in the appropriate places or so):\n\n1. Is _save_value indeed initialised in line 51 of sage/libs/singular/singular.pyx?\n2. Is the true initialisation in line 675 of sage/libs/singular/singular.pyx executed?\n3. What is the argument of the `load` function right before it segfaults? It should be a list of three int, the last two being zero.\n4. Could it be that I simply forgot to say `global _saved_options` before line 51 of sage/libs/singular/singular.pyx?\n\nCheers,\nSimon",
+    "body": "Hi!\n\nReplying to [comment:3 mpatel]:\n> Bisection indicates that #1396 is the source of the problem:\n\n\nThen I think I should explain what portion of that patch I think might be related, and my reasons for writing it.\n\nAs David find out using `sage -gdb`, the segfault occurs in `sage.libs.singular.option.LibSingularOptions_abstract.load`, and the C-code in the traceback suggests that it is exactly in line 286 of the Cython file,\n\n```\nKstd1_mu  = value[2] \n```\n\nWhat happens at startup?\n\nIn line 666 of option.pyx, some `LibSingularOptions` object is created, and in line 667, the method `reset_default()` is called. There, we have\n\n```\n    from sage.libs.singular.singular import _saved_options \n    self.load(_saved_options)\n```\n\nWhere does _saved_options come from?\n\n_saved_options is defined in line 51 of sage/libs/singular/singular.pyx. It is immediately initialised with some value, which I explicitly did in order to *prevent* a segfault caused by accessing an uninitialised C-variable. But the true initialisation (with the actual value used by libsingular) is then done at line 675.\n\nIn particular, `value[2]` in the segfaulting line should be initialised to the value 0. So, I don't see why it should be a problem to assign this to the int variable `Kstd1_mu`.\n\nI am not familiar with t2, and I don't know whether I would be able to build sage on it (I don't even know if I have an account). So, could you please test (by adding print commands in the appropriate places or so):\n\n1. Is _save_value indeed initialised in line 51 of sage/libs/singular/singular.pyx?\n2. Is the true initialisation in line 675 of sage/libs/singular/singular.pyx executed?\n3. What is the argument of the `load` function right before it segfaults? It should be a list of three int, the last two being zero.\n4. Could it be that I simply forgot to say `global _saved_options` before line 51 of sage/libs/singular/singular.pyx?\n\nCheers,\nSimon",
     "created_at": "2010-07-24T14:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -483,6 +477,7 @@ Hi!
 Replying to [comment:3 mpatel]:
 > Bisection indicates that #1396 is the source of the problem:
 
+
 Then I think I should explain what portion of that patch I think might be related, and my reasons for writing it.
 
 As David find out using `sage -gdb`, the segfault occurs in `sage.libs.singular.option.LibSingularOptions_abstract.load`, and the C-code in the traceback suggests that it is exactly in line 286 of the Cython file,
@@ -490,7 +485,6 @@ As David find out using `sage -gdb`, the segfault occurs in `sage.libs.singular.
 ```
 Kstd1_mu  = value[2] 
 ```
-
 
 What happens at startup?
 
@@ -500,7 +494,6 @@ In line 666 of option.pyx, some `LibSingularOptions` object is created, and in l
     from sage.libs.singular.singular import _saved_options 
     self.load(_saved_options)
 ```
-
 
 Where does _saved_options come from?
 
@@ -525,7 +518,7 @@ Simon
 archive/issue_comments_092425.json:
 ```json
 {
-    "body": "I modified the \"load\" method to add some print statements:\n\n```\n    def load(self, value=None):\n        if value == None:\n            value = (None,0,0)\n        self.global_options[0] = int(value[0])\n        global Kstd1_deg\n        global Kstd1_mu\n\n        print value[0], value[1], value[2]\n\n        Kstd1_deg = value[1]\n        print \"Kstd1_deg defined\"\n        print Kstd1_deg\n\n        Kstd1_mu  = value[2]\n\n        print \"Kstd1_mu defined\"\n        print Kstd1_mu\n```\n\nThen when I run \"sage -br\", I get this: it's not happy about setting `Kstd1_mu`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n100663426 0 0\nKstd1_deg defined\n0\n| Sage Version 4.5.2.alpha0, Release Date: 2010-07-21                |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\nI tried changing the assignment for Kstd1_mu to `Kstd1_mu = 0` but it didn't help.\n\nIn the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?\n\n```\nextern int LazyPass,LazyDegree,mu,Kstd1_deg;\n#define Kstd1_mu mu\n```\n\n\nAs far as using t2, I think if you have an account on sage.math, you have one on t2.math, same password, same home directory.  Different /scratch directory.  My build is in /scratch/palmieri/sage..., and it should be world-readable.",
+    "body": "I modified the \"load\" method to add some print statements:\n\n```\n    def load(self, value=None):\n        if value == None:\n            value = (None,0,0)\n        self.global_options[0] = int(value[0])\n        global Kstd1_deg\n        global Kstd1_mu\n\n        print value[0], value[1], value[2]\n\n        Kstd1_deg = value[1]\n        print \"Kstd1_deg defined\"\n        print Kstd1_deg\n\n        Kstd1_mu  = value[2]\n\n        print \"Kstd1_mu defined\"\n        print Kstd1_mu\n```\nThen when I run \"sage -br\", I get this: it's not happy about setting `Kstd1_mu`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n100663426 0 0\nKstd1_deg defined\n0\n| Sage Version 4.5.2.alpha0, Release Date: 2010-07-21                |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\nI tried changing the assignment for Kstd1_mu to `Kstd1_mu = 0` but it didn't help.\n\nIn the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?\n\n```\nextern int LazyPass,LazyDegree,mu,Kstd1_deg;\n#define Kstd1_mu mu\n```\n\nAs far as using t2, I think if you have an account on sage.math, you have one on t2.math, same password, same home directory.  Different /scratch directory.  My build is in /scratch/palmieri/sage..., and it should be world-readable.",
     "created_at": "2010-07-24T15:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -555,7 +548,6 @@ I modified the "load" method to add some print statements:
         print "Kstd1_mu defined"
         print Kstd1_mu
 ```
-
 Then when I run "sage -br", I get this: it's not happy about setting `Kstd1_mu`:
 
 ```
@@ -581,7 +573,6 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 I tried changing the assignment for Kstd1_mu to `Kstd1_mu = 0` but it didn't help.
 
 In the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?
@@ -590,7 +581,6 @@ In the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg
 extern int LazyPass,LazyDegree,mu,Kstd1_deg;
 #define Kstd1_mu mu
 ```
-
 
 As far as using t2, I think if you have an account on sage.math, you have one on t2.math, same password, same home directory.  Different /scratch directory.  My build is in /scratch/palmieri/sage..., and it should be world-readable.
 
@@ -601,7 +591,7 @@ As far as using t2, I think if you have an account on sage.math, you have one on
 archive/issue_comments_092426.json:
 ```json
 {
-    "body": "Hi John!\n\nYes, I already found out that indeed I have an account on t2.math. I could see only part of the advices, but at least I added a .profile in my home dictionary containing\n\n```\nif [ `uname -n` = t2 ] ; then\n   . /usr/local/gcc-4.4.1-sun-linker/gcc441sun\nfi\n```\n\n\nThen, I unpacked the pre-built sage in some directory of mine (but not in /scratch, perhaps that would have been better), and Sage started.\n\nReplying to [comment:14 jhpalmieri]:\n> ...\n> In the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?\n> {{{\n> extern int LazyPass,LazyDegree,mu,Kstd1_deg;\n> #define Kstd1_mu mu\n> }}}\n\nYes, this is something that we have been wondering about in Kaiserslautern at Sage Days 23.5.\n\nMy understanding is that the line `#define Kstd1_mu mu` has the same effect as replacing `Kstd1_mu` by `mu` in any C-file that includes the header `kstd1.h` - in particular, this should also hold for the Cython-generated C-files. Hans Sch\u00f6nemann (Singular developer) agreed that this should not be a problem. And I used similar `#define` tricks myself repeatedly, so far without problem. \n\nBut this was all using gcc -- Could it be that t2/Sun compiler behave differently in that regard?\n\nHowever, I would expect -- if `kstd1.h` really is to blame for it - that Singular would not build. Recall that this is a file verbously taken from Singular.\n\nCheers,\n\nSimon",
+    "body": "Hi John!\n\nYes, I already found out that indeed I have an account on t2.math. I could see only part of the advices, but at least I added a .profile in my home dictionary containing\n\n```\nif [ `uname -n` = t2 ] ; then\n   . /usr/local/gcc-4.4.1-sun-linker/gcc441sun\nfi\n```\n\nThen, I unpacked the pre-built sage in some directory of mine (but not in /scratch, perhaps that would have been better), and Sage started.\n\nReplying to [comment:14 jhpalmieri]:\n> ...\n> In the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?\n> \n> ```\n> extern int LazyPass,LazyDegree,mu,Kstd1_deg;\n> #define Kstd1_mu mu\n> ```\n\n\nYes, this is something that we have been wondering about in Kaiserslautern at Sage Days 23.5.\n\nMy understanding is that the line `#define Kstd1_mu mu` has the same effect as replacing `Kstd1_mu` by `mu` in any C-file that includes the header `kstd1.h` - in particular, this should also hold for the Cython-generated C-files. Hans Sch\u00f6nemann (Singular developer) agreed that this should not be a problem. And I used similar `#define` tricks myself repeatedly, so far without problem. \n\nBut this was all using gcc -- Could it be that t2/Sun compiler behave differently in that regard?\n\nHowever, I would expect -- if `kstd1.h` really is to blame for it - that Singular would not build. Recall that this is a file verbously taken from Singular.\n\nCheers,\n\nSimon",
     "created_at": "2010-07-24T16:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -620,16 +610,17 @@ if [ `uname -n` = t2 ] ; then
 fi
 ```
 
-
 Then, I unpacked the pre-built sage in some directory of mine (but not in /scratch, perhaps that would have been better), and Sage started.
 
 Replying to [comment:14 jhpalmieri]:
 > ...
 > In the file `SAGE_ROOT/local/include/singular/kstd1.h`, the variables `Kstd1_deg` and `Kstd1_mu` are defined differently; could that be causing the problem?
-> {{{
+> 
+> ```
 > extern int LazyPass,LazyDegree,mu,Kstd1_deg;
 > #define Kstd1_mu mu
-> }}}
+> ```
+
 
 Yes, this is something that we have been wondering about in Kaiserslautern at Sage Days 23.5.
 
@@ -686,7 +677,7 @@ Are there any flags we could pass to the compiler for options.pyx (or singular.p
 archive/issue_comments_092429.json:
 ```json
 {
-    "body": "Replying to [comment:15 SimonKing]:\n \n> But this was all using gcc -- Could it be that t2/Sun compiler behave differently in that regard?\n\nThe compiler used to build Sage on t2.math.washington.edu is gcc. The Sun compilers are much stricter than gcc, and will not loads of Sage. So this code is presenting a problem with gcc. \n\nIf I build Sage 64-bit on Solaris SPARC it dumps core very easily. I've noticed the errors often seem to be singular related. Also, if I load a library for debugging, by the time we have got to the \n\n\n```\nsage:\n```\n\n\nprompt, there is already a couple of memory leaks. But those should not cause a crash, unless they exhaust too much memory, which I don't think they will do. But it does make me a bit suspicious of the Singular/Sage combination. \n\nOne thing worth doing is looking at compiler warnings. There are tons of them in Sage, but perhaps one near this problem might give us a clue. \n\nDave",
+    "body": "Replying to [comment:15 SimonKing]:\n \n> But this was all using gcc -- Could it be that t2/Sun compiler behave differently in that regard?\n\n\nThe compiler used to build Sage on t2.math.washington.edu is gcc. The Sun compilers are much stricter than gcc, and will not loads of Sage. So this code is presenting a problem with gcc. \n\nIf I build Sage 64-bit on Solaris SPARC it dumps core very easily. I've noticed the errors often seem to be singular related. Also, if I load a library for debugging, by the time we have got to the \n\n```\nsage:\n```\n\nprompt, there is already a couple of memory leaks. But those should not cause a crash, unless they exhaust too much memory, which I don't think they will do. But it does make me a bit suspicious of the Singular/Sage combination. \n\nOne thing worth doing is looking at compiler warnings. There are tons of them in Sage, but perhaps one near this problem might give us a clue. \n\nDave",
     "created_at": "2010-07-24T17:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -699,15 +690,14 @@ Replying to [comment:15 SimonKing]:
  
 > But this was all using gcc -- Could it be that t2/Sun compiler behave differently in that regard?
 
+
 The compiler used to build Sage on t2.math.washington.edu is gcc. The Sun compilers are much stricter than gcc, and will not loads of Sage. So this code is presenting a problem with gcc. 
 
 If I build Sage 64-bit on Solaris SPARC it dumps core very easily. I've noticed the errors often seem to be singular related. Also, if I load a library for debugging, by the time we have got to the 
 
-
 ```
 sage:
 ```
-
 
 prompt, there is already a couple of memory leaks. But those should not cause a crash, unless they exhaust too much memory, which I don't think they will do. But it does make me a bit suspicious of the Singular/Sage combination. 
 
@@ -722,7 +712,7 @@ Dave
 archive/issue_comments_092430.json:
 ```json
 {
-    "body": "I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular/ and did \"sage -b\".  The only warnings seem to be these:\n\n```\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\n",
+    "body": "I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular/ and did \"sage -b\".  The only warnings seem to be these:\n\n```\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```",
     "created_at": "2010-07-24T17:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -737,7 +727,6 @@ I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular
 cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
 cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
 ```
-
 
 
 
@@ -764,7 +753,7 @@ For the record: Instead of importing `Kstd1_mu` from `"kstd1.h"`, I imported `mu
 archive/issue_comments_092432.json:
 ```json
 {
-    "body": "Replying to [comment:19 jhpalmieri]:\n> I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular/ and did \"sage -b\".  The only warnings seem to be these:\n> {{{\n> cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n> cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n> }}}\nWhen I touch one of the files and run `sage -b` I see: \n\n\n```\nbuilding 'sage.libs.singular.option' extension\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/singular -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include/csage -I/export/home/drkirkby/32/sage-4.5.2.alpha0/devel//sage/sage/ext -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4u-2.6/sage/libs/singular/option.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\n\nWhat is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. \n\nI doubt that would be extensively checked by the gcc developers. It may be a case of you get away with it on some platforms some of the time, but not all platforms all of the time. \n\nDave",
+    "body": "Replying to [comment:19 jhpalmieri]:\n> I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular/ and did \"sage -b\".  The only warnings seem to be these:\n> \n> ```\n> cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n> cc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n> ```\n\nWhen I touch one of the files and run `sage -b` I see: \n\n```\nbuilding 'sage.libs.singular.option' extension\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/singular -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include/csage -I/export/home/drkirkby/32/sage-4.5.2.alpha0/devel//sage/sage/ext -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4u-2.6/sage/libs/singular/option.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\nWhat is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. \n\nI doubt that would be extensively checked by the gcc developers. It may be a case of you get away with it on some platforms some of the time, but not all platforms all of the time. \n\nDave",
     "created_at": "2010-07-25T08:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -775,19 +764,19 @@ archive/issue_comments_092432.json:
 
 Replying to [comment:19 jhpalmieri]:
 > I touched the files option.pyx and singular.pyx in devel/sage/sage/libs/singular/ and did "sage -b".  The only warnings seem to be these:
-> {{{
+> 
+> ```
 > cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
 > cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
-> }}}
-When I touch one of the files and run `sage -b` I see: 
+> ```
 
+When I touch one of the files and run `sage -b` I see: 
 
 ```
 building 'sage.libs.singular.option' extension
 gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/singular -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local//include/csage -I/export/home/drkirkby/32/sage-4.5.2.alpha0/devel//sage/sage/ext -I/export/home/drkirkby/32/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4u-2.6/sage/libs/singular/option.o -w
 cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
 ```
-
 What is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. 
 
 I doubt that would be extensively checked by the gcc developers. It may be a case of you get away with it on some platforms some of the time, but not all platforms all of the time. 
@@ -801,7 +790,7 @@ Dave
 archive/issue_comments_092433.json:
 ```json
 {
-    "body": "Replying to [comment:21 drkirkby]:\n> Replying to [comment:19 jhpalmieri]:\n> ...\n> What is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. \n\nSo, the crucial question is: Why is Cython generating a C++ file rather than a C file?\n\nDoes it generate C++ since it is linked against Singular sources (which ostensibly are C++)?\n\nAnd what happens if one invokes g++ rather then gcc on the Cython-generated code?",
+    "body": "Replying to [comment:21 drkirkby]:\n> Replying to [comment:19 jhpalmieri]:\n> ...\n> What is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. \n\n\nSo, the crucial question is: Why is Cython generating a C++ file rather than a C file?\n\nDoes it generate C++ since it is linked against Singular sources (which ostensibly are C++)?\n\nAnd what happens if one invokes g++ rather then gcc on the Cython-generated code?",
     "created_at": "2010-07-25T08:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -814,6 +803,7 @@ Replying to [comment:21 drkirkby]:
 > Replying to [comment:19 jhpalmieri]:
 > ...
 > What is certainly not a good idea is that the **C** compiler gcc is being invoked to compile a **C++** program. Since option.cpp is a C++ file, it should be compiled with g++, not gcc. 
+
 
 So, the crucial question is: Why is Cython generating a C++ file rather than a C file?
 
@@ -846,7 +836,7 @@ archive/issue_comments_092434.json:
 archive/issue_comments_092435.json:
 ```json
 {
-    "body": "When I touch one of the files, I see \n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/singular -I/scratch/palmieri/sage-4.5.2.alpha0/local//include -I/scratch/palmieri/sage-4.5.2.alpha0/local//include/csage -I/scratch/palmieri/sage-4.5.2.alpha0/devel//sage/sage/ext -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -w\n```\n\nthen a few lines later, \n\n```\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -L/scratch/palmieri/sage-4.5.2.alpha0/local//lib -L/scratch/palmieri/sage-4.5.2.alpha0/local/lib -lcsage -lm -lreadline -lsingular -lgivaro -lgmpxx -lgmp -lstdc++ -lntl -lpython2.6 -o build/lib.solaris-2.10-sun4v-2.6/sage/libs/singular/option.so\n```\n\n\n> So, the crucial question is: Why is Cython generating a C++ file rather than a C file?\n\nPresumably because in devel/sage/module_list.py, it says\n\n```\n    Extension('sage.libs.singular.option',\n              sources = ['sage/libs/singular/option.pyx'],\n              libraries = ['m', 'readline', 'singular', 'givaro', 'gmpxx', 'gmp'],\n              language=\"c++\",\n              include_dirs = [SAGE_ROOT +'/local/include/singular'],\n              depends = [SAGE_ROOT + \"/local/include/libsingular.h\"]),\n```\n\nNote the \"language\" line.\n\n> libpari-gmp.so.2 also exports a mu symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n\nThat's interesting; could that be the problem?  What can we do to fix it?",
+    "body": "When I touch one of the files, I see \n\n```\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/singular -I/scratch/palmieri/sage-4.5.2.alpha0/local//include -I/scratch/palmieri/sage-4.5.2.alpha0/local//include/csage -I/scratch/palmieri/sage-4.5.2.alpha0/devel//sage/sage/ext -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -w\n```\nthen a few lines later, \n\n```\ng++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -L/scratch/palmieri/sage-4.5.2.alpha0/local//lib -L/scratch/palmieri/sage-4.5.2.alpha0/local/lib -lcsage -lm -lreadline -lsingular -lgivaro -lgmpxx -lgmp -lstdc++ -lntl -lpython2.6 -o build/lib.solaris-2.10-sun4v-2.6/sage/libs/singular/option.so\n```\n\n> So, the crucial question is: Why is Cython generating a C++ file rather than a C file?\n\n\nPresumably because in devel/sage/module_list.py, it says\n\n```\n    Extension('sage.libs.singular.option',\n              sources = ['sage/libs/singular/option.pyx'],\n              libraries = ['m', 'readline', 'singular', 'givaro', 'gmpxx', 'gmp'],\n              language=\"c++\",\n              include_dirs = [SAGE_ROOT +'/local/include/singular'],\n              depends = [SAGE_ROOT + \"/local/include/libsingular.h\"]),\n```\nNote the \"language\" line.\n\n> libpari-gmp.so.2 also exports a mu symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n\n\nThat's interesting; could that be the problem?  What can we do to fix it?",
     "created_at": "2010-07-25T14:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -860,15 +850,14 @@ When I touch one of the files, I see
 ```
 gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/singular -I/scratch/palmieri/sage-4.5.2.alpha0/local//include -I/scratch/palmieri/sage-4.5.2.alpha0/local//include/csage -I/scratch/palmieri/sage-4.5.2.alpha0/devel//sage/sage/ext -I/scratch/palmieri/sage-4.5.2.alpha0/local/include/python2.6 -c sage/libs/singular/option.cpp -o build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -w
 ```
-
 then a few lines later, 
 
 ```
 g++ -shared build/temp.solaris-2.10-sun4v-2.6/sage/libs/singular/option.o -L/scratch/palmieri/sage-4.5.2.alpha0/local//lib -L/scratch/palmieri/sage-4.5.2.alpha0/local/lib -lcsage -lm -lreadline -lsingular -lgivaro -lgmpxx -lgmp -lstdc++ -lntl -lpython2.6 -o build/lib.solaris-2.10-sun4v-2.6/sage/libs/singular/option.so
 ```
 
-
 > So, the crucial question is: Why is Cython generating a C++ file rather than a C file?
+
 
 Presumably because in devel/sage/module_list.py, it says
 
@@ -880,10 +869,10 @@ Presumably because in devel/sage/module_list.py, it says
               include_dirs = [SAGE_ROOT +'/local/include/singular'],
               depends = [SAGE_ROOT + "/local/include/libsingular.h"]),
 ```
-
 Note the "language" line.
 
 > libpari-gmp.so.2 also exports a mu symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.
+
 
 That's interesting; could that be the problem?  What can we do to fix it?
 
@@ -894,7 +883,7 @@ That's interesting; could that be the problem?  What can we do to fix it?
 archive/issue_comments_092436.json:
 ```json
 {
-    "body": "Replying to [comment:23 wjp]:\n> `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n\nOK, but why would this only strike on t2?",
+    "body": "Replying to [comment:23 wjp]:\n> `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n\n\nOK, but why would this only strike on t2?",
     "created_at": "2010-07-25T16:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -906,6 +895,7 @@ archive/issue_comments_092436.json:
 Replying to [comment:23 wjp]:
 > `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.
 
+
 OK, but why would this only strike on t2?
 
 
@@ -915,7 +905,7 @@ OK, but why would this only strike on t2?
 archive/issue_comments_092437.json:
 ```json
 {
-    "body": "If I comment out all assignments to `Kstd1_mu`, then Sage starts and for the directory sage/libs/singular, there is only one doctest failure:\n\n```\nsage -t  devel/sage/sage/libs/singular/option.pyx\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.5.2.alpha0/devel/sage-main/sage/libs/singular/option.pyx\", line 415:\n    sage: J.groebner_basis(mult_bound=100)\nExpected:\n    [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\nGot:\n    [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\n```\n\nNot surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.\n\nIs something like this an option, if we can't fix the whole problem?",
+    "body": "If I comment out all assignments to `Kstd1_mu`, then Sage starts and for the directory sage/libs/singular, there is only one doctest failure:\n\n```\nsage -t  devel/sage/sage/libs/singular/option.pyx\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.5.2.alpha0/devel/sage-main/sage/libs/singular/option.pyx\", line 415:\n    sage: J.groebner_basis(mult_bound=100)\nExpected:\n    [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6 + x*y^4*z^5, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6 - x*y^4*z^4 - x^3*y*z^5]\nGot:\n    [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]\n```\nNot surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.\n\nIs something like this an option, if we can't fix the whole problem?",
     "created_at": "2010-07-25T18:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -936,7 +926,6 @@ Expected:
 Got:
     [x^3*y^2 + y^3*z^2 + x^2*z^3, x^2*y^3 + x^3*z^2 + y^2*z^3, y^5, x^6, x^4*z^2 - y^4*z^2 - x^2*y*z^3 + x*y^2*z^3, z^6, y^4*z^3 - y^3*z^4 - x^2*z^5, x^3*y*z^4 - x^2*y^2*z^4 + x*y^3*z^4, x^3*z^5, x^2*y*z^5 + y^3*z^5, x*y^3*z^5]
 ```
-
 Not surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.
 
 Is something like this an option, if we can't fix the whole problem?
@@ -948,7 +937,7 @@ Is something like this an option, if we can't fix the whole problem?
 archive/issue_comments_092438.json:
 ```json
 {
-    "body": "Replying to [comment:25 SimonKing]:\n> Replying to [comment:23 wjp]:\n> > `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n> \n> OK, but why would this only strike on t2?\n\nBugs that only show on one system are quite common. That's one of the big advantages in testing on multiple platforms. I have hit many such bugs over the years. \n\n* I recall writing some multi-threaded code which worked fine on numerous systems - Linux, HP-UX, Unicos, Solaris, tru64 and IRIX. But it occasionally failed on AIX. I suspected it was an AIX bug, but then I realised it was a bug in my code, which could have shown up on any operating system. It just never did. \n* I recall an ex-colleague writing some finite difference code that worked fine on hi Linux system, but crashed on a quad core Solaris machine. He then looked at his code carefully and found there was a genuine bug. \n\nI actually find that there are some bugs related to Singular and Pari that show up on 64-bit Solaris. I suspect they are genuine bugs and could cause problems on other system, but just have not to date\n\nDave",
+    "body": "Replying to [comment:25 SimonKing]:\n> Replying to [comment:23 wjp]:\n> > `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.\n\n> \n> OK, but why would this only strike on t2?\n\n\nBugs that only show on one system are quite common. That's one of the big advantages in testing on multiple platforms. I have hit many such bugs over the years. \n\n* I recall writing some multi-threaded code which worked fine on numerous systems - Linux, HP-UX, Unicos, Solaris, tru64 and IRIX. But it occasionally failed on AIX. I suspected it was an AIX bug, but then I realised it was a bug in my code, which could have shown up on any operating system. It just never did. \n* I recall an ex-colleague writing some finite difference code that worked fine on hi Linux system, but crashed on a quad core Solaris machine. He then looked at his code carefully and found there was a genuine bug. \n\nI actually find that there are some bugs related to Singular and Pari that show up on 64-bit Solaris. I suspect they are genuine bugs and could cause problems on other system, but just have not to date\n\nDave",
     "created_at": "2010-07-25T18:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -960,8 +949,10 @@ archive/issue_comments_092438.json:
 Replying to [comment:25 SimonKing]:
 > Replying to [comment:23 wjp]:
 > > `libpari-gmp.so.2` also exports a `mu` symbol, by the way. But it's a function, not data, so assigning to that could cause that crash.
+
 > 
 > OK, but why would this only strike on t2?
+
 
 Bugs that only show on one system are quite common. That's one of the big advantages in testing on multiple platforms. I have hit many such bugs over the years. 
 
@@ -999,7 +990,7 @@ jhpalmieri: if doable, it would be good to rename `mu` entirely inside singular 
 archive/issue_comments_092440.json:
 ```json
 {
-    "body": "Replying to [comment:28 wjp]:\n\n> jhpalmieri: if doable, it would be good to rename `mu` entirely inside singular entirely to something less generic. It seems they already use `Kstd1_mu` internally everywhere with that `#define Kstd1_mu mu`, so hopefully it's as easy as renaming `mu` and removing the `#define`. I'll see if I can get it to work quickly and make a new singular spkg for that.\n\nThat sounds like a good plan, I'll inform upstream to see whether they have some insight to share.",
+    "body": "Replying to [comment:28 wjp]:\n\n> jhpalmieri: if doable, it would be good to rename `mu` entirely inside singular entirely to something less generic. It seems they already use `Kstd1_mu` internally everywhere with that `#define Kstd1_mu mu`, so hopefully it's as easy as renaming `mu` and removing the `#define`. I'll see if I can get it to work quickly and make a new singular spkg for that.\n\n\nThat sounds like a good plan, I'll inform upstream to see whether they have some insight to share.",
     "created_at": "2010-07-25T19:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1011,6 +1002,7 @@ archive/issue_comments_092440.json:
 Replying to [comment:28 wjp]:
 
 > jhpalmieri: if doable, it would be good to rename `mu` entirely inside singular entirely to something less generic. It seems they already use `Kstd1_mu` internally everywhere with that `#define Kstd1_mu mu`, so hopefully it's as easy as renaming `mu` and removing the `#define`. I'll see if I can get it to work quickly and make a new singular spkg for that.
+
 
 That sounds like a good plan, I'll inform upstream to see whether they have some insight to share.
 
@@ -1064,7 +1056,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092443.json:
 ```json
 {
-    "body": "Replying to [comment:26 jhpalmieri]:\n> If I comment out all assignments to `Kstd1_mu`, then Sage starts and for the directory sage/libs/singular, there is only one doctest failure:\n> ...\n> Not surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.\n> \n> Is something like this an option, if we can't fix the whole problem?\n\nUsage of `Kstd1_mu` was introduced by my patch at #1396. The aim of that patch was to make *all* Singular options available to libsingular. Two of Singular's options involve an int parameter: `degBound` and `multBound`. I used the former a lot, and it is kind of relieving that it doesn't cause a problem here. The latter, however, was new to me until two weeks ago. \n\nSo, personally, I'd say that your suggestion could be a short term solution. But still, I'd like to see all Singular options available in libsingular.\n\nI'd prefer to first test whether wjp's solution works.\n\n`@`wjp and `@`malb:\noption.pyx links against certain files of Singular, located in `SAGE_LOCAL`, if I'm not mistaken. Will installing the new spkg automatically put these files in place? Or do you say that the spkg actually fixes the problem already?\n\nOne general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\nCheers, Simon",
+    "body": "Replying to [comment:26 jhpalmieri]:\n> If I comment out all assignments to `Kstd1_mu`, then Sage starts and for the directory sage/libs/singular, there is only one doctest failure:\n> ...\n> Not surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.\n> \n> Is something like this an option, if we can't fix the whole problem?\n\n\nUsage of `Kstd1_mu` was introduced by my patch at #1396. The aim of that patch was to make *all* Singular options available to libsingular. Two of Singular's options involve an int parameter: `degBound` and `multBound`. I used the former a lot, and it is kind of relieving that it doesn't cause a problem here. The latter, however, was new to me until two weeks ago. \n\nSo, personally, I'd say that your suggestion could be a short term solution. But still, I'd like to see all Singular options available in libsingular.\n\nI'd prefer to first test whether wjp's solution works.\n\n`@`wjp and `@`malb:\noption.pyx links against certain files of Singular, located in `SAGE_LOCAL`, if I'm not mistaken. Will installing the new spkg automatically put these files in place? Or do you say that the spkg actually fixes the problem already?\n\nOne general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\nCheers, Simon",
     "created_at": "2010-07-25T20:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1079,6 +1071,7 @@ Replying to [comment:26 jhpalmieri]:
 > Not surprising, since it looks setting the multiplicative bound wants to set `Kstd1_mu`.
 > 
 > Is something like this an option, if we can't fix the whole problem?
+
 
 Usage of `Kstd1_mu` was introduced by my patch at #1396. The aim of that patch was to make *all* Singular options available to libsingular. Two of Singular's options involve an int parameter: `degBound` and `multBound`. I used the former a lot, and it is kind of relieving that it doesn't cause a problem here. The latter, however, was new to me until two weeks ago. 
 
@@ -1100,7 +1093,7 @@ Cheers, Simon
 archive/issue_comments_092444.json:
 ```json
 {
-    "body": "Replying to [comment:31 SimonKing]:\n> One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\n... or could the missing speed be caused by my not using /scratch? Now I unpacked the available Sage binary in /scratch, and it was much faster.",
+    "body": "Replying to [comment:31 SimonKing]:\n> One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\n\n... or could the missing speed be caused by my not using /scratch? Now I unpacked the available Sage binary in /scratch, and it was much faster.",
     "created_at": "2010-07-25T21:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1112,6 +1105,7 @@ archive/issue_comments_092444.json:
 Replying to [comment:31 SimonKing]:
 > One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.
 
+
 ... or could the missing speed be caused by my not using /scratch? Now I unpacked the available Sage binary in /scratch, and it was much faster.
 
 
@@ -1121,7 +1115,7 @@ Replying to [comment:31 SimonKing]:
 archive/issue_comments_092445.json:
 ```json
 {
-    "body": "Replying to [comment:30 wjp]:\n> New SPKG that renames `mu` to `Kstd1_mu` at:\n> \n> http://www.math.leidenuniv.nl/~wpalenst/sage/singular-3.1.0.4.p8.spkg\n> \n\nIsn't there already a singular-3.1.1...spkg waiting for review (or already with a positive review)? Martin?",
+    "body": "Replying to [comment:30 wjp]:\n> New SPKG that renames `mu` to `Kstd1_mu` at:\n> \n> http://www.math.leidenuniv.nl/~wpalenst/sage/singular-3.1.0.4.p8.spkg\n> \n\n\nIsn't there already a singular-3.1.1...spkg waiting for review (or already with a positive review)? Martin?",
     "created_at": "2010-07-25T21:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1135,6 +1129,7 @@ Replying to [comment:30 wjp]:
 > 
 > http://www.math.leidenuniv.nl/~wpalenst/sage/singular-3.1.0.4.p8.spkg
 > 
+
 
 Isn't there already a singular-3.1.1...spkg waiting for review (or already with a positive review)? Martin?
 
@@ -1169,7 +1164,7 @@ Dave
 archive/issue_comments_092447.json:
 ```json
 {
-    "body": "Replying to [comment:31 SimonKing]:\n> One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\nBuilding in t2's `/scratch` should help, but it really is slow for our purposes.  It should also help to use, e.g.,\n\n```sh\n$ env MAKE=\"make -j48\" ./sage -br\n```\n",
+    "body": "Replying to [comment:31 SimonKing]:\n> One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.\n\n\nBuilding in t2's `/scratch` should help, but it really is slow for our purposes.  It should also help to use, e.g.,\n\n```sh\n$ env MAKE=\"make -j48\" ./sage -br\n```",
     "created_at": "2010-07-25T21:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1181,6 +1176,7 @@ archive/issue_comments_092447.json:
 Replying to [comment:31 SimonKing]:
 > One general question: Is t2 really so slow, or am I getting a wrong impression? After touching option.pyx, it took about an hour to do `sage -br`.
 
+
 Building in t2's `/scratch` should help, but it really is slow for our purposes.  It should also help to use, e.g.,
 
 ```sh
@@ -1189,13 +1185,12 @@ $ env MAKE="make -j48" ./sage -br
 
 
 
-
 ---
 
 archive/issue_comments_092448.json:
 ```json
 {
-    "body": "Replying to [comment:34 drkirkby]:\n> However, if I understand correctly, 4.5.2 is going to be library updates only, with no updates to .spkg files, so I do not believe an updated Singular.spkg is likely to be merged in 4.5.2, though it might if the update is seen as critical. Though changing variable names in one version, when another version is likely to be merged on the release after this, is perhaps not a great idea. \n\nIs it really \"changning variable names\"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  \"changing variable names\" but \"clearifying a variable definition\".",
+    "body": "Replying to [comment:34 drkirkby]:\n> However, if I understand correctly, 4.5.2 is going to be library updates only, with no updates to .spkg files, so I do not believe an updated Singular.spkg is likely to be merged in 4.5.2, though it might if the update is seen as critical. Though changing variable names in one version, when another version is likely to be merged on the release after this, is perhaps not a great idea. \n\n\nIs it really \"changning variable names\"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  \"changing variable names\" but \"clearifying a variable definition\".",
     "created_at": "2010-07-25T21:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1206,6 +1201,7 @@ archive/issue_comments_092448.json:
 
 Replying to [comment:34 drkirkby]:
 > However, if I understand correctly, 4.5.2 is going to be library updates only, with no updates to .spkg files, so I do not believe an updated Singular.spkg is likely to be merged in 4.5.2, though it might if the update is seen as critical. Though changing variable names in one version, when another version is likely to be merged on the release after this, is perhaps not a great idea. 
+
 
 Is it really "changning variable names"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  "changing variable names" but "clearifying a variable definition".
 
@@ -1234,7 +1230,7 @@ Thanks to the link to #8059. The new version of Singular there actually already 
 archive/issue_comments_092450.json:
 ```json
 {
-    "body": "Replying to [comment:37 wjp]:\n> Thanks to the link to #8059. The new version of Singular there actually already has done exactly the same thing, and renamed `mu` to `Kstd1_mu`. So that spkg supercedes this one.\n\nThat's good news!\n\nI already started to build your singular-3.1.0-spkg and will report whether it works. And then I'll try again with the spkg from #8059, also doing `make ptestlong`, so that hopefully a proper positive review for #8059 is possible.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:37 wjp]:\n> Thanks to the link to #8059. The new version of Singular there actually already has done exactly the same thing, and renamed `mu` to `Kstd1_mu`. So that spkg supercedes this one.\n\n\nThat's good news!\n\nI already started to build your singular-3.1.0-spkg and will report whether it works. And then I'll try again with the spkg from #8059, also doing `make ptestlong`, so that hopefully a proper positive review for #8059 is possible.\n\nCheers,\nSimon",
     "created_at": "2010-07-25T21:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1245,6 +1241,7 @@ archive/issue_comments_092450.json:
 
 Replying to [comment:37 wjp]:
 > Thanks to the link to #8059. The new version of Singular there actually already has done exactly the same thing, and renamed `mu` to `Kstd1_mu`. So that spkg supercedes this one.
+
 
 That's good news!
 
@@ -1260,7 +1257,7 @@ Simon
 archive/issue_comments_092451.json:
 ```json
 {
-    "body": "Replying to [comment:36 SimonKing]:\n\n> Is it really \"changning variable names\"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  \"changing variable names\" but \"clearifying a variable definition\".\n\nSorry, I mis-understood. \n\nDave",
+    "body": "Replying to [comment:36 SimonKing]:\n\n> Is it really \"changning variable names\"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  \"changing variable names\" but \"clearifying a variable definition\".\n\n\nSorry, I mis-understood. \n\nDave",
     "created_at": "2010-07-25T21:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1272,6 +1269,7 @@ archive/issue_comments_092451.json:
 Replying to [comment:36 SimonKing]:
 
 > Is it really "changning variable names"? If I understood correctly, Singular does not use the variable name `mu` - it consistently uses `Kstd1_mu`, and so do I. So, I wouldn't call it  "changing variable names" but "clearifying a variable definition".
+
 
 Sorry, I mis-understood. 
 
@@ -1306,7 +1304,7 @@ Dave
 archive/issue_comments_092453.json:
 ```json
 {
-    "body": "Replying to [comment:38 SimonKing]:\n> I already started to build your singular-3.1.0-spkg and will report whether it works. \n\nI am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.\n\nSo, where does local/include/singular/kstd1.h come from? Where do I get the files in local/include/singular/ from?",
+    "body": "Replying to [comment:38 SimonKing]:\n> I already started to build your singular-3.1.0-spkg and will report whether it works. \n\n\nI am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.\n\nSo, where does local/include/singular/kstd1.h come from? Where do I get the files in local/include/singular/ from?",
     "created_at": "2010-07-25T22:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1317,6 +1315,7 @@ archive/issue_comments_092453.json:
 
 Replying to [comment:38 SimonKing]:
 > I already started to build your singular-3.1.0-spkg and will report whether it works. 
+
 
 I am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.
 
@@ -1347,7 +1346,7 @@ Sorry, that was a very stupid mistake in `spkg-install`. I updated the spkg to f
 archive/issue_comments_092455.json:
 ```json
 {
-    "body": "Replying to [comment:41 SimonKing]:\n> Replying to [comment:38 SimonKing]:\n> > I already started to build your singular-3.1.0-spkg and will report whether it works. \n> \n> I am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.\n\nWillem's first `singular-3.1.0.4.p8.spkg` yields an \"Unhandled SIGSEGV\" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.",
+    "body": "Replying to [comment:41 SimonKing]:\n> Replying to [comment:38 SimonKing]:\n> > I already started to build your singular-3.1.0-spkg and will report whether it works. \n\n> \n> I am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.\n\n\nWillem's first `singular-3.1.0.4.p8.spkg` yields an \"Unhandled SIGSEGV\" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.",
     "created_at": "2010-07-25T23:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1359,8 +1358,10 @@ archive/issue_comments_092455.json:
 Replying to [comment:41 SimonKing]:
 > Replying to [comment:38 SimonKing]:
 > > I already started to build your singular-3.1.0-spkg and will report whether it works. 
+
 > 
 > I am afraid it didn't. It seems to me that local/include/singular/kstd1.h was not replaced when I installed the new spkg.
+
 
 Willem's first `singular-3.1.0.4.p8.spkg` yields an "Unhandled SIGSEGV" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.
 
@@ -1371,7 +1372,7 @@ Willem's first `singular-3.1.0.4.p8.spkg` yields an "Unhandled SIGSEGV" for me o
 archive/issue_comments_092456.json:
 ```json
 {
-    "body": "Replying to [comment:43 mpatel]:\n> Willem's first `singular-3.1.0.4.p8.spkg` yields an \"Unhandled SIGSEGV\" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.\n\nThese pass, except for those fixed by #9590.  The suite for `sage/schemes/elliptic_curves/ell_rational_field.py` timed out (3602.4 s) and I'm rerunning it now.  I'll try to install and test the new p8 spkg in a separate copy of 4.5.2.alpha0.",
+    "body": "Replying to [comment:43 mpatel]:\n> Willem's first `singular-3.1.0.4.p8.spkg` yields an \"Unhandled SIGSEGV\" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.\n\n\nThese pass, except for those fixed by #9590.  The suite for `sage/schemes/elliptic_curves/ell_rational_field.py` timed out (3602.4 s) and I'm rerunning it now.  I'll try to install and test the new p8 spkg in a separate copy of 4.5.2.alpha0.",
     "created_at": "2010-07-26T01:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1382,6 +1383,7 @@ archive/issue_comments_092456.json:
 
 Replying to [comment:43 mpatel]:
 > Willem's first `singular-3.1.0.4.p8.spkg` yields an "Unhandled SIGSEGV" for me on t2; I haven't tested the latest version.  However, Sage does start with the latest patch (I ignored the rejects) and package at #8059, after I run `./sage -b`.  I'm running the long doctests now.
+
 
 These pass, except for those fixed by #9590.  The suite for `sage/schemes/elliptic_curves/ell_rational_field.py` timed out (3602.4 s) and I'm rerunning it now.  I'll try to install and test the new p8 spkg in a separate copy of 4.5.2.alpha0.
 
@@ -1422,7 +1424,7 @@ Dave
 archive/issue_comments_092458.json:
 ```json
 {
-    "body": "Replying to [comment:45 drkirkby]:\n> Would Mitesh, (who is a release manager for 4.3.2),\n\nI'm also a release manager for 4.5.2. :)\n\n> consider merging the package at #8059, despite it being a major update to Singular, if it fixes this problem? I know the plan was not to update .spkg files in Sage 4.3.2, but plans do sometimes change. \n\nWe are planning to merge a new sagenb spkg, but I would prefer to avoid merging a new Singular spkg. \n\nDid the patch from #1396 fix any bugs or failing doctests, or did it only add new functionality? If it only added new functionality, I would really prefer to back it out for now.\n> \n> If my understanding is correct, \n> \n> http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-1-4.spkg\n> \n> which is the latest release, does not define Kstd1_mu to be mu, so this particular problem should not exist. However, since `singular-3-1-1-4.spkg` has not been checked properly on 't2', there may be other problems. \n> \n> It seems to me that the policy the release managers adopt regarding the updating of .spkg files could have a major impact on what happens on this ticket. \n> \n> \n> \n> Dave",
+    "body": "Replying to [comment:45 drkirkby]:\n> Would Mitesh, (who is a release manager for 4.3.2),\n\n\nI'm also a release manager for 4.5.2. :)\n\n> consider merging the package at #8059, despite it being a major update to Singular, if it fixes this problem? I know the plan was not to update .spkg files in Sage 4.3.2, but plans do sometimes change. \n\n\nWe are planning to merge a new sagenb spkg, but I would prefer to avoid merging a new Singular spkg. \n\nDid the patch from #1396 fix any bugs or failing doctests, or did it only add new functionality? If it only added new functionality, I would really prefer to back it out for now.\n> \n> If my understanding is correct, \n> \n> http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-1-4.spkg\n> \n> which is the latest release, does not define Kstd1_mu to be mu, so this particular problem should not exist. However, since `singular-3-1-1-4.spkg` has not been checked properly on 't2', there may be other problems. \n> \n> It seems to me that the policy the release managers adopt regarding the updating of .spkg files could have a major impact on what happens on this ticket. \n> \n> \n> \n> Dave",
     "created_at": "2010-07-26T02:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1434,9 +1436,11 @@ archive/issue_comments_092458.json:
 Replying to [comment:45 drkirkby]:
 > Would Mitesh, (who is a release manager for 4.3.2),
 
+
 I'm also a release manager for 4.5.2. :)
 
 > consider merging the package at #8059, despite it being a major update to Singular, if it fixes this problem? I know the plan was not to update .spkg files in Sage 4.3.2, but plans do sometimes change. 
+
 
 We are planning to merge a new sagenb spkg, but I would prefer to avoid merging a new Singular spkg. 
 
@@ -1487,7 +1491,7 @@ See http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#id392287 fo
 archive/issue_comments_092460.json:
 ```json
 {
-    "body": "Replying to [comment:47 ddrake]:\n> I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.\n\nSage starts after backing out #1396. I'll see about doctests.",
+    "body": "Replying to [comment:47 ddrake]:\n> I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.\n\n\nSage starts after backing out #1396. I'll see about doctests.",
     "created_at": "2010-07-26T02:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1499,6 +1503,7 @@ archive/issue_comments_092460.json:
 Replying to [comment:47 ddrake]:
 > I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.
 
+
 Sage starts after backing out #1396. I'll see about doctests.
 
 
@@ -1508,7 +1513,7 @@ Sage starts after backing out #1396. I'll see about doctests.
 archive/issue_comments_092461.json:
 ```json
 {
-    "body": "> Willem's first singular-3.1.0.4.p8.spkg yields an \"Unhandled SIGSEGV\" for me on t2.\n\nThe first one didn't make any changes.  After doing any of the others, you probably have to do \"sage -ba\" (or maybe you can get away with just rebuilding the pyx files in libs/singular?).",
+    "body": "> Willem's first singular-3.1.0.4.p8.spkg yields an \"Unhandled SIGSEGV\" for me on t2.\n\n\nThe first one didn't make any changes.  After doing any of the others, you probably have to do \"sage -ba\" (or maybe you can get away with just rebuilding the pyx files in libs/singular?).",
     "created_at": "2010-07-26T02:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1518,6 +1523,7 @@ archive/issue_comments_092461.json:
 ```
 
 > Willem's first singular-3.1.0.4.p8.spkg yields an "Unhandled SIGSEGV" for me on t2.
+
 
 The first one didn't make any changes.  After doing any of the others, you probably have to do "sage -ba" (or maybe you can get away with just rebuilding the pyx files in libs/singular?).
 
@@ -1550,7 +1556,7 @@ As I said, after upgrading, you have to make sure to do "sage -ba".  Is this aut
 archive/issue_comments_092463.json:
 ```json
 {
-    "body": "Replying to [comment:46 ddrake]:\n> ...\n> Did the patch from #1396 fix any bugs or failing doctests, or did it only add new functionality? \n\nIt is an enhancement.",
+    "body": "Replying to [comment:46 ddrake]:\n> ...\n> Did the patch from #1396 fix any bugs or failing doctests, or did it only add new functionality? \n\n\nIt is an enhancement.",
     "created_at": "2010-07-26T07:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1563,6 +1569,7 @@ Replying to [comment:46 ddrake]:
 > ...
 > Did the patch from #1396 fix any bugs or failing doctests, or did it only add new functionality? 
 
+
 It is an enhancement.
 
 
@@ -1572,7 +1579,7 @@ It is an enhancement.
 archive/issue_comments_092464.json:
 ```json
 {
-    "body": "Replying to [comment:47 ddrake]:\n> By the way, the proper way in Mercurial to \"undo\" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:\n\nThanks for the tip!  Thanks also to David for the GDB mini-lesson!",
+    "body": "Replying to [comment:47 ddrake]:\n> By the way, the proper way in Mercurial to \"undo\" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:\n\n\nThanks for the tip!  Thanks also to David for the GDB mini-lesson!",
     "created_at": "2010-07-26T07:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1583,6 +1590,7 @@ archive/issue_comments_092464.json:
 
 Replying to [comment:47 ddrake]:
 > By the way, the proper way in Mercurial to "undo" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:
+
 
 Thanks for the tip!  Thanks also to David for the GDB mini-lesson!
 
@@ -1687,7 +1695,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092470.json:
 ```json
 {
-    "body": "Replying to [comment:55 mpatel]:\n> I'm now testing 4.5.2.alpha0 plus [comment:47 comment 47's backout procedure] on bsd.math, sage.math, and t2, but I won't be able to report the results until after I wake up.\n\nI get no new long doctest failures.  Also,\n\n```sh\n$ cd SAGE_ROOT/devel/sage\n$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/1396/trac1396-singular_options.2.patch\n$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9583/trac_9583.patch\n$ hg stat\n$ patch -p1 < trac1396-singular_options.2.patch\npatching file sage/interfaces/singular.py\npatching file sage/libs/singular/option.pyx\npatching file sage/libs/singular/singular-cdefs.pxi\npatching file sage/libs/singular/singular.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\n$ hg stat\nM sage/interfaces/singular.py\nM sage/libs/singular/option.pyx\nM sage/libs/singular/singular-cdefs.pxi\nM sage/libs/singular/singular.pyx\nM sage/rings/polynomial/multi_polynomial_ideal.py\n$ patch -p1 < trac_9583.patch\npatching file sage/interfaces/singular.py\npatching file sage/libs/singular/option.pyx\npatching file sage/libs/singular/singular-cdefs.pxi\npatching file sage/libs/singular/singular.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\n$ hg stat\n$ hg diff\n$\n```\n\nso I'm ready to give this a positive review.",
+    "body": "Replying to [comment:55 mpatel]:\n> I'm now testing 4.5.2.alpha0 plus [comment:47 comment 47's backout procedure] on bsd.math, sage.math, and t2, but I won't be able to report the results until after I wake up.\n\n\nI get no new long doctest failures.  Also,\n\n```sh\n$ cd SAGE_ROOT/devel/sage\n$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/1396/trac1396-singular_options.2.patch\n$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9583/trac_9583.patch\n$ hg stat\n$ patch -p1 < trac1396-singular_options.2.patch\npatching file sage/interfaces/singular.py\npatching file sage/libs/singular/option.pyx\npatching file sage/libs/singular/singular-cdefs.pxi\npatching file sage/libs/singular/singular.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\n$ hg stat\nM sage/interfaces/singular.py\nM sage/libs/singular/option.pyx\nM sage/libs/singular/singular-cdefs.pxi\nM sage/libs/singular/singular.pyx\nM sage/rings/polynomial/multi_polynomial_ideal.py\n$ patch -p1 < trac_9583.patch\npatching file sage/interfaces/singular.py\npatching file sage/libs/singular/option.pyx\npatching file sage/libs/singular/singular-cdefs.pxi\npatching file sage/libs/singular/singular.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\n$ hg stat\n$ hg diff\n$\n```\nso I'm ready to give this a positive review.",
     "created_at": "2010-07-26T21:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1698,6 +1706,7 @@ archive/issue_comments_092470.json:
 
 Replying to [comment:55 mpatel]:
 > I'm now testing 4.5.2.alpha0 plus [comment:47 comment 47's backout procedure] on bsd.math, sage.math, and t2, but I won't be able to report the results until after I wake up.
+
 
 I get no new long doctest failures.  Also,
 
@@ -1728,7 +1737,6 @@ $ hg stat
 $ hg diff
 $
 ```
-
 so I'm ready to give this a positive review.
 
 
@@ -1738,7 +1746,7 @@ so I'm ready to give this a positive review.
 archive/issue_comments_092471.json:
 ```json
 {
-    "body": "Replying to [comment:50 jhpalmieri]:\n> As I said, after upgrading, you have to make sure to do \"sage -ba\".  Is this automatic in the upgrade process?\n\nAs far as I can tell, `sage -upgrade` (which invoke `sage-upgrade` and `sage-update`) and `sage -f/i` (which call `sage-spkg`) do not check whether it's necessary to rebuild dependent packages (nor warn about or actually rebuild them), particularly those that are already installed (i.e., have a corresponding marker in `SAGE_ROOT/spkg/installed`).  Or am I misunderstanding your question?",
+    "body": "Replying to [comment:50 jhpalmieri]:\n> As I said, after upgrading, you have to make sure to do \"sage -ba\".  Is this automatic in the upgrade process?\n\n\nAs far as I can tell, `sage -upgrade` (which invoke `sage-upgrade` and `sage-update`) and `sage -f/i` (which call `sage-spkg`) do not check whether it's necessary to rebuild dependent packages (nor warn about or actually rebuild them), particularly those that are already installed (i.e., have a corresponding marker in `SAGE_ROOT/spkg/installed`).  Or am I misunderstanding your question?",
     "created_at": "2010-07-26T21:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1750,6 +1758,7 @@ archive/issue_comments_092471.json:
 Replying to [comment:50 jhpalmieri]:
 > As I said, after upgrading, you have to make sure to do "sage -ba".  Is this automatic in the upgrade process?
 
+
 As far as I can tell, `sage -upgrade` (which invoke `sage-upgrade` and `sage-update`) and `sage -f/i` (which call `sage-spkg`) do not check whether it's necessary to rebuild dependent packages (nor warn about or actually rebuild them), particularly those that are already installed (i.e., have a corresponding marker in `SAGE_ROOT/spkg/installed`).  Or am I misunderstanding your question?
 
 
@@ -1759,7 +1768,7 @@ As far as I can tell, `sage -upgrade` (which invoke `sage-upgrade` and `sage-upd
 archive/issue_comments_092472.json:
 ```json
 {
-    "body": "Replying to [comment:47 ddrake]:\n> By the way, the proper way in Mercurial to \"undo\" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:\n> \n>   * build 4.5.2.alpha0\n>   * make a new branch\n>   * in that branch, do `hg backout --merge 14701` \n>   * do `hg commit` to commit the result of the merge\n>   * test Sage as usual\n> \n> See http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#id392287 for more info. I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.\n\nThank you for that Dan. Its usefulness to me will extend well beyond the point this ticket gets closed. \n\nDave",
+    "body": "Replying to [comment:47 ddrake]:\n> By the way, the proper way in Mercurial to \"undo\" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:\n> \n> * build 4.5.2.alpha0\n> * make a new branch\n> * in that branch, do `hg backout --merge 14701` \n> * do `hg commit` to commit the result of the merge\n> * test Sage as usual\n> \n> See http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#id392287 for more info. I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.\n\n\nThank you for that Dan. Its usefulness to me will extend well beyond the point this ticket gets closed. \n\nDave",
     "created_at": "2010-07-26T22:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9583",
     "type": "issue_comment",
@@ -1771,13 +1780,14 @@ archive/issue_comments_092472.json:
 Replying to [comment:47 ddrake]:
 > By the way, the proper way in Mercurial to "undo" a changeset is the `backout` command. Here's how you can test 4.5.2.alpha0 without #1396:
 > 
->   * build 4.5.2.alpha0
->   * make a new branch
->   * in that branch, do `hg backout --merge 14701` 
->   * do `hg commit` to commit the result of the merge
->   * test Sage as usual
+> * build 4.5.2.alpha0
+> * make a new branch
+> * in that branch, do `hg backout --merge 14701` 
+> * do `hg commit` to commit the result of the merge
+> * test Sage as usual
 > 
 > See http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#id392287 for more info. I'm currently testing 4.5.2.alpha0 on t2.math after doing the above.
+
 
 Thank you for that Dan. Its usefulness to me will extend well beyond the point this ticket gets closed. 
 

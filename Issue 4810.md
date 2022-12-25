@@ -3,7 +3,7 @@
 archive/issues_004810.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @jondo\n\nMartin Rubey reported in http://groups.google.com/group/sage-devel/browse_thread/thread/d48a4139afd07da8\n\n```\njust for the record: installing tcsh makes the problem go away.  This hint was \nburied in a longer mail on this list, so I repeat it here... \n```\n\nHe also reported an interface problem which could also be split off to another ticket:\n\n```\nAnother hint:  qepcad does not like fractions, not even of integers, and the \nsage interface doesn't deal with this.  So you have to reduce them yourself, \ni.e., instead of \na < b/2 \nwrite \n2*a < b \nOtherwise qepcad will appear to do nothing. \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4810\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jondo\n\nMartin Rubey reported in http://groups.google.com/group/sage-devel/browse_thread/thread/d48a4139afd07da8\n\n```\njust for the record: installing tcsh makes the problem go away.  This hint was \nburied in a longer mail on this list, so I repeat it here... \n```\nHe also reported an interface problem which could also be split off to another ticket:\n\n```\nAnother hint:  qepcad does not like fractions, not even of integers, and the \nsage interface doesn't deal with this.  So you have to reduce them yourself, \ni.e., instead of \na < b/2 \nwrite \n2*a < b \nOtherwise qepcad will appear to do nothing. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4810\n\n",
     "created_at": "2008-12-16T06:37:59Z",
     "labels": [
         "component: packages: optional",
@@ -26,7 +26,6 @@ Martin Rubey reported in http://groups.google.com/group/sage-devel/browse_thread
 just for the record: installing tcsh makes the problem go away.  This hint was 
 buried in a longer mail on this list, so I repeat it here... 
 ```
-
 He also reported an interface problem which could also be split off to another ticket:
 
 ```
@@ -38,7 +37,6 @@ write
 2*a < b 
 Otherwise qepcad will appear to do nothing. 
 ```
-
 
 Cheers,
 

@@ -62,7 +62,7 @@ Patch produced from a modified file in CVS, retrived on August 10th 2009
 archive/issue_comments_055038.json:
 ```json
 {
-    "body": "Juan Jose Garcia-Ripoll (Juanjo), the main developer of ECL has discovered a bug in ECL 9.8.1. On his advice, I took the CVS on August 10th 2009  and have updated just the one file. \n\n```\necl-9.8.1/src/cmp/sysfun.lsp\n```\n\n\nThis fixes the problem. \n\n\nAs far as I am concerned, this, and trac #6716 (which effected elliptic_e) can now be closed. Doctest\n\n\n```\nsage -t  \"devel/sage/sage/functions/special.py\"\n```\n\n\nnow passes. \n\nI will produce a revised ecl .spkg file, as per trac #6564",
+    "body": "Juan Jose Garcia-Ripoll (Juanjo), the main developer of ECL has discovered a bug in ECL 9.8.1. On his advice, I took the CVS on August 10th 2009  and have updated just the one file. \n\n```\necl-9.8.1/src/cmp/sysfun.lsp\n```\n\nThis fixes the problem. \n\n\nAs far as I am concerned, this, and trac #6716 (which effected elliptic_e) can now be closed. Doctest\n\n```\nsage -t  \"devel/sage/sage/functions/special.py\"\n```\n\nnow passes. \n\nI will produce a revised ecl .spkg file, as per trac #6564",
     "created_at": "2009-08-11T07:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6719",
     "type": "issue_comment",
@@ -77,17 +77,14 @@ Juan Jose Garcia-Ripoll (Juanjo), the main developer of ECL has discovered a bug
 ecl-9.8.1/src/cmp/sysfun.lsp
 ```
 
-
 This fixes the problem. 
 
 
 As far as I am concerned, this, and trac #6716 (which effected elliptic_e) can now be closed. Doctest
 
-
 ```
 sage -t  "devel/sage/sage/functions/special.py"
 ```
-
 
 now passes. 
 

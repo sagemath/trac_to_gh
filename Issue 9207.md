@@ -3,7 +3,7 @@
 archive/issues_009207.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
+    "body": "Assignee: @malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
     "created_at": "2010-06-10T20:03:45Z",
     "labels": [
         "component: commutative algebra",
@@ -21,7 +21,6 @@ Assignee: @malb
 
 random_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,
 
-
 ```
 sage: n = 2
 sage: S = BooleanPolynomialRing(n,'y','lex')
@@ -29,7 +28,6 @@ sage: S.random_element()
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9207
 
@@ -78,7 +76,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086036.json:
 ```json
 {
-    "body": "\n```\nThis patch fixed the reported problem.\n\nsage-4.4.4.1 with this patch pass all tests\nwhen I do 'make testlong'\n\nThe patch code looks reasonable.\n\nPositive review.\n```\n",
+    "body": "```\nThis patch fixed the reported problem.\n\nsage-4.4.4.1 with this patch pass all tests\nwhen I do 'make testlong'\n\nThe patch code looks reasonable.\n\nPositive review.\n```",
     "created_at": "2010-07-13T14:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
@@ -86,7 +84,6 @@ archive/issue_comments_086036.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
-
 
 ```
 This patch fixed the reported problem.
@@ -98,7 +95,6 @@ The patch code looks reasonable.
 
 Positive review.
 ```
-
 
 
 

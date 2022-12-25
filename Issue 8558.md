@@ -81,7 +81,7 @@ Changing keywords from "gcd, pari, number field" to "gcd, pari, ntl, number fiel
 archive/issue_comments_077298.json:
 ```json
 {
-    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by @lftabera created at 2010-03-27 19:15:04\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```\n",
+    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by @lftabera created at 2010-03-27 19:15:04\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```",
     "created_at": "2010-03-27T19:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ To test it, apply the patch and
 from sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd
 
 Some timmings: (800 Mhz i386 linux, 1Gb ram)
-
 
 ```
 sage: N.<a>=NumberField(x^3 -123)         
@@ -127,8 +126,6 @@ Wall time: 12.21 s
 t^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203
 ```
 
-
-
 ```
 sage: N.<a>=NumberField(x^10 - 123)
 sage: K.<t>=N[]
@@ -147,13 +144,12 @@ Wall time: 0.47 s
 
 
 
-
 ---
 
 archive/issue_comments_077299.json:
 ```json
 {
-    "body": "Here there is a cleaner patch.\n\nThe patch adds a new class of univariate polynomials whose ground field is an absolute number field. There is a new _gcd method for this class. It actually implements several approaches to the modular gcd algorithm:\n\nLangemyr-McCallum algorithm\nEncarnacion\na mixture of the two previous (default)\n\nmoreover, a call to pari method and the old Euclidean method.\n\nI think that there should be only one modular algorithm, but, as usual, there are cases in which any of them beats the others. So suggestions are welcome. It should probably be Encarnacion or the mixture of boths\n\nsome timmings for harder problems:\n\n\n\n```\nsage: N = NumberField(ZZ[x].random_element(15).monic(),'a')    \nsage: K = N[x]\nsage: f = K.random_element(100)\nsage: g1 = K.random_element(100)\nsage: g2 = K.random_element(100)\nsage: g1 *= f\nsage: g2 *= f\nsage: %time _=gcd(g1,g2)\nCPU times: user 7.32 s, sys: 0.02 s, total: 7.34 s\nWall time: 7.42 s\n```\n\n\nThis example with the old implementation or even pari is unfeasible.",
+    "body": "Here there is a cleaner patch.\n\nThe patch adds a new class of univariate polynomials whose ground field is an absolute number field. There is a new _gcd method for this class. It actually implements several approaches to the modular gcd algorithm:\n\nLangemyr-McCallum algorithm\nEncarnacion\na mixture of the two previous (default)\n\nmoreover, a call to pari method and the old Euclidean method.\n\nI think that there should be only one modular algorithm, but, as usual, there are cases in which any of them beats the others. So suggestions are welcome. It should probably be Encarnacion or the mixture of boths\n\nsome timmings for harder problems:\n\n\n```\nsage: N = NumberField(ZZ[x].random_element(15).monic(),'a')    \nsage: K = N[x]\nsage: f = K.random_element(100)\nsage: g1 = K.random_element(100)\nsage: g2 = K.random_element(100)\nsage: g1 *= f\nsage: g2 *= f\nsage: %time _=gcd(g1,g2)\nCPU times: user 7.32 s, sys: 0.02 s, total: 7.34 s\nWall time: 7.42 s\n```\n\nThis example with the old implementation or even pari is unfeasible.",
     "created_at": "2010-06-22T15:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -177,7 +173,6 @@ I think that there should be only one modular algorithm, but, as usual, there ar
 some timmings for harder problems:
 
 
-
 ```
 sage: N = NumberField(ZZ[x].random_element(15).monic(),'a')    
 sage: K = N[x]
@@ -190,7 +185,6 @@ sage: %time _=gcd(g1,g2)
 CPU times: user 7.32 s, sys: 0.02 s, total: 7.34 s
 Wall time: 7.42 s
 ```
-
 
 This example with the old implementation or even pari is unfeasible.
 
@@ -538,7 +532,7 @@ Apply: trac-8558.2.patch
 archive/issue_comments_077317.json:
 ```json
 {
-    "body": "Several comments:\n1. Why the name `lift_pm()`?  In PARI, this function is called `centerlift()` which is more understandable in my opinion.  On the other hand, having the name *begin* with `lift` is more friendly for TAB-completion, so why not `lift_centered` or something?\n2. A special class for polynomials over number fields looks like a good idea, but please put it in a separate file `polynomial_number_field.pyx` instead of adding to `polynomial_element_generic.pyx`.\n3. I have a hard time understand the text below. What is `c`? What is `n`? Probably \"reduction\" is a better word than \"project\". And I also think the name `K` for a polynomial ring is badly chosen:\n\n```\n    def lift_to_poly_QQ(self,K):\n        \"\"\"\n        Compute a lift of poly to K.\n            \n        INPUT:\n    \n        - K: an univariate polynomial ring over an absolute number field QQ[a].\n        In order to make sense of this algorithm, the minimum polynomial of 'a'\n        should project onto `c` modulo `m`.\n      \n        OUTPUT:\n    \n        -A polynomial in QQ[a] such that its projection coefficientwise is poly.\n        This algorithm uses rational reconstruction, so it may fail.\n```\n\n4. Why `_gcd()` instead of `gcd()`?\n5. Add some tests using the global `gcd()` function instead of always calling your `_gcd()` method.\n6. Thanks to #11904, the line\n {{{\n h1 = pari([coeff._pari_('y') for coeff in self.list()]).Polrev() \n }}}\n can be changed to\n {{{\n h1 = pari(self)\n }}}\n7. This looks very fishy:\n {{{\n #Experimental bound IMPROVE\n }}}\n8. With\n {{{\n p = p.next_prime(False)\n }}}\n do you mean\n {{{\n p = p.next_prime(proof=False)\n }}}\n which is much clearer?\n9. I believe the keyword argument `algoritm=` is usually used instead of `method =` (note also the spacing!).",
+    "body": "Several comments:\n1. Why the name `lift_pm()`?  In PARI, this function is called `centerlift()` which is more understandable in my opinion.  On the other hand, having the name *begin* with `lift` is more friendly for TAB-completion, so why not `lift_centered` or something?\n2. A special class for polynomials over number fields looks like a good idea, but please put it in a separate file `polynomial_number_field.pyx` instead of adding to `polynomial_element_generic.pyx`.\n3. I have a hard time understand the text below. What is `c`? What is `n`? Probably \"reduction\" is a better word than \"project\". And I also think the name `K` for a polynomial ring is badly chosen:\n\n```\n    def lift_to_poly_QQ(self,K):\n        \"\"\"\n        Compute a lift of poly to K.\n            \n        INPUT:\n    \n        - K: an univariate polynomial ring over an absolute number field QQ[a].\n        In order to make sense of this algorithm, the minimum polynomial of 'a'\n        should project onto `c` modulo `m`.\n      \n        OUTPUT:\n    \n        -A polynomial in QQ[a] such that its projection coefficientwise is poly.\n        This algorithm uses rational reconstruction, so it may fail.\n```\n4. Why `_gcd()` instead of `gcd()`?\n5. Add some tests using the global `gcd()` function instead of always calling your `_gcd()` method.\n6. Thanks to #11904, the line\n {{{\n h1 = pari([coeff._pari_('y') for coeff in self.list()]).Polrev() \n }}}\n can be changed to\n {{{\n h1 = pari(self)\n }}}\n7. This looks very fishy:\n {{{\n #Experimental bound IMPROVE\n }}}\n8. With\n {{{\n p = p.next_prime(False)\n }}}\n do you mean\n {{{\n p = p.next_prime(proof=False)\n }}}\n which is much clearer?\n9. I believe the keyword argument `algoritm=` is usually used instead of `method =` (note also the spacing!).",
     "created_at": "2011-10-15T12:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -568,7 +562,6 @@ Several comments:
         -A polynomial in QQ[a] such that its projection coefficientwise is poly.
         This algorithm uses rational reconstruction, so it may fail.
 ```
-
 4. Why `_gcd()` instead of `gcd()`?
 5. Add some tests using the global `gcd()` function instead of always calling your `_gcd()` method.
 6. Thanks to #11904, the line
@@ -637,7 +630,7 @@ rebase 4.7.2 still needs work
 archive/issue_comments_077320.json:
 ```json
 {
-    "body": "Back to business.\n\nI have updated the patch with Jeroen's suggestions. Still I have to do something with \n\n\n```\n#Experimental bound IMPROVE\np = ZZ(3+min(2**255, (max(map(abs,Bound.list())).n()**(0.4)).floor())).next_prime(proof=False)\n```\n\n\np is the first prime to perform a modular gcd. If p=2, we will have to use a lot of primes and will be inefficient. On the other hand, if p is too big, we lose the advantages of modular gcd. So we have to give a sane, intermediate default.\n\nThe prime above is based on some experiments I made two years ago, the idea is to use a prime such that we will have to use few modular gcd, but limiting our stating prime to the interval `[3, 2^255]`.\n\nIdeas welcomed.",
+    "body": "Back to business.\n\nI have updated the patch with Jeroen's suggestions. Still I have to do something with \n\n```\n#Experimental bound IMPROVE\np = ZZ(3+min(2**255, (max(map(abs,Bound.list())).n()**(0.4)).floor())).next_prime(proof=False)\n```\n\np is the first prime to perform a modular gcd. If p=2, we will have to use a lot of primes and will be inefficient. On the other hand, if p is too big, we lose the advantages of modular gcd. So we have to give a sane, intermediate default.\n\nThe prime above is based on some experiments I made two years ago, the idea is to use a prime such that we will have to use few modular gcd, but limiting our stating prime to the interval `[3, 2^255]`.\n\nIdeas welcomed.",
     "created_at": "2013-02-24T13:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -650,12 +643,10 @@ Back to business.
 
 I have updated the patch with Jeroen's suggestions. Still I have to do something with 
 
-
 ```
 #Experimental bound IMPROVE
 p = ZZ(3+min(2**255, (max(map(abs,Bound.list())).n()**(0.4)).floor())).next_prime(proof=False)
 ```
-
 
 p is the first prime to perform a modular gcd. If p=2, we will have to use a lot of primes and will be inefficient. On the other hand, if p is too big, we lose the advantages of modular gcd. So we have to give a sane, intermediate default.
 
@@ -807,7 +798,7 @@ Apply: trac-8558.2.2.patch
 archive/issue_comments_077328.json:
 ```json
 {
-    "body": "Some quick comments:\n1. `_sig_on` and `_sig_off` are very deprecated and should be changed to `sig_on()` and `sig_off()` (#10115).\n2. The change \"somewhat\" -> \"somewha\" clearly is a mistake.\n3. [Documentation](http://sagemath.org/doc/developer/conventions.html#documentation-strings) and [library](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files) formatting must be fixed.\n4. Could you replace `centerlift` by `lift_centered` in `sage/rings/finite_rings/integer_mod.pyx` for consistency?\n5. As I already mentioned, replace `method =` by `algorithm=`\n6. Since `QQ` is a unique parent, replace `base_ring != QQ` by `base_ring is not QQ`.\n6. Remove `# There has to be a better way to do this, self.change_ring()` does not work.  I don't see any problem with that code.\n6. It is better to use a `**kwds` argument for `sparse` and `implementation` in\n\n```\ndef __init__(self, base_ring, name=\"x\", sparse=False, element_class=None, implementation=None)\n```\n",
+    "body": "Some quick comments:\n1. `_sig_on` and `_sig_off` are very deprecated and should be changed to `sig_on()` and `sig_off()` (#10115).\n2. The change \"somewhat\" -> \"somewha\" clearly is a mistake.\n3. [Documentation](http://sagemath.org/doc/developer/conventions.html#documentation-strings) and [library](http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files) formatting must be fixed.\n4. Could you replace `centerlift` by `lift_centered` in `sage/rings/finite_rings/integer_mod.pyx` for consistency?\n5. As I already mentioned, replace `method =` by `algorithm=`\n6. Since `QQ` is a unique parent, replace `base_ring != QQ` by `base_ring is not QQ`.\n6. Remove `# There has to be a better way to do this, self.change_ring()` does not work.  I don't see any problem with that code.\n6. It is better to use a `**kwds` argument for `sparse` and `implementation` in\n\n```\ndef __init__(self, base_ring, name=\"x\", sparse=False, element_class=None, implementation=None)\n```",
     "created_at": "2013-03-13T14:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -829,7 +820,6 @@ Some quick comments:
 ```
 def __init__(self, base_ring, name="x", sparse=False, element_class=None, implementation=None)
 ```
-
 
 
 
@@ -1369,7 +1359,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_077351.json:
 ```json
 {
-    "body": "- I have added mor cdef, however, I cannot do that in polynomial_number_field since the class inherist from a python class. I was not able to cdef, rings or number field elements. The latter has at least two classes and I was not able to cdef the common parent.\n- I have fixed types, more verbose method names, clean unusued variables.\n- modular method can be further improved for high degree using half-gcd algorithms in ntl.\n\n- Some more examples:\n\nPari seems to use either Euclid or some subresultant variation. I would expect pari to perform better when the gcd is big with respect to the degree of the inputs. Or, when the input has small degree.\n\nThe polynomials are generated with K.random_element() so small coefficients. This benefits pari.\n\nSmall extension, not impressing except for huge polynomials\n\n\n```\nsage: K=QQ[I]['x']\n```\n\n\n\n```\ndeg f, deg g, deg gcd, timeit pari, timeit modular\n2, 2, 0, 111 \u00b5s, 176 \u00b5s\n2, 2, 1, 173 \u00b5s, 360 \u00b5s\n2, 2, 2, 185 \u00b5s, 466 \u00b5s\n\n100, 100, 0, 30.6 ms, 7.06 ms\n100, 100, 50, 22.5 ms, 34.7 ms\n100, 100, 100, 4.82 ms, 6.58 ms\n\n300, 300, 0, 1.8 s, 45.1 ms\n300, 300, 150, 534 ms, 201 ms\n300, 300, 300, 13.3 ms, 11.3 ms\n\n1000, 1000, 100, 2min 52s, 2.07 s\n```\n\n\nA degree 3, easy extension\n\n\n```\nsage: R=NumberField(x^3-2,'a')['x']\n```\n\n\n\n```\ndeg f, deg g, deg gcd, timeit pari, timeit modular\n2, 2, 0, 163 \u00b5s, 243 \u00b5s\n2, 2, 1, 239 \u00b5s, 597 \u00b5s\n2, 2, 2, 257 \u00b5s, 587 \u00b5s\n\n100, 100, 0, 19 s, 11.2 ms (1000x faster)\n100, 100, 50, 8.6 s, 47.3 ms (100x faster)\n100, 100, 100, 6.57 ms, 11.9 ms (2x slower)\n\n300, 300, 150, > 600 s, 403 ms\n```\n\n\nTu support my claim that big coefficients benefits modular\n\n\n```\nsage: K=QQ[I]['x']\nsage: f=K.random_element(2,10**10)\n```\n\n\n\n```\n100, 100, 0, 282 ms, 6.92 ms\n100, 100, 50, 117 ms, 15.4 ms\n100, 100, 100, 4.69 ms, 5.01 ms\n```\n",
+    "body": "- I have added mor cdef, however, I cannot do that in polynomial_number_field since the class inherist from a python class. I was not able to cdef, rings or number field elements. The latter has at least two classes and I was not able to cdef the common parent.\n- I have fixed types, more verbose method names, clean unusued variables.\n- modular method can be further improved for high degree using half-gcd algorithms in ntl.\n\n- Some more examples:\n\nPari seems to use either Euclid or some subresultant variation. I would expect pari to perform better when the gcd is big with respect to the degree of the inputs. Or, when the input has small degree.\n\nThe polynomials are generated with K.random_element() so small coefficients. This benefits pari.\n\nSmall extension, not impressing except for huge polynomials\n\n```\nsage: K=QQ[I]['x']\n```\n\n```\ndeg f, deg g, deg gcd, timeit pari, timeit modular\n2, 2, 0, 111 \u00b5s, 176 \u00b5s\n2, 2, 1, 173 \u00b5s, 360 \u00b5s\n2, 2, 2, 185 \u00b5s, 466 \u00b5s\n\n100, 100, 0, 30.6 ms, 7.06 ms\n100, 100, 50, 22.5 ms, 34.7 ms\n100, 100, 100, 4.82 ms, 6.58 ms\n\n300, 300, 0, 1.8 s, 45.1 ms\n300, 300, 150, 534 ms, 201 ms\n300, 300, 300, 13.3 ms, 11.3 ms\n\n1000, 1000, 100, 2min 52s, 2.07 s\n```\n\nA degree 3, easy extension\n\n```\nsage: R=NumberField(x^3-2,'a')['x']\n```\n\n```\ndeg f, deg g, deg gcd, timeit pari, timeit modular\n2, 2, 0, 163 \u00b5s, 243 \u00b5s\n2, 2, 1, 239 \u00b5s, 597 \u00b5s\n2, 2, 2, 257 \u00b5s, 587 \u00b5s\n\n100, 100, 0, 19 s, 11.2 ms (1000x faster)\n100, 100, 50, 8.6 s, 47.3 ms (100x faster)\n100, 100, 100, 6.57 ms, 11.9 ms (2x slower)\n\n300, 300, 150, > 600 s, 403 ms\n```\n\nTu support my claim that big coefficients benefits modular\n\n```\nsage: K=QQ[I]['x']\nsage: f=K.random_element(2,10**10)\n```\n\n```\n100, 100, 0, 282 ms, 6.92 ms\n100, 100, 50, 117 ms, 15.4 ms\n100, 100, 100, 4.69 ms, 5.01 ms\n```",
     "created_at": "2016-07-15T11:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -1390,12 +1380,9 @@ The polynomials are generated with K.random_element() so small coefficients. Thi
 
 Small extension, not impressing except for huge polynomials
 
-
 ```
 sage: K=QQ[I]['x']
 ```
-
-
 
 ```
 deg f, deg g, deg gcd, timeit pari, timeit modular
@@ -1414,15 +1401,11 @@ deg f, deg g, deg gcd, timeit pari, timeit modular
 1000, 1000, 100, 2min 52s, 2.07 s
 ```
 
-
 A degree 3, easy extension
-
 
 ```
 sage: R=NumberField(x^3-2,'a')['x']
 ```
-
-
 
 ```
 deg f, deg g, deg gcd, timeit pari, timeit modular
@@ -1437,23 +1420,18 @@ deg f, deg g, deg gcd, timeit pari, timeit modular
 300, 300, 150, > 600 s, 403 ms
 ```
 
-
 Tu support my claim that big coefficients benefits modular
-
 
 ```
 sage: K=QQ[I]['x']
 sage: f=K.random_element(2,10**10)
 ```
 
-
-
 ```
 100, 100, 0, 282 ms, 6.92 ms
 100, 100, 50, 117 ms, 15.4 ms
 100, 100, 100, 4.69 ms, 5.01 ms
 ```
-
 
 
 
@@ -1564,7 +1542,7 @@ One thing to watch when comparing timings with pari is that when Sage calls pari
 archive/issue_comments_077357.json:
 ```json
 {
-    "body": "It it is not that, I only need basic arithmetic, at most, pari could be interested in the  discriminant, but I am working in QQ[I] in my examples. Which should be easy. \n\nI have tried to write polynomials in pure gp as\n\n`f= Mod(3*y,y<sup>2-1)*x</sup>2+Mod(1,y<sup>2-1)*x+Mod(y,y</sup>2-1)`\n\nor as \n\n\n```\nw=quadgen(-4)\nf= 3*w*x^2+1*x+w\n```\n\n\nin both cases I get bad timing. Reading the documentation now to see how to deal with polynomials with number field coefficients in pari...",
+    "body": "It it is not that, I only need basic arithmetic, at most, pari could be interested in the  discriminant, but I am working in QQ[I] in my examples. Which should be easy. \n\nI have tried to write polynomials in pure gp as\n\n`f= Mod(3*y,y<sup>2-1)*x</sup>2+Mod(1,y<sup>2-1)*x+Mod(y,y</sup>2-1)`\n\nor as \n\n```\nw=quadgen(-4)\nf= 3*w*x^2+1*x+w\n```\n\nin both cases I get bad timing. Reading the documentation now to see how to deal with polynomials with number field coefficients in pari...",
     "created_at": "2016-07-15T14:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -1581,12 +1559,10 @@ I have tried to write polynomials in pure gp as
 
 or as 
 
-
 ```
 w=quadgen(-4)
 f= 3*w*x^2+1*x+w
 ```
-
 
 in both cases I get bad timing. Reading the documentation now to see how to deal with polynomials with number field coefficients in pari...
 
@@ -1939,7 +1915,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077371.json:
 ```json
 {
-    "body": "Replying to [comment:69 lftabera]:\n> lzz_pEX is not interfaced in Sage, so that should be a different ticket.\n\nThere is #8109 for that.",
+    "body": "Replying to [comment:69 lftabera]:\n> lzz_pEX is not interfaced in Sage, so that should be a different ticket.\n\n\nThere is #8109 for that.",
     "created_at": "2019-06-30T12:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
@@ -1950,6 +1926,7 @@ archive/issue_comments_077371.json:
 
 Replying to [comment:69 lftabera]:
 > lzz_pEX is not interfaced in Sage, so that should be a different ticket.
+
 
 There is #8109 for that.
 

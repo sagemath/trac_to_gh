@@ -3,7 +3,7 @@
 archive/issues_003443.json:
 ```json
 {
-    "body": "Assignee: timothyclemans\n\n\n```\nI tried to register twice on the online notebook at https://sage.math.washington.edu:8102,\nand after the registration page it says that my user name is taken (as\nexpected). But, it still sends me a confirmation email. I click on the\nregistration confirmation link and it says that I've confirmed.\nIt shouldn't send the email at all.\n(it also does the same thing at 8103)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3443\n\n",
+    "body": "Assignee: timothyclemans\n\n```\nI tried to register twice on the online notebook at https://sage.math.washington.edu:8102,\nand after the registration page it says that my user name is taken (as\nexpected). But, it still sends me a confirmation email. I click on the\nregistration confirmation link and it says that I've confirmed.\nIt shouldn't send the email at all.\n(it also does the same thing at 8103)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3443\n\n",
     "created_at": "2008-06-16T22:46:12Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_003443.json:
 ```
 Assignee: timothyclemans
 
-
 ```
 I tried to register twice on the online notebook at https://sage.math.washington.edu:8102,
 and after the registration page it says that my user name is taken (as
@@ -27,7 +26,6 @@ registration confirmation link and it says that I've confirmed.
 It shouldn't send the email at all.
 (it also does the same thing at 8103)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3443
 

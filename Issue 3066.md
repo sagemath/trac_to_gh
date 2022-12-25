@@ -3,7 +3,7 @@
 archive/issues_003066.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nLooks like an explicit import is the only thing missing on this one:\n\n\n```\nsage: a = matrix([])\nsage: m.gram_schmidt()\n<type 'exceptions.NameError'>: global name 'ZZ' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3066\n\n",
+    "body": "Assignee: @williamstein\n\nLooks like an explicit import is the only thing missing on this one:\n\n```\nsage: a = matrix([])\nsage: m.gram_schmidt()\n<type 'exceptions.NameError'>: global name 'ZZ' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3066\n\n",
     "created_at": "2008-04-30T15:20:39Z",
     "labels": [
         "component: linear algebra",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 Looks like an explicit import is the only thing missing on this one:
 
-
 ```
 sage: a = matrix([])
 sage: m.gram_schmidt()
 <type 'exceptions.NameError'>: global name 'ZZ' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3066
 

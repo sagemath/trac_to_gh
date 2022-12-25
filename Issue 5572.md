@@ -123,7 +123,7 @@ Both good points. At least g.variables() should be a subset of g.args().
 archive/issue_comments_043329.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n\n>  * if g is a callable expression, then fast_callable(g) should use g.args() for the variables, not g.variables().  Hmm...or maybe return an error if g.args() is not equal to g.variables(), since every variable really does have to be satisfied.\n\n#7512 may take care of this.",
+    "body": "Replying to [comment:2 jason]:\n\n>  * if g is a callable expression, then fast_callable(g) should use g.args() for the variables, not g.variables().  Hmm...or maybe return an error if g.args() is not equal to g.variables(), since every variable really does have to be satisfied.\n\n\n#7512 may take care of this.",
     "created_at": "2010-04-24T06:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -135,6 +135,7 @@ archive/issue_comments_043329.json:
 Replying to [comment:2 jason]:
 
 >  * if g is a callable expression, then fast_callable(g) should use g.args() for the variables, not g.variables().  Hmm...or maybe return an error if g.args() is not equal to g.variables(), since every variable really does have to be satisfied.
+
 
 #7512 may take care of this.
 
@@ -442,7 +443,7 @@ apply instead of previous patches (fixed a bunch of stuff so even more doctests 
 archive/issue_comments_043345.json:
 ```json
 {
-    "body": "To delete the fast_eval.so file from the build directory (necessary so that the cython fast_eval is eliminated when testing), do:\n\n\n```\ncd $SAGE_ROOT/devel/sage/build\nfind . -name fast_eval.so | xargs rm\n```\n",
+    "body": "To delete the fast_eval.so file from the build directory (necessary so that the cython fast_eval is eliminated when testing), do:\n\n```\ncd $SAGE_ROOT/devel/sage/build\nfind . -name fast_eval.so | xargs rm\n```",
     "created_at": "2010-09-05T01:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -453,12 +454,10 @@ archive/issue_comments_043345.json:
 
 To delete the fast_eval.so file from the build directory (necessary so that the cython fast_eval is eliminated when testing), do:
 
-
 ```
 cd $SAGE_ROOT/devel/sage/build
 find . -name fast_eval.so | xargs rm
 ```
-
 
 
 
@@ -467,7 +466,7 @@ find . -name fast_eval.so | xargs rm
 archive/issue_comments_043346.json:
 ```json
 {
-    "body": "Progress report: my current patch queue has the following failures on `make ptestlong` on Sage 4.5.2:\n\n\n```\n\tsage -t  -long 4.5.2/devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t  -long 4.5.2/devel/sage/sage/ext/fast_callable.pyx # Exception from doctest framework\n\tsage -t  -long 4.5.2/devel/sage/sage/rings/polynomial/polynomial_element.pyx # 9 doctests failed\n\tsage -t  -long 4.5.2/devel/sage/sage/stats/hmm/distributions.pyx # 1 doctests failed\n\n```\n",
+    "body": "Progress report: my current patch queue has the following failures on `make ptestlong` on Sage 4.5.2:\n\n```\n\tsage -t  -long 4.5.2/devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t  -long 4.5.2/devel/sage/sage/ext/fast_callable.pyx # Exception from doctest framework\n\tsage -t  -long 4.5.2/devel/sage/sage/rings/polynomial/polynomial_element.pyx # 9 doctests failed\n\tsage -t  -long 4.5.2/devel/sage/sage/stats/hmm/distributions.pyx # 1 doctests failed\n\n```",
     "created_at": "2010-09-05T02:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5572",
     "type": "issue_comment",
@@ -478,7 +477,6 @@ archive/issue_comments_043346.json:
 
 Progress report: my current patch queue has the following failures on `make ptestlong` on Sage 4.5.2:
 
-
 ```
 	sage -t  -long 4.5.2/devel/sage/sage/structure/sage_object.pyx # 1 doctests failed
 	sage -t  -long 4.5.2/devel/sage/sage/ext/fast_callable.pyx # Exception from doctest framework
@@ -486,7 +484,6 @@ Progress report: my current patch queue has the following failures on `make ptes
 	sage -t  -long 4.5.2/devel/sage/sage/stats/hmm/distributions.pyx # 1 doctests failed
 
 ```
-
 
 
 

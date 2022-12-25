@@ -3,7 +3,7 @@
 archive/issues_002871.json:
 ```json
 {
-    "body": "Assignee: @dfdeshom\n\nIn the following example, A should be \"upside down\", but it's not\n\n```\nsage: A = random_matrix(ZZ,3); A\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\nsage: A[range(2,-1,-1),:]\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\n```\n\n\nThe problem is with `set()`, which doesn't preserve order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2871\n\n",
+    "body": "Assignee: @dfdeshom\n\nIn the following example, A should be \"upside down\", but it's not\n\n```\nsage: A = random_matrix(ZZ,3); A\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\nsage: A[range(2,-1,-1),:]\n\n[ 1  3 -1]\n[ 4 -3 -1]\n[-1  0 -1]\n\n```\n\nThe problem is with `set()`, which doesn't preserve order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2871\n\n",
     "created_at": "2008-04-10T18:13:17Z",
     "labels": [
         "component: linear algebra",
@@ -35,7 +35,6 @@ sage: A[range(2,-1,-1),:]
 [-1  0 -1]
 
 ```
-
 
 The problem is with `set()`, which doesn't preserve order.
 

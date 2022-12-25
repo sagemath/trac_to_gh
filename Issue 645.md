@@ -3,7 +3,7 @@
 archive/issues_000645.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: x,y = var('x y')\nsage: f(3)\ny + 3\nsage: f(3)(4)\n7\nsage: f(3,4)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/sage/sage-2.5/devel/sage-working/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: __call__() takes at most 2 arguments (3 given)\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/645\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: x,y = var('x y')\nsage: f(3)\ny + 3\nsage: f(3)(4)\n7\nsage: f(3,4)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/sage/sage-2.5/devel/sage-working/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: __call__() takes at most 2 arguments (3 given)\nsage: \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/645\n\n",
     "created_at": "2007-09-12T21:32:07Z",
     "labels": [
         "component: calculus"
@@ -16,7 +16,6 @@ archive/issues_000645.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: x,y = var('x y')
@@ -34,7 +33,6 @@ sage: f(3,4)
 sage: 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/645
 

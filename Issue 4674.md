@@ -3,7 +3,7 @@
 archive/issues_004674.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4674\n\n",
+    "body": "Assignee: boothby\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4674\n\n",
     "created_at": "2008-12-02T15:35:23Z",
     "labels": [
         "component: notebook",
@@ -44,7 +44,6 @@ whether you want to use that instead.
 
 Davide
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4674
 
@@ -241,7 +240,7 @@ See #4714 for the loading part of this ticket.
 archive/issue_comments_035147.json:
 ```json
 {
-    "body": "> I also cleaned up places where the JSMATH variable was set. There \n> is no purpose for the variable, since jsmath is a standard part of \n> Sage (it is always installed). \n\njsmath was standard ever since we used it with the notebook.  That wasn't the point of the variable.  The point is that it gives users a way to turn of use of jsmath entirely, which may be a very good idea in some settings (e.g., low bandwidth notebook servers).   Basically, for no good reason I think you've removed functionality.  Make a new patch that just has the first change in the first version of the patch you attached above.",
+    "body": "> I also cleaned up places where the JSMATH variable was set. There \n> is no purpose for the variable, since jsmath is a standard part of \n> Sage (it is always installed). \n\n\njsmath was standard ever since we used it with the notebook.  That wasn't the point of the variable.  The point is that it gives users a way to turn of use of jsmath entirely, which may be a very good idea in some settings (e.g., low bandwidth notebook servers).   Basically, for no good reason I think you've removed functionality.  Make a new patch that just has the first change in the first version of the patch you attached above.",
     "created_at": "2008-12-06T22:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
@@ -253,6 +252,7 @@ archive/issue_comments_035147.json:
 > I also cleaned up places where the JSMATH variable was set. There 
 > is no purpose for the variable, since jsmath is a standard part of 
 > Sage (it is always installed). 
+
 
 jsmath was standard ever since we used it with the notebook.  That wasn't the point of the variable.  The point is that it gives users a way to turn of use of jsmath entirely, which may be a very good idea in some settings (e.g., low bandwidth notebook servers).   Basically, for no good reason I think you've removed functionality.  Make a new patch that just has the first change in the first version of the patch you attached above.
 

@@ -3,7 +3,7 @@
 archive/issues_003651.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  nbruin@cecm.sfu.ca\n\nNils Bruin reports:\n\n\"I ran into the following problem in sage, and I suspect it might be your code:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n[...]\nNameError: global name 'misc' is not defined\n```\n\nWas this tested at all?\"\n\nIt's a problem in L_ratio().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3651\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  nbruin@cecm.sfu.ca\n\nNils Bruin reports:\n\n\"I ran into the following problem in sage, and I suspect it might be your code:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n[...]\nNameError: global name 'misc' is not defined\n```\nWas this tested at all?\"\n\nIt's a problem in L_ratio().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3651\n\n",
     "created_at": "2008-07-13T19:35:49Z",
     "labels": [
         "component: number theory",
@@ -29,7 +29,6 @@ sage: EllipticCurve([0,0,0,-193^2,0]).sha().an()
 [...]
 NameError: global name 'misc' is not defined
 ```
-
 Was this tested at all?"
 
 It's a problem in L_ratio().
@@ -46,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3651
 archive/issue_comments_025766.json:
 ```json
 {
-    "body": "Attachment [sage-trac3651.patch](tarball://root/attachments/some-uuid/ticket3651/sage-trac3651.patch) by @JohnCremona created at 2008-07-13 19:45:47\n\nAfter the attached patch (based on 3.0.4) it works fine:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n4\n```\n",
+    "body": "Attachment [sage-trac3651.patch](tarball://root/attachments/some-uuid/ticket3651/sage-trac3651.patch) by @JohnCremona created at 2008-07-13 19:45:47\n\nAfter the attached patch (based on 3.0.4) it works fine:\n\n```\nsage: EllipticCurve([0,0,0,-193^2,0]).sha().an()\n4\n```",
     "created_at": "2008-07-13T19:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3651",
     "type": "issue_comment",
@@ -63,7 +62,6 @@ After the attached patch (based on 3.0.4) it works fine:
 sage: EllipticCurve([0,0,0,-193^2,0]).sha().an()
 4
 ```
-
 
 
 

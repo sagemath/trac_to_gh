@@ -3,7 +3,7 @@
 archive/issues_009185.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @mwhansen\n\nTo build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9185\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @mwhansen\n\nTo build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9185\n\n",
     "created_at": "2010-06-08T08:40:36Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ To build the Singular spkg with `SAGE_PARALLEL_SPKG_BUILD="yes"` on Mac OS X, we
 MAKEFLAGS=
 export MAKEFLAGS
 ```
-
 to the package's `spkg-install`.
 
 Please see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).
@@ -138,7 +137,7 @@ I'm not sure why `unset MAKE` in `spkg-install` doesn't suppress parallel intra-
 archive/issue_comments_085781.json:
 ```json
 {
-    "body": "Not directly related to this ticket, but to Singular's `spkg-install`:\n\nWe have **two** \"patches\" to `src/Singular/Makefile.in`; both are copied, the newer after the older one:\n\n```\n    # work-around patches\n    cp patches/mminit.cc src/kernel/\n    cp patches/assert.h src/factory/\n    cp patches/kernel.rmodulon.cc src/kernel/rmodulon.cc\n    cp patches/src.Singular.Makefile.in src/Singular/Makefile.in\n    cp patches/Singular.libsingular.h src/Singular/libsingular.h\n    cp patches/factory.GNUmakefile.in src/factory/GNUmakefile.in\n    cp patches/libfac.charset.alg_factor.cc src/libfac/charset/alg_factor.cc\n    cp patches/kernel.Makefile.in src/kernel/Makefile.in\n    cp patches/Singular.Makefile.in src/Singular/Makefile.in\n    cp patches/Singular.tesths.cc src/Singular/tesths.cc\n\n```\n\n\nSome Solaris stuff seems to be lost (obsolete?):\n\n```\n--- patches/src.Singular.Makefile.in\t2009-06-11 12:23:38.000000000 +0200\n+++ patches/Singular.Makefile.in\t2010-01-20 18:30:21.000000000 +0100\n@@ -130,12 +130,6 @@\n LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc  -lhtmlhelp\n endif\n \n-ifeq ($(SINGUNAME),ix86-SunOS)\n-SO_SUFFIX  = so\n-LIBSINGULAR_FLAGS = -shared\n-LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc\n-endif\n-\n #\n # End libSINGULAR\n #\n@@ -534,12 +528,18 @@\n \t${INSTALL_DATA} `pwd`/LIB/gftables/* ${slibdir}/gftables/\n \n install-libsingular: libsingular\n+\t${MKINSTALLDIRS} ${includedir}/singular\n \tfor file in *.$(SO_SUFFIX); do \\\n \t  ${INSTALL_PROGRAM}  $$file ${libdir}; \\\n \tdone\n \t${INSTALL_PROGRAM} libsingular.h ${includedir}\n-\n-\n+\t${INSTALL_PROGRAM} subexpr.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} tok.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} grammar.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} ipid.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} ipshell.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} lists.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} attrib.h ${includedir}/singular\n \n uninstall: uninstallbin\n```\n\n\nIf appropriate, we should merge them, and delete the older one (including the `cp` line of course).\n\nDave?",
+    "body": "Not directly related to this ticket, but to Singular's `spkg-install`:\n\nWe have **two** \"patches\" to `src/Singular/Makefile.in`; both are copied, the newer after the older one:\n\n```\n    # work-around patches\n    cp patches/mminit.cc src/kernel/\n    cp patches/assert.h src/factory/\n    cp patches/kernel.rmodulon.cc src/kernel/rmodulon.cc\n    cp patches/src.Singular.Makefile.in src/Singular/Makefile.in\n    cp patches/Singular.libsingular.h src/Singular/libsingular.h\n    cp patches/factory.GNUmakefile.in src/factory/GNUmakefile.in\n    cp patches/libfac.charset.alg_factor.cc src/libfac/charset/alg_factor.cc\n    cp patches/kernel.Makefile.in src/kernel/Makefile.in\n    cp patches/Singular.Makefile.in src/Singular/Makefile.in\n    cp patches/Singular.tesths.cc src/Singular/tesths.cc\n\n```\n\nSome Solaris stuff seems to be lost (obsolete?):\n\n```\n--- patches/src.Singular.Makefile.in\t2009-06-11 12:23:38.000000000 +0200\n+++ patches/Singular.Makefile.in\t2010-01-20 18:30:21.000000000 +0100\n@@ -130,12 +130,6 @@\n LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc  -lhtmlhelp\n endif\n \n-ifeq ($(SINGUNAME),ix86-SunOS)\n-SO_SUFFIX  = so\n-LIBSINGULAR_FLAGS = -shared\n-LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp -lomalloc\n-endif\n-\n #\n # End libSINGULAR\n #\n@@ -534,12 +528,18 @@\n \t${INSTALL_DATA} `pwd`/LIB/gftables/* ${slibdir}/gftables/\n \n install-libsingular: libsingular\n+\t${MKINSTALLDIRS} ${includedir}/singular\n \tfor file in *.$(SO_SUFFIX); do \\\n \t  ${INSTALL_PROGRAM}  $$file ${libdir}; \\\n \tdone\n \t${INSTALL_PROGRAM} libsingular.h ${includedir}\n-\n-\n+\t${INSTALL_PROGRAM} subexpr.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} tok.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} grammar.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} ipid.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} ipshell.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} lists.h ${includedir}/singular\n+\t${INSTALL_PROGRAM} attrib.h ${includedir}/singular\n \n uninstall: uninstallbin\n```\n\nIf appropriate, we should merge them, and delete the older one (including the `cp` line of course).\n\nDave?",
     "created_at": "2010-06-12T11:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
@@ -165,7 +164,6 @@ We have **two** "patches" to `src/Singular/Makefile.in`; both are copied, the ne
     cp patches/Singular.tesths.cc src/Singular/tesths.cc
 
 ```
-
 
 Some Solaris stuff seems to be lost (obsolete?):
 
@@ -207,7 +205,6 @@ Some Solaris stuff seems to be lost (obsolete?):
  uninstall: uninstallbin
 ```
 
-
 If appropriate, we should merge them, and delete the older one (including the `cp` line of course).
 
 Dave?
@@ -219,7 +216,7 @@ Dave?
 archive/issue_comments_085782.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> I'm not sure why `unset MAKE` in `spkg-install` doesn't suppress parallel intra-spkg builds/installs for Singular (#9185), R (#9186), or ECL (#9187) on OS X.  In particular, I don't know whether the source of the problem is in `make`, OS X, or the Sage/spkg `Makefile`s.  But setting an empty `MAKEFLAGS` variable seems to work without causing problems on other platforms.\n\nIMHO, unsetting MAKE is a bad idea. \n\nIt is quite common for people to specify something like \n\n\n```\nMAKE=/usr/sfw/bin/gmake -j 10\nexport MAKE\n```\n\n\nwith the vague hope of using 'gmake' rather than 'make'. \n\nRather than unsetting, one other possibility is \n\n\n```\nMAKE=\"$MAKE -j1\"\n```\n\n\nif the aim is to stop more than one thread. \n\nOf course, all this relies on people referring to variables and non hard-coded names like 'make'. \n\nI don't know if MAKEFLAGS is portable or not, but for now at least I guess it will do.",
+    "body": "Replying to [comment:3 mpatel]:\n> I'm not sure why `unset MAKE` in `spkg-install` doesn't suppress parallel intra-spkg builds/installs for Singular (#9185), R (#9186), or ECL (#9187) on OS X.  In particular, I don't know whether the source of the problem is in `make`, OS X, or the Sage/spkg `Makefile`s.  But setting an empty `MAKEFLAGS` variable seems to work without causing problems on other platforms.\n\n\nIMHO, unsetting MAKE is a bad idea. \n\nIt is quite common for people to specify something like \n\n```\nMAKE=/usr/sfw/bin/gmake -j 10\nexport MAKE\n```\n\nwith the vague hope of using 'gmake' rather than 'make'. \n\nRather than unsetting, one other possibility is \n\n```\nMAKE=\"$MAKE -j1\"\n```\n\nif the aim is to stop more than one thread. \n\nOf course, all this relies on people referring to variables and non hard-coded names like 'make'. \n\nI don't know if MAKEFLAGS is portable or not, but for now at least I guess it will do.",
     "created_at": "2010-06-12T15:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
@@ -231,26 +228,23 @@ archive/issue_comments_085782.json:
 Replying to [comment:3 mpatel]:
 > I'm not sure why `unset MAKE` in `spkg-install` doesn't suppress parallel intra-spkg builds/installs for Singular (#9185), R (#9186), or ECL (#9187) on OS X.  In particular, I don't know whether the source of the problem is in `make`, OS X, or the Sage/spkg `Makefile`s.  But setting an empty `MAKEFLAGS` variable seems to work without causing problems on other platforms.
 
+
 IMHO, unsetting MAKE is a bad idea. 
 
 It is quite common for people to specify something like 
-
 
 ```
 MAKE=/usr/sfw/bin/gmake -j 10
 export MAKE
 ```
 
-
 with the vague hope of using 'gmake' rather than 'make'. 
 
 Rather than unsetting, one other possibility is 
 
-
 ```
 MAKE="$MAKE -j1"
 ```
-
 
 if the aim is to stop more than one thread. 
 
@@ -265,7 +259,7 @@ I don't know if MAKEFLAGS is portable or not, but for now at least I guess it wi
 archive/issue_comments_085783.json:
 ```json
 {
-    "body": "Two questions:\n\n* Will this impact the speed of building singular? \n* Is the observed problem only on OS X?\n* Do you have any idea why singular has built in parallel for some time without issue, but as soon as the packages are tested in parallel, so a problem arises? \n\n\nI'm just wondering if this might not be better in something like \n\n\n```\nif [ \"x`uname`\" = xDarwin ] ; then \n   MAKEFLAGS=\n   export MAKEFLAGS\nfi \n```\n\nso it only slows down on OS X. If we find there's issues on other platforms (and we soon will I think if there are any), then revisit this. \n\nI think your parallel building is a great idea, but it would be a shame to see the benefits eroded by having to get various packages to build serially, if they built ok in parallel before.\n \n\nAs for Leif's comment about the Solaris changes, I'd just let them die. This package is such a mess, any attempt at reason will lead to insanity. If its building on Solaris with those fixes missing, we might as well leave them missing. \n\n\nDave",
+    "body": "Two questions:\n\n* Will this impact the speed of building singular? \n* Is the observed problem only on OS X?\n* Do you have any idea why singular has built in parallel for some time without issue, but as soon as the packages are tested in parallel, so a problem arises? \n\n\nI'm just wondering if this might not be better in something like \n\n```\nif [ \"x`uname`\" = xDarwin ] ; then \n   MAKEFLAGS=\n   export MAKEFLAGS\nfi \n```\nso it only slows down on OS X. If we find there's issues on other platforms (and we soon will I think if there are any), then revisit this. \n\nI think your parallel building is a great idea, but it would be a shame to see the benefits eroded by having to get various packages to build serially, if they built ok in parallel before.\n \n\nAs for Leif's comment about the Solaris changes, I'd just let them die. This package is such a mess, any attempt at reason will lead to insanity. If its building on Solaris with those fixes missing, we might as well leave them missing. \n\n\nDave",
     "created_at": "2010-06-12T16:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
@@ -283,14 +277,12 @@ Two questions:
 
 I'm just wondering if this might not be better in something like 
 
-
 ```
 if [ "x`uname`" = xDarwin ] ; then 
    MAKEFLAGS=
    export MAKEFLAGS
 fi 
 ```
-
 so it only slows down on OS X. If we find there's issues on other platforms (and we soon will I think if there are any), then revisit this. 
 
 I think your parallel building is a great idea, but it would be a shame to see the benefits eroded by having to get various packages to build serially, if they built ok in parallel before.
@@ -308,7 +300,7 @@ Dave
 archive/issue_comments_085784.json:
 ```json
 {
-    "body": "We already build Singular, ECL, and some other packages (e.g., Maxima and ATLAS) serially.  I'm pretty sure that this ticket and its related tickets (#9186, #9187) don't change that.  In particular, Singular's `spkg-install` already contains\n\n```sh\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\n\nand ECL's `spkg-install` already contains\n\n```sh\n# 'export MAKE='make -j n' where n>1, breaks ECL builds, so unset make\nunset MAKE\n```\n\nR's `spkg-install` already contains\n\n```sh\n#parallel make install is broken\nexport MAKE=make\n```\n\n\nI don't know the details about why we don't build/install these packages in parallel.  Perhaps their upstream build systems (`Makefiles`, etc.) have too many \"serialisms\"?  It would be great if `make -jN` did work for ATLAS, ECL, Maxima, and Singular, since these packages seem to contribute significantly to the overall build time.\n\nIsn't `-j` a non-[POSIX](http://www.opengroup.org/onlinepubs/009695399/utilities/make.html) argument for make?  The MAKEFLAGS change, which is also GNU make-specific, hasn't affected my builds on t2 and sage.math, but we could certainly restrict it to OS X.\n\nMike, do you happen to know how #8306 fares on Cygwin?",
+    "body": "We already build Singular, ECL, and some other packages (e.g., Maxima and ATLAS) serially.  I'm pretty sure that this ticket and its related tickets (#9186, #9187) don't change that.  In particular, Singular's `spkg-install` already contains\n\n```sh\n# since parallel make breaks the singular build\nMAKE=\"make\"\nexport MAKE\n```\nand ECL's `spkg-install` already contains\n\n```sh\n# 'export MAKE='make -j n' where n>1, breaks ECL builds, so unset make\nunset MAKE\n```\nR's `spkg-install` already contains\n\n```sh\n#parallel make install is broken\nexport MAKE=make\n```\n\nI don't know the details about why we don't build/install these packages in parallel.  Perhaps their upstream build systems (`Makefiles`, etc.) have too many \"serialisms\"?  It would be great if `make -jN` did work for ATLAS, ECL, Maxima, and Singular, since these packages seem to contribute significantly to the overall build time.\n\nIsn't `-j` a non-[POSIX](http://www.opengroup.org/onlinepubs/009695399/utilities/make.html) argument for make?  The MAKEFLAGS change, which is also GNU make-specific, hasn't affected my builds on t2 and sage.math, but we could certainly restrict it to OS X.\n\nMike, do you happen to know how #8306 fares on Cygwin?",
     "created_at": "2010-06-13T06:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9185",
     "type": "issue_comment",
@@ -324,21 +316,18 @@ We already build Singular, ECL, and some other packages (e.g., Maxima and ATLAS)
 MAKE="make"
 export MAKE
 ```
-
 and ECL's `spkg-install` already contains
 
 ```sh
 # 'export MAKE='make -j n' where n>1, breaks ECL builds, so unset make
 unset MAKE
 ```
-
 R's `spkg-install` already contains
 
 ```sh
 #parallel make install is broken
 export MAKE=make
 ```
-
 
 I don't know the details about why we don't build/install these packages in parallel.  Perhaps their upstream build systems (`Makefiles`, etc.) have too many "serialisms"?  It would be great if `make -jN` did work for ATLAS, ECL, Maxima, and Singular, since these packages seem to contribute significantly to the overall build time.
 

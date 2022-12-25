@@ -3,7 +3,7 @@
 archive/issues_004996.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nPatch coming up: We need to add \n\n```\n## We want the debug and optimization flags, since debug symbols are so useful, etc.\nenv.Append( CFLAGS=\"-O2 -g -m64\" )\nenv.Append( CXXFLAGS=\"-O2 -g -m64\" )\nenv.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n```\n\nin case we are building in 64 bit mode on OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4996\n\n",
+    "body": "Assignee: mabshoff\n\nPatch coming up: We need to add \n\n```\n## We want the debug and optimization flags, since debug symbols are so useful, etc.\nenv.Append( CFLAGS=\"-O2 -g -m64\" )\nenv.Append( CXXFLAGS=\"-O2 -g -m64\" )\nenv.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n```\nin case we are building in 64 bit mode on OSX.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4996\n\n",
     "created_at": "2009-01-17T15:37:45Z",
     "labels": [
         "component: porting",
@@ -26,7 +26,6 @@ env.Append( CFLAGS="-O2 -g -m64" )
 env.Append( CXXFLAGS="-O2 -g -m64" )
 env.Append( LINKFLAGS="-m64 -single_module -flat_namespace -undefined dynamic_lookup" )
 ```
-
 in case we are building in 64 bit mode on OSX.
 
 Cheers,

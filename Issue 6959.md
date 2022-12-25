@@ -66,7 +66,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057455.json:
 ```json
 {
-    "body": "Looks mainly good to me -- patch applies and tests (in sage/modular/modform) pass.  One glitch:\n\n```\n        if not all_embeddings: \n \t            return A \n \treturn A \n```\n\nlooks like a typo.\n\nIt does not seem very efficient to factor all the n in the range, and that is not the way I have always done this.  The result is pretty slow -- for example, if you wanted to compute all a_n for n<10^6, this is not good enough:\n\n```\nsage: f = CuspForms(11,2).newforms()[0]; f\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\nsage: time an = f.anlist(1000)\nCPU times: user 0.40 s, sys: 0.00 s, total: 0.40 s\nWall time: 0.40 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.84 s, sys: 0.79 s, total: 14.63 s\nWall time: 14.65 s\nsage: time an = f.anlist(100000)\n#(gave up waiting after a few minutes)\n```\n\nOn second thoughts it is probably computing the a_p which is slow here.  But are they even cached?\n\n```\nsage: time an = f.aplist(10000)\nCPU times: user 11.09 s, sys: 0.65 s, total: 11.74 s\nWall time: 11.81 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.71 s, sys: 0.69 s, total: 14.40 s\nWall time: 14.53 s\n```\n\n-- it seems not.",
+    "body": "Looks mainly good to me -- patch applies and tests (in sage/modular/modform) pass.  One glitch:\n\n```\n        if not all_embeddings: \n \t            return A \n \treturn A \n```\nlooks like a typo.\n\nIt does not seem very efficient to factor all the n in the range, and that is not the way I have always done this.  The result is pretty slow -- for example, if you wanted to compute all a_n for n<10^6, this is not good enough:\n\n```\nsage: f = CuspForms(11,2).newforms()[0]; f\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\nsage: time an = f.anlist(1000)\nCPU times: user 0.40 s, sys: 0.00 s, total: 0.40 s\nWall time: 0.40 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.84 s, sys: 0.79 s, total: 14.63 s\nWall time: 14.65 s\nsage: time an = f.anlist(100000)\n#(gave up waiting after a few minutes)\n```\nOn second thoughts it is probably computing the a_p which is slow here.  But are they even cached?\n\n```\nsage: time an = f.aplist(10000)\nCPU times: user 11.09 s, sys: 0.65 s, total: 11.74 s\nWall time: 11.81 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.71 s, sys: 0.69 s, total: 14.40 s\nWall time: 14.53 s\n```\n-- it seems not.",
     "created_at": "2009-10-29T21:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ Looks mainly good to me -- patch applies and tests (in sage/modular/modform) pas
  	            return A 
  	return A 
 ```
-
 looks like a typo.
 
 It does not seem very efficient to factor all the n in the range, and that is not the way I have always done this.  The result is pretty slow -- for example, if you wanted to compute all a_n for n<10^6, this is not good enough:
@@ -99,7 +98,6 @@ Wall time: 14.65 s
 sage: time an = f.anlist(100000)
 #(gave up waiting after a few minutes)
 ```
-
 On second thoughts it is probably computing the a_p which is slow here.  But are they even cached?
 
 ```
@@ -110,7 +108,6 @@ sage: time an = f.anlist(10000)
 CPU times: user 13.71 s, sys: 0.69 s, total: 14.40 s
 Wall time: 14.53 s
 ```
-
 -- it seems not.
 
 

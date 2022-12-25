@@ -3,7 +3,7 @@
 archive/issues_001108.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
+    "body": "Assignee: @williamstein\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
     "created_at": "2007-11-05T23:17:05Z",
     "labels": [
         "component: algebraic geometry",
@@ -26,7 +26,6 @@ sfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and
 10.4). Is this a known problem? I haven't been able to find any ticket  
 about this in the TRAC.
 ```
-
 
 Cheers,
 

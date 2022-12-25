@@ -3,7 +3,7 @@
 archive/issues_001557.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n> Just out of curiosity should \"Use\" be replaced by a different name,\n> or should their be a big \"Back to Worksheet\" button on the page\n> after you upload the file?\n\nI like the idea of replacing \"Use\" with something like \"GUI\" and also\nplacing a \"Back to Worksheet\" button on the page after a file has been\nuploaded.\n```\n\n\nI don't like \"GUI\" since the whole thing is a GUI.  However, \"Worksheet\"\nmight be much better.   \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1557\n\n",
+    "body": "Assignee: boothby\n\n```\n> Just out of curiosity should \"Use\" be replaced by a different name,\n> or should their be a big \"Back to Worksheet\" button on the page\n> after you upload the file?\n\nI like the idea of replacing \"Use\" with something like \"GUI\" and also\nplacing a \"Back to Worksheet\" button on the page after a file has been\nuploaded.\n```\n\nI don't like \"GUI\" since the whole thing is a GUI.  However, \"Worksheet\"\nmight be much better.   \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1557\n\n",
     "created_at": "2007-12-18T03:27:01Z",
     "labels": [
         "component: notebook"
@@ -17,7 +17,6 @@ archive/issues_001557.json:
 ```
 Assignee: boothby
 
-
 ```
 > Just out of curiosity should "Use" be replaced by a different name,
 > or should their be a big "Back to Worksheet" button on the page
@@ -27,7 +26,6 @@ I like the idea of replacing "Use" with something like "GUI" and also
 placing a "Back to Worksheet" button on the page after a file has been
 uploaded.
 ```
-
 
 I don't like "GUI" since the whole thing is a GUI.  However, "Worksheet"
 might be much better.   

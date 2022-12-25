@@ -3,7 +3,7 @@
 archive/issues_009170.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\n\n```\n\nsage -t  \"devel/sage/sage/misc/getusage.py\"                 \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        print \"ignore this\";  top()              # random output###line 30:\n    sage: print \"ignore this\";  top()              # random output\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 57, in top\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n    NotImplementedError: top not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 92:\n    sage: t = get_memory_usage()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        t = get_memory_usage()###line 92:\n    sage: t = get_memory_usage()\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 128, in get_memory_usage\n        raise NotImplementedError(\"memory usage not implemented on platform %s\" % U)\n    NotImplementedError: memory usage not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        get_memory_usage(t)          # amount of memory more than when we defined t.###line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\n    NameError: name 't' is not defined\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9170\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/misc/getusage.py\"                 \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        print \"ignore this\";  top()              # random output###line 30:\n    sage: print \"ignore this\";  top()              # random output\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 57, in top\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n    NotImplementedError: top not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 92:\n    sage: t = get_memory_usage()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        t = get_memory_usage()###line 92:\n    sage: t = get_memory_usage()\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 128, in get_memory_usage\n        raise NotImplementedError(\"memory usage not implemented on platform %s\" % U)\n    NotImplementedError: memory usage not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        get_memory_usage(t)          # amount of memory more than when we defined t.###line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\n    NameError: name 't' is not defined\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9170\n\n",
     "created_at": "2010-06-07T04:34:30Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009170.json:
 Assignee: tbd
 
 CC:  jpflori
-
 
 ```
 
@@ -76,7 +75,6 @@ Exception raised:
 **********************************************************************
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9170
 
 
@@ -88,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9170
 archive/issue_comments_085606.json:
 ```json
 {
-    "body": "Another test failure caused by this:\n\n```\n\nsage -t  \"devel/sage/sage/rings/tests.py\"                   \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/tests.py\", line 229:\n    sage: sage.rings.tests.test_random_elements(trials=2, seed=0)\nExpected:\n```\n",
+    "body": "Another test failure caused by this:\n\n```\n\nsage -t  \"devel/sage/sage/rings/tests.py\"                   \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/tests.py\", line 229:\n    sage: sage.rings.tests.test_random_elements(trials=2, seed=0)\nExpected:\n```",
     "created_at": "2010-06-07T04:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
@@ -110,13 +108,12 @@ Expected:
 
 
 
-
 ---
 
 archive/issue_comments_085607.json:
 ```json
 {
-    "body": "I assume this means that \n\n\n```\nsage: top()\n```\n\n\nwill not work either. I know on Solaris, I called `prstat` rather than `top` as that is a standard part of Solaris, and `top` is not. But I thought on Linux there were some sysem calls in Sage for computing memory usage on Linux. Could it be as simple as changing\n\n\n```\nif [ \"x$UNAME\" = xLinux ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\n\nto \n\n\n```\nif [ \"x$UNAME\" = xLinux ] || [ \"x$UNAME\" = xCYGWIN ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\n\nDave",
+    "body": "I assume this means that \n\n```\nsage: top()\n```\n\nwill not work either. I know on Solaris, I called `prstat` rather than `top` as that is a standard part of Solaris, and `top` is not. But I thought on Linux there were some sysem calls in Sage for computing memory usage on Linux. Could it be as simple as changing\n\n```\nif [ \"x$UNAME\" = xLinux ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\nto \n\n```\nif [ \"x$UNAME\" = xLinux ] || [ \"x$UNAME\" = xCYGWIN ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\nDave",
     "created_at": "2010-08-02T04:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
@@ -127,14 +124,11 @@ archive/issue_comments_085607.json:
 
 I assume this means that 
 
-
 ```
 sage: top()
 ```
 
-
 will not work either. I know on Solaris, I called `prstat` rather than `top` as that is a standard part of Solaris, and `top` is not. But I thought on Linux there were some sysem calls in Sage for computing memory usage on Linux. Could it be as simple as changing
-
 
 ```
 if [ "x$UNAME" = xLinux ] ; then 
@@ -143,9 +137,7 @@ elif [ "x$UNAME" = xSunOS ] ; then
   // call prstat
 ```
 
-
 to 
-
 
 ```
 if [ "x$UNAME" = xLinux ] || [ "x$UNAME" = xCYGWIN ] ; then 
@@ -153,7 +145,6 @@ if [ "x$UNAME" = xLinux ] || [ "x$UNAME" = xCYGWIN ] ; then
 elif [ "x$UNAME" = xSunOS ] ; then 
   // call prstat
 ```
-
 
 Dave
 
@@ -182,7 +173,7 @@ Changing status from new to needs_work.
 archive/issue_comments_085609.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> I assume this means that \n> \n> {{{\n> sage: top()\n> }}}\n> \n> will not work either.\n\nI'm not at home so I can't test on my machine, but \n\n\n```\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\n```\n\n\nlooks like the line that's causing the first error to be throwing. The offending line(s) should be\n\n\n```\n    if U == 'linux':\n        cmd = 'top -b -n 1 -p %s' % pid\n    elif U == 'darwin':\n        cmd = 'top -l 1 |grep \"^ *%s \"' % pid\n    elif U == 'sunos':\n        cmd = '/usr/bin/prstat -n 100000 1 1  | grep \"^ *%s \"' % pid\n    else:\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n```\n\n\nI've double checked, and cygwin *does* ship with a top, so I suspect all that needs to be done is add a few instances along the line of \"or U == 'cygwin'\" and these issue would be resolved.\n\nI'll try to test this over the weekend and have a patch prepared.",
+    "body": "Replying to [comment:2 drkirkby]:\n> I assume this means that \n> \n> \n> ```\n> sage: top()\n> ```\n> \n> will not work either.\n\n\nI'm not at home so I can't test on my machine, but \n\n```\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\n```\n\nlooks like the line that's causing the first error to be throwing. The offending line(s) should be\n\n```\n    if U == 'linux':\n        cmd = 'top -b -n 1 -p %s' % pid\n    elif U == 'darwin':\n        cmd = 'top -l 1 |grep \"^ *%s \"' % pid\n    elif U == 'sunos':\n        cmd = '/usr/bin/prstat -n 100000 1 1  | grep \"^ *%s \"' % pid\n    else:\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n```\n\nI've double checked, and cygwin *does* ship with a top, so I suspect all that needs to be done is add a few instances along the line of \"or U == 'cygwin'\" and these issue would be resolved.\n\nI'll try to test this over the weekend and have a patch prepared.",
     "created_at": "2010-10-27T18:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
@@ -194,23 +185,22 @@ archive/issue_comments_085609.json:
 Replying to [comment:2 drkirkby]:
 > I assume this means that 
 > 
-> {{{
+> 
+> ```
 > sage: top()
-> }}}
+> ```
 > 
 > will not work either.
 
-I'm not at home so I can't test on my machine, but 
 
+I'm not at home so I can't test on my machine, but 
 
 ```
 File "/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py", line 30:
     sage: print "ignore this";  top()              # random output
 ```
 
-
 looks like the line that's causing the first error to be throwing. The offending line(s) should be
-
 
 ```
     if U == 'linux':
@@ -222,7 +212,6 @@ looks like the line that's causing the first error to be throwing. The offending
     else:
         raise NotImplementedError("top not implemented on platform %s" % U)
 ```
-
 
 I've double checked, and cygwin *does* ship with a top, so I suspect all that needs to be done is add a few instances along the line of "or U == 'cygwin'" and these issue would be resolved.
 
@@ -283,7 +272,7 @@ Geoff
 archive/issue_comments_085612.json:
 ```json
 {
-    "body": "Replying to [comment:5 gbe]:\n> Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.\n> \n> The only time top is called on linux is via a top() call. To get the memory usage under linux, the /proc/<pid>/status is inspected. While they don't seem to document how complete it is, cygwin does populate a /proc directory. I'll poke around to see if the cygwin /proc system has what is needed. As far as I can see this the closest Python has to a memory usage call without using external libraries.\n> \n> Geoff\n\nI don't know, but I thought the plan was to make an installer for Cygwin which installed the perquisites, which would include top. So it should not really fail. \n\nAs much as I don't like the idea of using 'top', I think in the short term it is a OK. There are more significant issues causing problems on Cygwin. I would have thought this one of the lower priority ones, but that's just my opinion. \n\nDave",
+    "body": "Replying to [comment:5 gbe]:\n> Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.\n> \n> The only time top is called on linux is via a top() call. To get the memory usage under linux, the /proc/<pid>/status is inspected. While they don't seem to document how complete it is, cygwin does populate a /proc directory. I'll poke around to see if the cygwin /proc system has what is needed. As far as I can see this the closest Python has to a memory usage call without using external libraries.\n> \n> Geoff\n\n\nI don't know, but I thought the plan was to make an installer for Cygwin which installed the perquisites, which would include top. So it should not really fail. \n\nAs much as I don't like the idea of using 'top', I think in the short term it is a OK. There are more significant issues causing problems on Cygwin. I would have thought this one of the lower priority ones, but that's just my opinion. \n\nDave",
     "created_at": "2011-03-07T09:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
@@ -298,6 +287,7 @@ Replying to [comment:5 gbe]:
 > The only time top is called on linux is via a top() call. To get the memory usage under linux, the /proc/<pid>/status is inspected. While they don't seem to document how complete it is, cygwin does populate a /proc directory. I'll poke around to see if the cygwin /proc system has what is needed. As far as I can see this the closest Python has to a memory usage call without using external libraries.
 > 
 > Geoff
+
 
 I don't know, but I thought the plan was to make an installer for Cygwin which installed the perquisites, which would include top. So it should not really fail. 
 

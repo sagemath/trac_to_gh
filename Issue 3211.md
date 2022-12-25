@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3211
 archive/issue_comments_022153.json:
 ```json
 {
-    "body": "\n```\n06:40 < jason-> Running an idea past people: an RREF function for matrices which first converts the matrix to be over the field of fractions of its base ring, then \n                returns the echelon form.\n06:41 < jason-> Thoughts?\n06:41 < jason-> (except, of course, the function would be lower-cased: m.rref() )\n06:43 -!- mhampton [n=hampton@75-163-23-225.dlth.qwest.net] has quit []\n06:56 < wstein> jason- ICK!\n06:56 < wstein> Are you serious?\n06:56 < jason-> wow, I didn't expect such a huge negative reaction\n06:56 < wstein> You are advocating that we have E.echelon_form() with the current behavior, but\n06:57 < wstein> E.rref() with completely different behavior?\n06:57 < jason-> is that really bad?\n06:57 < wstein> Well, yes.\n06:57 < wstein> An abreviation must have exactly the same behavior.\n06:57 < wstein> Also, the current E.echelon_form() *is* reduced row echelon form.\n06:58 < mabshoff> well, #3211 ought to be changed/invalidated then\n06:58 < wstein> Yep, I don't like it.\n06:58 < jason-> the current echelon_form function was really confusing for some people that are senior people in linear algebra....\n06:58 < wstein> People will expect rref = echelon_form.\n06:58 < jason-> and undergrad students in linear algebra\n06:58 < jason-> because the default ring is ZZ\n06:58 < wstein> True.\n06:58 < jason-> so matrix(3, range(9))\n06:59 < jason-> gives a *much* different rref than any other software or calculator out there.\n06:59 < wstein> Not true.\n06:59 < wstein> It gives exactly the same answer as the *only* other program out there that has a notion of \"matrix over ZZ\".\n06:59 < wstein> Namely Magma.\n07:00 < jason-> okay, except magma?\n07:00 < jason-> sure.\n07:00 < jason-> most of these people don't know about magma/can't afford to run magma, etc.\n07:00 < jason-> (especially the undergrad students)\n07:00 < jason-> is there a way we could have a function that returns the echelon_form over the fraction field?\n07:00 < wstein> One option is that the implicit choice of base ring for  matrix(...) would be QQ instead of ZZ.\n07:00 < jason-> That would be really nice.\n07:00 < jason-> I was afraid of suggesting that, though\n07:01 < jason-> for fear that too much stuff would break\n07:01 < wstein> But if one explicitly writes matrix(ZZ,...) then it's over ZZ.\n07:01 < jason-> I would support the implicit choice being over QQ\n07:01 < wstein> I think most anything where the ZZ really matters is explicit.\n07:01 < jason-> Do you want me to make that change, then?\n07:01 < wstein> Can you suggest it on sage-devel?\n07:01 < jason-> That way, if someone *knows* what they want, they can explicitly say over ZZ\n07:01 < wstein> Yep.\n07:02 < wstein> Could you suggest it on sage-devel.\n07:02 < jason-> otherwise it's more what people generally expect\n07:02 < jason-> yes.\n07:02 < wstein> I don't make changes like this (or like your #3211) by dictatorship.\n07:02 < jason-> and I'll hold off on the dubious rref function\n```\n",
+    "body": "```\n06:40 < jason-> Running an idea past people: an RREF function for matrices which first converts the matrix to be over the field of fractions of its base ring, then \n                returns the echelon form.\n06:41 < jason-> Thoughts?\n06:41 < jason-> (except, of course, the function would be lower-cased: m.rref() )\n06:43 -!- mhampton [n=hampton@75-163-23-225.dlth.qwest.net] has quit []\n06:56 < wstein> jason- ICK!\n06:56 < wstein> Are you serious?\n06:56 < jason-> wow, I didn't expect such a huge negative reaction\n06:56 < wstein> You are advocating that we have E.echelon_form() with the current behavior, but\n06:57 < wstein> E.rref() with completely different behavior?\n06:57 < jason-> is that really bad?\n06:57 < wstein> Well, yes.\n06:57 < wstein> An abreviation must have exactly the same behavior.\n06:57 < wstein> Also, the current E.echelon_form() *is* reduced row echelon form.\n06:58 < mabshoff> well, #3211 ought to be changed/invalidated then\n06:58 < wstein> Yep, I don't like it.\n06:58 < jason-> the current echelon_form function was really confusing for some people that are senior people in linear algebra....\n06:58 < wstein> People will expect rref = echelon_form.\n06:58 < jason-> and undergrad students in linear algebra\n06:58 < jason-> because the default ring is ZZ\n06:58 < wstein> True.\n06:58 < jason-> so matrix(3, range(9))\n06:59 < jason-> gives a *much* different rref than any other software or calculator out there.\n06:59 < wstein> Not true.\n06:59 < wstein> It gives exactly the same answer as the *only* other program out there that has a notion of \"matrix over ZZ\".\n06:59 < wstein> Namely Magma.\n07:00 < jason-> okay, except magma?\n07:00 < jason-> sure.\n07:00 < jason-> most of these people don't know about magma/can't afford to run magma, etc.\n07:00 < jason-> (especially the undergrad students)\n07:00 < jason-> is there a way we could have a function that returns the echelon_form over the fraction field?\n07:00 < wstein> One option is that the implicit choice of base ring for  matrix(...) would be QQ instead of ZZ.\n07:00 < jason-> That would be really nice.\n07:00 < jason-> I was afraid of suggesting that, though\n07:01 < jason-> for fear that too much stuff would break\n07:01 < wstein> But if one explicitly writes matrix(ZZ,...) then it's over ZZ.\n07:01 < jason-> I would support the implicit choice being over QQ\n07:01 < wstein> I think most anything where the ZZ really matters is explicit.\n07:01 < jason-> Do you want me to make that change, then?\n07:01 < wstein> Can you suggest it on sage-devel?\n07:01 < jason-> That way, if someone *knows* what they want, they can explicitly say over ZZ\n07:01 < wstein> Yep.\n07:02 < wstein> Could you suggest it on sage-devel.\n07:02 < jason-> otherwise it's more what people generally expect\n07:02 < jason-> yes.\n07:02 < wstein> I don't make changes like this (or like your #3211) by dictatorship.\n07:02 < jason-> and I'll hold off on the dubious rref function\n```",
     "created_at": "2008-05-15T14:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_022153.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 06:40 < jason-> Running an idea past people: an RREF function for matrices which first converts the matrix to be over the field of fractions of its base ring, then 
@@ -96,13 +95,12 @@ archive/issue_comments_022153.json:
 
 
 
-
 ---
 
 archive/issue_comments_022154.json:
 ```json
 {
-    "body": "\n```\n07:03 < wstein> If you do implicit QQ instead of ZZ you *have* to do implicit QQ(x) instead of QQ[x], by the way.\n07:03 < wstein> I.e., if Frac(R) is defined, it has to be used.\n07:03 < wstein> Otherwise matrix(...) will be to weird.\n```\n",
+    "body": "```\n07:03 < wstein> If you do implicit QQ instead of ZZ you *have* to do implicit QQ(x) instead of QQ[x], by the way.\n07:03 < wstein> I.e., if Frac(R) is defined, it has to be used.\n07:03 < wstein> Otherwise matrix(...) will be to weird.\n```",
     "created_at": "2008-05-15T14:03:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -111,13 +109,11 @@ archive/issue_comments_022154.json:
 }
 ```
 
-
 ```
 07:03 < wstein> If you do implicit QQ instead of ZZ you *have* to do implicit QQ(x) instead of QQ[x], by the way.
 07:03 < wstein> I.e., if Frac(R) is defined, it has to be used.
 07:03 < wstein> Otherwise matrix(...) will be to weird.
 ```
-
 
 
 
@@ -144,7 +140,7 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/6ca33dd59ef09
 archive/issue_comments_022156.json:
 ```json
 {
-    "body": "The conclusion from the thread from William was:\n\n\n```\nI think based on this whole discussion:\n\n(1) matrix(3, range(9)) returning a matrix over QQ is *definitely* out.\nIf there is a trac ticket it should be marked invalid.\n\n(2) The echelon_form command should be changed to always return\na result over the fraction field, thus making a break with Magma.\n\n(3) Rewrite all the rest of code in Sage that depends on the current\nbehavior of echelon_form.  This code will have to call hermite_form\ninstead.  E.g., code in modules/free_module.py will have to change.\nCode in a.kernel() will have to change, etc.\n\nDoing (1), (2) is almost trivial.  Do (3) will be a little more difficult, and\ncould introduce bugs.\n\nI'm very much against\n   a.echelon_form(...)\nbeing over ZZ or QQ depending on arguments to echelon_form.\nIf for no other reason than even if one does that then it will\nstill be necessary to do all of (3) above.\n\nI've cc'd David Kohel on this email, since he is 100% responsible\nfor the current state of affairs regarding echelon form, and I want\nto give him a chance to speak up before we do (1)-(3) above.\n```\n",
+    "body": "The conclusion from the thread from William was:\n\n```\nI think based on this whole discussion:\n\n(1) matrix(3, range(9)) returning a matrix over QQ is *definitely* out.\nIf there is a trac ticket it should be marked invalid.\n\n(2) The echelon_form command should be changed to always return\na result over the fraction field, thus making a break with Magma.\n\n(3) Rewrite all the rest of code in Sage that depends on the current\nbehavior of echelon_form.  This code will have to call hermite_form\ninstead.  E.g., code in modules/free_module.py will have to change.\nCode in a.kernel() will have to change, etc.\n\nDoing (1), (2) is almost trivial.  Do (3) will be a little more difficult, and\ncould introduce bugs.\n\nI'm very much against\n   a.echelon_form(...)\nbeing over ZZ or QQ depending on arguments to echelon_form.\nIf for no other reason than even if one does that then it will\nstill be necessary to do all of (3) above.\n\nI've cc'd David Kohel on this email, since he is 100% responsible\nfor the current state of affairs regarding echelon form, and I want\nto give him a chance to speak up before we do (1)-(3) above.\n```",
     "created_at": "2008-05-21T15:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3211",
     "type": "issue_comment",
@@ -154,7 +150,6 @@ archive/issue_comments_022156.json:
 ```
 
 The conclusion from the thread from William was:
-
 
 ```
 I think based on this whole discussion:
@@ -183,7 +178,6 @@ I've cc'd David Kohel on this email, since he is 100% responsible
 for the current state of affairs regarding echelon form, and I want
 to give him a chance to speak up before we do (1)-(3) above.
 ```
-
 
 
 

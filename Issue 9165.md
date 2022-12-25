@@ -3,7 +3,7 @@
 archive/issues_009165.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nlcalc works fine for the zeta function on cygwin, evidently:\n\n\n```\nsage: time lcalc.zeros(4)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.19 s\n[14.1347251, 21.0220396, 25.0108576, 30.4248761]\n```\n\n\nHowever, it doesn't work for computing with elliptic curves:\n\n\n```\nsage -t  \"devel/sage/sage/lfunctions/lcalc.py\"              \n  ***   not enough memory\n  ***   not enough memory\n  ***   not enough memory\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 120:\n    sage: lcalc.zeros(3, EllipticCurve('37a'))     # long\nExpected:\n    [0.000000000, 5.00317001, 6.87039122]\nGot:\n    []\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 229:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    [(0, 0.209951303),\n     (0.500000000, -...e-16),\n     (1.00000000, 0.133768433),\n     (1.50000000, 0.360092864),\n     (2.00000000, 0.552975867)]\nGot:\n    lcalc:  \n    []\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 374:\n    sage: lcalc.analytic_rank(E)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[3]>\", line 1, in <module>\n        lcalc.analytic_rank(E)###line 374:\n    sage: lcalc.analytic_rank(E)\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 381, in analytic_rank\n        return Z(s[i+6:])\n      File \"integer.pyx\", line 614, in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6388)\n    TypeError: unable to convert x (=) to an integer\n**********************************************************************\n3 items had failures:\n   1 of   5 in __main__.example_2\n   1 of   6 in __main__.example_5\n   1 of   4 in __main__.example_8\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_lcalc.py\n\t [17.7 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9165\n\n",
+    "body": "Assignee: tbd\n\nlcalc works fine for the zeta function on cygwin, evidently:\n\n```\nsage: time lcalc.zeros(4)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.19 s\n[14.1347251, 21.0220396, 25.0108576, 30.4248761]\n```\n\nHowever, it doesn't work for computing with elliptic curves:\n\n```\nsage -t  \"devel/sage/sage/lfunctions/lcalc.py\"              \n  ***   not enough memory\n  ***   not enough memory\n  ***   not enough memory\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 120:\n    sage: lcalc.zeros(3, EllipticCurve('37a'))     # long\nExpected:\n    [0.000000000, 5.00317001, 6.87039122]\nGot:\n    []\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 229:\n    sage: E.lseries().values_along_line(0.5, 3, 5)\nExpected:\n    [(0, 0.209951303),\n     (0.500000000, -...e-16),\n     (1.00000000, 0.133768433),\n     (1.50000000, 0.360092864),\n     (2.00000000, 0.552975867)]\nGot:\n    lcalc:  \n    []\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/lcalc.py\", line 374:\n    sage: lcalc.analytic_rank(E)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[3]>\", line 1, in <module>\n        lcalc.analytic_rank(E)###line 374:\n    sage: lcalc.analytic_rank(E)\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 381, in analytic_rank\n        return Z(s[i+6:])\n      File \"integer.pyx\", line 614, in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6388)\n    TypeError: unable to convert x (=) to an integer\n**********************************************************************\n3 items had failures:\n   1 of   5 in __main__.example_2\n   1 of   6 in __main__.example_5\n   1 of   4 in __main__.example_8\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_lcalc.py\n\t [17.7 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9165\n\n",
     "created_at": "2010-06-07T04:05:45Z",
     "labels": [
         "component: porting: cygwin",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 lcalc works fine for the zeta function on cygwin, evidently:
 
-
 ```
 sage: time lcalc.zeros(4)
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
@@ -28,9 +27,7 @@ Wall time: 0.19 s
 [14.1347251, 21.0220396, 25.0108576, 30.4248761]
 ```
 
-
 However, it doesn't work for computing with elliptic curves:
-
 
 ```
 sage -t  "devel/sage/sage/lfunctions/lcalc.py"              
@@ -84,7 +81,6 @@ For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_lcalc.py
 	 [17.7 s]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9165
 
 
@@ -96,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9165
 archive/issue_comments_085430.json:
 ```json
 {
-    "body": "Another test failure resulting from lcalc not working:\n\n```\n\nsage -t  \"devel/sage/sage/plot/line.py\"                     \n  ***   not enough memory\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/plot/line.py\", line 375:\n    sage: vals = E.lseries().values_along_line(1-I, 1+10*I, 100) # critical line\nExpected nothing\nGot:\n    lcalc:  \n**********************************************************************\n1 items had failures:\n```\n",
+    "body": "Another test failure resulting from lcalc not working:\n\n```\n\nsage -t  \"devel/sage/sage/plot/line.py\"                     \n  ***   not enough memory\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/plot/line.py\", line 375:\n    sage: vals = E.lseries().values_along_line(1-I, 1+10*I, 100) # critical line\nExpected nothing\nGot:\n    lcalc:  \n**********************************************************************\n1 items had failures:\n```",
     "created_at": "2010-06-07T04:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
@@ -120,7 +116,6 @@ Got:
 **********************************************************************
 1 items had failures:
 ```
-
 
 
 

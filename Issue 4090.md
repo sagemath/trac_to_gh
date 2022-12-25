@@ -3,7 +3,7 @@
 archive/issues_004090.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  polybori\n\nGeorg S. Weber reported that polybori-0.5.rc1.p4 fails to build with\n\n```\n/usr/bin/libtool: unknown option character `d' in: -dylib_install_name \nUsage: /usr/bin/libtool -static [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-sacLT] \nUsage: /usr/bin/libtool -dynamic [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] \n[-compatibility_version #] [-current_version #] [-seg1addr 0x#] [- \nsegs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table \n<filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] \n[-noall_load] \nscons: *** [polybori/libpolybori-0.5.0.dylib.0.0.0] Error 1 \nscons: building terminated because of errors. \nError building PolyBoRi. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4090\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  polybori\n\nGeorg S. Weber reported that polybori-0.5.rc1.p4 fails to build with\n\n```\n/usr/bin/libtool: unknown option character `d' in: -dylib_install_name \nUsage: /usr/bin/libtool -static [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-sacLT] \nUsage: /usr/bin/libtool -dynamic [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] \n[-compatibility_version #] [-current_version #] [-seg1addr 0x#] [- \nsegs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table \n<filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] \n[-noall_load] \nscons: *** [polybori/libpolybori-0.5.0.dylib.0.0.0] Error 1 \nscons: building terminated because of errors. \nError building PolyBoRi. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4090\n\n",
     "created_at": "2008-09-09T18:39:40Z",
     "labels": [
         "component: build",
@@ -37,7 +37,6 @@ scons: *** [polybori/libpolybori-0.5.0.dylib.0.0.0] Error 1
 scons: building terminated because of errors. 
 Error building PolyBoRi. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4090
 
@@ -179,7 +178,7 @@ Michael
 archive/issue_comments_029447.json:
 ```json
 {
-    "body": "> Builds fine on OSX 10.4 and 10.5.\n> \n> Cheers,\n> \n> Michael\n\nI am trusting mabshoff on this-- the package looks good.",
+    "body": "> Builds fine on OSX 10.4 and 10.5.\n> \n> Cheers,\n> \n> Michael\n\n\nI am trusting mabshoff on this-- the package looks good.",
     "created_at": "2008-09-10T03:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
@@ -193,6 +192,7 @@ archive/issue_comments_029447.json:
 > Cheers,
 > 
 > Michael
+
 
 I am trusting mabshoff on this-- the package looks good.
 

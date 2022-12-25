@@ -101,7 +101,7 @@ Great doctests, good comments, looks good to me.  I say apply.
 archive/issue_comments_010889.json:
 ```json
 {
-    "body": "Against my 2.10.2.alpha0 I get a reject:\n\n```\npatch -p1 --dry-run < trac_1722.patch\npatching file sage/matrix/matrix_symbolic_dense.pxd\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 succeeded at 15 with fuzz 2 (offset 9 lines).\nHunk #2 succeeded at 48 with fuzz 2 (offset 8 lines).\nHunk #3 succeeded at 536 (offset 248 lines).\nHunk #4 FAILED at 617.\nHunk #5 FAILED at 681.\n2 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\n\nThe patch should be rebased against 2.10.2.alpha0 once it is out.\n\nCheers,\n\nMichael",
+    "body": "Against my 2.10.2.alpha0 I get a reject:\n\n```\npatch -p1 --dry-run < trac_1722.patch\npatching file sage/matrix/matrix_symbolic_dense.pxd\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 succeeded at 15 with fuzz 2 (offset 9 lines).\nHunk #2 succeeded at 48 with fuzz 2 (offset 8 lines).\nHunk #3 succeeded at 536 (offset 248 lines).\nHunk #4 FAILED at 617.\nHunk #5 FAILED at 681.\n2 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\nThe patch should be rebased against 2.10.2.alpha0 once it is out.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-15T05:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
@@ -123,7 +123,6 @@ Hunk #4 FAILED at 617.
 Hunk #5 FAILED at 681.
 2 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej
 ```
-
 The patch should be rebased against 2.10.2.alpha0 once it is out.
 
 Cheers,

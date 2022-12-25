@@ -75,7 +75,7 @@ Rob
 archive/issue_comments_082048.json:
 ```json
 {
-    "body": "Replying to [comment:1 rbeezer]:\n> I'll post here when full tests pass.\n\nThis passed all tests on my machine, so I think it is ready for a review.\n\nRob",
+    "body": "Replying to [comment:1 rbeezer]:\n> I'll post here when full tests pass.\n\n\nThis passed all tests on my machine, so I think it is ready for a review.\n\nRob",
     "created_at": "2010-05-08T03:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
@@ -86,6 +86,7 @@ archive/issue_comments_082048.json:
 
 Replying to [comment:1 rbeezer]:
 > I'll post here when full tests pass.
+
 
 This passed all tests on my machine, so I think it is ready for a review.
 

@@ -3,7 +3,7 @@
 archive/issues_004437.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn an x86:\n\n```\nsage -t  devel/sage/sage/graphs/graph.py                    **********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/graph.py\", line 5802:\n    sage: P.spectrum(laplacian=True)\nExpected:\n    [...e-16, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\nGot:\n    [4.89153937105e-17, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4437\n\n",
+    "body": "Assignee: mabshoff\n\nOn an x86:\n\n```\nsage -t  devel/sage/sage/graphs/graph.py                    **********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/graph.py\", line 5802:\n    sage: P.spectrum(laplacian=True)\nExpected:\n    [...e-16, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\nGot:\n    [4.89153937105e-17, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4437\n\n",
     "created_at": "2008-11-04T13:53:58Z",
     "labels": [
         "component: doctest coverage",
@@ -30,7 +30,6 @@ Got:
     [4.89153937105e-17, 2.0, 2.0, 2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0]
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4437
 

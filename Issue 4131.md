@@ -89,7 +89,7 @@ Oops. :-)
 archive/issue_comments_029897.json:
 ```json
 {
-    "body": "I'm confused:\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc4, Release Date: 2008-09-15                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: hg_sage.apply(\"/home/wdj/sagefiles/trac_4131.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg import   \"/home/wdj/sagefiles/trac_4131.patch\"\napplying /home/wdj/sagefiles/trac_4131.patch\nunable to find 'sage-clone' for patching\n1 out of 1 hunk FAILED -- saving rejects to file sage-clone.rej\nabort: patch failed to apply\nsage:                                                \n```\n\n\nI see sage-clone in /home/wdj/sagefiles/sage-3.1.2.rc4/local/bin,\nso what the heck is going on?",
+    "body": "I'm confused:\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc4, Release Date: 2008-09-15                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: hg_sage.apply(\"/home/wdj/sagefiles/trac_4131.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc4/devel/sage\" && hg import   \"/home/wdj/sagefiles/trac_4131.patch\"\napplying /home/wdj/sagefiles/trac_4131.patch\nunable to find 'sage-clone' for patching\n1 out of 1 hunk FAILED -- saving rejects to file sage-clone.rej\nabort: patch failed to apply\nsage:                                                \n```\n\nI see sage-clone in /home/wdj/sagefiles/sage-3.1.2.rc4/local/bin,\nso what the heck is going on?",
     "created_at": "2008-09-16T01:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4131",
     "type": "issue_comment",
@@ -99,7 +99,6 @@ archive/issue_comments_029897.json:
 ```
 
 I'm confused:
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage
@@ -117,7 +116,6 @@ unable to find 'sage-clone' for patching
 abort: patch failed to apply
 sage:                                                
 ```
-
 
 I see sage-clone in /home/wdj/sagefiles/sage-3.1.2.rc4/local/bin,
 so what the heck is going on?

@@ -3,7 +3,7 @@
 archive/issues_009362.json:
 ```json
 {
-    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  brunellus\n\nThe following indicates to me a huge problem:\n\n\n```\nsage: G = Graph()\nsage: G.add_edge(None, 1)\nsage: G.show()\n```\n\n\nthe resulting plot has three vertices, one blank, one labeled \"1\" and the other labeled \"None\".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.\n\nThis indicates to me that we should not accept \"None\" as a valid vertex label.\n\nOther places where a vertex labeled None will obviously cause problems:\n\n`spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`\n\nthis is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9362\n\n",
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  brunellus\n\nThe following indicates to me a huge problem:\n\n```\nsage: G = Graph()\nsage: G.add_edge(None, 1)\nsage: G.show()\n```\n\nthe resulting plot has three vertices, one blank, one labeled \"1\" and the other labeled \"None\".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.\n\nThis indicates to me that we should not accept \"None\" as a valid vertex label.\n\nOther places where a vertex labeled None will obviously cause problems:\n\n`spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`\n\nthis is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9362\n\n",
     "created_at": "2010-06-28T19:27:02Z",
     "labels": [
         "component: graph theory",
@@ -22,13 +22,11 @@ CC:  brunellus
 
 The following indicates to me a huge problem:
 
-
 ```
 sage: G = Graph()
 sage: G.add_edge(None, 1)
 sage: G.show()
 ```
-
 
 the resulting plot has three vertices, one blank, one labeled "1" and the other labeled "None".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.
 
@@ -69,7 +67,7 @@ It definitely makes sense to forbid None as a vertex label.  add_vertex(), which
 archive/issue_comments_088772.json:
 ```json
 {
-    "body": "I am not sure whether this patch catches every possible way a None-labeled vertex can sneak in, but I tried to go through the code and repair such cases.\n\nPlease, apply first the patch from #11739 before testing.\n\nDuring testing I noticed that\n\n\n```\nsage: G=Graph(); G.add_edge(None, 4); G.vertices()\n[0, 4]\nsage: G=Graph(); G.add_edge(5, None)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/root/Sage/sageNoneVertex/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in add_edge(self, u, v, label)\n   7556                     u, v, label = u\n   7557                 except:\n-> 7558                     u, v = u\n   7559                     label = None\n   7560         else:\n\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\n\nThat is unpleasant asymmetry, don't you think? So I modified the code a little and now it works as expected.\n\n\n```\nsage: G=Graph(); G.add_edge(5, None); G.vertices()\n[0, 5]\n```\n",
+    "body": "I am not sure whether this patch catches every possible way a None-labeled vertex can sneak in, but I tried to go through the code and repair such cases.\n\nPlease, apply first the patch from #11739 before testing.\n\nDuring testing I noticed that\n\n```\nsage: G=Graph(); G.add_edge(None, 4); G.vertices()\n[0, 4]\nsage: G=Graph(); G.add_edge(5, None)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/root/Sage/sageNoneVertex/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in add_edge(self, u, v, label)\n   7556                     u, v, label = u\n   7557                 except:\n-> 7558                     u, v = u\n   7559                     label = None\n   7560         else:\n\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\nThat is unpleasant asymmetry, don't you think? So I modified the code a little and now it works as expected.\n\n```\nsage: G=Graph(); G.add_edge(5, None); G.vertices()\n[0, 5]\n```",
     "created_at": "2011-12-31T01:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ I am not sure whether this patch catches every possible way a None-labeled verte
 Please, apply first the patch from #11739 before testing.
 
 During testing I noticed that
-
 
 ```
 sage: G=Graph(); G.add_edge(None, 4); G.vertices()
@@ -104,15 +101,12 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'sage.rings.integer.Integer' object is not iterable
 ```
 
-
 That is unpleasant asymmetry, don't you think? So I modified the code a little and now it works as expected.
-
 
 ```
 sage: G=Graph(); G.add_edge(5, None); G.vertices()
 [0, 5]
 ```
-
 
 
 
@@ -216,7 +210,7 @@ Changing keywords from "" to "sd35.5".
 archive/issue_comments_088778.json:
 ```json
 {
-    "body": "Replying to [comment:5 zimmerma]:\n> I thought from the summary that using None would be forbidden and would raise an exception, but\n> comment [comment:4] seems to still use None as a vertex. Is that wanted?\n\nSorry that I didn't discuss this. What do you think? Using None as a special value for \"create a new vertex\" is consistent with add_vertex (that is especially nice in merge_vertices -- maybe that function should return a new vertex name in the [None, ...] case?), but it can make some errors harder to find. I don't have a strong opinion.",
+    "body": "Replying to [comment:5 zimmerma]:\n> I thought from the summary that using None would be forbidden and would raise an exception, but\n> comment [comment:4] seems to still use None as a vertex. Is that wanted?\n\n\nSorry that I didn't discuss this. What do you think? Using None as a special value for \"create a new vertex\" is consistent with add_vertex (that is especially nice in merge_vertices -- maybe that function should return a new vertex name in the [None, ...] case?), but it can make some errors harder to find. I don't have a strong opinion.",
     "created_at": "2012-01-10T14:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -229,6 +223,7 @@ Replying to [comment:5 zimmerma]:
 > I thought from the summary that using None would be forbidden and would raise an exception, but
 > comment [comment:4] seems to still use None as a vertex. Is that wanted?
 
+
 Sorry that I didn't discuss this. What do you think? Using None as a special value for "create a new vertex" is consistent with add_vertex (that is especially nice in merge_vertices -- maybe that function should return a new vertex name in the [None, ...] case?), but it can make some errors harder to find. I don't have a strong opinion.
 
 
@@ -238,7 +233,7 @@ Sorry that I didn't discuss this. What do you think? Using None as a special val
 archive/issue_comments_088779.json:
 ```json
 {
-    "body": "BTW: I'm not sure how slow is exception handling in Python, but isn't it little unfortunate that this is used so extensively in the add_edge function? Every call add_edge((u, v)) raises an exception that is immediately caught.\n\n\n```\nsage: G=Graph(multiedge=True)\nsage: timeit(\"G.add_edge(1, 2)\")\n625 loops, best of 3: 8.21 \u00b5s per loop\nsage: timeit(\"G.add_edge((1, 2))\")\n625 loops, best of 3: 12.2 \u00b5s per loop\n```\n",
+    "body": "BTW: I'm not sure how slow is exception handling in Python, but isn't it little unfortunate that this is used so extensively in the add_edge function? Every call add_edge((u, v)) raises an exception that is immediately caught.\n\n```\nsage: G=Graph(multiedge=True)\nsage: timeit(\"G.add_edge(1, 2)\")\n625 loops, best of 3: 8.21 \u00b5s per loop\nsage: timeit(\"G.add_edge((1, 2))\")\n625 loops, best of 3: 12.2 \u00b5s per loop\n```",
     "created_at": "2012-01-10T14:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -249,7 +244,6 @@ archive/issue_comments_088779.json:
 
 BTW: I'm not sure how slow is exception handling in Python, but isn't it little unfortunate that this is used so extensively in the add_edge function? Every call add_edge((u, v)) raises an exception that is immediately caught.
 
-
 ```
 sage: G=Graph(multiedge=True)
 sage: timeit("G.add_edge(1, 2)")
@@ -257,7 +251,6 @@ sage: timeit("G.add_edge(1, 2)")
 sage: timeit("G.add_edge((1, 2))")
 625 loops, best of 3: 12.2 µs per loop
 ```
-
 
 
 
@@ -432,7 +425,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088788.json:
 ```json
 {
-    "body": "(I just removed this part:\n\n\n```\n- self._nxg.add_nodes_from(vertices) \n+ for v in vertices: \n+     self.add_vertex(v) \n```\n\n\n. #11739 takes care what happens there.)",
+    "body": "(I just removed this part:\n\n```\n- self._nxg.add_nodes_from(vertices) \n+ for v in vertices: \n+     self.add_vertex(v) \n```\n\n. #11739 takes care what happens there.)",
     "created_at": "2012-01-31T14:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9362",
     "type": "issue_comment",
@@ -443,13 +436,11 @@ archive/issue_comments_088788.json:
 
 (I just removed this part:
 
-
 ```
 - self._nxg.add_nodes_from(vertices) 
 + for v in vertices: 
 +     self.add_vertex(v) 
 ```
-
 
 . #11739 takes care what happens there.)
 

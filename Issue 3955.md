@@ -3,7 +3,7 @@
 archive/issues_003955.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n\n\nOn Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear William,\n>\n> On Aug 25, 6:48 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>\n>> If you call _fast_float_ as illustrated below on your functions, find_* will\n>> work, and also be much much faster:\n>>\n>> sage: find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-7.7037197775489434e-34, -2.77555756156e-17)\n>> sage: find_minimum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-0.99999992595132459, -0.999999962976)\n>>\n>> find_* doesn't do this already since (1) _fast_float_ was written\n>> after find_*, and (2) nobody has had the time to change find_*\n>> to use _fast_float_.\n>\n> That's amazing, thank you! I didn't find any information about the\n> _fast_float_. Can it be used for other purposes, too?\n\nYes.  It takes any polynomial or symbolic expression and turns\nit into a very fast callable function that has input and output floats.\nIt should get used automatically by functions like find_min* but\nwe haven't pushed this through enough yet. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3955\n\n",
+    "body": "Assignee: tbd\n\n```\n\n\nOn Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear William,\n>\n> On Aug 25, 6:48 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>\n>> If you call _fast_float_ as illustrated below on your functions, find_* will\n>> work, and also be much much faster:\n>>\n>> sage: find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-7.7037197775489434e-34, -2.77555756156e-17)\n>> sage: find_minimum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-0.99999992595132459, -0.999999962976)\n>>\n>> find_* doesn't do this already since (1) _fast_float_ was written\n>> after find_*, and (2) nobody has had the time to change find_*\n>> to use _fast_float_.\n>\n> That's amazing, thank you! I didn't find any information about the\n> _fast_float_. Can it be used for other purposes, too?\n\nYes.  It takes any polynomial or symbolic expression and turns\nit into a very fast callable function that has input and output floats.\nIt should get used automatically by functions like find_min* but\nwe haven't pushed this through enough yet. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3955\n\n",
     "created_at": "2008-08-26T09:12:29Z",
     "labels": [
         "component: algebra"
@@ -16,7 +16,6 @@ archive/issues_003955.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 
@@ -47,7 +46,6 @@ it into a very fast callable function that has input and output floats.
 It should get used automatically by functions like find_min* but
 we haven't pushed this through enough yet. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3955
 
@@ -96,7 +94,7 @@ Changing assignee from tbd to @burcin.
 archive/issue_comments_028332.json:
 ```json
 {
-    "body": "fast_float doesn't look like a win here in 3.1.2.alpha2, at least not in the cases I tried\n\n\n```\nsage: timeit('find_minimum_on_interval(x*sin(x)^2,3,3.4)')\n25 loops, best of 3: 24.5 ms per loop\nsage: sage: timeit('find_minimum_on_interval((x*sin(x)^2)._fast_float_(x),3,3.4)')\n5 loops, best of 3: 109 ms per loop\n\n# not sure what goes wrong here\nsage: find_maximum_on_interval(-x^2,-1,1)\nTraceback (most recent call last):\n...\nTypeError: cannot coerce type '<class 'sage.calculus.equations.SymbolicEquation'>' into a SymbolicExpression.\n\nsage: timeit('(-x^2).find_maximum_on_interval(-1,1)')\n5 loops, best of 3: 22.4 ms per loop\nsage: timeit('find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)')\n5 loops, best of 3: 61.5 ms per loop\n```\n",
+    "body": "fast_float doesn't look like a win here in 3.1.2.alpha2, at least not in the cases I tried\n\n```\nsage: timeit('find_minimum_on_interval(x*sin(x)^2,3,3.4)')\n25 loops, best of 3: 24.5 ms per loop\nsage: sage: timeit('find_minimum_on_interval((x*sin(x)^2)._fast_float_(x),3,3.4)')\n5 loops, best of 3: 109 ms per loop\n\n# not sure what goes wrong here\nsage: find_maximum_on_interval(-x^2,-1,1)\nTraceback (most recent call last):\n...\nTypeError: cannot coerce type '<class 'sage.calculus.equations.SymbolicEquation'>' into a SymbolicExpression.\n\nsage: timeit('(-x^2).find_maximum_on_interval(-1,1)')\n5 loops, best of 3: 22.4 ms per loop\nsage: timeit('find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)')\n5 loops, best of 3: 61.5 ms per loop\n```",
     "created_at": "2008-09-02T02:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
@@ -106,7 +104,6 @@ archive/issue_comments_028332.json:
 ```
 
 fast_float doesn't look like a win here in 3.1.2.alpha2, at least not in the cases I tried
-
 
 ```
 sage: timeit('find_minimum_on_interval(x*sin(x)^2,3,3.4)')
@@ -128,13 +125,12 @@ sage: timeit('find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)')
 
 
 
-
 ---
 
 archive/issue_comments_028333.json:
 ```json
 {
-    "body": "I guess what is going on is that the time to compile the function to fast_float form swamps the time to find the minimum, at least in these cases.\n\n\n```\nsage: timeit('f = (-x^2)._fast_float_()')\n5 loops, best of 3: 82.6 ms per loop\nsage: timeit('find_maximum_on_interval(f,-1,1)')\n625 loops, best of 3: 690 \u00b5s per loop\n```\n",
+    "body": "I guess what is going on is that the time to compile the function to fast_float form swamps the time to find the minimum, at least in these cases.\n\n```\nsage: timeit('f = (-x^2)._fast_float_()')\n5 loops, best of 3: 82.6 ms per loop\nsage: timeit('find_maximum_on_interval(f,-1,1)')\n625 loops, best of 3: 690 \u00b5s per loop\n```",
     "created_at": "2008-09-02T02:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
@@ -145,14 +141,12 @@ archive/issue_comments_028333.json:
 
 I guess what is going on is that the time to compile the function to fast_float form swamps the time to find the minimum, at least in these cases.
 
-
 ```
 sage: timeit('f = (-x^2)._fast_float_()')
 5 loops, best of 3: 82.6 ms per loop
 sage: timeit('find_maximum_on_interval(f,-1,1)')
 625 loops, best of 3: 690 µs per loop
 ```
-
 
 
 

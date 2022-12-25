@@ -3,7 +3,7 @@
 archive/issues_000309.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWhile the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:\n\n\n```\nfrom itertools import islice,imap\n\ndef idifference(iter):\n    B = iter.next()\n    for b in iter:\n      yield b-B\n      B=b\n\ndef height(x):\n  return x.height()\n\n[(n,min(idifference(imap(height,islice(Rationals(),Integer(2)**n))))) for n in range(Integer(1),Integer(19))]\n```\n\n\nyields\n\n\n```\n[(1, 0),\n (2, 0),\n (3, 0),\n (4, 0),\n (5, -1),\n (6, -2),\n (7, -3),\n (8, -5),\n (9, -8),\n (10, -13),\n (11, -21),\n (12, -34),\n (13, -55),\n (14, -89),\n (15, -144),\n (16, -233),\n (17, -377),\n (18, -610)]\n```\n\n\nso the jumps in height actually do get big. Many people will expect that if a certain number occurs in the enumeration, then all numbers of smaller height have also appeared. Therefore, we should perhaps have a choice of algorithm (since the present formula (sage 2.2) is so cool, I think it should be left in, but perhaps not as default enumeration order).\n\nOn the other hand, I realize that nobody will be using this routine anyway, so any change to this routine is essentially a waste of time.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/309\n\n",
+    "body": "Assignee: somebody\n\nWhile the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:\n\n```\nfrom itertools import islice,imap\n\ndef idifference(iter):\n    B = iter.next()\n    for b in iter:\n      yield b-B\n      B=b\n\ndef height(x):\n  return x.height()\n\n[(n,min(idifference(imap(height,islice(Rationals(),Integer(2)**n))))) for n in range(Integer(1),Integer(19))]\n```\n\nyields\n\n```\n[(1, 0),\n (2, 0),\n (3, 0),\n (4, 0),\n (5, -1),\n (6, -2),\n (7, -3),\n (8, -5),\n (9, -8),\n (10, -13),\n (11, -21),\n (12, -34),\n (13, -55),\n (14, -89),\n (15, -144),\n (16, -233),\n (17, -377),\n (18, -610)]\n```\n\nso the jumps in height actually do get big. Many people will expect that if a certain number occurs in the enumeration, then all numbers of smaller height have also appeared. Therefore, we should perhaps have a choice of algorithm (since the present formula (sage 2.2) is so cool, I think it should be left in, but perhaps not as default enumeration order).\n\nOn the other hand, I realize that nobody will be using this routine anyway, so any change to this routine is essentially a waste of time.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/309\n\n",
     "created_at": "2007-03-05T18:37:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 While the new `Rationals().__iter__ method` is really nice and quick, I realized there is one drawback: The enumeration is not completely wrt increasing height:
 
-
 ```
 from itertools import islice,imap
 
@@ -36,9 +35,7 @@ def height(x):
 [(n,min(idifference(imap(height,islice(Rationals(),Integer(2)**n))))) for n in range(Integer(1),Integer(19))]
 ```
 
-
 yields
-
 
 ```
 [(1, 0),
@@ -60,7 +57,6 @@ yields
  (17, -377),
  (18, -610)]
 ```
-
 
 so the jumps in height actually do get big. Many people will expect that if a certain number occurs in the enumeration, then all numbers of smaller height have also appeared. Therefore, we should perhaps have a choice of algorithm (since the present formula (sage 2.2) is so cool, I think it should be left in, but perhaps not as default enumeration order).
 
@@ -95,7 +91,7 @@ archive/issue_events_000719.json:
 archive/issue_comments_001461.json:
 ```json
 {
-    "body": "As a thought experiment, I implemented the naive algorithm for enumerating the rationals according to the height.  To my surprise, it seems to have the same speed as the version implemented by Nils (which is not monotone in height, hence this ticket -- see below for sample timings).  So I think we should just use the naive algorithm, which is in the attached patch.  It seemed a shame to throw out Nils' code so I just commented it out and fixed its references.\n\nwith old code:\n\n```\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**4): a = lst.next()                               \nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**5): a = lst.next()                               \nCPU times: user 0.64 s, sys: 0.00 s, total: 0.64 s\nWall time: 0.64 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**6): a = lst.next()                               \nCPU times: user 5.96 s, sys: 0.03 s, total: 5.99 s\nWall time: 5.99 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**7): a = lst.next()                               \nCPU times: user 59.47 s, sys: 0.21 s, total: 59.68 s\nWall time: 59.68 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**8): a = lst.next()                               \nCPU times: user 599.76 s, sys: 1.95 s, total: 601.71 s\nWall time: 601.92 s\n```\n\n\nwith new code:\n\n```\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**4): a = lst.next()                               \nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**5): a = lst.next()                               \nCPU times: user 0.64 s, sys: 0.01 s, total: 0.65 s\nWall time: 0.65 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**6): a = lst.next()                               \nCPU times: user 5.88 s, sys: 0.06 s, total: 5.94 s\nWall time: 5.94 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**7): a = lst.next()                               \nCPU times: user 58.68 s, sys: 0.58 s, total: 59.26 s\nWall time: 59.28 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**8): a = lst.next()                               \nCPU times: user 587.97 s, sys: 6.62 s, total: 594.59 s\nWall time: 594.65 s\n```\n",
+    "body": "As a thought experiment, I implemented the naive algorithm for enumerating the rationals according to the height.  To my surprise, it seems to have the same speed as the version implemented by Nils (which is not monotone in height, hence this ticket -- see below for sample timings).  So I think we should just use the naive algorithm, which is in the attached patch.  It seemed a shame to throw out Nils' code so I just commented it out and fixed its references.\n\nwith old code:\n\n```\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**4): a = lst.next()                               \nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**5): a = lst.next()                               \nCPU times: user 0.64 s, sys: 0.00 s, total: 0.64 s\nWall time: 0.64 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**6): a = lst.next()                               \nCPU times: user 5.96 s, sys: 0.03 s, total: 5.99 s\nWall time: 5.99 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**7): a = lst.next()                               \nCPU times: user 59.47 s, sys: 0.21 s, total: 59.68 s\nWall time: 59.68 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**8): a = lst.next()                               \nCPU times: user 599.76 s, sys: 1.95 s, total: 601.71 s\nWall time: 601.92 s\n```\n\nwith new code:\n\n```\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**4): a = lst.next()                               \nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**5): a = lst.next()                               \nCPU times: user 0.64 s, sys: 0.01 s, total: 0.65 s\nWall time: 0.65 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**6): a = lst.next()                               \nCPU times: user 5.88 s, sys: 0.06 s, total: 5.94 s\nWall time: 5.94 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**7): a = lst.next()                               \nCPU times: user 58.68 s, sys: 0.58 s, total: 59.26 s\nWall time: 59.28 s\nsage: lst = itertools.islice(Rationals(), 10**8)                               \nsage: time for _ in range(10**8): a = lst.next()                               \nCPU times: user 587.97 s, sys: 6.62 s, total: 594.59 s\nWall time: 594.65 s\n```",
     "created_at": "2008-09-01T05:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -131,7 +127,6 @@ CPU times: user 599.76 s, sys: 1.95 s, total: 601.71 s
 Wall time: 601.92 s
 ```
 
-
 with new code:
 
 ```
@@ -156,7 +151,6 @@ sage: time for _ in range(10**8): a = lst.next()
 CPU times: user 587.97 s, sys: 6.62 s, total: 594.59 s
 Wall time: 594.65 s
 ```
-
 
 
 
@@ -235,7 +229,7 @@ Changing status from new to assigned.
 archive/issue_comments_001464.json:
 ```json
 {
-    "body": "I prefer this, and would definitely want to use it in preference to the clever one.  In fact I do exactly the same thing somewhere in the modular symbols code in eclib...\n\nIt would be nice to make it easier for users to create iterators to (say) loop through all rationals up to a certain height, without having to resort to \"import itertools\" magic.  Something like this:\n\n```\n   for q in qrange(H):\n       # do something with q\n```\n\nwhich would loop through all rationals of height <H.\n\nAnyway, this patch applies fine to 3.1.2.alpha3, but doctesting rational_field.py threw up this for me:\n\n```\nFile \"/home/john/sage-3.1.2.alpha3/tmp/rational_field.py\", line 287:\n    sage: [a for a in itertools.islice(Rationals(),10)]\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3]\n```\n",
+    "body": "I prefer this, and would definitely want to use it in preference to the clever one.  In fact I do exactly the same thing somewhere in the modular symbols code in eclib...\n\nIt would be nice to make it easier for users to create iterators to (say) loop through all rationals up to a certain height, without having to resort to \"import itertools\" magic.  Something like this:\n\n```\n   for q in qrange(H):\n       # do something with q\n```\nwhich would loop through all rationals of height <H.\n\nAnyway, this patch applies fine to 3.1.2.alpha3, but doctesting rational_field.py threw up this for me:\n\n```\nFile \"/home/john/sage-3.1.2.alpha3/tmp/rational_field.py\", line 287:\n    sage: [a for a in itertools.islice(Rationals(),10)]\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3]\n```",
     "created_at": "2008-09-01T20:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -252,7 +246,6 @@ It would be nice to make it easier for users to create iterators to (say) loop t
    for q in qrange(H):
        # do something with q
 ```
-
 which would loop through all rationals of height <H.
 
 Anyway, this patch applies fine to 3.1.2.alpha3, but doctesting rational_field.py threw up this for me:
@@ -265,7 +258,6 @@ Expected:
 Got:
     [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3]
 ```
-
 
 
 
@@ -318,7 +310,7 @@ Michael
 archive/issue_comments_001467.json:
 ```json
 {
-    "body": "Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by @aghitza created at 2008-09-02 02:07:45\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\n\nI have replaced the old patch with one that contains this method as well.",
+    "body": "Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by @aghitza created at 2008-09-02 02:07:45\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\nI have replaced the old patch with one that contains this method as well.",
     "created_at": "2008-09-02T02:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -330,7 +322,6 @@ archive/issue_comments_001467.json:
 Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by @aghitza created at 2008-09-02 02:07:45
 
 mhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then
-
 
 ```
 sage: for q in QQ.range_by_height(3):                                          
@@ -345,7 +336,6 @@ sage: for q in QQ.range_by_height(3):
 -2
 ```
 
-
 I have replaced the old patch with one that contains this method as well.
 
 
@@ -355,7 +345,7 @@ I have replaced the old patch with one that contains this method as well.
 archive/issue_comments_001468.json:
 ```json
 {
-    "body": "With Alex's old patch I am actually seeing one doctest failure in interact:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage/sage/server/notebook/interact.py   \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4/tmp/interact.py\", line 2556:\n    sage: sage.server.notebook.interact.list_of_first_n(QQ, 10)\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2, -3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3, -3]\n**********************************************************************\n```\n\n\nI am trying the new patch now, but I expect the same result.\n\nCheers,\n\nMichael",
+    "body": "With Alex's old patch I am actually seeing one doctest failure in interact:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage/sage/server/notebook/interact.py   \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4/tmp/interact.py\", line 2556:\n    sage: sage.server.notebook.interact.list_of_first_n(QQ, 10)\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2, -3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3, -3]\n**********************************************************************\n```\n\nI am trying the new patch now, but I expect the same result.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T03:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -379,7 +369,6 @@ Got:
 **********************************************************************
 ```
 
-
 I am trying the new patch now, but I expect the same result.
 
 Cheers,
@@ -393,7 +382,7 @@ Michael
 archive/issue_comments_001469.json:
 ```json
 {
-    "body": "With the new patch I get:\n\n```\nsage -t -long devel/sage/sage/server/notebook/interact.py   \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4/tmp/interact.py\", line 2556:\n    sage: sage.server.notebook.interact.list_of_first_n(QQ, 10)\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2, -3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3, -3]\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the new patch I get:\n\n```\nsage -t -long devel/sage/sage/server/notebook/interact.py   \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha4/tmp/interact.py\", line 2556:\n    sage: sage.server.notebook.interact.list_of_first_n(QQ, 10)\nExpected:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3/2, -3/2]\nGot:\n    [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3, -3]\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T04:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
@@ -415,7 +404,6 @@ Got:
     [0, 1, -1, 1/2, -1/2, 2, -2, 1/3, -1/3, 3, -3]
 **********************************************************************
 ```
-
 
 Cheers,
 

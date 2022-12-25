@@ -3,7 +3,7 @@
 archive/issues_006052.json:
 ```json
 {
-    "body": "Assignee: @tornaria\n\n\n```\n19:34 < rickhg12hs> having some issues with partial fraction decomposition\n19:37 < rickhg12hs> sage: R.<x> = GF(2)[];((x+1)/(x^3+x+1)).partial_fraction_decomposition()\n19:37 < rickhg12hs> ... generates type errors\n19:39 < rickhg12hs> sage: P.<y>=ZZ[];((y+1)/(y^2+y+1)).partial_fraction_decomposition()\n19:39 < rickhg12hs> ... generates type errors also\n19:41 < rickhg12hs> sage: ((y+1)/(y^2+y+1) + (y+1)/(y^2+1)).partial_fraction_decomposition()\n19:41 < rickhg12hs> ... the line above works\n19:43 < rickhg12hs> sage: ((x+1)/(x^3+x+1) + (x+1)/(x^3+x^2+1)).partial_fraction_decomposition()\n19:43 < rickhg12hs> ... the line above works\n19:46 < rickhg12hs> FYI:\n19:46 < rickhg12hs> sage: version()\n19:46 < rickhg12hs> 'Sage Version 3.4.2, Release Date: 2009-05-05'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6052\n\n",
+    "body": "Assignee: @tornaria\n\n```\n19:34 < rickhg12hs> having some issues with partial fraction decomposition\n19:37 < rickhg12hs> sage: R.<x> = GF(2)[];((x+1)/(x^3+x+1)).partial_fraction_decomposition()\n19:37 < rickhg12hs> ... generates type errors\n19:39 < rickhg12hs> sage: P.<y>=ZZ[];((y+1)/(y^2+y+1)).partial_fraction_decomposition()\n19:39 < rickhg12hs> ... generates type errors also\n19:41 < rickhg12hs> sage: ((y+1)/(y^2+y+1) + (y+1)/(y^2+1)).partial_fraction_decomposition()\n19:41 < rickhg12hs> ... the line above works\n19:43 < rickhg12hs> sage: ((x+1)/(x^3+x+1) + (x+1)/(x^3+x^2+1)).partial_fraction_decomposition()\n19:43 < rickhg12hs> ... the line above works\n19:46 < rickhg12hs> FYI:\n19:46 < rickhg12hs> sage: version()\n19:46 < rickhg12hs> 'Sage Version 3.4.2, Release Date: 2009-05-05'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6052\n\n",
     "created_at": "2009-05-17T02:43:00Z",
     "labels": [
         "component: algebra",
@@ -17,7 +17,6 @@ archive/issues_006052.json:
 }
 ```
 Assignee: @tornaria
-
 
 ```
 19:34 < rickhg12hs> having some issues with partial fraction decomposition
@@ -33,7 +32,6 @@ Assignee: @tornaria
 19:46 < rickhg12hs> sage: version()
 19:46 < rickhg12hs> 'Sage Version 3.4.2, Release Date: 2009-05-05'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6052
 

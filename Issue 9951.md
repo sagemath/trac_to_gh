@@ -95,7 +95,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_099088.json:
 ```json
 {
-    "body": "Oops, you're right.  I've fixed it now.  \n\nBy the way, I didn't know whether to use\n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n\nor\n\n```sh\nif [ -n \"$SAGE_ATLAS_LIB\" ]; then\n```\n\nor whether it mattered.  Right now I'm using the first of these.",
+    "body": "Oops, you're right.  I've fixed it now.  \n\nBy the way, I didn't know whether to use\n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\nor\n\n```sh\nif [ -n \"$SAGE_ATLAS_LIB\" ]; then\n```\nor whether it mattered.  Right now I'm using the first of these.",
     "created_at": "2010-09-20T03:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -111,13 +111,11 @@ By the way, I didn't know whether to use
 ```sh
 if [ "x$SAGE_ATLAS_LIB" != "x" ]; then
 ```
-
 or
 
 ```sh
 if [ -n "$SAGE_ATLAS_LIB" ]; then
 ```
-
 or whether it mattered.  Right now I'm using the first of these.
 
 
@@ -183,7 +181,7 @@ Okay, I switched it to the second one.
 archive/issue_comments_099092.json:
 ```json
 {
-    "body": "I agree with Leif, the $ in the message should be skipped. We have refereed to SAGE_ATLAS_LIB before, so I think it's best to refer to it as that and not $SAGE_ATLAS_LIB. But it works fine. \n\n\n```\nreal\t0m0.147s\nuser\t0m0.060s\nsys\t0m0.085s\nSuccessfully installed atlas-3.8.3.p16\nRunning the test suite.\n$SAGE_ATLAS_LIB is set; skipping test suite.\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing atlas-3.8.3.p16.spkg\ndrkirkby@hawk:~/sage-4.6.alpha1$ \n```\n\n\nArguably a nice touch would be to add \n\n\n```\necho \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\n\n\nBTW, one more stupid thing, which is nothing to do with you, but a result of a bad bit of code being copied around everywhere, is there's no need for the semi-colon on the line\n\n\n```\necho \"SAGE_LOCAL undefined ... exiting\";\n```\n\n\nYou might as well remove that at the same time. \n\nDave",
+    "body": "I agree with Leif, the $ in the message should be skipped. We have refereed to SAGE_ATLAS_LIB before, so I think it's best to refer to it as that and not $SAGE_ATLAS_LIB. But it works fine. \n\n```\nreal\t0m0.147s\nuser\t0m0.060s\nsys\t0m0.085s\nSuccessfully installed atlas-3.8.3.p16\nRunning the test suite.\n$SAGE_ATLAS_LIB is set; skipping test suite.\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing atlas-3.8.3.p16.spkg\ndrkirkby@hawk:~/sage-4.6.alpha1$ \n```\n\nArguably a nice touch would be to add \n\n```\necho \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\n\nBTW, one more stupid thing, which is nothing to do with you, but a result of a bad bit of code being copied around everywhere, is there's no need for the semi-colon on the line\n\n```\necho \"SAGE_LOCAL undefined ... exiting\";\n```\n\nYou might as well remove that at the same time. \n\nDave",
     "created_at": "2010-09-20T06:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -193,7 +191,6 @@ archive/issue_comments_099092.json:
 ```
 
 I agree with Leif, the $ in the message should be skipped. We have refereed to SAGE_ATLAS_LIB before, so I think it's best to refer to it as that and not $SAGE_ATLAS_LIB. But it works fine. 
-
 
 ```
 real	0m0.147s
@@ -209,22 +206,17 @@ Finished installing atlas-3.8.3.p16.spkg
 drkirkby@hawk:~/sage-4.6.alpha1$ 
 ```
 
-
 Arguably a nice touch would be to add 
-
 
 ```
 echo "SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite."
 ```
 
-
 BTW, one more stupid thing, which is nothing to do with you, but a result of a bad bit of code being copied around everywhere, is there's no need for the semi-colon on the line
-
 
 ```
 echo "SAGE_LOCAL undefined ... exiting";
 ```
-
 
 You might as well remove that at the same time. 
 
@@ -237,7 +229,7 @@ Dave
 archive/issue_comments_099093.json:
 ```json
 {
-    "body": "Replying to [comment:3 leif]:\n> Hmmm, the latter is much nicer (and works with all shells / `test` programs).\n> \n> Some dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).\n\nActually, I'd have to disagree with that. I've been using -z and -n, as I agree it looks cleaner, but this is a quote from the autoconf mailing list: \n\nhttp://lists.gnu.org/archive/html/autoconf/2010-09/msg00030.html\n\nsays \n\n\n*this is yet another case of `@`var{string} that looks like an operator, and yet another reason that you should ALWAYS use test x\"$val\" = x rather than test -z \"$val\" if you don't know what $val contains.*\n\nThe autoconf developers have a **huge** experience in writing code as portable as possible, so I'm going to switch to the the more portable `\"x$var\" = x`. IMHO, for questions of portability, the autoconf mailing list is the best place to ask. \n\nYou can argue rightly argue it does not matter with bash, which this shell is, but it does matter with some shells. So I would **personally** choose to use the most portable way, so things I write do not rely on bash, but would work with just about any shell. But it's a matter of style. Let John choose what he wants. I believe in order of decreasing portability, they are:\n\n* ` if [ \"x$var\" = x ] ; then` \n* ` if [ -z \"$var\" ] ; then` \n* ` if [ \"$var\" = \"\" ] ; then` \n\nBut all work with modern bash shells. But my **personal** preference is for the first of these, since it would appear to be the most portable. \n\nDave",
+    "body": "Replying to [comment:3 leif]:\n> Hmmm, the latter is much nicer (and works with all shells / `test` programs).\n> \n> Some dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).\n\n\nActually, I'd have to disagree with that. I've been using -z and -n, as I agree it looks cleaner, but this is a quote from the autoconf mailing list: \n\nhttp://lists.gnu.org/archive/html/autoconf/2010-09/msg00030.html\n\nsays \n\n\n*this is yet another case of `@`var{string} that looks like an operator, and yet another reason that you should ALWAYS use test x\"$val\" = x rather than test -z \"$val\" if you don't know what $val contains.*\n\nThe autoconf developers have a **huge** experience in writing code as portable as possible, so I'm going to switch to the the more portable `\"x$var\" = x`. IMHO, for questions of portability, the autoconf mailing list is the best place to ask. \n\nYou can argue rightly argue it does not matter with bash, which this shell is, but it does matter with some shells. So I would **personally** choose to use the most portable way, so things I write do not rely on bash, but would work with just about any shell. But it's a matter of style. Let John choose what he wants. I believe in order of decreasing portability, they are:\n\n* ` if [ \"x$var\" = x ] ; then` \n* ` if [ -z \"$var\" ] ; then` \n* ` if [ \"$var\" = \"\" ] ; then` \n\nBut all work with modern bash shells. But my **personal** preference is for the first of these, since it would appear to be the most portable. \n\nDave",
     "created_at": "2010-09-20T06:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -250,6 +242,7 @@ Replying to [comment:3 leif]:
 > Hmmm, the latter is much nicer (and works with all shells / `test` programs).
 > 
 > Some dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).
+
 
 Actually, I'd have to disagree with that. I've been using -z and -n, as I agree it looks cleaner, but this is a quote from the autoconf mailing list: 
 
@@ -279,7 +272,7 @@ Dave
 archive/issue_comments_099094.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> I think the `$` in the message should be escaped... ;-)\n> \n> \n\nI realise I was **not** agreeing with Leif - how unusual! \n\nIMHO, the $ should not be there. Leif was saying it should be escaped, I think it should not be there at all, since throughout we have called the variable `SAGE_ATLAS_LIB`, now to switch it to `$SAGE_ATLAS_LIB` seems wrong to me. \n\nDave",
+    "body": "Replying to [comment:1 leif]:\n> I think the `$` in the message should be escaped... ;-)\n> \n> \n\n\nI realise I was **not** agreeing with Leif - how unusual! \n\nIMHO, the $ should not be there. Leif was saying it should be escaped, I think it should not be there at all, since throughout we have called the variable `SAGE_ATLAS_LIB`, now to switch it to `$SAGE_ATLAS_LIB` seems wrong to me. \n\nDave",
     "created_at": "2010-09-20T06:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -292,6 +285,7 @@ Replying to [comment:1 leif]:
 > I think the `$` in the message should be escaped... ;-)
 > 
 > 
+
 
 I realise I was **not** agreeing with Leif - how unusual! 
 
@@ -306,7 +300,7 @@ Dave
 archive/issue_comments_099095.json:
 ```json
 {
-    "body": "I'd say there's a slight difference between `test -z ...` and `[ -z ... ]`, but I can't confirm that for the example given because my `ksh` isn't broken like the mentioned Solaris one.\n\nI won't consider this a real *portability* issue (at least in our case), but a matter of *robustness*. Furthermore, at that point we can rely on `SAGE_ATLAS_LIB` being unset or empty, or containing a valid filename IIRC.\n\nW.r.t `$`, of course `$SAGE_ATLAS_LIB` refers to *the value* of the environment variable `SAGE_ATLAS_LIB`, but the former might be clearer to some users in case one omits *\"The environment variable ...\"*.\n\nI think Dave's\n\n```sh\n    echo \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\n\nis also more explicit, though I'd add (escaped) double quotes around the variable's value.",
+    "body": "I'd say there's a slight difference between `test -z ...` and `[ -z ... ]`, but I can't confirm that for the example given because my `ksh` isn't broken like the mentioned Solaris one.\n\nI won't consider this a real *portability* issue (at least in our case), but a matter of *robustness*. Furthermore, at that point we can rely on `SAGE_ATLAS_LIB` being unset or empty, or containing a valid filename IIRC.\n\nW.r.t `$`, of course `$SAGE_ATLAS_LIB` refers to *the value* of the environment variable `SAGE_ATLAS_LIB`, but the former might be clearer to some users in case one omits *\"The environment variable ...\"*.\n\nI think Dave's\n\n```sh\n    echo \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\nis also more explicit, though I'd add (escaped) double quotes around the variable's value.",
     "created_at": "2010-09-20T12:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -326,7 +320,6 @@ I think Dave's
 ```sh
     echo "SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite."
 ```
-
 is also more explicit, though I'd add (escaped) double quotes around the variable's value.
 
 
@@ -356,7 +349,7 @@ for reference only: the diff between the old spkg and the new one
 archive/issue_comments_099097.json:
 ```json
 {
-    "body": "This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case.  Anyway, I've changed it now.  It seems to work for me on sage.math and on t2.  Note that setting SAGE_ATLAS_LIB to an empty string causes the build to fail earlier, so we really only need to check whether SAGE_ATLAS_LIB is set.  Nonetheless, I'm using \n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n",
+    "body": "This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case.  Anyway, I've changed it now.  It seems to work for me on sage.math and on t2.  Note that setting SAGE_ATLAS_LIB to an empty string causes the build to fail earlier, so we really only need to check whether SAGE_ATLAS_LIB is set.  Nonetheless, I'm using \n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```",
     "created_at": "2010-09-20T15:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -373,13 +366,12 @@ if [ "x$SAGE_ATLAS_LIB" != "x" ]; then
 
 
 
-
 ---
 
 archive/issue_comments_099098.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion [...]\n\nYes.\n\n> Nonetheless, I'm using \n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n\n\nThough quite weird in the presence of\n\n```sh\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\"\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\n\nThe \"style\" of autotools is IMHO targeted at (or demanded by) other purposes. We wouldn't discuss the C \"coding style\" of e.g. Cython either... ;-)\n\nReadability and maintainability also count.",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion [...]\n\n\nYes.\n\n> Nonetheless, I'm using \n\n{{{#!sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n}}}\n\nThough quite weird in the presence of\n\n```sh\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\"\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nThe \"style\" of autotools is IMHO targeted at (or demanded by) other purposes. We wouldn't discuss the C \"coding style\" of e.g. Cython either... ;-)\n\nReadability and maintainability also count.",
     "created_at": "2010-09-20T15:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -391,14 +383,14 @@ archive/issue_comments_099098.json:
 Replying to [comment:10 jhpalmieri]:
 > This is an amusingly large amount of discussion [...]
 
+
 Yes.
 
 > Nonetheless, I'm using 
 
-```sh
+{{{#!sh
 if [ "x$SAGE_ATLAS_LIB" != "x" ]; then
-```
-
+}}}
 
 Though quite weird in the presence of
 
@@ -409,7 +401,6 @@ if [ "$SAGE_LOCAL" = "" ]; then
    exit 1
 fi
 ```
-
 
 The "style" of autotools is IMHO targeted at (or demanded by) other purposes. We wouldn't discuss the C "coding style" of e.g. Cython either... ;-)
 
@@ -494,7 +485,7 @@ Yeah, never raise such issues when **both** Dave and me are involved! (We have o
 archive/issue_comments_099103.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case. \n\nYes, it is rather a case of the bike shed problem. \n\nhttp://en.wikipedia.org/wiki/Parkinson%27s_Law_of_Triviality\n\nThis is the reason I was not willing to write anything for the Sage Developer's Guide about writing shell scripts - note there was a discussion about this matter on sage-devel. Lot's of people have their own ideas, and coming to any sort of agreement is difficult. \n\nDave",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case. \n\n\nYes, it is rather a case of the bike shed problem. \n\nhttp://en.wikipedia.org/wiki/Parkinson%27s_Law_of_Triviality\n\nThis is the reason I was not willing to write anything for the Sage Developer's Guide about writing shell scripts - note there was a discussion about this matter on sage-devel. Lot's of people have their own ideas, and coming to any sort of agreement is difficult. \n\nDave",
     "created_at": "2010-09-20T16:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9951",
     "type": "issue_comment",
@@ -505,6 +496,7 @@ archive/issue_comments_099103.json:
 
 Replying to [comment:10 jhpalmieri]:
 > This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case. 
+
 
 Yes, it is rather a case of the bike shed problem. 
 

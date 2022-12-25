@@ -3,7 +3,7 @@
 archive/issues_000708.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @burcin\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
+    "body": "Assignee: somebody\n\nCC:  @burcin\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
     "created_at": "2007-09-20T17:40:44Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 CC:  @burcin
 
-
 ```
 sage: R = QQ['x']
 sage: f = R.random_element(1000)
@@ -35,7 +34,6 @@ Wall time: 2.57
 true
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/708
 
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/708
 archive/issue_comments_003705.json:
 ```json
 {
-    "body": "This is still the case:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.alpha0, Release Date: 2008-08-22                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 57.86 s, sys: 0.13 s, total: 57.99 s\nWall time: 58.02 s\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 4.22 s\ntrue\nsage: \nExiting SAGE (CPU time 0m58.11s, Wall time 3m26.33s).\nExiting spawned Magma process.\n```\n\nIs anyone working in that area?\n\nCheers,\n\nMichael",
+    "body": "This is still the case:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.alpha0, Release Date: 2008-08-22                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 57.86 s, sys: 0.13 s, total: 57.99 s\nWall time: 58.02 s\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 4.22 s\ntrue\nsage: \nExiting SAGE (CPU time 0m58.11s, Wall time 3m26.33s).\nExiting spawned Magma process.\n```\nIs anyone working in that area?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T01:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ sage:
 Exiting SAGE (CPU time 0m58.11s, Wall time 3m26.33s).
 Exiting spawned Magma process.
 ```
-
 Is anyone working in that area?
 
 Cheers,
@@ -131,7 +128,7 @@ See the attached patch.  I'm getting a speedup factor of about 10, but I can't c
 archive/issue_comments_003707.json:
 ```json
 {
-    "body": "Speed report:\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.06 s\nWall time: 2.06 s\nTrue\nsage: g = magma(f)\nsage: t = magma.cputime()\nsage: sage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 5.24 s\ntrue\nsage: magma.cputime(t)\n5.2400000000000002\n```\n\n\nThe new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do pretty much everything with Flint w.r.t. to QQ[x]. Maybe that could be another ticket/task.",
+    "body": "Speed report:\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.06 s\nWall time: 2.06 s\nTrue\nsage: g = magma(f)\nsage: t = magma.cputime()\nsage: sage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 5.24 s\ntrue\nsage: magma.cputime(t)\n5.2400000000000002\n```\n\nThe new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do pretty much everything with Flint w.r.t. to QQ[x]. Maybe that could be another ticket/task.",
     "created_at": "2008-08-30T00:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
@@ -141,7 +138,6 @@ archive/issue_comments_003707.json:
 ```
 
 Speed report:
-
 
 ```
 sage: R = QQ['x']
@@ -159,7 +155,6 @@ true
 sage: magma.cputime(t)
 5.2400000000000002
 ```
-
 
 The new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do pretty much everything with Flint w.r.t. to QQ[x]. Maybe that could be another ticket/task.
 

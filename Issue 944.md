@@ -3,7 +3,7 @@
 archive/issues_000944.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\"sage -t .\" should run the doctests in the current directory, but it doesn't.  It looks like maybe it fails when the directory name starts with a period:\n\n\n```\ncwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t .\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\ncwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t ../polynomial/\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/944\n\n",
+    "body": "Assignee: failure\n\n\"sage -t .\" should run the doctests in the current directory, but it doesn't.  It looks like maybe it fails when the directory name starts with a period:\n\n```\ncwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t .\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\ncwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t ../polynomial/\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/944\n\n",
     "created_at": "2007-10-20T17:05:01Z",
     "labels": [
         "component: doctest coverage",
@@ -21,7 +21,6 @@ Assignee: failure
 
 "sage -t ." should run the doctests in the current directory, but it doesn't.  It looks like maybe it fails when the directory name starts with a period:
 
-
 ```
 cwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t .
  
@@ -34,7 +33,6 @@ cwitty@magnetar:~/sage/devel/sage/sage/rings/polynomial$ ~/sage/sage -t ../polyn
 All tests passed!
 Total time for all tests: 0.0 seconds
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/944

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6530
 archive/issue_comments_053135.json:
 ```json
 {
-    "body": "technically, it is all set so that it should work. I've added some redundant sites:\n\n```\n\thttp://www.sagemath.org/doc/numerical_sage    doc \n\thttp://www.sagemath.org/doc/a_tour_of_sage/    doc \n\thttp://www.sagemath.org/doc/installation/    doc \n\thttp://www.sagemath.org/doc/reference/    doc \n\thttp://www.sagemath.org/doc/developer/    developer \n\thttp://www.sagemath.org/doc/constructions    doc \n\thttp://www.sagemath.org/doc/tutorial/    doc \n```\n\n(label \"doc\" is for used for documentation)\n\nand a master page for the reference to point to all pages\n\n```\nhttp://www.sagemath.org/doc/reference/genindex-all.html [extract linked partial sites]   doc   \n```\n\n\nmaybe it works now better, but i'm not sure.",
+    "body": "technically, it is all set so that it should work. I've added some redundant sites:\n\n```\n\thttp://www.sagemath.org/doc/numerical_sage    doc \n\thttp://www.sagemath.org/doc/a_tour_of_sage/    doc \n\thttp://www.sagemath.org/doc/installation/    doc \n\thttp://www.sagemath.org/doc/reference/    doc \n\thttp://www.sagemath.org/doc/developer/    developer \n\thttp://www.sagemath.org/doc/constructions    doc \n\thttp://www.sagemath.org/doc/tutorial/    doc \n```\n(label \"doc\" is for used for documentation)\n\nand a master page for the reference to point to all pages\n\n```\nhttp://www.sagemath.org/doc/reference/genindex-all.html [extract linked partial sites]   doc   \n```\n\nmaybe it works now better, but i'm not sure.",
     "created_at": "2009-07-14T08:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6530",
     "type": "issue_comment",
@@ -56,7 +56,6 @@ technically, it is all set so that it should work. I've added some redundant sit
 	http://www.sagemath.org/doc/constructions    doc 
 	http://www.sagemath.org/doc/tutorial/    doc 
 ```
-
 (label "doc" is for used for documentation)
 
 and a master page for the reference to point to all pages
@@ -64,7 +63,6 @@ and a master page for the reference to point to all pages
 ```
 http://www.sagemath.org/doc/reference/genindex-all.html [extract linked partial sites]   doc   
 ```
-
 
 maybe it works now better, but i'm not sure.
 

@@ -82,7 +82,7 @@ I was wondering why the 'sage.echinda.*' entries were added to setup.py.  Where 
 archive/issue_comments_051503.json:
 ```json
 {
-    "body": "I installed the spkg but got\n\n```\nUser error: Identifier 'attach_echidna' has not been declared or assigned\n```\n\nwhen trying `magma.attach_echidna()`.  Presumably my magma paths are not setup correctly?\n\nAlso, this patch might be malformed.  (Did you use the hg export -o option?  That stupidly appends rather than overwrites, causing me some grief for a time.)",
+    "body": "I installed the spkg but got\n\n```\nUser error: Identifier 'attach_echidna' has not been declared or assigned\n```\nwhen trying `magma.attach_echidna()`.  Presumably my magma paths are not setup correctly?\n\nAlso, this patch might be malformed.  (Did you use the hg export -o option?  That stupidly appends rather than overwrites, causing me some grief for a time.)",
     "created_at": "2009-06-26T22:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ I installed the spkg but got
 ```
 User error: Identifier 'attach_echidna' has not been declared or assigned
 ```
-
 when trying `magma.attach_echidna()`.  Presumably my magma paths are not setup correctly?
 
 Also, this patch might be malformed.  (Did you use the hg export -o option?  That stupidly appends rather than overwrites, causing me some grief for a time.)

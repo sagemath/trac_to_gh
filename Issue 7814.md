@@ -76,7 +76,7 @@ Jaap
 archive/issue_comments_067488.json:
 ```json
 {
-    "body": "I see:\n\n\n\n```\nif [ \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel build\"\n    DYN_FLAGS=\"-m64\"; export DYN_FLAGS\n    PICFLAG=\"-m64 -fPIC\"\nfi\nexport PICFLAG\n\n```\n\n\n\nin spkg-install\n\nJaap",
+    "body": "I see:\n\n\n```\nif [ \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel build\"\n    DYN_FLAGS=\"-m64\"; export DYN_FLAGS\n    PICFLAG=\"-m64 -fPIC\"\nfi\nexport PICFLAG\n\n```\n\n\nin spkg-install\n\nJaap",
     "created_at": "2010-01-02T20:57:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7814",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ archive/issue_comments_067488.json:
 I see:
 
 
-
 ```
 if [ "$SAGE64" = "yes" ]; then
     echo "64 bit MacIntel build"
@@ -98,7 +97,6 @@ fi
 export PICFLAG
 
 ```
-
 
 
 in spkg-install
@@ -130,7 +128,7 @@ yes, I should have removed that comment about the MacIntel. I think you will fin
 archive/issue_comments_067490.json:
 ```json
 {
-    "body": "If there is a new spkg (see above) I can give it a positive review. Tested on Fedora 12 and Open Solaris 32 bit\n\n\n```\nreal\t4m15.073s\nuser\t3m35.053s\nsys\t0m24.029s\nSuccessfully installed eclib-20080310.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3/spkg/build/eclib-20080310.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing eclib-20080310.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3$ \n\n```\n\n\nAfter a successful install of ntl and pari.\n\nJaap",
+    "body": "If there is a new spkg (see above) I can give it a positive review. Tested on Fedora 12 and Open Solaris 32 bit\n\n```\nreal\t4m15.073s\nuser\t3m35.053s\nsys\t0m24.029s\nSuccessfully installed eclib-20080310.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3/spkg/build/eclib-20080310.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing eclib-20080310.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3$ \n\n```\n\nAfter a successful install of ntl and pari.\n\nJaap",
     "created_at": "2010-01-03T19:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7814",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ archive/issue_comments_067490.json:
 ```
 
 If there is a new spkg (see above) I can give it a positive review. Tested on Fedora 12 and Open Solaris 32 bit
-
 
 ```
 real	4m15.073s
@@ -155,7 +152,6 @@ Finished installing eclib-20080310.p8.spkg
 jaap@opensolaris:~/Downloads/sage-4.3$ 
 
 ```
-
 
 After a successful install of ntl and pari.
 
@@ -190,7 +186,7 @@ dave
 archive/issue_comments_067492.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> I've updated the package. It is now missing the comment that its a MacIntel. \n> \n> Please double check the package again though please - just in case I've messed up. \n> \n> dave \n\nSure,\n\nJaap",
+    "body": "Replying to [comment:5 drkirkby]:\n> I've updated the package. It is now missing the comment that its a MacIntel. \n> \n> Please double check the package again though please - just in case I've messed up. \n> \n> dave \n\n\nSure,\n\nJaap",
     "created_at": "2010-01-03T20:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7814",
     "type": "issue_comment",
@@ -205,6 +201,7 @@ Replying to [comment:5 drkirkby]:
 > Please double check the package again though please - just in case I've messed up. 
 > 
 > dave 
+
 
 Sure,
 
@@ -235,7 +232,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067494.json:
 ```json
 {
-    "body": "On Open Solaris:\n\n```\nreal\t4m8.443s\nuser\t3m36.556s\nsys\t0m24.188s\nSuccessfully installed eclib-20080310.p8\n\n```\n\n\nLooks good, build tested on Fedora 12 and Fedora 11.\n\nPositive review.\n\nJaap",
+    "body": "On Open Solaris:\n\n```\nreal\t4m8.443s\nuser\t3m36.556s\nsys\t0m24.188s\nSuccessfully installed eclib-20080310.p8\n\n```\n\nLooks good, build tested on Fedora 12 and Fedora 11.\n\nPositive review.\n\nJaap",
     "created_at": "2010-01-03T21:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7814",
     "type": "issue_comment",
@@ -253,7 +250,6 @@ sys	0m24.188s
 Successfully installed eclib-20080310.p8
 
 ```
-
 
 Looks good, build tested on Fedora 12 and Fedora 11.
 
@@ -440,7 +436,7 @@ Dave
 archive/issue_comments_067502.json:
 ```json
 {
-    "body": "What I found was this.  On my own computer I have a p8 with the following changelog entry:\n\n```\n### eclib-20080310.p8 (John Cremona, January 6th, 2009)\n * Change to debugging output in procs/p2points.cc (not relevant for Sage)\n * Change to pdivs() in procs/marith.cc (not relevant for Sage)\n```\n\nNow, whatever that was about, it was not relevant for Sage (either referred to functions not used by anything wrapped in Sage, or under compiler options which Sage does not use), and presumably for that reason I did not make a ticket for it to replace the (then) standard p7 in Sage.\n\nI guess the thing for me to do now is to make a p9 which has both the changes I made in my p8 and the ones you made, and get it into Sage.  I have to keep the version of the source files which are used by Sage in sync with the versions I have, otherwise I'll go mad.",
+    "body": "What I found was this.  On my own computer I have a p8 with the following changelog entry:\n\n```\n### eclib-20080310.p8 (John Cremona, January 6th, 2009)\n * Change to debugging output in procs/p2points.cc (not relevant for Sage)\n * Change to pdivs() in procs/marith.cc (not relevant for Sage)\n```\nNow, whatever that was about, it was not relevant for Sage (either referred to functions not used by anything wrapped in Sage, or under compiler options which Sage does not use), and presumably for that reason I did not make a ticket for it to replace the (then) standard p7 in Sage.\n\nI guess the thing for me to do now is to make a p9 which has both the changes I made in my p8 and the ones you made, and get it into Sage.  I have to keep the version of the source files which are used by Sage in sync with the versions I have, otherwise I'll go mad.",
     "created_at": "2010-01-24T19:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7814",
     "type": "issue_comment",
@@ -456,7 +452,6 @@ What I found was this.  On my own computer I have a p8 with the following change
  * Change to debugging output in procs/p2points.cc (not relevant for Sage)
  * Change to pdivs() in procs/marith.cc (not relevant for Sage)
 ```
-
 Now, whatever that was about, it was not relevant for Sage (either referred to functions not used by anything wrapped in Sage, or under compiler options which Sage does not use), and presumably for that reason I did not make a ticket for it to replace the (then) standard p7 in Sage.
 
 I guess the thing for me to do now is to make a p9 which has both the changes I made in my p8 and the ones you made, and get it into Sage.  I have to keep the version of the source files which are used by Sage in sync with the versions I have, otherwise I'll go mad.

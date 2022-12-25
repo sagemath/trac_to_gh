@@ -3,7 +3,7 @@
 archive/issues_005184.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
+    "body": "Assignee: @williamstein\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
     "created_at": "2009-02-05T03:07:15Z",
     "labels": [
         "component: linear algebra",
@@ -33,7 +33,6 @@ sage: v+w
 sage: (v+w).nonzero_positions()
 [1, 3]
 ```
-
 (I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)
 
 
@@ -49,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5184
 archive/issue_comments_039672.json:
 ```json
 {
-    "body": "Maybe this is related:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 1})\nsage: v+w\n(0, 0, 0, 0)\nsage: (v+w).is_zero()\nFalse\n```\n",
+    "body": "Maybe this is related:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 1})\nsage: v+w\n(0, 0, 0, 0)\nsage: (v+w).is_zero()\nFalse\n```",
     "created_at": "2009-02-05T03:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
@@ -68,7 +67,6 @@ sage: v+w
 sage: (v+w).is_zero()
 False
 ```
-
 
 
 
@@ -149,7 +147,7 @@ Here's a patch.  This doesn't actually change `nonzero_positions` (except for ad
 archive/issue_comments_039677.json:
 ```json
 {
-    "body": "Attachment [5184.patch](tarball://root/attachments/some-uuid/ticket5184/5184.patch) by cwitty created at 2009-02-20 02:47:24\n\nInstead of tests like `if a != 0:`, it should use `if a:`.   The code is a little uglier and harder to understand, but it's much faster; these are approximations of the sorts of timing differences you would see:\n\n```\nsage: foo = QQbar(3)\nsage: timeit('bool(foo)')\n625 loops, best of 3: 1.24 \u00b5s per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 100 \u00b5s per loop\nsage: foo = 3\nsage: timeit('bool(foo)')\n625 loops, best of 3: 286 ns per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 4.2 \u00b5s per loop\n```\n\n\n(Also, in the places where you deleted \"A dense a sparse\", is it worth adding a note that says something like \"(This is true even if one is sparse and the other is dense.)\"?)",
+    "body": "Attachment [5184.patch](tarball://root/attachments/some-uuid/ticket5184/5184.patch) by cwitty created at 2009-02-20 02:47:24\n\nInstead of tests like `if a != 0:`, it should use `if a:`.   The code is a little uglier and harder to understand, but it's much faster; these are approximations of the sorts of timing differences you would see:\n\n```\nsage: foo = QQbar(3)\nsage: timeit('bool(foo)')\n625 loops, best of 3: 1.24 \u00b5s per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 100 \u00b5s per loop\nsage: foo = 3\nsage: timeit('bool(foo)')\n625 loops, best of 3: 286 ns per loop\nsage: timeit('foo != 0r')\n625 loops, best of 3: 4.2 \u00b5s per loop\n```\n\n(Also, in the places where you deleted \"A dense a sparse\", is it worth adding a note that says something like \"(This is true even if one is sparse and the other is dense.)\"?)",
     "created_at": "2009-02-20T02:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
@@ -174,7 +172,6 @@ sage: timeit('bool(foo)')
 sage: timeit('foo != 0r')
 625 loops, best of 3: 4.2 µs per loop
 ```
-
 
 (Also, in the places where you deleted "A dense a sparse", is it worth adding a note that says something like "(This is true even if one is sparse and the other is dense.)"?)
 

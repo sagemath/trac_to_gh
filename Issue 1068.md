@@ -3,7 +3,7 @@
 archive/issues_001068.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n> The inplace optimizations should be something that have to be\n> > explicitly turned on, and they should be off by default.  I know they\n> > make certain things faster, but correctness by default is *always* a\n> > much more important consideration with serious mathematical software\n> > such as Sage.  Always.\n> >\n> > I will very likely disable in-place optimization for sage-2.8.11,\n> > until this issue gets properly discussed and resolved.\n\n:-(, but I have to concede to your logic. The line to change is 148  \nof coerce.pxi. Setting this value to 0 will turn them completely off.  \nOther than numpy, (and the builtin libraries), do we use any other  \nextension types? If there is a finite list of things for which it  \nwon't work, it would be possible to disable it just for those.\n\n- Robert\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1068\n\n",
+    "body": "Assignee: mabshoff\n\n```\n> The inplace optimizations should be something that have to be\n> > explicitly turned on, and they should be off by default.  I know they\n> > make certain things faster, but correctness by default is *always* a\n> > much more important consideration with serious mathematical software\n> > such as Sage.  Always.\n> >\n> > I will very likely disable in-place optimization for sage-2.8.11,\n> > until this issue gets properly discussed and resolved.\n\n:-(, but I have to concede to your logic. The line to change is 148  \nof coerce.pxi. Setting this value to 0 will turn them completely off.  \nOther than numpy, (and the builtin libraries), do we use any other  \nextension types? If there is a finite list of things for which it  \nwon't work, it would be possible to disable it just for those.\n\n- Robert\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1068\n\n",
     "created_at": "2007-11-02T19:04:12Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_001068.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 > The inplace optimizations should be something that have to be
@@ -37,7 +36,6 @@ won't work, it would be possible to disable it just for those.
 
 - Robert
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1068
 

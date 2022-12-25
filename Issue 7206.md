@@ -3,7 +3,7 @@
 archive/issues_007206.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nWith 4.1.2.rc2, I have one doctest failure on Ubuntu 9.04 amd64:\n\n```\ndrake@sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/permgroup.py\n  sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"    \n  **********************************************************************\n  File \"/home/drake/s/sage-4.1.2.rc2/devel/sage/sage/groups/perm_gps/permgroup.py\", line 1114:\n      sage: G.random_element()\n  Expected:\n      (1,2)(4,5)\n  Got:\n      (2,3)(4,5)\n  **********************************************************************\n  1 items had failures:\n     1 of   4 in __main__.example_34\n  ***Test Failed*** 1 failures.\n  For whitespace errors, see the file /home/drake/.sage//tmp/.doctest_permgroup.py\n           [6.7 s]\n  exit code: 1024\n\n  ----------------------------------------------------------------------\n  The following tests failed:\n\n          sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\" \n```\n\n\nThis seems like #5584 again. I ran a bisect and it blames #6647.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7206\n\n",
+    "body": "Assignee: joyner\n\nWith 4.1.2.rc2, I have one doctest failure on Ubuntu 9.04 amd64:\n\n```\ndrake@sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/permgroup.py\n  sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"    \n  **********************************************************************\n  File \"/home/drake/s/sage-4.1.2.rc2/devel/sage/sage/groups/perm_gps/permgroup.py\", line 1114:\n      sage: G.random_element()\n  Expected:\n      (1,2)(4,5)\n  Got:\n      (2,3)(4,5)\n  **********************************************************************\n  1 items had failures:\n     1 of   4 in __main__.example_34\n  ***Test Failed*** 1 failures.\n  For whitespace errors, see the file /home/drake/.sage//tmp/.doctest_permgroup.py\n           [6.7 s]\n  exit code: 1024\n\n  ----------------------------------------------------------------------\n  The following tests failed:\n\n          sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\" \n```\n\nThis seems like #5584 again. I ran a bisect and it blames #6647.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7206\n\n",
     "created_at": "2009-10-14T03:02:20Z",
     "labels": [
         "component: group theory",
@@ -44,7 +44,6 @@ drake@sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/perm
           sage -t  "devel/sage/sage/groups/perm_gps/permgroup.py" 
 ```
 
-
 This seems like #5584 again. I ran a bisect and it blames #6647.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7206
@@ -58,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7206
 archive/issue_comments_059681.json:
 ```json
 {
-    "body": "Hy Dan,\n\nWith 4.1.1 and sage-combinat queue applied (the patch come from here : #6647), I have\n\n```\nnicolas@nicolas-laptop:/opt/sage/devel/sage-combinat$ sage -t sage/groups/perm_gps/permgroup.py \nsage -t  \"devel/sage-combinat/sage/groups/perm_gps/permgroup.py\"\n\t [5.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.4 seconds\n```\n\n\nBut, if I play with the method .random_element()\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()\n()\nsage: G.random_element()\n(4,5)\nsage: G.random_element()\n(1,3,2)(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3)\n```\n\n\nI saw your pointer from my patch about strong generating system. I didn't touch random_element(). I would be very happy to help and investigate this but my guess is that touch interface and Gap behavior... I don't know even if it is possible to put a doctest on such random method where the random part is inside Gap and not inside Sage...\n\nI don't really know that is very important in this doctest, a possible trick is\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element() in G                        \nTrue\n```\n\nHere, one's can be sure there no timestamps random dependencies of Gap or other things I should not say because I really don't know anything about random and Gap.\n\nIf anyone know something about that ?",
+    "body": "Hy Dan,\n\nWith 4.1.1 and sage-combinat queue applied (the patch come from here : #6647), I have\n\n```\nnicolas@nicolas-laptop:/opt/sage/devel/sage-combinat$ sage -t sage/groups/perm_gps/permgroup.py \nsage -t  \"devel/sage-combinat/sage/groups/perm_gps/permgroup.py\"\n\t [5.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.4 seconds\n```\n\nBut, if I play with the method .random_element()\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()\n()\nsage: G.random_element()\n(4,5)\nsage: G.random_element()\n(1,3,2)(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3)\n```\n\nI saw your pointer from my patch about strong generating system. I didn't touch random_element(). I would be very happy to help and investigate this but my guess is that touch interface and Gap behavior... I don't know even if it is possible to put a doctest on such random method where the random part is inside Gap and not inside Sage...\n\nI don't really know that is very important in this doctest, a possible trick is\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element() in G                        \nTrue\n```\nHere, one's can be sure there no timestamps random dependencies of Gap or other things I should not say because I really don't know anything about random and Gap.\n\nIf anyone know something about that ?",
     "created_at": "2009-10-14T12:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
@@ -80,7 +79,6 @@ sage -t  "devel/sage-combinat/sage/groups/perm_gps/permgroup.py"
 All tests passed!
 Total time for all tests: 5.4 seconds
 ```
-
 
 But, if I play with the method .random_element()
 
@@ -114,7 +112,6 @@ sage: G.random_element()
 (1,3)
 ```
 
-
 I saw your pointer from my patch about strong generating system. I didn't touch random_element(). I would be very happy to help and investigate this but my guess is that touch interface and Gap behavior... I don't know even if it is possible to put a doctest on such random method where the random part is inside Gap and not inside Sage...
 
 I don't really know that is very important in this doctest, a possible trick is
@@ -124,7 +121,6 @@ sage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])
 sage: G.random_element() in G                        
 True
 ```
-
 Here, one's can be sure there no timestamps random dependencies of Gap or other things I should not say because I really don't know anything about random and Gap.
 
 If anyone know something about that ?

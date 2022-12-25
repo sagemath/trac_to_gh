@@ -225,7 +225,7 @@ Adds the requisite imports to `worksheet_listing.html`
 archive/issue_comments_060946.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> I'll try to take a closer look tomorrow.  A quick note: The bgiframe plugin is already in `sagenb/data/jqueryui/development-bundle/external`.\nDepending on the presence of the bgiframe plugin in the development kit (or the presence of the development kit itself) of an external package does not seem like a good idea to me.",
+    "body": "Replying to [comment:4 mpatel]:\n> I'll try to take a closer look tomorrow.  A quick note: The bgiframe plugin is already in `sagenb/data/jqueryui/development-bundle/external`.\n\nDepending on the presence of the bgiframe plugin in the development kit (or the presence of the development kit itself) of an external package does not seem like a good idea to me.",
     "created_at": "2009-10-27T15:40:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -236,6 +236,7 @@ archive/issue_comments_060946.json:
 
 Replying to [comment:4 mpatel]:
 > I'll try to take a closer look tomorrow.  A quick note: The bgiframe plugin is already in `sagenb/data/jqueryui/development-bundle/external`.
+
 Depending on the presence of the bgiframe plugin in the development kit (or the presence of the development kit itself) of an external package does not seem like a good idea to me.
 
 
@@ -283,7 +284,7 @@ Minified three JS files.  Various small changes.  Apply only this patch.
 archive/issue_comments_060949.json:
 ```json
 {
-    "body": "Version 7:\n\n* Updates a few JS functions per [JSLint](http://www.jslint.com/) in \"The Good Parts\" mode.\n* Includes `farbtastic.min.js`, `jquery.event.extendedclick.min.js`, and `jquery.form.min.js`, all made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/) 2.4.2:\n\n```\njava -jar yuicompressor-2.4.2.jar foo.js > foo.min.js\n```\n\n* Uses `src=\"/javascript/jquery/plugins/jquery.bgiframe.min.js\"` consistently.\n\nTo the extent it counts, my review is positive.",
+    "body": "Version 7:\n\n* Updates a few JS functions per [JSLint](http://www.jslint.com/) in \"The Good Parts\" mode.\n* Includes `farbtastic.min.js`, `jquery.event.extendedclick.min.js`, and `jquery.form.min.js`, all made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/) 2.4.2:\n\n```\njava -jar yuicompressor-2.4.2.jar foo.js > foo.min.js\n```\n* Uses `src=\"/javascript/jquery/plugins/jquery.bgiframe.min.js\"` consistently.\n\nTo the extent it counts, my review is positive.",
     "created_at": "2009-10-31T08:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7310",
     "type": "issue_comment",
@@ -300,7 +301,6 @@ Version 7:
 ```
 java -jar yuicompressor-2.4.2.jar foo.js > foo.min.js
 ```
-
 * Uses `src="/javascript/jquery/plugins/jquery.bgiframe.min.js"` consistently.
 
 To the extent it counts, my review is positive.

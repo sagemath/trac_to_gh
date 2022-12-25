@@ -3,7 +3,7 @@
 archive/issues_002040.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
+    "body": "Assignee: @williamstein\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
     "created_at": "2008-02-03T22:37:57Z",
     "labels": [
         "component: graphics",
@@ -20,12 +20,10 @@ Assignee: @williamstein
 
 1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless
 
-
 ```
 sage: P = point((0,0))
 sage: P.show?
 ```
-
 
 nothing about axes labels.
 
@@ -35,7 +33,6 @@ this in the notebook (good), and command line (bad):
 ```
 sage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])
 ```
-
 
 
 

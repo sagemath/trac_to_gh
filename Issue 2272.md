@@ -3,7 +3,7 @@
 archive/issues_002272.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nWhile nosing around #1284, I ran into some more trouble with subgroups of abelian groups:\n\n\n```\nsage: A = G.subgroup([a])\nsage: G.<a,b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: a in A   # should return True\nFalse\nsage: A.gens()\n[a]\nsage: A.0      # should return a\nf\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2272\n\n",
+    "body": "Assignee: joyner\n\nWhile nosing around #1284, I ran into some more trouble with subgroups of abelian groups:\n\n```\nsage: A = G.subgroup([a])\nsage: G.<a,b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: a in A   # should return True\nFalse\nsage: A.gens()\n[a]\nsage: A.0      # should return a\nf\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2272\n\n",
     "created_at": "2008-02-23T00:49:48Z",
     "labels": [
         "component: group theory",
@@ -20,7 +20,6 @@ Assignee: joyner
 
 While nosing around #1284, I ran into some more trouble with subgroups of abelian groups:
 
-
 ```
 sage: A = G.subgroup([a])
 sage: G.<a,b> = AbelianGroup(2)
@@ -32,7 +31,6 @@ sage: A.gens()
 sage: A.0      # should return a
 f
 ```
-
 
 
 
@@ -66,7 +64,7 @@ One issue is that the group is infinite, so perhaps a NotImplementedError makes 
 archive/issue_comments_015034.json:
 ```json
 {
-    "body": "The way G.subgroup([a]) is currently written, if you want the generators to have anything other than the default name (f or f1, f2, ...), you must name them explicitly. So, I'm not sure if\n\n```\nsage: A.0      # should return a\nf\n```\n\nis a bug or feature.",
+    "body": "The way G.subgroup([a]) is currently written, if you want the generators to have anything other than the default name (f or f1, f2, ...), you must name them explicitly. So, I'm not sure if\n\n```\nsage: A.0      # should return a\nf\n```\nis a bug or feature.",
     "created_at": "2008-02-24T18:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2272",
     "type": "issue_comment",
@@ -81,7 +79,6 @@ The way G.subgroup([a]) is currently written, if you want the generators to have
 sage: A.0      # should return a
 f
 ```
-
 is a bug or feature.
 
 

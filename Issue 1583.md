@@ -3,7 +3,7 @@
 archive/issues_001583.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere are instances in which Sage thinks that a one-dimensional space of modular symbols is not simple, and it decomposes the space into a one-dimensional and a zero-dimensional subspace:\n\n\n```\nsage: C=ModularSymbols(1,14,0,GF(5)).cuspidal_submodule()\nsage: C\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5\nsage: C.is_simple()\nFalse\nsage: C.simple_factors()\n\n[Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5,\n Modular Symbols subspace of dimension 0 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1583\n\n",
+    "body": "Assignee: @williamstein\n\nThere are instances in which Sage thinks that a one-dimensional space of modular symbols is not simple, and it decomposes the space into a one-dimensional and a zero-dimensional subspace:\n\n```\nsage: C=ModularSymbols(1,14,0,GF(5)).cuspidal_submodule()\nsage: C\nModular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5\nsage: C.is_simple()\nFalse\nsage: C.simple_factors()\n\n[Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5,\n Modular Symbols subspace of dimension 0 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1583\n\n",
     "created_at": "2007-12-21T17:47:00Z",
     "labels": [
         "component: modular forms",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 There are instances in which Sage thinks that a one-dimensional space of modular symbols is not simple, and it decomposes the space into a one-dimensional and a zero-dimensional subspace:
 
-
 ```
 sage: C=ModularSymbols(1,14,0,GF(5)).cuspidal_submodule()
 sage: C
@@ -32,7 +31,6 @@ sage: C.simple_factors()
 [Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5,
  Modular Symbols subspace of dimension 0 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 14 with sign 0 over Finite Field of size 5]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1583

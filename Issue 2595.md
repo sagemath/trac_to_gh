@@ -3,7 +3,7 @@
 archive/issues_002595.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen one installs the optional polymake.spkg the cube doctest fails since somehow polymake's cube is in $PATH before rubik's cube:\n\n```\n./local/bin/cube\n./local/polymake/bin/cube\n```\n\n\nI would suggest changing the name of the binary from rubiks.spkg.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2595\n\n",
+    "body": "Assignee: mabshoff\n\nWhen one installs the optional polymake.spkg the cube doctest fails since somehow polymake's cube is in $PATH before rubik's cube:\n\n```\n./local/bin/cube\n./local/polymake/bin/cube\n```\n\nI would suggest changing the name of the binary from rubiks.spkg.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2595\n\n",
     "created_at": "2008-03-19T12:44:32Z",
     "labels": [
         "component: packages: standard",
@@ -25,7 +25,6 @@ When one installs the optional polymake.spkg the cube doctest fails since someho
 ./local/bin/cube
 ./local/polymake/bin/cube
 ```
-
 
 I would suggest changing the name of the binary from rubiks.spkg.
 

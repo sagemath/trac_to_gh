@@ -3,7 +3,7 @@
 archive/issues_007709.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @nthiery @rlmill\n\nI often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :\n\n```\ng = Graph(edges=[ ... ] )\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7709\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nthiery @rlmill\n\nI often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :\n\n```\ng = Graph(edges=[ ... ] )\n```\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7709\n\n",
     "created_at": "2009-12-16T11:55:26Z",
     "labels": [
         "component: graph theory"
@@ -24,7 +24,6 @@ I often need to create graphs defined by a set of edges, and it should not be ha
 ```
 g = Graph(edges=[ ... ] )
 ```
-
 
 Nathann
 
@@ -206,7 +205,7 @@ I would change the ValueError message to something much shorter and more compreh
 archive/issue_comments_066058.json:
 ```json
 {
-    "body": "Replying to [comment:9 rlm]:\n> I would change the ValueError message to something much shorter and more comprehensive, such as \"Edges input must all be of the same format\" or length or something...\n\nAlso, the doctests don't expose this error.",
+    "body": "Replying to [comment:9 rlm]:\n> I would change the ValueError message to something much shorter and more comprehensive, such as \"Edges input must all be of the same format\" or length or something...\n\n\nAlso, the doctests don't expose this error.",
     "created_at": "2010-08-04T01:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
@@ -217,6 +216,7 @@ archive/issue_comments_066058.json:
 
 Replying to [comment:9 rlm]:
 > I would change the ValueError message to something much shorter and more comprehensive, such as "Edges input must all be of the same format" or length or something...
+
 
 Also, the doctests don't expose this error.
 
@@ -247,7 +247,7 @@ Nathann
 archive/issue_comments_066060.json:
 ```json
 {
-    "body": "Replying to [comment:11 ncohen]:\n> I just updated the ticket to fix it ! Do you think this method is acceptable and I can now do the same for DiGraphs ?\n\nNathann,\n\nThis looks good (maybe in the multiedges=False test you can show the list of edges afterward to demonstrate what actually happens). Please implement this in the DiGraph case as well!",
+    "body": "Replying to [comment:11 ncohen]:\n> I just updated the ticket to fix it ! Do you think this method is acceptable and I can now do the same for DiGraphs ?\n\n\nNathann,\n\nThis looks good (maybe in the multiedges=False test you can show the list of edges afterward to demonstrate what actually happens). Please implement this in the DiGraph case as well!",
     "created_at": "2010-08-06T14:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
@@ -258,6 +258,7 @@ archive/issue_comments_066060.json:
 
 Replying to [comment:11 ncohen]:
 > I just updated the ticket to fix it ! Do you think this method is acceptable and I can now do the same for DiGraphs ?
+
 
 Nathann,
 

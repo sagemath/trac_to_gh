@@ -109,7 +109,7 @@ Can you explain in a bit more detail?  How is PolyBoRi using that method?
 archive/issue_comments_060366.json:
 ```json
 {
-    "body": "Hi Mike, sorry for being so brief earlier, I was in a rush.\n\nPolyBoRi calls this function from various functions which are called by the `groebner_basis` function. The ones I could find quickly are:\n\n\n```\npolybori-0.6/pyroot/polybori/rank.py:    return p.lex_lead().variables().next()\npolybori-0.6/pyroot/polybori/ll.py:      return Monomial(v).variables().next().index()\npolybori-0.6/testsuite/py/parsegat.py:    return p.lead().variables().next()\n```\n\n\nAs you can see, it calls next() immediatly on the result of `variables()`. Right now, certain GB computations will fail with an `AttributeError` because of this.",
+    "body": "Hi Mike, sorry for being so brief earlier, I was in a rush.\n\nPolyBoRi calls this function from various functions which are called by the `groebner_basis` function. The ones I could find quickly are:\n\n```\npolybori-0.6/pyroot/polybori/rank.py:    return p.lex_lead().variables().next()\npolybori-0.6/pyroot/polybori/ll.py:      return Monomial(v).variables().next().index()\npolybori-0.6/testsuite/py/parsegat.py:    return p.lead().variables().next()\n```\n\nAs you can see, it calls next() immediatly on the result of `variables()`. Right now, certain GB computations will fail with an `AttributeError` because of this.",
     "created_at": "2009-10-23T22:31:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7271",
     "type": "issue_comment",
@@ -122,13 +122,11 @@ Hi Mike, sorry for being so brief earlier, I was in a rush.
 
 PolyBoRi calls this function from various functions which are called by the `groebner_basis` function. The ones I could find quickly are:
 
-
 ```
 polybori-0.6/pyroot/polybori/rank.py:    return p.lex_lead().variables().next()
 polybori-0.6/pyroot/polybori/ll.py:      return Monomial(v).variables().next().index()
 polybori-0.6/testsuite/py/parsegat.py:    return p.lead().variables().next()
 ```
-
 
 As you can see, it calls next() immediatly on the result of `variables()`. Right now, certain GB computations will fail with an `AttributeError` because of this.
 

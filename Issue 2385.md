@@ -3,7 +3,7 @@
 archive/issues_002385.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis patch adds a polynomial_coefficient method which aims to replace the coefficient method for mpolynomials.\n\nSome problems with the coefficient function are:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\n2\nsage: f.coefficient(x^2)\ny - 1\nsage: f.polynomial_coefficient({x:0})\n-2*y + 2\n```\n\nNote that ZZ and QQ are not consistent in this either:\n\n```\nsage: R.<x,y,z>=QQ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\nx^2*y - x^2 - 2*y + 2\n```\n\n\nSome of the problems are that there is no way to state that I want all the terms which do not have x.  The polynomial_coefficient method fixes that by taking a dictionary with degrees.\n\nI don't think the patch I posted is the end of the story on this.  I believe that the coefficient method should be a synomyn for polynomial_coefficient or monomial_coefficient.  I'm not sure which.  I'm also not sure what the best parameters are for polynomial_coefficient.  The dictionary syntax is my preferred, but I'm aware that some people may not like dictionaries quite as much as I do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2385\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch adds a polynomial_coefficient method which aims to replace the coefficient method for mpolynomials.\n\nSome problems with the coefficient function are:\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\n2\nsage: f.coefficient(x^2)\ny - 1\nsage: f.polynomial_coefficient({x:0})\n-2*y + 2\n```\nNote that ZZ and QQ are not consistent in this either:\n\n```\nsage: R.<x,y,z>=QQ[]\nsage: f=(x^2-2)*(y-1); f\nx^2*y - x^2 - 2*y + 2\nsage: f.coefficient(R(1))\nx^2*y - x^2 - 2*y + 2\n```\n\nSome of the problems are that there is no way to state that I want all the terms which do not have x.  The polynomial_coefficient method fixes that by taking a dictionary with degrees.\n\nI don't think the patch I posted is the end of the story on this.  I believe that the coefficient method should be a synomyn for polynomial_coefficient or monomial_coefficient.  I'm not sure which.  I'm also not sure what the best parameters are for polynomial_coefficient.  The dictionary syntax is my preferred, but I'm aware that some people may not like dictionaries quite as much as I do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2385\n\n",
     "created_at": "2008-03-04T16:19:35Z",
     "labels": [
         "component: algebraic geometry",
@@ -33,7 +33,6 @@ y - 1
 sage: f.polynomial_coefficient({x:0})
 -2*y + 2
 ```
-
 Note that ZZ and QQ are not consistent in this either:
 
 ```
@@ -43,7 +42,6 @@ x^2*y - x^2 - 2*y + 2
 sage: f.coefficient(R(1))
 x^2*y - x^2 - 2*y + 2
 ```
-
 
 Some of the problems are that there is no way to state that I want all the terms which do not have x.  The polynomial_coefficient method fixes that by taking a dictionary with degrees.
 
@@ -132,7 +130,7 @@ One comment:  if I ever asked a polynomial for a specific coefficient, I would e
 archive/issue_comments_016064.json:
 ```json
 {
-    "body": "I'm not sure what you meant by \"specific coefficient\".  Did you mean situation !#1 or !#2 below?\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2+1)*(y-1)\n# Situation 1\nsage: f.monomial_coefficient(x^2)\n-1\nsage: f.monomial_coefficient(x^2).parent()\nInteger Ring\n# Situation 2\nsage: f.polynomial_coefficient({x:2})\ny - 1\nsage: f.polynomial_coefficient({x:2}).parent()\nMultivariate Polynomial Ring in x, y, z over Integer Ring\n```\n\n\nI took the word specific to imply situation 1 which seems to me the code does what you say it should do.\n\nIf you are meaning situation 2, then I didn't put the result in the ring ZZ[y,z] simply because I didn't really appreciate it in my computational context.  One reason not to create the new ring ZZ[y,z] would be speed concerns both at creation and with later arithmetic.  That is, it could be that I really do want to do arithmetic with this coefficient in the large ring and this is a moderately expensive coercion -- certainly something you would not want to do inside of a tight loop.\n\nHowever, the parent of the result of polynomial_coefficient is a very legitimate point to discuss.  I think my speed concerns are valid and sufficient argument, but this is one of the reasons that I don't think this patch is the final word on this point.",
+    "body": "I'm not sure what you meant by \"specific coefficient\".  Did you mean situation !#1 or !#2 below?\n\n```\nsage: R.<x,y,z>=ZZ[]\nsage: f=(x^2+1)*(y-1)\n# Situation 1\nsage: f.monomial_coefficient(x^2)\n-1\nsage: f.monomial_coefficient(x^2).parent()\nInteger Ring\n# Situation 2\nsage: f.polynomial_coefficient({x:2})\ny - 1\nsage: f.polynomial_coefficient({x:2}).parent()\nMultivariate Polynomial Ring in x, y, z over Integer Ring\n```\n\nI took the word specific to imply situation 1 which seems to me the code does what you say it should do.\n\nIf you are meaning situation 2, then I didn't put the result in the ring ZZ[y,z] simply because I didn't really appreciate it in my computational context.  One reason not to create the new ring ZZ[y,z] would be speed concerns both at creation and with later arithmetic.  That is, it could be that I really do want to do arithmetic with this coefficient in the large ring and this is a moderately expensive coercion -- certainly something you would not want to do inside of a tight loop.\n\nHowever, the parent of the result of polynomial_coefficient is a very legitimate point to discuss.  I think my speed concerns are valid and sufficient argument, but this is one of the reasons that I don't think this patch is the final word on this point.",
     "created_at": "2008-03-10T18:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2385",
     "type": "issue_comment",
@@ -157,7 +155,6 @@ y - 1
 sage: f.polynomial_coefficient({x:2}).parent()
 Multivariate Polynomial Ring in x, y, z over Integer Ring
 ```
-
 
 I took the word specific to imply situation 1 which seems to me the code does what you say it should do.
 
@@ -242,7 +239,7 @@ Sorry to be so picky -- the basic idea is certainly a good one.
 archive/issue_comments_016068.json:
 ```json
 {
-    "body": "Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2385/mpoly-coeff.patch) by jbmohler created at 2008-03-11 18:25:12\n\nThanks very much for the comments.  I think that documentation is the principal hurdle this patch faces so I want to get it right!  I posted a new patch to address your comments.\n\nReplying to [comment:6 cremona]:\n> Also, can you give a more precise but succinct definition of your polynomial_coefficient() function, more than just examples?\n\nWell, I actually thought my description was pretty good.  It's sort of difficult to get succinct.  Feel free to post better alternatives to the first paragraph of polynomial_coefficient doc-string.",
+    "body": "Attachment [mpoly-coeff.patch](tarball://root/attachments/some-uuid/ticket2385/mpoly-coeff.patch) by jbmohler created at 2008-03-11 18:25:12\n\nThanks very much for the comments.  I think that documentation is the principal hurdle this patch faces so I want to get it right!  I posted a new patch to address your comments.\n\nReplying to [comment:6 cremona]:\n> Also, can you give a more precise but succinct definition of your polynomial_coefficient() function, more than just examples?\n\n\nWell, I actually thought my description was pretty good.  It's sort of difficult to get succinct.  Feel free to post better alternatives to the first paragraph of polynomial_coefficient doc-string.",
     "created_at": "2008-03-11T18:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2385",
     "type": "issue_comment",
@@ -257,6 +254,7 @@ Thanks very much for the comments.  I think that documentation is the principal 
 
 Replying to [comment:6 cremona]:
 > Also, can you give a more precise but succinct definition of your polynomial_coefficient() function, more than just examples?
+
 
 Well, I actually thought my description was pretty good.  It's sort of difficult to get succinct.  Feel free to post better alternatives to the first paragraph of polynomial_coefficient doc-string.
 

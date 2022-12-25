@@ -3,7 +3,7 @@
 archive/issues_009493.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nSnippet from (my new) `SPKG.txt`:\n\n```\n## Dependencies\n\n * mpir\n * boehm_gc\n\n## Special Update/Build Instructions\n * Delete the src/msvc directory\n * Delete the src/contrib/encodings directory.  So, do not build with\n   --enable-unicode: See http://trac.sagemath.org/sage_trac/ticket/7732\n * TODO: Delete the src/src/gmp directory (13MB!), as we use MPIR\n     - perhaps add --with-gmp-prefix=$SAGE_LOCAL to configure\n       to make sure we use Sage's one (MPIR); this is independent\n       of the deletion of src/src/gmp\n     - needs copying src/src/gmp/install-sh to somewhere else or\n       patching configure to use e.g. that one in src/src/gc\n * TODO: Make ECL use Sage's Boehm GC on MacOS X as well (but perhaps\n   put some changes from ECL's into Sage's Boehm GC), then remove\n   the src/src/gc directory, too\n\n## Changelog\n\n### ecl-10.2.1.p2 (Leif Leonhardy, 13th July 2010)\n  * Removed src/msvc and src/contrib/encodings directories again.\n  * Updated build/update instructions above.\n```\n\n(See also [this comment](http://trac.sagemath.org/sage_trac/ticket/9187#comment:29) ff. at #9187)\n\nMore worth is removing the GMP source tree, too:\n\n```\n$ ls -l ecl-stripped-v?/*.spkg\n-rw-r--r-- 1 leif64 leif64 3976609 Jul 14 00:42 ecl-stripped-v1/ecl-10.2.1.p2.spkg\n-rw-r--r-- 1 leif64 leif64 2379135 Jul 14 00:02 ecl-stripped-v2/ecl-10.2.1.p2.spkg\n```\n\n(v2 with in addition GMP removed is less than half the size!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9493\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nSnippet from (my new) `SPKG.txt`:\n\n```\n## Dependencies\n\n * mpir\n * boehm_gc\n\n## Special Update/Build Instructions\n * Delete the src/msvc directory\n * Delete the src/contrib/encodings directory.  So, do not build with\n   --enable-unicode: See http://trac.sagemath.org/sage_trac/ticket/7732\n * TODO: Delete the src/src/gmp directory (13MB!), as we use MPIR\n     - perhaps add --with-gmp-prefix=$SAGE_LOCAL to configure\n       to make sure we use Sage's one (MPIR); this is independent\n       of the deletion of src/src/gmp\n     - needs copying src/src/gmp/install-sh to somewhere else or\n       patching configure to use e.g. that one in src/src/gc\n * TODO: Make ECL use Sage's Boehm GC on MacOS X as well (but perhaps\n   put some changes from ECL's into Sage's Boehm GC), then remove\n   the src/src/gc directory, too\n\n## Changelog\n\n### ecl-10.2.1.p2 (Leif Leonhardy, 13th July 2010)\n  * Removed src/msvc and src/contrib/encodings directories again.\n  * Updated build/update instructions above.\n```\n(See also [this comment](http://trac.sagemath.org/sage_trac/ticket/9187#comment:29) ff. at #9187)\n\nMore worth is removing the GMP source tree, too:\n\n```\n$ ls -l ecl-stripped-v?/*.spkg\n-rw-r--r-- 1 leif64 leif64 3976609 Jul 14 00:42 ecl-stripped-v1/ecl-10.2.1.p2.spkg\n-rw-r--r-- 1 leif64 leif64 2379135 Jul 14 00:02 ecl-stripped-v2/ecl-10.2.1.p2.spkg\n```\n(v2 with in addition GMP removed is less than half the size!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9493\n\n",
     "created_at": "2010-07-13T23:19:35Z",
     "labels": [
         "component: packages: standard"
@@ -47,7 +47,6 @@ Snippet from (my new) `SPKG.txt`:
   * Removed src/msvc and src/contrib/encodings directories again.
   * Updated build/update instructions above.
 ```
-
 (See also [this comment](http://trac.sagemath.org/sage_trac/ticket/9187#comment:29) ff. at #9187)
 
 More worth is removing the GMP source tree, too:
@@ -57,7 +56,6 @@ $ ls -l ecl-stripped-v?/*.spkg
 -rw-r--r-- 1 leif64 leif64 3976609 Jul 14 00:42 ecl-stripped-v1/ecl-10.2.1.p2.spkg
 -rw-r--r-- 1 leif64 leif64 2379135 Jul 14 00:02 ecl-stripped-v2/ecl-10.2.1.p2.spkg
 ```
-
 (v2 with in addition GMP removed is less than half the size!)
 
 Issue created by migration from https://trac.sagemath.org/ticket/9493
@@ -71,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9493
 archive/issue_comments_090973.json:
 ```json
 {
-    "body": "Minimal patch to `configure` to allow `rm -r src/src/gmp`:\n\n```patch\n--- src/src/configure\t2010-02-13 20:04:32.000000000 +0100\n+++ patches/src.src.configure\t2010-07-14 01:29:39.000000000 +0200\n@@ -1987,7 +1987,7 @@\n \n \n ac_aux_dir=\n-for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp; do\n+for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp ${srcdir}/gc; do\n   if test -f \"$ac_dir/install-sh\"; then\n     ac_aux_dir=$ac_dir\n     ac_install_sh=\"$ac_aux_dir/install-sh -c\"\n```\n\n(Tested with 4.5.rc0 on a 32-bit Linux, with `--with-gmp-prefix=$SAGE_LOCAL` added to `./configure` in `spkg-install`, but *should* work as fine without that.)\n\nThough we should in mid-term remove (Boehm) gc as well, because Sage ships with its own copy of it. (ECL's boehm_gc is only used on MacOS X, and just because ECL unconditionally thinks an already installed version there can only be Fink's broken one.) But this is worth another ticket.\n\nAnother simple solution is just leaving `install-sh` in `src/src/gmp` (untested) or just copying it to `${srcdir} ` and adding *that* directory to the `for` list.",
+    "body": "Minimal patch to `configure` to allow `rm -r src/src/gmp`:\n\n```patch\n--- src/src/configure\t2010-02-13 20:04:32.000000000 +0100\n+++ patches/src.src.configure\t2010-07-14 01:29:39.000000000 +0200\n@@ -1987,7 +1987,7 @@\n \n \n ac_aux_dir=\n-for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp; do\n+for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp ${srcdir}/gc; do\n   if test -f \"$ac_dir/install-sh\"; then\n     ac_aux_dir=$ac_dir\n     ac_install_sh=\"$ac_aux_dir/install-sh -c\"\n```\n(Tested with 4.5.rc0 on a 32-bit Linux, with `--with-gmp-prefix=$SAGE_LOCAL` added to `./configure` in `spkg-install`, but *should* work as fine without that.)\n\nThough we should in mid-term remove (Boehm) gc as well, because Sage ships with its own copy of it. (ECL's boehm_gc is only used on MacOS X, and just because ECL unconditionally thinks an already installed version there can only be Fink's broken one.) But this is worth another ticket.\n\nAnother simple solution is just leaving `install-sh` in `src/src/gmp` (untested) or just copying it to `${srcdir} ` and adding *that* directory to the `for` list.",
     "created_at": "2010-07-14T00:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -95,7 +93,6 @@ Minimal patch to `configure` to allow `rm -r src/src/gmp`:
      ac_aux_dir=$ac_dir
      ac_install_sh="$ac_aux_dir/install-sh -c"
 ```
-
 (Tested with 4.5.rc0 on a 32-bit Linux, with `--with-gmp-prefix=$SAGE_LOCAL` added to `./configure` in `spkg-install`, but *should* work as fine without that.)
 
 Though we should in mid-term remove (Boehm) gc as well, because Sage ships with its own copy of it. (ECL's boehm_gc is only used on MacOS X, and just because ECL unconditionally thinks an already installed version there can only be Fink's broken one.) But this is worth another ticket.
@@ -109,7 +106,7 @@ Another simple solution is just leaving `install-sh` in `src/src/gmp` (untested)
 archive/issue_comments_090974.json:
 ```json
 {
-    "body": "Modified `spkg-install` to allow removal of GMP (suggestion):\n\n```patch\n--- ecl-stripped-v1/ecl-10.2.1.p2/spkg-install\t2010-07-12 05:22:11.000000000 +0200\n+++ ecl-stripped-v2/ecl-10.2.1.p2/spkg-install\t2010-07-14 02:21:22.000000000 +0200\n@@ -154,6 +154,15 @@\n # We clear MAKEFLAGS to fix building multiple spkgs in parallel on OS X.\n export MAKEFLAGS=\n \n+if [ -d patches ] && [ `ls patches` != \"\" ]; then\n+  echo \"Applying patches...\"\n+\n+    test -f patches/src.src.configure && cp -pv patches/src.src.configure src/src/configure\n+\n+  echo \"Finished applying patches.\"\n+  echo \" \"\n+fi\n+\n set +e\n \n cd src\n@@ -165,9 +174,9 @@\n    # 1) OpenSolaris (SunOS 5.11)\n    # 2) Intel or AMD CPU \n    # 3) 64-bit build\n-   ./configure --prefix=$SAGE_LOCAL --with-dffi=no\n+   ./configure --prefix=$SAGE_LOCAL --with-dffi=no --with-gmp-prefix=$SAGE_LOCAL\n else\n-   ./configure --prefix=$SAGE_LOCAL \n+   ./configure --prefix=$SAGE_LOCAL --with-gmp-prefix=$SAGE_LOCAL\n fi\n \n if [ $? -ne 0 ]; then\n```\n\n(v1's `spkg-install` is unchanged w.r.t. ECL 10.2.1.p1.)",
+    "body": "Modified `spkg-install` to allow removal of GMP (suggestion):\n\n```patch\n--- ecl-stripped-v1/ecl-10.2.1.p2/spkg-install\t2010-07-12 05:22:11.000000000 +0200\n+++ ecl-stripped-v2/ecl-10.2.1.p2/spkg-install\t2010-07-14 02:21:22.000000000 +0200\n@@ -154,6 +154,15 @@\n # We clear MAKEFLAGS to fix building multiple spkgs in parallel on OS X.\n export MAKEFLAGS=\n \n+if [ -d patches ] && [ `ls patches` != \"\" ]; then\n+  echo \"Applying patches...\"\n+\n+    test -f patches/src.src.configure && cp -pv patches/src.src.configure src/src/configure\n+\n+  echo \"Finished applying patches.\"\n+  echo \" \"\n+fi\n+\n set +e\n \n cd src\n@@ -165,9 +174,9 @@\n    # 1) OpenSolaris (SunOS 5.11)\n    # 2) Intel or AMD CPU \n    # 3) 64-bit build\n-   ./configure --prefix=$SAGE_LOCAL --with-dffi=no\n+   ./configure --prefix=$SAGE_LOCAL --with-dffi=no --with-gmp-prefix=$SAGE_LOCAL\n else\n-   ./configure --prefix=$SAGE_LOCAL \n+   ./configure --prefix=$SAGE_LOCAL --with-gmp-prefix=$SAGE_LOCAL\n fi\n \n if [ $? -ne 0 ]; then\n```\n(v1's `spkg-install` is unchanged w.r.t. ECL 10.2.1.p1.)",
     "created_at": "2010-07-14T00:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -152,7 +149,6 @@ Modified `spkg-install` to allow removal of GMP (suggestion):
  
  if [ $? -ne 0 ]; then
 ```
-
 (v1's `spkg-install` is unchanged w.r.t. ECL 10.2.1.p1.)
 
 
@@ -186,7 +182,7 @@ Dave
 archive/issue_comments_090976.json:
 ```json
 {
-    "body": "What about\n\n```sh\ncopy-patch()\n{\n  if [ -f patches/$1 ] ; then\n    echo \"  Patching \"$2\n    cp -p patches/$1 $2\n  fi\n}\n```\n\nand (e.g.)\n\n```sh\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n  echo \"Applying patches...\" \n\n  copy-patch \"src.src.configure\" \"src/src/configure\"\n\n  echo \"Finished applying patches.\" \n  echo \" \" \nfi      \n```\n\n?",
+    "body": "What about\n\n```sh\ncopy-patch()\n{\n  if [ -f patches/$1 ] ; then\n    echo \"  Patching \"$2\n    cp -p patches/$1 $2\n  fi\n}\n```\nand (e.g.)\n\n```sh\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n  echo \"Applying patches...\" \n\n  copy-patch \"src.src.configure\" \"src/src/configure\"\n\n  echo \"Finished applying patches.\" \n  echo \" \" \nfi      \n```\n?",
     "created_at": "2010-07-14T02:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -206,7 +202,6 @@ copy-patch()
   fi
 }
 ```
-
 and (e.g.)
 
 ```sh
@@ -219,7 +214,6 @@ if [ -d patches ] && [ `ls patches` != "" ]; then
   echo " " 
 fi      
 ```
-
 ?
 
 
@@ -229,7 +223,7 @@ fi
 archive/issue_comments_090977.json:
 ```json
 {
-    "body": "I don't think \n\n\n```\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n```\n\n\nis safe. I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on \"\" is bad practice. \n\nDave",
+    "body": "I don't think \n\n```\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n```\n\nis safe. I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on \"\" is bad practice. \n\nDave",
     "created_at": "2010-10-29T13:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -240,11 +234,9 @@ archive/issue_comments_090977.json:
 
 I don't think 
 
-
 ```
 if [ -d patches ] && [ `ls patches` != "" ]; then
 ```
-
 
 is safe. I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on "" is bad practice. 
 
@@ -257,7 +249,7 @@ Dave
 archive/issue_comments_090978.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> I don't think \n> \n\n```\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n```\n\n> \n> is safe. I don't think the order is guaranteed, so the second part could be evaluated before the first.\n\n(Even if it was, it doesn't make a difference, but...)\n\nLike in C, the second expression is only evaluated if needed (same for `||`), such that\n\n\n```sh\nfoo && bar || baz\n```\n \nis equivalent to\n\n```sh\nif foo; then\n    bar\nelse\n    baz\nfi\n```\n\n\n\nHowever, the `[ `ls patches` != \"\" ]` is suboptimal. The whole line could be\n\n```sh\nif ls patches/* >/dev/null 2>/dev/null; then\n```\n\n\n(One could substitute `ls` by e.g. `cat`, too.)  It was just one suggestion anyway.",
+    "body": "Replying to [comment:5 drkirkby]:\n> I don't think \n> \n\n{{{\nif [ -d patches ] && [ `ls patches` != \"\" ]; then\n}}}\n> \n> is safe. I don't think the order is guaranteed, so the second part could be evaluated before the first.\n\n\n(Even if it was, it doesn't make a difference, but...)\n\nLike in C, the second expression is only evaluated if needed (same for `||`), such that\n\n```sh\nfoo && bar || baz\n``` \nis equivalent to\n\n```sh\nif foo; then\n    bar\nelse\n    baz\nfi\n```\n\n\nHowever, the `[ `ls patches` != \"\" ]` is suboptimal. The whole line could be\n\n```sh\nif ls patches/* >/dev/null 2>/dev/null; then\n```\n\n(One could substitute `ls` by e.g. `cat`, too.)  It was just one suggestion anyway.",
     "created_at": "2010-10-29T23:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -270,22 +262,20 @@ Replying to [comment:5 drkirkby]:
 > I don't think 
 > 
 
-```
+{{{
 if [ -d patches ] && [ `ls patches` != "" ]; then
-```
-
+}}}
 > 
 > is safe. I don't think the order is guaranteed, so the second part could be evaluated before the first.
+
 
 (Even if it was, it doesn't make a difference, but...)
 
 Like in C, the second expression is only evaluated if needed (same for `||`), such that
 
-
 ```sh
 foo && bar || baz
-```
- 
+``` 
 is equivalent to
 
 ```sh
@@ -297,13 +287,11 @@ fi
 ```
 
 
-
 However, the `[ `ls patches` != "" ]` is suboptimal. The whole line could be
 
 ```sh
 if ls patches/* >/dev/null 2>/dev/null; then
 ```
-
 
 (One could substitute `ls` by e.g. `cat`, too.)  It was just one suggestion anyway.
 
@@ -314,7 +302,7 @@ if ls patches/* >/dev/null 2>/dev/null; then
 archive/issue_comments_090979.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on \"\" is bad practice. \n\nThe order of evaluation and the shortcutting is guaranteed by POSIX:\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_03",
+    "body": "Replying to [comment:5 drkirkby]:\n> I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on \"\" is bad practice. \n\n\nThe order of evaluation and the shortcutting is guaranteed by POSIX:\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_03",
     "created_at": "2010-10-29T23:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -325,6 +313,7 @@ archive/issue_comments_090979.json:
 
 Replying to [comment:5 drkirkby]:
 > I don't think the order is guaranteed, so the second part could be evaluated before the first. Testing on "" is bad practice. 
+
 
 The order of evaluation and the shortcutting is guaranteed by POSIX:
 
@@ -359,7 +348,7 @@ Dave
 archive/issue_comments_090981.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> I believe this should be closed, and if further cleanups are required, a new ticket is opened. \n> \n> ECL will be updated in Sage 4.6.1 to 10.4.1 in #10187. Most of the changes on this ticket are incorporated into #10187 anyway. \n\nNothing of the TODOs mentioned in the description have been done on #10187; removing the other parts was just the correction of a regression.\n\nSo IMHO this ticket should be kept open.",
+    "body": "Replying to [comment:8 drkirkby]:\n> I believe this should be closed, and if further cleanups are required, a new ticket is opened. \n> \n> ECL will be updated in Sage 4.6.1 to 10.4.1 in #10187. Most of the changes on this ticket are incorporated into #10187 anyway. \n\n\nNothing of the TODOs mentioned in the description have been done on #10187; removing the other parts was just the correction of a regression.\n\nSo IMHO this ticket should be kept open.",
     "created_at": "2010-12-03T00:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -373,6 +362,7 @@ Replying to [comment:8 drkirkby]:
 > 
 > ECL will be updated in Sage 4.6.1 to 10.4.1 in #10187. Most of the changes on this ticket are incorporated into #10187 anyway. 
 
+
 Nothing of the TODOs mentioned in the description have been done on #10187; removing the other parts was just the correction of a regression.
 
 So IMHO this ticket should be kept open.
@@ -384,7 +374,7 @@ So IMHO this ticket should be kept open.
 archive/issue_comments_090982.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> Minimal patch to `configure` to allow `rm -r src/src/gmp`:\n> {{{\n> #!patch\n> --- src/src/configure\t2010-02-13 20:04:32.000000000 +0100\n> +++ patches/src.src.configure\t2010-07-14 01:29:39.000000000 +0200\n> `@``@` -1987,7 +1987,7 `@``@`\n>  \n>  \n>  ac_aux_dir=\n> -for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp; do\n> +for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp ${srcdir}/gc; do\n>    if test -f \"$ac_dir/install-sh\"; then\n>      ac_aux_dir=$ac_dir\n>      ac_install_sh=\"$ac_aux_dir/install-sh -c\"\n> }}}\n\nNo idea whether that's at all still necessary (when removing the unused GMP source tree) -- we're meanwhile at ECL 12.12.1...\n\n> Another simple solution is just leaving `install-sh` in `src/src/gmp` (untested) or just copying it to `${srcdir} ` and adding *that* directory to the `for` list.",
+    "body": "Replying to [comment:1 leif]:\n> Minimal patch to `configure` to allow `rm -r src/src/gmp`:\n> \n> ```\n> #!patch\n> --- src/src/configure\t2010-02-13 20:04:32.000000000 +0100\n> +++ patches/src.src.configure\t2010-07-14 01:29:39.000000000 +0200\n> @@ -1987,7 +1987,7 @@\n>  \n>  \n>  ac_aux_dir=\n> -for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp; do\n> +for ac_dir in ${srcdir}/gmp \"$srcdir\"/${srcdir}/gmp ${srcdir}/gc; do\n>    if test -f \"$ac_dir/install-sh\"; then\n>      ac_aux_dir=$ac_dir\n>      ac_install_sh=\"$ac_aux_dir/install-sh -c\"\n> ```\n\n\nNo idea whether that's at all still necessary (when removing the unused GMP source tree) -- we're meanwhile at ECL 12.12.1...\n\n> Another simple solution is just leaving `install-sh` in `src/src/gmp` (untested) or just copying it to `${srcdir} ` and adding *that* directory to the `for` list.",
     "created_at": "2013-06-21T20:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -395,11 +385,12 @@ archive/issue_comments_090982.json:
 
 Replying to [comment:1 leif]:
 > Minimal patch to `configure` to allow `rm -r src/src/gmp`:
-> {{{
+> 
+> ```
 > #!patch
 > --- src/src/configure	2010-02-13 20:04:32.000000000 +0100
 > +++ patches/src.src.configure	2010-07-14 01:29:39.000000000 +0200
-> `@``@` -1987,7 +1987,7 `@``@`
+> @@ -1987,7 +1987,7 @@
 >  
 >  
 >  ac_aux_dir=
@@ -408,7 +399,8 @@ Replying to [comment:1 leif]:
 >    if test -f "$ac_dir/install-sh"; then
 >      ac_aux_dir=$ac_dir
 >      ac_install_sh="$ac_aux_dir/install-sh -c"
-> }}}
+> ```
+
 
 No idea whether that's at all still necessary (when removing the unused GMP source tree) -- we're meanwhile at ECL 12.12.1...
 
@@ -421,7 +413,7 @@ No idea whether that's at all still necessary (when removing the unused GMP sour
 archive/issue_comments_090983.json:
 ```json
 {
-    "body": "Ooops, just noticed:\n\n```sh\n$ tar tvjf spkg/standard/ecl-* | grep gmp\ntar: Record size = 8 blocks\ndrwxr-xr-x jdemeyer/jdemeyer      0 2013-04-08 13:05 ecl-12.12.1.p4/src/src/gmp/\n-rwxr-xr-x jdemeyer/jdemeyer   4105 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.sub\n-rwxr-xr-x jdemeyer/jdemeyer  31164 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/configfsf.sub\n-rwxr-xr-x jdemeyer/jdemeyer  23041 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.guess\n-rwxr-xr-x jdemeyer/jdemeyer   9505 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/install-sh\n-rwxr-xr-x jdemeyer/jdemeyer  43636 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/configfsf.guess\n-rw-r--r-- jdemeyer/jdemeyer  15353 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.in\n```\n\n\nSo there's meanwhile not much of GMP left (in our spkg), but its `config*` files still disturb: #14648\n\nHence the `install-sh` fix above should still be valid (and useful) ...",
+    "body": "Ooops, just noticed:\n\n```sh\n$ tar tvjf spkg/standard/ecl-* | grep gmp\ntar: Record size = 8 blocks\ndrwxr-xr-x jdemeyer/jdemeyer      0 2013-04-08 13:05 ecl-12.12.1.p4/src/src/gmp/\n-rwxr-xr-x jdemeyer/jdemeyer   4105 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.sub\n-rwxr-xr-x jdemeyer/jdemeyer  31164 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/configfsf.sub\n-rwxr-xr-x jdemeyer/jdemeyer  23041 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.guess\n-rwxr-xr-x jdemeyer/jdemeyer   9505 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/install-sh\n-rwxr-xr-x jdemeyer/jdemeyer  43636 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/configfsf.guess\n-rw-r--r-- jdemeyer/jdemeyer  15353 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.in\n```\n\nSo there's meanwhile not much of GMP left (in our spkg), but its `config*` files still disturb: #14648\n\nHence the `install-sh` fix above should still be valid (and useful) ...",
     "created_at": "2013-06-21T20:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -443,7 +435,6 @@ drwxr-xr-x jdemeyer/jdemeyer      0 2013-04-08 13:05 ecl-12.12.1.p4/src/src/gmp/
 -rwxr-xr-x jdemeyer/jdemeyer  43636 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/configfsf.guess
 -rw-r--r-- jdemeyer/jdemeyer  15353 2012-12-07 22:01 ecl-12.12.1.p4/src/src/gmp/config.in
 ```
-
 
 So there's meanwhile not much of GMP left (in our spkg), but its `config*` files still disturb: #14648
 
@@ -507,7 +498,7 @@ archive/issue_events_023561.json:
 archive/issue_comments_090984.json:
 ```json
 {
-    "body": "Let's get rid of the gmp subdirectory.\n----\nNew commits:",
+    "body": "Let's get rid of the gmp subdirectory.\n\n---\nNew commits:",
     "created_at": "2014-04-13T19:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9493",
     "type": "issue_comment",
@@ -517,7 +508,8 @@ archive/issue_comments_090984.json:
 ```
 
 Let's get rid of the gmp subdirectory.
-----
+
+---
 New commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_006962.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\n\nor CBC \n\n```\nsage: install_package('glpk') \n```\n\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
+    "body": "Assignee: @rlmill\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\nor CBC \n\n```\nsage: install_package('glpk') \n```\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
     "created_at": "2009-09-19T18:45:45Z",
     "labels": [
         "component: graph theory"
@@ -30,13 +30,11 @@ The functions use Linear Programming, which needs one of the two optional packag
 ``` 
 sage: install_package('cbc')
 ```
-
 or CBC 
 
 ```
 sage: install_package('glpk') 
 ```
-
 installed. You will find a helpful documentation about the construction of the Linear Program in the docstring.
 
 One of the docstrings uses the function min_vertex_cover from #6680.
@@ -132,7 +130,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057494.json:
 ```json
 {
-    "body": "This patch still applies ok, but none of the doctests work:\n\n```\nsage: cycle=graphs.CycleGraph(5)\nsage: dcycle=DiGraph(cycle)\nsage: cycle.size()\n5\nsage: dcycle.feedback_edge_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_edge_set(self, value_only)\n  12540         from sage.numerical.mip import MixedIntegerLinearProgram\n  12541         \n> 12542         p=MixedIntegerLinearProgram(sense=-1)\n  12543         \n  12544         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\nsage: cycle.min_vertex_cover()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\nAttributeError: 'Graph' object has no attribute 'min_vertex_cover'\nsage: dcycle.feedback_vertex_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_vertex_set(self, value_only)\n  12632         from sage.numerical.mip import MixedIntegerLinearProgram\n  12633         \n> 12634         p=MixedIntegerLinearProgram(sense=-1)\n  12635         \n  12636         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\n```\n\n\nThere are two issues:\n\n1. `__init__() got an unexpected keyword argument 'sense'`\n\n2. `'Graph' object has no attribute 'min_vertex_cover'`",
+    "body": "This patch still applies ok, but none of the doctests work:\n\n```\nsage: cycle=graphs.CycleGraph(5)\nsage: dcycle=DiGraph(cycle)\nsage: cycle.size()\n5\nsage: dcycle.feedback_edge_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_edge_set(self, value_only)\n  12540         from sage.numerical.mip import MixedIntegerLinearProgram\n  12541         \n> 12542         p=MixedIntegerLinearProgram(sense=-1)\n  12543         \n  12544         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\nsage: cycle.min_vertex_cover()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\nAttributeError: 'Graph' object has no attribute 'min_vertex_cover'\nsage: dcycle.feedback_vertex_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_vertex_set(self, value_only)\n  12632         from sage.numerical.mip import MixedIntegerLinearProgram\n  12633         \n> 12634         p=MixedIntegerLinearProgram(sense=-1)\n  12635         \n  12636         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\n```\n\nThere are two issues:\n\n1. `__init__() got an unexpected keyword argument 'sense'`\n\n2. `'Graph' object has no attribute 'min_vertex_cover'`",
     "created_at": "2009-12-15T16:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
@@ -188,7 +186,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: __init__() got an unexpected keyword argument 'sense'
 ```
-
 
 There are two issues:
 

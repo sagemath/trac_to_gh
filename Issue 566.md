@@ -3,7 +3,7 @@
 archive/issues_000566.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHello,\n\nevery piece of code that includes gmp.pxi leaks at least one gmpz:\n\n```\n  /* \"/tmp/Work2/sage-2.8.3.rc3/devel/sage-main/sage/rings/../ext/gmp.pxi\":66\n * cdef mpq_t tmp\n * mpz_init(u);  mpz_init(v); mpz_init(q)\n * mpz_init(u0); mpz_init(u1); mpz_init(u2)             # <<<<<<<<<<<<<<\n * mpz_init(v0); mpz_init(v1); mpz_init(v2)\n * mpz_init(t0); mpz_init(t1); mpz_init(t2)\n */\n  mpz_init(__pyx_v_8rational_u0);\n```\n\nValgrind says:\n\n```\n==25825== 8 bytes in 1 blocks are still reachable in loss record 349 of 2,539\n==25825==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==25825==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==25825==    by 0x169D8914: initrational (rational.c:10891)\n==25825==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==25825==    by 0x49D63E: import_submodule (import.c:2394)\n==25825==    by 0x49DB11: load_next (import.c:2214)\n==25825==    by 0x49DD6E: import_module_level (import.c:2002)\n==25825==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n==25825==    by 0x47D5D8: builtin___import__ (bltinmodule.c:47)\n==25825==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==25825==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==25825==    by 0x480BD3: PyEval_EvalFrameEx (ceval.c:2063)\n```\n\nThis leak is usually 8 bytes only, so this counts as noise.\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/566\n\n",
+    "body": "Assignee: mabshoff\n\nHello,\n\nevery piece of code that includes gmp.pxi leaks at least one gmpz:\n\n```\n  /* \"/tmp/Work2/sage-2.8.3.rc3/devel/sage-main/sage/rings/../ext/gmp.pxi\":66\n * cdef mpq_t tmp\n * mpz_init(u);  mpz_init(v); mpz_init(q)\n * mpz_init(u0); mpz_init(u1); mpz_init(u2)             # <<<<<<<<<<<<<<\n * mpz_init(v0); mpz_init(v1); mpz_init(v2)\n * mpz_init(t0); mpz_init(t1); mpz_init(t2)\n */\n  mpz_init(__pyx_v_8rational_u0);\n```\nValgrind says:\n\n```\n==25825== 8 bytes in 1 blocks are still reachable in loss record 349 of 2,539\n==25825==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==25825==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==25825==    by 0x169D8914: initrational (rational.c:10891)\n==25825==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==25825==    by 0x49D63E: import_submodule (import.c:2394)\n==25825==    by 0x49DB11: load_next (import.c:2214)\n==25825==    by 0x49DD6E: import_module_level (import.c:2002)\n==25825==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n==25825==    by 0x47D5D8: builtin___import__ (bltinmodule.c:47)\n==25825==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==25825==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==25825==    by 0x480BD3: PyEval_EvalFrameEx (ceval.c:2063)\n```\nThis leak is usually 8 bytes only, so this counts as noise.\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/566\n\n",
     "created_at": "2007-09-02T00:36:11Z",
     "labels": [
         "component: memleak",
@@ -32,7 +32,6 @@ every piece of code that includes gmp.pxi leaks at least one gmpz:
  */
   mpz_init(__pyx_v_8rational_u0);
 ```
-
 Valgrind says:
 
 ```
@@ -50,7 +49,6 @@ Valgrind says:
 ==25825==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)
 ==25825==    by 0x480BD3: PyEval_EvalFrameEx (ceval.c:2063)
 ```
-
 This leak is usually 8 bytes only, so this counts as noise.
 
 Cheers,
@@ -88,7 +86,7 @@ Changing status from new to assigned.
 archive/issue_comments_002921.json:
 ```json
 {
-    "body": "\n```\n[00:58] <sage> No -- there is a separate copy of the entire gmp.pxi in each file that includes it.\n[00:58] <sage> It's not shared at all.\n[00:59] <sage> Some of gmp.pxi should be moved to c_lib, i.e., to libsage.so\n[00:59] <mabshoff> So the *.pxi are really includes.\n[00:59] <sage> Then it would all be shared.\n```\n\n\nAfter the move we need to define a cleanup routine and call that routine from sage/all.py\n\nCheers,\n\nMichael",
+    "body": "```\n[00:58] <sage> No -- there is a separate copy of the entire gmp.pxi in each file that includes it.\n[00:58] <sage> It's not shared at all.\n[00:59] <sage> Some of gmp.pxi should be moved to c_lib, i.e., to libsage.so\n[00:59] <mabshoff> So the *.pxi are really includes.\n[00:59] <sage> Then it would all be shared.\n```\n\nAfter the move we need to define a cleanup routine and call that routine from sage/all.py\n\nCheers,\n\nMichael",
     "created_at": "2007-09-02T23:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
@@ -97,7 +95,6 @@ archive/issue_comments_002921.json:
 }
 ```
 
-
 ```
 [00:58] <sage> No -- there is a separate copy of the entire gmp.pxi in each file that includes it.
 [00:58] <sage> It's not shared at all.
@@ -105,7 +102,6 @@ archive/issue_comments_002921.json:
 [00:59] <mabshoff> So the *.pxi are really includes.
 [00:59] <sage> Then it would all be shared.
 ```
-
 
 After the move we need to define a cleanup routine and call that routine from sage/all.py
 
@@ -241,7 +237,7 @@ archive/issue_events_001514.json:
 archive/issue_comments_002926.json:
 ```json
 {
-    "body": "This actually crashes numerous doctests, e.g., modular/modsym/space.py.\n\nI've posted (to the official repo) this patch, but with a following patch\nthat modifies a few lines of gmp.pxi to *disable* the effects of this patch.\nSo you should pull the lates (hg_sage.pull()), then edit gmp.pxi to re-enable\nthis patch, then build, then do this many times:\n\n```\nsage@modular:~/d/sage/sage/modular/modsym$ sage -t space.py\n```\n\n\nYou'll see numerous memory allocation errors.",
+    "body": "This actually crashes numerous doctests, e.g., modular/modsym/space.py.\n\nI've posted (to the official repo) this patch, but with a following patch\nthat modifies a few lines of gmp.pxi to *disable* the effects of this patch.\nSo you should pull the lates (hg_sage.pull()), then edit gmp.pxi to re-enable\nthis patch, then build, then do this many times:\n\n```\nsage@modular:~/d/sage/sage/modular/modsym$ sage -t space.py\n```\n\nYou'll see numerous memory allocation errors.",
     "created_at": "2007-09-07T06:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
@@ -260,7 +256,6 @@ this patch, then build, then do this many times:
 ```
 sage@modular:~/d/sage/sage/modular/modsym$ sage -t space.py
 ```
-
 
 You'll see numerous memory allocation errors.
 

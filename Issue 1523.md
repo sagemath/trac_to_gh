@@ -3,7 +3,7 @@
 archive/issues_001523.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis illustrates the unnecessary confusion:\n\n\n```\n> are working fine.  I'll try \"math\"....I have a currently executing (long\n> running) mathemataica simulation going, and it's fine.\n>\n> Bill\n>\n> \"math\" is not found on OSX terminal! neither is mathematica; sage brings up\n> a new SAGE notebook, and all of it \"runs\" except the calls to Maple (which I\n> don't have installed on this MAC) and Mathematica 6.0,which I do....so some\n> like we were getting (via airport????) is now missing....or something else.\n\nI probably didn't put the math script that I made somewhere in your PATH.\nI can't remember where I put it now, but that would be the problem.\nI really need to make Sage automatically do this (with no user intervention).\nCan you type\n\n locate math\n\nand send me the output, which will contain a script named \"math\"?\nThen you just have to move that script to /usr/bin/ so it is in you PATH.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1523\n\n",
+    "body": "Assignee: @williamstein\n\nThis illustrates the unnecessary confusion:\n\n```\n> are working fine.  I'll try \"math\"....I have a currently executing (long\n> running) mathemataica simulation going, and it's fine.\n>\n> Bill\n>\n> \"math\" is not found on OSX terminal! neither is mathematica; sage brings up\n> a new SAGE notebook, and all of it \"runs\" except the calls to Maple (which I\n> don't have installed on this MAC) and Mathematica 6.0,which I do....so some\n> like we were getting (via airport????) is now missing....or something else.\n\nI probably didn't put the math script that I made somewhere in your PATH.\nI can't remember where I put it now, but that would be the problem.\nI really need to make Sage automatically do this (with no user intervention).\nCan you type\n\n locate math\n\nand send me the output, which will contain a script named \"math\"?\nThen you just have to move that script to /usr/bin/ so it is in you PATH.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1523\n\n",
     "created_at": "2007-12-15T07:28:23Z",
     "labels": [
         "component: interfaces"
@@ -18,7 +18,6 @@ archive/issues_001523.json:
 Assignee: @williamstein
 
 This illustrates the unnecessary confusion:
-
 
 ```
 > are working fine.  I'll try "math"....I have a currently executing (long
@@ -42,7 +41,6 @@ and send me the output, which will contain a script named "math"?
 Then you just have to move that script to /usr/bin/ so it is in you PATH.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1523
 
 
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1523
 archive/issue_comments_009723.json:
 ```json
 {
-    "body": "\n```\nJustin (cc: sage-devel),\n\nThere are now a lot of people using Sage on OSX who don't know\n(much) about the command line, but who are maple/mathematica\nusers.  When they try:\n\n  sage: mathematica('2+2')\n\nthey get a big error message about creating a \"math\" script, etc.,\nand similarly for Maple.\n\nIt seems to me that instead of that big error, we could *automatically*\ntrack down Maple/Mathematica on their system and\ncreate the script and put it in SAGE_ROOT/local/bin/.\n\nThoughts?\n\nIt seems like OSX mojo is relevant to this problem.\n\n```\n",
+    "body": "```\nJustin (cc: sage-devel),\n\nThere are now a lot of people using Sage on OSX who don't know\n(much) about the command line, but who are maple/mathematica\nusers.  When they try:\n\n  sage: mathematica('2+2')\n\nthey get a big error message about creating a \"math\" script, etc.,\nand similarly for Maple.\n\nIt seems to me that instead of that big error, we could *automatically*\ntrack down Maple/Mathematica on their system and\ncreate the script and put it in SAGE_ROOT/local/bin/.\n\nThoughts?\n\nIt seems like OSX mojo is relevant to this problem.\n\n```",
     "created_at": "2007-12-17T16:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
@@ -62,7 +60,6 @@ archive/issue_comments_009723.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Justin (cc: sage-devel),
@@ -85,7 +82,6 @@ Thoughts?
 It seems like OSX mojo is relevant to this problem.
 
 ```
-
 
 
 

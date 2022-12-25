@@ -3,7 +3,7 @@
 archive/issues_005589.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, binomial coefficients\n\nbinomial() returns zero when its \"numerator\" is a negative integer, but gets it right for floating point numbers:\n\n```\nsage: binomial(-1, 5)\n0\nsage: binomial(-2, 5)\n0\nsage: binomial(-2.0, 5)\n-6.00000000000000\nsage: binomial(-1.0, 5)\n-1.00000000000000\nsage: binomial(-7, 5)  \n0\nsage: binomial(-7.0, 5)\n-462.000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5589\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, binomial coefficients\n\nbinomial() returns zero when its \"numerator\" is a negative integer, but gets it right for floating point numbers:\n\n```\nsage: binomial(-1, 5)\n0\nsage: binomial(-2, 5)\n0\nsage: binomial(-2.0, 5)\n-6.00000000000000\nsage: binomial(-1.0, 5)\n-1.00000000000000\nsage: binomial(-7, 5)  \n0\nsage: binomial(-7.0, 5)\n-462.000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5589\n\n",
     "created_at": "2009-03-23T09:35:20Z",
     "labels": [
         "component: combinatorics",
@@ -38,7 +38,6 @@ sage: binomial(-7, 5)
 sage: binomial(-7.0, 5)
 -462.000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5589
 

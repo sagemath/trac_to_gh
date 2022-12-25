@@ -113,7 +113,7 @@ Nathann
 archive/issue_comments_086908.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> Hmmm.... It is a bit hard to test, though. Minh's commands fails when no LP solver is installed. If we make a docstring for it, the docstring will pass when there is no solver installed, but as soon as a solver is, the doctest will fails. The problem is that we have a flag \"optional CBC\", but nothing like \"optional NOT CBC\" ^^;\n> \n> Nathann\n\nGood point!\n\nI wonder what you think about this idea:\n\nAdd a not tested docstring  (I've forgotten how you do that though) which has one\ntest in the case when the package is loaded and another test in the case when the package is not. There there could be a remark that only one of these will trigger an error exception?",
+    "body": "Replying to [comment:4 ncohen]:\n> Hmmm.... It is a bit hard to test, though. Minh's commands fails when no LP solver is installed. If we make a docstring for it, the docstring will pass when there is no solver installed, but as soon as a solver is, the doctest will fails. The problem is that we have a flag \"optional CBC\", but nothing like \"optional NOT CBC\" ^^;\n> \n> Nathann\n\n\nGood point!\n\nI wonder what you think about this idea:\n\nAdd a not tested docstring  (I've forgotten how you do that though) which has one\ntest in the case when the package is loaded and another test in the case when the package is not. There there could be a remark that only one of these will trigger an error exception?",
     "created_at": "2010-06-17T15:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9249",
     "type": "issue_comment",
@@ -126,6 +126,7 @@ Replying to [comment:4 ncohen]:
 > Hmmm.... It is a bit hard to test, though. Minh's commands fails when no LP solver is installed. If we make a docstring for it, the docstring will pass when there is no solver installed, but as soon as a solver is, the doctest will fails. The problem is that we have a flag "optional CBC", but nothing like "optional NOT CBC" ^^;
 > 
 > Nathann
+
 
 Good point!
 
@@ -239,7 +240,7 @@ Nathann
 archive/issue_comments_086914.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> You think it can be reduced to dancing links ?? O_o\n> \n> How so ? O_o\n> \n> I'm *very* interested !!\n> \n> Nathann\n\nIt might be a bit of a challenge. As Tom Boothby points out, bipartite matching can easily be reduced to dancing links. We should use that where we can, instead of using optional packages.",
+    "body": "Replying to [comment:8 ncohen]:\n> You think it can be reduced to dancing links ?? O_o\n> \n> How so ? O_o\n> \n> I'm *very* interested !!\n> \n> Nathann\n\n\nIt might be a bit of a challenge. As Tom Boothby points out, bipartite matching can easily be reduced to dancing links. We should use that where we can, instead of using optional packages.",
     "created_at": "2010-06-17T20:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9249",
     "type": "issue_comment",
@@ -256,6 +257,7 @@ Replying to [comment:8 ncohen]:
 > I'm *very* interested !!
 > 
 > Nathann
+
 
 It might be a bit of a challenge. As Tom Boothby points out, bipartite matching can easily be reduced to dancing links. We should use that where we can, instead of using optional packages.
 
@@ -324,7 +326,7 @@ archive/issue_events_022780.json:
 archive/issue_comments_086917.json:
 ```json
 {
-    "body": "The patch here leads to a docbuild warning:\n\n```\nWarning: Missing title for sage.misc.exceptions\n```\n\nPlease see #9571, a blocker for Sage 4.5.2.",
+    "body": "The patch here leads to a docbuild warning:\n\n```\nWarning: Missing title for sage.misc.exceptions\n```\nPlease see #9571, a blocker for Sage 4.5.2.",
     "created_at": "2010-07-22T02:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9249",
     "type": "issue_comment",
@@ -338,5 +340,4 @@ The patch here leads to a docbuild warning:
 ```
 Warning: Missing title for sage.misc.exceptions
 ```
-
 Please see #9571, a blocker for Sage 4.5.2.

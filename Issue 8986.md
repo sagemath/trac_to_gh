@@ -158,7 +158,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082787.json:
 ```json
 {
-    "body": "Looks good! I have two comments:\n\n## Strict subcone\n\nI find `ConvexRationalPolyhedralCone.strict_subcone()` confusing: It does return a quotient cone, not a subcone. Maybe we can call it `strict_quotient()`?\n\n## point in cone\n\n`IntegralRayCollection.__contains__(ray)` tests whether `ray` is a reference to one of the generating rays. But this is then inherited by `ConvexRationalPolyhedralCone` Naively, I would have expected that it tests whether something is in the cone:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant\nFalse\nsage: (1,0,0) in octant\nFalse\n```\n\nSimilarly there are issues with the immutablity as shown in the doctest.\n\nI would suggest the following:\n\n1) get rid of `IntegralRayCollection.__contains__(ray)`. If you need to test membership, its easy enough to search `self.rays()` or `self.rays_set()`:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: N(1,0,0) in octant.rays()  # no problem with immutability\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # slightly more efficient and its clear why n must be immutable\nTrue\n```\n\n\n2) tighten the rules for comparison of N/M-lattice objects:\n\n```\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error\nFalse\nsage: (1,0,0) == N(1,0,0)    # should probably return true\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\n```\n\nThis would fix the following:\n\n```\nsage: (1,0,0) in octant.rays()  # this should return true\nFalse\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error\nFalse\n```\n\n\n3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)\n\n\n```\n   def contains(self, *Nlist):\n      \"\"\"\n      Returns whether the cone contains the N-lattice points ``*Nlist``.\n      \n      EXAMPLES::\n\n          sage: cone = Cone([[1,0],[0,1]])\n          sage: n = cone.ray(0) + cone.ray(1)\n          sage: cone.contains(n)\n          True\n          sage: cone.contains( N(1,1), N(-1,1) )\n          False\n          sage: cone.contains([ N(1,1), N(-1,1) ])\n          False\n      \"\"\"\n      pts = flatten(Nlist)\n      assert all(n in self._lattice() for n in pts), 'The points '+str(pts)+' must be in the N-lattice.'\n      return all( self.polyhedron().contains(n) for n in pts )\n```\n \n\n4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.",
+    "body": "Looks good! I have two comments:\n\n## Strict subcone\n\nI find `ConvexRationalPolyhedralCone.strict_subcone()` confusing: It does return a quotient cone, not a subcone. Maybe we can call it `strict_quotient()`?\n\n## point in cone\n\n`IntegralRayCollection.__contains__(ray)` tests whether `ray` is a reference to one of the generating rays. But this is then inherited by `ConvexRationalPolyhedralCone` Naively, I would have expected that it tests whether something is in the cone:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant\nFalse\nsage: (1,0,0) in octant\nFalse\n```\nSimilarly there are issues with the immutablity as shown in the doctest.\n\nI would suggest the following:\n\n1) get rid of `IntegralRayCollection.__contains__(ray)`. If you need to test membership, its easy enough to search `self.rays()` or `self.rays_set()`:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: N(1,0,0) in octant.rays()  # no problem with immutability\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # slightly more efficient and its clear why n must be immutable\nTrue\n```\n\n2) tighten the rules for comparison of N/M-lattice objects:\n\n```\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error\nFalse\nsage: (1,0,0) == N(1,0,0)    # should probably return true\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\n```\nThis would fix the following:\n\n```\nsage: (1,0,0) in octant.rays()  # this should return true\nFalse\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error\nFalse\n```\n\n3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)\n\n```\n   def contains(self, *Nlist):\n      \"\"\"\n      Returns whether the cone contains the N-lattice points ``*Nlist``.\n      \n      EXAMPLES::\n\n          sage: cone = Cone([[1,0],[0,1]])\n          sage: n = cone.ray(0) + cone.ray(1)\n          sage: cone.contains(n)\n          True\n          sage: cone.contains( N(1,1), N(-1,1) )\n          False\n          sage: cone.contains([ N(1,1), N(-1,1) ])\n          False\n      \"\"\"\n      pts = flatten(Nlist)\n      assert all(n in self._lattice() for n in pts), 'The points '+str(pts)+' must be in the N-lattice.'\n      return all( self.polyhedron().contains(n) for n in pts )\n``` \n\n4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.",
     "created_at": "2010-06-04T13:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -187,7 +187,6 @@ False
 sage: (1,0,0) in octant
 False
 ```
-
 Similarly there are issues with the immutablity as shown in the doctest.
 
 I would suggest the following:
@@ -205,7 +204,6 @@ sage: n in octant.ray_set()  # slightly more efficient and its clear why n must 
 True
 ```
 
-
 2) tighten the rules for comparison of N/M-lattice objects:
 
 ```
@@ -219,7 +217,6 @@ False
 sage: (1,0,0) == (1,0,0)     # works as expected
 True
 ```
-
 This would fix the following:
 
 ```
@@ -229,9 +226,7 @@ sage: M(1,0,0) in octant.rays()  # this should definitely raise an error
 False
 ```
 
-
 3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)
-
 
 ```
    def contains(self, *Nlist):
@@ -252,8 +247,7 @@ False
       pts = flatten(Nlist)
       assert all(n in self._lattice() for n in pts), 'The points '+str(pts)+' must be in the N-lattice.'
       return all( self.polyhedron().contains(n) for n in pts )
-```
- 
+``` 
 
 4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.
 
@@ -264,7 +258,7 @@ False
 archive/issue_comments_082788.json:
 ```json
 {
-    "body": "Replying to [comment:5 vbraun]:\n> I find `ConvexRationalPolyhedralCone.strict_subcone()` confusing: It does return a quotient cone, not a subcone. Maybe we can call it `strict_quotient()`?\n\nAgreed. I just had to construct this object for equivalence checks and didn't really know how to call it.\n\n> 1) get rid of `IntegralRayCollection.__contains__(ray)`. If you need to test membership, its easy enough to search `self.rays()` or `self.rays_set()`:\nAgreed. \n\n> 2) tighten the rules for comparison of N/M-lattice objects:\n\n```\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error\nFalse\n```\n\n\nDisagreed. Maybe it is silly to ask if an apple is equal to a car, but there is nothing criminal in it. I think that in general in Python you can compare any two objects and sort lists containing arbitrary objects. So I think that `False` is the correct answer in this case.\n\n>\n\n```\nsage: (1,0,0) == N(1,0,0)    # should probably return true\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well\nFalse\n```\n\n\nI kind of don't like that we have here a==b and c==a, but b!=c... Do you really want to have it in? It may be actually non-trivial to implement. I already had to tweak the coercion system so that sometimes it allows \"non-toric-lattice\" objects to be involved and sometimes it does not. In particular I had to make sure that elements of toric lattices are NOT coerced into ZZ^n.\n\nSo if you insist, I will try to make it work, but I cannot guarantee that I will be successful and personally I think that we should not change it, as long as this behaviour is clearly documented. (Probably it is not, but that's something which definitely can be fixed ;-))\n\n>\n\n```\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error\nFalse\n```\n\n\nAgain, I don't think that there should be any errors raised by comparison operations. `False` is an accurate answer to this question - and octant in the N-lattice does not contain any points of the M-lattice.\n\n> 3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)\n\nAgreed. It was on my list of things to do in the future, might as well do it now. \n\n> 4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.\n\nVery good point!!! I knew that they don't show up, but didn't think about just making a \"common method\" alias.\n\nPlease comment on the points of disagreement and I will try to fix the issues in a couple of days. Thanks for a careful review!",
+    "body": "Replying to [comment:5 vbraun]:\n> I find `ConvexRationalPolyhedralCone.strict_subcone()` confusing: It does return a quotient cone, not a subcone. Maybe we can call it `strict_quotient()`?\n\n\nAgreed. I just had to construct this object for equivalence checks and didn't really know how to call it.\n\n> 1) get rid of `IntegralRayCollection.__contains__(ray)`. If you need to test membership, its easy enough to search `self.rays()` or `self.rays_set()`:\nAgreed. \n\n> 2) tighten the rules for comparison of N/M-lattice objects:\n\n{{{\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error\nFalse\n}}}\n\nDisagreed. Maybe it is silly to ask if an apple is equal to a car, but there is nothing criminal in it. I think that in general in Python you can compare any two objects and sort lists containing arbitrary objects. So I think that `False` is the correct answer in this case.\n\n>\n  \n{{{\nsage: (1,0,0) == N(1,0,0)    # should probably return true\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well\nFalse\n}}}\n\nI kind of don't like that we have here a==b and c==a, but b!=c... Do you really want to have it in? It may be actually non-trivial to implement. I already had to tweak the coercion system so that sometimes it allows \"non-toric-lattice\" objects to be involved and sometimes it does not. In particular I had to make sure that elements of toric lattices are NOT coerced into ZZ^n.\n\nSo if you insist, I will try to make it work, but I cannot guarantee that I will be successful and personally I think that we should not change it, as long as this behaviour is clearly documented. (Probably it is not, but that's something which definitely can be fixed ;-))\n\n>\n\n{{{\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error\nFalse\n}}}\n\nAgain, I don't think that there should be any errors raised by comparison operations. `False` is an accurate answer to this question - and octant in the N-lattice does not contain any points of the M-lattice.\n\n> 3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)\n\n\nAgreed. It was on my list of things to do in the future, might as well do it now. \n\n> 4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.\n\n\nVery good point!!! I knew that they don't show up, but didn't think about just making a \"common method\" alias.\n\nPlease comment on the points of disagreement and I will try to fix the issues in a couple of days. Thanks for a careful review!",
     "created_at": "2010-06-04T16:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -276,6 +270,7 @@ archive/issue_comments_082788.json:
 Replying to [comment:5 vbraun]:
 > I find `ConvexRationalPolyhedralCone.strict_subcone()` confusing: It does return a quotient cone, not a subcone. Maybe we can call it `strict_quotient()`?
 
+
 Agreed. I just had to construct this object for equivalence checks and didn't really know how to call it.
 
 > 1) get rid of `IntegralRayCollection.__contains__(ray)`. If you need to test membership, its easy enough to search `self.rays()` or `self.rays_set()`:
@@ -283,23 +278,21 @@ Agreed.
 
 > 2) tighten the rules for comparison of N/M-lattice objects:
 
-```
+{{{
 sage: M(1,0,0) == N(1,0,0)   # this should raise an error
 False
-```
-
+}}}
 
 Disagreed. Maybe it is silly to ask if an apple is equal to a car, but there is nothing criminal in it. I think that in general in Python you can compare any two objects and sort lists containing arbitrary objects. So I think that `False` is the correct answer in this case.
 
 >
-
-```
+  
+{{{
 sage: (1,0,0) == N(1,0,0)    # should probably return true
 False
 sage: M(1,0,0) == (1,0,0)    # should probably return true as well
 False
-```
-
+}}}
 
 I kind of don't like that we have here a==b and c==a, but b!=c... Do you really want to have it in? It may be actually non-trivial to implement. I already had to tweak the coercion system so that sometimes it allows "non-toric-lattice" objects to be involved and sometimes it does not. In particular I had to make sure that elements of toric lattices are NOT coerced into ZZ^n.
 
@@ -307,19 +300,20 @@ So if you insist, I will try to make it work, but I cannot guarantee that I will
 
 >
 
-```
+{{{
 sage: M(1,0,0) in octant.rays()  # this should definitely raise an error
 False
-```
-
+}}}
 
 Again, I don't think that there should be any errors raised by comparison operations. `False` is an accurate answer to this question - and octant in the N-lattice does not contain any points of the M-lattice.
 
 > 3) add methods `contains(n)` to `ConvexRationalPolyhedralCone` to test whether a N-lattice point is contained in the cone, e.g. (untested)
 
+
 Agreed. It was on my list of things to do in the future, might as well do it now. 
 
 > 4) `ConvexRationalPolyhedralCone.__contains__()` just calls `contains()`. This is syntactic sugar, but `__` methods alone don't show up in the documentation.
+
 
 Very good point!!! I knew that they don't show up, but didn't think about just making a "common method" alias.
 
@@ -350,7 +344,7 @@ I see your point that e.g. python sets will use the comparison and its probably 
 archive/issue_comments_082790.json:
 ```json
 {
-    "body": "Replying to [comment:7 vbraun]:\n> I see your point that e.g. python sets will use the comparison and its probably a bad idea to tinker too much with it. So I agree with you that we should keep it the way it is and make the `contains()` method throw an error if the argument is not in the N-lattice. Some warning in the toric lattices documentation might be good that '==' always compares objects and says nothing about equivalence.\n\nSo you want different behaviour for `contains` and `__contains__`? I just checked the following to see how things are in Sage now:\n\n```\nsage: g = Graph()\nsage: R = QQ[\"x,y\"]\nsage: g in R\nFalse\n```\n\nTo be consistent, I think that `x in cone` should accept any argument and return `False` if `x` is an object of any type that definitely cannot be in the cone. And I think it would be confusing to have different behaviour for `contains` and `__contains__`. In what kind of situations do you think it would be desirable to have an exception raised instead? Current framework already does not allow mixing elements of wrong toric lattices or even easily converting elements of one to another, so it does not seem to me that the current version will lead to any wrong results.",
+    "body": "Replying to [comment:7 vbraun]:\n> I see your point that e.g. python sets will use the comparison and its probably a bad idea to tinker too much with it. So I agree with you that we should keep it the way it is and make the `contains()` method throw an error if the argument is not in the N-lattice. Some warning in the toric lattices documentation might be good that '==' always compares objects and says nothing about equivalence.\n\n\nSo you want different behaviour for `contains` and `__contains__`? I just checked the following to see how things are in Sage now:\n\n```\nsage: g = Graph()\nsage: R = QQ[\"x,y\"]\nsage: g in R\nFalse\n```\nTo be consistent, I think that `x in cone` should accept any argument and return `False` if `x` is an object of any type that definitely cannot be in the cone. And I think it would be confusing to have different behaviour for `contains` and `__contains__`. In what kind of situations do you think it would be desirable to have an exception raised instead? Current framework already does not allow mixing elements of wrong toric lattices or even easily converting elements of one to another, so it does not seem to me that the current version will lead to any wrong results.",
     "created_at": "2010-06-04T17:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -362,6 +356,7 @@ archive/issue_comments_082790.json:
 Replying to [comment:7 vbraun]:
 > I see your point that e.g. python sets will use the comparison and its probably a bad idea to tinker too much with it. So I agree with you that we should keep it the way it is and make the `contains()` method throw an error if the argument is not in the N-lattice. Some warning in the toric lattices documentation might be good that '==' always compares objects and says nothing about equivalence.
 
+
 So you want different behaviour for `contains` and `__contains__`? I just checked the following to see how things are in Sage now:
 
 ```
@@ -370,7 +365,6 @@ sage: R = QQ["x,y"]
 sage: g in R
 False
 ```
-
 To be consistent, I think that `x in cone` should accept any argument and return `False` if `x` is an object of any type that definitely cannot be in the cone. And I think it would be confusing to have different behaviour for `contains` and `__contains__`. In what kind of situations do you think it would be desirable to have an exception raised instead? Current framework already does not allow mixing elements of wrong toric lattices or even easily converting elements of one to another, so it does not seem to me that the current version will lead to any wrong results.
 
 
@@ -380,7 +374,7 @@ To be consistent, I think that `x in cone` should accept any argument and return
 archive/issue_comments_082791.json:
 ```json
 {
-    "body": "No, I definitely want `__contains__()` and `contains()` to be the same. I'm only concerned that a novice user of the package will write\n\n```\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone\nFalse\n```\n\nand get the (in his eyes) wrong answer without any clue as to what went wrong. If that would be my first interaction with the package, I'd be convinced that its computations cannot be trusted :-). Once you understand the code it is of course obvious why it returned False. The difference to your example, where a ring is not in a graph, is that here it depends on the details of the coercion (or not) between `ZZ^n` and `ToricLattice` that will not be familiar to all users.\n\nOne could narrow it down to only raise an exception on tests that run into this problem, like a test along the lines of\n\n```\nif (!is_ToricLatticeElement(n)):\n  try:\n    [ ZZ(i) for i in n ]\n    raise ValueError, 'You probably want '+str(n)+' to be a N-lattice element.'\n  except:\n    return False   # whatever n is, its not in the cone\n```\n\nLet me know what you think!",
+    "body": "No, I definitely want `__contains__()` and `contains()` to be the same. I'm only concerned that a novice user of the package will write\n\n```\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone\nFalse\n```\nand get the (in his eyes) wrong answer without any clue as to what went wrong. If that would be my first interaction with the package, I'd be convinced that its computations cannot be trusted :-). Once you understand the code it is of course obvious why it returned False. The difference to your example, where a ring is not in a graph, is that here it depends on the details of the coercion (or not) between `ZZ^n` and `ToricLattice` that will not be familiar to all users.\n\nOne could narrow it down to only raise an exception on tests that run into this problem, like a test along the lines of\n\n```\nif (!is_ToricLatticeElement(n)):\n  try:\n    [ ZZ(i) for i in n ]\n    raise ValueError, 'You probably want '+str(n)+' to be a N-lattice element.'\n  except:\n    return False   # whatever n is, its not in the cone\n```\nLet me know what you think!",
     "created_at": "2010-06-05T11:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -396,7 +390,6 @@ sage: cone = Cone([[1,0],[0,1]])
 sage: (1,1) in cone
 False
 ```
-
 and get the (in his eyes) wrong answer without any clue as to what went wrong. If that would be my first interaction with the package, I'd be convinced that its computations cannot be trusted :-). Once you understand the code it is of course obvious why it returned False. The difference to your example, where a ring is not in a graph, is that here it depends on the details of the coercion (or not) between `ZZ^n` and `ToricLattice` that will not be familiar to all users.
 
 One could narrow it down to only raise an exception on tests that run into this problem, like a test along the lines of
@@ -409,7 +402,6 @@ if (!is_ToricLatticeElement(n)):
   except:
     return False   # whatever n is, its not in the cone
 ```
-
 Let me know what you think!
 
 
@@ -419,7 +411,7 @@ Let me know what you think!
 archive/issue_comments_082792.json:
 ```json
 {
-    "body": "Well, I am still against exceptions, however I have just checked this:\n\n```\nsage: F5 = GF(5)\nsage: F7 = GF(7)\nsage: 2 == F5(2)\nTrue\nsage: 2 == F7(2)\nTrue\nsage: F5(2) == F7(2)\nFalse\n```\n\nSo, since I like so much to invoke consistency reasons in my arguments, I retract my first reaction on 2) in your proposal. I think I will try to allow coercion of `ZZ^n` to any toric lattice of dimension `n`, but not backwards. Explicit casting from lattices to `ZZ^n` will be possible, but to go between two different toric lattices one will have to create a homomorphism or use double casting, i.e. I think that M(N(1,1)) should throw a `TypeError`. So the code from your comment will work like this:\n\n```\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error - NO, RETURN FALSE\nFalse\nsage: (1,0,0) == N(1,0,0)    # should probably return true - YES\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well - YES\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected - YES\nTrue\nsage: (1,0,0) in octant.rays()  # this should return true - YES\nFalse\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error - NO, RETURN FALSE\nFalse\n```\n\nI think this way it's OK to be sloppy about lattices, especially if one just does not care about them. If one uses the very last command, then clearly (s)he is aware of toric lattices and should be able to interpret this `False` correctly.",
+    "body": "Well, I am still against exceptions, however I have just checked this:\n\n```\nsage: F5 = GF(5)\nsage: F7 = GF(7)\nsage: 2 == F5(2)\nTrue\nsage: 2 == F7(2)\nTrue\nsage: F5(2) == F7(2)\nFalse\n```\nSo, since I like so much to invoke consistency reasons in my arguments, I retract my first reaction on 2) in your proposal. I think I will try to allow coercion of `ZZ^n` to any toric lattice of dimension `n`, but not backwards. Explicit casting from lattices to `ZZ^n` will be possible, but to go between two different toric lattices one will have to create a homomorphism or use double casting, i.e. I think that M(N(1,1)) should throw a `TypeError`. So the code from your comment will work like this:\n\n```\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # this should raise an error - NO, RETURN FALSE\nFalse\nsage: (1,0,0) == N(1,0,0)    # should probably return true - YES\nFalse\nsage: M(1,0,0) == (1,0,0)    # should probably return true as well - YES\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected - YES\nTrue\nsage: (1,0,0) in octant.rays()  # this should return true - YES\nFalse\nsage: M(1,0,0) in octant.rays()  # this should definitely raise an error - NO, RETURN FALSE\nFalse\n```\nI think this way it's OK to be sloppy about lattices, especially if one just does not care about them. If one uses the very last command, then clearly (s)he is aware of toric lattices and should be able to interpret this `False` correctly.",
     "created_at": "2010-06-05T17:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -440,7 +432,6 @@ True
 sage: F5(2) == F7(2)
 False
 ```
-
 So, since I like so much to invoke consistency reasons in my arguments, I retract my first reaction on 2) in your proposal. I think I will try to allow coercion of `ZZ^n` to any toric lattice of dimension `n`, but not backwards. Explicit casting from lattices to `ZZ^n` will be possible, but to go between two different toric lattices one will have to create a homomorphism or use double casting, i.e. I think that M(N(1,1)) should throw a `TypeError`. So the code from your comment will work like this:
 
 ```
@@ -458,7 +449,6 @@ False
 sage: M(1,0,0) in octant.rays()  # this should definitely raise an error - NO, RETURN FALSE
 False
 ```
-
 I think this way it's OK to be sloppy about lattices, especially if one just does not care about them. If one uses the very last command, then clearly (s)he is aware of toric lattices and should be able to interpret this `False` correctly.
 
 
@@ -506,7 +496,7 @@ OK! Will work on this.
 archive/issue_comments_082795.json:
 ```json
 {
-    "body": "I have realized that `(1,0,0)` in the examples above is not a vector, but just a tuple. Then I have done the following test:\n\n```\nsage: (1,0,0) == vector([1,0,0])\nFalse\nsage: vector([1,0,0]) == (1,0,0)\nFalse\nsage: vector([1,0,0]) + (1,0,0)  \nTypeError: unsupported operand parent(s) for '+': 'Ambient free module of rank 3 over the principal ideal domain Integer Ring' and '<type 'tuple'>'\nsage: (1,0,0) + (1,0,0)        \n(1, 0, 0, 1, 0, 0)\n```\n\nIt is not really an issue of the coercion, it is just not possible to always use tuples as a replacement for lattice points. We made it, however, very easy to work with them:\n\n```\nsage: N(1,0,0) + N(1,0,0)        \nN(2, 0, 0)\n```\n\nSo I think that equality tests will remain as they are now. Operations involving \"pure\" vectors may need more work, perhaps:\n\n```\nsage: N(1,0,0) + vector((1,0,0))\nN(2, 0, 0)\nsage: vector((1,0,0)) + N(1,0,0) \n(2, 0, 0)\n```\n\nalthough this does not bother me too much and I would suggest leaving this as is until we see where and how it can cause problems. (Making the second line return `N(2,0,0)` can be a bit tricky.)\n\nWill post a new patch once I figure out how to work with warnings (never used them before).",
+    "body": "I have realized that `(1,0,0)` in the examples above is not a vector, but just a tuple. Then I have done the following test:\n\n```\nsage: (1,0,0) == vector([1,0,0])\nFalse\nsage: vector([1,0,0]) == (1,0,0)\nFalse\nsage: vector([1,0,0]) + (1,0,0)  \nTypeError: unsupported operand parent(s) for '+': 'Ambient free module of rank 3 over the principal ideal domain Integer Ring' and '<type 'tuple'>'\nsage: (1,0,0) + (1,0,0)        \n(1, 0, 0, 1, 0, 0)\n```\nIt is not really an issue of the coercion, it is just not possible to always use tuples as a replacement for lattice points. We made it, however, very easy to work with them:\n\n```\nsage: N(1,0,0) + N(1,0,0)        \nN(2, 0, 0)\n```\nSo I think that equality tests will remain as they are now. Operations involving \"pure\" vectors may need more work, perhaps:\n\n```\nsage: N(1,0,0) + vector((1,0,0))\nN(2, 0, 0)\nsage: vector((1,0,0)) + N(1,0,0) \n(2, 0, 0)\n```\nalthough this does not bother me too much and I would suggest leaving this as is until we see where and how it can cause problems. (Making the second line return `N(2,0,0)` can be a bit tricky.)\n\nWill post a new patch once I figure out how to work with warnings (never used them before).",
     "created_at": "2010-06-06T03:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -527,14 +517,12 @@ TypeError: unsupported operand parent(s) for '+': 'Ambient free module of rank 3
 sage: (1,0,0) + (1,0,0)        
 (1, 0, 0, 1, 0, 0)
 ```
-
 It is not really an issue of the coercion, it is just not possible to always use tuples as a replacement for lattice points. We made it, however, very easy to work with them:
 
 ```
 sage: N(1,0,0) + N(1,0,0)        
 N(2, 0, 0)
 ```
-
 So I think that equality tests will remain as they are now. Operations involving "pure" vectors may need more work, perhaps:
 
 ```
@@ -543,7 +531,6 @@ N(2, 0, 0)
 sage: vector((1,0,0)) + N(1,0,0) 
 (2, 0, 0)
 ```
-
 although this does not bother me too much and I would suggest leaving this as is until we see where and how it can cause problems. (Making the second line return `N(2,0,0)` can be a bit tricky.)
 
 Will post a new patch once I figure out how to work with warnings (never used them before).
@@ -573,7 +560,7 @@ Reviewer's comments taken into account.
 archive/issue_comments_082797.json:
 ```json
 {
-    "body": "Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by @novoselt created at 2010-06-06 05:21:11\n\nOK, I think I have addressed all the points in the original review except 2) which is pretty much impossible to realize completely (originally I was thinking of (1,1,1) as vectors, but they are just tuples, see the above comment for vector behaviour in this situation). I have added a general warning about tuples in the main `ToricLattice` documentation.\n\nI added `__contains__` to `ToricLattice`, since I discovered that the inherited implementation is not suitable.\n\nI added `__contains__`, `_contains`, and `contains` to cones. The real job is done in `_contains`, two others call it. The reason for the third function is an attempt to make warnings show where the actual potential mistake was, which requires the same calling depth. Unfortunately, in my tests it worked as I wanted only if it was triggered by some library code, in the notebook for created functions and attached files it just shows `main`. But that may change and maybe the terminal behaves differently. Now `cone.contains(stuff)` will try its best to return `True` by interpreting `stuff` as a point in the ambient space of `cone`, i.e. in `cone.lattice().base_extend(RR)`. However, it will catch points from foreign lattices first and return `False` with a warning, visible the first time for each location.\n\nThat's how reviewer's code works with the new version of the patch:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant # True was desired\nTrue\nsage: (1,0,0) in octant # True was desired\nTrue\nsage: N(1,0,0) in octant.rays()  # was and should be True\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # was and should be True\nTrue\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # Error was desired\nFalse\nsage: (1,0,0) == N(1,0,0)    # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) == (1,0,0)    # True was desired, but difficult to get\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\nsage: (1,0,0) in octant.rays()  # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) in octant.rays()  # Error was desired\nFalse\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone # Was False\nTrue\nsage: M = cone.lattice().dual()\nsage: M(1,1) in cone # Now gives warning on the first attempt\n__main__:1: UserWarning: you have checked if a cone contains a point from another lattice, this is always False!\nFalse\n```\n\nI suppose two lines marked \"Error was desired\" can also give a warning the first time they are invoked, if we implement a custom `__eq__` in addition to `__cmp__` for `ToricLatticeElement`. Should this be done?",
+    "body": "Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by @novoselt created at 2010-06-06 05:21:11\n\nOK, I think I have addressed all the points in the original review except 2) which is pretty much impossible to realize completely (originally I was thinking of (1,1,1) as vectors, but they are just tuples, see the above comment for vector behaviour in this situation). I have added a general warning about tuples in the main `ToricLattice` documentation.\n\nI added `__contains__` to `ToricLattice`, since I discovered that the inherited implementation is not suitable.\n\nI added `__contains__`, `_contains`, and `contains` to cones. The real job is done in `_contains`, two others call it. The reason for the third function is an attempt to make warnings show where the actual potential mistake was, which requires the same calling depth. Unfortunately, in my tests it worked as I wanted only if it was triggered by some library code, in the notebook for created functions and attached files it just shows `main`. But that may change and maybe the terminal behaves differently. Now `cone.contains(stuff)` will try its best to return `True` by interpreting `stuff` as a point in the ambient space of `cone`, i.e. in `cone.lattice().base_extend(RR)`. However, it will catch points from foreign lattices first and return `False` with a warning, visible the first time for each location.\n\nThat's how reviewer's code works with the new version of the patch:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant # True was desired\nTrue\nsage: (1,0,0) in octant # True was desired\nTrue\nsage: N(1,0,0) in octant.rays()  # was and should be True\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # was and should be True\nTrue\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # Error was desired\nFalse\nsage: (1,0,0) == N(1,0,0)    # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) == (1,0,0)    # True was desired, but difficult to get\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\nsage: (1,0,0) in octant.rays()  # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) in octant.rays()  # Error was desired\nFalse\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone # Was False\nTrue\nsage: M = cone.lattice().dual()\nsage: M(1,1) in cone # Now gives warning on the first attempt\n__main__:1: UserWarning: you have checked if a cone contains a point from another lattice, this is always False!\nFalse\n```\nI suppose two lines marked \"Error was desired\" can also give a warning the first time they are invoked, if we implement a custom `__eq__` in addition to `__cmp__` for `ToricLatticeElement`. Should this be done?",
     "created_at": "2010-06-06T05:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -628,7 +615,6 @@ sage: M(1,1) in cone # Now gives warning on the first attempt
 __main__:1: UserWarning: you have checked if a cone contains a point from another lattice, this is always False!
 False
 ```
-
 I suppose two lines marked "Error was desired" can also give a warning the first time they are invoked, if we implement a custom `__eq__` in addition to `__cmp__` for `ToricLatticeElement`. Should this be done?
 
 
@@ -676,7 +662,7 @@ The `Polyhedron` class already has a `contains()` method that tests for inclusio
 archive/issue_comments_082800.json:
 ```json
 {
-    "body": "Replying to [comment:15 vbraun]:\n> The `Polyhedron` class already has a `contains()` method that tests for inclusion (I wrote it with toric varieties in mind :-).  `ConvexRationalPolyhedralCone._contains()` could have called that, saving a few lines of duplicate code. Not that big a deal, though. I'm happy to give it a positive review either way. Let me know what you think.\n\nSo does `LatticePolytope` class, which was written with the same goal in mind ;-) As I have already complained somewhere, any calls to underlying `LatticePolytope` or `Polyhedron` objects can trigger system calls to other programs, which in many cases gives a huge overhead (compared to the rest of involved computations). So in this case I preferred to use a \"native\" way for cones to check if a point is inside. Of course, computing facet normals the first time will eventually call PALP to get facet normals of the corresponding polytope, but:\n\n1) there is a way to compute facet normals for a lot of polytopes (e.g. corresponding to all cones of a fan) with a single call to PALP, in which case the overhead is negligible;\n\n2) if a cone was pickled and unpickled, it definitely does not have polytope objects anymore, but it may still have facet normals, if they were computed before pickling;\n\n3) we may eventually write our own initial computation of facet normals at least in some cases, for example, for complete fans.\n\nRegarding 1) - the first call to `ReflexivePolytopes(3)` takes currently 5-10s. It reads a text file with vertices and then precomputes a bunch of stuff to save time later. Computing all this stuff without using group calls to PALP was taking about 15 minutes. I don't see any reasons why such calls cannot be done for Polyhedra, but I don't know how easy that would be. Do you think there is any point trying to implement it?\n\nTo summarize: please give a positive review to the present version ;-)",
+    "body": "Replying to [comment:15 vbraun]:\n> The `Polyhedron` class already has a `contains()` method that tests for inclusion (I wrote it with toric varieties in mind :-).  `ConvexRationalPolyhedralCone._contains()` could have called that, saving a few lines of duplicate code. Not that big a deal, though. I'm happy to give it a positive review either way. Let me know what you think.\n\n\nSo does `LatticePolytope` class, which was written with the same goal in mind ;-) As I have already complained somewhere, any calls to underlying `LatticePolytope` or `Polyhedron` objects can trigger system calls to other programs, which in many cases gives a huge overhead (compared to the rest of involved computations). So in this case I preferred to use a \"native\" way for cones to check if a point is inside. Of course, computing facet normals the first time will eventually call PALP to get facet normals of the corresponding polytope, but:\n\n1) there is a way to compute facet normals for a lot of polytopes (e.g. corresponding to all cones of a fan) with a single call to PALP, in which case the overhead is negligible;\n\n2) if a cone was pickled and unpickled, it definitely does not have polytope objects anymore, but it may still have facet normals, if they were computed before pickling;\n\n3) we may eventually write our own initial computation of facet normals at least in some cases, for example, for complete fans.\n\nRegarding 1) - the first call to `ReflexivePolytopes(3)` takes currently 5-10s. It reads a text file with vertices and then precomputes a bunch of stuff to save time later. Computing all this stuff without using group calls to PALP was taking about 15 minutes. I don't see any reasons why such calls cannot be done for Polyhedra, but I don't know how easy that would be. Do you think there is any point trying to implement it?\n\nTo summarize: please give a positive review to the present version ;-)",
     "created_at": "2010-06-06T16:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -687,6 +673,7 @@ archive/issue_comments_082800.json:
 
 Replying to [comment:15 vbraun]:
 > The `Polyhedron` class already has a `contains()` method that tests for inclusion (I wrote it with toric varieties in mind :-).  `ConvexRationalPolyhedralCone._contains()` could have called that, saving a few lines of duplicate code. Not that big a deal, though. I'm happy to give it a positive review either way. Let me know what you think.
+
 
 So does `LatticePolytope` class, which was written with the same goal in mind ;-) As I have already complained somewhere, any calls to underlying `LatticePolytope` or `Polyhedron` objects can trigger system calls to other programs, which in many cases gives a huge overhead (compared to the rest of involved computations). So in this case I preferred to use a "native" way for cones to check if a point is inside. Of course, computing facet normals the first time will eventually call PALP to get facet normals of the corresponding polytope, but:
 
@@ -745,7 +732,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082803.json:
 ```json
 {
-    "body": "Thank you!\n\nDimension limit is exactly why I started using `Polyhedra`, however I didn't quite like the timings. For example, this is what I get on geom.math with toric patches applied:\n\n```\nsage: %time\nsage: o = lattice_polytope.octahedron(6) # no PALP calls\nCPU time: 0.00 s,  Wall time: 0.00 s\nsage: %time\nsage: len(o.faces()) # PALP call to get incidences (no Hasse diagram)\n6\nCPU time: 0.07 s,  Wall time: 0.13 s\nsage: %time\nsage: f = FaceFan(o)\nCPU time: 0.03 s,  Wall time: 0.06 s\nsage: %time\nsage: f.cone_lattice() # some calls to PALP\nFinite poset containing 730 elements\nCPU time: 0.18 s,  Wall time: 0.32 s\nsage: %time\nsage: p = Polyhedron(vertices=o.vertices().columns()) # almost all time is in cdd\nCPU time: 0.02 s,  Wall time: 3.84 s\nsage: %time\nsage: p.face_lattice() # all time in Sage\nFinite poset containing 730 elements\nCPU time: 8.36 s,  Wall time: 8.36 s\n```\n\n\nGiven the construction time of `p`, I am not even sure if calling cdd as a library will help a lot, but you mentioned that you also had some other library in mind. So while I am definitely interested in going to dimensions higher than 6, so far PALP seems to be the way to go. One possible modification for the future is to use PALP when possible and switch to alternatives when it does not work.",
+    "body": "Thank you!\n\nDimension limit is exactly why I started using `Polyhedra`, however I didn't quite like the timings. For example, this is what I get on geom.math with toric patches applied:\n\n```\nsage: %time\nsage: o = lattice_polytope.octahedron(6) # no PALP calls\nCPU time: 0.00 s,  Wall time: 0.00 s\nsage: %time\nsage: len(o.faces()) # PALP call to get incidences (no Hasse diagram)\n6\nCPU time: 0.07 s,  Wall time: 0.13 s\nsage: %time\nsage: f = FaceFan(o)\nCPU time: 0.03 s,  Wall time: 0.06 s\nsage: %time\nsage: f.cone_lattice() # some calls to PALP\nFinite poset containing 730 elements\nCPU time: 0.18 s,  Wall time: 0.32 s\nsage: %time\nsage: p = Polyhedron(vertices=o.vertices().columns()) # almost all time is in cdd\nCPU time: 0.02 s,  Wall time: 3.84 s\nsage: %time\nsage: p.face_lattice() # all time in Sage\nFinite poset containing 730 elements\nCPU time: 8.36 s,  Wall time: 8.36 s\n```\n\nGiven the construction time of `p`, I am not even sure if calling cdd as a library will help a lot, but you mentioned that you also had some other library in mind. So while I am definitely interested in going to dimensions higher than 6, so far PALP seems to be the way to go. One possible modification for the future is to use PALP when possible and switch to alternatives when it does not work.",
     "created_at": "2010-06-06T19:27:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -781,7 +768,6 @@ sage: p.face_lattice() # all time in Sage
 Finite poset containing 730 elements
 CPU time: 8.36 s,  Wall time: 8.36 s
 ```
-
 
 Given the construction time of `p`, I am not even sure if calling cdd as a library will help a lot, but you mentioned that you also had some other library in mind. So while I am definitely interested in going to dimensions higher than 6, so far PALP seems to be the way to go. One possible modification for the future is to use PALP when possible and switch to alternatives when it does not work.
 
@@ -848,7 +834,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_082807.json:
 ```json
 {
-    "body": "I noticed that, too. I haven't gotten around to fix it because I ran into this strange doctest failure in Sage-4.5alpha1 that worked beautifully in sage-4.4.4:\n\n```\nFile \"/home/vbraun/opt/sage-4.5.alpha1/devel/sage-main/sage/geometry/cone.py\", line 1535:\n    sage: c.faces()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_33[10]>\", line 1, in <module>\n        c.faces()###line 1535:\n    sage: c.faces()\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 1554, in faces\n        for level in self.face_lattice().level_sets())\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 1433, in face_lattice\n        ray_to_facets, facet_to_rays, ConeFace)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 2259, in hasse_diagram_from_incidences\n        for atom, coatoms in enumerate(atom_to_coatoms))\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 2259, in <genexpr>\n        for atom, coatoms in enumerate(atom_to_coatoms))\n    KeyError: (frozenset([0]), frozenset([0]))\n```\n\nAndrey, since its your code maybe you'll understand what is going on.",
+    "body": "I noticed that, too. I haven't gotten around to fix it because I ran into this strange doctest failure in Sage-4.5alpha1 that worked beautifully in sage-4.4.4:\n\n```\nFile \"/home/vbraun/opt/sage-4.5.alpha1/devel/sage-main/sage/geometry/cone.py\", line 1535:\n    sage: c.faces()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_33[10]>\", line 1, in <module>\n        c.faces()###line 1535:\n    sage: c.faces()\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 1554, in faces\n        for level in self.face_lattice().level_sets())\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 1433, in face_lattice\n        ray_to_facets, facet_to_rays, ConeFace)\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 2259, in hasse_diagram_from_incidences\n        for atom, coatoms in enumerate(atom_to_coatoms))\n      File \"/home/vbraun/opt/sage-4.5.alpha1/local/lib/python/site-packages/sage/geometry/cone.py\", line 2259, in <genexpr>\n        for atom, coatoms in enumerate(atom_to_coatoms))\n    KeyError: (frozenset([0]), frozenset([0]))\n```\nAndrey, since its your code maybe you'll understand what is going on.",
     "created_at": "2010-07-01T16:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
@@ -883,7 +869,6 @@ Exception raised:
         for atom, coatoms in enumerate(atom_to_coatoms))
     KeyError: (frozenset([0]), frozenset([0]))
 ```
-
 Andrey, since its your code maybe you'll understand what is going on.
 
 

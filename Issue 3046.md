@@ -3,7 +3,7 @@
 archive/issues_003046.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe attached patch adds to version an option which returns the version and the branch clone name.\nNew behavior:\nsage: version()\nreturns exactly the same thing it did before no change.\nsage: version(True) # or replace \"True\" by anything except \"0\" or \"False\"\nreturns \n(Version, Branch name)\nFor example,\n\n```\nsage: version(1)\n\n('SAGE Version 3.0, Release Date: 2008-04-22',\n 'Mercurial clone branch: version')\n```\n\nin a Mercurial clone branch created using \"sage -clone version\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3046\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch adds to version an option which returns the version and the branch clone name.\nNew behavior:\nsage: version()\nreturns exactly the same thing it did before no change.\nsage: version(True) # or replace \"True\" by anything except \"0\" or \"False\"\nreturns \n(Version, Branch name)\nFor example,\n\n```\nsage: version(1)\n\n('SAGE Version 3.0, Release Date: 2008-04-22',\n 'Mercurial clone branch: version')\n```\nin a Mercurial clone branch created using \"sage -clone version\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3046\n\n",
     "created_at": "2008-04-27T20:19:58Z",
     "labels": [
         "component: user interface",
@@ -33,7 +33,6 @@ sage: version(1)
 ('SAGE Version 3.0, Release Date: 2008-04-22',
  'Mercurial clone branch: version')
 ```
-
 in a Mercurial clone branch created using "sage -clone version".
 
 Issue created by migration from https://trac.sagemath.org/ticket/3046
@@ -173,7 +172,7 @@ archive/issue_events_006900.json:
 archive/issue_comments_020935.json:
 ```json
 {
-    "body": "Very negative review because the patch adds this line:\n\n```\n\tr\"\"\"nodoctest \n```\n",
+    "body": "Very negative review because the patch adds this line:\n\n```\n\tr\"\"\"nodoctest \n```",
     "created_at": "2008-05-19T06:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
@@ -187,7 +186,6 @@ Very negative review because the patch adds this line:
 ```
 	r"""nodoctest 
 ```
-
 
 
 

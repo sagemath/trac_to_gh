@@ -3,7 +3,7 @@
 archive/issues_003290.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nFrom http://math-atlas.sourceforge.net/errata.html#JITNaN:\n\n\n```\nComplex GEMM sometimes accesses C when BETA=0\nThis happens when K is much larger than M and N, and is caused by a bug in special-case GEMM code. To fix, edit ATLAS/src/blas/gemm/ATL_cmmJITcp.c, and change lines 267 and 268 from:\n\n   else  /* two or more dim < NB, requires generated cleanup */\n      NBmm0 = NBmm1 = NBmmX = Mjoin(PATLU,pKBmm);\n\nto:\n\n   else { NBmm0 = NBmm1 = NBmmX = Mjoin(PATLU,pKBmm);\n          if (SCALAR_IS_ZERO(beta)) Mjoin(PATL,gezero)(M, N, C, ldc); }\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3290\n\n",
+    "body": "Assignee: jkantor\n\nFrom http://math-atlas.sourceforge.net/errata.html#JITNaN:\n\n```\nComplex GEMM sometimes accesses C when BETA=0\nThis happens when K is much larger than M and N, and is caused by a bug in special-case GEMM code. To fix, edit ATLAS/src/blas/gemm/ATL_cmmJITcp.c, and change lines 267 and 268 from:\n\n   else  /* two or more dim < NB, requires generated cleanup */\n      NBmm0 = NBmm1 = NBmmX = Mjoin(PATLU,pKBmm);\n\nto:\n\n   else { NBmm0 = NBmm1 = NBmmX = Mjoin(PATLU,pKBmm);\n          if (SCALAR_IS_ZERO(beta)) Mjoin(PATL,gezero)(M, N, C, ldc); }\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3290\n\n",
     "created_at": "2008-05-23T20:29:59Z",
     "labels": [
         "component: numerical",
@@ -21,7 +21,6 @@ Assignee: jkantor
 
 From http://math-atlas.sourceforge.net/errata.html#JITNaN:
 
-
 ```
 Complex GEMM sometimes accesses C when BETA=0
 This happens when K is much larger than M and N, and is caused by a bug in special-case GEMM code. To fix, edit ATLAS/src/blas/gemm/ATL_cmmJITcp.c, and change lines 267 and 268 from:
@@ -34,7 +33,6 @@ to:
    else { NBmm0 = NBmm1 = NBmmX = Mjoin(PATLU,pKBmm);
           if (SCALAR_IS_ZERO(beta)) Mjoin(PATL,gezero)(M, N, C, ldc); }
 ```
-
 
 Cheers,
 

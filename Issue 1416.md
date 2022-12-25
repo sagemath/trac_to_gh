@@ -97,7 +97,7 @@ Michael
 archive/issue_comments_009109.json:
 ```json
 {
-    "body": "Add this to spkg/install\n\n```\nR=`$newest r`\nexport R\n```\n\n\nAdd this to spkg/standard/deps (somewhere in the middle):\n\n```\n$(INST)/$(R): $(INST)/$(PYTHON)      \n        $(SAGE_SPKG) $(R) 2>&1\n        $(MAKEREL)\n```\n\nand also add this to the big list of things the $(INST)/$(SAGE) target depends on:\n\n```\n                $(INST)/$(R)  \\\n```\n\n\nWARNING: The above is untested, so probably not perfect -- though I'm pretty confident.",
+    "body": "Add this to spkg/install\n\n```\nR=`$newest r`\nexport R\n```\n\nAdd this to spkg/standard/deps (somewhere in the middle):\n\n```\n$(INST)/$(R): $(INST)/$(PYTHON)      \n        $(SAGE_SPKG) $(R) 2>&1\n        $(MAKEREL)\n```\nand also add this to the big list of things the $(INST)/$(SAGE) target depends on:\n\n```\n                $(INST)/$(R)  \\\n```\n\nWARNING: The above is untested, so probably not perfect -- though I'm pretty confident.",
     "created_at": "2007-12-09T18:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ R=`$newest r`
 export R
 ```
 
-
 Add this to spkg/standard/deps (somewhere in the middle):
 
 ```
@@ -121,13 +120,11 @@ $(INST)/$(R): $(INST)/$(PYTHON)
         $(SAGE_SPKG) $(R) 2>&1
         $(MAKEREL)
 ```
-
 and also add this to the big list of things the $(INST)/$(SAGE) target depends on:
 
 ```
                 $(INST)/$(R)  \
 ```
-
 
 WARNING: The above is untested, so probably not perfect -- though I'm pretty confident.
 
@@ -175,7 +172,7 @@ http://sagemath.org/packages/optional/
 archive/issue_comments_009111.json:
 ```json
 {
-    "body": "WAIT: Readline detection still doesn't work -- i.e., only using the readline in sage -- at least on one platform, namely sagemath.org (opteron ubuntu 64bit):\n\n\n```\n0.3 -L/usr/lib/gcc -lf95 -lm  ../extra/zlib/libz.a ../extra/bzip2/libbz2.a ../extra/pcre/libpcre.a  -lreadline -lncurses  -ldl -lm\n/usr/bin/ld: cannot find -lreadline\ncollect2: ld returned 1 exit status\nmake[3]: *** [libR.so] Error 1\nmake[3]: Leaving directory `/home2/sage/s/local/lib/r/src/main'\nmake[2]: *** [R] Error 2\nmake[2]: Leaving directory `/home2/sage/s/local/lib/r/src/main'\nmake[1]: *** [R] Error 1\nmake[1]: Leaving directory `/home2/sage/s/local/lib/r/src'\nmake: *** [R] Error 1\nError building R.\n\nreal\t2m59.168s\nuser\t1m9.016s\nsys\t0m30.386s\nsage: An error occurred while installing r-2.6.1.p2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home2/sage/s/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home2/sage/s/spkg/build/r-2.6.1.p2 and type 'make'.\nInstead type \"/home2/sage/s/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home2/sage/s/spkg/build/r-2.6.1.p2\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n\n```\n",
+    "body": "WAIT: Readline detection still doesn't work -- i.e., only using the readline in sage -- at least on one platform, namely sagemath.org (opteron ubuntu 64bit):\n\n```\n0.3 -L/usr/lib/gcc -lf95 -lm  ../extra/zlib/libz.a ../extra/bzip2/libbz2.a ../extra/pcre/libpcre.a  -lreadline -lncurses  -ldl -lm\n/usr/bin/ld: cannot find -lreadline\ncollect2: ld returned 1 exit status\nmake[3]: *** [libR.so] Error 1\nmake[3]: Leaving directory `/home2/sage/s/local/lib/r/src/main'\nmake[2]: *** [R] Error 2\nmake[2]: Leaving directory `/home2/sage/s/local/lib/r/src/main'\nmake[1]: *** [R] Error 1\nmake[1]: Leaving directory `/home2/sage/s/local/lib/r/src'\nmake: *** [R] Error 1\nError building R.\n\nreal\t2m59.168s\nuser\t1m9.016s\nsys\t0m30.386s\nsage: An error occurred while installing r-2.6.1.p2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home2/sage/s/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home2/sage/s/spkg/build/r-2.6.1.p2 and type 'make'.\nInstead type \"/home2/sage/s/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home2/sage/s/spkg/build/r-2.6.1.p2\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n\n```",
     "created_at": "2007-12-09T19:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
@@ -185,7 +182,6 @@ archive/issue_comments_009111.json:
 ```
 
 WAIT: Readline detection still doesn't work -- i.e., only using the readline in sage -- at least on one platform, namely sagemath.org (opteron ubuntu 64bit):
-
 
 ```
 0.3 -L/usr/lib/gcc -lf95 -lm  ../extra/zlib/libz.a ../extra/bzip2/libbz2.a ../extra/pcre/libpcre.a  -lreadline -lncurses  -ldl -lm
@@ -216,7 +212,6 @@ in order to set all environment variables correctly, then cd to
 subshell.)
 
 ```
-
 
 
 

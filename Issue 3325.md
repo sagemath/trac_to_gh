@@ -3,7 +3,7 @@
 archive/issues_003325.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: %latex, dvipng\n\n%latex calls dvipng if it is available.  Its arguments include '-q*', and my shell tries to expand the *, thus causing %latex to bomb whenever I use it.  In fact, the argument should just be '-q'.  (See the dvipng man page: at one point it says\n\n```\n-q* Run quietly.  Don't chatter about pages converted, etc. to standard output;\n    report no warnings (only errors) to standard error.\n```\n\nBut earlier it says\n\n```\nMany of the parameterless options listed here can be turned off by suffixing the\noption with a zero (0); for instance, to turn off page reversal, use -r0.  Such\noptions are marked with a trailing *.\n```\n\nSo the * is not actually part of the argument.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3325\n\n",
+    "body": "Assignee: somebody\n\nKeywords: %latex, dvipng\n\n%latex calls dvipng if it is available.  Its arguments include '-q*', and my shell tries to expand the *, thus causing %latex to bomb whenever I use it.  In fact, the argument should just be '-q'.  (See the dvipng man page: at one point it says\n\n```\n-q* Run quietly.  Don't chatter about pages converted, etc. to standard output;\n    report no warnings (only errors) to standard error.\n```\nBut earlier it says\n\n```\nMany of the parameterless options listed here can be turned off by suffixing the\noption with a zero (0); for instance, to turn off page reversal, use -r0.  Such\noptions are marked with a trailing *.\n```\nSo the * is not actually part of the argument.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3325\n\n",
     "created_at": "2008-05-28T19:50:11Z",
     "labels": [
         "component: notebook",
@@ -27,7 +27,6 @@ Keywords: %latex, dvipng
 -q* Run quietly.  Don't chatter about pages converted, etc. to standard output;
     report no warnings (only errors) to standard error.
 ```
-
 But earlier it says
 
 ```
@@ -35,7 +34,6 @@ Many of the parameterless options listed here can be turned off by suffixing the
 option with a zero (0); for instance, to turn off page reversal, use -r0.  Such
 options are marked with a trailing *.
 ```
-
 So the * is not actually part of the argument.)
 
 Issue created by migration from https://trac.sagemath.org/ticket/3325

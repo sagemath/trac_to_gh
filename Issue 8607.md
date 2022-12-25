@@ -168,7 +168,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077856.json:
 ```json
 {
-    "body": "Replying to [comment:4 slabbe]:\n\n> \n> One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.\n> \n\n+1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.",
+    "body": "Replying to [comment:4 slabbe]:\n\n> \n> One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.\n> \n\n\n+1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.",
     "created_at": "2010-04-21T15:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
@@ -182,6 +182,7 @@ Replying to [comment:4 slabbe]:
 > 
 > One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.
 > 
+
 
 +1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.
 
@@ -246,7 +247,7 @@ archive/issue_events_020806.json:
 archive/issue_comments_077859.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 slabbe]:\n> \n> > \n> > One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.\n> > \n> \n> +1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.\n\nI submitted a patch for this: Trac #9907.\nCheers,\nJohan",
+    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 slabbe]:\n> \n> > \n> > One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.\n> > \n\n> \n> +1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.\n\n\nI submitted a patch for this: Trac #9907.\nCheers,\nJohan",
     "created_at": "2010-09-14T18:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
@@ -261,8 +262,10 @@ Replying to [comment:5 jason]:
 > > 
 > > One last idea (for another ticket) since I am thinking about it. Maybe this `rename_keyword` decorator could move up in `sage/misc` because I think it will be used by more than the plot code.
 > > 
+
 > 
 > +1.  In fact, the other decorators in that file probably ought to be moved up to sage/misc as well.
+
 
 I submitted a patch for this: Trac #9907.
 Cheers,

@@ -75,7 +75,7 @@ This seems to be a buffering issue, just pressing enter a few times helps ...
 archive/issue_comments_001783.json:
 ```json
 {
-    "body": "It's still important to fix this.\n\n\n```\n>> biopython install:\n>>\n> This is a known problem.  We are trying to find a hack to get\n> around it,\n> but nobody has found one yet.  I believe if you just hit return a few\n> times when it appears to \"hang\", then it will contiue fine to the end\n> of the build.\n\nIndeed, that works quite nicely. I think I've got everything that is\nlikely to build on OSX, except for the open question about Axiom.\n\nMany thanks\n```\n",
+    "body": "It's still important to fix this.\n\n```\n>> biopython install:\n>>\n> This is a known problem.  We are trying to find a hack to get\n> around it,\n> but nobody has found one yet.  I believe if you just hit return a few\n> times when it appears to \"hang\", then it will contiue fine to the end\n> of the build.\n\nIndeed, that works quite nicely. I think I've got everything that is\nlikely to build on OSX, except for the open question about Axiom.\n\nMany thanks\n```",
     "created_at": "2007-08-10T20:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/375",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ archive/issue_comments_001783.json:
 ```
 
 It's still important to fix this.
-
 
 ```
 >> biopython install:
@@ -101,7 +100,6 @@ likely to build on OSX, except for the open question about Axiom.
 
 Many thanks
 ```
-
 
 
 

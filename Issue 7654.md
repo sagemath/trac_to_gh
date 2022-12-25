@@ -3,7 +3,7 @@
 archive/issues_007654.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: conversion libsingular\n\nThe following happens in sage-4.2.1 and sage-4.3.alpha1:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = QQ[]\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (947, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (952, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/12072/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7032)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3259)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7195)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod_ring.pyc in __call__(self, x)\n    761         \"\"\"\n    762         try:\n--> 763             return integer_mod.IntegerMod(self, x)\n    764         except (NotImplementedError, PariError):\n    765             raise TypeError, \"error coercing to finite field\"\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2969)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:13984)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4241)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:7009)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\n\nString conversion is fine.\n\n```\nsage: S('y_1*z_2^2*z_1')\ny_1*z_2^2*z_1\n```\n\n\nI know that there is no coercion between these two rings. However, here we have *conversion*. Conversion should -- as much as I understand -- try to make a meaning out of the input, even if the parents do not support coercion.\n\nTherefore I consider this a quite serious bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7654\n\n",
+    "body": "Assignee: @malb\n\nKeywords: conversion libsingular\n\nThe following happens in sage-4.2.1 and sage-4.3.alpha1:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = QQ[]\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (947, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (952, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/12072/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7032)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3259)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7195)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod_ring.pyc in __call__(self, x)\n    761         \"\"\"\n    762         try:\n--> 763             return integer_mod.IntegerMod(self, x)\n    764         except (NotImplementedError, PariError):\n    765             raise TypeError, \"error coercing to finite field\"\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2969)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:13984)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4241)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:7009)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\nString conversion is fine.\n\n```\nsage: S('y_1*z_2^2*z_1')\ny_1*z_2^2*z_1\n```\n\nI know that there is no coercion between these two rings. However, here we have *conversion*. Conversion should -- as much as I understand -- try to make a meaning out of the input, even if the parents do not support coercion.\n\nTherefore I consider this a quite serious bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7654\n\n",
     "created_at": "2009-12-11T00:25:56Z",
     "labels": [
         "component: commutative algebra",
@@ -69,14 +69,12 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unable to coerce <type 'list'> to an integer
 ```
 
-
 String conversion is fine.
 
 ```
 sage: S('y_1*z_2^2*z_1')
 y_1*z_2^2*z_1
 ```
-
 
 I know that there is no coercion between these two rings. However, here we have *conversion*. Conversion should -- as much as I understand -- try to make a meaning out of the input, even if the parents do not support coercion.
 
@@ -111,7 +109,7 @@ I still think that this is a serious bug, and it has  not been addressed in the 
 archive/issue_comments_065344.json:
 ```json
 {
-    "body": "Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:\n\n\n```python\nsage: R.<a,b,c> = GF(3)[]\nsage: S = QQ['x','y','z']\nsage: S(a)\nx\n```\n\n\nSo, technically, it is not a bug. However, it might be a good idea to change this behaviour?",
+    "body": "Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:\n\n```python\nsage: R.<a,b,c> = GF(3)[]\nsage: S = QQ['x','y','z']\nsage: S(a)\nx\n```\n\nSo, technically, it is not a bug. However, it might be a good idea to change this behaviour?",
     "created_at": "2011-06-21T13:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -122,14 +120,12 @@ archive/issue_comments_065344.json:
 
 Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:
 
-
 ```python
 sage: R.<a,b,c> = GF(3)[]
 sage: S = QQ['x','y','z']
 sage: S(a)
 x
 ```
-
 
 So, technically, it is not a bug. However, it might be a good idea to change this behaviour?
 
@@ -158,7 +154,7 @@ I noticed a bug in the code when looking into this issue attachment:trac_7654.pa
 archive/issue_comments_065346.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:\n\nI know.\n\n> So, technically, it is not a bug.\n\nI disagree: There is a bug.\n\nAdmittedly it is not a bug with my original example, because it contains `z_1` (index 9 in `R.gens()`), whereas `S` only has 9 variables. So, the attempt to find a generator of index 9 must fail (but please with a less cryptic error message!!).\n\nHowever, we also have\n\n```\nsage: S(y_1*z_2^2*z_4)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\n\neven though we have\n\n```\n\nsage: R.gens().index(y_1)\n3\nsage: R.gens().index(z_2)\n8\nsage: R.gens().index(z_4)\n6\nsage: S.gens()[3]\ny_1\nsage: S.gens()[8]\nz_1\nsage: S.gens()[6]\nz_3\n```\n\n\nSo, using indices for conversion, one *should* have\n\n```\nsage: S(y_1*z_2^2*z_4)\ny_1*z_1^2*z_3\n```\n\nbut one gets a traceback.\n\nThat is clearly a bug. Is that fixed with your patch?",
+    "body": "Replying to [comment:2 malb]:\n> Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:\n\n\nI know.\n\n> So, technically, it is not a bug.\n\n\nI disagree: There is a bug.\n\nAdmittedly it is not a bug with my original example, because it contains `z_1` (index 9 in `R.gens()`), whereas `S` only has 9 variables. So, the attempt to find a generator of index 9 must fail (but please with a less cryptic error message!!).\n\nHowever, we also have\n\n```\nsage: S(y_1*z_2^2*z_4)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\neven though we have\n\n```\n\nsage: R.gens().index(y_1)\n3\nsage: R.gens().index(z_2)\n8\nsage: R.gens().index(z_4)\n6\nsage: S.gens()[3]\ny_1\nsage: S.gens()[8]\nz_1\nsage: S.gens()[6]\nz_3\n```\n\nSo, using indices for conversion, one *should* have\n\n```\nsage: S(y_1*z_2^2*z_4)\ny_1*z_1^2*z_3\n```\nbut one gets a traceback.\n\nThat is clearly a bug. Is that fixed with your patch?",
     "created_at": "2011-06-21T15:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -170,9 +166,11 @@ archive/issue_comments_065346.json:
 Replying to [comment:2 malb]:
 > Hi, sorry for taking so long to take a look. The reason for this behaviour is that currently, conversion is simply defined by index:
 
+
 I know.
 
 > So, technically, it is not a bug.
+
 
 I disagree: There is a bug.
 
@@ -191,7 +189,6 @@ The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (1154, 0))
 ...
 ```
-
 even though we have
 
 ```
@@ -210,14 +207,12 @@ sage: S.gens()[6]
 z_3
 ```
 
-
 So, using indices for conversion, one *should* have
 
 ```
 sage: S(y_1*z_2^2*z_4)
 y_1*z_1^2*z_3
 ```
-
 but one gets a traceback.
 
 That is clearly a bug. Is that fixed with your patch?
@@ -255,7 +250,7 @@ b) when the number of variables do not match?
 archive/issue_comments_065348.json:
 ```json
 {
-    "body": "Replying to [comment:5 malb]:\n> Okay, but my patch does not fix this. \n> \n> So, what behaviour do we want?\n> a) when the number of variables match\n> b) when the number of variables do not match?\n\nTime for a little advertisement: At #8821 and #11490, I suggest to add a section in the guided tour resp. a thematic tutorial explaining coercion in Sage (both needs review). At least in #11490, I try to explain the rationale behind the conversion of polynomials in Sage.\n\nI think we should have the following rules:\n\nLet P and Q be polynomial rings, over the same base ring (for simplicity).\n\nIf the set of variable names of P is a subset of the set of variable names of Q then the conversion from P to Q is name preserving, and it is used as a coercion. That is how it currently works.\n\n```\nsage: P.<a,b,c> = QQ[]\nsage: Q = QQ['c','b','d','a']\nsage: f = Q.coerce_map_from(P)\nsage: f(a),f(b),f(c)\n(a, b, c)\n```\n\n\nOtherwise, we should have a position preserving conversion - regardless whether the number of variables matches or not. If the number of variables of P is bigger than of Q, then the conversion is only defined on a sub-ring of P. In any case, that conversion must not be used as a coercion.\n\nNote that at the moment we only have that behaviour if the number of variables matches:\n\n1. Q has more variables than P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','b','d','e']\nsage: f = Q.convert_map_from(P)\nsage: f(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\n\nI suggest that one should have\n\n```\nsage: f(a), f(b), f(c) # not implemented\n(c, b, d)\n```\n\n\n2. Q has as many variables as P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','b','d']\nsage: f = Q.convert_map_from(P)\nsage: f(a),f(b),f(c)\n(c, b, d)\n```\n\nI think that's fine.\n\n3. Q has less variables than P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','d']\nsage: f = Q.convert_map_from(P)\nsage: f(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\n\nI suggest that one should have\n\n```\nsage: f(a), f(b) # not implemented\n(c, d)\nsage: f(c)\nTraceback (most recent call last):\n...\nTypeError: That polynomial ring only has 2 variables\n```\n",
+    "body": "Replying to [comment:5 malb]:\n> Okay, but my patch does not fix this. \n> \n> So, what behaviour do we want?\n> a) when the number of variables match\n> b) when the number of variables do not match?\n\n\nTime for a little advertisement: At #8821 and #11490, I suggest to add a section in the guided tour resp. a thematic tutorial explaining coercion in Sage (both needs review). At least in #11490, I try to explain the rationale behind the conversion of polynomials in Sage.\n\nI think we should have the following rules:\n\nLet P and Q be polynomial rings, over the same base ring (for simplicity).\n\nIf the set of variable names of P is a subset of the set of variable names of Q then the conversion from P to Q is name preserving, and it is used as a coercion. That is how it currently works.\n\n```\nsage: P.<a,b,c> = QQ[]\nsage: Q = QQ['c','b','d','a']\nsage: f = Q.coerce_map_from(P)\nsage: f(a),f(b),f(c)\n(a, b, c)\n```\n\nOtherwise, we should have a position preserving conversion - regardless whether the number of variables matches or not. If the number of variables of P is bigger than of Q, then the conversion is only defined on a sub-ring of P. In any case, that conversion must not be used as a coercion.\n\nNote that at the moment we only have that behaviour if the number of variables matches:\n\n1. Q has more variables than P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','b','d','e']\nsage: f = Q.convert_map_from(P)\nsage: f(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\nI suggest that one should have\n\n```\nsage: f(a), f(b), f(c) # not implemented\n(c, b, d)\n```\n\n2. Q has as many variables as P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','b','d']\nsage: f = Q.convert_map_from(P)\nsage: f(a),f(b),f(c)\n(c, b, d)\n```\nI think that's fine.\n\n3. Q has less variables than P:\n\n```\nsage: P.<a,b,c> = GF(2)[]\nsage: Q = GF(2)['c','d']\nsage: f = Q.convert_map_from(P)\nsage: f(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\n...\n```\nI suggest that one should have\n\n```\nsage: f(a), f(b) # not implemented\n(c, d)\nsage: f(c)\nTraceback (most recent call last):\n...\nTypeError: That polynomial ring only has 2 variables\n```",
     "created_at": "2011-06-21T18:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -270,6 +265,7 @@ Replying to [comment:5 malb]:
 > So, what behaviour do we want?
 > a) when the number of variables match
 > b) when the number of variables do not match?
+
 
 Time for a little advertisement: At #8821 and #11490, I suggest to add a section in the guided tour resp. a thematic tutorial explaining coercion in Sage (both needs review). At least in #11490, I try to explain the rationale behind the conversion of polynomials in Sage.
 
@@ -287,7 +283,6 @@ sage: f(a),f(b),f(c)
 (a, b, c)
 ```
 
-
 Otherwise, we should have a position preserving conversion - regardless whether the number of variables matches or not. If the number of variables of P is bigger than of Q, then the conversion is only defined on a sub-ring of P. In any case, that conversion must not be used as a coercion.
 
 Note that at the moment we only have that behaviour if the number of variables matches:
@@ -304,14 +299,12 @@ The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (1154, 0))
 ...
 ```
-
 I suggest that one should have
 
 ```
 sage: f(a), f(b), f(c) # not implemented
 (c, b, d)
 ```
-
 
 2. Q has as many variables as P:
 
@@ -322,7 +315,6 @@ sage: f = Q.convert_map_from(P)
 sage: f(a),f(b),f(c)
 (c, b, d)
 ```
-
 I think that's fine.
 
 3. Q has less variables than P:
@@ -337,7 +329,6 @@ The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (1154, 0))
 ...
 ```
-
 I suggest that one should have
 
 ```
@@ -348,7 +339,6 @@ Traceback (most recent call last):
 ...
 TypeError: That polynomial ring only has 2 variables
 ```
-
 
 
 
@@ -375,7 +365,7 @@ The attached patch deals with 1) and 2). However, for 3) it currently just raise
 archive/issue_comments_065350.json:
 ```json
 {
-    "body": "Replying to [comment:7 malb]:\n> The attached patch deals with 1) and 2). \n\nGood!\n\n> However, for 3) it currently just raises an error. I'm not sure allowing more variables in the input ring + matching by index is such a good idea. Let me know what you think.\n\nI have an argument pro and an argument contra:\n\nI think we agree that the solution for situation 1) and 2) makes sense: It is \"tradition\" in Sage to use a position preserving conversion in 2), and you extended it to 1).\n\nSo, why not extending it to 3) as well? Would that be confusing to the user? Well, if a user is not confused by 2) (which already works in Sage) then s/he will not be confused by 1) or 3) either.\nThe argument \"pro\" is that we have greatest generality, being consistent with the existing solution 2).\n\nOn the other hand, consider the following scenario:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S = QQ['z','y','x']\nsage: S(x),S(y)\n(x, y)\nsage: R(S(x))\nx\nsage: R(S(y))\ny\n```\n\n\nThat is the current behaviour. But 3) would imply that the conversion from S to R should be position preserving, and thus R(S(x)) would raise an error. So, having 3) would mean to change existing behaviour that actually seems quite natural. That is a strong argument \"contra\".\n\nAllow me to modify my suggestion as follows:\n\n If the set of variable names of S is a subset of the variable names of R then we have a name-preserving conversion in *both* directions, and the conversion from S to R is a coercion. Otherwise, we have a position-preserving conversion in both directions, which is not a coercion.\n\nThat would be consistent with the current solution for 2), would coincide with what your patch does in 1), is consistent with the current behaviour of R(S(x)) in the example above, and we would *always* have a conversion.\n\nWhat do you think...\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:7 malb]:\n> The attached patch deals with 1) and 2). \n\n\nGood!\n\n> However, for 3) it currently just raises an error. I'm not sure allowing more variables in the input ring + matching by index is such a good idea. Let me know what you think.\n\n\nI have an argument pro and an argument contra:\n\nI think we agree that the solution for situation 1) and 2) makes sense: It is \"tradition\" in Sage to use a position preserving conversion in 2), and you extended it to 1).\n\nSo, why not extending it to 3) as well? Would that be confusing to the user? Well, if a user is not confused by 2) (which already works in Sage) then s/he will not be confused by 1) or 3) either.\nThe argument \"pro\" is that we have greatest generality, being consistent with the existing solution 2).\n\nOn the other hand, consider the following scenario:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S = QQ['z','y','x']\nsage: S(x),S(y)\n(x, y)\nsage: R(S(x))\nx\nsage: R(S(y))\ny\n```\n\nThat is the current behaviour. But 3) would imply that the conversion from S to R should be position preserving, and thus R(S(x)) would raise an error. So, having 3) would mean to change existing behaviour that actually seems quite natural. That is a strong argument \"contra\".\n\nAllow me to modify my suggestion as follows:\n\n If the set of variable names of S is a subset of the variable names of R then we have a name-preserving conversion in *both* directions, and the conversion from S to R is a coercion. Otherwise, we have a position-preserving conversion in both directions, which is not a coercion.\n\nThat would be consistent with the current solution for 2), would coincide with what your patch does in 1), is consistent with the current behaviour of R(S(x)) in the example above, and we would *always* have a conversion.\n\nWhat do you think...\n\nCheers,\n\nSimon",
     "created_at": "2011-06-22T13:27:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -387,9 +377,11 @@ archive/issue_comments_065350.json:
 Replying to [comment:7 malb]:
 > The attached patch deals with 1) and 2). 
 
+
 Good!
 
 > However, for 3) it currently just raises an error. I'm not sure allowing more variables in the input ring + matching by index is such a good idea. Let me know what you think.
+
 
 I have an argument pro and an argument contra:
 
@@ -410,7 +402,6 @@ x
 sage: R(S(y))
 y
 ```
-
 
 That is the current behaviour. But 3) would imply that the conversion from S to R should be position preserving, and thus R(S(x)) would raise an error. So, having 3) would mean to change existing behaviour that actually seems quite natural. That is a strong argument "contra".
 
@@ -433,7 +424,7 @@ Simon
 archive/issue_comments_065351.json:
 ```json
 {
-    "body": "Replying to [comment:8 SimonKing]:\n> That would be consistent with the current solution for 2), would coincide with what your patch does in 1), is consistent with the current behaviour of R(S(x)) in the example above, and we would *always* have a conversion.\n\n*Always* in the sense of \"defined on a subring\".",
+    "body": "Replying to [comment:8 SimonKing]:\n> That would be consistent with the current solution for 2), would coincide with what your patch does in 1), is consistent with the current behaviour of R(S(x)) in the example above, and we would *always* have a conversion.\n\n\n*Always* in the sense of \"defined on a subring\".",
     "created_at": "2011-06-22T16:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -445,6 +436,7 @@ archive/issue_comments_065351.json:
 Replying to [comment:8 SimonKing]:
 > That would be consistent with the current solution for 2), would coincide with what your patch does in 1), is consistent with the current behaviour of R(S(x)) in the example above, and we would *always* have a conversion.
 
+
 *Always* in the sense of "defined on a subring".
 
 
@@ -454,7 +446,7 @@ Replying to [comment:8 SimonKing]:
 archive/issue_comments_065352.json:
 ```json
 {
-    "body": "If I understood correctly, I still find this confusing, for the following reason:\n\n\n```python]\nsage: P.<a,x,y> = QQ[]\nsage: S = QQ['x','y','b']\nsage: S(a) # conversion by index\nx\nsage: S(x) # conversion by name\nx\n```\n\n\nso we get collisions which I don't like.",
+    "body": "If I understood correctly, I still find this confusing, for the following reason:\n\n```python]\nsage: P.<a,x,y> = QQ[]\nsage: S = QQ['x','y','b']\nsage: S(a) # conversion by index\nx\nsage: S(x) # conversion by name\nx\n```\n\nso we get collisions which I don't like.",
     "created_at": "2011-06-23T11:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -465,7 +457,6 @@ archive/issue_comments_065352.json:
 
 If I understood correctly, I still find this confusing, for the following reason:
 
-
 ```python]
 sage: P.<a,x,y> = QQ[]
 sage: S = QQ['x','y','b']
@@ -474,7 +465,6 @@ x
 sage: S(x) # conversion by name
 x
 ```
-
 
 so we get collisions which I don't like.
 
@@ -485,7 +475,7 @@ so we get collisions which I don't like.
 archive/issue_comments_065353.json:
 ```json
 {
-    "body": "Replying to [comment:10 malb]:\n> If I understood correctly, I still find this confusing, for the following reason:\n> ...\n> so we get collisions which I don't like.\n\nIn your example, the set of variable names of P is not a subset of the set of variable names of S. Hence, I believe that in your example one should have conversion by position *only*. Thus:\n\n```\nsage: S(a)\nx\nsage: S(x)\ny\n```\n",
+    "body": "Replying to [comment:10 malb]:\n> If I understood correctly, I still find this confusing, for the following reason:\n> ...\n> so we get collisions which I don't like.\n\n\nIn your example, the set of variable names of P is not a subset of the set of variable names of S. Hence, I believe that in your example one should have conversion by position *only*. Thus:\n\n```\nsage: S(a)\nx\nsage: S(x)\ny\n```",
     "created_at": "2011-06-23T15:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -499,6 +489,7 @@ Replying to [comment:10 malb]:
 > ...
 > so we get collisions which I don't like.
 
+
 In your example, the set of variable names of P is not a subset of the set of variable names of S. Hence, I believe that in your example one should have conversion by position *only*. Thus:
 
 ```
@@ -510,13 +501,12 @@ y
 
 
 
-
 ---
 
 archive/issue_comments_065354.json:
 ```json
 {
-    "body": "Okay, I understood: the variables in the polynomial instead of in the ring. If we take the variables of the ring, everything is fine.\n\nNote, however, that this implies that your original example will fail (?)\n\n\n```python\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\n```\n",
+    "body": "Okay, I understood: the variables in the polynomial instead of in the ring. If we take the variables of the ring, everything is fine.\n\nNote, however, that this implies that your original example will fail (?)\n\n```python\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\n```",
     "created_at": "2011-06-23T15:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -529,7 +519,6 @@ Okay, I understood: the variables in the polynomial instead of in the ring. If w
 
 Note, however, that this implies that your original example will fail (?)
 
-
 ```python
 sage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]
 sage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']
@@ -538,13 +527,12 @@ sage: S(y_1*z_2^2*z_1)
 
 
 
-
 ---
 
 archive/issue_comments_065355.json:
 ```json
 {
-    "body": "Replying to [comment:12 malb]:\n> Note, however, that this implies that your original example will fail (?)\n\nI think I can live with it...",
+    "body": "Replying to [comment:12 malb]:\n> Note, however, that this implies that your original example will fail (?)\n\n\nI think I can live with it...",
     "created_at": "2011-06-23T15:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -555,6 +543,7 @@ archive/issue_comments_065355.json:
 
 Replying to [comment:12 malb]:
 > Note, however, that this implies that your original example will fail (?)
+
 
 I think I can live with it...
 
@@ -619,7 +608,7 @@ Oops, I completely forgot about that ticket!
 archive/issue_comments_065359.json:
 ```json
 {
-    "body": "First things first: My original example still fails, but I think we agreed that it *should* fail. And the error message is definitely nicer than before:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (6675, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7805)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3271)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8103)()\n\nTypeError: Could not find a mapping of the passed element to this ring.\n```\n\n\nI went through the examples that we had discussed, and I find that they work as it was proposed. And the logic behind the conversions is explained in the docs.\n\nI am now running all long tests, and if that works then it'll be a positive review.",
+    "body": "First things first: My original example still fails, but I think we agreed that it *should* fail. And the error message is definitely nicer than before:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (6675, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7805)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3271)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8103)()\n\nTypeError: Could not find a mapping of the passed element to this ring.\n```\n\nI went through the examples that we had discussed, and I find that they work as it was proposed. And the logic behind the conversions is explained in the docs.\n\nI am now running all long tests, and if that works then it'll be a positive review.",
     "created_at": "2011-08-18T12:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -652,7 +641,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: Could not find a mapping of the passed element to this ring.
 ```
 
-
 I went through the examples that we had discussed, and I find that they work as it was proposed. And the logic behind the conversions is explained in the docs.
 
 I am now running all long tests, and if that works then it'll be a positive review.
@@ -682,7 +670,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065361.json:
 ```json
 {
-    "body": "We got two failures (interestingly in two modules I'm quite familiar with):\n\n```\nsage -t -long \"devel/sage-main/sage/categories/pushout.py\"  \nException RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in <type 'exceptions.RuntimeError'> ignored\n**********************************************************************\nFile \"/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/sage/categories/pushout.py\", line 2182:\n    sage: F(QQ['y','z'])\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: not a constant polynomial\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_79[8]>\", line 1, in <module>\n        F(QQ['y','z'])###line 2182:\n    sage: F(QQ['y','z'])\n      File \"functor.pyx\", line 362, in sage.categories.functor.Functor.__call__ (sage/categories/functor.c:1597)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/categories/pushout.py\", line 2265, in _apply_functor\n        I = [R(1)*t for t in I.gens()]*R\n      File \"ring.pyx\", line 416, in sage.rings.ring.Ring.__mul__ (sage/rings/ring.c:4581)\n      File \"multi_polynomial_libsingular.pyx\", line 973, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.ideal (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8886)\n      File \"multi_polynomial_libsingular.pyx\", line 851, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7805)\n      File \"multi_polynomial.pyx\", line 175, in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3243)\n      File \"multi_polynomial_libsingular.pyx\", line 869, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8103)\n    TypeError: Could not find a mapping of the passed element to this ring.\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_79\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/.doctest_pushout.py\n\t [11.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/categories/pushout.py\"\nTotal time for all tests: 11.0 seconds\n```\n\nand\n\n```\nsage -t -long \"devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\", line 139:\n    sage: InfinitePolynomial(X, (alpha_1+alpha_2)^2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        InfinitePolynomial(X, (alpha_1+alpha_2)**Integer(2))###line 139:\n    sage: InfinitePolynomial(X, (alpha_1+alpha_2)^2)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/rings/polynomial/infinite_polynomial_element.py\", line 195, in InfinitePolynomial\n        f = PP.hom([x if x in SV else 0 for x in PP.variable_names()], A._P)\n      File \"parent_gens.pyx\", line 471, in sage.structure.parent_gens.ParentWithGens.hom (sage/structure/parent_gens.c:3949)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/rings/homset.py\", line 97, in __call__\n        return morphism.RingHomomorphism_im_gens(self, im_gens, check=check)\n      File \"morphism.pyx\", line 950, in sage.rings.morphism.RingHomomorphism_im_gens.__init__ (sage/rings/morphism.c:5141)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/structure/sequence.py\", line 298, in Sequence\n        return Sequence_generic(x, universe, check, immutable, cr, cr_str, use_sage_types)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/structure/sequence.py\", line 504, in __init__\n        x = [universe(t) for t in x]\n      File \"multi_polynomial_libsingular.pyx\", line 820, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7336)\n    TypeError: Could not find a mapping of the passed element to this ring.\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/.doctest_infinite_polynomial_element.py\n\t [3.1 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\"\nTotal time for all tests: 3.1 seconds\n```\n\nSo, you just need to change two error messages.\n\nI am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.",
+    "body": "We got two failures (interestingly in two modules I'm quite familiar with):\n\n```\nsage -t -long \"devel/sage-main/sage/categories/pushout.py\"  \nException RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in <type 'exceptions.RuntimeError'> ignored\n**********************************************************************\nFile \"/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/sage/categories/pushout.py\", line 2182:\n    sage: F(QQ['y','z'])\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: not a constant polynomial\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_79[8]>\", line 1, in <module>\n        F(QQ['y','z'])###line 2182:\n    sage: F(QQ['y','z'])\n      File \"functor.pyx\", line 362, in sage.categories.functor.Functor.__call__ (sage/categories/functor.c:1597)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/categories/pushout.py\", line 2265, in _apply_functor\n        I = [R(1)*t for t in I.gens()]*R\n      File \"ring.pyx\", line 416, in sage.rings.ring.Ring.__mul__ (sage/rings/ring.c:4581)\n      File \"multi_polynomial_libsingular.pyx\", line 973, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.ideal (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8886)\n      File \"multi_polynomial_libsingular.pyx\", line 851, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7805)\n      File \"multi_polynomial.pyx\", line 175, in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3243)\n      File \"multi_polynomial_libsingular.pyx\", line 869, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:8103)\n    TypeError: Could not find a mapping of the passed element to this ring.\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_79\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/.doctest_pushout.py\n\t [11.0 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/categories/pushout.py\"\nTotal time for all tests: 11.0 seconds\n```\nand\n\n```\nsage -t -long \"devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/mnt/local/king/SAGE/sage-4.7.1.rc1/devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\", line 139:\n    sage: InfinitePolynomial(X, (alpha_1+alpha_2)^2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        InfinitePolynomial(X, (alpha_1+alpha_2)**Integer(2))###line 139:\n    sage: InfinitePolynomial(X, (alpha_1+alpha_2)^2)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/rings/polynomial/infinite_polynomial_element.py\", line 195, in InfinitePolynomial\n        f = PP.hom([x if x in SV else 0 for x in PP.variable_names()], A._P)\n      File \"parent_gens.pyx\", line 471, in sage.structure.parent_gens.ParentWithGens.hom (sage/structure/parent_gens.c:3949)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/rings/homset.py\", line 97, in __call__\n        return morphism.RingHomomorphism_im_gens(self, im_gens, check=check)\n      File \"morphism.pyx\", line 950, in sage.rings.morphism.RingHomomorphism_im_gens.__init__ (sage/rings/morphism.c:5141)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/structure/sequence.py\", line 298, in Sequence\n        return Sequence_generic(x, universe, check, immutable, cr, cr_str, use_sage_types)\n      File \"/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python/site-packages/sage/structure/sequence.py\", line 504, in __init__\n        x = [universe(t) for t in x]\n      File \"multi_polynomial_libsingular.pyx\", line 820, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7336)\n    TypeError: Could not find a mapping of the passed element to this ring.\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /mnt/local/king/.sage/tmp/.doctest_infinite_polynomial_element.py\n\t [3.1 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py\"\nTotal time for all tests: 3.1 seconds\n```\nSo, you just need to change two error messages.\n\nI am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.",
     "created_at": "2011-08-18T13:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -737,7 +725,6 @@ The following tests failed:
 	sage -t -long "devel/sage-main/sage/categories/pushout.py"
 Total time for all tests: 11.0 seconds
 ```
-
 and
 
 ```
@@ -786,7 +773,6 @@ The following tests failed:
 	sage -t -long "devel/sage-main/sage/rings/polynomial/infinite_polynomial_element.py"
 Total time for all tests: 3.1 seconds
 ```
-
 So, you just need to change two error messages.
 
 I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.
@@ -798,7 +784,7 @@ I am not sure, but it seems to me that the doc tests of the elliptic curves code
 archive/issue_comments_065362.json:
 ```json
 {
-    "body": "Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by @malb created at 2011-08-18 14:04:41\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
+    "body": "Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by @malb created at 2011-08-18 14:04:41\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
     "created_at": "2011-08-18T14:04:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
@@ -813,9 +799,11 @@ Replying to [comment:18 SimonKing]:
 > We got two failures (interestingly in two modules I'm quite familiar with):
 > So, you just need to change two error messages.
 
+
 The updated patch does just that.
  
 > I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.
+
 
 Okay, good. Let me know what the verdict is and I'll take a look at performance if needed.
 

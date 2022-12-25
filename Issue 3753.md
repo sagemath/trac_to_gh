@@ -3,7 +3,7 @@
 archive/issues_003753.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n\n```\n\n\nHi,\n\nI also noticed there is a problem with \"nb.save()\". It assumes that\nthe current directory is \".sage\". So it saves the notebook object in a\nwrong place if you are not in \".sage\". I think this is a bug.\n\n\nKwankyu\n\n\t\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3753\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n```\n\n\nHi,\n\nI also noticed there is a problem with \"nb.save()\". It assumes that\nthe current directory is \".sage\". So it saves the notebook object in a\nwrong place if you are not in \".sage\". I think this is a bug.\n\n\nKwankyu\n\n\t\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3753\n\n",
     "created_at": "2008-08-01T01:34:06Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 CC:  @williamstein @mwhansen
 
-
 ```
 
 
@@ -36,7 +35,6 @@ Kwankyu
 	
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3753
 
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3753
 archive/issue_comments_026610.json:
 ```json
 {
-    "body": "I can't seem to confirm that this is the case. I added the method filename to the Notebook class and here's what I get:\n\n\n```\nnb = load('test/nb.sobj')\nsage: nb.filename()\n'test/nb.sobj'\n```\n\n\nLooking at the source code for Notebook.save() it appears to me that save() relies on self.__filename.",
+    "body": "I can't seem to confirm that this is the case. I added the method filename to the Notebook class and here's what I get:\n\n```\nnb = load('test/nb.sobj')\nsage: nb.filename()\n'test/nb.sobj'\n```\n\nLooking at the source code for Notebook.save() it appears to me that save() relies on self.__filename.",
     "created_at": "2008-08-03T17:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3753",
     "type": "issue_comment",
@@ -59,13 +57,11 @@ archive/issue_comments_026610.json:
 
 I can't seem to confirm that this is the case. I added the method filename to the Notebook class and here's what I get:
 
-
 ```
 nb = load('test/nb.sobj')
 sage: nb.filename()
 'test/nb.sobj'
 ```
-
 
 Looking at the source code for Notebook.save() it appears to me that save() relies on self.__filename.
 

@@ -3,7 +3,7 @@
 archive/issues_004237.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n2) Converting matrices (over finite fields) is very slow for the dimensions\nI'm interested in (the smallest dimension is 10000x10000) because it each\nelement is converted individually. Also, the conversion eats a lot of RAM due\nto the large string that is created.\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4237\n\n",
+    "body": "Assignee: @williamstein\n\n```\n2) Converting matrices (over finite fields) is very slow for the dimensions\nI'm interested in (the smallest dimension is 10000x10000) because it each\nelement is converted individually. Also, the conversion eats a lot of RAM due\nto the large string that is created.\n```\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4237\n\n",
     "created_at": "2008-10-02T16:29:16Z",
     "labels": [
         "component: interfaces"
@@ -17,14 +17,12 @@ archive/issues_004237.json:
 ```
 Assignee: @williamstein
 
-
 ```
 2) Converting matrices (over finite fields) is very slow for the dimensions
 I'm interested in (the smallest dimension is 10000x10000) because it each
 element is converted individually. Also, the conversion eats a lot of RAM due
 to the large string that is created.
 ```
-
 
 Reported by Martin Albrecht
 
@@ -57,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_030720.json:
 ```json
 {
-    "body": "> Which base field are you working over?  GF(2)?  GF(997^1000,'a')?\n\nI am particularly interrested in GF(2) but other finite fields should behave the same. To reproduce:\n\n\n```\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: Am = magma(A) # watch the RAM consumption\n```\n",
+    "body": "> Which base field are you working over?  GF(2)?  GF(997^1000,'a')?\n\n\nI am particularly interrested in GF(2) but other finite fields should behave the same. To reproduce:\n\n```\nsage: A = random_matrix(GF(2),10^4,10^4)\nsage: Am = magma(A) # watch the RAM consumption\n```",
     "created_at": "2008-12-11T10:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -68,14 +66,13 @@ archive/issue_comments_030720.json:
 
 > Which base field are you working over?  GF(2)?  GF(997^1000,'a')?
 
-I am particularly interrested in GF(2) but other finite fields should behave the same. To reproduce:
 
+I am particularly interrested in GF(2) but other finite fields should behave the same. To reproduce:
 
 ```
 sage: A = random_matrix(GF(2),10^4,10^4)
 sage: Am = magma(A) # watch the RAM consumption
 ```
-
 
 
 
@@ -104,7 +101,7 @@ William
 archive/issue_comments_030722.json:
 ```json
 {
-    "body": "I think something can be done:\n\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: AM = magma(A)\n```\n\n\nThis will create a *huge* string in memory (in the Sage process), write that to disk and then read the file into Magma. We could at least write the strings in smaller chunks to disk to avoid the RAM consumption on the Sage side.\n\nBtw. Magma crashes on me on sage.math:\n\n\n```\nbefore (last 100 chars): home/was/s/data/extcode//magma/latex/latex.m is compiled for newer version than current executable\n```\n",
+    "body": "I think something can be done:\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: AM = magma(A)\n```\n\nThis will create a *huge* string in memory (in the Sage process), write that to disk and then read the file into Magma. We could at least write the strings in smaller chunks to disk to avoid the RAM consumption on the Sage side.\n\nBtw. Magma crashes on me on sage.math:\n\n```\nbefore (last 100 chars): home/was/s/data/extcode//magma/latex/latex.m is compiled for newer version than current executable\n```",
     "created_at": "2008-12-12T00:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -115,22 +112,18 @@ archive/issue_comments_030722.json:
 
 I think something can be done:
 
-
 ```
 sage: A = random_matrix(GF(2),2*10^4,2*10^4)
 sage: AM = magma(A)
 ```
 
-
 This will create a *huge* string in memory (in the Sage process), write that to disk and then read the file into Magma. We could at least write the strings in smaller chunks to disk to avoid the RAM consumption on the Sage side.
 
 Btw. Magma crashes on me on sage.math:
 
-
 ```
 before (last 100 chars): home/was/s/data/extcode//magma/latex/latex.m is compiled for newer version than current executable
 ```
-
 
 
 
@@ -139,7 +132,7 @@ before (last 100 chars): home/was/s/data/extcode//magma/latex/latex.m is compile
 archive/issue_comments_030723.json:
 ```json
 {
-    "body": "> Btw. Magma crashes on me on sage.math: \n\nThat's because I installed a newer magma for myself locally, and it overwrites the .sig files, so the system-wide magma doesn't work.  I deleted them and recreated them with the old version.  If you use your own copy of sage this won't be an issue.",
+    "body": "> Btw. Magma crashes on me on sage.math: \n\n\nThat's because I installed a newer magma for myself locally, and it overwrites the .sig files, so the system-wide magma doesn't work.  I deleted them and recreated them with the old version.  If you use your own copy of sage this won't be an issue.",
     "created_at": "2008-12-12T02:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -150,6 +143,7 @@ archive/issue_comments_030723.json:
 
 > Btw. Magma crashes on me on sage.math: 
 
+
 That's because I installed a newer magma for myself locally, and it overwrites the .sig files, so the system-wide magma doesn't work.  I deleted them and recreated them with the old version.  If you use your own copy of sage this won't be an issue.
 
 
@@ -159,7 +153,7 @@ That's because I installed a newer magma for myself locally, and it overwrites t
 archive/issue_comments_030724.json:
 ```json
 {
-    "body": "Regarding your example\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\n```\n\nI don't think there is any way to reasonably expect to use pexpect or a file to convert that matrix to Magma quickly using anything like is currently done in Sage or like you suggest even.  Just doing A.str() takes nearly 2GB and takes about the same amount of RAM as A._magma_init_(magma):\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: time s = A._magma_init_(magma)\npCPU times: user 203.00 s, sys: 7.73 s, total: 210.73 s\nWall time: 211.47 s\nsage: get_memory_usage()\n1274.81640625\nsage: len(s)\n800000011\n\nVersus\n\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: b = str(A)\nsage: b = A.str()\nsage: get_memory_usage()\n1273.48828125\nsage: len(b)\n800039999\n```\n\n\nWriting to a file as we go would reduce memory usage at any given moment, but will take as long or longer -- which means several minutes -- which seems unacceptable.   \n\nThe optimal solution for your application would be to write a Sage function that writes to file a mod-2 matrix in a single packed binary format, and a Magma function that reads that file and makes a matrix.  As far as I can tell, the *ONLY* way to turn a string into anything of any use in Magma is to use the function StringToInteger, which fortunately has a version that takes a base:\n\n```\n> StringToInteger(\"af\",16);\n175\n```\n\n\nIn all cases, it would be immensely useful for this if there were a Sage function like this:\n\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: n = A._as_packed_integer()\n```\n\n\nThe output would be an integer that has `2*10<sup>4*2*10</sup>4` digits in base 2, or \n\n```\n2*10^4*2*10^4/4 = 100000000 = 10^8\n```\n\ndigits in base 16.   Computing the base-16 string representation of such a massive number in Sage takes about a half second:\n\n```\nsage: b = 2*10^4*2*10^4\nsage: s = ZZ.random_element(x=0,y=2^b)\nsage: time len(s.str(16))\nCPU times: user 0.45 s, sys: 0.18 s, total: 0.63 s\n```\n\nMemory usage for storing the number and *also* the string representation is about 111MB, which is reasonable (much better than several GB, which is the current situation). \n\nWriting our massive base-16 string to a file takes about 0.5 seconds.\n\n```\nsage: time open('foo','w').write(t)\nCPU times: user 0.00 s, sys: 0.56 s, total: 0.56 s\nWall time: 0.56 s\n```\n\n\nReading it into Magma takes about 2.5 seconds:\n\n```\nsage: magma.eval('time A := Read(\"foo\");')\n'Time: 2.260'\n```\n\n\nIncidentally, Python is literally ALMOST TEN TIMES faster at reading in a file that Magma!!\n\n```\nsage: time k = open('foo').read()\nCPU times: user 0.00 s, sys: 0.28 s, total: 0.28 s\n```\n\n\nAnyway, now that we have that string in Magma, we convert it to an integer, which takes 3.36 seconds:\n\n```\nsage: magma.eval('time n := StringToInteger(A, 16);')\n'Time: 3.360'\n```\n\n\nIncidentally, the same operation in Sage is over twice as faster:\n\n```\nsage: time k = ZZ(t, base=16)\nCPU times: user 1.14 s, sys: 0.25 s, total: 1.39 s\nWall time: 1.39 s\n```\n\n\nOK, so the one remaining step is to convert that big integer in Magma into a boolean matrix in Magma.  This is probably going to be the killer bottleneck.  ...\nIn fact, I'm totally stumped about how to turn a packed integer that corresponds to a matrix over GF(2) into anything useful.  There seems to be no \"bitwise or\" on integers, no way to get the ith bit of an integer, nothing!  All I can think to do is \"mod 2\" and divide by 2 repeatedly, but dividing by 2 is very expensive.\n\nThere is the command StringToIntegerSequence, but it stupidly only works with numbers in base 10, making it utterly and completely useless. \n\nI'm stumped.",
+    "body": "Regarding your example\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\n```\nI don't think there is any way to reasonably expect to use pexpect or a file to convert that matrix to Magma quickly using anything like is currently done in Sage or like you suggest even.  Just doing A.str() takes nearly 2GB and takes about the same amount of RAM as A._magma_init_(magma):\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: time s = A._magma_init_(magma)\npCPU times: user 203.00 s, sys: 7.73 s, total: 210.73 s\nWall time: 211.47 s\nsage: get_memory_usage()\n1274.81640625\nsage: len(s)\n800000011\n\nVersus\n\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: b = str(A)\nsage: b = A.str()\nsage: get_memory_usage()\n1273.48828125\nsage: len(b)\n800039999\n```\n\nWriting to a file as we go would reduce memory usage at any given moment, but will take as long or longer -- which means several minutes -- which seems unacceptable.   \n\nThe optimal solution for your application would be to write a Sage function that writes to file a mod-2 matrix in a single packed binary format, and a Magma function that reads that file and makes a matrix.  As far as I can tell, the *ONLY* way to turn a string into anything of any use in Magma is to use the function StringToInteger, which fortunately has a version that takes a base:\n\n```\n> StringToInteger(\"af\",16);\n175\n```\n\nIn all cases, it would be immensely useful for this if there were a Sage function like this:\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: n = A._as_packed_integer()\n```\n\nThe output would be an integer that has `2*10<sup>4*2*10</sup>4` digits in base 2, or \n\n```\n2*10^4*2*10^4/4 = 100000000 = 10^8\n```\ndigits in base 16.   Computing the base-16 string representation of such a massive number in Sage takes about a half second:\n\n```\nsage: b = 2*10^4*2*10^4\nsage: s = ZZ.random_element(x=0,y=2^b)\nsage: time len(s.str(16))\nCPU times: user 0.45 s, sys: 0.18 s, total: 0.63 s\n```\nMemory usage for storing the number and *also* the string representation is about 111MB, which is reasonable (much better than several GB, which is the current situation). \n\nWriting our massive base-16 string to a file takes about 0.5 seconds.\n\n```\nsage: time open('foo','w').write(t)\nCPU times: user 0.00 s, sys: 0.56 s, total: 0.56 s\nWall time: 0.56 s\n```\n\nReading it into Magma takes about 2.5 seconds:\n\n```\nsage: magma.eval('time A := Read(\"foo\");')\n'Time: 2.260'\n```\n\nIncidentally, Python is literally ALMOST TEN TIMES faster at reading in a file that Magma!!\n\n```\nsage: time k = open('foo').read()\nCPU times: user 0.00 s, sys: 0.28 s, total: 0.28 s\n```\n\nAnyway, now that we have that string in Magma, we convert it to an integer, which takes 3.36 seconds:\n\n```\nsage: magma.eval('time n := StringToInteger(A, 16);')\n'Time: 3.360'\n```\n\nIncidentally, the same operation in Sage is over twice as faster:\n\n```\nsage: time k = ZZ(t, base=16)\nCPU times: user 1.14 s, sys: 0.25 s, total: 1.39 s\nWall time: 1.39 s\n```\n\nOK, so the one remaining step is to convert that big integer in Magma into a boolean matrix in Magma.  This is probably going to be the killer bottleneck.  ...\nIn fact, I'm totally stumped about how to turn a packed integer that corresponds to a matrix over GF(2) into anything useful.  There seems to be no \"bitwise or\" on integers, no way to get the ith bit of an integer, nothing!  All I can think to do is \"mod 2\" and divide by 2 repeatedly, but dividing by 2 is very expensive.\n\nThere is the command StringToIntegerSequence, but it stupidly only works with numbers in base 10, making it utterly and completely useless. \n\nI'm stumped.",
     "created_at": "2008-12-12T03:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -173,7 +167,6 @@ Regarding your example
 ```
 sage: A = random_matrix(GF(2),2*10^4,2*10^4)
 ```
-
 I don't think there is any way to reasonably expect to use pexpect or a file to convert that matrix to Magma quickly using anything like is currently done in Sage or like you suggest even.  Just doing A.str() takes nearly 2GB and takes about the same amount of RAM as A._magma_init_(magma):
 
 ```
@@ -197,7 +190,6 @@ sage: len(b)
 800039999
 ```
 
-
 Writing to a file as we go would reduce memory usage at any given moment, but will take as long or longer -- which means several minutes -- which seems unacceptable.   
 
 The optimal solution for your application would be to write a Sage function that writes to file a mod-2 matrix in a single packed binary format, and a Magma function that reads that file and makes a matrix.  As far as I can tell, the *ONLY* way to turn a string into anything of any use in Magma is to use the function StringToInteger, which fortunately has a version that takes a base:
@@ -207,22 +199,18 @@ The optimal solution for your application would be to write a Sage function that
 175
 ```
 
-
 In all cases, it would be immensely useful for this if there were a Sage function like this:
-
 
 ```
 sage: A = random_matrix(GF(2),2*10^4,2*10^4)
 sage: n = A._as_packed_integer()
 ```
 
-
 The output would be an integer that has `2*10<sup>4*2*10</sup>4` digits in base 2, or 
 
 ```
 2*10^4*2*10^4/4 = 100000000 = 10^8
 ```
-
 digits in base 16.   Computing the base-16 string representation of such a massive number in Sage takes about a half second:
 
 ```
@@ -231,7 +219,6 @@ sage: s = ZZ.random_element(x=0,y=2^b)
 sage: time len(s.str(16))
 CPU times: user 0.45 s, sys: 0.18 s, total: 0.63 s
 ```
-
 Memory usage for storing the number and *also* the string representation is about 111MB, which is reasonable (much better than several GB, which is the current situation). 
 
 Writing our massive base-16 string to a file takes about 0.5 seconds.
@@ -242,14 +229,12 @@ CPU times: user 0.00 s, sys: 0.56 s, total: 0.56 s
 Wall time: 0.56 s
 ```
 
-
 Reading it into Magma takes about 2.5 seconds:
 
 ```
 sage: magma.eval('time A := Read("foo");')
 'Time: 2.260'
 ```
-
 
 Incidentally, Python is literally ALMOST TEN TIMES faster at reading in a file that Magma!!
 
@@ -258,14 +243,12 @@ sage: time k = open('foo').read()
 CPU times: user 0.00 s, sys: 0.28 s, total: 0.28 s
 ```
 
-
 Anyway, now that we have that string in Magma, we convert it to an integer, which takes 3.36 seconds:
 
 ```
 sage: magma.eval('time n := StringToInteger(A, 16);')
 'Time: 3.360'
 ```
-
 
 Incidentally, the same operation in Sage is over twice as faster:
 
@@ -274,7 +257,6 @@ sage: time k = ZZ(t, base=16)
 CPU times: user 1.14 s, sys: 0.25 s, total: 1.39 s
 Wall time: 1.39 s
 ```
-
 
 OK, so the one remaining step is to convert that big integer in Magma into a boolean matrix in Magma.  This is probably going to be the killer bottleneck.  ...
 In fact, I'm totally stumped about how to turn a packed integer that corresponds to a matrix over GF(2) into anything useful.  There seems to be no "bitwise or" on integers, no way to get the ith bit of an integer, nothing!  All I can think to do is "mod 2" and divide by 2 repeatedly, but dividing by 2 is very expensive.
@@ -290,7 +272,7 @@ I'm stumped.
 archive/issue_comments_030725.json:
 ```json
 {
-    "body": "For the record using `StringToIntegerSequence` on 0/1 integers, I can transfer 4*10^8 zeros and ones from Sage to Magma in 102 seconds, where the time is totally dominated by Magma's StringToIntegerSequence command.\n\n```\nsage: time open('/home/was/foo','w').write('1 '*10^8)\nCPU time: 1.58 s,  Wall time: 1.58 s\nsage: %magma\nsage: time a := Read(\"/home/was/foo\");\nsage: time b := StringToIntegerSequence(a);\nTime: 4.180\nTime: 18.910\nsage: time open('/home/was/foo','w').write('1 '*(2*10^4*2*10^4))\nCPU time: 6.38 s,  Wall time: 6.37 s\nsage: %magma\nsage: time a := Read(\"/home/was/foo\");\nsage: time b := StringToIntegerSequence(a);\nTime: 17.410\nTime: 79.150\nsage: 17.4 + 79.15 + 6.37\n102.920000000000\n```\n\n\nIncidentally, I estimate that it would take 326 seconds (isntead of 79 seconds) to do the same thing Sage's `StringToIntegerSequence` does in pure Python:\n\n```\nsage: v = '1 '*(2*10^3*2*10^3)\nsage: time z =[int(a) for a in v.split()]\nCPU time: 3.13 s,  Wall time: 3.26 s\n```\n\nOne would have to use Cython or something to beat that, though it doesn't matter for what we're doing. \n\nBack to our story.  So if we use the Magma parser itself to read in a boolean vector of length 4*10^8, I estimate it will take 384 seconds just for reading, which is about 4 times as long as above, so StringToIntegerSequence beats using the parser. \n\n```\nsage: n = 10^7\nsage: s = ('v := Vector(GF(2),%s,%s);'%(n, [1]*n)).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.12 s, Wall: 0.13 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 9.60 s\nsage: n = 2*10^7\nsage: s = ('v := Vector(GF(2),%s,%s);'%(n, [1]*n)).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.23 s, Wall: 0.23 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 18.72 s\nsage: 4*10^8/10^7 * 9.6\n384.000000000000\n```\n\n\nInterestingly, just using the Magma parser to read in a sequence of 1's in decimal without putting `Vector(GF(2), n, ...)` around the sequence takes WAY longer, i.e., I estimate it would take about 40,000 seconds (!):\n\n```\nsage: n = 10^5\nsage: time s = ('v := %s;'%[1]*n).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.02 s, Wall: 0.02 s\nTime: CPU 0.01 s, Wall: 0.01 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 10.08 s\nsage: 4*10^8/10^5 * 10.08\n40320.0000000000\n```\n\nI tried the above several times -- it is just shockingly slow. \n\nSome other weirdness:\n\n* It takes magma 123 times as long to parse the hex integer literal version of `3<sup>(10</sup>6)` than the base-10 integer literal version of that number!!!  Also, using StringToInteger takes over 100 times longer than just using the load command on an assignment.  I'm trying a bunch of different variations... and the winner is:\n\n```\n21:08 < wstein> If you do \"v := 0x<big hex string>;\" in Magma it is insanely slow.\n21:08 < wstein> If you do \"v := <big decimal string>;\" it is fast (like sage)\n21:08 < wstein> If you do \"v := StringToInteger(<big decimal string>)\" it is insansely slow.\n21:09 < wstein> If you do \"v := StringToInteger(0x<big hex string>, 16)\" it is very fast, just like sage.\n21:09 < wstein> So the last option is good :)\n```\n",
+    "body": "For the record using `StringToIntegerSequence` on 0/1 integers, I can transfer 4*10^8 zeros and ones from Sage to Magma in 102 seconds, where the time is totally dominated by Magma's StringToIntegerSequence command.\n\n```\nsage: time open('/home/was/foo','w').write('1 '*10^8)\nCPU time: 1.58 s,  Wall time: 1.58 s\nsage: %magma\nsage: time a := Read(\"/home/was/foo\");\nsage: time b := StringToIntegerSequence(a);\nTime: 4.180\nTime: 18.910\nsage: time open('/home/was/foo','w').write('1 '*(2*10^4*2*10^4))\nCPU time: 6.38 s,  Wall time: 6.37 s\nsage: %magma\nsage: time a := Read(\"/home/was/foo\");\nsage: time b := StringToIntegerSequence(a);\nTime: 17.410\nTime: 79.150\nsage: 17.4 + 79.15 + 6.37\n102.920000000000\n```\n\nIncidentally, I estimate that it would take 326 seconds (isntead of 79 seconds) to do the same thing Sage's `StringToIntegerSequence` does in pure Python:\n\n```\nsage: v = '1 '*(2*10^3*2*10^3)\nsage: time z =[int(a) for a in v.split()]\nCPU time: 3.13 s,  Wall time: 3.26 s\n```\nOne would have to use Cython or something to beat that, though it doesn't matter for what we're doing. \n\nBack to our story.  So if we use the Magma parser itself to read in a boolean vector of length 4*10^8, I estimate it will take 384 seconds just for reading, which is about 4 times as long as above, so StringToIntegerSequence beats using the parser. \n\n```\nsage: n = 10^7\nsage: s = ('v := Vector(GF(2),%s,%s);'%(n, [1]*n)).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.12 s, Wall: 0.13 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 9.60 s\nsage: n = 2*10^7\nsage: s = ('v := Vector(GF(2),%s,%s);'%(n, [1]*n)).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.23 s, Wall: 0.23 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 18.72 s\nsage: 4*10^8/10^7 * 9.6\n384.000000000000\n```\n\nInterestingly, just using the Magma parser to read in a sequence of 1's in decimal without putting `Vector(GF(2), n, ...)` around the sequence takes WAY longer, i.e., I estimate it would take about 40,000 seconds (!):\n\n```\nsage: n = 10^5\nsage: time s = ('v := %s;'%[1]*n).replace(' ', '')\nsage: time open('/home/was/foo','w').write(s)\nTime: CPU 0.02 s, Wall: 0.02 s\nTime: CPU 0.01 s, Wall: 0.01 s\nsage: time magma.eval('load \"/home/was/foo\";')\n'Loading \"/home/was/foo\"'\nCPU time: 0.00 s,  Wall time: 10.08 s\nsage: 4*10^8/10^5 * 10.08\n40320.0000000000\n```\nI tried the above several times -- it is just shockingly slow. \n\nSome other weirdness:\n\n* It takes magma 123 times as long to parse the hex integer literal version of `3<sup>(10</sup>6)` than the base-10 integer literal version of that number!!!  Also, using StringToInteger takes over 100 times longer than just using the load command on an assignment.  I'm trying a bunch of different variations... and the winner is:\n\n```\n21:08 < wstein> If you do \"v := 0x<big hex string>;\" in Magma it is insanely slow.\n21:08 < wstein> If you do \"v := <big decimal string>;\" it is fast (like sage)\n21:08 < wstein> If you do \"v := StringToInteger(<big decimal string>)\" it is insansely slow.\n21:09 < wstein> If you do \"v := StringToInteger(0x<big hex string>, 16)\" it is very fast, just like sage.\n21:09 < wstein> So the last option is good :)\n```",
     "created_at": "2008-12-12T05:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -320,7 +302,6 @@ sage: 17.4 + 79.15 + 6.37
 102.920000000000
 ```
 
-
 Incidentally, I estimate that it would take 326 seconds (isntead of 79 seconds) to do the same thing Sage's `StringToIntegerSequence` does in pure Python:
 
 ```
@@ -328,7 +309,6 @@ sage: v = '1 '*(2*10^3*2*10^3)
 sage: time z =[int(a) for a in v.split()]
 CPU time: 3.13 s,  Wall time: 3.26 s
 ```
-
 One would have to use Cython or something to beat that, though it doesn't matter for what we're doing. 
 
 Back to our story.  So if we use the Magma parser itself to read in a boolean vector of length 4*10^8, I estimate it will take 384 seconds just for reading, which is about 4 times as long as above, so StringToIntegerSequence beats using the parser. 
@@ -352,7 +332,6 @@ sage: 4*10^8/10^7 * 9.6
 384.000000000000
 ```
 
-
 Interestingly, just using the Magma parser to read in a sequence of 1's in decimal without putting `Vector(GF(2), n, ...)` around the sequence takes WAY longer, i.e., I estimate it would take about 40,000 seconds (!):
 
 ```
@@ -367,7 +346,6 @@ CPU time: 0.00 s,  Wall time: 10.08 s
 sage: 4*10^8/10^5 * 10.08
 40320.0000000000
 ```
-
 I tried the above several times -- it is just shockingly slow. 
 
 Some other weirdness:
@@ -384,13 +362,12 @@ Some other weirdness:
 
 
 
-
 ---
 
 archive/issue_comments_030726.json:
 ```json
 {
-    "body": "The first attached patch makes conversion to Magma for matrix_modn_dense twice as fast as before, and somewhat more memory efficient. \n\nBEFORE:\n\n```\nage:  w = random_matrix(GF(97),2000)\nsage: time m = magma(w)\nCPU times: user 3.00 s, sys: 0.46 s, total: 3.47 s\nWall time: 7.46 s\n```\n\n\nAFTER:\n\n```\nsage: w = random_matrix(GF(97),2000)\nsage: time m = magma(w)\nCPU times: user 1.08 s, sys: 0.19 s, total: 1.27 s\nWall time: 3.22 s\n```\n\n\nThis does not apply to matrices over GF(2), which still require more special code to be faster. \n\nThis patch also fixes a free that should be a sage_free, and speeds up the list method for matrices mod n.",
+    "body": "The first attached patch makes conversion to Magma for matrix_modn_dense twice as fast as before, and somewhat more memory efficient. \n\nBEFORE:\n\n```\nage:  w = random_matrix(GF(97),2000)\nsage: time m = magma(w)\nCPU times: user 3.00 s, sys: 0.46 s, total: 3.47 s\nWall time: 7.46 s\n```\n\nAFTER:\n\n```\nsage: w = random_matrix(GF(97),2000)\nsage: time m = magma(w)\nCPU times: user 1.08 s, sys: 0.19 s, total: 1.27 s\nWall time: 3.22 s\n```\n\nThis does not apply to matrices over GF(2), which still require more special code to be faster. \n\nThis patch also fixes a free that should be a sage_free, and speeds up the list method for matrices mod n.",
     "created_at": "2008-12-12T08:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -410,7 +387,6 @@ CPU times: user 3.00 s, sys: 0.46 s, total: 3.47 s
 Wall time: 7.46 s
 ```
 
-
 AFTER:
 
 ```
@@ -419,7 +395,6 @@ sage: time m = magma(w)
 CPU times: user 1.08 s, sys: 0.19 s, total: 1.27 s
 Wall time: 3.22 s
 ```
-
 
 This does not apply to matrices over GF(2), which still require more special code to be faster. 
 
@@ -470,7 +445,7 @@ archive/issue_comments_030728.json:
 archive/issue_comments_030729.json:
 ```json
 {
-    "body": "> trac_4237_part1.patch assumes that we always store the entries as positive integers. \n> Is this a sensible assumption? \n\nYes.  All entries are stored as numbers between 0 and p-1.  See, e.g., code like this in the __init__ method:\n\n```\n                if PY_TYPE_CHECK_EXACT(x, int):\n                    tmp = (<long>x) % p\n                    v[j] = tmp + (tmp<0)*p\n```\n\n\nWilliam",
+    "body": "> trac_4237_part1.patch assumes that we always store the entries as positive integers. \n> Is this a sensible assumption? \n\n\nYes.  All entries are stored as numbers between 0 and p-1.  See, e.g., code like this in the __init__ method:\n\n```\n                if PY_TYPE_CHECK_EXACT(x, int):\n                    tmp = (<long>x) % p\n                    v[j] = tmp + (tmp<0)*p\n```\n\nWilliam",
     "created_at": "2008-12-12T18:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -482,6 +457,7 @@ archive/issue_comments_030729.json:
 > trac_4237_part1.patch assumes that we always store the entries as positive integers. 
 > Is this a sensible assumption? 
 
+
 Yes.  All entries are stored as numbers between 0 and p-1.  See, e.g., code like this in the __init__ method:
 
 ```
@@ -489,7 +465,6 @@ Yes.  All entries are stored as numbers between 0 and p-1.  See, e.g., code like
                     tmp = (<long>x) % p
                     v[j] = tmp + (tmp<0)*p
 ```
-
 
 William
 
@@ -500,7 +475,7 @@ William
 archive/issue_comments_030730.json:
 ```json
 {
-    "body": "The second patch adds support for much faster conversions of matrices over GF(2) to Magma.  Now sage can convert your 10000x10000 GF(2) matrix in about 45 seconds, instead of the 149 seconds it used to take (so over 3 times faster).  The intermediate memory usage is also better on the Sage side.\n\nBEFORE:\n\n```\nsage: w = random_matrix(GF(2),10000)\nsage: time k = w._magma_init_(magma)\nCPU times: user 49.64 s, sys: 2.20 s, total: 51.84 s\nWall time: 52.75 s\nsage: time a = magma(k)\nCPU times: user 1.94 s, sys: 2.69 s, total: 4.63 s\nWall time: 97.84 s\nsage: 52 + 97\n149\n```\n\n\nAFTER:\n\n```\nsage: w = random_matrix(GF(2),10000)\nsage: time k = w._magma_init_(magma)\nCPU times: user 1.22 s, sys: 0.63 s, total: 1.85 s\nWall time: 1.85 s\nsage: time a = magma(k)\nCPU times: user 1.70 s, sys: 2.30 s, total: 4.00 s\nWall time: 44.15 s\n```\n\n\nNow the time is totally dominated by the time Magma spends in the function StringToIntegerSequence.\n\nI tried the 2*10^4 example.  With the new code, Sage does create a 5GB string in memory, then writes it to a 763MB file:\n\n```\nwas@sage:~/.sage/temp/sage/22977/interface$ ls -lh\ntotal 764M\n-rw-r--r-- 1 was was 763M 2008-12-12 11:12 tmp22977\n```\n\nThen Sage frees all that memory.  Then Magma reads in the string to memory, which \ntakes over 5GB again (not surprisingly):\n\n```\n23012 was       25   0 5772m 5.1g 2796 R  100  8.0   2:41.25 magma.exe.x86_6            \n```\n\nConverts that to a string over integers (which also takes a lot of RAM), then creates a mod-2 matrix. \n\nIt would in theory be possible to do this via a series of chunks as you suggest, but support for that does not exist in the Magma/Sage interface (or any interface) at all, and would probably be particular hard to get right when Magma isn't even running locally (I think now one could have the magma run on a different machine and that 763MB file above would get copied via scp, maybe...)\n\nIf only Magma had any support WHATEVER for bit manipulation.  Then we could send the whole data over as a single integer or other format and extract it.  But Magma doesn't.  At present it seems that by far the fastest way to get a mod-2 matrix over to Magma is to do what I've implemented in patch 2, which is pretty bad memory-wise in the limit.  It does complete your 2*10^4 example on sage.math in 192 seconds, which is an improvement:\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: time B = magma(A)\nCPU times: user 16.28 s, sys: 14.38 s, total: 30.65 s\nWall time: 192.45 s\n```\n\n\nAnyway, for something more memory efficient, what I just wrote could be the base case. Maybe you could try sending a big matrix over GF(2) to magma by breaking it into smaller matrices, sending each of those (with the new code I just wrote), then reassembling the result in Magma.  Can magma do things like stack matrices (like Sage's A.stack)?",
+    "body": "The second patch adds support for much faster conversions of matrices over GF(2) to Magma.  Now sage can convert your 10000x10000 GF(2) matrix in about 45 seconds, instead of the 149 seconds it used to take (so over 3 times faster).  The intermediate memory usage is also better on the Sage side.\n\nBEFORE:\n\n```\nsage: w = random_matrix(GF(2),10000)\nsage: time k = w._magma_init_(magma)\nCPU times: user 49.64 s, sys: 2.20 s, total: 51.84 s\nWall time: 52.75 s\nsage: time a = magma(k)\nCPU times: user 1.94 s, sys: 2.69 s, total: 4.63 s\nWall time: 97.84 s\nsage: 52 + 97\n149\n```\n\nAFTER:\n\n```\nsage: w = random_matrix(GF(2),10000)\nsage: time k = w._magma_init_(magma)\nCPU times: user 1.22 s, sys: 0.63 s, total: 1.85 s\nWall time: 1.85 s\nsage: time a = magma(k)\nCPU times: user 1.70 s, sys: 2.30 s, total: 4.00 s\nWall time: 44.15 s\n```\n\nNow the time is totally dominated by the time Magma spends in the function StringToIntegerSequence.\n\nI tried the 2*10^4 example.  With the new code, Sage does create a 5GB string in memory, then writes it to a 763MB file:\n\n```\nwas@sage:~/.sage/temp/sage/22977/interface$ ls -lh\ntotal 764M\n-rw-r--r-- 1 was was 763M 2008-12-12 11:12 tmp22977\n```\nThen Sage frees all that memory.  Then Magma reads in the string to memory, which \ntakes over 5GB again (not surprisingly):\n\n```\n23012 was       25   0 5772m 5.1g 2796 R  100  8.0   2:41.25 magma.exe.x86_6            \n```\nConverts that to a string over integers (which also takes a lot of RAM), then creates a mod-2 matrix. \n\nIt would in theory be possible to do this via a series of chunks as you suggest, but support for that does not exist in the Magma/Sage interface (or any interface) at all, and would probably be particular hard to get right when Magma isn't even running locally (I think now one could have the magma run on a different machine and that 763MB file above would get copied via scp, maybe...)\n\nIf only Magma had any support WHATEVER for bit manipulation.  Then we could send the whole data over as a single integer or other format and extract it.  But Magma doesn't.  At present it seems that by far the fastest way to get a mod-2 matrix over to Magma is to do what I've implemented in patch 2, which is pretty bad memory-wise in the limit.  It does complete your 2*10^4 example on sage.math in 192 seconds, which is an improvement:\n\n```\nsage: A = random_matrix(GF(2),2*10^4,2*10^4)\nsage: time B = magma(A)\nCPU times: user 16.28 s, sys: 14.38 s, total: 30.65 s\nWall time: 192.45 s\n```\n\nAnyway, for something more memory efficient, what I just wrote could be the base case. Maybe you could try sending a big matrix over GF(2) to magma by breaking it into smaller matrices, sending each of those (with the new code I just wrote), then reassembling the result in Magma.  Can magma do things like stack matrices (like Sage's A.stack)?",
     "created_at": "2008-12-12T19:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -525,7 +500,6 @@ sage: 52 + 97
 149
 ```
 
-
 AFTER:
 
 ```
@@ -538,7 +512,6 @@ CPU times: user 1.70 s, sys: 2.30 s, total: 4.00 s
 Wall time: 44.15 s
 ```
 
-
 Now the time is totally dominated by the time Magma spends in the function StringToIntegerSequence.
 
 I tried the 2*10^4 example.  With the new code, Sage does create a 5GB string in memory, then writes it to a 763MB file:
@@ -548,14 +521,12 @@ was@sage:~/.sage/temp/sage/22977/interface$ ls -lh
 total 764M
 -rw-r--r-- 1 was was 763M 2008-12-12 11:12 tmp22977
 ```
-
 Then Sage frees all that memory.  Then Magma reads in the string to memory, which 
 takes over 5GB again (not surprisingly):
 
 ```
 23012 was       25   0 5772m 5.1g 2796 R  100  8.0   2:41.25 magma.exe.x86_6            
 ```
-
 Converts that to a string over integers (which also takes a lot of RAM), then creates a mod-2 matrix. 
 
 It would in theory be possible to do this via a series of chunks as you suggest, but support for that does not exist in the Magma/Sage interface (or any interface) at all, and would probably be particular hard to get right when Magma isn't even running locally (I think now one could have the magma run on a different machine and that 763MB file above would get copied via scp, maybe...)
@@ -569,7 +540,6 @@ CPU times: user 16.28 s, sys: 14.38 s, total: 30.65 s
 Wall time: 192.45 s
 ```
 
-
 Anyway, for something more memory efficient, what I just wrote could be the base case. Maybe you could try sending a big matrix over GF(2) to magma by breaking it into smaller matrices, sending each of those (with the new code I just wrote), then reassembling the result in Magma.  Can magma do things like stack matrices (like Sage's A.stack)?
 
 
@@ -579,7 +549,7 @@ Anyway, for something more memory efficient, what I just wrote could be the base
 archive/issue_comments_030731.json:
 ```json
 {
-    "body": "Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by @malb created at 2008-12-13 15:34:19\n\npatch2 doesn't apply against my 3.2.1. Hunk:\n\n\n```\n--- matrix_mod2_dense.pyx\n+++ matrix_mod2_dense.pyx\n@@ -1136,7 +1136,7 @@\n         EXAMPLE:\n             sage: A = random_matrix(GF(2),3,3)\n             sage: A._magma_init_(magma)                             # optional - magma\n-            '_sage_[...]![0,1,0,0,1,1,0,0,0]'\n+            'Matrix(GF(2),3,3,StringToIntegerSequence(\"0 1 0 0 1 1 0 0 0\"))'\n             sage: A = random_matrix(GF(2),100,100)\n             sage: B = random_matrix(GF(2),100,100)\n             sage: magma(A*B) == magma(A) * magma(B)                 # optional - magma\n```\n\n\nDo I need 3.2.2.alphaX for this patch?",
+    "body": "Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by @malb created at 2008-12-13 15:34:19\n\npatch2 doesn't apply against my 3.2.1. Hunk:\n\n```\n--- matrix_mod2_dense.pyx\n+++ matrix_mod2_dense.pyx\n@@ -1136,7 +1136,7 @@\n         EXAMPLE:\n             sage: A = random_matrix(GF(2),3,3)\n             sage: A._magma_init_(magma)                             # optional - magma\n-            '_sage_[...]![0,1,0,0,1,1,0,0,0]'\n+            'Matrix(GF(2),3,3,StringToIntegerSequence(\"0 1 0 0 1 1 0 0 0\"))'\n             sage: A = random_matrix(GF(2),100,100)\n             sage: B = random_matrix(GF(2),100,100)\n             sage: magma(A*B) == magma(A) * magma(B)                 # optional - magma\n```\n\nDo I need 3.2.2.alphaX for this patch?",
     "created_at": "2008-12-13T15:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -591,7 +561,6 @@ archive/issue_comments_030731.json:
 Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by @malb created at 2008-12-13 15:34:19
 
 patch2 doesn't apply against my 3.2.1. Hunk:
-
 
 ```
 --- matrix_mod2_dense.pyx
@@ -607,7 +576,6 @@ patch2 doesn't apply against my 3.2.1. Hunk:
              sage: magma(A*B) == magma(A) * magma(B)                 # optional - magma
 ```
 
-
 Do I need 3.2.2.alphaX for this patch?
 
 
@@ -617,7 +585,7 @@ Do I need 3.2.2.alphaX for this patch?
 archive/issue_comments_030732.json:
 ```json
 {
-    "body": "I am seeing one doctest failure with this patch on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_modn_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/matrix/matrix_modn_dense.pyx\", line 276, in __main__.example_6\nFailed example:\n    -m###line 554:_sage_    >>> -m\nExpected:\n    [19 18 17]\n    [16 15 14]\n    [13 12 11]\nGot:\n    [ 0 18 17]\n    [16 15 14]\n    [13 12 11]\n**********************************************************************\n```\n\nI haven't looked into the cause yet.\n\nCheers,\n\nMichael",
+    "body": "I am seeing one doctest failure with this patch on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_modn_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage/sage/matrix/matrix_modn_dense.pyx\", line 276, in __main__.example_6\nFailed example:\n    -m###line 554:_sage_    >>> -m\nExpected:\n    [19 18 17]\n    [16 15 14]\n    [13 12 11]\nGot:\n    [ 0 18 17]\n    [16 15 14]\n    [13 12 11]\n**********************************************************************\n```\nI haven't looked into the cause yet.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-15T16:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
@@ -644,7 +612,6 @@ Got:
     [13 12 11]
 **********************************************************************
 ```
-
 I haven't looked into the cause yet.
 
 Cheers,

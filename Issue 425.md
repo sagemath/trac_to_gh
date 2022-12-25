@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/425
 archive/issue_comments_002122.json:
 ```json
 {
-    "body": "IIRC this gcc option is added by `python-cflags`:\n\n\n```\nSAGE_ROOT/local/bin/python2.5-config --cflags\n-I/home/malb/SAGE/local/include/python2.5 \\ \n-I/home/malb/SAGE/local/include/python2.5 \\\n-fno-strict-aliasing -DNDEBUG -g -O3 -Wall \\\n-Wstrict-prototypes\n```\n",
+    "body": "IIRC this gcc option is added by `python-cflags`:\n\n```\nSAGE_ROOT/local/bin/python2.5-config --cflags\n-I/home/malb/SAGE/local/include/python2.5 \\ \n-I/home/malb/SAGE/local/include/python2.5 \\\n-fno-strict-aliasing -DNDEBUG -g -O3 -Wall \\\n-Wstrict-prototypes\n```",
     "created_at": "2007-08-13T10:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/425",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_002122.json:
 
 IIRC this gcc option is added by `python-cflags`:
 
-
 ```
 SAGE_ROOT/local/bin/python2.5-config --cflags
 -I/home/malb/SAGE/local/include/python2.5 \ 
@@ -54,7 +53,6 @@ SAGE_ROOT/local/bin/python2.5-config --cflags
 -fno-strict-aliasing -DNDEBUG -g -O3 -Wall \
 -Wstrict-prototypes
 ```
-
 
 
 

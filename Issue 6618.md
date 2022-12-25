@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6618
 archive/issue_comments_054123.json:
 ```json
 {
-    "body": "Can you clarify what you want to do here?  The pictures produced by \"view\" in the notebook already look cropped to me.  Try this example:\n\n```\nfrom sage.misc.latex import latex_examples\nlatex.add_to_preamble(\"\\\\usepackage{tkz-graph}\")\nlatex.add_to_jsmath_avoid_list(\"tikzpicture\")\nview(latex_examples.graph())\n```\n",
+    "body": "Can you clarify what you want to do here?  The pictures produced by \"view\" in the notebook already look cropped to me.  Try this example:\n\n```\nfrom sage.misc.latex import latex_examples\nlatex.add_to_preamble(\"\\\\usepackage{tkz-graph}\")\nlatex.add_to_jsmath_avoid_list(\"tikzpicture\")\nview(latex_examples.graph())\n```",
     "created_at": "2009-07-25T20:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -55,13 +55,12 @@ view(latex_examples.graph())
 
 
 
-
 ---
 
 archive/issue_comments_054124.json:
 ```json
 {
-    "body": "Replying to [comment:1 jhpalmieri]:\n> Can you clarify what you want to do here?  The pictures produced by \"view\" in the notebook already look cropped to me.  Try this example:\n> {{{\n> from sage.misc.latex import latex_examples\n> latex.add_to_preamble(\"\\\\usepackage{tkz-graph}\")\n> latex.add_to_jsmath_avoid_list(\"tikzpicture\")\n> view(latex_examples.graph())\n> }}}\n\nThe point is that tightpage crops if the picture is small, but also does *not* crop to the page size if the picture is big.\nIn other words, it really sets the page size to be the size of the picture.\n\nI have a apparently working patch. I still need to test it further and document it this time :-)",
+    "body": "Replying to [comment:1 jhpalmieri]:\n> Can you clarify what you want to do here?  The pictures produced by \"view\" in the notebook already look cropped to me.  Try this example:\n> \n> ```\n> from sage.misc.latex import latex_examples\n> latex.add_to_preamble(\"\\\\usepackage{tkz-graph}\")\n> latex.add_to_jsmath_avoid_list(\"tikzpicture\")\n> view(latex_examples.graph())\n> ```\n\n\nThe point is that tightpage crops if the picture is small, but also does *not* crop to the page size if the picture is big.\nIn other words, it really sets the page size to be the size of the picture.\n\nI have a apparently working patch. I still need to test it further and document it this time :-)",
     "created_at": "2009-07-25T20:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -72,12 +71,14 @@ archive/issue_comments_054124.json:
 
 Replying to [comment:1 jhpalmieri]:
 > Can you clarify what you want to do here?  The pictures produced by "view" in the notebook already look cropped to me.  Try this example:
-> {{{
+> 
+> ```
 > from sage.misc.latex import latex_examples
 > latex.add_to_preamble("\\usepackage{tkz-graph}")
 > latex.add_to_jsmath_avoid_list("tikzpicture")
 > view(latex_examples.graph())
-> }}}
+> ```
+
 
 The point is that tightpage crops if the picture is small, but also does *not* crop to the page size if the picture is big.
 In other words, it really sets the page size to be the size of the picture.
@@ -147,7 +148,7 @@ Also, the notebook seems to crop the resulting image.
 archive/issue_comments_054128.json:
 ```json
 {
-    "body": "> Also, the notebook seems to crop the resulting image.\n\nOnly when pdflatex=False; for details, see the doctests of view. Maybe tightpage should impose pdflatex=True.",
+    "body": "> Also, the notebook seems to crop the resulting image.\n\n\nOnly when pdflatex=False; for details, see the doctests of view. Maybe tightpage should impose pdflatex=True.",
     "created_at": "2010-02-20T10:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -158,6 +159,7 @@ archive/issue_comments_054128.json:
 
 > Also, the notebook seems to crop the resulting image.
 
+
 Only when pdflatex=False; for details, see the doctests of view. Maybe tightpage should impose pdflatex=True.
 
 
@@ -167,7 +169,7 @@ Only when pdflatex=False; for details, see the doctests of view. Maybe tightpage
 archive/issue_comments_054129.json:
 ```json
 {
-    "body": "I think that tightpage should impose pdflatex = True, because producing badly cropped images is bad.  One other comment (for now -- I may have more later): in line 1264\n\n```diff\n \t1261\t    if tightpage: \n \t1262\t        title = '' \n \t1263\t        extra_preamble += '\\\\usepackage[tightpage,active]{preview}\\\\PreviewEnvironment{page}' \n \t1264\t        math_left  = '\\\\begin{page}$\\displaystyle' \n \t1265\t        math_right = '$\\\\end{page}' \n```\n\nadd a space after \"displaystyle\".  On my computer:\n\n```\nsage: CB = CrystalOfLetters(['B',2]) \nsage: latex(CB)\ndot2tex not available.  Install after running 'sage -sh'\ndot2tex not available.  Install after running 'sage -sh'\nNone\n```\n\nSince `latex(CB)` returns `None`, then when I try \n\n```\nsage: view(CB, tightpage = True)\n```\n\nit forms a latex document containing\n\n```\n\\begin{page}$\\displaystyleNone$\\end{page}\n```\n\nThis leads to an error.  A space after \"displaystyle\" would fix this.",
+    "body": "I think that tightpage should impose pdflatex = True, because producing badly cropped images is bad.  One other comment (for now -- I may have more later): in line 1264\n\n```diff\n \t1261\t    if tightpage: \n \t1262\t        title = '' \n \t1263\t        extra_preamble += '\\\\usepackage[tightpage,active]{preview}\\\\PreviewEnvironment{page}' \n \t1264\t        math_left  = '\\\\begin{page}$\\displaystyle' \n \t1265\t        math_right = '$\\\\end{page}' \n```\nadd a space after \"displaystyle\".  On my computer:\n\n```\nsage: CB = CrystalOfLetters(['B',2]) \nsage: latex(CB)\ndot2tex not available.  Install after running 'sage -sh'\ndot2tex not available.  Install after running 'sage -sh'\nNone\n```\nSince `latex(CB)` returns `None`, then when I try \n\n```\nsage: view(CB, tightpage = True)\n```\nit forms a latex document containing\n\n```\n\\begin{page}$\\displaystyleNone$\\end{page}\n```\nThis leads to an error.  A space after \"displaystyle\" would fix this.",
     "created_at": "2010-02-20T17:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -185,7 +187,6 @@ I think that tightpage should impose pdflatex = True, because producing badly cr
  	1264	        math_left  = '\\begin{page}$\displaystyle' 
  	1265	        math_right = '$\\end{page}' 
 ```
-
 add a space after "displaystyle".  On my computer:
 
 ```
@@ -195,19 +196,16 @@ dot2tex not available.  Install after running 'sage -sh'
 dot2tex not available.  Install after running 'sage -sh'
 None
 ```
-
 Since `latex(CB)` returns `None`, then when I try 
 
 ```
 sage: view(CB, tightpage = True)
 ```
-
 it forms a latex document containing
 
 ```
 \begin{page}$\displaystyleNone$\end{page}
 ```
-
 This leads to an error.  A space after "displaystyle" would fix this.
 
 
@@ -217,7 +215,7 @@ This leads to an error.  A space after "displaystyle" would fix this.
 archive/issue_comments_054130.json:
 ```json
 {
-    "body": "Two more comments, and otherwise I think this looks okay: first, it needs to be rebased against 4.3.3 (alpha0 or later), because of #8219.  Second, the issue with the cropped images seems to be the fault of \"convert\": if you create a dvi file using tightpage, say by using \"debug=True\" in the view command and cutting and pasting the latex, and then if you run dvips on it, then run \n\n```\nconvert -density 150x150 -trim test.ps test.png\n```\n\nit's badly cropped.  The postscript file is actually okay: if you run ps2pdf on it, the pdf file looks good.  So maybe it's a bug in \"convert\"?\n\nFor a future ticket: should we consider changing the default so that pdflatex is True rather than False?",
+    "body": "Two more comments, and otherwise I think this looks okay: first, it needs to be rebased against 4.3.3 (alpha0 or later), because of #8219.  Second, the issue with the cropped images seems to be the fault of \"convert\": if you create a dvi file using tightpage, say by using \"debug=True\" in the view command and cutting and pasting the latex, and then if you run dvips on it, then run \n\n```\nconvert -density 150x150 -trim test.ps test.png\n```\nit's badly cropped.  The postscript file is actually okay: if you run ps2pdf on it, the pdf file looks good.  So maybe it's a bug in \"convert\"?\n\nFor a future ticket: should we consider changing the default so that pdflatex is True rather than False?",
     "created_at": "2010-02-20T21:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -231,7 +229,6 @@ Two more comments, and otherwise I think this looks okay: first, it needs to be 
 ```
 convert -density 150x150 -trim test.ps test.png
 ```
-
 it's badly cropped.  The postscript file is actually okay: if you run ps2pdf on it, the pdf file looks good.  So maybe it's a bug in "convert"?
 
 For a future ticket: should we consider changing the default so that pdflatex is True rather than False?
@@ -299,7 +296,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054134.json:
 ```json
 {
-    "body": "On my OS X machine, running doctests opens up an external viewer for PDF files. Also, doctests fail because I don't have dot2tex installed (this is easy to fix). For the external viewer issue, maybe we should just rip out these doctests:\n\n```diff\ndiff --git a/sage/misc/latex.py b/sage/misc/latex.py\n--- a/sage/misc/latex.py\n+++ b/sage/misc/latex.py\n@@ -2048,17 +2048,6 @@ def view(objects, title='SAGE', debug=Fa\n         <html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}x 2</span></html>\n         sage: sage.misc.latex.EMBEDDED_MODE = False\n \n-        sage: CB = CrystalOfLetters(['B',5])\n-        sage: view(CB, tightpage = True, viewer = \"pdf\")\n-\n-        sage: CB = CrystalOfLetters(['B',5])\n-        sage: view(CB, tightpage = True, pdflatex = True)\n-\n-        sage: g = sage.categories.category.category_graph() # long time\n-        sage: g.set_latex_options(format = \"dot2tex\")       # long time\n-        sage: view(g, tightpage=True, pdflatex = True)      # long time\n-\n-\n     TESTS::\n \n         sage: from sage.misc.latex import _run_latex_, _latex_file_\n```\n\nOther suggestions?\n\nI also still some cropping issues in the notebook, say with this code:\n\n```\ng = graphs.BidiakisCube()\nlatex.add_to_jsmath_avoid_list('tikz')\nview(g, tightpage=True)\n```\n\nBut maybe that's not a big deal.",
+    "body": "On my OS X machine, running doctests opens up an external viewer for PDF files. Also, doctests fail because I don't have dot2tex installed (this is easy to fix). For the external viewer issue, maybe we should just rip out these doctests:\n\n```diff\ndiff --git a/sage/misc/latex.py b/sage/misc/latex.py\n--- a/sage/misc/latex.py\n+++ b/sage/misc/latex.py\n@@ -2048,17 +2048,6 @@ def view(objects, title='SAGE', debug=Fa\n         <html><span class=\"math\">\\newcommand{\\Bold}[1]{\\mathbf{#1}}x 2</span></html>\n         sage: sage.misc.latex.EMBEDDED_MODE = False\n \n-        sage: CB = CrystalOfLetters(['B',5])\n-        sage: view(CB, tightpage = True, viewer = \"pdf\")\n-\n-        sage: CB = CrystalOfLetters(['B',5])\n-        sage: view(CB, tightpage = True, pdflatex = True)\n-\n-        sage: g = sage.categories.category.category_graph() # long time\n-        sage: g.set_latex_options(format = \"dot2tex\")       # long time\n-        sage: view(g, tightpage=True, pdflatex = True)      # long time\n-\n-\n     TESTS::\n \n         sage: from sage.misc.latex import _run_latex_, _latex_file_\n```\nOther suggestions?\n\nI also still some cropping issues in the notebook, say with this code:\n\n```\ng = graphs.BidiakisCube()\nlatex.add_to_jsmath_avoid_list('tikz')\nview(g, tightpage=True)\n```\nBut maybe that's not a big deal.",
     "created_at": "2012-08-20T18:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
@@ -333,7 +330,6 @@ diff --git a/sage/misc/latex.py b/sage/misc/latex.py
  
          sage: from sage.misc.latex import _run_latex_, _latex_file_
 ```
-
 Other suggestions?
 
 I also still some cropping issues in the notebook, say with this code:
@@ -343,7 +339,6 @@ g = graphs.BidiakisCube()
 latex.add_to_jsmath_avoid_list('tikz')
 view(g, tightpage=True)
 ```
-
 But maybe that's not a big deal.
 
 

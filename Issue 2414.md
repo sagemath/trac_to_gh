@@ -3,7 +3,7 @@
 archive/issues_002414.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: R(x/y*y)\n```\n\ngoes boom; it should return x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2414\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x,y> = QQ[]\nsage: R(x/y*y)\n```\ngoes boom; it should return x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2414\n\n",
     "created_at": "2008-03-07T02:29:19Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_002414.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<x,y> = QQ[]
 sage: R(x/y*y)
 ```
-
 goes boom; it should return x.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2414

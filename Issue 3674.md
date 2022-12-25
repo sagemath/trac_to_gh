@@ -70,7 +70,7 @@ Not a patch (yet)
 archive/issue_comments_025916.json:
 ```json
 {
-    "body": "Attachment [ell_rational_field.py](tarball://root/attachments/some-uuid/ticket3674/ell_rational_field.py) by @JohnCremona created at 2008-07-18 19:13:14\n\nIn 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py with the file emailed to me\nand it built fine.\n\nComments:\n1. The docstring says that parameter tors_points should be either 'auto' or a list of all the torsion points; but 'auto' causes tors_points to be assigned to generators for the torsion.  So the docstring should change \"all torsion points\" to \"generators for the torsion subgroup\".\n2. The output is a set.  I think it should be a sorted list.  (Sorting is important to give consistency across platforms, etc.)\n3. Why this?\n\n```\n        if (r == 0) and (len_tors == 0):\n            raise RuntimeError, 'Both base points and torsions points are not specified'\n```\n\nIf the curve has trivial MW group then this is what you would expect, so why not just return the empty list?\n4. Your way of checking that the supplied points lie on the curve (the code with \"trash\") looks weird to me.  Why not just check that sel==P.curve() for each point P?  And this need only be done when the user has supplied the points.\n5. is_int():  there are more Sage-like ways of doing this, such as try: x==ZZ(x).\n    \nThat's all I'll write for now.  You have done some great work here, but what I think I will do is rewrite it a bit myself and post a new patch based on that.\n \n\n```\n            if j == 0:\n```\n\nshould be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_of_curve() might be useful in other places I would make this a separate function for the class.",
+    "body": "Attachment [ell_rational_field.py](tarball://root/attachments/some-uuid/ticket3674/ell_rational_field.py) by @JohnCremona created at 2008-07-18 19:13:14\n\nIn 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py with the file emailed to me\nand it built fine.\n\nComments:\n1. The docstring says that parameter tors_points should be either 'auto' or a list of all the torsion points; but 'auto' causes tors_points to be assigned to generators for the torsion.  So the docstring should change \"all torsion points\" to \"generators for the torsion subgroup\".\n2. The output is a set.  I think it should be a sorted list.  (Sorting is important to give consistency across platforms, etc.)\n3. Why this?\n\n```\n        if (r == 0) and (len_tors == 0):\n            raise RuntimeError, 'Both base points and torsions points are not specified'\n```\nIf the curve has trivial MW group then this is what you would expect, so why not just return the empty list?\n4. Your way of checking that the supplied points lie on the curve (the code with \"trash\") looks weird to me.  Why not just check that sel==P.curve() for each point P?  And this need only be done when the user has supplied the points.\n5. is_int():  there are more Sage-like ways of doing this, such as try: x==ZZ(x).\n    \nThat's all I'll write for now.  You have done some great work here, but what I think I will do is rewrite it a bit myself and post a new patch based on that.\n \n```\n            if j == 0:\n```\nshould be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_of_curve() might be useful in other places I would make this a separate function for the class.",
     "created_at": "2008-07-18T19:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -93,18 +93,15 @@ Comments:
         if (r == 0) and (len_tors == 0):
             raise RuntimeError, 'Both base points and torsions points are not specified'
 ```
-
 If the curve has trivial MW group then this is what you would expect, so why not just return the empty list?
 4. Your way of checking that the supplied points lie on the curve (the code with "trash") looks weird to me.  Why not just check that sel==P.curve() for each point P?  And this need only be done when the user has supplied the points.
 5. is_int():  there are more Sage-like ways of doing this, such as try: x==ZZ(x).
     
 That's all I'll write for now.  You have done some great work here, but what I think I will do is rewrite it a bit myself and post a new patch based on that.
  
-
 ```
             if j == 0:
 ```
-
 should be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_of_curve() might be useful in other places I would make this a separate function for the class.
 
 
@@ -114,7 +111,7 @@ should be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_o
 archive/issue_comments_025917.json:
 ```json
 {
-    "body": "Dear John,\n\nthanks to your answer and your advise.\nI'm sorry to write you an email instead of replying to the trac ticket (but I'm not sure how to do that).\nI made some comments on your mail below:\n\n>Betreff: Re: [SAGE] #3674: Implement integral point finding for elliptic curves over Q\n>\n>#3674: Implement integral point finding for elliptic curves over Q\n>---------------------------+------------------------------------------------\n >Reporter:  cremona        |        Owner:  was\n >    Type:  enhancement    |       Status:  new\n> Priority:  major          |    Milestone:\n>Component:  number theory  |   Resolution:\n> Keywords:                 |\n>---------------------------+------------------------------------------------\n>Comment (by cremona):\n>\n >In 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py\n >with the file emailed to me\n >and it built fine.\n>\n> Comments:\n>     1. The docstring says that parameter tors_points should be either\n> 'auto' or a list of all the torsion points; but 'auto' causes tors_points\n> to be assigned to generators for the torsion.  So the docstring should\n> change \"all torsion points\" to \"generators for the torsion subgroup\".\n\nyour right that was a bit imprecise of us\n\n>     2. The output is a set.  I think it should be a sorted list.  (Sorting\n> is important to give consistency across platforms, etc.)\n\nwe didn't thought of the problem that a set might make across platforms\n\n>     3. Why this?\n> {{{\n>         if (r == 0) and (len_tors == 0):\n>             raise RuntimeError, 'Both base points and torsions points are\n> not specified'\n> }}}\n> If the curve has trivial MW group then this is what you would expect, so\n> why not just return the empty list?\n\nyes, there is a mistake. We thought this would be impossible so we raised an Error\n\n>     4. Your way of checking that the supplied points lie on the curve (the\n> code with \"trash\") looks weird to me.  Why not just check that\n> sel==P.curve() for each point P?  And this need only be done when the user\n> has supplied the points.\n\nThe code with trash is more or less the same, because the function .point() raises an Error\nif the specified point is not in the curve. We haven't looked at the function .curve()\n\n>     5. is_int():  there are more Sage-like ways of doing this, such as\n> try: x==ZZ(x).\n\nWe also thought that there must be better ways of checking the type but because we\nweren't so familiar (its becoming better and better but sage is so large that it takes some\ntime we get deep into it)\n\n> That's all I'll write for now.  You have done some great work here, but\n> what I think I will do is rewrite it a bit myself and post a new patch\n> based on that.\n\nThanks. So we shouldn't fix what you commented on here ?\n\n   >{{{\n   >            if j == 0:\n   >}}}\n> should be if self.j_invariant()==0 ?  j is undefined here.\n\nAt runtime j is defined so it seems no problem to us\n\n>  Also, since height_of_curve() might be useful in other places I would make this a\n> separate function for the class.\n\nIf you're going do this you need self.j_invariant() that's right.\n\nI would also suggest to make complex_elliptic_logarithm() a seperate function in the class\nof Rational Points on Elliptic curves or isn't it a useful functionality?\nIf so I can make the necessary additional changes.\n\n\nNow in the following weeks, Michael and I will go on with the problem of S-integral point\nfinding.\n\nBest wishes\nTobias",
+    "body": "Dear John,\n\nthanks to your answer and your advise.\nI'm sorry to write you an email instead of replying to the trac ticket (but I'm not sure how to do that).\nI made some comments on your mail below:\n\n>Betreff: Re: [SAGE] #3674: Implement integral point finding for elliptic curves over Q\n>\n>#3674: Implement integral point finding for elliptic curves over Q\n>\n>---\n\n >Reporter:  cremona        |        Owner:  was\n >    Type:  enhancement    |       Status:  new\n> Priority:  major          |    Milestone:\n\n>Component:  number theory  |   Resolution:\n> Keywords:                 |\n\n>---------------------------+------------------------------------------------\n>Comment (by cremona):\n>\n\n >In 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py\n >with the file emailed to me\n >and it built fine.\n>\n> Comments:\n>1. The docstring says that parameter tors_points should be either\n> 'auto' or a list of all the torsion points; but 'auto' causes tors_points\n> to be assigned to generators for the torsion.  So the docstring should\n> change \"all torsion points\" to \"generators for the torsion subgroup\".\n\n\nyour right that was a bit imprecise of us\n\n>     2. The output is a set.  I think it should be a sorted list.  (Sorting\n  \n> is important to give consistency across platforms, etc.)\n\nwe didn't thought of the problem that a set might make across platforms\n\n>     3. Why this?\n  \n> {{{\n>         if (r == 0) and (len_tors == 0):\n>             raise RuntimeError, 'Both base points and torsions points are\n\n> not specified'\n> }}}\n> If the curve has trivial MW group then this is what you would expect, so\n> why not just return the empty list?\n\n\nyes, there is a mistake. We thought this would be impossible so we raised an Error\n\n>     4. Your way of checking that the supplied points lie on the curve (the\n  \n> code with \"trash\") looks weird to me.  Why not just check that\n> sel==P.curve() for each point P?  And this need only be done when the user\n> has supplied the points.\n\n\nThe code with trash is more or less the same, because the function .point() raises an Error\nif the specified point is not in the curve. We haven't looked at the function .curve()\n\n>     5. is_int():  there are more Sage-like ways of doing this, such as\n  \n> try: x==ZZ(x).\n\nWe also thought that there must be better ways of checking the type but because we\nweren't so familiar (its becoming better and better but sage is so large that it takes some\ntime we get deep into it)\n\n> That's all I'll write for now.  You have done some great work here, but\n> what I think I will do is rewrite it a bit myself and post a new patch\n> based on that.\n\n\nThanks. So we shouldn't fix what you commented on here ?\n\n   >{{{\n   >            if j == 0:\n   >}}}\n> should be if self.j_invariant()==0 ?  j is undefined here.\n\n\nAt runtime j is defined so it seems no problem to us\n\n>  Also, since height_of_curve() might be useful in other places I would make this a\n\n> separate function for the class.\n\nIf you're going do this you need self.j_invariant() that's right.\n\nI would also suggest to make complex_elliptic_logarithm() a seperate function in the class\nof Rational Points on Elliptic curves or isn't it a useful functionality?\nIf so I can make the necessary additional changes.\n\n\nNow in the following weeks, Michael and I will go on with the problem of S-integral point\nfinding.\n\nBest wishes\nTobias",
     "created_at": "2008-07-19T13:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -132,52 +129,65 @@ I made some comments on your mail below:
 >Betreff: Re: [SAGE] #3674: Implement integral point finding for elliptic curves over Q
 >
 >#3674: Implement integral point finding for elliptic curves over Q
->---------------------------+------------------------------------------------
+>
+>---
+
  >Reporter:  cremona        |        Owner:  was
  >    Type:  enhancement    |       Status:  new
 > Priority:  major          |    Milestone:
+
 >Component:  number theory  |   Resolution:
 > Keywords:                 |
+
 >---------------------------+------------------------------------------------
 >Comment (by cremona):
 >
+
  >In 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py
  >with the file emailed to me
  >and it built fine.
 >
 > Comments:
->     1. The docstring says that parameter tors_points should be either
+>1. The docstring says that parameter tors_points should be either
 > 'auto' or a list of all the torsion points; but 'auto' causes tors_points
 > to be assigned to generators for the torsion.  So the docstring should
 > change "all torsion points" to "generators for the torsion subgroup".
 
+
 your right that was a bit imprecise of us
 
 >     2. The output is a set.  I think it should be a sorted list.  (Sorting
+  
 > is important to give consistency across platforms, etc.)
 
 we didn't thought of the problem that a set might make across platforms
 
 >     3. Why this?
+  
 > {{{
 >         if (r == 0) and (len_tors == 0):
 >             raise RuntimeError, 'Both base points and torsions points are
+
 > not specified'
 > }}}
 > If the curve has trivial MW group then this is what you would expect, so
 > why not just return the empty list?
 
+
 yes, there is a mistake. We thought this would be impossible so we raised an Error
 
 >     4. Your way of checking that the supplied points lie on the curve (the
+  
 > code with "trash") looks weird to me.  Why not just check that
 > sel==P.curve() for each point P?  And this need only be done when the user
 > has supplied the points.
+
 
 The code with trash is more or less the same, because the function .point() raises an Error
 if the specified point is not in the curve. We haven't looked at the function .curve()
 
 >     5. is_int():  there are more Sage-like ways of doing this, such as
+  
 > try: x==ZZ(x).
 
 We also thought that there must be better ways of checking the type but because we
@@ -188,6 +198,7 @@ time we get deep into it)
 > what I think I will do is rewrite it a bit myself and post a new patch
 > based on that.
 
+
 Thanks. So we shouldn't fix what you commented on here ?
 
    >{{{
@@ -195,9 +206,11 @@ Thanks. So we shouldn't fix what you commented on here ?
    >}}}
 > should be if self.j_invariant()==0 ?  j is undefined here.
 
+
 At runtime j is defined so it seems no problem to us
 
 >  Also, since height_of_curve() might be useful in other places I would make this a
+
 > separate function for the class.
 
 If you're going do this you need self.j_invariant() that's right.
@@ -220,7 +233,7 @@ Tobias
 archive/issue_comments_025918.json:
 ```json
 {
-    "body": "Dear Tobias (and Michael)\n\nFor trac:  write to Michael Abshoff (see sage-devel emails) and ask\nhim for an account.  Your username can be anything to easily identify\nyou, and the password can be anything insecure -- it is just to avoid\nspam.\n\nI have started editing your code, and I think it would be most\nefficient if I did some more work on that before handing it back to\nyou.  If you don't like that, tell me right away as I can easily stop:\nall I have done so far is to separate out the height of a curve\n(which will be useful elsewhere.  Elliptic log will certainly be\nuseful elsewhere.\n\nOther comments about your internal functions:\n\n* `extract_realroots()`:  you should be able to give the `roots()` function\na field and it will only give roots in that field.  then this would\nbbe unnecessary.\n\n* `in_egg()`:  this should be an external function, and should be replaced\nby something exact (discrete):  see the very last section of\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/papers/component.pdf.\n\n* `search_points()`:  should use the function `elliptic_curve.list_x()` to\ngive one or all points with a given x-coordinate.  Which would make it\nmuch shorter:  for example, to list all points with integral x between\n10 and 50 this works:\n\n```\nsage: sum([E.lift_x(x,all=True) for x in range(10,50)],[])\n[(11 : 35 : 1),\n (11 : -36 : 1),\n (14 : 51 : 1),\n (14 : -52 : 1),\n (21 : 95 : 1),\n (21 : -96 : 1),\n (37 : 224 : 1),\n (37 : -225 : 1)]\n```\n\n\nThat's enough for now.  I will paste this into the trac ticket too.\n\nIt might be a good idea to wait until this function is finished and\nreviewed before working too seriously on the S-integral case.  I think\nit would be easier to implement that once you know the final form of\nthe case you have already done.  But anyway you can certainly start to\nwork on that while I tidy up what you have done so far.\n\nJohn",
+    "body": "Dear Tobias (and Michael)\n\nFor trac:  write to Michael Abshoff (see sage-devel emails) and ask\nhim for an account.  Your username can be anything to easily identify\nyou, and the password can be anything insecure -- it is just to avoid\nspam.\n\nI have started editing your code, and I think it would be most\nefficient if I did some more work on that before handing it back to\nyou.  If you don't like that, tell me right away as I can easily stop:\nall I have done so far is to separate out the height of a curve\n(which will be useful elsewhere.  Elliptic log will certainly be\nuseful elsewhere.\n\nOther comments about your internal functions:\n\n* `extract_realroots()`:  you should be able to give the `roots()` function\na field and it will only give roots in that field.  then this would\nbbe unnecessary.\n\n* `in_egg()`:  this should be an external function, and should be replaced\nby something exact (discrete):  see the very last section of\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/papers/component.pdf.\n\n* `search_points()`:  should use the function `elliptic_curve.list_x()` to\ngive one or all points with a given x-coordinate.  Which would make it\nmuch shorter:  for example, to list all points with integral x between\n10 and 50 this works:\n\n```\nsage: sum([E.lift_x(x,all=True) for x in range(10,50)],[])\n[(11 : 35 : 1),\n (11 : -36 : 1),\n (14 : 51 : 1),\n (14 : -52 : 1),\n (21 : 95 : 1),\n (21 : -96 : 1),\n (37 : 224 : 1),\n (37 : -225 : 1)]\n```\n\nThat's enough for now.  I will paste this into the trac ticket too.\n\nIt might be a good idea to wait until this function is finished and\nreviewed before working too seriously on the S-integral case.  I think\nit would be easier to implement that once you know the final form of\nthe case you have already done.  But anyway you can certainly start to\nwork on that while I tidy up what you have done so far.\n\nJohn",
     "created_at": "2008-07-19T13:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -269,7 +282,6 @@ sage: sum([E.lift_x(x,all=True) for x in range(10,50)],[])
  (37 : 224 : 1),
  (37 : -225 : 1)]
 ```
-
 
 That's enough for now.  I will paste this into the trac ticket too.
 
@@ -326,7 +338,7 @@ The patch sage-trac3674a.patch is a first version after some working by me.  It 
 archive/issue_comments_025921.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> The patch sage-trac3674a.patch is a first version after some working by me.  It needs more work still (e.g. `elliptic_logarithm()` needs doctests) but I cannot spend more time on it for a while and I wanted Tobias and Michael to see what I had done so far.\n\nDear John,\n\nit is very informative to look at the changes you made. We hadn't such a deep knowledge how to work with sage (e.g. computing the roots).\nTo make a little contribution I have written the doctests for the elliptic_logarithm()\n\n```\nEXAMPLES:\n    sage: E=EllipticCurve('37a')\n    sage: [E.lift_x(x).elliptic_logarithm() for x in range(-1,2)]\n    [0.204680500375771 + 1.22569469099340*I, 0.929592715285396 + 1.22569469099340*I, 1.85918543057079]\n         \n    sage: [E.lift_x(x).elliptic_logarithm(precision=100) for x in range(-1,2)]\n    [0.20468050037577260661641194608 + 1.2256946909933950304271124159*I, 0.92959271528539567440519934446 + 1.2256946909933950304271124159*I, 1.8591854305707913488103986889]\n```\n\n\nGreetings\nTobias",
+    "body": "Replying to [comment:4 cremona]:\n> The patch sage-trac3674a.patch is a first version after some working by me.  It needs more work still (e.g. `elliptic_logarithm()` needs doctests) but I cannot spend more time on it for a while and I wanted Tobias and Michael to see what I had done so far.\n\n\nDear John,\n\nit is very informative to look at the changes you made. We hadn't such a deep knowledge how to work with sage (e.g. computing the roots).\nTo make a little contribution I have written the doctests for the elliptic_logarithm()\n\n```\nEXAMPLES:\n    sage: E=EllipticCurve('37a')\n    sage: [E.lift_x(x).elliptic_logarithm() for x in range(-1,2)]\n    [0.204680500375771 + 1.22569469099340*I, 0.929592715285396 + 1.22569469099340*I, 1.85918543057079]\n         \n    sage: [E.lift_x(x).elliptic_logarithm(precision=100) for x in range(-1,2)]\n    [0.20468050037577260661641194608 + 1.2256946909933950304271124159*I, 0.92959271528539567440519934446 + 1.2256946909933950304271124159*I, 1.8591854305707913488103986889]\n```\n\nGreetings\nTobias",
     "created_at": "2008-07-21T10:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -337,6 +349,7 @@ archive/issue_comments_025921.json:
 
 Replying to [comment:4 cremona]:
 > The patch sage-trac3674a.patch is a first version after some working by me.  It needs more work still (e.g. `elliptic_logarithm()` needs doctests) but I cannot spend more time on it for a while and I wanted Tobias and Michael to see what I had done so far.
+
 
 Dear John,
 
@@ -352,7 +365,6 @@ EXAMPLES:
     sage: [E.lift_x(x).elliptic_logarithm(precision=100) for x in range(-1,2)]
     [0.20468050037577260661641194608 + 1.2256946909933950304271124159*I, 0.92959271528539567440519934446 + 1.2256946909933950304271124159*I, 1.8591854305707913488103986889]
 ```
-
 
 Greetings
 Tobias
@@ -470,7 +482,7 @@ fix so e.integral_points() works when e.rank() >= 1.
 archive/issue_comments_025927.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThis is a wonderful contribution to Sage!    \n\nSince we're writing professional quality code here, there are several quality and consistency issues that need to be addressed.  Please see below. \n\n1. CODE:\n\n```\n+        \"\"\"The rational point (if any) associated to this complex number\n+           (inverse of elliptic logarithm)\n```\n\nshould be\n\n```\n         \"\"\"\n         The rational point (if any) associated to this complex number\n         (inverse of elliptic logarithm).\n```\n\nNotice the period at the end of the sentence and not starting right after \"\"\" (a Sage convention). \n\n* In `def antilogarithm(self, z, prec=53):` you don't document the prec input parameter.\n\n* The warning doesn't explain to me at all what the significance of it is.  What does that warning imply?\n\n```\n+           WARNING: At present (3.0.4) it is not possible to pass the\n+           precision parameter to ellztopoint!\n```\n\n\n* In antilogorithm there is\n\n```\n+        except:\n```\n\nOne should NEVER have a naked except: unless there is a very good reason for it.\nMuch better is to do \"except TypeError\" or whatever other specific exceptions there.\n\n* This is bad code in the `integral_points` function:\n\n```\n+                try:\n+                    assert P.curve() is self\n+                except:\n+                    raise ValueError, \"points are not on the correct curve\"\n```\n\nWhy not just\n\n```\nif P.curve() is not self:\n     raise ValueError, \"points are not on the current curve\"\n```\n\nIn fact, you *should* probably do:\n\n```\nif P.curve() != self:\n     raise ValueError, \"points are not on the current curve\"\n```\n\nMake sure you know the difference between is and == (and 'is not' and !=). \n\n* Similar remarks about\n\n```\n+        try:\n+            assert self.is_integral()\n+        except:\n+            raise ValueError, \"integral_points() can only be called on an integral model\"\n```\n\n \n* This will tex wrong (especially the subscript for H_q):\n\n```\n+        def search_remaining_points():\n+            \"\"\"Returns list of integral points on curve E written as\n+               linear combination of n times the mordell-weil base\n+               points and torsion points (n is bounded by H_q, which\n+               will be computed at runtime)\n```\n\n\n\n* In torsion_points:\n\n```\n+    def torsion_points(self, flag=0):\n+        \"\"\"\n+        Returns the torsion points of this elliptic curve as a sorted list.\n+\n+        INPUT:\n+            flag -- (default: 0)  chooses PARI algorithm:\n+              flag = 0: uses Doud algorithm\n+              flag = 1: uses Lutz-Nagell algorithm\n```\n\nit would be vastly more consistent with sage to replace the `flag=[integer]` parameter by an `algorithm=string` parameter.  Everywhere else in Sage we use algorithm instead of flag and set it to a string, which makes reading code much easier. \n\n* The first sentence of a docstring should be a sentence (or two); in particular, end in a period:\n\n```\n+    def height(self, precision=53):\n+        \"\"\"Returns real height of this elliptic curve\n+        This is used in integral_points()\n```\n\n\n* Here:\n\n```\n+    def integral_points(self, mw_base='auto', both_signs=False):\n+        \"\"\"\n+        Computes all integral points (up to sign) on the elliptic\n+        curve E which has Mordell-Weil basis mw_base.\n+        \n+        INPUT:\n+            self -- EllipticCurve_Rational_Field\n+            mw_base -- list of EllipticCurvePoint generating the\n+                       Mordell-Weil group of E\n+                    (default: 'auto' - calls self.gens())\n+\n+            both_signs -- True/False (default False): if True the\n+                       output contains both P and -P, otherwise only\n+                       one of ecah pair.\n```\n\nThere is an extra newline that shouldn't be there.  Also, one never explicitly lists self in the INPUT's in Sage docstrings.\n\n* This will look very bad when latex'd for the reference manual:\n\n```\n+        HINTS:\n+            - The complexity increases exponentially in the rank of curve E.\n+            - It can help if you try another Mordell-Weil base, because the\n+            computation time depends on this, too.   \n```\n\n\n\n\n\n\n2. ROBUSTNESS:\nI just made a little loop over elliptic curves, to see if I could find a bug, and quickly found numerous curves where integral_points \"hangs forever\".  I didn't investigate to see what's going on.  All I know about complexity is that Magma computes the integral points on the same curves almost immediately.\n\nThe three curves for which this new code \"hangs forever\" are: 79a1, 117a2, and 205a1.\nMagma finds the integral points instantly:\n\n```\nsage: e = EllipticCurve('79a1')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (0 : 0 : 1), (1 : 0 : 1), (-2 : 1 : 1), (33 : -210 : 1) ]\nsage: e = EllipticCurve('117a2')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\nsage: m = magma(EllipticCurve('205a1'))\nsage: m\nElliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - 22*x + 44 over Rational Field\nsage: m.IntegralPoints()\n[ (2 : -4 : 1), (3 : -2 : 1), (-1 : 8 : 1), (12 : 31 : 1), (2 : 1 : 1) ]\n```\n\n\n\nAlso, even worse, when I control-c'd out of running 205a1 from Sage I got a SIGBUS exception:\n\n```\nsage: sage: for E in cremona_optimal_curves([80..300]):\n          print E.cremona_label(); print E.integral_points()\n...     \n...\n205a1\n^C\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nD-69-91-158-184:~ was$ \n```\n",
+    "body": "REFEREE REPORT:\n\nThis is a wonderful contribution to Sage!    \n\nSince we're writing professional quality code here, there are several quality and consistency issues that need to be addressed.  Please see below. \n\n1. CODE:\n\n```\n+        \"\"\"The rational point (if any) associated to this complex number\n+           (inverse of elliptic logarithm)\n```\nshould be\n\n```\n         \"\"\"\n         The rational point (if any) associated to this complex number\n         (inverse of elliptic logarithm).\n```\nNotice the period at the end of the sentence and not starting right after \"\"\" (a Sage convention). \n\n* In `def antilogarithm(self, z, prec=53):` you don't document the prec input parameter.\n\n* The warning doesn't explain to me at all what the significance of it is.  What does that warning imply?\n\n```\n+           WARNING: At present (3.0.4) it is not possible to pass the\n+           precision parameter to ellztopoint!\n```\n\n* In antilogorithm there is\n\n```\n+        except:\n```\nOne should NEVER have a naked except: unless there is a very good reason for it.\nMuch better is to do \"except TypeError\" or whatever other specific exceptions there.\n\n* This is bad code in the `integral_points` function:\n\n```\n+                try:\n+                    assert P.curve() is self\n+                except:\n+                    raise ValueError, \"points are not on the correct curve\"\n```\nWhy not just\n\n```\nif P.curve() is not self:\n     raise ValueError, \"points are not on the current curve\"\n```\nIn fact, you *should* probably do:\n\n```\nif P.curve() != self:\n     raise ValueError, \"points are not on the current curve\"\n```\nMake sure you know the difference between is and == (and 'is not' and !=). \n\n* Similar remarks about\n\n```\n+        try:\n+            assert self.is_integral()\n+        except:\n+            raise ValueError, \"integral_points() can only be called on an integral model\"\n```\n \n* This will tex wrong (especially the subscript for H_q):\n\n```\n+        def search_remaining_points():\n+            \"\"\"Returns list of integral points on curve E written as\n+               linear combination of n times the mordell-weil base\n+               points and torsion points (n is bounded by H_q, which\n+               will be computed at runtime)\n```\n\n\n* In torsion_points:\n\n```\n+    def torsion_points(self, flag=0):\n+        \"\"\"\n+        Returns the torsion points of this elliptic curve as a sorted list.\n+\n+        INPUT:\n+            flag -- (default: 0)  chooses PARI algorithm:\n+              flag = 0: uses Doud algorithm\n+              flag = 1: uses Lutz-Nagell algorithm\n```\nit would be vastly more consistent with sage to replace the `flag=[integer]` parameter by an `algorithm=string` parameter.  Everywhere else in Sage we use algorithm instead of flag and set it to a string, which makes reading code much easier. \n\n* The first sentence of a docstring should be a sentence (or two); in particular, end in a period:\n\n```\n+    def height(self, precision=53):\n+        \"\"\"Returns real height of this elliptic curve\n+        This is used in integral_points()\n```\n\n* Here:\n\n```\n+    def integral_points(self, mw_base='auto', both_signs=False):\n+        \"\"\"\n+        Computes all integral points (up to sign) on the elliptic\n+        curve E which has Mordell-Weil basis mw_base.\n+        \n+        INPUT:\n+            self -- EllipticCurve_Rational_Field\n+            mw_base -- list of EllipticCurvePoint generating the\n+                       Mordell-Weil group of E\n+                    (default: 'auto' - calls self.gens())\n+\n+            both_signs -- True/False (default False): if True the\n+                       output contains both P and -P, otherwise only\n+                       one of ecah pair.\n```\nThere is an extra newline that shouldn't be there.  Also, one never explicitly lists self in the INPUT's in Sage docstrings.\n\n* This will look very bad when latex'd for the reference manual:\n\n```\n+        HINTS:\n+            - The complexity increases exponentially in the rank of curve E.\n+            - It can help if you try another Mordell-Weil base, because the\n+            computation time depends on this, too.   \n```\n\n\n\n\n\n2. ROBUSTNESS:\nI just made a little loop over elliptic curves, to see if I could find a bug, and quickly found numerous curves where integral_points \"hangs forever\".  I didn't investigate to see what's going on.  All I know about complexity is that Magma computes the integral points on the same curves almost immediately.\n\nThe three curves for which this new code \"hangs forever\" are: 79a1, 117a2, and 205a1.\nMagma finds the integral points instantly:\n\n```\nsage: e = EllipticCurve('79a1')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (0 : 0 : 1), (1 : 0 : 1), (-2 : 1 : 1), (33 : -210 : 1) ]\nsage: e = EllipticCurve('117a2')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\nsage: m = magma(EllipticCurve('205a1'))\nsage: m\nElliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - 22*x + 44 over Rational Field\nsage: m.IntegralPoints()\n[ (2 : -4 : 1), (3 : -2 : 1), (-1 : 8 : 1), (12 : 31 : 1), (2 : 1 : 1) ]\n```\n\n\nAlso, even worse, when I control-c'd out of running 205a1 from Sage I got a SIGBUS exception:\n\n```\nsage: sage: for E in cremona_optimal_curves([80..300]):\n          print E.cremona_label(); print E.integral_points()\n...     \n...\n205a1\n^C\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nD-69-91-158-184:~ was$ \n```",
     "created_at": "2008-07-29T20:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -491,7 +503,6 @@ Since we're writing professional quality code here, there are several quality an
 +        """The rational point (if any) associated to this complex number
 +           (inverse of elliptic logarithm)
 ```
-
 should be
 
 ```
@@ -499,7 +510,6 @@ should be
          The rational point (if any) associated to this complex number
          (inverse of elliptic logarithm).
 ```
-
 Notice the period at the end of the sentence and not starting right after """ (a Sage convention). 
 
 * In `def antilogarithm(self, z, prec=53):` you don't document the prec input parameter.
@@ -511,13 +521,11 @@ Notice the period at the end of the sentence and not starting right after """ (a
 +           precision parameter to ellztopoint!
 ```
 
-
 * In antilogorithm there is
 
 ```
 +        except:
 ```
-
 One should NEVER have a naked except: unless there is a very good reason for it.
 Much better is to do "except TypeError" or whatever other specific exceptions there.
 
@@ -529,21 +537,18 @@ Much better is to do "except TypeError" or whatever other specific exceptions th
 +                except:
 +                    raise ValueError, "points are not on the correct curve"
 ```
-
 Why not just
 
 ```
 if P.curve() is not self:
      raise ValueError, "points are not on the current curve"
 ```
-
 In fact, you *should* probably do:
 
 ```
 if P.curve() != self:
      raise ValueError, "points are not on the current curve"
 ```
-
 Make sure you know the difference between is and == (and 'is not' and !=). 
 
 * Similar remarks about
@@ -554,7 +559,6 @@ Make sure you know the difference between is and == (and 'is not' and !=).
 +        except:
 +            raise ValueError, "integral_points() can only be called on an integral model"
 ```
-
  
 * This will tex wrong (especially the subscript for H_q):
 
@@ -565,7 +569,6 @@ Make sure you know the difference between is and == (and 'is not' and !=).
 +               points and torsion points (n is bounded by H_q, which
 +               will be computed at runtime)
 ```
-
 
 
 * In torsion_points:
@@ -580,7 +583,6 @@ Make sure you know the difference between is and == (and 'is not' and !=).
 +              flag = 0: uses Doud algorithm
 +              flag = 1: uses Lutz-Nagell algorithm
 ```
-
 it would be vastly more consistent with sage to replace the `flag=[integer]` parameter by an `algorithm=string` parameter.  Everywhere else in Sage we use algorithm instead of flag and set it to a string, which makes reading code much easier. 
 
 * The first sentence of a docstring should be a sentence (or two); in particular, end in a period:
@@ -590,7 +592,6 @@ it would be vastly more consistent with sage to replace the `flag=[integer]` par
 +        """Returns real height of this elliptic curve
 +        This is used in integral_points()
 ```
-
 
 * Here:
 
@@ -610,7 +611,6 @@ it would be vastly more consistent with sage to replace the `flag=[integer]` par
 +                       output contains both P and -P, otherwise only
 +                       one of ecah pair.
 ```
-
 There is an extra newline that shouldn't be there.  Also, one never explicitly lists self in the INPUT's in Sage docstrings.
 
 * This will look very bad when latex'd for the reference manual:
@@ -621,7 +621,6 @@ There is an extra newline that shouldn't be there.  Also, one never explicitly l
 +            - It can help if you try another Mordell-Weil base, because the
 +            computation time depends on this, too.   
 ```
-
 
 
 
@@ -650,7 +649,6 @@ sage: m.IntegralPoints()
 ```
 
 
-
 Also, even worse, when I control-c'd out of running 205a1 from Sage I got a SIGBUS exception:
 
 ```
@@ -672,7 +670,6 @@ SAGE will now terminate (sorry).
 
 D-69-91-158-184:~ was$ 
 ```
-
 
 
 
@@ -738,7 +735,7 @@ replaces earlier sage-trac3674c.patch
 archive/issue_comments_025930.json:
 ```json
 {
-    "body": "The new patch sage-trac3674c.2.patch replaces sage-trac3674c.patch.\n\nI have dealt with all (I hope) of the stylistic points raised in the review (if not, I will of course do more in that direction).\n\nOf the curves which had been reported as hanging, only the third hung for me, but I tracked the problem down to an over-strict test for ending an AGM loop in elliptic_logarithm() -- I had made a necessary change in one branch of a split on the sign of the discriminant but not in the other.\nSo I think the hanging problem is fixed.\n\nHowever, there is more debugging to do which I want to hand back to the original implementers!   I ran all curves in the database in order like this:\n\n```\nsage: CDB=CremonaDatabase()  \nsage: for E in CDB.iter(range(11,1000)):  print E.label(), E.integral_points()\n```\n\nand all went well until a runtime error in '289a3'.  The low_bound variable becomes 0 which leads to H_q_new being Infinity.\n\nSecondly, I found lots of curves where fewer integral points were listed than by magma.\nFor example:\n\n```\nsage: e = EllipticCurve('117a2')\nsage: e.integral_points()       \n[(-4 : 15 : 1), (2 : 3 : 1), (6 : 3 : 1), (9 : 15 : 1)]\nsage: m = magma(e)              \nsage: m.IntegralPoints()        \n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\n```\n\n\nSo there is something wrong here too.\n\nOver to you, Tobias and Michael!",
+    "body": "The new patch sage-trac3674c.2.patch replaces sage-trac3674c.patch.\n\nI have dealt with all (I hope) of the stylistic points raised in the review (if not, I will of course do more in that direction).\n\nOf the curves which had been reported as hanging, only the third hung for me, but I tracked the problem down to an over-strict test for ending an AGM loop in elliptic_logarithm() -- I had made a necessary change in one branch of a split on the sign of the discriminant but not in the other.\nSo I think the hanging problem is fixed.\n\nHowever, there is more debugging to do which I want to hand back to the original implementers!   I ran all curves in the database in order like this:\n\n```\nsage: CDB=CremonaDatabase()  \nsage: for E in CDB.iter(range(11,1000)):  print E.label(), E.integral_points()\n```\nand all went well until a runtime error in '289a3'.  The low_bound variable becomes 0 which leads to H_q_new being Infinity.\n\nSecondly, I found lots of curves where fewer integral points were listed than by magma.\nFor example:\n\n```\nsage: e = EllipticCurve('117a2')\nsage: e.integral_points()       \n[(-4 : 15 : 1), (2 : 3 : 1), (6 : 3 : 1), (9 : 15 : 1)]\nsage: m = magma(e)              \nsage: m.IntegralPoints()        \n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\n```\n\nSo there is something wrong here too.\n\nOver to you, Tobias and Michael!",
     "created_at": "2008-07-30T02:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -760,7 +757,6 @@ However, there is more debugging to do which I want to hand back to the original
 sage: CDB=CremonaDatabase()  
 sage: for E in CDB.iter(range(11,1000)):  print E.label(), E.integral_points()
 ```
-
 and all went well until a runtime error in '289a3'.  The low_bound variable becomes 0 which leads to H_q_new being Infinity.
 
 Secondly, I found lots of curves where fewer integral points were listed than by magma.
@@ -774,7 +770,6 @@ sage: m = magma(e)
 sage: m.IntegralPoints()        
 [ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]
 ```
-
 
 So there is something wrong here too.
 
@@ -970,7 +965,7 @@ I have left the "needs review" tag on since it would still be worthwhile for som
 archive/issue_comments_025940.json:
 ```json
 {
-    "body": "There are still issues.\n\nThe doctests do not pass for me: Mac OS X 10.4, Core 2 duo.  I get:\n\n\n```\nsage -t ell_rational_field.py\nsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3792:\n    sage: a=E.integral_points([P1,P2,P3]); a\nExpected:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (8 : 21 : 1), (11 : 35 : 1), (14 : 51 : 1), (21 : 95 : 1), (37 : 224 : 1), (52 : 374 : 1), (93 : 896 : 1), (342 : 6324 : 1), (406 : 8180 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (21 : 95 : 1)]\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3795:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 3, 4, 37, 406, 8, 11, 14, 816, 52, 21, 342, 93])\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 21])\n    Total number of integral points: 9\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3812:\n    sage: a=E.integral_points(both_signs=True); a\nExpected:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1), (8 : -22 : 1), (8 : 21 : 1), (11 : -36 : 1), (11 : 35 : 1), (14 : -52 : 1), (14 : 51 : 1), (21 : -96 : 1), (21 : 95 : 1), (37 : -225 : 1), (37 : 224 : 1), (52 : -375 : 1), (52 : 374 : 1), (93 : -897 : 1), (93 : 896 : 1), (342 : -6325 : 1), (342 : 6324 : 1), (406 : -8181 : 1), (406 : 8180 : 1), (816 : -23310 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1)]\n**********************************************************************\n1 items had failures:\n   3 of  12 in __main__.example_100\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage/tmp/.doctest_ell_rational_field.py\n\t [60.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 60.5 seconds\n```\n\n\nAlso, as jcremona points out:\n\n\n```\nsage: EllipticCurve('5478j1').integral_points()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in integral_points(self, mw_base, both_signs, verbose)\n   4114             #LLL - implemented in sage - operates on rows not on columns \n   4115             m_LLL = m.LLL()\n-> 4116             m_gram = m_LLL.gram_schmidt()[0]\n   4117             b1_norm = R(m_LLL.row(0).norm())\n   4118     \n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/matrix2.pyx in sage.matrix.matrix2.Matrix.gram_schmidt (sage/matrix/matrix2.c:20026)()\n\n/Users/ncalexan/sage/local/lib/python/site-packages/sage/modules/misc.py in gram_schmidt(B)\n     55     for i in range(1,n):\n     56         for j in range(i):\n---> 57             mu[i,j] = B[i].dot_product(Bstar[j]) / (Bstar[j].dot_product(Bstar[j]))\n     58         Bstar.append(B[i] - sum(mu[i,j]*Bstar[j] for j in range(i)))\n     59     return Bstar, mu\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9326)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/coerce.pxi in sage.structure.element._div_c (sage/structure/element.c:16760)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer.pyx in sage.rings.integer.Integer._div_c_impl (sage/rings/integer.c:8814)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:3991)()\n\nZeroDivisionError: Rational division by zero\n```\n\n\nThe problem is that a singular matrix is being sent into gram_schmidt -- namely [[0, 0], [1, 1]].  I don't think that will ever work.",
+    "body": "There are still issues.\n\nThe doctests do not pass for me: Mac OS X 10.4, Core 2 duo.  I get:\n\n```\nsage -t ell_rational_field.py\nsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3792:\n    sage: a=E.integral_points([P1,P2,P3]); a\nExpected:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (8 : 21 : 1), (11 : 35 : 1), (14 : 51 : 1), (21 : 95 : 1), (37 : 224 : 1), (52 : 374 : 1), (93 : 896 : 1), (342 : 6324 : 1), (406 : 8180 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (21 : 95 : 1)]\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3795:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 3, 4, 37, 406, 8, 11, 14, 816, 52, 21, 342, 93])\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 21])\n    Total number of integral points: 9\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3812:\n    sage: a=E.integral_points(both_signs=True); a\nExpected:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1), (8 : -22 : 1), (8 : 21 : 1), (11 : -36 : 1), (11 : 35 : 1), (14 : -52 : 1), (14 : 51 : 1), (21 : -96 : 1), (21 : 95 : 1), (37 : -225 : 1), (37 : 224 : 1), (52 : -375 : 1), (52 : 374 : 1), (93 : -897 : 1), (93 : 896 : 1), (342 : -6325 : 1), (342 : 6324 : 1), (406 : -8181 : 1), (406 : 8180 : 1), (816 : -23310 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1)]\n**********************************************************************\n1 items had failures:\n   3 of  12 in __main__.example_100\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage/tmp/.doctest_ell_rational_field.py\n\t [60.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 60.5 seconds\n```\n\nAlso, as jcremona points out:\n\n```\nsage: EllipticCurve('5478j1').integral_points()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in integral_points(self, mw_base, both_signs, verbose)\n   4114             #LLL - implemented in sage - operates on rows not on columns \n   4115             m_LLL = m.LLL()\n-> 4116             m_gram = m_LLL.gram_schmidt()[0]\n   4117             b1_norm = R(m_LLL.row(0).norm())\n   4118     \n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/matrix2.pyx in sage.matrix.matrix2.Matrix.gram_schmidt (sage/matrix/matrix2.c:20026)()\n\n/Users/ncalexan/sage/local/lib/python/site-packages/sage/modules/misc.py in gram_schmidt(B)\n     55     for i in range(1,n):\n     56         for j in range(i):\n---> 57             mu[i,j] = B[i].dot_product(Bstar[j]) / (Bstar[j].dot_product(Bstar[j]))\n     58         Bstar.append(B[i] - sum(mu[i,j]*Bstar[j] for j in range(i)))\n     59     return Bstar, mu\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9326)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/coerce.pxi in sage.structure.element._div_c (sage/structure/element.c:16760)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer.pyx in sage.rings.integer.Integer._div_c_impl (sage/rings/integer.c:8814)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:3991)()\n\nZeroDivisionError: Rational division by zero\n```\n\nThe problem is that a singular matrix is being sent into gram_schmidt -- namely [[0, 0], [1, 1]].  I don't think that will ever work.",
     "created_at": "2008-08-11T00:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -982,7 +977,6 @@ archive/issue_comments_025940.json:
 There are still issues.
 
 The doctests do not pass for me: Mac OS X 10.4, Core 2 duo.  I get:
-
 
 ```
 sage -t ell_rational_field.py
@@ -1043,9 +1037,7 @@ The following tests failed:
 Total time for all tests: 60.5 seconds
 ```
 
-
 Also, as jcremona points out:
-
 
 ```
 sage: EllipticCurve('5478j1').integral_points()
@@ -1080,7 +1072,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Rational division by zero
 ```
-
 
 The problem is that a singular matrix is being sent into gram_schmidt -- namely [[0, 0], [1, 1]].  I don't think that will ever work.
 
@@ -1183,7 +1174,7 @@ Attachment [sage-trac3674new-extra5.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_025946.json:
 ```json
 {
-    "body": "Debugging after initial review has finished, and three new (small) patches are the result.\n\nApply the following to 3.1.alpha1 in order:\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra5.patch\n```\n\nApologies for having 6 patches but last time I tried to merge them and messed up.  You should find that all doctests in sage.schemes.elliptic_curves.ell_rational_field.py pass.  We have also checked that (1) for all database curves up to conductor 1000 the results agree with Magma; (2) the code runs fine for all the 64687 curves of conductor up to 10000 (which takes under 32m on my laptop).  If you want to rerun those tests, first install the optional database since otherwise it will be much slower as the MW groups will need to be computed too.\n\nHoping for a review in time for 3.1!\n\nJohn, Michael and Tobias",
+    "body": "Debugging after initial review has finished, and three new (small) patches are the result.\n\nApply the following to 3.1.alpha1 in order:\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra5.patch\n```\nApologies for having 6 patches but last time I tried to merge them and messed up.  You should find that all doctests in sage.schemes.elliptic_curves.ell_rational_field.py pass.  We have also checked that (1) for all database curves up to conductor 1000 the results agree with Magma; (2) the code runs fine for all the 64687 curves of conductor up to 10000 (which takes under 32m on my laptop).  If you want to rerun those tests, first install the optional database since otherwise it will be much slower as the MW groups will need to be computed too.\n\nHoping for a review in time for 3.1!\n\nJohn, Michael and Tobias",
     "created_at": "2008-08-12T19:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1204,7 +1195,6 @@ sage-trac3674new-extra4.patch
 sage-trac3674new-extra3.patch
 sage-trac3674new-extra5.patch
 ```
-
 Apologies for having 6 patches but last time I tried to merge them and messed up.  You should find that all doctests in sage.schemes.elliptic_curves.ell_rational_field.py pass.  We have also checked that (1) for all database curves up to conductor 1000 the results agree with Magma; (2) the code runs fine for all the 64687 curves of conductor up to 10000 (which takes under 32m on my laptop).  If you want to rerun those tests, first install the optional database since otherwise it will be much slower as the MW groups will need to be computed too.
 
 Hoping for a review in time for 3.1!
@@ -1218,7 +1208,7 @@ John, Michael and Tobias
 archive/issue_comments_025947.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* Applying in this order to 3.0.6 works fine (note that it does not work with 3.1.alpha1, i.e., there are conflicts, but that's ok.)\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra5.patch\n```\n\n\nI applied all the patches under OS X and had the following errors when doctesting the elliptic_curves directory.  Maybe you could fix things so they pass?  E.g., maybe they are the result of randomness, etc. \n\n```\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_point.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_point.py\", line 479:\n    sage: Q = 5*E.1; Q\nExpected:\n    (-2739/1444 : 22161/54872 : 1)\nGot:\n    (-2739/1444 : -77033/54872 : 1)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_point.py\n\n\t [11.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_padic.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_modular_symbols.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_number_field.py\n\t [9.6 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_finite_field.py\n\t [15.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_generic.py\n\t [22.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_field.py\n\t [3.3 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ec_database.py\n\t [2.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/constructor.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/cm.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 3780:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 146:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 148:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1399:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1576:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1578:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 2313:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 253:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n6 items had failures:\n   1 of  12 in __main__.example_100\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_36\n   1 of   6 in __main__.example_63\n   1 of   8 in __main__.example_7\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\n\t [52.7 s]\n\nThe following tests failed:\n```\n",
+    "body": "REFEREE REPORT:\n\n* Applying in this order to 3.0.6 works fine (note that it does not work with 3.1.alpha1, i.e., there are conflicts, but that's ok.)\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra5.patch\n```\n\nI applied all the patches under OS X and had the following errors when doctesting the elliptic_curves directory.  Maybe you could fix things so they pass?  E.g., maybe they are the result of randomness, etc. \n\n```\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_point.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_point.py\", line 479:\n    sage: Q = 5*E.1; Q\nExpected:\n    (-2739/1444 : 22161/54872 : 1)\nGot:\n    (-2739/1444 : -77033/54872 : 1)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_point.py\n\n\t [11.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_padic.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_modular_symbols.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_number_field.py\n\t [9.6 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_finite_field.py\n\t [15.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_generic.py\n\t [22.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_field.py\n\t [3.3 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ec_database.py\n\t [2.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/constructor.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/cm.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 3780:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 146:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 148:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1399:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1576:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1578:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 2313:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 253:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n6 items had failures:\n   1 of  12 in __main__.example_100\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_36\n   1 of   6 in __main__.example_63\n   1 of   8 in __main__.example_7\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\n\t [52.7 s]\n\nThe following tests failed:\n```",
     "created_at": "2008-08-13T07:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1239,7 +1229,6 @@ sage-trac3674new-extra3.patch
 sage-trac3674new-extra4.patch
 sage-trac3674new-extra5.patch
 ```
-
 
 I applied all the patches under OS X and had the following errors when doctesting the elliptic_curves directory.  Maybe you could fix things so they pass?  E.g., maybe they are the result of randomness, etc. 
 
@@ -1374,7 +1363,6 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_025948.json:
@@ -1398,7 +1386,7 @@ I think that is all explainable by either decimal randomness, or the kind of thi
 archive/issue_comments_025949.json:
 ```json
 {
-    "body": "Replying to [comment:22 cremona]:\n> I think that is all explainable by either decimal randomness, or the kind of thing I was fixing in #3793.  I'll see what I can do.\n\nI don't understand your comment about 3.0.6 vs. 3.1.alpha1.  Before I posted the latest patches I *did* apply all 6 in order to a fresh clone of a 3.1.alpha 1 build, and all applied with no issues at all.\n\nThere's some mystery here, and inconsistency which is making it very hard to iron out these last doctests.",
+    "body": "Replying to [comment:22 cremona]:\n> I think that is all explainable by either decimal randomness, or the kind of thing I was fixing in #3793.  I'll see what I can do.\n\n\nI don't understand your comment about 3.0.6 vs. 3.1.alpha1.  Before I posted the latest patches I *did* apply all 6 in order to a fresh clone of a 3.1.alpha 1 build, and all applied with no issues at all.\n\nThere's some mystery here, and inconsistency which is making it very hard to iron out these last doctests.",
     "created_at": "2008-08-13T08:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1409,6 +1397,7 @@ archive/issue_comments_025949.json:
 
 Replying to [comment:22 cremona]:
 > I think that is all explainable by either decimal randomness, or the kind of thing I was fixing in #3793.  I'll see what I can do.
+
 
 I don't understand your comment about 3.0.6 vs. 3.1.alpha1.  Before I posted the latest patches I *did* apply all 6 in order to a fresh clone of a 3.1.alpha 1 build, and all applied with no issues at all.
 
@@ -1477,7 +1466,7 @@ OK, everything works now and I'm happy with this code.  POSITIVE REVIEW.
 archive/issue_comments_025953.json:
 ```json
 {
-    "body": "Hi John,\n\nwith the \"new\" patches applied up to number 6 I see the following doctest failures on sage.math:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/rational_torsion.py # 8 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # 10 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 17 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 18 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 44 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha.py # 23 doctests failed\n```\n\nThey all seem to be of the form\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/ell_generic.py\", line 308:\n    sage: E.torsion_subgroup().gens()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[2]>\", line 1, in <module>\n        E.torsion_subgroup().gens()###line 308:\n    sage: E.torsion_subgroup().gens()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2409, in torsion_subgroup\n        self.__torsion_subgroup = rational_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/rational_torsion.py\", line 59, in __init__\n        G = self.__E.pari_curve().elltors(flag) # pari_curve will return the curve of maximum known precision\n      File \"gen.pyx\", line 4647, in sage.libs.pari.gen.gen.elltors (sage/libs/pari/gen.c:17124)\n    TypeError: an integer is required\n**********************************************************************\n1 items had failures:\n```\n",
+    "body": "Hi John,\n\nwith the \"new\" patches applied up to number 6 I see the following doctest failures on sage.math:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/rational_torsion.py # 8 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # 10 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 17 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 18 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 44 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha.py # 23 doctests failed\n```\nThey all seem to be of the form\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/ell_generic.py\", line 308:\n    sage: E.torsion_subgroup().gens()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[2]>\", line 1, in <module>\n        E.torsion_subgroup().gens()###line 308:\n    sage: E.torsion_subgroup().gens()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2409, in torsion_subgroup\n        self.__torsion_subgroup = rational_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/rational_torsion.py\", line 59, in __init__\n        G = self.__E.pari_curve().elltors(flag) # pari_curve will return the curve of maximum known precision\n      File \"gen.pyx\", line 4647, in sage.libs.pari.gen.gen.elltors (sage/libs/pari/gen.c:17124)\n    TypeError: an integer is required\n**********************************************************************\n1 items had failures:\n```",
     "created_at": "2008-08-13T16:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1499,7 +1488,6 @@ with the "new" patches applied up to number 6 I see the following doctest failur
         sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 44 doctests failed
         sage -t -long devel/sage/sage/schemes/elliptic_curves/sha.py # 23 doctests failed
 ```
-
 They all seem to be of the form
 
 ```
@@ -1523,7 +1511,6 @@ Exception raised:
 **********************************************************************
 1 items had failures:
 ```
-
 
 
 
@@ -1662,7 +1649,7 @@ I can fix all that, but it might not be tonight since I've just got home after a
 archive/issue_comments_025959.json:
 ```json
 {
-    "body": "Replying to [comment:27 mabshoff]:\n> Hi,\n> \n> I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> \n> Cheers,\n> \n> Michael\n\nMichael,\n\nCould you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n\nJohn",
+    "body": "Replying to [comment:27 mabshoff]:\n> Hi,\n> \n> I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> \n> Cheers,\n> \n> Michael\n\n\nMichael,\n\nCould you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n\nJohn",
     "created_at": "2008-08-14T08:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1680,6 +1667,7 @@ Replying to [comment:27 mabshoff]:
 > 
 > Michael
 
+
 Michael,
 
 Could you confirm that there are no problems after all with those "sage -t -long" tests?  They work for me.
@@ -1693,7 +1681,7 @@ John
 archive/issue_comments_025960.json:
 ```json
 {
-    "body": "Replying to [comment:31 cremona]:\n> Replying to [comment:27 mabshoff]:\n> > Hi,\n> > \n> > I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> > \n> > Cheers,\n> > \n> > Michael\n> \n> Michael,\n> \n> Could you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n> \n> John\n\nHi John,\n\nyes, after applying all patches \"sage -t -long\" passes. Otherwise I would not have closed this ticket as fixed :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:31 cremona]:\n> Replying to [comment:27 mabshoff]:\n> > Hi,\n> > \n> > I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> > \n> > Cheers,\n> > \n> > Michael\n\n> \n> Michael,\n> \n> Could you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n> \n> John\n\n\nHi John,\n\nyes, after applying all patches \"sage -t -long\" passes. Otherwise I would not have closed this ticket as fixed :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-14T14:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
@@ -1711,12 +1699,14 @@ Replying to [comment:31 cremona]:
 > > Cheers,
 > > 
 > > Michael
+
 > 
 > Michael,
 > 
 > Could you confirm that there are no problems after all with those "sage -t -long" tests?  They work for me.
 > 
 > John
+
 
 Hi John,
 

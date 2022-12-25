@@ -3,7 +3,7 @@
 archive/issues_009437.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\nKeywords: group, matrix, special linear\n\nSage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).\n\n\n```\nsage: G = SL(2, Zmod(4))\nsage: print G\nsage: list(G)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: variable names have not yet been set using self._assign_names(...)\nerror coercing to finite field\nsage: G.list()\nNameError                                 Traceback (most recent call last)\nNameError: name 'ZmodnZObj' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9437\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\nKeywords: group, matrix, special linear\n\nSage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).\n\n```\nsage: G = SL(2, Zmod(4))\nsage: print G\nsage: list(G)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: variable names have not yet been set using self._assign_names(...)\nerror coercing to finite field\nsage: G.list()\nNameError                                 Traceback (most recent call last)\nNameError: name 'ZmodnZObj' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9437\n\n",
     "created_at": "2010-07-06T15:24:59Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ Keywords: group, matrix, special linear
 
 Sage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).
 
-
 ```
 sage: G = SL(2, Zmod(4))
 sage: print G
@@ -37,7 +36,6 @@ sage: G.list()
 NameError                                 Traceback (most recent call last)
 NameError: name 'ZmodnZObj' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9437
 
@@ -125,7 +123,7 @@ archive/issue_events_023328.json:
 archive/issue_comments_090195.json:
 ```json
 {
-    "body": "With 4.6.rc0 the patch applies and works fine.  But look at these timings:\n\n```\nsage: G = SL(2, Zmod(4))\nsage: time a = list(G)  \nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\nWall time: 1.69 s\nsage: time b = G.list() \nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 20.60 s\n```\n\n\nI'm not letting that stop me giving the patch a positive review, but it suggest that the list() method should be calling whatever the other one uses!\n\nTesting the directory matrix_gps, the file which this patch changes now takes a very long time:\n\n```\nsage -t  \"sage/groups/matrix_gps/matrix_group.py\"           \n\t [263.9 s]\n```\n\nwhereas without the patch:\n\n```\n[240.1s]\n```\n\nIs the extra time just the time of the new doctest (if so, mark it #long time), or are some other doctests now slower?",
+    "body": "With 4.6.rc0 the patch applies and works fine.  But look at these timings:\n\n```\nsage: G = SL(2, Zmod(4))\nsage: time a = list(G)  \nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\nWall time: 1.69 s\nsage: time b = G.list() \nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 20.60 s\n```\n\nI'm not letting that stop me giving the patch a positive review, but it suggest that the list() method should be calling whatever the other one uses!\n\nTesting the directory matrix_gps, the file which this patch changes now takes a very long time:\n\n```\nsage -t  \"sage/groups/matrix_gps/matrix_group.py\"           \n\t [263.9 s]\n```\nwhereas without the patch:\n\n```\n[240.1s]\n```\nIs the extra time just the time of the new doctest (if so, mark it #long time), or are some other doctests now slower?",
     "created_at": "2010-10-28T19:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
@@ -146,7 +144,6 @@ CPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s
 Wall time: 20.60 s
 ```
 
-
 I'm not letting that stop me giving the patch a positive review, but it suggest that the list() method should be calling whatever the other one uses!
 
 Testing the directory matrix_gps, the file which this patch changes now takes a very long time:
@@ -155,13 +152,11 @@ Testing the directory matrix_gps, the file which this patch changes now takes a 
 sage -t  "sage/groups/matrix_gps/matrix_group.py"           
 	 [263.9 s]
 ```
-
 whereas without the patch:
 
 ```
 [240.1s]
 ```
-
 Is the extra time just the time of the new doctest (if so, mark it #long time), or are some other doctests now slower?
 
 

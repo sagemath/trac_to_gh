@@ -3,7 +3,7 @@
 archive/issues_005052.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nIf you have something like the following in a file:\n\n```\ntry:\n    load foo.sage\nexcept:\n    print 'uh oh'\n```\n\nit gets preparsed to this, and blows up because of the bad indentation:\n\n```\ntry:\nexecfile(\"foo.py\")\nexcept:\n    print 'uh oh'\n```\n\nThe preparser is not honoring the leading space before the `load` statement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5052\n\n",
+    "body": "Assignee: cwitty\n\nIf you have something like the following in a file:\n\n```\ntry:\n    load foo.sage\nexcept:\n    print 'uh oh'\n```\nit gets preparsed to this, and blows up because of the bad indentation:\n\n```\ntry:\nexecfile(\"foo.py\")\nexcept:\n    print 'uh oh'\n```\nThe preparser is not honoring the leading space before the `load` statement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5052\n\n",
     "created_at": "2009-01-22T09:03:25Z",
     "labels": [
         "component: misc",
@@ -26,7 +26,6 @@ try:
 except:
     print 'uh oh'
 ```
-
 it gets preparsed to this, and blows up because of the bad indentation:
 
 ```
@@ -35,7 +34,6 @@ execfile("foo.py")
 except:
     print 'uh oh'
 ```
-
 The preparser is not honoring the leading space before the `load` statement.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5052

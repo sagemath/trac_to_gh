@@ -3,7 +3,7 @@
 archive/issues_005044.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nA workaround is to add\n\n\n```\ndef quit(self, verbose=False):\n    if self._expect is None: return\n    os.kill(self._expect.pid, 9)\n    self._expect = None\n```\n\nas the last method to interfaces/mwrank.py to override the builtin quit method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5044\n\n",
+    "body": "Assignee: cwitty\n\nA workaround is to add\n\n```\ndef quit(self, verbose=False):\n    if self._expect is None: return\n    os.kill(self._expect.pid, 9)\n    self._expect = None\n```\nas the last method to interfaces/mwrank.py to override the builtin quit method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5044\n\n",
     "created_at": "2009-01-21T05:59:52Z",
     "labels": [
         "component: misc",
@@ -20,14 +20,12 @@ Assignee: cwitty
 
 A workaround is to add
 
-
 ```
 def quit(self, verbose=False):
     if self._expect is None: return
     os.kill(self._expect.pid, 9)
     self._expect = None
 ```
-
 as the last method to interfaces/mwrank.py to override the builtin quit method.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5044

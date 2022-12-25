@@ -109,7 +109,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066620.json:
 ```json
 {
-    "body": "Worked for me. Looks good. All tests passed.\n\n\n\n```\n3 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.warning_function\n16 items passed all tests:\n  13 tests in __main__.example_0\n   2 tests in __main__.example_1\n   2 tests in __main__.example_10\n   3 tests in __main__.example_11\n   2 tests in __main__.example_12\n   2 tests in __main__.example_13\n   4 tests in __main__.example_14\n   3 tests in __main__.example_15\n   2 tests in __main__.example_2\n   2 tests in __main__.example_3\n   2 tests in __main__.example_4\n   2 tests in __main__.example_5\n   2 tests in __main__.example_6\n   2 tests in __main__.example_7\n   2 tests in __main__.example_8\n   2 tests in __main__.example_9\n47 tests in 19 items.\n47 passed and 0 failed.\nTest passed.\n\t [11.8 s]\n\n```\n\n\nSo positive review.\n\nJaap",
+    "body": "Worked for me. Looks good. All tests passed.\n\n\n```\n3 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.warning_function\n16 items passed all tests:\n  13 tests in __main__.example_0\n   2 tests in __main__.example_1\n   2 tests in __main__.example_10\n   3 tests in __main__.example_11\n   2 tests in __main__.example_12\n   2 tests in __main__.example_13\n   4 tests in __main__.example_14\n   3 tests in __main__.example_15\n   2 tests in __main__.example_2\n   2 tests in __main__.example_3\n   2 tests in __main__.example_4\n   2 tests in __main__.example_5\n   2 tests in __main__.example_6\n   2 tests in __main__.example_7\n   2 tests in __main__.example_8\n   2 tests in __main__.example_9\n47 tests in 19 items.\n47 passed and 0 failed.\nTest passed.\n\t [11.8 s]\n\n```\n\nSo positive review.\n\nJaap",
     "created_at": "2009-12-23T14:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
@@ -119,7 +119,6 @@ archive/issue_comments_066620.json:
 ```
 
 Worked for me. Looks good. All tests passed.
-
 
 
 ```
@@ -150,7 +149,6 @@ Test passed.
 	 [11.8 s]
 
 ```
-
 
 So positive review.
 

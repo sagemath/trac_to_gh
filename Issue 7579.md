@@ -3,7 +3,7 @@
 archive/issues_007579.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\n\n```\n> On both sagenb.org and my personal notebook the revision history for\n> any worksheet is blank. Is revision history no longer supported?\n\nThere is a bug. Thanks for the report!  A workaround is to *explicitly* click on the Save button -- that will  create a revision.  I should fix this.    However does this (likely me, as soon as Sage Days 18 is over I'll be done with everything and can focus totally on the notebook for the rest of the year), should also implement rolling backups (i.e., daily, weekly monthly only, i.e., smart deleting of old snapshots).  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7579\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\n```\n> On both sagenb.org and my personal notebook the revision history for\n> any worksheet is blank. Is revision history no longer supported?\n\nThere is a bug. Thanks for the report!  A workaround is to *explicitly* click on the Save button -- that will  create a revision.  I should fix this.    However does this (likely me, as soon as Sage Days 18 is over I'll be done with everything and can focus totally on the notebook for the rest of the year), should also implement rolling backups (i.e., daily, weekly monthly only, i.e., smart deleting of old snapshots).  \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7579\n\n",
     "created_at": "2009-12-02T04:35:40Z",
     "labels": [
         "component: notebook",
@@ -20,14 +20,12 @@ Assignee: @williamstein
 
 CC:  @fchapoton
 
-
 ```
 > On both sagenb.org and my personal notebook the revision history for
 > any worksheet is blank. Is revision history no longer supported?
 
 There is a bug. Thanks for the report!  A workaround is to *explicitly* click on the Save button -- that will  create a revision.  I should fix this.    However does this (likely me, as soon as Sage Days 18 is over I'll be done with everything and can focus totally on the notebook for the rest of the year), should also implement rolling backups (i.e., daily, weekly monthly only, i.e., smart deleting of old snapshots).  
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7579
 

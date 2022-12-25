@@ -3,7 +3,7 @@
 archive/issues_005142.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\n\nis much faster than \n\n```\nmat.elementary_divisors()\n```\n\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\nis much faster than \n\n```\nmat.elementary_divisors()\n```\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
     "created_at": "2009-01-30T22:30:51Z",
     "labels": [
         "component: linear algebra",
@@ -26,13 +26,11 @@ It seems to me that if mat is a sparse integer matrix, then
 ```
 mat.dense_matrix().elementary_divisors()
 ```
-
 is much faster than 
 
 ```
 mat.elementary_divisors()
 ```
-
 Is this correct?  I've checked this on certain families of matrices, but probably not extensively enough.
 
 If so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.
@@ -147,7 +145,7 @@ Changing assignee from @williamstein to @jhpalmieri.
 archive/issue_comments_039257.json:
 ```json
 {
-    "body": "Hi John,\n\nthis patch does not apply to my 3.3.rc0 merge tree. Please try to rebase it against 3.3.alpha6:\n\n```\nsage-3.3.rc0/devel/sage$ patch -p1 < trac_5142.patch \npatching file sage/matrix/matrix_integer_sparse.pyx\nHunk #1 FAILED at 296.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_integer_sparse.pyx.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Hi John,\n\nthis patch does not apply to my 3.3.rc0 merge tree. Please try to rebase it against 3.3.alpha6:\n\n```\nsage-3.3.rc0/devel/sage$ patch -p1 < trac_5142.patch \npatching file sage/matrix/matrix_integer_sparse.pyx\nHunk #1 FAILED at 296.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_integer_sparse.pyx.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T12:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ patching file sage/matrix/matrix_integer_sparse.pyx
 Hunk #1 FAILED at 296.
 1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_integer_sparse.pyx.rej
 ```
-
 
 Cheers,
 
@@ -251,7 +248,7 @@ The new patch is just a rebase against 3.3.alpha6.
 archive/issue_comments_039260.json:
 ```json
 {
-    "body": "The patch looks good; I have three complaints regarding the docstring:\n\n* in the description of the algorithm 'pari', you presumably mean \"works robustly\", since \"works robustless\" doesn't mean anything\n* this is a one-line method, and it is pretty self-explanatory, so I don't think it needs a description of the implementation in the docstring\n* the OUTPUT description claims that the method returns a list of int's; this is not true, since the output is a list of Integer's\n\nI'll very happily give this a positive review once these issues are resolved.  This patch is a good idea and, as John points out, similar things should be done for other methods for sparse matrices (determinant is another example).  For the record, trying\n\n\n```\nsage: A = random_matrix(ZZ, 100, 100, sparse=True)\nsage: time e = A.elementary_divisors()\n```\n\n\nsimply fails with a mysterious TypeError in the current code, whereas with the patch applied it works in 1.44 seconds.",
+    "body": "The patch looks good; I have three complaints regarding the docstring:\n\n* in the description of the algorithm 'pari', you presumably mean \"works robustly\", since \"works robustless\" doesn't mean anything\n* this is a one-line method, and it is pretty self-explanatory, so I don't think it needs a description of the implementation in the docstring\n* the OUTPUT description claims that the method returns a list of int's; this is not true, since the output is a list of Integer's\n\nI'll very happily give this a positive review once these issues are resolved.  This patch is a good idea and, as John points out, similar things should be done for other methods for sparse matrices (determinant is another example).  For the record, trying\n\n```\nsage: A = random_matrix(ZZ, 100, 100, sparse=True)\nsage: time e = A.elementary_divisors()\n```\n\nsimply fails with a mysterious TypeError in the current code, whereas with the patch applied it works in 1.44 seconds.",
     "created_at": "2009-02-10T13:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
@@ -268,12 +265,10 @@ The patch looks good; I have three complaints regarding the docstring:
 
 I'll very happily give this a positive review once these issues are resolved.  This patch is a good idea and, as John points out, similar things should be done for other methods for sparse matrices (determinant is another example).  For the record, trying
 
-
 ```
 sage: A = random_matrix(ZZ, 100, 100, sparse=True)
 sage: time e = A.elementary_divisors()
 ```
-
 
 simply fails with a mysterious TypeError in the current code, whereas with the patch applied it works in 1.44 seconds.
 

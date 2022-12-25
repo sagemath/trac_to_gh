@@ -148,7 +148,7 @@ Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.p
 archive/issue_comments_093971.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.patch]?\n\nOops, I missed the note in the description.  Sorry!",
+    "body": "Replying to [comment:3 mpatel]:\n> Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.patch]?\n\n\nOops, I missed the note in the description.  Sorry!",
     "created_at": "2010-08-08T04:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
@@ -159,6 +159,7 @@ archive/issue_comments_093971.json:
 
 Replying to [comment:3 mpatel]:
 > Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.patch]?
+
 
 Oops, I missed the note in the description.  Sorry!
 

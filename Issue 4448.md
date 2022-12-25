@@ -3,7 +3,7 @@
 archive/issues_004448.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nTry this interact in the notebook:\n\n```\n@interact\ndef f(n=matrix([[pi^2]])):\n    print n\n```\n\n\nNotice that the matrix input appears empty.  What is happening, I think, is that\nstr(...) is being called on each entry instead of repr(...) which causes uses of ASCII art.   It seems this is a problem only for matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4448\n\n",
+    "body": "Assignee: @itolkov\n\nTry this interact in the notebook:\n\n```\n@interact\ndef f(n=matrix([[pi^2]])):\n    print n\n```\n\nNotice that the matrix input appears empty.  What is happening, I think, is that\nstr(...) is being called on each entry instead of repr(...) which causes uses of ASCII art.   It seems this is a problem only for matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4448\n\n",
     "created_at": "2008-11-05T20:06:02Z",
     "labels": [
         "component: interact",
@@ -25,7 +25,6 @@ Try this interact in the notebook:
 def f(n=matrix([[pi^2]])):
     print n
 ```
-
 
 Notice that the matrix input appears empty.  What is happening, I think, is that
 str(...) is being called on each entry instead of repr(...) which causes uses of ASCII art.   It seems this is a problem only for matrices.

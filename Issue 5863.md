@@ -3,7 +3,7 @@
 archive/issues_005863.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCoverage of some files in algebras:\n\n```\nalgebra_ideal.py: 0% (0 of 19)\nalgebra_ideal_element.py: 0% (0 of 1)\nalgebra_order.py: 0% (0 of 16)\nalgebra_order_element.py: 0% (0 of 13)\nalgebra_order_frac_ideal.py: 0% (0 of 17)\nalgebra_order_ideal.py: 0% (0 of 21)\nalgebra_order_ideal_element.py: 0% (0 of 1)\n```\n\nFurthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5863\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCoverage of some files in algebras:\n\n```\nalgebra_ideal.py: 0% (0 of 19)\nalgebra_ideal_element.py: 0% (0 of 1)\nalgebra_order.py: 0% (0 of 16)\nalgebra_order_element.py: 0% (0 of 13)\nalgebra_order_frac_ideal.py: 0% (0 of 17)\nalgebra_order_ideal.py: 0% (0 of 21)\nalgebra_order_ideal_element.py: 0% (0 of 1)\n```\nFurthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5863\n\n",
     "created_at": "2009-04-23T06:07:02Z",
     "labels": [
         "component: algebra"
@@ -28,7 +28,6 @@ algebra_order_frac_ideal.py: 0% (0 of 17)
 algebra_order_ideal.py: 0% (0 of 21)
 algebra_order_ideal_element.py: 0% (0 of 1)
 ```
-
 Furthermore, these don't seem to be used by any of the rest of the Sage code, so let's delete them.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5863

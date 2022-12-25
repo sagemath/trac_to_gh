@@ -3,7 +3,7 @@
 archive/issues_006059.json:
 ```json
 {
-    "body": "Assignee: @tornaria\n\nCC:  @JohnCremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\n\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
+    "body": "Assignee: @tornaria\n\nCC:  @JohnCremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
     "created_at": "2009-05-17T22:54:54Z",
     "labels": [
         "component: number theory",
@@ -31,7 +31,6 @@ CPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s
 Wall time: 0.68 s
 1
 ```
-
 used to be almost instant before the patch in #5834 (in 4.0.alpha0).
 
 The patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.
@@ -86,7 +85,7 @@ Fix speed regression in hilbert_symbol (revised)
 archive/issue_comments_048151.json:
 ```json
 {
-    "body": "I screwed it up the first version, because I was trying to avoid overhead. The original code, good for integers only (before #5834) was:\n\n```\na = ZZ(a)\n```\n\nMy first version was\n\n```\na = ZZ(a.numerator() * a.denominator())\n```\n\nwhich breaks when `a` is a (python) `int`. The new version is\n\n```\na = QQ(a).numerator() * QQ(a).denominator()\n```\n\nwhich should be safe for all purposes (my first version was in between).\n\nIndeed, I'm a bit concerned about overhead. Compare the trivial\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 10.3 \u00b5s per loop\n```\n\nusing the original code (only good for integers) vs.\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 19.1 \u00b5s per loop\n```\n\nwith the new code (good for rationals).\n\nAnd check out the speed of the actual computation:\n\n```\nsage: a = ZZ.random_element(10^50)\nsage: b = ZZ.random_element(10^50)\nsage: p = next_prime(ZZ.random_element(10^50))\nsage: timeit(\"pari(a).hilbert(b,p)\")\n625 loops, best of 3: 3.13 \u00b5s per loop\n```\n\n\nIs there a standard/suggested way of writing the preamble of a function (where parameters are checked, coerced, etc) to minimize overhead in a fast path?\n(I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).",
+    "body": "I screwed it up the first version, because I was trying to avoid overhead. The original code, good for integers only (before #5834) was:\n\n```\na = ZZ(a)\n```\nMy first version was\n\n```\na = ZZ(a.numerator() * a.denominator())\n```\nwhich breaks when `a` is a (python) `int`. The new version is\n\n```\na = QQ(a).numerator() * QQ(a).denominator()\n```\nwhich should be safe for all purposes (my first version was in between).\n\nIndeed, I'm a bit concerned about overhead. Compare the trivial\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 10.3 \u00b5s per loop\n```\nusing the original code (only good for integers) vs.\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 19.1 \u00b5s per loop\n```\nwith the new code (good for rationals).\n\nAnd check out the speed of the actual computation:\n\n```\nsage: a = ZZ.random_element(10^50)\nsage: b = ZZ.random_element(10^50)\nsage: p = next_prime(ZZ.random_element(10^50))\nsage: timeit(\"pari(a).hilbert(b,p)\")\n625 loops, best of 3: 3.13 \u00b5s per loop\n```\n\nIs there a standard/suggested way of writing the preamble of a function (where parameters are checked, coerced, etc) to minimize overhead in a fast path?\n(I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).",
     "created_at": "2009-05-18T03:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
@@ -100,19 +99,16 @@ I screwed it up the first version, because I was trying to avoid overhead. The o
 ```
 a = ZZ(a)
 ```
-
 My first version was
 
 ```
 a = ZZ(a.numerator() * a.denominator())
 ```
-
 which breaks when `a` is a (python) `int`. The new version is
 
 ```
 a = QQ(a).numerator() * QQ(a).denominator()
 ```
-
 which should be safe for all purposes (my first version was in between).
 
 Indeed, I'm a bit concerned about overhead. Compare the trivial
@@ -121,14 +117,12 @@ Indeed, I'm a bit concerned about overhead. Compare the trivial
 sage: timeit("hilbert_symbol(1,1,-1)")
 625 loops, best of 3: 10.3 µs per loop
 ```
-
 using the original code (only good for integers) vs.
 
 ```
 sage: timeit("hilbert_symbol(1,1,-1)")
 625 loops, best of 3: 19.1 µs per loop
 ```
-
 with the new code (good for rationals).
 
 And check out the speed of the actual computation:
@@ -140,7 +134,6 @@ sage: p = next_prime(ZZ.random_element(10^50))
 sage: timeit("pari(a).hilbert(b,p)")
 625 loops, best of 3: 3.13 µs per loop
 ```
-
 
 Is there a standard/suggested way of writing the preamble of a function (where parameters are checked, coerced, etc) to minimize overhead in a fast path?
 (I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).

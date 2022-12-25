@@ -3,7 +3,7 @@
 archive/issues_001213.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\n\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
+    "body": "Assignee: @williamstein\n\nI think that mpl_wrapper.py is obsolete, dead code.  Nothing else in Sage refers to it, it talks about an optional matplotlib package (when matplotlib has been standard in Sage for quite a while), and it mentions downloading matplotlib from UCSD.\n\nAlso, in mpl_wrapper.py it mentions the \"sage -mpl\" option.  In sage-sage, it says\n\n```\n    echo \"  -mpl          -- run with matplotlib support (requires optional matplotlib package)\"\n```\nbut \"sage -mpl\" does not act obviously different than just \"sage\".  I'm guessing that all the \"-mpl\" stuff should be removed from sage-sage, as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1213\n\n",
     "created_at": "2007-11-20T05:16:21Z",
     "labels": [
         "component: misc",
@@ -26,7 +26,6 @@ Also, in mpl_wrapper.py it mentions the "sage -mpl" option.  In sage-sage, it sa
 ```
     echo "  -mpl          -- run with matplotlib support (requires optional matplotlib package)"
 ```
-
 but "sage -mpl" does not act obviously different than just "sage".  I'm guessing that all the "-mpl" stuff should be removed from sage-sage, as well.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1213
@@ -101,7 +100,7 @@ Michael
 archive/issue_comments_007505.json:
 ```json
 {
-    "body": "We should probably also nuke\n\n```\n-rw-r--r-- 1 mabshoff 1090 16115 2007-12-20 17:13 plot3dsoya.py\n-rw-r--r-- 1 mabshoff 1090  3054 2007-12-20 17:13 plot3dsoya_wrap.py\n```\n\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "We should probably also nuke\n\n```\n-rw-r--r-- 1 mabshoff 1090 16115 2007-12-20 17:13 plot3dsoya.py\n-rw-r--r-- 1 mabshoff 1090  3054 2007-12-20 17:13 plot3dsoya_wrap.py\n```\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-05-24T02:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1213",
     "type": "issue_comment",
@@ -116,7 +115,6 @@ We should probably also nuke
 -rw-r--r-- 1 mabshoff 1090 16115 2007-12-20 17:13 plot3dsoya.py
 -rw-r--r-- 1 mabshoff 1090  3054 2007-12-20 17:13 plot3dsoya_wrap.py
 ```
-
 
 Thoughts?
 

@@ -3,7 +3,7 @@
 archive/issues_008280.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen trying to build sage on cygwin, I had to do this:\n\n\n```\nwstein@winxp ~/build/sage-4.3.3.alpha0/local/lib\n$ ln -s libzn_poly.so libzn_poly.dll\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8280\n\n",
+    "body": "Assignee: tbd\n\nWhen trying to build sage on cygwin, I had to do this:\n\n```\nwstein@winxp ~/build/sage-4.3.3.alpha0/local/lib\n$ ln -s libzn_poly.so libzn_poly.dll\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8280\n\n",
     "created_at": "2010-02-16T02:08:16Z",
     "labels": [
         "component: porting: cygwin",
@@ -20,12 +20,10 @@ Assignee: tbd
 
 When trying to build sage on cygwin, I had to do this:
 
-
 ```
 wstein@winxp ~/build/sage-4.3.3.alpha0/local/lib
 $ ln -s libzn_poly.so libzn_poly.dll
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8280
 
@@ -74,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073198.json:
 ```json
 {
-    "body": "What is the purpose of this change?\n\n```\n-#!/usr/bin/env bash\n+B#!/usr/bin/env bash\n```\n",
+    "body": "What is the purpose of this change?\n\n```\n-#!/usr/bin/env bash\n+B#!/usr/bin/env bash\n```",
     "created_at": "2010-02-16T07:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8280",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ What is the purpose of this change?
 -#!/usr/bin/env bash
 +B#!/usr/bin/env bash
 ```
-
 
 
 

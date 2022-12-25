@@ -3,7 +3,7 @@
 archive/issues_007999.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI built Sage 4.3.1.rc1 from source and then produced a sage.math binary. Loading the binary resulted in the following SyntaxError:\n\n```\nSyntaxError: Non-ASCII character '\\xc3' in file /dev/shm/mvngu/sage-4.3.1.rc1-dev/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py on line 5448, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details (ell_rational_field.py, line 5447)\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\nThe guilty line is line 5447:\n\n```\n           modular forms. Ast\u00e9risque, (295):ix, 117-290, 2004.                  \n```\n\nof `sage/schemes/elliptic_curves/ell_rational_field.py`, which doesn't have the following preamble to indicate that the file has non-ASCII characters:\n\n```\n# -*- coding: utf-8 -*-\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7999\n\n",
+    "body": "Assignee: tbd\n\nI built Sage 4.3.1.rc1 from source and then produced a sage.math binary. Loading the binary resulted in the following SyntaxError:\n\n```\nSyntaxError: Non-ASCII character '\\xc3' in file /dev/shm/mvngu/sage-4.3.1.rc1-dev/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py on line 5448, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details (ell_rational_field.py, line 5447)\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\nThe guilty line is line 5447:\n\n```\n           modular forms. Ast\u00e9risque, (295):ix, 117-290, 2004.                  \n```\nof `sage/schemes/elliptic_curves/ell_rational_field.py`, which doesn't have the following preamble to indicate that the file has non-ASCII characters:\n\n```\n# -*- coding: utf-8 -*-\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7999\n\n",
     "created_at": "2010-01-19T15:29:25Z",
     "labels": [
         "component: misc",
@@ -26,19 +26,16 @@ SyntaxError: Non-ASCII character '\xc3' in file /dev/shm/mvngu/sage-4.3.1.rc1-de
 Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 ```
-
 The guilty line is line 5447:
 
 ```
            modular forms. Astérisque, (295):ix, 117-290, 2004.                  
 ```
-
 of `sage/schemes/elliptic_curves/ell_rational_field.py`, which doesn't have the following preamble to indicate that the file has non-ASCII characters:
 
 ```
 # -*- coding: utf-8 -*-
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7999
 

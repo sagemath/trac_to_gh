@@ -68,7 +68,7 @@ archive/issue_events_004774.json:
 archive/issue_comments_012761.json:
 ```json
 {
-    "body": "> ... and Ed Sullivan died in 1974.\n\nAnd I was born in 1974!\n\nAnyway, referee report here:  it works perfectly.",
+    "body": "> ... and Ed Sullivan died in 1974.\n\n\nAnd I was born in 1974!\n\nAnyway, referee report here:  it works perfectly.",
     "created_at": "2008-03-16T20:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1974",
     "type": "issue_comment",
@@ -78,6 +78,7 @@ archive/issue_comments_012761.json:
 ```
 
 > ... and Ed Sullivan died in 1974.
+
 
 And I was born in 1974!
 

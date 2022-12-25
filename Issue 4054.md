@@ -3,7 +3,7 @@
 archive/issues_004054.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn my MacBook Pro, before this patch:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n\t [117.4 s]\nsage -t -long devel/sage-main/sage/graphs/graph_generators.py\n\t [242.7 s]\n```\n\n\nAnd after this patch:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n\t [20.7 s]\nsage -t -long devel/sage-main/sage/graphs/graph_generators.py\n\t [86.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4054\n\n",
+    "body": "Assignee: tbd\n\nOn my MacBook Pro, before this patch:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n\t [117.4 s]\nsage -t -long devel/sage-main/sage/graphs/graph_generators.py\n\t [242.7 s]\n```\n\nAnd after this patch:\n\n```\nsage -t  devel/sage-main/sage/graphs/graph_generators.py    \n\t [20.7 s]\nsage -t -long devel/sage-main/sage/graphs/graph_generators.py\n\t [86.9 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4054\n\n",
     "created_at": "2008-09-03T22:53:32Z",
     "labels": [
         "component: algebra",
@@ -27,7 +27,6 @@ sage -t -long devel/sage-main/sage/graphs/graph_generators.py
 	 [242.7 s]
 ```
 
-
 And after this patch:
 
 ```
@@ -36,7 +35,6 @@ sage -t  devel/sage-main/sage/graphs/graph_generators.py
 sage -t -long devel/sage-main/sage/graphs/graph_generators.py
 	 [86.9 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4054
 

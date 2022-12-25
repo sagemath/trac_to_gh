@@ -3,7 +3,7 @@
 archive/issues_005716.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: a = random_matrix(GF(3),4)\nsage: a.subdivide(2,2)\nsage: a\n[2 0|0 2]\n[2 1|1 0]\n[---+---]\n[1 2|1 0]\n[1 0|0 1]\nsage: a.lift()\n[2 0 0 2]\n[2 1 1 0]\n[1 2 1 0]\n[1 0 0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5716\n\n",
     "created_at": "2009-04-08T19:18:52Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  @jasongrout
 
-
 ```
 sage: a = random_matrix(GF(3),4)
 sage: a.subdivide(2,2)
@@ -36,7 +35,6 @@ sage: a.lift()
 [1 2 1 0]
 [1 0 0 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5716
 

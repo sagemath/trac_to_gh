@@ -3,7 +3,7 @@
 archive/issues_005711.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @burcin @jasongrout @jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_lapse\" are now typeset within Sage itself.\n\nEx:  psi(x).conjugate()  =>    {\\psi}^*(x)\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) Allows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n\n(5)  If the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\nNote: You need to apply a small patch\n\nhttp://trac.sagemath.org/sage_trac/ticket/5678\n\nbefore you apply the attached patch. This patch is\ncreated using sage-3.4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @burcin @jasongrout @jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_lapse\" are now typeset within Sage itself.\n\nEx:  psi(x).conjugate()  =>    {\\psi}^*(x)\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) Allows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n(5)  If the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\nNote: You need to apply a small patch\n\nhttp://trac.sagemath.org/sage_trac/ticket/5678\n\nbefore you apply the attached patch. This patch is\ncreated using sage-3.4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
     "created_at": "2009-04-08T11:55:14Z",
     "labels": [
         "component: misc"
@@ -51,7 +51,6 @@ the class SymbolicFunctionEvaluation.
 
 Ex: 
 
-
 ```
 var('t');
 hubble(t) = function('hubble',t)
@@ -60,7 +59,6 @@ hubble(t).set_latex('\\mathcal{H}')
 #To reset custom LaTeX expression
 hubble(t).set_latex()
 ```
-
 
 (5)  If the arguments of a symbolic function are all symbolic
 variables then typesetting will avoid using \left(, \right).
@@ -140,7 +138,7 @@ Patch doesn't apply cleanly against 4.0.1.
 archive/issue_comments_044528.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> Patch doesn't apply cleanly against 4.0.1.\n\nYes, recent switch to new symbolics has affected this patch quite a bit.\nIn fact, the class \"SymbolicFunctionEvaluation\" (whose enhancement was aimed\nthrough this patch) doesn't exist anymore. I am now looking into the \nnew symbolics code to properly rebase the patch.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> Patch doesn't apply cleanly against 4.0.1.\n\n\nYes, recent switch to new symbolics has affected this patch quite a bit.\nIn fact, the class \"SymbolicFunctionEvaluation\" (whose enhancement was aimed\nthrough this patch) doesn't exist anymore. I am now looking into the \nnew symbolics code to properly rebase the patch.",
     "created_at": "2009-06-09T22:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -151,6 +149,7 @@ archive/issue_comments_044528.json:
 
 Replying to [comment:4 jhpalmieri]:
 > Patch doesn't apply cleanly against 4.0.1.
+
 
 Yes, recent switch to new symbolics has affected this patch quite a bit.
 In fact, the class "SymbolicFunctionEvaluation" (whose enhancement was aimed
@@ -188,7 +187,7 @@ Great work from my view!  Except I almost always declare my function f(x)=x^2, n
 archive/issue_comments_044530.json:
 ```json
 {
-    "body": "This patch does not pass doctests on sage.math:\n\n```\nsage -t  \"devel/sage/sage/symbolic/function.pyx\"            \n**********************************************************************\nFile \"/scratch/palmieri/sage-4.0.1/devel/sage/sage/symbolic/function.pyx\", line 121:\n    sage: latex(foo(x,y^z))\nExpected:\n    \\mbox{t}\\left(x, y^{z}\\right)\nGot:\n    t\\left(x, y^{z}\\right)\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.0.1/devel/sage/sage/symbolic/function.pyx\", line 129:\n    sage: latex(foo(x,y^z))\nExpected:\n    \\mbox{foo}\\left(x, y^{z}\\right)\nGot:\n    foo\\left(x, y^{z}\\right)\n**********************************************************************\n1 items had failures:\n   2 of  45 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/palmieri/sage-4.0.1/tmp/.doctest_function.py\n\t [1.2 s]\nexit code: 1024\n```\n\nShould be easy enough to fix.",
+    "body": "This patch does not pass doctests on sage.math:\n\n```\nsage -t  \"devel/sage/sage/symbolic/function.pyx\"            \n**********************************************************************\nFile \"/scratch/palmieri/sage-4.0.1/devel/sage/sage/symbolic/function.pyx\", line 121:\n    sage: latex(foo(x,y^z))\nExpected:\n    \\mbox{t}\\left(x, y^{z}\\right)\nGot:\n    t\\left(x, y^{z}\\right)\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.0.1/devel/sage/sage/symbolic/function.pyx\", line 129:\n    sage: latex(foo(x,y^z))\nExpected:\n    \\mbox{foo}\\left(x, y^{z}\\right)\nGot:\n    foo\\left(x, y^{z}\\right)\n**********************************************************************\n1 items had failures:\n   2 of  45 in __main__.example_2\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/palmieri/sage-4.0.1/tmp/.doctest_function.py\n\t [1.2 s]\nexit code: 1024\n```\nShould be easy enough to fix.",
     "created_at": "2009-06-12T23:10:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -223,7 +222,6 @@ For whitespace errors, see the file /scratch/palmieri/sage-4.0.1/tmp/.doctest_fu
 	 [1.2 s]
 exit code: 1024
 ```
-
 Should be easy enough to fix.
 
 
@@ -269,7 +267,7 @@ Thanks! I have fixed these two doctest failure and updated the rebased patch.
 archive/issue_comments_044533.json:
 ```json
 {
-    "body": "Thanks kcrisman! As you have suggested, I would also prefer to fix only the blockers \nin this patch and leave other enhancements for follow-up patches. \n\n>  1. Some stuff still doesn't work, but I don't know if it did before.  For instance, sqrt(mu) is okay, but e^(sqrt(mu)) is not, or even e^(sqrt(x)).  So #6211 can't be closed, not that you claimed it could - but it would fit naturally here.  Check out show(e^function(f_mu,x)) for a real kick.\n\nThis seems to be a bug for \"exp\" function. Other functions such as \"abs\", \"sin\" etc work fine. I have posted\nmy comments there with a easy fix. It would be better to have a separate patch for that bug.",
+    "body": "Thanks kcrisman! As you have suggested, I would also prefer to fix only the blockers \nin this patch and leave other enhancements for follow-up patches. \n\n>  1. Some stuff still doesn't work, but I don't know if it did before.  For instance, sqrt(mu) is okay, but e^(sqrt(mu)) is not, or even e^(sqrt(x)).  So #6211 can't be closed, not that you claimed it could - but it would fit naturally here.  Check out show(e^function(f_mu,x)) for a real kick.\n\n\nThis seems to be a bug for \"exp\" function. Other functions such as \"abs\", \"sin\" etc work fine. I have posted\nmy comments there with a easy fix. It would be better to have a separate patch for that bug.",
     "created_at": "2009-06-13T12:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -282,6 +280,7 @@ Thanks kcrisman! As you have suggested, I would also prefer to fix only the bloc
 in this patch and leave other enhancements for follow-up patches. 
 
 >  1. Some stuff still doesn't work, but I don't know if it did before.  For instance, sqrt(mu) is okay, but e^(sqrt(mu)) is not, or even e^(sqrt(x)).  So #6211 can't be closed, not that you claimed it could - but it would fit naturally here.  Check out show(e^function(f_mu,x)) for a real kick.
+
 
 This seems to be a bug for "exp" function. Other functions such as "abs", "sin" etc work fine. I have posted
 my comments there with a easy fix. It would be better to have a separate patch for that bug.
@@ -311,7 +310,7 @@ Changing component from misc to symbolics.
 archive/issue_comments_044535.json:
 ```json
 {
-    "body": "Hi Golam,\n\nThanks for your continued work on this. I see that your patch improves the typesetting of symbolic functions dramatically. I believe with a few improvements it would fit better in the new symbolics framework.\n\nHere is my referee report:\n\nQuotes from the description:\n> \n> (2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n> \"laplace\", \"inverse_laplace\" are now typeset within Sage itself.\n> \n> Ex:  integrate(f(x),x)  =>    \\int f(x) dx\n\nThese should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. Special casing them in the new `latex_symbolic_function()` function is not scalable. This approach would also make the checks for the number of arguments as well as the calls to `_symbolic_function_default_latex_()` in each of these functions redundant.\n\nI see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. I think the best solution for the short term would be to put these printing functions there, and give them as an argument to the `SFunction` constructor.\n\nConjugates are already printed as:\n\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\n\nWhy is `\\overline` better?\n\n> (6) **[New in the rebased patch]** New symbolics uses \"D\" \n> format for derivatives instead of old \"diff\" format. \n> The rebased patch typesets symbolic derivatives in old \"diff\" format by default as in this format typeset version looks similar to those found in text books, journals.\n> \n> However see this thread for known limitations of current conversion between these two formats\n>  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n> \n> One can switch between two typesetting format as follows\n> \n> {{{\n> f(x) = function('f',x)\n> g = diff(f(x),x)\n> latex(g) \n> \\frac{d f\\left(x\\right)}{d x}\n> # Switch to D format\n> sage.symbolic.pynac.typeset_d_as_diff=False\n> latex(g)\n> D[0]f\\left(x\\right)\n> }}}\n\nI believe this issue needs more debate, preferably with examples of how Maple and MMA handle this problem. I will post a new message about this to sage-devel soon. For now, I suggest we split this to a different ticket.\n\n> (1) Symbolics functions with name in Greek letters (with possible\n> suffixes), are typeset nicely in LaTeX.\n> \n> Ex:  psi(x)  =>  \\psi(x)\n>      f0(x)  =>  f_0(x)\n\nCan't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?\n\n> (3) Default (fall-back) typesetting for unknown functions (as\n> in Maxima).\n> \n> Ex:  myfn(x)   =>  {\\it myfn}(x)\n\nWe have the GiNaC convention of falling back to `\\mbox` at the moment. Previously, maxima didn't do anything for function names with one variable, and added an `\\it`:\n\n\n```\nsage: version()\n'Sage Version 3.4.2, Release Date: 2009-05-05'\nsage: var('a')\na\nsage: f = function('f')\nsage: latex(f(a))\nf\\left(a\\right)\n\n```\n\n\nAs you mention in the docstring for `latex_function_name()`, there is considerable code duplication between this function and `latex_variable_name()`. Your previous response to my question about the differences between these two functions is here:\n\nhttp://groups.google.com/group/sage-devel/msg/071207efa39c5356\n\nIt seems that your goal of returning a different response as default behavior can be achieved by passing a parameter to the `latex_varify()` calls at the end of `latex_variable_name()`. Is there a reason why the further recursions performed by `latex_variable_name()` are not relevant for function names? In any case, the string processing code in `latex_variable_name()` shouldn't be duplicated.\n\n> (7) **[New in the rebased patch]**  The rebased patch resolves\n> the issue\n> \n> http://trac.sagemath.org/sage_trac/ticket/6268\n\nThis seems to be caused by a thinko on my part. It can be fixed by modifying lines 416-149 in `sage/symbolic/pynac.pyx`. You seem to do something similar at the end of `latex_symbolic_function()` and `_symbolic_function_default_latex_()` functions.\n\n\nOverall I think the patch looks very crowded and confusing. With the changes suggested above, \n* the new functions  `latex_symbolic_function()`, `_symbolic_function_default_latex_()`, `_args_latex_()`, can be eliminated.\n* derivative related functions `latex_d_derivative()` and `_derivative_latex_()` should be split to a new ticket.\n* specialized printing functions `_integrate_latex_()`, `_inverse_laplace_latex_()`, `_laplace_latex_()`, `_limit_latex_()` should be moved to `sage/calculus/calculus.py` and hooked up to the right `sage.symbolic.function.SFunction` instance.\n* `_conjugate_latex_()` doesn't seem necessary.",
+    "body": "Hi Golam,\n\nThanks for your continued work on this. I see that your patch improves the typesetting of symbolic functions dramatically. I believe with a few improvements it would fit better in the new symbolics framework.\n\nHere is my referee report:\n\nQuotes from the description:\n> \n> (2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n> \"laplace\", \"inverse_laplace\" are now typeset within Sage itself.\n> \n> Ex:  integrate(f(x),x)  =>    \\int f(x) dx\n\n\nThese should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. Special casing them in the new `latex_symbolic_function()` function is not scalable. This approach would also make the checks for the number of arguments as well as the calls to `_symbolic_function_default_latex_()` in each of these functions redundant.\n\nI see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. I think the best solution for the short term would be to put these printing functions there, and give them as an argument to the `SFunction` constructor.\n\nConjugates are already printed as:\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\nWhy is `\\overline` better?\n\n> (6) **[New in the rebased patch]** New symbolics uses \"D\" \n> format for derivatives instead of old \"diff\" format. \n> The rebased patch typesets symbolic derivatives in old \"diff\" format by default as in this format typeset version looks similar to those found in text books, journals.\n> \n> However see this thread for known limitations of current conversion between these two formats\n>  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n> \n> One can switch between two typesetting format as follows\n> \n> \n> ```\n> f(x) = function('f',x)\n> g = diff(f(x),x)\n> latex(g) \n> \\frac{d f\\left(x\\right)}{d x}\n> # Switch to D format\n> sage.symbolic.pynac.typeset_d_as_diff=False\n> latex(g)\n> D[0]f\\left(x\\right)\n> ```\n\n\nI believe this issue needs more debate, preferably with examples of how Maple and MMA handle this problem. I will post a new message about this to sage-devel soon. For now, I suggest we split this to a different ticket.\n\n> (1) Symbolics functions with name in Greek letters (with possible\n> suffixes), are typeset nicely in LaTeX.\n> \n> Ex:  psi(x)  =>  \\psi(x)\n>      f0(x)  =>  f_0(x)\n\n\nCan't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?\n\n> (3) Default (fall-back) typesetting for unknown functions (as\n> in Maxima).\n> \n> Ex:  myfn(x)   =>  {\\it myfn}(x)\n\n\nWe have the GiNaC convention of falling back to `\\mbox` at the moment. Previously, maxima didn't do anything for function names with one variable, and added an `\\it`:\n\n```\nsage: version()\n'Sage Version 3.4.2, Release Date: 2009-05-05'\nsage: var('a')\na\nsage: f = function('f')\nsage: latex(f(a))\nf\\left(a\\right)\n\n```\n\nAs you mention in the docstring for `latex_function_name()`, there is considerable code duplication between this function and `latex_variable_name()`. Your previous response to my question about the differences between these two functions is here:\n\nhttp://groups.google.com/group/sage-devel/msg/071207efa39c5356\n\nIt seems that your goal of returning a different response as default behavior can be achieved by passing a parameter to the `latex_varify()` calls at the end of `latex_variable_name()`. Is there a reason why the further recursions performed by `latex_variable_name()` are not relevant for function names? In any case, the string processing code in `latex_variable_name()` shouldn't be duplicated.\n\n> (7) **[New in the rebased patch]**  The rebased patch resolves\n> the issue\n> \n> http://trac.sagemath.org/sage_trac/ticket/6268\n\n\nThis seems to be caused by a thinko on my part. It can be fixed by modifying lines 416-149 in `sage/symbolic/pynac.pyx`. You seem to do something similar at the end of `latex_symbolic_function()` and `_symbolic_function_default_latex_()` functions.\n\n\nOverall I think the patch looks very crowded and confusing. With the changes suggested above, \n* the new functions  `latex_symbolic_function()`, `_symbolic_function_default_latex_()`, `_args_latex_()`, can be eliminated.\n* derivative related functions `latex_d_derivative()` and `_derivative_latex_()` should be split to a new ticket.\n* specialized printing functions `_integrate_latex_()`, `_inverse_laplace_latex_()`, `_laplace_latex_()`, `_limit_latex_()` should be moved to `sage/calculus/calculus.py` and hooked up to the right `sage.symbolic.function.SFunction` instance.\n* `_conjugate_latex_()` doesn't seem necessary.",
     "created_at": "2009-06-14T14:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -333,18 +332,17 @@ Quotes from the description:
 > 
 > Ex:  integrate(f(x),x)  =>    \int f(x) dx
 
+
 These should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. Special casing them in the new `latex_symbolic_function()` function is not scalable. This approach would also make the checks for the number of arguments as well as the calls to `_symbolic_function_default_latex_()` in each of these functions redundant.
 
 I see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. I think the best solution for the short term would be to put these printing functions there, and give them as an argument to the `SFunction` constructor.
 
 Conjugates are already printed as:
 
-
 ```
 sage: latex(x.conjugate())
 \bar{x}
 ```
-
 
 Why is `\overline` better?
 
@@ -357,7 +355,8 @@ Why is `\overline` better?
 > 
 > One can switch between two typesetting format as follows
 > 
-> {{{
+> 
+> ```
 > f(x) = function('f',x)
 > g = diff(f(x),x)
 > latex(g) 
@@ -366,7 +365,8 @@ Why is `\overline` better?
 > sage.symbolic.pynac.typeset_d_as_diff=False
 > latex(g)
 > D[0]f\left(x\right)
-> }}}
+> ```
+
 
 I believe this issue needs more debate, preferably with examples of how Maple and MMA handle this problem. I will post a new message about this to sage-devel soon. For now, I suggest we split this to a different ticket.
 
@@ -376,6 +376,7 @@ I believe this issue needs more debate, preferably with examples of how Maple an
 > Ex:  psi(x)  =>  \psi(x)
 >      f0(x)  =>  f_0(x)
 
+
 Can't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?
 
 > (3) Default (fall-back) typesetting for unknown functions (as
@@ -383,8 +384,8 @@ Can't this be handled by a call to the new `latex_function_name()` from `sage.sy
 > 
 > Ex:  myfn(x)   =>  {\it myfn}(x)
 
-We have the GiNaC convention of falling back to `\mbox` at the moment. Previously, maxima didn't do anything for function names with one variable, and added an `\it`:
 
+We have the GiNaC convention of falling back to `\mbox` at the moment. Previously, maxima didn't do anything for function names with one variable, and added an `\it`:
 
 ```
 sage: version()
@@ -397,7 +398,6 @@ f\left(a\right)
 
 ```
 
-
 As you mention in the docstring for `latex_function_name()`, there is considerable code duplication between this function and `latex_variable_name()`. Your previous response to my question about the differences between these two functions is here:
 
 http://groups.google.com/group/sage-devel/msg/071207efa39c5356
@@ -408,6 +408,7 @@ It seems that your goal of returning a different response as default behavior ca
 > the issue
 > 
 > http://trac.sagemath.org/sage_trac/ticket/6268
+
 
 This seems to be caused by a thinko on my part. It can be fixed by modifying lines 416-149 in `sage/symbolic/pynac.pyx`. You seem to do something similar at the end of `latex_symbolic_function()` and `_symbolic_function_default_latex_()` functions.
 
@@ -425,7 +426,7 @@ Overall I think the patch looks very crowded and confusing. With the changes sug
 archive/issue_comments_044536.json:
 ```json
 {
-    "body": "Thanks Burcin for your detailed review. See below for my responses. I would be happy to\nhear you back before I start making some of the changes, you have suggested.\n\n\n\n> > (2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n> > \"laplace\", \"inverse_laplace\" are now typeset within Sage itself.\n> These should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. \n\n\nI fully agree! However, does new symbolics has such framework ready for the mentioned functions?\n\n\n> I see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. \n> I think the best solution for the short term would be to put these printing functions \n> there, and give them as an argument to the `SFunction` constructor.\n\nCould you please give an short example for such construction (my current understanding \nof new symbolics is limited)? \n\nWhat is your \"long-term\" solution? \n\nWhy is it better to put these functions in calculus/calculus.py \neven as a \"short term\" solution?  (I gather from William's note http://480.sagenb.org/home/pub/45/ that \n\"calculus\" direcotory is to be deleted. This conflicts with your suggestion.)\n\n\n> {{{\n> sage: latex(x.conjugate())\n> \\bar{x}\n> }}}\n> \n> Why is `\\overline` better?\n\n\n\"\\bar\" is ok for variable but is insufficient for symbolic functions. Please try the\nfollowings in the notebook: \n\n```\njsmath('\\\\bar{\\\\psi\\\\left(x, y\\\\right)}') \njsmath('\\\\overline{\\\\psi\\\\left(x, y\\\\right)}') \n```\n\nthen you will see the reason yourself.\n\n \n> > (6) **[New in the rebased patch]** New symbolics uses \"D\"  format \n> I believe this issue needs more debate, \n> I suggest we split this to a different ticket.\n\n\nSure, I will open a new ticket for this.\n\n\n> \n> > (1) Symbolics functions with name in Greek letters (with possible\n> > suffixes), are typeset nicely in LaTeX.\n> > \n> > Ex:  psi(x)  =>  \\psi(x)\n> >      f0(x)  =>  f_0(x)\n> \n> Can't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?\n\n\nProvided all other symbolic \"functions\" (\"integrate\",...) have been typeset \nsomewhere else which is not the case at present.\n\n\n> > (3) Default (fall-back) typesetting for unknown functions (as\n> > in Maxima).\n> > \n> > Ex:  myfn(x)   =>  {\\it myfn}(x)\n> \n> We have the GiNaC convention of falling back to `\\mbox` at the moment. \n\n\nFrankly, it is disappointing to see another inconsistent typesetting.\n \nWhy should a function named \"sin\" should be typseset as \"\\sin\" (=>\"\\rm sin\")\nwhere as another function named \"mysin\" is typeset as \"\\mbox{mysin}\"? Please compare \nthem side-by-side to see the contrast.\n\n\n> Previously, maxima didn't do anything for function names with one variable, and added an `\\it`:\n\n\nSo as in this patch!  Though, I wanted to use \"\\rm\" as {\\rm myfunc} but decided to\nstick to maxima usage.\n\n\n\n> As you mention in the docstring for `latex_function_name()`, there is \n> considerable code duplication between this function and `latex_variable_name()`. \n\n\nI agree that we should avoid duplication of code. \n\n\n> Is there a reason why the further recursions performed by `latex_variable_name()` \n> are not relevant for function names? \n\n\nIn physics, we often use functions such as \"f_{\\alpha\\beta}\". In sage, if I use\ncurrent latex_variable_name() to typeset \"f_alpha_beta\" then it would typeset \nas f_{{\\alpha}_{\\beta}} which is completely different. \n\nHowever I guees, thats my own preference and I shouldn't argue anymore on this.\nI guess #6290 will solve my problem altogether.\n\nI will remove latex_function_name() and use latex_variable_name() instead.",
+    "body": "Thanks Burcin for your detailed review. See below for my responses. I would be happy to\nhear you back before I start making some of the changes, you have suggested.\n\n\n\n> > (2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n> > \"laplace\", \"inverse_laplace\" are now typeset within Sage itself.\n\n> These should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. \n\n\nI fully agree! However, does new symbolics has such framework ready for the mentioned functions?\n\n\n> I see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. \n> I think the best solution for the short term would be to put these printing functions \n> there, and give them as an argument to the `SFunction` constructor.\n\n\nCould you please give an short example for such construction (my current understanding \nof new symbolics is limited)? \n\nWhat is your \"long-term\" solution? \n\nWhy is it better to put these functions in calculus/calculus.py \neven as a \"short term\" solution?  (I gather from William's note http://480.sagenb.org/home/pub/45/ that \n\"calculus\" direcotory is to be deleted. This conflicts with your suggestion.)\n\n\n> {{{\n> sage: latex(x.conjugate())\n> \\bar{x}\n> }}}\n> \n> Why is `\\overline` better?\n\n\n\n\"\\bar\" is ok for variable but is insufficient for symbolic functions. Please try the\nfollowings in the notebook: \n\n```\njsmath('\\\\bar{\\\\psi\\\\left(x, y\\\\right)}') \njsmath('\\\\overline{\\\\psi\\\\left(x, y\\\\right)}') \n```\nthen you will see the reason yourself.\n\n \n> > (6) **[New in the rebased patch]** New symbolics uses \"D\"  format \n\n> I believe this issue needs more debate, \n> I suggest we split this to a different ticket.\n\n\n\nSure, I will open a new ticket for this.\n\n\n> \n> > (1) Symbolics functions with name in Greek letters (with possible\n> > suffixes), are typeset nicely in LaTeX.\n> > \n> > Ex:  psi(x)  =>  \\psi(x)\n> >      f0(x)  =>  f_0(x)\n\n> \n> Can't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?\n\n\n\nProvided all other symbolic \"functions\" (\"integrate\",...) have been typeset \nsomewhere else which is not the case at present.\n\n\n> > (3) Default (fall-back) typesetting for unknown functions (as\n> > in Maxima).\n> > \n> > Ex:  myfn(x)   =>  {\\it myfn}(x)\n\n> \n> We have the GiNaC convention of falling back to `\\mbox` at the moment. \n\n\n\nFrankly, it is disappointing to see another inconsistent typesetting.\n \nWhy should a function named \"sin\" should be typseset as \"\\sin\" (=>\"\\rm sin\")\nwhere as another function named \"mysin\" is typeset as \"\\mbox{mysin}\"? Please compare \nthem side-by-side to see the contrast.\n\n\n> Previously, maxima didn't do anything for function names with one variable, and added an `\\it`:\n\n\n\nSo as in this patch!  Though, I wanted to use \"\\rm\" as {\\rm myfunc} but decided to\nstick to maxima usage.\n\n\n\n> As you mention in the docstring for `latex_function_name()`, there is \n> considerable code duplication between this function and `latex_variable_name()`. \n\n\n\nI agree that we should avoid duplication of code. \n\n\n> Is there a reason why the further recursions performed by `latex_variable_name()` \n> are not relevant for function names? \n\n\n\nIn physics, we often use functions such as \"f_{\\alpha\\beta}\". In sage, if I use\ncurrent latex_variable_name() to typeset \"f_alpha_beta\" then it would typeset \nas f_{{\\alpha}_{\\beta}} which is completely different. \n\nHowever I guees, thats my own preference and I shouldn't argue anymore on this.\nI guess #6290 will solve my problem altogether.\n\nI will remove latex_function_name() and use latex_variable_name() instead.",
     "created_at": "2009-06-15T01:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -441,6 +442,7 @@ hear you back before I start making some of the changes, you have suggested.
 
 > > (2) Functions such as "diff", "integrate", "limit", "conjugate",
 > > "laplace", "inverse_laplace" are now typeset within Sage itself.
+
 > These should be handled using the custom printing facilities of `sage.symbolic.function.SFunction`. 
 
 
@@ -450,6 +452,7 @@ I fully agree! However, does new symbolics has such framework ready for the ment
 > I see that there is already a `_limit` function defined in `sage/calculus/calculus.py`. 
 > I think the best solution for the short term would be to put these printing functions 
 > there, and give them as an argument to the `SFunction` constructor.
+
 
 Could you please give an short example for such construction (my current understanding 
 of new symbolics is limited)? 
@@ -469,6 +472,7 @@ even as a "short term" solution?  (I gather from William's note http://480.sagen
 > Why is `\overline` better?
 
 
+
 "\bar" is ok for variable but is insufficient for symbolic functions. Please try the
 followings in the notebook: 
 
@@ -476,13 +480,14 @@ followings in the notebook:
 jsmath('\\bar{\\psi\\left(x, y\\right)}') 
 jsmath('\\overline{\\psi\\left(x, y\\right)}') 
 ```
-
 then you will see the reason yourself.
 
  
 > > (6) **[New in the rebased patch]** New symbolics uses "D"  format 
+
 > I believe this issue needs more debate, 
 > I suggest we split this to a different ticket.
+
 
 
 Sure, I will open a new ticket for this.
@@ -494,8 +499,10 @@ Sure, I will open a new ticket for this.
 > > 
 > > Ex:  psi(x)  =>  \psi(x)
 > >      f0(x)  =>  f_0(x)
+
 > 
 > Can't this be handled by a call to the new `latex_function_name()` from `sage.symbolic.pynac.py_latex_function_pystring()`?
+
 
 
 Provided all other symbolic "functions" ("integrate",...) have been typeset 
@@ -506,8 +513,10 @@ somewhere else which is not the case at present.
 > > in Maxima).
 > > 
 > > Ex:  myfn(x)   =>  {\it myfn}(x)
+
 > 
 > We have the GiNaC convention of falling back to `\mbox` at the moment. 
+
 
 
 Frankly, it is disappointing to see another inconsistent typesetting.
@@ -520,6 +529,7 @@ them side-by-side to see the contrast.
 > Previously, maxima didn't do anything for function names with one variable, and added an `\it`:
 
 
+
 So as in this patch!  Though, I wanted to use "\rm" as {\rm myfunc} but decided to
 stick to maxima usage.
 
@@ -529,11 +539,13 @@ stick to maxima usage.
 > considerable code duplication between this function and `latex_variable_name()`. 
 
 
+
 I agree that we should avoid duplication of code. 
 
 
 > Is there a reason why the further recursions performed by `latex_variable_name()` 
 > are not relevant for function names? 
+
 
 
 In physics, we often use functions such as "f_{\alpha\beta}". In sage, if I use
@@ -665,7 +677,7 @@ archive/issue_events_013407.json:
 archive/issue_comments_044542.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> This is really impressive.   I assume that stan s and the others will want to review this more since they would use it more intensely and understand LaTeX better than I do, but I threw it a lot of stuff and the only \"problems\" I found were additional cases one might want, which could easily be a separate ticket after this is merged.  The integrals, limits, Laplace, derivatives work out nice now, as does the option for D.  \n>  1. Only some underscore things do subscripts, and double subscripts don't work.  That's fine, but might as well search for them if possible, e.g. HH_sigma or WWW_xy_z or something could also typeset.\n[Snip]\nI am very fond of the set_latex() method for defining custom latex representations, which would allow for multiple subscripts etc. Unfortunately, it has been disabled with the new symbolics. Is there a plan to re-enable it again? In general, I think that it would be nice to give as much control to the user as possible, rather than hard-coding certain latex representations. Sorry I haven't been of any help with reviewing/patching, but I only now got back to the typesetting issues and found that my previous ad-hoc latex definitions don't work in Sage 4.x any more. :(\n\nGreat work, anyway, and many thanks to those that invested time and effort into improving the typesetting in Sage!",
+    "body": "Replying to [comment:7 kcrisman]:\n> This is really impressive.   I assume that stan s and the others will want to review this more since they would use it more intensely and understand LaTeX better than I do, but I threw it a lot of stuff and the only \"problems\" I found were additional cases one might want, which could easily be a separate ticket after this is merged.  The integrals, limits, Laplace, derivatives work out nice now, as does the option for D.  \n> 1. Only some underscore things do subscripts, and double subscripts don't work.  That's fine, but might as well search for them if possible, e.g. HH_sigma or WWW_xy_z or something could also typeset.\n\n[Snip]\nI am very fond of the set_latex() method for defining custom latex representations, which would allow for multiple subscripts etc. Unfortunately, it has been disabled with the new symbolics. Is there a plan to re-enable it again? In general, I think that it would be nice to give as much control to the user as possible, rather than hard-coding certain latex representations. Sorry I haven't been of any help with reviewing/patching, but I only now got back to the typesetting issues and found that my previous ad-hoc latex definitions don't work in Sage 4.x any more. :(\n\nGreat work, anyway, and many thanks to those that invested time and effort into improving the typesetting in Sage!",
     "created_at": "2009-06-24T10:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -676,7 +688,8 @@ archive/issue_comments_044542.json:
 
 Replying to [comment:7 kcrisman]:
 > This is really impressive.   I assume that stan s and the others will want to review this more since they would use it more intensely and understand LaTeX better than I do, but I threw it a lot of stuff and the only "problems" I found were additional cases one might want, which could easily be a separate ticket after this is merged.  The integrals, limits, Laplace, derivatives work out nice now, as does the option for D.  
->  1. Only some underscore things do subscripts, and double subscripts don't work.  That's fine, but might as well search for them if possible, e.g. HH_sigma or WWW_xy_z or something could also typeset.
+> 1. Only some underscore things do subscripts, and double subscripts don't work.  That's fine, but might as well search for them if possible, e.g. HH_sigma or WWW_xy_z or something could also typeset.
+
 [Snip]
 I am very fond of the set_latex() method for defining custom latex representations, which would allow for multiple subscripts etc. Unfortunately, it has been disabled with the new symbolics. Is there a plan to re-enable it again? In general, I think that it would be nice to give as much control to the user as possible, rather than hard-coding certain latex representations. Sorry I haven't been of any help with reviewing/patching, but I only now got back to the typesetting issues and found that my previous ad-hoc latex definitions don't work in Sage 4.x any more. :(
 
@@ -689,7 +702,7 @@ Great work, anyway, and many thanks to those that invested time and effort into 
 archive/issue_comments_044543.json:
 ```json
 {
-    "body": "Replying to [comment:16 schymans]:\n> I am very fond of the set_latex() method for defining custom latex representations, \n> which would allow for multiple subscripts etc. Unfortunately, it has been disabled \n> with the new symbolics. Is there a plan to re-enable it again? \n\nYes but in a new avatar! The new method would be more powerful. The patch is\nhere\n\nhttp://trac.sagemath.org/sage_trac/ticket/6290",
+    "body": "Replying to [comment:16 schymans]:\n> I am very fond of the set_latex() method for defining custom latex representations, \n> which would allow for multiple subscripts etc. Unfortunately, it has been disabled \n> with the new symbolics. Is there a plan to re-enable it again? \n\n\nYes but in a new avatar! The new method would be more powerful. The patch is\nhere\n\nhttp://trac.sagemath.org/sage_trac/ticket/6290",
     "created_at": "2009-06-24T10:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
@@ -702,6 +715,7 @@ Replying to [comment:16 schymans]:
 > I am very fond of the set_latex() method for defining custom latex representations, 
 > which would allow for multiple subscripts etc. Unfortunately, it has been disabled 
 > with the new symbolics. Is there a plan to re-enable it again? 
+
 
 Yes but in a new avatar! The new method would be more powerful. The patch is
 here

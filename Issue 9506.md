@@ -3,7 +3,7 @@
 archive/issues_009506.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nLike this:\n\n\n\n\n```\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\n\nsage: triangL = sage.libs.singular.ff.triang__lib.triangL\nsage: _ = triangL(I)\nTraceback (most recent call last):\n...\nRuntimeError: Error in Singular function call 'triangL':\n The input is no groebner basis.\n leaving triang.lib::triangL\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9506\n\n",
+    "body": "Assignee: @aghitza\n\nLike this:\n\n\n\n```\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\n\nsage: triangL = sage.libs.singular.ff.triang__lib.triangL\nsage: _ = triangL(I)\nTraceback (most recent call last):\n...\nRuntimeError: Error in Singular function call 'triangL':\n The input is no groebner basis.\n leaving triang.lib::triangL\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9506\n\n",
     "created_at": "2010-07-15T12:49:08Z",
     "labels": [
         "component: algebra"
@@ -21,7 +21,6 @@ Like this:
 
 
 
-
 ```
 sage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex')
 sage: I = sage.rings.ideal.Cyclic(P)
@@ -34,7 +33,6 @@ RuntimeError: Error in Singular function call 'triangL':
  The input is no groebner basis.
  leaving triang.lib::triangL
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9506
 

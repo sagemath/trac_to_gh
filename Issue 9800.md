@@ -76,7 +76,7 @@ Changing status from new to needs_work.
 archive/issue_comments_096135.json:
 ```json
 {
-    "body": "Attached patch apparently fixes problem (1).  \n\nIt attempts to fix problem (2), but I get an exception\n\n```\nMIPSolverException: 'GLPK : Solution is undefined'\n```\n\n\nRegarding (3), glpk apparently installed just fine on another machine, so I will bring up the problem on sage-devel to get help on the failed install.",
+    "body": "Attached patch apparently fixes problem (1).  \n\nIt attempts to fix problem (2), but I get an exception\n\n```\nMIPSolverException: 'GLPK : Solution is undefined'\n```\n\nRegarding (3), glpk apparently installed just fine on another machine, so I will bring up the problem on sage-devel to get help on the failed install.",
     "created_at": "2010-08-25T14:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9800",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ It attempts to fix problem (2), but I get an exception
 ```
 MIPSolverException: 'GLPK : Solution is undefined'
 ```
-
 
 Regarding (3), glpk apparently installed just fine on another machine, so I will bring up the problem on sage-devel to get help on the failed install.
 

@@ -55,7 +55,7 @@ Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-
 archive/issue_comments_032155.json:
 ```json
 {
-    "body": "Replying to [ticket:4379 jhpalmieri]:\n> Fix one typo in the tutorial.\n\n\nYep, the patch looks reasonable to me.",
+    "body": "Replying to [ticket:4379 jhpalmieri]:\n> Fix one typo in the tutorial.\n\n\n\nYep, the patch looks reasonable to me.",
     "created_at": "2008-10-29T04:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4379",
     "type": "issue_comment",
@@ -66,6 +66,7 @@ archive/issue_comments_032155.json:
 
 Replying to [ticket:4379 jhpalmieri]:
 > Fix one typo in the tutorial.
+
 
 
 Yep, the patch looks reasonable to me.

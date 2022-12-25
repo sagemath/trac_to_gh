@@ -3,7 +3,7 @@
 archive/issues_002408.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nMPolynomial_libsingular.factor does not set units.\n\nWe now have\n\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = -1*(x*y+z)  \nsage: F = p.factor(); F\n(-1) * (x*y + z)\nsage: F.unit()\n1\nsage: len(F)\n2\n```\n\n\nIt should be\n\n```\nsage: F = p.factor(); F\nx*y + z\nsage: F.unit()\n-1\nsage: len(F)\n1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2408\n\n",
+    "body": "Assignee: @malb\n\nMPolynomial_libsingular.factor does not set units.\n\nWe now have\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = -1*(x*y+z)  \nsage: F = p.factor(); F\n(-1) * (x*y + z)\nsage: F.unit()\n1\nsage: len(F)\n2\n```\n\nIt should be\n\n```\nsage: F = p.factor(); F\nx*y + z\nsage: F.unit()\n-1\nsage: len(F)\n1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2408\n\n",
     "created_at": "2008-03-06T17:36:30Z",
     "labels": [
         "component: commutative algebra",
@@ -23,7 +23,6 @@ MPolynomial_libsingular.factor does not set units.
 
 We now have
 
-
 ```
 sage: R.<x,y,z> = QQ[]
 sage: p = -1*(x*y+z)  
@@ -34,7 +33,6 @@ sage: F.unit()
 sage: len(F)
 2
 ```
-
 
 It should be
 

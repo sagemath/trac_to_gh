@@ -3,7 +3,7 @@
 archive/issues_009580.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @TimDumol\n\nNoted by Leif Leonhardy in a [comment:ticket:9554:5 comment] at #9554:\n\n```sh\nleif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n? sagenb/sagenb.po\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9580\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @TimDumol\n\nNoted by Leif Leonhardy in a [comment:ticket:9554:5 comment] at #9554:\n\n```sh\nleif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status\n? sagenb/sagenb.po\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9580\n\n",
     "created_at": "2010-07-23T06:28:05Z",
     "labels": [
         "component: notebook",
@@ -29,7 +29,6 @@ leif@portland:~/Sage/spkgs/sagenb-0.8.1.p1/src/sagenb$ hg status
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9580
 
 
@@ -41,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9580
 archive/issue_comments_092373.json:
 ```json
 {
-    "body": "\n```\n<timdumol> _leif: Thanks for spotting the rogue .po file (I forgot to remove it from #9428 when I build 0.8.1)\n```\n\n(About 14 hours ago.)\n\nNevertheless, I'll add it to #9572 (SageNB 0.8.2).",
+    "body": "```\n<timdumol> _leif: Thanks for spotting the rogue .po file (I forgot to remove it from #9428 when I build 0.8.1)\n```\n(About 14 hours ago.)\n\nNevertheless, I'll add it to #9572 (SageNB 0.8.2).",
     "created_at": "2010-07-23T07:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9580",
     "type": "issue_comment",
@@ -50,11 +49,9 @@ archive/issue_comments_092373.json:
 }
 ```
 
-
 ```
 <timdumol> _leif: Thanks for spotting the rogue .po file (I forgot to remove it from #9428 when I build 0.8.1)
 ```
-
 (About 14 hours ago.)
 
 Nevertheless, I'll add it to #9572 (SageNB 0.8.2).
@@ -66,7 +63,7 @@ Nevertheless, I'll add it to #9572 (SageNB 0.8.2).
 archive/issue_comments_092374.json:
 ```json
 {
-    "body": "\n```sh\nfind . -name .hg -exec sh -c \"cd {}; hg status\" \\;\n```\n\n\n;-)",
+    "body": "```sh\nfind . -name .hg -exec sh -c \"cd {}; hg status\" \\;\n```\n\n;-)",
     "created_at": "2010-07-23T07:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9580",
     "type": "issue_comment",
@@ -75,11 +72,9 @@ archive/issue_comments_092374.json:
 }
 ```
 
-
 ```sh
 find . -name .hg -exec sh -c "cd {}; hg status" \;
 ```
-
 
 ;-)
 
@@ -108,7 +103,7 @@ Just to check:  Should I just delete `sagenb/sagenb.po`?
 archive/issue_comments_092376.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> Just to check:  Should I just delete `sagenb/sagenb.po`?\n\nAccording to what Tim said, I think yes.",
+    "body": "Replying to [comment:3 mpatel]:\n> Just to check:  Should I just delete `sagenb/sagenb.po`?\n\n\nAccording to what Tim said, I think yes.",
     "created_at": "2010-07-23T07:27:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9580",
     "type": "issue_comment",
@@ -119,6 +114,7 @@ archive/issue_comments_092376.json:
 
 Replying to [comment:3 mpatel]:
 > Just to check:  Should I just delete `sagenb/sagenb.po`?
+
 
 According to what Tim said, I think yes.
 

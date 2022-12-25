@@ -3,7 +3,7 @@
 archive/issues_009316.json:
 ```json
 {
-    "body": "Assignee: @wjp\n\nCC:  @nexttime\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
+    "body": "Assignee: @wjp\n\nCC:  @nexttime\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
     "created_at": "2010-06-23T04:19:18Z",
     "labels": [
         "component: doctest coverage",
@@ -38,7 +38,6 @@ This is caused by some weird code introduced in #7993 (see sage-test):
         failed.append(sage_test_command(F)+" # File not found")
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9316
 
 
@@ -50,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9316
 archive/issue_comments_087644.json:
 ```json
 {
-    "body": "Example:\n\n```\n\nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nTraceback (most recent call last):\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 798, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 695, in test_file\n    print \"The doctested process was killed by signal %s\" % (-e)\nTypeError: bad operand type for unary -: 'NoneType'\n         [8319.2 s]\n```\n\nThe reason for the timeout was simply that I suspended my laptop for a couple of hours and then woke it up.  But at the end of the test (I was doing \"make test\" on 4.4.4.alpha1) the error message said\n\n```\n\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # File not found\n```\n",
+    "body": "Example:\n\n```\n\nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nTraceback (most recent call last):\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 798, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 695, in test_file\n    print \"The doctested process was killed by signal %s\" % (-e)\nTypeError: bad operand type for unary -: 'NoneType'\n         [8319.2 s]\n```\nThe reason for the timeout was simply that I suspended my laptop for a couple of hours and then woke it up.  But at the end of the test (I was doing \"make test\" on 4.4.4.alpha1) the error message said\n\n```\n\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # File not found\n```",
     "created_at": "2010-06-23T04:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -74,7 +73,6 @@ Traceback (most recent call last):
 TypeError: bad operand type for unary -: 'NoneType'
          [8319.2 s]
 ```
-
 The reason for the timeout was simply that I suspended my laptop for a couple of hours and then woke it up.  But at the end of the test (I was doing "make test" on 4.4.4.alpha1) the error message said
 
 ```
@@ -87,13 +85,12 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_087645.json:
 ```json
 {
-    "body": "I agree a timeout can cause this. I tried the patch which is supposed to fix the Mathematica interface, but that timed out after 10,000 seconds with a \"File not found\" message. \n\nHowever, BSD.py is completing well within the time I've set as SAGE_TIMEOUT and SAGE_TIMEOUT_LONG, so I doubt the BSD.py issue was a simple timeout \n\n\n```\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT_LONG\n10000\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT     \n1000\n```\n\n\nBut BSD.py is taking 205 seconds\n\n\n```\ndrkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"\n         [205.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 205.5 seconds\n```\n\n\nSure BSD.py will take longer if the machine is more heavily loaded, but it would need a **huge** load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. \n\nMy Blade 1000 does not have a lot of RAM (only 2 GB), so potentially it could swap if it run out of RAM, but I don't believe that was the problem. It certainly does not have any power saving features - that's why I keep it in the garage and use it as a heater in the Winter! That machine does not hybernate! \n\nDave",
+    "body": "I agree a timeout can cause this. I tried the patch which is supposed to fix the Mathematica interface, but that timed out after 10,000 seconds with a \"File not found\" message. \n\nHowever, BSD.py is completing well within the time I've set as SAGE_TIMEOUT and SAGE_TIMEOUT_LONG, so I doubt the BSD.py issue was a simple timeout \n\n```\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT_LONG\n10000\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT     \n1000\n```\n\nBut BSD.py is taking 205 seconds\n\n```\ndrkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"\n         [205.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 205.5 seconds\n```\n\nSure BSD.py will take longer if the machine is more heavily loaded, but it would need a **huge** load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. \n\nMy Blade 1000 does not have a lot of RAM (only 2 GB), so potentially it could swap if it run out of RAM, but I don't believe that was the problem. It certainly does not have any power saving features - that's why I keep it in the garage and use it as a heater in the Winter! That machine does not hybernate! \n\nDave",
     "created_at": "2010-06-23T05:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -106,7 +103,6 @@ I agree a timeout can cause this. I tried the patch which is supposed to fix the
 
 However, BSD.py is completing well within the time I've set as SAGE_TIMEOUT and SAGE_TIMEOUT_LONG, so I doubt the BSD.py issue was a simple timeout 
 
-
 ```
 drkirkby@redstart:~$ echo $SAGE_TIMEOUT_LONG
 10000
@@ -114,9 +110,7 @@ drkirkby@redstart:~$ echo $SAGE_TIMEOUT
 1000
 ```
 
-
 But BSD.py is taking 205 seconds
-
 
 ```
 drkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py
@@ -127,7 +121,6 @@ sage -t -long "devel/sage/sage/schemes/elliptic_curves/BSD.py"
 All tests passed!
 Total time for all tests: 205.5 seconds
 ```
-
 
 Sure BSD.py will take longer if the machine is more heavily loaded, but it would need a **huge** load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. 
 
@@ -182,7 +175,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087648.json:
 ```json
 {
-    "body": "I won't say positive review 100% because someone who knows all the ins and outs should have a quick look at it.    But it works as advertised.  I do wonder if there need to be two separate tests for \n\n```\n\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [556.2 s]\n```\n\nor if one could immediately sys.exit(5) instead of having two separate timeout messages?  Or this may be a feature - one for the process, one for the file.",
+    "body": "I won't say positive review 100% because someone who knows all the ins and outs should have a quick look at it.    But it works as advertised.  I do wonder if there need to be two separate tests for \n\n```\n\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [556.2 s]\n```\nor if one could immediately sys.exit(5) instead of having two separate timeout messages?  Or this may be a feature - one for the process, one for the file.",
     "created_at": "2010-06-23T14:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -200,7 +193,6 @@ sage -t  "devel/sage/sage/calculus/calculus.py"
 *** *** Error: TIMED OUT! *** ***
 	 [556.2 s]
 ```
-
 or if one could immediately sys.exit(5) instead of having two separate timeout messages?  Or this may be a feature - one for the process, one for the file.
 
 
@@ -322,7 +314,7 @@ I removed the second print statement so there is no longer a double TIMED OUT me
 archive/issue_comments_087655.json:
 ```json
 {
-    "body": "I get\n\n```sh\n$ env SAGE_TIMEOUT=10 ./sage -t devel/sage/sage/rings/number_field/number_field_rel.py \nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [10.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # Time out\nTotal time for all tests: 10.2 seconds\n$ echo $?\n64\n```\n  \n\nMaybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\nTo release manager: Apply only [attachment:scripts9316_timeout_rebased.patch] to 4.5.alpha4 + #8641 + #9243.",
+    "body": "I get\n\n```sh\n$ env SAGE_TIMEOUT=10 ./sage -t devel/sage/sage/rings/number_field/number_field_rel.py \nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [10.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # Time out\nTotal time for all tests: 10.2 seconds\n$ echo $?\n64\n```  \n\nMaybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\nTo release manager: Apply only [attachment:scripts9316_timeout_rebased.patch] to 4.5.alpha4 + #8641 + #9243.",
     "created_at": "2010-07-07T03:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -348,8 +340,7 @@ The following tests failed:
 Total time for all tests: 10.2 seconds
 $ echo $?
 64
-```
-  
+```  
 
 Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?
 
@@ -398,7 +389,7 @@ Related tickets: #9224, #9225.  Suggestions are welcome!
 archive/issue_comments_087658.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n \n> Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\nThat does seem very sensible, since these options are not well known. They are now documented in #8263, which adds them to the Installation Guide, but I would agree it would be useful to print this. \n\nAlso see #9449 for yet more issues with doctesting, where the results are confusing. I don't know if tests have passed or failed in some cases.",
+    "body": "Replying to [comment:9 mpatel]:\n \n> Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\n\nThat does seem very sensible, since these options are not well known. They are now documented in #8263, which adds them to the Installation Guide, but I would agree it would be useful to print this. \n\nAlso see #9449 for yet more issues with doctesting, where the results are confusing. I don't know if tests have passed or failed in some cases.",
     "created_at": "2010-07-08T11:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
@@ -410,6 +401,7 @@ archive/issue_comments_087658.json:
 Replying to [comment:9 mpatel]:
  
 > Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?
+
 
 That does seem very sensible, since these options are not well known. They are now documented in #8263, which adds them to the Installation Guide, but I would agree it would be useful to print this. 
 

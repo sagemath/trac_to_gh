@@ -3,7 +3,7 @@
 archive/issues_006854.json:
 ```json
 {
-    "body": "CC:  @mwhansen simonking\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n\n```\nsage: e<3\nFalse\n```\n\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
+    "body": "CC:  @mwhansen simonking\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n```\nsage: e<3\nFalse\n```\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
     "created_at": "2009-09-01T08:17:04Z",
     "labels": [
         "component: symbolics",
@@ -22,7 +22,6 @@ Hello !!
 
 I know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use "Tab" to list its methods, some of them not being printed. Example :
 
-
 ```
 sage: P.<x>=InfinitePolynomialRing(RR)
 sage: e=x[1]+x[3]
@@ -40,15 +39,12 @@ sage: e.constant_coefficient()
 0.000000000000000
 ```
 
-
 Besides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :
-
 
 ```
 sage: e<3
 False
 ```
-
 
 But this may be intentional, even though I do not like it :-)
 
@@ -263,7 +259,7 @@ Changing status from new to needs_review.
 archive/issue_comments_056411.json:
 ```json
 {
-    "body": "The dinner was good, and I hope the 3-line patch is as well. \n\nI hope there is no need to rebase it, since I made it with sage-4.2.1. \n\nWith the patch, I get (on the command line):\n\n```\nsage: R.<t>=InfinitePolynomialRing(QQ)\nsage: p=t[1]+3*t[4]\nsage: p.<TAB>\np.abs                           p.jacobian_ideal\np.add_m_mul_q                   p.lc\np.additive_order                p.lcm\np.args                          p.lift\np.base_extend                   p.lm\np.base_ring                     p.lt\np.category                      p.map_coefficients\np.change_ring                   p.max_index\np.coefficient                   p.mod\np.coefficients                  p.monomial_coefficient\np.constant_coefficient          p.monomials\np.content                       p.multiplicative_order\np.db                            p.n\np.degree                        p.newton_polytope\np.degrees                       p.nvariables\np.derivative                    p.order\np.dict                          p.parent\np.divides                       p.polynomial\np.dump                          p.quo_rem\np.dumps                         p.reduce\np.exponents                     p.rename\np.factor                        p.reset_name\np.footprint                     p.resultant\n--More--\n```\n\n\nIt seems to me that this is what tab completion should do.\n\nI understood that the new trac system is that I don't need to add [with patch, needs review] to the summary, but to tick \"needs review\"; correct me if I'm wrong.",
+    "body": "The dinner was good, and I hope the 3-line patch is as well. \n\nI hope there is no need to rebase it, since I made it with sage-4.2.1. \n\nWith the patch, I get (on the command line):\n\n```\nsage: R.<t>=InfinitePolynomialRing(QQ)\nsage: p=t[1]+3*t[4]\nsage: p.<TAB>\np.abs                           p.jacobian_ideal\np.add_m_mul_q                   p.lc\np.additive_order                p.lcm\np.args                          p.lift\np.base_extend                   p.lm\np.base_ring                     p.lt\np.category                      p.map_coefficients\np.change_ring                   p.max_index\np.coefficient                   p.mod\np.coefficients                  p.monomial_coefficient\np.constant_coefficient          p.monomials\np.content                       p.multiplicative_order\np.db                            p.n\np.degree                        p.newton_polytope\np.degrees                       p.nvariables\np.derivative                    p.order\np.dict                          p.parent\np.divides                       p.polynomial\np.dump                          p.quo_rem\np.dumps                         p.reduce\np.exponents                     p.rename\np.factor                        p.reset_name\np.footprint                     p.resultant\n--More--\n```\n\nIt seems to me that this is what tab completion should do.\n\nI understood that the new trac system is that I don't need to add [with patch, needs review] to the summary, but to tick \"needs review\"; correct me if I'm wrong.",
     "created_at": "2009-11-30T20:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -308,7 +304,6 @@ p.footprint                     p.resultant
 --More--
 ```
 
-
 It seems to me that this is what tab completion should do.
 
 I understood that the new trac system is that I don't need to add [with patch, needs review] to the summary, but to tick "needs review"; correct me if I'm wrong.
@@ -338,7 +333,7 @@ Set assignee to @simon-king-jena.
 archive/issue_comments_056413.json:
 ```json
 {
-    "body": "Hi!\n\nNow I learned that the method `__members__` is used by `dir()`\n\nIt is a bit strange, since `dir?` explains that it would use a method `__dir__` if it exists; but in fact it doesn't.\n\nAnyway. With the new patch, one has both tab completion and introspection.\nNote that according to the original post, `constant_coefficient`, which is inherited from the underlying polynomial, did not appear.\n\n```\nsage: R.<t>=InfinitePolynomialRing(QQ)\nsage: p=t[1]+3*t[4]\nsage: L=dir(p)\nsage: [X for X in L if X.startswith('c')]\n\n['category',\n 'change_ring',\n 'coefficient',\n 'coefficients',\n 'constant_coefficient',\n 'content']\n```\n\n\nAnd tab completion works as with the previous patch.\n\nOne concern though: How can one test tab completion? Note that the `_getAttributeNames` and `__members__` methods have no doc test yet. How should it best look?",
+    "body": "Hi!\n\nNow I learned that the method `__members__` is used by `dir()`\n\nIt is a bit strange, since `dir?` explains that it would use a method `__dir__` if it exists; but in fact it doesn't.\n\nAnyway. With the new patch, one has both tab completion and introspection.\nNote that according to the original post, `constant_coefficient`, which is inherited from the underlying polynomial, did not appear.\n\n```\nsage: R.<t>=InfinitePolynomialRing(QQ)\nsage: p=t[1]+3*t[4]\nsage: L=dir(p)\nsage: [X for X in L if X.startswith('c')]\n\n['category',\n 'change_ring',\n 'coefficient',\n 'coefficients',\n 'constant_coefficient',\n 'content']\n```\n\nAnd tab completion works as with the previous patch.\n\nOne concern though: How can one test tab completion? Note that the `_getAttributeNames` and `__members__` methods have no doc test yet. How should it best look?",
     "created_at": "2009-11-30T21:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -369,7 +364,6 @@ sage: [X for X in L if X.startswith('c')]
  'constant_coefficient',
  'content']
 ```
-
 
 And tab completion works as with the previous patch.
 
@@ -491,7 +485,7 @@ And do you agree that the work should be moved to #7580 ?
 archive/issue_comments_056419.json:
 ```json
 {
-    "body": "Patch looks good, applies fine against alpha1, I have two doctest failures:\n\n\n```\nsage -t  devel/sage/sage/graphs/graph_generators.py # 2 doctests failed\nsage -t  devel/sage/sage/server/misc.py # Segfault\n```\n\n\nThe first one is a known alpha1 problem and the second one I cannot reproduce (it would also be rather unrelated).",
+    "body": "Patch looks good, applies fine against alpha1, I have two doctest failures:\n\n```\nsage -t  devel/sage/sage/graphs/graph_generators.py # 2 doctests failed\nsage -t  devel/sage/sage/server/misc.py # Segfault\n```\n\nThe first one is a known alpha1 problem and the second one I cannot reproduce (it would also be rather unrelated).",
     "created_at": "2009-12-08T14:00:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -502,12 +496,10 @@ archive/issue_comments_056419.json:
 
 Patch looks good, applies fine against alpha1, I have two doctest failures:
 
-
 ```
 sage -t  devel/sage/sage/graphs/graph_generators.py # 2 doctests failed
 sage -t  devel/sage/sage/server/misc.py # Segfault
 ```
-
 
 The first one is a known alpha1 problem and the second one I cannot reproduce (it would also be rather unrelated).
 
@@ -570,7 +562,7 @@ Resolution: fixed
 archive/issue_comments_056422.json:
 ```json
 {
-    "body": "Replying to [comment:7 SimonKing]:\n> Hi!\n> \n> Now I learned that the method `__members__` is used by `dir()`\n> \n> It is a bit strange, since `dir?` explains that it would use a method `__dir__` if it exists; but in fact it doesn't.\n\n?\n\nIt actually works for me. In #7921, I added a dir to Element, which broke the current doctests in infinite polynomials. I just removed the __members__ logic, and renamed _getAttributeNames into __dir__, and the doctests pass again (see patch on #7921). Could you have a look, and provide me with other tests if you think it could break something else in infinite polynomials?",
+    "body": "Replying to [comment:7 SimonKing]:\n> Hi!\n> \n> Now I learned that the method `__members__` is used by `dir()`\n> \n> It is a bit strange, since `dir?` explains that it would use a method `__dir__` if it exists; but in fact it doesn't.\n\n\n?\n\nIt actually works for me. In #7921, I added a dir to Element, which broke the current doctests in infinite polynomials. I just removed the __members__ logic, and renamed _getAttributeNames into __dir__, and the doctests pass again (see patch on #7921). Could you have a look, and provide me with other tests if you think it could break something else in infinite polynomials?",
     "created_at": "2010-01-14T10:00:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
@@ -585,6 +577,7 @@ Replying to [comment:7 SimonKing]:
 > Now I learned that the method `__members__` is used by `dir()`
 > 
 > It is a bit strange, since `dir?` explains that it would use a method `__dir__` if it exists; but in fact it doesn't.
+
 
 ?
 

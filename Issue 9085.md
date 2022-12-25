@@ -3,7 +3,7 @@
 archive/issues_009085.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @nthiery\n\nKeywords: random element cartesian product\n\nVictor Miller reports:\n\n```\nHere's something a bit odd:\n\nsage: F = GF(2)\nsage: A = CartesianProduct(F,F)\nsage: print A.random_element()\n\nThis gets a trace back and the message\n\nTypeError: You must specify the names of the variables \n```\n\n\nHere is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then\nsubscripted with a random subscript.  But (as you can verify)\nevaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).\n\nThis does not happen when you just do F.random_element() since that\nhas an independent implementation.\n\nI think the fault lies in line 125 of /sage/misc/prandom.py in the\nfunction choice() which says\n\n```\nreturn _pyrand().choice(seq)\n```\n\nbut in your example \"seq\" is the field F.  It would work if that said list(seq), since\n\n```\n_pyrand().choice(F)\n```\n\nfails but\n\n```\n_pyrand().choice(list(F))\n```\n\nworks.  But it would be more efficient if that choice function tried\nto call a random_element() function on its  argument instead --\nimagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9085\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @nthiery\n\nKeywords: random element cartesian product\n\nVictor Miller reports:\n\n```\nHere's something a bit odd:\n\nsage: F = GF(2)\nsage: A = CartesianProduct(F,F)\nsage: print A.random_element()\n\nThis gets a trace back and the message\n\nTypeError: You must specify the names of the variables \n```\n\nHere is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then\nsubscripted with a random subscript.  But (as you can verify)\nevaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).\n\nThis does not happen when you just do F.random_element() since that\nhas an independent implementation.\n\nI think the fault lies in line 125 of /sage/misc/prandom.py in the\nfunction choice() which says\n\n```\nreturn _pyrand().choice(seq)\n```\nbut in your example \"seq\" is the field F.  It would work if that said list(seq), since\n\n```\n_pyrand().choice(F)\n```\nfails but\n\n```\n_pyrand().choice(list(F))\n```\nworks.  But it would be more efficient if that choice function tried\nto call a random_element() function on its  argument instead --\nimagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9085\n\n",
     "created_at": "2010-05-29T11:24:12Z",
     "labels": [
         "component: algebra",
@@ -36,7 +36,6 @@ This gets a trace back and the message
 TypeError: You must specify the names of the variables 
 ```
 
-
 Here is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then
 subscripted with a random subscript.  But (as you can verify)
 evaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).
@@ -50,19 +49,16 @@ function choice() which says
 ```
 return _pyrand().choice(seq)
 ```
-
 but in your example "seq" is the field F.  It would work if that said list(seq), since
 
 ```
 _pyrand().choice(F)
 ```
-
 fails but
 
 ```
 _pyrand().choice(list(F))
 ```
-
 works.  But it would be more efficient if that choice function tried
 to call a random_element() function on its  argument instead --
 imagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. 
@@ -216,7 +212,7 @@ archive/issue_events_022278.json:
 archive/issue_comments_084226.json:
 ```json
 {
-    "body": "This works now.\n\n```\nsage: F = GF(1951)\nsage: A = F.cartesian_product(F)\nsage: A.random_element()\n(1405, 126)\nsage: A.random_element()\n(1151, 1050)\n```\n",
+    "body": "This works now.\n\n```\nsage: F = GF(1951)\nsage: A = F.cartesian_product(F)\nsage: A.random_element()\n(1405, 126)\nsage: A.random_element()\n(1151, 1050)\n```",
     "created_at": "2016-02-05T12:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
@@ -235,7 +231,6 @@ sage: A.random_element()
 sage: A.random_element()
 (1151, 1050)
 ```
-
 
 
 
@@ -296,7 +291,7 @@ archive/issue_events_022280.json:
 archive/issue_comments_084228.json:
 ```json
 {
-    "body": "And, thanks to #18411, also with the original syntax:\n\n```\n    sage: F = GF(2)\n    sage: A = CartesianProduct(F,F)\n    sage: print A.random_element()\n    (1,0)\n```\n\n\nThanks Fr\u00e9d\u00e9ric for spotting this outdated ticket.",
+    "body": "And, thanks to #18411, also with the original syntax:\n\n```\n    sage: F = GF(2)\n    sage: A = CartesianProduct(F,F)\n    sage: print A.random_element()\n    (1,0)\n```\n\nThanks Fr\u00e9d\u00e9ric for spotting this outdated ticket.",
     "created_at": "2016-02-05T13:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
@@ -313,7 +308,6 @@ And, thanks to #18411, also with the original syntax:
     sage: print A.random_element()
     (1,0)
 ```
-
 
 Thanks Frédéric for spotting this outdated ticket.
 

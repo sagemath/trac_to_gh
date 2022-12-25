@@ -182,7 +182,7 @@ Jason
 archive/issue_comments_072971.json:
 ```json
 {
-    "body": "One more thing.  I would really like to have an option to verify that the input actually is a symmetric function.  In fact I think this should be true by default.  So the key function would look something like this:\n\n\n```\ndef from_polynomial(self, f, check=True):        \n    assert(self.base_ring() == f.base_ring()\n    d = dict([(e,c) for e,c in f.dict().iteritems() if tuple(sorted(e)) == tuple(reversed(e))]) \n    if not check:\n        return self.sum(d[la]*self(Partition(la)) for la in d.keys())\n    out = self.sum(d[la]*self(Partition(la)) for la in d.keys())\n    assert( out.expand(f.parent().ngens(),f.parent().gens()) == f )\n    return out\n```\n",
+    "body": "One more thing.  I would really like to have an option to verify that the input actually is a symmetric function.  In fact I think this should be true by default.  So the key function would look something like this:\n\n```\ndef from_polynomial(self, f, check=True):        \n    assert(self.base_ring() == f.base_ring()\n    d = dict([(e,c) for e,c in f.dict().iteritems() if tuple(sorted(e)) == tuple(reversed(e))]) \n    if not check:\n        return self.sum(d[la]*self(Partition(la)) for la in d.keys())\n    out = self.sum(d[la]*self(Partition(la)) for la in d.keys())\n    assert( out.expand(f.parent().ngens(),f.parent().gens()) == f )\n    return out\n```",
     "created_at": "2010-02-22T21:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
@@ -192,7 +192,6 @@ archive/issue_comments_072971.json:
 ```
 
 One more thing.  I would really like to have an option to verify that the input actually is a symmetric function.  In fact I think this should be true by default.  So the key function would look something like this:
-
 
 ```
 def from_polynomial(self, f, check=True):        
@@ -204,7 +203,6 @@ def from_polynomial(self, f, check=True):
     assert( out.expand(f.parent().ngens(),f.parent().gens()) == f )
     return out
 ```
-
 
 
 
@@ -350,7 +348,7 @@ Thanks!
 archive/issue_comments_072978.json:
 ```json
 {
-    "body": "Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by @anneschilling created at 2010-02-25 18:00:10\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n>  - One can write `assert a==b` instead of `assert(a==b)`\n>  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n>  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>    So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
+    "body": "Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by @anneschilling created at 2010-02-25 18:00:10\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n> - One can write `assert a==b` instead of `assert(a==b)`\n> - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n> - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>   So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
     "created_at": "2010-02-25T18:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
@@ -364,14 +362,15 @@ Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachmen
 Replying to [comment:11 nthiery]:
 > Just two tiny remarks:
 > 
->  - One can write `assert a==b` instead of `assert(a==b)`
->  - One could be a bit more specific:  `assert a==b, "not a symmetric polynomial"
->  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).
->    So I am not sure it is the appropriate idiom here.
+> - One can write `assert a==b` instead of `assert(a==b)`
+> - One could be a bit more specific:  `assert a==b, "not a symmetric polynomial"
+> - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).
+>   So I am not sure it is the appropriate idiom here.
 > 
 > That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.
 > 
 > Thanks!
+
 
 Done! Please review the review of the review of the review ... oops! Infinite loop!
 
@@ -382,7 +381,7 @@ Done! Please review the review of the review of the review ... oops! Infinite lo
 archive/issue_comments_072979.json:
 ```json
 {
-    "body": "Replying to [comment:12 aschilling]:\n> Replying to [comment:11 nthiery]:\n> > Just two tiny remarks:\n> > \n> >  - One can write `assert a==b` instead of `assert(a==b)`\n> >  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n> >  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n> >    So I am not sure it is the appropriate idiom here.\n> > \n> > That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> > \n> > Thanks!\n> \n> Done! Please review the review of the review of the review ... oops! Infinite loop!\n\nThanks! I haven't rerun the tests, but the review patch looks good to me.",
+    "body": "Replying to [comment:12 aschilling]:\n> Replying to [comment:11 nthiery]:\n> > Just two tiny remarks:\n> > \n> > - One can write `assert a==b` instead of `assert(a==b)`\n> > - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n> > - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n> >   So I am not sure it is the appropriate idiom here.\n> > \n> > That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> > \n> > Thanks!\n\n> \n> Done! Please review the review of the review of the review ... oops! Infinite loop!\n\n\nThanks! I haven't rerun the tests, but the review patch looks good to me.",
     "created_at": "2010-02-25T18:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
@@ -395,16 +394,18 @@ Replying to [comment:12 aschilling]:
 > Replying to [comment:11 nthiery]:
 > > Just two tiny remarks:
 > > 
-> >  - One can write `assert a==b` instead of `assert(a==b)`
-> >  - One could be a bit more specific:  `assert a==b, "not a symmetric polynomial"
-> >  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).
-> >    So I am not sure it is the appropriate idiom here.
+> > - One can write `assert a==b` instead of `assert(a==b)`
+> > - One could be a bit more specific:  `assert a==b, "not a symmetric polynomial"
+> > - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).
+> >   So I am not sure it is the appropriate idiom here.
 > > 
 > > That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.
 > > 
 > > Thanks!
+
 > 
 > Done! Please review the review of the review of the review ... oops! Infinite loop!
+
 
 Thanks! I haven't rerun the tests, but the review patch looks good to me.
 

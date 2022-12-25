@@ -205,7 +205,7 @@ Nathann
 archive/issue_comments_080074.json:
 ```json
 {
-    "body": "Replying to [comment:7 ncohen]:\n> Sounds sensible enough ! I just moved the file in a source_coding subdirectory, but I can not import sage.coding.source_coding.huffman, as sage does not find the source_coding module... Where should I tell it it exists ? :-)\n> \n> Nathann\n\nMaybe you could try to add an (empty) __init__.py file to it before adding huffman.py?",
+    "body": "Replying to [comment:7 ncohen]:\n> Sounds sensible enough ! I just moved the file in a source_coding subdirectory, but I can not import sage.coding.source_coding.huffman, as sage does not find the source_coding module... Where should I tell it it exists ? :-)\n> \n> Nathann\n\n\nMaybe you could try to add an (empty) __init__.py file to it before adding huffman.py?",
     "created_at": "2010-04-27T18:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -218,6 +218,7 @@ Replying to [comment:7 ncohen]:
 > Sounds sensible enough ! I just moved the file in a source_coding subdirectory, but I can not import sage.coding.source_coding.huffman, as sage does not find the source_coding module... Where should I tell it it exists ? :-)
 > 
 > Nathann
+
 
 Maybe you could try to add an (empty) __init__.py file to it before adding huffman.py?
 
@@ -248,7 +249,7 @@ Nathann
 archive/issue_comments_080076.json:
 ```json
 {
-    "body": "Replying to [comment:9 ncohen]:\n> Hmmm... I added this empty __init__.py file in source_coding/, but it made no difference... Is that what you meant ? :-/\n\nTry putting a comment in that `__init__.py` file. For example, the content of that init file might be:\n\n```\n# Just a comment so that __init__.py is not an empty file.\n```\n",
+    "body": "Replying to [comment:9 ncohen]:\n> Hmmm... I added this empty __init__.py file in source_coding/, but it made no difference... Is that what you meant ? :-/\n\n\nTry putting a comment in that `__init__.py` file. For example, the content of that init file might be:\n\n```\n# Just a comment so that __init__.py is not an empty file.\n```",
     "created_at": "2010-04-28T07:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -260,12 +261,12 @@ archive/issue_comments_080076.json:
 Replying to [comment:9 ncohen]:
 > Hmmm... I added this empty __init__.py file in source_coding/, but it made no difference... Is that what you meant ? :-/
 
+
 Try putting a comment in that `__init__.py` file. For example, the content of that init file might be:
 
 ```
 # Just a comment so that __init__.py is not an empty file.
 ```
-
 
 
 
@@ -372,7 +373,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080082.json:
 ```json
 {
-    "body": "Replying to [comment:13 wdj]:\n> This applies to 4.4.rc0 fine and passes sage -testall.\n> I have not checked if the documentation builds okay.\nWe *should* do that before giving a positive review, I guess... :)\n\n> Are the other reviewers satisfied with the changes in this last patch?\nThere are still typos in the description:\n\n* s/occurence/occurrence/\n* s/frquency/frequency/\n* s/its its/its/ (two times)\n* s/occurencies/occurrences/ (two times)\n* s/eah/each/\n\n`encoding_table()`:\n  s/each letter/each trained letter/\n\n`__init__`:\n  It's not tested if **both** `string` and `frequencies` are given (=> error).\n\nAnd as I said before I'd prefer type checks on the parameters (rather than relying on *automatically* raised exceptions later in the code).\n\nI also prefer having the return type documented at the top rather than (more or less) implicitly in the examples (e.g. in `frequency_table()`; `tree()` actually returns a `DiGraph` which happens to also be a tree.)\n\n\nDoctests?\n\n(Still haven't tested the code, just read the patches, sorry.)\n\n-Leif",
+    "body": "Replying to [comment:13 wdj]:\n> This applies to 4.4.rc0 fine and passes sage -testall.\n> I have not checked if the documentation builds okay.\n\nWe *should* do that before giving a positive review, I guess... :)\n\n> Are the other reviewers satisfied with the changes in this last patch?\n\nThere are still typos in the description:\n\n* s/occurence/occurrence/\n* s/frquency/frequency/\n* s/its its/its/ (two times)\n* s/occurencies/occurrences/ (two times)\n* s/eah/each/\n\n`encoding_table()`:\n  s/each letter/each trained letter/\n\n`__init__`:\n  It's not tested if **both** `string` and `frequencies` are given (=> error).\n\nAnd as I said before I'd prefer type checks on the parameters (rather than relying on *automatically* raised exceptions later in the code).\n\nI also prefer having the return type documented at the top rather than (more or less) implicitly in the examples (e.g. in `frequency_table()`; `tree()` actually returns a `DiGraph` which happens to also be a tree.)\n\n\nDoctests?\n\n(Still haven't tested the code, just read the patches, sorry.)\n\n-Leif",
     "created_at": "2010-04-29T15:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -384,9 +385,11 @@ archive/issue_comments_080082.json:
 Replying to [comment:13 wdj]:
 > This applies to 4.4.rc0 fine and passes sage -testall.
 > I have not checked if the documentation builds okay.
+
 We *should* do that before giving a positive review, I guess... :)
 
 > Are the other reviewers satisfied with the changes in this last patch?
+
 There are still typos in the description:
 
 * s/occurence/occurrence/
@@ -567,7 +570,7 @@ This means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sa
 archive/issue_comments_080090.json:
 ```json
 {
-    "body": "Replying to [comment:19 mvngu]:\n> This means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch), so only my patch needs review by anyone but me.\n\nThat patch looks **very** good.\n(I wished all module documentations had that quality.)\n\nI'll only add some more doctests and perhaps edit some comments.\n\nI think improvements to the algorithm can be done on another ticket.\n\n-Leif",
+    "body": "Replying to [comment:19 mvngu]:\n> This means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch), so only my patch needs review by anyone but me.\n\n\nThat patch looks **very** good.\n(I wished all module documentations had that quality.)\n\nI'll only add some more doctests and perhaps edit some comments.\n\nI think improvements to the algorithm can be done on another ticket.\n\n-Leif",
     "created_at": "2010-05-02T19:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8765",
     "type": "issue_comment",
@@ -578,6 +581,7 @@ archive/issue_comments_080090.json:
 
 Replying to [comment:19 mvngu]:
 > This means I have reviewed [trac_8765-huffman.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8765/trac_8765-huffman.patch), so only my patch needs review by anyone but me.
+
 
 That patch looks **very** good.
 (I wished all module documentations had that quality.)

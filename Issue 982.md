@@ -3,7 +3,7 @@
 archive/issues_000982.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\n\nbut it should be\n\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: f = abs(x)\nsage: latex(f)\n\\abs \\left( x \\right)\n```\n\nbut it should be\n\n```\nsage: latex(f)\n\\mathrm{abs} \\left| x \\right|\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/982\n\n",
     "created_at": "2007-10-24T17:39:00Z",
     "labels": [
         "component: calculus",
@@ -18,22 +18,18 @@ archive/issues_000982.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: f = abs(x)
 sage: latex(f)
 \abs \left( x \right)
 ```
 
-
 but it should be
-
 
 ```
 sage: latex(f)
 \mathrm{abs} \left| x \right|
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/982
 
@@ -82,7 +78,7 @@ Changing status from new to assigned.
 archive/issue_comments_005991.json:
 ```json
 {
-    "body": "Oops.  I mean to write, it should be:\n\n```\nsage: latex(abs)\n\\mathrm{abs}\nsage: latex(abs(x))\n\\left| x \\right|\n```\n",
+    "body": "Oops.  I mean to write, it should be:\n\n```\nsage: latex(abs)\n\\mathrm{abs}\nsage: latex(abs(x))\n\\left| x \\right|\n```",
     "created_at": "2007-10-24T17:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/982",
     "type": "issue_comment",
@@ -99,7 +95,6 @@ sage: latex(abs)
 sage: latex(abs(x))
 \left| x \right|
 ```
-
 
 
 

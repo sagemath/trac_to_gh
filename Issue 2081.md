@@ -3,7 +3,7 @@
 archive/issues_002081.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis should work:\n\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^2+2*x\nsage: f.exponents()\n[1, 2]\nsage: f.coefficients()\n[2, 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2081\n\n",
+    "body": "Assignee: somebody\n\nThis should work:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^2+2*x\nsage: f.exponents()\n[1, 2]\nsage: f.coefficients()\n[2, 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2081\n\n",
     "created_at": "2008-02-07T07:39:15Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: somebody
 
 This should work:
 
-
 ```
 sage: R.<x> = QQ[]
 sage: f = x^2+2*x
@@ -30,7 +29,6 @@ sage: f.exponents()
 sage: f.coefficients()
 [2, 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2081
 

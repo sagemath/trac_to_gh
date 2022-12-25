@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5508
 archive/issue_comments_042684.json:
 ```json
 {
-    "body": "Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by @JohnCremona created at 2009-03-16 17:25:42\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
+    "body": "Attachment [sage-5508.patch](tarball://root/attachments/some-uuid/ticket5508/sage-5508.patch) by @JohnCremona created at 2009-03-16 17:25:42\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
     "created_at": "2009-03-16T17:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ Expected nothing
 Got:
     a
 ```
-
 which is just a matter of deleting a rogue "sage: " prompt in front of one line of output.
 
 Fix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)
@@ -210,7 +209,7 @@ Yes, fine, let's leave it as it is.  I'll do the new changes separately, but not
 archive/issue_comments_042691.json:
 ```json
 {
-    "body": "Does this patch depend on any other patch set? I am seeing the following doctest failure:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/rings/number_field/number_field_ideal_rel.py\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_ideal_rel.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/number_field/number_field_ideal_rel.py\", line 598:\n    sage: z = I.element_1_mod(J); z\nExpected:\n    -21/2*b*a - 21/2\nGot:\n    -8*b*a + 24\n```\n\n\nCheers,\n\nMichael",
+    "body": "Does this patch depend on any other patch set? I am seeing the following doctest failure:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/rings/number_field/number_field_ideal_rel.py\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_ideal_rel.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/number_field/number_field_ideal_rel.py\", line 598:\n    sage: z = I.element_1_mod(J); z\nExpected:\n    -21/2*b*a - 21/2\nGot:\n    -8*b*a + 24\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T20:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -232,7 +231,6 @@ Expected:
 Got:
     -8*b*a + 24
 ```
-
 
 Cheers,
 
@@ -263,7 +261,7 @@ When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something els
 archive/issue_comments_042693.json:
 ```json
 {
-    "body": "Replying to [comment:9 fwclarke]:\n> When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.\n\nOk. Can you change the doctest since some other patches depend on this patch?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 fwclarke]:\n> When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.\n\n\nOk. Can you change the doctest since some other patches depend on this patch?\n\nCheers,\n\nMichael",
     "created_at": "2009-03-24T22:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -274,6 +272,7 @@ archive/issue_comments_042693.json:
 
 Replying to [comment:9 fwclarke]:
 > When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.
+
 
 Ok. Can you change the doctest since some other patches depend on this patch?
 
@@ -288,7 +287,7 @@ Michael
 archive/issue_comments_042694.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n\n> Ok. Can you change the doctest since some other patches depend on this patch?\n\nThe new `sage-5508.3.patch` has the revised doctest, but is otherwise the same as `sage-5508.2.patch`\n\nHope this solves the problem.\n\nFrancis",
+    "body": "Replying to [comment:10 mabshoff]:\n\n> Ok. Can you change the doctest since some other patches depend on this patch?\n\n\nThe new `sage-5508.3.patch` has the revised doctest, but is otherwise the same as `sage-5508.2.patch`\n\nHope this solves the problem.\n\nFrancis",
     "created_at": "2009-03-25T08:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5508",
     "type": "issue_comment",
@@ -300,6 +299,7 @@ archive/issue_comments_042694.json:
 Replying to [comment:10 mabshoff]:
 
 > Ok. Can you change the doctest since some other patches depend on this patch?
+
 
 The new `sage-5508.3.patch` has the revised doctest, but is otherwise the same as `sage-5508.2.patch`
 

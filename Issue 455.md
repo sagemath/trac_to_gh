@@ -133,7 +133,7 @@ On the other hand, we'll probably miss fftw, since I understand that in at least
 archive/issue_comments_002266.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> IIRC, fftw is stripped out of the scipy 0.7 release, so this problem may go away, right?\n\nIIRC there is still some fft support, but the point is that we should not pick up random crap. \n\n> On the other hand, we'll probably miss fftw, since I understand that in at least some cases, it is faster than the default scipy fftpack.\n\nYes, we need to figure out what to do about that. \n\nI have changed the ticket summary to reflect the intention. I know how to do this, so we can do it during the scipy 0.7 update.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jason]:\n> IIRC, fftw is stripped out of the scipy 0.7 release, so this problem may go away, right?\n\n\nIIRC there is still some fft support, but the point is that we should not pick up random crap. \n\n> On the other hand, we'll probably miss fftw, since I understand that in at least some cases, it is faster than the default scipy fftpack.\n\n\nYes, we need to figure out what to do about that. \n\nI have changed the ticket summary to reflect the intention. I know how to do this, so we can do it during the scipy 0.7 update.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-12T10:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
@@ -145,9 +145,11 @@ archive/issue_comments_002266.json:
 Replying to [comment:4 jason]:
 > IIRC, fftw is stripped out of the scipy 0.7 release, so this problem may go away, right?
 
+
 IIRC there is still some fft support, but the point is that we should not pick up random crap. 
 
 > On the other hand, we'll probably miss fftw, since I understand that in at least some cases, it is faster than the default scipy fftpack.
+
 
 Yes, we need to figure out what to do about that. 
 
@@ -182,7 +184,7 @@ Scipy is now in version 0.7.0 in Sage.  Has this been done elsewhere in the mean
 archive/issue_comments_002268.json:
 ```json
 {
-    "body": "I wonder if #9208 and #9210 make it so that you don't need to remove /sw from your path anymore.\n\nI don't believe that fftw3 is used anymore in scipy:\n\n\n```\n~/sage% grep \"lfftw3\" install.log\n~/sage%  \n```\n\n\nSo I think this ticket can safely be closed.",
+    "body": "I wonder if #9208 and #9210 make it so that you don't need to remove /sw from your path anymore.\n\nI don't believe that fftw3 is used anymore in scipy:\n\n```\n~/sage% grep \"lfftw3\" install.log\n~/sage%  \n```\n\nSo I think this ticket can safely be closed.",
     "created_at": "2010-06-11T06:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
@@ -195,12 +197,10 @@ I wonder if #9208 and #9210 make it so that you don't need to remove /sw from yo
 
 I don't believe that fftw3 is used anymore in scipy:
 
-
 ```
 ~/sage% grep "lfftw3" install.log
 ~/sage%  
 ```
-
 
 So I think this ticket can safely be closed.
 
@@ -229,7 +229,7 @@ archive/issue_comments_002269.json:
 archive/issue_comments_002270.json:
 ```json
 {
-    "body": "> I wonder if #9208 and #9210 make it so that you don't need to remove /sw from your path anymore.\nThat might be dangerous.\n> So I think this ticket can safely be closed.\nSo... positive review, sage-invalid?  I'll let you make the call.",
+    "body": "> I wonder if #9208 and #9210 make it so that you don't need to remove /sw from your path anymore.\n\nThat might be dangerous.\n> So I think this ticket can safely be closed.\nSo... positive review, sage-invalid?  I'll let you make the call.",
     "created_at": "2012-07-07T04:12:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/455",
     "type": "issue_comment",
@@ -239,6 +239,7 @@ archive/issue_comments_002270.json:
 ```
 
 > I wonder if #9208 and #9210 make it so that you don't need to remove /sw from your path anymore.
+
 That might be dangerous.
 > So I think this ticket can safely be closed.
 So... positive review, sage-invalid?  I'll let you make the call.

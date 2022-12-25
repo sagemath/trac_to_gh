@@ -3,7 +3,7 @@
 archive/issues_003393.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n> There is no function \"sage_search\", which is surely causing a lot\n> of confusion here.\n\nAha.  Maybe I took the top of page 9 of the posted PDF of _Sage\nProgramming Guide_ too literally:\n\n\"Using sage_search from the Sage prompt or grep one can easily find\naforementioned keywords . . . .\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3393\n\n",
+    "body": "Assignee: tbd\n\n```\n> There is no function \"sage_search\", which is surely causing a lot\n> of confusion here.\n\nAha.  Maybe I took the top of page 9 of the posted PDF of _Sage\nProgramming Guide_ too literally:\n\n\"Using sage_search from the Sage prompt or grep one can easily find\naforementioned keywords . . . .\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3393\n\n",
     "created_at": "2008-06-11T02:11:05Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_003393.json:
 ```
 Assignee: tbd
 
-
 ```
 > There is no function "sage_search", which is surely causing a lot
 > of confusion here.
@@ -29,7 +28,6 @@ Programming Guide_ too literally:
 "Using sage_search from the Sage prompt or grep one can easily find
 aforementioned keywords . . . ."
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3393
 

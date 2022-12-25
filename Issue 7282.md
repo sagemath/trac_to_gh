@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7282
 archive/issue_comments_060493.json:
 ```json
 {
-    "body": "NOTE:  I discovered that if I comment out the lines \n\n```\n#from hashlib import sha1\n#try:\n    #from hashlib import sha1\n    #raise ImportError\n#except ImportError:\n#    from sha import new as sha1\n```\n\nin jinja/loaders.py then `python setup.py build` doesn't segfault, though\ninstalling does.  However, I can copy the build/lib*/jinja directory over to \nsite-packages by hand and it seems to work.   \n\nSimilar remarks apply to Sphinx.",
+    "body": "NOTE:  I discovered that if I comment out the lines \n\n```\n#from hashlib import sha1\n#try:\n    #from hashlib import sha1\n    #raise ImportError\n#except ImportError:\n#    from sha import new as sha1\n```\nin jinja/loaders.py then `python setup.py build` doesn't segfault, though\ninstalling does.  However, I can copy the build/lib*/jinja directory over to \nsite-packages by hand and it seems to work.   \n\nSimilar remarks apply to Sphinx.",
     "created_at": "2009-10-25T01:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
@@ -50,7 +50,6 @@ NOTE:  I discovered that if I comment out the lines
 #except ImportError:
 #    from sha import new as sha1
 ```
-
 in jinja/loaders.py then `python setup.py build` doesn't segfault, though
 installing does.  However, I can copy the build/lib*/jinja directory over to 
 site-packages by hand and it seems to work.   
@@ -82,7 +81,7 @@ We really should try to make sure that there are no problems with hashlib since 
 archive/issue_comments_060495.json:
 ```json
 {
-    "body": "The problem occurs somewhere with the optional speedups extension.  We can (temporarily) work around this by doing \n\n\n```\npython setup.py --without-speedups install\n```\n\n\non Cygwin.",
+    "body": "The problem occurs somewhere with the optional speedups extension.  We can (temporarily) work around this by doing \n\n```\npython setup.py --without-speedups install\n```\n\non Cygwin.",
     "created_at": "2009-10-27T15:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
@@ -93,11 +92,9 @@ archive/issue_comments_060495.json:
 
 The problem occurs somewhere with the optional speedups extension.  We can (temporarily) work around this by doing 
 
-
 ```
 python setup.py --without-speedups install
 ```
-
 
 on Cygwin.
 

@@ -3,7 +3,7 @@
 archive/issues_006224.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis is after the cache is warm, otherwise it's even worse: \n\n\n```\nRobert-Bradshaws-Laptop:~/sage robert$ echo \"\" | time sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: referee\nsage: sage: \nExiting SAGE (CPU time 0m0.08s, Wall time 0m0.17s).\n        2.58 real         1.23 user         1.19 sys\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nWe need to go through and audit the startup imports again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6224\n\n",
+    "body": "Assignee: tbd\n\nThis is after the cache is warm, otherwise it's even worse: \n\n```\nRobert-Bradshaws-Laptop:~/sage robert$ echo \"\" | time sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: referee\nsage: sage: \nExiting SAGE (CPU time 0m0.08s, Wall time 0m0.17s).\n        2.58 real         1.23 user         1.19 sys\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\nWe need to go through and audit the startup imports again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6224\n\n",
     "created_at": "2009-06-05T10:16:36Z",
     "labels": [
         "component: performance",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 This is after the cache is warm, otherwise it's even worse: 
 
-
 ```
 Robert-Bradshaws-Laptop:~/sage robert$ echo "" | time sage
 ----------------------------------------------------------------------
@@ -32,7 +31,6 @@ Exiting SAGE (CPU time 0m0.08s, Wall time 0m0.17s).
 | Sage Version 4.0, Release Date: 2009-05-29                         |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 We need to go through and audit the startup imports again. 
 

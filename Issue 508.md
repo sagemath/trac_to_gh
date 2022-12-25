@@ -3,7 +3,7 @@
 archive/issues_000508.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
+    "body": "Assignee: @williamstein\n\nCreate any script, say test.sage.  The following should work but doesn't:\n\n```\n  # sage -c \"load test.sage\"\nTraceback (most recent call last):\n  File \"/home/was/s/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/home/was/.sage//temp/sage/25215//tmp_0\", line 1\n    load test.sage\n            ^\nSyntaxError: invalid syntax\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/508\n\n",
     "created_at": "2007-08-29T08:19:22Z",
     "labels": [
         "component: algebraic geometry",
@@ -30,7 +30,6 @@ Traceback (most recent call last):
             ^
 SyntaxError: invalid syntax
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/508
 
@@ -87,7 +86,7 @@ So I vote for 'wontfix' for this bug.
 archive/issue_comments_002535.json:
 ```json
 {
-    "body": "> So I vote for 'wontfix' for this bug.\n\nJust because you couldn't fix it and there is a workaround doesn't mean it isn't a bug.\n\nAnd this is still a bug in sage-3.2:\n\n```\nteragon:tmp wstein$ more a.sage\nprint 2^3\nteragon:tmp wstein$ sage -c \"load a.sage\"\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/Users/wstein/.sage//temp/teragon.local/98089//tmp_0\", line 1\n    load a.sage\n         ^\nSyntaxError: invalid syntax\n\n```\n",
+    "body": "> So I vote for 'wontfix' for this bug.\n\n\nJust because you couldn't fix it and there is a workaround doesn't mean it isn't a bug.\n\nAnd this is still a bug in sage-3.2:\n\n```\nteragon:tmp wstein$ more a.sage\nprint 2^3\nteragon:tmp wstein$ sage -c \"load a.sage\"\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/local/bin/sage-eval\", line 10, in <module>\n    eval(compile(s,tmp_filename(),'exec'))\n  File \"/Users/wstein/.sage//temp/teragon.local/98089//tmp_0\", line 1\n    load a.sage\n         ^\nSyntaxError: invalid syntax\n\n```",
     "created_at": "2008-10-23T23:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
@@ -97,6 +96,7 @@ archive/issue_comments_002535.json:
 ```
 
 > So I vote for 'wontfix' for this bug.
+
 
 Just because you couldn't fix it and there is a workaround doesn't mean it isn't a bug.
 
@@ -115,7 +115,6 @@ Traceback (most recent call last):
 SyntaxError: invalid syntax
 
 ```
-
 
 
 
@@ -146,7 +145,7 @@ It won't work with files that have spaces in their name because sage, sage-sage,
 archive/issue_comments_002537.json:
 ```json
 {
-    "body": "This doesn't work because when sage-eval gets run the working directory is local/bin/, so the file test.sage isn't found.  I bet you tested this patch with test.sage in SAGE_ROOT/local/bin/, which is the only case when this will work:\n\n```\nteragon-2:sage-3.2 wstein$ more test.sage\nprint \"Hi\"\nteragon-2:sage-3.2 wstein$ ./sage -c \"load test.sage\"\n/Users/wstein/sage/build/sage-3.2/local/bin/sage-preparse: File test.sage is missing\npython: can't open file 'test.py': [Errno 2] No such file or directory\nteragon-2:sage-3.2 wstein$ cp test.sage local/bin/\nteragon-2:sage-3.2 wstein$ ./sage -c \"load test.sage\"\nHi\n```\n",
+    "body": "This doesn't work because when sage-eval gets run the working directory is local/bin/, so the file test.sage isn't found.  I bet you tested this patch with test.sage in SAGE_ROOT/local/bin/, which is the only case when this will work:\n\n```\nteragon-2:sage-3.2 wstein$ more test.sage\nprint \"Hi\"\nteragon-2:sage-3.2 wstein$ ./sage -c \"load test.sage\"\n/Users/wstein/sage/build/sage-3.2/local/bin/sage-preparse: File test.sage is missing\npython: can't open file 'test.py': [Errno 2] No such file or directory\nteragon-2:sage-3.2 wstein$ cp test.sage local/bin/\nteragon-2:sage-3.2 wstein$ ./sage -c \"load test.sage\"\nHi\n```",
     "created_at": "2008-11-27T07:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/508",
     "type": "issue_comment",
@@ -167,7 +166,6 @@ teragon-2:sage-3.2 wstein$ cp test.sage local/bin/
 teragon-2:sage-3.2 wstein$ ./sage -c "load test.sage"
 Hi
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_001040.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\n\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
+    "body": "Assignee: @williamstein\n\nNow that we allow notation such as\n\n```\nQQ[2^(1/3)]\n```\nto create a number field, the following is totally wrong and\nneeds to be fixed ASAP:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: K\nUnivariate Polynomial Ring in a over Rational Field\nsage: parent(a)\nUnivariate Polynomial Ring in a over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1040\n\n",
     "created_at": "2007-10-31T18:14:03Z",
     "labels": [
         "component: number theory",
@@ -24,10 +24,8 @@ Now that we allow notation such as
 ```
 QQ[2^(1/3)]
 ```
-
 to create a number field, the following is totally wrong and
 needs to be fixed ASAP:
-
 
 ```
 sage: K.<a> = QQ[2^(1/3)]
@@ -36,7 +34,6 @@ Univariate Polynomial Ring in a over Rational Field
 sage: parent(a)
 Univariate Polynomial Ring in a over Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1040
 
@@ -49,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1040
 archive/issue_comments_006322.json:
 ```json
 {
-    "body": "More:\n\nThis is because the preparser is written stupidly in this case:\n\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[2^(1/3)]')\n'K = QQ[\"a\"]; (a,) = K._first_ngens(Integer(1))'\n```\n\n\nI think this is what *should* happen:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[2^(1/3)]')\n'K = QQ[\"2^(1/3)\"]; (a,) = K._first_ngens(Integer(1))'\n```\n\n\nThe previous behavior should only happen in the case when nothing is between brackets, as a sort of short cut:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[]')\n'K = QQ[\"a\"]; (a,) = K._first_ngens(Integer(1))'\n```\n",
+    "body": "More:\n\nThis is because the preparser is written stupidly in this case:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[2^(1/3)]')\n'K = QQ[\"a\"]; (a,) = K._first_ngens(Integer(1))'\n```\n\nI think this is what *should* happen:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[2^(1/3)]')\n'K = QQ[\"2^(1/3)\"]; (a,) = K._first_ngens(Integer(1))'\n```\n\nThe previous behavior should only happen in the case when nothing is between brackets, as a sort of short cut:\n\n```\nsage: K.<a> = QQ[2^(1/3)]\nsage: preparse('K.<a> = QQ[]')\n'K = QQ[\"a\"]; (a,) = K._first_ngens(Integer(1))'\n```",
     "created_at": "2007-11-01T07:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1040",
     "type": "issue_comment",
@@ -62,13 +59,11 @@ More:
 
 This is because the preparser is written stupidly in this case:
 
-
 ```
 sage: K.<a> = QQ[2^(1/3)]
 sage: preparse('K.<a> = QQ[2^(1/3)]')
 'K = QQ["a"]; (a,) = K._first_ngens(Integer(1))'
 ```
-
 
 I think this is what *should* happen:
 
@@ -78,7 +73,6 @@ sage: preparse('K.<a> = QQ[2^(1/3)]')
 'K = QQ["2^(1/3)"]; (a,) = K._first_ngens(Integer(1))'
 ```
 
-
 The previous behavior should only happen in the case when nothing is between brackets, as a sort of short cut:
 
 ```
@@ -86,7 +80,6 @@ sage: K.<a> = QQ[2^(1/3)]
 sage: preparse('K.<a> = QQ[]')
 'K = QQ["a"]; (a,) = K._first_ngens(Integer(1))'
 ```
-
 
 
 

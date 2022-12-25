@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087399.json:
 ```json
 {
-    "body": "Hi Volker,\n\nI have a bit limited computer time this week, so I can be slow in responses and will probably wait till next week for final positive verdicts.\n\nComments on the current version:\n\n1) `ray_basis` assumes that rays start from a linear independent set. I would rather not make such an assumption since otherwise every cone should sort its rays  during construction (and it is not really even \"sorting\", it is just selecting a certain subset and putting it in front) and cones of fans will not be able to have the order of rays induced from the fan. On the other hand, it is easy to get basis as something like\n\n```\nself.rays(self.ray_matrix().pivots())\n```\n\n(I didn't check the exact command, but it is possible to get indices of pivot columns).\n\n2) (very minor) Maybe `is_origin` is more intuitive than `is_trivial`? I am fine with both names, just a thought. And probably this function should be added to `IntegralRayCollection`, so that it is available for fans as well. Such little functions were exactly the reason for creating that class.\n\n3) I am against functions and attributes with direct names of lattices. I want to be able to have cones in any lattice and call any functions on them. If lattice names are hard-coded into functions it makes it confusing to call them for cones from the dual lattice. I agree that `N` and `M` are standard, but in mirror symmetry it is also common to perform operations on both sides and it would be better if it was possible to do it without making a representative of each fan in the `N`-lattice.\n\n4) It seems that some suffix like `_basis` would be nice for functions that return not the actual lattice in the sense of a `ToricLattice` object, but rather a sequence of elements that generate it.\n\n5) Related to 4), but perhaps a note for the future todo list rather than something to be implemented in this patch. Ideally, I think all these methods should return `ToricLattice` objects with canonical coercion maps between appropriate lattices. I don't know how easy it will be to implement it, but it seems it should be more natural and convenient if it works. As I understand, tests like belonging to a lattice will then work not only for the actual lattice elements, but also for elements from those related lattices directly. I can try to play with it in a week, once I am home. By the way, if 4) is done now, then 5) can be done later without any name conflicts by adding functions without prefix. \n\nLet me know what you think!\n\nAndrey",
+    "body": "Hi Volker,\n\nI have a bit limited computer time this week, so I can be slow in responses and will probably wait till next week for final positive verdicts.\n\nComments on the current version:\n\n1) `ray_basis` assumes that rays start from a linear independent set. I would rather not make such an assumption since otherwise every cone should sort its rays  during construction (and it is not really even \"sorting\", it is just selecting a certain subset and putting it in front) and cones of fans will not be able to have the order of rays induced from the fan. On the other hand, it is easy to get basis as something like\n\n```\nself.rays(self.ray_matrix().pivots())\n```\n(I didn't check the exact command, but it is possible to get indices of pivot columns).\n\n2) (very minor) Maybe `is_origin` is more intuitive than `is_trivial`? I am fine with both names, just a thought. And probably this function should be added to `IntegralRayCollection`, so that it is available for fans as well. Such little functions were exactly the reason for creating that class.\n\n3) I am against functions and attributes with direct names of lattices. I want to be able to have cones in any lattice and call any functions on them. If lattice names are hard-coded into functions it makes it confusing to call them for cones from the dual lattice. I agree that `N` and `M` are standard, but in mirror symmetry it is also common to perform operations on both sides and it would be better if it was possible to do it without making a representative of each fan in the `N`-lattice.\n\n4) It seems that some suffix like `_basis` would be nice for functions that return not the actual lattice in the sense of a `ToricLattice` object, but rather a sequence of elements that generate it.\n\n5) Related to 4), but perhaps a note for the future todo list rather than something to be implemented in this patch. Ideally, I think all these methods should return `ToricLattice` objects with canonical coercion maps between appropriate lattices. I don't know how easy it will be to implement it, but it seems it should be more natural and convenient if it works. As I understand, tests like belonging to a lattice will then work not only for the actual lattice elements, but also for elements from those related lattices directly. I can try to play with it in a week, once I am home. By the way, if 4) is done now, then 5) can be done later without any name conflicts by adding functions without prefix. \n\nLet me know what you think!\n\nAndrey",
     "created_at": "2010-06-21T20:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ Comments on the current version:
 ```
 self.rays(self.ray_matrix().pivots())
 ```
-
 (I didn't check the exact command, but it is possible to get indices of pivot columns).
 
 2) (very minor) Maybe `is_origin` is more intuitive than `is_trivial`? I am fine with both names, just a thought. And probably this function should be added to `IntegralRayCollection`, so that it is available for fans as well. Such little functions were exactly the reason for creating that class.
@@ -179,7 +178,7 @@ Updated patch
 archive/issue_comments_087404.json:
 ```json
 {
-    "body": "2) `is_trivial` it is then!\n\nAll methods that go into `IntegralRayCollection` should make sense AND have the same implementation for cones and fans. Mostly things like ray/rays/ray_matrix/lattice.\n\n`is_simplicial` makes sense for cones and fans but has different code and definition, so such functions must be placed separately into cone and fan classes. I am pretty sure that I already put everything possible into ray collection class - I didn't plan it at all initially, but then got annoyed repeating ray accessing methods. Please return back the moved methods ;-) Things like containment checks are definitely different for cones and fans. Things like `lines` don't seem to make any sense for fans, so should not appear as valid methods.\n\n3) I would interpret `sigma.N()` more like `N(sigma)` rather than `N_sigma`. As I understand both notations are in use to denote complementary things and it does not add clarity.\n\nPerhaps a solution is to use names like `spanned_lattice`, `complementary_lattice` etc. (I just made up these names, so they probably deserve some further thinking/choosing), and make an option to add synonyms. E.g. there is some way in Sage to turn on creation of names automatically and to allow function-like syntax instead of methods. We can have a function like `beginner_mode` in toric modules (probably `fan` is the best place to put it, to allow simultaneous changes to cones and fans in the same place), which will do things like\n\n```\n...\nConvexRationalPolyhedralCone.N = ConvexRationalPolyhedralCone.spanned_lattice\n...\n```\n\nWhat do you think about it? If the name sounds too patronizing, we can choose something like `use_M_and_N_toric_lattices`. I do not want to have it by default, but as an option it gives the system more flexibility and makes it better.\n\n> 4,5) If I remember correctly then the \"sequence of generating lattice vectors\" ends up being used more often than the projection to the quotient lattice. So you might want to wait a bit before overengineering this part. \n\nAbsolutely, the only change in this direction that I would like to get in this patch are names more accurately representing what do they actually return. If they return a basis of something, then `something_basis` is more clear than just `something`. A *side effect* of this is that if we need to add `something` method later, it will be easy, but there is no necessity for this addition. I regret that `points` method of lattice polytopes returns a matrix, a list of points would be more convenient. If I had named this method `point_matrix` to start with, not only it would be more clear, but it would be trivial to add `points` method returning a list now.",
+    "body": "2) `is_trivial` it is then!\n\nAll methods that go into `IntegralRayCollection` should make sense AND have the same implementation for cones and fans. Mostly things like ray/rays/ray_matrix/lattice.\n\n`is_simplicial` makes sense for cones and fans but has different code and definition, so such functions must be placed separately into cone and fan classes. I am pretty sure that I already put everything possible into ray collection class - I didn't plan it at all initially, but then got annoyed repeating ray accessing methods. Please return back the moved methods ;-) Things like containment checks are definitely different for cones and fans. Things like `lines` don't seem to make any sense for fans, so should not appear as valid methods.\n\n3) I would interpret `sigma.N()` more like `N(sigma)` rather than `N_sigma`. As I understand both notations are in use to denote complementary things and it does not add clarity.\n\nPerhaps a solution is to use names like `spanned_lattice`, `complementary_lattice` etc. (I just made up these names, so they probably deserve some further thinking/choosing), and make an option to add synonyms. E.g. there is some way in Sage to turn on creation of names automatically and to allow function-like syntax instead of methods. We can have a function like `beginner_mode` in toric modules (probably `fan` is the best place to put it, to allow simultaneous changes to cones and fans in the same place), which will do things like\n\n```\n...\nConvexRationalPolyhedralCone.N = ConvexRationalPolyhedralCone.spanned_lattice\n...\n```\nWhat do you think about it? If the name sounds too patronizing, we can choose something like `use_M_and_N_toric_lattices`. I do not want to have it by default, but as an option it gives the system more flexibility and makes it better.\n\n> 4,5) If I remember correctly then the \"sequence of generating lattice vectors\" ends up being used more often than the projection to the quotient lattice. So you might want to wait a bit before overengineering this part. \n\n\nAbsolutely, the only change in this direction that I would like to get in this patch are names more accurately representing what do they actually return. If they return a basis of something, then `something_basis` is more clear than just `something`. A *side effect* of this is that if we need to add `something` method later, it will be easy, but there is no necessity for this addition. I regret that `points` method of lattice polytopes returns a matrix, a list of points would be more convenient. If I had named this method `point_matrix` to start with, not only it would be more clear, but it would be trivial to add `points` method returning a list now.",
     "created_at": "2010-06-22T21:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -203,10 +202,10 @@ Perhaps a solution is to use names like `spanned_lattice`, `complementary_lattic
 ConvexRationalPolyhedralCone.N = ConvexRationalPolyhedralCone.spanned_lattice
 ...
 ```
-
 What do you think about it? If the name sounds too patronizing, we can choose something like `use_M_and_N_toric_lattices`. I do not want to have it by default, but as an option it gives the system more flexibility and makes it better.
 
 > 4,5) If I remember correctly then the "sequence of generating lattice vectors" ends up being used more often than the projection to the quotient lattice. So you might want to wait a bit before overengineering this part. 
+
 
 Absolutely, the only change in this direction that I would like to get in this patch are names more accurately representing what do they actually return. If they return a basis of something, then `something_basis` is more clear than just `something`. A *side effect* of this is that if we need to add `something` method later, it will be easy, but there is no necessity for this addition. I regret that `points` method of lattice polytopes returns a matrix, a list of points would be more convenient. If I had named this method `point_matrix` to start with, not only it would be more clear, but it would be trivial to add `points` method returning a list now.
 
@@ -493,7 +492,7 @@ I'm not sure if the lattice computations are a used often enough "by hand" to wa
 archive/issue_comments_087417.json:
 ```json
 {
-    "body": "Personal taste: I like \"orthogonal\" more than \"perpendicular\" and it is a little shorter.\n\nI would like to have internal names in agreement with public ones, it makes it easier to read/modify and helps to avoid bugs, e.g. the following code looks strange:\n\n```\ndef sublattice_basis(self): \n    ...\n    if \"_sublattice_basis\" not in self.__dict__: \n        self._compute_N_and_N_complement() \n    return tuple( self._lattice(n) for n in self._N.rows() ) \n```\n\nIn general I think that the best name for caching the result of function `f` is `_f`, unless it leads to any conflicts. If you don't want to have too long names in the code, I think abbreviations are fine, as long as they still clearly relate to the original name, e.g. `perpendicular_sublattice_basis` can be cached in something like `_perp_sublat_b`.\n\nHow about also `_compute_N_and_N_complement` ===> `_split_ambient_lattice` or something like this?",
+    "body": "Personal taste: I like \"orthogonal\" more than \"perpendicular\" and it is a little shorter.\n\nI would like to have internal names in agreement with public ones, it makes it easier to read/modify and helps to avoid bugs, e.g. the following code looks strange:\n\n```\ndef sublattice_basis(self): \n    ...\n    if \"_sublattice_basis\" not in self.__dict__: \n        self._compute_N_and_N_complement() \n    return tuple( self._lattice(n) for n in self._N.rows() ) \n```\nIn general I think that the best name for caching the result of function `f` is `_f`, unless it leads to any conflicts. If you don't want to have too long names in the code, I think abbreviations are fine, as long as they still clearly relate to the original name, e.g. `perpendicular_sublattice_basis` can be cached in something like `_perp_sublat_b`.\n\nHow about also `_compute_N_and_N_complement` ===> `_split_ambient_lattice` or something like this?",
     "created_at": "2010-07-03T00:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -513,7 +512,6 @@ def sublattice_basis(self):
         self._compute_N_and_N_complement() 
     return tuple( self._lattice(n) for n in self._N.rows() ) 
 ```
-
 In general I think that the best name for caching the result of function `f` is `_f`, unless it leads to any conflicts. If you don't want to have too long names in the code, I think abbreviations are fine, as long as they still clearly relate to the original name, e.g. `perpendicular_sublattice_basis` can be cached in something like `_perp_sublat_b`.
 
 How about also `_compute_N_and_N_complement` ===> `_split_ambient_lattice` or something like this?
@@ -615,7 +613,7 @@ Note that you'll also need sublattices of sublattices if you want to introduce a
 archive/issue_comments_087422.json:
 ```json
 {
-    "body": "Actually, I have just tried the following:\n\n```\nsage: N = ToricLattice(3)\nsage: Ns = N.submodule([(1,1,0), (-1,1,0)])\nsage: Ns\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 1 0]\n[0 2 0]\nsage: Ns.ambient_module()\n3-d lattice N\nsage: Ns.ambient_vector_space()\nVector space of dimension 3 over Rational Field\nsage: Ns.basis()\n[\n(1, 1, 0),\n(0, 2, 0)\n]\nsage: N.basis()\n[\nN(1, 0, 0),\nN(0, 1, 0),\nN(0, 0, 1)\n]\nsage: Ns.basis_matrix()\n[1 1 0]\n[0 2 0]\nsage: type(Ns)\n<class 'sage.modules.free_module.FreeModule_submodule_pid_with_category'>\nsage: Ns.coordinates((2,4,0))\n[2, 1]\nsage: Ns.linear_combination_of_basis([2,1])\n(2, 4, 0)\n```\n\nSo it seems to me that submodules already work quite good for the purposes of `N_\\sigma` and `N(\\sigma)`, the only things that have to be addressed are `_repr_` and using toric lattice elements instead of generic vectors. It is also possible to construct submodules of submodules, so there is no problem there.\n\nFor quotients more care is necessary since in general they are not lattices. Perhaps a derived class can intercept the quotient method, construct a toric lattice if it is possible, and use the general framework otherwise, leaving toric category. There is no good defaul way to name the quotient lattice, so there should be a way to give this name somehow, but I think that is should be fixed once given. Maybe something like this should work:\n\n```\nsage: cone = ...\nsage: Q = cone.sublattice_quotient(\"Q\")\nsage: Q = cone.sublattice_quotient(\"R\")\n...\nValueError: cannot rename the quotient by sublattice complement!\nsage: Q.projection()\n```\n\nwhere Q is constructed as `cone.lattice().quotient(cone.sublattice_complement(), name=\"Q\")`.",
+    "body": "Actually, I have just tried the following:\n\n```\nsage: N = ToricLattice(3)\nsage: Ns = N.submodule([(1,1,0), (-1,1,0)])\nsage: Ns\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 1 0]\n[0 2 0]\nsage: Ns.ambient_module()\n3-d lattice N\nsage: Ns.ambient_vector_space()\nVector space of dimension 3 over Rational Field\nsage: Ns.basis()\n[\n(1, 1, 0),\n(0, 2, 0)\n]\nsage: N.basis()\n[\nN(1, 0, 0),\nN(0, 1, 0),\nN(0, 0, 1)\n]\nsage: Ns.basis_matrix()\n[1 1 0]\n[0 2 0]\nsage: type(Ns)\n<class 'sage.modules.free_module.FreeModule_submodule_pid_with_category'>\nsage: Ns.coordinates((2,4,0))\n[2, 1]\nsage: Ns.linear_combination_of_basis([2,1])\n(2, 4, 0)\n```\nSo it seems to me that submodules already work quite good for the purposes of `N_\\sigma` and `N(\\sigma)`, the only things that have to be addressed are `_repr_` and using toric lattice elements instead of generic vectors. It is also possible to construct submodules of submodules, so there is no problem there.\n\nFor quotients more care is necessary since in general they are not lattices. Perhaps a derived class can intercept the quotient method, construct a toric lattice if it is possible, and use the general framework otherwise, leaving toric category. There is no good defaul way to name the quotient lattice, so there should be a way to give this name somehow, but I think that is should be fixed once given. Maybe something like this should work:\n\n```\nsage: cone = ...\nsage: Q = cone.sublattice_quotient(\"Q\")\nsage: Q = cone.sublattice_quotient(\"R\")\n...\nValueError: cannot rename the quotient by sublattice complement!\nsage: Q.projection()\n```\nwhere Q is constructed as `cone.lattice().quotient(cone.sublattice_complement(), name=\"Q\")`.",
     "created_at": "2010-07-11T00:19:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -659,7 +657,6 @@ sage: Ns.coordinates((2,4,0))
 sage: Ns.linear_combination_of_basis([2,1])
 (2, 4, 0)
 ```
-
 So it seems to me that submodules already work quite good for the purposes of `N_\sigma` and `N(\sigma)`, the only things that have to be addressed are `_repr_` and using toric lattice elements instead of generic vectors. It is also possible to construct submodules of submodules, so there is no problem there.
 
 For quotients more care is necessary since in general they are not lattices. Perhaps a derived class can intercept the quotient method, construct a toric lattice if it is possible, and use the general framework otherwise, leaving toric category. There is no good defaul way to name the quotient lattice, so there should be a way to give this name somehow, but I think that is should be fixed once given. Maybe something like this should work:
@@ -672,7 +669,6 @@ sage: Q = cone.sublattice_quotient("R")
 ValueError: cannot rename the quotient by sublattice complement!
 sage: Q.projection()
 ```
-
 where Q is constructed as `cone.lattice().quotient(cone.sublattice_complement(), name="Q")`.
 
 
@@ -706,7 +702,7 @@ I have rewritten `ToricLattice` to completely mimic all classes of `FreeModule_o
 archive/issue_comments_087424.json:
 ```json
 {
-    "body": "I'm fine with the names, but submodules of `FreeModule` echelonizes the base:\n\n```\nsage: L = FreeModule(ZZ, 3)\nsage: Lsub = L.submodule( [[1,1,2],[4,3,2]] );\nsage: Lsub.gens()\n((1, 0, -4), (0, 1, 6))\n```\n\nFor toric purposes, we need generators to lie in the \"positive half-space\" (as defined by the cone spanning the sublattice) for one-dimensional sublattices.",
+    "body": "I'm fine with the names, but submodules of `FreeModule` echelonizes the base:\n\n```\nsage: L = FreeModule(ZZ, 3)\nsage: Lsub = L.submodule( [[1,1,2],[4,3,2]] );\nsage: Lsub.gens()\n((1, 0, -4), (0, 1, 6))\n```\nFor toric purposes, we need generators to lie in the \"positive half-space\" (as defined by the cone spanning the sublattice) for one-dimensional sublattices.",
     "created_at": "2010-07-13T15:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -723,7 +719,6 @@ sage: Lsub = L.submodule( [[1,1,2],[4,3,2]] );
 sage: Lsub.gens()
 ((1, 0, -4), (0, 1, 6))
 ```
-
 For toric purposes, we need generators to lie in the "positive half-space" (as defined by the cone spanning the sublattice) for one-dimensional sublattices.
 
 
@@ -870,7 +865,7 @@ Updated patch for changes in ToricLattice_quotient
 archive/issue_comments_087432.json:
 ```json
 {
-    "body": "I fixed some typos and broke very long lines in doctests (such things make the documentation look a bit weird when it is shown in narrow windows).\n\nI also think that optional `point` argument should be removed from `sublattice_quotient` since in the new framework `cone.sublattice_quotient(p)` is equivalent to `cone.sublattice_quotient()(p)` and while the second variant does not look quite as nice it has the advantage of always using the same constructor for elements with different forms of input which are documented in a single place. For example, it is possible to write\n\n```\nsage: c = Cone([(1,0)])\nsage: c.sublattice_quotient()(0)\nN[0, 0]\nsage: c.sublattice_quotient()(0,1)\nN[0, 1]\nsage: c.sublattice_quotient()([0,1])\nN[0, 1]\n```\n\nbut\n\n```\nsage: c.sublattice_quotient(0,1)\n...\nTypeError: sublattice_quotient() takes at most 2 arguments (3 given)\n```\n\nIt will also make all cone-lattice methods more uniform in their behaviour (i.e. they don't take any arguments). In fact, by the end of writing this I got so convinced that this is the way to go that my patch will do the proposed change ;-) It may affect the subsequent patches, if this functionality was used already, but corrections will be trivial.\n\nIf you are fine with the changes, this ticket finally gets positive review!!!",
+    "body": "I fixed some typos and broke very long lines in doctests (such things make the documentation look a bit weird when it is shown in narrow windows).\n\nI also think that optional `point` argument should be removed from `sublattice_quotient` since in the new framework `cone.sublattice_quotient(p)` is equivalent to `cone.sublattice_quotient()(p)` and while the second variant does not look quite as nice it has the advantage of always using the same constructor for elements with different forms of input which are documented in a single place. For example, it is possible to write\n\n```\nsage: c = Cone([(1,0)])\nsage: c.sublattice_quotient()(0)\nN[0, 0]\nsage: c.sublattice_quotient()(0,1)\nN[0, 1]\nsage: c.sublattice_quotient()([0,1])\nN[0, 1]\n```\nbut\n\n```\nsage: c.sublattice_quotient(0,1)\n...\nTypeError: sublattice_quotient() takes at most 2 arguments (3 given)\n```\nIt will also make all cone-lattice methods more uniform in their behaviour (i.e. they don't take any arguments). In fact, by the end of writing this I got so convinced that this is the way to go that my patch will do the proposed change ;-) It may affect the subsequent patches, if this functionality was used already, but corrections will be trivial.\n\nIf you are fine with the changes, this ticket finally gets positive review!!!",
     "created_at": "2010-08-11T07:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -892,7 +887,6 @@ N[0, 1]
 sage: c.sublattice_quotient()([0,1])
 N[0, 1]
 ```
-
 but
 
 ```
@@ -900,7 +894,6 @@ sage: c.sublattice_quotient(0,1)
 ...
 TypeError: sublattice_quotient() takes at most 2 arguments (3 given)
 ```
-
 It will also make all cone-lattice methods more uniform in their behaviour (i.e. they don't take any arguments). In fact, by the end of writing this I got so convinced that this is the way to go that my patch will do the proposed change ;-) It may affect the subsequent patches, if this functionality was used already, but corrections will be trivial.
 
 If you are fine with the changes, this ticket finally gets positive review!!!
@@ -930,7 +923,7 @@ On the other hand, there is a clean way to get consistency and avoid extra paren
 archive/issue_comments_087434.json:
 ```json
 {
-    "body": "Attachment [trac_9296_reviewer.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_reviewer.patch) by @novoselt created at 2010-08-13 04:42:08\n\nIn addition to other changes, in the new version all arguments to cone related lattices are passed to these lattices, so it is possible to write\n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient(0,1)\nN[0, 1]\n```\n\netc. and it will mean exactly the same as \n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient()(0,1)\nN[0, 1]\n```\n\nThis is done for all sub-/quotient lattice functions except for \"relative\" ones since for those, I think, it is more natural not to mix cone and point arguments. The documentation does not describe what exactly can be passed to these functions, it is just \"something that defines an element\", so those who do need description will have to get a lattice and then check how its elements are constructed.",
+    "body": "Attachment [trac_9296_reviewer.patch](tarball://root/attachments/some-uuid/ticket9296/trac_9296_reviewer.patch) by @novoselt created at 2010-08-13 04:42:08\n\nIn addition to other changes, in the new version all arguments to cone related lattices are passed to these lattices, so it is possible to write\n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient(0,1)\nN[0, 1]\n```\netc. and it will mean exactly the same as \n\n```\nsage: sage: c = Cone([(1,0)])\nsage: sage: c.sublattice_quotient()(0,1)\nN[0, 1]\n```\nThis is done for all sub-/quotient lattice functions except for \"relative\" ones since for those, I think, it is more natural not to mix cone and point arguments. The documentation does not describe what exactly can be passed to these functions, it is just \"something that defines an element\", so those who do need description will have to get a lattice and then check how its elements are constructed.",
     "created_at": "2010-08-13T04:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -948,7 +941,6 @@ sage: sage: c = Cone([(1,0)])
 sage: sage: c.sublattice_quotient(0,1)
 N[0, 1]
 ```
-
 etc. and it will mean exactly the same as 
 
 ```
@@ -956,7 +948,6 @@ sage: sage: c = Cone([(1,0)])
 sage: sage: c.sublattice_quotient()(0,1)
 N[0, 1]
 ```
-
 This is done for all sub-/quotient lattice functions except for "relative" ones since for those, I think, it is more natural not to mix cone and point arguments. The documentation does not describe what exactly can be passed to these functions, it is just "something that defines an element", so those who do need description will have to get a lattice and then check how its elements are constructed.
 
 
@@ -984,7 +975,7 @@ Looks good! I, too, prefer `<=80` chars per line for the docstrings, I just didn
 archive/issue_comments_087436.json:
 ```json
 {
-    "body": "Replying to [comment:26 vbraun]:\n> Looks good! I, too, prefer `<=80` chars per line for the docstrings, I just didn't know that you can linebreak the sage output and still pass the doctests.\n\nAs I understand, doctests are sensitive to whitespace, but you can break lines at any space. I am not sure if there is any official description of this feature somewhere, but it is certainly useful for complicated objects. Positive review!",
+    "body": "Replying to [comment:26 vbraun]:\n> Looks good! I, too, prefer `<=80` chars per line for the docstrings, I just didn't know that you can linebreak the sage output and still pass the doctests.\n\n\nAs I understand, doctests are sensitive to whitespace, but you can break lines at any space. I am not sure if there is any official description of this feature somewhere, but it is certainly useful for complicated objects. Positive review!",
     "created_at": "2010-08-13T21:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9296",
     "type": "issue_comment",
@@ -995,6 +986,7 @@ archive/issue_comments_087436.json:
 
 Replying to [comment:26 vbraun]:
 > Looks good! I, too, prefer `<=80` chars per line for the docstrings, I just didn't know that you can linebreak the sage output and still pass the doctests.
+
 
 As I understand, doctests are sensitive to whitespace, but you can break lines at any space. I am not sure if there is any official description of this feature somewhere, but it is certainly useful for complicated objects. Positive review!
 

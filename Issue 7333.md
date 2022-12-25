@@ -54,7 +54,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061211.json:
 ```json
 {
-    "body": "I get a bunch of `--optional` doctest errors if only CBC but not GLPK is installed. Most of them are fine (they point out that I need GLPK), but this one isn't:\n\n\n```\n    sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC\nExpected:\n    2.0\nGot:\n    0.0\n```\n\n\nOther than that, it looks fine. I have been using it over the last week or so and cannot report any problems.",
+    "body": "I get a bunch of `--optional` doctest errors if only CBC but not GLPK is installed. Most of them are fine (they point out that I need GLPK), but this one isn't:\n\n```\n    sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC\nExpected:\n    2.0\nGot:\n    0.0\n```\n\nOther than that, it looks fine. I have been using it over the last week or so and cannot report any problems.",
     "created_at": "2009-12-08T13:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7333",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ archive/issue_comments_061211.json:
 
 I get a bunch of `--optional` doctest errors if only CBC but not GLPK is installed. Most of them are fine (they point out that I need GLPK), but this one isn't:
 
-
 ```
     sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC
 Expected:
@@ -73,7 +72,6 @@ Expected:
 Got:
     0.0
 ```
-
 
 Other than that, it looks fine. I have been using it over the last week or so and cannot report any problems.
 
@@ -164,7 +162,7 @@ Nathann
 archive/issue_comments_061216.json:
 ```json
 {
-    "body": "Line 477:\n\n\n```\n        EXAMPLE::\n\n            sage: p = MixedIntegerLinearProgram()\n            sage: x = p.new_variable()\n            sage: y = p.new_variable(dim=2)\n            sage: p.set_objective(x[3] + y[2][9] + x[5])\n            sage: p.add_constraint(x[3] + y[2][9] + 2*x[5], max=2)\n            sage: p.solve() # optional - requires Glpk or COIN-OR/CBC\n            2.0\n            sage: #\n            sage: # Returns the optimal value of x[3]\n>>>         sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC\n            2.0\n```\n",
+    "body": "Line 477:\n\n```\n        EXAMPLE::\n\n            sage: p = MixedIntegerLinearProgram()\n            sage: x = p.new_variable()\n            sage: y = p.new_variable(dim=2)\n            sage: p.set_objective(x[3] + y[2][9] + x[5])\n            sage: p.add_constraint(x[3] + y[2][9] + 2*x[5], max=2)\n            sage: p.solve() # optional - requires Glpk or COIN-OR/CBC\n            2.0\n            sage: #\n            sage: # Returns the optimal value of x[3]\n>>>         sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC\n            2.0\n```",
     "created_at": "2009-12-08T14:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7333",
     "type": "issue_comment",
@@ -174,7 +172,6 @@ archive/issue_comments_061216.json:
 ```
 
 Line 477:
-
 
 ```
         EXAMPLE::
@@ -191,7 +188,6 @@ Line 477:
 >>>         sage: p.get_values(x[3]) # optional - requires Glpk or COIN-OR/CBC
             2.0
 ```
-
 
 
 

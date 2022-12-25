@@ -3,7 +3,7 @@
 archive/issues_002159.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThis is a followup of {#2111}.\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nI.dimension()\n...\n   ? no ring active\n   ? `ideal` is undefined\n   ? error occurred in STDIN line 170: `ideal sage85=[x + 1431655773*y^4, y^12 + 54*y^2];\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2159\n\n",
+    "body": "Assignee: @malb\n\nThis is a followup of {#2111}.\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nI.dimension()\n...\n   ? no ring active\n   ? `ideal` is undefined\n   ? error occurred in STDIN line 170: `ideal sage85=[x + 1431655773*y^4, y^12 + 54*y^2];\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2159\n\n",
     "created_at": "2008-02-14T17:25:14Z",
     "labels": [
         "component: commutative algebra",
@@ -35,7 +35,6 @@ sage: I.variety()
    ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`
    ? expected ring-expression. type 'help ring;'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2159
 
@@ -104,7 +103,7 @@ I'll submit a separate patch for variety, hopefully tomorrow.
 archive/issue_comments_014145.json:
 ```json
 {
-    "body": "**Review**\n* the doctest output of `verbose` should be changed to ignore the line numbers:\n\n```\nverbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation. \n```\n\n* `deg_lms` is referenced in a comment but doesn't exist;\n* could you give a reference for the algorithm implemented?",
+    "body": "**Review**\n* the doctest output of `verbose` should be changed to ignore the line numbers:\n\n```\nverbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation. \n```\n* `deg_lms` is referenced in a comment but doesn't exist;\n* could you give a reference for the algorithm implemented?",
     "created_at": "2009-01-24T11:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2159",
     "type": "issue_comment",
@@ -119,7 +118,6 @@ archive/issue_comments_014145.json:
 ```
 verbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation. 
 ```
-
 * `deg_lms` is referenced in a comment but doesn't exist;
 * could you give a reference for the algorithm implemented?
 

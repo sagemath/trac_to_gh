@@ -70,7 +70,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061570.json:
 ```json
 {
-    "body": "There is not necessarily a vertex named 0 in the graph, in which case the first line of your patch does not do what you want...\n\nWhat you could try is something like that :\n\n```\nit=self.degree_iterator()\nk=it.next()\nfor i in it:\n   if i!=k:\n       return False\nreturn True\n```\n\n\nBesides, if you want your docstring to be \"formally\" correct, here are a few remarks :\nThe first line of the docstring should describe in a few words what the function does. In your case : \"Tests whether the graph is regular\" or simething similar should do.\n\nTwo lines later, you explain a bit more in details what it does if necessary.\n\nYou can create an INPUT: section to describe the parameters of your method.\n\nBesides : when you want something to be written through LaTeX, like u_1 or \\sum_{x=0}^\\infty , you have to write it like that :\n\n```\n`u_1`\nor\n`\\sum_{x=0}^\\infty`\n```\n\nWhen you want a word to be understood a a python keyword, like the name of a variable, or the values True/False, you add two times this sign :\n\n```\n``True``\n``False``\n```\n\n\nAnd this is all I can think of for the moment :-)\n\nNathann",
+    "body": "There is not necessarily a vertex named 0 in the graph, in which case the first line of your patch does not do what you want...\n\nWhat you could try is something like that :\n\n```\nit=self.degree_iterator()\nk=it.next()\nfor i in it:\n   if i!=k:\n       return False\nreturn True\n```\n\nBesides, if you want your docstring to be \"formally\" correct, here are a few remarks :\nThe first line of the docstring should describe in a few words what the function does. In your case : \"Tests whether the graph is regular\" or simething similar should do.\n\nTwo lines later, you explain a bit more in details what it does if necessary.\n\nYou can create an INPUT: section to describe the parameters of your method.\n\nBesides : when you want something to be written through LaTeX, like u_1 or \\sum_{x=0}^\\infty , you have to write it like that :\n\n```\n`u_1`\nor\n`\\sum_{x=0}^\\infty`\n```\nWhen you want a word to be understood a a python keyword, like the name of a variable, or the values True/False, you add two times this sign :\n\n```\n``True``\n``False``\n```\n\nAnd this is all I can think of for the moment :-)\n\nNathann",
     "created_at": "2009-10-31T20:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7361",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ for i in it:
 return True
 ```
 
-
 Besides, if you want your docstring to be "formally" correct, here are a few remarks :
 The first line of the docstring should describe in a few words what the function does. In your case : "Tests whether the graph is regular" or simething similar should do.
 
@@ -107,14 +106,12 @@ Besides : when you want something to be written through LaTeX, like u_1 or \sum_
 or
 `\sum_{x=0}^\infty`
 ```
-
 When you want a word to be understood a a python keyword, like the name of a variable, or the values True/False, you add two times this sign :
 
 ```
 ``True``
 ``False``
 ```
-
 
 And this is all I can think of for the moment :-)
 

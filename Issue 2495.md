@@ -89,7 +89,7 @@ ype ./sage -i mayavi_2.1.1-20080307
 archive/issue_comments_016871.json:
 ```json
 {
-    "body": "I tried this and got the following install error:\n\n\n```\n...\nInstalling mayavi2 script to /home/wdj/wdj/sagefiles/sage-2.10.3/local/bin\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.mayavi-2.1.1.dev_r18151-py2.5.egg\nProcessing dependencies for enthought.mayavi==2.1.1.dev-r18151\nSearching for enthought.util>=2.0.3.dev,<3.0a\nBest match: enthought.util 2.0.3\nProcessing enthought.util-2.0.3-py2.5.egg\ncreating /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nExtracting enthought.util-2.0.3-py2.5.egg to /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages\nAdding enthought.util 2.0.3 to easy-install.pth file\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nSearching for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\n\nLink to http://code.enthought.com/enstaller/eggs/source ***BLOCKED*** by --allow-hosts\n\n\nLink to http://pypi.python.org/simple/enthought.tvtk/ ***BLOCKED*** by --allow-hosts\n\nCouldn't find index page for 'enthought.tvtk' (maybe misspelled?)\nScanning index of all packages (this may take a while)\n\nLink to http://pypi.python.org/simple/ ***BLOCKED*** by --allow-hosts\n\nNo local packages or download links found for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\nerror: Could not find suitable distribution for Requirement.parse('enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a')\n\nreal    34m27.361s\nuser    24m49.633s\nsys     3m27.337s\nsage: An error occurred while installing mayavi_2.1.1-20080307\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wdj/wdj/sagefiles/sage-2.10.3/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307 and type 'make'.\nInstead type \"/home/wdj/wdj/sagefiles/sage-2.10.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n",
+    "body": "I tried this and got the following install error:\n\n```\n...\nInstalling mayavi2 script to /home/wdj/wdj/sagefiles/sage-2.10.3/local/bin\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.mayavi-2.1.1.dev_r18151-py2.5.egg\nProcessing dependencies for enthought.mayavi==2.1.1.dev-r18151\nSearching for enthought.util>=2.0.3.dev,<3.0a\nBest match: enthought.util 2.0.3\nProcessing enthought.util-2.0.3-py2.5.egg\ncreating /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nExtracting enthought.util-2.0.3-py2.5.egg to /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages\nAdding enthought.util 2.0.3 to easy-install.pth file\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nSearching for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\n\nLink to http://code.enthought.com/enstaller/eggs/source ***BLOCKED*** by --allow-hosts\n\n\nLink to http://pypi.python.org/simple/enthought.tvtk/ ***BLOCKED*** by --allow-hosts\n\nCouldn't find index page for 'enthought.tvtk' (maybe misspelled?)\nScanning index of all packages (this may take a while)\n\nLink to http://pypi.python.org/simple/ ***BLOCKED*** by --allow-hosts\n\nNo local packages or download links found for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\nerror: Could not find suitable distribution for Requirement.parse('enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a')\n\nreal    34m27.361s\nuser    24m49.633s\nsys     3m27.337s\nsage: An error occurred while installing mayavi_2.1.1-20080307\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wdj/wdj/sagefiles/sage-2.10.3/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307 and type 'make'.\nInstead type \"/home/wdj/wdj/sagefiles/sage-2.10.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```",
     "created_at": "2008-03-13T13:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
@@ -99,7 +99,6 @@ archive/issue_comments_016871.json:
 ```
 
 I tried this and got the following install error:
-
 
 ```
 ...
@@ -148,7 +147,6 @@ subshell.)
 
 
 
-
 ---
 
 archive/issue_comments_016872.json:
@@ -181,7 +179,7 @@ Or put everything temporarily in spkg/standard, etcetera see the README.txt
 archive/issue_comments_016873.json:
 ```json
 {
-    "body": "Replying to [comment:4 wdj]:\n> I tried this and got the following install error:\n> \n>\n\nCould you try once again following the instructions?\n\nAnd by doing so also comment on trac ticket #2493",
+    "body": "Replying to [comment:4 wdj]:\n> I tried this and got the following install error:\n> \n\n>\n\nCould you try once again following the instructions?\n\nAnd by doing so also comment on trac ticket #2493",
     "created_at": "2008-03-16T19:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
@@ -193,6 +191,7 @@ archive/issue_comments_016873.json:
 Replying to [comment:4 wdj]:
 > I tried this and got the following install error:
 > 
+
 >
 
 Could you try once again following the instructions?
@@ -346,7 +345,7 @@ archive/issue_events_005873.json:
 archive/issue_comments_016880.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the \"dependency of non-standard spkg\" problem.\n> \n\nBefore we have this elegant solution the spkg-install should be consistent with reality!\nSo reflect that mayavi2 depends on vtk-5.0.4.p0 as you name the package.\n\nThe same holds for the vtk spkg, because it depends on cmake.\n\nJaap\n\n\n\n\n```/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i vtk-5.0.4.p0\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*",
+    "body": "Replying to [comment:8 mabshoff]:\n> One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the \"dependency of non-standard spkg\" problem.\n> \n\n\nBefore we have this elegant solution the spkg-install should be consistent with reality!\nSo reflect that mayavi2 depends on vtk-5.0.4.p0 as you name the package.\n\nThe same holds for the vtk spkg, because it depends on cmake.\n\nJaap\n\n\n\n```/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i vtk-5.0.4.p0\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*",
     "created_at": "2008-03-22T17:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
@@ -359,13 +358,13 @@ Replying to [comment:8 mabshoff]:
 > One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the "dependency of non-standard spkg" problem.
 > 
 
+
 Before we have this elegant solution the spkg-install should be consistent with reality!
 So reflect that mayavi2 depends on vtk-5.0.4.p0 as you name the package.
 
 The same holds for the vtk spkg, because it depends on cmake.
 
 Jaap
-
 
 
 
@@ -388,7 +387,7 @@ easy_install -f dist -H dist enthought.mayavi*
 archive/issue_comments_016881.json:
 ```json
 {
-    "body": "The mayavi_2.1.1-20080307.p1.spkg does not work for me.\n\n\n\n```\nMayaVi2 seems to build, but fails to run mlab!\n\nWhat the difference between mayavi_2.1.1-20080307.p1.spkg\nand my original mayavi_2.1.1-20080307.spkg?\n\n1) mv mayavi_build src\n2) rm all .svn stuff\n3) add .hg and friends\n\n```\n\n\nMy hypothesis for now is that the .svn directories contain\nessential information for the build system. I might be wrong, ...\n\nI did a diff -r on both directories, only .svn files missing! See:\n\nhttp://sage.math.washington.edu/home/jsp/diff_file\n\nI did a fresh install on fresh installed sage-2.10.4,\nsage-2.11.alpha0, sage-2.11.alpha1 on two machines. The results are consistent.",
+    "body": "The mayavi_2.1.1-20080307.p1.spkg does not work for me.\n\n\n```\nMayaVi2 seems to build, but fails to run mlab!\n\nWhat the difference between mayavi_2.1.1-20080307.p1.spkg\nand my original mayavi_2.1.1-20080307.spkg?\n\n1) mv mayavi_build src\n2) rm all .svn stuff\n3) add .hg and friends\n\n```\n\nMy hypothesis for now is that the .svn directories contain\nessential information for the build system. I might be wrong, ...\n\nI did a diff -r on both directories, only .svn files missing! See:\n\nhttp://sage.math.washington.edu/home/jsp/diff_file\n\nI did a fresh install on fresh installed sage-2.10.4,\nsage-2.11.alpha0, sage-2.11.alpha1 on two machines. The results are consistent.",
     "created_at": "2008-03-27T15:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2495",
     "type": "issue_comment",
@@ -398,7 +397,6 @@ archive/issue_comments_016881.json:
 ```
 
 The mayavi_2.1.1-20080307.p1.spkg does not work for me.
-
 
 
 ```
@@ -412,7 +410,6 @@ and my original mayavi_2.1.1-20080307.spkg?
 3) add .hg and friends
 
 ```
-
 
 My hypothesis for now is that the .svn directories contain
 essential information for the build system. I might be wrong, ...

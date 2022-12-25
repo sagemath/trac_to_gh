@@ -3,7 +3,7 @@
 archive/issues_006340.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
     "created_at": "2009-06-16T19:22:25Z",
     "labels": [
         "component: calculus",
@@ -18,12 +18,10 @@ archive/issues_006340.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: type(var('x',ns=False))
 <type 'sage.symbolic.expression.Expression'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6340
 
@@ -91,7 +89,7 @@ will conflict with the patch here.
 archive/issue_comments_050511.json:
 ```json
 {
-    "body": "It looks like #6559 functionality is better to incorporate first.  What happens after its inclusion with the following?\n\n```\nsage: var('z',ns=False)\n```\n\n\n```\nsage: var('z',ns=True)\n```\n\nThe results of these will help create a new patch, though that may not happen for a bit.  \n\nAlternately, since this one is small, one could review it positively (if it deserves to be) :) and then base the bigger patch at #6559 on it.",
+    "body": "It looks like #6559 functionality is better to incorporate first.  What happens after its inclusion with the following?\n\n```\nsage: var('z',ns=False)\n```\n\n```\nsage: var('z',ns=True)\n```\nThe results of these will help create a new patch, though that may not happen for a bit.  \n\nAlternately, since this one is small, one could review it positively (if it deserves to be) :) and then base the bigger patch at #6559 on it.",
     "created_at": "2009-09-06T02:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -106,11 +104,9 @@ It looks like #6559 functionality is better to incorporate first.  What happens 
 sage: var('z',ns=False)
 ```
 
-
 ```
 sage: var('z',ns=True)
 ```
-
 The results of these will help create a new patch, though that may not happen for a bit.  
 
 Alternately, since this one is small, one could review it positively (if it deserves to be) :) and then base the bigger patch at #6559 on it.
@@ -160,7 +156,7 @@ Depending on which one is reviewed first, here's a patch on top of #6559.  Shoul
 archive/issue_comments_050514.json:
 ```json
 {
-    "body": "This should use the deprecation function instead of the verbose function.\n\nFor example (from matrix_rational_dense.pyx)\n\n\n```\n        from sage.misc.misc import deprecation\n        deprecation(\"'invert' is deprecated; use 'inverse' instead.\")\n```\n",
+    "body": "This should use the deprecation function instead of the verbose function.\n\nFor example (from matrix_rational_dense.pyx)\n\n```\n        from sage.misc.misc import deprecation\n        deprecation(\"'invert' is deprecated; use 'inverse' instead.\")\n```",
     "created_at": "2009-09-22T15:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -173,12 +169,10 @@ This should use the deprecation function instead of the verbose function.
 
 For example (from matrix_rational_dense.pyx)
 
-
 ```
         from sage.misc.misc import deprecation
         deprecation("'invert' is deprecated; use 'inverse' instead.")
 ```
-
 
 
 
@@ -223,7 +217,7 @@ This makes sense.  I've updated the first patch as per Burcin's idea, which seem
 archive/issue_comments_050517.json:
 ```json
 {
-    "body": "Sorry for not pointing this out earlier, but I suggest changing the block:\n\n\n```\n    if ('ns', False) in kwds.items(): \n        raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n    if ('ns', True) in kwds.items(): \n        from sage.misc.misc import deprecation \n        deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n```\n\n\nwith\n\n\n```\n    if kwds.has_key('ns'):\n        if kwds['ns']:\n            from sage.misc.misc import deprecation \n            deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n        else:\n            raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n```\n\n\nEven if `kwds` is expected to be empty, it is a waste to call `.items()`.\n\nPutting a check that `*args` is empty would also help. Dropping arguments silently is not very user friendly.",
+    "body": "Sorry for not pointing this out earlier, but I suggest changing the block:\n\n```\n    if ('ns', False) in kwds.items(): \n        raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n    if ('ns', True) in kwds.items(): \n        from sage.misc.misc import deprecation \n        deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n```\n\nwith\n\n```\n    if kwds.has_key('ns'):\n        if kwds['ns']:\n            from sage.misc.misc import deprecation \n            deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n        else:\n            raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n```\n\nEven if `kwds` is expected to be empty, it is a waste to call `.items()`.\n\nPutting a check that `*args` is empty would also help. Dropping arguments silently is not very user friendly.",
     "created_at": "2009-09-22T18:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
@@ -234,7 +228,6 @@ archive/issue_comments_050517.json:
 
 Sorry for not pointing this out earlier, but I suggest changing the block:
 
-
 ```
     if ('ns', False) in kwds.items(): 
         raise NotImplementedError, "The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer." 
@@ -243,9 +236,7 @@ Sorry for not pointing this out earlier, but I suggest changing the block:
         deprecation("The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.") 
 ```
 
-
 with
-
 
 ```
     if kwds.has_key('ns'):
@@ -255,7 +246,6 @@ with
         else:
             raise NotImplementedError, "The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer." 
 ```
-
 
 Even if `kwds` is expected to be empty, it is a waste to call `.items()`.
 

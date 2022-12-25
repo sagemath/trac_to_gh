@@ -3,7 +3,7 @@
 archive/issues_008268.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis patch adds a new implementation for construction of Christoffel words using continued fraction :\n\n\n```\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')\n625 loops, best of 3: 67.7 \u00b5s per loop\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nFor large words, it is much faster than the actual implementation.\n\n\n```\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')\n5 loops, best of 3: 111 ms per loop\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')\n125 loops, best of 3: 4 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8268\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis patch adds a new implementation for construction of Christoffel words using continued fraction :\n\n```\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')\n625 loops, best of 3: 67.7 \u00b5s per loop\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\nFor large words, it is much faster than the actual implementation.\n\n```\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')\n5 loops, best of 3: 111 ms per loop\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')\n125 loops, best of 3: 4 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8268\n\n",
     "created_at": "2010-02-15T00:15:17Z",
     "labels": [
         "component: combinatorics"
@@ -21,7 +21,6 @@ CC:  abmasse
 
 This patch adds a new implementation for construction of Christoffel words using continued fraction :
 
-
 ```
 sage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')
 625 loops, best of 3: 67.7 µs per loop
@@ -29,9 +28,7 @@ sage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')
 625 loops, best of 3: 309 µs per loop
 ```
 
-
 For large words, it is much faster than the actual implementation.
-
 
 ```
 sage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')
@@ -39,7 +36,6 @@ sage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')
 sage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')
 125 loops, best of 3: 4 ms per loop
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8268
 

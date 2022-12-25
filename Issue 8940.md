@@ -3,7 +3,7 @@
 archive/issues_008940.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHere's the failure on sage.math, when building Sage 4.4.2.alpha0 from source:\n\n```\nsage -t  -long devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n```\n\nThe failure with sagedoc.py is due ticket #8468, whose patch was merged without also merging the relevant Sphinx configuration files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8940\n\n",
+    "body": "Assignee: tbd\n\nHere's the failure on sage.math, when building Sage 4.4.2.alpha0 from source:\n\n```\nsage -t  -long devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n```\nThe failure with sagedoc.py is due ticket #8468, whose patch was merged without also merging the relevant Sphinx configuration files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8940\n\n",
     "created_at": "2010-05-10T01:09:57Z",
     "labels": [
         "component: doctest coverage",
@@ -24,7 +24,6 @@ Here's the failure on sage.math, when building Sage 4.4.2.alpha0 from source:
 ```
 sage -t  -long devel/sage/sage/misc/sagedoc.py # 3 doctests failed
 ```
-
 The failure with sagedoc.py is due ticket #8468, whose patch was merged without also merging the relevant Sphinx configuration files.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8940

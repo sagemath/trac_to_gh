@@ -3,7 +3,7 @@
 archive/issues_000181.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: recursive load source file\n\nWe use the example in examples/programming/recursive_load.\n\nfile1.sage defines a symbol foo.\nfile2.sage defines a symbol bar.\n\nEach file loads the other recursively.\n\nIf we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.\n\n\n```\nsage: load file2.sage\nloaded file1.sage\nI'm now defining s\nloaded file1.sage\n\nsage: foo??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function foo at 0x8fd6db0>\nNamespace:      Interactive\nFile:           /Users/nalexand/Devel/sage-alpha8/examples/programming/recursive_load/file2.py\nDefinition:     foo(n)\nSource:\ndef foo(n):\n    print \"foo\"\n    return n**Integer(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/181\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: recursive load source file\n\nWe use the example in examples/programming/recursive_load.\n\nfile1.sage defines a symbol foo.\nfile2.sage defines a symbol bar.\n\nEach file loads the other recursively.\n\nIf we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.\n\n```\nsage: load file2.sage\nloaded file1.sage\nI'm now defining s\nloaded file1.sage\n\nsage: foo??\nType:           function\nBase Class:     <type 'function'>\nString Form:    <function foo at 0x8fd6db0>\nNamespace:      Interactive\nFile:           /Users/nalexand/Devel/sage-alpha8/examples/programming/recursive_load/file2.py\nDefinition:     foo(n)\nSource:\ndef foo(n):\n    print \"foo\"\n    return n**Integer(2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/181\n\n",
     "created_at": "2006-12-11T18:58:16Z",
     "labels": [
         "component: user interface",
@@ -30,7 +30,6 @@ Each file loads the other recursively.
 
 If we load file2.sage first, then the source code for foo is displayed correctly by foo?? but the File: information is wrong.  The File: should read file1.sage.
 
-
 ```
 sage: load file2.sage
 loaded file1.sage
@@ -49,7 +48,6 @@ def foo(n):
     print "foo"
     return n**Integer(2)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/181
 

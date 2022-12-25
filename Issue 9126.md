@@ -3,7 +3,7 @@
 archive/issues_009126.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nRight now, the following works:\n\n```\nsage: a=(x+y)\nsage: a.arguments()\n(x, y)\n```\n\nHowever, we deprecated the following a long time ago:\n\n```\nsage: a(1,2)\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: Substitution using function-call syntax and unnamed\narguments is deprecated and will be removed from a future release of\nSage; you can use named arguments instead, like EXPR(x=..., y=...)\n   exec code_obj in self.user_global_ns, self.user_ns\n3\n```\n\nI propose that a.arguments() should return a deprecation warning:\n\n```\nsage: a.arguments()\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: (Since Sage version 4.4.2) symbolic expressions do\nnot have default callable arguments.  Please use the variables() method\n   exec code_obj in self.user_global_ns, self.user_ns\n(x, y)\n```\n\nThis will impact other things as well, since apparently things have been\nusing .arguments() when they should have been using .variables().  I can\npost a patch for this.  Here, I'm just calling for comment, especially\nfrom those that think this will mess everything up in some way.\n\nNote that callable functions will still have sensible return values:\n\n```\nsage: f(x,y)=x+y\nsage: f.arguments()\n(x, y) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9126\n\n",
+    "body": "Assignee: @burcin\n\nRight now, the following works:\n\n```\nsage: a=(x+y)\nsage: a.arguments()\n(x, y)\n```\nHowever, we deprecated the following a long time ago:\n\n```\nsage: a(1,2)\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: Substitution using function-call syntax and unnamed\narguments is deprecated and will be removed from a future release of\nSage; you can use named arguments instead, like EXPR(x=..., y=...)\n   exec code_obj in self.user_global_ns, self.user_ns\n3\n```\nI propose that a.arguments() should return a deprecation warning:\n\n```\nsage: a.arguments()\n/Users/grout/sage/local/lib/python2.6/site-packages/IPython/iplib.py:2073:\nDeprecationWarning: (Since Sage version 4.4.2) symbolic expressions do\nnot have default callable arguments.  Please use the variables() method\n   exec code_obj in self.user_global_ns, self.user_ns\n(x, y)\n```\nThis will impact other things as well, since apparently things have been\nusing .arguments() when they should have been using .variables().  I can\npost a patch for this.  Here, I'm just calling for comment, especially\nfrom those that think this will mess everything up in some way.\n\nNote that callable functions will still have sensible return values:\n\n```\nsage: f(x,y)=x+y\nsage: f.arguments()\n(x, y) \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9126\n\n",
     "created_at": "2010-06-03T05:11:07Z",
     "labels": [
         "component: symbolics",
@@ -25,7 +25,6 @@ sage: a=(x+y)
 sage: a.arguments()
 (x, y)
 ```
-
 However, we deprecated the following a long time ago:
 
 ```
@@ -37,7 +36,6 @@ Sage; you can use named arguments instead, like EXPR(x=..., y=...)
    exec code_obj in self.user_global_ns, self.user_ns
 3
 ```
-
 I propose that a.arguments() should return a deprecation warning:
 
 ```
@@ -48,7 +46,6 @@ not have default callable arguments.  Please use the variables() method
    exec code_obj in self.user_global_ns, self.user_ns
 (x, y)
 ```
-
 This will impact other things as well, since apparently things have been
 using .arguments() when they should have been using .variables().  I can
 post a patch for this.  Here, I'm just calling for comment, especially
@@ -61,7 +58,6 @@ sage: f(x,y)=x+y
 sage: f.arguments()
 (x, y) 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9126
 

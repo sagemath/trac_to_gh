@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7482
 archive/issue_comments_063042.json:
 ```json
 {
-    "body": "I have created a \"mock up\" of the above functionality, for people to play with, which doesn't even require applying a patch.  Just paste the following into a Sage notebook cell and press shift-enter:\n\n```\nclass MagicVar(Expression):\n    def __call__(self, *args, **kwds):\n        return args[0].__getattribute__(str(self))(*args[1:], **kwds)\n\nclass MagicNames:\n    def eval(self, s, globals, locals=None):\n        x = preparse(s).strip()\n        y = x.split('\\n')\n        if len(y) == 0:\n            return ''\n        s = '\\n'.join(y[:-1]) + '\\n'\n        t = y[-1]\n        try:\n            z = compile(t + '\\n', '', 'single')\n        except SyntaxError:\n            s += '\\n' + t\n            z = None\n        while True:\n            try:    \n                self._eval_code(s, z, globals)\n            except NameError, msg:\n                nm = msg.args[0].split(\"'\")[1]\n                globals[nm] = MagicVar(SR, var(nm))\n            else:\n                return ''\n                \n    def _eval_code(self, s, z, globals):\n        eval(compile(s, '', 'exec'), globals, globals)\n        if z is not None:\n            eval(z, globals)\n        \nmagic = MagicNames()                 \n```\n\n\nNow if you put %magic at the top of an input cell, then symbolic variables magically spring into life, and object oriented notation is not necessary.   There isn't an easy way to make this permanent for all cells in a worksheet (without putting %magic) without actually changing the sage library with a patch.  This is because of a major annoying mistake I found just now (see #7483).",
+    "body": "I have created a \"mock up\" of the above functionality, for people to play with, which doesn't even require applying a patch.  Just paste the following into a Sage notebook cell and press shift-enter:\n\n```\nclass MagicVar(Expression):\n    def __call__(self, *args, **kwds):\n        return args[0].__getattribute__(str(self))(*args[1:], **kwds)\n\nclass MagicNames:\n    def eval(self, s, globals, locals=None):\n        x = preparse(s).strip()\n        y = x.split('\\n')\n        if len(y) == 0:\n            return ''\n        s = '\\n'.join(y[:-1]) + '\\n'\n        t = y[-1]\n        try:\n            z = compile(t + '\\n', '', 'single')\n        except SyntaxError:\n            s += '\\n' + t\n            z = None\n        while True:\n            try:    \n                self._eval_code(s, z, globals)\n            except NameError, msg:\n                nm = msg.args[0].split(\"'\")[1]\n                globals[nm] = MagicVar(SR, var(nm))\n            else:\n                return ''\n                \n    def _eval_code(self, s, z, globals):\n        eval(compile(s, '', 'exec'), globals, globals)\n        if z is not None:\n            eval(z, globals)\n        \nmagic = MagicNames()                 \n```\n\nNow if you put %magic at the top of an input cell, then symbolic variables magically spring into life, and object oriented notation is not necessary.   There isn't an easy way to make this permanent for all cells in a worksheet (without putting %magic) without actually changing the sage library with a patch.  This is because of a major annoying mistake I found just now (see #7483).",
     "created_at": "2009-11-17T22:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ class MagicNames:
 magic = MagicNames()                 
 ```
 
-
 Now if you put %magic at the top of an input cell, then symbolic variables magically spring into life, and object oriented notation is not necessary.   There isn't an easy way to make this permanent for all cells in a worksheet (without putting %magic) without actually changing the sage library with a patch.  This is because of a major annoying mistake I found just now (see #7483).
 
 
@@ -108,7 +107,7 @@ I'm attaching a patch that fully implements this in the notebook, via a command 
 archive/issue_comments_063044.json:
 ```json
 {
-    "body": "Here is a session (to be used in the notebook) that illustrates automatic_names:\n\n```\nsage: automatic_names(True)\nsage: x + y + z + wxy\nwxy + x + y + z\nsage: y(y=10)\n10\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: trig_expand((2*x + 4*y + sin(2*theta))^2)\n4*(sin(theta)*cos(theta) + x + 2*y)^2\nsage: type(trig_expand)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\n```\n\n\nNotice above that trig_expand, y, and theta were all automatically created.  Notice that substitution `y(y=10)` still works.   If an object obj had a y method, then y(obj) would be evaluated as obj.y().\n\nHere's a test showing that we avoid infinite loops:\n\n```\nsage: raise NameError\nTraceback (most recent call last):\n...\nNameError\nsage: raise NameError, \"'var'\"\nTraceback (most recent call last):\n...\nNameError: Too many automatic variable names and functions created (limit=10000)\n```\n",
+    "body": "Here is a session (to be used in the notebook) that illustrates automatic_names:\n\n```\nsage: automatic_names(True)\nsage: x + y + z + wxy\nwxy + x + y + z\nsage: y(y=10)\n10\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: trig_expand((2*x + 4*y + sin(2*theta))^2)\n4*(sin(theta)*cos(theta) + x + 2*y)^2\nsage: type(trig_expand)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\n```\n\nNotice above that trig_expand, y, and theta were all automatically created.  Notice that substitution `y(y=10)` still works.   If an object obj had a y method, then y(obj) would be evaluated as obj.y().\n\nHere's a test showing that we avoid infinite loops:\n\n```\nsage: raise NameError\nTraceback (most recent call last):\n...\nNameError\nsage: raise NameError, \"'var'\"\nTraceback (most recent call last):\n...\nNameError: Too many automatic variable names and functions created (limit=10000)\n```",
     "created_at": "2009-11-18T03:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -137,7 +136,6 @@ sage: type(y)
 <class 'sagenb.misc.support.AutomaticVariable'>
 ```
 
-
 Notice above that trig_expand, y, and theta were all automatically created.  Notice that substitution `y(y=10)` still works.   If an object obj had a y method, then y(obj) would be evaluated as obj.y().
 
 Here's a test showing that we avoid infinite loops:
@@ -152,7 +150,6 @@ Traceback (most recent call last):
 ...
 NameError: Too many automatic variable names and functions created (limit=10000)
 ```
-
 
 
 
@@ -315,7 +312,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063053.json:
 ```json
 {
-    "body": "This is very clever!  In\n\n```\nso that ``foo(bar, ...)`` gets transformed to ``foo.bar(...)``.\n```\n\nshould the latter be ```bar.foo(...)```?\n\nShould we advertise `automatic_names` on `sage-edu`?",
+    "body": "This is very clever!  In\n\n```\nso that ``foo(bar, ...)`` gets transformed to ``foo.bar(...)``.\n```\nshould the latter be ```bar.foo(...)```?\n\nShould we advertise `automatic_names` on `sage-edu`?",
     "created_at": "2009-12-10T00:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -329,7 +326,6 @@ This is very clever!  In
 ```
 so that ``foo(bar, ...)`` gets transformed to ``foo.bar(...)``.
 ```
-
 should the latter be ```bar.foo(...)```?
 
 Should we advertise `automatic_names` on `sage-edu`?
@@ -359,7 +355,7 @@ Fix typo.  Replaces **sagenb** patch.
 archive/issue_comments_063055.json:
 ```json
 {
-    "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by @qed777 created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
+    "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by @qed777 created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```",
     "created_at": "2009-12-10T06:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
@@ -375,13 +371,11 @@ V3 changes
 ```
             sage: automatic_names(True)
 ```
-
 to
 
 ```
             sage: automatic_names(True)      # not tested
 ```
-
 
 
 

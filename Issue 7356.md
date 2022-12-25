@@ -3,7 +3,7 @@
 archive/issues_007356.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nFloats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \\times 10^{25}'. \n\nThe solution is to define function to handle this like the function below\n\n```\n\ndef float_function(x):\n    r\"\"\"\n    Returns the LaTeX code for a float ``x``.\n\n    INPUT: ``x`` - float number\n\n    EXAMPLES::\n\n        sage: from sage.misc.latex import float_function\n        sage: float_function(float(123.05))\n        '123.05'\n        sage: float_function(float(3e-15))\n        '3 \\\\times 10^{-15}'\n        sage: float_function(float(3.2e25))\n        '3.2 \\\\times 10^{25}'\n        sage: float_function(float(3.2e+15))\n        '3.2 \\\\times 10^{15}'\n\n        The output is in some cases shorter than latex method for real numbers.\n\n        sage: float_function(float(1e+15))\n        '1 \\\\times 10^{15}'\n    \"\"\"\n    s = str(x)\n    parts = s.split('e')\n    if len(parts) > 1:\n        # scientific notation\n        if parts[1][0] == '+':\n            parts[1] = parts[1][1:]\n        s = \"%s \\\\times 10^{%s}\" % (parts[0], parts[1])\n    return s\n```\n\n\nWill post simple patch, provided it passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7356\n\n",
+    "body": "Assignee: @aghitza\n\nFloats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \\times 10^{25}'. \n\nThe solution is to define function to handle this like the function below\n\n```\n\ndef float_function(x):\n    r\"\"\"\n    Returns the LaTeX code for a float ``x``.\n\n    INPUT: ``x`` - float number\n\n    EXAMPLES::\n\n        sage: from sage.misc.latex import float_function\n        sage: float_function(float(123.05))\n        '123.05'\n        sage: float_function(float(3e-15))\n        '3 \\\\times 10^{-15}'\n        sage: float_function(float(3.2e25))\n        '3.2 \\\\times 10^{25}'\n        sage: float_function(float(3.2e+15))\n        '3.2 \\\\times 10^{15}'\n\n        The output is in some cases shorter than latex method for real numbers.\n\n        sage: float_function(float(1e+15))\n        '1 \\\\times 10^{15}'\n    \"\"\"\n    s = str(x)\n    parts = s.split('e')\n    if len(parts) > 1:\n        # scientific notation\n        if parts[1][0] == '+':\n            parts[1] = parts[1][1:]\n        s = \"%s \\\\times 10^{%s}\" % (parts[0], parts[1])\n    return s\n```\n\nWill post simple patch, provided it passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7356\n\n",
     "created_at": "2009-10-30T09:12:06Z",
     "labels": [
         "component: basic arithmetic",
@@ -57,7 +57,6 @@ def float_function(x):
     return s
 ```
 
-
 Will post simple patch, provided it passes tests.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7356
@@ -71,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7356
 archive/issue_comments_061521.json:
 ```json
 {
-    "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by @robert-marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
+    "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by @robert-marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```",
     "created_at": "2009-10-30T10:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -84,12 +83,10 @@ Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket73
 
 The patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.
 
-
 ```
 sage -t  "devel/sage/sage/calculus/desolvers.py"
 sage -t  "devel/sage/sage/interfaces/maxima.py"
 ```
-
 
 
 
@@ -116,7 +113,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061523.json:
 ```json
 {
-    "body": "\n```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n\nThis test passed as well. (Error has been introduced by my custom settings in maxima-init.lisp file)",
+    "body": "```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\nThis test passed as well. (Error has been introduced by my custom settings in maxima-init.lisp file)",
     "created_at": "2009-10-30T11:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -125,11 +122,9 @@ archive/issue_comments_061523.json:
 }
 ```
 
-
 ```
 sage -t  "devel/sage/sage/interfaces/maxima.py"
 ```
-
 This test passed as well. (Error has been introduced by my custom settings in maxima-init.lisp file)
 
 
@@ -193,7 +188,7 @@ Should this be closed as a duplicate since #7328 has been closed with a positive
 archive/issue_comments_061527.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> Should this be closed as a duplicate since #7328 has been closed with a positive review?\n\nPerhaps yes, but the patch in this trac produces shorter output, so I think that this is better. The patch #7328 produces sometimes zeros which are not necessary at the end of decimal number.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> Should this be closed as a duplicate since #7328 has been closed with a positive review?\n\n\nPerhaps yes, but the patch in this trac produces shorter output, so I think that this is better. The patch #7328 produces sometimes zeros which are not necessary at the end of decimal number.",
     "created_at": "2009-11-07T21:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
@@ -204,6 +199,7 @@ archive/issue_comments_061527.json:
 
 Replying to [comment:4 jhpalmieri]:
 > Should this be closed as a duplicate since #7328 has been closed with a positive review?
+
 
 Perhaps yes, but the patch in this trac produces shorter output, so I think that this is better. The patch #7328 produces sometimes zeros which are not necessary at the end of decimal number.
 

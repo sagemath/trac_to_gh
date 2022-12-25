@@ -3,7 +3,7 @@
 archive/issues_005958.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
     "created_at": "2009-05-01T15:09:53Z",
     "labels": [
         "component: commutative algebra",
@@ -26,13 +26,11 @@ The parameter should be ignored, but for compatibility it is necessary.
 
 E.g. this should work:
 
-
 ```
 sage: R.<x,y> = CC[]
 sage: I = R.ideal(x^2+y^2-1,x*y-1)
 sage: I.variety()
 ```
-
 
 but it raises an except in 3.4.1.
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5958
 archive/issue_comments_047075.json:
 ```json
 {
-    "body": "The patch fixes the exception, however:\n\n\n```\nsage: sage: R.<x,y> = CC[]\nsage: sage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: sage: I.variety()\nverbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n[{y: -1.00000000000000}, {y: 0}, {y: 1.00000000000000}]\n```\n\n\nwhich is certainly the wrong answer (`x` is missing), thus there seems to be another bug.",
+    "body": "The patch fixes the exception, however:\n\n```\nsage: sage: R.<x,y> = CC[]\nsage: sage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: sage: I.variety()\nverbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n[{y: -1.00000000000000}, {y: 0}, {y: 1.00000000000000}]\n```\n\nwhich is certainly the wrong answer (`x` is missing), thus there seems to be another bug.",
     "created_at": "2009-05-01T15:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -58,7 +56,6 @@ archive/issue_comments_047075.json:
 
 The patch fixes the exception, however:
 
-
 ```
 sage: sage: R.<x,y> = CC[]
 sage: sage: I = R.ideal(x^2+y^2-1,x*y-1)
@@ -66,7 +63,6 @@ sage: sage: I.variety()
 verbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.
 [{y: -1.00000000000000}, {y: 0}, {y: 1.00000000000000}]
 ```
-
 
 which is certainly the wrong answer (`x` is missing), thus there seems to be another bug.
 
@@ -131,7 +127,7 @@ The attached patch switches to lex before calling `toy_variety.triangular_factor
 archive/issue_comments_047079.json:
 ```json
 {
-    "body": "Two issues:\n\n* in the first patch, \"proofably\" should be \"provably\"\n \n* I'm getting some slight numerical noise in the doctests from the second patch:\n\n\n```\nsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/opt/sage-devel/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1908:\n    sage: for v in I.variety():\n       print v\nExpected:\n    verbose 0 (...: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784438 + 0.500000000000000*I}\n    {y: -0.866025403784438 + 0.500000000000000*I, x: -0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784438 + 0.500000000000001*I, x: 0.866025403784440 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784439 + 0.500000000000000*I}\nGot:\n    verbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784439 + 0.500000000000001*I}\n    {y: -0.866025403784439 + 0.500000000000000*I, x: -0.866025403784439 - 0.500000000000000*I}\n    {y: 0.866025403784438 + 0.500000000000000*I, x: 0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784438 + 0.500000000000001*I}\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_34\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-devel/tmp/.doctest_multi_polynomial_ideal.py\n\t [12.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 12.8 seconds\n```\n",
+    "body": "Two issues:\n\n* in the first patch, \"proofably\" should be \"provably\"\n \n* I'm getting some slight numerical noise in the doctests from the second patch:\n\n```\nsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/opt/sage-devel/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1908:\n    sage: for v in I.variety():\n       print v\nExpected:\n    verbose 0 (...: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784438 + 0.500000000000000*I}\n    {y: -0.866025403784438 + 0.500000000000000*I, x: -0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784438 + 0.500000000000001*I, x: 0.866025403784440 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784439 + 0.500000000000000*I}\nGot:\n    verbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784439 + 0.500000000000001*I}\n    {y: -0.866025403784439 + 0.500000000000000*I, x: -0.866025403784439 - 0.500000000000000*I}\n    {y: 0.866025403784438 + 0.500000000000000*I, x: 0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784438 + 0.500000000000001*I}\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_34\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-devel/tmp/.doctest_multi_polynomial_ideal.py\n\t [12.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 12.8 seconds\n```",
     "created_at": "2009-05-02T11:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -145,7 +141,6 @@ Two issues:
 * in the first patch, "proofably" should be "provably"
  
 * I'm getting some slight numerical noise in the doctests from the second patch:
-
 
 ```
 sage -t  "devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py"
@@ -180,7 +175,6 @@ The following tests failed:
 	sage -t  "devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py"
 Total time for all tests: 12.8 seconds
 ```
-
 
 
 
@@ -310,7 +304,7 @@ Incidentally, I'll look at the problem with the missing x as soon as I finish do
 archive/issue_comments_047085.json:
 ```json
 {
-    "body": "I have found two bugs. One of them is not solvable from my end, and possibly not at all (others who know more should comment).\n\nThe first one: elim_pol is not always computing the correct polynomial. After removing the switch to lexicographic order, change line 358 (?) of toy_variety.py from\n\n```\n  for each in xrange(len(coeffs)-1):\n```\n\nto\n\n```\n  for each in xrange(len(coeffs)):\n```\n\n\nI have no idea why I had it count until the next-to-last element of coeffs; all of them are necessary. I can submit a patch if you like.\n\nHowever: even after this fix, a problem remains: line 292 (?) triangular_factorization tries to compute a Groebner basis of an ideal whose generators **should** have a common solution. This is the source of the 1.0 appearing in the triangular variety. Unfortunately, the computed basis is 1.0, suggesting that the ideal has no common solution! I have an idea why this is happening, but I can't yet say for sure.",
+    "body": "I have found two bugs. One of them is not solvable from my end, and possibly not at all (others who know more should comment).\n\nThe first one: elim_pol is not always computing the correct polynomial. After removing the switch to lexicographic order, change line 358 (?) of toy_variety.py from\n\n```\n  for each in xrange(len(coeffs)-1):\n```\nto\n\n```\n  for each in xrange(len(coeffs)):\n```\n\nI have no idea why I had it count until the next-to-last element of coeffs; all of them are necessary. I can submit a patch if you like.\n\nHowever: even after this fix, a problem remains: line 292 (?) triangular_factorization tries to compute a Groebner basis of an ideal whose generators **should** have a common solution. This is the source of the 1.0 appearing in the triangular variety. Unfortunately, the computed basis is 1.0, suggesting that the ideal has no common solution! I have an idea why this is happening, but I can't yet say for sure.",
     "created_at": "2009-08-21T21:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5958",
     "type": "issue_comment",
@@ -326,13 +320,11 @@ The first one: elim_pol is not always computing the correct polynomial. After re
 ```
   for each in xrange(len(coeffs)-1):
 ```
-
 to
 
 ```
   for each in xrange(len(coeffs)):
 ```
-
 
 I have no idea why I had it count until the next-to-last element of coeffs; all of them are necessary. I can submit a patch if you like.
 

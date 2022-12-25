@@ -108,7 +108,7 @@ Jaap
 archive/issue_comments_016134.json:
 ```json
 {
-    "body": "All test passed with ./sage -t devel/sage/sage/matrix/matrix1.pyx\n\nBut I got a segmentation fault running:\n\n./sage -t devel/sage/sage/matrix/matrix2.pyx\n\neven after ./sage -ba\n\n\n```\n(gdb) r\nStarting program: /home/jaap/work/downloads/sage-2.10.3/local/bin/python .doctest_matrix2.py\n[Thread debugging using libthread_db enabled]\n[New Thread -1209047360 (LWP 30302)]\n[Detaching after fork from child process 30305. (Try `set detach-on-fork off'.)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1209047360 (LWP 30302)]\n0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n#1  0x0b0e86e0 in ?? ()\n#2  0x0b0e86e0 in ?? ()\n#3  0xbfa980d8 in ?? ()\n#4  0x01b9be98 in __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense_get_unsafe (__pyx_v_self=0x0, __pyx_v_i=1320220, \n    __pyx_v_j=1348880) at sage/matrix/matrix_integer_dense.c:5143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n(gdb) \n\n\nThis concerns line 373 in matrix2.pyx\n\n\n```\n\n\nThis seems te be related.",
+    "body": "All test passed with ./sage -t devel/sage/sage/matrix/matrix1.pyx\n\nBut I got a segmentation fault running:\n\n./sage -t devel/sage/sage/matrix/matrix2.pyx\n\neven after ./sage -ba\n\n```\n(gdb) r\nStarting program: /home/jaap/work/downloads/sage-2.10.3/local/bin/python .doctest_matrix2.py\n[Thread debugging using libthread_db enabled]\n[New Thread -1209047360 (LWP 30302)]\n[Detaching after fork from child process 30305. (Try `set detach-on-fork off'.)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1209047360 (LWP 30302)]\n0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n#1  0x0b0e86e0 in ?? ()\n#2  0x0b0e86e0 in ?? ()\n#3  0xbfa980d8 in ?? ()\n#4  0x01b9be98 in __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense_get_unsafe (__pyx_v_self=0x0, __pyx_v_i=1320220, \n    __pyx_v_j=1348880) at sage/matrix/matrix_integer_dense.c:5143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n(gdb) \n\n\nThis concerns line 373 in matrix2.pyx\n\n\n```\n\nThis seems te be related.",
     "created_at": "2008-03-12T19:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ But I got a segmentation fault running:
 ./sage -t devel/sage/sage/matrix/matrix2.pyx
 
 even after ./sage -ba
-
 
 ```
 (gdb) r
@@ -151,7 +150,6 @@ This concerns line 373 in matrix2.pyx
 
 
 ```
-
 
 This seems te be related.
 
@@ -260,7 +258,7 @@ No segfaults anymore. Can someone explain what went wrong?!!
 archive/issue_comments_016140.json:
 ```json
 {
-    "body": "Replying to [comment:10 jsp]:\n> This works for me now (the patch).\n> \n> No segfaults anymore. Can someone explain what went wrong?!!\n\n\nGladly. The bug was in `matrix_from_columns`, around line 718.  I was checking against `self._ncols`:\n  \n\n```\n            for r from 0 <= r < self._ncols: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\n\nwhen I should be checking against `self._nrows`\n\n```\n            for r from 0 <= r < self._nrows: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\n\nThis didn't go over well for non-sqaure matrices, since we weren't checking bounds anyway.",
+    "body": "Replying to [comment:10 jsp]:\n> This works for me now (the patch).\n> \n> No segfaults anymore. Can someone explain what went wrong?!!\n\n\n\nGladly. The bug was in `matrix_from_columns`, around line 718.  I was checking against `self._ncols`:\n  \n```\n            for r from 0 <= r < self._ncols: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\nwhen I should be checking against `self._nrows`\n\n```\n            for r from 0 <= r < self._nrows: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\nThis didn't go over well for non-sqaure matrices, since we weren't checking bounds anyway.",
     "created_at": "2008-03-14T18:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -275,14 +273,13 @@ Replying to [comment:10 jsp]:
 > No segfaults anymore. Can someone explain what went wrong?!!
 
 
+
 Gladly. The bug was in `matrix_from_columns`, around line 718.  I was checking against `self._ncols`:
   
-
 ```
             for r from 0 <= r < self._ncols: 
                 A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) 
 ```
-
 
 when I should be checking against `self._nrows`
 
@@ -290,7 +287,6 @@ when I should be checking against `self._nrows`
             for r from 0 <= r < self._nrows: 
                 A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) 
 ```
-
 
 This didn't go over well for non-sqaure matrices, since we weren't checking bounds anyway.
 
@@ -301,7 +297,7 @@ This didn't go over well for non-sqaure matrices, since we weren't checking boun
 archive/issue_comments_016141.json:
 ```json
 {
-    "body": "Replying to [comment:9 dfdeshom]:\n> The hg bundle should also work now. \n\nHi Didier,\n\nwe have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 dfdeshom]:\n> The hg bundle should also work now. \n\n\nHi Didier,\n\nwe have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\nCheers,\n\nMichael",
     "created_at": "2008-03-15T06:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -312,6 +308,7 @@ archive/issue_comments_016141.json:
 
 Replying to [comment:9 dfdeshom]:
 > The hg bundle should also work now. 
+
 
 Hi Didier,
 
@@ -328,7 +325,7 @@ Michael
 archive/issue_comments_016142.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> Replying to [comment:9 dfdeshom]:\n> > The hg bundle should also work now. \n> \n> Hi Didier,\n> \n> we have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\nI remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?",
+    "body": "Replying to [comment:12 mabshoff]:\n> Replying to [comment:9 dfdeshom]:\n> > The hg bundle should also work now. \n\n> \n> Hi Didier,\n> \n> we have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\n\nI remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?",
     "created_at": "2008-03-15T06:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -340,10 +337,12 @@ archive/issue_comments_016142.json:
 Replying to [comment:12 mabshoff]:
 > Replying to [comment:9 dfdeshom]:
 > > The hg bundle should also work now. 
+
 > 
 > Hi Didier,
 > 
 > we have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?
+
 
 I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?
 
@@ -354,7 +353,7 @@ I remember in another ticket (#2421) you said to submit mercurial patches so I c
 archive/issue_comments_016143.json:
 ```json
 {
-    "body": "> I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?\n> \n\nYep, hg export is the way to go. It is in the development manual, but I am too lazy to find the exact location. I will merge the bundles from this ticket and also #2459, but it would be great if you could use hg export for future patches.\n\nCheers,\n\nMichael",
+    "body": "> I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?\n> \n\n\nYep, hg export is the way to go. It is in the development manual, but I am too lazy to find the exact location. I will merge the bundles from this ticket and also #2459, but it would be great if you could use hg export for future patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-15T08:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
@@ -365,6 +364,7 @@ archive/issue_comments_016143.json:
 
 > I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?
 > 
+
 
 Yep, hg export is the way to go. It is in the development manual, but I am too lazy to find the exact location. I will merge the bundles from this ticket and also #2459, but it would be great if you could use hg export for future patches.
 

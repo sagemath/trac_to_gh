@@ -3,7 +3,7 @@
 archive/issues_005091.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: f(x) = sin(x)-cos(x)\nsage: g = f._fast_float_()\n\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 154 \u00b5s per loop\n\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 24 \u00b5s per loop\n```\n\n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041\n\nIssue created by migration from https://trac.sagemath.org/ticket/5091\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n```\nsage: f(x) = sin(x)-cos(x)\nsage: g = f._fast_float_()\n\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 154 \u00b5s per loop\n\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 24 \u00b5s per loop\n```\n\nSee also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041\n\nIssue created by migration from https://trac.sagemath.org/ticket/5091\n\n",
     "created_at": "2009-01-24T22:05:03Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 CC:  @jasongrout
 
-
 ```
 sage: f(x) = sin(x)-cos(x)
 sage: g = f._fast_float_()
@@ -31,7 +30,6 @@ sage: timeit("find_root(f, 0, pi)")
 sage: timeit("find_root(g, 0, pi)")
 625 loops, best of 3: 24 µs per loop
 ```
-
 
 See also http://groups.google.com/group/sage-devel/browse_thread/thread/927319a4fa61ae3b/9fc80aa9c114e041
 
@@ -85,7 +83,7 @@ archive/issue_events_011748.json:
 archive/issue_comments_038720.json:
 ```json
 {
-    "body": "Incorporating the time it takes to call fast_float, the speedup is not that radical:\n\n```\nsage: var('x')\nx\nsage: from sage.ext.fast_eval import fast_float\nsage: timeit(\"find_root(sin(x)-cos(x), 0, pi)\")\n625 loops, best of 3: 441 \u00b5s per loop\nsage: timeit(\"find_root(fast_float(sin(x)-cos(x), x), 0, pi)\")\n625 loops, best of 3: 393 \u00b5s per loop\n```\n\nIts better for clients to call fast_float themselves, if they're using find_root inside a loop.",
+    "body": "Incorporating the time it takes to call fast_float, the speedup is not that radical:\n\n```\nsage: var('x')\nx\nsage: from sage.ext.fast_eval import fast_float\nsage: timeit(\"find_root(sin(x)-cos(x), 0, pi)\")\n625 loops, best of 3: 441 \u00b5s per loop\nsage: timeit(\"find_root(fast_float(sin(x)-cos(x), x), 0, pi)\")\n625 loops, best of 3: 393 \u00b5s per loop\n```\nIts better for clients to call fast_float themselves, if they're using find_root inside a loop.",
     "created_at": "2009-07-29T16:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ sage: timeit("find_root(sin(x)-cos(x), 0, pi)")
 sage: timeit("find_root(fast_float(sin(x)-cos(x), x), 0, pi)")
 625 loops, best of 3: 393 µs per loop
 ```
-
 Its better for clients to call fast_float themselves, if they're using find_root inside a loop.
 
 
@@ -305,7 +302,7 @@ Changing status from new to needs_review.
 archive/issue_comments_038724.json:
 ```json
 {
-    "body": "Actually the speedup is 13x here (Sage 7.5beta5) only if the fast float already exists.\n\n```\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 131 \u00b5s per loop\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 10.2 \u00b5s per loop\nsage: timeit(\"find_root(sin(x)-cos(x), 0, pi)\")\n625 loops, best of 3: 170 \u00b5s per loop\nsage: timeit(\"find_root(fast_float(sin(x)-cos(x), x), 0, pi)\")\n625 loops, best of 3: 161 \u00b5s per loop\n\nsage: timeit('_ = sin(x)-cos(x)')\n625 loops, best of 3: 9.3 \u00b5s per loop\nsage: timeit(\"_ = fast_float(sin(x)-cos(x), x)\")\n625 loops, best of 3: 140 \u00b5s per loop\n```\n\nThe creation of `sin(x)-cos(x)` takes 10\u00b5s, `find_root` of a fast float takes also 10\u00b5s. What is slow is creation of the fast float (130\u00b5s) and `find_root` of the normal expression (120\u00b5s). So there is no gain converting to fast float because conversion eats it all.\n\nTherefore I propose to close this ticket.",
+    "body": "Actually the speedup is 13x here (Sage 7.5beta5) only if the fast float already exists.\n\n```\nsage: timeit(\"find_root(f, 0, pi)\")\n625 loops, best of 3: 131 \u00b5s per loop\nsage: timeit(\"find_root(g, 0, pi)\")\n625 loops, best of 3: 10.2 \u00b5s per loop\nsage: timeit(\"find_root(sin(x)-cos(x), 0, pi)\")\n625 loops, best of 3: 170 \u00b5s per loop\nsage: timeit(\"find_root(fast_float(sin(x)-cos(x), x), 0, pi)\")\n625 loops, best of 3: 161 \u00b5s per loop\n\nsage: timeit('_ = sin(x)-cos(x)')\n625 loops, best of 3: 9.3 \u00b5s per loop\nsage: timeit(\"_ = fast_float(sin(x)-cos(x), x)\")\n625 loops, best of 3: 140 \u00b5s per loop\n```\nThe creation of `sin(x)-cos(x)` takes 10\u00b5s, `find_root` of a fast float takes also 10\u00b5s. What is slow is creation of the fast float (130\u00b5s) and `find_root` of the normal expression (120\u00b5s). So there is no gain converting to fast float because conversion eats it all.\n\nTherefore I propose to close this ticket.",
     "created_at": "2016-12-07T08:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5091",
     "type": "issue_comment",
@@ -331,7 +328,6 @@ sage: timeit('_ = sin(x)-cos(x)')
 sage: timeit("_ = fast_float(sin(x)-cos(x), x)")
 625 loops, best of 3: 140 µs per loop
 ```
-
 The creation of `sin(x)-cos(x)` takes 10µs, `find_root` of a fast float takes also 10µs. What is slow is creation of the fast float (130µs) and `find_root` of the normal expression (120µs). So there is no gain converting to fast float because conversion eats it all.
 
 Therefore I propose to close this ticket.

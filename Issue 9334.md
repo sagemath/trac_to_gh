@@ -311,7 +311,7 @@ sage: hilbert_symbol(-1, -1, -1)
 archive/issue_comments_087946.json:
 ```json
 {
-    "body": "In addition to the first part of my precious comment: generalized_even_hilbert_symbol should accept a and b to both be divisible by p.\n\n```\nsage: hilbert_symbol(2,2,2)\n1\nsage: K.<i>=QuadraticField(-1)\nsage: O=K.maximal_order()\nsage: generalized_hilbert_symbol(3,3,3*O)\n1\nsage: generalized_hilbert_symbol(2,2,2*O)\nValueError: P must be a prime\n```\n",
+    "body": "In addition to the first part of my precious comment: generalized_even_hilbert_symbol should accept a and b to both be divisible by p.\n\n```\nsage: hilbert_symbol(2,2,2)\n1\nsage: K.<i>=QuadraticField(-1)\nsage: O=K.maximal_order()\nsage: generalized_hilbert_symbol(3,3,3*O)\n1\nsage: generalized_hilbert_symbol(2,2,2*O)\nValueError: P must be a prime\n```",
     "created_at": "2010-07-12T12:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -335,13 +335,12 @@ ValueError: P must be a prime
 
 
 
-
 ---
 
 archive/issue_comments_087947.json:
 ```json
 {
-    "body": "Oops, the last two lines of my previous comment should of course read\n\n```\nsage: p = 1+i\nsage: generalized_hilbert_symbol(p,p,p*O)\nRuntimeError: ord_P(a) or ord_P(b) must be zero\n```\n",
+    "body": "Oops, the last two lines of my previous comment should of course read\n\n```\nsage: p = 1+i\nsage: generalized_hilbert_symbol(p,p,p*O)\nRuntimeError: ord_P(a) or ord_P(b) must be zero\n```",
     "created_at": "2010-07-12T12:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -357,7 +356,6 @@ sage: p = 1+i
 sage: generalized_hilbert_symbol(p,p,p*O)
 RuntimeError: ord_P(a) or ord_P(b) must be zero
 ```
-
 
 
 
@@ -524,7 +522,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087956.json:
 ```json
 {
-    "body": "Based on 4.5.3.alpha1:\n\n\n```\nsage -t  sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1212:\n    sage: P.uniformizer()\nExpected:\n    a + 4\nGot:\n    -2*a + 1\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1219:\n    sage: P.uniformizer()\nExpected:\n    -7*a^4 + 13*a^3 - 13*a^2 - 2*a + 50\nGot:\n    a^4 - a^3 + a^2 - a + 1\n**********************************************************************\n```\n",
+    "body": "Based on 4.5.3.alpha1:\n\n```\nsage -t  sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1212:\n    sage: P.uniformizer()\nExpected:\n    a + 4\nGot:\n    -2*a + 1\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1219:\n    sage: P.uniformizer()\nExpected:\n    -7*a^4 + 13*a^3 - 13*a^2 - 2*a + 50\nGot:\n    a^4 - a^3 + a^2 - a + 1\n**********************************************************************\n```",
     "created_at": "2010-08-20T00:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -534,7 +532,6 @@ archive/issue_comments_087956.json:
 ```
 
 Based on 4.5.3.alpha1:
-
 
 ```
 sage -t  sage/rings/number_field/number_field_ideal.py
@@ -554,7 +551,6 @@ Got:
     a^4 - a^3 + a^2 - a + 1
 **********************************************************************
 ```
-
 
 
 
@@ -637,7 +633,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087961.json:
 ```json
 {
-    "body": "Here are some comments have already been mentioned above:\n* why aren't generalized_hilbert_symbol and generalized_even_hilbert_symbol in the same file? (e.g. both in number_field as John suggested)\n* the documentation of generalized_hilbert_symbol says that the prime should be odd, which isn't necessary, in fact, it would be good to have an even example in the doctest so this functionality doesn't get broken\n* the documentation of generalized_even_hilbert_symbol doesn't say that the prime must be even, which it should!\n\nAlso, generalized_even_hilbert_symbol is less powerful than the general one:\n\n```\nsage: K.<i> = QuadraticField(-1)                            \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(1/3), K(1), (1+i)*O)     \n1\nsage: generalized_even_hilbert_symbol(K(1/3), K(1), (1+i)*O)\n...\nNotImplementedError: inverse_mod is not implemented for non-integral elements\n```\n\nSo I guess the documentation of generalized_even_hilbert_symbol should say that the input should consist of integral elements? Possibly the documentation of generalized_even_hilbert_symbol could say that this is simply an auxiliary function and the user should call generalized_hilbert_symbol instead?\n\nneeds_work because of the documentation issues for generalized_even_hilbert_symbol",
+    "body": "Here are some comments have already been mentioned above:\n* why aren't generalized_hilbert_symbol and generalized_even_hilbert_symbol in the same file? (e.g. both in number_field as John suggested)\n* the documentation of generalized_hilbert_symbol says that the prime should be odd, which isn't necessary, in fact, it would be good to have an even example in the doctest so this functionality doesn't get broken\n* the documentation of generalized_even_hilbert_symbol doesn't say that the prime must be even, which it should!\n\nAlso, generalized_even_hilbert_symbol is less powerful than the general one:\n\n```\nsage: K.<i> = QuadraticField(-1)                            \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(1/3), K(1), (1+i)*O)     \n1\nsage: generalized_even_hilbert_symbol(K(1/3), K(1), (1+i)*O)\n...\nNotImplementedError: inverse_mod is not implemented for non-integral elements\n```\nSo I guess the documentation of generalized_even_hilbert_symbol should say that the input should consist of integral elements? Possibly the documentation of generalized_even_hilbert_symbol could say that this is simply an auxiliary function and the user should call generalized_hilbert_symbol instead?\n\nneeds_work because of the documentation issues for generalized_even_hilbert_symbol",
     "created_at": "2010-08-20T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -662,7 +658,6 @@ sage: generalized_even_hilbert_symbol(K(1/3), K(1), (1+i)*O)
 ...
 NotImplementedError: inverse_mod is not implemented for non-integral elements
 ```
-
 So I guess the documentation of generalized_even_hilbert_symbol should say that the input should consist of integral elements? Possibly the documentation of generalized_even_hilbert_symbol could say that this is simply an auxiliary function and the user should call generalized_hilbert_symbol instead?
 
 needs_work because of the documentation issues for generalized_even_hilbert_symbol
@@ -674,7 +669,7 @@ needs_work because of the documentation issues for generalized_even_hilbert_symb
 archive/issue_comments_087962.json:
 ```json
 {
-    "body": "here's a non-documentation reason for `needs_work`:\n\n```\nsage: K.<i> = QuadraticField(-1)                           \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(-1/3), K(-2/3), (1+i)*O)\n...\nValueError: self is not a square root mod P^n\n```\n",
+    "body": "here's a non-documentation reason for `needs_work`:\n\n```\nsage: K.<i> = QuadraticField(-1)                           \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(-1/3), K(-2/3), (1+i)*O)\n...\nValueError: self is not a square root mod P^n\n```",
     "created_at": "2010-08-20T13:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -695,13 +690,12 @@ ValueError: self is not a square root mod P^n
 
 
 
-
 ---
 
 archive/issue_comments_087963.json:
 ```json
 {
-    "body": "And here's another one. In Magma, I get:\n\n```\n> L := QuadraticField(5);\n> O := MaximalOrder(L);    \n> HilbertSymbol(L!-3, L!-2, 2*O);\n1 1/2 + 1/2*i j\n```\n\nIn pari, I get:\n\n```\n? k = nfinit(x^2-5)\n...\n? nfhilbert(k, -3, -2, idealprimedec(k, 2)[1])\n%2 = 1\n```\n\nBut the patch gives:\n\n```\nsage: L.<a> = QuadraticField(5)\nsage: generalized_hilbert_symbol(L(-3), L(-2), 2*O)\n-1\n```\n\nSomething is wrong...",
+    "body": "And here's another one. In Magma, I get:\n\n```\n> L := QuadraticField(5);\n> O := MaximalOrder(L);    \n> HilbertSymbol(L!-3, L!-2, 2*O);\n1 1/2 + 1/2*i j\n```\nIn pari, I get:\n\n```\n? k = nfinit(x^2-5)\n...\n? nfhilbert(k, -3, -2, idealprimedec(k, 2)[1])\n%2 = 1\n```\nBut the patch gives:\n\n```\nsage: L.<a> = QuadraticField(5)\nsage: generalized_hilbert_symbol(L(-3), L(-2), 2*O)\n-1\n```\nSomething is wrong...",
     "created_at": "2010-08-20T13:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -718,7 +712,6 @@ And here's another one. In Magma, I get:
 > HilbertSymbol(L!-3, L!-2, 2*O);
 1 1/2 + 1/2*i j
 ```
-
 In pari, I get:
 
 ```
@@ -727,7 +720,6 @@ In pari, I get:
 ? nfhilbert(k, -3, -2, idealprimedec(k, 2)[1])
 %2 = 1
 ```
-
 But the patch gives:
 
 ```
@@ -735,7 +727,6 @@ sage: L.<a> = QuadraticField(5)
 sage: generalized_hilbert_symbol(L(-3), L(-2), 2*O)
 -1
 ```
-
 Something is wrong...
 
 
@@ -831,7 +822,7 @@ How do we get this fix into Sage?
 archive/issue_comments_087968.json:
 ```json
 {
-    "body": "Replying to [comment:29 mstreng]:\n> The pari bug resulting in incorrect outputs of nfhilbert was fixed in Pari svn revision 13063 2011-04-05 14:03:38 +0100 (Tue, 05 Apr 2011).\n> \n> How do we get this fix into Sage?\n\nI am currently maintaining the PARI spkg for Sage, so asking me is the best way.",
+    "body": "Replying to [comment:29 mstreng]:\n> The pari bug resulting in incorrect outputs of nfhilbert was fixed in Pari svn revision 13063 2011-04-05 14:03:38 +0100 (Tue, 05 Apr 2011).\n> \n> How do we get this fix into Sage?\n\n\nI am currently maintaining the PARI spkg for Sage, so asking me is the best way.",
     "created_at": "2011-04-05T14:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -844,6 +835,7 @@ Replying to [comment:29 mstreng]:
 > The pari bug resulting in incorrect outputs of nfhilbert was fixed in Pari svn revision 13063 2011-04-05 14:03:38 +0100 (Tue, 05 Apr 2011).
 > 
 > How do we get this fix into Sage?
+
 
 I am currently maintaining the PARI spkg for Sage, so asking me is the best way.
 
@@ -964,7 +956,7 @@ Some doctests disagree with Magma, so I hope they will fail!
 archive/issue_comments_087975.json:
 ```json
 {
-    "body": "According to Magma V2.17-9, the following changes make the doctests correct:\n\nreplace\n\n```\nsage: K.hilbert_symbol(p,p,p*O)  \n-1\n```\n\nby\n\n```\nsage: K.hilbert_symbol(p,p,p)  \n1\nsage: K.hilbert_symbol(p,3*p,p)\n-1\nsage: K.hilbert_symbol(3,p,p)\n-1\n```\n\n\nremove duplicate\n\n```\nsage: K.hilbert_symbol(a,b,P)\n-1\n```\n\nand for the remaining one, replace -1 by 1\n\nreplace -1 by 1 in\n\n```\nsage: K.hilbert_symbol(a, 2, P)  \n-1  \n```\n\n\nThen the \"various other examples\" contain a lot of uninteresting 1s, of which we can remove a few.",
+    "body": "According to Magma V2.17-9, the following changes make the doctests correct:\n\nreplace\n\n```\nsage: K.hilbert_symbol(p,p,p*O)  \n-1\n```\nby\n\n```\nsage: K.hilbert_symbol(p,p,p)  \n1\nsage: K.hilbert_symbol(p,3*p,p)\n-1\nsage: K.hilbert_symbol(3,p,p)\n-1\n```\n\nremove duplicate\n\n```\nsage: K.hilbert_symbol(a,b,P)\n-1\n```\nand for the remaining one, replace -1 by 1\n\nreplace -1 by 1 in\n\n```\nsage: K.hilbert_symbol(a, 2, P)  \n-1  \n```\n\nThen the \"various other examples\" contain a lot of uninteresting 1s, of which we can remove a few.",
     "created_at": "2011-09-27T10:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -981,7 +973,6 @@ replace
 sage: K.hilbert_symbol(p,p,p*O)  
 -1
 ```
-
 by
 
 ```
@@ -993,14 +984,12 @@ sage: K.hilbert_symbol(3,p,p)
 -1
 ```
 
-
 remove duplicate
 
 ```
 sage: K.hilbert_symbol(a,b,P)
 -1
 ```
-
 and for the remaining one, replace -1 by 1
 
 replace -1 by 1 in
@@ -1009,7 +998,6 @@ replace -1 by 1 in
 sage: K.hilbert_symbol(a, 2, P)  
 -1  
 ```
-
 
 Then the "various other examples" contain a lot of uninteresting 1s, of which we can remove a few.
 
@@ -1020,7 +1008,7 @@ Then the "various other examples" contain a lot of uninteresting 1s, of which we
 archive/issue_comments_087976.json:
 ```json
 {
-    "body": "Testing on 4.7.2.alpha2+#11130 I get these failures:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6737:\n    sage: K.hilbert_symbol(p,p,p*O)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6763:\n    sage: K.hilbert_symbol(a,b,P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6770:\n    sage: K.hilbert_symbol(a, b, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6772:\n    sage: K.hilbert_symbol(a, 2, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n```\n",
+    "body": "Testing on 4.7.2.alpha2+#11130 I get these failures:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6737:\n    sage: K.hilbert_symbol(p,p,p*O)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6763:\n    sage: K.hilbert_symbol(a,b,P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6770:\n    sage: K.hilbert_symbol(a, b, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6772:\n    sage: K.hilbert_symbol(a, 2, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n```",
     "created_at": "2011-09-27T11:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1066,13 +1054,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_087977.json:
 ```json
 {
-    "body": "This looks bad:\n\n```\nsage: K.<t> = NumberField(x^3 - x + 1)\nsage: K.pari_nf().nfhilbert(t,t+1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/src/sage-4.7.2.alpha2/<ipython console> in <module>()\n\n/usr/local/src/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.gen.nfhilbert (sage/libs/pari/gen.c:29966)()\n\nRuntimeError: Segmentation fault\n```\n\n\nI can't immediately figure out the cause, it is probably a bug somewhere in PARI or the Sage-PARI interface,",
+    "body": "This looks bad:\n\n```\nsage: K.<t> = NumberField(x^3 - x + 1)\nsage: K.pari_nf().nfhilbert(t,t+1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/src/sage-4.7.2.alpha2/<ipython console> in <module>()\n\n/usr/local/src/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.gen.nfhilbert (sage/libs/pari/gen.c:29966)()\n\nRuntimeError: Segmentation fault\n```\n\nI can't immediately figure out the cause, it is probably a bug somewhere in PARI or the Sage-PARI interface,",
     "created_at": "2011-09-27T12:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1095,7 +1082,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: Segmentation fault
 ```
-
 
 I can't immediately figure out the cause, it is probably a bug somewhere in PARI or the Sage-PARI interface,
 
@@ -1124,7 +1110,7 @@ The Segmentation Fault is probably #11854.
 archive/issue_comments_087979.json:
 ```json
 {
-    "body": "Replying to [comment:38 jdemeyer]:\n> This looks bad:\n\nThis is about global Hilbert symbols, while all the doctests are about local ones. Thanks for noticing.\n\nDo you want to close this ticket at the same time as #11130? If not, then I'll wait until I can download a version with #11130 included, and then try to fix the problems here.",
+    "body": "Replying to [comment:38 jdemeyer]:\n> This looks bad:\n\n\nThis is about global Hilbert symbols, while all the doctests are about local ones. Thanks for noticing.\n\nDo you want to close this ticket at the same time as #11130? If not, then I'll wait until I can download a version with #11130 included, and then try to fix the problems here.",
     "created_at": "2011-09-27T15:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1135,6 +1121,7 @@ archive/issue_comments_087979.json:
 
 Replying to [comment:38 jdemeyer]:
 > This looks bad:
+
 
 This is about global Hilbert symbols, while all the doctests are about local ones. Thanks for noticing.
 
@@ -1147,7 +1134,7 @@ Do you want to close this ticket at the same time as #11130? If not, then I'll w
 archive/issue_comments_087980.json:
 ```json
 {
-    "body": "Replying to [comment:40 mstreng]:\n> Do you want to close this ticket at the same time as #11130?\nI don't think there is any reason to do so.  I will leave it up to you to decide what to do.  For now, I will continue investigating the Segmentation Fault issue.",
+    "body": "Replying to [comment:40 mstreng]:\n> Do you want to close this ticket at the same time as #11130?\n\nI don't think there is any reason to do so.  I will leave it up to you to decide what to do.  For now, I will continue investigating the Segmentation Fault issue.",
     "created_at": "2011-09-27T16:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1158,6 +1145,7 @@ archive/issue_comments_087980.json:
 
 Replying to [comment:40 mstreng]:
 > Do you want to close this ticket at the same time as #11130?
+
 I don't think there is any reason to do so.  I will leave it up to you to decide what to do.  For now, I will continue investigating the Segmentation Fault issue.
 
 
@@ -1205,7 +1193,7 @@ As for this ticket, as far as I'm concerned you may ignore this.  It has essenti
 archive/issue_comments_087983.json:
 ```json
 {
-    "body": "Replying to [comment:43 jdemeyer]:\n> The Segmentation Fault actually shows a major design problem with the Sage->PARI interface (essentially, the `t0GEN` system is broken by design).\n> \n\nSo there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.",
+    "body": "Replying to [comment:43 jdemeyer]:\n> The Segmentation Fault actually shows a major design problem with the Sage->PARI interface (essentially, the `t0GEN` system is broken by design).\n> \n\n\nSo there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.",
     "created_at": "2011-09-28T09:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1218,6 +1206,7 @@ Replying to [comment:43 jdemeyer]:
 > The Segmentation Fault actually shows a major design problem with the Sage->PARI interface (essentially, the `t0GEN` system is broken by design).
 > 
 
+
 So there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.
 
 
@@ -1227,7 +1216,7 @@ So there should be a new ticket made which explains this major design problem, s
 archive/issue_comments_087984.json:
 ```json
 {
-    "body": "Replying to [comment:44 cremona]:\n> So there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.\nSee #11868.",
+    "body": "Replying to [comment:44 cremona]:\n> So there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.\n\nSee #11868.",
     "created_at": "2011-09-29T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1238,6 +1227,7 @@ archive/issue_comments_087984.json:
 
 Replying to [comment:44 cremona]:
 > So there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.
+
 See #11868.
 
 
@@ -1283,7 +1273,7 @@ I'm going to make some further changes.
 archive/issue_comments_087987.json:
 ```json
 {
-    "body": "Replying to [comment:48 davidloeffler]:\n> Is this ready for review again now?\n\nThere is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n\nAlso, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\n\nFinally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?",
+    "body": "Replying to [comment:48 davidloeffler]:\n> Is this ready for review again now?\n\n\nThere is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n\nAlso, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\n\nFinally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?",
     "created_at": "2011-09-29T10:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1294,6 +1284,7 @@ archive/issue_comments_087987.json:
 
 Replying to [comment:48 davidloeffler]:
 > Is this ready for review again now?
+
 
 There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.
 
@@ -1308,7 +1299,7 @@ Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefull
 archive/issue_comments_087988.json:
 ```json
 {
-    "body": "Replying to [comment:50 mstreng]:\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\n\nWow, even Sage doesn't check this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\n\nso my `self(a)` was pretty useless and we may want to do this:\n\n```\nif not (a in self and b in self):\n    raise ValueError, ...\n```\n",
+    "body": "Replying to [comment:50 mstreng]:\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\n\n\nWow, even Sage doesn't check this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\nso my `self(a)` was pretty useless and we may want to do this:\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nif not (a in self and b in self):\n    raise ValueError, ...\n```",
     "created_at": "2011-09-29T10:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1320,6 +1311,7 @@ archive/issue_comments_087988.json:
 Replying to [comment:50 mstreng]:
 > Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?
 
+
 Wow, even Sage doesn't check this:
 
 ```
@@ -1330,14 +1322,13 @@ sage: L.<b> = NumberField(x^3+2*x+2)
 sage: K(b)
 a
 ```
-
 so my `self(a)` was pretty useless and we may want to do this:
-
+| Sage Version 4.7.1, Release Date: 2011-08-11                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 if not (a in self and b in self):
     raise ValueError, ...
 ```
-
 
 
 
@@ -1364,7 +1355,7 @@ Attachment [9334_review_jdemeyer.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_087990.json:
 ```json
 {
-    "body": "Replying to [comment:50 mstreng]:\n> There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\nPlease do it!\n\n> Also, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\nIt will be Python `int`.  I see no reason to return a Sage Integer.\n\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\nI only *moved* ``a = self(a)`` up in the code.",
+    "body": "Replying to [comment:50 mstreng]:\n> There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n\nPlease do it!\n\n> Also, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\n\nIt will be Python `int`.  I see no reason to return a Sage Integer.\n\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\n\nI only *moved* ``a = self(a)`` up in the code.",
     "created_at": "2011-09-29T10:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1375,12 +1366,15 @@ archive/issue_comments_087990.json:
 
 Replying to [comment:50 mstreng]:
 > There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.
+
 Please do it!
 
 > Also, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?
+
 It will be Python `int`.  I see no reason to return a Sage Integer.
 
 > Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?
+
 I only *moved* ``a = self(a)`` up in the code.
 
 
@@ -1390,7 +1384,7 @@ I only *moved* ``a = self(a)`` up in the code.
 archive/issue_comments_087991.json:
 ```json
 {
-    "body": "Replying to [comment:51 mstreng]:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\n\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nI think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.",
+    "body": "Replying to [comment:51 mstreng]:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nI think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.",
     "created_at": "2011-09-29T10:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1409,7 +1403,6 @@ sage: L.<b> = NumberField(x^3+2*x+2)
 sage: K(b)
 a
 ```
-
 | Sage Version 4.7.1, Release Date: 2011-08-11                       |
 | Type notebook() for the GUI, and license() for information.        |
 I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.
@@ -1421,7 +1414,7 @@ I think this is a horrible bug. There is no embedding from L to K!  A very gener
 archive/issue_comments_087992.json:
 ```json
 {
-    "body": "Replying to [comment:53 cremona]:\n> Replying to [comment:51 mstreng]:\n> {{{\n> ----------------------------------------------------------------------\n> | Sage Version 4.7.1, Release Date: 2011-08-11                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: K.<a> = NumberField(x^3+x+1)\n> sage: L.<b> = NumberField(x^3+2*x+2)\n> sage: K(b)\n> a\n> }}}\n> \n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n> \n\nI agree -- that's horrible! It's not so generic actually: the offending code is the  method `NumberField_absolute._coerce_from_other_number_field` which just converts to a polynomial and back: \n\n```\nf = self.polynomial_ring()(x.polynomial())\nreturn self._element_class(self, f)\n```\n\n\nThis is mathematically meaningless unless either the other field is isomorphic to self, or x is actually in Q. I suggest we raise this on sage-nt, and maybe open a ticket to fix it ASAP.",
+    "body": "Replying to [comment:53 cremona]:\n> Replying to [comment:51 mstreng]:\n> \n> ```\n> ----------------------------------------------------------------------\n> | Sage Version 4.7.1, Release Date: 2011-08-11                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: K.<a> = NumberField(x^3+x+1)\n> sage: L.<b> = NumberField(x^3+2*x+2)\n> sage: K(b)\n> a\n> ```\n> \n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n> \n\n\nI agree -- that's horrible! It's not so generic actually: the offending code is the  method `NumberField_absolute._coerce_from_other_number_field` which just converts to a polynomial and back: \n\n```\nf = self.polynomial_ring()(x.polynomial())\nreturn self._element_class(self, f)\n```\n\nThis is mathematically meaningless unless either the other field is isomorphic to self, or x is actually in Q. I suggest we raise this on sage-nt, and maybe open a ticket to fix it ASAP.",
     "created_at": "2011-09-29T10:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1432,7 +1425,8 @@ archive/issue_comments_087992.json:
 
 Replying to [comment:53 cremona]:
 > Replying to [comment:51 mstreng]:
-> {{{
+> 
+> ```
 > ----------------------------------------------------------------------
 > | Sage Version 4.7.1, Release Date: 2011-08-11                       |
 > | Type notebook() for the GUI, and license() for information.        |
@@ -1441,10 +1435,11 @@ Replying to [comment:53 cremona]:
 > sage: L.<b> = NumberField(x^3+2*x+2)
 > sage: K(b)
 > a
-> }}}
+> ```
 > 
 > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.
 > 
+
 
 I agree -- that's horrible! It's not so generic actually: the offending code is the  method `NumberField_absolute._coerce_from_other_number_field` which just converts to a polynomial and back: 
 
@@ -1452,7 +1447,6 @@ I agree -- that's horrible! It's not so generic actually: the offending code is 
 f = self.polynomial_ring()(x.polynomial())
 return self._element_class(self, f)
 ```
-
 
 This is mathematically meaningless unless either the other field is isomorphic to self, or x is actually in Q. I suggest we raise this on sage-nt, and maybe open a ticket to fix it ASAP.
 
@@ -1463,7 +1457,7 @@ This is mathematically meaningless unless either the other field is isomorphic t
 archive/issue_comments_087993.json:
 ```json
 {
-    "body": "Replying to [comment:52 jdemeyer]:\n> It will be Python `int`.  I see no reason to return a Sage Integer.\n\nPython ints are fine with me, I was afraid it would be a pari object. I would have liked some uniformity, but that's missing already.\n\n```\nsage: type(legendre_symbol(3,5))\n<type 'int'>\nsage: type(hilbert_symbol(3,5,7))\n<type 'sage.rings.integer.Integer'>\nsage: type(jacobi_symbol(3,5))\n<type 'sage.rings.integer.Integer'>\n```\n\nI want all symbols to behave nicely with division by Sage integers, but that's fine with `int`\n\n```\nsage: int(1)/ZZ(2)\n1/2\n```\n",
+    "body": "Replying to [comment:52 jdemeyer]:\n> It will be Python `int`.  I see no reason to return a Sage Integer.\n\n\nPython ints are fine with me, I was afraid it would be a pari object. I would have liked some uniformity, but that's missing already.\n\n```\nsage: type(legendre_symbol(3,5))\n<type 'int'>\nsage: type(hilbert_symbol(3,5,7))\n<type 'sage.rings.integer.Integer'>\nsage: type(jacobi_symbol(3,5))\n<type 'sage.rings.integer.Integer'>\n```\nI want all symbols to behave nicely with division by Sage integers, but that's fine with `int`\n\n```\nsage: int(1)/ZZ(2)\n1/2\n```",
     "created_at": "2011-09-29T10:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1475,6 +1469,7 @@ archive/issue_comments_087993.json:
 Replying to [comment:52 jdemeyer]:
 > It will be Python `int`.  I see no reason to return a Sage Integer.
 
+
 Python ints are fine with me, I was afraid it would be a pari object. I would have liked some uniformity, but that's missing already.
 
 ```
@@ -1485,7 +1480,6 @@ sage: type(hilbert_symbol(3,5,7))
 sage: type(jacobi_symbol(3,5))
 <type 'sage.rings.integer.Integer'>
 ```
-
 I want all symbols to behave nicely with division by Sage integers, but that's fine with `int`
 
 ```
@@ -1495,13 +1489,12 @@ sage: int(1)/ZZ(2)
 
 
 
-
 ---
 
 archive/issue_comments_087994.json:
 ```json
 {
-    "body": "Replying to [comment:53 cremona]:\n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n\nIs there a ticket for this yet?",
+    "body": "Replying to [comment:53 cremona]:\n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n\n\nIs there a ticket for this yet?",
     "created_at": "2011-09-29T10:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1512,6 +1505,7 @@ archive/issue_comments_087994.json:
 
 Replying to [comment:53 cremona]:
 > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.
+
 
 Is there a ticket for this yet?
 
@@ -1540,7 +1534,7 @@ Sage-nt thread here: http://groups.google.com/group/sage-nt/browse_thread/thread
 archive/issue_comments_087996.json:
 ```json
 {
-    "body": "Replying to [comment:56 mstreng]:\n> Replying to [comment:53 cremona]:\n> > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n> \n> Is there a ticket for this yet? \n\nJust made one: #11869.",
+    "body": "Replying to [comment:56 mstreng]:\n> Replying to [comment:53 cremona]:\n> > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n\n> \n> Is there a ticket for this yet? \n\n\nJust made one: #11869.",
     "created_at": "2011-09-29T12:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1552,8 +1546,10 @@ archive/issue_comments_087996.json:
 Replying to [comment:56 mstreng]:
 > Replying to [comment:53 cremona]:
 > > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.
+
 > 
 > Is there a ticket for this yet? 
+
 
 Just made one: #11869.
 
@@ -1564,7 +1560,7 @@ Just made one: #11869.
 archive/issue_comments_087997.json:
 ```json
 {
-    "body": "Replying to [comment:52 jdemeyer]:\n> Replying to [comment:50 mstreng]:\n> > There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n> Please do it!\n\nI could, but I wouldn't be able to test it, and it may need to be rebased afterwards: I failed to install #11130.",
+    "body": "Replying to [comment:52 jdemeyer]:\n> Replying to [comment:50 mstreng]:\n> > There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n\n> Please do it!\n\nI could, but I wouldn't be able to test it, and it may need to be rebased afterwards: I failed to install #11130.",
     "created_at": "2011-09-29T21:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
@@ -1576,6 +1572,7 @@ archive/issue_comments_087997.json:
 Replying to [comment:52 jdemeyer]:
 > Replying to [comment:50 mstreng]:
 > > There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.
+
 > Please do it!
 
 I could, but I wouldn't be able to test it, and it may need to be rebased afterwards: I failed to install #11130.

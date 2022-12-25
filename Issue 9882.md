@@ -3,7 +3,7 @@
 archive/issues_009882.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux: \n\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: L = [R.random_element() for i in range(100)]\nsage: timeit(\"f = S(L)\")\n125 loops, best of 3: 4.79 ms per loop\n```\n\n\nThat's about 124000 cycles per coefficient conversion. Compare to the cost of multiplying polynomials of the same degree:\n\n```\nsage: f = S([R.random_element() for i in range(100)])\nsage: g = S([R.random_element() for i in range(100)])\nsage: timeit(\"h = f * g\")\n625 loops, best of 3: 31.8 \u00b5s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9883\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux: \n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: L = [R.random_element() for i in range(100)]\nsage: timeit(\"f = S(L)\")\n125 loops, best of 3: 4.79 ms per loop\n```\n\nThat's about 124000 cycles per coefficient conversion. Compare to the cost of multiplying polynomials of the same degree:\n\n```\nsage: f = S([R.random_element() for i in range(100)])\nsage: g = S([R.random_element() for i in range(100)])\nsage: timeit(\"h = f * g\")\n625 loops, best of 3: 31.8 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9883\n\n",
     "created_at": "2010-09-09T16:00:33Z",
     "labels": [
         "component: performance",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 Sage 4.5.3, 2.6GHz Opteron, Linux: 
 
-
 ```
 sage: R = Integers(3^20)
 sage: S.<x> = PolynomialRing(R)
@@ -28,7 +27,6 @@ sage: L = [R.random_element() for i in range(100)]
 sage: timeit("f = S(L)")
 125 loops, best of 3: 4.79 ms per loop
 ```
-
 
 That's about 124000 cycles per coefficient conversion. Compare to the cost of multiplying polynomials of the same degree:
 
@@ -38,7 +36,6 @@ sage: g = S([R.random_element() for i in range(100)])
 sage: timeit("h = f * g")
 625 loops, best of 3: 31.8 µs per loop
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9883
@@ -105,7 +102,7 @@ archive/issue_events_024892.json:
 archive/issue_comments_097795.json:
 ```json
 {
-    "body": "With sage-6.1:\n\n```\nsage: sage: R = Integers(3^20)\nsage: sage: S.<x> = PolynomialRing(R)\nsage: sage: L = [R.random_element() for i in range(100)]\nsage: sage: timeit(\"f = S(L)\")\n625 loops, best of 3: 49.6 \u00b5s per loop\nsage: sage: L = [R.random_element() for i in range(1000)]\nsage: sage: timeit(\"f = S(L)\")\n625 loops, best of 3: 388 \u00b5s per loop\n\nsage: sage: f = S([R.random_element() for i in range(100)])\nsage: sage: g = S([R.random_element() for i in range(100)])\nsage: sage: timeit(\"h = f * g\")\n625 loops, best of 3: 10.9 \u00b5s per loop\n```\n",
+    "body": "With sage-6.1:\n\n```\nsage: sage: R = Integers(3^20)\nsage: sage: S.<x> = PolynomialRing(R)\nsage: sage: L = [R.random_element() for i in range(100)]\nsage: sage: timeit(\"f = S(L)\")\n625 loops, best of 3: 49.6 \u00b5s per loop\nsage: sage: L = [R.random_element() for i in range(1000)]\nsage: sage: timeit(\"f = S(L)\")\n625 loops, best of 3: 388 \u00b5s per loop\n\nsage: sage: f = S([R.random_element() for i in range(100)])\nsage: sage: g = S([R.random_element() for i in range(100)])\nsage: sage: timeit(\"h = f * g\")\n625 loops, best of 3: 10.9 \u00b5s per loop\n```",
     "created_at": "2014-02-02T11:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9882",
     "type": "issue_comment",
@@ -131,7 +128,6 @@ sage: sage: g = S([R.random_element() for i in range(100)])
 sage: sage: timeit("h = f * g")
 625 loops, best of 3: 10.9 µs per loop
 ```
-
 
 
 

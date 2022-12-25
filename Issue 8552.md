@@ -115,7 +115,7 @@ Another issue: the viewer commands from `misc.viewer` on Linux all return string
 archive/issue_comments_077219.json:
 ```json
 {
-    "body": "Overall, it looks good.\n\nI think line 615, `debug=True` should be deleted.  I also think that before line 1793\n\n```\nprint 'viewer: \"{0}\"'.format(viewer)\n```\n\nwe should have `if debug:`\n\nI notice that you don't seem to be using \"base\" in the switch from \n\n```\nlt = 'cd \"%s\"&& sage-native-execute %s \\\\\\\\nonstopmode \\\\\\\\input{%s.tex} %s'%(base, command, filename, redirect)\n```\n\nto\n\n```\nlt = ['sage-native-execute', command, r'\\nonstopmode', r'\\input{' + filename + '.tex}'] \n```\n\nBut it seems to work with your patch, so I guess it's okay.\n\n> is it okay if we just eliminate that [background] option?\n\nI think so.  If you think it's worth asking around, you could post on sage-devel.  Anyway, I think we can eliminate it, but we should probably keep the argument there for backwards compatibility, but have it do nothing -- this is what your patch does, right?  We (meaning you) just need to document that the option no longer does anything.\n\n> Another issue: the viewer commands from misc.viewer on Linux all return strings with a space in them\n\nIf \"s\" is the output of one of these commands, can we do s.split() to turn it into a list, split at spaces (if there are any)?  Oh, I guess that's what you're doing.\n\n----------\n\nSummary: fix the debugging issues (the print statement), and document the fact that \"do_in_background\" now has no effect, and I think this is ready to go.",
+    "body": "Overall, it looks good.\n\nI think line 615, `debug=True` should be deleted.  I also think that before line 1793\n\n```\nprint 'viewer: \"{0}\"'.format(viewer)\n```\nwe should have `if debug:`\n\nI notice that you don't seem to be using \"base\" in the switch from \n\n```\nlt = 'cd \"%s\"&& sage-native-execute %s \\\\\\\\nonstopmode \\\\\\\\input{%s.tex} %s'%(base, command, filename, redirect)\n```\nto\n\n```\nlt = ['sage-native-execute', command, r'\\nonstopmode', r'\\input{' + filename + '.tex}'] \n```\nBut it seems to work with your patch, so I guess it's okay.\n\n> is it okay if we just eliminate that [background] option?\n\n\nI think so.  If you think it's worth asking around, you could post on sage-devel.  Anyway, I think we can eliminate it, but we should probably keep the argument there for backwards compatibility, but have it do nothing -- this is what your patch does, right?  We (meaning you) just need to document that the option no longer does anything.\n\n> Another issue: the viewer commands from misc.viewer on Linux all return strings with a space in them\n\n\nIf \"s\" is the output of one of these commands, can we do s.split() to turn it into a list, split at spaces (if there are any)?  Oh, I guess that's what you're doing.\n\n---\n\nSummary: fix the debugging issues (the print statement), and document the fact that \"do_in_background\" now has no effect, and I think this is ready to go.",
     "created_at": "2010-06-23T20:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8552",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ I think line 615, `debug=True` should be deleted.  I also think that before line
 ```
 print 'viewer: "{0}"'.format(viewer)
 ```
-
 we should have `if debug:`
 
 I notice that you don't seem to be using "base" in the switch from 
@@ -139,24 +138,24 @@ I notice that you don't seem to be using "base" in the switch from
 ```
 lt = 'cd "%s"&& sage-native-execute %s \\\\nonstopmode \\\\input{%s.tex} %s'%(base, command, filename, redirect)
 ```
-
 to
 
 ```
 lt = ['sage-native-execute', command, r'\nonstopmode', r'\input{' + filename + '.tex}'] 
 ```
-
 But it seems to work with your patch, so I guess it's okay.
 
 > is it okay if we just eliminate that [background] option?
+
 
 I think so.  If you think it's worth asking around, you could post on sage-devel.  Anyway, I think we can eliminate it, but we should probably keep the argument there for backwards compatibility, but have it do nothing -- this is what your patch does, right?  We (meaning you) just need to document that the option no longer does anything.
 
 > Another issue: the viewer commands from misc.viewer on Linux all return strings with a space in them
 
+
 If "s" is the output of one of these commands, can we do s.split() to turn it into a list, split at spaces (if there are any)?  Oh, I guess that's what you're doing.
 
-----------
+---
 
 Summary: fix the debugging issues (the print statement), and document the fact that "do_in_background" now has no effect, and I think this is ready to go.
 

@@ -3,7 +3,7 @@
 archive/issues_001994.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb @robertwb\n\nThere are some issues with cython spyx files:\n\n1. There is *still* nothing in the documentation anywhere in sage about cinclude, clib, etc.  Here's a hint:\n\n```\nBasically you put\n# clang c\n# clib  cblas\n# cfile myfile.c\n# cinclude super.h standard.h\n```\n\nQuestions -- where can one put these?   Must the # be there?  \nHowever this is documented, at a bare minimum typing \n\n```\nsage: cython?\nsage: load?\nsage: attach?\n```\n\nshould give enough information to find docs that clearly explain this cinclude, etc. directives. \n\n2. Create a file a.pxi and a file b.pyx.  Put one of the # directives in the .pxi file and include the pxi file in the pyx file.  The directive is ignored.  This caused a ton of confusion today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1994\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb @robertwb\n\nThere are some issues with cython spyx files:\n\n1. There is *still* nothing in the documentation anywhere in sage about cinclude, clib, etc.  Here's a hint:\n\n```\nBasically you put\n# clang c\n# clib  cblas\n# cfile myfile.c\n# cinclude super.h standard.h\n```\nQuestions -- where can one put these?   Must the # be there?  \nHowever this is documented, at a bare minimum typing \n\n```\nsage: cython?\nsage: load?\nsage: attach?\n```\nshould give enough information to find docs that clearly explain this cinclude, etc. directives. \n\n2. Create a file a.pxi and a file b.pyx.  Put one of the # directives in the .pxi file and include the pxi file in the pyx file.  The directive is ignored.  This caused a ton of confusion today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1994\n\n",
     "created_at": "2008-01-31T04:34:13Z",
     "labels": [
         "component: user interface",
@@ -31,7 +31,6 @@ Basically you put
 # cfile myfile.c
 # cinclude super.h standard.h
 ```
-
 Questions -- where can one put these?   Must the # be there?  
 However this is documented, at a bare minimum typing 
 
@@ -40,7 +39,6 @@ sage: cython?
 sage: load?
 sage: attach?
 ```
-
 should give enough information to find docs that clearly explain this cinclude, etc. directives. 
 
 2. Create a file a.pxi and a file b.pyx.  Put one of the # directives in the .pxi file and include the pxi file in the pyx file.  The directive is ignored.  This caused a ton of confusion today.
@@ -56,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1994
 archive/issue_comments_012871.json:
 ```json
 {
-    "body": "Is there also a directive ccflags (analogous to cflags in C)? For instance, in order to compile an spkg using FLINT, one needs a line like\n\n```\n#ccflags -std=c99\n```\n",
+    "body": "Is there also a directive ccflags (analogous to cflags in C)? For instance, in order to compile an spkg using FLINT, one needs a line like\n\n```\n#ccflags -std=c99\n```",
     "created_at": "2008-02-14T22:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1994",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ Is there also a directive ccflags (analogous to cflags in C)? For instance, in o
 ```
 #ccflags -std=c99
 ```
-
 
 
 

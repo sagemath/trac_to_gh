@@ -55,7 +55,7 @@ Changing status from new to assigned.
 archive/issue_comments_025513.json:
 ```json
 {
-    "body": "Replying to [ticket:3621 cswiercz]:\n> There was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n> \n> Uses the datetime.date python module.\n\nThis ticket depends on #3356.",
+    "body": "Replying to [ticket:3621 cswiercz]:\n> There was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n> \n> Uses the datetime.date python module.\n\n\nThis ticket depends on #3356.",
     "created_at": "2008-07-09T16:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -68,6 +68,7 @@ Replying to [ticket:3621 cswiercz]:
 > There was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()
 > 
 > Uses the datetime.date python module.
+
 
 This ticket depends on #3356.
 
@@ -187,7 +188,7 @@ Changing assignee from cswiercz, brettnak to @cswiercz.
 archive/issue_comments_025520.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nGreat work!  Now be professionals and fix everything below :-)\n\n* The function `_load_from_csv(self, R)` in stock.py is missing a doctest\n\n* I like the Day --> OHCL change. \n\n* Member functions in the Sage library should never be upper case, so\n\n```\n    def Open(self, *args, **kwds):\n```\n\nmust become\n\n```\n    def open(self, *args, **kwds):\n```\n\n\n* The doctest for Open contains `\\code{self.google()`.  Since the docstring is a string that \\c gets turned into a weird character.  You have to do either `\\\\code{self.google()` or (better) just replace `\"\"\"` at the top by `r\"\"\"`.  Same for `def Close`, etc.  \n\n* This doctest SUCKS:\n\n```\n+            sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires s\nource file\n+            [\n```\n\nWe actually *do* test all optional doctests sometimes, and do expect them to pass on a reasonably configured machine.   I suggest the following workaround.  Make a subdirectory of SAGE_ROOT/examples called \"finance\".  Put your file in there.  Do hg ci in there to add it to the examples repo.  Post a patch using \"hg export tip\" in that repo.  If you get stuck, let me know.   Then in the doctest just put SAGE_ROOT + 'examples/finance/your_filename.txt'.   And you won't have to make it optional, which is always a plus. \n\n* This code in your patch (in the function load_from_file) contains a bug:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError:\n+            raise IOError, msg + \"Bad path or file name\"\n```\n\n\nYou mean to write:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError, msg :\n+            raise IOError, msg + \"Bad path or file name\"\n```\n\nA doctest should illustrate this exception maybe, so you would have caught this bug.\n\n* 5 Doctests in stock.py fail:\n\n```\nsage -t --optional devel/sage-review/sage/finance/stock.py\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 274:\n    sage: finance.Stock('vmw').Open()    # optional -- requires internet\nExpected:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 38.5300, 36.1800, 32.6300, 36.7000, 34.5000]\nGot:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 36.1800, 32.6300, 36.7000, 34.5000, 34.0000]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 308:\n    sage: c.google(startdate='Feb+1,+2008', enddate='Mar+1,+2008')    # optional -- requires internet\nExpected:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700\n    ]\nGot:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700,\n      7-Feb-08 60.50 62.75 59.56 60.80    1521700,\n      8-Feb-08 60.90 61.39 60.07 60.27     956400,\n     11-Feb-08 61.22 62.24 60.90 61.42    1132600,\n     12-Feb-08 62.00 63.00 61.56 62.26     989000,\n     13-Feb-08 63.00 63.50 62.18 62.93     919500,\n     14-Feb-08 63.10 63.33 61.25 62.10    1333000,\n     15-Feb-08 61.20 62.57 59.25 59.81    1598200,\n     19-Feb-08 60.99 61.50 56.50 57.38    1685900,\n     20-Feb-08 56.23 59.83 56.23 59.45     913600,\n     21-Feb-08 59.46 60.00 57.50 57.91    1124000,\n     22-Feb-08 58.00 58.48 55.00 56.55    1449100,\n     25-Feb-08 56.55 58.60 56.01 58.29     907900,\n     26-Feb-08 59.30 60.70 57.43 60.18    2050400,\n     27-Feb-08 60.00 60.50 58.42 59.86    1285200,\n     28-Feb-08 59.79 60.96 59.16 59.95     984500,\n     29-Feb-08 59.26 59.95 58.32 58.67     842200\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 321:\n    sage: finance.Stock('vmw').Close()    # optional -- requires internet\nExpected:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 36.9400, 37.9700, 37.0000, 34.7500, 34.0700]\nGot:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 37.9700, 37.0000, 34.7500, 34.0700, 34.6900]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[1]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 407:\n    sage: finance.Stock('aapl').google()[:2]    # optional -- requires internet\nExpected:\n    [\n      2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n      3-Jan-90 9.50 9.50 9.38 9.38    7428400\n    ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 211:\n    sage: sage.finance.stock.Stock(\"AAPL\", 22144).google()[:5] #optional -- requires internet\nExpected:\n        [\n          2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n          3-Jan-90 9.50 9.50 9.38 9.38    7428400,\n          4-Jan-90 9.56 9.69 9.31 9.41    7911200,\n          5-Jan-90 9.44 9.56 9.25 9.44    4404000,\n          8-Jan-90 9.38 9.50 9.25 9.50    3627600\n        ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600,\n      1-Aug-07 133.64 135.38 127.77 135.00   62505600,\n      2-Aug-07 136.65 136.96 134.15 136.49   30451600,\n      3-Aug-07 135.26 135.95 131.50 131.85   24256700\n    ]\n**********************************************************************\n5 items had failures:\n   1 of   6 in __main__.example_10\n   2 of   6 in __main__.example_11\n   2 of   3 in __main__.example_12\n   1 of   2 in __main__.example_14\n   1 of   5 in __main__.example_9\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py\n```\n",
+    "body": "REFEREE REPORT:\n\nGreat work!  Now be professionals and fix everything below :-)\n\n* The function `_load_from_csv(self, R)` in stock.py is missing a doctest\n\n* I like the Day --> OHCL change. \n\n* Member functions in the Sage library should never be upper case, so\n\n```\n    def Open(self, *args, **kwds):\n```\nmust become\n\n```\n    def open(self, *args, **kwds):\n```\n\n* The doctest for Open contains `\\code{self.google()`.  Since the docstring is a string that \\c gets turned into a weird character.  You have to do either `\\\\code{self.google()` or (better) just replace `\"\"\"` at the top by `r\"\"\"`.  Same for `def Close`, etc.  \n\n* This doctest SUCKS:\n\n```\n+            sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires s\nource file\n+            [\n```\nWe actually *do* test all optional doctests sometimes, and do expect them to pass on a reasonably configured machine.   I suggest the following workaround.  Make a subdirectory of SAGE_ROOT/examples called \"finance\".  Put your file in there.  Do hg ci in there to add it to the examples repo.  Post a patch using \"hg export tip\" in that repo.  If you get stuck, let me know.   Then in the doctest just put SAGE_ROOT + 'examples/finance/your_filename.txt'.   And you won't have to make it optional, which is always a plus. \n\n* This code in your patch (in the function load_from_file) contains a bug:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError:\n+            raise IOError, msg + \"Bad path or file name\"\n```\n\nYou mean to write:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError, msg :\n+            raise IOError, msg + \"Bad path or file name\"\n```\nA doctest should illustrate this exception maybe, so you would have caught this bug.\n\n* 5 Doctests in stock.py fail:\n\n```\nsage -t --optional devel/sage-review/sage/finance/stock.py\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 274:\n    sage: finance.Stock('vmw').Open()    # optional -- requires internet\nExpected:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 38.5300, 36.1800, 32.6300, 36.7000, 34.5000]\nGot:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 36.1800, 32.6300, 36.7000, 34.5000, 34.0000]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 308:\n    sage: c.google(startdate='Feb+1,+2008', enddate='Mar+1,+2008')    # optional -- requires internet\nExpected:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700\n    ]\nGot:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700,\n      7-Feb-08 60.50 62.75 59.56 60.80    1521700,\n      8-Feb-08 60.90 61.39 60.07 60.27     956400,\n     11-Feb-08 61.22 62.24 60.90 61.42    1132600,\n     12-Feb-08 62.00 63.00 61.56 62.26     989000,\n     13-Feb-08 63.00 63.50 62.18 62.93     919500,\n     14-Feb-08 63.10 63.33 61.25 62.10    1333000,\n     15-Feb-08 61.20 62.57 59.25 59.81    1598200,\n     19-Feb-08 60.99 61.50 56.50 57.38    1685900,\n     20-Feb-08 56.23 59.83 56.23 59.45     913600,\n     21-Feb-08 59.46 60.00 57.50 57.91    1124000,\n     22-Feb-08 58.00 58.48 55.00 56.55    1449100,\n     25-Feb-08 56.55 58.60 56.01 58.29     907900,\n     26-Feb-08 59.30 60.70 57.43 60.18    2050400,\n     27-Feb-08 60.00 60.50 58.42 59.86    1285200,\n     28-Feb-08 59.79 60.96 59.16 59.95     984500,\n     29-Feb-08 59.26 59.95 58.32 58.67     842200\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 321:\n    sage: finance.Stock('vmw').Close()    # optional -- requires internet\nExpected:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 36.9400, 37.9700, 37.0000, 34.7500, 34.0700]\nGot:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 37.9700, 37.0000, 34.7500, 34.0700, 34.6900]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[1]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 407:\n    sage: finance.Stock('aapl').google()[:2]    # optional -- requires internet\nExpected:\n    [\n      2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n      3-Jan-90 9.50 9.50 9.38 9.38    7428400\n    ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 211:\n    sage: sage.finance.stock.Stock(\"AAPL\", 22144).google()[:5] #optional -- requires internet\nExpected:\n        [\n          2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n          3-Jan-90 9.50 9.50 9.38 9.38    7428400,\n          4-Jan-90 9.56 9.69 9.31 9.41    7911200,\n          5-Jan-90 9.44 9.56 9.25 9.44    4404000,\n          8-Jan-90 9.38 9.50 9.25 9.50    3627600\n        ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600,\n      1-Aug-07 133.64 135.38 127.77 135.00   62505600,\n      2-Aug-07 136.65 136.96 134.15 136.49   30451600,\n      3-Aug-07 135.26 135.95 131.50 131.85   24256700\n    ]\n**********************************************************************\n5 items had failures:\n   1 of   6 in __main__.example_10\n   2 of   6 in __main__.example_11\n   2 of   3 in __main__.example_12\n   1 of   2 in __main__.example_14\n   1 of   5 in __main__.example_9\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py\n```",
     "created_at": "2008-07-29T18:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -209,13 +210,11 @@ Great work!  Now be professionals and fix everything below :-)
 ```
     def Open(self, *args, **kwds):
 ```
-
 must become
 
 ```
     def open(self, *args, **kwds):
 ```
-
 
 * The doctest for Open contains `\code{self.google()`.  Since the docstring is a string that \c gets turned into a weird character.  You have to do either `\\code{self.google()` or (better) just replace `"""` at the top by `r"""`.  Same for `def Close`, etc.  
 
@@ -226,7 +225,6 @@ must become
 ource file
 +            [
 ```
-
 We actually *do* test all optional doctests sometimes, and do expect them to pass on a reasonably configured machine.   I suggest the following workaround.  Make a subdirectory of SAGE_ROOT/examples called "finance".  Put your file in there.  Do hg ci in there to add it to the examples repo.  Post a patch using "hg export tip" in that repo.  If you get stuck, let me know.   Then in the doctest just put SAGE_ROOT + 'examples/finance/your_filename.txt'.   And you won't have to make it optional, which is always a plus. 
 
 * This code in your patch (in the function load_from_file) contains a bug:
@@ -238,7 +236,6 @@ We actually *do* test all optional doctests sometimes, and do expect them to pas
 +            raise IOError, msg + "Bad path or file name"
 ```
 
-
 You mean to write:
 
 ```
@@ -247,7 +244,6 @@ You mean to write:
 +        except IOError, msg :
 +            raise IOError, msg + "Bad path or file name"
 ```
-
 A doctest should illustrate this exception maybe, so you would have caught this bug.
 
 * 5 Doctests in stock.py fail:
@@ -374,7 +370,6 @@ For whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py
 
 
 
-
 ---
 
 archive/issue_events_008311.json:
@@ -397,7 +392,7 @@ archive/issue_events_008311.json:
 archive/issue_comments_025521.json:
 ```json
 {
-    "body": "Faulty formatting with part5.patch? Following error message when applying the patch.\n\n\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch?format=raw\nLoading: [...]\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg import   \"/Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\"\napplying /Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\npatching file sage/finance/stock.py\nHunk #1 FAILED at 2\nHunk #2 FAILED at 13\nHunk #3 FAILED at 47\nHunk #4 FAILED at 137\nHunk #5 FAILED at 160\nHunk #6 FAILED at 174\nHunk #7 FAILED at 189\nHunk #8 FAILED at 202\nHunk #9 FAILED at 221\nHunk #10 FAILED at 277\n10 out of 10 hunks FAILED -- saving rejects to file sage/finance/stock.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Faulty formatting with part5.patch? Following error message when applying the patch.\n\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch?format=raw\nLoading: [...]\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg import   \"/Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\"\napplying /Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\npatching file sage/finance/stock.py\nHunk #1 FAILED at 2\nHunk #2 FAILED at 13\nHunk #3 FAILED at 47\nHunk #4 FAILED at 137\nHunk #5 FAILED at 160\nHunk #6 FAILED at 174\nHunk #7 FAILED at 189\nHunk #8 FAILED at 202\nHunk #9 FAILED at 221\nHunk #10 FAILED at 277\n10 out of 10 hunks FAILED -- saving rejects to file sage/finance/stock.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-07-31T21:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -407,7 +402,6 @@ archive/issue_comments_025521.json:
 ```
 
 Faulty formatting with part5.patch? Following error message when applying the patch.
-
 
 
 ```
@@ -432,7 +426,6 @@ Hunk #10 FAILED at 277
 10 out of 10 hunks FAILED -- saving rejects to file sage/finance/stock.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -553,7 +546,7 @@ Michael
 archive/issue_comments_025528.json:
 ```json
 {
-    "body": "Replying to [comment:16 mabshoff]:\n> I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n\nThe patches should be merged in order as posted, that is:\n\n\nall_updates_and_cid.patch\n\n\nadd_load_file1.patch\n\n\nadd_close.patch\n\n\nload_file_bug_fix.patch\n\n\nsage-3621-part5.patch\n\n\nsage-3621-example.patch\n\n\nsage-3621-part6.patch\n\n\nsage-3621-part7.patch\n\n\nsage-3621-part8.patch\n\n\nsage-3621-part9.patch\n\n\nsage-3621-part10.patch\n\n\n\nShall I set it back to [with patch, needs review]?",
+    "body": "Replying to [comment:16 mabshoff]:\n> I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n\n\nThe patches should be merged in order as posted, that is:\n\n\nall_updates_and_cid.patch\n\n\nadd_load_file1.patch\n\n\nadd_close.patch\n\n\nload_file_bug_fix.patch\n\n\nsage-3621-part5.patch\n\n\nsage-3621-example.patch\n\n\nsage-3621-part6.patch\n\n\nsage-3621-part7.patch\n\n\nsage-3621-part8.patch\n\n\nsage-3621-part9.patch\n\n\nsage-3621-part10.patch\n\n\n\nShall I set it back to [with patch, needs review]?",
     "created_at": "2008-08-06T14:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -564,6 +557,7 @@ archive/issue_comments_025528.json:
 
 Replying to [comment:16 mabshoff]:
 > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.
+
 
 The patches should be merged in order as posted, that is:
 
@@ -611,7 +605,7 @@ Shall I set it back to [with patch, needs review]?
 archive/issue_comments_025529.json:
 ```json
 {
-    "body": "Replying to [comment:17 cswiercz]:\n> Replying to [comment:16 mabshoff]:\n> > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n> \n> The patches should be merged in order as posted, that is:\n> \n> \n> all_updates_and_cid.patch\n> \n> \n> add_load_file1.patch\n> \n> \n> add_close.patch\n> \n> \n> load_file_bug_fix.patch\n> \n> \n> sage-3621-part5.patch\n> \n> \n> sage-3621-example.patch\n> \n> \n> sage-3621-part6.patch\n> \n> \n> sage-3621-part7.patch\n> \n> \n> sage-3621-part8.patch\n> \n> \n> sage-3621-part9.patch\n> \n> \n> sage-3621-part10.patch\n\nThanks.\n\n> Shall I set it back to [with patch, needs review]?\n\nI am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:17 cswiercz]:\n> Replying to [comment:16 mabshoff]:\n> > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n\n> \n> The patches should be merged in order as posted, that is:\n> \n> \n> all_updates_and_cid.patch\n> \n> \n> add_load_file1.patch\n> \n> \n> add_close.patch\n> \n> \n> load_file_bug_fix.patch\n> \n> \n> sage-3621-part5.patch\n> \n> \n> sage-3621-example.patch\n> \n> \n> sage-3621-part6.patch\n> \n> \n> sage-3621-part7.patch\n> \n> \n> sage-3621-part8.patch\n> \n> \n> sage-3621-part9.patch\n> \n> \n> sage-3621-part10.patch\n\n\nThanks.\n\n> Shall I set it back to [with patch, needs review]?\n\n\nI am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-06T17:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -623,6 +617,7 @@ archive/issue_comments_025529.json:
 Replying to [comment:17 cswiercz]:
 > Replying to [comment:16 mabshoff]:
 > > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.
+
 > 
 > The patches should be merged in order as posted, that is:
 > 
@@ -659,9 +654,11 @@ Replying to [comment:17 cswiercz]:
 > 
 > sage-3621-part10.patch
 
+
 Thanks.
 
 > Shall I set it back to [with patch, needs review]?
+
 
 I am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.
 
@@ -676,7 +673,7 @@ Michael
 archive/issue_comments_025530.json:
 ```json
 {
-    "body": "Replying to [comment:18 mabshoff]:\n> > Shall I set it back to [with patch, needs review]?\n> \n> I am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\nTo make the situation a bit clearer, Brett asked if I could review his patches. (part6.patch - part9.patch) I found a minor bug and added my own patch at the very end. (part10.patch) My patch was just a small change to a doctest, which I tested thoroughly. I realize just now that it was kinda silly to review this ticket myself since all of the code throughout these patches was done by both of us, equally. Anyway, I'm fine with setting it back to \"needs review\" and waiting for someone to take a look at it. It's your call. :)\n\n--\nChris",
+    "body": "Replying to [comment:18 mabshoff]:\n> > Shall I set it back to [with patch, needs review]?\n\n> \n> I am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\n\nTo make the situation a bit clearer, Brett asked if I could review his patches. (part6.patch - part9.patch) I found a minor bug and added my own patch at the very end. (part10.patch) My patch was just a small change to a doctest, which I tested thoroughly. I realize just now that it was kinda silly to review this ticket myself since all of the code throughout these patches was done by both of us, equally. Anyway, I'm fine with setting it back to \"needs review\" and waiting for someone to take a look at it. It's your call. :)\n\n--\nChris",
     "created_at": "2008-08-06T17:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -687,8 +684,10 @@ archive/issue_comments_025530.json:
 
 Replying to [comment:18 mabshoff]:
 > > Shall I set it back to [with patch, needs review]?
+
 > 
 > I am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.
+
 
 To make the situation a bit clearer, Brett asked if I could review his patches. (part6.patch - part9.patch) I found a minor bug and added my own patch at the very end. (part10.patch) My patch was just a small change to a doctest, which I tested thoroughly. I realize just now that it was kinda silly to review this ticket myself since all of the code throughout these patches was done by both of us, equally. Anyway, I'm fine with setting it back to "needs review" and waiting for someone to take a look at it. It's your call. :)
 
@@ -822,7 +821,7 @@ Michael
 archive/issue_comments_025536.json:
 ```json
 {
-    "body": "Something's up with the first patch -- the file **SAGE_ROOT/examples/finance/AAPL-minutely.csv** is located at **SAGE_ROOT/finance/AAPL-minutely.csv** when I apply the patch to a fresh 3.1.2.rc1.\n\n\n```\nboothby@eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py\nsage -t  devel/sage/sage/finance/stock.py                   **********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 417:\n    sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 431:\n    sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_12\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/boothby/sage-3.1.2.rc1/tmp/.doctest_stock.py\n\t [1.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/finance/stock.py\nTotal time for all tests: 1.2 seconds\n```\n",
+    "body": "Something's up with the first patch -- the file **SAGE_ROOT/examples/finance/AAPL-minutely.csv** is located at **SAGE_ROOT/finance/AAPL-minutely.csv** when I apply the patch to a fresh 3.1.2.rc1.\n\n```\nboothby@eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py\nsage -t  devel/sage/sage/finance/stock.py                   **********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 417:\n    sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 431:\n    sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_12\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/boothby/sage-3.1.2.rc1/tmp/.doctest_stock.py\n\t [1.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/finance/stock.py\nTotal time for all tests: 1.2 seconds\n```",
     "created_at": "2008-09-11T21:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -832,7 +831,6 @@ archive/issue_comments_025536.json:
 ```
 
 Something's up with the first patch -- the file **SAGE_ROOT/examples/finance/AAPL-minutely.csv** is located at **SAGE_ROOT/finance/AAPL-minutely.csv** when I apply the patch to a fresh 3.1.2.rc1.
-
 
 ```
 boothby@eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py
@@ -877,7 +875,6 @@ The following tests failed:
 	sage -t  devel/sage/sage/finance/stock.py
 Total time for all tests: 1.2 seconds
 ```
-
 
 
 

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6847
 archive/issue_comments_056363.json:
 ```json
 {
-    "body": "The file [doc/users/transforms_tutorial.rst](http://matplotlib.svn.sourceforge.net/viewvc/matplotlib/trunk/matplotlib/doc/users/transforms_tutorial.rst?view=markup) from [matplotlib's](http://matplotlib.sourceforge.net/index.html) [trunk](http://matplotlib.svn.sourceforge.net/viewvc/matplotlib/trunk/matplotlib/) includes:\n\n```\n.. plot:: pyplots/annotate_transform.py\n```\n\nand\n\n```\n.. plot::\n   :include-source:\n\n   import numpy as np\n   import matplotlib.pyplot as plt\n\n   x = np.arange(0, 10, 0.005)\n   y = np.exp(-x/2.) * np.sin(2*np.pi*x)\n\n   fig = plt.figure()\n   ax = fig.add_subplot(111)\n   ax.plot(x, y)\n   ax.set_xlim(0, 10)\n   ax.set_ylim(-1, 1)\n\n   plt.show()\n```\n\nPossible [output](http://matplotlib.sourceforge.net/users/transforms_tutorial.html).  Elsewhere, I've seen\n\n```\n.. plot:: pyplots/tex_demo.py\n   :include-source:\n```\n\nI think the `:include-[`](../tree/master/`) option includes the formatted source before the image in \"place\" of a link to the plain-text source.",
+    "body": "The file [doc/users/transforms_tutorial.rst](http://matplotlib.svn.sourceforge.net/viewvc/matplotlib/trunk/matplotlib/doc/users/transforms_tutorial.rst?view=markup) from [matplotlib's](http://matplotlib.sourceforge.net/index.html) [trunk](http://matplotlib.svn.sourceforge.net/viewvc/matplotlib/trunk/matplotlib/) includes:\n\n```\n.. plot:: pyplots/annotate_transform.py\n```\nand\n\n```\n.. plot::\n   :include-source:\n\n   import numpy as np\n   import matplotlib.pyplot as plt\n\n   x = np.arange(0, 10, 0.005)\n   y = np.exp(-x/2.) * np.sin(2*np.pi*x)\n\n   fig = plt.figure()\n   ax = fig.add_subplot(111)\n   ax.plot(x, y)\n   ax.set_xlim(0, 10)\n   ax.set_ylim(-1, 1)\n\n   plt.show()\n```\nPossible [output](http://matplotlib.sourceforge.net/users/transforms_tutorial.html).  Elsewhere, I've seen\n\n```\n.. plot:: pyplots/tex_demo.py\n   :include-source:\n```\nI think the `:include-[`](../tree/master/`) option includes the formatted source before the image in \"place\" of a link to the plain-text source.",
     "created_at": "2009-08-30T13:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
@@ -50,7 +50,6 @@ The file [doc/users/transforms_tutorial.rst](http://matplotlib.svn.sourceforge.n
 ```
 .. plot:: pyplots/annotate_transform.py
 ```
-
 and
 
 ```
@@ -71,14 +70,12 @@ and
 
    plt.show()
 ```
-
 Possible [output](http://matplotlib.sourceforge.net/users/transforms_tutorial.html).  Elsewhere, I've seen
 
 ```
 .. plot:: pyplots/tex_demo.py
    :include-source:
 ```
-
 I think the `:include-[`](../tree/master/`) option includes the formatted source before the image in "place" of a link to the plain-text source.
 
 

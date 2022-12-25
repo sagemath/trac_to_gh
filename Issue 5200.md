@@ -3,7 +3,7 @@
 archive/issues_005200.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: subsets, subwords\n\nThis patches deals with several issues concerning subwords and subsets:\n1. It implements subsets for finite multisets (sets with repetitions).\n   Before the patch:\n\n```\nsage: Subsets([2,2,3]).list()\n[{}, {2}, {3}, {2, 3}]\n```\n\n     After:\n\n```\nsage: Subsets([2,2,3]).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\n\n1. It implement `__contains__` which was missing for subsets and subwords:\n   Before:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n     After:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\nTrue\n```\n\n1. It fixes a bug in smallest_positions:\n   Before:\n\n```\nsage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\n[4, 4, 4]\n```\n\n     After:\n\n```\nsage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\nFalse\n```\n\n     which means that 113 is not a subword of 243312. \n4. It finally improves the doc and the tests.\n\nSince this is my first trac submission, any comment about this text or the patch is strongly welcome...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5200\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: subsets, subwords\n\nThis patches deals with several issues concerning subwords and subsets:\n1. It implements subsets for finite multisets (sets with repetitions).\n   Before the patch:\n\n```\nsage: Subsets([2,2,3]).list()\n[{}, {2}, {3}, {2, 3}]\n```\n     After:\n\n```\nsage: Subsets([2,2,3]).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\n1. It implement `__contains__` which was missing for subsets and subwords:\n   Before:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n     After:\n\n```\nsage: st = Subsets([1,2,2,3]); Set([1,2]) in st\nTrue\n```\n1. It fixes a bug in smallest_positions:\n   Before:\n\n```\nsage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\n[4, 4, 4]\n```\n     After:\n\n```\nsage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])\nFalse\n```\n     which means that 113 is not a subword of 243312. \n4. It finally improves the doc and the tests.\n\nSince this is my first trac submission, any comment about this text or the patch is strongly welcome...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5200\n\n",
     "created_at": "2009-02-07T14:02:38Z",
     "labels": [
         "component: combinatorics"
@@ -29,14 +29,12 @@ This patches deals with several issues concerning subwords and subsets:
 sage: Subsets([2,2,3]).list()
 [{}, {2}, {3}, {2, 3}]
 ```
-
      After:
 
 ```
 sage: Subsets([2,2,3]).list()
 [[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]
 ```
-
 1. It implement `__contains__` which was missing for subsets and subwords:
    Before:
 
@@ -45,14 +43,12 @@ sage: st = Subsets([1,2,2,3]); Set([1,2]) in st
 ---------------------------------------------------------------------------
 NotImplementedError                       Traceback (most recent call last)
 ```
-
      After:
 
 ```
 sage: st = Subsets([1,2,2,3]); Set([1,2]) in st
 True
 ```
-
 1. It fixes a bug in smallest_positions:
    Before:
 
@@ -60,14 +56,12 @@ True
 sage: sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])
 [4, 4, 4]
 ```
-
      After:
 
 ```
 sage.combinat.subword.smallest_positions([2,4,3,3,1,2],[1,3,3])
 False
 ```
-
      which means that 113 is not a subword of 243312. 
 4. It finally improves the doc and the tests.
 
@@ -84,7 +78,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5200
 archive/issue_comments_039765.json:
 ```json
 {
-    "body": "It has been decided (direct talk with Nicolas + irssi with Mike) that the user has to explicitely set that he want multisets. Therefore, on the contrary that is anounced, the following is not working:\n\n```\nsage: Subsets([2,2,3]).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\n\nInstead one should write\n\n```\nsage: Subsets([2,2,3], multiset=True).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\n",
+    "body": "It has been decided (direct talk with Nicolas + irssi with Mike) that the user has to explicitely set that he want multisets. Therefore, on the contrary that is anounced, the following is not working:\n\n```\nsage: Subsets([2,2,3]).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```\nInstead one should write\n\n```\nsage: Subsets([2,2,3], multiset=True).list()\n[[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]\n```",
     "created_at": "2009-03-01T15:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5200",
     "type": "issue_comment",
@@ -99,14 +93,12 @@ It has been decided (direct talk with Nicolas + irssi with Mike) that the user h
 sage: Subsets([2,2,3]).list()
 [[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]
 ```
-
 Instead one should write
 
 ```
 sage: Subsets([2,2,3], multiset=True).list()
 [[], [2], [3], [2, 2], [2, 3], [2, 2, 3]]
 ```
-
 
 
 

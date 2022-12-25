@@ -182,7 +182,7 @@ Ok, this really solves jhpalmieri's issue.  This time, I tested it on a mac with
 archive/issue_comments_025728.json:
 ```json
 {
-    "body": "If I create a cell with\n\n```\n3+2)\n```\n\nput the cursor at the end and hit ctrl-0, the parenthesis gets replaced with \"undefined\".  Is this the intended behavior?  It doesn't seem ideal to me; maybe ctrl-0 should do nothing in this situation?\n\n(Otherwise, it works well for me.)",
+    "body": "If I create a cell with\n\n```\n3+2)\n```\nput the cursor at the end and hit ctrl-0, the parenthesis gets replaced with \"undefined\".  Is this the intended behavior?  It doesn't seem ideal to me; maybe ctrl-0 should do nothing in this situation?\n\n(Otherwise, it works well for me.)",
     "created_at": "2009-06-20T00:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
@@ -196,7 +196,6 @@ If I create a cell with
 ```
 3+2)
 ```
-
 put the cursor at the end and hit ctrl-0, the parenthesis gets replaced with "undefined".  Is this the intended behavior?  It doesn't seem ideal to me; maybe ctrl-0 should do nothing in this situation?
 
 (Otherwise, it works well for me.)

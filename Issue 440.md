@@ -53,7 +53,7 @@ oops I forgot to mention the above comment is for sage 2.8
 archive/issue_comments_002194.json:
 ```json
 {
-    "body": "Here's a profile, on sage.math, sage 2.8.1:\n\n\n```\nsage: L = [None] * 10\nsage: index = Integer(5)\nsage: timeit x = L[index]\n1000000 loops, best of 3: 690 ns per loop\nsage: timeit x = L[index]\n1000000 loops, best of 3: 691 ns per loop\n```\n\n\nLet's see if we can do better than that...",
+    "body": "Here's a profile, on sage.math, sage 2.8.1:\n\n```\nsage: L = [None] * 10\nsage: index = Integer(5)\nsage: timeit x = L[index]\n1000000 loops, best of 3: 690 ns per loop\nsage: timeit x = L[index]\n1000000 loops, best of 3: 691 ns per loop\n```\n\nLet's see if we can do better than that...",
     "created_at": "2007-08-18T19:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/440",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ archive/issue_comments_002194.json:
 
 Here's a profile, on sage.math, sage 2.8.1:
 
-
 ```
 sage: L = [None] * 10
 sage: index = Integer(5)
@@ -73,7 +72,6 @@ sage: timeit x = L[index]
 sage: timeit x = L[index]
 1000000 loops, best of 3: 691 ns per loop
 ```
-
 
 Let's see if we can do better than that...
 
@@ -84,7 +82,7 @@ Let's see if we can do better than that...
 archive/issue_comments_002195.json:
 ```json
 {
-    "body": "I'm about to attach a patch for this, here is the new profile:\n\n\n```\nsage: L = [None] * 10\nsage: index = Integer(5)\nsage: timeit x = L[index]\n1000000 loops, best of 3: 331 ns per loop\n```\n",
+    "body": "I'm about to attach a patch for this, here is the new profile:\n\n```\nsage: L = [None] * 10\nsage: index = Integer(5)\nsage: timeit x = L[index]\n1000000 loops, best of 3: 331 ns per loop\n```",
     "created_at": "2007-08-18T20:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/440",
     "type": "issue_comment",
@@ -95,14 +93,12 @@ archive/issue_comments_002195.json:
 
 I'm about to attach a patch for this, here is the new profile:
 
-
 ```
 sage: L = [None] * 10
 sage: index = Integer(5)
 sage: timeit x = L[index]
 1000000 loops, best of 3: 331 ns per loop
 ```
-
 
 
 

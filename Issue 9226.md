@@ -323,7 +323,7 @@ archive/issue_events_022717.json:
 archive/issue_comments_086442.json:
 ```json
 {
-    "body": "It's unfortunate that this is so, because there is still a problem, namely that \n\n```\nPPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n```\n\nis by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them...",
+    "body": "It's unfortunate that this is so, because there is still a problem, namely that \n\n```\nPPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n```\nis by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them...",
     "created_at": "2010-08-05T15:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -337,7 +337,6 @@ It's unfortunate that this is so, because there is still a problem, namely that
 ```
 PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x
 ```
-
 is by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them...
 
 
@@ -347,7 +346,7 @@ is by definition wrong, since 10.6.x will only work on Intel chips.  Also see ot
 archive/issue_comments_086443.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> It's unfortunate that this is so, because there is still a problem, namely that \n> {{{\n> PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n> }}}\n> is by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them... \n\nI would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.",
+    "body": "Replying to [comment:10 kcrisman]:\n> It's unfortunate that this is so, because there is still a problem, namely that \n> \n> ```\n> PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n> ```\n> is by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them... \n\n\nI would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.",
     "created_at": "2010-08-05T17:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -358,10 +357,12 @@ archive/issue_comments_086443.json:
 
 Replying to [comment:10 kcrisman]:
 > It's unfortunate that this is so, because there is still a problem, namely that 
-> {{{
+> 
+> ```
 > PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x
-> }}}
+> ```
 > is by definition wrong, since 10.6.x will only work on Intel chips.  Also see other README.txt updates lurking on Trac, such as #7484, which also fixes #8106; #6055 perhaps should be closed, while #5505 I'm less clear on; #5339 seems closable as dup; #3131 perhaps is not relevant, but while I'm listing all of them... 
+
 
 I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.
 
@@ -372,7 +373,7 @@ I would recommend that anyone currently working on fixing the SAGE_ROOT README.t
 archive/issue_comments_086444.json:
 ```json
 {
-    "body": "> I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.\n\nYes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(",
+    "body": "> I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.\n\n\nYes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(",
     "created_at": "2010-08-05T17:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -383,6 +384,7 @@ archive/issue_comments_086444.json:
 
 > I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.
 
+
 Yes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(
 
 
@@ -392,7 +394,7 @@ Yes, I just didn't mention this one since it was a meta-ticket.  I don't feel te
 archive/issue_comments_086445.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> \n> > I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.\n> \n> Yes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(\n\nSame here. I don't feel able to review it. If Dan believes it is an easy review, perhaps he could consider doing it if he has time, as at least two of us don't feel able to do it, and nobody else has stepped up. Yet I am one who agrees this would be a useful addition to Sage. The current system for such files is a bit silly. \n\nDave",
+    "body": "Replying to [comment:12 kcrisman]:\n> \n> > I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.\n\n> \n> Yes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(\n\n\nSame here. I don't feel able to review it. If Dan believes it is an easy review, perhaps he could consider doing it if he has time, as at least two of us don't feel able to do it, and nobody else has stepped up. Yet I am one who agrees this would be a useful addition to Sage. The current system for such files is a bit silly. \n\nDave",
     "created_at": "2010-08-06T17:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9226",
     "type": "issue_comment",
@@ -404,8 +406,10 @@ archive/issue_comments_086445.json:
 Replying to [comment:12 kcrisman]:
 > 
 > > I would recommend that anyone currently working on fixing the SAGE_ROOT README.txt, the spkg/standard/deps file, or any of the other crucial files that are not under revision control...please take a look at #9433, which will put these files into a Mercurial repository, and make dealing with them reasonable, instead of the current mess. #9433 should actually be pretty easy to review.
+
 > 
 > Yes, I just didn't mention this one since it was a meta-ticket.  I don't feel technically capable of it (not knowing ins and outs of hg), otherwise I would have done so weeks ago :(
+
 
 Same here. I don't feel able to review it. If Dan believes it is an easy review, perhaps he could consider doing it if he has time, as at least two of us don't feel able to do it, and nobody else has stepped up. Yet I am one who agrees this would be a useful addition to Sage. The current system for such files is a bit silly. 
 

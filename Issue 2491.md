@@ -3,7 +3,7 @@
 archive/issues_002491.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
     "created_at": "2008-03-12T14:13:50Z",
     "labels": [
         "component: combinatorics",
@@ -22,7 +22,6 @@ CC:  sage-combinat
 
 From IRC #sage-devel
 
-
 ```
 <mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??
 <jaap> mhansen sage: sloane.A000001??
@@ -32,8 +31,6 @@ From IRC #sage-devel
 <mhansen> If it's a bug, then it should be reported.
 <jaap> I think so
 ```
-
-
 
 
 
@@ -54,7 +51,6 @@ works ok.
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2491
 
 
@@ -66,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2491
 archive/issue_comments_016843.json:
 ```json
 {
-    "body": "> sage: sloane.A000045??\n> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nThat this doesn't work should be considered a bug.   The actual introspection is simply some python code I wrote, so it's fixable.  Nick also knows something about it.",
+    "body": "> sage: sloane.A000045??\n> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\n\nThat this doesn't work should be considered a bug.   The actual introspection is simply some python code I wrote, so it's fixable.  Nick also knows something about it.",
     "created_at": "2008-03-12T15:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
@@ -77,6 +73,7 @@ archive/issue_comments_016843.json:
 
 > sage: sloane.A000045??
 > Error getting source: arg is not a module, class, method, function, traceback, frame, or code object
+
 
 That this doesn't work should be considered a bug.   The actual introspection is simply some python code I wrote, so it's fixable.  Nick also knows something about it.
 

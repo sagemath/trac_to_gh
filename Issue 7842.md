@@ -3,7 +3,7 @@
 archive/issues_007842.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: attrcall\n\nThe attached patch allows for the following:\n\n\n```\n            sage: xseries = attrcall('series', x)\n            sage: xseries(sin(x), 4)\n            1*x + (-1/6)*x^3 + Order(x^4)\n```\n\n\nThis is used in #7753\n\nIssue created by migration from https://trac.sagemath.org/ticket/7842\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: attrcall\n\nThe attached patch allows for the following:\n\n```\n            sage: xseries = attrcall('series', x)\n            sage: xseries(sin(x), 4)\n            1*x + (-1/6)*x^3 + Order(x^4)\n```\n\nThis is used in #7753\n\nIssue created by migration from https://trac.sagemath.org/ticket/7842\n\n",
     "created_at": "2010-01-04T15:27:08Z",
     "labels": [
         "component: misc"
@@ -23,13 +23,11 @@ Keywords: attrcall
 
 The attached patch allows for the following:
 
-
 ```
             sage: xseries = attrcall('series', x)
             sage: xseries(sin(x), 4)
             1*x + (-1/6)*x^3 + Order(x^4)
 ```
-
 
 This is used in #7753
 
@@ -80,7 +78,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067814.json:
 ```json
 {
-    "body": "Another nice thing to have now that I think about it would be this syntax:\n\n\n```\nsage: xseries = attrcall.series(x)\nsage: xseries(sin(x), 4)\n1*x + (-1/6)*x^3 + Order(x^4)\n```\n\n\nI'll make a new ticket for this so that that it'll backward-compatible with the old version.",
+    "body": "Another nice thing to have now that I think about it would be this syntax:\n\n```\nsage: xseries = attrcall.series(x)\nsage: xseries(sin(x), 4)\n1*x + (-1/6)*x^3 + Order(x^4)\n```\n\nI'll make a new ticket for this so that that it'll backward-compatible with the old version.",
     "created_at": "2010-01-04T17:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
@@ -91,13 +89,11 @@ archive/issue_comments_067814.json:
 
 Another nice thing to have now that I think about it would be this syntax:
 
-
 ```
 sage: xseries = attrcall.series(x)
 sage: xseries(sin(x), 4)
 1*x + (-1/6)*x^3 + Order(x^4)
 ```
-
 
 I'll make a new ticket for this so that that it'll backward-compatible with the old version.
 
@@ -108,7 +104,7 @@ I'll make a new ticket for this so that that it'll backward-compatible with the 
 archive/issue_comments_067815.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> Another nice thing to have now that I think about it would be this syntax:\n> \n> {{{\n> sage: xseries = attrcall.series(x)\n> sage: xseries(sin(x), 4)\n> 1*x + (-1/6)*x^3 + Order(x^4)\n> }}}\n\nYour point is that this syntax gives a better visual hint about this being about method calls, right? So here, attrcall would be some sort of dummy object placeholder? Why not. Though I am a bit reluctant with having two syntaxes.\n\n> I'll make a new ticket for this so that that it'll backward-compatible with the old version.\n\nDo you mind reviewing this first, so that we can get #7753 in?\n\nI'll review your patch in return :-)",
+    "body": "Replying to [comment:2 mhansen]:\n> Another nice thing to have now that I think about it would be this syntax:\n> \n> \n> ```\n> sage: xseries = attrcall.series(x)\n> sage: xseries(sin(x), 4)\n> 1*x + (-1/6)*x^3 + Order(x^4)\n> ```\n\n\nYour point is that this syntax gives a better visual hint about this being about method calls, right? So here, attrcall would be some sort of dummy object placeholder? Why not. Though I am a bit reluctant with having two syntaxes.\n\n> I'll make a new ticket for this so that that it'll backward-compatible with the old version.\n\n\nDo you mind reviewing this first, so that we can get #7753 in?\n\nI'll review your patch in return :-)",
     "created_at": "2010-01-04T18:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
@@ -120,15 +116,18 @@ archive/issue_comments_067815.json:
 Replying to [comment:2 mhansen]:
 > Another nice thing to have now that I think about it would be this syntax:
 > 
-> {{{
+> 
+> ```
 > sage: xseries = attrcall.series(x)
 > sage: xseries(sin(x), 4)
 > 1*x + (-1/6)*x^3 + Order(x^4)
-> }}}
+> ```
+
 
 Your point is that this syntax gives a better visual hint about this being about method calls, right? So here, attrcall would be some sort of dummy object placeholder? Why not. Though I am a bit reluctant with having two syntaxes.
 
 > I'll make a new ticket for this so that that it'll backward-compatible with the old version.
+
 
 Do you mind reviewing this first, so that we can get #7753 in?
 

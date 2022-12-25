@@ -48,7 +48,7 @@ Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_048319.json:
 ```json
 {
-    "body": "I now get one trivial test failure (changed exception message):\n\n\n```\nFile \"/home/fredrik/sage-4.0/devel/sage-mpmath/sage/rings/integer.pyx\", line 2163:\n    sage: z % 0\nExpected:\n    Traceback (most recent call last):\n    ...\n    ZeroDivisionError: Integer modulo by zero\nGot:\n    Traceback (most recent call last):\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_46[4]>\", line 1, in <module>\n        z % Integer(0)###line 2163:\n    sage: z % 0\n      File \"integer.pyx\", line 2189, in sage.rings.integer.Integer.__mod__ (sage/rings/integer.c:15033)\n    ZeroDivisionError: other must be nonzero\n```\n\n\nOtherwise, this patch has my approval.",
+    "body": "I now get one trivial test failure (changed exception message):\n\n```\nFile \"/home/fredrik/sage-4.0/devel/sage-mpmath/sage/rings/integer.pyx\", line 2163:\n    sage: z % 0\nExpected:\n    Traceback (most recent call last):\n    ...\n    ZeroDivisionError: Integer modulo by zero\nGot:\n    Traceback (most recent call last):\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_46[4]>\", line 1, in <module>\n        z % Integer(0)###line 2163:\n    sage: z % 0\n      File \"integer.pyx\", line 2189, in sage.rings.integer.Integer.__mod__ (sage/rings/integer.c:15033)\n    ZeroDivisionError: other must be nonzero\n```\n\nOtherwise, this patch has my approval.",
     "created_at": "2009-06-03T18:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
@@ -58,7 +58,6 @@ archive/issue_comments_048319.json:
 ```
 
 I now get one trivial test failure (changed exception message):
-
 
 ```
 File "/home/fredrik/sage-4.0/devel/sage-mpmath/sage/rings/integer.pyx", line 2163:
@@ -81,7 +80,6 @@ Got:
       File "integer.pyx", line 2189, in sage.rings.integer.Integer.__mod__ (sage/rings/integer.c:15033)
     ZeroDivisionError: other must be nonzero
 ```
-
 
 Otherwise, this patch has my approval.
 
@@ -151,7 +149,7 @@ Yep, looks good.
 archive/issue_comments_048323.json:
 ```json
 {
-    "body": "Unfortunately, this causes a segfault with the 4.0.2.alpha0 singular:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Segfault\n----------------------------------------------------------------------\nTotal time for all tests: 524.4 seconds\nTests failed!\n```\n",
+    "body": "Unfortunately, this causes a segfault with the 4.0.2.alpha0 singular:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Segfault\n----------------------------------------------------------------------\nTotal time for all tests: 524.4 seconds\nTests failed!\n```",
     "created_at": "2009-06-13T21:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
@@ -172,7 +170,6 @@ The following tests failed:
 Total time for all tests: 524.4 seconds
 Tests failed!
 ```
-
 
 
 

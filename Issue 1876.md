@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1876
 archive/issue_comments_011844.json:
 ```json
 {
-    "body": "This seems to have gotten fixed. From http://www.sagemath.org/doc/html/ref/node44.html as of 2.10.3:\n\n\n```\nNote that the \\ character is an escape character in Python, and also a character used by graph6 strings:\n```\n\nand then\n\n```\nIn Python, the escaped character \\ is represented by \\\\:\n```\n\n\nCheers,\n\nMichael",
+    "body": "This seems to have gotten fixed. From http://www.sagemath.org/doc/html/ref/node44.html as of 2.10.3:\n\n```\nNote that the \\ character is an escape character in Python, and also a character used by graph6 strings:\n```\nand then\n\n```\nIn Python, the escaped character \\ is represented by \\\\:\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T08:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1876",
     "type": "issue_comment",
@@ -55,17 +55,14 @@ archive/issue_comments_011844.json:
 
 This seems to have gotten fixed. From http://www.sagemath.org/doc/html/ref/node44.html as of 2.10.3:
 
-
 ```
 Note that the \ character is an escape character in Python, and also a character used by graph6 strings:
 ```
-
 and then
 
 ```
 In Python, the escaped character \ is represented by \\:
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_009329.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  rossk @mforets @slel\n\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\n\nBut there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
+    "body": "Assignee: @burcin\n\nCC:  rossk @mforets @slel\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\nBut there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
     "created_at": "2010-06-24T13:03:40Z",
     "labels": [
         "component: symbolics"
@@ -19,13 +19,11 @@ Assignee: @burcin
 
 CC:  rossk @mforets @slel
 
-
 ```
 sage: var('n')
 n
 sage: g=e^((n*pi-pi*2))
 ```
-
 But there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9329
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9329
 archive/issue_comments_087853.json:
 ```json
 {
-    "body": "Did you have something specific in mind?  You can always get at the underlying tree with operand() and operands()\n\n\n```\nsage: var('n')\nn\nsage: g = e^((n*pi-pi*2))\nsage: g.operator(), g.operands()\n(exp, [-2*pi + pi*n])\n```\n\n\nThis is what is done in expression_conversions.py",
+    "body": "Did you have something specific in mind?  You can always get at the underlying tree with operand() and operands()\n\n```\nsage: var('n')\nn\nsage: g = e^((n*pi-pi*2))\nsage: g.operator(), g.operands()\n(exp, [-2*pi + pi*n])\n```\n\nThis is what is done in expression_conversions.py",
     "created_at": "2010-06-25T00:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
@@ -50,7 +48,6 @@ archive/issue_comments_087853.json:
 
 Did you have something specific in mind?  You can always get at the underlying tree with operand() and operands()
 
-
 ```
 sage: var('n')
 n
@@ -58,7 +55,6 @@ sage: g = e^((n*pi-pi*2))
 sage: g.operator(), g.operands()
 (exp, [-2*pi + pi*n])
 ```
-
 
 This is what is done in expression_conversions.py
 
@@ -87,7 +83,7 @@ I think the original request from a user was in order to access the whole tree a
 archive/issue_comments_087855.json:
 ```json
 {
-    "body": "See http://sagenb.org/home/pub/1760/ for a simple implementation.\n\n\n```\n\ndef tree(expr): \n    if expr.operator() is None: \n        return expr \n    else: \n        return [expr.operator()]+map(tree, expr.operands()) \n```\n",
+    "body": "See http://sagenb.org/home/pub/1760/ for a simple implementation.\n\n```\n\ndef tree(expr): \n    if expr.operator() is None: \n        return expr \n    else: \n        return [expr.operator()]+map(tree, expr.operands()) \n```",
     "created_at": "2010-06-27T03:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
@@ -98,7 +94,6 @@ archive/issue_comments_087855.json:
 
 See http://sagenb.org/home/pub/1760/ for a simple implementation.
 
-
 ```
 
 def tree(expr): 
@@ -107,7 +102,6 @@ def tree(expr):
     else: 
         return [expr.operator()]+map(tree, expr.operands()) 
 ```
-
 
 
 
@@ -163,7 +157,7 @@ Changing ticket summary
 archive/issue_comments_087858.json:
 ```json
 {
-    "body": "Resurrecting the original idea because I want this for my discrete math class in a couple days and realize that even having a very basic example of how to use `Converter` to make an expression tree - say one I could plot! - would be really useful.  Right now I'm stuck with Jason's idea, which works but perhaps isn't as \"Sage-ic\".\n\n```\nsage: from sage.symbolic.random_tests import random_expr\nsage: S = random_expr(20,nvars=2)\nsage: S\nsinh_integral(-sec(-4*abs(e))/((kronecker_delta(e, v1) - 52)*arctan(elliptic_kc(-2) - 2)))\nsage: def tree(expr):\n....:     if expr.operator() is None:\n....:         return expr\n....:     else:\n....:         return [expr.operator()]+map(tree,expr.operands())\n....:     \nsage: tree(S)\n[sinh_integral, [<built-in function mul>, [<built-in function pow>, [<built-in function add>, [kronecker_delta, [exp, 1], v1], -52], -1], [<built-in function pow>, [arctan, [<built-in function add>, [elliptic_kc, -2], -2]], -1], [sec, [<built-in function mul>, [abs, [exp, 1]], -4]], -1]]\n```\n\nI'm realizing it might even be useful to have a (binary) tree returned from a list of lists... but that wouldn't be here.",
+    "body": "Resurrecting the original idea because I want this for my discrete math class in a couple days and realize that even having a very basic example of how to use `Converter` to make an expression tree - say one I could plot! - would be really useful.  Right now I'm stuck with Jason's idea, which works but perhaps isn't as \"Sage-ic\".\n\n```\nsage: from sage.symbolic.random_tests import random_expr\nsage: S = random_expr(20,nvars=2)\nsage: S\nsinh_integral(-sec(-4*abs(e))/((kronecker_delta(e, v1) - 52)*arctan(elliptic_kc(-2) - 2)))\nsage: def tree(expr):\n....:     if expr.operator() is None:\n....:         return expr\n....:     else:\n....:         return [expr.operator()]+map(tree,expr.operands())\n....:     \nsage: tree(S)\n[sinh_integral, [<built-in function mul>, [<built-in function pow>, [<built-in function add>, [kronecker_delta, [exp, 1], v1], -52], -1], [<built-in function pow>, [arctan, [<built-in function add>, [elliptic_kc, -2], -2]], -1], [sec, [<built-in function mul>, [abs, [exp, 1]], -4]], -1]]\n```\nI'm realizing it might even be useful to have a (binary) tree returned from a list of lists... but that wouldn't be here.",
     "created_at": "2012-12-06T03:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
@@ -188,7 +182,6 @@ sage: def tree(expr):
 sage: tree(S)
 [sinh_integral, [<built-in function mul>, [<built-in function pow>, [<built-in function add>, [kronecker_delta, [exp, 1], v1], -52], -1], [<built-in function pow>, [arctan, [<built-in function add>, [elliptic_kc, -2], -2]], -1], [sec, [<built-in function mul>, [abs, [exp, 1]], -4]], -1]]
 ```
-
 I'm realizing it might even be useful to have a (binary) tree returned from a list of lists... but that wouldn't be here.
 
 
@@ -216,7 +209,7 @@ By the way, http://interact.sagemath.org/node/76 might be a nice example too (th
 archive/issue_comments_087860.json:
 ```json
 {
-    "body": "Does\n\n```\nsage: S._maxima_lib_().ecl().python()\n```\n\ncount?",
+    "body": "Does\n\n```\nsage: S._maxima_lib_().ecl().python()\n```\ncount?",
     "created_at": "2012-12-08T00:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
@@ -230,7 +223,6 @@ Does
 ```
 sage: S._maxima_lib_().ecl().python()
 ```
-
 count?
 
 
@@ -240,7 +232,7 @@ count?
 archive/issue_comments_087861.json:
 ```json
 {
-    "body": "> Does\n> {{{\n> sage: S._maxima_lib_().ecl().python()\n> }}}\n> count?\nThat certainly counts as one example.   I don't know that people will know what to do with `'MTIMES'` :-)\n\nBasically, an introduction to how to write something like this for people who don't know jack about expression trees (like me, though teaching it certainly helped) is what would be helpful here.",
+    "body": "> Does\n> \n> ```\n> sage: S._maxima_lib_().ecl().python()\n> ```\n> count?\n\nThat certainly counts as one example.   I don't know that people will know what to do with `'MTIMES'` :-)\n\nBasically, an introduction to how to write something like this for people who don't know jack about expression trees (like me, though teaching it certainly helped) is what would be helpful here.",
     "created_at": "2012-12-08T04:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
@@ -250,10 +242,12 @@ archive/issue_comments_087861.json:
 ```
 
 > Does
-> {{{
+> 
+> ```
 > sage: S._maxima_lib_().ecl().python()
-> }}}
+> ```
 > count?
+
 That certainly counts as one example.   I don't know that people will know what to do with `'MTIMES'` :-)
 
 Basically, an introduction to how to write something like this for people who don't know jack about expression trees (like me, though teaching it certainly helped) is what would be helpful here.

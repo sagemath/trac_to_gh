@@ -3,7 +3,7 @@
 archive/issues_009832.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @nathanncohen @jasongrout @jaapspies mvngu @qed777\n\nIf a 64-bit version of Sage is built on OpenSolaris, Sage reports an error as soon as it is started. \n\n\n```\ndrkirkby@hawk:~$ 64/sage-4.5.3.alpha2/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.5.3.alpha2, Release Date: 2010-08-23                |\n| Type notebook() for the GUI, and license() for information.        |\n<snip>\n\nImportError: ld.so.1: python: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/64/sage-4.5.3.alpha2/local/lib//libcliquer.so: symbol main: value 0x28152e8c7d4 does not fit\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\n\nThe problem of fatal relocation errors is discussed on this [Sun blog](http://blogs.sun.com/rie/entry/my_relocations_don_t_fit) by Rod Evans. \n\nA shared library should show no output from the following command:\n\n\n```\n$ elfdump -d library | fgrep TEXTREL\n```\n\n\nBut in a 64-bit builds of Sage on both OpenSolaris x64 and Solaris 10 on SPARC, but show output. The following is from an OpenSolaris machine, but similar is seen on a 64-bit SPARC build of Sage. \n\n\n```\ndrkirkby@hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep TEXTREL\n      [17]  TEXTREL           0                   \n      [25]  FLAGS             0x4                 [ TEXTREL ]\ndrkirkby@hawk:~$ \n```\n\n\nIf this flag is found, then the link-editor thinks this file contains non-pic code. \n\nLooking at the way the shared library is built on Solaris, it is different from other platforms. \n\n\n```\n# Flags for building a dynamically linked shared object.\nSAGESOFLAGS=\" \"\nif [ \"$UNAME\" = \"Linux\" ] || [ \"$UNAME\" = \"FreeBSD\" ]; then\n    SAGESOFLAGS=\"-shared -Wl,-soname,libcliquer.so\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"Darwin\" ]; then\n    MACOSX_DEPLOYMENT_TARGET=\"10.3\"\n    export MACOSX_DEPLOYMENT_TARGET\n    SAGESOFLAGS=\"-dynamiclib -single_module -flat_namespace -undefined dynamic_l\nookup\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"SunOS\" ]; then\n    SAGESOFLAGS=\"-G -Bdynamic\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    SAGESOFLAGS=\"-shared -Wl,-soname,libcliquer.so\"\n```\n\n\nUsing just\n\n\n```\nelif [ \"$UNAME\" = \"SunOS\" ]; then\n   SAGESOFLAGS=\"-shared\"\n```\n\n\nwas sufficient to produce a shared library which did not exhibit this problem. When Sage was started, Sage no longer produced the libcliquer error message, though it did fail to run properly. \n\nThere are in fact several other libraries in Sage that show show output using the `elfdump` command above. \n\n\n```\n * libcliquer.so\n * libecl.so\n * libgroebner-0.6.4.so\n * libpboriCudd-0.6.4.so\n * libpolybori-0.6.4.so \n```\n\n(These were observed on OpenSolaris x64. I've confirmed the same is true of libcliquer.so on 64-bit SPARC using `t2.math`, but I've not verified if all the other libraries show this problem. )\n\nI doubt whether these are the only issues preventing Sage running properly on 64-bit Solaris, but these should be resolved. \n\nSince \n* The current version of Cliquer in Sage 1.2 is not the latest.\n* Cliquer 1.2.1 is a bug-fix only release, so should be safe. \n* The Cliquer test suite can't be run as there's no `spkg-check` file - see #9767\n\nit makes sense to update Cliquer and sort out the Solaris and `spkg-check` issues at the same time. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9833\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @nathanncohen @jasongrout @jaapspies mvngu @qed777\n\nIf a 64-bit version of Sage is built on OpenSolaris, Sage reports an error as soon as it is started. \n\n```\ndrkirkby@hawk:~$ 64/sage-4.5.3.alpha2/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.5.3.alpha2, Release Date: 2010-08-23                |\n| Type notebook() for the GUI, and license() for information.        |\n<snip>\n\nImportError: ld.so.1: python: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/64/sage-4.5.3.alpha2/local/lib//libcliquer.so: symbol main: value 0x28152e8c7d4 does not fit\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\nThe problem of fatal relocation errors is discussed on this [Sun blog](http://blogs.sun.com/rie/entry/my_relocations_don_t_fit) by Rod Evans. \n\nA shared library should show no output from the following command:\n\n```\n$ elfdump -d library | fgrep TEXTREL\n```\n\nBut in a 64-bit builds of Sage on both OpenSolaris x64 and Solaris 10 on SPARC, but show output. The following is from an OpenSolaris machine, but similar is seen on a 64-bit SPARC build of Sage. \n\n```\ndrkirkby@hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep TEXTREL\n      [17]  TEXTREL           0                   \n      [25]  FLAGS             0x4                 [ TEXTREL ]\ndrkirkby@hawk:~$ \n```\n\nIf this flag is found, then the link-editor thinks this file contains non-pic code. \n\nLooking at the way the shared library is built on Solaris, it is different from other platforms. \n\n```\n# Flags for building a dynamically linked shared object.\nSAGESOFLAGS=\" \"\nif [ \"$UNAME\" = \"Linux\" ] || [ \"$UNAME\" = \"FreeBSD\" ]; then\n    SAGESOFLAGS=\"-shared -Wl,-soname,libcliquer.so\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"Darwin\" ]; then\n    MACOSX_DEPLOYMENT_TARGET=\"10.3\"\n    export MACOSX_DEPLOYMENT_TARGET\n    SAGESOFLAGS=\"-dynamiclib -single_module -flat_namespace -undefined dynamic_l\nookup\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"SunOS\" ]; then\n    SAGESOFLAGS=\"-G -Bdynamic\"\n    export SAGESOFLAGS\nelif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    SAGESOFLAGS=\"-shared -Wl,-soname,libcliquer.so\"\n```\n\nUsing just\n\n```\nelif [ \"$UNAME\" = \"SunOS\" ]; then\n   SAGESOFLAGS=\"-shared\"\n```\n\nwas sufficient to produce a shared library which did not exhibit this problem. When Sage was started, Sage no longer produced the libcliquer error message, though it did fail to run properly. \n\nThere are in fact several other libraries in Sage that show show output using the `elfdump` command above. \n\n```\n * libcliquer.so\n * libecl.so\n * libgroebner-0.6.4.so\n * libpboriCudd-0.6.4.so\n * libpolybori-0.6.4.so \n```\n(These were observed on OpenSolaris x64. I've confirmed the same is true of libcliquer.so on 64-bit SPARC using `t2.math`, but I've not verified if all the other libraries show this problem. )\n\nI doubt whether these are the only issues preventing Sage running properly on 64-bit Solaris, but these should be resolved. \n\nSince \n* The current version of Cliquer in Sage 1.2 is not the latest.\n* Cliquer 1.2.1 is a bug-fix only release, so should be safe. \n* The Cliquer test suite can't be run as there's no `spkg-check` file - see #9767\n\nit makes sense to update Cliquer and sort out the Solaris and `spkg-check` issues at the same time. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9833\n\n",
     "created_at": "2010-08-28T19:19:25Z",
     "labels": [
         "component: porting: solaris",
@@ -21,7 +21,6 @@ Assignee: drkirkby
 CC:  @jhpalmieri @nathanncohen @jasongrout @jaapspies mvngu @qed777
 
 If a 64-bit version of Sage is built on OpenSolaris, Sage reports an error as soon as it is started. 
-
 
 ```
 drkirkby@hawk:~$ 64/sage-4.5.3.alpha2/sage
@@ -41,19 +40,15 @@ Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 ```
 
-
 The problem of fatal relocation errors is discussed on this [Sun blog](http://blogs.sun.com/rie/entry/my_relocations_don_t_fit) by Rod Evans. 
 
 A shared library should show no output from the following command:
-
 
 ```
 $ elfdump -d library | fgrep TEXTREL
 ```
 
-
 But in a 64-bit builds of Sage on both OpenSolaris x64 and Solaris 10 on SPARC, but show output. The following is from an OpenSolaris machine, but similar is seen on a 64-bit SPARC build of Sage. 
-
 
 ```
 drkirkby@hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep TEXTREL
@@ -62,11 +57,9 @@ drkirkby@hawk:~$ elfdump -d 64/sage-4.5.3.alpha2/local/lib/libcliquer.so  | grep
 drkirkby@hawk:~$ 
 ```
 
-
 If this flag is found, then the link-editor thinks this file contains non-pic code. 
 
 Looking at the way the shared library is built on Solaris, it is different from other platforms. 
-
 
 ```
 # Flags for building a dynamically linked shared object.
@@ -87,20 +80,16 @@ elif [ "$UNAME" = "CYGWIN" ]; then
     SAGESOFLAGS="-shared -Wl,-soname,libcliquer.so"
 ```
 
-
 Using just
-
 
 ```
 elif [ "$UNAME" = "SunOS" ]; then
    SAGESOFLAGS="-shared"
 ```
 
-
 was sufficient to produce a shared library which did not exhibit this problem. When Sage was started, Sage no longer produced the libcliquer error message, though it did fail to run properly. 
 
 There are in fact several other libraries in Sage that show show output using the `elfdump` command above. 
-
 
 ```
  * libcliquer.so
@@ -109,7 +98,6 @@ There are in fact several other libraries in Sage that show show output using th
  * libpboriCudd-0.6.4.so
  * libpolybori-0.6.4.so 
 ```
-
 (These were observed on OpenSolaris x64. I've confirmed the same is true of libcliquer.so on 64-bit SPARC using `t2.math`, but I've not verified if all the other libraries show this problem. )
 
 I doubt whether these are the only issues preventing Sage running properly on 64-bit Solaris, but these should be resolved. 
@@ -134,7 +122,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9833
 archive/issue_comments_096864.json:
 ```json
 {
-    "body": "This is a general error in how Cliquer is adapted to/built for Sage.\n\nIt is intended as a stand-alone program, and therefore contains `main()`.\n\nYou **must** (or should)  **not** build [shared] libraries containing a `main()` function.\n\nInstead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage should build and install both, the program and a library. (If you remove/omit `main()` for the shared library, the loader problems should vanish.)\n\n\n```diff\n--- cliquer-1.2.p6/src/Makefile\t2010-02-16 05:26:57.000000000 +0100\n+++ cliquer-1.2.p6/patch/Makefile\t2010-02-16 05:26:55.000000000 +0100\n@@ -1,14 +1,29 @@\n \n ##### Configurable options:\n \n+# Don't need to set any of these compiler variables. They have already been\n+# set when running SAGE_ROOT/local/bin/sage-env as part of installing a\n+# package.\n ## Compiler:\n-CC=gcc\n+# CC=gcc\n #CC=cc\n \n ## Compiler flags:\n \n # GCC:  (also -march=pentium etc, for machine-dependent optimizing)\n-CFLAGS=-Wall -O3 -fomit-frame-pointer -funroll-loops\n+# Build in 64-bit mode on Mac OS X with an Intel processor.\n+\n+# Flags for building a dynamically linked shared object.\n+# SAGESOFLAGS=\"\"\n+# ifeq (`uname`, Linux)\n+# \tSAGESOFLAGS=-shared -Wl,-soname,libcliquer.so\n+# endif\n+# ifeq (`uname`, Darwin)\n+# \tSAGESOFLAGS=-shared -dynamiclib\n+# endif\n+# ifeq (`uname`, SunOS)\n+# \tSAGESOFLAGS=-G -Bdynamic\n+# endif\n \n # GCC w/ debugging:\n #CFLAGS=-Wall -g -DINLINE=\n@@ -36,8 +51,7 @@\n \t$(CC) $(LDFLAGS) -o $@ testcases.o cliquer.o graph.o reorder.o\n \n cl: cl.o cliquer.o graph.o reorder.o\n-\t$(CC) $(LDFLAGS) -o $@ cl.o cliquer.o graph.o reorder.o\n-\n+\t$(CC) $(LDFLAGS) $(SAGESOFLAGS) -o libcliquer.so cl.o cliquer.o graph.o reorder.o\n \n cl.o testcases.o cliquer.o graph.o reorder.o: cliquer.h set.h graph.h misc.h reorder.h Makefile cliquerconf.h\n \n```\n\nNote the changes made to the `cl` target (which is [the name of] the stand-alone program).\n\nThis package really needs work (but there's - besides others - already a ticket (#9871) for an upstream update as well). The files in `src/` are not even vanilla, but contain weird changes in order to use Cliquer as a library from within Sage.",
+    "body": "This is a general error in how Cliquer is adapted to/built for Sage.\n\nIt is intended as a stand-alone program, and therefore contains `main()`.\n\nYou **must** (or should)  **not** build [shared] libraries containing a `main()` function.\n\nInstead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage should build and install both, the program and a library. (If you remove/omit `main()` for the shared library, the loader problems should vanish.)\n\n```diff\n--- cliquer-1.2.p6/src/Makefile\t2010-02-16 05:26:57.000000000 +0100\n+++ cliquer-1.2.p6/patch/Makefile\t2010-02-16 05:26:55.000000000 +0100\n@@ -1,14 +1,29 @@\n \n ##### Configurable options:\n \n+# Don't need to set any of these compiler variables. They have already been\n+# set when running SAGE_ROOT/local/bin/sage-env as part of installing a\n+# package.\n ## Compiler:\n-CC=gcc\n+# CC=gcc\n #CC=cc\n \n ## Compiler flags:\n \n # GCC:  (also -march=pentium etc, for machine-dependent optimizing)\n-CFLAGS=-Wall -O3 -fomit-frame-pointer -funroll-loops\n+# Build in 64-bit mode on Mac OS X with an Intel processor.\n+\n+# Flags for building a dynamically linked shared object.\n+# SAGESOFLAGS=\"\"\n+# ifeq (`uname`, Linux)\n+# \tSAGESOFLAGS=-shared -Wl,-soname,libcliquer.so\n+# endif\n+# ifeq (`uname`, Darwin)\n+# \tSAGESOFLAGS=-shared -dynamiclib\n+# endif\n+# ifeq (`uname`, SunOS)\n+# \tSAGESOFLAGS=-G -Bdynamic\n+# endif\n \n # GCC w/ debugging:\n #CFLAGS=-Wall -g -DINLINE=\n@@ -36,8 +51,7 @@\n \t$(CC) $(LDFLAGS) -o $@ testcases.o cliquer.o graph.o reorder.o\n \n cl: cl.o cliquer.o graph.o reorder.o\n-\t$(CC) $(LDFLAGS) -o $@ cl.o cliquer.o graph.o reorder.o\n-\n+\t$(CC) $(LDFLAGS) $(SAGESOFLAGS) -o libcliquer.so cl.o cliquer.o graph.o reorder.o\n \n cl.o testcases.o cliquer.o graph.o reorder.o: cliquer.h set.h graph.h misc.h reorder.h Makefile cliquerconf.h\n \n```\nNote the changes made to the `cl` target (which is [the name of] the stand-alone program).\n\nThis package really needs work (but there's - besides others - already a ticket (#9871) for an upstream update as well). The files in `src/` are not even vanilla, but contain weird changes in order to use Cliquer as a library from within Sage.",
     "created_at": "2010-09-08T20:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9832",
     "type": "issue_comment",
@@ -150,7 +138,6 @@ It is intended as a stand-alone program, and therefore contains `main()`.
 You **must** (or should)  **not** build [shared] libraries containing a `main()` function.
 
 Instead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage should build and install both, the program and a library. (If you remove/omit `main()` for the shared library, the loader problems should vanish.)
-
 
 ```diff
 --- cliquer-1.2.p6/src/Makefile	2010-02-16 05:26:57.000000000 +0100
@@ -198,7 +185,6 @@ Instead, use `#ifdef ...` and `-D...` depending on what you build. I think Sage 
  cl.o testcases.o cliquer.o graph.o reorder.o: cliquer.h set.h graph.h misc.h reorder.h Makefile cliquerconf.h
  
 ```
-
 Note the changes made to the `cl` target (which is [the name of] the stand-alone program).
 
 This package really needs work (but there's - besides others - already a ticket (#9871) for an upstream update as well). The files in `src/` are not even vanilla, but contain weird changes in order to use Cliquer as a library from within Sage.

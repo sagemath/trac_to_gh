@@ -3,7 +3,7 @@
 archive/issues_009642.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nReported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:\n\n```\nSubject: can sage -testall use threads?\n\nThat is, without setting NUM_THREADS or something.  I tried\n\n./sage -testall -p 8\n\nbut I just get lots of error messages in addition to my test output.\nI guess I have the same question about sage -tnew as well.\n```\n\n\nSomewhat related: #279\n\nIssue created by migration from https://trac.sagemath.org/ticket/9642\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nReported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:\n\n```\nSubject: can sage -testall use threads?\n\nThat is, without setting NUM_THREADS or something.  I tried\n\n./sage -testall -p 8\n\nbut I just get lots of error messages in addition to my test output.\nI guess I have the same question about sage -tnew as well.\n```\n\nSomewhat related: #279\n\nIssue created by migration from https://trac.sagemath.org/ticket/9642\n\n",
     "created_at": "2010-07-29T22:46:39Z",
     "labels": [
         "component: doctest coverage",
@@ -33,7 +33,6 @@ That is, without setting NUM_THREADS or something.  I tried
 but I just get lots of error messages in addition to my test output.
 I guess I have the same question about sage -tnew as well.
 ```
-
 
 Somewhat related: #279
 

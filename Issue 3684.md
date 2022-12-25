@@ -3,7 +3,7 @@
 archive/issues_003684.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Sat, Jul 19, 2008 at 11:49 PM, Simon King <king@mathematik.uni-jena.de> wrote:\n>\n> Dear Sage team,\n>\n> I don't know whether this post should better go to sage-devel or sage-\n> support.\n>\n> I understood that recently the implementation of matrices over GF(2)\n> was considerably improved. Therefore i am very surprised that the\n> computation of the (left) kernel is still very slow:\n>\n> sage: version()\n> 'SAGE Version 3.0.5, Release Date: 2008-07-11'\n> sage: M=MatrixSpace(GF(2),1000,500).random_element()\n> sage: time K=M.kernel()\n> CPU times: user 21.60 s, sys: 0.06 s, total: 21.66 s\n> Wall time: 40.87 s\n> sage: time K.matrix()\n> CPU times: user 15.06 s, sys: 0.03 s, total: 15.09 s\n> Wall time: 27.71 s\n> 500 x 1000 dense matrix over Finite Field of size 2\n>\n>\n> Version 2.2.3 of C-MeatAxe (for which i have a wrapper) does much\n> better:\n>\n> sage: m=MTX(2,[M[i].list() for i in range(1000)]) # Now, m is \"the\n> same\" as M\n> sage: time k=m.nullspace()\n> CPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\n> Wall time: 0.18 s\n> sage: time k\n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> (500 x 1000) MTX matrix over GF(2)\n>\n> Hence, we have an improvement from 21.60+15.06 CPU-seconds to 0.18\n> seconds.\n> And the result is right:\n> sage: K.matrix()*M == 0\n> True\n> sage: k*m == MTX(2,500,500)   # this is a zero-matrix\n> True\n>\n> Did i do something wrong? Is M.kernel() not what i should use here? Or\n> is the kernel computation not optimised yet?\n\nComputation of the kernel is done in two steps in Sage:\n\n1. Compute the reduced row echelon form of the matrix.\n2. Read off the kernel.\n3. Create the kernel as a vector space.\n\nIn theory 1 takes most of the time and 2-3 are trivial.\nIn this particular case Sage is using 100% slow generic\ncode (over any base ring, etc.) to do 2-3, but superfast\ncode for 1:\n\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: time E=M.echelon_form()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time K=M.kernel()\nCPU times: user 13.02 s, sys: 0.82 s, total: 13.84 s\nWall time: 14.54 s\n\nWriting a version of the generic code that is optimized\nfor gf2 mr4i matrices would make it so the second step\nabove would take 0.00 seconds.  Really it would \nprobably take about 10 ms, since\n\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: timeit('M[0,0]=0; M.echelon_form()')\n125 loops, best of 3: 3.46 ms per loop\n\nSo with proper optimization Sage should be at least an order\nof magnitude than your meataxe benchmarks above. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3684\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Sat, Jul 19, 2008 at 11:49 PM, Simon King <king@mathematik.uni-jena.de> wrote:\n>\n> Dear Sage team,\n>\n> I don't know whether this post should better go to sage-devel or sage-\n> support.\n>\n> I understood that recently the implementation of matrices over GF(2)\n> was considerably improved. Therefore i am very surprised that the\n> computation of the (left) kernel is still very slow:\n>\n> sage: version()\n> 'SAGE Version 3.0.5, Release Date: 2008-07-11'\n> sage: M=MatrixSpace(GF(2),1000,500).random_element()\n> sage: time K=M.kernel()\n> CPU times: user 21.60 s, sys: 0.06 s, total: 21.66 s\n> Wall time: 40.87 s\n> sage: time K.matrix()\n> CPU times: user 15.06 s, sys: 0.03 s, total: 15.09 s\n> Wall time: 27.71 s\n> 500 x 1000 dense matrix over Finite Field of size 2\n>\n>\n> Version 2.2.3 of C-MeatAxe (for which i have a wrapper) does much\n> better:\n>\n> sage: m=MTX(2,[M[i].list() for i in range(1000)]) # Now, m is \"the\n> same\" as M\n> sage: time k=m.nullspace()\n> CPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\n> Wall time: 0.18 s\n> sage: time k\n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> (500 x 1000) MTX matrix over GF(2)\n>\n> Hence, we have an improvement from 21.60+15.06 CPU-seconds to 0.18\n> seconds.\n> And the result is right:\n> sage: K.matrix()*M == 0\n> True\n> sage: k*m == MTX(2,500,500)   # this is a zero-matrix\n> True\n>\n> Did i do something wrong? Is M.kernel() not what i should use here? Or\n> is the kernel computation not optimised yet?\n\nComputation of the kernel is done in two steps in Sage:\n\n1. Compute the reduced row echelon form of the matrix.\n2. Read off the kernel.\n3. Create the kernel as a vector space.\n\nIn theory 1 takes most of the time and 2-3 are trivial.\nIn this particular case Sage is using 100% slow generic\ncode (over any base ring, etc.) to do 2-3, but superfast\ncode for 1:\n\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: time E=M.echelon_form()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time K=M.kernel()\nCPU times: user 13.02 s, sys: 0.82 s, total: 13.84 s\nWall time: 14.54 s\n\nWriting a version of the generic code that is optimized\nfor gf2 mr4i matrices would make it so the second step\nabove would take 0.00 seconds.  Really it would \nprobably take about 10 ms, since\n\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: timeit('M[0,0]=0; M.echelon_form()')\n125 loops, best of 3: 3.46 ms per loop\n\nSo with proper optimization Sage should be at least an order\nof magnitude than your meataxe benchmarks above. \n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3684\n\n",
     "created_at": "2008-07-20T11:45:22Z",
     "labels": [
         "component: linear algebra"
@@ -16,7 +16,6 @@ archive/issues_003684.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -102,7 +101,6 @@ of magnitude than your meataxe benchmarks above.
  -- William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3684
 
 
@@ -132,7 +130,7 @@ Changing status from new to needs_review.
 archive/issue_comments_026051.json:
 ```json
 {
-    "body": "With attached patch things are a little bit better (I didn't touch the vectors yet):\n\n\n```\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: %time K=M.kernel()\nCPU times: user 5.89 s, sys: 0.00 s, total: 5.90 s\nWall time: 5.99 s\n\nsage: %time K.matrix()\nCPU times: user 3.36 s, sys: 0.49 s, total: 3.86 s\nWall time: 3.95 s\n500 x 1000 dense matrix over Finite Field of size 2\n```\n",
+    "body": "With attached patch things are a little bit better (I didn't touch the vectors yet):\n\n```\nsage: M=MatrixSpace(GF(2),1000,500).random_element()\nsage: %time K=M.kernel()\nCPU times: user 5.89 s, sys: 0.00 s, total: 5.90 s\nWall time: 5.99 s\n\nsage: %time K.matrix()\nCPU times: user 3.36 s, sys: 0.49 s, total: 3.86 s\nWall time: 3.95 s\n500 x 1000 dense matrix over Finite Field of size 2\n```",
     "created_at": "2009-12-16T10:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3684",
     "type": "issue_comment",
@@ -142,7 +140,6 @@ archive/issue_comments_026051.json:
 ```
 
 With attached patch things are a little bit better (I didn't touch the vectors yet):
-
 
 ```
 sage: M=MatrixSpace(GF(2),1000,500).random_element()
@@ -155,7 +152,6 @@ CPU times: user 3.36 s, sys: 0.49 s, total: 3.86 s
 Wall time: 3.95 s
 500 x 1000 dense matrix over Finite Field of size 2
 ```
-
 
 
 

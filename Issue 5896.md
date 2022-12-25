@@ -132,7 +132,7 @@ This one is fine.  Positive review!  (moral: never say something is trivial....)
 archive/issue_comments_046536.json:
 ```json
 {
-    "body": "> moral: never say something is trivial....\n\nespecially when trying to use english to express mathematics. :)",
+    "body": "> moral: never say something is trivial....\n\n\nespecially when trying to use english to express mathematics. :)",
     "created_at": "2009-04-27T09:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
@@ -142,6 +142,7 @@ archive/issue_comments_046536.json:
 ```
 
 > moral: never say something is trivial....
+
 
 especially when trying to use english to express mathematics. :)
 

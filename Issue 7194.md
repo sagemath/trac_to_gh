@@ -78,7 +78,7 @@ P.S.: Next targets are intmat and letter place.
 archive/issue_comments_059542.json:
 ```json
 {
-    "body": "Hi!\nA small demonstration of the copy and paste feature:\n\nSingular:\n\n```\nproc content(f)\n\"USAGE:   content(f); f polynomial/vector\nRETURN:  number, the content (greatest common factor of coefficients)\n         of the polynomial/vector f\nSEE ALSO: cleardenom\nEXAMPLE: example content; shows an example\n\"\n{\n  if (f==0) { return(number(1)); }\n  return(leadcoef(f)/leadcoef(cleardenom(f)));\n}\nexample\n{ \"EXAMPLE:\"; echo = 2;\n   ring r=0,(x,y,z),(c,lp);\n   content(3x2+18xy-27xyz);\n   vector v=[3x2+18xy-27xyz,15x2+12y4,3];\n   content(v);\n}\n```\n\n\nSage:\n\n```python\n\nfrom sage.libs.singular.function import singular_function, lib\nleadcoef =  singular_function(\"leadcoef\")\ncleardenom = singular_function(\"cleardenom\")\n\ndef content(f):\n    \"\"\"\n    Examples:\n    sage: P.<x,y,z>=PolynomialRing(QQ)\n    sage: content(3*x**2+18*x*y-27*x*y*z)\n    -3\n    \"\"\"\n    if f==0:\n        return 1\n    return leadcoef(f)/leadcoef(cleardenom(f))\n\n```\n",
+    "body": "Hi!\nA small demonstration of the copy and paste feature:\n\nSingular:\n\n```\nproc content(f)\n\"USAGE:   content(f); f polynomial/vector\nRETURN:  number, the content (greatest common factor of coefficients)\n         of the polynomial/vector f\nSEE ALSO: cleardenom\nEXAMPLE: example content; shows an example\n\"\n{\n  if (f==0) { return(number(1)); }\n  return(leadcoef(f)/leadcoef(cleardenom(f)));\n}\nexample\n{ \"EXAMPLE:\"; echo = 2;\n   ring r=0,(x,y,z),(c,lp);\n   content(3x2+18xy-27xyz);\n   vector v=[3x2+18xy-27xyz,15x2+12y4,3];\n   content(v);\n}\n```\n\nSage:\n\n```python\n\nfrom sage.libs.singular.function import singular_function, lib\nleadcoef =  singular_function(\"leadcoef\")\ncleardenom = singular_function(\"cleardenom\")\n\ndef content(f):\n    \"\"\"\n    Examples:\n    sage: P.<x,y,z>=PolynomialRing(QQ)\n    sage: content(3*x**2+18*x*y-27*x*y*z)\n    -3\n    \"\"\"\n    if f==0:\n        return 1\n    return leadcoef(f)/leadcoef(cleardenom(f))\n\n```",
     "created_at": "2009-10-13T11:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ example
 }
 ```
 
-
 Sage:
 
 ```python
@@ -134,7 +133,6 @@ def content(f):
     return leadcoef(f)/leadcoef(cleardenom(f))
 
 ```
-
 
 
 
@@ -161,7 +159,7 @@ Attachment [singular_list.3.patch](tarball://root/attachments/some-uuid/ticket71
 archive/issue_comments_059544.json:
 ```json
 {
-    "body": "How to construct ring with parameters\n\n```python\nP.<x,y,z>=PolynomialRing(QQ)\ncharacteristic=0\nnumber_of_variables=1\nnumber_of_parameters=3\nl=[\n    [0, ['a','b','c'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\n, ['x', 'y', 'z'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\nring=singular_function(\"ring\")\nring(l, ring=P)\n```\n",
+    "body": "How to construct ring with parameters\n\n```python\nP.<x,y,z>=PolynomialRing(QQ)\ncharacteristic=0\nnumber_of_variables=1\nnumber_of_parameters=3\nl=[\n    [0, ['a','b','c'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\n, ['x', 'y', 'z'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\nring=singular_function(\"ring\")\nring(l, ring=P)\n```",
     "created_at": "2009-10-13T13:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
@@ -183,7 +181,6 @@ l=[
 ring=singular_function("ring")
 ring(l, ring=P)
 ```
-
 
 
 
@@ -216,7 +213,7 @@ sage: make_letter_place_ring(10, ring=P)
 archive/issue_comments_059546.json:
 ```json
 {
-    "body": "sorry:\n\n\n```python\n\nsage: from sage.libs.singular.function import lib, singular_function\nsage: P.<x,y,z>=QQ[]\nsage: lib(\"freegb.lib\")\nsage: \nsage: make_letter_place_ring = singular_function(\"makeLetterplaceRing\")\nsage: make_letter_place_ring(10, ring=P)\n<RingWrap>\n```\n",
+    "body": "sorry:\n\n```python\n\nsage: from sage.libs.singular.function import lib, singular_function\nsage: P.<x,y,z>=QQ[]\nsage: lib(\"freegb.lib\")\nsage: \nsage: make_letter_place_ring = singular_function(\"makeLetterplaceRing\")\nsage: make_letter_place_ring(10, ring=P)\n<RingWrap>\n```",
     "created_at": "2009-10-13T13:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
@@ -226,7 +223,6 @@ archive/issue_comments_059546.json:
 ```
 
 sorry:
-
 
 ```python
 
@@ -238,7 +234,6 @@ sage: make_letter_place_ring = singular_function("makeLetterplaceRing")
 sage: make_letter_place_ring(10, ring=P)
 <RingWrap>
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002459.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrancois noted in http://groups.google.com/group/sage-devel/browse_thread/thread/4a902c07ebb7c45d that:\n\n```\nIn sage-2.10.3.rc3 in the top setup.py at line 430 we have:\ndefine_macros = [('GSL_DISABLE_DEPRECAED','1')]\nFor those who can't spot it, it miss a 'T'. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2459\n\n",
+    "body": "Assignee: mabshoff\n\nFrancois noted in http://groups.google.com/group/sage-devel/browse_thread/thread/4a902c07ebb7c45d that:\n\n```\nIn sage-2.10.3.rc3 in the top setup.py at line 430 we have:\ndefine_macros = [('GSL_DISABLE_DEPRECAED','1')]\nFor those who can't spot it, it miss a 'T'. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2459\n\n",
     "created_at": "2008-03-10T14:58:39Z",
     "labels": [
         "component: cygwin",
@@ -25,7 +25,6 @@ In sage-2.10.3.rc3 in the top setup.py at line 430 we have:
 define_macros = [('GSL_DISABLE_DEPRECAED','1')]
 For those who can't spot it, it miss a 'T'. 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2459

@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2895
 archive/issue_comments_019872.json:
 ```json
 {
-    "body": "Applying this to my alpha4 merge tree I get a bunch of doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/generic/morphism.py # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_element.py # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.pyx # 9 doctests failed\n        sage -t -long devel/sage/sage/rings/ring.pyx # 5 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.py # 13 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring.py # 16 doctests failed\n        sage -t -long devel/sage/sage/rings/morphism.pyx # 11 doctests failed\n        sage -t -long devel/sage/sage/rings/homset.py # 5 doctests failed\n        sage -t -long devel/sage/sage/ext/interactive_constructors_c.pyx # 4 doctests failed\n```\n\nThe issue in most of not all cases seems to be:\n\n```\nAttributeError: 'QuotientRing_generic' object has no attribute '_print_element'\n```\n\n\nCheers,\n\nMichael",
+    "body": "Applying this to my alpha4 merge tree I get a bunch of doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/generic/morphism.py # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/pbori.pyx # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_element.py # 4 doctests failed\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 2 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.pyx # 9 doctests failed\n        sage -t -long devel/sage/sage/rings/ring.pyx # 5 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring_element.py # 13 doctests failed\n        sage -t -long devel/sage/sage/rings/quotient_ring.py # 16 doctests failed\n        sage -t -long devel/sage/sage/rings/morphism.pyx # 11 doctests failed\n        sage -t -long devel/sage/sage/rings/homset.py # 5 doctests failed\n        sage -t -long devel/sage/sage/ext/interactive_constructors_c.pyx # 4 doctests failed\n```\nThe issue in most of not all cases seems to be:\n\n```\nAttributeError: 'QuotientRing_generic' object has no attribute '_print_element'\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T02:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
@@ -54,13 +54,11 @@ Applying this to my alpha4 merge tree I get a bunch of doctest failures:
         sage -t -long devel/sage/sage/rings/homset.py # 5 doctests failed
         sage -t -long devel/sage/sage/ext/interactive_constructors_c.pyx # 4 doctests failed
 ```
-
 The issue in most of not all cases seems to be:
 
 ```
 AttributeError: 'QuotientRing_generic' object has no attribute '_print_element'
 ```
-
 
 Cheers,
 
@@ -145,7 +143,7 @@ alpha3.
 archive/issue_comments_019876.json:
 ```json
 {
-    "body": "Here's what appears to have happened. The old QuotientRingElement is in\nrings/quotient_ring_element.py and it contains the following:\n\n\n```\n    def _repr_(self):\n        from sage.structure.parent_gens import localvars\n        P = self.parent()\n        R = P.cover_ring()\n        # We print by temporarily (and safely!) changing the variable\n        # names of the covering structure R to those of P.\n        # These names get changed back, since we're using \"with\".\n        with localvars(R, P.variable_names(), normalize=False):\n            return str(self.__rep)\n```\n\n\nThe new version is in the file quotient_ring_elements.pyx. The\nabove code will not work in cython. In its place, we find:\n\n\n```\n     def _repr_(self):\n         self._reduce_()\n         return self.parent()._print_element(self)\n```\n\n\nBut the parent quotient ring has no method _print_element.",
+    "body": "Here's what appears to have happened. The old QuotientRingElement is in\nrings/quotient_ring_element.py and it contains the following:\n\n```\n    def _repr_(self):\n        from sage.structure.parent_gens import localvars\n        P = self.parent()\n        R = P.cover_ring()\n        # We print by temporarily (and safely!) changing the variable\n        # names of the covering structure R to those of P.\n        # These names get changed back, since we're using \"with\".\n        with localvars(R, P.variable_names(), normalize=False):\n            return str(self.__rep)\n```\n\nThe new version is in the file quotient_ring_elements.pyx. The\nabove code will not work in cython. In its place, we find:\n\n```\n     def _repr_(self):\n         self._reduce_()\n         return self.parent()._print_element(self)\n```\n\nBut the parent quotient ring has no method _print_element.",
     "created_at": "2008-04-13T20:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
@@ -156,7 +154,6 @@ archive/issue_comments_019876.json:
 
 Here's what appears to have happened. The old QuotientRingElement is in
 rings/quotient_ring_element.py and it contains the following:
-
 
 ```
     def _repr_(self):
@@ -170,17 +167,14 @@ rings/quotient_ring_element.py and it contains the following:
             return str(self.__rep)
 ```
 
-
 The new version is in the file quotient_ring_elements.pyx. The
 above code will not work in cython. In its place, we find:
-
 
 ```
      def _repr_(self):
          self._reduce_()
          return self.parent()._print_element(self)
 ```
-
 
 But the parent quotient ring has no method _print_element.
 
@@ -351,7 +345,7 @@ Changing assignee from somebody to @mwhansen.
 archive/issue_comments_019885.json:
 ```json
 {
-    "body": "Substitution works if the ground ring is QQ but the\nfollowing returns an exception:\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\n\nI repeat that my review is positive and I'd urge these patches to be merged in alpha6.",
+    "body": "Substitution works if the ground ring is QQ but the\nfollowing returns an exception:\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\nI repeat that my review is positive and I'd urge these patches to be merged in alpha6.",
     "created_at": "2008-04-18T19:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2895",
     "type": "issue_comment",
@@ -369,7 +363,6 @@ sage: L.<x,y,z> = LaurentPolynomialRing(R)
 sage: f=(x+y+z^-1)^2
 sage: f.substitute(z=1)
 ```
-
 I repeat that my review is positive and I'd urge these patches to be merged in alpha6.
 
 

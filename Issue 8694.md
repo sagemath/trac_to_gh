@@ -206,7 +206,7 @@ Made the proposed change and fixed the doctest of _latex_ for quasi-subschemes a
 archive/issue_comments_079076.json:
 ```json
 {
-    "body": "Replying to [comment:5 novoselt]:\n> Made the proposed change and fixed the doctest of _latex_ for quasi-subschemes accordingly.\n\nYou're too fast. ;-) (I wanted to remind you changing the doctests, too.)\n\nUpdated patch looks fine. (But haven't yet applied/tested it.)",
+    "body": "Replying to [comment:5 novoselt]:\n> Made the proposed change and fixed the doctest of _latex_ for quasi-subschemes accordingly.\n\n\nYou're too fast. ;-) (I wanted to remind you changing the doctests, too.)\n\nUpdated patch looks fine. (But haven't yet applied/tested it.)",
     "created_at": "2010-05-23T18:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
@@ -217,6 +217,7 @@ archive/issue_comments_079076.json:
 
 Replying to [comment:5 novoselt]:
 > Made the proposed change and fixed the doctest of _latex_ for quasi-subschemes accordingly.
+
 
 You're too fast. ;-) (I wanted to remind you changing the doctests, too.)
 

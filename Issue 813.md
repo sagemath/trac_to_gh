@@ -3,7 +3,7 @@
 archive/issues_000813.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
+    "body": "Assignee: @williamstein\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
     "created_at": "2007-10-03T18:52:27Z",
     "labels": [
         "component: algebraic geometry",
@@ -34,7 +34,6 @@ P3(f)
 
 0*P3.0+f
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/813
 
@@ -186,7 +185,7 @@ archive/issue_events_002288.json:
 archive/issue_comments_005016.json:
 ```json
 {
-    "body": "This now gives a TypeError when doing the last arithmetic:\n\n\n```\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\n```\n",
+    "body": "This now gives a TypeError when doing the last arithmetic:\n\n```\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\n```",
     "created_at": "2008-11-14T09:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -197,11 +196,9 @@ archive/issue_comments_005016.json:
 
 This now gives a TypeError when doing the last arithmetic:
 
-
 ```
 TypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'
 ```
-
 
 
 
@@ -210,7 +207,7 @@ TypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring 
 archive/issue_comments_005017.json:
 ```json
 {
-    "body": "I accidentally came accross this stone age ticket.\n\nFor the record: Current behaviour as of sage-4.7.rc2 is\n\n```\nsage: P1.<x>=QQ[]\nsage: L=P1.fraction_field()\nsage: x=L(x)\nsage: P2.<y>=P1[]\nsage:\nsage: f=x+y\nsage:\nsage: P3.<x,y>=QQ[]\nsage:\nsage: P3(f)\nx + y\nsage:\nsage: 0*P3.0+f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.rc2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11959)()\n\n/mnt/local/king/SAGE/sage-4.7.rc2/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7382)()\n\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\nsage: f.parent()\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: P3\nMultivariate Polynomial Ring in x, y over Rational Field\n```\n\n\nThe question thus is: Should there be a coercion from P3 to the parent of f? Then one should implement it. Otherwise, the ticket should be closed as invalid.\n\nLet fP be the parent of f, hence, the polynomial ring in y over the fraction field of the polynomial ring in x over the rationals.\n\nThere *is* a coercion to fP from the polyomial ring in y over the polynomial ring in x over the rationals:\n\n```\nsage: from sage.structure.element import get_coercion_model\nsage: cm = get_coercion_model()\nsage: fP = f.parent()\nsage: cm.explain(fP, QQ[x][y])\nCoercion on right operand via\n    Conversion map:\n      From: Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Rational Field\n      To:   Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nArithmetic performed after coercions.\nResult lives in Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\n\nHowever, there is no such coercion from the bivariate polynomial ring in x and y over the rationals:\n\n```\nsage: cm.explain(fP, QQ[x,y])\nWill try _r_action and _l_action\nUnknown result parent.\n```\n\n\nI think there should be such coercion! What do you think? I guess I'll also ask sage-devel.",
+    "body": "I accidentally came accross this stone age ticket.\n\nFor the record: Current behaviour as of sage-4.7.rc2 is\n\n```\nsage: P1.<x>=QQ[]\nsage: L=P1.fraction_field()\nsage: x=L(x)\nsage: P2.<y>=P1[]\nsage:\nsage: f=x+y\nsage:\nsage: P3.<x,y>=QQ[]\nsage:\nsage: P3(f)\nx + y\nsage:\nsage: 0*P3.0+f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.rc2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11959)()\n\n/mnt/local/king/SAGE/sage-4.7.rc2/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7382)()\n\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\nsage: f.parent()\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nsage: P3\nMultivariate Polynomial Ring in x, y over Rational Field\n```\n\nThe question thus is: Should there be a coercion from P3 to the parent of f? Then one should implement it. Otherwise, the ticket should be closed as invalid.\n\nLet fP be the parent of f, hence, the polynomial ring in y over the fraction field of the polynomial ring in x over the rationals.\n\nThere *is* a coercion to fP from the polyomial ring in y over the polynomial ring in x over the rationals:\n\n```\nsage: from sage.structure.element import get_coercion_model\nsage: cm = get_coercion_model()\nsage: fP = f.parent()\nsage: cm.explain(fP, QQ[x][y])\nCoercion on right operand via\n    Conversion map:\n      From: Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Rational Field\n      To:   Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nArithmetic performed after coercions.\nResult lives in Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\nHowever, there is no such coercion from the bivariate polynomial ring in x and y over the rationals:\n\n```\nsage: cm.explain(fP, QQ[x,y])\nWill try _r_action and _l_action\nUnknown result parent.\n```\n\nI think there should be such coercion! What do you think? I guess I'll also ask sage-devel.",
     "created_at": "2011-07-31T14:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -253,7 +250,6 @@ sage: P3
 Multivariate Polynomial Ring in x, y over Rational Field
 ```
 
-
 The question thus is: Should there be a coercion from P3 to the parent of f? Then one should implement it. Otherwise, the ticket should be closed as invalid.
 
 Let fP be the parent of f, hence, the polynomial ring in y over the fraction field of the polynomial ring in x over the rationals.
@@ -274,7 +270,6 @@ Result lives in Univariate Polynomial Ring in y over Fraction Field of Univariat
 Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field
 ```
 
-
 However, there is no such coercion from the bivariate polynomial ring in x and y over the rationals:
 
 ```
@@ -282,7 +277,6 @@ sage: cm.explain(fP, QQ[x,y])
 Will try _r_action and _l_action
 Unknown result parent.
 ```
-
 
 I think there should be such coercion! What do you think? I guess I'll also ask sage-devel.
 
@@ -333,7 +327,7 @@ Changing component from basic arithmetic to coercion.
 archive/issue_comments_005020.json:
 ```json
 {
-    "body": "Meanwhile I believe that this is *not* invalid. Namely, we have the following:\n\n```\nsage: from sage.categories.pushout import pushout\nsage: pushout(QQ['x','y'],Frac(QQ['x'])['y'])\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\n\nHence, arithmetic between `QQ['x','y']` and `Frac(QQ['x'])['y']` should work! But it doesn't:\n\n```\nsage: QQ['x','y'](1) + Frac(QQ['x'])['y'](1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/Projekte/MeatAxe/meataxe-2.2.4/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11997)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7382)()\n\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\n```\n\n\nWhat is the problem? The conversion is fine:\n\n```\nsage: Frac(QQ['x'])['y'](QQ['x','y'](1))\n1\n```\n\n\nBut in fact there is no coercion into the pushout:\n\n```\nsage: pushout(QQ['x','y'],Frac(QQ['x'])['y']).has_coerce_map_from(QQ['x','y'])\nFalse\n```\n\n\nThat's a bug, I think.",
+    "body": "Meanwhile I believe that this is *not* invalid. Namely, we have the following:\n\n```\nsage: from sage.categories.pushout import pushout\nsage: pushout(QQ['x','y'],Frac(QQ['x'])['y'])\nUnivariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field\n```\n\nHence, arithmetic between `QQ['x','y']` and `Frac(QQ['x'])['y']` should work! But it doesn't:\n\n```\nsage: QQ['x','y'](1) + Frac(QQ['x'])['y'](1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/Projekte/MeatAxe/meataxe-2.2.4/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11997)()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7382)()\n\nTypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'\n```\n\nWhat is the problem? The conversion is fine:\n\n```\nsage: Frac(QQ['x'])['y'](QQ['x','y'](1))\n1\n```\n\nBut in fact there is no coercion into the pushout:\n\n```\nsage: pushout(QQ['x','y'],Frac(QQ['x'])['y']).has_coerce_map_from(QQ['x','y'])\nFalse\n```\n\nThat's a bug, I think.",
     "created_at": "2011-08-02T13:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -349,7 +343,6 @@ sage: from sage.categories.pushout import pushout
 sage: pushout(QQ['x','y'],Frac(QQ['x'])['y'])
 Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field
 ```
-
 
 Hence, arithmetic between `QQ['x','y']` and `Frac(QQ['x'])['y']` should work! But it doesn't:
 
@@ -367,7 +360,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand parent(s) for '+': 'Multivariate Polynomial Ring in x, y over Rational Field' and 'Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field'
 ```
 
-
 What is the problem? The conversion is fine:
 
 ```
@@ -375,14 +367,12 @@ sage: Frac(QQ['x'])['y'](QQ['x','y'](1))
 1
 ```
 
-
 But in fact there is no coercion into the pushout:
 
 ```
 sage: pushout(QQ['x','y'],Frac(QQ['x'])['y']).has_coerce_map_from(QQ['x','y'])
 False
 ```
-
 
 That's a bug, I think.
 
@@ -393,7 +383,7 @@ That's a bug, I think.
 archive/issue_comments_005021.json:
 ```json
 {
-    "body": "PS: In addition, since there is a coercion from `QQ['y','x']` to `QQ['x','y']`, it is conceivable that the pushout of `QQ['y','x']` with `Frac(QQ['x'])['y']` should be `Frac(QQ['x'])['y']` as well. But it isn't:\n\n```\nsage: pushout(QQ['y','x'],Frac(QQ['x'])['y'])\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n\n/home/king/Projekte/MeatAxe/meataxe-2.2.4/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/categories/pushout.pyc in pushout(R, S)\n   3072                     if Rc[-1] in Sc:\n   3073                         if Sc[-1] in Rc:\n-> 3074                             raise CoercionException, (\"Ambiguous Base Extension\", R, S)\n   3075                         else:\n   3076                             all = Sc.pop() * all\n\nCoercionException: ('Ambiguous Base Extension', Multivariate Polynomial Ring in y, x over Rational Field, Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field)\n```\n",
+    "body": "PS: In addition, since there is a coercion from `QQ['y','x']` to `QQ['x','y']`, it is conceivable that the pushout of `QQ['y','x']` with `Frac(QQ['x'])['y']` should be `Frac(QQ['x'])['y']` as well. But it isn't:\n\n```\nsage: pushout(QQ['y','x'],Frac(QQ['x'])['y'])\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n\n/home/king/Projekte/MeatAxe/meataxe-2.2.4/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.1.rc1/local/lib/python2.6/site-packages/sage/categories/pushout.pyc in pushout(R, S)\n   3072                     if Rc[-1] in Sc:\n   3073                         if Sc[-1] in Rc:\n-> 3074                             raise CoercionException, (\"Ambiguous Base Extension\", R, S)\n   3075                         else:\n   3076                             all = Sc.pop() * all\n\nCoercionException: ('Ambiguous Base Extension', Multivariate Polynomial Ring in y, x over Rational Field, Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field)\n```",
     "created_at": "2011-08-02T13:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -423,13 +413,12 @@ CoercionException: ('Ambiguous Base Extension', Multivariate Polynomial Ring in 
 
 
 
-
 ---
 
 archive/issue_comments_005022.json:
 ```json
 {
-    "body": "Here is my plan for implementing a coercion of `P = QQ['x','y']` into `Q = Frac(QQ['x'])['y']`.\n\nSince conversion of P into Q works, we only need to make `Q._coerce_map_from_(P)` return True.\n\nLet p be an element of P. When converting p into Q, the multivariate polynomial p is transformed into a univeriate polynomial via p. This is done using `p._polynomial_(Q)`, which ultimately boils down to `Q(p.polynomial(P('y')))`:\n\n```\nsage: P = QQ['x','y']\nsage: p = P.gen(0)\nsage: Q = Frac(QQ['x'])['y']\nsage: Q(p.polynomial(P('y')))\nx\n```\n\n\n`p.polynomial(P('y')).parent()` lives in a stacked polynomial ring:\n\n```\nsage: p.polynomial(P('y')).parent()\nUnivariate Polynomial Ring in y over Univariate Polynomial Ring in x over Rational Field\n```\n\nThat stacked ring coerces into Q:\n\n```\nsage: Q.has_coerce_map_from(p.polynomial(P('y')).parent())\nTrue\n```\n\n\nConclusion: If we want to test whether a multivariate polynomial ring P coerces into a univariate polynomial ring Q in variable y, then we need to try and transform P into a *univariate* polynomial ring P' in variable y; here, we have `P'=QQ['x']['y']`. There is a coercion from P into Q if and only if there is a coercion from P' into Q.\n\nI already have a patch, but \"surprisingly\" the additional coercion yields some doctest errors in other places.",
+    "body": "Here is my plan for implementing a coercion of `P = QQ['x','y']` into `Q = Frac(QQ['x'])['y']`.\n\nSince conversion of P into Q works, we only need to make `Q._coerce_map_from_(P)` return True.\n\nLet p be an element of P. When converting p into Q, the multivariate polynomial p is transformed into a univeriate polynomial via p. This is done using `p._polynomial_(Q)`, which ultimately boils down to `Q(p.polynomial(P('y')))`:\n\n```\nsage: P = QQ['x','y']\nsage: p = P.gen(0)\nsage: Q = Frac(QQ['x'])['y']\nsage: Q(p.polynomial(P('y')))\nx\n```\n\n`p.polynomial(P('y')).parent()` lives in a stacked polynomial ring:\n\n```\nsage: p.polynomial(P('y')).parent()\nUnivariate Polynomial Ring in y over Univariate Polynomial Ring in x over Rational Field\n```\nThat stacked ring coerces into Q:\n\n```\nsage: Q.has_coerce_map_from(p.polynomial(P('y')).parent())\nTrue\n```\n\nConclusion: If we want to test whether a multivariate polynomial ring P coerces into a univariate polynomial ring Q in variable y, then we need to try and transform P into a *univariate* polynomial ring P' in variable y; here, we have `P'=QQ['x']['y']`. There is a coercion from P into Q if and only if there is a coercion from P' into Q.\n\nI already have a patch, but \"surprisingly\" the additional coercion yields some doctest errors in other places.",
     "created_at": "2011-08-02T14:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -452,21 +441,18 @@ sage: Q(p.polynomial(P('y')))
 x
 ```
 
-
 `p.polynomial(P('y')).parent()` lives in a stacked polynomial ring:
 
 ```
 sage: p.polynomial(P('y')).parent()
 Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Rational Field
 ```
-
 That stacked ring coerces into Q:
 
 ```
 sage: Q.has_coerce_map_from(p.polynomial(P('y')).parent())
 True
 ```
-
 
 Conclusion: If we want to test whether a multivariate polynomial ring P coerces into a univariate polynomial ring Q in variable y, then we need to try and transform P into a *univariate* polynomial ring P' in variable y; here, we have `P'=QQ['x']['y']`. There is a coercion from P into Q if and only if there is a coercion from P' into Q.
 
@@ -541,7 +527,7 @@ Changing status from new to needs_review.
 archive/issue_comments_005026.json:
 ```json
 {
-    "body": "Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by @simon-king-jena created at 2011-08-02 17:11:41\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
+    "body": "Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by @simon-king-jena created at 2011-08-02 17:11:41\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
     "created_at": "2011-08-02T17:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -563,7 +549,6 @@ I think I was able to solve the problem. With my patch applied on top of sage-4.
             y + x
 ```
 
-
 In order to avoid bidirectional coercions (that would break a lot of tests), I have
 
 ```
@@ -573,7 +558,6 @@ In order to avoid bidirectional coercions (that would break a lot of tests), I h
             sage: Q.base_ring() is P.remove_var(Q.variable_name())
             True
 ```
-
 
 The rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.
 
@@ -674,7 +658,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_005032.json:
 ```json
 {
-    "body": "Replying to [comment:14 saraedum]:\n> Looking at your patch, was `def univariate_ring(self, x):` added by purpose? \n\nGood question. I think it was meant as analogy to the method `univariate_polynomial` of multivariate polynomials. But really, it seems unneeded to have that method. Could probably be dropped, if you prefer (needs to be tested, though).",
+    "body": "Replying to [comment:14 saraedum]:\n> Looking at your patch, was `def univariate_ring(self, x):` added by purpose? \n\n\nGood question. I think it was meant as analogy to the method `univariate_polynomial` of multivariate polynomials. But really, it seems unneeded to have that method. Could probably be dropped, if you prefer (needs to be tested, though).",
     "created_at": "2011-09-21T13:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -685,6 +669,7 @@ archive/issue_comments_005032.json:
 
 Replying to [comment:14 saraedum]:
 > Looking at your patch, was `def univariate_ring(self, x):` added by purpose? 
+
 
 Good question. I think it was meant as analogy to the method `univariate_polynomial` of multivariate polynomials. But really, it seems unneeded to have that method. Could probably be dropped, if you prefer (needs to be tested, though).
 
@@ -789,7 +774,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_005038.json:
 ```json
 {
-    "body": "Replying to [ticket:813 nbruin]:\n> Apply \n\n> \n\n>  1. [attachment:trac813_univariate_coerce_from_multivariate.patch] \n\n>  1. [attachment:trac_813_review.2.patch] \n\n> \n\n> to the sage repository.\n\n? The attachment comment of the second file says *\"ignore this file\"*, and the \"patch\" is only 17 bytes in total...\n\nSo I guess the description should be updated, to apply the [attachment:trac_813_review.patch \"old\" reviewer patch].",
+    "body": "Replying to [ticket:813 nbruin]:\n> Apply \n\n\n> \n\n\n>  1. [attachment:trac813_univariate_coerce_from_multivariate.patch] \n\n\n>  2. [attachment:trac_813_review.2.patch] \n\n\n> \n\n\n> to the sage repository.\n\n\n? The attachment comment of the second file says *\"ignore this file\"*, and the \"patch\" is only 17 bytes in total...\n\nSo I guess the description should be updated, to apply the [attachment:trac_813_review.patch \"old\" reviewer patch].",
     "created_at": "2011-09-23T10:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
@@ -801,15 +786,21 @@ archive/issue_comments_005038.json:
 Replying to [ticket:813 nbruin]:
 > Apply 
 
+
 > 
+
 
 >  1. [attachment:trac813_univariate_coerce_from_multivariate.patch] 
 
->  1. [attachment:trac_813_review.2.patch] 
+
+>  2. [attachment:trac_813_review.2.patch] 
+
 
 > 
 
+
 > to the sage repository.
+
 
 ? The attachment comment of the second file says *"ignore this file"*, and the "patch" is only 17 bytes in total...
 

@@ -150,7 +150,7 @@ Changing assignee from tbd to mabshoff.
 archive/issue_comments_054592.json:
 ```json
 {
-    "body": "I have downloaded the spkg to my home directory:\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/patch/4ti2.p0.spkg\n\n\n\nIs there any special reason why the package is not under revision control?\n\n```\n[mvngu@mod mvngu]$ tar -jxf 4ti2.p0.spkg \n[mvngu@mod mvngu]$ cd 4ti2.p0/\n[mvngu@mod 4ti2.p0]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```\n",
+    "body": "I have downloaded the spkg to my home directory:\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/patch/4ti2.p0.spkg\n\n\n\nIs there any special reason why the package is not under revision control?\n\n```\n[mvngu@mod mvngu]$ tar -jxf 4ti2.p0.spkg \n[mvngu@mod mvngu]$ cd 4ti2.p0/\n[mvngu@mod 4ti2.p0]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```",
     "created_at": "2009-09-02T08:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6663",
     "type": "issue_comment",
@@ -175,7 +175,6 @@ Is there any special reason why the package is not under revision control?
 [mvngu@mod 4ti2.p0]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
-
 
 
 

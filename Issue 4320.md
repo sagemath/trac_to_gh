@@ -94,7 +94,7 @@ The code here looks pretty good. I think it's ready to merge except for one thin
 archive/issue_comments_031559.json:
 ```json
 {
-    "body": "Another thing: SAGE_ROOT can also easily be accessed and things like\n\n```\nrt = commands.getoutput(\"echo $SAGE_ROOT\")\n```\n\nare bad. Another thing is the hard coding of the executable name since one has to append \".exe\" on Cygwin for example.\n\nCheers,\n\nMichael",
+    "body": "Another thing: SAGE_ROOT can also easily be accessed and things like\n\n```\nrt = commands.getoutput(\"echo $SAGE_ROOT\")\n```\nare bad. Another thing is the hard coding of the executable name since one has to append \".exe\" on Cygwin for example.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-20T17:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ Another thing: SAGE_ROOT can also easily be accessed and things like
 ```
 rt = commands.getoutput("echo $SAGE_ROOT")
 ```
-
 are bad. Another thing is the hard coding of the executable name since one has to append ".exe" on Cygwin for example.
 
 Cheers,
@@ -122,7 +121,7 @@ Michael
 archive/issue_comments_031560.json:
 ```json
 {
-    "body": "Here's a session that illustrates several of the things you need to change\nin this patch, evidently:\n\n```\nsage: sage.misc.misc.SAGE_ROOT        # sage root dir\n'/home/was/build/sage-3.1.3.alpha3'\nsage: sage.misc.misc.SAGE_TMP         # location of sage tmp dir; deleted on sage exit\n'/home/was/.sage//temp/sage/21351/'\nsage: sage.misc.misc.tmp_filename()   # a temp filename, which you can use\n'/home/was/.sage//temp/sage/21351//tmp_0'\nsage: sage.misc.misc.tmp_dir()\n'/home/was/.sage/temp/sage/21351/dir_0'  # creates a temp directory for you\n```\n",
+    "body": "Here's a session that illustrates several of the things you need to change\nin this patch, evidently:\n\n```\nsage: sage.misc.misc.SAGE_ROOT        # sage root dir\n'/home/was/build/sage-3.1.3.alpha3'\nsage: sage.misc.misc.SAGE_TMP         # location of sage tmp dir; deleted on sage exit\n'/home/was/.sage//temp/sage/21351/'\nsage: sage.misc.misc.tmp_filename()   # a temp filename, which you can use\n'/home/was/.sage//temp/sage/21351//tmp_0'\nsage: sage.misc.misc.tmp_dir()\n'/home/was/.sage/temp/sage/21351/dir_0'  # creates a temp directory for you\n```",
     "created_at": "2008-10-20T19:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -147,13 +146,12 @@ sage: sage.misc.misc.tmp_dir()
 
 
 
-
 ---
 
 archive/issue_comments_031561.json:
 ```json
 {
-    "body": "Thanks for all these great comments. \nI have had the patch ready for a day or so now but am having trouble with the process. Problem: I run sage -t on linear_codes.py and code_constructions.py. They pass. sage -testall fails every time with this:\n\n\n```\n sage -t  devel/sage/sage/coding/linear_code.py              **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.2.alpha0/tmp/linear_code.py\", line 1950:\n    sage: C.spectrum(method=\"leon\")\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.2.alpha0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_44[10]>\", line 1, in <module>\n        C.spectrum(method=\"leon\")###line 1950:\n    sage: C.spectrum(method=\"leon\")\n      File \"/home/wdj/sagefiles/sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 2009, in spectrum\n        Wts[x[0]]=x[1]\n    IndexError: list assignment index out of range\n**********************************************************************\n```\n\nI cannot figure this one out.\n\nAny ideas?\n\nThe new patch is rebased on 3.2.alpha0 and does not (I'm pretty sure) depend on the other patch.",
+    "body": "Thanks for all these great comments. \nI have had the patch ready for a day or so now but am having trouble with the process. Problem: I run sage -t on linear_codes.py and code_constructions.py. They pass. sage -testall fails every time with this:\n\n```\n sage -t  devel/sage/sage/coding/linear_code.py              **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.2.alpha0/tmp/linear_code.py\", line 1950:\n    sage: C.spectrum(method=\"leon\")\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.2.alpha0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_44[10]>\", line 1, in <module>\n        C.spectrum(method=\"leon\")###line 1950:\n    sage: C.spectrum(method=\"leon\")\n      File \"/home/wdj/sagefiles/sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 2009, in spectrum\n        Wts[x[0]]=x[1]\n    IndexError: list assignment index out of range\n**********************************************************************\n```\nI cannot figure this one out.\n\nAny ideas?\n\nThe new patch is rebased on 3.2.alpha0 and does not (I'm pretty sure) depend on the other patch.",
     "created_at": "2008-10-23T00:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -164,7 +162,6 @@ archive/issue_comments_031561.json:
 
 Thanks for all these great comments. 
 I have had the patch ready for a day or so now but am having trouble with the process. Problem: I run sage -t on linear_codes.py and code_constructions.py. They pass. sage -testall fails every time with this:
-
 
 ```
  sage -t  devel/sage/sage/coding/linear_code.py              **********************************************************************
@@ -182,7 +179,6 @@ Exception raised:
     IndexError: list assignment index out of range
 **********************************************************************
 ```
-
 I cannot figure this one out.
 
 Any ideas?
@@ -235,7 +231,7 @@ I don't understand when this does not arise for sage -t and does for sage -testa
 archive/issue_comments_031564.json:
 ```json
 {
-    "body": "This patch also has this property for 3.1.4 (ie, patch applies cleanly, sage -testall fails for linear_code but sage -t passes for linear_code):\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.4$ ./sage -testall       \n\n<snip>\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/coding/linear_code.py\nTotal time for all tests: 5448.1 seconds\nPlease see /home/wdj/sagefiles/sage-3.1.4/tmp/test.log for the complete log from this test.\nwdj@hera:~/sagefiles/sage-3.1.4$ ./sage -t  devel/sage/sage/coding/linear_code.py\nsage -t  devel/sage/sage/coding/linear_code.py\n         [17.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.8 seconds\n\n```\n\nHas anyone seen this kind of behaviour before?",
+    "body": "This patch also has this property for 3.1.4 (ie, patch applies cleanly, sage -testall fails for linear_code but sage -t passes for linear_code):\n\n```\nwdj@hera:~/sagefiles/sage-3.1.4$ ./sage -testall       \n\n<snip>\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/coding/linear_code.py\nTotal time for all tests: 5448.1 seconds\nPlease see /home/wdj/sagefiles/sage-3.1.4/tmp/test.log for the complete log from this test.\nwdj@hera:~/sagefiles/sage-3.1.4$ ./sage -t  devel/sage/sage/coding/linear_code.py\nsage -t  devel/sage/sage/coding/linear_code.py\n         [17.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.8 seconds\n\n```\nHas anyone seen this kind of behaviour before?",
     "created_at": "2008-10-24T09:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -245,7 +241,6 @@ archive/issue_comments_031564.json:
 ```
 
 This patch also has this property for 3.1.4 (ie, patch applies cleanly, sage -testall fails for linear_code but sage -t passes for linear_code):
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.1.4$ ./sage -testall       
@@ -268,7 +263,6 @@ All tests passed!
 Total time for all tests: 17.8 seconds
 
 ```
-
 Has anyone seen this kind of behaviour before?
 
 
@@ -337,7 +331,7 @@ also based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch
 archive/issue_comments_031568.json:
 ```json
 {
-    "body": "Replying to [comment:6 wdj]:\n> I wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages?\n\nI am not really sure we want to support this code as long as it seemingly does not work correctly, i.e. smashing the stack and heaps of memory errors do not really bode well for that code. IIRC the code has been GPLed and sooner or later the code by rlm will cover most of the functionality, so I would highly recommend that we dump wtdist as soon as possible unless someone fixes it.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 wdj]:\n> I wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages?\n\n\nI am not really sure we want to support this code as long as it seemingly does not work correctly, i.e. smashing the stack and heaps of memory errors do not really bode well for that code. IIRC the code has been GPLed and sooner or later the code by rlm will cover most of the functionality, so I would highly recommend that we dump wtdist as soon as possible unless someone fixes it.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T14:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -348,6 +342,7 @@ archive/issue_comments_031568.json:
 
 Replying to [comment:6 wdj]:
 > I wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get "smash stack" and (memory errors resulting in?) traceback messages?
+
 
 I am not really sure we want to support this code as long as it seemingly does not work correctly, i.e. smashing the stack and heaps of memory errors do not really bode well for that code. IIRC the code has been GPLed and sooner or later the code by rlm will cover most of the functionality, so I would highly recommend that we dump wtdist as soon as possible unless someone fixes it.
 
@@ -384,7 +379,7 @@ archive/issue_comments_031569.json:
 archive/issue_comments_031570.json:
 ```json
 {
-    "body": "Replying to [comment:12 wdj]:\n> (1) I basically agree. But please note method=\"leon\" is not the default - only one option. Since Leon's code is hard to use directly, the sage interface for it is useful I hope.\n\nYes, I know :)\n\n> (2) I was not aware Robert Miller was working on weight distribution code. The Cython code he wrote for automorphism groups uses totally different ideas, so that would be a completely separate project. I would be very happy to be corrected on that though!\n\nOk, I am might be totally wrong here. In the end the hope is that the code can either be ported to Sage or fixed. Either way, I just want to avoid adding dependencies to crappy code where I will end up holding the short stick on the platforms I am porting to.\n\n> (3) I hope everything is okay for now though.\n\nYeah, let's hope someone does review this patch quickly then.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 wdj]:\n> (1) I basically agree. But please note method=\"leon\" is not the default - only one option. Since Leon's code is hard to use directly, the sage interface for it is useful I hope.\n\n\nYes, I know :)\n\n> (2) I was not aware Robert Miller was working on weight distribution code. The Cython code he wrote for automorphism groups uses totally different ideas, so that would be a completely separate project. I would be very happy to be corrected on that though!\n\n\nOk, I am might be totally wrong here. In the end the hope is that the code can either be ported to Sage or fixed. Either way, I just want to avoid adding dependencies to crappy code where I will end up holding the short stick on the platforms I am porting to.\n\n> (3) I hope everything is okay for now though.\n\n\nYeah, let's hope someone does review this patch quickly then.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T15:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -396,13 +391,16 @@ archive/issue_comments_031570.json:
 Replying to [comment:12 wdj]:
 > (1) I basically agree. But please note method="leon" is not the default - only one option. Since Leon's code is hard to use directly, the sage interface for it is useful I hope.
 
+
 Yes, I know :)
 
 > (2) I was not aware Robert Miller was working on weight distribution code. The Cython code he wrote for automorphism groups uses totally different ideas, so that would be a completely separate project. I would be very happy to be corrected on that though!
 
+
 Ok, I am might be totally wrong here. In the end the hope is that the code can either be ported to Sage or fixed. Either way, I just want to avoid adding dependencies to crappy code where I will end up holding the short stick on the platforms I am porting to.
 
 > (3) I hope everything is okay for now though.
+
 
 Yeah, let's hope someone does review this patch quickly then.
 
@@ -514,7 +512,7 @@ Michael: hope this is not an inconvenience.
 archive/issue_comments_031576.json:
 ```json
 {
-    "body": "Hi David,\n\nOne more thing to fix after all: code2leon creates the file \"output\" into the cwd:\n\n```\nsage: open(\"output\").close()\n```\n\nI will take another look to make sure there is no other case like that and then this can go in. Doctests pass for me.\n\nSorry for the tardy review :(\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nOne more thing to fix after all: code2leon creates the file \"output\" into the cwd:\n\n```\nsage: open(\"output\").close()\n```\nI will take another look to make sure there is no other case like that and then this can go in. Doctests pass for me.\n\nSorry for the tardy review :(\n\nCheers,\n\nMichael",
     "created_at": "2008-11-25T13:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
@@ -530,7 +528,6 @@ One more thing to fix after all: code2leon creates the file "output" into the cw
 ```
 sage: open("output").close()
 ```
-
 I will take another look to make sure there is no other case like that and then this can go in. Doctests pass for me.
 
 Sorry for the tardy review :(

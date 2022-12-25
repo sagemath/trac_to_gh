@@ -128,7 +128,7 @@ Changing priority from major to critical.
 archive/issue_comments_087612.json:
 ```json
 {
-    "body": "These are correct, but don't look that nice:\n\n```\nsage: latex(-(-x^2/-x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-(x^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-((-x)^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(x^2/-x^5)\n\\frac{-1}{x^{3}}\nsage: latex(x^2/(-x)^5)\n\\frac{-1}{x^{3}}\nsage: latex(-(-2*x^2/-x^5))\n\\frac{-2}{x^{3}}\nsage: latex(-(-x^2/(-3*x^5)))\n\\frac{-1}{3 \\, x^{3}}\n```\n",
+    "body": "These are correct, but don't look that nice:\n\n```\nsage: latex(-(-x^2/-x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-(x^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-((-x)^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(x^2/-x^5)\n\\frac{-1}{x^{3}}\nsage: latex(x^2/(-x)^5)\n\\frac{-1}{x^{3}}\nsage: latex(-(-2*x^2/-x^5))\n\\frac{-2}{x^{3}}\nsage: latex(-(-x^2/(-3*x^5)))\n\\frac{-1}{3 \\, x^{3}}\n```",
     "created_at": "2010-06-22T19:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
@@ -158,7 +158,6 @@ sage: latex(-(-x^2/(-3*x^5)))
 
 
 
-
 ---
 
 archive/issue_comments_087613.json:
@@ -182,7 +181,7 @@ archive/issue_comments_087613.json:
 archive/issue_comments_087614.json:
 ```json
 {
-    "body": "i just got a report that this is also broken for\n\n```\nsage: var('a b')\nsage: latex(-1 * (a/b))\n```\n\n\ncan we make this a blocker?",
+    "body": "i just got a report that this is also broken for\n\n```\nsage: var('a b')\nsage: latex(-1 * (a/b))\n```\n\ncan we make this a blocker?",
     "created_at": "2010-07-06T15:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
@@ -197,7 +196,6 @@ i just got a report that this is also broken for
 sage: var('a b')
 sage: latex(-1 * (a/b))
 ```
-
 
 can we make this a blocker?
 
@@ -298,7 +296,7 @@ Attachment [trac_9314-latex_mul.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_087620.json:
 ```json
 {
-    "body": "The pynac package at\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.p4.spkg\n\ncontains a fix for this. I want to keep this as easy to review as possible, so the only change is the following simple patch:\n\n\n```\ndiff --git a/ginac/mul.cpp b/ginac/mul.cpp\n--- a/ginac/mul.cpp\n+++ b/ginac/mul.cpp\n@@ -268,6 +268,10 @@\n \t\t\t     }\n \t\t\t} else {\n \t\t\t     if (numer.is_equal(_ex1) || numer.is_equal(_ex_1)) {\n+\t\t\t          const numeric &coeff = ex_to<numeric>(numer);\n+\t\t\t\t  if (coeff.is_equal(*_num_1_p) && !coeff.is_parent_pos_char()) {\n+\t\t\t\t        c.s<<\"-\";\n+\t\t\t\t  }\n \t\t\t         mul(others).eval().print(c);\n \t\t\t     } else {\n \t\t\t\t mul(numer,mul(others).eval()).hold().print(c);\n```\n\n\nattachment:trac_9314-latex_mul.patch has the doctest fixes for the Sage library.\n\nI will take care of the pretty printing issues from comment:3 later.",
+    "body": "The pynac package at\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.p4.spkg\n\ncontains a fix for this. I want to keep this as easy to review as possible, so the only change is the following simple patch:\n\n```\ndiff --git a/ginac/mul.cpp b/ginac/mul.cpp\n--- a/ginac/mul.cpp\n+++ b/ginac/mul.cpp\n@@ -268,6 +268,10 @@\n \t\t\t     }\n \t\t\t} else {\n \t\t\t     if (numer.is_equal(_ex1) || numer.is_equal(_ex_1)) {\n+\t\t\t          const numeric &coeff = ex_to<numeric>(numer);\n+\t\t\t\t  if (coeff.is_equal(*_num_1_p) && !coeff.is_parent_pos_char()) {\n+\t\t\t\t        c.s<<\"-\";\n+\t\t\t\t  }\n \t\t\t         mul(others).eval().print(c);\n \t\t\t     } else {\n \t\t\t\t mul(numer,mul(others).eval()).hold().print(c);\n```\n\nattachment:trac_9314-latex_mul.patch has the doctest fixes for the Sage library.\n\nI will take care of the pretty printing issues from comment:3 later.",
     "created_at": "2010-07-11T16:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
@@ -312,7 +310,6 @@ The pynac package at
 http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.p4.spkg
 
 contains a fix for this. I want to keep this as easy to review as possible, so the only change is the following simple patch:
-
 
 ```
 diff --git a/ginac/mul.cpp b/ginac/mul.cpp
@@ -330,7 +327,6 @@ diff --git a/ginac/mul.cpp b/ginac/mul.cpp
  			     } else {
  				 mul(numer,mul(others).eval()).hold().print(c);
 ```
-
 
 attachment:trac_9314-latex_mul.patch has the doctest fixes for the Sage library.
 

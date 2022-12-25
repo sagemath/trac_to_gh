@@ -3,7 +3,7 @@
 archive/issues_009485.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  sage-combinat @rlmill\n\nKeywords: strongly connected components\n\nGraphs produced with strongly_connected_components_digraph had no\nedges in them due to a typo in the code:\n\n\n```\n    sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})\n    sage: scc_digraph = g.strongly_connected_components_digraph()\n    sage: scc_digraph.vertices()\n    [{0}, {3}, {1, 2}]\n    sage: scc_digraph.edges()\n    []\n```\n\n\nAfter this patch, the result is more likely to be correct:\n\n\n```\n    [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9485\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  sage-combinat @rlmill\n\nKeywords: strongly connected components\n\nGraphs produced with strongly_connected_components_digraph had no\nedges in them due to a typo in the code:\n\n```\n    sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})\n    sage: scc_digraph = g.strongly_connected_components_digraph()\n    sage: scc_digraph.vertices()\n    [{0}, {3}, {1, 2}]\n    sage: scc_digraph.edges()\n    []\n```\n\nAfter this patch, the result is more likely to be correct:\n\n```\n    [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9485\n\n",
     "created_at": "2010-07-12T18:55:21Z",
     "labels": [
         "component: graph theory",
@@ -25,7 +25,6 @@ Keywords: strongly connected components
 Graphs produced with strongly_connected_components_digraph had no
 edges in them due to a typo in the code:
 
-
 ```
     sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})
     sage: scc_digraph = g.strongly_connected_components_digraph()
@@ -35,14 +34,11 @@ edges in them due to a typo in the code:
     []
 ```
 
-
 After this patch, the result is more likely to be correct:
-
 
 ```
     [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9485

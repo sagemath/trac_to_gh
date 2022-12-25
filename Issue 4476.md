@@ -70,7 +70,7 @@ Sage builds and all tests pass.
 archive/issue_comments_032993.json:
 ```json
 {
-    "body": "Spkg and patch look good to me. The is one tiny reviewer patch for the following failure:\n\n```\nsage -t -long devel/sage/sage/interfaces/gap.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/interfaces/gap.py\", line 262:\n    sage: g._next_var_name()\nExpected:\n    '$sage5'\nGot:\n    '$sage3'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Spkg and patch look good to me. The is one tiny reviewer patch for the following failure:\n\n```\nsage -t -long devel/sage/sage/interfaces/gap.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/interfaces/gap.py\", line 262:\n    sage: g._next_var_name()\nExpected:\n    '$sage5'\nGot:\n    '$sage3'\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T09:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4476",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ Got:
     '$sage3'
 **********************************************************************
 ```
-
 
 Cheers,
 

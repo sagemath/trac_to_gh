@@ -3,7 +3,7 @@
 archive/issues_003564.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
     "created_at": "2008-07-06T19:02:13Z",
     "labels": [
         "component: calculus"
@@ -21,7 +21,6 @@ The attached patch works and speeds up the sage import from between 0.1 and 0.5 
 
 NOTE: It is necessary to fix a bug in sympy first.  
 
-
 ```
 11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to
 11:57 < wstein>             try:
@@ -32,7 +31,6 @@ NOTE: It is necessary to fix a bug in sympy first.
 11:58 < wstein> Maybe you already did that?
 11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3564
 
@@ -68,7 +66,7 @@ after applying the startuptime patch: #3559
 archive/issue_comments_025133.json:
 ```json
 {
-    "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by @williamstein created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
+    "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by @williamstein created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```",
     "created_at": "2008-07-06T19:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
@@ -81,7 +79,6 @@ Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sag
 
 This bug is fixed in the new version of sympy:
 
-
 ```
 12:01 < ondrej> now it is not
 12:01 < ondrej> we fixed that in 0.5.15
@@ -90,7 +87,6 @@ This bug is fixed in the new version of sympy:
 12:02 < ondrej> (important sage<-> sympy bug)
 12:02 < ondrej> so when I release, I'll create a spkg
 ```
-
 
 
 

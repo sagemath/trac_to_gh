@@ -3,7 +3,7 @@
 archive/issues_002097.json:
 ```json
 {
-    "body": "Assignee: @bobmoretti\n\n\n```\nplot(x^2, (x, -10, 10)).show(aspect_ratio=1)\n```\n\n\noutputs a figure which is wide and short. It should be skinny and tall.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2097\n\n",
+    "body": "Assignee: @bobmoretti\n\n```\nplot(x^2, (x, -10, 10)).show(aspect_ratio=1)\n```\n\noutputs a figure which is wide and short. It should be skinny and tall.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2097\n\n",
     "created_at": "2008-02-08T02:04:14Z",
     "labels": [
         "component: graphics",
@@ -18,11 +18,9 @@ archive/issues_002097.json:
 ```
 Assignee: @bobmoretti
 
-
 ```
 plot(x^2, (x, -10, 10)).show(aspect_ratio=1)
 ```
-
 
 outputs a figure which is wide and short. It should be skinny and tall.
 

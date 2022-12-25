@@ -3,7 +3,7 @@
 archive/issues_001382.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWe have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\n\nbut we should have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
+    "body": "Assignee: @williamstein\n\nWe have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\nbut we should have\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
     "created_at": "2007-12-03T17:09:37Z",
     "labels": [
         "component: interfaces",
@@ -20,23 +20,19 @@ Assignee: @williamstein
 
 We have
 
-
 ```
 sage: n = matrix(QQ, 3, range(9))
 sage: n._mathematica_init_()
 '{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'
 ```
 
-
 but we should have
-
 
 ```
 sage: n = matrix(QQ, 3, range(9))
 sage: n._mathematica_init_()
 '{{0,1,2},{3,4,5},{6,7,8}}'
 ```
-
 
 
 
@@ -195,7 +191,7 @@ Attachment [combined_1382.patch](tarball://root/attachments/some-uuid/ticket1382
 archive/issue_comments_008842.json:
 ```json
 {
-    "body": "This will not work, since it does not appear to be recursive.  For example:\n\n\n```\nsage: var('x, y, z, b')\n(x, y, z, b)\nsage: f = sin(x^2) + y^z\nsage: f\ny^z + sin(x^2)\nsage: f._mathematica_init_()\n'(Sin[(x) ^ (2)]) + ((y) ^ (z))'\nsage: M = matrix(1, 2, [f, f^2]); M\n[    y^z + sin(x^2) (y^z + sin(x^2))^2]\n```\n\n\nAlso, please post a unified patch making it easy to see just the total changes.",
+    "body": "This will not work, since it does not appear to be recursive.  For example:\n\n```\nsage: var('x, y, z, b')\n(x, y, z, b)\nsage: f = sin(x^2) + y^z\nsage: f\ny^z + sin(x^2)\nsage: f._mathematica_init_()\n'(Sin[(x) ^ (2)]) + ((y) ^ (z))'\nsage: M = matrix(1, 2, [f, f^2]); M\n[    y^z + sin(x^2) (y^z + sin(x^2))^2]\n```\n\nAlso, please post a unified patch making it easy to see just the total changes.",
     "created_at": "2008-02-17T01:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -205,7 +201,6 @@ archive/issue_comments_008842.json:
 ```
 
 This will not work, since it does not appear to be recursive.  For example:
-
 
 ```
 sage: var('x, y, z, b')
@@ -218,7 +213,6 @@ sage: f._mathematica_init_()
 sage: M = matrix(1, 2, [f, f^2]); M
 [    y^z + sin(x^2) (y^z + sin(x^2))^2]
 ```
-
 
 Also, please post a unified patch making it easy to see just the total changes.
 
@@ -287,7 +281,7 @@ Is _mathematica_init_ guaranteed not to require Mathematica?  If not, some more 
 archive/issue_comments_008846.json:
 ```json
 {
-    "body": "> Is _mathematica_init_ guaranteed not to require Mathematica? \n\nYes.  It returns a string is must not call Mathematica. \n\nWilliam",
+    "body": "> Is _mathematica_init_ guaranteed not to require Mathematica? \n\n\nYes.  It returns a string is must not call Mathematica. \n\nWilliam",
     "created_at": "2008-02-23T01:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -297,6 +291,7 @@ archive/issue_comments_008846.json:
 ```
 
 > Is _mathematica_init_ guaranteed not to require Mathematica? 
+
 
 Yes.  It returns a string is must not call Mathematica. 
 

@@ -3,7 +3,7 @@
 archive/issues_001929.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/5e650e35bd354c17#\n\n```\nWow!  That's all very impressive actually.   It would be great if you\ncould add the above examples to the tutorials for AA and QQbar (i.e.,\nthe tops of the relevant code files).   Nice.\n\n -- William \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1929\n\n",
+    "body": "Assignee: cwitty\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/5e650e35bd354c17#\n\n```\nWow!  That's all very impressive actually.   It would be great if you\ncould add the above examples to the tutorials for AA and QQbar (i.e.,\nthe tops of the relevant code files).   Nice.\n\n -- William \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1929\n\n",
     "created_at": "2008-01-25T22:15:03Z",
     "labels": [
         "component: algebraic geometry",
@@ -28,7 +28,6 @@ the tops of the relevant code files).   Nice.
 
  -- William 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1929

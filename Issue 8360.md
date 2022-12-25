@@ -110,7 +110,7 @@ Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360
 archive/issue_comments_074578.json:
 ```json
 {
-    "body": "There seems to be a problem on a 64bit machine. After installing the spkg, the following commands will cause Sage to segfault:\n\n```\nsage: W = CoxeterGroup([\"H\",4])\nsage: S = semigroupe.AutomaticSemigroup(W.semigroup_generators(), W.one(), category = FiniteCoxeterGroups())\nsage: S.cardinality()\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\n...\n```\n\n\nThe problem seems to be with compiling Semigroupe on a 64bit machine. After installing the package, the following segfaults:\n\n```\nkarkwa: cd $SAGE_ROOT/local/bin\nkarkwa: Semigroupe\nkarkwa: ./Semigroupe\nSegmentation fault\nkarkwa: ./SelfContainedTest \nToto\na | 2  3  1 \nb | 2  1  3 \nc | 1  2  1 \n\nSegmentation fault\nkarkwa: ./SemigroupeModuleTest \n\na | 2  1 \nb | 1  1 \n\nSegmentation fault \n```\n\nI think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.",
+    "body": "There seems to be a problem on a 64bit machine. After installing the spkg, the following commands will cause Sage to segfault:\n\n```\nsage: W = CoxeterGroup([\"H\",4])\nsage: S = semigroupe.AutomaticSemigroup(W.semigroup_generators(), W.one(), category = FiniteCoxeterGroups())\nsage: S.cardinality()\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\n...\n```\n\nThe problem seems to be with compiling Semigroupe on a 64bit machine. After installing the package, the following segfaults:\n\n```\nkarkwa: cd $SAGE_ROOT/local/bin\nkarkwa: Semigroupe\nkarkwa: ./Semigroupe\nSegmentation fault\nkarkwa: ./SelfContainedTest \nToto\na | 2  3  1 \nb | 2  1  3 \nc | 1  2  1 \n\nSegmentation fault\nkarkwa: ./SemigroupeModuleTest \n\na | 2  1 \nb | 1  1 \n\nSegmentation fault \n```\nI think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.",
     "created_at": "2010-05-11T20:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ sage: S.cardinality()
 Unhandled SIGSEGV: A segmentation fault occured in Sage.
 ...
 ```
-
 
 The problem seems to be with compiling Semigroupe on a 64bit machine. After installing the package, the following segfaults:
 
@@ -152,7 +151,6 @@ b | 1  1
 
 Segmentation fault 
 ```
-
 I think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.
 
 
@@ -245,7 +243,7 @@ In case this helps track down the issue: things seem to be working correctly in 
 archive/issue_comments_074581.json:
 ```json
 {
-    "body": "> I think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.\n\nThose are little self contained test programs we had written with Florent to understand how semigroupe was working. Yes, they eventually should be turned into test suites, and run from `spkg-check`.",
+    "body": "> I think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.\n\n\nThose are little self contained test programs we had written with Florent to understand how semigroupe was working. Yes, they eventually should be turned into test suites, and run from `spkg-check`.",
     "created_at": "2010-05-26T19:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -255,6 +253,7 @@ archive/issue_comments_074581.json:
 ```
 
 > I think that the two test suites (I think they are test suites...) should be run by the `spkg-check` script.
+
 
 Those are little self contained test programs we had written with Florent to understand how semigroupe was working. Yes, they eventually should be turned into test suites, and run from `spkg-check`.
 
@@ -332,7 +331,7 @@ Cheers,
 archive/issue_comments_074585.json:
 ```json
 {
-    "body": "Replying to [comment:12 nthiery]:\n> Great, thanks S\u00e9bastien for taking care of this!\n> \n> The next step is actually just to make a branch out of the patch.\n\nyou mean a git branch?\n\nwhich patch? is it finite_semigroup-nt.patch ?\n\nI don't see how this patch uses semigroupe.\n\n> I am not sure about actually getting this branch into Sage until \n> Semigroupe will be fixed one way or the other to support several \n> semigroups simultaneously.\n\nI think I don't agree. I think the goal of the actual ticket #8360 is to make the actual semigroup into sage as it is. semigroupe was written for something no? Let's first make this available!\n\nThen I suggest to open a ticket showing with sage command line code illustrating how the bug for creating two semigroup simultaneously is obtained. The new ticket would ask for an upstream fix.\n\nS\u00e9bastien",
+    "body": "Replying to [comment:12 nthiery]:\n> Great, thanks S\u00e9bastien for taking care of this!\n> \n> The next step is actually just to make a branch out of the patch.\n\n\nyou mean a git branch?\n\nwhich patch? is it finite_semigroup-nt.patch ?\n\nI don't see how this patch uses semigroupe.\n\n> I am not sure about actually getting this branch into Sage until \n> Semigroupe will be fixed one way or the other to support several \n> semigroups simultaneously.\n\n\nI think I don't agree. I think the goal of the actual ticket #8360 is to make the actual semigroup into sage as it is. semigroupe was written for something no? Let's first make this available!\n\nThen I suggest to open a ticket showing with sage command line code illustrating how the bug for creating two semigroup simultaneously is obtained. The new ticket would ask for an upstream fix.\n\nS\u00e9bastien",
     "created_at": "2014-02-06T13:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -346,6 +345,7 @@ Replying to [comment:12 nthiery]:
 > 
 > The next step is actually just to make a branch out of the patch.
 
+
 you mean a git branch?
 
 which patch? is it finite_semigroup-nt.patch ?
@@ -355,6 +355,7 @@ I don't see how this patch uses semigroupe.
 > I am not sure about actually getting this branch into Sage until 
 > Semigroupe will be fixed one way or the other to support several 
 > semigroups simultaneously.
+
 
 I think I don't agree. I think the goal of the actual ticket #8360 is to make the actual semigroup into sage as it is. semigroupe was written for something no? Let's first make this available!
 
@@ -369,7 +370,7 @@ Sébastien
 archive/issue_comments_074586.json:
 ```json
 {
-    "body": "Replying to [comment:13 slabbe]:\n> Replying to [comment:12 nthiery]:\n> > The next step is actually just to make a branch out of the patch.\n> you mean a git branch?\n\nYup.\n\n> which patch? is it finite_semigroup-nt.patch ?\n> I don't see how this patch uses semigroupe.\n\ntrac_8360_semigroupe-interface-nt.patch\n\n> > I am not sure about actually getting this branch into Sage until \n> > Semigroupe will be fixed one way or the other to support several \n> > semigroups simultaneously.\n> I think I don't agree. I think the goal of the actual ticket #8360\n> is to make the actual semigroup into sage as it is. semigroupe was\n> written for something no? Let's first make this available!\n\nIndeed, the interface was written for something. But in practice, even\nif I spent quite some time on it, I am actually seldom using it\nbecause that misfeature is making it relatively unusable (at least in\nmy use-cases).\n\n> Then I suggest to open a ticket showing with sage command line code\n> illustrating how the bug for creating two semigroup simultaneously\n> is obtained. The new ticket would ask for an upstream fix.\n\nThat's an option. If you are convinced that:\n\n- At some point not to far in the future the bug will be fixed upstream (upstream meaning possibly us taking the time to do the fix).\n\n- The current code won't need serious interface change then.\n\nThen let's go ahead. I'd love to have this code always under my fingertips. Otherwise I am a bit reluctant to put in Sage some code that we might need to remove (because unused) or change a\nlot later on.\n\nAt the end of the day, this would actually be best handled by putting\nthe interface code in the spkg and not in the Sage library. I haven't\nchecked how hard/easy it would be to handle.\n\nCheers,\n                            Nicolas",
+    "body": "Replying to [comment:13 slabbe]:\n> Replying to [comment:12 nthiery]:\n> > The next step is actually just to make a branch out of the patch.\n\n> you mean a git branch?\n\nYup.\n\n> which patch? is it finite_semigroup-nt.patch ?\n> I don't see how this patch uses semigroupe.\n\n\ntrac_8360_semigroupe-interface-nt.patch\n\n> > I am not sure about actually getting this branch into Sage until \n> > Semigroupe will be fixed one way or the other to support several \n> > semigroups simultaneously.\n\n> I think I don't agree. I think the goal of the actual ticket #8360\n> is to make the actual semigroup into sage as it is. semigroupe was\n> written for something no? Let's first make this available!\n\n\nIndeed, the interface was written for something. But in practice, even\nif I spent quite some time on it, I am actually seldom using it\nbecause that misfeature is making it relatively unusable (at least in\nmy use-cases).\n\n> Then I suggest to open a ticket showing with sage command line code\n> illustrating how the bug for creating two semigroup simultaneously\n> is obtained. The new ticket would ask for an upstream fix.\n\n\nThat's an option. If you are convinced that:\n\n- At some point not to far in the future the bug will be fixed upstream (upstream meaning possibly us taking the time to do the fix).\n\n- The current code won't need serious interface change then.\n\nThen let's go ahead. I'd love to have this code always under my fingertips. Otherwise I am a bit reluctant to put in Sage some code that we might need to remove (because unused) or change a\nlot later on.\n\nAt the end of the day, this would actually be best handled by putting\nthe interface code in the spkg and not in the Sage library. I haven't\nchecked how hard/easy it would be to handle.\n\nCheers,\n                            Nicolas",
     "created_at": "2014-02-06T14:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
@@ -381,6 +382,7 @@ archive/issue_comments_074586.json:
 Replying to [comment:13 slabbe]:
 > Replying to [comment:12 nthiery]:
 > > The next step is actually just to make a branch out of the patch.
+
 > you mean a git branch?
 
 Yup.
@@ -388,14 +390,17 @@ Yup.
 > which patch? is it finite_semigroup-nt.patch ?
 > I don't see how this patch uses semigroupe.
 
+
 trac_8360_semigroupe-interface-nt.patch
 
 > > I am not sure about actually getting this branch into Sage until 
 > > Semigroupe will be fixed one way or the other to support several 
 > > semigroups simultaneously.
+
 > I think I don't agree. I think the goal of the actual ticket #8360
 > is to make the actual semigroup into sage as it is. semigroupe was
 > written for something no? Let's first make this available!
+
 
 Indeed, the interface was written for something. But in practice, even
 if I spent quite some time on it, I am actually seldom using it
@@ -405,6 +410,7 @@ my use-cases).
 > Then I suggest to open a ticket showing with sage command line code
 > illustrating how the bug for creating two semigroup simultaneously
 > is obtained. The new ticket would ask for an upstream fix.
+
 
 That's an option. If you are convinced that:
 

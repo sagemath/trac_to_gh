@@ -243,7 +243,7 @@ archive/issue_events_018841.json:
 archive/issue_comments_068374.json:
 ```json
 {
-    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7880",
     "type": "issue_comment",
@@ -257,7 +257,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -287,7 +286,7 @@ replaces previous patch
 archive/issue_comments_068376.json:
 ```json
 {
-    "body": "Looks good to me. I've made some tiny doctest fixes, and uploaded a new version of the patch, still with roed's user stamp on it. This applies cleanly to 4.3.4.rc0, if you apply the patches in the following order:\n\n```\n$ sage -hg qseries\ntrac_8218_fixes_434alpha1.patch\ntrac_8332_givaro_python.patch\ntrac_8332_reviewer.patch\ntrac_7880-sets_with_partial_maps.patch\n```\n\n\n\non top of the patches at #8218 and #8332.",
+    "body": "Looks good to me. I've made some tiny doctest fixes, and uploaded a new version of the patch, still with roed's user stamp on it. This applies cleanly to 4.3.4.rc0, if you apply the patches in the following order:\n\n```\n$ sage -hg qseries\ntrac_8218_fixes_434alpha1.patch\ntrac_8332_givaro_python.patch\ntrac_8332_reviewer.patch\ntrac_7880-sets_with_partial_maps.patch\n```\n\n\non top of the patches at #8218 and #8332.",
     "created_at": "2010-03-17T21:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7880",
     "type": "issue_comment",
@@ -305,7 +304,6 @@ trac_8332_givaro_python.patch
 trac_8332_reviewer.patch
 trac_7880-sets_with_partial_maps.patch
 ```
-
 
 
 on top of the patches at #8218 and #8332.

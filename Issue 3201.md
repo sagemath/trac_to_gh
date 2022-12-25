@@ -3,7 +3,7 @@
 archive/issues_003201.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\nA subtle problem with \"%latex\" cells is illustrated at\n<http://www-maths.swan.ac.uk/staff/fwc/sage-notebook-latex.tiff>\n\nWhen \"\\\\\" occurs at the end of a line it seems to gooble the first\ncharacter in the next line.\n\nI'm using Mac OS X 10.4.11, and the same thing happens both Firefox\nand Safari.\n\nFrancis\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3201\n\n",
+    "body": "Assignee: boothby\n\n```\n\nA subtle problem with \"%latex\" cells is illustrated at\n<http://www-maths.swan.ac.uk/staff/fwc/sage-notebook-latex.tiff>\n\nWhen \"\\\\\" occurs at the end of a line it seems to gooble the first\ncharacter in the next line.\n\nI'm using Mac OS X 10.4.11, and the same thing happens both Firefox\nand Safari.\n\nFrancis\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3201\n\n",
     "created_at": "2008-05-14T01:18:07Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_003201.json:
 ```
 Assignee: boothby
 
-
 ```
 
 A subtle problem with "%latex" cells is illustrated at
@@ -32,7 +31,6 @@ and Safari.
 
 Francis
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3201
 
@@ -65,7 +63,7 @@ interesting bug, and definitely something that needs to get fixed.
 archive/issue_comments_022071.json:
 ```json
 {
-    "body": "This is caused by the line\n\n\n```\n        I = I.replace('\\\\\\n','')\n```\n\n\nin worksheet.py.  This should be cleaner to fix after some other changes I have planned.  This is here just as a reminder to me.",
+    "body": "This is caused by the line\n\n```\n        I = I.replace('\\\\\\n','')\n```\n\nin worksheet.py.  This should be cleaner to fix after some other changes I have planned.  This is here just as a reminder to me.",
     "created_at": "2009-01-19T22:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
@@ -76,11 +74,9 @@ archive/issue_comments_022071.json:
 
 This is caused by the line
 
-
 ```
         I = I.replace('\\\n','')
 ```
-
 
 in worksheet.py.  This should be cleaner to fix after some other changes I have planned.  This is here just as a reminder to me.
 

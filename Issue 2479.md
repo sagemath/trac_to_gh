@@ -3,7 +3,7 @@
 archive/issues_002479.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: x = polygen(RDF,'x')\nsage: (-2*x^2 - 1).factor()\n[]\n```\n\n\ndegree 4?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2479\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: x = polygen(RDF,'x')\nsage: (-2*x^2 - 1).factor()\n[]\n```\n\ndegree 4?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2479\n\n",
     "created_at": "2008-03-12T00:49:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,13 +18,11 @@ archive/issues_002479.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: x = polygen(RDF,'x')
 sage: (-2*x^2 - 1).factor()
 []
 ```
-
 
 degree 4?
 

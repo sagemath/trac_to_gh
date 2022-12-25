@@ -3,7 +3,7 @@
 archive/issues_003886.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nKeywords: digraphs, graphs, graphics\n\nSee the attached images for the results of these commands (images produced by sagenb.org).\n\n\n```\nDiGraph({0:[1]}).show()\n```\n\n\n\n```\nDiGraph({0:[1], 1:[2]}).show()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3886\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: digraphs, graphs, graphics\n\nSee the attached images for the results of these commands (images produced by sagenb.org).\n\n```\nDiGraph({0:[1]}).show()\n```\n\n```\nDiGraph({0:[1], 1:[2]}).show()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3886\n\n",
     "created_at": "2008-08-18T03:53:19Z",
     "labels": [
         "component: graph theory",
@@ -22,17 +22,13 @@ Keywords: digraphs, graphs, graphics
 
 See the attached images for the results of these commands (images produced by sagenb.org).
 
-
 ```
 DiGraph({0:[1]}).show()
 ```
 
-
-
 ```
 DiGraph({0:[1], 1:[2]}).show()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3886
 

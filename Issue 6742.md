@@ -59,7 +59,7 @@ Serve main.css with MIME type text/css.
 archive/issue_comments_055144.json:
 ```json
 {
-    "body": "With the attached patch, the notebook server now serves `main.css` with the MIME type `text/css`.  This placates Chrome, which now renders worksheets and the worksheet list properly.\n\nIn particular, the Web Inspector's console no longer contains the line\n\n```\nResource interpreted as stylesheet but transferred with MIME type text/plain.\n```\n\nabout `main.css`.  There are a similar messages\n\n```\nResource interpreted as script but transferred with MIME type text/plain.\nResource interpreted as other but transferred with MIME type text/x-javascript.\n```\n\nfor `main.js` and the jsMath extensions.  It seems that WebKit / Chrome lets this pass, for now.",
+    "body": "With the attached patch, the notebook server now serves `main.css` with the MIME type `text/css`.  This placates Chrome, which now renders worksheets and the worksheet list properly.\n\nIn particular, the Web Inspector's console no longer contains the line\n\n```\nResource interpreted as stylesheet but transferred with MIME type text/plain.\n```\nabout `main.css`.  There are a similar messages\n\n```\nResource interpreted as script but transferred with MIME type text/plain.\nResource interpreted as other but transferred with MIME type text/x-javascript.\n```\nfor `main.js` and the jsMath extensions.  It seems that WebKit / Chrome lets this pass, for now.",
     "created_at": "2009-08-14T06:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_comment",
@@ -75,14 +75,12 @@ In particular, the Web Inspector's console no longer contains the line
 ```
 Resource interpreted as stylesheet but transferred with MIME type text/plain.
 ```
-
 about `main.css`.  There are a similar messages
 
 ```
 Resource interpreted as script but transferred with MIME type text/plain.
 Resource interpreted as other but transferred with MIME type text/x-javascript.
 ```
-
 for `main.js` and the jsMath extensions.  It seems that WebKit / Chrome lets this pass, for now.
 
 

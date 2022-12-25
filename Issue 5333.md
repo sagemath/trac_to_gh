@@ -92,7 +92,7 @@ archive/issue_events_012435.json:
 archive/issue_comments_041002.json:
 ```json
 {
-    "body": "The pynac package already deletes the existing libraries before installing new ones. The errors mentioned on the linked threads were seen because the sage library was not updated properly.\n\nHere are the relevant lines from spkg-install in pynac-0.1.2.spkg, which is included in Sage-3.3:\n\n```\ninstall_pynac()\n{\n    rm ${SAGE_LOCAL}/lib/*ginac*\n    rm ${SAGE_LOCAL}/lib/*pynac*\n    rm -rf ${SAGE_LOCAL}/include/ginac\n    rm -rf ${SAGE_LOCAL}/include/pynac\n    cd ${PYNACDIR}\n    $MAKE install\n    if [ $? -ne 0 ]; then\n        echo \"Error installing pynac.\"\n        exit 1\n    fi\n    cd ${WORKDIR} \n}\n```\n\n\nI suggest resolving this as invalid.",
+    "body": "The pynac package already deletes the existing libraries before installing new ones. The errors mentioned on the linked threads were seen because the sage library was not updated properly.\n\nHere are the relevant lines from spkg-install in pynac-0.1.2.spkg, which is included in Sage-3.3:\n\n```\ninstall_pynac()\n{\n    rm ${SAGE_LOCAL}/lib/*ginac*\n    rm ${SAGE_LOCAL}/lib/*pynac*\n    rm -rf ${SAGE_LOCAL}/include/ginac\n    rm -rf ${SAGE_LOCAL}/include/pynac\n    cd ${PYNACDIR}\n    $MAKE install\n    if [ $? -ne 0 ]; then\n        echo \"Error installing pynac.\"\n        exit 1\n    fi\n    cd ${WORKDIR} \n}\n```\n\nI suggest resolving this as invalid.",
     "created_at": "2009-02-26T11:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
@@ -121,7 +121,6 @@ install_pynac()
     cd ${WORKDIR} 
 }
 ```
-
 
 I suggest resolving this as invalid.
 
@@ -219,7 +218,7 @@ archive/issue_events_012437.json:
 archive/issue_comments_041006.json:
 ```json
 {
-    "body": "Replying to [comment:3 burcin]:\n> I need to learn how to use trac. \n\n:)\n\nBut you are right -> invalid.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 burcin]:\n> I need to learn how to use trac. \n\n\n:)\n\nBut you are right -> invalid.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-26T11:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
@@ -230,6 +229,7 @@ archive/issue_comments_041006.json:
 
 Replying to [comment:3 burcin]:
 > I need to learn how to use trac. 
+
 
 :)
 

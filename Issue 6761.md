@@ -3,7 +3,7 @@
 archive/issues_006761.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nThis is inconsistent with solve_right and contrary to the documentation. \n\n\n```\nsage: A = random_matrix(ZZ, 5)\nsage: b = vector(ZZ, range(5))\nsage: A.solve_left(b)\n[    47/630  -233/1170       2/65     34/819 -5269/8190]\nsage: A.solve_left(b).parent()\nFull MatrixSpace of 1 by 5 dense matrices over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6761\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nThis is inconsistent with solve_right and contrary to the documentation. \n\n```\nsage: A = random_matrix(ZZ, 5)\nsage: b = vector(ZZ, range(5))\nsage: A.solve_left(b)\n[    47/630  -233/1170       2/65     34/819 -5269/8190]\nsage: A.solve_left(b).parent()\nFull MatrixSpace of 1 by 5 dense matrices over Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6761\n\n",
     "created_at": "2009-08-16T09:13:10Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ CC:  @jasongrout
 
 This is inconsistent with solve_right and contrary to the documentation. 
 
-
 ```
 sage: A = random_matrix(ZZ, 5)
 sage: b = vector(ZZ, range(5))
@@ -31,7 +30,6 @@ sage: A.solve_left(b)
 sage: A.solve_left(b).parent()
 Full MatrixSpace of 1 by 5 dense matrices over Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6761
 

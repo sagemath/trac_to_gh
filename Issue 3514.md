@@ -79,7 +79,7 @@ Attachment [free-modules.patch](tarball://root/attachments/some-uuid/ticket3514/
 archive/issue_comments_024706.json:
 ```json
 {
-    "body": "Review by John Cremona:\n\n1.  I read through the code fairly carefully, and was very impressed by the thought which has gone into this.  There are a few typos in docstrings but nothing serious.\n2.  I tried applying the patch to 3.0.4.alpha0 but it failed:\n\n```\napplying /home/jec/free-modules.patch\npatching file sage/modules/free_module.py\nHunk #4 FAILED at 280\nHunk #52 FAILED at 3200\nHunk #54 FAILED at 3310\nHunk #82 FAILED at 4430\nHunk #95 FAILED at 5053\n5 out of 96 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\nabort: patch failed to apply\n```\n\n\nI expect that this is because it is based on a different release.  If I get time I'll try it on 3.0.3, but it would be much better if the author could re-base it!\n\nShould we not have a requirement that the base version for posted patches whould always be specified (like I do...)?",
+    "body": "Review by John Cremona:\n\n1.  I read through the code fairly carefully, and was very impressed by the thought which has gone into this.  There are a few typos in docstrings but nothing serious.\n2.  I tried applying the patch to 3.0.4.alpha0 but it failed:\n\n```\napplying /home/jec/free-modules.patch\npatching file sage/modules/free_module.py\nHunk #4 FAILED at 280\nHunk #52 FAILED at 3200\nHunk #54 FAILED at 3310\nHunk #82 FAILED at 4430\nHunk #95 FAILED at 5053\n5 out of 96 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\nabort: patch failed to apply\n```\n\nI expect that this is because it is based on a different release.  If I get time I'll try it on 3.0.3, but it would be much better if the author could re-base it!\n\nShould we not have a requirement that the base version for posted patches whould always be specified (like I do...)?",
     "created_at": "2008-06-29T17:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ Hunk #95 FAILED at 5053
 5 out of 96 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej
 abort: patch failed to apply
 ```
-
 
 I expect that this is because it is based on a different release.  If I get time I'll try it on 3.0.3, but it would be much better if the author could re-base it!
 
@@ -141,7 +140,7 @@ first be patched to a pre-coercion SAGE.
 archive/issue_comments_024708.json:
 ```json
 {
-    "body": "I happened to have a 3.0.2 build lying around, but it fared no better:\n\n```\n\njohn@ubuntu%./sage \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: 3514\nsage: hg_sage.apply (\"fre\nfree_module_element     frequency_distribution  \nsage: hg_sage.apply(\"/home/john/free-modules.patch\")\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg status\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg status\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg import   \"/home/john/free-modules.patch\"\napplying /home/john/free-modules.patch\npatching file sage/modules/free_module.py\nHunk #4 FAILED at 280\nHunk #54 FAILED at 3312\nHunk #82 FAILED at 4432\nHunk #95 FAILED at 5055\n4 out of 96 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "I happened to have a 3.0.2 build lying around, but it fared no better:\n\n```\n\njohn@ubuntu%./sage \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: 3514\nsage: hg_sage.apply (\"fre\nfree_module_element     frequency_distribution  \nsage: hg_sage.apply(\"/home/john/free-modules.patch\")\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg status\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg status\ncd \"/home/john/sage-3.0.2/devel/sage\" && hg import   \"/home/john/free-modules.patch\"\napplying /home/john/free-modules.patch\npatching file sage/modules/free_module.py\nHunk #4 FAILED at 280\nHunk #54 FAILED at 3312\nHunk #82 FAILED at 4432\nHunk #95 FAILED at 5055\n4 out of 96 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-06-30T17:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -176,7 +175,6 @@ abort: patch failed to apply
 
 
 
-
 ---
 
 archive/issue_comments_024709.json:
@@ -200,7 +198,7 @@ Rebased against 3.0.4.alpha1 and fixed all trivial errors/doctest problems.  Thi
 archive/issue_comments_024710.json:
 ```json
 {
-    "body": "The patch posted by Gary does not apply cleanly against 3.0.4.alpha1 or 2:\n\n```\nsage-3.0.4.alpha2/devel/sage$ patch -p1 --dry-run < trac_3514.patch\\?format\\=raw \npatching file sage/modules/all.py\npatching file sage/modules/free_module.py\npatching file sage/modules/free_quadratic_module.py\npatching file sage/modules/quotient_module.py\npatching file sage/coding/code_constructions.py\npatching file sage/modular/modform/hecke_operator_on_qexp.py\npatching file sage/modular/modsym/space.py\npatching file sage/modules/free_module.py\nHunk #1 succeeded at 264 (offset -17 lines).\nHunk #2 succeeded at 289 (offset -17 lines).\nHunk #3 FAILED at 444.\nHunk #4 FAILED at 872.\nHunk #5 FAILED at 3044.\nHunk #6 succeeded at 2843 (offset -390 lines).\nHunk #7 succeeded at 2945 (offset -388 lines).\nHunk #8 FAILED at 3436.\nHunk #9 succeeded at 4140 (offset -927 lines).\nHunk #10 succeeded at 4204 (offset -927 lines).\n4 out of 10 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\npatching file sage/modules/quotient_module.py\npatching file sage/rings/number_field/order.py\npatching file sage/schemes/elliptic_curves/period_lattice.py\n```\n\n\nDavid also posted a diff and Gary's patch commits all of the changes in Gary's name, which is obviously not correct.\n\nCheers,\n\nMichael",
+    "body": "The patch posted by Gary does not apply cleanly against 3.0.4.alpha1 or 2:\n\n```\nsage-3.0.4.alpha2/devel/sage$ patch -p1 --dry-run < trac_3514.patch\\?format\\=raw \npatching file sage/modules/all.py\npatching file sage/modules/free_module.py\npatching file sage/modules/free_quadratic_module.py\npatching file sage/modules/quotient_module.py\npatching file sage/coding/code_constructions.py\npatching file sage/modular/modform/hecke_operator_on_qexp.py\npatching file sage/modular/modsym/space.py\npatching file sage/modules/free_module.py\nHunk #1 succeeded at 264 (offset -17 lines).\nHunk #2 succeeded at 289 (offset -17 lines).\nHunk #3 FAILED at 444.\nHunk #4 FAILED at 872.\nHunk #5 FAILED at 3044.\nHunk #6 succeeded at 2843 (offset -390 lines).\nHunk #7 succeeded at 2945 (offset -388 lines).\nHunk #8 FAILED at 3436.\nHunk #9 succeeded at 4140 (offset -927 lines).\nHunk #10 succeeded at 4204 (offset -927 lines).\n4 out of 10 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\npatching file sage/modules/quotient_module.py\npatching file sage/rings/number_field/order.py\npatching file sage/schemes/elliptic_curves/period_lattice.py\n```\n\nDavid also posted a diff and Gary's patch commits all of the changes in Gary's name, which is obviously not correct.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-02T20:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3514",
     "type": "issue_comment",
@@ -236,7 +234,6 @@ patching file sage/modules/quotient_module.py
 patching file sage/rings/number_field/order.py
 patching file sage/schemes/elliptic_curves/period_lattice.py
 ```
-
 
 David also posted a diff and Gary's patch commits all of the changes in Gary's name, which is obviously not correct.
 

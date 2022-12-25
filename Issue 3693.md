@@ -281,7 +281,7 @@ Mike could you post exactly what you did to very nicely fix the public sage wiki
 archive/issue_comments_026116.json:
 ```json
 {
-    "body": "\n```\n[01:03am] mabshoff: mhansen: wstein|afk was wondering about how you converted the wiki?\n[01:03am] mabshoff: I.e. the moinmoin 1.6 syntax since he wanted to convert the other wikis hosted at sagemath.org, too.\n[01:04am] mhansen: There's a data migration script that needs to be run.\n[01:05am] mhansen: \"moin migration data --help\"\n[01:17am] mabshoff: mk\n```\n",
+    "body": "```\n[01:03am] mabshoff: mhansen: wstein|afk was wondering about how you converted the wiki?\n[01:03am] mabshoff: I.e. the moinmoin 1.6 syntax since he wanted to convert the other wikis hosted at sagemath.org, too.\n[01:04am] mhansen: There's a data migration script that needs to be run.\n[01:05am] mhansen: \"moin migration data --help\"\n[01:17am] mabshoff: mk\n```",
     "created_at": "2008-11-20T09:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -290,7 +290,6 @@ archive/issue_comments_026116.json:
 }
 ```
 
-
 ```
 [01:03am] mabshoff: mhansen: wstein|afk was wondering about how you converted the wiki?
 [01:03am] mabshoff: I.e. the moinmoin 1.6 syntax since he wanted to convert the other wikis hosted at sagemath.org, too.
@@ -298,7 +297,6 @@ archive/issue_comments_026116.json:
 [01:05am] mhansen: "moin migration data --help"
 [01:17am] mabshoff: mk
 ```
-
 
 
 
@@ -343,7 +341,7 @@ I posted a new spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.2.s
 archive/issue_comments_026119.json:
 ```json
 {
-    "body": "Has anyone looked at mhansen's spkg or patch yet? The current state of moinmoin in Sage is pretty sad:\n\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: pwd\n'/Users/rlmill/sage-3.3.rc2'\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/rlmill/sage-3.3.rc2/sage_wiki/twistd.pid\n2009-02-20 17:57:31-0800 [-] Log opened.\n2009-02-20 17:57:31-0800 [-] twistd 8.1.0 (/Users/rlmill/sage-3.3.rc2/local/bin/python 2.5.2) starting up\n2009-02-20 17:57:31-0800 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2009-02-20 17:57:31-0800 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2009-02-20 17:57:31-0800 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x11b5a08>\n2009-02-20 17:57:31-0800 [-] Traceback (most recent call last):\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/bin/twistd\", line 21, in <module>\n2009-02-20 17:57:31-0800 [-]     run()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-02-20 17:57:31-0800 [-]     app.run(runApp, ServerOptions)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/application/app.py\", line 614, in run\n2009-02-20 17:57:31-0800 [-]     runApp(config)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-02-20 17:57:31-0800 [-]     _SomeApplicationRunner(config).run()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/application/app.py\", line 337, in run\n2009-02-20 17:57:31-0800 [-]     self.postApplication()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 207, in postApplication\n2009-02-20 17:57:31-0800 [-]     self.startApplication(self.application)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 309, in startApplication\n2009-02-20 17:57:31-0800 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 281, in shedPrivileges\n2009-02-20 17:57:31-0800 [-]     switchUID(uid, gid, euid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 664, in switchUID\n2009-02-20 17:57:31-0800 [-]     initgroups(uid, gid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 641, in initgroups\n2009-02-20 17:57:31-0800 [-]     _setgroups_until_success(l)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 587, in _setgroups_until_success\n2009-02-20 17:57:31-0800 [-]     setgroups(l)\n2009-02-20 17:57:31-0800 [-] OSError: [Errno 1] Operation not permitted\nTrue\nsage: pwd\n'/Users/rlmill/sage-3.3.rc2/sage_wiki'\nsage: exit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m14.13s).\n```\n",
+    "body": "Has anyone looked at mhansen's spkg or patch yet? The current state of moinmoin in Sage is pretty sad:\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: pwd\n'/Users/rlmill/sage-3.3.rc2'\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/rlmill/sage-3.3.rc2/sage_wiki/twistd.pid\n2009-02-20 17:57:31-0800 [-] Log opened.\n2009-02-20 17:57:31-0800 [-] twistd 8.1.0 (/Users/rlmill/sage-3.3.rc2/local/bin/python 2.5.2) starting up\n2009-02-20 17:57:31-0800 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2009-02-20 17:57:31-0800 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2009-02-20 17:57:31-0800 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x11b5a08>\n2009-02-20 17:57:31-0800 [-] Traceback (most recent call last):\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/bin/twistd\", line 21, in <module>\n2009-02-20 17:57:31-0800 [-]     run()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-02-20 17:57:31-0800 [-]     app.run(runApp, ServerOptions)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/application/app.py\", line 614, in run\n2009-02-20 17:57:31-0800 [-]     runApp(config)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-02-20 17:57:31-0800 [-]     _SomeApplicationRunner(config).run()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/application/app.py\", line 337, in run\n2009-02-20 17:57:31-0800 [-]     self.postApplication()\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 207, in postApplication\n2009-02-20 17:57:31-0800 [-]     self.startApplication(self.application)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 309, in startApplication\n2009-02-20 17:57:31-0800 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 281, in shedPrivileges\n2009-02-20 17:57:31-0800 [-]     switchUID(uid, gid, euid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 664, in switchUID\n2009-02-20 17:57:31-0800 [-]     initgroups(uid, gid)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 641, in initgroups\n2009-02-20 17:57:31-0800 [-]     _setgroups_until_success(l)\n2009-02-20 17:57:31-0800 [-]   File \"/Users/rlmill/sage-3.3.rc2/local/lib/python2.5/site-packages/twisted/python/util.py\", line 587, in _setgroups_until_success\n2009-02-20 17:57:31-0800 [-]     setgroups(l)\n2009-02-20 17:57:31-0800 [-] OSError: [Errno 1] Operation not permitted\nTrue\nsage: pwd\n'/Users/rlmill/sage-3.3.rc2/sage_wiki'\nsage: exit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m14.13s).\n```",
     "created_at": "2009-02-21T01:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -353,7 +351,6 @@ archive/issue_comments_026119.json:
 ```
 
 Has anyone looked at mhansen's spkg or patch yet? The current state of moinmoin in Sage is pretty sad:
-
 
 ```
 $ ./sage
@@ -403,7 +400,6 @@ sage: pwd
 sage: exit
 Exiting SAGE (CPU time 0m0.08s, Wall time 0m14.13s).
 ```
-
 
 
 
@@ -508,7 +504,7 @@ I think I'd be more in favor of printing a list of explicit instructions for the
 archive/issue_comments_026125.json:
 ```json
 {
-    "body": "> I think I'd be more in favor of printing a list of explicit instructions for the user to follow. \n\nI'm very happy with that, as long as the instructions get tested and work.",
+    "body": "> I think I'd be more in favor of printing a list of explicit instructions for the user to follow. \n\n\nI'm very happy with that, as long as the instructions get tested and work.",
     "created_at": "2009-03-06T15:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -518,6 +514,7 @@ archive/issue_comments_026125.json:
 ```
 
 > I think I'd be more in favor of printing a list of explicit instructions for the user to follow. 
+
 
 I'm very happy with that, as long as the instructions get tested and work.
 
@@ -586,7 +583,7 @@ I just tried using moin-1.7.2.spkg on wiki.wstein.org and the autoupgrade proces
 archive/issue_comments_026129.json:
 ```json
 {
-    "body": "Replying to [comment:23 was]:\n> I just tried using moin-1.7.2.spkg on wiki.wstein.org and the autoupgrade process resulting in the entire wiki being massively corrupted. \n> \n\nMaking this \"needs work\" again, then.",
+    "body": "Replying to [comment:23 was]:\n> I just tried using moin-1.7.2.spkg on wiki.wstein.org and the autoupgrade process resulting in the entire wiki being massively corrupted. \n> \n\n\nMaking this \"needs work\" again, then.",
     "created_at": "2009-07-16T21:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -598,6 +595,7 @@ archive/issue_comments_026129.json:
 Replying to [comment:23 was]:
 > I just tried using moin-1.7.2.spkg on wiki.wstein.org and the autoupgrade process resulting in the entire wiki being massively corrupted. 
 > 
+
 
 Making this "needs work" again, then.
 
@@ -756,7 +754,7 @@ I forgot to note that this new spkg depends on Twisted 9.0: #7552
 archive/issue_comments_026138.json:
 ```json
 {
-    "body": "1.  Notice the ? below; we need to add mointwisted.py to the hg repo in the spkg.\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0/moin-1.9.0.p0$              hg status\nM patches/wikiconfig.py\nM spkg-install\n? patches/mointwisted.py\n```\n\n\n\nThe actual wiki command is confusing because it now runs as a daemon instead of blocking.  This is highly confusing, mainly because it is exactly the opposite behavior as the notebook command.\n\n```\nsage: wiki(address=\"\")\n...\n2009-12-21 14:37:36,095 WARNING MoinMoin.log:139 using logging configuration read from built-in fallback in MoinMoin.log module!\nsage:\n```\n\nI.e.., I immediately got a prompt back.\nThis is especially bad because once I exit sage the moin wiki is left running:\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0$ ps ax |grep moin\n 4012 ?        Sl     0:00 python /scratch/wstein/build/referee/sage-4.3.rc0/local/bin/twistd moin -p 9000 -a \n 4021 pts/135  S+     0:00 grep moin\n```\n\nWith the notebook we have two (unfortunately undocumented) options:\n\n```\n             fork = False,\n             quiet = False\n```\n\n\nI think they do basically what you've main moin do by default.   So I would like to request that you keep the current capability, but make it non-default.  Use the fork= option to control what happens.",
+    "body": "1.  Notice the ? below; we need to add mointwisted.py to the hg repo in the spkg.\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0/moin-1.9.0.p0$              hg status\nM patches/wikiconfig.py\nM spkg-install\n? patches/mointwisted.py\n```\n\n\nThe actual wiki command is confusing because it now runs as a daemon instead of blocking.  This is highly confusing, mainly because it is exactly the opposite behavior as the notebook command.\n\n```\nsage: wiki(address=\"\")\n...\n2009-12-21 14:37:36,095 WARNING MoinMoin.log:139 using logging configuration read from built-in fallback in MoinMoin.log module!\nsage:\n```\nI.e.., I immediately got a prompt back.\nThis is especially bad because once I exit sage the moin wiki is left running:\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0$ ps ax |grep moin\n 4012 ?        Sl     0:00 python /scratch/wstein/build/referee/sage-4.3.rc0/local/bin/twistd moin -p 9000 -a \n 4021 pts/135  S+     0:00 grep moin\n```\nWith the notebook we have two (unfortunately undocumented) options:\n\n```\n             fork = False,\n             quiet = False\n```\n\nI think they do basically what you've main moin do by default.   So I would like to request that you keep the current capability, but make it non-default.  Use the fork= option to control what happens.",
     "created_at": "2009-12-21T22:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
@@ -775,7 +773,6 @@ M spkg-install
 ```
 
 
-
 The actual wiki command is confusing because it now runs as a daemon instead of blocking.  This is highly confusing, mainly because it is exactly the opposite behavior as the notebook command.
 
 ```
@@ -784,7 +781,6 @@ sage: wiki(address="")
 2009-12-21 14:37:36,095 WARNING MoinMoin.log:139 using logging configuration read from built-in fallback in MoinMoin.log module!
 sage:
 ```
-
 I.e.., I immediately got a prompt back.
 This is especially bad because once I exit sage the moin wiki is left running:
 
@@ -793,14 +789,12 @@ wstein@sage:~/build/referee/sage-4.3.rc0$ ps ax |grep moin
  4012 ?        Sl     0:00 python /scratch/wstein/build/referee/sage-4.3.rc0/local/bin/twistd moin -p 9000 -a 
  4021 pts/135  S+     0:00 grep moin
 ```
-
 With the notebook we have two (unfortunately undocumented) options:
 
 ```
              fork = False,
              quiet = False
 ```
-
 
 I think they do basically what you've main moin do by default.   So I would like to request that you keep the current capability, but make it non-default.  Use the fork= option to control what happens.
 

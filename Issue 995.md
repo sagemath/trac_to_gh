@@ -3,7 +3,7 @@
 archive/issues_000995.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\n<wstein> Better might be to improve the roots function so that it can take \n an optional ring as input.\n e.g.,\n    f = x^3 + 1 (over QQ say), then\n f.roots(ComplexField(200))\n would give the roots in that field.\n What do you think?\n<cwitty> I like it.\n I like it a lot.\n f.roots(RealField(200)), f.roots(AA), f.roots(RealIntervalField(200)) ...\n<wstein> Yep.\n And it could be intelligent, but when it doesn't know what to do just \n return f.change_ring(R).roots(...)\n But in many cases it could use that f is defined over a better ring\n than R, e.g., QQ, to find the roots\n to lots of precision.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/995\n\n",
+    "body": "Assignee: cwitty\n\n```\n<wstein> Better might be to improve the roots function so that it can take \n an optional ring as input.\n e.g.,\n    f = x^3 + 1 (over QQ say), then\n f.roots(ComplexField(200))\n would give the roots in that field.\n What do you think?\n<cwitty> I like it.\n I like it a lot.\n f.roots(RealField(200)), f.roots(AA), f.roots(RealIntervalField(200)) ...\n<wstein> Yep.\n And it could be intelligent, but when it doesn't know what to do just \n return f.change_ring(R).roots(...)\n But in many cases it could use that f is defined over a better ring\n than R, e.g., QQ, to find the roots\n to lots of precision.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/995\n\n",
     "created_at": "2007-10-25T06:21:10Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000995.json:
 }
 ```
 Assignee: cwitty
-
 
 ```
 <wstein> Better might be to improve the roots function so that it can take 
@@ -37,7 +36,6 @@ Assignee: cwitty
  than R, e.g., QQ, to find the roots
  to lots of precision.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/995
 
@@ -107,7 +105,7 @@ archive/issue_events_002742.json:
 archive/issue_comments_006043.json:
 ```json
 {
-    "body": "It works great in almost all cases, but\n\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 2*x-3\nsage: f.roots(ZZ)\n[(3/2, 1)]\n```\n\n\nPerhaps this is due to the default behavior of roots() over Z, not the new code (which is really nice).",
+    "body": "It works great in almost all cases, but\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 2*x-3\nsage: f.roots(ZZ)\n[(3/2, 1)]\n```\n\nPerhaps this is due to the default behavior of roots() over Z, not the new code (which is really nice).",
     "created_at": "2007-11-04T04:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/995",
     "type": "issue_comment",
@@ -118,14 +116,12 @@ archive/issue_comments_006043.json:
 
 It works great in almost all cases, but
 
-
 ```
 sage: R.<x> = ZZ[]
 sage: f = 2*x-3
 sage: f.roots(ZZ)
 [(3/2, 1)]
 ```
-
 
 Perhaps this is due to the default behavior of roots() over Z, not the new code (which is really nice).
 

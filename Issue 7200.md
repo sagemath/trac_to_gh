@@ -159,7 +159,7 @@ Valentin
 archive/issue_comments_059636.json:
 ```json
 {
-    "body": "Hi !\n\n> I agree... I think \"longest_increasing_subsequence_length\" is also better because it will be near \"longest_increasing_subsequences\" in the method list...\n\nIn case you are just waiting for more vote, I think you can go for it ...\n\nFlorent",
+    "body": "Hi !\n\n> I agree... I think \"longest_increasing_subsequence_length\" is also better because it will be near \"longest_increasing_subsequences\" in the method list...\n\n\nIn case you are just waiting for more vote, I think you can go for it ...\n\nFlorent",
     "created_at": "2009-10-23T16:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -171,6 +171,7 @@ archive/issue_comments_059636.json:
 Hi !
 
 > I agree... I think "longest_increasing_subsequence_length" is also better because it will be near "longest_increasing_subsequences" in the method list...
+
 
 In case you are just waiting for more vote, I think you can go for it ...
 
@@ -237,7 +238,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_059640.json:
 ```json
 {
-    "body": "Replying to [comment:6 vferay]:\n> ok I changed the name. What shall I do now?\n\nFirst you should say something like:\n\"I just submitted a new version of the patch which is ready for review.\"\n\nThen after that you should change the status which is currently \"needs info\" to \"needs review\" (see the frame at the bottom of the page) and then wait if someone react by putting a positive review or another request...\n\nAnd finally for the release manager you should tell that only `permutations_fix_longest_increasing_subsequence_7200_vf.patch`\nshould be applied.\n\nAs you can see, I've done this for you :-). So everything is ok... \n\nI'm reviewing the patch...\n\nFlorent",
+    "body": "Replying to [comment:6 vferay]:\n> ok I changed the name. What shall I do now?\n\n\nFirst you should say something like:\n\"I just submitted a new version of the patch which is ready for review.\"\n\nThen after that you should change the status which is currently \"needs info\" to \"needs review\" (see the frame at the bottom of the page) and then wait if someone react by putting a positive review or another request...\n\nAnd finally for the release manager you should tell that only `permutations_fix_longest_increasing_subsequence_7200_vf.patch`\nshould be applied.\n\nAs you can see, I've done this for you :-). So everything is ok... \n\nI'm reviewing the patch...\n\nFlorent",
     "created_at": "2009-11-04T21:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -248,6 +249,7 @@ archive/issue_comments_059640.json:
 
 Replying to [comment:6 vferay]:
 > ok I changed the name. What shall I do now?
+
 
 First you should say something like:
 "I just submitted a new version of the patch which is ready for review."

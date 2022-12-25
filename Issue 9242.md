@@ -3,7 +3,7 @@
 archive/issues_009242.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: docstring, doctest, ideals\n\n\n```\n----------------------------------------------------------------------\nideal_monoid.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ideal_monoid.py: 0% (0 of 6)\n\nMissing documentation:\n         * IdealMonoid(R):\n         * __init__(self, R):\n         * _repr_(self):\n         * ring(self):\n         * __call__(self, x):\n         * _coerce_impl(self, x):\n\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9242\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: docstring, doctest, ideals\n\n```\n----------------------------------------------------------------------\nideal_monoid.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE ideal_monoid.py: 0% (0 of 6)\n\nMissing documentation:\n         * IdealMonoid(R):\n         * __init__(self, R):\n         * _repr_(self):\n         * ring(self):\n         * __call__(self, x):\n         * _coerce_impl(self, x):\n\n----------------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9242\n\n",
     "created_at": "2010-06-15T08:51:44Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_009242.json:
 Assignee: mvngu
 
 Keywords: docstring, doctest, ideals
-
 
 ```
 ----------------------------------------------------------------------
@@ -37,7 +36,6 @@ Missing documentation:
 
 ----------------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9242
 
@@ -104,7 +102,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086778.json:
 ```json
 {
-    "body": "There is a doctest failure in `structure/coerce.pyx` which is caused by this patch:\n\n\n```\nsage -t -long \"devel/sage/sage/structure/coerce.pyx\"        \n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/devel/sage/sage/structure/coerce.pyx\", line 357:\n    sage: cm.exception_stack()\nExpected:\n    [(<class 'sage.structure.coerce_exceptions.CoercionException'>, CoercionException(\"BUG: the base_extend method must be defined for 'Monoid of ideals of Integer Ring' (class '<class 'sage.rings.ideal_monoid.IdealMonoid_c'>')\",), <traceback object at ...>), (<type 'exceptions.TypeError'>,  TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",),  <traceback object at ...>)]\nGot:\n    [(<class 'sage.structure.coerce_exceptions.CoercionException'>, CoercionException(AttributeError(\"'IdealMonoid_c_with_category' object has no attribute 'base_extend'\",),), <traceback object at 0x1049ea8>), (<type 'exceptions.TypeError'>, TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",), <traceback object at 0x1049c20>)]\n```\n\n\nI don't know what's going on.",
+    "body": "There is a doctest failure in `structure/coerce.pyx` which is caused by this patch:\n\n```\nsage -t -long \"devel/sage/sage/structure/coerce.pyx\"        \n**********************************************************************\nFile \"/mnt/usb1/scratch/ghitza/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/devel/sage/sage/structure/coerce.pyx\", line 357:\n    sage: cm.exception_stack()\nExpected:\n    [(<class 'sage.structure.coerce_exceptions.CoercionException'>, CoercionException(\"BUG: the base_extend method must be defined for 'Monoid of ideals of Integer Ring' (class '<class 'sage.rings.ideal_monoid.IdealMonoid_c'>')\",), <traceback object at ...>), (<type 'exceptions.TypeError'>,  TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",),  <traceback object at ...>)]\nGot:\n    [(<class 'sage.structure.coerce_exceptions.CoercionException'>, CoercionException(AttributeError(\"'IdealMonoid_c_with_category' object has no attribute 'base_extend'\",),), <traceback object at 0x1049ea8>), (<type 'exceptions.TypeError'>, TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",), <traceback object at 0x1049c20>)]\n```\n\nI don't know what's going on.",
     "created_at": "2010-06-15T10:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ archive/issue_comments_086778.json:
 ```
 
 There is a doctest failure in `structure/coerce.pyx` which is caused by this patch:
-
 
 ```
 sage -t -long "devel/sage/sage/structure/coerce.pyx"        
@@ -126,7 +123,6 @@ Expected:
 Got:
     [(<class 'sage.structure.coerce_exceptions.CoercionException'>, CoercionException(AttributeError("'IdealMonoid_c_with_category' object has no attribute 'base_extend'",),), <traceback object at 0x1049ea8>), (<type 'exceptions.TypeError'>, TypeError("no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'",), <traceback object at 0x1049c20>)]
 ```
-
 
 I don't know what's going on.
 

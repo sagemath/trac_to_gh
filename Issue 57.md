@@ -3,7 +3,7 @@
 archive/issues_000057.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following calculation should be virtually instantaneous:\n\n\n```\nsage: x = 2**120000/3**100000\nsage: K = pAdicField(5, 5)\nsage: time y = K(x)\nCPU times: user 2.72 s, sys: 0.00 s, total: 2.72 s\nWall time: 2.72\n```\n\n\nIt should take about as long as just reducing numerator and denominator separately:\n\n```\nsage: time z = K(x.numerator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = K(x.denominator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/57\n\n",
+    "body": "Assignee: somebody\n\nThe following calculation should be virtually instantaneous:\n\n```\nsage: x = 2**120000/3**100000\nsage: K = pAdicField(5, 5)\nsage: time y = K(x)\nCPU times: user 2.72 s, sys: 0.00 s, total: 2.72 s\nWall time: 2.72\n```\n\nIt should take about as long as just reducing numerator and denominator separately:\n\n```\nsage: time z = K(x.numerator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = K(x.denominator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/57\n\n",
     "created_at": "2006-09-14T01:55:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ Assignee: somebody
 
 The following calculation should be virtually instantaneous:
 
-
 ```
 sage: x = 2**120000/3**100000
 sage: K = pAdicField(5, 5)
@@ -27,7 +26,6 @@ sage: time y = K(x)
 CPU times: user 2.72 s, sys: 0.00 s, total: 2.72 s
 Wall time: 2.72
 ```
-
 
 It should take about as long as just reducing numerator and denominator separately:
 
@@ -40,7 +38,6 @@ sage: time z = K(x.denominator())
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/57

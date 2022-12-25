@@ -3,7 +3,7 @@
 archive/issues_007058.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne\n\n\n```\nlinbox-1.1.6.p2/spkg-debian\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nCopying commentator patch\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nusing frickin' slow GSL C-blas\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\n*************************************************\n Using LINBOX_BLAS=/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib/libgslcblas.so\n*************************************************\n\n```\n\n\nIt should be noted, that linbox later fails to build with Sun Studio, see #7026, as it does not think GMP is installed. That is of course another, and more serious issue. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7058\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.ne\n\n```\nlinbox-1.1.6.p2/spkg-debian\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nCopying commentator patch\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nusing frickin' slow GSL C-blas\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\nWARNING WARNING\n*************************************************\n Using LINBOX_BLAS=/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib/libgslcblas.so\n*************************************************\n\n```\n\nIt should be noted, that linbox later fails to build with Sun Studio, see #7026, as it does not think GMP is installed. That is of course another, and more serious issue. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7058\n\n",
     "created_at": "2009-09-28T21:38:45Z",
     "labels": [
         "component: porting: solaris"
@@ -18,7 +18,6 @@ archive/issues_007058.json:
 Assignee: tbd
 
 CC:  david.kirkby@onetel.ne
-
 
 ```
 linbox-1.1.6.p2/spkg-debian
@@ -49,7 +48,6 @@ WARNING WARNING
 *************************************************
 
 ```
-
 
 It should be noted, that linbox later fails to build with Sun Studio, see #7026, as it does not think GMP is installed. That is of course another, and more serious issue. 
 

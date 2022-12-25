@@ -133,7 +133,7 @@ Plotting pdf's by default may have drawbacks -- at least last time I checked the
 archive/issue_comments_011130.json:
 ```json
 {
-    "body": "Replying to [comment:4 wjp]:\n> This should automagically turn the included plots into vector graphics instead of bitmaps. \n\nahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d graphs, ...) then it should be done that way. i'll try this. perhaps i'm able to make the extension customizable, then the user can select it and pdf is default. or if there are useful errors, it fallbacks from pdf to png.",
+    "body": "Replying to [comment:4 wjp]:\n> This should automagically turn the included plots into vector graphics instead of bitmaps. \n\n\nahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d graphs, ...) then it should be done that way. i'll try this. perhaps i'm able to make the extension customizable, then the user can select it and pdf is default. or if there are useful errors, it fallbacks from pdf to png.",
     "created_at": "2008-01-17T11:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ archive/issue_comments_011130.json:
 
 Replying to [comment:4 wjp]:
 > This should automagically turn the included plots into vector graphics instead of bitmaps. 
+
 
 ahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d graphs, ...) then it should be done that way. i'll try this. perhaps i'm able to make the extension customizable, then the user can select it and pdf is default. or if there are useful errors, it fallbacks from pdf to png.
 
@@ -178,7 +179,7 @@ But plotting 3d-Graphs doesn't work (and has never) because the .show(..) comman
 archive/issue_comments_011132.json:
 ```json
 {
-    "body": "Replying to [comment:7 schilly]:\n> ...the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.\n\nThis is now #1925",
+    "body": "Replying to [comment:7 schilly]:\n> ...the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.\n\n\nThis is now #1925",
     "created_at": "2008-01-25T12:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -189,6 +190,7 @@ archive/issue_comments_011132.json:
 
 Replying to [comment:7 schilly]:
 > ...the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.
+
 
 This is now #1925
 
@@ -297,7 +299,7 @@ Changing keywords from "" to "latex, sagetex, latex_embed".
 archive/issue_comments_011138.json:
 ```json
 {
-    "body": "I can't apply this cleanly...\n\n```\ndfdeshom@sage:~/custom/sage/examples$ ../sage -hg import 1766.patch\napplying 1766.patch\nnot in dirstate: latex_embed/auto/example.el!\nnot in dirstate: latex_embed/auto/sagetex.el!\n```\n\n\nShould I have the above-mentioned files? in latex_embed/?",
+    "body": "I can't apply this cleanly...\n\n```\ndfdeshom@sage:~/custom/sage/examples$ ../sage -hg import 1766.patch\napplying 1766.patch\nnot in dirstate: latex_embed/auto/example.el!\nnot in dirstate: latex_embed/auto/sagetex.el!\n```\n\nShould I have the above-mentioned files? in latex_embed/?",
     "created_at": "2008-03-04T03:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -315,7 +317,6 @@ not in dirstate: latex_embed/auto/example.el!
 not in dirstate: latex_embed/auto/sagetex.el!
 ```
 
-
 Should I have the above-mentioned files? in latex_embed/?
 
 
@@ -325,7 +326,7 @@ Should I have the above-mentioned files? in latex_embed/?
 archive/issue_comments_011139.json:
 ```json
 {
-    "body": "Replying to [comment:12 dfdeshom]:\n> I can't apply this cleanly...\n...\n> Should I have the above-mentioned files? in latex_embed/?\n\nThose aren't related to the sagetex stuff; they are something that emacs makes. I deleted them since they're not directly related to sagetex (and because I'm a vim person :).\n\nAt any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.",
+    "body": "Replying to [comment:12 dfdeshom]:\n> I can't apply this cleanly...\n\n...\n> Should I have the above-mentioned files? in latex_embed/?\n\n\nThose aren't related to the sagetex stuff; they are something that emacs makes. I deleted them since they're not directly related to sagetex (and because I'm a vim person :).\n\nAt any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.",
     "created_at": "2008-03-04T03:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -336,8 +337,10 @@ archive/issue_comments_011139.json:
 
 Replying to [comment:12 dfdeshom]:
 > I can't apply this cleanly...
+
 ...
 > Should I have the above-mentioned files? in latex_embed/?
+
 
 Those aren't related to the sagetex stuff; they are something that emacs makes. I deleted them since they're not directly related to sagetex (and because I'm a vim person :).
 
@@ -350,7 +353,7 @@ At any rate, they are not important and you can ignore problems related to them.
 archive/issue_comments_011140.json:
 ```json
 {
-    "body": "Replying to [comment:13 ddrake]:\n> \n> At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.\n\nYes, could you please redo it?",
+    "body": "Replying to [comment:13 ddrake]:\n> \n> At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.\n\n\nYes, could you please redo it?",
     "created_at": "2008-03-04T03:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -362,6 +365,7 @@ archive/issue_comments_011140.json:
 Replying to [comment:13 ddrake]:
 > 
 > At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.
+
 
 Yes, could you please redo it?
 
@@ -402,7 +406,7 @@ That said, as soon as I saw this patch I immediately tested it, saw that it work
 archive/issue_comments_011142.json:
 ```json
 {
-    "body": "Replying to [comment:15 jason]:\n>\n>  * when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?\n\n\nThis can be done, but then the only way to tell that you need to run Sage is the package warning issued at the end of running latex, which I tried to make reasonably obvious but can be missed. As it is, the missing file error looks like\n\n\n```\n! LaTeX Error: File `sage-plots-for-example.tex/plot-0' not found.\n```\n\n\nwhich, along with the package warning at the end of the run, is reasonably informative, and it behaves like `\\includegraphics` commands.\n\nIf you really want latex to run without stopping, you can always use `latex -interaction=nonstopmode`. \n\nThe current behavior seems more natural to me, but I can change it if that's the consensus. I can also have the behavior be toggle-able via a package option.\n\n \n>  * The patch says that E2.sobj changed.  Can we delete the file?\n\n\nYes. It's just cruft that `example.tex` produces. It gets regenerated when you run Sage on the example.sage script.\n\n\n>  * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?\n\n\nAh, so you couldn't be bothered to read the text, and took the easy way out? :)\n\nI changed the readme to make that a bit more obvious. Perhaps I'm just too accustomed to `.dtx` and `.ins` files -- ideally we will eventually distribute this with some processing already done, so that the prospective user can read the documentation and see the example file without doing any processing.\n\n>  * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have \"and others\" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.\n\nI already had some credits at the end of the documentation, but I added a line in the readme pointing to them.\n\n> That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!\n\nSweet! I'm glad to hear that other people think this is as cool as I do.",
+    "body": "Replying to [comment:15 jason]:\n>\n>* when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?\n\n\n\nThis can be done, but then the only way to tell that you need to run Sage is the package warning issued at the end of running latex, which I tried to make reasonably obvious but can be missed. As it is, the missing file error looks like\n\n```\n! LaTeX Error: File `sage-plots-for-example.tex/plot-0' not found.\n```\n\nwhich, along with the package warning at the end of the run, is reasonably informative, and it behaves like `\\includegraphics` commands.\n\nIf you really want latex to run without stopping, you can always use `latex -interaction=nonstopmode`. \n\nThe current behavior seems more natural to me, but I can change it if that's the consensus. I can also have the behavior be toggle-able via a package option.\n\n \n>  * The patch says that E2.sobj changed.  Can we delete the file?\n\n\n\nYes. It's just cruft that `example.tex` produces. It gets regenerated when you run Sage on the example.sage script.\n\n\n>  * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?\n\n\n\nAh, so you couldn't be bothered to read the text, and took the easy way out? :)\n\nI changed the readme to make that a bit more obvious. Perhaps I'm just too accustomed to `.dtx` and `.ins` files -- ideally we will eventually distribute this with some processing already done, so that the prospective user can read the documentation and see the example file without doing any processing.\n\n>  * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have \"and others\" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.\n\n\nI already had some credits at the end of the documentation, but I added a line in the readme pointing to them.\n\n> That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!\n\n\nSweet! I'm glad to hear that other people think this is as cool as I do.",
     "created_at": "2008-03-04T06:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -413,16 +417,15 @@ archive/issue_comments_011142.json:
 
 Replying to [comment:15 jason]:
 >
->  * when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?
+>* when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?
+
 
 
 This can be done, but then the only way to tell that you need to run Sage is the package warning issued at the end of running latex, which I tried to make reasonably obvious but can be missed. As it is, the missing file error looks like
 
-
 ```
 ! LaTeX Error: File `sage-plots-for-example.tex/plot-0' not found.
 ```
-
 
 which, along with the package warning at the end of the run, is reasonably informative, and it behaves like `\includegraphics` commands.
 
@@ -434,10 +437,12 @@ The current behavior seems more natural to me, but I can change it if that's the
 >  * The patch says that E2.sobj changed.  Can we delete the file?
 
 
+
 Yes. It's just cruft that `example.tex` produces. It gets regenerated when you run Sage on the example.sage script.
 
 
 >  * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?
+
 
 
 Ah, so you couldn't be bothered to read the text, and took the easy way out? :)
@@ -446,9 +451,11 @@ I changed the readme to make that a bit more obvious. Perhaps I'm just too accus
 
 >  * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have "and others" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.
 
+
 I already had some credits at the end of the documentation, but I added a line in the readme pointing to them.
 
 > That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!
+
 
 Sweet! I'm glad to hear that other people think this is as cool as I do.
 
@@ -521,7 +528,7 @@ The current version of the patch addresses [Jason's first bullet point](http://t
 archive/issue_comments_011146.json:
 ```json
 {
-    "body": "Replying to [comment:18 schilly]:\n> and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!\n\nHrm, that's odd. I don't have that behavior. But the current version deals with graphics better, so perhaps that will work for you.\n\n> The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.\n\nI agree. No extra cruft beyond the source files, except for PDFs of the documentation and the example file.",
+    "body": "Replying to [comment:18 schilly]:\n> and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!\n\n\nHrm, that's odd. I don't have that behavior. But the current version deals with graphics better, so perhaps that will work for you.\n\n> The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.\n\n\nI agree. No extra cruft beyond the source files, except for PDFs of the documentation and the example file.",
     "created_at": "2008-03-05T09:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
@@ -533,9 +540,11 @@ archive/issue_comments_011146.json:
 Replying to [comment:18 schilly]:
 > and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!
 
+
 Hrm, that's odd. I don't have that behavior. But the current version deals with graphics better, so perhaps that will work for you.
 
 > The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.
+
 
 I agree. No extra cruft beyond the source files, except for PDFs of the documentation and the example file.
 

@@ -3,7 +3,7 @@
 archive/issues_004761.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nI always found this annoying:\n\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\n\nso here's my proposal for a fix:\n\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
+    "body": "Assignee: @malb\n\nI always found this annoying:\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\nso here's my proposal for a fix:\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
     "created_at": "2008-12-11T15:34:42Z",
     "labels": [
         "component: misc"
@@ -19,7 +19,6 @@ Assignee: @malb
 
 I always found this annoying:
 
-
 ```
 sage: t = cputime()
 sage: P = PolynomialRing(QQ,8,'x')
@@ -29,9 +28,7 @@ sage: print cputime(t)
 0.217967
 ```
 
-
 so here's my proposal for a fix:
-
 
 ```
 sage: t = cputime_gobal()
@@ -41,7 +38,6 @@ sage: I.groebner_basis()
 sage: print cputime_global(t)
 5.647973
 ```
-
 
 I am not sure if the design is particularly nice though.
 
@@ -56,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4761
 archive/issue_comments_036010.json:
 ```json
 {
-    "body": "This needs to be rewritten since it makes the faulty assumption that there is at most one interface to singular/magma, etc., at a given moment, and also ignores many of the interfaces needlessly (?).  To emphasize the first point, if I do:\n\n```\nsage: s = Singular()\nsage: t = Singular()\nsage: s('2+2')\n4\nsage: t('2+2')\n4\n```\n\nthen none of the computations above will be seen by cputime_global(). \n\nRegarding the second point, here is a one liner that allows you to get a list of *all* interface objects:\n\n```\nsage: print [s() for s in sage.interfaces.quit.expect_objects if s()]\n[Mathematica, Singular, Axiom, Gap, Genus2reduction, GP/PARI interpreter, Kash, Lisp Interpreter, Magma, Macaulay2, Maple, Maxima, Matlab, Mupad, Mwrank, Octave, Sage, LiE Interpreter, R Interpreter, Maxima, Maxima, R Interpreter]\n```\n\n\nIf you start more, they get *registered* in the sage.interfaces.quit.expect_objects list. \n\nFor example, this illustrates getting all currently running interface objects:\n\n```\nsage: gp('2+2')\n4\nsage: s = Singular()\nsage: s('2+3')\n5\nsage: magma('5')\n5\nsage: [s() for s in sage.interfaces.quit.expect_objects if s() and s().is_running()]\n[GP/PARI interpreter, Magma, Singular]\n```\n\n\nYou could do this before and after the computation, and for newly started interface objects, the cputime for that one would be the total cputime (i.e., it defaults to 0). \nYou could also just get all interface objects, even ones that aren't yet running, but that is NOT as useful, imho, since calling cputime() on them starts them up (which is terrible)...\n\nAnyway, hopefully the above has enough \"interface fu\" that you can easily write the ultimate version of cputime.  And maybe it should just replace cputime?  I.e., \n\n\n```\nsage: cputime()   # what you write\nsage: cputime(subprocesses=False)  # the original cputime?\n```\n\n\nIt probably depends on how much overhead there is...   I could easily imagine rewriting the cputime methods for each interface so that they are nearly instant *unless* the interface has actually done something -- i.e., put a cached value in the cputime() method for each interface that is cleared precisely when you send code to be evaluated.",
+    "body": "This needs to be rewritten since it makes the faulty assumption that there is at most one interface to singular/magma, etc., at a given moment, and also ignores many of the interfaces needlessly (?).  To emphasize the first point, if I do:\n\n```\nsage: s = Singular()\nsage: t = Singular()\nsage: s('2+2')\n4\nsage: t('2+2')\n4\n```\nthen none of the computations above will be seen by cputime_global(). \n\nRegarding the second point, here is a one liner that allows you to get a list of *all* interface objects:\n\n```\nsage: print [s() for s in sage.interfaces.quit.expect_objects if s()]\n[Mathematica, Singular, Axiom, Gap, Genus2reduction, GP/PARI interpreter, Kash, Lisp Interpreter, Magma, Macaulay2, Maple, Maxima, Matlab, Mupad, Mwrank, Octave, Sage, LiE Interpreter, R Interpreter, Maxima, Maxima, R Interpreter]\n```\n\nIf you start more, they get *registered* in the sage.interfaces.quit.expect_objects list. \n\nFor example, this illustrates getting all currently running interface objects:\n\n```\nsage: gp('2+2')\n4\nsage: s = Singular()\nsage: s('2+3')\n5\nsage: magma('5')\n5\nsage: [s() for s in sage.interfaces.quit.expect_objects if s() and s().is_running()]\n[GP/PARI interpreter, Magma, Singular]\n```\n\nYou could do this before and after the computation, and for newly started interface objects, the cputime for that one would be the total cputime (i.e., it defaults to 0). \nYou could also just get all interface objects, even ones that aren't yet running, but that is NOT as useful, imho, since calling cputime() on them starts them up (which is terrible)...\n\nAnyway, hopefully the above has enough \"interface fu\" that you can easily write the ultimate version of cputime.  And maybe it should just replace cputime?  I.e., \n\n```\nsage: cputime()   # what you write\nsage: cputime(subprocesses=False)  # the original cputime?\n```\n\nIt probably depends on how much overhead there is...   I could easily imagine rewriting the cputime methods for each interface so that they are nearly instant *unless* the interface has actually done something -- i.e., put a cached value in the cputime() method for each interface that is cleared precisely when you send code to be evaluated.",
     "created_at": "2008-12-11T23:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
@@ -75,7 +71,6 @@ sage: s('2+2')
 sage: t('2+2')
 4
 ```
-
 then none of the computations above will be seen by cputime_global(). 
 
 Regarding the second point, here is a one liner that allows you to get a list of *all* interface objects:
@@ -84,7 +79,6 @@ Regarding the second point, here is a one liner that allows you to get a list of
 sage: print [s() for s in sage.interfaces.quit.expect_objects if s()]
 [Mathematica, Singular, Axiom, Gap, Genus2reduction, GP/PARI interpreter, Kash, Lisp Interpreter, Magma, Macaulay2, Maple, Maxima, Matlab, Mupad, Mwrank, Octave, Sage, LiE Interpreter, R Interpreter, Maxima, Maxima, R Interpreter]
 ```
-
 
 If you start more, they get *registered* in the sage.interfaces.quit.expect_objects list. 
 
@@ -102,18 +96,15 @@ sage: [s() for s in sage.interfaces.quit.expect_objects if s() and s().is_runnin
 [GP/PARI interpreter, Magma, Singular]
 ```
 
-
 You could do this before and after the computation, and for newly started interface objects, the cputime for that one would be the total cputime (i.e., it defaults to 0). 
 You could also just get all interface objects, even ones that aren't yet running, but that is NOT as useful, imho, since calling cputime() on them starts them up (which is terrible)...
 
 Anyway, hopefully the above has enough "interface fu" that you can easily write the ultimate version of cputime.  And maybe it should just replace cputime?  I.e., 
 
-
 ```
 sage: cputime()   # what you write
 sage: cputime(subprocesses=False)  # the original cputime?
 ```
-
 
 It probably depends on how much overhead there is...   I could easily imagine rewriting the cputime methods for each interface so that they are nearly instant *unless* the interface has actually done something -- i.e., put a cached value in the cputime() method for each interface that is cleared precisely when you send code to be evaluated.
 
@@ -187,7 +178,7 @@ REFEREE REPORT:
 archive/issue_comments_036014.json:
 ```json
 {
-    "body": "First of all, the patch applies cleanly.\n\nI tested the example from the documentation, and I tested an example involving singular and gap. \n\nWhat I find really amazing: Assume that you did\n\n```\nsage: t=cputime(subprocesses=True)\nsage: s=cputime(subprocesses=False)\n```\n\nand later you do\n\n```\nsage: cputime(t)\nsage: cputime(s)\n```\n\n\nI expected that `cputime(t)` would assume `subprocesses=False`, since its previous usage (in the definition of s) had this option. But `cputime(t)` indeed recognizes that t was defined with `subprocesses=True`. This is a very nice feature.\n\nHowever, something seems to be wrong.\nI did the following:\n\n```\nsage: t=cputime(subprocesses=True)\nsage: s=cputime(subprocesses=False)\nsage: {... some lengthy computation...}\nsage: cputime(t)\n1.440028\nsage: cputime(s)\n0.45202800000000032\nsage: cputime(s,subprocesses=True)\n1.972029\nsage: cputime()\n2.2761420000000001\nsage: cputime(subprocesses=False)\n2.2801420000000001\nsage: cputime(subprocesses=True)\n3.800142\nsage: quit\nExiting SAGE (CPU time 0m0.65s, Wall time 11m49.60s).\nExiting spawned Singular process.\nExiting spawned Gap process.\n```\n\n\nHence, when leaving Sage, it is stated that the CPU time spent is 0.65s, whereas `cputime(subprocesses=False)` claims that it is more than 2 seconds. Therefore, I can not give a positive review yet.",
+    "body": "First of all, the patch applies cleanly.\n\nI tested the example from the documentation, and I tested an example involving singular and gap. \n\nWhat I find really amazing: Assume that you did\n\n```\nsage: t=cputime(subprocesses=True)\nsage: s=cputime(subprocesses=False)\n```\nand later you do\n\n```\nsage: cputime(t)\nsage: cputime(s)\n```\n\nI expected that `cputime(t)` would assume `subprocesses=False`, since its previous usage (in the definition of s) had this option. But `cputime(t)` indeed recognizes that t was defined with `subprocesses=True`. This is a very nice feature.\n\nHowever, something seems to be wrong.\nI did the following:\n\n```\nsage: t=cputime(subprocesses=True)\nsage: s=cputime(subprocesses=False)\nsage: {... some lengthy computation...}\nsage: cputime(t)\n1.440028\nsage: cputime(s)\n0.45202800000000032\nsage: cputime(s,subprocesses=True)\n1.972029\nsage: cputime()\n2.2761420000000001\nsage: cputime(subprocesses=False)\n2.2801420000000001\nsage: cputime(subprocesses=True)\n3.800142\nsage: quit\nExiting SAGE (CPU time 0m0.65s, Wall time 11m49.60s).\nExiting spawned Singular process.\nExiting spawned Gap process.\n```\n\nHence, when leaving Sage, it is stated that the CPU time spent is 0.65s, whereas `cputime(subprocesses=False)` claims that it is more than 2 seconds. Therefore, I can not give a positive review yet.",
     "created_at": "2009-01-24T17:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
@@ -206,14 +197,12 @@ What I find really amazing: Assume that you did
 sage: t=cputime(subprocesses=True)
 sage: s=cputime(subprocesses=False)
 ```
-
 and later you do
 
 ```
 sage: cputime(t)
 sage: cputime(s)
 ```
-
 
 I expected that `cputime(t)` would assume `subprocesses=False`, since its previous usage (in the definition of s) had this option. But `cputime(t)` indeed recognizes that t was defined with `subprocesses=True`. This is a very nice feature.
 
@@ -242,7 +231,6 @@ Exiting spawned Singular process.
 Exiting spawned Gap process.
 ```
 
-
 Hence, when leaving Sage, it is stated that the CPU time spent is 0.65s, whereas `cputime(subprocesses=False)` claims that it is more than 2 seconds. Therefore, I can not give a positive review yet.
 
 
@@ -270,7 +258,7 @@ Changing keywords from "" to "global cputime subprocesses".
 archive/issue_comments_036016.json:
 ```json
 {
-    "body": "The behaviour described above is \"normal\" insofar as it is not caused by the patch, compare with the current implementation:\n\n\n```\nsage: cputime()\n0.73999999999999999\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m5.60s).\n```\n\n\nThis should be due to the fact that `cputime()` uses user + sys time while the stuff at exit only uses the CPU time.",
+    "body": "The behaviour described above is \"normal\" insofar as it is not caused by the patch, compare with the current implementation:\n\n```\nsage: cputime()\n0.73999999999999999\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m5.60s).\n```\n\nThis should be due to the fact that `cputime()` uses user + sys time while the stuff at exit only uses the CPU time.",
     "created_at": "2009-05-12T02:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
@@ -281,14 +269,12 @@ archive/issue_comments_036016.json:
 
 The behaviour described above is "normal" insofar as it is not caused by the patch, compare with the current implementation:
 
-
 ```
 sage: cputime()
 0.73999999999999999
 sage: exit
 Exiting SAGE (CPU time 0m0.05s, Wall time 0m5.60s).
 ```
-
 
 This should be due to the fact that `cputime()` uses user + sys time while the stuff at exit only uses the CPU time.
 

@@ -3,7 +3,7 @@
 archive/issues_002949.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nChange the output of assume? to:\n\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\n\nto\n\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
+    "body": "Assignee: @williamstein\n\nChange the output of assume? to:\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\nto\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
     "created_at": "2008-04-18T00:24:13Z",
     "labels": [
         "component: calculus",
@@ -20,20 +20,16 @@ Assignee: @williamstein
 
 Change the output of assume? to:
 
-
 ```
 sage: from sage.calculus.calculus import maxima as calcmaxima
 sage: calcmaxima.eval('declare(n,integer)')
 ```
 
-
 to
-
 
 ```
 sage: sage.calculus.calculus.maxima.eval('declare(n,integer)')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2949
 

@@ -364,7 +364,7 @@ Nathann
 archive/issue_comments_014482.json:
 ```json
 {
-    "body": "I installed it and ran sage -testall. No Failures.\n\nThen I installed glpk and ran sage -testall --optional and got (among \nlots of other failures which are presumably unrelated) this:\n\n\n```\njeeves:sage-4.3.2 wdj$ ./sage -t  --optional \"devel/sage/sage/graphs/generic_graph.py\"\nsage -t --optional \"devel/sage/sage/graphs/generic_graph.py\"\n**********************************************************************\nFile \"/Users/wdj/sagefiles/sage-4.3.2/devel/sage/sage/graphs/generic_graph.py\", line 4097:\n    sage: g.vertex_disjoint_paths(0,1) # optional - requires GLPK or CBC\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[3]>\", line 1, in <module>\n        g.vertex_disjoint_paths(Integer(0),Integer(1)) # optional - requires GLPK or CBC###line 4097:\n    sage: g.vertex_disjoint_paths(0,1) # optional - requires GLPK or CBC\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 4101, in vertex_disjoint_paths\n        [obj, flow_graph] = self.flow(s,t,value_only=False, integer=True, use_edge_labels=False, vertex_bound=True)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 3986, in flow\n        [p.add_constraint([flow[X][v] for X in g[v]],max=1) for v in g if v!=x and v!=y]\n      File \"mip.pyx\", line 670, in sage.numerical.mip.MixedIntegerLinearProgram.add_constraint (sage/numerical/mip.c:5462)\n    AttributeError: 'list' object has no attribute 'f'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_69\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wdj/.sage//tmp/.doctest_generic_graph.py\n         [29.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t --optional \"devel/sage/sage/graphs/generic_graph.py\"\n```\n\n\nIs this a related failure?",
+    "body": "I installed it and ran sage -testall. No Failures.\n\nThen I installed glpk and ran sage -testall --optional and got (among \nlots of other failures which are presumably unrelated) this:\n\n```\njeeves:sage-4.3.2 wdj$ ./sage -t  --optional \"devel/sage/sage/graphs/generic_graph.py\"\nsage -t --optional \"devel/sage/sage/graphs/generic_graph.py\"\n**********************************************************************\nFile \"/Users/wdj/sagefiles/sage-4.3.2/devel/sage/sage/graphs/generic_graph.py\", line 4097:\n    sage: g.vertex_disjoint_paths(0,1) # optional - requires GLPK or CBC\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[3]>\", line 1, in <module>\n        g.vertex_disjoint_paths(Integer(0),Integer(1)) # optional - requires GLPK or CBC###line 4097:\n    sage: g.vertex_disjoint_paths(0,1) # optional - requires GLPK or CBC\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 4101, in vertex_disjoint_paths\n        [obj, flow_graph] = self.flow(s,t,value_only=False, integer=True, use_edge_labels=False, vertex_bound=True)\n      File \"/Users/wdj/sagefiles/sage-4.3.2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 3986, in flow\n        [p.add_constraint([flow[X][v] for X in g[v]],max=1) for v in g if v!=x and v!=y]\n      File \"mip.pyx\", line 670, in sage.numerical.mip.MixedIntegerLinearProgram.add_constraint (sage/numerical/mip.c:5462)\n    AttributeError: 'list' object has no attribute 'f'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_69\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wdj/.sage//tmp/.doctest_generic_graph.py\n         [29.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t --optional \"devel/sage/sage/graphs/generic_graph.py\"\n```\n\nIs this a related failure?",
     "created_at": "2010-02-07T22:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_comment",
@@ -377,7 +377,6 @@ I installed it and ran sage -testall. No Failures.
 
 Then I installed glpk and ran sage -testall --optional and got (among 
 lots of other failures which are presumably unrelated) this:
-
 
 ```
 jeeves:sage-4.3.2 wdj$ ./sage -t  --optional "devel/sage/sage/graphs/generic_graph.py"
@@ -415,7 +414,6 @@ The following tests failed:
 
         sage -t --optional "devel/sage/sage/graphs/generic_graph.py"
 ```
-
 
 Is this a related failure?
 
@@ -628,7 +626,7 @@ Attachment [trac_2203.patch](tarball://root/attachments/some-uuid/ticket2203/tra
 archive/issue_comments_014493.json:
 ```json
 {
-    "body": "Replying to [comment:24 ncohen]:\n> I added a few lines to support multigraphs.... Before this, the problem failed if you added to each edge a paralell one, while it should only help ;-)\n> \n> Nathann\n\n\nThis new patch passes the same tests as before.\n\nAgain, I leave it to Jason to give the final okay.",
+    "body": "Replying to [comment:24 ncohen]:\n> I added a few lines to support multigraphs.... Before this, the problem failed if you added to each edge a paralell one, while it should only help ;-)\n> \n> Nathann\n\n\n\nThis new patch passes the same tests as before.\n\nAgain, I leave it to Jason to give the final okay.",
     "created_at": "2010-02-10T15:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_comment",
@@ -641,6 +639,7 @@ Replying to [comment:24 ncohen]:
 > I added a few lines to support multigraphs.... Before this, the problem failed if you added to each edge a paralell one, while it should only help ;-)
 > 
 > Nathann
+
 
 
 This new patch passes the same tests as before.
@@ -748,7 +747,7 @@ rebase of previous patch
 archive/issue_comments_014499.json:
 ```json
 {
-    "body": "I got a hunk failure when applying the patch on top of #8364 and #8166 in that order:\n\n\n```\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush \nadding trac_8364.patch to series file\napplying trac_8364.patch\nnow at: trac_8364.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364-reviewer.patch && hg qpush \nadding trac_8364-reviewer.patch to series file\napplying trac_8364-reviewer.patch\nnow at: trac_8364-reviewer.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8166/trac_8166-rebase.patch && hg qpush \nadding trac_8166-rebase.patch to series file\napplying trac_8166-rebase.patch\nnow at: trac_8166-rebase.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/2203/trac_2203.patch && hg qpush \nadding trac_2203.patch to series file\napplying trac_2203.patch\npatching file sage/graphs/generic_graph.py\nHunk #1 FAILED at 3637\n1 out of 2 hunks FAILED -- saving rejects to file sage/graphs/generic_graph.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_2203.patch\n```\n\n\nI have rebased ncohen's patch on top of #8364 and #8166. See the ticket description for instructions on how to apply the rebased patch. Someone other than myself needs to have a look through my rebase patch to make sure I didn't mess up anything. Because of this, I'm putting the ticket in \"needs review\". The code introduced by ncohen's patch (equivalently the code in the rebased patch) needs some clean-ups, but I won't do that here.",
+    "body": "I got a hunk failure when applying the patch on top of #8364 and #8166 in that order:\n\n```\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364.patch && hg qpush \nadding trac_8364.patch to series file\napplying trac_8364.patch\nnow at: trac_8364.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8364/trac_8364-reviewer.patch && hg qpush \nadding trac_8364-reviewer.patch to series file\napplying trac_8364-reviewer.patch\nnow at: trac_8364-reviewer.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8166/trac_8166-rebase.patch && hg qpush \nadding trac_8166-rebase.patch to series file\napplying trac_8166-rebase.patch\nnow at: trac_8166-rebase.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/2203/trac_2203.patch && hg qpush \nadding trac_2203.patch to series file\napplying trac_2203.patch\npatching file sage/graphs/generic_graph.py\nHunk #1 FAILED at 3637\n1 out of 2 hunks FAILED -- saving rejects to file sage/graphs/generic_graph.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_2203.patch\n```\n\nI have rebased ncohen's patch on top of #8364 and #8166. See the ticket description for instructions on how to apply the rebased patch. Someone other than myself needs to have a look through my rebase patch to make sure I didn't mess up anything. Because of this, I'm putting the ticket in \"needs review\". The code introduced by ncohen's patch (equivalently the code in the rebased patch) needs some clean-ups, but I won't do that here.",
     "created_at": "2010-05-22T10:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2203",
     "type": "issue_comment",
@@ -758,7 +757,6 @@ archive/issue_comments_014499.json:
 ```
 
 I got a hunk failure when applying the patch on top of #8364 and #8166 in that order:
-
 
 ```
 [mvngu@sage sage-main]$ hg tip
@@ -790,7 +788,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_2203.patch
 ```
-
 
 I have rebased ncohen's patch on top of #8364 and #8166. See the ticket description for instructions on how to apply the rebased patch. Someone other than myself needs to have a look through my rebase patch to make sure I didn't mess up anything. Because of this, I'm putting the ticket in "needs review". The code introduced by ncohen's patch (equivalently the code in the rebased patch) needs some clean-ups, but I won't do that here.
 

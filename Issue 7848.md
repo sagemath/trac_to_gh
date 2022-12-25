@@ -3,7 +3,7 @@
 archive/issues_007848.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\n\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
     "created_at": "2010-01-05T04:12:35Z",
     "labels": [
         "component: notebook",
@@ -28,7 +28,6 @@ Shift click between cells to create a new HTML cell. Double click on
 existing HTML to edit it. 
 Use $...$ and $$...$$ to include typeset math in the HTML block. 
 ```
-
 There is no mention of the horizontal blue line.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7848
@@ -116,7 +115,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067865.json:
 ```json
 {
-    "body": "trac_7848-misleading_HTML_cells.patch: changes verbage to:\n\n```\nInsert New Text Cell\n\nMove the mouse between cells until a blue bar appears.\n<strong>Shift-click</strong> on the blue bar to create a new text cell.\nDouble click on existing text to edit it.\nUse $...$ and $$...$$ to include typeset math in the text block.\n```\n",
+    "body": "trac_7848-misleading_HTML_cells.patch: changes verbage to:\n\n```\nInsert New Text Cell\n\nMove the mouse between cells until a blue bar appears.\n<strong>Shift-click</strong> on the blue bar to create a new text cell.\nDouble click on existing text to edit it.\nUse $...$ and $$...$$ to include typeset math in the text block.\n```",
     "created_at": "2010-01-19T07:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7848",
     "type": "issue_comment",
@@ -135,7 +134,6 @@ Move the mouse between cells until a blue bar appears.
 Double click on existing text to edit it.
 Use $...$ and $$...$$ to include typeset math in the text block.
 ```
-
 
 
 

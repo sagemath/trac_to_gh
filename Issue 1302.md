@@ -3,7 +3,7 @@
 archive/issues_001302.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nOn Nov 28, 2007 10:43 AM, Jennifer S. Balakrishnan <> wrote:\n> I'm trying to integrate a list of Laurent series, and it seems that\n> once the list has more than 4 elements, Sage gets upset:\n\nThe problem is:\n\nsage: A.<t> = LaurentSeriesRing(QQ)\nsage: (-2*t^(-4) + O(t^8)).integral()\nTraceback (most recent call last):\n...\nIndexError: list index out of range\n\nThis is because of  this code in rings/laurent_series_ring_element.pyx not\nbeing coded correctly around line 880:\n        if n < 0:\n            v = [a[i]/(n+i+1) for i in range(-1-n)] + [0]\n        else:\n            v = []\n        v += [a[i]/(n+i+1) for i in range(max(-n,0), len(a))]\n\ttry:\n\nSo you should fix that and submit a patch :-).\n\nWilliam\n\n\n\n> \n> sage: A.<t> = LaurentSeriesRing(QQ)\n> sage: B = [-2*t^4 + O(t^16), -2*t^2 + O(t^14), -2 + O(t^12), -2*t^-2 +\n> O(t^10), -2*t^-4 + O(t^8), -2*t^-6 + O(t^6)]\n> sage: for i in range(6):\n> ....:     B[i] = integral(B[i])\n> ....:\n> ---------------------------------------------------------------------------\n> <type 'exceptions.IndexError'>            Traceback (most recent call last)\n> \n> /home/jen/<ipython console> in <module>()\n> \n> /home/jen/sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux/local/lib/python2.5/site-packages/sage/misc/functional.py\n> in integral(x, *args, **kwds)\n>     449     \"\"\"\n>     450     if hasattr(x, 'integral'):\n> --> 451         return x.integral(*args, **kwds)\n>     452     else:\n>     453         from sage.calculus.calculus import SR\n> \n> /home/jen/laurent_series_ring_element.pyx in\n> sage.rings.laurent_series_ring_element.LaurentSeries.integral()\n> \n> <type 'exceptions.IndexError'>: list index out of range\n> sage: B\n> \n> [-2/5*t^5 + O(t^17),\n>  -2/3*t^3 + O(t^15),\n>  -2*t + O(t^13),\n>  2*t^-1 + O(t^11),\n>  -2*t^-4 + O(t^8),        <================== stopped integrating here\n>  -2*t^-6 + O(t^6)]\n> \n> What's going on?\n> \n> Jen\n> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1302\n\n",
+    "body": "Assignee: somebody\n\n```\nOn Nov 28, 2007 10:43 AM, Jennifer S. Balakrishnan <> wrote:\n> I'm trying to integrate a list of Laurent series, and it seems that\n> once the list has more than 4 elements, Sage gets upset:\n\nThe problem is:\n\nsage: A.<t> = LaurentSeriesRing(QQ)\nsage: (-2*t^(-4) + O(t^8)).integral()\nTraceback (most recent call last):\n...\nIndexError: list index out of range\n\nThis is because of  this code in rings/laurent_series_ring_element.pyx not\nbeing coded correctly around line 880:\n        if n < 0:\n            v = [a[i]/(n+i+1) for i in range(-1-n)] + [0]\n        else:\n            v = []\n        v += [a[i]/(n+i+1) for i in range(max(-n,0), len(a))]\n\ttry:\n\nSo you should fix that and submit a patch :-).\n\nWilliam\n\n\n\n> \n> sage: A.<t> = LaurentSeriesRing(QQ)\n> sage: B = [-2*t^4 + O(t^16), -2*t^2 + O(t^14), -2 + O(t^12), -2*t^-2 +\n> O(t^10), -2*t^-4 + O(t^8), -2*t^-6 + O(t^6)]\n> sage: for i in range(6):\n> ....:     B[i] = integral(B[i])\n> ....:\n> ---------------------------------------------------------------------------\n> <type 'exceptions.IndexError'>            Traceback (most recent call last)\n> \n> /home/jen/<ipython console> in <module>()\n> \n> /home/jen/sage-2.8.13-use_this_on_sage_dot_math-x86_64-Linux/local/lib/python2.5/site-packages/sage/misc/functional.py\n> in integral(x, *args, **kwds)\n>     449     \"\"\"\n>     450     if hasattr(x, 'integral'):\n> --> 451         return x.integral(*args, **kwds)\n>     452     else:\n>     453         from sage.calculus.calculus import SR\n> \n> /home/jen/laurent_series_ring_element.pyx in\n> sage.rings.laurent_series_ring_element.LaurentSeries.integral()\n> \n> <type 'exceptions.IndexError'>: list index out of range\n> sage: B\n> \n> [-2/5*t^5 + O(t^17),\n>  -2/3*t^3 + O(t^15),\n>  -2*t + O(t^13),\n>  2*t^-1 + O(t^11),\n>  -2*t^-4 + O(t^8),        <================== stopped integrating here\n>  -2*t^-6 + O(t^6)]\n> \n> What's going on?\n> \n> Jen\n> \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1302\n\n",
     "created_at": "2007-11-28T19:05:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_001302.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 On Nov 28, 2007 10:43 AM, Jennifer S. Balakrishnan <> wrote:
@@ -85,7 +84,6 @@ William
 > Jen
 > 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1302
 

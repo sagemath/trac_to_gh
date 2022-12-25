@@ -3,7 +3,7 @@
 archive/issues_002527.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
+    "body": "Assignee: @williamstein\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
     "created_at": "2008-03-15T02:40:26Z",
     "labels": [
         "component: number theory",
@@ -25,7 +25,6 @@ teragon:modular was$ sage -coverage congroup.py congroup_element.py
 SCORE congroup.py: 20% (14 of 68)
 SCORE congroup_element.py: 0% (0 of 10)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2527

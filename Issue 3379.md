@@ -3,7 +3,7 @@
 archive/issues_003379.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: p.plot3d()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/mike/temp/natalie/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py in plot3d(self, show_facets, facet_opacity, facet_color, show_edges, edge_thickness, edge_color, show_vertices, vertex_size, vertex_color, show_points, point_size, point_color, show_vindices, vindex_color, show_pindices, pindex_color, index_shift)\n   1447         if show_points:\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n   1450         if show_pindices == None:\n   1451             show_pindices = show_points\n\n/opt/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/shapes2.py in point3d(v, size, **kwds)\n    506     else:\n    507         A = sum([Point(z, size, **kwds) for z in v])\n--> 508         A._set_extra_kwds(kwds)\n    509         return A\n    510     \n\nAttributeError: 'int' object has no attribute '_set_extra_kwds'\n\nIssue created by migration from https://trac.sagemath.org/ticket/3379\n\n",
+    "body": "Assignee: mhampton\n\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()\nsage: p = LatticePolytope(m, compute_vertices=True)\nsage: p.plot3d()\n\n---\nAttributeError                            Traceback (most recent call last)\n\n/home/mike/temp/natalie/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py in plot3d(self, show_facets, facet_opacity, facet_color, show_edges, edge_thickness, edge_color, show_vertices, vertex_size, vertex_color, show_points, point_size, point_color, show_vindices, vindex_color, show_pindices, pindex_color, index_shift)\n   1447         if show_points:\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n   1450         if show_pindices == None:\n   1451             show_pindices = show_points\n\n/opt/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/shapes2.py in point3d(v, size, **kwds)\n    506     else:\n    507         A = sum([Point(z, size, **kwds) for z in v])\n--> 508         A._set_extra_kwds(kwds)\n    509         return A\n    510     \n\nAttributeError: 'int' object has no attribute '_set_extra_kwds'\n\nIssue created by migration from https://trac.sagemath.org/ticket/3379\n\n",
     "created_at": "2008-06-06T23:00:02Z",
     "labels": [
         "component: geometry",
@@ -23,7 +23,8 @@ sage: p = LatticePolytope(m, compute_vertices=True)
 sage: m = matrix([[0,0,0],[0,1,1],[1,0,1],[1,1,0]]).transpose()
 sage: p = LatticePolytope(m, compute_vertices=True)
 sage: p.plot3d()
----------------------------------------------------------------------------
+
+---
 AttributeError                            Traceback (most recent call last)
 
 /home/mike/temp/natalie/<ipython console> in <module>()
@@ -55,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3379
 archive/issue_comments_023607.json:
 ```json
 {
-    "body": "This is occurs because it assumes that \"self.points().columns(copy=False)[self.nvertices():]\" does not return an empty list.\n\n```\n> /opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py(1449)plot3d()\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n```\n\nA workaround is to use p.plot3d(show_points=False) so that it doesn't hit that code.",
+    "body": "This is occurs because it assumes that \"self.points().columns(copy=False)[self.nvertices():]\" does not return an empty list.\n\n```\n> /opt/sage/local/lib/python2.5/site-packages/sage/geometry/lattice_polytope.py(1449)plot3d()\n   1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],\n-> 1449                         size=point_size, rgbcolor=point_color)\n```\nA workaround is to use p.plot3d(show_points=False) so that it doesn't hit that code.",
     "created_at": "2008-06-06T23:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3379",
     "type": "issue_comment",
@@ -71,7 +72,6 @@ This is occurs because it assumes that "self.points().columns(copy=False)[self.n
    1448             pplot += point3d(self.points().columns(copy=False)[self.nvertices():],
 -> 1449                         size=point_size, rgbcolor=point_color)
 ```
-
 A workaround is to use p.plot3d(show_points=False) so that it doesn't hit that code.
 
 

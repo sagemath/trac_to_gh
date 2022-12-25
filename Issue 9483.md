@@ -3,7 +3,7 @@
 archive/issues_009483.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nHere's an example:\n\n```\nsage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2))\n```\n\n... VERY long traceback, ending:\n\n```\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1363 \n   1364     \"\"\"\n-> 1365     return FastCallableConverter(ex, etb)()\n   1366 \n   1367 class RingConverter(Converter):\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    216             return self.relation(ex, operator)\n    217         elif isinstance(operator, FDerivativeOperator):\n--> 218             return self.derivative(ex, operator)\n    219         else:\n    220             return self.composition(ex, operator)\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in derivative(self, ex, operator)\n    349             NotImplementedError: derivative\n    350         \"\"\"        \n--> 351         raise NotImplementedError, \"derivative\"\n    352 \n    353     def arithmetic(self, ex, operator):\n\nNotImplementedError: derivative\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9483\n\n",
+    "body": "Assignee: cwitty\n\nHere's an example:\n\n```\nsage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2))\n```\n... VERY long traceback, ending:\n\n```\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1363 \n   1364     \"\"\"\n-> 1365     return FastCallableConverter(ex, etb)()\n   1366 \n   1367 class RingConverter(Converter):\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    216             return self.relation(ex, operator)\n    217         elif isinstance(operator, FDerivativeOperator):\n--> 218             return self.derivative(ex, operator)\n    219         else:\n    220             return self.composition(ex, operator)\n\n/home/cwitty/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in derivative(self, ex, operator)\n    349             NotImplementedError: derivative\n    350         \"\"\"        \n--> 351         raise NotImplementedError, \"derivative\"\n    352 \n    353     def arithmetic(self, ex, operator):\n\nNotImplementedError: derivative\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9483\n\n",
     "created_at": "2010-07-12T17:21:32Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ Here's an example:
 ```
 sage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-1.8, z-1.8, -x-1.8, -y-1.8, -z-1.8), (x, -2, 2), (y, -2, 2), (z, -2, 2))
 ```
-
 ... VERY long traceback, ending:
 
 ```
@@ -50,7 +49,6 @@ sage: implicit_plot3d(max_symbolic(min_symbolic(x*x+y*y-1, x*x+z*z-2), x-1.8, y-
 
 NotImplementedError: derivative
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9483
@@ -140,7 +138,7 @@ Or does this depend on #9482, as I now realize?
 archive/issue_comments_090896.json:
 ```json
 {
-    "body": "Okay, one issue is that this depends on some other ticket which may or may not get reviewed.\n\nAnd I think I see why this fix works, sort of - when smooth is True, MarchingCubesTriangles calls the gradient, though presumably smooth was already False - this seems weird to me.  But why not make the change at\n\n```\n\n    def __init__(self, f, xrange, yrange, zrange,\n                 contour=0, plot_points=\"automatic\",\n                 region=None, smooth=True, gradient=None, vertex_color=None,\n                 **kwds):\n```\n\n?  I guess someone could still pass in 'smooth', though it seems like then this should be deprecated as an option - or we should have prominent TODO to add it.  But also\n\n```\n\n        if smooth and gradient is None:\n```\n\nit seems like we should just get rid of this whole thing, since smooth will never be True.\n\nAnyway, because I don't quite understand those things, I'm putting `needs_info`, but it seems good overall - and I apologize for any ignorance on my part.  \n\nOn the plus side, it does get rid of the traceback as advertised!  For some reason I don't have 3d plotting on the computer I'm checking this one (old Java?), but that's still pretty good.",
+    "body": "Okay, one issue is that this depends on some other ticket which may or may not get reviewed.\n\nAnd I think I see why this fix works, sort of - when smooth is True, MarchingCubesTriangles calls the gradient, though presumably smooth was already False - this seems weird to me.  But why not make the change at\n\n```\n\n    def __init__(self, f, xrange, yrange, zrange,\n                 contour=0, plot_points=\"automatic\",\n                 region=None, smooth=True, gradient=None, vertex_color=None,\n                 **kwds):\n```\n?  I guess someone could still pass in 'smooth', though it seems like then this should be deprecated as an option - or we should have prominent TODO to add it.  But also\n\n```\n\n        if smooth and gradient is None:\n```\nit seems like we should just get rid of this whole thing, since smooth will never be True.\n\nAnyway, because I don't quite understand those things, I'm putting `needs_info`, but it seems good overall - and I apologize for any ignorance on my part.  \n\nOn the plus side, it does get rid of the traceback as advertised!  For some reason I don't have 3d plotting on the computer I'm checking this one (old Java?), but that's still pretty good.",
     "created_at": "2010-08-06T01:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
@@ -160,14 +158,12 @@ And I think I see why this fix works, sort of - when smooth is True, MarchingCub
                  region=None, smooth=True, gradient=None, vertex_color=None,
                  **kwds):
 ```
-
 ?  I guess someone could still pass in 'smooth', though it seems like then this should be deprecated as an option - or we should have prominent TODO to add it.  But also
 
 ```
 
         if smooth and gradient is None:
 ```
-
 it seems like we should just get rid of this whole thing, since smooth will never be True.
 
 Anyway, because I don't quite understand those things, I'm putting `needs_info`, but it seems good overall - and I apologize for any ignorance on my part.  

@@ -3,7 +3,7 @@
 archive/issues_008446.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nIn the case of a trivial number field, such as\n\n```\nK.<a> = NumberField(polygen(QQ))\n```\n\nthe Selmer group function doesn't work, since the generator `a` of the number field is 0, and when we're constructing polynomials we use the form `coeff*a**i`. However, if `i==0`, we get an `ArithmeticError` since Sage does not have conventions for `0^0`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8446\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nIn the case of a trivial number field, such as\n\n```\nK.<a> = NumberField(polygen(QQ))\n```\nthe Selmer group function doesn't work, since the generator `a` of the number field is 0, and when we're constructing polynomials we use the form `coeff*a**i`. However, if `i==0`, we get an `ArithmeticError` since Sage does not have conventions for `0^0`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8446\n\n",
     "created_at": "2010-03-05T16:28:40Z",
     "labels": [
         "component: number fields",
@@ -25,7 +25,6 @@ In the case of a trivial number field, such as
 ```
 K.<a> = NumberField(polygen(QQ))
 ```
-
 the Selmer group function doesn't work, since the generator `a` of the number field is 0, and when we're constructing polynomials we use the form `coeff*a**i`. However, if `i==0`, we get an `ArithmeticError` since Sage does not have conventions for `0^0`.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8446

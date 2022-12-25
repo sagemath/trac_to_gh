@@ -3,7 +3,7 @@
 archive/issues_008536.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWhen quitting we see\n\n```\nExiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).\n```\n\nand there are several other places where \"SAGE\" is output instead of \"Sage\".\n\nThe patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8536\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWhen quitting we see\n\n```\nExiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).\n```\nand there are several other places where \"SAGE\" is output instead of \"Sage\".\n\nThe patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8536\n\n",
     "created_at": "2010-03-14T18:01:19Z",
     "labels": [
         "component: user interface",
@@ -26,7 +26,6 @@ When quitting we see
 ```
 Exiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).
 ```
-
 and there are several other places where "SAGE" is output instead of "Sage".
 
 The patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.
@@ -138,7 +137,7 @@ I testing the whole sage library and all tests passed.
 archive/issue_comments_077028.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> I don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\nI believe that directory is in the same Mercurial repo that the main Sage library is in -- it looks like interrupt.c was last changed by revision 9552:470b9bd4c96e (try \"hg annotate\" on that file). If you are using queues, you should be able to just make the change and do \"hg qref\". That worked for me.\n\nI'm running doctests now; it's not finished, but I would be surprised if anything fails.",
+    "body": "Replying to [comment:3 cremona]:\n> I don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\n\nI believe that directory is in the same Mercurial repo that the main Sage library is in -- it looks like interrupt.c was last changed by revision 9552:470b9bd4c96e (try \"hg annotate\" on that file). If you are using queues, you should be able to just make the change and do \"hg qref\". That worked for me.\n\nI'm running doctests now; it's not finished, but I would be surprised if anything fails.",
     "created_at": "2010-04-01T12:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
@@ -149,6 +148,7 @@ archive/issue_comments_077028.json:
 
 Replying to [comment:3 cremona]:
 > I don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?
+
 
 I believe that directory is in the same Mercurial repo that the main Sage library is in -- it looks like interrupt.c was last changed by revision 9552:470b9bd4c96e (try "hg annotate" on that file). If you are using queues, you should be able to just make the change and do "hg qref". That worked for me.
 
@@ -271,7 +271,7 @@ The changes to sagedoc.py look okay to me.
 archive/issue_comments_077035.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> The changes to sagedoc.py look okay to me.\n\nThanks, and sorry for the typo.  John",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> The changes to sagedoc.py look okay to me.\n\n\nThanks, and sorry for the typo.  John",
     "created_at": "2010-04-02T09:45:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
@@ -282,6 +282,7 @@ archive/issue_comments_077035.json:
 
 Replying to [comment:8 jhpalmieri]:
 > The changes to sagedoc.py look okay to me.
+
 
 Thanks, and sorry for the typo.  John
 

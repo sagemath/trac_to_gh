@@ -3,7 +3,7 @@
 archive/issues_008396.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  nborie\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\n\nNote: this should be caught by setting good categories\n\n```\nsage: s.category()\nCategory of objects\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8396\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  nborie\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\nNote: this should be caught by setting good categories\n\n```\nsage: s.category()\nCategory of objects\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8396\n\n",
     "created_at": "2010-02-28T15:13:10Z",
     "labels": [
         "component: combinatorics",
@@ -28,7 +28,6 @@ sage: e = s.first()
 sage: isinstance(e, s.element_class)
 False
 ```
-
 
 Note: this should be caught by setting good categories
 
@@ -302,7 +301,7 @@ Resolution: fixed
 archive/issue_comments_075110.json:
 ```json
 {
-    "body": "Samuele: Mercurial interprets your \"commit message\" as a comment, hence the message itself won't appear as your commit message:\n\n```\n# 8367: fix element_class of Subsets\n```\n\nNotice the white space between \"#\" and \"8367:\". Avoid putting white space between \"#\" and your ticket number. Your commit message should be something like this:\n\n```\n#8367: fix element_class of Subsets\n```\n",
+    "body": "Samuele: Mercurial interprets your \"commit message\" as a comment, hence the message itself won't appear as your commit message:\n\n```\n# 8367: fix element_class of Subsets\n```\nNotice the white space between \"#\" and \"8367:\". Avoid putting white space between \"#\" and your ticket number. Your commit message should be something like this:\n\n```\n#8367: fix element_class of Subsets\n```",
     "created_at": "2010-03-02T21:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8396",
     "type": "issue_comment",
@@ -316,10 +315,8 @@ Samuele: Mercurial interprets your "commit message" as a comment, hence the mess
 ```
 # 8367: fix element_class of Subsets
 ```
-
 Notice the white space between "#" and "8367:". Avoid putting white space between "#" and your ticket number. Your commit message should be something like this:
 
 ```
 #8367: fix element_class of Subsets
 ```
-

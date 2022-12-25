@@ -3,7 +3,7 @@
 archive/issues_009173.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"   \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 174:\n    sage: native_two_isogeny_descent_work(E, E.two_torsion_rank())\nExpected:\n    (1, 1, 0, 0, None)\nGot:\n    (0, 1, 0, 1, None)\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 391:\n    sage: E.prove_BSD(verbosity=1, secs_hi=1)\nExpected:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3} by Kolyvagin.\n    [3]\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3, 5} by Kolyvagin.\n    True for p=5 by Stein-Wuthrich.\n    [3]\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 426:\n    sage: E.prove_BSD(verbosity=1)\nExpected:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2} by Kolyvagin.\n    []\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3, 5} by Kolyvagin.\n    True for p=5 by Stein-Wuthrich.\n    p = 3 may divide the Heegner index, for which only a bound was computed.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 0\n    [3]\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_4\n   2 of  34 in __main__.example_6\n***Test Failed*** 3 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9173\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"   \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 174:\n    sage: native_two_isogeny_descent_work(E, E.two_torsion_rank())\nExpected:\n    (1, 1, 0, 0, None)\nGot:\n    (0, 1, 0, 1, None)\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 391:\n    sage: E.prove_BSD(verbosity=1, secs_hi=1)\nExpected:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3} by Kolyvagin.\n    [3]\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3, 5} by Kolyvagin.\n    True for p=5 by Stein-Wuthrich.\n    [3]\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 426:\n    sage: E.prove_BSD(verbosity=1)\nExpected:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2} by Kolyvagin.\n    []\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 3, 5} by Kolyvagin.\n    True for p=5 by Stein-Wuthrich.\n    p = 3 may divide the Heegner index, for which only a bound was computed.\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 0\n    [3]\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_4\n   2 of  34 in __main__.example_6\n***Test Failed*** 3 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9173\n\n",
     "created_at": "2010-06-07T04:55:50Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009173.json:
 Assignee: tbd
 
 CC:  jpflori @dimpase @kcrisman
-
 
 ```
 
@@ -74,7 +73,6 @@ Got:
 ***Test Failed*** 3 failures.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9173
 
 
@@ -110,7 +108,7 @@ Dave
 archive/issue_comments_085661.json:
 ```json
 {
-    "body": "On closer inspection, it looks like the issues you are getting on Cygwin are larger than those on Solaris, as I have not seen the \n\n\n```\nExpected:\n    (1, 1, 0, 0, None)\nGot:\n    (0, 1, 0, 1, None)\n```\n\n\nerror - only the ones due to timeouts. \n\nDave",
+    "body": "On closer inspection, it looks like the issues you are getting on Cygwin are larger than those on Solaris, as I have not seen the \n\n```\nExpected:\n    (1, 1, 0, 0, None)\nGot:\n    (0, 1, 0, 1, None)\n```\n\nerror - only the ones due to timeouts. \n\nDave",
     "created_at": "2010-06-08T00:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9173",
     "type": "issue_comment",
@@ -121,14 +119,12 @@ archive/issue_comments_085661.json:
 
 On closer inspection, it looks like the issues you are getting on Cygwin are larger than those on Solaris, as I have not seen the 
 
-
 ```
 Expected:
     (1, 1, 0, 0, None)
 Got:
     (0, 1, 0, 1, None)
 ```
-
 
 error - only the ones due to timeouts. 
 
@@ -195,7 +191,7 @@ And the test passes for me (64bits W7 + 5.6.rc0).
 archive/issue_comments_085665.json:
 ```json
 {
-    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\nDon't forget to try these by hand as well.  In the past I've had failures only in the terminal.",
+    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\n\nDon't forget to try these by hand as well.  In the past I've had failures only in the terminal.",
     "created_at": "2013-01-15T18:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9173",
     "type": "issue_comment",
@@ -205,6 +201,7 @@ archive/issue_comments_085665.json:
 ```
 
 > And the test passes for me (64bits W7 + 5.6.rc0).
+
 Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.
 
 
@@ -214,7 +211,7 @@ Don't forget to try these by hand as well.  In the past I've had failures only i
 archive/issue_comments_085666.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> > And the test passes for me (64bits W7 + 5.6.rc0).\n> Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.\nYou mean copy/paste the doctests in an interactive Sage session?\nThat's kind of boring isn't it? :)",
+    "body": "Replying to [comment:6 kcrisman]:\n> > And the test passes for me (64bits W7 + 5.6.rc0).\n\n> Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.\nYou mean copy/paste the doctests in an interactive Sage session?\nThat's kind of boring isn't it? :)",
     "created_at": "2013-01-15T21:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9173",
     "type": "issue_comment",
@@ -225,6 +222,7 @@ archive/issue_comments_085666.json:
 
 Replying to [comment:6 kcrisman]:
 > > And the test passes for me (64bits W7 + 5.6.rc0).
+
 > Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.
 You mean copy/paste the doctests in an interactive Sage session?
 That's kind of boring isn't it? :)
@@ -254,7 +252,7 @@ I tested some random examples and some from te failing ones quoting in the ticke
 archive/issue_comments_085668.json:
 ```json
 {
-    "body": "> > > And the test passes for me (64bits W7 + 5.6.rc0).\n> > Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.\n> You mean copy/paste the doctests in an interactive Sage session?\n> That's kind of boring isn't it? :)\nYes, you are right.  But unfortunately I had some bad experiences with these Cygwin tests in the past so I figure I should ask - sorry :(",
+    "body": "> > > And the test passes for me (64bits W7 + 5.6.rc0).\n\n> > Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.\n> You mean copy/paste the doctests in an interactive Sage session?\n> That's kind of boring isn't it? :)\n\nYes, you are right.  But unfortunately I had some bad experiences with these Cygwin tests in the past so I figure I should ask - sorry :(",
     "created_at": "2013-01-16T01:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9173",
     "type": "issue_comment",
@@ -264,9 +262,11 @@ archive/issue_comments_085668.json:
 ```
 
 > > > And the test passes for me (64bits W7 + 5.6.rc0).
+
 > > Don't forget to try these by hand as well.  In the past I've had failures only in the terminal.
 > You mean copy/paste the doctests in an interactive Sage session?
 > That's kind of boring isn't it? :)
+
 Yes, you are right.  But unfortunately I had some bad experiences with these Cygwin tests in the past so I figure I should ask - sorry :(
 
 

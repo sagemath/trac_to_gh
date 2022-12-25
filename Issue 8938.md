@@ -3,7 +3,7 @@
 archive/issues_008938.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: Multivariate polynomials latex\n\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Multivariate polynomials latex\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
     "created_at": "2010-05-09T20:46:29Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 Keywords: Multivariate polynomials latex
 
-
 ```
 sage: C5.<z> = CyclotomicField(5)
 sage: P.<s, t> = C5[]
@@ -30,7 +29,6 @@ sage: f
 sage: latex(f)
 z^{2} + z s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8938
 
@@ -134,7 +132,7 @@ archive/issue_events_021822.json:
 archive/issue_comments_082165.json:
 ```json
 {
-    "body": "I'm getting doctest failures with this under 4.5.alpha1:\n\n```\nsage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n**********************************************************************           \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\", line 379:                                                                                                    \n    sage: latex(-I*y+I*x^2)                                                                                   \nExpected:                                                                                                     \n    \\sqrt{-1} x^{2} - \\sqrt{-1} y                                                                             \nGot:                                                                                                          \n    \\left(\\sqrt{-1}\\right) x^{2} + \\left(-\\sqrt{-1}\\right) y                                                  \n**********************************************************************                                        \n1 items had failures:                                                                                         \n   1 of   7 in __main__.example_15                                                                            \n***Test Failed*** 1 failures.                                                                                 \nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_multi_polynomial_element.py              \n         [3.7 s]                                                                                              \nsage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"                                                           \n**********************************************************************                           File \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/qqbar.py\", line 2223:\n    sage: latex(-QQbar.zeta(4) + 5)\nExpected:\n    -i + 5\nGot:\n    -\\sqrt{-1} + 5\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_qqbar.py\n         [19.5 s]\nsage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 595:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 602:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z, x^{5}'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z, x^{5}'\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_23\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_algebraic_scheme.py\n         [5.4 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n        sage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"\n        sage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\nTotal time for all tests: 28.6 seconds\n```\n",
+    "body": "I'm getting doctest failures with this under 4.5.alpha1:\n\n```\nsage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n**********************************************************************           \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\", line 379:                                                                                                    \n    sage: latex(-I*y+I*x^2)                                                                                   \nExpected:                                                                                                     \n    \\sqrt{-1} x^{2} - \\sqrt{-1} y                                                                             \nGot:                                                                                                          \n    \\left(\\sqrt{-1}\\right) x^{2} + \\left(-\\sqrt{-1}\\right) y                                                  \n**********************************************************************                                        \n1 items had failures:                                                                                         \n   1 of   7 in __main__.example_15                                                                            \n***Test Failed*** 1 failures.                                                                                 \nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_multi_polynomial_element.py              \n         [3.7 s]                                                                                              \nsage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"                                                           \n**********************************************************************                           File \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/qqbar.py\", line 2223:\n    sage: latex(-QQbar.zeta(4) + 5)\nExpected:\n    -i + 5\nGot:\n    -\\sqrt{-1} + 5\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_qqbar.py\n         [19.5 s]\nsage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 595:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 602:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z, x^{5}'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z, x^{5}'\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_23\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_algebraic_scheme.py\n         [5.4 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n        sage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"\n        sage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\nTotal time for all tests: 28.6 seconds\n```",
     "created_at": "2010-07-01T07:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
@@ -204,7 +202,6 @@ The following tests failed:
         sage -t  "devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py"
 Total time for all tests: 28.6 seconds
 ```
-
 
 
 
@@ -285,7 +282,7 @@ See also #9478.
 archive/issue_comments_082170.json:
 ```json
 {
-    "body": "In Sage 4.7.1.rc0 I get for the last line\n\n```\n\\left(z^{2} + z\\right) s\n```\n\nso this bug has been fixed along the way.",
+    "body": "In Sage 4.7.1.rc0 I get for the last line\n\n```\n\\left(z^{2} + z\\right) s\n```\nso this bug has been fixed along the way.",
     "created_at": "2011-07-22T16:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
@@ -299,7 +296,6 @@ In Sage 4.7.1.rc0 I get for the last line
 ```
 \left(z^{2} + z\right) s
 ```
-
 so this bug has been fixed along the way.
 
 

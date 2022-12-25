@@ -3,7 +3,7 @@
 archive/issues_002534.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\n\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
+    "body": "Assignee: @williamstein\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
     "created_at": "2008-03-15T23:36:24Z",
     "labels": [
         "component: interfaces",
@@ -26,7 +26,6 @@ sage: s = SFASchur(QQ)
 sage: a = s([8,8])
 sage: a.itensor(a)
 ```
-
 gives the wrong results.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2534

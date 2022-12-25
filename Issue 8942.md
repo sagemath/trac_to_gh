@@ -3,7 +3,7 @@
 archive/issues_008942.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @mwhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @mwhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
     "created_at": "2010-05-10T09:32:39Z",
     "labels": [
         "component: calculus",
@@ -25,7 +25,6 @@ Keywords: limit
 
 In all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.
 
-
 ```
 sage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))
 sage:limit(f(x), x = pi/4) 
@@ -35,7 +34,6 @@ sage: limit(f(x), x = pi/4, dir='plus')
 sage: limit(f(x), x = pi/4, dir='minus')           
 +Infinity
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8942
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8942
 archive/issue_comments_082196.json:
 ```json
 {
-    "body": "This was fixed when we improved our recognition of Maxima's unsigned infinity.\n\n```\nsage: sage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\nsage: sage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: sage:limit(f(x), x = pi/4) \nInfinity\n```\n\nSo I guess this can be closed?  Or should we whip up a patch to document this...?",
+    "body": "This was fixed when we improved our recognition of Maxima's unsigned infinity.\n\n```\nsage: sage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\nsage: sage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: sage:limit(f(x), x = pi/4) \nInfinity\n```\nSo I guess this can be closed?  Or should we whip up a patch to document this...?",
     "created_at": "2010-05-26T20:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ sage: sage: limit(f(x), x = pi/4, dir='plus')
 sage: sage:limit(f(x), x = pi/4) 
 Infinity
 ```
-
 So I guess this can be closed?  Or should we whip up a patch to document this...?
 
 
@@ -95,7 +92,7 @@ Resolution: fixed
 archive/issue_comments_082198.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> This was fixed when we improved our recognition of Maxima's unsigned infinity.\n> {{{\n> sage: sage: limit(f(x), x = pi/4, dir='minus')           \n> +Infinity\n> sage: sage: limit(f(x), x = pi/4, dir='plus')            \n> -Infinity\n> sage: sage:limit(f(x), x = pi/4) \n> Infinity\n> }}}\n> So I guess this can be closed?  Or should we whip up a patch to document this...?\n\nThis can be closed. Thanks a lot !",
+    "body": "Replying to [comment:1 kcrisman]:\n> This was fixed when we improved our recognition of Maxima's unsigned infinity.\n> \n> ```\n> sage: sage: limit(f(x), x = pi/4, dir='minus')           \n> +Infinity\n> sage: sage: limit(f(x), x = pi/4, dir='plus')            \n> -Infinity\n> sage: sage:limit(f(x), x = pi/4) \n> Infinity\n> ```\n> So I guess this can be closed?  Or should we whip up a patch to document this...?\n\n\nThis can be closed. Thanks a lot !",
     "created_at": "2010-05-27T15:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
@@ -106,15 +103,17 @@ archive/issue_comments_082198.json:
 
 Replying to [comment:1 kcrisman]:
 > This was fixed when we improved our recognition of Maxima's unsigned infinity.
-> {{{
+> 
+> ```
 > sage: sage: limit(f(x), x = pi/4, dir='minus')           
 > +Infinity
 > sage: sage: limit(f(x), x = pi/4, dir='plus')            
 > -Infinity
 > sage: sage:limit(f(x), x = pi/4) 
 > Infinity
-> }}}
+> ```
 > So I guess this can be closed?  Or should we whip up a patch to document this...?
+
 
 This can be closed. Thanks a lot !
 
@@ -269,7 +268,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082205.json:
 ```json
 {
-    "body": "positive review (I've checked that all doctests still pass).\n\nA small comment: maybe the documentation could say more explicitly that the output `Infinity`\nindicates a complex infinity, whereas `+Infinity` means plus infinity.\n\nBy the way, there is a problem since Sage parses `Infinity` as `+Infinity`:\n\n```\nsage: Infinity\n+Infinity\nsage: Infinity == +Infinity\nTrue\nsage: a=limit(1/x, x=0)\nsage: a == +Infinity\nTrue\n```\n\nbut this could be in a different ticket.",
+    "body": "positive review (I've checked that all doctests still pass).\n\nA small comment: maybe the documentation could say more explicitly that the output `Infinity`\nindicates a complex infinity, whereas `+Infinity` means plus infinity.\n\nBy the way, there is a problem since Sage parses `Infinity` as `+Infinity`:\n\n```\nsage: Infinity\n+Infinity\nsage: Infinity == +Infinity\nTrue\nsage: a=limit(1/x, x=0)\nsage: a == +Infinity\nTrue\n```\nbut this could be in a different ticket.",
     "created_at": "2010-07-12T12:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
@@ -294,7 +293,6 @@ sage: a=limit(1/x, x=0)
 sage: a == +Infinity
 True
 ```
-
 but this could be in a different ticket.
 
 
@@ -322,7 +320,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082207.json:
 ```json
 {
-    "body": "> but this could be in a different ticket. \n\nsee #9480",
+    "body": "> but this could be in a different ticket. \n\n\nsee #9480",
     "created_at": "2010-07-12T12:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
@@ -332,6 +330,7 @@ archive/issue_comments_082207.json:
 ```
 
 > but this could be in a different ticket. 
+
 
 see #9480
 

@@ -165,7 +165,7 @@ Positive review.  Apply both patches.
 archive/issue_comments_005219.json:
 ```json
 {
-    "body": "\n```\n[7:40pm] cwitty: Argh... and #4564 conflicts with 846-more-gmp-reviewer.patch (I was wondering why the original patch didn't even compile...)\n[7:41pm] mabshoff: mmmh\n[7:41pm] mabshoff: So I don't need the reviewer patch I assume.\n[7:41pm] cwitty: You need the half of it that creates an __init__.py file; probably not the half that patches integer.pyx .\n[7:44pm] mabshoff: mk\n[7:45pm] mabshoff: I assume that is lost in RobertWB's patch since hg screws up the empty file creation as usual.\n[7:45pm] mabshoff: I will copy and paste the last couple lines to the ticket and then merge it.\n```\n\n\nCheers,\n\nMichael",
+    "body": "```\n[7:40pm] cwitty: Argh... and #4564 conflicts with 846-more-gmp-reviewer.patch (I was wondering why the original patch didn't even compile...)\n[7:41pm] mabshoff: mmmh\n[7:41pm] mabshoff: So I don't need the reviewer patch I assume.\n[7:41pm] cwitty: You need the half of it that creates an __init__.py file; probably not the half that patches integer.pyx .\n[7:44pm] mabshoff: mk\n[7:45pm] mabshoff: I assume that is lost in RobertWB's patch since hg screws up the empty file creation as usual.\n[7:45pm] mabshoff: I will copy and paste the last couple lines to the ticket and then merge it.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T03:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/846",
     "type": "issue_comment",
@@ -173,7 +173,6 @@ archive/issue_comments_005219.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [7:40pm] cwitty: Argh... and #4564 conflicts with 846-more-gmp-reviewer.patch (I was wondering why the original patch didn't even compile...)
@@ -184,7 +183,6 @@ archive/issue_comments_005219.json:
 [7:45pm] mabshoff: I assume that is lost in RobertWB's patch since hg screws up the empty file creation as usual.
 [7:45pm] mabshoff: I will copy and paste the last couple lines to the ticket and then merge it.
 ```
-
 
 Cheers,
 

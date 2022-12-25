@@ -3,7 +3,7 @@
 archive/issues_003655.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nThis was reported by C Boncelet.\n\n\n```\nsage: x = PolynomialRing(QQ,'x').gen()\nsage: f = Piecewise([[(0,1),1*x^0]])\nsage: r = f*2\nsage: r = 2*f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n/Users/boncelet/<ipython console> in <module>()\n/Users/boncelet/element.pyx in\nsage.structure.element.RingElement.__mul__ (sage/structure/element.c:\n8545)()\n/Users/boncelet/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/\nstructure/coerce.c:5338)()\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and\n'<type 'instance'>'\n```\n\n\nHe then suggested simply defining __rmul__ = __mul__:\n\n\n```\nsage: f.__rmul__ = f.__mul__\nsage: r = f*2\nsage: r = 2*f\nsage: r\nPiecewise defined function with 1 parts, [[(0, 1), 2]]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3655\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis was reported by C Boncelet.\n\n```\nsage: x = PolynomialRing(QQ,'x').gen()\nsage: f = Piecewise([[(0,1),1*x^0]])\nsage: r = f*2\nsage: r = 2*f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n/Users/boncelet/<ipython console> in <module>()\n/Users/boncelet/element.pyx in\nsage.structure.element.RingElement.__mul__ (sage/structure/element.c:\n8545)()\n/Users/boncelet/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/\nstructure/coerce.c:5338)()\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and\n'<type 'instance'>'\n```\n\nHe then suggested simply defining __rmul__ = __mul__:\n\n```\nsage: f.__rmul__ = f.__mul__\nsage: r = f*2\nsage: r = 2*f\nsage: r\nPiecewise defined function with 1 parts, [[(0, 1), 2]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3655\n\n",
     "created_at": "2008-07-15T01:46:22Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_003655.json:
 Assignee: @garyfurnish
 
 This was reported by C Boncelet.
-
 
 ```
 sage: x = PolynomialRing(QQ,'x').gen()
@@ -40,9 +39,7 @@ TypeError: unsupported operand parent(s) for '*': 'Integer Ring' and
 '<type 'instance'>'
 ```
 
-
 He then suggested simply defining __rmul__ = __mul__:
-
 
 ```
 sage: f.__rmul__ = f.__mul__
@@ -51,7 +48,6 @@ sage: r = 2*f
 sage: r
 Piecewise defined function with 1 parts, [[(0, 1), 2]]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3655

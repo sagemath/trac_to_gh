@@ -3,7 +3,7 @@
 archive/issues_008568.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout @burcin\n\nSometimes sage can differentiate erf, but if there are two variables involved it gets confused in simplification and passes too many arguments to erf in maxima.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('c x')\n(c, x)\nsage: diff(erf(x), x)\nD[0](erf)(x)\nsage: simplify(diff(erf(x), x))\n2*e^(-x^2)/sqrt(pi)\nsage: diff(erf(c * x), x)\nc*D[0](erf)(c*x)\nsage: simplify(diff(erf(c * x), x))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/.../<ipython console> in <module>()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/functional.pyc\nin simplify(f)\n     49     \"\"\"\n     50     try:\n---> 51         return f.simplify()\n     52     except AttributeError:\n     53         return f\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression.simplify (sage/symbolic/expression.cpp:21495)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3435)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error executing code in Maxima\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n        \nWrong number of arguments to erf\n -- an error. To debug this try: debugmode(true);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8568\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @burcin\n\nSometimes sage can differentiate erf, but if there are two variables involved it gets confused in simplification and passes too many arguments to erf in maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('c x')\n(c, x)\nsage: diff(erf(x), x)\nD[0](erf)(x)\nsage: simplify(diff(erf(x), x))\n2*e^(-x^2)/sqrt(pi)\nsage: diff(erf(c * x), x)\nc*D[0](erf)(c*x)\nsage: simplify(diff(erf(c * x), x))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/.../<ipython console> in <module>()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/functional.pyc\nin simplify(f)\n     49     \"\"\"\n     50     try:\n---> 51         return f.simplify()\n     52     except AttributeError:\n     53         return f\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression.simplify (sage/symbolic/expression.cpp:21495)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3435)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error executing code in Maxima\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n        \nWrong number of arguments to erf\n -- an error. To debug this try: debugmode(true);\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8568\n\n",
     "created_at": "2010-03-21T07:36:42Z",
     "labels": [
         "component: calculus",
@@ -21,7 +21,6 @@ Assignee: @burcin
 CC:  @jasongrout @burcin
 
 Sometimes sage can differentiate erf, but if there are two variables involved it gets confused in simplification and passes too many arguments to erf in maxima.
-
 
 ```
 ----------------------------------------------------------------------
@@ -83,7 +82,6 @@ Wrong number of arguments to erf
  -- an error. To debug this try: debugmode(true);
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8568
 
 
@@ -95,7 +93,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8568
 archive/issue_comments_077470.json:
 ```json
 {
-    "body": "\n```\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n```\n\nThis looks suspicious.  Why is it not erf(c*x)?  I will investigate.",
+    "body": "```\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n```\nThis looks suspicious.  Why is it not erf(c*x)?  I will investigate.",
     "created_at": "2010-05-26T20:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -104,13 +102,11 @@ archive/issue_comments_077470.json:
 }
 ```
 
-
 ```
 CODE:
         sage4 : (c)*(diff('erf(c, x), c, 1))$
 Maxima ERROR:
 ```
-
 This looks suspicious.  Why is it not erf(c*x)?  I will investigate.
 
 
@@ -138,7 +134,7 @@ Another problem... note that the variable being used in differentiation is c, no
 archive/issue_comments_077472.json:
 ```json
 {
-    "body": "Somehow it must be related to this inconsistency.\n\n```\nsage: a\nc*D[0](erf)(c*x)\nsage: a._maxima_init_()\n\"(c)*(diff('erf(c, x), c, 1))\"\nsage: a.operands()[1].operands()[0]\nc*x\nsage: a.operands()[1].operands()[0]._maxima_init_()\n'(c)*(x)'\n```\n\nAny ideas?",
+    "body": "Somehow it must be related to this inconsistency.\n\n```\nsage: a\nc*D[0](erf)(c*x)\nsage: a._maxima_init_()\n\"(c)*(diff('erf(c, x), c, 1))\"\nsage: a.operands()[1].operands()[0]\nc*x\nsage: a.operands()[1].operands()[0]._maxima_init_()\n'(c)*(x)'\n```\nAny ideas?",
     "created_at": "2010-05-26T21:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -159,7 +155,6 @@ c*x
 sage: a.operands()[1].operands()[0]._maxima_init_()
 '(c)*(x)'
 ```
-
 Any ideas?
 
 
@@ -484,7 +479,7 @@ archive/issue_events_020671.json:
 archive/issue_comments_077487.json:
 ```json
 {
-    "body": "Here it is.  I'll try to fix it quickly, hopefully this can still get in 4.4.4.\n\n```\nFile \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/devel/sage/sage/interfaces/maxima.py\", line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_70[4]>\", line 1, in <module>\n        latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))###line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1034, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1058, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"expression.pyx\", line 435, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3420)\n      File \"sage_object.pyx\", line 379, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3374)\n      File \"sage_object.pyx\", line 468, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5083)\n      File \"expression.pyx\", line 458, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3510)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 218, in __call__\n        return self.derivative(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 495, in derivative\n        raise NotImplementedError, \"arguments must be distinct variables\"\n    NotImplementedError: arguments must be distinct variables\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/kcrisman/.sage//tmp/.doctest_maxima.py\n\t [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
+    "body": "Here it is.  I'll try to fix it quickly, hopefully this can still get in 4.4.4.\n\n```\nFile \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/devel/sage/sage/interfaces/maxima.py\", line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_70[4]>\", line 1, in <module>\n        latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))###line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1034, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1058, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"expression.pyx\", line 435, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3420)\n      File \"sage_object.pyx\", line 379, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3374)\n      File \"sage_object.pyx\", line 468, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5083)\n      File \"expression.pyx\", line 458, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3510)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 218, in __call__\n        return self.derivative(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 495, in derivative\n        raise NotImplementedError, \"arguments must be distinct variables\"\n    NotImplementedError: arguments must be distinct variables\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/kcrisman/.sage//tmp/.doctest_maxima.py\n\t [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```",
     "created_at": "2010-06-08T01:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -546,13 +541,12 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_077488.json:
 ```json
 {
-    "body": "Or not.\n\n```\nsage: maxima(derivative(ceil(d),d))\n'diff('ceil(d),d,1)\nsage: maxima(derivative(ceil(x*d),d))\n<same NotImplementedError>\n```\n\nSo the problem is that Burcin's Maxima conversion change now doesn't work with\n\n```\n    493         if (not all(is_SymbolicVariable(v) for v in args) or\n    494             len(args) != len(set(args))):\n--> 495             raise NotImplementedError, \"arguments must be distinct variables\"\n    496 \n    497         f = operator.function()\n```\n\nin derivative().  In fact, he even included a doctest for it!\n\n```\nWe can only convert to Maxima derivatives if the corresponding operand of the function is a variable:: \nsage: y = var('y') \nsage: t = f(x*y).diff(x) \nsage: m.derivative(t, t.operator()) \nTraceback (most recent call last): \n... \nNotImplementedError: arguments must be distinct variables \n```\n\nThis example could be fixed if one fixed\n\n```\nsage: derivative(ceil(x),x)\nD[0](ceil)(x)\n```\n\nso that there isn't a derivative function defined for ceil.  I'm not sure exactly what would count, though... just the zero function?",
+    "body": "Or not.\n\n```\nsage: maxima(derivative(ceil(d),d))\n'diff('ceil(d),d,1)\nsage: maxima(derivative(ceil(x*d),d))\n<same NotImplementedError>\n```\nSo the problem is that Burcin's Maxima conversion change now doesn't work with\n\n```\n    493         if (not all(is_SymbolicVariable(v) for v in args) or\n    494             len(args) != len(set(args))):\n--> 495             raise NotImplementedError, \"arguments must be distinct variables\"\n    496 \n    497         f = operator.function()\n```\nin derivative().  In fact, he even included a doctest for it!\n\n```\nWe can only convert to Maxima derivatives if the corresponding operand of the function is a variable:: \nsage: y = var('y') \nsage: t = f(x*y).diff(x) \nsage: m.derivative(t, t.operator()) \nTraceback (most recent call last): \n... \nNotImplementedError: arguments must be distinct variables \n```\nThis example could be fixed if one fixed\n\n```\nsage: derivative(ceil(x),x)\nD[0](ceil)(x)\n```\nso that there isn't a derivative function defined for ceil.  I'm not sure exactly what would count, though... just the zero function?",
     "created_at": "2010-06-08T01:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
@@ -569,7 +563,6 @@ sage: maxima(derivative(ceil(d),d))
 sage: maxima(derivative(ceil(x*d),d))
 <same NotImplementedError>
 ```
-
 So the problem is that Burcin's Maxima conversion change now doesn't work with
 
 ```
@@ -579,7 +572,6 @@ So the problem is that Burcin's Maxima conversion change now doesn't work with
     496 
     497         f = operator.function()
 ```
-
 in derivative().  In fact, he even included a doctest for it!
 
 ```
@@ -591,14 +583,12 @@ Traceback (most recent call last):
 ... 
 NotImplementedError: arguments must be distinct variables 
 ```
-
 This example could be fixed if one fixed
 
 ```
 sage: derivative(ceil(x),x)
 D[0](ceil)(x)
 ```
-
 so that there isn't a derivative function defined for ceil.  I'm not sure exactly what would count, though... just the zero function?
 
 

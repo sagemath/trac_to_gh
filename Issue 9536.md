@@ -93,7 +93,7 @@ Attachment [setup_py_issue.patch](tarball://root/attachments/some-uuid/ticket953
 archive/issue_comments_091695.json:
 ```json
 {
-    "body": "The following packages from the distribution use setup.py and may be affected:\n\n```\nzodb3-3.7.0.p4\nscipy_sandbox-20071020.p5\npexpect-2.0.p4\nsqlalchemy-0.5.8\nglpk-4.44\nmpmath-0.15\npil-1.1.6.p2\nmercurial-1.3.1.p2\npycrypto-2.0.1.p5\nmpir-1.2.2.p1\nweave-0.4.9.p0\nsympy-0.6.4.p0\nscons-1.2.0\nnumpy-1.3.0.p3\ngdmodule-0.56.p7\nsagetex-2.2.5\nsage-4.5\nmatplotlib-0.99.3\nsage_scripts-4.5\nsetuptools-0.6c9.p0\npython-2.6.4.p9\npython_gnutls-1.1.4.p7\nsagenb-0.8.1\nnetworkx-1.0.1\njinja-1.2.p0\ncython-0.12.1\npygments-0.11.1.p0\nscipy-0.7.p5\ncvxopt-0.9.p8\njinja2-2.1.1.p0\nsphinx-0.6.3.p4\ndocutils-0.5.p0\ntwisted-9.0.p2\nipython-0.9.1.p0\nmoin-1.9.1.p1\n```\n\n\nThe following already have setup.cfg, but it may not have the prefix definition:\n\n```\nzodb3-3.7.0.p4\nsqlalchemy-0.5.8\nscons-1.2.0\nmatplotlib-0.99.3\nsetuptools-0.6c9.p0\nsagenb-0.8.1\nnetworkx-1.0.1\njinja-1.2.p0\npygments-0.11.1.p0\njinja2-2.1.1.p0\nsphinx-0.6.3.p4\ntwisted-9.0.p2\nmoin-1.9.1.p1\n```\n",
+    "body": "The following packages from the distribution use setup.py and may be affected:\n\n```\nzodb3-3.7.0.p4\nscipy_sandbox-20071020.p5\npexpect-2.0.p4\nsqlalchemy-0.5.8\nglpk-4.44\nmpmath-0.15\npil-1.1.6.p2\nmercurial-1.3.1.p2\npycrypto-2.0.1.p5\nmpir-1.2.2.p1\nweave-0.4.9.p0\nsympy-0.6.4.p0\nscons-1.2.0\nnumpy-1.3.0.p3\ngdmodule-0.56.p7\nsagetex-2.2.5\nsage-4.5\nmatplotlib-0.99.3\nsage_scripts-4.5\nsetuptools-0.6c9.p0\npython-2.6.4.p9\npython_gnutls-1.1.4.p7\nsagenb-0.8.1\nnetworkx-1.0.1\njinja-1.2.p0\ncython-0.12.1\npygments-0.11.1.p0\nscipy-0.7.p5\ncvxopt-0.9.p8\njinja2-2.1.1.p0\nsphinx-0.6.3.p4\ndocutils-0.5.p0\ntwisted-9.0.p2\nipython-0.9.1.p0\nmoin-1.9.1.p1\n```\n\nThe following already have setup.cfg, but it may not have the prefix definition:\n\n```\nzodb3-3.7.0.p4\nsqlalchemy-0.5.8\nscons-1.2.0\nmatplotlib-0.99.3\nsetuptools-0.6c9.p0\nsagenb-0.8.1\nnetworkx-1.0.1\njinja-1.2.p0\npygments-0.11.1.p0\njinja2-2.1.1.p0\nsphinx-0.6.3.p4\ntwisted-9.0.p2\nmoin-1.9.1.p1\n```",
     "created_at": "2010-07-18T15:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ ipython-0.9.1.p0
 moin-1.9.1.p1
 ```
 
-
 The following already have setup.cfg, but it may not have the prefix definition:
 
 ```
@@ -160,7 +159,6 @@ sphinx-0.6.3.p4
 twisted-9.0.p2
 moin-1.9.1.p1
 ```
-
 
 
 
@@ -216,7 +214,7 @@ Best regards,
 archive/issue_comments_091698.json:
 ```json
 {
-    "body": "maybe, I did not try (just read the docs):\nhttp://docs.python.org/install/#inst-config-files\n\ncreate system distutils.cfg\n\n\n```\n[global]\nno-user-cfg=1\n```\n",
+    "body": "maybe, I did not try (just read the docs):\nhttp://docs.python.org/install/#inst-config-files\n\ncreate system distutils.cfg\n\n```\n[global]\nno-user-cfg=1\n```",
     "created_at": "2010-07-19T10:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -230,12 +228,10 @@ http://docs.python.org/install/#inst-config-files
 
 create system distutils.cfg
 
-
 ```
 [global]
 no-user-cfg=1
 ```
-
 
 
 
@@ -385,7 +381,7 @@ Minor update: http://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p
 archive/issue_comments_091705.json:
 ```json
 {
-    "body": "Replying to [comment:9 AlexanderDreyer]:\n> Minor update: http://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg (useful, if the `sage-env` patch is not used)\nYou should also create patches/ACKS.txt.diff as a unified diff file. Although its fairly obvious you can recreate that now, that will not be the case if Python source code is updated. \n\nWould a simpler solution not be for sage-env to set this variable and export it? I don't know much about python, so can't review this myself. \n\nDave",
+    "body": "Replying to [comment:9 AlexanderDreyer]:\n> Minor update: http://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg (useful, if the `sage-env` patch is not used)\n\nYou should also create patches/ACKS.txt.diff as a unified diff file. Although its fairly obvious you can recreate that now, that will not be the case if Python source code is updated. \n\nWould a simpler solution not be for sage-env to set this variable and export it? I don't know much about python, so can't review this myself. \n\nDave",
     "created_at": "2010-07-21T11:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -396,6 +392,7 @@ archive/issue_comments_091705.json:
 
 Replying to [comment:9 AlexanderDreyer]:
 > Minor update: http://sage.math.washington.edu/home/dreyer/suse101/python-2.6.4.p10.spkg (useful, if the `sage-env` patch is not used)
+
 You should also create patches/ACKS.txt.diff as a unified diff file. Although its fairly obvious you can recreate that now, that will not be the case if Python source code is updated. 
 
 Would a simpler solution not be for sage-env to set this variable and export it? I don't know much about python, so can't review this myself. 
@@ -902,7 +899,7 @@ Prevents pyzmq from building...
 archive/issue_comments_091722.json:
 ```json
 {
-    "body": "\n```\n  Source in /tmp/pip-mTg5Xg-build has version 16.0.0, which satisfies requirement pyzmq==16.0.0 from file:///mnt/disk/home/release/Sage/local/var/tmp/sage/build/pyzmq-16.0.0/src\nInstalling collected packages: pyzmq\n  Running setup.py install for pyzmq: started\n    Running command /mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\n    running configure\n    error: error in command line: command 'Configure' has no such option 'no_user_cfg'\n    Running setup.py install for pyzmq: finished with status 'error'\nCleaning up...\n  Removing source in /tmp/pip-mTg5Xg-build\nCommand \"/mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\" failed with error code 1 in /tmp/pip-mTg5Xg-build/\nException information:\nTraceback (most recent call last):\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/basecommand.py\", line 215, in main\n    status = self.run(options, args)\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/commands/install.py\", line 317, in run\n    prefix=options.prefix_path,\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/req/req_set.py\", line 742, in install\n    **kwargs\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/req/req_install.py\", line 880, in install\n    spinner=spinner,\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/utils/__init__.py\", line 718, in call_subprocess\n    % (command_desc, proc.returncode, cwd))\nInstallationError: Command \"/mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\" failed with error code 1 in /tmp/pip-mTg5Xg-build/\n```\n",
+    "body": "```\n  Source in /tmp/pip-mTg5Xg-build has version 16.0.0, which satisfies requirement pyzmq==16.0.0 from file:///mnt/disk/home/release/Sage/local/var/tmp/sage/build/pyzmq-16.0.0/src\nInstalling collected packages: pyzmq\n  Running setup.py install for pyzmq: started\n    Running command /mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\n    running configure\n    error: error in command line: command 'Configure' has no such option 'no_user_cfg'\n    Running setup.py install for pyzmq: finished with status 'error'\nCleaning up...\n  Removing source in /tmp/pip-mTg5Xg-build\nCommand \"/mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\" failed with error code 1 in /tmp/pip-mTg5Xg-build/\nException information:\nTraceback (most recent call last):\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/basecommand.py\", line 215, in main\n    status = self.run(options, args)\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/commands/install.py\", line 317, in run\n    prefix=options.prefix_path,\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/req/req_set.py\", line 742, in install\n    **kwargs\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/req/req_install.py\", line 880, in install\n    spinner=spinner,\n  File \"/mnt/disk/home/release/Sage/local/lib/python2.7/site-packages/pip/utils/__init__.py\", line 718, in call_subprocess\n    % (command_desc, proc.returncode, cwd))\nInstallationError: Command \"/mnt/disk/home/release/Sage/local/bin/python -u -c \"import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\\r\\n', '\\n'), __file__, 'exec'))\" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile\" failed with error code 1 in /tmp/pip-mTg5Xg-build/\n```",
     "created_at": "2016-11-09T20:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9536",
     "type": "issue_comment",
@@ -910,7 +907,6 @@ archive/issue_comments_091722.json:
     "user": "https://github.com/vbraun"
 }
 ```
-
 
 ```
   Source in /tmp/pip-mTg5Xg-build has version 16.0.0, which satisfies requirement pyzmq==16.0.0 from file:///mnt/disk/home/release/Sage/local/var/tmp/sage/build/pyzmq-16.0.0/src
@@ -937,7 +933,6 @@ Traceback (most recent call last):
     % (command_desc, proc.returncode, cwd))
 InstallationError: Command "/mnt/disk/home/release/Sage/local/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-mTg5Xg-build/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" configure --zmq=/mnt/disk/home/release/Sage/local --no-user-cfg install --record /tmp/pip-o79sR3-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-mTg5Xg-build/
 ```
-
 
 
 

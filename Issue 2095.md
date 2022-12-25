@@ -3,7 +3,7 @@
 archive/issues_002095.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\n\nplots a straight line.\n\n\n```\nsage: x/x\n1\n```\n\n\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\nplots a straight line.\n\n```\nsage: x/x\n1\n```\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
     "created_at": "2008-02-08T01:36:44Z",
     "labels": [
         "component: calculus",
@@ -18,14 +18,11 @@ archive/issues_002095.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: plot(arcsin(sin(x)))
 ```
 
-
 plots a straight line.
-
 
 ```
 sage: x/x
@@ -33,14 +30,11 @@ sage: x/x
 ```
 
 
-
-
 ```
 sage: assume(x<0)
 sage: sqrt(x)^2
 x
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2095
@@ -54,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2095
 archive/issue_comments_013525.json:
 ```json
 {
-    "body": "Which is \"sometimes wrong\"?  The first two examples look fine to me.  For the third, we're totally screwed -- or -- we just don't understand Maxima, since it's just the\nnative behavior of Maxima:\n\n\n```\n\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.41 (2006-10-13)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) assume(x<0);\n(%o1)                               [x < 0]\n(%i2) sqrt(x)^2;\n(%o2)                                  x\n\n```\n",
+    "body": "Which is \"sometimes wrong\"?  The first two examples look fine to me.  For the third, we're totally screwed -- or -- we just don't understand Maxima, since it's just the\nnative behavior of Maxima:\n\n```\n\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.41 (2006-10-13)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) assume(x<0);\n(%o1)                               [x < 0]\n(%i2) sqrt(x)^2;\n(%o2)                                  x\n\n```",
     "created_at": "2008-02-08T04:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
@@ -65,7 +59,6 @@ archive/issue_comments_013525.json:
 
 Which is "sometimes wrong"?  The first two examples look fine to me.  For the third, we're totally screwed -- or -- we just don't understand Maxima, since it's just the
 native behavior of Maxima:
-
 
 ```
 
@@ -85,13 +78,12 @@ provides bug reporting information.
 
 
 
-
 ---
 
 archive/issue_comments_013526.json:
 ```json
 {
-    "body": "These are examples pointed out by Peter Jipsen... the second one I think is okay. The first one could be problematic, but Robert pointed out that it works fine if you use fast_eval. For the third, I think we are screwed. There is the command\n\n\n```\ndomain:real;\nreal\n\ndomain:complex;\ncomplex\n```\n\n\nin maxima, however the *only* effect that this seems to have on Maxima is if domain is real, sqrt(x^2) returns abs(x).\n\nPerhaps this should be changed to an enhancement. Assume() is currently only there as a workaround to Maxima's interactive behavior; it would be nice if Sage were smarter about assumptions on symbolic variables.",
+    "body": "These are examples pointed out by Peter Jipsen... the second one I think is okay. The first one could be problematic, but Robert pointed out that it works fine if you use fast_eval. For the third, I think we are screwed. There is the command\n\n```\ndomain:real;\nreal\n\ndomain:complex;\ncomplex\n```\n\nin maxima, however the *only* effect that this seems to have on Maxima is if domain is real, sqrt(x^2) returns abs(x).\n\nPerhaps this should be changed to an enhancement. Assume() is currently only there as a workaround to Maxima's interactive behavior; it would be nice if Sage were smarter about assumptions on symbolic variables.",
     "created_at": "2008-02-08T21:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
@@ -102,7 +94,6 @@ archive/issue_comments_013526.json:
 
 These are examples pointed out by Peter Jipsen... the second one I think is okay. The first one could be problematic, but Robert pointed out that it works fine if you use fast_eval. For the third, I think we are screwed. There is the command
 
-
 ```
 domain:real;
 real
@@ -110,7 +101,6 @@ real
 domain:complex;
 complex
 ```
-
 
 in maxima, however the *only* effect that this seems to have on Maxima is if domain is real, sqrt(x^2) returns abs(x).
 

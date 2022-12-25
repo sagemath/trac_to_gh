@@ -3,7 +3,7 @@
 archive/issues_000798.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis used to be broken:\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(2),3)\nsage: f = x + y + 1\nsage: f.subs(x=y+1)\n0 # used to return 1\n```\n\nthe attached two patches fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/798\n\n",
+    "body": "Assignee: somebody\n\nThis used to be broken:\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(2),3)\nsage: f = x + y + 1\nsage: f.subs(x=y+1)\n0 # used to return 1\n```\nthe attached two patches fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/798\n\n",
     "created_at": "2007-10-03T03:04:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,7 +26,6 @@ sage: f = x + y + 1
 sage: f.subs(x=y+1)
 0 # used to return 1
 ```
-
 the attached two patches fixes this.
 
 Issue created by migration from https://trac.sagemath.org/ticket/798

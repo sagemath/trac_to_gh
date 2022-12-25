@@ -49,7 +49,7 @@ See comment.
 archive/issue_comments_043993.json:
 ```json
 {
-    "body": "Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by @qed777 created at 2009-04-18 09:17:56\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\n\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
+    "body": "Attachment [trac_5644_esc_kills_introspect.patch](tarball://root/attachments/some-uuid/ticket5644/trac_5644_esc_kills_introspect.patch) by @qed777 created at 2009-04-18 09:17:56\n\nThe attached patch seems to work in Firefox 3 without breaking other functions.  I'm not sure about the purpose of\n\n```\n            if(browser_op) { focus_delay(id,true); }\n```\nAlthough I haven't copied this to the new conditional clause, the patch works in Opera 9, too.\n\nBy the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.",
     "created_at": "2009-04-18T09:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ The attached patch seems to work in Firefox 3 without breaking other functions. 
 ```
             if(browser_op) { focus_delay(id,true); }
 ```
-
 Although I haven't copied this to the new conditional clause, the patch works in Opera 9, too.
 
 By the way, I think the `halt_introspection();` statement just before the new code is unnecessary, since `handle_replacement_controls()` calls it before returning `true`.  But the patch leaves this alone.
@@ -97,7 +96,7 @@ Because of this, I've changed this ticket's status to "needs work."  The TAB-onl
 archive/issue_comments_043995.json:
 ```json
 {
-    "body": "On \"SHIFT-ENTER\" introspection: If you're feeling adventurous, replace the new lines in the patch with these:\n\n```\n    } else if((introspect_id == id) && introspection_loaded) {\n        if(key_close_helper(e)) {\n            halt_introspection();\n            return false; //otherwise, keep going\n        }\n    } else {\n        output_html = get_element('cell_output_html_'+id);\n        pre0 = output_html.getElementsByTagName('pre')[0];\n        if (pre0 && (pre0.getAttribute('class') === 'introspection') && key_close_helper(e)) {\n            output_html.removeChild(pre0);\n            return false; //otherwise, keep going\n        }\n```\n\nNote: This doesn't tell the server about any changes!  I don't know exactly how this plays out in practice.",
+    "body": "On \"SHIFT-ENTER\" introspection: If you're feeling adventurous, replace the new lines in the patch with these:\n\n```\n    } else if((introspect_id == id) && introspection_loaded) {\n        if(key_close_helper(e)) {\n            halt_introspection();\n            return false; //otherwise, keep going\n        }\n    } else {\n        output_html = get_element('cell_output_html_'+id);\n        pre0 = output_html.getElementsByTagName('pre')[0];\n        if (pre0 && (pre0.getAttribute('class') === 'introspection') && key_close_helper(e)) {\n            output_html.removeChild(pre0);\n            return false; //otherwise, keep going\n        }\n```\nNote: This doesn't tell the server about any changes!  I don't know exactly how this plays out in practice.",
     "created_at": "2009-04-18T13:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
@@ -122,7 +121,6 @@ On "SHIFT-ENTER" introspection: If you're feeling adventurous, replace the new l
             return false; //otherwise, keep going
         }
 ```
-
 Note: This doesn't tell the server about any changes!  I don't know exactly how this plays out in practice.
 
 
@@ -152,7 +150,7 @@ At first glance, which is all I can muster right now, notebook treats TABS and S
 archive/issue_comments_043997.json:
 ```json
 {
-    "body": "A first take at \"unification:\" Replace the end of `js.py`'s `set_output_text()` with something like\n\n```\n    if(introspect_id == id) {\n        if (status == 'd') {\n            introspection_loaded = true;\n            introspection_text = introspect_html;\n        }\n        update_introspection_text();\n    } else if(introspect_html != '') {\n        introspect_id = id;\n        introspection_loaded = true;\n        introspection_text = introspect_html;\n        update_introspection_text();\n/*\n        cell_output.innerHTML = '';\n        cell_output_nowrap.innerHTML = '';\n        cell_output_html.innerHTML = introspect_html;\n        if (contains_jsmath(introspect_html)) {\n            try {\n                jsMath.ProcessBeforeShowing(cell_output_html);\n            } catch(e) {\n                cell_output.innerHTML = jsmath_font_msg + cell_output_html.innerHTML;\n            }\n        }\n*/\n    } else {\n        introspect_id = id;\n        introspection_loaded = true;\n        introspection_text = '';\n        update_introspection_text();\n    }\n```\n\nProbably, it's *far* better to eliminate all global variables, starting with those related to introspection.  This would\n* Make it easier to understand, maintain, and modify the code.\n* Permit independent (i.e., non-interfering) introspection windows for different cells.\n* Help with ticket #6001.\nTo be continued...",
+    "body": "A first take at \"unification:\" Replace the end of `js.py`'s `set_output_text()` with something like\n\n```\n    if(introspect_id == id) {\n        if (status == 'd') {\n            introspection_loaded = true;\n            introspection_text = introspect_html;\n        }\n        update_introspection_text();\n    } else if(introspect_html != '') {\n        introspect_id = id;\n        introspection_loaded = true;\n        introspection_text = introspect_html;\n        update_introspection_text();\n/*\n        cell_output.innerHTML = '';\n        cell_output_nowrap.innerHTML = '';\n        cell_output_html.innerHTML = introspect_html;\n        if (contains_jsmath(introspect_html)) {\n            try {\n                jsMath.ProcessBeforeShowing(cell_output_html);\n            } catch(e) {\n                cell_output.innerHTML = jsmath_font_msg + cell_output_html.innerHTML;\n            }\n        }\n*/\n    } else {\n        introspect_id = id;\n        introspection_loaded = true;\n        introspection_text = '';\n        update_introspection_text();\n    }\n```\nProbably, it's *far* better to eliminate all global variables, starting with those related to introspection.  This would\n* Make it easier to understand, maintain, and modify the code.\n* Permit independent (i.e., non-interfering) introspection windows for different cells.\n* Help with ticket #6001.\nTo be continued...",
     "created_at": "2009-05-23T23:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5644",
     "type": "issue_comment",
@@ -194,7 +192,6 @@ A first take at "unification:" Replace the end of `js.py`'s `set_output_text()` 
         update_introspection_text();
     }
 ```
-
 Probably, it's *far* better to eliminate all global variables, starting with those related to introspection.  This would
 * Make it easier to understand, maintain, and modify the code.
 * Permit independent (i.e., non-interfering) introspection windows for different cells.

@@ -154,7 +154,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081506.json:
 ```json
 {
-    "body": ">     * line 824: change 'depend' to 'depends'\n>     * line 844 mentions 'the argument cc', but there is no argument called 'cc'\n>     * line 847: can you use `isinstance(args[1], (list,tuple))` instead here?\n>     * line 862: there are some formatting issues (indentation; using `:` instead of `::` and missing a blank line afterwards)\n>     * line 893: there is a 'cc' in the comment\n>     * line 902: it seems that the comment `#_prefix = \"\"` is not necessary\n\nAll those comment should be addressed in the new patch. I also corrected some more doc issues.\nPlease review.",
+    "body": ">     * line 824: change 'depend' to 'depends'\n>     * line 844 mentions 'the argument cc', but there is no argument called 'cc'\n>     * line 847: can you use `isinstance(args[1], (list,tuple))` instead here?\n>     * line 862: there are some formatting issues (indentation; using `:` instead of `::` and missing a blank line afterwards)\n>     * line 893: there is a 'cc' in the comment\n>     * line 902: it seems that the comment `#_prefix = \"\"` is not necessary\n\n\nAll those comment should be addressed in the new patch. I also corrected some more doc issues.\nPlease review.",
     "created_at": "2010-05-05T14:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
@@ -169,6 +169,7 @@ archive/issue_comments_081506.json:
 >     * line 862: there are some formatting issues (indentation; using `:` instead of `::` and missing a blank line afterwards)
 >     * line 893: there is a 'cc' in the comment
 >     * line 902: it seems that the comment `#_prefix = ""` is not necessary
+
 
 All those comment should be addressed in the new patch. I also corrected some more doc issues.
 Please review.
@@ -216,7 +217,7 @@ It seems that you mistakenly uploaded a patch for #8832 instead.
 archive/issue_comments_081509.json:
 ```json
 {
-    "body": "Replying to [comment:4 saliola]:\n> It seems that you mistakenly uploaded a patch for #8832 instead.\n\nOops !!!",
+    "body": "Replying to [comment:4 saliola]:\n> It seems that you mistakenly uploaded a patch for #8832 instead.\n\n\nOops !!!",
     "created_at": "2010-05-05T15:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
@@ -228,6 +229,7 @@ archive/issue_comments_081509.json:
 Replying to [comment:4 saliola]:
 > It seems that you mistakenly uploaded a patch for #8832 instead.
 
+
 Oops !!!
 
 
@@ -237,7 +239,7 @@ Oops !!!
 archive/issue_comments_081510.json:
 ```json
 {
-    "body": "Everything looks good except for one thing. I realize it is not your patch that created the problem, but since you are poking around in this code, I figure you might be able to correct it quickly.\n\nIn this block of code:\n\n```\n822\t        # convert the argument args[2] into a tuple if it is a list. \n823\t        # note: if args is too short, we still propagate it down \n824\t        # to __init__ to let it handle proper exception raising. \n825\t        if len(args) >= 2 and isinstance(args[1], (list, tuple)): \n826\t            args = (args[0], FiniteEnumeratedSet(args[1])) + args[2:] \n827\t        return super(CombinatorialFreeModule, cls).__classcall__(cls, *args, **keywords) \n```\n\nthe comment says that `args[2]` will be converted into a tuple, but I don't actually see it happening. Is this a problem, or just a comment that needs to be deleted?",
+    "body": "Everything looks good except for one thing. I realize it is not your patch that created the problem, but since you are poking around in this code, I figure you might be able to correct it quickly.\n\nIn this block of code:\n\n```\n822\t        # convert the argument args[2] into a tuple if it is a list. \n823\t        # note: if args is too short, we still propagate it down \n824\t        # to __init__ to let it handle proper exception raising. \n825\t        if len(args) >= 2 and isinstance(args[1], (list, tuple)): \n826\t            args = (args[0], FiniteEnumeratedSet(args[1])) + args[2:] \n827\t        return super(CombinatorialFreeModule, cls).__classcall__(cls, *args, **keywords) \n```\nthe comment says that `args[2]` will be converted into a tuple, but I don't actually see it happening. Is this a problem, or just a comment that needs to be deleted?",
     "created_at": "2010-05-05T15:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
@@ -258,7 +260,6 @@ In this block of code:
 826	            args = (args[0], FiniteEnumeratedSet(args[1])) + args[2:] 
 827	        return super(CombinatorialFreeModule, cls).__classcall__(cls, *args, **keywords) 
 ```
-
 the comment says that `args[2]` will be converted into a tuple, but I don't actually see it happening. Is this a problem, or just a comment that needs to be deleted?
 
 

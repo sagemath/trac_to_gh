@@ -3,7 +3,7 @@
 archive/issues_000484.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: x,y=PolynomialRing(QQ,2,\"xy\").gens()\nsage: f = 5*x+y-5\nsage: f(1,1)\n 1\nsage: type(f(1,1))\n <type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n```\n\n\nI usually think of the values of a polynomial as belonging to the\nground ring as opposed to the polynomial ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/484\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: x,y=PolynomialRing(QQ,2,\"xy\").gens()\nsage: f = 5*x+y-5\nsage: f(1,1)\n 1\nsage: type(f(1,1))\n <type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n```\n\nI usually think of the values of a polynomial as belonging to the\nground ring as opposed to the polynomial ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/484\n\n",
     "created_at": "2007-08-23T16:53:19Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,7 +19,6 @@ archive/issues_000484.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: x,y=PolynomialRing(QQ,2,"xy").gens()
 sage: f = 5*x+y-5
@@ -28,7 +27,6 @@ sage: f(1,1)
 sage: type(f(1,1))
  <type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>
 ```
-
 
 I usually think of the values of a polynomial as belonging to the
 ground ring as opposed to the polynomial ring.
@@ -77,7 +75,7 @@ archive/issue_events_001241.json:
 archive/issue_comments_002407.json:
 ```json
 {
-    "body": "Works for me now:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x,y=PolynomialRing(QQ,2,\"xy\").gens()\nsage: f = 5*x+y-5\nsage: f(1,1)\n1\nsage: type(f(1,1))\n<type 'sage.rings.rational.Rational'>\n```\n\n\nI guess credit should go to Robert or William.\n\nCheers,\n\nMichael",
+    "body": "Works for me now:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.alpha2, Release Date: 2007-08-29                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x,y=PolynomialRing(QQ,2,\"xy\").gens()\nsage: f = 5*x+y-5\nsage: f(1,1)\n1\nsage: type(f(1,1))\n<type 'sage.rings.rational.Rational'>\n```\n\nI guess credit should go to Robert or William.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-30T12:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/484",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ sage: f(1,1)
 sage: type(f(1,1))
 <type 'sage.rings.rational.Rational'>
 ```
-
 
 I guess credit should go to Robert or William.
 

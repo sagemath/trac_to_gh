@@ -3,7 +3,7 @@
 archive/issues_006479.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  hamptonio@gmail.com\n\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
+    "body": "Assignee: @burcin\n\nCC:  hamptonio@gmail.com\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
     "created_at": "2009-07-08T11:08:56Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 CC:  hamptonio@gmail.com
 
-
 ```
 sage: y(x) = function('y',x)
 sage: desolve( y(x).diff(x,2) == 0, y(x))
@@ -30,7 +29,6 @@ x + y(0)
 sage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])
 x + y(0)
 ```
-
 
 It seems desolve instead of using the given initial
 value of y at x=0,  it literally passes "y(0)" to maxima.
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6479
 archive/issue_comments_052269.json:
 ```json
 {
-    "body": "I'm not sure if this is a duplicate or not but Robert Bradshaw definitely knows about this bug. (I wrote a crappy version of the original solver, Robert wrote the new and improved one. However, Marshall Hampton and I spend several hours at SD15 trying to figure out how to patch this bug and couldn't.) BTW, it is actually documented to behave this way if you read the docstrings carefully.\n\nHere is, at Robert Bradshaw's request, a *maxima* session solving a 2nd order ODE with 2 initial conditions and a 2nd order ODE with 2 boundary conditions:\n\n\n```\nsage: maxima.eval(\"de:'diff(y,x,2) + y*'diff(y,x)^3 = 0\")\n\"'diff(y,x,2)+y*('diff(y,x,1))^3=0\"\nsage: maxima.eval(\"ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'(y^3-10*y)/6=x-3/2'\nsage: maxima.eval(\"de:'diff(y,x,2) + 4*y = 0\")\n\"'diff(y,x,2)+4*y=0\"\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'y=%k1*sin(2*x)+%k2*cos(2*x)'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'y=cos(2*x)-(cos(2)-3)*sin(2*x)/sin(2)'\nsage: maxima.eval(\"ic2(soln,x=0,y=1,'diff(y,x)=3)\")\n'y=3*sin(2*x)/2+cos(2*x)'\n```\n\nHope this helps.\n\nAn additional problem is that the syntax for desolve and desolve_laplace are different. Perhaps this could be fixed at the same time?",
+    "body": "I'm not sure if this is a duplicate or not but Robert Bradshaw definitely knows about this bug. (I wrote a crappy version of the original solver, Robert wrote the new and improved one. However, Marshall Hampton and I spend several hours at SD15 trying to figure out how to patch this bug and couldn't.) BTW, it is actually documented to behave this way if you read the docstrings carefully.\n\nHere is, at Robert Bradshaw's request, a *maxima* session solving a 2nd order ODE with 2 initial conditions and a 2nd order ODE with 2 boundary conditions:\n\n```\nsage: maxima.eval(\"de:'diff(y,x,2) + y*'diff(y,x)^3 = 0\")\n\"'diff(y,x,2)+y*('diff(y,x,1))^3=0\"\nsage: maxima.eval(\"ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'(y^3-10*y)/6=x-3/2'\nsage: maxima.eval(\"de:'diff(y,x,2) + 4*y = 0\")\n\"'diff(y,x,2)+4*y=0\"\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'y=%k1*sin(2*x)+%k2*cos(2*x)'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'y=cos(2*x)-(cos(2)-3)*sin(2*x)/sin(2)'\nsage: maxima.eval(\"ic2(soln,x=0,y=1,'diff(y,x)=3)\")\n'y=3*sin(2*x)/2+cos(2*x)'\n```\nHope this helps.\n\nAn additional problem is that the syntax for desolve and desolve_laplace are different. Perhaps this could be fixed at the same time?",
     "created_at": "2009-07-08T13:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -59,7 +57,6 @@ archive/issue_comments_052269.json:
 I'm not sure if this is a duplicate or not but Robert Bradshaw definitely knows about this bug. (I wrote a crappy version of the original solver, Robert wrote the new and improved one. However, Marshall Hampton and I spend several hours at SD15 trying to figure out how to patch this bug and couldn't.) BTW, it is actually documented to behave this way if you read the docstrings carefully.
 
 Here is, at Robert Bradshaw's request, a *maxima* session solving a 2nd order ODE with 2 initial conditions and a 2nd order ODE with 2 boundary conditions:
-
 
 ```
 sage: maxima.eval("de:'diff(y,x,2) + y*'diff(y,x)^3 = 0")
@@ -79,7 +76,6 @@ sage: maxima.eval("bc2(soln,x=0,y=1,x=1,y=3)")
 sage: maxima.eval("ic2(soln,x=0,y=1,'diff(y,x)=3)")
 'y=3*sin(2*x)/2+cos(2*x)'
 ```
-
 Hope this helps.
 
 An additional problem is that the syntax for desolve and desolve_laplace are different. Perhaps this could be fixed at the same time?
@@ -321,7 +317,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_052281.json:
 ```json
 {
-    "body": "Replying to [comment:10 wdj]:\n> The improvements are *fantastic*!\n> \n> However, some of the docstrings do not follow proper format.\n> For example, in your desolve_rk4 function, you do not indent\n> the Sage code in the EXAMPLES section correctly. Also, if a\n> function can produce different types of output (eg, a plot or\n> a list of points, depending on the optional parameters), both\n> should be illustrated in the examples. I don't know if this\n> improper formatting screws up the sage -test script or not.\n> There is also some improper indentation in other sections, \n> such as OUTPUT, for functions such as desolve_rk4, for example.\n> \n> I hope you can please fix these. \n\nThanks. I will try to fix it. Sorry, I am newbie in Python.\n\n> \n> A request: in your new functions desolve_rk4 and desolve_system_rk4\n> there is an option called endpoint, with default value 10. I would \n> prefer an option called endpoints with a default value of [0,10]\n> (or something), so that a range can be plotted other than from\n> ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> plots together to get that anyway...).\n\nwhat about this:\n\nendpoints=a   .... integrate from ics[0] to a\n\nendpoints=[a]   .... integrate from ics[0] to a\n\nendpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n\nI think that this is possible and I can try within a week.",
+    "body": "Replying to [comment:10 wdj]:\n> The improvements are *fantastic*!\n> \n> However, some of the docstrings do not follow proper format.\n> For example, in your desolve_rk4 function, you do not indent\n> the Sage code in the EXAMPLES section correctly. Also, if a\n> function can produce different types of output (eg, a plot or\n> a list of points, depending on the optional parameters), both\n> should be illustrated in the examples. I don't know if this\n> improper formatting screws up the sage -test script or not.\n> There is also some improper indentation in other sections, \n> such as OUTPUT, for functions such as desolve_rk4, for example.\n> \n> I hope you can please fix these. \n\n\nThanks. I will try to fix it. Sorry, I am newbie in Python.\n\n> \n> A request: in your new functions desolve_rk4 and desolve_system_rk4\n> there is an option called endpoint, with default value 10. I would \n> prefer an option called endpoints with a default value of [0,10]\n> (or something), so that a range can be plotted other than from\n> ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> plots together to get that anyway...).\n\n\nwhat about this:\n\nendpoints=a   .... integrate from ics[0] to a\n\nendpoints=[a]   .... integrate from ics[0] to a\n\nendpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n\nI think that this is possible and I can try within a week.",
     "created_at": "2009-10-25T19:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -345,6 +341,7 @@ Replying to [comment:10 wdj]:
 > 
 > I hope you can please fix these. 
 
+
 Thanks. I will try to fix it. Sorry, I am newbie in Python.
 
 > 
@@ -354,6 +351,7 @@ Thanks. I will try to fix it. Sorry, I am newbie in Python.
 > (or something), so that a range can be plotted other than from
 > ics[0] to endpoint. If it is too much hassle, fine (you can just add 
 > plots together to get that anyway...).
+
 
 what about this:
 
@@ -372,7 +370,7 @@ I think that this is possible and I can try within a week.
 archive/issue_comments_052282.json:
 ```json
 {
-    "body": "Replying to [comment:11 robert.marik]:\n> Replying to [comment:10 wdj]:\n\n...\n\n> > A request: in your new functions desolve_rk4 and desolve_system_rk4\n> > there is an option called endpoint, with default value 10. I would \n> > prefer an option called endpoints with a default value of [0,10]\n> > (or something), so that a range can be plotted other than from\n> > ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> > plots together to get that anyway...).\n> \n> what about this:\n> \n> endpoints=a   .... integrate from ics[0] to a\n> \n> endpoints=[a]   .... integrate from ics[0] to a\n> \n> endpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n> \n> I think that this is possible and I can try within a week.\n\n\nThis sounds excellent - thanks!",
+    "body": "Replying to [comment:11 robert.marik]:\n> Replying to [comment:10 wdj]:\n\n\n...\n\n> > A request: in your new functions desolve_rk4 and desolve_system_rk4\n> > there is an option called endpoint, with default value 10. I would \n> > prefer an option called endpoints with a default value of [0,10]\n> > (or something), so that a range can be plotted other than from\n> > ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> > plots together to get that anyway...).\n\n> \n> what about this:\n> \n> endpoints=a   .... integrate from ics[0] to a\n> \n> endpoints=[a]   .... integrate from ics[0] to a\n> \n> endpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n> \n> I think that this is possible and I can try within a week.\n\n\n\nThis sounds excellent - thanks!",
     "created_at": "2009-10-25T20:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6479",
     "type": "issue_comment",
@@ -384,6 +382,7 @@ archive/issue_comments_052282.json:
 Replying to [comment:11 robert.marik]:
 > Replying to [comment:10 wdj]:
 
+
 ...
 
 > > A request: in your new functions desolve_rk4 and desolve_system_rk4
@@ -392,6 +391,7 @@ Replying to [comment:11 robert.marik]:
 > > (or something), so that a range can be plotted other than from
 > > ics[0] to endpoint. If it is too much hassle, fine (you can just add 
 > > plots together to get that anyway...).
+
 > 
 > what about this:
 > 
@@ -402,6 +402,7 @@ Replying to [comment:11 robert.marik]:
 > endpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.
 > 
 > I think that this is possible and I can try within a week.
+
 
 
 This sounds excellent - thanks!

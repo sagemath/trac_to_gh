@@ -131,7 +131,7 @@ Also fix the overall checkbox ("controlbox"). Apply only this patch.
 archive/issue_comments_061204.json:
 ```json
 {
-    "body": "Version 3:\n\n* Rebased against #7309, #7310.  For some reason, I got\n\n```\napplying trac_7332-css-escape.2.patch\npatching file sagenb/notebook/template.py\nHunk #1 FAILED at 15\nHunk #3 FAILED at 75\n2 out of 3 hunks FAILED -- saving rejects to file sagenb/notebook/template.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\n```\n\n   but the failures were inconsequential.\n\n* Fixes the overall checkbox in `notebook_lib.js`.\n\nTo the extent it counts, my review is positive.",
+    "body": "Version 3:\n\n* Rebased against #7309, #7310.  For some reason, I got\n\n```\napplying trac_7332-css-escape.2.patch\npatching file sagenb/notebook/template.py\nHunk #1 FAILED at 15\nHunk #3 FAILED at 75\n2 out of 3 hunks FAILED -- saving rejects to file sagenb/notebook/template.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\n```\n   but the failures were inconsequential.\n\n* Fixes the overall checkbox in `notebook_lib.js`.\n\nTo the extent it counts, my review is positive.",
     "created_at": "2009-10-31T08:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
@@ -153,7 +153,6 @@ Hunk #3 FAILED at 75
 patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 ```
-
    but the failures were inconsequential.
 
 * Fixes the overall checkbox in `notebook_lib.js`.
@@ -254,7 +253,7 @@ archive/issue_events_017354.json:
 archive/issue_comments_061208.json:
 ```json
 {
-    "body": "On [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b): I forgot to account for dots (`'.'`) in login names.  A quick fix: In `sagenb/data/sage/js/notebook_lib.js`'s `check_worksheet_filenames`, replace\n\n```\n        id = worksheet_filenames[i].replace('/', '-');\n```\n\nwith\n\n```\n        id = worksheet_filenames[i].replace(/[\\/.]/g, '-');\n```\n\nI'll open a new ticket and add a patch, once I'm confident I haven't missed other special characters.",
+    "body": "On [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b): I forgot to account for dots (`'.'`) in login names.  A quick fix: In `sagenb/data/sage/js/notebook_lib.js`'s `check_worksheet_filenames`, replace\n\n```\n        id = worksheet_filenames[i].replace('/', '-');\n```\nwith\n\n```\n        id = worksheet_filenames[i].replace(/[\\/.]/g, '-');\n```\nI'll open a new ticket and add a patch, once I'm confident I haven't missed other special characters.",
     "created_at": "2010-01-01T21:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
@@ -268,13 +267,11 @@ On [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thr
 ```
         id = worksheet_filenames[i].replace('/', '-');
 ```
-
 with
 
 ```
         id = worksheet_filenames[i].replace(/[\/.]/g, '-');
 ```
-
 I'll open a new ticket and add a patch, once I'm confident I haven't missed other special characters.
 
 

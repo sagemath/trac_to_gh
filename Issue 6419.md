@@ -3,7 +3,7 @@
 archive/issues_006419.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nThis patch fixes the warnings\n\n```\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: \n\"No module named MainClass\", please check your spelling and sys.path\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it \nreported error: \"No module named MainClass.NestedClass\", please \ncheck your spelling and sys.path\n```\n\nproduced by Sphinx when building the html version of the reference manual, by omitting these classes from the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6419\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nThis patch fixes the warnings\n\n```\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass', it reported error: \n\"No module named MainClass\", please check your spelling and sys.path\nWARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/reference/sage/misc/misc.rst:6: \n(WARNING/2) autodoc can't import/find class 'sage.misc.misc.MainClass.NestedClass.NestedSubClass', it \nreported error: \"No module named MainClass.NestedClass\", please \ncheck your spelling and sys.path\n```\nproduced by Sphinx when building the html version of the reference manual, by omitting these classes from the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6419\n\n",
     "created_at": "2009-06-26T02:14:52Z",
     "labels": [
         "component: documentation",
@@ -32,7 +32,6 @@ WARNING: /Applications/sage_builds/sage-4.1.alpha1/devel/sage-new/doc/en/referen
 reported error: "No module named MainClass.NestedClass", please 
 check your spelling and sys.path
 ```
-
 produced by Sphinx when building the html version of the reference manual, by omitting these classes from the documentation.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6419

@@ -3,7 +3,7 @@
 archive/issues_002498.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb@informatik.uni-bremen.de\n\nPARI's polynomial irreducibility and factoring routines are being used incorrectly for certain base rings. Here is an example:\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(35))\nsage: f = (x^2+2*x+2)*(x^2+3*x+9)\nsage: f\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: factor(f)\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: f.is_irreducible()\nTrue\n```\n\n\nThe PARI documentation for `polisirreducible` says: \"Irreducibility is checked over the smallest base field over which pol seems to be defined\", whatever that means.\n\nWe should put in some checking to make sure this crazy behaviour doesn't happen, or at the very least put in big fat warnings in the documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2498\n\n",
+    "body": "Assignee: somebody\n\nCC:  malb@informatik.uni-bremen.de\n\nPARI's polynomial irreducibility and factoring routines are being used incorrectly for certain base rings. Here is an example:\n\n```\nsage: R.<x> = PolynomialRing(Integers(35))\nsage: f = (x^2+2*x+2)*(x^2+3*x+9)\nsage: f\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: factor(f)\nx^4 + 5*x^3 + 17*x^2 + 24*x + 18\nsage: f.is_irreducible()\nTrue\n```\n\nThe PARI documentation for `polisirreducible` says: \"Irreducibility is checked over the smallest base field over which pol seems to be defined\", whatever that means.\n\nWe should put in some checking to make sure this crazy behaviour doesn't happen, or at the very least put in big fat warnings in the documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2498\n\n",
     "created_at": "2008-03-12T16:24:48Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ CC:  malb@informatik.uni-bremen.de
 
 PARI's polynomial irreducibility and factoring routines are being used incorrectly for certain base rings. Here is an example:
 
-
 ```
 sage: R.<x> = PolynomialRing(Integers(35))
 sage: f = (x^2+2*x+2)*(x^2+3*x+9)
@@ -33,7 +32,6 @@ x^4 + 5*x^3 + 17*x^2 + 24*x + 18
 sage: f.is_irreducible()
 True
 ```
-
 
 The PARI documentation for `polisirreducible` says: "Irreducibility is checked over the smallest base field over which pol seems to be defined", whatever that means.
 
@@ -51,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2498
 archive/issue_comments_016895.json:
 ```json
 {
-    "body": "> We should put in some checking to make sure this crazy behaviour \n> doesn't happen, \n\n+1 -- definitely. \n\n> or at the very least put in big fat warnings \n> in the documentation.\n\n-1 -- let's just not allow this crap.\n\n> \"Irreducibility is checked over the smallest base field over which pol seems to be defined\"\n\nThat's the sort of ick that I don't like about PARI.",
+    "body": "> We should put in some checking to make sure this crazy behaviour \n> doesn't happen, \n\n\n+1 -- definitely. \n\n> or at the very least put in big fat warnings \n> in the documentation.\n\n\n-1 -- let's just not allow this crap.\n\n> \"Irreducibility is checked over the smallest base field over which pol seems to be defined\"\n\n\nThat's the sort of ick that I don't like about PARI.",
     "created_at": "2008-03-12T16:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2498",
     "type": "issue_comment",
@@ -63,14 +61,17 @@ archive/issue_comments_016895.json:
 > We should put in some checking to make sure this crazy behaviour 
 > doesn't happen, 
 
+
 +1 -- definitely. 
 
 > or at the very least put in big fat warnings 
 > in the documentation.
 
+
 -1 -- let's just not allow this crap.
 
 > "Irreducibility is checked over the smallest base field over which pol seems to be defined"
+
 
 That's the sort of ick that I don't like about PARI.
 
@@ -176,7 +177,7 @@ Instead of explicitly mentioning Z/nZ (for composite n) as not implemented, woul
 archive/issue_comments_016900.json:
 ```json
 {
-    "body": "> Instead of explicitly mentioning Z/nZ (for composite n) as \n> not implemented, would it not be more useful to list which \n> rings this _is_ implemented for? (Fields, Z, anything else?)\n\nIt might be more useful now, but it's bound to become out of\ndate, in which case such a list would be wrong, and could turn\nout to be way *less* useful than nothing.\n\nWilliam",
+    "body": "> Instead of explicitly mentioning Z/nZ (for composite n) as \n> not implemented, would it not be more useful to list which \n> rings this _is_ implemented for? (Fields, Z, anything else?)\n\n\nIt might be more useful now, but it's bound to become out of\ndate, in which case such a list would be wrong, and could turn\nout to be way *less* useful than nothing.\n\nWilliam",
     "created_at": "2008-03-22T20:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2498",
     "type": "issue_comment",
@@ -188,6 +189,7 @@ archive/issue_comments_016900.json:
 > Instead of explicitly mentioning Z/nZ (for composite n) as 
 > not implemented, would it not be more useful to list which 
 > rings this _is_ implemented for? (Fields, Z, anything else?)
+
 
 It might be more useful now, but it's bound to become out of
 date, in which case such a list would be wrong, and could turn
@@ -202,7 +204,7 @@ William
 archive/issue_comments_016901.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> > Instead of explicitly mentioning Z/nZ (for composite n) as \n> > not implemented, would it not be more useful to list which \n> > rings this _is_ implemented for? (Fields, Z, anything else?)\n> \n> It might be more useful now, but it's bound to become out of\n> date, in which case such a list would be wrong, and could turn\n> out to be way *less* useful than nothing.\n> \n> William\n\nOK then -- the patch gets a thumbs up from me!",
+    "body": "Replying to [comment:8 was]:\n> > Instead of explicitly mentioning Z/nZ (for composite n) as \n> > not implemented, would it not be more useful to list which \n> > rings this _is_ implemented for? (Fields, Z, anything else?)\n\n> \n> It might be more useful now, but it's bound to become out of\n> date, in which case such a list would be wrong, and could turn\n> out to be way *less* useful than nothing.\n> \n> William\n\n\nOK then -- the patch gets a thumbs up from me!",
     "created_at": "2008-03-22T22:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2498",
     "type": "issue_comment",
@@ -215,12 +217,14 @@ Replying to [comment:8 was]:
 > > Instead of explicitly mentioning Z/nZ (for composite n) as 
 > > not implemented, would it not be more useful to list which 
 > > rings this _is_ implemented for? (Fields, Z, anything else?)
+
 > 
 > It might be more useful now, but it's bound to become out of
 > date, in which case such a list would be wrong, and could turn
 > out to be way *less* useful than nothing.
 > 
 > William
+
 
 OK then -- the patch gets a thumbs up from me!
 

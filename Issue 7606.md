@@ -3,7 +3,7 @@
 archive/issues_007606.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nathanncohen\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/11f432ca0302189e) thread (see also [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/af1fa373245166a7)):\n\n```\n> 10. sage: hg_sage.status()\n>     Getting status of modified or unknown files:\n>     cd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg\n> status\n>     ! doc/fr/a_tour_of_sage/eigen_plot.png\n>     ! doc/fr/a_tour_of_sage/sin_plot.png\n\n> Aha! There is a problem with the docs, right? Are these files missing?\n\nYou get those two lines with the exclamation marks because the file\nMANIFEST.in in Sage 4.3.alpha0 isn't configured to pick up those two\nimage files. When ticket #7190 (French translation: A Tour of Sage)\n[1] was merged in Sage 4.3.alpha0, the file\ndevel/sage-main/MANIFEST.in wasn't also changed to take into account\nthe new image files, so these are not picked up when releasing the\nalpha0 tarball. A result is that one would not see the image files in\ndevel/sage-main/doc/fr/a_tour_of_sage. You can fix the missing files\nproblem as follows:\n\n[mvngu@sage sage-4.3.alpha0-7473-sphinx]$ cd devel/sage-main/\n[mvngu@sage sage-main]$ hg st\n! doc/fr/a_tour_of_sage/eigen_plot.png\n! doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg revert -a\nreverting doc/fr/a_tour_of_sage/eigen_plot.png\nreverting doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg st\n<no output>\n```\n\nThis missing files problem is due to #7190.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7606\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nathanncohen\n\nFrom this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/11f432ca0302189e) thread (see also [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/af1fa373245166a7)):\n\n```\n> 10. sage: hg_sage.status()\n>     Getting status of modified or unknown files:\n>     cd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg\n> status\n>     ! doc/fr/a_tour_of_sage/eigen_plot.png\n>     ! doc/fr/a_tour_of_sage/sin_plot.png\n\n> Aha! There is a problem with the docs, right? Are these files missing?\n\nYou get those two lines with the exclamation marks because the file\nMANIFEST.in in Sage 4.3.alpha0 isn't configured to pick up those two\nimage files. When ticket #7190 (French translation: A Tour of Sage)\n[1] was merged in Sage 4.3.alpha0, the file\ndevel/sage-main/MANIFEST.in wasn't also changed to take into account\nthe new image files, so these are not picked up when releasing the\nalpha0 tarball. A result is that one would not see the image files in\ndevel/sage-main/doc/fr/a_tour_of_sage. You can fix the missing files\nproblem as follows:\n\n[mvngu@sage sage-4.3.alpha0-7473-sphinx]$ cd devel/sage-main/\n[mvngu@sage sage-main]$ hg st\n! doc/fr/a_tour_of_sage/eigen_plot.png\n! doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg revert -a\nreverting doc/fr/a_tour_of_sage/eigen_plot.png\nreverting doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg st\n<no output>\n```\nThis missing files problem is due to #7190.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7606\n\n",
     "created_at": "2009-12-05T11:41:53Z",
     "labels": [
         "component: documentation",
@@ -52,7 +52,6 @@ reverting doc/fr/a_tour_of_sage/sin_plot.png
 [mvngu@sage sage-main]$ hg st
 <no output>
 ```
-
 This missing files problem is due to #7190.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7606
@@ -86,7 +85,7 @@ based on Sage 4.3.alpha1
 archive/issue_comments_064774.json:
 ```json
 {
-    "body": "Here are some steps to fix the problem with missing image files. On a freshly compiled Sage 4.3.alpha1 or a newly unpacked binary of that version, do a Mercurial revert to recover the deleted images:\n\n```\n[mvngu@sage sage-4.3.alpha1-7606-images]$ cd devel/sage-main/\n[mvngu@sage sage-main]$ hg st\n! doc/fr/a_tour_of_sage/eigen_plot.png\n! doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg revert -a\nreverting doc/fr/a_tour_of_sage/eigen_plot.png\nreverting doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg st\n<no output>\n```\n\nNext, apply the patch `trac_7606-manifest.patch`, which configures MANIFEST.in to pick up those two image files when making a source release. Afterwards, making a source tarball with \"./sage -sdist <version-number>\" should also pick up the two image files.",
+    "body": "Here are some steps to fix the problem with missing image files. On a freshly compiled Sage 4.3.alpha1 or a newly unpacked binary of that version, do a Mercurial revert to recover the deleted images:\n\n```\n[mvngu@sage sage-4.3.alpha1-7606-images]$ cd devel/sage-main/\n[mvngu@sage sage-main]$ hg st\n! doc/fr/a_tour_of_sage/eigen_plot.png\n! doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg revert -a\nreverting doc/fr/a_tour_of_sage/eigen_plot.png\nreverting doc/fr/a_tour_of_sage/sin_plot.png\n[mvngu@sage sage-main]$ hg st\n<no output>\n```\nNext, apply the patch `trac_7606-manifest.patch`, which configures MANIFEST.in to pick up those two image files when making a source release. Afterwards, making a source tarball with \"./sage -sdist <version-number>\" should also pick up the two image files.",
     "created_at": "2009-12-05T12:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7606",
     "type": "issue_comment",
@@ -108,7 +107,6 @@ reverting doc/fr/a_tour_of_sage/sin_plot.png
 [mvngu@sage sage-main]$ hg st
 <no output>
 ```
-
 Next, apply the patch `trac_7606-manifest.patch`, which configures MANIFEST.in to pick up those two image files when making a source release. Afterwards, making a source tarball with "./sage -sdist <version-number>" should also pick up the two image files.
 
 

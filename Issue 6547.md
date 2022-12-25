@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6547
 archive/issue_comments_053283.json:
 ```json
 {
-    "body": "One thing that we need to watch out for is importing an object into `foo/__init__.py` with the same name as a module in `foo/`.  Something like:\n\n\n```\nmike@mike-laptop:~/src/test_init$ ls foo\nbar.py  bar.pyc  __init__.py  __init__.pyc\nmike@mike-laptop:~/src/test_init$ cat foo/__init__.py\nfrom bar import bar\nmike@mike-laptop:~/src/test_init$ cat foo/bar.py\nbar = 200\n```\n\n\nThen, things like `foo.bar.bar` won't work.",
+    "body": "One thing that we need to watch out for is importing an object into `foo/__init__.py` with the same name as a module in `foo/`.  Something like:\n\n```\nmike@mike-laptop:~/src/test_init$ ls foo\nbar.py  bar.pyc  __init__.py  __init__.pyc\nmike@mike-laptop:~/src/test_init$ cat foo/__init__.py\nfrom bar import bar\nmike@mike-laptop:~/src/test_init$ cat foo/bar.py\nbar = 200\n```\n\nThen, things like `foo.bar.bar` won't work.",
     "created_at": "2009-07-17T20:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
@@ -50,7 +50,6 @@ archive/issue_comments_053283.json:
 
 One thing that we need to watch out for is importing an object into `foo/__init__.py` with the same name as a module in `foo/`.  Something like:
 
-
 ```
 mike@mike-laptop:~/src/test_init$ ls foo
 bar.py  bar.pyc  __init__.py  __init__.pyc
@@ -59,7 +58,6 @@ from bar import bar
 mike@mike-laptop:~/src/test_init$ cat foo/bar.py
 bar = 200
 ```
-
 
 Then, things like `foo.bar.bar` won't work.
 
@@ -70,7 +68,7 @@ Then, things like `foo.bar.bar` won't work.
 archive/issue_comments_053284.json:
 ```json
 {
-    "body": "A more specific objection:\n\nCurrently in Sage, we have\n\n\n```\nsage: type(sage.plot.plot)\n<type 'module'>\nsage: type(sage.plot.all.plot)\n<type 'function'>\n```\n\n\nIf we get rid of `all.py`, what should `sage.plot.plot` be?",
+    "body": "A more specific objection:\n\nCurrently in Sage, we have\n\n```\nsage: type(sage.plot.plot)\n<type 'module'>\nsage: type(sage.plot.all.plot)\n<type 'function'>\n```\n\nIf we get rid of `all.py`, what should `sage.plot.plot` be?",
     "created_at": "2009-10-01T04:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6547",
     "type": "issue_comment",
@@ -83,14 +81,12 @@ A more specific objection:
 
 Currently in Sage, we have
 
-
 ```
 sage: type(sage.plot.plot)
 <type 'module'>
 sage: type(sage.plot.all.plot)
 <type 'function'>
 ```
-
 
 If we get rid of `all.py`, what should `sage.plot.plot` be?
 

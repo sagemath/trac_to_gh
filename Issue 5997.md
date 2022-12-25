@@ -73,7 +73,7 @@ Michael
 archive/issue_comments_047627.json:
 ```json
 {
-    "body": "> Shouldn't this patch add a doctest while adding the deprecation warning?\n\nNo, I don't think so... Just kidding.  Here's a new patch with a doctest.",
+    "body": "> Shouldn't this patch add a doctest while adding the deprecation warning?\n\n\nNo, I don't think so... Just kidding.  Here's a new patch with a doctest.",
     "created_at": "2009-05-07T05:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5997",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_047627.json:
 ```
 
 > Shouldn't this patch add a doctest while adding the deprecation warning?
+
 
 No, I don't think so... Just kidding.  Here's a new patch with a doctest.
 
@@ -113,7 +114,7 @@ reviewer patch; fix trivial typo
 archive/issue_comments_047629.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch `trac_5997.patch` applies OK against the \"post-final\" sage-3.4.2 and all doctests pass with the options `-t -long`. Now say we create an element in `Z/12Z` like so:\n\n```\nsage: a = Integers(12)(5)\n```\n\nThen both `a.order()` and ` a.additive_order()` return the same result, but `a.order()` additionally gives a deprecation warning:\n\n```\nsage: a.order()\n/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: The function order is deprecated for ring elements; use additive_order or multiplicative_order instead.\n  exec code_obj in self.user_global_ns, self.user_ns\n12\n```\n\n\n\n\nHowever, there's one trivial typo in the patch. This is fixed in the reviewer patch `trac_5997-reviewer.patch`. Basically, I give positive review to John's patch. Only my patch needs to be reviewed.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch `trac_5997.patch` applies OK against the \"post-final\" sage-3.4.2 and all doctests pass with the options `-t -long`. Now say we create an element in `Z/12Z` like so:\n\n```\nsage: a = Integers(12)(5)\n```\nThen both `a.order()` and ` a.additive_order()` return the same result, but `a.order()` additionally gives a deprecation warning:\n\n```\nsage: a.order()\n/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: The function order is deprecated for ring elements; use additive_order or multiplicative_order instead.\n  exec code_obj in self.user_global_ns, self.user_ns\n12\n```\n\n\n\nHowever, there's one trivial typo in the patch. This is fixed in the reviewer patch `trac_5997-reviewer.patch`. Basically, I give positive review to John's patch. Only my patch needs to be reviewed.",
     "created_at": "2009-05-08T00:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5997",
     "type": "issue_comment",
@@ -131,7 +132,6 @@ The patch `trac_5997.patch` applies OK against the "post-final" sage-3.4.2 and a
 ```
 sage: a = Integers(12)(5)
 ```
-
 Then both `a.order()` and ` a.additive_order()` return the same result, but `a.order()` additionally gives a deprecation warning:
 
 ```
@@ -140,7 +140,6 @@ sage: a.order()
   exec code_obj in self.user_global_ns, self.user_ns
 12
 ```
-
 
 
 

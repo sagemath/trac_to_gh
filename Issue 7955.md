@@ -3,7 +3,7 @@
 archive/issues_007955.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom the sage-devel thread here:\n\nhttp://groups.google.com/group/sage-devel/t/592ce36b210c2fbe\n\n\n```\nOn Mon, 11 Jan 2010 23:58:54 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> Dear sage-devel\n> \n> the following (definite) integral is not evaluated by maxima and show\n> () command should return the same unevaluated integral in TeX\n> notation. I think this was the case in previous versions. On Sage 4.3.\n> I get th following\n> \n> input: integrate(1/(1+sqrt(x)),x,0,1).show()\n> \n> output: \\int integrate\\,{d \\frac{1}{\\sqrt{x} + 1}}\n> \n> expected output: \\int_0^1 \\frac{..}{...} dx\n> \n> What has changed?\n```\n\n\nAfter #7490, we give the function object as the first argument to\ncustom methods of symbolic functions. The function that prints integrals\nis _integrate_latex_() on line 1556 of sage/calculus/calculus.py. It\ngets the function integrate as a first argument, and prints the\nnonsense reported above.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7955\n\n",
+    "body": "Assignee: @burcin\n\nFrom the sage-devel thread here:\n\nhttp://groups.google.com/group/sage-devel/t/592ce36b210c2fbe\n\n```\nOn Mon, 11 Jan 2010 23:58:54 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> Dear sage-devel\n> \n> the following (definite) integral is not evaluated by maxima and show\n> () command should return the same unevaluated integral in TeX\n> notation. I think this was the case in previous versions. On Sage 4.3.\n> I get th following\n> \n> input: integrate(1/(1+sqrt(x)),x,0,1).show()\n> \n> output: \\int integrate\\,{d \\frac{1}{\\sqrt{x} + 1}}\n> \n> expected output: \\int_0^1 \\frac{..}{...} dx\n> \n> What has changed?\n```\n\nAfter #7490, we give the function object as the first argument to\ncustom methods of symbolic functions. The function that prints integrals\nis _integrate_latex_() on line 1556 of sage/calculus/calculus.py. It\ngets the function integrate as a first argument, and prints the\nnonsense reported above.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7955\n\n",
     "created_at": "2010-01-16T18:26:41Z",
     "labels": [
         "component: symbolics",
@@ -21,7 +21,6 @@ Assignee: @burcin
 From the sage-devel thread here:
 
 http://groups.google.com/group/sage-devel/t/592ce36b210c2fbe
-
 
 ```
 On Mon, 11 Jan 2010 23:58:54 -0800 (PST)
@@ -42,7 +41,6 @@ On Mon, 11 Jan 2010 23:58:54 -0800 (PST)
 > 
 > What has changed?
 ```
-
 
 After #7490, we give the function object as the first argument to
 custom methods of symbolic functions. The function that prints integrals
@@ -118,7 +116,7 @@ attachment:trac_7955-integrate_latex.patch should fix this.
 archive/issue_comments_069299.json:
 ```json
 {
-    "body": "Replying to [comment:1 burcin]:\n> attachment:trac_7955-integrate_latex.patch should fix this.\n\n...and it does, on 4.3.1. The code looks good, all doctests pass, and the problem is fixed.",
+    "body": "Replying to [comment:1 burcin]:\n> attachment:trac_7955-integrate_latex.patch should fix this.\n\n\n...and it does, on 4.3.1. The code looks good, all doctests pass, and the problem is fixed.",
     "created_at": "2010-01-27T06:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7955",
     "type": "issue_comment",
@@ -129,6 +127,7 @@ archive/issue_comments_069299.json:
 
 Replying to [comment:1 burcin]:
 > attachment:trac_7955-integrate_latex.patch should fix this.
+
 
 ...and it does, on 4.3.1. The code looks good, all doctests pass, and the problem is fixed.
 

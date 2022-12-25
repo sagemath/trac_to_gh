@@ -3,7 +3,7 @@
 archive/issues_008387.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\n\nThen the second and fourth examples use 'address'. \n\n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein mvngu\n\nUsing Sage 4.3.3\n\nhelp(notebook) shows \n\n```\n |      - ``interface`` -- string (default: ``'localhost'``), address\n |        of network interface to listen on; give ``''`` to listen on\n |        all interfaces.  You may use ``address`` here for backwards\n |        compatibility, but this is deprecated and will be removed in\n |        the future.\n\n```\n\nThen the second and fourth examples use 'address'. \n\n```\n |         notebook(address='', secure=True)\n\n |         notebook(address='', server_pool=['sage1@localhost'],\n |         ulimit='-v 500000', accounts=True)\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8387\n\n",
     "created_at": "2010-02-27T15:59:48Z",
     "labels": [
         "component: notebook",
@@ -24,7 +24,6 @@ Using Sage 4.3.3
 
 help(notebook) shows 
 
-
 ```
  |      - ``interface`` -- string (default: ``'localhost'``), address
  |        of network interface to listen on; give ``''`` to listen on
@@ -34,9 +33,7 @@ help(notebook) shows
 
 ```
 
-
 Then the second and fourth examples use 'address'. 
-
 
 ```
  |         notebook(address='', secure=True)
@@ -45,7 +42,6 @@ Then the second and fourth examples use 'address'.
  |         ulimit='-v 500000', accounts=True)
 
 ```
-
 
 
 
@@ -134,7 +130,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074946.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> The `notebook` [docstring](http://www.sagemath.org/doc/reference/sagenb/notebook/notebook_object.html) refers to a chapter \"Running the Sage Notebook Securely\" in the installation guide.  Does this chapter / section exist?\n\nThere is no such chapter/section in the Installation Guide. Could you remove any mention of \"Running the Sage Notebook Securely\"?",
+    "body": "Replying to [comment:1 mpatel]:\n> The `notebook` [docstring](http://www.sagemath.org/doc/reference/sagenb/notebook/notebook_object.html) refers to a chapter \"Running the Sage Notebook Securely\" in the installation guide.  Does this chapter / section exist?\n\n\nThere is no such chapter/section in the Installation Guide. Could you remove any mention of \"Running the Sage Notebook Securely\"?",
     "created_at": "2010-02-27T23:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -145,6 +141,7 @@ archive/issue_comments_074946.json:
 
 Replying to [comment:1 mpatel]:
 > The `notebook` [docstring](http://www.sagemath.org/doc/reference/sagenb/notebook/notebook_object.html) refers to a chapter "Running the Sage Notebook Securely" in the installation guide.  Does this chapter / section exist?
+
 
 There is no such chapter/section in the Installation Guide. Could you remove any mention of "Running the Sage Notebook Securely"?
 
@@ -211,7 +208,7 @@ Done.
 archive/issue_comments_074950.json:
 ```json
 {
-    "body": "I see you have changed one bit to \n\n\n```\nnotebook(interface='', server_pool=['sage1@localhost'], \n```\n\n\nDoes the server_pool bit actually work? It certainly does not for me. I find the only way to Sage to use another account is to put something like in a python file, and get python to load it at startup. Otherwise, ussing server_pool in the way documented fails. \n\n\n```\nserver_pool=['sage1@localhost']\n\nn.notebook('sage_notebook', port=8000, accounts=True, address='',\n         server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',\n    open_viewer=False, timeout=20*60, secure=False, port_tries=0)\n\n```\n\n\n\n\nPerhaps this is outside the ticket, but if it does not work, perhaps its better to remove any examples showing how to user server_pool. \n\nDave",
+    "body": "I see you have changed one bit to \n\n```\nnotebook(interface='', server_pool=['sage1@localhost'], \n```\n\nDoes the server_pool bit actually work? It certainly does not for me. I find the only way to Sage to use another account is to put something like in a python file, and get python to load it at startup. Otherwise, ussing server_pool in the way documented fails. \n\n```\nserver_pool=['sage1@localhost']\n\nn.notebook('sage_notebook', port=8000, accounts=True, address='',\n         server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',\n    open_viewer=False, timeout=20*60, secure=False, port_tries=0)\n\n```\n\n\n\nPerhaps this is outside the ticket, but if it does not work, perhaps its better to remove any examples showing how to user server_pool. \n\nDave",
     "created_at": "2010-02-28T00:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -222,14 +219,11 @@ archive/issue_comments_074950.json:
 
 I see you have changed one bit to 
 
-
 ```
 notebook(interface='', server_pool=['sage1@localhost'], 
 ```
 
-
 Does the server_pool bit actually work? It certainly does not for me. I find the only way to Sage to use another account is to put something like in a python file, and get python to load it at startup. Otherwise, ussing server_pool in the way documented fails. 
-
 
 ```
 server_pool=['sage1@localhost']
@@ -239,7 +233,6 @@ n.notebook('sage_notebook', port=8000, accounts=True, address='',
     open_viewer=False, timeout=20*60, secure=False, port_tries=0)
 
 ```
-
 
 
 
@@ -272,7 +265,7 @@ Changing assignee from @williamstein to drkirkby.
 archive/issue_comments_074952.json:
 ```json
 {
-    "body": "My god, I did manage to make a few mistakes in that lot!! I should have re-read before posting!\n\n\n```\nimport sagenb.notebook.notebook_object as n\n\nserver_pool=['sage1@localhost']\n\nn.notebook('sage_notebook', port=8000, accounts=True, address='',\n         server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',\n    open_viewer=False, timeout=20*60, secure=False, port_tries=0)\n\n```\n \n\nworks, but specifying a server pool at the Sage prompt with something like: \n\n\n```\nnotebook(interface='', server_pool=['sage1@localhost'], \n```\n\n\ndoes not work for me. It might be a Solaris specific issue of course. \n\nDave",
+    "body": "My god, I did manage to make a few mistakes in that lot!! I should have re-read before posting!\n\n```\nimport sagenb.notebook.notebook_object as n\n\nserver_pool=['sage1@localhost']\n\nn.notebook('sage_notebook', port=8000, accounts=True, address='',\n         server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',\n    open_viewer=False, timeout=20*60, secure=False, port_tries=0)\n\n``` \n\nworks, but specifying a server pool at the Sage prompt with something like: \n\n```\nnotebook(interface='', server_pool=['sage1@localhost'], \n```\n\ndoes not work for me. It might be a Solaris specific issue of course. \n\nDave",
     "created_at": "2010-02-28T00:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -283,7 +276,6 @@ archive/issue_comments_074952.json:
 
 My god, I did manage to make a few mistakes in that lot!! I should have re-read before posting!
 
-
 ```
 import sagenb.notebook.notebook_object as n
 
@@ -293,16 +285,13 @@ n.notebook('sage_notebook', port=8000, accounts=True, address='',
          server_pool = server_pool, ulimit='-u 1000 -v 1000000 -t 3600',
     open_viewer=False, timeout=20*60, secure=False, port_tries=0)
 
-```
- 
+``` 
 
 works, but specifying a server pool at the Sage prompt with something like: 
-
 
 ```
 notebook(interface='', server_pool=['sage1@localhost'], 
 ```
-
 
 does not work for me. It might be a Solaris specific issue of course. 
 
@@ -333,7 +322,7 @@ What happens, exactly?
 archive/issue_comments_074954.json:
 ```json
 {
-    "body": "I'm 99% sure that supplying the serverpool on the command line with:\n\n$ sage -notebook \n\nfails, but I believe the problem I had last night (see below) goes away if I don't use a server pool. \n\n\n```             \nTraceback (click to the left of this block for traceback)\n...\nNameError: name '_interact_' is not defined\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_3.py\", line 8, in <module>\n    _interact_.SAGE_CELL_ID=1\nNameError: name '_interact_' is not defined \n```\n\n\nPerhaps I need to spend more time double-checking this, but my belief was the options were not propagating properly. \n\nDave",
+    "body": "I'm 99% sure that supplying the serverpool on the command line with:\n\n$ sage -notebook \n\nfails, but I believe the problem I had last night (see below) goes away if I don't use a server pool. \n\n```             \nTraceback (click to the left of this block for traceback)\n...\nNameError: name '_interact_' is not defined\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_3.py\", line 8, in <module>\n    _interact_.SAGE_CELL_ID=1\nNameError: name '_interact_' is not defined \n```\n\nPerhaps I need to spend more time double-checking this, but my belief was the options were not propagating properly. \n\nDave",
     "created_at": "2010-02-28T01:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8387",
     "type": "issue_comment",
@@ -348,7 +337,6 @@ $ sage -notebook
 
 fails, but I believe the problem I had last night (see below) goes away if I don't use a server pool. 
 
-
 ```             
 Traceback (click to the left of this block for traceback)
 ...
@@ -360,7 +348,6 @@ Traceback (most recent call last):
     _interact_.SAGE_CELL_ID=1
 NameError: name '_interact_' is not defined 
 ```
-
 
 Perhaps I need to spend more time double-checking this, but my belief was the options were not propagating properly. 
 

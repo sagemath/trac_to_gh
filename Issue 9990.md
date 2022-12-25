@@ -3,7 +3,7 @@
 archive/issues_009990.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 \n\n == The Problem ==\nrubiks is failing to install. I believe it is believing the `install` program is the `GNU install`, whereas in fact IBM provide their own on AIX, which is not compatible. \n\nThis is the first `install` program in the PATH\n\n```\n-bash-4.1$ command -v install\n/usr/bin/install\n```\n\nWe can see this is not the GNU install program. \n\n```\n-bash-4.1$ /usr/bin/install -h\ngetopt: Not a recognized flag: h\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n-bash-4.1$ /usr/bin/install --help\ngetopt: Not a recognized flag: -\ngetopt: Not a recognized flag: h\ngetopt: Not a recognized flag: e\ngetopt: Not a recognized flag: l\ngetopt: Not a recognized flag: p\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n\n```\n\n\nThis results in some odd permission problems when rubiks tries to install itself:\n\n\n```\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\nsizekoc2: 48541 + 2387 + 409577660 + 2525 + 77886 = 409708999\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/dik'\nmake[3]: Entering directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmake[3]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\ngcc  -O2  -g  -Wall     optimal.c   -o optimal\ngcc  -O2  -g  -Wall     twist.c   -o twist\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmkdir -p /home/users/drkirkby/sage-4.6.alpha1/local/bin\n/usr/bin/install reid/optimal /home/users/drkirkby/sage-4.6.alpha1/local/bin\nfind: cannot chdir to </etc/security> : Permission denied\nfind: cannot chdir to </etc/tunables> : Permission denied\nfind: cannot chdir to </etc/iscsi> : Permission denied\nfind: cannot chdir to </etc/ppp> : Permission denied\nfind: cannot chdir to </usr/lib/boot/network> : Permission denied\nfind: cannot chdir to </usr/lib/drivers/crypto> : Permission denied\ninstall: File optimal was not found.\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src'\n\nreal    10m38.826s\nuser    5m19.612s\nsys     0m8.383s\nsage: An error occurred while installing rubiks-20070912.p12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9991\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 \n\n == The Problem ==\nrubiks is failing to install. I believe it is believing the `install` program is the `GNU install`, whereas in fact IBM provide their own on AIX, which is not compatible. \n\nThis is the first `install` program in the PATH\n\n```\n-bash-4.1$ command -v install\n/usr/bin/install\n```\nWe can see this is not the GNU install program. \n\n```\n-bash-4.1$ /usr/bin/install -h\ngetopt: Not a recognized flag: h\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n-bash-4.1$ /usr/bin/install --help\ngetopt: Not a recognized flag: -\ngetopt: Not a recognized flag: h\ngetopt: Not a recognized flag: e\ngetopt: Not a recognized flag: l\ngetopt: Not a recognized flag: p\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n\n```\n\nThis results in some odd permission problems when rubiks tries to install itself:\n\n```\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\nsizekoc2: 48541 + 2387 + 409577660 + 2525 + 77886 = 409708999\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/dik'\nmake[3]: Entering directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmake[3]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\ngcc  -O2  -g  -Wall     optimal.c   -o optimal\ngcc  -O2  -g  -Wall     twist.c   -o twist\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmkdir -p /home/users/drkirkby/sage-4.6.alpha1/local/bin\n/usr/bin/install reid/optimal /home/users/drkirkby/sage-4.6.alpha1/local/bin\nfind: cannot chdir to </etc/security> : Permission denied\nfind: cannot chdir to </etc/tunables> : Permission denied\nfind: cannot chdir to </etc/iscsi> : Permission denied\nfind: cannot chdir to </etc/ppp> : Permission denied\nfind: cannot chdir to </usr/lib/boot/network> : Permission denied\nfind: cannot chdir to </usr/lib/drivers/crypto> : Permission denied\ninstall: File optimal was not found.\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src'\n\nreal    10m38.826s\nuser    5m19.612s\nsys     0m8.383s\nsage: An error occurred while installing rubiks-20070912.p12\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9991\n\n",
     "created_at": "2010-09-23T22:41:02Z",
     "labels": [
         "component: porting: aix or hp-ux",
@@ -40,7 +40,6 @@ This is the first `install` program in the PATH
 -bash-4.1$ command -v install
 /usr/bin/install
 ```
-
 We can see this is not the GNU install program. 
 
 ```
@@ -59,9 +58,7 @@ Usage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]
 
 ```
 
-
 This results in some odd permission problems when rubiks tries to install itself:
-
 
 ```
 gcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o
@@ -90,7 +87,6 @@ user    5m19.612s
 sys     0m8.383s
 sage: An error occurred while installing rubiks-20070912.p12
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9991
 

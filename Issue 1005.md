@@ -69,7 +69,7 @@ When this is fixed, inst/inst.tex should be updated; I just changed that file to
 archive/issue_comments_006102.json:
 ```json
 {
-    "body": "Some hacks / workarounds:\n\n\n```\nCrazy hacks to get things to build.  Will figure out right fixes once everything\nworks, etc.\n\nThese come from rpw, me, Mabshoff .\n\n1) FLINT (william stein):\nProblem -- Multiple symbols... --\nSolution:\n   comment out this one line 423 of local/include/gmp.h\n/* #define __GMP_EXTERN_INLINE      extern __inline__ */\n\n2) PYTHON (rpw):\nPython fails to build:\nSolution:\nI did\n   export CFLAGS=\"-D__DARWIN_UNIX03\"\nthen in src/ manually did this line again after it failed:\ngcc -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -DNDEBUG -g -O3 -Wall -Wstrict-prototypes  -I. -I./Include   -DPy_BUILD_CORE  -c ./Modules/posixmodule.c -o Modules/posixmodule.o\n\nNote that putting the above CFLAGS lines in spkg-install at the top or in the ./configure\nline did *not* work for some reason.\n\n3) GIVARO (rpw and mabshoff):\nProblem: Fails to build.\nSolution: Add #include \"sys/types.h\" to the top of\nsrc/src/kernel/zpz/givzpz32std.inl\nsrc/src/kernel/zpz/givzpz32uns.inl\n\n```\n",
+    "body": "Some hacks / workarounds:\n\n```\nCrazy hacks to get things to build.  Will figure out right fixes once everything\nworks, etc.\n\nThese come from rpw, me, Mabshoff .\n\n1) FLINT (william stein):\nProblem -- Multiple symbols... --\nSolution:\n   comment out this one line 423 of local/include/gmp.h\n/* #define __GMP_EXTERN_INLINE      extern __inline__ */\n\n2) PYTHON (rpw):\nPython fails to build:\nSolution:\nI did\n   export CFLAGS=\"-D__DARWIN_UNIX03\"\nthen in src/ manually did this line again after it failed:\ngcc -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd -DNDEBUG -g -O3 -Wall -Wstrict-prototypes  -I. -I./Include   -DPy_BUILD_CORE  -c ./Modules/posixmodule.c -o Modules/posixmodule.o\n\nNote that putting the above CFLAGS lines in spkg-install at the top or in the ./configure\nline did *not* work for some reason.\n\n3) GIVARO (rpw and mabshoff):\nProblem: Fails to build.\nSolution: Add #include \"sys/types.h\" to the top of\nsrc/src/kernel/zpz/givzpz32std.inl\nsrc/src/kernel/zpz/givzpz32uns.inl\n\n```",
     "created_at": "2007-10-29T01:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ archive/issue_comments_006102.json:
 ```
 
 Some hacks / workarounds:
-
 
 ```
 Crazy hacks to get things to build.  Will figure out right fixes once everything
@@ -114,13 +113,12 @@ src/src/kernel/zpz/givzpz32uns.inl
 
 
 
-
 ---
 
 archive/issue_comments_006103.json:
 ```json
 {
-    "body": "\n```\n4) Building clisp fails with \n\n  UNIX error 45: Operation not supported\n\nSOLUTION: \n\n   cd spkg/build/clisp-*\n   cd src/src\n   make\n   make install\n\nIt works.  The problem is that building tee'ing breaks on 10.5. See\nhttp://osdir.com/ml/apple.fink.tracker/2004-12/msg00149.html\n```\n",
+    "body": "```\n4) Building clisp fails with \n\n  UNIX error 45: Operation not supported\n\nSOLUTION: \n\n   cd spkg/build/clisp-*\n   cd src/src\n   make\n   make install\n\nIt works.  The problem is that building tee'ing breaks on 10.5. See\nhttp://osdir.com/ml/apple.fink.tracker/2004-12/msg00149.html\n```",
     "created_at": "2007-10-29T02:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -128,7 +126,6 @@ archive/issue_comments_006103.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 4) Building clisp fails with 
@@ -148,13 +145,12 @@ http://osdir.com/ml/apple.fink.tracker/2004-12/msg00149.html
 
 
 
-
 ---
 
 archive/issue_comments_006104.json:
 ```json
 {
-    "body": "\n```\n5) MAXIMA:\n\nSolution: Exactly the same as for clisp.  This works.\n```\n",
+    "body": "```\n5) MAXIMA:\n\nSolution: Exactly the same as for clisp.  This works.\n```",
     "created_at": "2007-10-29T03:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -162,7 +158,6 @@ archive/issue_comments_006104.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 5) MAXIMA:
@@ -172,13 +167,12 @@ Solution: Exactly the same as for clisp.  This works.
 
 
 
-
 ---
 
 archive/issue_comments_006105.json:
 ```json
 {
-    "body": "Other broken packages:\n\n```\nlcalc -- fails\nflintqs -- fails\nscipy -- fails (looks easy to fix)\n```\n\n\nEverything else builds and Sage starts up.",
+    "body": "Other broken packages:\n\n```\nlcalc -- fails\nflintqs -- fails\nscipy -- fails (looks easy to fix)\n```\n\nEverything else builds and Sage starts up.",
     "created_at": "2007-10-29T03:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -195,7 +189,6 @@ flintqs -- fails
 scipy -- fails (looks easy to fix)
 ```
 
-
 Everything else builds and Sage starts up.
 
 
@@ -205,7 +198,7 @@ Everything else builds and Sage starts up.
 archive/issue_comments_006106.json:
 ```json
 {
-    "body": "6) LCALC:\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\n\nin spkg-install to \n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\n\n\nThe former was needed when we supported windows (e.g., lcalc.exe), and\nwas sort of hack-ish.  The latter works around that there is some \nsmall problem with strip on os x, which isn't an issue. \n\n -- William",
+    "body": "6) LCALC:\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\nin spkg-install to \n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\n\nThe former was needed when we supported windows (e.g., lcalc.exe), and\nwas sort of hack-ish.  The latter works around that there is some \nsmall problem with strip on os x, which isn't an issue. \n\n -- William",
     "created_at": "2007-10-29T05:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -221,13 +214,11 @@ The fix for lcalc is to change the line
 ```
 cp lcalc* "$SAGE_LOCAL"/bin
 ```
-
 in spkg-install to 
 
 ```
 cp lcalc "$SAGE_LOCAL"/bin
 ```
-
 
 The former was needed when we supported windows (e.g., lcalc.exe), and
 was sort of hack-ish.  The latter works around that there is some 
@@ -242,7 +233,7 @@ small problem with strip on os x, which isn't an issue.
 archive/issue_comments_006107.json:
 ```json
 {
-    "body": "7) FLINTQS:\n\nThe fix for flintqs is the same as for givaro, basically.\nTo the file\n\n```\n    src/lanczos.c\n```\n\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\n\nThen it builds fine.",
+    "body": "7) FLINTQS:\n\nThe fix for flintqs is the same as for givaro, basically.\nTo the file\n\n```\n    src/lanczos.c\n```\nadd the following as the first line:\n\n```\n#include \"sys/types.h\"\n```\nThen it builds fine.",
     "created_at": "2007-10-29T05:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -259,13 +250,11 @@ To the file
 ```
     src/lanczos.c
 ```
-
 add the following as the first line:
 
 ```
 #include "sys/types.h"
 ```
-
 Then it builds fine.
 
 
@@ -275,7 +264,7 @@ Then it builds fine.
 archive/issue_comments_006108.json:
 ```json
 {
-    "body": "8) SCIPY\n\nThe final build problem was with Scipy.  There is a problem with g95 not working correctly to build some of scipy on 10.5.  Fortunately, using gfortran instead *does* work.  So I installed a system-wide gfortran in /usr/local/bin/, then did\n\n```\n   export SAGE_FORTRAN=`which gfortran`\n   cd SAGE_ROOT\n   rm spkg/installed/fortran*\n   sage -f fortran-20070912\n   make\n```\n\nand the rest of the build completed fine.",
+    "body": "8) SCIPY\n\nThe final build problem was with Scipy.  There is a problem with g95 not working correctly to build some of scipy on 10.5.  Fortunately, using gfortran instead *does* work.  So I installed a system-wide gfortran in /usr/local/bin/, then did\n\n```\n   export SAGE_FORTRAN=`which gfortran`\n   cd SAGE_ROOT\n   rm spkg/installed/fortran*\n   sage -f fortran-20070912\n   make\n```\nand the rest of the build completed fine.",
     "created_at": "2007-10-29T07:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -295,7 +284,6 @@ The final build problem was with Scipy.  There is a problem with g95 not working
    sage -f fortran-20070912
    make
 ```
-
 and the rest of the build completed fine.
 
 
@@ -305,7 +293,7 @@ and the rest of the build completed fine.
 archive/issue_comments_006109.json:
 ```json
 {
-    "body": "Replying to [ticket:1005 mabshoff]:\n> NOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5.\n> \n> \n> \n> Doctesting the tutorial results in a bunch of error messages like this:\n> {{{\n> python(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n> *** set a breakpoint in malloc_error_break to debug\n> }}}\n\nCheck out https://lists.ubuntu.com/archives/storm/2007-July/000035.html for some pointers how this might be resolved.\n\nCheers,\n\nMichael",
+    "body": "Replying to [ticket:1005 mabshoff]:\n> NOTES:  The remarks below are enough to get Sage to 100% build on OSX 10.5.\n> \n> \n> \n> Doctesting the tutorial results in a bunch of error messages like this:\n> \n> ```\n> python(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n> *** set a breakpoint in malloc_error_break to debug\n> ```\n\n\nCheck out https://lists.ubuntu.com/archives/storm/2007-July/000035.html for some pointers how this might be resolved.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-29T07:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -320,10 +308,12 @@ Replying to [ticket:1005 mabshoff]:
 > 
 > 
 > Doctesting the tutorial results in a bunch of error messages like this:
-> {{{
+> 
+> ```
 > python(15525) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed
 > *** set a breakpoint in malloc_error_break to debug
-> }}}
+> ```
+
 
 Check out https://lists.ubuntu.com/archives/storm/2007-July/000035.html for some pointers how this might be resolved.
 
@@ -431,7 +421,7 @@ probably won't 100% work without gfortran installed though.
 archive/issue_comments_006114.json:
 ```json
 {
-    "body": "I just tried making some matplotlib plots using athe sage I built on 10.5.  I get lots of *serious* problems.  Nothing works.  This may be very difficult to resolve; I don't know.   This happens both in the notebook and from the command line.\n\n\n```\nsage: P = point( (0,0) )\nsage: show( P )\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\n```\n\n\nNOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occur.",
+    "body": "I just tried making some matplotlib plots using athe sage I built on 10.5.  I get lots of *serious* problems.  Nothing works.  This may be very difficult to resolve; I don't know.   This happens both in the notebook and from the command line.\n\n```\nsage: P = point( (0,0) )\nsage: show( P )\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\npython(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being freed\n*** set a breakpoint in malloc_error_break to debug\n```\n\nNOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occur.",
     "created_at": "2007-10-31T21:04:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -441,7 +431,6 @@ archive/issue_comments_006114.json:
 ```
 
 I just tried making some matplotlib plots using athe sage I built on 10.5.  I get lots of *serious* problems.  Nothing works.  This may be very difficult to resolve; I don't know.   This happens both in the notebook and from the command line.
-
 
 ```
 sage: P = point( (0,0) )
@@ -462,7 +451,6 @@ python(5144) malloc: *** error for object 0xa023c6d8: Non-aligned pointer being 
 *** set a breakpoint in malloc_error_break to debug
 ```
 
-
 NOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occur.
 
 
@@ -472,7 +460,7 @@ NOTE: Using sage-2.8.9 that I built on OS X 10.4 the above problem does not occu
 archive/issue_comments_006115.json:
 ```json
 {
-    "body": "*READLINE in GP doesn't work*\n\nYet another problem:\n\n\n```\nsage: !gp\n                       GP/PARI CALCULATOR Version 2.3.2 (released)\n               i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                compiled: Oct 31 2007, gcc-4.0.1 (Apple Inc. build 5465)\n                   (readline not compiled in, extended help available)\n                             ^^^^^^^^^^^^^^^\n```\n",
+    "body": "*READLINE in GP doesn't work*\n\nYet another problem:\n\n```\nsage: !gp\n                       GP/PARI CALCULATOR Version 2.3.2 (released)\n               i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                compiled: Oct 31 2007, gcc-4.0.1 (Apple Inc. build 5465)\n                   (readline not compiled in, extended help available)\n                             ^^^^^^^^^^^^^^^\n```",
     "created_at": "2007-11-01T06:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -485,7 +473,6 @@ archive/issue_comments_006115.json:
 
 Yet another problem:
 
-
 ```
 sage: !gp
                        GP/PARI CALCULATOR Version 2.3.2 (released)
@@ -494,7 +481,6 @@ sage: !gp
                    (readline not compiled in, extended help available)
                              ^^^^^^^^^^^^^^^
 ```
-
 
 
 
@@ -539,7 +525,7 @@ Changing component from memleak to porting.
 archive/issue_comments_006118.json:
 ```json
 {
-    "body": "Replying to [comment:15 was]:\n> I just tried making some matplotlib plots using athe sage I built on 10.5.  \n> I get lots of *serious* problems.  \n\nI think this was a result of something involving #1044; I've tested\nagain and I can't replicate this problem at all.  So never mind -- matplotlib is fine :-).",
+    "body": "Replying to [comment:15 was]:\n> I just tried making some matplotlib plots using athe sage I built on 10.5.  \n> I get lots of *serious* problems.  \n\n\nI think this was a result of something involving #1044; I've tested\nagain and I can't replicate this problem at all.  So never mind -- matplotlib is fine :-).",
     "created_at": "2007-11-01T07:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -552,6 +538,7 @@ Replying to [comment:15 was]:
 > I just tried making some matplotlib plots using athe sage I built on 10.5.  
 > I get lots of *serious* problems.  
 
+
 I think this was a result of something involving #1044; I've tested
 again and I can't replicate this problem at all.  So never mind -- matplotlib is fine :-).
 
@@ -562,7 +549,7 @@ again and I can't replicate this problem at all.  So never mind -- matplotlib is
 archive/issue_comments_006119.json:
 ```json
 {
-    "body": "From rpw:\n\n```\nRalf-Philipp Weinmann \t\nto Jean-Guillaume., sage-devel\n\t\nshow details\n\t 7:21 am (2 hours ago) \nDear Dr. Dumas,\n\nI've encountered a build problem in Givaro 3.2.6 on MacOS X 10.5. The\nuint type used in src/kernel/zpz/givzpz32std.inl for example is not\navailable unless sys/types.h is included. The following patch fixes\nthe problem for me:\n\n--- src/kernel/system/givbasictype.h.ORIG       2007-11-01\n15:17:57.000000000 +0100\n+++ src/kernel/system/givbasictype.h    2007-11-01 15:18:33.000000000 +0100\n@@ -11,6 +11,9 @@\n #include \"givaro/givconfig.h\"\n\n #include <stdlib.h> // for size_t\n+#ifdef MACOSX\n+#  include <sys/types.h> // needed on MacOS X 10.5 for uint type\n+#endif\n\n // -- Neutral type: definition of zero and one\n class Neutral {\n```\n",
+    "body": "From rpw:\n\n```\nRalf-Philipp Weinmann \t\nto Jean-Guillaume., sage-devel\n\t\nshow details\n\t 7:21 am (2 hours ago) \nDear Dr. Dumas,\n\nI've encountered a build problem in Givaro 3.2.6 on MacOS X 10.5. The\nuint type used in src/kernel/zpz/givzpz32std.inl for example is not\navailable unless sys/types.h is included. The following patch fixes\nthe problem for me:\n\n--- src/kernel/system/givbasictype.h.ORIG       2007-11-01\n15:17:57.000000000 +0100\n+++ src/kernel/system/givbasictype.h    2007-11-01 15:18:33.000000000 +0100\n@@ -11,6 +11,9 @@\n #include \"givaro/givconfig.h\"\n\n #include <stdlib.h> // for size_t\n+#ifdef MACOSX\n+#  include <sys/types.h> // needed on MacOS X 10.5 for uint type\n+#endif\n\n // -- Neutral type: definition of zero and one\n class Neutral {\n```",
     "created_at": "2007-11-01T16:51:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -600,7 +587,6 @@ the problem for me:
  // -- Neutral type: definition of zero and one
  class Neutral {
 ```
-
 
 
 
@@ -766,7 +752,7 @@ archive/issue_events_002763.json:
 archive/issue_comments_006125.json:
 ```json
 {
-    "body": "\n```\nHi,\n\nI just did a test and using the new version of g95 here:\n    http://ftp.g95.org/g95-x86-osx.tgz\nworks fine for building Sage on Leopard OS X 10.5 intel.  \nSo, we can just update that and stop worrying about require\ngfortran on that platform.  Very nice. \n\n -- Wiliam\n\n```\n",
+    "body": "```\nHi,\n\nI just did a test and using the new version of g95 here:\n    http://ftp.g95.org/g95-x86-osx.tgz\nworks fine for building Sage on Leopard OS X 10.5 intel.  \nSo, we can just update that and stop worrying about require\ngfortran on that platform.  Very nice. \n\n -- Wiliam\n\n```",
     "created_at": "2007-11-20T05:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1005",
     "type": "issue_comment",
@@ -774,7 +760,6 @@ archive/issue_comments_006125.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Hi,
@@ -788,7 +773,6 @@ gfortran on that platform.  Very nice.
  -- Wiliam
 
 ```
-
 
 
 

@@ -297,7 +297,7 @@ Third patch (replacing all previous ones)
 archive/issue_comments_067975.json:
 ```json
 {
-    "body": "At the moment, the following tests still fail:\n\n\n```\nsage -t  devel/sage-ff/sage/combinat/sf/hall_littlewood.py\nsage -t  devel/sage-ff/sage/combinat/sf/macdonald.py\nsage -t  devel/sage-ff/sage/combinat/sf/sf.py\nsage -t  devel/sage-ff/sage/combinat/sf/jack.py\nsage -t  devel/sage-ff/sage/coding/linear_code.py\nsage -t  devel/sage-ff/sage/algebras/quatalg/quaternion_algebra_element.pyx\nsage -t  devel/sage-ff/sage/matrix/matrix2.pyx\n```\n\n\nAfter taking a first look, it seems that some of these are just positive docstring changes (e.g. a previous ``(-1)/(-1)`` which is now correctly displayed as a ``1``), others are negative changes (e.g. a previous ``1`` now displayed as ``(1/3)/(1/3)``).  However, some ``AttributeError``s are raised for fraction field elements, suggesting that sometimes the numerator or denominator isn't in the ring (of the fraction field).  However, *assuming* that the numerators and denominators of the input to the arithmetic methods belong to the correct ring, I think the code should preserve this and so I should be right to always pass ``coerce=False``.  I could pass ``coerce=True`` to fix these, but assuming I am right (which might not be the case), this would just hide mistakes elsewhere.  In any case, I'll look at these points tomorrow.\n\nSebastian",
+    "body": "At the moment, the following tests still fail:\n\n```\nsage -t  devel/sage-ff/sage/combinat/sf/hall_littlewood.py\nsage -t  devel/sage-ff/sage/combinat/sf/macdonald.py\nsage -t  devel/sage-ff/sage/combinat/sf/sf.py\nsage -t  devel/sage-ff/sage/combinat/sf/jack.py\nsage -t  devel/sage-ff/sage/coding/linear_code.py\nsage -t  devel/sage-ff/sage/algebras/quatalg/quaternion_algebra_element.pyx\nsage -t  devel/sage-ff/sage/matrix/matrix2.pyx\n```\n\nAfter taking a first look, it seems that some of these are just positive docstring changes (e.g. a previous ``(-1)/(-1)`` which is now correctly displayed as a ``1``), others are negative changes (e.g. a previous ``1`` now displayed as ``(1/3)/(1/3)``).  However, some ``AttributeError``s are raised for fraction field elements, suggesting that sometimes the numerator or denominator isn't in the ring (of the fraction field).  However, *assuming* that the numerators and denominators of the input to the arithmetic methods belong to the correct ring, I think the code should preserve this and so I should be right to always pass ``coerce=False``.  I could pass ``coerce=True`` to fix these, but assuming I am right (which might not be the case), this would just hide mistakes elsewhere.  In any case, I'll look at these points tomorrow.\n\nSebastian",
     "created_at": "2010-01-07T01:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -308,7 +308,6 @@ archive/issue_comments_067975.json:
 
 At the moment, the following tests still fail:
 
-
 ```
 sage -t  devel/sage-ff/sage/combinat/sf/hall_littlewood.py
 sage -t  devel/sage-ff/sage/combinat/sf/macdonald.py
@@ -318,7 +317,6 @@ sage -t  devel/sage-ff/sage/coding/linear_code.py
 sage -t  devel/sage-ff/sage/algebras/quatalg/quaternion_algebra_element.pyx
 sage -t  devel/sage-ff/sage/matrix/matrix2.pyx
 ```
-
 
 After taking a first look, it seems that some of these are just positive docstring changes (e.g. a previous ``(-1)/(-1)`` which is now correctly displayed as a ``1``), others are negative changes (e.g. a previous ``1`` now displayed as ``(1/3)/(1/3)``).  However, some ``AttributeError``s are raised for fraction field elements, suggesting that sometimes the numerator or denominator isn't in the ring (of the fraction field).  However, *assuming* that the numerators and denominators of the input to the arithmetic methods belong to the correct ring, I think the code should preserve this and so I should be right to always pass ``coerce=False``.  I could pass ``coerce=True`` to fix these, but assuming I am right (which might not be the case), this would just hide mistakes elsewhere.  In any case, I'll look at these points tomorrow.
 
@@ -482,7 +480,7 @@ Sebastian
 archive/issue_comments_067983.json:
 ```json
 {
-    "body": "This looks pretty good, and I am checking it now (as it touches so many places I am doing a full test on both 32 and 64 bit machines).\n\nTwo small points:\n1. If you have several \"except\" clauses each with the same action, you can combine them thus:\n\n```\n    except (AttributeError, NotImplementedError, TypeError):\n```\n\n2. It's a bit perverse to call the num and den of \"self\" rnum and rden whle calling those of \"right\" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!\n\nI will report back when the full tests have finished.",
+    "body": "This looks pretty good, and I am checking it now (as it touches so many places I am doing a full test on both 32 and 64 bit machines).\n\nTwo small points:\n1. If you have several \"except\" clauses each with the same action, you can combine them thus:\n\n```\n    except (AttributeError, NotImplementedError, TypeError):\n```\n2. It's a bit perverse to call the num and den of \"self\" rnum and rden whle calling those of \"right\" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!\n\nI will report back when the full tests have finished.",
     "created_at": "2010-01-10T14:20:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7857",
     "type": "issue_comment",
@@ -499,7 +497,6 @@ Two small points:
 ```
     except (AttributeError, NotImplementedError, TypeError):
 ```
-
 2. It's a bit perverse to call the num and den of "self" rnum and rden whle calling those of "right" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!
 
 I will report back when the full tests have finished.

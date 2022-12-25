@@ -3,7 +3,7 @@
 archive/issues_001322.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  jason-sage@creativetrax.com @mwhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  jason-sage@creativetrax.com @mwhansen timothyclemans\n\nKeywords: graphs\n\nSee mailing list discussions at \n\n[http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2](http://groups.google.com/group/sage-devel/browse_thread/thread/f0119a34ca55e95f/65bf86aef687c6d2?lnk=gst&q=interactive#65bf86aef687c6d2)\n\nand \n[http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe](http://groups.google.com/group/sage-devel/browse_thread/thread/db30b40ab36aa51c/2157c72c6cc50dfe?lnk=gst&q=Manipulate#2157c72c6cc50dfe)\n\nAlso, from Robert Miller (to Jason Grout):\n\n```\n> I was brainstorming about something like widgets a while ago, before\n> the notebook underwent its sea change. We (>= you and I) should make\n> this a coding sprint at SD7.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1322\n\n",
     "created_at": "2007-11-28T20:16:45Z",
     "labels": [
         "component: combinatorics"
@@ -30,13 +30,11 @@ and
 
 Also, from Robert Miller (to Jason Grout):
 
-
 ```
 > I was brainstorming about something like widgets a while ago, before
 > the notebook underwent its sea change. We (>= you and I) should make
 > this a coding sprint at SD7.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1322
 
@@ -133,7 +131,7 @@ The menu select box is the tip of the iceberg here.  It'd be nice to have fancy 
 archive/issue_comments_008423.json:
 ```json
 {
-    "body": "Oh, and one more thing: we currently have to import the function:\n\n\n```\nsage: from sage.server.notebook.widgets.menu import menu\nsage: menu('f',[sin,cos,tan]).show()\n\n(a menu is shown.  pick a value for f)\n\nsage: plot(f(x),0,2*pi).show()\n\n(the plot of f(x) (with the selected f) is shown.)\n\n```\n",
+    "body": "Oh, and one more thing: we currently have to import the function:\n\n```\nsage: from sage.server.notebook.widgets.menu import menu\nsage: menu('f',[sin,cos,tan]).show()\n\n(a menu is shown.  pick a value for f)\n\nsage: plot(f(x),0,2*pi).show()\n\n(the plot of f(x) (with the selected f) is shown.)\n\n```",
     "created_at": "2007-12-01T06:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ archive/issue_comments_008423.json:
 ```
 
 Oh, and one more thing: we currently have to import the function:
-
 
 ```
 sage: from sage.server.notebook.widgets.menu import menu
@@ -156,7 +153,6 @@ sage: plot(f(x),0,2*pi).show()
 (the plot of f(x) (with the selected f) is shown.)
 
 ```
-
 
 
 
@@ -236,7 +232,7 @@ archive/issue_events_003454.json:
 archive/issue_comments_008427.json:
 ```json
 {
-    "body": "It appears that the warning about a nonexistant cell comes from the line \n\n\n```\n            s = encode_list([cell.next_id(), 'no_new_cell', str(id)])\n```\n\n\nin sage/server/notebook/twisted.py",
+    "body": "It appears that the warning about a nonexistant cell comes from the line \n\n```\n            s = encode_list([cell.next_id(), 'no_new_cell', str(id)])\n```\n\nin sage/server/notebook/twisted.py",
     "created_at": "2007-12-01T08:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -247,11 +243,9 @@ archive/issue_comments_008427.json:
 
 It appears that the warning about a nonexistant cell comes from the line 
 
-
 ```
             s = encode_list([cell.next_id(), 'no_new_cell', str(id)])
 ```
-
 
 in sage/server/notebook/twisted.py
 
@@ -298,7 +292,7 @@ See also #1613....
 archive/issue_comments_008430.json:
 ```json
 {
-    "body": "Here is a trivial example.  You *must* change 155 to an actual\nexisting blank output cell. \n\n\n```\ndef manipulate():\n    print r\"\"\" \n    <html>\n<script>\nfunction manip(id, cmd) {\n   var cell_input = get_cell(id);\n   cell_input.value = cmd;\n   cell_input.style.display = \"none\";\n   evaluate_cell(id, 0);\n}\n</script>\n    <input type=\"button\" value=\"sin(x)\" onclick=\"manip(155, 'plot(sin,-1,1)')\">\n    <input type=\"button\" value=\"cos(x)\" onclick=\"manip(155, 'plot(cos,-1,1)')\">\n    <input type=\"button\" value=\"tan(x)\" onclick=\"manip(155, 'plot(tan,-1,1)')\">\n    <input type=\"button\" value=\"sin(x^2)\" onclick=\"manip(155, 'plot(sin(x^2),-1,1)')\">\n    </html>\n\"\"\"\n```\n",
+    "body": "Here is a trivial example.  You *must* change 155 to an actual\nexisting blank output cell. \n\n```\ndef manipulate():\n    print r\"\"\" \n    <html>\n<script>\nfunction manip(id, cmd) {\n   var cell_input = get_cell(id);\n   cell_input.value = cmd;\n   cell_input.style.display = \"none\";\n   evaluate_cell(id, 0);\n}\n</script>\n    <input type=\"button\" value=\"sin(x)\" onclick=\"manip(155, 'plot(sin,-1,1)')\">\n    <input type=\"button\" value=\"cos(x)\" onclick=\"manip(155, 'plot(cos,-1,1)')\">\n    <input type=\"button\" value=\"tan(x)\" onclick=\"manip(155, 'plot(tan,-1,1)')\">\n    <input type=\"button\" value=\"sin(x^2)\" onclick=\"manip(155, 'plot(sin(x^2),-1,1)')\">\n    </html>\n\"\"\"\n```",
     "created_at": "2008-02-07T07:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -309,7 +303,6 @@ archive/issue_comments_008430.json:
 
 Here is a trivial example.  You *must* change 155 to an actual
 existing blank output cell. 
-
 
 ```
 def manipulate():
@@ -333,13 +326,12 @@ function manip(id, cmd) {
 
 
 
-
 ---
 
 archive/issue_comments_008431.json:
 ```json
 {
-    "body": "More stuff:\n\n\n```\nprint r\"\"\"\n<html>\n<script>\nfunction manip(id,cmd, variable, value) {\n    var cell_input = get_cell(id);\n    cell_input.value = variable+\"=\"+value+\"\\n\"+cmd;\n    cell_input.style.display = \"none\";\n    evaluate_cell(id, 0);\n}\n</script>\n</html>\n\"\"\"\n```\n\n\nand \n\n\n```\ndef menu(cmd, variable, options):\n    ret = \"\"\"<select name='' onchange='manip(%d,\"%s\", \"%s\", this.options[this.selectedIndex].value)'>\"\"\"%(__SAGE_NOTEBOOK_CELL_ID__+1,cmd,variable)\n    for option in options:\n        ret += \"<option value='%s'>%s</option>\"%(repr(option), repr(option))\n    ret += \"</select>\"\n    return ret\n\ndef manipulate(cmd, variables):\n    controls=''\n    for key,val in variables.items():\n        controls += menu(cmd, key, val)\n    print \"<html>\"+controls+\"</html>\"\n```\n\n\nand \n\n\n```\nmanipulate('plot(f(x),(x,0,3))', {'f':[sin,cos,tan]})\n```\n",
+    "body": "More stuff:\n\n```\nprint r\"\"\"\n<html>\n<script>\nfunction manip(id,cmd, variable, value) {\n    var cell_input = get_cell(id);\n    cell_input.value = variable+\"=\"+value+\"\\n\"+cmd;\n    cell_input.style.display = \"none\";\n    evaluate_cell(id, 0);\n}\n</script>\n</html>\n\"\"\"\n```\n\nand \n\n```\ndef menu(cmd, variable, options):\n    ret = \"\"\"<select name='' onchange='manip(%d,\"%s\", \"%s\", this.options[this.selectedIndex].value)'>\"\"\"%(__SAGE_NOTEBOOK_CELL_ID__+1,cmd,variable)\n    for option in options:\n        ret += \"<option value='%s'>%s</option>\"%(repr(option), repr(option))\n    ret += \"</select>\"\n    return ret\n\ndef manipulate(cmd, variables):\n    controls=''\n    for key,val in variables.items():\n        controls += menu(cmd, key, val)\n    print \"<html>\"+controls+\"</html>\"\n```\n\nand \n\n```\nmanipulate('plot(f(x),(x,0,3))', {'f':[sin,cos,tan]})\n```",
     "created_at": "2008-02-07T09:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -349,7 +341,6 @@ archive/issue_comments_008431.json:
 ```
 
 More stuff:
-
 
 ```
 print r"""
@@ -366,9 +357,7 @@ function manip(id,cmd, variable, value) {
 """
 ```
 
-
 and 
-
 
 ```
 def menu(cmd, variable, options):
@@ -385,14 +374,11 @@ def manipulate(cmd, variables):
     print "<html>"+controls+"</html>"
 ```
 
-
 and 
-
 
 ```
 manipulate('plot(f(x),(x,0,3))', {'f':[sin,cos,tan]})
 ```
-
 
 
 
@@ -450,7 +436,7 @@ A different very rough cut of functionality.
 archive/issue_comments_008434.json:
 ```json
 {
-    "body": "Attachment [manipulate.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate.patch) by cwitty created at 2008-03-01 05:43:09\n\nWow, this is a lot of fun!\n\nHere's another, more interesting example.  (This uses a CELL_ID of zero, so the first cell in your notebook will be overwritten.)\n\n```\nx = polygen(ZZ)\ncoeff_range = ButtonGroup([-4,-3,-2,-1,0,1,2,3,4])\nmanipulate(\"p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); p.roots(ring=RR)\", \n           {'a': coeff_range,\n            'b': coeff_range,\n            'c': coeff_range,\n            'd': coeff_range,\n            'e': coeff_range}, 0)\n```\n\n\nJust judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)\n\n1. Having to specify a CELL_ID is lame.\n\n2. The API of specifying a dictionary is bad.  In the above example, the controls don't appear in the expected order (a,b,c,d,e); but that can't be fixed in manipulate, because it doesn't know what order you used when you typed the dictionary literal.  Instead, manipulate should take a list of pairs.\n\nWishlist items:\n\n1. Slider bars would be nice.\n\n2. Widgets should be labeled with the variable name they control.\n\n3. The syntax is pretty ugly.  I haven't thought of a way to fix that without some sort of preparser; here's a first suggestion for a preparser-based syntax:\n\n```\n%manipulate\nx : Menu([2,4,6,8])\ny : Menu([1,10,100,1000])\n--\nx^y\n```\n\nFor extra bonus points, this could work in conjunction with %pari/%magma/etc.",
+    "body": "Attachment [manipulate.patch](tarball://root/attachments/some-uuid/ticket1322/manipulate.patch) by cwitty created at 2008-03-01 05:43:09\n\nWow, this is a lot of fun!\n\nHere's another, more interesting example.  (This uses a CELL_ID of zero, so the first cell in your notebook will be overwritten.)\n\n```\nx = polygen(ZZ)\ncoeff_range = ButtonGroup([-4,-3,-2,-1,0,1,2,3,4])\nmanipulate(\"p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); p.roots(ring=RR)\", \n           {'a': coeff_range,\n            'b': coeff_range,\n            'c': coeff_range,\n            'd': coeff_range,\n            'e': coeff_range}, 0)\n```\n\nJust judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)\n\n1. Having to specify a CELL_ID is lame.\n\n2. The API of specifying a dictionary is bad.  In the above example, the controls don't appear in the expected order (a,b,c,d,e); but that can't be fixed in manipulate, because it doesn't know what order you used when you typed the dictionary literal.  Instead, manipulate should take a list of pairs.\n\nWishlist items:\n\n1. Slider bars would be nice.\n\n2. Widgets should be labeled with the variable name they control.\n\n3. The syntax is pretty ugly.  I haven't thought of a way to fix that without some sort of preparser; here's a first suggestion for a preparser-based syntax:\n\n```\n%manipulate\nx : Menu([2,4,6,8])\ny : Menu([1,10,100,1000])\n--\nx^y\n```\nFor extra bonus points, this could work in conjunction with %pari/%magma/etc.",
     "created_at": "2008-03-01T05:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -476,7 +462,6 @@ manipulate("p = a*x^4 + b*x^3 + c*x^2 + d*x + e; show(plot(p, -4, 4)); show(p); 
             'e': coeff_range}, 0)
 ```
 
-
 Just judging from the functionality, I'd be willing to give a positive review once these two issues were addressed.  (I haven't read the code yet, though.)
 
 1. Having to specify a CELL_ID is lame.
@@ -498,7 +483,6 @@ y : Menu([1,10,100,1000])
 --
 x^y
 ```
-
 For extra bonus points, this could work in conjunction with %pari/%magma/etc.
 
 
@@ -528,7 +512,7 @@ this is independent of the patches above -- it's standalone -- see comments belo
 archive/issue_comments_008436.json:
 ```json
 {
-    "body": "This patch manipulate-take3.patch is a completely totally different approach to the whole manipulate thing.  It is just a prototype!!! It's not supposed to work perfectly, in particular, you must enter a number first and press return to see anything.\nAnyway, here are some example inputs (each should be entered in its own cell):\n\n\n```\n@manipulate\ndef myfactor(n):\n    print jsmath(factor(n))\n\n\n@manipulate\ndef polys(m):\n    R = QQ['x']\n    f = R.random_element(m)\n    print \"f = \", jsmath(f)\n    print \"real roots = \", f.real_roots()\n    show(plot(f))\n\n\n\n@manipulate\ndef ellcurve(label):\n    E = EllipticCurve(label)\n    show(E)\n    show(\"E conductor = %s\"%E.conductor())\n    show(E.q_eigenform(7))\n    show(plot(E))\n\n\n\n@manipulate\ndef pl(n):\n    var('x,y')\n    show(x^n-y^n)\n    show(plot3d(x^n-y^n, (x,-2,2), (y,-2,2)))\n\n```\n",
+    "body": "This patch manipulate-take3.patch is a completely totally different approach to the whole manipulate thing.  It is just a prototype!!! It's not supposed to work perfectly, in particular, you must enter a number first and press return to see anything.\nAnyway, here are some example inputs (each should be entered in its own cell):\n\n```\n@manipulate\ndef myfactor(n):\n    print jsmath(factor(n))\n\n\n@manipulate\ndef polys(m):\n    R = QQ['x']\n    f = R.random_element(m)\n    print \"f = \", jsmath(f)\n    print \"real roots = \", f.real_roots()\n    show(plot(f))\n\n\n\n@manipulate\ndef ellcurve(label):\n    E = EllipticCurve(label)\n    show(E)\n    show(\"E conductor = %s\"%E.conductor())\n    show(E.q_eigenform(7))\n    show(plot(E))\n\n\n\n@manipulate\ndef pl(n):\n    var('x,y')\n    show(x^n-y^n)\n    show(plot3d(x^n-y^n, (x,-2,2), (y,-2,2)))\n\n```",
     "created_at": "2008-03-01T10:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -539,7 +523,6 @@ archive/issue_comments_008436.json:
 
 This patch manipulate-take3.patch is a completely totally different approach to the whole manipulate thing.  It is just a prototype!!! It's not supposed to work perfectly, in particular, you must enter a number first and press return to see anything.
 Anyway, here are some example inputs (each should be entered in its own cell):
-
 
 ```
 @manipulate
@@ -577,13 +560,12 @@ def pl(n):
 
 
 
-
 ---
 
 archive/issue_comments_008437.json:
 ```json
 {
-    "body": "I love the new code by William.\n\nHere is my first example using it:\n\n```\n@manipulate\ndef gcd_steps(numbers):\n    a, b = numbers\n    w = a\n    y = b\n    while True:\n        x, z = divmod(w, y)\n        print '%d = %d * %d + %d' % (w, x, y, z)\n        if not z:\n            break\n        w = y\n        y = z\n```\n",
+    "body": "I love the new code by William.\n\nHere is my first example using it:\n\n```\n@manipulate\ndef gcd_steps(numbers):\n    a, b = numbers\n    w = a\n    y = b\n    while True:\n        x, z = divmod(w, y)\n        print '%d = %d * %d + %d' % (w, x, y, z)\n        if not z:\n            break\n        w = y\n        y = z\n```",
     "created_at": "2008-03-02T01:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -610,7 +592,6 @@ def gcd_steps(numbers):
         w = y
         y = z
 ```
-
 
 
 
@@ -660,7 +641,7 @@ http://sage.math.washington.edu/home/was/patches/extcode-add_jquery_support.patc
 archive/issue_comments_008440.json:
 ```json
 {
-    "body": "Examples of how to use the version as of now:\n\n```\n@manipulate\ndef foo(f=text_box(\"sin(x)\"), L=slider(-5,0), U=slider(0,5)):\n    return plot(f,L,U)\n```\n\n\n\n```\n@manipulate\ndef bar(a,b=slider([1..10])):\n    return a+b\n```\n\n\n\n```\n@manipulate\ndef ec(a,b):\n    E = EllipticCurve([a,b])\n    html(\"<h1>Data about an Elliptic Curve</h1>\")\n    print E.cremona_label()\n    show(E)\n    show(plot(E))\n    show(E.q_eigenform(30))\n    show(E.torsion_order())\n```\n",
+    "body": "Examples of how to use the version as of now:\n\n```\n@manipulate\ndef foo(f=text_box(\"sin(x)\"), L=slider(-5,0), U=slider(0,5)):\n    return plot(f,L,U)\n```\n\n```\n@manipulate\ndef bar(a,b=slider([1..10])):\n    return a+b\n```\n\n```\n@manipulate\ndef ec(a,b):\n    E = EllipticCurve([a,b])\n    html(\"<h1>Data about an Elliptic Curve</h1>\")\n    print E.cremona_label()\n    show(E)\n    show(plot(E))\n    show(E.q_eigenform(30))\n    show(E.torsion_order())\n```",
     "created_at": "2008-03-02T15:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -677,15 +658,11 @@ def foo(f=text_box("sin(x)"), L=slider(-5,0), U=slider(0,5)):
     return plot(f,L,U)
 ```
 
-
-
 ```
 @manipulate
 def bar(a,b=slider([1..10])):
     return a+b
 ```
-
-
 
 ```
 @manipulate
@@ -698,7 +675,6 @@ def ec(a,b):
     show(E.q_eigenform(30))
     show(E.torsion_order())
 ```
-
 
 
 
@@ -727,7 +703,7 @@ this requires that you also install the extcode patch that gives jquery support.
 archive/issue_comments_008442.json:
 ```json
 {
-    "body": "Examples as of manipulate_take3_part3.patch\n\n```\n@manipulate\ndef factor_example(n=range(2,1000)):\n    F = factor(n)\n    html(\"<h1 align=center><font color='darkblue' size=+4>factor(%s) = %s</font></h1>\"%(n, F))\n\n\n\n@manipulate\ndef foo(f, xmax=[0,0.1,..20]):\n    show(f)\n    show(plot(f, -1, xmax))\n\n@manipulate\ndef pl(n=[0..30], xmin=[-5..0], xmax=[0..10]):\n    print n, xmin, xmax\n    f = sin(n*x); g = cos(n*x)\n    show(plot(f,xmin,xmax) + plot(g,xmin,xmax,color='red'), figsize=[5,2], xmin=xmin, xmax=xmax)\n\n\n@manipulate\ndef pl(n=[100,200,..,10^4]):\n    html(\"<h1 align=center>Primes up to %s</h1>\"%n)\n    show(plot(prime_pi, 1, n) + plot(x/(log(x)-1), 0.1, n, color='red'))\n\n\n@manipulate\ndef a3dplot(a=[1..10], b=[1..10]):\n    var('x,y')\n    f = x^a + y^b\n    show(f)\n    show(plot3d(f, (x,-2,2), (y,-2,2)))\n\n```\n",
+    "body": "Examples as of manipulate_take3_part3.patch\n\n```\n@manipulate\ndef factor_example(n=range(2,1000)):\n    F = factor(n)\n    html(\"<h1 align=center><font color='darkblue' size=+4>factor(%s) = %s</font></h1>\"%(n, F))\n\n\n\n@manipulate\ndef foo(f, xmax=[0,0.1,..20]):\n    show(f)\n    show(plot(f, -1, xmax))\n\n@manipulate\ndef pl(n=[0..30], xmin=[-5..0], xmax=[0..10]):\n    print n, xmin, xmax\n    f = sin(n*x); g = cos(n*x)\n    show(plot(f,xmin,xmax) + plot(g,xmin,xmax,color='red'), figsize=[5,2], xmin=xmin, xmax=xmax)\n\n\n@manipulate\ndef pl(n=[100,200,..,10^4]):\n    html(\"<h1 align=center>Primes up to %s</h1>\"%n)\n    show(plot(prime_pi, 1, n) + plot(x/(log(x)-1), 0.1, n, color='red'))\n\n\n@manipulate\ndef a3dplot(a=[1..10], b=[1..10]):\n    var('x,y')\n    f = x^a + y^b\n    show(f)\n    show(plot3d(f, (x,-2,2), (y,-2,2)))\n\n```",
     "created_at": "2008-03-03T02:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1322",
     "type": "issue_comment",
@@ -772,7 +748,6 @@ def a3dplot(a=[1..10], b=[1..10]):
     show(plot3d(f, (x,-2,2), (y,-2,2)))
 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007942.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\n\nThat is dumb and should be fixed!\n\nsage: latex(I)\nI\nsage: latex(i)\nI\n\nIt should output \"i\" not \"I\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7942\n\n",
+    "body": "Assignee: @burcin\n\n```\n\nThat is dumb and should be fixed!\n\nsage: latex(I)\nI\nsage: latex(i)\nI\n\nIt should output \"i\" not \"I\".\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7942\n\n",
     "created_at": "2010-01-16T03:27:15Z",
     "labels": [
         "component: symbolics",
@@ -18,7 +18,6 @@ archive/issues_007942.json:
 ```
 Assignee: @burcin
 
-
 ```
 
 That is dumb and should be fixed!
@@ -30,7 +29,6 @@ I
 
 It should output "i" not "I".
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7942
 

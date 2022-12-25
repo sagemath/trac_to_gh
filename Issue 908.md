@@ -3,7 +3,7 @@
 archive/issues_000908.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhen building 2.8.7 on suse 10.2 amd64:\n\n> -I/home/wdj/sagefiles/sage-2.8.7/local/include/python2.5 -c\n> sage/libs/pari/gen.c -o\n> build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\n> sage/libs/pari/gen.c: In function '__pyx_f_py_3gen_3gen_factor':\n> sage/libs/pari/gen.c:19784: internal compiler error: in\n> merge_alias_info, at tree-ssa-copy.c:235\n> Please submit a full bug report,\n> with preprocessed source if appropriate.\n\n\"gcc blows up ...\"\n\nwdj`@`tinah:~/sagefiles/sage-2.8.7> uname -a\nLinux tinah 2.6.16.13-4-default #1 Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux\nwdj`@`tinah:~/sagefiles/sage-2.8.7> gcc -v\nUsing built-in specs.\nTarget: x86_64-suse-linux\nConfigured with: ../configure --enable-threads=posix --prefix=/usr --with-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.1.0 --enable-ssp --disable-libssp --enable-java-awt=gtk --enable-gtk-cairo --disable-libjava-multilib --with-slibdir=/lib64 --with-system-zlib --enable-shared --enable-__cxa_atexit --enable-libstdcxx-allocator=new --without-system-libunwind --with-cpu=generic --host=x86_64-suse-linux\nThread model: posix\ngcc version 4.1.0 (SUSE Linux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/908\n\n",
+    "body": "Assignee: mabshoff\n\nWhen building 2.8.7 on suse 10.2 amd64:\n\n> -I/home/wdj/sagefiles/sage-2.8.7/local/include/python2.5 -c\n> sage/libs/pari/gen.c -o\n> build/temp.linux-x86_64-2.5/sage/libs/pari/gen.o -w\n> sage/libs/pari/gen.c: In function '__pyx_f_py_3gen_3gen_factor':\n> sage/libs/pari/gen.c:19784: internal compiler error: in\n> merge_alias_info, at tree-ssa-copy.c:235\n> Please submit a full bug report,\n> with preprocessed source if appropriate.\n\n\n\"gcc blows up ...\"\n\nwdj`@`tinah:~/sagefiles/sage-2.8.7> uname -a\nLinux tinah 2.6.16.13-4-default #1 Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux\nwdj`@`tinah:~/sagefiles/sage-2.8.7> gcc -v\nUsing built-in specs.\nTarget: x86_64-suse-linux\nConfigured with: ../configure --enable-threads=posix --prefix=/usr --with-local-prefix=/usr/local --infodir=/usr/share/info --mandir=/usr/share/man --libdir=/usr/lib64 --libexecdir=/usr/lib64 --enable-languages=c,c++,objc,fortran,java,ada --enable-checking=release --with-gxx-include-dir=/usr/include/c++/4.1.0 --enable-ssp --disable-libssp --enable-java-awt=gtk --enable-gtk-cairo --disable-libjava-multilib --with-slibdir=/lib64 --with-system-zlib --enable-shared --enable-__cxa_atexit --enable-libstdcxx-allocator=new --without-system-libunwind --with-cpu=generic --host=x86_64-suse-linux\nThread model: posix\ngcc version 4.1.0 (SUSE Linux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/908\n\n",
     "created_at": "2007-10-16T16:07:35Z",
     "labels": [
         "component: distribution",
@@ -28,6 +28,7 @@ When building 2.8.7 on suse 10.2 amd64:
 > merge_alias_info, at tree-ssa-copy.c:235
 > Please submit a full bug report,
 > with preprocessed source if appropriate.
+
 
 "gcc blows up ..."
 
@@ -167,7 +168,7 @@ Michael
 archive/issue_comments_005570.json:
 ```json
 {
-    "body": "Hello,\n\ngood news for SuSE 10.2 user:\n\n```\n[09:33] <Syzygy-> Hmph. I cannot get yast to tell me what the g77-package is named. *grmbl*\n[09:33] <mabshoff> Which SuSE release?\n[09:34] <mabshoff> Hi malb__\n[09:34] <malb__> hi\n[09:34] <mabshoff> You should probably install gfortran\n[09:34] <mabshoff> 10.3 no longer ships g77 or g95, but gfortran.\n[09:34] <Syzygy-> OpenSuSE 10.2\n[09:34] <Syzygy-> Right.\n[09:35] <mabshoff> Really? There is a bug in that gcc that crashes when compiling gen.c\n[09:35] <mabshoff> Does Sage start and compute 2+2?\n[09:35] <Syzygy-> Yes.\n[09:35] <mabshoff> ok, but then you probably update via yast.\n[09:35] <Syzygy-> gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n[09:36] <mabshoff> Thanks\n[09:36] <mabshoff> Excellent, you just closed ticket #908.\n[09:37] <Syzygy-> Hehe\n[09:37] <Syzygy-> Happy to help. :)\n```\n\n\nSo we should close this ticket and recommend for people to update via yast to the latest gcc rpms that SuSE provides.\n\nCheers,\n\nMichael",
+    "body": "Hello,\n\ngood news for SuSE 10.2 user:\n\n```\n[09:33] <Syzygy-> Hmph. I cannot get yast to tell me what the g77-package is named. *grmbl*\n[09:33] <mabshoff> Which SuSE release?\n[09:34] <mabshoff> Hi malb__\n[09:34] <malb__> hi\n[09:34] <mabshoff> You should probably install gfortran\n[09:34] <mabshoff> 10.3 no longer ships g77 or g95, but gfortran.\n[09:34] <Syzygy-> OpenSuSE 10.2\n[09:34] <Syzygy-> Right.\n[09:35] <mabshoff> Really? There is a bug in that gcc that crashes when compiling gen.c\n[09:35] <mabshoff> Does Sage start and compute 2+2?\n[09:35] <Syzygy-> Yes.\n[09:35] <mabshoff> ok, but then you probably update via yast.\n[09:35] <Syzygy-> gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)\n[09:36] <mabshoff> Thanks\n[09:36] <mabshoff> Excellent, you just closed ticket #908.\n[09:37] <Syzygy-> Hehe\n[09:37] <Syzygy-> Happy to help. :)\n```\n\nSo we should close this ticket and recommend for people to update via yast to the latest gcc rpms that SuSE provides.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-02T08:57:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/908",
     "type": "issue_comment",
@@ -199,7 +200,6 @@ good news for SuSE 10.2 user:
 [09:37] <Syzygy-> Hehe
 [09:37] <Syzygy-> Happy to help. :)
 ```
-
 
 So we should close this ticket and recommend for people to update via yast to the latest gcc rpms that SuSE provides.
 

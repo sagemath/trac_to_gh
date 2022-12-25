@@ -3,7 +3,7 @@
 archive/issues_002011.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_trigo\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_mpfi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2011\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_trigo\nsage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_mpfi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2011\n\n",
     "created_at": "2008-01-31T23:22:07Z",
     "labels": [
         "component: packages: standard",
@@ -18,12 +18,10 @@ archive/issues_002011.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_trigo
 sage-2.10.1.rc3/spkg/standard/mpfi-1.3.4-cvs20071125.p4/src/tests/test_mpfi
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2011
 

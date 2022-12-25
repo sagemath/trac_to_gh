@@ -3,7 +3,7 @@
 archive/issues_005921.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI think this is wrong:\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 30*x\nsage: f.factor()\n30 * x\n```\n\nsince in the ring ZZ[] 30 is not irreducible;  it should return 2*3*5*x.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5921\n\n",
+    "body": "Assignee: tbd\n\nI think this is wrong:\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 30*x\nsage: f.factor()\n30 * x\n```\nsince in the ring ZZ[] 30 is not irreducible;  it should return 2*3*5*x.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5921\n\n",
     "created_at": "2009-04-28T19:54:00Z",
     "labels": [
         "component: algebra",
@@ -26,7 +26,6 @@ sage: f = 30*x
 sage: f.factor()
 30 * x
 ```
-
 since in the ring ZZ[] 30 is not irreducible;  it should return 2*3*5*x.
 
 
@@ -79,7 +78,7 @@ The changes in the patch look fine, but for some reason they make doctests fail 
 archive/issue_comments_046719.json:
 ```json
 {
-    "body": "OK, I've found a very simple example where this bombs:\n\n\n```\nsage: P.<x> = ZZ[]\nsage: f = 2*x + 2\nsage: f.roots()\n...\nNotImplementedError:\n```\n",
+    "body": "OK, I've found a very simple example where this bombs:\n\n```\nsage: P.<x> = ZZ[]\nsage: f = 2*x + 2\nsage: f.roots()\n...\nNotImplementedError:\n```",
     "created_at": "2009-04-29T00:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
@@ -90,7 +89,6 @@ archive/issue_comments_046719.json:
 
 OK, I've found a very simple example where this bombs:
 
-
 ```
 sage: P.<x> = ZZ[]
 sage: f = 2*x + 2
@@ -98,7 +96,6 @@ sage: f.roots()
 ...
 NotImplementedError:
 ```
-
 
 
 
@@ -225,7 +222,7 @@ So I have given this a positive review since Alex and I have reviewed eachothers
 archive/issue_comments_046726.json:
 ```json
 {
-    "body": "These two patches break\n\n```\nsage -t -long devel/sage/sage/modular/overconvergent/genus0.py\n```\n\n\nCheers,\n\nMichael",
+    "body": "These two patches break\n\n```\nsage -t -long devel/sage/sage/modular/overconvergent/genus0.py\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T02:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
@@ -240,7 +237,6 @@ These two patches break
 sage -t -long devel/sage/sage/modular/overconvergent/genus0.py
 ```
 
-
 Cheers,
 
 Michael
@@ -252,7 +248,7 @@ Michael
 archive/issue_comments_046727.json:
 ```json
 {
-    "body": "Replying to [comment:10 mabshoff]:\n> These two patches break\n> {{{\n> sage -t -long devel/sage/sage/modular/overconvergent/genus0.py\n> }}}\n> \n\nThis is due to a bug in p-adics, more precisely in the content method for p-adic polynomials:\n\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicField(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\n\nI have checked and the monster p-adic patch bomb at #5778 doesn't help with this.  I'll see what we can do.",
+    "body": "Replying to [comment:10 mabshoff]:\n> These two patches break\n> \n> ```\n> sage -t -long devel/sage/sage/modular/overconvergent/genus0.py\n> ```\n> \n\n\nThis is due to a bug in p-adics, more precisely in the content method for p-adic polynomials:\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicField(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\nI have checked and the monster p-adic patch bomb at #5778 doesn't help with this.  I'll see what we can do.",
     "created_at": "2009-04-30T03:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
@@ -263,13 +259,14 @@ archive/issue_comments_046727.json:
 
 Replying to [comment:10 mabshoff]:
 > These two patches break
-> {{{
+> 
+> ```
 > sage -t -long devel/sage/sage/modular/overconvergent/genus0.py
-> }}}
+> ```
 > 
 
-This is due to a bug in p-adics, more precisely in the content method for p-adic polynomials:
 
+This is due to a bug in p-adics, more precisely in the content method for p-adic polynomials:
 
 ```
 sage: P.<x> = ZZ[]
@@ -282,7 +279,6 @@ sage: fp
 sage: fp.content()
 0
 ```
-
 
 I have checked and the monster p-adic patch bomb at #5778 doesn't help with this.  I'll see what we can do.
 

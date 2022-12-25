@@ -3,7 +3,7 @@
 archive/issues_002743.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt would be nice if the following worked:\n\n\n```\nsage: f = x>3\nsage: f(2)\nFalse\nsage: f(4)\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2743\n\n",
+    "body": "Assignee: mabshoff\n\nIt would be nice if the following worked:\n\n```\nsage: f = x>3\nsage: f(2)\nFalse\nsage: f(4)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2743\n\n",
     "created_at": "2008-03-31T20:36:25Z",
     "labels": [
         "component: cygwin"
@@ -19,7 +19,6 @@ Assignee: mabshoff
 
 It would be nice if the following worked:
 
-
 ```
 sage: f = x>3
 sage: f(2)
@@ -27,7 +26,6 @@ False
 sage: f(4)
 True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2743
@@ -94,7 +92,7 @@ archive/issue_events_006373.json:
 archive/issue_comments_018819.json:
 ```json
 {
-    "body": "original\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 54.6 \u00b5s per loop\n```\n\n\n\nAfter\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 78.9 ms per loop\n```\n",
+    "body": "original\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 54.6 \u00b5s per loop\n```\n\n\nAfter\n\n```\nsage: var('x y')\n(x, y)\nsage: eq=x<y\nsage: %timeit eq(x=2, y=3)\n10 loops, best of 3: 78.9 ms per loop\n```",
     "created_at": "2008-04-02T06:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2743",
     "type": "issue_comment",
@@ -114,7 +112,6 @@ sage: %timeit eq(x=2, y=3)
 ```
 
 
-
 After
 
 ```
@@ -124,7 +121,6 @@ sage: eq=x<y
 sage: %timeit eq(x=2, y=3)
 10 loops, best of 3: 78.9 ms per loop
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005450.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPresumably, plotting a point is more efficient.  However, \n\n\n```\nvector([1,2,3]).plot(plot_type='point')\n```\n\n\nplots a sphere instead of a point3d (or point2d, if 2-dimensional).  This should be changed to plot a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5450\n\n",
+    "body": "Assignee: @williamstein\n\nPresumably, plotting a point is more efficient.  However, \n\n```\nvector([1,2,3]).plot(plot_type='point')\n```\n\nplots a sphere instead of a point3d (or point2d, if 2-dimensional).  This should be changed to plot a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5450\n\n",
     "created_at": "2009-03-06T21:44:22Z",
     "labels": [
         "component: graphics"
@@ -19,11 +19,9 @@ Assignee: @williamstein
 
 Presumably, plotting a point is more efficient.  However, 
 
-
 ```
 vector([1,2,3]).plot(plot_type='point')
 ```
-
 
 plots a sphere instead of a point3d (or point2d, if 2-dimensional).  This should be changed to plot a point.
 

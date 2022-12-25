@@ -3,7 +3,7 @@
 archive/issues_001455.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRishikesh reported:\n\n```\nsage -t  devel/sage-main/sage/numerical/optimize.py\n**********************************************************************\nFile \"optimize.py\", line 93:\n    sage: find_maximum_on_interval(f, 0,5)\nExpected:\n    (0.561096338191, 0.860333589015)\nGot:\n    (0.561096338191, 0.860333589074)\n**********************************************************************\n\nsage -t  devel/sage-main/sage/calculus/calculus.py\n********************\n**************************************************\nFile \"calculus.py\", line 2446:\n    sage: f.find_maximum_on_interval(0,5)\nExpected:\n    (0.5610963381910451, 0.860333589015)\nGot:\n    (0.5610963381910451, 0.860333589074)\n********************************************************************** \n```\n\n\nCheers,\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1455\n\n",
+    "body": "Assignee: mabshoff\n\nRishikesh reported:\n\n```\nsage -t  devel/sage-main/sage/numerical/optimize.py\n**********************************************************************\nFile \"optimize.py\", line 93:\n    sage: find_maximum_on_interval(f, 0,5)\nExpected:\n    (0.561096338191, 0.860333589015)\nGot:\n    (0.561096338191, 0.860333589074)\n**********************************************************************\n\nsage -t  devel/sage-main/sage/calculus/calculus.py\n********************\n**************************************************\nFile \"calculus.py\", line 2446:\n    sage: f.find_maximum_on_interval(0,5)\nExpected:\n    (0.5610963381910451, 0.860333589015)\nGot:\n    (0.5610963381910451, 0.860333589074)\n********************************************************************** \n```\n\nCheers,\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1455\n\n",
     "created_at": "2007-12-10T22:40:47Z",
     "labels": [
         "component: doctest coverage",
@@ -42,7 +42,6 @@ Got:
     (0.5610963381910451, 0.860333589074)
 ********************************************************************** 
 ```
-
 
 Cheers,
 Michael

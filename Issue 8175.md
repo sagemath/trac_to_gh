@@ -3,7 +3,7 @@
 archive/issues_008175.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  drkirkby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/msg/5f802a0117b78016):\n\n```\nThank you.\n\nhttp://www.sagemath.org/doc/installation/source.html\n\nalso needs updating, as it says\n\n-----------------------------------------------------\nSolaris? FreeBSD? OS X 10.5 in 64 bit mode?: Complete compilation of Sage is\ncurrently not supported on Solaris or *BSD. It is possible to compile most of\nSage on Solaris machines and to fill in the extra parts using standard packages;\nplease email sage-devel if you desperately need to run Sage on Solaris. We do\nplan to fully support Solaris - it s a very important platform. Work is ongoing.\n-----------------------------------------------------\n\nIt's clearly now possible to compile all of Sage on Solaris 10 on SPARC hardware.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8175\n\n",
+    "body": "Assignee: mvngu\n\nCC:  drkirkby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/msg/5f802a0117b78016):\n\n```\nThank you.\n\nhttp://www.sagemath.org/doc/installation/source.html\n\nalso needs updating, as it says\n\n-----------------------------------------------------\nSolaris? FreeBSD? OS X 10.5 in 64 bit mode?: Complete compilation of Sage is\ncurrently not supported on Solaris or *BSD. It is possible to compile most of\nSage on Solaris machines and to fill in the extra parts using standard packages;\nplease email sage-devel if you desperately need to run Sage on Solaris. We do\nplan to fully support Solaris - it s a very important platform. Work is ongoing.\n-----------------------------------------------------\n\nIt's clearly now possible to compile all of Sage on Solaris 10 on SPARC hardware.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8175\n\n",
     "created_at": "2010-02-03T17:46:54Z",
     "labels": [
         "component: documentation",
@@ -39,7 +39,6 @@ plan to fully support Solaris - it s a very important platform. Work is ongoing.
 
 It's clearly now possible to compile all of Sage on Solaris 10 on SPARC hardware.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8175
 

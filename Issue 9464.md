@@ -3,7 +3,7 @@
 archive/issues_009464.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill @jhpalmieri @qed777\n\nIn the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:\n\n\n```\n$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)\n        $(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n```\n\n\nNote, there is no Fortran dependency listed, yet R does have Fortran files:\n\n\n```\ndrkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'\nr-2.10.1.p2/src/src/library/stats/src/stxwx.f\nr-2.10.1.p2/src/src/library/stats/src/sgram.f\nr-2.10.1.p2/src/src/library/stats/src/bsplvd.f\nr-2.10.1.p2/src/src/library/stats/src/stl.f\nr-2.10.1.p2/src/src/library/stats/src/hclust.f\nr-2.10.1.p2/src/src/library/stats/src/sslvrg.f\nr-2.10.1.p2/src/src/library/stats/src/qsbart.f\nr-2.10.1.p2/src/src/library/stats/src/bvalue.f\nr-2.10.1.p2/src/src/library/stats/src/loessf.f\nr-2.10.1.p2/src/src/library/stats/src/lminfl.f\nr-2.10.1.p2/src/src/library/stats/src/kmns.f\nr-2.10.1.p2/src/src/library/stats/src/eureka.f\nr-2.10.1.p2/src/src/library/stats/src/sinerp.f\nr-2.10.1.p2/src/src/library/stats/src/bvalus.f\nr-2.10.1.p2/src/src/library/stats/src/ppr.f\nr-2.10.1.p2/src/src/library/stats/src/portsrc.f\nr-2.10.1.p2/src/src/appl/dchdc.f\nr-2.10.1.p2/src/src/appl/chol.f\nr-2.10.1.p2/src/src/appl/dqrsl.f\nr-2.10.1.p2/src/src/appl/dqrdc2.f\nr-2.10.1.p2/src/src/appl/eigen.f\nr-2.10.1.p2/src/src/appl/dpoco.f\nr-2.10.1.p2/src/src/appl/dposl.f\nr-2.10.1.p2/src/src/appl/dpbfa.f\nr-2.10.1.p2/src/src/appl/dtrco.f\nr-2.10.1.p2/src/src/appl/dtrsl.f\nr-2.10.1.p2/src/src/appl/ch2inv.f\nr-2.10.1.p2/src/src/appl/dpofa.f\nr-2.10.1.p2/src/src/appl/dqrutl.f\nr-2.10.1.p2/src/src/appl/dqrdc.f\nr-2.10.1.p2/src/src/appl/dpbsl.f\nr-2.10.1.p2/src/src/appl/dpodi.f\nr-2.10.1.p2/src/src/appl/dqrls.f\nr-2.10.1.p2/src/src/appl/dsvdc.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack4.f\nr-2.10.1.p2/src/src/modules/lapack/vecLibg95f.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack3.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack2.f\netc\n```\n\n\nI'll upload a patch and deps file\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9464\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill @jhpalmieri @qed777\n\nIn the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:\n\n```\n$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)\n        $(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n```\n\nNote, there is no Fortran dependency listed, yet R does have Fortran files:\n\n```\ndrkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'\nr-2.10.1.p2/src/src/library/stats/src/stxwx.f\nr-2.10.1.p2/src/src/library/stats/src/sgram.f\nr-2.10.1.p2/src/src/library/stats/src/bsplvd.f\nr-2.10.1.p2/src/src/library/stats/src/stl.f\nr-2.10.1.p2/src/src/library/stats/src/hclust.f\nr-2.10.1.p2/src/src/library/stats/src/sslvrg.f\nr-2.10.1.p2/src/src/library/stats/src/qsbart.f\nr-2.10.1.p2/src/src/library/stats/src/bvalue.f\nr-2.10.1.p2/src/src/library/stats/src/loessf.f\nr-2.10.1.p2/src/src/library/stats/src/lminfl.f\nr-2.10.1.p2/src/src/library/stats/src/kmns.f\nr-2.10.1.p2/src/src/library/stats/src/eureka.f\nr-2.10.1.p2/src/src/library/stats/src/sinerp.f\nr-2.10.1.p2/src/src/library/stats/src/bvalus.f\nr-2.10.1.p2/src/src/library/stats/src/ppr.f\nr-2.10.1.p2/src/src/library/stats/src/portsrc.f\nr-2.10.1.p2/src/src/appl/dchdc.f\nr-2.10.1.p2/src/src/appl/chol.f\nr-2.10.1.p2/src/src/appl/dqrsl.f\nr-2.10.1.p2/src/src/appl/dqrdc2.f\nr-2.10.1.p2/src/src/appl/eigen.f\nr-2.10.1.p2/src/src/appl/dpoco.f\nr-2.10.1.p2/src/src/appl/dposl.f\nr-2.10.1.p2/src/src/appl/dpbfa.f\nr-2.10.1.p2/src/src/appl/dtrco.f\nr-2.10.1.p2/src/src/appl/dtrsl.f\nr-2.10.1.p2/src/src/appl/ch2inv.f\nr-2.10.1.p2/src/src/appl/dpofa.f\nr-2.10.1.p2/src/src/appl/dqrutl.f\nr-2.10.1.p2/src/src/appl/dqrdc.f\nr-2.10.1.p2/src/src/appl/dpbsl.f\nr-2.10.1.p2/src/src/appl/dpodi.f\nr-2.10.1.p2/src/src/appl/dqrls.f\nr-2.10.1.p2/src/src/appl/dsvdc.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack4.f\nr-2.10.1.p2/src/src/modules/lapack/vecLibg95f.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack3.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack2.f\netc\n```\n\nI'll upload a patch and deps file\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9464\n\n",
     "created_at": "2010-07-09T12:38:51Z",
     "labels": [
         "component: build",
@@ -22,15 +22,12 @@ CC:  @rlmill @jhpalmieri @qed777
 
 In the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:
 
-
 ```
 $(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)
         $(INSTALL) "$(SAGE_SPKG) $(R) 2>&1" "tee -a $(SAGE_LOGS)/$(R).log"
 ```
 
-
 Note, there is no Fortran dependency listed, yet R does have Fortran files:
-
 
 ```
 drkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'
@@ -74,7 +71,6 @@ r-2.10.1.p2/src/src/modules/lapack/dlapack3.f
 r-2.10.1.p2/src/src/modules/lapack/dlapack2.f
 etc
 ```
-
 
 I'll upload a patch and deps file
 
@@ -185,7 +181,7 @@ This change to deps seems fine -- making the dependencies explicit seems like a 
 archive/issue_comments_090611.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?\n\nI've personally not seen a problem. \n\nI must admit I did not look carefully to see the Fortran/LAPACK/ATLAS/R dependency. But Robert thought it was the cause of an OS X problem (see #9435), so upgraded this ticket to blocker. I think you have rather dashed that hope however! \n\nDave",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?\n\n\nI've personally not seen a problem. \n\nI must admit I did not look carefully to see the Fortran/LAPACK/ATLAS/R dependency. But Robert thought it was the cause of an OS X problem (see #9435), so upgraded this ticket to blocker. I think you have rather dashed that hope however! \n\nDave",
     "created_at": "2010-07-09T16:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
@@ -196,6 +192,7 @@ archive/issue_comments_090611.json:
 
 Replying to [comment:2 jhpalmieri]:
 > This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?
+
 
 I've personally not seen a problem. 
 

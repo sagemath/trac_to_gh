@@ -3,7 +3,7 @@
 archive/issues_000657.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis may be due to how cmp is implemented (to produce symbolic expressions).\n\n\n```\nOn Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:\n\n\nHi,\nI have some problems with the way is_zero() is implemented (or maybe\nit is the documentation...)\nIs this behavior really desirable?\n\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1)\nsage: pol\n-1/((k - 1)*k) - (1/k) + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: pol.is_zero??\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method is_zero of SymbolicArithmetic object\nat 0xc4b6af8>\nNamespace:      Interactive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\nsage: pol == pol.parent()(0)\n-1/((k - 1)*k) - (1/k) + 1/(k - 1) == 0\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/657\n\n",
+    "body": "Assignee: @williamstein\n\nThis may be due to how cmp is implemented (to produce symbolic expressions).\n\n```\nOn Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:\n\n\nHi,\nI have some problems with the way is_zero() is implemented (or maybe\nit is the documentation...)\nIs this behavior really desirable?\n\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1)\nsage: pol\n-1/((k - 1)*k) - (1/k) + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: pol.is_zero??\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method is_zero of SymbolicArithmetic object\nat 0xc4b6af8>\nNamespace:      Interactive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\nsage: pol == pol.parent()(0)\n-1/((k - 1)*k) - (1/k) + 1/(k - 1) == 0\n\nPaul\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/657\n\n",
     "created_at": "2007-09-14T21:06:10Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_000657.json:
 Assignee: @williamstein
 
 This may be due to how cmp is implemented (to produce symbolic expressions).
-
 
 ```
 On Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:
@@ -59,7 +58,6 @@ sage: pol == pol.parent()(0)
 
 Paul
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/657
 
@@ -159,7 +157,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_comments_003403.json:
 ```json
 {
-    "body": "I've made some changes to how equality testing is done with symbolic expressions.\n\nBefore patch:\n\n```\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1);\nsage: pol\n-1/((k - 1)*k) - 1/k + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: bool(pol == 0)\nFalse\nsage: f = sin(x)^2 + cos(x)^2 - 1\nsage: f.is_zero()\nFalse\nsage: f.simplify_trig()\n0\nsage: bool(f == 0)\nFalse\n```\n\n\nAfter patch:\n\n```\nsage: sage: k = var('k')\nsage: sage: pol = 1/(k-1) - 1/k -1/k/(k-1);\nsage: sage: pol\n-1/((k - 1)*k) - 1/k + 1/(k - 1)\nsage: sage: pol.partial_fraction()\n0\nsage: sage: pol.is_zero()\nTrue\nsage: sage: bool(pol == 0)\nTrue\nsage: sage: f = sin(x)^2 + cos(x)^2 - 1\nsage: sage: f.is_zero()\nTrue\nsage: sage: f.simplify_trig()\n0\nsage: sage: bool(f == 0)\nTrue\n```\n",
+    "body": "I've made some changes to how equality testing is done with symbolic expressions.\n\nBefore patch:\n\n```\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1);\nsage: pol\n-1/((k - 1)*k) - 1/k + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: bool(pol == 0)\nFalse\nsage: f = sin(x)^2 + cos(x)^2 - 1\nsage: f.is_zero()\nFalse\nsage: f.simplify_trig()\n0\nsage: bool(f == 0)\nFalse\n```\n\nAfter patch:\n\n```\nsage: sage: k = var('k')\nsage: sage: pol = 1/(k-1) - 1/k -1/k/(k-1);\nsage: sage: pol\n-1/((k - 1)*k) - 1/k + 1/(k - 1)\nsage: sage: pol.partial_fraction()\n0\nsage: sage: pol.is_zero()\nTrue\nsage: sage: bool(pol == 0)\nTrue\nsage: sage: f = sin(x)^2 + cos(x)^2 - 1\nsage: sage: f.is_zero()\nTrue\nsage: sage: f.simplify_trig()\n0\nsage: sage: bool(f == 0)\nTrue\n```",
     "created_at": "2007-10-24T01:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
@@ -192,7 +190,6 @@ sage: bool(f == 0)
 False
 ```
 
-
 After patch:
 
 ```
@@ -217,13 +214,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_003404.json:
 ```json
 {
-    "body": "\n```\n19:05 < wstein> mhansen -- I personally like 657.\n19:06 < wstein> I mean, if there is a simplification that makes it 0, then it better be 0.\n19:06 < wstein> The problem is of course that it could take a long time.\n19:06 < wstein> But these are symbolic, so speed isn't the main thing.\n```\n",
+    "body": "```\n19:05 < wstein> mhansen -- I personally like 657.\n19:06 < wstein> I mean, if there is a simplification that makes it 0, then it better be 0.\n19:06 < wstein> The problem is of course that it could take a long time.\n19:06 < wstein> But these are symbolic, so speed isn't the main thing.\n```",
     "created_at": "2007-10-24T02:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
@@ -232,14 +228,12 @@ archive/issue_comments_003404.json:
 }
 ```
 
-
 ```
 19:05 < wstein> mhansen -- I personally like 657.
 19:06 < wstein> I mean, if there is a simplification that makes it 0, then it better be 0.
 19:06 < wstein> The problem is of course that it could take a long time.
 19:06 < wstein> But these are symbolic, so speed isn't the main thing.
 ```
-
 
 
 

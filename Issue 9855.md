@@ -71,7 +71,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097126.json:
 ```json
 {
-    "body": "> Paul, as you did such a good job reviewing the other ticket, I cc'd you.\n\nYann, please could you provide a description saying in what sense you did \"improve\"\naugment, maybe with an example? Is that an improvement in functionality or speed?\n\nPaul",
+    "body": "> Paul, as you did such a good job reviewing the other ticket, I cc'd you.\n\n\nYann, please could you provide a description saying in what sense you did \"improve\"\naugment, maybe with an example? Is that an improvement in functionality or speed?\n\nPaul",
     "created_at": "2010-09-22T09:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
@@ -81,6 +81,7 @@ archive/issue_comments_097126.json:
 ```
 
 > Paul, as you did such a good job reviewing the other ticket, I cc'd you.
+
 
 Yann, please could you provide a description saying in what sense you did "improve"
 augment, maybe with an example? Is that an improvement in functionality or speed?
@@ -112,7 +113,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_097128.json:
 ```json
 {
-    "body": "It's a speed improvement. Here's the example:\n\n\n```\nsage: m = identity_matrix(QQ, 1000, sparse=True)\nsage: timeit('m.augment(m)')\n```\n\n\nBEFORE\n\n```\n5 loops, best of 3: 368 ms per loop\n```\n\nAFTER\n\n```\n625 loops, best of 3: 1.2 ms per loop\n```\n\n\nAnd we are not loosing anything for small cases:\n\n```\nsage: m = identity_matrix(QQ, 5, sparse=True)  \nsage: timeit('m.augment(m)')\n```\n\n\nBEFORE\n\n```\n625 loops, best of 3: 198 \u00b5s per loop\n```\n\nAFTER\n\n```\n625 loops, best of 3: 197 \u00b5s per loop\n```\n",
+    "body": "It's a speed improvement. Here's the example:\n\n```\nsage: m = identity_matrix(QQ, 1000, sparse=True)\nsage: timeit('m.augment(m)')\n```\n\nBEFORE\n\n```\n5 loops, best of 3: 368 ms per loop\n```\nAFTER\n\n```\n625 loops, best of 3: 1.2 ms per loop\n```\n\nAnd we are not loosing anything for small cases:\n\n```\nsage: m = identity_matrix(QQ, 5, sparse=True)  \nsage: timeit('m.augment(m)')\n```\n\nBEFORE\n\n```\n625 loops, best of 3: 198 \u00b5s per loop\n```\nAFTER\n\n```\n625 loops, best of 3: 197 \u00b5s per loop\n```",
     "created_at": "2010-09-22T11:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
@@ -123,25 +124,21 @@ archive/issue_comments_097128.json:
 
 It's a speed improvement. Here's the example:
 
-
 ```
 sage: m = identity_matrix(QQ, 1000, sparse=True)
 sage: timeit('m.augment(m)')
 ```
-
 
 BEFORE
 
 ```
 5 loops, best of 3: 368 ms per loop
 ```
-
 AFTER
 
 ```
 625 loops, best of 3: 1.2 ms per loop
 ```
-
 
 And we are not loosing anything for small cases:
 
@@ -150,19 +147,16 @@ sage: m = identity_matrix(QQ, 5, sparse=True)
 sage: timeit('m.augment(m)')
 ```
 
-
 BEFORE
 
 ```
 625 loops, best of 3: 198 µs per loop
 ```
-
 AFTER
 
 ```
 625 loops, best of 3: 197 µs per loop
 ```
-
 
 
 

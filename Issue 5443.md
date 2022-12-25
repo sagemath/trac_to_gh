@@ -3,7 +3,7 @@
 archive/issues_005443.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nDavid Loeffler ran into the following segfault earlier:\n\n\n```\nsage: r,s,t,u = Gamma0(2).gens()\nsage: r**(-1)*u**(-1) == t\nBOOM\n```\n\n\nThe attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.\n\n**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I\n\nIssue created by migration from https://trac.sagemath.org/ticket/5443\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nDavid Loeffler ran into the following segfault earlier:\n\n```\nsage: r,s,t,u = Gamma0(2).gens()\nsage: r**(-1)*u**(-1) == t\nBOOM\n```\n\nThe attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.\n\n**HOWEVER**: I don't have a copy of sage-3.3 on my machine, so the patch is against sage-3.2.3. I\n\nIssue created by migration from https://trac.sagemath.org/ticket/5443\n\n",
     "created_at": "2009-03-05T17:32:30Z",
     "labels": [
         "component: modular forms",
@@ -23,13 +23,11 @@ CC:  @loefflerd
 
 David Loeffler ran into the following segfault earlier:
 
-
 ```
 sage: r,s,t,u = Gamma0(2).gens()
 sage: r**(-1)*u**(-1) == t
 BOOM
 ```
-
 
 The attached patch fixes this, and adds a doctest. There's more work to be done: `matrix_integer_2x2` should inherit from `matrix_integer_dense`, but it doesn't yet. I have 98% of the code to do it done, but it needs to get cleaned up and submitted.
 

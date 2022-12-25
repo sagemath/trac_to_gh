@@ -70,7 +70,7 @@ archive/issue_events_007682.json:
 archive/issue_comments_023840.json:
 ```json
 {
-    "body": "I am seeing doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 11 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 12 doctests failed\n```\n\n\nI am seeing similar issues in #3407.\n\nCheers,\n\nMichael",
+    "body": "I am seeing doctest failures:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 11 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 12 doctests failed\n```\n\nI am seeing similar issues in #3407.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-23T08:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ I am seeing doctest failures:
         sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 11 doctests failed
         sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 12 doctests failed
 ```
-
 
 I am seeing similar issues in #3407.
 
@@ -214,7 +213,7 @@ archive/issue_events_007683.json:
 archive/issue_comments_023846.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> With the last new hunk doctests do pass. Since we are computing GBs in Lex anyway I am giving this a positive review again. \n> \n> John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.\n\nI think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).\n\nSo I see no reason to block 3.0.4 -- unless I have misunderstood the point here!\n\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:6 mabshoff]:\n> With the last new hunk doctests do pass. Since we are computing GBs in Lex anyway I am giving this a positive review again. \n> \n> John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.\n\n\nI think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).\n\nSo I see no reason to block 3.0.4 -- unless I have misunderstood the point here!\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2008-06-25T07:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
@@ -227,6 +226,7 @@ Replying to [comment:6 mabshoff]:
 > With the last new hunk doctests do pass. Since we are computing GBs in Lex anyway I am giving this a positive review again. 
 > 
 > John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.
+
 
 I think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).
 
@@ -244,7 +244,7 @@ So I see no reason to block 3.0.4 -- unless I have misunderstood the point here!
 archive/issue_comments_023847.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:6 mabshoff]:\n\n> > John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.\n> \n> I think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).\n> \n> So I see no reason to block 3.0.4 -- unless I have misunderstood the point here!\n\nJohn,\n\nI am sure we do understand each other 100% in this case.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:6 mabshoff]:\n\n\n> > John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.\n\n> \n> I think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).\n> \n> So I see no reason to block 3.0.4 -- unless I have misunderstood the point here!\n\n\nJohn,\n\nI am sure we do understand each other 100% in this case.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-25T07:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
@@ -256,11 +256,14 @@ archive/issue_comments_023847.json:
 Replying to [comment:8 cremona]:
 > Replying to [comment:6 mabshoff]:
 
+
 > > John: Should you not intend to compute the GBs with Lex please open a blocker ticket against 3.0.4.
+
 > 
 > I think we will not need to use any GB code at all once I have finished.  That was used in code William wrote, which I am rewriting having decided that it was just too much to have three different versions of something (in this case, division polynomials for elliptic curves).
 > 
 > So I see no reason to block 3.0.4 -- unless I have misunderstood the point here!
+
 
 John,
 

@@ -53,7 +53,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070552.json:
 ```json
 {
-    "body": "Attachment [gsl-1.10.p2.patch](tarball://root/attachments/some-uuid/ticket8063/gsl-1.10.p2.patch) by drkirkby created at 2010-01-27 13:43:57\n\nI'm not sure I'd personally bother sorting out SAGE64 issues in packages unless they are building 32-bit, which this one is not. \n\nBut you have also removed Michael Abshoff as a maintainer, and also removed the \n\n\n```\necho \"64 bit MacIntel\"\n```\n\n\nso I would agree the fixes are desirable. \n\nI would search for packages which are building 32-bit. \n\n\n```\n$ file local/lib/* | grep 32-bit\n$ file local/lib/* | grep 32-bit\n```\n\n\nand only bother fixing them. \n\nDave",
+    "body": "Attachment [gsl-1.10.p2.patch](tarball://root/attachments/some-uuid/ticket8063/gsl-1.10.p2.patch) by drkirkby created at 2010-01-27 13:43:57\n\nI'm not sure I'd personally bother sorting out SAGE64 issues in packages unless they are building 32-bit, which this one is not. \n\nBut you have also removed Michael Abshoff as a maintainer, and also removed the \n\n```\necho \"64 bit MacIntel\"\n```\n\nso I would agree the fixes are desirable. \n\nI would search for packages which are building 32-bit. \n\n```\n$ file local/lib/* | grep 32-bit\n$ file local/lib/* | grep 32-bit\n```\n\nand only bother fixing them. \n\nDave",
     "created_at": "2010-01-27T13:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
@@ -68,22 +68,18 @@ I'm not sure I'd personally bother sorting out SAGE64 issues in packages unless 
 
 But you have also removed Michael Abshoff as a maintainer, and also removed the 
 
-
 ```
 echo "64 bit MacIntel"
 ```
-
 
 so I would agree the fixes are desirable. 
 
 I would search for packages which are building 32-bit. 
 
-
 ```
 $ file local/lib/* | grep 32-bit
 $ file local/lib/* | grep 32-bit
 ```
-
 
 and only bother fixing them. 
 
@@ -96,7 +92,7 @@ Dave
 archive/issue_comments_070553.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n\n> \n> so I would agree the fixes are desirable. \n> \n\nSo positive review?\n\nJaap",
+    "body": "Replying to [comment:2 drkirkby]:\n\n> \n> so I would agree the fixes are desirable. \n> \n\n\nSo positive review?\n\nJaap",
     "created_at": "2010-01-27T13:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
@@ -110,6 +106,7 @@ Replying to [comment:2 drkirkby]:
 > 
 > so I would agree the fixes are desirable. 
 > 
+
 
 So positive review?
 

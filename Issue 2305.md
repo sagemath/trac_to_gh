@@ -81,7 +81,7 @@ Changing status from new to assigned.
 archive/issue_comments_015306.json:
 ```json
 {
-    "body": "The patch is mostly fine, but there are some formatting issues.\n\nThis looks wrong:\n\n```\n \t155\t        sage: R = ZZ\n \t156\t        sage: R; is_Ideal(R) \n \t157\t        Integer Ring \n \t158\t        False \n```\n\n\nPlease typeset sage's output all on one line.  So rather than\n\n\n```\n \t168\t        sage: I = R.ideal(x^2 + 1); I \n \t169\t        Principal ideal (x^2 + 1) of Univariate Polynomial Ring in x over \n \t170\t        Rational Field \n```\n\n\ngive me\n\n\n```\n \t168\t        sage: I = R.ideal(x^2 + 1); I \n \t169\t        Principal ideal (x^2 + 1) of Univariate Polynomial Ring in x over Rational Field \n```\n\n\nAlso, there are *tons* of typos.  'th' instead of 'the', incorrectly spelled words, etc.  I will work on some emacs code that will spell-check only sage comments, and ignore examples as appropriate, but until then you'll have to do it by hand :)",
+    "body": "The patch is mostly fine, but there are some formatting issues.\n\nThis looks wrong:\n\n```\n \t155\t        sage: R = ZZ\n \t156\t        sage: R; is_Ideal(R) \n \t157\t        Integer Ring \n \t158\t        False \n```\n\nPlease typeset sage's output all on one line.  So rather than\n\n```\n \t168\t        sage: I = R.ideal(x^2 + 1); I \n \t169\t        Principal ideal (x^2 + 1) of Univariate Polynomial Ring in x over \n \t170\t        Rational Field \n```\n\ngive me\n\n```\n \t168\t        sage: I = R.ideal(x^2 + 1); I \n \t169\t        Principal ideal (x^2 + 1) of Univariate Polynomial Ring in x over Rational Field \n```\n\nAlso, there are *tons* of typos.  'th' instead of 'the', incorrectly spelled words, etc.  I will work on some emacs code that will spell-check only sage comments, and ignore examples as appropriate, but until then you'll have to do it by hand :)",
     "created_at": "2008-02-28T20:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2305",
     "type": "issue_comment",
@@ -101,9 +101,7 @@ This looks wrong:
  	158	        False 
 ```
 
-
 Please typeset sage's output all on one line.  So rather than
-
 
 ```
  	168	        sage: I = R.ideal(x^2 + 1); I 
@@ -111,15 +109,12 @@ Please typeset sage's output all on one line.  So rather than
  	170	        Rational Field 
 ```
 
-
 give me
-
 
 ```
  	168	        sage: I = R.ideal(x^2 + 1); I 
  	169	        Principal ideal (x^2 + 1) of Univariate Polynomial Ring in x over Rational Field 
 ```
-
 
 Also, there are *tons* of typos.  'th' instead of 'the', incorrectly spelled words, etc.  I will work on some emacs code that will spell-check only sage comments, and ignore examples as appropriate, but until then you'll have to do it by hand :)
 

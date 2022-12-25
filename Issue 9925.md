@@ -3,7 +3,7 @@
 archive/issues_009925.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @novoselt @vbraun mhampton\n\nI get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):\n\n```python\nsage -t -long \"devel/sage/sage/schemes/generic/toric_divisor.py\"\n**********************************************************************\nFile \"/Users/mpatel/tmp/bb/slave/bsd_scratch/build/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py\", line 1522:\n    sage: supp.Vrepresentation()\nExpected:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]\nGot:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9926\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @novoselt @vbraun mhampton\n\nI get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):\n\n```python\nsage -t -long \"devel/sage/sage/schemes/generic/toric_divisor.py\"\n**********************************************************************\nFile \"/Users/mpatel/tmp/bb/slave/bsd_scratch/build/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py\", line 1522:\n    sage: supp.Vrepresentation()\nExpected:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]\nGot:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9926\n\n",
     "created_at": "2010-09-17T00:46:23Z",
     "labels": [
         "component: doctest coverage",
@@ -33,7 +33,6 @@ Expected:
 Got:
     [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9926
 
@@ -156,7 +155,7 @@ I'll try to check this out but I don't have much time today, it might take me a 
 archive/issue_comments_098671.json:
 ```json
 {
-    "body": "This is not as pleasant, but what about something like:\n\n```\nsage: all([v in supp.vertices() for v in [[-1, 1], [0, 2], [3, -1], [0, -1]]])\nTrue\n```\n",
+    "body": "This is not as pleasant, but what about something like:\n\n```\nsage: all([v in supp.vertices() for v in [[-1, 1], [0, 2], [3, -1], [0, -1]]])\nTrue\n```",
     "created_at": "2010-09-20T05:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -174,13 +173,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_098672.json:
 ```json
 {
-    "body": "That would work, although as an example it seems harder to understand.  I think I would prefer:\n\n\n```\nsage: vertices = supp.vertices()\nsage: vertices.sort()\nsage: vertices\n[[-1, 1], [0, -1], [0, 2], [3, -1]]\n```\n\n\nat least as a temporary workaround.  It would be nice if the Polyhedron class produced a specific output, but that will require some significant additions that I won't have time for before this release.",
+    "body": "That would work, although as an example it seems harder to understand.  I think I would prefer:\n\n```\nsage: vertices = supp.vertices()\nsage: vertices.sort()\nsage: vertices\n[[-1, 1], [0, -1], [0, 2], [3, -1]]\n```\n\nat least as a temporary workaround.  It would be nice if the Polyhedron class produced a specific output, but that will require some significant additions that I won't have time for before this release.",
     "created_at": "2010-09-20T13:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -191,14 +189,12 @@ archive/issue_comments_098672.json:
 
 That would work, although as an example it seems harder to understand.  I think I would prefer:
 
-
 ```
 sage: vertices = supp.vertices()
 sage: vertices.sort()
 sage: vertices
 [[-1, 1], [0, -1], [0, 2], [3, -1]]
 ```
-
 
 at least as a temporary workaround.  It would be nice if the Polyhedron class produced a specific output, but that will require some significant additions that I won't have time for before this release.
 
@@ -209,7 +205,7 @@ at least as a temporary workaround.  It would be nice if the Polyhedron class pr
 archive/issue_comments_098673.json:
 ```json
 {
-    "body": "I think the problem is that `cddlib` uses `rand()` to sometimes make random initial choices while searching for generating sets. Although `cddlib` fixes the seed, there is no guarantee that different platforms implement `rand()` in the same way.\n\nTo make sure this is indeed the problem, can you run\n\n```\nsage: Polyhedron(vertices=[(0, 1), (1, 1), (0, 1), (-1, 1), (0, 2), (0, -1), (0, 0), (0, 0), (3, -1), (0, 2), (0, -1), (1, -1), (0, 0)], verbose=True)\nV-representation\nbegin\n 13 3 rational\n 1 0 1\n 1 1 1\n 1 0 1\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 0 0\n 1 0 0\n 1 3 -1\n 1 0 2\n 1 0 -1\n 1 1 -1\n 1 0 0\nend\n\nV-representation\nbegin\n 4 3 rational\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 3 -1\nend\n\nH-representation\nbegin\n 4 3 rational\n 2 1 -1\n 1 2 1\n 1 0 1\n 2 -1 -1\nend\nA 2-dimensional polyhedron in QQ^2 defined as the convex hull of 4 vertices.\n```\n\non the OSX machine and paste the output? I can then rip out the `rand()` from the `cddlib.spkg`...",
+    "body": "I think the problem is that `cddlib` uses `rand()` to sometimes make random initial choices while searching for generating sets. Although `cddlib` fixes the seed, there is no guarantee that different platforms implement `rand()` in the same way.\n\nTo make sure this is indeed the problem, can you run\n\n```\nsage: Polyhedron(vertices=[(0, 1), (1, 1), (0, 1), (-1, 1), (0, 2), (0, -1), (0, 0), (0, 0), (3, -1), (0, 2), (0, -1), (1, -1), (0, 0)], verbose=True)\nV-representation\nbegin\n 13 3 rational\n 1 0 1\n 1 1 1\n 1 0 1\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 0 0\n 1 0 0\n 1 3 -1\n 1 0 2\n 1 0 -1\n 1 1 -1\n 1 0 0\nend\n\nV-representation\nbegin\n 4 3 rational\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 3 -1\nend\n\nH-representation\nbegin\n 4 3 rational\n 2 1 -1\n 1 2 1\n 1 0 1\n 2 -1 -1\nend\nA 2-dimensional polyhedron in QQ^2 defined as the convex hull of 4 vertices.\n```\non the OSX machine and paste the output? I can then rip out the `rand()` from the `cddlib.spkg`...",
     "created_at": "2010-09-20T16:11:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -261,7 +257,6 @@ begin
 end
 A 2-dimensional polyhedron in QQ^2 defined as the convex hull of 4 vertices.
 ```
-
 on the OSX machine and paste the output? I can then rip out the `rand()` from the `cddlib.spkg`...
 
 
@@ -289,7 +284,7 @@ Changing assignee from mvngu to mhampton.
 archive/issue_comments_098675.json:
 ```json
 {
-    "body": "I'm confused by \"rip out the rand() from the cddlib.spkg\" - are you going to patch the source code?\n\nAnyway on OS X 10.6 I get:\n\n\n```\nV-representation\nbegin\n 13 3 rational\n 1 0 1\n 1 1 1\n 1 0 1\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 0 0\n 1 0 0\n 1 3 -1\n 1 0 2\n 1 0 -1\n 1 1 -1\n 1 0 0\nend\n\n\nV-representation\nbegin\n 4 3 rational\n 1 -1 1\n 1 0 2\n 1 3 -1\n 1 0 -1\nend\n\nH-representation\nbegin\n 4 3 rational\n 2 1 -1\n 1 2 1\n 1 0 1\n 2 -1 -1\nend\n\nVertex graph\nbegin\n  4    4\n 1 2 : 2 4 \n 2 2 : 1 3 \n 3 2 : 2 4 \n 4 2 : 1 3 \nend\n\nFacet graph\nbegin\n  4    4\n 1 2 : 2 4 \n 2 2 : 1 3 \n 3 2 : 2 4 \n 4 \n```\n",
+    "body": "I'm confused by \"rip out the rand() from the cddlib.spkg\" - are you going to patch the source code?\n\nAnyway on OS X 10.6 I get:\n\n```\nV-representation\nbegin\n 13 3 rational\n 1 0 1\n 1 1 1\n 1 0 1\n 1 -1 1\n 1 0 2\n 1 0 -1\n 1 0 0\n 1 0 0\n 1 3 -1\n 1 0 2\n 1 0 -1\n 1 1 -1\n 1 0 0\nend\n\n\nV-representation\nbegin\n 4 3 rational\n 1 -1 1\n 1 0 2\n 1 3 -1\n 1 0 -1\nend\n\nH-representation\nbegin\n 4 3 rational\n 2 1 -1\n 1 2 1\n 1 0 1\n 2 -1 -1\nend\n\nVertex graph\nbegin\n  4    4\n 1 2 : 2 4 \n 2 2 : 1 3 \n 3 2 : 2 4 \n 4 2 : 1 3 \nend\n\nFacet graph\nbegin\n  4    4\n 1 2 : 2 4 \n 2 2 : 1 3 \n 3 2 : 2 4 \n 4 \n```",
     "created_at": "2010-09-20T19:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -301,7 +296,6 @@ archive/issue_comments_098675.json:
 I'm confused by "rip out the rand() from the cddlib.spkg" - are you going to patch the source code?
 
 Anyway on OS X 10.6 I get:
-
 
 ```
 V-representation
@@ -358,7 +352,6 @@ begin
  3 2 : 2 4 
  4 
 ```
-
 
 
 
@@ -476,7 +469,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_098682.json:
 ```json
 {
-    "body": "Replying to [comment:14 vbraun]:\n> Updated spkg is at #9798, please test on your OSX machines. Note: also needs patch to the sage library which you can find on the same ticket.\n> \n\nI just did, please see the other ticket...\nDima",
+    "body": "Replying to [comment:14 vbraun]:\n> Updated spkg is at #9798, please test on your OSX machines. Note: also needs patch to the sage library which you can find on the same ticket.\n> \n\n\nI just did, please see the other ticket...\nDima",
     "created_at": "2010-09-21T15:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -489,6 +482,7 @@ Replying to [comment:14 vbraun]:
 > Updated spkg is at #9798, please test on your OSX machines. Note: also needs patch to the sage library which you can find on the same ticket.
 > 
 
+
 I just did, please see the other ticket...
 Dima
 
@@ -499,7 +493,7 @@ Dima
 archive/issue_comments_098683.json:
 ```json
 {
-    "body": "Replying to [comment:12 vbraun]:\n> Yes, thats what I'm planning to do: patch the `cddlib` source code to use a portable random number generator. I already have an updated spkg for #9798, so I'll patch this issue at the same time if you don't object.\n> \n\nI'm curious; are you planning on using Sage's framework for interfacing to random number generators?  See sage/devel/sage/sage/misc/randstate.pyx, and examples for setting the random seed in gap, pari, the libc generator, etc., or see http://sagemath.org/doc/reference/sage/misc/randstate.html#generating-random-numbers-in-library-code",
+    "body": "Replying to [comment:12 vbraun]:\n> Yes, thats what I'm planning to do: patch the `cddlib` source code to use a portable random number generator. I already have an updated spkg for #9798, so I'll patch this issue at the same time if you don't object.\n> \n\n\nI'm curious; are you planning on using Sage's framework for interfacing to random number generators?  See sage/devel/sage/sage/misc/randstate.pyx, and examples for setting the random seed in gap, pari, the libc generator, etc., or see http://sagemath.org/doc/reference/sage/misc/randstate.html#generating-random-numbers-in-library-code",
     "created_at": "2010-10-11T17:51:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -511,6 +505,7 @@ archive/issue_comments_098683.json:
 Replying to [comment:12 vbraun]:
 > Yes, thats what I'm planning to do: patch the `cddlib` source code to use a portable random number generator. I already have an updated spkg for #9798, so I'll patch this issue at the same time if you don't object.
 > 
+
 
 I'm curious; are you planning on using Sage's framework for interfacing to random number generators?  See sage/devel/sage/sage/misc/randstate.pyx, and examples for setting the random seed in gap, pari, the libc generator, etc., or see http://sagemath.org/doc/reference/sage/misc/randstate.html#generating-random-numbers-in-library-code
 
@@ -611,7 +606,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098689.json:
 ```json
 {
-    "body": "Replying to [comment:19 vbraun]:\n> I've fixed the bug in #9798. That ticket will fix the issue in this ticket, too.\n\ntested on Debian x64 and on MacOSX 10.5 PPC. Positive!",
+    "body": "Replying to [comment:19 vbraun]:\n> I've fixed the bug in #9798. That ticket will fix the issue in this ticket, too.\n\n\ntested on Debian x64 and on MacOSX 10.5 PPC. Positive!",
     "created_at": "2010-10-18T14:52:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
@@ -622,6 +617,7 @@ archive/issue_comments_098689.json:
 
 Replying to [comment:19 vbraun]:
 > I've fixed the bug in #9798. That ticket will fix the issue in this ticket, too.
+
 
 tested on Debian x64 and on MacOSX 10.5 PPC. Positive!
 

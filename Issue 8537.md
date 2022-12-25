@@ -181,7 +181,7 @@ I think the builds options are relevant to building the optional sage spkg that 
 archive/issue_comments_077044.json:
 ```json
 {
-    "body": "I've created a ticket to update mpi4py - #8538, as that is very old too. I'll try to test the two packages together. \n\nThe old version of openmpi used these configure options:\n\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-f90-max-array-dim=0 --disable-mpi-f77 \n--disable-mpi-f90 --with-mpi-f90-size=trivial\n```\n\n\nI'll look as whether these are all needed, as both openmpi and mpi4py are several years old. \n\nDave",
+    "body": "I've created a ticket to update mpi4py - #8538, as that is very old too. I'll try to test the two packages together. \n\nThe old version of openmpi used these configure options:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-f90-max-array-dim=0 --disable-mpi-f77 \n--disable-mpi-f90 --with-mpi-f90-size=trivial\n```\n\nI'll look as whether these are all needed, as both openmpi and mpi4py are several years old. \n\nDave",
     "created_at": "2010-03-15T00:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -194,12 +194,10 @@ I've created a ticket to update mpi4py - #8538, as that is very old too. I'll tr
 
 The old version of openmpi used these configure options:
 
-
 ```
 ./configure --prefix="$SAGE_LOCAL" --with-f90-max-array-dim=0 --disable-mpi-f77 
 --disable-mpi-f90 --with-mpi-f90-size=trivial
 ```
-
 
 I'll look as whether these are all needed, as both openmpi and mpi4py are several years old. 
 
@@ -334,7 +332,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_077050.json:
 ```json
 {
-    "body": "Replying to [comment:8 vbraun]:\n> Thanks for updating everything!\n> \n> I think you should be using `rm -f` to delete the old versions. The current `spkg-install` will fail to install if you don't already have the old openmpi lying around.\n> \n> You should always use `$MAKE` because somebody might have set `MAKE=/path/gnu-make` or so. Do you need to disable parallel make? Then set `MAKE=\"$MAKE -j 1\"`\n> \n> Does mpi4py or anything else need the fortran API? If no, why not disable it in the configure. If yes, is there any way we can make it call `sage_fortran` as the compiler?\n> \n\nThanks for all the information!\n\nI changed everything to your advices. rm worked without -f but I added it just to be sure.\nAlso found an unnecessary rm statement. The fortran things were already outcommented but I removed them completely, to avoid confusion.\nI upload a the new spkg-install to see the difference",
+    "body": "Replying to [comment:8 vbraun]:\n> Thanks for updating everything!\n> \n> I think you should be using `rm -f` to delete the old versions. The current `spkg-install` will fail to install if you don't already have the old openmpi lying around.\n> \n> You should always use `$MAKE` because somebody might have set `MAKE=/path/gnu-make` or so. Do you need to disable parallel make? Then set `MAKE=\"$MAKE -j 1\"`\n> \n> Does mpi4py or anything else need the fortran API? If no, why not disable it in the configure. If yes, is there any way we can make it call `sage_fortran` as the compiler?\n> \n\n\nThanks for all the information!\n\nI changed everything to your advices. rm worked without -f but I added it just to be sure.\nAlso found an unnecessary rm statement. The fortran things were already outcommented but I removed them completely, to avoid confusion.\nI upload a the new spkg-install to see the difference",
     "created_at": "2011-01-11T12:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -352,6 +350,7 @@ Replying to [comment:8 vbraun]:
 > 
 > Does mpi4py or anything else need the fortran API? If no, why not disable it in the configure. If yes, is there any way we can make it call `sage_fortran` as the compiler?
 > 
+
 
 Thanks for all the information!
 
@@ -411,7 +410,7 @@ Volker
 archive/issue_comments_077053.json:
 ```json
 {
-    "body": "Replying to [comment:10 vbraun]:\n> Nice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n> \n> http://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n> \n> That'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n> \n> Best wishes,\n> Volker\n\nOK something went wrong with the SPKG.txt when packing, perhaps I deleted it accidentally or something else went wrong. In addition I can't upload the new version on the spkg-upload site...\n\nYou can download the corrected version now under: http://computational-sage.googlecode.com/files/openmpi-1.4.3.spkg\n\nI hope everything is now correct, and thanks for the hint with the .hgignore!\n\nCheers,\nStefan",
+    "body": "Replying to [comment:10 vbraun]:\n> Nice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n> \n> http://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n> \n> That'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n> \n> Best wishes,\n> Volker\n\n\nOK something went wrong with the SPKG.txt when packing, perhaps I deleted it accidentally or something else went wrong. In addition I can't upload the new version on the spkg-upload site...\n\nYou can download the corrected version now under: http://computational-sage.googlecode.com/files/openmpi-1.4.3.spkg\n\nI hope everything is now correct, and thanks for the hint with the .hgignore!\n\nCheers,\nStefan",
     "created_at": "2011-01-11T23:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -429,6 +428,7 @@ Replying to [comment:10 vbraun]:
 > 
 > Best wishes,
 > Volker
+
 
 OK something went wrong with the SPKG.txt when packing, perhaps I deleted it accidentally or something else went wrong. In addition I can't upload the new version on the spkg-upload site...
 
@@ -482,7 +482,7 @@ Looks great!
 archive/issue_comments_077056.json:
 ```json
 {
-    "body": "I just tested in on Solaris and the export + set variable construct seems to be a bash-ism and not portable to other shells:\n\n```\n$ export MAKE=\"$MAKE -j 1\"\nMAKE= -j 1: is not an identifier\n$ MAKE=\"$MAKE -j 1\"\n$ export MAKE\n```\n\n\nThe best fix is to change the first line of spkg-install to \n\n```/usr/bin/env bash\n```\n\nAlmost all spkgs use that anyways.\n\nI've made that change to the openmpi spkg and put the result here:\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/openmpi-1.4.3.spkg\n\nSince thats a minor change I'll leave it as positive review.\n\nFor the record, compile still fails on Solaris (as with the previous version). This issue is tracked in #8522: Optional package openmpi-1.1.4 fails to install on Solaris 10 SPARC",
+    "body": "I just tested in on Solaris and the export + set variable construct seems to be a bash-ism and not portable to other shells:\n\n```\n$ export MAKE=\"$MAKE -j 1\"\nMAKE= -j 1: is not an identifier\n$ MAKE=\"$MAKE -j 1\"\n$ export MAKE\n```\n\nThe best fix is to change the first line of spkg-install to \n\n```/usr/bin/env bash\n```\nAlmost all spkgs use that anyways.\n\nI've made that change to the openmpi spkg and put the result here:\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/openmpi-1.4.3.spkg\n\nSince thats a minor change I'll leave it as positive review.\n\nFor the record, compile still fails on Solaris (as with the previous version). This issue is tracked in #8522: Optional package openmpi-1.1.4 fails to install on Solaris 10 SPARC",
     "created_at": "2011-01-12T02:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
@@ -500,12 +500,10 @@ $ MAKE="$MAKE -j 1"
 $ export MAKE
 ```
 
-
 The best fix is to change the first line of spkg-install to 
 
 ```/usr/bin/env bash
 ```
-
 Almost all spkgs use that anyways.
 
 I've made that change to the openmpi spkg and put the result here:

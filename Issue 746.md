@@ -107,7 +107,7 @@ archive/issue_events_002026.json:
 archive/issue_comments_004356.json:
 ```json
 {
-    "body": "Let's try that again:\n\n\n```\n--- a/sage/graphs/graph.py      Wed Sep 26 09:37:18 2007 -0700\n+++ b/sage/graphs/graph.py      Fri Sep 28 13:46:41 2007 -0500\n@@ -684,10 +684,34 @@ class GenericGraph(SageObject):\n\n     def clear(self):\n         \"\"\"\n-        Empties the graph of vertices and edges, removes name.\n+        Empties the graph of vertices and edges and removes name,\n+        boundary, associated objects, and position information.\n+\n+        EXAMPLE:\n+            sage: G=graphs.CycleGraph(4); G.associate({0:'vertex0'})\n+            sage: G.order(); G.size()\n+            4\n+            4\n+            sage: len(G._pos)\n+            4\n+            sage: G.name()\n+            'Cycle graph'\n+            sage: G.obj(0)\n+            'vertex0'\n+            sage: G.clear()\n+            sage: G.order(); G.size()\n+            0\n+            0\n+            sage: len(G._pos)\n+            0\n+            sage: G.name()\n+            sage: G.obj(0)\n\n         \"\"\"\n         self._nxg.clear()\n+        self._pos=[]\n+        self._boundary=[]\n+        self._assoc=None\n\n     def neighbors(self, vertex):\n         \"\"\"\n```\n",
+    "body": "Let's try that again:\n\n```\n--- a/sage/graphs/graph.py      Wed Sep 26 09:37:18 2007 -0700\n+++ b/sage/graphs/graph.py      Fri Sep 28 13:46:41 2007 -0500\n@@ -684,10 +684,34 @@ class GenericGraph(SageObject):\n\n     def clear(self):\n         \"\"\"\n-        Empties the graph of vertices and edges, removes name.\n+        Empties the graph of vertices and edges and removes name,\n+        boundary, associated objects, and position information.\n+\n+        EXAMPLE:\n+            sage: G=graphs.CycleGraph(4); G.associate({0:'vertex0'})\n+            sage: G.order(); G.size()\n+            4\n+            4\n+            sage: len(G._pos)\n+            4\n+            sage: G.name()\n+            'Cycle graph'\n+            sage: G.obj(0)\n+            'vertex0'\n+            sage: G.clear()\n+            sage: G.order(); G.size()\n+            0\n+            0\n+            sage: len(G._pos)\n+            0\n+            sage: G.name()\n+            sage: G.obj(0)\n\n         \"\"\"\n         self._nxg.clear()\n+        self._pos=[]\n+        self._boundary=[]\n+        self._assoc=None\n\n     def neighbors(self, vertex):\n         \"\"\"\n```",
     "created_at": "2007-09-28T18:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/746",
     "type": "issue_comment",
@@ -117,7 +117,6 @@ archive/issue_comments_004356.json:
 ```
 
 Let's try that again:
-
 
 ```
 --- a/sage/graphs/graph.py      Wed Sep 26 09:37:18 2007 -0700
@@ -159,7 +158,6 @@ Let's try that again:
      def neighbors(self, vertex):
          """
 ```
-
 
 
 

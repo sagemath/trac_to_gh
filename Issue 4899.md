@@ -3,7 +3,7 @@
 archive/issues_004899.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: finite fields\n\n\n```\nsage: GF(2^15,'a')(1).sqrt()\n1\nsage: GF(2^16,'a')(1).sqrt()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/rings/finite_field_ntl_gf2e.so in sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2eElement.sqrt (sage/rings/finite_field_ntl_gf2e.cpp:7072)()\n\nAttributeError: 'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_g' object has no attribute '_one_element'\n```\n\nThe point is that `GF(2^16)` (and higher) are of type  'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e'\nand the code (lines 826,827 in finite_field_ntl_gf2e.pyx)\n\n```\n        if self.is_one():\n            return self._one_element\n```\n\nfails.  It should be self.parent()._one_element  (though I don't know why \"return self\" would not be ok too).\n\nPatch up very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4899\n\n",
+    "body": "Assignee: tbd\n\nKeywords: finite fields\n\n```\nsage: GF(2^15,'a')(1).sqrt()\n1\nsage: GF(2^16,'a')(1).sqrt()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/rings/finite_field_ntl_gf2e.so in sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2eElement.sqrt (sage/rings/finite_field_ntl_gf2e.cpp:7072)()\n\nAttributeError: 'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_g' object has no attribute '_one_element'\n```\nThe point is that `GF(2^16)` (and higher) are of type  'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e'\nand the code (lines 826,827 in finite_field_ntl_gf2e.pyx)\n\n```\n        if self.is_one():\n            return self._one_element\n```\nfails.  It should be self.parent()._one_element  (though I don't know why \"return self\" would not be ok too).\n\nPatch up very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4899\n\n",
     "created_at": "2009-01-01T12:14:52Z",
     "labels": [
         "component: algebra",
@@ -21,7 +21,6 @@ Assignee: tbd
 
 Keywords: finite fields
 
-
 ```
 sage: GF(2^15,'a')(1).sqrt()
 1
@@ -35,7 +34,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_g' object has no attribute '_one_element'
 ```
-
 The point is that `GF(2^16)` (and higher) are of type  'sage.rings.finite_field_ntl_gf2e.FiniteField_ntl_gf2e'
 and the code (lines 826,827 in finite_field_ntl_gf2e.pyx)
 
@@ -43,7 +41,6 @@ and the code (lines 826,827 in finite_field_ntl_gf2e.pyx)
         if self.is_one():
             return self._one_element
 ```
-
 fails.  It should be self.parent()._one_element  (though I don't know why "return self" would not be ok too).
 
 Patch up very soon.

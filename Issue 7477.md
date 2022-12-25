@@ -164,7 +164,7 @@ Neither Rob's code nor mine is a patch. Any preference? I'm happy to convert my 
 archive/issue_comments_062912.json:
 ```json
 {
-    "body": "Replying to [comment:5 rbeezer]:\n> Replying to [comment:3 Stefan]:\n>\n> What will it take to get the matroid community started with Sage?\n\nShort answer (I sent you a longer by email): the matroid community has already started. We had a [meeting](http://msor.victoria.ac.nz/Main/MatroidComputation) in December, and will have a followup meeting in June. Several people have committed themselves to the effort.\n\nBy the way, I changed the \"Component\" field to combinatorics. I hope that's ok.",
+    "body": "Replying to [comment:5 rbeezer]:\n> Replying to [comment:3 Stefan]:\n\n>\n> What will it take to get the matroid community started with Sage?\n\n\nShort answer (I sent you a longer by email): the matroid community has already started. We had a [meeting](http://msor.victoria.ac.nz/Main/MatroidComputation) in December, and will have a followup meeting in June. Several people have committed themselves to the effort.\n\nBy the way, I changed the \"Component\" field to combinatorics. I hope that's ok.",
     "created_at": "2011-03-25T21:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -175,8 +175,10 @@ archive/issue_comments_062912.json:
 
 Replying to [comment:5 rbeezer]:
 > Replying to [comment:3 Stefan]:
+
 >
 > What will it take to get the matroid community started with Sage?
+
 
 Short answer (I sent you a longer by email): the matroid community has already started. We had a [meeting](http://msor.victoria.ac.nz/Main/MatroidComputation) in December, and will have a followup meeting in June. Several people have committed themselves to the effort.
 
@@ -207,7 +209,7 @@ Changing component from numerical to combinatorics.
 archive/issue_comments_062914.json:
 ```json
 {
-    "body": "Replying to [comment:6 wdj]:\n> Neither Rob's code nor mine is a patch. Any preference? I'm happy to convert my code into a patch and try to integrate Rob's new aspects in, or Rob can create a patch from his.\n\nHi David,\n\nSorry for the delay in replying to this - recovering from Bug Days.\n\nI think the computational matroid folks are quite serious about moving a lot of their work to Sage.  Maybe it would be best if we let them decide what structure will work best for their purposes, rather than putting in something now that may not work well long-term?\n\nYou and I could probably best help them by advising and reviewing their contributions, I think.\n\nBut we shouldn't wait for them forever.  ;-)\n\nRob",
+    "body": "Replying to [comment:6 wdj]:\n> Neither Rob's code nor mine is a patch. Any preference? I'm happy to convert my code into a patch and try to integrate Rob's new aspects in, or Rob can create a patch from his.\n\n\nHi David,\n\nSorry for the delay in replying to this - recovering from Bug Days.\n\nI think the computational matroid folks are quite serious about moving a lot of their work to Sage.  Maybe it would be best if we let them decide what structure will work best for their purposes, rather than putting in something now that may not work well long-term?\n\nYou and I could probably best help them by advising and reviewing their contributions, I think.\n\nBut we shouldn't wait for them forever.  ;-)\n\nRob",
     "created_at": "2011-03-29T04:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -218,6 +220,7 @@ archive/issue_comments_062914.json:
 
 Replying to [comment:6 wdj]:
 > Neither Rob's code nor mine is a patch. Any preference? I'm happy to convert my code into a patch and try to integrate Rob's new aspects in, or Rob can create a patch from his.
+
 
 Hi David,
 
@@ -391,7 +394,7 @@ Note: the documentation builds fine from scratch, but I sometimes have trouble w
 archive/issue_comments_062921.json:
 ```json
 {
-    "body": "This review will take a lifetime, but right now all I can say is that the code of `circuits`, `cocircuits`, `noncospanning_cocircuits`, and `nonspanning_circuits` look awfully similar.\n\nAnd there are some parts of the code that are commented out, like that\n\n```\n+# def bitset_pickle_test(data):                                                                                                                                                               \n+#     \"\"\"                                                                                                                                                                                     \n+#     Converts the list of integers ``data`` into a bitset, which gets pickled.                                                                                                               \n+#     \"\"\"                                                                                                                                                                                     \n+#     cdef bitset_t bs                                                                                                                                                                        \n+#     m = max(data)                                                                                                                                                                           \n+#     bitset_init(bs, m+1)                                                                                                                                                                    \n+#     bitset_clear(bs)                                                                                                                                                                        \n+#     for i in data:                                                                                                                                                                          \n+#         bitset_add(bs, i)                                                                                                                                                                   \n+#     p = bitset_pickle(bs)                                                                                                                                                                   \n+#     bitset_free(bs)                                                                                                                                                                         \n+#     return p              \n```\n\nOr 4 functions in the matroid catalog.\n\nNathann",
+    "body": "This review will take a lifetime, but right now all I can say is that the code of `circuits`, `cocircuits`, `noncospanning_cocircuits`, and `nonspanning_circuits` look awfully similar.\n\nAnd there are some parts of the code that are commented out, like that\n\n```\n+# def bitset_pickle_test(data):                                                                                                                                                               \n+#     \"\"\"                                                                                                                                                                                     \n+#     Converts the list of integers ``data`` into a bitset, which gets pickled.                                                                                                               \n+#     \"\"\"                                                                                                                                                                                     \n+#     cdef bitset_t bs                                                                                                                                                                        \n+#     m = max(data)                                                                                                                                                                           \n+#     bitset_init(bs, m+1)                                                                                                                                                                    \n+#     bitset_clear(bs)                                                                                                                                                                        \n+#     for i in data:                                                                                                                                                                          \n+#         bitset_add(bs, i)                                                                                                                                                                   \n+#     p = bitset_pickle(bs)                                                                                                                                                                   \n+#     bitset_free(bs)                                                                                                                                                                         \n+#     return p              \n```\nOr 4 functions in the matroid catalog.\n\nNathann",
     "created_at": "2013-05-01T17:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -419,7 +422,6 @@ And there are some parts of the code that are commented out, like that
 +#     bitset_free(bs)                                                                                                                                                                         
 +#     return p              
 ```
-
 Or 4 functions in the matroid catalog.
 
 Nathann
@@ -451,7 +453,7 @@ I guess we should have gotten rid of commented out parts (though Sage has plenty
 archive/issue_comments_062923.json:
 ```json
 {
-    "body": "Hellooooooo !\n\n> What do you mean by the comment that those functions look similar? They compute similar, but not identical, information from the matroid. And all four are useful to end users.\n\nNonono, of course you need them. I was just saying that perhaps there could have been an internal function computing all 4 things, exposed in 4 differents ways to the user. This way there is no copy/paste of code.\n\n> I guess we should have gotten rid of commented out parts (though Sage has plenty of that floating around in its source). I'll revise that soon.\n\nNonono I'm sorry I said that, I will give you lengthier reviews soon. Otherwise it will make you update the patch every day...  `:-)`\n\nNathann",
+    "body": "Hellooooooo !\n\n> What do you mean by the comment that those functions look similar? They compute similar, but not identical, information from the matroid. And all four are useful to end users.\n\n\nNonono, of course you need them. I was just saying that perhaps there could have been an internal function computing all 4 things, exposed in 4 differents ways to the user. This way there is no copy/paste of code.\n\n> I guess we should have gotten rid of commented out parts (though Sage has plenty of that floating around in its source). I'll revise that soon.\n\n\nNonono I'm sorry I said that, I will give you lengthier reviews soon. Otherwise it will make you update the patch every day...  `:-)`\n\nNathann",
     "created_at": "2013-05-01T18:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -464,9 +466,11 @@ Hellooooooo !
 
 > What do you mean by the comment that those functions look similar? They compute similar, but not identical, information from the matroid. And all four are useful to end users.
 
+
 Nonono, of course you need them. I was just saying that perhaps there could have been an internal function computing all 4 things, exposed in 4 differents ways to the user. This way there is no copy/paste of code.
 
 > I guess we should have gotten rid of commented out parts (though Sage has plenty of that floating around in its source). I'll revise that soon.
+
 
 Nonono I'm sorry I said that, I will give you lengthier reviews soon. Otherwise it will make you update the patch every day...  `:-)`
 
@@ -555,7 +559,7 @@ I, too, was very impressed with the general layout of this project; a lot of tho
 archive/issue_comments_062927.json:
 ```json
 {
-    "body": "Looks pretty solid. I think you can review the mathematical correctness among yourself. You should have somebody who is more familiar with Sageisms to look at code style, then it should be ready to go. There are some small code style issues that would have been easier if you had started with a smaller chunk of code.\n\nPEP8 whitespace http://www.python.org/dev/peps/pep-0008/#other-recommendations\n\n```\ni = i + 1   # yes\ni=i+1       # no\n```\n\n\nDocstring markup http://www.sagemath.org/doc/developer/conventions.html#docstring-markup-with-rest-and-sphinx:\n* `EXAMPLES::` not `EXAMPLE::` (though thats also misspelled in other places in the sage library)\n* Imperative: \"Test that foo is bar\" instead of \"Tests that foo is bar\".\n* `INPUT:` should include type information and our formatting:\n  {{{\n- ``n``: The dimension of the projective space.             # no\n- ``n`` -- positive integer. The dimension of the projective space.  # yes\n    }}}\n  * We have markup for referencing other docstrings\n    {{{\n... see :class:`OtherClass` ...\n... or :meth:`other_method` ...\n    }}}\n    that you might want to use more consistently.\n\nThe SetSystem should probably be factored out and integrated into `sage.sets`.\n\nYour private reimplementation of all matrix functionality has a lot of code-smell. If the only reason is that pivoting is too slow then you should look into fixing that instead of writing your own matrix implementation. \n\nWhats this (left-over debugging?):\n\n```\n  #if d>0: \n  #    F=Fa+Fb \n  #    self._q_projection=self._q_projection.matrix_from_rows_and_columns(F,F) \n```\n",
+    "body": "Looks pretty solid. I think you can review the mathematical correctness among yourself. You should have somebody who is more familiar with Sageisms to look at code style, then it should be ready to go. There are some small code style issues that would have been easier if you had started with a smaller chunk of code.\n\nPEP8 whitespace http://www.python.org/dev/peps/pep-0008/#other-recommendations\n\n```\ni = i + 1   # yes\ni=i+1       # no\n```\n\nDocstring markup http://www.sagemath.org/doc/developer/conventions.html#docstring-markup-with-rest-and-sphinx:\n* `EXAMPLES::` not `EXAMPLE::` (though thats also misspelled in other places in the sage library)\n* Imperative: \"Test that foo is bar\" instead of \"Tests that foo is bar\".\n* `INPUT:` should include type information and our formatting:\n  {{{\n- ``n``: The dimension of the projective space.             # no\n- ``n`` -- positive integer. The dimension of the projective space.  # yes\n    }}}\n  * We have markup for referencing other docstrings\n    {{{\n... see :class:`OtherClass` ...\n... or :meth:`other_method` ...\n    }}}\n    that you might want to use more consistently.\n\nThe SetSystem should probably be factored out and integrated into `sage.sets`.\n\nYour private reimplementation of all matrix functionality has a lot of code-smell. If the only reason is that pivoting is too slow then you should look into fixing that instead of writing your own matrix implementation. \n\nWhats this (left-over debugging?):\n\n```\n  #if d>0: \n  #    F=Fa+Fb \n  #    self._q_projection=self._q_projection.matrix_from_rows_and_columns(F,F) \n```",
     "created_at": "2013-05-03T14:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -572,7 +576,6 @@ PEP8 whitespace http://www.python.org/dev/peps/pep-0008/#other-recommendations
 i = i + 1   # yes
 i=i+1       # no
 ```
-
 
 Docstring markup http://www.sagemath.org/doc/developer/conventions.html#docstring-markup-with-rest-and-sphinx:
 * `EXAMPLES::` not `EXAMPLE::` (though thats also misspelled in other places in the sage library)
@@ -603,13 +606,12 @@ Whats this (left-over debugging?):
 
 
 
-
 ---
 
 archive/issue_comments_062928.json:
 ```json
 {
-    "body": "This looks wildly useful, not just for educational purposes. I always wanted to play around with the matroid Hopf algebra, for example...\n\nThe remarks below are mostly random and not always to the point. Most of the code is beyound my grasp due to the use of Cython and bitsets and partly due to advanced matroid theory. I'm just looking at random points which seem relevant and/or understandable to me.\n\nWhat does this mean:\n\n```\nIt is up to the child class to update its data structure make information  \nrelative to the new basis more accessible. \n```\n\n\nTypo \"an an\":\n\n```\nif `I` is covered by a matching an an appropriate bipartite graph\n```\n\nThat said, \"covered by\" might be useless, given that you're not saying \"maximum matching\".\n\nIn the next line, do you really mean \"maximal matching\", or rather \"maximum matching\"? (I don't know what you want.)\n\nTypo \"Compute a the rank\". Also, look out for \"the the\" errors, you got 2 of them.\n\nAny chances to get some comments on `cdef  __fundamental_cocircuit` and `cdef  __fundamental_circuit`? I can't say the code is self-explanatory... Is the \"fundamental circuit\" of a basis B and an element y the set of all elements of B that could be replaced by y, united with {y}? I see why this is a circuit (when y is not in B, that is) but I haven't seen this notation used anywhere...\n\nMissing \"of\" in \"of the flats the matroid\" and in \"of the coflats the matroid\". Also, typos: \"wheter\", \"distinguised\", \"commom\".\n\nDoes the docstring of `cpdef _augment(self, X, Y):` want to say something like \"nonempty (if possible) subset `I`\" or \"maximum subset `I`\"? Just a subset is a bit boring...\n\nIs matroid union implemented? I can't find it in the code...\n\nThe \"if\" in \"with the property that if no modular triple of hyperplanes has exactly two members in the modular cut\" looks out of place. Incidentally, a definition of the notion of \"hyperplane\" would be of use, too; I didn't know of that notion so far.\n\nThe `max_weight_independent` method raises an error if the ground set is empty and the weights keyword is set, something that might happen in practice in recursive definitions:\n\n```\nsage: M = matroids.Uniform(0,0)            \nsage: wt = {}                             \nsage: M.max_weight_independent(weights=wt)\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n<ipython-input-10-89b2ef4dae56> in <module>()\n----> 1 M.max_weight_independent(weights=wt)\n\n/home/darij/sage-5.9/local/lib/python2.7/site-packages/sage/matroids/matroid.so in sage.matroids.matroid.Matroid.max_weight_independent (sage/matroids/matroid.c:25219)()\n\n/home/darij/sage-5.9/local/lib/python2.7/site-packages/sage/matroids/matroid.so in sage.matroids.matroid.Matroid.max_weight_independent (sage/matroids/matroid.c:24847)()\n\nIndexError: list index out of range\n```\n\n\nThis is due to the `if wt[-1][1] < 0:` line, of course. Same for `max_weight_coindependent`.\n\nThis just looks weird:\n\n```\n                if self.full_rank()==0: \n\t            return True             \n\t        if self.full_rank()==0 or self.full_corank()==0: \n\t            return True  \n```\n\n\nOne of the A's should probably be an Atranspose in:\n\n```\n                If the matroid is represented by `[I_1 A]`, then the dual is represented by `[-A I_2]` for appropriately sized \n\t        identity matrices `I_1, I_2`. \n```\n\n(The minus sign, on the other hand, I don't see the reason for...)\n\nFeature suggestion, if not already implemented: a method to test if a given weight function is generic, i. e., has exactly one maximizing basis. Of course, this is easy thanks to the exchange graph, as one only needs to find a maximizing basis and then check that all its exchange neighbours have strictly smaller weight. This function is useful to some Hopf-algebraic constructions.",
+    "body": "This looks wildly useful, not just for educational purposes. I always wanted to play around with the matroid Hopf algebra, for example...\n\nThe remarks below are mostly random and not always to the point. Most of the code is beyound my grasp due to the use of Cython and bitsets and partly due to advanced matroid theory. I'm just looking at random points which seem relevant and/or understandable to me.\n\nWhat does this mean:\n\n```\nIt is up to the child class to update its data structure make information  \nrelative to the new basis more accessible. \n```\n\nTypo \"an an\":\n\n```\nif `I` is covered by a matching an an appropriate bipartite graph\n```\nThat said, \"covered by\" might be useless, given that you're not saying \"maximum matching\".\n\nIn the next line, do you really mean \"maximal matching\", or rather \"maximum matching\"? (I don't know what you want.)\n\nTypo \"Compute a the rank\". Also, look out for \"the the\" errors, you got 2 of them.\n\nAny chances to get some comments on `cdef  __fundamental_cocircuit` and `cdef  __fundamental_circuit`? I can't say the code is self-explanatory... Is the \"fundamental circuit\" of a basis B and an element y the set of all elements of B that could be replaced by y, united with {y}? I see why this is a circuit (when y is not in B, that is) but I haven't seen this notation used anywhere...\n\nMissing \"of\" in \"of the flats the matroid\" and in \"of the coflats the matroid\". Also, typos: \"wheter\", \"distinguised\", \"commom\".\n\nDoes the docstring of `cpdef _augment(self, X, Y):` want to say something like \"nonempty (if possible) subset `I`\" or \"maximum subset `I`\"? Just a subset is a bit boring...\n\nIs matroid union implemented? I can't find it in the code...\n\nThe \"if\" in \"with the property that if no modular triple of hyperplanes has exactly two members in the modular cut\" looks out of place. Incidentally, a definition of the notion of \"hyperplane\" would be of use, too; I didn't know of that notion so far.\n\nThe `max_weight_independent` method raises an error if the ground set is empty and the weights keyword is set, something that might happen in practice in recursive definitions:\n\n```\nsage: M = matroids.Uniform(0,0)            \nsage: wt = {}                             \nsage: M.max_weight_independent(weights=wt)\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n<ipython-input-10-89b2ef4dae56> in <module>()\n----> 1 M.max_weight_independent(weights=wt)\n\n/home/darij/sage-5.9/local/lib/python2.7/site-packages/sage/matroids/matroid.so in sage.matroids.matroid.Matroid.max_weight_independent (sage/matroids/matroid.c:25219)()\n\n/home/darij/sage-5.9/local/lib/python2.7/site-packages/sage/matroids/matroid.so in sage.matroids.matroid.Matroid.max_weight_independent (sage/matroids/matroid.c:24847)()\n\nIndexError: list index out of range\n```\n\nThis is due to the `if wt[-1][1] < 0:` line, of course. Same for `max_weight_coindependent`.\n\nThis just looks weird:\n\n```\n                if self.full_rank()==0: \n\t            return True             \n\t        if self.full_rank()==0 or self.full_corank()==0: \n\t            return True  \n```\n\nOne of the A's should probably be an Atranspose in:\n\n```\n                If the matroid is represented by `[I_1 A]`, then the dual is represented by `[-A I_2]` for appropriately sized \n\t        identity matrices `I_1, I_2`. \n```\n(The minus sign, on the other hand, I don't see the reason for...)\n\nFeature suggestion, if not already implemented: a method to test if a given weight function is generic, i. e., has exactly one maximizing basis. Of course, this is easy thanks to the exchange graph, as one only needs to find a maximizing basis and then check that all its exchange neighbours have strictly smaller weight. This function is useful to some Hopf-algebraic constructions.",
     "created_at": "2013-05-11T06:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -629,13 +631,11 @@ It is up to the child class to update its data structure make information
 relative to the new basis more accessible. 
 ```
 
-
 Typo "an an":
 
 ```
 if `I` is covered by a matching an an appropriate bipartite graph
 ```
-
 That said, "covered by" might be useless, given that you're not saying "maximum matching".
 
 In the next line, do you really mean "maximal matching", or rather "maximum matching"? (I don't know what you want.)
@@ -670,7 +670,6 @@ IndexError                                Traceback (most recent call last)
 IndexError: list index out of range
 ```
 
-
 This is due to the `if wt[-1][1] < 0:` line, of course. Same for `max_weight_coindependent`.
 
 This just looks weird:
@@ -682,14 +681,12 @@ This just looks weird:
 	            return True  
 ```
 
-
 One of the A's should probably be an Atranspose in:
 
 ```
                 If the matroid is represented by `[I_1 A]`, then the dual is represented by `[-A I_2]` for appropriately sized 
 	        identity matrices `I_1, I_2`. 
 ```
-
 (The minus sign, on the other hand, I don't see the reason for...)
 
 Feature suggestion, if not already implemented: a method to test if a given weight function is generic, i. e., has exactly one maximizing basis. Of course, this is easy thanks to the exchange graph, as one only needs to find a maximizing basis and then check that all its exchange neighbours have strictly smaller weight. This function is useful to some Hopf-algebraic constructions.
@@ -788,7 +785,7 @@ On an unrelated note: WTF our finite field matrices use floating-point algorithm
 archive/issue_comments_062931.json:
 ```json
 {
-    "body": "I think you started studying the code in the wrong file. The main entry point is matroid.pyx. This is an abstract class of which all others derive. It implements all functionality in terms of just the rank function (ok... it'll convert to BasisMatroid for things like isomorphism testing). It should be fairly straightforward, and the code does not swerve far from pure Python.\n\nBasisExchangeMatroid is a common framework for BasisMatroid and LinearMatroid. Internally the groundset is translated to a list of integers, which are used for bitset indexing. So we have\n\n* regular methods. User-facing, expected to be careful with input checking.\n* underscored methods. May assume properties regarding their input (type is frozenset, elements are from groundset, two sets are disjoint, ...)\n* doubly underscored methods. Very internal use (usually cdef). Use the encoded version of the groundset, and may have bitset arguments into which the return value is copied.\n\nI think most people who will be adding code, will not move beyond the first underscore (things like union() belong in the generic Matroid class anyway). But certainly the cdef methods deserve a little bit of an explanation.\n\nAnd yes:\n\n```\nsage: A = Matrix(GF(7), [[1,0,1,1],[0,1,1,2]])\nsage: type(A)\nsage.matrix.matrix_modn_dense_float.Matrix_modn_dense_float\n```\n\nIn our matroid code we store the entries simply as a list of GF(q) elements, with some splicing commands for row operations. Results in a 10- to 20-time speedup in places. It's weird.\n\nI hope I'll get around to doing the further edits soon!",
+    "body": "I think you started studying the code in the wrong file. The main entry point is matroid.pyx. This is an abstract class of which all others derive. It implements all functionality in terms of just the rank function (ok... it'll convert to BasisMatroid for things like isomorphism testing). It should be fairly straightforward, and the code does not swerve far from pure Python.\n\nBasisExchangeMatroid is a common framework for BasisMatroid and LinearMatroid. Internally the groundset is translated to a list of integers, which are used for bitset indexing. So we have\n\n* regular methods. User-facing, expected to be careful with input checking.\n* underscored methods. May assume properties regarding their input (type is frozenset, elements are from groundset, two sets are disjoint, ...)\n* doubly underscored methods. Very internal use (usually cdef). Use the encoded version of the groundset, and may have bitset arguments into which the return value is copied.\n\nI think most people who will be adding code, will not move beyond the first underscore (things like union() belong in the generic Matroid class anyway). But certainly the cdef methods deserve a little bit of an explanation.\n\nAnd yes:\n\n```\nsage: A = Matrix(GF(7), [[1,0,1,1],[0,1,1,2]])\nsage: type(A)\nsage.matrix.matrix_modn_dense_float.Matrix_modn_dense_float\n```\nIn our matroid code we store the entries simply as a list of GF(q) elements, with some splicing commands for row operations. Results in a 10- to 20-time speedup in places. It's weird.\n\nI hope I'll get around to doing the further edits soon!",
     "created_at": "2013-05-14T02:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -814,7 +811,6 @@ sage: A = Matrix(GF(7), [[1,0,1,1],[0,1,1,2]])
 sage: type(A)
 sage.matrix.matrix_modn_dense_float.Matrix_modn_dense_float
 ```
-
 In our matroid code we store the entries simply as a list of GF(q) elements, with some splicing commands for row operations. Results in a 10- to 20-time speedup in places. It's weird.
 
 I hope I'll get around to doing the further edits soon!
@@ -884,7 +880,7 @@ And the example is not contrived: we genuinely saw a 10- to 20-fold speedup in t
 archive/issue_comments_062935.json:
 ```json
 {
-    "body": "I spent a good chunk of the afternoon looking over the documentation and wrestling with `intersphinx`.\n\nFollowing are all pretty routine, though maybe the messages from exceptions needs discussion.  Second post is about more mysterious stuff.\n\nI'm doing\n\n\n```\nsage -docbuild reference html\n```\n\n\nand might turn to PDF output once this is settled.  I'd be happy to ride herd on documentation as part of a group review.  By and large, it looks excellent - I like many of the extras, like a discussion on subclassing and accurate synopses and lists at the top of modules.  Nits:\n\n(1) Set up code in the small patch all looks routine to my eye (except see next post).  I have some experience with this, but will not say I am expert at it, so a second look is probably in order.  (Interesting to see how little is actually required to add in a whole new field.)  On the downside, having \"matroid\" at the top level is now going to make it harder to auto-complete the top-level \"matrix\" at the command line.  ;-)\n\n(2) In \"Creating mew Matroid subclasses\": \"For incidental use, the RankMatroid subclass.\" needs another \"use\"?\n\n(3) In documentation of matroid.is_isomorphism() the EXAMPLES all have an extra indent.  Again with matroid.minor, matroid.equals.  You might troll for more of these across all modules.\n\n(4) I see \"MatroidError\" instances in the documentation, specifically here at matroid.max_independent.  Is there a precedent for custom exceptions elsewhere in Sage?  More commonly errors are TypeError or ValueError it seems to me.  (Yes, PEP8 says differently.)  And I find the \"Problem with a matroid operation:\" redundant.  I believe it is a Python convention to have error messages begin with a lower case, to follow the colon (but cannot find a reference for this).\n\nI'd be inclined to replace\n\n\n```\nMatroidError: Problem with a matroid operation: 'Input is not a subset of the groundset.'\n```\n\n\nwith something like\n\n\n```\nValueError: 'input set is not a subset of the groundset.'\n```\n\n\nEven better is to repeat the problem input in the error message.  Here:\n\n\n```\nValueError: 'input set ['x'] is not a subset of the groundset.'\n```\n\n\n\nThere is usually enough context provided automatically, but echioing the bad input is often very helpful.  Also consider making the text of error messages somewhat unique, so that searches will land a user at the right place in the reference manual.  \n\n\n(5) Apparently-minor documentation warnings follow.  Should be trivial to fix.\n\n\n```\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.NonVamos:3: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.P8pp:1: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.P8pp:1: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] <autodoc>:0: WARNING: Bullet list ends without a blank line; unexpected unindent.\n```\n",
+    "body": "I spent a good chunk of the afternoon looking over the documentation and wrestling with `intersphinx`.\n\nFollowing are all pretty routine, though maybe the messages from exceptions needs discussion.  Second post is about more mysterious stuff.\n\nI'm doing\n\n```\nsage -docbuild reference html\n```\n\nand might turn to PDF output once this is settled.  I'd be happy to ride herd on documentation as part of a group review.  By and large, it looks excellent - I like many of the extras, like a discussion on subclassing and accurate synopses and lists at the top of modules.  Nits:\n\n(1) Set up code in the small patch all looks routine to my eye (except see next post).  I have some experience with this, but will not say I am expert at it, so a second look is probably in order.  (Interesting to see how little is actually required to add in a whole new field.)  On the downside, having \"matroid\" at the top level is now going to make it harder to auto-complete the top-level \"matrix\" at the command line.  ;-)\n\n(2) In \"Creating mew Matroid subclasses\": \"For incidental use, the RankMatroid subclass.\" needs another \"use\"?\n\n(3) In documentation of matroid.is_isomorphism() the EXAMPLES all have an extra indent.  Again with matroid.minor, matroid.equals.  You might troll for more of these across all modules.\n\n(4) I see \"MatroidError\" instances in the documentation, specifically here at matroid.max_independent.  Is there a precedent for custom exceptions elsewhere in Sage?  More commonly errors are TypeError or ValueError it seems to me.  (Yes, PEP8 says differently.)  And I find the \"Problem with a matroid operation:\" redundant.  I believe it is a Python convention to have error messages begin with a lower case, to follow the colon (but cannot find a reference for this).\n\nI'd be inclined to replace\n\n```\nMatroidError: Problem with a matroid operation: 'Input is not a subset of the groundset.'\n```\n\nwith something like\n\n```\nValueError: 'input set is not a subset of the groundset.'\n```\n\nEven better is to repeat the problem input in the error message.  Here:\n\n```\nValueError: 'input set ['x'] is not a subset of the groundset.'\n```\n\n\nThere is usually enough context provided automatically, but echioing the bad input is often very helpful.  Also consider making the text of error messages somewhat unique, so that searches will land a user at the right place in the reference manual.  \n\n\n(5) Apparently-minor documentation warnings follow.  Should be trivial to fix.\n\n```\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.NonVamos:3: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.P8pp:1: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.P8pp:1: WARNING: Inline interpreted text or phrase reference start-string without end-string.\n[matroids ] <autodoc>:0: WARNING: Bullet list ends without a blank line; unexpected unindent.\n```",
     "created_at": "2013-05-25T00:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -899,11 +895,9 @@ Following are all pretty routine, though maybe the messages from exceptions need
 
 I'm doing
 
-
 ```
 sage -docbuild reference html
 ```
-
 
 and might turn to PDF output once this is settled.  I'd be happy to ride herd on documentation as part of a group review.  By and large, it looks excellent - I like many of the extras, like a discussion on subclassing and accurate synopses and lists at the top of modules.  Nits:
 
@@ -917,34 +911,27 @@ and might turn to PDF output once this is settled.  I'd be happy to ride herd on
 
 I'd be inclined to replace
 
-
 ```
 MatroidError: Problem with a matroid operation: 'Input is not a subset of the groundset.'
 ```
 
-
 with something like
-
 
 ```
 ValueError: 'input set is not a subset of the groundset.'
 ```
 
-
 Even better is to repeat the problem input in the error message.  Here:
-
 
 ```
 ValueError: 'input set ['x'] is not a subset of the groundset.'
 ```
 
 
-
 There is usually enough context provided automatically, but echioing the bad input is often very helpful.  Also consider making the text of error messages somewhat unique, so that searches will land a user at the right place in the reference manual.  
 
 
 (5) Apparently-minor documentation warnings follow.  Should be trivial to fix.
-
 
 ```
 [matroids ] /sage/sage-5.10.beta4/local/lib/python2.7/site-packages/sage/matroids/catalog.py:docstring of sage.matroids.catalog.NonVamos:3: WARNING: Inline interpreted text or phrase reference start-string without end-string.
@@ -955,13 +942,12 @@ There is usually enough context provided automatically, but echioing the bad inp
 
 
 
-
 ---
 
 archive/issue_comments_062936.json:
 ```json
 {
-    "body": "Some errors with building the HTML documentation follow.  I think this is from using intersphinx, but am not certain.  Perhaps also related to the `conf.py` files.  I'll ping John Palmieri off-list to see if he wants to take a look.  On 5.10.beta2, but very similar behaviour on 5.10.beta4.\n\nTwo files in `devel/sage/doc/en/reference`:  `conf.py` and `conf_sub.py`.  The first has a long list of top-level sections of the documentation.  But to my eye it seems we use the second and not the first (and setup patch here also seems to reference the second).\n\nI added `'matroids'` to the first and tried rebuilding (two passes).  Then tried rebuilding with \n\n`sage -docbuild reference html -S -aE`\n\nwhich my notes say will for a rebuild from scratch.  \n\nHere are the symptoms I'm trying to fix.  Many many of these, and indeed the `objects.inv` is not created for the matroids section.\n\n\n```\n[homology ] WARNING: intersphinx inventory '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv'\n```\n\n\nI get about seven of these.  Perhaps it is due to cdef'ed class definitions.  That is a guess.  However, limited Googling suggests this can be fixed with a proper `conf.py`, so maybe another symptom of the same problem.  For each file/module, it seem severe enough to keep the whole module's worth of documentation from rendering at all - there is just a title, and no real content.\n\n\n```\n[reference] /sage/sage-5.10.beta2/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: \"'module' object has no attribute 'BasisExchangeMatroid'\", please check your spelling and sys.path\n```\n",
+    "body": "Some errors with building the HTML documentation follow.  I think this is from using intersphinx, but am not certain.  Perhaps also related to the `conf.py` files.  I'll ping John Palmieri off-list to see if he wants to take a look.  On 5.10.beta2, but very similar behaviour on 5.10.beta4.\n\nTwo files in `devel/sage/doc/en/reference`:  `conf.py` and `conf_sub.py`.  The first has a long list of top-level sections of the documentation.  But to my eye it seems we use the second and not the first (and setup patch here also seems to reference the second).\n\nI added `'matroids'` to the first and tried rebuilding (two passes).  Then tried rebuilding with \n\n`sage -docbuild reference html -S -aE`\n\nwhich my notes say will for a rebuild from scratch.  \n\nHere are the symptoms I'm trying to fix.  Many many of these, and indeed the `objects.inv` is not created for the matroids section.\n\n```\n[homology ] WARNING: intersphinx inventory '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv'\n```\n\nI get about seven of these.  Perhaps it is due to cdef'ed class definitions.  That is a guess.  However, limited Googling suggests this can be fixed with a proper `conf.py`, so maybe another symptom of the same problem.  For each file/module, it seem severe enough to keep the whole module's worth of documentation from rendering at all - there is just a title, and no real content.\n\n```\n[reference] /sage/sage-5.10.beta2/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: \"'module' object has no attribute 'BasisExchangeMatroid'\", please check your spelling and sys.path\n```",
     "created_at": "2013-05-25T00:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -982,19 +968,15 @@ which my notes say will for a rebuild from scratch.
 
 Here are the symptoms I'm trying to fix.  Many many of these, and indeed the `objects.inv` is not created for the matroids section.
 
-
 ```
 [homology ] WARNING: intersphinx inventory '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv'
 ```
 
-
 I get about seven of these.  Perhaps it is due to cdef'ed class definitions.  That is a guess.  However, limited Googling suggests this can be fixed with a proper `conf.py`, so maybe another symptom of the same problem.  For each file/module, it seem severe enough to keep the whole module's worth of documentation from rendering at all - there is just a title, and no real content.
-
 
 ```
 [reference] /sage/sage-5.10.beta2/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: "'module' object has no attribute 'BasisExchangeMatroid'", please check your spelling and sys.path
 ```
-
 
 
 
@@ -1047,7 +1029,7 @@ I'll get to the other issues mentioned soon.
 archive/issue_comments_062939.json:
 ```json
 {
-    "body": "Hey Rob,\n\nIt's saying it can't find that file `/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv`. It probably doesn't exist. When doing top-level doc stuff, I always run\n\n```\nsage -docbuild all html\n```\n\nI'd try that first.\n\nAlso I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?\n\nStefan,\n\nThe bullet points need to be formatted like this:\n\n```\nSome text saying a list:\n\n- the first level, note the blank line\n- but this needs a sublist:\n\n  - Note the indentation and the blank line inbetween.\n\n- A line which needs a break\n  will go like this.\n```\n\nI believe that should take care of the sphinx errors.\n\nBest,\n\nTravis",
+    "body": "Hey Rob,\n\nIt's saying it can't find that file `/sage/sage-5.10.beta2/devel/sage/doc/output/html/en/reference/matroids/objects.inv`. It probably doesn't exist. When doing top-level doc stuff, I always run\n\n```\nsage -docbuild all html\n```\nI'd try that first.\n\nAlso I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?\n\nStefan,\n\nThe bullet points need to be formatted like this:\n\n```\nSome text saying a list:\n\n- the first level, note the blank line\n- but this needs a sublist:\n\n  - Note the indentation and the blank line inbetween.\n\n- A line which needs a break\n  will go like this.\n```\nI believe that should take care of the sphinx errors.\n\nBest,\n\nTravis",
     "created_at": "2013-05-25T02:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1063,7 +1045,6 @@ It's saying it can't find that file `/sage/sage-5.10.beta2/devel/sage/doc/output
 ```
 sage -docbuild all html
 ```
-
 I'd try that first.
 
 Also I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?
@@ -1083,7 +1064,6 @@ Some text saying a list:
 - A line which needs a break
   will go like this.
 ```
-
 I believe that should take care of the sphinx errors.
 
 Best,
@@ -1097,7 +1077,7 @@ Travis
 archive/issue_comments_062940.json:
 ```json
 {
-    "body": "Dear Travis,\n\nThanks for the suggestions.\n\nReplying to [comment:34 tscrim]:\n> {{{\n> sage -docbuild all html\n> }}}\n> I'd try that first.\n\nThat's looking much better!  And without editing a `conf.py`  I'll take it up more seriously in the morning.\n\n> Also I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?\n\nWell, I just nuked all of `doc/output` to make it rebuild and it seems to have run fine.  Again, I'll double-check in the AM.  I wonder what is different, and what needs to change to get `-docbuild` to just do one part of the docs?\n\nThanks,\nRob",
+    "body": "Dear Travis,\n\nThanks for the suggestions.\n\nReplying to [comment:34 tscrim]:\n> {{{\n> sage -docbuild all html\n> }}}\n> I'd try that first.\n\n\nThat's looking much better!  And without editing a `conf.py`  I'll take it up more seriously in the morning.\n\n> Also I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?\n\n\nWell, I just nuked all of `doc/output` to make it rebuild and it seems to have run fine.  Again, I'll double-check in the AM.  I wonder what is different, and what needs to change to get `-docbuild` to just do one part of the docs?\n\nThanks,\nRob",
     "created_at": "2013-05-25T03:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1116,9 +1096,11 @@ Replying to [comment:34 tscrim]:
 > }}}
 > I'd try that first.
 
+
 That's looking much better!  And without editing a `conf.py`  I'll take it up more seriously in the morning.
 
 > Also I'm somewhat scared of deleting the entire output directory now. I once did that and consistently got the error your is getting, even doing `docbuild all` (I ended up reinstalling sage, but that's more because I wanted to upgrade anyways.) Perhaps `make doc` does a few extra things then `docbuild all` does...?
+
 
 Well, I just nuked all of `doc/output` to make it rebuild and it seems to have run fine.  Again, I'll double-check in the AM.  I wonder what is different, and what needs to change to get `-docbuild` to just do one part of the docs?
 
@@ -1229,7 +1211,7 @@ The LinearMatroid class only uses the trivial nonstandard ``is_nonzero`` method 
 archive/issue_comments_062945.json:
 ```json
 {
-    "body": "I get some docbuild errors, e.g.\n\n```\n[reference] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: \"'module' object has no attribute 'BasisExchangeMatroid'\", please check your spelling and sys.path\n[matroids ] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/index.rst:7: WARNING: toctree contains reference to nonexisting document 'matroids/sage/matroids/constructor'\n```\n",
+    "body": "I get some docbuild errors, e.g.\n\n```\n[reference] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: \"'module' object has no attribute 'BasisExchangeMatroid'\", please check your spelling and sys.path\n[matroids ] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/index.rst:7: WARNING: toctree contains reference to nonexisting document 'matroids/sage/matroids/constructor'\n```",
     "created_at": "2013-05-29T12:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1244,7 +1226,6 @@ I get some docbuild errors, e.g.
 [reference] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/sage/matroids/basis_exchange_matroid.rst:11: WARNING: autodoc can't import/find module 'sage.matroids.basis_exchange_matroid', it reported error: "'module' object has no attribute 'BasisExchangeMatroid'", please check your spelling and sys.path
 [matroids ] /home/vbraun/opt/sage-5.10.beta5/devel/sage/doc/en/reference/matroids/index.rst:7: WARNING: toctree contains reference to nonexisting document 'matroids/sage/matroids/constructor'
 ```
-
 
 
 
@@ -1291,7 +1272,7 @@ And opening a separate ticket: that's definitely a good solution, why didn't I t
 archive/issue_comments_062948.json:
 ```json
 {
-    "body": "Replying to [comment:39 vbraun]:\n> I get some docbuild errors, e.g.\n\nMe, too.  I got a bit of advice from John Palmieri off-list, but that did not do the trick.  FWIW, no matter how hard I try to rebuild from scratch, these persist.  I was about to poll sage-devel, but I see that has started.  \n\nOnce this gets sorted, I should be able to finish a review of the documentation part of this.\n\nRob",
+    "body": "Replying to [comment:39 vbraun]:\n> I get some docbuild errors, e.g.\n\n\nMe, too.  I got a bit of advice from John Palmieri off-list, but that did not do the trick.  FWIW, no matter how hard I try to rebuild from scratch, these persist.  I was about to poll sage-devel, but I see that has started.  \n\nOnce this gets sorted, I should be able to finish a review of the documentation part of this.\n\nRob",
     "created_at": "2013-05-29T17:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1302,6 +1283,7 @@ archive/issue_comments_062948.json:
 
 Replying to [comment:39 vbraun]:
 > I get some docbuild errors, e.g.
+
 
 Me, too.  I got a bit of advice from John Palmieri off-list, but that did not do the trick.  FWIW, no matter how hard I try to rebuild from scratch, these persist.  I was about to poll sage-devel, but I see that has started.  
 
@@ -1316,7 +1298,7 @@ Rob
 archive/issue_comments_062949.json:
 ```json
 {
-    "body": "This change ought to fix the docbuilding problems:\n\n```diff\ndiff --git a/doc/en/reference/conf.py b/doc/en/reference/conf.py\n--- a/doc/en/reference/conf.py\n+++ b/doc/en/reference/conf.py\n@@ -94,6 +94,7 @@\n     'libs',\n     'logic',\n     'matrices',\n+    'matroids',\n     'misc',\n     'modabvar',\n     'modfrm',\n```\n\nHowever, I think a better solution is to auto-generated this list. Volker, you know the docbuild system. Can you look at my patch?",
+    "body": "This change ought to fix the docbuilding problems:\n\n```diff\ndiff --git a/doc/en/reference/conf.py b/doc/en/reference/conf.py\n--- a/doc/en/reference/conf.py\n+++ b/doc/en/reference/conf.py\n@@ -94,6 +94,7 @@\n     'libs',\n     'logic',\n     'matrices',\n+    'matroids',\n     'misc',\n     'modabvar',\n     'modfrm',\n```\nHowever, I think a better solution is to auto-generated this list. Volker, you know the docbuild system. Can you look at my patch?",
     "created_at": "2013-05-29T21:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1340,7 +1322,6 @@ diff --git a/doc/en/reference/conf.py b/doc/en/reference/conf.py
      'modabvar',
      'modfrm',
 ```
-
 However, I think a better solution is to auto-generated this list. Volker, you know the docbuild system. Can you look at my patch?
 
 
@@ -1370,7 +1351,7 @@ Attachment [trac_7477-docbuild.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_062951.json:
 ```json
 {
-    "body": "Replying to [comment:43 jhpalmieri]:\n> This change ought to fix the docbuilding problems:\n\nYes, it does, thanks.  I had tried that, but was just trying to build the reference only and there was no inventory file.  So when you apply the patches here, try\n\n\n```\nsage -docbuild all html\n```\n\n\nfirst to get a proper collection of HTML documentation.  Maybe John's change should just go in Stefan's setup patch - seems like that is where it belongs.  Autogeneration could be something new?\n\nAnd I'm wondering if inventories should get rebuilt on smaller units of the documentation.  I'll ask that on sage-devel so as to not clutter this any further.",
+    "body": "Replying to [comment:43 jhpalmieri]:\n> This change ought to fix the docbuilding problems:\n\n\nYes, it does, thanks.  I had tried that, but was just trying to build the reference only and there was no inventory file.  So when you apply the patches here, try\n\n```\nsage -docbuild all html\n```\n\nfirst to get a proper collection of HTML documentation.  Maybe John's change should just go in Stefan's setup patch - seems like that is where it belongs.  Autogeneration could be something new?\n\nAnd I'm wondering if inventories should get rebuilt on smaller units of the documentation.  I'll ask that on sage-devel so as to not clutter this any further.",
     "created_at": "2013-05-29T21:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1382,13 +1363,12 @@ archive/issue_comments_062951.json:
 Replying to [comment:43 jhpalmieri]:
 > This change ought to fix the docbuilding problems:
 
-Yes, it does, thanks.  I had tried that, but was just trying to build the reference only and there was no inventory file.  So when you apply the patches here, try
 
+Yes, it does, thanks.  I had tried that, but was just trying to build the reference only and there was no inventory file.  So when you apply the patches here, try
 
 ```
 sage -docbuild all html
 ```
-
 
 first to get a proper collection of HTML documentation.  Maybe John's change should just go in Stefan's setup patch - seems like that is where it belongs.  Autogeneration could be something new?
 
@@ -1457,7 +1437,7 @@ I can confirm that the docbuild patch fixes our problems. I also found that the 
 archive/issue_comments_062955.json:
 ```json
 {
-    "body": "Replying to [comment:40 vbraun]:\n> PS: the fact that you are more likely to get conflicts when you also improve other parts of Sage is **not** an excuse for not doing it ;-) You should have separated out the bitset improvements into a different ticket, this would have made this ticket less of a patch bomb, helped with reviewing, and made conflicts (if any) more manageable.\n\nCompletely agreed.",
+    "body": "Replying to [comment:40 vbraun]:\n> PS: the fact that you are more likely to get conflicts when you also improve other parts of Sage is **not** an excuse for not doing it ;-) You should have separated out the bitset improvements into a different ticket, this would have made this ticket less of a patch bomb, helped with reviewing, and made conflicts (if any) more manageable.\n\n\nCompletely agreed.",
     "created_at": "2013-05-30T13:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1468,6 +1448,7 @@ archive/issue_comments_062955.json:
 
 Replying to [comment:40 vbraun]:
 > PS: the fact that you are more likely to get conflicts when you also improve other parts of Sage is **not** an excuse for not doing it ;-) You should have separated out the bitset improvements into a different ticket, this would have made this ticket less of a patch bomb, helped with reviewing, and made conflicts (if any) more manageable.
+
 
 Completely agreed.
 
@@ -1498,7 +1479,7 @@ Rob: are you still proof reading the documentation?
 archive/issue_comments_062957.json:
 ```json
 {
-    "body": "Replying to [comment:50 vbraun]:\n> Rob: are you still proof reading the documentation?\n\nYes, hope to finish by the end of the weekend (will be way next week at a conference).\n\n\"proof reading\" might be a bit strong.  I'm looking for adherence to our conventions and only reporting minor problems as I go.  Generally, it is in great shape.  (And of course, way better than some of the older bits of Sage.)  Now that I can actually build all of the documentation, I should be able to wrap it up soon.\n\nJohn's patch looks good to  me.  I guess the onus will be to now keep the exclusions up-to-date (eg static, template) if new ones come along.  I had not looked too carefully before - it does not really belong in the setup patch here.  Does it make sense to put it on its own ticket, so it does not get buried in this (big) ticket?  Make it a dependency of this ticket?",
+    "body": "Replying to [comment:50 vbraun]:\n> Rob: are you still proof reading the documentation?\n\n\nYes, hope to finish by the end of the weekend (will be way next week at a conference).\n\n\"proof reading\" might be a bit strong.  I'm looking for adherence to our conventions and only reporting minor problems as I go.  Generally, it is in great shape.  (And of course, way better than some of the older bits of Sage.)  Now that I can actually build all of the documentation, I should be able to wrap it up soon.\n\nJohn's patch looks good to  me.  I guess the onus will be to now keep the exclusions up-to-date (eg static, template) if new ones come along.  I had not looked too carefully before - it does not really belong in the setup patch here.  Does it make sense to put it on its own ticket, so it does not get buried in this (big) ticket?  Make it a dependency of this ticket?",
     "created_at": "2013-05-30T18:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1509,6 +1490,7 @@ archive/issue_comments_062957.json:
 
 Replying to [comment:50 vbraun]:
 > Rob: are you still proof reading the documentation?
+
 
 Yes, hope to finish by the end of the weekend (will be way next week at a conference).
 
@@ -1654,7 +1636,7 @@ on a line of its own.  I have not looked at the PDF version, but I suspect this 
 archive/issue_comments_062962.json:
 ```json
 {
-    "body": "I made most of the changes detailed below (I'll leave it to Stefan to upload and make sure I didn't break anything)\n\nReplying to [comment:55 rbeezer]:\n> 1.  I'm not too dogmatic about long lines in doctests, but an effort should be made to line-break both input and output in the cases where it goes on forever.\n\nYou haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?\n\n> 1.  Lots of \"simple\" methods without OUTPUT sections.  Yes, it seems silly to just say \"foo() returns all the foo's of the matroid.\"  I like to provide some very basic idea of what a foo is if possible, then the documentation seems worthwhile.  I've learned a lot of math by reading Sage documentation.\n\nI changed all of those that I am able to (some I don't know what they are).\n\n> \n>   Code:  \"If that fails, we simply use a list `[0..m-1]`\"\n>   The single backticks are giving TeX, this should definitely be code, hence two backticks\n>   Probably the (i,j) preceding is similar, though we could debate if that is math or code.\n\nThere were lots like this, so I left them as they are, as that's a debate I don't really want to have.\n\n> \n>   f-vector() documentation:\n>     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...\n\nI'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.\n\n\nMichael",
+    "body": "I made most of the changes detailed below (I'll leave it to Stefan to upload and make sure I didn't break anything)\n\nReplying to [comment:55 rbeezer]:\n> 1.  I'm not too dogmatic about long lines in doctests, but an effort should be made to line-break both input and output in the cases where it goes on forever.\n\n\nYou haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?\n\n> 1.  Lots of \"simple\" methods without OUTPUT sections.  Yes, it seems silly to just say \"foo() returns all the foo's of the matroid.\"  I like to provide some very basic idea of what a foo is if possible, then the documentation seems worthwhile.  I've learned a lot of math by reading Sage documentation.\n\n\nI changed all of those that I am able to (some I don't know what they are).\n\n> \n>   Code:  \"If that fails, we simply use a list `[0..m-1]`\"\n>   The single backticks are giving TeX, this should definitely be code, hence two backticks\n>   Probably the (i,j) preceding is similar, though we could debate if that is math or code.\n\n\nThere were lots like this, so I left them as they are, as that's a debate I don't really want to have.\n\n> \n>   f-vector() documentation:\n>     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...\n\n\nI'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.\n\n\nMichael",
     "created_at": "2013-05-31T20:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1668,9 +1650,11 @@ I made most of the changes detailed below (I'll leave it to Stefan to upload and
 Replying to [comment:55 rbeezer]:
 > 1.  I'm not too dogmatic about long lines in doctests, but an effort should be made to line-break both input and output in the cases where it goes on forever.
 
+
 You haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?
 
 > 1.  Lots of "simple" methods without OUTPUT sections.  Yes, it seems silly to just say "foo() returns all the foo's of the matroid."  I like to provide some very basic idea of what a foo is if possible, then the documentation seems worthwhile.  I've learned a lot of math by reading Sage documentation.
+
 
 I changed all of those that I am able to (some I don't know what they are).
 
@@ -1679,11 +1663,13 @@ I changed all of those that I am able to (some I don't know what they are).
 >   The single backticks are giving TeX, this should definitely be code, hence two backticks
 >   Probably the (i,j) preceding is similar, though we could debate if that is math or code.
 
+
 There were lots like this, so I left them as they are, as that's a debate I don't really want to have.
 
 > 
 >   f-vector() documentation:
 >     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...
+
 
 I'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.
 
@@ -1697,7 +1683,7 @@ Michael
 archive/issue_comments_062963.json:
 ```json
 {
-    "body": "Thanks, Michael.\n\nComments interspersed.\n\nReplying to [comment:56 yomcat]:\n> You haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?\n\n \"Python Enhancemant Proposal 8\", aka PEP 8, http://www.python.org/dev/peps/pep-0008/\n\nsays \"max 79 characters\"\n\n> > \n> >   Code:  \"If that fails, we simply use a list `[0..m-1]`\"\n> >   The single backticks are giving TeX, this should definitely be code, hence two backticks\n> >   Probably the (i,j) preceding is similar, though we could debate if that is math or code.\n> \n> There were lots like this, so I left them as they are, as that's a debate I don't really want to have.\n\nYes, no need to debate, but `[0..m-1]` is definitely code and should definitely be in double backticks.  I don't want to debate either - but it is often extremely clear if you have code or math, and these should be formatted right.\n\n> > \n> >   f-vector() documentation:\n> >     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...\n> \n> I'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.\n\nMy mistake, not clear.  The OUTPUT section documents a single output of trhe function and is formatted as a list with one item.  I don't think a list is necessary.  INPUT will often have many items, and a list is natural.  There are lots of OUTPUT done as a one-item list.  `f_vector()` was just the first one I saw.",
+    "body": "Thanks, Michael.\n\nComments interspersed.\n\nReplying to [comment:56 yomcat]:\n> You haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?\n\n\n \"Python Enhancemant Proposal 8\", aka PEP 8, http://www.python.org/dev/peps/pep-0008/\n\nsays \"max 79 characters\"\n\n> > \n> >   Code:  \"If that fails, we simply use a list `[0..m-1]`\"\n> >   The single backticks are giving TeX, this should definitely be code, hence two backticks\n> >   Probably the (i,j) preceding is similar, though we could debate if that is math or code.\n\n> \n> There were lots like this, so I left them as they are, as that's a debate I don't really want to have.\n\n\nYes, no need to debate, but `[0..m-1]` is definitely code and should definitely be in double backticks.  I don't want to debate either - but it is often extremely clear if you have code or math, and these should be formatted right.\n\n> > \n> >   f-vector() documentation:\n> >     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...\n\n> \n> I'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.\n\n\nMy mistake, not clear.  The OUTPUT section documents a single output of trhe function and is formatted as a list with one item.  I don't think a list is necessary.  INPUT will often have many items, and a list is natural.  There are lots of OUTPUT done as a one-item list.  `f_vector()` was just the first one I saw.",
     "created_at": "2013-06-01T03:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1713,6 +1699,7 @@ Comments interspersed.
 Replying to [comment:56 yomcat]:
 > You haven't got to catalog.py yet (it's horrible for this), but is there a general guideline on characters per line?
 
+
  "Python Enhancemant Proposal 8", aka PEP 8, http://www.python.org/dev/peps/pep-0008/
 
 says "max 79 characters"
@@ -1721,16 +1708,20 @@ says "max 79 characters"
 > >   Code:  "If that fails, we simply use a list `[0..m-1]`"
 > >   The single backticks are giving TeX, this should definitely be code, hence two backticks
 > >   Probably the (i,j) preceding is similar, though we could debate if that is math or code.
+
 > 
 > There were lots like this, so I left them as they are, as that's a debate I don't really want to have.
+
 
 Yes, no need to debate, but `[0..m-1]` is definitely code and should definitely be in double backticks.  I don't want to debate either - but it is often extremely clear if you have code or math, and these should be formatted right.
 
 > > 
 > >   f-vector() documentation:
 > >     Has a list with just one item for output.  Probably does not need to be a list.  Ditto for flats().  I'm seeing more like this.  I'm inclined to just write a paragraph, unless returning a pair, triple, or ...
+
 > 
 > I'm confused. f_vector() returns a list [f_0, ..., f_r] where f_i is the number of flats of rank i, and r the rank of the matroid. That's got more than one thing in it. And flats() returns a SetSystem, not a list, and there's normally a lot more than one flat at a given rank.
+
 
 My mistake, not clear.  The OUTPUT section documents a single output of trhe function and is formatted as a list with one item.  I don't think a list is necessary.  INPUT will often have many items, and a list is natural.  There are lots of OUTPUT done as a one-item list.  `f_vector()` was just the first one I saw.
 
@@ -1741,7 +1732,7 @@ My mistake, not clear.  The OUTPUT section documents a single output of trhe fun
 archive/issue_comments_062964.json:
 ```json
 {
-    "body": "My 2 cents on `OUTPUT:` and `INPUT:` blocks. If there is no input other than `self`, there is no need for an `INPUT:` IMO since with `self`, the input is clear. For output blocks, if the short description of the method (i.e. the first line) tells the object that it returns, I don't see the need to write an `OUTPUT:` block. Additionally if the object needs description (mathematically), then I think that should go in the second paragraph of the documentation. For example:\n\n```\ndef loops(self):\n    \"\"\"\n    Return the loops of ``self``.\n\n    A *loop* is a one-element dependent subset.\n\n    EXAMPLES::\n\n        ...\n\ndef is_cosimple(self):\n    \"\"\"\n    Return ``True`` if ``self`` is cosimple.\n\n    A matriod is *cosimple* if ...\n\n    EXAMPLES::\n\n        ...\n```\n\nAlso if you find yourself needing a (longer) definition multiple times, either explicitly referencing the method/function with the definition or using a `.. SEEALSO::` block is a good way to go IMO. I think this is a good balance between descriptive, straight-forward, and simple. However I'm somewhat splitting hairs here.\n\nAdditionally, I would like to see #14668 as a dependency and only have the bitset code there.",
+    "body": "My 2 cents on `OUTPUT:` and `INPUT:` blocks. If there is no input other than `self`, there is no need for an `INPUT:` IMO since with `self`, the input is clear. For output blocks, if the short description of the method (i.e. the first line) tells the object that it returns, I don't see the need to write an `OUTPUT:` block. Additionally if the object needs description (mathematically), then I think that should go in the second paragraph of the documentation. For example:\n\n```\ndef loops(self):\n    \"\"\"\n    Return the loops of ``self``.\n\n    A *loop* is a one-element dependent subset.\n\n    EXAMPLES::\n\n        ...\n\ndef is_cosimple(self):\n    \"\"\"\n    Return ``True`` if ``self`` is cosimple.\n\n    A matriod is *cosimple* if ...\n\n    EXAMPLES::\n\n        ...\n```\nAlso if you find yourself needing a (longer) definition multiple times, either explicitly referencing the method/function with the definition or using a `.. SEEALSO::` block is a good way to go IMO. I think this is a good balance between descriptive, straight-forward, and simple. However I'm somewhat splitting hairs here.\n\nAdditionally, I would like to see #14668 as a dependency and only have the bitset code there.",
     "created_at": "2013-06-01T15:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1773,7 +1764,6 @@ def is_cosimple(self):
 
         ...
 ```
-
 Also if you find yourself needing a (longer) definition multiple times, either explicitly referencing the method/function with the definition or using a `.. SEEALSO::` block is a good way to go IMO. I think this is a good balance between descriptive, straight-forward, and simple. However I'm somewhat splitting hairs here.
 
 Additionally, I would like to see #14668 as a dependency and only have the bitset code there.
@@ -1785,7 +1775,7 @@ Additionally, I would like to see #14668 as a dependency and only have the bitse
 archive/issue_comments_062965.json:
 ```json
 {
-    "body": "For the record, `self` is not considered an argument for docstring purposes. Skip `INPUT` if `self` is the only argument, and list everything except `self` otherwise. The `OUTPUT` is a good place to say something about the type of the output. Can be very short:\n\n```\ndef is_cosimple(self):\n    \"\"\"\n    Test whether the matroid is cosimple.\n\n    A matriod is *cosimple* if ...\n\n    OUTPUT:\n\n    Boolean.\n\n    EXAMPLES::\n    ...\n```\n\nIts not silly, since Python is dynamically typed it is generally not obvious what the result type will be.",
+    "body": "For the record, `self` is not considered an argument for docstring purposes. Skip `INPUT` if `self` is the only argument, and list everything except `self` otherwise. The `OUTPUT` is a good place to say something about the type of the output. Can be very short:\n\n```\ndef is_cosimple(self):\n    \"\"\"\n    Test whether the matroid is cosimple.\n\n    A matriod is *cosimple* if ...\n\n    OUTPUT:\n\n    Boolean.\n\n    EXAMPLES::\n    ...\n```\nIts not silly, since Python is dynamically typed it is generally not obvious what the result type will be.",
     "created_at": "2013-06-01T15:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1810,7 +1800,6 @@ def is_cosimple(self):
     EXAMPLES::
     ...
 ```
-
 Its not silly, since Python is dynamically typed it is generally not obvious what the result type will be.
 
 
@@ -1878,7 +1867,7 @@ I just uploaded a revision. I revisited all documentation strings, adding mathem
 archive/issue_comments_062969.json:
 ```json
 {
-    "body": "Replying to [comment:62 Stefan]:\n> I just uploaded a revision. \n\nThanks, Stefan.  At Sage Days all next week, so I'll try to give it a look sometime then.",
+    "body": "Replying to [comment:62 Stefan]:\n> I just uploaded a revision. \n\n\nThanks, Stefan.  At Sage Days all next week, so I'll try to give it a look sometime then.",
     "created_at": "2013-06-16T03:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1889,6 +1878,7 @@ archive/issue_comments_062969.json:
 
 Replying to [comment:62 Stefan]:
 > I just uploaded a revision. 
+
 
 Thanks, Stefan.  At Sage Days all next week, so I'll try to give it a look sometime then.
 
@@ -1985,7 +1975,7 @@ I'll keep an eye out for the hiccups. We've already been through a weird one whi
 archive/issue_comments_062974.json:
 ```json
 {
-    "body": "Replying to [comment:65 Stefan]:\n> That is great news! Nathann, Karl-Dieter, Darij, Travis, Rob, Volker, thanks a lot for helping with the review!\n\nI did not intend to exclude any reviewers from the \"Reviewers\" field - so please add yourself if you wish to be part of that.\n\nRob",
+    "body": "Replying to [comment:65 Stefan]:\n> That is great news! Nathann, Karl-Dieter, Darij, Travis, Rob, Volker, thanks a lot for helping with the review!\n\n\nI did not intend to exclude any reviewers from the \"Reviewers\" field - so please add yourself if you wish to be part of that.\n\nRob",
     "created_at": "2013-06-18T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -1996,6 +1986,7 @@ archive/issue_comments_062974.json:
 
 Replying to [comment:65 Stefan]:
 > That is great news! Nathann, Karl-Dieter, Darij, Travis, Rob, Volker, thanks a lot for helping with the review!
+
 
 I did not intend to exclude any reviewers from the "Reviewers" field - so please add yourself if you wish to be part of that.
 
@@ -2008,7 +1999,7 @@ Rob
 archive/issue_comments_062975.json:
 ```json
 {
-    "body": "Never use\n\n```\nexcept:\n```\n\nwithout specifying an exception. Catch a specific exception instead, or if you must use a catch-all, use\n\n```\nexcept StandardError:\n```\n\n(or `BaseException` if you really need to catch everything, including `KeyboardInterrupt`)",
+    "body": "Never use\n\n```\nexcept:\n```\nwithout specifying an exception. Catch a specific exception instead, or if you must use a catch-all, use\n\n```\nexcept StandardError:\n```\n(or `BaseException` if you really need to catch everything, including `KeyboardInterrupt`)",
     "created_at": "2013-06-18T20:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2022,13 +2013,11 @@ Never use
 ```
 except:
 ```
-
 without specifying an exception. Catch a specific exception instead, or if you must use a catch-all, use
 
 ```
 except StandardError:
 ```
-
 (or `BaseException` if you really need to catch everything, including `KeyboardInterrupt`)
 
 
@@ -2056,7 +2045,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_062977.json:
 ```json
 {
-    "body": "This needs to be rebased to #9880:\n\n```\nsage -t --long devel/sage/sage/matroids/matroid.pyx\n**********************************************************************\nFile \"devel/sage/sage/matroids/matroid.pyx\", line 188, in sage.matroids.matroid\nFailed example:\n    M.tutte_polynomial(var('x'), var('y'))\nExpected:\n    x^2*y^2 + 2*x*y^3 + x^3 + y^4 + 3*x^2*y + 3*x*y^2 + y^3\nGot:\n    x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 3*x^2*y + 3*x*y^2 + y^3\n**********************************************************************\nFile \"devel/sage/sage/matroids/matroid.pyx\", line 362, in sage.matroids.matroid.Matroid\nFailed example:\n    M.tutte_polynomial(var('x'), var('y'))\nExpected:\n    x^2*y^2 + 2*x*y^3 + x^3 + y^4 + 3*x^2*y + 3*x*y^2 + y^3\nGot:\n    x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 3*x^2*y + 3*x*y^2 + y^3\n**********************************************************************\n```\n",
+    "body": "This needs to be rebased to #9880:\n\n```\nsage -t --long devel/sage/sage/matroids/matroid.pyx\n**********************************************************************\nFile \"devel/sage/sage/matroids/matroid.pyx\", line 188, in sage.matroids.matroid\nFailed example:\n    M.tutte_polynomial(var('x'), var('y'))\nExpected:\n    x^2*y^2 + 2*x*y^3 + x^3 + y^4 + 3*x^2*y + 3*x*y^2 + y^3\nGot:\n    x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 3*x^2*y + 3*x*y^2 + y^3\n**********************************************************************\nFile \"devel/sage/sage/matroids/matroid.pyx\", line 362, in sage.matroids.matroid.Matroid\nFailed example:\n    M.tutte_polynomial(var('x'), var('y'))\nExpected:\n    x^2*y^2 + 2*x*y^3 + x^3 + y^4 + 3*x^2*y + 3*x*y^2 + y^3\nGot:\n    x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 3*x^2*y + 3*x*y^2 + y^3\n**********************************************************************\n```",
     "created_at": "2013-06-19T06:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2087,7 +2076,6 @@ Got:
     x^2*y^2 + 2*x*y^3 + y^4 + x^3 + 3*x^2*y + 3*x*y^2 + y^3
 **********************************************************************
 ```
-
 
 
 
@@ -2478,7 +2466,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062997.json:
 ```json
 {
-    "body": "So, just to be clear, to avoid\n\n```\nWARNING: intersphinx inventory '/Users/.../sage-5.11.beta1/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: \n```\n\nerrors, in the future we have to always do\n\n```\nsage -docbuild all html\n```\n\nor do this inventory thing?  I don't see any mention in the [documentation](http://www.sagemath.org/doc/developer/sage_manuals.html?highlight=docbuild), nor at #14699, and I am using 5.11.beta1 here.",
+    "body": "So, just to be clear, to avoid\n\n```\nWARNING: intersphinx inventory '/Users/.../sage-5.11.beta1/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: \n```\nerrors, in the future we have to always do\n\n```\nsage -docbuild all html\n```\nor do this inventory thing?  I don't see any mention in the [documentation](http://www.sagemath.org/doc/developer/sage_manuals.html?highlight=docbuild), nor at #14699, and I am using 5.11.beta1 here.",
     "created_at": "2013-06-24T18:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2492,13 +2480,11 @@ So, just to be clear, to avoid
 ```
 WARNING: intersphinx inventory '/Users/.../sage-5.11.beta1/devel/sage/doc/output/html/en/reference/matroids/objects.inv' not fetchable due to <type 'exceptions.IOError'>: 
 ```
-
 errors, in the future we have to always do
 
 ```
 sage -docbuild all html
 ```
-
 or do this inventory thing?  I don't see any mention in the [documentation](http://www.sagemath.org/doc/developer/sage_manuals.html?highlight=docbuild), nor at #14699, and I am using 5.11.beta1 here.
 
 
@@ -2508,7 +2494,7 @@ or do this inventory thing?  I don't see any mention in the [documentation](http
 archive/issue_comments_062998.json:
 ```json
 {
-    "body": "Only the reference manual uses the two-step build process, so its either \n\n```\n   sage -docbuild reference inventory     # only necessary if inventory changed\n   sage -docbuild reference/DIR\n```\n\nor \n\n```\n   sage -docbuild reference html\n```\n",
+    "body": "Only the reference manual uses the two-step build process, so its either \n\n```\n   sage -docbuild reference inventory     # only necessary if inventory changed\n   sage -docbuild reference/DIR\n```\nor \n\n```\n   sage -docbuild reference html\n```",
     "created_at": "2013-06-24T19:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2523,13 +2509,11 @@ Only the reference manual uses the two-step build process, so its either
    sage -docbuild reference inventory     # only necessary if inventory changed
    sage -docbuild reference/DIR
 ```
-
 or 
 
 ```
    sage -docbuild reference html
 ```
-
 
 
 
@@ -2590,7 +2574,7 @@ archive/issue_events_017728.json:
 archive/issue_comments_063000.json:
 ```json
 {
-    "body": "Replying to [comment:82 kcrisman]:\n> I had a problem with the latter, though.  Anyway, I won't be changing the inventory much soon...\nI suppose the latter Sage call  was meant to replace the last line from the 1st code snippet, not both of them.",
+    "body": "Replying to [comment:82 kcrisman]:\n> I had a problem with the latter, though.  Anyway, I won't be changing the inventory much soon...\n\nI suppose the latter Sage call  was meant to replace the last line from the 1st code snippet, not both of them.",
     "created_at": "2013-07-28T19:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7477",
     "type": "issue_comment",
@@ -2601,6 +2585,7 @@ archive/issue_comments_063000.json:
 
 Replying to [comment:82 kcrisman]:
 > I had a problem with the latter, though.  Anyway, I won't be changing the inventory much soon...
+
 I suppose the latter Sage call  was meant to replace the last line from the 1st code snippet, not both of them.
 
 

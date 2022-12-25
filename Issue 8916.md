@@ -3,7 +3,7 @@
 archive/issues_008916.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: documentation\n\nThe word NotImplementedError is latexed but it shouldn't be:\n\n```\nEnumeratedSets.ParentMethods.cardinality\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8916\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: documentation\n\nThe word NotImplementedError is latexed but it shouldn't be:\n\n```\nEnumeratedSets.ParentMethods.cardinality\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8916\n\n",
     "created_at": "2010-05-07T16:14:21Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,6 @@ The word NotImplementedError is latexed but it shouldn't be:
 ```
 EnumeratedSets.ParentMethods.cardinality
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8916
 

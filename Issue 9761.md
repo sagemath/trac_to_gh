@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9762
 archive/issue_comments_095477.json:
 ```json
 {
-    "body": "Replying to [ticket:9762 drkirkby]:\n> Clearly this is a minor issue, but one worth fixing. \n\nIt's \"only\" documentation... ;-)",
+    "body": "Replying to [ticket:9762 drkirkby]:\n> Clearly this is a minor issue, but one worth fixing. \n\n\nIt's \"only\" documentation... ;-)",
     "created_at": "2010-08-18T12:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9761",
     "type": "issue_comment",
@@ -46,6 +46,7 @@ archive/issue_comments_095477.json:
 Replying to [ticket:9762 drkirkby]:
 > Clearly this is a minor issue, but one worth fixing. 
 
+
 It's "only" documentation... ;-)
 
 
@@ -55,7 +56,7 @@ It's "only" documentation... ;-)
 archive/issue_comments_095478.json:
 ```json
 {
-    "body": "Replying to [comment:1 leif]:\n> Replying to [ticket:9762 drkirkby]:\n> > Clearly this is a minor issue, but one worth fixing. \n> \n> It's \"only\" documentation... ;-)\n> \nTrue, but #9603 is more important, as it actually stops something building!\n\nDave",
+    "body": "Replying to [comment:1 leif]:\n> Replying to [ticket:9762 drkirkby]:\n> > Clearly this is a minor issue, but one worth fixing. \n\n> \n> It's \"only\" documentation... ;-)\n> \n\nTrue, but #9603 is more important, as it actually stops something building!\n\nDave",
     "created_at": "2010-08-18T13:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9761",
     "type": "issue_comment",
@@ -67,9 +68,11 @@ archive/issue_comments_095478.json:
 Replying to [comment:1 leif]:
 > Replying to [ticket:9762 drkirkby]:
 > > Clearly this is a minor issue, but one worth fixing. 
+
 > 
 > It's "only" documentation... ;-)
 > 
+
 True, but #9603 is more important, as it actually stops something building!
 
 Dave
@@ -200,7 +203,7 @@ archive/issue_events_024464.json:
 archive/issue_comments_095479.json:
 ```json
 {
-    "body": "The `SPKG.txt` now says:\n\n```\n## Dependencies\n\n * GMP/MPIR\n * (some) Python (to create the Makefile)\n * GNU patch\n * NTL apparently only if we configured zn_poly differently (same for FLINT)\n```\n",
+    "body": "The `SPKG.txt` now says:\n\n```\n## Dependencies\n\n * GMP/MPIR\n * (some) Python (to create the Makefile)\n * GNU patch\n * NTL apparently only if we configured zn_poly differently (same for FLINT)\n```",
     "created_at": "2015-04-14T11:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9761",
     "type": "issue_comment",
@@ -219,7 +222,6 @@ The `SPKG.txt` now says:
  * GNU patch
  * NTL apparently only if we configured zn_poly differently (same for FLINT)
 ```
-
 
 
 

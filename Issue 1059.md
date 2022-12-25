@@ -3,7 +3,7 @@
 archive/issues_001059.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\n\nin spkg-install to\n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\n\nThe former was needed when we supported windows (e.g., lcalc.exe), and was sort of hack-ish. The latter works around that there is some small problem with strip on os x, which isn't an issue.\n\n    -- William\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1059\n\n",
+    "body": "Assignee: mabshoff\n\nThe fix for lcalc is to change the line\n\n```\ncp lcalc* \"$SAGE_LOCAL\"/bin\n```\nin spkg-install to\n\n```\ncp lcalc \"$SAGE_LOCAL\"/bin\n```\nThe former was needed when we supported windows (e.g., lcalc.exe), and was sort of hack-ish. The latter works around that there is some small problem with strip on os x, which isn't an issue.\n\n    -- William\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1059\n\n",
     "created_at": "2007-11-02T00:24:10Z",
     "labels": [
         "component: porting",
@@ -23,13 +23,11 @@ The fix for lcalc is to change the line
 ```
 cp lcalc* "$SAGE_LOCAL"/bin
 ```
-
 in spkg-install to
 
 ```
 cp lcalc "$SAGE_LOCAL"/bin
 ```
-
 The former was needed when we supported windows (e.g., lcalc.exe), and was sort of hack-ish. The latter works around that there is some small problem with strip on os x, which isn't an issue.
 
     -- William

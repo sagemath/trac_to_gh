@@ -3,7 +3,7 @@
 archive/issues_000258.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCreate a command in SAGE based on the gp2c program of Bill Alombert.\n\nI envision something like this:\n\n\n```\nsage: gp = Gp()   # new instead of gp interacitve interpreter\nsage: gp.ceval(\"\"\"\na block of code\n\"\"\")\n...\n   at this point the gp2c translator is called and the resulting\n   shared object library is loaded into this instance of gp.\n...\nsage: gp('code that uses new functions defined in the above block of code')\n          resulting code runs faster since it is compiled. \n```\n\n\nThis will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:\n* SageX\n* weave\n* gp2c\n\nThe web page for gp2c:\n\n  http://pari.math.u-bordeaux.fr/download.html#gp2c\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
+    "body": "Assignee: @williamstein\n\nCreate a command in SAGE based on the gp2c program of Bill Alombert.\n\nI envision something like this:\n\n```\nsage: gp = Gp()   # new instead of gp interacitve interpreter\nsage: gp.ceval(\"\"\"\na block of code\n\"\"\")\n...\n   at this point the gp2c translator is called and the resulting\n   shared object library is loaded into this instance of gp.\n...\nsage: gp('code that uses new functions defined in the above block of code')\n          resulting code runs faster since it is compiled. \n```\n\nThis will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:\n* SageX\n* weave\n* gp2c\n\nThe web page for gp2c:\n\n  http://pari.math.u-bordeaux.fr/download.html#gp2c\n\nIssue created by migration from https://trac.sagemath.org/ticket/258\n\n",
     "created_at": "2007-02-11T20:51:22Z",
     "labels": [
         "component: interfaces"
@@ -21,7 +21,6 @@ Create a command in SAGE based on the gp2c program of Bill Alombert.
 
 I envision something like this:
 
-
 ```
 sage: gp = Gp()   # new instead of gp interacitve interpreter
 sage: gp.ceval("""
@@ -34,7 +33,6 @@ a block of code
 sage: gp('code that uses new functions defined in the above block of code')
           resulting code runs faster since it is compiled. 
 ```
-
 
 This will give yet another way of writing fast compiled code from interactive/interpreter SAGE. The ways would then be:
 * SageX
@@ -330,7 +328,7 @@ archive/issue_events_000545.json:
 archive/issue_comments_001161.json:
 ```json
 {
-    "body": "This is a comment *on this ticket* from Bill Allombert, who is the author of gp2c:\n\n```\nOn Tue, Jan 15, 2008 at 08:34:43AM -0800, William Stein wrote:\n> You might have comments about this:\n>\n> http://trac.sagemath.org/sage_trac/ticket/258\n\nOne issue I see is that you can load modules in GP but not unload them.\n\nI do not think it is necessary to merge pari and gp2c. If you install\nPARI properly (with make install), you get all the files needed for\ncompiling GP2C:\n$prefix/lib/pari/pari.cfg\n$prefix/share/pari/pari.desc\nThere is no need to change PARI itself, you just need to add a\ndependency to GP2C.\nSince PARI and GP2C have very different release schedule, merging\nthem will cause you unnecessary trouble.\n\nCheers,\nBill.\n\n```\n",
+    "body": "This is a comment *on this ticket* from Bill Allombert, who is the author of gp2c:\n\n```\nOn Tue, Jan 15, 2008 at 08:34:43AM -0800, William Stein wrote:\n> You might have comments about this:\n>\n> http://trac.sagemath.org/sage_trac/ticket/258\n\nOne issue I see is that you can load modules in GP but not unload them.\n\nI do not think it is necessary to merge pari and gp2c. If you install\nPARI properly (with make install), you get all the files needed for\ncompiling GP2C:\n$prefix/lib/pari/pari.cfg\n$prefix/share/pari/pari.desc\nThere is no need to change PARI itself, you just need to add a\ndependency to GP2C.\nSince PARI and GP2C have very different release schedule, merging\nthem will cause you unnecessary trouble.\n\nCheers,\nBill.\n\n```",
     "created_at": "2008-01-15T21:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -363,7 +361,6 @@ Cheers,
 Bill.
 
 ```
-
 
 
 
@@ -549,7 +546,7 @@ I think this is more or less wontfix at this point.
 archive/issue_comments_001170.json:
 ```json
 {
-    "body": "> I think this is more or less wontfix at this point. \n\nThe consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no \"maintenance load\" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.\n\nIt seems that the best thing to do would be to close this ticket as \"wontfix\" now, but if some users clamor for gp2c functionality, we reopen it and make it an optional spkg.",
+    "body": "> I think this is more or less wontfix at this point. \n\n\nThe consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no \"maintenance load\" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.\n\nIt seems that the best thing to do would be to close this ticket as \"wontfix\" now, but if some users clamor for gp2c functionality, we reopen it and make it an optional spkg.",
     "created_at": "2009-06-14T07:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -559,6 +556,7 @@ archive/issue_comments_001170.json:
 ```
 
 > I think this is more or less wontfix at this point. 
+
 
 The consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no "maintenance load" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.
 
@@ -605,7 +603,7 @@ archive/issue_events_000546.json:
 archive/issue_comments_001172.json:
 ```json
 {
-    "body": "Replying to [comment:15 was]:\n> > I think this is more or less wontfix at this point. \n> \n> The consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no \"maintenance load\" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.\n> \n> It seems that the best thing to do would be to close this ticket as \"wontfix\" now, but if some users clamor for gp2c functionality, we reopen it and make it an optional spkg.  \n\nAs someone who originally voted for this, let me say that I am happy not to proceed with it.  There are very few gp scripts Sage uses now anyway.  The point about gp2c is that with it you can convert gp functions into pari library functions.  But the best way to do that anyway would be for the gp script's author to do it outside of Sage, as the result is a C program which can be compiled and linked with the pari library and then used in Sage.  There's no need for Sage itself to have gp2c.",
+    "body": "Replying to [comment:15 was]:\n> > I think this is more or less wontfix at this point. \n\n> \n> The consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no \"maintenance load\" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.\n> \n> It seems that the best thing to do would be to close this ticket as \"wontfix\" now, but if some users clamor for gp2c functionality, we reopen it and make it an optional spkg.  \n\n\nAs someone who originally voted for this, let me say that I am happy not to proceed with it.  There are very few gp scripts Sage uses now anyway.  The point about gp2c is that with it you can convert gp functions into pari library functions.  But the best way to do that anyway would be for the gp script's author to do it outside of Sage, as the result is a C program which can be compiled and linked with the pari library and then used in Sage.  There's no need for Sage itself to have gp2c.",
     "created_at": "2009-06-14T09:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -616,10 +614,12 @@ archive/issue_comments_001172.json:
 
 Replying to [comment:15 was]:
 > > I think this is more or less wontfix at this point. 
+
 > 
 > The consensus on the mailing list from both very short votes was that gp2c should be an optional spkg.  However, given that nobody but the author of the patch has every requested gp2c functionality for Sage, even once, as far as I know, I don't think there is sufficient demand to justify the maintenance load.  Note that currently there is really no "maintenance load" for optional spkg's, but this *will* change, since I wrote a system for doctesting individual optional spkg's, and I *will* be doctesting sage + official optional spkg's regularly in the near future.  And then every optional spkg will increase the work to do this.
 > 
 > It seems that the best thing to do would be to close this ticket as "wontfix" now, but if some users clamor for gp2c functionality, we reopen it and make it an optional spkg.  
+
 
 As someone who originally voted for this, let me say that I am happy not to proceed with it.  There are very few gp scripts Sage uses now anyway.  The point about gp2c is that with it you can convert gp functions into pari library functions.  But the best way to do that anyway would be for the gp script's author to do it outside of Sage, as the result is a C program which can be compiled and linked with the pari library and then used in Sage.  There's no need for Sage itself to have gp2c.
 
@@ -630,7 +630,7 @@ As someone who originally voted for this, let me say that I am happy not to proc
 archive/issue_comments_001173.json:
 ```json
 {
-    "body": "Replying to [comment:17 cremona]:\n> There's no need for Sage itself to have gp2c.\nDo you still stand by that opinion?\n\nOne advantage would be calling GP scripts using the PARI library interface instead of GP.\n\nSee also #15809.",
+    "body": "Replying to [comment:17 cremona]:\n> There's no need for Sage itself to have gp2c.\n\nDo you still stand by that opinion?\n\nOne advantage would be calling GP scripts using the PARI library interface instead of GP.\n\nSee also #15809.",
     "created_at": "2015-07-09T09:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -641,6 +641,7 @@ archive/issue_comments_001173.json:
 
 Replying to [comment:17 cremona]:
 > There's no need for Sage itself to have gp2c.
+
 Do you still stand by that opinion?
 
 One advantage would be calling GP scripts using the PARI library interface instead of GP.
@@ -794,7 +795,7 @@ archive/issue_events_000549.json:
 archive/issue_comments_001179.json:
 ```json
 {
-    "body": "There is one testsuite failure, I asked upstream PARI about it. But other than that, the package seems to work fine.\n----\nNew commits:",
+    "body": "There is one testsuite failure, I asked upstream PARI about it. But other than that, the package seems to work fine.\n\n---\nNew commits:",
     "created_at": "2015-07-09T12:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -804,7 +805,8 @@ archive/issue_comments_001179.json:
 ```
 
 There is one testsuite failure, I asked upstream PARI about it. But other than that, the package seems to work fine.
-----
+
+---
 New commits:
 
 
@@ -1064,7 +1066,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_001192.json:
 ```json
 {
-    "body": "Replying to [comment:32 chapoton]:\n> Because there is an obsolete patchbot loop-testing this ticket\nWhy is that a problem?\n\nThis ticket still needs review, despite what the patchbots think about it.",
+    "body": "Replying to [comment:32 chapoton]:\n> Because there is an obsolete patchbot loop-testing this ticket\n\nWhy is that a problem?\n\nThis ticket still needs review, despite what the patchbots think about it.",
     "created_at": "2015-08-23T20:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/258",
     "type": "issue_comment",
@@ -1075,6 +1077,7 @@ archive/issue_comments_001192.json:
 
 Replying to [comment:32 chapoton]:
 > Because there is an obsolete patchbot loop-testing this ticket
+
 Why is that a problem?
 
 This ticket still needs review, despite what the patchbots think about it.

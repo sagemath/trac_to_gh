@@ -3,7 +3,7 @@
 archive/issues_000280.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: extension base field polynomial\n\nClearly ZZ['x'] coerces into K['x'], so this should not be an error.\n\n\n```\nsage:K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n...\n    821         if polynomial.parent().base_ring() != base:\n--> 822             raise ValueError, \"The polynomial must be defined over the base field\"\n    823 \n    824         # Generate the nf and bnf corresponding to the base field\n\n<type 'exceptions.ValueError'>: The polynomial must be defined over the base field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/280\n\n",
+    "body": "Assignee: somebody\n\nKeywords: extension base field polynomial\n\nClearly ZZ['x'] coerces into K['x'], so this should not be an error.\n\n```\nsage:K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n...\n    821         if polynomial.parent().base_ring() != base:\n--> 822             raise ValueError, \"The polynomial must be defined over the base field\"\n    823 \n    824         # Generate the nf and bnf corresponding to the base field\n\n<type 'exceptions.ValueError'>: The polynomial must be defined over the base field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/280\n\n",
     "created_at": "2007-02-23T19:56:45Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ Keywords: extension base field polynomial
 
 Clearly ZZ['x'] coerces into K['x'], so this should not be an error.
 
-
 ```
 sage:K.<a> = NumberField(ZZ['x'].0^3 - 5)
 
@@ -38,7 +37,6 @@ sage: L.<b> = K.extension(ZZ['x'].0^2 - 3)
 
 <type 'exceptions.ValueError'>: The polynomial must be defined over the base field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/280
 
@@ -103,7 +101,7 @@ archive/issue_events_000628.json:
 archive/issue_comments_001329.json:
 ```json
 {
-    "body": "This seems to work now:\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\nsage: L\nNumber Field in b with defining polynomial x^2 - 3 over its base field\nsage: L.polynomial()\nx^2 - 3\nsage: L.polynomial().parent()\nUnivariate Polynomial Ring in x over Number Field in a with defining polynomial x^3 - 5\n```\n",
+    "body": "This seems to work now:\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: L.<b> = K.extension(ZZ['x'].0^2 - 3)\nsage: L\nNumber Field in b with defining polynomial x^2 - 3 over its base field\nsage: L.polynomial()\nx^2 - 3\nsage: L.polynomial().parent()\nUnivariate Polynomial Ring in x over Number Field in a with defining polynomial x^3 - 5\n```",
     "created_at": "2007-12-01T14:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/280",
     "type": "issue_comment",
@@ -113,7 +111,6 @@ archive/issue_comments_001329.json:
 ```
 
 This seems to work now:
-
 
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^3 - 5)
@@ -125,7 +122,6 @@ x^2 - 3
 sage: L.polynomial().parent()
 Univariate Polynomial Ring in x over Number Field in a with defining polynomial x^3 - 5
 ```
-
 
 
 

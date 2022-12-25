@@ -211,7 +211,7 @@ Resolution changed from invalid to
 archive/issue_comments_010192.json:
 ```json
 {
-    "body": "> Image fonts are already included in sagenb. Please close this. \n\nYou totally misunderstood the point of this ticket.",
+    "body": "> Image fonts are already included in sagenb. Please close this. \n\n\nYou totally misunderstood the point of this ticket.",
     "created_at": "2009-11-16T19:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
@@ -221,6 +221,7 @@ archive/issue_comments_010192.json:
 ```
 
 > Image fonts are already included in sagenb. Please close this. 
+
 
 You totally misunderstood the point of this ticket.
 
@@ -265,7 +266,7 @@ archive/issue_events_003998.json:
 archive/issue_comments_010194.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> > Image fonts are already included in sagenb. Please close this. \n> \n> You totally misunderstood the point of this ticket. \n\nYes, now I get it. Sorry for that.",
+    "body": "Replying to [comment:8 was]:\n> > Image fonts are already included in sagenb. Please close this. \n\n> \n> You totally misunderstood the point of this ticket. \n\n\nYes, now I get it. Sorry for that.",
     "created_at": "2009-11-16T21:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
@@ -276,8 +277,10 @@ archive/issue_comments_010194.json:
 
 Replying to [comment:8 was]:
 > > Image fonts are already included in sagenb. Please close this. 
+
 > 
 > You totally misunderstood the point of this ticket. 
+
 
 Yes, now I get it. Sorry for that.
 
@@ -288,7 +291,7 @@ Yes, now I get it. Sorry for that.
 archive/issue_comments_010195.json:
 ```json
 {
-    "body": "> Yes, now I get it. Sorry for that. \n\nNo problem.   I should actually write code for this though :-)",
+    "body": "> Yes, now I get it. Sorry for that. \n\n\nNo problem.   I should actually write code for this though :-)",
     "created_at": "2009-11-17T07:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
@@ -298,6 +301,7 @@ archive/issue_comments_010195.json:
 ```
 
 > Yes, now I get it. Sorry for that. 
+
 
 No problem.   I should actually write code for this though :-)
 

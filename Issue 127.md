@@ -3,7 +3,7 @@
 archive/issues_000127.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nFirefox is by far the best support browser for SAGE.\nI personally use opera a *lot* though; in fact, I'm writing\nthis email in opera.   I think there is some weird mangling\nof percents by opera that is causing trouble.  We'll add\nthis bug to the bug tracker, so it'll be a high priority to fix.\n\n\nOn 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:\n> On Friday 13 October 2006 12:29, William Stein wrote:\n> > On Fri, 13 Oct 2006 07:08:26 -0700, Tang Hai Tuan Minh\n> >\n> > <phohongtuyet@gmail.com> wrote:\n> > > Hi,\n> > >\n> > > It seems like all the commands that started with the % escape character\n> > > are not working properly for Opera 9.02/Linux. I tried out the examples in\n> > > the Sage Reference Manual regarding the Notebook Interface on Epiphany and\n> > > they work fine. I believe it must be because of the way Opera handles\n> > > the % character, however, I have no idea how to get around that.\n> >\n> > What install of SAGE are you using and where?\n> >\n> > Don't use opera by the way, as  a temporary fix.\n> >\n> > I think your problem might be known, unfortunately.\n> >\n> > William\n> \n> The current version of sage I am using is 1.4 on Fedora Core 5. I am not\n> really keen on using Opera but since Konqueror is not completely\n> supported :-), it doesn't really matter which browser I am using anyway.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/127\n\n",
+    "body": "Assignee: @williamstein\n\n```\nFirefox is by far the best support browser for SAGE.\nI personally use opera a *lot* though; in fact, I'm writing\nthis email in opera.   I think there is some weird mangling\nof percents by opera that is causing trouble.  We'll add\nthis bug to the bug tracker, so it'll be a high priority to fix.\n\n\nOn 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:\n> On Friday 13 October 2006 12:29, William Stein wrote:\n> > On Fri, 13 Oct 2006 07:08:26 -0700, Tang Hai Tuan Minh\n> >\n> > <phohongtuyet@gmail.com> wrote:\n> > > Hi,\n> > >\n> > > It seems like all the commands that started with the % escape character\n> > > are not working properly for Opera 9.02/Linux. I tried out the examples in\n> > > the Sage Reference Manual regarding the Notebook Interface on Epiphany and\n> > > they work fine. I believe it must be because of the way Opera handles\n> > > the % character, however, I have no idea how to get around that.\n> >\n> > What install of SAGE are you using and where?\n> >\n> > Don't use opera by the way, as  a temporary fix.\n> >\n> > I think your problem might be known, unfortunately.\n> >\n> > William\n> \n> The current version of sage I am using is 1.4 on Fedora Core 5. I am not\n> really keen on using Opera but since Konqueror is not completely\n> supported :-), it doesn't really matter which browser I am using anyway.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/127\n\n",
     "created_at": "2006-10-14T04:52:01Z",
     "labels": [
         "component: user interface",
@@ -18,7 +18,6 @@ archive/issues_000127.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Firefox is by far the best support browser for SAGE.
@@ -53,7 +52,6 @@ On 10/13/06, Tang Hai Tuan Minh <phohongtuyet@gmail.com> wrote:
 > really keen on using Opera but since Konqueror is not completely
 > supported :-), it doesn't really matter which browser I am using anyway.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/127
 

@@ -3,7 +3,7 @@
 archive/issues_004302.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb @zimmermann6 @malb\n\nHere is a toy implementation of polynomial modular composition over GF(2). It implements\nBrent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).\n\n```\n# compute f(g) mod h\ndef ModularComposition(f,g,h,k=None):\n    print \"enter ModularComposition\", f.degree(), g.degree(), h.degree()\n    t = cputime()\n    R = h.parent()\n    n = h.degree()\n    if k is None:\n        k = ceil(Integer(n+1).sqrt_approx())\n    l = ceil((f.degree() + 1) / k)\n    # first compute g^j mod h, 2 <= j < k\n    G = Matrix(GF(2),n,k)\n    gpow = R(1)\n    for j in range(0, k):\n        # gpow = g^j mod h\n        row = gpow.coeffs()\n        if len(row)<n:\n            row.extend([R(0) for _ in range(n - len(row))])\n        G.set_column(j, row)\n        gpow = (gpow * g) % h # we'll need g^k below\n    print \"Creating G took\", cputime(t)\n    t = cputime()\n    # split f in chunks of degree < k\n    F = Matrix(GF(2),k,l)\n    row = f.coeffs()\n    if len(row)<k*l:\n            row.extend([R(0) for _ in range(k*l - len(row))])\n    for j in range(0, l):\n        F.set_column(j, row[j*k:j*k+k])\n    print \"Creating F took\", cputime(t)\n    t = cputime()\n    H = G * F # this is the most time-computing step, but M4RI is fast!\n    print \"Computing H took\", cputime(t)\n    t = cputime()\n    # H is a n x l matrix\n    # now H[i,j] = sum(G[i,m]*F[m,j], m=0..k-1)\n    #            = sum(g^m[i] * f[j*k+m], m=0..k-1)\n    # where g^m[i] is the coefficient of degree i in g^m\n    # and f[j*k+m] is the coefficient of degree j*k+m in f\n    # thus f[j*k+m]*g^m[i] should be multiplied by g^(j*k)\n    # gpow = (g^k) % h\n    x = h.variables()[0]\n    res = R(0)\n    j = l - 1\n    H = H.transpose()\n    while j >= 0:\n        res = (res * gpow) % h\n        # res = res + R([H[j,i] for i in range(0,n)])\n        res = res + R(H.submatrix(j,0,1,n).list())\n        j = j - 1\n    print \"Forming result took\", cputime(t)\n    sys.stdout.flush()\n    return res\n\n# computes x^(2^r) mod f\ndef ModCompPower (f, r):\n    l = r.digits()\n    l.reverse()\n    n = len(l)\n    g = f.variables()[0]\n    for i in range(n):\n        g = ModularComposition(g,g,f)\n        if l[i] == 1:\n           g = (g * g) % f\n    return g\n```\n\nThe following benchmark gives on a 2.4Ghz Core 2:\n\n```\nsage: r=1279\nsage: time a = ModCompPower(R(x^r+x+1), r)\nenter ModularComposition 1 1 1279\n   Creating G took 3.948399\n   Creating F took 0.00299900000005\n   Computing H took 0.000999999999976\n   Forming result took 0.0169980000001\nenter ModularComposition 2 2 1279\n   Creating G took 3.896408\n   Creating F took 0.004999\n   Computing H took 0.0\n   Forming result took 0.018997\nenter ModularComposition 4 4 1279\n   Creating G took 3.802422\n   Creating F took 0.00300000000004\n   Computing H took 0.000999999999976\n   Forming result took 0.018997\nenter ModularComposition 16 16 1279\n   Creating G took 3.208512\n   Creating F took 0.00299900000005\n   Computing H took 0.0\n   Forming result took 0.0169979999999\nenter ModularComposition 512 512 1279\n   Creating G took 2.413633\n   Creating F took 0.004999\n   Computing H took 0.00100000000009\n   Forming result took 0.307953\nenter ModularComposition 1202 1202 1279\n   Creating G took 0.895864\n   Creating F took 0.00999899999999\n   Computing H took 0.0\n   Forming result took 0.787879\nenter ModularComposition 1272 1272 1279\n   Creating G took 0.528921\n   Creating F took 0.009997\n   Computing H took 0.000999999999976\n   Forming result took 0.633905\nenter ModularComposition 1275 1275 1279\n   Creating G took 0.474927\n   Creating F took 0.00899800000002\n   Computing H took 0.000999999999976\n   Forming result took 0.630905\nenter ModularComposition 1278 1278 1279\n   Creating G took 0.533918\n   Creating F took 0.00799899999993\n   Computing H took 0.0\n   Forming result took 0.631904\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.482927\n   Creating F took 0.00599899999997\n   Computing H took 0.000999999999976\n   Forming result took 0.609907\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.563913\n   Creating F took 0.00899900000002\n   Computing H took 0.0\n   Forming result took 0.602908\nCPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s\nWall time: 27.67 s\n```\n\nSeveral remarks: (a) the time spent in M4RI (Computing H) is negligible;\n                 (b) the time spent in \"Creating G\" and \"Forming result\" is large,\n                     and is even larger when the inputs have small degree!\n                     Something strange happens here.\n\nAs a comparison, on the same machine, Magma V2.14-8 takes only 0.02s with the following code:\n\n```\nR<x> := PolynomialRing(GF(2));\n\n/* computes x^(2^r) mod f */\nModCompPower := function(f, r)\n   l := [];\n   t := r;\n   while t ne 0 do\n      l := Append(l, t mod 2);\n      t := t div 2;\n   end while;\n   g := x;\n   for i := #l to 1 by -1 do\n      g := ModularComposition(g,g,f);\n      if l[i] eq 1 then\n         g := Modexp(g,2,f);\n      end if;\n   end for;\n   return g;\nend function;\n\n> r:=1279; time a:=ModCompPower(x^r+x+1, r);\nTime: 0.020\n```\n\nThe challenge is to do better than Magma within Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4302\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @zimmermann6 @malb\n\nHere is a toy implementation of polynomial modular composition over GF(2). It implements\nBrent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).\n\n```\n# compute f(g) mod h\ndef ModularComposition(f,g,h,k=None):\n    print \"enter ModularComposition\", f.degree(), g.degree(), h.degree()\n    t = cputime()\n    R = h.parent()\n    n = h.degree()\n    if k is None:\n        k = ceil(Integer(n+1).sqrt_approx())\n    l = ceil((f.degree() + 1) / k)\n    # first compute g^j mod h, 2 <= j < k\n    G = Matrix(GF(2),n,k)\n    gpow = R(1)\n    for j in range(0, k):\n        # gpow = g^j mod h\n        row = gpow.coeffs()\n        if len(row)<n:\n            row.extend([R(0) for _ in range(n - len(row))])\n        G.set_column(j, row)\n        gpow = (gpow * g) % h # we'll need g^k below\n    print \"Creating G took\", cputime(t)\n    t = cputime()\n    # split f in chunks of degree < k\n    F = Matrix(GF(2),k,l)\n    row = f.coeffs()\n    if len(row)<k*l:\n            row.extend([R(0) for _ in range(k*l - len(row))])\n    for j in range(0, l):\n        F.set_column(j, row[j*k:j*k+k])\n    print \"Creating F took\", cputime(t)\n    t = cputime()\n    H = G * F # this is the most time-computing step, but M4RI is fast!\n    print \"Computing H took\", cputime(t)\n    t = cputime()\n    # H is a n x l matrix\n    # now H[i,j] = sum(G[i,m]*F[m,j], m=0..k-1)\n    #            = sum(g^m[i] * f[j*k+m], m=0..k-1)\n    # where g^m[i] is the coefficient of degree i in g^m\n    # and f[j*k+m] is the coefficient of degree j*k+m in f\n    # thus f[j*k+m]*g^m[i] should be multiplied by g^(j*k)\n    # gpow = (g^k) % h\n    x = h.variables()[0]\n    res = R(0)\n    j = l - 1\n    H = H.transpose()\n    while j >= 0:\n        res = (res * gpow) % h\n        # res = res + R([H[j,i] for i in range(0,n)])\n        res = res + R(H.submatrix(j,0,1,n).list())\n        j = j - 1\n    print \"Forming result took\", cputime(t)\n    sys.stdout.flush()\n    return res\n\n# computes x^(2^r) mod f\ndef ModCompPower (f, r):\n    l = r.digits()\n    l.reverse()\n    n = len(l)\n    g = f.variables()[0]\n    for i in range(n):\n        g = ModularComposition(g,g,f)\n        if l[i] == 1:\n           g = (g * g) % f\n    return g\n```\nThe following benchmark gives on a 2.4Ghz Core 2:\n\n```\nsage: r=1279\nsage: time a = ModCompPower(R(x^r+x+1), r)\nenter ModularComposition 1 1 1279\n   Creating G took 3.948399\n   Creating F took 0.00299900000005\n   Computing H took 0.000999999999976\n   Forming result took 0.0169980000001\nenter ModularComposition 2 2 1279\n   Creating G took 3.896408\n   Creating F took 0.004999\n   Computing H took 0.0\n   Forming result took 0.018997\nenter ModularComposition 4 4 1279\n   Creating G took 3.802422\n   Creating F took 0.00300000000004\n   Computing H took 0.000999999999976\n   Forming result took 0.018997\nenter ModularComposition 16 16 1279\n   Creating G took 3.208512\n   Creating F took 0.00299900000005\n   Computing H took 0.0\n   Forming result took 0.0169979999999\nenter ModularComposition 512 512 1279\n   Creating G took 2.413633\n   Creating F took 0.004999\n   Computing H took 0.00100000000009\n   Forming result took 0.307953\nenter ModularComposition 1202 1202 1279\n   Creating G took 0.895864\n   Creating F took 0.00999899999999\n   Computing H took 0.0\n   Forming result took 0.787879\nenter ModularComposition 1272 1272 1279\n   Creating G took 0.528921\n   Creating F took 0.009997\n   Computing H took 0.000999999999976\n   Forming result took 0.633905\nenter ModularComposition 1275 1275 1279\n   Creating G took 0.474927\n   Creating F took 0.00899800000002\n   Computing H took 0.000999999999976\n   Forming result took 0.630905\nenter ModularComposition 1278 1278 1279\n   Creating G took 0.533918\n   Creating F took 0.00799899999993\n   Computing H took 0.0\n   Forming result took 0.631904\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.482927\n   Creating F took 0.00599899999997\n   Computing H took 0.000999999999976\n   Forming result took 0.609907\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.563913\n   Creating F took 0.00899900000002\n   Computing H took 0.0\n   Forming result took 0.602908\nCPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s\nWall time: 27.67 s\n```\nSeveral remarks: (a) the time spent in M4RI (Computing H) is negligible;\n                 (b) the time spent in \"Creating G\" and \"Forming result\" is large,\n                     and is even larger when the inputs have small degree!\n                     Something strange happens here.\n\nAs a comparison, on the same machine, Magma V2.14-8 takes only 0.02s with the following code:\n\n```\nR<x> := PolynomialRing(GF(2));\n\n/* computes x^(2^r) mod f */\nModCompPower := function(f, r)\n   l := [];\n   t := r;\n   while t ne 0 do\n      l := Append(l, t mod 2);\n      t := t div 2;\n   end while;\n   g := x;\n   for i := #l to 1 by -1 do\n      g := ModularComposition(g,g,f);\n      if l[i] eq 1 then\n         g := Modexp(g,2,f);\n      end if;\n   end for;\n   return g;\nend function;\n\n> r:=1279; time a:=ModCompPower(x^r+x+1, r);\nTime: 0.020\n```\nThe challenge is to do better than Magma within Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4302\n\n",
     "created_at": "2008-10-15T16:36:18Z",
     "labels": [
         "component: basic arithmetic"
@@ -88,7 +88,6 @@ def ModCompPower (f, r):
            g = (g * g) % f
     return g
 ```
-
 The following benchmark gives on a 2.4Ghz Core 2:
 
 ```
@@ -152,7 +151,6 @@ enter ModularComposition 1277 1277 1279
 CPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s
 Wall time: 27.67 s
 ```
-
 Several remarks: (a) the time spent in M4RI (Computing H) is negligible;
                  (b) the time spent in "Creating G" and "Forming result" is large,
                      and is even larger when the inputs have small degree!
@@ -184,7 +182,6 @@ end function;
 > r:=1279; time a:=ModCompPower(x^r+x+1, r);
 Time: 0.020
 ```
-
 The challenge is to do better than Magma within Sage.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4302
@@ -216,7 +213,7 @@ CCing Robert because the patch implements his template idea.
 archive/issue_comments_031395.json:
 ```json
 {
-    "body": "This is what I sent to Paul earlier about the patch\n\n>I've improved said implementation on my train ride after Sage Days. The result \n>is faster than Magma but only competitive with NTL. It seems NTL is already \n>faster than Magma for this problem and that the runtime is dominated by the \n>construction of the matrices (ntl.GF2X arithmetic mainly) and the recovery of \n>the result (ntl.GF2X arithmetic mainly). There is room for improvements \n>w.r.t. the conversion between ntl.GF2X and M4RI but I didn't bother yet \n>because ntl.GF2X arithmetic seems to be the main bottleneck for now. Note \n>that matrix multiplication takes up only a tiny fraction of the overall \n>runtime, it is almost negligible. \n>\n>Maybe, once we switch to the GF2X library things will look different enough to \n>motivate a better tuned conversion routine?\n\n\n```\nf = R.random_element(30000)\ng = R.random_element(30000)\nh = R.random_element(30000*10)\n```\n\n\n\n```\n%time \nset_verbose(1)\n_ = f.modular_composition(g,h)\nverbose 1 (1: , <module>) G 548 x 299999 16.331 s\nverbose 1 (1: , <module>) F 55 x 548 0.000 s\nverbose 1 (1: , <module>) H 55 x 299999 0.230 s\nverbose 1 (1: , <module>) Res 6.359 s\nCPU time: 22.98 s,  Wall time: 23.42 s\n```\n\n\n\n```\n%time _ = f.modular_composition(g,h,'ntl')\nverbose 1 (1: , <module>) NTL 23.998 s\nCPU time: 24.07 s,  Wall time: 24.72 s\n```\n\n\n\n```\nfm = f._magma_()\ngm = g._magma_()\nhm = h._magma_()\nt = magma.cputime()\n_ = fm.ModularComposition(gm,hm)\nmagma.cputime(t)\n83.810000000000002\n```\n",
+    "body": "This is what I sent to Paul earlier about the patch\n\n>I've improved said implementation on my train ride after Sage Days. The result \n>is faster than Magma but only competitive with NTL. It seems NTL is already \n>faster than Magma for this problem and that the runtime is dominated by the \n>construction of the matrices (ntl.GF2X arithmetic mainly) and the recovery of \n>the result (ntl.GF2X arithmetic mainly). There is room for improvements \n>w.r.t. the conversion between ntl.GF2X and M4RI but I didn't bother yet \n>because ntl.GF2X arithmetic seems to be the main bottleneck for now. Note \n>that matrix multiplication takes up only a tiny fraction of the overall \n>runtime, it is almost negligible. \n>\n>Maybe, once we switch to the GF2X library things will look different enough to \n>motivate a better tuned conversion routine?\n\n\n```\nf = R.random_element(30000)\ng = R.random_element(30000)\nh = R.random_element(30000*10)\n```\n\n```\n%time \nset_verbose(1)\n_ = f.modular_composition(g,h)\nverbose 1 (1: , <module>) G 548 x 299999 16.331 s\nverbose 1 (1: , <module>) F 55 x 548 0.000 s\nverbose 1 (1: , <module>) H 55 x 299999 0.230 s\nverbose 1 (1: , <module>) Res 6.359 s\nCPU time: 22.98 s,  Wall time: 23.42 s\n```\n\n```\n%time _ = f.modular_composition(g,h,'ntl')\nverbose 1 (1: , <module>) NTL 23.998 s\nCPU time: 24.07 s,  Wall time: 24.72 s\n```\n\n```\nfm = f._magma_()\ngm = g._magma_()\nhm = h._magma_()\nt = magma.cputime()\n_ = fm.ModularComposition(gm,hm)\nmagma.cputime(t)\n83.810000000000002\n```",
     "created_at": "2008-10-17T01:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -247,8 +244,6 @@ g = R.random_element(30000)
 h = R.random_element(30000*10)
 ```
 
-
-
 ```
 %time 
 set_verbose(1)
@@ -260,15 +255,11 @@ verbose 1 (1: , <module>) Res 6.359 s
 CPU time: 22.98 s,  Wall time: 23.42 s
 ```
 
-
-
 ```
 %time _ = f.modular_composition(g,h,'ntl')
 verbose 1 (1: , <module>) NTL 23.998 s
 CPU time: 24.07 s,  Wall time: 24.72 s
 ```
-
-
 
 ```
 fm = f._magma_()
@@ -282,13 +273,12 @@ magma.cputime(t)
 
 
 
-
 ---
 
 archive/issue_comments_031396.json:
 ```json
 {
-    "body": "Martin, I have problems trying your patch to 3.1.3:\n\n```\nBuilding sage/rings/polynomial/polynomial_gf2x.cpp because it depends on sage/rings/polynomial/polynomial_gf2x.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.1.3/sage/devel/sage-main -o sage/rings/polynomial/polynomial_gf2x.cpp sage/rings/polynomial/polynomial_gf2x.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\nfrom sage.libs.ntl.ntl_GF2_decl cimport GF2_c\nfrom sage.libs.ntl.ntl_ZZ_decl cimport ZZ_c\n^\n------------------------------------------------------------\n```\n\nShould I apply other patches before?",
+    "body": "Martin, I have problems trying your patch to 3.1.3:\n\n```\nBuilding sage/rings/polynomial/polynomial_gf2x.cpp because it depends on sage/rings/polynomial/polynomial_gf2x.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.1.3/sage/devel/sage-main -o sage/rings/polynomial/polynomial_gf2x.cpp sage/rings/polynomial/polynomial_gf2x.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\nfrom sage.libs.ntl.ntl_GF2_decl cimport GF2_c\nfrom sage.libs.ntl.ntl_ZZ_decl cimport ZZ_c\n^\n------------------------------------------------------------\n```\nShould I apply other patches before?",
     "created_at": "2008-10-17T06:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -311,7 +301,6 @@ from sage.libs.ntl.ntl_ZZ_decl cimport ZZ_c
 ^
 ------------------------------------------------------------
 ```
-
 Should I apply other patches before?
 
 
@@ -339,7 +328,7 @@ ooop, I forgot to mention that this patch depends on #4304
 archive/issue_comments_031398.json:
 ```json
 {
-    "body": "I have applied both patches, and done sage -br, but modular_composition is not defined (with sage-3.1.4):\n\n```\nsage: R=PolynomialRing(GF(2),x)\nsage: f=x^2+1\nsage: f.modular_composition\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/7660/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'SymbolicArithmetic' object has no attribute 'modular_composition'\n```\n",
+    "body": "I have applied both patches, and done sage -br, but modular_composition is not defined (with sage-3.1.4):\n\n```\nsage: R=PolynomialRing(GF(2),x)\nsage: f=x^2+1\nsage: f.modular_composition\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/7660/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'SymbolicArithmetic' object has no attribute 'modular_composition'\n```",
     "created_at": "2008-10-17T11:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -369,13 +358,12 @@ AttributeError: 'SymbolicArithmetic' object has no attribute 'modular_compositio
 
 
 
-
 ---
 
 archive/issue_comments_031399.json:
 ```json
 {
-    "body": "Hi, you didn't declare 'x' to be a polynomial over GF(2). Try:\n\n\n```\nsage: P.<x> = PolynomialRing(GF(2))\n```\n",
+    "body": "Hi, you didn't declare 'x' to be a polynomial over GF(2). Try:\n\n```\nsage: P.<x> = PolynomialRing(GF(2))\n```",
     "created_at": "2008-10-17T11:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -386,11 +374,9 @@ archive/issue_comments_031399.json:
 
 Hi, you didn't declare 'x' to be a polynomial over GF(2). Try:
 
-
 ```
 sage: P.<x> = PolynomialRing(GF(2))
 ```
-
 
 
 
@@ -399,7 +385,7 @@ sage: P.<x> = PolynomialRing(GF(2))
 archive/issue_comments_031400.json:
 ```json
 {
-    "body": "Yes I did (but did forget to copy/paste it):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^2+1\nsage: f.modular_composition() \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/8623/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n```\n\nMaybe it is because I applied the current patch before that of #4304. However, I just did \"touch\" on all\nfiles from the current patch, then \"sage -br\" again, and I still get the above.",
+    "body": "Yes I did (but did forget to copy/paste it):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^2+1\nsage: f.modular_composition() \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/8623/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n```\nMaybe it is because I applied the current patch before that of #4304. However, I just did \"touch\" on all\nfiles from the current patch, then \"sage -br\" again, and I still get the above.",
     "created_at": "2008-10-17T12:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -428,7 +414,6 @@ AttributeError                            Traceback (most recent call last)
       4 
       5 
 ```
-
 Maybe it is because I applied the current patch before that of #4304. However, I just did "touch" on all
 files from the current patch, then "sage -br" again, and I still get the above.
 
@@ -457,7 +442,7 @@ Maybe you can start with vanilla 3.1.3 again (rm spkgs/installed/sage-3.1.3.spkg
 archive/issue_comments_031402.json:
 ```json
 {
-    "body": "I did start from vanilla 3.1.3 again, applied the patches in the right order, but still get the\nsame error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2), x)\nsage: f = x^7 + x + 1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/16284/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'modular_composition'\n```\n\nIn particular I don't see a \"modular_composition\" method for polynomial_modn_dense_ntl,\nbut only for Polynomial_GF2X, and polynomial_modn_dense_ntl, does not seem to inherit from\nPolynomial_GF2X:\n\n```\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\n```\n\nHow can I define an object of type Polynomial_GF2X? Can someone reproduce Martin's results?",
+    "body": "I did start from vanilla 3.1.3 again, applied the patches in the right order, but still get the\nsame error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2), x)\nsage: f = x^7 + x + 1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/16284/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'modular_composition'\n```\nIn particular I don't see a \"modular_composition\" method for polynomial_modn_dense_ntl,\nbut only for Polynomial_GF2X, and polynomial_modn_dense_ntl, does not seem to inherit from\nPolynomial_GF2X:\n\n```\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\n```\nHow can I define an object of type Polynomial_GF2X? Can someone reproduce Martin's results?",
     "created_at": "2008-10-17T19:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -489,7 +474,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'modular_composition'
 ```
-
 In particular I don't see a "modular_composition" method for polynomial_modn_dense_ntl,
 but only for Polynomial_GF2X, and polynomial_modn_dense_ntl, does not seem to inherit from
 Polynomial_GF2X:
@@ -498,7 +482,6 @@ Polynomial_GF2X:
 sage: type(f)
 <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>
 ```
-
 How can I define an object of type Polynomial_GF2X? Can someone reproduce Martin's results?
 
 
@@ -508,7 +491,7 @@ How can I define an object of type Polynomial_GF2X? Can someone reproduce Martin
 archive/issue_comments_031403.json:
 ```json
 {
-    "body": "FYI: With this patch and its dependency applied I get the following failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X_linkage.pxi # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X.pyx # 1 doctests failed\n```\n\nI am now testing only #4304 to see if the problem is this or the other patch.\n\nCheers,\n\nMichael",
+    "body": "FYI: With this patch and its dependency applied I get the following failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X_linkage.pxi # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X.pyx # 1 doctests failed\n```\nI am now testing only #4304 to see if the problem is this or the other patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-17T22:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -526,7 +509,6 @@ FYI: With this patch and its dependency applied I get the following failures:
 	sage -t -long devel/sage/sage/libs/ntl/ntl_GF2X_linkage.pxi # 1 doctests failed
 	sage -t -long devel/sage/sage/libs/ntl/ntl_GF2X.pyx # 1 doctests failed
 ```
-
 I am now testing only #4304 to see if the problem is this or the other patch.
 
 Cheers,
@@ -562,7 +544,7 @@ Michael
 archive/issue_comments_031405.json:
 ```json
 {
-    "body": "Hi, I started from a vanilla 3.1.3 as follows\n\n\n```\nmalb@road:~/SAGE/devel/sage$ hg qinit\nmalb@road:~/SAGE/devel/sage$ hg qimport ntl_decl_refactor.patch\nadding ntl_decl_refactor.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nNow at: ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg qimport polynomial_gf2x.patch\nadding polynomial_gf2x.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying polynomial_gf2x.patch\nNow at: polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```\n\n\nafterwars I do have the modular_composition function available. I'll address the doctest failures as soon as possible if noone else beats me to it.",
+    "body": "Hi, I started from a vanilla 3.1.3 as follows\n\n```\nmalb@road:~/SAGE/devel/sage$ hg qinit\nmalb@road:~/SAGE/devel/sage$ hg qimport ntl_decl_refactor.patch\nadding ntl_decl_refactor.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nNow at: ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg qimport polynomial_gf2x.patch\nadding polynomial_gf2x.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying polynomial_gf2x.patch\nNow at: polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```\n\nafterwars I do have the modular_composition function available. I'll address the doctest failures as soon as possible if noone else beats me to it.",
     "created_at": "2008-10-18T01:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -572,7 +554,6 @@ archive/issue_comments_031405.json:
 ```
 
 Hi, I started from a vanilla 3.1.3 as follows
-
 
 ```
 malb@road:~/SAGE/devel/sage$ hg qinit
@@ -591,7 +572,6 @@ Now at: polynomial_gf2x.patch
 malb@road:~/SAGE/devel/sage$ sage -b
 ```
 
-
 afterwars I do have the modular_composition function available. I'll address the doctest failures as soon as possible if noone else beats me to it.
 
 
@@ -601,7 +581,7 @@ afterwars I do have the modular_composition function available. I'll address the
 archive/issue_comments_031406.json:
 ```json
 {
-    "body": "Replying to [comment:15 malb]:\n> Hi, I started from a vanilla 3.1.3 as follows [...]\n\nMartin, starting from 3.1.4 (which should be ok), I cannot reproduce what you did:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg qinit\nhg: unknown command 'qinit'\nMercurial Distributed SCM\n\nbasic commands:\n\n add        add the specified files on the next commit\n annotate   show changeset information per file line\n clone      make a copy of an existing repository\n commit     commit the specified files or all outstanding changes\n diff       diff repository (or selected files)\n export     dump the header and diffs for one or more changesets\n init       create a new repository in the given directory\n log        show revision history of entire repository or files\n merge      merge working directory with another revision\n parents    show the parents of the working dir or revision\n pull       pull changes from the specified source\n push       push changes to the specified destination\n remove     remove the specified files on the next commit\n serve      export the repository via HTTP\n status     show changed files in the working directory\n update     update working directory\n\nuse \"hg help\" for the full list of commands or \"hg -v\" for details\nachille% hg --version\nMercurial Distributed SCM (version 1.0.2)\n\nCopyright (C) 2005-2008 Matt Mackall <mpm@selenic.com> and others\nThis is free software; see the source for copying conditions. There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n",
+    "body": "Replying to [comment:15 malb]:\n> Hi, I started from a vanilla 3.1.3 as follows [...]\n\n\nMartin, starting from 3.1.4 (which should be ok), I cannot reproduce what you did:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg qinit\nhg: unknown command 'qinit'\nMercurial Distributed SCM\n\nbasic commands:\n\n add        add the specified files on the next commit\n annotate   show changeset information per file line\n clone      make a copy of an existing repository\n commit     commit the specified files or all outstanding changes\n diff       diff repository (or selected files)\n export     dump the header and diffs for one or more changesets\n init       create a new repository in the given directory\n log        show revision history of entire repository or files\n merge      merge working directory with another revision\n parents    show the parents of the working dir or revision\n pull       pull changes from the specified source\n push       push changes to the specified destination\n remove     remove the specified files on the next commit\n serve      export the repository via HTTP\n status     show changed files in the working directory\n update     update working directory\n\nuse \"hg help\" for the full list of commands or \"hg -v\" for details\nachille% hg --version\nMercurial Distributed SCM (version 1.0.2)\n\nCopyright (C) 2005-2008 Matt Mackall <mpm@selenic.com> and others\nThis is free software; see the source for copying conditions. There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```",
     "created_at": "2008-10-18T08:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -612,6 +592,7 @@ archive/issue_comments_031406.json:
 
 Replying to [comment:15 malb]:
 > Hi, I started from a vanilla 3.1.3 as follows [...]
+
 
 Martin, starting from 3.1.4 (which should be ok), I cannot reproduce what you did:
 
@@ -652,13 +633,12 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 
-
 ---
 
 archive/issue_comments_031407.json:
 ```json
 {
-    "body": "Hi Paul,\n\nIt seems that Mercurial queues are not enabled on your machine.  Try adding the following lines to the file .hgrc in your home directory:\n\n\n```\n[extensions]\nhgext.mq =\n```\n",
+    "body": "Hi Paul,\n\nIt seems that Mercurial queues are not enabled on your machine.  Try adding the following lines to the file .hgrc in your home directory:\n\n```\n[extensions]\nhgext.mq =\n```",
     "created_at": "2008-10-18T08:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -671,12 +651,10 @@ Hi Paul,
 
 It seems that Mercurial queues are not enabled on your machine.  Try adding the following lines to the file .hgrc in your home directory:
 
-
 ```
 [extensions]
 hgext.mq =
 ```
-
 
 
 
@@ -685,7 +663,7 @@ hgext.mq =
 archive/issue_comments_031408.json:
 ```json
 {
-    "body": "Or, this should be equivalent:\n\n\n```\nmalb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```\n",
+    "body": "Or, this should be equivalent:\n\n```\nmalb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```",
     "created_at": "2008-10-18T08:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -696,7 +674,6 @@ archive/issue_comments_031408.json:
 
 Or, this should be equivalent:
 
-
 ```
 malb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch
 malb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch
@@ -705,13 +682,12 @@ malb@road:~/SAGE/devel/sage$ sage -b
 
 
 
-
 ---
 
 archive/issue_comments_031409.json:
 ```json
 {
-    "body": "Replying to [comment:18 malb]:\n> Or, this should be equivalent:\n> \n> {{{\n> malb`@`road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\n> malb`@`road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\n> malb`@`road:~/SAGE/devel/sage$ sage -b\n> }}}\n\nthis is basically what I had done before (but from within sage, and with sage -b inbetween).\nNevertheless, I did exactly that with 3.1.4:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg import /tmp/ntl_decl_refactor.patch\napplying /tmp/ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nachille% hg import /tmp/polynomial_gf2x.patch\napplying /tmp/polynomial_gf2x.patch\nachille% sage -b\n...\nreal    33m24.231s\nuser    32m25.750s\nsys     0m37.831s\nachille% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^7+x+1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/11076/_users_cacao_zimmerma__\\\nsage_init_sage_0.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has\\\n no attribute 'modular_composition'\n```\n\nIs it possible that the problem happens because I am not in the original build directory,\nbut in the directory where I did \"make install\"? However I have successfully applied several\npatches in this way before.\n\nWhat else can I do to identify the problem on my side?",
+    "body": "Replying to [comment:18 malb]:\n> Or, this should be equivalent:\n> \n> \n> ```\n> malb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\n> malb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\n> malb@road:~/SAGE/devel/sage$ sage -b\n> ```\n\n\nthis is basically what I had done before (but from within sage, and with sage -b inbetween).\nNevertheless, I did exactly that with 3.1.4:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg import /tmp/ntl_decl_refactor.patch\napplying /tmp/ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nachille% hg import /tmp/polynomial_gf2x.patch\napplying /tmp/polynomial_gf2x.patch\nachille% sage -b\n...\nreal    33m24.231s\nuser    32m25.750s\nsys     0m37.831s\nachille% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^7+x+1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/11076/_users_cacao_zimmerma__\\\nsage_init_sage_0.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has\\\n no attribute 'modular_composition'\n```\nIs it possible that the problem happens because I am not in the original build directory,\nbut in the directory where I did \"make install\"? However I have successfully applied several\npatches in this way before.\n\nWhat else can I do to identify the problem on my side?",
     "created_at": "2008-10-18T09:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -723,11 +699,13 @@ archive/issue_comments_031409.json:
 Replying to [comment:18 malb]:
 > Or, this should be equivalent:
 > 
-> {{{
-> malb`@`road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch
-> malb`@`road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch
-> malb`@`road:~/SAGE/devel/sage$ sage -b
-> }}}
+> 
+> ```
+> malb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch
+> malb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch
+> malb@road:~/SAGE/devel/sage$ sage -b
+> ```
+
 
 this is basically what I had done before (but from within sage, and with sage -b inbetween).
 Nevertheless, I did exactly that with 3.1.4:
@@ -768,7 +746,6 @@ sage_init_sage_0.py in <module>()
 AttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has\
  no attribute 'modular_composition'
 ```
-
 Is it possible that the problem happens because I am not in the original build directory,
 but in the directory where I did "make install"? However I have successfully applied several
 patches in this way before.
@@ -821,7 +798,7 @@ Attachment [4302_speedup1.patch](tarball://root/attachments/some-uuid/ticket4302
 archive/issue_comments_031412.json:
 ```json
 {
-    "body": "The attached 4302_speedup1.patch should speed up the computation of the G matrix, however it does speed it down instead (I had previous timings similar to those of Martin above):\n\n```\nsage: R.<x>=GF(2)[]\nsage: f = R.random_element(30000)\nsage: g = R.random_element(30000)\nsage: h = R.random_element(30000*10)\nsage: set_verbose(1)\nsage: time _ = f.modular_composition(g,h)\nverbose 1 (<module>) G 548 x 300000 33.128 s\nverbose 1 (<module>) F 55 x 548 0.001 s\nverbose 1 (<module>) H 55 x 300000 0.265 s\nverbose 1 (<module>) Res 6.406 s\nCPU times: user 39.79 s, sys: 0.07 s, total: 39.86 s\n```\n\nEither GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid. Could somebody look at my patch?",
+    "body": "The attached 4302_speedup1.patch should speed up the computation of the G matrix, however it does speed it down instead (I had previous timings similar to those of Martin above):\n\n```\nsage: R.<x>=GF(2)[]\nsage: f = R.random_element(30000)\nsage: g = R.random_element(30000)\nsage: h = R.random_element(30000*10)\nsage: set_verbose(1)\nsage: time _ = f.modular_composition(g,h)\nverbose 1 (<module>) G 548 x 300000 33.128 s\nverbose 1 (<module>) F 55 x 548 0.001 s\nverbose 1 (<module>) H 55 x 300000 0.265 s\nverbose 1 (<module>) Res 6.406 s\nCPU times: user 39.79 s, sys: 0.07 s, total: 39.86 s\n```\nEither GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid. Could somebody look at my patch?",
     "created_at": "2008-10-18T16:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -845,7 +822,6 @@ verbose 1 (<module>) H 55 x 300000 0.265 s
 verbose 1 (<module>) Res 6.406 s
 CPU times: user 39.79 s, sys: 0.07 s, total: 39.86 s
 ```
-
 Either GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid. Could somebody look at my patch?
 
 
@@ -855,7 +831,7 @@ Either GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid
 archive/issue_comments_031413.json:
 ```json
 {
-    "body": "In fact with the following benchmark 4302_speedup1.patch gives a speedup (ModCompPower is defined\nabove).\n\nWithout 4302_speedup1.patch:\n\n```\nsage: r=132049\nsage: time a=ModCompPower(x^r+x+1, r)\n100.6397\n```\n\nWith 4302_speedup1.patch:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r)\n82.144512\n```\n\nWith NTL:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r, algorithm='ntl')\n86.219893\n```\n",
+    "body": "In fact with the following benchmark 4302_speedup1.patch gives a speedup (ModCompPower is defined\nabove).\n\nWithout 4302_speedup1.patch:\n\n```\nsage: r=132049\nsage: time a=ModCompPower(x^r+x+1, r)\n100.6397\n```\nWith 4302_speedup1.patch:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r)\n82.144512\n```\nWith NTL:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r, algorithm='ntl')\n86.219893\n```",
     "created_at": "2008-10-18T20:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -874,14 +850,12 @@ sage: r=132049
 sage: time a=ModCompPower(x^r+x+1, r)
 100.6397
 ```
-
 With 4302_speedup1.patch:
 
 ```
 sage: time a=ModCompPower(x^r+x+1, r)
 82.144512
 ```
-
 With NTL:
 
 ```
@@ -891,13 +865,12 @@ sage: time a=ModCompPower(x^r+x+1, r, algorithm='ntl')
 
 
 
-
 ---
 
 archive/issue_comments_031414.json:
 ```json
 {
-    "body": "I fixed most doctest failures except one:\n\n\n```\nsage -t  elliptic_curves/ell_generic.py\nFile \"/home/malb/SAGE/tmp/ell_generic.py\", line 2135:\n    sage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\nException raised:\n...\nTypeError: unsupported operand parent(s) for '-': 'Univariate Polynomial Ring in x over Finite Field of size 2' and 'Finite Field of size 2'\n```\n\n\nMy trouble is, that it works from the command line:\n\n\n```\nsage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\n[2, 24, 2, 12, 2, 6, 6, 6]\n```\n\n\nRobert, could that be related to some caching of coercion maps?",
+    "body": "I fixed most doctest failures except one:\n\n```\nsage -t  elliptic_curves/ell_generic.py\nFile \"/home/malb/SAGE/tmp/ell_generic.py\", line 2135:\n    sage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\nException raised:\n...\nTypeError: unsupported operand parent(s) for '-': 'Univariate Polynomial Ring in x over Finite Field of size 2' and 'Finite Field of size 2'\n```\n\nMy trouble is, that it works from the command line:\n\n```\nsage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\n[2, 24, 2, 12, 2, 6, 6, 6]\n```\n\nRobert, could that be related to some caching of coercion maps?",
     "created_at": "2008-10-19T14:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -908,7 +881,6 @@ archive/issue_comments_031414.json:
 
 I fixed most doctest failures except one:
 
-
 ```
 sage -t  elliptic_curves/ell_generic.py
 File "/home/malb/SAGE/tmp/ell_generic.py", line 2135:
@@ -918,15 +890,12 @@ Exception raised:
 TypeError: unsupported operand parent(s) for '-': 'Univariate Polynomial Ring in x over Finite Field of size 2' and 'Finite Field of size 2'
 ```
 
-
 My trouble is, that it works from the command line:
-
 
 ```
 sage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]
 [2, 24, 2, 12, 2, 6, 6, 6]
 ```
-
 
 Robert, could that be related to some caching of coercion maps?
 
@@ -1015,7 +984,7 @@ Michael
 archive/issue_comments_031419.json:
 ```json
 {
-    "body": "Replying to [comment:26 mabshoff]:\n> #4328 seems to be caused by this patch.\n\nI think that was caused by an older version of the patch.",
+    "body": "Replying to [comment:26 mabshoff]:\n> #4328 seems to be caused by this patch.\n\n\nI think that was caused by an older version of the patch.",
     "created_at": "2008-10-20T13:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4302",
     "type": "issue_comment",
@@ -1026,6 +995,7 @@ archive/issue_comments_031419.json:
 
 Replying to [comment:26 mabshoff]:
 > #4328 seems to be caused by this patch.
+
 
 I think that was caused by an older version of the patch.
 

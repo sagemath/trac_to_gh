@@ -57,7 +57,7 @@ archive/issue_events_004983.json:
 archive/issue_comments_013402.json:
 ```json
 {
-    "body": "Amazingly, this is a bug in matplotlib itself!\n\n\n```\ndhcp46-72:~ was$ sage -ipython\nPython 2.5.1 (r251:54863, Feb  2 2008, 18:15:25) \nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.8.1 -- An enhanced Interactive Python.\n?       -> Introduction to IPython's features.\n%magic  -> Information about IPython's 'magic' % functions.\nhelp    -> Python's own help system.\nobject? -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: from matplotlib.backends.backend_agg import FigureCanvasAgg\n\nIn [2]: from pylab import Figure\n\nIn [3]:  f = Figure()\n   ...: \n\nIn [4]: g = f.add_subplot(111)\n\nIn [5]: g.scatter([2.0, 3.0, 0.0], [2.0, 3.0, 0.0], s=300, c=(0.0,0.0,1.0))\nOut[5]: <matplotlib.collections.RegularPolyCollection instance at 0x20f7878>\n\nIn [6]: canvas = FigureCanvasAgg(f)\n\nIn [7]: canvas.print_figure('foo.png')\n\nIn [8]: g.scatter([2.0, 3.0, 0.0, 1.0], [2.0, 3.0, 0.0, 1.0], s=300, c=(0.0,0.0,1.0))\nOut[8]: <matplotlib.collections.RegularPolyCollection instance at 0x20fa8c8>\n\nIn [9]: canvas = FigureCanvasAgg(f)\n\nIn [10]:  canvas.print_figure('foo2.png')\n   ....: \n\nIn [11]: \nDo you really want to exit ([y]/n)? y\ndhcp46-72:~ was$ open foo.png\ndhcp46-72:~ was$ open foo2.png\n```\n\n\nCleaner input in the Sage notebook:\n\n```\nsage: RealNumber = float; Integer=int\nsage: from matplotlib.backends.backend_agg import FigureCanvasAgg\nsage: from pylab import Figure\nsage: f = Figure()\nsage: g = f.add_subplot(111)\nsage: g.scatter([2.0, 3.0, 0.0], [2.0, 3.0, 0.0], s=300, c=(0.0,0.0,1.0))\n<matplotlib.collections.RegularPolyCollection instance at 0x7facfa8>\nsage: canvas = FigureCanvasAgg(f)\nsage: canvas.print_figure('foo.png')\nsage: g.scatter([2.0, 3.0, 0.0, 1.0], [2.0, 3.0, 0.0, 1.0], s=300, c=(0.0,0.0,1.0))\n<matplotlib.collections.RegularPolyCollection instance at 0x7fac328>\nsage: canvas = FigureCanvasAgg(f)\nsage: canvas.print_figure('foo.png')\n```\n",
+    "body": "Amazingly, this is a bug in matplotlib itself!\n\n```\ndhcp46-72:~ was$ sage -ipython\nPython 2.5.1 (r251:54863, Feb  2 2008, 18:15:25) \nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.8.1 -- An enhanced Interactive Python.\n?       -> Introduction to IPython's features.\n%magic  -> Information about IPython's 'magic' % functions.\nhelp    -> Python's own help system.\nobject? -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: from matplotlib.backends.backend_agg import FigureCanvasAgg\n\nIn [2]: from pylab import Figure\n\nIn [3]:  f = Figure()\n   ...: \n\nIn [4]: g = f.add_subplot(111)\n\nIn [5]: g.scatter([2.0, 3.0, 0.0], [2.0, 3.0, 0.0], s=300, c=(0.0,0.0,1.0))\nOut[5]: <matplotlib.collections.RegularPolyCollection instance at 0x20f7878>\n\nIn [6]: canvas = FigureCanvasAgg(f)\n\nIn [7]: canvas.print_figure('foo.png')\n\nIn [8]: g.scatter([2.0, 3.0, 0.0, 1.0], [2.0, 3.0, 0.0, 1.0], s=300, c=(0.0,0.0,1.0))\nOut[8]: <matplotlib.collections.RegularPolyCollection instance at 0x20fa8c8>\n\nIn [9]: canvas = FigureCanvasAgg(f)\n\nIn [10]:  canvas.print_figure('foo2.png')\n   ....: \n\nIn [11]: \nDo you really want to exit ([y]/n)? y\ndhcp46-72:~ was$ open foo.png\ndhcp46-72:~ was$ open foo2.png\n```\n\nCleaner input in the Sage notebook:\n\n```\nsage: RealNumber = float; Integer=int\nsage: from matplotlib.backends.backend_agg import FigureCanvasAgg\nsage: from pylab import Figure\nsage: f = Figure()\nsage: g = f.add_subplot(111)\nsage: g.scatter([2.0, 3.0, 0.0], [2.0, 3.0, 0.0], s=300, c=(0.0,0.0,1.0))\n<matplotlib.collections.RegularPolyCollection instance at 0x7facfa8>\nsage: canvas = FigureCanvasAgg(f)\nsage: canvas.print_figure('foo.png')\nsage: g.scatter([2.0, 3.0, 0.0, 1.0], [2.0, 3.0, 0.0, 1.0], s=300, c=(0.0,0.0,1.0))\n<matplotlib.collections.RegularPolyCollection instance at 0x7fac328>\nsage: canvas = FigureCanvasAgg(f)\nsage: canvas.print_figure('foo.png')\n```",
     "created_at": "2008-02-07T02:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2076",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ archive/issue_comments_013402.json:
 ```
 
 Amazingly, this is a bug in matplotlib itself!
-
 
 ```
 dhcp46-72:~ was$ sage -ipython
@@ -110,7 +109,6 @@ dhcp46-72:~ was$ open foo.png
 dhcp46-72:~ was$ open foo2.png
 ```
 
-
 Cleaner input in the Sage notebook:
 
 ```
@@ -128,7 +126,6 @@ sage: g.scatter([2.0, 3.0, 0.0, 1.0], [2.0, 3.0, 0.0, 1.0], s=300, c=(0.0,0.0,1.
 sage: canvas = FigureCanvasAgg(f)
 sage: canvas.print_figure('foo.png')
 ```
-
 
 
 

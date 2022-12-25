@@ -3,7 +3,7 @@
 archive/issues_004581.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @rlmill sage-combinat\n\nSince PermutationGroupElement accepts Permutations:\n\n```\nsage: PermutationGroupElement(Permutation([2,1,3]))\n(1,2)\n```\n\nit would be good if the other direction worked as well:\n\n```\nsage: g = PermutationGroupElement([2,1,3])\nsage: g\n(1,2)\nsage: Permutation(g)\n...\nValueError: l must be a list\n```\n\nThe following works:\n\n```\nsage: Permutation(g.list())\n[2, 1, 3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4581\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rlmill sage-combinat\n\nSince PermutationGroupElement accepts Permutations:\n\n```\nsage: PermutationGroupElement(Permutation([2,1,3]))\n(1,2)\n```\nit would be good if the other direction worked as well:\n\n```\nsage: g = PermutationGroupElement([2,1,3])\nsage: g\n(1,2)\nsage: Permutation(g)\n...\nValueError: l must be a list\n```\nThe following works:\n\n```\nsage: Permutation(g.list())\n[2, 1, 3]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4581\n\n",
     "created_at": "2008-11-22T01:45:10Z",
     "labels": [
         "component: combinatorics",
@@ -26,7 +26,6 @@ Since PermutationGroupElement accepts Permutations:
 sage: PermutationGroupElement(Permutation([2,1,3]))
 (1,2)
 ```
-
 it would be good if the other direction worked as well:
 
 ```
@@ -37,14 +36,12 @@ sage: Permutation(g)
 ...
 ValueError: l must be a list
 ```
-
 The following works:
 
 ```
 sage: Permutation(g.list())
 [2, 1, 3]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4581
 

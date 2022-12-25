@@ -3,7 +3,7 @@
 archive/issues_009924.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @dimpase edward.scheinerman @jasongrout @kcrisman mvngu @nathanncohen\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1347:\n    sage: cycle.order() % 2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n        cycle.order() % Integer(2) == Integer(0)###line 1347:\n    sage: cycle.order() % 2 == 0\n    AttributeError: 'bool' object has no attribute 'order'\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[10]>\", line 1, in <module>\n        cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))###line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\n    AttributeError: 'bool' object has no attribute 'is_isomorphic'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9925\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dimpase edward.scheinerman @jasongrout @kcrisman mvngu @nathanncohen\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/graphs/graph.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1347:\n    sage: cycle.order() % 2 == 0\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n        cycle.order() % Integer(2) == Integer(0)###line 1347:\n    sage: cycle.order() % 2 == 0\n    AttributeError: 'bool' object has no attribute 'order'\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/graph.py\", line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[10]>\", line 1, in <module>\n        cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))###line 1349:\n    sage: cycle.is_isomorphic(graphs.CycleGraph(cycle.order()))\n    AttributeError: 'bool' object has no attribute 'is_isomorphic'\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9925\n\n",
     "created_at": "2010-09-16T23:56:40Z",
     "labels": [
         "component: doctest coverage",
@@ -57,7 +57,6 @@ Exception raised:
     AttributeError: 'bool' object has no attribute 'is_isomorphic'
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9925
 
@@ -162,7 +161,7 @@ Resolution: worksforme
 archive/issue_comments_098638.json:
 ```json
 {
-    "body": "Hmmm..... If ``cycle`` is a boolean, it means it is equal to True (the method called returns \"True\", or a certificate that it is not true otherwise -- a graph object). I have already seen this method to return wrong answers (and this is fixed in #9420), but the code *IS* deterministic and in this case I do not understand why you would not get an error at the previous docstring :\n\n\n```\n            sage: g.is_even_hole_free()      \n            True\n```\n\n\nwhich uses the same graph. Of course, this doctest is another one of the kind I'm trying to get rid off these days : it theoretically fails with a probability of 1/9999999999999999.... which means that it \"can happen\"... But once again, this would mean an error at the previous docstring too `O_o`\n\nif you are finding yourself on one of the machines on which you have seen it failing, could you give this a try ?\n\n\n```\n    sage: all( isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), \"Graph\") for i in range(10000) )\n```\n\n\nNathann",
+    "body": "Hmmm..... If ``cycle`` is a boolean, it means it is equal to True (the method called returns \"True\", or a certificate that it is not true otherwise -- a graph object). I have already seen this method to return wrong answers (and this is fixed in #9420), but the code *IS* deterministic and in this case I do not understand why you would not get an error at the previous docstring :\n\n```\n            sage: g.is_even_hole_free()      \n            True\n```\n\nwhich uses the same graph. Of course, this doctest is another one of the kind I'm trying to get rid off these days : it theoretically fails with a probability of 1/9999999999999999.... which means that it \"can happen\"... But once again, this would mean an error at the previous docstring too `O_o`\n\nif you are finding yourself on one of the machines on which you have seen it failing, could you give this a try ?\n\n```\n    sage: all( isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), \"Graph\") for i in range(10000) )\n```\n\nNathann",
     "created_at": "2010-09-17T05:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -173,22 +172,18 @@ archive/issue_comments_098638.json:
 
 Hmmm..... If ``cycle`` is a boolean, it means it is equal to True (the method called returns "True", or a certificate that it is not true otherwise -- a graph object). I have already seen this method to return wrong answers (and this is fixed in #9420), but the code *IS* deterministic and in this case I do not understand why you would not get an error at the previous docstring :
 
-
 ```
             sage: g.is_even_hole_free()      
             True
 ```
 
-
 which uses the same graph. Of course, this doctest is another one of the kind I'm trying to get rid off these days : it theoretically fails with a probability of 1/9999999999999999.... which means that it "can happen"... But once again, this would mean an error at the previous docstring too `O_o`
 
 if you are finding yourself on one of the machines on which you have seen it failing, could you give this a try ?
 
-
 ```
     sage: all( isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), "Graph") for i in range(10000) )
 ```
-
 
 Nathann
 
@@ -199,7 +194,7 @@ Nathann
 archive/issue_comments_098639.json:
 ```json
 {
-    "body": "Hmmm.... It looks like it's not --so-- rare O_o\n\n\n```\nsage: sum( not isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), Graph) for i in range(10000) )\n96\n```\n\n\nsomething like 1%...`:-/`\n\nAnd with this :\n\n\n```\nsage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)\nsage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )\n111\n```\n\n\nWhich means it comes from .... the bug in the method subgraph_search, and not from the theoretical probability `:-/`\n\nWith the patch applied :\n\n\n```\nsage: sage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)\nsage: sage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )\n0\n```\n\n\nWhich **relieved** me. I should post a patch to add this is_forest condition anyway. Can I put it on this ticket ?\n\nNathann",
+    "body": "Hmmm.... It looks like it's not --so-- rare O_o\n\n```\nsage: sum( not isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), Graph) for i in range(10000) )\n96\n```\n\nsomething like 1%...`:-/`\n\nAnd with this :\n\n```\nsage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)\nsage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )\n111\n```\n\nWhich means it comes from .... the bug in the method subgraph_search, and not from the theoretical probability `:-/`\n\nWith the patch applied :\n\n```\nsage: sage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)\nsage: sage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )\n0\n```\n\nWhich **relieved** me. I should post a patch to add this is_forest condition anyway. Can I put it on this ticket ?\n\nNathann",
     "created_at": "2010-09-17T06:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -210,17 +205,14 @@ archive/issue_comments_098639.json:
 
 Hmmm.... It looks like it's not --so-- rare O_o
 
-
 ```
 sage: sum( not isinstance(graphs.RandomBipartite(10, 10, .5).is_even_hole_free(certificate = True), Graph) for i in range(10000) )
 96
 ```
 
-
 something like 1%...`:-/`
 
 And with this :
-
 
 ```
 sage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)
@@ -228,18 +220,15 @@ sage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )
 111
 ```
 
-
 Which means it comes from .... the bug in the method subgraph_search, and not from the theoretical probability `:-/`
 
 With the patch applied :
-
 
 ```
 sage: sage: t = lambda x: Graph(x).is_forest() or isinstance(x.is_even_hole_free(certificate = True), Graph)
 sage: sage: sum( not t(graphs.RandomBipartite(10, 10, .5)) for i in range(10000) )
 0
 ```
-
 
 Which **relieved** me. I should post a patch to add this is_forest condition anyway. Can I put it on this ticket ?
 
@@ -386,7 +375,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098646.json:
 ```json
 {
-    "body": "I don't get how these lines in the doctest test anything.\n\n```\n... \n \t1354\t            sage: print \"Everything is Fine !\" \n \t1355\t            Everything is Fine ! \n```\n\nUnless I am mistaken, they only indicate that the coder was in a jolly good mood while writing them :-)",
+    "body": "I don't get how these lines in the doctest test anything.\n\n```\n... \n \t1354\t            sage: print \"Everything is Fine !\" \n \t1355\t            Everything is Fine ! \n```\nUnless I am mistaken, they only indicate that the coder was in a jolly good mood while writing them :-)",
     "created_at": "2010-09-19T08:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -402,7 +391,6 @@ I don't get how these lines in the doctest test anything.
  	1354	            sage: print "Everything is Fine !" 
  	1355	            Everything is Fine ! 
 ```
-
 Unless I am mistaken, they only indicate that the coder was in a jolly good mood while writing them :-)
 
 
@@ -473,7 +461,7 @@ All that print stuff gets lost when running "sage -t", imho...
 archive/issue_comments_098650.json:
 ```json
 {
-    "body": "> Nathan, you do not *return* error, you just *print* \"Error\"!\n> All that print stuff gets lost when running \"sage -t\", imho...\n\nYes, but if the message \"Error\" is printed and the docstring doesn't expect it, an error will reported, won't it ? `O_o`\n\nIn case of failure, this piece of code will print :\n\nError !\nEverything is fine !\n\nWhile the code only expects to find \"Everything is fine !\".\n\nNathann",
+    "body": "> Nathan, you do not *return* error, you just *print* \"Error\"!\n> All that print stuff gets lost when running \"sage -t\", imho...\n\n\nYes, but if the message \"Error\" is printed and the docstring doesn't expect it, an error will reported, won't it ? `O_o`\n\nIn case of failure, this piece of code will print :\n\nError !\nEverything is fine !\n\nWhile the code only expects to find \"Everything is fine !\".\n\nNathann",
     "created_at": "2010-09-19T09:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -484,6 +472,7 @@ archive/issue_comments_098650.json:
 
 > Nathan, you do not *return* error, you just *print* "Error"!
 > All that print stuff gets lost when running "sage -t", imho...
+
 
 Yes, but if the message "Error" is printed and the docstring doesn't expect it, an error will reported, won't it ? `O_o`
 
@@ -591,7 +580,7 @@ archive/issue_events_025027.json:
 archive/issue_comments_098655.json:
 ```json
 {
-    "body": "Karl-Dieter Crisman reported this error on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/6bb037c1f4a1ace9/baa93cd5c1dc489f#baa93cd5c1dc489f):\n\n```python\nOn OS X 10.4 PPC, I get a variant on #10042 (I put this on the ticket)\nand the toric divisor one, and a known Maxima timeout due to tab-\ncompletion.  I also got the following non-repeating failure:\n\nFile \"/Users/student/Desktop/sage-4.6.alpha2/devel/sage/sage/graphs/graph.py\", line 1346:\n    sage: if not g.is_forest():\n         cycle = g.is_even_hole_free(certificate = True)\n         if cycle.order() % Integer(2) == Integer(1):\n             print \"Error !\"\n         if not cycle.is_isomorphic(\n                graphs.CycleGraph(cycle.order())):\n             print \"Error !\"\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[8]>\", line 1, in <module>\n        if not g.is_forest():###line 1346:\n    sage: if not g.is_forest():\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 1823, in is_forest\n        for g in self.connected_components_subgraphs():\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 3136, in connected_components_subgraphs\n        list.append(self.subgraph(c, inplace=False))\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8170, in subgraph\n        edge_property=edge_property)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8279, in _subgraph_by_adding\n        G.add_vertices(vertices)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/bipartite_graph.py\", line 534, in add_vertices\n        raise RuntimeError(\"Partition must be specified (e.g. left=True).\")\n    RuntimeError: Partition must be specified (e.g. left=True).\n```\n\nDima and Nathann, could you look into this?  If it's a new problem, please open a new 4.6 blocker with this in the description.",
+    "body": "Karl-Dieter Crisman reported this error on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/6bb037c1f4a1ace9/baa93cd5c1dc489f#baa93cd5c1dc489f):\n\n```python\nOn OS X 10.4 PPC, I get a variant on #10042 (I put this on the ticket)\nand the toric divisor one, and a known Maxima timeout due to tab-\ncompletion.  I also got the following non-repeating failure:\n\nFile \"/Users/student/Desktop/sage-4.6.alpha2/devel/sage/sage/graphs/graph.py\", line 1346:\n    sage: if not g.is_forest():\n         cycle = g.is_even_hole_free(certificate = True)\n         if cycle.order() % Integer(2) == Integer(1):\n             print \"Error !\"\n         if not cycle.is_isomorphic(\n                graphs.CycleGraph(cycle.order())):\n             print \"Error !\"\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[8]>\", line 1, in <module>\n        if not g.is_forest():###line 1346:\n    sage: if not g.is_forest():\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 1823, in is_forest\n        for g in self.connected_components_subgraphs():\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 3136, in connected_components_subgraphs\n        list.append(self.subgraph(c, inplace=False))\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8170, in subgraph\n        edge_property=edge_property)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 8279, in _subgraph_by_adding\n        G.add_vertices(vertices)\n      File \"/Users/student/Desktop/sage-4.6.alpha2/local/lib/python/site-packages/sage/graphs/bipartite_graph.py\", line 534, in add_vertices\n        raise RuntimeError(\"Partition must be specified (e.g. left=True).\")\n    RuntimeError: Partition must be specified (e.g. left=True).\n```\nDima and Nathann, could you look into this?  If it's a new problem, please open a new 4.6 blocker with this in the description.",
     "created_at": "2010-10-04T21:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -638,7 +627,6 @@ Exception raised:
         raise RuntimeError("Partition must be specified (e.g. left=True).")
     RuntimeError: Partition must be specified (e.g. left=True).
 ```
-
 Dima and Nathann, could you look into this?  If it's a new problem, please open a new 4.6 blocker with this in the description.
 
 
@@ -668,7 +656,7 @@ Nathann
 archive/issue_comments_098657.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Karl-Dieter Crisman reported this error on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/6bb037c1f4a1ace9/baa93cd5c1dc489f#baa93cd5c1dc489f):\n\nI saw the same non-repeating error on Skynet's fulvia (x86_64-SunOS-core2).  The full log is [here](http://build.sagemath.org/sage/builders/fulvia%20full/builds/1/steps/shell_5/logs/stdio).",
+    "body": "Replying to [comment:20 mpatel]:\n> Karl-Dieter Crisman reported this error on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/6bb037c1f4a1ace9/baa93cd5c1dc489f#baa93cd5c1dc489f):\n\n\nI saw the same non-repeating error on Skynet's fulvia (x86_64-SunOS-core2).  The full log is [here](http://build.sagemath.org/sage/builders/fulvia%20full/builds/1/steps/shell_5/logs/stdio).",
     "created_at": "2010-10-05T03:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -679,6 +667,7 @@ archive/issue_comments_098657.json:
 
 Replying to [comment:20 mpatel]:
 > Karl-Dieter Crisman reported this error on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/6bb037c1f4a1ace9/baa93cd5c1dc489f#baa93cd5c1dc489f):
+
 
 I saw the same non-repeating error on Skynet's fulvia (x86_64-SunOS-core2).  The full log is [here](http://build.sagemath.org/sage/builders/fulvia%20full/builds/1/steps/shell_5/logs/stdio).
 
@@ -707,7 +696,7 @@ This is fixed by both #10067 and #9422
 archive/issue_comments_098659.json:
 ```json
 {
-    "body": "Replying to [comment:23 ncohen]:\n> This is fixed by both #10067 and #9422\n\nCould you give before-after example(s) here analogous to those in [comment:6 comment 6], that show statistically, at least, that the new patches fix the problem?  Is it practical to use one of these examples as a long doctest?",
+    "body": "Replying to [comment:23 ncohen]:\n> This is fixed by both #10067 and #9422\n\n\nCould you give before-after example(s) here analogous to those in [comment:6 comment 6], that show statistically, at least, that the new patches fix the problem?  Is it practical to use one of these examples as a long doctest?",
     "created_at": "2010-10-05T08:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -718,6 +707,7 @@ archive/issue_comments_098659.json:
 
 Replying to [comment:23 ncohen]:
 > This is fixed by both #10067 and #9422
+
 
 Could you give before-after example(s) here analogous to those in [comment:6 comment 6], that show statistically, at least, that the new patches fix the problem?  Is it practical to use one of these examples as a long doctest?
 
@@ -750,7 +740,7 @@ Nathann
 archive/issue_comments_098661.json:
 ```json
 {
-    "body": "I don't have time to apply the patches, but without them, the code:\n\n```python\ndef example(verbose=False):\n    try:\n        g = graphs.RandomBipartite(10, 10, .5)\n        g.is_even_hole_free() and not g.is_forest()\n        if not g.is_forest():\n            cycle = g.is_even_hole_free(certificate = True)\n            if cycle.order() % 2 == 1:\n                print \"Error !\"\n            if not cycle.is_isomorphic(graphs.CycleGraph(cycle.order())):\n                print \"Error !\"\n        error = False\n    except RuntimeError as exc:\n        error = True\n        if verbose:\n            print exc\n    return error\n\ndef runner(n=1000):\n    fail = 0\n    for i in xrange(n):\n        fail += example()\n    return fail\n\nrunner()\n```\n\ngives 20 or so failures.  Could you check your patches against this or a similar statistical diagnostic?",
+    "body": "I don't have time to apply the patches, but without them, the code:\n\n```python\ndef example(verbose=False):\n    try:\n        g = graphs.RandomBipartite(10, 10, .5)\n        g.is_even_hole_free() and not g.is_forest()\n        if not g.is_forest():\n            cycle = g.is_even_hole_free(certificate = True)\n            if cycle.order() % 2 == 1:\n                print \"Error !\"\n            if not cycle.is_isomorphic(graphs.CycleGraph(cycle.order())):\n                print \"Error !\"\n        error = False\n    except RuntimeError as exc:\n        error = True\n        if verbose:\n            print exc\n    return error\n\ndef runner(n=1000):\n    fail = 0\n    for i in xrange(n):\n        fail += example()\n    return fail\n\nrunner()\n```\ngives 20 or so failures.  Could you check your patches against this or a similar statistical diagnostic?",
     "created_at": "2010-10-05T21:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -787,7 +777,6 @@ def runner(n=1000):
 
 runner()
 ```
-
 gives 20 or so failures.  Could you check your patches against this or a similar statistical diagnostic?
 
 
@@ -797,7 +786,7 @@ gives 20 or so failures.  Could you check your patches against this or a similar
 archive/issue_comments_098662.json:
 ```json
 {
-    "body": "You could also try, e.g.,\n\n\n```sh\nenv SAGE_TEST_ITER=100 ./sage -tp -long devel/sage/sage/graphs/graph.py \n```\n\non various files.  I believe this will \"break\" on the first failure in a file.  There's also `SAGE_TEST_GLOBAL_ITER`.  For this, I recommend capturing the output in a file and checking later for failures.  Note: `sage -tp` uses these variables, but `sage -t` does not.",
+    "body": "You could also try, e.g.,\n\n```sh\nenv SAGE_TEST_ITER=100 ./sage -tp -long devel/sage/sage/graphs/graph.py \n```\non various files.  I believe this will \"break\" on the first failure in a file.  There's also `SAGE_TEST_GLOBAL_ITER`.  For this, I recommend capturing the output in a file and checking later for failures.  Note: `sage -tp` uses these variables, but `sage -t` does not.",
     "created_at": "2010-10-05T22:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -808,11 +797,9 @@ archive/issue_comments_098662.json:
 
 You could also try, e.g.,
 
-
 ```sh
 env SAGE_TEST_ITER=100 ./sage -tp -long devel/sage/sage/graphs/graph.py 
 ```
-
 on various files.  I believe this will "break" on the first failure in a file.  There's also `SAGE_TEST_GLOBAL_ITER`.  For this, I recommend capturing the output in a file and checking later for failures.  Note: `sage -tp` uses these variables, but `sage -t` does not.
 
 
@@ -840,7 +827,7 @@ I've opened #10081 as a 4.6 blocker for the problem in [comment:20 comment 20].
 archive/issue_comments_098664.json:
 ```json
 {
-    "body": "Well, as you had taken the time to write this testing function, I tested it against the patches (with n = 10 000, as I was working on a sheet of paper at the same time and did not mind forgetting it for several minutes `:-D`) :\n\nWith #9422 applied :\n\n```python\nsage: runner(10000)\n0\n```\n\n\nWith no patch applied, but with \n\n```python\ng = graphs.RandomBipartite(10, 10, .5)\n```\n\nreplaced by \n\n```python\ng = Graph(graphs.RandomBipartite(10, 10, .5))\n```\n\n\nin your code (which is exactly what the docstring in #10067 does) :\n\n\n```python\nsage: runner(10000)\n0\n```\n\n\nBe sure that this is not just a statistical proof : #9422 \"disconnects\" the call to the ``is_subgraph`` command, so there is really no path left leading to this exception from BipartiteGraph !\n\nNathann\n\nP.S. : Thank you for this ``#!python`` trick ! Very nice `;-)`",
+    "body": "Well, as you had taken the time to write this testing function, I tested it against the patches (with n = 10 000, as I was working on a sheet of paper at the same time and did not mind forgetting it for several minutes `:-D`) :\n\nWith #9422 applied :\n\n```python\nsage: runner(10000)\n0\n```\n\nWith no patch applied, but with \n\n```python\ng = graphs.RandomBipartite(10, 10, .5)\n```\nreplaced by \n\n```python\ng = Graph(graphs.RandomBipartite(10, 10, .5))\n```\n\nin your code (which is exactly what the docstring in #10067 does) :\n\n```python\nsage: runner(10000)\n0\n```\n\nBe sure that this is not just a statistical proof : #9422 \"disconnects\" the call to the ``is_subgraph`` command, so there is really no path left leading to this exception from BipartiteGraph !\n\nNathann\n\nP.S. : Thank you for this ``#!python`` trick ! Very nice `;-)`",
     "created_at": "2010-10-06T12:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9924",
     "type": "issue_comment",
@@ -858,28 +845,23 @@ sage: runner(10000)
 0
 ```
 
-
 With no patch applied, but with 
 
 ```python
 g = graphs.RandomBipartite(10, 10, .5)
 ```
-
 replaced by 
 
 ```python
 g = Graph(graphs.RandomBipartite(10, 10, .5))
 ```
 
-
 in your code (which is exactly what the docstring in #10067 does) :
-
 
 ```python
 sage: runner(10000)
 0
 ```
-
 
 Be sure that this is not just a statistical proof : #9422 "disconnects" the call to the ``is_subgraph`` command, so there is really no path left leading to this exception from BipartiteGraph !
 

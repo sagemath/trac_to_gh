@@ -88,7 +88,7 @@ Attachment [trac_9054-part3.patch](tarball://root/attachments/some-uuid/ticket90
 archive/issue_comments_083720.json:
 ```json
 {
-    "body": "There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n\n\n\n```\nsage: K.<t> = FunctionField(QQ); K\nRational function field in t over Rational Field\nsage: R1 = K.base(); R1\nRational function field in t over Rational Field\nsage: R2 = K.base_ring(); R2\nRational function field in t over Rational Field\nsage: R3.<s> = QQ[]; K3 = Frac(R3); K3\nFraction Field of Univariate Polynomial Ring in s over Rational Field\nsage: R3\nUnivariate Polynomial Ring in s over Rational Field\nsage: K3.base() == R3\nTrue\n```\n",
+    "body": "There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n\n\n```\nsage: K.<t> = FunctionField(QQ); K\nRational function field in t over Rational Field\nsage: R1 = K.base(); R1\nRational function field in t over Rational Field\nsage: R2 = K.base_ring(); R2\nRational function field in t over Rational Field\nsage: R3.<s> = QQ[]; K3 = Frac(R3); K3\nFraction Field of Univariate Polynomial Ring in s over Rational Field\nsage: R3\nUnivariate Polynomial Ring in s over Rational Field\nsage: K3.base() == R3\nTrue\n```",
     "created_at": "2010-05-27T05:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ archive/issue_comments_083720.json:
 ```
 
 There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:
-
 
 
 ```
@@ -115,7 +114,6 @@ Univariate Polynomial Ring in s over Rational Field
 sage: K3.base() == R3
 True
 ```
-
 
 
 
@@ -180,7 +178,7 @@ polynomial factorization!
 archive/issue_comments_083724.json:
 ```json
 {
-    "body": "FunctionField constructor clips names\n\n\n```\nsage: F = FunctionField(GF(7), 'bit')\nsage: F.gen()\nb\n```\n",
+    "body": "FunctionField constructor clips names\n\n```\nsage: F = FunctionField(GF(7), 'bit')\nsage: F.gen()\nb\n```",
     "created_at": "2010-05-28T01:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -191,13 +189,11 @@ archive/issue_comments_083724.json:
 
 FunctionField constructor clips names
 
-
 ```
 sage: F = FunctionField(GF(7), 'bit')
 sage: F.gen()
 b
 ```
-
 
 
 
@@ -244,7 +240,7 @@ inverses of fractional ideals
 archive/issue_comments_083727.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by @williamstein created at 2010-05-28 10:54:25\n\nReplying to [comment:2 salmanhb]:\n> There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n> \n> \n> {{{\n> sage: K.<t> = FunctionField(QQ); K\n> Rational function field in t over Rational Field\n> sage: R1 = K.base(); R1\n> Rational function field in t over Rational Field\n> sage: R2 = K.base_ring(); R2\n> Rational function field in t over Rational Field\n> sage: R3.<s> = QQ[]; K3 = Frac(R3); K3\n> Fraction Field of Univariate Polynomial Ring in s over Rational Field\n> sage: R3\n> Univariate Polynomial Ring in s over Rational Field\n> sage: K3.base() == R3\n> True\n> }}}\n\nThe above is correct.  To get what you want, use the constant_field() method. \n\n```\nsage: K.<t> = FunctionField(QQ);\nsage: K.constant_field()\nRational Field\n```\n",
+    "body": "Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by @williamstein created at 2010-05-28 10:54:25\n\nReplying to [comment:2 salmanhb]:\n> There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n> \n> \n> \n> ```\n> sage: K.<t> = FunctionField(QQ); K\n> Rational function field in t over Rational Field\n> sage: R1 = K.base(); R1\n> Rational function field in t over Rational Field\n> sage: R2 = K.base_ring(); R2\n> Rational function field in t over Rational Field\n> sage: R3.<s> = QQ[]; K3 = Frac(R3); K3\n> Fraction Field of Univariate Polynomial Ring in s over Rational Field\n> sage: R3\n> Univariate Polynomial Ring in s over Rational Field\n> sage: K3.base() == R3\n> True\n> ```\n\n\nThe above is correct.  To get what you want, use the constant_field() method. \n\n```\nsage: K.<t> = FunctionField(QQ);\nsage: K.constant_field()\nRational Field\n```",
     "created_at": "2010-05-28T10:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -259,7 +255,8 @@ Replying to [comment:2 salmanhb]:
 > There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:
 > 
 > 
-> {{{
+> 
+> ```
 > sage: K.<t> = FunctionField(QQ); K
 > Rational function field in t over Rational Field
 > sage: R1 = K.base(); R1
@@ -272,7 +269,8 @@ Replying to [comment:2 salmanhb]:
 > Univariate Polynomial Ring in s over Rational Field
 > sage: K3.base() == R3
 > True
-> }}}
+> ```
+
 
 The above is correct.  To get what you want, use the constant_field() method. 
 
@@ -281,7 +279,6 @@ sage: K.<t> = FunctionField(QQ);
 sage: K.constant_field()
 Rational Field
 ```
-
 
 
 
@@ -346,7 +343,7 @@ Various methods needed for #9095 (doctesets depend on #9094)
 archive/issue_comments_083731.json:
 ```json
 {
-    "body": "Should be some automatic way to do the following:\n\n\n```\nK.<T> = FunctionField(GF(17))\nP = T-5\nf = P^5\nR = K._ring\nR(f.element()).valuation(R(p.element()))\n```\n",
+    "body": "Should be some automatic way to do the following:\n\n```\nK.<T> = FunctionField(GF(17))\nP = T-5\nf = P^5\nR = K._ring\nR(f.element()).valuation(R(p.element()))\n```",
     "created_at": "2010-06-04T22:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -357,7 +354,6 @@ archive/issue_comments_083731.json:
 
 Should be some automatic way to do the following:
 
-
 ```
 K.<T> = FunctionField(GF(17))
 P = T-5
@@ -365,7 +361,6 @@ f = P^5
 R = K._ring
 R(f.element()).valuation(R(p.element()))
 ```
-
 
 
 
@@ -394,7 +389,7 @@ flattened patch that incorporates all of patches 1-12 above into a single patch.
 archive/issue_comments_083733.json:
 ```json
 {
-    "body": "Here is a link to the result of doctesting sage-4.4.4 + patches 1-12:\n\n   http://sage.math.washington.edu/home/wstein/patches/9054-part1-12.doctest.txt\n\nThe failed tests:\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/matrix/matrix2.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/plot/matrix_plot.py # 0 doctests failed\n        sage -t  devel/sage-main/sage/modular/abvar/morphism.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/modular/abvar/finite_subgroup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/tests/startup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/categories/function_fields.py # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/function_field/function_field_element.pyx # 14 doctests failed\n```\n",
+    "body": "Here is a link to the result of doctesting sage-4.4.4 + patches 1-12:\n\n   http://sage.math.washington.edu/home/wstein/patches/9054-part1-12.doctest.txt\n\nThe failed tests:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/matrix/matrix2.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/plot/matrix_plot.py # 0 doctests failed\n        sage -t  devel/sage-main/sage/modular/abvar/morphism.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/modular/abvar/finite_subgroup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/tests/startup.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py # 1 doctests failed\n        sage -t  devel/sage-main/sage/categories/function_fields.py # 5 doctests failed\n        sage -t  devel/sage-main/sage/rings/function_field/function_field_element.pyx # 14 doctests failed\n```",
     "created_at": "2010-07-06T09:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -409,7 +404,6 @@ Here is a link to the result of doctesting sage-4.4.4 + patches 1-12:
 
 The failed tests:
 
-
 ```
 The following tests failed:
 
@@ -422,7 +416,6 @@ The following tests failed:
         sage -t  devel/sage-main/sage/categories/function_fields.py # 5 doctests failed
         sage -t  devel/sage-main/sage/rings/function_field/function_field_element.pyx # 14 doctests failed
 ```
-
 
 
 
@@ -487,7 +480,7 @@ Since I'm quite new to developing and using trac and hg etc. I would like to kno
 archive/issue_comments_083737.json:
 ```json
 {
-    "body": "Added an attachment that fixes all but three doctest failures. The remaining failures are:\n\n\n```\n\nsage -t \u00a0\"devel/sage-mderickx/sage/modular/abvar/morphism.py\" # 1 failure\n\nsage -t \u00a0\"devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py\" # 1 failure\n\nsage -t \u00a0\"devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py\" # 1 failure\n\n}}}They are all related since their error messages all end in:`\u00a0\u00a0 \u00a0 \u00a0File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4700, in _echelonized_basis\u00a0\u00a0 \u00a0 \u00a0 \u00a0d = self._denominator(basis)\u00a0\u00a0 \u00a0 \u00a0File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4810, in _denominator\u00a0\u00a0 \u00a0 \u00a0 \u00a0d = d.lcm(x.denominator())\u00a0\u00a0 \u00a0!AttributeError: 'int' object has no attribute 'lcm'`It would be nice if someone who has a better understanding of sage to fix this final bug, since then we would have no doctests failing anymore for this patch.",
+    "body": "Added an attachment that fixes all but three doctest failures. The remaining failures are:\n\n```\n\nsage -t \u00a0\"devel/sage-mderickx/sage/modular/abvar/morphism.py\" # 1 failure\n\nsage -t \u00a0\"devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py\" # 1 failure\n\nsage -t \u00a0\"devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py\" # 1 failure\n\n}}}They are all related since their error messages all end in:`\u00a0\u00a0 \u00a0 \u00a0File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4700, in _echelonized_basis\u00a0\u00a0 \u00a0 \u00a0 \u00a0d = self._denominator(basis)\u00a0\u00a0 \u00a0 \u00a0File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4810, in _denominator\u00a0\u00a0 \u00a0 \u00a0 \u00a0d = d.lcm(x.denominator())\u00a0\u00a0 \u00a0!AttributeError: 'int' object has no attribute 'lcm'`It would be nice if someone who has a better understanding of sage to fix this final bug, since then we would have no doctests failing anymore for this patch.",
     "created_at": "2010-07-17T11:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -497,7 +490,6 @@ archive/issue_comments_083737.json:
 ```
 
 Added an attachment that fixes all but three doctest failures. The remaining failures are:
-
 
 ```
 
@@ -516,7 +508,7 @@ sage -t  "devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py" # 1 f
 archive/issue_comments_083738.json:
 ```json
 {
-    "body": "Oeps, wrong fromatting. Now a bit more readable:\n\n\n```\nsage -t  \"devel/sage-mderickx/sage/modular/abvar/morphism.py\" # 1 failure\n\nsage -t  \"devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py\" # 1 failure\n\nsage -t  \"devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py\" # 1 failure\n\n```\n\n\nThey are all related since their error messages all end in:\n\n```\n\n      File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4700, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4810, in _denominator\n        d = d.lcm(x.denominator())\n    AttributeError: 'int' object has no attribute 'lcm'\n```\n",
+    "body": "Oeps, wrong fromatting. Now a bit more readable:\n\n```\nsage -t  \"devel/sage-mderickx/sage/modular/abvar/morphism.py\" # 1 failure\n\nsage -t  \"devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py\" # 1 failure\n\nsage -t  \"devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py\" # 1 failure\n\n```\n\nThey are all related since their error messages all end in:\n\n```\n\n      File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4700, in _echelonized_basis\n        d = self._denominator(basis)\n      File \"/Applications/sage/local/lib/python/site-packages/sage/modules/free_module.py\", line 4810, in _denominator\n        d = d.lcm(x.denominator())\n    AttributeError: 'int' object has no attribute 'lcm'\n```",
     "created_at": "2010-07-17T11:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -527,7 +519,6 @@ archive/issue_comments_083738.json:
 
 Oeps, wrong fromatting. Now a bit more readable:
 
-
 ```
 sage -t  "devel/sage-mderickx/sage/modular/abvar/morphism.py" # 1 failure
 
@@ -536,7 +527,6 @@ sage -t  "devel/sage-mderickx/sage/modular/abvar/finite_subgroup.py" # 1 failure
 sage -t  "devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py" # 1 failure
 
 ```
-
 
 They are all related since their error messages all end in:
 
@@ -548,7 +538,6 @@ They are all related since their error messages all end in:
         d = d.lcm(x.denominator())
     AttributeError: 'int' object has no attribute 'lcm'
 ```
-
 
 
 
@@ -595,7 +584,7 @@ Aplies to sage 4.4.4 after 1-12 patch and it also needs the #9054 patch trac_909
 archive/issue_comments_083741.json:
 ```json
 {
-    "body": "Replying to [comment:20 mderickx]:\n> Has there been any work on this since sage days > 23? Even if the work is only partially \n> finished it would be good to know to avoid double work.\n\nThere has been no further work.   When I do work further on this, I will post a patch.  I always post patches of everything I do as I go, as soon as I'm done with a session of work.",
+    "body": "Replying to [comment:20 mderickx]:\n> Has there been any work on this since sage days > 23? Even if the work is only partially \n> finished it would be good to know to avoid double work.\n\n\nThere has been no further work.   When I do work further on this, I will post a patch.  I always post patches of everything I do as I go, as soon as I'm done with a session of work.",
     "created_at": "2010-08-25T05:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -607,6 +596,7 @@ archive/issue_comments_083741.json:
 Replying to [comment:20 mderickx]:
 > Has there been any work on this since sage days > 23? Even if the work is only partially 
 > finished it would be good to know to avoid double work.
+
 
 There has been no further work.   When I do work further on this, I will post a patch.  I always post patches of everything I do as I go, as soon as I'm done with a session of work.
 
@@ -832,7 +822,7 @@ Depends on #9094, #11034
 archive/issue_comments_083749.json:
 ```json
 {
-    "body": "The doctests of `function_field.py` contain the following lines:\n\n```\nsage: R.<x> = FunctionField(QQ); S.<y> = R[]\nsage: R2.<t> = FunctionField(QQ); S2.<w> = R2[]\nsage: L2.<w> = R.extension((4*w)^2 - (t+1)^3 - 1)\n```\n\nI think it is confusing that it does not make a difference whether you write R.extension or R2.extension in this example. I'm new to sage so maybe I'm misunderstanding something here.",
+    "body": "The doctests of `function_field.py` contain the following lines:\n\n```\nsage: R.<x> = FunctionField(QQ); S.<y> = R[]\nsage: R2.<t> = FunctionField(QQ); S2.<w> = R2[]\nsage: L2.<w> = R.extension((4*w)^2 - (t+1)^3 - 1)\n```\nI think it is confusing that it does not make a difference whether you write R.extension or R2.extension in this example. I'm new to sage so maybe I'm misunderstanding something here.",
     "created_at": "2011-06-08T19:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -848,7 +838,6 @@ sage: R.<x> = FunctionField(QQ); S.<y> = R[]
 sage: R2.<t> = FunctionField(QQ); S2.<w> = R2[]
 sage: L2.<w> = R.extension((4*w)^2 - (t+1)^3 - 1)
 ```
-
 I think it is confusing that it does not make a difference whether you write R.extension or R2.extension in this example. I'm new to sage so maybe I'm misunderstanding something here.
 
 
@@ -878,7 +867,7 @@ polynomial used for a field extension must be defined over the base field
 archive/issue_comments_083751.json:
 ```json
 {
-    "body": "There are some problems with the zero of a function field:\n\n```\nsage: K.<x> = FunctionField(QQ); R.<y> = K[]; L.<y> = K.extension(y^2+x);\nsage: coerce(L,L.polynomial())==0\nFalse\nsage: y/0\n0\n```\n",
+    "body": "There are some problems with the zero of a function field:\n\n```\nsage: K.<x> = FunctionField(QQ); R.<y> = K[]; L.<y> = K.extension(y^2+x);\nsage: coerce(L,L.polynomial())==0\nFalse\nsage: y/0\n0\n```",
     "created_at": "2011-06-28T17:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -896,7 +885,6 @@ False
 sage: y/0
 0
 ```
-
 
 
 
@@ -923,7 +911,7 @@ fixes the problems regarding zero.
 archive/issue_comments_083753.json:
 ```json
 {
-    "body": "Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by @saraedum created at 2011-07-22 16:26:22\n\nEntering the following at the sage prompt produces a `TypeError: Unable to coerce -u^2 (...) to Rational`.\n\n```\nK.<x> = FunctionField(QQ); R.<y> = K[]\nL.<y> = K.extension(y^2 - x)\nM.<u> = FunctionField(QQ); R.<v> = M[]\nN.<v> = M.extension(v-u^2)\nL.hom([u,v])\n```\n\nThis is due to the fact that `hom()` determines the codomain by looking only at the first element of `[u,v]`.",
+    "body": "Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by @saraedum created at 2011-07-22 16:26:22\n\nEntering the following at the sage prompt produces a `TypeError: Unable to coerce -u^2 (...) to Rational`.\n\n```\nK.<x> = FunctionField(QQ); R.<y> = K[]\nL.<y> = K.extension(y^2 - x)\nM.<u> = FunctionField(QQ); R.<v> = M[]\nN.<v> = M.extension(v-u^2)\nL.hom([u,v])\n```\nThis is due to the fact that `hom()` determines the codomain by looking only at the first element of `[u,v]`.",
     "created_at": "2011-07-22T16:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -943,7 +931,6 @@ M.<u> = FunctionField(QQ); R.<v> = M[]
 N.<v> = M.extension(v-u^2)
 L.hom([u,v])
 ```
-
 This is due to the fact that `hom()` determines the codomain by looking only at the first element of `[u,v]`.
 
 
@@ -1031,7 +1018,7 @@ Minimal support for functions field. Does not include all of the above patches.
 archive/issue_comments_083758.json:
 ```json
 {
-    "body": "I'm now busy with very troughly checking the entire patch wich at least with some changed free module stuff passes all doctests. There will be a big doctest patch comming up which includes tests I've thought up to also test some more none trivial examples.\n\nThere is are at least two big issues which I run in to today. They all occured in the same terminal session.\n\n\n```\nsage: K.<x> = FunctionField(QQ)\nsage: R.<y> = K[]\nsage: L.<w> = K.extension(y^5 - (x^3 + 2*x*y + 1/x));\nsage: w.is_integral()\nFalse\nsage: L.order(w)  #should raise a value error since orders can only be generated by integral elements\nOrder in Function field in w defined by y^5 - 2*x*y + (-x^4 - 1)/x\nsage: L.order(w).gens()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.gens (sage/structure/parent_gens.c:2741)()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.ngens (sage/structure/parent_gens.c:2548)()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.check_old_coerce (sage/structure/parent_gens.c:1228)()\n\nRuntimeError: Order in Function field in w defined by y^5 - 2*x*y + (-x^4 - 1)/x still using old coercion framework\n```\n",
+    "body": "I'm now busy with very troughly checking the entire patch wich at least with some changed free module stuff passes all doctests. There will be a big doctest patch comming up which includes tests I've thought up to also test some more none trivial examples.\n\nThere is are at least two big issues which I run in to today. They all occured in the same terminal session.\n\n```\nsage: K.<x> = FunctionField(QQ)\nsage: R.<y> = K[]\nsage: L.<w> = K.extension(y^5 - (x^3 + 2*x*y + 1/x));\nsage: w.is_integral()\nFalse\nsage: L.order(w)  #should raise a value error since orders can only be generated by integral elements\nOrder in Function field in w defined by y^5 - 2*x*y + (-x^4 - 1)/x\nsage: L.order(w).gens()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.gens (sage/structure/parent_gens.c:2741)()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.ngens (sage/structure/parent_gens.c:2548)()\n\n/Users/maarten/Downloads/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.check_old_coerce (sage/structure/parent_gens.c:1228)()\n\nRuntimeError: Order in Function field in w defined by y^5 - 2*x*y + (-x^4 - 1)/x still using old coercion framework\n```",
     "created_at": "2011-08-26T22:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1043,7 +1030,6 @@ archive/issue_comments_083758.json:
 I'm now busy with very troughly checking the entire patch wich at least with some changed free module stuff passes all doctests. There will be a big doctest patch comming up which includes tests I've thought up to also test some more none trivial examples.
 
 There is are at least two big issues which I run in to today. They all occured in the same terminal session.
-
 
 ```
 sage: K.<x> = FunctionField(QQ)
@@ -1067,7 +1053,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: Order in Function field in w defined by y^5 - 2*x*y + (-x^4 - 1)/x still using old coercion framework
 ```
-
 
 
 
@@ -1174,7 +1159,7 @@ Here are some comments on [attachment:trac_9054-all-parts.patch]:
 archive/issue_comments_083763.json:
 ```json
 {
-    "body": "Replying to [comment:37 SimonKing]:\n> \n>  * I already mentioned, \n\n... namely on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c62fa3dae0a2ca82),\n\n> that `Field.__init__(...)` should be called. It could be that this only works when #9138 is used. Just calling `ParentWithGens.__init__` may be insufficient.",
+    "body": "Replying to [comment:37 SimonKing]:\n> \n> * I already mentioned, \n\n\n... namely on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c62fa3dae0a2ca82),\n\n> that `Field.__init__(...)` should be called. It could be that this only works when #9138 is used. Just calling `ParentWithGens.__init__` may be insufficient.",
     "created_at": "2011-08-28T16:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1185,7 +1170,8 @@ archive/issue_comments_083763.json:
 
 Replying to [comment:37 SimonKing]:
 > 
->  * I already mentioned, 
+> * I already mentioned, 
+
 
 ... namely on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c62fa3dae0a2ca82),
 
@@ -1198,7 +1184,7 @@ Replying to [comment:37 SimonKing]:
 archive/issue_comments_083764.json:
 ```json
 {
-    "body": "Replying to [comment:37 SimonKing]:\n> Here are some comments on [attachment:trac_9054-all-parts.patch]:\n> \n>  * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.\n> \n>  Even worse, your containment test is ultimately based on testing class inheritance (namely in the function `is_FunctionField`). That totally undermines the category framework. It must be possible for an object to be a function field even without inheriting from `sage.rings.function_field.function_field.FunctionField`.\n> \n>  The default implementation of `F in FunctionFields()` relies on the category of F: The containment test returns True if and only if `F.category()` is a sub-category of `FunctionFields()`. That should be much better, from a mathematical point of view, than testing class inheritance!\n> \n\nTechnically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO.   For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.   Fortunately for me I have psage where I can write streamlined code without having to be weighed down, and for generic Sage working well and being extensible is more important, so of course I agree with you in this case.  \n\n>  * You should add a test of the form `TestSuite(F).run()`, where F is a function field. The test suite is formed by some generic tests defined in the category framework and includes many sanity tests (such as pickling for the field and its elements, associativity, commtativity, ...). If you can think of specific tests for function fields, then you should add methods named `_test_...` as parent or element methods of `sage.categories.function_fields.FunctionFields`. Such methods will be automatically called when running `TestSuite(F).run()`.\n> \n>  * You should also add a test of the form `loads(dumps(F)) is F`, in order to test uniqueness of parent structures; if I recall correctly, the test suite from the category would only test `loads(dumps(F))==F`.\n> \n\nThis is also testing that pickling works at all.  This code is used by the pickle jar to create pickles for testing later. \n\n>  * It should not be needed to have a function `is_FunctionField` (that just tests class inheritance) - `F in FunctionFields()` is a better test, IMHO. If you do want to preserve `is_FunctionField` then please do not simply put it in the global name space. At least, it should be deprecated, similar to `is_Ring` being deprecated. There is a function decorator to do so.\n> \n\nis_Ring is only deprecated when used from the top level (i.e., the Sage prompt).   However, there is still a is_Ring function, which can be used in library code, and is not deprecated for this purpose.   And the is_Ring function does test for category stuff. \n\n>  * In the doc test for the `_element_constructor_` method, you explicitly call the method. I think i\nt should better be an indirect test (after all, the documentation is supposed to show how the user is supposed to work with stuff). Hence, not `L._element_constructor_(L.polynomial_ring().gen())` but `L(L.polynomial_ring().gen())   #indirect doctest`.\n> \n\nI disagree.   I view \"#indirect test\" for situations where you can't think of a clean way of directly calling the function.  If there is such a way, use it!  That way, at least you know for sure it is really being tested.  Suggesting to get rid of that makes no sense to me.  What if `L(L.polynomial_ring().gen())` doesn't call `_element_constructor_` at all?   Also, one can also just have two tests -- one that is indirect and one that isn't.\n\n>  * I already mentioned, since `FunctionField` is derived from `sage.rings.ring.Field`, that `Field.__init__(...)` should be called. It could be that this only works when #9138 is used. Just calling `ParentWithGens.__init__` may be insufficient.\n> \n>  * There are several methods, such as polynomial_ring or vector_space, that use a hand-made cache. Please use the `@`cached_method decorator instead! That has several reasons. \n>    1. It is more easy. You don't need to manually update attributes.\n>    2. With #11115, the `@`cached_method decorator is rewritten in Cython and provides a faster cache than anything you could possibly create with Python.\n\n+1.  Note that when the very first version of the function field code was written (by me) `@`cached_method was disturbingly slow.  I really, really appreciate the fast Cython rewrite. \n\n>  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.\n> \n\nNo.  The base field of a function field is a rational function field in 1 variable.  The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  \nIf Simon was confused by this, it should be documented better.   \n\n\n\n>",
+    "body": "Replying to [comment:37 SimonKing]:\n> Here are some comments on [attachment:trac_9054-all-parts.patch]:\n> \n> * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.\n> \n>  Even worse, your containment test is ultimately based on testing class inheritance (namely in the function `is_FunctionField`). That totally undermines the category framework. It must be possible for an object to be a function field even without inheriting from `sage.rings.function_field.function_field.FunctionField`.\n> \n>  The default implementation of `F in FunctionFields()` relies on the category of F: The containment test returns True if and only if `F.category()` is a sub-category of `FunctionFields()`. That should be much better, from a mathematical point of view, than testing class inheritance!\n> \n\n\nTechnically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO.   For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.   Fortunately for me I have psage where I can write streamlined code without having to be weighed down, and for generic Sage working well and being extensible is more important, so of course I agree with you in this case.  \n\n>  * You should add a test of the form `TestSuite(F).run()`, where F is a function field. The test suite is formed by some generic tests defined in the category framework and includes many sanity tests (such as pickling for the field and its elements, associativity, commtativity, ...). If you can think of specific tests for function fields, then you should add methods named `_test_...` as parent or element methods of `sage.categories.function_fields.FunctionFields`. Such methods will be automatically called when running `TestSuite(F).run()`.\n \n> \n>  * You should also add a test of the form `loads(dumps(F)) is F`, in order to test uniqueness of parent structures; if I recall correctly, the test suite from the category would only test `loads(dumps(F))==F`.\n \n> \n\nThis is also testing that pickling works at all.  This code is used by the pickle jar to create pickles for testing later. \n\n>  * It should not be needed to have a function `is_FunctionField` (that just tests class inheritance) - `F in FunctionFields()` is a better test, IMHO. If you do want to preserve `is_FunctionField` then please do not simply put it in the global name space. At least, it should be deprecated, similar to `is_Ring` being deprecated. There is a function decorator to do so.\n \n> \n\nis_Ring is only deprecated when used from the top level (i.e., the Sage prompt).   However, there is still a is_Ring function, which can be used in library code, and is not deprecated for this purpose.   And the is_Ring function does test for category stuff. \n\n>  * In the doc test for the `_element_constructor_` method, you explicitly call the method. I think i\n \nt should better be an indirect test (after all, the documentation is supposed to show how the user is supposed to work with stuff). Hence, not `L._element_constructor_(L.polynomial_ring().gen())` but `L(L.polynomial_ring().gen())   #indirect doctest`.\n> \n\n\nI disagree.   I view \"#indirect test\" for situations where you can't think of a clean way of directly calling the function.  If there is such a way, use it!  That way, at least you know for sure it is really being tested.  Suggesting to get rid of that makes no sense to me.  What if `L(L.polynomial_ring().gen())` doesn't call `_element_constructor_` at all?   Also, one can also just have two tests -- one that is indirect and one that isn't.\n\n>  * I already mentioned, since `FunctionField` is derived from `sage.rings.ring.Field`, that `Field.__init__(...)` should be called. It could be that this only works when #9138 is used. Just calling `ParentWithGens.__init__` may be insufficient.\n \n> \n>  * There are several methods, such as polynomial_ring or vector_space, that use a hand-made cache. Please use the `@`cached_method decorator instead! That has several reasons. \n>    1. It is more easy. You don't need to manually update attributes.\n>    2. With #11115, the `@`cached_method decorator is rewritten in Cython and provides a faster cache than anything you could possibly create with Python.\n\n\n+1.  Note that when the very first version of the function field code was written (by me) `@`cached_method was disturbingly slow.  I really, really appreciate the fast Cython rewrite. \n\n>  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.\n \n> \n\nNo.  The base field of a function field is a rational function field in 1 variable.  The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  \nIf Simon was confused by this, it should be documented better.   \n\n\n\n>",
     "created_at": "2011-08-28T16:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1210,42 +1196,51 @@ archive/issue_comments_083764.json:
 Replying to [comment:37 SimonKing]:
 > Here are some comments on [attachment:trac_9054-all-parts.patch]:
 > 
->  * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.
+> * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.
 > 
 >  Even worse, your containment test is ultimately based on testing class inheritance (namely in the function `is_FunctionField`). That totally undermines the category framework. It must be possible for an object to be a function field even without inheriting from `sage.rings.function_field.function_field.FunctionField`.
 > 
 >  The default implementation of `F in FunctionFields()` relies on the category of F: The containment test returns True if and only if `F.category()` is a sub-category of `FunctionFields()`. That should be much better, from a mathematical point of view, than testing class inheritance!
 > 
 
+
 Technically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO.   For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.   Fortunately for me I have psage where I can write streamlined code without having to be weighed down, and for generic Sage working well and being extensible is more important, so of course I agree with you in this case.  
 
 >  * You should add a test of the form `TestSuite(F).run()`, where F is a function field. The test suite is formed by some generic tests defined in the category framework and includes many sanity tests (such as pickling for the field and its elements, associativity, commtativity, ...). If you can think of specific tests for function fields, then you should add methods named `_test_...` as parent or element methods of `sage.categories.function_fields.FunctionFields`. Such methods will be automatically called when running `TestSuite(F).run()`.
+ 
 > 
 >  * You should also add a test of the form `loads(dumps(F)) is F`, in order to test uniqueness of parent structures; if I recall correctly, the test suite from the category would only test `loads(dumps(F))==F`.
+ 
 > 
 
 This is also testing that pickling works at all.  This code is used by the pickle jar to create pickles for testing later. 
 
 >  * It should not be needed to have a function `is_FunctionField` (that just tests class inheritance) - `F in FunctionFields()` is a better test, IMHO. If you do want to preserve `is_FunctionField` then please do not simply put it in the global name space. At least, it should be deprecated, similar to `is_Ring` being deprecated. There is a function decorator to do so.
+ 
 > 
 
 is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).   However, there is still a is_Ring function, which can be used in library code, and is not deprecated for this purpose.   And the is_Ring function does test for category stuff. 
 
 >  * In the doc test for the `_element_constructor_` method, you explicitly call the method. I think i
+ 
 t should better be an indirect test (after all, the documentation is supposed to show how the user is supposed to work with stuff). Hence, not `L._element_constructor_(L.polynomial_ring().gen())` but `L(L.polynomial_ring().gen())   #indirect doctest`.
 > 
+
 
 I disagree.   I view "#indirect test" for situations where you can't think of a clean way of directly calling the function.  If there is such a way, use it!  That way, at least you know for sure it is really being tested.  Suggesting to get rid of that makes no sense to me.  What if `L(L.polynomial_ring().gen())` doesn't call `_element_constructor_` at all?   Also, one can also just have two tests -- one that is indirect and one that isn't.
 
 >  * I already mentioned, since `FunctionField` is derived from `sage.rings.ring.Field`, that `Field.__init__(...)` should be called. It could be that this only works when #9138 is used. Just calling `ParentWithGens.__init__` may be insufficient.
+ 
 > 
 >  * There are several methods, such as polynomial_ring or vector_space, that use a hand-made cache. Please use the `@`cached_method decorator instead! That has several reasons. 
 >    1. It is more easy. You don't need to manually update attributes.
 >    2. With #11115, the `@`cached_method decorator is rewritten in Cython and provides a faster cache than anything you could possibly create with Python.
 
+
 +1.  Note that when the very first version of the function field code was written (by me) `@`cached_method was disturbingly slow.  I really, really appreciate the fast Cython rewrite. 
 
 >  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.
+ 
 > 
 
 No.  The base field of a function field is a rational function field in 1 variable.  The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  
@@ -1262,7 +1257,7 @@ If Simon was confused by this, it should be documented better.
 archive/issue_comments_083765.json:
 ```json
 {
-    "body": "Replying to [comment:39 was]:\n> Replying to [comment:37 SimonKing]:\n> > Here are some comments on [attachment:trac_9054-all-parts.patch]:\n> > \n> >  * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.\n> ...\n> \n> Technically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO. \n\nA while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.\n\nGenerally, I think it is better to improve the category framework, rather than to work around it.\n\n>  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.\n\nThen why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?\n\n> is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).\n\nYes, this is what I meant. I did not mean \"deprecated\" in the sense of \"will soon be removed\", but in the sense of \"please don't try this at home\".\n\n>  And the is_Ring function does test for category stuff. \n\nActually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.\n \n> >  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.\n> > \n> \n> No.  The base field of a function field is a rational function field in 1 variable. \n\nOuch, so I was mistaken.\n\n> The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  \n> If Simon was confused by this, it should be documented better.   \n\nNot needed. What I stated was based on reading the patch \"diagonally\". I only noticed one of the two base_field methods.",
+    "body": "Replying to [comment:39 was]:\n> Replying to [comment:37 SimonKing]:\n> > Here are some comments on [attachment:trac_9054-all-parts.patch]:\n> > \n> > * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.\n\n> ...\n> \n> Technically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO. \n\n\nA while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.\n\nGenerally, I think it is better to improve the category framework, rather than to work around it.\n\n>  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.\n\n\nThen why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?\n\n> is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).\n\n\nYes, this is what I meant. I did not mean \"deprecated\" in the sense of \"will soon be removed\", but in the sense of \"please don't try this at home\".\n\n>  And the is_Ring function does test for category stuff. \n\n\nActually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.\n \n> >  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.\n \n> > \n> \n> No.  The base field of a function field is a rational function field in 1 variable. \n\n\nOuch, so I was mistaken.\n\n> The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  \n> If Simon was confused by this, it should be documented better.   \n\n\nNot needed. What I stated was based on reading the patch \"diagonally\". I only noticed one of the two base_field methods.",
     "created_at": "2011-08-28T17:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1275,10 +1270,12 @@ Replying to [comment:39 was]:
 > Replying to [comment:37 SimonKing]:
 > > Here are some comments on [attachment:trac_9054-all-parts.patch]:
 > > 
-> >  * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.
+> > * Please remove the `__contains__` method from the category `FunctionFields`. Containment in categories should rely on the default implementation, unless there is a compelling reason to do otherwise.
+
 > ...
 > 
 > Technically this is true.   But this category framework instead of inheritance -- really two very different approaches to design -- leads directly to slow code in some cases in practice, which is *really* annoying, IMHO. 
+
 
 A while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.
 
@@ -1286,25 +1283,31 @@ Generally, I think it is better to improve the category framework, rather than t
 
 >  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.
 
+
 Then why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?
 
 > is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).
+
 
 Yes, this is what I meant. I did not mean "deprecated" in the sense of "will soon be removed", but in the sense of "please don't try this at home".
 
 >  And the is_Ring function does test for category stuff. 
 
+
 Actually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.
  
 > >  * Is there a reason why you have a method `base_field` that simply returns the function field itself? From the behaviour of the  `base_ring` method of polynomial rings, I would rather expect that `FunctionField(QQ,['t']).base_field()` returns the rational field.
+ 
 > > 
 > 
 > No.  The base field of a function field is a rational function field in 1 variable. 
+
 
 Ouch, so I was mistaken.
 
 > The base field of that rational function field is then a field such as QQ.   Most function fields aren't rational, e.g., they are finite extensions K/QQ(t), or even relative extensions L/K.  In the first case, the base field is QQ(t) and in the second it is K.  
 > If Simon was confused by this, it should be documented better.   
+
 
 Not needed. What I stated was based on reading the patch "diagonally". I only noticed one of the two base_field methods.
 
@@ -1315,7 +1318,7 @@ Not needed. What I stated was based on reading the patch "diagonally". I only no
 archive/issue_comments_083766.json:
 ```json
 {
-    "body": "Replying to [comment:40 SimonKing]:\n> A while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.\n> \n\n+1\n\n> Generally, I think it is better to improve the category framework, rather than to work around it.\n> \n> >  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.\n> \n> Then why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?\n\nWhat I did there slows down `is_Ring` testing if the object in question does not derive from Ring. \n\n> > is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).\n> \n> Yes, this is what I meant. I did not mean \"deprecated\" in the sense of \"will soon be removed\", but in the sense of \"please don't try this at home\".\n> \n\nIf you are developing on the Sage library, I think it is OK to use. \n\n> >  And the is_Ring function does test for category stuff. \n> \n> Actually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.\n>  \n\nYes, take a look at the code.  I too was surprised by this!\n\n -- William",
+    "body": "Replying to [comment:40 SimonKing]:\n> A while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.\n> \n\n\n+1\n\n> Generally, I think it is better to improve the category framework, rather than to work around it.\n> \n> >  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.\n\n> \n> Then why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?\n\n\nWhat I did there slows down `is_Ring` testing if the object in question does not derive from Ring. \n\n> > is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).\n\n> \n> Yes, this is what I meant. I did not mean \"deprecated\" in the sense of \"will soon be removed\", but in the sense of \"please don't try this at home\".\n> \n\n\nIf you are developing on the Sage library, I think it is OK to use. \n\n> >  And the is_Ring function does test for category stuff. \n\n> \n> Actually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.\n>  \n\n\nYes, take a look at the code.  I too was surprised by this!\n\n -- William",
     "created_at": "2011-08-28T17:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1328,27 +1331,34 @@ Replying to [comment:40 SimonKing]:
 > A while ago, I had worked on a ticket #10667 about category containment. One purpose was to get a speedup. The trick was (again) to use Cython. For some reason, the work on that ticket has stalled. Perhaps it would be worth while to resume it.
 > 
 
+
 +1
 
 > Generally, I think it is better to improve the category framework, rather than to work around it.
 > 
 > >  For example, see #11657, where one of the root causes of slowness was code in is_Ring that was added to support this category approach, and which slowed everything down.
+
 > 
 > Then why is the existing `is_Ring` not rewritten along the lines of what you do in #11657?
+
 
 What I did there slows down `is_Ring` testing if the object in question does not derive from Ring. 
 
 > > is_Ring is only deprecated when used from the top level (i.e., the Sage prompt).
+
 > 
 > Yes, this is what I meant. I did not mean "deprecated" in the sense of "will soon be removed", but in the sense of "please don't try this at home".
 > 
 
+
 If you are developing on the Sage library, I think it is OK to use. 
 
 > >  And the is_Ring function does test for category stuff. 
+
 > 
 > Actually I have not been aware that category stuff is tested in `is_Ring`. I was thinking about various other `is_...` methods that really do nothing more than isinstance.
 >  
+
 
 Yes, take a look at the code.  I too was surprised by this!
 
@@ -1379,7 +1389,7 @@ I changed the description so that it's clear which code to look at. I will read 
 archive/issue_comments_083768.json:
 ```json
 {
-    "body": "Dear Simon,\n\nThanks for the help and suggestions. But sadly it did not help (altough I find #9138 a very cool ticket it's good to make a lot of rings finally more consistent with the current model of doing things with the category framework).\n\nAfter some fiddeling around I managed to reduce the error to something in FunctionFieldElement_rational initialization code (hence probably not something with the categorie an coercion framework).\n\n\n```\nsage: K = QQ['x'].fraction_field(); x = K.gen(0)\nsage: sage.rings.function_field.function_field_element.FunctionFieldElement_rational(K, x)\nx\nsage: l=sage.rings.function_field.function_field_element.FunctionFieldElement_rational(K, x)\nsage: dumps(l)\nPicklingError                             Traceback (most recent call last)\n...\nPicklingError: Can't pickle <type 'dictproxy'>: attribute lookup __builtin__.dictproxy failed\nsage: l.__getstate__()\n(Fraction Field of Univariate Polynomial Ring in x over Rational Field, <dictproxy object at 0x10ddf9948>)\n```\n",
+    "body": "Dear Simon,\n\nThanks for the help and suggestions. But sadly it did not help (altough I find #9138 a very cool ticket it's good to make a lot of rings finally more consistent with the current model of doing things with the category framework).\n\nAfter some fiddeling around I managed to reduce the error to something in FunctionFieldElement_rational initialization code (hence probably not something with the categorie an coercion framework).\n\n```\nsage: K = QQ['x'].fraction_field(); x = K.gen(0)\nsage: sage.rings.function_field.function_field_element.FunctionFieldElement_rational(K, x)\nx\nsage: l=sage.rings.function_field.function_field_element.FunctionFieldElement_rational(K, x)\nsage: dumps(l)\nPicklingError                             Traceback (most recent call last)\n...\nPicklingError: Can't pickle <type 'dictproxy'>: attribute lookup __builtin__.dictproxy failed\nsage: l.__getstate__()\n(Fraction Field of Univariate Polynomial Ring in x over Rational Field, <dictproxy object at 0x10ddf9948>)\n```",
     "created_at": "2011-08-29T02:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1394,7 +1404,6 @@ Thanks for the help and suggestions. But sadly it did not help (altough I find #
 
 After some fiddeling around I managed to reduce the error to something in FunctionFieldElement_rational initialization code (hence probably not something with the categorie an coercion framework).
 
-
 ```
 sage: K = QQ['x'].fraction_field(); x = K.gen(0)
 sage: sage.rings.function_field.function_field_element.FunctionFieldElement_rational(K, x)
@@ -1407,7 +1416,6 @@ PicklingError: Can't pickle <type 'dictproxy'>: attribute lookup __builtin__.dic
 sage: l.__getstate__()
 (Fraction Field of Univariate Polynomial Ring in x over Rational Field, <dictproxy object at 0x10ddf9948>)
 ```
-
 
 
 
@@ -1434,7 +1442,7 @@ It took me a while to find out how to solve the problems with pickling but I fin
 archive/issue_comments_083770.json:
 ```json
 {
-    "body": "Just for your information: I resumed work on #10667. \n\nTesting whether QQ is a ring works faster with the methods from #11115 and #10667 than with using the current `is_Ring`:\n\n```\nsage: C = CommutativeRings().objects()\nsage: QQ in C\nTrue\nsage: %timeit QQ in C\n625 loops, best of 3: 3.88 \u00b5s per loop\n```\n\nversus\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 5.06 \u00b5s per loop\n```\n\n\nOf course, just testing the class is a lot faster:\n\n```\nsage: from sage.rings.ring import Ring\nsage: %timeit isinstance(QQ,Ring)\n625 loops, best of 3: 666 ns per loop\n```\n",
+    "body": "Just for your information: I resumed work on #10667. \n\nTesting whether QQ is a ring works faster with the methods from #11115 and #10667 than with using the current `is_Ring`:\n\n```\nsage: C = CommutativeRings().objects()\nsage: QQ in C\nTrue\nsage: %timeit QQ in C\n625 loops, best of 3: 3.88 \u00b5s per loop\n```\nversus\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 5.06 \u00b5s per loop\n```\n\nOf course, just testing the class is a lot faster:\n\n```\nsage: from sage.rings.ring import Ring\nsage: %timeit isinstance(QQ,Ring)\n625 loops, best of 3: 666 ns per loop\n```",
     "created_at": "2011-08-29T09:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1454,7 +1462,6 @@ True
 sage: %timeit QQ in C
 625 loops, best of 3: 3.88 µs per loop
 ```
-
 versus
 
 ```
@@ -1462,7 +1469,6 @@ sage: from sage.rings.ring import is_Ring
 sage: %timeit is_Ring(QQ)
 625 loops, best of 3: 5.06 µs per loop
 ```
-
 
 Of course, just testing the class is a lot faster:
 
@@ -1474,13 +1480,12 @@ sage: %timeit isinstance(QQ,Ring)
 
 
 
-
 ---
 
 archive/issue_comments_083771.json:
 ```json
 {
-    "body": "I really think that `is_Ring` should be *globally* improved. For example, it already helps to define\n\n```\ndef is_Ring(x):\n    \"\"\"\n    Return True if x is a ring.\n\n    EXAMPLES::\n\n        sage: from sage.rings.ring import is_Ring\n        sage: is_Ring(ZZ)\n        True\n    \"\"\"\n    if isinstance(x, Ring):\n        return True\n    from sage.categories.rings import Rings\n    return x in Rings()\n```\n\nhence, only do the import when needed.\n\nThe timings become\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: P.<x,y,z> = QQ[]\nsage: is_Ring(P)\nTrue\nsage: %timeit is_Ring(P)\n625 loops, best of 3: 243 ns per loop\nsage: MS = MatrixSpace(QQ,2)\nsage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 21.5 \u00b5s per loop\n```\n\nversus\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: sage: P.<x,y,z> = QQ[]\nsage: is_Ring(P)\nTrue\nsage: %timeit is_Ring(P)\n625 loops, best of 3: 4.93 \u00b5s per loop\nsage: MS = MatrixSpace(QQ,2)\nsage: sage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 26.4 \u00b5s per loop\n```\n\n\nBut I think I'll move it to #10667.",
+    "body": "I really think that `is_Ring` should be *globally* improved. For example, it already helps to define\n\n```\ndef is_Ring(x):\n    \"\"\"\n    Return True if x is a ring.\n\n    EXAMPLES::\n\n        sage: from sage.rings.ring import is_Ring\n        sage: is_Ring(ZZ)\n        True\n    \"\"\"\n    if isinstance(x, Ring):\n        return True\n    from sage.categories.rings import Rings\n    return x in Rings()\n```\nhence, only do the import when needed.\n\nThe timings become\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: P.<x,y,z> = QQ[]\nsage: is_Ring(P)\nTrue\nsage: %timeit is_Ring(P)\n625 loops, best of 3: 243 ns per loop\nsage: MS = MatrixSpace(QQ,2)\nsage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 21.5 \u00b5s per loop\n```\nversus\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: sage: P.<x,y,z> = QQ[]\nsage: is_Ring(P)\nTrue\nsage: %timeit is_Ring(P)\n625 loops, best of 3: 4.93 \u00b5s per loop\nsage: MS = MatrixSpace(QQ,2)\nsage: sage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 26.4 \u00b5s per loop\n```\n\nBut I think I'll move it to #10667.",
     "created_at": "2011-08-29T11:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1507,7 +1512,6 @@ def is_Ring(x):
     from sage.categories.rings import Rings
     return x in Rings()
 ```
-
 hence, only do the import when needed.
 
 The timings become
@@ -1525,7 +1529,6 @@ True
 sage: %timeit is_Ring(MS)
 625 loops, best of 3: 21.5 µs per loop
 ```
-
 versus
 
 ```
@@ -1542,7 +1545,6 @@ sage: %timeit is_Ring(MS)
 625 loops, best of 3: 26.4 µs per loop
 ```
 
-
 But I think I'll move it to #10667.
 
 
@@ -1552,7 +1554,7 @@ But I think I'll move it to #10667.
 archive/issue_comments_083772.json:
 ```json
 {
-    "body": "Time for a little advertisement: I obtain a much improved performance with #10667 (introducing the class of objects and morphisms of a category, written in Cython). Perhaps it is useful for you?\n\n**__Testing commutative rings__**\n\nThe function `is_CommutativeRing` does nothing but testing the class. But it is a Python function. Let us compare its speed with the speed of a Cython container, testing category containment.\n\n`is_CommutativeRing`:\n\n```\nsage: from sage.rings.commutative_ring import is_CommutativeRing\nsage: is_CommutativeRing??\n...\nSource:\ndef is_CommutativeRing(R):\n    return isinstance(R, CommutativeRing)\nsage: is_CommutativeRing(QQ)\nTrue\nsage: s = SymmetricGroup(4)\nsage: is_CommutativeRing(s)\nFalse\nsage: %timeit is_CommutativeRing(QQ)\n625 loops, best of 3: 1.09 \u00b5s per loop\nsage: %timeit is_CommutativeRing(s)\n625 loops, best of 3: 3.51 \u00b5s per loop\n```\n\n\nCython container:\n\n```\nsage: O = CommutativeRings().objects()\nsage: QQ in O\nTrue\nsage: s in O\nFalse\nsage: %timeit QQ in O\n625 loops, best of 3: 1.5 \u00b5s per loop\nsage: %timeit s in O\n625 loops, best of 3: 1.46 \u00b5s per loop\n```\n\nHence, when applied to a symmetric group, the container performs a category containment test (with negative result, of course) that is *faster* than a Python class check!\n\n**__Testing rings__**\n\nAs you have observed, the current `is_Ring` function is suboptimal. I rewrote it in #10667.\n\nWithout #10667 (but with #11115 for a fast cache):\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: MS = MatrixSpace(QQ,2)\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 5.1 \u00b5s per loop\nsage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 17.3 \u00b5s per loop\nsage: C = Rings()\nsage: %timeit QQ in C\n625 loops, best of 3: 4.18 \u00b5s per loop\nsage: %timeit MS in C\n625 loops, best of 3: 4.31 \u00b5s per loop\n```\n\nWith #10667 in addition:\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: MS = MatrixSpace(QQ,2)\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 259 ns per loop\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 17.5 \u00b5s per loop\nsage: C = Rings().objects()\nsage: %timeit QQ in C\n625 loops, best of 3: 1.49 \u00b5s per loop\nsage: %timeit MS in C\n625 loops, best of 3: 1.57 \u00b5s per loop\n```\n",
+    "body": "Time for a little advertisement: I obtain a much improved performance with #10667 (introducing the class of objects and morphisms of a category, written in Cython). Perhaps it is useful for you?\n\n**__Testing commutative rings__**\n\nThe function `is_CommutativeRing` does nothing but testing the class. But it is a Python function. Let us compare its speed with the speed of a Cython container, testing category containment.\n\n`is_CommutativeRing`:\n\n```\nsage: from sage.rings.commutative_ring import is_CommutativeRing\nsage: is_CommutativeRing??\n...\nSource:\ndef is_CommutativeRing(R):\n    return isinstance(R, CommutativeRing)\nsage: is_CommutativeRing(QQ)\nTrue\nsage: s = SymmetricGroup(4)\nsage: is_CommutativeRing(s)\nFalse\nsage: %timeit is_CommutativeRing(QQ)\n625 loops, best of 3: 1.09 \u00b5s per loop\nsage: %timeit is_CommutativeRing(s)\n625 loops, best of 3: 3.51 \u00b5s per loop\n```\n\nCython container:\n\n```\nsage: O = CommutativeRings().objects()\nsage: QQ in O\nTrue\nsage: s in O\nFalse\nsage: %timeit QQ in O\n625 loops, best of 3: 1.5 \u00b5s per loop\nsage: %timeit s in O\n625 loops, best of 3: 1.46 \u00b5s per loop\n```\nHence, when applied to a symmetric group, the container performs a category containment test (with negative result, of course) that is *faster* than a Python class check!\n\n**__Testing rings__**\n\nAs you have observed, the current `is_Ring` function is suboptimal. I rewrote it in #10667.\n\nWithout #10667 (but with #11115 for a fast cache):\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: MS = MatrixSpace(QQ,2)\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 5.1 \u00b5s per loop\nsage: is_Ring(MS)\nTrue\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 17.3 \u00b5s per loop\nsage: C = Rings()\nsage: %timeit QQ in C\n625 loops, best of 3: 4.18 \u00b5s per loop\nsage: %timeit MS in C\n625 loops, best of 3: 4.31 \u00b5s per loop\n```\nWith #10667 in addition:\n\n```\nsage: from sage.rings.ring import is_Ring\nsage: MS = MatrixSpace(QQ,2)\nsage: %timeit is_Ring(QQ)\n625 loops, best of 3: 259 ns per loop\nsage: %timeit is_Ring(MS)\n625 loops, best of 3: 17.5 \u00b5s per loop\nsage: C = Rings().objects()\nsage: %timeit QQ in C\n625 loops, best of 3: 1.49 \u00b5s per loop\nsage: %timeit MS in C\n625 loops, best of 3: 1.57 \u00b5s per loop\n```",
     "created_at": "2011-08-30T10:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -1587,7 +1589,6 @@ sage: %timeit is_CommutativeRing(s)
 625 loops, best of 3: 3.51 µs per loop
 ```
 
-
 Cython container:
 
 ```
@@ -1601,7 +1602,6 @@ sage: %timeit QQ in O
 sage: %timeit s in O
 625 loops, best of 3: 1.46 µs per loop
 ```
-
 Hence, when applied to a symmetric group, the container performs a category containment test (with negative result, of course) that is *faster* than a Python class check!
 
 **__Testing rings__**
@@ -1625,7 +1625,6 @@ sage: %timeit QQ in C
 sage: %timeit MS in C
 625 loops, best of 3: 4.31 µs per loop
 ```
-
 With #10667 in addition:
 
 ```
@@ -1641,7 +1640,6 @@ sage: %timeit QQ in C
 sage: %timeit MS in C
 625 loops, best of 3: 1.57 µs per loop
 ```
-
 
 
 
@@ -2276,7 +2274,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083804.json:
 ```json
 {
-    "body": "On sage.math using the just released sage-4.7.2 with the following 21! patches applied\n\n```\nmderickx@sage:/scratch/mderickx/sage/devel/sage$ hg qser | nl\n     1\t9138_flat.patch\n     2\ttrac_9054-all-parts.patch\n     3\ttrac_9054_polynomial_base_field.patch\n     4\ttrac_9054_zero.patch\n     5\ttrac_9054_codomain.patch\n     6\ttrac_9054_doctest-2.patch\n     7\ttrac_9054-review.patch\n     8\ttrac_9054_undo_unittest.patch\n     9\ttrac_9054-invert_ideal.patch\n    10\ttrac_9054_is_function_field.patch\n    11\ttrac_9054_unique_factory.patch\n    12\ttrac_9054_cached_method.patch\n    13\ttrac_9054_maximal_order_member_check.patch\n    14\ttrac_9054_call_super_constructors.patch\n    15\ttrac_9054_maps_refactor.patch\n    16\ttrac_9054_doctests-3.patch\n    17\ttrac_9054_cleanup.patch\n    18\ttrac_9054_authors.patch\n    19\ttrac_9054_reference.patch\n    20\ttrac_9054_factor.patch\n    21\ttrac_9054_order_category.patch\n```\n\n\nI get \n\n\n```\n\nThe following tests failed:\n\n\tsage -t --long devel/sage-main/sage/rings/function_field/maps.py # 1 doctests failed\n\tsage -t --long devel/sage-main/sage/rings/function_field/function_field.py # 7 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1102.4 seconds\n```\n",
+    "body": "On sage.math using the just released sage-4.7.2 with the following 21! patches applied\n\n```\nmderickx@sage:/scratch/mderickx/sage/devel/sage$ hg qser | nl\n     1\t9138_flat.patch\n     2\ttrac_9054-all-parts.patch\n     3\ttrac_9054_polynomial_base_field.patch\n     4\ttrac_9054_zero.patch\n     5\ttrac_9054_codomain.patch\n     6\ttrac_9054_doctest-2.patch\n     7\ttrac_9054-review.patch\n     8\ttrac_9054_undo_unittest.patch\n     9\ttrac_9054-invert_ideal.patch\n    10\ttrac_9054_is_function_field.patch\n    11\ttrac_9054_unique_factory.patch\n    12\ttrac_9054_cached_method.patch\n    13\ttrac_9054_maximal_order_member_check.patch\n    14\ttrac_9054_call_super_constructors.patch\n    15\ttrac_9054_maps_refactor.patch\n    16\ttrac_9054_doctests-3.patch\n    17\ttrac_9054_cleanup.patch\n    18\ttrac_9054_authors.patch\n    19\ttrac_9054_reference.patch\n    20\ttrac_9054_factor.patch\n    21\ttrac_9054_order_category.patch\n```\n\nI get \n\n```\n\nThe following tests failed:\n\n\tsage -t --long devel/sage-main/sage/rings/function_field/maps.py # 1 doctests failed\n\tsage -t --long devel/sage-main/sage/rings/function_field/function_field.py # 7 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1102.4 seconds\n```",
     "created_at": "2011-11-05T18:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -2312,9 +2310,7 @@ mderickx@sage:/scratch/mderickx/sage/devel/sage$ hg qser | nl
     21	trac_9054_order_category.patch
 ```
 
-
 I get 
-
 
 ```
 
@@ -2325,7 +2321,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 1102.4 seconds
 ```
-
 
 
 
@@ -2464,7 +2459,7 @@ Just a note on #9138: It had already been merged, but was unmerged because of an
 archive/issue_comments_083812.json:
 ```json
 {
-    "body": "Ok these are the results from reading trough you patches:\n\nWhy did you make some_elements in function_field.py return only one element? This number should be at least two (and preferable even at least 3) since else a lot of tests in TestSuite(F).run() will be meaningless with just one element because one element is always equal to itself for example!\n\nIf you make vector_space a cached method then why don't you change\n\n```\nself._vector_space = (V, from_V, to_V) \nreturn self._vector_space \n```\n\nto\n\n```\nreturn (V, from_V, to_V) \n```\n\nThis code is in two places.\n\nIn function_field_order.py there is a typo in the sentence \"the function field in which this iss an order.\"\n\nWhy did you remove:\n\n```\nif is_Ideal(gens): \n    gens = gens.gens() \n```\n\nin function_field_order.py. I suspect the code was there to make the (not doctested) use case of:\n\n```\nsage: K.<x> = FunctionField(QQ) \nsage: O=K.maximal_order()\nsage: I=O.ideal(x)\nsage: O.ideal(I)\n```\n\nsince you should be able to make an ideal with input an ideal.\n\nFor the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!",
+    "body": "Ok these are the results from reading trough you patches:\n\nWhy did you make some_elements in function_field.py return only one element? This number should be at least two (and preferable even at least 3) since else a lot of tests in TestSuite(F).run() will be meaningless with just one element because one element is always equal to itself for example!\n\nIf you make vector_space a cached method then why don't you change\n\n```\nself._vector_space = (V, from_V, to_V) \nreturn self._vector_space \n```\nto\n\n```\nreturn (V, from_V, to_V) \n```\nThis code is in two places.\n\nIn function_field_order.py there is a typo in the sentence \"the function field in which this iss an order.\"\n\nWhy did you remove:\n\n```\nif is_Ideal(gens): \n    gens = gens.gens() \n```\nin function_field_order.py. I suspect the code was there to make the (not doctested) use case of:\n\n```\nsage: K.<x> = FunctionField(QQ) \nsage: O=K.maximal_order()\nsage: I=O.ideal(x)\nsage: O.ideal(I)\n```\nsince you should be able to make an ideal with input an ideal.\n\nFor the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!",
     "created_at": "2011-11-07T15:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -2483,13 +2478,11 @@ If you make vector_space a cached method then why don't you change
 self._vector_space = (V, from_V, to_V) 
 return self._vector_space 
 ```
-
 to
 
 ```
 return (V, from_V, to_V) 
 ```
-
 This code is in two places.
 
 In function_field_order.py there is a typo in the sentence "the function field in which this iss an order."
@@ -2500,7 +2493,6 @@ Why did you remove:
 if is_Ideal(gens): 
     gens = gens.gens() 
 ```
-
 in function_field_order.py. I suspect the code was there to make the (not doctested) use case of:
 
 ```
@@ -2509,7 +2501,6 @@ sage: O=K.maximal_order()
 sage: I=O.ideal(x)
 sage: O.ideal(I)
 ```
-
 since you should be able to make an ideal with input an ideal.
 
 For the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!
@@ -2539,7 +2530,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083814.json:
 ```json
 {
-    "body": "Replying to [comment:67 mderickx]:\n> Why did you make some_elements in function_field.py return only one element? This number should be at least two (and preferable even at least 3) since else a lot of tests in TestSuite(F).run() will be meaningless with just one element because one element is always equal to itself for example!\n\nI think I had seen that somewhere else only one element was returned and copied that. (at that time I didn't know what some_elements() was good for)\nI'll fix that.\n\n> If you make vector_space a cached method then why don't you change\n> {{{\n> self._vector_space = (V, from_V, to_V) \n> return self._vector_space \n> }}}\n> to\n> {{{\n> return (V, from_V, to_V) \n> }}}\n> This code is in two places.\nThat's true. Must have missed that.\n\n> In function_field_order.py there is a typo in the sentence \"the function field in which this iss an order.\"\nWill be fixed in the next patch.\n\n> Why did you remove:\n> {{{\n> if is_Ideal(gens): \n>     gens = gens.gens() \n> }}}\n> in function_field_order.py. I suspect the code was there to make the (not doctested) use case of:\n> {{{\n> sage: K.<x> = FunctionField(QQ) \n> sage: O=K.maximal_order()\n> sage: I=O.ideal(x)\n> sage: O.ideal(I)\n> }}}\n> since you should be able to make an ideal with input an ideal.\nGood question. It's part of a doctest patch so I guess it just got in by accident.\n\n> For the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!\nOk. I'll prepare a patch to fix these issues. Thanks you took the time and had a look at these patches. :)",
+    "body": "Replying to [comment:67 mderickx]:\n> Why did you make some_elements in function_field.py return only one element? This number should be at least two (and preferable even at least 3) since else a lot of tests in TestSuite(F).run() will be meaningless with just one element because one element is always equal to itself for example!\n\n\nI think I had seen that somewhere else only one element was returned and copied that. (at that time I didn't know what some_elements() was good for)\nI'll fix that.\n\n> If you make vector_space a cached method then why don't you change\n> \n> ```\n> self._vector_space = (V, from_V, to_V) \n> return self._vector_space \n> ```\n> to\n> \n> ```\n> return (V, from_V, to_V) \n> ```\n> This code is in two places.\n\nThat's true. Must have missed that.\n\n> In function_field_order.py there is a typo in the sentence \"the function field in which this iss an order.\"\n\nWill be fixed in the next patch.\n\n> Why did you remove:\n> \n> ```\n> if is_Ideal(gens): \n>     gens = gens.gens() \n> ```\n> in function_field_order.py. I suspect the code was there to make the (not doctested) use case of:\n> \n> ```\n> sage: K.<x> = FunctionField(QQ) \n> sage: O=K.maximal_order()\n> sage: I=O.ideal(x)\n> sage: O.ideal(I)\n> ```\n> since you should be able to make an ideal with input an ideal.\n\nGood question. It's part of a doctest patch so I guess it just got in by accident.\n\n> For the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!\nOk. I'll prepare a patch to fix these issues. Thanks you took the time and had a look at these patches. :)",
     "created_at": "2011-11-07T16:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -2551,37 +2542,45 @@ archive/issue_comments_083814.json:
 Replying to [comment:67 mderickx]:
 > Why did you make some_elements in function_field.py return only one element? This number should be at least two (and preferable even at least 3) since else a lot of tests in TestSuite(F).run() will be meaningless with just one element because one element is always equal to itself for example!
 
+
 I think I had seen that somewhere else only one element was returned and copied that. (at that time I didn't know what some_elements() was good for)
 I'll fix that.
 
 > If you make vector_space a cached method then why don't you change
-> {{{
+> 
+> ```
 > self._vector_space = (V, from_V, to_V) 
 > return self._vector_space 
-> }}}
+> ```
 > to
-> {{{
+> 
+> ```
 > return (V, from_V, to_V) 
-> }}}
+> ```
 > This code is in two places.
+
 That's true. Must have missed that.
 
 > In function_field_order.py there is a typo in the sentence "the function field in which this iss an order."
+
 Will be fixed in the next patch.
 
 > Why did you remove:
-> {{{
+> 
+> ```
 > if is_Ideal(gens): 
 >     gens = gens.gens() 
-> }}}
+> ```
 > in function_field_order.py. I suspect the code was there to make the (not doctested) use case of:
-> {{{
+> 
+> ```
 > sage: K.<x> = FunctionField(QQ) 
 > sage: O=K.maximal_order()
 > sage: I=O.ideal(x)
 > sage: O.ideal(I)
-> }}}
+> ```
 > since you should be able to make an ideal with input an ideal.
+
 Good question. It's part of a doctest patch so I guess it just got in by accident.
 
 > For the rest your combination patch looks very nice. Also good that you made the documentation quality so much higher. If you either answer the above questions with the right arguments or if you change them back it seems that we can finally have function fields in sage!
@@ -2652,7 +2651,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083818.json:
 ```json
 {
-    "body": "I will add it just to be consistent with numberfields.\n\n```\nsage: K.<a> = QQ.extension(x^2-2)\nsage: I = K.ideal(3)\nsage: L.<b> = K.extension(x^2-3)\nsage: L.ideal(I)\nFractional ideal (3)\nsage: L.ideal(p).factor()\n(Fractional ideal (b))^2\n```\n\n\nNote that it also mathematically makes sense in the most general setting since the ideal created this way is the ideal extension corresponding to the coersion map from I.ring() to self.",
+    "body": "I will add it just to be consistent with numberfields.\n\n```\nsage: K.<a> = QQ.extension(x^2-2)\nsage: I = K.ideal(3)\nsage: L.<b> = K.extension(x^2-3)\nsage: L.ideal(I)\nFractional ideal (3)\nsage: L.ideal(p).factor()\n(Fractional ideal (b))^2\n```\n\nNote that it also mathematically makes sense in the most general setting since the ideal created this way is the ideal extension corresponding to the coersion map from I.ring() to self.",
     "created_at": "2011-11-07T23:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -2672,7 +2671,6 @@ Fractional ideal (3)
 sage: L.ideal(p).factor()
 (Fractional ideal (b))^2
 ```
-
 
 Note that it also mathematically makes sense in the most general setting since the ideal created this way is the ideal extension corresponding to the coersion map from I.ring() to self.
 
@@ -2719,7 +2717,7 @@ If you can just check my last patch then it can have positive review.
 archive/issue_comments_083821.json:
 ```json
 {
-    "body": "\n```\nsage: K.<x> = FunctionField(QQ)\nsage: R.<y> = K[]\nsage: L.<y> = K.extension(y^3-x)\nsage: loads(dumps(L))\nAttributeError: (\"'module' object has no attribute 'FunctionField_polymod'\", <built-in function lookup_global>, ('FunctionField_polymod',))\n```\n\n\nThis was also checked by `sage: TestSuite(L).run() #long time` in function_field.py.\n\nThe latest patch fixes this problem.\n\nMaarten, if you agree with this latest patch you can set it to positive review.",
+    "body": "```\nsage: K.<x> = FunctionField(QQ)\nsage: R.<y> = K[]\nsage: L.<y> = K.extension(y^3-x)\nsage: loads(dumps(L))\nAttributeError: (\"'module' object has no attribute 'FunctionField_polymod'\", <built-in function lookup_global>, ('FunctionField_polymod',))\n```\n\nThis was also checked by `sage: TestSuite(L).run() #long time` in function_field.py.\n\nThe latest patch fixes this problem.\n\nMaarten, if you agree with this latest patch you can set it to positive review.",
     "created_at": "2011-11-08T16:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
@@ -2728,7 +2726,6 @@ archive/issue_comments_083821.json:
 }
 ```
 
-
 ```
 sage: K.<x> = FunctionField(QQ)
 sage: R.<y> = K[]
@@ -2736,7 +2733,6 @@ sage: L.<y> = K.extension(y^3-x)
 sage: loads(dumps(L))
 AttributeError: ("'module' object has no attribute 'FunctionField_polymod'", <built-in function lookup_global>, ('FunctionField_polymod',))
 ```
-
 
 This was also checked by `sage: TestSuite(L).run() #long time` in function_field.py.
 

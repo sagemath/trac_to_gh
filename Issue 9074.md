@@ -93,7 +93,7 @@ Example graphic of a Cayley graph
 archive/issue_comments_084055.json:
 ```json
 {
-    "body": "I've attached an image produced with this patch.  With the necessary files in place and added to the latex preamble, this labeled Cayley graph comes from the following code:\n\n\n```\nG=CyclicPermutationGroup(7)\nC=G.cayley_graph(generators=[G((1,2,3,4,5,6,7)), G((1,4,7,3,6,2,5))])\nC.set_pos(C.layout_circular())\nC.set_latex_options(graphic_size=(12,12),vertex_shape=\"rectangle\", edge_labels=True)\nview(C)\n```\n",
+    "body": "I've attached an image produced with this patch.  With the necessary files in place and added to the latex preamble, this labeled Cayley graph comes from the following code:\n\n```\nG=CyclicPermutationGroup(7)\nC=G.cayley_graph(generators=[G((1,2,3,4,5,6,7)), G((1,4,7,3,6,2,5))])\nC.set_pos(C.layout_circular())\nC.set_latex_options(graphic_size=(12,12),vertex_shape=\"rectangle\", edge_labels=True)\nview(C)\n```",
     "created_at": "2010-05-30T06:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
@@ -104,7 +104,6 @@ archive/issue_comments_084055.json:
 
 I've attached an image produced with this patch.  With the necessary files in place and added to the latex preamble, this labeled Cayley graph comes from the following code:
 
-
 ```
 G=CyclicPermutationGroup(7)
 C=G.cayley_graph(generators=[G((1,2,3,4,5,6,7)), G((1,4,7,3,6,2,5))])
@@ -112,7 +111,6 @@ C.set_pos(C.layout_circular())
 C.set_latex_options(graphic_size=(12,12),vertex_shape="rectangle", edge_labels=True)
 view(C)
 ```
-
 
 
 
@@ -237,7 +235,7 @@ and put these where tex can find them.  These depend on the tikz and pgf package
 archive/issue_comments_084061.json:
 ```json
 {
-    "body": "Hi Rob,\n\n> The attached file heawood-graph-latex.png needs to be placed into doc/en/reference/static for the documentation to build properly. (Is this the right place?)\n\nIt should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do \"hg add ...\" (or `hg_sage.add(...)`) to add it, and then when you export the patch, use \"hg export -g ...\" (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)",
+    "body": "Hi Rob,\n\n> The attached file heawood-graph-latex.png needs to be placed into doc/en/reference/static for the documentation to build properly. (Is this the right place?)\n\n\nIt should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do \"hg add ...\" (or `hg_sage.add(...)`) to add it, and then when you export the patch, use \"hg export -g ...\" (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)",
     "created_at": "2010-06-13T20:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
@@ -250,6 +248,7 @@ Hi Rob,
 
 > The attached file heawood-graph-latex.png needs to be placed into doc/en/reference/static for the documentation to build properly. (Is this the right place?)
 
+
 It should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do "hg add ..." (or `hg_sage.add(...)`) to add it, and then when you export the patch, use "hg export -g ..." (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)
 
 
@@ -259,7 +258,7 @@ It should go in doc/en/reference/media.  You should also add it to the mercurial
 archive/issue_comments_084062.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> It should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do \"hg add ...\" (or `hg_sage.add(...)`) to add it, and then when you export the patch, use \"hg export -g ...\" (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)\n\nThanks, John.  I'll get a revised patch up tonight (or sooner).",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> It should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do \"hg add ...\" (or `hg_sage.add(...)`) to add it, and then when you export the patch, use \"hg export -g ...\" (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)\n\n\nThanks, John.  I'll get a revised patch up tonight (or sooner).",
     "created_at": "2010-06-13T21:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
@@ -270,6 +269,7 @@ archive/issue_comments_084062.json:
 
 Replying to [comment:4 jhpalmieri]:
 > It should go in doc/en/reference/media.  You should also add it to the mercurial repository: it should just be part of the patch file.  (So do "hg add ..." (or `hg_sage.add(...)`) to add it, and then when you export the patch, use "hg export -g ..." (or `hg_sage.export(..., options='-g')`) so that the patch file deals with the binary file correctly.)
+
 
 Thanks, John.  I'll get a revised patch up tonight (or sooner).
 
@@ -342,7 +342,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084066.json:
 ```json
 {
-    "body": "I'm getting a doctest failure:\n\n```\nFile \"/Applications/sage/devel/sage/sage/graphs/graph_latex.py\", line 271:\n    sage: print latex(G)\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\useasboundingbox (0,0) rectangle (4.0in,4.0in);\n    %\n    \\definecolor{cv0}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv0}{rgb}{0.0,0.0,1.0}\n    \\definecolor{clv0}{rgb}{0.0,0.5,0.0}\n    \\definecolor{cv1}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv1}{rgb}{0.0,0.0,1.0}\n\n[snip]\n\nGot:\n    \\begin{tikzpicture}\n    %\n    \\useasboundingbox (0,0) rectangle (4.0in,4.0in);\n    %\n    \\definecolor{cv0}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv0}{rgb}{0.0,0.0,1.0}\n    \\definecolor{clv0}{rgb}{0.0,0.5,0.0}\n    \\definecolor{cv1}{rgb}{0.0,0.0,1.0}\n    \\definecolor{cfv1}{rgb}{1.0,0.0,1.0}\n```\n\ncv1 and cfv1 are not correct.  I wonder if this is because the examples are not being run in order, and so some later example is changing some settings before this one gets run.\n\nAlso, as I noted on another ticket, jsMath doesn't know about the `\\LaTeX` command, so the simplest solution is just to replace it with plain-text `LaTeX` everywhere.  Try typesetting the reference manual with \"sage -docbuild reference html -j\" to see the jsMath version.\n\nIn line 51 of graph_latex.py, the phrase `though at the command line the call to jsmath_avoid_list() is only needed in the notebook`: delete \"at the command line\".\n\nLine 605-606:\n\n\n```\n- ``format`` -- default: 'tkz_graph' -- either 'dot2tex' \n   or 'tkz_graph'. \n```\n\nThe \"or\" on the second line doesn't line up with the ```` on the first line, so it doesn't get typeset right.\n\nWhile you're fixing these issues, you might want to modify this code:\n\n```\n@cached_function\ndef setup_latex_preamble():\n  ...\n```\n\nFor reasons I don't understand, decorating a function with ``@`cached_function` prevents it from appearing in the reference manual, so instead you can change it to the following (note the trailing underscores, just used to create a new name similar to the original one):\n\n```\ndef setup_latex_preamble_():\n  ...\n\nsetup_latex_preamble = cached_function(setup_latex_preamble_)\n```\n",
+    "body": "I'm getting a doctest failure:\n\n```\nFile \"/Applications/sage/devel/sage/sage/graphs/graph_latex.py\", line 271:\n    sage: print latex(G)\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\useasboundingbox (0,0) rectangle (4.0in,4.0in);\n    %\n    \\definecolor{cv0}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv0}{rgb}{0.0,0.0,1.0}\n    \\definecolor{clv0}{rgb}{0.0,0.5,0.0}\n    \\definecolor{cv1}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv1}{rgb}{0.0,0.0,1.0}\n\n[snip]\n\nGot:\n    \\begin{tikzpicture}\n    %\n    \\useasboundingbox (0,0) rectangle (4.0in,4.0in);\n    %\n    \\definecolor{cv0}{rgb}{0.8,0.8,0.8}\n    \\definecolor{cfv0}{rgb}{0.0,0.0,1.0}\n    \\definecolor{clv0}{rgb}{0.0,0.5,0.0}\n    \\definecolor{cv1}{rgb}{0.0,0.0,1.0}\n    \\definecolor{cfv1}{rgb}{1.0,0.0,1.0}\n```\ncv1 and cfv1 are not correct.  I wonder if this is because the examples are not being run in order, and so some later example is changing some settings before this one gets run.\n\nAlso, as I noted on another ticket, jsMath doesn't know about the `\\LaTeX` command, so the simplest solution is just to replace it with plain-text `LaTeX` everywhere.  Try typesetting the reference manual with \"sage -docbuild reference html -j\" to see the jsMath version.\n\nIn line 51 of graph_latex.py, the phrase `though at the command line the call to jsmath_avoid_list() is only needed in the notebook`: delete \"at the command line\".\n\nLine 605-606:\n\n```\n- ``format`` -- default: 'tkz_graph' -- either 'dot2tex' \n   or 'tkz_graph'. \n```\nThe \"or\" on the second line doesn't line up with the ```` on the first line, so it doesn't get typeset right.\n\nWhile you're fixing these issues, you might want to modify this code:\n\n```\n@cached_function\ndef setup_latex_preamble():\n  ...\n```\nFor reasons I don't understand, decorating a function with ``@`cached_function` prevents it from appearing in the reference manual, so instead you can change it to the following (note the trailing underscores, just used to create a new name similar to the original one):\n\n```\ndef setup_latex_preamble_():\n  ...\n\nsetup_latex_preamble = cached_function(setup_latex_preamble_)\n```",
     "created_at": "2010-06-22T22:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
@@ -380,7 +380,6 @@ Got:
     \definecolor{cv1}{rgb}{0.0,0.0,1.0}
     \definecolor{cfv1}{rgb}{1.0,0.0,1.0}
 ```
-
 cv1 and cfv1 are not correct.  I wonder if this is because the examples are not being run in order, and so some later example is changing some settings before this one gets run.
 
 Also, as I noted on another ticket, jsMath doesn't know about the `\LaTeX` command, so the simplest solution is just to replace it with plain-text `LaTeX` everywhere.  Try typesetting the reference manual with "sage -docbuild reference html -j" to see the jsMath version.
@@ -389,12 +388,10 @@ In line 51 of graph_latex.py, the phrase `though at the command line the call to
 
 Line 605-606:
 
-
 ```
 - ``format`` -- default: 'tkz_graph' -- either 'dot2tex' 
    or 'tkz_graph'. 
 ```
-
 The "or" on the second line doesn't line up with the ```` on the first line, so it doesn't get typeset right.
 
 While you're fixing these issues, you might want to modify this code:
@@ -404,7 +401,6 @@ While you're fixing these issues, you might want to modify this code:
 def setup_latex_preamble():
   ...
 ```
-
 For reasons I don't understand, decorating a function with ``@`cached_function` prevents it from appearing in the reference manual, so instead you can change it to the following (note the trailing underscores, just used to create a new name similar to the original one):
 
 ```
@@ -413,7 +409,6 @@ def setup_latex_preamble_():
 
 setup_latex_preamble = cached_function(setup_latex_preamble_)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_006585.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  sage-combinat\n\nThis patch changes a few docstrings in partition.py which contain backslashes from\n\n```\n\"\"\"\nblah\n\"\"\"\n```\n\nto\n\n```\nr\"\"\"\nblah\n\"\"\"\n```\n\n(I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6585\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  sage-combinat\n\nThis patch changes a few docstrings in partition.py which contain backslashes from\n\n```\n\"\"\"\nblah\n\"\"\"\n```\nto\n\n```\nr\"\"\"\nblah\n\"\"\"\n```\n(I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6585\n\n",
     "created_at": "2009-07-22T05:04:28Z",
     "labels": [
         "component: documentation",
@@ -28,7 +28,6 @@ This patch changes a few docstrings in partition.py which contain backslashes fr
 blah
 """
 ```
-
 to
 
 ```
@@ -36,7 +35,6 @@ r"""
 blah
 """
 ```
-
 (I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)
 
 
@@ -123,7 +121,7 @@ archive/issue_events_015527.json:
 archive/issue_comments_053704.json:
 ```json
 {
-    "body": "Positive review for the patch `trac_6585-backslash.patch`. After importing the changes in that patch and rebuilding the HTML version of the reference manual, I got the following warning:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1.alpha0/local/lib/python2.6/site-packages/sage/combinat/partition.py:docstring of sage.combinat.partition.Partition_class.conjugate:1: (WARNING/2) Inline literal start-string without end-string.\n```\n\nThis is fixed by `trac_6585-fix-warnings.patch`. Merged both patches.",
+    "body": "Positive review for the patch `trac_6585-backslash.patch`. After importing the changes in that patch and rebuilding the HTML version of the reference manual, I got the following warning:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1.alpha0/local/lib/python2.6/site-packages/sage/combinat/partition.py:docstring of sage.combinat.partition.Partition_class.conjugate:1: (WARNING/2) Inline literal start-string without end-string.\n```\nThis is fixed by `trac_6585-fix-warnings.patch`. Merged both patches.",
     "created_at": "2009-07-24T08:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6585",
     "type": "issue_comment",
@@ -137,5 +135,4 @@ Positive review for the patch `trac_6585-backslash.patch`. After importing the c
 ```
 WARNING: /scratch/mvngu/release/sage-4.1.1.alpha0/local/lib/python2.6/site-packages/sage/combinat/partition.py:docstring of sage.combinat.partition.Partition_class.conjugate:1: (WARNING/2) Inline literal start-string without end-string.
 ```
-
 This is fixed by `trac_6585-fix-warnings.patch`. Merged both patches.

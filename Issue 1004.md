@@ -107,7 +107,7 @@ refreshed as a patch
 archive/issue_comments_006097.json:
 ```json
 {
-    "body": "refreshed as a branch\n----\nNew commits:",
+    "body": "refreshed as a branch\n\n---\nNew commits:",
     "created_at": "2015-01-14T19:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1004",
     "type": "issue_comment",
@@ -117,7 +117,8 @@ archive/issue_comments_006097.json:
 ```
 
 refreshed as a branch
-----
+
+---
 New commits:
 
 

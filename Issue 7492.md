@@ -150,7 +150,7 @@ Needs work, I'm afraid.
 archive/issue_comments_063167.json:
 ```json
 {
-    "body": "Replying to [comment:7 davidloeffler]:\n> and it seems to silently replace real numbers with rational approximations to them, which is frankly rather weird. \n\nSorry, that was a mistake in my test script, not in your code. But I still think that the code should do some sanity checks on its input.",
+    "body": "Replying to [comment:7 davidloeffler]:\n> and it seems to silently replace real numbers with rational approximations to them, which is frankly rather weird. \n\n\nSorry, that was a mistake in my test script, not in your code. But I still think that the code should do some sanity checks on its input.",
     "created_at": "2010-05-17T11:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7492",
     "type": "issue_comment",
@@ -161,6 +161,7 @@ archive/issue_comments_063167.json:
 
 Replying to [comment:7 davidloeffler]:
 > and it seems to silently replace real numbers with rational approximations to them, which is frankly rather weird. 
+
 
 Sorry, that was a mistake in my test script, not in your code. But I still think that the code should do some sanity checks on its input.
 

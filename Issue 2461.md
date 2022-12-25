@@ -49,7 +49,7 @@ Attachment [vector-norms.patch](tarball://root/attachments/some-uuid/ticket2461/
 archive/issue_comments_016643.json:
 ```json
 {
-    "body": "I was in the process of refereeing this, and realized that Robert's changes to the doctests uncovered a fairly serious bug in the code for norm():\n\n\n```\nsage: v = vector([1, 2, -3])\nsage: v.norm(Infinity)\n2\nsage: v.norm(1)\n0\n```\n\n\nBoth of these are wrong, due to the fact that whoever wrote the norm() function (I think it was me, actually) forgot to take absolute values of the entries of the vector before computing the norm.\n\nI fixed this and put up a new patch that incorporates both this fix and Robert's improvements.",
+    "body": "I was in the process of refereeing this, and realized that Robert's changes to the doctests uncovered a fairly serious bug in the code for norm():\n\n```\nsage: v = vector([1, 2, -3])\nsage: v.norm(Infinity)\n2\nsage: v.norm(1)\n0\n```\n\nBoth of these are wrong, due to the fact that whoever wrote the norm() function (I think it was me, actually) forgot to take absolute values of the entries of the vector before computing the norm.\n\nI fixed this and put up a new patch that incorporates both this fix and Robert's improvements.",
     "created_at": "2008-03-11T02:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2461",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_016643.json:
 
 I was in the process of refereeing this, and realized that Robert's changes to the doctests uncovered a fairly serious bug in the code for norm():
 
-
 ```
 sage: v = vector([1, 2, -3])
 sage: v.norm(Infinity)
@@ -68,7 +67,6 @@ sage: v.norm(Infinity)
 sage: v.norm(1)
 0
 ```
-
 
 Both of these are wrong, due to the fact that whoever wrote the norm() function (I think it was me, actually) forgot to take absolute values of the entries of the vector before computing the norm.
 

@@ -3,7 +3,7 @@
 archive/issues_006370.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nTry this:\n\n1. Start the sage notebook and go to this URL:\n\n```\nhttp://localhost:8000/doc/live/reference/sage/games/sudoku.html\n```\n\nYou can do that, e.g, by just clicking on Help, Reference Manual, etc.\n\n2. Try to search for anything, e.g, integer.  \n\n3. It doesn't work at all. \n\n\n\nI consider this a pretty serious bug.  Some ideas:\n\n* make the search box actually bring up the static docs instead, where search *DOES* work\n\n* disable search in the live docs.\n\n* fix the real problem so search works in the live docs as it should.\n\nAny of the above would be way way better than the current situation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6370\n\n",
+    "body": "Assignee: boothby\n\nTry this:\n\n1. Start the sage notebook and go to this URL:\n\n```\nhttp://localhost:8000/doc/live/reference/sage/games/sudoku.html\n```\nYou can do that, e.g, by just clicking on Help, Reference Manual, etc.\n\n2. Try to search for anything, e.g, integer.  \n\n3. It doesn't work at all. \n\n\n\nI consider this a pretty serious bug.  Some ideas:\n\n* make the search box actually bring up the static docs instead, where search *DOES* work\n\n* disable search in the live docs.\n\n* fix the real problem so search works in the live docs as it should.\n\nAny of the above would be way way better than the current situation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6370\n\n",
     "created_at": "2009-06-20T15:38:51Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ Try this:
 ```
 http://localhost:8000/doc/live/reference/sage/games/sudoku.html
 ```
-
 You can do that, e.g, by just clicking on Help, Reference Manual, etc.
 
 2. Try to search for anything, e.g, integer.  

@@ -3,7 +3,7 @@
 archive/issues_005651.json:
 ```json
 {
-    "body": "Assignee: wcauchois\n\nCC:  wcauchois @williamstein @jasongrout\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
+    "body": "Assignee: wcauchois\n\nCC:  wcauchois @williamstein @jasongrout\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
     "created_at": "2009-03-31T20:33:43Z",
     "labels": [
         "component: graphics",
@@ -26,13 +26,11 @@ This works now:
 plot(sin(x^2),(x,-3,3)).show(figsize=[8,2])
 ```
 
-
 This would be nice:
 
 ```
 plot(sin(x^2),(x,-3,3),figsize=[2,8])
 ```
-
 
 The analogue of the above works systematically everywhere for 3d plotting.
 
@@ -47,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5651
 archive/issue_comments_044039.json:
 ```json
 {
-    "body": "This is really awesome.  However, things like this should work too:\n\n```\nsage: line([(0,1), (3,4)],figsize=[10,2])\nTraceback (most recent call last):\n...\nRuntimeError: Error in line(): option 'figsize' not valid.\n```\n\n\nAlso, this should have gridlines:\n\n```\nplot(sin(x^2),(x,-3,3),gridlines=True) + plot(cos(x^2),(x,-3,3))\n```\n\n\nClarify the comment\n\n```\n# If you add parameters to show(), you should update the code below. \n```\n\n}}}",
+    "body": "This is really awesome.  However, things like this should work too:\n\n```\nsage: line([(0,1), (3,4)],figsize=[10,2])\nTraceback (most recent call last):\n...\nRuntimeError: Error in line(): option 'figsize' not valid.\n```\n\nAlso, this should have gridlines:\n\n```\nplot(sin(x^2),(x,-3,3),gridlines=True) + plot(cos(x^2),(x,-3,3))\n```\n\nClarify the comment\n\n```\n# If you add parameters to show(), you should update the code below. \n```\n}}}",
     "created_at": "2009-04-28T21:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -65,20 +63,17 @@ Traceback (most recent call last):
 RuntimeError: Error in line(): option 'figsize' not valid.
 ```
 
-
 Also, this should have gridlines:
 
 ```
 plot(sin(x^2),(x,-3,3),gridlines=True) + plot(cos(x^2),(x,-3,3))
 ```
 
-
 Clarify the comment
 
 ```
 # If you add parameters to show(), you should update the code below. 
 ```
-
 }}}
 
 
@@ -106,7 +101,7 @@ Now it works for everything, ever!! With doctests too.
 archive/issue_comments_044041.json:
 ```json
 {
-    "body": "Positive review modulo making so consistent with 3d plotting:\n\n```\nsphere((0,0,0),1, aspect_ratio=[1,4,7]) + sphere((1,1,1),1, aspect_ratio=[1,1,1])\n```\n\n\nNote that it is the *rightmost* thing that has precedence.   Otherwise positive review.",
+    "body": "Positive review modulo making so consistent with 3d plotting:\n\n```\nsphere((0,0,0),1, aspect_ratio=[1,4,7]) + sphere((1,1,1),1, aspect_ratio=[1,1,1])\n```\n\nNote that it is the *rightmost* thing that has precedence.   Otherwise positive review.",
     "created_at": "2009-05-12T21:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -120,7 +115,6 @@ Positive review modulo making so consistent with 3d plotting:
 ```
 sphere((0,0,0),1, aspect_ratio=[1,4,7]) + sphere((1,1,1),1, aspect_ratio=[1,1,1])
 ```
-
 
 Note that it is the *rightmost* thing that has precedence.   Otherwise positive review.
 
@@ -168,7 +162,7 @@ I fixed the precedence issue.
 archive/issue_comments_044044.json:
 ```json
 {
-    "body": "This one needs to be rebased due to a doctest merge conflict in arrow.py. On top of that: this is a diff, so please make sure you post a proper patch this time.\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ patch -p1 --dry-run < trac_5651.patch \npatching file sage/plot/arrow.py\nHunk #1 FAILED at 310.\n1 out of 1 hunk FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\npatching file sage/plot/bezier_path.py\n<SNIP>\n```\n\nNote that various doctest patches in plot/* are going into 4.0.alpha0, so please rebase post 4.0.a0.\n\nCheers,\n\nMichael",
+    "body": "This one needs to be rebased due to a doctest merge conflict in arrow.py. On top of that: this is a diff, so please make sure you post a proper patch this time.\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ patch -p1 --dry-run < trac_5651.patch \npatching file sage/plot/arrow.py\nHunk #1 FAILED at 310.\n1 out of 1 hunk FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\npatching file sage/plot/bezier_path.py\n<SNIP>\n```\nNote that various doctest patches in plot/* are going into 4.0.alpha0, so please rebase post 4.0.a0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-15T07:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -188,7 +182,6 @@ patching file sage/plot/bar_chart.py
 patching file sage/plot/bezier_path.py
 <SNIP>
 ```
-
 Note that various doctest patches in plot/* are going into 4.0.alpha0, so please rebase post 4.0.a0.
 
 Cheers,
@@ -360,7 +353,7 @@ Resolution: fixed
 archive/issue_comments_044053.json:
 ```json
 {
-    "body": "Merged `trac5651-rebase.patch`. That rebased patch contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in `sage/plot/bar_chart.py`:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/bezier_path.py`:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/matrix_plot.py`:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/polygon.py`:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nThese issues should be addressed in another enhancement ticket.",
+    "body": "Merged `trac5651-rebase.patch`. That rebased patch contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in `sage/plot/bar_chart.py`:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn `sage/plot/bezier_path.py`:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn `sage/plot/matrix_plot.py`:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\nIn `sage/plot/polygon.py`:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\nThese issues should be addressed in another enhancement ticket.",
     "created_at": "2009-07-19T08:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
@@ -374,26 +367,22 @@ Merged `trac5651-rebase.patch`. That rebased patch contains doctrings that doesn
 ```
 131	    Extra options will get passed on to show(), as long as they are valid:
 ```
-
 In `sage/plot/bezier_path.py`:
 
 ```
 171	    Extra options will get passed on to show(), as long as they are valid:
 ```
-
 In `sage/plot/matrix_plot.py`:
 
 ```
 58	    Extra options will get passed on to show(), as long as they are valid:
 62	    Extra options will get passed on to show(), as long as they are valid:
 ```
-
 In `sage/plot/polygon.py`:
 
 ```
 255	    Extra options will get passed on to show(), as long as they are valid:
 ```
-
 These issues should be addressed in another enhancement ticket.
 
 

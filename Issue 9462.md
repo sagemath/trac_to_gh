@@ -3,7 +3,7 @@
 archive/issues_009462.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\ncython gives a warning when compiling `matrix_modn_dense.pyx`:\n\n\n```\nwarning: /data2/wpalenst/sage-4.5.alpha4/devel/sage-main/sage/matrix/matrix_modn_dense.pyx:105:8: Function signature does not match previous declaration\n```\n\n\nI'll upload a patch in an hour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9462\n\n",
+    "body": "Assignee: GeorgSWeber\n\ncython gives a warning when compiling `matrix_modn_dense.pyx`:\n\n```\nwarning: /data2/wpalenst/sage-4.5.alpha4/devel/sage-main/sage/matrix/matrix_modn_dense.pyx:105:8: Function signature does not match previous declaration\n```\n\nI'll upload a patch in an hour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9462\n\n",
     "created_at": "2010-07-09T08:31:52Z",
     "labels": [
         "component: build",
@@ -21,11 +21,9 @@ Assignee: GeorgSWeber
 
 cython gives a warning when compiling `matrix_modn_dense.pyx`:
 
-
 ```
 warning: /data2/wpalenst/sage-4.5.alpha4/devel/sage-main/sage/matrix/matrix_modn_dense.pyx:105:8: Function signature does not match previous declaration
 ```
-
 
 I'll upload a patch in an hour.
 

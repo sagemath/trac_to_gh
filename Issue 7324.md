@@ -67,7 +67,7 @@ archive/issue_events_017343.json:
 archive/issue_comments_061087.json:
 ```json
 {
-    "body": "Attachment [trac_7324_order_from_multiple.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple.patch) by ylchapuy created at 2009-10-27 19:49:04\n\nThe provided patch should give no slowdown on small examples, and great speed up for bigger ones.\ne.g.\n\n* BEFORE:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s\nWall time: 6.56 s\n```\n\n\n* AFTER:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s\nWall time: 2.01 s\n```\n\n\n(it's based on 4.1.2, but I hope it applies fine to 4.2)\n\nI also get rid of the power function in generic.py which is exactly the same as the generic_power in sage.structure.element\n\nFinally, with sage 4.1.2, sage -testall reports no failure.",
+    "body": "Attachment [trac_7324_order_from_multiple.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple.patch) by ylchapuy created at 2009-10-27 19:49:04\n\nThe provided patch should give no slowdown on small examples, and great speed up for bigger ones.\ne.g.\n\n* BEFORE:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s\nWall time: 6.56 s\n```\n\n* AFTER:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s\nWall time: 2.01 s\n```\n\n(it's based on 4.1.2, but I hope it applies fine to 4.2)\n\nI also get rid of the power function in generic.py which is exactly the same as the generic_power in sage.structure.element\n\nFinally, with sage 4.1.2, sage -testall reports no failure.",
     "created_at": "2009-10-27T19:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ CPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s
 Wall time: 6.56 s
 ```
 
-
 * AFTER:
 
 ```
@@ -99,7 +98,6 @@ sage: time ord = order_from_multiple(a,3^108-1,operation="*")
 CPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s
 Wall time: 2.01 s
 ```
-
 
 (it's based on 4.1.2, but I hope it applies fine to 4.2)
 
@@ -114,7 +112,7 @@ Finally, with sage 4.1.2, sage -testall reports no failure.
 archive/issue_comments_061088.json:
 ```json
 {
-    "body": "This is a significant improvement, and it does apply to 4.2.  I'd give a \nfully positive review, but I've noticed a couple of things about this \nfunction which could be considered.\n\nMost important, the function always checks whether `M*P` equals the\nidentity.  When this function is used one will normally be sure of the\norder of the group (or of a subgroup in which the element lies), so that\nthis verification is unnecessary.  I think the function should have an\noptional parameter `check` (with default value `True` for backwards\ncompatibility) and that the `assert` line should be executed only if \n`check is True`.  \nI found that your GF(3<sup>108</sup>) example ran about 25% faster with the\n`assert` line commented out.\n\nI noticed that `plist` now only gets used to create the factorization `F`, and to check whether `M` is prime.\nThus the line \n\n```\n        plist = [p for p,e in F]\n```\n\nisn't really needed.  This leads me to \nthink that really the factorization of `M` is what should be cached \nby the caller, for giving `plist` requires that the exponents get computed each time the \nfunction is called.  Thus maybe there should be an optional parameter \n`factorization` (with `plist` kept for compatibility), with code such as such as\n\n```\n    if factorization:\n        F = factorization\n    elif plist:\n        F = [(p, M.valuation(p)) for p in plist]\n    else:\n        F = M.factor()\n\n    if list(F) == [(M, 1)]:\n        return M\n```\n\n\nI notice that your GF(3<sup>108</sup>) example is nearly 4 times faster than \n`a.multiplicative_order()`, and I've opened ticket #7324 for this function \nto use `order_from_multiple`.",
+    "body": "This is a significant improvement, and it does apply to 4.2.  I'd give a \nfully positive review, but I've noticed a couple of things about this \nfunction which could be considered.\n\nMost important, the function always checks whether `M*P` equals the\nidentity.  When this function is used one will normally be sure of the\norder of the group (or of a subgroup in which the element lies), so that\nthis verification is unnecessary.  I think the function should have an\noptional parameter `check` (with default value `True` for backwards\ncompatibility) and that the `assert` line should be executed only if \n`check is True`.  \nI found that your GF(3<sup>108</sup>) example ran about 25% faster with the\n`assert` line commented out.\n\nI noticed that `plist` now only gets used to create the factorization `F`, and to check whether `M` is prime.\nThus the line \n\n```\n        plist = [p for p,e in F]\n```\nisn't really needed.  This leads me to \nthink that really the factorization of `M` is what should be cached \nby the caller, for giving `plist` requires that the exponents get computed each time the \nfunction is called.  Thus maybe there should be an optional parameter \n`factorization` (with `plist` kept for compatibility), with code such as such as\n\n```\n    if factorization:\n        F = factorization\n    elif plist:\n        F = [(p, M.valuation(p)) for p in plist]\n    else:\n        F = M.factor()\n\n    if list(F) == [(M, 1)]:\n        return M\n```\n\nI notice that your GF(3<sup>108</sup>) example is nearly 4 times faster than \n`a.multiplicative_order()`, and I've opened ticket #7324 for this function \nto use `order_from_multiple`.",
     "created_at": "2009-10-29T10:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ Thus the line
 ```
         plist = [p for p,e in F]
 ```
-
 isn't really needed.  This leads me to 
 think that really the factorization of `M` is what should be cached 
 by the caller, for giving `plist` requires that the exponents get computed each time the 
@@ -161,7 +158,6 @@ function is called.  Thus maybe there should be an optional parameter
     if list(F) == [(M, 1)]:
         return M
 ```
-
 
 I notice that your GF(3<sup>108</sup>) example is nearly 4 times faster than 
 `a.multiplicative_order()`, and I've opened ticket #7324 for this function 

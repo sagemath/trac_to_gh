@@ -3,7 +3,7 @@
 archive/issues_008818.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: ZZ.range(1r, 10r)\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8818\n\n",
     "created_at": "2010-04-29T07:06:09Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_008818.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: ZZ.range(1r, 10r)
 ...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8818
 

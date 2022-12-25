@@ -3,7 +3,7 @@
 archive/issues_002216.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSo I just tried the following:\n\n\n```\nsage: F.<alpha> = NumberField(x**4+3)\nsage: F.order([alpha**2], allow_subfield=True)\n```\n\n\nand it seemed to go into an infinite loop. (Maybe I'm impatient, but it doesn't seem like it should take more than 2 seconds to do this, nevermind the minute I waited.) I haven't looked to see what the problem is at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2216\n\n",
+    "body": "Assignee: @williamstein\n\nSo I just tried the following:\n\n```\nsage: F.<alpha> = NumberField(x**4+3)\nsage: F.order([alpha**2], allow_subfield=True)\n```\n\nand it seemed to go into an infinite loop. (Maybe I'm impatient, but it doesn't seem like it should take more than 2 seconds to do this, nevermind the minute I waited.) I haven't looked to see what the problem is at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2216\n\n",
     "created_at": "2008-02-20T01:57:12Z",
     "labels": [
         "component: number theory",
@@ -20,12 +20,10 @@ Assignee: @williamstein
 
 So I just tried the following:
 
-
 ```
 sage: F.<alpha> = NumberField(x**4+3)
 sage: F.order([alpha**2], allow_subfield=True)
 ```
-
 
 and it seemed to go into an infinite loop. (Maybe I'm impatient, but it doesn't seem like it should take more than 2 seconds to do this, nevermind the minute I waited.) I haven't looked to see what the problem is at all.
 

@@ -147,7 +147,7 @@ improvements to gamma, apply after Mike's trac_4432.patch
 archive/issue_comments_032506.json:
 ```json
 {
-    "body": "The call to `RR(x).gamma()` does not match the previous behavior of the gamma function. The following doesn't work with the given patches:\n\n\n```\nsage: gamma(QQbar(I))\n<boom>\n```\n\n\nattachment:trac_4432-gamma.patch fixes this, and adds a few more doctests. \n\nI give Mike's patch a positive review. Mike, can you check my changes?",
+    "body": "The call to `RR(x).gamma()` does not match the previous behavior of the gamma function. The following doesn't work with the given patches:\n\n```\nsage: gamma(QQbar(I))\n<boom>\n```\n\nattachment:trac_4432-gamma.patch fixes this, and adds a few more doctests. \n\nI give Mike's patch a positive review. Mike, can you check my changes?",
     "created_at": "2008-11-15T11:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -158,12 +158,10 @@ archive/issue_comments_032506.json:
 
 The call to `RR(x).gamma()` does not match the previous behavior of the gamma function. The following doesn't work with the given patches:
 
-
 ```
 sage: gamma(QQbar(I))
 <boom>
 ```
-
 
 attachment:trac_4432-gamma.patch fixes this, and adds a few more doctests. 
 
@@ -220,7 +218,7 @@ Michael
 archive/issue_comments_032509.json:
 ```json
 {
-    "body": "There are two doctest failures with this patch:\n\n```\nsage -t -long devel/sage/sage/rings/arith.py                \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/arith.py\", line 3011:\n    sage: falling_factorial(1+I, I)\nExpected:\n    0.652965496420167 + 0.343065839816545*I\nGot:\n    gamma(I + 2)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/arith.py\", line 3074:\n    sage: rising_factorial(1+I, I)\nExpected:\n    0.266816390637832 + 0.122783354006372*I\nGot:\n    gamma(2*I + 1)/gamma(I + 1)\n**********************************************************************\n```\n\nSounds like this will be easy to fix. I would also like to see if there are any performance regressions with this patch.\n\nCheers,\n\nMichael",
+    "body": "There are two doctest failures with this patch:\n\n```\nsage -t -long devel/sage/sage/rings/arith.py                \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/arith.py\", line 3011:\n    sage: falling_factorial(1+I, I)\nExpected:\n    0.652965496420167 + 0.343065839816545*I\nGot:\n    gamma(I + 2)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/arith.py\", line 3074:\n    sage: rising_factorial(1+I, I)\nExpected:\n    0.266816390637832 + 0.122783354006372*I\nGot:\n    gamma(2*I + 1)/gamma(I + 1)\n**********************************************************************\n```\nSounds like this will be easy to fix. I would also like to see if there are any performance regressions with this patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T09:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -249,7 +247,6 @@ Got:
     gamma(2*I + 1)/gamma(I + 1)
 **********************************************************************
 ```
-
 Sounds like this will be easy to fix. I would also like to see if there are any performance regressions with this patch.
 
 Cheers,
@@ -263,7 +260,7 @@ Michael
 archive/issue_comments_032510.json:
 ```json
 {
-    "body": "Michael,\n\nI probably have to read the Mercurial documentation.\n\nI'm not sure if I measure the performance correctly, but if I do\n\n\n```\ndef f(n):\n    s = 0\n    for i in xrange(n):\n        s += factorial(2^i)\n    return s.ndigits()\n\ndef g(n):\n    s = 0\n    for i in xrange(n):\n        s += gamma((1.8)^i)\n    return s\n\ndef h(n):\n    set_random_seed(0)\n    s = 0\n    for i in xrange(n):\n        s += gamma(random())\n    return s\n\ntimeit('f(22)')\ntimeit('g(22)')\ntimeit('h(10^4)')\n```\n\n\nI get the following:\n\non sage-3.2 without the patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.16 ms per loop\n5 loops, best of 3: 5.38 s per loop\n```\n\n\nwith trac_4432.patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.18 ms per loop\n5 loops, best of 3: 1.67 s per loop\n```\n\n\nwith trac_4432.patch + trac_4432-gamma.patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.17 ms per loop\n5 loops, best of 3: 5.45 s per loop\n```\n\n\nSo trac_4432.patch is much faster for small values of the gamma function\nbecause we are not computing over the complex numbers.\n\nAlso only with trac_4432.patch\n\n```\nplot(gamma, 1, 4)\n```\n\nworks. But this also doesn't work with the current code.\n\nGreetings,\n\nWilfried",
+    "body": "Michael,\n\nI probably have to read the Mercurial documentation.\n\nI'm not sure if I measure the performance correctly, but if I do\n\n```\ndef f(n):\n    s = 0\n    for i in xrange(n):\n        s += factorial(2^i)\n    return s.ndigits()\n\ndef g(n):\n    s = 0\n    for i in xrange(n):\n        s += gamma((1.8)^i)\n    return s\n\ndef h(n):\n    set_random_seed(0)\n    s = 0\n    for i in xrange(n):\n        s += gamma(random())\n    return s\n\ntimeit('f(22)')\ntimeit('g(22)')\ntimeit('h(10^4)')\n```\n\nI get the following:\n\non sage-3.2 without the patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.16 ms per loop\n5 loops, best of 3: 5.38 s per loop\n```\n\nwith trac_4432.patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.18 ms per loop\n5 loops, best of 3: 1.67 s per loop\n```\n\nwith trac_4432.patch + trac_4432-gamma.patch\n\n```\n5 loops, best of 3: 10.9 s per loop\n125 loops, best of 3: 4.17 ms per loop\n5 loops, best of 3: 5.45 s per loop\n```\n\nSo trac_4432.patch is much faster for small values of the gamma function\nbecause we are not computing over the complex numbers.\n\nAlso only with trac_4432.patch\n\n```\nplot(gamma, 1, 4)\n```\nworks. But this also doesn't work with the current code.\n\nGreetings,\n\nWilfried",
     "created_at": "2008-11-24T15:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -277,7 +274,6 @@ Michael,
 I probably have to read the Mercurial documentation.
 
 I'm not sure if I measure the performance correctly, but if I do
-
 
 ```
 def f(n):
@@ -304,7 +300,6 @@ timeit('g(22)')
 timeit('h(10^4)')
 ```
 
-
 I get the following:
 
 on sage-3.2 without the patch
@@ -315,7 +310,6 @@ on sage-3.2 without the patch
 5 loops, best of 3: 5.38 s per loop
 ```
 
-
 with trac_4432.patch
 
 ```
@@ -323,7 +317,6 @@ with trac_4432.patch
 125 loops, best of 3: 4.18 ms per loop
 5 loops, best of 3: 1.67 s per loop
 ```
-
 
 with trac_4432.patch + trac_4432-gamma.patch
 
@@ -333,7 +326,6 @@ with trac_4432.patch + trac_4432-gamma.patch
 5 loops, best of 3: 5.45 s per loop
 ```
 
-
 So trac_4432.patch is much faster for small values of the gamma function
 because we are not computing over the complex numbers.
 
@@ -342,7 +334,6 @@ Also only with trac_4432.patch
 ```
 plot(gamma, 1, 4)
 ```
-
 works. But this also doesn't work with the current code.
 
 Greetings,
@@ -374,7 +365,7 @@ make plotting of the gamma function work, fix doctests, apply after burchin's tr
 archive/issue_comments_032512.json:
 ```json
 {
-    "body": "Attachment [trac_4432-plot-doc.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-plot-doc.patch) by whuss created at 2008-11-24 16:18:56\n\nI fixed the doctests and the plotting of the gamma function, with\nattachment:trac_4432-plot-doc.patch.\n\nAlso\n\n\n```\nsage: timeit('h(10^4)')\n5 loops, best of 3: 1.68 s per loop\n```\n\n\nGreetings,\n\nWilfried",
+    "body": "Attachment [trac_4432-plot-doc.patch](tarball://root/attachments/some-uuid/ticket4432/trac_4432-plot-doc.patch) by whuss created at 2008-11-24 16:18:56\n\nI fixed the doctests and the plotting of the gamma function, with\nattachment:trac_4432-plot-doc.patch.\n\nAlso\n\n```\nsage: timeit('h(10^4)')\n5 loops, best of 3: 1.68 s per loop\n```\n\nGreetings,\n\nWilfried",
     "created_at": "2008-11-24T16:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4432",
     "type": "issue_comment",
@@ -390,12 +381,10 @@ attachment:trac_4432-plot-doc.patch.
 
 Also
 
-
 ```
 sage: timeit('h(10^4)')
 5 loops, best of 3: 1.68 s per loop
 ```
-
 
 Greetings,
 

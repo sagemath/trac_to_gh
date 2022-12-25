@@ -169,7 +169,7 @@ This also fixes #4711
 archive/issue_comments_035331.json:
 ```json
 {
-    "body": "Oops:\n\n```\n(Stripping trailing CRs from patch.)\npatching file sage-ptest\nHunk #2 FAILED at 279.\nHunk #3 FAILED at 291.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Oops:\n\n```\n(Stripping trailing CRs from patch.)\npatching file sage-ptest\nHunk #2 FAILED at 279.\nHunk #3 FAILED at 291.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-11T13:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
@@ -186,7 +186,6 @@ patching file sage-ptest
 Hunk #2 FAILED at 279.
 Hunk #3 FAILED at 291.
 ```
-
 
 Cheers,
 

@@ -142,7 +142,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065321.json:
 ```json
 {
-    "body": "I saw you replaced \n\n```\nfor w in (self._cg.out_neighbors(v) if side == 1 else self._cg.in_neighbors(v)): \n```\n\nwith\n\n```\nif side == 1: \n   neighbors = self._cg.out_neighbors(v) \nelif self._cg_rev is not None: # Sparse \n   neighbors = self._cg_rev.out_neighbors(v) \nelse: # Dense \n   neighbors = self._cg.in_neighbors(v) \n```\n\nI understand what you mean, but wouldn't it easier for developpers to define a function \"in_neighbors\" or \"out_neighbors\" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?\n\nThis kind of thing is bound to reappear very often as we write algorithms in Cython... :-)\n\nNathann",
+    "body": "I saw you replaced \n\n```\nfor w in (self._cg.out_neighbors(v) if side == 1 else self._cg.in_neighbors(v)): \n```\nwith\n\n```\nif side == 1: \n   neighbors = self._cg.out_neighbors(v) \nelif self._cg_rev is not None: # Sparse \n   neighbors = self._cg_rev.out_neighbors(v) \nelse: # Dense \n   neighbors = self._cg.in_neighbors(v) \n```\nI understand what you mean, but wouldn't it easier for developpers to define a function \"in_neighbors\" or \"out_neighbors\" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?\n\nThis kind of thing is bound to reappear very often as we write algorithms in Cython... :-)\n\nNathann",
     "created_at": "2009-12-15T11:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ I saw you replaced
 ```
 for w in (self._cg.out_neighbors(v) if side == 1 else self._cg.in_neighbors(v)): 
 ```
-
 with
 
 ```
@@ -167,7 +166,6 @@ elif self._cg_rev is not None: # Sparse
 else: # Dense 
    neighbors = self._cg.in_neighbors(v) 
 ```
-
 I understand what you mean, but wouldn't it easier for developpers to define a function "in_neighbors" or "out_neighbors" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?
 
 This kind of thing is bound to reappear very often as we write algorithms in Cython... :-)
@@ -217,7 +215,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_065324.json:
 ```json
 {
-    "body": "Replying to [comment:7 ncohen]:\n> I saw you replaced \n> ...\n> with\n> ...\n> I understand what you mean, but wouldn't it easier for developpers to define a function \"in_neighbors\" or \"out_neighbors\" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?\n\nOn the level of c_graphs, there is no way to avoid the implementation of graphs. You're using ints as vertices which may not line up with the actual labels, and since you're calling methods of self._cg, there's no way around it. If you want to write on a more friendly level, you need to sacrifice some speed, since on the level of (mostly Python) backends, the vertex labels are honest, and 'in_neighbors' is the appropriate function there.\n\n> This kind of thing is bound to reappear very often as we write algorithms in Cython... :-)\n\nThis is only relevant to very low-level functions. In which case you *are* implementing graphs :)",
+    "body": "Replying to [comment:7 ncohen]:\n> I saw you replaced \n> ...\n> with\n> ...\n> I understand what you mean, but wouldn't it easier for developpers to define a function \"in_neighbors\" or \"out_neighbors\" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?\n\n\nOn the level of c_graphs, there is no way to avoid the implementation of graphs. You're using ints as vertices which may not line up with the actual labels, and since you're calling methods of self._cg, there's no way around it. If you want to write on a more friendly level, you need to sacrifice some speed, since on the level of (mostly Python) backends, the vertex labels are honest, and 'in_neighbors' is the appropriate function there.\n\n> This kind of thing is bound to reappear very often as we write algorithms in Cython... :-)\n\n\nThis is only relevant to very low-level functions. In which case you *are* implementing graphs :)",
     "created_at": "2009-12-15T15:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
@@ -233,9 +231,11 @@ Replying to [comment:7 ncohen]:
 > ...
 > I understand what you mean, but wouldn't it easier for developpers to define a function "in_neighbors" or "out_neighbors" doing this stuff to avoid dealing with the implementation of graphs when in the c_graph.pyx file ( where the algorithm are more graph-theoretic and a bit further from the implementation ) ?
 
+
 On the level of c_graphs, there is no way to avoid the implementation of graphs. You're using ints as vertices which may not line up with the actual labels, and since you're calling methods of self._cg, there's no way around it. If you want to write on a more friendly level, you need to sacrifice some speed, since on the level of (mostly Python) backends, the vertex labels are honest, and 'in_neighbors' is the appropriate function there.
 
 > This kind of thing is bound to reappear very often as we write algorithms in Cython... :-)
+
 
 This is only relevant to very low-level functions. In which case you *are* implementing graphs :)
 
@@ -322,7 +322,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065329.json:
 ```json
 {
-    "body": "Replying to [comment:11 ncohen]:\n> Got it :-)\n> \n> D you think there could be a *nice* way, though, to prevent people from using in_neighbors on sparse graphs having a reversed version of themselves ?\n\nSparseGraphs will never have a reversed version. CGraphBackends may have a reversed version (i.e. two SparseGraphs), in which case in_neighbors will call it. I don't think we need to worry too much about lots of people implementing functions for the backends.",
+    "body": "Replying to [comment:11 ncohen]:\n> Got it :-)\n> \n> D you think there could be a *nice* way, though, to prevent people from using in_neighbors on sparse graphs having a reversed version of themselves ?\n\n\nSparseGraphs will never have a reversed version. CGraphBackends may have a reversed version (i.e. two SparseGraphs), in which case in_neighbors will call it. I don't think we need to worry too much about lots of people implementing functions for the backends.",
     "created_at": "2009-12-15T16:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7651",
     "type": "issue_comment",
@@ -335,6 +335,7 @@ Replying to [comment:11 ncohen]:
 > Got it :-)
 > 
 > D you think there could be a *nice* way, though, to prevent people from using in_neighbors on sparse graphs having a reversed version of themselves ?
+
 
 SparseGraphs will never have a reversed version. CGraphBackends may have a reversed version (i.e. two SparseGraphs), in which case in_neighbors will call it. I don't think we need to worry too much about lots of people implementing functions for the backends.
 

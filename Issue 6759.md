@@ -751,7 +751,7 @@ archive/issue_events_015935.json:
 archive/issue_comments_055544.json:
 ```json
 {
-    "body": "This breaks on Cygwin, whereas the version currently in Sage works fine:\n\n```\n/sage -i http://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/sqlite-3.6.17.spkg\n\n...\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating sqlite3.pc\nconfig.status: executing depfiles commands\nmake: *** No rule to make target `src/sqlite.h.in', needed by `sqlite3.h'.  Stop.\nError making sqlite\n\nreal    4m0.010s\nuser    1m7.730s\nsys     3m5.796s\nsage: An error occurred while installing sqlite-3.6.17\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/sage-4.1.2.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wstein/sage-4.1.2.alpha1/spkg/build/sqlite-3.6.17 and type 'make'.\nInstead type \"/home/wstein/sage-4.1.2.alpha1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/sage-4.1.2.alpha1/spkg/build/sqlite-3.6.17\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\n\nIn irc ddrake conjectures that:\n\n```\nddrake: spkg-install copies over a Makefile.in that I think is from the older version, and it fails immediately because source files got moved\n```\n\n\nThus we're changing this back to \"needs work\".",
+    "body": "This breaks on Cygwin, whereas the version currently in Sage works fine:\n\n```\n/sage -i http://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/sqlite-3.6.17.spkg\n\n...\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating sqlite3.pc\nconfig.status: executing depfiles commands\nmake: *** No rule to make target `src/sqlite.h.in', needed by `sqlite3.h'.  Stop.\nError making sqlite\n\nreal    4m0.010s\nuser    1m7.730s\nsys     3m5.796s\nsage: An error occurred while installing sqlite-3.6.17\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/sage-4.1.2.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wstein/sage-4.1.2.alpha1/spkg/build/sqlite-3.6.17 and type 'make'.\nInstead type \"/home/wstein/sage-4.1.2.alpha1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/sage-4.1.2.alpha1/spkg/build/sqlite-3.6.17\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\nIn irc ddrake conjectures that:\n\n```\nddrake: spkg-install copies over a Makefile.in that I think is from the older version, and it fails immediately because source files got moved\n```\n\nThus we're changing this back to \"needs work\".",
     "created_at": "2009-09-29T02:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
@@ -789,13 +789,11 @@ in order to set all environment variables correctly, then cd to
 subshell.)
 ```
 
-
 In irc ddrake conjectures that:
 
 ```
 ddrake: spkg-install copies over a Makefile.in that I think is from the older version, and it fails immediately because source files got moved
 ```
-
 
 Thus we're changing this back to "needs work".
 
@@ -824,7 +822,7 @@ Resolution changed from fixed to
 archive/issue_comments_055546.json:
 ```json
 {
-    "body": "Here's the effect of the old Makefile.in \"patch\":\n\n```\n--- src/Makefile.in\t2007-11-24 00:05:48.000000000 +0900\n+++ patches/Makefile.in\t2008-05-17 03:36:19.000000000 +0900\n@@ -570,11 +570,12 @@\n \t\tlibtclsqlite3.la $(LIBTCL)\n \n \n-install:\tsqlite3 libsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n+#install:\tsqlite3 libsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n+install: \tlibsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n \t$(INSTALL) -d $(DESTDIR)$(libdir)\n \t$(LTINSTALL) libsqlite3.la $(DESTDIR)$(libdir)\n \t$(INSTALL) -d $(DESTDIR)$(exec_prefix)/bin\n-\t$(LTINSTALL) sqlite3 $(DESTDIR)$(exec_prefix)/bin\n+\t#$(LTINSTALL) sqlite3 $(DESTDIR)$(exec_prefix)/bin\n \t$(INSTALL) -d $(DESTDIR)$(prefix)/include\n \t$(INSTALL) -m 0644 sqlite3.h $(DESTDIR)$(prefix)/include\n \t$(INSTALL) -m 0644 $(TOP)/src/sqlite3ext.h $(DESTDIR)$(prefix)/include\n```\n\nIt just comments out a bit of the install target. In 3.6.17, Makefile.in is all automake-generated, and it's not at all obvious (to me, at any rate) how to make the corresponding change. However, I'm wondering if we need to make the change at all. The idea is to not install the sqlite client; what will happen if we do that? In `spkg-install`, it says the client isn't needed for Sage, but if we install it anyway, will anything bad happen? \n\nIf we can get by without any patches at all to the source, that seems ideal and very easy. Certainly better than manually patching an automake Makefile!",
+    "body": "Here's the effect of the old Makefile.in \"patch\":\n\n```\n--- src/Makefile.in\t2007-11-24 00:05:48.000000000 +0900\n+++ patches/Makefile.in\t2008-05-17 03:36:19.000000000 +0900\n@@ -570,11 +570,12 @@\n \t\tlibtclsqlite3.la $(LIBTCL)\n \n \n-install:\tsqlite3 libsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n+#install:\tsqlite3 libsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n+install: \tlibsqlite3.la sqlite3.h ${HAVE_TCL:1=tcl_install}\n \t$(INSTALL) -d $(DESTDIR)$(libdir)\n \t$(LTINSTALL) libsqlite3.la $(DESTDIR)$(libdir)\n \t$(INSTALL) -d $(DESTDIR)$(exec_prefix)/bin\n-\t$(LTINSTALL) sqlite3 $(DESTDIR)$(exec_prefix)/bin\n+\t#$(LTINSTALL) sqlite3 $(DESTDIR)$(exec_prefix)/bin\n \t$(INSTALL) -d $(DESTDIR)$(prefix)/include\n \t$(INSTALL) -m 0644 sqlite3.h $(DESTDIR)$(prefix)/include\n \t$(INSTALL) -m 0644 $(TOP)/src/sqlite3ext.h $(DESTDIR)$(prefix)/include\n```\nIt just comments out a bit of the install target. In 3.6.17, Makefile.in is all automake-generated, and it's not at all obvious (to me, at any rate) how to make the corresponding change. However, I'm wondering if we need to make the change at all. The idea is to not install the sqlite client; what will happen if we do that? In `spkg-install`, it says the client isn't needed for Sage, but if we install it anyway, will anything bad happen? \n\nIf we can get by without any patches at all to the source, that seems ideal and very easy. Certainly better than manually patching an automake Makefile!",
     "created_at": "2009-09-29T03:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
@@ -854,7 +852,6 @@ Here's the effect of the old Makefile.in "patch":
  	$(INSTALL) -m 0644 sqlite3.h $(DESTDIR)$(prefix)/include
  	$(INSTALL) -m 0644 $(TOP)/src/sqlite3ext.h $(DESTDIR)$(prefix)/include
 ```
-
 It just comments out a bit of the install target. In 3.6.17, Makefile.in is all automake-generated, and it's not at all obvious (to me, at any rate) how to make the corresponding change. However, I'm wondering if we need to make the change at all. The idea is to not install the sqlite client; what will happen if we do that? In `spkg-install`, it says the client isn't needed for Sage, but if we install it anyway, will anything bad happen? 
 
 If we can get by without any patches at all to the source, that seems ideal and very easy. Certainly better than manually patching an automake Makefile!
@@ -926,7 +923,7 @@ archive/issue_comments_055549.json:
 archive/issue_comments_055550.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> \"The requested URL /home/drake/sqlite-3.6.17.p0.spkg was not found on this server.\"\n\nOops, I deleted that the other day, thinking it had been dealt with. I'll remake the spkg. Marking as \"needs work\"",
+    "body": "Replying to [comment:8 was]:\n> \"The requested URL /home/drake/sqlite-3.6.17.p0.spkg was not found on this server.\"\n\n\nOops, I deleted that the other day, thinking it had been dealt with. I'll remake the spkg. Marking as \"needs work\"",
     "created_at": "2009-10-25T00:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
@@ -937,6 +934,7 @@ archive/issue_comments_055550.json:
 
 Replying to [comment:8 was]:
 > "The requested URL /home/drake/sqlite-3.6.17.p0.spkg was not found on this server."
+
 
 Oops, I deleted that the other day, thinking it had been dealt with. I'll remake the spkg. Marking as "needs work"
 

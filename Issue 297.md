@@ -93,7 +93,7 @@ Changing status from new to assigned.
 archive/issue_comments_001402.json:
 ```json
 {
-    "body": "Replying to [ticket:297 was]:\n> It seems much has changed since polymake v 2.2, so this might be difficult.\n> Also, they have interactive scripts, which one has to deal with.  Yuck.\n> \n> I did try just building from scratch and it seemed to work without any funny\n> business with GMP, etc. \n> \n> If you work on this, email wstein`@`gmail.com\n\nOk, I did some investigation. We need to modify support/configure.pl:\n\nAround line 273:\n\n```\n$InstallTop ||= $multi ? \"/usr/local/share/polymake\" : \"/usr/local/polymake\";\nif (!$silent) {\n   print \"\\nWhere should \", ($multi ? \"the architecture-independent part of \" : \"\"), \"polymake be installed? \";\n   answer_path($InstallTop);\n}\n```\n\nInstead of answer_path($InstallTop) we just should assign $InstallTop=getenv($SAGE_LOCAL) (or something alike, my perl is slightly rusty).\n\nWe also need to add Sage's gmp to $Libs around line 614 somewhere.\n\nCheers,\n\nMichael",
+    "body": "Replying to [ticket:297 was]:\n> It seems much has changed since polymake v 2.2, so this might be difficult.\n> Also, they have interactive scripts, which one has to deal with.  Yuck.\n> \n> I did try just building from scratch and it seemed to work without any funny\n> business with GMP, etc. \n> \n> If you work on this, email wstein`@`gmail.com\n\n\nOk, I did some investigation. We need to modify support/configure.pl:\n\nAround line 273:\n\n```\n$InstallTop ||= $multi ? \"/usr/local/share/polymake\" : \"/usr/local/polymake\";\nif (!$silent) {\n   print \"\\nWhere should \", ($multi ? \"the architecture-independent part of \" : \"\"), \"polymake be installed? \";\n   answer_path($InstallTop);\n}\n```\nInstead of answer_path($InstallTop) we just should assign $InstallTop=getenv($SAGE_LOCAL) (or something alike, my perl is slightly rusty).\n\nWe also need to add Sage's gmp to $Libs around line 614 somewhere.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-23T10:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/297",
     "type": "issue_comment",
@@ -111,6 +111,7 @@ Replying to [ticket:297 was]:
 > 
 > If you work on this, email wstein`@`gmail.com
 
+
 Ok, I did some investigation. We need to modify support/configure.pl:
 
 Around line 273:
@@ -122,7 +123,6 @@ if (!$silent) {
    answer_path($InstallTop);
 }
 ```
-
 Instead of answer_path($InstallTop) we just should assign $InstallTop=getenv($SAGE_LOCAL) (or something alike, my perl is slightly rusty).
 
 We also need to add Sage's gmp to $Libs around line 614 somewhere.

@@ -3,7 +3,7 @@
 archive/issues_001637.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom the MPFR mailing list:\n\n```\nThe release of MPFR 2.3.1 is imminent. Please help to make this\nrelease as good as possible by downloading and testing this\nrelease candidate:\n\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.bz2\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.gz\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.zip\n\nThe MD5's:\n3a029172c380fc28f17db9c727d244e5  mpfr-2.3.1-rc1.tar.bz2\n59f3523b93ec6674241110512b932f22  mpfr-2.3.1-rc1.tar.gz\nec69f43ad4bf00c3ce28467f0650bcb8  mpfr-2.3.1-rc1.zip\n\nChanges from version 2.3.0 to version 2.3.1:\n- Bug fixes; see <http://www.mpfr.org/mpfr-2.3.0/#bugs>.\n- Improved MPFR manual.\n\nPlease send success and failure reports to <mpfr@loria.fr>.\n\nIf no problems are found, MPFR 2.3.1 should be released around\n2008-01-12.\n\nHappy New Year,\n\n-- Vincent Lef\u00e8vre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) \n```\n\nPaul Zimmermann also suggested:\n\n```\n## Paul Zimmerman's MPFR\n\nMy name ends with two 'n', and more importantly I'm not the only author.\nThe simplest is to just remove my name.\n\nAlso 'occured' should be 'occurred' in that file.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1637\n\n",
+    "body": "Assignee: mabshoff\n\nFrom the MPFR mailing list:\n\n```\nThe release of MPFR 2.3.1 is imminent. Please help to make this\nrelease as good as possible by downloading and testing this\nrelease candidate:\n\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.bz2\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.gz\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.zip\n\nThe MD5's:\n3a029172c380fc28f17db9c727d244e5  mpfr-2.3.1-rc1.tar.bz2\n59f3523b93ec6674241110512b932f22  mpfr-2.3.1-rc1.tar.gz\nec69f43ad4bf00c3ce28467f0650bcb8  mpfr-2.3.1-rc1.zip\n\nChanges from version 2.3.0 to version 2.3.1:\n- Bug fixes; see <http://www.mpfr.org/mpfr-2.3.0/#bugs>.\n- Improved MPFR manual.\n\nPlease send success and failure reports to <mpfr@loria.fr>.\n\nIf no problems are found, MPFR 2.3.1 should be released around\n2008-01-12.\n\nHappy New Year,\n\n-- Vincent Lef\u00e8vre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) \n```\nPaul Zimmermann also suggested:\n\n```\n## Paul Zimmerman's MPFR\n\nMy name ends with two 'n', and more importantly I'm not the only author.\nThe simplest is to just remove my name.\n\nAlso 'occured' should be 'occurred' in that file.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1637\n\n",
     "created_at": "2007-12-29T19:31:15Z",
     "labels": [
         "component: packages: standard",
@@ -47,7 +47,6 @@ Happy New Year,
 
 -- Vincent Lefèvre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) 
 ```
-
 Paul Zimmermann also suggested:
 
 ```
@@ -58,7 +57,6 @@ The simplest is to just remove my name.
 
 Also 'occured' should be 'occurred' in that file.
 ```
-
 
 Cheers,
 

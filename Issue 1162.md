@@ -123,7 +123,7 @@ I've added my own patch for these issues.  It's based on Paul Zimmerman's patch 
 archive/issue_comments_007091.json:
 ```json
 {
-    "body": "\n```\nwas-1162: #1162 is ready.\n[03:27am] was-1162: But it is hard to apply.\n[03:27am] mabshoff: ok\n[03:27am] was-1162: Basically apply each patch, ignore all the failed hunks.\n[03:28am] mabshoff: arrg.\n[03:28am] mabshoff: will do.\n[03:28am] was-1162: then go into real_mpfr.pyx and manually delete\n[03:28am] was-1162: 658        elif hasattr(x, '_mpfr_'):\n[03:28am] was-1162: 659            return x._mpfr_(self)\n[03:28am] was-1162: It's scary--\n[03:28am] mabshoff: +1\n[03:28am] was-1162: but *all* that is being done is that the rounding mode is being changed from Z to N in one place.\n[03:28am] was-1162: and some doctests are being changed to reflect this.\n[03:28am] mabshoff: ok\n```\n",
+    "body": "```\nwas-1162: #1162 is ready.\n[03:27am] was-1162: But it is hard to apply.\n[03:27am] mabshoff: ok\n[03:27am] was-1162: Basically apply each patch, ignore all the failed hunks.\n[03:28am] mabshoff: arrg.\n[03:28am] mabshoff: will do.\n[03:28am] was-1162: then go into real_mpfr.pyx and manually delete\n[03:28am] was-1162: 658        elif hasattr(x, '_mpfr_'):\n[03:28am] was-1162: 659            return x._mpfr_(self)\n[03:28am] was-1162: It's scary--\n[03:28am] mabshoff: +1\n[03:28am] was-1162: but *all* that is being done is that the rounding mode is being changed from Z to N in one place.\n[03:28am] was-1162: and some doctests are being changed to reflect this.\n[03:28am] mabshoff: ok\n```",
     "created_at": "2007-12-15T11:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
@@ -131,7 +131,6 @@ archive/issue_comments_007091.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 was-1162: #1162 is ready.
@@ -149,7 +148,6 @@ was-1162: #1162 is ready.
 [03:28am] was-1162: and some doctests are being changed to reflect this.
 [03:28am] mabshoff: ok
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005889.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nAdd random simplicial complexes to the class of examples of simplicial complexes, so you can do\n\n```\nsage: simplicial_complexes.RandomComplex(6, 2)\n```\n\nto get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5889\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAdd random simplicial complexes to the class of examples of simplicial complexes, so you can do\n\n```\nsage: simplicial_complexes.RandomComplex(6, 2)\n```\nto get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5889\n\n",
     "created_at": "2009-04-24T17:14:45Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ Add random simplicial complexes to the class of examples of simplicial complexes
 ```
 sage: simplicial_complexes.RandomComplex(6, 2)
 ```
-
 to get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).
 
 

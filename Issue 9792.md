@@ -55,7 +55,7 @@ archive/issue_comments_096003.json:
 archive/issue_comments_096004.json:
 ```json
 {
-    "body": "From a participant in a workshop:\n\n```\n\nSay, if I want to show the multiples of 5 on the number line. How should I do that in SAGE?\n\nFor example: points([(5*n,0) for n in [-3..3]]) gives me the y-axis which I don't want\n```\n\n\njason says, regarding possible solutions,\n\n```\nI would just turn axes off and make your own line:\n\npoints([(5*n,0) for n in [-3..3]],axes=False)+line((-3,0),(3,0))\n\nYou'd have to do your own ticks, though.  You might also set ymin and ymax to something small (ymin=-.01,ymax=.01)\n\nIt would be pretty straightforward for us to make an option that turns off axes selectively.  I could imagine an interface like:\n\naxes=False # turn off all axes\naxes=True # turn on all axes\naxes=[True,False] # turn on horizontal axis, turn off vertical axis\n\nor maybe it should be:\n\naxes='horizontal' # turn on only horizontal axis\naxes='vertical' # turn on only vertical axis.\n```\n",
+    "body": "From a participant in a workshop:\n\n```\n\nSay, if I want to show the multiples of 5 on the number line. How should I do that in SAGE?\n\nFor example: points([(5*n,0) for n in [-3..3]]) gives me the y-axis which I don't want\n```\n\njason says, regarding possible solutions,\n\n```\nI would just turn axes off and make your own line:\n\npoints([(5*n,0) for n in [-3..3]],axes=False)+line((-3,0),(3,0))\n\nYou'd have to do your own ticks, though.  You might also set ymin and ymax to something small (ymin=-.01,ymax=.01)\n\nIt would be pretty straightforward for us to make an option that turns off axes selectively.  I could imagine an interface like:\n\naxes=False # turn off all axes\naxes=True # turn on all axes\naxes=[True,False] # turn on horizontal axis, turn off vertical axis\n\nor maybe it should be:\n\naxes='horizontal' # turn on only horizontal axis\naxes='vertical' # turn on only vertical axis.\n```",
     "created_at": "2011-06-12T01:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ Say, if I want to show the multiples of 5 on the number line. How should I do th
 
 For example: points([(5*n,0) for n in [-3..3]]) gives me the y-axis which I don't want
 ```
-
 
 jason says, regarding possible solutions,
 
@@ -94,7 +93,6 @@ or maybe it should be:
 axes='horizontal' # turn on only horizontal axis
 axes='vertical' # turn on only vertical axis.
 ```
-
 
 
 
@@ -121,7 +119,7 @@ archive/issue_comments_096005.json:
 archive/issue_comments_096006.json:
 ```json
 {
-    "body": "Here is a contribution to this issue from user \"jaia\" at [this ask.sagemath.org question](http://ask.sagemath.org/question/1586/function-for-1-d-plotting):\n\n```\ndef plot_1d(xmin, xmax, ymin=-1, ymax=1):\np=plot((ymax+ymin)/2, (xmin, xmax), color=\"black\", axes=False) + point((0,ymax), color=\"white\") + point((0,ymin), color=\"white\")\nreturn p\n```\n\nused\n\n```\nplot_1d(-1,1200,-1,1) + point((0,0), color=\"black\", size=20) + text(\"0\", (0,-0.05), color=\"black\") + point((1000,0), color=\"black\", size=20) + text(\"K\", (1000,-0.05), color=\"black\") + arrow((700, 0), (1000,0)) + arrow((0, 0), (300,0)) + arrow((350, 0), (650,0)) + arrow((1100, 0), (1000,0))\n```\n",
+    "body": "Here is a contribution to this issue from user \"jaia\" at [this ask.sagemath.org question](http://ask.sagemath.org/question/1586/function-for-1-d-plotting):\n\n```\ndef plot_1d(xmin, xmax, ymin=-1, ymax=1):\np=plot((ymax+ymin)/2, (xmin, xmax), color=\"black\", axes=False) + point((0,ymax), color=\"white\") + point((0,ymin), color=\"white\")\nreturn p\n```\nused\n\n```\nplot_1d(-1,1200,-1,1) + point((0,0), color=\"black\", size=20) + text(\"0\", (0,-0.05), color=\"black\") + point((1000,0), color=\"black\", size=20) + text(\"K\", (1000,-0.05), color=\"black\") + arrow((700, 0), (1000,0)) + arrow((0, 0), (300,0)) + arrow((350, 0), (650,0)) + arrow((1100, 0), (1000,0))\n```",
     "created_at": "2012-07-16T13:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
@@ -137,13 +135,11 @@ def plot_1d(xmin, xmax, ymin=-1, ymax=1):
 p=plot((ymax+ymin)/2, (xmin, xmax), color="black", axes=False) + point((0,ymax), color="white") + point((0,ymin), color="white")
 return p
 ```
-
 used
 
 ```
 plot_1d(-1,1200,-1,1) + point((0,0), color="black", size=20) + text("0", (0,-0.05), color="black") + point((1000,0), color="black", size=20) + text("K", (1000,-0.05), color="black") + arrow((700, 0), (1000,0)) + arrow((0, 0), (300,0)) + arrow((350, 0), (650,0)) + arrow((1100, 0), (1000,0))
 ```
-
 
 
 

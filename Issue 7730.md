@@ -3,7 +3,7 @@
 archive/issues_007730.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: matrices, hessenberg form\n\nI heard of the following bug report through William.\n\nBug report\n----------\n\nSimple 8X8 matrix determinant computation makes sage hang:\n\n\n```\ndef genVar(i):\n    return \"x%i\"%i\n\ndef matrix_from_hash(h):\n    R=FractionField(PolynomialRing(GF(2),\",\".join(map(genVar,range(0,10)))))\n    h2 = {}\n    for p in h:\n        x=R.zero_element()\n        for v in h[p]:\n            x=x+R.gens()[v]\n        h2[p] = x\n        h2[p[1],p[0]] = x\n    return matrix(h2,sparse=False)\n\ndef test():\n    m = matrix_from_hash({(0, 1): [0, 5], (1, 2): [0], (5, 6): [2], (6, 7): [1], (4, 5): [4], (0, 7): [1, 7], (0, 6): [2, 1], (0, 5): [4, 2], (0, 4): [3, 4], (2, 3): [6], (0, 3): [6, 3], (3, 4): [3], (0, 2): [0, 6]})\n    print m\n    m.charpoly()\n```\n\n\nOn the other hand if m.det() is replaced m.inverse(), it runs through in no time.\n\nThe determinant of the matrix is a sum of two monomials: ``x1*x4*x5*x6 + x0*x2*x3*x7``, but even the most primitive implementation (summing all 8! permutations,most of them zero) should run through in much less than minute.\n\nNotes\n-----\n\nI could only look at this briefly so far.  The problem is --- this is perhaps unexpected --- not with the more recent implementation of \"_charpoly_df\".  In fact, in the method \"charpoly\", the method selected is \"_charpoly_hessenberg\".  Both methods \"hessenberg\" and \"hessenbergize\" reveal this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7730\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: matrices, hessenberg form\n\nI heard of the following bug report through William.\n\nBug report\n\n---\n\nSimple 8X8 matrix determinant computation makes sage hang:\n\n```\ndef genVar(i):\n    return \"x%i\"%i\n\ndef matrix_from_hash(h):\n    R=FractionField(PolynomialRing(GF(2),\",\".join(map(genVar,range(0,10)))))\n    h2 = {}\n    for p in h:\n        x=R.zero_element()\n        for v in h[p]:\n            x=x+R.gens()[v]\n        h2[p] = x\n        h2[p[1],p[0]] = x\n    return matrix(h2,sparse=False)\n\ndef test():\n    m = matrix_from_hash({(0, 1): [0, 5], (1, 2): [0], (5, 6): [2], (6, 7): [1], (4, 5): [4], (0, 7): [1, 7], (0, 6): [2, 1], (0, 5): [4, 2], (0, 4): [3, 4], (2, 3): [6], (0, 3): [6, 3], (3, 4): [3], (0, 2): [0, 6]})\n    print m\n    m.charpoly()\n```\n\nOn the other hand if m.det() is replaced m.inverse(), it runs through in no time.\n\nThe determinant of the matrix is a sum of two monomials: ``x1*x4*x5*x6 + x0*x2*x3*x7``, but even the most primitive implementation (summing all 8! permutations,most of them zero) should run through in much less than minute.\n\nNotes\n\n---\n\nI could only look at this briefly so far.  The problem is --- this is perhaps unexpected --- not with the more recent implementation of \"_charpoly_df\".  In fact, in the method \"charpoly\", the method selected is \"_charpoly_hessenberg\".  Both methods \"hessenberg\" and \"hessenbergize\" reveal this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7730\n\n",
     "created_at": "2009-12-18T02:53:45Z",
     "labels": [
         "component: algebra",
@@ -23,10 +23,10 @@ Keywords: matrices, hessenberg form
 I heard of the following bug report through William.
 
 Bug report
-----------
+
+---
 
 Simple 8X8 matrix determinant computation makes sage hang:
-
 
 ```
 def genVar(i):
@@ -49,13 +49,13 @@ def test():
     m.charpoly()
 ```
 
-
 On the other hand if m.det() is replaced m.inverse(), it runs through in no time.
 
 The determinant of the matrix is a sum of two monomials: ``x1*x4*x5*x6 + x0*x2*x3*x7``, but even the most primitive implementation (summing all 8! permutations,most of them zero) should run through in much less than minute.
 
 Notes
------
+
+---
 
 I could only look at this briefly so far.  The problem is --- this is perhaps unexpected --- not with the more recent implementation of "_charpoly_df".  In fact, in the method "charpoly", the method selected is "_charpoly_hessenberg".  Both methods "hessenberg" and "hessenbergize" reveal this problem.
 
@@ -134,7 +134,7 @@ Sebastian
 archive/issue_comments_066311.json:
 ```json
 {
-    "body": "> Now the easier expression a*y already causes Sage to hang. \n> I can't see an easy reason for why this computation shouldn't \n> finish, I guess it's just that *fraction fields* of multivariate \n> polynomial rings are very slow in the current implementation. \n> In any case, I'll run the code on an idle machine in a few minutes \n> and post here again in the next few days. \n\nUnsubstantiated guess: Maybe Singular is taking a GCD, and GCD's in Singular suck?\n\nWe *really* need to write our own polynomial GCD, already...",
+    "body": "> Now the easier expression a*y already causes Sage to hang. \n> I can't see an easy reason for why this computation shouldn't \n> finish, I guess it's just that *fraction fields* of multivariate \n> polynomial rings are very slow in the current implementation. \n> In any case, I'll run the code on an idle machine in a few minutes \n> and post here again in the next few days. \n\n\nUnsubstantiated guess: Maybe Singular is taking a GCD, and GCD's in Singular suck?\n\nWe *really* need to write our own polynomial GCD, already...",
     "created_at": "2009-12-29T08:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -150,6 +150,7 @@ archive/issue_comments_066311.json:
 > In any case, I'll run the code on an idle machine in a few minutes 
 > and post here again in the next few days. 
 
+
 Unsubstantiated guess: Maybe Singular is taking a GCD, and GCD's in Singular suck?
 
 We *really* need to write our own polynomial GCD, already...
@@ -161,7 +162,7 @@ We *really* need to write our own polynomial GCD, already...
 archive/issue_comments_066312.json:
 ```json
 {
-    "body": "I spent some more time on this.  The attached file `x2.sage` as before a method `test_problem()`.  To find out when things turn from acceptably slow to ridiculously slow, I added one term after the other to the numerator polynomial of ``a`` (in the notation as before).  I think the two elements ``b`` and ``c`` display the problem quite well, exhibiting vastly different timings despite ``c`` only including one additional monomial term:\n\n\n```\n    sage: x,a,b,c,y = test_problem()\n    sage: timeit('_ = b*y', number=1, repeat=1)\n    1 loops, best of 1: 1.5 s per loop\n    sage: timeit('_ = c*y', number=1, repeat=1)\n    1 loops, best of 1: 1.79e+13 ns per loop\n```\n\n\nBy the way, the second timing is about 4.97 hours and the output ``1.79e+13 ns`` should perhaps be improved.  Is the ``timeit`` command something imported from an outside package (and thus _perhaps_ difficult to change), or something that can easily be changed within the Sage code?\n\nAnyway, I am a little puzzled about this problem at the moment as I don't quite see how the implementation of this should be this sensitive to the input.  I'll try to break it down to the level of multiplications and GCDs next.\n\nFinally, regarding the computation of ``a*y``, which I had started on another machine, well, I terminated it this morning after running for 180 hours and a peak memory usage of over 1.1GB.\n\nSebastian",
+    "body": "I spent some more time on this.  The attached file `x2.sage` as before a method `test_problem()`.  To find out when things turn from acceptably slow to ridiculously slow, I added one term after the other to the numerator polynomial of ``a`` (in the notation as before).  I think the two elements ``b`` and ``c`` display the problem quite well, exhibiting vastly different timings despite ``c`` only including one additional monomial term:\n\n```\n    sage: x,a,b,c,y = test_problem()\n    sage: timeit('_ = b*y', number=1, repeat=1)\n    1 loops, best of 1: 1.5 s per loop\n    sage: timeit('_ = c*y', number=1, repeat=1)\n    1 loops, best of 1: 1.79e+13 ns per loop\n```\n\nBy the way, the second timing is about 4.97 hours and the output ``1.79e+13 ns`` should perhaps be improved.  Is the ``timeit`` command something imported from an outside package (and thus _perhaps_ difficult to change), or something that can easily be changed within the Sage code?\n\nAnyway, I am a little puzzled about this problem at the moment as I don't quite see how the implementation of this should be this sensitive to the input.  I'll try to break it down to the level of multiplications and GCDs next.\n\nFinally, regarding the computation of ``a*y``, which I had started on another machine, well, I terminated it this morning after running for 180 hours and a peak memory usage of over 1.1GB.\n\nSebastian",
     "created_at": "2010-01-04T10:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -172,7 +173,6 @@ archive/issue_comments_066312.json:
 
 I spent some more time on this.  The attached file `x2.sage` as before a method `test_problem()`.  To find out when things turn from acceptably slow to ridiculously slow, I added one term after the other to the numerator polynomial of ``a`` (in the notation as before).  I think the two elements ``b`` and ``c`` display the problem quite well, exhibiting vastly different timings despite ``c`` only including one additional monomial term:
 
-
 ```
     sage: x,a,b,c,y = test_problem()
     sage: timeit('_ = b*y', number=1, repeat=1)
@@ -180,7 +180,6 @@ I spent some more time on this.  The attached file `x2.sage` as before a method 
     sage: timeit('_ = c*y', number=1, repeat=1)
     1 loops, best of 1: 1.79e+13 ns per loop
 ```
-
 
 By the way, the second timing is about 4.97 hours and the output ``1.79e+13 ns`` should perhaps be improved.  Is the ``timeit`` command something imported from an outside package (and thus _perhaps_ difficult to change), or something that can easily be changed within the Sage code?
 
@@ -243,7 +242,7 @@ Sebastian
 archive/issue_comments_066315.json:
 ```json
 {
-    "body": "Awakening a moribund ticket here...\n\nI just reran the initial example in 7.3, and it still seems to hang; but Sebastian's example no longer exhibits the same behavior:\n\n```\nsage: x,a,b,c,y = test_problem()\nsage: timeit('_ = b*y', number=1, repeat=1)\n1 loops, best of 1: 15.4 ms per loop\nsage: sage: timeit('_ = c*y', number=1, repeat=1)\n1 loops, best of 1: 10.8 ms per loop\n```\n\nso maybe this problem hasn't been isolated after all.",
+    "body": "Awakening a moribund ticket here...\n\nI just reran the initial example in 7.3, and it still seems to hang; but Sebastian's example no longer exhibits the same behavior:\n\n```\nsage: x,a,b,c,y = test_problem()\nsage: timeit('_ = b*y', number=1, repeat=1)\n1 loops, best of 1: 15.4 ms per loop\nsage: sage: timeit('_ = c*y', number=1, repeat=1)\n1 loops, best of 1: 10.8 ms per loop\n```\nso maybe this problem hasn't been isolated after all.",
     "created_at": "2016-08-16T23:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7730",
     "type": "issue_comment",
@@ -263,7 +262,6 @@ sage: timeit('_ = b*y', number=1, repeat=1)
 sage: sage: timeit('_ = c*y', number=1, repeat=1)
 1 loops, best of 1: 10.8 ms per loop
 ```
-
 so maybe this problem hasn't been isolated after all.
 
 

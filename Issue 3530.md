@@ -3,7 +3,7 @@
 archive/issues_003530.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @craigcitro wstein\n\nKeywords: cython, documentation\n\nCraig wrote off list:\n> hey martin -- william tells me you created these pragmas for .spyx\n> files. can you document them somewhere?\n\nThis patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3530\n\n",
+    "body": "Assignee: @malb\n\nCC:  @craigcitro wstein\n\nKeywords: cython, documentation\n\nCraig wrote off list:\n> hey martin -- william tells me you created these pragmas for .spyx\n> files. can you document them somewhere?\n\n\nThis patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3530\n\n",
     "created_at": "2008-06-28T14:45:26Z",
     "labels": [
         "component: misc",
@@ -25,6 +25,7 @@ Keywords: cython, documentation
 Craig wrote off list:
 > hey martin -- william tells me you created these pragmas for .spyx
 > files. can you document them somewhere?
+
 
 This patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.
 

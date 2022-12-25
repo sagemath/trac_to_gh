@@ -266,7 +266,7 @@ archive/issue_events_024802.json:
 archive/issue_comments_097100.json:
 ```json
 {
-    "body": "Replying to [comment:8 mvngu]:\n> How is this ticket considered fixed? Do you want the attached NetworkX package to be merged in the Sage standard repository? If so, has it been merged yet? If not, you need to explain why you closed this ticket.\n\nIt should have been closed invalid. Numpy-1.4.1 and networkx-1.0.1 don't go along\nvery well together. But it doesn't matter since next sage release will use networkx-1.2 which works well with numpy-1.4.1. I am changing it to \"invalid\".",
+    "body": "Replying to [comment:8 mvngu]:\n> How is this ticket considered fixed? Do you want the attached NetworkX package to be merged in the Sage standard repository? If so, has it been merged yet? If not, you need to explain why you closed this ticket.\n\n\nIt should have been closed invalid. Numpy-1.4.1 and networkx-1.0.1 don't go along\nvery well together. But it doesn't matter since next sage release will use networkx-1.2 which works well with numpy-1.4.1. I am changing it to \"invalid\".",
     "created_at": "2010-09-05T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
@@ -277,6 +277,7 @@ archive/issue_comments_097100.json:
 
 Replying to [comment:8 mvngu]:
 > How is this ticket considered fixed? Do you want the attached NetworkX package to be merged in the Sage standard repository? If so, has it been merged yet? If not, you need to explain why you closed this ticket.
+
 
 It should have been closed invalid. Numpy-1.4.1 and networkx-1.0.1 don't go along
 very well together. But it doesn't matter since next sage release will use networkx-1.2 which works well with numpy-1.4.1. I am changing it to "invalid".

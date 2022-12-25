@@ -3,7 +3,7 @@
 archive/issues_007704.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  spancratz\n\n\n```\nsage: matrix(ZZ,4,sparse=True).det()\n...\nTypeError: charpoly() takes at most 1 positional argument (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7704\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  spancratz\n\n```\nsage: matrix(ZZ,4,sparse=True).det()\n...\nTypeError: charpoly() takes at most 1 positional argument (2 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7704\n\n",
     "created_at": "2009-12-16T08:13:27Z",
     "labels": [
         "component: linear algebra",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 CC:  spancratz
 
-
 ```
 sage: matrix(ZZ,4,sparse=True).det()
 ...
 TypeError: charpoly() takes at most 1 positional argument (2 given)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7704
 
@@ -93,7 +91,7 @@ Very minor cosmetic change to the method
 archive/issue_comments_066002.json:
 ```json
 {
-    "body": "Attachment [trac_7704b.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704b.patch) by spancratz created at 2009-12-19 01:13:59\n\nThe patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:\n\n\n```\nsage -t  \"devel/sage/sage/plot/plot3d/tachyon.py\"\n```\n\n\n\n```\nFile \"/scratch/pancratz/sage-4.2.1/devel/sage/sage/plot/plot3d/tachyon.py\", line 297:\n    sage: os.system('rm ' + tempname)\nExpected:\n    0\nGot:\n    256\n```\n\n\nI have attached an additional patch which removes one unused local variable.\n\nSebastian",
+    "body": "Attachment [trac_7704b.patch](tarball://root/attachments/some-uuid/ticket7704/trac_7704b.patch) by spancratz created at 2009-12-19 01:13:59\n\nThe patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:\n\n```\nsage -t  \"devel/sage/sage/plot/plot3d/tachyon.py\"\n```\n\n```\nFile \"/scratch/pancratz/sage-4.2.1/devel/sage/sage/plot/plot3d/tachyon.py\", line 297:\n    sage: os.system('rm ' + tempname)\nExpected:\n    0\nGot:\n    256\n```\n\nI have attached an additional patch which removes one unused local variable.\n\nSebastian",
     "created_at": "2009-12-19T01:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7704",
     "type": "issue_comment",
@@ -106,12 +104,9 @@ Attachment [trac_7704b.patch](tarball://root/attachments/some-uuid/ticket7704/tr
 
 The patch looks fine, and ``make test`` on my installation of SAGE 4.2.1 returns only one unrelated error, which I include for completeness:
 
-
 ```
 sage -t  "devel/sage/sage/plot/plot3d/tachyon.py"
 ```
-
-
 
 ```
 File "/scratch/pancratz/sage-4.2.1/devel/sage/sage/plot/plot3d/tachyon.py", line 297:
@@ -121,7 +116,6 @@ Expected:
 Got:
     256
 ```
-
 
 I have attached an additional patch which removes one unused local variable.
 

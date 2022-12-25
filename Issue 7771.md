@@ -3,7 +3,7 @@
 archive/issues_007771.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\n\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
+    "body": "Assignee: @williamstein\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
     "created_at": "2009-12-27T03:58:13Z",
     "labels": [
         "component: interfaces",
@@ -25,7 +25,6 @@ This nearly always happens after installing an R package and then following the 
 sage: r.restart()
 Error: object 'sage0' not found
 ```
-
 This seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7771
@@ -39,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7771
 archive/issue_comments_066863.json:
 ```json
 {
-    "body": "As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n\n```\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: r.install_packages(\"cluster\")\n<downloading-compiling-messages>\n* DONE (cluster)\n| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |\n| Type notebook() for the GUI, and license() for information.        |\nThe downloaded packages are in\n\t\u2018/tmp/RtmpqofuAu/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'cluster'.\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m38.43s).\n```\n\nIt didn't say to use the command `r.restart()`. What about issuing `reset()` after installing an R package? It works for me:\n\n```\nsage: r.install_packages(\"igraph\")\n<downloading-compiling-messages>\n* DONE (igraph)\n\nThe downloaded packages are in\n\t\u2018/tmp/RtmpllHMEs/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'igraph'.\nsage: reset()\nsage: r.library(\"igraph\")\n```\n\nPerhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`? As a side note, one could not install R packages with a binary Sage distribution.",
+    "body": "As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n\n```\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: r.install_packages(\"cluster\")\n<downloading-compiling-messages>\n* DONE (cluster)\n| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |\n| Type notebook() for the GUI, and license() for information.        |\nThe downloaded packages are in\n\t\u2018/tmp/RtmpqofuAu/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'cluster'.\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m38.43s).\n```\nIt didn't say to use the command `r.restart()`. What about issuing `reset()` after installing an R package? It works for me:\n\n```\nsage: r.install_packages(\"igraph\")\n<downloading-compiling-messages>\n* DONE (igraph)\n\nThe downloaded packages are in\n\t\u2018/tmp/RtmpllHMEs/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'igraph'.\nsage: reset()\nsage: r.library(\"igraph\")\n```\nPerhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`? As a side note, one could not install R packages with a binary Sage distribution.",
     "created_at": "2010-02-03T06:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -72,7 +71,6 @@ Please restart Sage in order to use 'cluster'.
 sage: exit
 Exiting SAGE (CPU time 0m0.05s, Wall time 0m38.43s).
 ```
-
 It didn't say to use the command `r.restart()`. What about issuing `reset()` after installing an R package? It works for me:
 
 ```
@@ -88,7 +86,6 @@ Please restart Sage in order to use 'igraph'.
 sage: reset()
 sage: r.library("igraph")
 ```
-
 Perhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages("pkg-name")`, run `r.reset()`, and then load the newly installed package with `r.library("pkg-name")`? As a side note, one could not install R packages with a binary Sage distribution.
 
 
@@ -98,7 +95,7 @@ Perhaps you want the command `r.restart()` to achieve the same effect as `exit` 
 archive/issue_comments_066864.json:
 ```json
 {
-    "body": "Replying to [comment:1 mvngu]:\n> As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> It didn't say to use the command `r.restart()`. \n\nYes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\n> What about issuing `reset()` after installing an R package? It works for me:\n> Perhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`?\n\nMaybe; I am not familiar with the reset command.  Maybe that is what restart was supposed to do all along?  We should ask an R expert.\n\n> As a side note, one could not install R packages with a binary Sage distribution.\n\nOh, that is bad.  I wonder why?  One can install optional spkgs in a binary install, correct?",
+    "body": "Replying to [comment:1 mvngu]:\n> As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> It didn't say to use the command `r.restart()`. \n\n\nYes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\n> What about issuing `reset()` after installing an R package? It works for me:\n> Perhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`?\n\n\nMaybe; I am not familiar with the reset command.  Maybe that is what restart was supposed to do all along?  We should ask an R expert.\n\n> As a side note, one could not install R packages with a binary Sage distribution.\n\n\nOh, that is bad.  I wonder why?  One can install optional spkgs in a binary install, correct?",
     "created_at": "2010-02-03T15:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -111,14 +108,17 @@ Replying to [comment:1 mvngu]:
 > As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:
 > It didn't say to use the command `r.restart()`. 
 
+
 Yes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.
 
 > What about issuing `reset()` after installing an R package? It works for me:
 > Perhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages("pkg-name")`, run `r.reset()`, and then load the newly installed package with `r.library("pkg-name")`?
 
+
 Maybe; I am not familiar with the reset command.  Maybe that is what restart was supposed to do all along?  We should ask an R expert.
 
 > As a side note, one could not install R packages with a binary Sage distribution.
+
 
 Oh, that is bad.  I wonder why?  One can install optional spkgs in a binary install, correct?
 
@@ -129,7 +129,7 @@ Oh, that is bad.  I wonder why?  One can install optional spkgs in a binary inst
 archive/issue_comments_066865.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Replying to [comment:1 mvngu]:\n> > As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> > It didn't say to use the command `r.restart()`. \n> \n> Yes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\nYikes!  Turns out that...\n\n```\n## <entry>\n## Deprecated in 1.6.0\n## Defunct in 1.7.0\nmachine <- function() .Defunct()\nMachine <- function() .Defunct(\".Machine\")\nPlatform <- function() .Defunct(\".Platform\")\nrestart <- function() .Defunct(\"try\")\n## </entry>\n```\n\nNote that R is now at version 2.10.1!   So this is the problem here.  The restart() thing must be very old - and odd, since the function that replaced it was try (for exception handling.  Anyway, if reset() is good enough, that is fine - no need to do r.foo() if a normal Sage command does it well enough.  I'll work on a patch for this.",
+    "body": "Replying to [comment:2 kcrisman]:\n> Replying to [comment:1 mvngu]:\n> > As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> > It didn't say to use the command `r.restart()`. \n\n> \n> Yes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\n\nYikes!  Turns out that...\n\n```\n## <entry>\n## Deprecated in 1.6.0\n## Defunct in 1.7.0\nmachine <- function() .Defunct()\nMachine <- function() .Defunct(\".Machine\")\nPlatform <- function() .Defunct(\".Platform\")\nrestart <- function() .Defunct(\"try\")\n## </entry>\n```\nNote that R is now at version 2.10.1!   So this is the problem here.  The restart() thing must be very old - and odd, since the function that replaced it was try (for exception handling.  Anyway, if reset() is good enough, that is fine - no need to do r.foo() if a normal Sage command does it well enough.  I'll work on a patch for this.",
     "created_at": "2010-04-27T20:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -142,8 +142,10 @@ Replying to [comment:2 kcrisman]:
 > Replying to [comment:1 mvngu]:
 > > As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:
 > > It didn't say to use the command `r.restart()`. 
+
 > 
 > Yes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.
+
 
 Yikes!  Turns out that...
 
@@ -157,7 +159,6 @@ Platform <- function() .Defunct(".Platform")
 restart <- function() .Defunct("try")
 ## </entry>
 ```
-
 Note that R is now at version 2.10.1!   So this is the problem here.  The restart() thing must be very old - and odd, since the function that replaced it was try (for exception handling.  Anyway, if reset() is good enough, that is fine - no need to do r.foo() if a normal Sage command does it well enough.  I'll work on a patch for this.
 
 
@@ -167,7 +168,7 @@ Note that R is now at version 2.10.1!   So this is the problem here.  The restar
 archive/issue_comments_066866.json:
 ```json
 {
-    "body": "In fact, it's not even clear whether one needs to reset().  \n\n```\nPlease restart Sage in order to use 'igraph'.\nsage: r.library(\"igraph\")\nsage: a = r.graph_ring(10)\nsage: a\nVertices: 10 \nEdges: 10 \nDirected: FALSE \nEdges:\n          \n[0] 0 -- 1\n[1] 1 -- 2\n[2] 2 -- 3\n[3] 3 -- 4\n[4] 4 -- 5\n[5] 5 -- 6\n[6] 6 -- 7\n[7] 7 -- 8\n[8] 8 -- 9\n[9] 0 -- 9\nsage: r.add_edges(a, (1,5,2,6) )\nVertices: 10 \nEdges: 12 \nDirected: FALSE \nEdges:\n           \n[0]  0 -- 1\n[1]  1 -- 2\n[2]  2 -- 3\n[3]  3 -- 4\n[4]  4 -- 5\n[5]  5 -- 6\n[6]  6 -- 7\n[7]  7 -- 8\n[8]  8 -- 9\n[9]  0 -- 9\n[10] 1 -- 5\n[11] 2 -- 6\n```\n\nAnd this on an install which definitely hadn't had this package installed before.  The same happened with package 'aaMI'.  Which leads me to believe one doesn't even have to reset() - the package is just automatically available.  I'm going to put up a patch to that effect, with the covering statement to use reset() or restart Sage if you encounter problems.",
+    "body": "In fact, it's not even clear whether one needs to reset().  \n\n```\nPlease restart Sage in order to use 'igraph'.\nsage: r.library(\"igraph\")\nsage: a = r.graph_ring(10)\nsage: a\nVertices: 10 \nEdges: 10 \nDirected: FALSE \nEdges:\n          \n[0] 0 -- 1\n[1] 1 -- 2\n[2] 2 -- 3\n[3] 3 -- 4\n[4] 4 -- 5\n[5] 5 -- 6\n[6] 6 -- 7\n[7] 7 -- 8\n[8] 8 -- 9\n[9] 0 -- 9\nsage: r.add_edges(a, (1,5,2,6) )\nVertices: 10 \nEdges: 12 \nDirected: FALSE \nEdges:\n           \n[0]  0 -- 1\n[1]  1 -- 2\n[2]  2 -- 3\n[3]  3 -- 4\n[4]  4 -- 5\n[5]  5 -- 6\n[6]  6 -- 7\n[7]  7 -- 8\n[8]  8 -- 9\n[9]  0 -- 9\n[10] 1 -- 5\n[11] 2 -- 6\n```\nAnd this on an install which definitely hadn't had this package installed before.  The same happened with package 'aaMI'.  Which leads me to believe one doesn't even have to reset() - the package is just automatically available.  I'm going to put up a patch to that effect, with the covering statement to use reset() or restart Sage if you encounter problems.",
     "created_at": "2010-04-27T20:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -217,7 +218,6 @@ Edges:
 [10] 1 -- 5
 [11] 2 -- 6
 ```
-
 And this on an install which definitely hadn't had this package installed before.  The same happened with package 'aaMI'.  Which leads me to believe one doesn't even have to reset() - the package is just automatically available.  I'm going to put up a patch to that effect, with the covering statement to use reset() or restart Sage if you encounter problems.
 
 
@@ -283,7 +283,7 @@ This may need slight rebasing after #7665.
 archive/issue_comments_066870.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> This may need slight rebasing after #7665.   \nNo rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it's an easy one!",
+    "body": "Replying to [comment:5 kcrisman]:\n> This may need slight rebasing after #7665.   \n\nNo rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it's an easy one!",
     "created_at": "2010-05-09T00:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -294,6 +294,7 @@ archive/issue_comments_066870.json:
 
 Replying to [comment:5 kcrisman]:
 > This may need slight rebasing after #7665.   
+
 No rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it's an easy one!
 
 
@@ -303,7 +304,7 @@ No rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it'
 archive/issue_comments_066871.json:
 ```json
 {
-    "body": "Attachment [trac_7771-reviewer.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-reviewer.patch) by mvngu created at 2010-05-09 04:01:47\n\nWith the patch [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch), I got the following failure when doctesting with \"-t -long -optional\":\n\n\n```\nExpected:\n    R is free software and comes with ABSOLUTELY NO WARRANTY.\n    You are welcome to redistribute it under certain conditions.\n    Type 'license()' or 'licence()' for distribution details.\n    ...\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\nGot:\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\n```\n\n\nIt might be simpler to just test for the output:\n\n\n```\nThe R package 'aaMI' may now be loaded via r.library('aaMI').\nIf this should not work, type reset(), or restart Sage.\n```\n\n\nI have attached a reviewer patch that does only that. With both patches, I now get the following failure:\n\n\n```sh\n[mvngu@sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py \nsage -t -long -optional \"devel/sage-main/sage/interfaces/r.py\"\n\n<output-trancated>\n\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.1/devel/sage-main/sage/interfaces/r.py\", line 1755:\n    sage: latex(r(2))  #optional requires the Hmisc R package\nExpected:\n    2\nGot:\n    % latex.default(sage12, file = \"\") \n    %\n    \\begin{table}[!tbp]\n     \\begin{center}\n     \\begin{tabular}{r}\\hline\\hline\n    \\multicolumn{1}{c}{}\\tabularnewline\n    \\hline\n    $2$\\tabularnewline\n    \\hline\n    \\end{tabular}\n    <BLANKLINE>\n    \\end{center}\n    <BLANKLINE>\n    \\end{table}\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_67\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_r.py\n\t [11.5 s]\n```\n\n\nBut that is for another ticket. So only my patch needs reviewing by anyone but me.",
+    "body": "Attachment [trac_7771-reviewer.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-reviewer.patch) by mvngu created at 2010-05-09 04:01:47\n\nWith the patch [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch), I got the following failure when doctesting with \"-t -long -optional\":\n\n```\nExpected:\n    R is free software and comes with ABSOLUTELY NO WARRANTY.\n    You are welcome to redistribute it under certain conditions.\n    Type 'license()' or 'licence()' for distribution details.\n    ...\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\nGot:\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\n```\n\nIt might be simpler to just test for the output:\n\n```\nThe R package 'aaMI' may now be loaded via r.library('aaMI').\nIf this should not work, type reset(), or restart Sage.\n```\n\nI have attached a reviewer patch that does only that. With both patches, I now get the following failure:\n\n```sh\n[mvngu@sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py \nsage -t -long -optional \"devel/sage-main/sage/interfaces/r.py\"\n\n<output-trancated>\n\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.1/devel/sage-main/sage/interfaces/r.py\", line 1755:\n    sage: latex(r(2))  #optional requires the Hmisc R package\nExpected:\n    2\nGot:\n    % latex.default(sage12, file = \"\") \n    %\n    \\begin{table}[!tbp]\n     \\begin{center}\n     \\begin{tabular}{r}\\hline\\hline\n    \\multicolumn{1}{c}{}\\tabularnewline\n    \\hline\n    $2$\\tabularnewline\n    \\hline\n    \\end{tabular}\n    <BLANKLINE>\n    \\end{center}\n    <BLANKLINE>\n    \\end{table}\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_67\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_r.py\n\t [11.5 s]\n```\n\nBut that is for another ticket. So only my patch needs reviewing by anyone but me.",
     "created_at": "2010-05-09T04:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
@@ -315,7 +316,6 @@ archive/issue_comments_066871.json:
 Attachment [trac_7771-reviewer.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-reviewer.patch) by mvngu created at 2010-05-09 04:01:47
 
 With the patch [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch), I got the following failure when doctesting with "-t -long -optional":
-
 
 ```
 Expected:
@@ -330,18 +330,14 @@ Got:
     If this should not work, type reset(), or restart Sage.
 ```
 
-
 It might be simpler to just test for the output:
-
 
 ```
 The R package 'aaMI' may now be loaded via r.library('aaMI').
 If this should not work, type reset(), or restart Sage.
 ```
 
-
 I have attached a reviewer patch that does only that. With both patches, I now get the following failure:
-
 
 ```sh
 [mvngu@sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py 
@@ -376,7 +372,6 @@ Got:
 For whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_r.py
 	 [11.5 s]
 ```
-
 
 But that is for another ticket. So only my patch needs reviewing by anyone but me.
 

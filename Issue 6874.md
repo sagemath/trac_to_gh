@@ -3,7 +3,7 @@
 archive/issues_006874.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  @dandrake @TimDumol\n\nAfter merging the patch `trac_4135.5.patch` at #4135, rebuilding the reference manual results in a warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Error in \"module\" directive:\nno content permitted.\n\n.. module:: sage.server.notebook.twist\n\n    TESTS::\n\n    It is important that this file never be imported by default on\n    startup by Sage, since it is very expensive, since importing Twisted\n    is expensive. This doctest verifies that twist.py isn't imported on\n    startup.\n\n    sage: os.system(\"sage -startuptime | grep twisted\\.web2 1>/dev/null\") != 0  # !=0 means not found\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6874\n\n",
+    "body": "Assignee: tba\n\nCC:  @dandrake @TimDumol\n\nAfter merging the patch `trac_4135.5.patch` at #4135, rebuilding the reference manual results in a warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Error in \"module\" directive:\nno content permitted.\n\n.. module:: sage.server.notebook.twist\n\n    TESTS::\n\n    It is important that this file never be imported by default on\n    startup by Sage, since it is very expensive, since importing Twisted\n    is expensive. This doctest verifies that twist.py isn't imported on\n    startup.\n\n    sage: os.system(\"sage -startuptime | grep twisted\\.web2 1>/dev/null\") != 0  # !=0 means not found\n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6874\n\n",
     "created_at": "2009-09-03T10:27:09Z",
     "labels": [
         "component: documentation",
@@ -39,7 +39,6 @@ no content permitted.
     sage: os.system("sage -startuptime | grep twisted\.web2 1>/dev/null") != 0  # !=0 means not found
     True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6874

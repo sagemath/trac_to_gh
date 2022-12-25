@@ -3,7 +3,7 @@
 archive/issues_001442.json:
 ```json
 {
-    "body": "Assignee: tba\n\nI'm reading calculus.py (this is probably the best way to learn SAGE).\nThis statement seems wrong to me:\n\n```\n\\sage predefines upper and lowercase letters as global\n    indeterminates.\n```\n\nIndeed, I believe only 'x' is predefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1442\n\n",
+    "body": "Assignee: tba\n\nI'm reading calculus.py (this is probably the best way to learn SAGE).\nThis statement seems wrong to me:\n\n```\n\\sage predefines upper and lowercase letters as global\n    indeterminates.\n```\nIndeed, I believe only 'x' is predefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1442\n\n",
     "created_at": "2007-12-09T21:36:34Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,6 @@ This statement seems wrong to me:
 \sage predefines upper and lowercase letters as global
     indeterminates.
 ```
-
 Indeed, I believe only 'x' is predefined.
 
 Issue created by migration from https://trac.sagemath.org/ticket/1442

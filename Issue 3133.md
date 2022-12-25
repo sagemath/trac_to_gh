@@ -3,7 +3,7 @@
 archive/issues_003133.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jasongrout\n\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jasongrout\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
     "created_at": "2008-05-08T13:58:14Z",
     "labels": [
         "component: graphics"
@@ -18,7 +18,6 @@ archive/issues_003133.json:
 Assignee: @williamstein
 
 CC:  @kcrisman @jasongrout
-
 
 ```
 
@@ -46,7 +45,6 @@ as input instead of just a list or tuple.
 
  -- William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3133
 
@@ -95,7 +93,7 @@ Changing status from new to assigned.
 archive/issue_comments_021715.json:
 ```json
 {
-    "body": "As a test, the following should work:\n\n\n```\nsage: var('x')\nsage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))\n```\n",
+    "body": "As a test, the following should work:\n\n```\nsage: var('x')\nsage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))\n```",
     "created_at": "2009-03-06T21:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
@@ -106,12 +104,10 @@ archive/issue_comments_021715.json:
 
 As a test, the following should work:
 
-
 ```
 sage: var('x')
 sage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))
 ```
-
 
 
 
@@ -120,7 +116,7 @@ sage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))
 archive/issue_comments_021716.json:
 ```json
 {
-    "body": "The error is different now too:\n\n\n```\nsage: sage: var('x')\nx\nsage: sage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (21, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/grout/.sage/temp/good/20161/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.pyc in parametric_plot(funcs, *args, **kwargs)\n   1892         return plot(funcs, *args, **kwargs)\n   1893     elif (num_funcs == 3 and num_vars <= 2):\n-> 1894         return sage.plot.plot3d.parametric_plot3d.parametric_plot3d(funcs, *args, **kwargs)\n   1895     else:\n   1896         raise ValueError, \"the number of functions and the number of free variables is not a possible combination for 2d or 3d parametric plots\"\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.pyc in parametric_plot3d(f, urange, vrange, plot_points, **kwds)\n    372             \n    373     if not isinstance(f, (tuple, list)) or len(f) != 3:\n--> 374         raise ValueError, \"f must be a list or tuple of length 3\"\n    375 \n    376     if vrange is None:\n\nValueError: f must be a list or tuple of length 3\nsage: \n```\n",
+    "body": "The error is different now too:\n\n```\nsage: sage: var('x')\nx\nsage: sage: parametric_plot(vector([x,2*x,3*x^2]), (x,-1,3))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (21, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/grout/.sage/temp/good/20161/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.pyc in parametric_plot(funcs, *args, **kwargs)\n   1892         return plot(funcs, *args, **kwargs)\n   1893     elif (num_funcs == 3 and num_vars <= 2):\n-> 1894         return sage.plot.plot3d.parametric_plot3d.parametric_plot3d(funcs, *args, **kwargs)\n   1895     else:\n   1896         raise ValueError, \"the number of functions and the number of free variables is not a possible combination for 2d or 3d parametric plots\"\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_plot3d.pyc in parametric_plot3d(f, urange, vrange, plot_points, **kwds)\n    372             \n    373     if not isinstance(f, (tuple, list)) or len(f) != 3:\n--> 374         raise ValueError, \"f must be a list or tuple of length 3\"\n    375 \n    376     if vrange is None:\n\nValueError: f must be a list or tuple of length 3\nsage: \n```",
     "created_at": "2009-03-06T21:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
@@ -130,7 +126,6 @@ archive/issue_comments_021716.json:
 ```
 
 The error is different now too:
-
 
 ```
 sage: sage: var('x')
@@ -162,7 +157,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: f must be a list or tuple of length 3
 sage: 
 ```
-
 
 
 
@@ -225,7 +219,7 @@ Positive review of the content.  My only concern is that the "internal" function
 archive/issue_comments_021720.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> Positive review of the content.  My only concern is that the \"internal\" functions now have their names changed so we could possibly have to deprecate the non-underscored versions of them (however, only using the underscored ones).   What do you think?  Probably it's unnecessary, since they were never in the global namespace.\n\nI thought it was probably okay since they were not in the global namespace *and* their documentation said that they were internal functions.  I was just making them more conventional internal functions.\n\nIf you'd like I can make them deprecated.  Let me know.  I think it's okay in this case to just change the names.",
+    "body": "Replying to [comment:5 kcrisman]:\n> Positive review of the content.  My only concern is that the \"internal\" functions now have their names changed so we could possibly have to deprecate the non-underscored versions of them (however, only using the underscored ones).   What do you think?  Probably it's unnecessary, since they were never in the global namespace.\n\n\nI thought it was probably okay since they were not in the global namespace *and* their documentation said that they were internal functions.  I was just making them more conventional internal functions.\n\nIf you'd like I can make them deprecated.  Let me know.  I think it's okay in this case to just change the names.",
     "created_at": "2009-09-18T14:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
@@ -236,6 +230,7 @@ archive/issue_comments_021720.json:
 
 Replying to [comment:5 kcrisman]:
 > Positive review of the content.  My only concern is that the "internal" functions now have their names changed so we could possibly have to deprecate the non-underscored versions of them (however, only using the underscored ones).   What do you think?  Probably it's unnecessary, since they were never in the global namespace.
+
 
 I thought it was probably okay since they were not in the global namespace *and* their documentation said that they were internal functions.  I was just making them more conventional internal functions.
 

@@ -3,7 +3,7 @@
 archive/issues_007829.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
     "created_at": "2010-01-03T05:37:30Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_007829.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: float(e).hex()
 '0x1.5bf0a8b145769p+1'
@@ -29,7 +28,6 @@ Traceback (most recent call last):
   File "<ipython console>", line 1, in <module>
 AttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'
 ```
-
 
 There should probably be a __hex__ method as well, so hex(2.3) works. 
 
@@ -189,7 +187,7 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 archive/issue_comments_067680.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> Does the C string need to be freed in the error case as well?\n\nAs far as I understand, no, it doesn't.\n\n> Could you add a test showing that hex(RR(x)) works too?\n\nDone.\n\n\nReplying to [comment:4 jkeitel]:\n> I think the new syntax for exceptions should be used, i.e. raise RuntimeError(\"...\").\n\nFixed, thanks!",
+    "body": "Replying to [comment:3 robertwb]:\n> Does the C string need to be freed in the error case as well?\n\n\nAs far as I understand, no, it doesn't.\n\n> Could you add a test showing that hex(RR(x)) works too?\n\n\nDone.\n\n\nReplying to [comment:4 jkeitel]:\n> I think the new syntax for exceptions should be used, i.e. raise RuntimeError(\"...\").\n\n\nFixed, thanks!",
     "created_at": "2014-05-30T07:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
@@ -201,15 +199,18 @@ archive/issue_comments_067680.json:
 Replying to [comment:3 robertwb]:
 > Does the C string need to be freed in the error case as well?
 
+
 As far as I understand, no, it doesn't.
 
 > Could you add a test showing that hex(RR(x)) works too?
+
 
 Done.
 
 
 Replying to [comment:4 jkeitel]:
 > I think the new syntax for exceptions should be used, i.e. raise RuntimeError("...").
+
 
 Fixed, thanks!
 

@@ -3,7 +3,7 @@
 archive/issues_004459.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\n\n```\nsage: 3.exp()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.e')xp()\n                       ^\nSyntaxError: invalid syntax\n\nsage: 3.is_square()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4459\n\n",
+    "body": "Assignee: cwitty\n\n```\nsage: 3.exp()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.e')xp()\n                       ^\nSyntaxError: invalid syntax\n\nsage: 3.is_square()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4459\n\n",
     "created_at": "2008-11-07T03:19:02Z",
     "labels": [
         "component: misc",
@@ -19,7 +19,6 @@ archive/issues_004459.json:
 ```
 Assignee: cwitty
 
-
 ```
 sage: 3.exp()
 ------------------------------------------------------------
@@ -33,7 +32,6 @@ False
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4459
 
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4459
 archive/issue_comments_032841.json:
 ```json
 {
-    "body": "The same thing happens for those that start with 'r':\n\n\n```\nsage: 3.rational_reconstruction()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     3.ational_reconstruction()\n```\n",
+    "body": "The same thing happens for those that start with 'r':\n\n```\nsage: 3.rational_reconstruction()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     3.ational_reconstruction()\n```",
     "created_at": "2008-11-07T03:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4459",
     "type": "issue_comment",
@@ -56,14 +54,12 @@ archive/issue_comments_032841.json:
 
 The same thing happens for those that start with 'r':
 
-
 ```
 sage: 3.rational_reconstruction()
 ------------------------------------------------------------
    File "<ipython console>", line 1
      3.ational_reconstruction()
 ```
-
 
 
 

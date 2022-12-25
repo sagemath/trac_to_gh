@@ -230,7 +230,7 @@ Why was this ticket considered as invalid?
 archive/issue_comments_097088.json:
 ```json
 {
-    "body": "> Why was this ticket considered as invalid?\n\nBecause it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n\nThis being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.",
+    "body": "> Why was this ticket considered as invalid?\n\n\nBecause it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n\nThis being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.",
     "created_at": "2012-01-04T23:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
@@ -240,6 +240,7 @@ archive/issue_comments_097088.json:
 ```
 
 > Why was this ticket considered as invalid?
+
 
 Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.
 
@@ -252,7 +253,7 @@ This being said, we have a Gurobi backend too, now. Perhaps it can also enumerat
 archive/issue_comments_097089.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n> \n> This being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.\n\nOk, so it's more like the current patch is invalid. The feature would still be useful (be it implemented through CPLEX or other). So, unless there is another ticket for this feature, I would recommend to (have the release manager?) reopen this ticket.\n\nCheers,\n                                Nicolas",
+    "body": "Replying to [comment:8 ncohen]:\n> Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n> \n> This being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.\n\n\nOk, so it's more like the current patch is invalid. The feature would still be useful (be it implemented through CPLEX or other). So, unless there is another ticket for this feature, I would recommend to (have the release manager?) reopen this ticket.\n\nCheers,\n                                Nicolas",
     "created_at": "2012-01-05T01:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
@@ -265,6 +266,7 @@ Replying to [comment:8 ncohen]:
 > Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.
 > 
 > This being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.
+
 
 Ok, so it's more like the current patch is invalid. The feature would still be useful (be it implemented through CPLEX or other). So, unless there is another ticket for this feature, I would recommend to (have the release manager?) reopen this ticket.
 

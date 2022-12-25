@@ -3,7 +3,7 @@
 archive/issues_007347.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @jasongrout @kcrisman\n\n\n```\nsage: numerical_integral(SR(0), 0, 1)\nTraceback (most recent call last):\n...\nValueError: Integrand has wrong number of parameters\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7347\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @jasongrout @kcrisman\n\n```\nsage: numerical_integral(SR(0), 0, 1)\nTraceback (most recent call last):\n...\nValueError: Integrand has wrong number of parameters\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7347\n\n",
     "created_at": "2009-10-29T07:12:05Z",
     "labels": [
         "component: numerical",
@@ -20,14 +20,12 @@ Assignee: jkantor
 
 CC:  @jasongrout @kcrisman
 
-
 ```
 sage: numerical_integral(SR(0), 0, 1)
 Traceback (most recent call last):
 ...
 ValueError: Integrand has wrong number of parameters
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7347
 
@@ -75,7 +73,7 @@ archive/issue_events_017389.json:
 archive/issue_comments_061456.json:
 ```json
 {
-    "body": "And #10088 was merged quite some time ago. \n\n```\nsage: numerical_integral(SR(0), 0, 1)\n(0.0, 0.0)\n```\n\nYup, works.",
+    "body": "And #10088 was merged quite some time ago. \n\n```\nsage: numerical_integral(SR(0), 0, 1)\n(0.0, 0.0)\n```\nYup, works.",
     "created_at": "2011-08-19T13:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7347",
     "type": "issue_comment",
@@ -90,7 +88,6 @@ And #10088 was merged quite some time ago.
 sage: numerical_integral(SR(0), 0, 1)
 (0.0, 0.0)
 ```
-
 Yup, works.
 
 

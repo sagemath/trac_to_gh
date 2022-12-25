@@ -3,7 +3,7 @@
 archive/issues_001449.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\n\nOn Dec 10, 2007 6:08 AM, G. Edgar <edgar@math.ohio-state.edu> wrote:\n> \n> It says to use \"shift enter\" to evaluate an input cell.\n> But it seems this is wrong on Mac, and one should use \"shift return\".\n> Return and Enter are separate keys on the Mac keyboard.\n\nYou're right.  And this is especially bad since right now on a Mac\n\"shift enter\" doesn't work.   I can't believe we missed this, given that\nso many Sage developers (like me) work on Macs!\n\nI think the fix will be to make it so \"shift return\" does work on macs,\nin addition to \"shift enter\".  This will make the documentation stay\nuniform (but we'll also mention shift-enter in the docs). \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1449\n\n",
+    "body": "Assignee: boothby\n\n```\n\n\nOn Dec 10, 2007 6:08 AM, G. Edgar <edgar@math.ohio-state.edu> wrote:\n> \n> It says to use \"shift enter\" to evaluate an input cell.\n> But it seems this is wrong on Mac, and one should use \"shift return\".\n> Return and Enter are separate keys on the Mac keyboard.\n\nYou're right.  And this is especially bad since right now on a Mac\n\"shift enter\" doesn't work.   I can't believe we missed this, given that\nso many Sage developers (like me) work on Macs!\n\nI think the fix will be to make it so \"shift return\" does work on macs,\nin addition to \"shift enter\".  This will make the documentation stay\nuniform (but we'll also mention shift-enter in the docs). \n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1449\n\n",
     "created_at": "2007-12-10T15:50:19Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_001449.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -40,7 +39,6 @@ uniform (but we'll also mention shift-enter in the docs).
 William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1449
 
 
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1449
 archive/issue_comments_009309.json:
 ```json
 {
-    "body": "\n```\nWith my Mac G5, uising Safari...\nshift-return and option-return evaluate the cell\nshift-enter, option-enter do not. \n```\n\n\nTom Boothby asked for some specific details from the poster about this.\nI don't know what happened as a result yet.",
+    "body": "```\nWith my Mac G5, uising Safari...\nshift-return and option-return evaluate the cell\nshift-enter, option-enter do not. \n```\n\nTom Boothby asked for some specific details from the poster about this.\nI don't know what happened as a result yet.",
     "created_at": "2007-12-12T13:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1449",
     "type": "issue_comment",
@@ -61,13 +59,11 @@ archive/issue_comments_009309.json:
 }
 ```
 
-
 ```
 With my Mac G5, uising Safari...
 shift-return and option-return evaluate the cell
 shift-enter, option-enter do not. 
 ```
-
 
 Tom Boothby asked for some specific details from the poster about this.
 I don't know what happened as a result yet.

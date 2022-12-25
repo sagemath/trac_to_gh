@@ -3,7 +3,7 @@
 archive/issues_003862.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot3d, axes\n\nExample:\n\n```\nvar('x')\nvar('y')\nplot3d(cos(x) + sin(y), (x, -2,1), (y, -2,1), axes = True)\n```\n\n\nAt least one axis is in the right location, the other two...\n\nTranslating coordinates into jmol seems to be difficult, so maybe this is the reason?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3862\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot3d, axes\n\nExample:\n\n```\nvar('x')\nvar('y')\nplot3d(cos(x) + sin(y), (x, -2,1), (y, -2,1), axes = True)\n```\n\nAt least one axis is in the right location, the other two...\n\nTranslating coordinates into jmol seems to be difficult, so maybe this is the reason?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3862\n\n",
     "created_at": "2008-08-14T22:27:04Z",
     "labels": [
         "component: graphics",
@@ -29,7 +29,6 @@ var('x')
 var('y')
 plot3d(cos(x) + sin(y), (x, -2,1), (y, -2,1), axes = True)
 ```
-
 
 At least one axis is in the right location, the other two...
 

@@ -3,7 +3,7 @@
 archive/issues_003652.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCurrently, random_element on a `FreeModule` constructs a basis, even if we know the basis is trivial.  The attached patch fixes this for `FreeModule_ambient` and subclasses.\n\nBefore:\n\n```\nsage: K = FreeModule(ZZ, 2000)\nsage: get_memory_usage()\n118.60546875\nsage: %time _ = K.random_element()\nCPU times: user 1.45 s, sys: 0.12 s, total: 1.57 s\nWall time: 1.57 s\nsage: get_memory_usage()\n225.56640625\n```\n\n\nAfter:\n\n```\nsage: K = FreeModule(ZZ, 2000)\nsage: get_memory_usage()\n118.60546875\nsage: %time _ = K.random_element()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: get_memory_usage()\n118.60546875\nsage: timeit('K.random_element()')\n125 loops, best of 3: 2.32 ms per loop\n```\n\n\nA 600-fold speedup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3652\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, random_element on a `FreeModule` constructs a basis, even if we know the basis is trivial.  The attached patch fixes this for `FreeModule_ambient` and subclasses.\n\nBefore:\n\n```\nsage: K = FreeModule(ZZ, 2000)\nsage: get_memory_usage()\n118.60546875\nsage: %time _ = K.random_element()\nCPU times: user 1.45 s, sys: 0.12 s, total: 1.57 s\nWall time: 1.57 s\nsage: get_memory_usage()\n225.56640625\n```\n\nAfter:\n\n```\nsage: K = FreeModule(ZZ, 2000)\nsage: get_memory_usage()\n118.60546875\nsage: %time _ = K.random_element()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: get_memory_usage()\n118.60546875\nsage: timeit('K.random_element()')\n125 loops, best of 3: 2.32 ms per loop\n```\n\nA 600-fold speedup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3652\n\n",
     "created_at": "2008-07-13T22:19:27Z",
     "labels": [
         "component: linear algebra",
@@ -33,7 +33,6 @@ sage: get_memory_usage()
 225.56640625
 ```
 
-
 After:
 
 ```
@@ -48,7 +47,6 @@ sage: get_memory_usage()
 sage: timeit('K.random_element()')
 125 loops, best of 3: 2.32 ms per loop
 ```
-
 
 A 600-fold speedup.
 

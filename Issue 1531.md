@@ -3,7 +3,7 @@
 archive/issues_001531.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nFile \"calculus.py\", line 6144:\n    sage: maxima(f(sqrt(2), theta+3))\nExpected:\n    'Gamma(theta+3,sqrt(2))\nGot:\n    'Gamma(sqrt(2),theta+3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1531\n\n",
+    "body": "Assignee: mabshoff\n\n```\nFile \"calculus.py\", line 6144:\n    sage: maxima(f(sqrt(2), theta+3))\nExpected:\n    'Gamma(theta+3,sqrt(2))\nGot:\n    'Gamma(sqrt(2),theta+3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1531\n\n",
     "created_at": "2007-12-16T02:08:14Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_001531.json:
 ```
 Assignee: mabshoff
 
-
 ```
 File "calculus.py", line 6144:
     sage: maxima(f(sqrt(2), theta+3))
@@ -28,7 +27,6 @@ Expected:
 Got:
     'Gamma(sqrt(2),theta+3)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1531
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1531
 archive/issue_comments_009753.json:
 ```json
 {
-    "body": "\n```\n[02:58] <wstein|packing> 'Gamma(sqrt(2),theta+3) is right and 'Gamma(theta+3,sqrt(2)) is wrong!\n[02:58] <wstein|packing> so change the doctest :-0\n```\n",
+    "body": "```\n[02:58] <wstein|packing> 'Gamma(sqrt(2),theta+3) is right and 'Gamma(theta+3,sqrt(2)) is wrong!\n[02:58] <wstein|packing> so change the doctest :-0\n```",
     "created_at": "2007-12-16T02:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1531",
     "type": "issue_comment",
@@ -50,12 +48,10 @@ archive/issue_comments_009753.json:
 }
 ```
 
-
 ```
 [02:58] <wstein|packing> 'Gamma(sqrt(2),theta+3) is right and 'Gamma(theta+3,sqrt(2)) is wrong!
 [02:58] <wstein|packing> so change the doctest :-0
 ```
-
 
 
 

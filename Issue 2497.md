@@ -3,7 +3,7 @@
 archive/issues_002497.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(4))\nsage: f = x^2 + 3\nsage: f % 2\nInvMod: inverse undefined\n/Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\n\nThis is an NTL error message, which is not being trapped or something.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2497\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x> = PolynomialRing(Integers(4))\nsage: f = x^2 + 3\nsage: f % 2\nInvMod: inverse undefined\n/Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n```\n\nThis is an NTL error message, which is not being trapped or something.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2497\n\n",
     "created_at": "2008-03-12T16:15:01Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_002497.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<x> = PolynomialRing(Integers(4))
 sage: f = x^2 + 3
@@ -26,7 +25,6 @@ sage: f % 2
 InvMod: inverse undefined
 /Users/david/sage/local/bin/sage-sage: line 222: 11351 Abort trap              sage-ipython "$@" -c "$SAGE_STARTUP_COMMAND;"
 ```
-
 
 This is an NTL error message, which is not being trapped or something.
 

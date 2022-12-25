@@ -394,7 +394,7 @@ Anyone up for reviewing this?
 archive/issue_comments_002067.json:
 ```json
 {
-    "body": "Replying to [comment:15 malb]:\n> Anyone up for reviewing this?\nI'll have a look at it. What about kcrisman's questions?",
+    "body": "Replying to [comment:15 malb]:\n> Anyone up for reviewing this?\n\nI'll have a look at it. What about kcrisman's questions?",
     "created_at": "2012-06-28T13:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -405,6 +405,7 @@ archive/issue_comments_002067.json:
 
 Replying to [comment:15 malb]:
 > Anyone up for reviewing this?
+
 I'll have a look at it. What about kcrisman's questions?
 
 
@@ -414,7 +415,7 @@ I'll have a look at it. What about kcrisman's questions?
 archive/issue_comments_002068.json:
 ```json
 {
-    "body": "> > Anyone up for reviewing this?\n> I'll have a look at it. What about kcrisman's questions?\nmalb considers them more or less dupes (at least #5671), especially since he added DIMACS to this ticket.  I am not knowledgeable enough to say whether that is legitimate, but had just wanted to point it out.",
+    "body": "> > Anyone up for reviewing this?\n\n> I'll have a look at it. What about kcrisman's questions?\nmalb considers them more or less dupes (at least #5671), especially since he added DIMACS to this ticket.  I am not knowledgeable enough to say whether that is legitimate, but had just wanted to point it out.",
     "created_at": "2012-06-28T13:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -424,6 +425,7 @@ archive/issue_comments_002068.json:
 ```
 
 > > Anyone up for reviewing this?
+
 > I'll have a look at it. What about kcrisman's questions?
 malb considers them more or less dupes (at least #5671), especially since he added DIMACS to this ticket.  I am not knowledgeable enough to say whether that is legitimate, but had just wanted to point it out.
 
@@ -434,7 +436,7 @@ malb considers them more or less dupes (at least #5671), especially since he add
 archive/issue_comments_002069.json:
 ```json
 {
-    "body": "I should mention that I didn't implement reading from DIMACS files. I did implement exporting to DIMACS but perhaps some people would find this interface not that nice. I find it reasonably elegant though because it is quite modular:\n\n\n```\nsage: from sage.sat.converters.polybori import CNFEncoder        \nsage: solver = sage.sat.solvers.dimacs.DIMACS(filename=\"mycnf.cnf\")\nsage: F,s = mq.SR(1,2,2,4,gf2=True,polybori=True).polynomial_system()\nsage: encoder = CNFEncoder(solver, F.ring())\nsage: _ = encoder(F)\nsage: solver.write()\n'mycnf.cnf'\n```\n",
+    "body": "I should mention that I didn't implement reading from DIMACS files. I did implement exporting to DIMACS but perhaps some people would find this interface not that nice. I find it reasonably elegant though because it is quite modular:\n\n```\nsage: from sage.sat.converters.polybori import CNFEncoder        \nsage: solver = sage.sat.solvers.dimacs.DIMACS(filename=\"mycnf.cnf\")\nsage: F,s = mq.SR(1,2,2,4,gf2=True,polybori=True).polynomial_system()\nsage: encoder = CNFEncoder(solver, F.ring())\nsage: _ = encoder(F)\nsage: solver.write()\n'mycnf.cnf'\n```",
     "created_at": "2012-06-28T15:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -444,7 +446,6 @@ archive/issue_comments_002069.json:
 ```
 
 I should mention that I didn't implement reading from DIMACS files. I did implement exporting to DIMACS but perhaps some people would find this interface not that nice. I find it reasonably elegant though because it is quite modular:
-
 
 ```
 sage: from sage.sat.converters.polybori import CNFEncoder        
@@ -458,13 +459,12 @@ sage: solver.write()
 
 
 
-
 ---
 
 archive/issue_comments_002070.json:
 ```json
 {
-    "body": "Installation of the spkg fails on my 32-bit ubuntu 12.04.\n\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/usr/local/sage/local/include -Wall -I. -I./../MTRand -I./../mtl -fopenmp -I/usr/local/sage/local/include -L/usr/local/sage/local/lib -g -fPIC -Wall -pedantic -O2 -MT DimacsParser.lo -MD -MP -MF .deps/DimacsParser.Tpo -c DimacsParser.cpp  -fPIC -DPIC -o .libs/DimacsParser.o\nDimacsParser.cpp: In member function \u2018void CMSat::DimacsParser::parse_DIMACS(T) [with T = _IO_FILE*]\u2019:\nDimacsParser.cpp:482:60:   instantiated from here\nDimacsParser.cpp:461:33: erreur: no matching function for call to \u2018StreamBuffer::StreamBuffer(_IO_FILE*&)\u2019\nDimacsParser.cpp:461:33: note: candidates are:\nStreamBuffer.h:59:5: note: StreamBuffer::StreamBuffer(gzFile)\nStreamBuffer.h:59:5: note:   no known conversion for argument 1 from \u2018_IO_FILE*\u2019 to \u2018gzFile\u2019\nStreamBuffer.h:29:7: note: StreamBuffer::StreamBuffer(const StreamBuffer&)\nStreamBuffer.h:29:7: note:   no known conversion for argument 1 from \u2018_IO_FILE*\u2019 to \u2018const StreamBuffer&\u2019\nmake[2]: *** [DimacsParser.lo] Erreur 1\n```\n",
+    "body": "Installation of the spkg fails on my 32-bit ubuntu 12.04.\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/usr/local/sage/local/include -Wall -I. -I./../MTRand -I./../mtl -fopenmp -I/usr/local/sage/local/include -L/usr/local/sage/local/lib -g -fPIC -Wall -pedantic -O2 -MT DimacsParser.lo -MD -MP -MF .deps/DimacsParser.Tpo -c DimacsParser.cpp  -fPIC -DPIC -o .libs/DimacsParser.o\nDimacsParser.cpp: In member function \u2018void CMSat::DimacsParser::parse_DIMACS(T) [with T = _IO_FILE*]\u2019:\nDimacsParser.cpp:482:60:   instantiated from here\nDimacsParser.cpp:461:33: erreur: no matching function for call to \u2018StreamBuffer::StreamBuffer(_IO_FILE*&)\u2019\nDimacsParser.cpp:461:33: note: candidates are:\nStreamBuffer.h:59:5: note: StreamBuffer::StreamBuffer(gzFile)\nStreamBuffer.h:59:5: note:   no known conversion for argument 1 from \u2018_IO_FILE*\u2019 to \u2018gzFile\u2019\nStreamBuffer.h:29:7: note: StreamBuffer::StreamBuffer(const StreamBuffer&)\nStreamBuffer.h:29:7: note:   no known conversion for argument 1 from \u2018_IO_FILE*\u2019 to \u2018const StreamBuffer&\u2019\nmake[2]: *** [DimacsParser.lo] Erreur 1\n```",
     "created_at": "2012-06-29T09:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -474,7 +474,6 @@ archive/issue_comments_002070.json:
 ```
 
 Installation of the spkg fails on my 32-bit ubuntu 12.04.
-
 
 ```
 g++ -DHAVE_CONFIG_H -I. -I.. -I/usr/local/sage/local/include -Wall -I. -I./../MTRand -I./../mtl -fopenmp -I/usr/local/sage/local/include -L/usr/local/sage/local/lib -g -fPIC -Wall -pedantic -O2 -MT DimacsParser.lo -MD -MP -MF .deps/DimacsParser.Tpo -c DimacsParser.cpp  -fPIC -DPIC -o .libs/DimacsParser.o
@@ -488,7 +487,6 @@ StreamBuffer.h:29:7: note: StreamBuffer::StreamBuffer(const StreamBuffer&)
 StreamBuffer.h:29:7: note:   no known conversion for argument 1 from ‘_IO_FILE*’ to ‘const StreamBuffer&’
 make[2]: *** [DimacsParser.lo] Erreur 1
 ```
-
 
 
 
@@ -625,7 +623,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_002078.json:
 ```json
 {
-    "body": "It seems that interfaces had changes, so the spkg doesn't fit with the sage library patches.\nIt seems that your installation picked up the headers from the old install. Maybe its enough to delete `SAGE_INC+\"/cryptominisat/`?\n\nI fixed a few trivial things below, but there's more to be done:\n\n```\n #!diff\ndiff -r ef5eaff5d6cd module_list.py\n--- a/module_list.py    Fri Jun 29 17:04:34 2012 +0100\n+++ b/module_list.py    Sun Jul 01 23:40:53 2012 +0200\n@@ -1891,12 +1891,12 @@\n     ext_modules.extend([\n         Extension(\"sage.sat.solvers.cryptominisat.cryptominisat\",\n                   [\"sage/sat/solvers/cryptominisat/cryptominisat.pyx\"],\n-                  include_dirs = [SAGE_INC, SAGE_INC+\"/cryptominisat/mtl\", SAGE_INC+\"/cryptominisat/Solver\"],\n+                  include_dirs = [SAGE_INC, SAGE_INC+\"/cmsat/\"],\n                   language = \"c++\",\n                   libraries = ['cryptominisat', 'z']),\n         Extension(\"sage.sat.solvers.cryptominisat.solverconf\",\n                   [\"sage/sat/solvers/cryptominisat/solverconf.pyx\", \"sage/sat/solvers/cryptominisat/solverconf_helper.cpp\"],\n-                  include_dirs = [SAGE_INC, SAGE_INC+\"/cryptominisat/mtl\", SAGE_INC+\"/cryptominisat/Solver\"],\n+                  include_dirs = [SAGE_INC, SAGE_INC+\"/cmsat/\"],\n                   language = \"c++\",\n                   libraries = ['cryptominisat', 'z'])\n         ])\ndiff -r ef5eaff5d6cd sage/sat/solvers/cryptominisat/solverconf_helper.h\n--- a/sage/sat/solvers/cryptominisat/solverconf_helper.h        Fri Jun 29 17:04:34 2012 +0100\n+++ b/sage/sat/solvers/cryptominisat/solverconf_helper.h        Sun Jul 01 23:40:53 2012 +0200\n@@ -14,7 +14,7 @@\n  *                  http://www.gnu.org/licenses/\n  ****************************************************************************/\n\n-#include <cryptominisat/Solver/SolverConf.h>\n+#include <SolverConf.h>\n\n enum sc_type {\n   t_int      = 1<<0,\n```\n",
+    "body": "It seems that interfaces had changes, so the spkg doesn't fit with the sage library patches.\nIt seems that your installation picked up the headers from the old install. Maybe its enough to delete `SAGE_INC+\"/cryptominisat/`?\n\nI fixed a few trivial things below, but there's more to be done:\n\n```\n #!diff\ndiff -r ef5eaff5d6cd module_list.py\n--- a/module_list.py    Fri Jun 29 17:04:34 2012 +0100\n+++ b/module_list.py    Sun Jul 01 23:40:53 2012 +0200\n@@ -1891,12 +1891,12 @@\n     ext_modules.extend([\n         Extension(\"sage.sat.solvers.cryptominisat.cryptominisat\",\n                   [\"sage/sat/solvers/cryptominisat/cryptominisat.pyx\"],\n-                  include_dirs = [SAGE_INC, SAGE_INC+\"/cryptominisat/mtl\", SAGE_INC+\"/cryptominisat/Solver\"],\n+                  include_dirs = [SAGE_INC, SAGE_INC+\"/cmsat/\"],\n                   language = \"c++\",\n                   libraries = ['cryptominisat', 'z']),\n         Extension(\"sage.sat.solvers.cryptominisat.solverconf\",\n                   [\"sage/sat/solvers/cryptominisat/solverconf.pyx\", \"sage/sat/solvers/cryptominisat/solverconf_helper.cpp\"],\n-                  include_dirs = [SAGE_INC, SAGE_INC+\"/cryptominisat/mtl\", SAGE_INC+\"/cryptominisat/Solver\"],\n+                  include_dirs = [SAGE_INC, SAGE_INC+\"/cmsat/\"],\n                   language = \"c++\",\n                   libraries = ['cryptominisat', 'z'])\n         ])\ndiff -r ef5eaff5d6cd sage/sat/solvers/cryptominisat/solverconf_helper.h\n--- a/sage/sat/solvers/cryptominisat/solverconf_helper.h        Fri Jun 29 17:04:34 2012 +0100\n+++ b/sage/sat/solvers/cryptominisat/solverconf_helper.h        Sun Jul 01 23:40:53 2012 +0200\n@@ -14,7 +14,7 @@\n  *                  http://www.gnu.org/licenses/\n  ****************************************************************************/\n\n-#include <cryptominisat/Solver/SolverConf.h>\n+#include <SolverConf.h>\n\n enum sc_type {\n   t_int      = 1<<0,\n```",
     "created_at": "2012-07-01T21:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -672,7 +670,6 @@ diff -r ef5eaff5d6cd sage/sat/solvers/cryptominisat/solverconf_helper.h
  enum sc_type {
    t_int      = 1<<0,
 ```
-
 
 
 
@@ -1035,7 +1032,7 @@ Resolution: fixed
 archive/issue_comments_002094.json:
 ```json
 {
-    "body": "Does anybody remember why this sentence was added to the documentation?\n\n```\n        - If the solver was interrupted before deciding satisfiability\n          ``None``.\n```\n\nI don't believe that this claim is true.",
+    "body": "Does anybody remember why this sentence was added to the documentation?\n\n```\n        - If the solver was interrupted before deciding satisfiability\n          ``None``.\n```\nI don't believe that this claim is true.",
     "created_at": "2015-09-30T13:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/418",
     "type": "issue_comment",
@@ -1050,7 +1047,6 @@ Does anybody remember why this sentence was added to the documentation?
         - If the solver was interrupted before deciding satisfiability
           ``None``.
 ```
-
 I don't believe that this claim is true.
 
 

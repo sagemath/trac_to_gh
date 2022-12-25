@@ -72,7 +72,7 @@ Michael
 archive/issue_comments_019388.json:
 ```json
 {
-    "body": "The problem is that there is a bug when deciding to use fast float, since the above\nplot takes 0.04 seconds to draw when one calls fast_float explicitly:\n\n```\nsage: time plot((1.0 - x * floor(1/x))._fast_float_(x), (x,0.00001,1.0))\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\n```\n\n\n\n -- William",
+    "body": "The problem is that there is a bug when deciding to use fast float, since the above\nplot takes 0.04 seconds to draw when one calls fast_float explicitly:\n\n```\nsage: time plot((1.0 - x * floor(1/x))._fast_float_(x), (x,0.00001,1.0))\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s\n```\n\n\n -- William",
     "created_at": "2008-04-06T19:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ plot takes 0.04 seconds to draw when one calls fast_float explicitly:
 sage: time plot((1.0 - x * floor(1/x))._fast_float_(x), (x,0.00001,1.0))
 CPU times: user 0.03 s, sys: 0.01 s, total: 0.04 s
 ```
-
 
 
  -- William
@@ -196,7 +195,7 @@ Resolution: fixed
 archive/issue_comments_019393.json:
 ```json
 {
-    "body": "Ok, somebody didn't doctest properly:\n\n```\nsage -t -long devel/sage/sage/functions/special.py          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/special.py\", line 905:\n    sage: P = plot(inverse_jacobi('sn', x, 0.5), 0, 1, plot_points=20)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[5]>\", line 1, in <module>\n        P = plot(inverse_jacobi('sn', x, RealNumber('0.5')), Integer(0), Integer(1), plot_points=Integer(20))###line 905:\n    sage: P = plot(inverse_jacobi('sn', x, 0.5), 0, 1, plot_points=20)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3553, in __call__\n        G = funcs.plot(*args, **kwds)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 915, in plot\n        f = F._fast_float_(param)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3814, in _fast_float_\n        raise NotImplementedError # return lambda x: float(self(x))\n    NotImplementedError\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/.doctest_special.py\n         [4.7 s]\n```\n\n\nCheers,\n\nMichael",
+    "body": "Ok, somebody didn't doctest properly:\n\n```\nsage -t -long devel/sage/sage/functions/special.py          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/special.py\", line 905:\n    sage: P = plot(inverse_jacobi('sn', x, 0.5), 0, 1, plot_points=20)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[5]>\", line 1, in <module>\n        P = plot(inverse_jacobi('sn', x, RealNumber('0.5')), Integer(0), Integer(1), plot_points=Integer(20))###line 905:\n    sage: P = plot(inverse_jacobi('sn', x, 0.5), 0, 1, plot_points=20)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3553, in __call__\n        G = funcs.plot(*args, **kwds)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 915, in plot\n        f = F._fast_float_(param)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3814, in _fast_float_\n        raise NotImplementedError # return lambda x: float(self(x))\n    NotImplementedError\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/.doctest_special.py\n         [4.7 s]\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T21:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -234,7 +233,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.alp
          [4.7 s]
 ```
 
-
 Cheers,
 
 Michael
@@ -246,7 +244,7 @@ Michael
 archive/issue_comments_019394.json:
 ```json
 {
-    "body": "Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by @jaapspies created at 2008-04-06 21:31:14\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\nYou may call me names is you like :-)!\n\nJaap",
+    "body": "Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket2831/sage-2831_part2.patch) by @jaapspies created at 2008-04-06 21:31:14\n\nReplying to [comment:6 mabshoff]:\n> Ok, somebody didn't doctest properly:\n\n\nYou may call me names is you like :-)!\n\nJaap",
     "created_at": "2008-04-06T21:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -259,6 +257,7 @@ Attachment [sage-2831_part2.patch](tarball://root/attachments/some-uuid/ticket28
 
 Replying to [comment:6 mabshoff]:
 > Ok, somebody didn't doctest properly:
+
 
 You may call me names is you like :-)!
 
@@ -293,7 +292,7 @@ Michael
 archive/issue_comments_019396.json:
 ```json
 {
-    "body": "Replying to [comment:7 jsp]:\n> Replying to [comment:6 mabshoff]:\n> > Ok, somebody didn't doctest properly:\n> \n> You may call me names is you like :-)!\n\nSure :)\n\nI would prefer if people stated what they actually doctested [i.e. which version of Sage with what patches applied on what platforms] so I would check myself in case somebody didn't do as much coverage as I would prefer. So you can always blame me too.\n\n> Jaap\n> \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 jsp]:\n> Replying to [comment:6 mabshoff]:\n> > Ok, somebody didn't doctest properly:\n\n> \n> You may call me names is you like :-)!\n\n\nSure :)\n\nI would prefer if people stated what they actually doctested [i.e. which version of Sage with what patches applied on what platforms] so I would check myself in case somebody didn't do as much coverage as I would prefer. So you can always blame me too.\n\n> Jaap\n> \n\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T21:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2831",
     "type": "issue_comment",
@@ -305,8 +304,10 @@ archive/issue_comments_019396.json:
 Replying to [comment:7 jsp]:
 > Replying to [comment:6 mabshoff]:
 > > Ok, somebody didn't doctest properly:
+
 > 
 > You may call me names is you like :-)!
+
 
 Sure :)
 
@@ -314,6 +315,7 @@ I would prefer if people stated what they actually doctested [i.e. which version
 
 > Jaap
 > 
+
 
 Cheers,
 

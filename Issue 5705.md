@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5705
 archive/issue_comments_044497.json:
 ```json
 {
-    "body": "Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by @simon-king-jena created at 2009-04-07 15:38:59\n\nIndeed, without the patch, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nFalse\n```\n\n\nWith the patch, that cleanly applies, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nTrue\n```\n\n\nSo, I give it a positive review.",
+    "body": "Attachment [mpoly_homogenize_parent.patch](tarball://root/attachments/some-uuid/ticket5705/mpoly_homogenize_parent.patch) by @simon-king-jena created at 2009-04-07 15:38:59\n\nIndeed, without the patch, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nFalse\n```\n\nWith the patch, that cleanly applies, we have\n\n```\nsage: R=PolynomialRing(QQ,'x',5)\nsage: p=R.random_element()\nsage: q1=p.homogenize()\nsage: q2=p.homogenize()\nsage: q1.parent() is q2.parent()\nTrue\n```\n\nSo, I give it a positive review.",
     "created_at": "2009-04-07T15:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5705",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ sage: q1.parent() is q2.parent()
 False
 ```
 
-
 With the patch, that cleanly applies, we have
 
 ```
@@ -64,7 +63,6 @@ sage: q2=p.homogenize()
 sage: q1.parent() is q2.parent()
 True
 ```
-
 
 So, I give it a positive review.
 

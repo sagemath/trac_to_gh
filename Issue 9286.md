@@ -164,7 +164,7 @@ Resolution: fixed
 archive/issue_comments_087326.json:
 ```json
 {
-    "body": "I read the patch and I approve.  I ran\n\n```\nsage -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg\n```\n\nwhich did not run any tests, and then \n\n```\nSAGE_CHECK=yes sage -f -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg\n```\n\nwhich did.  All tests passed on \n\n```\nuname -a\nDarwin parduc.home 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386\n```\n\n\nCongratulations, you are now the proud owner of a brand new Positive Review!",
+    "body": "I read the patch and I approve.  I ran\n\n```\nsage -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg\n```\nwhich did not run any tests, and then \n\n```\nSAGE_CHECK=yes sage -f -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg\n```\nwhich did.  All tests passed on \n\n```\nuname -a\nDarwin parduc.home 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386\n```\n\nCongratulations, you are now the proud owner of a brand new Positive Review!",
     "created_at": "2010-06-24T03:09:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
@@ -178,20 +178,17 @@ I read the patch and I approve.  I ran
 ```
 sage -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg
 ```
-
 which did not run any tests, and then 
 
 ```
 SAGE_CHECK=yes sage -f -i http://boxen.math.washington.edu/home/kirkby/patches/boehm_gc-7.1.p6.spkg
 ```
-
 which did.  All tests passed on 
 
 ```
 uname -a
 Darwin parduc.home 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386
 ```
-
 
 Congratulations, you are now the proud owner of a brand new Positive Review!
 

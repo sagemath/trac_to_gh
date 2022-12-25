@@ -3,7 +3,7 @@
 archive/issues_004807.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\n\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\n\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\n\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
+    "body": "Assignee: @burcin\n\nThis was reported by M. Yurko in an email to sage-support:\n\nhere are some examples of what I did:\n#First, an example of the bug\n\n```\nEi(20)\nOutput: 25615646.4145 + 6.28318530718*I \n```\nit should instead be just 25615646.4145\n\n```\nEi(19)\nOutput: 9950907.25105 \n```\nthe error doesn't occur here\n\n```\n-exponential_integral_1(-20).n(digits=50)\nOutput: 25615652.664056588 \n```\nhere the bug doesn't occur, although the\ncode for exponential_integral_1  loses a lot \nof accuracy by converting the number returned \nfrom PARI into a float, so it has much less\naccuracy\n\n```\n-pari(-20).eint1().n(digits = 50)\nOutput: 2.5615652664056588773746625520288944244384765625000e7 }}}\nhere the full accuracy from PARI is preserved\nthe following shows the difference in the speed \nof the two methods \n\nthe current implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = Ei(10)\nOutput: CPU time: 51.64 s,  Wall time: 51.81 s\n}}}\nthe time of PARI's implementation\n{{{\n%time\nfor i in srange (1,10^6):\n   num = pari(-i).eint1()\nOutput: CPU time: 20.12 s,  Wall time: 20.32 s\n}}}\nPARI's implementation seems to be more than twice as fast\n\nWilliam Stein added this:\n\nA quick remark: The Pari Ei only works with *real* input, whereas the scipy one works with complex input.\nThe Sage function will have to fixed in the meantime or\nat least as a bare minimum have a big comment at the top explaining that there is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4807\n\n",
     "created_at": "2008-12-16T04:49:43Z",
     "labels": [
         "component: calculus",
@@ -27,21 +27,18 @@ here are some examples of what I did:
 Ei(20)
 Output: 25615646.4145 + 6.28318530718*I 
 ```
-
 it should instead be just 25615646.4145
 
 ```
 Ei(19)
 Output: 9950907.25105 
 ```
-
 the error doesn't occur here
 
 ```
 -exponential_integral_1(-20).n(digits=50)
 Output: 25615652.664056588 
 ```
-
 here the bug doesn't occur, although the
 code for exponential_integral_1  loses a lot 
 of accuracy by converting the number returned 
@@ -105,7 +102,7 @@ archive/issue_events_011001.json:
 archive/issue_comments_036367.json:
 ```json
 {
-    "body": "The solution seems to be the following from the Scipy mailing list:\n\n```\nRobert Kern wrote:\n> >\n> > Ah, I think found it using this clue. It's a bug in SPECFUN. The\n> > \"IMPLICIT DOUBLE PRECISION\" statement is missing \"A\" so A0 is REAL\n> > rather than DOUBLE. Fixing that makes both of them go through the same\n> > code path. Can you change the line to this:\n> >\n> >           IMPLICIT DOUBLE PRECISION (A,D-H,O-Y)\n> >\n> > in your specfun.f file, and rebuild scipy?\n> >   \n\nSorry for the delay: you're right, this seems to fix the problem, at\nleast for me. The example now gives me:\n\n(25615628.4058-3.14159265359j)\n(25615630.8316-3.14159265359j)\n\ncheers,\n\nDavid\n```\n",
+    "body": "The solution seems to be the following from the Scipy mailing list:\n\n```\nRobert Kern wrote:\n> >\n> > Ah, I think found it using this clue. It's a bug in SPECFUN. The\n> > \"IMPLICIT DOUBLE PRECISION\" statement is missing \"A\" so A0 is REAL\n> > rather than DOUBLE. Fixing that makes both of them go through the same\n> > code path. Can you change the line to this:\n> >\n> >           IMPLICIT DOUBLE PRECISION (A,D-H,O-Y)\n> >\n> > in your specfun.f file, and rebuild scipy?\n> >   \n\nSorry for the delay: you're right, this seems to fix the problem, at\nleast for me. The example now gives me:\n\n(25615628.4058-3.14159265359j)\n(25615630.8316-3.14159265359j)\n\ncheers,\n\nDavid\n```",
     "created_at": "2008-12-16T09:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
@@ -142,13 +139,12 @@ David
 
 
 
-
 ---
 
 archive/issue_comments_036368.json:
 ```json
 {
-    "body": "Mike Hansen observes that one could implement Ei in *general* and with arbitrary precision by using the library \"mpmath\", which just happens to already be in Sage.  That library can be made fast if we included gmpy or hack it to use our integers.\n\n\n```\nsage: import sympy.mpmath as a\nsage: a.ei(complex(2r,3r))\nmpc(real='-0.3615519445996403', imag='5.2705484358136943')\nsage: a.mp.prec = 1000\nsage: a.ei('20.1000000000000000000000000000000000000000000000000000000000000000000')\nmpf('28160453.3833994153950012661507902048168259435687244439573563929054452528467189574883919398422855919158391624626109323992762879680063235714851415880668470266487381859473426294489489391883476549497496312702303650499027252495570681212146125439331860229395375385300595969122490770779143241578042047266845835')\n```\n\n\nSo this is an alternative approach to fixing this bug and greatly improving",
+    "body": "Mike Hansen observes that one could implement Ei in *general* and with arbitrary precision by using the library \"mpmath\", which just happens to already be in Sage.  That library can be made fast if we included gmpy or hack it to use our integers.\n\n```\nsage: import sympy.mpmath as a\nsage: a.ei(complex(2r,3r))\nmpc(real='-0.3615519445996403', imag='5.2705484358136943')\nsage: a.mp.prec = 1000\nsage: a.ei('20.1000000000000000000000000000000000000000000000000000000000000000000')\nmpf('28160453.3833994153950012661507902048168259435687244439573563929054452528467189574883919398422855919158391624626109323992762879680063235714851415880668470266487381859473426294489489391883476549497496312702303650499027252495570681212146125439331860229395375385300595969122490770779143241578042047266845835')\n```\n\nSo this is an alternative approach to fixing this bug and greatly improving",
     "created_at": "2009-01-24T12:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
@@ -159,7 +155,6 @@ archive/issue_comments_036368.json:
 
 Mike Hansen observes that one could implement Ei in *general* and with arbitrary precision by using the library "mpmath", which just happens to already be in Sage.  That library can be made fast if we included gmpy or hack it to use our integers.
 
-
 ```
 sage: import sympy.mpmath as a
 sage: a.ei(complex(2r,3r))
@@ -168,7 +163,6 @@ sage: a.mp.prec = 1000
 sage: a.ei('20.1000000000000000000000000000000000000000000000000000000000000000000')
 mpf('28160453.3833994153950012661507902048168259435687244439573563929054452528467189574883919398422855919158391624626109323992762879680063235714851415880668470266487381859473426294489489391883476549497496312702303650499027252495570681212146125439331860229395375385300595969122490770779143241578042047266845835')
 ```
-
 
 So this is an alternative approach to fixing this bug and greatly improving
 
@@ -179,7 +173,7 @@ So this is an alternative approach to fixing this bug and greatly improving
 archive/issue_comments_036369.json:
 ```json
 {
-    "body": "The exponential integral implementation in mpmath was recently improved to work for large arguments too:\n\n\n```\n>>> mp.dps = 50\n>>> ei(mpc(10**30, 10**40))\nmpc(real='-2.2944454721211223524123643204705731535186663746073664e+4342944819032\n51827651128918876', imag='3.310554099386694677220121243704912443715898934912981e\n+434294481903251827651128918876')\n```\n\n\nHowever, it is not optimized at all at the moment, and is probably many times slower than PARI. ei in mpmath is about 4-8 times slower than the cosine integral ci (which is almost the same function as ei, so properly optimized they should be about equally fast). [mpmath.ci(x) for x in range(10**6)] takes 132 seconds on my laptop.\n\nIf I find the time, I'll try to both optimize and assure accuracy everywhere for all the incarnations of exponential, trigonometric and hyperbolic integrals in mpmath for the next version.",
+    "body": "The exponential integral implementation in mpmath was recently improved to work for large arguments too:\n\n```\n>>> mp.dps = 50\n>>> ei(mpc(10**30, 10**40))\nmpc(real='-2.2944454721211223524123643204705731535186663746073664e+4342944819032\n51827651128918876', imag='3.310554099386694677220121243704912443715898934912981e\n+434294481903251827651128918876')\n```\n\nHowever, it is not optimized at all at the moment, and is probably many times slower than PARI. ei in mpmath is about 4-8 times slower than the cosine integral ci (which is almost the same function as ei, so properly optimized they should be about equally fast). [mpmath.ci(x) for x in range(10**6)] takes 132 seconds on my laptop.\n\nIf I find the time, I'll try to both optimize and assure accuracy everywhere for all the incarnations of exponential, trigonometric and hyperbolic integrals in mpmath for the next version.",
     "created_at": "2009-02-05T22:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4807",
     "type": "issue_comment",
@@ -190,7 +184,6 @@ archive/issue_comments_036369.json:
 
 The exponential integral implementation in mpmath was recently improved to work for large arguments too:
 
-
 ```
 >>> mp.dps = 50
 >>> ei(mpc(10**30, 10**40))
@@ -198,7 +191,6 @@ mpc(real='-2.2944454721211223524123643204705731535186663746073664e+4342944819032
 51827651128918876', imag='3.310554099386694677220121243704912443715898934912981e
 +434294481903251827651128918876')
 ```
-
 
 However, it is not optimized at all at the moment, and is probably many times slower than PARI. ei in mpmath is about 4-8 times slower than the cosine integral ci (which is almost the same function as ei, so properly optimized they should be about equally fast). [mpmath.ci(x) for x in range(10**6)] takes 132 seconds on my laptop.
 

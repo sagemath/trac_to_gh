@@ -120,7 +120,7 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_024745.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhampton]:\n> Builds OK on OS X 10.4, ppc, but something is wrong.  After rebuilding Maxima, all calculus doc tests with trig functions fail.  Running in maxima mode, trig functions seem OK, but in Sage when evaluated on symbolic variables a TypeError is raised: float required.\n\nFor the record: This was with Sage 2.11. With Sage 3.0.3 on OSX 10.5 PPC all the calculus doctest pass. I will dig out my OSX 10.4 iBook and test it there.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 mhampton]:\n> Builds OK on OS X 10.4, ppc, but something is wrong.  After rebuilding Maxima, all calculus doc tests with trig functions fail.  Running in maxima mode, trig functions seem OK, but in Sage when evaluated on symbolic variables a TypeError is raised: float required.\n\n\nFor the record: This was with Sage 2.11. With Sage 3.0.3 on OSX 10.5 PPC all the calculus doctest pass. I will dig out my OSX 10.4 iBook and test it there.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T11:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3519",
     "type": "issue_comment",
@@ -131,6 +131,7 @@ archive/issue_comments_024745.json:
 
 Replying to [comment:3 mhampton]:
 > Builds OK on OS X 10.4, ppc, but something is wrong.  After rebuilding Maxima, all calculus doc tests with trig functions fail.  Running in maxima mode, trig functions seem OK, but in Sage when evaluated on symbolic variables a TypeError is raised: float required.
+
 
 For the record: This was with Sage 2.11. With Sage 3.0.3 on OSX 10.5 PPC all the calculus doctest pass. I will dig out my OSX 10.4 iBook and test it there.
 

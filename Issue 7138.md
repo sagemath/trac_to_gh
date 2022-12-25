@@ -140,7 +140,7 @@ But this will at least allow it to build with gcc on Open Solaris.
 archive/issue_comments_059059.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> I think you mean spkg-install needs further work, not SPKG.txt \n> \n> But this will at least allow it to build with gcc on Open Solaris.\n> \n\nI really mean SPKG.txt as it is not conform the rules!\n\nWilliam is the maintainer so he will make the changes sometime.\n\nspkg-install is ok withe me.\n\nJaap",
+    "body": "Replying to [comment:6 drkirkby]:\n> I think you mean spkg-install needs further work, not SPKG.txt \n> \n> But this will at least allow it to build with gcc on Open Solaris.\n> \n\n\nI really mean SPKG.txt as it is not conform the rules!\n\nWilliam is the maintainer so he will make the changes sometime.\n\nspkg-install is ok withe me.\n\nJaap",
     "created_at": "2010-01-02T21:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7138",
     "type": "issue_comment",
@@ -154,6 +154,7 @@ Replying to [comment:6 drkirkby]:
 > 
 > But this will at least allow it to build with gcc on Open Solaris.
 > 
+
 
 I really mean SPKG.txt as it is not conform the rules!
 

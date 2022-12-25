@@ -3,7 +3,7 @@
 archive/issues_007394.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n\n```\n2*sqrt(e)\n```\n\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n```\n2*sqrt(e)\n```\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
     "created_at": "2009-11-05T07:07:06Z",
     "labels": [
         "component: algebra",
@@ -22,11 +22,9 @@ CC:  @jasongrout
 
 multiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:
 
-
 ```
 2*sqrt(e)
 ```
-
 
 tested with source compile i686 and sagenb.org
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7394
 archive/issue_comments_062065.json:
 ```json
 {
-    "body": "Pynac gets into an infinite recursion with these lines:\n\n\n```\n#141 0x00007ff794d21de6 in GiNaC::ex::construct_from_basic (other=@0x7fff450abfe6) at ex.cpp:312\n#142 0x00007ff794dc7405 in GiNaC::mul::eval (this=0x57772f0, level=<value optimized out>) at ex.h:267\n```\n",
+    "body": "Pynac gets into an infinite recursion with these lines:\n\n```\n#141 0x00007ff794d21de6 in GiNaC::ex::construct_from_basic (other=@0x7fff450abfe6) at ex.cpp:312\n#142 0x00007ff794dc7405 in GiNaC::mul::eval (this=0x57772f0, level=<value optimized out>) at ex.h:267\n```",
     "created_at": "2009-11-05T14:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
@@ -52,12 +50,10 @@ archive/issue_comments_062065.json:
 
 Pynac gets into an infinite recursion with these lines:
 
-
 ```
 #141 0x00007ff794d21de6 in GiNaC::ex::construct_from_basic (other=@0x7fff450abfe6) at ex.cpp:312
 #142 0x00007ff794dc7405 in GiNaC::mul::eval (this=0x57772f0, level=<value optimized out>) at ex.h:267
 ```
-
 
 
 

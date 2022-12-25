@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7745
 archive/issue_comments_066544.json:
 ```json
 {
-    "body": "Okay, I have a successful spkg.  BUT there are a number of things that will have to be fixed.  I have most of them (just doctests) but there are a couple bigger ones.  So this needs work (and a patch), but hopefully will be ready for 4.3.1, when that comes.\n\nThe spkg is at [http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg](http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg).\n\n1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n\n```\nsage: integrate(t*cos(-theta*t),(t,-oo,oo))\n```\n\n\n2. Because of overall improvements to to_poly_solve/%solve, there are some annoying things we will have to fix.  Some are just in parsing the new %solve and some other things from its new capabilities, like\n\n```\nTypeError: unable to make sense of Maxima expression '[If(cos(pi*...!=0,[x=-...],union())]' in Sage\n```\n\nthough this used to be nicely behaved from \n\n```\nsage: solve(cos(x) * sin(x) == 1/2, x, to_poly_solve=True)\n```\n\nbut unfortunately one of them is yet another hang in the algsys which doesn't automatically resolve (this is line 5948 in symbolic/expression.pyx):\n\n```\nsage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t)) - 11520000*e^(-(1200*t))) +.004*(9600*e^(-(1200*t)) - 2400*e^(-(300*t)))^2\nsage: a.solve(t, to_poly_solve=True)\n<hang>\n```\n\nI'm contacting the author of that for info.",
+    "body": "Okay, I have a successful spkg.  BUT there are a number of things that will have to be fixed.  I have most of them (just doctests) but there are a couple bigger ones.  So this needs work (and a patch), but hopefully will be ready for 4.3.1, when that comes.\n\nThe spkg is at [http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg](http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg).\n\n1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n\n```\nsage: integrate(t*cos(-theta*t),(t,-oo,oo))\n```\n\n2. Because of overall improvements to to_poly_solve/%solve, there are some annoying things we will have to fix.  Some are just in parsing the new %solve and some other things from its new capabilities, like\n\n```\nTypeError: unable to make sense of Maxima expression '[If(cos(pi*...!=0,[x=-...],union())]' in Sage\n```\nthough this used to be nicely behaved from \n\n```\nsage: solve(cos(x) * sin(x) == 1/2, x, to_poly_solve=True)\n```\nbut unfortunately one of them is yet another hang in the algsys which doesn't automatically resolve (this is line 5948 in symbolic/expression.pyx):\n\n```\nsage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t)) - 11520000*e^(-(1200*t))) +.004*(9600*e^(-(1200*t)) - 2400*e^(-(300*t)))^2\nsage: a.solve(t, to_poly_solve=True)\n<hang>\n```\nI'm contacting the author of that for info.",
     "created_at": "2009-12-22T04:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
@@ -53,19 +53,16 @@ The spkg is at [http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg
 sage: integrate(t*cos(-theta*t),(t,-oo,oo))
 ```
 
-
 2. Because of overall improvements to to_poly_solve/%solve, there are some annoying things we will have to fix.  Some are just in parsing the new %solve and some other things from its new capabilities, like
 
 ```
 TypeError: unable to make sense of Maxima expression '[If(cos(pi*...!=0,[x=-...],union())]' in Sage
 ```
-
 though this used to be nicely behaved from 
 
 ```
 sage: solve(cos(x) * sin(x) == 1/2, x, to_poly_solve=True)
 ```
-
 but unfortunately one of them is yet another hang in the algsys which doesn't automatically resolve (this is line 5948 in symbolic/expression.pyx):
 
 ```
@@ -73,7 +70,6 @@ sage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t)) - 1152000
 sage: a.solve(t, to_poly_solve=True)
 <hang>
 ```
-
 I'm contacting the author of that for info.
 
 
@@ -101,7 +97,7 @@ Changing status from new to needs_work.
 archive/issue_comments_066546.json:
 ```json
 {
-    "body": "> 1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n> {{{\n> sage: integrate(t*cos(-theta*t),(t,-oo,oo))\n> }}}\n> \n\nUpdate: this integral doesn't converge!  It was reported in #6816 but we never checked that it made sense, since Maxima did give an answer - zero, because the limit of the indefinite integral from -N to N is zero.  Maxima now (sensibly) doesn't give that any more, though it would be even better if it returned divergent; however, that would be a different ticket.\n\nStill working on fixing the remaining doctest issues.",
+    "body": "> 1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n> \n> ```\n> sage: integrate(t*cos(-theta*t),(t,-oo,oo))\n> ```\n> \n\n\nUpdate: this integral doesn't converge!  It was reported in #6816 but we never checked that it made sense, since Maxima did give an answer - zero, because the limit of the indefinite integral from -N to N is zero.  Maxima now (sensibly) doesn't give that any more, though it would be even better if it returned divergent; however, that would be a different ticket.\n\nStill working on fixing the remaining doctest issues.",
     "created_at": "2009-12-22T16:32:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
@@ -111,10 +107,12 @@ archive/issue_comments_066546.json:
 ```
 
 > 1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  
-> {{{
-> sage: integrate(t*cos(-theta*t),(t,-oo,oo))
-> }}}
 > 
+> ```
+> sage: integrate(t*cos(-theta*t),(t,-oo,oo))
+> ```
+> 
+
 
 Update: this integral doesn't converge!  It was reported in #6816 but we never checked that it made sense, since Maxima did give an answer - zero, because the limit of the indefinite integral from -N to N is zero.  Maxima now (sensibly) doesn't give that any more, though it would be even better if it returned divergent; however, that would be a different ticket.
 
@@ -201,7 +199,7 @@ See #6423 and #4142 for other bugs fixed by this spkg.
 archive/issue_comments_066551.json:
 ```json
 {
-    "body": "Installs fine. Still running tests, but have the following (trivial) errors.\n\n```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 1204:\n    sage: maxima.version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 2723:\n    sage: maxima_version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\n```\n",
+    "body": "Installs fine. Still running tests, but have the following (trivial) errors.\n\n```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 1204:\n    sage: maxima.version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 2723:\n    sage: maxima_version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\n```",
     "created_at": "2009-12-23T00:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
@@ -230,7 +228,6 @@ Got:
     '5.20.1'
 **********************************************************************
 ```
-
 
 
 

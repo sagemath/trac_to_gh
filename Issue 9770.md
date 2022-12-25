@@ -145,7 +145,7 @@ first version
 archive/issue_comments_095599.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n\nThanks for the review!\n\n> We also have the priority \"trivial\". \n\nI've added a mention of this now too.",
+    "body": "Replying to [comment:2 mvngu]:\n\nThanks for the review!\n\n> We also have the priority \"trivial\". \n\n\nI've added a mention of this now too.",
     "created_at": "2010-09-07T19:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9770",
     "type": "issue_comment",
@@ -159,6 +159,7 @@ Replying to [comment:2 mvngu]:
 Thanks for the review!
 
 > We also have the priority "trivial". 
+
 
 I've added a mention of this now too.
 

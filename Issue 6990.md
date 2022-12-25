@@ -192,7 +192,7 @@ Seems to work on OS X 10.5 (32 and 64 bit).
 archive/issue_comments_057714.json:
 ```json
 {
-    "body": "I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python package, I'm getting \"undefined symbols\". It compiles readline just fine, and then it starts working on the sqlite spkg, and immediately bombs out with:\n\n```\n/bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\nI tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.\n\nIt looks like the shell is getting confused and picking up the wrong libreadline, probably because Arch includes readline 6. On other systems, maybe this isn't a problem because the shell looks for a different readline...I guess?\n\nOn Ubuntu Karmic (9.10) amd64, I don't see this error, even though it does use readline 6.\n\n(Apologies if this comment should be on the readline spkg ticket, or should be in a new ticket...)",
+    "body": "I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python package, I'm getting \"undefined symbols\". It compiles readline just fine, and then it starts working on the sqlite spkg, and immediately bombs out with:\n\n```\n/bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC\n```\nI tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.\n\nIt looks like the shell is getting confused and picking up the wrong libreadline, probably because Arch includes readline 6. On other systems, maybe this isn't a problem because the shell looks for a different readline...I guess?\n\nOn Ubuntu Karmic (9.10) amd64, I don't see this error, even though it does use readline 6.\n\n(Apologies if this comment should be on the readline spkg ticket, or should be in a new ticket...)",
     "created_at": "2009-09-28T01:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
@@ -206,7 +206,6 @@ I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python
 ```
 /bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC
 ```
-
 I tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.
 
 It looks like the shell is getting confused and picking up the wrong libreadline, probably because Arch includes readline 6. On other systems, maybe this isn't a problem because the shell looks for a different readline...I guess?
@@ -222,7 +221,7 @@ On Ubuntu Karmic (9.10) amd64, I don't see this error, even though it does use r
 archive/issue_comments_057715.json:
 ```json
 {
-    "body": "Replying to [comment:10 ddrake]:\n> I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python package, I'm getting \"undefined symbols\". It compiles readline just fine, and then it starts working on the sqlite spkg, and immediately bombs out with:\n\n```\n/bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC\n```\n\n> I tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.\n\nI don't see why the error on Arch would prevent this ticket from getting into 4.1.2. The official supported platforms are CentOS, Debian, Fedora, RHEL, Mandriva, openSUSE, OS X 10.5, and Ubuntu. We are now porting to OS X 10.6 as well, a goal of the 4.1.2 release. Testing on all of these platforms, the updated spkg build OK and doctests pass, except for known doctest failures. Having said that, it's good to investigate why Jason's updated spkg failed to build on Arch. But that's another ticket.\n\n\n\n\nAn updated spkg based on Jason's is available at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/python-2.6.2.p3.spkg\n\nThe changes from Jason's spkg include:\n\n* Some general clean up of the file `SPKG.txt`. In particular, the typo pointed out by Dan, and some typo fixes. Make lines no more than 75 or so characters wide. Any line wider than that and it would be difficult to read on a standard terminal width, i.e. 80 characters wide.\n* Put in the lines \"set -e\" and \"set +e\".",
+    "body": "Replying to [comment:10 ddrake]:\n> I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python package, I'm getting \"undefined symbols\". It compiles readline just fine, and then it starts working on the sqlite spkg, and immediately bombs out with:\n\n{{{\n/bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC\n}}}\n> I tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.\n\n\nI don't see why the error on Arch would prevent this ticket from getting into 4.1.2. The official supported platforms are CentOS, Debian, Fedora, RHEL, Mandriva, openSUSE, OS X 10.5, and Ubuntu. We are now porting to OS X 10.6 as well, a goal of the 4.1.2 release. Testing on all of these platforms, the updated spkg build OK and doctests pass, except for known doctest failures. Having said that, it's good to investigate why Jason's updated spkg failed to build on Arch. But that's another ticket.\n\n\n\n\nAn updated spkg based on Jason's is available at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/python-2.6.2.p3.spkg\n\nThe changes from Jason's spkg include:\n\n* Some general clean up of the file `SPKG.txt`. In particular, the typo pointed out by Dan, and some typo fixes. Make lines no more than 75 or so characters wide. Any line wider than that and it would be difficult to read on a standard terminal width, i.e. 80 characters wide.\n* Put in the lines \"set -e\" and \"set +e\".",
     "created_at": "2009-09-28T06:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6990",
     "type": "issue_comment",
@@ -234,11 +233,11 @@ archive/issue_comments_057715.json:
 Replying to [comment:10 ddrake]:
 > I'm trying to build 4.1.2.alpha4 on Arch amd64, and with the new readline/python package, I'm getting "undefined symbols". It compiles readline just fine, and then it starts working on the sqlite spkg, and immediately bombs out with:
 
-```
+{{{
 /bin/bash: symbol lookup error: $SAGE_ROOT/local/lib/libreadline.so.6: undefined symbol: PC
-```
-
+}}}
 > I tried skipped sqlite (by touching spkg/installed/sqlite-3.6.17) and when it started working on libgpg_error, it immediately failed with the same error.
+
 
 I don't see why the error on Arch would prevent this ticket from getting into 4.1.2. The official supported platforms are CentOS, Debian, Fedora, RHEL, Mandriva, openSUSE, OS X 10.5, and Ubuntu. We are now porting to OS X 10.6 as well, a goal of the 4.1.2 release. Testing on all of these platforms, the updated spkg build OK and doctests pass, except for known doctest failures. Having said that, it's good to investigate why Jason's updated spkg failed to build on Arch. But that's another ticket.
 

@@ -3,7 +3,7 @@
 archive/issues_007977.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nSee this [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3a846ce7ba9fdb1f) thread:\n\n```\nIs there anywhere strict specification/possibilities for the docstring\nof functions ? My only source was the devel guide but it does not\nmention the \".. math:\" ReST tag and contains two different conventions\nfor the OUTPUT part of the docstrings \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7977\n\n",
+    "body": "Assignee: mvngu\n\nSee this [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3a846ce7ba9fdb1f) thread:\n\n```\nIs there anywhere strict specification/possibilities for the docstring\nof functions ? My only source was the devel guide but it does not\nmention the \".. math:\" ReST tag and contains two different conventions\nfor the OUTPUT part of the docstrings \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7977\n\n",
     "created_at": "2010-01-18T14:18:22Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ of functions ? My only source was the devel guide but it does not
 mention the ".. math:" ReST tag and contains two different conventions
 for the OUTPUT part of the docstrings 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7977
 

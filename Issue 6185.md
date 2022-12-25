@@ -52,7 +52,7 @@ Minh, can I ask you to review this ticket?
 archive/issue_comments_049284.json:
 ```json
 {
-    "body": "Replying to [comment:1 malb]:\n> Minh, can I ask you to review this ticket?\nHi Martin. Sorry for my simple question: Is there a reference or paper that describes the algorithm you use for converting an S-box to CNF? I only know about the application of SAT to cryptanalysis by reading this ticket. I usually find it much easier to understand code if I can access a reference somewhere that describes the algorithm.",
+    "body": "Replying to [comment:1 malb]:\n> Minh, can I ask you to review this ticket?\n\nHi Martin. Sorry for my simple question: Is there a reference or paper that describes the algorithm you use for converting an S-box to CNF? I only know about the application of SAT to cryptanalysis by reading this ticket. I usually find it much easier to understand code if I can access a reference somewhere that describes the algorithm.",
     "created_at": "2009-06-03T19:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
@@ -63,6 +63,7 @@ archive/issue_comments_049284.json:
 
 Replying to [comment:1 malb]:
 > Minh, can I ask you to review this ticket?
+
 Hi Martin. Sorry for my simple question: Is there a reference or paper that describes the algorithm you use for converting an S-box to CNF? I only know about the application of SAT to cryptanalysis by reading this ticket. I usually find it much easier to understand code if I can access a reference somewhere that describes the algorithm.
 
 
@@ -122,7 +123,7 @@ can I ask for this (hopefully) easy review?
 archive/issue_comments_049287.json:
 ```json
 {
-    "body": "My 2 cents:\n\n* the complexity is 'n * 2**m' (instead of 'm * 2**n'):\n\n```\n  for x in X:                        <-- 2^m\n      for output_bit in output_bits: <-- n\n```\n\n* typos:\n   * line 866: evaluate instead of evaulate\n   * line 840: endianness instead of endianess\n\n* maybe add an exception if xi or yi has wrong size\n\n* maybe (but as you like) construct x's on the fly:\n\n```\n  for e in xrange(2**m):\n      x = self.to_bits(e)\n```\n\notherwise seems good to me.",
+    "body": "My 2 cents:\n\n* the complexity is 'n * 2**m' (instead of 'm * 2**n'):\n\n```\n  for x in X:                        <-- 2^m\n      for output_bit in output_bits: <-- n\n```\n* typos:\n   * line 866: evaluate instead of evaulate\n   * line 840: endianness instead of endianess\n\n* maybe add an exception if xi or yi has wrong size\n\n* maybe (but as you like) construct x's on the fly:\n\n```\n  for e in xrange(2**m):\n      x = self.to_bits(e)\n```\notherwise seems good to me.",
     "created_at": "2009-06-11T07:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6185",
     "type": "issue_comment",
@@ -139,7 +140,6 @@ My 2 cents:
   for x in X:                        <-- 2^m
       for output_bit in output_bits: <-- n
 ```
-
 * typos:
    * line 866: evaluate instead of evaulate
    * line 840: endianness instead of endianess
@@ -152,7 +152,6 @@ My 2 cents:
   for e in xrange(2**m):
       x = self.to_bits(e)
 ```
-
 otherwise seems good to me.
 
 

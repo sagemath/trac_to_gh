@@ -3,7 +3,7 @@
 archive/issues_004707.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])\nsage: magma(E)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4707\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])\nsage: magma(E)\nboom\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4707\n\n",
     "created_at": "2008-12-05T02:28:26Z",
     "labels": [
         "component: interfaces",
@@ -18,13 +18,11 @@ archive/issues_004707.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])
 sage: magma(E)
 boom
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4707
 

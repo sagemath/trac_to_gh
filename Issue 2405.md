@@ -3,7 +3,7 @@
 archive/issues_002405.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nWe have this timing:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: f=prod([g^2-12*g+2 for g in R.gens()])\nsage: len((f).monomials())\n729\nsage: %time _=f**2\nCPU times: user 21.32 s, sys: 0.14 s, total: 21.46 s\nWall time: 21.46\n```\n\n\nI did some testing and I believe that the ETuple !__hash!__ function appears to be a quite non-trivial part of this bottleneck.  A slightly tweaked version gives me the time\n\n```\nsage: %time _=f**2\nCPU times: user 7.67 s, sys: 0.07 s, total: 7.74 s\nWall time: 7.74\n```\n\n\nA principle part of this tweak was replacing \n\n```\nreturn hash((tuple(sorted(self._data.iteritems())),self._length))\n```\n\nwith \n\n```\nreturn hash((tuple(self._data.items()),self._length))\n```\n\n\nI would have submitted a patch with this replaced code, but I think the sorting is a good part of that algorithm.  But, if we suppose that dictionaries produce their tuples in a predictable order, then I think the unsorted version should work.  However, the deeper issue is that I think we might want to consider some other storage alternatives for e-tuples -- possibly a sparse C array?  I think that the unsorted version is still pretty heavy for a hash function of an ETuple which absolutely must be super-fast.\n\nA paper by Fateman proved to be moderately interesting:  http://www.cs.berkeley.edu/~fateman/papers/fastmult.pdf  My impression after reading that paper is that we're essentially doing the correct algorithm (that is, there is no better algorithm for generic sparse poly's than the ordinary multiplication).  So, it seems to me that there really isn't a good reason that we should be significantly slower than singular at this.  Singular does this multiplication in about 1/4 second.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2405\n\n",
+    "body": "Assignee: @malb\n\nWe have this timing:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: f=prod([g^2-12*g+2 for g in R.gens()])\nsage: len((f).monomials())\n729\nsage: %time _=f**2\nCPU times: user 21.32 s, sys: 0.14 s, total: 21.46 s\nWall time: 21.46\n```\n\nI did some testing and I believe that the ETuple !__hash!__ function appears to be a quite non-trivial part of this bottleneck.  A slightly tweaked version gives me the time\n\n```\nsage: %time _=f**2\nCPU times: user 7.67 s, sys: 0.07 s, total: 7.74 s\nWall time: 7.74\n```\n\nA principle part of this tweak was replacing \n\n```\nreturn hash((tuple(sorted(self._data.iteritems())),self._length))\n```\nwith \n\n```\nreturn hash((tuple(self._data.items()),self._length))\n```\n\nI would have submitted a patch with this replaced code, but I think the sorting is a good part of that algorithm.  But, if we suppose that dictionaries produce their tuples in a predictable order, then I think the unsorted version should work.  However, the deeper issue is that I think we might want to consider some other storage alternatives for e-tuples -- possibly a sparse C array?  I think that the unsorted version is still pretty heavy for a hash function of an ETuple which absolutely must be super-fast.\n\nA paper by Fateman proved to be moderately interesting:  http://www.cs.berkeley.edu/~fateman/papers/fastmult.pdf  My impression after reading that paper is that we're essentially doing the correct algorithm (that is, there is no better algorithm for generic sparse poly's than the ordinary multiplication).  So, it seems to me that there really isn't a good reason that we should be significantly slower than singular at this.  Singular does this multiplication in about 1/4 second.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2405\n\n",
     "created_at": "2008-03-06T14:21:20Z",
     "labels": [
         "component: commutative algebra",
@@ -30,7 +30,6 @@ CPU times: user 21.32 s, sys: 0.14 s, total: 21.46 s
 Wall time: 21.46
 ```
 
-
 I did some testing and I believe that the ETuple !__hash!__ function appears to be a quite non-trivial part of this bottleneck.  A slightly tweaked version gives me the time
 
 ```
@@ -39,19 +38,16 @@ CPU times: user 7.67 s, sys: 0.07 s, total: 7.74 s
 Wall time: 7.74
 ```
 
-
 A principle part of this tweak was replacing 
 
 ```
 return hash((tuple(sorted(self._data.iteritems())),self._length))
 ```
-
 with 
 
 ```
 return hash((tuple(self._data.items()),self._length))
 ```
-
 
 I would have submitted a patch with this replaced code, but I think the sorting is a good part of that algorithm.  But, if we suppose that dictionaries produce their tuples in a predictable order, then I think the unsorted version should work.  However, the deeper issue is that I think we might want to consider some other storage alternatives for e-tuples -- possibly a sparse C array?  I think that the unsorted version is still pretty heavy for a hash function of an ETuple which absolutely must be super-fast.
 
@@ -68,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2405
 archive/issue_comments_016201.json:
 ```json
 {
-    "body": "> So, it seems to me that there really isn't a good reason that we should be \n> significantly slower than singular at this.  Singular does this multiplication in\n> about 1/4 second.\n\nI guess we'll need to reimplement everything in C first, using Python ints etc. is really killing us. Also we should replace the dictionaries with C hash tables (e.g., glib's). But we will always have the overhead of Python interfaced base fields and thus we will always be slower than Singular. \n\nBtw. for ZZ we should either\n   * implement it on top of Singular's QQ polynomials (short term)\n   * bug the Singular team to release their ZZ and ZZ/N code (it is 'almost done')",
+    "body": "> So, it seems to me that there really isn't a good reason that we should be \n> significantly slower than singular at this.  Singular does this multiplication in\n> about 1/4 second.\n\n\nI guess we'll need to reimplement everything in C first, using Python ints etc. is really killing us. Also we should replace the dictionaries with C hash tables (e.g., glib's). But we will always have the overhead of Python interfaced base fields and thus we will always be slower than Singular. \n\nBtw. for ZZ we should either\n   * implement it on top of Singular's QQ polynomials (short term)\n   * bug the Singular team to release their ZZ and ZZ/N code (it is 'almost done')",
     "created_at": "2008-03-06T15:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -80,6 +76,7 @@ archive/issue_comments_016201.json:
 > So, it seems to me that there really isn't a good reason that we should be 
 > significantly slower than singular at this.  Singular does this multiplication in
 > about 1/4 second.
+
 
 I guess we'll need to reimplement everything in C first, using Python ints etc. is really killing us. Also we should replace the dictionaries with C hash tables (e.g., glib's). But we will always have the overhead of Python interfaced base fields and thus we will always be slower than Singular. 
 
@@ -133,7 +130,7 @@ My motivation for entering it was to point out what I think is the correct start
 archive/issue_comments_016203.json:
 ```json
 {
-    "body": "> So, I'm not sure how big of a deal this is.  Ultimately, yes, singular is probably the way to go, but I think that the ETuples and polydict make a really nice multivariate polynomial implementation.  I'd like to see how far we could push it.  Obviously, if no one cares enough about ETuples and polydicts to actually put in the time, we have an implicit answer about the importance of this trac ticket.\n\nI do care, because we need a general purpose implementation and I think it would be fun to come up with something fast but general. I don't have the time right now though.",
+    "body": "> So, I'm not sure how big of a deal this is.  Ultimately, yes, singular is probably the way to go, but I think that the ETuples and polydict make a really nice multivariate polynomial implementation.  I'd like to see how far we could push it.  Obviously, if no one cares enough about ETuples and polydicts to actually put in the time, we have an implicit answer about the importance of this trac ticket.\n\n\nI do care, because we need a general purpose implementation and I think it would be fun to come up with something fast but general. I don't have the time right now though.",
     "created_at": "2008-03-11T11:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -143,6 +140,7 @@ archive/issue_comments_016203.json:
 ```
 
 > So, I'm not sure how big of a deal this is.  Ultimately, yes, singular is probably the way to go, but I think that the ETuples and polydict make a really nice multivariate polynomial implementation.  I'd like to see how far we could push it.  Obviously, if no one cares enough about ETuples and polydicts to actually put in the time, we have an implicit answer about the importance of this trac ticket.
+
 
 I do care, because we need a general purpose implementation and I think it would be fun to come up with something fast but general. I don't have the time right now though.
 
@@ -215,7 +213,7 @@ This means that we are approximately 3-6 times slower than singular over QQ.  It
 archive/issue_comments_016207.json:
 ```json
 {
-    "body": "**Review**:\n* Overall, the patch looks very good and I cheer you for picking up the task of making the general multivariate polynomials faster\n* I agree that the sparse data structure makes sense for many applications, note that Singular has different data structures for different numbers of variables, e.g. if only three variables are in the ring then a dense representation is chosen.\n* you should definitely add yourself as AUTHOR\n* you can use \"cpdef eadd\" instead of \"def eadd\" and \"cdef _eadd\"\n* I don't see any (off-list) mentioned memleak:\n\n```\nsage: PZ.<a,b,c> =PolynomialRing(ZZ)\nsage: get_memory_usage()\n606.27734375\nsage: %timeit a*b\n100000 loops, best of 3: 10.8 \u00b5s per loop\nsage: get_memory_usage()\n606.27734375\n```\n\n* Comparison with Singular for very small examples:\n\n```\nsage: PZ.<a,b,c> =PolynomialRing(ZZ)\nsage: %timeit a*b\n100000 loops, best of 3: 10.8 \u00b5s per loop\nsage: PQ.<x,y,z> =PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 268 ns per loop\nsage: 10800 / 268.0\n40.2985074626866\n```\n\n* I say *apply* if Joel declares his code production ready (it looks that way to me).\n\nI'd say that a 10x speedup is possible by replacing the `ETuple` with a C struct, replacing the `PolyDict` class with a C struct and pushing the MPolynomial_polydict class down to Cython eventually.",
+    "body": "**Review**:\n* Overall, the patch looks very good and I cheer you for picking up the task of making the general multivariate polynomials faster\n* I agree that the sparse data structure makes sense for many applications, note that Singular has different data structures for different numbers of variables, e.g. if only three variables are in the ring then a dense representation is chosen.\n* you should definitely add yourself as AUTHOR\n* you can use \"cpdef eadd\" instead of \"def eadd\" and \"cdef _eadd\"\n* I don't see any (off-list) mentioned memleak:\n\n```\nsage: PZ.<a,b,c> =PolynomialRing(ZZ)\nsage: get_memory_usage()\n606.27734375\nsage: %timeit a*b\n100000 loops, best of 3: 10.8 \u00b5s per loop\nsage: get_memory_usage()\n606.27734375\n```\n* Comparison with Singular for very small examples:\n\n```\nsage: PZ.<a,b,c> =PolynomialRing(ZZ)\nsage: %timeit a*b\n100000 loops, best of 3: 10.8 \u00b5s per loop\nsage: PQ.<x,y,z> =PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 268 ns per loop\nsage: 10800 / 268.0\n40.2985074626866\n```\n* I say *apply* if Joel declares his code production ready (it looks that way to me).\n\nI'd say that a 10x speedup is possible by replacing the `ETuple` with a C struct, replacing the `PolyDict` class with a C struct and pushing the MPolynomial_polydict class down to Cython eventually.",
     "created_at": "2008-03-16T15:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -240,7 +238,6 @@ sage: %timeit a*b
 sage: get_memory_usage()
 606.27734375
 ```
-
 * Comparison with Singular for very small examples:
 
 ```
@@ -253,7 +250,6 @@ sage: %timeit x*y
 sage: 10800 / 268.0
 40.2985074626866
 ```
-
 * I say *apply* if Joel declares his code production ready (it looks that way to me).
 
 I'd say that a 10x speedup is possible by replacing the `ETuple` with a C struct, replacing the `PolyDict` class with a C struct and pushing the MPolynomial_polydict class down to Cython eventually.
@@ -265,7 +261,7 @@ I'd say that a 10x speedup is possible by replacing the `ETuple` with a C struct
 archive/issue_comments_016208.json:
 ```json
 {
-    "body": "I have to reconsider my verdict, `sage -t` fails badly, e.g.:\n\n\n```\nsage -t  devel/sage-etuple/sage/rings/polynomial/multi_polynomial_element.py**********************************************************************\nFile \"multi_polynomial_element.py\", line 304:\n    sage: loads(dumps(x)) == x\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        loads(dumps(x)) == x###line 304:\n    sage: loads(dumps(x)) == x\n      File \"sage_object.pyx\", line 562, in sage.structure.sage_object.loads\n    RuntimeError: (None, <built-in function make_ETuple>, ({0: 1}, 10L))\n    invalid data stream\n    invalid load key, 'x'.\n    Unable to load pickled data.\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 482:\n    sage: [(c,m) for c,m in f]\nExpected:\n    [(3, x^3*y), (16, x), (7, 1)]\nGot:\n    [(16, x), (3, x^3*y), (7, 1)]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 661:\n    sage: g = f.homogenize('z'); g # indirect doctest\nExpected:\n    x^2 + 5*x*y + y*z + z^2\nGot:\n    y*z + z^2 + 5*x*y + x^2\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 726:\n    sage: F\nExpected:\n    -1*fy^3*gx^3 + 3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3\nGot:\n    3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3 - fy^3*gx^3\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 728:\n    sage: F.monomials()\nExpected:\n    [fy^3*gx^3, fx*fy^2*gx^2*gy, fx^2*fy*gx*gy^2, fx^3*gy^3]\nGot:\n    [fx*fy^2*gx^2*gy, fx^2*fy*gx*gy^2, fx^3*gy^3, fy^3*gx^3]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 730:\n    sage: F.coefficients()\nExpected:\n    [-1, 3, -3, 1]\nGot:\n    [3, -3, 1, -1]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 202:\n    sage: 3*f\nExpected:\n    3*x + 3*y\nGot:\n    3*y + 3*x\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1130:\n    sage: factor(x^3 - 2*y^3)\nExpected:\n    (x + (-s)*y) * (x^2 + s*x*y + s^2*y^2)\nGot:\n    ((-s)*y + x) * (s*x*y + s^2*y^2 + x^2)\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1133:\n    sage: k.factor()\nExpected:\n    (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5\nGot:\n    (s^2 + 2/3) * (s*y + x)^2 * ((-s)*y + x)^5 * (s*x*y + s^2*y^2 + x^2)^5\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1224:\n    sage: gcd(p,q)\nExpected:\n    x^3 + (u + 1)*y^3 + z^3\nGot:\n    z^3 + (u + 1)*y^3 + x^3\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1298:\n    sage: g.reduce(F)\nExpected:\n    6*y^2 - 2*y\nGot:\n    6*x^2 - 2*y\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1300:\n    sage: g.reduce(F.gens())\nExpected:\n    6*y^2 - 2*y\nGot:\n    6*x^2 - 2*y\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1392:\n    sage: degree_lowest_rational_function(r,a)\nExpected:\n          (-1, 4)\nGot:\n    (-1, 3)\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 217:\n    sage: f*3\nExpected:\n    3*x + 3*y\nGot:\n    3*y + 3*x\n**********************************************************************\n10 items had failures:\n   1 of   3 in __main__.example_10\n   1 of   6 in __main__.example_16\n   1 of   4 in __main__.example_22\n   3 of   9 in __main__.example_24\n   1 of   3 in __main__.example_4\n   2 of  14 in __main__.example_40\n   1 of  20 in __main__.example_42\n   2 of  10 in __main__.example_45\n   1 of   9 in __main__.example_46\n   1 of   3 in __main__.example_5\n***Test Failed*** 14 failures.\nFor whitespace errors, see the file .doctest_multi_polynomial_element.py\n         [2.6 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-etuple/sage/rings/polynomial/multi_polynomial_element.py\nTotal time for all tests: 2.6 seconds\n```\n\n\n* the monomials are not printed w.r.t. to the monomial ordering anymore\n* sometimes the result is just plain wrong",
+    "body": "I have to reconsider my verdict, `sage -t` fails badly, e.g.:\n\n```\nsage -t  devel/sage-etuple/sage/rings/polynomial/multi_polynomial_element.py**********************************************************************\nFile \"multi_polynomial_element.py\", line 304:\n    sage: loads(dumps(x)) == x\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        loads(dumps(x)) == x###line 304:\n    sage: loads(dumps(x)) == x\n      File \"sage_object.pyx\", line 562, in sage.structure.sage_object.loads\n    RuntimeError: (None, <built-in function make_ETuple>, ({0: 1}, 10L))\n    invalid data stream\n    invalid load key, 'x'.\n    Unable to load pickled data.\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 482:\n    sage: [(c,m) for c,m in f]\nExpected:\n    [(3, x^3*y), (16, x), (7, 1)]\nGot:\n    [(16, x), (3, x^3*y), (7, 1)]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 661:\n    sage: g = f.homogenize('z'); g # indirect doctest\nExpected:\n    x^2 + 5*x*y + y*z + z^2\nGot:\n    y*z + z^2 + 5*x*y + x^2\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 726:\n    sage: F\nExpected:\n    -1*fy^3*gx^3 + 3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3\nGot:\n    3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3 - fy^3*gx^3\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 728:\n    sage: F.monomials()\nExpected:\n    [fy^3*gx^3, fx*fy^2*gx^2*gy, fx^2*fy*gx*gy^2, fx^3*gy^3]\nGot:\n    [fx*fy^2*gx^2*gy, fx^2*fy*gx*gy^2, fx^3*gy^3, fy^3*gx^3]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 730:\n    sage: F.coefficients()\nExpected:\n    [-1, 3, -3, 1]\nGot:\n    [3, -3, 1, -1]\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 202:\n    sage: 3*f\nExpected:\n    3*x + 3*y\nGot:\n    3*y + 3*x\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1130:\n    sage: factor(x^3 - 2*y^3)\nExpected:\n    (x + (-s)*y) * (x^2 + s*x*y + s^2*y^2)\nGot:\n    ((-s)*y + x) * (s*x*y + s^2*y^2 + x^2)\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1133:\n    sage: k.factor()\nExpected:\n    (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5\nGot:\n    (s^2 + 2/3) * (s*y + x)^2 * ((-s)*y + x)^5 * (s*x*y + s^2*y^2 + x^2)^5\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1224:\n    sage: gcd(p,q)\nExpected:\n    x^3 + (u + 1)*y^3 + z^3\nGot:\n    z^3 + (u + 1)*y^3 + x^3\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1298:\n    sage: g.reduce(F)\nExpected:\n    6*y^2 - 2*y\nGot:\n    6*x^2 - 2*y\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1300:\n    sage: g.reduce(F.gens())\nExpected:\n    6*y^2 - 2*y\nGot:\n    6*x^2 - 2*y\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 1392:\n    sage: degree_lowest_rational_function(r,a)\nExpected:\n          (-1, 4)\nGot:\n    (-1, 3)\n**********************************************************************\nFile \"multi_polynomial_element.py\", line 217:\n    sage: f*3\nExpected:\n    3*x + 3*y\nGot:\n    3*y + 3*x\n**********************************************************************\n10 items had failures:\n   1 of   3 in __main__.example_10\n   1 of   6 in __main__.example_16\n   1 of   4 in __main__.example_22\n   3 of   9 in __main__.example_24\n   1 of   3 in __main__.example_4\n   2 of  14 in __main__.example_40\n   1 of  20 in __main__.example_42\n   2 of  10 in __main__.example_45\n   1 of   9 in __main__.example_46\n   1 of   3 in __main__.example_5\n***Test Failed*** 14 failures.\nFor whitespace errors, see the file .doctest_multi_polynomial_element.py\n         [2.6 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-etuple/sage/rings/polynomial/multi_polynomial_element.py\nTotal time for all tests: 2.6 seconds\n```\n\n* the monomials are not printed w.r.t. to the monomial ordering anymore\n* sometimes the result is just plain wrong",
     "created_at": "2008-03-16T16:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -275,7 +271,6 @@ archive/issue_comments_016208.json:
 ```
 
 I have to reconsider my verdict, `sage -t` fails badly, e.g.:
-
 
 ```
 sage -t  devel/sage-etuple/sage/rings/polynomial/multi_polynomial_element.py**********************************************************************
@@ -409,7 +404,6 @@ The following tests failed:
 Total time for all tests: 2.6 seconds
 ```
 
-
 * the monomials are not printed w.r.t. to the monomial ordering anymore
 * sometimes the result is just plain wrong
 
@@ -420,7 +414,7 @@ Total time for all tests: 2.6 seconds
 archive/issue_comments_016209.json:
 ```json
 {
-    "body": "Yep, I knew about the doc-test failures.  I posted the preliminary patch so I could get pre-review.  Virtually all of the polydict.pyx doc-test failures are side-effects from the !__hash!__ changing.  However, I do agree that there was a bug with the final output not respecting parental ordering and fixed it.\n\nThe newly attached patch should pass doc-tests and be production ready.\n\nPre-patch timing:\n\n```\nsage: R.<x,y,z,a,b>=ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: %time _=f*f\nCPU times: user 2.23 s, sys: 0.00 s, total: 2.23 s\nWall time: 2.24\n```\n\n\nPost-patch timing:\n\n```\nsage: R.<x,y,z,a,b>=ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: %time _=f*f\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22\n```\n\n\nWe've still got a long way to go to compete with singular.  Moving the MPolynomial_polydict to cython and speeding up creation time should make a noticable difference especially in very small problems where singular is absolutely killing us.",
+    "body": "Yep, I knew about the doc-test failures.  I posted the preliminary patch so I could get pre-review.  Virtually all of the polydict.pyx doc-test failures are side-effects from the !__hash!__ changing.  However, I do agree that there was a bug with the final output not respecting parental ordering and fixed it.\n\nThe newly attached patch should pass doc-tests and be production ready.\n\nPre-patch timing:\n\n```\nsage: R.<x,y,z,a,b>=ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: %time _=f*f\nCPU times: user 2.23 s, sys: 0.00 s, total: 2.23 s\nWall time: 2.24\n```\n\nPost-patch timing:\n\n```\nsage: R.<x,y,z,a,b>=ZZ[]\nsage: f=prod([2*g^2-4*g+8 for g in R.gens()])\nsage: %time _=f*f\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22\n```\n\nWe've still got a long way to go to compete with singular.  Moving the MPolynomial_polydict to cython and speeding up creation time should make a noticable difference especially in very small problems where singular is absolutely killing us.",
     "created_at": "2008-03-18T14:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -443,7 +437,6 @@ CPU times: user 2.23 s, sys: 0.00 s, total: 2.23 s
 Wall time: 2.24
 ```
 
-
 Post-patch timing:
 
 ```
@@ -453,7 +446,6 @@ sage: %time _=f*f
 CPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s
 Wall time: 0.22
 ```
-
 
 We've still got a long way to go to compete with singular.  Moving the MPolynomial_polydict to cython and speeding up creation time should make a noticable difference especially in very small problems where singular is absolutely killing us.
 
@@ -518,7 +510,7 @@ production ready patch
 archive/issue_comments_016211.json:
 ```json
 {
-    "body": "**Review**:\n* everything asked for before is addressed it seems\n* small polynomials timings: \nBefore:\n\n```\nsage: P.<x,y,z> = PolynomialRing(ZZ)\nsage: %timeit x*y\n10000 loops, best of 3: 23.2 \u00b5s per loop\n```\n\n\nAfter:\n\n```\nsage: P.<x,y,z> = PolynomialRing(ZZ)\nsage: %timeit x*y\n100000 loops, best of 3: 11 \u00b5s per loop\n```\n\n* applies cleanly, doctests pass\n* I say apply",
+    "body": "**Review**:\n* everything asked for before is addressed it seems\n* small polynomials timings: \nBefore:\n\n```\nsage: P.<x,y,z> = PolynomialRing(ZZ)\nsage: %timeit x*y\n10000 loops, best of 3: 23.2 \u00b5s per loop\n```\n\nAfter:\n\n```\nsage: P.<x,y,z> = PolynomialRing(ZZ)\nsage: %timeit x*y\n100000 loops, best of 3: 11 \u00b5s per loop\n```\n* applies cleanly, doctests pass\n* I say apply",
     "created_at": "2008-03-19T17:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2405",
     "type": "issue_comment",
@@ -538,7 +530,6 @@ sage: %timeit x*y
 10000 loops, best of 3: 23.2 µs per loop
 ```
 
-
 After:
 
 ```
@@ -546,7 +537,6 @@ sage: P.<x,y,z> = PolynomialRing(ZZ)
 sage: %timeit x*y
 100000 loops, best of 3: 11 µs per loop
 ```
-
 * applies cleanly, doctests pass
 * I say apply
 

@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093014.json:
 ```json
 {
-    "body": "Hello !!!\n\nIt's nice to be reviewing your first patch !\n\nWell, a few comments about the documentation :\n\nUnless you define what is a \"maximum\" b-coloring, the first line of the doc does not make sense (I understaned what you mean, but it has to be rephrased to be correct). Then it is 'a', not 'the', as there may be many. Then this b-cloring may not exist if k is less than Chi, so maybe you should even add \"if possible\".\n\nby assigning distinct colors to each of its elements => assigning the mising color in its neighborhood\n\nThe second paragraph is not clear, perhaps you should first defie what a b-vertex is, then rephrase the whole section.\n\nDefine what you mean by \"worst case\" -> I know what it means, but then again I know what b-coloring is.\n\nNOTE : Instead of copying what I wrote for he Grundy method, perhaps you should mention your degree-based bound, to say that it can be assumed to be optimal if it reaches this bound (which is less than the max degree of course). \n\nWhat the hell is this ?\n\n\n```\np.add_constraint(Sum(color[v][i] - is_used[i] for v in g.vertices()), max = 0) \n```\n\n\nIn the following \n\n```\np.set_objective(Sum(is_used[i] for i in xrange(k))) \n```\n\n\nclasses = xrange(k)\n\nAnd I think that's all there is ! By the way, if you know of a good b-coloring-specific example to add in the Examples section... I didn't have any inspiration for the Grundy number ;-)\n\nNathann",
+    "body": "Hello !!!\n\nIt's nice to be reviewing your first patch !\n\nWell, a few comments about the documentation :\n\nUnless you define what is a \"maximum\" b-coloring, the first line of the doc does not make sense (I understaned what you mean, but it has to be rephrased to be correct). Then it is 'a', not 'the', as there may be many. Then this b-cloring may not exist if k is less than Chi, so maybe you should even add \"if possible\".\n\nby assigning distinct colors to each of its elements => assigning the mising color in its neighborhood\n\nThe second paragraph is not clear, perhaps you should first defie what a b-vertex is, then rephrase the whole section.\n\nDefine what you mean by \"worst case\" -> I know what it means, but then again I know what b-coloring is.\n\nNOTE : Instead of copying what I wrote for he Grundy method, perhaps you should mention your degree-based bound, to say that it can be assumed to be optimal if it reaches this bound (which is less than the max degree of course). \n\nWhat the hell is this ?\n\n```\np.add_constraint(Sum(color[v][i] - is_used[i] for v in g.vertices()), max = 0) \n```\n\nIn the following \n\n```\np.set_objective(Sum(is_used[i] for i in xrange(k))) \n```\n\nclasses = xrange(k)\n\nAnd I think that's all there is ! By the way, if you know of a good b-coloring-specific example to add in the Examples section... I didn't have any inspiration for the Grundy number ;-)\n\nNathann",
     "created_at": "2010-07-28T09:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
@@ -85,18 +85,15 @@ NOTE : Instead of copying what I wrote for he Grundy method, perhaps you should 
 
 What the hell is this ?
 
-
 ```
 p.add_constraint(Sum(color[v][i] - is_used[i] for v in g.vertices()), max = 0) 
 ```
-
 
 In the following 
 
 ```
 p.set_objective(Sum(is_used[i] for i in xrange(k))) 
 ```
-
 
 classes = xrange(k)
 
@@ -191,7 +188,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_093019.json:
 ```json
 {
-    "body": ">   it is necessary because we only require that if is_used[i] then there is a b-vertex with color i. But it could happen that a vertex v is such that c[v][j] = 1, is_used[j] = 0 and j such that there are no b-vertices in it.\n\nThe list just above ensures that if `is_used[i]` is set to 1, then there is at least one vertex colored with `i`. Beside, it is already an equivalence as you are maximizing the sum of the is_used. If any of them can be set to 1, it will, even without this constraint !\n\n>   About the examples, I believe they are ok for the b-coloring, even if they're not interesting for the Grundy number. The point is that the P_5 is a simples example where b(G) = m(G), and the Petersen graph is relatively hard to calculate by hand, and it is an interesting example where b(G) < m(G) (usually the other examples have many vertices with same neighborhood to force b(G) < m(G)).\n\nOk !\n\nI also noticed something wrong in the doc, sorry for mentionning it this late : check out how the definition f `m(G)` is displayed... Probably just a typo in the LaTeX string.\n\nShort of these, everything is perfect ! The next version is the final one `:-)` \n\nNathann",
+    "body": ">   it is necessary because we only require that if is_used[i] then there is a b-vertex with color i. But it could happen that a vertex v is such that c[v][j] = 1, is_used[j] = 0 and j such that there are no b-vertices in it.\n\n\nThe list just above ensures that if `is_used[i]` is set to 1, then there is at least one vertex colored with `i`. Beside, it is already an equivalence as you are maximizing the sum of the is_used. If any of them can be set to 1, it will, even without this constraint !\n\n>   About the examples, I believe they are ok for the b-coloring, even if they're not interesting for the Grundy number. The point is that the P_5 is a simples example where b(G) = m(G), and the Petersen graph is relatively hard to calculate by hand, and it is an interesting example where b(G) < m(G) (usually the other examples have many vertices with same neighborhood to force b(G) < m(G)).\n\n\nOk !\n\nI also noticed something wrong in the doc, sorry for mentionning it this late : check out how the definition f `m(G)` is displayed... Probably just a typo in the LaTeX string.\n\nShort of these, everything is perfect ! The next version is the final one `:-)` \n\nNathann",
     "created_at": "2010-08-13T06:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9619",
     "type": "issue_comment",
@@ -202,9 +199,11 @@ archive/issue_comments_093019.json:
 
 >   it is necessary because we only require that if is_used[i] then there is a b-vertex with color i. But it could happen that a vertex v is such that c[v][j] = 1, is_used[j] = 0 and j such that there are no b-vertices in it.
 
+
 The list just above ensures that if `is_used[i]` is set to 1, then there is at least one vertex colored with `i`. Beside, it is already an equivalence as you are maximizing the sum of the is_used. If any of them can be set to 1, it will, even without this constraint !
 
 >   About the examples, I believe they are ok for the b-coloring, even if they're not interesting for the Grundy number. The point is that the P_5 is a simples example where b(G) = m(G), and the Petersen graph is relatively hard to calculate by hand, and it is an interesting example where b(G) < m(G) (usually the other examples have many vertices with same neighborhood to force b(G) < m(G)).
+
 
 Ok !
 

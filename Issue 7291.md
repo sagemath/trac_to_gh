@@ -50,7 +50,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060585.json:
 ```json
 {
-    "body": "You should include more examples in your doctests. At least make sure that each input is tested. For example:\n\n```\nsage: g.max_cut(vertices=True)\n30.0\n```\n\nShouldn't this be returning two sets of vertices?",
+    "body": "You should include more examples in your doctests. At least make sure that each input is tested. For example:\n\n```\nsage: g.max_cut(vertices=True)\n30.0\n```\nShouldn't this be returning two sets of vertices?",
     "created_at": "2009-12-15T16:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7291",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ You should include more examples in your doctests. At least make sure that each 
 sage: g.max_cut(vertices=True)
 30.0
 ```
-
 Shouldn't this be returning two sets of vertices?
 
 

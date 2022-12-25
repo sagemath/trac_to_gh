@@ -3,7 +3,7 @@
 archive/issues_002010.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._Y2KINFO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._TODO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._test-pngtest.sh\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._smakefile.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._SCOPTIONS.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.rc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngos2.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makevms.com\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.watcom\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcwin32\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcawin32\n...\nAND MANY MORE\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2010\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._Y2KINFO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._TODO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._test-pngtest.sh\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._smakefile.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._SCOPTIONS.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.rc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngos2.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makevms.com\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.watcom\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcwin32\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcawin32\n...\nAND MANY MORE\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2010\n\n",
     "created_at": "2008-01-31T23:21:33Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_002010.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._Y2KINFO
@@ -35,7 +34,6 @@ sage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcawin32
 ...
 AND MANY MORE
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2010
 

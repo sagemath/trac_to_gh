@@ -414,7 +414,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_022312.json:
 ```json
 {
-    "body": "In /src/sage/interfaces/interface.py the new function\n\n\n```\n+    def get_seed(self):\n+        return self._seed\n```\n\n\nlacks documentation and a doctest. The next two functions lack doctests (I know it's silly)\n\nOther than that, it looks good to me.",
+    "body": "In /src/sage/interfaces/interface.py the new function\n\n```\n+    def get_seed(self):\n+        return self._seed\n```\n\nlacks documentation and a doctest. The next two functions lack doctests (I know it's silly)\n\nOther than that, it looks good to me.",
     "created_at": "2015-06-12T17:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3231",
     "type": "issue_comment",
@@ -425,12 +425,10 @@ archive/issue_comments_022312.json:
 
 In /src/sage/interfaces/interface.py the new function
 
-
 ```
 +    def get_seed(self):
 +        return self._seed
 ```
-
 
 lacks documentation and a doctest. The next two functions lack doctests (I know it's silly)
 
@@ -721,7 +719,7 @@ Looks good to me.
 archive/issue_comments_022328.json:
 ```json
 {
-    "body": "\n```\nsage -t --long src/sage/interfaces/magma.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/octave.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/scilab.py  # 2 doctests failed\nsage -t --long src/sage/repl/interpreter.py  # 1 doctest failed\n```\n",
+    "body": "```\nsage -t --long src/sage/interfaces/magma.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/octave.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/scilab.py  # 2 doctests failed\nsage -t --long src/sage/repl/interpreter.py  # 1 doctest failed\n```",
     "created_at": "2015-06-15T20:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3231",
     "type": "issue_comment",
@@ -730,14 +728,12 @@ archive/issue_comments_022328.json:
 }
 ```
 
-
 ```
 sage -t --long src/sage/interfaces/magma.py  # 2 doctests failed
 sage -t --long src/sage/interfaces/octave.py  # 2 doctests failed
 sage -t --long src/sage/interfaces/scilab.py  # 2 doctests failed
 sage -t --long src/sage/repl/interpreter.py  # 1 doctest failed
 ```
-
 
 
 
@@ -764,7 +760,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_022330.json:
 ```json
 {
-    "body": "I get the first 3 errors if I run `sage -t --long src/sage/interfaces/magma.py` but not if I run `./sage -t --long src/sage/interfaces/magma.py`. Shouldn't I only be checking if it runs with the version of Sage on the branch and not the user's systems' version?\n\nThe last error seems to be something I didn't notice. Apparently some of the interfaces keep a counter of the commands used and label things with it. The `set_seed` function for some interfaces raises this counter because it needs to call a command in the interface. So running the test in `src/sage/repl/interpreter.py` the counter is off from what it used to be.\n\nThis error doesn't occur if I comment out line 626 in `src/sage/interfaces/maxima.py`:\n\n```\n625 # set random seed\n626 self.set_seed(self._seed)\n```\n\n\nI'm not sure what to do about this. It seems like there is a few options:\n\n* We could reset the counter after the `set_seed` function is called (I actually don't know if this is possible yet).\n* We could change all the doc tests in functions which use this counter and increment it manually.\n* We could not run `set_seed` on start and leave it up to the user to run it.\n\nMartin, do you have any suggestions on which way to proceed?",
+    "body": "I get the first 3 errors if I run `sage -t --long src/sage/interfaces/magma.py` but not if I run `./sage -t --long src/sage/interfaces/magma.py`. Shouldn't I only be checking if it runs with the version of Sage on the branch and not the user's systems' version?\n\nThe last error seems to be something I didn't notice. Apparently some of the interfaces keep a counter of the commands used and label things with it. The `set_seed` function for some interfaces raises this counter because it needs to call a command in the interface. So running the test in `src/sage/repl/interpreter.py` the counter is off from what it used to be.\n\nThis error doesn't occur if I comment out line 626 in `src/sage/interfaces/maxima.py`:\n\n```\n625 # set random seed\n626 self.set_seed(self._seed)\n```\n\nI'm not sure what to do about this. It seems like there is a few options:\n\n* We could reset the counter after the `set_seed` function is called (I actually don't know if this is possible yet).\n* We could change all the doc tests in functions which use this counter and increment it manually.\n* We could not run `set_seed` on start and leave it up to the user to run it.\n\nMartin, do you have any suggestions on which way to proceed?",
     "created_at": "2015-06-17T02:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3231",
     "type": "issue_comment",
@@ -783,7 +779,6 @@ This error doesn't occur if I comment out line 626 in `src/sage/interfaces/maxim
 625 # set random seed
 626 self.set_seed(self._seed)
 ```
-
 
 I'm not sure what to do about this. It seems like there is a few options:
 
@@ -876,7 +871,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_022335.json:
 ```json
 {
-    "body": "I still get \n\n\n```\nsage -t --warn-long 33.6 src/sage/repl/interpreter.py  # 1 doctest failed\n**********************************************************************\nFile \"src/sage/repl/interpreter.py\", line 561, in sage.repl.interpreter.InterfaceShellTransformer.preparse_imports_from_sage\nFailed example:\n    ift.preparse_imports_from_sage('2 + maxima(a)')\nExpected:\n    '2 +  sage1 '\nGot:\n    '2 +  sage4 '\n```\n\n\nbut the other three are gone.",
+    "body": "I still get \n\n```\nsage -t --warn-long 33.6 src/sage/repl/interpreter.py  # 1 doctest failed\n**********************************************************************\nFile \"src/sage/repl/interpreter.py\", line 561, in sage.repl.interpreter.InterfaceShellTransformer.preparse_imports_from_sage\nFailed example:\n    ift.preparse_imports_from_sage('2 + maxima(a)')\nExpected:\n    '2 +  sage1 '\nGot:\n    '2 +  sage4 '\n```\n\nbut the other three are gone.",
     "created_at": "2015-06-19T08:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3231",
     "type": "issue_comment",
@@ -886,7 +881,6 @@ archive/issue_comments_022335.json:
 ```
 
 I still get 
-
 
 ```
 sage -t --warn-long 33.6 src/sage/repl/interpreter.py  # 1 doctest failed
@@ -899,7 +893,6 @@ Expected:
 Got:
     '2 +  sage4 '
 ```
-
 
 but the other three are gone.
 

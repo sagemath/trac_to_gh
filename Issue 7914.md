@@ -89,7 +89,7 @@ Apply only the second patch (sorry about the first one).  This was tested on top
 archive/issue_comments_068739.json:
 ```json
 {
-    "body": "> Title says it all\n\nActually, it doesn't: what's a triangular morphism?  A definition (or at the very least a reference) should be in the documentation somewhere.",
+    "body": "> Title says it all\n\n\nActually, it doesn't: what's a triangular morphism?  A definition (or at the very least a reference) should be in the documentation somewhere.",
     "created_at": "2010-01-31T00:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -99,6 +99,7 @@ archive/issue_comments_068739.json:
 ```
 
 > Title says it all
+
 
 Actually, it doesn't: what's a triangular morphism?  A definition (or at the very least a reference) should be in the documentation somewhere.
 
@@ -318,7 +319,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068751.json:
 ```json
 {
-    "body": "Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:\n\n\n```\n-                 domain = self.domain(),               codomain = self.codomain(), \n+                 domain = self.codomain(),             codomain = self.domain(), \n```\n",
+    "body": "Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:\n\n```\n-                 domain = self.domain(),               codomain = self.codomain(), \n+                 domain = self.codomain(),             codomain = self.domain(), \n```",
     "created_at": "2010-04-03T00:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -329,12 +330,10 @@ archive/issue_comments_068751.json:
 
 Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:
 
-
 ```
 -                 domain = self.domain(),               codomain = self.codomain(), 
 +                 domain = self.codomain(),             codomain = self.domain(), 
 ```
-
 
 
 
@@ -361,7 +360,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_068753.json:
 ```json
 {
-    "body": "Replying to [comment:8 jbandlow]:\n> Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:\n> \n> {{{\n> -                 domain = self.domain(),               codomain = self.codomain(), \n> +                 domain = self.codomain(),             codomain = self.domain(), \n> }}}\n\nYes, Adrien had noticed this, and was about to fix it in the Sage-Combinat\nqueue. Since this patch is not yet in Sage, I agree that it's best to\ninclude the fix right away in it. Positive review!",
+    "body": "Replying to [comment:8 jbandlow]:\n> Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:\n> \n> \n> ```\n> -                 domain = self.domain(),               codomain = self.codomain(), \n> +                 domain = self.codomain(),             codomain = self.domain(), \n> ```\n\n\nYes, Adrien had noticed this, and was about to fix it in the Sage-Combinat\nqueue. Since this patch is not yet in Sage, I agree that it's best to\ninclude the fix right away in it. Positive review!",
     "created_at": "2010-04-03T08:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7914",
     "type": "issue_comment",
@@ -373,10 +372,12 @@ archive/issue_comments_068753.json:
 Replying to [comment:8 jbandlow]:
 > Fixed.  The only change between the new patch and the previous one is line 1076 of modules_with_basis.py, in the `invert` method:
 > 
-> {{{
+> 
+> ```
 > -                 domain = self.domain(),               codomain = self.codomain(), 
 > +                 domain = self.codomain(),             codomain = self.domain(), 
-> }}}
+> ```
+
 
 Yes, Adrien had noticed this, and was about to fix it in the Sage-Combinat
 queue. Since this patch is not yet in Sage, I agree that it's best to

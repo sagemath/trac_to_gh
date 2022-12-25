@@ -3,7 +3,7 @@
 archive/issues_008329.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph is missing a copy() method.\n\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph is missing a copy() method.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
     "created_at": "2010-02-22T19:51:40Z",
     "labels": [
         "component: graph theory",
@@ -24,7 +24,6 @@ Keywords: BipartiteGraph
 
 BipartiteGraph is missing a copy() method.
 
-
 ```
 sage: bg = BipartiteGraph(graphs.CycleGraph(4))
 sage: type(bg)
@@ -33,7 +32,6 @@ sage: bg2 = bg.copy()
 sage: type(bg2)
 <class 'sage.graphs.graph.Graph'>
 ```
-
 
 The result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?
 
@@ -177,7 +175,7 @@ Incidentally, I think I have a decent approach for add_vertex.  I was planning o
 archive/issue_comments_074029.json:
 ```json
 {
-    "body": "Replying to [comment:6 rhinton]:\n> Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  \n\nI was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.\n\n> Incidentally, I think I have a decent approach for add_vertex.  I was planning on opening another ticket.... :-)\n\nGo for it!",
+    "body": "Replying to [comment:6 rhinton]:\n> Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  \n\n\nI was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.\n\n> Incidentally, I think I have a decent approach for add_vertex.  I was planning on opening another ticket.... :-)\n\n\nGo for it!",
     "created_at": "2010-02-23T03:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
@@ -189,9 +187,11 @@ archive/issue_comments_074029.json:
 Replying to [comment:6 rhinton]:
 > Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  
 
+
 I was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.
 
 > Incidentally, I think I have a decent approach for add_vertex.  I was planning on opening another ticket.... :-)
+
 
 Go for it!
 
@@ -220,7 +220,7 @@ Note for someone who is more knowledgeable: the new BipartiteGraph.copy() method
 archive/issue_comments_074031.json:
 ```json
 {
-    "body": "I get it ... adding edges. :-)\n\nReplying to [comment:7 rlm]:\n> Replying to [comment:6 rhinton]:\n> > Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  \n> \n> I was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.",
+    "body": "I get it ... adding edges. :-)\n\nReplying to [comment:7 rlm]:\n> Replying to [comment:6 rhinton]:\n> > Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  \n\n> \n> I was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.",
     "created_at": "2010-02-24T21:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
@@ -234,6 +234,7 @@ I get it ... adding edges. :-)
 Replying to [comment:7 rlm]:
 > Replying to [comment:6 rhinton]:
 > > Right, I had forgotten about this.  Obviously I'm fixing methods as I need them.  I don't have time right now for the complete overhaul.  Is the piecemeal approach OK?  
+
 > 
 > I was just linking the tickets to each other. Adding edges to trac I guess... Any way you want to improve bipartite graphs I'll gladly review once I get the time, I just wanted to make sure you were aware of that ticket.
 
@@ -280,7 +281,7 @@ The new patch to GenericGraph.__copy__() always creates a new object of the same
 archive/issue_comments_074034.json:
 ```json
 {
-    "body": "This patch exposes a bug in another seldom used extension of the `Graph` class, `GraphBundle`.\n\n\n```\nFile \"/Users/rlmill/sage-4.3.3/devel/sage-main/sage/graphs/graph_bundle.py\", line 163:\n    sage: B.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[5]>\", line 1, in <module>\n        B.plot()###line 163:\n    sage: B.plot()\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph_bundle.py\", line 173, in plot\n        total_pos = generic_graph_pyx.spring_layout_fast(self, iterations=iters)\n      File \"generic_graph_pyx.pyx\", line 86, in sage.graphs.generic_graph_pyx.spring_layout_fast (sage/graphs/generic_graph_pyx.c:1361)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph.py\", line 2061, in to_undirected\n        return copy(self)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python2.6/copy.py\", line 79, in copy\n        return copier(x)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 483, in __copy__\n        G = self.__class__(self, name=self.name(), pos=copy(self._pos), boundary=copy(self._boundary), implementation=implementation, sparse=sparse)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph_bundle.py\", line 73, in __init__\n        if isinstance(args[0], (list, tuple)):\n    IndexError: tuple index out of range\n```\n",
+    "body": "This patch exposes a bug in another seldom used extension of the `Graph` class, `GraphBundle`.\n\n```\nFile \"/Users/rlmill/sage-4.3.3/devel/sage-main/sage/graphs/graph_bundle.py\", line 163:\n    sage: B.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[5]>\", line 1, in <module>\n        B.plot()###line 163:\n    sage: B.plot()\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph_bundle.py\", line 173, in plot\n        total_pos = generic_graph_pyx.spring_layout_fast(self, iterations=iters)\n      File \"generic_graph_pyx.pyx\", line 86, in sage.graphs.generic_graph_pyx.spring_layout_fast (sage/graphs/generic_graph_pyx.c:1361)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph.py\", line 2061, in to_undirected\n        return copy(self)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python2.6/copy.py\", line 79, in copy\n        return copier(x)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/generic_graph.py\", line 483, in __copy__\n        G = self.__class__(self, name=self.name(), pos=copy(self._pos), boundary=copy(self._boundary), implementation=implementation, sparse=sparse)\n      File \"/Users/rlmill/sage-4.3.3/local/lib/python/site-packages/sage/graphs/graph_bundle.py\", line 73, in __init__\n        if isinstance(args[0], (list, tuple)):\n    IndexError: tuple index out of range\n```",
     "created_at": "2010-03-02T02:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
@@ -290,7 +291,6 @@ archive/issue_comments_074034.json:
 ```
 
 This patch exposes a bug in another seldom used extension of the `Graph` class, `GraphBundle`.
-
 
 ```
 File "/Users/rlmill/sage-4.3.3/devel/sage-main/sage/graphs/graph_bundle.py", line 163:
@@ -319,7 +319,6 @@ Exception raised:
         if isinstance(args[0], (list, tuple)):
     IndexError: tuple index out of range
 ```
-
 
 
 

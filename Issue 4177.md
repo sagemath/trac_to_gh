@@ -67,7 +67,7 @@ Since the word "Notebook" appears in slightly different height in Safari vs. Fir
 archive/issue_comments_030252.json:
 ```json
 {
-    "body": "Looks good to me, both the code and the appearance in Firefox on linux. One style question: is it any better to put the line\n\n```\nfrom   sage.version        import version\n```\n\nin the code for `html_banner` instead of at the top of the file? I'm a Python novice, so I have no idea which way is better.\n\nI'll give it a positive review regardless of the location of the `import` statement.",
+    "body": "Looks good to me, both the code and the appearance in Firefox on linux. One style question: is it any better to put the line\n\n```\nfrom   sage.version        import version\n```\nin the code for `html_banner` instead of at the top of the file? I'm a Python novice, so I have no idea which way is better.\n\nI'll give it a positive review regardless of the location of the `import` statement.",
     "created_at": "2008-10-17T20:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ Looks good to me, both the code and the appearance in Firefox on linux. One styl
 ```
 from   sage.version        import version
 ```
-
 in the code for `html_banner` instead of at the top of the file? I'm a Python novice, so I have no idea which way is better.
 
 I'll give it a positive review regardless of the location of the `import` statement.
@@ -93,7 +92,7 @@ I'll give it a positive review regardless of the location of the `import` statem
 archive/issue_comments_030253.json:
 ```json
 {
-    "body": "This patch breaks the twist.py doctest:\n\n```\nsage -t -long devel/sage/sage/server/notebook/twist.py      \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/twist.py\", line 1505:\n    sage: E.render(None)\nExpected:\n    <twisted.web2.http.Response code=200, streamlen=603>\nGot:\n    <twisted.web2.http.Response code=200, streamlen=701>\n**********************************************************************\n```\n\nThe fix is trivial, so I will post a reviewer patch in a second.\n\nCheers,\n\nMichael",
+    "body": "This patch breaks the twist.py doctest:\n\n```\nsage -t -long devel/sage/sage/server/notebook/twist.py      \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/twist.py\", line 1505:\n    sage: E.render(None)\nExpected:\n    <twisted.web2.http.Response code=200, streamlen=603>\nGot:\n    <twisted.web2.http.Response code=200, streamlen=701>\n**********************************************************************\n```\nThe fix is trivial, so I will post a reviewer patch in a second.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T19:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
@@ -115,7 +114,6 @@ Got:
     <twisted.web2.http.Response code=200, streamlen=701>
 **********************************************************************
 ```
-
 The fix is trivial, so I will post a reviewer patch in a second.
 
 Cheers,

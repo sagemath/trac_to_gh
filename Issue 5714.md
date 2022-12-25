@@ -3,7 +3,7 @@
 archive/issues_005714.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis was reported on sage-support.  The following shows what's going on:\n\n```\nsage: MS7=MatrixSpace(Integers(7),4,4)\nsage: M=MS7.random_element()\nsage: M.subdivide([2],[2])\nsage: M\n\n[6 1|3 4]\n[4 4|0 5]\n[---+---]\n[4 2|2 6]\n[5 6|3 3]\nsage: MS2=MatrixSpace(Integers(2),4,4)\nsage: N=MS2.random_element()\nsage: N.subdivide([2],[2])\nsage: N\n\n[1 0 1 0]\n[1 1 0 0]\n[1 1 1 0]\n[0 0 0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5714\n\n",
+    "body": "Assignee: tbd\n\nThis was reported on sage-support.  The following shows what's going on:\n\n```\nsage: MS7=MatrixSpace(Integers(7),4,4)\nsage: M=MS7.random_element()\nsage: M.subdivide([2],[2])\nsage: M\n\n[6 1|3 4]\n[4 4|0 5]\n[---+---]\n[4 2|2 6]\n[5 6|3 3]\nsage: MS2=MatrixSpace(Integers(2),4,4)\nsage: N=MS2.random_element()\nsage: N.subdivide([2],[2])\nsage: N\n\n[1 0 1 0]\n[1 1 0 0]\n[1 1 1 0]\n[0 0 0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5714\n\n",
     "created_at": "2009-04-08T19:06:54Z",
     "labels": [
         "component: algebra",
@@ -40,7 +40,6 @@ sage: N
 [1 1 1 0]
 [0 0 0 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5714
 

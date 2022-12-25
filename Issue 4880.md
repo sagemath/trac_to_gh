@@ -87,7 +87,7 @@ Michael
 archive/issue_comments_036888.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> what is the status of adding spkgs to the repo? Should I wait until we switch before uploading this?\n> \n\nwell, i'm not sure, the new server shouldn't change any more so i would suggest to upload it on the new server, same place and everything like with the old one, and it just takes some days until it is public. (or upload it on both?)",
+    "body": "Replying to [comment:2 mabshoff]:\n> what is the status of adding spkgs to the repo? Should I wait until we switch before uploading this?\n> \n\n\nwell, i'm not sure, the new server shouldn't change any more so i would suggest to upload it on the new server, same place and everything like with the old one, and it just takes some days until it is public. (or upload it on both?)",
     "created_at": "2009-02-07T11:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
@@ -99,6 +99,7 @@ archive/issue_comments_036888.json:
 Replying to [comment:2 mabshoff]:
 > what is the status of adding spkgs to the repo? Should I wait until we switch before uploading this?
 > 
+
 
 well, i'm not sure, the new server shouldn't change any more so i would suggest to upload it on the new server, same place and everything like with the old one, and it just takes some days until it is public. (or upload it on both?)
 
@@ -140,7 +141,7 @@ Jaap
 archive/issue_comments_036890.json:
 ```json
 {
-    "body": "Replying to [comment:4 jsp]:\n\nHi Jaap,\n\n> This is taking way to long!\n\nThe problem was that due to the transition from modular to the new image spkg uploads were frozen. Now that the new server has stabilized things should be moving again and this ticket has been looking accusingly at me to get moving every time I skim the tickets with positive review :)\n\n> Remember this is experimental!!!!\n\nSee above - it has nothing to do with experimental.\n\n> The spkg only change is spkg-install and SPKG.txt, no changes in src!\n> \n> In the mean time I have a vtk-5.2.1.spkg\n> \n> See:\n> [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.1.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.1.spkg)\n> \n> Should we close this ticket and open a new one?\n\nNo, I just changed the summary and will upload this once I get started merging tonight.\n\n> Jaap\n> \n\nSorry for the delay, it should get better soon and you should have complained more ;)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jsp]:\n\nHi Jaap,\n\n> This is taking way to long!\n\n\nThe problem was that due to the transition from modular to the new image spkg uploads were frozen. Now that the new server has stabilized things should be moving again and this ticket has been looking accusingly at me to get moving every time I skim the tickets with positive review :)\n\n> Remember this is experimental!!!!\n\n\nSee above - it has nothing to do with experimental.\n\n> The spkg only change is spkg-install and SPKG.txt, no changes in src!\n> \n> In the mean time I have a vtk-5.2.1.spkg\n> \n> See:\n> [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.1.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.1.spkg)\n> \n> Should we close this ticket and open a new one?\n\n\nNo, I just changed the summary and will upload this once I get started merging tonight.\n\n> Jaap\n> \n\n\nSorry for the delay, it should get better soon and you should have complained more ;)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-26T22:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
@@ -155,9 +156,11 @@ Hi Jaap,
 
 > This is taking way to long!
 
+
 The problem was that due to the transition from modular to the new image spkg uploads were frozen. Now that the new server has stabilized things should be moving again and this ticket has been looking accusingly at me to get moving every time I skim the tickets with positive review :)
 
 > Remember this is experimental!!!!
+
 
 See above - it has nothing to do with experimental.
 
@@ -170,10 +173,12 @@ See above - it has nothing to do with experimental.
 > 
 > Should we close this ticket and open a new one?
 
+
 No, I just changed the summary and will upload this once I get started merging tonight.
 
 > Jaap
 > 
+
 
 Sorry for the delay, it should get better soon and you should have complained more ;)
 
@@ -188,7 +193,7 @@ Michael
 archive/issue_comments_036891.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> Replying to [comment:4 jsp]:\n[...]\n> \n> No, I just changed the summary and will upload this once I get started merging tonight.\n> \n> > Jaap\n> > \n> \n> Sorry for the delay, it should get better soon and you should have complained more ;)\n> \n\n\nLet me complain once more!\n\nJaap",
+    "body": "Replying to [comment:5 mabshoff]:\n> Replying to [comment:4 jsp]:\n\n[...]\n> \n> No, I just changed the summary and will upload this once I get started merging tonight.\n> \n> > Jaap\n> > \n\n> \n> Sorry for the delay, it should get better soon and you should have complained more ;)\n> \n\n\n\nLet me complain once more!\n\nJaap",
     "created_at": "2009-03-16T13:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
@@ -199,15 +204,18 @@ archive/issue_comments_036891.json:
 
 Replying to [comment:5 mabshoff]:
 > Replying to [comment:4 jsp]:
+
 [...]
 > 
 > No, I just changed the summary and will upload this once I get started merging tonight.
 > 
 > > Jaap
 > > 
+
 > 
 > Sorry for the delay, it should get better soon and you should have complained more ;)
 > 
+
 
 
 Let me complain once more!

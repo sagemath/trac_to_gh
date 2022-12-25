@@ -3,7 +3,7 @@
 archive/issues_002362.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe digits method should take large bases.\n\n\n```\nsage: n=982352935629356293856239856239852352352\nsage: n.digits(928365923856928)\n...\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2362\n\n",
+    "body": "Assignee: somebody\n\nThe digits method should take large bases.\n\n```\nsage: n=982352935629356293856239856239852352352\nsage: n.digits(928365923856928)\n...\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2362\n\n",
     "created_at": "2008-03-01T20:09:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,14 +20,12 @@ Assignee: somebody
 
 The digits method should take large bases.
 
-
 ```
 sage: n=982352935629356293856239856239852352352
 sage: n.digits(928365923856928)
 ...
 <type 'exceptions.OverflowError'>: long int too large to convert to int
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2362
@@ -58,7 +56,7 @@ archive/issue_events_005573.json:
 archive/issue_comments_015890.json:
 ```json
 {
-    "body": "I've added a patch which fixes this bug and 2170.\n\n\n```\nsage: n=3^100000\nsage: time _=n.digits(10)  # evidence of fixing 2170\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07\nsage: time _=n.str(10)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\nsage: time _=n.digits(10^40)  # evidence of fixing this bug\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03\n```\n",
+    "body": "I've added a patch which fixes this bug and 2170.\n\n```\nsage: n=3^100000\nsage: time _=n.digits(10)  # evidence of fixing 2170\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07\nsage: time _=n.str(10)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\nsage: time _=n.digits(10^40)  # evidence of fixing this bug\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03\n```",
     "created_at": "2008-03-02T05:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2362",
     "type": "issue_comment",
@@ -68,7 +66,6 @@ archive/issue_comments_015890.json:
 ```
 
 I've added a patch which fixes this bug and 2170.
-
 
 ```
 sage: n=3^100000
@@ -82,7 +79,6 @@ sage: time _=n.digits(10^40)  # evidence of fixing this bug
 CPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s
 Wall time: 0.03
 ```
-
 
 
 

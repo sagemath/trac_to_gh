@@ -281,7 +281,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_013039.json:
 ```json
 {
-    "body": "\n```\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.beta3/devel/sage/doc/en/reference/combinat/sage/combinat/root_system/cartan_type.rst:11: WARNING: error while formatting signature for sage.combinat.root_system.cartan_type.CartanType_crystalographic.ascii_art: invalid syntax (<unknown>, line 1)\n```\n",
+    "body": "```\ndochtml.log:[combinat ] /mazur/release/merger/sage-5.10.beta3/devel/sage/doc/en/reference/combinat/sage/combinat/root_system/cartan_type.rst:11: WARNING: error while formatting signature for sage.combinat.root_system.cartan_type.CartanType_crystalographic.ascii_art: invalid syntax (<unknown>, line 1)\n```",
     "created_at": "2013-05-08T14:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
@@ -290,11 +290,9 @@ archive/issue_comments_013039.json:
 }
 ```
 
-
 ```
 dochtml.log:[combinat ] /mazur/release/merger/sage-5.10.beta3/devel/sage/doc/en/reference/combinat/sage/combinat/root_system/cartan_type.rst:11: WARNING: error while formatting signature for sage.combinat.root_system.cartan_type.CartanType_crystalographic.ascii_art: invalid syntax (<unknown>, line 1)
 ```
-
 
 
 

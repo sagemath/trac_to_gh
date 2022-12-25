@@ -189,7 +189,7 @@ Great work!  I'll do my best to review this for 3.2.2.  Right now I notice that 
 archive/issue_comments_032649.json:
 ```json
 {
-    "body": "There are a few small issues that I ran into, but since this is going to be (for now) an optional part of Sage and nothing depends on it, I think we can fix these later (I'm keeping a list of them so they don't get lost).\n\nHowever, there is a policy of 100% doctest for all new code.  The coverage is now:\n\n\n```\n[ghitza@artin sage]$ sage -coverage rings/complex_mpc.pyx\n----------------------------------------------------------------------\nrings/complex_mpc.pyx\nSCORE rings/complex_mpc.pyx: 68% (46 of 67)\n\nMissing documentation:\n\t * _repr_ (self):\n\t * _latex_(self):\n\t * _an_element_(self):\n\t * random_element(self, bound):\n\t * __hash__(self):\n\t * prec(self):\n\t * _set(self, z, y=None, base=10):\n\t * _repr_(self):\n\t * _latex_(self):\n\t * ModuleElement _add_(self, ModuleElement right):\n\t * ModuleElement _sub_(self, ModuleElement right):\n\t * RingElement _mul_(self, RingElement right):\n\t * RingElement _div_(self, RingElement right):\n\t * ModuleElement _neg_(self):\n\t * __create__MPComplexField_version0 (prec, rnd):\n\t * __create_MPComplexNumber_version0 (parent, s, base=10):\n\n\nMissing doctests:\n\t * _rnd(self):\n\t * _rnd_re(self):\n\t * _rnd_im(self):\n\t * _real_field(self):\n\t * _imag_field(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _element_constructor_(self, z):\n\t * _coerce_map_from_(self, S):\n\t * bint is_exact(self) except -2: return False def is_finite(self):\n\t * Element _call_(self, z):\n\t * Element _call_(self, x):\n\n----------------------------------------------------------------------\n```\n\n\nSo the missing docstrings and doctests will have to be added before this patch can be merged.  I would happily do this but the earliest I can get to it is Thursday or so (and that's being optimistic).\n\nTo end on a positive note: this looks good.  It will take a bit more work, but if we can show that (a) the performance is improved, or doesn't suffer too much, and (b) the switch can be made seamlessly, then it will be easy to convince people that we should switch the core of our complex numbers functionality over to MPC.",
+    "body": "There are a few small issues that I ran into, but since this is going to be (for now) an optional part of Sage and nothing depends on it, I think we can fix these later (I'm keeping a list of them so they don't get lost).\n\nHowever, there is a policy of 100% doctest for all new code.  The coverage is now:\n\n```\n[ghitza@artin sage]$ sage -coverage rings/complex_mpc.pyx\n----------------------------------------------------------------------\nrings/complex_mpc.pyx\nSCORE rings/complex_mpc.pyx: 68% (46 of 67)\n\nMissing documentation:\n\t * _repr_ (self):\n\t * _latex_(self):\n\t * _an_element_(self):\n\t * random_element(self, bound):\n\t * __hash__(self):\n\t * prec(self):\n\t * _set(self, z, y=None, base=10):\n\t * _repr_(self):\n\t * _latex_(self):\n\t * ModuleElement _add_(self, ModuleElement right):\n\t * ModuleElement _sub_(self, ModuleElement right):\n\t * RingElement _mul_(self, RingElement right):\n\t * RingElement _div_(self, RingElement right):\n\t * ModuleElement _neg_(self):\n\t * __create__MPComplexField_version0 (prec, rnd):\n\t * __create_MPComplexNumber_version0 (parent, s, base=10):\n\n\nMissing doctests:\n\t * _rnd(self):\n\t * _rnd_re(self):\n\t * _rnd_im(self):\n\t * _real_field(self):\n\t * _imag_field(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _element_constructor_(self, z):\n\t * _coerce_map_from_(self, S):\n\t * bint is_exact(self) except -2: return False def is_finite(self):\n\t * Element _call_(self, z):\n\t * Element _call_(self, x):\n\n----------------------------------------------------------------------\n```\n\nSo the missing docstrings and doctests will have to be added before this patch can be merged.  I would happily do this but the earliest I can get to it is Thursday or so (and that's being optimistic).\n\nTo end on a positive note: this looks good.  It will take a bit more work, but if we can show that (a) the performance is improved, or doesn't suffer too much, and (b) the switch can be made seamlessly, then it will be easy to convince people that we should switch the core of our complex numbers functionality over to MPC.",
     "created_at": "2008-12-06T08:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -201,7 +201,6 @@ archive/issue_comments_032649.json:
 There are a few small issues that I ran into, but since this is going to be (for now) an optional part of Sage and nothing depends on it, I think we can fix these later (I'm keeping a list of them so they don't get lost).
 
 However, there is a policy of 100% doctest for all new code.  The coverage is now:
-
 
 ```
 [ghitza@artin sage]$ sage -coverage rings/complex_mpc.pyx
@@ -246,7 +245,6 @@ Possibly wrong (function name doesn't occur in doctests):
 ----------------------------------------------------------------------
 ```
 
-
 So the missing docstrings and doctests will have to be added before this patch can be merged.  I would happily do this but the earliest I can get to it is Thursday or so (and that's being optimistic).
 
 To end on a positive note: this looks good.  It will take a bit more work, but if we can show that (a) the performance is improved, or doesn't suffer too much, and (b) the switch can be made seamlessly, then it will be easy to convince people that we should switch the core of our complex numbers functionality over to MPC.
@@ -276,7 +274,7 @@ apply after complex_mpc.p0.patch and trac4446_fix.patch
 archive/issue_comments_032651.json:
 ```json
 {
-    "body": "Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by @aghitza created at 2008-12-11 05:13:09\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
+    "body": "Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by @aghitza created at 2008-12-11 05:13:09\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
     "created_at": "2008-12-11T05:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -293,14 +291,12 @@ I added a patch trac4446_doctests.patch, which does a number of things:
 * changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage
 * makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do
 
-
 ```
 sage: from sage.rings.complex_mpc import MPComplexField
 sage: MPC.<j> = MPComplexField()
 sage: j^2
 -1.00000000000000 + 0.000000000000000*I
 ```
-
 
 Note that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch
 
@@ -353,7 +349,7 @@ One more patch trac4446_norm.patch with:
 archive/issue_comments_032654.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. How can this be optional? If the patch is applied then this is included:\n\n```\n \t625\t    Extension('sage.rings.complex_mpc', \n \t626\t              sources = ['sage/rings/complex_mpc.pyx'], \n \t627\t              libraries = ['mpc', 'mpfr', 'gmp']), \\ \n \t628\t\n```\n\nSo the only way I can see this going in like this is if it is standard.  Am I missing something (probably)?\n\n2. Timings on Xeon 2.6Ghz (sage.math).   Multiplication is faster with mpc, but addition is significantly *slower*:\n\n```\nsage: K = MPComplexField(53)\nsage: a = K(3.3902384)\nsage: b = CC(3.3902384)\n\nsage: timeit('a*a')\n625 loops, best of 3: 376 ns per loop\nsage: timeit('b*b')\n625 loops, best of 3: 466 ns per loop\n\nsage: timeit('a+a')\n625 loops, best of 3: 368 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 304 ns per loop\n\n```\n\n\n3. Powering doesn't work for mpc but it does for the current CC:\n\n```\nsage: a**a \nboom\n```\n\n\n4. Default rounding on coercion (or something?!) is different between MPC and CC:\n\n```\nsage: MPComplexField(100)(3.3902384)\n3.3902383999999998742680418218 + 0.00000000000000000000000000000*I\nsage: ComplexField(100)(3.3902384)\n3.3902384000000000000000000000\n```\n\n\n5. With higher precision and nontrivial imaginary part, the timings are *all* in favor of the existing ComplexField already in Sage:\n\n```\nsage: K = MPComplexField(1000)\nsage: a = K(3.3902384,9203483)\nsage: b = ComplexField(1000)(3.3902384,9203483)\nsage: a\n3.39023839999999987426804182177875190973281860351562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 9.20348300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e6*I\nsage: b\n3.39023840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 9.20348300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e6*I\nsage: timeit('a*a')\n625 loops, best of 3: 2.27 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 2.2 \u00b5s per loop\nsage: timeit('a+a')\n625 loops, best of 3: 515 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 445 ns per loop\nsage: timeit('a.sin()')\n^P625 loops, best of 3: 221 \u00b5s per loop\nsage: timeit('b.sin()')\n625 loops, best of 3: 130 \u00b5s per loop\n```\n\n\nThus until the above issues are addressed, I see no point in mpc going into sage.",
+    "body": "REFEREE REPORT:\n\n1. How can this be optional? If the patch is applied then this is included:\n\n```\n \t625\t    Extension('sage.rings.complex_mpc', \n \t626\t              sources = ['sage/rings/complex_mpc.pyx'], \n \t627\t              libraries = ['mpc', 'mpfr', 'gmp']), \\ \n \t628\t\n```\nSo the only way I can see this going in like this is if it is standard.  Am I missing something (probably)?\n\n2. Timings on Xeon 2.6Ghz (sage.math).   Multiplication is faster with mpc, but addition is significantly *slower*:\n\n```\nsage: K = MPComplexField(53)\nsage: a = K(3.3902384)\nsage: b = CC(3.3902384)\n\nsage: timeit('a*a')\n625 loops, best of 3: 376 ns per loop\nsage: timeit('b*b')\n625 loops, best of 3: 466 ns per loop\n\nsage: timeit('a+a')\n625 loops, best of 3: 368 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 304 ns per loop\n\n```\n\n3. Powering doesn't work for mpc but it does for the current CC:\n\n```\nsage: a**a \nboom\n```\n\n4. Default rounding on coercion (or something?!) is different between MPC and CC:\n\n```\nsage: MPComplexField(100)(3.3902384)\n3.3902383999999998742680418218 + 0.00000000000000000000000000000*I\nsage: ComplexField(100)(3.3902384)\n3.3902384000000000000000000000\n```\n\n5. With higher precision and nontrivial imaginary part, the timings are *all* in favor of the existing ComplexField already in Sage:\n\n```\nsage: K = MPComplexField(1000)\nsage: a = K(3.3902384,9203483)\nsage: b = ComplexField(1000)(3.3902384,9203483)\nsage: a\n3.39023839999999987426804182177875190973281860351562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 9.20348300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e6*I\nsage: b\n3.39023840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 + 9.20348300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e6*I\nsage: timeit('a*a')\n625 loops, best of 3: 2.27 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 2.2 \u00b5s per loop\nsage: timeit('a+a')\n625 loops, best of 3: 515 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 445 ns per loop\nsage: timeit('a.sin()')\n^P625 loops, best of 3: 221 \u00b5s per loop\nsage: timeit('b.sin()')\n625 loops, best of 3: 130 \u00b5s per loop\n```\n\nThus until the above issues are addressed, I see no point in mpc going into sage.",
     "created_at": "2009-01-24T11:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -372,7 +368,6 @@ REFEREE REPORT:
  	627	              libraries = ['mpc', 'mpfr', 'gmp']), \ 
  	628	
 ```
-
 So the only way I can see this going in like this is if it is standard.  Am I missing something (probably)?
 
 2. Timings on Xeon 2.6Ghz (sage.math).   Multiplication is faster with mpc, but addition is significantly *slower*:
@@ -394,14 +389,12 @@ sage: timeit('b+b')
 
 ```
 
-
 3. Powering doesn't work for mpc but it does for the current CC:
 
 ```
 sage: a**a 
 boom
 ```
-
 
 4. Default rounding on coercion (or something?!) is different between MPC and CC:
 
@@ -411,7 +404,6 @@ sage: MPComplexField(100)(3.3902384)
 sage: ComplexField(100)(3.3902384)
 3.3902384000000000000000000000
 ```
-
 
 5. With higher precision and nontrivial imaginary part, the timings are *all* in favor of the existing ComplexField already in Sage:
 
@@ -436,7 +428,6 @@ sage: timeit('a.sin()')
 sage: timeit('b.sin()')
 625 loops, best of 3: 130 µs per loop
 ```
-
 
 Thus until the above issues are addressed, I see no point in mpc going into sage.
 
@@ -539,7 +530,7 @@ Attachment [mpc-0.8.1.patch](tarball://root/attachments/some-uuid/ticket4446/mpc
 archive/issue_comments_032660.json:
 ```json
 {
-    "body": "With the updated patch, and the corresponding spkg available at http://yann.laiglechapuy.net/spkg/mpc-0.8.1.p0.spkg\nalmost every methods for ComplexNumbers are defined for MPComplexNumbers to.\n\nThe performance is quite good:\nwith a precision of 500bits,\n\n\n```\n==========\nadd\nComplexField: a+b 40000 loops, best of 5: 700 ns per loop\nMPComplexField: m+n 40000 loops, best of 5: 755 ns per loop\n==========\nadd int\nComplexField: a+17 40000 loops, best of 5: 2.75 \u00b5s per loop\nMPComplexField: m+17 40000 loops, best of 5: 2.43 \u00b5s per loop\n==========\nmul\nComplexField: a*b 40000 loops, best of 5: 2.66 \u00b5s per loop\nMPComplexField: m*n 40000 loops, best of 5: 2.68 \u00b5s per loop\n==========\ndiv\nComplexField: a/b 40000 loops, best of 5: 5.76 \u00b5s per loop\nMPComplexField: m/n 40000 loops, best of 5: 10.7 \u00b5s per loop\n==========\nreal\nComplexField: a.real() 40000 loops, best of 5: 1.7 \u00b5s per loop\nMPComplexField: m.real() 40000 loops, best of 5: 764 ns per loop\n==========\nconj\nComplexField: a.conjugate() 40000 loops, best of 5: 756 ns per loop\nMPComplexField: m.conjugate() 40000 loops, best of 5: 633 ns per loop\n==========\narg\nComplexField: a.argument() 2000 loops, best of 5: 104 \u00b5s per loop\nMPComplexField: m.argument() 2000 loops, best of 5: 102 \u00b5s per loop\n==========\ncos\nComplexField: a.cos() 2000 loops, best of 5: 57.2 \u00b5s per loop\nMPComplexField: m.cos() 2000 loops, best of 5: 86.4 \u00b5s per loop\n==========\npow\nComplexField: a**b 2000 loops, best of 5: 240 \u00b5s per loop\nMPComplexField: m**n 2000 loops, best of 5: 515 \u00b5s per loop\n==========\npow int\nComplexField: a**12345 2000 loops, best of 5: 55.1 \u00b5s per loop\nMPComplexField: m**12345 2000 loops, best of 5: 549 \u00b5s per loop\n==========\nlog\nComplexField: a.log() 4000 loops, best of 5: 177 \u00b5s per loop\nMPComplexField: m.log() 4000 loops, best of 5: 153 \u00b5s per loop\n==========\nexp\nComplexField: a.exp() 10000 loops, best of 5: 53.7 \u00b5s per loop\nMPComplexField: m.exp() 10000 loops, best of 5: 57.5 \u00b5s per loop\n```\n\n\nThe only big slow down is for `pow`.\n\nIt also allows to compute various trigonometric functions without convertion to pari.",
+    "body": "With the updated patch, and the corresponding spkg available at http://yann.laiglechapuy.net/spkg/mpc-0.8.1.p0.spkg\nalmost every methods for ComplexNumbers are defined for MPComplexNumbers to.\n\nThe performance is quite good:\nwith a precision of 500bits,\n\n```\n==========\nadd\nComplexField: a+b 40000 loops, best of 5: 700 ns per loop\nMPComplexField: m+n 40000 loops, best of 5: 755 ns per loop\n==========\nadd int\nComplexField: a+17 40000 loops, best of 5: 2.75 \u00b5s per loop\nMPComplexField: m+17 40000 loops, best of 5: 2.43 \u00b5s per loop\n==========\nmul\nComplexField: a*b 40000 loops, best of 5: 2.66 \u00b5s per loop\nMPComplexField: m*n 40000 loops, best of 5: 2.68 \u00b5s per loop\n==========\ndiv\nComplexField: a/b 40000 loops, best of 5: 5.76 \u00b5s per loop\nMPComplexField: m/n 40000 loops, best of 5: 10.7 \u00b5s per loop\n==========\nreal\nComplexField: a.real() 40000 loops, best of 5: 1.7 \u00b5s per loop\nMPComplexField: m.real() 40000 loops, best of 5: 764 ns per loop\n==========\nconj\nComplexField: a.conjugate() 40000 loops, best of 5: 756 ns per loop\nMPComplexField: m.conjugate() 40000 loops, best of 5: 633 ns per loop\n==========\narg\nComplexField: a.argument() 2000 loops, best of 5: 104 \u00b5s per loop\nMPComplexField: m.argument() 2000 loops, best of 5: 102 \u00b5s per loop\n==========\ncos\nComplexField: a.cos() 2000 loops, best of 5: 57.2 \u00b5s per loop\nMPComplexField: m.cos() 2000 loops, best of 5: 86.4 \u00b5s per loop\n==========\npow\nComplexField: a**b 2000 loops, best of 5: 240 \u00b5s per loop\nMPComplexField: m**n 2000 loops, best of 5: 515 \u00b5s per loop\n==========\npow int\nComplexField: a**12345 2000 loops, best of 5: 55.1 \u00b5s per loop\nMPComplexField: m**12345 2000 loops, best of 5: 549 \u00b5s per loop\n==========\nlog\nComplexField: a.log() 4000 loops, best of 5: 177 \u00b5s per loop\nMPComplexField: m.log() 4000 loops, best of 5: 153 \u00b5s per loop\n==========\nexp\nComplexField: a.exp() 10000 loops, best of 5: 53.7 \u00b5s per loop\nMPComplexField: m.exp() 10000 loops, best of 5: 57.5 \u00b5s per loop\n```\n\nThe only big slow down is for `pow`.\n\nIt also allows to compute various trigonometric functions without convertion to pari.",
     "created_at": "2009-12-22T16:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -553,7 +544,6 @@ almost every methods for ComplexNumbers are defined for MPComplexNumbers to.
 
 The performance is quite good:
 with a precision of 500bits,
-
 
 ```
 ==========
@@ -605,7 +595,6 @@ exp
 ComplexField: a.exp() 10000 loops, best of 5: 53.7 µs per loop
 MPComplexField: m.exp() 10000 loops, best of 5: 57.5 µs per loop
 ```
-
 
 The only big slow down is for `pow`.
 
@@ -783,7 +772,7 @@ Concerning solaris, mpc itself builds without problems, see
 archive/issue_comments_032669.json:
 ```json
 {
-    "body": "> Except for special cases, \"pow\" uses log and exp, so the timing should essentially be the sum for these two functions. Is it possible that you hit a corner case with your experiments, or are the timings consistent over several arguments?\n\nthen we should get about 210us for powint instead of 549us. Indeed, it would be good to know the\nexact arguments, so that we can try to reproduce with vanilla MPC (maybe the problem is in the\ninterface between Sage and MPC).\n\nFor division, GMP 5 has a much faster division, which might benefit to MPC too. But again, we\ncould investigate more with a vanilla MPC, if we know the exact inputs used (with\nexact_rational).",
+    "body": "> Except for special cases, \"pow\" uses log and exp, so the timing should essentially be the sum for these two functions. Is it possible that you hit a corner case with your experiments, or are the timings consistent over several arguments?\n\n\nthen we should get about 210us for powint instead of 549us. Indeed, it would be good to know the\nexact arguments, so that we can try to reproduce with vanilla MPC (maybe the problem is in the\ninterface between Sage and MPC).\n\nFor division, GMP 5 has a much faster division, which might benefit to MPC too. But again, we\ncould investigate more with a vanilla MPC, if we know the exact inputs used (with\nexact_rational).",
     "created_at": "2010-03-10T13:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -793,6 +782,7 @@ archive/issue_comments_032669.json:
 ```
 
 > Except for special cases, "pow" uses log and exp, so the timing should essentially be the sum for these two functions. Is it possible that you hit a corner case with your experiments, or are the timings consistent over several arguments?
+
 
 then we should get about 210us for powint instead of 549us. Indeed, it would be good to know the
 exact arguments, so that we can try to reproduce with vanilla MPC (maybe the problem is in the
@@ -827,7 +817,7 @@ Attachment [trac4446-rebase_sage4.3.3.patch](tarball://root/attachments/some-uui
 archive/issue_comments_032671.json:
 ```json
 {
-    "body": "First, I added a small patch to rebase this on sage 4.3.3.\n\nOne need to apply:\n\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n\nin this order; and of course install the spkg:\n\n* http://yann.laiglechapuy.net/spkg/mpc-0.8.1.p0.spkg\n\nThen, here is an example with the exact input (I only put the last part concerning `pow`)\n\n```\na.real().exact_rational()\n-1558022726154386835635734102276225872461248356241845468520145243680772756232147166398716395960573602794592840676040928991781722240298082039889553874139/1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794688\na.imag().exact_rational()\n38743143824869548998159480051850490241205026500878413377278464034858416981434423320408166976481329585622042476431430168493334123089110626626927265425/102293456496754433437912178025862473506770063938845774671352855253004181137646079840102190385184504910965208878986252219038039267058918532916516487168\n------------------------\na.log()\nCC 5000 loops, best of 3: 170 \u00b5s per loop\nMPC 5000 loops, best of 3: 143 \u00b5s per loop\n------------------------\na.exp()\nCC 5000 loops, best of 3: 45.6 \u00b5s per loop\nMPC 5000 loops, best of 3: 49.1 \u00b5s per loop\n------------------------\na**12345\nCC 5000 loops, best of 3: 48.7 \u00b5s per loop\nMPC 5000 loops, best of 3: 501 \u00b5s per loop\n```\n",
+    "body": "First, I added a small patch to rebase this on sage 4.3.3.\n\nOne need to apply:\n\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n\nin this order; and of course install the spkg:\n\n* http://yann.laiglechapuy.net/spkg/mpc-0.8.1.p0.spkg\n\nThen, here is an example with the exact input (I only put the last part concerning `pow`)\n\n```\na.real().exact_rational()\n-1558022726154386835635734102276225872461248356241845468520145243680772756232147166398716395960573602794592840676040928991781722240298082039889553874139/1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794688\na.imag().exact_rational()\n38743143824869548998159480051850490241205026500878413377278464034858416981434423320408166976481329585622042476431430168493334123089110626626927265425/102293456496754433437912178025862473506770063938845774671352855253004181137646079840102190385184504910965208878986252219038039267058918532916516487168\n------------------------\na.log()\nCC 5000 loops, best of 3: 170 \u00b5s per loop\nMPC 5000 loops, best of 3: 143 \u00b5s per loop\n------------------------\na.exp()\nCC 5000 loops, best of 3: 45.6 \u00b5s per loop\nMPC 5000 loops, best of 3: 49.1 \u00b5s per loop\n------------------------\na**12345\nCC 5000 loops, best of 3: 48.7 \u00b5s per loop\nMPC 5000 loops, best of 3: 501 \u00b5s per loop\n```",
     "created_at": "2010-03-10T14:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -871,13 +861,12 @@ MPC 5000 loops, best of 3: 501 µs per loop
 
 
 
-
 ---
 
 archive/issue_comments_032672.json:
 ```json
 {
-    "body": "and for `div` (same value for `a`)\n\n```\nb.real().exact_rational()\n-1335661139895223805455191750131391965080983427340135233479028132544481051566385358748782698880424407717119644643310969153530607585226701160632690491359/1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794688\nb.imag().exact_rational()\n-191023642554886415830676606502854964270751830339806573746974716999454958912475563080101457087388705931975286670167330679505998875813037449880206143447/409173825987017733751648712103449894027080255755383098685411421012016724550584319360408761540738019643860835515945008876152157068235674131666065948672\n------------------------\na/b\nCC 100000 loops, best of 3: 4.84 \u00b5s per loop\nMPC 100000 loops, best of 3: 9.57 \u00b5s per loop\n```\n",
+    "body": "and for `div` (same value for `a`)\n\n```\nb.real().exact_rational()\n-1335661139895223805455191750131391965080983427340135233479028132544481051566385358748782698880424407717119644643310969153530607585226701160632690491359/1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794688\nb.imag().exact_rational()\n-191023642554886415830676606502854964270751830339806573746974716999454958912475563080101457087388705931975286670167330679505998875813037449880206143447/409173825987017733751648712103449894027080255755383098685411421012016724550584319360408761540738019643860835515945008876152157068235674131666065948672\n------------------------\na/b\nCC 100000 loops, best of 3: 4.84 \u00b5s per loop\nMPC 100000 loops, best of 3: 9.57 \u00b5s per loop\n```",
     "created_at": "2010-03-10T14:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -901,13 +890,12 @@ MPC 100000 loops, best of 3: 9.57 µs per loop
 
 
 
-
 ---
 
 archive/issue_comments_032673.json:
 ```json
 {
-    "body": "with the attached MPC program I get on a 2.83Ghz Core 2 under Fedora Core 2, with GMP 5.0.1 and\nMPFR 2.4.2\n\n```\ntarte% ./sage\nmpc_log took 74us per loop\nmpc_exp took 24us per loop\nmpc_pow(12345) took 260us per loop\nmpc_div took 3.4us per loop\n```\n\nand within Sage with ComplexField I get (where I took the best of 3 %timeit runs):\n\n```\nsage: %timeit c=a.log()\n625 loops, best of 3: 173 \u00b5s per loop\nsage: %timeit c=a.exp()\n625 loops, best of 3: 37.1 \u00b5s per loop\nsage: %timeit c=a**12345\n625 loops, best of 3: 26.6 \u00b5s per loop\nsage: %timeit c=a/b\n625 loops, best of 3: 2.71 \u00b5s per loop\n```\n\nthus we indeed need to work on powint, but the division is only 25% slower.\n\nWhile doing this test I also noticed this strange thing with ComplexField:\n\n```\nsage: smallb = CC(b)\nsage: %timeit c=a/b\n625 loops, best of 3: 2.69 \u00b5s per loop\nsage: %timeit c=a/smallb\n625 loops, best of 3: 290 \u00b5s per loop\n```\n\nthus dividing by a 53-bit complex is 100 times slower than dividing by a 500-bit complex!\nShould I open a separate ticket for that?\n\nDid somebody check the 500-bit outputs of CC and MPC agree?",
+    "body": "with the attached MPC program I get on a 2.83Ghz Core 2 under Fedora Core 2, with GMP 5.0.1 and\nMPFR 2.4.2\n\n```\ntarte% ./sage\nmpc_log took 74us per loop\nmpc_exp took 24us per loop\nmpc_pow(12345) took 260us per loop\nmpc_div took 3.4us per loop\n```\nand within Sage with ComplexField I get (where I took the best of 3 %timeit runs):\n\n```\nsage: %timeit c=a.log()\n625 loops, best of 3: 173 \u00b5s per loop\nsage: %timeit c=a.exp()\n625 loops, best of 3: 37.1 \u00b5s per loop\nsage: %timeit c=a**12345\n625 loops, best of 3: 26.6 \u00b5s per loop\nsage: %timeit c=a/b\n625 loops, best of 3: 2.71 \u00b5s per loop\n```\nthus we indeed need to work on powint, but the division is only 25% slower.\n\nWhile doing this test I also noticed this strange thing with ComplexField:\n\n```\nsage: smallb = CC(b)\nsage: %timeit c=a/b\n625 loops, best of 3: 2.69 \u00b5s per loop\nsage: %timeit c=a/smallb\n625 loops, best of 3: 290 \u00b5s per loop\n```\nthus dividing by a 53-bit complex is 100 times slower than dividing by a 500-bit complex!\nShould I open a separate ticket for that?\n\nDid somebody check the 500-bit outputs of CC and MPC agree?",
     "created_at": "2010-03-10T15:28:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -926,7 +914,6 @@ mpc_exp took 24us per loop
 mpc_pow(12345) took 260us per loop
 mpc_div took 3.4us per loop
 ```
-
 and within Sage with ComplexField I get (where I took the best of 3 %timeit runs):
 
 ```
@@ -939,7 +926,6 @@ sage: %timeit c=a**12345
 sage: %timeit c=a/b
 625 loops, best of 3: 2.71 µs per loop
 ```
-
 thus we indeed need to work on powint, but the division is only 25% slower.
 
 While doing this test I also noticed this strange thing with ComplexField:
@@ -951,7 +937,6 @@ sage: %timeit c=a/b
 sage: %timeit c=a/smallb
 625 loops, best of 3: 290 µs per loop
 ```
-
 thus dividing by a 53-bit complex is 100 times slower than dividing by a 500-bit complex!
 Should I open a separate ticket for that?
 
@@ -1005,7 +990,7 @@ then get 113us. But of course the definite solution will be to implement binary 
 archive/issue_comments_032676.json:
 ```json
 {
-    "body": "We have now implemented binary exponentiation in `mpc_pow_ui`. We now get on the same machine\nas above with the svn version of MPC:\n\n```\ntarte% ./sage\nmpc_log took 75us per loop\nmpc_exp took 24us per loop\nmpc_pow(12345) took 19us per loop\nmpc_div took 3.5us per loop\n```\n\nthus now MPC powint should be comparable to CC powint. There is not yet a release of MPC with the\nnew code, but it suffices to modify the file `pow_ui.c`.",
+    "body": "We have now implemented binary exponentiation in `mpc_pow_ui`. We now get on the same machine\nas above with the svn version of MPC:\n\n```\ntarte% ./sage\nmpc_log took 75us per loop\nmpc_exp took 24us per loop\nmpc_pow(12345) took 19us per loop\nmpc_div took 3.5us per loop\n```\nthus now MPC powint should be comparable to CC powint. There is not yet a release of MPC with the\nnew code, but it suffices to modify the file `pow_ui.c`.",
     "created_at": "2010-03-30T16:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1024,7 +1009,6 @@ mpc_exp took 24us per loop
 mpc_pow(12345) took 19us per loop
 mpc_div took 3.5us per loop
 ```
-
 thus now MPC powint should be comparable to CC powint. There is not yet a release of MPC with the
 new code, but it suffices to modify the file `pow_ui.c`.
 
@@ -1072,7 +1056,7 @@ Paul
 archive/issue_comments_032679.json:
 ```json
 {
-    "body": "Replying to [comment:23 zimmerma]:\n> I put it as \"needs review\" again to know if some more issues need to be fixed upstream.\n> Paul\n\nIf you send me the file `pow_ui.c` I can patch my spkg so that people can try it. Yann",
+    "body": "Replying to [comment:23 zimmerma]:\n> I put it as \"needs review\" again to know if some more issues need to be fixed upstream.\n> Paul\n\n\nIf you send me the file `pow_ui.c` I can patch my spkg so that people can try it. Yann",
     "created_at": "2010-03-31T12:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1085,6 +1069,7 @@ Replying to [comment:23 zimmerma]:
 > I put it as "needs review" again to know if some more issues need to be fixed upstream.
 > Paul
 
+
 If you send me the file `pow_ui.c` I can patch my spkg so that people can try it. Yann
 
 
@@ -1094,7 +1079,7 @@ If you send me the file `pow_ui.c` I can patch my spkg so that people can try it
 archive/issue_comments_032680.json:
 ```json
 {
-    "body": "> If you send me the file pow_ui.c I can patch my spkg so that people can try it. Yann \n\nsorry, it is available from https://gforge.inria.fr/scm/viewvc.php/trunk/src/pow_ui.c?root=mpc\nWe might still improve it, thus if you update your spkg please indicate the revision of the file\nyou took.\n\nPaul",
+    "body": "> If you send me the file pow_ui.c I can patch my spkg so that people can try it. Yann \n\n\nsorry, it is available from https://gforge.inria.fr/scm/viewvc.php/trunk/src/pow_ui.c?root=mpc\nWe might still improve it, thus if you update your spkg please indicate the revision of the file\nyou took.\n\nPaul",
     "created_at": "2010-03-31T13:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1104,6 +1089,7 @@ archive/issue_comments_032680.json:
 ```
 
 > If you send me the file pow_ui.c I can patch my spkg so that people can try it. Yann 
+
 
 sorry, it is available from https://gforge.inria.fr/scm/viewvc.php/trunk/src/pow_ui.c?root=mpc
 We might still improve it, thus if you update your spkg please indicate the revision of the file
@@ -1140,7 +1126,7 @@ Do your great speedups for mpz_pow_ui make it easy to speed up mpz_pow_si, mpz_p
 archive/issue_comments_032682.json:
 ```json
 {
-    "body": "Replying to [comment:26 jason]:\n> Paul,\n> \n> Now with MPC 0.8.2, mpz_pow_ui is fast, but mpz_pow_si is still slow.  As the MPC Sage code is written right now, calls are made to mpz_pow_si, mpz_pow_z, or mpz_pow, depending on the type of argument.  Each of these are still 5-6 slower than Sage's complex number type.\n> \n\n\nI mean: each of these calls (mpz_pow[_si|_z]) results in operations that are 5-6 times as long as Sage's complex type (~35 microseconds vs. ~200 microseconds).",
+    "body": "Replying to [comment:26 jason]:\n> Paul,\n> \n> Now with MPC 0.8.2, mpz_pow_ui is fast, but mpz_pow_si is still slow.  As the MPC Sage code is written right now, calls are made to mpz_pow_si, mpz_pow_z, or mpz_pow, depending on the type of argument.  Each of these are still 5-6 slower than Sage's complex number type.\n> \n\n\n\nI mean: each of these calls (mpz_pow[_si|_z]) results in operations that are 5-6 times as long as Sage's complex type (~35 microseconds vs. ~200 microseconds).",
     "created_at": "2010-05-15T07:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1154,6 +1140,7 @@ Replying to [comment:26 jason]:
 > 
 > Now with MPC 0.8.2, mpz_pow_ui is fast, but mpz_pow_si is still slow.  As the MPC Sage code is written right now, calls are made to mpz_pow_si, mpz_pow_z, or mpz_pow, depending on the type of argument.  Each of these are still 5-6 slower than Sage's complex number type.
 > 
+
 
 
 I mean: each of these calls (mpz_pow[_si|_z]) results in operations that are 5-6 times as long as Sage's complex type (~35 microseconds vs. ~200 microseconds).
@@ -1183,7 +1170,7 @@ Paul, I see in the MPC repository that you are already working on this.  Thanks!
 archive/issue_comments_032684.json:
 ```json
 {
-    "body": "Replying to [comment:28 jason]:\n\nJason,\n\n> Paul, I see in the MPC repository that you are already working on this.  Thanks!\n\nyes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you\nsubscribed to the mpc-discuss list, where we ask feedback for release candidates?",
+    "body": "Replying to [comment:28 jason]:\n\nJason,\n\n> Paul, I see in the MPC repository that you are already working on this.  Thanks!\n\n\nyes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you\nsubscribed to the mpc-discuss list, where we ask feedback for release candidates?",
     "created_at": "2010-05-15T21:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1198,6 +1185,7 @@ Jason,
 
 > Paul, I see in the MPC repository that you are already working on this.  Thanks!
 
+
 yes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you
 subscribed to the mpc-discuss list, where we ask feedback for release candidates?
 
@@ -1208,7 +1196,7 @@ subscribed to the mpc-discuss list, where we ask feedback for release candidates
 archive/issue_comments_032685.json:
 ```json
 {
-    "body": "Replying to [comment:29 zimmerma]:\n\n> yes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you\n> subscribed to the mpc-discuss list, where we ask feedback for release candidates?\n\nI only just was able to squeeze some time out to look at this. I'm not subscribed to mpc-discuss; I'll subscribe now.",
+    "body": "Replying to [comment:29 zimmerma]:\n\n> yes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you\n> subscribed to the mpc-discuss list, where we ask feedback for release candidates?\n\n\nI only just was able to squeeze some time out to look at this. I'm not subscribed to mpc-discuss; I'll subscribe now.",
     "created_at": "2010-05-15T21:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1222,6 +1210,7 @@ Replying to [comment:29 zimmerma]:
 > yes we are working on this. Too bad that you didn't tell us before the 0.8.2 release. Are you
 > subscribed to the mpc-discuss list, where we ask feedback for release candidates?
 
+
 I only just was able to squeeze some time out to look at this. I'm not subscribed to mpc-discuss; I'll subscribe now.
 
 
@@ -1231,7 +1220,7 @@ I only just was able to squeeze some time out to look at this. I'm not subscribe
 archive/issue_comments_032686.json:
 ```json
 {
-    "body": "Revision svn 790 from MPC implements a faster mpc_pow_si:\n\n```\ntarte% ./sage\nmpc_log took 76us per loop\nmpc_exp took 24us per loop\nmpc_pow_ui(12345) took 19.2us per loop\nmpc_pow_ui(4294967295) took 149.0us per loop\nmpc_pow_si(12345) took 19.2us per loop\nmpc_pow_si(-12345) took 22.6us per loop\nmpc_pow_z(12345) took 19.2us per loop\nmpc_pow(12345) took 133.4us per loop\nmpc_div took 3.6us per loop\n```\n\nYann, please can you prepare a new spkg so that Jason can review this ticket?\n\nPaul",
+    "body": "Revision svn 790 from MPC implements a faster mpc_pow_si:\n\n```\ntarte% ./sage\nmpc_log took 76us per loop\nmpc_exp took 24us per loop\nmpc_pow_ui(12345) took 19.2us per loop\nmpc_pow_ui(4294967295) took 149.0us per loop\nmpc_pow_si(12345) took 19.2us per loop\nmpc_pow_si(-12345) took 22.6us per loop\nmpc_pow_z(12345) took 19.2us per loop\nmpc_pow(12345) took 133.4us per loop\nmpc_div took 3.6us per loop\n```\nYann, please can you prepare a new spkg so that Jason can review this ticket?\n\nPaul",
     "created_at": "2010-06-18T09:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1254,7 +1243,6 @@ mpc_pow_z(12345) took 19.2us per loop
 mpc_pow(12345) took 133.4us per loop
 mpc_div took 3.6us per loop
 ```
-
 Yann, please can you prepare a new spkg so that Jason can review this ticket?
 
 Paul
@@ -1284,7 +1272,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032688.json:
 ```json
 {
-    "body": "In the spkg-install I see above:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 -fPIC\"; export CFLAGS\n   CXXLAGS=\"-O2 -g -m64 -fPIC\"; export CXXFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nelse\n   CFLAGS=\"-O2 -g -fPIC\"; export CFLAGS\nfi\n```\n\n\nThis will cause an issue that plagues a 64-bit port to OpenSolaris and Solaris 10. There is no reason to restrict the -m64 flag to be just OS X. It should be changed to:\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"Building a 64-bit version of MPC\"\n   CFLAGS=\"-O2 -g -m64 -fPIC\"; export CFLAGS\n   CXXLAGS=\"-O2 -g -m64 -fPIC\"; export CXXFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nelse\n   CFLAGS=\"-O2 -g -fPIC\"; export CFLAGS\nfi\n```\n\n\nWas there a good reason for unsetting 'RM' in the spkg-install, or was it just one copied from some other package, which happened to do that? \n\nMost packages use \n\n* configure \n* make \n* make install\n\nchecking the error code of each of the 3 stages. This does \n\n* configure \n* make install\n\nIf 'make install' fails, there is no way to know if the build or installation failed. \n\nSee\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nfor some information on that. I note looking at the above link, there is no code which does anything when SAGE64 is set to \"yes\". That is in my mind an error in the documentation. Clearly that was written even before a 64-bit OS X port was attempted. \n\nAlso, SPKG.txt is an empty file - again see that link above for how that should be created. \n\nDave",
+    "body": "In the spkg-install I see above:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 -fPIC\"; export CFLAGS\n   CXXLAGS=\"-O2 -g -m64 -fPIC\"; export CXXFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nelse\n   CFLAGS=\"-O2 -g -fPIC\"; export CFLAGS\nfi\n```\n\nThis will cause an issue that plagues a 64-bit port to OpenSolaris and Solaris 10. There is no reason to restrict the -m64 flag to be just OS X. It should be changed to:\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"Building a 64-bit version of MPC\"\n   CFLAGS=\"-O2 -g -m64 -fPIC\"; export CFLAGS\n   CXXLAGS=\"-O2 -g -m64 -fPIC\"; export CXXFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nelse\n   CFLAGS=\"-O2 -g -fPIC\"; export CFLAGS\nfi\n```\n\nWas there a good reason for unsetting 'RM' in the spkg-install, or was it just one copied from some other package, which happened to do that? \n\nMost packages use \n\n* configure \n* make \n* make install\n\nchecking the error code of each of the 3 stages. This does \n\n* configure \n* make install\n\nIf 'make install' fails, there is no way to know if the build or installation failed. \n\nSee\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nfor some information on that. I note looking at the above link, there is no code which does anything when SAGE64 is set to \"yes\". That is in my mind an error in the documentation. Clearly that was written even before a 64-bit OS X port was attempted. \n\nAlso, SPKG.txt is an empty file - again see that link above for how that should be created. \n\nDave",
     "created_at": "2010-06-18T10:27:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1294,7 +1282,6 @@ archive/issue_comments_032688.json:
 ```
 
 In the spkg-install I see above:
-
 
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
@@ -1307,9 +1294,7 @@ else
 fi
 ```
 
-
 This will cause an issue that plagues a 64-bit port to OpenSolaris and Solaris 10. There is no reason to restrict the -m64 flag to be just OS X. It should be changed to:
-
 
 ```
 if [ "x$SAGE64" = xyes ]; then
@@ -1321,7 +1306,6 @@ else
    CFLAGS="-O2 -g -fPIC"; export CFLAGS
 fi
 ```
-
 
 Was there a good reason for unsetting 'RM' in the spkg-install, or was it just one copied from some other package, which happened to do that? 
 
@@ -1393,7 +1377,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_032691.json:
 ```json
 {
-    "body": "Attachment [fix_declaration.patch](tarball://root/attachments/some-uuid/ticket4446/fix_declaration.patch) by ylchapuy created at 2010-06-18 21:33:42\n\nafter installing 'mpc-0.8.2svn793.spkg' ,\none needs to apply in order:\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n* fix_declaration.patch\n\nTested with vanilla sage-4.4.3, Ubuntu 10.04, kernel 2.6.32-22-generic # 36-Ubuntu SMP Thu Jun 3 19:31:57 UTC 2010 x86_64 GNU/Linux, Intel(R) Core(TM) i5 CPU 650 `@` 3.20GHz.\n\n\n```\nsage -t  \"devel/sage-main/sage/rings/complex_mpc.pyx\"       \n\t [1.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nThe script 'spkg-install' is a mix between the template from:\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nand the script from the mpfr spkg. In particular, I don't know what is the point of the EXTRA flags, but thought they might be useful.\n\nYou will also see in the file SPKG.txt:\n\n\n```\n## SPKG Maintainers\n\n * ???\n```\n\n\nI just can't be the maintainer, sorry...",
+    "body": "Attachment [fix_declaration.patch](tarball://root/attachments/some-uuid/ticket4446/fix_declaration.patch) by ylchapuy created at 2010-06-18 21:33:42\n\nafter installing 'mpc-0.8.2svn793.spkg' ,\none needs to apply in order:\n* mpc-0.8.1.patch\n* bug_literal.patch\n* trac4446-rebase_sage4.3.3.patch\n* fix_declaration.patch\n\nTested with vanilla sage-4.4.3, Ubuntu 10.04, kernel 2.6.32-22-generic # 36-Ubuntu SMP Thu Jun 3 19:31:57 UTC 2010 x86_64 GNU/Linux, Intel(R) Core(TM) i5 CPU 650 `@` 3.20GHz.\n\n```\nsage -t  \"devel/sage-main/sage/rings/complex_mpc.pyx\"       \n\t [1.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nThe script 'spkg-install' is a mix between the template from:\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg\n\nand the script from the mpfr spkg. In particular, I don't know what is the point of the EXTRA flags, but thought they might be useful.\n\nYou will also see in the file SPKG.txt:\n\n```\n## SPKG Maintainers\n\n * ???\n```\n\nI just can't be the maintainer, sorry...",
     "created_at": "2010-06-18T21:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1413,7 +1397,6 @@ one needs to apply in order:
 
 Tested with vanilla sage-4.4.3, Ubuntu 10.04, kernel 2.6.32-22-generic # 36-Ubuntu SMP Thu Jun 3 19:31:57 UTC 2010 x86_64 GNU/Linux, Intel(R) Core(TM) i5 CPU 650 `@` 3.20GHz.
 
-
 ```
 sage -t  "devel/sage-main/sage/rings/complex_mpc.pyx"       
 	 [1.8 s]
@@ -1421,7 +1404,6 @@ sage -t  "devel/sage-main/sage/rings/complex_mpc.pyx"
 ----------------------------------------------------------------------
 All tests passed!
 ```
-
 
 The script 'spkg-install' is a mix between the template from:
 
@@ -1431,13 +1413,11 @@ and the script from the mpfr spkg. In particular, I don't know what is the point
 
 You will also see in the file SPKG.txt:
 
-
 ```
 ## SPKG Maintainers
 
  * ???
 ```
-
 
 I just can't be the maintainer, sorry...
 
@@ -1466,7 +1446,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_032693.json:
 ```json
 {
-    "body": "It builds, OK on both \n\n* Solaris 10 03/2005 32-bit mode. \n* OpenSolaris 06/2009 in 64-bit mode. \n\nBut it fails tests on both machines. \n\n## Test failure on Solaris 10 03/2005\nConfiguration is \n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/05 (This was the first release of Solaris 10)\n* Sage 4.4.4.alpha1\n* mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)\n* 32-bit build. \n \n\n```\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c  -fPIC -DPIC -o .libs/read_data.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c -o read_data.o >/dev/null 2>&1\nmv -f .deps/read_data.Tpo .deps/read_data.Plo\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include   -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c -o comparisons.lo comparisons.c\ncomparisons.o: No such file or directory\n.libs/comparisons.o: No such file or directory\ncomparisons.lo: No such file or directory\ncomparisons.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c  -fPIC -DPIC -o .libs/comparisons.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c -o comparisons.o >/dev/null 2>&1\nmv -f .deps/comparisons.Tpo .deps/comparisons.Plo\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include   -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c -o memory.lo memory.c\nmemory.o: No such file or directory\n.libs/memory.o: No such file or directory\nmemory.lo: No such file or directory\nmemory.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c -o memory.o >/dev/null 2>&1\nmv -f .deps/memory.Tpo .deps/memory.Plo\n/bin/bash ../libtool --tag=CC   --mode=link gcc  -O2  -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib  -o libmpc-tests.la  random.lo tgeneric.lo read_data.lo comparisons.lo memory.lo  -lmpfr -lgmp \nlibtool: link: ar cru .libs/libmpc-tests.a .libs/random.o .libs/tgeneric.o .libs/read_data.o .libs/comparisons.o .libs/memory.o \nlibtool: link: ranlib .libs/libmpc-tests.a\nlibmpc-tests.la: No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"libmpc-tests.la\" && ln -s \"../libmpc-tests.la\" \"libmpc-tests.la\" )\nlibmpc-tests.la: No such file or directory\nmake[2]: *** [libmpc-tests.la] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake[1]: *** [check-am] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake: *** [check-recursive] Error 1\nThere was a problem during the mpc tests.\n*************************************\nError testing package ** mpc-0.8.2svn793 **\n*************************************\nsage: An error occurred while testing mpc-0.8.2svn793\n```\n\n## Test Failure on OpenSolaris 06/2009\nConfiguration is \n* Sun Ultra 27\n* Intel Xeon W3580 3.333 GHz, quad core, hyperthreaded (8 threads)\n* 12 GB RAM\n* OpenSolaris 06/2009 (This is the latest release of OpenSolaris, but has updated to snv_134).\n* Sage 4.4.4.alpha1\n* mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)\n* 64-bit build (SAGE64 was exported to \"yes\"). \n\n\n```\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c  -fPIC -DPIC -o .libs/comparisons.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c -o comparisons.o >/dev/null 2>&1\nmv -f .deps/comparisons.Tpo .deps/comparisons.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64   -O2 -g -m64   -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c -o memory.lo memory.c\nrm: memory.o: No such file or directory\nrm: .libs/memory.o: No such file or directory\nrm: memory.lo: No such file or directory\nrm: memory.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c -o memory.o >/dev/null 2>&1\nmv -f .deps/memory.Tpo .deps/memory.Plo\n/bin/sh ../libtool --tag=CC   --mode=link gcc  -O2 -g -m64   -O2  -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib  -o libmpc-tests.la  random.lo tgeneric.lo read_data.lo comparisons.lo memory.lo  -lmpfr -lgmp \nlibtool: link: ar cru .libs/libmpc-tests.a .libs/random.o .libs/tgeneric.o .libs/read_data.o .libs/comparisons.o .libs/memory.o \nlibtool: link: ranlib .libs/libmpc-tests.a\nrm: libmpc-tests.la: No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"libmpc-tests.la\" && ln -s \"../libmpc-tests.la\" \"libmpc-tests.la\" )\nrm: libmpc-tests.la: No such file or directory\nmake[2]: *** [libmpc-tests.la] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake[1]: *** [check-am] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake: *** [check-recursive] Error 1\nThere was a problem during the mpc tests.\n*************************************\nError testing package ** mpc-0.8.2svn793 **\n*************************************\nsage: An error occurred while testing mpc-0.8.2svn793\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /export/home/drkirkby/sage-4.4.4.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793' && '/export/home/drkirkby/sage-4.4.4.alpha1/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n\nreal\t0m12.719s\nuser\t0m8.046s\nsys\t0m3.403s\n```\n",
+    "body": "It builds, OK on both \n\n* Solaris 10 03/2005 32-bit mode. \n* OpenSolaris 06/2009 in 64-bit mode. \n\nBut it fails tests on both machines. \n\n## Test failure on Solaris 10 03/2005\nConfiguration is \n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/05 (This was the first release of Solaris 10)\n* Sage 4.4.4.alpha1\n* mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)\n* 32-bit build. \n \n```\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c  -fPIC -DPIC -o .libs/read_data.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c -o read_data.o >/dev/null 2>&1\nmv -f .deps/read_data.Tpo .deps/read_data.Plo\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include   -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c -o comparisons.lo comparisons.c\ncomparisons.o: No such file or directory\n.libs/comparisons.o: No such file or directory\ncomparisons.lo: No such file or directory\ncomparisons.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c  -fPIC -DPIC -o .libs/comparisons.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c -o comparisons.o >/dev/null 2>&1\nmv -f .deps/comparisons.Tpo .deps/comparisons.Plo\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include   -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c -o memory.lo memory.c\nmemory.o: No such file or directory\n.libs/memory.o: No such file or directory\nmemory.lo: No such file or directory\nmemory.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c -o memory.o >/dev/null 2>&1\nmv -f .deps/memory.Tpo .deps/memory.Plo\n/bin/bash ../libtool --tag=CC   --mode=link gcc  -O2  -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib  -o libmpc-tests.la  random.lo tgeneric.lo read_data.lo comparisons.lo memory.lo  -lmpfr -lgmp \nlibtool: link: ar cru .libs/libmpc-tests.a .libs/random.o .libs/tgeneric.o .libs/read_data.o .libs/comparisons.o .libs/memory.o \nlibtool: link: ranlib .libs/libmpc-tests.a\nlibmpc-tests.la: No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"libmpc-tests.la\" && ln -s \"../libmpc-tests.la\" \"libmpc-tests.la\" )\nlibmpc-tests.la: No such file or directory\nmake[2]: *** [libmpc-tests.la] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake[1]: *** [check-am] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake: *** [check-recursive] Error 1\nThere was a problem during the mpc tests.\n*************************************\nError testing package ** mpc-0.8.2svn793 **\n*************************************\nsage: An error occurred while testing mpc-0.8.2svn793\n```\n## Test Failure on OpenSolaris 06/2009\nConfiguration is \n* Sun Ultra 27\n* Intel Xeon W3580 3.333 GHz, quad core, hyperthreaded (8 threads)\n* 12 GB RAM\n* OpenSolaris 06/2009 (This is the latest release of OpenSolaris, but has updated to snv_134).\n* Sage 4.4.4.alpha1\n* mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)\n* 64-bit build (SAGE64 was exported to \"yes\"). \n\n```\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c  -fPIC -DPIC -o .libs/comparisons.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c -o comparisons.o >/dev/null 2>&1\nmv -f .deps/comparisons.Tpo .deps/comparisons.Plo\n/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64   -O2 -g -m64   -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c -o memory.lo memory.c\nrm: memory.o: No such file or directory\nrm: .libs/memory.o: No such file or directory\nrm: memory.lo: No such file or directory\nrm: memory.loT: No such file or directory\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o\nlibtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c -o memory.o >/dev/null 2>&1\nmv -f .deps/memory.Tpo .deps/memory.Plo\n/bin/sh ../libtool --tag=CC   --mode=link gcc  -O2 -g -m64   -O2  -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib  -o libmpc-tests.la  random.lo tgeneric.lo read_data.lo comparisons.lo memory.lo  -lmpfr -lgmp \nlibtool: link: ar cru .libs/libmpc-tests.a .libs/random.o .libs/tgeneric.o .libs/read_data.o .libs/comparisons.o .libs/memory.o \nlibtool: link: ranlib .libs/libmpc-tests.a\nrm: libmpc-tests.la: No such file or directory\nlibtool: link: ( cd \".libs\" && rm \"libmpc-tests.la\" && ln -s \"../libmpc-tests.la\" \"libmpc-tests.la\" )\nrm: libmpc-tests.la: No such file or directory\nmake[2]: *** [libmpc-tests.la] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake[1]: *** [check-am] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793/src/tests'\nmake: *** [check-recursive] Error 1\nThere was a problem during the mpc tests.\n*************************************\nError testing package ** mpc-0.8.2svn793 **\n*************************************\nsage: An error occurred while testing mpc-0.8.2svn793\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /export/home/drkirkby/sage-4.4.4.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/mpc-0.8.2svn793' && '/export/home/drkirkby/sage-4.4.4.alpha1/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n\nreal\t0m12.719s\nuser\t0m8.046s\nsys\t0m3.403s\n```",
     "created_at": "2010-06-18T21:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1492,7 +1472,6 @@ Configuration is
 * mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)
 * 32-bit build. 
  
-
 ```
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c  -fPIC -DPIC -o .libs/read_data.o
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -MT read_data.lo -MD -MP -MF .deps/read_data.Tpo -c read_data.c -o read_data.o >/dev/null 2>&1
@@ -1530,7 +1509,6 @@ Error testing package ** mpc-0.8.2svn793 **
 *************************************
 sage: An error occurred while testing mpc-0.8.2svn793
 ```
-
 ## Test Failure on OpenSolaris 06/2009
 Configuration is 
 * Sun Ultra 27
@@ -1540,7 +1518,6 @@ Configuration is
 * Sage 4.4.4.alpha1
 * mpc-0.8.2svn793.spkg (md5 checksum 2060cdf173efa2943529745438b26f1e)
 * 64-bit build (SAGE64 was exported to "yes"). 
-
 
 ```
 libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../src -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -O2 -g -m64 -O2 -g -m64 -O2 -MT comparisons.lo -MD -MP -MF .deps/comparisons.Tpo -c comparisons.c  -fPIC -DPIC -o .libs/comparisons.o
@@ -1588,13 +1565,12 @@ sys	0m3.403s
 
 
 
-
 ---
 
 archive/issue_comments_032694.json:
 ```json
 {
-    "body": "ok, my fault, I didn't tried the spkg-check. (is the one in the mpfr spkg working???) It should be corrected with the brand new\n\n http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\nat least, it works for me... same proc, os, etc\n\n\n```\n===================\nAll 57 tests passed\n===================\n```\n",
+    "body": "ok, my fault, I didn't tried the spkg-check. (is the one in the mpfr spkg working???) It should be corrected with the brand new\n\n http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\nat least, it works for me... same proc, os, etc\n\n```\n===================\nAll 57 tests passed\n===================\n```",
     "created_at": "2010-06-18T22:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1609,13 +1585,11 @@ ok, my fault, I didn't tried the spkg-check. (is the one in the mpfr spkg workin
 
 at least, it works for me... same proc, os, etc
 
-
 ```
 ===================
 All 57 tests passed
 ===================
 ```
-
 
 
 
@@ -1660,7 +1634,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_032697.json:
 ```json
 {
-    "body": "Replying to [comment:36 ylchapuy]:\n> \n> \n> ok, my fault, I didn't tried the spkg-check. (is the one in the mpfr spkg working???) It should be corrected with the brand new\n> \n>  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n> \n> at least, it works for me... same proc, os, etc\n> {{{\n> ===================\n> All 57 tests passed\n> ===================\n> }}}\nmpc-0.8.3-dev-svn793.spkg (md5 checksum 07e1b56fe1e551138b8862d5551d6948) passed all 57 tests on both machines I have tested on. \n\n* Sun Blade 1000, UltraSPARC III+ processors, Solaris 10 03/2005 32-bit mode.\n* Sun Ultra 27, quad core Xeon processor, OpenSolaris 06/2009 in 64-bit mode. \n\nHowever, it seems a long way before this could get a positive review and be incorporated into Sage. \n\n* William has made quite extensive comments - in particular the fact it could **not** be \"optional\" so would have to be a standard part of Sage. \n* Nobody has agreed to maintain it. I believe there is a requirement for any standard package that someone agrees to maintain it for 2 years. \n* For the package to become \"standard\" it needs a vote. \n* I don't like the idea of using a SVN snapshot unless necessary. This is not based on a stable release of MPC, yet I believe it would have to become a standard part of Sage. That seems a bad idea in my opinion. \n* It appears to have undergone very little testing. When I noticed the test suite had failed, you remarked you had not run the tests. When several months ago I asked if it had been tested on Solaris, nobody responded. \n* Has it been tested on OS X? If so, what processors? \n* Are you aware Sage is suppose to support all these platforms. What subset of these has MPC been tested on? \n  {{{\n  PROCESSOR        OPERATING SYSTEM\n  x86              32-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                  Fedora, openSUSE, Mandriva, Arch\n  x86_64           64-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                  Fedora, openSUSE, Mandriva, Arch\n  IA-64 Itanium 2  64-bit Linux -- Red Hat, SUSE\n  x86              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n  PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n  SPARC            Solaris 10\n  }}}\n* Have the doc tests been run on different hardware? Would results be affected by different floating point processors, so that the doc tests might need to consider this. \n\nI would add, I have a lot of respect for Paul Zimmermann, so I would tend to trust code he is associated with. \n\nIt just strikes me that this is going to need a lot more than one positive review to become part of Sage. I believe any competent reviewer will ask for more proof this would be a good addition to Sage. At the moment, whilst the fact Paul is associated with this code would tend to make me think it is well tested, as a package in Sage, there seems to be little evidence presented that this has undergone much testing. Given its based on a snapshot, makes me even more suspicious. \n\nA few others points. \n* One of the attachments says it is released under the GPL, but does not state the version. I believe it should say \"GPL version 2, or (at your option) any later version.\"\n* As for your question about the MPFR test suite, if you look at MPFR's spkg-install you will see that the test suite is run every time Sage is built. That is because the test suite tended to fail quite regularly with buggy compilers, or buggy operating systems, so it was wise to test it on every Sage build. \n* What does the '793' in the .spkg mean? I assumed at first it was a revision, but now see that is unchanged, whilst the number in the package has changed from 0.8.2 to 0.8.3. \n\n\nDave",
+    "body": "Replying to [comment:36 ylchapuy]:\n> \n> \n> ok, my fault, I didn't tried the spkg-check. (is the one in the mpfr spkg working???) It should be corrected with the brand new\n> \n>  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n> \n> at least, it works for me... same proc, os, etc\n> \n> ```\n> ===================\n> All 57 tests passed\n> ===================\n> ```\n\nmpc-0.8.3-dev-svn793.spkg (md5 checksum 07e1b56fe1e551138b8862d5551d6948) passed all 57 tests on both machines I have tested on. \n\n* Sun Blade 1000, UltraSPARC III+ processors, Solaris 10 03/2005 32-bit mode.\n* Sun Ultra 27, quad core Xeon processor, OpenSolaris 06/2009 in 64-bit mode. \n\nHowever, it seems a long way before this could get a positive review and be incorporated into Sage. \n\n* William has made quite extensive comments - in particular the fact it could **not** be \"optional\" so would have to be a standard part of Sage. \n* Nobody has agreed to maintain it. I believe there is a requirement for any standard package that someone agrees to maintain it for 2 years. \n* For the package to become \"standard\" it needs a vote. \n* I don't like the idea of using a SVN snapshot unless necessary. This is not based on a stable release of MPC, yet I believe it would have to become a standard part of Sage. That seems a bad idea in my opinion. \n* It appears to have undergone very little testing. When I noticed the test suite had failed, you remarked you had not run the tests. When several months ago I asked if it had been tested on Solaris, nobody responded. \n* Has it been tested on OS X? If so, what processors? \n* Are you aware Sage is suppose to support all these platforms. What subset of these has MPC been tested on? \n  {{{\n  PROCESSOR        OPERATING SYSTEM\n  x86              32-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                  Fedora, openSUSE, Mandriva, Arch\n  x86_64           64-bit Linux -- Debian, Ubuntu, CentOS (=Red Hat),\n                                  Fedora, openSUSE, Mandriva, Arch\n  IA-64 Itanium 2  64-bit Linux -- Red Hat, SUSE\n  x86              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n  PPC              Apple Mac OS X 10.4.x, 10.5.x, 10.6.x\n  SPARC            Solaris 10\n  }}}\n* Have the doc tests been run on different hardware? Would results be affected by different floating point processors, so that the doc tests might need to consider this. \n\nI would add, I have a lot of respect for Paul Zimmermann, so I would tend to trust code he is associated with. \n\nIt just strikes me that this is going to need a lot more than one positive review to become part of Sage. I believe any competent reviewer will ask for more proof this would be a good addition to Sage. At the moment, whilst the fact Paul is associated with this code would tend to make me think it is well tested, as a package in Sage, there seems to be little evidence presented that this has undergone much testing. Given its based on a snapshot, makes me even more suspicious. \n\nA few others points. \n* One of the attachments says it is released under the GPL, but does not state the version. I believe it should say \"GPL version 2, or (at your option) any later version.\"\n* As for your question about the MPFR test suite, if you look at MPFR's spkg-install you will see that the test suite is run every time Sage is built. That is because the test suite tended to fail quite regularly with buggy compilers, or buggy operating systems, so it was wise to test it on every Sage build. \n* What does the '793' in the .spkg mean? I assumed at first it was a revision, but now see that is unchanged, whilst the number in the package has changed from 0.8.2 to 0.8.3. \n\n\nDave",
     "created_at": "2010-06-19T00:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1677,11 +1651,13 @@ Replying to [comment:36 ylchapuy]:
 >  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg
 > 
 > at least, it works for me... same proc, os, etc
-> {{{
+> 
+> ```
 > ===================
 > All 57 tests passed
 > ===================
-> }}}
+> ```
+
 mpc-0.8.3-dev-svn793.spkg (md5 checksum 07e1b56fe1e551138b8862d5551d6948) passed all 57 tests on both machines I have tested on. 
 
 * Sun Blade 1000, UltraSPARC III+ processors, Solaris 10 03/2005 32-bit mode.
@@ -1820,7 +1796,7 @@ work for nothing. The md5 sum is now af419b37f887082a2979ce3a9d0c194a .
 archive/issue_comments_032700.json:
 ```json
 {
-    "body": "Replying to [comment:39 ylchapuy]:\n\n> As a  conclusion, I want to  say that I won't  have much more time  to spend on\n> this. If there is  a clear way not to transform those 20  months in a big waste\n> of time I would be please to make a last effort.\n\n\nI can be the maintainer for the next two years.  I really think this ought to go into Sage (once objections are satisfied, of course).  I think I can help work on this in the next few weeks.\n\nI really appreciate everyone's time in working on this, and David's extensive comments as well!",
+    "body": "Replying to [comment:39 ylchapuy]:\n\n> As a  conclusion, I want to  say that I won't  have much more time  to spend on\n> this. If there is  a clear way not to transform those 20  months in a big waste\n> of time I would be please to make a last effort.\n\n\n\nI can be the maintainer for the next two years.  I really think this ought to go into Sage (once objections are satisfied, of course).  I think I can help work on this in the next few weeks.\n\nI really appreciate everyone's time in working on this, and David's extensive comments as well!",
     "created_at": "2010-06-19T12:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1836,6 +1812,7 @@ Replying to [comment:39 ylchapuy]:
 > of time I would be please to make a last effort.
 
 
+
 I can be the maintainer for the next two years.  I really think this ought to go into Sage (once objections are satisfied, of course).  I think I can help work on this in the next few weeks.
 
 I really appreciate everyone's time in working on this, and David's extensive comments as well!
@@ -1847,7 +1824,7 @@ I really appreciate everyone's time in working on this, and David's extensive co
 archive/issue_comments_032701.json:
 ```json
 {
-    "body": "Replying to [comment:38 zimmerma]:\n> thank you David for your comments on this ticket. We (the MPC developers) have invested a lot of\n> time on this ticket (especially Philippe Theveny in 2008-2009, where at that time he was an\n> engineer paid by INRIA to work on MPFR and MPC), thus we would appreciate a lot if the Sage\n> developers could tell us right now in case they believe MPC will *never* become a standard package, so that we don't spend more time on this ticket.\n> \n\nIf I recall correctly, the vote on sage-devel was positive for inclusion, once some of the objections were resolved.  I definitely see it becoming a standard package in Sage (and am willing to be the maintainer to make it so!)\n\nJason",
+    "body": "Replying to [comment:38 zimmerma]:\n> thank you David for your comments on this ticket. We (the MPC developers) have invested a lot of\n> time on this ticket (especially Philippe Theveny in 2008-2009, where at that time he was an\n> engineer paid by INRIA to work on MPFR and MPC), thus we would appreciate a lot if the Sage\n> developers could tell us right now in case they believe MPC will *never* become a standard package, so that we don't spend more time on this ticket.\n> \n\n\nIf I recall correctly, the vote on sage-devel was positive for inclusion, once some of the objections were resolved.  I definitely see it becoming a standard package in Sage (and am willing to be the maintainer to make it so!)\n\nJason",
     "created_at": "2010-06-19T12:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1863,6 +1840,7 @@ Replying to [comment:38 zimmerma]:
 > developers could tell us right now in case they believe MPC will *never* become a standard package, so that we don't spend more time on this ticket.
 > 
 
+
 If I recall correctly, the vote on sage-devel was positive for inclusion, once some of the objections were resolved.  I definitely see it becoming a standard package in Sage (and am willing to be the maintainer to make it so!)
 
 Jason
@@ -1874,7 +1852,7 @@ Jason
 archive/issue_comments_032702.json:
 ```json
 {
-    "body": "I was just about to post a long message and see Jason beat me to it. \n\nHere is what I was going to write - some of it might be useful. \n\nDave \n---------------------- \n\nThank you Paul and Yann,\n\nThis clearly needs more than one person to agree to this, so I would think it right the ticket is discussed on the sage-devel mailing list. Before doing that, I just wanted to clarify if my understanding is correct. In particular, I'd like to know if the following comments seem a reasonable thing to post on sage-devel, asking if this should be a standard part of Sage. \n\n* MPC is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.\n* A trac ticket #4446 has been open for 20 months to add MPC to Sage, with 37 comments on it. \n* Although personally I don't know much about how this overlaps with other components in Sage, a number of Sage developers have put a lot of effort into ticket #4446, so there must be interest in this. \n* I personally believe the MPC library code should be of high quality as it is produced by a team of developers who in my personal opinion care about quality. \n* The MPC library is LGPL v 2.1+\n* The license on one of the patches attached to the ticket #4446 is ambiguous, saying just \"GPL\", with nothing about version number(s), but I suspect that would be easy to resolve. \n* Both Linux on x86 and Solaris 10 on SPARC are primary platforms for MPC, but OS X is a secondary platform. \n* FreeBSD on x86 is a platform where a Sage port is in progress. FreeBSD is a primary platform for MPC, \n* OpenSolaris on x64, is a platform where a Sage port is in progress. This is not listed as even a tertiary platform for MPC, though in practice MPC passed all 57 tests for me on OpenSolaris x64 using gcc 4.4.4. (This was using Sage 4.4.4.alpha1, which uses MPIR 1.2.2 and MPFR 2.4.2.) \n* Solaris 10 on x86, is a platform where a Sage port is in progress. This is a tertiary platform for MPC, but with a report of all MPC library tests passing. \n* The Sage package initially presented for review (mpc-0.8.2svn793.spkg) failed to even build the test suite on Solaris or OpenSolaris, but a revised edition of the Sage package passes all tests on Ubuntu 10.04 64-bit, Solaris 10 (SPARC) 32-bit and OpenSolaris (x64) 64-bit. The initial problem was a mistake in the packaging for Sage, rather than the MPC library. \n* The package present for review is based on an SVN snapshot. Paul Zimmermann, an MPC developer, has said this minimal changes from the stable 0.82 release. Those changes were made to address a performance issue. \n* The Sage package is not currently \"optional\", but would need to be \"standard\". (There may or may not be ways of making it \"optional\", but William's comments on the trac ticket tended to suggest it could not be.) \n* The current package has not been tested much in Sage, and Yann who submitted the package does not have much more time to spend on it, so will not be asking William accounts to test on other platforms. \n* Currently nobody has volunteered to maintain the package.   \n* A lot of work has been done on this ticket over a period of 20 months, so it would be a shame if that is wasted. \n* The MPC developers would appreciate a lot if the Sage developers could tell them right now if they believe MPC will never become a standard package, so they don't spend more time on ticket #4446. \n \nDo you feel I've overlooked something, or that is inaccurate? If you believe that is OK, I will ask on sage-devel if this should become a standard part of Sage.",
+    "body": "I was just about to post a long message and see Jason beat me to it. \n\nHere is what I was going to write - some of it might be useful. \n\nDave \n\n---\n\nThank you Paul and Yann,\n\nThis clearly needs more than one person to agree to this, so I would think it right the ticket is discussed on the sage-devel mailing list. Before doing that, I just wanted to clarify if my understanding is correct. In particular, I'd like to know if the following comments seem a reasonable thing to post on sage-devel, asking if this should be a standard part of Sage. \n\n* MPC is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.\n* A trac ticket #4446 has been open for 20 months to add MPC to Sage, with 37 comments on it. \n* Although personally I don't know much about how this overlaps with other components in Sage, a number of Sage developers have put a lot of effort into ticket #4446, so there must be interest in this. \n* I personally believe the MPC library code should be of high quality as it is produced by a team of developers who in my personal opinion care about quality. \n* The MPC library is LGPL v 2.1+\n* The license on one of the patches attached to the ticket #4446 is ambiguous, saying just \"GPL\", with nothing about version number(s), but I suspect that would be easy to resolve. \n* Both Linux on x86 and Solaris 10 on SPARC are primary platforms for MPC, but OS X is a secondary platform. \n* FreeBSD on x86 is a platform where a Sage port is in progress. FreeBSD is a primary platform for MPC, \n* OpenSolaris on x64, is a platform where a Sage port is in progress. This is not listed as even a tertiary platform for MPC, though in practice MPC passed all 57 tests for me on OpenSolaris x64 using gcc 4.4.4. (This was using Sage 4.4.4.alpha1, which uses MPIR 1.2.2 and MPFR 2.4.2.) \n* Solaris 10 on x86, is a platform where a Sage port is in progress. This is a tertiary platform for MPC, but with a report of all MPC library tests passing. \n* The Sage package initially presented for review (mpc-0.8.2svn793.spkg) failed to even build the test suite on Solaris or OpenSolaris, but a revised edition of the Sage package passes all tests on Ubuntu 10.04 64-bit, Solaris 10 (SPARC) 32-bit and OpenSolaris (x64) 64-bit. The initial problem was a mistake in the packaging for Sage, rather than the MPC library. \n* The package present for review is based on an SVN snapshot. Paul Zimmermann, an MPC developer, has said this minimal changes from the stable 0.82 release. Those changes were made to address a performance issue. \n* The Sage package is not currently \"optional\", but would need to be \"standard\". (There may or may not be ways of making it \"optional\", but William's comments on the trac ticket tended to suggest it could not be.) \n* The current package has not been tested much in Sage, and Yann who submitted the package does not have much more time to spend on it, so will not be asking William accounts to test on other platforms. \n* Currently nobody has volunteered to maintain the package.   \n* A lot of work has been done on this ticket over a period of 20 months, so it would be a shame if that is wasted. \n* The MPC developers would appreciate a lot if the Sage developers could tell them right now if they believe MPC will never become a standard package, so they don't spend more time on ticket #4446. \n \nDo you feel I've overlooked something, or that is inaccurate? If you believe that is OK, I will ask on sage-devel if this should become a standard part of Sage.",
     "created_at": "2010-06-19T12:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -1888,7 +1866,8 @@ I was just about to post a long message and see Jason beat me to it.
 Here is what I was going to write - some of it might be useful. 
 
 Dave 
----------------------- 
+
+---
 
 Thank you Paul and Yann,
 
@@ -2008,7 +1987,7 @@ Paul
 archive/issue_comments_032707.json:
 ```json
 {
-    "body": "Replying to [comment:45 zimmerma]:\n> Dave, since you changed from needs review to needs info 3 weeks ago, did you get the answers\n> to all your questions? What is still blocking a review of this ticket?\n> \n> Paul\nHi Paul, \n\nThere is nothing I can do about this myself. I think you need to follow up on the thread I posted to sage-devel (see above). I asked about this and William responded with: \n\n\n''A while ago I tried out the proposed  MPC package for Sage, and it was\nmuch slower than the multiprecision complex code that we already had\nin Sage.  I wonder if these performance issues have been addressed?\n\n -- William''\n\n\nI then responded with:\n\n''It would appear the issue have been addressed. You would be in a better position\nthat me to determine if those issues are fully resolved. The last two entries in\nthe NEWS file are both related to performance.''\n\nThere really is little more I can do about this. I don't have the knowledge to evaluate the performance. You really need to convince William. \n\nBTW, what are the prequesites for this package? An updated spkg/install and updated spkg/standard/deps would be needed. You could usefully add them to the ticket. \n\n\nBTW, the author field is not filled in. \n\nDave",
+    "body": "Replying to [comment:45 zimmerma]:\n> Dave, since you changed from needs review to needs info 3 weeks ago, did you get the answers\n> to all your questions? What is still blocking a review of this ticket?\n> \n> Paul\n\nHi Paul, \n\nThere is nothing I can do about this myself. I think you need to follow up on the thread I posted to sage-devel (see above). I asked about this and William responded with: \n\n\n''A while ago I tried out the proposed  MPC package for Sage, and it was\nmuch slower than the multiprecision complex code that we already had\nin Sage.  I wonder if these performance issues have been addressed?\n\n -- William''\n\n\nI then responded with:\n\n''It would appear the issue have been addressed. You would be in a better position\nthat me to determine if those issues are fully resolved. The last two entries in\nthe NEWS file are both related to performance.''\n\nThere really is little more I can do about this. I don't have the knowledge to evaluate the performance. You really need to convince William. \n\nBTW, what are the prequesites for this package? An updated spkg/install and updated spkg/standard/deps would be needed. You could usefully add them to the ticket. \n\n\nBTW, the author field is not filled in. \n\nDave",
     "created_at": "2010-07-12T13:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2022,6 +2001,7 @@ Replying to [comment:45 zimmerma]:
 > to all your questions? What is still blocking a review of this ticket?
 > 
 > Paul
+
 Hi Paul, 
 
 There is nothing I can do about this myself. I think you need to follow up on the thread I posted to sage-devel (see above). I asked about this and William responded with: 
@@ -2056,7 +2036,7 @@ Dave
 archive/issue_comments_032708.json:
 ```json
 {
-    "body": "I have filled in the author field.\n\n> BTW, what are the prequesites for this package?\n\nMPC only depends on GMP and MPFR, which are standard Sage packages.\n\n> You really need to convince William.\n\nok, then William please could you review this ticket? I change it to needs review since it seems\nall requested information has been given.",
+    "body": "I have filled in the author field.\n\n> BTW, what are the prequesites for this package?\n\n\nMPC only depends on GMP and MPFR, which are standard Sage packages.\n\n> You really need to convince William.\n\n\nok, then William please could you review this ticket? I change it to needs review since it seems\nall requested information has been given.",
     "created_at": "2010-07-12T13:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2069,9 +2049,11 @@ I have filled in the author field.
 
 > BTW, what are the prequesites for this package?
 
+
 MPC only depends on GMP and MPFR, which are standard Sage packages.
 
 > You really need to convince William.
+
 
 ok, then William please could you review this ticket? I change it to needs review since it seems
 all requested information has been given.
@@ -2101,7 +2083,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_032710.json:
 ```json
 {
-    "body": "Replying to [comment:47 zimmerma]:\n> I have filled in the author field.\n> \n> > BTW, what are the prequesites for this package?\n> \n> MPC only depends on GMP and MPFR, which are standard Sage packages.\n\nBut you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. \n\n> > You really need to convince William.\n> \n> ok, then William please could you review this ticket? I change it to needs review since it seems\n> all requested information has been given.\n\n\nDave",
+    "body": "Replying to [comment:47 zimmerma]:\n> I have filled in the author field.\n> \n> > BTW, what are the prequesites for this package?\n\n> \n> MPC only depends on GMP and MPFR, which are standard Sage packages.\n\n\nBut you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. \n\n> > You really need to convince William.\n\n> \n> ok, then William please could you review this ticket? I change it to needs review since it seems\n> all requested information has been given.\n\n\n\nDave",
     "created_at": "2010-07-12T13:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2114,15 +2096,19 @@ Replying to [comment:47 zimmerma]:
 > I have filled in the author field.
 > 
 > > BTW, what are the prequesites for this package?
+
 > 
 > MPC only depends on GMP and MPFR, which are standard Sage packages.
+
 
 But you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. 
 
 > > You really need to convince William.
+
 > 
 > ok, then William please could you review this ticket? I change it to needs review since it seems
 > all requested information has been given.
+
 
 
 Dave
@@ -2134,7 +2120,7 @@ Dave
 archive/issue_comments_032711.json:
 ```json
 {
-    "body": "Replying to [comment:48 drkirkby]:\n> Replying to [comment:47 zimmerma]:\n> > I have filled in the author field.\n> > \n> > > BTW, what are the prequesites for this package?\n> > \n> > MPC only depends on GMP and MPFR, which are standard Sage packages.\n> \n> But you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. \n\nPaul,\ndid you do any more on this? There seems to be four things needed here\n\n* update spkg/install, to have something like \n\n\n```\nMPC=`$newest mpc`\nexport MPC\n```\n\n\n* update spkg/standard/deps to have something like\n\n\n```\nall: $(BASE) \\\n   $(INST)/$(ATLAS)\n...\n   $(INST)/$(MPC))\n...\n   $(INST)/$(ZODB)\n```\n\n\n* Update spkg/standard/deps so it also has a line like this.  \n\n```\n$(INST)/$(MPC): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n        $(INSTALL) \"$(SAGE_SPKG) $(MPC) 2>&1\" \"tee -a $(SAGE_LOGS)/$(MPC).log\"\n\n```\n\n* Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. \n\nDave",
+    "body": "Replying to [comment:48 drkirkby]:\n> Replying to [comment:47 zimmerma]:\n> > I have filled in the author field.\n> > \n> > > BTW, what are the prequesites for this package?\n\n> > \n> > MPC only depends on GMP and MPFR, which are standard Sage packages.\n\n> \n> But you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. \n\n\nPaul,\ndid you do any more on this? There seems to be four things needed here\n\n* update spkg/install, to have something like \n\n```\nMPC=`$newest mpc`\nexport MPC\n```\n\n* update spkg/standard/deps to have something like\n\n```\nall: $(BASE) \\\n   $(INST)/$(ATLAS)\n...\n   $(INST)/$(MPC))\n...\n   $(INST)/$(ZODB)\n```\n\n* Update spkg/standard/deps so it also has a line like this.  \n\n```\n$(INST)/$(MPC): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n        $(INSTALL) \"$(SAGE_SPKG) $(MPC) 2>&1\" \"tee -a $(SAGE_LOGS)/$(MPC).log\"\n\n```\n* Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. \n\nDave",
     "created_at": "2010-08-02T14:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2148,25 +2134,25 @@ Replying to [comment:48 drkirkby]:
 > > I have filled in the author field.
 > > 
 > > > BTW, what are the prequesites for this package?
+
 > > 
 > > MPC only depends on GMP and MPFR, which are standard Sage packages.
+
 > 
 > But you still need to create an spkg/install and spkg/standard/deps for this to be a standard package. I would attach them to the ticket. 
+
 
 Paul,
 did you do any more on this? There seems to be four things needed here
 
 * update spkg/install, to have something like 
 
-
 ```
 MPC=`$newest mpc`
 export MPC
 ```
 
-
 * update spkg/standard/deps to have something like
-
 
 ```
 all: $(BASE) \
@@ -2177,7 +2163,6 @@ all: $(BASE) \
    $(INST)/$(ZODB)
 ```
 
-
 * Update spkg/standard/deps so it also has a line like this.  
 
 ```
@@ -2185,7 +2170,6 @@ $(INST)/$(MPC): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)
         $(INSTALL) "$(SAGE_SPKG) $(MPC) 2>&1" "tee -a $(SAGE_LOGS)/$(MPC).log"
 
 ```
-
 * Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. 
 
 Dave
@@ -2241,7 +2225,7 @@ This ticket is already too long, but here is another rebased version:
 archive/issue_comments_032714.json:
 ```json
 {
-    "body": "Dave,\n\n> Paul,\n> did you do any more on this? There seems to be four things needed here [...]\n\n>  * Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. \n\nthis should be the very first thing to do, before we invest more time in this ticket. William, are you out there?\n\nPaul",
+    "body": "Dave,\n\n> Paul,\n> did you do any more on this? There seems to be four things needed here [...]\n\n\n>  * Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. \n\n\nthis should be the very first thing to do, before we invest more time in this ticket. William, are you out there?\n\nPaul",
     "created_at": "2010-08-24T18:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2255,7 +2239,9 @@ Dave,
 > Paul,
 > did you do any more on this? There seems to be four things needed here [...]
 
+
 >  * Convince William that's this is necessary and not slower than what's in Sage, which was his objection before. I started a thread for you - see http://groups.google.co.uk/group/sage-devel/browse_thread/thread/c8363227c72b6918 but you have not written anything on it. 
+
 
 this should be the very first thing to do, before we invest more time in this ticket. William, are you out there?
 
@@ -2304,7 +2290,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_032717.json:
 ```json
 {
-    "body": "Replying to [comment:52 was]:\n> I'm \"out there\".   Is it necessary and not slower than what is in Sage already?  I'm willing to take your (=Paul's) word for it, assuming you say you've done some benchmarks.   Also, rounding might be (vastly) better in mpc, which would be another point in its favor. \n\nWilliam, here are some results of benchmarks I've done on my Core 2 Duo laptop, with Sage 4.5.3,\nwith Yann latest patch and the associate spkg. Efficiency:\n\n```\nsage: K = MPComplexField(53)\nsage: a = K(3.3902384+1.23456789*i)\nsage: b = CC(3.3902384+1.23456789*i)\nsage: timeit('a*a')\n625 loops, best of 3: 1.03 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 1.08 \u00b5s per loop # CC is slower\nsage: timeit('a+a')\n625 loops, best of 3: 566 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 571 ns per loop # CC is slower\n\nsage: K=MPComplexField(1000)\nsage: a = K(3.3902384,9203483)\nsage: b = ComplexField(1000)(3.3902384,9203483)\nsage: timeit('a*a')\n625 loops, best of 3: 3.26 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 2.99 \u00b5s per loop # CC is slightly faster\nsage: timeit('a+a')\n625 loops, best of 3: 680 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 694 ns per loop # CC is slower\nsage: timeit('a.sin()')\n625 loops, best of 3: 294 \u00b5s per loop\nsage: timeit('b.sin()')\n625 loops, best of 3: 343 \u00b5s per loop # CC is slower\n\nsage: timeit('a+17')\n625 loops, best of 3: 2.56 \u00b5s per loop\nsage: timeit('b+17')\n625 loops, best of 3: 3.02 \u00b5s per loop # CC is slower\n\nsage: a2=a+17\nsage: b2=b+17\nsage: timeit('a/a2')\n625 loops, best of 3: 30.3 \u00b5s per loop\nsage: timeit('b/b2')\n625 loops, best of 3: 14.6 \u00b5s per loop\n\nsage: timeit('a.real()')\n625 loops, best of 3: 854 ns per loop\nsage: timeit('b.real()')\n625 loops, best of 3: 5.13 \u00b5s per loop\n\nsage: timeit('a.conjugate()')\n625 loops, best of 3: 736 ns per loop\nsage: timeit('b.conjugate()')\n625 loops, best of 3: 750 ns per loop\nsage: timeit('a.argument()')\n625 loops, best of 3: 146 \u00b5s per loop\nsage: timeit('b.argument()')\n625 loops, best of 3: 155 \u00b5s per loop\n\nsage: timeit('a**12345')\n625 loops, best of 3: 126 \u00b5s per loop\nsage: timeit('b**12345')\n625 loops, best of 3: 176 \u00b5s per loop\n\nsage: timeit('a.log()')\n625 loops, best of 3: 315 \u00b5s per loop\nsage: timeit('b.log()')\n625 loops, best of 3: 400 \u00b5s per loop\n\nsage: timeit('a.exp()')\n625 loops, best of 3: 221 \u00b5s per loop\nsage: timeit('b.exp()')\n625 loops, best of 3: 211 \u00b5s per loop\n```\n\nFor the accuracy, I've computed the maximal relative error on the real or imaginary part after\n1000 random tries for several operations. My program also prints the inputs that give the\ncorresponding maximal error:\n\n```\nmultiplication:\nsage: foo(53) # 53 bits\nMPC:  1.09250136812570e-16 (-0.199676992382071 - 0.194223361415138*I, 0.9413020\\\n06592817 + 0.645200777306369*I)\nCC:   1.32263143752823e-14 (0.834168924383086 - 0.525629438090125*I, -0.4766533\\\n42074290 + 0.752454804563813*I)\nsage: foo(100) # 100 bits\nMPC:  7.83034842148009e-31 (-0.43034701147206399980669837638 - 0.81582963965013\\\n399110093432939*I, -0.83969050263610625199834532314 + 0.17390362688794167984134\\\n423048*I)\nCC:   9.28509698731955e-29 (-0.36479911591428496460512307920 + 0.22548928494028\\\n018164534780632*I, -0.49018610148599010061638163259 - 0.30229330441199619133786\\\n980680*I)\n\ndivision:\nsage: foo(53)\nMPC:  1.08485488717363e-16 (0.906903106647522 + 0.991328300040510*I, 0.26885465\\\n0418765 - 0.188551687646414*I)\nCC:   4.27558190140949e-13 (-0.947451505768202 - 0.424071772860430*I, -0.499313\\\n865619141 - 0.223444662259920*I)\nsage: foo(100)\nMPC:  7.66357970552281e-31 (0.92755016191057837385980632404 - 0.004266231128213\\\n8322794515257916*I, 0.14072961243734751540073515895 - 0.21101836467335963334809\\\n014965*I)\nCC:   1.06937889944401e-27 (-0.41008840630275384495897016614 + 0.43420284734725\\\n368743056683764*I, -0.61829368333881933443455346326 - 0.58354470182146315365872\\\n353144*I)\n\nsqrt:\nsage: foo(53)\nMPC:  1.09880191814582e-16 (-0.621894659027438 - 0.0246731753089378*I, 0.823805\\\n504837539 - 0.981310087843700*I)\nCC:   2.08688816342048e-16 (0.968316682679636 + 0.637686286592402*I, -0.2999297\\\n58140749 + 0.680399103485303*I)\nsage: foo(100)\nMPC:  7.83762497864303e-31 (0.87484855451536280543412317489 + 0.744936094843967\\\n94278935970162*I, -0.93716227305934196720704783450 - 0.765294741452728993051615\\\n69068*I)\nCC:   1.59191232901277e-30 (0.22724304905610094307701469163 + 0.290884560229311\\\n05826353325335*I, -0.44728415428244253958062250934 + 0.959404399673905010209671\\\n68949*I)\n\nexp:\nsage: foo(53)\nMPC:  1.08513702552684e-16 (0.801188951612012 - 0.440834327392402*I, -0.6487549\\\n15945509 - 0.558408459317570*I)\nCC:   2.56306731927053e-16 (-0.534146492930164 - 0.126305922104917*I, -0.525552\\\n199671560 + 0.0746660767007601*I)\nsage: foo(100)\nMPC:  7.85000220770852e-31 (-0.25871533881495460870167038331 + 0.70802010475507\\\n807939080332669*I, 0.99833000148645085071979336755 + 0.103046934118108408058895\\\n43882*I)\nCC:   2.02731881365962e-30 (0.033507794108965175610485564405 + 0.53119476356929\\\n639125934355035*I, 0.46545588987697950055582059300 + 0.896373882394705924442797\\\n08331*I)\n\nlog:\nsage: foo(53)\nMPC:  1.09778133774750e-16 (-0.391618732071762 + 0.824073966701766*I, 0.3486864\\\n59442427 - 0.191201122946134*I)\nCC:   6.10819034602284e-14 (0.306684274970498 + 0.953229884394732*I, 0.69862405\\\n1151183 + 0.276699733597418*I)\nsage: foo(100)\nMPC:  7.78374256155462e-31 (0.50154056740914466911692379172 + 0.796641256036122\\\n24316946320184*I, -0.76918900642484651661867461393 - 0.286514343536794358035934\\\n91438*I)\nCC:   6.82825438431515e-28 (-0.13721125119514449776575251187 + 0.99010163436560\\\n678238821778034*I, 0.92169332492985590698251634723 + 0.433132422276759879534575\\\n89642*I)\n\nsin:\nsage: foo(53)\nMPC:  1.08720457020742e-16 (-0.369315245123802 + 0.854572675318644*I, 0.8169569\\\n42853907 - 0.383919250130617*I)\nCC:   2.59601650874087e-16 (-0.546197856444743 - 0.534628610514192*I, 0.3036961\\\n63087668 - 0.231790426712382*I)\nsage: foo(100)\nMPC:  7.55871247471999e-31 (0.20947476591320905500539204843 - 0.626588978693616\\\n08926271268655*I, -0.55364821811403565597840750754 + 0.743341403117384889712851\\\n11372*I)\nCC:   1.72458459418951e-30 (0.42758001678856166974028750611 - 0.923412131000390\\\n51795327859750*I, -0.99149234221470907346167026703 - 0.690427397584128136419461\\\n37603*I)\n\ncos:\nsage: foo(53)\nMPC:  1.08584899379431e-16 (0.0646782540849349 - 0.111085748624151*I, 0.4701880\\\n86702821 + 0.252843262283133*I)\nCC:   2.85959441825441e-16 (0.0850486257569383 - 0.330860565935531*I, 0.0564130\\\n612472886 + 0.0847664237260943*I)\nsage: foo(100)\nMPC:  7.78394156732906e-31 (0.93946166432029710121550615978 - 0.592139906105641\\\n30050851821134*I, 0.53601265027477876871715914306 - 0.1322166340317310632649551\\\n5769*I)\nCC:   1.94260689254542e-30 (-0.55385187621901359297440670364 + 0.50415610417338\\\n788296133563973*I, -0.13371850315082336799522666801 - 0.96241946806142646000989\\\n112726*I)\n```\n\nI used the following programs:\n\n```\ndef check(res,ref):\n   if ref.real() == 0.0:\n      if res.real() <> 0.0:\n         err_real = +Infinity\n      else:\n         err_real = 0.0\n   else:\n      err_real = RR((res.real()-ref.real()).abs()/ref.real().abs())\n   if ref.imag() == 0.0:\n      if res.imag() <> 0.0:\n         err_imag = +Infinity\n      else:\n         err_imag = 0.0\n   else:\n      err_imag = RR((res.imag()-ref.imag()).abs()/ref.imag().abs())\n   return max(err_real,err_imag)\n\ndef foo(p):\n   K=MPComplexField(p)\n   L=ComplexField(p)\n   K2=MPComplexField(p+20)\n   L2=ComplexField(p+20)\n   max_erra = 0\n   max_errb = 0\n   ina = 0\n   inb = 0\n   for i in range(10^3):\n      b = L.random_element()\n      br = b.real()\n      bi = b.imag()\n      a = K(b)\n      c = L.random_element()\n      cr = b.real()\n      ci = b.imag()\n      d = K(c)\n      aa=cos(a) # change to a*d for multiplication\n      bb=cos(b) # change to b*c for multiplication\n      ref = cos(K2(a)) # change to K2(a)*K2(d) for multiplication\n      erra = check(K2(aa),ref)\n      errb = check(K2(bb),ref)\n      if erra > max_erra:\n         max_erra = erra\n         ina = a, d\n      if errb > max_errb:\n         max_errb = errb\n         inb = b, c\n   print \"MPC: \", max_erra, ina\n   print \"CC:  \", max_errb, inb\n```\n\nThe conclusion is that MPC is in the majority of the cases faster than ComplexField (the only\nexception being the division) and always more accurate, with a ratio of a factor up to \n3941 (i.e., about 12 bits) for the 53-bit division.\n\nFor MPC we observe that the maximal relative error is --- as guaranteed by MPC --- always less than 1/2 ulp (unit in last place) which corresponds to a relative error of 2**(-p), i.e., 1.12e-16 for p=53 and 7.89e-31 for p=100.\n\nI thus give a positive review to Yann's patch.\n\nPaul",
+    "body": "Replying to [comment:52 was]:\n> I'm \"out there\".   Is it necessary and not slower than what is in Sage already?  I'm willing to take your (=Paul's) word for it, assuming you say you've done some benchmarks.   Also, rounding might be (vastly) better in mpc, which would be another point in its favor. \n\n\nWilliam, here are some results of benchmarks I've done on my Core 2 Duo laptop, with Sage 4.5.3,\nwith Yann latest patch and the associate spkg. Efficiency:\n\n```\nsage: K = MPComplexField(53)\nsage: a = K(3.3902384+1.23456789*i)\nsage: b = CC(3.3902384+1.23456789*i)\nsage: timeit('a*a')\n625 loops, best of 3: 1.03 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 1.08 \u00b5s per loop # CC is slower\nsage: timeit('a+a')\n625 loops, best of 3: 566 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 571 ns per loop # CC is slower\n\nsage: K=MPComplexField(1000)\nsage: a = K(3.3902384,9203483)\nsage: b = ComplexField(1000)(3.3902384,9203483)\nsage: timeit('a*a')\n625 loops, best of 3: 3.26 \u00b5s per loop\nsage: timeit('b*b')\n625 loops, best of 3: 2.99 \u00b5s per loop # CC is slightly faster\nsage: timeit('a+a')\n625 loops, best of 3: 680 ns per loop\nsage: timeit('b+b')\n625 loops, best of 3: 694 ns per loop # CC is slower\nsage: timeit('a.sin()')\n625 loops, best of 3: 294 \u00b5s per loop\nsage: timeit('b.sin()')\n625 loops, best of 3: 343 \u00b5s per loop # CC is slower\n\nsage: timeit('a+17')\n625 loops, best of 3: 2.56 \u00b5s per loop\nsage: timeit('b+17')\n625 loops, best of 3: 3.02 \u00b5s per loop # CC is slower\n\nsage: a2=a+17\nsage: b2=b+17\nsage: timeit('a/a2')\n625 loops, best of 3: 30.3 \u00b5s per loop\nsage: timeit('b/b2')\n625 loops, best of 3: 14.6 \u00b5s per loop\n\nsage: timeit('a.real()')\n625 loops, best of 3: 854 ns per loop\nsage: timeit('b.real()')\n625 loops, best of 3: 5.13 \u00b5s per loop\n\nsage: timeit('a.conjugate()')\n625 loops, best of 3: 736 ns per loop\nsage: timeit('b.conjugate()')\n625 loops, best of 3: 750 ns per loop\nsage: timeit('a.argument()')\n625 loops, best of 3: 146 \u00b5s per loop\nsage: timeit('b.argument()')\n625 loops, best of 3: 155 \u00b5s per loop\n\nsage: timeit('a**12345')\n625 loops, best of 3: 126 \u00b5s per loop\nsage: timeit('b**12345')\n625 loops, best of 3: 176 \u00b5s per loop\n\nsage: timeit('a.log()')\n625 loops, best of 3: 315 \u00b5s per loop\nsage: timeit('b.log()')\n625 loops, best of 3: 400 \u00b5s per loop\n\nsage: timeit('a.exp()')\n625 loops, best of 3: 221 \u00b5s per loop\nsage: timeit('b.exp()')\n625 loops, best of 3: 211 \u00b5s per loop\n```\nFor the accuracy, I've computed the maximal relative error on the real or imaginary part after\n1000 random tries for several operations. My program also prints the inputs that give the\ncorresponding maximal error:\n\n```\nmultiplication:\nsage: foo(53) # 53 bits\nMPC:  1.09250136812570e-16 (-0.199676992382071 - 0.194223361415138*I, 0.9413020\\\n06592817 + 0.645200777306369*I)\nCC:   1.32263143752823e-14 (0.834168924383086 - 0.525629438090125*I, -0.4766533\\\n42074290 + 0.752454804563813*I)\nsage: foo(100) # 100 bits\nMPC:  7.83034842148009e-31 (-0.43034701147206399980669837638 - 0.81582963965013\\\n399110093432939*I, -0.83969050263610625199834532314 + 0.17390362688794167984134\\\n423048*I)\nCC:   9.28509698731955e-29 (-0.36479911591428496460512307920 + 0.22548928494028\\\n018164534780632*I, -0.49018610148599010061638163259 - 0.30229330441199619133786\\\n980680*I)\n\ndivision:\nsage: foo(53)\nMPC:  1.08485488717363e-16 (0.906903106647522 + 0.991328300040510*I, 0.26885465\\\n0418765 - 0.188551687646414*I)\nCC:   4.27558190140949e-13 (-0.947451505768202 - 0.424071772860430*I, -0.499313\\\n865619141 - 0.223444662259920*I)\nsage: foo(100)\nMPC:  7.66357970552281e-31 (0.92755016191057837385980632404 - 0.004266231128213\\\n8322794515257916*I, 0.14072961243734751540073515895 - 0.21101836467335963334809\\\n014965*I)\nCC:   1.06937889944401e-27 (-0.41008840630275384495897016614 + 0.43420284734725\\\n368743056683764*I, -0.61829368333881933443455346326 - 0.58354470182146315365872\\\n353144*I)\n\nsqrt:\nsage: foo(53)\nMPC:  1.09880191814582e-16 (-0.621894659027438 - 0.0246731753089378*I, 0.823805\\\n504837539 - 0.981310087843700*I)\nCC:   2.08688816342048e-16 (0.968316682679636 + 0.637686286592402*I, -0.2999297\\\n58140749 + 0.680399103485303*I)\nsage: foo(100)\nMPC:  7.83762497864303e-31 (0.87484855451536280543412317489 + 0.744936094843967\\\n94278935970162*I, -0.93716227305934196720704783450 - 0.765294741452728993051615\\\n69068*I)\nCC:   1.59191232901277e-30 (0.22724304905610094307701469163 + 0.290884560229311\\\n05826353325335*I, -0.44728415428244253958062250934 + 0.959404399673905010209671\\\n68949*I)\n\nexp:\nsage: foo(53)\nMPC:  1.08513702552684e-16 (0.801188951612012 - 0.440834327392402*I, -0.6487549\\\n15945509 - 0.558408459317570*I)\nCC:   2.56306731927053e-16 (-0.534146492930164 - 0.126305922104917*I, -0.525552\\\n199671560 + 0.0746660767007601*I)\nsage: foo(100)\nMPC:  7.85000220770852e-31 (-0.25871533881495460870167038331 + 0.70802010475507\\\n807939080332669*I, 0.99833000148645085071979336755 + 0.103046934118108408058895\\\n43882*I)\nCC:   2.02731881365962e-30 (0.033507794108965175610485564405 + 0.53119476356929\\\n639125934355035*I, 0.46545588987697950055582059300 + 0.896373882394705924442797\\\n08331*I)\n\nlog:\nsage: foo(53)\nMPC:  1.09778133774750e-16 (-0.391618732071762 + 0.824073966701766*I, 0.3486864\\\n59442427 - 0.191201122946134*I)\nCC:   6.10819034602284e-14 (0.306684274970498 + 0.953229884394732*I, 0.69862405\\\n1151183 + 0.276699733597418*I)\nsage: foo(100)\nMPC:  7.78374256155462e-31 (0.50154056740914466911692379172 + 0.796641256036122\\\n24316946320184*I, -0.76918900642484651661867461393 - 0.286514343536794358035934\\\n91438*I)\nCC:   6.82825438431515e-28 (-0.13721125119514449776575251187 + 0.99010163436560\\\n678238821778034*I, 0.92169332492985590698251634723 + 0.433132422276759879534575\\\n89642*I)\n\nsin:\nsage: foo(53)\nMPC:  1.08720457020742e-16 (-0.369315245123802 + 0.854572675318644*I, 0.8169569\\\n42853907 - 0.383919250130617*I)\nCC:   2.59601650874087e-16 (-0.546197856444743 - 0.534628610514192*I, 0.3036961\\\n63087668 - 0.231790426712382*I)\nsage: foo(100)\nMPC:  7.55871247471999e-31 (0.20947476591320905500539204843 - 0.626588978693616\\\n08926271268655*I, -0.55364821811403565597840750754 + 0.743341403117384889712851\\\n11372*I)\nCC:   1.72458459418951e-30 (0.42758001678856166974028750611 - 0.923412131000390\\\n51795327859750*I, -0.99149234221470907346167026703 - 0.690427397584128136419461\\\n37603*I)\n\ncos:\nsage: foo(53)\nMPC:  1.08584899379431e-16 (0.0646782540849349 - 0.111085748624151*I, 0.4701880\\\n86702821 + 0.252843262283133*I)\nCC:   2.85959441825441e-16 (0.0850486257569383 - 0.330860565935531*I, 0.0564130\\\n612472886 + 0.0847664237260943*I)\nsage: foo(100)\nMPC:  7.78394156732906e-31 (0.93946166432029710121550615978 - 0.592139906105641\\\n30050851821134*I, 0.53601265027477876871715914306 - 0.1322166340317310632649551\\\n5769*I)\nCC:   1.94260689254542e-30 (-0.55385187621901359297440670364 + 0.50415610417338\\\n788296133563973*I, -0.13371850315082336799522666801 - 0.96241946806142646000989\\\n112726*I)\n```\nI used the following programs:\n\n```\ndef check(res,ref):\n   if ref.real() == 0.0:\n      if res.real() <> 0.0:\n         err_real = +Infinity\n      else:\n         err_real = 0.0\n   else:\n      err_real = RR((res.real()-ref.real()).abs()/ref.real().abs())\n   if ref.imag() == 0.0:\n      if res.imag() <> 0.0:\n         err_imag = +Infinity\n      else:\n         err_imag = 0.0\n   else:\n      err_imag = RR((res.imag()-ref.imag()).abs()/ref.imag().abs())\n   return max(err_real,err_imag)\n\ndef foo(p):\n   K=MPComplexField(p)\n   L=ComplexField(p)\n   K2=MPComplexField(p+20)\n   L2=ComplexField(p+20)\n   max_erra = 0\n   max_errb = 0\n   ina = 0\n   inb = 0\n   for i in range(10^3):\n      b = L.random_element()\n      br = b.real()\n      bi = b.imag()\n      a = K(b)\n      c = L.random_element()\n      cr = b.real()\n      ci = b.imag()\n      d = K(c)\n      aa=cos(a) # change to a*d for multiplication\n      bb=cos(b) # change to b*c for multiplication\n      ref = cos(K2(a)) # change to K2(a)*K2(d) for multiplication\n      erra = check(K2(aa),ref)\n      errb = check(K2(bb),ref)\n      if erra > max_erra:\n         max_erra = erra\n         ina = a, d\n      if errb > max_errb:\n         max_errb = errb\n         inb = b, c\n   print \"MPC: \", max_erra, ina\n   print \"CC:  \", max_errb, inb\n```\nThe conclusion is that MPC is in the majority of the cases faster than ComplexField (the only\nexception being the division) and always more accurate, with a ratio of a factor up to \n3941 (i.e., about 12 bits) for the 53-bit division.\n\nFor MPC we observe that the maximal relative error is --- as guaranteed by MPC --- always less than 1/2 ulp (unit in last place) which corresponds to a relative error of 2**(-p), i.e., 1.12e-16 for p=53 and 7.89e-31 for p=100.\n\nI thus give a positive review to Yann's patch.\n\nPaul",
     "created_at": "2010-09-26T12:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2315,6 +2301,7 @@ archive/issue_comments_032717.json:
 
 Replying to [comment:52 was]:
 > I'm "out there".   Is it necessary and not slower than what is in Sage already?  I'm willing to take your (=Paul's) word for it, assuming you say you've done some benchmarks.   Also, rounding might be (vastly) better in mpc, which would be another point in its favor. 
+
 
 William, here are some results of benchmarks I've done on my Core 2 Duo laptop, with Sage 4.5.3,
 with Yann latest patch and the associate spkg. Efficiency:
@@ -2389,7 +2376,6 @@ sage: timeit('a.exp()')
 sage: timeit('b.exp()')
 625 loops, best of 3: 211 µs per loop
 ```
-
 For the accuracy, I've computed the maximal relative error on the real or imaginary part after
 1000 random tries for several operations. My program also prints the inputs that give the
 corresponding maximal error:
@@ -2493,7 +2479,6 @@ CC:   1.94260689254542e-30 (-0.55385187621901359297440670364 + 0.50415610417338\
 788296133563973*I, -0.13371850315082336799522666801 - 0.96241946806142646000989\
 112726*I)
 ```
-
 I used the following programs:
 
 ```
@@ -2546,7 +2531,6 @@ def foo(p):
    print "MPC: ", max_erra, ina
    print "CC:  ", max_errb, inb
 ```
-
 The conclusion is that MPC is in the majority of the cases faster than ComplexField (the only
 exception being the division) and always more accurate, with a ratio of a factor up to 
 3941 (i.e., about 12 bits) for the 53-bit division.
@@ -2582,7 +2566,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_032719.json:
 ```json
 {
-    "body": "Replying to [comment:50 ylchapuy]:\n>  * I made a self contained patch rebased on sage 4.5.2. http://trac.sagemath.org/sage_trac/attachment/ticket/4446/trac4446-optional_mpc-sage4.5.2based.patch\n\n>  * An spkg is still available at http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\n>  * this is intended to make `mpc` an **optional** spkg. The `complex_mpc` module won't be compiled if the spkg is not installed.\n\n\nAfter applying the patch but not installing the optional package, I get\n\n```\n        sage -t -long  devel/sage/sage/rings/complex_mpc.pyx # 454 doctests failed\n```\n\nShould all of the tests in `complex_mpc.pyx` be tagged with `#optional - mpc` (see [this section of the developer guide](http://www.sagemath.org/doc/developer/conventions.html#further-conventions-for-automated-testing-of-examples))?  (I don't know if there's a easier way.)  Or am I mistaken?",
+    "body": "Replying to [comment:50 ylchapuy]:\n>  * I made a self contained patch rebased on sage 4.5.2. http://trac.sagemath.org/sage_trac/attachment/ticket/4446/trac4446-optional_mpc-sage4.5.2based.patch\n\n\n>  * An spkg is still available at http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n\n\n>  * this is intended to make `mpc` an **optional** spkg. The `complex_mpc` module won't be compiled if the spkg is not installed.\n\n\n\nAfter applying the patch but not installing the optional package, I get\n\n```\n        sage -t -long  devel/sage/sage/rings/complex_mpc.pyx # 454 doctests failed\n```\nShould all of the tests in `complex_mpc.pyx` be tagged with `#optional - mpc` (see [this section of the developer guide](http://www.sagemath.org/doc/developer/conventions.html#further-conventions-for-automated-testing-of-examples))?  (I don't know if there's a easier way.)  Or am I mistaken?",
     "created_at": "2010-09-29T10:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2594,9 +2578,12 @@ archive/issue_comments_032719.json:
 Replying to [comment:50 ylchapuy]:
 >  * I made a self contained patch rebased on sage 4.5.2. http://trac.sagemath.org/sage_trac/attachment/ticket/4446/trac4446-optional_mpc-sage4.5.2based.patch
 
+
 >  * An spkg is still available at http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg
 
+
 >  * this is intended to make `mpc` an **optional** spkg. The `complex_mpc` module won't be compiled if the spkg is not installed.
+
 
 
 After applying the patch but not installing the optional package, I get
@@ -2604,7 +2591,6 @@ After applying the patch but not installing the optional package, I get
 ```
         sage -t -long  devel/sage/sage/rings/complex_mpc.pyx # 454 doctests failed
 ```
-
 Should all of the tests in `complex_mpc.pyx` be tagged with `#optional - mpc` (see [this section of the developer guide](http://www.sagemath.org/doc/developer/conventions.html#further-conventions-for-automated-testing-of-examples))?  (I don't know if there's a easier way.)  Or am I mistaken?
 
 
@@ -2719,7 +2705,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_032725.json:
 ```json
 {
-    "body": "with the last patch (to be applied after the previous one), I get before installing the optional\npackage:\n\n```\ntarte% ./sage -t -long  devel/sage/sage/rings/complex_mpc.pyx\nsage -t -long \"devel/sage/sage/rings/complex_mpc.pyx\"       \n         [2.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.1 seconds\n```\n\nand after installing it:\n\n```\ntarte% ./sage -t -long devel/sage/sage/rings/complex_mpc.pyx\nsage -t -long \"devel/sage/sage/rings/complex_mpc.pyx\"       \n         [1.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1.7 seconds\n```\n\nPaul",
+    "body": "with the last patch (to be applied after the previous one), I get before installing the optional\npackage:\n\n```\ntarte% ./sage -t -long  devel/sage/sage/rings/complex_mpc.pyx\nsage -t -long \"devel/sage/sage/rings/complex_mpc.pyx\"       \n         [2.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.1 seconds\n```\nand after installing it:\n\n```\ntarte% ./sage -t -long devel/sage/sage/rings/complex_mpc.pyx\nsage -t -long \"devel/sage/sage/rings/complex_mpc.pyx\"       \n         [1.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1.7 seconds\n```\nPaul",
     "created_at": "2010-09-29T12:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2740,7 +2726,6 @@ sage -t -long "devel/sage/sage/rings/complex_mpc.pyx"
 All tests passed!
 Total time for all tests: 2.1 seconds
 ```
-
 and after installing it:
 
 ```
@@ -2752,7 +2737,6 @@ sage -t -long "devel/sage/sage/rings/complex_mpc.pyx"
 All tests passed!
 Total time for all tests: 1.7 seconds
 ```
-
 Paul
 
 
@@ -2780,7 +2764,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_032727.json:
 ```json
 {
-    "body": "Thanks!  With the package and patch installed, I get no errors with\n\n```\n./sage -t -long -only-optional=mpc \"devel/sage/sage/rings/complex_mpc.pyx\"\n./sage -t -long -optional \"devel/sage/sage/rings/complex_mpc.pyx\"\n```\n",
+    "body": "Thanks!  With the package and patch installed, I get no errors with\n\n```\n./sage -t -long -only-optional=mpc \"devel/sage/sage/rings/complex_mpc.pyx\"\n./sage -t -long -optional \"devel/sage/sage/rings/complex_mpc.pyx\"\n```",
     "created_at": "2010-09-29T23:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2795,7 +2779,6 @@ Thanks!  With the package and patch installed, I get no errors with
 ./sage -t -long -only-optional=mpc "devel/sage/sage/rings/complex_mpc.pyx"
 ./sage -t -long -optional "devel/sage/sage/rings/complex_mpc.pyx"
 ```
-
 
 
 
@@ -2826,7 +2809,7 @@ to the optional spkg repository?
 archive/issue_comments_032729.json:
 ```json
 {
-    "body": "Replying to [comment:60 mpatel]:\n> Harald, Mike, or Minh, could one of you please add\n> \n>  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n> \n> to the optional spkg repository?\n\nDone. See the optional spkg repository at\n\nhttp://www.sagemath.org/packages/optional/",
+    "body": "Replying to [comment:60 mpatel]:\n> Harald, Mike, or Minh, could one of you please add\n> \n>  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg\n> \n> to the optional spkg repository?\n\n\nDone. See the optional spkg repository at\n\nhttp://www.sagemath.org/packages/optional/",
     "created_at": "2010-09-30T00:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
@@ -2841,6 +2824,7 @@ Replying to [comment:60 mpatel]:
 >  http://yann.laiglechapuy.net/spkg/mpc-0.8.3-dev-svn793.spkg
 > 
 > to the optional spkg repository?
+
 
 Done. See the optional spkg repository at
 

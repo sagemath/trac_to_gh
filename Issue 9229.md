@@ -3,7 +3,7 @@
 archive/issues_009229.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\n\n```\n\ndevel/sage-main/sage/databases/cremona.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/databases/cremona.py: 42% (17 of 40)\n\nMissing documentation:\n* _init(self, ftpdata):\n* __repr__(self):\n* CremonaDatabase():\n\n\nMissing doctests:\n* rebuild(data_tgz, largest_conductor, decompress=True):\n* __init__(self, read_only=True):\n* __iter__(self):\n* __getitem__(self, N):\n* __repr__(self):\n* allbsd(self, N):\n* allcurves(self, N):\n* allgens(self, N):\n* degphi(self, N):\n* elliptic_curve_from_ainvs(self, N, ainvs):\n* elliptic_curve(self, label):\n* iter(self, conductors):\n* isogeny_classes(self, conductor):\n* isogeny_class(self, label):\n* list(self, conductors):\n* _init_allcurves(self, ftpdata, largest_conductor=0):\n* _init_degphi(self, ftpdata, largest_conductor=0):\n* _init_allbsd(self, ftpdata, largest_conductor=0):\n* _init_allgens(self, ftpdata, largest_conductor=0):\n* __init__(self, read_only=True):\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9229\n\n",
+    "body": "Assignee: @JohnCremona\n\n```\n\ndevel/sage-main/sage/databases/cremona.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/databases/cremona.py: 42% (17 of 40)\n\nMissing documentation:\n* _init(self, ftpdata):\n* __repr__(self):\n* CremonaDatabase():\n\n\nMissing doctests:\n* rebuild(data_tgz, largest_conductor, decompress=True):\n* __init__(self, read_only=True):\n* __iter__(self):\n* __getitem__(self, N):\n* __repr__(self):\n* allbsd(self, N):\n* allcurves(self, N):\n* allgens(self, N):\n* degphi(self, N):\n* elliptic_curve_from_ainvs(self, N, ainvs):\n* elliptic_curve(self, label):\n* iter(self, conductors):\n* isogeny_classes(self, conductor):\n* isogeny_class(self, label):\n* list(self, conductors):\n* _init_allcurves(self, ftpdata, largest_conductor=0):\n* _init_degphi(self, ftpdata, largest_conductor=0):\n* _init_allbsd(self, ftpdata, largest_conductor=0):\n* _init_allgens(self, ftpdata, largest_conductor=0):\n* __init__(self, read_only=True):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9229\n\n",
     "created_at": "2010-06-12T13:43:32Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_009229.json:
 }
 ```
 Assignee: @JohnCremona
-
 
 ```
 
@@ -53,7 +52,6 @@ Missing doctests:
 * _init_allgens(self, ftpdata, largest_conductor=0):
 * __init__(self, read_only=True):
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9229

@@ -3,7 +3,7 @@
 archive/issues_003442.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThe example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.\n\n\n```\n\n        Return True if the group self is a normal subgroup of other.\n\n        EXAMPLES:\n            sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n            sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n            sage: G.is_normal(H)\n            True\n```\n\n\n(Aside: isn't it more natural to let H be a subgroup of G instead of the other way around?)\n\nG is not a normal subgroup of H since conjugation by (1,2,3,4,5) does not map G to G.\n\nOther example:\n\n```\nsage: G = SymmetricGroup(3); G.1\n(1,2)\nsage: H = G.subgroup( [ G.1 ] )\nsage: H.is_normal(G)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3442\n\n",
+    "body": "Assignee: joyner\n\nThe example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.\n\n```\n\n        Return True if the group self is a normal subgroup of other.\n\n        EXAMPLES:\n            sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n            sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n            sage: G.is_normal(H)\n            True\n```\n\n(Aside: isn't it more natural to let H be a subgroup of G instead of the other way around?)\n\nG is not a normal subgroup of H since conjugation by (1,2,3,4,5) does not map G to G.\n\nOther example:\n\n```\nsage: G = SymmetricGroup(3); G.1\n(1,2)\nsage: H = G.subgroup( [ G.1 ] )\nsage: H.is_normal(G)\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3442\n\n",
     "created_at": "2008-06-16T22:37:41Z",
     "labels": [
         "component: group theory",
@@ -20,7 +20,6 @@ Assignee: joyner
 
 The example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.py` in sage-3.0.3.alpha2 is wrong.
 
-
 ```
 
         Return True if the group self is a normal subgroup of other.
@@ -31,7 +30,6 @@ The example in the docstring for `is_normal` in `sage/groups/perm_gps/permgroup.
             sage: G.is_normal(H)
             True
 ```
-
 
 (Aside: isn't it more natural to let H be a subgroup of G instead of the other way around?)
 
@@ -47,7 +45,6 @@ sage: H.is_normal(G)
 True
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3442
 
 
@@ -59,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3442
 archive/issue_comments_024233.json:
 ```json
 {
-    "body": "Yes, the documentation is wrong (the function is okay). My fault. Sorry.\n\n\n```\ngap> G := Group([(1,2,3)(4,5)]);\nGroup([ (1,2,3)(4,5) ])\ngap> H := Group([(1,2,3)(4,5), (1,2,3,4,5)]);\nGroup([ (1,2,3)(4,5), (1,2,3,4,5) ])\ngap> IsNormal(H,G);\nfalse\n```\n\nThe docstring should read\n\n\n```\nReturn True if the group other is a normal subgroup of self.\n\nEXAMPLES: \n    sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n    sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n    sage: H.is_normal(G)\n    False\n```\n",
+    "body": "Yes, the documentation is wrong (the function is okay). My fault. Sorry.\n\n```\ngap> G := Group([(1,2,3)(4,5)]);\nGroup([ (1,2,3)(4,5) ])\ngap> H := Group([(1,2,3)(4,5), (1,2,3,4,5)]);\nGroup([ (1,2,3)(4,5), (1,2,3,4,5) ])\ngap> IsNormal(H,G);\nfalse\n```\nThe docstring should read\n\n```\nReturn True if the group other is a normal subgroup of self.\n\nEXAMPLES: \n    sage: G = PermutationGroup(['(1,2,3)(4,5)'])\n    sage: H = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\n    sage: H.is_normal(G)\n    False\n```",
     "created_at": "2008-06-16T23:31:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3442",
     "type": "issue_comment",
@@ -70,7 +67,6 @@ archive/issue_comments_024233.json:
 
 Yes, the documentation is wrong (the function is okay). My fault. Sorry.
 
-
 ```
 gap> G := Group([(1,2,3)(4,5)]);
 Group([ (1,2,3)(4,5) ])
@@ -79,9 +75,7 @@ Group([ (1,2,3)(4,5), (1,2,3,4,5) ])
 gap> IsNormal(H,G);
 false
 ```
-
 The docstring should read
-
 
 ```
 Return True if the group other is a normal subgroup of self.
@@ -92,7 +86,6 @@ EXAMPLES:
     sage: H.is_normal(G)
     False
 ```
-
 
 
 
@@ -179,7 +172,7 @@ Wouldn't not changing the function itself mean that now is_normal claims that S_
 archive/issue_comments_024238.json:
 ```json
 {
-    "body": "According to the GAP documentation for the function IsNormal (which is what is_normal wraps):\n\n\n```\nIsNormal( G, U ) O\n\nreturns true if the group G normalizes the group U and false otherwise.\n\nA group G normalizes a group U if and only if for every g \u2208 G and u \u2208 U the element ug is a member of U. Note that U need not be a subgroup of G. \n```\n\n\nSo the docstring, as corrected in the patch, is correct but does not tell the full story. Do you think it should be further elaborated?",
+    "body": "According to the GAP documentation for the function IsNormal (which is what is_normal wraps):\n\n```\nIsNormal( G, U ) O\n\nreturns true if the group G normalizes the group U and false otherwise.\n\nA group G normalizes a group U if and only if for every g \u2208 G and u \u2208 U the element ug is a member of U. Note that U need not be a subgroup of G. \n```\n\nSo the docstring, as corrected in the patch, is correct but does not tell the full story. Do you think it should be further elaborated?",
     "created_at": "2008-06-17T23:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3442",
     "type": "issue_comment",
@@ -190,7 +183,6 @@ archive/issue_comments_024238.json:
 
 According to the GAP documentation for the function IsNormal (which is what is_normal wraps):
 
-
 ```
 IsNormal( G, U ) O
 
@@ -198,7 +190,6 @@ returns true if the group G normalizes the group U and false otherwise.
 
 A group G normalizes a group U if and only if for every g ∈ G and u ∈ U the element ug is a member of U. Note that U need not be a subgroup of G. 
 ```
-
 
 So the docstring, as corrected in the patch, is correct but does not tell the full story. Do you think it should be further elaborated?
 

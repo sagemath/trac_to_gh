@@ -3,7 +3,7 @@
 archive/issues_002276.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x<sup>2*y</sup>3\nsage: M.divides(N)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
+    "body": "Assignee: @williamstein\n\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x<sup>2*y</sup>3\nsage: M.divides(N)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
     "created_at": "2008-02-23T08:41:02Z",
     "labels": [
         "component: algebraic geometry",
@@ -22,7 +22,8 @@ sage: R.<x,y> = PolynomialRing(QQ)
 sage: M = x*y
 sage: N = x<sup>2*y</sup>3
 sage: M.divides(N)
----------------------------------------------------------------------------
+
+---
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()

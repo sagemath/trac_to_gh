@@ -86,7 +86,7 @@ Actually, sqlalchemy now has a release [0.7](http://www.sqlalchemy.org/download.
 archive/issue_comments_079823.json:
 ```json
 {
-    "body": "Replying to [comment:5 timdumol]:\n> Actually, sqlalchemy now has a release [0.7](http://www.sqlalchemy.org/download.html), and since nothing in Sage currently uses it (at least, in the standard packages), it may be best to upgrade to 0.7. What do you think?\n\nNo objections, I seem to be in a reviewing mood. If you post it, I'll test it on a couple of systems.",
+    "body": "Replying to [comment:5 timdumol]:\n> Actually, sqlalchemy now has a release [0.7](http://www.sqlalchemy.org/download.html), and since nothing in Sage currently uses it (at least, in the standard packages), it may be best to upgrade to 0.7. What do you think?\n\n\nNo objections, I seem to be in a reviewing mood. If you post it, I'll test it on a couple of systems.",
     "created_at": "2011-06-01T04:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8740",
     "type": "issue_comment",
@@ -97,6 +97,7 @@ archive/issue_comments_079823.json:
 
 Replying to [comment:5 timdumol]:
 > Actually, sqlalchemy now has a release [0.7](http://www.sqlalchemy.org/download.html), and since nothing in Sage currently uses it (at least, in the standard packages), it may be best to upgrade to 0.7. What do you think?
+
 
 No objections, I seem to be in a reviewing mood. If you post it, I'll test it on a couple of systems.
 
@@ -444,7 +445,7 @@ archive/issue_events_021238.json:
 archive/issue_comments_079838.json:
 ```json
 {
-    "body": "Ok, last version of sqlalchemy is now 0.9.4. Does not make much sense to run behind versions of pire Python modules. The following works perfectly on my computer\n\n```\nsage -sh\neasy_install pip\npip install sqlalchemy==0.9.4\n```\n\nWe should rather include `pip` in Sage as proposed in [this thread in sage-devel](https://groups.google.com/forum/#!topic/sage-devel/e48IruDu7Kg) and make 'sage -i sqlalchemy` points to the last version.",
+    "body": "Ok, last version of sqlalchemy is now 0.9.4. Does not make much sense to run behind versions of pire Python modules. The following works perfectly on my computer\n\n```\nsage -sh\neasy_install pip\npip install sqlalchemy==0.9.4\n```\nWe should rather include `pip` in Sage as proposed in [this thread in sage-devel](https://groups.google.com/forum/#!topic/sage-devel/e48IruDu7Kg) and make 'sage -i sqlalchemy` points to the last version.",
     "created_at": "2014-06-13T22:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8740",
     "type": "issue_comment",
@@ -460,7 +461,6 @@ sage -sh
 easy_install pip
 pip install sqlalchemy==0.9.4
 ```
-
 We should rather include `pip` in Sage as proposed in [this thread in sage-devel](https://groups.google.com/forum/#!topic/sage-devel/e48IruDu7Kg) and make 'sage -i sqlalchemy` points to the last version.
 
 

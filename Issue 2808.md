@@ -3,7 +3,7 @@
 archive/issues_002808.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIn combinat/root_system.py, the fundamental weights for the various root systems are entered by hand. For G2, the fundamental weights were the negatives of what they should be.\n\n```\n\ndiff -r 80b506b8e07c sage/combinat/root_system.py\n--- a/sage/combinat/root_system.py\tTue Apr 01 19:18:55 2008 -0700\n+++ b/sage/combinat/root_system.py\tSat Apr 05 08:40:46 2008 -0700\n@@ -788,11 +788,11 @@ class AmbientLattice_g(AmbientLattice_ge\n         \"\"\"\n         EXAMPLES:\n             sage: CartanType(['G',2]).root_system().ambient_lattice().fundamental_weights()\n-            [(-1, 0, 1), (-2, 1, 1)]\n+            [(1, 0, -1), (2, -1, -1)]\n         \"\"\"\n         return [ c0*self._term(0)+c1*self._term(1)+c2*self._term(2) \\\n                  for [c0,c1,c2] in\n-                 [[-1,0,1],[-2,1,1]]]\n+                 [[1,0,-1],[2,-1,-1]]]\n \n \n def WeylDim(type, coeffs):\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2808\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIn combinat/root_system.py, the fundamental weights for the various root systems are entered by hand. For G2, the fundamental weights were the negatives of what they should be.\n\n```\n\ndiff -r 80b506b8e07c sage/combinat/root_system.py\n--- a/sage/combinat/root_system.py\tTue Apr 01 19:18:55 2008 -0700\n+++ b/sage/combinat/root_system.py\tSat Apr 05 08:40:46 2008 -0700\n@@ -788,11 +788,11 @@ class AmbientLattice_g(AmbientLattice_ge\n         \"\"\"\n         EXAMPLES:\n             sage: CartanType(['G',2]).root_system().ambient_lattice().fundamental_weights()\n-            [(-1, 0, 1), (-2, 1, 1)]\n+            [(1, 0, -1), (2, -1, -1)]\n         \"\"\"\n         return [ c0*self._term(0)+c1*self._term(1)+c2*self._term(2) \\\n                  for [c0,c1,c2] in\n-                 [[-1,0,1],[-2,1,1]]]\n+                 [[1,0,-1],[2,-1,-1]]]\n \n \n def WeylDim(type, coeffs):\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2808\n\n",
     "created_at": "2008-04-05T16:18:50Z",
     "labels": [
         "component: combinatorics",
@@ -43,7 +43,6 @@ diff -r 80b506b8e07c sage/combinat/root_system.py
  def WeylDim(type, coeffs):
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2808
 
@@ -112,7 +111,7 @@ Changing assignee from @mwhansen to @dwbump.
 archive/issue_comments_019237.json:
 ```json
 {
-    "body": "Quoting from the email to sage-devel:\n\n\n```\nI should have added some justification for this conclusion\nin the trac report. Instead I'm giving it here. You can\nlook the weights up in Bourbaki, Lie Groups and Lie\nAlgebras Ch 4-6 (Appendix) and you can also check\nthe inner products of the weights with the simple\nroots (which are correct). The inner product of\nthe i-th fundamental weight with the j-th simple\nroot should be positive if i=j and zero otherwise.\nI checked that all the other root systems are right\nby examining the output following program on the ambient\nlattices. This change had no effect on the output of\nthe Weyl dimension formula.\n\ndef test_lattice(L):\n   rank = L.ct[1]\n   roots = L.simple_roots()\n   weights = L.fundamental_weights()\n      return [[i,j, roots[i].inner_product(weights[j])] for i in range(rank) for j in range(rank)]\n```\n\n\nI am happy with this (small!) change.",
+    "body": "Quoting from the email to sage-devel:\n\n```\nI should have added some justification for this conclusion\nin the trac report. Instead I'm giving it here. You can\nlook the weights up in Bourbaki, Lie Groups and Lie\nAlgebras Ch 4-6 (Appendix) and you can also check\nthe inner products of the weights with the simple\nroots (which are correct). The inner product of\nthe i-th fundamental weight with the j-th simple\nroot should be positive if i=j and zero otherwise.\nI checked that all the other root systems are right\nby examining the output following program on the ambient\nlattices. This change had no effect on the output of\nthe Weyl dimension formula.\n\ndef test_lattice(L):\n   rank = L.ct[1]\n   roots = L.simple_roots()\n   weights = L.fundamental_weights()\n      return [[i,j, roots[i].inner_product(weights[j])] for i in range(rank) for j in range(rank)]\n```\n\nI am happy with this (small!) change.",
     "created_at": "2008-04-05T17:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2808",
     "type": "issue_comment",
@@ -122,7 +121,6 @@ archive/issue_comments_019237.json:
 ```
 
 Quoting from the email to sage-devel:
-
 
 ```
 I should have added some justification for this conclusion
@@ -144,7 +142,6 @@ def test_lattice(L):
    weights = L.fundamental_weights()
       return [[i,j, roots[i].inner_product(weights[j])] for i in range(rank) for j in range(rank)]
 ```
-
 
 I am happy with this (small!) change.
 

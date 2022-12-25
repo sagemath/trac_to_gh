@@ -3,7 +3,7 @@
 archive/issues_008474.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby @mwhansen\n\nIn various places in the Sage library, we test for the existence of programs using code like this:\n\n```\nimport os\nif os.system('which program') == 0:\n    # program exists\nelse:\n    # it doesn't\n```\n\nOn Solaris, executing \"which program\" seems to return 0 regardless of whether the program actually exists, and so any code like this is broken.  For example, try this on t2.math:\n\n```\nsage: from sage.misc.latex import have_latex\nsage: have_latex()\nTrue\nsage: import os\nsage: os.system('which latex')                                                                    \nno latex in /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n0\n```\n\n\nSo we should have a function which replaces this, and we should use it in the Sage library.  On IRC, mhansen says\n\n```\n<mhansen> I think you can use \"type\" on Solaris\n```\n\nThe \"type\" command actually works for me on several different platforms, and so it's what the patch uses.\n\nThis needs testing on lots more different platforms to make sure it's portable.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8474\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @mwhansen\n\nIn various places in the Sage library, we test for the existence of programs using code like this:\n\n```\nimport os\nif os.system('which program') == 0:\n    # program exists\nelse:\n    # it doesn't\n```\nOn Solaris, executing \"which program\" seems to return 0 regardless of whether the program actually exists, and so any code like this is broken.  For example, try this on t2.math:\n\n```\nsage: from sage.misc.latex import have_latex\nsage: have_latex()\nTrue\nsage: import os\nsage: os.system('which latex')                                                                    \nno latex in /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n0\n```\n\nSo we should have a function which replaces this, and we should use it in the Sage library.  On IRC, mhansen says\n\n```\n<mhansen> I think you can use \"type\" on Solaris\n```\nThe \"type\" command actually works for me on several different platforms, and so it's what the patch uses.\n\nThis needs testing on lots more different platforms to make sure it's portable.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8474\n\n",
     "created_at": "2010-03-07T05:15:31Z",
     "labels": [
         "component: porting",
@@ -30,7 +30,6 @@ if os.system('which program') == 0:
 else:
     # it doesn't
 ```
-
 On Solaris, executing "which program" seems to return 0 regardless of whether the program actually exists, and so any code like this is broken.  For example, try this on t2.math:
 
 ```
@@ -43,13 +42,11 @@ no latex in /usr/local/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib /u
 0
 ```
 
-
 So we should have a function which replaces this, and we should use it in the Sage library.  On IRC, mhansen says
 
 ```
 <mhansen> I think you can use "type" on Solaris
 ```
-
 The "type" command actually works for me on several different platforms, and so it's what the patch uses.
 
 This needs testing on lots more different platforms to make sure it's portable.
@@ -256,7 +253,7 @@ Dave
 archive/issue_comments_076242.json:
 ```json
 {
-    "body": "Just to show you what I mean, here is the output when testing for an existing file, and a non-existing file. Note there is a different response from Solaris 10 (on SPARC) to all the others if the command is not found, but the exit code remains non-zero on Solaris 10 (SPARC).\n\nIf the command is found on Solaris 10, then the output is exactly the same as on every other platform, and exactly the same as 'which'. But I think 'command -v' is preferable, as it is more portable. \n\nOn Solaris 10 (SPARC processor):\n\n```\ndrkirkby@redstart:~$ command -v ls\n/usr/bin/ls\ndrkirkby@redstart:~$ command -v fdsfdgddgt\n-bash: command: fdsfdgddgt: not found\n```\n\n\nOn HP-UX (PA-RISC processor):\n\n```\n-bash-4.0$ command -v ls                                                \n/usr/bin/ls\n-bash-4.0$ command -v lssdsssdfdf\n-bash-4.0$ \n```\n\n\nOn OpenSolaris (Intel Xeon processor):\n\n\n```\ndrkirkby@hawk:~$ command -v ls\n/usr/bin/ls\ndrkirkby@hawk:~$ command -v klsddshfsd\ndrkirkby@hawk:~$ \n```\n\n\nOn OS X (Intel processor of some sort):\n\n```\n[kirkby@bsd ~]$ command -v ls\n/bin/ls\n[kirkby@bsd ~]$ command -v reererer\n[kirkby@bsd ~]$ \n```\n\n\nOn Linux (Intel processor of some sort)\n\n```\nkirkby@sage:~$ command -v ls\n/bin/ls\nkirkby@sage:~$ command -v fdlkskld\nkirkby@sage:~$ \n```\n\n\nOn FreeBSD (VirtualBox virtual machine, running on OpenSolaris host):\n\n```\neagle# command -v ls\n/bin/ls\neagle# command -v sdfdsf\neagle#\n```\n",
+    "body": "Just to show you what I mean, here is the output when testing for an existing file, and a non-existing file. Note there is a different response from Solaris 10 (on SPARC) to all the others if the command is not found, but the exit code remains non-zero on Solaris 10 (SPARC).\n\nIf the command is found on Solaris 10, then the output is exactly the same as on every other platform, and exactly the same as 'which'. But I think 'command -v' is preferable, as it is more portable. \n\nOn Solaris 10 (SPARC processor):\n\n```\ndrkirkby@redstart:~$ command -v ls\n/usr/bin/ls\ndrkirkby@redstart:~$ command -v fdsfdgddgt\n-bash: command: fdsfdgddgt: not found\n```\n\nOn HP-UX (PA-RISC processor):\n\n```\n-bash-4.0$ command -v ls                                                \n/usr/bin/ls\n-bash-4.0$ command -v lssdsssdfdf\n-bash-4.0$ \n```\n\nOn OpenSolaris (Intel Xeon processor):\n\n```\ndrkirkby@hawk:~$ command -v ls\n/usr/bin/ls\ndrkirkby@hawk:~$ command -v klsddshfsd\ndrkirkby@hawk:~$ \n```\n\nOn OS X (Intel processor of some sort):\n\n```\n[kirkby@bsd ~]$ command -v ls\n/bin/ls\n[kirkby@bsd ~]$ command -v reererer\n[kirkby@bsd ~]$ \n```\n\nOn Linux (Intel processor of some sort)\n\n```\nkirkby@sage:~$ command -v ls\n/bin/ls\nkirkby@sage:~$ command -v fdlkskld\nkirkby@sage:~$ \n```\n\nOn FreeBSD (VirtualBox virtual machine, running on OpenSolaris host):\n\n```\neagle# command -v ls\n/bin/ls\neagle# command -v sdfdsf\neagle#\n```",
     "created_at": "2010-03-07T15:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -278,7 +275,6 @@ drkirkby@redstart:~$ command -v fdsfdgddgt
 -bash: command: fdsfdgddgt: not found
 ```
 
-
 On HP-UX (PA-RISC processor):
 
 ```
@@ -288,9 +284,7 @@ On HP-UX (PA-RISC processor):
 -bash-4.0$ 
 ```
 
-
 On OpenSolaris (Intel Xeon processor):
-
 
 ```
 drkirkby@hawk:~$ command -v ls
@@ -298,7 +292,6 @@ drkirkby@hawk:~$ command -v ls
 drkirkby@hawk:~$ command -v klsddshfsd
 drkirkby@hawk:~$ 
 ```
-
 
 On OS X (Intel processor of some sort):
 
@@ -309,7 +302,6 @@ On OS X (Intel processor of some sort):
 [kirkby@bsd ~]$ 
 ```
 
-
 On Linux (Intel processor of some sort)
 
 ```
@@ -319,7 +311,6 @@ kirkby@sage:~$ command -v fdlkskld
 kirkby@sage:~$ 
 ```
 
-
 On FreeBSD (VirtualBox virtual machine, running on OpenSolaris host):
 
 ```
@@ -328,7 +319,6 @@ eagle# command -v ls
 eagle# command -v sdfdsf
 eagle#
 ```
-
 
 
 
@@ -355,7 +345,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076244.json:
 ```json
 {
-    "body": "Here's a new patch which uses \"command -v\".  On my mac, on sage.math, and on t2.math, \"type\" and \"command -v\" behave essentially the same, more or less like this:\n\n```\nsage: from subprocess import call, PIPE\nsage: call('type ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)  # note the space in 'type '\n0\nsage: call('type ' + 'lljsdfs', shell=True, stdout=PIPE, stderr=PIPE)       \n1\nsage: call('command -v ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)      \n0\nsage: call('command -v ' + 'llkjsdfs', shell=True, stdout=PIPE, stderr=PIPE)\n127\n```\n\nThe only difference on the platforms is the value of the nonzero return code: sometimes it's 1, sometimes is 127, depending on the platform and the command.  It's always nonzero, though, when the program doesn't exist.\n\n(With these arguments, the command \"call\" calls a program by passing to the shell without printing standard output or standard error, and it returns a code which is zero if the program exits correctly, nonzero otherwise, and I think the return codes have something to do with the system return codes, but they're not necessarily the same. See [http://docs.python.org/library/subprocess.html#convenience-functions](http://docs.python.org/library/subprocess.html#convenience-functions).)\n\nNote that I don't care about the output of the functions, so your concern about \"type\" in that regard is not a big deal.  However, if \"command -v\" is Posix standard, we can switch to that, since it seems to behave the same way.\n\nRegardless, I think you'll agree that it would be good to have one portable way to do this, in one place in the Sage library, so functions like \"have_latex\" and \"have_chomp\" will work right on Solaris, linux, Mac, etc.",
+    "body": "Here's a new patch which uses \"command -v\".  On my mac, on sage.math, and on t2.math, \"type\" and \"command -v\" behave essentially the same, more or less like this:\n\n```\nsage: from subprocess import call, PIPE\nsage: call('type ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)  # note the space in 'type '\n0\nsage: call('type ' + 'lljsdfs', shell=True, stdout=PIPE, stderr=PIPE)       \n1\nsage: call('command -v ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)      \n0\nsage: call('command -v ' + 'llkjsdfs', shell=True, stdout=PIPE, stderr=PIPE)\n127\n```\nThe only difference on the platforms is the value of the nonzero return code: sometimes it's 1, sometimes is 127, depending on the platform and the command.  It's always nonzero, though, when the program doesn't exist.\n\n(With these arguments, the command \"call\" calls a program by passing to the shell without printing standard output or standard error, and it returns a code which is zero if the program exits correctly, nonzero otherwise, and I think the return codes have something to do with the system return codes, but they're not necessarily the same. See [http://docs.python.org/library/subprocess.html#convenience-functions](http://docs.python.org/library/subprocess.html#convenience-functions).)\n\nNote that I don't care about the output of the functions, so your concern about \"type\" in that regard is not a big deal.  However, if \"command -v\" is Posix standard, we can switch to that, since it seems to behave the same way.\n\nRegardless, I think you'll agree that it would be good to have one portable way to do this, in one place in the Sage library, so functions like \"have_latex\" and \"have_chomp\" will work right on Solaris, linux, Mac, etc.",
     "created_at": "2010-03-07T16:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -377,7 +367,6 @@ sage: call('command -v ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)
 sage: call('command -v ' + 'llkjsdfs', shell=True, stdout=PIPE, stderr=PIPE)
 127
 ```
-
 The only difference on the platforms is the value of the nonzero return code: sometimes it's 1, sometimes is 127, depending on the platform and the command.  It's always nonzero, though, when the program doesn't exist.
 
 (With these arguments, the command "call" calls a program by passing to the shell without printing standard output or standard error, and it returns a code which is zero if the program exits correctly, nonzero otherwise, and I think the return codes have something to do with the system return codes, but they're not necessarily the same. See [http://docs.python.org/library/subprocess.html#convenience-functions](http://docs.python.org/library/subprocess.html#convenience-functions).)
@@ -393,7 +382,7 @@ Regardless, I think you'll agree that it would be good to have one portable way 
 archive/issue_comments_076245.json:
 ```json
 {
-    "body": "Just to emphasize: on t2.math, I get this behavior (in contrast to using \"command -v\" or \"type\"):\n\n```\nsage: from subprocess import call, PIPE\nsage: call('which ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)\n0\nsage: call('which ' + 'lljsdfs', shell=True, stdout=PIPE, stderr=PIPE)\n0\n```\n\nI don't know why.  The same happens with `os.system('which lljsdfs')`, and this is what is used in the Sage library.  (\"call\" is similar in behavior to \"os.system\", but I think \"call\" is slightly preferred.  It also gives better control of stdin, stdout, and stderr.)  So I do think this is what's wrong with #8463.  As I said in the description of this ticket, the function \"have_latex\" returns True on t2.math, and I would guess that if I could install Sage 4.3.4.alpha0 on t2.math, then the comparable \"have_chomp\" functions would return True as well.  Therefore Sage would try to call chomp when doing homology calculations, and since the program isn't there, it would crash.",
+    "body": "Just to emphasize: on t2.math, I get this behavior (in contrast to using \"command -v\" or \"type\"):\n\n```\nsage: from subprocess import call, PIPE\nsage: call('which ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)\n0\nsage: call('which ' + 'lljsdfs', shell=True, stdout=PIPE, stderr=PIPE)\n0\n```\nI don't know why.  The same happens with `os.system('which lljsdfs')`, and this is what is used in the Sage library.  (\"call\" is similar in behavior to \"os.system\", but I think \"call\" is slightly preferred.  It also gives better control of stdin, stdout, and stderr.)  So I do think this is what's wrong with #8463.  As I said in the description of this ticket, the function \"have_latex\" returns True on t2.math, and I would guess that if I could install Sage 4.3.4.alpha0 on t2.math, then the comparable \"have_chomp\" functions would return True as well.  Therefore Sage would try to call chomp when doing homology calculations, and since the program isn't there, it would crash.",
     "created_at": "2010-03-07T16:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -411,7 +400,6 @@ sage: call('which ' + 'ls', shell=True, stdout=PIPE, stderr=PIPE)
 sage: call('which ' + 'lljsdfs', shell=True, stdout=PIPE, stderr=PIPE)
 0
 ```
-
 I don't know why.  The same happens with `os.system('which lljsdfs')`, and this is what is used in the Sage library.  ("call" is similar in behavior to "os.system", but I think "call" is slightly preferred.  It also gives better control of stdin, stdout, and stderr.)  So I do think this is what's wrong with #8463.  As I said in the description of this ticket, the function "have_latex" returns True on t2.math, and I would guess that if I could install Sage 4.3.4.alpha0 on t2.math, then the comparable "have_chomp" functions would return True as well.  Therefore Sage would try to call chomp when doing homology calculations, and since the program isn't there, it would crash.
 
 
@@ -421,7 +409,7 @@ I don't know why.  The same happens with `os.system('which lljsdfs')`, and this 
 archive/issue_comments_076246.json:
 ```json
 {
-    "body": "Note that on t2 from the command-line\n\n\n```\nmhansen@t2:~$ which asdfasdfasfdsfsadf\nno asdfasdfasfdsfsadf in /scratch/mhansen/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\nmhansen@t2:~$ echo $?\n0\n```\n",
+    "body": "Note that on t2 from the command-line\n\n```\nmhansen@t2:~$ which asdfasdfasfdsfsadf\nno asdfasdfasfdsfsadf in /scratch/mhansen/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\nmhansen@t2:~$ echo $?\n0\n```",
     "created_at": "2010-03-07T18:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -432,7 +420,6 @@ archive/issue_comments_076246.json:
 
 Note that on t2 from the command-line
 
-
 ```
 mhansen@t2:~$ which asdfasdfasfdsfsadf
 no asdfasdfasfdsfsadf in /scratch/mhansen/bin /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin
@@ -442,13 +429,12 @@ mhansen@t2:~$ echo $?
 
 
 
-
 ---
 
 archive/issue_comments_076247.json:
 ```json
 {
-    "body": "I installed Solaris on a virtual machine on my Mac:\n\n```\n$ uname -a\nSunOS unknown 5.10 Generic_141445-09 i86pc i386 i386pc\n```\n\nand I get the same results that mhansen reported on t2.  Also, the man page for \"which\" doesn't discuss error codes.  It says, among other things\n\n```\nNOTES\n     which is not a shell built-in command; it is the  UNIX  com-\n     mand, /usr/bin/which\n```\n\nI haven't tried to install Sage on this (for one thing, I don't have gcc installed and I don't know how to get it), but I get similar results in python: running \"call('which lsjdflsjdflkjs', ...)\" returns 0, same as \"call('which ls', ...)\".",
+    "body": "I installed Solaris on a virtual machine on my Mac:\n\n```\n$ uname -a\nSunOS unknown 5.10 Generic_141445-09 i86pc i386 i386pc\n```\nand I get the same results that mhansen reported on t2.  Also, the man page for \"which\" doesn't discuss error codes.  It says, among other things\n\n```\nNOTES\n     which is not a shell built-in command; it is the  UNIX  com-\n     mand, /usr/bin/which\n```\nI haven't tried to install Sage on this (for one thing, I don't have gcc installed and I don't know how to get it), but I get similar results in python: running \"call('which lsjdflsjdflkjs', ...)\" returns 0, same as \"call('which ls', ...)\".",
     "created_at": "2010-03-07T18:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -463,7 +449,6 @@ I installed Solaris on a virtual machine on my Mac:
 $ uname -a
 SunOS unknown 5.10 Generic_141445-09 i86pc i386 i386pc
 ```
-
 and I get the same results that mhansen reported on t2.  Also, the man page for "which" doesn't discuss error codes.  It says, among other things
 
 ```
@@ -471,7 +456,6 @@ NOTES
      which is not a shell built-in command; it is the  UNIX  com-
      mand, /usr/bin/which
 ```
-
 I haven't tried to install Sage on this (for one thing, I don't have gcc installed and I don't know how to get it), but I get similar results in python: running "call('which lsjdflsjdflkjs', ...)" returns 0, same as "call('which ls', ...)".
 
 
@@ -481,7 +465,7 @@ I haven't tried to install Sage on this (for one thing, I don't have gcc install
 archive/issue_comments_076248.json:
 ```json
 {
-    "body": "OK, I think I understand this better now. \n\nI just noticed the example above where I showed 'which' behaving as expected was actually on OpenSolaris x64 (hostname hawk). However, I just tried it on Solaris 10 (SPARC), and get the same behavior. i.e. my script works as expected. \n\nI just tried what Mike did, using 'which ffddfdfd' on Solaris 10 (SPARC), Solaris 10 x64 (virtual machine) and OpenSolaris (x64). What I found was\n\n* 'which' has an exit code of 0 on Solaris 10 (SPARC).\n* 'which' has an exit code of 0 on Solaris 10 x86 (virtual machine).\n* 'which' an exit code of 1 on OpenSolaris. \n\nHowever, the man pages on OpenSolaris and Solaris 10 are different. The Solaris 10 man page does not discuss exit codes, but the OpenSolaris man page does. (This is one of the problems of using non-POSIX functions - their behavior is not well defined). \n \nI installed the patch and run the tests. All thse doctests then pass - there are still some other failures. \n\nI'm not a Python guru, but the patch all looks logical to me. So I'm going to give it positive review. \n\nOne very minor niggle - you might want to change the example in the docstring. I think \n\n\n```\n   sage: have_program('ls') \n   True \n   sage: have_program('there_is_not_a_program_with_this_name') \n   False \n```\n\n\nwould be a bit preferable to \n\n\n```\n   sage: have_program('command') \n   True \n   sage: have_program('there_is_not_a_program_with_this_name') \n   False \n```\n\n\nas far more people will know what 'ls' is. I doubt many will realise there is such a command called 'command'. I thought I knew Unix pretty well, but I was unaware of it until today. But it is a very minor point. \n\nSo positive review from me. Change that docstring if you want, but otherwise leave it unchanged. \n\nI've also noticed a rather annoying message about a lack of *xdg-open* before. It looks like it might have been related - I see you have fixed that too, so hopefully I won't see that any more. \n\nI agree it is more logical to have one library function that works on any system, rather than loads of different implementations which are not portable. \n\nThank you very much John. \n\n**Note to the release manager**\nWhen this is merged, #8463 may be closed. \n\nDave",
+    "body": "OK, I think I understand this better now. \n\nI just noticed the example above where I showed 'which' behaving as expected was actually on OpenSolaris x64 (hostname hawk). However, I just tried it on Solaris 10 (SPARC), and get the same behavior. i.e. my script works as expected. \n\nI just tried what Mike did, using 'which ffddfdfd' on Solaris 10 (SPARC), Solaris 10 x64 (virtual machine) and OpenSolaris (x64). What I found was\n\n* 'which' has an exit code of 0 on Solaris 10 (SPARC).\n* 'which' has an exit code of 0 on Solaris 10 x86 (virtual machine).\n* 'which' an exit code of 1 on OpenSolaris. \n\nHowever, the man pages on OpenSolaris and Solaris 10 are different. The Solaris 10 man page does not discuss exit codes, but the OpenSolaris man page does. (This is one of the problems of using non-POSIX functions - their behavior is not well defined). \n \nI installed the patch and run the tests. All thse doctests then pass - there are still some other failures. \n\nI'm not a Python guru, but the patch all looks logical to me. So I'm going to give it positive review. \n\nOne very minor niggle - you might want to change the example in the docstring. I think \n\n```\n   sage: have_program('ls') \n   True \n   sage: have_program('there_is_not_a_program_with_this_name') \n   False \n```\n\nwould be a bit preferable to \n\n```\n   sage: have_program('command') \n   True \n   sage: have_program('there_is_not_a_program_with_this_name') \n   False \n```\n\nas far more people will know what 'ls' is. I doubt many will realise there is such a command called 'command'. I thought I knew Unix pretty well, but I was unaware of it until today. But it is a very minor point. \n\nSo positive review from me. Change that docstring if you want, but otherwise leave it unchanged. \n\nI've also noticed a rather annoying message about a lack of *xdg-open* before. It looks like it might have been related - I see you have fixed that too, so hopefully I won't see that any more. \n\nI agree it is more logical to have one library function that works on any system, rather than loads of different implementations which are not portable. \n\nThank you very much John. \n\n**Note to the release manager**\nWhen this is merged, #8463 may be closed. \n\nDave",
     "created_at": "2010-03-07T19:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8474",
     "type": "issue_comment",
@@ -508,7 +492,6 @@ I'm not a Python guru, but the patch all looks logical to me. So I'm going to gi
 
 One very minor niggle - you might want to change the example in the docstring. I think 
 
-
 ```
    sage: have_program('ls') 
    True 
@@ -516,9 +499,7 @@ One very minor niggle - you might want to change the example in the docstring. I
    False 
 ```
 
-
 would be a bit preferable to 
-
 
 ```
    sage: have_program('command') 
@@ -526,7 +507,6 @@ would be a bit preferable to
    sage: have_program('there_is_not_a_program_with_this_name') 
    False 
 ```
-
 
 as far more people will know what 'ls' is. I doubt many will realise there is such a command called 'command'. I thought I knew Unix pretty well, but I was unaware of it until today. But it is a very minor point. 
 

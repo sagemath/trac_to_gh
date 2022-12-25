@@ -49,7 +49,7 @@ Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_018850.json:
 ```json
 {
-    "body": "I observe that the doc-tests do not actually run this code due to the fact that is_homogeneous is overridden (as it should be) in MPolynomial_libsingular.  Indeed, the only way I can find to actually run this code in normal use is:\n\n```\nsage: R.<x,y>=BooleanPolynomialRing(2)\nsage: x.is_homogeneous()\n...\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.pbori.BooleanMonomial' object has no attribute 'degree'\n```\n\nand that fails.\n\nI am of two minds:\n\n *1) This method should be implemented special for the BooleanPolynomial and the generic implementation left unneeded and unwritten\n\n *2) Or, the above bug should be fixed.\n\nMy preference is choice 1 since it seems it is generally possible to implement this function in a much faster way when you know the data layout.\n\nOr, is there some use of this function that I'm missing?",
+    "body": "I observe that the doc-tests do not actually run this code due to the fact that is_homogeneous is overridden (as it should be) in MPolynomial_libsingular.  Indeed, the only way I can find to actually run this code in normal use is:\n\n```\nsage: R.<x,y>=BooleanPolynomialRing(2)\nsage: x.is_homogeneous()\n...\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.pbori.BooleanMonomial' object has no attribute 'degree'\n```\nand that fails.\n\nI am of two minds:\n\n *1) This method should be implemented special for the BooleanPolynomial and the generic implementation left unneeded and unwritten\n\n *2) Or, the above bug should be fixed.\n\nMy preference is choice 1 since it seems it is generally possible to implement this function in a much faster way when you know the data layout.\n\nOr, is there some use of this function that I'm missing?",
     "created_at": "2008-04-02T16:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ sage: x.is_homogeneous()
 ...
 <type 'exceptions.AttributeError'>: 'sage.rings.polynomial.pbori.BooleanMonomial' object has no attribute 'degree'
 ```
-
 and that fails.
 
 I am of two minds:
@@ -158,7 +157,7 @@ On the basis of what I see in the patch, I think I give a positive review.  Howe
 archive/issue_comments_018855.json:
 ```json
 {
-    "body": "Replying to [comment:5 jbmohler]:\n> However, the patch doesn't apply cleanly and I'm not at all sure what was intended \n> with the unapplied hunk.\n\nWhat version are you using 2.11 or 3.0.alpha0?",
+    "body": "Replying to [comment:5 jbmohler]:\n> However, the patch doesn't apply cleanly and I'm not at all sure what was intended \n> with the unapplied hunk.\n\n\nWhat version are you using 2.11 or 3.0.alpha0?",
     "created_at": "2008-04-04T16:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -171,6 +170,7 @@ Replying to [comment:5 jbmohler]:
 > However, the patch doesn't apply cleanly and I'm not at all sure what was intended 
 > with the unapplied hunk.
 
+
 What version are you using 2.11 or 3.0.alpha0?
 
 
@@ -180,7 +180,7 @@ What version are you using 2.11 or 3.0.alpha0?
 archive/issue_comments_018856.json:
 ```json
 {
-    "body": "The do apply cleanly [the second patch with slight offsets] to my tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous_addon.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 succeeded at 1432 (offset -120 lines).\nHunk #2 succeeded at 1443 (offset -120 lines).\n```\n\n\nAll doctests pass. Is that enough for a positive review from jbmoehler?\n\nCheers,\n\nMichael",
+    "body": "The do apply cleanly [the second patch with slight offsets] to my tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous_addon.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 succeeded at 1432 (offset -120 lines).\nHunk #2 succeeded at 1443 (offset -120 lines).\n```\n\nAll doctests pass. Is that enough for a positive review from jbmoehler?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T17:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -200,7 +200,6 @@ patching file sage/rings/polynomial/pbori.pyx
 Hunk #1 succeeded at 1432 (offset -120 lines).
 Hunk #2 succeeded at 1443 (offset -120 lines).
 ```
-
 
 All doctests pass. Is that enough for a positive review from jbmoehler?
 
@@ -251,7 +250,7 @@ Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2
 archive/issue_comments_018859.json:
 ```json
 {
-    "body": "Re 2751-2.patch:\n\n```\n[22:22] <mhansen> mabshoff: I got a doctest failure with 2751.\n[22:22] <mabshoff> ok. Which one?\n[22:23] <mhansen> The second patch -- P.<x,y> = PolynomialBooleanRing() fails.\n[22:23] <mabshoff> That depends on another patch I merged.\n[22:24] <mhansen> Ahh, I see.  Then ignore my new patch.\n[22:24] <mabshoff> There is a simplification patch for the PolyBoRi constructor\n[22:24] <mabshoff> :)\n[22:24] <mhansen> Yep, that should be done.\n```\n\n\nCheers,\n\nMichael",
+    "body": "Re 2751-2.patch:\n\n```\n[22:22] <mhansen> mabshoff: I got a doctest failure with 2751.\n[22:22] <mabshoff> ok. Which one?\n[22:23] <mhansen> The second patch -- P.<x,y> = PolynomialBooleanRing() fails.\n[22:23] <mabshoff> That depends on another patch I merged.\n[22:24] <mhansen> Ahh, I see.  Then ignore my new patch.\n[22:24] <mabshoff> There is a simplification patch for the PolyBoRi constructor\n[22:24] <mabshoff> :)\n[22:24] <mhansen> Yep, that should be done.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T20:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
@@ -272,7 +271,6 @@ Re 2751-2.patch:
 [22:24] <mabshoff> :)
 [22:24] <mhansen> Yep, that should be done.
 ```
-
 
 Cheers,
 

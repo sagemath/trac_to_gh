@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9370
 archive/issue_comments_088872.json:
 ```json
 {
-    "body": "Hello John,\n\nI like your ideas. I have a few quick comments for you now.\n\nComments on the docstring for `CombinatorialFreeModule`:\n\n\n```                                                                             \n    - ``basis_keys`` - list, tuple, family, set, etc. defining the \n      basis of this module\n```\n\nbasis_keys provides the indexing set for the basis, not the basis itself.\n \n\n```\n    - ``element_class`` - the class of which elements of this module\n      should be instances (optional, default None)\n```\n\nI understand that the default argument is None, but it would be nice to\nhave a description of the class used in that case since elements are not \ninstances of None.\n \n\n```\n    - ``prefix`` - prefix used for printing elements of this module\n      (optional, default 'B').  With the default, a monomial indexed\n      by 'a' would be printed as ``B['a']``.\n \n    - ``latex_prefix`` - prefix used in the LaTeX representation of\n      elements (optional, default same as 'prefix').  With the \n      default, a monomial indexed by 'a' would be printed as\n      ``B_{a}``.  If this is the empty string, then don't print\n      monomials as subscripts: the monomial indexed by 'a' would be\n      printed as ``a``, or as ``[a]`` if ``latex_bracket`` is True.\n```\n\nIt doesn't say here, but it seems that prefix and latex_prefix are supposed\nto be strings. Or anything that concatenates with a string (for example, I\nthink any instance of LatexExpr will work).\n \n\n```\n    - ``repr_bracket`` - whether to print a bracket when printing\n      elements (optional, default True).  If it is one of \"[\", \"(\", or\n      \"{\", use it and its partner as brackets.  If this is any other\n      string, use it as both brackets.\n```\n\nPlease describe what bracket gets used with the default option. Also, the \ncode sets the default to None, not True.\n\nAnd perhaps a method called print_options might be useful (instead of pointing the user to an \"internal\" attribute). With no arguments, it will return _print_options and otherwise it will set the appropriate option. For example,\n\n```\nsage: A.print_options(repr_bracket=\"|\") # to change repr_bracket\n```\n\nWhat do you think?",
+    "body": "Hello John,\n\nI like your ideas. I have a few quick comments for you now.\n\nComments on the docstring for `CombinatorialFreeModule`:\n\n```                                                                             \n    - ``basis_keys`` - list, tuple, family, set, etc. defining the \n      basis of this module\n```\nbasis_keys provides the indexing set for the basis, not the basis itself.\n \n```\n    - ``element_class`` - the class of which elements of this module\n      should be instances (optional, default None)\n```\nI understand that the default argument is None, but it would be nice to\nhave a description of the class used in that case since elements are not \ninstances of None.\n \n```\n    - ``prefix`` - prefix used for printing elements of this module\n      (optional, default 'B').  With the default, a monomial indexed\n      by 'a' would be printed as ``B['a']``.\n \n    - ``latex_prefix`` - prefix used in the LaTeX representation of\n      elements (optional, default same as 'prefix').  With the \n      default, a monomial indexed by 'a' would be printed as\n      ``B_{a}``.  If this is the empty string, then don't print\n      monomials as subscripts: the monomial indexed by 'a' would be\n      printed as ``a``, or as ``[a]`` if ``latex_bracket`` is True.\n```\nIt doesn't say here, but it seems that prefix and latex_prefix are supposed\nto be strings. Or anything that concatenates with a string (for example, I\nthink any instance of LatexExpr will work).\n \n```\n    - ``repr_bracket`` - whether to print a bracket when printing\n      elements (optional, default True).  If it is one of \"[\", \"(\", or\n      \"{\", use it and its partner as brackets.  If this is any other\n      string, use it as both brackets.\n```\nPlease describe what bracket gets used with the default option. Also, the \ncode sets the default to None, not True.\n\nAnd perhaps a method called print_options might be useful (instead of pointing the user to an \"internal\" attribute). With no arguments, it will return _print_options and otherwise it will set the appropriate option. For example,\n\n```\nsage: A.print_options(repr_bracket=\"|\") # to change repr_bracket\n```\nWhat do you think?",
     "created_at": "2010-06-30T14:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -47,25 +47,20 @@ I like your ideas. I have a few quick comments for you now.
 
 Comments on the docstring for `CombinatorialFreeModule`:
 
-
 ```                                                                             
     - ``basis_keys`` - list, tuple, family, set, etc. defining the 
       basis of this module
 ```
-
 basis_keys provides the indexing set for the basis, not the basis itself.
  
-
 ```
     - ``element_class`` - the class of which elements of this module
       should be instances (optional, default None)
 ```
-
 I understand that the default argument is None, but it would be nice to
 have a description of the class used in that case since elements are not 
 instances of None.
  
-
 ```
     - ``prefix`` - prefix used for printing elements of this module
       (optional, default 'B').  With the default, a monomial indexed
@@ -78,19 +73,16 @@ instances of None.
       monomials as subscripts: the monomial indexed by 'a' would be
       printed as ``a``, or as ``[a]`` if ``latex_bracket`` is True.
 ```
-
 It doesn't say here, but it seems that prefix and latex_prefix are supposed
 to be strings. Or anything that concatenates with a string (for example, I
 think any instance of LatexExpr will work).
  
-
 ```
     - ``repr_bracket`` - whether to print a bracket when printing
       elements (optional, default True).  If it is one of "[", "(", or
       "{", use it and its partner as brackets.  If this is any other
       string, use it as both brackets.
 ```
-
 Please describe what bracket gets used with the default option. Also, the 
 code sets the default to None, not True.
 
@@ -99,7 +91,6 @@ And perhaps a method called print_options might be useful (instead of pointing t
 ```
 sage: A.print_options(repr_bracket="|") # to change repr_bracket
 ```
-
 What do you think?
 
 
@@ -127,7 +118,7 @@ Changing status from new to needs_work.
 archive/issue_comments_088874.json:
 ```json
 {
-    "body": "Replying to [comment:1 saliola]:\n> Hello John,\n\nThanks for your comments.\n\n> basis_keys provides the indexing set for the basis, not the basis itself.\n\nFixed.\n\n> ``element_class``: I understand that the default argument is None, but it would be nice to\n> have a description of the class used in that case since elements are not \n> instances of None.\n\nFixed, I think.\n\n> It doesn't say here, but it seems that prefix and latex_prefix are supposed\n> to be strings. Or anything that concatenates with a string (for example, I\n> think any instance of LatexExpr will work).\n\nI've documented that they should be strings.  It's true that a `LatexExpr` will work, but I don't think we need to spell that out.\n\n> ``repr_bracket``: Please describe what bracket gets used with the default option. Also, the \n> code sets the default to None, not True.\n\nI've expanded on the explanation here.\n \n> And perhaps a method called print_options might be useful (instead of pointing the user to an \"internal\" attribute). With no arguments, it will return _print_options and otherwise it will set the appropriate option. \n\nGood idea, I've implemented this.",
+    "body": "Replying to [comment:1 saliola]:\n> Hello John,\n\n\nThanks for your comments.\n\n> basis_keys provides the indexing set for the basis, not the basis itself.\n\n\nFixed.\n\n> ``element_class``: I understand that the default argument is None, but it would be nice to\n> have a description of the class used in that case since elements are not \n> instances of None.\n\n\nFixed, I think.\n\n> It doesn't say here, but it seems that prefix and latex_prefix are supposed\n> to be strings. Or anything that concatenates with a string (for example, I\n> think any instance of LatexExpr will work).\n\n\nI've documented that they should be strings.  It's true that a `LatexExpr` will work, but I don't think we need to spell that out.\n\n> ``repr_bracket``: Please describe what bracket gets used with the default option. Also, the \n> code sets the default to None, not True.\n\n\nI've expanded on the explanation here.\n \n> And perhaps a method called print_options might be useful (instead of pointing the user to an \"internal\" attribute). With no arguments, it will return _print_options and otherwise it will set the appropriate option. \n\n\nGood idea, I've implemented this.",
     "created_at": "2010-06-30T16:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -139,9 +130,11 @@ archive/issue_comments_088874.json:
 Replying to [comment:1 saliola]:
 > Hello John,
 
+
 Thanks for your comments.
 
 > basis_keys provides the indexing set for the basis, not the basis itself.
+
 
 Fixed.
 
@@ -149,20 +142,24 @@ Fixed.
 > have a description of the class used in that case since elements are not 
 > instances of None.
 
+
 Fixed, I think.
 
 > It doesn't say here, but it seems that prefix and latex_prefix are supposed
 > to be strings. Or anything that concatenates with a string (for example, I
 > think any instance of LatexExpr will work).
 
+
 I've documented that they should be strings.  It's true that a `LatexExpr` will work, but I don't think we need to spell that out.
 
 > ``repr_bracket``: Please describe what bracket gets used with the default option. Also, the 
 > code sets the default to None, not True.
 
+
 I've expanded on the explanation here.
  
 > And perhaps a method called print_options might be useful (instead of pointing the user to an "internal" attribute). With no arguments, it will return _print_options and otherwise it will set the appropriate option. 
+
 
 Good idea, I've implemented this.
 
@@ -209,7 +206,7 @@ Another idea would be to allow repr_bracket to be a pair (list or tuple) of stri
 archive/issue_comments_088877.json:
 ```json
 {
-    "body": "> Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?\n\nHere's a patch which implements this idea.  I think it's probably worth doing: consider\n\n```\nsage: F = CombinatorialFreeModule(QQ, [1,2,3], prefix='x', repr_bracket=[\"_{\", \"}\"])\nsage: e = F.basis()\nsage: e[2] + 5*e[3]\nx_{2} + 5*x_{3}\n```\n",
+    "body": "> Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?\n\n\nHere's a patch which implements this idea.  I think it's probably worth doing: consider\n\n```\nsage: F = CombinatorialFreeModule(QQ, [1,2,3], prefix='x', repr_bracket=[\"_{\", \"}\"])\nsage: e = F.basis()\nsage: e[2] + 5*e[3]\nx_{2} + 5*x_{3}\n```",
     "created_at": "2010-06-30T18:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -220,6 +217,7 @@ archive/issue_comments_088877.json:
 
 > Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?
 
+
 Here's a patch which implements this idea.  I think it's probably worth doing: consider
 
 ```
@@ -228,7 +226,6 @@ sage: e = F.basis()
 sage: e[2] + 5*e[3]
 x_{2} + 5*x_{3}
 ```
-
 
 
 
@@ -293,7 +290,7 @@ I like the changes. As long as all the tests pass, it gets a positive review fro
 archive/issue_comments_088881.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> > Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?\n> \n> Here's a patch which implements this idea.  I think it's probably worth doing: consider\n> {{{\n> sage: F = CombinatorialFreeModule(QQ, [1,2,3], prefix='x', repr_bracket=[\"_{\", \"}\"])\n> sage: e = F.basis()\n> sage: e[2] + 5*e[3]\n> x_{2} + 5*x_{3}\n> }}}\n\n+1",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> > Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?\n\n> \n> Here's a patch which implements this idea.  I think it's probably worth doing: consider\n> \n> ```\n> sage: F = CombinatorialFreeModule(QQ, [1,2,3], prefix='x', repr_bracket=[\"_{\", \"}\"])\n> sage: e = F.basis()\n> sage: e[2] + 5*e[3]\n> x_{2} + 5*x_{3}\n> ```\n\n\n+1",
     "created_at": "2010-09-30T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -304,14 +301,17 @@ archive/issue_comments_088881.json:
 
 Replying to [comment:4 jhpalmieri]:
 > > Another idea would be to allow repr_bracket to be a pair (list or tuple) of strings, one for the left side and one for the right. It wouldn't be hard to implement, but is it worth doing? Would the documentation start to get too complicated?
+
 > 
 > Here's a patch which implements this idea.  I think it's probably worth doing: consider
-> {{{
+> 
+> ```
 > sage: F = CombinatorialFreeModule(QQ, [1,2,3], prefix='x', repr_bracket=["_{", "}"])
 > sage: e = F.basis()
 > sage: e[2] + 5*e[3]
 > x_{2} + 5*x_{3}
-> }}}
+> ```
+
 
 +1
 
@@ -322,7 +322,7 @@ Replying to [comment:4 jhpalmieri]:
 archive/issue_comments_088882.json:
 ```json
 {
-    "body": "Hi John,\n\nSorry for letting this patch rot ... I like it much though! Thanks! As you, I am bothered by the current interaction between unique representation and printing customization, but don't have a good solution at this point.\n\nI just went briefly through it. Three minor suggestions:\n- The logic in print_options could be factored out using something along:\n\n```\n    for option in ['latex_prefix',...]:\n        if option in kwds: \n            args = True \n \t    self._print_options[option] = kwds[option]\n```\n\n\n- The documentation of set_print_options duplicates that of the constructor. Could one of them just refer to the other? ``for the options ... see ...``. Actually, maybe the constructor should call set_print_options?\n\n- Could we find something better than _repr_asterix? That is that would refer more explicitly to scalar multiplication? In MuPAD it was timesDot, but it's not great either.",
+    "body": "Hi John,\n\nSorry for letting this patch rot ... I like it much though! Thanks! As you, I am bothered by the current interaction between unique representation and printing customization, but don't have a good solution at this point.\n\nI just went briefly through it. Three minor suggestions:\n- The logic in print_options could be factored out using something along:\n\n```\n    for option in ['latex_prefix',...]:\n        if option in kwds: \n            args = True \n \t    self._print_options[option] = kwds[option]\n```\n\n- The documentation of set_print_options duplicates that of the constructor. Could one of them just refer to the other? ``for the options ... see ...``. Actually, maybe the constructor should call set_print_options?\n\n- Could we find something better than _repr_asterix? That is that would refer more explicitly to scalar multiplication? In MuPAD it was timesDot, but it's not great either.",
     "created_at": "2010-09-30T10:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -344,7 +344,6 @@ I just went briefly through it. Three minor suggestions:
             args = True 
  	    self._print_options[option] = kwds[option]
 ```
-
 
 - The documentation of set_print_options duplicates that of the constructor. Could one of them just refer to the other? ``for the options ... see ...``. Actually, maybe the constructor should call set_print_options?
 
@@ -375,7 +374,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088884.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\nThanks for the feedback.  I've changed the code in print_options the way you suggested, and I shortened the docstring there.  I wasn't comfortable having the constructor call print_options, so I didn't change that.\n\nI agree that \"repr_asterisk\" is a bad name, so I rethought the names.  We already had \"prefix\" to which I added \"latex_prefix\".  In parallel with this, I changed \"repr_bracket\" to \"bracket\" (to go with my addition, \"latex_bracket\").  That means that there is no reason for \"repr_asterisk\" to have \"repr\" in its name anymore.  I changed that to \"scalar_mult\".  I think this is better:\n\n```\n    - ``scalar_mult`` - string to use for scalar multiplication in\n      the print representation (optional, default \"*\")\n```\n\nWhat do you think?",
+    "body": "Hi Nicolas,\n\nThanks for the feedback.  I've changed the code in print_options the way you suggested, and I shortened the docstring there.  I wasn't comfortable having the constructor call print_options, so I didn't change that.\n\nI agree that \"repr_asterisk\" is a bad name, so I rethought the names.  We already had \"prefix\" to which I added \"latex_prefix\".  In parallel with this, I changed \"repr_bracket\" to \"bracket\" (to go with my addition, \"latex_bracket\").  That means that there is no reason for \"repr_asterisk\" to have \"repr\" in its name anymore.  I changed that to \"scalar_mult\".  I think this is better:\n\n```\n    - ``scalar_mult`` - string to use for scalar multiplication in\n      the print representation (optional, default \"*\")\n```\nWhat do you think?",
     "created_at": "2010-09-30T20:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -394,7 +393,6 @@ I agree that "repr_asterisk" is a bad name, so I rethought the names.  We alread
     - ``scalar_mult`` - string to use for scalar multiplication in
       the print representation (optional, default "*")
 ```
-
 What do you think?
 
 
@@ -422,7 +420,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088886.json:
 ```json
 {
-    "body": "Attachment [trac_9370-module-elt-repr.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr.patch) by stumpc5 created at 2011-02-26 00:51:50\n\nHi,\n\nI will fold #10852 in here, if that's okay.\n\nI like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n\n1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\n2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n\n```\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')\nsage: A.an_element()\n2@@B['@@'] + 2@@B['+']\n```\n\n\nBest, Christian",
+    "body": "Attachment [trac_9370-module-elt-repr.patch](tarball://root/attachments/some-uuid/ticket9370/trac_9370-module-elt-repr.patch) by stumpc5 created at 2011-02-26 00:51:50\n\nHi,\n\nI will fold #10852 in here, if that's okay.\n\nI like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n\n1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\n2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n\n```\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')\nsage: A.an_element()\n2@@B['@@'] + 2@@B['+']\n```\n\nBest, Christian",
     "created_at": "2011-02-26T00:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -449,7 +447,6 @@ sage: A.an_element()
 2@@B['@@'] + 2@@B['+']
 ```
 
-
 Best, Christian
 
 
@@ -459,7 +456,7 @@ Best, Christian
 archive/issue_comments_088887.json:
 ```json
 {
-    "body": "Replying to [comment:11 stumpc5]:\n> Hi,\n> \n> I will fold #10852 in here, if that's okay.\n> \n> I like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n> \n> 1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\nI think it was just to preserve backward-compatibility, but if you think it's safe to remove it, please go ahead.\n\n> 2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n\n```\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')\nsage: A.an_element()\n2@@B['@@'] + 2@@B['+']\n```\n\n\nPutting it in repr_lincomb would be better, I agree.",
+    "body": "Replying to [comment:11 stumpc5]:\n> Hi,\n> \n> I will fold #10852 in here, if that's okay.\n> \n> I like the multiple options! I gonna have a more detailed look for a review; here are two first comments:\n> \n> 1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\\'prefix\\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.\n\n\nI think it was just to preserve backward-compatibility, but if you think it's safe to remove it, please go ahead.\n\n> 2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:\n  \n{{{\nsage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='`@``@`')\nsage: A.an_element()\n2`@``@`B['`@``@`'] + 2`@``@`B['+']\n}}}\n\nPutting it in repr_lincomb would be better, I agree.",
     "created_at": "2011-02-26T02:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -477,16 +474,16 @@ Replying to [comment:11 stumpc5]:
 > 
 > 1. Why do you handle the old prefix option extra? Wouldn't it be enough to keep the prefix method and return to print_options()[\'prefix\'], rather thank keeping _prefix. A complete doctest provided by the buildbot can then check if _prefix is used anywhere.
 
+
 I think it was just to preserve backward-compatibility, but if you think it's safe to remove it, please go ahead.
 
 > 2. in lines 155p, multiplication is set to ast. Isn't there a way to give this argument to the repr_lincomb method? Otherwise, we get the following:
-
-```
-sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='@@')
+  
+{{{
+sage: A = CombinatorialFreeModule(QQ,['+','*'],scalar_mult='`@``@`')
 sage: A.an_element()
-2@@B['@@'] + 2@@B['+']
-```
-
+2`@``@`B['`@``@`'] + 2`@``@`B['+']
+}}}
 
 Putting it in repr_lincomb would be better, I agree.
 
@@ -559,7 +556,7 @@ Attachment [trac_9370-module-elt-repr-suggestions-cs.patch](tarball://root/attac
 archive/issue_comments_088891.json:
 ```json
 {
-    "body": "I'm happy with the changes except for the following things: first, there are some typos and some ways I would reword things, and I've put up a patch to go on top of \"trac_9370-module-elt-repr-suggestions-cs.patch\" to make those changes.\n\nSecond, the change in the `print_options` method makes the code simpler, but it also modifies the behavior, and I'm not sure I like the change.  If we want to keep the change, then we need to modify the documentation.  The change is this: with my original patch, if you set `prefix` but not `latex_prefix`, then `latex_prefix` would become `prefix` rather than the default value of \"B\".  With your patch, we have this behavior:\n\n```\nsage: A = HeckeAlgebraSymmetricGroupT(QQ, 3)\nsage: A.an_element()\nT[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3] \nsage: latex(A.an_element())\nB_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}\n```\n\nIdeally, everyone would set latex_prefix when they set prefix, but if they don't, I think they should default to being the same.",
+    "body": "I'm happy with the changes except for the following things: first, there are some typos and some ways I would reword things, and I've put up a patch to go on top of \"trac_9370-module-elt-repr-suggestions-cs.patch\" to make those changes.\n\nSecond, the change in the `print_options` method makes the code simpler, but it also modifies the behavior, and I'm not sure I like the change.  If we want to keep the change, then we need to modify the documentation.  The change is this: with my original patch, if you set `prefix` but not `latex_prefix`, then `latex_prefix` would become `prefix` rather than the default value of \"B\".  With your patch, we have this behavior:\n\n```\nsage: A = HeckeAlgebraSymmetricGroupT(QQ, 3)\nsage: A.an_element()\nT[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3] \nsage: latex(A.an_element())\nB_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}\n```\nIdeally, everyone would set latex_prefix when they set prefix, but if they don't, I think they should default to being the same.",
     "created_at": "2011-03-07T23:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -579,7 +576,6 @@ T[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3]
 sage: latex(A.an_element())
 B_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}
 ```
-
 Ideally, everyone would set latex_prefix when they set prefix, but if they don't, I think they should default to being the same.
 
 
@@ -609,7 +605,7 @@ apply on top of other two patches
 archive/issue_comments_088893.json:
 ```json
 {
-    "body": "Hi Christian, John,\n\nFirst, thanks so much for improving CombinatorialFreeModule's!\n\nReplying to [comment:15 jhpalmieri]:\n> The change is this: with my original patch, if you set `prefix` but not `latex_prefix`, then `latex_prefix` would become `prefix` rather than the default value of \"B\".  With your patch, we have this behavior:\n> {{{\n> sage: A = HeckeAlgebraSymmetricGroupT(QQ, 3)\n> sage: A.an_element()\n> T[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3] \n> sage: latex(A.an_element())\n> B_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}\n> }}}\n> Ideally, everyone would set latex_prefix when they set prefix,\n\nI would not even try to enforce setting latex_prefix. Whenever the\nprefix does not contains specific math code, it would be an\nunnecessary burden to have to set both latex_prefix and prefix.\n\n> but if they don't, I think they should default to being the same.\n\n+1",
+    "body": "Hi Christian, John,\n\nFirst, thanks so much for improving CombinatorialFreeModule's!\n\nReplying to [comment:15 jhpalmieri]:\n> The change is this: with my original patch, if you set `prefix` but not `latex_prefix`, then `latex_prefix` would become `prefix` rather than the default value of \"B\".  With your patch, we have this behavior:\n> \n> ```\n> sage: A = HeckeAlgebraSymmetricGroupT(QQ, 3)\n> sage: A.an_element()\n> T[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3] \n> sage: latex(A.an_element())\n> B_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}\n> ```\n> Ideally, everyone would set latex_prefix when they set prefix,\n\n\nI would not even try to enforce setting latex_prefix. Whenever the\nprefix does not contains specific math code, it would be an\nunnecessary burden to have to set both latex_prefix and prefix.\n\n> but if they don't, I think they should default to being the same.\n\n\n+1",
     "created_at": "2011-03-10T09:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -624,20 +620,23 @@ First, thanks so much for improving CombinatorialFreeModule's!
 
 Replying to [comment:15 jhpalmieri]:
 > The change is this: with my original patch, if you set `prefix` but not `latex_prefix`, then `latex_prefix` would become `prefix` rather than the default value of "B".  With your patch, we have this behavior:
-> {{{
+> 
+> ```
 > sage: A = HeckeAlgebraSymmetricGroupT(QQ, 3)
 > sage: A.an_element()
 > T[1, 2, 3] + 2*T[1, 3, 2] + 3*T[2, 1, 3] 
 > sage: latex(A.an_element())
 > B_{[1, 2, 3]} + 2B_{[1, 3, 2]} + 3B_{[2, 1, 3]}
-> }}}
+> ```
 > Ideally, everyone would set latex_prefix when they set prefix,
+
 
 I would not even try to enforce setting latex_prefix. Whenever the
 prefix does not contains specific math code, it would be an
 unnecessary burden to have to set both latex_prefix and prefix.
 
 > but if they don't, I think they should default to being the same.
+
 
 +1
 
@@ -712,7 +711,7 @@ apply on top of other two patches instead of ...-third.patch
 archive/issue_comments_088897.json:
 ```json
 {
-    "body": "The Steenrod algebra code at #10052 revealed a small bug in the `_latex_` method: when replacing a trailing \"* 1\" in latex code via\n\n```\nif x[len(x)-l-1:] == ast_replace+\"1\": \n     return x[:len(x)-l-1] \n```\n\nif `ast_replace` is the empty string, this will just remove any trailing 1, for example from \"x \\otimes 1\" or from \"31\", etc.  So I'm changing the test to\n\n```\nif l > 0 and x[len(x)-l-1:] == ast_replace+\"1\": \n     return x[:len(x)-l-1] \n```\n\nso it only does the replacement if the length `l` of `ast_replace` is positive.  (I also find the letter \"l\" hard to distinguish from the number \"1\", so I'm changing it to \"ln\".  Then we can pretend it's the natural log and we're doing calculus instead of algebra.)",
+    "body": "The Steenrod algebra code at #10052 revealed a small bug in the `_latex_` method: when replacing a trailing \"* 1\" in latex code via\n\n```\nif x[len(x)-l-1:] == ast_replace+\"1\": \n     return x[:len(x)-l-1] \n```\nif `ast_replace` is the empty string, this will just remove any trailing 1, for example from \"x \\otimes 1\" or from \"31\", etc.  So I'm changing the test to\n\n```\nif l > 0 and x[len(x)-l-1:] == ast_replace+\"1\": \n     return x[:len(x)-l-1] \n```\nso it only does the replacement if the length `l` of `ast_replace` is positive.  (I also find the letter \"l\" hard to distinguish from the number \"1\", so I'm changing it to \"ln\".  Then we can pretend it's the natural log and we're doing calculus instead of algebra.)",
     "created_at": "2011-03-11T22:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9370",
     "type": "issue_comment",
@@ -727,14 +726,12 @@ The Steenrod algebra code at #10052 revealed a small bug in the `_latex_` method
 if x[len(x)-l-1:] == ast_replace+"1": 
      return x[:len(x)-l-1] 
 ```
-
 if `ast_replace` is the empty string, this will just remove any trailing 1, for example from "x \otimes 1" or from "31", etc.  So I'm changing the test to
 
 ```
 if l > 0 and x[len(x)-l-1:] == ast_replace+"1": 
      return x[:len(x)-l-1] 
 ```
-
 so it only does the replacement if the length `l` of `ast_replace` is positive.  (I also find the letter "l" hard to distinguish from the number "1", so I'm changing it to "ln".  Then we can pretend it's the natural log and we're doing calculus instead of algebra.)
 
 

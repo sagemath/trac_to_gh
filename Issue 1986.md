@@ -3,7 +3,7 @@
 archive/issues_001986.json:
 ```json
 {
-    "body": "Assignee: failure\n\nTested on Fedora 7 and 8 32 bits:\n\n```\nsage -t  devel/sage-main/sage/ext/fast_eval.pyx             **********************************************************************\nFile \"fast_eval.pyx\", line 919:\n     sage: f(pi/4)\nExpected:\n     1.00000000000000...\nGot:\n     1.0\n**********************************************************************\nFile \"fast_eval.pyx\", line 1013:\n     sage: f(tanh(0.5))\nExpected:\n     0.5\nGot:\n     0.49999999999999994\n**********************************************************************\n2 items had failures:\n    1 of   3 in __main__.example_29\n    1 of   3 in __main__.example_38\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_fast_eval.pyx\n          [2.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/ext/fast_eval.pyx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1986\n\n",
+    "body": "Assignee: failure\n\nTested on Fedora 7 and 8 32 bits:\n\n```\nsage -t  devel/sage-main/sage/ext/fast_eval.pyx             **********************************************************************\nFile \"fast_eval.pyx\", line 919:\n     sage: f(pi/4)\nExpected:\n     1.00000000000000...\nGot:\n     1.0\n**********************************************************************\nFile \"fast_eval.pyx\", line 1013:\n     sage: f(tanh(0.5))\nExpected:\n     0.5\nGot:\n     0.49999999999999994\n**********************************************************************\n2 items had failures:\n    1 of   3 in __main__.example_29\n    1 of   3 in __main__.example_38\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_fast_eval.pyx\n          [2.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n         sage -t  devel/sage-main/sage/ext/fast_eval.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1986\n\n",
     "created_at": "2008-01-30T18:16:24Z",
     "labels": [
         "component: doctest coverage",
@@ -52,7 +52,6 @@ The following tests failed:
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1986
 
 
@@ -64,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1986
 archive/issue_comments_012830.json:
 ```json
 {
-    "body": "For the \n\n```\nExpected:\n     1.00000000000000...\nGot:\n     1.0\n```\n\nI thought the ... would take care of it. I'd be happy to make a patch, if someone could explain how the anti-numerical noise ... works in the doctests.",
+    "body": "For the \n\n```\nExpected:\n     1.00000000000000...\nGot:\n     1.0\n```\nI thought the ... would take care of it. I'd be happy to make a patch, if someone could explain how the anti-numerical noise ... works in the doctests.",
     "created_at": "2008-01-31T07:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1986",
     "type": "issue_comment",
@@ -81,7 +80,6 @@ Expected:
 Got:
      1.0
 ```
-
 I thought the ... would take care of it. I'd be happy to make a patch, if someone could explain how the anti-numerical noise ... works in the doctests.
 
 

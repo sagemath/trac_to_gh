@@ -160,7 +160,7 @@ archive/issue_comments_014989.json:
 archive/issue_comments_014990.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> `$hnf(transpose(A))^(-1)*A$` that looks wrong and probably should be: `$hnf(transpose(A))^{-1} * A$`\n\nAre you sure that makes a difference? I think in math mode all spaces will be eaten by the TeX parser anyway.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 malb]:\n> `$hnf(transpose(A))^(-1)*A$` that looks wrong and probably should be: `$hnf(transpose(A))^{-1} * A$`\n\n\nAre you sure that makes a difference? I think in math mode all spaces will be eaten by the TeX parser anyway.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-22T23:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2267",
     "type": "issue_comment",
@@ -171,6 +171,7 @@ archive/issue_comments_014990.json:
 
 Replying to [comment:2 malb]:
 > `$hnf(transpose(A))^(-1)*A$` that looks wrong and probably should be: `$hnf(transpose(A))^{-1} * A$`
+
 
 Are you sure that makes a difference? I think in math mode all spaces will be eaten by the TeX parser anyway.
 
@@ -255,7 +256,7 @@ Yes my comment makes a difference because `^{-1`} is different from `^(-1)` :-)
 archive/issue_comments_014994.json:
 ```json
 {
-    "body": "Replying to [comment:6 malb]:\n> Yes my comment makes a difference because `^{-1`} is different from `^(-1)` :-) \n\nD'oh - I will fix it in the sources. Maybe I should get new glasses and sleep more. Thanks malb.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 malb]:\n> Yes my comment makes a difference because `^{-1`} is different from `^(-1)` :-) \n\n\nD'oh - I will fix it in the sources. Maybe I should get new glasses and sleep more. Thanks malb.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-22T23:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2267",
     "type": "issue_comment",
@@ -266,6 +267,7 @@ archive/issue_comments_014994.json:
 
 Replying to [comment:6 malb]:
 > Yes my comment makes a difference because `^{-1`} is different from `^(-1)` :-) 
+
 
 D'oh - I will fix it in the sources. Maybe I should get new glasses and sleep more. Thanks malb.
 

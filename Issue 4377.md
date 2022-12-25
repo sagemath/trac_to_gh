@@ -3,7 +3,7 @@
 archive/issues_004377.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  justin\n\nexporting MAKE=make -j2 leads to\n\n```\nTraceback (most recent call last):\n  File \"setup.py\", line 1545, in <module>\n    cython(deps, ext_modules)\n  File \"setup.py\", line 1311, in cython\n    execute_list_of_commands(command_list)\n  File \"setup.py\", line 1403, in execute_list_of_commands\n    n = 2*number_of_cpus()\nTypeError: unsupported operand type(s) for *: 'int' and 'NoneType'\nsage: There was an error installing modified sage library code.\n```\n\non OSX 10.4.\n\nThis is caused by #3765.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4377\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  justin\n\nexporting MAKE=make -j2 leads to\n\n```\nTraceback (most recent call last):\n  File \"setup.py\", line 1545, in <module>\n    cython(deps, ext_modules)\n  File \"setup.py\", line 1311, in cython\n    execute_list_of_commands(command_list)\n  File \"setup.py\", line 1403, in execute_list_of_commands\n    n = 2*number_of_cpus()\nTypeError: unsupported operand type(s) for *: 'int' and 'NoneType'\nsage: There was an error installing modified sage library code.\n```\non OSX 10.4.\n\nThis is caused by #3765.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4377\n\n",
     "created_at": "2008-10-28T15:03:40Z",
     "labels": [
         "component: build",
@@ -34,7 +34,6 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
 sage: There was an error installing modified sage library code.
 ```
-
 on OSX 10.4.
 
 This is caused by #3765.
@@ -54,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4377
 archive/issue_comments_032143.json:
 ```json
 {
-    "body": "ok, the issue is simple enough and an extra \"\\n\" in the output:\n\n```\n>>> import os\n>>> os.popen2(\"sysctl -n hw.ncpu\")[1].read()\n'2\\n'\n```\n\n\nCheers,\n\nMichael",
+    "body": "ok, the issue is simple enough and an extra \"\\n\" in the output:\n\n```\n>>> import os\n>>> os.popen2(\"sysctl -n hw.ncpu\")[1].read()\n'2\\n'\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T15:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4377",
     "type": "issue_comment",
@@ -70,7 +69,6 @@ ok, the issue is simple enough and an extra "\n" in the output:
 >>> os.popen2("sysctl -n hw.ncpu")[1].read()
 '2\n'
 ```
-
 
 Cheers,
 

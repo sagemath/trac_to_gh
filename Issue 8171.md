@@ -114,7 +114,7 @@ Dave
 archive/issue_comments_071819.json:
 ```json
 {
-    "body": "Sorry, there is some confusion here.\n\nReplying to [comment:3 drkirkby]:\n> Since this is new, you need to state whether it is intended to go into experimental or optional. \n\nThe package is intended for optional, because that's where CBC is right now.\n\n> Also, since this is new, you should remove the .p2 from the spkg name and instead \n> call it cbc-2.3.spkg.\n\nAs hinted above the SPKG is indeed not new but an update. The CPLEX support in the ticket #8172 is new but *this* ticket only updates the CBC SPKG to work with the new interface. A true update. There is and never will be a CPLEX SPKG because CPLEX is proprietary.\n\nHope that clarifies the situation somewhat.",
+    "body": "Sorry, there is some confusion here.\n\nReplying to [comment:3 drkirkby]:\n> Since this is new, you need to state whether it is intended to go into experimental or optional. \n\n\nThe package is intended for optional, because that's where CBC is right now.\n\n> Also, since this is new, you should remove the .p2 from the spkg name and instead \n> call it cbc-2.3.spkg.\n\n\nAs hinted above the SPKG is indeed not new but an update. The CPLEX support in the ticket #8172 is new but *this* ticket only updates the CBC SPKG to work with the new interface. A true update. There is and never will be a CPLEX SPKG because CPLEX is proprietary.\n\nHope that clarifies the situation somewhat.",
     "created_at": "2010-03-10T23:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
@@ -128,10 +128,12 @@ Sorry, there is some confusion here.
 Replying to [comment:3 drkirkby]:
 > Since this is new, you need to state whether it is intended to go into experimental or optional. 
 
+
 The package is intended for optional, because that's where CBC is right now.
 
 > Also, since this is new, you should remove the .p2 from the spkg name and instead 
 > call it cbc-2.3.spkg.
+
 
 As hinted above the SPKG is indeed not new but an update. The CPLEX support in the ticket #8172 is new but *this* ticket only updates the CBC SPKG to work with the new interface. A true update. There is and never will be a CPLEX SPKG because CPLEX is proprietary.
 
@@ -240,7 +242,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071825.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> Finally ..... This package has been tested on t2 (Solaris). It compiles and runs ! :-)\n> \n> As soon as this and #8172 are in Sage, it will be possible to work on the inclusion of SCIP !\n> \n> Nathann\n\nPositive review, all works, good, but please take care of the update I posted on\n#8172\n\nThanks,\nDima",
+    "body": "Replying to [comment:8 ncohen]:\n> Finally ..... This package has been tested on t2 (Solaris). It compiles and runs ! :-)\n> \n> As soon as this and #8172 are in Sage, it will be possible to work on the inclusion of SCIP !\n> \n> Nathann\n\n\nPositive review, all works, good, but please take care of the update I posted on\n#8172\n\nThanks,\nDima",
     "created_at": "2010-04-09T06:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8171",
     "type": "issue_comment",
@@ -255,6 +257,7 @@ Replying to [comment:8 ncohen]:
 > As soon as this and #8172 are in Sage, it will be possible to work on the inclusion of SCIP !
 > 
 > Nathann
+
 
 Positive review, all works, good, but please take care of the update I posted on
 #8172

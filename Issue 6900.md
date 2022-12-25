@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6900
 archive/issue_comments_056896.json:
 ```json
 {
-    "body": "Replying to [ticket:6900 pcpa]:\n[Sorry for replying to myself]\n>   After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.\n> A screenshot of the problem, that happens the first time a background process is started is:\n> http://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg\n> but, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.\n> \n>   Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)\n\n  For people familiar with the notebook code, I think what may be also a good hint as to what may be wrong is that the extra noise in the output is not \"really noise\", but the \"dancing\" / and \\ characters that go to the browser titlebar.",
+    "body": "Replying to [ticket:6900 pcpa]:\n[Sorry for replying to myself]\n>   After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.\n\n> A screenshot of the problem, that happens the first time a background process is started is:\n> http://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg\n> but, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.\n> \n>   Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)\n\n\n  For people familiar with the notebook code, I think what may be also a good hint as to what may be wrong is that the extra noise in the output is not \"really noise\", but the \"dancing\" / and \\ characters that go to the browser titlebar.",
     "created_at": "2009-09-08T14:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6900",
     "type": "issue_comment",
@@ -80,11 +80,13 @@ archive/issue_comments_056896.json:
 Replying to [ticket:6900 pcpa]:
 [Sorry for replying to myself]
 >   After starting the notebook, and using a newer pexpect, try some command that causes a background processes to be created, like the first singular example in the tutorial.
+
 > A screenshot of the problem, that happens the first time a background process is started is:
 > http://img134.imageshack.us/img134/557/sagewithnewerpexpect1.jpg
 > but, as also shown in the screenshot, in subsequent evaluations, it works correctly in the notebook.
 > 
 >   Since it always works correct in the terminal interface of sage, I suspect it is an issue in the notebook/worksheet code. And in that case, it actually may be a different way to debug problems in the sage pexpect interface (also a suggestion :-)
+
 
   For people familiar with the notebook code, I think what may be also a good hint as to what may be wrong is that the extra noise in the output is not "really noise", but the "dancing" / and \ characters that go to the browser titlebar.
 
@@ -148,7 +150,7 @@ archive/issue_events_016225.json:
 archive/issue_comments_056899.json:
 ```json
 {
-    "body": "You've got to do something with GAP, of course... but I agree that this seems to not be an issue now.\n\n```\n$ ls /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage/gap/\nREADME.txt                     workspace-8276014924322680366\n\n$ ls /tmp/0123456789/.sage/gap/\nREADME.txt\t\t\tworkspace-8276014924322680366\n```\n",
+    "body": "You've got to do something with GAP, of course... but I agree that this seems to not be an issue now.\n\n```\n$ ls /tmp/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/0123456789/.sage/gap/\nREADME.txt                     workspace-8276014924322680366\n\n$ ls /tmp/0123456789/.sage/gap/\nREADME.txt\t\t\tworkspace-8276014924322680366\n```",
     "created_at": "2014-09-18T03:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6900",
     "type": "issue_comment",
@@ -166,7 +168,6 @@ README.txt                     workspace-8276014924322680366
 $ ls /tmp/0123456789/.sage/gap/
 README.txt			workspace-8276014924322680366
 ```
-
 
 
 

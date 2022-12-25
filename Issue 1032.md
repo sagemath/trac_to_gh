@@ -207,7 +207,7 @@ Resolution changed from fixed to
 archive/issue_comments_006289.json:
 ```json
 {
-    "body": "This breaks a treasured old behavior:\n\n\n```\n17:48 < mabshoff> Stuff like\n17:48 < mabshoff> File \"polynomial_ring.py\", line 383:\n17:48 < mabshoff>     sage: latex(S)\n17:48 < mabshoff> Expected:\n17:48 < mabshoff>     \\mathbf{Z}[\\alpha_{12}]\n17:48 < mabshoff> Got:\n17:48 < mabshoff>     \\mathbf{Z}[\\text{alpha12}]\n17:48 < mabshoff> Should I just fix those?\n17:48 < wstein> Hey, \\mathbf{Z}[\\text{alpha12}] is pretty damned LAME imho.\n17:48 < mabshoff> Nope, they actually look wrong.\n17:48 < wstein> So joel got rid of the nice behavior that used to be there?\n17:49 < wstein> That's stupid.\n17:49 < wstein> Reject it.\n17:49 < mabshoff> back it out?\n17:49 < wstein> I'm ok with allowing alpha_12, but I don't agree with *forcing* the use \n                of underscores for subscripts.\n17:49 < wstein> The latex form of alpha12 can't have any meaning except $\\alpha_{12}$.\n17:49 < wstein> Yes, I would back it out.\n17:49 < wstein> That's annoying.\n\n```\n",
+    "body": "This breaks a treasured old behavior:\n\n```\n17:48 < mabshoff> Stuff like\n17:48 < mabshoff> File \"polynomial_ring.py\", line 383:\n17:48 < mabshoff>     sage: latex(S)\n17:48 < mabshoff> Expected:\n17:48 < mabshoff>     \\mathbf{Z}[\\alpha_{12}]\n17:48 < mabshoff> Got:\n17:48 < mabshoff>     \\mathbf{Z}[\\text{alpha12}]\n17:48 < mabshoff> Should I just fix those?\n17:48 < wstein> Hey, \\mathbf{Z}[\\text{alpha12}] is pretty damned LAME imho.\n17:48 < mabshoff> Nope, they actually look wrong.\n17:48 < wstein> So joel got rid of the nice behavior that used to be there?\n17:49 < wstein> That's stupid.\n17:49 < wstein> Reject it.\n17:49 < mabshoff> back it out?\n17:49 < wstein> I'm ok with allowing alpha_12, but I don't agree with *forcing* the use \n                of underscores for subscripts.\n17:49 < wstein> The latex form of alpha12 can't have any meaning except $\\alpha_{12}$.\n17:49 < wstein> Yes, I would back it out.\n17:49 < wstein> That's annoying.\n\n```",
     "created_at": "2007-11-02T00:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
@@ -217,7 +217,6 @@ archive/issue_comments_006289.json:
 ```
 
 This breaks a treasured old behavior:
-
 
 ```
 17:48 < mabshoff> Stuff like
@@ -241,7 +240,6 @@ This breaks a treasured old behavior:
 17:49 < wstein> That's annoying.
 
 ```
-
 
 
 
@@ -284,7 +282,7 @@ archive/issue_events_002821.json:
 archive/issue_comments_006291.json:
 ```json
 {
-    "body": "I disagree with the doc-tests above\n\nExhibit A (vanilla 2.8.10):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\text{alpha12}]\n```\n\n\nExhibit B (my patched version):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: latex\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\alpha_{12}]\n```\n",
+    "body": "I disagree with the doc-tests above\n\nExhibit A (vanilla 2.8.10):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\text{alpha12}]\n```\n\nExhibit B (my patched version):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: latex\nsage: P.<alpha12>=ZZ[]\nsage: latex(P)\n\\mathbf{Z}[\\alpha_{12}]\n```",
     "created_at": "2007-11-02T11:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
@@ -307,7 +305,6 @@ sage: latex(P)
 \mathbf{Z}[\text{alpha12}]
 ```
 
-
 Exhibit B (my patched version):
 
 ```
@@ -318,7 +315,6 @@ sage: P.<alpha12>=ZZ[]
 sage: latex(P)
 \mathbf{Z}[\alpha_{12}]
 ```
-
 
 
 

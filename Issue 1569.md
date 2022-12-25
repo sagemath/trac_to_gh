@@ -3,7 +3,7 @@
 archive/issues_001569.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs reported by Brandon Barker at http://groups.google.com/group/sage-devel/browse_thread/thread/52683f508ccefb39#:\n\n```\nsage: solve([3==3, 1.00000000000000*x^3 == 0], x)\n[]\nsage: solve([1.00000000000000*x^3 == 0], x)\n[x == 0]\nsage: solve([1==3, 1.00000000000000*x^3 == 0], x)\n[]\n```\n\n\nThe first result is wrong; it should be the same as the second.\n\nNote that \"3==3\" will immediately evaluate to a Python boolean True; probably solve() should just strip list elements that are True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1569\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by Brandon Barker at http://groups.google.com/group/sage-devel/browse_thread/thread/52683f508ccefb39#:\n\n```\nsage: solve([3==3, 1.00000000000000*x^3 == 0], x)\n[]\nsage: solve([1.00000000000000*x^3 == 0], x)\n[x == 0]\nsage: solve([1==3, 1.00000000000000*x^3 == 0], x)\n[]\n```\n\nThe first result is wrong; it should be the same as the second.\n\nNote that \"3==3\" will immediately evaluate to a Python boolean True; probably solve() should just strip list elements that are True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1569\n\n",
     "created_at": "2007-12-19T18:45:46Z",
     "labels": [
         "component: algebraic geometry",
@@ -28,7 +28,6 @@ sage: solve([1.00000000000000*x^3 == 0], x)
 sage: solve([1==3, 1.00000000000000*x^3 == 0], x)
 []
 ```
-
 
 The first result is wrong; it should be the same as the second.
 

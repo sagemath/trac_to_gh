@@ -3,7 +3,7 @@
 archive/issues_008577.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nThis should return `True` not `False` (reported by\nMichael Bachtold)\n\n\n```python\nsage: from sage.rings.polynomial.polydict import ETuple\nsage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8577\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nThis should return `True` not `False` (reported by\nMichael Bachtold)\n\n```python\nsage: from sage.rings.polynomial.polydict import ETuple\nsage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8577\n\n",
     "created_at": "2010-03-22T11:51:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,12 +23,10 @@ CC:  @orlitzky
 This should return `True` not `False` (reported by
 Michael Bachtold)
 
-
 ```python
 sage: from sage.rings.polynomial.polydict import ETuple
 sage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8577

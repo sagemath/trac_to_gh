@@ -3,7 +3,7 @@
 archive/issues_004656.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: padic powerseries\n\nThe following _repr_ does not look good to me\n\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: padic powerseries\n\nThe following _repr_ does not look good to me\n\n```\nsage: R.<T> = Qp(5,5)[[]]\nsage: O(5^3)*T\n0\nsage: 1+O(5^3)*T\n1 + O(5^5) + O(5^3)*T\n```\n\nBut that is due to \n\n```\nsage: s= O(5^3)*T\nsage: s.is_zero()\nTrue\nsage: s == R(0)\nFalse\n```\n\nThis I consider to be a bug according to the docstring of s.is_zero? saying\n\n```\nReturn True if self equals self.parent()(0).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4656\n\n",
     "created_at": "2008-11-29T21:53:42Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ Keywords: padic powerseries
 
 The following _repr_ does not look good to me
 
-
 ```
 sage: R.<T> = Qp(5,5)[[]]
 sage: O(5^3)*T
@@ -31,7 +30,6 @@ sage: O(5^3)*T
 sage: 1+O(5^3)*T
 1 + O(5^5) + O(5^3)*T
 ```
-
 
 But that is due to 
 
@@ -43,13 +41,11 @@ sage: s == R(0)
 False
 ```
 
-
 This I consider to be a bug according to the docstring of s.is_zero? saying
 
 ```
 Return True if self equals self.parent()(0).
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4656
 
@@ -167,7 +163,7 @@ this patch replaces the previous patch. It is the same, but some changes in page
 archive/issue_comments_035004.json:
 ```json
 {
-    "body": "Attachment [4656.second.patch](tarball://root/attachments/some-uuid/ticket4656/4656.second.patch) by mabshoff created at 2009-03-20 21:48:11\n\n4656.second.patch causes the following doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[11]>\", line 1, in <module>\n        EllipticCurve('1483a1').sha().an_padic(Integer(5)) # rank 2   (long time)###line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 418, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Attachment [4656.second.patch](tarball://root/attachments/some-uuid/ticket4656/4656.second.patch) by mabshoff created at 2009-03-20 21:48:11\n\n4656.second.patch causes the following doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[11]>\", line 1, in <module>\n        EllipticCurve('1483a1').sha().an_padic(Integer(5)) # rank 2   (long time)###line 299:\n    sage: EllipticCurve('1483a1').sha().an_padic(5) # rank 2   (long time)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 418, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-20T21:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -202,7 +198,6 @@ Exception raised:
 **********************************************************************
 ```
 
-
 Cheers,
 
 Michael
@@ -232,7 +227,7 @@ That doctest failure is serious and I have to look into that once #4667 is in.
 archive/issue_comments_035006.json:
 ```json
 {
-    "body": "I looked into the problem. It is not due to a bug in supersingular, but due to the following strange behaviour. This happens to me with the above second patch.\n\nI don't think that is ok :\n\n```\nsage: R = Qp(5,10)\nsage: RT.<T> = R[[]]\nsage: f = O(5^3) + O(5)*T +O(T^2)\nsage: f\nO(5^3) + O(5)*T + O(T^2)\nsage: f[1]\n0\n```\n\n\nf is now printed correctly, but the coefficient is not. In fact the precision of the coefficient is lost (and that happens without the patch, too):\n\n```\nsage: a= f[1]\nsage: a\n0\nsage: a.precision_absolute()\n+Infinity\n```\n\n\n\nNow, this looks really bad: \n\n```\nsage: v = matrix([[1,0],[0,1]])*vector([1,f])\nsage: v\n(1 + O(5^10), )\nsage: v[1]\n\nsage: type(v[1])\n<type 'sage.rings.power_series_poly.PowerSeries_poly'>\n```\n\n\nI must admit that I do not understand what is going on and if this ticket is in fact related to other known issues with p-adic series.",
+    "body": "I looked into the problem. It is not due to a bug in supersingular, but due to the following strange behaviour. This happens to me with the above second patch.\n\nI don't think that is ok :\n\n```\nsage: R = Qp(5,10)\nsage: RT.<T> = R[[]]\nsage: f = O(5^3) + O(5)*T +O(T^2)\nsage: f\nO(5^3) + O(5)*T + O(T^2)\nsage: f[1]\n0\n```\n\nf is now printed correctly, but the coefficient is not. In fact the precision of the coefficient is lost (and that happens without the patch, too):\n\n```\nsage: a= f[1]\nsage: a\n0\nsage: a.precision_absolute()\n+Infinity\n```\n\n\nNow, this looks really bad: \n\n```\nsage: v = matrix([[1,0],[0,1]])*vector([1,f])\nsage: v\n(1 + O(5^10), )\nsage: v[1]\n\nsage: type(v[1])\n<type 'sage.rings.power_series_poly.PowerSeries_poly'>\n```\n\nI must admit that I do not understand what is going on and if this ticket is in fact related to other known issues with p-adic series.",
     "created_at": "2009-04-21T17:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -255,7 +250,6 @@ sage: f[1]
 0
 ```
 
-
 f is now printed correctly, but the coefficient is not. In fact the precision of the coefficient is lost (and that happens without the patch, too):
 
 ```
@@ -265,7 +259,6 @@ sage: a
 sage: a.precision_absolute()
 +Infinity
 ```
-
 
 
 Now, this looks really bad: 
@@ -279,7 +272,6 @@ sage: v[1]
 sage: type(v[1])
 <type 'sage.rings.power_series_poly.PowerSeries_poly'>
 ```
-
 
 I must admit that I do not understand what is going on and if this ticket is in fact related to other known issues with p-adic series.
 
@@ -308,7 +300,7 @@ I'm working on p-adic polynomials, and thus on p-adic power series.  If you want
 archive/issue_comments_035008.json:
 ```json
 {
-    "body": "Replying to [comment:7 roed]:\n> I'm working on p-adic polynomials, and thus on p-adic power series.  If you want a status report on this ticket, let me know.\n\nMore specifically, this appears to be related to #5075. That ticket will (we hope) be resolved by the omnibus patch on #6084.",
+    "body": "Replying to [comment:7 roed]:\n> I'm working on p-adic polynomials, and thus on p-adic power series.  If you want a status report on this ticket, let me know.\n\n\nMore specifically, this appears to be related to #5075. That ticket will (we hope) be resolved by the omnibus patch on #6084.",
     "created_at": "2009-05-20T21:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4656",
     "type": "issue_comment",
@@ -319,6 +311,7 @@ archive/issue_comments_035008.json:
 
 Replying to [comment:7 roed]:
 > I'm working on p-adic polynomials, and thus on p-adic power series.  If you want a status report on this ticket, let me know.
+
 
 More specifically, this appears to be related to #5075. That ticket will (we hope) be resolved by the omnibus patch on #6084.
 

@@ -3,7 +3,7 @@
 archive/issues_007471.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n\n> 2009/11/15 Jason Moxham <>:\n>>\n>> Solved???\n>>\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/config.guess\n>> 660c660\n>> < i?86-*-*|x86_64-*-*|amd64-*-*)\n>> ---\n>>> i?86-*-*|x86_64-*-*)\n>> 755c755\n>> <   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy ${dummy}.exe\n>> ---\n>>>   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/mpn/x86/fat/fat.c\n>> 141d140\n>> <   __MPN(divrem_euclidean_qr_2_init),\n>>\n>> and perhaps some others ?\n>> Please update sage mpir-1.2 with current mpir-1.2\n\nExcellent, thanks for tracking this down!   \n\nNow, I wonder what idiot messed up Sage's mpir-1.2 spkg by not updating the patches properly?\n\n[... checks SPKG.txt ...]\n\n### mpir-1.2 (William Stein, May 31, 2009)\n * Update to the latest MPIR 1.2 pre-release\n * Change \"GMP\" --> \"MPIR\" in various places.\n\nDoh.  \n\n\n\n2009/11/15 Bill Hart <>:\n>\n> I probably should put mpir-1.2.2 up actually, as it contained a\n> FreeBSD fix specifically for Sage.\n>\n> I'll have to update the gplv3.txt and license info for mpf/set_str.c though.\n>\n> Give me a few minutes and I'll do it.\n\nThanks.   I can't work on this further until tonight because my internet connection is so horrible.  \n\n> Bill.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/7471\n\n",
+    "body": "Assignee: tbd\n\n```\n\n> 2009/11/15 Jason Moxham <>:\n>>\n>> Solved???\n>>\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/config.guess\n>> 660c660\n>> < i?86-*-*|x86_64-*-*|amd64-*-*)\n>> ---\n>>> i?86-*-*|x86_64-*-*)\n>> 755c755\n>> <   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy ${dummy}.exe\n>> ---\n>>>   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/mpn/x86/fat/fat.c\n>> 141d140\n>> <   __MPN(divrem_euclidean_qr_2_init),\n>>\n>> and perhaps some others ?\n>> Please update sage mpir-1.2 with current mpir-1.2\n\nExcellent, thanks for tracking this down!   \n\nNow, I wonder what idiot messed up Sage's mpir-1.2 spkg by not updating the patches properly?\n\n[... checks SPKG.txt ...]\n\n### mpir-1.2 (William Stein, May 31, 2009)\n * Update to the latest MPIR 1.2 pre-release\n * Change \"GMP\" --> \"MPIR\" in various places.\n\nDoh.  \n\n\n\n2009/11/15 Bill Hart <>:\n>\n> I probably should put mpir-1.2.2 up actually, as it contained a\n> FreeBSD fix specifically for Sage.\n>\n> I'll have to update the gplv3.txt and license info for mpf/set_str.c though.\n>\n> Give me a few minutes and I'll do it.\n\nThanks.   I can't work on this further until tonight because my internet connection is so horrible.  \n\n> Bill.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/7471\n\n",
     "created_at": "2009-11-15T18:02:44Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_007471.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 
@@ -146,7 +145,7 @@ All I did was put the latest vanilla spkg from http://mpir.org in the src direct
 archive/issue_comments_062817.json:
 ```json
 {
-    "body": "I just tested this on the \"debian32\" virtual machine and it works:\n\n```\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ export SAGE_FAT_BINARY=\"yes\"\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ sage -f http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg spkg/standard/pari-2.3.3.p5.spkg \n...\nchecking if the assembler knows about SSE2 instructions... yes\nusing ABI=\"32\"\n      CC=\"gcc -std=gnu99\"\n      CFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      CPPFLAGS=\"\"\n      CXX=\"g++\"\n      CXXFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      MPN_PATH=\" x86/fat x86 generic\"\nchecking for function prototypes... yes\n\n...\n\nreal    1m23.877s\nuser    0m42.855s\nsys     0m34.066s\nSuccessfully installed pari-2.3.3.p5\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pari-2.3.3.p5.spkg\n```\n",
+    "body": "I just tested this on the \"debian32\" virtual machine and it works:\n\n```\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ export SAGE_FAT_BINARY=\"yes\"\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ sage -f http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg spkg/standard/pari-2.3.3.p5.spkg \n...\nchecking if the assembler knows about SSE2 instructions... yes\nusing ABI=\"32\"\n      CC=\"gcc -std=gnu99\"\n      CFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      CPPFLAGS=\"\"\n      CXX=\"g++\"\n      CXXFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      MPN_PATH=\" x86/fat x86 generic\"\nchecking for function prototypes... yes\n\n...\n\nreal    1m23.877s\nuser    0m42.855s\nsys     0m34.066s\nSuccessfully installed pari-2.3.3.p5\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pari-2.3.3.p5.spkg\n```",
     "created_at": "2009-11-18T17:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
@@ -182,7 +181,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing pari-2.3.3.p5.spkg
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002310.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nI found this bug when testing #1964.  To replicate, create a file a.sage and put \n\n```\nattach b.sage\n```\n\nin it.  This fails, but {{{attach \"b.sage\"} works.  This was a problem before this patch, so it is NOT the fault of this patch.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2310\n\n",
+    "body": "Assignee: cwitty\n\nI found this bug when testing #1964.  To replicate, create a file a.sage and put \n\n```\nattach b.sage\n```\nin it.  This fails, but {{{attach \"b.sage\"} works.  This was a problem before this patch, so it is NOT the fault of this patch.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2310\n\n",
     "created_at": "2008-02-26T04:15:27Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ I found this bug when testing #1964.  To replicate, create a file a.sage and put
 ```
 attach b.sage
 ```
-
 in it.  This fails, but {{{attach "b.sage"} works.  This was a problem before this patch, so it is NOT the fault of this patch.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/2310

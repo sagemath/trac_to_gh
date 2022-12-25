@@ -164,7 +164,7 @@ rebased on 4.3.rc0 + #7640
 archive/issue_comments_065650.json:
 ```json
 {
-    "body": "Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by @rlmill created at 2009-12-14 02:54:06\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\nOK, I've posted a new patch.",
+    "body": "Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/trac_7673.patch) by @rlmill created at 2009-12-14 02:54:06\n\nReplying to [comment:4 rlm]:\n> This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?\n\n\nOK, I've posted a new patch.",
     "created_at": "2009-12-14T02:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
@@ -177,6 +177,7 @@ Attachment [trac_7673.patch](tarball://root/attachments/some-uuid/ticket7673/tra
 
 Replying to [comment:4 rlm]:
 > This is going to conflict with the patch at #7640. Can you rebase this patch on 4.3.rc0 + #7640?
+
 
 OK, I've posted a new patch.
 
@@ -292,7 +293,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_065654.json:
 ```json
 {
-    "body": "Hi,\nI'm sorry, but this implementation is buggy...\n\n```\nsage: G = Graph()\nsage: G.add_edge(0,1,9)\nsage: G.add_edge(0,2,8)\nsage: G.add_edge(1,2,7)\nsage: G.shortest_path(0,1,by_weight=True)\n[0, 1]\nsage: G.shortest_path_length(0,1,by_weight=True)\n9\nsage: Gc = G.copy(implementation='c_graph')\nsage: Gc.shortest_path(0,1,by_weight=True)\n[0, 2, 1]\nsage: Gc.shortest_path_length(0,1,by_weight=True)\n15\n```\n",
+    "body": "Hi,\nI'm sorry, but this implementation is buggy...\n\n```\nsage: G = Graph()\nsage: G.add_edge(0,1,9)\nsage: G.add_edge(0,2,8)\nsage: G.add_edge(1,2,7)\nsage: G.shortest_path(0,1,by_weight=True)\n[0, 1]\nsage: G.shortest_path_length(0,1,by_weight=True)\n9\nsage: Gc = G.copy(implementation='c_graph')\nsage: Gc.shortest_path(0,1,by_weight=True)\n[0, 2, 1]\nsage: Gc.shortest_path_length(0,1,by_weight=True)\n15\n```",
     "created_at": "2009-12-14T09:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
@@ -319,7 +320,6 @@ sage: Gc.shortest_path(0,1,by_weight=True)
 sage: Gc.shortest_path_length(0,1,by_weight=True)
 15
 ```
-
 
 
 
@@ -373,7 +373,7 @@ Replying to [comment:9 ncohen]:
 archive/issue_comments_065657.json:
 ```json
 {
-    "body": "Replying to [comment:9 ncohen]:\n> Clearly, it is !! Thank you for taking a lot at it :-)\n> \n> Well, the only bugfix I can think about is to keep in memory the vertex v such \n> that dist_y[v] + dist_x[v] is minimal, and only build the path when \n> the neighborhoods of x and y at distance 2*(dist_y[v] + dist_x[v]) have \n> been explored. It clearly fixes your counter-example, and I think it \n\n\nMaybe this is related to the \"piority queue\" in Demaine's descrition\nof the algorithm in\n\n\n```\nhttp://ocw.mit.edu/NR/rdonlyres/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/651C0FC9-55D1-4404-A801-A9D0392A668C/0/lec17.pdf\n```\n\nat\n\n```\nhttp://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/VideoLectures/detail/embed17.htm\n```\n\n\n\n> should solve all others, but I woud be glad to write a nicer solution... \n> Any idea ? :-)\n> \n> Thank you very much again ! :-)\n> \n> Nathann",
+    "body": "Replying to [comment:9 ncohen]:\n> Clearly, it is !! Thank you for taking a lot at it :-)\n> \n> Well, the only bugfix I can think about is to keep in memory the vertex v such \n> that dist_y[v] + dist_x[v] is minimal, and only build the path when \n> the neighborhoods of x and y at distance 2*(dist_y[v] + dist_x[v]) have \n> been explored. It clearly fixes your counter-example, and I think it \n\n\n\nMaybe this is related to the \"piority queue\" in Demaine's descrition\nof the algorithm in\n\n```\nhttp://ocw.mit.edu/NR/rdonlyres/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/651C0FC9-55D1-4404-A801-A9D0392A668C/0/lec17.pdf\n```\nat\n\n```\nhttp://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/VideoLectures/detail/embed17.htm\n```\n\n\n> should solve all others, but I woud be glad to write a nicer solution... \n> Any idea ? :-)\n> \n> Thank you very much again ! :-)\n> \n> Nathann",
     "created_at": "2009-12-14T12:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7673",
     "type": "issue_comment",
@@ -391,20 +391,18 @@ Replying to [comment:9 ncohen]:
 > been explored. It clearly fixes your counter-example, and I think it 
 
 
+
 Maybe this is related to the "piority queue" in Demaine's descrition
 of the algorithm in
-
 
 ```
 http://ocw.mit.edu/NR/rdonlyres/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/651C0FC9-55D1-4404-A801-A9D0392A668C/0/lec17.pdf
 ```
-
 at
 
 ```
 http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/VideoLectures/detail/embed17.htm
 ```
-
 
 
 > should solve all others, but I woud be glad to write a nicer solution... 

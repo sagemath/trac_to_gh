@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5460
 archive/issue_comments_042313.json:
 ```json
 {
-    "body": "Replying to [ticket:5460 jhpalmieri]:\nI get the deprecation warning with a singular matrix, but not with a nonsingular matrix.  Is this the desired/expected behavior?  Otherwise, it looks good, passed tests, etc.\n\n\n\n```\nsage: a=matrix(QQ, [[1,2],[3,6]])\nsage: a.invert()\n/opt/sage-dev/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: 'invert' is deprecated; use 'inverse' instead.\n  exec code_obj in self.user_global_ns, self.user_ns\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n<snip>\n```\n\n\n\n```\nsage: b=matrix(QQ, [[1,2],[3,7]])\nsage: b.invert()\n\n[ 7 -2]\n[-3  1]\n```\n\n\n\n```",
+    "body": "Replying to [ticket:5460 jhpalmieri]:\nI get the deprecation warning with a singular matrix, but not with a nonsingular matrix.  Is this the desired/expected behavior?  Otherwise, it looks good, passed tests, etc.\n\n\n```\nsage: a=matrix(QQ, [[1,2],[3,6]])\nsage: a.invert()\n/opt/sage-dev/local/lib/python2.5/site-packages/IPython/iplib.py:2073: DeprecationWarning: 'invert' is deprecated; use 'inverse' instead.\n  exec code_obj in self.user_global_ns, self.user_ns\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n<snip>\n```\n\n```\nsage: b=matrix(QQ, [[1,2],[3,7]])\nsage: b.invert()\n\n[ 7 -2]\n[-3  1]\n```\n\n```",
     "created_at": "2009-03-10T04:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ Replying to [ticket:5460 jhpalmieri]:
 I get the deprecation warning with a singular matrix, but not with a nonsingular matrix.  Is this the desired/expected behavior?  Otherwise, it looks good, passed tests, etc.
 
 
-
 ```
 sage: a=matrix(QQ, [[1,2],[3,6]])
 sage: a.invert()
@@ -57,8 +56,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 <snip>
 ```
 
-
-
 ```
 sage: b=matrix(QQ, [[1,2],[3,7]])
 sage: b.invert()
@@ -66,8 +63,6 @@ sage: b.invert()
 [ 7 -2]
 [-3  1]
 ```
-
-
 
 ```
 
@@ -141,7 +136,7 @@ Positive review (based on rbeezer's positive review) pending the changes to docu
 archive/issue_comments_042317.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n\n> Do the doctests pass for the invert function?  If so, I'm surprised; I thought that the doctest output would have to include the deprecation statement.\n\nI'd have assumed the same.  But doctests on the one source file passed, and  `sage -testall` only gave spurious unrelated errors in one file, and I'd seen those recently, so they should be unrelated.",
+    "body": "Replying to [comment:4 jason]:\n\n> Do the doctests pass for the invert function?  If so, I'm surprised; I thought that the doctest output would have to include the deprecation statement.\n\n\nI'd have assumed the same.  But doctests on the one source file passed, and  `sage -testall` only gave spurious unrelated errors in one file, and I'd seen those recently, so they should be unrelated.",
     "created_at": "2009-03-10T14:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
@@ -153,6 +148,7 @@ archive/issue_comments_042317.json:
 Replying to [comment:4 jason]:
 
 > Do the doctests pass for the invert function?  If so, I'm surprised; I thought that the doctest output would have to include the deprecation statement.
+
 
 I'd have assumed the same.  But doctests on the one source file passed, and  `sage -testall` only gave spurious unrelated errors in one file, and I'd seen those recently, so they should be unrelated.
 
@@ -201,7 +197,7 @@ Here's a new patch; the only difference is the documentation for 'invert'.
 archive/issue_comments_042320.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> Here's a new patch; the only difference is the documentation for 'invert'.\n\nLooks like its all ready now.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> Here's a new patch; the only difference is the documentation for 'invert'.\n\n\nLooks like its all ready now.",
     "created_at": "2009-03-10T19:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5460",
     "type": "issue_comment",
@@ -212,6 +208,7 @@ archive/issue_comments_042320.json:
 
 Replying to [comment:7 jhpalmieri]:
 > Here's a new patch; the only difference is the documentation for 'invert'.
+
 
 Looks like its all ready now.
 

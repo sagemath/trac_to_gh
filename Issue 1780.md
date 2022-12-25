@@ -3,7 +3,7 @@
 archive/issues_001780.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWhile mpfr 2.3.1 should be out shortly I integrated a patch from http://websympa.loria.fr/wwsympa/arc/mpfr/2008-01/msg00044.html\n\nWhat happens is that mpfr uses alloca() instead of the default gmp allocator. alloca() uses the stack and on most modern systems causes segfaults by smashing the stack. One example is the following Sage code (by Paul Zimmermann):\n\n\n```\nsage: R=RealField(16777216)\nsage: t=[]\nsage: for n in range(1500):\n   t.append(R(n)) \n```\n\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha3/mpfr-2.3.0.p1.spkg\n\nfixes this issue and also adds build support for 64 bit MacIntel builds.\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1780\n\n",
+    "body": "Assignee: mabshoff\n\nWhile mpfr 2.3.1 should be out shortly I integrated a patch from http://websympa.loria.fr/wwsympa/arc/mpfr/2008-01/msg00044.html\n\nWhat happens is that mpfr uses alloca() instead of the default gmp allocator. alloca() uses the stack and on most modern systems causes segfaults by smashing the stack. One example is the following Sage code (by Paul Zimmermann):\n\n```\nsage: R=RealField(16777216)\nsage: t=[]\nsage: for n in range(1500):\n   t.append(R(n)) \n```\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha3/mpfr-2.3.0.p1.spkg\n\nfixes this issue and also adds build support for 64 bit MacIntel builds.\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1780\n\n",
     "created_at": "2008-01-15T01:48:59Z",
     "labels": [
         "component: packages: standard",
@@ -22,14 +22,12 @@ While mpfr 2.3.1 should be out shortly I integrated a patch from http://websympa
 
 What happens is that mpfr uses alloca() instead of the default gmp allocator. alloca() uses the stack and on most modern systems causes segfaults by smashing the stack. One example is the following Sage code (by Paul Zimmermann):
 
-
 ```
 sage: R=RealField(16777216)
 sage: t=[]
 sage: for n in range(1500):
    t.append(R(n)) 
 ```
-
 
 The spkg at 
 

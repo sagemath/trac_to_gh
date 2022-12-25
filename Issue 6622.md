@@ -3,7 +3,7 @@
 archive/issues_006622.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\n\nAfter the call above, D should *not* be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: D = {v: 2}\nsage: f(D, t=3)\n6\nsage: D\n{v: 2, t: 3}\n```\n\nAfter the call above, D should *not* be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6622\n\n",
     "created_at": "2009-07-25T20:05:50Z",
     "labels": [
         "component: calculus",
@@ -18,7 +18,6 @@ archive/issues_006622.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: var('v t')
 sage: f = v*t
@@ -28,7 +27,6 @@ sage: f(D, t=3)
 sage: D
 {v: 2, t: 3}
 ```
-
 
 After the call above, D should *not* be changed.
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6622
 archive/issue_comments_054156.json:
 ```json
 {
-    "body": "Here's how to workaround it (namely, put \"dict(constants)\" instead of \"constants\").  In the code for __call__ or subs, something similar should be done. \n\n\n```\nsage: var('v t')\nsage: f = v*t\nsage: s = {v: 2}\nsage: f(dict(s), t=3)\n6\nsage: s\n{v: 2}\n```\n",
+    "body": "Here's how to workaround it (namely, put \"dict(constants)\" instead of \"constants\").  In the code for __call__ or subs, something similar should be done. \n\n```\nsage: var('v t')\nsage: f = v*t\nsage: s = {v: 2}\nsage: f(dict(s), t=3)\n6\nsage: s\n{v: 2}\n```",
     "created_at": "2009-07-25T20:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6622",
     "type": "issue_comment",
@@ -54,7 +52,6 @@ archive/issue_comments_054156.json:
 
 Here's how to workaround it (namely, put "dict(constants)" instead of "constants").  In the code for __call__ or subs, something similar should be done. 
 
-
 ```
 sage: var('v t')
 sage: f = v*t
@@ -64,7 +61,6 @@ sage: f(dict(s), t=3)
 sage: s
 {v: 2}
 ```
-
 
 
 

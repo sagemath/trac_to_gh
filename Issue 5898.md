@@ -90,7 +90,7 @@ reviewer patch based on sage-3.4.2.alpha0
 archive/issue_comments_046544.json:
 ```json
 {
-    "body": "Attachment [trac_5898-referee.patch](tarball://root/attachments/some-uuid/ticket5898/trac_5898-referee.patch) by mvngu created at 2009-04-26 04:48:47\n\nREFEREE REPORT\n\n\n\nThat patch `plot_field-patch.patch` applies OK against Sage 3.4.2.alpha0. All doctests passed with options `-t -long`, and the coverage for `sage/plot/plot_field.py` is indeed 100% as claimed. However, when I ran the coverage on that file, I received this\n\n```\n[mvngu@sage sage-3.4.2.alpha0]$ ./sage -coverage devel/sage-exp/sage/plot/plot_field.py \n----------------------------------------------------------------------\ndevel/sage-exp/sage/plot/plot_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-exp/sage/plot/plot_field.py: 100% (7 of 7)\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _repr_(self):\n         * _render_on_subplot(self, subplot):\n```\n\nNotice the line\n\n```\nERROR: Please define a s == loads(dumps(s)) doctest.\n```\n\nApart from that, there are some minor typos. These are trivial to fix. The reviewer patch `trac_5898-referee.patch` should take care of them. Basically, it adds a test to dump and load a plot so that the above error line should be gone when running coverage on `sage/plot/plot_field.py `. So `plot_field-patch.patch` gets a positive review; only `trac_5898-referee.patch` needs to be reviewed.",
+    "body": "Attachment [trac_5898-referee.patch](tarball://root/attachments/some-uuid/ticket5898/trac_5898-referee.patch) by mvngu created at 2009-04-26 04:48:47\n\nREFEREE REPORT\n\n\n\nThat patch `plot_field-patch.patch` applies OK against Sage 3.4.2.alpha0. All doctests passed with options `-t -long`, and the coverage for `sage/plot/plot_field.py` is indeed 100% as claimed. However, when I ran the coverage on that file, I received this\n\n```\n[mvngu@sage sage-3.4.2.alpha0]$ ./sage -coverage devel/sage-exp/sage/plot/plot_field.py \n----------------------------------------------------------------------\ndevel/sage-exp/sage/plot/plot_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-exp/sage/plot/plot_field.py: 100% (7 of 7)\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _repr_(self):\n         * _render_on_subplot(self, subplot):\n```\nNotice the line\n\n```\nERROR: Please define a s == loads(dumps(s)) doctest.\n```\nApart from that, there are some minor typos. These are trivial to fix. The reviewer patch `trac_5898-referee.patch` should take care of them. Basically, it adds a test to dump and load a plot so that the above error line should be gone when running coverage on `sage/plot/plot_field.py `. So `plot_field-patch.patch` gets a positive review; only `trac_5898-referee.patch` needs to be reviewed.",
     "created_at": "2009-04-26T04:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5898",
     "type": "issue_comment",
@@ -118,13 +118,11 @@ Possibly wrong (function name doesn't occur in doctests):
          * _repr_(self):
          * _render_on_subplot(self, subplot):
 ```
-
 Notice the line
 
 ```
 ERROR: Please define a s == loads(dumps(s)) doctest.
 ```
-
 Apart from that, there are some minor typos. These are trivial to fix. The reviewer patch `trac_5898-referee.patch` should take care of them. Basically, it adds a test to dump and load a plot so that the above error line should be gone when running coverage on `sage/plot/plot_field.py `. So `plot_field-patch.patch` gets a positive review; only `trac_5898-referee.patch` needs to be reviewed.
 
 

@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2039
 archive/issue_comments_013168.json:
 ```json
 {
-    "body": "Do you mean from a running Sage?  Just use the version command. \n\n\n```\nteragon:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: version()\n'SAGE Version 2.10.1, Release Date: 2008-02-02'\n```\n",
+    "body": "Do you mean from a running Sage?  Just use the version command. \n\n```\nteragon:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: version()\n'SAGE Version 2.10.1, Release Date: 2008-02-02'\n```",
     "created_at": "2008-02-03T20:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2039",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_013168.json:
 
 Do you mean from a running Sage?  Just use the version command. 
 
-
 ```
 teragon:~ was$ sage
 ----------------------------------------------------------------------
@@ -52,7 +51,6 @@ teragon:~ was$ sage
 sage: version()
 'SAGE Version 2.10.1, Release Date: 2008-02-02'
 ```
-
 
 
 
@@ -97,7 +95,7 @@ If you wanted to compare versions, then you'd have to parse out the version for 
 archive/issue_comments_013171.json:
 ```json
 {
-    "body": "I think a function, maybe a variety of version(), should return some tuple with [major, minor, tiny]. We should also offer some functions, say something like require_version(X,Y,Z), that would return false for any sage release before X.Y.Z and print a helpful error message, i.e. \n\n\n```\nThe code needs at least Sage version X.Y.Z to work correctly. You are \nrunning Sage version K.P.L. To upgrade yada, yada, yada ...\n```\n\n\nCheers,\n\nMichael",
+    "body": "I think a function, maybe a variety of version(), should return some tuple with [major, minor, tiny]. We should also offer some functions, say something like require_version(X,Y,Z), that would return false for any sage release before X.Y.Z and print a helpful error message, i.e. \n\n```\nThe code needs at least Sage version X.Y.Z to work correctly. You are \nrunning Sage version K.P.L. To upgrade yada, yada, yada ...\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-04T04:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2039",
     "type": "issue_comment",
@@ -108,12 +106,10 @@ archive/issue_comments_013171.json:
 
 I think a function, maybe a variety of version(), should return some tuple with [major, minor, tiny]. We should also offer some functions, say something like require_version(X,Y,Z), that would return false for any sage release before X.Y.Z and print a helpful error message, i.e. 
 
-
 ```
 The code needs at least Sage version X.Y.Z to work correctly. You are 
 running Sage version K.P.L. To upgrade yada, yada, yada ...
 ```
-
 
 Cheers,
 

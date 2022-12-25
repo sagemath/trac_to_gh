@@ -84,7 +84,7 @@ was: can you clarify that this is the intended effect.
 archive/issue_comments_012712.json:
 ```json
 {
-    "body": "> was: can you clarify that this is the intended effect.\n\nYes, that is exactly the intended effect.  Excellent.",
+    "body": "> was: can you clarify that this is the intended effect.\n\n\nYes, that is exactly the intended effect.  Excellent.",
     "created_at": "2008-02-01T05:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1968",
     "type": "issue_comment",
@@ -94,6 +94,7 @@ archive/issue_comments_012712.json:
 ```
 
 > was: can you clarify that this is the intended effect.
+
 
 Yes, that is exactly the intended effect.  Excellent.
 

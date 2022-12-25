@@ -394,7 +394,7 @@ Jen and I worked on reviewing this last weekend, but I'm getting married on Satu
 archive/issue_comments_004914.json:
 ```json
 {
-    "body": "patchbot:\n\n```\nsage -t --long src/sage/doctest/sources.py  # 1 doctest failed\nsage -t --long src/sage/modular/pollack_stevens/distributions.py  # 1 doctest failed\nsage -t --long src/sage/modular/btquotients/pautomorphicform.py  # 2 doctests failed\n```\n",
+    "body": "patchbot:\n\n```\nsage -t --long src/sage/doctest/sources.py  # 1 doctest failed\nsage -t --long src/sage/modular/pollack_stevens/distributions.py  # 1 doctest failed\nsage -t --long src/sage/modular/btquotients/pautomorphicform.py  # 2 doctests failed\n```",
     "created_at": "2014-05-07T12:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -410,7 +410,6 @@ sage -t --long src/sage/doctest/sources.py  # 1 doctest failed
 sage -t --long src/sage/modular/pollack_stevens/distributions.py  # 1 doctest failed
 sage -t --long src/sage/modular/btquotients/pautomorphicform.py  # 2 doctests failed
 ```
-
 
 
 
@@ -437,7 +436,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_004916.json:
 ```json
 {
-    "body": "I have made some large scale cleanup of the file btquotient (pyflakes and pep8 compliance). And also taken care of the \"doctest continuation\" plugin failure.\n----\nNew commits:",
+    "body": "I have made some large scale cleanup of the file btquotient (pyflakes and pep8 compliance). And also taken care of the \"doctest continuation\" plugin failure.\n\n---\nNew commits:",
     "created_at": "2014-05-09T19:33:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -447,7 +446,8 @@ archive/issue_comments_004916.json:
 ```
 
 I have made some large scale cleanup of the file btquotient (pyflakes and pep8 compliance). And also taken care of the "doctest continuation" plugin failure.
-----
+
+---
 New commits:
 
 
@@ -901,7 +901,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_004941.json:
 ```json
 {
-    "body": "Thanks. But doc still does not build.\nThe problem is probably here:\n\n```\n+        -  ``sign`` - None (default), 0, +1 or -1. If None, choose the default\n+        according to the implementation, which currently is 0 for pollack-stevens,\n+        and 1 otherwise.\n```\n\nwhere the last two lines should be indented by 2.\n\nYou can check that the doc build using something like that\n\n```\nsage -docbuild reference/plane_curves html\n```\n\n\n\nYou also used a wrong newstyle doctest continuation, the correct one is `....:`\nPlease correct.",
+    "body": "Thanks. But doc still does not build.\nThe problem is probably here:\n\n```\n+        -  ``sign`` - None (default), 0, +1 or -1. If None, choose the default\n+        according to the implementation, which currently is 0 for pollack-stevens,\n+        and 1 otherwise.\n```\nwhere the last two lines should be indented by 2.\n\nYou can check that the doc build using something like that\n\n```\nsage -docbuild reference/plane_curves html\n```\n\n\nYou also used a wrong newstyle doctest continuation, the correct one is `....:`\nPlease correct.",
     "created_at": "2016-04-07T12:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -918,7 +918,6 @@ The problem is probably here:
 +        according to the implementation, which currently is 0 for pollack-stevens,
 +        and 1 otherwise.
 ```
-
 where the last two lines should be indented by 2.
 
 You can check that the doc build using something like that
@@ -926,7 +925,6 @@ You can check that the doc build using something like that
 ```
 sage -docbuild reference/plane_curves html
 ```
-
 
 
 You also used a wrong newstyle doctest continuation, the correct one is `....:`
@@ -1053,7 +1051,7 @@ Peter,
 archive/issue_comments_004948.json:
 ```json
 {
-    "body": "Hi Marc,\n> The import * commands are not added by this ticket, which only concerns .../pollack_stevens and .../btquotients. In sage/modular/all.py we do import everything in btquotients/all.py (and same for pollack_stevens) but this should be fine, since that file contains only the modules that need to be put in the global namespace.\nIt is actually less bad than I thought, but if I understand the import statements correctly, all of the following will end up in the global namespace:\n- `BTQuotient`\n- `DoubleCosetReduction`\n- `HarmonicCocycleElement`\n- `HarmonicCocycles`\n- `pAutomorphicFormElement`\n- `pAutomorphicForms`\n- `PSModularSymbols`\n- `Distributions`\n- `Symk`\n- `ManinRelations`\n- `pAdicLseries`\nI think most mathematicians who are not specialists in automorphic forms couldn't guess what any of these means, let alone the average Sage user...",
+    "body": "Hi Marc,\n> The import * commands are not added by this ticket, which only concerns .../pollack_stevens and .../btquotients. In sage/modular/all.py we do import everything in btquotients/all.py (and same for pollack_stevens) but this should be fine, since that file contains only the modules that need to be put in the global namespace.\n\nIt is actually less bad than I thought, but if I understand the import statements correctly, all of the following will end up in the global namespace:\n- `BTQuotient`\n- `DoubleCosetReduction`\n- `HarmonicCocycleElement`\n- `HarmonicCocycles`\n- `pAutomorphicFormElement`\n- `pAutomorphicForms`\n- `PSModularSymbols`\n- `Distributions`\n- `Symk`\n- `ManinRelations`\n- `pAdicLseries`\nI think most mathematicians who are not specialists in automorphic forms couldn't guess what any of these means, let alone the average Sage user...",
     "created_at": "2016-04-13T22:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1064,6 +1062,7 @@ archive/issue_comments_004948.json:
 
 Hi Marc,
 > The import * commands are not added by this ticket, which only concerns .../pollack_stevens and .../btquotients. In sage/modular/all.py we do import everything in btquotients/all.py (and same for pollack_stevens) but this should be fine, since that file contains only the modules that need to be put in the global namespace.
+
 It is actually less bad than I thought, but if I understand the import statements correctly, all of the following will end up in the global namespace:
 - `BTQuotient`
 - `DoubleCosetReduction`
@@ -1085,7 +1084,7 @@ I think most mathematicians who are not specialists in automorphic forms couldn'
 archive/issue_comments_004949.json:
 ```json
 {
-    "body": "Replying to [comment:51 pbruin]:\n> - `BTQuotient`\n> - `DoubleCosetReduction` - removed\n> - `HarmonicCocycleElement` - removed\n> - `HarmonicCocycles`\n> - `pAutomorphicFormElement` - removed\n> - `pAutomorphicForms`\n> - `PSModularSymbols`\n> - `Distributions`\n> - `Symk`\n> - `ManinRelations` - removed\n> - `pAdicLseries` - removed\n> I think most mathematicians who are not specialists in automorphic forms couldn't guess what any of these means, let alone the average Sage user...\nSo the new proposed list would be:\n- `BTQuotient`\n- `HarmonicCocycles`\n- `pAutomorphicForms`\n- `PSModularSymbols\n- `Distributions`\n- `Symk`\nWould this be more reasonable? Considering that objects like `CrystalOfProjectedLevelZeroLSPaths` is also in the global namespace, I mean. Also, have you seen Magma's global namespace? It doesn't prevent people from using it :-).",
+    "body": "Replying to [comment:51 pbruin]:\n> - `BTQuotient`\n> - `DoubleCosetReduction` - removed\n> - `HarmonicCocycleElement` - removed\n> - `HarmonicCocycles`\n> - `pAutomorphicFormElement` - removed\n> - `pAutomorphicForms`\n> - `PSModularSymbols`\n> - `Distributions`\n> - `Symk`\n> - `ManinRelations` - removed\n> - `pAdicLseries` - removed\n> I think most mathematicians who are not specialists in automorphic forms couldn't guess what any of these means, let alone the average Sage user...\n\nSo the new proposed list would be:\n- `BTQuotient`\n- `HarmonicCocycles`\n- `pAutomorphicForms`\n- `PSModularSymbols\n- `Distributions`\n- `Symk`\nWould this be more reasonable? Considering that objects like `CrystalOfProjectedLevelZeroLSPaths` is also in the global namespace, I mean. Also, have you seen Magma's global namespace? It doesn't prevent people from using it :-).",
     "created_at": "2016-04-13T22:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1107,6 +1106,7 @@ Replying to [comment:51 pbruin]:
 > - `ManinRelations` - removed
 > - `pAdicLseries` - removed
 > I think most mathematicians who are not specialists in automorphic forms couldn't guess what any of these means, let alone the average Sage user...
+
 So the new proposed list would be:
 - `BTQuotient`
 - `HarmonicCocycles`
@@ -1123,7 +1123,7 @@ Would this be more reasonable? Considering that objects like `CrystalOfProjected
 archive/issue_comments_004950.json:
 ```json
 {
-    "body": "Replying to [comment:52 mmasdeu]:\n> So the new proposed list would be:\n> - `BTQuotient`\n> - `HarmonicCocycles`\n> - `pAutomorphicForms`\n> - `PSModularSymbols\n> - `Distributions`\n> - `Symk`\n> Would this be more reasonable? Considering that objects like `CrystalOfProjectedLevelZeroLSPaths` is also in the global namespace, I mean.\nThis does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).\n\nBy the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...\n> Also, have you seen Magma's global namespace? It doesn't prevent people from using it :-).\nWell, many things are functions in Magma that are methods in Sage, so in principle the global namespace should be cleaner in Sage...\n\n**Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.",
+    "body": "Replying to [comment:52 mmasdeu]:\n> So the new proposed list would be:\n> - `BTQuotient`\n> - `HarmonicCocycles`\n> - `pAutomorphicForms`\n> - `PSModularSymbols\n> - `Distributions`\n> - `Symk`\n> Would this be more reasonable? Considering that objects like `CrystalOfProjectedLevelZeroLSPaths` is also in the global namespace, I mean.\n\nThis does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).\n\nBy the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...\n> Also, have you seen Magma's global namespace? It doesn't prevent people from using it :-).\n\nWell, many things are functions in Magma that are methods in Sage, so in principle the global namespace should be cleaner in Sage...\n\n**Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.",
     "created_at": "2016-04-13T22:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1141,10 +1141,12 @@ Replying to [comment:52 mmasdeu]:
 > - `Distributions`
 > - `Symk`
 > Would this be more reasonable? Considering that objects like `CrystalOfProjectedLevelZeroLSPaths` is also in the global namespace, I mean.
+
 This does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).
 
 By the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...
 > Also, have you seen Magma's global namespace? It doesn't prevent people from using it :-).
+
 Well, many things are functions in Magma that are methods in Sage, so in principle the global namespace should be cleaner in Sage...
 
 **Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.
@@ -1156,7 +1158,7 @@ Well, many things are functions in Magma that are methods in Sage, so in princip
 archive/issue_comments_004951.json:
 ```json
 {
-    "body": "> This does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).\n\nI am renaming HarmonicCocycles to BTHarmonicCocycles, and Distributions to OverconvergentDistributions. The Symk does not need to be p-adic, it's pretty general.\n\n> By the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...\n\nI do agree, but it's quite low in my list of priorities. I'd rather have Sage create an Eichler order in a quaternion algebra...\n\n> **Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.\n\nI agree, too.",
+    "body": "> This does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).\n\n\nI am renaming HarmonicCocycles to BTHarmonicCocycles, and Distributions to OverconvergentDistributions. The Symk does not need to be p-adic, it's pretty general.\n\n> By the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...\n\n\nI do agree, but it's quite low in my list of priorities. I'd rather have Sage create an Eichler order in a quaternion algebra...\n\n> **Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.\n\n\nI agree, too.",
     "created_at": "2016-04-13T22:41:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1167,13 +1169,16 @@ archive/issue_comments_004951.json:
 
 > This does sound more reasonable, although `Distributions`, `HarmonicCocycles` and `Symk` should definitely get a more descriptive name that makes it clear that they are *p*-adic objects (all of them would make sense in the complex world or in even greater generality).
 
+
 I am renaming HarmonicCocycles to BTHarmonicCocycles, and Distributions to OverconvergentDistributions. The Symk does not need to be p-adic, it's pretty general.
 
 > By the way, I do hope you agree that having something called `CrystalOfProjectedLevelZeroLSPaths` in the global namespace is pretty ridiculous and should be deprecated...
 
+
 I do agree, but it's quite low in my list of priorities. I'd rather have Sage create an Eichler order in a quaternion algebra...
 
 > **Edit:** And maybe `pAutomorphicForms` should be called `pAdicAutomorphicForms`?  Also, I guess it would be less cryptic to expand `BT` to `BruhatTits` and `PS` to `PollackStevens`.
+
 
 I agree, too.
 
@@ -1485,7 +1490,7 @@ https://wiki.sagemath.org/PrintFunction
 archive/issue_comments_004966.json:
 ```json
 {
-    "body": "It only screamed about commented lines. I changed them too.\n\n(I am not sure the bot should tell us it failed when print is wrongly used on comment lines and I am very certain it should say nothing about the \"print\" apprearing in the middle of a docstring as in \"Return the print representation\" in `_repr_` )\n----\nNew commits:",
+    "body": "It only screamed about commented lines. I changed them too.\n\n(I am not sure the bot should tell us it failed when print is wrongly used on comment lines and I am very certain it should say nothing about the \"print\" apprearing in the middle of a docstring as in \"Return the print representation\" in `_repr_` )\n\n---\nNew commits:",
     "created_at": "2016-06-23T12:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1497,7 +1502,8 @@ archive/issue_comments_004966.json:
 It only screamed about commented lines. I changed them too.
 
 (I am not sure the bot should tell us it failed when print is wrongly used on comment lines and I am very certain it should say nothing about the "print" apprearing in the middle of a docstring as in "Return the print representation" in `_repr_` )
-----
+
+---
 New commits:
 
 
@@ -1561,7 +1567,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_004970.json:
 ```json
 {
-    "body": "Done. I have also changed the title in space.py, since the modular symbols in it are not necessarily overconvergent.\n----\nNew commits:",
+    "body": "Done. I have also changed the title in space.py, since the modular symbols in it are not necessarily overconvergent.\n  \n---\nNew commits:",
     "created_at": "2016-06-23T15:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1571,7 +1577,8 @@ archive/issue_comments_004970.json:
 ```
 
 Done. I have also changed the title in space.py, since the modular symbols in it are not necessarily overconvergent.
-----
+  
+---
 New commits:
 
 
@@ -1637,7 +1644,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_004974.json:
 ```json
 {
-    "body": "\n```\n[sagelib-7.3.beta4] [2/7] Cythonizing sage/modular/pollack_stevens/dist.pyx\n[sagelib-7.3.beta4] [3/7] Cythonizing sage/numerical/backends/cplex_backend.pyx\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4] Error compiling Cython file:\n[sagelib-7.3.beta4] ------------------------------------------------------------\n[sagelib-7.3.beta4] ...\n[sagelib-7.3.beta4]         if negate:\n[sagelib-7.3.beta4]             rmoments = -rmoments\n[sagelib-7.3.beta4]         ans._moments = smoments + rmoments\n[sagelib-7.3.beta4]         return ans\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4]     cpdef ModuleElement _add_(self, ModuleElement _right):\n[sagelib-7.3.beta4]          ^\n[sagelib-7.3.beta4] ------------------------------------------------------------\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4] sage/modular/pollack_stevens/dist.pyx:957:10: Signature not compatible with previous declaration\n```\n",
+    "body": "```\n[sagelib-7.3.beta4] [2/7] Cythonizing sage/modular/pollack_stevens/dist.pyx\n[sagelib-7.3.beta4] [3/7] Cythonizing sage/numerical/backends/cplex_backend.pyx\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4] Error compiling Cython file:\n[sagelib-7.3.beta4] ------------------------------------------------------------\n[sagelib-7.3.beta4] ...\n[sagelib-7.3.beta4]         if negate:\n[sagelib-7.3.beta4]             rmoments = -rmoments\n[sagelib-7.3.beta4]         ans._moments = smoments + rmoments\n[sagelib-7.3.beta4]         return ans\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4]     cpdef ModuleElement _add_(self, ModuleElement _right):\n[sagelib-7.3.beta4]          ^\n[sagelib-7.3.beta4] ------------------------------------------------------------\n[sagelib-7.3.beta4] \n[sagelib-7.3.beta4] sage/modular/pollack_stevens/dist.pyx:957:10: Signature not compatible with previous declaration\n```",
     "created_at": "2016-06-23T17:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1645,7 +1652,6 @@ archive/issue_comments_004974.json:
     "user": "https://github.com/vbraun"
 }
 ```
-
 
 ```
 [sagelib-7.3.beta4] [2/7] Cythonizing sage/modular/pollack_stevens/dist.pyx
@@ -1668,13 +1674,12 @@ archive/issue_comments_004974.json:
 
 
 
-
 ---
 
 archive/issue_comments_004975.json:
 ```json
 {
-    "body": "I don't know how to reproduce the above error in my machine. I removed a superfluous import (in dist.pyx and dist.pxd), which I think is unrelated but was giving out warnings while cythonizing. Also, to make the patchbot happy I changed \"print\" into \"string\" in some of the docstrings.\n----\nNew commits:",
+    "body": "I don't know how to reproduce the above error in my machine. I removed a superfluous import (in dist.pyx and dist.pxd), which I think is unrelated but was giving out warnings while cythonizing. Also, to make the patchbot happy I changed \"print\" into \"string\" in some of the docstrings.\n\n---\nNew commits:",
     "created_at": "2016-06-24T08:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1684,7 +1689,8 @@ archive/issue_comments_004975.json:
 ```
 
 I don't know how to reproduce the above error in my machine. I removed a superfluous import (in dist.pyx and dist.pxd), which I think is unrelated but was giving out warnings while cythonizing. Also, to make the patchbot happy I changed "print" into "string" in some of the docstrings.
-----
+
+---
 New commits:
 
 
@@ -1749,7 +1755,7 @@ I'm just worried about Volker's remarks, not the patchbot's. Can someone see how
 archive/issue_comments_004979.json:
 ```json
 {
-    "body": "Replying to [comment:78 mmasdeu]:\n> I'm just worried about Volker's remarks, not the patchbot's. Can someone see how to fix the issue (or at least how to reproduce it?). I have looked at the signature in sage/structure/element.pxd and it looks the same as the one used in dist.pyx...\nIt must be because of #20740, which is apparently merged in Volker's branch, but is not in the latest beta.",
+    "body": "Replying to [comment:78 mmasdeu]:\n> I'm just worried about Volker's remarks, not the patchbot's. Can someone see how to fix the issue (or at least how to reproduce it?). I have looked at the signature in sage/structure/element.pxd and it looks the same as the one used in dist.pyx...\n\nIt must be because of #20740, which is apparently merged in Volker's branch, but is not in the latest beta.",
     "created_at": "2016-06-24T16:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1760,6 +1766,7 @@ archive/issue_comments_004979.json:
 
 Replying to [comment:78 mmasdeu]:
 > I'm just worried about Volker's remarks, not the patchbot's. Can someone see how to fix the issue (or at least how to reproduce it?). I have looked at the signature in sage/structure/element.pxd and it looks the same as the one used in dist.pyx...
+
 It must be because of #20740, which is apparently merged in Volker's branch, but is not in the latest beta.
 
 
@@ -1931,7 +1938,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_004989.json:
 ```json
 {
-    "body": "Failures on 32-bit:\n\n```\nsage -t --long src/sage/modular/btquotients/btquotient.py\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 1502, in sage.modular.btquotients.btquotient.BruhatTitsQuotient._cache_key\nFailed example:\n    X._cache_key()\nExpected:\n    1375458358400022881\nGot:\n    -406423199\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2478, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    l[3]\nExpected:\n    [-1]\n    [ 0]\n    [ 1]\n    [ 1]\nGot:\n    [-1]\n    [ 1]\n    [ 0]\n    [ 1]\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2483, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    X.embed_quaternion(l[3])\nExpected:\n    [    O(7) 3 + O(7)]\n    [2 + O(7) 6 + O(7)]\nGot:\n    [4 + O(7)     O(7)]\n    [1 + O(7) 2 + O(7)]\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2487, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    X.embed_quaternion(l[3])\nExpected:\n    [                7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)             3 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n    [            2 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6) 6 + 5*7 + 3*7^2 + 5*7^3 + 2*7^4 + 6*7^5 + O(7^6)]\nGot:\n    [4 + 5*7 + 3*7^2 + 5*7^3 + 2*7^4 + 6*7^5 + O(7^6)                 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n    [            1 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)             2 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n**********************************************************************\n2 items had failures:\n   1 of   3 in sage.modular.btquotients.btquotient.BruhatTitsQuotient._cache_key\n   3 of   8 in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\n    [375 tests, 4 failures, 8.18 s]\n```\n",
+    "body": "Failures on 32-bit:\n\n```\nsage -t --long src/sage/modular/btquotients/btquotient.py\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 1502, in sage.modular.btquotients.btquotient.BruhatTitsQuotient._cache_key\nFailed example:\n    X._cache_key()\nExpected:\n    1375458358400022881\nGot:\n    -406423199\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2478, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    l[3]\nExpected:\n    [-1]\n    [ 0]\n    [ 1]\n    [ 1]\nGot:\n    [-1]\n    [ 1]\n    [ 0]\n    [ 1]\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2483, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    X.embed_quaternion(l[3])\nExpected:\n    [    O(7) 3 + O(7)]\n    [2 + O(7) 6 + O(7)]\nGot:\n    [4 + O(7)     O(7)]\n    [1 + O(7) 2 + O(7)]\n**********************************************************************\nFile \"src/sage/modular/btquotients/btquotient.py\", line 2487, in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\nFailed example:\n    X.embed_quaternion(l[3])\nExpected:\n    [                7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)             3 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n    [            2 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6) 6 + 5*7 + 3*7^2 + 5*7^3 + 2*7^4 + 6*7^5 + O(7^6)]\nGot:\n    [4 + 5*7 + 3*7^2 + 5*7^3 + 2*7^4 + 6*7^5 + O(7^6)                 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n    [            1 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)             2 + 7 + 3*7^2 + 7^3 + 4*7^4 + O(7^6)]\n**********************************************************************\n2 items had failures:\n   1 of   3 in sage.modular.btquotients.btquotient.BruhatTitsQuotient._cache_key\n   3 of   8 in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion\n    [375 tests, 4 failures, 8.18 s]\n```",
     "created_at": "2016-06-27T22:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -1992,7 +1999,6 @@ Got:
    3 of   8 in sage.modular.btquotients.btquotient.BruhatTitsQuotient.embed_quaternion
     [375 tests, 4 failures, 8.18 s]
 ```
-
 
 
 
@@ -2093,7 +2099,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_004995.json:
 ```json
 {
-    "body": "You can use this:\n\n```\n            sage: hash(SR(19.23))\n            -1458111714  # 32-bit\n            2836855582   # 64-bit\n```\n",
+    "body": "You can use this:\n\n```\n            sage: hash(SR(19.23))\n            -1458111714  # 32-bit\n            2836855582   # 64-bit\n```",
     "created_at": "2016-06-28T13:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -2109,7 +2115,6 @@ You can use this:
             -1458111714  # 32-bit
             2836855582   # 64-bit
 ```
-
 
 
 
@@ -2246,7 +2251,7 @@ I realized that there was one doctest missing in `btquotient.py`. This is fixed 
 archive/issue_comments_005003.json:
 ```json
 {
-    "body": "Well, you deleted lots of commented code and moved an undocumented function to a place where coverage won't complain about it. I guess this is not the optimal solutions, but one can deal with this in #20863.\n\nCoverage also complains about another missing docstring:\n\n\n```\nSCORE src/sage/schemes/elliptic_curves/padics.py: 92.3% (12 of 13)\n\nMissing doctests:\n     * line 72: def _normalize_padic_lseries(self, p, normalize, use_eclib, implementation, precision)\n```\n",
+    "body": "Well, you deleted lots of commented code and moved an undocumented function to a place where coverage won't complain about it. I guess this is not the optimal solutions, but one can deal with this in #20863.\n\nCoverage also complains about another missing docstring:\n\n```\nSCORE src/sage/schemes/elliptic_curves/padics.py: 92.3% (12 of 13)\n\nMissing doctests:\n     * line 72: def _normalize_padic_lseries(self, p, normalize, use_eclib, implementation, precision)\n```",
     "created_at": "2016-06-29T11:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -2259,14 +2264,12 @@ Well, you deleted lots of commented code and moved an undocumented function to a
 
 Coverage also complains about another missing docstring:
 
-
 ```
 SCORE src/sage/schemes/elliptic_curves/padics.py: 92.3% (12 of 13)
 
 Missing doctests:
      * line 72: def _normalize_padic_lseries(self, p, normalize, use_eclib, implementation, precision)
 ```
-
 
 
 
@@ -2293,7 +2296,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_005005.json:
 ```json
 {
-    "body": "I fixed the missing doctest in `padics.py` as well.\n----\nNew commits:",
+    "body": "I fixed the missing doctest in `padics.py` as well.\n\n---\nNew commits:",
     "created_at": "2016-06-29T13:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -2303,7 +2306,8 @@ archive/issue_comments_005005.json:
 ```
 
 I fixed the missing doctest in `padics.py` as well.
-----
+
+---
 New commits:
 
 
@@ -2349,7 +2353,7 @@ tests pass.
 archive/issue_comments_005008.json:
 ```json
 {
-    "body": "Building the pdf docs fails\n\n```\n[docpdf] LaTeX Warning: Hyper reference `sage/modular/pollack_stevens/modsym:sage.modula\n[docpdf] r.pollack_stevens.modsym.PSModularSymbolElement' on page 162 undefined on input\n[docpdf]  line 13297.\n[docpdf] \n[docpdf] [162] [163] [164] [165] [166]\n[docpdf] Underfull \\hbox (badness 10000) in paragraph at lines 13628--13628\n[docpdf] \\T1/ptm/m/it/10 char-ac-ter=None\\T1/ptm/m/n/10 ,\n[docpdf] \n[docpdf] Underfull \\hbox (badness 10000) in paragraph at lines 13628--13628\n[docpdf] \\T1/ptm/m/it/10 use_magma=False\\T1/ptm/m/n/10 ,\n[docpdf] \n[docpdf] Overfull \\hbox (152.67451pt too wide) in paragraph at lines 13629--13630\n[docpdf] \\T1/ptm/m/n/10 Bases: \\T1/pcr/m/n/10 sage.structure.sage_object.SageObject\\T1/p\n[docpdf] tm/m/n/10 , \\T1/pcr/m/n/10 sage.structure.unique_representation.UniqueRepresent\n[docpdf] ation \n[docpdf] [167] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178]\n[docpdf] Overfull \\hbox (152.67451pt too wide) in paragraph at lines 14890--14891\n[docpdf] \\T1/ptm/m/n/10 Bases: \\T1/pcr/m/n/10 sage.structure.sage_object.SageObject\\T1/p\n[docpdf] tm/m/n/10 , \\T1/pcr/m/n/10 sage.structure.unique_representation.UniqueRepresent\n[docpdf] ation \n[docpdf] [179] [180] [181]\n[docpdf] ! Undefined control sequence.\n[docpdf] l.15130 modulo \\(p\\) is not in \\(\\FF\n[docpdf]                                     _p\\):\n[docpdf] ? \n[docpdf] ! Emergency stop.\n[docpdf] l.15130 modulo \\(p\\) is not in \\(\\FF\n[docpdf]                                     _p\\):\n[docpdf] !  ==> Fatal error occurred, no output PDF file produced!\n[docpdf] Transcript written on modsym.log.\n[docpdf] Makefile:68: recipe for target 'modsym.pdf' failed\n```\n",
+    "body": "Building the pdf docs fails\n\n```\n[docpdf] LaTeX Warning: Hyper reference `sage/modular/pollack_stevens/modsym:sage.modula\n[docpdf] r.pollack_stevens.modsym.PSModularSymbolElement' on page 162 undefined on input\n[docpdf]  line 13297.\n[docpdf] \n[docpdf] [162] [163] [164] [165] [166]\n[docpdf] Underfull \\hbox (badness 10000) in paragraph at lines 13628--13628\n[docpdf] \\T1/ptm/m/it/10 char-ac-ter=None\\T1/ptm/m/n/10 ,\n[docpdf] \n[docpdf] Underfull \\hbox (badness 10000) in paragraph at lines 13628--13628\n[docpdf] \\T1/ptm/m/it/10 use_magma=False\\T1/ptm/m/n/10 ,\n[docpdf] \n[docpdf] Overfull \\hbox (152.67451pt too wide) in paragraph at lines 13629--13630\n[docpdf] \\T1/ptm/m/n/10 Bases: \\T1/pcr/m/n/10 sage.structure.sage_object.SageObject\\T1/p\n[docpdf] tm/m/n/10 , \\T1/pcr/m/n/10 sage.structure.unique_representation.UniqueRepresent\n[docpdf] ation \n[docpdf] [167] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178]\n[docpdf] Overfull \\hbox (152.67451pt too wide) in paragraph at lines 14890--14891\n[docpdf] \\T1/ptm/m/n/10 Bases: \\T1/pcr/m/n/10 sage.structure.sage_object.SageObject\\T1/p\n[docpdf] tm/m/n/10 , \\T1/pcr/m/n/10 sage.structure.unique_representation.UniqueRepresent\n[docpdf] ation \n[docpdf] [179] [180] [181]\n[docpdf] ! Undefined control sequence.\n[docpdf] l.15130 modulo \\(p\\) is not in \\(\\FF\n[docpdf]                                     _p\\):\n[docpdf] ? \n[docpdf] ! Emergency stop.\n[docpdf] l.15130 modulo \\(p\\) is not in \\(\\FF\n[docpdf]                                     _p\\):\n[docpdf] !  ==> Fatal error occurred, no output PDF file produced!\n[docpdf] Transcript written on modsym.log.\n[docpdf] Makefile:68: recipe for target 'modsym.pdf' failed\n```",
     "created_at": "2016-06-29T23:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -2396,7 +2400,6 @@ Building the pdf docs fails
 
 
 
-
 ---
 
 archive/issue_comments_005009.json:
@@ -2420,7 +2423,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_005010.json:
 ```json
 {
-    "body": "pdf documentation now build for me.\n----\nLast 10 new commits:",
+    "body": "pdf documentation now build for me.\n\n---\nLast 10 new commits:",
     "created_at": "2016-06-30T12:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/812",
     "type": "issue_comment",
@@ -2430,7 +2433,8 @@ archive/issue_comments_005010.json:
 ```
 
 pdf documentation now build for me.
-----
+
+---
 Last 10 new commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_005812.json:
 ```json
 {
-    "body": "Assignee: whuss\n\nCurrently setting the zorder for points and polygons has no effect although zorder is listed as an allowed option.\n\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 1)\nsage: g.show()\n```\n\n\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 1)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 0)\nsage: g.show()\n```\n\n\nBoth of the above commands currently give the same output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5812\n\n",
+    "body": "Assignee: whuss\n\nCurrently setting the zorder for points and polygons has no effect although zorder is listed as an allowed option.\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 1)\nsage: g.show()\n```\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 1)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 0)\nsage: g.show()\n```\n\nBoth of the above commands currently give the same output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5812\n\n",
     "created_at": "2009-04-17T16:38:25Z",
     "labels": [
         "component: graphics",
@@ -21,21 +21,17 @@ Assignee: whuss
 
 Currently setting the zorder for points and polygons has no effect although zorder is listed as an allowed option.
 
-
 ```
 sage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)
 sage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 1)
 sage: g.show()
 ```
 
-
-
 ```
 sage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 1)
 sage: g += point((1,1), rgbcolor = 'green', pointsize = 1000, zorder = 0)
 sage: g.show()
 ```
-
 
 Both of the above commands currently give the same output.
 
@@ -68,7 +64,7 @@ Attachment [zorder.patch](tarball://root/attachments/some-uuid/ticket5812/zorder
 archive/issue_comments_045559.json:
 ```json
 {
-    "body": "Seems to work as advertised - a nice addition!   One question: if I manually set zorder, usually what you expect to happen happens.  But doesn't the order in which the objects are created matter otherwise, if everything has the same zorder?  For instance:\n\n```\nsage: p = polygon([(0,0),(0,1),(1,1)])\nsage: p+= polygon([(0,0),(0,2),(2,2)],rgbcolor='red')\nsage: p.show()\n```\n\ngives only a red triangle, while\n\n```\nsage: p = polygon([(0,0),(0,2),(2,2)],rgbcolor='red')\nsage: p+= polygon([(0,0),(0,1),(1,1)])\nsage: p.show()\n```\n\nshows the blue triangle on top of the red one.  But\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000)\nsage: g.show()\n```\n\nand \n\n```\nsage: g = point((1,1), rgbcolor = 'green', pointsize = 1000)\nsage: g += polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g.show()\n```\n\ngive the same thing, even though they should also have the same zorder at this point, if I understand the code correctly.  Or does the polygon somehow take precedence naturally in matplotlib?\n\nREVIEW\n\nPositive review of fixing the example given.  With regards to the comments above:\n\nIf this is a bug or design in matplotlib, positive review.\n\nIf it's possible to fix this in one of these files so that the order plots are added behaves consistently, needs work.  \n\nIf it's not possible to do that within these files, but it needs to be done in plot.py or show or something, positive review but please open another ticket.",
+    "body": "Seems to work as advertised - a nice addition!   One question: if I manually set zorder, usually what you expect to happen happens.  But doesn't the order in which the objects are created matter otherwise, if everything has the same zorder?  For instance:\n\n```\nsage: p = polygon([(0,0),(0,1),(1,1)])\nsage: p+= polygon([(0,0),(0,2),(2,2)],rgbcolor='red')\nsage: p.show()\n```\ngives only a red triangle, while\n\n```\nsage: p = polygon([(0,0),(0,2),(2,2)],rgbcolor='red')\nsage: p+= polygon([(0,0),(0,1),(1,1)])\nsage: p.show()\n```\nshows the blue triangle on top of the red one.  But\n\n```\nsage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g += point((1,1), rgbcolor = 'green', pointsize = 1000)\nsage: g.show()\n```\nand \n\n```\nsage: g = point((1,1), rgbcolor = 'green', pointsize = 1000)\nsage: g += polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)\nsage: g.show()\n```\ngive the same thing, even though they should also have the same zorder at this point, if I understand the code correctly.  Or does the polygon somehow take precedence naturally in matplotlib?\n\nREVIEW\n\nPositive review of fixing the example given.  With regards to the comments above:\n\nIf this is a bug or design in matplotlib, positive review.\n\nIf it's possible to fix this in one of these files so that the order plots are added behaves consistently, needs work.  \n\nIf it's not possible to do that within these files, but it needs to be done in plot.py or show or something, positive review but please open another ticket.",
     "created_at": "2009-04-28T20:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5812",
     "type": "issue_comment",
@@ -84,7 +80,6 @@ sage: p = polygon([(0,0),(0,1),(1,1)])
 sage: p+= polygon([(0,0),(0,2),(2,2)],rgbcolor='red')
 sage: p.show()
 ```
-
 gives only a red triangle, while
 
 ```
@@ -92,7 +87,6 @@ sage: p = polygon([(0,0),(0,2),(2,2)],rgbcolor='red')
 sage: p+= polygon([(0,0),(0,1),(1,1)])
 sage: p.show()
 ```
-
 shows the blue triangle on top of the red one.  But
 
 ```
@@ -100,7 +94,6 @@ sage: g = polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)
 sage: g += point((1,1), rgbcolor = 'green', pointsize = 1000)
 sage: g.show()
 ```
-
 and 
 
 ```
@@ -108,7 +101,6 @@ sage: g = point((1,1), rgbcolor = 'green', pointsize = 1000)
 sage: g += polygon([(0,0), (0,1), (1,1), (1,0)], rgbcolor = 'red', zorder = 0)
 sage: g.show()
 ```
-
 give the same thing, even though they should also have the same zorder at this point, if I understand the code correctly.  Or does the polygon somehow take precedence naturally in matplotlib?
 
 REVIEW

@@ -3,7 +3,7 @@
 archive/issues_005545.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nTo reproduce: Start with Sage 3.4.  Apply the attached patch (dependency-tracker-bug-testcase.patch).  Rebuild with \"sage -b\", then run Sage.  Type:\n\n```\nsage: import sage.rings.polynomial.real_roots\n```\n\nYou will get an error:\n\n```\nTypeError: sage.rings.real_mpfi.RealIntervalField is not a type object\n```\n\nBut if you touch real_roots.pyx and rebuild, the error goes away.\n\nSo somehow real_roots.pyx depends on real_mpfi.pyx in a way that the dependency tracker doesn't catch.  (It's not obvious how, because real_roots.pyx never even mentions `mpfi`.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5545\n\n",
+    "body": "Assignee: mabshoff\n\nTo reproduce: Start with Sage 3.4.  Apply the attached patch (dependency-tracker-bug-testcase.patch).  Rebuild with \"sage -b\", then run Sage.  Type:\n\n```\nsage: import sage.rings.polynomial.real_roots\n```\nYou will get an error:\n\n```\nTypeError: sage.rings.real_mpfi.RealIntervalField is not a type object\n```\nBut if you touch real_roots.pyx and rebuild, the error goes away.\n\nSo somehow real_roots.pyx depends on real_mpfi.pyx in a way that the dependency tracker doesn't catch.  (It's not obvious how, because real_roots.pyx never even mentions `mpfi`.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5545\n\n",
     "created_at": "2009-03-17T06:22:21Z",
     "labels": [
         "component: build",
@@ -23,13 +23,11 @@ To reproduce: Start with Sage 3.4.  Apply the attached patch (dependency-tracker
 ```
 sage: import sage.rings.polynomial.real_roots
 ```
-
 You will get an error:
 
 ```
 TypeError: sage.rings.real_mpfi.RealIntervalField is not a type object
 ```
-
 But if you touch real_roots.pyx and rebuild, the error goes away.
 
 So somehow real_roots.pyx depends on real_mpfi.pyx in a way that the dependency tracker doesn't catch.  (It's not obvious how, because real_roots.pyx never even mentions `mpfi`.)
@@ -182,7 +180,7 @@ archive/issue_events_013022.json:
 archive/issue_comments_043052.json:
 ```json
 {
-    "body": "worksforme:\n\n```\njdemeyer@tamiyo:/usr/local/src/sage-git$ touch src/sage/rings/real_mpfi.pxd\njdemeyer@tamiyo:/usr/local/src/sage-git$ ./sage -b\nscons: `install' is up to date.\nUpdating Cython code....\nEnabling Cython debugging support\nCompiling sage/rings/complex_interval.pyx because it depends on ./sage/rings/real_mpfi.pxd.\nCompiling sage/rings/real_mpfi.pyx because it depends on sage/rings/real_mpfi.pxd.\nCompiling sage/rings/polynomial/real_roots.pyx because it depends on ./sage/rings/real_mpfi.pxd.\n[...]\n```\n",
+    "body": "worksforme:\n\n```\njdemeyer@tamiyo:/usr/local/src/sage-git$ touch src/sage/rings/real_mpfi.pxd\njdemeyer@tamiyo:/usr/local/src/sage-git$ ./sage -b\nscons: `install' is up to date.\nUpdating Cython code....\nEnabling Cython debugging support\nCompiling sage/rings/complex_interval.pyx because it depends on ./sage/rings/real_mpfi.pxd.\nCompiling sage/rings/real_mpfi.pyx because it depends on sage/rings/real_mpfi.pxd.\nCompiling sage/rings/polynomial/real_roots.pyx because it depends on ./sage/rings/real_mpfi.pxd.\n[...]\n```",
     "created_at": "2014-09-02T09:19:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5545",
     "type": "issue_comment",
@@ -204,7 +202,6 @@ Compiling sage/rings/real_mpfi.pyx because it depends on sage/rings/real_mpfi.px
 Compiling sage/rings/polynomial/real_roots.pyx because it depends on ./sage/rings/real_mpfi.pxd.
 [...]
 ```
-
 
 
 

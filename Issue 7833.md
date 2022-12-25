@@ -3,7 +3,7 @@
 archive/issues_007833.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nCC:  @jasongrout @williamstein\n\nPass CFLAGS, CPPFLAGS and LDFLAGS from the environment into the build process.  This also corrects a typo in CPPFLAGS.\n\nNote that FreeBSD needs the path to libiconv to be explicitly specified.  In theory, --with-libiconv-prefix should work but configure script is broken and ignores that path when looking for libiconv.  Hard-wire /usr/local/include and /usr/local/lib via xxFLAGS.  Without this change, you get:\n\n```\nchecking iconv.h usability... no\nchecking iconv.h presence... no\nchecking for iconv.h... no\nchecking for iconv... no\nchecking for iconvlist... no\nconfigure: error: --with-iconv=yes (default) and a suitable iconv is not available\nError configuring R.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7833\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  @jasongrout @williamstein\n\nPass CFLAGS, CPPFLAGS and LDFLAGS from the environment into the build process.  This also corrects a typo in CPPFLAGS.\n\nNote that FreeBSD needs the path to libiconv to be explicitly specified.  In theory, --with-libiconv-prefix should work but configure script is broken and ignores that path when looking for libiconv.  Hard-wire /usr/local/include and /usr/local/lib via xxFLAGS.  Without this change, you get:\n\n```\nchecking iconv.h usability... no\nchecking iconv.h presence... no\nchecking for iconv.h... no\nchecking for iconv... no\nchecking for iconvlist... no\nconfigure: error: --with-iconv=yes (default) and a suitable iconv is not available\nError configuring R.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7833\n\n",
     "created_at": "2010-01-03T10:39:43Z",
     "labels": [
         "component: porting: bsd",
@@ -33,7 +33,6 @@ checking for iconvlist... no
 configure: error: --with-iconv=yes (default) and a suitable iconv is not available
 Error configuring R.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7833

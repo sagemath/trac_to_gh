@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6235
 archive/issue_comments_049649.json:
 ```json
 {
-    "body": "\n```\n\n\n2009/6/6 Brian Granger <>:\n>\n>> I want to reopen this thread.\n>\n> Great!  matplotlib under Sage is still broken for me because of this\n> issue - I would love to see this resolved.\n>\n>> I have a build farm with many (nearly 20) different OS's that all build and test\n>> Sage in parallel.  My home directory on each of those machines is NFS exported\n>> and shared.  I sometimes have tests fail because all these different\n>> Sage's are trying to write to the same $HOME/.matplotlib directory\n>> (for temp files, configuration, etc.).\n>> For Sage itself, I set SAGE_HOME to a fast local scratch disk (on each\n>> machine), which completely solves any contention problems for\n>> *everything* related to Sage temp files, configuration, etc., with the\n>> notable exception of matplotlib.\n>\n> I hadn't thought of this issue, but it is another good reason to not\n> use $HOME/.matplotlib for the Sage matplotlib.\n>\n>> Thus I would also prefer it if\n>> Sage's matplotlib directory were under SAGE_HOME instead of it being\n>> the default $HOME/.matplotlib.\n>>\n>> Thoughts?\n>\n> I think the simplest solution is to have Sage set:\n>\n> export MPLCONFIGDIR=$SAGE_HOME/matplotlib\n>\n> But, wait, does SAGE_HOME point to $HOME/.sage by default?  That is\n> the right place for this, I just don't remember exactly where\n> SAGE_HOME points.\n\nYep, it does.  We can make sure easily enough by running Sage and asking:\n\nsage: DOT_SAGE\n'/Users/wstein/.sage/'\n\nBy the way, I just realized it is called \"DOT_SAGE\", not \"SAGE_HOME\".\n\nThis is now:\n\nhttp://trac.sagemath.org/sage_trac/ticket/6235\n\n -- William\n\n\n>\n> I don't even think we need to put a default matplotlibrc file there,\n> so we don't have to worry about it becoming out of date.  If people\n> want to add their own matplotlibrc file to this directory they can,\n> but the default will be that matplotlib works.\n>\n> Cheers,\n>\n> Brian\n>\n>> William\n>>\n>>\n>>>> In the mailing list thread, the option was brought up to have the user\n>>>> put in a command in their init.sage file if they wanted a custom Sage\n>>>> initialization for matplotlib.  Setting the MATPLOTLIBRC variable in the\n>>>> init.sage file should work, I think.\n>>>\n>>> Yes, but I don't see this file in my .sage directory.  Where would it be?\n>>>\n>>>> In reality, (I think) the people this affects are the people that have\n>>>> already customized their system install of matplotlib.  Those are the\n>>>> people that (I think) would be capable of writing another command in\n>>>> their init.sage or something to have Sage have a custom matplotlibrc file.\n>>>\n>>> Yes, for the most part I agree with this.  But it is not quite that\n>>> simple.  I still need/want to be able to configure matplotlib for Sage\n>>> and my own install separately.  That means I have to copy my own\n>>> matplotlibrc file into .sage, make edits and set variables in\n>>> init.sage.\n>>>\n>>>> On the other hand, I can see the nice thing about Sage being totally\n>>>> self-contained and not pulling settings from a user's home directory for\n>>>> options.\n>>>\n>>> Yes, I think Sage should \"Just Work\", even for users that have\n>>> matplotlib installed previously.  This is simple enough to fix, I\n>>> don't see why we wouldn't.  The only thing is that the matplotlibrc\n>>> file needs to be updated anytime that matplotlib itself is updated.\n>>>\n>>> Cheers,\n>>>\n>>> Brian\n>>>\n>>> >\n>>>\n>>\n>>\n>>\n\n```\n",
+    "body": "```\n\n\n2009/6/6 Brian Granger <>:\n>\n>> I want to reopen this thread.\n>\n> Great!  matplotlib under Sage is still broken for me because of this\n> issue - I would love to see this resolved.\n>\n>> I have a build farm with many (nearly 20) different OS's that all build and test\n>> Sage in parallel.  My home directory on each of those machines is NFS exported\n>> and shared.  I sometimes have tests fail because all these different\n>> Sage's are trying to write to the same $HOME/.matplotlib directory\n>> (for temp files, configuration, etc.).\n>> For Sage itself, I set SAGE_HOME to a fast local scratch disk (on each\n>> machine), which completely solves any contention problems for\n>> *everything* related to Sage temp files, configuration, etc., with the\n>> notable exception of matplotlib.\n>\n> I hadn't thought of this issue, but it is another good reason to not\n> use $HOME/.matplotlib for the Sage matplotlib.\n>\n>> Thus I would also prefer it if\n>> Sage's matplotlib directory were under SAGE_HOME instead of it being\n>> the default $HOME/.matplotlib.\n>>\n>> Thoughts?\n>\n> I think the simplest solution is to have Sage set:\n>\n> export MPLCONFIGDIR=$SAGE_HOME/matplotlib\n>\n> But, wait, does SAGE_HOME point to $HOME/.sage by default?  That is\n> the right place for this, I just don't remember exactly where\n> SAGE_HOME points.\n\nYep, it does.  We can make sure easily enough by running Sage and asking:\n\nsage: DOT_SAGE\n'/Users/wstein/.sage/'\n\nBy the way, I just realized it is called \"DOT_SAGE\", not \"SAGE_HOME\".\n\nThis is now:\n\nhttp://trac.sagemath.org/sage_trac/ticket/6235\n\n -- William\n\n\n>\n> I don't even think we need to put a default matplotlibrc file there,\n> so we don't have to worry about it becoming out of date.  If people\n> want to add their own matplotlibrc file to this directory they can,\n> but the default will be that matplotlib works.\n>\n> Cheers,\n>\n> Brian\n>\n>> William\n>>\n>>\n>>>> In the mailing list thread, the option was brought up to have the user\n>>>> put in a command in their init.sage file if they wanted a custom Sage\n>>>> initialization for matplotlib.  Setting the MATPLOTLIBRC variable in the\n>>>> init.sage file should work, I think.\n>>>\n>>> Yes, but I don't see this file in my .sage directory.  Where would it be?\n>>>\n>>>> In reality, (I think) the people this affects are the people that have\n>>>> already customized their system install of matplotlib.  Those are the\n>>>> people that (I think) would be capable of writing another command in\n>>>> their init.sage or something to have Sage have a custom matplotlibrc file.\n>>>\n>>> Yes, for the most part I agree with this.  But it is not quite that\n>>> simple.  I still need/want to be able to configure matplotlib for Sage\n>>> and my own install separately.  That means I have to copy my own\n>>> matplotlibrc file into .sage, make edits and set variables in\n>>> init.sage.\n>>>\n>>>> On the other hand, I can see the nice thing about Sage being totally\n>>>> self-contained and not pulling settings from a user's home directory for\n>>>> options.\n>>>\n>>> Yes, I think Sage should \"Just Work\", even for users that have\n>>> matplotlib installed previously.  This is simple enough to fix, I\n>>> don't see why we wouldn't.  The only thing is that the matplotlibrc\n>>> file needs to be updated anytime that matplotlib itself is updated.\n>>>\n>>> Cheers,\n>>>\n>>> Brian\n>>>\n>>> >\n>>>\n>>\n>>\n>>\n\n```",
     "created_at": "2009-06-06T19:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_049649.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -149,7 +148,6 @@ http://trac.sagemath.org/sage_trac/ticket/6235
 
 
 
-
 ---
 
 archive/issue_comments_049650.json:
@@ -209,7 +207,7 @@ The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to
 archive/issue_comments_049653.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well.  The issue on this ticket still stands, but it is not urgent for #9221 anymore.\n\nI just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n\n(And especially made testing #9896 totally useless. :( )",
+    "body": "Replying to [comment:5 jason]:\n> The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well.  The issue on this ticket still stands, but it is not urgent for #9221 anymore.\n\n\nI just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n\n(And especially made testing #9896 totally useless. :( )",
     "created_at": "2010-10-20T13:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -220,6 +218,7 @@ archive/issue_comments_049653.json:
 
 Replying to [comment:5 jason]:
 > The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well.  The issue on this ticket still stands, but it is not urgent for #9221 anymore.
+
 
 I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...
 
@@ -232,7 +231,7 @@ I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or 
 archive/issue_comments_049654.json:
 ```json
 {
-    "body": "Replying to [comment:6 leif]:\n\n\n> I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n\nCan you elaborate?  What do you mean \"due to `~/.matplotlib/`\"?",
+    "body": "Replying to [comment:6 leif]:\n\n\n> I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n\n\nCan you elaborate?  What do you mean \"due to `~/.matplotlib/`\"?",
     "created_at": "2010-10-20T13:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -246,6 +245,7 @@ Replying to [comment:6 leif]:
 
 > I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...
 
+
 Can you elaborate?  What do you mean "due to `~/.matplotlib/`"?
 
 
@@ -255,7 +255,7 @@ Can you elaborate?  What do you mean "due to `~/.matplotlib/`"?
 archive/issue_comments_049655.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 leif]:\n> \n> \n> > I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n> \n> Can you elaborate?  What do you mean \"due to `~/.matplotlib/`\"?\n\nWithout deleting `~/.matplotlib/`, I get the doctest errors in `sage/plot/` mentioned [here](http://trac.sagemath.org/sage_trac/ticket/9896#comment:128).\n\nAlso, I did get compilation errors related to freetype [like you reported](http://trac.sagemath.org/sage_trac/ticket/9221#comment:24).",
+    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 leif]:\n> \n> \n> > I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...\n\n> \n> Can you elaborate?  What do you mean \"due to `~/.matplotlib/`\"?\n\n\nWithout deleting `~/.matplotlib/`, I get the doctest errors in `sage/plot/` mentioned [here](http://trac.sagemath.org/sage_trac/ticket/9896#comment:128).\n\nAlso, I did get compilation errors related to freetype [like you reported](http://trac.sagemath.org/sage_trac/ticket/9221#comment:24).",
     "created_at": "2010-10-20T13:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -269,8 +269,10 @@ Replying to [comment:7 jason]:
 > 
 > 
 > > I just noticed that *some* (I don't know yet which, i.e. the one from alpha2 or alpha3) matplotlib 1.0.0 spkg broke **all** previous Sage installations, due to `~/.matplotlib/`...
+
 > 
 > Can you elaborate?  What do you mean "due to `~/.matplotlib/`"?
+
 
 Without deleting `~/.matplotlib/`, I get the doctest errors in `sage/plot/` mentioned [here](http://trac.sagemath.org/sage_trac/ticket/9896#comment:128).
 
@@ -283,7 +285,7 @@ Also, I did get compilation errors related to freetype [like you reported](http:
 archive/issue_comments_049656.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> Also, I did get compilation errors related to freetype [like you reported](http://trac.sagemath.org/sage_trac/ticket/9221#comment:24).\n\n(Even rebuilding Sage 4.5.3 from scratch failed.)",
+    "body": "Replying to [comment:8 leif]:\n> Also, I did get compilation errors related to freetype [like you reported](http://trac.sagemath.org/sage_trac/ticket/9221#comment:24).\n\n\n(Even rebuilding Sage 4.5.3 from scratch failed.)",
     "created_at": "2010-10-20T13:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -295,6 +297,7 @@ archive/issue_comments_049656.json:
 Replying to [comment:8 leif]:
 > Also, I did get compilation errors related to freetype [like you reported](http://trac.sagemath.org/sage_trac/ticket/9221#comment:24).
 
+
 (Even rebuilding Sage 4.5.3 from scratch failed.)
 
 
@@ -304,7 +307,7 @@ Replying to [comment:8 leif]:
 archive/issue_comments_049657.json:
 ```json
 {
-    "body": "Can we just do\n\n```\nMPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\nexport MPLCONFIGDIR\n```\n\nin sage-env?  I suppose we could add yet another environment variable, like SAGE_MPLCONFIGDIR, and do\n\n```\nif [ \"$SAGE_MPLCONFIGDIR\" = \"\" ]; then\n    MPLCONFIGDIR=$DOT_SAGE/matplotlib\nelse\n    MPLCONFIGDIR=$SAGE_MPLCONFIGDIR\nfi\nexport MPLCONFIGDIR\n```\n\nbut I don't think that's necessary.  We already have too many environment variables.  I suppose we could test whether MPLCONFIGDIR is set, and if so, print a warning (once) that Sage is not using the user's setting of this variable.  I'm not sure where to test this, though.\n\nIf we export our setting for MPLCONFIGDIR, then we also need to document it, probably in the installation guide, saying that Sage uses its own matplotlib config directory, not the default one or whatever the user may have set.",
+    "body": "Can we just do\n\n```\nMPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\nexport MPLCONFIGDIR\n```\nin sage-env?  I suppose we could add yet another environment variable, like SAGE_MPLCONFIGDIR, and do\n\n```\nif [ \"$SAGE_MPLCONFIGDIR\" = \"\" ]; then\n    MPLCONFIGDIR=$DOT_SAGE/matplotlib\nelse\n    MPLCONFIGDIR=$SAGE_MPLCONFIGDIR\nfi\nexport MPLCONFIGDIR\n```\nbut I don't think that's necessary.  We already have too many environment variables.  I suppose we could test whether MPLCONFIGDIR is set, and if so, print a warning (once) that Sage is not using the user's setting of this variable.  I'm not sure where to test this, though.\n\nIf we export our setting for MPLCONFIGDIR, then we also need to document it, probably in the installation guide, saying that Sage uses its own matplotlib config directory, not the default one or whatever the user may have set.",
     "created_at": "2010-10-20T20:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -319,7 +322,6 @@ Can we just do
 MPLCONFIGDIR="$DOT_SAGE/matplotlib"
 export MPLCONFIGDIR
 ```
-
 in sage-env?  I suppose we could add yet another environment variable, like SAGE_MPLCONFIGDIR, and do
 
 ```
@@ -330,7 +332,6 @@ else
 fi
 export MPLCONFIGDIR
 ```
-
 but I don't think that's necessary.  We already have too many environment variables.  I suppose we could test whether MPLCONFIGDIR is set, and if so, print a warning (once) that Sage is not using the user's setting of this variable.  I'm not sure where to test this, though.
 
 If we export our setting for MPLCONFIGDIR, then we also need to document it, probably in the installation guide, saying that Sage uses its own matplotlib config directory, not the default one or whatever the user may have set.
@@ -342,7 +343,7 @@ If we export our setting for MPLCONFIGDIR, then we also need to document it, pro
 archive/issue_comments_049658.json:
 ```json
 {
-    "body": "Replying to [comment:10 jhpalmieri]:\n> Can we just do\n\n```\nMPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\nexport MPLCONFIGDIR\n```\n\n> in sage-env? \n\nAs mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.\n\nI don't understand why the matplotlib developers broke compatibility with older versions; I think it's likely to have different MPL installations included in other software packages, but I might be wrong. IMHO bad design anyway; also the exceptions raised are odd.",
+    "body": "Replying to [comment:10 jhpalmieri]:\n> Can we just do\n\n{{{\nMPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\nexport MPLCONFIGDIR\n}}}\n> in sage-env? \n\n\nAs mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.\n\nI don't understand why the matplotlib developers broke compatibility with older versions; I think it's likely to have different MPL installations included in other software packages, but I might be wrong. IMHO bad design anyway; also the exceptions raised are odd.",
     "created_at": "2010-10-20T20:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -354,12 +355,12 @@ archive/issue_comments_049658.json:
 Replying to [comment:10 jhpalmieri]:
 > Can we just do
 
-```
+{{{
 MPLCONFIGDIR="$DOT_SAGE/matplotlib"
 export MPLCONFIGDIR
-```
-
+}}}
 > in sage-env? 
+
 
 As mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.
 
@@ -372,7 +373,7 @@ I don't understand why the matplotlib developers broke compatibility with older 
 archive/issue_comments_049659.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> Replying to [comment:10 jhpalmieri]:\n> > Can we just do\n> {{{\n> MPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\n> export MPLCONFIGDIR\n> }}}\n> > in sage-env? \n> \n> As mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.\n\nAt the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n\n\n> \n> I don't understand why the matplotlib developers broke compatibility with older versions; I think it's likely to have different MPL installations included in other software packages, but I might be wrong. IMHO bad design anyway; also the exceptions raised are odd.",
+    "body": "Replying to [comment:11 leif]:\n> Replying to [comment:10 jhpalmieri]:\n> > Can we just do\n\n> {{{\n> MPLCONFIGDIR=\"$DOT_SAGE/matplotlib\"\n> export MPLCONFIGDIR\n> }}}\n> > in sage-env? \n\n> \n> As mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.\n\n\nAt the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n\n\n> \n> I don't understand why the matplotlib developers broke compatibility with older versions; I think it's likely to have different MPL installations included in other software packages, but I might be wrong. IMHO bad design anyway; also the exceptions raised are odd.",
     "created_at": "2010-10-20T20:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -384,13 +385,16 @@ archive/issue_comments_049659.json:
 Replying to [comment:11 leif]:
 > Replying to [comment:10 jhpalmieri]:
 > > Can we just do
+
 > {{{
 > MPLCONFIGDIR="$DOT_SAGE/matplotlib"
 > export MPLCONFIGDIR
 > }}}
 > > in sage-env? 
+
 > 
 > As mentioned above, the configuration should be inside a *specific Sage installation* hierarchy, not just yet another *user-specific* directory, which is (usually) the same for all Sage installations.
+
 
 At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?
 
@@ -405,7 +409,7 @@ At the same time, this directory should not be inside a specific Sage installati
 archive/issue_comments_049660.json:
 ```json
 {
-    "body": "Replying to [comment:12 jason]:\n> At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n\nI was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an \"index\" isn't reliable either.)\n\nIs the font cache the only problem? If so, we could just delete it upon every Sage [script] start-up... (quite ugly, of course)\n\nBut older versions of MPL should simply recognize config files from newer versions and e.g. (partially) ignore them. Or at least print an *appropriate* error message. (Not very pythonic, I know. *SCNR*)",
+    "body": "Replying to [comment:12 jason]:\n> At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n\n\nI was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an \"index\" isn't reliable either.)\n\nIs the font cache the only problem? If so, we could just delete it upon every Sage [script] start-up... (quite ugly, of course)\n\nBut older versions of MPL should simply recognize config files from newer versions and e.g. (partially) ignore them. Or at least print an *appropriate* error message. (Not very pythonic, I know. *SCNR*)",
     "created_at": "2010-10-20T21:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -416,6 +420,7 @@ archive/issue_comments_049660.json:
 
 Replying to [comment:12 jason]:
 > At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?
+
 
 I was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an "index" isn't reliable either.)
 
@@ -430,7 +435,7 @@ But older versions of MPL should simply recognize config files from newer versio
 archive/issue_comments_049661.json:
 ```json
 {
-    "body": "Replying to [comment:13 leif]:\n> Replying to [comment:12 jason]:\n> > At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n> \n> I was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an \"index\" isn't reliable either.)\n> \n> Is the font cache the only problem? If so, we could just delete it upon every Sage [script] start-up... (quite ugly, of course)\n\nI believe (off the top of my head) that the error \"    TypeError: coercing to Unicode: need string or buffer, dict found\" comes from the newer matplotlib including some stix fonts, and so it updates the font cache file to include those files.  However, older versions of matplotlib did not deal gracefully with font cache files that referred to nonexistant directories.  So if you install the new Sage, then matplotlib updates the font cache file to include the new fonts in the new matplotlib, then you move the new Sage install, the old Sage install will probably die when trying to open the nonexistant new font.  Of course, matplotlib should just silently regenerate the cache file, and that is what the bugfix in the 1.0.0 spkg is.",
+    "body": "Replying to [comment:13 leif]:\n> Replying to [comment:12 jason]:\n> > At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?\n\n> \n> I was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an \"index\" isn't reliable either.)\n> \n> Is the font cache the only problem? If so, we could just delete it upon every Sage [script] start-up... (quite ugly, of course)\n\n\nI believe (off the top of my head) that the error \"    TypeError: coercing to Unicode: need string or buffer, dict found\" comes from the newer matplotlib including some stix fonts, and so it updates the font cache file to include those files.  However, older versions of matplotlib did not deal gracefully with font cache files that referred to nonexistant directories.  So if you install the new Sage, then matplotlib updates the font cache file to include the new fonts in the new matplotlib, then you move the new Sage install, the old Sage install will probably die when trying to open the nonexistant new font.  Of course, matplotlib should just silently regenerate the cache file, and that is what the bugfix in the 1.0.0 spkg is.",
     "created_at": "2010-10-20T21:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -442,10 +447,12 @@ archive/issue_comments_049661.json:
 Replying to [comment:13 leif]:
 > Replying to [comment:12 jason]:
 > > At the same time, this directory should not be inside a specific Sage installation (i.e., below SAGE_ROOT) since that means system-wide installs can't have individual customizations, and it also breaks system-wide font cache generation (i.e., matplotlib assumes that a user can update the font cache file, I believe).  So where are we now?  Separate matplotlib config directories for each version of Sage inside of the .sage directory?
+
 > 
 > I was thinking of that, too. Not that easy, though. (E.g. using the Sage version as an "index" isn't reliable either.)
 > 
 > Is the font cache the only problem? If so, we could just delete it upon every Sage [script] start-up... (quite ugly, of course)
+
 
 I believe (off the top of my head) that the error "    TypeError: coercing to Unicode: need string or buffer, dict found" comes from the newer matplotlib including some stix fonts, and so it updates the font cache file to include those files.  However, older versions of matplotlib did not deal gracefully with font cache files that referred to nonexistant directories.  So if you install the new Sage, then matplotlib updates the font cache file to include the new fonts in the new matplotlib, then you move the new Sage install, the old Sage install will probably die when trying to open the nonexistant new font.  Of course, matplotlib should just silently regenerate the cache file, and that is what the bugfix in the 1.0.0 spkg is.
 
@@ -512,7 +519,7 @@ In case my idea works, when you install the matplotlib spkg, does it need to kno
 archive/issue_comments_049665.json:
 ```json
 {
-    "body": "Replying to [comment:15 jhpalmieri]:\n> How about separate matplotlib config directories for each version of matplotlib?\n> [...]\n> we can set `MPLCONFIGDIR` to something like `$DOT_SAGE/matplotlib-$VER`.\n\nSounds like a good idea to me. (You should suggest similar upstream; they could *read* `MPLCONFIGDIR` but *write* incompatible things to a versioned subdirectory of that.)\n\n> In case my idea works, when you install the matplotlib spkg, does it need to know the value of `MPLCONFIGDIR`, or is it safe to set that only after matplotlib has been installed?\n\nI'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.",
+    "body": "Replying to [comment:15 jhpalmieri]:\n> How about separate matplotlib config directories for each version of matplotlib?\n> [...]\n> we can set `MPLCONFIGDIR` to something like `$DOT_SAGE/matplotlib-$VER`.\n\n\nSounds like a good idea to me. (You should suggest similar upstream; they could *read* `MPLCONFIGDIR` but *write* incompatible things to a versioned subdirectory of that.)\n\n> In case my idea works, when you install the matplotlib spkg, does it need to know the value of `MPLCONFIGDIR`, or is it safe to set that only after matplotlib has been installed?\n\n\nI'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.",
     "created_at": "2010-10-20T22:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -526,9 +533,11 @@ Replying to [comment:15 jhpalmieri]:
 > [...]
 > we can set `MPLCONFIGDIR` to something like `$DOT_SAGE/matplotlib-$VER`.
 
+
 Sounds like a good idea to me. (You should suggest similar upstream; they could *read* `MPLCONFIGDIR` but *write* incompatible things to a versioned subdirectory of that.)
 
 > In case my idea works, when you install the matplotlib spkg, does it need to know the value of `MPLCONFIGDIR`, or is it safe to set that only after matplotlib has been installed?
+
 
 I'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.
 
@@ -539,7 +548,7 @@ I'm not sure if MPL writes anything to that during installation; it's perhaps su
 archive/issue_comments_049666.json:
 ```json
 {
-    "body": "Replying to [comment:18 leif]:\n> I'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.\n\nAt least our current 1.0.0 doesn't write to / create `$HOME/.matplotlib/` during *installation*.\n\n(I simply renamed the directory and did `./sage -f matplotlib-1.0.0`.)\n\nDoing\n\n```\nsage: import matplotlib\n```\n\nrecreates the directory (`$HOME/.matplotlib/`).",
+    "body": "Replying to [comment:18 leif]:\n> I'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.\n\n\nAt least our current 1.0.0 doesn't write to / create `$HOME/.matplotlib/` during *installation*.\n\n(I simply renamed the directory and did `./sage -f matplotlib-1.0.0`.)\n\nDoing\n\n```\nsage: import matplotlib\n```\nrecreates the directory (`$HOME/.matplotlib/`).",
     "created_at": "2010-10-20T22:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -551,6 +560,7 @@ archive/issue_comments_049666.json:
 Replying to [comment:18 leif]:
 > I'm not sure if MPL writes anything to that during installation; it's perhaps sufficient to set MPLCONFIGDIR before *using* MPL (i.e., after installation) to fix the `TypeError` issue with parallel installations of older versions.
 
+
 At least our current 1.0.0 doesn't write to / create `$HOME/.matplotlib/` during *installation*.
 
 (I simply renamed the directory and did `./sage -f matplotlib-1.0.0`.)
@@ -560,7 +570,6 @@ Doing
 ```
 sage: import matplotlib
 ```
-
 recreates the directory (`$HOME/.matplotlib/`).
 
 
@@ -570,7 +579,7 @@ recreates the directory (`$HOME/.matplotlib/`).
 archive/issue_comments_049667.json:
 ```json
 {
-    "body": ":-) Try:\n\n```sh\n$ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c \"import matplotlib\"\n```\n\n(The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)",
+    "body": ":-) Try:\n\n```sh\n$ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c \"import matplotlib\"\n```\n(The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)",
     "created_at": "2010-10-20T22:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -584,7 +593,6 @@ archive/issue_comments_049667.json:
 ```sh
 $ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c "import matplotlib"
 ```
-
 (The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)
 
 
@@ -594,7 +602,7 @@ $ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c "import matplotlib"
 archive/issue_comments_049668.json:
 ```json
 {
-    "body": "Replying to [comment:20 leif]:\n> :-) Try:\n\n```sh\n$ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c \"import matplotlib\"\n```\n\n> (The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)\n\nCool.",
+    "body": "Replying to [comment:20 leif]:\n> :-) Try:\n\n{{{#!sh\n$ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c \"import matplotlib\"\n}}}\n> (The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)\n\n\nCool.",
     "created_at": "2010-10-20T22:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -606,11 +614,11 @@ archive/issue_comments_049668.json:
 Replying to [comment:20 leif]:
 > :-) Try:
 
-```sh
+{{{#!sh
 $ export MPLCONFIGDIR=/some/non-existent/dir/ && ./sage -c "import matplotlib"
-```
-
+}}}
 > (The trailing slash doesn't matter. Also, using `$HOME/non-existent/` doesn't make a difference.)
+
 
 Cool.
 
@@ -657,7 +665,7 @@ Here's a patch.  The "sed" business could be done more efficiently by someone wh
 archive/issue_comments_049671.json:
 ```json
 {
-    "body": "Replying to [comment:22 jhpalmieri]:\n> Here's a patch.  The \"sed\" business could be done more efficiently by someone who actually knows how to use sed.  You can consider this a first draft if you want, but I'm marking it as ready for review.\n\n\n```sh\n...\n\n    MPLVER=`sed -n \"/^__version__[ ]*=[ ]*'[^']*'/s/[^']*'\\([^']*\\)'.*$/\\1/p\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n    # Or just (if we check the result):\n    # MPLVER=`sed -n \"/^__version__[ ]*=/s/[^']*'\\([^']*\\)'.*$/\\1/p\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n\n    # Hopefully they never switch to double quotes...\n\n...\n\n$MKDIR -p \"$MPLCONFIGDIR\" # better quote the dir\n```\n\n\nPerhaps also check that `\"$MPLVER\"` is non-empty.",
+    "body": "Replying to [comment:22 jhpalmieri]:\n> Here's a patch.  The \"sed\" business could be done more efficiently by someone who actually knows how to use sed.  You can consider this a first draft if you want, but I'm marking it as ready for review.\n\n\n```sh\n...\n\n    MPLVER=`sed -n \"/^__version__[ ]*=[ ]*'[^']*'/s/[^']*'\\([^']*\\)'.*$/\\1/p\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n    # Or just (if we check the result):\n    # MPLVER=`sed -n \"/^__version__[ ]*=/s/[^']*'\\([^']*\\)'.*$/\\1/p\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n\n    # Hopefully they never switch to double quotes...\n\n...\n\n$MKDIR -p \"$MPLCONFIGDIR\" # better quote the dir\n```\n\nPerhaps also check that `\"$MPLVER\"` is non-empty.",
     "created_at": "2010-10-20T23:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -684,7 +692,6 @@ Replying to [comment:22 jhpalmieri]:
 $MKDIR -p "$MPLCONFIGDIR" # better quote the dir
 ```
 
-
 Perhaps also check that `"$MPLVER"` is non-empty.
 
 
@@ -694,7 +701,7 @@ Perhaps also check that `"$MPLVER"` is non-empty.
 archive/issue_comments_049672.json:
 ```json
 {
-    "body": "More funny:\n\n```sh\n    eval `sed -n \"/^__version__[ ]*=/s/ //gp\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n    MPLVER=$__version__\n```\n",
+    "body": "More funny:\n\n```sh\n    eval `sed -n \"/^__version__[ ]*=/s/ //gp\" \"$SAGE_LOCAL\"/lib/python/site-packages/matplotlib/__init__.py`\n    MPLVER=$__version__\n```",
     "created_at": "2010-10-20T23:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -709,7 +716,6 @@ More funny:
     eval `sed -n "/^__version__[ ]*=/s/ //gp" "$SAGE_LOCAL"/lib/python/site-packages/matplotlib/__init__.py`
     MPLVER=$__version__
 ```
-
 
 
 
@@ -758,7 +764,7 @@ According to Dave, we no longer use variables for simple (POSIX) commands like `
 archive/issue_comments_049675.json:
 ```json
 {
-    "body": "Replying to [comment:27 leif]:\n> s/MPLCONFIGIDIR/MPLCONFIGDIR/ (minor; in the comment)\n\nFixed.\n\n> In principle, you can now omit the outer test (`if [ -f ... ]; then`) and simply redirect stderr to `/dev/null` inside the backquotes.\n\nOkay, but it also works this way, and seems readable to me this way, so I'm leaving it as is.\n\n> According to Dave, we no longer use variables for simple (POSIX) commands like `mkdir` and `cp` etc., but I don't mind.\n\nYou're right, the scripts in local/bin use \"mkdir\", not \"$MKDIR\", so I've changed that, too.",
+    "body": "Replying to [comment:27 leif]:\n> s/MPLCONFIGIDIR/MPLCONFIGDIR/ (minor; in the comment)\n\n\nFixed.\n\n> In principle, you can now omit the outer test (`if [ -f ... ]; then`) and simply redirect stderr to `/dev/null` inside the backquotes.\n\n\nOkay, but it also works this way, and seems readable to me this way, so I'm leaving it as is.\n\n> According to Dave, we no longer use variables for simple (POSIX) commands like `mkdir` and `cp` etc., but I don't mind.\n\n\nYou're right, the scripts in local/bin use \"mkdir\", not \"$MKDIR\", so I've changed that, too.",
     "created_at": "2010-10-21T01:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -770,13 +776,16 @@ archive/issue_comments_049675.json:
 Replying to [comment:27 leif]:
 > s/MPLCONFIGIDIR/MPLCONFIGDIR/ (minor; in the comment)
 
+
 Fixed.
 
 > In principle, you can now omit the outer test (`if [ -f ... ]; then`) and simply redirect stderr to `/dev/null` inside the backquotes.
 
+
 Okay, but it also works this way, and seems readable to me this way, so I'm leaving it as is.
 
 > According to Dave, we no longer use variables for simple (POSIX) commands like `mkdir` and `cp` etc., but I don't mind.
+
 
 You're right, the scripts in local/bin use "mkdir", not "$MKDIR", so I've changed that, too.
 
@@ -827,7 +836,7 @@ Ok, "dry" positive review. (Not yet tested, but should work and fix the issue).
 archive/issue_comments_049678.json:
 ```json
 {
-    "body": "Tested with Sage 4.6.alpha3.\n\nAlso works after deletion of `$HOME/.sage/` (i.e., dirs get properly recreated s.t. MPL doesn't raise an error).\n\nReplying to [comment:5 jason]:\n> The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well. The issue on this ticket still stands, but it is not urgent for #9221 anymore. \n\nSince this fixes MPL 1.0.0 (#9221) breaking other, older Sage installations, I'm increasing the priority.",
+    "body": "Tested with Sage 4.6.alpha3.\n\nAlso works after deletion of `$HOME/.sage/` (i.e., dirs get properly recreated s.t. MPL doesn't raise an error).\n\nReplying to [comment:5 jason]:\n> The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well. The issue on this ticket still stands, but it is not urgent for #9221 anymore. \n\n\nSince this fixes MPL 1.0.0 (#9221) breaking other, older Sage installations, I'm increasing the priority.",
     "created_at": "2010-10-21T02:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -842,6 +851,7 @@ Also works after deletion of `$HOME/.sage/` (i.e., dirs get properly recreated s
 
 Replying to [comment:5 jason]:
 > The problems in #9221 (I mistakenly said #9122 above) were fixed with a patch to the matplotlib spkg that has been applied upstream as well. The issue on this ticket still stands, but it is not urgent for #9221 anymore. 
+
 
 Since this fixes MPL 1.0.0 (#9221) breaking other, older Sage installations, I'm increasing the priority.
 
@@ -958,7 +968,7 @@ See #10154 for a follow-up: documenting Sage's use of MPLCONFIGDIR.
 archive/issue_comments_049684.json:
 ```json
 {
-    "body": "Justin Walker [reports](http://groups.google.com/group/sage-release/browse_thread/thread/daa80febef383120/328ebbaffc728a92#328ebbaffc728a92) a doctest failure in `doc/en/constructions/plotting.rst`:\n\n```python\nsage -t  -long -force_lib devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/Users/Sage/sage-4.6.alpha0/devel/sage-main/doc/en/constructions/plotting.rst\", line 42:\n    sage: f.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1, in <module>\n        f.plot()###line 42:\n    sage: f.plot()\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1341)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1080, in _repr_\n        self.show()\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/misc.py\", line 84, in wrapper\n        return func(*args, **kwds)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1727, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 2388, in save\n        figure=self.matplotlib(*args, **kwds)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1927, in matplotlib\n        from matplotlib.figure import Figure, figaspect\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/figure.py\", line 18, in <module>\n        from axes import Axes, SubplotBase, subplot_class_factory\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/axes.py\", line 18, in <module>\n        import matplotlib.contour as mcontour\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/contour.py\", line 21, in <module>\n        import matplotlib.texmanager as texmanager\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/texmanager.py\", line 72, in <module>\n        class TexManager:\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/texmanager.py\", line 92, in TexManager\n        os.mkdir(texcache)\n    OSError: [Errno 17] File exists: '/Users/justin/.sage//matplotlib-1.0.0/tex.cache'\n```\n",
+    "body": "Justin Walker [reports](http://groups.google.com/group/sage-release/browse_thread/thread/daa80febef383120/328ebbaffc728a92#328ebbaffc728a92) a doctest failure in `doc/en/constructions/plotting.rst`:\n\n```python\nsage -t  -long -force_lib devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/Users/Sage/sage-4.6.alpha0/devel/sage-main/doc/en/constructions/plotting.rst\", line 42:\n    sage: f.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/Sage/sage-4.6.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1, in <module>\n        f.plot()###line 42:\n    sage: f.plot()\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1341)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1080, in _repr_\n        self.show()\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/misc.py\", line 84, in wrapper\n        return func(*args, **kwds)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1727, in show\n        self.save(DOCTEST_MODE_FILE, **options)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 2388, in save\n        figure=self.matplotlib(*args, **kwds)\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/sage/plot/plot.py\", line 1927, in matplotlib\n        from matplotlib.figure import Figure, figaspect\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/figure.py\", line 18, in <module>\n        from axes import Axes, SubplotBase, subplot_class_factory\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/axes.py\", line 18, in <module>\n        import matplotlib.contour as mcontour\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/contour.py\", line 21, in <module>\n        import matplotlib.texmanager as texmanager\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/texmanager.py\", line 72, in <module>\n        class TexManager:\n      File \"/Users/Sage/sage-4.6.alpha0/local/lib/python/site-packages/matplotlib/texmanager.py\", line 92, in TexManager\n        os.mkdir(texcache)\n    OSError: [Errno 17] File exists: '/Users/justin/.sage//matplotlib-1.0.0/tex.cache'\n```",
     "created_at": "2010-10-22T21:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -1015,7 +1025,6 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_049685.json:
@@ -1039,7 +1048,7 @@ I wonder if Justin's error occured because matplotlib tried to create `tex.cache
 archive/issue_comments_049686.json:
 ```json
 {
-    "body": "Replying to [comment:35 mpatel]:\n> I wonder if Justin's error occured because matplotlib tried to create `tex.cache` in two or more \"simultaneous\" test processes.\n\nThat's just what I posted to sage-release.  The relevant lines in matplotlib/texmanager.py are\n\n```\n    if not os.path.exists(texcache):\n        os.mkdir(texcache)\n```\n\nso that seems a likely explanation.",
+    "body": "Replying to [comment:35 mpatel]:\n> I wonder if Justin's error occured because matplotlib tried to create `tex.cache` in two or more \"simultaneous\" test processes.\n\n\nThat's just what I posted to sage-release.  The relevant lines in matplotlib/texmanager.py are\n\n```\n    if not os.path.exists(texcache):\n        os.mkdir(texcache)\n```\nso that seems a likely explanation.",
     "created_at": "2010-10-22T22:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6235",
     "type": "issue_comment",
@@ -1051,13 +1060,13 @@ archive/issue_comments_049686.json:
 Replying to [comment:35 mpatel]:
 > I wonder if Justin's error occured because matplotlib tried to create `tex.cache` in two or more "simultaneous" test processes.
 
+
 That's just what I posted to sage-release.  The relevant lines in matplotlib/texmanager.py are
 
 ```
     if not os.path.exists(texcache):
         os.mkdir(texcache)
 ```
-
 so that seems a likely explanation.
 
 

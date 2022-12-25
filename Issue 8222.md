@@ -515,7 +515,7 @@ Then Rob can review it and have the new (in my opinion much superior version of 
 archive/issue_comments_072464.json:
 ```json
 {
-    "body": "Replying to [comment:10 rkirov]:\n> Hi Rob,\n> \n> I was waiting to see what Kevin has to say (since I basically took his code and tweaked with my personal preferences, without consulting with him). However, I haven't heard back from him. \n\nI'd suggest proceeding with changes and a review, and hope Kevin checks-in if he feels strongly.  If there is a change he's not happy with it, it could get reverted before being merged (or afterward).  I won't do a review immediately (but will do it soon), so he'll have a chance to weigh-in if he'd like.  \n\n> I wanted to remove auto-maximize, but since it has Kevin's original work, I wanted to hear back from him. Are you in favor of removing it? \n\nIt struck me that it was the source of a lot of wild behavior, without being crucial to proper functioning, so yes, I'd vote for leaving it out for right now.  It could come back later in a different form.\n\n> If nobody else, says something, I will just make final patch with:\n> \n> 1) removed red-edges\n> 2) removed buttons for maximize and auto-maximize\n> 3) switch delete to keyboard 'd'\n> \n> on the sage side:\n> \n> 1) add type checking\n> 2) incorporate pang's patch (thanks for patch, that was very sloppy of me)\n> \n> Then Rob can review it and have the new (in my opinion much superior version of graph editor) in Sage.\n\nSounds like a good plan.\n\nRob",
+    "body": "Replying to [comment:10 rkirov]:\n> Hi Rob,\n> \n> I was waiting to see what Kevin has to say (since I basically took his code and tweaked with my personal preferences, without consulting with him). However, I haven't heard back from him. \n\n\nI'd suggest proceeding with changes and a review, and hope Kevin checks-in if he feels strongly.  If there is a change he's not happy with it, it could get reverted before being merged (or afterward).  I won't do a review immediately (but will do it soon), so he'll have a chance to weigh-in if he'd like.  \n\n> I wanted to remove auto-maximize, but since it has Kevin's original work, I wanted to hear back from him. Are you in favor of removing it? \n\n\nIt struck me that it was the source of a lot of wild behavior, without being crucial to proper functioning, so yes, I'd vote for leaving it out for right now.  It could come back later in a different form.\n\n> If nobody else, says something, I will just make final patch with:\n> \n> 1) removed red-edges\n> 2) removed buttons for maximize and auto-maximize\n> 3) switch delete to keyboard 'd'\n> \n> on the sage side:\n> \n> 1) add type checking\n> 2) incorporate pang's patch (thanks for patch, that was very sloppy of me)\n> \n> Then Rob can review it and have the new (in my opinion much superior version of graph editor) in Sage.\n\n\nSounds like a good plan.\n\nRob",
     "created_at": "2010-04-03T18:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -529,9 +529,11 @@ Replying to [comment:10 rkirov]:
 > 
 > I was waiting to see what Kevin has to say (since I basically took his code and tweaked with my personal preferences, without consulting with him). However, I haven't heard back from him. 
 
+
 I'd suggest proceeding with changes and a review, and hope Kevin checks-in if he feels strongly.  If there is a change he's not happy with it, it could get reverted before being merged (or afterward).  I won't do a review immediately (but will do it soon), so he'll have a chance to weigh-in if he'd like.  
 
 > I wanted to remove auto-maximize, but since it has Kevin's original work, I wanted to hear back from him. Are you in favor of removing it? 
+
 
 It struck me that it was the source of a lot of wild behavior, without being crucial to proper functioning, so yes, I'd vote for leaving it out for right now.  It could come back later in a different form.
 
@@ -547,6 +549,7 @@ It struck me that it was the source of a lot of wild behavior, without being cru
 > 2) incorporate pang's patch (thanks for patch, that was very sloppy of me)
 > 
 > Then Rob can review it and have the new (in my opinion much superior version of graph editor) in Sage.
+
 
 Sounds like a good plan.
 
@@ -823,7 +826,7 @@ I tried this as part of #8725 -- and it doesn't work at all; totally broken.  Ti
 archive/issue_comments_072478.json:
 ```json
 {
-    "body": "Replying to [comment:17 was]:\n> I tried this as part of #8725 -- and it doesn't work at all; totally broken.  Tim Dumol says the problem is \"a missing script\".  So, needs work. \n\nhmm, weird, it is all working on my setup. I downloaded sagenb-0.8 from #8725, applied rob's all-in-one patch, ran setup.py develop and there was nothing broken.\n\nCan Tim send me some more info on how to reproduce that bug, so I can work on fixing it?",
+    "body": "Replying to [comment:17 was]:\n> I tried this as part of #8725 -- and it doesn't work at all; totally broken.  Tim Dumol says the problem is \"a missing script\".  So, needs work. \n\n\nhmm, weird, it is all working on my setup. I downloaded sagenb-0.8 from #8725, applied rob's all-in-one patch, ran setup.py develop and there was nothing broken.\n\nCan Tim send me some more info on how to reproduce that bug, so I can work on fixing it?",
     "created_at": "2010-04-24T19:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -834,6 +837,7 @@ archive/issue_comments_072478.json:
 
 Replying to [comment:17 was]:
 > I tried this as part of #8725 -- and it doesn't work at all; totally broken.  Tim Dumol says the problem is "a missing script".  So, needs work. 
+
 
 hmm, weird, it is all working on my setup. I downloaded sagenb-0.8 from #8725, applied rob's all-in-one patch, ran setup.py develop and there was nothing broken.
 
@@ -864,7 +868,7 @@ Actually, I got it working on my machine already without touching anything. Will
 archive/issue_comments_072480.json:
 ```json
 {
-    "body": "Replying to [comment:19 timdumol]:\n> Actually, I got it working on my machine already without touching anything. William's still having trouble though.\n\nMaybe it was a caching issue. Also i have only tested it on Firefox and Chrome, so maybe there is some browser specific issue?",
+    "body": "Replying to [comment:19 timdumol]:\n> Actually, I got it working on my machine already without touching anything. William's still having trouble though.\n\n\nMaybe it was a caching issue. Also i have only tested it on Firefox and Chrome, so maybe there is some browser specific issue?",
     "created_at": "2010-04-25T00:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8222",
     "type": "issue_comment",
@@ -875,6 +879,7 @@ archive/issue_comments_072480.json:
 
 Replying to [comment:19 timdumol]:
 > Actually, I got it working on my machine already without touching anything. William's still having trouble though.
+
 
 Maybe it was a caching issue. Also i have only tested it on Firefox and Chrome, so maybe there is some browser specific issue?
 

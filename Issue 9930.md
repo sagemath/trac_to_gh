@@ -3,7 +3,7 @@
 archive/issues_009930.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve point pari\n\nCurrently, points on elliptic curves cannot automatically be converted to PARI:\n\n\n```\nsage: E = EllipticCurve([0,0,0,3,0])\nsage: P = E.point([1,2]); P\n(1 : 2 : 1)\nsage: pari(P)\nTraceback (most recent call last):\n...\nRuntimeError: evaluating PARI string\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9931\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve point pari\n\nCurrently, points on elliptic curves cannot automatically be converted to PARI:\n\n```\nsage: E = EllipticCurve([0,0,0,3,0])\nsage: P = E.point([1,2]); P\n(1 : 2 : 1)\nsage: pari(P)\nTraceback (most recent call last):\n...\nRuntimeError: evaluating PARI string\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9931\n\n",
     "created_at": "2010-09-17T09:50:24Z",
     "labels": [
         "component: elliptic curves",
@@ -22,7 +22,6 @@ Keywords: elliptic curve point pari
 
 Currently, points on elliptic curves cannot automatically be converted to PARI:
 
-
 ```
 sage: E = EllipticCurve([0,0,0,3,0])
 sage: P = E.point([1,2]); P
@@ -32,7 +31,6 @@ Traceback (most recent call last):
 ...
 RuntimeError: evaluating PARI string
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9931
 

@@ -59,7 +59,7 @@ Kevin Stueve
 archive/issue_comments_071436.json:
 ```json
 {
-    "body": "Replying to [comment:1 kevin.stueve]:\n> Take note of Remark 4 in Introduction to twin primes and Brun\u2019s constant computation, by Pascal Sebah and Xavier Gourdon at http://numbers.computation.free.fr/Constants/constants.html (July 30, 2002)\n\nThe specific web page http://numbers.computation.free.fr/Constants/Primes/twin.html is also available in PDF: http://numbers.computation.free.fr/Constants/Primes/twin.pdf, the mentioned remark is on page 5.",
+    "body": "Replying to [comment:1 kevin.stueve]:\n> Take note of Remark 4 in Introduction to twin primes and Brun\u2019s constant computation, by Pascal Sebah and Xavier Gourdon at http://numbers.computation.free.fr/Constants/constants.html (July 30, 2002)\n\n\nThe specific web page http://numbers.computation.free.fr/Constants/Primes/twin.html is also available in PDF: http://numbers.computation.free.fr/Constants/Primes/twin.pdf, the mentioned remark is on page 5.",
     "created_at": "2010-02-01T21:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8137",
     "type": "issue_comment",
@@ -70,5 +70,6 @@ archive/issue_comments_071436.json:
 
 Replying to [comment:1 kevin.stueve]:
 > Take note of Remark 4 in Introduction to twin primes and Brun’s constant computation, by Pascal Sebah and Xavier Gourdon at http://numbers.computation.free.fr/Constants/constants.html (July 30, 2002)
+
 
 The specific web page http://numbers.computation.free.fr/Constants/Primes/twin.html is also available in PDF: http://numbers.computation.free.fr/Constants/Primes/twin.pdf, the mentioned remark is on page 5.

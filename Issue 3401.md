@@ -3,7 +3,7 @@
 archive/issues_003401.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  myurko @benjaminfjones\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  myurko @benjaminfjones\n\nHere is some example code from M. Yurko that explains how to do this.\nI think something based on this should be put into the Li function itself.\n\n```\nO.K. I defined li(x) as follows:\n\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 1:\n       return -infinity\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\nThe first part uses SAGE's built in Li(x) but adjusts for the offset.\nThe second part should be self explanatory. The third part uses a\nformula involving the incomplete gamma function which I found on the\nWolfram Functions website. On testing different values with an\nexternal calculator,  the third statement appears to only be valid for\nnegative reals and complex numbers. This leaves the interval [0,2)\nundefined. Please note that I have no background in complex analysis\nand that my above statements about domain are only based upon\nexperimentation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3401\n\n",
     "created_at": "2008-06-11T17:46:09Z",
     "labels": [
         "component: calculus",
@@ -22,7 +22,6 @@ CC:  myurko @benjaminfjones
 
 Here is some example code from M. Yurko that explains how to do this.
 I think something based on this should be put into the Li function itself.
-
 
 ```
 O.K. I defined li(x) as follows:
@@ -50,7 +49,6 @@ and that my above statements about domain are only based upon
 experimentation.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3401
 
 
@@ -62,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3401
 archive/issue_comments_023769.json:
 ```json
 {
-    "body": "No version\n\n```\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 0:\n       return 0\n   elif z > 1 and z < 2:\n       return Ei(log(z))\n   elif z == 1:\n       return -infinity\n   elif z > 0 and z < 1:\n       return\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\n```\n",
+    "body": "No version\n\n```\ndef li(z): #def log integral for real and complex variables\n   if z in RR and z >= 2: #check if real number greater than 2\n       return Li(z) +\n1.045163780117492784844588889194613136522615578151 #adjust for offset\nin SAGE def\n   elif z == 0:\n       return 0\n   elif z > 1 and z < 2:\n       return Ei(log(z))\n   elif z == 1:\n       return -infinity\n   elif z > 0 and z < 1:\n       return\n   else: #mode for complex and below 2 from incomplete gamma\n       z = CDF(z)\n       return -gamma_inc(0,-log(z)) + (log(log(z))-log(1/log(z)))/2-\nlog(-log(z))\n\n```",
     "created_at": "2008-06-11T18:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -93,7 +91,6 @@ in SAGE def
 log(-log(z))
 
 ```
-
 
 
 
@@ -214,7 +211,7 @@ I'm okay with myurko's changes so if someone could sign off on the deprecation w
 archive/issue_comments_023776.json:
 ```json
 {
-    "body": "Overall looks good, but there should be at least one doctest for the new DeprecationWarnings (I think this was agreed upon somewhere on sage-devel), and there should also be documentation that this actually fulfills the ticket - namely, to extend Li to complex input!  It certainly does, but I have no idea if the output is correct (I assume it is):\n\n```\nsage: Li(1+i)\n-0.431252110896297 + 2.05958421419258*I\nsage: Li(2+i)\n0.366095261900308 + 1.22470693841030*I\nsage: Li(2+2*i)\n0.875423840014232 + 1.96947430597102*I\nsage: Li(-2-2*i)\n-0.333825651054542 - 3.94714365810975*I\nsage: Li(-8)\n-1.74509249432858 + 5.26897573517771*I\nsage: Li(-10)\n-2.04384864349662 + 5.69678038115052*I\nsage: Li(-100)\n-15.9214591889007 + 17.3366538615045*I\n```\n\nSomething like that should be added.",
+    "body": "Overall looks good, but there should be at least one doctest for the new DeprecationWarnings (I think this was agreed upon somewhere on sage-devel), and there should also be documentation that this actually fulfills the ticket - namely, to extend Li to complex input!  It certainly does, but I have no idea if the output is correct (I assume it is):\n\n```\nsage: Li(1+i)\n-0.431252110896297 + 2.05958421419258*I\nsage: Li(2+i)\n0.366095261900308 + 1.22470693841030*I\nsage: Li(2+2*i)\n0.875423840014232 + 1.96947430597102*I\nsage: Li(-2-2*i)\n-0.333825651054542 - 3.94714365810975*I\nsage: Li(-8)\n-1.74509249432858 + 5.26897573517771*I\nsage: Li(-10)\n-2.04384864349662 + 5.69678038115052*I\nsage: Li(-100)\n-15.9214591889007 + 17.3366538615045*I\n```\nSomething like that should be added.",
     "created_at": "2009-11-10T13:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -241,7 +238,6 @@ sage: Li(-10)
 sage: Li(-100)
 -15.9214591889007 + 17.3366538615045*I
 ```
-
 Something like that should be added.
 
 
@@ -379,7 +375,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_023784.json:
 ```json
 {
-    "body": "Sorry to come in this late to the discussion, but this needs more work.\n\nThe `prec` argument to symbolic functions is deprecated, adding it to `Li` now doesn't make sense.\n\n\n```\nsage: gamma(10,prec=100)\n.../_home_burcin__sage_init_sage_0.py:1: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n362880.00000000000000000000000\n```\n\n\nYou can get the precision from the argument provided by the user. If the user needs a higher precision, they should explicitly convert the argument to a higher precision, for example by using `RealFiel(300)(val)`.\n\nWe should also start converting these to proper symbolic functions that remain symbolic on exact input, but that can be left to another ticket.",
+    "body": "Sorry to come in this late to the discussion, but this needs more work.\n\nThe `prec` argument to symbolic functions is deprecated, adding it to `Li` now doesn't make sense.\n\n```\nsage: gamma(10,prec=100)\n.../_home_burcin__sage_init_sage_0.py:1: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n362880.00000000000000000000000\n```\n\nYou can get the precision from the argument provided by the user. If the user needs a higher precision, they should explicitly convert the argument to a higher precision, for example by using `RealFiel(300)(val)`.\n\nWe should also start converting these to proper symbolic functions that remain symbolic on exact input, but that can be left to another ticket.",
     "created_at": "2010-01-18T18:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -392,14 +388,12 @@ Sorry to come in this late to the discussion, but this needs more work.
 
 The `prec` argument to symbolic functions is deprecated, adding it to `Li` now doesn't make sense.
 
-
 ```
 sage: gamma(10,prec=100)
 .../_home_burcin__sage_init_sage_0.py:1: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.
   # -*- coding: utf-8 -*-
 362880.00000000000000000000000
 ```
-
 
 You can get the precision from the argument provided by the user. If the user needs a higher precision, they should explicitly convert the argument to a higher precision, for example by using `RealFiel(300)(val)`.
 
@@ -510,7 +504,7 @@ I think that as long as we have both of these, and not named super-crazily - suc
 archive/issue_comments_023790.json:
 ```json
 {
-    "body": "Just for the record:\n\n\n```python\nsage: import mpmath\nsage: mpmath.li(1+i)\nmpc(real='0.61391166922119556', imag='2.0595842141925775')\nsage: mpmath.li(1+i, offset=True)\nmpc(real='-0.43125211089629728', imag='2.0595842141925775')\n```\n\n\nBut maybe I've missed something (tl;dr).",
+    "body": "Just for the record:\n\n```python\nsage: import mpmath\nsage: mpmath.li(1+i)\nmpc(real='0.61391166922119556', imag='2.0595842141925775')\nsage: mpmath.li(1+i, offset=True)\nmpc(real='-0.43125211089629728', imag='2.0595842141925775')\n```\n\nBut maybe I've missed something (tl;dr).",
     "created_at": "2011-10-12T06:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -521,7 +515,6 @@ archive/issue_comments_023790.json:
 
 Just for the record:
 
-
 ```python
 sage: import mpmath
 sage: mpmath.li(1+i)
@@ -529,7 +522,6 @@ mpc(real='0.61391166922119556', imag='2.0595842141925775')
 sage: mpmath.li(1+i, offset=True)
 mpc(real='-0.43125211089629728', imag='2.0595842141925775')
 ```
-
 
 But maybe I've missed something (tl;dr).
 
@@ -616,7 +608,7 @@ Please note doing this is a hobby for me and I have little or no time weekdays t
 archive/issue_comments_023795.json:
 ```json
 {
-    "body": "> I have created a symbolic Li patch on top of #11143 on sage-5.2.rc1 .  This is my first go at a patch so no doubt will need a good scrubbing...\nThat's okay, we all have to start somewhere!\n> Please note doing this is a hobby for me and I have little or no time weekdays to do anything so my responses are likely to be slow.  \nThat's also *very* true for many of us.  So we may also be slow to respond.",
+    "body": "> I have created a symbolic Li patch on top of #11143 on sage-5.2.rc1 .  This is my first go at a patch so no doubt will need a good scrubbing...\n\nThat's okay, we all have to start somewhere!\n> Please note doing this is a hobby for me and I have little or no time weekdays to do anything so my responses are likely to be slow.  \n\nThat's also *very* true for many of us.  So we may also be slow to respond.",
     "created_at": "2012-07-29T01:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -626,8 +618,10 @@ archive/issue_comments_023795.json:
 ```
 
 > I have created a symbolic Li patch on top of #11143 on sage-5.2.rc1 .  This is my first go at a patch so no doubt will need a good scrubbing...
+
 That's okay, we all have to start somewhere!
 > Please note doing this is a hobby for me and I have little or no time weekdays to do anything so my responses are likely to be slow.  
+
 That's also *very* true for many of us.  So we may also be slow to respond.
 
 
@@ -637,7 +631,7 @@ That's also *very* true for many of us.  So we may also be slow to respond.
 archive/issue_comments_023796.json:
 ```json
 {
-    "body": "Hi `@`martinx, your patch looks very good. I spotted a few whitespace issues to clean up (I'll post a reviewer patch to do that). I'm running full tests now, but I expect a positive review. \n\n----\n\nI wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.",
+    "body": "Hi `@`martinx, your patch looks very good. I spotted a few whitespace issues to clean up (I'll post a reviewer patch to do that). I'm running full tests now, but I expect a positive review. \n\n---\n\nI wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.",
     "created_at": "2012-08-03T20:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -648,7 +642,7 @@ archive/issue_comments_023796.json:
 
 Hi `@`martinx, your patch looks very good. I spotted a few whitespace issues to clean up (I'll post a reviewer patch to do that). I'm running full tests now, but I expect a positive review. 
 
-----
+---
 
 I wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.
 
@@ -697,7 +691,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_023799.json:
 ```json
 {
-    "body": "Replying to [comment:22 benjaminfjones]:\n> I wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.\n\nThere's also \"European Li\" (for the offset one) IIRC... ;-)",
+    "body": "Replying to [comment:22 benjaminfjones]:\n> I wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.\n\n\nThere's also \"European Li\" (for the offset one) IIRC... ;-)",
     "created_at": "2012-08-04T11:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -708,6 +702,7 @@ archive/issue_comments_023799.json:
 
 Replying to [comment:22 benjaminfjones]:
 > I wonder if we really need three aliases at the top level for this function. Having `log_integral_eulerian` in addition to `Li` and `log_integral_offset` seems excessive to me, but if that's a common name for the function I'm OK with it.
+
 
 There's also "European Li" (for the offset one) IIRC... ;-)
 
@@ -738,7 +733,7 @@ And I had better read up on coding conventions before my next efforts :)
 archive/issue_comments_023801.json:
 ```json
 {
-    "body": "Don't worry about the coding conventions, some of them are unwritten and some of them are subtle. I found a few doctest errors after running `make ptestlong` with the patches applied. These should be simple to fix:\n\nChange 9 to 10:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/misc/sagedoc.py\", line 971:\n    sage: len(search_src('log', 'derivative', interact=False).splitlines()) < 9\nExpected:\n    True\nGot:\n    False\n```\n\n\nsimple change, `Li` is now fully symbolic:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/functions/transcendental.py\", lin\ne 195:\n    sage: Li(100)\nExpected:\n    29.080977804\nGot:\n    -log_integral(2) + log_integral(100)\n```\n\n\nThis one is more mysterious:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/symbolic/random_tests.py\", line 2\n36:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_eleme\nnt) # random\nException raised:\n    Traceback (most recent call last):      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jonesbe/sage/sage-5.2/local/bin/sagedoctest.py\", line 38, in run_one_ex\nample\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1172, in run_one_e\nxample\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        print \"ignore this\";  random_expr(Integer(50), nvars=Integer(3), coeff_generator=CDF.random_element) # random###line 236:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 258, in random_expr\n        return random_expr_helper(size, internal, leaves, verbose)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 206, in random_expr_helper\n        children = [random_expr_helper(n+1, internal, leaves, verbose) for n in nodes_per_child]\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 209, in random_expr_helper\n        return r[1](*children)\n      File \"function.pyx\", line 432, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4941)\n        res = g_function_evalv(self._serial, vec, hold)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 173, in _eval_\n        return integrator(*args)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n        result = maxima.sr_integral(expression, v, a, b)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 746, in sr_integral\n        raise error\n    RuntimeError: ECL says: Error executing code in Maxima: defint: upper limit of integration must be real; found \n     elliptic_eu(.18648175298340663*I-.7457199773032457,\n                 coth(v3)*(v3*(.12348638361486497*I+.29875723285490263)\n                          +v1*(.12348638361486497*I+.29875723285490263)\n                          -sinh(v3^(.5481180571998028*I-.5534231539946481))))\n```\n",
+    "body": "Don't worry about the coding conventions, some of them are unwritten and some of them are subtle. I found a few doctest errors after running `make ptestlong` with the patches applied. These should be simple to fix:\n\nChange 9 to 10:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/misc/sagedoc.py\", line 971:\n    sage: len(search_src('log', 'derivative', interact=False).splitlines()) < 9\nExpected:\n    True\nGot:\n    False\n```\n\nsimple change, `Li` is now fully symbolic:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/functions/transcendental.py\", lin\ne 195:\n    sage: Li(100)\nExpected:\n    29.080977804\nGot:\n    -log_integral(2) + log_integral(100)\n```\n\nThis one is more mysterious:\n\n```\nFile \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/symbolic/random_tests.py\", line 2\n36:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_eleme\nnt) # random\nException raised:\n    Traceback (most recent call last):      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jonesbe/sage/sage-5.2/local/bin/sagedoctest.py\", line 38, in run_one_ex\nample\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1172, in run_one_e\nxample\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        print \"ignore this\";  random_expr(Integer(50), nvars=Integer(3), coeff_generator=CDF.random_element) # random###line 236:\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n\n    sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 258, in random_expr\n        return random_expr_helper(size, internal, leaves, verbose)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 206, in random_expr_helper\n        children = [random_expr_helper(n+1, internal, leaves, verbose) for n in nodes_per_child]\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 209, in random_expr_helper\n        return r[1](*children)\n      File \"function.pyx\", line 432, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4941)\n        res = g_function_evalv(self._serial, vec, hold)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 173, in _eval_\n        return integrator(*args)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n        result = maxima.sr_integral(expression, v, a, b)\n      File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 746, in sr_integral\n        raise error\n    RuntimeError: ECL says: Error executing code in Maxima: defint: upper limit of integration must be real; found \n     elliptic_eu(.18648175298340663*I-.7457199773032457,\n                 coth(v3)*(v3*(.12348638361486497*I+.29875723285490263)\n                          +v1*(.12348638361486497*I+.29875723285490263)\n                          -sinh(v3^(.5481180571998028*I-.5534231539946481))))\n```",
     "created_at": "2012-08-04T15:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -760,7 +755,6 @@ Got:
     False
 ```
 
-
 simple change, `Li` is now fully symbolic:
 
 ```
@@ -772,7 +766,6 @@ Expected:
 Got:
     -log_integral(2) + log_integral(100)
 ```
-
 
 This one is more mysterious:
 
@@ -818,13 +811,12 @@ xample
 
 
 
-
 ---
 
 archive/issue_comments_023802.json:
 ```json
 {
-    "body": "Replying to [comment:25 martinx]:\n> I will go with whatever the sagemath intelligentsia thinks appropriate for the number and name of any aliases. \n\nWell, with names put into the global namespace, the most important thing is that tab completion is likely to suggest you what you're looking for, i.e., the *prefix* of each name matters.  So in this case I think a single instance of `log_int*` (in addition to `[Ll]i*`, maybe more) would be sufficent.\n\nWith Sage 5.3.beta0, I currently get:\n\n```\nsage: log<TAB>\nlog             log_b           log_gamma       log_text        logstr          \nlog2            log_dvi         log_html        lognormvariate  \nsage: li<TAB>\nlicense                lim                    linear_program         list                   list_plot_semilogx\nlie                    limit                  linear_relation        list_composition       list_plot_semilogy\nlie_console            line                   linear_transformation  list_plot              \nlift                   line2d                 lisp                   list_plot3d            \nlift_to_sl2z           line3d                 lisp_console           list_plot_loglog       \nsage: Li<TAB>  \nLi                         LinearCode                 LinearCodeFromVectorSpace  \nLiE                        LinearCodeFromCheckMatrix  Lisp                       \nsage: euler<TAB>\neuler_gamma             euler_phi               eulers_method_2x2       \neuler_number            eulers_method           eulers_method_2x2_plot  \n```\n\n\n\n(Of course also the docstring for e.g. `li`, perhaps that of `Ei`, too, should refer to `Li` and vice versa.)",
+    "body": "Replying to [comment:25 martinx]:\n> I will go with whatever the sagemath intelligentsia thinks appropriate for the number and name of any aliases. \n\n\nWell, with names put into the global namespace, the most important thing is that tab completion is likely to suggest you what you're looking for, i.e., the *prefix* of each name matters.  So in this case I think a single instance of `log_int*` (in addition to `[Ll]i*`, maybe more) would be sufficent.\n\nWith Sage 5.3.beta0, I currently get:\n\n```\nsage: log<TAB>\nlog             log_b           log_gamma       log_text        logstr          \nlog2            log_dvi         log_html        lognormvariate  \nsage: li<TAB>\nlicense                lim                    linear_program         list                   list_plot_semilogx\nlie                    limit                  linear_relation        list_composition       list_plot_semilogy\nlie_console            line                   linear_transformation  list_plot              \nlift                   line2d                 lisp                   list_plot3d            \nlift_to_sl2z           line3d                 lisp_console           list_plot_loglog       \nsage: Li<TAB>  \nLi                         LinearCode                 LinearCodeFromVectorSpace  \nLiE                        LinearCodeFromCheckMatrix  Lisp                       \nsage: euler<TAB>\neuler_gamma             euler_phi               eulers_method_2x2       \neuler_number            eulers_method           eulers_method_2x2_plot  \n```\n\n\n(Of course also the docstring for e.g. `li`, perhaps that of `Ei`, too, should refer to `Li` and vice versa.)",
     "created_at": "2012-08-04T15:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -835,6 +827,7 @@ archive/issue_comments_023802.json:
 
 Replying to [comment:25 martinx]:
 > I will go with whatever the sagemath intelligentsia thinks appropriate for the number and name of any aliases. 
+
 
 Well, with names put into the global namespace, the most important thing is that tab completion is likely to suggest you what you're looking for, i.e., the *prefix* of each name matters.  So in this case I think a single instance of `log_int*` (in addition to `[Ll]i*`, maybe more) would be sufficent.
 
@@ -857,7 +850,6 @@ sage: euler<TAB>
 euler_gamma             euler_phi               eulers_method_2x2       
 euler_number            eulers_method           eulers_method_2x2_plot  
 ```
-
 
 
 (Of course also the docstring for e.g. `li`, perhaps that of `Ei`, too, should refer to `Li` and vice versa.)
@@ -891,7 +883,7 @@ archive/issue_comments_023803.json:
 archive/issue_comments_023804.json:
 ```json
 {
-    "body": "Nice theorem:\n\n\\exists x : `\\pi(x) > \\operatorname{Li}(z)`\n\n(`s/z/x/`)\n\n\n\n\n`s/`\n\n```\nHowever it is a theorem that there are very large, (e.g., around `10^{316}`) values of `x`\n```\n\n`/`\n\n```\nHowever, it is a theorem that there are very large values of `x` (e.g., around `10^{316}`)\n```\n\n`/`",
+    "body": "Nice theorem:\n\n\\exists x : `\\pi(x) > \\operatorname{Li}(z)`\n\n(`s/z/x/`)\n\n\n\n\n`s/`\n\n```\nHowever it is a theorem that there are very large, (e.g., around `10^{316}`) values of `x`\n```\n`/`\n\n```\nHowever, it is a theorem that there are very large values of `x` (e.g., around `10^{316}`)\n```\n`/`",
     "created_at": "2012-08-04T16:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -914,13 +906,11 @@ Nice theorem:
 ```
 However it is a theorem that there are very large, (e.g., around `10^{316}`) values of `x`
 ```
-
 `/`
 
 ```
 However, it is a theorem that there are very large values of `x` (e.g., around `10^{316}`)
 ```
-
 `/`
 
 
@@ -948,7 +938,7 @@ More nitpicking:  `s/"polylog()"/``polylog()``/` and/or make (it) a cross-refere
 archive/issue_comments_023806.json:
 ```json
 {
-    "body": "Replying to [comment:30 leif]:\n> ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).\n\n... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.",
+    "body": "Replying to [comment:30 leif]:\n> ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).\n\n\n... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.",
     "created_at": "2012-08-04T16:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -960,6 +950,7 @@ archive/issue_comments_023806.json:
 Replying to [comment:30 leif]:
 > ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).
 
+
 ... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.
 
 
@@ -969,7 +960,7 @@ Replying to [comment:30 leif]:
 archive/issue_comments_023807.json:
 ```json
 {
-    "body": "Replying to [comment:26 benjaminfjones]:\n> Don't worry about the coding conventions, some of them are unwritten and some of them are subtle.\n\nand I am a slow learner anyway :)\n\n>I found a few doctest errors after running `make ptestlong` with the patches applied. These should be simple to fix:\n> \n> Change 9 to 10:\nAgreed.\n\n> \n> simple change, `Li` is now fully symbolic:\n> {{{\n> File \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/functions/transcendental.py\", lin\n> e 195:\n>     sage: Li(100)\n> Expected:\n>     29.080977804\n> Got:\n>     -log_integral(2) + log_integral(100)\n> }}}\n\nThe function can be removed since it was just a convenience one to support the original li and Li.\n> \n> This one is more mysterious:\n> {{{\n> File \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/symbolic/random_tests.py\", line 2\n> 36:\n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_eleme\n> nt) # random\n> Exception raised:\n>     Traceback (most recent call last):      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n>         self.run_one_example(test, example, filename, compileflags)\n>       File \"/home/jonesbe/sage/sage-5.2/local/bin/sagedoctest.py\", line 38, in run_one_ex\n> ample\n>         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n>       File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1172, in run_one_e\n> xample\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n>         print \"ignore this\";  random_expr(Integer(50), nvars=Integer(3), coeff_generator=CDF.random_element) # random###line 236:\n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n> \n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 258, in random_expr\n>         return random_expr_helper(size, internal, leaves, verbose)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 206, in random_expr_helper\n>         children = [random_expr_helper(n+1, internal, leaves, verbose) for n in nodes_per_child]\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 209, in random_expr_helper\n>         return r[1](*children)\n>       File \"function.pyx\", line 432, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4941)\n>         res = g_function_evalv(self._serial, vec, hold)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 173, in _eval_\n>         return integrator(*args)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n>         result = maxima.sr_integral(expression, v, a, b)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 746, in sr_integral\n>         raise error\n>     RuntimeError: ECL says: Error executing code in Maxima: defint: upper limit of integration must be real; found \n>      elliptic_eu(.18648175298340663*I-.7457199773032457,\n>                  coth(v3)*(v3*(.12348638361486497*I+.29875723285490263)\n>                           +v1*(.12348638361486497*I+.29875723285490263)\n>                           -sinh(v3^(.5481180571998028*I-.5534231539946481))))\n> }}}\n\nThe function randomly selects from a list of all Pynac functions, to which is now added Li, and so now the functions chosen have changed.  The docs state that it will often raise an error because it tries to create an erroneous expression.  In this case it is trying to pass a complex expression to Maxima. Trial and error and got a return result setting the seed to 1.\n\nWhen I have worked out how to merge patches I'll post a revised patch for review that addresses all comments made so far.",
+    "body": "Replying to [comment:26 benjaminfjones]:\n> Don't worry about the coding conventions, some of them are unwritten and some of them are subtle.\n\n\nand I am a slow learner anyway :)\n\n>I found a few doctest errors after running `make ptestlong` with the patches applied. These should be simple to fix:\n> \n> Change 9 to 10:\n\nAgreed.\n\n> \n> simple change, `Li` is now fully symbolic:\n> \n> ```\n> File \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/functions/transcendental.py\", lin\n> e 195:\n>     sage: Li(100)\n> Expected:\n>     29.080977804\n> Got:\n>     -log_integral(2) + log_integral(100)\n> ```\n\n\nThe function can be removed since it was just a convenience one to support the original li and Li.\n> \n> This one is more mysterious:\n> \n> ```\n> File \"/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/symbolic/random_tests.py\", line 2\n> 36:\n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_eleme\n> nt) # random\n> Exception raised:\n>     Traceback (most recent call last):      File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n>         self.run_one_example(test, example, filename, compileflags)\n>       File \"/home/jonesbe/sage/sage-5.2/local/bin/sagedoctest.py\", line 38, in run_one_ex\n> ample\n>         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n>       File \"/home/jonesbe/sage/sage-5.2/local/bin/ncadoctest.py\", line 1172, in run_one_e\n> xample\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n>         print \"ignore this\";  random_expr(Integer(50), nvars=Integer(3), coeff_generator=CDF.random_element) # random###line 236:\n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n> \n>     sage: print \"ignore this\";  random_expr(50, nvars=3, coeff_generator=CDF.random_element) # random\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 258, in random_expr\n>         return random_expr_helper(size, internal, leaves, verbose)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 206, in random_expr_helper\n>         children = [random_expr_helper(n+1, internal, leaves, verbose) for n in nodes_per_child]\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 209, in random_expr_helper\n>         return r[1](*children)\n>       File \"function.pyx\", line 432, in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:4941)\n>         res = g_function_evalv(self._serial, vec, hold)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/integral.py\", line 173, in _eval_\n>         return integrator(*args)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/symbolic/integration/external.py\", line 21, in maxima_integrator\n>         result = maxima.sr_integral(expression, v, a, b)\n>       File \"/home/jonesbe/sage/sage-5.2/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 746, in sr_integral\n>         raise error\n>     RuntimeError: ECL says: Error executing code in Maxima: defint: upper limit of integration must be real; found \n>      elliptic_eu(.18648175298340663*I-.7457199773032457,\n>                  coth(v3)*(v3*(.12348638361486497*I+.29875723285490263)\n>                           +v1*(.12348638361486497*I+.29875723285490263)\n>                           -sinh(v3^(.5481180571998028*I-.5534231539946481))))\n> ```\n\n\nThe function randomly selects from a list of all Pynac functions, to which is now added Li, and so now the functions chosen have changed.  The docs state that it will often raise an error because it tries to create an erroneous expression.  In this case it is trying to pass a complex expression to Maxima. Trial and error and got a return result setting the seed to 1.\n\nWhen I have worked out how to merge patches I'll post a revised patch for review that addresses all comments made so far.",
     "created_at": "2012-08-04T23:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -981,16 +972,19 @@ archive/issue_comments_023807.json:
 Replying to [comment:26 benjaminfjones]:
 > Don't worry about the coding conventions, some of them are unwritten and some of them are subtle.
 
+
 and I am a slow learner anyway :)
 
 >I found a few doctest errors after running `make ptestlong` with the patches applied. These should be simple to fix:
 > 
 > Change 9 to 10:
+
 Agreed.
 
 > 
 > simple change, `Li` is now fully symbolic:
-> {{{
+> 
+> ```
 > File "/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/functions/transcendental.py", lin
 > e 195:
 >     sage: Li(100)
@@ -998,12 +992,14 @@ Agreed.
 >     29.080977804
 > Got:
 >     -log_integral(2) + log_integral(100)
-> }}}
+> ```
+
 
 The function can be removed since it was just a convenience one to support the original li and Li.
 > 
 > This one is more mysterious:
-> {{{
+> 
+> ```
 > File "/home/jonesbe/sage/sage-5.2/devel/sage-11143/sage/symbolic/random_tests.py", line 2
 > 36:
 >     sage: print "ignore this";  random_expr(50, nvars=3, coeff_generator=CDF.random_eleme
@@ -1041,7 +1037,8 @@ The function can be removed since it was just a convenience one to support the o
 >                  coth(v3)*(v3*(.12348638361486497*I+.29875723285490263)
 >                           +v1*(.12348638361486497*I+.29875723285490263)
 >                           -sinh(v3^(.5481180571998028*I-.5534231539946481))))
-> }}}
+> ```
+
 
 The function randomly selects from a list of all Pynac functions, to which is now added Li, and so now the functions chosen have changed.  The docs state that it will often raise an error because it tries to create an erroneous expression.  In this case it is trying to pass a complex expression to Maxima. Trial and error and got a return result setting the seed to 1.
 
@@ -1054,7 +1051,7 @@ When I have worked out how to merge patches I'll post a revised patch for review
 archive/issue_comments_023808.json:
 ```json
 {
-    "body": "Replying to [comment:31 leif]:\n> Replying to [comment:30 leif]:\n> > ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).\n> \n> ... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.\n\nBoth seem to be allowed:   http://www.sagemath.org/doc/developer/sage_manuals.html#chapter-sage-manuals-links",
+    "body": "Replying to [comment:31 leif]:\n> Replying to [comment:30 leif]:\n> > ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).\n  \n> \n> ... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.\n\n\nBoth seem to be allowed:   http://www.sagemath.org/doc/developer/sage_manuals.html#chapter-sage-manuals-links",
     "created_at": "2012-08-04T23:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -1066,8 +1063,10 @@ archive/issue_comments_023808.json:
 Replying to [comment:31 leif]:
 > Replying to [comment:30 leif]:
 > > ... not sure whether it has to be `:class:`sage.functions.log.Function_polylog``).
+  
 > 
 > ... or rather `:class:`polylog <sage.functions.log.Function_polylog>`` or something like that.
+
 
 Both seem to be allowed:   http://www.sagemath.org/doc/developer/sage_manuals.html#chapter-sage-manuals-links
 
@@ -1156,7 +1155,7 @@ If leif is happy with the patch, I'll give it a positive review.
 archive/issue_comments_023813.json:
 ```json
 {
-    "body": "Replying to [comment:36 benjaminfjones]:\n> I see, it's just whitespace at the beginnings of lines. I guess that doesn't get highlighted by trac when you view the patch. Anyway, I think it's a good thing to clean up trailing whitespace, but you'll have to watch out that touching so many lines of the file doesn't cause conflicts with other patches that modify `sage/functions/transcendental.py`. In this case I think it's probably OK, I don't know of any other currently pending  positively reviewed patches that touch that file.\n\nI got carried away with strip trailing whitespace command in Geany, in response to the previous review comments.  Will try to be more restrained next time ;-)\nMartin",
+    "body": "Replying to [comment:36 benjaminfjones]:\n> I see, it's just whitespace at the beginnings of lines. I guess that doesn't get highlighted by trac when you view the patch. Anyway, I think it's a good thing to clean up trailing whitespace, but you'll have to watch out that touching so many lines of the file doesn't cause conflicts with other patches that modify `sage/functions/transcendental.py`. In this case I think it's probably OK, I don't know of any other currently pending  positively reviewed patches that touch that file.\n\n\nI got carried away with strip trailing whitespace command in Geany, in response to the previous review comments.  Will try to be more restrained next time ;-)\nMartin",
     "created_at": "2012-08-07T06:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3401",
     "type": "issue_comment",
@@ -1167,6 +1166,7 @@ archive/issue_comments_023813.json:
 
 Replying to [comment:36 benjaminfjones]:
 > I see, it's just whitespace at the beginnings of lines. I guess that doesn't get highlighted by trac when you view the patch. Anyway, I think it's a good thing to clean up trailing whitespace, but you'll have to watch out that touching so many lines of the file doesn't cause conflicts with other patches that modify `sage/functions/transcendental.py`. In this case I think it's probably OK, I don't know of any other currently pending  positively reviewed patches that touch that file.
+
 
 I got carried away with strip trailing whitespace command in Geany, in response to the previous review comments.  Will try to be more restrained next time ;-)
 Martin

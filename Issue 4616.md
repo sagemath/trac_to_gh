@@ -3,7 +3,7 @@
 archive/issues_004616.json:
 ```json
 {
-    "body": "Assignee: @wdjoyner\n\nThis is a method of the Piecewise class (which I use almost on a daily basis in teaching):\n\n\n```\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\n                                               \n```\n\nRequires a ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4616\n\n",
+    "body": "Assignee: @wdjoyner\n\nThis is a method of the Piecewise class (which I use almost on a daily basis in teaching):\n\n```\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\n                                               \n```\nRequires a ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4616\n\n",
     "created_at": "2008-11-25T12:47:24Z",
     "labels": [
         "component: calculus",
@@ -20,14 +20,12 @@ Assignee: @wdjoyner
 
 This is a method of the Piecewise class (which I use almost on a daily basis in teaching):
 
-
 ```
 sage: f1 = lambda x: x*(pi-x)
 sage: f = Piecewise([[(0,pi),f1]])
 sage: f.cosine_series_coefficient(0,pi)
                                                
 ```
-
 Requires a ctl-c.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4616
@@ -81,7 +79,7 @@ Does #4693 fix this bug?
 archive/issue_comments_034582.json:
 ```json
 {
-    "body": "Yes, #4693 fixes the bug:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\npi^2/3\nsage: \nExiting SAGE (CPU time 0m0.17s, Wall time 2m3.53s).\nExiting spawned Maxima process.\n```\n\nDo you want to add a doctest so we can close this?\n| Sage Version 3.2.1, Release Date: 2008-12-01                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "Yes, #4693 fixes the bug:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\npi^2/3\nsage: \nExiting SAGE (CPU time 0m0.17s, Wall time 2m3.53s).\nExiting spawned Maxima process.\n```\nDo you want to add a doctest so we can close this?\n| Sage Version 3.2.1, Release Date: 2008-12-01                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
     "created_at": "2008-12-04T17:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
@@ -104,7 +102,6 @@ sage:
 Exiting SAGE (CPU time 0m0.17s, Wall time 2m3.53s).
 Exiting spawned Maxima process.
 ```
-
 Do you want to add a doctest so we can close this?
 | Sage Version 3.2.1, Release Date: 2008-12-01                       |
 | Type notebook() for the GUI, and license() for information.        |
@@ -119,7 +116,7 @@ Michael
 archive/issue_comments_034583.json:
 ```json
 {
-    "body": "I would but I still can't apply the patch for #4693:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: piecewise2\nsage: hg_sage.apply(\"/Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\")\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg status\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg status\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg import   \"/Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\"\napplying /Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\npatching file sage/functions/piecewise.py\nHunk #25 FAILED at 717\n1 out of 44 hunks FAILED -- saving rejects to file sage/functions/piecewise.py.rej\nabort: patch failed to apply\nsage: \n```\n",
+    "body": "I would but I still can't apply the patch for #4693:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: piecewise2\nsage: hg_sage.apply(\"/Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\")\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg status\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg status\ncd \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.2.rc1/devel/sage\" && hg import   \"/Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\"\napplying /Volumes/G-DRIVE-MINI/sagestuff/trac_4693.2.patch\npatching file sage/functions/piecewise.py\nHunk #25 FAILED at 717\n1 out of 44 hunks FAILED -- saving rejects to file sage/functions/piecewise.py.rej\nabort: patch failed to apply\nsage: \n```",
     "created_at": "2008-12-04T18:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
@@ -129,7 +126,6 @@ archive/issue_comments_034583.json:
 ```
 
 I would but I still can't apply the patch for #4693:
-
 
 ```
 ----------------------------------------------------------------------
@@ -146,7 +142,6 @@ Hunk #25 FAILED at 717
 abort: patch failed to apply
 sage: 
 ```
-
 
 
 
@@ -175,7 +170,7 @@ Verified that this is now fixed, attached a patch with a doctest.
 archive/issue_comments_034585.json:
 ```json
 {
-    "body": "I can read the docstring and check in Sage that it is correct. (I did not try to apply it though.)\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\npi^2/3\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nHope this is sufficient for a positive review.",
+    "body": "I can read the docstring and check in Sage that it is correct. (I did not try to apply it though.)\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\npi^2/3\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\nHope this is sufficient for a positive review.",
     "created_at": "2009-01-22T17:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
@@ -185,7 +180,6 @@ archive/issue_comments_034585.json:
 ```
 
 I can read the docstring and check in Sage that it is correct. (I did not try to apply it though.)
-
 
 ```
 
@@ -198,7 +192,6 @@ pi^2/3
 | Sage Version 3.2.3, Release Date: 2009-01-05                       |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 Hope this is sufficient for a positive review.
 

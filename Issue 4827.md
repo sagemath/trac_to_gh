@@ -93,7 +93,7 @@ The small doc patch I attached makes the documentation of the function arguments
 archive/issue_comments_036527.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n>  Also, we should maybe look into using openopt at some point since the syntax is then unified.\n\nyeahr, tell me if somebody is working on that or you need help. maybe i can look into it. probably the most difficult part is to detect/register optional solvers inside sage, or talking to installed ones...\n\n> \n> The small doc patch I attached makes the documentation of the function arguments in the same order as the function arguments.  I don't think it needs to be reviewed.\n\nwell, fwiw, +1 from me ;)",
+    "body": "Replying to [comment:1 jason]:\n>  Also, we should maybe look into using openopt at some point since the syntax is then unified.\n\n\nyeahr, tell me if somebody is working on that or you need help. maybe i can look into it. probably the most difficult part is to detect/register optional solvers inside sage, or talking to installed ones...\n\n> \n> The small doc patch I attached makes the documentation of the function arguments in the same order as the function arguments.  I don't think it needs to be reviewed.\n\n\nwell, fwiw, +1 from me ;)",
     "created_at": "2009-01-28T20:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
@@ -105,10 +105,12 @@ archive/issue_comments_036527.json:
 Replying to [comment:1 jason]:
 >  Also, we should maybe look into using openopt at some point since the syntax is then unified.
 
+
 yeahr, tell me if somebody is working on that or you need help. maybe i can look into it. probably the most difficult part is to detect/register optional solvers inside sage, or talking to installed ones...
 
 > 
 > The small doc patch I attached makes the documentation of the function arguments in the same order as the function arguments.  I don't think it needs to be reviewed.
+
 
 well, fwiw, +1 from me ;)
 

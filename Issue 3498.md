@@ -3,7 +3,7 @@
 archive/issues_003498.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
+    "body": "Assignee: @williamstein\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
     "created_at": "2008-06-23T22:51:33Z",
     "labels": [
         "component: linear algebra",
@@ -18,14 +18,12 @@ archive/issues_003498.json:
 ```
 Assignee: @williamstein
 
-
 ```
 [20:17] <wstein-3053> numpy is usually better.
 [20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?
 [20:18] <wstein-3053> jason-- please do.
 [20:19] <jason--> okay; ticket coming right up.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3498
@@ -119,7 +117,7 @@ These patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t
 archive/issue_comments_024590.json:
 ```json
 {
-    "body": "Hi Jason, \n\nany particular reason you delete the solve extension in setup.py, i.e.\n\n```\n604\t606\t#     matrix_padic_capped_relative_dense, \n605\t \t     solve, \n606\t607\t\n```\n\n\nCheers,\n\nMichael",
+    "body": "Hi Jason, \n\nany particular reason you delete the solve extension in setup.py, i.e.\n\n```\n604\t606\t#     matrix_padic_capped_relative_dense, \n605\t \t     solve, \n606\t607\t\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T01:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -137,7 +135,6 @@ any particular reason you delete the solve extension in setup.py, i.e.
 605	 	     solve, 
 606	607	
 ```
-
 
 Cheers,
 
@@ -194,7 +191,7 @@ I deleted the solve module because it seemed like it was purely a helper module 
 archive/issue_comments_024593.json:
 ```json
 {
-    "body": "Some timings.  First, a bunch of commands in 3.1.3alpha1 without the patches, then with the patches.\n\nThe matrix below is from `m=random_matrix(RDF,30,min=-2<sup>32,max=2</sup>32)`.  I then copied the same matrix to the other session, so the timings below are for the exact same matrix.\n\nbefore patches:\n\n```\nsage: timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 152 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 207 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 32.1 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 57.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 194 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 2.58 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 30.9 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 368 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 43.3 ms per loop\nsage: timeit('m.SVD()')\n625 loops, best of 3: 1.39 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 197 \u00b5s per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 196 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 270 \u00b5s per loop\nsage: timeit('m.solve_left_LU(b)')\n625 loops, best of 3: 238 \u00b5s per loop\nsage: \n```\n\n\n\nafter patches:\n\n```\nsage:  timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 159 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 176 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 42.8 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 67.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 452 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 200 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 34 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 112 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 50.4 ms per loop\nsage: timeit('m.SVD()')\n125 loops, best of 3: 3.52 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 831 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 256 \u00b5s per loop\n```\n",
+    "body": "Some timings.  First, a bunch of commands in 3.1.3alpha1 without the patches, then with the patches.\n\nThe matrix below is from `m=random_matrix(RDF,30,min=-2<sup>32,max=2</sup>32)`.  I then copied the same matrix to the other session, so the timings below are for the exact same matrix.\n\nbefore patches:\n\n```\nsage: timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 152 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 207 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 32.1 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 57.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 194 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 2.58 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 30.9 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 368 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 43.3 ms per loop\nsage: timeit('m.SVD()')\n625 loops, best of 3: 1.39 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 197 \u00b5s per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 196 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 270 \u00b5s per loop\nsage: timeit('m.solve_left_LU(b)')\n625 loops, best of 3: 238 \u00b5s per loop\nsage: \n```\n\n\nafter patches:\n\n```\nsage:  timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 159 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 176 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 42.8 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 67.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 452 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 200 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 34 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 112 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 50.4 ms per loop\nsage: timeit('m.SVD()')\n125 loops, best of 3: 3.52 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 831 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 256 \u00b5s per loop\n```",
     "created_at": "2008-09-26T02:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -245,7 +242,6 @@ sage:
 ```
 
 
-
 after patches:
 
 ```
@@ -280,7 +276,6 @@ sage: timeit('m.solve_left(b)')
 
 
 
-
 ---
 
 archive/issue_comments_024594.json:
@@ -310,7 +305,7 @@ Michael
 archive/issue_comments_024595.json:
 ```json
 {
-    "body": "Some more timings from respectably-sized matrices show that numpy is indeed way faster most of the time and neck-and-neck the rest of the time.  The GSL determinant speed below is most likely from from caching the LU decomposition that had been computed for something before and using that to compute the determinant.\n\nBefore patch\n\n```\nsage: # Before patches: GSL\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 7.2 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 90.6 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 639 ms per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 19.1 \u00b5s per loop\nsage: timeit('m.transpose()')\n125 loops, best of 3: 5.76 ms per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 97.6 ms per loop\nsage: %time m.SVD()\nCPU times: user 8.26 s, sys: 0.09 s, total: 8.35 s\nWall time: 9.16 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 2.37 s, sys: 0.05 s, total: 2.42 s\nWall time: 2.68 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 72 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 26.61 s, sys: 0.42 s, total: 27.03 s\nWall time: 30.09 s\n```\n\n\nAfter patches\n\n```\nsage: # After patches: numpy\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 2.78 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 89.2 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 224 ms per loop\nsage: timeit('m.det()')\n5 loops, best of 3: 62 ms per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 32.9 \u00b5s per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 15.1 ms per loop\nsage: timeit('m.SVD()')\n5 loops, best of 3: 1.42 s per loop\nsage: %time m.SVD()\nCPU times: user 1.19 s, sys: 0.06 s, total: 1.25 s\nWall time: 1.42 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 0.26 s, sys: 0.03 s, total: 0.28 s\nWall time: 0.32 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 68.6 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 27.52 s, sys: 0.31 s, total: 27.83 s\nWall time: 30.00 s\nsage: \n```\n",
+    "body": "Some more timings from respectably-sized matrices show that numpy is indeed way faster most of the time and neck-and-neck the rest of the time.  The GSL determinant speed below is most likely from from caching the LU decomposition that had been computed for something before and using that to compute the determinant.\n\nBefore patch\n\n```\nsage: # Before patches: GSL\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 7.2 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 90.6 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 639 ms per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 19.1 \u00b5s per loop\nsage: timeit('m.transpose()')\n125 loops, best of 3: 5.76 ms per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 97.6 ms per loop\nsage: %time m.SVD()\nCPU times: user 8.26 s, sys: 0.09 s, total: 8.35 s\nWall time: 9.16 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 2.37 s, sys: 0.05 s, total: 2.42 s\nWall time: 2.68 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 72 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 26.61 s, sys: 0.42 s, total: 27.03 s\nWall time: 30.09 s\n```\n\nAfter patches\n\n```\nsage: # After patches: numpy\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 2.78 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 89.2 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 224 ms per loop\nsage: timeit('m.det()')\n5 loops, best of 3: 62 ms per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 32.9 \u00b5s per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 15.1 ms per loop\nsage: timeit('m.SVD()')\n5 loops, best of 3: 1.42 s per loop\nsage: %time m.SVD()\nCPU times: user 1.19 s, sys: 0.06 s, total: 1.25 s\nWall time: 1.42 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 0.26 s, sys: 0.03 s, total: 0.28 s\nWall time: 0.32 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 68.6 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 27.52 s, sys: 0.31 s, total: 27.83 s\nWall time: 30.00 s\nsage: \n```",
     "created_at": "2008-09-26T03:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -359,7 +354,6 @@ CPU times: user 26.61 s, sys: 0.42 s, total: 27.03 s
 Wall time: 30.09 s
 ```
 
-
 After patches
 
 ```
@@ -403,13 +397,12 @@ sage:
 
 
 
-
 ---
 
 archive/issue_comments_024596.json:
 ```json
 {
-    "body": "**Review**\n* patch applies cleanly\n* I skimmed the code and it looks fine, I didn't thoroughly read it though\n* Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n* doctests (64-bit Linux)\n\n```\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 854:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 859:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```\n",
+    "body": "**Review**\n* patch applies cleanly\n* I skimmed the code and it looks fine, I didn't thoroughly read it though\n* Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n* doctests (64-bit Linux)\n\n```\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 854:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 859:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```",
     "created_at": "2008-09-27T19:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -449,13 +442,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_024597.json:
 ```json
 {
-    "body": "Replying to [comment:10 malb]:\n\nHi malb,\n\n> **Review**\n>  * patch applies cleanly\n>  * I skimmed the code and it looks fine, I didn't thoroughly read it though\n\nI am valgrinding it right now. Jason and I spend four hours last night fixing problems with the new nump 1.2 and scip 0.7svn - see #4205.\n\n>  * Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\nUnfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\n>  * doctests (64-bit Linux)\n\nFixed in #4205. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 malb]:\n\nHi malb,\n\n> **Review**\n> * patch applies cleanly\n> * I skimmed the code and it looks fine, I didn't thoroughly read it though\n\n\nI am valgrinding it right now. Jason and I spend four hours last night fixing problems with the new nump 1.2 and scip 0.7svn - see #4205.\n\n>  * Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\n\nUnfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\n>  * doctests (64-bit Linux)\n\n\nFixed in #4205. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T19:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -469,16 +461,19 @@ Replying to [comment:10 malb]:
 Hi malb,
 
 > **Review**
->  * patch applies cleanly
->  * I skimmed the code and it looks fine, I didn't thoroughly read it though
+> * patch applies cleanly
+> * I skimmed the code and it looks fine, I didn't thoroughly read it though
+
 
 I am valgrinding it right now. Jason and I spend four hours last night fixing problems with the new nump 1.2 and scip 0.7svn - see #4205.
 
 >  * Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)
 
+
 Unfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. 
 
 >  * doctests (64-bit Linux)
+
 
 Fixed in #4205. 
 
@@ -511,7 +506,7 @@ Hi, feel free to change to **positive review** when #4205 goes in.
 archive/issue_comments_024599.json:
 ```json
 {
-    "body": "Replying to [comment:12 malb]:\n> Hi, feel free to change to **positive review** when #4205 goes in.\n\nCool. We are still fighting some problems with scipy 0.7svn, but Mike Hansen and I are on it. Unless we can resolve those issue and if there are memory leaks in this patch I will throw the new numpy and scipy out of 3.1.3. That also makes it likely that this patch would miss 3.1.3, but so far I am hopeful.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 malb]:\n> Hi, feel free to change to **positive review** when #4205 goes in.\n\n\nCool. We are still fighting some problems with scipy 0.7svn, but Mike Hansen and I are on it. Unless we can resolve those issue and if there are memory leaks in this patch I will throw the new numpy and scipy out of 3.1.3. That also makes it likely that this patch would miss 3.1.3, but so far I am hopeful.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T19:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -522,6 +517,7 @@ archive/issue_comments_024599.json:
 
 Replying to [comment:12 malb]:
 > Hi, feel free to change to **positive review** when #4205 goes in.
+
 
 Cool. We are still fighting some problems with scipy 0.7svn, but Mike Hansen and I are on it. Unless we can resolve those issue and if there are memory leaks in this patch I will throw the new numpy and scipy out of 3.1.3. That also makes it likely that this patch would miss 3.1.3, but so far I am hopeful.
 
@@ -536,7 +532,7 @@ Michael
 archive/issue_comments_024600.json:
 ```json
 {
-    "body": "Ok, this is a problem:\n\n```\n==10940== LEAK SUMMARY:\n==10940==    definitely lost: 13,108 bytes in 321 blocks.\n==10940==      possibly lost: 303,196 bytes in 829 blocks.\n==10940==    still reachable: 34,200,409 bytes in 198,999 blocks.\n==10940==         suppressed: 340,122 bytes in 5,402 blocks.\n==10940== Reachable blocks (those to which a pointer was found) are not shown.\n==10940== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\n\nThis happens when valgrinding sage/modules/complex_double_vector.pyx. But the issue is not the code that Jason wrote, but that we leak not insignificant amounts of memory if we (re)import numpy. So I would suggest doing it once at the toplevel and killing all other import numpy statements. \n\nAnother thing that concerns me is that the number of still reachable objects has gone up dramatically, i.e. contrast the above to the situation before:\n\n```\n==16395== LEAK SUMMARY:\n==16395==    definitely lost: 612 bytes in 11 blocks.\n==16395==      possibly lost: 312,717 bytes in 866 blocks.\n==16395==    still reachable: 33,376,714 bytes in 193,940 blocks.\n==16395==         suppressed: 329,948 bytes in 5,223 blocks.\n==16395== Reachable blocks (those to which a pointer was found) are not shown.\n==16395== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\n\nOne would need to run some longer tests to see if this is just additional, but constant crap from numpy or if the amount grows as we use it more.\n\nCheers,\n\nMichael",
+    "body": "Ok, this is a problem:\n\n```\n==10940== LEAK SUMMARY:\n==10940==    definitely lost: 13,108 bytes in 321 blocks.\n==10940==      possibly lost: 303,196 bytes in 829 blocks.\n==10940==    still reachable: 34,200,409 bytes in 198,999 blocks.\n==10940==         suppressed: 340,122 bytes in 5,402 blocks.\n==10940== Reachable blocks (those to which a pointer was found) are not shown.\n==10940== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\nThis happens when valgrinding sage/modules/complex_double_vector.pyx. But the issue is not the code that Jason wrote, but that we leak not insignificant amounts of memory if we (re)import numpy. So I would suggest doing it once at the toplevel and killing all other import numpy statements. \n\nAnother thing that concerns me is that the number of still reachable objects has gone up dramatically, i.e. contrast the above to the situation before:\n\n```\n==16395== LEAK SUMMARY:\n==16395==    definitely lost: 612 bytes in 11 blocks.\n==16395==      possibly lost: 312,717 bytes in 866 blocks.\n==16395==    still reachable: 33,376,714 bytes in 193,940 blocks.\n==16395==         suppressed: 329,948 bytes in 5,223 blocks.\n==16395== Reachable blocks (those to which a pointer was found) are not shown.\n==16395== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\nOne would need to run some longer tests to see if this is just additional, but constant crap from numpy or if the amount grows as we use it more.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T20:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -556,7 +552,6 @@ Ok, this is a problem:
 ==10940== Reachable blocks (those to which a pointer was found) are not shown.
 ==10940== To see them, rerun with: --leak-check=full --show-reachable=yes
 ```
-
 This happens when valgrinding sage/modules/complex_double_vector.pyx. But the issue is not the code that Jason wrote, but that we leak not insignificant amounts of memory if we (re)import numpy. So I would suggest doing it once at the toplevel and killing all other import numpy statements. 
 
 Another thing that concerns me is that the number of still reachable objects has gone up dramatically, i.e. contrast the above to the situation before:
@@ -570,7 +565,6 @@ Another thing that concerns me is that the number of still reachable objects has
 ==16395== Reachable blocks (those to which a pointer was found) are not shown.
 ==16395== To see them, rerun with: --leak-check=full --show-reachable=yes
 ```
-
 One would need to run some longer tests to see if this is just additional, but constant crap from numpy or if the amount grows as we use it more.
 
 Cheers,
@@ -584,7 +578,7 @@ Michael
 archive/issue_comments_024601.json:
 ```json
 {
-    "body": ">> Malb: Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\n> Mabshoff: Unfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\nFor the record, it is absolutely definitely always possible to get rid of numpy imports.",
+    "body": ">> Malb: Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\n\n> Mabshoff: Unfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\n\nFor the record, it is absolutely definitely always possible to get rid of numpy imports.",
     "created_at": "2008-09-29T23:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -595,7 +589,9 @@ archive/issue_comments_024601.json:
 
 >> Malb: Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)
 
+
 > Mabshoff: Unfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. 
+
 
 For the record, it is absolutely definitely always possible to get rid of numpy imports.
 
@@ -606,7 +602,7 @@ For the record, it is absolutely definitely always possible to get rid of numpy 
 archive/issue_comments_024602.json:
 ```json
 {
-    "body": "Replying to [comment:15 was]:\n> For the record, it is absolutely definitely always possible to get rid of numpy imports.\n\nI was thinking about inheriting from a numpy type or cdef'ing some numpy type in some pxd file (don't know if that's even possible) Other than that, I can't think of any situation where one couldn't do it.",
+    "body": "Replying to [comment:15 was]:\n> For the record, it is absolutely definitely always possible to get rid of numpy imports.\n\n\nI was thinking about inheriting from a numpy type or cdef'ing some numpy type in some pxd file (don't know if that's even possible) Other than that, I can't think of any situation where one couldn't do it.",
     "created_at": "2008-09-30T08:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -617,6 +613,7 @@ archive/issue_comments_024602.json:
 
 Replying to [comment:15 was]:
 > For the record, it is absolutely definitely always possible to get rid of numpy imports.
+
 
 I was thinking about inheriting from a numpy type or cdef'ing some numpy type in some pxd file (don't know if that's even possible) Other than that, I can't think of any situation where one couldn't do it.
 
@@ -685,7 +682,7 @@ These patches all apply on top of 3.1.4 and the doctests in matrix/*.pyx and mat
 archive/issue_comments_024606.json:
 ```json
 {
-    "body": "The last patch repeatedly runs\n\n```\nimport scipy.linalg\n```\n\nThis import also needs to be done lazily.\n\nCheers,\n\nMichael",
+    "body": "The last patch repeatedly runs\n\n```\nimport scipy.linalg\n```\nThis import also needs to be done lazily.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-21T20:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -699,7 +696,6 @@ The last patch repeatedly runs
 ```
 import scipy.linalg
 ```
-
 This import also needs to be done lazily.
 
 Cheers,
@@ -731,7 +727,7 @@ After running some tests to see about leaking and the "import scipy.linalg" issu
 archive/issue_comments_024608.json:
 ```json
 {
-    "body": "okay, copying the private review request here for posterity :)\n\n\n```\nMartin and Mike,\n\nI'm emailing you two since you've both already looked at the patches at http://trac.sagemath.org/sage_trac/ticket/3498.  Martin, you almost gave it a positive review, pending resolution of the deprecation warnings.  I think mabshoff fixed the deprecation warnings without applying #4205.  Mike, you expressed some concerns over leaks.  I took care of the global numpy import issue and ran some tests with valgrind and, based on those, mabshoff said today on IRC: \"Someone other than me needs to (re)review. Blessing from me on memory issues AFAIK :)\"\n\n\nMichael also said he was still a bit suspicious, though, and it seems like he'd like to run valgrind on it himself as well.\n\n\nSo, would either of you like to (re)review the patches at #3498, especially for the mathematical content?  Michael can run valgrind on it again if he wants as well.\n\nThanks,\n\nJason\n```\n",
+    "body": "okay, copying the private review request here for posterity :)\n\n```\nMartin and Mike,\n\nI'm emailing you two since you've both already looked at the patches at http://trac.sagemath.org/sage_trac/ticket/3498.  Martin, you almost gave it a positive review, pending resolution of the deprecation warnings.  I think mabshoff fixed the deprecation warnings without applying #4205.  Mike, you expressed some concerns over leaks.  I took care of the global numpy import issue and ran some tests with valgrind and, based on those, mabshoff said today on IRC: \"Someone other than me needs to (re)review. Blessing from me on memory issues AFAIK :)\"\n\n\nMichael also said he was still a bit suspicious, though, and it seems like he'd like to run valgrind on it himself as well.\n\n\nSo, would either of you like to (re)review the patches at #3498, especially for the mathematical content?  Michael can run valgrind on it again if he wants as well.\n\nThanks,\n\nJason\n```",
     "created_at": "2008-10-22T15:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -741,7 +737,6 @@ archive/issue_comments_024608.json:
 ```
 
 okay, copying the private review request here for posterity :)
-
 
 ```
 Martin and Mike,
@@ -758,7 +753,6 @@ Thanks,
 
 Jason
 ```
-
 
 
 
@@ -955,7 +949,7 @@ robertwb: Did you have time to look at this patch on bug day?
 archive/issue_comments_024619.json:
 ```json
 {
-    "body": "Hmm... what's up with \n\n\n```\n-sage: from scipy import linsolve   \n+sage: from scipy.sparse.linalg.dsolve import linsolve\n```\n\nin sage/numerical/test.py? Does scipy.linsolve not work anymore?",
+    "body": "Hmm... what's up with \n\n```\n-sage: from scipy import linsolve   \n+sage: from scipy.sparse.linalg.dsolve import linsolve\n```\nin sage/numerical/test.py? Does scipy.linsolve not work anymore?",
     "created_at": "2008-11-04T07:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -966,12 +960,10 @@ archive/issue_comments_024619.json:
 
 Hmm... what's up with 
 
-
 ```
 -sage: from scipy import linsolve   
 +sage: from scipy.sparse.linalg.dsolve import linsolve
 ```
-
 in sage/numerical/test.py? Does scipy.linsolve not work anymore?
 
 
@@ -1077,7 +1069,7 @@ Thanks.  At that time, it was unclear what to do about the deprecation warnings 
 archive/issue_comments_024625.json:
 ```json
 {
-    "body": "The patch needs to be rebased - likely due to #799. 3.2.alpha2 should be out shortly, so I would suggest using that.\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/sage$ patch -p1 < trac_3498_part_1_numpy-RDF-CDF.patch \npatching file sage/ext/numpy.pxd\npatching file sage/matrix/change_ring.pyx\npatching file sage/matrix/constructor.py\npatching file sage/matrix/matrix_complex_double_dense.pxd\npatching file sage/matrix/matrix_complex_double_dense.pyx\nHunk #3 FAILED at 83.\n1 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix_complex_double_dense.pyx.rej\npatching file sage/matrix/matrix_double_dense.pxd\npatching file sage/matrix/matrix_double_dense.pyx\npatching file sage/matrix/matrix_real_double_dense.pxd\npatching file sage/matrix/matrix_real_double_dense.pyx\nHunk #5 FAILED at 81.\n1 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_real_double_dense.pyx.rej\npatching file sage/matrix/solve.pyx\npatching file setup.py\nHunk #2 succeeded at 488 (offset 2 lines).\nHunk #3 succeeded at 601 (offset 2 lines).\n```\n\n\nCheers,\n\nMichael",
+    "body": "The patch needs to be rebased - likely due to #799. 3.2.alpha2 should be out shortly, so I would suggest using that.\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/sage$ patch -p1 < trac_3498_part_1_numpy-RDF-CDF.patch \npatching file sage/ext/numpy.pxd\npatching file sage/matrix/change_ring.pyx\npatching file sage/matrix/constructor.py\npatching file sage/matrix/matrix_complex_double_dense.pxd\npatching file sage/matrix/matrix_complex_double_dense.pyx\nHunk #3 FAILED at 83.\n1 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix_complex_double_dense.pyx.rej\npatching file sage/matrix/matrix_double_dense.pxd\npatching file sage/matrix/matrix_double_dense.pyx\npatching file sage/matrix/matrix_real_double_dense.pxd\npatching file sage/matrix/matrix_real_double_dense.pyx\nHunk #5 FAILED at 81.\n1 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_real_double_dense.pyx.rej\npatching file sage/matrix/solve.pyx\npatching file setup.py\nHunk #2 succeeded at 488 (offset 2 lines).\nHunk #3 succeeded at 601 (offset 2 lines).\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-05T18:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -1108,7 +1100,6 @@ patching file setup.py
 Hunk #2 succeeded at 488 (offset 2 lines).
 Hunk #3 succeeded at 601 (offset 2 lines).
 ```
-
 
 Cheers,
 
@@ -1218,7 +1209,7 @@ archive/issue_events_007974.json:
 archive/issue_comments_024630.json:
 ```json
 {
-    "body": "There are some numerical noise issues to fix:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 887:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 892:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```\n",
+    "body": "There are some numerical noise issues to fix:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 887:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 892:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```",
     "created_at": "2008-11-09T18:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
@@ -1253,7 +1244,6 @@ Got:
     [-1.77117977403e-16 -8.87690528723e-17                1.0]
 **********************************************************************
 ```
-
 
 
 

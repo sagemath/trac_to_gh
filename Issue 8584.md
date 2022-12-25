@@ -87,7 +87,7 @@ Looks good, though I still agree with David Loeffler's complaint from another ti
 archive/issue_comments_077613.json:
 ```json
 {
-    "body": "> I still agree. .. print representation for Dirichlet characters isn't great. \n\nI don't agree.  I really like the print representation of Dirichlet characters.",
+    "body": "> I still agree. .. print representation for Dirichlet characters isn't great. \n\n\nI don't agree.  I really like the print representation of Dirichlet characters.",
     "created_at": "2010-04-02T13:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
@@ -97,6 +97,7 @@ archive/issue_comments_077613.json:
 ```
 
 > I still agree. .. print representation for Dirichlet characters isn't great. 
+
 
 I don't agree.  I really like the print representation of Dirichlet characters.
 

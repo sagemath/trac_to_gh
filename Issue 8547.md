@@ -146,7 +146,7 @@ Changing assignee from mhampton to amhou.
 archive/issue_comments_077151.json:
 ```json
 {
-    "body": "This patch touches matrix2.pyx which results in failures of a number of doctests.  Example:\n\n\n```\nsage -t  devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/boothby/sage-4.3.4/devel/sage-main/sage/matrix/matrix2.pyx\", line 3142:\n    sage: A.restrict(W2, check=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ArithmeticError: subspace is not invariant under matrix\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_48[10]>\", line 1, in <module>\n        A.restrict(W2, check=True)###line 3142:\n    sage: A.restrict(W2, check=True)\n      File \"matrix2.pyx\", line 3167, in sage.matrix.matrix2.Matrix.restrict (sage/matrix/matrix2.c:19470)\n        raise ArithmeticError, \"subspace is not invariant under matrix (%s)\"%msg\n    ArithmeticError: subspace is not invariant under matrix (vector is not in free module)\n**********************************************************************\n```\n\n\nThat should be easy to fix.",
+    "body": "This patch touches matrix2.pyx which results in failures of a number of doctests.  Example:\n\n```\nsage -t  devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/boothby/sage-4.3.4/devel/sage-main/sage/matrix/matrix2.pyx\", line 3142:\n    sage: A.restrict(W2, check=True)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ArithmeticError: subspace is not invariant under matrix\nGot:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/boothby/sage-4.3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_48[10]>\", line 1, in <module>\n        A.restrict(W2, check=True)###line 3142:\n    sage: A.restrict(W2, check=True)\n      File \"matrix2.pyx\", line 3167, in sage.matrix.matrix2.Matrix.restrict (sage/matrix/matrix2.c:19470)\n        raise ArithmeticError, \"subspace is not invariant under matrix (%s)\"%msg\n    ArithmeticError: subspace is not invariant under matrix (vector is not in free module)\n**********************************************************************\n```\n\nThat should be easy to fix.",
     "created_at": "2010-03-28T20:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ archive/issue_comments_077151.json:
 ```
 
 This patch touches matrix2.pyx which results in failures of a number of doctests.  Example:
-
 
 ```
 sage -t  devel/sage/sage/matrix/matrix2.pyx
@@ -183,7 +182,6 @@ Got:
     ArithmeticError: subspace is not invariant under matrix (vector is not in free module)
 **********************************************************************
 ```
-
 
 That should be easy to fix.
 
@@ -272,7 +270,7 @@ Some notes from reading through the code looking at stylistic issues.  I really
 archive/issue_comments_077156.json:
 ```json
 {
-    "body": "Replying to [comment:10 jason]:\n> Some notes from reading through the code looking at stylistic issues.\u00a0 I really wish we had\n>  line-by-line commenting like rietveld for this sort of thing.\n> \n>  1. Lots of cdef'd functions do not have doctests.\u00a0 I thought the policy from discussions on sage-devel \n> was that *every* function (including cdef functions) should have doctests (but, of course, these doctests\n>  would have to either indirectly test the cdef'd function or would have to test a wrapper of the cdef function).\u00a0 \n\nWe definitely do not require doctests for cdef'd methods.   The requirement is that \"sage -coverage\" returns a score of 100%.  This is clearly stated in the patch reviewers guide.    I did seriously consider them in this case, but literally every single one of these doctests would just be a literal *exact* copy of a doctest from elsewhere (!) but with # indirect doctest next to it.  There's just no value in that.   I could also make the methods cpdef, but that does incur a performance penalty -- in this case, it would be huge (which is totally unacceptable). \n\n> Some functions (_baum_welch_gamma, for example) don't even have docstrings.\n\nI do think that all cdef'd methods should have docstrings, and will add docstrings to any that don't have them (in a part 2 patch). \n\n>  1. I'm curious why IntList.!__getitem!__ does not use the sage.misc.misc_c.normalize_index function to deal with slices.\u00a0 \n> How much of a performance penalty is there?\u00a0\n\nI'll switch to using normalize_index, since I'm not concerned with performance for list indexing, since everywhere that performance matters, I'm directly accessing the memory buffer (which is the only way to really compete with tightly coded C libraries).   So my updated patch will change to use normalize_index, unless there is a serious problem with doing so. \n\n>  Can this \"python semantics\" part be extracted out to be a more general \n> cdef'd counterpart to normalize_index, so that matrices, vectors, and other types can use it better to implement \n> !__getitem!__?\u00a0 \n\nPerhaps.  I'm certainly not doing so for this patch. \n\n> Also, as a future enhancement, it doesn't seem that much harder for !__setitem!__ to also \n> support slices.\u00a0 At the very least, the doctests for normalize_index probably ought to be \n> run on the !__getitem!__ function, as they exercise a number of corner cases for the python semantics.\n\nFortunately this won't be necessary since I'm switching to it. \n\n>  1. IntList.sum() does not have a doctest for the overflow case\n\nI can add that.   I like testing all corner cases.\n\nThanks for your helpful review of style...\n\n- William",
+    "body": "Replying to [comment:10 jason]:\n> Some notes from reading through the code looking at stylistic issues.\u00a0 I really wish we had\n>  line-by-line commenting like rietveld for this sort of thing.\n> \n> 1. Lots of cdef'd functions do not have doctests.\u00a0 I thought the policy from discussions on sage-devel \n> was that *every* function (including cdef functions) should have doctests (but, of course, these doctests\n>  would have to either indirectly test the cdef'd function or would have to test a wrapper of the cdef function).\u00a0 \n\n\nWe definitely do not require doctests for cdef'd methods.   The requirement is that \"sage -coverage\" returns a score of 100%.  This is clearly stated in the patch reviewers guide.    I did seriously consider them in this case, but literally every single one of these doctests would just be a literal *exact* copy of a doctest from elsewhere (!) but with # indirect doctest next to it.  There's just no value in that.   I could also make the methods cpdef, but that does incur a performance penalty -- in this case, it would be huge (which is totally unacceptable). \n\n> Some functions (_baum_welch_gamma, for example) don't even have docstrings.\n\n\nI do think that all cdef'd methods should have docstrings, and will add docstrings to any that don't have them (in a part 2 patch). \n\n>  1. I'm curious why IntList.!__getitem!__ does not use the sage.misc.misc_c.normalize_index function to deal with slices.\u00a0 \n  \n> How much of a performance penalty is there?\u00a0\n\nI'll switch to using normalize_index, since I'm not concerned with performance for list indexing, since everywhere that performance matters, I'm directly accessing the memory buffer (which is the only way to really compete with tightly coded C libraries).   So my updated patch will change to use normalize_index, unless there is a serious problem with doing so. \n\n>  Can this \"python semantics\" part be extracted out to be a more general \n\n> cdef'd counterpart to normalize_index, so that matrices, vectors, and other types can use it better to implement \n> !__getitem!__?\u00a0 \n\n\nPerhaps.  I'm certainly not doing so for this patch. \n\n> Also, as a future enhancement, it doesn't seem that much harder for !__setitem!__ to also \n> support slices.\u00a0 At the very least, the doctests for normalize_index probably ought to be \n> run on the !__getitem!__ function, as they exercise a number of corner cases for the python semantics.\n\n\nFortunately this won't be necessary since I'm switching to it. \n\n>  1. IntList.sum() does not have a doctest for the overflow case\n\n\nI can add that.   I like testing all corner cases.\n\nThanks for your helpful review of style...\n\n- William",
     "created_at": "2010-04-03T08:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -285,24 +283,29 @@ Replying to [comment:10 jason]:
 > Some notes from reading through the code looking at stylistic issues.  I really wish we had
 >  line-by-line commenting like rietveld for this sort of thing.
 > 
->  1. Lots of cdef'd functions do not have doctests.  I thought the policy from discussions on sage-devel 
+> 1. Lots of cdef'd functions do not have doctests.  I thought the policy from discussions on sage-devel 
 > was that *every* function (including cdef functions) should have doctests (but, of course, these doctests
 >  would have to either indirectly test the cdef'd function or would have to test a wrapper of the cdef function).  
+
 
 We definitely do not require doctests for cdef'd methods.   The requirement is that "sage -coverage" returns a score of 100%.  This is clearly stated in the patch reviewers guide.    I did seriously consider them in this case, but literally every single one of these doctests would just be a literal *exact* copy of a doctest from elsewhere (!) but with # indirect doctest next to it.  There's just no value in that.   I could also make the methods cpdef, but that does incur a performance penalty -- in this case, it would be huge (which is totally unacceptable). 
 
 > Some functions (_baum_welch_gamma, for example) don't even have docstrings.
 
+
 I do think that all cdef'd methods should have docstrings, and will add docstrings to any that don't have them (in a part 2 patch). 
 
 >  1. I'm curious why IntList.!__getitem!__ does not use the sage.misc.misc_c.normalize_index function to deal with slices.  
+  
 > How much of a performance penalty is there? 
 
 I'll switch to using normalize_index, since I'm not concerned with performance for list indexing, since everywhere that performance matters, I'm directly accessing the memory buffer (which is the only way to really compete with tightly coded C libraries).   So my updated patch will change to use normalize_index, unless there is a serious problem with doing so. 
 
 >  Can this "python semantics" part be extracted out to be a more general 
+
 > cdef'd counterpart to normalize_index, so that matrices, vectors, and other types can use it better to implement 
 > !__getitem!__?  
+
 
 Perhaps.  I'm certainly not doing so for this patch. 
 
@@ -310,9 +313,11 @@ Perhaps.  I'm certainly not doing so for this patch.
 > support slices.  At the very least, the doctests for normalize_index probably ought to be 
 > run on the !__getitem!__ function, as they exercise a number of corner cases for the python semantics.
 
+
 Fortunately this won't be necessary since I'm switching to it. 
 
 >  1. IntList.sum() does not have a doctest for the overflow case
+
 
 I can add that.   I like testing all corner cases.
 
@@ -360,7 +365,7 @@ Apart from the noise issue  I think can give this a positive review.
 archive/issue_comments_077158.json:
 ```json
 {
-    "body": "* I've attached a part 2 patch.   I made sure all cdef's methods have docstrings and also that doctests are properly sphinx formated (some weren't since they were copied from the old code). \n\n* Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n \n* I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n```\nsage: timeit('z = sage.misc.misc_c.normalize_index(slice(1,10^5),10^5)')   # slow because constructions a big python list\n125 loops, best of 3: 2.17 ms per loop\nsage: a = stats.IntList([1..10^5])\nsage: timeit('a[1:10^5]')                       # slice is just a memcpy\n625 loops, best of 3: 48.4 \u00b5s per loop\nsage: 2.17/0.0484\n44.8347107438017\n```\n\nHere's an example with a step:\n\n```\nsage: a = stats.IntList([1..10^5])\nsage: timeit('a[1:10^5:2]')\n625 loops, best of 3: 92.2 \u00b5s per loop\nsage: timeit('z = sage.misc.misc_c.normalize_index(slice(1,10^5,2),10^5)')\n625 loops, best of 3: 772 \u00b5s per loop\n```\n\nand that 772 microseconds is *before* we do the actual iteration through the returned list of python ints, convert them to c ints, copy stuff around in memory, etc. \n\nThis stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n -- William",
+    "body": "* I've attached a part 2 patch.   I made sure all cdef's methods have docstrings and also that doctests are properly sphinx formated (some weren't since they were copied from the old code). \n\n* Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n \n* I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n```\nsage: timeit('z = sage.misc.misc_c.normalize_index(slice(1,10^5),10^5)')   # slow because constructions a big python list\n125 loops, best of 3: 2.17 ms per loop\nsage: a = stats.IntList([1..10^5])\nsage: timeit('a[1:10^5]')                       # slice is just a memcpy\n625 loops, best of 3: 48.4 \u00b5s per loop\nsage: 2.17/0.0484\n44.8347107438017\n```\nHere's an example with a step:\n\n```\nsage: a = stats.IntList([1..10^5])\nsage: timeit('a[1:10^5:2]')\n625 loops, best of 3: 92.2 \u00b5s per loop\nsage: timeit('z = sage.misc.misc_c.normalize_index(slice(1,10^5,2),10^5)')\n625 loops, best of 3: 772 \u00b5s per loop\n```\nand that 772 microseconds is *before* we do the actual iteration through the returned list of python ints, convert them to c ints, copy stuff around in memory, etc. \n\nThis stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n -- William",
     "created_at": "2010-04-08T21:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -384,7 +389,6 @@ sage: timeit('a[1:10^5]')                       # slice is just a memcpy
 sage: 2.17/0.0484
 44.8347107438017
 ```
-
 Here's an example with a step:
 
 ```
@@ -394,7 +398,6 @@ sage: timeit('a[1:10^5:2]')
 sage: timeit('z = sage.misc.misc_c.normalize_index(slice(1,10^5,2),10^5)')
 625 loops, best of 3: 772 µs per loop
 ```
-
 and that 772 microseconds is *before* we do the actual iteration through the returned list of python ints, convert them to c ints, copy stuff around in memory, etc. 
 
 This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in "realtime" processing of large datastreams.    I don't want slow functions anywhere in there. 
@@ -426,7 +429,7 @@ part 2; apply this and the previous patch
 archive/issue_comments_077160.json:
 ```json
 {
-    "body": "Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by @jasongrout created at 2010-04-08 22:29:13\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\nI meant that the doctest looks like this:\n\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\nI agree.",
+    "body": "Attachment [trac_8547-take2-part2.patch](tarball://root/attachments/some-uuid/ticket8547/trac_8547-take2-part2.patch) by @jasongrout created at 2010-04-08 22:29:13\n\nReplying to [comment:13 was]:\n\n\n\n> * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n\n\n\nI meant that the doctest looks like this:\n\n```\nNote that there can be overflow, since the entries are C ints:: \n    sage: a = stats.IntList([2^30,2^30]); a \n    [1073741824, 1073741824] \n\n```\n\nThat's it.  There's no test there; you're just creating a list, not summing anything.\n\n\n>  \n\n> * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:\n\n> This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in \"realtime\" processing of large datastreams.    I don't want slow functions anywhere in there. \n\n\n\nI agree.",
     "created_at": "2010-04-08T22:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -444,8 +447,8 @@ Replying to [comment:13 was]:
 > * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. 
 
 
-I meant that the doctest looks like this:
 
+I meant that the doctest looks like this:
 
 ```
 Note that there can be overflow, since the entries are C ints:: 
@@ -454,14 +457,15 @@ Note that there can be overflow, since the entries are C ints::
 
 ```
 
-
 That's it.  There's no test there; you're just creating a list, not summing anything.
 
 
 >  
+
 > * I read the source code for `sage.misc.misc_c.normalize_index` and cannot bring myself to use that in this situation.  That  function actually returns a Python *list* of Python ints for every single index into the list that is being sliced!  That would easily lead to factor of 50-100 slowdowns on realistic operations:
 
 > This stats code I'm writing is really meant to be industrial strength -- the sort of code maybe somebody would use in "realtime" processing of large datastreams.    I don't want slow functions anywhere in there. 
+
 
 
 I agree.
@@ -473,7 +477,7 @@ I agree.
 archive/issue_comments_077161.json:
 ```json
 {
-    "body": "Replying to [comment:14 jason]:\n> Replying to [comment:13 was]:\n> \n> \n> \n> > * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n> \n> \n> I meant that the doctest looks like this:\n> \n> {{{\n> Note that there can be overflow, since the entries are C ints:: \n>     sage: a = stats.IntList([2<sup>30,2</sup>30]); a \n>     [1073741824, 1073741824] \n> \n> }}}\n> \n> That's it.  There's no test there; you're just creating a list, not summing anything.\n> \n\nThanks for the clarification -- I was being dense; I've put up a part 3 that addresses this. \n\nSo, can I get a positive review now?",
+    "body": "Replying to [comment:14 jason]:\n> Replying to [comment:13 was]:\n> \n> \n> \n> > * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. \n \n> \n> \n> I meant that the doctest looks like this:\n> \n> \n> ```\n> Note that there can be overflow, since the entries are C ints:: \n>     sage: a = stats.IntList([2^30,2^30]); a \n>     [1073741824, 1073741824] \n> \n> ```\n> \n> That's it.  There's no test there; you're just creating a list, not summing anything.\n> \n\n\nThanks for the clarification -- I was being dense; I've put up a part 3 that addresses this. \n\nSo, can I get a positive review now?",
     "created_at": "2010-04-10T19:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8547",
     "type": "issue_comment",
@@ -488,19 +492,22 @@ Replying to [comment:14 jason]:
 > 
 > 
 > > * Jason said above that IntList.sum doesn't have a doctest for the overflow case... but it does, so I don't know what he meant. 
+ 
 > 
 > 
 > I meant that the doctest looks like this:
 > 
-> {{{
+> 
+> ```
 > Note that there can be overflow, since the entries are C ints:: 
->     sage: a = stats.IntList([2<sup>30,2</sup>30]); a 
+>     sage: a = stats.IntList([2^30,2^30]); a 
 >     [1073741824, 1073741824] 
 > 
-> }}}
+> ```
 > 
 > That's it.  There's no test there; you're just creating a list, not summing anything.
 > 
+
 
 Thanks for the clarification -- I was being dense; I've put up a part 3 that addresses this. 
 

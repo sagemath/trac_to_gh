@@ -3,7 +3,7 @@
 archive/issues_009680.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nI just found this gem.  Apparently, something replaces \"self\" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.\n\n\n```\nsage: DLXMatrix?\n...\nThe 0 entry is reserved internally... Blame the original author, or fix it yourDLXMatrix.\n```\n\n\nwhere it should read \"yourself\" at the end of the sentence.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9680\n\n",
+    "body": "Assignee: mvngu\n\nI just found this gem.  Apparently, something replaces \"self\" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.\n\n```\nsage: DLXMatrix?\n...\nThe 0 entry is reserved internally... Blame the original author, or fix it yourDLXMatrix.\n```\n\nwhere it should read \"yourself\" at the end of the sentence.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9680\n\n",
     "created_at": "2010-08-03T23:32:00Z",
     "labels": [
         "component: documentation",
@@ -21,13 +21,11 @@ Assignee: mvngu
 
 I just found this gem.  Apparently, something replaces "self" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.
 
-
 ```
 sage: DLXMatrix?
 ...
 The 0 entry is reserved internally... Blame the original author, or fix it yourDLXMatrix.
 ```
-
 
 where it should read "yourself" at the end of the sentence.
 
@@ -42,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9680
 archive/issue_comments_093951.json:
 ```json
 {
-    "body": "I only see this in the notebook.  The cause for the replacement lies in the file sagenb/misc/sageinspect.py, the line\n\n```\n        s = s.replace('self.','%s.'%obj_name)\n```\n\nin the function sage_getdoc.  There is an identical line in sage/misc/sageinspect.py, so I'm not sure why this doesn't show up in the command line, but I don't remember all the intricacies of how docstrings are produced in the two settings.",
+    "body": "I only see this in the notebook.  The cause for the replacement lies in the file sagenb/misc/sageinspect.py, the line\n\n```\n        s = s.replace('self.','%s.'%obj_name)\n```\nin the function sage_getdoc.  There is an identical line in sage/misc/sageinspect.py, so I'm not sure why this doesn't show up in the command line, but I don't remember all the intricacies of how docstrings are produced in the two settings.",
     "created_at": "2010-08-04T00:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9680",
     "type": "issue_comment",
@@ -56,7 +54,6 @@ I only see this in the notebook.  The cause for the replacement lies in the file
 ```
         s = s.replace('self.','%s.'%obj_name)
 ```
-
 in the function sage_getdoc.  There is an identical line in sage/misc/sageinspect.py, so I'm not sure why this doesn't show up in the command line, but I don't remember all the intricacies of how docstrings are produced in the two settings.
 
 
@@ -101,7 +98,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093953.json:
 ```json
 {
-    "body": "`DLXMatrix?` now (6.6.rc3) displays\n\n```\n  ...\n   Note: The 0 entry is reserved internally for headers in the\n     sparse representation, so rows and columns begin their indexing\n     with 1. Apologies for any heartache this causes. Blame the\n     original author, or fix it yourself.\n   ...\n```\n\nas expected.",
+    "body": "`DLXMatrix?` now (6.6.rc3) displays\n\n```\n  ...\n   Note: The 0 entry is reserved internally for headers in the\n     sparse representation, so rows and columns begin their indexing\n     with 1. Apologies for any heartache this causes. Blame the\n     original author, or fix it yourself.\n   ...\n```\nas expected.",
     "created_at": "2015-04-13T13:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9680",
     "type": "issue_comment",
@@ -120,7 +117,6 @@ archive/issue_comments_093953.json:
      original author, or fix it yourself.
    ...
 ```
-
 as expected.
 
 

@@ -3,7 +3,7 @@
 archive/issues_000429.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry:\n\n```\nsage: A = Matrix(RR,2,2,sparse=True) \n<type 'exceptions.TypeError'>: Unable to convert x (='None')\nto real number.\n```\n\nwhile\n\n```\nsage: A = Matrix(GF(127),2,2,sparse=True)\n```\n\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/429\n\n",
+    "body": "Assignee: @williamstein\n\nTry:\n\n```\nsage: A = Matrix(RR,2,2,sparse=True) \n<type 'exceptions.TypeError'>: Unable to convert x (='None')\nto real number.\n```\nwhile\n\n```\nsage: A = Matrix(GF(127),2,2,sparse=True)\n```\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/429\n\n",
     "created_at": "2007-08-15T16:53:44Z",
     "labels": [
         "component: linear algebra",
@@ -25,13 +25,11 @@ sage: A = Matrix(RR,2,2,sparse=True)
 <type 'exceptions.TypeError'>: Unable to convert x (='None')
 to real number.
 ```
-
 while
 
 ```
 sage: A = Matrix(GF(127),2,2,sparse=True)
 ```
-
 works.
 
 Issue created by migration from https://trac.sagemath.org/ticket/429

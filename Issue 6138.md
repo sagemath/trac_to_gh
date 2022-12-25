@@ -108,7 +108,7 @@ For this, isn't it possible to lazily add the coercion using coerce_map_from?
 archive/issue_comments_048923.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> For this, isn't it possible to lazily add the coercion using coerce_map_from?\n\nProbably so. It would be best handled by some \"templated coercion declarations\", as I had started to implement in MuPAD. Let's just leave it as is for the moment, until we have enough use cases to come up with the right design.",
+    "body": "Replying to [comment:3 mhansen]:\n> For this, isn't it possible to lazily add the coercion using coerce_map_from?\n\n\nProbably so. It would be best handled by some \"templated coercion declarations\", as I had started to implement in MuPAD. Let's just leave it as is for the moment, until we have enough use cases to come up with the right design.",
     "created_at": "2009-11-01T12:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6138",
     "type": "issue_comment",
@@ -119,6 +119,7 @@ archive/issue_comments_048923.json:
 
 Replying to [comment:3 mhansen]:
 > For this, isn't it possible to lazily add the coercion using coerce_map_from?
+
 
 Probably so. It would be best handled by some "templated coercion declarations", as I had started to implement in MuPAD. Let's just leave it as is for the moment, until we have enough use cases to come up with the right design.
 

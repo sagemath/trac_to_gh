@@ -126,7 +126,7 @@ Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.p
 archive/issue_comments_017211.json:
 ```json
 {
-    "body": "Replying to [comment:5 craigcitro]:\n> Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.\n> \n\nEither way, it is fixed :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 craigcitro]:\n> Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.\n> \n\n\nEither way, it is fixed :)\n\nCheers,\n\nMichael",
     "created_at": "2008-03-15T22:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2528",
     "type": "issue_comment",
@@ -138,6 +138,7 @@ archive/issue_comments_017211.json:
 Replying to [comment:5 craigcitro]:
 > Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.
 > 
+
 
 Either way, it is fixed :)
 

@@ -53,7 +53,7 @@ Changing status from new to needs_work.
 archive/issue_comments_085965.json:
 ```json
 {
-    "body": "Hmmm...trying to run something from matplotlib says:\n\n\n```\nTraceback (most recent call last):    q=ax.scatter(x,y)\n  File \"\", line 1, in <module>\n    \n  File \"/private/var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Tmp-/tmp_3GqZ9/___code___.py\", line 3, in <module>\n    import matplotlib.pyplot as plt\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/pyplot.py\", line 6, in <module>\n    from matplotlib.figure import Figure, figaspect\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/figure.py\", line 18, in <module>\n    from axes import Axes, SubplotBase, subplot_class_factory\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axes.py\", line 12, in <module>\n    import matplotlib.axis as maxis\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axis.py\", line 10, in <module>\n    import matplotlib.font_manager as font_manager\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/font_manager.py\", line 52, in <module>\n    from matplotlib import ft2font\nImportError: dlopen(/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so, 2): Library not loaded: /opt/local/lib/libfreetype.6.dylib\n  Referenced from: /Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so\n  Reason: Incompatible library version: ft2font.so requires version 11.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\n```\n\n\nSo somehow this is picking up my macports version of freetype.  That's a problem.",
+    "body": "Hmmm...trying to run something from matplotlib says:\n\n```\nTraceback (most recent call last):    q=ax.scatter(x,y)\n  File \"\", line 1, in <module>\n    \n  File \"/private/var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Tmp-/tmp_3GqZ9/___code___.py\", line 3, in <module>\n    import matplotlib.pyplot as plt\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/pyplot.py\", line 6, in <module>\n    from matplotlib.figure import Figure, figaspect\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/figure.py\", line 18, in <module>\n    from axes import Axes, SubplotBase, subplot_class_factory\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axes.py\", line 12, in <module>\n    import matplotlib.axis as maxis\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axis.py\", line 10, in <module>\n    import matplotlib.font_manager as font_manager\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/font_manager.py\", line 52, in <module>\n    from matplotlib import ft2font\nImportError: dlopen(/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so, 2): Library not loaded: /opt/local/lib/libfreetype.6.dylib\n  Referenced from: /Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so\n  Reason: Incompatible library version: ft2font.so requires version 11.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\n```\n\nSo somehow this is picking up my macports version of freetype.  That's a problem.",
     "created_at": "2010-06-10T12:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ archive/issue_comments_085965.json:
 ```
 
 Hmmm...trying to run something from matplotlib says:
-
 
 ```
 Traceback (most recent call last):    q=ax.scatter(x,y)
@@ -86,7 +85,6 @@ ImportError: dlopen(/Users/grout/sage/local/lib/python2.6/site-packages/matplotl
   Reason: Incompatible library version: ft2font.so requires version 11.0.0 or later, but libfreetype.6.dylib provides version 10.0.0
 ```
 
-
 So somehow this is picking up my macports version of freetype.  That's a problem.
 
 
@@ -96,7 +94,7 @@ So somehow this is picking up my macports version of freetype.  That's a problem
 archive/issue_comments_085966.json:
 ```json
 {
-    "body": "Not working on Solaris either. It still reports:\n\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.7.3\n```\n\n\nFreetype is really confusing in that there are 3 numbers associated with a release. Then to make matters worst, sometimes it called freetype, and other times freetype2. I think they are the same. \n\n```\n   release    libtool      so\n  -------------------------------\n     2.3.12     10.0.4    6.4.0\n     2.3.11     9.22.3    6.3.22\n     2.3.10     9.21.3    6.3.21\n     2.3.9      9.20.3    6.3.20\n     2.3.8      9.19.3    6.3.19\n     2.3.7      9.18.3    6.3.18\n     2.3.6      9.17.3    6.3.17\n     2.3.5      9.16.3    6.3.16\n     2.3.4      9.15.3    6.3.15\n     2.3.3      9.14.3    6.3.14\n     2.3.2      9.13.3    6.3.13\n     2.3.1      9.12.3    6.3.12\n     2.3.0      9.11.3    6.3.11\n     2.2.1      9.10.3    6.3.10\n     2.2.0      9.9.3     6.3.9\n     2.1.10     9.8.3     6.3.8\n     2.1.9      9.7.3     6.3.7\n     2.1.8      9.6.3     6.3.6 \n```\n\n\nfreetype2 9.7.3 is also known as version 2.1.8. Since Sage 4.4.3 includes freetype 2.3.5, matplotlib should report it has found freetype2 version 9.16.3 and not 9.7.3 as it does. \n\nRather inconveniently, the version of freetype globally installed on sage.math and boxen.math are the same as in Sage. This makes the message from matplotlib about the version of freetype will be the same in either case. \n\n||                   |                   |\n||-------------------|-------------------|\n||**release version**|**libtool version**|\n|Latest freeetype2|2.3.12|10.0.4|\n|sage.math|2.3.5|9.16.3|\n|In Sage 4.4.3|2.3.5|9.16.3|\n|As supplied on Solaris 10 03/05|2.1.9|9.7.3|\n**I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n\nDave",
+    "body": "Not working on Solaris either. It still reports:\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.7.3\n```\n\nFreetype is really confusing in that there are 3 numbers associated with a release. Then to make matters worst, sometimes it called freetype, and other times freetype2. I think they are the same. \n\n```\n   release    libtool      so\n  -------------------------------\n     2.3.12     10.0.4    6.4.0\n     2.3.11     9.22.3    6.3.22\n     2.3.10     9.21.3    6.3.21\n     2.3.9      9.20.3    6.3.20\n     2.3.8      9.19.3    6.3.19\n     2.3.7      9.18.3    6.3.18\n     2.3.6      9.17.3    6.3.17\n     2.3.5      9.16.3    6.3.16\n     2.3.4      9.15.3    6.3.15\n     2.3.3      9.14.3    6.3.14\n     2.3.2      9.13.3    6.3.13\n     2.3.1      9.12.3    6.3.12\n     2.3.0      9.11.3    6.3.11\n     2.2.1      9.10.3    6.3.10\n     2.2.0      9.9.3     6.3.9\n     2.1.10     9.8.3     6.3.8\n     2.1.9      9.7.3     6.3.7\n     2.1.8      9.6.3     6.3.6 \n```\n\nfreetype2 9.7.3 is also known as version 2.1.8. Since Sage 4.4.3 includes freetype 2.3.5, matplotlib should report it has found freetype2 version 9.16.3 and not 9.7.3 as it does. \n\nRather inconveniently, the version of freetype globally installed on sage.math and boxen.math are the same as in Sage. This makes the message from matplotlib about the version of freetype will be the same in either case. \n\n||                   |                   |\n||-------------------|-------------------|\n||**release version**|**libtool version**|\n|Latest freeetype2|2.3.12|10.0.4|\n|sage.math|2.3.5|9.16.3|\n|In Sage 4.4.3|2.3.5|9.16.3|\n|As supplied on Solaris 10 03/05|2.1.9|9.7.3|\n**I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n\nDave",
     "created_at": "2010-06-10T13:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -107,13 +105,11 @@ archive/issue_comments_085966.json:
 
 Not working on Solaris either. It still reports:
 
-
 ```
 REQUIRED DEPENDENCIES
                  numpy: 1.3.0
              freetype2: 9.7.3
 ```
-
 
 Freetype is really confusing in that there are 3 numbers associated with a release. Then to make matters worst, sometimes it called freetype, and other times freetype2. I think they are the same. 
 
@@ -140,7 +136,6 @@ Freetype is really confusing in that there are 3 numbers associated with a relea
      2.1.8      9.6.3     6.3.6 
 ```
 
-
 freetype2 9.7.3 is also known as version 2.1.8. Since Sage 4.4.3 includes freetype 2.3.5, matplotlib should report it has found freetype2 version 9.16.3 and not 9.7.3 as it does. 
 
 Rather inconveniently, the version of freetype globally installed on sage.math and boxen.math are the same as in Sage. This makes the message from matplotlib about the version of freetype will be the same in either case. 
@@ -163,7 +158,7 @@ Dave
 archive/issue_comments_085967.json:
 ```json
 {
-    "body": "I forgot to add, one other change that is needed, is a revised spkg-install, to ensure matplotlib builds 64-bit. \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\n\nshould be changed to:\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"Building a 64-bit version of matplotlib\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n",
+    "body": "I forgot to add, one other change that is needed, is a revised spkg-install, to ensure matplotlib builds 64-bit. \n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\nshould be changed to:\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"Building a 64-bit version of matplotlib\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```",
     "created_at": "2010-06-10T13:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -174,7 +169,6 @@ archive/issue_comments_085967.json:
 
 I forgot to add, one other change that is needed, is a revised spkg-install, to ensure matplotlib builds 64-bit. 
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
    echo "64 bit MacIntel"
@@ -183,9 +177,7 @@ if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
 fi
 ```
 
-
 should be changed to:
-
 
 ```
 if [ "x$SAGE64" = xyes ]; then
@@ -194,7 +186,6 @@ if [ "x$SAGE64" = xyes ]; then
    LDFLAGS="-m64 "; export LDFLAGS
 fi
 ```
-
 
 
 
@@ -239,7 +230,7 @@ See #9208 for an update to sage-env which fixes the problem of matplotlib findin
 archive/issue_comments_085970.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n\n> **I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n> \n> Dave \n\nThe best solution looks to be to get pkg-config to work properly, which requires it knows where the Sage files are to be found. That is done by setting the variable PKG_CONFIG_PATH. \n\nDave",
+    "body": "Replying to [comment:2 drkirkby]:\n\n> **I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n> \n> Dave \n\n\nThe best solution looks to be to get pkg-config to work properly, which requires it knows where the Sage files are to be found. That is done by setting the variable PKG_CONFIG_PATH. \n\nDave",
     "created_at": "2010-06-10T23:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -253,6 +244,7 @@ Replying to [comment:2 drkirkby]:
 > **I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. 
 > 
 > Dave 
+
 
 The best solution looks to be to get pkg-config to work properly, which requires it knows where the Sage files are to be found. That is done by setting the variable PKG_CONFIG_PATH. 
 
@@ -358,7 +350,7 @@ archive/issue_events_022660.json:
 archive/issue_comments_085975.json:
 ```json
 {
-    "body": "This version from svn is causing a problem on the following system, which we should report to the developers. \n\n* Sun Blade 1000\n* 2 x 900 MHz\n* 2 GB RAM\n* Solaris 10 03/05 \n \n\n```\n/usr/include/stdlib.h:144: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with\n/usr/include/unistd.h:480: error: previous declaration 'void swab(const void*, void*, ssize_t)' here\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n```\n\n\nThe Solaris header files are a lot stricter about what they do/do not declare than most systems, depending on the mode of compilation. An inspection of stdlib.h shows the problem. \n\n\n```\nextern int putenv(char *);\nextern void setkey(const char *);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n\n/*\n * swab() has historically been in <stdlib.h> as delivered from AT&T\n * and continues to be visible in the default compilation environment.\n * As of Issue 4 of the X/Open Portability Guides, swab() was declared\n * in <unistd.h>. As a result, with respect to X/Open namespace the\n * swab() declaration in this header is only visible for the XPG3\n * environment.\n */\n#if (defined(__EXTENSIONS__) || \\\n        (!defined(_STRICT_STDC__) && !defined(_POSIX_C_SOURCE))) && \\\n        (!defined(_XOPEN_SOURCE) || (defined(_XPG3) && !defined(_XPG4)))\n#ifndef _SSIZE_T\n#define _SSIZE_T\n#if defined(_LP64) || defined(_I32LPx)\ntypedef long    ssize_t;        /* size of something in bytes or -1 */\n#else\ntypedef int     ssize_t;        /* (historical version) */\n#endif\n#endif  /* !_SSIZE_T */\n\nextern void swab(const char *, char *, ssize_t);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n```\n\n\nand in unistd.h\n\n\n```\n#if defined(_XPG4)\n/* __EXTENSIONS__ makes the SVID Third Edition prototype in stdlib.h visible */\nextern void swab(const void *_RESTRICT_KYWD, void *_RESTRICT_KYWD, ssize_t);\n#endif /* defined(_XPG4) */\n```\n\n\nAs such, I think your previous version, based on the stable release, rather than a SVN snapshot is preferable. \n\nI'm attaching the two relevant header files to this ticket.",
+    "body": "This version from svn is causing a problem on the following system, which we should report to the developers. \n\n* Sun Blade 1000\n* 2 x 900 MHz\n* 2 GB RAM\n* Solaris 10 03/05 \n \n```\n/usr/include/stdlib.h:144: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with\n/usr/include/unistd.h:480: error: previous declaration 'void swab(const void*, void*, ssize_t)' here\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n```\n\nThe Solaris header files are a lot stricter about what they do/do not declare than most systems, depending on the mode of compilation. An inspection of stdlib.h shows the problem. \n\n```\nextern int putenv(char *);\nextern void setkey(const char *);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n\n/*\n * swab() has historically been in <stdlib.h> as delivered from AT&T\n * and continues to be visible in the default compilation environment.\n * As of Issue 4 of the X/Open Portability Guides, swab() was declared\n * in <unistd.h>. As a result, with respect to X/Open namespace the\n * swab() declaration in this header is only visible for the XPG3\n * environment.\n */\n#if (defined(__EXTENSIONS__) || \\\n        (!defined(_STRICT_STDC__) && !defined(_POSIX_C_SOURCE))) && \\\n        (!defined(_XOPEN_SOURCE) || (defined(_XPG3) && !defined(_XPG4)))\n#ifndef _SSIZE_T\n#define _SSIZE_T\n#if defined(_LP64) || defined(_I32LPx)\ntypedef long    ssize_t;        /* size of something in bytes or -1 */\n#else\ntypedef int     ssize_t;        /* (historical version) */\n#endif\n#endif  /* !_SSIZE_T */\n\nextern void swab(const char *, char *, ssize_t);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n```\n\nand in unistd.h\n\n```\n#if defined(_XPG4)\n/* __EXTENSIONS__ makes the SVID Third Edition prototype in stdlib.h visible */\nextern void swab(const void *_RESTRICT_KYWD, void *_RESTRICT_KYWD, ssize_t);\n#endif /* defined(_XPG4) */\n```\n\nAs such, I think your previous version, based on the stable release, rather than a SVN snapshot is preferable. \n\nI'm attaching the two relevant header files to this ticket.",
     "created_at": "2010-06-11T20:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -374,7 +366,6 @@ This version from svn is causing a problem on the following system, which we sho
 * 2 GB RAM
 * Solaris 10 03/05 
  
-
 ```
 /usr/include/stdlib.h:144: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with
 /usr/include/unistd.h:480: error: previous declaration 'void swab(const void*, void*, ssize_t)' here
@@ -382,9 +373,7 @@ error: command 'gcc' failed with exit status 1
 Error building matplotlib package.
 ```
 
-
 The Solaris header files are a lot stricter about what they do/do not declare than most systems, depending on the mode of compilation. An inspection of stdlib.h shows the problem. 
-
 
 ```
 extern int putenv(char *);
@@ -415,9 +404,7 @@ extern void swab(const char *, char *, ssize_t);
 #endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */
 ```
 
-
 and in unistd.h
-
 
 ```
 #if defined(_XPG4)
@@ -425,7 +412,6 @@ and in unistd.h
 extern void swab(const void *_RESTRICT_KYWD, void *_RESTRICT_KYWD, ssize_t);
 #endif /* defined(_XPG4) */
 ```
-
 
 As such, I think your previous version, based on the stable release, rather than a SVN snapshot is preferable. 
 
@@ -676,7 +662,7 @@ Resolution: fixed
 archive/issue_comments_085988.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> This spkg probably also solves #5873.\nOr at least some of it?  The [ticket](https://github.com/matplotlib/matplotlib/issues/225) upstream for one piece of it is now at github, but did this fix the searching for matplotlib issue?  \n\nSorry for the necropost.",
+    "body": "Replying to [comment:7 jason]:\n> This spkg probably also solves #5873.\n\nOr at least some of it?  The [ticket](https://github.com/matplotlib/matplotlib/issues/225) upstream for one piece of it is now at github, but did this fix the searching for matplotlib issue?  \n\nSorry for the necropost.",
     "created_at": "2011-08-19T16:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
@@ -687,6 +673,7 @@ archive/issue_comments_085988.json:
 
 Replying to [comment:7 jason]:
 > This spkg probably also solves #5873.
+
 Or at least some of it?  The [ticket](https://github.com/matplotlib/matplotlib/issues/225) upstream for one piece of it is now at github, but did this fix the searching for matplotlib issue?  
 
 Sorry for the necropost.

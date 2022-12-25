@@ -3,7 +3,7 @@
 archive/issues_009033.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @dimpase\n\nOn a Sun Ultra 27 running OpenSolaris x64, Singular is not attempting to build as a 64-bit binary, but also fails to build fully as a 32-bit binary. (It does however build partially as 32-bit).\n\n\n```\nsingular-3-1-0-4-20100214/src/svd/tests/\nsingular-3-1-0-4-20100214/src/svd/tests/testsvdunit.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\n\n<snip>\ngcc -O3 -g -fPIC -I. -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -c omBinPage.c\n<snip>\ng++ -c cf_factor.cc -w -fno-implicit-templates -I. -I. -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -O3 -g -fPIC -o cf_factor.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/NTL/vec_ZZ.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZX.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZXFactoring.h:5,\n                 from NTLconvert.h:23,\n                 from cf_factor.cc:33:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h: In function \u2018long int NTL::MulModPrecon(long int, long int, long int, long unsigned int)\u2019:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h:1795: error: \u2018MulHiUL\u2019 was not declared in this scope\nmake[2]: *** [cf_factor.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src/factory'\nmake[1]: *** [install] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src'\nmake: *** [/export/home/drkirkby/sage-4.4.2/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n\nreal    0m13.142s\nuser    0m8.853s\nsys     0m4.226s\nsage: An error occurred while installing singular-3-1-0-4-20100214\n```\n\n\nThe files \n\n```\n$SAGE_LOCAL/lib/omalloc_debug.o\n$SAGE_LOCAL/lib/omalloc.o\n```\n\n\nare being installed as 32-bit bit objects. \n\nIt's somewhat worrying this does not build fully. If it built fully as 32-bit, one would expect converting it to 64-bit would be relatively easy (add option -m64), but the problem could be a bit more serious than this. I've not investigated yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9033\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @dimpase\n\nOn a Sun Ultra 27 running OpenSolaris x64, Singular is not attempting to build as a 64-bit binary, but also fails to build fully as a 32-bit binary. (It does however build partially as 32-bit).\n\n```\nsingular-3-1-0-4-20100214/src/svd/tests/\nsingular-3-1-0-4-20100214/src/svd/tests/testsvdunit.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\n\n<snip>\ngcc -O3 -g -fPIC -I. -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -c omBinPage.c\n<snip>\ng++ -c cf_factor.cc -w -fno-implicit-templates -I. -I. -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -O3 -g -fPIC -o cf_factor.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/NTL/vec_ZZ.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZX.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZXFactoring.h:5,\n                 from NTLconvert.h:23,\n                 from cf_factor.cc:33:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h: In function \u2018long int NTL::MulModPrecon(long int, long int, long int, long unsigned int)\u2019:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h:1795: error: \u2018MulHiUL\u2019 was not declared in this scope\nmake[2]: *** [cf_factor.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src/factory'\nmake[1]: *** [install] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src'\nmake: *** [/export/home/drkirkby/sage-4.4.2/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n\nreal    0m13.142s\nuser    0m8.853s\nsys     0m4.226s\nsage: An error occurred while installing singular-3-1-0-4-20100214\n```\n\nThe files \n\n```\n$SAGE_LOCAL/lib/omalloc_debug.o\n$SAGE_LOCAL/lib/omalloc.o\n```\n\nare being installed as 32-bit bit objects. \n\nIt's somewhat worrying this does not build fully. If it built fully as 32-bit, one would expect converting it to 64-bit would be relatively easy (add option -m64), but the problem could be a bit more serious than this. I've not investigated yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9033\n\n",
     "created_at": "2010-05-24T10:43:56Z",
     "labels": [
         "component: porting: solaris",
@@ -21,7 +21,6 @@ Assignee: drkirkby
 CC:  @jaapspies @dimpase
 
 On a Sun Ultra 27 running OpenSolaris x64, Singular is not attempting to build as a 64-bit binary, but also fails to build fully as a 32-bit binary. (It does however build partially as 32-bit).
-
 
 ```
 singular-3-1-0-4-20100214/src/svd/tests/
@@ -58,14 +57,12 @@ sys     0m4.226s
 sage: An error occurred while installing singular-3-1-0-4-20100214
 ```
 
-
 The files 
 
 ```
 $SAGE_LOCAL/lib/omalloc_debug.o
 $SAGE_LOCAL/lib/omalloc.o
 ```
-
 
 are being installed as 32-bit bit objects. 
 

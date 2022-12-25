@@ -3,7 +3,7 @@
 archive/issues_005107.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n\nthe last two digits are incorrect\n\ncontinued_fraction(sqrt(109))\n[10, 2, 3, 1, 2, 4, 1, 6, 6, 1, 4, 2, 1, 3, 2, 20, 3]\n\nthe last digit (3) is incorrect\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628\n\nIssue created by migration from https://trac.sagemath.org/ticket/5107\n\n",
+    "body": "Assignee: somebody\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n\nthe last two digits are incorrect\n\ncontinued_fraction(sqrt(109))\n[10, 2, 3, 1, 2, 4, 1, 6, 6, 1, 4, 2, 1, 3, 2, 20, 3]\n\nthe last digit (3) is incorrect\n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628\n\nIssue created by migration from https://trac.sagemath.org/ticket/5107\n\n",
     "created_at": "2009-01-26T19:52:27Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_005107.json:
 ```
 Assignee: somebody
 
-
 ```
 continued_fraction(sqrt(2))
 [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]
@@ -31,7 +30,6 @@ continued_fraction(sqrt(109))
 
 the last digit (3) is incorrect
 ```
-
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628
 
@@ -85,7 +83,7 @@ archive/issue_events_011802.json:
 archive/issue_comments_038943.json:
 ```json
 {
-    "body": "The computation is done in the function `continued_fraction_list()` of `rings/arith.py`, where it says \"This may be slow for real number input, since it's implemented in pure Python. For rational number input the PARI C library is used.\"\n\nI wonder why we're not using PARI also when the input is a real number.  It's fast, and it looks right:\n\n\n```\nsage: x = sqrt(2)\nsage: CFF = ContinuedFractionField()\nsage: CFF(pari(x).contfrac().python())\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]\nsage: timeit(\"CFF(pari(x).contfrac().python())\n625 loops, best of 3: 258 \u00b5s per loop\nsage: timeit(\"CFF(continued_fraction_list(x))\")\n625 loops, best of 3: 1.17 ms per loop\n```\n",
+    "body": "The computation is done in the function `continued_fraction_list()` of `rings/arith.py`, where it says \"This may be slow for real number input, since it's implemented in pure Python. For rational number input the PARI C library is used.\"\n\nI wonder why we're not using PARI also when the input is a real number.  It's fast, and it looks right:\n\n```\nsage: x = sqrt(2)\nsage: CFF = ContinuedFractionField()\nsage: CFF(pari(x).contfrac().python())\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]\nsage: timeit(\"CFF(pari(x).contfrac().python())\n625 loops, best of 3: 258 \u00b5s per loop\nsage: timeit(\"CFF(continued_fraction_list(x))\")\n625 loops, best of 3: 1.17 ms per loop\n```",
     "created_at": "2009-08-25T05:32:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
@@ -98,7 +96,6 @@ The computation is done in the function `continued_fraction_list()` of `rings/ar
 
 I wonder why we're not using PARI also when the input is a real number.  It's fast, and it looks right:
 
-
 ```
 sage: x = sqrt(2)
 sage: CFF = ContinuedFractionField()
@@ -109,7 +106,6 @@ sage: timeit("CFF(pari(x).contfrac().python())
 sage: timeit("CFF(continued_fraction_list(x))")
 625 loops, best of 3: 1.17 ms per loop
 ```
-
 
 
 

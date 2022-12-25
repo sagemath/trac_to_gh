@@ -77,7 +77,7 @@ Michael
 archive/issue_comments_034450.json:
 ```json
 {
-    "body": "I get the following failure:\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main -o sage/rings/real_rqdf.cpp sage/rings/real_rqdf.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\ncdef extern from \"qd/qd_real.h\":\n\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:21:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:22:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:23:11: Struct cannot contain itself as a member.\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:23:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n        qd _e\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:24:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n\n\nError running command, exited with status 256.\nsage: There was an error installing modified sage library code.  \n\n```\n\n\nCheers,\n\nMichael",
+    "body": "I get the following failure:\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main -o sage/rings/real_rqdf.cpp sage/rings/real_rqdf.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\ncdef extern from \"qd/qd_real.h\":\n\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:21:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:22:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:23:11: Struct cannot contain itself as a member.\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n    ctypedef struct qd \"qd_real\":\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:23:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        # Members\n        double *x\n        qd _pi\n        qd _log2\n        qd _nan\n        qd _e\n          ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage-main/sage/rings/real_rqdf.pxd:24:11: Struct cannot contain itself as a member.\n\nError converting Pyrex file to C:\n\n\nError running command, exited with status 256.\nsage: There was an error installing modified sage library code.  \n\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-25T23:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
@@ -168,7 +168,6 @@ sage: There was an error installing modified sage library code.
 
 ```
 
-
 Cheers,
 
 Michael
@@ -220,7 +219,7 @@ This was to catch a gcc compiler error. Surely that typedef is wrong...
 archive/issue_comments_034453.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n> This was to catch a gcc compiler error. Surely that typedef is wrong...\n\nWasn't this the \"recursive\" definition issue the other day on the Cython-dev list?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 robertwb]:\n> This was to catch a gcc compiler error. Surely that typedef is wrong...\n\n\nWasn't this the \"recursive\" definition issue the other day on the Cython-dev list?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-26T00:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
@@ -231,6 +230,7 @@ archive/issue_comments_034453.json:
 
 Replying to [comment:5 robertwb]:
 > This was to catch a gcc compiler error. Surely that typedef is wrong...
+
 
 Wasn't this the "recursive" definition issue the other day on the Cython-dev list?
 
@@ -285,7 +285,7 @@ A new spkg is up, though as before my own sage -ba is still in progress.
 archive/issue_comments_034456.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> Oh, it's a C++ class pretending to be a struct. \n> \n> I had thought it was safe because it moved a gcc compile error into a Cython compile error, but of course extern declarations don't actually get produced and may (as in this case) be fake structs. I'll fix this. \n\nCool.\n\n> A new spkg is up, though as before my own sage -ba is still in progress. \n\nUsing eight CPUs I got passed the Cython phase, so things should be loooking good. If the tests pass this will turn into a positive revivew.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 robertwb]:\n> Oh, it's a C++ class pretending to be a struct. \n> \n> I had thought it was safe because it moved a gcc compile error into a Cython compile error, but of course extern declarations don't actually get produced and may (as in this case) be fake structs. I'll fix this. \n\n\nCool.\n\n> A new spkg is up, though as before my own sage -ba is still in progress. \n\n\nUsing eight CPUs I got passed the Cython phase, so things should be loooking good. If the tests pass this will turn into a positive revivew.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-26T01:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
@@ -299,9 +299,11 @@ Replying to [comment:8 robertwb]:
 > 
 > I had thought it was safe because it moved a gcc compile error into a Cython compile error, but of course extern declarations don't actually get produced and may (as in this case) be fake structs. I'll fix this. 
 
+
 Cool.
 
 > A new spkg is up, though as before my own sage -ba is still in progress. 
+
 
 Using eight CPUs I got passed the Cython phase, so things should be loooking good. If the tests pass this will turn into a positive revivew.
 

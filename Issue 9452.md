@@ -3,7 +3,7 @@
 archive/issues_009452.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n>\n> Here is a patch:\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n\n>\n> Here is a patch:\n\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
     "created_at": "2010-07-08T08:00:49Z",
     "labels": [
         "component: distribution",
@@ -25,19 +25,24 @@ CC:  @williamstein
 > file system having wierd mount points.
 > Unfotunately the strip_automount_prefix() does not
 > work at all!
+
 >
 > Here is a patch:
+
 >
 > % diff sage-test.old sage-test.new
 > 20c20
 > <     return strip_automount_prefix(os.path.abspath(x))
 > ---
+
 >>     return os.path.abspath(x)
 > 57c57
 > <         f = g[len(SAGE_ROOT)+1:]
 > ---
+
 >>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]
 > %
+
 >
 > You can remove - or deprecate - the function strip_automount_prefix().
 

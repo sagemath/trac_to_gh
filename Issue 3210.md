@@ -109,7 +109,7 @@ Attached an updated patch with typo fixed.
 archive/issue_comments_022144.json:
 ```json
 {
-    "body": "This is a very neat feature, useful if you are teaching number theory or topology, say.\n\nI didn't realize that the second patch was a replacement for the 1st patch, so I tried to \napply them both and of course failed. The 1st patch works as claimed and passes sage -testall.\n(Actually, on my old machine, \n\n\n```\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/matrix/benchmark.py\n        sage -t  devel/sage/sage/server/notebook/worksheet.py\n```\n\nbut then they passes on retesting.)\n\nMy suggestion, and it really a very minor one, is that the \"radius\"\nwhere the points are plotted should be a parameter the user can reset. \nFor example, if you graph a p=3 and a p=7 then they overlap maybe more\nthat some would like. Not that I see this as important for teaching but might\nbe a fun option for making cool pictures. Just an idea.",
+    "body": "This is a very neat feature, useful if you are teaching number theory or topology, say.\n\nI didn't realize that the second patch was a replacement for the 1st patch, so I tried to \napply them both and of course failed. The 1st patch works as claimed and passes sage -testall.\n(Actually, on my old machine, \n\n```\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/matrix/benchmark.py\n        sage -t  devel/sage/sage/server/notebook/worksheet.py\n```\nbut then they passes on retesting.)\n\nMy suggestion, and it really a very minor one, is that the \"radius\"\nwhere the points are plotted should be a parameter the user can reset. \nFor example, if you graph a p=3 and a p=7 then they overlap maybe more\nthat some would like. Not that I see this as important for teaching but might\nbe a fun option for making cool pictures. Just an idea.",
     "created_at": "2008-05-15T18:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ I didn't realize that the second patch was a replacement for the 1st patch, so I
 apply them both and of course failed. The 1st patch works as claimed and passes sage -testall.
 (Actually, on my old machine, 
 
-
 ```
 The following tests failed:
 
@@ -132,7 +131,6 @@ The following tests failed:
         sage -t  devel/sage/sage/matrix/benchmark.py
         sage -t  devel/sage/sage/server/notebook/worksheet.py
 ```
-
 but then they passes on retesting.)
 
 My suggestion, and it really a very minor one, is that the "radius"
@@ -186,7 +184,7 @@ The "radius" can be changed with the pointsize parameter. Also, you could plot i
 archive/issue_comments_022147.json:
 ```json
 {
-    "body": "I am talking about a dufferent radius I think. To me\n\n```\nsage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))\nsage: P2 = Zp(7).plot(pointsize=2,rgbcolor=(1,0,0))\n```\n\nand\n\n```\nsage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))\nsage: P2 = Zp(7).plot(pointsize=3,rgbcolor=(1,0,0))\n```\n\nLook the same. I was wondering about a scaling parameter \n\"distance\", say, where \n\n\n```\nsage: P1 = Zp(3).plot(distance=1,rgbcolor=(0,1,0))\n```\n\nwould plot the 3 triangles at (say) a circle of radius 1 from (0,0)\nas it does now, and \n\n\n```\nsage: P1 = Zp(3).plot(distance=2,rgbcolor=(0,1,0))\n```\n\nwould plot the 3 triangles at (say) a circle of radius 2 from (0,0).\n\nIs this possible without introducing a new parameter?",
+    "body": "I am talking about a dufferent radius I think. To me\n\n```\nsage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))\nsage: P2 = Zp(7).plot(pointsize=2,rgbcolor=(1,0,0))\n```\nand\n\n```\nsage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))\nsage: P2 = Zp(7).plot(pointsize=3,rgbcolor=(1,0,0))\n```\nLook the same. I was wondering about a scaling parameter \n\"distance\", say, where \n\n```\nsage: P1 = Zp(3).plot(distance=1,rgbcolor=(0,1,0))\n```\nwould plot the 3 triangles at (say) a circle of radius 1 from (0,0)\nas it does now, and \n\n```\nsage: P1 = Zp(3).plot(distance=2,rgbcolor=(0,1,0))\n```\nwould plot the 3 triangles at (say) a circle of radius 2 from (0,0).\n\nIs this possible without introducing a new parameter?",
     "created_at": "2008-05-15T19:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
@@ -201,30 +199,24 @@ I am talking about a dufferent radius I think. To me
 sage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))
 sage: P2 = Zp(7).plot(pointsize=2,rgbcolor=(1,0,0))
 ```
-
 and
 
 ```
 sage: P1 = Zp(3).plot(pointsize=1,rgbcolor=(0,1,0))
 sage: P2 = Zp(7).plot(pointsize=3,rgbcolor=(1,0,0))
 ```
-
 Look the same. I was wondering about a scaling parameter 
 "distance", say, where 
-
 
 ```
 sage: P1 = Zp(3).plot(distance=1,rgbcolor=(0,1,0))
 ```
-
 would plot the 3 triangles at (say) a circle of radius 1 from (0,0)
 as it does now, and 
-
 
 ```
 sage: P1 = Zp(3).plot(distance=2,rgbcolor=(0,1,0))
 ```
-
 would plot the 3 triangles at (say) a circle of radius 2 from (0,0).
 
 Is this possible without introducing a new parameter?

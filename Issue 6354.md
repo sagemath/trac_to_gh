@@ -217,7 +217,7 @@ Changing status from new to needs_review.
 archive/issue_comments_050706.json:
 ```json
 {
-    "body": "Replying to [comment:4 rlm]:\n> Sorry, it must have gotten lost during merging....\n\nNo worry :-) I set it back to positive review so that it get merged in 4.3.",
+    "body": "Replying to [comment:4 rlm]:\n> Sorry, it must have gotten lost during merging....\n\n\nNo worry :-) I set it back to positive review so that it get merged in 4.3.",
     "created_at": "2009-11-17T23:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
@@ -228,6 +228,7 @@ archive/issue_comments_050706.json:
 
 Replying to [comment:4 rlm]:
 > Sorry, it must have gotten lost during merging....
+
 
 No worry :-) I set it back to positive review so that it get merged in 4.3.
 

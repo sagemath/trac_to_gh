@@ -65,7 +65,7 @@ Resolution: invalid
 archive/issue_comments_050041.json:
 ```json
 {
-    "body": "Just for the record, \n`sage -tp a.py a.py`\nresults in \n\n```\nValueError: invalid literal for int() with base 10: 'devel/sage/sage/rings/arith.py'\n```\n\nso I'm fixing the title of the ticket.  \n\nI also consider this invalid.  There are good reasons to want to test the same file a bunch of times, e.g.,\n\n```\nsage -tp 10 a.py a.py  a.py a.py a.py a.py a.py a.py a.py a.py a.py\n```\n\nwould be very useful when tracking down errors that only happen with some probability.",
+    "body": "Just for the record, \n`sage -tp a.py a.py`\nresults in \n\n```\nValueError: invalid literal for int() with base 10: 'devel/sage/sage/rings/arith.py'\n```\nso I'm fixing the title of the ticket.  \n\nI also consider this invalid.  There are good reasons to want to test the same file a bunch of times, e.g.,\n\n```\nsage -tp 10 a.py a.py  a.py a.py a.py a.py a.py a.py a.py a.py a.py\n```\nwould be very useful when tracking down errors that only happen with some probability.",
     "created_at": "2009-06-14T09:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6277",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ results in
 ```
 ValueError: invalid literal for int() with base 10: 'devel/sage/sage/rings/arith.py'
 ```
-
 so I'm fixing the title of the ticket.  
 
 I also consider this invalid.  There are good reasons to want to test the same file a bunch of times, e.g.,
@@ -89,5 +88,4 @@ I also consider this invalid.  There are good reasons to want to test the same f
 ```
 sage -tp 10 a.py a.py  a.py a.py a.py a.py a.py a.py a.py a.py a.py
 ```
-
 would be very useful when tracking down errors that only happen with some probability.

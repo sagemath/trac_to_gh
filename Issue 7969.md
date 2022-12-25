@@ -3,7 +3,7 @@
 archive/issues_007969.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following input in the notebook produces the wrong output:\n\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\n\nIt should return\n\n\n```\na\\\nn\nc\n```\n\n\nbut instead prints\n\n\n```\na\n\nc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
+    "body": "Assignee: @williamstein\n\nThe following input in the notebook produces the wrong output:\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\nIt should return\n\n```\na\\\nn\nc\n```\n\nbut instead prints\n\n```\na\n\nc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
     "created_at": "2010-01-17T21:21:38Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 The following input in the notebook produces the wrong output:
 
-
 ```
 %python
 2+2
@@ -31,9 +30,7 @@ c
 """
 ```
 
-
 It should return
-
 
 ```
 a\
@@ -41,16 +38,13 @@ n
 c
 ```
 
-
 but instead prints
-
 
 ```
 a
 
 c
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7969
 

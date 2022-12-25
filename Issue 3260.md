@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3260
 archive/issue_comments_022504.json:
 ```json
 {
-    "body": "COMMENTS:\n1. This is \"already supported\", but in an obscure way, which might very well be broken (?).  In local/bin/sage-doctest we have:\n\n```\n    if not optional and sl.find(\"optional\") != -1 and \\\n               sl.find('package') != -1 and sl.find('installed'):\n        return ''\n```\n\nThus if you put anywhere in the docstring for a function (or the top of the file) all\nthree works optional, package, and installed, then everything is considered optional.\n\n\n2. I don't really like your proposal, even though I once implemented it somewhat.  Generally speaking I think it's better that every example makes it crystal clear that the line of code being illustrated will NOT work without the user installing an optional package.    Users (like me) absolutely hate pasting in random lines and having them fail for no obvious reason.  It is, of course, good if error messages for optional code clearly indicate their optionality, but sometimes people don't read error messages.   This is a usability/psychology sort of thing.",
+    "body": "COMMENTS:\n1. This is \"already supported\", but in an obscure way, which might very well be broken (?).  In local/bin/sage-doctest we have:\n\n```\n    if not optional and sl.find(\"optional\") != -1 and \\\n               sl.find('package') != -1 and sl.find('installed'):\n        return ''\n```\nThus if you put anywhere in the docstring for a function (or the top of the file) all\nthree works optional, package, and installed, then everything is considered optional.\n\n\n2. I don't really like your proposal, even though I once implemented it somewhat.  Generally speaking I think it's better that every example makes it crystal clear that the line of code being illustrated will NOT work without the user installing an optional package.    Users (like me) absolutely hate pasting in random lines and having them fail for no obvious reason.  It is, of course, good if error messages for optional code clearly indicate their optionality, but sometimes people don't read error messages.   This is a usability/psychology sort of thing.",
     "created_at": "2008-05-21T12:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ COMMENTS:
                sl.find('package') != -1 and sl.find('installed'):
         return ''
 ```
-
 Thus if you put anywhere in the docstring for a function (or the top of the file) all
 three works optional, package, and installed, then everything is considered optional.
 

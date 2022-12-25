@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7105
 archive/issue_comments_058702.json:
 ```json
 {
-    "body": "I think another way would be to save the search results to a file -- `format_search_as_html` may already put things in the right format -- and open that file using \n\n```\n  from sage.misc.viewer import browser\n  import os\n  url = .. file name ...\n  os.system(browser() + \" \" + url)\n```\n",
+    "body": "I think another way would be to save the search results to a file -- `format_search_as_html` may already put things in the right format -- and open that file using \n\n```\n  from sage.misc.viewer import browser\n  import os\n  url = .. file name ...\n  os.system(browser() + \" \" + url)\n```",
     "created_at": "2009-10-04T16:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7105",
     "type": "issue_comment",
@@ -49,7 +49,6 @@ I think another way would be to save the search results to a file -- `format_sea
   url = .. file name ...
   os.system(browser() + " " + url)
 ```
-
 
 
 
@@ -222,7 +221,7 @@ I have to say, I really don't like that it gives you the file.  Getting the whol
 archive/issue_comments_058712.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> I have to say, I really don't like that it gives you the file.  Getting the whole plot/plot.py isn't very useful!  I mean, you can do a text search, but the command-line experience is much better than that.\n\nI'm trying to think of what else we could do.  If you do \"search_src\", it opens up the source code, but there are no tags or any other way to navigate the resulting page.  Maybe we could highlight the search terms somehow?  This probably requires some javascript, about which I know basically nothing.  If you do \"search_doc\", it opens up the html documentation, which has tags, and maybe we could jump to the tag nearest the first instance of the search terms.  Another option for search_doc would be to defer to Sphinx's search, which highlights code and jumps to some instance (not necessarily the first, maybe the best match?).",
+    "body": "Replying to [comment:7 kcrisman]:\n> I have to say, I really don't like that it gives you the file.  Getting the whole plot/plot.py isn't very useful!  I mean, you can do a text search, but the command-line experience is much better than that.\n\n\nI'm trying to think of what else we could do.  If you do \"search_src\", it opens up the source code, but there are no tags or any other way to navigate the resulting page.  Maybe we could highlight the search terms somehow?  This probably requires some javascript, about which I know basically nothing.  If you do \"search_doc\", it opens up the html documentation, which has tags, and maybe we could jump to the tag nearest the first instance of the search terms.  Another option for search_doc would be to defer to Sphinx's search, which highlights code and jumps to some instance (not necessarily the first, maybe the best match?).",
     "created_at": "2011-03-29T20:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7105",
     "type": "issue_comment",
@@ -233,6 +232,7 @@ archive/issue_comments_058712.json:
 
 Replying to [comment:7 kcrisman]:
 > I have to say, I really don't like that it gives you the file.  Getting the whole plot/plot.py isn't very useful!  I mean, you can do a text search, but the command-line experience is much better than that.
+
 
 I'm trying to think of what else we could do.  If you do "search_src", it opens up the source code, but there are no tags or any other way to navigate the resulting page.  Maybe we could highlight the search terms somehow?  This probably requires some javascript, about which I know basically nothing.  If you do "search_doc", it opens up the html documentation, which has tags, and maybe we could jump to the tag nearest the first instance of the search terms.  Another option for search_doc would be to defer to Sphinx's search, which highlights code and jumps to some instance (not necessarily the first, maybe the best match?).
 
@@ -263,7 +263,7 @@ Well, in any case this is another ticket. No point turning this into the next ti
 archive/issue_comments_058714.json:
 ```json
 {
-    "body": "Replying to [comment:9 kcrisman]:\n> I don't know why it can't literally return the output of search_src in the command line. Maybe because that's piped into less?\n\nNo, the command `_format_search_as_html` deliberately ignores multiple matches in the same file, along with the line numbers and the line containing each match -- it just uses the file name.  The extra information is there, but it's discarded.  I wonder if there's a good way to present it.  Figure out a way to use javascript to open up a Python file to a specified line, and then give one link for each matching line?  Also keep the current version as a more compact option?\n\n> Well, in any case this is another ticket. No point turning this into the next ticket to nowhere.\n\nI agree, I'm just brainstorming.",
+    "body": "Replying to [comment:9 kcrisman]:\n> I don't know why it can't literally return the output of search_src in the command line. Maybe because that's piped into less?\n\n\nNo, the command `_format_search_as_html` deliberately ignores multiple matches in the same file, along with the line numbers and the line containing each match -- it just uses the file name.  The extra information is there, but it's discarded.  I wonder if there's a good way to present it.  Figure out a way to use javascript to open up a Python file to a specified line, and then give one link for each matching line?  Also keep the current version as a more compact option?\n\n> Well, in any case this is another ticket. No point turning this into the next ticket to nowhere.\n\n\nI agree, I'm just brainstorming.",
     "created_at": "2011-03-29T21:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7105",
     "type": "issue_comment",
@@ -275,9 +275,11 @@ archive/issue_comments_058714.json:
 Replying to [comment:9 kcrisman]:
 > I don't know why it can't literally return the output of search_src in the command line. Maybe because that's piped into less?
 
+
 No, the command `_format_search_as_html` deliberately ignores multiple matches in the same file, along with the line numbers and the line containing each match -- it just uses the file name.  The extra information is there, but it's discarded.  I wonder if there's a good way to present it.  Figure out a way to use javascript to open up a Python file to a specified line, and then give one link for each matching line?  Also keep the current version as a more compact option?
 
 > Well, in any case this is another ticket. No point turning this into the next ticket to nowhere.
+
 
 I agree, I'm just brainstorming.
 

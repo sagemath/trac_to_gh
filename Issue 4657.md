@@ -3,7 +3,7 @@
 archive/issues_004657.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/9b61a7cf8fbfac7a Wayne reported:\n\n```\n/WW/Projects/Heart/bash$sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: gnuplot_console() \ndyld: Symbol not found: __cg_png_create_info_struct \n  Referenced from: /System/Library/Frameworks/ \nApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/ \nVersions/A/ImageIO \n  Expected in: /Users/ww/Applications/Scientific/sage/local/lib// \nlibpng12.0.dylib \nsage: \n```\n\n| Sage Version 3.2, Release Date: 2008-11-20                         | \n| Type notebook() for the GUI, and license() for information.        | \nThe fix should be obvious by now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4657\n\n",
+    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-support/browse_thread/thread/9b61a7cf8fbfac7a Wayne reported:\n\n```\n/WW/Projects/Heart/bash$sage \n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: gnuplot_console() \ndyld: Symbol not found: __cg_png_create_info_struct \n  Referenced from: /System/Library/Frameworks/ \nApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/ \nVersions/A/ImageIO \n  Expected in: /Users/ww/Applications/Scientific/sage/local/lib// \nlibpng12.0.dylib \nsage: \n```\n| Sage Version 3.2, Release Date: 2008-11-20                         | \n| Type notebook() for the GUI, and license() for information.        | \nThe fix should be obvious by now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4657\n\n",
     "created_at": "2008-11-29T22:13:41Z",
     "labels": [
         "component: build",
@@ -33,7 +33,6 @@ Versions/A/ImageIO
 libpng12.0.dylib 
 sage: 
 ```
-
 | Sage Version 3.2, Release Date: 2008-11-20                         | 
 | Type notebook() for the GUI, and license() for information.        | 
 The fix should be obvious by now.

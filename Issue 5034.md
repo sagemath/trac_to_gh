@@ -3,7 +3,7 @@
 archive/issues_005034.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI just noticed that when we do \"sage -br\" with \"export MAKE='make -j3'\" on a 2-core machine we get:\n\n\n```\nsteragon-2:sage-3.3.alpha0 wstein$ sage -br\n...\nExecute 4 commands (using 3 cpus)\n```\n\n\nNote the \"3 cpus\", which looks really dumb, since I have only 1 cpu in my laptop, and it has 2 cores.  To fix this bug change \"cpus\" to \"threads\".  That's it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5034\n\n",
+    "body": "Assignee: mabshoff\n\nI just noticed that when we do \"sage -br\" with \"export MAKE='make -j3'\" on a 2-core machine we get:\n\n```\nsteragon-2:sage-3.3.alpha0 wstein$ sage -br\n...\nExecute 4 commands (using 3 cpus)\n```\n\nNote the \"3 cpus\", which looks really dumb, since I have only 1 cpu in my laptop, and it has 2 cores.  To fix this bug change \"cpus\" to \"threads\".  That's it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5034\n\n",
     "created_at": "2009-01-20T06:13:23Z",
     "labels": [
         "component: build",
@@ -21,13 +21,11 @@ Assignee: mabshoff
 
 I just noticed that when we do "sage -br" with "export MAKE='make -j3'" on a 2-core machine we get:
 
-
 ```
 steragon-2:sage-3.3.alpha0 wstein$ sage -br
 ...
 Execute 4 commands (using 3 cpus)
 ```
-
 
 Note the "3 cpus", which looks really dumb, since I have only 1 cpu in my laptop, and it has 2 cores.  To fix this bug change "cpus" to "threads".  That's it!
 

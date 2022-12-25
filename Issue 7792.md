@@ -108,7 +108,7 @@ Attachment [povray.py](tarball://root/attachments/some-uuid/ticket7792/povray.py
 archive/issue_comments_067137.json:
 ```json
 {
-    "body": "Replying to [comment:3 slosoi]:\n> There are some bugs apparently in the width and height parameters in the changed code. \n> The parameters F and P work differently as I expected.\n\nThe patch -file is old one. I will submit a new one after the compilation of Sage.",
+    "body": "Replying to [comment:3 slosoi]:\n> There are some bugs apparently in the width and height parameters in the changed code. \n> The parameters F and P work differently as I expected.\n\n\nThe patch -file is old one. I will submit a new one after the compilation of Sage.",
     "created_at": "2009-12-30T04:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
@@ -120,6 +120,7 @@ archive/issue_comments_067137.json:
 Replying to [comment:3 slosoi]:
 > There are some bugs apparently in the width and height parameters in the changed code. 
 > The parameters F and P work differently as I expected.
+
 
 The patch -file is old one. I will submit a new one after the compilation of Sage.
 

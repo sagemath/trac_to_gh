@@ -211,7 +211,7 @@ archive/issue_events_023347.json:
 archive/issue_comments_090305.json:
 ```json
 {
-    "body": "> SAGE_DOC_JSMATH\n`SAGE_DOC_MATHJAX` is now in good shape.\n>  * SAGE_DOCBUILD_OPTS\nif it still exists\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n>  * Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...\nThis is basically fine now\n>  * Add a note on / reference to `sage-env`.\n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n> `SHELL` might be relevant, too.\n> The `*ITER*` variables for (parallel) doctesting are missing.\n> I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.\nThere is a ticket for the latter to be better, and the former is now in good shape.\n> I'm still pretty sure even more variables are missing... ;-)\nIndubitably.",
+    "body": "> SAGE_DOC_JSMATH\n\n`SAGE_DOC_MATHJAX` is now in good shape.\n>  * SAGE_DOCBUILD_OPTS\n \nif it still exists\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n>  * Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...\n \nThis is basically fine now\n>  * Add a note on / reference to `sage-env`.\n \n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n> `SHELL` might be relevant, too.\n> The `*ITER*` variables for (parallel) doctesting are missing.\n> I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.\n\nThere is a ticket for the latter to be better, and the former is now in good shape.\n> I'm still pretty sure even more variables are missing... ;-)\n\nIndubitably.",
     "created_at": "2014-11-20T16:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9440",
     "type": "issue_comment",
@@ -221,23 +221,29 @@ archive/issue_comments_090305.json:
 ```
 
 > SAGE_DOC_JSMATH
+
 `SAGE_DOC_MATHJAX` is now in good shape.
 >  * SAGE_DOCBUILD_OPTS
+ 
 if it still exists
 >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.
 >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?
 >  * Document that (e.g.) `export CFLAGS=""` has not the same effect as `unset CFLAGS`.
 >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a "completely" different meaning...
 >  * Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...
+ 
 This is basically fine now
 >  * Add a note on / reference to `sage-env`.
+ 
 > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).
 > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)
 > `SHELL` might be relevant, too.
 > The `*ITER*` variables for (parallel) doctesting are missing.
 > I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.
+
 There is a ticket for the latter to be better, and the former is now in good shape.
 > I'm still pretty sure even more variables are missing... ;-)
+
 Indubitably.
 
 
@@ -247,7 +253,7 @@ Indubitably.
 archive/issue_comments_090306.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> >  * SAGE_DOCBUILD_OPTS\n> if it still exists\n\nIt is actually used for docbuilding in the top-level `Makefile`. So it ought to be documented.",
+    "body": "Replying to [comment:7 kcrisman]:\n> >  * SAGE_DOCBUILD_OPTS\n \n> if it still exists\n\nIt is actually used for docbuilding in the top-level `Makefile`. So it ought to be documented.",
     "created_at": "2014-11-20T19:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9440",
     "type": "issue_comment",
@@ -258,6 +264,7 @@ archive/issue_comments_090306.json:
 
 Replying to [comment:7 kcrisman]:
 > >  * SAGE_DOCBUILD_OPTS
+ 
 > if it still exists
 
 It is actually used for docbuilding in the top-level `Makefile`. So it ought to be documented.
@@ -305,7 +312,7 @@ New commits:
 archive/issue_comments_090309.json:
 ```json
 {
-    "body": "Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\nNeeded?\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\nNeeded?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\nNeeded?\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\nNeeded?\n>  * Add a note on / reference to `sage-env`.\nNeeded?\n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\nNeeded?\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\nNeeded?\n> `SHELL` might be relevant, too.\nNeeded?\n> The `*ITER*` variables for (parallel) doctesting are missing.\nNeeded?",
+    "body": "Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n \nNeeded?\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n \nNeeded?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n \nNeeded?\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n \nNeeded?\n>  * Add a note on / reference to `sage-env`.\n \nNeeded?\n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n\nNeeded?\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n\nNeeded?\n> `SHELL` might be relevant, too.\n\nNeeded?\n> The `*ITER*` variables for (parallel) doctesting are missing.\n\nNeeded?",
     "created_at": "2014-11-20T19:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9440",
     "type": "issue_comment",
@@ -317,22 +324,31 @@ archive/issue_comments_090309.json:
 Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.
 
 >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.
+ 
 Needed?
 >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?
+ 
 Needed?
 >  * Document that (e.g.) `export CFLAGS=""` has not the same effect as `unset CFLAGS`.
+ 
 Needed?
 >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a "completely" different meaning...
+ 
 Needed?
 >  * Add a note on / reference to `sage-env`.
+ 
 Needed?
 > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).
+
 Needed?
 > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)
+
 Needed?
 > `SHELL` might be relevant, too.
+
 Needed?
 > The `*ITER*` variables for (parallel) doctesting are missing.
+
 Needed?
 
 
@@ -342,7 +358,7 @@ Needed?
 archive/issue_comments_090310.json:
 ```json
 {
-    "body": "Indeed, the output of \n\n```\nsage.env.[tab]\n```\n\nis also worth considering.",
+    "body": "Indeed, the output of \n\n```\nsage.env.[tab]\n```\nis also worth considering.",
     "created_at": "2014-11-20T19:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9440",
     "type": "issue_comment",
@@ -356,7 +372,6 @@ Indeed, the output of
 ```
 sage.env.[tab]
 ```
-
 is also worth considering.
 
 
@@ -384,7 +399,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_090312.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n> \n> >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n> Needed?\n\nDoesn't seem to be used, but some other variables are used in Pari's spkg-install file. I've documented those (just copying from spkg-install, basically).\n\n> >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n> Needed?\n\nI added a bit about them.\n\n> >  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n> Needed?\n\nSame here.\n\n> >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n> Needed?\n\nI don't know, this isn't Sage specific. I think we can skip it.\n\n\n> >  * Add a note on / reference to `sage-env`.\n> Needed?\n\nDone.\n\n> > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n> Needed?\n\nI noticed that the documented value for SAGE_TIMEOUT was wrong. Beyond that, I don't know what Leif meant by this. If he wants to expand on it at some point, he can open another ticket and clarify.\n\n> > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n> Needed?\n\nI don't think there are such variables anymore. There is a variable SAGE_TMP used while running Sage, but it's not user-customizable and it's not an environment variable. So I don't think we need to document it.\n\n> > `SHELL` might be relevant, too.\n> Needed?\n\nWhy? Let's skip it. What does it have to do with Sage?\n\n> > The `*ITER*` variables for (parallel) doctesting are missing.\n> Needed?\n\nI added something about them.",
+    "body": "Replying to [comment:11 kcrisman]:\n> Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n> \n> >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n \n> Needed?\n\nDoesn't seem to be used, but some other variables are used in Pari's spkg-install file. I've documented those (just copying from spkg-install, basically).\n\n> >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n \n> Needed?\n\nI added a bit about them.\n\n> >  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n \n> Needed?\n\nSame here.\n\n> >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n \n> Needed?\n\nI don't know, this isn't Sage specific. I think we can skip it.\n\n\n> >  * Add a note on / reference to `sage-env`.\n \n> Needed?\n\nDone.\n\n> > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n\n> Needed?\n\nI noticed that the documented value for SAGE_TIMEOUT was wrong. Beyond that, I don't know what Leif meant by this. If he wants to expand on it at some point, he can open another ticket and clarify.\n\n> > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n\n> Needed?\n\nI don't think there are such variables anymore. There is a variable SAGE_TMP used while running Sage, but it's not user-customizable and it's not an environment variable. So I don't think we need to document it.\n\n> > `SHELL` might be relevant, too.\n\n> Needed?\n\nWhy? Let's skip it. What does it have to do with Sage?\n\n> > The `*ITER*` variables for (parallel) doctesting are missing.\n\n> Needed?\n\nI added something about them.",
     "created_at": "2014-11-21T21:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9440",
     "type": "issue_comment",
@@ -397,47 +412,56 @@ Replying to [comment:11 kcrisman]:
 > Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.
 > 
 > >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.
+ 
 > Needed?
 
 Doesn't seem to be used, but some other variables are used in Pari's spkg-install file. I've documented those (just copying from spkg-install, basically).
 
 > >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?
+ 
 > Needed?
 
 I added a bit about them.
 
 > >  * Document that (e.g.) `export CFLAGS=""` has not the same effect as `unset CFLAGS`.
+ 
 > Needed?
 
 Same here.
 
 > >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a "completely" different meaning...
+ 
 > Needed?
 
 I don't know, this isn't Sage specific. I think we can skip it.
 
 
 > >  * Add a note on / reference to `sage-env`.
+ 
 > Needed?
 
 Done.
 
 > > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).
+
 > Needed?
 
 I noticed that the documented value for SAGE_TIMEOUT was wrong. Beyond that, I don't know what Leif meant by this. If he wants to expand on it at some point, he can open another ticket and clarify.
 
 > > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)
+
 > Needed?
 
 I don't think there are such variables anymore. There is a variable SAGE_TMP used while running Sage, but it's not user-customizable and it's not an environment variable. So I don't think we need to document it.
 
 > > `SHELL` might be relevant, too.
+
 > Needed?
 
 Why? Let's skip it. What does it have to do with Sage?
 
 > > The `*ITER*` variables for (parallel) doctesting are missing.
+
 > Needed?
 
 I added something about them.

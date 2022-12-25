@@ -69,7 +69,7 @@ Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/909
 archive/issue_comments_084328.json:
 ```json
 {
-    "body": "Looks good (and useful).  Patch applies fine to 4.4.3.  I tested all sage/rings and had one failure (in a new doctest, on 64-bit ubuntu):\n\n```\nFile \"/storage/jec/sage-4.4.3/devel/sage-tests/sage/rings/polynomial/polynomial_element.pyx\", line 1262:\n    sage: (9 * f^10 * g^4).sqrt() == 3 * f^5 * g^2\nExpected:\n    True\nGot:\n    False\n```\n\nI have never been happy about doctests using random elements, however deterministic they are supposed to be.\n\nI would have tested for self==0 at the start of the sqrt function, but that case will be caught quickly anyway, so no problem.\n\nI have been working on a patch to add both all= and extend= parameters to the sqrt function for AA and QQbar, having found how awkward it is when the parameters are not uniform across types.  Would it be worth adding an extend= parameter here, even if a NotImplementedError is raised when it is needed (i.e. for sqrt of a non-square when extend=True)?\n\nSo: needs work because of the doctest failure;  up to you whether to do the extend= thing.",
+    "body": "Looks good (and useful).  Patch applies fine to 4.4.3.  I tested all sage/rings and had one failure (in a new doctest, on 64-bit ubuntu):\n\n```\nFile \"/storage/jec/sage-4.4.3/devel/sage-tests/sage/rings/polynomial/polynomial_element.pyx\", line 1262:\n    sage: (9 * f^10 * g^4).sqrt() == 3 * f^5 * g^2\nExpected:\n    True\nGot:\n    False\n```\nI have never been happy about doctests using random elements, however deterministic they are supposed to be.\n\nI would have tested for self==0 at the start of the sqrt function, but that case will be caught quickly anyway, so no problem.\n\nI have been working on a patch to add both all= and extend= parameters to the sqrt function for AA and QQbar, having found how awkward it is when the parameters are not uniform across types.  Would it be worth adding an extend= parameter here, even if a NotImplementedError is raised when it is needed (i.e. for sqrt of a non-square when extend=True)?\n\nSo: needs work because of the doctest failure;  up to you whether to do the extend= thing.",
     "created_at": "2010-06-06T19:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ Expected:
 Got:
     False
 ```
-
 I have never been happy about doctests using random elements, however deterministic they are supposed to be.
 
 I would have tested for self==0 at the start of the sqrt function, but that case will be caught quickly anyway, so no problem.
@@ -122,7 +121,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084330.json:
 ```json
 {
-    "body": "is_square and sqrt can be done generally for fraction fields, given the corresponding functions for the base ring:\n\n\n```\nis_square (a / b) = is_square (a * b)\nsqrt (a / b) = sqrt (a * b) / b\n```\n",
+    "body": "is_square and sqrt can be done generally for fraction fields, given the corresponding functions for the base ring:\n\n```\nis_square (a / b) = is_square (a * b)\nsqrt (a / b) = sqrt (a * b) / b\n```",
     "created_at": "2010-07-07T09:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -133,12 +132,10 @@ archive/issue_comments_084330.json:
 
 is_square and sqrt can be done generally for fraction fields, given the corresponding functions for the base ring:
 
-
 ```
 is_square (a / b) = is_square (a * b)
 sqrt (a / b) = sqrt (a * b) / b
 ```
-
 
 
 
@@ -165,7 +162,7 @@ On sage days 23 we discussed how to make this faster by avoiding factoring in po
 archive/issue_comments_084332.json:
 ```json
 {
-    "body": "This patch also leaks memory, probably because of bug #9129\n\n\n```\nt=get_memory_usage()\nPr.<x>=ZZ[]\nfor i in range(500):\n    C=((x^2+1)*x+1)\n    B=C^2\n    print \"memusage\", get_memory_usage(t)\n    time x=B.sqrt()\n```\n\nexecuting the above gives:\n\n```\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.02 s, Wall: 0.02 s\nmemusage 1.20703125\nTime: CPU 0.18 s, Wall: 0.19 s\nmemusage 23.79296875\nTime: CPU 2.33 s, Wall: 2.36 s\nmemusage 148.12890625\nTime: CPU 31.70 s, Wall: 32.24 s\nmemusage 1534.01171875\n^C\n^C\n```\n\n\nPs. if you want to check this, please don't let the loop run as long as I did ;). It might make your computer on the edge of crashing",
+    "body": "This patch also leaks memory, probably because of bug #9129\n\n```\nt=get_memory_usage()\nPr.<x>=ZZ[]\nfor i in range(500):\n    C=((x^2+1)*x+1)\n    B=C^2\n    print \"memusage\", get_memory_usage(t)\n    time x=B.sqrt()\n```\nexecuting the above gives:\n\n```\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.02 s, Wall: 0.02 s\nmemusage 1.20703125\nTime: CPU 0.18 s, Wall: 0.19 s\nmemusage 23.79296875\nTime: CPU 2.33 s, Wall: 2.36 s\nmemusage 148.12890625\nTime: CPU 31.70 s, Wall: 32.24 s\nmemusage 1534.01171875\n^C\n^C\n```\n\nPs. if you want to check this, please don't let the loop run as long as I did ;). It might make your computer on the edge of crashing",
     "created_at": "2010-07-08T18:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -176,7 +173,6 @@ archive/issue_comments_084332.json:
 
 This patch also leaks memory, probably because of bug #9129
 
-
 ```
 t=get_memory_usage()
 Pr.<x>=ZZ[]
@@ -186,7 +182,6 @@ for i in range(500):
     print "memusage", get_memory_usage(t)
     time x=B.sqrt()
 ```
-
 executing the above gives:
 
 ```
@@ -210,7 +205,6 @@ memusage 1534.01171875
 ^C
 ^C
 ```
-
 
 Ps. if you want to check this, please don't let the loop run as long as I did ;). It might make your computer on the edge of crashing
 
@@ -411,7 +405,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084342.json:
 ```json
 {
-    "body": "The \"This code is quite general\" comment did what it had to do. I put it there in the hope that someone would come with a suggestion like you did. I had the feeling that the dubble code could be removed in a nice and general way, but I didn't know how. So by what you say I should just move the code to a more general class and then it will also work for fraction fields and polynomial rings (and possibly even more rings). What would be this more general class and where to find it?\n\nsage/rings/ring_element.py has only one line of code:\n\n\n```\n\nfrom sage.structure.element import !RingElement, is_RingElement\n\n```\n\n\nSo should I add it to the\u00a0RingElement\u00a0class thats imported from\u00a0sage.structure.element?",
+    "body": "The \"This code is quite general\" comment did what it had to do. I put it there in the hope that someone would come with a suggestion like you did. I had the feeling that the dubble code could be removed in a nice and general way, but I didn't know how. So by what you say I should just move the code to a more general class and then it will also work for fraction fields and polynomial rings (and possibly even more rings). What would be this more general class and where to find it?\n\nsage/rings/ring_element.py has only one line of code:\n\n```\n\nfrom sage.structure.element import !RingElement, is_RingElement\n\n```\n\nSo should I add it to the\u00a0RingElement\u00a0class thats imported from\u00a0sage.structure.element?",
     "created_at": "2010-07-18T11:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -424,13 +418,11 @@ The "This code is quite general" comment did what it had to do. I put it there i
 
 sage/rings/ring_element.py has only one line of code:
 
-
 ```
 
 from sage.structure.element import !RingElement, is_RingElement
 
 ```
-
 
 So should I add it to the RingElement class thats imported from sage.structure.element?
 
@@ -481,7 +473,7 @@ actually, instead of CommutativeRingElement, I guess RingElement is fine as well
 archive/issue_comments_084345.json:
 ```json
 {
-    "body": "Catching a specific\u00a0TypeError\u00a0isn't possible apparently.\n\n\n```\n\ntry:\n\n\u00a0\u00a0 \u00a0raise !TypeError(\"sqrt() got an unexpected keyword argument 'root'\")\n\nexcept !TypeError(\"sqrt() got an unexpected keyword argument 'root'\"):\n\n\u00a0\u00a0 \u00a0print \"lol\"\n\n```\n\n\ngives as output\n\n\n```\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: sqrt() got an unexpected keyword argument 'root'\n` ||\n|| `\n\n```\n\n\nbut a new version is on it's way wich just catches all typeerrors",
+    "body": "Catching a specific\u00a0TypeError\u00a0isn't possible apparently.\n\n```\n\ntry:\n\n\u00a0\u00a0 \u00a0raise !TypeError(\"sqrt() got an unexpected keyword argument 'root'\")\n\nexcept !TypeError(\"sqrt() got an unexpected keyword argument 'root'\"):\n\n\u00a0\u00a0 \u00a0print \"lol\"\n\n```\n\ngives as output\n\n```\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: sqrt() got an unexpected keyword argument 'root'\n` ||\n|| `\n\n```\n\nbut a new version is on it's way wich just catches all typeerrors",
     "created_at": "2010-07-18T19:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -491,7 +483,6 @@ archive/issue_comments_084345.json:
 ```
 
 Catching a specific TypeError isn't possible apparently.
-
 
 ```
 
@@ -505,9 +496,7 @@ except !TypeError("sqrt() got an unexpected keyword argument 'root'"):
 
 ```
 
-
 gives as output
-
 
 ```
 
@@ -518,7 +507,6 @@ TypeError: sqrt() got an unexpected keyword argument 'root'
 || `
 
 ```
-
 
 but a new version is on it's way wich just catches all typeerrors
 
@@ -639,7 +627,7 @@ Alternatively, you can either
 archive/issue_comments_084351.json:
 ```json
 {
-    "body": "Are you sure you did a complete doctest of sage before submitting the patch?\n\n```\nsage: QuadraticField(2, 'a')\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\n\nThe problem is in RLF(2).sqrt()\n\n```\nsage: RLF(2).sqrt()\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\n\n\nRLF(2) is a LazyWrapper, which doesn't have a sqrt attribute, but simulates one via __getattr__ (line 631 of sage/rings/real_lazy.pyx). But LazyWrapper extends (via some other classes) CommutativeRingElement, so that now it does have an attribute sqrt (your sqrt function), which means the __getattr__ of LazyWrapper doesn't get a chance. Your sqrt function then complains about the non-existence of is_square with root = 'True'.\n\nYou can probably fix this by making a sqrt function for LazyWrapper that calls LazyNamedUnop(self._parent, self, 'sqrt'). Or you can follow your own advice: \"implement is_square with option 'root = True' for ....\". Maybe there is a better way, you can also ask one of the mailing lists. Alternatively, you can always go back to your double code.\n\nAnyway, every time before submitting a patch, do everything that a reviewer would do, including a full doctest of all of Sage:\n[http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch](http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch)\nOn a multi-core machine, you can speed up the doctest by using\n`./sage -tp 4 -long devel/sage-main/`\nwhere 4 is replaced by the number of cores you are willing to use.",
+    "body": "Are you sure you did a complete doctest of sage before submitting the patch?\n\n```\nsage: QuadraticField(2, 'a')\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\nThe problem is in RLF(2).sqrt()\n\n```\nsage: RLF(2).sqrt()\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\n\nRLF(2) is a LazyWrapper, which doesn't have a sqrt attribute, but simulates one via __getattr__ (line 631 of sage/rings/real_lazy.pyx). But LazyWrapper extends (via some other classes) CommutativeRingElement, so that now it does have an attribute sqrt (your sqrt function), which means the __getattr__ of LazyWrapper doesn't get a chance. Your sqrt function then complains about the non-existence of is_square with root = 'True'.\n\nYou can probably fix this by making a sqrt function for LazyWrapper that calls LazyNamedUnop(self._parent, self, 'sqrt'). Or you can follow your own advice: \"implement is_square with option 'root = True' for ....\". Maybe there is a better way, you can also ask one of the mailing lists. Alternatively, you can always go back to your double code.\n\nAnyway, every time before submitting a patch, do everything that a reviewer would do, including a full doctest of all of Sage:\n[http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch](http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch)\nOn a multi-core machine, you can speed up the doctest by using\n`./sage -tp 4 -long devel/sage-main/`\nwhere 4 is replaced by the number of cores you are willing to use.",
     "created_at": "2010-07-22T12:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -654,14 +642,12 @@ Are you sure you did a complete doctest of sage before submitting the patch?
 sage: QuadraticField(2, 'a')
 NotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>
 ```
-
 The problem is in RLF(2).sqrt()
 
 ```
 sage: RLF(2).sqrt()
 NotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>
 ```
-
 
 RLF(2) is a LazyWrapper, which doesn't have a sqrt attribute, but simulates one via __getattr__ (line 631 of sage/rings/real_lazy.pyx). But LazyWrapper extends (via some other classes) CommutativeRingElement, so that now it does have an attribute sqrt (your sqrt function), which means the __getattr__ of LazyWrapper doesn't get a chance. Your sqrt function then complains about the non-existence of is_square with root = 'True'.
 
@@ -838,7 +824,7 @@ archive/issue_comments_084359.json:
 archive/issue_comments_084360.json:
 ```json
 {
-    "body": "Replying to [comment:27 robertwb]:\n>  * is_square for fraction field elements now always computes a root, even if it's not needed. This can be quite expensive. \n\nIndeed, it should use `root=root` instead of `root=True`\n\n> \n>  * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. \n\nHi Robert,\n\nI can answer this question. This was [a discussion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/441948aa73d1c49f). 4 options were discussed for dealing with these unitary operators for lazy numbers.\n\nA) leaving them as they were\n\nB) hard-coding them (as Maarten just did)\n\nC) \"fixing LazyNamedUnop to preserve documentation\"\n\nD) \"populating these methods at class creation time\n(rather than attribute lookup time, perhaps dynamically creating a\ndocstring for them)\"\n\nOption A was discarded: it lacks tab completion, and (as we saw in this ticket) leads to a big mess and a lot of confusion when a base class such as RingElement gets a default implementation for one of these unitary operators.\n\nOptions C and D were suggested by you, but you seemed to be the only one in the discussion who knew how to do them. Maarten said he was interested in them, and then nothing happened for months.\n\nSo I guess that in the end Maarten implemented the only remaining option, which leads to stable, transparent, understandable code that is unfortunately a bit long.\n\nI think the extra time that Sage developers will need when extending or changing Maarten's long list of similar methods is not too bad if you compare it to the time that Sage developers will need when trying to understand more complicated code and having to debug it if something unforeseen happens. But that's just my opinion.\n\n+1 from me for the way Maarten implemented it.\n\n> \n>  * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call. \n\nAre there general guidelines for this? I can imagine `_parent` to be faster, but `parent()` to be more stable in case creative implementations are in base classes.",
+    "body": "Replying to [comment:27 robertwb]:\n>  * is_square for fraction field elements now always computes a root, even if it's not needed. This can be quite expensive. \n\n\nIndeed, it should use `root=root` instead of `root=True`\n\n> \n> * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. \n\n\nHi Robert,\n\nI can answer this question. This was [a discussion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/441948aa73d1c49f). 4 options were discussed for dealing with these unitary operators for lazy numbers.\n\nA) leaving them as they were\n\nB) hard-coding them (as Maarten just did)\n\nC) \"fixing LazyNamedUnop to preserve documentation\"\n\nD) \"populating these methods at class creation time\n(rather than attribute lookup time, perhaps dynamically creating a\ndocstring for them)\"\n\nOption A was discarded: it lacks tab completion, and (as we saw in this ticket) leads to a big mess and a lot of confusion when a base class such as RingElement gets a default implementation for one of these unitary operators.\n\nOptions C and D were suggested by you, but you seemed to be the only one in the discussion who knew how to do them. Maarten said he was interested in them, and then nothing happened for months.\n\nSo I guess that in the end Maarten implemented the only remaining option, which leads to stable, transparent, understandable code that is unfortunately a bit long.\n\nI think the extra time that Sage developers will need when extending or changing Maarten's long list of similar methods is not too bad if you compare it to the time that Sage developers will need when trying to understand more complicated code and having to debug it if something unforeseen happens. But that's just my opinion.\n\n+1 from me for the way Maarten implemented it.\n\n> \n> * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call. \n\n\nAre there general guidelines for this? I can imagine `_parent` to be faster, but `parent()` to be more stable in case creative implementations are in base classes.",
     "created_at": "2011-03-22T12:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -850,10 +836,12 @@ archive/issue_comments_084360.json:
 Replying to [comment:27 robertwb]:
 >  * is_square for fraction field elements now always computes a root, even if it's not needed. This can be quite expensive. 
 
+
 Indeed, it should use `root=root` instead of `root=True`
 
 > 
->  * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. 
+> * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. 
+
 
 Hi Robert,
 
@@ -880,7 +868,8 @@ I think the extra time that Sage developers will need when extending or changing
 +1 from me for the way Maarten implemented it.
 
 > 
->  * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call. 
+> * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call. 
+
 
 Are there general guidelines for this? I can imagine `_parent` to be faster, but `parent()` to be more stable in case creative implementations are in base classes.
 
@@ -931,7 +920,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084363.json:
 ```json
 {
-    "body": "Hi Maarten, could you add a doctest to `__dir__` so that doctest coverage goes up instead of down? Just something simple like\n\n```\nsage: \"log\" in RLF(sqrt(8)).__dir__()\nTrue\n```\n",
+    "body": "Hi Maarten, could you add a doctest to `__dir__` so that doctest coverage goes up instead of down? Just something simple like\n\n```\nsage: \"log\" in RLF(sqrt(8)).__dir__()\nTrue\n```",
     "created_at": "2011-03-22T17:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
@@ -946,7 +935,6 @@ Hi Maarten, could you add a doctest to `__dir__` so that doctest coverage goes u
 sage: "log" in RLF(sqrt(8)).__dir__()
 True
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005404.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
     "created_at": "2009-02-28T21:55:42Z",
     "labels": [
         "component: calculus",
@@ -22,12 +22,10 @@ CC:  @jasongrout
 
 Now we have sqrt(a, prec=1000). Also, it doesn't even do what it says. 
 
-
 ```
 sage: numerical_sqrt(3)
 sqrt(3)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5404
 
@@ -98,7 +96,7 @@ We could also change the doctests, which test the wrong function now anyway, to 
 archive/issue_comments_041677.json:
 ```json
 {
-    "body": "The deprecation message doesn't make sense to me:\n\n```\nsage: sqrt(10.1, prec=5)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: sqrt() got an unexpected keyword argument 'prec'\n```\n\nI think the issue here is that in real_mpfr.pyx, the sqrt method doesn't accept a 'prec' argument. If I do `search_def('sqrt')`, I see lots of sqrt methods without a prec argument.  Perhaps the sqrt function in calculus/calculus.py should check for a `TypeError` in addition to an `AttributeError`?  In any case, we can't give a deprecation message which suggests using code which doesn't work.\n\nWe also need some doctests in the sqrt function in calculus/calculus.py using all of the advertised arguments.",
+    "body": "The deprecation message doesn't make sense to me:\n\n```\nsage: sqrt(10.1, prec=5)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: sqrt() got an unexpected keyword argument 'prec'\n```\nI think the issue here is that in real_mpfr.pyx, the sqrt method doesn't accept a 'prec' argument. If I do `search_def('sqrt')`, I see lots of sqrt methods without a prec argument.  Perhaps the sqrt function in calculus/calculus.py should check for a `TypeError` in addition to an `AttributeError`?  In any case, we can't give a deprecation message which suggests using code which doesn't work.\n\nWe also need some doctests in the sqrt function in calculus/calculus.py using all of the advertised arguments.",
     "created_at": "2009-05-10T22:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ TypeError                                 Traceback (most recent call last)
 ...
 TypeError: sqrt() got an unexpected keyword argument 'prec'
 ```
-
 I think the issue here is that in real_mpfr.pyx, the sqrt method doesn't accept a 'prec' argument. If I do `search_def('sqrt')`, I see lots of sqrt methods without a prec argument.  Perhaps the sqrt function in calculus/calculus.py should check for a `TypeError` in addition to an `AttributeError`?  In any case, we can't give a deprecation message which suggests using code which doesn't work.
 
 We also need some doctests in the sqrt function in calculus/calculus.py using all of the advertised arguments.

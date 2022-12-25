@@ -141,7 +141,7 @@ Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet
 archive/issue_comments_094304.json:
 ```json
 {
-    "body": "Replying to [comment:1 maldun]:\n> All Polys now have their own class.\n> Much faster evaluation is added.\n> Numerical evaluation is provided. \n> Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet\n\northogonal_polys4.py hold all changes but is not a patch yet, because it holds old code fragments,\nwhich I have to clean up...",
+    "body": "Replying to [comment:1 maldun]:\n> All Polys now have their own class.\n> Much faster evaluation is added.\n> Numerical evaluation is provided. \n> Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet\n\n\northogonal_polys4.py hold all changes but is not a patch yet, because it holds old code fragments,\nwhich I have to clean up...",
     "created_at": "2010-08-11T00:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ Replying to [comment:1 maldun]:
 > Much faster evaluation is added.
 > Numerical evaluation is provided. 
 > Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet
+
 
 orthogonal_polys4.py hold all changes but is not a patch yet, because it holds old code fragments,
 which I have to clean up...
@@ -257,7 +258,7 @@ I only provide a call function for maxima for them now.
 archive/issue_comments_094306.json:
 ```json
 {
-    "body": "> The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n\nCare to elaborate?",
+    "body": "> The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n\n\nCare to elaborate?",
     "created_at": "2010-08-12T11:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -267,6 +268,7 @@ archive/issue_comments_094306.json:
 ```
 
 > The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...
+
 
 Care to elaborate?
 
@@ -315,7 +317,7 @@ Killed bug in legendre_P
 archive/issue_comments_094309.json:
 ```json
 {
-    "body": "Replying to [comment:5 fredrik.johansson]:\n> > The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n> \n> Care to elaborate?\n\nSorry for the late answer, I was on holidays.\n\nIn mpmath I have probs with the legenp and legenq functions. For some inputs I get this error:\n\n\n```\nsage: mpmath.call(mpmath.legenp,5,1,2)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/maldun/prog/sage/ortho/<ipython console> in <module>()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/mpmath/utils.c:5021)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in legenp(ctx, n, m, z, type, **kwargs)\n   1481             T = [1+z, 1-z], [g, -g], [], [1-m], [-n, n+1], [1-m], 0.5*(1-z)\n   1482             return (T,)\n-> 1483         return ctx.hypercomb(h, [n,m], **kwargs)\n   1484     if type == 3:\n   1485         def h(n,m):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in hypercomb(ctx, function, params, discard_known_zeros, **kwargs)\n    125                     [ctx.gamma(a) for a in alpha_s] + \\\n    126                     [ctx.rgamma(b) for b in beta_s] + \\\n--> 127                     [ctx.power(w,c) for (w,c) in zip(w_s,c_s)])\n    128                 if verbose:\n    129                     print \"    Value:\", v\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/ctx_base.pyc in power(ctx, x, y)\n    417             3.16470269330255923143453723949e+12978188\n    418         \"\"\"\n--> 419         return ctx.convert(x) ** ctx.convert(y)\n    420 \n    421     def _zeta_int(ctx, n):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.mpnumber.__pow__ (sage/libs/mpmath/ext_main.c:13946)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.binop (sage/libs/mpmath/ext_main.c:4588)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_pow(s, t, prec, rnd)\n    340     # General formula: s**t = exp(t*log(s))\n    341     # TODO: handle rnd direction of the logarithm carefully\n--> 342     c = mpf_log(s, prec+10, rnd)\n    343     return mpf_exp(mpf_mul(t, c), prec, rnd)\n    344 \n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_log(x, prec, rnd)\n    725     # optimal between 1000 and 100,000 digits.\n    726     if wp <= LOG_TAYLOR_PREC:\n--> 727         m = log_taylor_cached(lshift(man, wp-bc), wp)\n    728         if mag:\n    729             m += mag*ln2_fixed(wp)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor_cached(x, prec)\n    643     else:\n    644         a = n << (cached_prec - LOG_TAYLOR_SHIFT)\n--> 645         log_a = log_taylor(a, cached_prec, 8)\n    646         log_taylor_cache[n, cached_prec] = (a, log_a)\n    647     a >>= dprec\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor(x, prec, r)\n    607     \"\"\"\n    608     for i in xrange(r):\n--> 609         x = isqrt_fast(x<<prec)\n    610     one = MPZ_ONE << prec\n    611     v = ((x-one)<<prec)//(x+one)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in isqrt_fast_python(x)\n    240                     y = (y + x//y) >> 1\n    241         return y\n--> 242     bc = bitcount(x)\n    243     guard_bits = 10\n    244     x <<= 2*guard_bits\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in python_bitcount(n)\n     78     if bc != 300:\n     79         return bc\n---> 80     bc = int(math.log(n, 2)) - 4\n     81     return bc + bctable[n>>bc]\n     82 \n\nOverflowError: cannot convert float infinity to integer\n```\n",
+    "body": "Replying to [comment:5 fredrik.johansson]:\n> > The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n\n> \n> Care to elaborate?\n\n\nSorry for the late answer, I was on holidays.\n\nIn mpmath I have probs with the legenp and legenq functions. For some inputs I get this error:\n\n```\nsage: mpmath.call(mpmath.legenp,5,1,2)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/maldun/prog/sage/ortho/<ipython console> in <module>()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/mpmath/utils.c:5021)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in legenp(ctx, n, m, z, type, **kwargs)\n   1481             T = [1+z, 1-z], [g, -g], [], [1-m], [-n, n+1], [1-m], 0.5*(1-z)\n   1482             return (T,)\n-> 1483         return ctx.hypercomb(h, [n,m], **kwargs)\n   1484     if type == 3:\n   1485         def h(n,m):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in hypercomb(ctx, function, params, discard_known_zeros, **kwargs)\n    125                     [ctx.gamma(a) for a in alpha_s] + \\\n    126                     [ctx.rgamma(b) for b in beta_s] + \\\n--> 127                     [ctx.power(w,c) for (w,c) in zip(w_s,c_s)])\n    128                 if verbose:\n    129                     print \"    Value:\", v\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/ctx_base.pyc in power(ctx, x, y)\n    417             3.16470269330255923143453723949e+12978188\n    418         \"\"\"\n--> 419         return ctx.convert(x) ** ctx.convert(y)\n    420 \n    421     def _zeta_int(ctx, n):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.mpnumber.__pow__ (sage/libs/mpmath/ext_main.c:13946)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.binop (sage/libs/mpmath/ext_main.c:4588)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_pow(s, t, prec, rnd)\n    340     # General formula: s**t = exp(t*log(s))\n    341     # TODO: handle rnd direction of the logarithm carefully\n--> 342     c = mpf_log(s, prec+10, rnd)\n    343     return mpf_exp(mpf_mul(t, c), prec, rnd)\n    344 \n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_log(x, prec, rnd)\n    725     # optimal between 1000 and 100,000 digits.\n    726     if wp <= LOG_TAYLOR_PREC:\n--> 727         m = log_taylor_cached(lshift(man, wp-bc), wp)\n    728         if mag:\n    729             m += mag*ln2_fixed(wp)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor_cached(x, prec)\n    643     else:\n    644         a = n << (cached_prec - LOG_TAYLOR_SHIFT)\n--> 645         log_a = log_taylor(a, cached_prec, 8)\n    646         log_taylor_cache[n, cached_prec] = (a, log_a)\n    647     a >>= dprec\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor(x, prec, r)\n    607     \"\"\"\n    608     for i in xrange(r):\n--> 609         x = isqrt_fast(x<<prec)\n    610     one = MPZ_ONE << prec\n    611     v = ((x-one)<<prec)//(x+one)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in isqrt_fast_python(x)\n    240                     y = (y + x//y) >> 1\n    241         return y\n--> 242     bc = bitcount(x)\n    243     guard_bits = 10\n    244     x <<= 2*guard_bits\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in python_bitcount(n)\n     78     if bc != 300:\n     79         return bc\n---> 80     bc = int(math.log(n, 2)) - 4\n     81     return bc + bctable[n>>bc]\n     82 \n\nOverflowError: cannot convert float infinity to integer\n```",
     "created_at": "2010-08-16T11:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -326,13 +328,14 @@ archive/issue_comments_094309.json:
 
 Replying to [comment:5 fredrik.johansson]:
 > > The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...
+
 > 
 > Care to elaborate?
+
 
 Sorry for the late answer, I was on holidays.
 
 In mpmath I have probs with the legenp and legenq functions. For some inputs I get this error:
-
 
 ```
 sage: mpmath.call(mpmath.legenp,5,1,2)
@@ -415,13 +418,12 @@ OverflowError: cannot convert float infinity to integer
 
 
 
-
 ---
 
 archive/issue_comments_094310.json:
 ```json
 {
-    "body": "That looks strange. I get:\n\n\n```\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.call(mpmath.legenp, 5,1,2)\n-2.96434298694874e-22 - 912.574269237852*I\nsage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n-2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n```\n",
+    "body": "That looks strange. I get:\n\n```\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.call(mpmath.legenp, 5,1,2)\n-2.96434298694874e-22 - 912.574269237852*I\nsage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n-2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n```",
     "created_at": "2010-08-16T15:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -431,7 +433,6 @@ archive/issue_comments_094310.json:
 ```
 
 That looks strange. I get:
-
 
 ```
 sage: import sage.libs.mpmath.all as mpmath
@@ -443,13 +444,12 @@ sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)
 
 
 
-
 ---
 
 archive/issue_comments_094311.json:
 ```json
 {
-    "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> {{{\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> }}}\n\nHm strange. Today I install the new Sage version, perhaps it will then work again",
+    "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> \n> ```\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> ```\n\n\nHm strange. Today I install the new Sage version, perhaps it will then work again",
     "created_at": "2010-08-17T08:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -461,13 +461,15 @@ archive/issue_comments_094311.json:
 Replying to [comment:8 fredrik.johansson]:
 > That looks strange. I get:
 > 
-> {{{
+> 
+> ```
 > sage: import sage.libs.mpmath.all as mpmath
 > sage: mpmath.call(mpmath.legenp, 5,1,2)
 > -2.96434298694874e-22 - 912.574269237852*I
 > sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)
 > -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I
-> }}}
+> ```
+
 
 Hm strange. Today I install the new Sage version, perhaps it will then work again
 
@@ -478,7 +480,7 @@ Hm strange. Today I install the new Sage version, perhaps it will then work agai
 archive/issue_comments_094312.json:
 ```json
 {
-    "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> {{{\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> }}}\n\nIt was the old version!a Thanx for pointing that out, I will continue soon =)",
+    "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> \n> ```\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> ```\n\n\nIt was the old version!a Thanx for pointing that out, I will continue soon =)",
     "created_at": "2010-08-18T16:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -490,13 +492,15 @@ archive/issue_comments_094312.json:
 Replying to [comment:8 fredrik.johansson]:
 > That looks strange. I get:
 > 
-> {{{
+> 
+> ```
 > sage: import sage.libs.mpmath.all as mpmath
 > sage: mpmath.call(mpmath.legenp, 5,1,2)
 > -2.96434298694874e-22 - 912.574269237852*I
 > sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)
 > -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I
-> }}}
+> ```
+
 
 It was the old version!a Thanx for pointing that out, I will continue soon =)
 
@@ -612,7 +616,7 @@ Added numpy support, eliminated some bugs (19.08.2010)
 archive/issue_comments_094318.json:
 ```json
 {
-    "body": "Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59\n\n> -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nI decided to give at least some numpy support for compability reasons.\nBut this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)",
+    "body": "Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59\n\n> -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\n\nI decided to give at least some numpy support for compability reasons.\nBut this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)",
     "created_at": "2010-08-19T20:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -624,6 +628,7 @@ archive/issue_comments_094318.json:
 Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59
 
 > -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)
+
 
 I decided to give at least some numpy support for compability reasons.
 But this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)
@@ -805,7 +810,7 @@ Patch for latest version with some code cleanup (no program changes)
 archive/issue_comments_094325.json:
 ```json
 {
-    "body": "Attachment [trac_9706_ortho_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_ortho_polys.patch) by maldun created at 2010-08-28 16:50:33\n\nReplying to [comment:20 burcin]:\n> Hi Stefan,\n> \n> can you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n> \n> Thanks,\n\n> Burcin\n\nDone!",
+    "body": "Attachment [trac_9706_ortho_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_ortho_polys.patch) by maldun created at 2010-08-28 16:50:33\n\nReplying to [comment:20 burcin]:\n> Hi Stefan,\n> \n> can you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n> \n> Thanks,\n\n\n> Burcin\n\n\nDone!",
     "created_at": "2010-08-28T16:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -823,7 +828,9 @@ Replying to [comment:20 burcin]:
 > 
 > Thanks,
 
+
 > Burcin
+
 
 Done!
 
@@ -854,7 +861,7 @@ Some complex tests would be nice.
 archive/issue_comments_094327.json:
 ```json
 {
-    "body": "Replying to [comment:22 fredrik.johansson]:\n> Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> \n> Some complex tests would be nice.\n> \n\nThis is a good point, and it shouldn't be a problem to change that.\nBut I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n\nOf course can you call _evalf_ just with (), and then the default value is used.\n\nI just sticked to the old's version tests, and expanded it. Of course it's possible to expand the tests. I hope I will find some time for it soon, since I have some other more urgent things todo also.",
+    "body": "Replying to [comment:22 fredrik.johansson]:\n> Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> \n> Some complex tests would be nice.\n> \n\n\nThis is a good point, and it shouldn't be a problem to change that.\nBut I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n\nOf course can you call _evalf_ just with (), and then the default value is used.\n\nI just sticked to the old's version tests, and expanded it. Of course it's possible to expand the tests. I hope I will find some time for it soon, since I have some other more urgent things todo also.",
     "created_at": "2010-09-03T19:59:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -868,6 +875,7 @@ Replying to [comment:22 fredrik.johansson]:
 > 
 > Some complex tests would be nice.
 > 
+
 
 This is a good point, and it shouldn't be a problem to change that.
 But I don't think it's a big deal, because the function takes the "parents" precision, which means, if my input is RR it evals it with RR's precision.
@@ -883,7 +891,7 @@ I just sticked to the old's version tests, and expanded it. Of course it's possi
 archive/issue_comments_094328.json:
 ```json
 {
-    "body": "Replying to [comment:23 maldun]:\n> Replying to [comment:22 fredrik.johansson]:\n> > Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> > \n> > Some complex tests would be nice.\n> > \n> \n> This is a good point, and it shouldn't be a problem to change that.\n> But I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n> \n> Of course can you call _evalf_ just with (), and then the default value is used.\n> \nOk sorry, wrong explination: when your input are exact data types like ZZ ore QQ then the parent has no precision, then you need a default value",
+    "body": "Replying to [comment:23 maldun]:\n> Replying to [comment:22 fredrik.johansson]:\n> > Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> > \n> > Some complex tests would be nice.\n> > \n\n> \n> This is a good point, and it shouldn't be a problem to change that.\n> But I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n> \n> Of course can you call _evalf_ just with (), and then the default value is used.\n> \n\nOk sorry, wrong explination: when your input are exact data types like ZZ ore QQ then the parent has no precision, then you need a default value",
     "created_at": "2010-09-03T20:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -898,12 +906,14 @@ Replying to [comment:23 maldun]:
 > > 
 > > Some complex tests would be nice.
 > > 
+
 > 
 > This is a good point, and it shouldn't be a problem to change that.
 > But I don't think it's a big deal, because the function takes the "parents" precision, which means, if my input is RR it evals it with RR's precision.
 > 
 > Of course can you call _evalf_ just with (), and then the default value is used.
 > 
+
 Ok sorry, wrong explination: when your input are exact data types like ZZ ore QQ then the parent has no precision, then you need a default value
 
 
@@ -913,7 +923,7 @@ Ok sorry, wrong explination: when your input are exact data types like ZZ ore QQ
 archive/issue_comments_094329.json:
 ```json
 {
-    "body": "Since it seems that numpy-1.4.1, and scipy 0.8 should work now (see #9808) I programmed a version which uses scipy itself to evaluate the orthogonal polys for numpy arrays. \nWhen the new versions of numpy/scipy become merged into sage I will provide a patch for these.\n\nAnother thing I have to mention are these 2 failde doctests:\n* sage -t  -long \"devel/sage/sage/symbolic/random_tests.py\"\n* sage -t  -long \"devel/sage/sage/symbolic/pynac.pyx\"\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"    \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 17:\n    sage: [f for (one,f,arity) in _mk_full_functions()]\nExpected:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch,\n    arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh,\n    binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch,\n    dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec,\n    elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp,\n    factorial, floor, heaviside, imag_part, integrate,\n    kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin,\n    sinh, tan, tanh, unit_step, zeta, zetaderiv]\nGot:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch, arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh, binomial, ceil, chebyshev_T, chebyshev_U, conjugate, cos, cosh, cot, coth, csc, csch, dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec, elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp, factorial, floor, gegenbauer, gen_laguerre, gen_legendre_P, gen_legendre_Q, heaviside, hermite, imag_part, integrate, jacobi_P, kronecker_delta, laguerre, legendre_P, legendre_Q, log, polylog, real_part, sec, sech, sgn, sin, sinh, tan, tanh, unit_step, zeta, zetaderiv]\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 237:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    (euler_gamma - v3^(-e) + (v2 - factorial(-e/v2))^(((2.85879036573 - 1.18163393202*I)*v2 + (2.85879036573 - 1.18163393202*I)*v3)*pi - 0.247786879678 + 0.931826724898*I)*arccsc((0.891138386848 - 0.0936820840629*I)/v1) + (-0.553423153995 + 0.5481180572*I)*v3 + 0.149683576515 - 0.155746451854*I)*v1 + arccsch(pi + e)*elliptic_f(khinchin*v2, 1.4656989704 + 0.863754357069*I)\nGot:\n    -v1*e^((0.0666829501658 + 0.206976992303*I)/(v3 + e))/v3 + hermite(-(v3^(-0.48519994364 - 0.485764091302*I) - log((1.21734510331 - 1.22580558833*I)*pi*v1 + zeta((0.781366128261 + 0.957400336147*I)*v1*e + (-1.8919687109 + 0.753422167447*I)*elliptic_f(v1, v1))*arccsch(v3)))*v1, (-0.647983235144 + 1.20665952957*I)*v1 + (0.0909404921682 + 0.281538203756*I)/v3)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 239:\n    sage: random_expr(5, verbose=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[5]>\", line 1, in <module>\n        random_expr(Integer(5), verbose=True)###line 239:\n    sage: random_expr(5, verbose=True)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 254, in random_expr\n        return random_expr_helper(size, internal, leaves, verbose)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 210, in random_expr_helper\n        return r[1](*children)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 713, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6126)\n      File \"element.pyx\", line 1527, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11973)\n      File \"expression.pyx\", line 2269, in sage.symbolic.expression.Expression._div_ (sage/symbolic/expression.cpp:11444)\n    ZeroDivisionError: Symbolic division by zero\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_0\n   2 of   6 in __main__.example_5\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_random_tests.py\n         [7.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\nTotal time for all tests: 7.8 seconds\n```\n\n\nI quite understand these, because we have introduced new functions, but I don't understand the exception in the last one\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"          \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 386:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 388:\n    sage: py_latex_function_pystring(i, (x,y^z))\nExpected:\n    'my args are: x, y^z'\nGot:\n    '\\\\mathrm{bar}\\\\left(x, y^{z}\\\\right)'\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 478:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 480:\n    sage: py_print_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1](foo)(x, y^z)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 540:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 542:\n    sage: py_latex_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1]\\left(\\mathrm{bar}\\right)\\left(x, y^{z}\\right)\n**********************************************************************\n3 items had failures:\n   2 of  19 in __main__.example_14\n   2 of  14 in __main__.example_16\n   2 of  18 in __main__.example_18\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_pynac.py\n         [7.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"\nTotal time for all tests: 7.3 seconds\n```\n\n\nAnd these are really strange, because when I type then into sage by hand everything works. wtf??\nCan anyone have a look at these?",
+    "body": "Since it seems that numpy-1.4.1, and scipy 0.8 should work now (see #9808) I programmed a version which uses scipy itself to evaluate the orthogonal polys for numpy arrays. \nWhen the new versions of numpy/scipy become merged into sage I will provide a patch for these.\n\nAnother thing I have to mention are these 2 failde doctests:\n* sage -t  -long \"devel/sage/sage/symbolic/random_tests.py\"\n* sage -t  -long \"devel/sage/sage/symbolic/pynac.pyx\"\n\n```\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"    \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 17:\n    sage: [f for (one,f,arity) in _mk_full_functions()]\nExpected:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch,\n    arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh,\n    binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch,\n    dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec,\n    elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp,\n    factorial, floor, heaviside, imag_part, integrate,\n    kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin,\n    sinh, tan, tanh, unit_step, zeta, zetaderiv]\nGot:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch, arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh, binomial, ceil, chebyshev_T, chebyshev_U, conjugate, cos, cosh, cot, coth, csc, csch, dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec, elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp, factorial, floor, gegenbauer, gen_laguerre, gen_legendre_P, gen_legendre_Q, heaviside, hermite, imag_part, integrate, jacobi_P, kronecker_delta, laguerre, legendre_P, legendre_Q, log, polylog, real_part, sec, sech, sgn, sin, sinh, tan, tanh, unit_step, zeta, zetaderiv]\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 237:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    (euler_gamma - v3^(-e) + (v2 - factorial(-e/v2))^(((2.85879036573 - 1.18163393202*I)*v2 + (2.85879036573 - 1.18163393202*I)*v3)*pi - 0.247786879678 + 0.931826724898*I)*arccsc((0.891138386848 - 0.0936820840629*I)/v1) + (-0.553423153995 + 0.5481180572*I)*v3 + 0.149683576515 - 0.155746451854*I)*v1 + arccsch(pi + e)*elliptic_f(khinchin*v2, 1.4656989704 + 0.863754357069*I)\nGot:\n    -v1*e^((0.0666829501658 + 0.206976992303*I)/(v3 + e))/v3 + hermite(-(v3^(-0.48519994364 - 0.485764091302*I) - log((1.21734510331 - 1.22580558833*I)*pi*v1 + zeta((0.781366128261 + 0.957400336147*I)*v1*e + (-1.8919687109 + 0.753422167447*I)*elliptic_f(v1, v1))*arccsch(v3)))*v1, (-0.647983235144 + 1.20665952957*I)*v1 + (0.0909404921682 + 0.281538203756*I)/v3)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 239:\n    sage: random_expr(5, verbose=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[5]>\", line 1, in <module>\n        random_expr(Integer(5), verbose=True)###line 239:\n    sage: random_expr(5, verbose=True)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 254, in random_expr\n        return random_expr_helper(size, internal, leaves, verbose)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 210, in random_expr_helper\n        return r[1](*children)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 713, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6126)\n      File \"element.pyx\", line 1527, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11973)\n      File \"expression.pyx\", line 2269, in sage.symbolic.expression.Expression._div_ (sage/symbolic/expression.cpp:11444)\n    ZeroDivisionError: Symbolic division by zero\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_0\n   2 of   6 in __main__.example_5\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_random_tests.py\n         [7.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\nTotal time for all tests: 7.8 seconds\n```\n\nI quite understand these, because we have introduced new functions, but I don't understand the exception in the last one\n\n```\nsage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"          \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 386:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 388:\n    sage: py_latex_function_pystring(i, (x,y^z))\nExpected:\n    'my args are: x, y^z'\nGot:\n    '\\\\mathrm{bar}\\\\left(x, y^{z}\\\\right)'\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 478:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 480:\n    sage: py_print_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1](foo)(x, y^z)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 540:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 542:\n    sage: py_latex_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1]\\left(\\mathrm{bar}\\right)\\left(x, y^{z}\\right)\n**********************************************************************\n3 items had failures:\n   2 of  19 in __main__.example_14\n   2 of  14 in __main__.example_16\n   2 of  18 in __main__.example_18\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_pynac.py\n         [7.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"\nTotal time for all tests: 7.3 seconds\n```\n\nAnd these are really strange, because when I type then into sage by hand everything works. wtf??\nCan anyone have a look at these?",
     "created_at": "2010-09-05T10:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -928,7 +938,6 @@ When the new versions of numpy/scipy become merged into sage I will provide a pa
 Another thing I have to mention are these 2 failde doctests:
 * sage -t  -long "devel/sage/sage/symbolic/random_tests.py"
 * sage -t  -long "devel/sage/sage/symbolic/pynac.pyx"
-
 
 ```
 sage -t -long "devel/sage/sage/symbolic/random_tests.py"    
@@ -992,9 +1001,7 @@ The following tests failed:
 Total time for all tests: 7.8 seconds
 ```
 
-
 I quite understand these, because we have introduced new functions, but I don't understand the exception in the last one
-
 
 ```
 sage -t -long "devel/sage/sage/symbolic/pynac.pyx"          
@@ -1056,7 +1063,6 @@ The following tests failed:
         sage -t -long "devel/sage/sage/symbolic/pynac.pyx"
 Total time for all tests: 7.3 seconds
 ```
-
 
 And these are really strange, because when I type then into sage by hand everything works. wtf??
 Can anyone have a look at these?
@@ -1279,7 +1285,7 @@ Latest version of orthogonal polys with scipy support, and changed doctests. Tes
 archive/issue_comments_094339.json:
 ```json
 {
-    "body": "Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_orthogonal_polys.patch) by maldun created at 2010-10-16 13:04:50\n\nReplying to [comment:30 kcrisman]:\n> I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  \n\nBut thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.\n\nYou are right the imports didn't change since I started this ticket and importing the whole numpy and scipy packages is to much. This isn't a very good Idea if one thinks about performance either.  I changed that now so that only functions that are really needed are importet. I did this also for mpmath but the problem with the global import remains.\n(see above). Also changed some errors in the discription I missed and repaired a wrong doctest.\n\nPS: If diffs or more changelogs are needed let me know. I'm keeping track with git on my machine of the changes.",
+    "body": "Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_orthogonal_polys.patch) by maldun created at 2010-10-16 13:04:50\n\nReplying to [comment:30 kcrisman]:\n> I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  \n\n\nBut thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.\n\nYou are right the imports didn't change since I started this ticket and importing the whole numpy and scipy packages is to much. This isn't a very good Idea if one thinks about performance either.  I changed that now so that only functions that are really needed are importet. I did this also for mpmath but the problem with the global import remains.\n(see above). Also changed some errors in the discription I missed and repaired a wrong doctest.\n\nPS: If diffs or more changelogs are needed let me know. I'm keeping track with git on my machine of the changes.",
     "created_at": "2010-10-16T13:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1292,6 +1298,7 @@ Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uu
 
 Replying to [comment:30 kcrisman]:
 > I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  
+
 
 But thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.
 
@@ -1325,7 +1332,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094341.json:
 ```json
 {
-    "body": "Great work Stefan. Your patch looks good overall, but it needs a lot of polish. Thank you very much for this.\n\nHere are some quick comments after reading attachment:trac_9706_orthogonal_polys.patch. I didn't try to apply and run the code yet. It would be better if other people try this as well since I am really short on time these days.\n\n* I suggest you use your real name in the HG headers. This information is used for copyright/license issues as well. In the future it might cause a lot of trouble if people have to chase down `maldun` for copyright questions.\n* You shouldn't import any part of `numpy` at the module level. This slows down startup too much. See #3561 for example. I'd say the same holds for `mpmath` and `scipy`.\n* line 385-386 has this:\n\n```\nThen after using one of these functions, it changes:: (The value is now  \nFalse for chebyshev_T because chebyshev_T uses clenshaw method instead...)\n```\n\n I don't think this is valid Sphinx.\n* delete line 412\n\n```\n#load /home/maldun/sage/sage-4.5.2/devel/sage-ortho/sage/functions/orthogonal_polys.py \n```\n\n* line 419: he -> the\n* There are no doctests for the `OrthogonalPolynomial` class, make sure your file passes `sage -coverage`\n* The commented timings in the docstring of `OrthogonalPolynomial._clenshaw_method_()` are confusing. It would be better if you provide a function in the same file that does these timings automatically and prints out the results. You should at least delete this from the documentation though.\n* In the docstring of `OrthogonalPolynomial._eval_()`\n  * remove the empty first line (line 494) of\n  * remove the commented out timings as well\n  * you need an empty line after `EXAMPLES::`\n  * the empty last line should be removed\n* add some comments to the `OrthogonalPolynomial._eval_()` method to indicate what you're trying to do with these tests.\n  * lines 583-593 have a confusing comment and a bug\n\n```\ntry: \n    #s = maxima(self._maxima_init_evaled_(*args)) \n    #This above is very inefficient! The older \n    #methods were much faster... \n    return self._maxima_init_evaled_(*args) \nexcept TypeError: \n    return None \nif self._maxima_name in repr(s): \n    return None \nelse: \n    return s.sage() \n```\n\n* You don't need to state \"Class for\" on line 598, \"The Chebyshev ...\" is enough.\n* Why do you delete the `chebyshev_T(2,x)` test on line 371? You can just add the new ones after that.\n* line 626, `EXAMPLES:` -> `EXAMPLES::`\n* Don't use `*args` or `**kwds` when you don't need them. Name the arguments and be explicit. Remember the \"Zen of Python\", \"Explicit is better than implicit.\"\n* OK, generally, fix the docstrings to conform to Sphinx standards. This should be documented somewhere in the developers guide.\n* line 673, `_maxima_init_evaled_()` doesn't have doctests.\n* line 678 - , `_clenshaw_method_()`\n  * docstring is not indented properly.\n  * It would be better to put the recursion formula in the docstring.\n* line 790 `_clenshaw_method_()` doesn't have doctests.\n* There is something wrong with the `_maxima_init_evaled_()` on line 821. Are you sure this function shouldn't just return a string to be run in maxima? How do we know that doctest actually calls this function? In any case, the right way to convert a maxima object to sage is to run `.sage()` on it. Never use `sage_eval()` on a string in the Sage library.\n* Calls to mpmath should be able to use the precision directly from the type of the argument now. Are you sure all this is necessary:\n\n```\ntry: \n    step_parent = kwds['parent'] \nexcept KeyError: \n    step_parent = parent(args[-1]) \n\ntry: \n    precision = step_parent.prec() \nexcept AttributeError: \n    precision = RR.prec() \n```\n\n See #9566.\n* line 924, change the error message to something more professional. \"Derivative w.r.t. to the index is not supported, yet, and perhaps never will be...\" is not acceptable. \"Derivatives with respect to the index is not supported.\" would be enough.\n* Document the derivative formula in the docstring, using proper math notation\n* What needs to be discussed from the comments on line 968-974?\n* Same for lines 1058-1060?\n* no doctests for `_clenshaw_method_()` on line 1156.\n* no doctests for `_maxima_init_evaled_()` on line 1189.\n\nI give up at this point. It seems that there are similar issues in the rest of the file as well.\n\nAfter you clean up the code according to the comments above, perhaps a native English speaker like Karl-Dieter or Minh can help with the documentation.\n\nThanks again for all your work.",
+    "body": "Great work Stefan. Your patch looks good overall, but it needs a lot of polish. Thank you very much for this.\n\nHere are some quick comments after reading attachment:trac_9706_orthogonal_polys.patch. I didn't try to apply and run the code yet. It would be better if other people try this as well since I am really short on time these days.\n\n* I suggest you use your real name in the HG headers. This information is used for copyright/license issues as well. In the future it might cause a lot of trouble if people have to chase down `maldun` for copyright questions.\n* You shouldn't import any part of `numpy` at the module level. This slows down startup too much. See #3561 for example. I'd say the same holds for `mpmath` and `scipy`.\n* line 385-386 has this:\n\n```\nThen after using one of these functions, it changes:: (The value is now  \nFalse for chebyshev_T because chebyshev_T uses clenshaw method instead...)\n```\n I don't think this is valid Sphinx.\n* delete line 412\n\n```\n#load /home/maldun/sage/sage-4.5.2/devel/sage-ortho/sage/functions/orthogonal_polys.py \n```\n* line 419: he -> the\n* There are no doctests for the `OrthogonalPolynomial` class, make sure your file passes `sage -coverage`\n* The commented timings in the docstring of `OrthogonalPolynomial._clenshaw_method_()` are confusing. It would be better if you provide a function in the same file that does these timings automatically and prints out the results. You should at least delete this from the documentation though.\n* In the docstring of `OrthogonalPolynomial._eval_()`\n  * remove the empty first line (line 494) of\n  * remove the commented out timings as well\n  * you need an empty line after `EXAMPLES::`\n  * the empty last line should be removed\n* add some comments to the `OrthogonalPolynomial._eval_()` method to indicate what you're trying to do with these tests.\n  * lines 583-593 have a confusing comment and a bug\n\n```\ntry: \n    #s = maxima(self._maxima_init_evaled_(*args)) \n    #This above is very inefficient! The older \n    #methods were much faster... \n    return self._maxima_init_evaled_(*args) \nexcept TypeError: \n    return None \nif self._maxima_name in repr(s): \n    return None \nelse: \n    return s.sage() \n```\n* You don't need to state \"Class for\" on line 598, \"The Chebyshev ...\" is enough.\n* Why do you delete the `chebyshev_T(2,x)` test on line 371? You can just add the new ones after that.\n* line 626, `EXAMPLES:` -> `EXAMPLES::`\n* Don't use `*args` or `**kwds` when you don't need them. Name the arguments and be explicit. Remember the \"Zen of Python\", \"Explicit is better than implicit.\"\n* OK, generally, fix the docstrings to conform to Sphinx standards. This should be documented somewhere in the developers guide.\n* line 673, `_maxima_init_evaled_()` doesn't have doctests.\n* line 678 - , `_clenshaw_method_()`\n  * docstring is not indented properly.\n  * It would be better to put the recursion formula in the docstring.\n* line 790 `_clenshaw_method_()` doesn't have doctests.\n* There is something wrong with the `_maxima_init_evaled_()` on line 821. Are you sure this function shouldn't just return a string to be run in maxima? How do we know that doctest actually calls this function? In any case, the right way to convert a maxima object to sage is to run `.sage()` on it. Never use `sage_eval()` on a string in the Sage library.\n* Calls to mpmath should be able to use the precision directly from the type of the argument now. Are you sure all this is necessary:\n\n```\ntry: \n    step_parent = kwds['parent'] \nexcept KeyError: \n    step_parent = parent(args[-1]) \n\ntry: \n    precision = step_parent.prec() \nexcept AttributeError: \n    precision = RR.prec() \n```\n See #9566.\n* line 924, change the error message to something more professional. \"Derivative w.r.t. to the index is not supported, yet, and perhaps never will be...\" is not acceptable. \"Derivatives with respect to the index is not supported.\" would be enough.\n* Document the derivative formula in the docstring, using proper math notation\n* What needs to be discussed from the comments on line 968-974?\n* Same for lines 1058-1060?\n* no doctests for `_clenshaw_method_()` on line 1156.\n* no doctests for `_maxima_init_evaled_()` on line 1189.\n\nI give up at this point. It seems that there are similar issues in the rest of the file as well.\n\nAfter you clean up the code according to the comments above, perhaps a native English speaker like Karl-Dieter or Minh can help with the documentation.\n\nThanks again for all your work.",
     "created_at": "2010-10-16T15:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1346,14 +1353,12 @@ Here are some quick comments after reading attachment:trac_9706_orthogonal_polys
 Then after using one of these functions, it changes:: (The value is now  
 False for chebyshev_T because chebyshev_T uses clenshaw method instead...)
 ```
-
  I don't think this is valid Sphinx.
 * delete line 412
 
 ```
 #load /home/maldun/sage/sage-4.5.2/devel/sage-ortho/sage/functions/orthogonal_polys.py 
 ```
-
 * line 419: he -> the
 * There are no doctests for the `OrthogonalPolynomial` class, make sure your file passes `sage -coverage`
 * The commented timings in the docstring of `OrthogonalPolynomial._clenshaw_method_()` are confusing. It would be better if you provide a function in the same file that does these timings automatically and prints out the results. You should at least delete this from the documentation though.
@@ -1378,7 +1383,6 @@ if self._maxima_name in repr(s):
 else: 
     return s.sage() 
 ```
-
 * You don't need to state "Class for" on line 598, "The Chebyshev ..." is enough.
 * Why do you delete the `chebyshev_T(2,x)` test on line 371? You can just add the new ones after that.
 * line 626, `EXAMPLES:` -> `EXAMPLES::`
@@ -1403,7 +1407,6 @@ try:
 except AttributeError: 
     precision = RR.prec() 
 ```
-
  See #9566.
 * line 924, change the error message to something more professional. "Derivative w.r.t. to the index is not supported, yet, and perhaps never will be..." is not acceptable. "Derivatives with respect to the index is not supported." would be enough.
 * Document the derivative formula in the docstring, using proper math notation
@@ -1626,7 +1629,7 @@ I'd love one final check from either of you.  There are a lot of imports added; 
 archive/issue_comments_094350.json:
 ```json
 {
-    "body": "Sorry to spoil the party, but this is a regression:\n\n```\nsage: K.<a> = NumberField(x^3-x-1)\nsage: chebyshev_T(10^3,a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-17-aa97c56dd147> in <module>()\n----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n\nTypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n```\n\n\n(and yes: Chebyshev polynomials are important in number theory)",
+    "body": "Sorry to spoil the party, but this is a regression:\n\n```\nsage: K.<a> = NumberField(x^3-x-1)\nsage: chebyshev_T(10^3,a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-17-aa97c56dd147> in <module>()\n----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n\nTypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n```\n\n(and yes: Chebyshev polynomials are important in number theory)",
     "created_at": "2013-12-03T17:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1651,7 +1654,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring
 ```
-
 
 (and yes: Chebyshev polynomials are important in number theory)
 
@@ -1680,7 +1682,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094352.json:
 ```json
 {
-    "body": "I would also like to point out that PARI is faster at evaluating Chebyshev polynomials:\n\n```\nsage: timeit('''chebyshev_T(10^5,2)''')\n5 loops, best of 3: 270 ms per loop\nsage: timeit('''pari('polchebyshev (10^5,1,2)')''')\n625 loops, best of 3: 447 \u00b5s per loop\n```\n\n\n\n```\nsage: timeit('''chebyshev_T(10^5, Mod(2,1009))''')\n5 loops, best of 3: 208 ms per loop\nsage: timeit('''pari('polchebyshev(10^5, 1, Mod(2,1009))')''')\n625 loops, best of 3: 11.5 \u00b5s per loop\n```\n\n\nWe should definately use PARI to evaluate Chebyshev polynomials for certain types of input.",
+    "body": "I would also like to point out that PARI is faster at evaluating Chebyshev polynomials:\n\n```\nsage: timeit('''chebyshev_T(10^5,2)''')\n5 loops, best of 3: 270 ms per loop\nsage: timeit('''pari('polchebyshev (10^5,1,2)')''')\n625 loops, best of 3: 447 \u00b5s per loop\n```\n\n```\nsage: timeit('''chebyshev_T(10^5, Mod(2,1009))''')\n5 loops, best of 3: 208 ms per loop\nsage: timeit('''pari('polchebyshev(10^5, 1, Mod(2,1009))')''')\n625 loops, best of 3: 11.5 \u00b5s per loop\n```\n\nWe should definately use PARI to evaluate Chebyshev polynomials for certain types of input.",
     "created_at": "2013-12-03T17:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1698,15 +1700,12 @@ sage: timeit('''pari('polchebyshev (10^5,1,2)')''')
 625 loops, best of 3: 447 µs per loop
 ```
 
-
-
 ```
 sage: timeit('''chebyshev_T(10^5, Mod(2,1009))''')
 5 loops, best of 3: 208 ms per loop
 sage: timeit('''pari('polchebyshev(10^5, 1, Mod(2,1009))')''')
 625 loops, best of 3: 11.5 µs per loop
 ```
-
 
 We should definately use PARI to evaluate Chebyshev polynomials for certain types of input.
 
@@ -1717,7 +1716,7 @@ We should definately use PARI to evaluate Chebyshev polynomials for certain type
 archive/issue_comments_094353.json:
 ```json
 {
-    "body": "Another regression:\n\n```\nsage: parent(chebyshev_T(10^2, RIF(2)))\nReal Field with 53 bits of precision\n```\n",
+    "body": "Another regression:\n\n```\nsage: parent(chebyshev_T(10^2, RIF(2)))\nReal Field with 53 bits of precision\n```",
     "created_at": "2013-12-03T17:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1735,13 +1734,12 @@ Real Field with 53 bits of precision
 
 
 
-
 ---
 
 archive/issue_comments_094354.json:
 ```json
 {
-    "body": "The \"Clenshaw method\" uses a very naive method of evaluating the recursion which needs `O(n)` steps, while there is a much faster method (which compute `T_2n` and `U_2n` in function of `T_n` and `U_n`) which only needs `O(log(n))` steps.\n\nEven this is totally feasible:\n\n```\nsage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')\n625 loops, best of 3: 16.3 \u00b5s per loop\n```\n",
+    "body": "The \"Clenshaw method\" uses a very naive method of evaluating the recursion which needs `O(n)` steps, while there is a much faster method (which compute `T_2n` and `U_2n` in function of `T_n` and `U_n`) which only needs `O(log(n))` steps.\n\nEven this is totally feasible:\n\n```\nsage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')\n625 loops, best of 3: 16.3 \u00b5s per loop\n```",
     "created_at": "2013-12-03T17:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1761,13 +1759,12 @@ sage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')
 
 
 
-
 ---
 
 archive/issue_comments_094355.json:
 ```json
 {
-    "body": "This is also bad:\n\n```\nsage: R.<x> = QQ[]\nsage: parent(chebyshev_T(5, x))\nSymbolic Ring\n```\n",
+    "body": "This is also bad:\n\n```\nsage: R.<x> = QQ[]\nsage: parent(chebyshev_T(5, x))\nSymbolic Ring\n```",
     "created_at": "2013-12-03T17:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1783,7 +1780,6 @@ sage: R.<x> = QQ[]
 sage: parent(chebyshev_T(5, x))
 Symbolic Ring
 ```
-
 
 
 
@@ -1849,7 +1845,7 @@ Jeroen: do you know a reference for the recursion pari uses?
 archive/issue_comments_094359.json:
 ```json
 {
-    "body": "Replying to [comment:50 fredrik.johansson]:\n> Jeroen: do you know a reference for the recursion pari uses?\nNo, but it's pretty straight-forward (think doubling formulas for `cos` and `sin`).",
+    "body": "Replying to [comment:50 fredrik.johansson]:\n> Jeroen: do you know a reference for the recursion pari uses?\n\nNo, but it's pretty straight-forward (think doubling formulas for `cos` and `sin`).",
     "created_at": "2013-12-03T20:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1860,6 +1856,7 @@ archive/issue_comments_094359.json:
 
 Replying to [comment:50 fredrik.johansson]:
 > Jeroen: do you know a reference for the recursion pari uses?
+
 No, but it's pretty straight-forward (think doubling formulas for `cos` and `sin`).
 
 
@@ -1903,7 +1900,7 @@ But it would be really good to add the ortho polys, and I really want to finish 
 archive/issue_comments_094361.json:
 ```json
 {
-    "body": "> `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\nWhat's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n\n> I make the following suggestion: I will finish the OrthogonalPolynomials with the current design.\nSure...",
+    "body": "> `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\n\nWhat's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n\n> I make the following suggestion: I will finish the OrthogonalPolynomials with the current design.\n\nSure...",
     "created_at": "2013-12-04T08:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1913,9 +1910,11 @@ archive/issue_comments_094361.json:
 ```
 
 > `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.
+
 What's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that "symbolic polynomials" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).
 
 > I make the following suggestion: I will finish the OrthogonalPolynomials with the current design.
+
 Sure...
 
 
@@ -1925,7 +1924,7 @@ Sure...
 archive/issue_comments_094362.json:
 ```json
 {
-    "body": "Replying to [comment:53 jdemeyer]:\n> > `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\n> What's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n> \n\nIt makes a difference in an **OO-Design** point of view, because you can apply a whole bunch of evaluation techniques and tricks due to the three term recursion (e.g. clenshaw method or the eval_numpy method are not needed for symbolic polynomials, since there are no methods for that). Thats the reason why I suggested to derive them from a base class on top to avoid redundant methods. That would be a clean solution. And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys. And if you want to introduce such a general class, you should not put it into orthogonal_polys.py, but somewhere else, were it fits better into the class hierarchy.\n\nPlease don't get me wrong, I'm not stating, that I think it is a bad idea to introduce such an abstract base class, but If you want a clean OO Design, it is not done by a simple renaming.",
+    "body": "Replying to [comment:53 jdemeyer]:\n> > `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\n\n> What's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n> \n\n\nIt makes a difference in an **OO-Design** point of view, because you can apply a whole bunch of evaluation techniques and tricks due to the three term recursion (e.g. clenshaw method or the eval_numpy method are not needed for symbolic polynomials, since there are no methods for that). Thats the reason why I suggested to derive them from a base class on top to avoid redundant methods. That would be a clean solution. And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys. And if you want to introduce such a general class, you should not put it into orthogonal_polys.py, but somewhere else, were it fits better into the class hierarchy.\n\nPlease don't get me wrong, I'm not stating, that I think it is a bad idea to introduce such an abstract base class, but If you want a clean OO Design, it is not done by a simple renaming.",
     "created_at": "2013-12-04T09:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1936,8 +1935,10 @@ archive/issue_comments_094362.json:
 
 Replying to [comment:53 jdemeyer]:
 > > `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.
+
 > What's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that "symbolic polynomials" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).
 > 
+
 
 It makes a difference in an **OO-Design** point of view, because you can apply a whole bunch of evaluation techniques and tricks due to the three term recursion (e.g. clenshaw method or the eval_numpy method are not needed for symbolic polynomials, since there are no methods for that). Thats the reason why I suggested to derive them from a base class on top to avoid redundant methods. That would be a clean solution. And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys. And if you want to introduce such a general class, you should not put it into orthogonal_polys.py, but somewhere else, were it fits better into the class hierarchy.
 
@@ -1950,7 +1951,7 @@ Please don't get me wrong, I'm not stating, that I think it is a bad idea to int
 archive/issue_comments_094363.json:
 ```json
 {
-    "body": "Evaluating `chebyshev_T(n,x)` can be done as\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]\n```\n\n\nWhile `chebyshev_U(n-1,x)` equals\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]\n```\n\n\nThese can be evaluated with `O(log(n))` operations.",
+    "body": "Evaluating `chebyshev_T(n,x)` can be done as\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]\n```\n\nWhile `chebyshev_U(n-1,x)` equals\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]\n```\n\nThese can be evaluated with `O(log(n))` operations.",
     "created_at": "2013-12-04T09:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1965,13 +1966,11 @@ Evaluating `chebyshev_T(n,x)` can be done as
 (Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]
 ```
 
-
 While `chebyshev_U(n-1,x)` equals
 
 ```
 (Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]
 ```
-
 
 These can be evaluated with `O(log(n))` operations.
 
@@ -1982,7 +1981,7 @@ These can be evaluated with `O(log(n))` operations.
 archive/issue_comments_094364.json:
 ```json
 {
-    "body": "Replying to [comment:54 maldun]:\n> And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys.\nThat alone is a very good to keep the `OrthogonalPolynomial` class.",
+    "body": "Replying to [comment:54 maldun]:\n> And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys.\n\nThat alone is a very good to keep the `OrthogonalPolynomial` class.",
     "created_at": "2013-12-04T09:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -1993,6 +1992,7 @@ archive/issue_comments_094364.json:
 
 Replying to [comment:54 maldun]:
 > And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys.
+
 That alone is a very good to keep the `OrthogonalPolynomial` class.
 
 
@@ -2002,7 +2002,7 @@ That alone is a very good to keep the `OrthogonalPolynomial` class.
 archive/issue_comments_094365.json:
 ```json
 {
-    "body": "Replying to [comment:55 jdemeyer]:\n> Evaluating `chebyshev_T(n,x)` can be done as\n> {{{\n> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[0,0]\n> }}}\n> \n> While `chebyshev_U(n-1,x)` equals\n> {{{\n> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[1,0]\n> }}}\n> \n> These can be evaluated with `O(log(n))` operations.\n\nThanks for the hint. I have also an own idea to implement this. My implementation   should be optimal with respect to the flop count, but yours could be faster since matrix multiplication and powers are well optimized. I will compare both methods and use the faster one.\n\nFor reference: The method which I mean is based on the generalized recursion formula (originating from the cosine addition theorem): \nT_{n+m} + T{n-m} = 2 T_n T_m \n\nFor T_N one can now use the binary representation of N to recursively build T_N in O(log N) time",
+    "body": "Replying to [comment:55 jdemeyer]:\n> Evaluating `chebyshev_T(n,x)` can be done as\n> \n> ```\n> (Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]\n> ```\n> \n> While `chebyshev_U(n-1,x)` equals\n> \n> ```\n> (Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]\n> ```\n> \n> These can be evaluated with `O(log(n))` operations.\n\n\nThanks for the hint. I have also an own idea to implement this. My implementation   should be optimal with respect to the flop count, but yours could be faster since matrix multiplication and powers are well optimized. I will compare both methods and use the faster one.\n\nFor reference: The method which I mean is based on the generalized recursion formula (originating from the cosine addition theorem): \nT_{n+m} + T{n-m} = 2 T_n T_m \n\nFor T_N one can now use the binary representation of N to recursively build T_N in O(log N) time",
     "created_at": "2013-12-04T09:24:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2013,16 +2013,19 @@ archive/issue_comments_094365.json:
 
 Replying to [comment:55 jdemeyer]:
 > Evaluating `chebyshev_T(n,x)` can be done as
-> {{{
-> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[0,0]
-> }}}
+> 
+> ```
+> (Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]
+> ```
 > 
 > While `chebyshev_U(n-1,x)` equals
-> {{{
-> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[1,0]
-> }}}
+> 
+> ```
+> (Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]
+> ```
 > 
 > These can be evaluated with `O(log(n))` operations.
+
 
 Thanks for the hint. I have also an own idea to implement this. My implementation   should be optimal with respect to the flop count, but yours could be faster since matrix multiplication and powers are well optimized. I will compare both methods and use the faster one.
 
@@ -2038,7 +2041,7 @@ For T_N one can now use the binary representation of N to recursively build T_N 
 archive/issue_comments_094366.json:
 ```json
 {
-    "body": "This should be a `ValueError`:\n\n```\nsage: chebyshev_T(1/2,0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-7-830f13ad2f0d> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2),Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()                                                                                                                                                               \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()                                                                                                                                                                      \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    489                 if not is_Expression(args[-1]):\n    490                     try:\n--> 491                         return self._evalf_(*args)\n    492                     except AttributeError:\n    493                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    606             precision = step_parent.prec()\n    607         except AttributeError:\n--> 608             precision = RR.prec()\n    609 \n    610         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```\n",
+    "body": "This should be a `ValueError`:\n\n```\nsage: chebyshev_T(1/2,0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-7-830f13ad2f0d> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2),Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()                                                                                                                                                               \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()                                                                                                                                                                      \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    489                 if not is_Expression(args[-1]):\n    490                     try:\n--> 491                         return self._evalf_(*args)\n    492                     except AttributeError:\n    493                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    606             precision = step_parent.prec()\n    607         except AttributeError:\n--> 608             precision = RR.prec()\n    609 \n    610         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```",
     "created_at": "2013-12-04T11:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2079,13 +2082,12 @@ NameError: global name 'RR' is not defined
 
 
 
-
 ---
 
 archive/issue_comments_094367.json:
 ```json
 {
-    "body": "This should be `ArithmeticError` (I guess), since deriving w.r.t. the index simply isn't defined:\n\n```\nsage: var('n,x')\n(n, x)\nsage: chebyshev_T(n,x).diff(n)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-14-a23f5209eb49> in <module>()\n----> 1 chebyshev_T(n,x).diff(n)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.derivative (sage/symbolic/expression.cpp:16561)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/misc/derivative.so in sage.misc.derivative.multi_derivative (sage/misc/derivative.c:2715)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._derivative (sage/symbolic/expression.cpp:16951)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _derivative_(self, *args, **kwds)\n    714         diff_param = kwds['diff_param']\n    715         if diff_param == 0:\n--> 716             raise NotImplementedError(\"derivative w.r.t. to the index is not supported yet\")\n    717 \n    718         return args[0]*chebyshev_U(args[0]-1,args[1])\n\nNotImplementedError: derivative w.r.t. to the index is not supported yet\n```\n\n\nAlso: doctest your exceptions.",
+    "body": "This should be `ArithmeticError` (I guess), since deriving w.r.t. the index simply isn't defined:\n\n```\nsage: var('n,x')\n(n, x)\nsage: chebyshev_T(n,x).diff(n)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-14-a23f5209eb49> in <module>()\n----> 1 chebyshev_T(n,x).diff(n)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.derivative (sage/symbolic/expression.cpp:16561)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/misc/derivative.so in sage.misc.derivative.multi_derivative (sage/misc/derivative.c:2715)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._derivative (sage/symbolic/expression.cpp:16951)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _derivative_(self, *args, **kwds)\n    714         diff_param = kwds['diff_param']\n    715         if diff_param == 0:\n--> 716             raise NotImplementedError(\"derivative w.r.t. to the index is not supported yet\")\n    717 \n    718         return args[0]*chebyshev_U(args[0]-1,args[1])\n\nNotImplementedError: derivative w.r.t. to the index is not supported yet\n```\n\nAlso: doctest your exceptions.",
     "created_at": "2013-12-04T12:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2121,7 +2123,6 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError: derivative w.r.t. to the index is not supported yet
 ```
 
-
 Also: doctest your exceptions.
 
 
@@ -2149,7 +2150,7 @@ I personally like to define `chebyshev_T(-n,x) = chebyshev_T(n,x)` and `chebyshe
 archive/issue_comments_094369.json:
 ```json
 {
-    "body": "For real/complex fields, you should use\n\n```\nchebyshev_T(n,x) = ((x+sqrt(x^2-1))^n + (x-sqrt(x^2-1))^n)/2\nchebyshev_U(n-1,x) = ((x+sqrt(x^2-1))^n - (x-sqrt(x^2-1))^n)/(2*sqrt(x^2-1))\n```\n",
+    "body": "For real/complex fields, you should use\n\n```\nchebyshev_T(n,x) = ((x+sqrt(x^2-1))^n + (x-sqrt(x^2-1))^n)/2\nchebyshev_U(n-1,x) = ((x+sqrt(x^2-1))^n - (x-sqrt(x^2-1))^n)/(2*sqrt(x^2-1))\n```",
     "created_at": "2013-12-04T14:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2164,7 +2165,6 @@ For real/complex fields, you should use
 chebyshev_T(n,x) = ((x+sqrt(x^2-1))^n + (x-sqrt(x^2-1))^n)/2
 chebyshev_U(n-1,x) = ((x+sqrt(x^2-1))^n - (x-sqrt(x^2-1))^n)/(2*sqrt(x^2-1))
 ```
-
 
 
 
@@ -2191,7 +2191,7 @@ The doubling recursion formulas should be better also for real/complex fields, I
 archive/issue_comments_094371.json:
 ```json
 {
-    "body": "Replying to [comment:62 fredrik.johansson]:\n> The doubling recursion formulas should be better also for real/complex fields, I think: computing nth powers is basically the same amount of work, and it's best to avoid the square roots (especially for real |x| < 1).\nThe matrix algorithm does seem more numerically stable (checked by using both algorithms inside `RIF`). So it's easy then, if there is one algorithm which is obviously the best.",
+    "body": "Replying to [comment:62 fredrik.johansson]:\n> The doubling recursion formulas should be better also for real/complex fields, I think: computing nth powers is basically the same amount of work, and it's best to avoid the square roots (especially for real |x| < 1).\n\nThe matrix algorithm does seem more numerically stable (checked by using both algorithms inside `RIF`). So it's easy then, if there is one algorithm which is obviously the best.",
     "created_at": "2013-12-04T15:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2202,6 +2202,7 @@ archive/issue_comments_094371.json:
 
 Replying to [comment:62 fredrik.johansson]:
 > The doubling recursion formulas should be better also for real/complex fields, I think: computing nth powers is basically the same amount of work, and it's best to avoid the square roots (especially for real |x| < 1).
+
 The matrix algorithm does seem more numerically stable (checked by using both algorithms inside `RIF`). So it's easy then, if there is one algorithm which is obviously the best.
 
 
@@ -2242,7 +2243,7 @@ Considering rational numbers as input, the recursion formula works best, due to 
 archive/issue_comments_094373.json:
 ```json
 {
-    "body": "Here is an implementation of the divide-and-conquer algorithm that doesn't require caching (it only makes one recursive call). It might look even nicer if one rewrites it in iterative form. I think it's also equivalent to the code in pari. It should be faster than matrix powering by a constant factor, just like the analogous Fibonacci number algorithms.\n\n\n```\ndef chebyshev_t(n, x):\n    # returns (T(n,x), T(n-1,x)), or (T(n,x), _) if both=False\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, x\n        if n == 1:\n            return x, 1\n        a, b = recur((n+1)//2, x, both or n % 2)\n        if n % 2 == 0:\n            return 2*a^2 - 1, both and 2*a*b - x\n        else:\n            return 2*a*b - x, both and 2*b^2 - 1\n    return recur(n, x, False)[0]\n```\n\n\nCome to think of it, it might even be useful to publicly expose a method that returns both T(n,x) and T(n-1,x) simultaneously.\n\nSimilar code for U (using same algorithm as Pari):\n\n\n```\ndef chebyshev_u(n, x):\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, both and 2*x\n        if n == 1:\n            return 2*x, both and 4*x^2-1\n        a, b = recur((n-1)//2, x, True)\n        if n % 2 == 0:\n            return (b+a)*(b-a), both and 2*b*(x*b-a)\n        else:\n            return 2*a*(b-x*a), both and (b+a)*(b-a)\n    return recur(n, x, False)[0]\n```\n\n\nEdit: streamlined the code.",
+    "body": "Here is an implementation of the divide-and-conquer algorithm that doesn't require caching (it only makes one recursive call). It might look even nicer if one rewrites it in iterative form. I think it's also equivalent to the code in pari. It should be faster than matrix powering by a constant factor, just like the analogous Fibonacci number algorithms.\n\n```\ndef chebyshev_t(n, x):\n    # returns (T(n,x), T(n-1,x)), or (T(n,x), _) if both=False\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, x\n        if n == 1:\n            return x, 1\n        a, b = recur((n+1)//2, x, both or n % 2)\n        if n % 2 == 0:\n            return 2*a^2 - 1, both and 2*a*b - x\n        else:\n            return 2*a*b - x, both and 2*b^2 - 1\n    return recur(n, x, False)[0]\n```\n\nCome to think of it, it might even be useful to publicly expose a method that returns both T(n,x) and T(n-1,x) simultaneously.\n\nSimilar code for U (using same algorithm as Pari):\n\n```\ndef chebyshev_u(n, x):\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, both and 2*x\n        if n == 1:\n            return 2*x, both and 4*x^2-1\n        a, b = recur((n-1)//2, x, True)\n        if n % 2 == 0:\n            return (b+a)*(b-a), both and 2*b*(x*b-a)\n        else:\n            return 2*a*(b-x*a), both and (b+a)*(b-a)\n    return recur(n, x, False)[0]\n```\n\nEdit: streamlined the code.",
     "created_at": "2013-12-04T16:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2252,7 +2253,6 @@ archive/issue_comments_094373.json:
 ```
 
 Here is an implementation of the divide-and-conquer algorithm that doesn't require caching (it only makes one recursive call). It might look even nicer if one rewrites it in iterative form. I think it's also equivalent to the code in pari. It should be faster than matrix powering by a constant factor, just like the analogous Fibonacci number algorithms.
-
 
 ```
 def chebyshev_t(n, x):
@@ -2270,11 +2270,9 @@ def chebyshev_t(n, x):
     return recur(n, x, False)[0]
 ```
 
-
 Come to think of it, it might even be useful to publicly expose a method that returns both T(n,x) and T(n-1,x) simultaneously.
 
 Similar code for U (using same algorithm as Pari):
-
 
 ```
 def chebyshev_u(n, x):
@@ -2290,7 +2288,6 @@ def chebyshev_u(n, x):
             return 2*a*(b-x*a), both and (b+a)*(b-a)
     return recur(n, x, False)[0]
 ```
-
 
 Edit: streamlined the code.
 
@@ -2319,7 +2316,7 @@ I think your recursive implementation is very good. If you try to implement it i
 archive/issue_comments_094375.json:
 ```json
 {
-    "body": "this would be a functioning iterative algorithm:\n\n\n\n```\ndef chebyshev_t(n,x):\n    \n    if n == 0:\n        return 1\n    elif n == 1:\n        return x\n    elif n == 2:\n        return 2*x**2-1\n    else:\n        T_c = x\n        T_p = 2*x**2 -1\n        \n        for k in range(floor(log(n,2)),0,-1):\n            T_p_old = T_p\n            T_c_old = T_c\n            if (n//2**(k-1)) % 2 == 0: # next is even\n                T_p = 2*T_p_old*T_c_old - x\n                T_c = 2*T_c_old**2 - 1\n            elif (n//2**(k-1)) % 2  == 1: # next is odd\n                T_p = 2*T_p_old**2 - 1\n                T_c = 2*T_p_old*T_c_old - x\n        \n        # Cases for output\n        if log(n - 1,2) in ZZ or log(n-2,2) in ZZ:\n            return T_c\n        \n        elif n % 2 == 0:\n            if n//2 % 2 == 0:                   \n                return T_c\n            else:\n                return T_p\n        elif n % 2 == 1:\n            if n//2 % 2 == 0:                   \n                return T_p\n            else:\n                return T_c\n```\n\n\nI made it shorter. What is preferable? recursive or iterative? Normaly iterative, but in this case it is longer due to the indices battles ...\n\nEdit: I also measured time: recursive is faster, even if I do some optimization (e.g. xrange)",
+    "body": "this would be a functioning iterative algorithm:\n\n\n```\ndef chebyshev_t(n,x):\n    \n    if n == 0:\n        return 1\n    elif n == 1:\n        return x\n    elif n == 2:\n        return 2*x**2-1\n    else:\n        T_c = x\n        T_p = 2*x**2 -1\n        \n        for k in range(floor(log(n,2)),0,-1):\n            T_p_old = T_p\n            T_c_old = T_c\n            if (n//2**(k-1)) % 2 == 0: # next is even\n                T_p = 2*T_p_old*T_c_old - x\n                T_c = 2*T_c_old**2 - 1\n            elif (n//2**(k-1)) % 2  == 1: # next is odd\n                T_p = 2*T_p_old**2 - 1\n                T_c = 2*T_p_old*T_c_old - x\n        \n        # Cases for output\n        if log(n - 1,2) in ZZ or log(n-2,2) in ZZ:\n            return T_c\n        \n        elif n % 2 == 0:\n            if n//2 % 2 == 0:                   \n                return T_c\n            else:\n                return T_p\n        elif n % 2 == 1:\n            if n//2 % 2 == 0:                   \n                return T_p\n            else:\n                return T_c\n```\n\nI made it shorter. What is preferable? recursive or iterative? Normaly iterative, but in this case it is longer due to the indices battles ...\n\nEdit: I also measured time: recursive is faster, even if I do some optimization (e.g. xrange)",
     "created_at": "2013-12-04T20:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2329,7 +2326,6 @@ archive/issue_comments_094375.json:
 ```
 
 this would be a functioning iterative algorithm:
-
 
 
 ```
@@ -2371,7 +2367,6 @@ def chebyshev_t(n,x):
                 return T_c
 ```
 
-
 I made it shorter. What is preferable? recursive or iterative? Normaly iterative, but in this case it is longer due to the indices battles ...
 
 Edit: I also measured time: recursive is faster, even if I do some optimization (e.g. xrange)
@@ -2383,7 +2378,7 @@ Edit: I also measured time: recursive is faster, even if I do some optimization 
 archive/issue_comments_094376.json:
 ```json
 {
-    "body": "Replying to [comment:42 jdemeyer]:\n> Sorry to spoil the party, but this is a regression:\n> {{{\n> sage: K.<a> = NumberField(x^3-x-1)\n> sage: chebyshev_T(10^3,a)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n> <ipython-input-17-aa97c56dd147> in <module>()\n> ----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n> \n> TypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n> }}}\n> \n> (and yes: Chebyshev polynomials are important in number theory)\n\nI had now a look on these regressions: The problem originates from the fact, tat the ortho polys are now symbolic functions instead of simple function call in maxima.\nthe symbolic functions have a lot more mechanisms concerning type coercions.\n\nThe only way around this would be a hack to chatch this coercion troubles, e.g.\n\n\n\n```\ndef __call__(self,n,x):\n\n    try:\n        super(Func_chebyshev_T,self).__call__(n,x)\n    except TypeError:\n        return self._clenshaw_method_(n,x)\n```\n\n\nwould work for that problem and some others. But how to catch such things correctly?\nUse a try catch, or make several is_instance checks? This could get a quite long list on coercions...",
+    "body": "Replying to [comment:42 jdemeyer]:\n> Sorry to spoil the party, but this is a regression:\n> \n> ```\n> sage: K.<a> = NumberField(x^3-x-1)\n> sage: chebyshev_T(10^3,a)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n> <ipython-input-17-aa97c56dd147> in <module>()\n> ----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n> \n> TypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n> ```\n> \n> (and yes: Chebyshev polynomials are important in number theory)\n\n\nI had now a look on these regressions: The problem originates from the fact, tat the ortho polys are now symbolic functions instead of simple function call in maxima.\nthe symbolic functions have a lot more mechanisms concerning type coercions.\n\nThe only way around this would be a hack to chatch this coercion troubles, e.g.\n\n\n```\ndef __call__(self,n,x):\n\n    try:\n        super(Func_chebyshev_T,self).__call__(n,x)\n    except TypeError:\n        return self._clenshaw_method_(n,x)\n```\n\nwould work for that problem and some others. But how to catch such things correctly?\nUse a try catch, or make several is_instance checks? This could get a quite long list on coercions...",
     "created_at": "2013-12-04T22:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2394,7 +2389,8 @@ archive/issue_comments_094376.json:
 
 Replying to [comment:42 jdemeyer]:
 > Sorry to spoil the party, but this is a regression:
-> {{{
+> 
+> ```
 > sage: K.<a> = NumberField(x^3-x-1)
 > sage: chebyshev_T(10^3,a)
 > ---------------------------------------------------------------------------
@@ -2407,15 +2403,15 @@ Replying to [comment:42 jdemeyer]:
 > /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()
 > 
 > TypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring
-> }}}
+> ```
 > 
 > (and yes: Chebyshev polynomials are important in number theory)
+
 
 I had now a look on these regressions: The problem originates from the fact, tat the ortho polys are now symbolic functions instead of simple function call in maxima.
 the symbolic functions have a lot more mechanisms concerning type coercions.
 
 The only way around this would be a hack to chatch this coercion troubles, e.g.
-
 
 
 ```
@@ -2426,7 +2422,6 @@ def __call__(self,n,x):
     except TypeError:
         return self._clenshaw_method_(n,x)
 ```
-
 
 would work for that problem and some others. But how to catch such things correctly?
 Use a try catch, or make several is_instance checks? This could get a quite long list on coercions...
@@ -2456,7 +2451,7 @@ new fixes and patches
 archive/issue_comments_094378.json:
 ```json
 {
-    "body": "Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_clenshaw.patch) by @jdemeyer created at 2013-12-04 23:51:34\n\nReplying to [comment:68 maldun]:\n> would work for that problem and some others. But how to catch such things correctly?\n\nI think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.",
+    "body": "Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_clenshaw.patch) by @jdemeyer created at 2013-12-04 23:51:34\n\nReplying to [comment:68 maldun]:\n> would work for that problem and some others. But how to catch such things correctly?\n\n\nI think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.",
     "created_at": "2013-12-04T23:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2469,6 +2464,7 @@ Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:68 maldun]:
 > would work for that problem and some others. But how to catch such things correctly?
+
 
 I think there are only two cases: the "symbolic" case and the "algebraic" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.
 
@@ -2497,7 +2493,7 @@ maldun: I don't like all the log's in your approach (I don't think you need them
 archive/issue_comments_094380.json:
 ```json
 {
-    "body": "Replying to [comment:69 jdemeyer]:\n> Replying to [comment:68 maldun]:\n> > would work for that problem and some others. But how to catch such things correctly?\n> \n> I think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.\n\nThank you for the input, that's a great idea!\n\nBased on that I propose the following switch:\n\n\n\n```\ndef __call__(self,n,x):\n    if n in ZZ: # check if n is integer -> consider polynomial as algebraic structure\n        self._eval_(n,x) # Let eval methode decide which is best\n    else:\n        super(OrthogonalPolynomial,self).__call__(n,x)\n```\n",
+    "body": "Replying to [comment:69 jdemeyer]:\n> Replying to [comment:68 maldun]:\n> > would work for that problem and some others. But how to catch such things correctly?\n\n> \n> I think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.\n\n\nThank you for the input, that's a great idea!\n\nBased on that I propose the following switch:\n\n\n```\ndef __call__(self,n,x):\n    if n in ZZ: # check if n is integer -> consider polynomial as algebraic structure\n        self._eval_(n,x) # Let eval methode decide which is best\n    else:\n        super(OrthogonalPolynomial,self).__call__(n,x)\n```",
     "created_at": "2013-12-05T08:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2509,13 +2505,14 @@ archive/issue_comments_094380.json:
 Replying to [comment:69 jdemeyer]:
 > Replying to [comment:68 maldun]:
 > > would work for that problem and some others. But how to catch such things correctly?
+
 > 
 > I think there are only two cases: the "symbolic" case and the "algebraic" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.
+
 
 Thank you for the input, that's a great idea!
 
 Based on that I propose the following switch:
-
 
 
 ```
@@ -2528,13 +2525,12 @@ def __call__(self,n,x):
 
 
 
-
 ---
 
 archive/issue_comments_094381.json:
 ```json
 {
-    "body": "I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n\nSo, I would do something like\n\n```\ndef __call__(self,n,x):\n    if is_Expression(n):\n        return super(OrthogonalPolynomial, self).__call__(n,x)\n    # We consider the polynomial really as a polynomial,\n    # not a symbolic expression.\n    try:\n        n = ZZ(n)\n    except StandardError:\n        raise ValueError(\"Index for symbolic polynomials must be an integer\")\n    return self._eval_polynomial(n, x)\n```\n",
+    "body": "I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n\nSo, I would do something like\n\n```\ndef __call__(self,n,x):\n    if is_Expression(n):\n        return super(OrthogonalPolynomial, self).__call__(n,x)\n    # We consider the polynomial really as a polynomial,\n    # not a symbolic expression.\n    try:\n        n = ZZ(n)\n    except StandardError:\n        raise ValueError(\"Index for symbolic polynomials must be an integer\")\n    return self._eval_polynomial(n, x)\n```",
     "created_at": "2013-12-05T08:43:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2562,13 +2558,12 @@ def __call__(self,n,x):
 
 
 
-
 ---
 
 archive/issue_comments_094382.json:
 ```json
 {
-    "body": "Replying to [comment:70 jdemeyer]:\n> maldun: I don't like all the log's in your approach (I don't think you need them), but otherwise I'm happy with either the recursive or iterative approach.\n\nI removed the logs, it is much faster now, but still slower than the recursive implementation about a constant factor of 2 (which is not much considering that we are talking about \u00b5s, but still)",
+    "body": "Replying to [comment:70 jdemeyer]:\n> maldun: I don't like all the log's in your approach (I don't think you need them), but otherwise I'm happy with either the recursive or iterative approach.\n\n\nI removed the logs, it is much faster now, but still slower than the recursive implementation about a constant factor of 2 (which is not much considering that we are talking about \u00b5s, but still)",
     "created_at": "2013-12-05T08:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2580,6 +2575,7 @@ archive/issue_comments_094382.json:
 Replying to [comment:70 jdemeyer]:
 > maldun: I don't like all the log's in your approach (I don't think you need them), but otherwise I'm happy with either the recursive or iterative approach.
 
+
 I removed the logs, it is much faster now, but still slower than the recursive implementation about a constant factor of 2 (which is not much considering that we are talking about µs, but still)
 
 
@@ -2589,7 +2585,7 @@ I removed the logs, it is much faster now, but still slower than the recursive i
 archive/issue_comments_094383.json:
 ```json
 {
-    "body": "Replying to [comment:72 jdemeyer]:\n> I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n> \n> So, I would do something like\n> {{{\n> def __call__(self,n,x):\n>     if is_Expression(n):\n>         return super(OrthogonalPolynomial, self).__call__(n,x)\n>     # We consider the polynomial really as a polynomial,\n>     # not a symbolic expression.\n>     try:\n>         n = ZZ(n)\n>     except StandardError:\n>         raise ValueError(\"Index for symbolic polynomials must be an integer\")\n>     return self._eval_polynomial(n, x)\n> }}}\n\nNo there are several other cases to consider: You can also have complex and real input values if you consider a chebyshev polynomial as extension of the Hypergeometric function 1F2 like mpmath does: [http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt](http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt)\nThat's the reason for the message in the _derive_ method, since it would be theoretically possible to differentiate a chebyshev polynomial with respect to the index.\n\nSo the way I proposed makes sense, since this could be important for symbolic computation purposes where hypergeometric functions play an important role (eg. Zeilberger algorithm), and of course for analytical considerations.",
+    "body": "Replying to [comment:72 jdemeyer]:\n> I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n> \n> So, I would do something like\n> \n> ```\n> def __call__(self,n,x):\n>     if is_Expression(n):\n>         return super(OrthogonalPolynomial, self).__call__(n,x)\n>     # We consider the polynomial really as a polynomial,\n>     # not a symbolic expression.\n>     try:\n>         n = ZZ(n)\n>     except StandardError:\n>         raise ValueError(\"Index for symbolic polynomials must be an integer\")\n>     return self._eval_polynomial(n, x)\n> ```\n\n\nNo there are several other cases to consider: You can also have complex and real input values if you consider a chebyshev polynomial as extension of the Hypergeometric function 1F2 like mpmath does: [http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt](http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt)\nThat's the reason for the message in the _derive_ method, since it would be theoretically possible to differentiate a chebyshev polynomial with respect to the index.\n\nSo the way I proposed makes sense, since this could be important for symbolic computation purposes where hypergeometric functions play an important role (eg. Zeilberger algorithm), and of course for analytical considerations.",
     "created_at": "2013-12-05T09:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2602,7 +2598,8 @@ Replying to [comment:72 jdemeyer]:
 > I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and "something else" which is always an error.
 > 
 > So, I would do something like
-> {{{
+> 
+> ```
 > def __call__(self,n,x):
 >     if is_Expression(n):
 >         return super(OrthogonalPolynomial, self).__call__(n,x)
@@ -2613,7 +2610,8 @@ Replying to [comment:72 jdemeyer]:
 >     except StandardError:
 >         raise ValueError("Index for symbolic polynomials must be an integer")
 >     return self._eval_polynomial(n, x)
-> }}}
+> ```
+
 
 No there are several other cases to consider: You can also have complex and real input values if you consider a chebyshev polynomial as extension of the Hypergeometric function 1F2 like mpmath does: [http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt](http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt)
 That's the reason for the message in the _derive_ method, since it would be theoretically possible to differentiate a chebyshev polynomial with respect to the index.
@@ -2800,7 +2798,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094393.json:
 ```json
 {
-    "body": "More doctests are needed, this still doesn't work:\n\n```\nsage: chebyshev_T(1/2, 0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-2-c142cc68c50b> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2), Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in __call__(self, n, x)\n    554             return self._eval_(n,x) # Let eval methode decide which is best\n    555         else: # Consider OrthogonalPolynomial as symbol\n--> 556             return super(OrthogonalPolynomial,self).__call__(n,x)\n    557 \n    558 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    493                 if not is_Expression(args[-1]):\n    494                     try:\n--> 495                         return self._evalf_(*args)\n    496                     except AttributeError:\n    497                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    641             precision = step_parent.prec()\n    642         except AttributeError:\n--> 643             precision = RR.prec()\n    644 \n    645         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```\n",
+    "body": "More doctests are needed, this still doesn't work:\n\n```\nsage: chebyshev_T(1/2, 0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-2-c142cc68c50b> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2), Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in __call__(self, n, x)\n    554             return self._eval_(n,x) # Let eval methode decide which is best\n    555         else: # Consider OrthogonalPolynomial as symbol\n--> 556             return super(OrthogonalPolynomial,self).__call__(n,x)\n    557 \n    558 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    493                 if not is_Expression(args[-1]):\n    494                     try:\n--> 495                         return self._evalf_(*args)\n    496                     except AttributeError:\n    497                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    641             precision = step_parent.prec()\n    642         except AttributeError:\n--> 643             precision = RR.prec()\n    644 \n    645         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```",
     "created_at": "2013-12-05T19:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2848,13 +2846,12 @@ NameError: global name 'RR' is not defined
 
 
 
-
 ---
 
 archive/issue_comments_094394.json:
 ```json
 {
-    "body": "Why do we have `__call__` and `_eval_` given they do essentially the same thing? Please keep in mind [comment:69] also in the `_eval_()` function (I really don't understand why it needs to be so complicated).\n\nThis is also still broken:\n\n```\nsage: parent(chebyshev_T(4, RIF(5)))\nReal Field with 53 bits of precision\n```\n\n\nPlease fix all issues that I mentioned **and turn them into doctests**.",
+    "body": "Why do we have `__call__` and `_eval_` given they do essentially the same thing? Please keep in mind [comment:69] also in the `_eval_()` function (I really don't understand why it needs to be so complicated).\n\nThis is also still broken:\n\n```\nsage: parent(chebyshev_T(4, RIF(5)))\nReal Field with 53 bits of precision\n```\n\nPlease fix all issues that I mentioned **and turn them into doctests**.",
     "created_at": "2013-12-05T20:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2871,7 +2868,6 @@ This is also still broken:
 sage: parent(chebyshev_T(4, RIF(5)))
 Real Field with 53 bits of precision
 ```
-
 
 Please fix all issues that I mentioned **and turn them into doctests**.
 
@@ -2968,7 +2964,7 @@ there are still some minor changes (formatting and new doctests) todo. Please le
 archive/issue_comments_094399.json:
 ```json
 {
-    "body": "Replying to [comment:86 maldun]:\n> `@`clenshaw_method: there is a difference. clenshaw method also applies a direct formula for small n and calls the recursive method else. The difference is that the recursive evaluation does not give an expanded representation of the polynomial, which is wanted for small n\nOK, fine. But for simplicity, you could simply call `_cheb_recur_(...).expand()` instead which would achieve the same thing without an additional method.\n\n> _eval cares about evaluating the polynomial (e.g return a number if x is a number etc.)\n> Look into the symbolic.function module for more details\n> And eval is so complicated because there are several cases to consider: correct evaluation of symbolic expressions, numerical expressions and numpy arrays etc.\nIf you really think the complexity is justified (I have a hard time believing that), you should add comments in the code to describe the various cases, because I'm having a hard time understanding the logic. A comment like `# A faster check would be nice...` doesn't mean much to me because I don't understand what you're trying to do.",
+    "body": "Replying to [comment:86 maldun]:\n> `@`clenshaw_method: there is a difference. clenshaw method also applies a direct formula for small n and calls the recursive method else. The difference is that the recursive evaluation does not give an expanded representation of the polynomial, which is wanted for small n\n\nOK, fine. But for simplicity, you could simply call `_cheb_recur_(...).expand()` instead which would achieve the same thing without an additional method.\n\n> _eval cares about evaluating the polynomial (e.g return a number if x is a number etc.)\n> Look into the symbolic.function module for more details\n> And eval is so complicated because there are several cases to consider: correct evaluation of symbolic expressions, numerical expressions and numpy arrays etc.\n\nIf you really think the complexity is justified (I have a hard time believing that), you should add comments in the code to describe the various cases, because I'm having a hard time understanding the logic. A comment like `# A faster check would be nice...` doesn't mean much to me because I don't understand what you're trying to do.",
     "created_at": "2013-12-06T10:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -2979,11 +2975,13 @@ archive/issue_comments_094399.json:
 
 Replying to [comment:86 maldun]:
 > `@`clenshaw_method: there is a difference. clenshaw method also applies a direct formula for small n and calls the recursive method else. The difference is that the recursive evaluation does not give an expanded representation of the polynomial, which is wanted for small n
+
 OK, fine. But for simplicity, you could simply call `_cheb_recur_(...).expand()` instead which would achieve the same thing without an additional method.
 
 > _eval cares about evaluating the polynomial (e.g return a number if x is a number etc.)
 > Look into the symbolic.function module for more details
 > And eval is so complicated because there are several cases to consider: correct evaluation of symbolic expressions, numerical expressions and numpy arrays etc.
+
 If you really think the complexity is justified (I have a hard time believing that), you should add comments in the code to describe the various cases, because I'm having a hard time understanding the logic. A comment like `# A faster check would be nice...` doesn't mean much to me because I don't understand what you're trying to do.
 
 
@@ -2993,7 +2991,7 @@ If you really think the complexity is justified (I have a hard time believing th
 archive/issue_comments_094400.json:
 ```json
 {
-    "body": "I think `mpmath` should only be used for the \"pure\" `RealField()` and `ComplexField()` and `RDF` and `CDF`, nothing else.\n\nThis is bad:\n\n```\nsage: chebyshev_T(5,Qp(3)(2))\n...\nTypeError: unable to coerce to a ComplexNumber: <type 'sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement'>\n```\n\n\nand the way you use `RIF` is also kind of stupid since the computation should really be done using the recursive formula.",
+    "body": "I think `mpmath` should only be used for the \"pure\" `RealField()` and `ComplexField()` and `RDF` and `CDF`, nothing else.\n\nThis is bad:\n\n```\nsage: chebyshev_T(5,Qp(3)(2))\n...\nTypeError: unable to coerce to a ComplexNumber: <type 'sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement'>\n```\n\nand the way you use `RIF` is also kind of stupid since the computation should really be done using the recursive formula.",
     "created_at": "2013-12-06T10:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3012,7 +3010,6 @@ sage: chebyshev_T(5,Qp(3)(2))
 TypeError: unable to coerce to a ComplexNumber: <type 'sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement'>
 ```
 
-
 and the way you use `RIF` is also kind of stupid since the computation should really be done using the recursive formula.
 
 
@@ -3022,7 +3019,7 @@ and the way you use `RIF` is also kind of stupid since the computation should re
 archive/issue_comments_094401.json:
 ```json
 {
-    "body": "Also, you should never simply `print` stuff. Either delete those prints or use a [Python warning](http://docs.python.org/2/library/warnings.html#available-functions).\n\n```\nsage: chebyshev_T(10^6,RealField(256)(2))\nWarning: mpmath returns NoConvergence!\nSwitching to clenshaw_method, but it may not be stable!\n1.764019427245793968639371137094247875315949668035854027376792158135922267593e571947\n```\n\n\nThe message is also misleading, since for some inputs it retries `mpmath` anyway:\n\n```\nsage: chebyshev_T(100001/2, 2)\n---------------------------------------------------------------------------\nNoConvergence                             Traceback (most recent call last)\n<ipython-input-34-9c95a5ff4276> in <module>()\n----> 1 chebyshev_T(Integer(100001)/Integer(2), Integer(2))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/ort\n    557             return self._eval_(n,x) # Let eval methode decide which is best\n    558         else: # Consider OrthogonalPolynomial as symbol\n--> 559             return super(OrthogonalPolynomial,self).__call__(n,x)\n    560 \n    561 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFp:8126)()                                                                                                                    \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function()                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orth\n    496                 if not is_Expression(args[-1]):\n    497                     try:\n--> 498                         return self._evalf_(*args)\n    499                     except AttributeError:\n    500                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, \n    651         from sage.libs.mpmath.all import chebyt as mpchebyt\n    652 \n--> 653         return mpcall(mpchebyt,args[0],args[-1],prec = precision)\n    654 \n    655     def _maxima_init_evaled_(self, *args):\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.wrapped_specfun.__call__ (sage/lit_main.c:17447)()                                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/orthogonal.pyc in chebyt(ctx, n, x, **kwarg\n    444     if (not x) and ctx.isint(n) and int(ctx._re(n)) % 2 == 1:\n    445         return x * 0\n--> 446     return ctx.hyp2f1(-n,n,(1,2),(1-x)/2, **kwargs)\n    447 \n    448 @defun_wrapped\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyp2f1(ctx, a, b, c, z, **kwargs)\n    248 @defun\n    249 def hyp2f1(ctx,a,b,c,z,**kwargs):\n--> 250     return ctx.hyper([a,b],[c],z,**kwargs)\n    251 \n    252 @defun\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyper(ctx, a_s, b_s, z, **kwargs)\n    223         elif q == 0: return ctx._hyp1f0(a_s[0][0], z)\n    224     elif p == 2:\n--> 225         if   q == 1: return ctx._hyp2f1(a_s, b_s, z, **kwargs)\n    226         elif q == 2: return ctx._hyp2f2(a_s, b_s, z, **kwargs)\n    227         elif q == 3: return ctx._hyp2f3(a_s, b_s, z, **kwargs)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in _hyp2f1(ctx, a_s, b_s, z, **kwargs)\n    442     if absz <= 0.8 or (ctx.isint(a) and a <= 0 and a >= -1000) or \\\n    443                       (ctx.isint(b) and b <= 0 and b >= -1000):\n--> 444         return ctx.hypsum(2, 1, (atype, btype, ctype), [a, b, c], z, **kwargs)\n    445 \n    446     orig = ctx.prec\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/ctx_mp.pyc in hypsum(ctx, p, q, flags, coeffs, z, accurate_small, **kwargs)\n    640                 mag_dict = {}\n    641             zv, have_complex, magnitude = summator(coeffs, v, prec, wp, \\\n--> 642                 epsshift, mag_dict, **kwargs)\n    643             cancel = -magnitude\n    644             jumps_resolved = True\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/libmp/libhyper.pyc in _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs)\n    319         def _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs):\n    320             return hypsum_internal(p, q, param_types, ztype, coeffs, z,\n--> 321                 prec, wp, epsshift, magnitude_check, kwargs)\n    322 \n    323         return \"(none)\", _hypsum\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.hypsum_internal (sage/libs/mpmath/ext_main.c:24850)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_impl.so in sage.libs.mpmath.ext_impl.MPF_hypsum (sage/libs/mpmath/ext_impl.c:20614)()\n\nNoConvergence: Hypergeometric series converges too slowly. Try increasing maxterms.\n```\n",
+    "body": "Also, you should never simply `print` stuff. Either delete those prints or use a [Python warning](http://docs.python.org/2/library/warnings.html#available-functions).\n\n```\nsage: chebyshev_T(10^6,RealField(256)(2))\nWarning: mpmath returns NoConvergence!\nSwitching to clenshaw_method, but it may not be stable!\n1.764019427245793968639371137094247875315949668035854027376792158135922267593e571947\n```\n\nThe message is also misleading, since for some inputs it retries `mpmath` anyway:\n\n```\nsage: chebyshev_T(100001/2, 2)\n---------------------------------------------------------------------------\nNoConvergence                             Traceback (most recent call last)\n<ipython-input-34-9c95a5ff4276> in <module>()\n----> 1 chebyshev_T(Integer(100001)/Integer(2), Integer(2))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/ort\n    557             return self._eval_(n,x) # Let eval methode decide which is best\n    558         else: # Consider OrthogonalPolynomial as symbol\n--> 559             return super(OrthogonalPolynomial,self).__call__(n,x)\n    560 \n    561 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFp:8126)()                                                                                                                    \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function()                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orth\n    496                 if not is_Expression(args[-1]):\n    497                     try:\n--> 498                         return self._evalf_(*args)\n    499                     except AttributeError:\n    500                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, \n    651         from sage.libs.mpmath.all import chebyt as mpchebyt\n    652 \n--> 653         return mpcall(mpchebyt,args[0],args[-1],prec = precision)\n    654 \n    655     def _maxima_init_evaled_(self, *args):\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.wrapped_specfun.__call__ (sage/lit_main.c:17447)()                                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/orthogonal.pyc in chebyt(ctx, n, x, **kwarg\n    444     if (not x) and ctx.isint(n) and int(ctx._re(n)) % 2 == 1:\n    445         return x * 0\n--> 446     return ctx.hyp2f1(-n,n,(1,2),(1-x)/2, **kwargs)\n    447 \n    448 @defun_wrapped\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyp2f1(ctx, a, b, c, z, **kwargs)\n    248 @defun\n    249 def hyp2f1(ctx,a,b,c,z,**kwargs):\n--> 250     return ctx.hyper([a,b],[c],z,**kwargs)\n    251 \n    252 @defun\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyper(ctx, a_s, b_s, z, **kwargs)\n    223         elif q == 0: return ctx._hyp1f0(a_s[0][0], z)\n    224     elif p == 2:\n--> 225         if   q == 1: return ctx._hyp2f1(a_s, b_s, z, **kwargs)\n    226         elif q == 2: return ctx._hyp2f2(a_s, b_s, z, **kwargs)\n    227         elif q == 3: return ctx._hyp2f3(a_s, b_s, z, **kwargs)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in _hyp2f1(ctx, a_s, b_s, z, **kwargs)\n    442     if absz <= 0.8 or (ctx.isint(a) and a <= 0 and a >= -1000) or \\\n    443                       (ctx.isint(b) and b <= 0 and b >= -1000):\n--> 444         return ctx.hypsum(2, 1, (atype, btype, ctype), [a, b, c], z, **kwargs)\n    445 \n    446     orig = ctx.prec\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/ctx_mp.pyc in hypsum(ctx, p, q, flags, coeffs, z, accurate_small, **kwargs)\n    640                 mag_dict = {}\n    641             zv, have_complex, magnitude = summator(coeffs, v, prec, wp, \\\n--> 642                 epsshift, mag_dict, **kwargs)\n    643             cancel = -magnitude\n    644             jumps_resolved = True\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/libmp/libhyper.pyc in _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs)\n    319         def _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs):\n    320             return hypsum_internal(p, q, param_types, ztype, coeffs, z,\n--> 321                 prec, wp, epsshift, magnitude_check, kwargs)\n    322 \n    323         return \"(none)\", _hypsum\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.hypsum_internal (sage/libs/mpmath/ext_main.c:24850)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_impl.so in sage.libs.mpmath.ext_impl.MPF_hypsum (sage/libs/mpmath/ext_impl.c:20614)()\n\nNoConvergence: Hypergeometric series converges too slowly. Try increasing maxterms.\n```",
     "created_at": "2013-12-06T10:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3039,7 +3036,6 @@ Warning: mpmath returns NoConvergence!
 Switching to clenshaw_method, but it may not be stable!
 1.764019427245793968639371137094247875315949668035854027376792158135922267593e571947
 ```
-
 
 The message is also misleading, since for some inputs it retries `mpmath` anyway:
 
@@ -3130,7 +3126,6 @@ NoConvergence: Hypergeometric series converges too slowly. Try increasing maxter
 
 
 
-
 ---
 
 archive/issue_comments_094402.json:
@@ -3154,7 +3149,7 @@ Don't forget to fix the `REFERENCES`.
 archive/issue_comments_094403.json:
 ```json
 {
-    "body": "\n```\nsage: chebyshev_U(-1, Mod(2,5))\n...\nRuntimeError: maximum recursion depth exceeded\n```\n",
+    "body": "```\nsage: chebyshev_U(-1, Mod(2,5))\n...\nRuntimeError: maximum recursion depth exceeded\n```",
     "created_at": "2013-12-06T13:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3162,7 +3157,6 @@ archive/issue_comments_094403.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-
 
 ```
 sage: chebyshev_U(-1, Mod(2,5))
@@ -3172,13 +3166,12 @@ RuntimeError: maximum recursion depth exceeded
 
 
 
-
 ---
 
 archive/issue_comments_094404.json:
 ```json
 {
-    "body": "This is totally meaningless (this should be a `ValueError`):\n\n```\nsage: chebyshev_U(1.5, Mod(8,9))\n63.8753125671848\n```\n",
+    "body": "This is totally meaningless (this should be a `ValueError`):\n\n```\nsage: chebyshev_U(1.5, Mod(8,9))\n63.8753125671848\n```",
     "created_at": "2013-12-06T13:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3193,7 +3186,6 @@ This is totally meaningless (this should be a `ValueError`):
 sage: chebyshev_U(1.5, Mod(8,9))
 63.8753125671848
 ```
-
 
 
 
@@ -3226,7 +3218,7 @@ Perhaps the `_eval_` logic should be
 archive/issue_comments_094406.json:
 ```json
 {
-    "body": "One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n\n```\nsage: var('n,x')\n(n, x)\nsage: maxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```\n",
+    "body": "One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n\n```\nsage: var('n,x')\n(n, x)\nsage: maxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```",
     "created_at": "2013-12-06T13:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3247,13 +3239,12 @@ TypeError: unable to convert x (=n) to an integer
 
 
 
-
 ---
 
 archive/issue_comments_094407.json:
 ```json
 {
-    "body": "Replying to [comment:93 jdemeyer]:\n> This is totally meaningless (this should be a `ValueError`):\n> {{{\n> sage: chebyshev_U(1.5, Mod(8,9))\n> 63.8753125671848\n> }}}\n\nIndeed, but it's not my fault. It appears, that the BuiltinFunction calls the _eval_numpy_ method. E.g.\n\n\n```\nsage: csc(Mod(8,9))\n1.01075621840010\n```\n\nmakes no sense either but works. Maybe we should open a ticket on this?\n\nI have worked out now a new patch, where _eval_ returns None, like expected, but still returns this numerical value. But it should be patched in the Symbolic function classes and not here.",
+    "body": "Replying to [comment:93 jdemeyer]:\n> This is totally meaningless (this should be a `ValueError`):\n> \n> ```\n> sage: chebyshev_U(1.5, Mod(8,9))\n> 63.8753125671848\n> ```\n\n\nIndeed, but it's not my fault. It appears, that the BuiltinFunction calls the _eval_numpy_ method. E.g.\n\n```\nsage: csc(Mod(8,9))\n1.01075621840010\n```\nmakes no sense either but works. Maybe we should open a ticket on this?\n\nI have worked out now a new patch, where _eval_ returns None, like expected, but still returns this numerical value. But it should be patched in the Symbolic function classes and not here.",
     "created_at": "2013-12-08T15:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3264,19 +3255,19 @@ archive/issue_comments_094407.json:
 
 Replying to [comment:93 jdemeyer]:
 > This is totally meaningless (this should be a `ValueError`):
-> {{{
+> 
+> ```
 > sage: chebyshev_U(1.5, Mod(8,9))
 > 63.8753125671848
-> }}}
+> ```
+
 
 Indeed, but it's not my fault. It appears, that the BuiltinFunction calls the _eval_numpy_ method. E.g.
-
 
 ```
 sage: csc(Mod(8,9))
 1.01075621840010
 ```
-
 makes no sense either but works. Maybe we should open a ticket on this?
 
 I have worked out now a new patch, where _eval_ returns None, like expected, but still returns this numerical value. But it should be patched in the Symbolic function classes and not here.
@@ -3288,7 +3279,7 @@ I have worked out now a new patch, where _eval_ returns None, like expected, but
 archive/issue_comments_094408.json:
 ```json
 {
-    "body": "Replying to [comment:95 jdemeyer]:\n> One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n> {{{\n> sage: var('n,x')\n> (n, x)\n> sage: maxima( chebyshev_T(n, cos(x)) )\n> ...\n> TypeError: unable to convert x (=n) to an integer\n> }}}\n\nOne of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\nMaxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.",
+    "body": "Replying to [comment:95 jdemeyer]:\n> One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n> \n> ```\n> sage: var('n,x')\n> (n, x)\n> sage: maxima( chebyshev_T(n, cos(x)) )\n> ...\n> TypeError: unable to convert x (=n) to an integer\n> ```\n\n\nOne of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\nMaxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.",
     "created_at": "2013-12-08T15:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3299,13 +3290,15 @@ archive/issue_comments_094408.json:
 
 Replying to [comment:95 jdemeyer]:
 > One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):
-> {{{
+> 
+> ```
 > sage: var('n,x')
 > (n, x)
 > sage: maxima( chebyshev_T(n, cos(x)) )
 > ...
 > TypeError: unable to convert x (=n) to an integer
-> }}}
+> ```
+
 
 One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non
 Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.
@@ -3317,7 +3310,7 @@ Maxima conform representation, since Sage symbolic capabilities don't relie on M
 archive/issue_comments_094409.json:
 ```json
 {
-    "body": "Replying to [comment:97 maldun]:\n> One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\nThis looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n\n```\nsage: maxima('chebysheb_t(n,x)')\n```\n\nThe fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.",
+    "body": "Replying to [comment:97 maldun]:\n> One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\n\nThis looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n\n```\nsage: maxima('chebysheb_t(n,x)')\n```\nThe fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.",
     "created_at": "2013-12-08T17:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3329,12 +3322,12 @@ archive/issue_comments_094409.json:
 Replying to [comment:97 maldun]:
 > One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non
 > Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.
+
 This looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:
 
 ```
 sage: maxima('chebysheb_t(n,x)')
 ```
-
 The fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.
 
 
@@ -3344,7 +3337,7 @@ The fact that the conversion to Maxima doesn't work is a fault of your patch, do
 archive/issue_comments_094410.json:
 ```json
 {
-    "body": "Replying to [comment:96 maldun]:\n> {{{\n> sage: csc(Mod(8,9))\n> 1.01075621840010\n> }}}\n> makes no sense either but works. Maybe we should open a ticket on this?\nI agree, this is a problem.",
+    "body": "Replying to [comment:96 maldun]:\n> {{{\n> sage: csc(Mod(8,9))\n> 1.01075621840010\n> }}}\n> makes no sense either but works. Maybe we should open a ticket on this?\n\nI agree, this is a problem.",
     "created_at": "2013-12-08T17:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3359,6 +3352,7 @@ Replying to [comment:96 maldun]:
 > 1.01075621840010
 > }}}
 > makes no sense either but works. Maybe we should open a ticket on this?
+
 I agree, this is a problem.
 
 
@@ -3368,7 +3362,7 @@ I agree, this is a problem.
 archive/issue_comments_094411.json:
 ```json
 {
-    "body": "Replying to [comment:98 jdemeyer]:\n> Replying to [comment:97 maldun]:\n> > One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> > Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\n> This looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n> {{{\n> sage: maxima('chebysheb_t(n,x)')\n> }}}\n> The fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.\n\nI'm not blaming maxima, but this never worked on the main branch in the first place:\n\n\n\n```\nmaxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```\n\n\nso I did not break anything ...\n\nYou can argue that this is an open improvement, but it's definitely no regression.\nNevertheless it will be corrected in the next patch.",
+    "body": "Replying to [comment:98 jdemeyer]:\n> Replying to [comment:97 maldun]:\n> > One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> > Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\n\n> This looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n> {{{\n> sage: maxima('chebysheb_t(n,x)')\n> }}}\n> The fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.\n\n\nI'm not blaming maxima, but this never worked on the main branch in the first place:\n\n\n```\nmaxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```\n\nso I did not break anything ...\n\nYou can argue that this is an open improvement, but it's definitely no regression.\nNevertheless it will be corrected in the next patch.",
     "created_at": "2013-12-08T18:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3381,14 +3375,15 @@ Replying to [comment:98 jdemeyer]:
 > Replying to [comment:97 maldun]:
 > > One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non
 > > Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.
+
 > This looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:
 > {{{
 > sage: maxima('chebysheb_t(n,x)')
 > }}}
 > The fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.
 
-I'm not blaming maxima, but this never worked on the main branch in the first place:
 
+I'm not blaming maxima, but this never worked on the main branch in the first place:
 
 
 ```
@@ -3396,7 +3391,6 @@ maxima( chebyshev_T(n, cos(x)) )
 ...
 TypeError: unable to convert x (=n) to an integer
 ```
-
 
 so I did not break anything ...
 
@@ -3695,7 +3689,7 @@ Review patch, mainly simplifies the code: less special cases and use actual argu
 archive/issue_comments_094427.json:
 ```json
 {
-    "body": "Replying to [comment:109 jdemeyer]:\n> Review patch, mainly simplifies the code: less special cases and use actual arguments instead of `args` and `kwds`. Also add some more doctests.\n\nIs it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n\nSince not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\nIt makes perfect sense for the chebyshev polys though\n\nI know that the base class looks strange from the point of the Chebyshev polys,\nbut there is some reasoning behind this =)",
+    "body": "Replying to [comment:109 jdemeyer]:\n> Review patch, mainly simplifies the code: less special cases and use actual arguments instead of `args` and `kwds`. Also add some more doctests.\n\n\nIs it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n\nSince not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\nIt makes perfect sense for the chebyshev polys though\n\nI know that the base class looks strange from the point of the Chebyshev polys,\nbut there is some reasoning behind this =)",
     "created_at": "2013-12-09T17:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3706,6 +3700,7 @@ archive/issue_comments_094427.json:
 
 Replying to [comment:109 jdemeyer]:
 > Review patch, mainly simplifies the code: less special cases and use actual arguments instead of `args` and `kwds`. Also add some more doctests.
+
 
 Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?
 
@@ -3722,7 +3717,7 @@ but there is some reasoning behind this =)
 archive/issue_comments_094428.json:
 ```json
 {
-    "body": "Attachment [9706_review.patch](tarball://root/attachments/some-uuid/ticket9706/9706_review.patch) by @jdemeyer created at 2013-12-09 18:43:51\n\nReplying to [comment:110 maldun]:\n> Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> \n> Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> It makes perfect sense for the chebyshev polys though\nOk, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.",
+    "body": "Attachment [9706_review.patch](tarball://root/attachments/some-uuid/ticket9706/9706_review.patch) by @jdemeyer created at 2013-12-09 18:43:51\n\nReplying to [comment:110 maldun]:\n> Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> \n> Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> It makes perfect sense for the chebyshev polys though\n\nOk, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.",
     "created_at": "2013-12-09T18:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3738,6 +3733,7 @@ Replying to [comment:110 maldun]:
 > 
 > Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha
 > It makes perfect sense for the chebyshev polys though
+
 Ok, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.
 
 
@@ -3747,7 +3743,7 @@ Ok, it's always difficult to design an interface for something you don't have an
 archive/issue_comments_094429.json:
 ```json
 {
-    "body": "Replying to [comment:111 jdemeyer]:\n> Replying to [comment:110 maldun]:\n> > Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> > \n> > Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> > It makes perfect sense for the chebyshev polys though\n> Ok, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.\n\nMaybe you should have a short look ino this patch: [http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch](http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch)\nit contains already prototypes of the most ortho polys.\n\nI have some remarks concerning your patch:\n\n\n\n```\nsage: chebyshev_T(n,Mod(0,8))\n1/2*(-1)^(1/2*n)*((-1)^n + 1)\n```\n\nbut this makes no sense since 1/2 is not defined in Mod(8). This was the reason for the 0 in CC check at this point.\n\nYou evaluate numerical expressions for n in NN with recursion. this is favorable for chebyshev polynomials, but not for all ortho polys you can evaluate numeric values in O(log n). You have already problems with the legendre polynomials, since the coefficients depend on n, and the recursion is not stable. Thus other evaluation methods should be used. Thats the reason why _evalf_ with mpmath should come first.\nIn case of chebyshev I catched this with an explicit call of the recursion in _evalf_.\n\nThe _old_maxima_ method is used for some oddballs, where the only useful implementation is in maxima, and for some special cases. So removing is probably not a good idea.\n\nThe reason why negative values are checked in special values, is that in later versions, or for other polys non integral negative values can be treated analogously, as in the case of their algebraic counterpart. E.g negative legendre polynomials would return associated legendre functions, but have no algebraic sense.\n\nAnother reason to allow the special values check for non symbolic input, is that e.g. (-1)^100000000 is evaluated faster, than applying the recursion, or other special points.\nI use this feature sometimes to evaluate certain polynomials at the end points of an intervall e.g. [-1,1]\n\n**Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class? then we could also add more reasonable doctests, to understand the evaluation methods better. \n\nI have to admit, that about 3 years have passed since I wrote the initial version, and I'm not remembering why I took some design desicisions back then, but slowly my memories are coming back.",
+    "body": "Replying to [comment:111 jdemeyer]:\n> Replying to [comment:110 maldun]:\n> > Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> > \n> > Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> > It makes perfect sense for the chebyshev polys though\n\n> Ok, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.\n\nMaybe you should have a short look ino this patch: [http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch](http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch)\nit contains already prototypes of the most ortho polys.\n\nI have some remarks concerning your patch:\n\n\n```\nsage: chebyshev_T(n,Mod(0,8))\n1/2*(-1)^(1/2*n)*((-1)^n + 1)\n```\nbut this makes no sense since 1/2 is not defined in Mod(8). This was the reason for the 0 in CC check at this point.\n\nYou evaluate numerical expressions for n in NN with recursion. this is favorable for chebyshev polynomials, but not for all ortho polys you can evaluate numeric values in O(log n). You have already problems with the legendre polynomials, since the coefficients depend on n, and the recursion is not stable. Thus other evaluation methods should be used. Thats the reason why _evalf_ with mpmath should come first.\nIn case of chebyshev I catched this with an explicit call of the recursion in _evalf_.\n\nThe _old_maxima_ method is used for some oddballs, where the only useful implementation is in maxima, and for some special cases. So removing is probably not a good idea.\n\nThe reason why negative values are checked in special values, is that in later versions, or for other polys non integral negative values can be treated analogously, as in the case of their algebraic counterpart. E.g negative legendre polynomials would return associated legendre functions, but have no algebraic sense.\n\nAnother reason to allow the special values check for non symbolic input, is that e.g. (-1)^100000000 is evaluated faster, than applying the recursion, or other special points.\nI use this feature sometimes to evaluate certain polynomials at the end points of an intervall e.g. [-1,1]\n\n**Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class? then we could also add more reasonable doctests, to understand the evaluation methods better. \n\nI have to admit, that about 3 years have passed since I wrote the initial version, and I'm not remembering why I took some design desicisions back then, but slowly my memories are coming back.",
     "created_at": "2013-12-09T20:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3762,6 +3758,7 @@ Replying to [comment:111 jdemeyer]:
 > > 
 > > Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha
 > > It makes perfect sense for the chebyshev polys though
+
 > Ok, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.
 
 Maybe you should have a short look ino this patch: [http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch](http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch)
@@ -3770,12 +3767,10 @@ it contains already prototypes of the most ortho polys.
 I have some remarks concerning your patch:
 
 
-
 ```
 sage: chebyshev_T(n,Mod(0,8))
 1/2*(-1)^(1/2*n)*((-1)^n + 1)
 ```
-
 but this makes no sense since 1/2 is not defined in Mod(8). This was the reason for the 0 in CC check at this point.
 
 You evaluate numerical expressions for n in NN with recursion. this is favorable for chebyshev polynomials, but not for all ortho polys you can evaluate numeric values in O(log n). You have already problems with the legendre polynomials, since the coefficients depend on n, and the recursion is not stable. Thus other evaluation methods should be used. Thats the reason why _evalf_ with mpmath should come first.
@@ -3799,7 +3794,7 @@ I have to admit, that about 3 years have passed since I wrote the initial versio
 archive/issue_comments_094430.json:
 ```json
 {
-    "body": "Replying to [comment:112 maldun]:\n> **Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class?\nAbsolutely not. The patch is already big enough now.",
+    "body": "Replying to [comment:112 maldun]:\n> **Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class?\n\nAbsolutely not. The patch is already big enough now.",
     "created_at": "2013-12-09T20:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3810,6 +3805,7 @@ archive/issue_comments_094430.json:
 
 Replying to [comment:112 maldun]:
 > **Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class?
+
 Absolutely not. The patch is already big enough now.
 
 
@@ -3839,7 +3835,7 @@ We could have a common superclass for both kinds of Chebyshev polynomials and im
 archive/issue_comments_094432.json:
 ```json
 {
-    "body": "Replying to [comment:114 jdemeyer]:\n> If the various orthogonal polynomials are so different, then perhaps the simple answer is that we shouldn't try to force a generic `_eval_` which will work for all orthogonal polynomials.\n> \n> We could have a common superclass for both kinds of Chebyshev polynomials and implement `_eval_()` there. For Legendre polynomials, we could implement a different `_eval_()`. That would be a much simpler solution than making an overly complicated generic `_eval_()`.\n\nI think this would be a good course of action, and that we should put other orthogonal polynomials in other tickets. However, I think it might be worthwhile to at least diagram/pseudocode the overall class structure we want at the end of the day. Currently I believe the proposal is something like:\n\n```\n* Orthogonal polynomials\n\n  * Chebyshev polynomials\n    - general _evel_(x, n) method\n\n    * Chebyshev T\n      - specific code (ex. _evalf_() method), recursions, ...\n    * Chebyshev U\n      - specific code (ex. _evalf_() method), recursions, ...\n\n  * Legendre polynomials\n    - general _evel_(x, n) method\n\n    * Legendre P\n    * Legendre Q\n\n  * Gegenbauer polynomials\n    - an _evel_(x, n, alpha) method\n```\n\nHopefully my notation is clear",
+    "body": "Replying to [comment:114 jdemeyer]:\n> If the various orthogonal polynomials are so different, then perhaps the simple answer is that we shouldn't try to force a generic `_eval_` which will work for all orthogonal polynomials.\n> \n> We could have a common superclass for both kinds of Chebyshev polynomials and implement `_eval_()` there. For Legendre polynomials, we could implement a different `_eval_()`. That would be a much simpler solution than making an overly complicated generic `_eval_()`.\n\n\nI think this would be a good course of action, and that we should put other orthogonal polynomials in other tickets. However, I think it might be worthwhile to at least diagram/pseudocode the overall class structure we want at the end of the day. Currently I believe the proposal is something like:\n\n```\n* Orthogonal polynomials\n\n  * Chebyshev polynomials\n    - general _evel_(x, n) method\n\n    * Chebyshev T\n      - specific code (ex. _evalf_() method), recursions, ...\n    * Chebyshev U\n      - specific code (ex. _evalf_() method), recursions, ...\n\n  * Legendre polynomials\n    - general _evel_(x, n) method\n\n    * Legendre P\n    * Legendre Q\n\n  * Gegenbauer polynomials\n    - an _evel_(x, n, alpha) method\n```\nHopefully my notation is clear",
     "created_at": "2013-12-09T20:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -3852,6 +3848,7 @@ Replying to [comment:114 jdemeyer]:
 > If the various orthogonal polynomials are so different, then perhaps the simple answer is that we shouldn't try to force a generic `_eval_` which will work for all orthogonal polynomials.
 > 
 > We could have a common superclass for both kinds of Chebyshev polynomials and implement `_eval_()` there. For Legendre polynomials, we could implement a different `_eval_()`. That would be a much simpler solution than making an overly complicated generic `_eval_()`.
+
 
 I think this would be a good course of action, and that we should put other orthogonal polynomials in other tickets. However, I think it might be worthwhile to at least diagram/pseudocode the overall class structure we want at the end of the day. Currently I believe the proposal is something like:
 
@@ -3875,7 +3872,6 @@ I think this would be a good course of action, and that we should put other orth
   * Gegenbauer polynomials
     - an _evel_(x, n, alpha) method
 ```
-
 Hopefully my notation is clear
 
 
@@ -4083,7 +4079,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094443.json:
 ```json
 {
-    "body": "Replying to [comment:123 maldun]:\n> And good idea to replace the old % format string operator, since it will be deprecated in Python 3\n\nThis has been a rumour that didn't pan out. I don't think a time line has been set towards actual deprecation of %. The possibility of deprecation is mentioned in \nhttp://www.python.org/dev/peps/pep-3101/\nbut it's careful to argue that deprecation is not required at all. At some point it was planned to deprecate % in 3.0 and remove it in 3.1 but that hasn't happened. I suspect it's so ingrained by now that deprecation and removal is impractical.",
+    "body": "Replying to [comment:123 maldun]:\n> And good idea to replace the old % format string operator, since it will be deprecated in Python 3\n\n\nThis has been a rumour that didn't pan out. I don't think a time line has been set towards actual deprecation of %. The possibility of deprecation is mentioned in \nhttp://www.python.org/dev/peps/pep-3101/\nbut it's careful to argue that deprecation is not required at all. At some point it was planned to deprecate % in 3.0 and remove it in 3.1 but that hasn't happened. I suspect it's so ingrained by now that deprecation and removal is impractical.",
     "created_at": "2013-12-12T21:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -4094,6 +4090,7 @@ archive/issue_comments_094443.json:
 
 Replying to [comment:123 maldun]:
 > And good idea to replace the old % format string operator, since it will be deprecated in Python 3
+
 
 This has been a rumour that didn't pan out. I don't think a time line has been set towards actual deprecation of %. The possibility of deprecation is mentioned in 
 http://www.python.org/dev/peps/pep-3101/
@@ -4106,7 +4103,7 @@ but it's careful to argue that deprecation is not required at all. At some point
 archive/issue_comments_094444.json:
 ```json
 {
-    "body": "Travis: are you sure you applied the dependency #15422? I am suspicious because you added\n\n```diff\n-            (2^7 + O(2^8))*t^5 + (O(2^8))*t^4 + (2^6 + O(2^8))*t^3 + (O(2^8))*t^2 + (1 + 2^6 + O(2^8))*t + (O(2^8))\n+            (2^7 + O(2^8))*t^5 + (2^6 + O(2^8))*t^3 + (1 + 2^6 + O(2^8))*t\n```\n\nwhich seems to be a doctest failure.",
+    "body": "Travis: are you sure you applied the dependency #15422? I am suspicious because you added\n\n```diff\n-            (2^7 + O(2^8))*t^5 + (O(2^8))*t^4 + (2^6 + O(2^8))*t^3 + (O(2^8))*t^2 + (1 + 2^6 + O(2^8))*t + (O(2^8))\n+            (2^7 + O(2^8))*t^5 + (2^6 + O(2^8))*t^3 + (1 + 2^6 + O(2^8))*t\n```\nwhich seems to be a doctest failure.",
     "created_at": "2013-12-16T09:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -4121,7 +4118,6 @@ Travis: are you sure you applied the dependency #15422? I am suspicious because 
 -            (2^7 + O(2^8))*t^5 + (O(2^8))*t^4 + (2^6 + O(2^8))*t^3 + (O(2^8))*t^2 + (1 + 2^6 + O(2^8))*t + (O(2^8))
 +            (2^7 + O(2^8))*t^5 + (2^6 + O(2^8))*t^3 + (1 + 2^6 + O(2^8))*t
 ```
-
 which seems to be a doctest failure.
 
 
@@ -4131,7 +4127,7 @@ which seems to be a doctest failure.
 archive/issue_comments_094445.json:
 ```json
 {
-    "body": "I also don't agree with all changes of\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\n\nto\n\n```\nif condition:\n    return A\nreturn B\n```\n\nbut I guess that's one of your pet peeves.\n\nI personally prefer\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\n\nif there are clearly two cases and the code might as well have been written as\n\n```\nif not condition:\n    return B\nelse:\n    return A\n```\n\n\nSo I personally would keep the `if/else` structure for the `if n % 2 == 0` test. And for the `n >= 0` test, I would say that\n\n```\nif n < 0:\n    return B\nreturn A\n```\n\nwould be a lot better that what you did:\n\n```\nif n >= 0:\n    return A\nreturn B\n```\n\nThe first feels much better to me because you put the normal case outside the `if` block and the special cases `if n == 0` and `if n < 0` would be inside `if`s.\n\n(Of course these are all personal preferences, I'm not asking you to change this, maybe just think about it.)",
+    "body": "I also don't agree with all changes of\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\nto\n\n```\nif condition:\n    return A\nreturn B\n```\nbut I guess that's one of your pet peeves.\n\nI personally prefer\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\nif there are clearly two cases and the code might as well have been written as\n\n```\nif not condition:\n    return B\nelse:\n    return A\n```\n\nSo I personally would keep the `if/else` structure for the `if n % 2 == 0` test. And for the `n >= 0` test, I would say that\n\n```\nif n < 0:\n    return B\nreturn A\n```\nwould be a lot better that what you did:\n\n```\nif n >= 0:\n    return A\nreturn B\n```\nThe first feels much better to me because you put the normal case outside the `if` block and the special cases `if n == 0` and `if n < 0` would be inside `if`s.\n\n(Of course these are all personal preferences, I'm not asking you to change this, maybe just think about it.)",
     "created_at": "2013-12-16T09:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
@@ -4148,7 +4144,6 @@ if condition:
 else:
     return B
 ```
-
 to
 
 ```
@@ -4156,7 +4151,6 @@ if condition:
     return A
 return B
 ```
-
 but I guess that's one of your pet peeves.
 
 I personally prefer
@@ -4167,7 +4161,6 @@ if condition:
 else:
     return B
 ```
-
 if there are clearly two cases and the code might as well have been written as
 
 ```
@@ -4177,7 +4170,6 @@ else:
     return A
 ```
 
-
 So I personally would keep the `if/else` structure for the `if n % 2 == 0` test. And for the `n >= 0` test, I would say that
 
 ```
@@ -4185,7 +4177,6 @@ if n < 0:
     return B
 return A
 ```
-
 would be a lot better that what you did:
 
 ```
@@ -4193,7 +4184,6 @@ if n >= 0:
     return A
 return B
 ```
-
 The first feels much better to me because you put the normal case outside the `if` block and the special cases `if n == 0` and `if n < 0` would be inside `if`s.
 
 (Of course these are all personal preferences, I'm not asking you to change this, maybe just think about it.)

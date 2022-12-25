@@ -3,7 +3,7 @@
 archive/issues_007724.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSome improvement on this side, and so for ther functions like connected components, strongly connected components, etc...\n\n\n```\nsage: g= graphs.RandomGNP(1000,.01)\nsage: h=g.copy(implementation=\"c_graph\")\nsage: timeit(\"list(g.depth_first_search(0))\")\n25 loops, best of 3: 10.9 ms per loop\nsage: timeit(\"list(h.depth_first_search(0))\")\n125 loops, best of 3: 2.03 ms per loop\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7724\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSome improvement on this side, and so for ther functions like connected components, strongly connected components, etc...\n\n```\nsage: g= graphs.RandomGNP(1000,.01)\nsage: h=g.copy(implementation=\"c_graph\")\nsage: timeit(\"list(g.depth_first_search(0))\")\n25 loops, best of 3: 10.9 ms per loop\nsage: timeit(\"list(h.depth_first_search(0))\")\n125 loops, best of 3: 2.03 ms per loop\n```\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7724\n\n",
     "created_at": "2009-12-17T17:46:37Z",
     "labels": [
         "component: graph theory"
@@ -21,7 +21,6 @@ CC:  @rlmill
 
 Some improvement on this side, and so for ther functions like connected components, strongly connected components, etc...
 
-
 ```
 sage: g= graphs.RandomGNP(1000,.01)
 sage: h=g.copy(implementation="c_graph")
@@ -30,7 +29,6 @@ sage: timeit("list(g.depth_first_search(0))")
 sage: timeit("list(h.depth_first_search(0))")
 125 loops, best of 3: 2.03 ms per loop
 ```
-
 
 Nathann
 
@@ -81,7 +79,7 @@ archive/issue_comments_066240.json:
 archive/issue_comments_066241.json:
 ```json
 {
-    "body": "There's a merging conflict:\n\n```\n-        ALGORITHM: 8.3.8 in [1]. Notice that the termination condition on \n-        line (23) of the algorithm uses \"p[v] == 0\" which in the book \n-        means that the parent is undefined; in this case, v must be the \n+        ALGORITHM: 8.3.8 in [Jungnickel2005]_. Notice that the termination \n+        condition on line (23) of the algorithm uses \"p[v] == 0\" which in\n+        the book means that the parent is undefined; in this case, v must be the \n         root s.  Since our vertex names start with 0, we substitute instead\n         the condition \"v == s\".  This is the terminating condition used \n         in the general Depth First Search tree in Algorithm 8.2.1.\n         \n         REFERENCE:\n \n-        - [1] D. Jungnickel, Graphs, Networks and Algorithms,\n+        .. [Jungnickel2005] D. Jungnickel, Graphs, Networks and Algorithms,\n```\n\n\nThis change already made it into 4.3.rc1, I believe, in #7314. Can you rebase on top of that patch?",
+    "body": "There's a merging conflict:\n\n```\n-        ALGORITHM: 8.3.8 in [1]. Notice that the termination condition on \n-        line (23) of the algorithm uses \"p[v] == 0\" which in the book \n-        means that the parent is undefined; in this case, v must be the \n+        ALGORITHM: 8.3.8 in [Jungnickel2005]_. Notice that the termination \n+        condition on line (23) of the algorithm uses \"p[v] == 0\" which in\n+        the book means that the parent is undefined; in this case, v must be the \n         root s.  Since our vertex names start with 0, we substitute instead\n         the condition \"v == s\".  This is the terminating condition used \n         in the general Depth First Search tree in Algorithm 8.2.1.\n         \n         REFERENCE:\n \n-        - [1] D. Jungnickel, Graphs, Networks and Algorithms,\n+        .. [Jungnickel2005] D. Jungnickel, Graphs, Networks and Algorithms,\n```\n\nThis change already made it into 4.3.rc1, I believe, in #7314. Can you rebase on top of that patch?",
     "created_at": "2009-12-18T22:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ There's a merging conflict:
 -        - [1] D. Jungnickel, Graphs, Networks and Algorithms,
 +        .. [Jungnickel2005] D. Jungnickel, Graphs, Networks and Algorithms,
 ```
-
 
 This change already made it into 4.3.rc1, I believe, in #7314. Can you rebase on top of that patch?
 
@@ -260,7 +257,7 @@ Nathann
 archive/issue_comments_066249.json:
 ```json
 {
-    "body": "Replying to [comment:7 ncohen]:\n> There is no \"yield\" command available at the moment in Cython... :-)\n\nBut you can still define a iterator class.\n\nThe following patch is based on your work, and defines an iterator. You can choose which one you prefer.",
+    "body": "Replying to [comment:7 ncohen]:\n> There is no \"yield\" command available at the moment in Cython... :-)\n\n\nBut you can still define a iterator class.\n\nThe following patch is based on your work, and defines an iterator. You can choose which one you prefer.",
     "created_at": "2009-12-21T11:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
@@ -271,6 +268,7 @@ archive/issue_comments_066249.json:
 
 Replying to [comment:7 ncohen]:
 > There is no "yield" command available at the moment in Cython... :-)
+
 
 But you can still define a iterator class.
 

@@ -52,7 +52,7 @@ NOTE: According to http://pari.math.u-bordeaux.fr/packages.html, there are now t
 archive/issue_comments_088131.json:
 ```json
 {
-    "body": "The new ellap (which replaces the sea.gp script in sage) is seriously buggy, evidently.  Sometimes it works, but the first example I tried fails miserably.  \n\n```\n\n? ellap(ellinit([1,2,7,4,3]),nextprime(10^20))\n%1 = -4070602678\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^20))\n  ***   at top-level: ellap(ellinit([1,2,3\n  ***                 ^--------------------\n  *** ellap: bug in PARI/GP (Segmentation Fault), please report\n  ***   Break loop: type 'break' to go back to GP\nbreak> \n\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^25))\n%2 = 1231939791654\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^30))\n%3 = 1790178944607137\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^35))\n  ***   at top-level: ellap(ellinit([1,2,3\n  ***                 ^--------------------\n  *** ellap: bug in PARI/GP (Segmentation Fault), please report\n  ***   Break loop: type 'break' to go back to GP\nbreak> \n```\n\n\nNOTE: To use ellap for big p, you *must* put the extracted data from seadata.tgz/data/*  in local/share/pari, as explained here: http://pari.math.u-bordeaux.fr/packages.html\n\nI'm reporting this bug upstream now.",
+    "body": "The new ellap (which replaces the sea.gp script in sage) is seriously buggy, evidently.  Sometimes it works, but the first example I tried fails miserably.  \n\n```\n\n? ellap(ellinit([1,2,7,4,3]),nextprime(10^20))\n%1 = -4070602678\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^20))\n  ***   at top-level: ellap(ellinit([1,2,3\n  ***                 ^--------------------\n  *** ellap: bug in PARI/GP (Segmentation Fault), please report\n  ***   Break loop: type 'break' to go back to GP\nbreak> \n\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^25))\n%2 = 1231939791654\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^30))\n%3 = 1790178944607137\n? ellap(ellinit([1,2,3,4,5]),nextprime(10^35))\n  ***   at top-level: ellap(ellinit([1,2,3\n  ***                 ^--------------------\n  *** ellap: bug in PARI/GP (Segmentation Fault), please report\n  ***   Break loop: type 'break' to go back to GP\nbreak> \n```\n\nNOTE: To use ellap for big p, you *must* put the extracted data from seadata.tgz/data/*  in local/share/pari, as explained here: http://pari.math.u-bordeaux.fr/packages.html\n\nI'm reporting this bug upstream now.",
     "created_at": "2010-06-26T06:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ break>
   ***   Break loop: type 'break' to go back to GP
 break> 
 ```
-
 
 NOTE: To use ellap for big p, you *must* put the extracted data from seadata.tgz/data/*  in local/share/pari, as explained here: http://pari.math.u-bordeaux.fr/packages.html
 
@@ -303,7 +302,7 @@ New spkg at http://sage.math.washington.edu/home/robertwb/pari-2.4.3.svn.p1.spkg
 archive/issue_comments_088143.json:
 ```json
 {
-    "body": "Attachment [trac_9343-part7-fix_signals.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part7-fix_signals.patch) by @williamstein created at 2010-06-27 02:56:06\n\nSuspiciousness when installing pari-2.4.3.svn.p1.spkg:\n\n```\n\n0 --with-gxx-include-dir=/include/c++/4.2.1\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5659)\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n```\n",
+    "body": "Attachment [trac_9343-part7-fix_signals.patch](tarball://root/attachments/some-uuid/ticket9343/trac_9343-part7-fix_signals.patch) by @williamstein created at 2010-06-27 02:56:06\n\nSuspiciousness when installing pari-2.4.3.svn.p1.spkg:\n\n```\n\n0 --with-gxx-include-dir=/include/c++/4.2.1\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5659)\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n```",
     "created_at": "2010-06-27T02:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -333,13 +332,12 @@ Looking for some tools first ...
 
 
 
-
 ---
 
 archive/issue_comments_088144.json:
 ```json
 {
-    "body": "Polynomial factorization over number fields is broken:\n\n```\n?  nffactor(nfinit(y^2-5), x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3)\n%6 = \n[x - 3 1]\n\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 4]\n\n[x + Mod(1/2*y + 1/2, y^2 - 5) 0]\n\n? factor                 \nfactor        factorcantor  factorial     factormod     factorpadic   \nfactorback    factorff      factorint     factornf      \n? factornf(x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3, y^2-5)\n%7 = \n[x - 3 1]\n\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 0]\n\n[x + Mod(1/2*y + 1/2, y^2 - 5) 4]\n\n```\n\n\nHere's what used to happen:\n\n```\n? nffactor(nfinit(y^2-5), x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3)\n%7 = \n[x - 3 1]\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 2]\n[x + Mod(1/2*y + 1/2, y^2 - 5) 2]\n```\n",
+    "body": "Polynomial factorization over number fields is broken:\n\n```\n?  nffactor(nfinit(y^2-5), x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3)\n%6 = \n[x - 3 1]\n\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 4]\n\n[x + Mod(1/2*y + 1/2, y^2 - 5) 0]\n\n? factor                 \nfactor        factorcantor  factorial     factormod     factorpadic   \nfactorback    factorff      factorint     factornf      \n? factornf(x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3, y^2-5)\n%7 = \n[x - 3 1]\n\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 0]\n\n[x + Mod(1/2*y + 1/2, y^2 - 5) 4]\n\n```\n\nHere's what used to happen:\n\n```\n? nffactor(nfinit(y^2-5), x^5 - x^4 - 7*x^3 + x^2 + 7*x - 3)\n%7 = \n[x - 3 1]\n[x + Mod(-1/2*y + 1/2, y^2 - 5) 2]\n[x + Mod(1/2*y + 1/2, y^2 - 5) 2]\n```",
     "created_at": "2010-06-27T03:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -372,7 +370,6 @@ factorback    factorff      factorint     factornf
 
 ```
 
-
 Here's what used to happen:
 
 ```
@@ -382,7 +379,6 @@ Here's what used to happen:
 [x + Mod(-1/2*y + 1/2, y^2 - 5) 2]
 [x + Mod(1/2*y + 1/2, y^2 - 5) 2]
 ```
-
 
 
 
@@ -597,7 +593,7 @@ I nearly finished sorting out extcode/pari/cremona and elliptic_curves/gp_cremon
 archive/issue_comments_088156.json:
 ```json
 {
-    "body": "Replying to [comment:22 cremona]:\n> Replying to [comment:21 cremona]:\n> \n> I nearly finished sorting out extcode/pari/cremona and elliptic_curves/gp_cremona.py and will finish that today (Sunday) and post a patch for it.\n\nI had to make one chenge to extcode/pari/simon/ell.gp (removing one comma!) and have reported it upstream.",
+    "body": "Replying to [comment:22 cremona]:\n> Replying to [comment:21 cremona]:\n> \n> I nearly finished sorting out extcode/pari/cremona and elliptic_curves/gp_cremona.py and will finish that today (Sunday) and post a patch for it.\n\n\nI had to make one chenge to extcode/pari/simon/ell.gp (removing one comma!) and have reported it upstream.",
     "created_at": "2010-06-27T19:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -610,6 +606,7 @@ Replying to [comment:22 cremona]:
 > Replying to [comment:21 cremona]:
 > 
 > I nearly finished sorting out extcode/pari/cremona and elliptic_curves/gp_cremona.py and will finish that today (Sunday) and post a patch for it.
+
 
 I had to make one chenge to extcode/pari/simon/ell.gp (removing one comma!) and have reported it upstream.
 
@@ -638,7 +635,7 @@ Attachment [trac_9343-part11-fixing_misc_tests.patch](tarball://root/attachments
 archive/issue_comments_088158.json:
 ```json
 {
-    "body": "As of right now, you can install this into 4.4.4 by doing:\n\n1.\n\n```\n  ./sage -f -m http://sage.math.washington.edu/home/wstein/patches/pari-2.4.3.svn.p3.spkg\n```\n\n\n2. import the patch called sagelib_9343.patch to the main Sage repo.\n\n3. import the patch extcode_9343.patch into the SAGE_ROOT/data extcode.",
+    "body": "As of right now, you can install this into 4.4.4 by doing:\n\n1.\n\n```\n  ./sage -f -m http://sage.math.washington.edu/home/wstein/patches/pari-2.4.3.svn.p3.spkg\n```\n\n2. import the patch called sagelib_9343.patch to the main Sage repo.\n\n3. import the patch extcode_9343.patch into the SAGE_ROOT/data extcode.",
     "created_at": "2010-06-28T21:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -654,7 +651,6 @@ As of right now, you can install this into 4.4.4 by doing:
 ```
   ./sage -f -m http://sage.math.washington.edu/home/wstein/patches/pari-2.4.3.svn.p3.spkg
 ```
-
 
 2. import the patch called sagelib_9343.patch to the main Sage repo.
 
@@ -784,7 +780,7 @@ I will compile eclib with pari 2.4.3;  if any changes are needed, I will change 
 archive/issue_comments_088165.json:
 ```json
 {
-    "body": "Replying to [comment:27 cremona]:\n> I will compile eclib with pari 2.4.3;  if any changes are needed, I will change the source at source, so patches will not be needed.\n\neclib compiles and runs fine with 2.4.3.  It even now compiles with -ansi (which was not true before) and almost with -pedantic (just 4 extraneous semicolons need deleting;  not worth a new spkg version).",
+    "body": "Replying to [comment:27 cremona]:\n> I will compile eclib with pari 2.4.3;  if any changes are needed, I will change the source at source, so patches will not be needed.\n\n\neclib compiles and runs fine with 2.4.3.  It even now compiles with -ansi (which was not true before) and almost with -pedantic (just 4 extraneous semicolons need deleting;  not worth a new spkg version).",
     "created_at": "2010-07-04T14:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -796,6 +792,7 @@ archive/issue_comments_088165.json:
 Replying to [comment:27 cremona]:
 > I will compile eclib with pari 2.4.3;  if any changes are needed, I will change the source at source, so patches will not be needed.
 
+
 eclib compiles and runs fine with 2.4.3.  It even now compiles with -ansi (which was not true before) and almost with -pedantic (just 4 extraneous semicolons need deleting;  not worth a new spkg version).
 
 
@@ -805,7 +802,7 @@ eclib compiles and runs fine with 2.4.3.  It even now compiles with -ansi (which
 archive/issue_comments_088166.json:
 ```json
 {
-    "body": "lcalc has some problems with pari-2.4. I am not sure yet if they are minor\nor major.\n\n\n```\nLcommandline_elliptic.cc: In function \u2018void data_E(char*, char*, char*, char*, char*, int, Double*)\u2019:\nLcommandline_elliptic.cc:124: error: \u2018lgeti\u2019 was not declared in this scope\nmake[1]: *** [Lcommandline_elliptic.o] Error 1\n```\n\nI'll be checking genus2reduction next.",
+    "body": "lcalc has some problems with pari-2.4. I am not sure yet if they are minor\nor major.\n\n```\nLcommandline_elliptic.cc: In function \u2018void data_E(char*, char*, char*, char*, char*, int, Double*)\u2019:\nLcommandline_elliptic.cc:124: error: \u2018lgeti\u2019 was not declared in this scope\nmake[1]: *** [Lcommandline_elliptic.o] Error 1\n```\nI'll be checking genus2reduction next.",
     "created_at": "2010-07-06T10:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -817,13 +814,11 @@ archive/issue_comments_088166.json:
 lcalc has some problems with pari-2.4. I am not sure yet if they are minor
 or major.
 
-
 ```
 Lcommandline_elliptic.cc: In function ‘void data_E(char*, char*, char*, char*, char*, int, Double*)’:
 Lcommandline_elliptic.cc:124: error: ‘lgeti’ was not declared in this scope
 make[1]: *** [Lcommandline_elliptic.o] Error 1
 ```
-
 I'll be checking genus2reduction next.
 
 
@@ -855,7 +850,7 @@ like a charm.
 archive/issue_comments_088168.json:
 ```json
 {
-    "body": "genus2reduction suffer the same kind of problems. But it is more serious:\n\n```\ngenus2reduction.c: In function \u2018main\u2019:\ngenus2reduction.c:476: error: \u2018polun\u2019 undeclared (first use in this function)\ngenus2reduction.c:476: error: (Each undeclared identifier is reported only once\ngenus2reduction.c:476: error: for each function it appears in.)\ngenus2reduction.c:600: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:96: warning: ignoring return value of \u2018scanf\u2019, declared with attribute warn_unused_result\ngenus2reduction.c:98: warning: ignoring return value of \u2018scanf\u2019, declared with attribute warn_unused_result\ngenus2reduction.c: In function \u2018factorpadicnonun\u2019:\ngenus2reduction.c:1676: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polymini\u2019:\ngenus2reduction.c:1701: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:1712: error: \u2018zero\u2019 undeclared (first use in this function)\ngenus2reduction.c:1731: error: \u2018un\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018discpart\u2019:\ngenus2reduction.c:1818: error: \u2018polun\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polyminizi\u2019:\ngenus2reduction.c:1856: error: \u2018gi\u2019 undeclared (first use in this function)\ngenus2reduction.c:1859: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polyminizi2\u2019:\ngenus2reduction.c:1939: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:1942: error: \u2018gi\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018zi2mod\u2019:\ngenus2reduction.c:2001: error: \u2018gi\u2019 undeclared (first use in this function)\n```\n\npolun, polx, zero and un were all defined in pariold.h but are not anywhere\nanymore in pari-2.4. I cannot track the definition of gi in anything from \npari-2.3, anyone knows where that come from and what it should be replaced with?\nThere is a line in pari-2.3 headers mentioning it but not a definition of it \nas far as I can see:\n\n```\n#define is_universal_constant(x) ((GEN)(x) >= gen_0 && (GEN)(x) <= gi)\n```\n\nthis is in paristio.h form pari-2.3.5.",
+    "body": "genus2reduction suffer the same kind of problems. But it is more serious:\n\n```\ngenus2reduction.c: In function \u2018main\u2019:\ngenus2reduction.c:476: error: \u2018polun\u2019 undeclared (first use in this function)\ngenus2reduction.c:476: error: (Each undeclared identifier is reported only once\ngenus2reduction.c:476: error: for each function it appears in.)\ngenus2reduction.c:600: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:96: warning: ignoring return value of \u2018scanf\u2019, declared with attribute warn_unused_result\ngenus2reduction.c:98: warning: ignoring return value of \u2018scanf\u2019, declared with attribute warn_unused_result\ngenus2reduction.c: In function \u2018factorpadicnonun\u2019:\ngenus2reduction.c:1676: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polymini\u2019:\ngenus2reduction.c:1701: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:1712: error: \u2018zero\u2019 undeclared (first use in this function)\ngenus2reduction.c:1731: error: \u2018un\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018discpart\u2019:\ngenus2reduction.c:1818: error: \u2018polun\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polyminizi\u2019:\ngenus2reduction.c:1856: error: \u2018gi\u2019 undeclared (first use in this function)\ngenus2reduction.c:1859: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018polyminizi2\u2019:\ngenus2reduction.c:1939: error: \u2018polx\u2019 undeclared (first use in this function)\ngenus2reduction.c:1942: error: \u2018gi\u2019 undeclared (first use in this function)\ngenus2reduction.c: In function \u2018zi2mod\u2019:\ngenus2reduction.c:2001: error: \u2018gi\u2019 undeclared (first use in this function)\n```\npolun, polx, zero and un were all defined in pariold.h but are not anywhere\nanymore in pari-2.4. I cannot track the definition of gi in anything from \npari-2.3, anyone knows where that come from and what it should be replaced with?\nThere is a line in pari-2.3 headers mentioning it but not a definition of it \nas far as I can see:\n\n```\n#define is_universal_constant(x) ((GEN)(x) >= gen_0 && (GEN)(x) <= gi)\n```\nthis is in paristio.h form pari-2.3.5.",
     "created_at": "2010-07-07T04:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -891,7 +886,6 @@ genus2reduction.c:1942: error: ‘gi’ undeclared (first use in this function)
 genus2reduction.c: In function ‘zi2mod’:
 genus2reduction.c:2001: error: ‘gi’ undeclared (first use in this function)
 ```
-
 polun, polx, zero and un were all defined in pariold.h but are not anywhere
 anymore in pari-2.4. I cannot track the definition of gi in anything from 
 pari-2.3, anyone knows where that come from and what it should be replaced with?
@@ -901,7 +895,6 @@ as far as I can see:
 ```
 #define is_universal_constant(x) ((GEN)(x) >= gen_0 && (GEN)(x) <= gi)
 ```
-
 this is in paristio.h form pari-2.3.5.
 
 
@@ -947,7 +940,7 @@ I have fixed a bug in Simon's extcode and am currently fixing doctest failures i
 archive/issue_comments_088171.json:
 ```json
 {
-    "body": "Replying to [comment:33 cremona]:\n> I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n\nSurely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed.",
+    "body": "Replying to [comment:33 cremona]:\n> I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n\n\nSurely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed.",
     "created_at": "2010-07-09T11:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -959,6 +952,7 @@ archive/issue_comments_088171.json:
 Replying to [comment:33 cremona]:
 > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?
 
+
 Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed.
 
 
@@ -968,7 +962,7 @@ Surely it was done on purpose, because with a bigger optimization flag PARI must
 archive/issue_comments_088172.json:
 ```json
 {
-    "body": "Can somebody please have a look at this:\n\n```\nRR(gp(exp(1)))\n```\n\n\nThis just hangs sage, in a way which can not even be interrupted.",
+    "body": "Can somebody please have a look at this:\n\n```\nRR(gp(exp(1)))\n```\n\nThis just hangs sage, in a way which can not even be interrupted.",
     "created_at": "2010-07-09T13:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -983,7 +977,6 @@ Can somebody please have a look at this:
 RR(gp(exp(1)))
 ```
 
-
 This just hangs sage, in a way which can not even be interrupted.
 
 
@@ -993,7 +986,7 @@ This just hangs sage, in a way which can not even be interrupted.
 archive/issue_comments_088173.json:
 ```json
 {
-    "body": "Replying to [comment:35 was]:\n> Replying to [comment:33 cremona]:\n> > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n> \n> Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n\nI always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.",
+    "body": "Replying to [comment:35 was]:\n> Replying to [comment:33 cremona]:\n> > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n\n> \n> Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n\n\nI always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.",
     "created_at": "2010-07-10T11:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1005,8 +998,10 @@ archive/issue_comments_088173.json:
 Replying to [comment:35 was]:
 > Replying to [comment:33 cremona]:
 > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?
+
 > 
 > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. 
+
 
 I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.
 
@@ -1035,7 +1030,7 @@ I found a bug in PARI's nfbasis() command: [PARI bug 1072](http://pari.math.u-bo
 archive/issue_comments_088175.json:
 ```json
 {
-    "body": "Replying to [comment:37 jdemeyer]:\n> Replying to [comment:35 was]:\n> > Replying to [comment:33 cremona]:\n> > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n> > \n> > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n> \n> I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.\n\n\"Seems to\"?   The Sage test suite is a much better test suite for PARI than pari's own, IMHO.",
+    "body": "Replying to [comment:37 jdemeyer]:\n> Replying to [comment:35 was]:\n> > Replying to [comment:33 cremona]:\n> > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n\n> > \n> > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n\n> \n> I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.\n\n\n\"Seems to\"?   The Sage test suite is a much better test suite for PARI than pari's own, IMHO.",
     "created_at": "2010-07-10T11:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1048,10 +1043,13 @@ Replying to [comment:37 jdemeyer]:
 > Replying to [comment:35 was]:
 > > Replying to [comment:33 cremona]:
 > > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?
+
 > > 
 > > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. 
+
 > 
 > I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.
+
 
 "Seems to"?   The Sage test suite is a much better test suite for PARI than pari's own, IMHO.
 
@@ -1062,7 +1060,7 @@ Replying to [comment:37 jdemeyer]:
 archive/issue_comments_088176.json:
 ```json
 {
-    "body": "Replying to [comment:38 jdemeyer]:\n> I found a bug in PARI's nfbasis() command: [PARI bug 1072](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1072).  Now that it has been fixed, maybe somebody should make a new spkg with the latest pari?\n\nYes, definitely. It is nontrivial to make a new spkg though -- see spkg-dist...",
+    "body": "Replying to [comment:38 jdemeyer]:\n> I found a bug in PARI's nfbasis() command: [PARI bug 1072](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1072).  Now that it has been fixed, maybe somebody should make a new spkg with the latest pari?\n\n\nYes, definitely. It is nontrivial to make a new spkg though -- see spkg-dist...",
     "created_at": "2010-07-10T11:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1073,6 +1071,7 @@ archive/issue_comments_088176.json:
 
 Replying to [comment:38 jdemeyer]:
 > I found a bug in PARI's nfbasis() command: [PARI bug 1072](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1072).  Now that it has been fixed, maybe somebody should make a new spkg with the latest pari?
+
 
 Yes, definitely. It is nontrivial to make a new spkg though -- see spkg-dist...
 
@@ -1103,7 +1102,7 @@ Lots of doctests simply fail because ideals have different generators:
 archive/issue_comments_088178.json:
 ```json
 {
-    "body": "I just reported another bug in nffactor to pari's bug-tracker:\n\n```\nsage -gp\n...\nf = polcyclo(21,y)\nnf = nfinit(f);\nb = Mod(y^7,f)\nnffactor(nf, x^2-b)\n```\n\ngives\n\n```\n\n  ***   at top-level: nffactor(nf,x^2-b)\n  ***                 ^------------------\n  *** nffactor: not enough precomputed primes\n  ***   Break loop: type 'break' to go back to GP\n```\n\nThis breaks a doctest in ell_generic.py",
+    "body": "I just reported another bug in nffactor to pari's bug-tracker:\n\n```\nsage -gp\n...\nf = polcyclo(21,y)\nnf = nfinit(f);\nb = Mod(y^7,f)\nnffactor(nf, x^2-b)\n```\ngives\n\n```\n\n  ***   at top-level: nffactor(nf,x^2-b)\n  ***                 ^------------------\n  *** nffactor: not enough precomputed primes\n  ***   Break loop: type 'break' to go back to GP\n```\nThis breaks a doctest in ell_generic.py",
     "created_at": "2010-07-10T20:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1122,7 +1121,6 @@ nf = nfinit(f);
 b = Mod(y^7,f)
 nffactor(nf, x^2-b)
 ```
-
 gives
 
 ```
@@ -1132,7 +1130,6 @@ gives
   *** nffactor: not enough precomputed primes
   ***   Break loop: type 'break' to go back to GP
 ```
-
 This breaks a doctest in ell_generic.py
 
 
@@ -1177,7 +1174,7 @@ archive/issue_events_023043.json:
 archive/issue_comments_088180.json:
 ```json
 {
-    "body": "Replying to [comment:43 cremona]:\n> It's at http://pari.math.u-bordeaux.fr/cgi-bin/pkgreport.cgi?pkg=pari (#1075)\n\nKarim Belabas writes:\n\n```\nSimpler symptom:\n nffactor(polcyclo(21,y), x^2-y^7);\n\nThis is actually unrelated to #1070. It was due to an nf being replaced\nby nf.pol --- because we use Trager's trick in that range instead of a\ndirect relative factorization, and don't need the nf data ---.\nUnfortunately, a branch of the code later tried to acces nf.index, thus\naccessing a random coefficient of the defining t_POL instead of the\nrelevant nf data.\n\nFixed in svn.\n\nCheers,\n\n   K.B.\n```\n\nso we now have another reason for upgrading the source in the spkg.",
+    "body": "Replying to [comment:43 cremona]:\n> It's at http://pari.math.u-bordeaux.fr/cgi-bin/pkgreport.cgi?pkg=pari (#1075)\n\n\nKarim Belabas writes:\n\n```\nSimpler symptom:\n nffactor(polcyclo(21,y), x^2-y^7);\n\nThis is actually unrelated to #1070. It was due to an nf being replaced\nby nf.pol --- because we use Trager's trick in that range instead of a\ndirect relative factorization, and don't need the nf data ---.\nUnfortunately, a branch of the code later tried to acces nf.index, thus\naccessing a random coefficient of the defining t_POL instead of the\nrelevant nf data.\n\nFixed in svn.\n\nCheers,\n\n   K.B.\n```\nso we now have another reason for upgrading the source in the spkg.",
     "created_at": "2010-07-11T09:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1188,6 +1185,7 @@ archive/issue_comments_088180.json:
 
 Replying to [comment:43 cremona]:
 > It's at http://pari.math.u-bordeaux.fr/cgi-bin/pkgreport.cgi?pkg=pari (#1075)
+
 
 Karim Belabas writes:
 
@@ -1208,7 +1206,6 @@ Cheers,
 
    K.B.
 ```
-
 so we now have another reason for upgrading the source in the spkg.
 
 
@@ -1306,7 +1303,7 @@ I attached a small patch for integer discrete logarithms.  Note that the result 
 archive/issue_comments_088184.json:
 ```json
 {
-    "body": "Replying to [comment:47 jdemeyer]:\n> I attached a small patch for integer discrete logarithms.  Note that the result in the doctest has \n> always been wrong, but will now be corrected (so this is really a bug in the current version of Sage).\n\nGreat work!  I'm really glad we taught you Sage development last week!!!!",
+    "body": "Replying to [comment:47 jdemeyer]:\n> I attached a small patch for integer discrete logarithms.  Note that the result in the doctest has \n> always been wrong, but will now be corrected (so this is really a bug in the current version of Sage).\n\n\nGreat work!  I'm really glad we taught you Sage development last week!!!!",
     "created_at": "2010-07-11T10:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1318,6 +1315,7 @@ archive/issue_comments_088184.json:
 Replying to [comment:47 jdemeyer]:
 > I attached a small patch for integer discrete logarithms.  Note that the result in the doctest has 
 > always been wrong, but will now be corrected (so this is really a bug in the current version of Sage).
+
 
 Great work!  I'm really glad we taught you Sage development last week!!!!
 
@@ -1366,7 +1364,7 @@ No need to be quite so negative.  Jeroen, I'm not sure why you thought that this
 archive/issue_comments_088187.json:
 ```json
 {
-    "body": "Replying to [comment:50 cremona]:\n> No need to be quite so negative.  Jeroen, I'm not sure why you thought that this ticket was the right place to add your patch anyway -- what does it have to do with the pari upgrade?\n\nIt is related to the PARI upgrade because the new version of PARI fixes discrete logs (so, it fixes also #9205).  Doing the upgrade of PARI made a doctest fail, because the \"expected\" result from the doctest was wrong.",
+    "body": "Replying to [comment:50 cremona]:\n> No need to be quite so negative.  Jeroen, I'm not sure why you thought that this ticket was the right place to add your patch anyway -- what does it have to do with the pari upgrade?\n\n\nIt is related to the PARI upgrade because the new version of PARI fixes discrete logs (so, it fixes also #9205).  Doing the upgrade of PARI made a doctest fail, because the \"expected\" result from the doctest was wrong.",
     "created_at": "2010-07-11T11:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1378,6 +1376,7 @@ archive/issue_comments_088187.json:
 Replying to [comment:50 cremona]:
 > No need to be quite so negative.  Jeroen, I'm not sure why you thought that this ticket was the right place to add your patch anyway -- what does it have to do with the pari upgrade?
 
+
 It is related to the PARI upgrade because the new version of PARI fixes discrete logs (so, it fixes also #9205).  Doing the upgrade of PARI made a doctest fail, because the "expected" result from the doctest was wrong.
 
 
@@ -1387,7 +1386,7 @@ It is related to the PARI upgrade because the new version of PARI fixes discrete
 archive/issue_comments_088188.json:
 ```json
 {
-    "body": "Regarding the issue of\n\n```\nRR(gp(exp(1)))\n```\n\nor\n\n```\nZZ(gp(1))\n```\n\n\nThis makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.",
+    "body": "Regarding the issue of\n\n```\nRR(gp(exp(1)))\n```\nor\n\n```\nZZ(gp(1))\n```\n\nThis makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.",
     "created_at": "2010-07-11T11:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1401,13 +1400,11 @@ Regarding the issue of
 ```
 RR(gp(exp(1)))
 ```
-
 or
 
 ```
 ZZ(gp(1))
 ```
-
 
 This makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.
 
@@ -1418,7 +1415,7 @@ This makes Sage hang but without using CPU time.  So it does not go into an infi
 archive/issue_comments_088189.json:
 ```json
 {
-    "body": "Replying to [comment:49 davidloeffler]:\n> Sorry to disrupt this little love-in here, but that bug has already been found (#9205) and fixed, and\n> the patch has a positive review, and will probably be merged in the next alpha. \n\nWe *really* need to release sage-4.5, so that somebody can get started with the next alpha (4.5.1). \n\n> There are about a hundred patches with positive review waiting on trac, many of which have something \n> to do with number fields (as a consequence of the big number theory Sage days at MSRI). I'm disappointed \n> to realise that you folks haven't taken this into account, which will most likely mean that your work\n> getting the number theory code to pass doctests with the new Pari version will be reduced to \n> complete junk when all your patches fail to apply to the next alpha.\n\nThat's pretty harsh.   Anyway, the pari upgrade is higher priority, so in fact it will be the other way around. \n\nWilliam",
+    "body": "Replying to [comment:49 davidloeffler]:\n> Sorry to disrupt this little love-in here, but that bug has already been found (#9205) and fixed, and\n> the patch has a positive review, and will probably be merged in the next alpha. \n\n\nWe *really* need to release sage-4.5, so that somebody can get started with the next alpha (4.5.1). \n\n> There are about a hundred patches with positive review waiting on trac, many of which have something \n> to do with number fields (as a consequence of the big number theory Sage days at MSRI). I'm disappointed \n> to realise that you folks haven't taken this into account, which will most likely mean that your work\n> getting the number theory code to pass doctests with the new Pari version will be reduced to \n> complete junk when all your patches fail to apply to the next alpha.\n\n\nThat's pretty harsh.   Anyway, the pari upgrade is higher priority, so in fact it will be the other way around. \n\nWilliam",
     "created_at": "2010-07-11T12:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1431,6 +1428,7 @@ Replying to [comment:49 davidloeffler]:
 > Sorry to disrupt this little love-in here, but that bug has already been found (#9205) and fixed, and
 > the patch has a positive review, and will probably be merged in the next alpha. 
 
+
 We *really* need to release sage-4.5, so that somebody can get started with the next alpha (4.5.1). 
 
 > There are about a hundred patches with positive review waiting on trac, many of which have something 
@@ -1438,6 +1436,7 @@ We *really* need to release sage-4.5, so that somebody can get started with the 
 > to realise that you folks haven't taken this into account, which will most likely mean that your work
 > getting the number theory code to pass doctests with the new Pari version will be reduced to 
 > complete junk when all your patches fail to apply to the next alpha.
+
 
 That's pretty harsh.   Anyway, the pari upgrade is higher priority, so in fact it will be the other way around. 
 
@@ -1450,7 +1449,7 @@ William
 archive/issue_comments_088190.json:
 ```json
 {
-    "body": "Replying to [comment:52 jdemeyer]:\n> Regarding the issue of\n> {{{\n> RR(gp(exp(1)))\n> }}}\n> or\n> {{{\n> ZZ(gp(1))\n> }}}\n> \n\nWhen you use `gp` it is running the command in a subprocess.  Thus you'll never see any (nontrivial) CPU time.  \n> This makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.",
+    "body": "Replying to [comment:52 jdemeyer]:\n> Regarding the issue of\n> \n> ```\n> RR(gp(exp(1)))\n> ```\n> or\n> \n> ```\n> ZZ(gp(1))\n> ```\n> \n\n\nWhen you use `gp` it is running the command in a subprocess.  Thus you'll never see any (nontrivial) CPU time.  \n> This makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.",
     "created_at": "2010-07-11T12:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1461,14 +1460,17 @@ archive/issue_comments_088190.json:
 
 Replying to [comment:52 jdemeyer]:
 > Regarding the issue of
-> {{{
-> RR(gp(exp(1)))
-> }}}
-> or
-> {{{
-> ZZ(gp(1))
-> }}}
 > 
+> ```
+> RR(gp(exp(1)))
+> ```
+> or
+> 
+> ```
+> ZZ(gp(1))
+> ```
+> 
+
 
 When you use `gp` it is running the command in a subprocess.  Thus you'll never see any (nontrivial) CPU time.  
 > This makes Sage hang but without using CPU time.  So it does not go into an infinite loop, it literally does nothing.
@@ -1480,7 +1482,7 @@ When you use `gp` it is running the command in a subprocess.  Thus you'll never 
 archive/issue_comments_088191.json:
 ```json
 {
-    "body": "I think I just had a small break-through:\n\nThe gp command now has the so-called \"breakloop\" on by default.  This means the following: if Sage executes a command through the gp interface which gives errors, the following will be displayed in the pseudo-tty (invisible to the Sage user):\n\n```\n? 1/0\n  ***   at top-level: 1/0\n  ***                  ^--\n  *** _/_: division by zero\n  ***   Break loop: type 'break' to go back to GP\nbreak>\n```\n\n\nNow gp just waits for user input.  Since that input will never come, it just sits there forever.\n\nI have a temporary workaround for this:\nin the directory SAGE_ROOT/local/bin, move \"gp\" to \"gp-real\".  Then create the following shell script called \"gp\":\n\n```\n!/bin/bash\n\nmkdir -p $HOME/sage_debug\nexport HOME=$HOME/sage_debug\necho \"breakloop = 0\" >$HOME/.gprc\n\n# Remove --fast option\nexec $SAGE_ROOT/local/bin/gp-real --emacs --quiet --stacksize 100000000\n```\n\n\nThis changes $HOME and makes a .gprc file in it which disables the break loop.  It then runs gp without --fast, so that the .gprc file is read.",
+    "body": "I think I just had a small break-through:\n\nThe gp command now has the so-called \"breakloop\" on by default.  This means the following: if Sage executes a command through the gp interface which gives errors, the following will be displayed in the pseudo-tty (invisible to the Sage user):\n\n```\n? 1/0\n  ***   at top-level: 1/0\n  ***                  ^--\n  *** _/_: division by zero\n  ***   Break loop: type 'break' to go back to GP\nbreak>\n```\n\nNow gp just waits for user input.  Since that input will never come, it just sits there forever.\n\nI have a temporary workaround for this:\nin the directory SAGE_ROOT/local/bin, move \"gp\" to \"gp-real\".  Then create the following shell script called \"gp\":\n\n```\n!/bin/bash\n\nmkdir -p $HOME/sage_debug\nexport HOME=$HOME/sage_debug\necho \"breakloop = 0\" >$HOME/.gprc\n\n# Remove --fast option\nexec $SAGE_ROOT/local/bin/gp-real --emacs --quiet --stacksize 100000000\n```\n\nThis changes $HOME and makes a .gprc file in it which disables the break loop.  It then runs gp without --fast, so that the .gprc file is read.",
     "created_at": "2010-07-11T13:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1502,7 +1504,6 @@ The gp command now has the so-called "breakloop" on by default.  This means the 
 break>
 ```
 
-
 Now gp just waits for user input.  Since that input will never come, it just sits there forever.
 
 I have a temporary workaround for this:
@@ -1518,7 +1519,6 @@ echo "breakloop = 0" >$HOME/.gprc
 # Remove --fast option
 exec $SAGE_ROOT/local/bin/gp-real --emacs --quiet --stacksize 100000000
 ```
-
 
 This changes $HOME and makes a .gprc file in it which disables the break loop.  It then runs gp without --fast, so that the .gprc file is read.
 
@@ -1553,7 +1553,7 @@ Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.
 archive/issue_comments_088193.json:
 ```json
 {
-    "body": "Replying to [comment:56 cremona]:\n> Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n> Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.\n\nWell, I fixed the dokchitser script so it would pass some doctests in number_field.py.  But my fixes are very trivial (it took me no more than 5 minutes), so maybe you are making more serious changes to the file.  In that case, you can safely ignore my patch.",
+    "body": "Replying to [comment:56 cremona]:\n> Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n> Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.\n\n\nWell, I fixed the dokchitser script so it would pass some doctests in number_field.py.  But my fixes are very trivial (it took me no more than 5 minutes), so maybe you are making more serious changes to the file.  In that case, you can safely ignore my patch.",
     "created_at": "2010-07-11T14:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1566,6 +1566,7 @@ Replying to [comment:56 cremona]:
 > Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.
 > Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.
 
+
 Well, I fixed the dokchitser script so it would pass some doctests in number_field.py.  But my fixes are very trivial (it took me no more than 5 minutes), so maybe you are making more serious changes to the file.  In that case, you can safely ignore my patch.
 
 
@@ -1575,7 +1576,7 @@ Well, I fixed the dokchitser script so it would pass some doctests in number_fie
 archive/issue_comments_088194.json:
 ```json
 {
-    "body": "Replying to [comment:56 cremona]:\n> On your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n\nCertainly, yes.  That's why I called my solution a \"work-around\".  What you want to do is every time a gp process gets started, the first line should be\n\n```\ndefault(breakloop,0);\n```\n\n\nBut I don't know how to do this.",
+    "body": "Replying to [comment:56 cremona]:\n> On your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n\n\nCertainly, yes.  That's why I called my solution a \"work-around\".  What you want to do is every time a gp process gets started, the first line should be\n\n```\ndefault(breakloop,0);\n```\n\nBut I don't know how to do this.",
     "created_at": "2010-07-11T14:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1587,12 +1588,12 @@ archive/issue_comments_088194.json:
 Replying to [comment:56 cremona]:
 > On your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?
 
+
 Certainly, yes.  That's why I called my solution a "work-around".  What you want to do is every time a gp process gets started, the first line should be
 
 ```
 default(breakloop,0);
 ```
-
 
 But I don't know how to do this.
 
@@ -1603,7 +1604,7 @@ But I don't know how to do this.
 archive/issue_comments_088195.json:
 ```json
 {
-    "body": "> But I don't know how to do this.\n\nLook in interfaces/gp.py and/or expect.py.",
+    "body": "> But I don't know how to do this.\n\n\nLook in interfaces/gp.py and/or expect.py.",
     "created_at": "2010-07-11T14:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1613,6 +1614,7 @@ archive/issue_comments_088195.json:
 ```
 
 > But I don't know how to do this.
+
 
 Look in interfaces/gp.py and/or expect.py.
 
@@ -1700,7 +1702,7 @@ TODO: add more doctests for factoring polynomials over number fields.  Various c
 archive/issue_comments_088200.json:
 ```json
 {
-    "body": "Replying to [comment:59 was]:\n> > But I don't know how to do this.\n> \n> Look in interfaces/gp.py and/or expect.py.  \n\nSorted,  I added one line (line 170) in sage/interfaces/gp.py which says\n\n```\n        self._eval_line('default(breakloop,0);')\n```\n\nto get the command run everytime a new gp instance is created.  Now we get\n\n```\nsage: gp.eval('1/0')\n'  ***   at top-level: 1/0\\n  ***                  ^--\\n  *** _/_: division by zero'\n```\n\n(followed by a new sage: prompt) and also\n\n```\nRR(gp(exp(1)))\n2.71828182845905\nsage: \n```\n\nwith no problems.",
+    "body": "Replying to [comment:59 was]:\n> > But I don't know how to do this.\n\n> \n> Look in interfaces/gp.py and/or expect.py.  \n\n\nSorted,  I added one line (line 170) in sage/interfaces/gp.py which says\n\n```\n        self._eval_line('default(breakloop,0);')\n```\nto get the command run everytime a new gp instance is created.  Now we get\n\n```\nsage: gp.eval('1/0')\n'  ***   at top-level: 1/0\\n  ***                  ^--\\n  *** _/_: division by zero'\n```\n(followed by a new sage: prompt) and also\n\n```\nRR(gp(exp(1)))\n2.71828182845905\nsage: \n```\nwith no problems.",
     "created_at": "2010-07-12T09:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1711,22 +1713,22 @@ archive/issue_comments_088200.json:
 
 Replying to [comment:59 was]:
 > > But I don't know how to do this.
+
 > 
 > Look in interfaces/gp.py and/or expect.py.  
+
 
 Sorted,  I added one line (line 170) in sage/interfaces/gp.py which says
 
 ```
         self._eval_line('default(breakloop,0);')
 ```
-
 to get the command run everytime a new gp instance is created.  Now we get
 
 ```
 sage: gp.eval('1/0')
 '  ***   at top-level: 1/0\n  ***                  ^--\n  *** _/_: division by zero'
 ```
-
 (followed by a new sage: prompt) and also
 
 ```
@@ -1734,7 +1736,6 @@ RR(gp(exp(1)))
 2.71828182845905
 sage: 
 ```
-
 with no problems.
 
 
@@ -1782,7 +1783,7 @@ I replaced Jeroen's 9343_extcode-dokchitser.patch with a new one which also fixe
 archive/issue_comments_088203.json:
 ```json
 {
-    "body": "Replying to [comment:56 cremona]:\n> Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n\nApologies for this outburst.  I did waste time, but only because of my inferior gp-script debugging skills.  Thanks to Jeroen there is a much simpler fix for what was troubling me!\n\n> \n> On your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n> \n> Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.",
+    "body": "Replying to [comment:56 cremona]:\n> Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.\n\n\nApologies for this outburst.  I did waste time, but only because of my inferior gp-script debugging skills.  Thanks to Jeroen there is a much simpler fix for what was troubling me!\n\n> \n> On your other point, well spotted.  But would it not be simpler to send to the gp process on initialization the command gp._eval_line('breakloop=0;') ?\n> \n> Now I will go out and enjoy my Sunday, since my efforts seem to be not needed.",
     "created_at": "2010-07-12T09:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1793,6 +1794,7 @@ archive/issue_comments_088203.json:
 
 Replying to [comment:56 cremona]:
 > Jeroen:  I was surprised to see your dokchitser patch since I thought I was working on that -- and I have been in correspondence with Tim D all morning trying to sort out the use of global variables.  So, does you patch sort out all those issues (as well as the easy defult() ones)?  If so, I clearly have wasted a lot of time today.  This example makes it clear how extremely important it is that people say clearly what tey are working on.  And I DID say clearly that I was working on everythin the elliptic_curves directory, which includes all the code which calls the Dokchiter script.
+
 
 Apologies for this outburst.  I did waste time, but only because of my inferior gp-script debugging skills.  Thanks to Jeroen there is a much simpler fix for what was troubling me!
 
@@ -1808,7 +1810,7 @@ Apologies for this outburst.  I did waste time, but only because of my inferior 
 archive/issue_comments_088204.json:
 ```json
 {
-    "body": "Replying to [comment:37 jdemeyer]:\n> Replying to [comment:35 was]:\n> > Replying to [comment:33 cremona]:\n> > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n> > \n> > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n> \n> I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.\n\nThe answer is at #7092:  because of a failure to build pari with gcc-4.4.1 as distributed by Fedora 11, on ALL Linux systems the OPTFLAG is set to -O1 instead of -O3.  Is there not a way to detect that particular compiler-distro combination?  Otherwise all Linux users suffer!",
+    "body": "Replying to [comment:37 jdemeyer]:\n> Replying to [comment:35 was]:\n> > Replying to [comment:33 cremona]:\n> > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?\n\n> > \n> > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. \n\n> \n> I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.\n\n\nThe answer is at #7092:  because of a failure to build pari with gcc-4.4.1 as distributed by Fedora 11, on ALL Linux systems the OPTFLAG is set to -O1 instead of -O3.  Is there not a way to detect that particular compiler-distro combination?  Otherwise all Linux users suffer!",
     "created_at": "2010-07-13T13:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1821,10 +1823,13 @@ Replying to [comment:37 jdemeyer]:
 > Replying to [comment:35 was]:
 > > Replying to [comment:33 cremona]:
 > > > I just noticed that the .p3.spkg compiles pari with flag -O1.  Surely this is not a sensible choice?
+
 > > 
 > > Surely it was done on purpose, because with a bigger optimization flag PARI must have exhibited some bugs.  The question is how/why/if this is still needed. 
+
 > 
 > I always compile my own copy of PARI/GP with -O3 -fomit-frame-pointer -march=core2 using the latest gcc and that seems to work fine.
+
 
 The answer is at #7092:  because of a failure to build pari with gcc-4.4.1 as distributed by Fedora 11, on ALL Linux systems the OPTFLAG is set to -O1 instead of -O3.  Is there not a way to detect that particular compiler-distro combination?  Otherwise all Linux users suffer!
 
@@ -1835,7 +1840,7 @@ The answer is at #7092:  because of a failure to build pari with gcc-4.4.1 as di
 archive/issue_comments_088205.json:
 ```json
 {
-    "body": ">  Is there not a way to detect that particular compiler-distro combination? Otherwise all Linux users suffer!\n\nIt was a big mistake that #7092 got a positive review (from Jaap), and another mistake that the release manager (me) didn't reject that review.  Anyway, thanks for tracking this down -- we should definitely make that -O1 hack only Fedora 11.\n\n -- William",
+    "body": ">  Is there not a way to detect that particular compiler-distro combination? Otherwise all Linux users suffer!\n\n\nIt was a big mistake that #7092 got a positive review (from Jaap), and another mistake that the release manager (me) didn't reject that review.  Anyway, thanks for tracking this down -- we should definitely make that -O1 hack only Fedora 11.\n\n -- William",
     "created_at": "2010-07-13T21:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1845,6 +1850,7 @@ archive/issue_comments_088205.json:
 ```
 
 >  Is there not a way to detect that particular compiler-distro combination? Otherwise all Linux users suffer!
+
 
 It was a big mistake that #7092 got a positive review (from Jaap), and another mistake that the release manager (me) didn't reject that review.  Anyway, thanks for tracking this down -- we should definitely make that -O1 hack only Fedora 11.
 
@@ -1965,7 +1971,7 @@ spkg-check for Pari
 archive/issue_comments_088211.json:
 ```json
 {
-    "body": "Replying to [comment:69 cremona]:\n> trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  \n\nThis will not install for me.\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. \n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.5\n* gcc 4.4.4\n\nOne likely cause of a problem is the `Dynamic Lib linker` does not include the -m64 flag (it should be included if SAGE64 is \"yes\"). \n\n\n```\npari-2.4.3.svn.p4/.hgignore\npari-2.4.3.svn.p4/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: /export/home/drkirkby/gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4-multilib --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.4.4-multilib --with-mpfr=/usr/local/gcc-4.4.4-multilib --disable-nls --enable-checking=release --enable-werror=no --enable-multilib --with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.4.4 (GCC) \n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/bin/ranlib\n...perl is /usr/bin/perl\nGNU compiler version 4.4.4 (GCC)\nGiven the previous choices, sizeof(long) is 8 chars.\nThe internal word representation of a double is not needed (64bit).\n==========================================================================\nBuilding for: ix86 running solaris (x86-64/GMP kernel) 64-bit version\n==========================================================================\nC compiler is          gcc -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer -fPIC  -g -m64   \nExecutable linker is   gcc  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer -fPIC  -g -m64   \nDynamic Lib linker is  gcc  -shared  $(CFLAGS) $(DLCFLAGS) -Wl,-G,-h,$(LIBPARI_SONAME) \nLooking in C lib for some symbols...\n...Found exp2.\n...Found log2.\n...Found strftime.\n...Found getrusage.\n...Found sigaction.\n...Found TIOCGWINSZ.\n...Found getrlimit.\n...Found stat.\n...Found vsnprintf.\n...Found waitpid.\n...Found setsid.\n...Found getenv.\n...Found isatty.\n...Found alarm.\n...Found dlopen.\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n...Found readline header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found history header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found libtermcap in /export/home/drkirkby/sage-4.5/local/lib/\n...Library termcap needed by readline\n###\n### Readline library detected, but does not seem to work\n###\n### Building without GNU readline support\nInstallation prefix ? [/export/home/drkirkby/sage-4.5/local]\n...for architecture-independent files (share-prefix) ? [/export/home/drkirkby/sage-4.5/local/share]\nInstallation directories for:\n...executables (gp, gphelp) ? [/export/home/drkirkby/sage-4.5/local/bin]\n...libraries (libpari) ? [/export/home/drkirkby/sage-4.5/local/lib]\n...include files ? [/export/home/drkirkby/sage-4.5/local/include]\n...manual pages ? [/export/home/drkirkby/sage-4.5/local/share/man/man1]\n...other system-dependent data ? [/export/home/drkirkby/sage-4.5/local/lib/pari]\n...other system-independent data ? [/export/home/drkirkby/sage-4.5/local/share/pari]\nDefault is dynamic executable and shared library\n==========================================================================\nExtracting examples/Makefile.solaris-ix86\nExtracting Osolaris-ix86/Makefile\nExtracting Makefile\nExtracting Osolaris-ix86/paricfg.h\nExtracting Osolaris-ix86/../Odos/paricfg.h\nExtracting scripts and macros\n...in doc\n...in misc\n==========================================================================\nShall we try to build pari 2.4.3 (development) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nMaking gp in Osolaris-ix86\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.4.3.svn.p4/src/Osolaris-ix86'\nmake[1]: warning: -jN forced in submake: disabling jobserver mode.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\nif test -r ./tune.h; then d=.; else d=../src/kernel/none; fi;          cat $d/tune.h ../src/kernel/none/int.h ../src/kernel/none/level1.h > parilvl1.h\ncd ../src/desc && /usr/bin/perl whatnow > whatnow-solaris-ix86-23868.tmp\ncat ../src/kernel/none/mp.c ../src/kernel/none/cmp.c ../src/kernel/none/gcdll.c ../src/kernel/none/ratlift.c  ../src/kernel/none/invmod.c ../src/kernel/none/gcd.c ../src/kernel/none/gcdext.c ../src/kernel/none/mp_indep.c ../src/kernel/none/add.c > mp.c\nbison -d ../src/language/parse.y -o ../src/language/parse.c\nmake[1]: bison: Command not found\nmake[1]: *** [../src/language/parse.h] Error 127\nmake[1]: *** Waiting for unfinished jobs....\nmv ../src/desc/whatnow-solaris-ix86-23868.tmp ../src/gp/whatnow.h\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.4.3.svn.p4/src/Osolaris-ix86'\nmake: *** [gp] Error 2\nError building GP\n\nreal\t0m1.203s\nuser\t0m0.551s\nsys\t0m0.640s\nsage: An error occurred while installing pari-2.4.3.svn.p4\n```\n",
+    "body": "Replying to [comment:69 cremona]:\n> trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  \n\n\nThis will not install for me.\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. \n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.5\n* gcc 4.4.4\n\nOne likely cause of a problem is the `Dynamic Lib linker` does not include the -m64 flag (it should be included if SAGE64 is \"yes\"). \n\n```\npari-2.4.3.svn.p4/.hgignore\npari-2.4.3.svn.p4/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: /export/home/drkirkby/gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4-multilib --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.4.4-multilib --with-mpfr=/usr/local/gcc-4.4.4-multilib --disable-nls --enable-checking=release --enable-werror=no --enable-multilib --with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.4.4 (GCC) \n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) \nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/bin/ranlib\n...perl is /usr/bin/perl\nGNU compiler version 4.4.4 (GCC)\nGiven the previous choices, sizeof(long) is 8 chars.\nThe internal word representation of a double is not needed (64bit).\n==========================================================================\nBuilding for: ix86 running solaris (x86-64/GMP kernel) 64-bit version\n==========================================================================\nC compiler is          gcc -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer -fPIC  -g -m64   \nExecutable linker is   gcc  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer -fPIC  -g -m64   \nDynamic Lib linker is  gcc  -shared  $(CFLAGS) $(DLCFLAGS) -Wl,-G,-h,$(LIBPARI_SONAME) \nLooking in C lib for some symbols...\n...Found exp2.\n...Found log2.\n...Found strftime.\n...Found getrusage.\n...Found sigaction.\n...Found TIOCGWINSZ.\n...Found getrlimit.\n...Found stat.\n...Found vsnprintf.\n...Found waitpid.\n...Found setsid.\n...Found getenv.\n...Found isatty.\n...Found alarm.\n...Found dlopen.\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n...Found readline header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found history header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found libtermcap in /export/home/drkirkby/sage-4.5/local/lib/\n...Library termcap needed by readline\n###\n### Readline library detected, but does not seem to work\n###\n### Building without GNU readline support\nInstallation prefix ? [/export/home/drkirkby/sage-4.5/local]\n...for architecture-independent files (share-prefix) ? [/export/home/drkirkby/sage-4.5/local/share]\nInstallation directories for:\n...executables (gp, gphelp) ? [/export/home/drkirkby/sage-4.5/local/bin]\n...libraries (libpari) ? [/export/home/drkirkby/sage-4.5/local/lib]\n...include files ? [/export/home/drkirkby/sage-4.5/local/include]\n...manual pages ? [/export/home/drkirkby/sage-4.5/local/share/man/man1]\n...other system-dependent data ? [/export/home/drkirkby/sage-4.5/local/lib/pari]\n...other system-independent data ? [/export/home/drkirkby/sage-4.5/local/share/pari]\nDefault is dynamic executable and shared library\n==========================================================================\nExtracting examples/Makefile.solaris-ix86\nExtracting Osolaris-ix86/Makefile\nExtracting Makefile\nExtracting Osolaris-ix86/paricfg.h\nExtracting Osolaris-ix86/../Odos/paricfg.h\nExtracting scripts and macros\n...in doc\n...in misc\n==========================================================================\nShall we try to build pari 2.4.3 (development) now (y/n)? [n]\nOk. Type \"make install\" when you are ready\nBye !\nBuilding and install PARI\nMaking gp in Osolaris-ix86\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.4.3.svn.p4/src/Osolaris-ix86'\nmake[1]: warning: -jN forced in submake: disabling jobserver mode.\n../config/genkernel ../src/kernel/x86_64/asm0.h > parilvl0.h\nif test -r ./tune.h; then d=.; else d=../src/kernel/none; fi;          cat $d/tune.h ../src/kernel/none/int.h ../src/kernel/none/level1.h > parilvl1.h\ncd ../src/desc && /usr/bin/perl whatnow > whatnow-solaris-ix86-23868.tmp\ncat ../src/kernel/none/mp.c ../src/kernel/none/cmp.c ../src/kernel/none/gcdll.c ../src/kernel/none/ratlift.c  ../src/kernel/none/invmod.c ../src/kernel/none/gcd.c ../src/kernel/none/gcdext.c ../src/kernel/none/mp_indep.c ../src/kernel/none/add.c > mp.c\nbison -d ../src/language/parse.y -o ../src/language/parse.c\nmake[1]: bison: Command not found\nmake[1]: *** [../src/language/parse.h] Error 127\nmake[1]: *** Waiting for unfinished jobs....\nmv ../src/desc/whatnow-solaris-ix86-23868.tmp ../src/gp/whatnow.h\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.4.3.svn.p4/src/Osolaris-ix86'\nmake: *** [gp] Error 2\nError building GP\n\nreal\t0m1.203s\nuser\t0m0.551s\nsys\t0m0.640s\nsage: An error occurred while installing pari-2.4.3.svn.p4\n```",
     "created_at": "2010-07-18T14:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -1977,6 +1983,7 @@ archive/issue_comments_088211.json:
 Replying to [comment:69 cremona]:
 > trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  
 
+
 This will not install for me.
 
 ## Build environment
@@ -1987,7 +1994,6 @@ This will not install for me.
 * gcc 4.4.4
 
 One likely cause of a problem is the `Dynamic Lib linker` does not include the -m64 flag (it should be included if SAGE64 is "yes"). 
-
 
 ```
 pari-2.4.3.svn.p4/.hgignore
@@ -2109,7 +2115,6 @@ sage: An error occurred while installing pari-2.4.3.svn.p4
 
 
 
-
 ---
 
 archive/issue_comments_088212.json:
@@ -2133,7 +2138,7 @@ Is this something wrong with pari's Configure script -- in which case should be 
 archive/issue_comments_088213.json:
 ```json
 {
-    "body": "Replying to [comment:70 drkirkby]:\n> I'm attaching a `spkg-check` file. I originally created #9518 to add the `spkg-check`, but John said to leave it, and let the changes be made as part of this ticket. When this ticket gets closed, so can #9518\n\nI found out how to exclude a test from being run with test-all (there's a list in src/config/get_test) and the next version of the spkg will patch that file appropriately.\n\n> \n> Note there is an error in spkg-install on the first line, which displays as:\n> \n> `B1;2000;0c#!/bin/sh` \n> \n\nFixed.  Probably a finger-blunder by me.\n\n> In fact, I'm surprised that works at all. \n> \n> Dave",
+    "body": "Replying to [comment:70 drkirkby]:\n> I'm attaching a `spkg-check` file. I originally created #9518 to add the `spkg-check`, but John said to leave it, and let the changes be made as part of this ticket. When this ticket gets closed, so can #9518\n\n\nI found out how to exclude a test from being run with test-all (there's a list in src/config/get_test) and the next version of the spkg will patch that file appropriately.\n\n> \n> Note there is an error in spkg-install on the first line, which displays as:\n> \n> `B1;2000;0c#!/bin/sh` \n> \n\n\nFixed.  Probably a finger-blunder by me.\n\n> In fact, I'm surprised that works at all. \n> \n> Dave",
     "created_at": "2010-07-18T15:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2145,6 +2150,7 @@ archive/issue_comments_088213.json:
 Replying to [comment:70 drkirkby]:
 > I'm attaching a `spkg-check` file. I originally created #9518 to add the `spkg-check`, but John said to leave it, and let the changes be made as part of this ticket. When this ticket gets closed, so can #9518
 
+
 I found out how to exclude a test from being run with test-all (there's a list in src/config/get_test) and the next version of the spkg will patch that file appropriately.
 
 > 
@@ -2152,6 +2158,7 @@ I found out how to exclude a test from being run with test-all (there's a list i
 > 
 > `B1;2000;0c#!/bin/sh` 
 > 
+
 
 Fixed.  Probably a finger-blunder by me.
 
@@ -2166,7 +2173,7 @@ Fixed.  Probably a finger-blunder by me.
 archive/issue_comments_088214.json:
 ```json
 {
-    "body": "Replying to [comment:72 cremona]:\n> Is this something wrong with pari's Configure script -- in which case should be reported upstream?  Or something which could be fixed by a change in the spkg-install script?\nThe type at the start of spkg-install is in the current version of pari. I'm puzzled it works at all, but it seems to. \n\nI was mistaken on the LINKER FLAGS, as that include CFLAGS, so the -m64 will get there from that. \n\nHowever, this still thinks gmp is broken. The version of Pari in Sage at the moment reports:\n\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /rootpool2/local/kirkby/sage-4.5-hacked-for-64-bit-solaris/local/lib\n...Found gmp header in /rootpool2/local/kirkby/sage-4.5-hacked-for-64-bit-solaris/local/include\nUsing GNU MP, version 4.3.1\n...Found libX11 in /usr/openwin/lib\n...Found X11 header files in /usr/openwin/include/X11\n```\n\n\ncompared to this version, where I see: \n\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n```\n\n\nSo something has changed for the worst. \n\nThis version from svn wants bison too, so you will have to generate the files, since bison is not a prerequisite for Sage, and is not included in Sage. \n\nDave",
+    "body": "Replying to [comment:72 cremona]:\n> Is this something wrong with pari's Configure script -- in which case should be reported upstream?  Or something which could be fixed by a change in the spkg-install script?\n\nThe type at the start of spkg-install is in the current version of pari. I'm puzzled it works at all, but it seems to. \n\nI was mistaken on the LINKER FLAGS, as that include CFLAGS, so the -m64 will get there from that. \n\nHowever, this still thinks gmp is broken. The version of Pari in Sage at the moment reports:\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /rootpool2/local/kirkby/sage-4.5-hacked-for-64-bit-solaris/local/lib\n...Found gmp header in /rootpool2/local/kirkby/sage-4.5-hacked-for-64-bit-solaris/local/include\nUsing GNU MP, version 4.3.1\n...Found libX11 in /usr/openwin/lib\n...Found X11 header files in /usr/openwin/include/X11\n```\n\ncompared to this version, where I see: \n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n```\n\nSo something has changed for the worst. \n\nThis version from svn wants bison too, so you will have to generate the files, since bison is not a prerequisite for Sage, and is not included in Sage. \n\nDave",
     "created_at": "2010-07-19T00:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2177,12 +2184,12 @@ archive/issue_comments_088214.json:
 
 Replying to [comment:72 cremona]:
 > Is this something wrong with pari's Configure script -- in which case should be reported upstream?  Or something which could be fixed by a change in the spkg-install script?
+
 The type at the start of spkg-install is in the current version of pari. I'm puzzled it works at all, but it seems to. 
 
 I was mistaken on the LINKER FLAGS, as that include CFLAGS, so the -m64 will get there from that. 
 
 However, this still thinks gmp is broken. The version of Pari in Sage at the moment reports:
-
 
 ```
 Checking for optional libraries and headers...
@@ -2193,9 +2200,7 @@ Using GNU MP, version 4.3.1
 ...Found X11 header files in /usr/openwin/include/X11
 ```
 
-
 compared to this version, where I see: 
-
 
 ```
 Checking for optional libraries and headers...
@@ -2208,7 +2213,6 @@ ld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file o
 Hi-Res Graphics: none
 ...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib
 ```
-
 
 So something has changed for the worst. 
 
@@ -2223,7 +2227,7 @@ Dave
 archive/issue_comments_088215.json:
 ```json
 {
-    "body": "Replying to [comment:69 cremona]:\n> trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:\n> \n>     1. All doctests in schemes/elliptic_curves pass except heegner.py\n>     2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested\" for now\n>     3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV\n> \n>  I thought this worth posting despite there still being issues in some of the files it touches.\n\nNice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.",
+    "body": "Replying to [comment:69 cremona]:\n> trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:\n> \n> 1. All doctests in schemes/elliptic_curves pass except heegner.py\n> 2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested\" for now\n> 3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV\n> \n>  I thought this worth posting despite there still being issues in some of the files it touches.\n\n\nNice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.",
     "created_at": "2010-07-19T21:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2235,11 +2239,12 @@ archive/issue_comments_088215.json:
 Replying to [comment:69 cremona]:
 > trac_9343-elliptic-curve.patch + http://www.warwick.ac.uk/staff/J.E.Cremona/pari-2.4.3.svn.p4.spkg  (which upgrades to svn 12533)   do the following:
 > 
->     1. All doctests in schemes/elliptic_curves pass except heegner.py
->     2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested" for now
->     3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV
+> 1. All doctests in schemes/elliptic_curves pass except heegner.py
+> 2. All doctests in interfaces/* pass except for two issues in gp.py marked not tested" for now
+> 3. All in libs/ pass except some remaining issues in gen.pyx, mostly just fuzz but including one SIGSEGV
 > 
 >  I thought this worth posting despite there still being issues in some of the files it touches.
+
 
 Nice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.
 
@@ -2280,7 +2285,7 @@ Dave
 archive/issue_comments_088217.json:
 ```json
 {
-    "body": "Looking at the error message above:\n\n\n```\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n```\n\n\nand comparing it to the GMP libraries that were installed, the version numbers do not match. Pari is looking for `libgmp.so.10` but I have the following GMP related files:\n\n\n```\ndrkirkby@hawk:~/sage-4.5/local/lib$ ls -ld libgmp*\n-rwxr-xr-x+  1 drkirkby staff        803 Jul 16 13:10 libgmp.la\nlrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so -> libgmp.so.3.4.6\nlrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so.3 -> libgmp.so.3.4.6\n-rwxr-xr-x+  1 drkirkby staff     549536 Jul 16 13:10 libgmp.so.3.4.6\n-rwxr-xr-x+  1 drkirkby staff        919 Jul 16 13:10 libgmpxx.la\nlrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so -> libgmpxx.so.3.1.6\nlrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so.3 -> libgmpxx.so.3.1.6\n-rwxr-xr-x+  1 drkirkby staff      26712 Jul 16 13:10 libgmpxx.so.3.1.6\n```\n\n\ni.e. there is nothing like a version 10. The installed libraries have a 3.x in them, but Pari is looking for a .10. \n\nI've installed bison on the system, so the error message about a missing bison is not appearing any more, but that has not resolve either \n* The *readline* issue, which I've had for ages. OR\n* The *gmp* library issue, which is unique to this update, and does not show up in the version in Sage. \n\nDave",
+    "body": "Looking at the error message above:\n\n```\nld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 24072: Killed\n```\n\nand comparing it to the GMP libraries that were installed, the version numbers do not match. Pari is looking for `libgmp.so.10` but I have the following GMP related files:\n\n```\ndrkirkby@hawk:~/sage-4.5/local/lib$ ls -ld libgmp*\n-rwxr-xr-x+  1 drkirkby staff        803 Jul 16 13:10 libgmp.la\nlrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so -> libgmp.so.3.4.6\nlrwxrwxrwx   1 drkirkby staff         15 Jul 16 13:10 libgmp.so.3 -> libgmp.so.3.4.6\n-rwxr-xr-x+  1 drkirkby staff     549536 Jul 16 13:10 libgmp.so.3.4.6\n-rwxr-xr-x+  1 drkirkby staff        919 Jul 16 13:10 libgmpxx.la\nlrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so -> libgmpxx.so.3.1.6\nlrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so.3 -> libgmpxx.so.3.1.6\n-rwxr-xr-x+  1 drkirkby staff      26712 Jul 16 13:10 libgmpxx.so.3.1.6\n```\n\ni.e. there is nothing like a version 10. The installed libraries have a 3.x in them, but Pari is looking for a .10. \n\nI've installed bison on the system, so the error message about a missing bison is not appearing any more, but that has not resolve either \n* The *readline* issue, which I've had for ages. OR\n* The *gmp* library issue, which is unique to this update, and does not show up in the version in Sage. \n\nDave",
     "created_at": "2010-07-20T02:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2291,15 +2296,12 @@ archive/issue_comments_088217.json:
 
 Looking at the error message above:
 
-
 ```
 ld.so.1: solaris-ix86-rlv23868: fatal: libgmp.so.10: open failed: No such file or directory
 ./Configure[79]: .: line 38: 24072: Killed
 ```
 
-
 and comparing it to the GMP libraries that were installed, the version numbers do not match. Pari is looking for `libgmp.so.10` but I have the following GMP related files:
-
 
 ```
 drkirkby@hawk:~/sage-4.5/local/lib$ ls -ld libgmp*
@@ -2312,7 +2314,6 @@ lrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so -> libgmpxx.so
 lrwxrwxrwx   1 drkirkby staff         17 Jul 16 13:10 libgmpxx.so.3 -> libgmpxx.so.3.1.6
 -rwxr-xr-x+  1 drkirkby staff      26712 Jul 16 13:10 libgmpxx.so.3.1.6
 ```
-
 
 i.e. there is nothing like a version 10. The installed libraries have a 3.x in them, but Pari is looking for a .10. 
 
@@ -2329,7 +2330,7 @@ Dave
 archive/issue_comments_088218.json:
 ```json
 {
-    "body": "> \n> Nice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.\n\nThanks.  I finished fixing the interfaces/gp and very nearly finished libs/pari/ .  The serious issues are gone now.  I fear that the flood of newly merged tickets for 4.5.2 will require some rebasing, so as soon as I have tidied up I will post the revised patches and a new spkg (p5).  I have not touched anything in number_fields since you did, but it still might be a good idea to wait until I have posted what I have done.",
+    "body": "> \n> Nice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.\n\n\nThanks.  I finished fixing the interfaces/gp and very nearly finished libs/pari/ .  The serious issues are gone now.  I fear that the flood of newly merged tickets for 4.5.2 will require some rebasing, so as soon as I have tidied up I will post the revised patches and a new spkg (p5).  I have not touched anything in number_fields since you did, but it still might be a good idea to wait until I have posted what I have done.",
     "created_at": "2010-07-20T08:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2341,6 +2342,7 @@ archive/issue_comments_088218.json:
 > 
 > Nice work John!  Please let me know what you're working on, since I also plan to continue working on this ticket.
 
+
 Thanks.  I finished fixing the interfaces/gp and very nearly finished libs/pari/ .  The serious issues are gone now.  I fear that the flood of newly merged tickets for 4.5.2 will require some rebasing, so as soon as I have tidied up I will post the revised patches and a new spkg (p5).  I have not touched anything in number_fields since you did, but it still might be a good idea to wait until I have posted what I have done.
 
 
@@ -2350,7 +2352,7 @@ Thanks.  I finished fixing the interfaces/gp and very nearly finished libs/pari/
 archive/issue_comments_088219.json:
 ```json
 {
-    "body": "Replying to [comment:76 drkirkby]:\n> Hi, \n> John or someone else can perhaps convey this to the Pari developers. Would it be possible for them to add the -fPIC option on at least all Solaris systems. (Both SPARC and x86). If code goes into a shared library, it should be compiled position independent. It is unreliable if this is not done. There's some relevant information about this here. \n> \n> http://gcc.gnu.org/onlinedocs/gcc-4.5.0/gcc/Code-Gen-Options.html#Code-Gen-Options\n> http://gcc.gnu.org/onlinedocs/gcc-4.5.0/gcc/Link-Options.html#Link-Options\n> \n> I believe it would be more reliable to build with -fPIC when the code is going into a shared library - irrespective of the platform. What one should ensure though is there is not a mixture of PIC and non-PIC code, as that can be unreliable too. \n> \n> I've not had a chance to look at the other issues, but as far as I can see, this update completely breaks a 64-bit build on Solaris or OpenSolaris. \n> \n> I've also noticed that Pari reports that *readline* is not working on Solaris systems. Yet the *readline* is definitely working in my Sage builds on Solaris. Several parts of Sage link against readline (Pari, gap, Singular, ECL, Python ...). None of them believe that *readline* is broken, but Pari does. \n> \n> Dave \n\n\nI was planning to do this (report upstream).  On the positive side, they just put in a patch which obviates the need for 2/3 of our patch to the header files paripriv/paridecl.h.\n\nI think we will have a better chance of a positive reaction if we could report to pari a failure to build of pari as such and not pari-in-Sage, since they would reasonably reposond that as we patch some files they cannot be responsible.  For this, just copy the src directory of the most recent spkg (or wait until I put up p5 later today) and try it directly, after ./Configure <whatever-params> and make whatever.",
+    "body": "Replying to [comment:76 drkirkby]:\n> Hi, \n> John or someone else can perhaps convey this to the Pari developers. Would it be possible for them to add the -fPIC option on at least all Solaris systems. (Both SPARC and x86). If code goes into a shared library, it should be compiled position independent. It is unreliable if this is not done. There's some relevant information about this here. \n> \n> http://gcc.gnu.org/onlinedocs/gcc-4.5.0/gcc/Code-Gen-Options.html#Code-Gen-Options\n> http://gcc.gnu.org/onlinedocs/gcc-4.5.0/gcc/Link-Options.html#Link-Options\n> \n> I believe it would be more reliable to build with -fPIC when the code is going into a shared library - irrespective of the platform. What one should ensure though is there is not a mixture of PIC and non-PIC code, as that can be unreliable too. \n> \n> I've not had a chance to look at the other issues, but as far as I can see, this update completely breaks a 64-bit build on Solaris or OpenSolaris. \n> \n> I've also noticed that Pari reports that *readline* is not working on Solaris systems. Yet the *readline* is definitely working in my Sage builds on Solaris. Several parts of Sage link against readline (Pari, gap, Singular, ECL, Python ...). None of them believe that *readline* is broken, but Pari does. \n> \n> Dave \n\n\n\nI was planning to do this (report upstream).  On the positive side, they just put in a patch which obviates the need for 2/3 of our patch to the header files paripriv/paridecl.h.\n\nI think we will have a better chance of a positive reaction if we could report to pari a failure to build of pari as such and not pari-in-Sage, since they would reasonably reposond that as we patch some files they cannot be responsible.  For this, just copy the src directory of the most recent spkg (or wait until I put up p5 later today) and try it directly, after ./Configure <whatever-params> and make whatever.",
     "created_at": "2010-07-20T08:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2373,6 +2375,7 @@ Replying to [comment:76 drkirkby]:
 > I've also noticed that Pari reports that *readline* is not working on Solaris systems. Yet the *readline* is definitely working in my Sage builds on Solaris. Several parts of Sage link against readline (Pari, gap, Singular, ECL, Python ...). None of them believe that *readline* is broken, but Pari does. 
 > 
 > Dave 
+
 
 
 I was planning to do this (report upstream).  On the positive side, they just put in a patch which obviates the need for 2/3 of our patch to the header files paripriv/paridecl.h.
@@ -2404,7 +2407,7 @@ Am I the only one seeing problems with lcalc and genus2reduction?
 archive/issue_comments_088221.json:
 ```json
 {
-    "body": "Replying to [comment:80 fbissey]:\n> Am I the only one seeing problems with lcalc and genus2reduction?\n\nI don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.",
+    "body": "Replying to [comment:80 fbissey]:\n> Am I the only one seeing problems with lcalc and genus2reduction?\n\n\nI don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.",
     "created_at": "2010-07-20T09:32:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2416,6 +2419,7 @@ archive/issue_comments_088221.json:
 Replying to [comment:80 fbissey]:
 > Am I the only one seeing problems with lcalc and genus2reduction?
 
+
 I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.
 
 
@@ -2425,7 +2429,7 @@ I don't think you are.  I have been sorting out other things!  I have just finis
 archive/issue_comments_088222.json:
 ```json
 {
-    "body": "Replying to [comment:81 cremona]:\n> Replying to [comment:80 fbissey]:\n> > Am I the only one seeing problems with lcalc and genus2reduction?\n> \n> I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.\n\nOK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.",
+    "body": "Replying to [comment:81 cremona]:\n> Replying to [comment:80 fbissey]:\n> > Am I the only one seeing problems with lcalc and genus2reduction?\n\n> \n> I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.\n\n\nOK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.",
     "created_at": "2010-07-20T10:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2437,8 +2441,10 @@ archive/issue_comments_088222.json:
 Replying to [comment:81 cremona]:
 > Replying to [comment:80 fbissey]:
 > > Am I the only one seeing problems with lcalc and genus2reduction?
+
 > 
 > I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.
+
 
 OK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.
 
@@ -2449,7 +2455,7 @@ OK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.
 archive/issue_comments_088223.json:
 ```json
 {
-    "body": "Replying to [comment:79 cremona]:\n\n> I think we will have a better chance of a positive reaction if we could report to pari a failure to build of pari as such and not pari-in-Sage, since they would reasonably reposond that as we patch some files they cannot be responsible.  For this, just copy the src directory of the most recent spkg (or wait until I put up p5 later today) and try it directly, after ./Configure <whatever-params> and make whatever.\n> \n\nJohn,\n \nI'm going to attach to the ticket a failure observed with the Pari source code directly - outside of Sage. No compiler flags were set. \n\nThe hack of mine in Sage (adding `-fPIC`) resolves this, but it would be better if it could be fixed upstream. The file was actually 5.1 MB in size, as there are over 95,000 error messages. I've reduce the filed to 23 KB, but removing tons of very similar looking messages. See the file:\n\n`Pari-trunk-failure-on-OpenSolaris_x64.log.txt`\n\nThere are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n\nI believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n\nDave \n\nDave",
+    "body": "Replying to [comment:79 cremona]:\n\n> I think we will have a better chance of a positive reaction if we could report to pari a failure to build of pari as such and not pari-in-Sage, since they would reasonably reposond that as we patch some files they cannot be responsible.  For this, just copy the src directory of the most recent spkg (or wait until I put up p5 later today) and try it directly, after ./Configure <whatever-params> and make whatever.\n> \n\n\nJohn,\n \nI'm going to attach to the ticket a failure observed with the Pari source code directly - outside of Sage. No compiler flags were set. \n\nThe hack of mine in Sage (adding `-fPIC`) resolves this, but it would be better if it could be fixed upstream. The file was actually 5.1 MB in size, as there are over 95,000 error messages. I've reduce the filed to 23 KB, but removing tons of very similar looking messages. See the file:\n\n`Pari-trunk-failure-on-OpenSolaris_x64.log.txt`\n\nThere are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n\nI believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n\nDave \n\nDave",
     "created_at": "2010-07-20T10:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2462,6 +2468,7 @@ Replying to [comment:79 cremona]:
 
 > I think we will have a better chance of a positive reaction if we could report to pari a failure to build of pari as such and not pari-in-Sage, since they would reasonably reposond that as we patch some files they cannot be responsible.  For this, just copy the src directory of the most recent spkg (or wait until I put up p5 later today) and try it directly, after ./Configure <whatever-params> and make whatever.
 > 
+
 
 John,
  
@@ -2504,7 +2511,7 @@ Failure of Pari source code to build outside of Sage on an OpenSolaris machine
 archive/issue_comments_088225.json:
 ```json
 {
-    "body": "Attachment [Pari-trunk-failure-on-OpenSolaris_x64.log.txt](tarball://root/attachments/some-uuid/ticket9343/Pari-trunk-failure-on-OpenSolaris_x64.log.txt) by drkirkby created at 2010-07-20 10:31:37\n\nReplying to [comment:83 drkirkby]:\n\n> There are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n> \n> I believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n> \n> Dave \n\nI mean someone could try this on 't2.math.washington.edu' without using Sage. I'm sure William would set up an account for a Pari developer. They only need the Pari source - no Sage code to reproduce this error. \n\nDave",
+    "body": "Attachment [Pari-trunk-failure-on-OpenSolaris_x64.log.txt](tarball://root/attachments/some-uuid/ticket9343/Pari-trunk-failure-on-OpenSolaris_x64.log.txt) by drkirkby created at 2010-07-20 10:31:37\n\nReplying to [comment:83 drkirkby]:\n\n> There are similar issues on Solaris 10 SPARC. I can attach a log if needed, or someone can just try to build on 't2' outside of Pari. You will see very similar. \n> \n> I believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. \n> \n> Dave \n\n\nI mean someone could try this on 't2.math.washington.edu' without using Sage. I'm sure William would set up an account for a Pari developer. They only need the Pari source - no Sage code to reproduce this error. \n\nDave",
     "created_at": "2010-07-20T10:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2522,6 +2529,7 @@ Replying to [comment:83 drkirkby]:
 > I believe this should be applied on all platforms, as it will be more reliable. The code should be position independent if you are building shared libraries. 
 > 
 > Dave 
+
 
 I mean someone could try this on 't2.math.washington.edu' without using Sage. I'm sure William would set up an account for a Pari developer. They only need the Pari source - no Sage code to reproduce this error. 
 
@@ -2552,7 +2560,7 @@ I have sent a bug report to the PARI people about Solaris: [http://pari.math.u-b
 archive/issue_comments_088227.json:
 ```json
 {
-    "body": "Replying to [comment:82 fbissey]:\n> Replying to [comment:81 cremona]:\n> > Replying to [comment:80 fbissey]:\n> > > Am I the only one seeing problems with lcalc and genus2reduction?\n> > \n> > I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.\n> \n> OK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.\n\nIn my current setup, sage/interfaces/genus2reduction passes, as does sage/lfunctions/lcalc. \n\nI did not need to make any changes to lcalc!",
+    "body": "Replying to [comment:82 fbissey]:\n> Replying to [comment:81 cremona]:\n> > Replying to [comment:80 fbissey]:\n> > > Am I the only one seeing problems with lcalc and genus2reduction?\n\n> > \n> > I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.\n\n> \n> OK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.\n\n\nIn my current setup, sage/interfaces/genus2reduction passes, as does sage/lfunctions/lcalc. \n\nI did not need to make any changes to lcalc!",
     "created_at": "2010-07-20T11:20:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2565,10 +2573,13 @@ Replying to [comment:82 fbissey]:
 > Replying to [comment:81 cremona]:
 > > Replying to [comment:80 fbissey]:
 > > > Am I the only one seeing problems with lcalc and genus2reduction?
+
 > > 
 > > I don't think you are.  I have been sorting out other things!  I have just finished with the (rather important) sage/libs/pari and sage/intergaces/gp, with everything working except (bizarrely) the hyperbolic tangent function.
+
 > 
 > OK. I can attach some fixes for lcalc later, but I am stuck for genus2reduction.
+
 
 In my current setup, sage/interfaces/genus2reduction passes, as does sage/lfunctions/lcalc. 
 
@@ -2602,7 +2613,7 @@ is not just my set up.
 archive/issue_comments_088229.json:
 ```json
 {
-    "body": "Replying to [comment:87 fbissey]:\n> I am not talking about any tests. I didn't check that.\n> I was talking about building them.\n> And from what I am just digging, the failure for genus2reduction\n> is not just my set up.\n\nOK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?",
+    "body": "Replying to [comment:87 fbissey]:\n> I am not talking about any tests. I didn't check that.\n> I was talking about building them.\n> And from what I am just digging, the failure for genus2reduction\n> is not just my set up.\n\n\nOK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?",
     "created_at": "2010-07-20T11:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2617,6 +2628,7 @@ Replying to [comment:87 fbissey]:
 > And from what I am just digging, the failure for genus2reduction
 > is not just my set up.
 
+
 OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?
 
 
@@ -2626,7 +2638,7 @@ OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on th
 archive/issue_comments_088230.json:
 ```json
 {
-    "body": "Replying to [comment:88 cremona]:\n> Replying to [comment:87 fbissey]:\n> > I am not talking about any tests. I didn't check that.\n> > I was talking about building them.\n> > And from what I am just digging, the failure for genus2reduction\n> > is not just my set up.\n> \n> OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?\n\nNot yet. I think William is upstream for genus2reduction. \n\n\nI thought it should be attached to that ticket. I haven't seen any other\nticket about converting those spkg to pari-2.4.\n\n\nyou are probably right that they should have separate ticket but they should\nblock this one then. No use upgrading pari if it breaks other spkgs.\n\n\neclib builds fine. OK now I should go what was Dave acronym,\nMWWKM (my wife will kill me or something :) ).",
+    "body": "Replying to [comment:88 cremona]:\n> Replying to [comment:87 fbissey]:\n> > I am not talking about any tests. I didn't check that.\n> > I was talking about building them.\n> > And from what I am just digging, the failure for genus2reduction\n> > is not just my set up.\n\n> \n> OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?\n\n\nNot yet. I think William is upstream for genus2reduction. \n\n\nI thought it should be attached to that ticket. I haven't seen any other\nticket about converting those spkg to pari-2.4.\n\n\nyou are probably right that they should have separate ticket but they should\nblock this one then. No use upgrading pari if it breaks other spkgs.\n\n\neclib builds fine. OK now I should go what was Dave acronym,\nMWWKM (my wife will kill me or something :) ).",
     "created_at": "2010-07-20T11:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2641,8 +2653,10 @@ Replying to [comment:88 cremona]:
 > > I was talking about building them.
 > > And from what I am just digging, the failure for genus2reduction
 > > is not just my set up.
+
 > 
 > OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?
+
 
 Not yet. I think William is upstream for genus2reduction. 
 
@@ -2683,7 +2697,7 @@ This trac is finding a continuous stream of PARI bugs.  Another one: [http://par
 archive/issue_comments_088232.json:
 ```json
 {
-    "body": "Replying to [comment:89 fbissey]:\n> Replying to [comment:88 cremona]:\n> > Replying to [comment:87 fbissey]:\n> > > I am not talking about any tests. I didn't check that.\n> > > I was talking about building them.\n> > > And from what I am just digging, the failure for genus2reduction\n> > > is not just my set up.\n> > \n> > OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?\n> \n> Not yet. I think William is upstream for genus2reduction. \n\n\nGood.\n\n> \n> I thought it should be attached to that ticket. I haven't seen any other\n> ticket about converting those spkg to pari-2.4.\n\n> \n> you are probably right that they should have separate ticket but they should\n> block this one then. No use upgrading pari if it breaks other spkgs.\n\n> \n\nI agree -- if other spkgs need their source fixing they should on other tickets, one each, and we should have a list here.\n\n> eclib builds fine.\n\nOf course it does!\n\n OK now I should go what was Dave acronym,\n> MWWKM (my wife will kill me or something :) ).",
+    "body": "Replying to [comment:89 fbissey]:\n> Replying to [comment:88 cremona]:\n> > Replying to [comment:87 fbissey]:\n> > > I am not talking about any tests. I didn't check that.\n> > > I was talking about building them.\n> > > And from what I am just digging, the failure for genus2reduction\n> > > is not just my set up.\n\n> > \n> > OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?\n\n> \n> Not yet. I think William is upstream for genus2reduction. \n\n\n\nGood.\n\n> \n> I thought it should be attached to that ticket. I haven't seen any other\n> ticket about converting those spkg to pari-2.4.\n\n\n> \n> you are probably right that they should have separate ticket but they should\n> block this one then. No use upgrading pari if it breaks other spkgs.\n\n\n> \n\n\nI agree -- if other spkgs need their source fixing they should on other tickets, one each, and we should have a list here.\n\n> eclib builds fine.\n\n\nOf course it does!\n\n OK now I should go what was Dave acronym,\n> MWWKM (my wife will kill me or something :) ).",
     "created_at": "2010-07-20T13:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2699,10 +2713,13 @@ Replying to [comment:89 fbissey]:
 > > > I was talking about building them.
 > > > And from what I am just digging, the failure for genus2reduction
 > > > is not just my set up.
+
 > > 
 > > OK, I misunderstood.  I am working on sage-4.5 + the p4 spkg + all patches on this ticket (to both sage lib and extcode) + what I have done since then.  While you are working on building spkgs which use pari, right? That's an entirely different set of problems to solve.  Have you tried asking the authors of those spkgs (or rather, of the packages themselves) to help out?
+
 > 
 > Not yet. I think William is upstream for genus2reduction. 
+
 
 
 Good.
@@ -2711,15 +2728,19 @@ Good.
 > I thought it should be attached to that ticket. I haven't seen any other
 > ticket about converting those spkg to pari-2.4.
 
+
 > 
 > you are probably right that they should have separate ticket but they should
 > block this one then. No use upgrading pari if it breaks other spkgs.
 
+
 > 
+
 
 I agree -- if other spkgs need their source fixing they should on other tickets, one each, and we should have a list here.
 
 > eclib builds fine.
+
 
 Of course it does!
 
@@ -2733,7 +2754,7 @@ Of course it does!
 archive/issue_comments_088233.json:
 ```json
 {
-    "body": "Replying to [comment:90 jdemeyer]:\n> This trac is finding a continuous stream of PARI bugs.  Another one: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079)\n\nGood work!  I am down to 10 files (only!) in sage library with failing doctests, including 7 in rings.number_fields which I am leaving to you.  I will try to fix the other three before quitting for a bit (after uploading a patch of course -- currently 1768 lines since the ones posted here, and counting).",
+    "body": "Replying to [comment:90 jdemeyer]:\n> This trac is finding a continuous stream of PARI bugs.  Another one: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079)\n\n\nGood work!  I am down to 10 files (only!) in sage library with failing doctests, including 7 in rings.number_fields which I am leaving to you.  I will try to fix the other three before quitting for a bit (after uploading a patch of course -- currently 1768 lines since the ones posted here, and counting).",
     "created_at": "2010-07-20T13:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2744,6 +2765,7 @@ archive/issue_comments_088233.json:
 
 Replying to [comment:90 jdemeyer]:
 > This trac is finding a continuous stream of PARI bugs.  Another one: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1079)
+
 
 Good work!  I am down to 10 files (only!) in sage library with failing doctests, including 7 in rings.number_fields which I am leaving to you.  I will try to fix the other three before quitting for a bit (after uploading a patch of course -- currently 1768 lines since the ones posted here, and counting).
 
@@ -2774,7 +2796,7 @@ Apply to 4.5: replaces ALL previous sagelib patches
 archive/issue_comments_088235.json:
 ```json
 {
-    "body": "sagelib_9343-combined-new.patch replaces all previous sagelib patches.  With this and the *two* extcode patches (extcode_9343.patch and 9343_extcode_dokchitser-1.patch) I get only the following doctest failures:\n\n6 in number_fields:\n\n\n```\n\tsage -t  devel/sage-main/sage/rings/number_field/maps.py # 34 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py # 17 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal.py # 17 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_rel.py # 20 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_element.pyx # 2 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field.py # 47 doctests failed\n```\n\nwhich I think Jeroen is looking after, and  1 in elliptic_curves (rlm informed and passed buck to was):\n\n```\n\tsage -t  devel/sage-main/sage/schemes/elliptic_curves/heegner.py # 6 doctests failed\n```\n\nThere is also a failing doctest for tanh in libs/pari/gen.pyx which I disabled temporarily.  And there may be some doctests needing different 32-bit output;  but I have done enough for now.\n\nIndependently of this I have upgraded the spkg to the latest svn,  made the relavant changes to the patches in it, and added a spkg-test (with help from David Kirkby).  I will put up a link to that when I have succeeded in spkg-ing it.",
+    "body": "sagelib_9343-combined-new.patch replaces all previous sagelib patches.  With this and the *two* extcode patches (extcode_9343.patch and 9343_extcode_dokchitser-1.patch) I get only the following doctest failures:\n\n6 in number_fields:\n\n```\n\tsage -t  devel/sage-main/sage/rings/number_field/maps.py # 34 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py # 17 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_ideal.py # 17 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_rel.py # 20 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field_element.pyx # 2 doctests failed\n\tsage -t  devel/sage-main/sage/rings/number_field/number_field.py # 47 doctests failed\n```\nwhich I think Jeroen is looking after, and  1 in elliptic_curves (rlm informed and passed buck to was):\n\n```\n\tsage -t  devel/sage-main/sage/schemes/elliptic_curves/heegner.py # 6 doctests failed\n```\nThere is also a failing doctest for tanh in libs/pari/gen.pyx which I disabled temporarily.  And there may be some doctests needing different 32-bit output;  but I have done enough for now.\n\nIndependently of this I have upgraded the spkg to the latest svn,  made the relavant changes to the patches in it, and added a spkg-test (with help from David Kirkby).  I will put up a link to that when I have succeeded in spkg-ing it.",
     "created_at": "2010-07-20T14:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2787,7 +2809,6 @@ sagelib_9343-combined-new.patch replaces all previous sagelib patches.  With thi
 
 6 in number_fields:
 
-
 ```
 	sage -t  devel/sage-main/sage/rings/number_field/maps.py # 34 doctests failed
 	sage -t  devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py # 17 doctests failed
@@ -2796,13 +2817,11 @@ sagelib_9343-combined-new.patch replaces all previous sagelib patches.  With thi
 	sage -t  devel/sage-main/sage/rings/number_field/number_field_element.pyx # 2 doctests failed
 	sage -t  devel/sage-main/sage/rings/number_field/number_field.py # 47 doctests failed
 ```
-
 which I think Jeroen is looking after, and  1 in elliptic_curves (rlm informed and passed buck to was):
 
 ```
 	sage -t  devel/sage-main/sage/schemes/elliptic_curves/heegner.py # 6 doctests failed
 ```
-
 There is also a failing doctest for tanh in libs/pari/gen.pyx which I disabled temporarily.  And there may be some doctests needing different 32-bit output;  but I have done enough for now.
 
 Independently of this I have upgraded the spkg to the latest svn,  made the relavant changes to the patches in it, and added a spkg-test (with help from David Kirkby).  I will put up a link to that when I have succeeded in spkg-ing it.
@@ -2814,7 +2833,7 @@ Independently of this I have upgraded the spkg to the latest svn,  made the rela
 archive/issue_comments_088236.json:
 ```json
 {
-    "body": "Amazing discovery -- the script spkg-install is VERY broken, even the one currently distributed with sage 4.5!\n\nThere are several lines like \n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$TOP\"/patches/get_kernel config/\n```\n\nwhich should say\n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$TOP\"/patches/get_kernel src/config/\n```\n\n(note the missing \"src\").\n\nIf I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?\n\nI can change these to be \"correct\";  but am more tempted to delete them and see what happens...thoughts?",
+    "body": "Amazing discovery -- the script spkg-install is VERY broken, even the one currently distributed with sage 4.5!\n\nThere are several lines like \n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$TOP\"/patches/get_kernel config/\n```\nwhich should say\n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$TOP\"/patches/get_kernel src/config/\n```\n(note the missing \"src\").\n\nIf I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?\n\nI can change these to be \"correct\";  but am more tempted to delete them and see what happens...thoughts?",
     "created_at": "2010-07-20T16:04:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2831,14 +2850,12 @@ There are several lines like
 # pjeremy: fix for FreeBSD: #7825
 cp "$TOP"/patches/get_kernel config/
 ```
-
 which should say
 
 ```
 # pjeremy: fix for FreeBSD: #7825
 cp "$TOP"/patches/get_kernel src/config/
 ```
-
 (note the missing "src").
 
 If I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?
@@ -2872,7 +2889,7 @@ It includes the spkg-check which now works (i.e. it runs iff SAGE_CHECK is 'yes'
 archive/issue_comments_088238.json:
 ```json
 {
-    "body": "I get the following error in Cygwin:\n\n\n```\n\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../src/headers  -o trans3.o ../src/basemath/trans3.c\nbison -d ../src/language/parse.y -o ../src/language/parse.c\nmake[1]: bison: Command not found\nmake[1]: *** [../src/language/parse.h] Error 127\nmake[1]: Leaving directory `/home/mhansen/sage-4.3.5/spkg/build/pari-2.4.3.svn.p5/src/Ocygwin-i686'\nmake: *** [gp] Error 2\n```\n\n\nI don't believe that we require bison to be installed.",
+    "body": "I get the following error in Cygwin:\n\n```\n\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../src/headers  -o trans3.o ../src/basemath/trans3.c\nbison -d ../src/language/parse.y -o ../src/language/parse.c\nmake[1]: bison: Command not found\nmake[1]: *** [../src/language/parse.h] Error 127\nmake[1]: Leaving directory `/home/mhansen/sage-4.3.5/spkg/build/pari-2.4.3.svn.p5/src/Ocygwin-i686'\nmake: *** [gp] Error 2\n```\n\nI don't believe that we require bison to be installed.",
     "created_at": "2010-07-20T17:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2882,7 +2899,6 @@ archive/issue_comments_088238.json:
 ```
 
 I get the following error in Cygwin:
-
 
 ```
 
@@ -2894,7 +2910,6 @@ make[1]: Leaving directory `/home/mhansen/sage-4.3.5/spkg/build/pari-2.4.3.svn.p
 make: *** [gp] Error 2
 ```
 
-
 I don't believe that we require bison to be installed.
 
 
@@ -2904,7 +2919,7 @@ I don't believe that we require bison to be installed.
 archive/issue_comments_088239.json:
 ```json
 {
-    "body": "Replying to [comment:94 cremona]:\n> Amazing discovery -- the script spkg-install is VERY broken, even the one currently distributed with sage 4.5!\n> \n> There are several lines like \n> {{{\n> # pjeremy: fix for FreeBSD: #7825\n> cp \"$TOP\"/patches/get_kernel config/\n> }}}\n> which should say\n> {{{\n> # pjeremy: fix for FreeBSD: #7825\n> cp \"$TOP\"/patches/get_kernel src/config/\n> }}}\n> (note the missing \"src\").\n> \n> If I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?\n> \n> I can change these to be \"correct\";  but am more tempted to delete them and see what happens...thoughts?\n\nI think you are mistaken John. Further up the script is \n\n\n```\ncd src\n```\n\n\nso another `src` would be an error. \n\nI do sometimes think it is better to perhaps consider deleting all patches. I have just updated 'GSL' (#9533). GSL is a much simpler package I admit. I removed all patches. The new GSL package has built and passed all self-tests on Cygwin, Linux, HP-UX, OpenSolaris, OS X and Solaris. (Sage does not build fully on HP-UX, but enough of it builds to prove that GSL passes all tests). \n\nI hope at some point you are going to test on 't2'. I simply do not have the time to test everyones updates on 't2'. \n\nDave",
+    "body": "Replying to [comment:94 cremona]:\n> Amazing discovery -- the script spkg-install is VERY broken, even the one currently distributed with sage 4.5!\n> \n> There are several lines like \n> \n> ```\n> # pjeremy: fix for FreeBSD: #7825\n> cp \"$TOP\"/patches/get_kernel config/\n> ```\n> which should say\n> \n> ```\n> # pjeremy: fix for FreeBSD: #7825\n> cp \"$TOP\"/patches/get_kernel src/config/\n> ```\n> (note the missing \"src\").\n> \n> If I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?\n> \n> I can change these to be \"correct\";  but am more tempted to delete them and see what happens...thoughts?\n\n\nI think you are mistaken John. Further up the script is \n\n```\ncd src\n```\n\nso another `src` would be an error. \n\nI do sometimes think it is better to perhaps consider deleting all patches. I have just updated 'GSL' (#9533). GSL is a much simpler package I admit. I removed all patches. The new GSL package has built and passed all self-tests on Cygwin, Linux, HP-UX, OpenSolaris, OS X and Solaris. (Sage does not build fully on HP-UX, but enough of it builds to prove that GSL passes all tests). \n\nI hope at some point you are going to test on 't2'. I simply do not have the time to test everyones updates on 't2'. \n\nDave",
     "created_at": "2010-07-20T17:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2917,28 +2932,29 @@ Replying to [comment:94 cremona]:
 > Amazing discovery -- the script spkg-install is VERY broken, even the one currently distributed with sage 4.5!
 > 
 > There are several lines like 
-> {{{
+> 
+> ```
 > # pjeremy: fix for FreeBSD: #7825
 > cp "$TOP"/patches/get_kernel config/
-> }}}
+> ```
 > which should say
-> {{{
+> 
+> ```
 > # pjeremy: fix for FreeBSD: #7825
 > cp "$TOP"/patches/get_kernel src/config/
-> }}}
+> ```
 > (note the missing "src").
 > 
 > If I am right, how come anything works?  I mean, if these patches are supposedly essential, but are in effect not being applied, maybe they are not so essential after all?
 > 
 > I can change these to be "correct";  but am more tempted to delete them and see what happens...thoughts?
 
-I think you are mistaken John. Further up the script is 
 
+I think you are mistaken John. Further up the script is 
 
 ```
 cd src
 ```
-
 
 so another `src` would be an error. 
 
@@ -2955,7 +2971,7 @@ Dave
 archive/issue_comments_088240.json:
 ```json
 {
-    "body": "Replying to [comment:97 drkirkby]:\n>\n> I think you are mistaken John. Further up the script is \n> \n> {{{\n> cd src\n> }}}\n> \n> so another `src` would be an error. \n> \n\nYou are right -- I cross-poseted to sage-devel where this was pointed out to me.\n\n> I do sometimes think it is better to perhaps consider deleting all patches. I have just updated 'GSL' (#9533). GSL is a much simpler package I admit. I removed all patches. The new GSL package has built and passed all self-tests on Cygwin, Linux, HP-UX, OpenSolaris, OS X and Solaris. (Sage does not build fully on HP-UX, but enough of it builds to prove that GSL passes all tests). \n> \n> I hope at some point you are going to test on 't2'. I simply do not have the time to test everyones updates on 't2'. \n> \n\nWell I hope someone is, but I'm busy with other things for the next 2 days and then away for 3 weeks without opportunity to do Sage stuff.\n\n> Dave",
+    "body": "Replying to [comment:97 drkirkby]:\n>\n> I think you are mistaken John. Further up the script is \n> \n> {{{\n> cd src\n> }}}\n> \n> so another `src` would be an error. \n> \n\n\nYou are right -- I cross-poseted to sage-devel where this was pointed out to me.\n\n> I do sometimes think it is better to perhaps consider deleting all patches. I have just updated 'GSL' (#9533). GSL is a much simpler package I admit. I removed all patches. The new GSL package has built and passed all self-tests on Cygwin, Linux, HP-UX, OpenSolaris, OS X and Solaris. (Sage does not build fully on HP-UX, but enough of it builds to prove that GSL passes all tests). \n> \n> I hope at some point you are going to test on 't2'. I simply do not have the time to test everyones updates on 't2'. \n> \n\n\nWell I hope someone is, but I'm busy with other things for the next 2 days and then away for 3 weeks without opportunity to do Sage stuff.\n\n> Dave",
     "created_at": "2010-07-20T17:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -2975,12 +2991,14 @@ Replying to [comment:97 drkirkby]:
 > so another `src` would be an error. 
 > 
 
+
 You are right -- I cross-poseted to sage-devel where this was pointed out to me.
 
 > I do sometimes think it is better to perhaps consider deleting all patches. I have just updated 'GSL' (#9533). GSL is a much simpler package I admit. I removed all patches. The new GSL package has built and passed all self-tests on Cygwin, Linux, HP-UX, OpenSolaris, OS X and Solaris. (Sage does not build fully on HP-UX, but enough of it builds to prove that GSL passes all tests). 
 > 
 > I hope at some point you are going to test on 't2'. I simply do not have the time to test everyones updates on 't2'. 
 > 
+
 
 Well I hope someone is, but I'm busy with other things for the next 2 days and then away for 3 weeks without opportunity to do Sage stuff.
 
@@ -3013,7 +3031,7 @@ Some fixes in sage/rings/number_fields and doctest changes in sage/rings/polynom
 archive/issue_comments_088242.json:
 ```json
 {
-    "body": "I did a complete from scratch build of sage-4.5.1 with the new patches and did a long doctest.  I got some more errors than John:\n\n\n```\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/heegner.py # 7 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field.py # 18 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_point.py # 2 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_rel.py # 3 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_element.pyx # 2 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_ideal.py # 17 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_ideal_rel.py # 3 doctests failed\n        sage -t -long devel/sage-test/doc/en/constructions/algebraic_geometry.rst # 2 doctests failed\n        sage -t -long devel/sage-test/sage/interfaces/gp.py # 2 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_rational_field.py # 1 doctests failed\n```\n\n\nSome are probably because John did not do \"long\" doctests, but also in some cases I get PariError: not enough memory.  For example:\n\n```\nFile \"/usr/local/src/sage-newpari-4.5.1/devel/sage-test/sage/schemes/elliptic_curves/ell_generic.py\", line 2646:\n    sage: [t[1] for t in EllipticCurve(GF(10^60+3201),[0,a,0,b,0])._p_primary_torsion_basis(2)]\nException raised:\n[...]\n    PariError: not enough memory (28)\n```\n\n\nI will have a look at these errors and see what I can fix.",
+    "body": "I did a complete from scratch build of sage-4.5.1 with the new patches and did a long doctest.  I got some more errors than John:\n\n```\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/heegner.py # 7 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field.py # 18 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_point.py # 2 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_rel.py # 3 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_element.pyx # 2 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_ideal.py # 17 doctests failed\n        sage -t -long devel/sage-test/sage/rings/number_field/number_field_ideal_rel.py # 3 doctests failed\n        sage -t -long devel/sage-test/doc/en/constructions/algebraic_geometry.rst # 2 doctests failed\n        sage -t -long devel/sage-test/sage/interfaces/gp.py # 2 doctests failed\n        sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_rational_field.py # 1 doctests failed\n```\n\nSome are probably because John did not do \"long\" doctests, but also in some cases I get PariError: not enough memory.  For example:\n\n```\nFile \"/usr/local/src/sage-newpari-4.5.1/devel/sage-test/sage/schemes/elliptic_curves/ell_generic.py\", line 2646:\n    sage: [t[1] for t in EllipticCurve(GF(10^60+3201),[0,a,0,b,0])._p_primary_torsion_basis(2)]\nException raised:\n[...]\n    PariError: not enough memory (28)\n```\n\nI will have a look at these errors and see what I can fix.",
     "created_at": "2010-07-21T13:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3023,7 +3041,6 @@ archive/issue_comments_088242.json:
 ```
 
 I did a complete from scratch build of sage-4.5.1 with the new patches and did a long doctest.  I got some more errors than John:
-
 
 ```
         sage -t -long devel/sage-test/sage/schemes/elliptic_curves/heegner.py # 7 doctests failed
@@ -3039,7 +3056,6 @@ I did a complete from scratch build of sage-4.5.1 with the new patches and did a
         sage -t -long devel/sage-test/sage/schemes/elliptic_curves/ell_rational_field.py # 1 doctests failed
 ```
 
-
 Some are probably because John did not do "long" doctests, but also in some cases I get PariError: not enough memory.  For example:
 
 ```
@@ -3049,7 +3065,6 @@ Exception raised:
 [...]
     PariError: not enough memory (28)
 ```
-
 
 I will have a look at these errors and see what I can fix.
 
@@ -3120,7 +3135,7 @@ Secondly, the thread http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00
 archive/issue_comments_088246.json:
 ```json
 {
-    "body": "Replying to [comment:102 cremona]:\n> For more on the bison issue see the pari-dev thread here: http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00011.html\n> \n> It seems that we should not use an svn source grad in our distribution but a \"proper PARI tarball\".  An explanation of how to create such a thing is I hope forthcoming on that thread.\n> \n> Secondly, the thread http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00015.html makes some releavnt comments (and asks a question) on Dave's other points.\n\nBison, like autoconf and automake should not be necessary for end-users. Often developer additions don't have a 'configure' script - they rely on other developers making that from configure.ac. It is the same with bison - some files only need to be geneated and passed to the end users. As long as the timestamp on the files generated by bison is more recent than the files they were generated from, bison should not be necessary. \n\nWith regard to my own Solaris issue with -fPCI, shared libraries and Pari, I'm not sure how to observe what is happening, or where I can follow the Pari bug numbers referenced. Essentially one of the Pari developers disagreed with me, and said it is not necessary to use -fPIC when compiling 32-bit shared libraries on Solaris - only 64-bit ones. I responded that this is not so, and provided a link to something written by Casper Dik (a very knowledge Sun employee), that -fPIC is necessary. I gather that was passed on, but I don't see any record of it. \n\nThere's also the point I made that Pari is looking for a different version of GMP to what is in Sage when building a 64-bit version of Pari. The Pari developer believes it is finding another version before that one in Sage. **IF** that is so, that needs fixing in Sage. Somehow we need to ensure Pari first looks for the libraries in $SAGE_LOCAL/lib, and not in /usr/lib, /usr/local, or wherever else Pari may chose to look. The whole point of shipping a bunch of standard libraries with Sage is we know what ones are are used by Sage. \n\nDave",
+    "body": "Replying to [comment:102 cremona]:\n> For more on the bison issue see the pari-dev thread here: http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00011.html\n> \n> It seems that we should not use an svn source grad in our distribution but a \"proper PARI tarball\".  An explanation of how to create such a thing is I hope forthcoming on that thread.\n> \n> Secondly, the thread http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00015.html makes some releavnt comments (and asks a question) on Dave's other points.\n\n\nBison, like autoconf and automake should not be necessary for end-users. Often developer additions don't have a 'configure' script - they rely on other developers making that from configure.ac. It is the same with bison - some files only need to be geneated and passed to the end users. As long as the timestamp on the files generated by bison is more recent than the files they were generated from, bison should not be necessary. \n\nWith regard to my own Solaris issue with -fPCI, shared libraries and Pari, I'm not sure how to observe what is happening, or where I can follow the Pari bug numbers referenced. Essentially one of the Pari developers disagreed with me, and said it is not necessary to use -fPIC when compiling 32-bit shared libraries on Solaris - only 64-bit ones. I responded that this is not so, and provided a link to something written by Casper Dik (a very knowledge Sun employee), that -fPIC is necessary. I gather that was passed on, but I don't see any record of it. \n\nThere's also the point I made that Pari is looking for a different version of GMP to what is in Sage when building a 64-bit version of Pari. The Pari developer believes it is finding another version before that one in Sage. **IF** that is so, that needs fixing in Sage. Somehow we need to ensure Pari first looks for the libraries in $SAGE_LOCAL/lib, and not in /usr/lib, /usr/local, or wherever else Pari may chose to look. The whole point of shipping a bunch of standard libraries with Sage is we know what ones are are used by Sage. \n\nDave",
     "created_at": "2010-07-21T16:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3135,6 +3150,7 @@ Replying to [comment:102 cremona]:
 > It seems that we should not use an svn source grad in our distribution but a "proper PARI tarball".  An explanation of how to create such a thing is I hope forthcoming on that thread.
 > 
 > Secondly, the thread http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/msg00015.html makes some releavnt comments (and asks a question) on Dave's other points.
+
 
 Bison, like autoconf and automake should not be necessary for end-users. Often developer additions don't have a 'configure' script - they rely on other developers making that from configure.ac. It is the same with bison - some files only need to be geneated and passed to the end users. As long as the timestamp on the files generated by bison is more recent than the files they were generated from, bison should not be necessary. 
 
@@ -3192,7 +3208,7 @@ I also added a script "spkg-make" which automates the process of building the sp
 archive/issue_comments_088249.json:
 ```json
 {
-    "body": "Replying to [comment:105 jdemeyer]:\n> I have made a new version of the spkg:\n> [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg)\n> \n> It contains a patch for PARI bug 1079, fixing all doctest failures in sage/rings/number_fields.\n> \n> I also added a script \"spkg-make\" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.\n\nI'll try it if I get a chance over the next couple of days.\n\nAs I see it there are now two main issues:\n\n1. Make sure that the other spkgs which use the pari library still work.  I think someone said that genus2reduction and lcalc have problems.\n2. Rebase to 4.5.2.",
+    "body": "Replying to [comment:105 jdemeyer]:\n> I have made a new version of the spkg:\n> [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg)\n> \n> It contains a patch for PARI bug 1079, fixing all doctest failures in sage/rings/number_fields.\n> \n> I also added a script \"spkg-make\" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.\n\n\nI'll try it if I get a chance over the next couple of days.\n\nAs I see it there are now two main issues:\n\n1. Make sure that the other spkgs which use the pari library still work.  I think someone said that genus2reduction and lcalc have problems.\n2. Rebase to 4.5.2.",
     "created_at": "2010-07-22T17:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3208,6 +3224,7 @@ Replying to [comment:105 jdemeyer]:
 > It contains a patch for PARI bug 1079, fixing all doctest failures in sage/rings/number_fields.
 > 
 > I also added a script "spkg-make" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.
+
 
 I'll try it if I get a chance over the next couple of days.
 
@@ -3245,7 +3262,7 @@ Dave
 archive/issue_comments_088251.json:
 ```json
 {
-    "body": "Replying to [comment:105 jdemeyer]:\n> I have made a new version of the spkg:\n> [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg)\n> \n> It contains a patch for PARI bug 1079, fixing all doctest failures in sage/rings/number_fields.\n> \n> I also added a script \"spkg-make\" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.\n\nI tried it on OpenSolaris. There are a few error messages:\n\n\nHere's the first\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 10904: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\n\n**This is a new bug first seen in Pari 2.4.3 and does not appear in Pari 2.3.5**\n\nAnd another. \n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 10904: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\n\nI've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc. \n\nAnd another problem with that package. \n\n\n```\n../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]\n```\n\n\n** This is new to pari-2.4.3.svn.p6.log and does not appear in earlier pari 2.4.3 packages which have been posted on this ticket**\n\n\nIMHO, it would be good if the package number included the snv snapshot - in this case 12541. \n\nDave",
+    "body": "Replying to [comment:105 jdemeyer]:\n> I have made a new version of the spkg:\n> [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg)\n> \n> It contains a patch for PARI bug 1079, fixing all doctest failures in sage/rings/number_fields.\n> \n> I also added a script \"spkg-make\" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.\n\n\nI tried it on OpenSolaris. There are a few error messages:\n\n\nHere's the first\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 10904: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\n**This is a new bug first seen in Pari 2.4.3 and does not appear in Pari 2.3.5**\n\nAnd another. \n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5/local/include\nld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 10904: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\nI've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc. \n\nAnd another problem with that package. \n\n```\n../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]\n```\n\n** This is new to pari-2.4.3.svn.p6.log and does not appear in earlier pari 2.4.3 packages which have been posted on this ticket**\n\n\nIMHO, it would be good if the package number included the snv snapshot - in this case 12541. \n\nDave",
     "created_at": "2010-07-22T19:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3262,6 +3279,7 @@ Replying to [comment:105 jdemeyer]:
 > 
 > I also added a script "spkg-make" which automates the process of building the spkg (it downloads the svn sources and so on).  It *should* also fix the bison issue.  This spkg-make is highly experimental, but it works for me.  By all means, go ahead and tell me what you think of it.
 
+
 I tried it on OpenSolaris. There are a few error messages:
 
 
@@ -3277,7 +3295,6 @@ ld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file o
 ### Building without GNU MP support
 ```
 
-
 **This is a new bug first seen in Pari 2.4.3 and does not appear in Pari 2.3.5**
 
 And another. 
@@ -3292,16 +3309,13 @@ ld.so.1: solaris-ix86-rlv10703: fatal: libgmp.so.10: open failed: No such file o
 ### Building without GNU MP support
 ```
 
-
 I've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc. 
 
 And another problem with that package. 
 
-
 ```
 ../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]
 ```
-
 
 ** This is new to pari-2.4.3.svn.p6.log and does not appear in earlier pari 2.4.3 packages which have been posted on this ticket**
 
@@ -3317,7 +3331,7 @@ Dave
 archive/issue_comments_088252.json:
 ```json
 {
-    "body": "I wrote the same bug twice there. Here's the second bug:\n\n\n```\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n...Found readline header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found history header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found libtermcap in /export/home/drkirkby/sage-4.5/local/lib/\n...Library termcap needed by readline\n###\n### Readline library detected, but does not seem to work\n###\n### Building without GNU readline support\n```\n\n\nI've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc.\n\nDave",
+    "body": "I wrote the same bug twice there. Here's the second bug:\n\n```\nHi-Res Graphics: none\n...Found libreadline in /export/home/drkirkby/sage-4.5/local/lib\n...Found readline header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found history header in /export/home/drkirkby/sage-4.5/local/include/readline\n...Found libtermcap in /export/home/drkirkby/sage-4.5/local/lib/\n...Library termcap needed by readline\n###\n### Readline library detected, but does not seem to work\n###\n### Building without GNU readline support\n```\n\nI've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc.\n\nDave",
     "created_at": "2010-07-22T19:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3327,7 +3341,6 @@ archive/issue_comments_088252.json:
 ```
 
 I wrote the same bug twice there. Here's the second bug:
-
 
 ```
 Hi-Res Graphics: none
@@ -3342,7 +3355,6 @@ Hi-Res Graphics: none
 ### Building without GNU readline support
 ```
 
-
 I've seen this before, but it is very odd, as other packages in Sage use the readline, and clearly readline is used when Sage runs - i.e. I have edit the command line, recall previous commands etc.
 
 Dave
@@ -3354,7 +3366,7 @@ Dave
 archive/issue_comments_088253.json:
 ```json
 {
-    "body": "Have the other issues that are circumvented by hacks to spkg-install been reported upstream? Such as:\n\n\n```\n# These two are needed so that Sage can catch pari's error signals. \ncp \"$PATCHED/init.c\"  src/language/init.c\ncp \"$PATCHED/mp.c\"    src/kernel/gmp/mp.c \n```\n\n\nThen's these this not very clearly documented patch\n\n```\ncp \"$PATCHED/get_dlld\" config/\n```\n\n\nAnd another, this time a bit better documented, though no trac number. \n\n```\n# mabshoff: This patch is to get around problem in PPC 32-bit Linux build\n# (but it is ok on any other machine)\ncp \"$PATCHED/get_dlcflags\" config/\n```\n\n(That is probably the -fPIC issue which will soon be able to be removed)\n\n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$PATCHED/get_kernel\" config/\n```\n\n\nThen this. \n\n```\n# cwitty: disable -rpath\ncp \"$PATCHED/get_ld\" config/\n```\n\n\nAnd another. \n\n```\n# This is needed or there are weird locale problems involving rpath\n# with building Sage.\nLC_ALL=C\nexport LC_ALL\nLANG=C\nexport LANG\n```\n\n\nAnd another\n\n\n```\n    if [ \"$UNAME\" = \"CYGWIN\" ]; then\n        # There are weird bugs in PARI's build process on Windows XP\n        # under Cygwin.\n        # Passing in this extra flag gets around the bug.\n        $MAKE GMPINCLUDE=-I$SAGE_LOCAL/include EXTRADLLDFLAGS=-lgmp gp\n    else\n        $MAKE gp\n    fi\n```\n\n\nAnd another\n\n\n\n```\n        # Also another patch since paripriv.h won't compile right on OS X\n        # when used by client Sage code.  So we replace it by a slightly\n        # modified version.\n        cp -pf \"$PATCHED/paripriv.h\" \"$SAGE_LOCAL/include/pari/paripriv.h\"\n```\n\n\nThat's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n\nDave",
+    "body": "Have the other issues that are circumvented by hacks to spkg-install been reported upstream? Such as:\n\n```\n# These two are needed so that Sage can catch pari's error signals. \ncp \"$PATCHED/init.c\"  src/language/init.c\ncp \"$PATCHED/mp.c\"    src/kernel/gmp/mp.c \n```\n\nThen's these this not very clearly documented patch\n\n```\ncp \"$PATCHED/get_dlld\" config/\n```\n\nAnd another, this time a bit better documented, though no trac number. \n\n```\n# mabshoff: This patch is to get around problem in PPC 32-bit Linux build\n# (but it is ok on any other machine)\ncp \"$PATCHED/get_dlcflags\" config/\n```\n(That is probably the -fPIC issue which will soon be able to be removed)\n\n```\n# pjeremy: fix for FreeBSD: #7825\ncp \"$PATCHED/get_kernel\" config/\n```\n\nThen this. \n\n```\n# cwitty: disable -rpath\ncp \"$PATCHED/get_ld\" config/\n```\n\nAnd another. \n\n```\n# This is needed or there are weird locale problems involving rpath\n# with building Sage.\nLC_ALL=C\nexport LC_ALL\nLANG=C\nexport LANG\n```\n\nAnd another\n\n```\n    if [ \"$UNAME\" = \"CYGWIN\" ]; then\n        # There are weird bugs in PARI's build process on Windows XP\n        # under Cygwin.\n        # Passing in this extra flag gets around the bug.\n        $MAKE GMPINCLUDE=-I$SAGE_LOCAL/include EXTRADLLDFLAGS=-lgmp gp\n    else\n        $MAKE gp\n    fi\n```\n\nAnd another\n\n\n```\n        # Also another patch since paripriv.h won't compile right on OS X\n        # when used by client Sage code.  So we replace it by a slightly\n        # modified version.\n        cp -pf \"$PATCHED/paripriv.h\" \"$SAGE_LOCAL/include/pari/paripriv.h\"\n```\n\nThat's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n\nDave",
     "created_at": "2010-07-22T19:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3365,20 +3377,17 @@ archive/issue_comments_088253.json:
 
 Have the other issues that are circumvented by hacks to spkg-install been reported upstream? Such as:
 
-
 ```
 # These two are needed so that Sage can catch pari's error signals. 
 cp "$PATCHED/init.c"  src/language/init.c
 cp "$PATCHED/mp.c"    src/kernel/gmp/mp.c 
 ```
 
-
 Then's these this not very clearly documented patch
 
 ```
 cp "$PATCHED/get_dlld" config/
 ```
-
 
 And another, this time a bit better documented, though no trac number. 
 
@@ -3387,15 +3396,12 @@ And another, this time a bit better documented, though no trac number.
 # (but it is ok on any other machine)
 cp "$PATCHED/get_dlcflags" config/
 ```
-
 (That is probably the -fPIC issue which will soon be able to be removed)
-
 
 ```
 # pjeremy: fix for FreeBSD: #7825
 cp "$PATCHED/get_kernel" config/
 ```
-
 
 Then this. 
 
@@ -3403,7 +3409,6 @@ Then this.
 # cwitty: disable -rpath
 cp "$PATCHED/get_ld" config/
 ```
-
 
 And another. 
 
@@ -3416,9 +3421,7 @@ LANG=C
 export LANG
 ```
 
-
 And another
-
 
 ```
     if [ "$UNAME" = "CYGWIN" ]; then
@@ -3431,9 +3434,7 @@ And another
     fi
 ```
 
-
 And another
-
 
 
 ```
@@ -3442,7 +3443,6 @@ And another
         # modified version.
         cp -pf "$PATCHED/paripriv.h" "$SAGE_LOCAL/include/pari/paripriv.h"
 ```
-
 
 That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. 
 
@@ -3455,7 +3455,7 @@ Dave
 archive/issue_comments_088254.json:
 ```json
 {
-    "body": "Hi Dave we have some of these patch as well in Gentoo (and I mean in the distro\nitself not just sage-on-gentoo). So I can fill in some gaps.\n\n\nget_dlld: we have this\n\n```\n\t# propagate ldflags\n\tsed -i \\\n\t\t-e 's/-shared $extra/-shared $extra \\\\$(LDFLAGS)/' \\\n\t\tconfig/get_dlld || die \"Failed to fix LDFLAGS\"\n```\n\nWe add -fpic on all platforms when building the library but not gp or static libraries. \n\nBut we have a patch I think originating from Debian to add support \nfor linux ppc 32 bits.\n\nget_ld: when gp is compiled it uses libpari and is compiled -rpath to hardcode the libray location. I am not sure this is strictly necessary.\n\n\n\nNot sure about the CYGWIN and OS X stuff.",
+    "body": "Hi Dave we have some of these patch as well in Gentoo (and I mean in the distro\nitself not just sage-on-gentoo). So I can fill in some gaps.\n\n\nget_dlld: we have this\n\n```\n\t# propagate ldflags\n\tsed -i \\\n\t\t-e 's/-shared $extra/-shared $extra \\\\$(LDFLAGS)/' \\\n\t\tconfig/get_dlld || die \"Failed to fix LDFLAGS\"\n```\nWe add -fpic on all platforms when building the library but not gp or static libraries. \n\nBut we have a patch I think originating from Debian to add support \nfor linux ppc 32 bits.\n\nget_ld: when gp is compiled it uses libpari and is compiled -rpath to hardcode the libray location. I am not sure this is strictly necessary.\n\n\n\nNot sure about the CYGWIN and OS X stuff.",
     "created_at": "2010-07-22T20:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3476,7 +3476,6 @@ get_dlld: we have this
 		-e 's/-shared $extra/-shared $extra \\$(LDFLAGS)/' \
 		config/get_dlld || die "Failed to fix LDFLAGS"
 ```
-
 We add -fpic on all platforms when building the library but not gp or static libraries. 
 
 But we have a patch I think originating from Debian to add support 
@@ -3513,7 +3512,7 @@ It's worth remembering too that Bill Alombert is (or was) a debian developer so 
 archive/issue_comments_088256.json:
 ```json
 {
-    "body": "Replying to [comment:110 drkirkby]:\n> Have the other issues that are circumvented by hacks to spkg-install been reported upstream?\n\n> That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n\nI agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.",
+    "body": "Replying to [comment:110 drkirkby]:\n> Have the other issues that are circumvented by hacks to spkg-install been reported upstream?\n\n\n> That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n\n\nI agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.",
     "created_at": "2010-07-22T21:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3525,7 +3524,9 @@ archive/issue_comments_088256.json:
 Replying to [comment:110 drkirkby]:
 > Have the other issues that are circumvented by hacks to spkg-install been reported upstream?
 
+
 > That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. 
+
 
 I agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.
 
@@ -3536,7 +3537,7 @@ I agree that all the patches in config/* dealing with compiling PARI/GP really a
 archive/issue_comments_088257.json:
 ```json
 {
-    "body": "Replying to [comment:108 drkirkby]:\n> And another problem with that package. \n> \n> {{{\n> ../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]\n> }}}\n\nMy fault.  I uploaded a new [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg) which should fix this.  (This is a small hack I added such that the SVN version is saved in patches/status such that it can appear in gp.version() for example).",
+    "body": "Replying to [comment:108 drkirkby]:\n> And another problem with that package. \n> \n> \n> ```\n> ../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]\n> ```\n\n\nMy fault.  I uploaded a new [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg) which should fix this.  (This is a small hack I added such that the SVN version is saved in patches/status such that it can appear in gp.version() for example).",
     "created_at": "2010-07-22T21:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3548,9 +3549,11 @@ archive/issue_comments_088257.json:
 Replying to [comment:108 drkirkby]:
 > And another problem with that package. 
 > 
-> {{{
+> 
+> ```
 > ../src/test/dotest[30]: cat: /../patches/status: cannot open [No such file or directory]
-> }}}
+> ```
+
 
 My fault.  I uploaded a new [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.spkg) which should fix this.  (This is a small hack I added such that the SVN version is saved in patches/status such that it can appear in gp.version() for example).
 
@@ -3561,7 +3564,7 @@ My fault.  I uploaded a new [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p6.sp
 archive/issue_comments_088258.json:
 ```json
 {
-    "body": "Replying to [comment:113 jdemeyer]:\n> Replying to [comment:110 drkirkby]:\n> > Have the other issues that are circumvented by hacks to spkg-install been reported upstream?\n> \n> > That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n> \n> I agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.\n\nI got this email  from Bill Allombert on the `Bug#1078: Pari, -fPIC and Solaris` thread:\n\n\n```\nOn 07/22/10 09:46 PM, Bill Allombert wrote:\n> On Thu, Jul 22, 2010 at 07:33:45PM +0100, Dr. David Kirkby wrote:\n>> The Sage developers will look forward to a snapshot were we can\n>> disable the patches for Solaris and PPC.\n> \n> Well, the Sage PPC fix is wrong and the correct fix is in PARI 2.3.5 which was released\n> in February, so I do not see why sage still carry it.\n> \n> Cheers,\n> Bill.\n> \n```\n\n\nSo it seems we should remove the -fPIC patch for PPC Linux, and the -fPIC patch for Solaris will be able to be removed later, but not yet. \n\nIMHO, it would be better to remove all the patch (or just comment them out for now), and put them back as and when they are needed, taking care (where possible), to check if the bugs they are supposed to fix reoccur. This is one of the more messy spkg-install files I've seen - though the ATLAS one is pretty messy too!\n\nDave",
+    "body": "Replying to [comment:113 jdemeyer]:\n> Replying to [comment:110 drkirkby]:\n> > Have the other issues that are circumvented by hacks to spkg-install been reported upstream?\n\n> \n> > That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. \n\n> \n> I agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.\n\n\nI got this email  from Bill Allombert on the `Bug#1078: Pari, -fPIC and Solaris` thread:\n\n```\nOn 07/22/10 09:46 PM, Bill Allombert wrote:\n> On Thu, Jul 22, 2010 at 07:33:45PM +0100, Dr. David Kirkby wrote:\n>> The Sage developers will look forward to a snapshot were we can\n>> disable the patches for Solaris and PPC.\n> \n> Well, the Sage PPC fix is wrong and the correct fix is in PARI 2.3.5 which was released\n> in February, so I do not see why sage still carry it.\n> \n> Cheers,\n> Bill.\n> \n```\n\nSo it seems we should remove the -fPIC patch for PPC Linux, and the -fPIC patch for Solaris will be able to be removed later, but not yet. \n\nIMHO, it would be better to remove all the patch (or just comment them out for now), and put them back as and when they are needed, taking care (where possible), to check if the bugs they are supposed to fix reoccur. This is one of the more messy spkg-install files I've seen - though the ATLAS one is pretty messy too!\n\nDave",
     "created_at": "2010-07-22T21:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3573,13 +3576,15 @@ archive/issue_comments_088258.json:
 Replying to [comment:113 jdemeyer]:
 > Replying to [comment:110 drkirkby]:
 > > Have the other issues that are circumvented by hacks to spkg-install been reported upstream?
+
 > 
 > > That's a lot of patches to one program. How many of these issues have been raised? Personally, I would be very tempted to remove these, and find what fails. Otherwise maintenance of the package is going to be very difficult. 
+
 > 
 > I agree that all the patches in config/* dealing with compiling PARI/GP really are upstream issues and should be fixed there.  Also, now that we upgrade PARI to 2.4.3, it is not at all clear whether these patches are still needed.
 
-I got this email  from Bill Allombert on the `Bug#1078: Pari, -fPIC and Solaris` thread:
 
+I got this email  from Bill Allombert on the `Bug#1078: Pari, -fPIC and Solaris` thread:
 
 ```
 On 07/22/10 09:46 PM, Bill Allombert wrote:
@@ -3594,7 +3599,6 @@ On 07/22/10 09:46 PM, Bill Allombert wrote:
 > Bill.
 > 
 ```
-
 
 So it seems we should remove the -fPIC patch for PPC Linux, and the -fPIC patch for Solaris will be able to be removed later, but not yet. 
 
@@ -3690,7 +3694,7 @@ Perhaps spkg-check should do one of "make dyntest-all" or "make statest-all" ins
 archive/issue_comments_088263.json:
 ```json
 {
-    "body": "Replying to [comment:117 jdemeyer]:\n> New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg), PARI build 12543.  The only changes are in the build process.  I also removed several patches, \n> since the fixes should be upstream now.\n> \n> But we need to test building this spkg on many different machines!\n> \n> There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).\n\nI applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .\n\nVery impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).",
+    "body": "Replying to [comment:117 jdemeyer]:\n> New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg), PARI build 12543.  The only changes are in the build process.  I also removed several patches, \n> since the fixes should be upstream now.\n> \n> But we need to test building this spkg on many different machines!\n> \n> There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).\n\n\nI applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .\n\nVery impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).",
     "created_at": "2010-07-23T17:46:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3707,6 +3711,7 @@ Replying to [comment:117 jdemeyer]:
 > 
 > There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).
 
+
 I applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .
 
 Very impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).
@@ -3718,7 +3723,7 @@ Very impressed that the latter applied without any merge problems -- thanks, Jer
 archive/issue_comments_088264.json:
 ```json
 {
-    "body": "Replying to [comment:117 jdemeyer]:\n> New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg),\n\nWhy do you chose that name? The .p7 should only be integrated into Sage where there are 7 previous versions of 2.4.3. Since the software says \n\n\n```\nShall we try to build pari 2.4.3 (development svn-12543) now (y/n)? [n]\n```\n\n\nI think a better name would be\n\n\n```\npari-2.4.3.svn-12543\n```\n\n\nas that is the version of Pari that it is based upon. Then, assuming this version was merged, subsequent updates in Sage would be called pari-2.4.3.svn-12543.p0, pari-2.4.3.svn-12543.p1, pari-2.4.3.svn-12543.p2 etc. \n\nCertainly, the first revision put into Sage should not have a patch level of 7. \n\nhttp://www.sagemath.org/doc/developer/patching_spkgs.html\n\nsays *If the upstream package is taken from some revision other than a stable version, you need to append the date at which the revision is made, e.g. the Singular package singular-3-1-0-4-20090818.p3.spkg is made with the revision as of 2009-08-18. *\n\nHowever, I think in this case, the fact the upstream does have a version number (in this case 2.4.3.svn-12543), that should be used rather than a date. \n\nDave \nDave",
+    "body": "Replying to [comment:117 jdemeyer]:\n> New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg),\n\n\nWhy do you chose that name? The .p7 should only be integrated into Sage where there are 7 previous versions of 2.4.3. Since the software says \n\n```\nShall we try to build pari 2.4.3 (development svn-12543) now (y/n)? [n]\n```\n\nI think a better name would be\n\n```\npari-2.4.3.svn-12543\n```\n\nas that is the version of Pari that it is based upon. Then, assuming this version was merged, subsequent updates in Sage would be called pari-2.4.3.svn-12543.p0, pari-2.4.3.svn-12543.p1, pari-2.4.3.svn-12543.p2 etc. \n\nCertainly, the first revision put into Sage should not have a patch level of 7. \n\nhttp://www.sagemath.org/doc/developer/patching_spkgs.html\n\nsays *If the upstream package is taken from some revision other than a stable version, you need to append the date at which the revision is made, e.g. the Singular package singular-3-1-0-4-20090818.p3.spkg is made with the revision as of 2009-08-18. *\n\nHowever, I think in this case, the fact the upstream does have a version number (in this case 2.4.3.svn-12543), that should be used rather than a date. \n\nDave \nDave",
     "created_at": "2010-07-23T20:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3730,21 +3735,18 @@ archive/issue_comments_088264.json:
 Replying to [comment:117 jdemeyer]:
 > New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg),
 
-Why do you chose that name? The .p7 should only be integrated into Sage where there are 7 previous versions of 2.4.3. Since the software says 
 
+Why do you chose that name? The .p7 should only be integrated into Sage where there are 7 previous versions of 2.4.3. Since the software says 
 
 ```
 Shall we try to build pari 2.4.3 (development svn-12543) now (y/n)? [n]
 ```
 
-
 I think a better name would be
-
 
 ```
 pari-2.4.3.svn-12543
 ```
-
 
 as that is the version of Pari that it is based upon. Then, assuming this version was merged, subsequent updates in Sage would be called pari-2.4.3.svn-12543.p0, pari-2.4.3.svn-12543.p1, pari-2.4.3.svn-12543.p2 etc. 
 
@@ -3766,7 +3768,7 @@ Dave
 archive/issue_comments_088265.json:
 ```json
 {
-    "body": "Replying to [comment:119 cremona]:\n> Replying to [comment:117 jdemeyer]:\n> > New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg), PARI build 12543.  The only changes are in the build process.  I also removed several patches, \n> > since the fixes should be upstream now.\n> > \n> > But we need to test building this spkg on many different machines!\n> > \n> > There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).\n> \n> I applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .\n> \n> Very impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).\n\nThere's one test failure in ell_rational_field (extraneous warning output from eclib) which will go away if the patches from #9247 are applied, so I think there is no need to do anything about this at present.\n\n>",
+    "body": "Replying to [comment:119 cremona]:\n> Replying to [comment:117 jdemeyer]:\n> > New spkg version: [http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg](http://cage.ugent.be/~jdemeyer/pari-2.4.3.svn.p7.spkg), PARI build 12543.  The only changes are in the build process.  I also removed several patches, \n> > since the fixes should be upstream now.\n> > \n> > But we need to test building this spkg on many different machines!\n> > \n> > There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).\n\n> \n> I applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .\n> \n> Very impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).\n\n\nThere's one test failure in ell_rational_field (extraneous warning output from eclib) which will go away if the patches from #9247 are applied, so I think there is no need to do anything about this at present.\n\n>",
     "created_at": "2010-07-23T21:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3783,10 +3785,12 @@ Replying to [comment:119 cremona]:
 > > But we need to test building this spkg on many different machines!
 > > 
 > > There are some new doctest failures with sage-4.5.2.alpha0, nothing very troublesome though.  I can probably fix them (except for elliptic_curves, which I will leave to John).
+
 > 
 > I applied the p7 spkg fine to 4.5.2.alpha0, and the (two) extcode patches above, and the new sagelib_9343_combined3.patch .
 > 
 > Very impressed that the latter applied without any merge problems -- thanks, Jeroen.  I will test and fix what I find in elliptic_curves (except perhaps the failures in heegner.py).
+
 
 There's one test failure in ell_rational_field (extraneous warning output from eclib) which will go away if the patches from #9247 are applied, so I think there is no need to do anything about this at present.
 
@@ -3819,7 +3823,7 @@ fixes doctests in elliptic_curves/ell_number_field
 archive/issue_comments_088267.json:
 ```json
 {
-    "body": "Replying to [comment:119 cremona]:\n> Very impressed that the latter applied without any merge problems -- thanks, Jeroen. \n\nI wish I could say I was as impressed with the installation on OpenSolaris:\n\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5.2.alpha0/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5.2.alpha0/local/include\nld.so.1: solaris-ix86-rlv7589: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 8207: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\n\nThe version currently in Sage works fine - this is broken. \n\nThis does not seem an upstream problem, as it builds fine outside of the Sage environment. \n\nDave",
+    "body": "Replying to [comment:119 cremona]:\n> Very impressed that the latter applied without any merge problems -- thanks, Jeroen. \n\n\nI wish I could say I was as impressed with the installation on OpenSolaris:\n\n```\nChecking for optional libraries and headers...\n...Found libgmp in /export/home/drkirkby/sage-4.5.2.alpha0/local/lib\n...Found gmp header in /export/home/drkirkby/sage-4.5.2.alpha0/local/include\nld.so.1: solaris-ix86-rlv7589: fatal: libgmp.so.10: open failed: No such file or directory\n./Configure[79]: .: line 38: 8207: Killed\n### Your version of GMP is too old for PARI. Please upgrade\n### Building without GNU MP support\n```\n\nThe version currently in Sage works fine - this is broken. \n\nThis does not seem an upstream problem, as it builds fine outside of the Sage environment. \n\nDave",
     "created_at": "2010-07-24T11:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3831,8 +3835,8 @@ archive/issue_comments_088267.json:
 Replying to [comment:119 cremona]:
 > Very impressed that the latter applied without any merge problems -- thanks, Jeroen. 
 
-I wish I could say I was as impressed with the installation on OpenSolaris:
 
+I wish I could say I was as impressed with the installation on OpenSolaris:
 
 ```
 Checking for optional libraries and headers...
@@ -3843,7 +3847,6 @@ ld.so.1: solaris-ix86-rlv7589: fatal: libgmp.so.10: open failed: No such file or
 ### Your version of GMP is too old for PARI. Please upgrade
 ### Building without GNU MP support
 ```
-
 
 The version currently in Sage works fine - this is broken. 
 
@@ -3936,7 +3939,7 @@ lcalc (#9592) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/lcalc
 archive/issue_comments_088272.json:
 ```json
 {
-    "body": "Replying to [comment:125 jdemeyer]:\n> genus2reduction (#9591) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg)\n\n\nThe bit still in the description about removing sea.gp is redundant since it is already removed in one of the extcode patches. I see that in my patched extcode directory, pari/SEA is still there with empty directories doc and test. Funny, I thought mercurial automatically removed empty directories.\n\nI successfully installed the new genus2reduction spkg and the tests in sage/interfaces/genus2reduction pass. BUT in the spkg directory the changes to SPKG.txt and the src file are not checked in -- better do that!",
+    "body": "Replying to [comment:125 jdemeyer]:\n> genus2reduction (#9591) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg)\n\n\n\nThe bit still in the description about removing sea.gp is redundant since it is already removed in one of the extcode patches. I see that in my patched extcode directory, pari/SEA is still there with empty directories doc and test. Funny, I thought mercurial automatically removed empty directories.\n\nI successfully installed the new genus2reduction spkg and the tests in sage/interfaces/genus2reduction pass. BUT in the spkg directory the changes to SPKG.txt and the src file are not checked in -- better do that!",
     "created_at": "2010-07-24T13:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3947,6 +3950,7 @@ archive/issue_comments_088272.json:
 
 Replying to [comment:125 jdemeyer]:
 > genus2reduction (#9591) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg)
+
 
 
 The bit still in the description about removing sea.gp is redundant since it is already removed in one of the extcode patches. I see that in my patched extcode directory, pari/SEA is still there with empty directories doc and test. Funny, I thought mercurial automatically removed empty directories.
@@ -3960,7 +3964,7 @@ I successfully installed the new genus2reduction spkg and the tests in sage/inte
 archive/issue_comments_088273.json:
 ```json
 {
-    "body": "Replying to [comment:127 jdemeyer]:\n> lcalc (#9592) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg)\n\nDid you forget to update SPKG.txt?  This installed OK for me (but there are so many warnings!).  Also, rishi should be kept up-to-date on this, since there are several outstanding lcalc-related tickets (#8621, #8623, #5396, ...)",
+    "body": "Replying to [comment:127 jdemeyer]:\n> lcalc (#9592) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg)\n\n\nDid you forget to update SPKG.txt?  This installed OK for me (but there are so many warnings!).  Also, rishi should be kept up-to-date on this, since there are several outstanding lcalc-related tickets (#8621, #8623, #5396, ...)",
     "created_at": "2010-07-24T13:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3972,6 +3976,7 @@ archive/issue_comments_088273.json:
 Replying to [comment:127 jdemeyer]:
 > lcalc (#9592) is fixed, download from [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg](http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p1.spkg)
 
+
 Did you forget to update SPKG.txt?  This installed OK for me (but there are so many warnings!).  Also, rishi should be kept up-to-date on this, since there are several outstanding lcalc-related tickets (#8621, #8623, #5396, ...)
 
 
@@ -3981,7 +3986,7 @@ Did you forget to update SPKG.txt?  This installed OK for me (but there are so m
 archive/issue_comments_088274.json:
 ```json
 {
-    "body": "> I successfully installed the new genus2reduction spkg and the tests in sage/interfaces/genus2reduction pass. BUT in the spkg directory the changes to SPKG.txt and the src file are not checked in -- better do that!\n\n> Did you forget to update SPKG.txt?\n\nAllright, maybe I was a bit too quick by the excitement of having fixed these!  I just uploaded new versions (with the same filenames).\n\nNow I am doing a complete from-scratch build of Sage with the new spkg's.  This will be a build without any trace of an old version of PARI.  Let's wait and see...",
+    "body": "> I successfully installed the new genus2reduction spkg and the tests in sage/interfaces/genus2reduction pass. BUT in the spkg directory the changes to SPKG.txt and the src file are not checked in -- better do that!\n\n\n> Did you forget to update SPKG.txt?\n\n\nAllright, maybe I was a bit too quick by the excitement of having fixed these!  I just uploaded new versions (with the same filenames).\n\nNow I am doing a complete from-scratch build of Sage with the new spkg's.  This will be a build without any trace of an old version of PARI.  Let's wait and see...",
     "created_at": "2010-07-24T13:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -3992,7 +3997,9 @@ archive/issue_comments_088274.json:
 
 > I successfully installed the new genus2reduction spkg and the tests in sage/interfaces/genus2reduction pass. BUT in the spkg directory the changes to SPKG.txt and the src file are not checked in -- better do that!
 
+
 > Did you forget to update SPKG.txt?
+
 
 Allright, maybe I was a bit too quick by the excitement of having fixed these!  I just uploaded new versions (with the same filenames).
 
@@ -4078,7 +4085,7 @@ Attachment [9343-improved-64-bit-support-on-Solaris.patch](tarball://root/attach
 archive/issue_comments_088278.json:
 ```json
 {
-    "body": "Replying to [comment:131 drkirkby]:\n>\n> \n> I changed the filename to show the actual svn version - you can see this reported when you run configure. \n> \n> New package at \n> \n> http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg\n> \n\nWhat I had been planning to say about the spkg's name is:  All the various pari-2.4.3.svn.p?.spkg on this ticket up to now have been alpha things which were never intended for anyone other than those working on this ticket;  and we should give the spkg a proper name (to which further patch levels could be applied later, after this becomes the Sage standard spkg) once we reached something like a beta level, or even after the authors on this ticket were all happy with it.\n\nThe latest version may or may not be the final one!  But it gets better every time.\n\n[I may have a little time later today but then I'll be travelling.  In any case, it will soon be time to mark the ticket \"needs review\" and prod likely suspects to thoroughly test it!]",
+    "body": "Replying to [comment:131 drkirkby]:\n>\n> \n> I changed the filename to show the actual svn version - you can see this reported when you run configure. \n> \n> New package at \n> \n> http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg\n> \n\n\nWhat I had been planning to say about the spkg's name is:  All the various pari-2.4.3.svn.p?.spkg on this ticket up to now have been alpha things which were never intended for anyone other than those working on this ticket;  and we should give the spkg a proper name (to which further patch levels could be applied later, after this becomes the Sage standard spkg) once we reached something like a beta level, or even after the authors on this ticket were all happy with it.\n\nThe latest version may or may not be the final one!  But it gets better every time.\n\n[I may have a little time later today but then I'll be travelling.  In any case, it will soon be time to mark the ticket \"needs review\" and prod likely suspects to thoroughly test it!]",
     "created_at": "2010-07-24T14:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4097,6 +4104,7 @@ Replying to [comment:131 drkirkby]:
 > http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg
 > 
 
+
 What I had been planning to say about the spkg's name is:  All the various pari-2.4.3.svn.p?.spkg on this ticket up to now have been alpha things which were never intended for anyone other than those working on this ticket;  and we should give the spkg a proper name (to which further patch levels could be applied later, after this becomes the Sage standard spkg) once we reached something like a beta level, or even after the authors on this ticket were all happy with it.
 
 The latest version may or may not be the final one!  But it gets better every time.
@@ -4110,7 +4118,7 @@ The latest version may or may not be the final one!  But it gets better every ti
 archive/issue_comments_088279.json:
 ```json
 {
-    "body": "Replying to [comment:133 cremona]:\n> What I had been planning to say about the spkg's name is:  \n\nI would think it worth keeping the svn snapshot number in there at all times. Even for alpha releases, as it's obvious then if its based on a different version of the upstream source code. Those editing this ticket will be in no doubt if the source has changed or not. \n\nFor actual packages in Sage, the Developers Guide says to have the date on SVN snapshots, but since we can get an actual number, that seems more sensible to me. Also, I've found if one puts a date, what often happens is someone updates the package and instead of putting .p0, then just change the date. At that point, the date bears no resemblance to what's in the upstream code on that date. \n\nAnyway, http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg \n\nwill build properly on OpenSolaris. \n\nI managed to get a core dump when tuning it, but that's less of an issue. I will report that upstream. I've found Bill very helpful. I've just reported the CC/CFLAGS bug upstream, though have got no feedback yet. \n\nI can see tuning Pari is slow. I can build Pari in 33 seconds on this machine, but it was 24 minutes until I got a core dump when tuning. So I don't know how long tuning would take. But it seems sensible to give the user that option if they are blessed with lots of computer power or lots of patience. Looking at some of the timing data, it looked like the differences in algorithms was significant, and so worth optimising if you want to make a lot of use of Pari. \n\nBTW, the source code in that package is the same as created by jdemeyer, and is not the latest upstream code as I write. But I chose not to change the source code - just spkg-install, so it will work properly on OpenSolaris. \n\nDave \nDave",
+    "body": "Replying to [comment:133 cremona]:\n> What I had been planning to say about the spkg's name is:  \n\n\nI would think it worth keeping the svn snapshot number in there at all times. Even for alpha releases, as it's obvious then if its based on a different version of the upstream source code. Those editing this ticket will be in no doubt if the source has changed or not. \n\nFor actual packages in Sage, the Developers Guide says to have the date on SVN snapshots, but since we can get an actual number, that seems more sensible to me. Also, I've found if one puts a date, what often happens is someone updates the package and instead of putting .p0, then just change the date. At that point, the date bears no resemblance to what's in the upstream code on that date. \n\nAnyway, http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg \n\nwill build properly on OpenSolaris. \n\nI managed to get a core dump when tuning it, but that's less of an issue. I will report that upstream. I've found Bill very helpful. I've just reported the CC/CFLAGS bug upstream, though have got no feedback yet. \n\nI can see tuning Pari is slow. I can build Pari in 33 seconds on this machine, but it was 24 minutes until I got a core dump when tuning. So I don't know how long tuning would take. But it seems sensible to give the user that option if they are blessed with lots of computer power or lots of patience. Looking at some of the timing data, it looked like the differences in algorithms was significant, and so worth optimising if you want to make a lot of use of Pari. \n\nBTW, the source code in that package is the same as created by jdemeyer, and is not the latest upstream code as I write. But I chose not to change the source code - just spkg-install, so it will work properly on OpenSolaris. \n\nDave \nDave",
     "created_at": "2010-07-24T15:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4121,6 +4129,7 @@ archive/issue_comments_088279.json:
 
 Replying to [comment:133 cremona]:
 > What I had been planning to say about the spkg's name is:  
+
 
 I would think it worth keeping the svn snapshot number in there at all times. Even for alpha releases, as it's obvious then if its based on a different version of the upstream source code. Those editing this ticket will be in no doubt if the source has changed or not. 
 
@@ -4146,7 +4155,7 @@ Dave
 archive/issue_comments_088280.json:
 ```json
 {
-    "body": "I just noticed this error in spkg-install:\n\n\n```\ncp: cannot access /export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12543/patches/files/get_dlld\n```\n\n\nThat's nothing I've touched - it appears in the previous version too. Seems like a patch that one tries to apply does not actually exist. \n\nDave",
+    "body": "I just noticed this error in spkg-install:\n\n```\ncp: cannot access /export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12543/patches/files/get_dlld\n```\n\nThat's nothing I've touched - it appears in the previous version too. Seems like a patch that one tries to apply does not actually exist. \n\nDave",
     "created_at": "2010-07-24T15:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4157,11 +4166,9 @@ archive/issue_comments_088280.json:
 
 I just noticed this error in spkg-install:
 
-
 ```
 cp: cannot access /export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12543/patches/files/get_dlld
 ```
-
 
 That's nothing I've touched - it appears in the previous version too. Seems like a patch that one tries to apply does not actually exist. 
 
@@ -4254,7 +4261,7 @@ drkirkby: is there a reason you always put the "-g" flag with CFLAGS?  I assume 
 archive/issue_comments_088285.json:
 ```json
 {
-    "body": "Replying to [comment:137 jdemeyer]:\n> drkirkby: is there a reason you always put the \"-g\" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.\nIt was agreed long ago on sage-devel that packages would be built with debugging information by default, since it makes finding bugs a lot easier. I initially thought that was a bad idea, as it increases the size of the objects. But it is negligible, and it makes no difference to run-time, so I concede it is sensible. That's the reason for the -g\n\nSome software packages add -g anyway, in which case it could be removed, though I'm not sure its a good idea, since if the software changes that behaviour, we have lost the ability to easily debug problems. \n\nDave",
+    "body": "Replying to [comment:137 jdemeyer]:\n> drkirkby: is there a reason you always put the \"-g\" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.\n\nIt was agreed long ago on sage-devel that packages would be built with debugging information by default, since it makes finding bugs a lot easier. I initially thought that was a bad idea, as it increases the size of the objects. But it is negligible, and it makes no difference to run-time, so I concede it is sensible. That's the reason for the -g\n\nSome software packages add -g anyway, in which case it could be removed, though I'm not sure its a good idea, since if the software changes that behaviour, we have lost the ability to easily debug problems. \n\nDave",
     "created_at": "2010-07-24T22:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4265,6 +4272,7 @@ archive/issue_comments_088285.json:
 
 Replying to [comment:137 jdemeyer]:
 > drkirkby: is there a reason you always put the "-g" flag with CFLAGS?  I assume it is a mistake, but I'm asking just in case it isn't.
+
 It was agreed long ago on sage-devel that packages would be built with debugging information by default, since it makes finding bugs a lot easier. I initially thought that was a bad idea, as it increases the size of the objects. But it is negligible, and it makes no difference to run-time, so I concede it is sensible. That's the reason for the -g
 
 Some software packages add -g anyway, in which case it could be removed, though I'm not sure its a good idea, since if the software changes that behaviour, we have lost the ability to easily debug problems. 
@@ -4324,7 +4332,7 @@ I can help with the first and third of these, but not really the second.
 archive/issue_comments_088288.json:
 ```json
 {
-    "body": "Replying to [comment:139 jdemeyer]:\n> New version of the PARI spkg: [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3svn-12549.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3svn-12549.spkg).\n> \n> Removed the non-existent get_dlld patching.\n> Cleaned up patches/README.txt\nI assumed you updated the source code, since the svn number is incremented. This unfortunately fails for me now\n\n\n```\n* Testing zn \tfor gp-sta..TIME=2\tfor gp-dyn..TIME=3\n+++ [BUG] Total bench for gp-sta is 164083\n+++ [BUG] Total bench for gp-dyn is 171336\n\nPROBLEMS WERE NOTED. The following files list them in diff format: \nDirectory: /export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12549/src/Osolaris-ix86\n\tcompat-sta.dif\n\ttrans-sta.dif\n\tcompat-dyn.dif\n\ttrans-dyn.dif\nmake[1]: *** [test-all] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12549/src/Osolaris-ix86'\nmake: *** [test-all] Error 2\nPari failed the self-tests when running 'make test-all'\n*************************************\nError testing package ** pari-2.4.3svn-12549 **\n*************************************\n```\n\nThat is on a Sun Ultra 27 running OpenSolaris. Pari builds fine, but fails the self-tests. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). \n\nDave",
+    "body": "Replying to [comment:139 jdemeyer]:\n> New version of the PARI spkg: [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3svn-12549.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3svn-12549.spkg).\n> \n> Removed the non-existent get_dlld patching.\n> Cleaned up patches/README.txt\n\nI assumed you updated the source code, since the svn number is incremented. This unfortunately fails for me now\n\n```\n* Testing zn \tfor gp-sta..TIME=2\tfor gp-dyn..TIME=3\n+++ [BUG] Total bench for gp-sta is 164083\n+++ [BUG] Total bench for gp-dyn is 171336\n\nPROBLEMS WERE NOTED. The following files list them in diff format: \nDirectory: /export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12549/src/Osolaris-ix86\n\tcompat-sta.dif\n\ttrans-sta.dif\n\tcompat-dyn.dif\n\ttrans-dyn.dif\nmake[1]: *** [test-all] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5.2.alpha0/spkg/build/pari-2.4.3svn-12549/src/Osolaris-ix86'\nmake: *** [test-all] Error 2\nPari failed the self-tests when running 'make test-all'\n*************************************\nError testing package ** pari-2.4.3svn-12549 **\n*************************************\n```\nThat is on a Sun Ultra 27 running OpenSolaris. Pari builds fine, but fails the self-tests. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). \n\nDave",
     "created_at": "2010-07-24T23:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4338,8 +4346,8 @@ Replying to [comment:139 jdemeyer]:
 > 
 > Removed the non-existent get_dlld patching.
 > Cleaned up patches/README.txt
-I assumed you updated the source code, since the svn number is incremented. This unfortunately fails for me now
 
+I assumed you updated the source code, since the svn number is incremented. This unfortunately fails for me now
 
 ```
 * Testing zn 	for gp-sta..TIME=2	for gp-dyn..TIME=3
@@ -4360,7 +4368,6 @@ Pari failed the self-tests when running 'make test-all'
 Error testing package ** pari-2.4.3svn-12549 **
 *************************************
 ```
-
 That is on a Sun Ultra 27 running OpenSolaris. Pari builds fine, but fails the self-tests. 
 
 http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). 
@@ -4374,7 +4381,7 @@ Dave
 archive/issue_comments_088289.json:
 ```json
 {
-    "body": "> http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). \n\nNo, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.",
+    "body": "> http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). \n\n\nNo, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.",
     "created_at": "2010-07-25T08:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4385,6 +4392,7 @@ archive/issue_comments_088289.json:
 
 > http://boxen.math.washington.edu/home/kirkby/patches/pari-2.4.3svn-12543.spkg passes all tests. Could the issue be that John's patches which stop a couple of the tests running, are no longer integrated? (I believe he added them as there is no database here, so some tests will fail). 
 
+
 No, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.
 
 
@@ -4394,7 +4402,7 @@ No, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) 
 archive/issue_comments_088290.json:
 ```json
 {
-    "body": "Replying to [comment:142 jdemeyer]:\n\n> No, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.\n\n`make test-all`\n\nwill always fail with just the upstream source unless some of the tests are disabled, since they rely on one or more databased that are not in Sage unless optional components are installed. \n\nDave",
+    "body": "Replying to [comment:142 jdemeyer]:\n\n> No, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.\n\n\n`make test-all`\n\nwill always fail with just the upstream source unless some of the tests are disabled, since they rely on one or more databased that are not in Sage unless optional components are installed. \n\nDave",
     "created_at": "2010-07-25T08:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4406,6 +4414,7 @@ archive/issue_comments_088290.json:
 Replying to [comment:142 jdemeyer]:
 
 > No, the problem is upstream.  Building PARI from SVN (outside of Sage, that is) now fails make test-all.  I am reverting to 12546, that seems to work.
+
 
 `make test-all`
 
@@ -4456,7 +4465,7 @@ Fix RR(0.0), clean up
 archive/issue_comments_088293.json:
 ```json
 {
-    "body": "Attachment [9343_various1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_various1.patch) by @jdemeyer created at 2010-07-26 18:00:25\n\nThe last patch fixes the tanh() issue, it was caused by RR(0.0)._pari_() creating an invalid GEN (it took me a very long time to figure this out).\n\nI added a debug() function to gen objects calling dbgGEN() from the pari library, example:\n\n```\nsage: pari('[1/2, 1.0*I]').debug()  # random addresses\n[&=0000000004c5f010] VEC(lg=3):2200000000000003 0000000004c5eff8 0000000004c5efb0\n  1st component = [&=0000000004c5eff8] FRAC(lg=3):0800000000000003 0000000004c5efe0 0000000004c5efc8\n    num = [&=0000000004c5efe0] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000001\n    den = [&=0000000004c5efc8] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000002\n  2nd component = [&=0000000004c5efb0] COMPLEX(lg=3):0c00000000000003 00007fae8a2eb840 0000000004c5ef90\n    real = gen_0\n    imag = [&=0000000004c5ef90] REAL(lg=4):0400000000000004 (+,expo=0):6000000000000000 8000000000000000 0000000000000000\n```\n\n\nApart from that, a lot of cleanups, and some more doctests.\n\nAs far as I can tell, everything works now on my system, apart from some doctest failures in elliptic_curves (again, I do not plan to look at this).",
+    "body": "Attachment [9343_various1.patch](tarball://root/attachments/some-uuid/ticket9343/9343_various1.patch) by @jdemeyer created at 2010-07-26 18:00:25\n\nThe last patch fixes the tanh() issue, it was caused by RR(0.0)._pari_() creating an invalid GEN (it took me a very long time to figure this out).\n\nI added a debug() function to gen objects calling dbgGEN() from the pari library, example:\n\n```\nsage: pari('[1/2, 1.0*I]').debug()  # random addresses\n[&=0000000004c5f010] VEC(lg=3):2200000000000003 0000000004c5eff8 0000000004c5efb0\n  1st component = [&=0000000004c5eff8] FRAC(lg=3):0800000000000003 0000000004c5efe0 0000000004c5efc8\n    num = [&=0000000004c5efe0] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000001\n    den = [&=0000000004c5efc8] INT(lg=3):0200000000000003 (+,lgefint=3):4000000000000003 0000000000000002\n  2nd component = [&=0000000004c5efb0] COMPLEX(lg=3):0c00000000000003 00007fae8a2eb840 0000000004c5ef90\n    real = gen_0\n    imag = [&=0000000004c5ef90] REAL(lg=4):0400000000000004 (+,expo=0):6000000000000000 8000000000000000 0000000000000000\n```\n\nApart from that, a lot of cleanups, and some more doctests.\n\nAs far as I can tell, everything works now on my system, apart from some doctest failures in elliptic_curves (again, I do not plan to look at this).",
     "created_at": "2010-07-26T18:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4481,7 +4490,6 @@ sage: pari('[1/2, 1.0*I]').debug()  # random addresses
     real = gen_0
     imag = [&=0000000004c5ef90] REAL(lg=4):0400000000000004 (+,expo=0):6000000000000000 8000000000000000 0000000000000000
 ```
-
 
 Apart from that, a lot of cleanups, and some more doctests.
 
@@ -4596,7 +4604,7 @@ Flattening of all the above sagelib patches
 archive/issue_comments_088299.json:
 ```json
 {
-    "body": "Replying to [comment:147 jdemeyer]:\n> I believe now we are ready to test this enormous patch.  Since there are 5 spkg's involved (sage, extcode, pari, genus2reduction, lcalc), the only sensible way to test this is to do a complete build from scratch.  To make that process easier, I have uploaded a full Sage distribution with the patches applied to [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar).  Just doing `make` should be enough to build it.\n\nThis built OK on Solaris 10 (SPARC) using t2.math. A quick check showed Sage functioned - i.e. did not do something stupid like segfault. I am running ` make ptestlong`\n\nDave",
+    "body": "Replying to [comment:147 jdemeyer]:\n> I believe now we are ready to test this enormous patch.  Since there are 5 spkg's involved (sage, extcode, pari, genus2reduction, lcalc), the only sensible way to test this is to do a complete build from scratch.  To make that process easier, I have uploaded a full Sage distribution with the patches applied to [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar).  Just doing `make` should be enough to build it.\n\n\nThis built OK on Solaris 10 (SPARC) using t2.math. A quick check showed Sage functioned - i.e. did not do something stupid like segfault. I am running ` make ptestlong`\n\nDave",
     "created_at": "2010-07-27T11:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4607,6 +4615,7 @@ archive/issue_comments_088299.json:
 
 Replying to [comment:147 jdemeyer]:
 > I believe now we are ready to test this enormous patch.  Since there are 5 spkg's involved (sage, extcode, pari, genus2reduction, lcalc), the only sensible way to test this is to do a complete build from scratch.  To make that process easier, I have uploaded a full Sage distribution with the patches applied to [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.alpha0-9343.tar).  Just doing `make` should be enough to build it.
+
 
 This built OK on Solaris 10 (SPARC) using t2.math. A quick check showed Sage functioned - i.e. did not do something stupid like segfault. I am running ` make ptestlong`
 
@@ -4659,7 +4668,7 @@ Shall we suggest via sage-release that after 4,5,2 is out, a whole release is de
 archive/issue_comments_088302.json:
 ```json
 {
-    "body": "Replying to [comment:151 cremona]:\n> Shall we suggest via sage-release that after 4,5,2 is out, a whole release is devoted to this upgrade?  It makes sense to me.  If you agree, do it.\n\nExcellent idea.  I especially like it because there are so many things depending on PARI.  I expect for example several doctest failures in the 4.5.2alpha0 -> 4.5.2alpha1 upgrade.",
+    "body": "Replying to [comment:151 cremona]:\n> Shall we suggest via sage-release that after 4,5,2 is out, a whole release is devoted to this upgrade?  It makes sense to me.  If you agree, do it.\n\n\nExcellent idea.  I especially like it because there are so many things depending on PARI.  I expect for example several doctest failures in the 4.5.2alpha0 -> 4.5.2alpha1 upgrade.",
     "created_at": "2010-07-27T12:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4671,6 +4680,7 @@ archive/issue_comments_088302.json:
 Replying to [comment:151 cremona]:
 > Shall we suggest via sage-release that after 4,5,2 is out, a whole release is devoted to this upgrade?  It makes sense to me.  If you agree, do it.
 
+
 Excellent idea.  I especially like it because there are so many things depending on PARI.  I expect for example several doctest failures in the 4.5.2alpha0 -> 4.5.2alpha1 upgrade.
 
 
@@ -4680,7 +4690,7 @@ Excellent idea.  I especially like it because there are so many things depending
 archive/issue_comments_088303.json:
 ```json
 {
-    "body": "There were several failures on  t2.math.washington.edu. I've put details of the hardware here, since over time hardware changes, so anyone looking back in a couple of years will be able to know the exact conditions. \n\n## Hardware and software configuration of t2.math.washington.edu\n* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) \n* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). \n* 32 GB RAM\n* No swap devices configured. \n* Solaris 10 update 7 (5/09)\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n* Sage was built in on a local ZFS file system as a 32-bit application.\n\nSee the file Solaris-10-SPARC-ptestlong-failures.log\n\n\n```\nThe following tests failed:\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/lfunctions/dokchitser.py # 4 doctests failed\n        sage -t  -long devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/geometry/toric_lattice_element.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/geometry/cone.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/misc/randstate.pyx # 15 doctests failed\n        sage -t  -long devel/sage/sage/libs/pari/gen.pyx # 11 doctests failed\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/residue_field.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/number_field/class_group.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/rings/polynomial/multi_polynomial_element.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/rings/qqbar.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/number_field/number_field.py # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 6622.9 seconds\n```\n",
+    "body": "There were several failures on  t2.math.washington.edu. I've put details of the hardware here, since over time hardware changes, so anyone looking back in a couple of years will be able to know the exact conditions. \n\n## Hardware and software configuration of t2.math.washington.edu\n* [Sun SPARC Enterprise T5240 Server](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm) \n* 2 x 1167 MHz [UltraSPARC T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors. (16 cores and 128 hardware threads in total). \n* 32 GB RAM\n* No swap devices configured. \n* Solaris 10 update 7 (5/09)\n* gcc 4.4.1 configured to use the Sun linker and Sun assembler. \n* Sage was built in on a local ZFS file system as a 32-bit application.\n\nSee the file Solaris-10-SPARC-ptestlong-failures.log\n\n```\nThe following tests failed:\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/lfunctions/dokchitser.py # 4 doctests failed\n        sage -t  -long devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/geometry/toric_lattice_element.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/geometry/cone.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/misc/randstate.pyx # 15 doctests failed\n        sage -t  -long devel/sage/sage/libs/pari/gen.pyx # 11 doctests failed\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/residue_field.pyx # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/number_field/class_group.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/rings/polynomial/multi_polynomial_element.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/rings/qqbar.py # 1 doctests failed\n        sage -t  -long devel/sage/sage/rings/number_field/number_field.py # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 6622.9 seconds\n```",
     "created_at": "2010-07-27T15:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4702,7 +4712,6 @@ There were several failures on  t2.math.washington.edu. I've put details of the 
 
 See the file Solaris-10-SPARC-ptestlong-failures.log
 
-
 ```
 The following tests failed:
 
@@ -4723,7 +4732,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 6622.9 seconds
 ```
-
 
 
 
@@ -4772,7 +4780,7 @@ For the moment, we don't really need more tests until I have put up sage-4.5.2al
 archive/issue_comments_088306.json:
 ```json
 {
-    "body": "Replying to [comment:154 jdemeyer]:\n> Thanks for the test.  I will now upgrade to sage-4.5.2alpha1, do some tests on my own system and in the mean time fix the SPARC failures.  Note that some are simply bugs in sage-4.5.2alpha0 (see the sage-release mailing list).\n> \n> For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.\n\nFair enough, but I may as well report that all was good on 64-bit ubuntu except \n\n```\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n```\n\nwhich seems irrelevant.",
+    "body": "Replying to [comment:154 jdemeyer]:\n> Thanks for the test.  I will now upgrade to sage-4.5.2alpha1, do some tests on my own system and in the mean time fix the SPARC failures.  Note that some are simply bugs in sage-4.5.2alpha0 (see the sage-release mailing list).\n> \n> For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.\n\n\nFair enough, but I may as well report that all was good on 64-bit ubuntu except \n\n```\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n```\nwhich seems irrelevant.",
     "created_at": "2010-07-27T22:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4786,13 +4794,13 @@ Replying to [comment:154 jdemeyer]:
 > 
 > For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.
 
+
 Fair enough, but I may as well report that all was good on 64-bit ubuntu except 
 
 ```
 
         sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed
 ```
-
 which seems irrelevant.
 
 
@@ -4802,7 +4810,7 @@ which seems irrelevant.
 archive/issue_comments_088307.json:
 ```json
 {
-    "body": "Replying to [comment:155 cremona]:\n> Replying to [comment:154 jdemeyer]:\n> > For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.\n> \n> Fair enough, but I may as well report that all was good on 64-bit ubuntu except \n\n```\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n```\n\n> which seems irrelevant.\n\nThis is also a 4.5.2.alpha0 bug and fixed in alpha1 (SageNB 0.8.2).",
+    "body": "Replying to [comment:155 cremona]:\n> Replying to [comment:154 jdemeyer]:\n> > For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.\n\n> \n> Fair enough, but I may as well report that all was good on 64-bit ubuntu except \n\n{{{\n\n        sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed\n}}}\n> which seems irrelevant.\n\n\nThis is also a 4.5.2.alpha0 bug and fixed in alpha1 (SageNB 0.8.2).",
     "created_at": "2010-07-28T20:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4814,15 +4822,16 @@ archive/issue_comments_088307.json:
 Replying to [comment:155 cremona]:
 > Replying to [comment:154 jdemeyer]:
 > > For the moment, we don't really need more tests until I have put up sage-4.5.2alpha1-9343.
+
 > 
 > Fair enough, but I may as well report that all was good on 64-bit ubuntu except 
 
-```
+{{{
 
         sage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.1-py2.6.egg/sagenb/misc/sageinspect.py # 1 doctests failed
-```
-
+}}}
 > which seems irrelevant.
+
 
 This is also a 4.5.2.alpha0 bug and fixed in alpha1 (SageNB 0.8.2).
 
@@ -4923,7 +4932,7 @@ Will [part of] the PARI upgrade fix #9659?  I'm wondering whether to keep #9659 
 archive/issue_comments_088311.json:
 ```json
 {
-    "body": "Replying to [comment:159 mpatel]:\n> Will [part of] the PARI upgrade fix #9659?\nI don't know but probably not.  So I would keep #9659 seperate from this.",
+    "body": "Replying to [comment:159 mpatel]:\n> Will [part of] the PARI upgrade fix #9659?\n\nI don't know but probably not.  So I would keep #9659 seperate from this.",
     "created_at": "2010-08-02T07:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4934,6 +4943,7 @@ archive/issue_comments_088311.json:
 
 Replying to [comment:159 mpatel]:
 > Will [part of] the PARI upgrade fix #9659?
+
 I don't know but probably not.  So I would keep #9659 seperate from this.
 
 
@@ -4961,7 +4971,7 @@ I consider this ticket to be essentially finished.  There are just a few ellipti
 archive/issue_comments_088313.json:
 ```json
 {
-    "body": "Replying to [comment:161 jdemeyer]:\n> I consider this ticket to be essentially finished.  There are just a few elliptic curve doctests marked with \"9343 not tested\" which should be fixed (John?).  Other than that, I would not make any further changes to this ticket.\n\nCan you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.",
+    "body": "Replying to [comment:161 jdemeyer]:\n> I consider this ticket to be essentially finished.  There are just a few elliptic curve doctests marked with \"9343 not tested\" which should be fixed (John?).  Other than that, I would not make any further changes to this ticket.\n\n\nCan you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.",
     "created_at": "2010-08-02T11:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4973,6 +4983,7 @@ archive/issue_comments_088313.json:
 Replying to [comment:161 jdemeyer]:
 > I consider this ticket to be essentially finished.  There are just a few elliptic curve doctests marked with "9343 not tested" which should be fixed (John?).  Other than that, I would not make any further changes to this ticket.
 
+
 Can you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.
 
 
@@ -4982,7 +4993,7 @@ Can you make a list of these?  Last time I looked the only ones were in heegner.
 archive/issue_comments_088314.json:
 ```json
 {
-    "body": "Replying to [comment:162 cremona]:\n> Can you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.\n\nLook at this patch: [http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch).  Just invert that patch: in a shell, in $SAGE_ROOT/devel/sage, do:\n\n```\npatch -p1 --reverse <9343_remove_ell_doctests.patch\n```\n",
+    "body": "Replying to [comment:162 cremona]:\n> Can you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.\n\n\nLook at this patch: [http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch).  Just invert that patch: in a shell, in $SAGE_ROOT/devel/sage, do:\n\n```\npatch -p1 --reverse <9343_remove_ell_doctests.patch\n```",
     "created_at": "2010-08-02T12:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -4994,12 +5005,12 @@ archive/issue_comments_088314.json:
 Replying to [comment:162 cremona]:
 > Can you make a list of these?  Last time I looked the only ones were in heegner.py, and I do not know what the problem is with those.
 
+
 Look at this patch: [http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_remove_ell_doctests.patch).  Just invert that patch: in a shell, in $SAGE_ROOT/devel/sage, do:
 
 ```
 patch -p1 --reverse <9343_remove_ell_doctests.patch
 ```
-
 
 
 
@@ -5082,7 +5093,7 @@ Needed to fix doctests appearing because of PARI svn-12577
 archive/issue_comments_088319.json:
 ```json
 {
-    "body": "Attachment [9343_weber.patch](tarball://root/attachments/some-uuid/ticket9343/9343_weber.patch) by @nexttime created at 2010-08-06 12:24:24\n\nReplying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\nWith the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_weber.patch) applied, all long tests pass on Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3, native code; parallel build from scratch; no explicit/extra optimization specified).\n\n(Note that trac does *not* send notifications for file uploads.)",
+    "body": "Attachment [9343_weber.patch](tarball://root/attachments/some-uuid/ticket9343/9343_weber.patch) by @nexttime created at 2010-08-06 12:24:24\n\nReplying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\n\nWith the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_weber.patch) applied, all long tests pass on Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3, native code; parallel build from scratch; no explicit/extra optimization specified).\n\n(Note that trac does *not* send notifications for file uploads.)",
     "created_at": "2010-08-06T12:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5096,6 +5107,7 @@ Attachment [9343_weber.patch](tarball://root/attachments/some-uuid/ticket9343/93
 Replying to [comment:167 jdemeyer]:
 > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))
 
+
 With the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/9343_weber.patch) applied, all long tests pass on Ubuntu 9.04 x86 (Pentium 4 Prescott, gcc 4.3.3, native code; parallel build from scratch; no explicit/extra optimization specified).
 
 (Note that trac does *not* send notifications for file uploads.)
@@ -5107,7 +5119,7 @@ With the [Weber patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9343
 archive/issue_comments_088320.json:
 ```json
 {
-    "body": "Replying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\nWhat concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n\nThere's no point keep testing the code, if the source gets updated. \n\nPersonally, I'd revert to the svn which underwent a fair amount of testing.",
+    "body": "Replying to [comment:167 jdemeyer]:\n> I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\n\nWhat concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n\nThere's no point keep testing the code, if the source gets updated. \n\nPersonally, I'd revert to the svn which underwent a fair amount of testing.",
     "created_at": "2010-08-07T11:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5118,6 +5130,7 @@ archive/issue_comments_088320.json:
 
 Replying to [comment:167 jdemeyer]:
 > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))
+
 
 What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. 
 
@@ -5132,7 +5145,7 @@ Personally, I'd revert to the svn which underwent a fair amount of testing.
 archive/issue_comments_088321.json:
 ```json
 {
-    "body": "Replying to [comment:169 drkirkby]:\n> Replying to [comment:167 jdemeyer]:\n> > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n> \n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated. \n> \n> Personally, I'd revert to the svn which underwent a fair amount of testing. \n\nTo be more precise, 12543 was ok, 12549 failed all tests. What bugs has 12577 introduced? \n\nIs there any chance of convincing the Pari developers to actually make a well-tested stable release? The Pari developers can make commits to svn more rapidly than Sage developers can test the code. That's 34 different source versions in 13 days. Would anyone like to try to convince me these are well tested? \n\nDave",
+    "body": "Replying to [comment:169 drkirkby]:\n> Replying to [comment:167 jdemeyer]:\n> > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))\n\n> \n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated. \n> \n> Personally, I'd revert to the svn which underwent a fair amount of testing. \n\n\nTo be more precise, 12543 was ok, 12549 failed all tests. What bugs has 12577 introduced? \n\nIs there any chance of convincing the Pari developers to actually make a well-tested stable release? The Pari developers can make commits to svn more rapidly than Sage developers can test the code. That's 34 different source versions in 13 days. Would anyone like to try to convince me these are well tested? \n\nDave",
     "created_at": "2010-08-07T12:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5144,12 +5157,14 @@ archive/issue_comments_088321.json:
 Replying to [comment:169 drkirkby]:
 > Replying to [comment:167 jdemeyer]:
 > > I updated to PARI svn 12577 (some more bugs have been fixed), did a long doctest on a 32-bit and a 64-bit Intel Linux system.  There were a few failures appearing, I will add a patch soon (this patch is not included in the sage distribution [http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar](http://cage.ugent.be/~jdemeyer/sage/sage-4.5.2.rc1.newpari.v0.tar))
+
 > 
 > What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. 
 > 
 > There's no point keep testing the code, if the source gets updated. 
 > 
 > Personally, I'd revert to the svn which underwent a fair amount of testing. 
+
 
 To be more precise, 12543 was ok, 12549 failed all tests. What bugs has 12577 introduced? 
 
@@ -5164,7 +5179,7 @@ Dave
 archive/issue_comments_088322.json:
 ```json
 {
-    "body": "Replying to [comment:169 drkirkby]:\n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced.\n\nTrue. <ignore> But why then update at all...? </ignore>\n\n(*\"Release often, release early.\"*)\n\n> It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated.\n\nWe might discover bugs in PARI itself as well, which hopefully would get fixed upstream (quickly in the svn, but probably not immediately in a [new] stable version). I though would prefer to base the new spkg on an \"official\", i.e. stable version, too.\n\n> Personally, I'd revert to the svn which underwent a fair amount of testing. \n\nI think since it seems a whole release will be dedicated to updating PARI, there will be enough testing anyway. But of course we'll have to freeze our snapshot at some point, when the appointed Sage release date/cycle comes close(r).",
+    "body": "Replying to [comment:169 drkirkby]:\n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced.\n\n\nTrue. <ignore> But why then update at all...? </ignore>\n\n(*\"Release often, release early.\"*)\n\n> It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated.\n\n\nWe might discover bugs in PARI itself as well, which hopefully would get fixed upstream (quickly in the svn, but probably not immediately in a [new] stable version). I though would prefer to base the new spkg on an \"official\", i.e. stable version, too.\n\n> Personally, I'd revert to the svn which underwent a fair amount of testing. \n\n\nI think since it seems a whole release will be dedicated to updating PARI, there will be enough testing anyway. But of course we'll have to freeze our snapshot at some point, when the appointed Sage release date/cycle comes close(r).",
     "created_at": "2010-08-07T12:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5176,6 +5191,7 @@ archive/issue_comments_088322.json:
 Replying to [comment:169 drkirkby]:
 > What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced.
 
+
 True. <ignore> But why then update at all...? </ignore>
 
 (*"Release often, release early."*)
@@ -5184,9 +5200,11 @@ True. <ignore> But why then update at all...? </ignore>
 > 
 > There's no point keep testing the code, if the source gets updated.
 
+
 We might discover bugs in PARI itself as well, which hopefully would get fixed upstream (quickly in the svn, but probably not immediately in a [new] stable version). I though would prefer to base the new spkg on an "official", i.e. stable version, too.
 
 > Personally, I'd revert to the svn which underwent a fair amount of testing. 
+
 
 I think since it seems a whole release will be dedicated to updating PARI, there will be enough testing anyway. But of course we'll have to freeze our snapshot at some point, when the appointed Sage release date/cycle comes close(r).
 
@@ -5197,7 +5215,7 @@ I think since it seems a whole release will be dedicated to updating PARI, there
 archive/issue_comments_088323.json:
 ```json
 {
-    "body": "Replying to [comment:169 drkirkby]:\n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated.\nWell, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).",
+    "body": "Replying to [comment:169 drkirkby]:\n> What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. \n> \n> There's no point keep testing the code, if the source gets updated.\n\nWell, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).",
     "created_at": "2010-08-09T21:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5210,6 +5228,7 @@ Replying to [comment:169 drkirkby]:
 > What concerns me, is all this updating of svn. Sure some bugs might be fixed, but others are getting introduced. It would be nice if there was a stable version. Every time you update, so the testing needs to be done again. There was an earlier case I evaluated which it was ok, then someone updated and it was broken. 
 > 
 > There's no point keep testing the code, if the source gets updated.
+
 Well, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).
 
 
@@ -5219,7 +5238,7 @@ Well, I agree that we shouldn't upgrade the source all too often.  But if the PA
 archive/issue_comments_088324.json:
 ```json
 {
-    "body": "Replying to [comment:172 jdemeyer]:\n> Replying to [comment:169 drkirkby]:\n> > There's no point keep testing the code, if the source gets updated.\n> Well, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).\n\nI've changed the title to reflect more accurately what the ticket is. It's **not** an update to version 2.4.3 of Pari. Version 2.4.2 has not even been released - only an alpha of that is available\n\nhttp://pari.math.u-bordeaux.fr/pub/pari/testing/pari-2.4.2.alpha.tar.gz\n\nThis is an svn snapshot, but the ticket title implied something quite different. \n\nNote the developers guide says the date the snapshot was downloaded should be in the package name. However, that seems to cause confusion to me, as when people update the package, they keep changing the date, rather than adding .p0, .p1, .p2 etc. In any case, different snapshots can exist on the same day. Putting the actual snapshot number seems more sensible to me. So I think it would be better if this was called pari-svn12577.spkg, to reflect that fact it is a snapshot, and not a stable release as the package name would imply. Otherwise follow the developers guide. IMHO, this should not be called pari-2.4.3. \n\nWhen 2.4.3 is released, it would seem sensible Pari is updated to a stable release. But that's less likely to happen if people see from the package name that we already have the latest release. \n\nOf course, if the snapshot that's used gets updated, then that should be reflected in the ticket title! \n\nBTW, before thinking about updating the snapshot once again, take a read of of the book [The Mythical Man-Month](http://en.wikipedia.org/wiki/The_Mythical_Man-Month) in particular one of the authors points [that in a suitably complex system there is a certain irreducible number of errors. Any attempt to fix observed errors tends to result in the introduction of other errors.](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_tendency_towards_irreducible_number_of_errors) I've certainly experienced this before many times - including a previous snapshot on this very ticket. \n\nDave",
+    "body": "Replying to [comment:172 jdemeyer]:\n> Replying to [comment:169 drkirkby]:\n> > There's no point keep testing the code, if the source gets updated.\n\n> Well, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).\n\nI've changed the title to reflect more accurately what the ticket is. It's **not** an update to version 2.4.3 of Pari. Version 2.4.2 has not even been released - only an alpha of that is available\n\nhttp://pari.math.u-bordeaux.fr/pub/pari/testing/pari-2.4.2.alpha.tar.gz\n\nThis is an svn snapshot, but the ticket title implied something quite different. \n\nNote the developers guide says the date the snapshot was downloaded should be in the package name. However, that seems to cause confusion to me, as when people update the package, they keep changing the date, rather than adding .p0, .p1, .p2 etc. In any case, different snapshots can exist on the same day. Putting the actual snapshot number seems more sensible to me. So I think it would be better if this was called pari-svn12577.spkg, to reflect that fact it is a snapshot, and not a stable release as the package name would imply. Otherwise follow the developers guide. IMHO, this should not be called pari-2.4.3. \n\nWhen 2.4.3 is released, it would seem sensible Pari is updated to a stable release. But that's less likely to happen if people see from the package name that we already have the latest release. \n\nOf course, if the snapshot that's used gets updated, then that should be reflected in the ticket title! \n\nBTW, before thinking about updating the snapshot once again, take a read of of the book [The Mythical Man-Month](http://en.wikipedia.org/wiki/The_Mythical_Man-Month) in particular one of the authors points [that in a suitably complex system there is a certain irreducible number of errors. Any attempt to fix observed errors tends to result in the introduction of other errors.](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_tendency_towards_irreducible_number_of_errors) I've certainly experienced this before many times - including a previous snapshot on this very ticket. \n\nDave",
     "created_at": "2010-08-10T13:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5231,6 +5250,7 @@ archive/issue_comments_088324.json:
 Replying to [comment:172 jdemeyer]:
 > Replying to [comment:169 drkirkby]:
 > > There's no point keep testing the code, if the source gets updated.
+
 > Well, I agree that we shouldn't upgrade the source all too often.  But if the PARI developers fix a bug that we found, that is a good reason to update (and that is also why I updated to 12577).
 
 I've changed the title to reflect more accurately what the ticket is. It's **not** an update to version 2.4.3 of Pari. Version 2.4.2 has not even been released - only an alpha of that is available
@@ -5332,7 +5352,7 @@ Flattening of the above sagelib patches against sage-4.5.3.alpha0
 archive/issue_comments_088329.json:
 ```json
 {
-    "body": "Attachment [sagelib_9343_combined6.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined6.patch) by @jdemeyer created at 2010-08-12 21:38:54\n\nReplying to [comment:176 cremona]:\n> Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n\nI rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...",
+    "body": "Attachment [sagelib_9343_combined6.patch](tarball://root/attachments/some-uuid/ticket9343/sagelib_9343_combined6.patch) by @jdemeyer created at 2010-08-12 21:38:54\n\nReplying to [comment:176 cremona]:\n> Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n\n\nI rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...",
     "created_at": "2010-08-12T21:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5346,6 +5366,7 @@ Attachment [sagelib_9343_combined6.patch](tarball://root/attachments/some-uuid/t
 Replying to [comment:176 cremona]:
 > Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...
 
+
 I rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...
 
 
@@ -5355,7 +5376,7 @@ I rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it
 archive/issue_comments_088330.json:
 ```json
 {
-    "body": "Replying to [comment:178 jdemeyer]:\n> Replying to [comment:176 cremona]:\n> > Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n> \n> I rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...\n\nThanks -- I'll spend some time on this on Friday.",
+    "body": "Replying to [comment:178 jdemeyer]:\n> Replying to [comment:176 cremona]:\n> > Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...\n\n> \n> I rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...\n\n\nThanks -- I'll spend some time on this on Friday.",
     "created_at": "2010-08-12T22:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5367,8 +5388,10 @@ archive/issue_comments_088330.json:
 Replying to [comment:178 jdemeyer]:
 > Replying to [comment:176 cremona]:
 > > Could someone who is up to date on this post a list of which patches now need applying, and a link to the latest spkg?  The list at the top is just too long, and I don't have a recent working version of this.  Also, does what we have so far apply to 4.5.2?  or 4.5.3.alpha0?  If not, it should...
+
 > 
 > I rebased the patch to sage-4.5.3.alpha0, but I did not yet have time to test it.  I also tried to clarify the instructions in the ticket description, hope it clears things up...
+
 
 Thanks -- I'll spend some time on this on Friday.
 
@@ -5441,7 +5464,7 @@ PS to review just above: I also tested with "make ptestlong" and there were no p
 archive/issue_comments_088334.json:
 ```json
 {
-    "body": "Replying to [comment:180 cremona]:\n> ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n\nThis is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)",
+    "body": "Replying to [comment:180 cremona]:\n> ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n\n\nThis is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)",
     "created_at": "2010-08-13T11:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5453,6 +5476,7 @@ archive/issue_comments_088334.json:
 Replying to [comment:180 cremona]:
 > ... except that when I tried to install the lcalc spkg, it said "already installed", which I do not really understand.
 
+
 This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)
 
 
@@ -5462,7 +5486,7 @@ This is because the package at #9592 has the wrong name (it should be rebased on
 archive/issue_comments_088335.json:
 ```json
 {
-    "body": "Replying to [comment:182 leif]:\n> Replying to [comment:180 cremona]:\n> > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n> \n> This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> \nAhah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?",
+    "body": "Replying to [comment:182 leif]:\n> Replying to [comment:180 cremona]:\n> > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n  \n> \n> This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> \n\nAhah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?",
     "created_at": "2010-08-13T11:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5474,9 +5498,11 @@ archive/issue_comments_088335.json:
 Replying to [comment:182 leif]:
 > Replying to [comment:180 cremona]:
 > > ... except that when I tried to install the lcalc spkg, it said "already installed", which I do not really understand.
+  
 > 
 > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)
 > 
+
 Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?
 
 
@@ -5486,7 +5512,7 @@ Ahah!  Well, as I said, everything worked and passed, so perhaps this means that
 archive/issue_comments_088336.json:
 ```json
 {
-    "body": "Replying to [comment:183 cremona]:\n> Replying to [comment:182 leif]:\n> > Replying to [comment:180 cremona]:\n> > > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n> > \n> > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> > \n> Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?\n\nJohn, could you try reinstalling the \"old\" lcalc p1 package (by `./sage -f ...`)?\n\nPerhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to fix.",
+    "body": "Replying to [comment:183 cremona]:\n> Replying to [comment:182 leif]:\n> > Replying to [comment:180 cremona]:\n> > > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n  \n> > \n> > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> > \n\n> Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?\n\nJohn, could you try reinstalling the \"old\" lcalc p1 package (by `./sage -f ...`)?\n\nPerhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to fix.",
     "created_at": "2010-08-13T15:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5499,9 +5525,11 @@ Replying to [comment:183 cremona]:
 > Replying to [comment:182 leif]:
 > > Replying to [comment:180 cremona]:
 > > > ... except that when I tried to install the lcalc spkg, it said "already installed", which I do not really understand.
+  
 > > 
 > > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)
 > > 
+
 > Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?
 
 John, could you try reinstalling the "old" lcalc p1 package (by `./sage -f ...`)?
@@ -5515,7 +5543,7 @@ Perhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to
 archive/issue_comments_088337.json:
 ```json
 {
-    "body": "Replying to [comment:184 leif]:\n> Replying to [comment:183 cremona]:\n> > Replying to [comment:182 leif]:\n> > > Replying to [comment:180 cremona]:\n> > > > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n> > > \n> > > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> > > \n> > Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?\n> \n> John, could you try reinstalling the \"old\" lcalc p1 package (by `./sage -f ...`)?\n> \n> Perhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to fix.\n\nI did that and it does not show the error.  Note that Jeroen's patch at #9592 just changes one source file (src/Lcommand_line_elliptic.cc) and in that file changes \n\n```\n    F[1] = lgeti(BIGDEFAULTPREC);\n```\n\nto\n\n```\n    F[1] = (long)cgeti(BIGDEFAULTPREC);\n```\n\nand 4 similar lines.  It is possible that during our work on this ticket some change in Pari means that old version works again.  So I think that we can cancel #9592 and remove the new spkg from the instruction on this ticket.  I will try that and report back.",
+    "body": "Replying to [comment:184 leif]:\n> Replying to [comment:183 cremona]:\n> > Replying to [comment:182 leif]:\n> > > Replying to [comment:180 cremona]:\n> > > > ... except that when I tried to install the lcalc spkg, it said \"already installed\", which I do not really understand.\n  \n> > > \n> > > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)\n> > > \n\n> > Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?\n> \n> John, could you try reinstalling the \"old\" lcalc p1 package (by `./sage -f ...`)?\n> \n> Perhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to fix.\n\n\nI did that and it does not show the error.  Note that Jeroen's patch at #9592 just changes one source file (src/Lcommand_line_elliptic.cc) and in that file changes \n\n```\n    F[1] = lgeti(BIGDEFAULTPREC);\n```\nto\n\n```\n    F[1] = (long)cgeti(BIGDEFAULTPREC);\n```\nand 4 similar lines.  It is possible that during our work on this ticket some change in Pari means that old version works again.  So I think that we can cancel #9592 and remove the new spkg from the instruction on this ticket.  I will try that and report back.",
     "created_at": "2010-08-13T15:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5529,27 +5557,28 @@ Replying to [comment:184 leif]:
 > > Replying to [comment:182 leif]:
 > > > Replying to [comment:180 cremona]:
 > > > > ... except that when I tried to install the lcalc spkg, it said "already installed", which I do not really understand.
+  
 > > > 
 > > > This is because the package at #9592 has the wrong name (it should be rebased on #9665 which is p1, and renamed to p2.)
 > > > 
+
 > > Ahah!  Well, as I said, everything worked and passed, so perhaps this means that no upgrade of lcalc is required after all?
 > 
 > John, could you try reinstalling the "old" lcalc p1 package (by `./sage -f ...`)?
 > 
 > Perhaps this would show the error #9592 (Jeroen's new lcalc spkg) is intended to fix.
 
+
 I did that and it does not show the error.  Note that Jeroen's patch at #9592 just changes one source file (src/Lcommand_line_elliptic.cc) and in that file changes 
 
 ```
     F[1] = lgeti(BIGDEFAULTPREC);
 ```
-
 to
 
 ```
     F[1] = (long)cgeti(BIGDEFAULTPREC);
 ```
-
 and 4 similar lines.  It is possible that during our work on this ticket some change in Pari means that old version works again.  So I think that we can cancel #9592 and remove the new spkg from the instruction on this ticket.  I will try that and report back.
 
 
@@ -5579,7 +5608,7 @@ I will take the real p1 from #9685 and add JD's extra patch to Lcommandline_elli
 archive/issue_comments_088339.json:
 ```json
 {
-    "body": "Replying to [comment:186 cremona]:\n\n> \n> I will take the real p1 from #9685 and add JD's extra patch to Lcommandline_elliptic.cc (being careful, since there's already a patch for that file) and make a p2 from it, then post a link to that here.\n\nThat should have said #9665;  and in fact I can take it from SAGE_ROOT/spkg/standard from 4.5.3.alpha0.",
+    "body": "Replying to [comment:186 cremona]:\n\n> \n> I will take the real p1 from #9685 and add JD's extra patch to Lcommandline_elliptic.cc (being careful, since there's already a patch for that file) and make a p2 from it, then post a link to that here.\n\n\nThat should have said #9665;  and in fact I can take it from SAGE_ROOT/spkg/standard from 4.5.3.alpha0.",
     "created_at": "2010-08-13T16:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5592,6 +5621,7 @@ Replying to [comment:186 cremona]:
 
 > 
 > I will take the real p1 from #9685 and add JD's extra patch to Lcommandline_elliptic.cc (being careful, since there's already a patch for that file) and make a p2 from it, then post a link to that here.
+
 
 That should have said #9665;  and in fact I can take it from SAGE_ROOT/spkg/standard from 4.5.3.alpha0.
 
@@ -5622,7 +5652,7 @@ I checked that the lcalc p2 spkg from #9665 builds fine (and really does build!)
 archive/issue_comments_088341.json:
 ```json
 {
-    "body": "Replying to [comment:188 cremona]:\n> See related discussions at #9665.  The new lcalc spkg should be replaced by the one there.[Jeroen's p1 has been superceded by the p1 at #9665 which has now been merged.  There's a suitable p2 at that ticket which can be linked to here after testing.]\n> \n> I checked that the lcalc p2 spkg from #9665 builds fine (and really does build!), and am re-testing everything.\n\nThe first and third references should be to #9592, sorry.",
+    "body": "Replying to [comment:188 cremona]:\n> See related discussions at #9665.  The new lcalc spkg should be replaced by the one there.[Jeroen's p1 has been superceded by the p1 at #9665 which has now been merged.  There's a suitable p2 at that ticket which can be linked to here after testing.]\n> \n> I checked that the lcalc p2 spkg from #9665 builds fine (and really does build!), and am re-testing everything.\n\n\nThe first and third references should be to #9592, sorry.",
     "created_at": "2010-08-13T16:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5635,6 +5665,7 @@ Replying to [comment:188 cremona]:
 > See related discussions at #9665.  The new lcalc spkg should be replaced by the one there.[Jeroen's p1 has been superceded by the p1 at #9665 which has now been merged.  There's a suitable p2 at that ticket which can be linked to here after testing.]
 > 
 > I checked that the lcalc p2 spkg from #9665 builds fine (and really does build!), and am re-testing everything.
+
 
 The first and third references should be to #9592, sorry.
 
@@ -5665,7 +5696,7 @@ So now the confusion over the lcalc spkg has been sorted, we are back on track..
 archive/issue_comments_088343.json:
 ```json
 {
-    "body": "Replying to [comment:190 cremona]:\n> All tests passed.  (This is with my extra patch  trac_9343-review.patch).\n\nYes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n\nAfter that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.\n\n> So now the confusion over the lcalc spkg has been sorted, we are back on track....\n\nYes. I could reproduce the build error of the old lcalc spkg with new PARI; John's new one (p2) at #9592 (Jeroen's p1 rebased on Sage's current one) builds.\n\nThe number (and type) of warnings I get by doing so (building lcalc) though is IMHO a shame. Besides other annoying warnings, there are twelve deprecation warnings (with gcc 4.4.4). (Of course many warnings have the same origin, but that makes fixing them even easier. This isn't meant as an offense, but rather a suggestion.)",
+    "body": "Replying to [comment:190 cremona]:\n> All tests passed.  (This is with my extra patch  trac_9343-review.patch).\n\n\nYes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n\nAfter that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.\n\n> So now the confusion over the lcalc spkg has been sorted, we are back on track....\n\n\nYes. I could reproduce the build error of the old lcalc spkg with new PARI; John's new one (p2) at #9592 (Jeroen's p1 rebased on Sage's current one) builds.\n\nThe number (and type) of warnings I get by doing so (building lcalc) though is IMHO a shame. Besides other annoying warnings, there are twelve deprecation warnings (with gcc 4.4.4). (Of course many warnings have the same origin, but that makes fixing them even easier. This isn't meant as an offense, but rather a suggestion.)",
     "created_at": "2010-08-13T20:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5677,11 +5708,13 @@ archive/issue_comments_088343.json:
 Replying to [comment:190 cremona]:
 > All tests passed.  (This is with my extra patch  trac_9343-review.patch).
 
+
 Yes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).
 
 After that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.
 
 > So now the confusion over the lcalc spkg has been sorted, we are back on track....
+
 
 Yes. I could reproduce the build error of the old lcalc spkg with new PARI; John's new one (p2) at #9592 (Jeroen's p1 rebased on Sage's current one) builds.
 
@@ -5694,7 +5727,7 @@ The number (and type) of warnings I get by doing so (building lcalc) though is I
 archive/issue_comments_088344.json:
 ```json
 {
-    "body": "Replying to [comment:191 leif]:\n> Replying to [comment:190 cremona]:\n> > All tests passed.  (This is with my extra patch  trac_9343-review.patch).\n> \n> Yes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n> \n> After that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.\n\nExactly the same on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, O2), except that I did run `testlong` instead of `ptestlong` because the machine was already heavily loaded.\n\n(The lcalc build warnings are the same, too, btw.)",
+    "body": "Replying to [comment:191 leif]:\n> Replying to [comment:190 cremona]:\n> > All tests passed.  (This is with my extra patch  trac_9343-review.patch).\n\n> \n> Yes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n> \n> After that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.\n\n\nExactly the same on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, O2), except that I did run `testlong` instead of `ptestlong` because the machine was already heavily loaded.\n\n(The lcalc build warnings are the same, too, btw.)",
     "created_at": "2010-08-13T21:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5706,10 +5739,12 @@ archive/issue_comments_088344.json:
 Replying to [comment:191 leif]:
 > Replying to [comment:190 cremona]:
 > > All tests passed.  (This is with my extra patch  trac_9343-review.patch).
+
 > 
 > Yes, passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).
 > 
 > After that, I applied John's reviewer patch, and all (long) tests in `sage/schemes/elliptic_curves/ell_rational_field.py` also passed.
+
 
 Exactly the same on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, O2), except that I did run `testlong` instead of `ptestlong` because the machine was already heavily loaded.
 
@@ -5741,7 +5776,7 @@ But that's not for this ticket.
 archive/issue_comments_088346.json:
 ```json
 {
-    "body": "Replying to [comment:193 cremona]:\n> My guess is that if one of us were to fix the warnings in compiling lcalc and give Mike R the result, he would gratefully accept it, if he does not have time to do it himself.\n> But that's not for this ticket.\n\nPerhaps for #9592. If only all (severe) warnings originated from upstream...\n\n\nP.S. to the build and test reports:\n\nI do get a Sphinx warning:\n\n```\ndocstring of sage.libs.pari.gen.PariInstance.read:8: (WARNING/2) Literal block expected; none found.\n```\n",
+    "body": "Replying to [comment:193 cremona]:\n> My guess is that if one of us were to fix the warnings in compiling lcalc and give Mike R the result, he would gratefully accept it, if he does not have time to do it himself.\n> But that's not for this ticket.\n\n\nPerhaps for #9592. If only all (severe) warnings originated from upstream...\n\n\nP.S. to the build and test reports:\n\nI do get a Sphinx warning:\n\n```\ndocstring of sage.libs.pari.gen.PariInstance.read:8: (WARNING/2) Literal block expected; none found.\n```",
     "created_at": "2010-08-13T21:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5753,6 +5788,7 @@ archive/issue_comments_088346.json:
 Replying to [comment:193 cremona]:
 > My guess is that if one of us were to fix the warnings in compiling lcalc and give Mike R the result, he would gratefully accept it, if he does not have time to do it himself.
 > But that's not for this ticket.
+
 
 Perhaps for #9592. If only all (severe) warnings originated from upstream...
 
@@ -5767,13 +5803,12 @@ docstring of sage.libs.pari.gen.PariInstance.read:8: (WARNING/2) Literal block e
 
 
 
-
 ---
 
 archive/issue_comments_088347.json:
 ```json
 {
-    "body": "Replying to [comment:191 leif]:\n> ... passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n\nAlso passed `ptestlong` with John's rebased lcalc p2 (from #9592).",
+    "body": "Replying to [comment:191 leif]:\n> ... passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).\n\n\nAlso passed `ptestlong` with John's rebased lcalc p2 (from #9592).",
     "created_at": "2010-08-14T03:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5785,6 +5820,7 @@ archive/issue_comments_088347.json:
 Replying to [comment:191 leif]:
 > ... passed (without the new lcalc spkg) `ptestlong` with Sage 4.5.3.alpha0 + #9475 + #9717 on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, O2; I just installed the new spkgs and applied the two patches, i.e. did not build from scratch).
 
+
 Also passed `ptestlong` with John's rebased lcalc p2 (from #9592).
 
 
@@ -5794,7 +5830,7 @@ Also passed `ptestlong` with John's rebased lcalc p2 (from #9592).
 archive/issue_comments_088348.json:
 ```json
 {
-    "body": "I looked into the failures in heegner.py in extreme detail, and the problem is entirely because of the following.  \n\n```\nCURRENT SAGE:\n\nsage: Q = QuadraticForm(QQ,3,[ 8657345368, 12759737420, 29300965980,4701524895, 21592798720, 24792432640 ])\nsage: n = 11767\nsage: time Q.representation_vector_list(n+1)[-1]\nCPU times: user 1.96 s, sys: 0.00 s, total: 1.97 s\nWall time: 1.97 s\n[(5207, -2829, -1845), (-5207, 2829, 1845)]\n\nNEW SAGE (with NEW PARI):\n\nsage: Q = QuadraticForm(QQ,3,[ 8657345368, 12759737420, 29300965980,4701524895, 21592798720, 24792432640 ])\nsage: n = 11767\nsage: time Q.representation_vector_list(n+1)[-1]\nCPU times: user 1.85 s, sys: 0.00 s, total: 1.85 s\nWall time: 1.85 s\n[(-5207, 2829, 1845), (5207, -2829, -1845)]\n\n```\n\n\n---\nThe difference is just that the vectors with given norm output by pari are now in a different order.  This causes some output to be slightly different in Sage, but is not a bug.   So it is 100% safe to change the output in heegner.py to match what gets output now. \n\n---\n\nRegarding the error in ell_rational_field.py -- the *only* remaining issue -- this is a doctest that John Cremona introduced for trac 4525: http://trac.sagemath.org/sage_trac/ticket/4525\n\nThe difference is that \"a\" LLL reduced basis is now slightly different.  This seems extremely plausible, since PARI's LLL code was completely changed in this new version (I recall Bill A. telling me they incorporated a version of fplll into PARI).  So very likely that doctest is fine too.  John C is the one who should sign off on it though, not Robert B (you're in the clear).\n\nI've taken the liberty of posting a patch that fixes the heegner.py tests, and also the one LLL test in ell_rational_field.py (though I'd like to hear from John C. about that).",
+    "body": "I looked into the failures in heegner.py in extreme detail, and the problem is entirely because of the following.  \n\n```\nCURRENT SAGE:\n\nsage: Q = QuadraticForm(QQ,3,[ 8657345368, 12759737420, 29300965980,4701524895, 21592798720, 24792432640 ])\nsage: n = 11767\nsage: time Q.representation_vector_list(n+1)[-1]\nCPU times: user 1.96 s, sys: 0.00 s, total: 1.97 s\nWall time: 1.97 s\n[(5207, -2829, -1845), (-5207, 2829, 1845)]\n\nNEW SAGE (with NEW PARI):\n\nsage: Q = QuadraticForm(QQ,3,[ 8657345368, 12759737420, 29300965980,4701524895, 21592798720, 24792432640 ])\nsage: n = 11767\nsage: time Q.representation_vector_list(n+1)[-1]\nCPU times: user 1.85 s, sys: 0.00 s, total: 1.85 s\nWall time: 1.85 s\n[(-5207, 2829, 1845), (5207, -2829, -1845)]\n\n```\n\n---\nThe difference is just that the vectors with given norm output by pari are now in a different order.  This causes some output to be slightly different in Sage, but is not a bug.   So it is 100% safe to change the output in heegner.py to match what gets output now. \n\n---\n\nRegarding the error in ell_rational_field.py -- the *only* remaining issue -- this is a doctest that John Cremona introduced for trac 4525: http://trac.sagemath.org/sage_trac/ticket/4525\n\nThe difference is that \"a\" LLL reduced basis is now slightly different.  This seems extremely plausible, since PARI's LLL code was completely changed in this new version (I recall Bill A. telling me they incorporated a version of fplll into PARI).  So very likely that doctest is fine too.  John C is the one who should sign off on it though, not Robert B (you're in the clear).\n\nI've taken the liberty of posting a patch that fixes the heegner.py tests, and also the one LLL test in ell_rational_field.py (though I'd like to hear from John C. about that).",
     "created_at": "2010-08-14T03:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5825,7 +5861,6 @@ Wall time: 1.85 s
 [(-5207, 2829, 1845), (5207, -2829, -1845)]
 
 ```
-
 
 ---
 The difference is just that the vectors with given norm output by pari are now in a different order.  This causes some output to be slightly different in Sage, but is not a bug.   So it is 100% safe to change the output in heegner.py to match what gets output now. 
@@ -5943,7 +5978,7 @@ I made some more changes, including removing gp_cremona.py.  I have not yet test
 archive/issue_comments_088354.json:
 ```json
 {
-    "body": "Replying to [comment:203 jdemeyer]:\n> I made some more changes, including removing gp_cremona.py.  I have not yet tested this completely, hang on...\n\nI do... ;-)\n\nCan you also fix the Sphinx warning?\n\nIn case this ticket gets merged soon, we should also address #9722 (Fedora 13 FLTK issue, at least the linker error) *here*. (Though I haven't yet checked if it is still present in our current svn snapshot; will do that later.)\n\n\nWilliam, Dave said on sage-release you want this merged into 4.5.3 (rather than 4.6, which is the current milestone)?",
+    "body": "Replying to [comment:203 jdemeyer]:\n> I made some more changes, including removing gp_cremona.py.  I have not yet tested this completely, hang on...\n\n\nI do... ;-)\n\nCan you also fix the Sphinx warning?\n\nIn case this ticket gets merged soon, we should also address #9722 (Fedora 13 FLTK issue, at least the linker error) *here*. (Though I haven't yet checked if it is still present in our current svn snapshot; will do that later.)\n\n\nWilliam, Dave said on sage-release you want this merged into 4.5.3 (rather than 4.6, which is the current milestone)?",
     "created_at": "2010-08-14T17:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5954,6 +5989,7 @@ archive/issue_comments_088354.json:
 
 Replying to [comment:203 jdemeyer]:
 > I made some more changes, including removing gp_cremona.py.  I have not yet tested this completely, hang on...
+
 
 I do... ;-)
 
@@ -5971,7 +6007,7 @@ William, Dave said on sage-release you want this merged into 4.5.3 (rather than 
 archive/issue_comments_088355.json:
 ```json
 {
-    "body": "Replying to [comment:203 jdemeyer]:\n> I made some more changes ...\n\n`s/optinal/optional/`\n\nThere are some back-ticks (and double back-ticks, e.g around `True`) missing in docstrings.\n\nNormalizing \"PARI\"/\"Pari\"/\"pari\" (and e.g. ``L`-function` vs. `L-function`) would be nice, too... :)",
+    "body": "Replying to [comment:203 jdemeyer]:\n> I made some more changes ...\n\n\n`s/optinal/optional/`\n\nThere are some back-ticks (and double back-ticks, e.g around `True`) missing in docstrings.\n\nNormalizing \"PARI\"/\"Pari\"/\"pari\" (and e.g. ``L`-function` vs. `L-function`) would be nice, too... :)",
     "created_at": "2010-08-14T17:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -5982,6 +6018,7 @@ archive/issue_comments_088355.json:
 
 Replying to [comment:203 jdemeyer]:
 > I made some more changes ...
+
 
 `s/optinal/optional/`
 
@@ -5996,7 +6033,7 @@ Normalizing "PARI"/"Pari"/"pari" (and e.g. ``L`-function` vs. `L-function`) woul
 archive/issue_comments_088356.json:
 ```json
 {
-    "body": "Replying to [comment:205 leif]:\n> Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n\nThe official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...",
+    "body": "Replying to [comment:205 leif]:\n> Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n\n\nThe official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...",
     "created_at": "2010-08-14T19:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6008,6 +6045,7 @@ archive/issue_comments_088356.json:
 Replying to [comment:205 leif]:
 > Normalizing "PARI"/"Pari"/"pari" would be nice, too... :)
 
+
 The official name seems to be "PARI" but "Pari" and "pari" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...
 
 
@@ -6017,7 +6055,7 @@ The official name seems to be "PARI" but "Pari" and "pari" are all over the plac
 archive/issue_comments_088357.json:
 ```json
 {
-    "body": "Replying to [comment:206 jdemeyer]:\n> Replying to [comment:205 leif]:\n> > Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n> \n> The official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...\n\nYes: from http://pari.math.u-bordeaux.fr/ we see:\n\n\n```\n    * PARI is a C library, allowing fast computations.\n    * gp is an easy-to-use interactive shell giving access to the PARI functions.\n    * GP is the name of gp's scripting language.\n```\n",
+    "body": "Replying to [comment:206 jdemeyer]:\n> Replying to [comment:205 leif]:\n> > Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n\n> \n> The official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...\n\n\nYes: from http://pari.math.u-bordeaux.fr/ we see:\n\n```\n    * PARI is a C library, allowing fast computations.\n    * gp is an easy-to-use interactive shell giving access to the PARI functions.\n    * GP is the name of gp's scripting language.\n```",
     "created_at": "2010-08-14T19:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6029,11 +6067,12 @@ archive/issue_comments_088357.json:
 Replying to [comment:206 jdemeyer]:
 > Replying to [comment:205 leif]:
 > > Normalizing "PARI"/"Pari"/"pari" would be nice, too... :)
+
 > 
 > The official name seems to be "PARI" but "Pari" and "pari" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...
 
-Yes: from http://pari.math.u-bordeaux.fr/ we see:
 
+Yes: from http://pari.math.u-bordeaux.fr/ we see:
 
 ```
     * PARI is a C library, allowing fast computations.
@@ -6043,13 +6082,12 @@ Yes: from http://pari.math.u-bordeaux.fr/ we see:
 
 
 
-
 ---
 
 archive/issue_comments_088358.json:
 ```json
 {
-    "body": "Replying to [comment:206 jdemeyer]:\n> Replying to [comment:205 leif]:\n> > Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n> \n> The official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...\n\nThe official name of MATLAB is MATLAB, but still the Sage has:\n\n*Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.*\n\nI've tried suggesting we call MATLAB by its official name, but that fell on deaf ears. \n\nIn general, I'd rather call programs by their official name, though in same cases, the programs themselves are not consistent!",
+    "body": "Replying to [comment:206 jdemeyer]:\n> Replying to [comment:205 leif]:\n> > Normalizing \"PARI\"/\"Pari\"/\"pari\" would be nice, too... :)\n\n> \n> The official name seems to be \"PARI\" but \"Pari\" and \"pari\" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...\n\n\nThe official name of MATLAB is MATLAB, but still the Sage has:\n\n*Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.*\n\nI've tried suggesting we call MATLAB by its official name, but that fell on deaf ears. \n\nIn general, I'd rather call programs by their official name, though in same cases, the programs themselves are not consistent!",
     "created_at": "2010-08-14T20:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6061,8 +6099,10 @@ archive/issue_comments_088358.json:
 Replying to [comment:206 jdemeyer]:
 > Replying to [comment:205 leif]:
 > > Normalizing "PARI"/"Pari"/"pari" would be nice, too... :)
+
 > 
 > The official name seems to be "PARI" but "Pari" and "pari" are all over the place in Sage.  It wouldn't be too hard to do a search-and-replace-all if you want...
+
 
 The official name of MATLAB is MATLAB, but still the Sage has:
 
@@ -6079,7 +6119,7 @@ In general, I'd rather call programs by their official name, though in same case
 archive/issue_comments_088359.json:
 ```json
 {
-    "body": "Replying to [comment:196 was]:\n> I've taken the liberty of posting a patch that fixes the heegner.py tests, and also the one LLL test in ell_rational_field.py (though I'd like to hear from John C. about that).   \n\nAlso passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott), with and without optimization (i.e. `O2` in \"global\" `CFLAGS`), native code.\n\nThe version prior to this, i.e. without William's patches (but John's reviewer patch), passed all long tests on Ubuntu 7.10 x86 (Pentium 4, gcc 4.2.1, native code, O2), too.",
+    "body": "Replying to [comment:196 was]:\n> I've taken the liberty of posting a patch that fixes the heegner.py tests, and also the one LLL test in ell_rational_field.py (though I'd like to hear from John C. about that).   \n\n\nAlso passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott), with and without optimization (i.e. `O2` in \"global\" `CFLAGS`), native code.\n\nThe version prior to this, i.e. without William's patches (but John's reviewer patch), passed all long tests on Ubuntu 7.10 x86 (Pentium 4, gcc 4.2.1, native code, O2), too.",
     "created_at": "2010-08-14T20:36:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6090,6 +6130,7 @@ archive/issue_comments_088359.json:
 
 Replying to [comment:196 was]:
 > I've taken the liberty of posting a patch that fixes the heegner.py tests, and also the one LLL test in ell_rational_field.py (though I'd like to hear from John C. about that).   
+
 
 Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott), with and without optimization (i.e. `O2` in "global" `CFLAGS`), native code.
 
@@ -6120,7 +6161,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088361.json:
 ```json
 {
-    "body": "Replying to [comment:209 leif]:\n> The version prior to this, i.e. without William's patches (but John's reviewer patch), passed all long tests on Ubuntu 7.10 x86 (Pentium 4, gcc 4.2.1, native code, O2), too.\n\n... and just passed `ptestlong` *with* these, too. :)",
+    "body": "Replying to [comment:209 leif]:\n> The version prior to this, i.e. without William's patches (but John's reviewer patch), passed all long tests on Ubuntu 7.10 x86 (Pentium 4, gcc 4.2.1, native code, O2), too.\n\n\n... and just passed `ptestlong` *with* these, too. :)",
     "created_at": "2010-08-14T20:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6131,6 +6172,7 @@ archive/issue_comments_088361.json:
 
 Replying to [comment:209 leif]:
 > The version prior to this, i.e. without William's patches (but John's reviewer patch), passed all long tests on Ubuntu 7.10 x86 (Pentium 4, gcc 4.2.1, native code, O2), too.
+
 
 ... and just passed `ptestlong` *with* these, too. :)
 
@@ -6219,7 +6261,7 @@ I updated my last patch to fix the analytic_rank doctests on 32-bit.
 archive/issue_comments_088366.json:
 ```json
 {
-    "body": "Replying to [comment:204 leif]:\n> In case this ticket gets merged soon, we should also address #9722 (Fedora 13 FLTK issue, at least the linker error) *here*. (Though I haven't yet checked if it is still present in our current svn snapshot; will do that later.)\n\n#9722 seems to be a non-issue with our PARI snapshot. (At least I cannot reproduce it on 32-bit Fedora 13.)",
+    "body": "Replying to [comment:204 leif]:\n> In case this ticket gets merged soon, we should also address #9722 (Fedora 13 FLTK issue, at least the linker error) *here*. (Though I haven't yet checked if it is still present in our current svn snapshot; will do that later.)\n\n\n#9722 seems to be a non-issue with our PARI snapshot. (At least I cannot reproduce it on 32-bit Fedora 13.)",
     "created_at": "2010-08-14T22:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6231,6 +6273,7 @@ archive/issue_comments_088366.json:
 Replying to [comment:204 leif]:
 > In case this ticket gets merged soon, we should also address #9722 (Fedora 13 FLTK issue, at least the linker error) *here*. (Though I haven't yet checked if it is still present in our current svn snapshot; will do that later.)
 
+
 #9722 seems to be a non-issue with our PARI snapshot. (At least I cannot reproduce it on 32-bit Fedora 13.)
 
 
@@ -6240,7 +6283,7 @@ Replying to [comment:204 leif]:
 archive/issue_comments_088367.json:
 ```json
 {
-    "body": "I just tried the steps outlined at the top. \n\n* Pari installed ok\n* genus2reduction installed ok\n* lcalc installed ok. \n* extcode_9343_combined3.patch patch to data/extcode installed ok. \n \nThen when I tried to apply the library patches, I was less than successful. I'm not sure though if the \n\n\n```\nhg qpush -a\n```\n\nwas the right thing to do after `hg qimport` of the library patches. So I could have made a mistake, but this is what I did, and this is what results I got. (This is an OpenSolaris system, which apart from some numerical noise issues, and a totally busted `sympow` otherwise passes all the doc tests.)\n\n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch\nadding sagelib_9343_combined6.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch\nadding sagelib_9343-heegner_ell_ratioanal.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch\nadding 9343_jd_review.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a\napplying 9343_jd_review.patch\npatching file sage/interfaces/gp.py\nHunk #1 FAILED at 599\nHunk #2 FAILED at 613\nHunk #3 FAILED at 889\nHunk #4 FAILED at 990\nHunk #5 FAILED at 1003\n5 out of 5 hunks FAILED -- saving rejects to file sage/interfaces/gp.py.rej\npatching file sage/libs/pari/decl.pxi\nHunk #1 FAILED at 35\nHunk #2 FAILED at 94\nHunk #3 FAILED at 279\nHunk #4 FAILED at 298\nHunk #5 FAILED at 313\nHunk #6 FAILED at 325\nHunk #7 FAILED at 372\nHunk #8 succeeded at 871 with fuzz 2 (offset 198 lines).\nHunk #9 succeeded at 945 with fuzz 2 (offset 217 lines).\nHunk #10 succeeded at 968 with fuzz 1 (offset 218 lines).\nHunk #11 FAILED at 1041\n8 out of 11 hunks FAILED -- saving rejects to file sage/libs/pari/decl.pxi.rej\npatching file sage/rings/number_field/number_field.py\nHunk #2 FAILED at 7533\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\npatching file sage/rings/real_mpfr.pyx\nHunk #2 FAILED at 2588\nHunk #3 FAILED at 2607\nHunk #4 succeeded at 2618 with fuzz 1 (offset -8 lines).\nHunk #5 FAILED at 2631\n3 out of 5 hunks FAILED -- saving rejects to file sage/rings/real_mpfr.pyx.rej\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #1 FAILED at 36\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 FAILED at 1271\nHunk #4 FAILED at 1347\n2 out of 4 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatching file sage/schemes/elliptic_curves/gp_cremona.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/gp_cremona.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9343_jd_review.patch\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\n```\n\n\nDave",
+    "body": "I just tried the steps outlined at the top. \n\n* Pari installed ok\n* genus2reduction installed ok\n* lcalc installed ok. \n* extcode_9343_combined3.patch patch to data/extcode installed ok. \n \nThen when I tried to apply the library patches, I was less than successful. I'm not sure though if the \n\n```\nhg qpush -a\n```\nwas the right thing to do after `hg qimport` of the library patches. So I could have made a mistake, but this is what I did, and this is what results I got. (This is an OpenSolaris system, which apart from some numerical noise issues, and a totally busted `sympow` otherwise passes all the doc tests.)\n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch\nadding sagelib_9343_combined6.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch\nadding sagelib_9343-heegner_ell_ratioanal.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch\nadding 9343_jd_review.patch to series file\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a\napplying 9343_jd_review.patch\npatching file sage/interfaces/gp.py\nHunk #1 FAILED at 599\nHunk #2 FAILED at 613\nHunk #3 FAILED at 889\nHunk #4 FAILED at 990\nHunk #5 FAILED at 1003\n5 out of 5 hunks FAILED -- saving rejects to file sage/interfaces/gp.py.rej\npatching file sage/libs/pari/decl.pxi\nHunk #1 FAILED at 35\nHunk #2 FAILED at 94\nHunk #3 FAILED at 279\nHunk #4 FAILED at 298\nHunk #5 FAILED at 313\nHunk #6 FAILED at 325\nHunk #7 FAILED at 372\nHunk #8 succeeded at 871 with fuzz 2 (offset 198 lines).\nHunk #9 succeeded at 945 with fuzz 2 (offset 217 lines).\nHunk #10 succeeded at 968 with fuzz 1 (offset 218 lines).\nHunk #11 FAILED at 1041\n8 out of 11 hunks FAILED -- saving rejects to file sage/libs/pari/decl.pxi.rej\npatching file sage/rings/number_field/number_field.py\nHunk #2 FAILED at 7533\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\npatching file sage/rings/real_mpfr.pyx\nHunk #2 FAILED at 2588\nHunk #3 FAILED at 2607\nHunk #4 succeeded at 2618 with fuzz 1 (offset -8 lines).\nHunk #5 FAILED at 2631\n3 out of 5 hunks FAILED -- saving rejects to file sage/rings/real_mpfr.pyx.rej\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #1 FAILED at 36\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 FAILED at 1271\nHunk #4 FAILED at 1347\n2 out of 4 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatching file sage/schemes/elliptic_curves/gp_cremona.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/gp_cremona.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9343_jd_review.patch\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\n```\n\nDave",
     "created_at": "2010-08-15T02:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6258,13 +6301,10 @@ I just tried the steps outlined at the top.
  
 Then when I tried to apply the library patches, I was less than successful. I'm not sure though if the 
 
-
 ```
 hg qpush -a
 ```
-
 was the right thing to do after `hg qimport` of the library patches. So I could have made a mistake, but this is what I did, and this is what results I got. (This is an OpenSolaris system, which apart from some numerical noise issues, and a totally busted `sympow` otherwise passes all the doc tests.)
-
 
 ```
 drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
@@ -6321,7 +6361,6 @@ errors during apply, please fix and refresh 9343_jd_review.patch
 drkirkby@hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status
 ```
 
-
 Dave
 
 
@@ -6331,7 +6370,7 @@ Dave
 archive/issue_comments_088368.json:
 ```json
 {
-    "body": "Replying to [comment:216 drkirkby]:\n> {{{\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch\n> adding sagelib_9343_combined6.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch\n> adding sagelib_9343-heegner_ell_ratioanal.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch\n> adding 9343_jd_review.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a\n> applying 9343_jd_review.patch\n> }}}\n\nYou're applying the patches in the wrong order.  I usually do\n\n```\n$ hg qimport <patch>\n$ hg qpush\n$ hg qimport <patch>\n$ hg qpush\n...\n```\n\n\nwhich should work fine.  Maybe there is a better way, I don't know much about Mercurial.",
+    "body": "Replying to [comment:216 drkirkby]:\n> {{{\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg status\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343_combined6.patch\n> adding sagelib_9343_combined6.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/sagelib_9343-heegner_ell_ratioanal.patch\n> adding sagelib_9343-heegner_ell_ratioanal.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9343/9343_jd_review.patch\n> adding 9343_jd_review.patch to series file\n> drkirkby`@`hawk:~/32/sage-4.5.3.alpha0/devel/sage$ hg qpush -a\n> applying 9343_jd_review.patch\n> }}}\n\n\nYou're applying the patches in the wrong order.  I usually do\n\n```\n$ hg qimport <patch>\n$ hg qpush\n$ hg qimport <patch>\n$ hg qpush\n...\n```\n\nwhich should work fine.  Maybe there is a better way, I don't know much about Mercurial.",
     "created_at": "2010-08-15T06:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6353,6 +6392,7 @@ Replying to [comment:216 drkirkby]:
 > applying 9343_jd_review.patch
 > }}}
 
+
 You're applying the patches in the wrong order.  I usually do
 
 ```
@@ -6362,7 +6402,6 @@ $ hg qimport <patch>
 $ hg qpush
 ...
 ```
-
 
 which should work fine.  Maybe there is a better way, I don't know much about Mercurial.
 
@@ -6413,7 +6452,7 @@ I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It 
 archive/issue_comments_088371.json:
 ```json
 {
-    "body": "Replying to [comment:218 cremona]:\n\n> Now testing the rebuilding od documentation...\n\nhtml docs rebuilt with no errors/warnings.",
+    "body": "Replying to [comment:218 cremona]:\n\n> Now testing the rebuilding od documentation...\n\n\nhtml docs rebuilt with no errors/warnings.",
     "created_at": "2010-08-15T11:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6426,6 +6465,7 @@ Replying to [comment:218 cremona]:
 
 > Now testing the rebuilding od documentation...
 
+
 html docs rebuilt with no errors/warnings.
 
 
@@ -6435,7 +6475,7 @@ html docs rebuilt with no errors/warnings.
 archive/issue_comments_088372.json:
 ```json
 {
-    "body": "Replying to [comment:219 jdemeyer]:\n> I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\nOK, got that -- will do 32- and 64-bit builds and report back.",
+    "body": "Replying to [comment:219 jdemeyer]:\n> I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n\nOK, got that -- will do 32- and 64-bit builds and report back.",
     "created_at": "2010-08-15T11:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6447,6 +6487,7 @@ archive/issue_comments_088372.json:
 Replying to [comment:219 jdemeyer]:
 > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
 
+
 OK, got that -- will do 32- and 64-bit builds and report back.
 
 
@@ -6456,7 +6497,7 @@ OK, got that -- will do 32- and 64-bit builds and report back.
 archive/issue_comments_088373.json:
 ```json
 {
-    "body": "Replying to [comment:219 jdemeyer]:\n> I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\nAnnounce on sage-release? ;-)\n\nBtw, Mitesh is currently compiling [Sage 4.5.3.alpha1](http://trac.sagemath.org/sage_trac/query?group=component&order=priority&col=id&col=summary&col=status&col=owner&col=type&col=priority&col=milestone&merged=~4.5.3.alpha1) (which includes the new Singular, a new libm4ri and an updated PolyBoRi package, and some bug fixes).",
+    "body": "Replying to [comment:219 jdemeyer]:\n> I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n\nAnnounce on sage-release? ;-)\n\nBtw, Mitesh is currently compiling [Sage 4.5.3.alpha1](http://trac.sagemath.org/sage_trac/query?group=component&order=priority&col=id&col=summary&col=status&col=owner&col=type&col=priority&col=milestone&merged=~4.5.3.alpha1) (which includes the new Singular, a new libm4ri and an updated PolyBoRi package, and some bug fixes).",
     "created_at": "2010-08-15T14:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6467,6 +6508,7 @@ archive/issue_comments_088373.json:
 
 Replying to [comment:219 jdemeyer]:
 > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
+
 
 Announce on sage-release? ;-)
 
@@ -6479,7 +6521,7 @@ Btw, Mitesh is currently compiling [Sage 4.5.3.alpha1](http://trac.sagemath.org/
 archive/issue_comments_088374.json:
 ```json
 {
-    "body": "Replying to [comment:222 cremona]:\n> Replying to [comment:219 jdemeyer]:\n> > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n> \n> OK, got that -- will do 32- and 64-bit builds and report back.\n\nBuilt fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).",
+    "body": "Replying to [comment:222 cremona]:\n> Replying to [comment:219 jdemeyer]:\n> > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n> \n> OK, got that -- will do 32- and 64-bit builds and report back.\n\n\nBuilt fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).",
     "created_at": "2010-08-15T16:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6491,8 +6533,10 @@ archive/issue_comments_088374.json:
 Replying to [comment:222 cremona]:
 > Replying to [comment:219 jdemeyer]:
 > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
+
 > 
 > OK, got that -- will do 32- and 64-bit builds and report back.
+
 
 Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).
 
@@ -6503,7 +6547,7 @@ Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubu
 archive/issue_comments_088375.json:
 ```json
 {
-    "body": "Replying to [comment:224 cremona]:\n> Replying to [comment:222 cremona]:\n> > Replying to [comment:219 jdemeyer]:\n> > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n> > \n> > OK, got that -- will do 32- and 64-bit builds and report back.\n> \n> Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> \n\nHowever, this needs cleaning up:\n\n```\njec@selmer%pwd\n/storage/jec/sage-4.6.prealpha0/devel/sage\njec@selmer%hg status\n! sage/schemes/elliptic_curves/gp_cremona.py\n```\n\n-- I think \"hg remove\" & then commit will do it.",
+    "body": "Replying to [comment:224 cremona]:\n> Replying to [comment:222 cremona]:\n> > Replying to [comment:219 jdemeyer]:\n> > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n> > \n> > OK, got that -- will do 32- and 64-bit builds and report back.\n\n> \n> Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> \n\n\nHowever, this needs cleaning up:\n\n```\njec@selmer%pwd\n/storage/jec/sage-4.6.prealpha0/devel/sage\njec@selmer%hg status\n! sage/schemes/elliptic_curves/gp_cremona.py\n```\n-- I think \"hg remove\" & then commit will do it.",
     "created_at": "2010-08-15T16:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6516,11 +6560,14 @@ Replying to [comment:224 cremona]:
 > Replying to [comment:222 cremona]:
 > > Replying to [comment:219 jdemeyer]:
 > > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
+
 > > 
 > > OK, got that -- will do 32- and 64-bit builds and report back.
+
 > 
 > Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).
 > 
+
 
 However, this needs cleaning up:
 
@@ -6530,7 +6577,6 @@ jec@selmer%pwd
 jec@selmer%hg status
 ! sage/schemes/elliptic_curves/gp_cremona.py
 ```
-
 -- I think "hg remove" & then commit will do it.
 
 
@@ -6540,7 +6586,7 @@ jec@selmer%hg status
 archive/issue_comments_088376.json:
 ```json
 {
-    "body": "Replying to [comment:225 cremona]:\n> However, this needs cleaning up:\n\n```\njec@selmer%pwd\n/storage/jec/sage-4.6.prealpha0/devel/sage\njec@selmer%hg status\n! sage/schemes/elliptic_curves/gp_cremona.py\n```\n\n> -- I think \"hg remove\" & then commit will do it.\n\nYes, and there are some more. Try\n\n```sh\nfind $SAGE_ROOT -name .hg -exec sh -c \"cd {}; hg status\" \\;\n```\n\nand you'll see them all.",
+    "body": "Replying to [comment:225 cremona]:\n> However, this needs cleaning up:\n\n{{{\njec`@`selmer%pwd\n/storage/jec/sage-4.6.prealpha0/devel/sage\njec`@`selmer%hg status\n! sage/schemes/elliptic_curves/gp_cremona.py\n}}}\n> -- I think \"hg remove\" & then commit will do it.\n\n\nYes, and there are some more. Try\n\n```sh\nfind $SAGE_ROOT -name .hg -exec sh -c \"cd {}; hg status\" \\;\n```\nand you'll see them all.",
     "created_at": "2010-08-15T16:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6552,21 +6598,20 @@ archive/issue_comments_088376.json:
 Replying to [comment:225 cremona]:
 > However, this needs cleaning up:
 
-```
-jec@selmer%pwd
+{{{
+jec`@`selmer%pwd
 /storage/jec/sage-4.6.prealpha0/devel/sage
-jec@selmer%hg status
+jec`@`selmer%hg status
 ! sage/schemes/elliptic_curves/gp_cremona.py
-```
-
+}}}
 > -- I think "hg remove" & then commit will do it.
+
 
 Yes, and there are some more. Try
 
 ```sh
 find $SAGE_ROOT -name .hg -exec sh -c "cd {}; hg status" \;
 ```
-
 and you'll see them all.
 
 
@@ -6576,7 +6621,7 @@ and you'll see them all.
 archive/issue_comments_088377.json:
 ```json
 {
-    "body": "Replying to [comment:218 cremona]:\n> I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means \"push the last patch imported\".\n\nBut I did not type \n\n`hg qpush`\n\nbut instead \n\n\n```\nhg qpush -a}}\n\nLooking for help on that:\n\n{{{\ndrkirkby@hawk:~$ hg qpush -h\nhg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]\n\npush the next patch onto the stack\n\n    When -f/--force is applied, all local changes in patched files\n    will be lost.\n\noptions:\n\n -f --force  apply if the patch has rejects\n -l --list   list patch name in commit text\n -a --all    apply all patches\n -m --merge  merge from another queue\n -n --name   merge queue name\n\nuse \"hg -v help qpush\" to show global options\n}}}\n\nI interpret that is meaning all of them would be applied. \n\nDave",
+    "body": "Replying to [comment:218 cremona]:\n> I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means \"push the last patch imported\".\n\n\nBut I did not type \n\n`hg qpush`\n\nbut instead \n\n```\nhg qpush -a}}\n\nLooking for help on that:\n\n{{{\ndrkirkby@hawk:~$ hg qpush -h\nhg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]\n\npush the next patch onto the stack\n\n    When -f/--force is applied, all local changes in patched files\n    will be lost.\n\noptions:\n\n -f --force  apply if the patch has rejects\n -l --list   list patch name in commit text\n -a --all    apply all patches\n -m --merge  merge from another queue\n -n --name   merge queue name\n\nuse \"hg -v help qpush\" to show global options\n}}}\n\nI interpret that is meaning all of them would be applied. \n\nDave",
     "created_at": "2010-08-15T19:03:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6588,12 +6633,12 @@ archive/issue_comments_088377.json:
 Replying to [comment:218 cremona]:
 > I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means "push the last patch imported".
 
+
 But I did not type 
 
 `hg qpush`
 
 but instead 
-
 
 ```
 hg qpush -a}}
@@ -6631,7 +6676,7 @@ Dave
 archive/issue_comments_088378.json:
 ```json
 {
-    "body": "Replying to [comment:227 drkirkby]:\n> Replying to [comment:218 cremona]:\n> > I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means \"push the last patch imported\".\n> \n> But I did not type \n> \n> `hg qpush`\n> \n> but instead \n> \n> {{{hg qpush -a}}\n> \n> Looking for help on that:\n> \n> {{{\n> drkirkby`@`hawk:~$ hg qpush -h\n> hg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]\n> \n> push the next patch onto the stack\n> \n>     When -f/--force is applied, all local changes in patched files\n>     will be lost.\n> \n> options:\n> \n>  -f --force  apply if the patch has rejects\n>  -l --list   list patch name in commit text\n>  -a --all    apply all patches\n>  -m --merge  merge from another queue\n>  -n --name   merge queue name\n> \n> use \"hg -v help qpush\" to show global options\n> }}}\n> \n> I interpret that is meaning all of them would be applied. \n> \n> Dave \n\nSure -- what is (possibly) counter intuitive is the *order* in which they are applied, which is the reverse of the order they were imported.  For this reason I find \"hg qpush -a\" rarely useful.",
+    "body": "Replying to [comment:227 drkirkby]:\n> Replying to [comment:218 cremona]:\n> > I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means \"push the last patch imported\".\n\n> \n> But I did not type \n> \n> `hg qpush`\n> \n> but instead \n> \n> \n> ```\n> hg qpush -a}}\n> \n> Looking for help on that:\n> \n> {{{\n> drkirkby@hawk:~$ hg qpush -h\n> hg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]\n> \n> push the next patch onto the stack\n> \n>     When -f/--force is applied, all local changes in patched files\n>     will be lost.\n> \n> options:\n> \n>  -f --force  apply if the patch has rejects\n>  -l --list   list patch name in commit text\n>  -a --all    apply all patches\n>  -m --merge  merge from another queue\n>  -n --name   merge queue name\n> \n> use \"hg -v help qpush\" to show global options\n> }}}\n> \n> I interpret that is meaning all of them would be applied. \n> \n> Dave \n\n\nSure -- what is (possibly) counter intuitive is the *order* in which they are applied, which is the reverse of the order they were imported.  For this reason I find \"hg qpush -a\" rarely useful.",
     "created_at": "2010-08-15T19:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6643,6 +6688,7 @@ archive/issue_comments_088378.json:
 Replying to [comment:227 drkirkby]:
 > Replying to [comment:218 cremona]:
 > > I agree with David that Mercurial is counter-intuitive -- you have to push one at a time since push means "push the last patch imported".
+
 > 
 > But I did not type 
 > 
@@ -6650,12 +6696,14 @@ Replying to [comment:227 drkirkby]:
 > 
 > but instead 
 > 
-> {{{hg qpush -a}}
+> 
+> ```
+> hg qpush -a}}
 > 
 > Looking for help on that:
 > 
 > {{{
-> drkirkby`@`hawk:~$ hg qpush -h
+> drkirkby@hawk:~$ hg qpush -h
 > hg qpush [-f] [-l] [-a] [-m] [-n NAME] [PATCH | INDEX]
 > 
 > push the next patch onto the stack
@@ -6678,6 +6726,7 @@ Replying to [comment:227 drkirkby]:
 > 
 > Dave 
 
+
 Sure -- what is (possibly) counter intuitive is the *order* in which they are applied, which is the reverse of the order they were imported.  For this reason I find "hg qpush -a" rarely useful.
 
 
@@ -6687,7 +6736,7 @@ Sure -- what is (possibly) counter intuitive is the *order* in which they are ap
 archive/issue_comments_088379.json:
 ```json
 {
-    "body": "Replying to [comment:225 cremona]:\n> -- I think \"hg remove\" & then commit will do it.\n\nI see.  Simply removing the file is not good enough...",
+    "body": "Replying to [comment:225 cremona]:\n> -- I think \"hg remove\" & then commit will do it.\n\n\nI see.  Simply removing the file is not good enough...",
     "created_at": "2010-08-15T19:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6698,6 +6747,7 @@ archive/issue_comments_088379.json:
 
 Replying to [comment:225 cremona]:
 > -- I think "hg remove" & then commit will do it.
+
 
 I see.  Simply removing the file is not good enough...
 
@@ -6746,7 +6796,7 @@ I've attached a [single-character patch](http://trac.sagemath.org/sage_trac/atta
 archive/issue_comments_088382.json:
 ```json
 {
-    "body": "Replying to [comment:224 cremona]:\n> Replying to [comment:222 cremona]:\n> > Replying to [comment:219 jdemeyer]:\n> > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n> > \n> > OK, got that -- will do 32- and 64-bit builds and report back.\n> \n> Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> \n\nAlso passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).",
+    "body": "Replying to [comment:224 cremona]:\n> Replying to [comment:222 cremona]:\n> > Replying to [comment:219 jdemeyer]:\n> > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n> > \n> > OK, got that -- will do 32- and 64-bit builds and report back.\n\n> \n> Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> \n\n\nAlso passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).",
     "created_at": "2010-08-15T22:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6759,11 +6809,14 @@ Replying to [comment:224 cremona]:
 > Replying to [comment:222 cremona]:
 > > Replying to [comment:219 jdemeyer]:
 > > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
+
 > > 
 > > OK, got that -- will do 32- and 64-bit builds and report back.
+
 > 
 > Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).
 > 
+
 
 Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).
 
@@ -6774,7 +6827,7 @@ Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native 
 archive/issue_comments_088383.json:
 ```json
 {
-    "body": "I decided to test the http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar on my OpenSolaris machine. Sage has never passed all the doc tests on OpenSolaris, so I did not expect it to. I'll list the failures and what I think they are due to. There's one unexecpted failure. \n\nA better test would be on 't2', but that takes forever to build Sage. This is an order of magnitude quicker. \n\n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\n\tsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/modular/hecke/submodule.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed\n\tsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx # 3 doctests failed\n\tsage -t  -long devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1913.9 seconds\n```\n\n\n1) `devel/sage/sage/lfunctions/sympow.py` SYMPOW is the worst code I've ever seen in Sage and is broken on Solaris x86 (#9703), Cygwin (#9166) and reportedly ArchLinux too. The examples at http://www.sagemath.org/doc/reference/sage/lfunctions/sympow.html do not work if you try them on sage.math, so I we can ignore this failure. The code in SYMPOW is so bad, I can't really be bothered to try to fix it. \n\n2) `devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py` **An unexpected failure.** \n\n3) `devel/sage/sage/modular/abvar/abvar.py` Caused by SYMPOW. So we can ignore that. \n\n4) `devel/sage/sage/modular/hecke/submodule.py` Again, caused by SYMPOW, so we can ignore that. \n \n5) `devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py` Again, caused by SYMPOW, so we can ignore that. \n\n6) `devel/sage/sage/stats/hmm/chmm.pyx` This is numerical noise, #9735, which will hopefully be merged soon. \n\n7) ` devel/sage/sage/symbolic/expression.pyx` Again numerical noise (#9689  & #9693). \n\nSo the unexpected failure I see was this one:\n\n\n```\nsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.6.prealpha0/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1280:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\nGot:\n    [2.9757207403766761469671194565, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\n**********************************************************************\n```\n\n\nCould that be due to Pari? If not, and you know where I should look for the cause, let me know. \n\nDave",
+    "body": "I decided to test the http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar on my OpenSolaris machine. Sage has never passed all the doc tests on OpenSolaris, so I did not expect it to. I'll list the failures and what I think they are due to. There's one unexecpted failure. \n\nA better test would be on 't2', but that takes forever to build Sage. This is an order of magnitude quicker. \n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # 13 doctests failed\n\tsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/modular/abvar/abvar.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/modular/hecke/submodule.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 17 doctests failed\n\tsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx # 3 doctests failed\n\tsage -t  -long devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1913.9 seconds\n```\n\n1) `devel/sage/sage/lfunctions/sympow.py` SYMPOW is the worst code I've ever seen in Sage and is broken on Solaris x86 (#9703), Cygwin (#9166) and reportedly ArchLinux too. The examples at http://www.sagemath.org/doc/reference/sage/lfunctions/sympow.html do not work if you try them on sage.math, so I we can ignore this failure. The code in SYMPOW is so bad, I can't really be bothered to try to fix it. \n\n2) `devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py` **An unexpected failure.** \n\n3) `devel/sage/sage/modular/abvar/abvar.py` Caused by SYMPOW. So we can ignore that. \n\n4) `devel/sage/sage/modular/hecke/submodule.py` Again, caused by SYMPOW, so we can ignore that. \n \n5) `devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py` Again, caused by SYMPOW, so we can ignore that. \n\n6) `devel/sage/sage/stats/hmm/chmm.pyx` This is numerical noise, #9735, which will hopefully be merged soon. \n\n7) ` devel/sage/sage/symbolic/expression.pyx` Again numerical noise (#9689  & #9693). \n\nSo the unexpected failure I see was this one:\n\n```\nsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.6.prealpha0/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1280:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\nGot:\n    [2.9757207403766761469671194565, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\n**********************************************************************\n```\n\nCould that be due to Pari? If not, and you know where I should look for the cause, let me know. \n\nDave",
     "created_at": "2010-08-16T00:01:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6786,7 +6839,6 @@ archive/issue_comments_088383.json:
 I decided to test the http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar on my OpenSolaris machine. Sage has never passed all the doc tests on OpenSolaris, so I did not expect it to. I'll list the failures and what I think they are due to. There's one unexecpted failure. 
 
 A better test would be on 't2', but that takes forever to build Sage. This is an order of magnitude quicker. 
-
 
 ```
 The following tests failed:
@@ -6801,7 +6853,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 1913.9 seconds
 ```
-
 
 1) `devel/sage/sage/lfunctions/sympow.py` SYMPOW is the worst code I've ever seen in Sage and is broken on Solaris x86 (#9703), Cygwin (#9166) and reportedly ArchLinux too. The examples at http://www.sagemath.org/doc/reference/sage/lfunctions/sympow.html do not work if you try them on sage.math, so I we can ignore this failure. The code in SYMPOW is so bad, I can't really be bothered to try to fix it. 
 
@@ -6819,7 +6870,6 @@ Total time for all tests: 1913.9 seconds
 
 So the unexpected failure I see was this one:
 
-
 ```
 sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py
 **********************************************************************
@@ -6832,7 +6882,6 @@ Got:
 **********************************************************************
 ```
 
-
 Could that be due to Pari? If not, and you know where I should look for the cause, let me know. 
 
 Dave
@@ -6844,7 +6893,7 @@ Dave
 archive/issue_comments_088384.json:
 ```json
 {
-    "body": "Replying to [comment:231 leif]:\n> Replying to [comment:224 cremona]:\n> > Replying to [comment:222 cremona]:\n> > > Replying to [comment:219 jdemeyer]:\n> > > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n> > > \n> > > OK, got that -- will do 32- and 64-bit builds and report back.\n> > \n> > Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> > \n> \n> Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).\n\nPassed `testlong` on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, with `O2`), too.",
+    "body": "Replying to [comment:231 leif]:\n> Replying to [comment:224 cremona]:\n> > Replying to [comment:222 cremona]:\n> > > Replying to [comment:219 jdemeyer]:\n> > > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar\n\n> > > \n> > > OK, got that -- will do 32- and 64-bit builds and report back.\n\n> > \n> > Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).\n> > \n\n> \n> Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).\n\n\nPassed `testlong` on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, with `O2`), too.",
     "created_at": "2010-08-16T01:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6858,13 +6907,17 @@ Replying to [comment:231 leif]:
 > > Replying to [comment:222 cremona]:
 > > > Replying to [comment:219 jdemeyer]:
 > > > > I have made a new sage distribution with this ticket, based on 4.5.3.alpha0. It also includes the Singular update (#8059). Download it from http://cage.ugent.be/~jdemeyer/sage/sage-4.6.prealpha0.tar
+
 > > > 
 > > > OK, got that -- will do 32- and 64-bit builds and report back.
+
 > > 
 > > Built fine and all tests pass on 32-bit ubuntu (Intel, gcc 4.2.4) and 64-bit ubuntu (AMD, 4.3.3).
 > > 
+
 > 
 > Also passed `ptestlong` on Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, native code, with `O2`).
+
 
 Passed `testlong` on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, with `O2`), too.
 
@@ -6875,7 +6928,7 @@ Passed `testlong` on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code, with `O2
 archive/issue_comments_088385.json:
 ```json
 {
-    "body": "Replying to [comment:232 drkirkby]:\n> So the unexpected failure I see was this one:\n\n\n```\nsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.6.prealpha0/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1280:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\nGot:\n    [2.9757207403766761469671194565, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\n**********************************************************************\n```\n\n\nThis particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with \"...\"",
+    "body": "Replying to [comment:232 drkirkby]:\n> So the unexpected failure I see was this one:\n\n\n```\nsage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.6.prealpha0/devel/sage-main/sage/rings/polynomial/polynomial_quotient_ring.py\", line 1280:\n    sage: [phi(k.0^2) for phi in v]\nExpected:\n    [2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\nGot:\n    [2.9757207403766761469671194565, -2.4088994371613850098316292196 + 1.9025410530350528612407363802*I, -2.4088994371613850098316292196 - 1.9025410530350528612407363802*I, 0.92103906697304693634806949137 - 3.0755331188457794473265418086*I, 0.92103906697304693634806949137 + 3.0755331188457794473265418086*I]\n**********************************************************************\n```\n\nThis particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with \"...\"",
     "created_at": "2010-08-16T05:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6900,7 +6953,6 @@ Got:
 **********************************************************************
 ```
 
-
 This particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with "..."
 
 
@@ -6910,7 +6962,7 @@ This particular doctest was changed by this patch.  Interestingly, it is a test 
 archive/issue_comments_088386.json:
 ```json
 {
-    "body": "Replying to [comment:234 jdemeyer]:\n\n> This particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with \"...\"\n\nNote the machine I used is 64-bit (it has a quad core 3.33 GHz Intel Xeon W3580 CPU), but the build was performed 32-bit. Both Solaris and OpenSolaris build 32-bit applications by default - for 64-bit, you need to add the `-m64` compiler switch when building. The 64-bit builds of Sage are not very successful yet. \n\nDoes anyone know what the result should be? For the first result, I get the **real number** `2.9757207403766761469671194565` but the expected value is the **complex number** `2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I` So for the real part I get **exactly** the same number, but I get no imaginary part whatsoever. \n\nI assume someone here must know the maths behind this, and know whether the result is supposed to be real or complex. If it should really be real (so the number I got is actually the more accurate of the two), then putting dots would be **very** dangerous. Then a result of `2.9757207403766761469671194565 + 1e300*I` would still pass! That's almost entirely imaginary, with a very small real part in comparison to the massive imaginary component. \n\nDave",
+    "body": "Replying to [comment:234 jdemeyer]:\n\n> This particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with \"...\"\n\n\nNote the machine I used is 64-bit (it has a quad core 3.33 GHz Intel Xeon W3580 CPU), but the build was performed 32-bit. Both Solaris and OpenSolaris build 32-bit applications by default - for 64-bit, you need to add the `-m64` compiler switch when building. The 64-bit builds of Sage are not very successful yet. \n\nDoes anyone know what the result should be? For the first result, I get the **real number** `2.9757207403766761469671194565` but the expected value is the **complex number** `2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I` So for the real part I get **exactly** the same number, but I get no imaginary part whatsoever. \n\nI assume someone here must know the maths behind this, and know whether the result is supposed to be real or complex. If it should really be real (so the number I got is actually the more accurate of the two), then putting dots would be **very** dangerous. Then a result of `2.9757207403766761469671194565 + 1e300*I` would still pass! That's almost entirely imaginary, with a very small real part in comparison to the massive imaginary component. \n\nDave",
     "created_at": "2010-08-16T09:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6922,6 +6974,7 @@ archive/issue_comments_088386.json:
 Replying to [comment:234 jdemeyer]:
 
 > This particular doctest was changed by this patch.  Interestingly, it is a test which is documented to give a different result on 32-bit and 64-bit systems and your result is precisely the correct result for a 64-bit machine.  This can probably be solved with "..."
+
 
 Note the machine I used is 64-bit (it has a quad core 3.33 GHz Intel Xeon W3580 CPU), but the build was performed 32-bit. Both Solaris and OpenSolaris build 32-bit applications by default - for 64-bit, you need to add the `-m64` compiler switch when building. The 64-bit builds of Sage are not very successful yet. 
 
@@ -6938,7 +6991,7 @@ Dave
 archive/issue_comments_088387.json:
 ```json
 {
-    "body": "Replying to [comment:235 drkirkby]:\n\n> Does anyone know what the result should be? For the first result, I get the **real number** `2.9757207403766761469671194565` but the expected value is the **complex number** `2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I` So for the real part I get **exactly** the same number, but I get no imaginary part whatsoever. \n> \n> I assume someone here must know the maths behind this, and know whether the result is supposed to be real or complex. If it should really be real (so the number I got is actually the more accurate of the two), then putting dots would be **very** dangerous. Then a result of `2.9757207403766761469671194565 + 1e300*I` would still pass! That's almost entirely imaginary, with a very small real part in comparison to the massive imaginary component. \n\nMaybe rather than directly testing the answer, one could do something like this:\n\n```\nsage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\nTrue\n```\n\nThat would be less dangerous, while still allowing the necessary flexibility.",
+    "body": "Replying to [comment:235 drkirkby]:\n\n> Does anyone know what the result should be? For the first result, I get the **real number** `2.9757207403766761469671194565` but the expected value is the **complex number** `2.9757207403766761469671194565 - 1.2983430720865060515202099613e-47*I` So for the real part I get **exactly** the same number, but I get no imaginary part whatsoever. \n> \n> I assume someone here must know the maths behind this, and know whether the result is supposed to be real or complex. If it should really be real (so the number I got is actually the more accurate of the two), then putting dots would be **very** dangerous. Then a result of `2.9757207403766761469671194565 + 1e300*I` would still pass! That's almost entirely imaginary, with a very small real part in comparison to the massive imaginary component. \n\n\nMaybe rather than directly testing the answer, one could do something like this:\n\n```\nsage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\nTrue\n```\nThat would be less dangerous, while still allowing the necessary flexibility.",
     "created_at": "2010-08-16T09:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6953,13 +7006,13 @@ Replying to [comment:235 drkirkby]:
 > 
 > I assume someone here must know the maths behind this, and know whether the result is supposed to be real or complex. If it should really be real (so the number I got is actually the more accurate of the two), then putting dots would be **very** dangerous. Then a result of `2.9757207403766761469671194565 + 1e300*I` would still pass! That's almost entirely imaginary, with a very small real part in comparison to the massive imaginary component. 
 
+
 Maybe rather than directly testing the answer, one could do something like this:
 
 ```
 sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)
 True
 ```
-
 That would be less dangerous, while still allowing the necessary flexibility.
 
 
@@ -6987,7 +7040,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_088389.json:
 ```json
 {
-    "body": "Replying to [comment:236 davidloeffler]:\n\n> Maybe rather than directly testing the answer, one could do something like this:\n> {{{\n> sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> True\n> }}}\n> That would be less dangerous, while still allowing the necessary flexibility. \n\nThe first question I personally need answering is should the number be real or complex? \n\nI might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n\nOnly when I know the answer to that question do I feel able to comment on a test. \n\nGiven the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n\nIf this is being done with just an FPU, then printing these number of digits is a bit pointless. \n\nDave",
+    "body": "Replying to [comment:236 davidloeffler]:\n\n> Maybe rather than directly testing the answer, one could do something like this:\n> \n> ```\n> sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> True\n> ```\n> That would be less dangerous, while still allowing the necessary flexibility. \n\n\nThe first question I personally need answering is should the number be real or complex? \n\nI might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n\nOnly when I know the answer to that question do I feel able to comment on a test. \n\nGiven the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n\nIf this is being done with just an FPU, then printing these number of digits is a bit pointless. \n\nDave",
     "created_at": "2010-08-16T09:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -6999,11 +7052,13 @@ archive/issue_comments_088389.json:
 Replying to [comment:236 davidloeffler]:
 
 > Maybe rather than directly testing the answer, one could do something like this:
-> {{{
+> 
+> ```
 > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)
 > True
-> }}}
+> ```
 > That would be less dangerous, while still allowing the necessary flexibility. 
+
 
 The first question I personally need answering is should the number be real or complex? 
 
@@ -7024,7 +7079,7 @@ Dave
 archive/issue_comments_088390.json:
 ```json
 {
-    "body": "Replying to [comment:237 drkirkby]:\n> Replying to [comment:236 davidloeffler]:\n> \n> > Maybe rather than directly testing the answer, one could do something like this:\n> > {{{\n> > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> > True\n> > }}}\n> > That would be less dangerous, while still allowing the necessary flexibility. \n> \n> The first question I personally need answering is should the number be real or complex? \n\nIt is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as \n\n```\nsage: [z[0]^2 for z in f.roots(CC)]\n[2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]\n```\n\nThe function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.\n\n\n> \n> I might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n> \n> Only when I know the answer to that question do I feel able to comment on a test. \n> \n> Given the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n> \n> If this is being done with just an FPU, then printing these number of digits is a bit pointless. \n> \n> Dave",
+    "body": "Replying to [comment:237 drkirkby]:\n> Replying to [comment:236 davidloeffler]:\n> \n> > Maybe rather than directly testing the answer, one could do something like this:\n> > \n> > ```\n> > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> > True\n> > ```\n> > That would be less dangerous, while still allowing the necessary flexibility. \n\n> \n> The first question I personally need answering is should the number be real or complex? \n\n\nIt is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as \n\n```\nsage: [z[0]^2 for z in f.roots(CC)]\n[2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]\n```\nThe function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.\n\n\n> \n> I might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n> \n> Only when I know the answer to that question do I feel able to comment on a test. \n> \n> Given the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n> \n> If this is being done with just an FPU, then printing these number of digits is a bit pointless. \n> \n> Dave",
     "created_at": "2010-08-16T10:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7037,13 +7092,16 @@ Replying to [comment:237 drkirkby]:
 > Replying to [comment:236 davidloeffler]:
 > 
 > > Maybe rather than directly testing the answer, one could do something like this:
-> > {{{
+> > 
+> > ```
 > > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)
 > > True
-> > }}}
+> > ```
 > > That would be less dangerous, while still allowing the necessary flexibility. 
+
 > 
 > The first question I personally need answering is should the number be real or complex? 
+
 
 It is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as 
 
@@ -7051,7 +7109,6 @@ It is real.  The list is the list of values of `z^2` as z runs over the roots of
 sage: [z[0]^2 for z in f.roots(CC)]
 [2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]
 ```
-
 The function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.
 
 
@@ -7073,7 +7130,7 @@ The function being tested is rather general, so one could not expect the functio
 archive/issue_comments_088391.json:
 ```json
 {
-    "body": "Replying to [comment:238 cremona]:\n> Replying to [comment:237 drkirkby]:\n> > Replying to [comment:236 davidloeffler]:\n> > \n> > > Maybe rather than directly testing the answer, one could do something like this:\n> > > {{{\n> > > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> > > True\n> > > }}}\n\n> It is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as \n> {{{\n> sage: [z[0]^2 for z in f.roots(CC)]\n> [2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]\n> }}}\n> The function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.\n> \n\nIt is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^{-27} a bit disappoint.\n\n> \n> > \n> > I might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n> > \n> > Only when I know the answer to that question do I feel able to comment on a test. \n> > \n> > Given the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n> > \n> > If this is being done with just an FPU, then printing these number of digits is a bit pointless. \n> > \n> > Dave",
+    "body": "Replying to [comment:238 cremona]:\n> Replying to [comment:237 drkirkby]:\n> > Replying to [comment:236 davidloeffler]:\n> > \n> > > Maybe rather than directly testing the answer, one could do something like this:\n> > > \n> > > ```\n> > > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)\n> > > True\n> > > ```\n\n\n> It is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as \n> \n> ```\n> sage: [z[0]^2 for z in f.roots(CC)]\n> [2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]\n> ```\n> The function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.\n> \n\n\nIt is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^{-27} a bit disappoint.\n\n> \n> > \n> > I might guess the small imaginary component should not be there at all, but would my guess be right? I'm not a mathematician. \n> > \n> > Only when I know the answer to that question do I feel able to comment on a test. \n> > \n> > Given the number of digits that are printed (> 16), this would suggest to me that arbitrary precision maths is being used, and not just a floating point processor. If so, the answer should be the same irrespective of whether the machine is 32-bit or 64-bit. Rounding errors occur in floating point processors - they do not on integer arithmetic if done properly. \n> > \n> > If this is being done with just an FPU, then printing these number of digits is a bit pointless. \n> > \n> > Dave",
     "created_at": "2010-08-16T10:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7087,18 +7144,22 @@ Replying to [comment:238 cremona]:
 > > Replying to [comment:236 davidloeffler]:
 > > 
 > > > Maybe rather than directly testing the answer, one could do something like this:
-> > > {{{
+> > > 
+> > > ```
 > > > sage: x = [calculation]; abs(x - 2.975975720740376676146967119) < 10^(-27)
 > > > True
-> > > }}}
+> > > ```
+
 
 > It is real.  The list is the list of values of `z^2` as z runs over the roots of `f = x^5 + x + 17`, which has exactly one real root, listed first.  Apart from precision the output should be the same as 
-> {{{
+> 
+> ```
 > sage: [z[0]^2 for z in f.roots(CC)]
 > [2.97572074037668, -2.40889943716139 + 1.90254105303505*I, -2.40889943716139 - 1.90254105303505*I, 0.921039066973047 - 3.07553311884578*I, 0.921039066973047 + 3.07553311884578*I]
-> }}}
+> ```
 > The function being tested is rather general, so one could not expect the function's code to test for this special case (I think).  Still, it is disappointing that the imaginary part is not a better approximation to zero than it is.
 > 
+
 
 It is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^{-27} a bit disappoint.
 
@@ -7121,7 +7182,7 @@ It is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), id
 archive/issue_comments_088392.json:
 ```json
 {
-    "body": "> It is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^-27 a bit disappointing.\n\nI meant to say imaginary part zero.",
+    "body": "> It is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^-27 a bit disappointing.\n\n\nI meant to say imaginary part zero.",
     "created_at": "2010-08-16T11:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7131,6 +7192,7 @@ archive/issue_comments_088392.json:
 ```
 
 > It is a complex embedding, so the output is a [ComplexNumber](ComplexNumber), ideally with real part zero. The precision is 100 bit. This indeed makes 10^-27 a bit disappointing.
+
 
 I meant to say imaginary part zero.
 
@@ -7161,7 +7223,7 @@ Hopefully fixes problem with polynomial_quotient_ring.py
 archive/issue_comments_088394.json:
 ```json
 {
-    "body": "Replying to [comment:232 drkirkby]:\n> 2) `devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py` **An unexpected failure.** \n\nCan you try the patch I just uploaded to see if it fixes the problem? I have tested this patch on a 32bit and 64bit Intel Linux system and `polynomial_quotient_ring.py` passed the tests. I haven't tested it yet against the whole sage library.",
+    "body": "Replying to [comment:232 drkirkby]:\n> 2) `devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py` **An unexpected failure.** \n\n\nCan you try the patch I just uploaded to see if it fixes the problem? I have tested this patch on a 32bit and 64bit Intel Linux system and `polynomial_quotient_ring.py` passed the tests. I haven't tested it yet against the whole sage library.",
     "created_at": "2010-08-16T13:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7172,6 +7234,7 @@ archive/issue_comments_088394.json:
 
 Replying to [comment:232 drkirkby]:
 > 2) `devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py` **An unexpected failure.** 
+
 
 Can you try the patch I just uploaded to see if it fixes the problem? I have tested this patch on a 32bit and 64bit Intel Linux system and `polynomial_quotient_ring.py` passed the tests. I haven't tested it yet against the whole sage library.
 
@@ -7240,7 +7303,7 @@ Dave
 archive/issue_comments_088398.json:
 ```json
 {
-    "body": "Replying to [comment:243 drkirkby]:\n> Whilst the doctest can be changed to make this pass, is a real bug being covered up? \nI would rather say on the contrary.  The problem was that we were computing the roots of a polynomial with complex non-exact roots.  I.e.: instead of computing the roots of x^5+x-17, we were computing the roots of (1.0 + 0.0*I)*x^5 + ...  I changed that in my patch.\n\n> Can anyone explain why a calculation performed with integers should differ depending on whether the program is compiled 32-bit or 64-bit? Since to me, of the arbitrary precision maths is implemented correctly, they should give the same result.\n\nThis is not always true because the precisions might be different.  In PARI, the precision is always a multiple of the machine word size.  If you try to compute with 90 bits of precision, you will get 96 bits of precision on a 32-bit machine but you will get 128 bits of precision on a 64-bit machine.\n\nIf might be possible to change this such that PARI always uses a multiple of 64 bits of precision (I have been thinking about this), but it's not so easy.",
+    "body": "Replying to [comment:243 drkirkby]:\n> Whilst the doctest can be changed to make this pass, is a real bug being covered up? \n\nI would rather say on the contrary.  The problem was that we were computing the roots of a polynomial with complex non-exact roots.  I.e.: instead of computing the roots of x^5+x-17, we were computing the roots of (1.0 + 0.0*I)*x^5 + ...  I changed that in my patch.\n\n> Can anyone explain why a calculation performed with integers should differ depending on whether the program is compiled 32-bit or 64-bit? Since to me, of the arbitrary precision maths is implemented correctly, they should give the same result.\n\n\nThis is not always true because the precisions might be different.  In PARI, the precision is always a multiple of the machine word size.  If you try to compute with 90 bits of precision, you will get 96 bits of precision on a 32-bit machine but you will get 128 bits of precision on a 64-bit machine.\n\nIf might be possible to change this such that PARI always uses a multiple of 64 bits of precision (I have been thinking about this), but it's not so easy.",
     "created_at": "2010-08-16T15:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7251,9 +7314,11 @@ archive/issue_comments_088398.json:
 
 Replying to [comment:243 drkirkby]:
 > Whilst the doctest can be changed to make this pass, is a real bug being covered up? 
+
 I would rather say on the contrary.  The problem was that we were computing the roots of a polynomial with complex non-exact roots.  I.e.: instead of computing the roots of x^5+x-17, we were computing the roots of (1.0 + 0.0*I)*x^5 + ...  I changed that in my patch.
 
 > Can anyone explain why a calculation performed with integers should differ depending on whether the program is compiled 32-bit or 64-bit? Since to me, of the arbitrary precision maths is implemented correctly, they should give the same result.
+
 
 This is not always true because the precisions might be different.  In PARI, the precision is always a multiple of the machine word size.  If you try to compute with 90 bits of precision, you will get 96 bits of precision on a 32-bit machine but you will get 128 bits of precision on a 64-bit machine.
 
@@ -7320,7 +7385,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088402.json:
 ```json
 {
-    "body": "Replying to [comment:245 cremona]:\n> Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.\n\nOK, fair point. Now I understand. I was under the impression 100 bits were being used. \n\nAfter applying Jeroen's patch\n\n\n```\ndrkirkby@hawk:~/sage-4.6.prealpha0$ ./sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\nsage -t -long \"devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\"\n\t [30.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 30.2 seconds\n```\n\n\nI've set this to positive review. \n\nI copied all the authors to reviewers, as I think everyone that has wrote part of it has reviewed part of it. I also added Leif and Fran\u00e7ois as reviewers, as they have contributed too. But I've not done an extensive search to see who should be on the reviewer and the author list. I suspect there are some missing. \n\nDave",
+    "body": "Replying to [comment:245 cremona]:\n> Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.\n\n\nOK, fair point. Now I understand. I was under the impression 100 bits were being used. \n\nAfter applying Jeroen's patch\n\n```\ndrkirkby@hawk:~/sage-4.6.prealpha0$ ./sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\nsage -t -long \"devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\"\n\t [30.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 30.2 seconds\n```\n\nI've set this to positive review. \n\nI copied all the authors to reviewers, as I think everyone that has wrote part of it has reviewed part of it. I also added Leif and Fran\u00e7ois as reviewers, as they have contributed too. But I've not done an extensive search to see who should be on the reviewer and the author list. I suspect there are some missing. \n\nDave",
     "created_at": "2010-08-16T17:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7332,10 +7397,10 @@ archive/issue_comments_088402.json:
 Replying to [comment:245 cremona]:
 > Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.
 
+
 OK, fair point. Now I understand. I was under the impression 100 bits were being used. 
 
 After applying Jeroen's patch
-
 
 ```
 drkirkby@hawk:~/sage-4.6.prealpha0$ ./sage -t  -long devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py
@@ -7346,7 +7411,6 @@ sage -t -long "devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py"
 All tests passed!
 Total time for all tests: 30.2 seconds
 ```
-
 
 I've set this to positive review. 
 
@@ -7379,7 +7443,7 @@ New distribution with all patches: [http://cage.ugent.be/~jdemeyer/sage/sage-4.6
 archive/issue_comments_088404.json:
 ```json
 {
-    "body": "Replying to [comment:245 cremona]:\n> Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.\n\nOthers are due to the different width of Python's `int` type (and perhaps some due to pointer width).",
+    "body": "Replying to [comment:245 cremona]:\n> Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.\n\n\nOthers are due to the different width of Python's `int` type (and perhaps some due to pointer width).",
     "created_at": "2010-08-16T17:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7390,6 +7454,7 @@ archive/issue_comments_088404.json:
 
 Replying to [comment:245 cremona]:
 > Jeroen is right.  Almost all (and maybe all) the doctests in Sage which are tagged 32/64 bit are a result of this feature of pari's way of handling multi-precision floating point arithmetic.
+
 
 Others are due to the different width of Python's `int` type (and perhaps some due to pointer width).
 
@@ -7440,7 +7505,7 @@ Doctest coverage of sage/libs/pari/gen.pyx (Sage 4.6.prealpha0)
 archive/issue_comments_088407.json:
 ```json
 {
-    "body": "Replying to [comment:249 leif]:\n> Just for the record: I noticed some empty `EXAMPLES` sections (in `sage/libs/pari/gen.pyx`), some functions do not have docstrings at all.\n> \n> But perhaps something for a follow-up ticket, cleaning up other docstrings as well.\n\nI've attached the current [coverage report for gen.pyx](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt) (Sage 4.6.prealpha0):\n\n\n```\nSCORE devel/sage/sage/libs/pari/gen.pyx: 55% (215 of 387)\n```\n",
+    "body": "Replying to [comment:249 leif]:\n> Just for the record: I noticed some empty `EXAMPLES` sections (in `sage/libs/pari/gen.pyx`), some functions do not have docstrings at all.\n> \n> But perhaps something for a follow-up ticket, cleaning up other docstrings as well.\n\n\nI've attached the current [coverage report for gen.pyx](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt) (Sage 4.6.prealpha0):\n\n```\nSCORE devel/sage/sage/libs/pari/gen.pyx: 55% (215 of 387)\n```",
     "created_at": "2010-08-16T19:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7454,13 +7519,12 @@ Replying to [comment:249 leif]:
 > 
 > But perhaps something for a follow-up ticket, cleaning up other docstrings as well.
 
-I've attached the current [coverage report for gen.pyx](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt) (Sage 4.6.prealpha0):
 
+I've attached the current [coverage report for gen.pyx](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt) (Sage 4.6.prealpha0):
 
 ```
 SCORE devel/sage/sage/libs/pari/gen.pyx: 55% (215 of 387)
 ```
-
 
 
 
@@ -7469,7 +7533,7 @@ SCORE devel/sage/sage/libs/pari/gen.pyx: 55% (215 of 387)
 archive/issue_comments_088408.json:
 ```json
 {
-    "body": "I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:\n\n\n```\n/usr/bin/gcc  -o \"/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc\"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fom\nit-frame-pointer    -fPIC -Wl,-flat_namespace,-undefined,suppress  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o\nZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o bit.o buch1.o buch2.o buch\n3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.\no prime.o random.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o has\nh.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_factor.o aprcl.o elldata.o ellsea.o galois.o galpol.o gr\noupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o darwin.o\nld: common symbols not allowed with MH_DYLIB output format with the -multi_module option\ninit.o definition of common _DEBUGMEM (size 4)\ninit.o definition of common _avma (size 4)\ninit.o definition of common _bot (size 4)\n[...]\nes.o definition of common _pariErr (size 4)\nes.o definition of common _pariOut (size 4)\ninit.o definition of common _pari_errfile (size 4)\ninit.o definition of common _pari_infile (size 4)\ninit.o definition of common _pari_outfile (size 4)\ninit.o definition of common _cb_pari_err_recover (size 4)\ninit.o definition of common _foreignFuncFree (size 4)\ninit.o definition of common _cb_pari_handle_exception (size 4)\ninit.o definition of common _cb_pari_sigint (size 4)\ninit.o definition of common _cb_pari_whatnow (size 4)\ninit.o definition of common _foreignExprHandler (size 4)\ninit.o definition of common _foreignHandler (size 4)\ninit.o definition of common _memused (size 4)\n/usr/bin/libtool: internal link edit command failed\nmake[1]: *** [libpari-2.4.dylib] Error 1\nmake: *** [gp] Error 2\n```\n\n\nVersion of gcc (I believe this is the most recent version from Apple which exists for that machine):\n\n```\npowerpc-apple-darwin8-gcc-4.0.1 (GCC) 4.0.1 (Apple Computer, Inc. build 5367)\nCopyright (C) 2005 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n\n\nIs somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).",
+    "body": "I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:\n\n```\n/usr/bin/gcc  -o \"/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc\"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fom\nit-frame-pointer    -fPIC -Wl,-flat_namespace,-undefined,suppress  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o\nZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o bit.o buch1.o buch2.o buch\n3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.\no prime.o random.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o has\nh.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_factor.o aprcl.o elldata.o ellsea.o galois.o galpol.o gr\noupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o darwin.o\nld: common symbols not allowed with MH_DYLIB output format with the -multi_module option\ninit.o definition of common _DEBUGMEM (size 4)\ninit.o definition of common _avma (size 4)\ninit.o definition of common _bot (size 4)\n[...]\nes.o definition of common _pariErr (size 4)\nes.o definition of common _pariOut (size 4)\ninit.o definition of common _pari_errfile (size 4)\ninit.o definition of common _pari_infile (size 4)\ninit.o definition of common _pari_outfile (size 4)\ninit.o definition of common _cb_pari_err_recover (size 4)\ninit.o definition of common _foreignFuncFree (size 4)\ninit.o definition of common _cb_pari_handle_exception (size 4)\ninit.o definition of common _cb_pari_sigint (size 4)\ninit.o definition of common _cb_pari_whatnow (size 4)\ninit.o definition of common _foreignExprHandler (size 4)\ninit.o definition of common _foreignHandler (size 4)\ninit.o definition of common _memused (size 4)\n/usr/bin/libtool: internal link edit command failed\nmake[1]: *** [libpari-2.4.dylib] Error 1\nmake: *** [gp] Error 2\n```\n\nVersion of gcc (I believe this is the most recent version from Apple which exists for that machine):\n\n```\npowerpc-apple-darwin8-gcc-4.0.1 (GCC) 4.0.1 (Apple Computer, Inc. build 5367)\nCopyright (C) 2005 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n\nIs somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).",
     "created_at": "2010-08-17T10:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7479,7 +7543,6 @@ archive/issue_comments_088408.json:
 ```
 
 I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:
-
 
 ```
 /usr/bin/gcc  -o "/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fom
@@ -7512,7 +7575,6 @@ make[1]: *** [libpari-2.4.dylib] Error 1
 make: *** [gp] Error 2
 ```
 
-
 Version of gcc (I believe this is the most recent version from Apple which exists for that machine):
 
 ```
@@ -7521,7 +7583,6 @@ Copyright (C) 2005 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
-
 
 Is somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).
 
@@ -7532,7 +7593,7 @@ Is somebody else able to test this architecture?  Just in case the problem is wi
 archive/issue_comments_088409.json:
 ```json
 {
-    "body": "Replying to [comment:251 jdemeyer]:\n> I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  [...]\n> Is somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).\n\nKarl-Dieter (kcrisman) has access to such a box.",
+    "body": "Replying to [comment:251 jdemeyer]:\n> I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  [...]\n> Is somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).\n\n\nKarl-Dieter (kcrisman) has access to such a box.",
     "created_at": "2010-08-17T11:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7545,6 +7606,7 @@ Replying to [comment:251 jdemeyer]:
 > I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  [...]
 > Is somebody else able to test this architecture?  Just in case the problem is with the machine and not with PARI (I know essentially nothing about Darwin, I just asked a collegue to test it on his machine).
 
+
 Karl-Dieter (kcrisman) has access to such a box.
 
 
@@ -7554,7 +7616,7 @@ Karl-Dieter (kcrisman) has access to such a box.
 archive/issue_comments_088410.json:
 ```json
 {
-    "body": "Replying to [comment:251 jdemeyer]:\n> I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:\n> \n\n```\n/usr/bin/gcc  -o \"/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc\"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -fPIC -Wl,-flat_namespace,-undefined,suppress  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o ZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o bit.o buch1.o buch2.o buch3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.o prime.o random.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o hash.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_factor.o aprcl.o elldata.o ellsea.o galois.o galpol.o groupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o darwin.o\nld: common symbols not allowed with MH_DYLIB output format with the -multi_module option\ninit.o definition of common _DEBUGMEM (size 4)\ninit.o definition of common _avma (size 4)\ninit.o definition of common _bot (size 4)\n[...]\nes.o definition of common _pariErr (size 4)\nes.o definition of common _pariOut (size 4)\ninit.o definition of common _pari_errfile (size 4)\ninit.o definition of common _pari_infile (size 4)\ninit.o definition of common _pari_outfile (size 4)\ninit.o definition of common _cb_pari_err_recover (size 4)\ninit.o definition of common _foreignFuncFree (size 4)\ninit.o definition of common _cb_pari_handle_exception (size 4)\ninit.o definition of common _cb_pari_sigint (size 4)\ninit.o definition of common _cb_pari_whatnow (size 4)\ninit.o definition of common _foreignExprHandler (size 4)\ninit.o definition of common _foreignHandler (size 4)\ninit.o definition of common _memused (size 4)\n/usr/bin/libtool: internal link edit command failed\nmake[1]: *** [libpari-2.4.dylib] Error 1\nmake: *** [gp] Error 2\n```\n\n\nPerhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n\nJust a guess, I don't play with apples.",
+    "body": "Replying to [comment:251 jdemeyer]:\n> I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:\n> \n\n{{{\n/usr/bin/gcc  -o \"/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc\"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -fPIC -Wl,-flat_namespace,-undefined,suppress  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o ZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o bit.o buch1.o buch2.o buch3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.o prime.o random.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o hash.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_factor.o aprcl.o elldata.o ellsea.o galois.o galpol.o groupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o darwin.o\nld: common symbols not allowed with MH_DYLIB output format with the -multi_module option\ninit.o definition of common _DEBUGMEM (size 4)\ninit.o definition of common _avma (size 4)\ninit.o definition of common _bot (size 4)\n[...]\nes.o definition of common _pariErr (size 4)\nes.o definition of common _pariOut (size 4)\ninit.o definition of common _pari_errfile (size 4)\ninit.o definition of common _pari_infile (size 4)\ninit.o definition of common _pari_outfile (size 4)\ninit.o definition of common _cb_pari_err_recover (size 4)\ninit.o definition of common _foreignFuncFree (size 4)\ninit.o definition of common _cb_pari_handle_exception (size 4)\ninit.o definition of common _cb_pari_sigint (size 4)\ninit.o definition of common _cb_pari_whatnow (size 4)\ninit.o definition of common _foreignExprHandler (size 4)\ninit.o definition of common _foreignHandler (size 4)\ninit.o definition of common _memused (size 4)\n/usr/bin/libtool: internal link edit command failed\nmake[1]: *** [libpari-2.4.dylib] Error 1\nmake: *** [gp] Error 2\n}}}\n\nPerhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n\nJust a guess, I don't play with apples.",
     "created_at": "2010-08-17T14:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7567,7 +7629,7 @@ Replying to [comment:251 jdemeyer]:
 > I have tried to compile sage-4.6.alpha1 on an old PPC Mac OS X 10.4 and it **failed** compiling PARI.  Since this is supposed to be an officially supported platform, this should be addressed.  I also tried to compile PARI/GP stand-alone and it also failed, so the problem is upstream.  The error is the following:
 > 
 
-```
+{{{
 /usr/bin/gcc  -o "/Users/jdemeyer/pari-2.4.3.svn-12577/src/Odarwin-ppc"/libpari-2.4.dylib -dynamiclib  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -fPIC -Wl,-flat_namespace,-undefined,suppress  mp.o mpinl.o F2x.o FF.o Flx.o FpE.o FpV.o FpX.o Qfb.o RgV.o RgX.o ZV.o ZX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bb_group.o bibli1.o bibli2.o bit.o buch1.o buch2.o buch3.o buch4.o concat.o ellanal.o elliptic.o galconj.o gen1.o gen2.o gen3.o hnf_snf.o ifactor1.o lll.o perm.o polarit1.o polarit2.o polarit3.o prime.o random.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o compile.o default.o errmsg.o es.o eval.o hash.o init.o intnum.o members.o pariinl.o parse.o sumiter.o DedekZeta.o Hensel.o QX_factor.o aprcl.o elldata.o ellsea.o galois.o galpol.o groupid.o krasner.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o darwin.o
 ld: common symbols not allowed with MH_DYLIB output format with the -multi_module option
 init.o definition of common _DEBUGMEM (size 4)
@@ -7590,8 +7652,7 @@ init.o definition of common _memused (size 4)
 /usr/bin/libtool: internal link edit command failed
 make[1]: *** [libpari-2.4.dylib] Error 1
 make: *** [gp] Error 2
-```
-
+}}}
 
 Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.
 
@@ -7604,7 +7665,7 @@ Just a guess, I don't play with apples.
 archive/issue_comments_088411.json:
 ```json
 {
-    "body": "Replying to [comment:253 leif]:\n> Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n> \n> Just a guess, I don't play with apples.\n\nI'm pretty sure this will fix it. In PARI 2.3.x, we patched `get_dlcflags`:\n\n```sh\n_dl_list=\"DLCFLAGS\"\nif test -n \"$__gnuc__\"; then\n  # Some architectures need -fPIC for building dynamic lib\n  # *-i?86|*-sparc*|*-powerpc|*-s390|*-mips) DLCFLAGS=\n  case \"$osname-$arch\" in\n    *-hppa|*-ia64|*-alpha|*-arm|*-m68k|*linux-ppc) DLCFLAGS=-fPIC ;;\n    *-x86_64|*-sparc*|*-amd64) case \"$sizeof_long\" in\n              8) DLCFLAGS=-fPIC;;\n              esac;;\n    darwin-*) DLCFLAGS=-fno-common;;\n  esac\nelse\n  case \"$osname-$arch\" in\n    hpux-*) DLCFLAGS=+z;;\n    solaris-sparc*) case \"$sizeof_long\" in\n              8) DLCFLAGS=-KPIC;; # assume sun cc\n              esac;;\n  esac\nfi\n\necho \"C compiler is          $CC $CFLAGS $DLCFLAGS\"\n```\n\n\n(Note the `darwin-*`. A number of other changes has been dropped...)",
+    "body": "Replying to [comment:253 leif]:\n> Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n> \n> Just a guess, I don't play with apples.\n\n\nI'm pretty sure this will fix it. In PARI 2.3.x, we patched `get_dlcflags`:\n\n```sh\n_dl_list=\"DLCFLAGS\"\nif test -n \"$__gnuc__\"; then\n  # Some architectures need -fPIC for building dynamic lib\n  # *-i?86|*-sparc*|*-powerpc|*-s390|*-mips) DLCFLAGS=\n  case \"$osname-$arch\" in\n    *-hppa|*-ia64|*-alpha|*-arm|*-m68k|*linux-ppc) DLCFLAGS=-fPIC ;;\n    *-x86_64|*-sparc*|*-amd64) case \"$sizeof_long\" in\n              8) DLCFLAGS=-fPIC;;\n              esac;;\n    darwin-*) DLCFLAGS=-fno-common;;\n  esac\nelse\n  case \"$osname-$arch\" in\n    hpux-*) DLCFLAGS=+z;;\n    solaris-sparc*) case \"$sizeof_long\" in\n              8) DLCFLAGS=-KPIC;; # assume sun cc\n              esac;;\n  esac\nfi\n\necho \"C compiler is          $CC $CFLAGS $DLCFLAGS\"\n```\n\n(Note the `darwin-*`. A number of other changes has been dropped...)",
     "created_at": "2010-08-17T14:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7617,6 +7678,7 @@ Replying to [comment:253 leif]:
 > Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.
 > 
 > Just a guess, I don't play with apples.
+
 
 I'm pretty sure this will fix it. In PARI 2.3.x, we patched `get_dlcflags`:
 
@@ -7643,7 +7705,6 @@ fi
 
 echo "C compiler is          $CC $CFLAGS $DLCFLAGS"
 ```
-
 
 (Note the `darwin-*`. A number of other changes has been dropped...)
 
@@ -7696,7 +7757,7 @@ I think `spkg-install` needs some work anyway:
 archive/issue_comments_088414.json:
 ```json
 {
-    "body": "Replying to [comment:256 leif]:\n> I think `spkg-install` needs some work anyway:\n> \n>  * Shouldn't `SAGE_TUNE_pari` be `SAGE_TUNE_PARI`?\nI forget who it was, but someone proposed something like this SAGE_THREADS_$packagename where the '$packagename' would be lower case. I think that's quite a reasonable idea. It potentially allows the name to be automatically generated. \n\nIf you want to clean it up, it would be better to open another ticket for that.",
+    "body": "Replying to [comment:256 leif]:\n> I think `spkg-install` needs some work anyway:\n> \n> * Shouldn't `SAGE_TUNE_pari` be `SAGE_TUNE_PARI`?\n\nI forget who it was, but someone proposed something like this SAGE_THREADS_$packagename where the '$packagename' would be lower case. I think that's quite a reasonable idea. It potentially allows the name to be automatically generated. \n\nIf you want to clean it up, it would be better to open another ticket for that.",
     "created_at": "2010-08-17T15:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7708,7 +7769,8 @@ archive/issue_comments_088414.json:
 Replying to [comment:256 leif]:
 > I think `spkg-install` needs some work anyway:
 > 
->  * Shouldn't `SAGE_TUNE_pari` be `SAGE_TUNE_PARI`?
+> * Shouldn't `SAGE_TUNE_pari` be `SAGE_TUNE_PARI`?
+
 I forget who it was, but someone proposed something like this SAGE_THREADS_$packagename where the '$packagename' would be lower case. I think that's quite a reasonable idea. It potentially allows the name to be automatically generated. 
 
 If you want to clean it up, it would be better to open another ticket for that.
@@ -7720,7 +7782,7 @@ If you want to clean it up, it would be better to open another ticket for that.
 archive/issue_comments_088415.json:
 ```json
 {
-    "body": "Replying to [comment:253 leif]:\n> Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n\nGreat!  This fixes the problem indeed (at least on this particular machine).  I have reported this upstream.",
+    "body": "Replying to [comment:253 leif]:\n> Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.\n\n\nGreat!  This fixes the problem indeed (at least on this particular machine).  I have reported this upstream.",
     "created_at": "2010-08-17T16:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7732,6 +7794,7 @@ archive/issue_comments_088415.json:
 Replying to [comment:253 leif]:
 > Perhaps add `-fno-common` to `DLCFLAGS` in `config/get_dlcflags` if `$osname` is `darwin`.
 
+
 Great!  This fixes the problem indeed (at least on this particular machine).  I have reported this upstream.
 
 
@@ -7741,7 +7804,7 @@ Great!  This fixes the problem indeed (at least on this particular machine).  I 
 archive/issue_comments_088416.json:
 ```json
 {
-    "body": "Anybody with access to a Darwin machine: please test\n\n\n```\nsage -i http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg\n```\n\n\nstarting from either a vanilla Sage or an already-9343-patched Sage. The main thing is to see whether this *compiles* properly.",
+    "body": "Anybody with access to a Darwin machine: please test\n\n```\nsage -i http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg\n```\n\nstarting from either a vanilla Sage or an already-9343-patched Sage. The main thing is to see whether this *compiles* properly.",
     "created_at": "2010-08-17T16:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7752,11 +7815,9 @@ archive/issue_comments_088416.json:
 
 Anybody with access to a Darwin machine: please test
 
-
 ```
 sage -i http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg
 ```
-
 
 starting from either a vanilla Sage or an already-9343-patched Sage. The main thing is to see whether this *compiles* properly.
 
@@ -7767,7 +7828,7 @@ starting from either a vanilla Sage or an already-9343-patched Sage. The main th
 archive/issue_comments_088417.json:
 ```json
 {
-    "body": "Replying to [comment:255 leif]:\n> Dave, could you check if we still need (some of) the dropped changes for Solaris and HP-UX?\n> \n> (I suspect except for the `-fPIC`, we'll need these, too.)\n\nOk, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...",
+    "body": "Replying to [comment:255 leif]:\n> Dave, could you check if we still need (some of) the dropped changes for Solaris and HP-UX?\n> \n> (I suspect except for the `-fPIC`, we'll need these, too.)\n\n\nOk, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...",
     "created_at": "2010-08-17T16:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7781,6 +7842,7 @@ Replying to [comment:255 leif]:
 > 
 > (I suspect except for the `-fPIC`, we'll need these, too.)
 
+
 Ok, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...
 
 
@@ -7790,7 +7852,7 @@ Ok, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you
 archive/issue_comments_088418.json:
 ```json
 {
-    "body": "I notice this message when pari is being installed:\n\n```\nTo sage build time, Pari will not be tuned for your systems\nIf you want higher performance, at the expense of a slower build\nset the environment variable SAGE_TUNE_pari=yes by typing the following\nbefore building Sage (or at least before building Pari)\n```\n\nAside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say \"To *minimize* sage build time\" or something like that?\n\nAlso, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.",
+    "body": "I notice this message when pari is being installed:\n\n```\nTo sage build time, Pari will not be tuned for your systems\nIf you want higher performance, at the expense of a slower build\nset the environment variable SAGE_TUNE_pari=yes by typing the following\nbefore building Sage (or at least before building Pari)\n```\nAside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say \"To *minimize* sage build time\" or something like that?\n\nAlso, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.",
     "created_at": "2010-08-17T17:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7807,7 +7869,6 @@ If you want higher performance, at the expense of a slower build
 set the environment variable SAGE_TUNE_pari=yes by typing the following
 before building Sage (or at least before building Pari)
 ```
-
 Aside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say "To *minimize* sage build time" or something like that?
 
 Also, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.
@@ -7819,7 +7880,7 @@ Also, if you're introducing the environment variable `SAGE_TUNE_pari`, you shoul
 archive/issue_comments_088419.json:
 ```json
 {
-    "body": "Replying to [comment:260 leif]:\n> Replying to [comment:255 leif]:\n> > Dave, could you check if we still need (some of) the dropped changes for Solaris and HP-UX?\n> > \n> > (I suspect except for the `-fPIC`, we'll need these, too.)\n> \n> Ok, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...\n\nWhen were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \n\nWithout trying to build in HP-UX I don't know for sure what will be needed, and I don't have time to try that now. \n\nDave",
+    "body": "Replying to [comment:260 leif]:\n> Replying to [comment:255 leif]:\n> > Dave, could you check if we still need (some of) the dropped changes for Solaris and HP-UX?\n> > \n> > (I suspect except for the `-fPIC`, we'll need these, too.)\n\n> \n> Ok, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...\n\n\nWhen were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \n\nWithout trying to build in HP-UX I don't know for sure what will be needed, and I don't have time to try that now. \n\nDave",
     "created_at": "2010-08-17T17:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7833,8 +7894,10 @@ Replying to [comment:260 leif]:
 > > Dave, could you check if we still need (some of) the dropped changes for Solaris and HP-UX?
 > > 
 > > (I suspect except for the `-fPIC`, we'll need these, too.)
+
 > 
 > Ok, `+z` is used on HP-UX and `-KPIC` on Solaris if the compiler is not gcc, you in addition tested for SPARC and 64-bit on Solaris though...
+
 
 When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! 
 
@@ -7849,7 +7912,7 @@ Dave
 archive/issue_comments_088420.json:
 ```json
 {
-    "body": "Replying to [comment:262 drkirkby]:\n> When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \nBy looking at `hg log`: 22 July 2010 (or possibly before)",
+    "body": "Replying to [comment:262 drkirkby]:\n> When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \n\nBy looking at `hg log`: 22 July 2010 (or possibly before)",
     "created_at": "2010-08-17T17:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7860,6 +7923,7 @@ archive/issue_comments_088420.json:
 
 Replying to [comment:262 drkirkby]:
 > When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! 
+
 By looking at `hg log`: 22 July 2010 (or possibly before)
 
 
@@ -7869,7 +7933,7 @@ By looking at `hg log`: 22 July 2010 (or possibly before)
 archive/issue_comments_088421.json:
 ```json
 {
-    "body": "Replying to [comment:261 jhpalmieri]:\n> I notice this message when pari is being installed:\n> {{{\n> To sage build time, Pari will not be tuned for your systems\n> If you want higher performance, at the expense of a slower build\n> set the environment variable SAGE_TUNE_pari=yes by typing the following\n> before building Sage (or at least before building Pari)\n> }}}\n> Aside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say \"To *minimize* sage build time\" or something like that?\n\nYes agreed. I'll create a patch and attach it to the ticket. \n\n> Also, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.\n\nThat is now #9756",
+    "body": "Replying to [comment:261 jhpalmieri]:\n> I notice this message when pari is being installed:\n> \n> ```\n> To sage build time, Pari will not be tuned for your systems\n> If you want higher performance, at the expense of a slower build\n> set the environment variable SAGE_TUNE_pari=yes by typing the following\n> before building Sage (or at least before building Pari)\n> ```\n> Aside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say \"To *minimize* sage build time\" or something like that?\n\n\nYes agreed. I'll create a patch and attach it to the ticket. \n\n> Also, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.\n\n\nThat is now #9756",
     "created_at": "2010-08-17T17:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7880,17 +7944,20 @@ archive/issue_comments_088421.json:
 
 Replying to [comment:261 jhpalmieri]:
 > I notice this message when pari is being installed:
-> {{{
+> 
+> ```
 > To sage build time, Pari will not be tuned for your systems
 > If you want higher performance, at the expense of a slower build
 > set the environment variable SAGE_TUNE_pari=yes by typing the following
 > before building Sage (or at least before building Pari)
-> }}}
+> ```
 > Aside from the lack of punctuation (a very minor point), I think there is a word missing in the first line: should it say "To *minimize* sage build time" or something like that?
+
 
 Yes agreed. I'll create a patch and attach it to the ticket. 
 
 > Also, if you're introducing the environment variable `SAGE_TUNE_pari`, you should also document it in the Sage installation guide -- see the section on environment variables in SAGE_ROOT/devel/sage/doc/en/installation/source.rst.
+
 
 That is now #9756
 
@@ -7901,7 +7968,7 @@ That is now #9756
 archive/issue_comments_088422.json:
 ```json
 {
-    "body": "Replying to [comment:263 jdemeyer]:\n> Replying to [comment:262 drkirkby]:\n> > When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \n> By looking at `hg log`: 22 July 2010 (or possibly before)\n\nIn that case, it's pointless worrying about them now. Sage will not build with SunStudio and does not build on HP-UX. These are two things I'd like to fix (especially the former), but they are not critical to this ticket. Any issues like that can go on another ticket. \n\nDave",
+    "body": "Replying to [comment:263 jdemeyer]:\n> Replying to [comment:262 drkirkby]:\n> > When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! \n\n> By looking at `hg log`: 22 July 2010 (or possibly before)\n\nIn that case, it's pointless worrying about them now. Sage will not build with SunStudio and does not build on HP-UX. These are two things I'd like to fix (especially the former), but they are not critical to this ticket. Any issues like that can go on another ticket. \n\nDave",
     "created_at": "2010-08-17T17:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7913,6 +7980,7 @@ archive/issue_comments_088422.json:
 Replying to [comment:263 jdemeyer]:
 > Replying to [comment:262 drkirkby]:
 > > When were these dropped - since I tested this on OpenSolaris, or are these other changes? I can't keep up with the changes on this ticket! 
+
 > By looking at `hg log`: 22 July 2010 (or possibly before)
 
 In that case, it's pointless worrying about them now. Sage will not build with SunStudio and does not build on HP-UX. These are two things I'd like to fix (especially the former), but they are not critical to this ticket. Any issues like that can go on another ticket. 
@@ -7926,7 +7994,7 @@ Dave
 archive/issue_comments_088423.json:
 ```json
 {
-    "body": "Replying to [comment:264 drkirkby]:\n> Yes agreed. I'll create a patch and attach it to the ticket.\nThanks, but I already did it.  New spkg (same name): [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)",
+    "body": "Replying to [comment:264 drkirkby]:\n> Yes agreed. I'll create a patch and attach it to the ticket.\n\nThanks, but I already did it.  New spkg (same name): [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)",
     "created_at": "2010-08-17T17:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7937,6 +8005,7 @@ archive/issue_comments_088423.json:
 
 Replying to [comment:264 drkirkby]:
 > Yes agreed. I'll create a patch and attach it to the ticket.
+
 Thanks, but I already did it.  New spkg (same name): [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)
 
 
@@ -7946,7 +8015,7 @@ Thanks, but I already did it.  New spkg (same name): [http://cage.ugent.be/~jdem
 archive/issue_comments_088424.json:
 ```json
 {
-    "body": "Two more comments:\n\n- I can't get this to build on t2.  I get an error message\n\n```\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\nERROR - configure PARI with readline and gmp failed.\n```\n\nI've put the full log here: [http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log](http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log).\n\n- on a Mac OS X 10.6 machine (intel), the spkg included in sage-4.6.prealpha1.tar seems to build fine, although I haven't finished building the rest of Sage or doing doctests.  But if I do `export SAGE_TUNE_pari=yes`, then it doesn't build.  Here's an excerpt from the log:\n\n```\nIn file included from ../src/test/tune.c:21:\n../src/headers/pari.h:59:21: error: mpinl.h: No such file or directory\n../src/test/tune.c: In function 'speed_redc':\n../src/test/tune.c:213: warning: implicit declaration of function 'int_LSW'\n../src/test/tune.c:213: error: invalid type argument of 'unary *'\n../src/test/tune.c: In function 'speed_modii':\n../src/test/tune.c:216: error: invalid type argument of 'unary *'\n../src/test/tune.c: In function 'speed_remiimul':\n../src/test/tune.c:220: error: invalid type argument of 'unary *'\nmake[2]: *** [tune.o] Error 1\n./Configure: line 168: tune: command not found\n```\n\nIf I use the new spkg [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg), then it gets past this error.  It's not done building yet, though...",
+    "body": "Two more comments:\n\n- I can't get this to build on t2.  I get an error message\n\n```\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\nERROR - configure PARI with readline and gmp failed.\n```\nI've put the full log here: [http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log](http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log).\n\n- on a Mac OS X 10.6 machine (intel), the spkg included in sage-4.6.prealpha1.tar seems to build fine, although I haven't finished building the rest of Sage or doing doctests.  But if I do `export SAGE_TUNE_pari=yes`, then it doesn't build.  Here's an excerpt from the log:\n\n```\nIn file included from ../src/test/tune.c:21:\n../src/headers/pari.h:59:21: error: mpinl.h: No such file or directory\n../src/test/tune.c: In function 'speed_redc':\n../src/test/tune.c:213: warning: implicit declaration of function 'int_LSW'\n../src/test/tune.c:213: error: invalid type argument of 'unary *'\n../src/test/tune.c: In function 'speed_modii':\n../src/test/tune.c:216: error: invalid type argument of 'unary *'\n../src/test/tune.c: In function 'speed_remiimul':\n../src/test/tune.c:220: error: invalid type argument of 'unary *'\nmake[2]: *** [tune.o] Error 1\n./Configure: line 168: tune: command not found\n```\nIf I use the new spkg [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg), then it gets past this error.  It's not done building yet, though...",
     "created_at": "2010-08-17T17:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -7965,7 +8034,6 @@ Extracting Osolaris-sparcv9/Makefile
 ./Configure: test: argument expected
 ERROR - configure PARI with readline and gmp failed.
 ```
-
 I've put the full log here: [http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log](http://sage.math.washington.edu/home/palmieri/misc/pari-2.4.3.svn-12577.log).
 
 - on a Mac OS X 10.6 machine (intel), the spkg included in sage-4.6.prealpha1.tar seems to build fine, although I haven't finished building the rest of Sage or doing doctests.  But if I do `export SAGE_TUNE_pari=yes`, then it doesn't build.  Here's an excerpt from the log:
@@ -7983,7 +8051,6 @@ In file included from ../src/test/tune.c:21:
 make[2]: *** [tune.o] Error 1
 ./Configure: line 168: tune: command not found
 ```
-
 If I use the new spkg [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg), then it gets past this error.  It's not done building yet, though...
 
 
@@ -7993,7 +8060,7 @@ If I use the new spkg [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.
 archive/issue_comments_088425.json:
 ```json
 {
-    "body": "By the way, \"hg status\" reports\n\n```\n? patches/files/base2.c\n? patches/files/get_dlcflags\n? patches/files/get_ld\n? patches/files/get_tests\n? patches/files/gphelp.in\n? patches/files/init.c\n? patches/files/mp.c\n? patches/files/paripriv.h\n? patches/files/polarit3.c\n```\n",
+    "body": "By the way, \"hg status\" reports\n\n```\n? patches/files/base2.c\n? patches/files/get_dlcflags\n? patches/files/get_ld\n? patches/files/get_tests\n? patches/files/gphelp.in\n? patches/files/init.c\n? patches/files/mp.c\n? patches/files/paripriv.h\n? patches/files/polarit3.c\n```",
     "created_at": "2010-08-17T17:58:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8018,13 +8085,12 @@ By the way, "hg status" reports
 
 
 
-
 ---
 
 archive/issue_comments_088426.json:
 ```json
 {
-    "body": "Replying to [comment:268 jhpalmieri]:\n> By the way, \"hg status\" reports\n> {{{\n> ? patches/files/base2.c\n> ? patches/files/get_dlcflags\n> ? patches/files/get_ld\n> ? patches/files/get_tests\n> ? patches/files/gphelp.in\n> ? patches/files/init.c\n> ? patches/files/mp.c\n> ? patches/files/paripriv.h\n> ? patches/files/polarit3.c\n> }}}\n\nI'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.",
+    "body": "Replying to [comment:268 jhpalmieri]:\n> By the way, \"hg status\" reports\n> \n> ```\n> ? patches/files/base2.c\n> ? patches/files/get_dlcflags\n> ? patches/files/get_ld\n> ? patches/files/get_tests\n> ? patches/files/gphelp.in\n> ? patches/files/init.c\n> ? patches/files/mp.c\n> ? patches/files/paripriv.h\n> ? patches/files/polarit3.c\n> ```\n\n\nI'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.",
     "created_at": "2010-08-17T18:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8035,7 +8101,8 @@ archive/issue_comments_088426.json:
 
 Replying to [comment:268 jhpalmieri]:
 > By the way, "hg status" reports
-> {{{
+> 
+> ```
 > ? patches/files/base2.c
 > ? patches/files/get_dlcflags
 > ? patches/files/get_ld
@@ -8045,7 +8112,8 @@ Replying to [comment:268 jhpalmieri]:
 > ? patches/files/mp.c
 > ? patches/files/paripriv.h
 > ? patches/files/polarit3.c
-> }}}
+> ```
+
 
 I'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.
 
@@ -8096,7 +8164,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_088429.json:
 ```json
 {
-    "body": "Replying to [comment:269 jdemeyer]:\n> Replying to [comment:268 jhpalmieri]:\n> > By the way, \"hg status\" reports\n\n```\n? patches/files/base2.c\n? patches/files/get_dlcflags\n? patches/files/get_ld\n? patches/files/get_tests\n? patches/files/gphelp.in\n? patches/files/init.c\n? patches/files/mp.c\n? patches/files/paripriv.h\n? patches/files/polarit3.c\n```\n\n> \n> I'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.\n\nIn that case, you'd have to add them to `.hgignore`.",
+    "body": "Replying to [comment:269 jdemeyer]:\n> Replying to [comment:268 jhpalmieri]:\n> > By the way, \"hg status\" reports\n\n{{{\n? patches/files/base2.c\n? patches/files/get_dlcflags\n? patches/files/get_ld\n? patches/files/get_tests\n? patches/files/gphelp.in\n? patches/files/init.c\n? patches/files/mp.c\n? patches/files/paripriv.h\n? patches/files/polarit3.c\n}}}\n> \n> I'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.\n\n\nIn that case, you'd have to add them to `.hgignore`.",
     "created_at": "2010-08-17T18:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8109,7 +8177,7 @@ Replying to [comment:269 jdemeyer]:
 > Replying to [comment:268 jhpalmieri]:
 > > By the way, "hg status" reports
 
-```
+{{{
 ? patches/files/base2.c
 ? patches/files/get_dlcflags
 ? patches/files/get_ld
@@ -8119,10 +8187,10 @@ Replying to [comment:269 jdemeyer]:
 ? patches/files/mp.c
 ? patches/files/paripriv.h
 ? patches/files/polarit3.c
-```
-
+}}}
 > 
 > I'm not sure what the question mark means, but these files are not supposed to be under revision control.  They are generated by my `spkg-make` script from the corresponding patches/*.patch files.
+
 
 In that case, you'd have to add them to `.hgignore`.
 
@@ -8156,7 +8224,7 @@ On sage.math at least, if I don't tell it to tune, then everything builds and al
 archive/issue_comments_088431.json:
 ```json
 {
-    "body": "Replying to [comment:272 jhpalmieri]:\n> I'm having problems with tuning.  If I do `export SAGE_TUNE_pari=yes`, then on both sage.math and on my Intel Mac OS X 10.6, the build fails.  Logs are here:\n> \n>  - http://sage.math.washington.edu/home/palmieri/misc/tuning.sage-math.pari-2.4.3.svn-12577.log\n>  - http://sage.math.washington.edu/home/palmieri/misc/tuning.mac.pari-2.4.3.svn-12577.p2.log\n> \n> On sage.math at least, if I don't tell it to tune, then everything builds and all tests pass.  On the mac, everything builds, but it hasn't finished testing.\n\nReinstalling the package with `SAGE_TUNE_pari=yes` hangs for me on Fedora 13 x86 (Pentium 4 Prescott); I doubt it will take more than an hour to tune a single function:\n\n```\n...\nSetting INVNEWTON_LIMIT... (default 803)\n              algorithm-A  algorithm-B   ratio  possible\n               (seconds)    (seconds)    diff    thresh\nsize =  66     0.00001332   0.00001739   0.2340    66\nsize =  67     0.00001441   0.00001736   0.1700    67\nsize =  69     0.00001627   0.00001851   0.1208    69\nsize =  71     0.00001636   0.00001891   0.1345    71\nsize =  73     0.00001632   0.00002036   0.1983    73\nsize =  75     0.00001836   0.00002218   0.1721    75\nsize =  77     0.00001818   0.00002236   0.1869    77\nsize =  79     0.00002042   0.00002363   0.1358    79\nsize =  81     0.00002082   0.00002545   0.1821    81\nsize =  83     0.00002345   0.00002527   0.0718    83\nsize =  85     0.00002345   0.00002586   0.0931    85\nsize =  87     0.00002234   0.00002745   0.1863    87\nsize =  89     0.00002545   0.00002897   0.1217    89\nsize =  91     0.00002672   0.00002891   0.0756    91\nsize =  93     0.00002709   0.00003054   0.1132    93\nsize =  95     0.00002799   0.00002972   0.0582    95\nsize =  97     0.00002927   0.00003105   0.0575    97\n\n```\n",
+    "body": "Replying to [comment:272 jhpalmieri]:\n> I'm having problems with tuning.  If I do `export SAGE_TUNE_pari=yes`, then on both sage.math and on my Intel Mac OS X 10.6, the build fails.  Logs are here:\n> \n> - http://sage.math.washington.edu/home/palmieri/misc/tuning.sage-math.pari-2.4.3.svn-12577.log\n> - http://sage.math.washington.edu/home/palmieri/misc/tuning.mac.pari-2.4.3.svn-12577.p2.log\n> \n> On sage.math at least, if I don't tell it to tune, then everything builds and all tests pass.  On the mac, everything builds, but it hasn't finished testing.\n\n\nReinstalling the package with `SAGE_TUNE_pari=yes` hangs for me on Fedora 13 x86 (Pentium 4 Prescott); I doubt it will take more than an hour to tune a single function:\n\n```\n...\nSetting INVNEWTON_LIMIT... (default 803)\n              algorithm-A  algorithm-B   ratio  possible\n               (seconds)    (seconds)    diff    thresh\nsize =  66     0.00001332   0.00001739   0.2340    66\nsize =  67     0.00001441   0.00001736   0.1700    67\nsize =  69     0.00001627   0.00001851   0.1208    69\nsize =  71     0.00001636   0.00001891   0.1345    71\nsize =  73     0.00001632   0.00002036   0.1983    73\nsize =  75     0.00001836   0.00002218   0.1721    75\nsize =  77     0.00001818   0.00002236   0.1869    77\nsize =  79     0.00002042   0.00002363   0.1358    79\nsize =  81     0.00002082   0.00002545   0.1821    81\nsize =  83     0.00002345   0.00002527   0.0718    83\nsize =  85     0.00002345   0.00002586   0.0931    85\nsize =  87     0.00002234   0.00002745   0.1863    87\nsize =  89     0.00002545   0.00002897   0.1217    89\nsize =  91     0.00002672   0.00002891   0.0756    91\nsize =  93     0.00002709   0.00003054   0.1132    93\nsize =  95     0.00002799   0.00002972   0.0582    95\nsize =  97     0.00002927   0.00003105   0.0575    97\n\n```",
     "created_at": "2010-08-17T18:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8168,10 +8236,11 @@ archive/issue_comments_088431.json:
 Replying to [comment:272 jhpalmieri]:
 > I'm having problems with tuning.  If I do `export SAGE_TUNE_pari=yes`, then on both sage.math and on my Intel Mac OS X 10.6, the build fails.  Logs are here:
 > 
->  - http://sage.math.washington.edu/home/palmieri/misc/tuning.sage-math.pari-2.4.3.svn-12577.log
->  - http://sage.math.washington.edu/home/palmieri/misc/tuning.mac.pari-2.4.3.svn-12577.p2.log
+> - http://sage.math.washington.edu/home/palmieri/misc/tuning.sage-math.pari-2.4.3.svn-12577.log
+> - http://sage.math.washington.edu/home/palmieri/misc/tuning.mac.pari-2.4.3.svn-12577.p2.log
 > 
 > On sage.math at least, if I don't tell it to tune, then everything builds and all tests pass.  On the mac, everything builds, but it hasn't finished testing.
+
 
 Reinstalling the package with `SAGE_TUNE_pari=yes` hangs for me on Fedora 13 x86 (Pentium 4 Prescott); I doubt it will take more than an hour to tune a single function:
 
@@ -8199,7 +8268,6 @@ size =  95     0.00002799   0.00002972   0.0582    95
 size =  97     0.00002927   0.00003105   0.0575    97
 
 ```
-
 
 
 
@@ -8246,7 +8314,7 @@ Dave
 archive/issue_comments_088434.json:
 ```json
 {
-    "body": "Replying to [comment:275 drkirkby]:\n> I suggest if the tuning is not reliable, we do not prevent it being used, but issue a warning not to use it. Then we can get people to test the tuning, and report where it works and where it does not. It certainly built OK on OpenSolaris. \n\nHmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\nOne the Fedora machine, `tune -t` is meanwhile at 3h 12m CPU time (without further output), so I'll assume it will run forever and terminate it.",
+    "body": "Replying to [comment:275 drkirkby]:\n> I suggest if the tuning is not reliable, we do not prevent it being used, but issue a warning not to use it. Then we can get people to test the tuning, and report where it works and where it does not. It certainly built OK on OpenSolaris. \n\n\nHmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\nOne the Fedora machine, `tune -t` is meanwhile at 3h 12m CPU time (without further output), so I'll assume it will run forever and terminate it.",
     "created_at": "2010-08-17T20:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8257,6 +8325,7 @@ archive/issue_comments_088434.json:
 
 Replying to [comment:275 drkirkby]:
 > I suggest if the tuning is not reliable, we do not prevent it being used, but issue a warning not to use it. Then we can get people to test the tuning, and report where it works and where it does not. It certainly built OK on OpenSolaris. 
+
 
 Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...
 
@@ -8269,7 +8338,7 @@ One the Fedora machine, `tune -t` is meanwhile at 3h 12m CPU time (without furth
 archive/issue_comments_088435.json:
 ```json
 {
-    "body": "Replying to [comment:267 jhpalmieri]:\n> Two more comments:\n> \n>  - I can't get this to build on t2.  I get an error message\n> {{{\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> ERROR - configure PARI with readline and gmp failed.\n> }}}\n\nPlease try compiling PARI by itself to check whether this is an upstream problem:\n\n```\n$ tar xjf pari-2.4.3.svn-12577.p2.spkg\n$ cd pari-2.4.3.svn-12577.p2/src\n$ ./Configure\n$ make gp\n```\n",
+    "body": "Replying to [comment:267 jhpalmieri]:\n> Two more comments:\n> \n> - I can't get this to build on t2.  I get an error message\n> \n> ```\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> ERROR - configure PARI with readline and gmp failed.\n> ```\n\n\nPlease try compiling PARI by itself to check whether this is an upstream problem:\n\n```\n$ tar xjf pari-2.4.3.svn-12577.p2.spkg\n$ cd pari-2.4.3.svn-12577.p2/src\n$ ./Configure\n$ make gp\n```",
     "created_at": "2010-08-17T20:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8281,13 +8350,15 @@ archive/issue_comments_088435.json:
 Replying to [comment:267 jhpalmieri]:
 > Two more comments:
 > 
->  - I can't get this to build on t2.  I get an error message
-> {{{
+> - I can't get this to build on t2.  I get an error message
+> 
+> ```
 > Extracting examples/Makefile.solaris-sparcv9
 > Extracting Osolaris-sparcv9/Makefile
 > ./Configure: test: argument expected
 > ERROR - configure PARI with readline and gmp failed.
-> }}}
+> ```
+
 
 Please try compiling PARI by itself to check whether this is an upstream problem:
 
@@ -8300,13 +8371,12 @@ $ make gp
 
 
 
-
 ---
 
 archive/issue_comments_088436.json:
 ```json
 {
-    "body": "Replying to [comment:277 jdemeyer]:\n\n> Please try compiling PARI by itself to check whether this is an upstream problem:\n\nI get the same error after typing `./Configure`:\n\n```\n==========================================================================\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\n```\n\nUnfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.",
+    "body": "Replying to [comment:277 jdemeyer]:\n\n> Please try compiling PARI by itself to check whether this is an upstream problem:\n\n\nI get the same error after typing `./Configure`:\n\n```\n==========================================================================\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\n```\nUnfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.",
     "created_at": "2010-08-17T20:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8319,6 +8389,7 @@ Replying to [comment:277 jdemeyer]:
 
 > Please try compiling PARI by itself to check whether this is an upstream problem:
 
+
 I get the same error after typing `./Configure`:
 
 ```
@@ -8327,7 +8398,6 @@ Extracting examples/Makefile.solaris-sparcv9
 Extracting Osolaris-sparcv9/Makefile
 ./Configure: test: argument expected
 ```
-
 Unfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.
 
 
@@ -8337,7 +8407,7 @@ Unfortunately skynet is down, so I don't have access to any other Solaris machin
 archive/issue_comments_088437.json:
 ```json
 {
-    "body": "Replying to [comment:278 jhpalmieri]:\n> Replying to [comment:277 jdemeyer]:\n> \n> > Please try compiling PARI by itself to check whether this is an upstream problem:\n> \n> I get the same error after typing `./Configure`:\n> {{{\n> ==========================================================================\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> }}}\n> Unfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.\n\n\nI've powered up my Sun Blade 1000. I will report back later once I've copied the necessary files to it and started a build. \n\nDave",
+    "body": "Replying to [comment:278 jhpalmieri]:\n> Replying to [comment:277 jdemeyer]:\n> \n> > Please try compiling PARI by itself to check whether this is an upstream problem:\n\n> \n> I get the same error after typing `./Configure`:\n> \n> ```\n> ==========================================================================\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> ```\n> Unfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.\n\n\n\nI've powered up my Sun Blade 1000. I will report back later once I've copied the necessary files to it and started a build. \n\nDave",
     "created_at": "2010-08-17T20:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8350,15 +8420,18 @@ Replying to [comment:278 jhpalmieri]:
 > Replying to [comment:277 jdemeyer]:
 > 
 > > Please try compiling PARI by itself to check whether this is an upstream problem:
+
 > 
 > I get the same error after typing `./Configure`:
-> {{{
+> 
+> ```
 > ==========================================================================
 > Extracting examples/Makefile.solaris-sparcv9
 > Extracting Osolaris-sparcv9/Makefile
 > ./Configure: test: argument expected
-> }}}
+> ```
 > Unfortunately skynet is down, so I don't have access to any other Solaris machines right now to test on.
+
 
 
 I've powered up my Sun Blade 1000. I will report back later once I've copied the necessary files to it and started a build. 
@@ -8372,7 +8445,7 @@ Dave
 archive/issue_comments_088438.json:
 ```json
 {
-    "body": "I'm attaching a patch which reports:\n\n\n```\nPari will be tuned for your system since you set SAGE_TUNE_pari=\"yes\". This can take a long time.\nWARNING: Tuning Pari is VERY unreliable. You may find your build\nof Pari fails, or Pari does not work properly once built.\n```\n\n\nor \n\n\n```\nTo minimize Sage build time and to ensure the best relieability,\nPari will not be tuned for your system. Experience shows tuning\nis unreliable - see\nhttp://trac.sagemath.org/sage_trac/ticket/9343\nIf you wish to test the tuning code, set the environment\nvariable SAGE_TUNE_pari=yes by typing the following\nbefore building Sage (or at least before building Pari):\nSAGE_TUNE_pari=yes\nexport SAGE_TUNE_pari\n```\n\n\ndepending on whether `SAGE_TUNE_pari` i set to \"yes\" or not. \n\nDave",
+    "body": "I'm attaching a patch which reports:\n\n```\nPari will be tuned for your system since you set SAGE_TUNE_pari=\"yes\". This can take a long time.\nWARNING: Tuning Pari is VERY unreliable. You may find your build\nof Pari fails, or Pari does not work properly once built.\n```\n\nor \n\n```\nTo minimize Sage build time and to ensure the best relieability,\nPari will not be tuned for your system. Experience shows tuning\nis unreliable - see\nhttp://trac.sagemath.org/sage_trac/ticket/9343\nIf you wish to test the tuning code, set the environment\nvariable SAGE_TUNE_pari=yes by typing the following\nbefore building Sage (or at least before building Pari):\nSAGE_TUNE_pari=yes\nexport SAGE_TUNE_pari\n```\n\ndepending on whether `SAGE_TUNE_pari` i set to \"yes\" or not. \n\nDave",
     "created_at": "2010-08-17T20:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8383,16 +8456,13 @@ archive/issue_comments_088438.json:
 
 I'm attaching a patch which reports:
 
-
 ```
 Pari will be tuned for your system since you set SAGE_TUNE_pari="yes". This can take a long time.
 WARNING: Tuning Pari is VERY unreliable. You may find your build
 of Pari fails, or Pari does not work properly once built.
 ```
 
-
 or 
-
 
 ```
 To minimize Sage build time and to ensure the best relieability,
@@ -8405,7 +8475,6 @@ before building Sage (or at least before building Pari):
 SAGE_TUNE_pari=yes
 export SAGE_TUNE_pari
 ```
-
 
 depending on whether `SAGE_TUNE_pari` i set to "yes" or not. 
 
@@ -8438,7 +8507,7 @@ Print information about how to use SAGE_TUNE_pari and the risks it has.
 archive/issue_comments_088440.json:
 ```json
 {
-    "body": "I can confirm what John found on 't2.math' - this package is now broken on Solaris 10 SPARC in at least 32-it mode. \n\nThis is on my own personal machine, a Sun Blade 1000 with a pair of 900 MHz UltraSPARC III+ CPUs. It runs the very first release of Solaris 10 (March 2005), whereas t2.math runs a quite recent version. \n\nI think we are seeing the problems of working with unstable snapshots. An updated Pari was working on 't2' a few weeks ago - I posted the list of test failures above. Since then, the snapshot has been updated, which no doubt fixes one problem, but creates another. Last I noticed, the upstream snapshot was being updated three times per day on average. Clearly the snapshots are not well tested, yet we are using them, and doing the tests ourselves.\n\nI suggest that we report this, and try to get a fix. But rather than download the latest snapshot, we just apply the fix we actually need. Otherwise we have to go thought a lengthly test cycle again. I'm sure it will be tempting to update to the latest snapshot to get even more bugs fixed, but how many will be added? \n\nWorth reading is a book by Fred Brooks called The Mythical Man-Month. \n\nOf particular note here is is point that [that in a suitably complex system there is a certain irreducible number of errors. Any attempt to fix observed errors tends to result in the introduction of other errors.](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_tendency_towards_irreducible_number_of_errors) \n\n\n```\n32 drkirkby@redstart:[~/src] $ uname -a\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n32 drkirkby@redstart:[~/src] $ cat /etc/release\n                         Solaris 10 3/05 s10_74L2a SPARC\n           Copyright 2005 Sun Microsystems, Inc.  All Rights Reserved.\n                        Use is subject to license terms.\n                            Assembled 22 January 2005\n32 drkirkby@redstart:[~/src] $ ./Configure\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) [ development svn-12577 ]\nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/ccs/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/ccs/bin/ranlib\n...perl is /usr/bin/perl\nLooking for the compilers ...\n...cc is /usr/ucb/cc\n...gcc is /usr/local/gcc-4.5.0/bin/gcc\nGNU compiler version 4.5.0 (GCC gmp-5.0.1 mpfr-3.0.0 mpc-0.8.2)\nGiven the previous choices, sizeof(long) is 4 chars.\nThe internal word representation of a double is l[0], l[1].\n==========================================================================\nBuilding for: UltraSparc running solaris (MicroSparc/GMP kernel) 32-bit version\n==========================================================================\nC compiler is          /usr/local/gcc-4.5.0/bin/gcc -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -fPIC\nExecutable linker is   /usr/local/gcc-4.5.0/bin/gcc  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    \nDynamic Lib linker is  /usr/local/gcc-4.5.0/bin/gcc  -shared -mimpure-text $(CFLAGS) $(DLCFLAGS) -Wl,-G,-h,$(LIBPARI_SONAME) \nLooking in C lib for some symbols...\n...Found exp2.\n...Found log2.\n...Found strftime.\n...Found getrusage.\n...Found sigaction.\n...Found TIOCGWINSZ.\n...Found getrlimit.\n...Found stat.\n...Found vsnprintf.\n...Found waitpid.\n...Found setsid.\n...Found getenv.\n...Found isatty.\n...Found alarm.\n...Found dlopen.\nChecking for optional libraries and headers...\n### Building without GNU MP support\n...Found libX11 in /usr/openwin/lib\n...Found X11 header files in /usr/openwin/include/X11\n...Extra Libraries are -lsocket -lnsl\nHi-Res Graphics: X11\n### Building without GNU readline support\nInstallation prefix ? [/usr/local]\n...for architecture-independent files (share-prefix) ? [/usr/local/share]\nInstallation directories for:\n...executables (gp, gphelp) ? [/usr/local/bin]\n...libraries (libpari) ? [/usr/local/lib]\n...include files ? [/usr/local/include]\n...manual pages ? [/usr/local/share/man/man1]\n...other system-dependent data ? [/usr/local/lib/pari]\n...other system-independent data ? [/usr/local/share/pari]\nDefault is dynamic executable and shared library\n==========================================================================\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\n32 drkirkby@redstart:[~/src] $ \n```\n",
+    "body": "I can confirm what John found on 't2.math' - this package is now broken on Solaris 10 SPARC in at least 32-it mode. \n\nThis is on my own personal machine, a Sun Blade 1000 with a pair of 900 MHz UltraSPARC III+ CPUs. It runs the very first release of Solaris 10 (March 2005), whereas t2.math runs a quite recent version. \n\nI think we are seeing the problems of working with unstable snapshots. An updated Pari was working on 't2' a few weeks ago - I posted the list of test failures above. Since then, the snapshot has been updated, which no doubt fixes one problem, but creates another. Last I noticed, the upstream snapshot was being updated three times per day on average. Clearly the snapshots are not well tested, yet we are using them, and doing the tests ourselves.\n\nI suggest that we report this, and try to get a fix. But rather than download the latest snapshot, we just apply the fix we actually need. Otherwise we have to go thought a lengthly test cycle again. I'm sure it will be tempting to update to the latest snapshot to get even more bugs fixed, but how many will be added? \n\nWorth reading is a book by Fred Brooks called The Mythical Man-Month. \n\nOf particular note here is is point that [that in a suitably complex system there is a certain irreducible number of errors. Any attempt to fix observed errors tends to result in the introduction of other errors.](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_tendency_towards_irreducible_number_of_errors) \n\n```\n32 drkirkby@redstart:[~/src] $ uname -a\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n32 drkirkby@redstart:[~/src] $ cat /etc/release\n                         Solaris 10 3/05 s10_74L2a SPARC\n           Copyright 2005 Sun Microsystems, Inc.  All Rights Reserved.\n                        Use is subject to license terms.\n                            Assembled 22 January 2005\n32 drkirkby@redstart:[~/src] $ ./Configure\nConfiguring pari-2.4.3 (DEVELOPMENT VERSION) [ development svn-12577 ]\nChecking echo to see how to suppress newlines...\n...using \\c\nLooking for some tools first ...\n...ld is /usr/ccs/bin/ld\n...zcat is /usr/bin/zcat\n...gzip is /usr/bin/gzip\n...ranlib is /usr/ccs/bin/ranlib\n...perl is /usr/bin/perl\nLooking for the compilers ...\n...cc is /usr/ucb/cc\n...gcc is /usr/local/gcc-4.5.0/bin/gcc\nGNU compiler version 4.5.0 (GCC gmp-5.0.1 mpfr-3.0.0 mpc-0.8.2)\nGiven the previous choices, sizeof(long) is 4 chars.\nThe internal word representation of a double is l[0], l[1].\n==========================================================================\nBuilding for: UltraSparc running solaris (MicroSparc/GMP kernel) 32-bit version\n==========================================================================\nC compiler is          /usr/local/gcc-4.5.0/bin/gcc -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    -fPIC\nExecutable linker is   /usr/local/gcc-4.5.0/bin/gcc  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer    \nDynamic Lib linker is  /usr/local/gcc-4.5.0/bin/gcc  -shared -mimpure-text $(CFLAGS) $(DLCFLAGS) -Wl,-G,-h,$(LIBPARI_SONAME) \nLooking in C lib for some symbols...\n...Found exp2.\n...Found log2.\n...Found strftime.\n...Found getrusage.\n...Found sigaction.\n...Found TIOCGWINSZ.\n...Found getrlimit.\n...Found stat.\n...Found vsnprintf.\n...Found waitpid.\n...Found setsid.\n...Found getenv.\n...Found isatty.\n...Found alarm.\n...Found dlopen.\nChecking for optional libraries and headers...\n### Building without GNU MP support\n...Found libX11 in /usr/openwin/lib\n...Found X11 header files in /usr/openwin/include/X11\n...Extra Libraries are -lsocket -lnsl\nHi-Res Graphics: X11\n### Building without GNU readline support\nInstallation prefix ? [/usr/local]\n...for architecture-independent files (share-prefix) ? [/usr/local/share]\nInstallation directories for:\n...executables (gp, gphelp) ? [/usr/local/bin]\n...libraries (libpari) ? [/usr/local/lib]\n...include files ? [/usr/local/include]\n...manual pages ? [/usr/local/share/man/man1]\n...other system-dependent data ? [/usr/local/lib/pari]\n...other system-independent data ? [/usr/local/share/pari]\nDefault is dynamic executable and shared library\n==========================================================================\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\n32 drkirkby@redstart:[~/src] $ \n```",
     "created_at": "2010-08-17T21:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8458,7 +8527,6 @@ I suggest that we report this, and try to get a fix. But rather than download th
 Worth reading is a book by Fred Brooks called The Mythical Man-Month. 
 
 Of particular note here is is point that [that in a suitably complex system there is a certain irreducible number of errors. Any attempt to fix observed errors tends to result in the introduction of other errors.](http://en.wikipedia.org/wiki/The_Mythical_Man-Month#The_tendency_towards_irreducible_number_of_errors) 
-
 
 ```
 32 drkirkby@redstart:[~/src] $ uname -a
@@ -8532,13 +8600,12 @@ Extracting Osolaris-sparcv9/Makefile
 
 
 
-
 ---
 
 archive/issue_comments_088441.json:
 ```json
 {
-    "body": "Replying to [comment:276 leif]:\n> Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\nSame here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n\nSo tuning is **completely broken**.",
+    "body": "Replying to [comment:276 leif]:\n> Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\n\nSame here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n\nSo tuning is **completely broken**.",
     "created_at": "2010-08-17T21:29:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8549,6 +8616,7 @@ archive/issue_comments_088441.json:
 
 Replying to [comment:276 leif]:
 > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...
+
 
 Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.
 
@@ -8561,7 +8629,7 @@ So tuning is **completely broken**.
 archive/issue_comments_088442.json:
 ```json
 {
-    "body": "Replying to [comment:282 jdemeyer]:\n> Replying to [comment:276 leif]:\n> > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n> \n> Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n> \n> So tuning is **completely broken**.\n\nIt works on OpenSolaris - or at least it did do when I tested it before. \n\nDave",
+    "body": "Replying to [comment:282 jdemeyer]:\n> Replying to [comment:276 leif]:\n> > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\n> \n> Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n> \n> So tuning is **completely broken**.\n\n\nIt works on OpenSolaris - or at least it did do when I tested it before. \n\nDave",
     "created_at": "2010-08-17T21:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8573,10 +8641,12 @@ archive/issue_comments_088442.json:
 Replying to [comment:282 jdemeyer]:
 > Replying to [comment:276 leif]:
 > > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...
+
 > 
 > Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.
 > 
 > So tuning is **completely broken**.
+
 
 It works on OpenSolaris - or at least it did do when I tested it before. 
 
@@ -8589,7 +8659,7 @@ Dave
 archive/issue_comments_088443.json:
 ```json
 {
-    "body": "Replying to [comment:278 jhpalmieri]:\n> I get the same error after typing `./Configure`:\n> {{{\n> ==========================================================================\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> }}}\n\nPlease try\n\n```\n/bin/sh -c \"test -d\"\n```\n\nin a shell and see what happens.",
+    "body": "Replying to [comment:278 jhpalmieri]:\n> I get the same error after typing `./Configure`:\n> \n> ```\n> ==========================================================================\n> Extracting examples/Makefile.solaris-sparcv9\n> Extracting Osolaris-sparcv9/Makefile\n> ./Configure: test: argument expected\n> ```\n\n\nPlease try\n\n```\n/bin/sh -c \"test -d\"\n```\nin a shell and see what happens.",
     "created_at": "2010-08-17T21:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8600,19 +8670,20 @@ archive/issue_comments_088443.json:
 
 Replying to [comment:278 jhpalmieri]:
 > I get the same error after typing `./Configure`:
-> {{{
+> 
+> ```
 > ==========================================================================
 > Extracting examples/Makefile.solaris-sparcv9
 > Extracting Osolaris-sparcv9/Makefile
 > ./Configure: test: argument expected
-> }}}
+> ```
+
 
 Please try
 
 ```
 /bin/sh -c "test -d"
 ```
-
 in a shell and see what happens.
 
 
@@ -8622,7 +8693,7 @@ in a shell and see what happens.
 archive/issue_comments_088444.json:
 ```json
 {
-    "body": "Replying to [comment:284 jdemeyer]:\n> Please try\n\n```\n/bin/sh -c \"test -d\"\n```\n\n> in a shell and see what happens.\n\n\n```\n$ /bin/sh -c \"test -d\"\n/bin/sh: test: argument expected\n```\n",
+    "body": "Replying to [comment:284 jdemeyer]:\n> Please try\n\n{{{\n/bin/sh -c \"test -d\"\n}}}\n> in a shell and see what happens.\n\n\n```\n$ /bin/sh -c \"test -d\"\n/bin/sh: test: argument expected\n```",
     "created_at": "2010-08-17T21:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8634,10 +8705,9 @@ archive/issue_comments_088444.json:
 Replying to [comment:284 jdemeyer]:
 > Please try
 
-```
+{{{
 /bin/sh -c "test -d"
-```
-
+}}}
 > in a shell and see what happens.
 
 
@@ -8645,7 +8715,6 @@ Replying to [comment:284 jdemeyer]:
 $ /bin/sh -c "test -d"
 /bin/sh: test: argument expected
 ```
-
 
 
 
@@ -8672,7 +8741,7 @@ Maybe the solaris problem is due to `config/Makefile.SH`, but it's hard to debug
 archive/issue_comments_088446.json:
 ```json
 {
-    "body": "Replying to [comment:286 jdemeyer]:\n> Maybe the solaris problem is due to `config/Makefile.SH`, but it's hard to debug without access to a Solaris box.  There are several unquoted `test` statements in that file, probably one of them is the culprit.  Also, that file has changed recently.\n\nWilliam (Stein) should be able to make an account for you on the Sage cluster, which includes the Solaris 10 SPARC machine t2.math.washington.edu.  Just send him an email.",
+    "body": "Replying to [comment:286 jdemeyer]:\n> Maybe the solaris problem is due to `config/Makefile.SH`, but it's hard to debug without access to a Solaris box.  There are several unquoted `test` statements in that file, probably one of them is the culprit.  Also, that file has changed recently.\n\n\nWilliam (Stein) should be able to make an account for you on the Sage cluster, which includes the Solaris 10 SPARC machine t2.math.washington.edu.  Just send him an email.",
     "created_at": "2010-08-17T22:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8684,6 +8753,7 @@ archive/issue_comments_088446.json:
 Replying to [comment:286 jdemeyer]:
 > Maybe the solaris problem is due to `config/Makefile.SH`, but it's hard to debug without access to a Solaris box.  There are several unquoted `test` statements in that file, probably one of them is the culprit.  Also, that file has changed recently.
 
+
 William (Stein) should be able to make an account for you on the Sage cluster, which includes the Solaris 10 SPARC machine t2.math.washington.edu.  Just send him an email.
 
 
@@ -8693,7 +8763,7 @@ William (Stein) should be able to make an account for you on the Sage cluster, w
 archive/issue_comments_088447.json:
 ```json
 {
-    "body": "Replying to [comment:283 drkirkby]:\n> Replying to [comment:282 jdemeyer]:\n> > Replying to [comment:276 leif]:\n> > > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n> > \n> > Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n> > \n> > So tuning is **completely broken**.\n> \n> It works on OpenSolaris - or at least it did do when I tested it before. \n> \n> Dave \n\nIt's now busted on OpenSolaris too!",
+    "body": "Replying to [comment:283 drkirkby]:\n> Replying to [comment:282 jdemeyer]:\n> > Replying to [comment:276 leif]:\n> > > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...\n\n> > \n> > Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.\n> > \n> > So tuning is **completely broken**.\n\n> \n> It works on OpenSolaris - or at least it did do when I tested it before. \n> \n> Dave \n\n\nIt's now busted on OpenSolaris too!",
     "created_at": "2010-08-17T22:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8706,14 +8776,17 @@ Replying to [comment:283 drkirkby]:
 > Replying to [comment:282 jdemeyer]:
 > > Replying to [comment:276 leif]:
 > > > Hmmm, I reproducably get (PARI-catched) segfaults (everytime at the same point) on Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0)...
+
 > > 
 > > Same here, Gentoo Linux, x86_64 Intel Core2, 64bit, gcc 4.6.0.
 > > 
 > > So tuning is **completely broken**.
+
 > 
 > It works on OpenSolaris - or at least it did do when I tested it before. 
 > 
 > Dave 
+
 
 It's now busted on OpenSolaris too!
 
@@ -8783,7 +8856,7 @@ Changing priority from major to blocker.
 archive/issue_comments_088451.json:
 ```json
 {
-    "body": "Replying to [comment:289 leif]:\n> To report something *positive*, I've successfully - **without** PARI tuning - built and tested (`ptestlong`) the prealpha1 on:\n* Fedora 13 x86 (P4 Prescott, gcc 4.4.4, native code with `O2`, parallel build with 6 jobs)\n* Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code with `O3`, parallel build with 32 jobs)\n* Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0, native code with `O3`, parallel build with 16 jobs)\n\nAlso:\n* Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3, native code without opt., parallel build with 6 jobs)\n\n> Btw, FLTK-devel was installed (and almost all X11 developer packages); PARI correctly did **not** attempt to build with this (since we configure with `--graphic=none`).\n\nI think I've found the culprit of #9722 (PARI attempting to use FLTK for no reason):\n**Lots** of \"local\" variables used in the PARI scripts aren't reset/initialized.\n\nTry, e.g.:\n\n```sh\n$ export with_fltk=yes\n$ ./Configure --graphic=none\n```\n\nin the PARI source directory, or\n\n```sh\n$ export with_fltk=yes\n$ unset PARI_EXTRA_OPTS\n$ ./sage -f pari-2.3.5.p2 # or the appropriate PARI version, e.g. 2.4.3.svn-12577.p2\n```\n\nin `$SAGE_ROOT`.",
+    "body": "Replying to [comment:289 leif]:\n> To report something *positive*, I've successfully - **without** PARI tuning - built and tested (`ptestlong`) the prealpha1 on:\n* Fedora 13 x86 (P4 Prescott, gcc 4.4.4, native code with `O2`, parallel build with 6 jobs)\n* Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3, native code with `O3`, parallel build with 32 jobs)\n* Ubuntu 9.04 x86_64 (Core2, gcc 4.5.0, native code with `O3`, parallel build with 16 jobs)\n\nAlso:\n* Ubuntu 9.04 x86 (P4 Prescott, gcc 4.3.3, native code without opt., parallel build with 6 jobs)\n\n> Btw, FLTK-devel was installed (and almost all X11 developer packages); PARI correctly did **not** attempt to build with this (since we configure with `--graphic=none`).\n\n\nI think I've found the culprit of #9722 (PARI attempting to use FLTK for no reason):\n**Lots** of \"local\" variables used in the PARI scripts aren't reset/initialized.\n\nTry, e.g.:\n\n```sh\n$ export with_fltk=yes\n$ ./Configure --graphic=none\n```\nin the PARI source directory, or\n\n```sh\n$ export with_fltk=yes\n$ unset PARI_EXTRA_OPTS\n$ ./sage -f pari-2.3.5.p2 # or the appropriate PARI version, e.g. 2.4.3.svn-12577.p2\n```\nin `$SAGE_ROOT`.",
     "created_at": "2010-08-19T11:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8803,6 +8876,7 @@ Also:
 
 > Btw, FLTK-devel was installed (and almost all X11 developer packages); PARI correctly did **not** attempt to build with this (since we configure with `--graphic=none`).
 
+
 I think I've found the culprit of #9722 (PARI attempting to use FLTK for no reason):
 **Lots** of "local" variables used in the PARI scripts aren't reset/initialized.
 
@@ -8812,7 +8886,6 @@ Try, e.g.:
 $ export with_fltk=yes
 $ ./Configure --graphic=none
 ```
-
 in the PARI source directory, or
 
 ```sh
@@ -8820,7 +8893,6 @@ $ export with_fltk=yes
 $ unset PARI_EXTRA_OPTS
 $ ./sage -f pari-2.3.5.p2 # or the appropriate PARI version, e.g. 2.4.3.svn-12577.p2
 ```
-
 in `$SAGE_ROOT`.
 
 
@@ -8848,7 +8920,7 @@ archive/issue_comments_088452.json:
 archive/issue_comments_088453.json:
 ```json
 {
-    "body": "To the people who cannot compile PARI/GP because of #9722:\n\nPlease check whether the following works:\n* Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)\nIn a shell, type:\n\n```\ntar xjf pari-2.4.3.svn-12577.p2.spkg\ncd pari-2.4.3.svn-12577.p2/src\n./Configure --graphic=none\nmake gp\n```\n\n\nOn my system (Gentoo Linux), this correctly disables graphics.",
+    "body": "To the people who cannot compile PARI/GP because of #9722:\n\nPlease check whether the following works:\n* Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)\nIn a shell, type:\n\n```\ntar xjf pari-2.4.3.svn-12577.p2.spkg\ncd pari-2.4.3.svn-12577.p2/src\n./Configure --graphic=none\nmake gp\n```\n\nOn my system (Gentoo Linux), this correctly disables graphics.",
     "created_at": "2010-08-21T11:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8869,7 +8941,6 @@ cd pari-2.4.3.svn-12577.p2/src
 ./Configure --graphic=none
 make gp
 ```
-
 
 On my system (Gentoo Linux), this correctly disables graphics.
 
@@ -8926,7 +8997,7 @@ Please excuse if I'm wrong here...
 archive/issue_comments_088456.json:
 ```json
 {
-    "body": "Replying to [comment:296 leif]:\n> Jeroen, the last changes to p3 (`SPKG.txt`, `patches/README.txt`) aren't yet committed.\nDone, spkg changed with same name.",
+    "body": "Replying to [comment:296 leif]:\n> Jeroen, the last changes to p3 (`SPKG.txt`, `patches/README.txt`) aren't yet committed.\n\nDone, spkg changed with same name.",
     "created_at": "2010-08-21T15:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8937,6 +9008,7 @@ archive/issue_comments_088456.json:
 
 Replying to [comment:296 leif]:
 > Jeroen, the last changes to p3 (`SPKG.txt`, `patches/README.txt`) aren't yet committed.
+
 Done, spkg changed with same name.
 
 
@@ -8946,7 +9018,7 @@ Done, spkg changed with same name.
 archive/issue_comments_088457.json:
 ```json
 {
-    "body": "Replying to [comment:297 leif]:\n> (In case you prepare a new one, I think it should be prealpha2 to avoid confusion with the previous one.)\n\nI will post a prealpha2 later today which will also include #9400.",
+    "body": "Replying to [comment:297 leif]:\n> (In case you prepare a new one, I think it should be prealpha2 to avoid confusion with the previous one.)\n\n\nI will post a prealpha2 later today which will also include #9400.",
     "created_at": "2010-08-21T15:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8957,6 +9029,7 @@ archive/issue_comments_088457.json:
 
 Replying to [comment:297 leif]:
 > (In case you prepare a new one, I think it should be prealpha2 to avoid confusion with the previous one.)
+
 
 I will post a prealpha2 later today which will also include #9400.
 
@@ -8986,7 +9059,7 @@ For more info, see [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/N
 archive/issue_comments_088459.json:
 ```json
 {
-    "body": "Replying to [comment:300 jdemeyer]:\n> New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar)\n> For more info, see [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI)\n\nThis distro is still broken on **any** form of Solaris - both SPARC and x86. \n\n\n```\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\nERROR - configure PARI with readline and gmp failed.\n\nreal\t0m12.936s\nuser\t0m3.857s\nsys\t0m5.748s\nsage: An error occurred while installing pari-2.4.3.svn-12577.p3\n```\n\n\nOne of your earlier releases, based on a snapshot prior to 12577 was OK, so this is a very recently introduced bug. \n\nDave",
+    "body": "Replying to [comment:300 jdemeyer]:\n> New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar)\n> For more info, see [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI)\n\n\nThis distro is still broken on **any** form of Solaris - both SPARC and x86. \n\n```\nExtracting examples/Makefile.solaris-sparcv9\nExtracting Osolaris-sparcv9/Makefile\n./Configure: test: argument expected\nERROR - configure PARI with readline and gmp failed.\n\nreal\t0m12.936s\nuser\t0m3.857s\nsys\t0m5.748s\nsage: An error occurred while installing pari-2.4.3.svn-12577.p3\n```\n\nOne of your earlier releases, based on a snapshot prior to 12577 was OK, so this is a very recently introduced bug. \n\nDave",
     "created_at": "2010-08-22T09:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -8999,8 +9072,8 @@ Replying to [comment:300 jdemeyer]:
 > New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha2.tar)
 > For more info, see [http://wiki.sagemath.org/NewPARI](http://wiki.sagemath.org/NewPARI)
 
-This distro is still broken on **any** form of Solaris - both SPARC and x86. 
 
+This distro is still broken on **any** form of Solaris - both SPARC and x86. 
 
 ```
 Extracting examples/Makefile.solaris-sparcv9
@@ -9014,7 +9087,6 @@ sys	0m5.748s
 sage: An error occurred while installing pari-2.4.3.svn-12577.p3
 ```
 
-
 One of your earlier releases, based on a snapshot prior to 12577 was OK, so this is a very recently introduced bug. 
 
 Dave
@@ -9026,7 +9098,7 @@ Dave
 archive/issue_comments_088460.json:
 ```json
 {
-    "body": "I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\nSo there are two solutions:\n\n**Solution 1**: In `Configure`, replace\n{{{#! /bin/sh\n```\n\nby\n\n```/usr/bin/env bash\n```\n\n\n**Solution 2**: In `config/Makefile.SH`, replace all occurances of\n\n```\ntest -e\n```\n\nby\n\n```\ntest -f\n```\n\n\nUsing either of these solutions makes PARI/GP compile.\n\nSince Sage assumes the existence of `bash`, we might as well apply the first solution anyway.  I will report this upstream.",
+    "body": "I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\nSo there are two solutions:\n\n**Solution 1**: In `Configure`, replace\n\n{{{#! /bin/sh\n```\nby\n\n```/usr/bin/env bash\n```\n\n**Solution 2**: In `config/Makefile.SH`, replace all occurances of\n\n```\ntest -e\n```\nby\n\n```\ntest -f\n```\n\nUsing either of these solutions makes PARI/GP compile.\n\nSince Sage assumes the existence of `bash`, we might as well apply the first solution anyway.  I will report this upstream.",
     "created_at": "2010-08-22T14:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9039,27 +9111,24 @@ I found out what prevents PARI/GP from compiling on Solaris.  The problem is tha
 So there are two solutions:
 
 **Solution 1**: In `Configure`, replace
+
 {{{#! /bin/sh
 ```
-
 by
 
 ```/usr/bin/env bash
 ```
-
 
 **Solution 2**: In `config/Makefile.SH`, replace all occurances of
 
 ```
 test -e
 ```
-
 by
 
 ```
 test -f
 ```
-
 
 Using either of these solutions makes PARI/GP compile.
 
@@ -9112,7 +9181,7 @@ archive/issue_comments_088462.json:
 archive/issue_comments_088463.json:
 ```json
 {
-    "body": "Replying to [comment:303 jdemeyer]:\n>  * PARI/GP bug report about Solaris: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091)\n>  * New PARI spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg)\n>  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n\nAny changes in p4 / prealpha3 other than the Solaris fix?",
+    "body": "Replying to [comment:303 jdemeyer]:\n>  * PARI/GP bug report about Solaris: [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091)\n>  * New PARI spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg)\n>  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n\n\nAny changes in p4 / prealpha3 other than the Solaris fix?",
     "created_at": "2010-08-22T20:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9126,6 +9195,7 @@ Replying to [comment:303 jdemeyer]:
 >  * New PARI spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p4.spkg)
 >  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)
 
+
 Any changes in p4 / prealpha3 other than the Solaris fix?
 
 
@@ -9135,7 +9205,7 @@ Any changes in p4 / prealpha3 other than the Solaris fix?
 archive/issue_comments_088464.json:
 ```json
 {
-    "body": "Replying to [comment:304 leif]:\n> Any changes in p4 / prealpha3 other than the Solaris fix?\n\nIn sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.",
+    "body": "Replying to [comment:304 leif]:\n> Any changes in p4 / prealpha3 other than the Solaris fix?\n\n\nIn sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.",
     "created_at": "2010-08-23T10:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9147,6 +9217,7 @@ archive/issue_comments_088464.json:
 Replying to [comment:304 leif]:
 > Any changes in p4 / prealpha3 other than the Solaris fix?
 
+
 In sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.
 
 
@@ -9156,7 +9227,7 @@ In sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass 
 archive/issue_comments_088465.json:
 ```json
 {
-    "body": "Replying to [comment:305 jdemeyer]:\n> Replying to [comment:304 leif]:\n> > Any changes in p4 / prealpha3 other than the Solaris fix?\n> \n> In sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.\n\nIt was not necessary to include #9703 and #9735 for Sage to pass all doc tests on Solaris 10 (SPARC), which is the only currently supported version of Solaris on Sage. Both of those tickets only affect x86 versions. They will not do any harm, but they were unnecessary. \n\nHowever, since #9703 has been merged, I would request that anyone that builds sage-4.6.prealpha3.tar, that they report on ticket #9703 of the success or failure of these three tests:\n\n\n```\n\tsage -t  -long devel/sage/sage/modular/abvar/abvar.py # \n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # \n\tsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py \n```\n\n\n#9703 still awaits positive review, so clearly evidence it is working on many systems will add to the confidence that the ticket is valid. Just adding a quick comment like \"The three tests passed on <your system>\" would be useful. \n\nNeither are those two tickets sufficient to cause all doc tests on Solaris 10 on x86 or OpenSolaris on x86, though they will reduce the number of failures. A couple more tickets need to be merged to get all doc tests to pass on Solaris 10 x86 - these are #9689 and #9693. However, that's outside the scope of the Pari upgrade, so I'm not expecting you to merge them, though if you did create a later alpha, I would not object if you did merge them!\n\nDave",
+    "body": "Replying to [comment:305 jdemeyer]:\n> Replying to [comment:304 leif]:\n> > Any changes in p4 / prealpha3 other than the Solaris fix?\n\n> \n> In sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.\n\n\nIt was not necessary to include #9703 and #9735 for Sage to pass all doc tests on Solaris 10 (SPARC), which is the only currently supported version of Solaris on Sage. Both of those tickets only affect x86 versions. They will not do any harm, but they were unnecessary. \n\nHowever, since #9703 has been merged, I would request that anyone that builds sage-4.6.prealpha3.tar, that they report on ticket #9703 of the success or failure of these three tests:\n\n```\n\tsage -t  -long devel/sage/sage/modular/abvar/abvar.py # \n\tsage -t  -long devel/sage/sage/lfunctions/sympow.py # \n\tsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py \n```\n\n#9703 still awaits positive review, so clearly evidence it is working on many systems will add to the confidence that the ticket is valid. Just adding a quick comment like \"The three tests passed on <your system>\" would be useful. \n\nNeither are those two tickets sufficient to cause all doc tests on Solaris 10 on x86 or OpenSolaris on x86, though they will reduce the number of failures. A couple more tickets need to be merged to get all doc tests to pass on Solaris 10 x86 - these are #9689 and #9693. However, that's outside the scope of the Pari upgrade, so I'm not expecting you to merge them, though if you did create a later alpha, I would not object if you did merge them!\n\nDave",
     "created_at": "2010-08-23T11:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9168,20 +9239,20 @@ archive/issue_comments_088465.json:
 Replying to [comment:305 jdemeyer]:
 > Replying to [comment:304 leif]:
 > > Any changes in p4 / prealpha3 other than the Solaris fix?
+
 > 
 > In sage-4.6.prealpha3, I merged #9703 and #9735 which hopefully makes Sage pass all tests on Solaris.
+
 
 It was not necessary to include #9703 and #9735 for Sage to pass all doc tests on Solaris 10 (SPARC), which is the only currently supported version of Solaris on Sage. Both of those tickets only affect x86 versions. They will not do any harm, but they were unnecessary. 
 
 However, since #9703 has been merged, I would request that anyone that builds sage-4.6.prealpha3.tar, that they report on ticket #9703 of the success or failure of these three tests:
-
 
 ```
 	sage -t  -long devel/sage/sage/modular/abvar/abvar.py # 
 	sage -t  -long devel/sage/sage/lfunctions/sympow.py # 
 	sage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py 
 ```
-
 
 #9703 still awaits positive review, so clearly evidence it is working on many systems will add to the confidence that the ticket is valid. Just adding a quick comment like "The three tests passed on <your system>" would be useful. 
 
@@ -9196,7 +9267,7 @@ Dave
 archive/issue_comments_088466.json:
 ```json
 {
-    "body": "Replying to [comment:294 jdemeyer]:\n> To the people who cannot compile PARI/GP because of #9722:\n> \n> Please check whether the following works:\n>  * Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)\n> In a shell, type:\n> {{{\n> tar xjf pari-2.4.3.svn-12577.p2.spkg\n> cd pari-2.4.3.svn-12577.p2/src\n> ./Configure --graphic=none\n> make gp\n\nworked fine on Fedora 13, \n\nGeorg\n> }}}\n> \n> On my system (Gentoo Linux), this correctly disables graphics.",
+    "body": "Replying to [comment:294 jdemeyer]:\n> To the people who cannot compile PARI/GP because of #9722:\n> \n> Please check whether the following works:\n> * Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)\n> In a shell, type:\n> \n> ```\n> tar xjf pari-2.4.3.svn-12577.p2.spkg\n> cd pari-2.4.3.svn-12577.p2/src\n> ./Configure --graphic=none\n> make gp\n\n\nworked fine on Fedora 13, \n\nGeorg\n> }}}\n> \n> On my system (Gentoo Linux), this correctly disables graphics.",
     "created_at": "2010-08-23T13:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9209,13 +9280,15 @@ Replying to [comment:294 jdemeyer]:
 > To the people who cannot compile PARI/GP because of #9722:
 > 
 > Please check whether the following works:
->  * Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)
+> * Download [http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg](http://cage.ugent.be/~jdemeyer/sage/pari-2.4.3.svn-12577.p2.spkg)
 > In a shell, type:
-> {{{
+> 
+> ```
 > tar xjf pari-2.4.3.svn-12577.p2.spkg
 > cd pari-2.4.3.svn-12577.p2/src
 > ./Configure --graphic=none
 > make gp
+
 
 worked fine on Fedora 13, 
 
@@ -9231,7 +9304,7 @@ Georg
 archive/issue_comments_088467.json:
 ```json
 {
-    "body": "Replying to [comment:303 jdemeyer]:\n>  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n\nPassed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.\n\nUbuntu 9.04 x86 in progress.\n\nDave, a bit more happy now?",
+    "body": "Replying to [comment:303 jdemeyer]:\n>  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n\n\nPassed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.\n\nUbuntu 9.04 x86 in progress.\n\nDave, a bit more happy now?",
     "created_at": "2010-08-23T14:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9242,6 +9315,7 @@ archive/issue_comments_088467.json:
 
 Replying to [comment:303 jdemeyer]:
 >  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)
+
 
 Passed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.
 
@@ -9274,7 +9348,7 @@ Sage 4.6.prealpha3, which includes this ticket, passed all tests (ptestlong) on 
 archive/issue_comments_088469.json:
 ```json
 {
-    "body": "Replying to [comment:309 jdemeyer]:\n> Sage 4.6.prealpha3, which includes this ticket, passed all tests (ptestlong) on a Sun UltraSPARC with Solaris 10.\n\n4.6.prealpha3 built fine and passed all tests (ptestlong) on 64-bit ubuntu.  Also built on 32-bit Suse, tests still running.",
+    "body": "Replying to [comment:309 jdemeyer]:\n> Sage 4.6.prealpha3, which includes this ticket, passed all tests (ptestlong) on a Sun UltraSPARC with Solaris 10.\n\n\n4.6.prealpha3 built fine and passed all tests (ptestlong) on 64-bit ubuntu.  Also built on 32-bit Suse, tests still running.",
     "created_at": "2010-08-23T15:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9285,6 +9359,7 @@ archive/issue_comments_088469.json:
 
 Replying to [comment:309 jdemeyer]:
 > Sage 4.6.prealpha3, which includes this ticket, passed all tests (ptestlong) on a Sun UltraSPARC with Solaris 10.
+
 
 4.6.prealpha3 built fine and passed all tests (ptestlong) on 64-bit ubuntu.  Also built on 32-bit Suse, tests still running.
 
@@ -9313,7 +9388,7 @@ Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based
 archive/issue_comments_088471.json:
 ```json
 {
-    "body": "Replying to [comment:311 jdemeyer]:\n> Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722. Any other tickets which should be included (which are not in sage-4.5.3.alpha2)?\nI would just keep my eye on the list of blockers for 4.5.3. There is a way of getting that list, but I don't know the link.",
+    "body": "Replying to [comment:311 jdemeyer]:\n> Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722. Any other tickets which should be included (which are not in sage-4.5.3.alpha2)?\n\nI would just keep my eye on the list of blockers for 4.5.3. There is a way of getting that list, but I don't know the link.",
     "created_at": "2010-08-24T10:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9324,6 +9399,7 @@ archive/issue_comments_088471.json:
 
 Replying to [comment:311 jdemeyer]:
 > Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722. Any other tickets which should be included (which are not in sage-4.5.3.alpha2)?
+
 I would just keep my eye on the list of blockers for 4.5.3. There is a way of getting that list, but I don't know the link.
 
 
@@ -9333,7 +9409,7 @@ I would just keep my eye on the list of blockers for 4.5.3. There is a way of ge
 archive/issue_comments_088472.json:
 ```json
 {
-    "body": "Replying to [comment:311 jdemeyer]:\n> Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722.\n\nIf you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n\nI don't know if you plan to make further changes to the PARI spkg.",
+    "body": "Replying to [comment:311 jdemeyer]:\n> Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722.\n\n\nIf you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n\nI don't know if you plan to make further changes to the PARI spkg.",
     "created_at": "2010-08-24T10:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9344,6 +9420,7 @@ archive/issue_comments_088472.json:
 
 Replying to [comment:311 jdemeyer]:
 > Now that sgae-4.5.3.alpha2 is released, I plan to make a new 4.6.prealpha4 based on that. I will do my best to port #9722.
+
 
 If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.
 
@@ -9384,7 +9461,7 @@ Most of the other changes (`spkg-install`) still apply. In addition, there are s
 archive/issue_comments_088474.json:
 ```json
 {
-    "body": "Replying to [comment:308 leif]:\n> Replying to [comment:303 jdemeyer]:\n> >  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n> \n> Passed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.\n> \n> Ubuntu 9.04 x86 in progress.\n\nPassed `ptestlong`, too (Pentium 4 Prescott, gcc 4.3.3, native code, `O3`), parallel build with 6 jobs, test with 2 threads.",
+    "body": "Replying to [comment:308 leif]:\n> Replying to [comment:303 jdemeyer]:\n> >  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)\n \n> \n> Passed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.\n> \n> Ubuntu 9.04 x86 in progress.\n\n\nPassed `ptestlong`, too (Pentium 4 Prescott, gcc 4.3.3, native code, `O3`), parallel build with 6 jobs, test with 2 threads.",
     "created_at": "2010-08-24T12:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9396,10 +9473,12 @@ archive/issue_comments_088474.json:
 Replying to [comment:308 leif]:
 > Replying to [comment:303 jdemeyer]:
 > >  * New distribution: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha3.tar)
+ 
 > 
 > Passed `ptestlong` on Fedora 13 x86_64 (Core2, gcc 4.4.4, native code, `O3`), parallel build with 32 jobs, test with 4 threads.
 > 
 > Ubuntu 9.04 x86 in progress.
+
 
 Passed `ptestlong`, too (Pentium 4 Prescott, gcc 4.3.3, native code, `O3`), parallel build with 6 jobs, test with 2 threads.
 
@@ -9410,7 +9489,7 @@ Passed `ptestlong`, too (Pentium 4 Prescott, gcc 4.3.3, native code, `O3`), para
 archive/issue_comments_088475.json:
 ```json
 {
-    "body": "Replying to [comment:313 leif]:\n> If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n> \n> I don't know if you plan to make further changes to the PARI spkg.\nNo, I don't.  As far as I can tell, #9722 is the only remaining issue.\n\nIf you would like to port #9722 to #9343, go ahead and do it.  Otherwise, I can also do it (for me it's the same).",
+    "body": "Replying to [comment:313 leif]:\n> If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n> \n> I don't know if you plan to make further changes to the PARI spkg.\n\nNo, I don't.  As far as I can tell, #9722 is the only remaining issue.\n\nIf you would like to port #9722 to #9343, go ahead and do it.  Otherwise, I can also do it (for me it's the same).",
     "created_at": "2010-08-24T19:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9423,6 +9502,7 @@ Replying to [comment:313 leif]:
 > If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.
 > 
 > I don't know if you plan to make further changes to the PARI spkg.
+
 No, I don't.  As far as I can tell, #9722 is the only remaining issue.
 
 If you would like to port #9722 to #9343, go ahead and do it.  Otherwise, I can also do it (for me it's the same).
@@ -9434,7 +9514,7 @@ If you would like to port #9722 to #9343, go ahead and do it.  Otherwise, I can 
 archive/issue_comments_088476.json:
 ```json
 {
-    "body": "Replying to [comment:316 jdemeyer]:\n> Replying to [comment:313 leif]:\n> > If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n> > \n> > I don't know if you plan to make further changes to the PARI spkg.\n> No, I don't.  As far as I can tell, #9722 is the only remaining issue.\n> \n> If you would like to port #9722 to #9343, go ahead and do it.\n\nOk, I'll create a 2.4.3.svn-12577.p5, but not today, perhaps tomorrow.\n\nDid anybody test the latest on Cygwin?",
+    "body": "Replying to [comment:316 jdemeyer]:\n> Replying to [comment:313 leif]:\n> > If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.\n> > \n> > I don't know if you plan to make further changes to the PARI spkg.\n\n> No, I don't.  As far as I can tell, #9722 is the only remaining issue.\n> \n> If you would like to port #9722 to #9343, go ahead and do it.\n\n\nOk, I'll create a 2.4.3.svn-12577.p5, but not today, perhaps tomorrow.\n\nDid anybody test the latest on Cygwin?",
     "created_at": "2010-08-24T19:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9448,9 +9528,11 @@ Replying to [comment:316 jdemeyer]:
 > > If you have little patience, I'll backport the changes from #9722 to #9343, perhaps a little bit cleaner regarding the messages/graphics detection when no graphics support was requested (I'd like to keep that, i.e. not completely disabling it). In addition, we should catch illegal parameters to `--graphic=`.
 > > 
 > > I don't know if you plan to make further changes to the PARI spkg.
+
 > No, I don't.  As far as I can tell, #9722 is the only remaining issue.
 > 
 > If you would like to port #9722 to #9343, go ahead and do it.
+
 
 Ok, I'll create a 2.4.3.svn-12577.p5, but not today, perhaps tomorrow.
 
@@ -9463,7 +9545,7 @@ Did anybody test the latest on Cygwin?
 archive/issue_comments_088477.json:
 ```json
 {
-    "body": "Replying to [comment:314 leif]:\n> From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. \n\n> It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.\n\n> [...]\n\nWould upstream be receptive to Leif's changes?",
+    "body": "Replying to [comment:314 leif]:\n> From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. \n\n\n> It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.\n\n\n> [...]\n\n\nWould upstream be receptive to Leif's changes?",
     "created_at": "2010-08-24T21:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9475,9 +9557,12 @@ archive/issue_comments_088477.json:
 Replying to [comment:314 leif]:
 > From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. 
 
+
 > It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.
 
+
 > [...]
+
 
 Would upstream be receptive to Leif's changes?
 
@@ -9488,7 +9573,7 @@ Would upstream be receptive to Leif's changes?
 archive/issue_comments_088478.json:
 ```json
 {
-    "body": "Replying to [comment:318 mpatel]:\n> Replying to [comment:314 leif]:\n> > From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. \n> \n> > It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.\n> \n> > [...]\n> \n> Would upstream be receptive to Leif's changes?\n\nI'd say we should report the changes when we've included them in our svn snapshot.",
+    "body": "Replying to [comment:318 mpatel]:\n> Replying to [comment:314 leif]:\n> > From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. \n\n> \n> > It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.\n\n> \n> > [...]\n\n> \n> Would upstream be receptive to Leif's changes?\n\n\nI'd say we should report the changes when we've included them in our svn snapshot.",
     "created_at": "2010-08-24T21:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9500,12 +9585,16 @@ archive/issue_comments_088478.json:
 Replying to [comment:318 mpatel]:
 > Replying to [comment:314 leif]:
 > > From a first glance, the graphics detection in svn-12577 is cleaner, so the changes regarding that will be, too. 
+
 > 
 > > It's still not robust, and needs the same fixes as PARI 2.3.5, e.g.
+
 > 
 > > [...]
+
 > 
 > Would upstream be receptive to Leif's changes?
+
 
 I'd say we should report the changes when we've included them in our svn snapshot.
 
@@ -9516,7 +9605,7 @@ I'd say we should report the changes when we've included them in our svn snapsho
 archive/issue_comments_088479.json:
 ```json
 {
-    "body": "4.6.prealpha3 (with `PARI_EXTRA_OPTS` *not* set) also passed `ptestlong` on 32-bit Fedora 13.\n\nOn 64-bit Ubuntu 10.04 LTS the build failed in the first place (MPIR and Tachyon); simply rerunning `make` the build succeeded, and all long tests passed.\n\nPerhaps another missing dependency that only rarely comes into play in parallel builds. (This never happened before, and 4.5.3.alpha2 built fine with the same settings). I'll have to inspect that further.\n\nI though get three new Sphinx warnings:\n\n```\ndocstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\ndocstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\ndocstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\nbuild succeeded, 3 warnings.\n```\n",
+    "body": "4.6.prealpha3 (with `PARI_EXTRA_OPTS` *not* set) also passed `ptestlong` on 32-bit Fedora 13.\n\nOn 64-bit Ubuntu 10.04 LTS the build failed in the first place (MPIR and Tachyon); simply rerunning `make` the build succeeded, and all long tests passed.\n\nPerhaps another missing dependency that only rarely comes into play in parallel builds. (This never happened before, and 4.5.3.alpha2 built fine with the same settings). I'll have to inspect that further.\n\nI though get three new Sphinx warnings:\n\n```\ndocstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\ndocstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\ndocstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\nbuild succeeded, 3 warnings.\n```",
     "created_at": "2010-08-26T09:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9542,13 +9631,12 @@ build succeeded, 3 warnings.
 
 
 
-
 ---
 
 archive/issue_comments_088480.json:
 ```json
 {
-    "body": "Replying to [comment:320 leif]:\n> I though get three new Sphinx warnings:\n> {{{\n> docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n> docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n> build succeeded, 3 warnings.\n> }}}\nThose are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?",
+    "body": "Replying to [comment:320 leif]:\n> I though get three new Sphinx warnings:\n> \n> ```\n> docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n> docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n> build succeeded, 3 warnings.\n> ```\n\nThose are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?",
     "created_at": "2010-08-26T09:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9559,12 +9647,14 @@ archive/issue_comments_088480.json:
 
 Replying to [comment:320 leif]:
 > I though get three new Sphinx warnings:
-> {{{
+> 
+> ```
 > docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.
 > docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
 > docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.
 > build succeeded, 3 warnings.
-> }}}
+> ```
+
 Those are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?
 
 
@@ -9574,7 +9664,7 @@ Those are probably my fault.  Can you tell me *how* you get those warnings, i.e.
 archive/issue_comments_088481.json:
 ```json
 {
-    "body": "Replying to [comment:321 jdemeyer]:\n> Replying to [comment:320 leif]:\n> > I though get three new Sphinx warnings:\n> > {{{\n> > docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> > docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n> > docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n> > build succeeded, 3 warnings.\n> > }}}\n> Those are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?\n\nTry sage -docbuild reference html.  Or look in the build log?  I think that \"make\" does not build the docs (I may be wrong on that) but \"make testlong\" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.",
+    "body": "Replying to [comment:321 jdemeyer]:\n> Replying to [comment:320 leif]:\n> > I though get three new Sphinx warnings:\n> > \n> > ```\n> > docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> > docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n> > docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n> > build succeeded, 3 warnings.\n> > ```\n\n> Those are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?\n\nTry sage -docbuild reference html.  Or look in the build log?  I think that \"make\" does not build the docs (I may be wrong on that) but \"make testlong\" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.",
     "created_at": "2010-08-26T11:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9586,12 +9676,14 @@ archive/issue_comments_088481.json:
 Replying to [comment:321 jdemeyer]:
 > Replying to [comment:320 leif]:
 > > I though get three new Sphinx warnings:
-> > {{{
+> > 
+> > ```
 > > docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.
 > > docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
 > > docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.
 > > build succeeded, 3 warnings.
-> > }}}
+> > ```
+
 > Those are probably my fault.  Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?
 
 Try sage -docbuild reference html.  Or look in the build log?  I think that "make" does not build the docs (I may be wrong on that) but "make testlong" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.
@@ -9603,7 +9695,7 @@ Try sage -docbuild reference html.  Or look in the build log?  I think that "mak
 archive/issue_comments_088482.json:
 ```json
 {
-    "body": "Replying to [comment:322 cremona]:\n> Replying to [comment:321 jdemeyer]:\n> > Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?\n> \n> Try sage -docbuild reference html.  Or look in the build log?  I think that \"make\" does not build the docs (I may be wrong on that) but \"make testlong\" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.\n\nYes, they usually drown in the flood of Sphinx messages. (And even worse, Sphinx **errors**, too.)\n\nI normally do e.g. `grep -i warn dochtml.log`; grepping for \"error\" gives also lines with *filenames* containing it... ;-)\n\nIn case you've deleted the log, you have to touch the sources before doing `make doc`, e.g. by `./sage -ba-force`, but that would cause a rebuild of *all* Cython files, and Sphinx would rebuild the whole reference manual from scratch. So better just touch the files mentioned in the warning messages, and do `./sage -b`, then `make doc`, and carefully watch what rushes down the screen... ;-)",
+    "body": "Replying to [comment:322 cremona]:\n> Replying to [comment:321 jdemeyer]:\n> > Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?\n\n> \n> Try sage -docbuild reference html.  Or look in the build log?  I think that \"make\" does not build the docs (I may be wrong on that) but \"make testlong\" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.\n\n\nYes, they usually drown in the flood of Sphinx messages. (And even worse, Sphinx **errors**, too.)\n\nI normally do e.g. `grep -i warn dochtml.log`; grepping for \"error\" gives also lines with *filenames* containing it... ;-)\n\nIn case you've deleted the log, you have to touch the sources before doing `make doc`, e.g. by `./sage -ba-force`, but that would cause a rebuild of *all* Cython files, and Sphinx would rebuild the whole reference manual from scratch. So better just touch the files mentioned in the warning messages, and do `./sage -b`, then `make doc`, and carefully watch what rushes down the screen... ;-)",
     "created_at": "2010-08-26T12:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9615,8 +9707,10 @@ archive/issue_comments_088482.json:
 Replying to [comment:322 cremona]:
 > Replying to [comment:321 jdemeyer]:
 > > Can you tell me *how* you get those warnings, i.e. what is the command that I should type to see those warnings?
+
 > 
 > Try sage -docbuild reference html.  Or look in the build log?  I think that "make" does not build the docs (I may be wrong on that) but "make testlong" does, so it might be in the test log.  Anyway, if you touch the offending files and do docbuild reference html it will presumable process them again.
+
 
 Yes, they usually drown in the flood of Sphinx messages. (And even worse, Sphinx **errors**, too.)
 
@@ -9631,7 +9725,7 @@ In case you've deleted the log, you have to touch the sources before doing `make
 archive/issue_comments_088483.json:
 ```json
 {
-    "body": "Replying to [comment:320 leif]:\n> On 64-bit Ubuntu 10.04 LTS the build failed in the first place (MPIR and Tachyon); simply rerunning `make` the build succeeded, and all long tests passed.\n> \n> Perhaps another missing dependency that only rarely comes into play in parallel builds. (This never happened before, and 4.5.3.alpha2 built fine with the same settings). I'll have to inspect that further.\n\nWell, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n\nIt first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n\nThe MPIR failure seems to be due to a race condition:\n\n```\n...\nmake[4]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[4]: warning: -jN forced in submake: disabling jobserver mode.\nmake[5]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/lib\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/lib\"\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/include\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/include\"\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/include\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/include\"\n /bin/bash ./libtool --mode=install /usr/bin/install -c  'libmpir.la' '/home/leif/Sage/sage-4.6.prealpha3/local/lib/libmpir.la'\n /usr/bin/install -c -m 644 'mpirxx.h' '/home/leif/Sage/sage-4.6.prealpha3/local/include/mpirxx.h'\n /usr/bin/install -c -m 644 'mpir.h' '/home/leif/Sage/sage-4.6.prealpha3/local/include/mpir.h'\nmake -j32  install-data-hook\nmake[6]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[6]: warning: -jN forced in submake: disabling jobserver mode.\n(cd /home/leif/Sage/sage-4.6.prealpha3/local/include  && rm -f gmp.h   && cp mpir.h   gmp.h)\ncp: cannot stat `mpir.h': No such file or directory\nmake[6]: *** [install-data-hook] Error 1\nmake[6]: Leaving directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[5]: *** [install-data-am] Error 2\nmake[5]: *** Waiting for unfinished jobs....\n...\n```\n\nI haven't looked at MPIR's Makefile(s); perhaps some dependency is missing there.",
+    "body": "Replying to [comment:320 leif]:\n> On 64-bit Ubuntu 10.04 LTS the build failed in the first place (MPIR and Tachyon); simply rerunning `make` the build succeeded, and all long tests passed.\n> \n> Perhaps another missing dependency that only rarely comes into play in parallel builds. (This never happened before, and 4.5.3.alpha2 built fine with the same settings). I'll have to inspect that further.\n\n\nWell, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n\nIt first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n\nThe MPIR failure seems to be due to a race condition:\n\n```\n...\nmake[4]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[4]: warning: -jN forced in submake: disabling jobserver mode.\nmake[5]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/lib\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/lib\"\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/include\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/include\"\ntest -z \"/home/leif/Sage/sage-4.6.prealpha3/local/include\" || mkdir -p -- \"/home/leif/Sage/sage-4.6.prealpha3/local/include\"\n /bin/bash ./libtool --mode=install /usr/bin/install -c  'libmpir.la' '/home/leif/Sage/sage-4.6.prealpha3/local/lib/libmpir.la'\n /usr/bin/install -c -m 644 'mpirxx.h' '/home/leif/Sage/sage-4.6.prealpha3/local/include/mpirxx.h'\n /usr/bin/install -c -m 644 'mpir.h' '/home/leif/Sage/sage-4.6.prealpha3/local/include/mpir.h'\nmake -j32  install-data-hook\nmake[6]: Entering directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[6]: warning: -jN forced in submake: disabling jobserver mode.\n(cd /home/leif/Sage/sage-4.6.prealpha3/local/include  && rm -f gmp.h   && cp mpir.h   gmp.h)\ncp: cannot stat `mpir.h': No such file or directory\nmake[6]: *** [install-data-hook] Error 1\nmake[6]: Leaving directory `/home/leif/Sage/sage-4.6.prealpha3/spkg/build/mpir-1.2.2.p1/src'\nmake[5]: *** [install-data-am] Error 2\nmake[5]: *** Waiting for unfinished jobs....\n...\n```\nI haven't looked at MPIR's Makefile(s); perhaps some dependency is missing there.",
     "created_at": "2010-08-26T13:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9644,6 +9738,7 @@ Replying to [comment:320 leif]:
 > On 64-bit Ubuntu 10.04 LTS the build failed in the first place (MPIR and Tachyon); simply rerunning `make` the build succeeded, and all long tests passed.
 > 
 > Perhaps another missing dependency that only rarely comes into play in parallel builds. (This never happened before, and 4.5.3.alpha2 built fine with the same settings). I'll have to inspect that further.
+
 
 Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.
 
@@ -9674,7 +9769,6 @@ make[5]: *** [install-data-am] Error 2
 make[5]: *** Waiting for unfinished jobs....
 ...
 ```
-
 I haven't looked at MPIR's Makefile(s); perhaps some dependency is missing there.
 
 
@@ -9684,7 +9778,7 @@ I haven't looked at MPIR's Makefile(s); perhaps some dependency is missing there
 archive/issue_comments_088484.json:
 ```json
 {
-    "body": "Replying to [comment:324 leif]:\n> Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n> \n> It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n\nJust for the record: This is actually a completely weird **Sage \"feature\"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...\n\nSorry for this rather off-topic comment.",
+    "body": "Replying to [comment:324 leif]:\n> Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n> \n> It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n\n\nJust for the record: This is actually a completely weird **Sage \"feature\"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...\n\nSorry for this rather off-topic comment.",
     "created_at": "2010-08-26T18:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9698,6 +9792,7 @@ Replying to [comment:324 leif]:
 > 
 > It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...
 
+
 Just for the record: This is actually a completely weird **Sage "feature"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...
 
 Sorry for this rather off-topic comment.
@@ -9709,7 +9804,7 @@ Sorry for this rather off-topic comment.
 archive/issue_comments_088485.json:
 ```json
 {
-    "body": "Replying to [comment:325 leif]:\n> Replying to [comment:324 leif]:\n> > Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n> > \n> > It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n> \n> Just for the record: This is actually a completely weird **Sage \"feature\"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...\n> \n> Sorry for this rather off-topic comment.\n\nLeif, \n\nyou should open a ticket for this Tachyon problem. Put what info you have and *cc* me. I'd like to know of anything that adds `-m32` as that sort of thing could screw up on any system, but particularly might screw up on systems were we add `-m64` as we do on 64-bit Solaris builds. As you say, it's well off topic for this ticket, which is already very very long. \n\nDave",
+    "body": "Replying to [comment:325 leif]:\n> Replying to [comment:324 leif]:\n> > Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.\n> > \n> > It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...\n\n> \n> Just for the record: This is actually a completely weird **Sage \"feature\"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...\n> \n> Sorry for this rather off-topic comment.\n\n\nLeif, \n\nyou should open a ticket for this Tachyon problem. Put what info you have and *cc* me. I'd like to know of anything that adds `-m32` as that sort of thing could screw up on any system, but particularly might screw up on systems were we add `-m64` as we do on 64-bit Solaris builds. As you say, it's well off topic for this ticket, which is already very very long. \n\nDave",
     "created_at": "2010-08-26T20:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9723,10 +9818,12 @@ Replying to [comment:325 leif]:
 > > Well, installing Tachyon actually did *not* fail; I hadn't looked at the whole log.
 > > 
 > > It first tries a 32-bit build (prepending `-m32` to `CFLAGS`), which indeed fails with a `make` error. But this is catched by some Tachyon script I think, followed by an attempt to do a 64-bit build, which then succeeds. Quite odd, though the whole process of installing the Tachyon spkg takes less than four seconds for me (on that machine)...
+
 > 
 > Just for the record: This is actually a completely weird **Sage "feature"** (on Linux), i.e. `spkg-install` does this. I think I'll open a ticket for that, since Sage's beta(!) version of Tachyon is also out of date since at least 19 month and the spkg really needs work...
 > 
 > Sorry for this rather off-topic comment.
+
 
 Leif, 
 
@@ -9761,7 +9858,7 @@ Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#584
 archive/issue_comments_088487.json:
 ```json
 {
-    "body": "Replying to [comment:327 leif]:\n> Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> \n> (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n\nAny idea which patch from 4.6.prealpha3 could cause this?  I don't think MPIR or ECM depends on PARI/GP.",
+    "body": "Replying to [comment:327 leif]:\n> Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> \n> (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n\n\nAny idea which patch from 4.6.prealpha3 could cause this?  I don't think MPIR or ECM depends on PARI/GP.",
     "created_at": "2010-08-27T15:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9775,6 +9872,7 @@ Replying to [comment:327 leif]:
 > 
 > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)
 
+
 Any idea which patch from 4.6.prealpha3 could cause this?  I don't think MPIR or ECM depends on PARI/GP.
 
 
@@ -9784,7 +9882,7 @@ Any idea which patch from 4.6.prealpha3 could cause this?  I don't think MPIR or
 archive/issue_comments_088488.json:
 ```json
 {
-    "body": "Replying to [comment:328 jdemeyer]:\n> Replying to [comment:327 leif]:\n> > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> > \n> > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n> \n> Any idea which patch from 4.6.prealpha3 could cause this? \n\nNope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.\n\n> I don't think MPIR or ECM depends on PARI/GP.\n\nNo, but the code depends on them.\n\nI guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)",
+    "body": "Replying to [comment:328 jdemeyer]:\n> Replying to [comment:327 leif]:\n> > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> > \n> > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n\n> \n> Any idea which patch from 4.6.prealpha3 could cause this? \n\n\nNope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.\n\n> I don't think MPIR or ECM depends on PARI/GP.\n\n\nNo, but the code depends on them.\n\nI guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)",
     "created_at": "2010-08-27T16:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9798,12 +9896,15 @@ Replying to [comment:328 jdemeyer]:
 > > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?
 > > 
 > > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)
+
 > 
 > Any idea which patch from 4.6.prealpha3 could cause this? 
+
 
 Nope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.
 
 > I don't think MPIR or ECM depends on PARI/GP.
+
 
 No, but the code depends on them.
 
@@ -9834,7 +9935,7 @@ P.S.: Perhaps "just" some rare incompatibility of PARI to the new GMP/MPIR.
 archive/issue_comments_088490.json:
 ```json
 {
-    "body": "Replying to [comment:329 leif]:\n> Replying to [comment:328 jdemeyer]:\n> > Replying to [comment:327 leif]:\n> > > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> > > \n> > > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n> > \n> > Any idea which patch from 4.6.prealpha3 could cause this? \n> \n> Nope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.\n> \n> > I don't think MPIR or ECM depends on PARI/GP.\n> \n> No, but the code depends on them.\n> \n> I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)\n\nWhat exactly might I know?",
+    "body": "Replying to [comment:329 leif]:\n> Replying to [comment:328 jdemeyer]:\n> > Replying to [comment:327 leif]:\n> > > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?\n> > > \n> > > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)\n\n> > \n> > Any idea which patch from 4.6.prealpha3 could cause this? \n\n> \n> Nope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.\n> \n> > I don't think MPIR or ECM depends on PARI/GP.\n\n> \n> No, but the code depends on them.\n> \n> I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)\n\n\nWhat exactly might I know?",
     "created_at": "2010-08-27T16:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9849,16 +9950,20 @@ Replying to [comment:329 leif]:
 > > > Should we open a new ticket for issues with MPIR 2.1.1 (#8664) and ECM 6.3 (#5847)?
 > > > 
 > > > (Both currently need review, work for me with 4.5.3.alpha2, but not fully with 4.6.prealpha3 [segfault in `sage/schemes/elliptic_curves/ell_point.py`].)
+
 > > 
 > > Any idea which patch from 4.6.prealpha3 could cause this? 
+
 > 
 > Nope. I'm not competent to track this down. But since the file containing the failing example also has a 9343-patched doctest (different *result* only), the code obviously (indirectly) uses PARI.
 > 
 > > I don't think MPIR or ECM depends on PARI/GP.
+
 > 
 > No, but the code depends on them.
 > 
 > I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)
+
 
 What exactly might I know?
 
@@ -9869,7 +9974,7 @@ What exactly might I know?
 archive/issue_comments_088491.json:
 ```json
 {
-    "body": "Replying to [comment:330 leif]:\n> P.S.: Perhaps \"just\" some rare incompatibility of PARI to the new GMP/MPIR.\n\nAt least PARI 2.4.3.svn-12577.p4 passes its test suite with MPIR 2.1.1.",
+    "body": "Replying to [comment:330 leif]:\n> P.S.: Perhaps \"just\" some rare incompatibility of PARI to the new GMP/MPIR.\n\n\nAt least PARI 2.4.3.svn-12577.p4 passes its test suite with MPIR 2.1.1.",
     "created_at": "2010-08-27T16:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9881,6 +9986,7 @@ archive/issue_comments_088491.json:
 Replying to [comment:330 leif]:
 > P.S.: Perhaps "just" some rare incompatibility of PARI to the new GMP/MPIR.
 
+
 At least PARI 2.4.3.svn-12577.p4 passes its test suite with MPIR 2.1.1.
 
 
@@ -9890,7 +9996,7 @@ At least PARI 2.4.3.svn-12577.p4 passes its test suite with MPIR 2.1.1.
 archive/issue_comments_088492.json:
 ```json
 {
-    "body": "Replying to [comment:331 cremona]:\n> What exactly might I know?\n\nSorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket... (and also hesitated to open a ticket \"not-yet-positively-reviewed fails on/with not-yet-released 4.6.prealpha3\")\n\nBut you're one of the authors of `sage/schemes/elliptic_curves/ell_point.py`.",
+    "body": "Replying to [comment:331 cremona]:\n> What exactly might I know?\n\n\nSorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket... (and also hesitated to open a ticket \"not-yet-positively-reviewed fails on/with not-yet-released 4.6.prealpha3\")\n\nBut you're one of the authors of `sage/schemes/elliptic_curves/ell_point.py`.",
     "created_at": "2010-08-27T16:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9901,6 +10007,7 @@ archive/issue_comments_088492.json:
 
 Replying to [comment:331 cremona]:
 > What exactly might I know?
+
 
 Sorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket... (and also hesitated to open a ticket "not-yet-positively-reviewed fails on/with not-yet-released 4.6.prealpha3")
 
@@ -9913,7 +10020,7 @@ But you're one of the authors of `sage/schemes/elliptic_curves/ell_point.py`.
 archive/issue_comments_088493.json:
 ```json
 {
-    "body": "Replying to [comment:333 leif]:\n> Replying to [comment:331 cremona]:\n> > What exactly might I know?\n> \n> Sorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket...\n\nI think my guess (that you would know the code) was right. :-)\n\nIt's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3, in `EllipticCurvePoint_number_field.height()`. Tagging these two doctests `# not tested`, `ptestlong` passes all tests on 64-bit Ubuntu 10.04; still waiting for the results on another, 32-bit Fedora 13 machine.",
+    "body": "Replying to [comment:333 leif]:\n> Replying to [comment:331 cremona]:\n> > What exactly might I know?\n\n> \n> Sorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket...\n\n\nI think my guess (that you would know the code) was right. :-)\n\nIt's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3, in `EllipticCurvePoint_number_field.height()`. Tagging these two doctests `# not tested`, `ptestlong` passes all tests on 64-bit Ubuntu 10.04; still waiting for the results on another, 32-bit Fedora 13 machine.",
     "created_at": "2010-08-27T19:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9925,8 +10032,10 @@ archive/issue_comments_088493.json:
 Replying to [comment:333 leif]:
 > Replying to [comment:331 cremona]:
 > > What exactly might I know?
+
 > 
 > Sorry, John, I have not even posted the failing doctest, because I'm not sure if we should discuss it on *this* already large ticket...
+
 
 I think my guess (that you would know the code) was right. :-)
 
@@ -9939,7 +10048,7 @@ It's exactly the two **long** doctests you added at #8319 (as part of a regressi
 archive/issue_comments_088494.json:
 ```json
 {
-    "body": "Replying to [comment:334 leif]:\n> It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]\n\n... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.",
+    "body": "Replying to [comment:334 leif]:\n> It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]\n\n\n... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.",
     "created_at": "2010-08-27T19:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9951,6 +10060,7 @@ archive/issue_comments_088494.json:
 Replying to [comment:334 leif]:
 > It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]
 
+
 ... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.
 
 
@@ -9960,7 +10070,7 @@ Replying to [comment:334 leif]:
 archive/issue_comments_088495.json:
 ```json
 {
-    "body": "Replying to [comment:335 leif]:\n> Replying to [comment:334 leif]:\n> > It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]\n> \n> ... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.\n>  \n\nOK, here's one way of testing this (perhaps).  I made an input file for gp which computes that same example:  http://www.warwick.ac.uk/staff/J.E.Cremona/pari-test.gp\n\nTo test this save the file and run it using `sage -gp pari-test.gp`.  If nothing goes wrong it should output some stuff ending with \n\n```\n%11 = 2.386623822 E-29\n```\n",
+    "body": "Replying to [comment:335 leif]:\n> Replying to [comment:334 leif]:\n> > It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]\n\n> \n> ... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.\n>  \n\n\nOK, here's one way of testing this (perhaps).  I made an input file for gp which computes that same example:  http://www.warwick.ac.uk/staff/J.E.Cremona/pari-test.gp\n\nTo test this save the file and run it using `sage -gp pari-test.gp`.  If nothing goes wrong it should output some stuff ending with \n\n```\n%11 = 2.386623822 E-29\n```",
     "created_at": "2010-08-27T20:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -9972,9 +10082,11 @@ archive/issue_comments_088495.json:
 Replying to [comment:335 leif]:
 > Replying to [comment:334 leif]:
 > > It's exactly the two **long** doctests you added at #8319 (as part of a regression doctest) that individually both segfault with MPIR 2.1.1 and ECM 6.3 [...]
+
 > 
 > ... and of course **only** in combination with the **new** PARI, i.e. all tests pass with 4.5.3.alpha2 and MPIR 2.1.1 and ECM 6.3.
 >  
+
 
 OK, here's one way of testing this (perhaps).  I made an input file for gp which computes that same example:  http://www.warwick.ac.uk/staff/J.E.Cremona/pari-test.gp
 
@@ -9986,13 +10098,12 @@ To test this save the file and run it using `sage -gp pari-test.gp`.  If nothing
 
 
 
-
 ---
 
 archive/issue_comments_088496.json:
 ```json
 {
-    "body": "Replying to [comment:336 cremona]:\n> To test this save the file and run it using `sage -gp pari-test.gp`.  If nothing goes wrong it should output some stuff ending with \n\n```\n%11 = 2.386623822 E-29\n```\n\n\n\n```\nleif@quadriga:~/Sage/sage-4.6.prealpha3-with-mpir-2.1.1$ ./sage -gp\n                      GP/PARI CALCULATOR Version 2.4.3 (development svn-12577)\n                    amd64 running linux (x86-64/GMP-5.0.1 kernel) 64-bit version\n                     compiled: Aug 27 2010, gcc-4.4.3 (Ubuntu 4.4.3-4ubuntu5) \n                           (readline v6.0 enabled, extended help enabled)\n\n                               Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY \nWHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500509\n? read(\"pari-test-cremona.gp\")\n%1 = -8.968227546699448805 E-38\n? quit\nGoodbye!\n```\n\nI'm not that sure I made it right, but except for the number following \"%\", the output looks ok to me.\n\nThe segfaults when doctesting happen in `libgmp.so`, `mpn_submul_1()`, which is (indirectly) called by `__gmpn_divexact()` (gdb stack), but the origin/cause seems to be `sage/libs/pari/gen.pyx`, `gen.__setitem__()`, or its caller `EllipticCurvePoint_field.__getitem__()`... I don't recall when I last used debuggers... ;-)\n\nThe last output from running the doctest example (copied to a `.sage` file, activating `pdb` right before `Q.height()`) in gdb is:\n\n```\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py(657)pari_curve()->[0, 0, 0...854 E-19]\n-> return self._pari_curve[L[-1]]\n(Pdb) \n--Call--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(334)__getitem__()\n-> def __getitem__(self, n):\n(Pdb) \n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()\n-> return self._coords[n]\n(Pdb) \n--Return--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()->21043516...115795849\n-> return self._coords[n]\n(Pdb) \n--Call--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(334)__getitem__()\n-> def __getitem__(self, n):\n(Pdb) \n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()\n-> return self._coords[n]\n(Pdb) \n--Return--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()->30508178...767198757\n-> return self._coords[n]\n(Pdb) \n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff29c08fd in mpn_submul_1 ()\n   from /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/libgmp.so.8\n(gdb) c\nContinuing.\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffeca17fee in __pyx_pf_4sage_4libs_4pari_3gen_3gen___setitem__ (\n    __pyx_v_self=<value optimized out>, __pyx_v_n=<value optimized out>, \n    __pyx_v_y=<value optimized out>) at sage/libs/pari/gen.c:7018\n7018\t}\n(gdb) \n```\n",
+    "body": "Replying to [comment:336 cremona]:\n> To test this save the file and run it using `sage -gp pari-test.gp`.  If nothing goes wrong it should output some stuff ending with \n\n{{{\n%11 = 2.386623822 E-29\n}}}\n\n```\nleif@quadriga:~/Sage/sage-4.6.prealpha3-with-mpir-2.1.1$ ./sage -gp\n                      GP/PARI CALCULATOR Version 2.4.3 (development svn-12577)\n                    amd64 running linux (x86-64/GMP-5.0.1 kernel) 64-bit version\n                     compiled: Aug 27 2010, gcc-4.4.3 (Ubuntu 4.4.3-4ubuntu5) \n                           (readline v6.0 enabled, extended help enabled)\n\n                               Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY \nWHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500509\n? read(\"pari-test-cremona.gp\")\n%1 = -8.968227546699448805 E-38\n? quit\nGoodbye!\n```\nI'm not that sure I made it right, but except for the number following \"%\", the output looks ok to me.\n\nThe segfaults when doctesting happen in `libgmp.so`, `mpn_submul_1()`, which is (indirectly) called by `__gmpn_divexact()` (gdb stack), but the origin/cause seems to be `sage/libs/pari/gen.pyx`, `gen.__setitem__()`, or its caller `EllipticCurvePoint_field.__getitem__()`... I don't recall when I last used debuggers... ;-)\n\nThe last output from running the doctest example (copied to a `.sage` file, activating `pdb` right before `Q.height()`) in gdb is:\n\n```\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py(657)pari_curve()->[0, 0, 0...854 E-19]\n-> return self._pari_curve[L[-1]]\n(Pdb) \n--Call--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(334)__getitem__()\n-> def __getitem__(self, n):\n(Pdb) \n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()\n-> return self._coords[n]\n(Pdb) \n--Return--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()->21043516...115795849\n-> return self._coords[n]\n(Pdb) \n--Call--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(334)__getitem__()\n-> def __getitem__(self, n):\n(Pdb) \n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()\n-> return self._coords[n]\n(Pdb) \n--Return--\n> /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.py(345)__getitem__()->30508178...767198757\n-> return self._coords[n]\n(Pdb) \n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff29c08fd in mpn_submul_1 ()\n   from /home/leif/Sage/sage-4.6.prealpha3-with-mpir-2.1.1/local/lib/libgmp.so.8\n(gdb) c\nContinuing.\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffeca17fee in __pyx_pf_4sage_4libs_4pari_3gen_3gen___setitem__ (\n    __pyx_v_self=<value optimized out>, __pyx_v_n=<value optimized out>, \n    __pyx_v_y=<value optimized out>) at sage/libs/pari/gen.c:7018\n7018\t}\n(gdb) \n```",
     "created_at": "2010-08-27T22:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10004,11 +10115,9 @@ archive/issue_comments_088496.json:
 Replying to [comment:336 cremona]:
 > To test this save the file and run it using `sage -gp pari-test.gp`.  If nothing goes wrong it should output some stuff ending with 
 
-```
+{{{
 %11 = 2.386623822 E-29
-```
-
-
+}}}
 
 ```
 leif@quadriga:~/Sage/sage-4.6.prealpha3-with-mpir-2.1.1$ ./sage -gp
@@ -10031,7 +10140,6 @@ parisize = 8000000, primelimit = 500509
 ? quit
 Goodbye!
 ```
-
 I'm not that sure I made it right, but except for the number following "%", the output looks ok to me.
 
 The segfaults when doctesting happen in `libgmp.so`, `mpn_submul_1()`, which is (indirectly) called by `__gmpn_divexact()` (gdb stack), but the origin/cause seems to be `sage/libs/pari/gen.pyx`, `gen.__setitem__()`, or its caller `EllipticCurvePoint_field.__getitem__()`... I don't recall when I last used debuggers... ;-)
@@ -10081,13 +10189,12 @@ Program received signal SIGSEGV, Segmentation fault.
 
 
 
-
 ---
 
 archive/issue_comments_088497.json:
 ```json
 {
-    "body": "Replying to [comment:329 leif]:\n> I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)\n\nAlthough #8664 and #5847 are not prerequisites for the PARI upgrade --- please correct me if I'm wrong --- I think is OK to add comments about \"NewPARI.\"  Just be sure to prefix the comments with, e.g.,\n\n **This is about #9343's PARI upgrade.  See [NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.**",
+    "body": "Replying to [comment:329 leif]:\n> I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)\n\n\nAlthough #8664 and #5847 are not prerequisites for the PARI upgrade --- please correct me if I'm wrong --- I think is OK to add comments about \"NewPARI.\"  Just be sure to prefix the comments with, e.g.,\n\n **This is about #9343's PARI upgrade.  See [NewPARI](http://wiki.sagemath.org/NewPARI) for more information and links.**",
     "created_at": "2010-08-27T23:12:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10098,6 +10205,7 @@ archive/issue_comments_088497.json:
 
 Replying to [comment:329 leif]:
 > I guess John C. will know. I just wonder *where* we should address such issues; #8664 (with #5847 mandatory) is likely to go into the 4.6 series. (Though perhaps not 4.6.0, I'm not the release manager.)
+
 
 Although #8664 and #5847 are not prerequisites for the PARI upgrade --- please correct me if I'm wrong --- I think is OK to add comments about "NewPARI."  Just be sure to prefix the comments with, e.g.,
 
@@ -10110,7 +10218,7 @@ Although #8664 and #5847 are not prerequisites for the PARI upgrade --- please c
 archive/issue_comments_088498.json:
 ```json
 {
-    "body": "Replying to [comment:337 leif]:\n>\n\n```\n...\n%1 = -8.968227546699448805 E-38\n```\n\n\nI get the same result with \"vanilla\" 4.6.prealpha3 (MPIR 1.2.2.p1/GMP-4.2.1 kernel).\n\n----\n\nThe 32-bit Fedora machine segfaults at `Q.height()`, too; in addition, a segfault occurs in `ell_rational_field.py`. (Again 4.6.prealpha3 **with** MPIR 2.1.1 and ECM 6.3.)",
+    "body": "Replying to [comment:337 leif]:\n>\n\n{{{\n...\n%1 = -8.968227546699448805 E-38\n}}}\n\nI get the same result with \"vanilla\" 4.6.prealpha3 (MPIR 1.2.2.p1/GMP-4.2.1 kernel).\n\n---\n\nThe 32-bit Fedora machine segfaults at `Q.height()`, too; in addition, a segfault occurs in `ell_rational_field.py`. (Again 4.6.prealpha3 **with** MPIR 2.1.1 and ECM 6.3.)",
     "created_at": "2010-08-27T23:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10122,15 +10230,14 @@ archive/issue_comments_088498.json:
 Replying to [comment:337 leif]:
 >
 
-```
+{{{
 ...
 %1 = -8.968227546699448805 E-38
-```
-
+}}}
 
 I get the same result with "vanilla" 4.6.prealpha3 (MPIR 1.2.2.p1/GMP-4.2.1 kernel).
 
-----
+---
 
 The 32-bit Fedora machine segfaults at `Q.height()`, too; in addition, a segfault occurs in `ell_rational_field.py`. (Again 4.6.prealpha3 **with** MPIR 2.1.1 and ECM 6.3.)
 
@@ -10141,7 +10248,7 @@ The 32-bit Fedora machine segfaults at `Q.height()`, too; in addition, a segfaul
 archive/issue_comments_088499.json:
 ```json
 {
-    "body": "\n```\n? read(\"../pari-test-cremona.gp\")\n%1 = 2.386623822 E-29\n```\n\nExactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.",
+    "body": "```\n? read(\"../pari-test-cremona.gp\")\n%1 = 2.386623822 E-29\n```\nExactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.",
     "created_at": "2010-08-27T23:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10150,12 +10257,10 @@ archive/issue_comments_088499.json:
 }
 ```
 
-
 ```
 ? read("../pari-test-cremona.gp")
 %1 = 2.386623822 E-29
 ```
-
 Exactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.
 
 
@@ -10165,7 +10270,7 @@ Exactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/
 archive/issue_comments_088500.json:
 ```json
 {
-    "body": "Replying to [comment:340 leif]:\n> {{{\n> ? read(\"../pari-test-cremona.gp\")\n> %1 = 2.386623822 E-29\n> }}}\n> Exactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.\nThose are the expected results on 32 and 64 bit machines.\n\nSorry, I'm not able to look at this at all today (Saturday).",
+    "body": "Replying to [comment:340 leif]:\n> {{{\n> ? read(\"../pari-test-cremona.gp\")\n> %1 = 2.386623822 E-29\n> }}}\n> Exactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.\n\nThose are the expected results on 32 and 64 bit machines.\n\nSorry, I'm not able to look at this at all today (Saturday).",
     "created_at": "2010-08-28T08:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10180,6 +10285,7 @@ Replying to [comment:340 leif]:
 > %1 = 2.386623822 E-29
 > }}}
 > Exactly John's result on the *32-bit* machine with 4.6.prealpha3 and MPIR 2.1.1/GMP-5.0.1 kernel.
+
 Those are the expected results on 32 and 64 bit machines.
 
 Sorry, I'm not able to look at this at all today (Saturday).
@@ -10191,7 +10297,7 @@ Sorry, I'm not able to look at this at all today (Saturday).
 archive/issue_comments_088501.json:
 ```json
 {
-    "body": "Replying to [comment:341 cremona]:\n> Sorry, I'm not able to look at this at all today (Saturday).\n\nIt's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\nMore to come...",
+    "body": "Replying to [comment:341 cremona]:\n> Sorry, I'm not able to look at this at all today (Saturday).\n\n\nIt's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\nMore to come...",
     "created_at": "2010-08-28T18:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10202,6 +10308,7 @@ archive/issue_comments_088501.json:
 
 Replying to [comment:341 cremona]:
 > Sorry, I'm not able to look at this at all today (Saturday).
+
 
 It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
 
@@ -10214,7 +10321,7 @@ More to come...
 archive/issue_comments_088502.json:
 ```json
 {
-    "body": "Replying to [comment:342 leif]:\n> Replying to [comment:341 cremona]:\n> > Sorry, I'm not able to look at this at all today (Saturday).\n> \n> It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\nI thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.\n\n> \n> More to come...",
+    "body": "Replying to [comment:342 leif]:\n> Replying to [comment:341 cremona]:\n> > Sorry, I'm not able to look at this at all today (Saturday).\n\n> \n> It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\n\nI thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.\n\n> \n> More to come...",
     "created_at": "2010-08-28T20:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10226,8 +10333,10 @@ archive/issue_comments_088502.json:
 Replying to [comment:342 leif]:
 > Replying to [comment:341 cremona]:
 > > Sorry, I'm not able to look at this at all today (Saturday).
+
 > 
 > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
+
 
 I thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.
 
@@ -10241,7 +10350,7 @@ I thought it might be, which is why I provided a test gp script which Pari devel
 archive/issue_comments_088503.json:
 ```json
 {
-    "body": "Replying to [comment:343 cremona]:\n> Replying to [comment:342 leif]:\n> > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n> \n> I thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.\n\nI was actually thinking (fearing) it was a Sage/Cython bug, but can meanwhile reproduce the segfault with a GP script; going to sort out if it's PARI's or MPIR's fault.",
+    "body": "Replying to [comment:343 cremona]:\n> Replying to [comment:342 leif]:\n> > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\n> \n> I thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.\n\n\nI was actually thinking (fearing) it was a Sage/Cython bug, but can meanwhile reproduce the segfault with a GP script; going to sort out if it's PARI's or MPIR's fault.",
     "created_at": "2010-08-28T20:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10253,8 +10362,10 @@ archive/issue_comments_088503.json:
 Replying to [comment:343 cremona]:
 > Replying to [comment:342 leif]:
 > > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
+
 > 
 > I thought it might be, which is why I provided a test gp script which Pari developers would like more than some Sage code.
+
 
 I was actually thinking (fearing) it was a Sage/Cython bug, but can meanwhile reproduce the segfault with a GP script; going to sort out if it's PARI's or MPIR's fault.
 
@@ -10265,7 +10376,7 @@ I was actually thinking (fearing) it was a Sage/Cython bug, but can meanwhile re
 archive/issue_comments_088504.json:
 ```json
 {
-    "body": "Replying to [comment:342 leif]:\n> Replying to [comment:341 cremona]:\n> > Sorry, I'm not able to look at this at all today (Saturday).\n> \n> It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\nI'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 and using PARI's --with-gmp feature and setting LD_LIBRARY_PATH to use my newly compiled MPIR.  This is using gcc (GCC) 4.6.0 20100705 (experimental) on a Gentoo Linux x86_64 system.  I run the gp script provided by John and it just works.",
+    "body": "Replying to [comment:342 leif]:\n> Replying to [comment:341 cremona]:\n> > Sorry, I'm not able to look at this at all today (Saturday).\n\n> \n> It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\n\nI'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 and using PARI's --with-gmp feature and setting LD_LIBRARY_PATH to use my newly compiled MPIR.  This is using gcc (GCC) 4.6.0 20100705 (experimental) on a Gentoo Linux x86_64 system.  I run the gp script provided by John and it just works.",
     "created_at": "2010-08-29T09:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10277,8 +10388,10 @@ archive/issue_comments_088504.json:
 Replying to [comment:342 leif]:
 > Replying to [comment:341 cremona]:
 > > Sorry, I'm not able to look at this at all today (Saturday).
+
 > 
 > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
+
 
 I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 and using PARI's --with-gmp feature and setting LD_LIBRARY_PATH to use my newly compiled MPIR.  This is using gcc (GCC) 4.6.0 20100705 (experimental) on a Gentoo Linux x86_64 system.  I run the gp script provided by John and it just works.
 
@@ -10289,7 +10402,7 @@ I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanil
 archive/issue_comments_088505.json:
 ```json
 {
-    "body": "Replying to [comment:345 jdemeyer]:\n> Replying to [comment:342 leif]:\n> > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n> \n> I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]\n\n> I run the gp script provided by John and it just works.\n\nWell, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n\nTry `ellorder(E,Q)`...\n\nWith true [GMP](http://gmplib.org/) 5.0.1 (and ECM 6.3), Sage 4.6.prealpha3 passes all tests for me; I'll try later on further machines. \n\nI've put a remark on the [NewPARI Wiki page](http://wiki.sagemath.org/NewPARI), and will revert #8664 to \"needs work\".",
+    "body": "Replying to [comment:345 jdemeyer]:\n> Replying to [comment:342 leif]:\n> > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\n> \n> I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]\n\n\n> I run the gp script provided by John and it just works.\n\n\nWell, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n\nTry `ellorder(E,Q)`...\n\nWith true [GMP](http://gmplib.org/) 5.0.1 (and ECM 6.3), Sage 4.6.prealpha3 passes all tests for me; I'll try later on further machines. \n\nI've put a remark on the [NewPARI Wiki page](http://wiki.sagemath.org/NewPARI), and will revert #8664 to \"needs work\".",
     "created_at": "2010-08-29T13:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10301,10 +10414,13 @@ archive/issue_comments_088505.json:
 Replying to [comment:345 jdemeyer]:
 > Replying to [comment:342 leif]:
 > > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
+
 > 
 > I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]
 
+
 > I run the gp script provided by John and it just works.
+
 
 Well, I wrote *"**a** GP script"*; John's doesn't resemble what Sage actually does.
 
@@ -10321,7 +10437,7 @@ I've put a remark on the [NewPARI Wiki page](http://wiki.sagemath.org/NewPARI), 
 archive/issue_comments_088506.json:
 ```json
 {
-    "body": "Replying to [comment:346 leif]:\n> Replying to [comment:345 jdemeyer]:\n> > Replying to [comment:342 leif]:\n> > > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n> > \n> > I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]\n> \n> > I run the gp script provided by John and it just works.\n> \n> Well, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n\nMy script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.\n\n> \n> Try `ellorder(E,Q)`...\n\nMeaning?  That returns 0, which is correct (it means infinite order).\n\n> \n> With true [GMP](http://gmplib.org/) 5.0.1 (and ECM 6.3), Sage 4.6.prealpha3 passes all tests for me; I'll try later on further machines. \n> \n> I've put a remark on the [NewPARI Wiki page](http://wiki.sagemath.org/NewPARI), and will revert #8664 to \"needs work\".",
+    "body": "Replying to [comment:346 leif]:\n> Replying to [comment:345 jdemeyer]:\n> > Replying to [comment:342 leif]:\n> > > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)\n\n> > \n> > I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]\n\n> \n> > I run the gp script provided by John and it just works.\n\n> \n> Well, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n\n\nMy script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.\n\n> \n> Try `ellorder(E,Q)`...\n\n\nMeaning?  That returns 0, which is correct (it means infinite order).\n\n> \n> With true [GMP](http://gmplib.org/) 5.0.1 (and ECM 6.3), Sage 4.6.prealpha3 passes all tests for me; I'll try later on further machines. \n> \n> I've put a remark on the [NewPARI Wiki page](http://wiki.sagemath.org/NewPARI), and will revert #8664 to \"needs work\".",
     "created_at": "2010-08-29T13:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10334,17 +10450,22 @@ Replying to [comment:346 leif]:
 > Replying to [comment:345 jdemeyer]:
 > > Replying to [comment:342 leif]:
 > > > It's an upstream problem (PARI/GP 2.4.3.svn-12577 with MPIR 2.1.1). :)
+
 > > 
 > > I'm **not** able to reproduce this problem.  I'm using vanilla MPIR 2.1.1, vanilla PARI svn-12577 [...]
+
 > 
 > > I run the gp script provided by John and it just works.
+
 > 
 > Well, I wrote *"**a** GP script"*; John's doesn't resemble what Sage actually does.
+
 
 My script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.
 
 > 
 > Try `ellorder(E,Q)`...
+
 
 Meaning?  That returns 0, which is correct (it means infinite order).
 
@@ -10360,7 +10481,7 @@ Meaning?  That returns 0, which is correct (it means infinite order).
 archive/issue_comments_088507.json:
 ```json
 {
-    "body": "Replying to [comment:346 leif]:\n> Try `ellorder(E,Q)`...\nAllright, bug confirmed!",
+    "body": "Replying to [comment:346 leif]:\n> Try `ellorder(E,Q)`...\n\nAllright, bug confirmed!",
     "created_at": "2010-08-29T13:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10371,6 +10492,7 @@ archive/issue_comments_088507.json:
 
 Replying to [comment:346 leif]:
 > Try `ellorder(E,Q)`...
+
 Allright, bug confirmed!
 
 
@@ -10380,7 +10502,7 @@ Allright, bug confirmed!
 archive/issue_comments_088508.json:
 ```json
 {
-    "body": "Replying to [comment:348 jdemeyer]:\n> Replying to [comment:346 leif]:\n> > Try `ellorder(E,Q)`...\n> Allright, bug confirmed!\n\nInterestingly, the *statically compiled* `gp-sta` version of gp works.",
+    "body": "Replying to [comment:348 jdemeyer]:\n> Replying to [comment:346 leif]:\n> > Try `ellorder(E,Q)`...\n\n> Allright, bug confirmed!\n\nInterestingly, the *statically compiled* `gp-sta` version of gp works.",
     "created_at": "2010-08-29T13:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10392,6 +10514,7 @@ archive/issue_comments_088508.json:
 Replying to [comment:348 jdemeyer]:
 > Replying to [comment:346 leif]:
 > > Try `ellorder(E,Q)`...
+
 > Allright, bug confirmed!
 
 Interestingly, the *statically compiled* `gp-sta` version of gp works.
@@ -10427,7 +10550,7 @@ Dave
 archive/issue_comments_088510.json:
 ```json
 {
-    "body": "Replying to [comment:347 cremona]:\n> Replying to [comment:346 leif]:\n> > Well, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n> \n> My script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.\n\nThis wasn't meant as an offense; perhaps I should have written *\"... does not **fully** resemble what Sage does\"*.\n\n> > Try `ellorder(E,Q)`...\n> \n> Meaning?  That returns 0, which is correct (it means infinite order).\n\nYes, and **that**'s what crashes with MPIR 2.1.1.\n\nSage's `EllipticCurvePoint_number_field.height()` first calls `self.has_finite_order()`, which in turn calls `self.order()`, which uses PARI's `orderell()` (deprecated, `ellorder()` in the GP interpreter).",
+    "body": "Replying to [comment:347 cremona]:\n> Replying to [comment:346 leif]:\n> > Well, I wrote *\"**a** GP script\"*; John's doesn't resemble what Sage actually does.\n\n> \n> My script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.\n\n\nThis wasn't meant as an offense; perhaps I should have written *\"... does not **fully** resemble what Sage does\"*.\n\n> > Try `ellorder(E,Q)`...\n\n> \n> Meaning?  That returns 0, which is correct (it means infinite order).\n\n\nYes, and **that**'s what crashes with MPIR 2.1.1.\n\nSage's `EllipticCurvePoint_number_field.height()` first calls `self.has_finite_order()`, which in turn calls `self.order()`, which uses PARI's `orderell()` (deprecated, `ellorder()` in the GP interpreter).",
     "created_at": "2010-08-29T14:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10439,14 +10562,18 @@ archive/issue_comments_088510.json:
 Replying to [comment:347 cremona]:
 > Replying to [comment:346 leif]:
 > > Well, I wrote *"**a** GP script"*; John's doesn't resemble what Sage actually does.
+
 > 
 > My script was intended to make the pari library do exactly what is does in that Sage example, i.e. it calls ellheight with the same point and curve.
+
 
 This wasn't meant as an offense; perhaps I should have written *"... does not **fully** resemble what Sage does"*.
 
 > > Try `ellorder(E,Q)`...
+
 > 
 > Meaning?  That returns 0, which is correct (it means infinite order).
+
 
 Yes, and **that**'s what crashes with MPIR 2.1.1.
 
@@ -10495,7 +10622,7 @@ How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any ot
 archive/issue_comments_088513.json:
 ```json
 {
-    "body": "Replying to [comment:353 mpatel]:\n> How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?\nIf the Pari upgrade is stalled over some issues, it might be worth considering putting the upgrade off for the a release. That would not slow the Pari upgrade, if the tickets merged had an almost zero probability of conflicting with the upgrade. \n\n* #9766 is for example a ticket I reviewed, which is an update to an SPKG.txt file only. \nThat's an extreme example, but there must be other tickets which have a very small probability of affecting the Pari upgrade. \n\nThat said, I'm glad the 4.5.3.alpha2 has become available, and people are having time to test that without 4.5.3 being rushed out.",
+    "body": "Replying to [comment:353 mpatel]:\n> How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?\n\nIf the Pari upgrade is stalled over some issues, it might be worth considering putting the upgrade off for the a release. That would not slow the Pari upgrade, if the tickets merged had an almost zero probability of conflicting with the upgrade. \n\n* #9766 is for example a ticket I reviewed, which is an update to an SPKG.txt file only. \nThat's an extreme example, but there must be other tickets which have a very small probability of affecting the Pari upgrade. \n\nThat said, I'm glad the 4.5.3.alpha2 has become available, and people are having time to test that without 4.5.3 being rushed out.",
     "created_at": "2010-08-30T08:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10506,6 +10633,7 @@ archive/issue_comments_088513.json:
 
 Replying to [comment:353 mpatel]:
 > How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?
+
 If the Pari upgrade is stalled over some issues, it might be worth considering putting the upgrade off for the a release. That would not slow the Pari upgrade, if the tickets merged had an almost zero probability of conflicting with the upgrade. 
 
 * #9766 is for example a ticket I reviewed, which is an update to an SPKG.txt file only. 
@@ -10520,7 +10648,7 @@ That said, I'm glad the 4.5.3.alpha2 has become available, and people are having
 archive/issue_comments_088514.json:
 ```json
 {
-    "body": "Replying to [comment:353 mpatel]:\n> How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?\n\nI lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.  Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?  What is to stop that happening now?",
+    "body": "Replying to [comment:353 mpatel]:\n> How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?\n\n\nI lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.  Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?  What is to stop that happening now?",
     "created_at": "2010-08-30T11:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10531,6 +10659,7 @@ archive/issue_comments_088514.json:
 
 Replying to [comment:353 mpatel]:
 > How close are the essential PARI upgrade tickets #9343, #9591, and #9592 (any others?) to being positively reviewed?
+
 
 I lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.  Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?  What is to stop that happening now?
 
@@ -10563,7 +10692,7 @@ I also would very much like somebody to have a look at #9400, because it also to
 archive/issue_comments_088516.json:
 ```json
 {
-    "body": "Replying to [comment:355 cremona]:\n> I lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.\n\nMe, too. Also, it looks as if there was a lack of (other, \"independent\") reviewers, or at least people testing this. I still don't know if this has been tested on Cygwin, and, if there were any issues, if we should address them *here*. (Mike has provided a \"follow-up\" Lcalc to make it work on Cygwin; I'm not sure if that's the only required change w.r.t. prealpha3.) \n \n> Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?\n\nI actually expected a 4.5.3 release candidate rather than an alpha2, and 4.5.3 released earlier. 4.6.prealpha3 is still based on 4.5.3.alpha1, but as far as I know the only changes in 4.5.3.alpha2 are fixing numerical noise in doctests, and #9722, which I am porting to the new PARI; Mitesh will know better.\n\n> What is to stop that happening now?\n\nRegarding this ticket, the only things I'm aware of are:\n* preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n* fixing Sphinx warnings\n* adding more documentation (strings) and doctests to (at least) `sage/libs/pari/gen.pyx` (cf. [this comment](http://trac.sagemath.org/sage_trac/ticket/9343#comment:250) and the [corresponding attachment](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt)).\n\nI don't know if further (new?) PARI functions should be wrapped; I only came across the deprecated `orderell()`.\n\nIMHO other things (e.g. Lcalc spkg improvements; I've commented on Mike's follow-up #9775) should be addressed during the normal 4.6 release cycle.\n\nI guess an official 4.6.alpha would be tested by far more people, on a broader variety of systems. Same for 4.5.3 (final). If any problems arise with the latter, they should be fixed during the preparation of 4.6 alphas, not in our inofficial prealphas.\n\nReplying to [comment:356 jdemeyer]:\n> [...] port #9722 to #9343. I believe leif is working on that.\n\nYes. Unfortunately the MPIR 2.1.1 issue took too much of my time and resources; I now consider it (more or less) \"resolved\", and continue the work on the PARI 2.4.3.svn-12577.p5 spkg.\n    \n> The large number of doctests without errors for sage-4.6.prealpha3 seem to indicate that the patches are fine.\n\nHopefully. It might also indicate a lack of (appropriate) doctests... ;-)\n\n(E.g., despite the obvious bug in MPIR 2.1.1, Sage 4.5.3.alpha2 and 4.6.prealpha3 - with PARI *not* using GMP internals - both passed all long tests on two systems with it. There have been similar cases in the past.)",
+    "body": "Replying to [comment:355 cremona]:\n> I lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.\n\n\nMe, too. Also, it looks as if there was a lack of (other, \"independent\") reviewers, or at least people testing this. I still don't know if this has been tested on Cygwin, and, if there were any issues, if we should address them *here*. (Mike has provided a \"follow-up\" Lcalc to make it work on Cygwin; I'm not sure if that's the only required change w.r.t. prealpha3.) \n \n> Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?\n\n\nI actually expected a 4.5.3 release candidate rather than an alpha2, and 4.5.3 released earlier. 4.6.prealpha3 is still based on 4.5.3.alpha1, but as far as I know the only changes in 4.5.3.alpha2 are fixing numerical noise in doctests, and #9722, which I am porting to the new PARI; Mitesh will know better.\n\n> What is to stop that happening now?\n\n\nRegarding this ticket, the only things I'm aware of are:\n* preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n* fixing Sphinx warnings\n* adding more documentation (strings) and doctests to (at least) `sage/libs/pari/gen.pyx` (cf. [this comment](http://trac.sagemath.org/sage_trac/ticket/9343#comment:250) and the [corresponding attachment](http://trac.sagemath.org/sage_trac/attachment/ticket/9343/pari-gen.pyx-coverage.txt)).\n\nI don't know if further (new?) PARI functions should be wrapped; I only came across the deprecated `orderell()`.\n\nIMHO other things (e.g. Lcalc spkg improvements; I've commented on Mike's follow-up #9775) should be addressed during the normal 4.6 release cycle.\n\nI guess an official 4.6.alpha would be tested by far more people, on a broader variety of systems. Same for 4.5.3 (final). If any problems arise with the latter, they should be fixed during the preparation of 4.6 alphas, not in our inofficial prealphas.\n\nReplying to [comment:356 jdemeyer]:\n> [...] port #9722 to #9343. I believe leif is working on that.\n\n\nYes. Unfortunately the MPIR 2.1.1 issue took too much of my time and resources; I now consider it (more or less) \"resolved\", and continue the work on the PARI 2.4.3.svn-12577.p5 spkg.\n    \n> The large number of doctests without errors for sage-4.6.prealpha3 seem to indicate that the patches are fine.\n\n\nHopefully. It might also indicate a lack of (appropriate) doctests... ;-)\n\n(E.g., despite the obvious bug in MPIR 2.1.1, Sage 4.5.3.alpha2 and 4.6.prealpha3 - with PARI *not* using GMP internals - both passed all long tests on two systems with it. There have been similar cases in the past.)",
     "created_at": "2010-08-30T18:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10575,13 +10704,16 @@ archive/issue_comments_088516.json:
 Replying to [comment:355 cremona]:
 > I lost track of who is doing what, so I don't know what (or who) we are waiting for.  Or who will be the one to actually give it a positive review.
 
+
 Me, too. Also, it looks as if there was a lack of (other, "independent") reviewers, or at least people testing this. I still don't know if this has been tested on Cygwin, and, if there were any issues, if we should address them *here*. (Mike has provided a "follow-up" Lcalc to make it work on Cygwin; I'm not sure if that's the only required change w.r.t. prealpha3.) 
  
 > Presumably what we want is that as soon as 4.5.3 is released the current prealpha of 4.6 is released as an alpha?
 
+
 I actually expected a 4.5.3 release candidate rather than an alpha2, and 4.5.3 released earlier. 4.6.prealpha3 is still based on 4.5.3.alpha1, but as far as I know the only changes in 4.5.3.alpha2 are fixing numerical noise in doctests, and #9722, which I am porting to the new PARI; Mitesh will know better.
 
 > What is to stop that happening now?
+
 
 Regarding this ticket, the only things I'm aware of are:
 * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)
@@ -10597,9 +10729,11 @@ I guess an official 4.6.alpha would be tested by far more people, on a broader v
 Replying to [comment:356 jdemeyer]:
 > [...] port #9722 to #9343. I believe leif is working on that.
 
+
 Yes. Unfortunately the MPIR 2.1.1 issue took too much of my time and resources; I now consider it (more or less) "resolved", and continue the work on the PARI 2.4.3.svn-12577.p5 spkg.
     
 > The large number of doctests without errors for sage-4.6.prealpha3 seem to indicate that the patches are fine.
+
 
 Hopefully. It might also indicate a lack of (appropriate) doctests... ;-)
 
@@ -10612,7 +10746,7 @@ Hopefully. It might also indicate a lack of (appropriate) doctests... ;-)
 archive/issue_comments_088517.json:
 ```json
 {
-    "body": "P.S.: In prealpha3, the \"coverage\" slightly rised (by 1 percent):\n\n```\nSCORE devel/sage/sage/libs/pari/gen.pyx: 56% (220 of 389)\n```\n",
+    "body": "P.S.: In prealpha3, the \"coverage\" slightly rised (by 1 percent):\n\n```\nSCORE devel/sage/sage/libs/pari/gen.pyx: 56% (220 of 389)\n```",
     "created_at": "2010-08-30T18:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10629,13 +10763,12 @@ SCORE devel/sage/sage/libs/pari/gen.pyx: 56% (220 of 389)
 
 
 
-
 ---
 
 archive/issue_comments_088518.json:
 ```json
 {
-    "body": "Replying to [comment:357 leif]:\n>  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n\nI'm assuming you refer to the \"GMP internals\" mentioned in #9837?  Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.  So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.\n\nAlso, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).",
+    "body": "Replying to [comment:357 leif]:\n>  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)\n\n\nI'm assuming you refer to the \"GMP internals\" mentioned in #9837?  Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.  So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.\n\nAlso, on the who-is-doing-what part: I am not doing anything with this for the moment (I do plan to release a prealpha4 when leif's done with p5).",
     "created_at": "2010-08-30T21:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10646,6 +10779,7 @@ archive/issue_comments_088518.json:
 
 Replying to [comment:357 leif]:
 >  * preparing a PARI 2.4.3.svn-12577.p5 spkg, with the fixes from #9722, and in addition disabling the use of GMP internals by PARI by default (with an *option* to make PARI use them)
+
 
 I'm assuming you refer to the "GMP internals" mentioned in #9837?  Note that these are actually **documented** GMP internals, so it's not as bad as it sounds.  So I would prefer not to touch that code and leave PARI using documented GMP/MPIR internals as it is.
 
@@ -10708,7 +10842,7 @@ Leif, how is the progress on p5?
 archive/issue_comments_088521.json:
 ```json
 {
-    "body": "Replying to [comment:361 jdemeyer]:\n> Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?\n\nNo idea what else they changed. Without further knowledge, I'd prefer staying with \"our already well-tested\" 12577, but don't insist on that. I'll leave the decision to the others.\n\nBtw, as Mitesh mentioned, we need a (formal) positive review to get this into Sage 4.6.\n\n\n> Leif, how is the progress on p5?\n\nOngoing... ;-)\n\nI currently have some hardware issues I cannot solve until tomorrow, but will post a p5 either later today or latest by tomorrow evening.",
+    "body": "Replying to [comment:361 jdemeyer]:\n> Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?\n\n\nNo idea what else they changed. Without further knowledge, I'd prefer staying with \"our already well-tested\" 12577, but don't insist on that. I'll leave the decision to the others.\n\nBtw, as Mitesh mentioned, we need a (formal) positive review to get this into Sage 4.6.\n\n\n> Leif, how is the progress on p5?\n\n\nOngoing... ;-)\n\nI currently have some hardware issues I cannot solve until tomorrow, but will post a p5 either later today or latest by tomorrow evening.",
     "created_at": "2010-09-05T16:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10720,12 +10854,14 @@ archive/issue_comments_088521.json:
 Replying to [comment:361 jdemeyer]:
 > Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?
 
+
 No idea what else they changed. Without further knowledge, I'd prefer staying with "our already well-tested" 12577, but don't insist on that. I'll leave the decision to the others.
 
 Btw, as Mitesh mentioned, we need a (formal) positive review to get this into Sage 4.6.
 
 
 > Leif, how is the progress on p5?
+
 
 Ongoing... ;-)
 
@@ -10738,7 +10874,7 @@ I currently have some hardware issues I cannot solve until tomorrow, but will po
 archive/issue_comments_088522.json:
 ```json
 {
-    "body": "Replying to [comment:361 jdemeyer]:\n> The PARI have been starting to fix some bugs that we reported (as I said, they usually do it, albeit slowly).  Two patches which are in pari-2.4.3.svn-12577.p4.spkg are now fixed upstream in svn 12588:\n>  * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1089\n>  * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091\n> \n> Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?\n\nI think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\nNot only that, but people have spent a lot of time testing this. Their appetite for testing might diminish. \n\nWhere do you stop? \n\nDave",
+    "body": "Replying to [comment:361 jdemeyer]:\n> The PARI have been starting to fix some bugs that we reported (as I said, they usually do it, albeit slowly).  Two patches which are in pari-2.4.3.svn-12577.p4.spkg are now fixed upstream in svn 12588:\n> * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1089\n> * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091\n> \n> Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?\n\n\nI think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\nNot only that, but people have spent a lot of time testing this. Their appetite for testing might diminish. \n\nWhere do you stop? \n\nDave",
     "created_at": "2010-09-05T19:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10749,10 +10885,11 @@ archive/issue_comments_088522.json:
 
 Replying to [comment:361 jdemeyer]:
 > The PARI have been starting to fix some bugs that we reported (as I said, they usually do it, albeit slowly).  Two patches which are in pari-2.4.3.svn-12577.p4.spkg are now fixed upstream in svn 12588:
->  * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1089
->  * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091
+> * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1089
+> * http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1091
 > 
 > Personally, I think we should upgrade our spkg from svn 12577 to 12588. This might be a controversial proposal, so what do you think of it?
+
 
 I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. 
 
@@ -10769,7 +10906,7 @@ Dave
 archive/issue_comments_088523.json:
 ```json
 {
-    "body": "Replying to [comment:363 drkirkby]:\n> I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\nSo the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.",
+    "body": "Replying to [comment:363 drkirkby]:\n> I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\n\nSo the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.",
     "created_at": "2010-09-06T10:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10781,6 +10918,7 @@ archive/issue_comments_088523.json:
 Replying to [comment:363 drkirkby]:
 > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. 
 
+
 So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.
 
 
@@ -10790,7 +10928,7 @@ So the PARI/GP people are fixing bugs that we reported, but we're not going to a
 archive/issue_comments_088524.json:
 ```json
 {
-    "body": "Replying to [comment:364 jdemeyer]:\n> So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? [...]\n\n*\"In a later, stable release...\"* ;-)\n\nI think we should really get into 4.6 what we have by now, or this ticket will never end.",
+    "body": "Replying to [comment:364 jdemeyer]:\n> So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? [...]\n\n\n*\"In a later, stable release...\"* ;-)\n\nI think we should really get into 4.6 what we have by now, or this ticket will never end.",
     "created_at": "2010-09-06T10:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10801,6 +10939,7 @@ archive/issue_comments_088524.json:
 
 Replying to [comment:364 jdemeyer]:
 > So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? [...]
+
 
 *"In a later, stable release..."* ;-)
 
@@ -10813,7 +10952,7 @@ I think we should really get into 4.6 what we have by now, or this ticket will n
 archive/issue_comments_088525.json:
 ```json
 {
-    "body": "Replying to [comment:364 jdemeyer]:\n> Replying to [comment:363 drkirkby]:\n> > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n> \n> So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.\n\nI think you didn't get Dave's point. He wants the fixes and only the fixes. If we \ntake another snapshot we get the fixes and who knows what else.\n\nI second leif this needs merging soon or it will never happen. \nWe just have to be ready to pick up the pieces in 4.6.1.",
+    "body": "Replying to [comment:364 jdemeyer]:\n> Replying to [comment:363 drkirkby]:\n> > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\n> \n> So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.\n\n\nI think you didn't get Dave's point. He wants the fixes and only the fixes. If we \ntake another snapshot we get the fixes and who knows what else.\n\nI second leif this needs merging soon or it will never happen. \nWe just have to be ready to pick up the pieces in 4.6.1.",
     "created_at": "2010-09-06T10:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10825,8 +10964,10 @@ archive/issue_comments_088525.json:
 Replying to [comment:364 jdemeyer]:
 > Replying to [comment:363 drkirkby]:
 > > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. 
+
 > 
 > So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.
+
 
 I think you didn't get Dave's point. He wants the fixes and only the fixes. If we 
 take another snapshot we get the fixes and who knows what else.
@@ -10841,7 +10982,7 @@ We just have to be ready to pick up the pieces in 4.6.1.
 archive/issue_comments_088526.json:
 ```json
 {
-    "body": "Replying to [comment:366 fbissey]:\n> Replying to [comment:364 jdemeyer]:\n> > Replying to [comment:363 drkirkby]:\n> > > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n> > \n> > So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.\n> \n> I think you didn't get Dave's point. He wants the fixes and only the fixes. If we \n> take another snapshot we get the fixes and who knows what else.\n\nThat is **exactly** what I meant. \n\n> I second leif this needs merging soon or it will never happen. \n> We just have to be ready to pick up the pieces in 4.6.1.\n\nMe too.",
+    "body": "Replying to [comment:366 fbissey]:\n> Replying to [comment:364 jdemeyer]:\n> > Replying to [comment:363 drkirkby]:\n> > > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. \n\n> > \n> > So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.\n\n> \n> I think you didn't get Dave's point. He wants the fixes and only the fixes. If we \n> take another snapshot we get the fixes and who knows what else.\n\n\nThat is **exactly** what I meant. \n\n> I second leif this needs merging soon or it will never happen. \n> We just have to be ready to pick up the pieces in 4.6.1.\n\n\nMe too.",
     "created_at": "2010-09-06T11:53:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -10854,16 +10995,20 @@ Replying to [comment:366 fbissey]:
 > Replying to [comment:364 jdemeyer]:
 > > Replying to [comment:363 drkirkby]:
 > > > I think that would be a bad idea. It's difficult to say for sure without knowing what was changed in all 11 different svn snapshots, but given these are only snapshots with little testing, I think you have a reasonable probability of hitting another bug. 
+
 > > 
 > > So the PARI/GP people are fixing bugs that we reported, but we're not going to apply those bugfixes? That also sounds stupid.
+
 > 
 > I think you didn't get Dave's point. He wants the fixes and only the fixes. If we 
 > take another snapshot we get the fixes and who knows what else.
+
 
 That is **exactly** what I meant. 
 
 > I second leif this needs merging soon or it will never happen. 
 > We just have to be ready to pick up the pieces in 4.6.1.
+
 
 Me too.
 
@@ -11008,7 +11153,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088534.json:
 ```json
 {
-    "body": "New prealpha4: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar)\n\nTested successfully on `sage.math.washington.edu`, more testing underway.  Also tuning and spkg-check worked:\n\n```\nenv SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg\n```\n\n\nAs far as I know, there are no remaining issues, so I will be bold and set this back to positive review.",
+    "body": "New prealpha4: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar)\n\nTested successfully on `sage.math.washington.edu`, more testing underway.  Also tuning and spkg-check worked:\n\n```\nenv SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg\n```\n\nAs far as I know, there are no remaining issues, so I will be bold and set this back to positive review.",
     "created_at": "2010-09-07T10:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11024,7 +11169,6 @@ Tested successfully on `sage.math.washington.edu`, more testing underway.  Also 
 ```
 env SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg
 ```
-
 
 As far as I know, there are no remaining issues, so I will be bold and set this back to positive review.
 
@@ -11057,7 +11201,7 @@ The patch to `tune.c` from svn 12588 is a one-liner btw.
 archive/issue_comments_088536.json:
 ```json
 {
-    "body": "Replying to [comment:374 jdemeyer]:\n> New prealpha4: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar)\n> \n> Tested successfully on `sage.math.washington.edu`, more testing underway.  Also tuning and spkg-check worked:\n> {{{\n> env SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg\n> }}}\n> \n> As far as I know, there are no remaining issues, so I will be bold and set this back to positive review.\n\nHaving produced a tar file for people to test, it would have been wise to get some more feedback before setting it to positive review. \n\nI'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick. Downloading the tarball is less so!\n\nDave",
+    "body": "Replying to [comment:374 jdemeyer]:\n> New prealpha4: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar)\n> \n> Tested successfully on `sage.math.washington.edu`, more testing underway.  Also tuning and spkg-check worked:\n> \n> ```\n> env SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg\n> ```\n> \n> As far as I know, there are no remaining issues, so I will be bold and set this back to positive review.\n\n\nHaving produced a tar file for people to test, it would have been wise to get some more feedback before setting it to positive review. \n\nI'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick. Downloading the tarball is less so!\n\nDave",
     "created_at": "2010-09-07T11:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11070,11 +11214,13 @@ Replying to [comment:374 jdemeyer]:
 > New prealpha4: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.prealpha4.tar)
 > 
 > Tested successfully on `sage.math.washington.edu`, more testing underway.  Also tuning and spkg-check worked:
-> {{{
+> 
+> ```
 > env SAGE_CHECK=yes SAGE_TUNE_pari=yes ./sage -f pari-2.4.3.svn-12577.p5.spkg
-> }}}
+> ```
 > 
 > As far as I know, there are no remaining issues, so I will be bold and set this back to positive review.
+
 
 Having produced a tar file for people to test, it would have been wise to get some more feedback before setting it to positive review. 
 
@@ -11089,7 +11235,7 @@ Dave
 archive/issue_comments_088537.json:
 ```json
 {
-    "body": "Replying to [comment:376 drkirkby]:\n> I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n\nIf so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n\n> Downloading the tarball is less so!\n\nTook more than three times longer than usual for me yesterday...",
+    "body": "Replying to [comment:376 drkirkby]:\n> I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n\n\nIf so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n\n> Downloading the tarball is less so!\n\n\nTook more than three times longer than usual for me yesterday...",
     "created_at": "2010-09-07T11:33:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11101,9 +11247,11 @@ archive/issue_comments_088537.json:
 Replying to [comment:376 drkirkby]:
 > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.
 
+
 If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS="--graphic=auto"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)
 
 > Downloading the tarball is less so!
+
 
 Took more than three times longer than usual for me yesterday...
 
@@ -11114,7 +11262,7 @@ Took more than three times longer than usual for me yesterday...
 archive/issue_comments_088538.json:
 ```json
 {
-    "body": "Replying to [comment:377 leif]:\n> Replying to [comment:376 drkirkby]:\n> > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n> \n> If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n> \n> > Downloading the tarball is less so!\n> \n> Took more than three times longer than usual for me yesterday...\n\n\nIs the \n\n`PARI_EXTRA_OPTS=\"--graphic=auto\"` \n\njust an environment variable I should set? If so, that will be trivial. I'm actually building two copies of Sage at the minute on this machine, so its under a heavy load, but I'll try this later\n\nI see your point elsewhere about Qt. I have some Qt libraries on here, which come as part of Mathematica. Not sure if I should set LD_LIBRARY_PATH to include them. Let me know. \n\nDave",
+    "body": "Replying to [comment:377 leif]:\n> Replying to [comment:376 drkirkby]:\n> > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n\n> \n> If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n> \n> > Downloading the tarball is less so!\n\n> \n> Took more than three times longer than usual for me yesterday...\n\n\n\nIs the \n\n`PARI_EXTRA_OPTS=\"--graphic=auto\"` \n\njust an environment variable I should set? If so, that will be trivial. I'm actually building two copies of Sage at the minute on this machine, so its under a heavy load, but I'll try this later\n\nI see your point elsewhere about Qt. I have some Qt libraries on here, which come as part of Mathematica. Not sure if I should set LD_LIBRARY_PATH to include them. Let me know. \n\nDave",
     "created_at": "2010-09-07T12:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11126,12 +11274,15 @@ archive/issue_comments_088538.json:
 Replying to [comment:377 leif]:
 > Replying to [comment:376 drkirkby]:
 > > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.
+
 > 
 > If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS="--graphic=auto"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)
 > 
 > > Downloading the tarball is less so!
+
 > 
 > Took more than three times longer than usual for me yesterday...
+
 
 
 Is the 
@@ -11151,7 +11302,7 @@ Dave
 archive/issue_comments_088539.json:
 ```json
 {
-    "body": "Replying to [comment:378 drkirkby]:\n> Replying to [comment:377 leif]:\n> > Replying to [comment:376 drkirkby]:\n> > > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n> > \n> > If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n> Is the \n> \n> `PARI_EXTRA_OPTS=\"--graphic=auto\"` \n> \n> just an environment variable I should set?\n\nYes, that's passed (verbatim) to PARI's `Configure` by Sage, so do\n\n```sh\nexport PARI_EXTRA_OPTS=\"--graphic=X11\"\n```\n\n(`--graphic=auto` will pick X11 if it's found, otherwise try FLTK and Qt.)\n \n> I'm actually building two copies of Sage at the minute on this machine, so its under a heavy load, but I'll try this later\n\nThat would be nice.\n\n> I see your point elsewhere about Qt. I have some Qt libraries on here, which come as part of Mathematica. Not sure if I should set LD_LIBRARY_PATH to include them. Let me know.\n\nI don't think Mathematica ships with Qt *development* files... (But there should be such OpenSolaris packages. If you choose X11, PARI will just use \"plain\" X11.)\n\nW.r.t. #9603, my main machine is still headless... :/",
+    "body": "Replying to [comment:378 drkirkby]:\n> Replying to [comment:377 leif]:\n> > Replying to [comment:376 drkirkby]:\n> > > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.\n\n> > \n> > If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS=\"--graphic=auto\"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)\n\n> Is the \n> \n> `PARI_EXTRA_OPTS=\"--graphic=auto\"` \n> \n> just an environment variable I should set?\n\n\nYes, that's passed (verbatim) to PARI's `Configure` by Sage, so do\n\n```sh\nexport PARI_EXTRA_OPTS=\"--graphic=X11\"\n```\n(`--graphic=auto` will pick X11 if it's found, otherwise try FLTK and Qt.)\n \n> I'm actually building two copies of Sage at the minute on this machine, so its under a heavy load, but I'll try this later\n\n\nThat would be nice.\n\n> I see your point elsewhere about Qt. I have some Qt libraries on here, which come as part of Mathematica. Not sure if I should set LD_LIBRARY_PATH to include them. Let me know.\n\n\nI don't think Mathematica ships with Qt *development* files... (But there should be such OpenSolaris packages. If you choose X11, PARI will just use \"plain\" X11.)\n\nW.r.t. #9603, my main machine is still headless... :/",
     "created_at": "2010-09-07T12:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11164,27 +11315,31 @@ Replying to [comment:378 drkirkby]:
 > Replying to [comment:377 leif]:
 > > Replying to [comment:376 drkirkby]:
 > > > I'm going to build it now on OpenSolaris. Nice thing about that is that's it's very quick.
+
 > > 
 > > If so, you could try reinstalling the PARI package with `PARI_EXTRA_OPTS="--graphic=auto"` or e.g. `X11`; best once with X11 development files present, and once in addition without (a functional) `xmkmf`. (I don't know what X11 [development] packages OpenSolaris provides.) :-)
+
 > Is the 
 > 
 > `PARI_EXTRA_OPTS="--graphic=auto"` 
 > 
 > just an environment variable I should set?
 
+
 Yes, that's passed (verbatim) to PARI's `Configure` by Sage, so do
 
 ```sh
 export PARI_EXTRA_OPTS="--graphic=X11"
 ```
-
 (`--graphic=auto` will pick X11 if it's found, otherwise try FLTK and Qt.)
  
 > I'm actually building two copies of Sage at the minute on this machine, so its under a heavy load, but I'll try this later
 
+
 That would be nice.
 
 > I see your point elsewhere about Qt. I have some Qt libraries on here, which come as part of Mathematica. Not sure if I should set LD_LIBRARY_PATH to include them. Let me know.
+
 
 I don't think Mathematica ships with Qt *development* files... (But there should be such OpenSolaris packages. If you choose X11, PARI will just use "plain" X11.)
 
@@ -11197,7 +11352,7 @@ W.r.t. #9603, my main machine is still headless... :/
 archive/issue_comments_088540.json:
 ```json
 {
-    "body": "Replying to [comment:375 leif]:\n> The prealpha4 passed `ptestlong` on Ubuntu 10.04 x86_64 (Core2) and Fedora 13 x86 (Pentium 4 Prescott), too. Installing the package with `SAGE_CHECK=yes` also works.\n> \n> Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).\n\nIt also hangs with `CFLAGS=-O0`, and also if I do\n\n```\n.../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune\n```\n\n(which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)\n\nIt doesn't always hang at *exactly* the same point (of output), but this might simply be due to unflushed buffers; the point where it \"stops\" only differs by some lines (different size / threshold for the same function, when attempting to tune `REMIIMUL_LIMIT` if I understand correctly). When I interrupt the tuning from within a Sage build with Control-C, I get cores dumped. Plain PARI seems to catch the signal (properly) and exits with\n\n```\n^C  ***   user interrupt.\n  ***   Error in the PARI system. End of program.\n```\n\nbut continues compilation (which of course fails).",
+    "body": "Replying to [comment:375 leif]:\n> The prealpha4 passed `ptestlong` on Ubuntu 10.04 x86_64 (Core2) and Fedora 13 x86 (Pentium 4 Prescott), too. Installing the package with `SAGE_CHECK=yes` also works.\n> \n> Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).\n\n\nIt also hangs with `CFLAGS=-O0`, and also if I do\n\n```\n.../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune\n```\n(which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)\n\nIt doesn't always hang at *exactly* the same point (of output), but this might simply be due to unflushed buffers; the point where it \"stops\" only differs by some lines (different size / threshold for the same function, when attempting to tune `REMIIMUL_LIMIT` if I understand correctly). When I interrupt the tuning from within a Sage build with Control-C, I get cores dumped. Plain PARI seems to catch the signal (properly) and exits with\n\n```\n^C  ***   user interrupt.\n  ***   Error in the PARI system. End of program.\n```\nbut continues compilation (which of course fails).",
     "created_at": "2010-09-07T13:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11211,12 +11366,12 @@ Replying to [comment:375 leif]:
 > 
 > Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).
 
+
 It also hangs with `CFLAGS=-O0`, and also if I do
 
 ```
 .../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune
 ```
-
 (which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)
 
 It doesn't always hang at *exactly* the same point (of output), but this might simply be due to unflushed buffers; the point where it "stops" only differs by some lines (different size / threshold for the same function, when attempting to tune `REMIIMUL_LIMIT` if I understand correctly). When I interrupt the tuning from within a Sage build with Control-C, I get cores dumped. Plain PARI seems to catch the signal (properly) and exits with
@@ -11225,7 +11380,6 @@ It doesn't always hang at *exactly* the same point (of output), but this might s
 ^C  ***   user interrupt.
   ***   Error in the PARI system. End of program.
 ```
-
 but continues compilation (which of course fails).
 
 
@@ -11235,7 +11389,7 @@ but continues compilation (which of course fails).
 archive/issue_comments_088541.json:
 ```json
 {
-    "body": "On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparently passes all tests except those few that require extra data files, though the self-test also ends with\n\n```\n+++ [BUG] Total bench for gp-sta is 585030\n+++ [BUG] Total bench for gp-dyn is 592375\n\n...\n```\n\nI'm not sure what that's intended to mean.\n\nThis is with gcc 4.2.1 and GMP 4.3.2 though.",
+    "body": "On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparently passes all tests except those few that require extra data files, though the self-test also ends with\n\n```\n+++ [BUG] Total bench for gp-sta is 585030\n+++ [BUG] Total bench for gp-dyn is 592375\n\n...\n```\nI'm not sure what that's intended to mean.\n\nThis is with gcc 4.2.1 and GMP 4.3.2 though.",
     "created_at": "2010-09-07T15:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11252,7 +11406,6 @@ On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparent
 
 ...
 ```
-
 I'm not sure what that's intended to mean.
 
 This is with gcc 4.2.1 and GMP 4.3.2 though.
@@ -11264,7 +11417,7 @@ This is with gcc 4.2.1 and GMP 4.3.2 though.
 archive/issue_comments_088542.json:
 ```json
 {
-    "body": "Replying to [comment:381 leif]:\n> On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparently passes all tests except those few that require extra data files, though the self-test also ends with\n> {{{\n> +++ [BUG] Total bench for gp-sta is 585030\n> +++ [BUG] Total bench for gp-dyn is 592375\n> \n> ...\n> }}}\n\nThis means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.",
+    "body": "Replying to [comment:381 leif]:\n> On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparently passes all tests except those few that require extra data files, though the self-test also ends with\n> \n> ```\n> +++ [BUG] Total bench for gp-sta is 585030\n> +++ [BUG] Total bench for gp-dyn is 592375\n> \n> ...\n> ```\n\n\nThis means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.",
     "created_at": "2010-09-07T16:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11275,12 +11428,14 @@ archive/issue_comments_088542.json:
 
 Replying to [comment:381 leif]:
 > On a Pentium 4 (Northwood), PARI self-tuning works, and `make test-all` apparently passes all tests except those few that require extra data files, though the self-test also ends with
-> {{{
+> 
+> ```
 > +++ [BUG] Total bench for gp-sta is 585030
 > +++ [BUG] Total bench for gp-dyn is 592375
 > 
 > ...
-> }}}
+> ```
+
 
 This means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.
 
@@ -11291,7 +11446,7 @@ This means that some self-tests failed.  Normally you can see which tests failed
 archive/issue_comments_088543.json:
 ```json
 {
-    "body": "Replying to [comment:382 jdemeyer]:\n> Replying to [comment:381 leif]:\n\n```\n+++ [BUG] Total bench for gp-sta is 585030\n+++ [BUG] Total bench for gp-dyn is 592375\n\n...\n```\n\n> \n> This means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.\n\nYes, and these are exactly the six (IIRC) tests that need extra data; I verified that by looking at the diffs. I don't know what *\"total bench\"* and the numbers express. (It's near to, but **not** the seconds the tests took... ;-) )",
+    "body": "Replying to [comment:382 jdemeyer]:\n> Replying to [comment:381 leif]:\n\n{{{\n+++ [BUG] Total bench for gp-sta is 585030\n+++ [BUG] Total bench for gp-dyn is 592375\n\n...\n}}}\n> \n> This means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.\n\n\nYes, and these are exactly the six (IIRC) tests that need extra data; I verified that by looking at the diffs. I don't know what *\"total bench\"* and the numbers express. (It's near to, but **not** the seconds the tests took... ;-) )",
     "created_at": "2010-09-07T16:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11303,15 +11458,15 @@ archive/issue_comments_088543.json:
 Replying to [comment:382 jdemeyer]:
 > Replying to [comment:381 leif]:
 
-```
+{{{
 +++ [BUG] Total bench for gp-sta is 585030
 +++ [BUG] Total bench for gp-dyn is 592375
 
 ...
-```
-
+}}}
 > 
 > This means that some self-tests failed.  Normally you can see which tests failed by looking at the last lines of the output of `make test-all`.
+
 
 Yes, and these are exactly the six (IIRC) tests that need extra data; I verified that by looking at the diffs. I don't know what *"total bench"* and the numbers express. (It's near to, but **not** the seconds the tests took... ;-) )
 
@@ -11342,7 +11497,7 @@ Btw, tuning also works on the Pentium 4 **Prescott** with GMP **4.2.4** and gcc 
 archive/issue_comments_088545.json:
 ```json
 {
-    "body": "Replying to [comment:384 leif]:\n> Btw, tuning also works on the Pentium 4 **Prescott** with GMP **4.2.4** and gcc **4.3.3**, so perhaps there's a bug in GMP; a bug in gcc (4.4.4) is IMHO rather unlikely.\n\nBut there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.)",
+    "body": "Replying to [comment:384 leif]:\n> Btw, tuning also works on the Pentium 4 **Prescott** with GMP **4.2.4** and gcc **4.3.3**, so perhaps there's a bug in GMP; a bug in gcc (4.4.4) is IMHO rather unlikely.\n\n\nBut there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.)",
     "created_at": "2010-09-07T17:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11354,6 +11509,7 @@ archive/issue_comments_088545.json:
 Replying to [comment:384 leif]:
 > Btw, tuning also works on the Pentium 4 **Prescott** with GMP **4.2.4** and gcc **4.3.3**, so perhaps there's a bug in GMP; a bug in gcc (4.4.4) is IMHO rather unlikely.
 
+
 But there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.)
 
 
@@ -11363,7 +11519,7 @@ But there another test fails (in `linear-{sta,dyn`}) which is not due to missing
 archive/issue_comments_088546.json:
 ```json
 {
-    "body": "Replying to [comment:385 leif]:\n> But there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.) \n\nThis shouldn't happen, can you make a new ticket and post the the `linear-sta.dif`?",
+    "body": "Replying to [comment:385 leif]:\n> But there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.) \n\n\nThis shouldn't happen, can you make a new ticket and post the the `linear-sta.dif`?",
     "created_at": "2010-09-07T20:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11375,6 +11531,7 @@ archive/issue_comments_088546.json:
 Replying to [comment:385 leif]:
 > But there another test fails (in `linear-{sta,dyn`}) which is not due to missing data files; perhaps numerical noise... (Both diffs are identical.) 
 
+
 This shouldn't happen, can you make a new ticket and post the the `linear-sta.dif`?
 
 
@@ -11384,7 +11541,7 @@ This shouldn't happen, can you make a new ticket and post the the `linear-sta.di
 archive/issue_comments_088547.json:
 ```json
 {
-    "body": "Final post *here* (I'll open a new ticket shortly):\n\nReplying to [comment:380 leif]:\n> Replying to [comment:375 leif]:\n> > The prealpha4 passed `ptestlong` on Ubuntu 10.04 x86_64 (Core2) and Fedora 13 x86 (Pentium 4 Prescott), too. Installing the package with `SAGE_CHECK=yes` also works.\n> > \n> > Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).\n> \n> It also hangs with `CFLAGS=-O0`, and also if I do\n\n```\n.../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune\n```\n\n> (which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)\n\nIt also hangs with GMP 5.0.1 (\"plain\" PARI, gcc 4.4.4 as before, in tuning `REMIIMUL_LIMIT`).\n \n> It doesn't always hang at *exactly* the same point (of output), but this might simply be due to unflushed buffers; the point where it \"stops\" only differs by some lines (different size / threshold for the same function, when attempting to tune `REMIIMUL_LIMIT` if I understand correctly).",
+    "body": "Final post *here* (I'll open a new ticket shortly):\n\nReplying to [comment:380 leif]:\n> Replying to [comment:375 leif]:\n> > The prealpha4 passed `ptestlong` on Ubuntu 10.04 x86_64 (Core2) and Fedora 13 x86 (Pentium 4 Prescott), too. Installing the package with `SAGE_CHECK=yes` also works.\n> > \n> > Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).\n\n> \n> It also hangs with `CFLAGS=-O0`, and also if I do\n\n{{{\n.../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune\n}}}\n> (which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)\n\n\nIt also hangs with GMP 5.0.1 (\"plain\" PARI, gcc 4.4.4 as before, in tuning `REMIIMUL_LIMIT`).\n \n> It doesn't always hang at *exactly* the same point (of output), but this might simply be due to unflushed buffers; the point where it \"stops\" only differs by some lines (different size / threshold for the same function, when attempting to tune `REMIIMUL_LIMIT` if I understand correctly).",
     "created_at": "2010-09-07T22:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11400,14 +11557,15 @@ Replying to [comment:380 leif]:
 > > The prealpha4 passed `ptestlong` on Ubuntu 10.04 x86_64 (Core2) and Fedora 13 x86 (Pentium 4 Prescott), too. Installing the package with `SAGE_CHECK=yes` also works.
 > > 
 > > Tuning now doesn't give an error on the former, but still hangs on the latter (see previous posts).
+
 > 
 > It also hangs with `CFLAGS=-O0`, and also if I do
 
-```
+{{{
 .../pari-2.4.3.svn-12577.p5/src$ ./Configure --graphic=none --kernel=gmp --tune
-```
-
+}}}
 > (which uses the system's GMP, which is version 4.3.1), regardless of `CFLAGS` settings. (gcc is version 4.4.4.)
+
 
 It also hangs with GMP 5.0.1 ("plain" PARI, gcc 4.4.4 as before, in tuning `REMIIMUL_LIMIT`).
  
@@ -11440,7 +11598,7 @@ Now that 4.5.3 has been released it would be great of we could get this as the b
 archive/issue_comments_088549.json:
 ```json
 {
-    "body": "Replying to [comment:388 cremona]:\n> Now that 4.5.3 has been released it would be great of we could get this as the beginning of an actual 4.6.0 series.\n\nMitesh Patel wrote on sage-release (\"4.6 sketch\" thread):\n> On 09/07/2010 05:38 PM, Jason Grout wrote:\n> > What do you see as the window for merging changes into 4.6?  I'd like to\n> > finish some significant changes to fast_callable, but don't think they\n> > should be introduced in a point-point release.  4.6 sounds like a good\n> > release for the changes.\n> Up to three weeks.  I think there will be three alphas for the 4.6\n> cycle, since I'll focus on the PARI upgrade (#9343 and related tickets)\n> for 4.6.alpha0.  For alpha1 and alpha2, I plan to merge most of the\n> other positively reviewed tickets waiting at reports 11 and 32:\n> \n> http://trac.sagemath.org/sage_trac/report/11\n> http://trac.sagemath.org/sage_trac/report/32\n> \n> Of course, how it really goes will depend significantly on build and\n> test reports.\n> [...]\n\n:)\n\n(For unknown reason I do not see this thread on Google's page.)",
+    "body": "Replying to [comment:388 cremona]:\n> Now that 4.5.3 has been released it would be great of we could get this as the beginning of an actual 4.6.0 series.\n\n\nMitesh Patel wrote on sage-release (\"4.6 sketch\" thread):\n> On 09/07/2010 05:38 PM, Jason Grout wrote:\n> > What do you see as the window for merging changes into 4.6?  I'd like to\n> > finish some significant changes to fast_callable, but don't think they\n> > should be introduced in a point-point release.  4.6 sounds like a good\n> > release for the changes.\n\n> Up to three weeks.  I think there will be three alphas for the 4.6\n> cycle, since I'll focus on the PARI upgrade (#9343 and related tickets)\n> for 4.6.alpha0.  For alpha1 and alpha2, I plan to merge most of the\n> other positively reviewed tickets waiting at reports 11 and 32:\n> \n> http://trac.sagemath.org/sage_trac/report/11\n> http://trac.sagemath.org/sage_trac/report/32\n> \n> Of course, how it really goes will depend significantly on build and\n> test reports.\n> [...]\n\n\n:)\n\n(For unknown reason I do not see this thread on Google's page.)",
     "created_at": "2010-09-08T21:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11452,12 +11610,14 @@ archive/issue_comments_088549.json:
 Replying to [comment:388 cremona]:
 > Now that 4.5.3 has been released it would be great of we could get this as the beginning of an actual 4.6.0 series.
 
+
 Mitesh Patel wrote on sage-release ("4.6 sketch" thread):
 > On 09/07/2010 05:38 PM, Jason Grout wrote:
 > > What do you see as the window for merging changes into 4.6?  I'd like to
 > > finish some significant changes to fast_callable, but don't think they
 > > should be introduced in a point-point release.  4.6 sounds like a good
 > > release for the changes.
+
 > Up to three weeks.  I think there will be three alphas for the 4.6
 > cycle, since I'll focus on the PARI upgrade (#9343 and related tickets)
 > for 4.6.alpha0.  For alpha1 and alpha2, I plan to merge most of the
@@ -11469,6 +11629,7 @@ Mitesh Patel wrote on sage-release ("4.6 sketch" thread):
 > Of course, how it really goes will depend significantly on build and
 > test reports.
 > [...]
+
 
 :)
 
@@ -11553,7 +11714,7 @@ Resolution: fixed
 archive/issue_comments_088553.json:
 ```json
 {
-    "body": "Replying to [comment:302 jdemeyer]:\n> I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\n\nIt should, since `test -e ...` is POSIX (2004).\n\nDave, what shell is `/bin/sh` there?",
+    "body": "Replying to [comment:302 jdemeyer]:\n> I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\n\n\nIt should, since `test -e ...` is POSIX (2004).\n\nDave, what shell is `/bin/sh` there?",
     "created_at": "2010-09-24T19:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11564,6 +11725,7 @@ archive/issue_comments_088553.json:
 
 Replying to [comment:302 jdemeyer]:
 > I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.
+
 
 It should, since `test -e ...` is POSIX (2004).
 
@@ -11576,7 +11738,7 @@ Dave, what shell is `/bin/sh` there?
 archive/issue_comments_088554.json:
 ```json
 {
-    "body": "Replying to [comment:392 leif]:\n> Replying to [comment:302 jdemeyer]:\n> > I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\n> \n> It should, since `test -e ...` is POSIX (2004).\n> \n> Dave, what shell is `/bin/sh` there?\n\n`/bin/sh` is a borne shell, but it is **not** POSIX compatible, since to make it POSIX compatible would break backwards compatibility in Solaris. \n\nThere are however other shells, such as `/usr/xpg4/bin/sh` which are POSIX compatible. Hence there is a need to work around the Solaris shell `/bin/sh`, and do not assume that it is POSIX compatible, since it is not. \n\nDave",
+    "body": "Replying to [comment:392 leif]:\n> Replying to [comment:302 jdemeyer]:\n> > I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.\n\n> \n> It should, since `test -e ...` is POSIX (2004).\n> \n> Dave, what shell is `/bin/sh` there?\n\n\n`/bin/sh` is a borne shell, but it is **not** POSIX compatible, since to make it POSIX compatible would break backwards compatibility in Solaris. \n\nThere are however other shells, such as `/usr/xpg4/bin/sh` which are POSIX compatible. Hence there is a need to work around the Solaris shell `/bin/sh`, and do not assume that it is POSIX compatible, since it is not. \n\nDave",
     "created_at": "2010-09-25T01:39:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9343",
     "type": "issue_comment",
@@ -11588,10 +11750,12 @@ archive/issue_comments_088554.json:
 Replying to [comment:392 leif]:
 > Replying to [comment:302 jdemeyer]:
 > > I found out what prevents PARI/GP from compiling on Solaris.  The problem is that `/bin/sh` from Solaris doesn't know about `test -e <filename>`.
+
 > 
 > It should, since `test -e ...` is POSIX (2004).
 > 
 > Dave, what shell is `/bin/sh` there?
+
 
 `/bin/sh` is a borne shell, but it is **not** POSIX compatible, since to make it POSIX compatible would break backwards compatibility in Solaris. 
 

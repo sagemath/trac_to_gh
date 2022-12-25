@@ -3,7 +3,7 @@
 archive/issues_007402.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @qed777\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
     "created_at": "2009-11-06T11:24:02Z",
     "labels": [
         "component: notebook"
@@ -21,7 +21,6 @@ CC:  @qed777
 
 [`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:
 
-
 ```
 $ pwd
 /home/timdumol/devel/sagenb-0.3.5/src
@@ -30,7 +29,6 @@ $ cd /opt/sage/local/lib/python2.6/site-packages/
 $ rm -r sagenb*
 $ cat "$dev_dir" > sagenb.pth
 ```
-
 
 Thus, there will no longer be a need to `sage -python setup.py install` after every change.
 
@@ -159,7 +157,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062171.json:
 ```json
 {
-    "body": "A Sphinx warning to keep in mind:\n\n```\ncopying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n```\n",
+    "body": "A Sphinx warning to keep in mind:\n\n```\ncopying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n```",
     "created_at": "2009-11-14T00:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
@@ -176,13 +174,12 @@ copying static files... WARNING: static directory '/home/apps/sage/local/lib/pyt
 
 
 
-
 ---
 
 archive/issue_comments_062172.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n> A Sphinx warning to keep in mind:\n> {{{\n> copying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n> }}}\nSince this is only used for development, I don't think there's much of a problem. It should be possible to fix by making Sphinx read the .pth file and look there, but I am inexperienced regarding that.\n\nRegards the --dev-mode thing, I just noticed that SageNB uses disttools, not setuptools, which is why the `sage -python setup.py develop` command does not exist. This is now #7467.",
+    "body": "Replying to [comment:3 mpatel]:\n> A Sphinx warning to keep in mind:\n> \n> ```\n> copying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n> ```\n\nSince this is only used for development, I don't think there's much of a problem. It should be possible to fix by making Sphinx read the .pth file and look there, but I am inexperienced regarding that.\n\nRegards the --dev-mode thing, I just noticed that SageNB uses disttools, not setuptools, which is why the `sage -python setup.py develop` command does not exist. This is now #7467.",
     "created_at": "2009-11-15T05:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
@@ -193,9 +190,11 @@ archive/issue_comments_062172.json:
 
 Replying to [comment:3 mpatel]:
 > A Sphinx warning to keep in mind:
-> {{{
+> 
+> ```
 > copying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist
-> }}}
+> ```
+
 Since this is only used for development, I don't think there's much of a problem. It should be possible to fix by making Sphinx read the .pth file and look there, but I am inexperienced regarding that.
 
 Regards the --dev-mode thing, I just noticed that SageNB uses disttools, not setuptools, which is why the `sage -python setup.py develop` command does not exist. This is now #7467.

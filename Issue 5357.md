@@ -240,7 +240,7 @@ Michael
 archive/issue_comments_041195.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> Hi Minh,\n> \n> the timing of these patches is rather unfortunate since they are against\n> the old codebase without the ReST patches. Since that patches have\n> preference about anything else two thing can happen:\n> \n>  * Mike Hansen integrates the fixes into the ReST patch set\n>  * someone will need to rebase these patches for Sage 3.4.1.\nNo problem. Leave the attached fixes as is and don't integrate them into 3.4. I don't want to further delay the ReSTification of the documentation and hence the release of 3.4 with that beautifully formatted standard documentation. I'll try to rebase the above patches for 3.4.1.",
+    "body": "Replying to [comment:2 mabshoff]:\n> Hi Minh,\n> \n> the timing of these patches is rather unfortunate since they are against\n> the old codebase without the ReST patches. Since that patches have\n> preference about anything else two thing can happen:\n> \n> * Mike Hansen integrates the fixes into the ReST patch set\n> * someone will need to rebase these patches for Sage 3.4.1.\n\nNo problem. Leave the attached fixes as is and don't integrate them into 3.4. I don't want to further delay the ReSTification of the documentation and hence the release of 3.4 with that beautifully formatted standard documentation. I'll try to rebase the above patches for 3.4.1.",
     "created_at": "2009-02-24T23:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5357",
     "type": "issue_comment",
@@ -256,8 +256,9 @@ Replying to [comment:2 mabshoff]:
 > the old codebase without the ReST patches. Since that patches have
 > preference about anything else two thing can happen:
 > 
->  * Mike Hansen integrates the fixes into the ReST patch set
->  * someone will need to rebase these patches for Sage 3.4.1.
+> * Mike Hansen integrates the fixes into the ReST patch set
+> * someone will need to rebase these patches for Sage 3.4.1.
+
 No problem. Leave the attached fixes as is and don't integrate them into 3.4. I don't want to further delay the ReSTification of the documentation and hence the release of 3.4 with that beautifully formatted standard documentation. I'll try to rebase the above patches for 3.4.1.
 
 

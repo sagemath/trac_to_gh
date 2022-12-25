@@ -221,7 +221,7 @@ archive/issue_events_008137.json:
 archive/issue_comments_025054.json:
 ```json
 {
-    "body": "The `addprimes` function is currently available via automatic import:\n\n```\nsage: pari([3, 7]).addprimes()\n[3 ,7]\n```\n\nIf this is sufficient, then I would propose to close this ticket as invalid.\n\nA more proactive alternative would be to add a wrapper function somewhere, maybe `sage.rings.fast_arith` where things like `prime_range` live.",
+    "body": "The `addprimes` function is currently available via automatic import:\n\n```\nsage: pari([3, 7]).addprimes()\n[3 ,7]\n```\nIf this is sufficient, then I would propose to close this ticket as invalid.\n\nA more proactive alternative would be to add a wrapper function somewhere, maybe `sage.rings.fast_arith` where things like `prime_range` live.",
     "created_at": "2016-04-09T23:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3549",
     "type": "issue_comment",
@@ -236,7 +236,6 @@ The `addprimes` function is currently available via automatic import:
 sage: pari([3, 7]).addprimes()
 [3 ,7]
 ```
-
 If this is sufficient, then I would propose to close this ticket as invalid.
 
 A more proactive alternative would be to add a wrapper function somewhere, maybe `sage.rings.fast_arith` where things like `prime_range` live.

@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2369
 archive/issue_comments_015945.json:
 ```json
 {
-    "body": "> This is critical to the success of the up-coming manipulate functionality.\n\nThanks for caring about this issue so much.\n\nI don't think fixing this is critical to the success of manipulate.  I do appreciate your concern.  This ticket is pretty vague...",
+    "body": "> This is critical to the success of the up-coming manipulate functionality.\n\n\nThanks for caring about this issue so much.\n\nI don't think fixing this is critical to the success of manipulate.  I do appreciate your concern.  This ticket is pretty vague...",
     "created_at": "2008-03-02T17:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2369",
     "type": "issue_comment",
@@ -42,6 +42,7 @@ archive/issue_comments_015945.json:
 ```
 
 > This is critical to the success of the up-coming manipulate functionality.
+
 
 Thanks for caring about this issue so much.
 

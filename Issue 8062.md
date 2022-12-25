@@ -122,7 +122,7 @@ You might want to remove Martin Albrecht as a maintainer, as his name is duplica
 archive/issue_comments_070545.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> The comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n> \n> \n> A more accurate comment would be. \n> \n> Ensures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n>\n\nThat maybe better, but rather long for a short comment.\n \n> Also, add the trac ticket number #8062 to the comment. \n> \n> It's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n>\n\nSure that is a possibility. I've seen a lot of SPKG.txt files without trac numbers.\n\n> You might want to remove Martin Albrecht as a maintainer, as his name is duplicated. \n\nThat is what I did. As you can see in the patch.\n\nJaap",
+    "body": "Replying to [comment:2 drkirkby]:\n> The comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n> \n> \n> A more accurate comment would be. \n> \n> Ensures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n\n>\n\nThat maybe better, but rather long for a short comment.\n \n> Also, add the trac ticket number #8062 to the comment. \n> \n> It's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n\n>\n\nSure that is a possibility. I've seen a lot of SPKG.txt files without trac numbers.\n\n> You might want to remove Martin Albrecht as a maintainer, as his name is duplicated. \n\n\nThat is what I did. As you can see in the patch.\n\nJaap",
     "created_at": "2010-01-28T11:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
@@ -138,6 +138,7 @@ Replying to [comment:2 drkirkby]:
 > A more accurate comment would be. 
 > 
 > Ensures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. 
+
 >
 
 That maybe better, but rather long for a short comment.
@@ -145,11 +146,13 @@ That maybe better, but rather long for a short comment.
 > Also, add the trac ticket number #8062 to the comment. 
 > 
 > It's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. 
+
 >
 
 Sure that is a possibility. I've seen a lot of SPKG.txt files without trac numbers.
 
 > You might want to remove Martin Albrecht as a maintainer, as his name is duplicated. 
+
 
 That is what I did. As you can see in the patch.
 
@@ -208,7 +211,7 @@ Jaap
 archive/issue_comments_070548.json:
 ```json
 {
-    "body": "Positive review. All dynamic libraries are 64-bit. I don't know how one can determine this with static libraries, as 'ldd' does not indicate anything about them. But I assume they are probably ok\n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgivaro*\nlocal/lib/libgivaro.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libgivaro.la:\tcommands text\nlocal/lib/libgivaro.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0.0.2:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nIt would be worth trying to find out a way of confirming the exact type of static libraries, but I think the fact the shared libraries are ok, this patch is fine. \n\nDave",
+    "body": "Positive review. All dynamic libraries are 64-bit. I don't know how one can determine this with static libraries, as 'ldd' does not indicate anything about them. But I assume they are probably ok\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgivaro*\nlocal/lib/libgivaro.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libgivaro.la:\tcommands text\nlocal/lib/libgivaro.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0.0.2:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n\nIt would be worth trying to find out a way of confirming the exact type of static libraries, but I think the fact the shared libraries are ok, this patch is fine. \n\nDave",
     "created_at": "2010-01-28T13:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
@@ -219,7 +222,6 @@ archive/issue_comments_070548.json:
 
 Positive review. All dynamic libraries are 64-bit. I don't know how one can determine this with static libraries, as 'ldd' does not indicate anything about them. But I assume they are probably ok
 
-
 ```
 drkirkby@hawk:~/sage-4.3.1$ file local/lib/libgivaro*
 local/lib/libgivaro.a:	current ar archive, not a dynamic executable or shared object
@@ -228,7 +230,6 @@ local/lib/libgivaro.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically 
 local/lib/libgivaro.so.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 local/lib/libgivaro.so.0.0.2:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
-
 
 It would be worth trying to find out a way of confirming the exact type of static libraries, but I think the fact the shared libraries are ok, this patch is fine. 
 

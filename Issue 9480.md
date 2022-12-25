@@ -3,7 +3,7 @@
 archive/issues_009480.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\n\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
+    "body": "Assignee: @burcin\n\nThis is related to #8942. The limit function can output either\n`+Infinity`, `-Infinity`, or `Infinity`, the later\nmeaning a complex infinity. For example:\n\n```\nsage: limit(1/x, x=0, dir='above')\n+Infinity\nsage: limit(1/x, x=0, dir='below')\n-Infinity\nsage: limit(1/x, x=0)             \nInfinity\n```\nHowever Sage does not distinguish `+Infinity` and `Infinity`:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l2=limit(1/x, x=0, dir='below')\nsage: l3=limit(1/x, x=0)\nsage: l1==l3\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9480\n\n",
     "created_at": "2010-07-12T12:48:51Z",
     "labels": [
         "component: calculus",
@@ -30,7 +30,6 @@ sage: limit(1/x, x=0, dir='below')
 sage: limit(1/x, x=0)             
 Infinity
 ```
-
 However Sage does not distinguish `+Infinity` and `Infinity`:
 
 ```
@@ -40,7 +39,6 @@ sage: l3=limit(1/x, x=0)
 sage: l1==l3
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9480
 
@@ -70,7 +68,7 @@ archive/issue_events_023501.json:
 archive/issue_comments_090855.json:
 ```json
 {
-    "body": "This is more of a problem with the equality checking rules in Sage and the coercion system than symbolics, so I'm changing the component to coercion.\n\nIf the arguments compare equal when coerced to a common parent, Sage returns `True` for the equality. In this case, the coercion goes to the `UnsignedInfinityRing`, where `+Infinity` is mapped to `unsigned_infinity`.\n\n\n```\nsage: UnsignedInfinityRing.has_coerce_map_from(InfinityRing)\nTrue\nsage: Infinity\n+Infinity\nsage: UnsignedInfinityRing.coerce(Infinity)\nInfinity\n```\n\n\nBTW, isn't there an inconsistency in the capitalization of `Infinity`. Shouldn't it be lowercase according to Python conventions?",
+    "body": "This is more of a problem with the equality checking rules in Sage and the coercion system than symbolics, so I'm changing the component to coercion.\n\nIf the arguments compare equal when coerced to a common parent, Sage returns `True` for the equality. In this case, the coercion goes to the `UnsignedInfinityRing`, where `+Infinity` is mapped to `unsigned_infinity`.\n\n```\nsage: UnsignedInfinityRing.has_coerce_map_from(InfinityRing)\nTrue\nsage: Infinity\n+Infinity\nsage: UnsignedInfinityRing.coerce(Infinity)\nInfinity\n```\n\nBTW, isn't there an inconsistency in the capitalization of `Infinity`. Shouldn't it be lowercase according to Python conventions?",
     "created_at": "2010-08-29T10:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ This is more of a problem with the equality checking rules in Sage and the coerc
 
 If the arguments compare equal when coerced to a common parent, Sage returns `True` for the equality. In this case, the coercion goes to the `UnsignedInfinityRing`, where `+Infinity` is mapped to `unsigned_infinity`.
 
-
 ```
 sage: UnsignedInfinityRing.has_coerce_map_from(InfinityRing)
 True
@@ -92,7 +89,6 @@ sage: Infinity
 sage: UnsignedInfinityRing.coerce(Infinity)
 Infinity
 ```
-
 
 BTW, isn't there an inconsistency in the capitalization of `Infinity`. Shouldn't it be lowercase according to Python conventions?
 
@@ -209,7 +205,7 @@ archive/issue_events_023503.json:
 archive/issue_comments_090860.json:
 ```json
 {
-    "body": "in Sage 5.11 we get:\n\n```\nsage: l1=limit(1/x, x=0, dir='right'); l1\n+Infinity\nsage: l2=limit(1/x, x=0, dir='left'); l2 \n-Infinity\nsage: l3=limit(1/x, x=0); l3             \nInfinity\nsage: bool(l1==l2), bool(l2==l3), bool(l3==l1)\n(False, False, False)\n```\n\nhowever the objects returned are in SR and not in the `infinity` class:\n\n```\nsage: type(l1), l1.parent()\n(sage.symbolic.expression.Expression, Symbolic Ring)\nsage: p1=+Infinity\nsage: type(p1), p1.parent()\n(sage.rings.infinity.PlusInfinity, The Infinity Ring)\n```\n\nI propose to close that ticket, and open a new one about the above issue (or add it to an existing ticket).\n\nPaul",
+    "body": "in Sage 5.11 we get:\n\n```\nsage: l1=limit(1/x, x=0, dir='right'); l1\n+Infinity\nsage: l2=limit(1/x, x=0, dir='left'); l2 \n-Infinity\nsage: l3=limit(1/x, x=0); l3             \nInfinity\nsage: bool(l1==l2), bool(l2==l3), bool(l3==l1)\n(False, False, False)\n```\nhowever the objects returned are in SR and not in the `infinity` class:\n\n```\nsage: type(l1), l1.parent()\n(sage.symbolic.expression.Expression, Symbolic Ring)\nsage: p1=+Infinity\nsage: type(p1), p1.parent()\n(sage.rings.infinity.PlusInfinity, The Infinity Ring)\n```\nI propose to close that ticket, and open a new one about the above issue (or add it to an existing ticket).\n\nPaul",
     "created_at": "2013-08-25T13:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
@@ -230,7 +226,6 @@ Infinity
 sage: bool(l1==l2), bool(l2==l3), bool(l3==l1)
 (False, False, False)
 ```
-
 however the objects returned are in SR and not in the `infinity` class:
 
 ```
@@ -240,7 +235,6 @@ sage: p1=+Infinity
 sage: type(p1), p1.parent()
 (sage.rings.infinity.PlusInfinity, The Infinity Ring)
 ```
-
 I propose to close that ticket, and open a new one about the above issue (or add it to an existing ticket).
 
 Paul
@@ -270,7 +264,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090862.json:
 ```json
 {
-    "body": "> or add it to an existing ticket\n\nI've added a comment in #14857\n\nPaul",
+    "body": "> or add it to an existing ticket\n\n\nI've added a comment in #14857\n\nPaul",
     "created_at": "2013-08-25T13:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
@@ -280,6 +274,7 @@ archive/issue_comments_090862.json:
 ```
 
 > or add it to an existing ticket
+
 
 I've added a comment in #14857
 
@@ -332,7 +327,7 @@ Nathann
 archive/issue_comments_090865.json:
 ```json
 {
-    "body": "in Sage 6.0 we get:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l3=limit(1/x, x=0)\nsage: bool(l1==l3)\nFalse\n```\n\nthus the issue is fixed now, and I change the status to \"fixed\".\n\nPaul",
+    "body": "in Sage 6.0 we get:\n\n```\nsage: l1=limit(1/x, x=0, dir='above')\nsage: l3=limit(1/x, x=0)\nsage: bool(l1==l3)\nFalse\n```\nthus the issue is fixed now, and I change the status to \"fixed\".\n\nPaul",
     "created_at": "2014-01-03T09:36:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9480",
     "type": "issue_comment",
@@ -349,7 +344,6 @@ sage: l3=limit(1/x, x=0)
 sage: bool(l1==l3)
 False
 ```
-
 thus the issue is fixed now, and I change the status to "fixed".
 
 Paul

@@ -112,7 +112,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084307.json:
 ```json
 {
-    "body": "Replying to [comment:2 nthiery]:\n> Oops, how did that one get through without breaking the tests?\n\nI think almost everywhere it gets exercised, it is marked \"# random.\"  I did have it messing up on my doctests on the latex() routines, which is how I caught it.\n\n> Please add a test exhibiting the (now fixed)\n> problem to avoid later regression; then, if all test pass, you may set\n> a positive review on my behalf.\n\nI knew that was too easy - totally forgot to add a test against the bug.  ;-)  Will do in the next day or two.  Thanks for the review and the reminder.\n\nRob",
+    "body": "Replying to [comment:2 nthiery]:\n> Oops, how did that one get through without breaking the tests?\n\n\nI think almost everywhere it gets exercised, it is marked \"# random.\"  I did have it messing up on my doctests on the latex() routines, which is how I caught it.\n\n> Please add a test exhibiting the (now fixed)\n> problem to avoid later regression; then, if all test pass, you may set\n> a positive review on my behalf.\n\n\nI knew that was too easy - totally forgot to add a test against the bug.  ;-)  Will do in the next day or two.  Thanks for the review and the reminder.\n\nRob",
     "created_at": "2010-06-01T17:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
@@ -124,11 +124,13 @@ archive/issue_comments_084307.json:
 Replying to [comment:2 nthiery]:
 > Oops, how did that one get through without breaking the tests?
 
+
 I think almost everywhere it gets exercised, it is marked "# random."  I did have it messing up on my doctests on the latex() routines, which is how I caught it.
 
 > Please add a test exhibiting the (now fixed)
 > problem to avoid later regression; then, if all test pass, you may set
 > a positive review on my behalf.
+
 
 I knew that was too easy - totally forgot to add a test against the bug.  ;-)  Will do in the next day or two.  Thanks for the review and the reminder.
 

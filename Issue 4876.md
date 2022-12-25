@@ -52,7 +52,7 @@ Also:
 archive/issue_comments_036846.json:
 ```json
 {
-    "body": "To test this, you can do\n\n  sage -i http://sage.math.washington.edu/home/was/patches/kash3-2008-07-31.spkg\n\non both a linux and OS X box.  Then do \"sage -kash\" to see if it works.  Then look do \n\n```\ntar xf SAGE_ROOT/spkg/optional/kash3-2008-07-31.spkg\ncd kash3-2008-07-31\n# look around\n```\n",
+    "body": "To test this, you can do\n\n  sage -i http://sage.math.washington.edu/home/was/patches/kash3-2008-07-31.spkg\n\non both a linux and OS X box.  Then do \"sage -kash\" to see if it works.  Then look do \n\n```\ntar xf SAGE_ROOT/spkg/optional/kash3-2008-07-31.spkg\ncd kash3-2008-07-31\n# look around\n```",
     "created_at": "2008-12-24T20:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ tar xf SAGE_ROOT/spkg/optional/kash3-2008-07-31.spkg
 cd kash3-2008-07-31
 # look around
 ```
-
 
 
 

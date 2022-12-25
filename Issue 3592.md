@@ -3,7 +3,7 @@
 archive/issues_003592.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n1) Put there the attached sympy-0.6.0.spkg. \n\n2) Then apply the attached patch to Sage and rebuild Sage with \"sage -b\"\n\n3) make sure the test_sympy.py test works, this should be the outcome:\n\n\n\n```\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py\nsage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.2 seconds\n```\n\n\n4) make sure all tests work. The result of:\n\n$ ./sage -tp 6 devel/sage/sage &> test.log\n\nis attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3592\n\n",
+    "body": "Assignee: @garyfurnish\n\n1) Put there the attached sympy-0.6.0.spkg. \n\n2) Then apply the attached patch to Sage and rebuild Sage with \"sage -b\"\n\n3) make sure the test_sympy.py test works, this should be the outcome:\n\n\n```\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py\nsage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.2 seconds\n```\n\n4) make sure all tests work. The result of:\n\n$ ./sage -tp 6 devel/sage/sage &> test.log\n\nis attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3592\n\n",
     "created_at": "2008-07-07T22:06:16Z",
     "labels": [
         "component: calculus",
@@ -25,7 +25,6 @@ Assignee: @garyfurnish
 3) make sure the test_sympy.py test works, this should be the outcome:
 
 
-
 ```
 $ ./sage -t devel/sage/sage/calculus/test_sympy.py
 sage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy.py
@@ -35,7 +34,6 @@ sage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy
 All tests passed!
 Total time for all tests: 5.2 seconds
 ```
-
 
 4) make sure all tests work. The result of:
 

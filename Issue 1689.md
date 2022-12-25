@@ -107,7 +107,7 @@ Michael
 archive/issue_comments_010704.json:
 ```json
 {
-    "body": "\n```\nNote that you absolutely cannot build Sage on itanium by\njust extracting the tarball and typing make, because Sage\nincludes binaries for Fortran but not on Itanium. Thus you\nhave to explicitly tell the build process about the fortran\ncompiler and library location.  Do this by typing\n\n  export SAGE_FORTRAN=/exact/path/to/gfortran\n  export SAGE_FORTRAN_LIB=/path/to/fortran/libs/\n\nNote that SAGE_FORTRAN_LIB is not documented\nanywhere (http://trac.sagemath.org/sage_trac/ticket/1689),\nand we've got away with this so far since there is only\none Itanium user of Sage in the world, at present.\n\n -- William\n```\n",
+    "body": "```\nNote that you absolutely cannot build Sage on itanium by\njust extracting the tarball and typing make, because Sage\nincludes binaries for Fortran but not on Itanium. Thus you\nhave to explicitly tell the build process about the fortran\ncompiler and library location.  Do this by typing\n\n  export SAGE_FORTRAN=/exact/path/to/gfortran\n  export SAGE_FORTRAN_LIB=/path/to/fortran/libs/\n\nNote that SAGE_FORTRAN_LIB is not documented\nanywhere (http://trac.sagemath.org/sage_trac/ticket/1689),\nand we've got away with this so far since there is only\none Itanium user of Sage in the world, at present.\n\n -- William\n```",
     "created_at": "2008-04-11T00:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1689",
     "type": "issue_comment",
@@ -115,7 +115,6 @@ archive/issue_comments_010704.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Note that you absolutely cannot build Sage on itanium by
@@ -134,7 +133,6 @@ one Itanium user of Sage in the world, at present.
 
  -- William
 ```
-
 
 
 

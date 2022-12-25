@@ -52,7 +52,7 @@ The attached patch fixes a few of the docstring problems mentioned by Dan Drake.
 archive/issue_comments_015459.json:
 ```json
 {
-    "body": "Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by @dandrake created at 2008-02-27 23:44:49\n\nReplying to [comment:1 wdj]:\n> Perhaps the lower case functions should be removed from combinat/all.py? \n\nThey should first be marked deprecated, and later removed. The exact process for doing this is not yet determined; there was some discussion on sage-devel in January. Until more has been decided on that front, I think we should just say in the docstrings \"this function will be deprecated in the future, and eventually removed; use Foo.whatever() instead\".",
+    "body": "Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.patch) by @dandrake created at 2008-02-27 23:44:49\n\nReplying to [comment:1 wdj]:\n> Perhaps the lower case functions should be removed from combinat/all.py? \n\n\nThey should first be marked deprecated, and later removed. The exact process for doing this is not yet determined; there was some discussion on sage-devel in January. Until more has been decided on that front, I think we should just say in the docstrings \"this function will be deprecated in the future, and eventually removed; use Foo.whatever() instead\".",
     "created_at": "2008-02-27T23:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
@@ -65,6 +65,7 @@ Attachment [8710.patch](tarball://root/attachments/some-uuid/ticket2328/8710.pat
 
 Replying to [comment:1 wdj]:
 > Perhaps the lower case functions should be removed from combinat/all.py? 
+
 
 They should first be marked deprecated, and later removed. The exact process for doing this is not yet determined; there was some discussion on sage-devel in January. Until more has been decided on that front, I think we should just say in the docstrings "this function will be deprecated in the future, and eventually removed; use Foo.whatever() instead".
 
@@ -151,7 +152,7 @@ I had trouble applying combinat-doc.2.patch against 2.10.2, 2.10.3.rc2 and 2.10.
 archive/issue_comments_015464.json:
 ```json
 {
-    "body": "Replying to [comment:5 wdj]:\n> I had trouble applying combinat-doc.2.patch against 2.10.2, 2.10.3.rc2 and 2.10.rc3, so I don't know what this is supposed to apply against.\nMy patch was against 2.10.2 + your 8710 patch + the #2432 patch...AFAIK mhansen just fiddled with a couple commented lines to get combinat-doc.2.patch.",
+    "body": "Replying to [comment:5 wdj]:\n> I had trouble applying combinat-doc.2.patch against 2.10.2, 2.10.3.rc2 and 2.10.rc3, so I don't know what this is supposed to apply against.\n\nMy patch was against 2.10.2 + your 8710 patch + the #2432 patch...AFAIK mhansen just fiddled with a couple commented lines to get combinat-doc.2.patch.",
     "created_at": "2008-03-10T22:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2328",
     "type": "issue_comment",
@@ -162,6 +163,7 @@ archive/issue_comments_015464.json:
 
 Replying to [comment:5 wdj]:
 > I had trouble applying combinat-doc.2.patch against 2.10.2, 2.10.3.rc2 and 2.10.rc3, so I don't know what this is supposed to apply against.
+
 My patch was against 2.10.2 + your 8710 patch + the #2432 patch...AFAIK mhansen just fiddled with a couple commented lines to get combinat-doc.2.patch.
 
 

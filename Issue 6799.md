@@ -3,7 +3,7 @@
 archive/issues_006799.json:
 ```json
 {
-    "body": "It takes too long to check whether x is in a list in new symbolics\n\n\n```\nsage: var('x,x1,x2,x3,x4')\n(x, x1, x2, x3, x4)\nsage: f = function('f')\nsage: mylist = [x1,x2,x3,x4,f(x1),f(x2),f(x3),f(x4)]\n\nsage: timeit('x in mylist')\n5 loops, best of 3: 461 ms per loop\n```\n\n\nIf we need to check it couple of more times\nthen it becomes worse\n\n```\nsage: timeit('x in mylist')\n5 loops, best of 3: 1.26 s per loop\nsage: timeit('x in mylist')\n5 loops, best of 3: 3.4 s per loop\n```\n\n\nFor a comparison\n\n```\nsage: timeit('x1 in mylist')\n625 loops, best of 3: 473 ns per loop\n```\n\n\nReason for this huge discrepancy stems from the fact that\nexcept for last example, in all previous cases maxima is called\nto check the equality. \n\nSee this thread for more:\n\n http://groups.google.com/group/sage-devel/browse_thread/thread/d2275cb5b3d63317\n\nIssue created by migration from https://trac.sagemath.org/ticket/6799\n\n",
+    "body": "It takes too long to check whether x is in a list in new symbolics\n\n```\nsage: var('x,x1,x2,x3,x4')\n(x, x1, x2, x3, x4)\nsage: f = function('f')\nsage: mylist = [x1,x2,x3,x4,f(x1),f(x2),f(x3),f(x4)]\n\nsage: timeit('x in mylist')\n5 loops, best of 3: 461 ms per loop\n```\n\nIf we need to check it couple of more times\nthen it becomes worse\n\n```\nsage: timeit('x in mylist')\n5 loops, best of 3: 1.26 s per loop\nsage: timeit('x in mylist')\n5 loops, best of 3: 3.4 s per loop\n```\n\nFor a comparison\n\n```\nsage: timeit('x1 in mylist')\n625 loops, best of 3: 473 ns per loop\n```\n\nReason for this huge discrepancy stems from the fact that\nexcept for last example, in all previous cases maxima is called\nto check the equality. \n\nSee this thread for more:\n\n http://groups.google.com/group/sage-devel/browse_thread/thread/d2275cb5b3d63317\n\nIssue created by migration from https://trac.sagemath.org/ticket/6799\n\n",
     "created_at": "2009-08-21T23:20:16Z",
     "labels": [
         "component: symbolics"
@@ -17,7 +17,6 @@ archive/issues_006799.json:
 ```
 It takes too long to check whether x is in a list in new symbolics
 
-
 ```
 sage: var('x,x1,x2,x3,x4')
 (x, x1, x2, x3, x4)
@@ -27,7 +26,6 @@ sage: mylist = [x1,x2,x3,x4,f(x1),f(x2),f(x3),f(x4)]
 sage: timeit('x in mylist')
 5 loops, best of 3: 461 ms per loop
 ```
-
 
 If we need to check it couple of more times
 then it becomes worse
@@ -39,14 +37,12 @@ sage: timeit('x in mylist')
 5 loops, best of 3: 3.4 s per loop
 ```
 
-
 For a comparison
 
 ```
 sage: timeit('x1 in mylist')
 625 loops, best of 3: 473 ns per loop
 ```
-
 
 Reason for this huge discrepancy stems from the fact that
 except for last example, in all previous cases maxima is called

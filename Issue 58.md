@@ -3,7 +3,7 @@
 archive/issues_000058.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nI would like to be able to type\n\n```\nsage: X = Set(range(5))\nsage: X.subsets()  # or X.powerset()\n```\n\nand get iterator over the power set.  \n\nI wold also like to do \n\n```\nsage: X.subsets(2)\n```\n\nand get all 2-element subsets.\n\nIt seems that even Python's built-in set type doesn't do these basic operations...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/58\n\n",
+    "body": "Assignee: somebody\n\nI would like to be able to type\n\n```\nsage: X = Set(range(5))\nsage: X.subsets()  # or X.powerset()\n```\nand get iterator over the power set.  \n\nI wold also like to do \n\n```\nsage: X.subsets(2)\n```\nand get all 2-element subsets.\n\nIt seems that even Python's built-in set type doesn't do these basic operations...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/58\n\n",
     "created_at": "2006-09-14T10:45:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -24,7 +24,6 @@ I would like to be able to type
 sage: X = Set(range(5))
 sage: X.subsets()  # or X.powerset()
 ```
-
 and get iterator over the power set.  
 
 I wold also like to do 
@@ -32,7 +31,6 @@ I wold also like to do
 ```
 sage: X.subsets(2)
 ```
-
 and get all 2-element subsets.
 
 It seems that even Python's built-in set type doesn't do these basic operations...
@@ -100,7 +98,7 @@ archive/issue_events_000116.json:
 archive/issue_comments_000303.json:
 ```json
 {
-    "body": "The patch below uses Mike's combinatorial stuff.\n\n\n```\ndiff -r 58095d7eaad0 sage/sets/set.py\n--- a/sage/sets/set.py  Thu Oct 25 00:59:26 2007 -0700\n+++ b/sage/sets/set.py  Thu Oct 25 16:21:12 2007 -0500\n@@ -472,6 +472,23 @@ class Set_object(Set_generic):\n         \"\"\"\n         return self.__object\n\n+\n+    def subsets(self,size=None):\n+        \"\"\"\n+        Return the Subset object representing the subsets of a set.  If size\n+        is specified, return the subsets of that size.\n+\n+        EXAMPLES:\n+            sage: X = Set([1,2,3])\n+            sage: list(X.subsets())\n+            [{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}]\n+            sage: list(X.subsets(2))\n+            [{1, 2}, {1, 3}, {2, 3}]\n+\n+        \"\"\"\n+        from sage.combinat.subset import Subsets\n+        return Subsets(self,size)\n+\n class Set_object_enumerated(Set_object):\n     \"\"\"\n     A finite enumerated set.\n```\n",
+    "body": "The patch below uses Mike's combinatorial stuff.\n\n```\ndiff -r 58095d7eaad0 sage/sets/set.py\n--- a/sage/sets/set.py  Thu Oct 25 00:59:26 2007 -0700\n+++ b/sage/sets/set.py  Thu Oct 25 16:21:12 2007 -0500\n@@ -472,6 +472,23 @@ class Set_object(Set_generic):\n         \"\"\"\n         return self.__object\n\n+\n+    def subsets(self,size=None):\n+        \"\"\"\n+        Return the Subset object representing the subsets of a set.  If size\n+        is specified, return the subsets of that size.\n+\n+        EXAMPLES:\n+            sage: X = Set([1,2,3])\n+            sage: list(X.subsets())\n+            [{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}]\n+            sage: list(X.subsets(2))\n+            [{1, 2}, {1, 3}, {2, 3}]\n+\n+        \"\"\"\n+        from sage.combinat.subset import Subsets\n+        return Subsets(self,size)\n+\n class Set_object_enumerated(Set_object):\n     \"\"\"\n     A finite enumerated set.\n```",
     "created_at": "2007-10-25T21:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/58",
     "type": "issue_comment",
@@ -110,7 +108,6 @@ archive/issue_comments_000303.json:
 ```
 
 The patch below uses Mike's combinatorial stuff.
-
 
 ```
 diff -r 58095d7eaad0 sage/sets/set.py
@@ -141,7 +138,6 @@ diff -r 58095d7eaad0 sage/sets/set.py
      """
      A finite enumerated set.
 ```
-
 
 
 

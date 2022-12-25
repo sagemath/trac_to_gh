@@ -3,7 +3,7 @@
 archive/issues_003751.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe output of the class_number() method for QuadraticFields is a Python integer. Would it be possible to change this so that it returned a Sage integer?\n\n\n```\nsage: K=QuadraticField(-1,'a')\nsage: K.class_number()\n1\nsage: type(K.class_number())\n<type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3751\n\n",
+    "body": "Assignee: @williamstein\n\nThe output of the class_number() method for QuadraticFields is a Python integer. Would it be possible to change this so that it returned a Sage integer?\n\n```\nsage: K=QuadraticField(-1,'a')\nsage: K.class_number()\n1\nsage: type(K.class_number())\n<type 'int'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3751\n\n",
     "created_at": "2008-07-31T20:37:09Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 The output of the class_number() method for QuadraticFields is a Python integer. Would it be possible to change this so that it returned a Sage integer?
 
-
 ```
 sage: K=QuadraticField(-1,'a')
 sage: K.class_number()
@@ -29,7 +28,6 @@ sage: K.class_number()
 sage: type(K.class_number())
 <type 'int'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3751
 

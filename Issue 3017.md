@@ -3,7 +3,7 @@
 archive/issues_003017.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAn invalid link is present in sage 3.0 (after make install):\n\n```\n[root@achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori\nlrwxrwxrwx 1 zimmerma cacao 39 2008-04-24 14:43 ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori -> ../../../share/polybori/pyroot/polybori\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3017\n\n",
+    "body": "Assignee: mabshoff\n\nAn invalid link is present in sage 3.0 (after make install):\n\n```\n[root@achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori\nlrwxrwxrwx 1 zimmerma cacao 39 2008-04-24 14:43 ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori -> ../../../share/polybori/pyroot/polybori\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3017\n\n",
     "created_at": "2008-04-24T12:54:29Z",
     "labels": [
         "component: distribution",
@@ -25,7 +25,6 @@ An invalid link is present in sage 3.0 (after make install):
 [root@achille local]# ls -l ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori
 lrwxrwxrwx 1 zimmerma cacao 39 2008-04-24 14:43 ./sage-3.0/sage/local/lib/python2.5/site-packages/polybori/polybori -> ../../../share/polybori/pyroot/polybori
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3017
 

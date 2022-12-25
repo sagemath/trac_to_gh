@@ -93,7 +93,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062037.json:
 ```json
 {
-    "body": "Note: The patches depend on #7343.  Please apply parts A *and* B, in order.  To test the test report generator, try\n\n```python\nsage: from sagenb.testing.run_tests import run_and_report; run_and_report()\n```\n\nThis should run the notebook's Selenium test suite, generate and write a self-contained `report.html`, and open the report in `SAGE_BROWSER`.\n\nRemarks:\n\n* Part A adds [HTMLTestRunner](http://tungwaiyip.info/software/HTMLTestRunner.html).\n* Part B makes significant changes to `HTMLTestRunner.py` and sets up the test runner for sagenb.\n* The runner captures all output, e.g., we can display information from passing tests, too.\n\nTo do, but not necessarily in this ticket:\n\n* Stabilize the results table's column widths, especially when toggling tracebacks.\n* Support multiple results tables.\n* Use the runner to display doctest results.\n* Use a backend server to select, run, and monitor live tests.",
+    "body": "Note: The patches depend on #7343.  Please apply parts A *and* B, in order.  To test the test report generator, try\n\n```python\nsage: from sagenb.testing.run_tests import run_and_report; run_and_report()\n```\nThis should run the notebook's Selenium test suite, generate and write a self-contained `report.html`, and open the report in `SAGE_BROWSER`.\n\nRemarks:\n\n* Part A adds [HTMLTestRunner](http://tungwaiyip.info/software/HTMLTestRunner.html).\n* Part B makes significant changes to `HTMLTestRunner.py` and sets up the test runner for sagenb.\n* The runner captures all output, e.g., we can display information from passing tests, too.\n\nTo do, but not necessarily in this ticket:\n\n* Stabilize the results table's column widths, especially when toggling tracebacks.\n* Support multiple results tables.\n* Use the runner to display doctest results.\n* Use a backend server to select, run, and monitor live tests.",
     "created_at": "2009-11-06T14:59:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -107,7 +107,6 @@ Note: The patches depend on #7343.  Please apply parts A *and* B, in order.  To 
 ```python
 sage: from sagenb.testing.run_tests import run_and_report; run_and_report()
 ```
-
 This should run the notebook's Selenium test suite, generate and write a self-contained `report.html`, and open the report in `SAGE_BROWSER`.
 
 Remarks:
@@ -148,7 +147,7 @@ Mistake: `run_and_report`'s docstring should say `open_viewer` defaults to `True
 archive/issue_comments_062039.json:
 ```json
 {
-    "body": "Doctesting *may* be straightforward.  Given `foo.py`, `sage-doctest` preparses its triple-quoted blocks and writes them as docstrings of `example_*` functions in `.doctest_foo.py`.  This file calls on itself a subclass of `doctest.DocTestRunner`.  Since Python's [doctest](http://docs.python.org/library/doctest.html) module can also generate [unittests](http://docs.python.org/library/unittest.html), we can \"replace\" the end of `.doctest_foo.py` with, e.g.,\n\n```\nif __name__ ==  '__main__':\n    from sagenb.testing.run_tests import run_and_report\n    import doctest\n    run_and_report(doctest.DocTestSuite())\n    sys.exit(0)\n```\n\nAlthough the test names `example_*` are not informative, `sage -python .doctest_foo_mod.py` runs the tests and makes a report!",
+    "body": "Doctesting *may* be straightforward.  Given `foo.py`, `sage-doctest` preparses its triple-quoted blocks and writes them as docstrings of `example_*` functions in `.doctest_foo.py`.  This file calls on itself a subclass of `doctest.DocTestRunner`.  Since Python's [doctest](http://docs.python.org/library/doctest.html) module can also generate [unittests](http://docs.python.org/library/unittest.html), we can \"replace\" the end of `.doctest_foo.py` with, e.g.,\n\n```\nif __name__ ==  '__main__':\n    from sagenb.testing.run_tests import run_and_report\n    import doctest\n    run_and_report(doctest.DocTestSuite())\n    sys.exit(0)\n```\nAlthough the test names `example_*` are not informative, `sage -python .doctest_foo_mod.py` runs the tests and makes a report!",
     "created_at": "2009-11-08T10:33:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -166,7 +165,6 @@ if __name__ ==  '__main__':
     run_and_report(doctest.DocTestSuite())
     sys.exit(0)
 ```
-
 Although the test names `example_*` are not informative, `sage -python .doctest_foo_mod.py` runs the tests and makes a report!
 
 
@@ -273,7 +271,7 @@ There's sample report at
 archive/issue_comments_062044.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> There's sample report at\n> \n>  * http://sage.math.washington.edu/home/mpatel/trac/7390/report.html\n\nIf you don't mind, I can try restyling the tests. The colors are a bit jarring, in my opinion.",
+    "body": "Replying to [comment:7 mpatel]:\n> There's sample report at\n> \n> * http://sage.math.washington.edu/home/mpatel/trac/7390/report.html\n\n\nIf you don't mind, I can try restyling the tests. The colors are a bit jarring, in my opinion.",
     "created_at": "2009-11-15T07:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
@@ -285,7 +283,8 @@ archive/issue_comments_062044.json:
 Replying to [comment:7 mpatel]:
 > There's sample report at
 > 
->  * http://sage.math.washington.edu/home/mpatel/trac/7390/report.html
+> * http://sage.math.washington.edu/home/mpatel/trac/7390/report.html
+
 
 If you don't mind, I can try restyling the tests. The colors are a bit jarring, in my opinion.
 

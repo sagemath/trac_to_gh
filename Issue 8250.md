@@ -3,7 +3,7 @@
 archive/issues_008250.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ClassCall, descriptor, __classget__\n\nFrom the documentation:\n\n(using this patch) we show how to implement a nested class Foo.Bar\nwith a binding behavior, as if it was a method of Foo: namely for\n``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to\n``Foo.Bar(foo)``::\n\n\n```\n            sage: import functools\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo:\n            ...       class Bar(object):\n            ...           __metaclass__ = ClasscallMetaclass\n            ...           @staticmethod\n            ...           def __classget__(cls, instance, owner):\n            ...               print \"calling __classget__\"\n            ...               if instance is None:\n            ...                   return cls\n            ...               return functools.partial(cls, instance)\n            ...           def __init__(self, instance):\n            ...               self.instance = instance\n            sage: foo = Foo()\n            sage: bar = foo.Bar()\n            calling __classget__\n            sage: bar.instance == foo\n            True\n```\n\n\nThis will be used by the upcoming improvements to the functorial constructions in categories\n\nIssue created by migration from https://trac.sagemath.org/ticket/8250\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ClassCall, descriptor, __classget__\n\nFrom the documentation:\n\n(using this patch) we show how to implement a nested class Foo.Bar\nwith a binding behavior, as if it was a method of Foo: namely for\n``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to\n``Foo.Bar(foo)``::\n\n```\n            sage: import functools\n            sage: from sage.misc.classcall_metaclass import ClasscallMetaclass\n            sage: class Foo:\n            ...       class Bar(object):\n            ...           __metaclass__ = ClasscallMetaclass\n            ...           @staticmethod\n            ...           def __classget__(cls, instance, owner):\n            ...               print \"calling __classget__\"\n            ...               if instance is None:\n            ...                   return cls\n            ...               return functools.partial(cls, instance)\n            ...           def __init__(self, instance):\n            ...               self.instance = instance\n            sage: foo = Foo()\n            sage: bar = foo.Bar()\n            calling __classget__\n            sage: bar.instance == foo\n            True\n```\n\nThis will be used by the upcoming improvements to the functorial constructions in categories\n\nIssue created by migration from https://trac.sagemath.org/ticket/8250\n\n",
     "created_at": "2010-02-12T15:12:34Z",
     "labels": [
         "component: categories"
@@ -28,7 +28,6 @@ with a binding behavior, as if it was a method of Foo: namely for
 ``foo`` an instance of ``Foo``, calling ``foo.Bar()`` is equivalent to
 ``Foo.Bar(foo)``::
 
-
 ```
             sage: import functools
             sage: from sage.misc.classcall_metaclass import ClasscallMetaclass
@@ -49,7 +48,6 @@ with a binding behavior, as if it was a method of Foo: namely for
             sage: bar.instance == foo
             True
 ```
-
 
 This will be used by the upcoming improvements to the functorial constructions in categories
 
@@ -106,7 +104,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072854.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\nThey are a few problem with this patch:\n- it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?\n- I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n- It took me half an hour to fully understand what's happening. In particular the doc is wrong in saying that \n\n```\nThis method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``\n```\n\nindeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? \n\nFlorent",
+    "body": "Hi Nicolas,\n\nThey are a few problem with this patch:\n- it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?\n- I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n- It took me half an hour to fully understand what's happening. In particular the doc is wrong in saying that \n\n```\nThis method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``\n```\nindeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? \n\nFlorent",
     "created_at": "2010-02-12T19:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
@@ -125,7 +123,6 @@ They are a few problem with this patch:
 ```
 This method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``
 ```
-
 indeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? 
 
 Florent
@@ -155,7 +152,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_072856.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> Hi Nicolas,\n> \n> They are a few problem with this patch:\n>  - it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?\n\nThanks for spotting this; that could explain some trouble I was having right now :-)\n\n>  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n\nLet's discuss this over the phone.\n\n>  - It took me half an hour to fully understand what's happening. In particular the doc is wrong in saying that \n> {{{\n> This method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``\n> }}}\n> indeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? \n\nOops right. It calls __classget__ as per the descriptor protocol (which includes a 3rd argument).\n\nPlease let me know if you already made a patch on top on this one in the queue.",
+    "body": "Replying to [comment:3 hivert]:\n> Hi Nicolas,\n> \n> They are a few problem with this patch:\n> - it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?\n\n\nThanks for spotting this; that could explain some trouble I was having right now :-)\n\n>  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n\n\nLet's discuss this over the phone.\n\n>  - It took me half an hour to fully understand what's happening. In particular the doc is wrong in saying that \n \n> {{{\n> This method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``\n> }}}\n> indeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? \n\n\nOops right. It calls __classget__ as per the descriptor protocol (which includes a 3rd argument).\n\nPlease let me know if you already made a patch on top on this one in the queue.",
     "created_at": "2010-02-12T21:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
@@ -168,19 +165,23 @@ Replying to [comment:3 hivert]:
 > Hi Nicolas,
 > 
 > They are a few problem with this patch:
->  - it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?
+> - it seems that line 119-125 (in the file) does not belongs to there ! They are after a return. Are they a bad copy paste ?
+
 
 Thanks for spotting this; that could explain some trouble I was having right now :-)
 
 >  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`
 
+
 Let's discuss this over the phone.
 
 >  - It took me half an hour to fully understand what's happening. In particular the doc is wrong in saying that 
+ 
 > {{{
 > This method implements a binding behavior for ``foo.cls`` by delegating it to ``cls.__classget__(foo)``
 > }}}
 > indeed ``cls.__classget__(foo, Foo)`` is called. Can you confirm this ? 
+
 
 Oops right. It calls __classget__ as per the descriptor protocol (which includes a 3rd argument).
 
@@ -193,7 +194,7 @@ Please let me know if you already made a patch on top on this one in the queue.
 archive/issue_comments_072857.json:
 ```json
 {
-    "body": "Replying to [comment:5 nthiery]:\n> >  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n> \n> Let's discuss this over the phone.\n\nOk.\n\n> Please let me know if you already made a patch on top on this one in the queue.\n\nplease see `trac_8250-classcall-classget-review-fh.patch` in combinat's queue. I'll upload it there as soon as we decided to move to `NestedClassMetaclass` or not.",
+    "body": "Replying to [comment:5 nthiery]:\n> >  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`\n \n> \n> Let's discuss this over the phone.\n\n\nOk.\n\n> Please let me know if you already made a patch on top on this one in the queue.\n\n\nplease see `trac_8250-classcall-classget-review-fh.patch` in combinat's queue. I'll upload it there as soon as we decided to move to `NestedClassMetaclass` or not.",
     "created_at": "2010-02-13T09:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8250",
     "type": "issue_comment",
@@ -204,12 +205,15 @@ archive/issue_comments_072857.json:
 
 Replying to [comment:5 nthiery]:
 > >  - I think it would be more natural to add this feature to `NestedClassMetaclass` rather than to `ClasscallMetaclass`
+ 
 > 
 > Let's discuss this over the phone.
+
 
 Ok.
 
 > Please let me know if you already made a patch on top on this one in the queue.
+
 
 please see `trac_8250-classcall-classget-review-fh.patch` in combinat's queue. I'll upload it there as soon as we decided to move to `NestedClassMetaclass` or not.
 

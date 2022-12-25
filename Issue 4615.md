@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4615
 archive/issue_comments_034576.json:
 ```json
 {
-    "body": "REFEREE:\n\nI confirmed that src exactly equals upstream from http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/\n\nI checked that the package installs on OS X, and that the spkg-install, etc., looks good.  It took 44 seconds to build on my OS X box, which isn't too bad.\n\nThis gets positive review, though of course deps and install must be modified.  Add this to install:\n\n\n```\nBOEHM_GC=`$newest boehm_gc`\nexport BOEHM_GC\n```\n\n\nModify deps by adding/changing:\n\n```\n$(INST)/$(BOEHM_GC): $(BASE)\n\t$(SAGE_SPKG) $(BOEHM_GC) 2>&1\n```\n\n\nBoehm is *not* a dependency for Maxima as the ticket description says.  Instead Boehm should be made a dependency for ECL when that is added, and then Maxima depends on ECL.",
+    "body": "REFEREE:\n\nI confirmed that src exactly equals upstream from http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/\n\nI checked that the package installs on OS X, and that the spkg-install, etc., looks good.  It took 44 seconds to build on my OS X box, which isn't too bad.\n\nThis gets positive review, though of course deps and install must be modified.  Add this to install:\n\n```\nBOEHM_GC=`$newest boehm_gc`\nexport BOEHM_GC\n```\n\nModify deps by adding/changing:\n\n```\n$(INST)/$(BOEHM_GC): $(BASE)\n\t$(SAGE_SPKG) $(BOEHM_GC) 2>&1\n```\n\nBoehm is *not* a dependency for Maxima as the ticket description says.  Instead Boehm should be made a dependency for ECL when that is added, and then Maxima depends on ECL.",
     "created_at": "2008-11-27T17:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4615",
     "type": "issue_comment",
@@ -60,12 +60,10 @@ I checked that the package installs on OS X, and that the spkg-install, etc., lo
 
 This gets positive review, though of course deps and install must be modified.  Add this to install:
 
-
 ```
 BOEHM_GC=`$newest boehm_gc`
 export BOEHM_GC
 ```
-
 
 Modify deps by adding/changing:
 
@@ -73,7 +71,6 @@ Modify deps by adding/changing:
 $(INST)/$(BOEHM_GC): $(BASE)
 	$(SAGE_SPKG) $(BOEHM_GC) 2>&1
 ```
-
 
 Boehm is *not* a dependency for Maxima as the ticket description says.  Instead Boehm should be made a dependency for ECL when that is added, and then Maxima depends on ECL.
 

@@ -3,7 +3,7 @@
 archive/issues_003855.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\npoint3d((0,0,0))\n```\n\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
+    "body": "Assignee: @williamstein\n\n```\npoint3d((0,0,0))\n```\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
     "created_at": "2008-08-14T19:31:44Z",
     "labels": [
         "component: graphics",
@@ -18,17 +18,14 @@ archive/issues_003855.json:
 ```
 Assignee: @williamstein
 
-
 ```
 point3d((0,0,0))
 ```
-
 versus
 
 ```
 point3d((0,0,0), size=10)
 ```
-
 
 Easy to fix...
 

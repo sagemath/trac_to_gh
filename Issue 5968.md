@@ -69,7 +69,7 @@ Attachment [trac_5968-part2.patch](tarball://root/attachments/some-uuid/ticket59
 archive/issue_comments_047206.json:
 ```json
 {
-    "body": "I have one microscopically insignificant quibble: might it not be better to add a couple of minus signs into the `__cmp__` method, changing it to \n\n```\nif not isinstance(other, ModularSymbol):\n    return cmp(type(self), type(other))\nreturn cmp((self.__space,-self.__i,self.__alpha,self.__beta),\n           (other.__space,-other.__i,other.__alpha,other.__beta))\n```\n\n?\n\nThis is somehow the sort order that \"feels most natural\" to me -- so X<sup>2</sup>Y comes before XY<sup>2</sup>. This would then need fewer changes to other files, but of course it means most of the new doctests in your file would need rewriting :-). Also, what is the reasoning behind introducing the space in the `_repr_` method? I would advocate leaving `_repr_` as is unless there is a pressing reason to change it, in order to minimise the likelihood of breaking user code.",
+    "body": "I have one microscopically insignificant quibble: might it not be better to add a couple of minus signs into the `__cmp__` method, changing it to \n\n```\nif not isinstance(other, ModularSymbol):\n    return cmp(type(self), type(other))\nreturn cmp((self.__space,-self.__i,self.__alpha,self.__beta),\n           (other.__space,-other.__i,other.__alpha,other.__beta))\n```\n?\n\nThis is somehow the sort order that \"feels most natural\" to me -- so X<sup>2</sup>Y comes before XY<sup>2</sup>. This would then need fewer changes to other files, but of course it means most of the new doctests in your file would need rewriting :-). Also, what is the reasoning behind introducing the space in the `_repr_` method? I would advocate leaving `_repr_` as is unless there is a pressing reason to change it, in order to minimise the likelihood of breaking user code.",
     "created_at": "2009-05-04T09:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5968",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ if not isinstance(other, ModularSymbol):
 return cmp((self.__space,-self.__i,self.__alpha,self.__beta),
            (other.__space,-other.__i,other.__alpha,other.__beta))
 ```
-
 ?
 
 This is somehow the sort order that "feels most natural" to me -- so X<sup>2</sup>Y comes before XY<sup>2</sup>. This would then need fewer changes to other files, but of course it means most of the new doctests in your file would need rewriting :-). Also, what is the reasoning behind introducing the space in the `_repr_` method? I would advocate leaving `_repr_` as is unless there is a pressing reason to change it, in order to minimise the likelihood of breaking user code.

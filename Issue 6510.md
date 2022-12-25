@@ -3,7 +3,7 @@
 archive/issues_006510.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: abelian groups\n\n\n```\n sage: E=EllipticCurve([0,82])\n sage: tor=E.torsion_subgroup()\n sage: if tor:\n ...       print tor.order()\n 1\n```\n\n\nWe'd like to have tor evaluate to false in boolean context.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6510\n\n",
+    "body": "Assignee: tbd\n\nKeywords: abelian groups\n\n```\n sage: E=EllipticCurve([0,82])\n sage: tor=E.torsion_subgroup()\n sage: if tor:\n ...       print tor.order()\n 1\n```\n\nWe'd like to have tor evaluate to false in boolean context.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6510\n\n",
     "created_at": "2009-07-10T21:57:38Z",
     "labels": [
         "component: algebra",
@@ -21,7 +21,6 @@ Assignee: tbd
 
 Keywords: abelian groups
 
-
 ```
  sage: E=EllipticCurve([0,82])
  sage: tor=E.torsion_subgroup()
@@ -29,7 +28,6 @@ Keywords: abelian groups
  ...       print tor.order()
  1
 ```
-
 
 We'd like to have tor evaluate to false in boolean context.
 
@@ -170,7 +168,7 @@ What's the real name of tsutton? The real name should be used so we can give pro
 archive/issue_comments_052945.json:
 ```json
 {
-    "body": "I assume that I only need to apply the patch `trac_6510.3.patch`. But why are there three functions `__nonzero__(self)` all of which are the same and reside in the same module, but each block of definition contains different stuff? For example, after applying `trac_6510.3.patch`, I get the following in `sage/groups/abelian_gps/abelian_group.py`:\n\n```\n    def __nonzero__(self):\n        return len(self.invariants()) != 0\n\n    def __nonzero__(self):\n        \"\"\"                                                                     \n        Returns True if this group is nontrivial.                               \n                                                                                \n        EXAMPLES::                                                              \n                                                                                \n            sage: E = EllipticCurve([0,82])                                     \n            sage: T = E.torsion_subgroup()                                      \n            sage: bool(T)                                                       \n            False                                                               \n        \"\"\"\n        return len(self.invariants()) != 0\n\n    def __nonzero__(self):\n        \"\"\"                                                                     \n        Returns True if this group is nontrivial.                               \n                                                                                \n        EXAMPLES::                                                              \n                                                                                \n            sage: E = EllipticCurve([0,82])                                     \n            sage: T = E.torsion_subgroup()                                      \n            sage: bool(T) # indirect doctest                                    \n            False                                                               \n        \"\"\"\n        return len(self.invariants()) != 0\n```\n\nChoose which block of function definition you want, and upload a new patch. Preferrably, you should replace `trac_6510.3.patch` with your new patch. I'm marking this as needs work. After a new patch is uploaded, positive review can be reinstated.",
+    "body": "I assume that I only need to apply the patch `trac_6510.3.patch`. But why are there three functions `__nonzero__(self)` all of which are the same and reside in the same module, but each block of definition contains different stuff? For example, after applying `trac_6510.3.patch`, I get the following in `sage/groups/abelian_gps/abelian_group.py`:\n\n```\n    def __nonzero__(self):\n        return len(self.invariants()) != 0\n\n    def __nonzero__(self):\n        \"\"\"                                                                     \n        Returns True if this group is nontrivial.                               \n                                                                                \n        EXAMPLES::                                                              \n                                                                                \n            sage: E = EllipticCurve([0,82])                                     \n            sage: T = E.torsion_subgroup()                                      \n            sage: bool(T)                                                       \n            False                                                               \n        \"\"\"\n        return len(self.invariants()) != 0\n\n    def __nonzero__(self):\n        \"\"\"                                                                     \n        Returns True if this group is nontrivial.                               \n                                                                                \n        EXAMPLES::                                                              \n                                                                                \n            sage: E = EllipticCurve([0,82])                                     \n            sage: T = E.torsion_subgroup()                                      \n            sage: bool(T) # indirect doctest                                    \n            False                                                               \n        \"\"\"\n        return len(self.invariants()) != 0\n```\nChoose which block of function definition you want, and upload a new patch. Preferrably, you should replace `trac_6510.3.patch` with your new patch. I'm marking this as needs work. After a new patch is uploaded, positive review can be reinstated.",
     "created_at": "2009-07-16T14:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
@@ -211,7 +209,6 @@ I assume that I only need to apply the patch `trac_6510.3.patch`. But why are th
         """
         return len(self.invariants()) != 0
 ```
-
 Choose which block of function definition you want, and upload a new patch. Preferrably, you should replace `trac_6510.3.patch` with your new patch. I'm marking this as needs work. After a new patch is uploaded, positive review can be reinstated.
 
 

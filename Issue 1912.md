@@ -3,7 +3,7 @@
 archive/issues_001912.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\n\n> As a final comment, I'll note that the following behavior with objects\n> which automatically display is interesting:\n> \n> sage: C=circle((0,0),1);P=plot(sin,0,1)\n> sage: [C,P]\n> [, ]\n> \n> and then a display of circle above a plot of sin (in the notebook) or\n> two separate pictures (in the command line).  I have no idea what, if\n> any, connection should be made with this work, though.\n\nI think it is just printing out the list for you to see and the \"print\" function for a graphics object displays the object, so you see each object \"printed\" out.\n\nIt would be nice if the text display indicated this, instead of \"[, ]\".  Maybe something like \"[<Graphic object>, <Graphic object>]\", since the objects actually are there.  It misleadingly looks like you have an empty list.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1912\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n```\n\n> As a final comment, I'll note that the following behavior with objects\n> which automatically display is interesting:\n> \n> sage: C=circle((0,0),1);P=plot(sin,0,1)\n> sage: [C,P]\n> [, ]\n> \n> and then a display of circle above a plot of sin (in the notebook) or\n> two separate pictures (in the command line).  I have no idea what, if\n> any, connection should be made with this work, though.\n\nI think it is just printing out the list for you to see and the \"print\" function for a graphics object displays the object, so you see each object \"printed\" out.\n\nIt would be nice if the text display indicated this, instead of \"[, ]\".  Maybe something like \"[<Graphic object>, <Graphic object>]\", since the objects actually are there.  It misleadingly looks like you have an empty list.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1912\n\n",
     "created_at": "2008-01-24T16:08:14Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,6 @@ archive/issues_001912.json:
 Assignee: @williamstein
 
 CC:  @kcrisman
-
 
 ```
 
@@ -40,7 +39,6 @@ It would be nice if the text display indicated this, instead of "[, ]".  Maybe s
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1912
 
 
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1912
 archive/issue_comments_012079.json:
 ```json
 {
-    "body": "> It would be nice if the text display indicated this, instead of \"[, ]\".  Maybe \n> something like \"[<Graphic object>, <Graphic object>]\", since the objects \n> actually are there.  It misleadingly looks like you have an empty list.\n\nI agree.  However, I have *absolutely no clue* how or even if this is possible to implement in Python.  I almost think it isn't.   More precisely, we could easily\nmake it so we have\n \n sage: plot(sin, 0,1)\n <Graphic object>\n [an actual image]\n\nbut that would be really ugly. \n\nWilliam",
+    "body": "> It would be nice if the text display indicated this, instead of \"[, ]\".  Maybe \n> something like \"[<Graphic object>, <Graphic object>]\", since the objects \n> actually are there.  It misleadingly looks like you have an empty list.\n\n\nI agree.  However, I have *absolutely no clue* how or even if this is possible to implement in Python.  I almost think it isn't.   More precisely, we could easily\nmake it so we have\n \n sage: plot(sin, 0,1)\n <Graphic object>\n [an actual image]\n\nbut that would be really ugly. \n\nWilliam",
     "created_at": "2008-01-24T16:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
@@ -64,6 +62,7 @@ archive/issue_comments_012079.json:
 > It would be nice if the text display indicated this, instead of "[, ]".  Maybe 
 > something like "[<Graphic object>, <Graphic object>]", since the objects 
 > actually are there.  It misleadingly looks like you have an empty list.
+
 
 I agree.  However, I have *absolutely no clue* how or even if this is possible to implement in Python.  I almost think it isn't.   More precisely, we could easily
 make it so we have
@@ -83,7 +82,7 @@ William
 archive/issue_comments_012080.json:
 ```json
 {
-    "body": "Actually, I vaguely recall there is a \"displayhook\" in Python that is called\nwhen one types\n\n```\n sage: <arbitrary object>\n```\n\nMaybe we could overload that so if <arbitrary object> is a list or tuple then\ninstead of calling _repr_ on each graphics object, we call __str__.\n\n\nWilliam\n\nIt's weird.  Every time I think something is impossible I immediately seem to think of a solution...",
+    "body": "Actually, I vaguely recall there is a \"displayhook\" in Python that is called\nwhen one types\n\n```\n sage: <arbitrary object>\n```\nMaybe we could overload that so if <arbitrary object> is a list or tuple then\ninstead of calling _repr_ on each graphics object, we call __str__.\n\n\nWilliam\n\nIt's weird.  Every time I think something is impossible I immediately seem to think of a solution...",
     "created_at": "2008-01-24T16:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
@@ -98,7 +97,6 @@ when one types
 ```
  sage: <arbitrary object>
 ```
-
 Maybe we could overload that so if <arbitrary object> is a list or tuple then
 instead of calling _repr_ on each graphics object, we call __str__.
 
@@ -132,7 +130,7 @@ Another idea: make it return <Graphic object> whenever it creates an object; but
 archive/issue_comments_012082.json:
 ```json
 {
-    "body": "> It's weird. Every time I think something is impossible I immediately seem to think of a solution...\n\nWe ought to put you in charge of more hard problems!  So...do you think it's impossible to prove the Riemann hypothesis? :)",
+    "body": "> It's weird. Every time I think something is impossible I immediately seem to think of a solution...\n\n\nWe ought to put you in charge of more hard problems!  So...do you think it's impossible to prove the Riemann hypothesis? :)",
     "created_at": "2008-01-24T18:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
@@ -143,6 +141,7 @@ archive/issue_comments_012082.json:
 
 > It's weird. Every time I think something is impossible I immediately seem to think of a solution...
 
+
 We ought to put you in charge of more hard problems!  So...do you think it's impossible to prove the Riemann hypothesis? :)
 
 
@@ -152,7 +151,7 @@ We ought to put you in charge of more hard problems!  So...do you think it's imp
 archive/issue_comments_012083.json:
 ```json
 {
-    "body": "I think either of these solutions works okay, but I prefer the first since it clearly tells the user that they just constructed a list of graphic objects.\n\n\n```\nsage: [graphic1, graphic2]\n# Displays each graphic, as well as:\n[<graphic object>, <graphic object>]\n```\n\n\n\n```\nsage: [graphic1, graphic2]\n# Displays each graphic, but doesn't print anything\n```\n\n\nJust for comparison, Mathematica 6 actually prints out the graphics, surrounded by the delimiters (so the graphics are really inside the list and appear that way) when using the notebook and prints out just a string representation {-Graphics-} when used from the command line.",
+    "body": "I think either of these solutions works okay, but I prefer the first since it clearly tells the user that they just constructed a list of graphic objects.\n\n```\nsage: [graphic1, graphic2]\n# Displays each graphic, as well as:\n[<graphic object>, <graphic object>]\n```\n\n```\nsage: [graphic1, graphic2]\n# Displays each graphic, but doesn't print anything\n```\n\nJust for comparison, Mathematica 6 actually prints out the graphics, surrounded by the delimiters (so the graphics are really inside the list and appear that way) when using the notebook and prints out just a string representation {-Graphics-} when used from the command line.",
     "created_at": "2008-01-24T18:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
@@ -163,20 +162,16 @@ archive/issue_comments_012083.json:
 
 I think either of these solutions works okay, but I prefer the first since it clearly tells the user that they just constructed a list of graphic objects.
 
-
 ```
 sage: [graphic1, graphic2]
 # Displays each graphic, as well as:
 [<graphic object>, <graphic object>]
 ```
 
-
-
 ```
 sage: [graphic1, graphic2]
 # Displays each graphic, but doesn't print anything
 ```
-
 
 Just for comparison, Mathematica 6 actually prints out the graphics, surrounded by the delimiters (so the graphics are really inside the list and appear that way) when using the notebook and prints out just a string representation {-Graphics-} when used from the command line.
 
@@ -187,7 +182,7 @@ Just for comparison, Mathematica 6 actually prints out the graphics, surrounded 
 archive/issue_comments_012084.json:
 ```json
 {
-    "body": "This idea of Jason Grout is the sort of thing we can do to solve this sort of problem:\n\n```\ndef pretty_print (object):\n    if object is None:\n        return\n    if isinstance(object, (sage.plot.plot.Graphics, sage.plot.plot3d.base.Graphics3d)):\n        print repr(object)\n        return\n    import __builtin__\n    __builtin__._=object\n    try:\n        print html(\"$$\"+latex(object)+\"$$\")\n    except:\n        import sys\n        sys.__displayhook__(object)\n\ndef notebook_pretty(enable=True):\n    import sys\n    if enable:\n        sys.displayhook = pretty_print\n    else:\n        sys.displayhook = sys.__displayhook__\n\n# To enable the pretty-printing\nnotebook_pretty(True)\n```\n",
+    "body": "This idea of Jason Grout is the sort of thing we can do to solve this sort of problem:\n\n```\ndef pretty_print (object):\n    if object is None:\n        return\n    if isinstance(object, (sage.plot.plot.Graphics, sage.plot.plot3d.base.Graphics3d)):\n        print repr(object)\n        return\n    import __builtin__\n    __builtin__._=object\n    try:\n        print html(\"$$\"+latex(object)+\"$$\")\n    except:\n        import sys\n        sys.__displayhook__(object)\n\ndef notebook_pretty(enable=True):\n    import sys\n    if enable:\n        sys.displayhook = pretty_print\n    else:\n        sys.displayhook = sys.__displayhook__\n\n# To enable the pretty-printing\nnotebook_pretty(True)\n```",
     "created_at": "2008-01-25T06:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1912",
     "type": "issue_comment",
@@ -223,7 +218,6 @@ def notebook_pretty(enable=True):
 # To enable the pretty-printing
 notebook_pretty(True)
 ```
-
 
 
 

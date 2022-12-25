@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5604
 archive/issue_comments_043656.json:
 ```json
 {
-    "body": "This is done now:\n\n\n```\nsage: sage.plot.colors.red+sage.plot.colors.blue\nRGB color (0.5, 0.0, 0.5)\n\n```\n\n\nSo this ticket should be closed.",
+    "body": "This is done now:\n\n```\nsage: sage.plot.colors.red+sage.plot.colors.blue\nRGB color (0.5, 0.0, 0.5)\n\n```\n\nSo this ticket should be closed.",
     "created_at": "2010-05-11T20:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_comment",
@@ -44,13 +44,11 @@ archive/issue_comments_043656.json:
 
 This is done now:
 
-
 ```
 sage: sage.plot.colors.red+sage.plot.colors.blue
 RGB color (0.5, 0.0, 0.5)
 
 ```
-
 
 So this ticket should be closed.
 
@@ -77,7 +75,7 @@ archive/issue_events_013195.json:
 archive/issue_comments_043657.json:
 ```json
 {
-    "body": "This looks like fixed, but the averaging operator \"+\" is binary:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r = sage.plot.colors.red\nsage: g = sage.plot.colors.green\nsage: b = sage.plot.colors.blue\nsage: r; g; b\nRGB color (1.0, 0.0, 0.0)\nRGB color (0.0, 0.50196078431372548, 0.0)\nRGB color (0.0, 0.0, 1.0)\nsage: r + g; r + b\nRGB color (0.5, 0.25098039215686274, 0.0)\nRGB color (0.5, 0.0, 0.5)\nsage: (r + g) + b; r + g + b\nRGB color (0.25, 0.12549019607843137, 0.5)\nRGB color (0.25, 0.12549019607843137, 0.5)\nsage: (r + b) + g; r + b + g\nRGB color (0.25, 0.25098039215686274, 0.25)\nRGB color (0.25, 0.25098039215686274, 0.25)\nsage: (g + b) + r; g + b + r\nRGB color (0.5, 0.12549019607843137, 0.25)\nRGB color (0.5, 0.12549019607843137, 0.25)\n```\n\nFor more than two operands, I thought that \"+\" would average over the number of operands. Instead, \"+\" averages the first two, then average the result with the last operand.",
+    "body": "This looks like fixed, but the averaging operator \"+\" is binary:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r = sage.plot.colors.red\nsage: g = sage.plot.colors.green\nsage: b = sage.plot.colors.blue\nsage: r; g; b\nRGB color (1.0, 0.0, 0.0)\nRGB color (0.0, 0.50196078431372548, 0.0)\nRGB color (0.0, 0.0, 1.0)\nsage: r + g; r + b\nRGB color (0.5, 0.25098039215686274, 0.0)\nRGB color (0.5, 0.0, 0.5)\nsage: (r + g) + b; r + g + b\nRGB color (0.25, 0.12549019607843137, 0.5)\nRGB color (0.25, 0.12549019607843137, 0.5)\nsage: (r + b) + g; r + b + g\nRGB color (0.25, 0.25098039215686274, 0.25)\nRGB color (0.25, 0.25098039215686274, 0.25)\nsage: (g + b) + r; g + b + r\nRGB color (0.5, 0.12549019607843137, 0.25)\nRGB color (0.5, 0.12549019607843137, 0.25)\n```\nFor more than two operands, I thought that \"+\" would average over the number of operands. Instead, \"+\" averages the first two, then average the result with the last operand.",
     "created_at": "2010-05-11T20:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_comment",
@@ -112,7 +110,6 @@ sage: (g + b) + r; g + b + r
 RGB color (0.5, 0.12549019607843137, 0.25)
 RGB color (0.5, 0.12549019607843137, 0.25)
 ```
-
 For more than two operands, I thought that "+" would average over the number of operands. Instead, "+" averages the first two, then average the result with the last operand.
 
 
@@ -160,7 +157,7 @@ Mixing colors and color theory in general is a very involved topic; we are just 
 archive/issue_comments_043660.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> That's because the blending is not associative.  We are just providing a simple way to blend colors together.  That's a limitation of the method---is there a reason why we should insist on the addition being associative?\n\nNo reason I can think of. My surprise as expressed above has more to do with my lack of understanding.",
+    "body": "Replying to [comment:4 jason]:\n> That's because the blending is not associative.  We are just providing a simple way to blend colors together.  That's a limitation of the method---is there a reason why we should insist on the addition being associative?\n\n\nNo reason I can think of. My surprise as expressed above has more to do with my lack of understanding.",
     "created_at": "2010-05-11T21:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_comment",
@@ -171,5 +168,6 @@ archive/issue_comments_043660.json:
 
 Replying to [comment:4 jason]:
 > That's because the blending is not associative.  We are just providing a simple way to blend colors together.  That's a limitation of the method---is there a reason why we should insist on the addition being associative?
+
 
 No reason I can think of. My surprise as expressed above has more to do with my lack of understanding.

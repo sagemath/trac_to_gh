@@ -128,7 +128,7 @@ Fixes a few things, adds doctest - use this
 archive/issue_comments_061058.json:
 ```json
 {
-    "body": "Attachment [trac_7320-case-sensitive.2.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.2.patch) by @jhpalmieri created at 2009-10-29 19:01:50\n\nReplying to [comment:2 kcrisman]:\n> Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...\n\nI think so: I think we can add a flag to the regular expression search to make it case-insensitive.  We could add a flag (like `ignore_case=False`) to the search functions so people could toggle this.  Of course, I haven't actually tried this, but the documentation for regular expression searches in Python suggests that it should be possible...",
+    "body": "Attachment [trac_7320-case-sensitive.2.patch](tarball://root/attachments/some-uuid/ticket7320/trac_7320-case-sensitive.2.patch) by @jhpalmieri created at 2009-10-29 19:01:50\n\nReplying to [comment:2 kcrisman]:\n> Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...\n\n\nI think so: I think we can add a flag to the regular expression search to make it case-insensitive.  We could add a flag (like `ignore_case=False`) to the search functions so people could toggle this.  Of course, I haven't actually tried this, but the documentation for regular expression searches in Python suggests that it should be possible...",
     "created_at": "2009-10-29T19:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7320",
     "type": "issue_comment",
@@ -142,6 +142,7 @@ Attachment [trac_7320-case-sensitive.2.patch](tarball://root/attachments/some-uu
 Replying to [comment:2 kcrisman]:
 > Just out of curiosity, is it possible to change the behavior?  Obviously that would be a different ticket.  That could be useful (or not).  Maybe a function that is, and another one that isn't...
 
+
 I think so: I think we can add a flag to the regular expression search to make it case-insensitive.  We could add a flag (like `ignore_case=False`) to the search functions so people could toggle this.  Of course, I haven't actually tried this, but the documentation for regular expression searches in Python suggests that it should be possible...
 
 
@@ -151,7 +152,7 @@ I think so: I think we can add a flag to the regular expression search to make i
 archive/issue_comments_061059.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Maybe mvngu will have a comment, so I'm cc:ing him on this.\n\nSometimes I want to search the source with case-sensitivity on. For example, I might be interested in knowing if the source has anything with the word \"Euler\" in it. As function and method names are lower-case, case-sensitivity search might not return the name of a function/method like \"euler_phi\". However, if the documentation for \"euler_phi\" has something like \"Euler phi function\" or \"Euler totient function\", then case-sensitivity search would pick up \"Euler\". Sometimes I want to do a case-insensitivity search. In that case (pun not intended), I would expect that both \"euler_phi\" and \"Euler\" be returned by the search. At the end of the day, one can make case-insensitivity search as default, but should also give people the option to do case-sensitivity search. My 2-cent.",
+    "body": "Replying to [comment:2 kcrisman]:\n> Maybe mvngu will have a comment, so I'm cc:ing him on this.\n\n\nSometimes I want to search the source with case-sensitivity on. For example, I might be interested in knowing if the source has anything with the word \"Euler\" in it. As function and method names are lower-case, case-sensitivity search might not return the name of a function/method like \"euler_phi\". However, if the documentation for \"euler_phi\" has something like \"Euler phi function\" or \"Euler totient function\", then case-sensitivity search would pick up \"Euler\". Sometimes I want to do a case-insensitivity search. In that case (pun not intended), I would expect that both \"euler_phi\" and \"Euler\" be returned by the search. At the end of the day, one can make case-insensitivity search as default, but should also give people the option to do case-sensitivity search. My 2-cent.",
     "created_at": "2009-10-30T04:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7320",
     "type": "issue_comment",
@@ -162,6 +163,7 @@ archive/issue_comments_061059.json:
 
 Replying to [comment:2 kcrisman]:
 > Maybe mvngu will have a comment, so I'm cc:ing him on this.
+
 
 Sometimes I want to search the source with case-sensitivity on. For example, I might be interested in knowing if the source has anything with the word "Euler" in it. As function and method names are lower-case, case-sensitivity search might not return the name of a function/method like "euler_phi". However, if the documentation for "euler_phi" has something like "Euler phi function" or "Euler totient function", then case-sensitivity search would pick up "Euler". Sometimes I want to do a case-insensitivity search. In that case (pun not intended), I would expect that both "euler_phi" and "Euler" be returned by the search. At the end of the day, one can make case-insensitivity search as default, but should also give people the option to do case-sensitivity search. My 2-cent.
 

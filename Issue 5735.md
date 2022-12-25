@@ -3,7 +3,7 @@
 archive/issues_005735.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nFrom David Roe:\n> And yes, I originally wrote Extended Integers and Extended Rationals when I\n> was writing lazy p-adics.  Since lazy p-adics aren't currently in good\n> enough shape to be turned on, I don't think any part of the sage library\n> uses Extended Integers or Extended Rationals.  Upon further reflection, I'm\n> not sure I even need them for lazy p-adics.  I don't know if it's a good\n> idea to just get rid of extended integers and rationals or not.\n```\n\n\n\n+1 to getting rid of them both.   Nobody knows what they are really, and they aren't needed, and they are probably partly broken given the bad coverage (at least of integer).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5735\n\n",
+    "body": "Assignee: somebody\n\n```\nFrom David Roe:\n> And yes, I originally wrote Extended Integers and Extended Rationals when I\n> was writing lazy p-adics.  Since lazy p-adics aren't currently in good\n> enough shape to be turned on, I don't think any part of the sage library\n> uses Extended Integers or Extended Rationals.  Upon further reflection, I'm\n> not sure I even need them for lazy p-adics.  I don't know if it's a good\n> idea to just get rid of extended integers and rationals or not.\n```\n\n\n+1 to getting rid of them both.   Nobody knows what they are really, and they aren't needed, and they are probably partly broken given the bad coverage (at least of integer).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5735\n\n",
     "created_at": "2009-04-10T17:08:07Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_005735.json:
 ```
 Assignee: somebody
 
-
 ```
 From David Roe:
 > And yes, I originally wrote Extended Integers and Extended Rationals when I
@@ -29,7 +28,6 @@ From David Roe:
 > not sure I even need them for lazy p-adics.  I don't know if it's a good
 > idea to just get rid of extended integers and rationals or not.
 ```
-
 
 
 +1 to getting rid of them both.   Nobody knows what they are really, and they aren't needed, and they are probably partly broken given the bad coverage (at least of integer).
@@ -64,7 +62,7 @@ archive/issue_comments_044726.json:
 archive/issue_comments_044727.json:
 ```json
 {
-    "body": "\n```\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"extended_integer_ring\" sage | grep -v \"rings/extended_\"\nsage/rings/all.py:from extended_integer_ring import ExtendedIntegerRing\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"extended_rational_field\" sage | grep -v \"rings/extended_\" \nsage/rings/all.py:from extended_rational_field import ExtendedRationalField\nsage/rings/padics/valuation.py:import sage.rings.extended_rational_field\nsage/rings/padics/valuation.py:QQe = sage.rings.extended_rational_field.ExtendedRationalField\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"ExtendedRationalField\" sage | grep -v \"rings/extended_\"sage/rings/all.py:from extended_rational_field import ExtendedRationalField\nsage/rings/padics/valuation.py:QQe = sage.rings.extended_rational_field.ExtendedRationalField\nsage/rings/rational_field.py:        sage: E = ExtendedRationalField\n```\n",
+    "body": "```\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"extended_integer_ring\" sage | grep -v \"rings/extended_\"\nsage/rings/all.py:from extended_integer_ring import ExtendedIntegerRing\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"extended_rational_field\" sage | grep -v \"rings/extended_\" \nsage/rings/all.py:from extended_rational_field import ExtendedRationalField\nsage/rings/padics/valuation.py:import sage.rings.extended_rational_field\nsage/rings/padics/valuation.py:QQe = sage.rings.extended_rational_field.ExtendedRationalField\nRobert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r \"ExtendedRationalField\" sage | grep -v \"rings/extended_\"sage/rings/all.py:from extended_rational_field import ExtendedRationalField\nsage/rings/padics/valuation.py:QQe = sage.rings.extended_rational_field.ExtendedRationalField\nsage/rings/rational_field.py:        sage: E = ExtendedRationalField\n```",
     "created_at": "2009-04-12T00:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -72,7 +70,6 @@ archive/issue_comments_044727.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
 Robert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r "extended_integer_ring" sage | grep -v "rings/extended_"
@@ -85,7 +82,6 @@ Robert-Bradshaws-Laptop:~/sage/current/devel/sage-docday robert$ grep -r "Extend
 sage/rings/padics/valuation.py:QQe = sage.rings.extended_rational_field.ExtendedRationalField
 sage/rings/rational_field.py:        sage: E = ExtendedRationalField
 ```
-
 
 
 
@@ -114,7 +110,7 @@ I've removed these files, it only required two minor changes outside of this rem
 archive/issue_comments_044729.json:
 ```json
 {
-    "body": "Hmm, this patch fails to apply:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import 5735-remove-extended-QQ-ZZ.patch \napplying 5735-remove-extended-QQ-ZZ.patch\npatching file sage/rings/extended_rational_field.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/extended_rational_field.py.rej\nabort: patch failed to apply\n```\n\nIt should be trivial to fix since this hunk just deletes extended_rational_field.py.\n\nCheers,\n\nMichael",
+    "body": "Hmm, this patch fails to apply:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/devel/sage$ hg import 5735-remove-extended-QQ-ZZ.patch \napplying 5735-remove-extended-QQ-ZZ.patch\npatching file sage/rings/extended_rational_field.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/extended_rational_field.py.rej\nabort: patch failed to apply\n```\nIt should be trivial to fix since this hunk just deletes extended_rational_field.py.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-12T20:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -133,7 +129,6 @@ Hunk #1 FAILED at 0
 1 out of 1 hunks FAILED -- saving rejects to file sage/rings/extended_rational_field.py.rej
 abort: patch failed to apply
 ```
-
 It should be trivial to fix since this hunk just deletes extended_rational_field.py.
 
 Cheers,
@@ -260,7 +255,7 @@ archive/issue_events_013463.json:
 archive/issue_comments_044734.json:
 ```json
 {
-    "body": "Mhh, a complete rebuild of the Sage library exposes this issue:\n\n```\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/structure/sage_object.pyx\", line 715:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 487 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_rings_extended_rational_field_ExtendedRationalField_class__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_Q_to_ExtendedQ__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_RationalMinusInfinity__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_RationalPlusInfinity__.sobj\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_rings_extended_rational_field_ExtendedRationalField_class__.sobj\n    _class__sage_rings_extended_rational_field_Q_to_ExtendedQ__.sobj\n    _class__sage_rings_extended_rational_field_RationalMinusInfinity__.sobj\n    _class__sage_rings_extended_rational_field_RationalPlusInfinity__.sobj\n    Successfully unpickled 483 objects.\n    Failed to unpickle 4 objects.\n**********************************************************************\n```\n\nRemoving those four files from the pickle jar fixes the issue.\n\nCheers,\n\nMichael",
+    "body": "Mhh, a complete rebuild of the Sage library exposes this issue:\n\n```\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/structure/sage_object.pyx\", line 715:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 487 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_rings_extended_rational_field_ExtendedRationalField_class__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_Q_to_ExtendedQ__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_RationalMinusInfinity__.sobj\n    ** failed:  _class__sage_rings_extended_rational_field_RationalPlusInfinity__.sobj\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_rings_extended_rational_field_ExtendedRationalField_class__.sobj\n    _class__sage_rings_extended_rational_field_Q_to_ExtendedQ__.sobj\n    _class__sage_rings_extended_rational_field_RationalMinusInfinity__.sobj\n    _class__sage_rings_extended_rational_field_RationalPlusInfinity__.sobj\n    Successfully unpickled 483 objects.\n    Failed to unpickle 4 objects.\n**********************************************************************\n```\nRemoving those four files from the pickle jar fixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T07:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
@@ -295,7 +290,6 @@ Got:
     Failed to unpickle 4 objects.
 **********************************************************************
 ```
-
 Removing those four files from the pickle jar fixes the issue.
 
 Cheers,

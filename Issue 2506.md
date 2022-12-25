@@ -3,7 +3,7 @@
 archive/issues_002506.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g   # fine\nTrue\nsage: g != g   # fine\nFalse\nsage: g2 == g  # PROBLEM: either this one\nTrue\nsage: g2 != g  # or this one should be false\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2506\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g   # fine\nTrue\nsage: g != g   # fine\nFalse\nsage: g2 == g  # PROBLEM: either this one\nTrue\nsage: g2 != g  # or this one should be false\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2506\n\n",
     "created_at": "2008-03-13T16:56:38Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_002506.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: g = Graph()
 sage: g2 = g.copy()
@@ -32,7 +31,6 @@ sage: g2 != g  # or this one should be false
 True
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2506
 
 
@@ -44,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2506
 archive/issue_comments_016940.json:
 ```json
 {
-    "body": "I think this may be a subtlety having to do with Python comparison (although I'm tempted to call it a bug, maybe \"subtlety\" is more P.C.). The funny thing is if you define the method\n\n```\ndef __ne__(self, other):\n    return (not (self == other))\n```\n\nyou get the correct behavior. Before making a patch, it might be good to figure out why this is the case...",
+    "body": "I think this may be a subtlety having to do with Python comparison (although I'm tempted to call it a bug, maybe \"subtlety\" is more P.C.). The funny thing is if you define the method\n\n```\ndef __ne__(self, other):\n    return (not (self == other))\n```\nyou get the correct behavior. Before making a patch, it might be good to figure out why this is the case...",
     "created_at": "2008-03-14T00:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
@@ -59,7 +57,6 @@ I think this may be a subtlety having to do with Python comparison (although I'm
 def __ne__(self, other):
     return (not (self == other))
 ```
-
 you get the correct behavior. Before making a patch, it might be good to figure out why this is the case...
 
 
@@ -69,7 +66,7 @@ you get the correct behavior. Before making a patch, it might be good to figure 
 archive/issue_comments_016941.json:
 ```json
 {
-    "body": "The correct behavior is the following:\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g\nTrue\nsage: g != g\nFalse\nsage: g2 == g\nTrue\nsage: g2 != g\nFalse\nsage: g is g\nTrue\nsage: g2 is g\nFalse\n```\n",
+    "body": "The correct behavior is the following:\n\n```\nsage: g = Graph()\nsage: g2 = g.copy()\nsage: g == g\nTrue\nsage: g != g\nFalse\nsage: g2 == g\nTrue\nsage: g2 != g\nFalse\nsage: g is g\nTrue\nsage: g2 is g\nFalse\n```",
     "created_at": "2008-03-14T00:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2506",
     "type": "issue_comment",
@@ -96,7 +93,6 @@ True
 sage: g2 is g
 False
 ```
-
 
 
 

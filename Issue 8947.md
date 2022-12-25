@@ -3,7 +3,7 @@
 archive/issues_008947.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @rbeezer @williamstein @robertwb\n\nThis patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector\n\n\n```\nsage: f(x,y)=[3*x,e^x,2*x*y]\nsage: f\n(x, y) |--> (3*x, e^x, 2*x*y)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8947\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @williamstein @robertwb\n\nThis patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector\n\n```\nsage: f(x,y)=[3*x,e^x,2*x*y]\nsage: f\n(x, y) |--> (3*x, e^x, 2*x*y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8947\n\n",
     "created_at": "2010-05-11T06:25:01Z",
     "labels": [
         "component: linear algebra"
@@ -21,13 +21,11 @@ CC:  @rbeezer @williamstein @robertwb
 
 This patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector
 
-
 ```
 sage: f(x,y)=[3*x,e^x,2*x*y]
 sage: f
 (x, y) |--> (3*x, e^x, 2*x*y)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8947
@@ -216,7 +214,7 @@ Rob
 archive/issue_comments_082240.json:
 ```json
 {
-    "body": "Replying to [comment:6 rbeezer]:\n> Hi Jason,\n> \n> Nice patch.\n> \n> 1.  Do you think this should be called \"free_module_element_callable_symbolic_dense\"?  Technically these don't have to be vectors, and they do have entries over a ring?  Yes, that's an unwieldy name.  ;-)  Just asking.\n\nWell, Sage thinks that it is a field:\n\n\n```\n\nsage: f(x,y)=x^2+y                             \nsage: R=f.parent()\nsage: R \nCallable function ring with arguments (x, y)\nsage: R.is_field()\nTrue\n```\n\n\n\n> \n> 2.  Do you want to add it into the documentation, doesn't seem to be included when I build the docs?\n> \n> 3.  Docstring for _latex_ looks like it has an indentation problem that needs fixing.\n\nLooks like (2) and (3) both probably need to be fixed.",
+    "body": "Replying to [comment:6 rbeezer]:\n> Hi Jason,\n> \n> Nice patch.\n> \n> 1.  Do you think this should be called \"free_module_element_callable_symbolic_dense\"?  Technically these don't have to be vectors, and they do have entries over a ring?  Yes, that's an unwieldy name.  ;-)  Just asking.\n\n\nWell, Sage thinks that it is a field:\n\n```\n\nsage: f(x,y)=x^2+y                             \nsage: R=f.parent()\nsage: R \nCallable function ring with arguments (x, y)\nsage: R.is_field()\nTrue\n```\n\n\n> \n> 2.  Do you want to add it into the documentation, doesn't seem to be included when I build the docs?\n> \n> 3.  Docstring for _latex_ looks like it has an indentation problem that needs fixing.\n\n\nLooks like (2) and (3) both probably need to be fixed.",
     "created_at": "2010-05-19T04:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
@@ -232,8 +230,8 @@ Replying to [comment:6 rbeezer]:
 > 
 > 1.  Do you think this should be called "free_module_element_callable_symbolic_dense"?  Technically these don't have to be vectors, and they do have entries over a ring?  Yes, that's an unwieldy name.  ;-)  Just asking.
 
-Well, Sage thinks that it is a field:
 
+Well, Sage thinks that it is a field:
 
 ```
 
@@ -246,11 +244,11 @@ True
 ```
 
 
-
 > 
 > 2.  Do you want to add it into the documentation, doesn't seem to be included when I build the docs?
 > 
 > 3.  Docstring for _latex_ looks like it has an indentation problem that needs fixing.
+
 
 Looks like (2) and (3) both probably need to be fixed.
 
@@ -279,7 +277,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082242.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n\n> Callable function ring with arguments (x, y)\n> sage: R.is_field()\n> True\n\nAnd I trusted the _repr_ output?\n\nFailing a few tests, in the obvious way, in \n\n```\n/sage/dev/devel/sage-main/sage/symbolic/expression.pyx\n/sage/dev/devel/sage-main/sage/calculus/calculus.py\n```\n\n\n(and not done testing).",
+    "body": "Replying to [comment:7 jason]:\n\n> Callable function ring with arguments (x, y)\n> sage: R.is_field()\n> True\n\n\nAnd I trusted the _repr_ output?\n\nFailing a few tests, in the obvious way, in \n\n```\n/sage/dev/devel/sage-main/sage/symbolic/expression.pyx\n/sage/dev/devel/sage-main/sage/calculus/calculus.py\n```\n\n(and not done testing).",
     "created_at": "2010-05-19T04:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
@@ -294,6 +292,7 @@ Replying to [comment:7 jason]:
 > sage: R.is_field()
 > True
 
+
 And I trusted the _repr_ output?
 
 Failing a few tests, in the obvious way, in 
@@ -302,7 +301,6 @@ Failing a few tests, in the obvious way, in
 /sage/dev/devel/sage-main/sage/symbolic/expression.pyx
 /sage/dev/devel/sage-main/sage/calculus/calculus.py
 ```
-
 
 (and not done testing).
 
@@ -313,7 +311,7 @@ Failing a few tests, in the obvious way, in
 archive/issue_comments_082243.json:
 ```json
 {
-    "body": "On 4.4.2.rc0 I get the following failures.  The one for R is totally unrelated I believe, the others I saw are just the obvious differences in format for functions involved in this patch.\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/symbolic/expression.pyx # 4 doctests failed\n        sage -t  devel/sage-main/sage/calculus/calculus.py # 2 doctests failed   \n        sage -t  devel/sage-main/sage/interfaces/r.py # 1 doctests failed        \n        sage -t  devel/sage-main/sage/modules/free_module_element.pyx # 3 doctests failed\n\n```\n",
+    "body": "On 4.4.2.rc0 I get the following failures.  The one for R is totally unrelated I believe, the others I saw are just the obvious differences in format for functions involved in this patch.\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/symbolic/expression.pyx # 4 doctests failed\n        sage -t  devel/sage-main/sage/calculus/calculus.py # 2 doctests failed   \n        sage -t  devel/sage-main/sage/interfaces/r.py # 1 doctests failed        \n        sage -t  devel/sage-main/sage/modules/free_module_element.pyx # 3 doctests failed\n\n```",
     "created_at": "2010-05-19T05:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
@@ -324,7 +322,6 @@ archive/issue_comments_082243.json:
 
 On 4.4.2.rc0 I get the following failures.  The one for R is totally unrelated I believe, the others I saw are just the obvious differences in format for functions involved in this patch.
 
-
 ```
 The following tests failed:
 
@@ -334,7 +331,6 @@ The following tests failed:
         sage -t  devel/sage-main/sage/modules/free_module_element.pyx # 3 doctests failed
 
 ```
-
 
 
 

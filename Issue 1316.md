@@ -3,7 +3,7 @@
 archive/issues_001316.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n```\n>> * compare cliques() and related functions with the routine at\n>> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1316\n\n",
     "created_at": "2007-11-28T20:03:45Z",
     "labels": [
         "component: combinatorics"
@@ -19,12 +19,10 @@ Assignee: @mwhansen
 
 Keywords: graphs
 
-
 ```
 >> * compare cliques() and related functions with the routine at
 >> http://users.tkk.fi/~pat/cliquer.html (the routine is released under GPL)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1316

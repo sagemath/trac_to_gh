@@ -179,7 +179,7 @@ It seems a lot of tickets are now getting positive review and closed, where ther
 archive/issue_comments_059377.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> Where's the fix that received positive receive, and so allowed the ticket to be closed? \n> \n> It seems a lot of tickets are now getting positive review and closed, where there is no actual fix. \n\n1. This ticket has seen no activity at all in years.\n2. I haven't seen any report of this problem in years (usually, when there is really a problem, it pops up on `sage-devel` now and then).\n3. I grepped the Sage sources and couldn't find anything like `date -s`.\n\nIf you really think there is still a problem, feel free to re-open the ticket but with more concrete info than just \"I assume this is in one of the files that gets called for every single .spkg\".",
+    "body": "Replying to [comment:6 drkirkby]:\n> Where's the fix that received positive receive, and so allowed the ticket to be closed? \n> \n> It seems a lot of tickets are now getting positive review and closed, where there is no actual fix. \n\n\n1. This ticket has seen no activity at all in years.\n2. I haven't seen any report of this problem in years (usually, when there is really a problem, it pops up on `sage-devel` now and then).\n3. I grepped the Sage sources and couldn't find anything like `date -s`.\n\nIf you really think there is still a problem, feel free to re-open the ticket but with more concrete info than just \"I assume this is in one of the files that gets called for every single .spkg\".",
     "created_at": "2015-09-12T22:33:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7183",
     "type": "issue_comment",
@@ -192,6 +192,7 @@ Replying to [comment:6 drkirkby]:
 > Where's the fix that received positive receive, and so allowed the ticket to be closed? 
 > 
 > It seems a lot of tickets are now getting positive review and closed, where there is no actual fix. 
+
 
 1. This ticket has seen no activity at all in years.
 2. I haven't seen any report of this problem in years (usually, when there is really a problem, it pops up on `sage-devel` now and then).

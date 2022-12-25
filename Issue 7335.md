@@ -3,7 +3,7 @@
 archive/issues_007335.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nIt fails with the following error\n\n\n```\ncc1: error: unrecognized command line option \"-mpentium\"\n```\n\n\nThe fix is simply to simply remove that part of the flags from the Make-arch file for the win32 target.\n\nI will post an updated spkg shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7335\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nIt fails with the following error\n\n```\ncc1: error: unrecognized command line option \"-mpentium\"\n```\n\nThe fix is simply to simply remove that part of the flags from the Make-arch file for the win32 target.\n\nI will post an updated spkg shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7335\n\n",
     "created_at": "2009-10-28T19:33:41Z",
     "labels": [
         "component: porting: cygwin",
@@ -22,11 +22,9 @@ CC:  @williamstein
 
 It fails with the following error
 
-
 ```
 cc1: error: unrecognized command line option "-mpentium"
 ```
-
 
 The fix is simply to simply remove that part of the flags from the Make-arch file for the win32 target.
 

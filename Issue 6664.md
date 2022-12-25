@@ -131,7 +131,7 @@ archive/issue_events_015723.json:
 archive/issue_comments_054600.json:
 ```json
 {
-    "body": "Replying to [comment:4 jhpalmieri]:\n> Does this really depend on #6586, or can it be merged now?\nIt's not dependent, according to `du -s`.  I tested this with and without the patch, with Sphinx 0.5.1.",
+    "body": "Replying to [comment:4 jhpalmieri]:\n> Does this really depend on #6586, or can it be merged now?\n\nIt's not dependent, according to `du -s`.  I tested this with and without the patch, with Sphinx 0.5.1.",
     "created_at": "2009-08-24T04:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6664",
     "type": "issue_comment",
@@ -142,6 +142,7 @@ archive/issue_comments_054600.json:
 
 Replying to [comment:4 jhpalmieri]:
 > Does this really depend on #6586, or can it be merged now?
+
 It's not dependent, according to `du -s`.  I tested this with and without the patch, with Sphinx 0.5.1.
 
 

@@ -3,7 +3,7 @@
 archive/issues_000191.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\n\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIt would be very nice if SAGE had a large table/database of prime numbers.\n\nFor example, on the number theory list:\n\n```\nLook in the file\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/r1\n \nfor the factorizations of p^p - 1 for most p < 180.\n \n(If you change \"r1\" to \"r2\", you get the factors of p^p + 1.)\n \nFor the meaning of the \"L\" and \"M\" notation, see the papers at\n \nhttp://homes.cerias.purdue.edu/~ssw/bell/index.html\n```\nSo a person really wanted to factor some numbers p^p -1, but couldn't\nwith PARI.  If SAGE had tables of the factorizations of those numbers,\nit could have done it via a lookup, and the verbose message could have\ngiven the above reference.  Something similar would be good for a huge\nrange of classes of prime numbers.   This would be an excellent student\nproject.\n\nIssue created by migration from https://trac.sagemath.org/ticket/191\n\n",
     "created_at": "2007-01-13T20:51:51Z",
     "labels": [
         "component: number theory"
@@ -23,7 +23,6 @@ It would be very nice if SAGE had a large table/database of prime numbers.
 
 For example, on the number theory list:
 
-
 ```
 Look in the file
  
@@ -37,7 +36,6 @@ For the meaning of the "L" and "M" notation, see the papers at
  
 http://homes.cerias.purdue.edu/~ssw/bell/index.html
 ```
-
 So a person really wanted to factor some numbers p^p -1, but couldn't
 with PARI.  If SAGE had tables of the factorizations of those numbers,
 it could have done it via a lookup, and the verbose message could have

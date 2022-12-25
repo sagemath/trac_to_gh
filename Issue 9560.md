@@ -3,7 +3,7 @@
 archive/issues_009560.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  cwitty @mstreng @kcrisman\n\nIt's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:\n\n\n```\nsage: SR(5) + True; SR(5) * True; SR(5) - True\n2\n1\n0\nsage: 5 + True; 5 * True; 5 - True\n6\n5\n4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9560\n\n",
+    "body": "Assignee: @burcin\n\nCC:  cwitty @mstreng @kcrisman\n\nIt's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:\n\n```\nsage: SR(5) + True; SR(5) * True; SR(5) - True\n2\n1\n0\nsage: 5 + True; 5 * True; 5 - True\n6\n5\n4\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9560\n\n",
     "created_at": "2010-07-21T09:06:17Z",
     "labels": [
         "component: symbolics",
@@ -22,7 +22,6 @@ CC:  cwitty @mstreng @kcrisman
 
 It's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:
 
-
 ```
 sage: SR(5) + True; SR(5) * True; SR(5) - True
 2
@@ -33,7 +32,6 @@ sage: 5 + True; 5 * True; 5 - True
 5
 4
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9560
 
@@ -208,7 +206,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092010.json:
 ```json
 {
-    "body": "Probably it hasn't been reviewed for the same reason as people disagreed with it in the past - not really worth the effort :)\n\nMy favorites:\n\n```\nsage: e-True\ne - 1\nsage: pi+False\npi\n```\n\n\nAnyway, positive review.  It would have been nice to have an example with `False`, but that's not worth holding this up any further.",
+    "body": "Probably it hasn't been reviewed for the same reason as people disagreed with it in the past - not really worth the effort :)\n\nMy favorites:\n\n```\nsage: e-True\ne - 1\nsage: pi+False\npi\n```\n\nAnyway, positive review.  It would have been nice to have an example with `False`, but that's not worth holding this up any further.",
     "created_at": "2011-06-08T18:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
@@ -227,7 +225,6 @@ e - 1
 sage: pi+False
 pi
 ```
-
 
 Anyway, positive review.  It would have been nice to have an example with `False`, but that's not worth holding this up any further.
 

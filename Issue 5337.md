@@ -3,7 +3,7 @@
 archive/issues_005337.json:
 ```json
 {
-    "body": "Assignee: tba\n\nOld French version:\n\n```\nIl y a une subtilit\u00e9 dans la d\u00e9finition des nombres complexes. Comme\nmentionn\u00e9 ci-dessus, le symbole  ``i`` repr\u00e9sente une racine carr\u00e9e de\n:math:`-1`, mais il s'agit d'une racine carr\u00e9e *formelle* de\n:math:`-1`, qui n'appartient pas aux nombres complexes. L'appel ``CC(i)``\nrenvoie la racine carr\u00e9e complexe de :math:`-1`.\n```\n\n\nNew English version:\n\n\n```\nThere is one subtlety in defining complex numbers: as mentioned\nabove, the symbol ``i`` represents a square root of :math:`-1`, but it is a\n*formal* square root of :math:`-1`.  Calling\n``CC(i)`` returns the complex square root of :math:`-1`.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5337\n\n",
+    "body": "Assignee: tba\n\nOld French version:\n\n```\nIl y a une subtilit\u00e9 dans la d\u00e9finition des nombres complexes. Comme\nmentionn\u00e9 ci-dessus, le symbole  ``i`` repr\u00e9sente une racine carr\u00e9e de\n:math:`-1`, mais il s'agit d'une racine carr\u00e9e *formelle* de\n:math:`-1`, qui n'appartient pas aux nombres complexes. L'appel ``CC(i)``\nrenvoie la racine carr\u00e9e complexe de :math:`-1`.\n```\n\nNew English version:\n\n```\nThere is one subtlety in defining complex numbers: as mentioned\nabove, the symbol ``i`` represents a square root of :math:`-1`, but it is a\n*formal* square root of :math:`-1`.  Calling\n``CC(i)`` returns the complex square root of :math:`-1`.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5337\n\n",
     "created_at": "2009-02-22T18:08:19Z",
     "labels": [
         "component: documentation",
@@ -28,9 +28,7 @@ mentionné ci-dessus, le symbole  ``i`` représente une racine carrée de
 renvoie la racine carrée complexe de :math:`-1`.
 ```
 
-
 New English version:
-
 
 ```
 There is one subtlety in defining complex numbers: as mentioned
@@ -38,7 +36,6 @@ above, the symbol ``i`` represents a square root of :math:`-1`, but it is a
 *formal* square root of :math:`-1`.  Calling
 ``CC(i)`` returns the complex square root of :math:`-1`.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5337
@@ -160,7 +157,7 @@ archive/issue_events_012444.json:
 archive/issue_comments_041036.json:
 ```json
 {
-    "body": "Hi,\n\nReplying to [comment:2 mhansen]:\n> In general, we don't close tickets until the appropriate\n> changes have been merged into the main tree.\n\nActually I sent you an email asking precisely this question when I closed this ticket--but it seems you saw my action on the ticket first. Sorry for my mistake; I have just reopened #4318 too.\n\n-- Marc",
+    "body": "Hi,\n\nReplying to [comment:2 mhansen]:\n> In general, we don't close tickets until the appropriate\n> changes have been merged into the main tree.\n\n\nActually I sent you an email asking precisely this question when I closed this ticket--but it seems you saw my action on the ticket first. Sorry for my mistake; I have just reopened #4318 too.\n\n-- Marc",
     "created_at": "2009-03-07T12:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
@@ -174,6 +171,7 @@ Hi,
 Replying to [comment:2 mhansen]:
 > In general, we don't close tickets until the appropriate
 > changes have been merged into the main tree.
+
 
 Actually I sent you an email asking precisely this question when I closed this ticket--but it seems you saw my action on the ticket first. Sorry for my mistake; I have just reopened #4318 too.
 
@@ -204,7 +202,7 @@ This should be fixed by the patch attached to #5850.
 archive/issue_comments_041038.json:
 ```json
 {
-    "body": "Replying to [comment:4 mmezzarobba]:\n> This should be fixed by the patch attached to #5850.\n\nAnd now #5850 has been closed, so I think this ticket should be closed too.",
+    "body": "Replying to [comment:4 mmezzarobba]:\n> This should be fixed by the patch attached to #5850.\n\n\nAnd now #5850 has been closed, so I think this ticket should be closed too.",
     "created_at": "2009-06-24T19:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5337",
     "type": "issue_comment",
@@ -215,6 +213,7 @@ archive/issue_comments_041038.json:
 
 Replying to [comment:4 mmezzarobba]:
 > This should be fixed by the patch attached to #5850.
+
 
 And now #5850 has been closed, so I think this ticket should be closed too.
 

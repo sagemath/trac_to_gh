@@ -3,7 +3,7 @@
 archive/issues_007537.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nThis looks like a bug to me:\n\n\n```\nsage: list(SR('c+1').iterator())\n[c, 1]\nsage: list(SR('c').iterator())\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7537\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nThis looks like a bug to me:\n\n```\nsage: list(SR('c+1').iterator())\n[c, 1]\nsage: list(SR('c').iterator())\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7537\n\n",
     "created_at": "2009-11-26T17:41:35Z",
     "labels": [
         "component: symbolics",
@@ -23,14 +23,12 @@ CC:  @burcin
 
 This looks like a bug to me:
 
-
 ```
 sage: list(SR('c+1').iterator())
 [c, 1]
 sage: list(SR('c').iterator())
 []
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7537
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7537
 archive/issue_comments_063806.json:
 ```json
 {
-    "body": "I don't think this is a bug. :)\n\nIt doesn't make sense to iterate over variables, constants or numeric coefficients. Iterators are only available over `add`, `mul`, and `pow` objects, which correspond to the obvious mathematical operations.\n\nAFAICT, this is also the case in MMA:\n\n\n```\nMathematica 7.0 for Linux x86 (32-bit)\nCopyright 1988-2008 Wolfram Research, Inc.\n\nIn[1]:= T=x+1\nOut[1]= 1 + x\nIn[2]:= T\nOut[2]= 1 + x\nIn[3]:= T[[1]]\nOut[3]= 1\nIn[4]:= X\nOut[4]= X\nIn[5]:= X[[1]]\nPart::partd: Part specification X[[1]] is longer than depth of object.\nOut[5]= X[[1]]\n```\n\n\nWe can raise a `ValueError` if the expression corresponds to a `symbol`, `constant` or `numeric` object. The docstring should also be enhanced to point to the data structure for symbolic expressions here:\n\nhttp://www.ginac.de/tutorial/Internal-representation-of-products-and-sums.html\n\nComments?",
+    "body": "I don't think this is a bug. :)\n\nIt doesn't make sense to iterate over variables, constants or numeric coefficients. Iterators are only available over `add`, `mul`, and `pow` objects, which correspond to the obvious mathematical operations.\n\nAFAICT, this is also the case in MMA:\n\n```\nMathematica 7.0 for Linux x86 (32-bit)\nCopyright 1988-2008 Wolfram Research, Inc.\n\nIn[1]:= T=x+1\nOut[1]= 1 + x\nIn[2]:= T\nOut[2]= 1 + x\nIn[3]:= T[[1]]\nOut[3]= 1\nIn[4]:= X\nOut[4]= X\nIn[5]:= X[[1]]\nPart::partd: Part specification X[[1]] is longer than depth of object.\nOut[5]= X[[1]]\n```\n\nWe can raise a `ValueError` if the expression corresponds to a `symbol`, `constant` or `numeric` object. The docstring should also be enhanced to point to the data structure for symbolic expressions here:\n\nhttp://www.ginac.de/tutorial/Internal-representation-of-products-and-sums.html\n\nComments?",
     "created_at": "2010-02-25T13:16:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7537",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ I don't think this is a bug. :)
 It doesn't make sense to iterate over variables, constants or numeric coefficients. Iterators are only available over `add`, `mul`, and `pow` objects, which correspond to the obvious mathematical operations.
 
 AFAICT, this is also the case in MMA:
-
 
 ```
 Mathematica 7.0 for Linux x86 (32-bit)
@@ -75,7 +72,6 @@ In[5]:= X[[1]]
 Part::partd: Part specification X[[1]] is longer than depth of object.
 Out[5]= X[[1]]
 ```
-
 
 We can raise a `ValueError` if the expression corresponds to a `symbol`, `constant` or `numeric` object. The docstring should also be enhanced to point to the data structure for symbolic expressions here:
 
@@ -186,7 +182,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063812.json:
 ```json
 {
-    "body": "With attachment:trac_7537-iterator.patch we get an error when trying to iterate over symbols, constants or numeric objects:\n\n\n```\nsage: x.iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\nsage: pi.iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\nsage: SR(5).iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\n```\n\n\nThis patch depends on #9989 (not in terms of functionality, but it will fail to apply since the patch there touches the same part of `sage/symbolic/expression.pyx`).",
+    "body": "With attachment:trac_7537-iterator.patch we get an error when trying to iterate over symbols, constants or numeric objects:\n\n```\nsage: x.iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\nsage: pi.iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\nsage: SR(5).iterator()\nTraceback (most recent call last):\n...\nValueError: cannot iterate over numeric, constant or symbol\n```\n\nThis patch depends on #9989 (not in terms of functionality, but it will fail to apply since the patch there touches the same part of `sage/symbolic/expression.pyx`).",
     "created_at": "2010-09-26T14:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7537",
     "type": "issue_comment",
@@ -196,7 +192,6 @@ archive/issue_comments_063812.json:
 ```
 
 With attachment:trac_7537-iterator.patch we get an error when trying to iterate over symbols, constants or numeric objects:
-
 
 ```
 sage: x.iterator()
@@ -212,7 +207,6 @@ Traceback (most recent call last):
 ...
 ValueError: cannot iterate over numeric, constant or symbol
 ```
-
 
 This patch depends on #9989 (not in terms of functionality, but it will fail to apply since the patch there touches the same part of `sage/symbolic/expression.pyx`).
 

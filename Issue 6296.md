@@ -3,7 +3,7 @@
 archive/issues_006296.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
     "created_at": "2009-06-15T10:51:54Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_006296.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -43,7 +42,6 @@ On Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:
 You're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6296
 
 
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6296
 archive/issue_comments_050142.json:
 ```json
 {
-    "body": "from a linbox devel:\n\n```\nWell, I think this was corrected in linbox-1.1.6:\n\nThe minpoly algorithm used depends on which method you are using from\nLinBox of course but,\nIf you use the solution \"minpoly\" you will get the blackbox algorithm\n(just like if you specify \"minpoly(pol, mat, Method::Blackbox())\")\nthen (since sept 2008 and 1.1.6) we will end up using an extension field\nto compute the minpoly (on my machine it will be GF(3^10)) and then\nI e.g. got the following result for one try (the algorithm is still\nprobabilistic, but has a much larger success rate, roughly around 1/3^10):\n\n > 99993 minimal Polynomials are x^2 +x, 3 minimal polynomial are x+1, 4\nminimal polynomials are x\n\nNow for a so small matrix it could be better to use a dense version,\nwhich can be called by \"minpoly(pol,mat,Method::Elimination())\".\nIf i am correct this dense version is also probabilistic (choice of the\nKrylov non-zero vector) and therefore should also pick vectors from an\nextension.\nThis is not the case in 1.1.6.\nCl\u00e9ment can you confirm this ? If so it should be easy to fix, the same\nway we fixed Wiedemann.\n\nFor your example matrix in some of the cases, when vectors [1,1], and\n[2,2] are chosen the Krylov space has rank 1, whereas for other non zero\nvectors  it has rank 2 and\nthus the dense minbpoly will be x^2+x or x+1 ...\n\nbtw, the returned polynomial is always a factor of the true polynomial,\ntherefore to get a 1/3^{10k} probability  of success it will be\nsufficient to perform the lcm of k runs.\n\nBest,\n\n--\n                                       Jean-Guillaume Dumas.\n```\n\n\nMy remarks\n\n```\nHi Yann (and sage-support),\n\nThis is from a linbox developer (see below).   This will be fixed by:\n\n (1) upgrading -- actually, we *already* use linbox-1.1.6 in sage, so ...\n\n (2) making it so minpoly by default just raises a NotImplementedError, however\n   minpoly(proof=False) will call minpoly a bunch of times and return\nthe lcm of the\n   results.\n\nIt turns out that maybe linbox doesn't seem to have a proof=True\nminpoly algorithm yet (they are hard to write), so our wrapping of\nlinbox is wrong, given that in Sage the default is proof=True\neverywhere.\n\nYann -- if you want to work on improving the situation wrt any of the\nabove, please do.\n\nWilliam\n```\n",
+    "body": "from a linbox devel:\n\n```\nWell, I think this was corrected in linbox-1.1.6:\n\nThe minpoly algorithm used depends on which method you are using from\nLinBox of course but,\nIf you use the solution \"minpoly\" you will get the blackbox algorithm\n(just like if you specify \"minpoly(pol, mat, Method::Blackbox())\")\nthen (since sept 2008 and 1.1.6) we will end up using an extension field\nto compute the minpoly (on my machine it will be GF(3^10)) and then\nI e.g. got the following result for one try (the algorithm is still\nprobabilistic, but has a much larger success rate, roughly around 1/3^10):\n\n > 99993 minimal Polynomials are x^2 +x, 3 minimal polynomial are x+1, 4\nminimal polynomials are x\n\nNow for a so small matrix it could be better to use a dense version,\nwhich can be called by \"minpoly(pol,mat,Method::Elimination())\".\nIf i am correct this dense version is also probabilistic (choice of the\nKrylov non-zero vector) and therefore should also pick vectors from an\nextension.\nThis is not the case in 1.1.6.\nCl\u00e9ment can you confirm this ? If so it should be easy to fix, the same\nway we fixed Wiedemann.\n\nFor your example matrix in some of the cases, when vectors [1,1], and\n[2,2] are chosen the Krylov space has rank 1, whereas for other non zero\nvectors  it has rank 2 and\nthus the dense minbpoly will be x^2+x or x+1 ...\n\nbtw, the returned polynomial is always a factor of the true polynomial,\ntherefore to get a 1/3^{10k} probability  of success it will be\nsufficient to perform the lcm of k runs.\n\nBest,\n\n--\n                                       Jean-Guillaume Dumas.\n```\n\nMy remarks\n\n```\nHi Yann (and sage-support),\n\nThis is from a linbox developer (see below).   This will be fixed by:\n\n (1) upgrading -- actually, we *already* use linbox-1.1.6 in sage, so ...\n\n (2) making it so minpoly by default just raises a NotImplementedError, however\n   minpoly(proof=False) will call minpoly a bunch of times and return\nthe lcm of the\n   results.\n\nIt turns out that maybe linbox doesn't seem to have a proof=True\nminpoly algorithm yet (they are hard to write), so our wrapping of\nlinbox is wrong, given that in Sage the default is proof=True\neverywhere.\n\nYann -- if you want to work on improving the situation wrt any of the\nabove, please do.\n\nWilliam\n```",
     "created_at": "2009-06-15T14:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ Best,
                                        Jean-Guillaume Dumas.
 ```
 
-
 My remarks
 
 ```
@@ -130,7 +127,6 @@ above, please do.
 
 William
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007890.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs of now, certain kinds of sage objects can be converted into GAP objects, but the resulting GAP objects cannot be converted back to sage objects.\n\nExamples of this are matrices over finite fields:\n\n\n```\nsage: g = matrix(GF(5),2,[1,2, -1, 1])\nsage: gg = g._gap_()\nsage: gg.sage()\n---------------------------------------------------------------------------\nNotImplementedError\n```\n\n\n\n```\nsage: a = gap('E(9)')\nsage: a\n-E(9)^4-E(9)^7\nsage: a.sage()\n---------------------------------------------------------------------------\nNotImplementedError  \n```\n\n\nBeing able to translate gap field elements into sage ones would help accesing GAP character tables, and a good conversion of matrices would allow many methods to be available for matrix groups.\n\nSee this thread at sage devel for more details:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a04006e5da578bd\n\nIssue created by migration from https://trac.sagemath.org/ticket/7890\n\n",
+    "body": "Assignee: @williamstein\n\nAs of now, certain kinds of sage objects can be converted into GAP objects, but the resulting GAP objects cannot be converted back to sage objects.\n\nExamples of this are matrices over finite fields:\n\n```\nsage: g = matrix(GF(5),2,[1,2, -1, 1])\nsage: gg = g._gap_()\nsage: gg.sage()\n---------------------------------------------------------------------------\nNotImplementedError\n```\n\n```\nsage: a = gap('E(9)')\nsage: a\n-E(9)^4-E(9)^7\nsage: a.sage()\n---------------------------------------------------------------------------\nNotImplementedError  \n```\n\nBeing able to translate gap field elements into sage ones would help accesing GAP character tables, and a good conversion of matrices would allow many methods to be available for matrix groups.\n\nSee this thread at sage devel for more details:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a04006e5da578bd\n\nIssue created by migration from https://trac.sagemath.org/ticket/7890\n\n",
     "created_at": "2010-01-10T10:45:46Z",
     "labels": [
         "component: interfaces",
@@ -21,7 +21,6 @@ As of now, certain kinds of sage objects can be converted into GAP objects, but 
 
 Examples of this are matrices over finite fields:
 
-
 ```
 sage: g = matrix(GF(5),2,[1,2, -1, 1])
 sage: gg = g._gap_()
@@ -29,8 +28,6 @@ sage: gg.sage()
 ---------------------------------------------------------------------------
 NotImplementedError
 ```
-
-
 
 ```
 sage: a = gap('E(9)')
@@ -40,7 +37,6 @@ sage: a.sage()
 ---------------------------------------------------------------------------
 NotImplementedError  
 ```
-
 
 Being able to translate gap field elements into sage ones would help accesing GAP character tables, and a good conversion of matrices would allow many methods to be available for matrix groups.
 
@@ -225,7 +221,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068522.json:
 ```json
 {
-    "body": "Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by @wdjoyner created at 2010-01-12 03:06:28\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```\n",
+    "body": "Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by @wdjoyner created at 2010-01-12 03:06:28\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```",
     "created_at": "2010-01-12T03:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -238,7 +234,6 @@ Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/g
 
 Last patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:
 
-
 ```
 The following tests failed:
 
@@ -250,7 +245,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/misc/sage_eval.py"
 
 ```
-
 
 
 
@@ -283,7 +277,7 @@ versions of Sage.  I wonder if you're planning to clean this up and finish it?
 archive/issue_comments_068524.json:
 ```json
 {
-    "body": "Hi William,\n\nyeah, sorry about that. I changed jobs in 2010 and my whole work plan went south.\nI would like to get this thing working eventually, but I don't believe the approach I was trying is a good one. The lack of types in GAP creates some ambiguity in gap elements that can have different parents and where a choice needs to be made.\n\nProbably a better approach would be to provide an optional argument `sage_parent` to the `_sage_` function in GapElement, and then put the heavy lift into the sage parent where an ad-hoc gap-to-sage function can be defined, something like this:\n\n\n```\ndef _sage_(self, sage_parent = None):\n    if sage_parent is not None:\n        return sage_parent._call_from_gap(self)\n    else:\n        .... # The function as it used to work\n\n```\n\n\nIn this way, anyone creating a sage structure could implement their own \"take an element from gap here\" function rather than mess up with the interface. How does that sound?\n\nIn any case it might make sense to wait a little bit and get GAP 4.5 working first, as it seems [the representation of some objects has changed](http://www.gap-system.org/Manuals/doc/changes/chap2.html).",
+    "body": "Hi William,\n\nyeah, sorry about that. I changed jobs in 2010 and my whole work plan went south.\nI would like to get this thing working eventually, but I don't believe the approach I was trying is a good one. The lack of types in GAP creates some ambiguity in gap elements that can have different parents and where a choice needs to be made.\n\nProbably a better approach would be to provide an optional argument `sage_parent` to the `_sage_` function in GapElement, and then put the heavy lift into the sage parent where an ad-hoc gap-to-sage function can be defined, something like this:\n\n```\ndef _sage_(self, sage_parent = None):\n    if sage_parent is not None:\n        return sage_parent._call_from_gap(self)\n    else:\n        .... # The function as it used to work\n\n```\n\nIn this way, anyone creating a sage structure could implement their own \"take an element from gap here\" function rather than mess up with the interface. How does that sound?\n\nIn any case it might make sense to wait a little bit and get GAP 4.5 working first, as it seems [the representation of some objects has changed](http://www.gap-system.org/Manuals/doc/changes/chap2.html).",
     "created_at": "2012-06-15T07:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -299,7 +293,6 @@ I would like to get this thing working eventually, but I don't believe the appro
 
 Probably a better approach would be to provide an optional argument `sage_parent` to the `_sage_` function in GapElement, and then put the heavy lift into the sage parent where an ad-hoc gap-to-sage function can be defined, something like this:
 
-
 ```
 def _sage_(self, sage_parent = None):
     if sage_parent is not None:
@@ -308,7 +301,6 @@ def _sage_(self, sage_parent = None):
         .... # The function as it used to work
 
 ```
-
 
 In this way, anyone creating a sage structure could implement their own "take an element from gap here" function rather than mess up with the interface. How does that sound?
 
@@ -321,7 +313,7 @@ In any case it might make sense to wait a little bit and get GAP 4.5 working fir
 archive/issue_comments_068525.json:
 ```json
 {
-    "body": "Hello,\n\nWith #18152, it works fine for cyclotomic elements (because I introduced a function `E` in the global namespace)\n\n```\nsage: a = gap('E(9)')\nsage: a.sage()\n-E(9)^4 - E(9)^7\n```\n\n\nVincent",
+    "body": "Hello,\n\nWith #18152, it works fine for cyclotomic elements (because I introduced a function `E` in the global namespace)\n\n```\nsage: a = gap('E(9)')\nsage: a.sage()\n-E(9)^4 - E(9)^7\n```\n\nVincent",
     "created_at": "2015-04-09T22:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -340,7 +332,6 @@ sage: a.sage()
 -E(9)^4 - E(9)^7
 ```
 
-
 Vincent
 
 
@@ -350,7 +341,7 @@ Vincent
 archive/issue_comments_068526.json:
 ```json
 {
-    "body": "Note that with the new `libgap` the conversion works almost fine for matrices (it is converted into a list of lists instead of a matrix)\n\n```\nsage: m = matrix(GF(5), 2, [1,2,-1,1])\nsage: a = m._libgap_().sage()\nsage: a\n[[1, 2], [4, 1]]\nsage: matrix(a) == m\nTrue\n```\n",
+    "body": "Note that with the new `libgap` the conversion works almost fine for matrices (it is converted into a list of lists instead of a matrix)\n\n```\nsage: m = matrix(GF(5), 2, [1,2,-1,1])\nsage: a = m._libgap_().sage()\nsage: a\n[[1, 2], [4, 1]]\nsage: matrix(a) == m\nTrue\n```",
     "created_at": "2015-04-11T22:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
@@ -369,4 +360,3 @@ sage: a
 sage: matrix(a) == m
 True
 ```
-

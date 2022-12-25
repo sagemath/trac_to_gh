@@ -47,7 +47,7 @@ archive/issue_events_002733.json:
 archive/issue_comments_006020.json:
 ```json
 {
-    "body": "This was fixed in an earlier patch.\n\n\n```\nsage: asinh(I)\nI*pi/2\nsage: asinh(2.0)\n1.44363547517881\nsage: acosh(2.0)\n1.31695789692482\nsage: atanh(1.0)\n+infinity\nsage: atanh(0.2)\n0.202732554054082\n```\n",
+    "body": "This was fixed in an earlier patch.\n\n```\nsage: asinh(I)\nI*pi/2\nsage: asinh(2.0)\n1.44363547517881\nsage: acosh(2.0)\n1.31695789692482\nsage: atanh(1.0)\n+infinity\nsage: atanh(0.2)\n0.202732554054082\n```",
     "created_at": "2007-11-30T23:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ archive/issue_comments_006020.json:
 ```
 
 This was fixed in an earlier patch.
-
 
 ```
 sage: asinh(I)
@@ -71,7 +70,6 @@ sage: atanh(1.0)
 sage: atanh(0.2)
 0.202732554054082
 ```
-
 
 
 

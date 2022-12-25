@@ -3,7 +3,7 @@
 archive/issues_008278.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
+    "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
     "created_at": "2010-02-15T22:44:34Z",
     "labels": [
         "component: porting: cygwin",
@@ -22,7 +22,6 @@ CC:  @peterjeremy
 
 Using either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:
 
-
 ```
 building 'base' extension                                                            
 creating build/temp.cygwin-1.7.1-i686-2.6                                                                                  
@@ -35,7 +34,6 @@ C/misc.h:29: error: expected specifier-qualifier-list before ‘complex’
 C/base.c:58: error: ‘complex’ undeclared here (not in a function)                                                          
 C/base.c: In function ‘write_znum’:                             
 ```
-
 
 IDEAS:
 
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8278
 archive/issue_comments_073177.json:
 ```json
 {
-    "body": "I put in some fake #defines to get past the complex.h import problem.  Then linking fails due to no libcblas. \n\n```\ngcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/C/base.o build/temp.cygwin-1.7.1-i686-2.6/C/dense.o build/temp.cygwin-1.7.1-i686-2.6/C/sparse.o -L/home/wstein/build/sage-4.3.3.alpha0/local/lib -L/home/wstein/build/sage-4.3.3.alpha0/local/lib/python2.6/config -lm -llapack -lcblas -lf77blas -latlas -lgfortran -lpython2.6 -o build/lib.cygwin-1.7.1-i686-2.6/cvxopt/base.dll\n/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../../i686-pc-cygwin/bin/ld: cannot find -lcblas\ncollect2: ld returned 1 exit status\n```\n\nChanging the libraries= line in setup.py to\n\n```\n    libraries = ['m','lapack','blas','gfortran']\n```\n\n(like it is for OS X) gets past this problem.\n\nI think it may be easy to implement complex.h, at least enough for cvxopt, just using what is in GSL...  since cvxopt doesn't need much.  \n\nTo get cvxopt to build, I replaced all references to atlas and cblas by \"blas\".    This *did* work.  I've attached my hacked setup.py (based on the one in cvxopt-1.1.2.p2) to this ticket just 'cause:\n\n```\n/home/wstein/build/sage-4.3.3.alpha0\nsage subshell$ python\nPython 2.6.4 (r264:75706, Feb 12 2010, 22:06:32)\n[GCC 4.3.4 20090804 (release) 1] on cygwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import cvxopt\n>>>\n```\n",
+    "body": "I put in some fake #defines to get past the complex.h import problem.  Then linking fails due to no libcblas. \n\n```\ngcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/C/base.o build/temp.cygwin-1.7.1-i686-2.6/C/dense.o build/temp.cygwin-1.7.1-i686-2.6/C/sparse.o -L/home/wstein/build/sage-4.3.3.alpha0/local/lib -L/home/wstein/build/sage-4.3.3.alpha0/local/lib/python2.6/config -lm -llapack -lcblas -lf77blas -latlas -lgfortran -lpython2.6 -o build/lib.cygwin-1.7.1-i686-2.6/cvxopt/base.dll\n/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../../i686-pc-cygwin/bin/ld: cannot find -lcblas\ncollect2: ld returned 1 exit status\n```\nChanging the libraries= line in setup.py to\n\n```\n    libraries = ['m','lapack','blas','gfortran']\n```\n(like it is for OS X) gets past this problem.\n\nI think it may be easy to implement complex.h, at least enough for cvxopt, just using what is in GSL...  since cvxopt doesn't need much.  \n\nTo get cvxopt to build, I replaced all references to atlas and cblas by \"blas\".    This *did* work.  I've attached my hacked setup.py (based on the one in cvxopt-1.1.2.p2) to this ticket just 'cause:\n\n```\n/home/wstein/build/sage-4.3.3.alpha0\nsage subshell$ python\nPython 2.6.4 (r264:75706, Feb 12 2010, 22:06:32)\n[GCC 4.3.4 20090804 (release) 1] on cygwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import cvxopt\n>>>\n```",
     "created_at": "2010-02-15T23:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
@@ -70,13 +68,11 @@ gcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/C/base
 /usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../../i686-pc-cygwin/bin/ld: cannot find -lcblas
 collect2: ld returned 1 exit status
 ```
-
 Changing the libraries= line in setup.py to
 
 ```
     libraries = ['m','lapack','blas','gfortran']
 ```
-
 (like it is for OS X) gets past this problem.
 
 I think it may be easy to implement complex.h, at least enough for cvxopt, just using what is in GSL...  since cvxopt doesn't need much.  
@@ -92,7 +88,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import cvxopt
 >>>
 ```
-
 
 
 
@@ -221,7 +216,7 @@ Dave
 archive/issue_comments_073184.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.\n\nAnd the complex.h needs to match the C99 libraries.\n\n> I'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on FreeBSD.\n\ncephes was introduced to provide C99 functions for Cygwin.  FreeBSD does not provide a complete C99 library and I've written a number of tickets to use cephes to provide the missing functionality.  See trac tickets #9543 and #9601 (both of which include patches, though they haven't been converted to new SPKG files yet).  numpy also needs the same patch as #9601 but I haven't updated the relevant trac ticket for that yet.\n\nNote that the patch in #9543 relies on some ELF shared library magic (and installs a $SAGE_LOCAL/libm.so that includes the cephes functions and automatically falls back to the base libm.so for other functions) that may not work in Cygwin (on Cygwin, cephes installs C99 libraries as $SAGE_LOCAL/libm{c,d,f,l}.a and any other SPKGs needing to reference those libraries will need patches to their link steps).",
+    "body": "Replying to [comment:6 drkirkby]:\n> complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.\n\n\nAnd the complex.h needs to match the C99 libraries.\n\n> I'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on FreeBSD.\n\n\ncephes was introduced to provide C99 functions for Cygwin.  FreeBSD does not provide a complete C99 library and I've written a number of tickets to use cephes to provide the missing functionality.  See trac tickets #9543 and #9601 (both of which include patches, though they haven't been converted to new SPKG files yet).  numpy also needs the same patch as #9601 but I haven't updated the relevant trac ticket for that yet.\n\nNote that the patch in #9543 relies on some ELF shared library magic (and installs a $SAGE_LOCAL/libm.so that includes the cephes functions and automatically falls back to the base libm.so for other functions) that may not work in Cygwin (on Cygwin, cephes installs C99 libraries as $SAGE_LOCAL/libm{c,d,f,l}.a and any other SPKGs needing to reference those libraries will need patches to their link steps).",
     "created_at": "2010-08-02T11:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
@@ -233,9 +228,11 @@ archive/issue_comments_073184.json:
 Replying to [comment:6 drkirkby]:
 > complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.
 
+
 And the complex.h needs to match the C99 libraries.
 
 > I'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on FreeBSD.
+
 
 cephes was introduced to provide C99 functions for Cygwin.  FreeBSD does not provide a complete C99 library and I've written a number of tickets to use cephes to provide the missing functionality.  See trac tickets #9543 and #9601 (both of which include patches, though they haven't been converted to new SPKG files yet).  numpy also needs the same patch as #9601 but I haven't updated the relevant trac ticket for that yet.
 

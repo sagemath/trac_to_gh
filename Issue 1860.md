@@ -3,7 +3,7 @@
 archive/issues_001860.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry\n\n```\nsage: arrow((0,1), (2,3))\n```\n\nThe top of the arrow is completely not visible.  It's like 1/2 a unit off the screen.  Terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1860\n\n",
+    "body": "Assignee: @williamstein\n\nTry\n\n```\nsage: arrow((0,1), (2,3))\n```\nThe top of the arrow is completely not visible.  It's like 1/2 a unit off the screen.  Terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1860\n\n",
     "created_at": "2008-01-20T02:24:47Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ Try
 ```
 sage: arrow((0,1), (2,3))
 ```
-
 The top of the arrow is completely not visible.  It's like 1/2 a unit off the screen.  Terrible. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1860

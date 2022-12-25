@@ -3,7 +3,7 @@
 archive/issues_001121.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nJohn Cremona wrote\n\n\n```\nYou are right of course -- one should always compute the order over\nthe smallest field of definition and then use the easy formula to get\nthe order of E(GF(q^d)) from that of E(GF(q)).\n\nWhile you are at it you should not stop at the smallest field\ncontaining the coefficients of the given curve, it would be enough to\nwork over the field containing the j-invariant, plus a little work\ndeciding which twist your need and all this is as usual a little more\ncomplicated when j=0 or j=1728, or in characteristics 2 and 3.\n\nThis feels like reinventing wheels -- i wonder who has done this already?\n\nAs for implementation, it is *extremely* ugly to work with floating\npoint complex numbers for this (as both Graeme and Alex seem to do.\nIt should be done algebraically!\n\nIf n = #E(GF(q)) then a=1+q-n is the trace of alpha =\n(a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The\ntrace of the d'th power of alpha is just a resultant calculation.\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a\n\n#1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1121\n\n",
+    "body": "Assignee: @williamstein\n\nJohn Cremona wrote\n\n```\nYou are right of course -- one should always compute the order over\nthe smallest field of definition and then use the easy formula to get\nthe order of E(GF(q^d)) from that of E(GF(q)).\n\nWhile you are at it you should not stop at the smallest field\ncontaining the coefficients of the given curve, it would be enough to\nwork over the field containing the j-invariant, plus a little work\ndeciding which twist your need and all this is as usual a little more\ncomplicated when j=0 or j=1728, or in characteristics 2 and 3.\n\nThis feels like reinventing wheels -- i wonder who has done this already?\n\nAs for implementation, it is *extremely* ugly to work with floating\npoint complex numbers for this (as both Graeme and Alex seem to do.\nIt should be done algebraically!\n\nIf n = #E(GF(q)) then a=1+q-n is the trace of alpha =\n(a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The\ntrace of the d'th power of alpha is just a resultant calculation.\n```\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a\n\n#1119 implements to computing over GF(p) if possible, but it doesn't implement computing over GF(p<sup>m</sup>) if m|n. Also #1119 still relies on floating point arithmetic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1121\n\n",
     "created_at": "2007-11-07T15:57:31Z",
     "labels": [
         "component: algebraic geometry"
@@ -18,7 +18,6 @@ archive/issues_001121.json:
 Assignee: @williamstein
 
 John Cremona wrote
-
 
 ```
 You are right of course -- one should always compute the order over
@@ -41,7 +40,6 @@ If n = #E(GF(q)) then a=1+q-n is the trace of alpha =
 (a+sqrt(a^2-4*q))/2, and then #E(GF(q^d)) = 1+q^d-trace(alpha^d).  The
 trace of the d'th power of alpha is just a resultant calculation.
 ```
-
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/69ebf55ee4f22278/23c61ad57cbff62a
 
@@ -151,7 +149,7 @@ Applied 8312.patch to Sage 2.10.2.alpha0
 archive/issue_comments_006756.json:
 ```json
 {
-    "body": "Replying to [comment:2 gmoose05]:\n> 8312 just corrects minor thing in documentation\n> \n> The Documentation said the cardinality was not cached, but in fact the code does cache. \n\nI am confused. Does the patch address the ticket?",
+    "body": "Replying to [comment:2 gmoose05]:\n> 8312 just corrects minor thing in documentation\n> \n> The Documentation said the cardinality was not cached, but in fact the code does cache. \n\n\nI am confused. Does the patch address the ticket?",
     "created_at": "2008-02-14T09:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1121",
     "type": "issue_comment",
@@ -164,6 +162,7 @@ Replying to [comment:2 gmoose05]:
 > 8312 just corrects minor thing in documentation
 > 
 > The Documentation said the cardinality was not cached, but in fact the code does cache. 
+
 
 I am confused. Does the patch address the ticket?
 

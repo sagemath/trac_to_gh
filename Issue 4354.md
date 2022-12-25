@@ -3,7 +3,7 @@
 archive/issues_004354.json:
 ```json
 {
-    "body": "Assignee: tbd\n\ntry it at home:\n\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4354\n\n",
+    "body": "Assignee: tbd\n\ntry it at home:\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4354\n\n",
     "created_at": "2008-10-24T00:41:49Z",
     "labels": [
         "component: algebra",
@@ -20,12 +20,10 @@ Assignee: tbd
 
 try it at home:
 
-
 ```
 $ echo 'print "ok"' > 'test file.sage'
 $ sage "test file.sage"
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4354
 
@@ -109,7 +107,7 @@ Changing component from algebra to misc.
 archive/issue_comments_031910.json:
 ```json
 {
-    "body": "Attachment [trac_4354.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354.patch) by anakha created at 2008-10-24 01:01:34\n\nWith the above patch and replacement sage script the example given should work and print 'ok'.\n\nBe aware that if you copied the sage script somewhere (like /usr/local/bin) for convenience you need to modify that copy too.  The line near the end that reads \n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n```\n\nneeds to be replaced by\n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$@\"\n```\n",
+    "body": "Attachment [trac_4354.patch](tarball://root/attachments/some-uuid/ticket4354/trac_4354.patch) by anakha created at 2008-10-24 01:01:34\n\nWith the above patch and replacement sage script the example given should work and print 'ok'.\n\nBe aware that if you copied the sage script somewhere (like /usr/local/bin) for convenience you need to modify that copy too.  The line near the end that reads \n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n```\nneeds to be replaced by\n\n```\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$@\"\n```",
     "created_at": "2008-10-24T01:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -127,7 +125,6 @@ Be aware that if you copied the sage script somewhere (like /usr/local/bin) for 
 ```
 "$SAGE_ROOT/local/bin/sage-sage" $*
 ```
-
 needs to be replaced by
 
 ```
@@ -136,13 +133,12 @@ needs to be replaced by
 
 
 
-
 ---
 
 archive/issue_comments_031911.json:
 ```json
 {
-    "body": "For the patch **sage**, below are some possible fixes to the documentation. Please also refer to #1389.\n\n\n\n1.\n\n```\n-echo \"You must compile SAGE first using 'make' in the SAGE root directory.\" >&2\n+echo \"You must compile Sage first using 'make' in the Sage root directory.\" >&2\n```\n\n\n\n2.\n\n```\n-echo \"(If you have already compiled SAGE, you must set the SAGE_ROOT variable in \"\n+echo \"(If you have already compiled Sage, you must set the SAGE_ROOT variable in \"\n```\n\n\n\n3.\n\n```\n-# whenver SAGE exists.\n+# whenever Sage exits.\n```\n",
+    "body": "For the patch **sage**, below are some possible fixes to the documentation. Please also refer to #1389.\n\n\n\n1.\n\n```\n-echo \"You must compile SAGE first using 'make' in the SAGE root directory.\" >&2\n+echo \"You must compile Sage first using 'make' in the Sage root directory.\" >&2\n```\n\n\n2.\n\n```\n-echo \"(If you have already compiled SAGE, you must set the SAGE_ROOT variable in \"\n+echo \"(If you have already compiled Sage, you must set the SAGE_ROOT variable in \"\n```\n\n\n3.\n\n```\n-# whenver SAGE exists.\n+# whenever Sage exits.\n```",
     "created_at": "2008-10-27T12:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -163,14 +159,12 @@ For the patch **sage**, below are some possible fixes to the documentation. Plea
 ```
 
 
-
 2.
 
 ```
 -echo "(If you have already compiled SAGE, you must set the SAGE_ROOT variable in "
 +echo "(If you have already compiled Sage, you must set the SAGE_ROOT variable in "
 ```
-
 
 
 3.
@@ -182,13 +176,12 @@ For the patch **sage**, below are some possible fixes to the documentation. Plea
 
 
 
-
 ---
 
 archive/issue_comments_031912.json:
 ```json
 {
-    "body": "REFEREE:\n\nCan you please rebase this against 3.2.1.alpha*?  I tried applying and got some many failed hunks I can't go further.\n\n```\nsage: hg_scripts.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4354/trac_4354.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4354/trac_4354.patch?format=raw\nLoading: [..]\ncd \"/Users/wstein/sage/local/bin\" && hg status\ncd \"/Users/wstein/sage/local/bin\" && hg status\ncd \"/Users/wstein/sage/local/bin\" && hg import   \"/Users/wstein/.sage/temp/teragon_2.local/1537/tmp_0.patch\"\napplying /Users/wstein/.sage/temp/teragon_2.local/1537/tmp_0.patch\npatching file sage-sage\nHunk #5 succeeded at 227 with fuzz 1 (offset 4 lines).\nHunk #6 succeeded at 246 with fuzz 1 (offset 4 lines).\nHunk #7 FAILED at 332\nHunk #8 FAILED at 376\nHunk #10 succeeded at 474 with fuzz 1 (offset 41 lines).\nHunk #12 succeeded at 507 with fuzz 1 (offset 41 lines).\nHunk #18 succeeded at 603 with fuzz 1 (offset 41 lines).\nHunk #20 succeeded at 647 with fuzz 1 (offset 41 lines).\nHunk #27 FAILED at 768\nHunk #28 FAILED at 794\n4 out of 28 hunks FAILED -- saving rejects to file sage-sage.rej\nabort: patch failed to apply\n```\n\n\nNote -- I did *read* the patch and I think it's very good.  Also, I'm very glad for Mvngu's observations about all those typos, especially line -2 of SAGE_ROOT/sage.  Can you fix those typos in sage too?",
+    "body": "REFEREE:\n\nCan you please rebase this against 3.2.1.alpha*?  I tried applying and got some many failed hunks I can't go further.\n\n```\nsage: hg_scripts.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4354/trac_4354.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4354/trac_4354.patch?format=raw\nLoading: [..]\ncd \"/Users/wstein/sage/local/bin\" && hg status\ncd \"/Users/wstein/sage/local/bin\" && hg status\ncd \"/Users/wstein/sage/local/bin\" && hg import   \"/Users/wstein/.sage/temp/teragon_2.local/1537/tmp_0.patch\"\napplying /Users/wstein/.sage/temp/teragon_2.local/1537/tmp_0.patch\npatching file sage-sage\nHunk #5 succeeded at 227 with fuzz 1 (offset 4 lines).\nHunk #6 succeeded at 246 with fuzz 1 (offset 4 lines).\nHunk #7 FAILED at 332\nHunk #8 FAILED at 376\nHunk #10 succeeded at 474 with fuzz 1 (offset 41 lines).\nHunk #12 succeeded at 507 with fuzz 1 (offset 41 lines).\nHunk #18 succeeded at 603 with fuzz 1 (offset 41 lines).\nHunk #20 succeeded at 647 with fuzz 1 (offset 41 lines).\nHunk #27 FAILED at 768\nHunk #28 FAILED at 794\n4 out of 28 hunks FAILED -- saving rejects to file sage-sage.rej\nabort: patch failed to apply\n```\n\nNote -- I did *read* the patch and I think it's very good.  Also, I'm very glad for Mvngu's observations about all those typos, especially line -2 of SAGE_ROOT/sage.  Can you fix those typos in sage too?",
     "created_at": "2008-11-29T02:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -224,7 +217,6 @@ Hunk #28 FAILED at 794
 abort: patch failed to apply
 ```
 
-
 Note -- I did *read* the patch and I think it's very good.  Also, I'm very glad for Mvngu's observations about all those typos, especially line -2 of SAGE_ROOT/sage.  Can you fix those typos in sage too?
 
 
@@ -234,7 +226,7 @@ Note -- I did *read* the patch and I think it's very good.  Also, I'm very glad 
 archive/issue_comments_031913.json:
 ```json
 {
-    "body": "From patch author:\n\n```\nI'm kind of overloaded with work from school now, so it will have to\nwait about 2 or 3 weeks.  If nobody does it before then, I'll do it.\n```\n",
+    "body": "From patch author:\n\n```\nI'm kind of overloaded with work from school now, so it will have to\nwait about 2 or 3 weeks.  If nobody does it before then, I'll do it.\n```",
     "created_at": "2008-11-29T07:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -249,7 +241,6 @@ From patch author:
 I'm kind of overloaded with work from school now, so it will have to
 wait about 2 or 3 weeks.  If nobody does it before then, I'll do it.
 ```
-
 
 
 
@@ -519,7 +510,7 @@ The resulting patch now applies cleanly against 3.3.rc0.
 archive/issue_comments_031924.json:
 ```json
 {
-    "body": "Hello Michael,\n\nthis should go in 3.3 now. Of the handful files above, you'll need two:\n\nA) The third one \"sage.2\" to go directly (no repo!!) right under $SAGE_ROOT as \"sage\" to replace the older script of the same name there. Mind the usual file executable flag issues ;-)\n\nB) The last one \"trac_4354_rebase_3.3.rc0.patch\" applies as a HG patch to /local/bin (Sage scripts) repo.\n\nThen test (as the original ticket comment says) from the bash command line (say after \"your_favourite_path_to/sage -sh\"):\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\n\n(This can hardly be a doctest, it's just outside scope --- and IMHO the issue of testing this kind of environmental stuff should not burden this ticket here, although it is a valid question.)",
+    "body": "Hello Michael,\n\nthis should go in 3.3 now. Of the handful files above, you'll need two:\n\nA) The third one \"sage.2\" to go directly (no repo!!) right under $SAGE_ROOT as \"sage\" to replace the older script of the same name there. Mind the usual file executable flag issues ;-)\n\nB) The last one \"trac_4354_rebase_3.3.rc0.patch\" applies as a HG patch to /local/bin (Sage scripts) repo.\n\nThen test (as the original ticket comment says) from the bash command line (say after \"your_favourite_path_to/sage -sh\"):\n\n```\n$ echo 'print \"ok\"' > 'test file.sage'\n$ sage \"test file.sage\"\n```\n\n(This can hardly be a doctest, it's just outside scope --- and IMHO the issue of testing this kind of environmental stuff should not burden this ticket here, although it is a valid question.)",
     "created_at": "2009-02-14T22:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4354",
     "type": "issue_comment",
@@ -542,7 +533,6 @@ Then test (as the original ticket comment says) from the bash command line (say 
 $ echo 'print "ok"' > 'test file.sage'
 $ sage "test file.sage"
 ```
-
 
 (This can hardly be a doctest, it's just outside scope --- and IMHO the issue of testing this kind of environmental stuff should not burden this ticket here, although it is a valid question.)
 

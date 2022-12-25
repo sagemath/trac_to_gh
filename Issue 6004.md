@@ -106,7 +106,7 @@ Only apply `trac_6004-odd-degree-model-5.patch`.  All others could be deleted.
 archive/issue_comments_047677.json:
 ```json
 {
-    "body": "Hmm, this needs a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ hg import trac_6004-odd-degree-model-5.patch \napplying trac_6004-odd-degree-model-5.patch\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 62\n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nabort: patch failed to apply\n```\n\nMost likely culprit is another patch by Nick:\n\n```\nchangeset:   12218:684af2b9657e\nuser:        Nick Alexander <ncalexander@gmail.com>\ndate:        Thu May 07 13:37:26 2009 -0700\nsummary:     [mq]: trac_6004-odd-degree-model.patch\n```\n\nMight this code already be in Sage via another patch?\n\nCheers,\n\nMichael",
+    "body": "Hmm, this needs a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ hg import trac_6004-odd-degree-model-5.patch \napplying trac_6004-odd-degree-model-5.patch\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 62\n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nabort: patch failed to apply\n```\nMost likely culprit is another patch by Nick:\n\n```\nchangeset:   12218:684af2b9657e\nuser:        Nick Alexander <ncalexander@gmail.com>\ndate:        Thu May 07 13:37:26 2009 -0700\nsummary:     [mq]: trac_6004-odd-degree-model.patch\n```\nMight this code already be in Sage via another patch?\n\nCheers,\n\nMichael",
     "created_at": "2009-05-12T20:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6004",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ Hunk #1 FAILED at 62
 1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej
 abort: patch failed to apply
 ```
-
 Most likely culprit is another patch by Nick:
 
 ```
@@ -134,7 +133,6 @@ user:        Nick Alexander <ncalexander@gmail.com>
 date:        Thu May 07 13:37:26 2009 -0700
 summary:     [mq]: trac_6004-odd-degree-model.patch
 ```
-
 Might this code already be in Sage via another patch?
 
 Cheers,

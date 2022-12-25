@@ -3,7 +3,7 @@
 archive/issues_005570.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIn Sage it is not feasable to directly compute the determinant of a 20x20 matrix over Integers(26)!\n\n\n```\nDavid Kohel:\n> A related problem I had recently was in finding a random\n> element of GL_n(ZZ/26ZZ) where n was 20-30.  It was\n> failing to terminate in the determinant computation.  My\n> guess is that a  determinant over ZZ was being computed\n> and reduced but that the resulting determinant was too big.\n> I didn't verify this, but invite someone to check.\n\nIt is trivial to compute the determinant of an nxn matrix over ZZ when n <= 30 and the entries of the matrix have 2 digits.  That would be the case in your example. Sage wasn't computing your det over ZZ; if it had, then doing that computation would have worked fine.  For example:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 7)\nsage: time a.det()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05 s\n6\nsage: a = random_matrix(Integers(26), 8)\nsage: time a.det()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n9\nsage: a = random_matrix(Integers(26), 9)\nsage: time a.det()\nCPU times: user 1.37 s, sys: 0.01 s, total: 1.37 s\nWall time: 1.38 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.39 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n23\nsage: a = random_matrix(Integers(26), 9)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n10\nsage: a = random_matrix(Integers(26), 30)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n20\nsage: a = random_matrix(Integers(26), 200)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.30 s, sys: 0.04 s, total: 0.33 s\nWall time: 0.34 s\n15\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIt would thus be far better for now if Sage were to lift to ZZ, do the det, then reduce again.\nFor square-free modulus, a multimodular algorithm would of course be even better.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIn Sage it is not feasable to directly compute the determinant of a 20x20 matrix over Integers(26)!\n\n```\nDavid Kohel:\n> A related problem I had recently was in finding a random\n> element of GL_n(ZZ/26ZZ) where n was 20-30.  It was\n> failing to terminate in the determinant computation.  My\n> guess is that a  determinant over ZZ was being computed\n> and reduced but that the resulting determinant was too big.\n> I didn't verify this, but invite someone to check.\n\nIt is trivial to compute the determinant of an nxn matrix over ZZ when n <= 30 and the entries of the matrix have 2 digits.  That would be the case in your example. Sage wasn't computing your det over ZZ; if it had, then doing that computation would have worked fine.  For example:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 7)\nsage: time a.det()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05 s\n6\nsage: a = random_matrix(Integers(26), 8)\nsage: time a.det()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n9\nsage: a = random_matrix(Integers(26), 9)\nsage: time a.det()\nCPU times: user 1.37 s, sys: 0.01 s, total: 1.37 s\nWall time: 1.38 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.39 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n23\nsage: a = random_matrix(Integers(26), 9)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n10\nsage: a = random_matrix(Integers(26), 30)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n20\nsage: a = random_matrix(Integers(26), 200)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.30 s, sys: 0.04 s, total: 0.33 s\nWall time: 0.34 s\n15\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIt would thus be far better for now if Sage were to lift to ZZ, do the det, then reduce again.\nFor square-free modulus, a multimodular algorithm would of course be even better.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5570\n\n",
     "created_at": "2009-03-19T23:11:08Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  mvngu
 
 In Sage it is not feasable to directly compute the determinant of a 20x20 matrix over Integers(26)!
-
 
 ```
 David Kohel:
@@ -81,7 +80,6 @@ It would thus be far better for now if Sage were to lift to ZZ, do the det, then
 For square-free modulus, a multimodular algorithm would of course be even better.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5570
 
 
@@ -93,7 +91,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5570
 archive/issue_comments_043314.json:
 ```json
 {
-    "body": "More comments:\n\n```\n>\n> Instead I worked around this by computing the determinants\n> mod 2 and mod 13 and using CRT (if the determinants were\n> both units).  The time was then almost trivial.  Suppose I\n> replace this problem over ZZ/25ZZ or ZZ/256ZZ. I would\n> still hope that the problem would NOT be lifted to ZZ for\n> computation, since this would certainly not terminate in\n> reasonable time for a dense matrix.\n\nYes it would.  Even for a dense 200x200 matrix over ZZ/256ZZ it only take 0.35 seconds total time to lift *and* compute the determinant, then reduce the result. \n\nsage: a = random_matrix(Integers(256), 30)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n222\nsage: a = random_matrix(Integers(256), 200)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 0.32 s, sys: 0.04 s, total: 0.35 s\n\nJust out of curiosity, why didn't you try any of the above before writing this email?  :-)\n\n> Taking the approach of lifting to ZZ for charpolys of matrices\n> of non-trivial size will undoubtably lead to exactly the same\n> coefficient explosion which is the presumed source of the\n> problem with determinants over ZZ/26ZZ.\n>\n> --David\n\nExcept it isn't anywhere nearly so bad as you think:\n\nsage: a = random_matrix(Integers(256), 500)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 3.70 s, sys: 0.49 s, total: 4.19 s\nWall time: 4.04 s\n188\nsage: a = random_matrix(Integers(2^20), 500)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 7.23 s, sys: 0.81 s, total: 8.04 s\nWall time: 7.94 s\n208\n\nAll timings above on my 2GB of RAM Macbook laptop. \n\nWilliam\n```\n",
+    "body": "More comments:\n\n```\n>\n> Instead I worked around this by computing the determinants\n> mod 2 and mod 13 and using CRT (if the determinants were\n> both units).  The time was then almost trivial.  Suppose I\n> replace this problem over ZZ/25ZZ or ZZ/256ZZ. I would\n> still hope that the problem would NOT be lifted to ZZ for\n> computation, since this would certainly not terminate in\n> reasonable time for a dense matrix.\n\nYes it would.  Even for a dense 200x200 matrix over ZZ/256ZZ it only take 0.35 seconds total time to lift *and* compute the determinant, then reduce the result. \n\nsage: a = random_matrix(Integers(256), 30)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n222\nsage: a = random_matrix(Integers(256), 200)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 0.32 s, sys: 0.04 s, total: 0.35 s\n\nJust out of curiosity, why didn't you try any of the above before writing this email?  :-)\n\n> Taking the approach of lifting to ZZ for charpolys of matrices\n> of non-trivial size will undoubtably lead to exactly the same\n> coefficient explosion which is the presumed source of the\n> problem with determinants over ZZ/26ZZ.\n>\n> --David\n\nExcept it isn't anywhere nearly so bad as you think:\n\nsage: a = random_matrix(Integers(256), 500)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 3.70 s, sys: 0.49 s, total: 4.19 s\nWall time: 4.04 s\n188\nsage: a = random_matrix(Integers(2^20), 500)\nsage: time Integers(256)(a.lift().det())\nCPU times: user 7.23 s, sys: 0.81 s, total: 8.04 s\nWall time: 7.94 s\n208\n\nAll timings above on my 2GB of RAM Macbook laptop. \n\nWilliam\n```",
     "created_at": "2009-03-19T23:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
@@ -151,7 +149,6 @@ All timings above on my 2GB of RAM Macbook laptop.
 
 William
 ```
-
 
 
 
@@ -232,7 +229,7 @@ I give John's patch a positive review, modulo that I added doctests and made it 
 archive/issue_comments_043319.json:
 ```json
 {
-    "body": "Looks good to me, although the generic mod p stuff isn't nearly as bad as the Z/nZ for n composite (these timings are before applying was's patch):\n\n```\nsage: R = Integers(nth_prime(50000))\nsage: time mat.det()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n457476\nsage: time R(mat.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n457476\nsage: mat = random_matrix(R, 80)\nsage: time mat.det()\nCPU times: user 0.35 s, sys: 0.00 s, total: 0.36 s\nWall time: 0.36 s\n296893\nsage: time R(mat.lift().det())\nCPU times: user 0.12 s, sys: 0.01 s, total: 0.13 s\nWall time: 0.13 s\n296893\n```\n",
+    "body": "Looks good to me, although the generic mod p stuff isn't nearly as bad as the Z/nZ for n composite (these timings are before applying was's patch):\n\n```\nsage: R = Integers(nth_prime(50000))\nsage: time mat.det()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n457476\nsage: time R(mat.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n457476\nsage: mat = random_matrix(R, 80)\nsage: time mat.det()\nCPU times: user 0.35 s, sys: 0.00 s, total: 0.36 s\nWall time: 0.36 s\n296893\nsage: time R(mat.lift().det())\nCPU times: user 0.12 s, sys: 0.01 s, total: 0.13 s\nWall time: 0.13 s\n296893\n```",
     "created_at": "2009-03-22T01:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
@@ -263,7 +260,6 @@ CPU times: user 0.12 s, sys: 0.01 s, total: 0.13 s
 Wall time: 0.13 s
 296893
 ```
-
 
 
 
@@ -328,7 +324,7 @@ archive/issue_events_013100.json:
 archive/issue_comments_043322.json:
 ```json
 {
-    "body": "The numbers for the improvement in the Sage 3.4.1 release tour are *completely* wrong:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 10)\nsage: time a.determinant()\nCPU times: user 8.07 s, sys: 0.02 s, total: 8.09 s\nWall time: 8.11 s\n3\nsage: b = random_matrix(Integers(256), 10)\nsage: time b.determinant()\nCPU times: user 7.98 s, sys: 0.01 s, total: 7.99 s\nWall time: 7.98 s\n0\n```\n\nvs.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 10)\nsage: time a.determinant()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\n7\nsage: b = random_matrix(Integers(256), 10)\nsage: time b.determinant()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n89\n```\n\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n| Sage Version 3.4.1.alpha0, Release Date: 2009-03-26                |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "The numbers for the improvement in the Sage 3.4.1 release tour are *completely* wrong:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 10)\nsage: time a.determinant()\nCPU times: user 8.07 s, sys: 0.02 s, total: 8.09 s\nWall time: 8.11 s\n3\nsage: b = random_matrix(Integers(256), 10)\nsage: time b.determinant()\nCPU times: user 7.98 s, sys: 0.01 s, total: 7.99 s\nWall time: 7.98 s\n0\n```\nvs.\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 10)\nsage: time a.determinant()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\n7\nsage: b = random_matrix(Integers(256), 10)\nsage: time b.determinant()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n89\n```\n| Sage Version 3.4.1.alpha0, Release Date: 2009-03-26                |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
     "created_at": "2009-03-28T20:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
@@ -353,9 +349,9 @@ CPU times: user 7.98 s, sys: 0.01 s, total: 7.99 s
 Wall time: 7.98 s
 0
 ```
-
 vs.
-
+| Sage Version 3.4, Release Date: 2009-03-11                         |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -370,9 +366,6 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 Wall time: 0.00 s
 89
 ```
-
-| Sage Version 3.4, Release Date: 2009-03-11                         |
-| Type notebook() for the GUI, and license() for information.        |
 | Sage Version 3.4.1.alpha0, Release Date: 2009-03-26                |
 | Type notebook() for the GUI, and license() for information.        |
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_009816.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @peterjeremy @nexttime\n\nThe POSIX standard for Unix states the command `uname` must exist, and list the options it should take. See\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/uname.html\n\nThe **only** options which should be given in code that can be run on any system is these:\n\n\n\n```\n    uname [-amnrsv]\n```\n\n\nbut the BLAS package ignores this, and calls `uname -p`, which screws up on systems like HP-UX where the -p option is not supported. \n\n\n```\nblas-20070724/src/ztrsm.f\nblas-20070724/src/ztrsv.f\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa2.0w-hp-hpux11.11\nConfigured with: ../gcc-4.3.4/configure --with-gnu-as --with-as=/home/dclarke/local/bin/as --without-gnu-ld --with-ld=/usr/bin/ld --enable-threads=posix --enable-nls --prefix=/home/dclarke/local --enable-shared --enable-multilib --with-included-gettext --with-libiconv-prefix=/home/dclarke/local --with-system-zlib --with-gmp=/home/dclarke/local --with-mpfr=/home/dclarke/local --enable-languages=c,c++,fortran,objc --enable-bootstrap\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nuname: illegal option -- p\nusage: uname [-amnrsvil] [-S nodename]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9817\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @peterjeremy @nexttime\n\nThe POSIX standard for Unix states the command `uname` must exist, and list the options it should take. See\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/uname.html\n\nThe **only** options which should be given in code that can be run on any system is these:\n\n\n```\n    uname [-amnrsv]\n```\n\nbut the BLAS package ignores this, and calls `uname -p`, which screws up on systems like HP-UX where the -p option is not supported. \n\n```\nblas-20070724/src/ztrsm.f\nblas-20070724/src/ztrsv.f\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa2.0w-hp-hpux11.11\nConfigured with: ../gcc-4.3.4/configure --with-gnu-as --with-as=/home/dclarke/local/bin/as --without-gnu-ld --with-ld=/usr/bin/ld --enable-threads=posix --enable-nls --prefix=/home/dclarke/local --enable-shared --enable-multilib --with-included-gettext --with-libiconv-prefix=/home/dclarke/local --with-system-zlib --with-gmp=/home/dclarke/local --with-mpfr=/home/dclarke/local --enable-languages=c,c++,fortran,objc --enable-bootstrap\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nuname: illegal option -- p\nusage: uname [-amnrsvil] [-S nodename]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9817\n\n",
     "created_at": "2010-08-27T09:52:35Z",
     "labels": [
         "component: porting",
@@ -27,14 +27,11 @@ http://www.opengroup.org/onlinepubs/9699919799/utilities/uname.html
 The **only** options which should be given in code that can be run on any system is these:
 
 
-
 ```
     uname [-amnrsv]
 ```
 
-
 but the BLAS package ignores this, and calls `uname -p`, which screws up on systems like HP-UX where the -p option is not supported. 
-
 
 ```
 blas-20070724/src/ztrsm.f
@@ -58,7 +55,6 @@ uname: illegal option -- p
 usage: uname [-amnrsvil] [-S nodename]
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9817
 

@@ -3,7 +3,7 @@
 archive/issues_003118.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\n\n```\n\n\nOn Tue, May 6, 2008 at 8:49 PM, schmmd <schmmd@gmail.com> wrote:\n> \n>  lcm? gives the following output:\n>  \n>  Type:           function\n>  Base Class:     <type 'function'>\n>  String Form:    <function lcm at 0x879087c>\n>  Namespace:      Interactive\n>  File:           /home/michael/downloads/sage-3.0/local/lib/python2.5/\n>  site-packages/sage/rings/arith.py\n>  Definition:     lcm(a, b=None, integer=False)\n>  Docstring:\n>  \n>         The least common multiple of a and b, or if a is a list and b\n>  is\n>         omitted the least common multiple of all elements of a.\n>  \n>         NOTE: Use integer=True to make this vastly faster if you are\n>         working with lists of integers.\n>  \n>         INPUT:\n>             a -- number\n>             b -- number (optional)\n>             integer -- (default: False); if True, do an integer LCM\n>         or\n>   *           a -- vector\n>             integer -- (default: False); if True, do an integer LCM\n>                 NOTE -- this is *vastly* faster than doing the generic\n>  LCM\n>  \n>  Note the starred line.  I believe that the lcm method takes a list and\n>  not a vector.  At least, I seem to get errors when I pass a vector.\n>  \n>  \n\nI fully agree that this is a bug.\n\nIncidentally I wrote the LCM function a while before I implemented vectors,\nso I think when I wrote those docs \"vector\" and \"list\" were the same\nthing in my mind.  \n\nThe fix should be to change the docs to replace \"vector\" by any itterable.\nThen the LCM code should iterate over the object calling LCM \nif it doesn't have an LCM method.   \n\nProbably similar fixes need to be made for GCD.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3118\n\n",
+    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\n```\n\n\nOn Tue, May 6, 2008 at 8:49 PM, schmmd <schmmd@gmail.com> wrote:\n> \n>  lcm? gives the following output:\n>  \n>  Type:           function\n>  Base Class:     <type 'function'>\n>  String Form:    <function lcm at 0x879087c>\n>  Namespace:      Interactive\n>  File:           /home/michael/downloads/sage-3.0/local/lib/python2.5/\n>  site-packages/sage/rings/arith.py\n>  Definition:     lcm(a, b=None, integer=False)\n>  Docstring:\n>  \n>         The least common multiple of a and b, or if a is a list and b\n>  is\n>         omitted the least common multiple of all elements of a.\n>  \n>         NOTE: Use integer=True to make this vastly faster if you are\n>         working with lists of integers.\n>  \n>         INPUT:\n>             a -- number\n>             b -- number (optional)\n>             integer -- (default: False); if True, do an integer LCM\n>         or\n>   *           a -- vector\n>             integer -- (default: False); if True, do an integer LCM\n>                 NOTE -- this is *vastly* faster than doing the generic\n>  LCM\n>  \n>  Note the starred line.  I believe that the lcm method takes a list and\n>  not a vector.  At least, I seem to get errors when I pass a vector.\n>  \n>  \n\nI fully agree that this is a bug.\n\nIncidentally I wrote the LCM function a while before I implemented vectors,\nso I think when I wrote those docs \"vector\" and \"list\" were the same\nthing in my mind.  \n\nThe fix should be to change the docs to replace \"vector\" by any itterable.\nThen the LCM code should iterate over the object calling LCM \nif it doesn't have an LCM method.   \n\nProbably similar fixes need to be made for GCD.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3118\n\n",
     "created_at": "2008-05-07T04:00:56Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_003118.json:
 Assignee: somebody
 
 CC:  @JohnCremona
-
 
 ```
 
@@ -72,7 +71,6 @@ if it doesn't have an LCM method.
 Probably similar fixes need to be made for GCD.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3118
 
 
@@ -102,7 +100,7 @@ Attachment [trac_3118_gcd.patch](tarball://root/attachments/some-uuid/ticket3118
 archive/issue_comments_021538.json:
 ```json
 {
-    "body": "Both attachments fix that problem. Btw, I wonder why integer=True is not the default,\nat least for integer inputs. I guess there are many calls to gcd with integers in the\nSage library without Integer=True:\n\n```\nbash-3.00$ pwd\n/usr/local/sage-3.1.4/sage/devel/sage/sage\nbash-3.00$ find . -type f -name \"*.py\" -exec grep \\-iw GCD {} \\; | wc -l\n297\n```\n",
+    "body": "Both attachments fix that problem. Btw, I wonder why integer=True is not the default,\nat least for integer inputs. I guess there are many calls to gcd with integers in the\nSage library without Integer=True:\n\n```\nbash-3.00$ pwd\n/usr/local/sage-3.1.4/sage/devel/sage/sage\nbash-3.00$ find . -type f -name \"*.py\" -exec grep \\-iw GCD {} \\; | wc -l\n297\n```",
     "created_at": "2008-10-19T13:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -124,13 +122,12 @@ bash-3.00$ find . -type f -name "*.py" -exec grep \-iw GCD {} \; | wc -l
 
 
 
-
 ---
 
 archive/issue_comments_021539.json:
 ```json
 {
-    "body": "Attachment [sage-trac_3118.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118.patch) by @JohnCremona created at 2008-10-21 21:54:00\n\nMy patch applies _instead_ of the previous two.  It implements Paul's suggested behaviour.\n\nThere's one problem left (I tested all of sage.rings and had to make one change in the multiploynomial polynomial code which actually used the integers=True flag which is now redundant).  But:\n\n```\nsage: P.<x,y,z> = ZZ[]\nsage: gcd(2*(x+y),3*y)\n2\n```\n\nwhich of course should give 1.  This leads to one doctest failure, but I cannot track it down at the moment.\n\nI (or someone) should also doctest all the rest of Sage as there are ceratinly places where gcd/lcm are used outside of sage/rings.",
+    "body": "Attachment [sage-trac_3118.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118.patch) by @JohnCremona created at 2008-10-21 21:54:00\n\nMy patch applies _instead_ of the previous two.  It implements Paul's suggested behaviour.\n\nThere's one problem left (I tested all of sage.rings and had to make one change in the multiploynomial polynomial code which actually used the integers=True flag which is now redundant).  But:\n\n```\nsage: P.<x,y,z> = ZZ[]\nsage: gcd(2*(x+y),3*y)\n2\n```\nwhich of course should give 1.  This leads to one doctest failure, but I cannot track it down at the moment.\n\nI (or someone) should also doctest all the rest of Sage as there are ceratinly places where gcd/lcm are used outside of sage/rings.",
     "created_at": "2008-10-21T21:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -150,7 +147,6 @@ sage: P.<x,y,z> = ZZ[]
 sage: gcd(2*(x+y),3*y)
 2
 ```
-
 which of course should give 1.  This leads to one doctest failure, but I cannot track it down at the moment.
 
 I (or someone) should also doctest all the rest of Sage as there are ceratinly places where gcd/lcm are used outside of sage/rings.
@@ -180,7 +176,7 @@ Apply after previous one
 archive/issue_comments_021541.json:
 ```json
 {
-    "body": "Attachment [sage-trac_3118-2.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118-2.patch) by @JohnCremona created at 2008-10-22 14:20:13\n\nThe second patch does three things:\n\n1. After running -testall a couple of small things elsewhere needed fixing;\n2. Fixed a bug in integer.pyx introduced in 3.1.2.alpha0 (in #4286)\n3. Cleaner use of sequences as a method of coercing a list to have a coherent universe.\n\nIn view of item 2, which corrected this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\n\nand the fact that I really did do a -testall, I am hoping for a quick positive review!  I think that Paul Z is eligible to do that although the initial patches here were his.",
+    "body": "Attachment [sage-trac_3118-2.patch](tarball://root/attachments/some-uuid/ticket3118/sage-trac_3118-2.patch) by @JohnCremona created at 2008-10-22 14:20:13\n\nThe second patch does three things:\n\n1. After running -testall a couple of small things elsewhere needed fixing;\n2. Fixed a bug in integer.pyx introduced in 3.1.2.alpha0 (in #4286)\n3. Cleaner use of sequences as a method of coercing a list to have a coherent universe.\n\nIn view of item 2, which corrected this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.2.alpha0, Release Date: 2008-10-20                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage.rings.integer.GCD_list([2,2,3])\n2\n```\nand the fact that I really did do a -testall, I am hoping for a quick positive review!  I think that Paul Z is eligible to do that although the initial patches here were his.",
     "created_at": "2008-10-22T14:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -207,7 +203,6 @@ In view of item 2, which corrected this:
 sage: sage.rings.integer.GCD_list([2,2,3])
 2
 ```
-
 and the fact that I really did do a -testall, I am hoping for a quick positive review!  I think that Paul Z is eligible to do that although the initial patches here were his.
 
 
@@ -217,7 +212,7 @@ and the fact that I really did do a -testall, I am hoping for a quick positive r
 archive/issue_comments_021542.json:
 ```json
 {
-    "body": "I tried to apply both patches to 3.1.4 but the 2nd one failed:\n\n```\nfleur% hg import sage-trac_3118.patch \napplying sage-trac_3118.patch\nfleur% hg import sage-trac_3118-2.patch\napplying sage-trac_3118-2.patch\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 3595\nHunk #3 FAILED at 3649\n2 out of 3 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\nabort: patch failed to apply\n```\n\nShould I apply another patch before?",
+    "body": "I tried to apply both patches to 3.1.4 but the 2nd one failed:\n\n```\nfleur% hg import sage-trac_3118.patch \napplying sage-trac_3118.patch\nfleur% hg import sage-trac_3118-2.patch\napplying sage-trac_3118-2.patch\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 3595\nHunk #3 FAILED at 3649\n2 out of 3 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\nabort: patch failed to apply\n```\nShould I apply another patch before?",
     "created_at": "2008-10-23T16:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3118",
     "type": "issue_comment",
@@ -239,7 +234,6 @@ Hunk #3 FAILED at 3649
 2 out of 3 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej
 abort: patch failed to apply
 ```
-
 Should I apply another patch before?
 
 

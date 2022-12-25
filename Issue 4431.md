@@ -3,7 +3,7 @@
 archive/issues_004431.json:
 ```json
 {
-    "body": "Assignee: whuss\n\nThis patch implements conversion of Maxima matrices, to Sage matrices. The patch is based on\nsage-3.2alpha1.\n\nA sample session:\n\n```\nsage: var('x,y')\nsage: v = maxima('v: vandermonde_matrix([x, y, 1/2])')\nsage: v\nmatrix([1,x,x^2],[1,y,y^2],[1,1/2,1/4])\nsage: type(v)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: v.sage()\n\n[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4]\nsage: mlist = maxima('[v, sin(x), 1, v.v]').sage()\nsage: mlist\n\n[[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4],\n    sin(x),\n    1,\n    [       x^2 + x + 1    x*y + x^2/2 + x    x*y^2 + 5*x^2/4]\n[       y^2 + y + 1        3*y^2/2 + x  y^3 + y^2/4 + x^2]\n[               7/4      y/2 + x + 1/8 y^2/2 + x^2 + 1/16]]\nsage: [parent(i) for i in mlist]\n\n[Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring,\n    Symbolic Ring,\n    Symbolic Ring,\n    Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4431\n\n",
+    "body": "Assignee: whuss\n\nThis patch implements conversion of Maxima matrices, to Sage matrices. The patch is based on\nsage-3.2alpha1.\n\nA sample session:\n\n```\nsage: var('x,y')\nsage: v = maxima('v: vandermonde_matrix([x, y, 1/2])')\nsage: v\nmatrix([1,x,x^2],[1,y,y^2],[1,1/2,1/4])\nsage: type(v)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: v.sage()\n\n[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4]\nsage: mlist = maxima('[v, sin(x), 1, v.v]').sage()\nsage: mlist\n\n[[  1   x x^2]\n[  1   y y^2]\n[  1 1/2 1/4],\n    sin(x),\n    1,\n    [       x^2 + x + 1    x*y + x^2/2 + x    x*y^2 + 5*x^2/4]\n[       y^2 + y + 1        3*y^2/2 + x  y^3 + y^2/4 + x^2]\n[               7/4      y/2 + x + 1/8 y^2/2 + x^2 + 1/16]]\nsage: [parent(i) for i in mlist]\n\n[Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring,\n    Symbolic Ring,\n    Symbolic Ring,\n    Full MatrixSpace of 3 by 3 dense matrices over Symbolic Ring]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4431\n\n",
     "created_at": "2008-11-03T19:37:18Z",
     "labels": [
         "component: interfaces",
@@ -55,7 +55,6 @@ sage: [parent(i) for i in mlist]
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4431
 
 
@@ -67,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4431
 archive/issue_comments_032494.json:
 ```json
 {
-    "body": "This patch looks good, but you should add the Vandermonde matrix as a test / example in the appropriate spot.  Also, I think the following construction is a bit cleaner than the string one:\n\n\n```\nsage: v = maxima.vandermonde_matrix([x,y,1/2])\n```\n",
+    "body": "This patch looks good, but you should add the Vandermonde matrix as a test / example in the appropriate spot.  Also, I think the following construction is a bit cleaner than the string one:\n\n```\nsage: v = maxima.vandermonde_matrix([x,y,1/2])\n```",
     "created_at": "2008-11-04T20:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4431",
     "type": "issue_comment",
@@ -78,11 +77,9 @@ archive/issue_comments_032494.json:
 
 This patch looks good, but you should add the Vandermonde matrix as a test / example in the appropriate spot.  Also, I think the following construction is a bit cleaner than the string one:
 
-
 ```
 sage: v = maxima.vandermonde_matrix([x,y,1/2])
 ```
-
 
 
 

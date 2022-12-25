@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4417
 archive/issue_comments_032422.json:
 ```json
 {
-    "body": "Attachment [steenrod-optional.patch](tarball://root/attachments/some-uuid/ticket4417/steenrod-optional.patch) by mabshoff created at 2008-11-01 02:47:34\n\nHi John,\n\nthis one was a really strange doctest failure and I am glad you fixed it.\n\nOne thing I noticed while looking at the file was that you use constructs like\n\n```\nsage: B = SteenrodAlgebra(2, 'adem')\n```\n\nwhich seem very un-Sagish, i.e. one would use some (optional) keyword in the constructor like\n\n```\nsage: B = SteenrodAlgebra(2, foo=adem)\n```\n\nThis certainly should not addressed via this ticket, but might be something that should be discussed on [sage-devel].\n\nCheers,\n\nMichael\n\nPS: I will test and review this patch shortly.",
+    "body": "Attachment [steenrod-optional.patch](tarball://root/attachments/some-uuid/ticket4417/steenrod-optional.patch) by mabshoff created at 2008-11-01 02:47:34\n\nHi John,\n\nthis one was a really strange doctest failure and I am glad you fixed it.\n\nOne thing I noticed while looking at the file was that you use constructs like\n\n```\nsage: B = SteenrodAlgebra(2, 'adem')\n```\nwhich seem very un-Sagish, i.e. one would use some (optional) keyword in the constructor like\n\n```\nsage: B = SteenrodAlgebra(2, foo=adem)\n```\nThis certainly should not addressed via this ticket, but might be something that should be discussed on [sage-devel].\n\nCheers,\n\nMichael\n\nPS: I will test and review this patch shortly.",
     "created_at": "2008-11-01T02:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4417",
     "type": "issue_comment",
@@ -57,13 +57,11 @@ One thing I noticed while looking at the file was that you use constructs like
 ```
 sage: B = SteenrodAlgebra(2, 'adem')
 ```
-
 which seem very un-Sagish, i.e. one would use some (optional) keyword in the constructor like
 
 ```
 sage: B = SteenrodAlgebra(2, foo=adem)
 ```
-
 This certainly should not addressed via this ticket, but might be something that should be discussed on [sage-devel].
 
 Cheers,
@@ -79,7 +77,7 @@ PS: I will test and review this patch shortly.
 archive/issue_comments_032423.json:
 ```json
 {
-    "body": "\n```\nSteenrodAlgebra(5, 'adem')\n```\n\ncould be changed to\n\n```\nSteenrodAlgebra(5, basis='adem')\n```\n\n(These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  I don't know how to implement something like\n\n```\nSteenrodAlgebra(5, basis=adem)\n```\n\nthough, without importing `adem` into the global name space.\n\n  John",
+    "body": "```\nSteenrodAlgebra(5, 'adem')\n```\ncould be changed to\n\n```\nSteenrodAlgebra(5, basis='adem')\n```\n(These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  I don't know how to implement something like\n\n```\nSteenrodAlgebra(5, basis=adem)\n```\nthough, without importing `adem` into the global name space.\n\n  John",
     "created_at": "2008-11-01T03:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4417",
     "type": "issue_comment",
@@ -88,23 +86,19 @@ archive/issue_comments_032423.json:
 }
 ```
 
-
 ```
 SteenrodAlgebra(5, 'adem')
 ```
-
 could be changed to
 
 ```
 SteenrodAlgebra(5, basis='adem')
 ```
-
 (These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  I don't know how to implement something like
 
 ```
 SteenrodAlgebra(5, basis=adem)
 ```
-
 though, without importing `adem` into the global name space.
 
   John
@@ -116,7 +110,7 @@ though, without importing `adem` into the global name space.
 archive/issue_comments_032424.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> {{{\n> SteenrodAlgebra(5, 'adem')\n> }}}\n> could be changed to\n> {{{\n> SteenrodAlgebra(5, basis='adem')\n> }}}\n> (These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  \n\nThat sounds good to me. I would also prefer \"foo\" and not 'foo' for strings, but that is probably personal preference.\n\n> I don't know how to implement something like\n> {{{\n> SteenrodAlgebra(5, basis=adem)\n> }}}\n> though, without importing `adem` into the global name space.\n> \n>   John\n> \n\nOk.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> {{{\n> SteenrodAlgebra(5, 'adem')\n> }}}\n> could be changed to\n> \n> ```\n> SteenrodAlgebra(5, basis='adem')\n> ```\n> (These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  \n\n\nThat sounds good to me. I would also prefer \"foo\" and not 'foo' for strings, but that is probably personal preference.\n\n> I don't know how to implement something like\n> \n> ```\n> SteenrodAlgebra(5, basis=adem)\n> ```\n> though, without importing `adem` into the global name space.\n> \n>   John\n> \n\n\nOk.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-01T21:02:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4417",
     "type": "issue_comment",
@@ -130,21 +124,25 @@ Replying to [comment:2 jhpalmieri]:
 > SteenrodAlgebra(5, 'adem')
 > }}}
 > could be changed to
-> {{{
+> 
+> ```
 > SteenrodAlgebra(5, basis='adem')
-> }}}
+> ```
 > (These both work right now; it would just be a matter of changing the documentation to reflect the preferred choice, if the second choice is better.)  
+
 
 That sounds good to me. I would also prefer "foo" and not 'foo' for strings, but that is probably personal preference.
 
 > I don't know how to implement something like
-> {{{
+> 
+> ```
 > SteenrodAlgebra(5, basis=adem)
-> }}}
+> ```
 > though, without importing `adem` into the global name space.
 > 
 >   John
 > 
+
 
 Ok.
 

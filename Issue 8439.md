@@ -161,7 +161,7 @@ I certainly can't believe that this would apply properly any more... and it does
 archive/issue_comments_075640.json:
 ```json
 {
-    "body": "Actually, I took a look at this when I was looking for tickets that might be fixed by maxima-5.24. Right now on my machine, it hangs:\n\n\n```\n$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: devel\nsage: maxima.eval('1+1;;')\n```\n\n| Sage Version 5.0.beta1, Release Date: 2012-01-22                   |\n| Type notebook() for the GUI, and license() for information.        |\n(I've waited a good minute.)",
+    "body": "Actually, I took a look at this when I was looking for tickets that might be fixed by maxima-5.24. Right now on my machine, it hangs:\n\n```\n$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: devel\nsage: maxima.eval('1+1;;')\n```\n| Sage Version 5.0.beta1, Release Date: 2012-01-22                   |\n| Type notebook() for the GUI, and license() for information.        |\n(I've waited a good minute.)",
     "created_at": "2012-01-28T02:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
@@ -171,7 +171,6 @@ archive/issue_comments_075640.json:
 ```
 
 Actually, I took a look at this when I was looking for tickets that might be fixed by maxima-5.24. Right now on my machine, it hangs:
-
 
 ```
 $ sage
@@ -185,7 +184,6 @@ $ sage
 Loading Sage library. Current Mercurial branch is: devel
 sage: maxima.eval('1+1;;')
 ```
-
 | Sage Version 5.0.beta1, Release Date: 2012-01-22                   |
 | Type notebook() for the GUI, and license() for information.        |
 (I've waited a good minute.)
@@ -197,7 +195,7 @@ sage: maxima.eval('1+1;;')
 archive/issue_comments_075641.json:
 ```json
 {
-    "body": "Here's what happens in Maxima.\n\n```\n\n(%i4) 1+1;;\n\n(%o4) 2\n\nstdin:76667:incorrect syntax: Premature termination of input at ;.\n;\n ^\n```\n\nI'm just going to make a ticket for that - it's #12372.\n\nThis is still a somewhat weird ticket.  I didn't even know we allowed other Maxima backends officially.",
+    "body": "Here's what happens in Maxima.\n\n```\n\n(%i4) 1+1;;\n\n(%o4) 2\n\nstdin:76667:incorrect syntax: Premature termination of input at ;.\n;\n ^\n```\nI'm just going to make a ticket for that - it's #12372.\n\nThis is still a somewhat weird ticket.  I didn't even know we allowed other Maxima backends officially.",
     "created_at": "2012-01-28T03:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
@@ -218,7 +216,6 @@ stdin:76667:incorrect syntax: Premature termination of input at ;.
 ;
  ^
 ```
-
 I'm just going to make a ticket for that - it's #12372.
 
 This is still a somewhat weird ticket.  I didn't even know we allowed other Maxima backends officially.
@@ -292,7 +289,7 @@ This is very interesting.  Is there any documentation about this backend busines
 archive/issue_comments_075645.json:
 ```json
 {
-    "body": "Yes. It is a rpm package installing a sagemath that uses (mostly) system packages. The first working package (at least notebook and most interfaces) I had was for sage 3.2.3. But update after update, it got only good when updating to sage 4.0.1.\n\nAbout maxima backends, I think the proper term is maxima runtime. Just the lisps enabled at compile time. Example:\n\n\n```\n$ maxima --list-avail\nAvailable versions:\nversion 5.24.0, lisp ecl\nversion 5.24.0, lisp clisp\nversion 5.24.0, lisp sbcl\n\n```\n",
+    "body": "Yes. It is a rpm package installing a sagemath that uses (mostly) system packages. The first working package (at least notebook and most interfaces) I had was for sage 3.2.3. But update after update, it got only good when updating to sage 4.0.1.\n\nAbout maxima backends, I think the proper term is maxima runtime. Just the lisps enabled at compile time. Example:\n\n```\n$ maxima --list-avail\nAvailable versions:\nversion 5.24.0, lisp ecl\nversion 5.24.0, lisp clisp\nversion 5.24.0, lisp sbcl\n\n```",
     "created_at": "2012-01-28T05:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
@@ -305,7 +302,6 @@ Yes. It is a rpm package installing a sagemath that uses (mostly) system package
 
 About maxima backends, I think the proper term is maxima runtime. Just the lisps enabled at compile time. Example:
 
-
 ```
 $ maxima --list-avail
 Available versions:
@@ -314,7 +310,6 @@ version 5.24.0, lisp clisp
 version 5.24.0, lisp sbcl
 
 ```
-
 
 
 

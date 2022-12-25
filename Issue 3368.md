@@ -3,7 +3,7 @@
 archive/issues_003368.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi,\n\nThe following is a bug that Bill Page found in Sage.  It is in the combinatorial\nclasses code  (mostly) by Mike Hansen, so maybe he'll fix it. \n\n\n```\nIn: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf\n\n \"A Brief Magma Tutorial\" by David R. Kohel gives this example:\n\n----------\n\nThe parent structure of a tuple is more important than in the case\nof sequences or sets.\n> C := CartesianProduct(Integers(),RationalField());\n> t := C!<1,1>;\n> Parent(t[2]);\nRational Field\n\n----------\n\nThe analogous computation in Sage 3.0.2 yields:\n\nsage: C = CartesianProduct(Integers(),RationalField())\n\n# case 1\nsage: t=C([1,1/2])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nRational Field\n\n# case 2\nsage: t=C([1,1])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nInteger Ring\n\n---------\n\nNotice that the parent of t[1] is incorrect in the 2nd case.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3368\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi,\n\nThe following is a bug that Bill Page found in Sage.  It is in the combinatorial\nclasses code  (mostly) by Mike Hansen, so maybe he'll fix it. \n\n```\nIn: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf\n\n \"A Brief Magma Tutorial\" by David R. Kohel gives this example:\n\n----------\n\nThe parent structure of a tuple is more important than in the case\nof sequences or sets.\n> C := CartesianProduct(Integers(),RationalField());\n> t := C!<1,1>;\n> Parent(t[2]);\nRational Field\n\n----------\n\nThe analogous computation in Sage 3.0.2 yields:\n\nsage: C = CartesianProduct(Integers(),RationalField())\n\n# case 1\nsage: t=C([1,1/2])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nRational Field\n\n# case 2\nsage: t=C([1,1])\nsage: parent(t[0])\nInteger Ring\nsage: parent(t[1])\nInteger Ring\n\n---------\n\nNotice that the parent of t[1] is incorrect in the 2nd case.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3368\n\n",
     "created_at": "2008-06-04T22:07:22Z",
     "labels": [
         "component: combinatorics",
@@ -24,7 +24,6 @@ Hi,
 
 The following is a bug that Bill Page found in Sage.  It is in the combinatorial
 classes code  (mostly) by Mike Hansen, so maybe he'll fix it. 
-
 
 ```
 In: http://modular.math.washington.edu/msri06/work/kohel/msri_magma.pdf
@@ -64,7 +63,6 @@ Integer Ring
 
 Notice that the parent of t[1] is incorrect in the 2nd case.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3368
 
@@ -302,7 +300,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_023523.json:
 ```json
 {
-    "body": "Confirmed:\n\n\n```\nsage: C = cartesian_product([Integers(),RationalField()])\nsage: c = C([1,1])\nsage: c\n(1, 1)\nsage: c[0].parent()\nInteger Ring\nsage: c[1].parent()\nRational Field\n\nsage: C = CartesianProduct(Integers(),RationalField())\n/opt/sage-git/src/bin/sage-ipython:1: DeprecationWarning: CartesianProduct is deprecated. Use cartesian_product instead\nSee http://trac.sagemath.org/18411 for details.\n  #!/usr/bin/env python\nsage: c = C([1,1])\nsage: c[0].parent()\nInteger Ring\nsage: c[1].parent()\nRational Field\n```\n\n\nYeah, let's close a 4 digits eight years old combinat ticket for cheap :-)",
+    "body": "Confirmed:\n\n```\nsage: C = cartesian_product([Integers(),RationalField()])\nsage: c = C([1,1])\nsage: c\n(1, 1)\nsage: c[0].parent()\nInteger Ring\nsage: c[1].parent()\nRational Field\n\nsage: C = CartesianProduct(Integers(),RationalField())\n/opt/sage-git/src/bin/sage-ipython:1: DeprecationWarning: CartesianProduct is deprecated. Use cartesian_product instead\nSee http://trac.sagemath.org/18411 for details.\n  #!/usr/bin/env python\nsage: c = C([1,1])\nsage: c[0].parent()\nInteger Ring\nsage: c[1].parent()\nRational Field\n```\n\nYeah, let's close a 4 digits eight years old combinat ticket for cheap :-)",
     "created_at": "2016-08-31T16:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3368",
     "type": "issue_comment",
@@ -312,7 +310,6 @@ archive/issue_comments_023523.json:
 ```
 
 Confirmed:
-
 
 ```
 sage: C = cartesian_product([Integers(),RationalField()])
@@ -334,7 +331,6 @@ Integer Ring
 sage: c[1].parent()
 Rational Field
 ```
-
 
 Yeah, let's close a 4 digits eight years old combinat ticket for cheap :-)
 

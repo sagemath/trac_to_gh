@@ -83,7 +83,7 @@ Michael
 archive/issue_comments_046057.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> I am not sure which rejects Rob saw, but it is applying fine for me.\n\nSuperior Merge-Fu.  ;-)",
+    "body": "Replying to [comment:2 mabshoff]:\n> I am not sure which rejects Rob saw, but it is applying fine for me.\n\n\nSuperior Merge-Fu.  ;-)",
     "created_at": "2009-04-22T20:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5848",
     "type": "issue_comment",
@@ -94,6 +94,7 @@ archive/issue_comments_046057.json:
 
 Replying to [comment:2 mabshoff]:
 > I am not sure which rejects Rob saw, but it is applying fine for me.
+
 
 Superior Merge-Fu.  ;-)
 

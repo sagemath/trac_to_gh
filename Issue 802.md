@@ -3,7 +3,7 @@
 archive/issues_000802.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:18:16 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:25:05 2007 -0500\n@@ -255,6 +255,9 @@ class GenericGraph(SageObject):\n\n         Note that this is _not_ an isomorphism test.\n\n+        Note that the less-than and greater-than value returned here\n+        doesn't mean much.  The equality test is the useful thing.\n+\n         EXAMPLES:\n             sage: G = graphs.EmptyGraph()\n             sage: H = Graph()\n@@ -280,17 +283,19 @@ class GenericGraph(SageObject):\n             False\n\n         \"\"\"\n+        # If the graphs have different properties, they are not equal.\n         if type(self) != type(other):\n             return 1\n         elif self.loops() != other.loops():\n             return 1\n-        else:\n-            if self.multiple_edges() != other.multiple_edges():\n-                return 1\n+        elif self.multiple_edges() != other.multiple_edges():\n+            return 1\n\n         # If the vertices have different labels, the graphs are not equal.\n         if sorted(self.vertices()) != sorted(other.vertices()):\n             return 1\n+\n+        # Check that the edges are the same.\n         comp = enum(self) - enum(other)\n         if comp < 0:\n             return -1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/802\n\n",
+    "body": "Assignee: @williamstein\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:18:16 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:25:05 2007 -0500\n@@ -255,6 +255,9 @@ class GenericGraph(SageObject):\n\n         Note that this is _not_ an isomorphism test.\n\n+        Note that the less-than and greater-than value returned here\n+        doesn't mean much.  The equality test is the useful thing.\n+\n         EXAMPLES:\n             sage: G = graphs.EmptyGraph()\n             sage: H = Graph()\n@@ -280,17 +283,19 @@ class GenericGraph(SageObject):\n             False\n\n         \"\"\"\n+        # If the graphs have different properties, they are not equal.\n         if type(self) != type(other):\n             return 1\n         elif self.loops() != other.loops():\n             return 1\n-        else:\n-            if self.multiple_edges() != other.multiple_edges():\n-                return 1\n+        elif self.multiple_edges() != other.multiple_edges():\n+            return 1\n\n         # If the vertices have different labels, the graphs are not equal.\n         if sorted(self.vertices()) != sorted(other.vertices()):\n             return 1\n+\n+        # Check that the edges are the same.\n         comp = enum(self) - enum(other)\n         if comp < 0:\n             return -1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/802\n\n",
     "created_at": "2007-10-03T07:35:11Z",
     "labels": [
         "component: combinatorics",
@@ -17,7 +17,6 @@ archive/issues_000802.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 --- a/sage/graphs/graph.py      Wed Oct 03 02:18:16 2007 -0500
@@ -57,7 +56,6 @@ Assignee: @williamstein
              return -1
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/802
 
 
@@ -69,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/802
 archive/issue_comments_004821.json:
 ```json
 {
-    "body": "One more Latexifying thing in a function's documentation (to be applied after the patch above):\n\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:24:56 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:31:49 2007 -0500\n@@ -336,7 +336,7 @@ class GenericGraph(SageObject):\n\n     def __iter__(self):\n         \"\"\"\n-        Return an iterator over the vertices. Allows 'for v in G'.\n+        Return an iterator over the vertices which allows \\code{for v in G} syntax.\n\n         \"\"\"\n         return self.vertex_iterator()\n```\n",
+    "body": "One more Latexifying thing in a function's documentation (to be applied after the patch above):\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:24:56 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:31:49 2007 -0500\n@@ -336,7 +336,7 @@ class GenericGraph(SageObject):\n\n     def __iter__(self):\n         \"\"\"\n-        Return an iterator over the vertices. Allows 'for v in G'.\n+        Return an iterator over the vertices which allows \\code{for v in G} syntax.\n\n         \"\"\"\n         return self.vertex_iterator()\n```",
     "created_at": "2007-10-03T07:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/802",
     "type": "issue_comment",
@@ -79,7 +77,6 @@ archive/issue_comments_004821.json:
 ```
 
 One more Latexifying thing in a function's documentation (to be applied after the patch above):
-
 
 ```
 --- a/sage/graphs/graph.py      Wed Oct 03 02:24:56 2007 -0500
@@ -94,7 +91,6 @@ One more Latexifying thing in a function's documentation (to be applied after th
          """
          return self.vertex_iterator()
 ```
-
 
 
 

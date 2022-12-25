@@ -3,7 +3,7 @@
 archive/issues_009357.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: SIGFPE, ZeroDivisionError\n\n\n```\nsage: d=QQ[i](0)\nsage: ~d\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nThe code dos not check if the element to be inverted is zero or not and does not handle the exception that ocurred in the c extension.\n\nThere is a trivial patch that checks if the input is zero or not. I am not sure if the sourronding code should have some _sig_on _sig_off to made it more robust. _sig_on _sig_off would avoid the sage crash but would raise a RunTime exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9357\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: SIGFPE, ZeroDivisionError\n\n```\nsage: d=QQ[i](0)\nsage: ~d\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\nThe code dos not check if the element to be inverted is zero or not and does not handle the exception that ocurred in the c extension.\n\nThere is a trivial patch that checks if the input is zero or not. I am not sure if the sourronding code should have some _sig_on _sig_off to made it more robust. _sig_on _sig_off would avoid the sage crash but would raise a RunTime exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9357\n\n",
     "created_at": "2010-06-28T16:18:05Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 Keywords: SIGFPE, ZeroDivisionError
 
-
 ```
 sage: d=QQ[i](0)
 sage: ~d
@@ -36,7 +35,6 @@ Sage will now terminate (sorry).
 ------------------------------------------------------------
 
 ```
-
 
 The code dos not check if the element to be inverted is zero or not and does not handle the exception that ocurred in the c extension.
 

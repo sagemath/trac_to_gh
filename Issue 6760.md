@@ -3,7 +3,7 @@
 archive/issues_006760.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage: R.<i,j,k> = QuaternionAlgebra(-1, -13)        \nsage: I = R.ideal([2+i, 3*i, 5*j, j+k]); I\nFractional ideal (2 + i, 3*i, j + k, 5*k)\nsage: I.free_module()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-4.0/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py\", line 1503, in free_module\n    M = self.hermite_basis_matrix().row_module(ZZ)\nAttributeError: 'QuaternionFractionalIdeal_rational' object has no attribute 'hermite_basis_matrix'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6760\n\n",
+    "body": "Assignee: tbd\n\n```\nsage: R.<i,j,k> = QuaternionAlgebra(-1, -13)        \nsage: I = R.ideal([2+i, 3*i, 5*j, j+k]); I\nFractional ideal (2 + i, 3*i, j + k, 5*k)\nsage: I.free_module()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-4.0/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py\", line 1503, in free_module\n    M = self.hermite_basis_matrix().row_module(ZZ)\nAttributeError: 'QuaternionFractionalIdeal_rational' object has no attribute 'hermite_basis_matrix'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6760\n\n",
     "created_at": "2009-08-16T08:49:58Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_006760.json:
 ```
 Assignee: tbd
 
-
 ```
 sage: R.<i,j,k> = QuaternionAlgebra(-1, -13)        
 sage: I = R.ideal([2+i, 3*i, 5*j, j+k]); I
@@ -31,7 +30,6 @@ Traceback (most recent call last):
     M = self.hermite_basis_matrix().row_module(ZZ)
 AttributeError: 'QuaternionFractionalIdeal_rational' object has no attribute 'hermite_basis_matrix'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6760
 

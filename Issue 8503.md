@@ -3,7 +3,7 @@
 archive/issues_008503.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nMultiline input like\n\n```\n8+\\\n2\n```\n\nwhich works in command line does not work in notebook and returns error.\n\nJason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote\n\n```\nDoes it have to do with the preparser?  Note:\n\nsage: preparse(\"1+\\\\n2\")\n'Integer(1)+ * BackslashOperator() * n2'\n\nMaybe on the command line, ipython joins the two lines before the\npreparser gets to it, but that doesn't happen in the notebook? \n```\n\n\nAnd further:\n\n```\nplot(x,\\\n(x,-2,2))\n```\n\ndoes not produce the plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8503\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nMultiline input like\n\n```\n8+\\\n2\n```\nwhich works in command line does not work in notebook and returns error.\n\nJason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote\n\n```\nDoes it have to do with the preparser?  Note:\n\nsage: preparse(\"1+\\\\n2\")\n'Integer(1)+ * BackslashOperator() * n2'\n\nMaybe on the command line, ipython joins the two lines before the\npreparser gets to it, but that doesn't happen in the notebook? \n```\n\nAnd further:\n\n```\nplot(x,\\\n(x,-2,2))\n```\ndoes not produce the plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8503\n\n",
     "created_at": "2010-03-11T23:20:44Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ Multiline input like
 8+\
 2
 ```
-
 which works in command line does not work in notebook and returns error.
 
 Jason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote
@@ -41,14 +40,12 @@ Maybe on the command line, ipython joins the two lines before the
 preparser gets to it, but that doesn't happen in the notebook? 
 ```
 
-
 And further:
 
 ```
 plot(x,\
 (x,-2,2))
 ```
-
 does not produce the plot.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8503
@@ -181,7 +178,7 @@ archive/issue_events_020423.json:
 archive/issue_comments_076649.json:
 ```json
 {
-    "body": "Not the preparser.  For some reason, about the time this was reported, someone added `sage` and `python` to this list in `sagenb/notebook/worksheet.py`.\n\n```\n #Handle line continuations: join lines that end in a backslash\n#_except_ in LaTeX mode.\nif cell_system not in ['latex', 'sage', 'python']:\nI = I.replace('\\\\\\n','')\n```\n\nNote from Robert's email\n\n```\n\nA=solve(\\\nsin(x),\\\nx)\nA\n```\n\n\n```\nplot(x,\\\n(x,-2,\\\n2)).show()\n```\n\nboth work.\n\nSee https://github.com/sagemath/sagenb/issues/301",
+    "body": "Not the preparser.  For some reason, about the time this was reported, someone added `sage` and `python` to this list in `sagenb/notebook/worksheet.py`.\n\n```\n #Handle line continuations: join lines that end in a backslash\n#_except_ in LaTeX mode.\nif cell_system not in ['latex', 'sage', 'python']:\nI = I.replace('\\\\\\n','')\n```\nNote from Robert's email\n\n```\n\nA=solve(\\\nsin(x),\\\nx)\nA\n```\n\n```\nplot(x,\\\n(x,-2,\\\n2)).show()\n```\nboth work.\n\nSee https://github.com/sagemath/sagenb/issues/301",
     "created_at": "2014-12-10T21:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8503",
     "type": "issue_comment",
@@ -198,7 +195,6 @@ Not the preparser.  For some reason, about the time this was reported, someone a
 if cell_system not in ['latex', 'sage', 'python']:
 I = I.replace('\\\n','')
 ```
-
 Note from Robert's email
 
 ```
@@ -209,13 +205,11 @@ x)
 A
 ```
 
-
 ```
 plot(x,\
 (x,-2,\
 2)).show()
 ```
-
 both work.
 
 See https://github.com/sagemath/sagenb/issues/301

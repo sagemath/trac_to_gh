@@ -3,7 +3,7 @@
 archive/issues_003388.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nIn http://groups.google.com/group/sage-devel/t/ba359f3b1ba435d David wrote:\n\n```\nOkay, I can confirm that with sage 3.0.1, sage -gp has the same speed  \nas my standalone GP build. So mostly likely the change to GMP 4.2.2  \nintroduced a speed regression (probably the core 2 patches not being  \napplied properly).\n\ndavid \n```\n\nFix this!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3388\n\n",
+    "body": "Assignee: tbd\n\nIn http://groups.google.com/group/sage-devel/t/ba359f3b1ba435d David wrote:\n\n```\nOkay, I can confirm that with sage 3.0.1, sage -gp has the same speed  \nas my standalone GP build. So mostly likely the change to GMP 4.2.2  \nintroduced a speed regression (probably the core 2 patches not being  \napplied properly).\n\ndavid \n```\nFix this!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3388\n\n",
     "created_at": "2008-06-10T02:35:04Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ applied properly).
 
 david 
 ```
-
 Fix this!
 
 Cheers,
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3388
 archive/issue_comments_023667.json:
 ```json
 {
-    "body": "Yeah, I went back and looked at the log, and found this:\n\n\n```\nDo we have a Core2 CPU?... Yes\nDetected Intel Core 2 CPU\nFound GMP at /home/dmharvey/sage-3.0.2/spkg/build/gmp-4.2.2/src\nERROR: Incorrect GMP Version.  Found GMP version: 4.2.2\n       needed version 4.2.1\n```\n\n\nSo it's simply that jason's script knows not to try patching the wrong version of GMP.\n\nWe should probably ignore this, since MPIR should be here soonish.",
+    "body": "Yeah, I went back and looked at the log, and found this:\n\n```\nDo we have a Core2 CPU?... Yes\nDetected Intel Core 2 CPU\nFound GMP at /home/dmharvey/sage-3.0.2/spkg/build/gmp-4.2.2/src\nERROR: Incorrect GMP Version.  Found GMP version: 4.2.2\n       needed version 4.2.1\n```\n\nSo it's simply that jason's script knows not to try patching the wrong version of GMP.\n\nWe should probably ignore this, since MPIR should be here soonish.",
     "created_at": "2008-06-21T22:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3388",
     "type": "issue_comment",
@@ -58,7 +57,6 @@ archive/issue_comments_023667.json:
 
 Yeah, I went back and looked at the log, and found this:
 
-
 ```
 Do we have a Core2 CPU?... Yes
 Detected Intel Core 2 CPU
@@ -66,7 +64,6 @@ Found GMP at /home/dmharvey/sage-3.0.2/spkg/build/gmp-4.2.2/src
 ERROR: Incorrect GMP Version.  Found GMP version: 4.2.2
        needed version 4.2.1
 ```
-
 
 So it's simply that jason's script knows not to try patching the wrong version of GMP.
 
@@ -275,7 +272,7 @@ Well it's been three months since the ticket was created. If there is no serious
 archive/issue_comments_023677.json:
 ```json
 {
-    "body": "Replying to [comment:7 dmharvey]:\n> Well it's been three months since the ticket was created. If there is no serious plan to get MPIR out soon, I'd like to see this ticket reinstated.\n\nWe are working on a spkg that will be merged this month.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 dmharvey]:\n> Well it's been three months since the ticket was created. If there is no serious plan to get MPIR out soon, I'd like to see this ticket reinstated.\n\n\nWe are working on a spkg that will be merged this month.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-15T20:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3388",
     "type": "issue_comment",
@@ -286,6 +283,7 @@ archive/issue_comments_023677.json:
 
 Replying to [comment:7 dmharvey]:
 > Well it's been three months since the ticket was created. If there is no serious plan to get MPIR out soon, I'd like to see this ticket reinstated.
+
 
 We are working on a spkg that will be merged this month.
 

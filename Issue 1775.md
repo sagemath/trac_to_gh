@@ -70,7 +70,7 @@ I can not replicate this.  You might have been confused about whether or not you
 archive/issue_comments_011212.json:
 ```json
 {
-    "body": "William, I have just created a new user (charlie) via the 'Create new user' on\nthe login page method. Logged in as Charlie, then clicked on 'Search worksheets'\nand it logged me out:\n-------------------------------------------------------\nLogin failure\nYou have entered an invalid username. Please try again.\n\nValid login names:\nadmin,\ncharlie,\nbill \n-------------------------------------------------------",
+    "body": "William, I have just created a new user (charlie) via the 'Create new user' on\nthe login page method. Logged in as Charlie, then clicked on 'Search worksheets'\nand it logged me out:\n\n---\nLogin failure\nYou have entered an invalid username. Please try again.\n\nValid login names:\nadmin,\ncharlie,\nbill \n\n---",
     "created_at": "2008-01-14T15:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1775",
     "type": "issue_comment",
@@ -82,7 +82,8 @@ archive/issue_comments_011212.json:
 William, I have just created a new user (charlie) via the 'Create new user' on
 the login page method. Logged in as Charlie, then clicked on 'Search worksheets'
 and it logged me out:
--------------------------------------------------------
+
+---
 Login failure
 You have entered an invalid username. Please try again.
 
@@ -90,7 +91,8 @@ Valid login names:
 admin,
 charlie,
 bill 
--------------------------------------------------------
+
+---
 
 
 

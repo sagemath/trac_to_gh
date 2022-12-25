@@ -3,7 +3,7 @@
 archive/issues_007484.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nHere's a patch for README.txt to document this:\n\n\n```\n--- README.txt.orig     2009-11-17 20:02:26.833640422 -0600\n+++ README.txt  2009-11-17 20:07:26.763327405 -0600\n@@ -47,6 +47,14 @@\n      >= 10.4.x and certain Linux distributions are 100% supported.\n      See below for a complete list.\n  \n+     NOTE: If you're using Fortran on a platform for which the included g95 binaries\n+     do not work (e.g., Itanium or Ubuntu 9.10), you must use a system-wide gfortran.\n+     You must set the SAGE_FORTRAN and SAGE_FORTRAN_LIB environment variables before\n+     making Sage.  Do this by typing\n+\n+          export SAGE_FORTRAN=/exact/path/to/gfortran\n+          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n+\n    2. Extract the tarball:\n           tar xvf sage-*.tar\n \n@@ -75,13 +83,6 @@\n     Use Sage on Microsoft Windows via VMware.\n     We do not always test on OS X 10.4, but Sage should work there fine.\n \n-NOTE: If you're using Fortran on a platform without g95 binaries included\n-      with Sage, e.g., Itanium, you must use a system-wide gfortran.  You \n-      have to explicitly tell the build process about the fortran\n-      compiler and library location.  Do this by typing\n-\n-          export SAGE_FORTRAN=/exact/path/to/gfortran\n-          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS:\n        PROCESSOR       OPERATING SYSTEM\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7484\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nHere's a patch for README.txt to document this:\n\n```\n--- README.txt.orig     2009-11-17 20:02:26.833640422 -0600\n+++ README.txt  2009-11-17 20:07:26.763327405 -0600\n@@ -47,6 +47,14 @@\n      >= 10.4.x and certain Linux distributions are 100% supported.\n      See below for a complete list.\n  \n+     NOTE: If you're using Fortran on a platform for which the included g95 binaries\n+     do not work (e.g., Itanium or Ubuntu 9.10), you must use a system-wide gfortran.\n+     You must set the SAGE_FORTRAN and SAGE_FORTRAN_LIB environment variables before\n+     making Sage.  Do this by typing\n+\n+          export SAGE_FORTRAN=/exact/path/to/gfortran\n+          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n+\n    2. Extract the tarball:\n           tar xvf sage-*.tar\n \n@@ -75,13 +83,6 @@\n     Use Sage on Microsoft Windows via VMware.\n     We do not always test on OS X 10.4, but Sage should work there fine.\n \n-NOTE: If you're using Fortran on a platform without g95 binaries included\n-      with Sage, e.g., Itanium, you must use a system-wide gfortran.  You \n-      have to explicitly tell the build process about the fortran\n-      compiler and library location.  Do this by typing\n-\n-          export SAGE_FORTRAN=/exact/path/to/gfortran\n-          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS:\n        PROCESSOR       OPERATING SYSTEM\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7484\n\n",
     "created_at": "2009-11-18T02:10:22Z",
     "labels": [
         "component: build",
@@ -21,7 +21,6 @@ Assignee: tbd
 CC:  @haraldschilly
 
 Here's a patch for README.txt to document this:
-
 
 ```
 --- README.txt.orig     2009-11-17 20:02:26.833640422 -0600
@@ -57,7 +56,6 @@ Here's a patch for README.txt to document this:
         PROCESSOR       OPERATING SYSTEM
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7484
 
 
@@ -87,7 +85,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063085.json:
 ```json
 {
-    "body": "Regarding this ticket:\n\n\n```\n> Don't bother, since sage-4.3 should require the user has installed\n> gfortran on *all* Linux platforms.\n\n\nOkay, great.  If that doesn't happen, then I already made the ticket and patch:\n\nhttp://trac.sagemath.org/sage_trac/ticket/7484\n\nThis can be closed (or modified) to indicate the need for gfortran on all platforms, whenever that patch is merged.\n```\n",
+    "body": "Regarding this ticket:\n\n```\n> Don't bother, since sage-4.3 should require the user has installed\n> gfortran on *all* Linux platforms.\n\n\nOkay, great.  If that doesn't happen, then I already made the ticket and patch:\n\nhttp://trac.sagemath.org/sage_trac/ticket/7484\n\nThis can be closed (or modified) to indicate the need for gfortran on all platforms, whenever that patch is merged.\n```",
     "created_at": "2009-11-18T02:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -97,7 +95,6 @@ archive/issue_comments_063085.json:
 ```
 
 Regarding this ticket:
-
 
 ```
 > Don't bother, since sage-4.3 should require the user has installed
@@ -110,7 +107,6 @@ http://trac.sagemath.org/sage_trac/ticket/7484
 
 This can be closed (or modified) to indicate the need for gfortran on all platforms, whenever that patch is merged.
 ```
-
 
 
 
@@ -173,7 +169,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063089.json:
 ```json
 {
-    "body": "I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\n(How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nOn Solaris that will probably be the following, though this would need checking.\n\n\n```\nSAGE_FORTRAN=/path/to/gcc/install/directory/bin/gfortran (SPARC and x86)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit SPARC)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/sparcv9/libgfortran.so (64-bit SPARC)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit x86)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/amd64/libgfortran.so (64-bit x64)\n```\n\n\nDave",
+    "body": "I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\n(How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nOn Solaris that will probably be the following, though this would need checking.\n\n```\nSAGE_FORTRAN=/path/to/gcc/install/directory/bin/gfortran (SPARC and x86)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit SPARC)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/sparcv9/libgfortran.so (64-bit SPARC)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit x86)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/amd64/libgfortran.so (64-bit x64)\n```\n\nDave",
     "created_at": "2010-01-21T12:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -188,7 +184,6 @@ I think it is important to add on platforms such as Solaris, AIX and HP-UX, wher
 
 On Solaris that will probably be the following, though this would need checking.
 
-
 ```
 SAGE_FORTRAN=/path/to/gcc/install/directory/bin/gfortran (SPARC and x86)
 
@@ -199,7 +194,6 @@ SAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit x86)
 SAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/amd64/libgfortran.so (64-bit x64)
 ```
 
-
 Dave
 
 
@@ -209,7 +203,7 @@ Dave
 archive/issue_comments_063090.json:
 ```json
 {
-    "body": "> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nDo *NOT* require gfortran on OS X, since we still supply it with Sage.",
+    "body": "> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\n\nDo *NOT* require gfortran on OS X, since we still supply it with Sage.",
     "created_at": "2010-01-21T16:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -219,6 +213,7 @@ archive/issue_comments_063090.json:
 ```
 
 > (How about OS X? Perhaps the fortran.spkg takes care of that.) 
+
 
 Do *NOT* require gfortran on OS X, since we still supply it with Sage.
 
@@ -291,7 +286,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063094.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\nDone. Fixed in the updated README.txt.\n\n\n\n\n\n> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nAlso fixed in the updated README.txt. For Mac OS X, I have removed the reference to ticket #7095, as the issue contained therein has been fixed.",
+    "body": "Replying to [comment:5 drkirkby]:\n> I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\n\nDone. Fixed in the updated README.txt.\n\n\n\n\n\n> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\n\nAlso fixed in the updated README.txt. For Mac OS X, I have removed the reference to ticket #7095, as the issue contained therein has been fixed.",
     "created_at": "2010-02-14T18:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -303,6 +298,7 @@ archive/issue_comments_063094.json:
 Replying to [comment:5 drkirkby]:
 > I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. 
 
+
 Done. Fixed in the updated README.txt.
 
 
@@ -310,6 +306,7 @@ Done. Fixed in the updated README.txt.
 
 
 > (How about OS X? Perhaps the fortran.spkg takes care of that.) 
+
 
 Also fixed in the updated README.txt. For Mac OS X, I have removed the reference to ticket #7095, as the issue contained therein has been fixed.
 
@@ -426,7 +423,7 @@ Dave
 archive/issue_comments_063100.json:
 ```json
 {
-    "body": "From IRC:\n\n```\n04:31 < schilly> mvngu: the README.txt still says that arch linux is not \n                 supported. i guess we can drop that ^^\n```\n",
+    "body": "From IRC:\n\n```\n04:31 < schilly> mvngu: the README.txt still says that arch linux is not \n                 supported. i guess we can drop that ^^\n```",
     "created_at": "2010-03-17T11:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -444,13 +441,12 @@ From IRC:
 
 
 
-
 ---
 
 archive/issue_comments_063101.json:
 ```json
 {
-    "body": "README.txt was recently updated, so this will need to be rebased again.  Is the original problem still a problem, given the latest one?\n\nWith respect to drkirkby's comments, I think the following remain:\n>  * Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \nThis seems reasonable to change.\n>  * **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\nI have no idea if this is true, but at any rate we still use the phrase \"system-wide\" in line 137.\n>  *  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n>  * Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n>  * Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \nThese three seem to be a matter of taste.  As long as we accurately document what Sage builds with, we might as well leave it alone.  And warnings of things that fail are good if they prevent people from wasting time trying to make them fail :)",
+    "body": "README.txt was recently updated, so this will need to be rebased again.  Is the original problem still a problem, given the latest one?\n\nWith respect to drkirkby's comments, I think the following remain:\n>  * Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \n \nThis seems reasonable to change.\n>  * **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\n \nI have no idea if this is true, but at any rate we still use the phrase \"system-wide\" in line 137.\n>  *  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n>  * Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n>  * Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \n \nThese three seem to be a matter of taste.  As long as we accurately document what Sage builds with, we might as well leave it alone.  And warnings of things that fail are good if they prevent people from wasting time trying to make them fail :)",
     "created_at": "2010-05-26T20:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
@@ -463,12 +459,15 @@ README.txt was recently updated, so this will need to be rebased again.  Is the 
 
 With respect to drkirkby's comments, I think the following remain:
 >  * Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). 
+ 
 This seems reasonable to change.
 >  * **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**
+ 
 I have no idea if this is true, but at any rate we still use the phrase "system-wide" in line 137.
 >  *  Line 299. I would change to simply Sage needs GCC >= 4.0.1
 >  * Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1
 >  * Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. 
+ 
 These three seem to be a matter of taste.  As long as we accurately document what Sage builds with, we might as well leave it alone.  And warnings of things that fail are good if they prevent people from wasting time trying to make them fail :)
 
 

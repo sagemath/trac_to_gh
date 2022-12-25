@@ -3,7 +3,7 @@
 archive/issues_002460.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nVarious people worked on factorization.py and unfortunately ignored some implicit \nassumptions in what that code is supposed to do.  In particular, this function\n\n```\n    def base_ring(self):\n        if len(self) > 0:\n            return self[0][0].parent()\n        else:\n            return self.unit().parent()\n```\n\nassumes that (1) ever element has the same parent, and (2) the parent is a ring.\nNeither assumption need be satisfied.   \n\nThis is_commutative function then relies on base_ring working.  \nHere's an example of this leading to *wrong* answers:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n\n\nProposal: Simply call Sequence on the list of bases in the factorization\nto get a new list where the basis lie in a common university.  Then refine\nis_commutative to mean that the universe is a commuative ring, and only then\ncommute factors automatically.\n\nSecond, after the above is resolved, the sort function for comparison \nshould call universe() (not base_ring) and use some sensible defaults,\nbefore resorting to that mess of code in the current sort method. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2460\n\n",
+    "body": "Assignee: somebody\n\nVarious people worked on factorization.py and unfortunately ignored some implicit \nassumptions in what that code is supposed to do.  In particular, this function\n\n```\n    def base_ring(self):\n        if len(self) > 0:\n            return self[0][0].parent()\n        else:\n            return self.unit().parent()\n```\nassumes that (1) ever element has the same parent, and (2) the parent is a ring.\nNeither assumption need be satisfied.   \n\nThis is_commutative function then relies on base_ring working.  \nHere's an example of this leading to *wrong* answers:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n\nProposal: Simply call Sequence on the list of bases in the factorization\nto get a new list where the basis lie in a common university.  Then refine\nis_commutative to mean that the universe is a commuative ring, and only then\ncommute factors automatically.\n\nSecond, after the above is resolved, the sort function for comparison \nshould call universe() (not base_ring) and use some sensible defaults,\nbefore resorting to that mess of code in the current sort method. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2460\n\n",
     "created_at": "2008-03-10T16:02:43Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,7 +28,6 @@ assumptions in what that code is supposed to do.  In particular, this function
         else:
             return self.unit().parent()
 ```
-
 assumes that (1) ever element has the same parent, and (2) the parent is a ring.
 Neither assumption need be satisfied.   
 
@@ -40,7 +39,6 @@ sage: R.<x,y> = FreeAlgebra(QQ,2)
 sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])
 3 * x^3 * y^5
 ```
-
 
 Proposal: Simply call Sequence on the list of bases in the factorization
 to get a new list where the basis lie in a common university.  Then refine
@@ -354,7 +352,7 @@ archive/issue_events_005799.json:
 archive/issue_comments_016634.json:
 ```json
 {
-    "body": "Woah -- I incorrectly thought this had long since been fixed.  NOT.\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n",
+    "body": "Woah -- I incorrectly thought this had long since been fixed.  NOT.\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```",
     "created_at": "2008-06-27T20:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
@@ -370,7 +368,6 @@ sage: R.<x,y> = FreeAlgebra(QQ,2)
 sage: sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])
 3 * x^3 * y^5
 ```
-
 
 
 
@@ -460,7 +457,7 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_016638.json:
 ```json
 {
-    "body": "Looking at factorization.py I was all ready to fix all the problems I could see -- using Sequence to get a common universe for the bases on construction, cache this base_ring, only allow operations between factorizations with the same base_ring, and so on.\n\nBut then I saw what appeared to be a totally weird example:\n\n\n```\nsage: F = Factorization([(ZZ^3, 2), (ZZ^2, 5)], cr=True); F\n(Ambient free module of rank 2 over the principal ideal domain Integer Ring)^5 * \n(Ambient free module of rank 3 over the principal ideal domain Integer Ring)^2            \n```\n\nThis bears no relation at all to what I thought the Factorization class was for.  Doing a search_src showed that this is designed in to support splitting of modular symbols spaces (and similar).\n\nThis leaves a question almost certainly for William:  is it really sensible to have one class serve both as the structure to hold \"prime factorizations\" for UFDs and other rings, as well as to hold lists of subspaces with multiplicities?\n\nIf so, perhaps we need to refactor this to have a base class which just handles the basics, with (at least) 2 derived classes, one for rings factorizations and one for additive decompositions?\n\nJohn\n\n# I have added this posting to trac#2460 too.",
+    "body": "Looking at factorization.py I was all ready to fix all the problems I could see -- using Sequence to get a common universe for the bases on construction, cache this base_ring, only allow operations between factorizations with the same base_ring, and so on.\n\nBut then I saw what appeared to be a totally weird example:\n\n```\nsage: F = Factorization([(ZZ^3, 2), (ZZ^2, 5)], cr=True); F\n(Ambient free module of rank 2 over the principal ideal domain Integer Ring)^5 * \n(Ambient free module of rank 3 over the principal ideal domain Integer Ring)^2            \n```\nThis bears no relation at all to what I thought the Factorization class was for.  Doing a search_src showed that this is designed in to support splitting of modular symbols spaces (and similar).\n\nThis leaves a question almost certainly for William:  is it really sensible to have one class serve both as the structure to hold \"prime factorizations\" for UFDs and other rings, as well as to hold lists of subspaces with multiplicities?\n\nIf so, perhaps we need to refactor this to have a base class which just handles the basics, with (at least) 2 derived classes, one for rings factorizations and one for additive decompositions?\n\nJohn\n\n# I have added this posting to trac#2460 too.",
     "created_at": "2008-08-22T17:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
@@ -473,13 +470,11 @@ Looking at factorization.py I was all ready to fix all the problems I could see 
 
 But then I saw what appeared to be a totally weird example:
 
-
 ```
 sage: F = Factorization([(ZZ^3, 2), (ZZ^2, 5)], cr=True); F
 (Ambient free module of rank 2 over the principal ideal domain Integer Ring)^5 * 
 (Ambient free module of rank 3 over the principal ideal domain Integer Ring)^2            
 ```
-
 This bears no relation at all to what I thought the Factorization class was for.  Doing a search_src showed that this is designed in to support splitting of modular symbols spaces (and similar).
 
 This leaves a question almost certainly for William:  is it really sensible to have one class serve both as the structure to hold "prime factorizations" for UFDs and other rings, as well as to hold lists of subspaces with multiplicities?

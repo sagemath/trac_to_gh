@@ -3,7 +3,7 @@
 archive/issues_001094.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nntl_ZZ_pEX.py\n\n```\n==4652== 408 (24 direct, 384 indirect) bytes in 3 blocks are definitely lost in loss record 635 of 1,862\n==4652==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4652==    by 0x6041AB6: ZZ_pE_to_ZZ_pX (in /tmp/Work-mabshoff/sage-2.8.11/devel/sage-main/c_lib/libcsage.so)\n==4652==    by 0xCE6A067: __pyx_f_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE_get_as_ZZ_pX (ntl_ZZ_pE.cpp:2514)\n==4652==    by 0xCE6889E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:1661\n)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4652==    by 0x4589BF: object_reduce_ex (typeobject.c:2786)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x76F0743: save (cPickle.c:2495)\n==4652==    by 0x76F1EEC: batch_list (cPickle.c:1558)\n==4652==    by 0x76F0C7B: save (cPickle.c:1626)\n==4652==    by 0x76F025F: save_tuple (cPickle.c:1381)\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1094\n\n",
+    "body": "Assignee: mabshoff\n\nntl_ZZ_pEX.py\n\n```\n==4652== 408 (24 direct, 384 indirect) bytes in 3 blocks are definitely lost in loss record 635 of 1,862\n==4652==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==4652==    by 0x6041AB6: ZZ_pE_to_ZZ_pX (in /tmp/Work-mabshoff/sage-2.8.11/devel/sage-main/c_lib/libcsage.so)\n==4652==    by 0xCE6A067: __pyx_f_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE_get_as_ZZ_pX (ntl_ZZ_pE.cpp:2514)\n==4652==    by 0xCE6889E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:1661\n)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x47C850: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==4652==    by 0x4589BF: object_reduce_ex (typeobject.c:2786)\n==4652==    by 0x415522: PyObject_Call (abstract.c:1860)\n==4652==    by 0x76F0743: save (cPickle.c:2495)\n==4652==    by 0x76F1EEC: batch_list (cPickle.c:1558)\n==4652==    by 0x76F0C7B: save (cPickle.c:1626)\n==4652==    by 0x76F025F: save_tuple (cPickle.c:1381)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1094\n\n",
     "created_at": "2007-11-04T00:06:18Z",
     "labels": [
         "component: memleak",
@@ -37,7 +37,6 @@ ntl_ZZ_pEX.py
 ==4652==    by 0x76F025F: save_tuple (cPickle.c:1381)
 ```
 
-
 Cheers,
 
 Michael
@@ -53,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1094
 archive/issue_comments_006606.json:
 ```json
 {
-    "body": "With Sage 2.10.alpha0 I get:\n\n```\n==26426== 408 (24 direct, 384 indirect) bytes in 3 blocks are definitely lost in loss record 5,211 of 7,513\n==26426==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==26426==    by 0x6041A76: ZZ_pE_to_ZZ_pX (in /tmp/Work-mabshoff/release-cycle/sage-2.9.3.rc1ish/devel/sage-main/c_lib/libcs\nage.so)\n==26426==    by 0xD0170F7: __pyx_f_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE_get_as_ZZ_pX (ntl_ZZ_pE.cpp:4203)\n==26426==    by 0xD01592E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:312\n6)\n```\n\nTotal losses:\n\n```\n==26426== LEAK SUMMARY:\n==26426==    definitely lost: 24 bytes in 3 blocks.\n==26426==    indirectly lost: 384 bytes in 6 blocks.\n==26426==      possibly lost: 258,375 bytes in 780 blocks.\n==26426==    still reachable: 29,398,267 bytes in 182,476 blocks.\n==26426==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nCheers,\n\nMichael",
+    "body": "With Sage 2.10.alpha0 I get:\n\n```\n==26426== 408 (24 direct, 384 indirect) bytes in 3 blocks are definitely lost in loss record 5,211 of 7,513\n==26426==    at 0x4A1C344: operator new(unsigned long) (vg_replace_malloc.c:227)\n==26426==    by 0x6041A76: ZZ_pE_to_ZZ_pX (in /tmp/Work-mabshoff/release-cycle/sage-2.9.3.rc1ish/devel/sage-main/c_lib/libcs\nage.so)\n==26426==    by 0xD0170F7: __pyx_f_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE_get_as_ZZ_pX (ntl_ZZ_pE.cpp:4203)\n==26426==    by 0xD01592E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:312\n6)\n```\nTotal losses:\n\n```\n==26426== LEAK SUMMARY:\n==26426==    definitely lost: 24 bytes in 3 blocks.\n==26426==    indirectly lost: 384 bytes in 6 blocks.\n==26426==      possibly lost: 258,375 bytes in 780 blocks.\n==26426==    still reachable: 29,398,267 bytes in 182,476 blocks.\n==26426==         suppressed: 0 bytes in 0 blocks.\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-07T17:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1094",
     "type": "issue_comment",
@@ -73,7 +72,6 @@ age.so)
 ==26426==    by 0xD01592E: __pyx_pf_4sage_4libs_3ntl_9ntl_ZZ_pE_9ntl_ZZ_pE___reduce__(_object*, _object*) (ntl_ZZ_pE.cpp:312
 6)
 ```
-
 Total losses:
 
 ```
@@ -84,7 +82,6 @@ Total losses:
 ==26426==    still reachable: 29,398,267 bytes in 182,476 blocks.
 ==26426==         suppressed: 0 bytes in 0 blocks.
 ```
-
 
 Cheers,
 

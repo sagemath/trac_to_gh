@@ -3,7 +3,7 @@
 archive/issues_000388.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:\n> Hi William,\n>\n> I found an odd thing:\n> -----------------------\n> S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\n>\n>         Modular Symbols subspace of dimension 3 of Modular Symbols space of\n>         dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\n>\n> p=S.projection()\n>\n>\n> S.basis()\n>\n>         ((1,33) - (1,37), (1,35), (1,49))\n>\n> for i in [0,1,2]: p(S.basis()[i])\n>\n>\n> (1,35)\n> (1,49)\n> 0\n> ------------------------------\n> Shouldn't the projection onto a subspace restricted to that subspace be\n> the identity?\n\nYes.  That's definitely a bug.  Thanks for finding it.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/388\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:\n> Hi William,\n>\n> I found an odd thing:\n> -----------------------\n> S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\n>\n>         Modular Symbols subspace of dimension 3 of Modular Symbols space of\n>         dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\n>\n> p=S.projection()\n>\n>\n> S.basis()\n>\n>         ((1,33) - (1,37), (1,35), (1,49))\n>\n> for i in [0,1,2]: p(S.basis()[i])\n>\n>\n> (1,35)\n> (1,49)\n> 0\n> ------------------------------\n> Shouldn't the projection onto a subspace restricted to that subspace be\n> the identity?\n\nYes.  That's definitely a bug.  Thanks for finding it.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/388\n\n",
     "created_at": "2007-06-22T11:25:44Z",
     "labels": [
         "component: number theory",
@@ -17,7 +17,6 @@ archive/issues_000388.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:
@@ -50,7 +49,6 @@ On 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:
 Yes.  That's definitely a bug.  Thanks for finding it.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/388
 
 
@@ -62,7 +60,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/388
 archive/issue_comments_001895.json:
 ```json
 {
-    "body": "This is still an issue with Sage 2.8.2. Maybe it is something for the next bug day:\n\n```\n[mabshoff@m940 sage-2.8.2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2, Release Date: 2007-08-22                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\nModular Symbols subspace of dimension 3 of Modular Symbols space of dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\nsage: p=S.projection()\nsage: S.basis()\n((1,33) - (1,37), (1,35), (1,49))\nsage: for i in [0,1,2]: p(S.basis()[i])\n....:\n(1,35)\n(1,49)\n0\nsage:\n```\n\nCheers,\n\nMichael",
+    "body": "This is still an issue with Sage 2.8.2. Maybe it is something for the next bug day:\n\n```\n[mabshoff@m940 sage-2.8.2]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2, Release Date: 2007-08-22                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\nModular Symbols subspace of dimension 3 of Modular Symbols space of dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\nsage: p=S.projection()\nsage: S.basis()\n((1,33) - (1,37), (1,35), (1,49))\nsage: for i in [0,1,2]: p(S.basis()[i])\n....:\n(1,35)\n(1,49)\n0\nsage:\n```\nCheers,\n\nMichael",
     "created_at": "2007-08-28T11:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
@@ -91,7 +89,6 @@ sage: for i in [0,1,2]: p(S.basis()[i])
 0
 sage:
 ```
-
 Cheers,
 
 Michael

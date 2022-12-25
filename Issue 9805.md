@@ -55,7 +55,7 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_096180.json:
 ```json
 {
-    "body": "I just had a quick look at the code. There are many procedures without documentation and tests. This should be corrected. \n\nMoreover, near the beginning of the patch, an example is given\n\n```\nsage: c = Constellation(['(0,1)', '(0,2)', None])\n```\n\nand the syntax is rather unclear. What is the meaning of none ? Why do we need quotes around permutations ?",
+    "body": "I just had a quick look at the code. There are many procedures without documentation and tests. This should be corrected. \n\nMoreover, near the beginning of the patch, an example is given\n\n```\nsage: c = Constellation(['(0,1)', '(0,2)', None])\n```\nand the syntax is rather unclear. What is the meaning of none ? Why do we need quotes around permutations ?",
     "created_at": "2012-05-18T12:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ Moreover, near the beginning of the patch, an example is given
 ```
 sage: c = Constellation(['(0,1)', '(0,2)', None])
 ```
-
 and the syntax is rather unclear. What is the meaning of none ? Why do we need quotes around permutations ?
 
 
@@ -81,7 +80,7 @@ and the syntax is rather unclear. What is the meaning of none ? Why do we need q
 archive/issue_comments_096181.json:
 ```json
 {
-    "body": "Hello,\n\nThe following line appears twice at the beginning:\n\n\n```\nfrom sage.combinat.partition import Partition \n```\n",
+    "body": "Hello,\n\nThe following line appears twice at the beginning:\n\n```\nfrom sage.combinat.partition import Partition \n```",
     "created_at": "2012-06-07T09:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -94,11 +93,9 @@ Hello,
 
 The following line appears twice at the beginning:
 
-
 ```
 from sage.combinat.partition import Partition 
 ```
-
 
 
 
@@ -107,7 +104,7 @@ from sage.combinat.partition import Partition
 archive/issue_comments_096182.json:
 ```json
 {
-    "body": "Using the latest sage-combinat queue, the doctest coverage is clearly bad :\n\n\n```\nSCORE constellation.py: 25% (18 of 70)\n```\n\n\nAnd some tests are failing :\n\n\n```\n2 items had failures:\n   1 of   5 in __main__.example_0\n   2 of   5 in __main__.example_14\n***Test Failed*** 3 failures.\n```\n",
+    "body": "Using the latest sage-combinat queue, the doctest coverage is clearly bad :\n\n```\nSCORE constellation.py: 25% (18 of 70)\n```\n\nAnd some tests are failing :\n\n```\n2 items had failures:\n   1 of   5 in __main__.example_0\n   2 of   5 in __main__.example_14\n***Test Failed*** 3 failures.\n```",
     "created_at": "2012-06-08T19:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -118,14 +115,11 @@ archive/issue_comments_096182.json:
 
 Using the latest sage-combinat queue, the doctest coverage is clearly bad :
 
-
 ```
 SCORE constellation.py: 25% (18 of 70)
 ```
 
-
 And some tests are failing :
-
 
 ```
 2 items had failures:
@@ -133,7 +127,6 @@ And some tests are failing :
    2 of   5 in __main__.example_14
 ***Test Failed*** 3 failures.
 ```
-
 
 
 
@@ -216,7 +209,7 @@ Could you please upload the most recent constellation patch from the sage-combin
 archive/issue_comments_096187.json:
 ```json
 {
-    "body": "Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by @videlec created at 2012-07-23 20:48:36\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\nDone.",
+    "body": "Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by @videlec created at 2012-07-23 20:48:36\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\n\nDone.",
     "created_at": "2012-07-23T20:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -229,6 +222,7 @@ Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-u
 
 Replying to [comment:7 chapoton]:
 > Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..
+
 
 Done.
 
@@ -411,7 +405,7 @@ coverage 92 %
 archive/issue_comments_096197.json:
 ```json
 {
-    "body": "Replying to [comment:16 chapoton]:\n> coverage 92 %\n\nThanks working on doctests !\n\nI would like to split the file in two parts. More precisely, I intend to move the first part (the little functions on permutations) in a file like sage.misc.permutations. What do you think ? Do I have the green light to fold your patch with mine and do the splitting ?\n\nBest,\nVincent",
+    "body": "Replying to [comment:16 chapoton]:\n> coverage 92 %\n\n\nThanks working on doctests !\n\nI would like to split the file in two parts. More precisely, I intend to move the first part (the little functions on permutations) in a file like sage.misc.permutations. What do you think ? Do I have the green light to fold your patch with mine and do the splitting ?\n\nBest,\nVincent",
     "created_at": "2013-05-25T12:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -422,6 +416,7 @@ archive/issue_comments_096197.json:
 
 Replying to [comment:16 chapoton]:
 > coverage 92 %
+
 
 Thanks working on doctests !
 
@@ -475,7 +470,7 @@ By the way, could you also solve the failing doctest ? Most likely, I have not b
 archive/issue_comments_096200.json:
 ```json
 {
-    "body": "Replying to [comment:19 chapoton]:\n> By the way, could you also solve the failing doctest ? Most likely, I have not been able to figure out what input should be fed to this method..\n\nI am currently reworking on that ticket. I folded your patch with mine but there are still some code to complete (especially doctests). I hope it will be finished soon.",
+    "body": "Replying to [comment:19 chapoton]:\n> By the way, could you also solve the failing doctest ? Most likely, I have not been able to figure out what input should be fed to this method..\n\n\nI am currently reworking on that ticket. I folded your patch with mine but there are still some code to complete (especially doctests). I hope it will be finished soon.",
     "created_at": "2013-05-30T20:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -486,6 +481,7 @@ archive/issue_comments_096200.json:
 
 Replying to [comment:19 chapoton]:
 > By the way, could you also solve the failing doctest ? Most likely, I have not been able to figure out what input should be fed to this method..
+
 
 I am currently reworking on that ticket. I folded your patch with mine but there are still some code to complete (especially doctests). I hope it will be finished soon.
 
@@ -825,7 +821,7 @@ archive/issue_events_024619.json:
 archive/issue_comments_096216.json:
 ```json
 {
-    "body": "Rebase on sage-6.2.beta6 and bug corrected in connected_components.\n----\nNew commits:",
+    "body": "Rebase on sage-6.2.beta6 and bug corrected in connected_components.\n\n---\nNew commits:",
     "created_at": "2014-04-08T19:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -835,7 +831,8 @@ archive/issue_comments_096216.json:
 ```
 
 Rebase on sage-6.2.beta6 and bug corrected in connected_components.
-----
+
+---
 New commits:
 
 
@@ -879,7 +876,7 @@ archive/issue_events_024621.json:
 archive/issue_comments_096217.json:
 ```json
 {
-    "body": "I have made minor corrections, there were unused imports and undefined variables (found using pyflakes)\n----\nNew commits:",
+    "body": "I have made minor corrections, there were unused imports and undefined variables (found using pyflakes)\n\n---\nNew commits:",
     "created_at": "2014-05-10T06:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -889,7 +886,8 @@ archive/issue_comments_096217.json:
 ```
 
 I have made minor corrections, there were unused imports and undefined variables (found using pyflakes)
-----
+
+---
 New commits:
 
 
@@ -1027,7 +1025,7 @@ Well, great. This was my main problem with this branch. Where are the permutatio
 archive/issue_comments_096223.json:
 ```json
 {
-    "body": "Replying to [comment:41 chapoton]:\n> Well, great. This was my main problem with this branch. Where are the permutations starting with 0 inside sage ?\n\n\n```\nsage: S5 = SymmetricGroup(range(5))\nsage: S5.an_element()\n(0,1,2,3,4)\n```\n\n\nVincent",
+    "body": "Replying to [comment:41 chapoton]:\n> Well, great. This was my main problem with this branch. Where are the permutations starting with 0 inside sage ?\n\n\n```\nsage: S5 = SymmetricGroup(range(5))\nsage: S5.an_element()\n(0,1,2,3,4)\n```\n\nVincent",
     "created_at": "2015-01-23T13:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -1045,7 +1043,6 @@ sage: S5 = SymmetricGroup(range(5))
 sage: S5.an_element()
 (0,1,2,3,4)
 ```
-
 
 Vincent
 
@@ -1433,7 +1430,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_096239.json:
 ```json
 {
-    "body": "I guess that it makes sense to move the remaining functions from `sage.misc.permutation` inside `constellation.py`.\n\nSince you are now using permutations, I would actually allow any domain. In other words, add a fixed symmetric group attribute to `Constellations`.\n\nWhen you check matching with the oeis sequence 220754, you can also do that in Sage\n\n```\nsage: seq = oeis('A220754')\nsage: seq\nA220754: Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that the triple a,b,c generates a transitive group.\nsage: seq.first_terms()\n(1,\n 7,\n 194,\n 12858,\n 1647384,\n 361351560,\n 125116670160,\n 64439768489040,\n 47159227114392960,\n 47285264408385951360,\n 63057420721939066617600,\n 109118766834521171299756800,\n 239996135160204867851157273600,\n 659114500480471292127627441484800)\n```\n\n\nThe fact that the associated permutation group is transitive is equivalent to the \"connectedness\". You should either use one or the other.",
+    "body": "I guess that it makes sense to move the remaining functions from `sage.misc.permutation` inside `constellation.py`.\n\nSince you are now using permutations, I would actually allow any domain. In other words, add a fixed symmetric group attribute to `Constellations`.\n\nWhen you check matching with the oeis sequence 220754, you can also do that in Sage\n\n```\nsage: seq = oeis('A220754')\nsage: seq\nA220754: Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that the triple a,b,c generates a transitive group.\nsage: seq.first_terms()\n(1,\n 7,\n 194,\n 12858,\n 1647384,\n 361351560,\n 125116670160,\n 64439768489040,\n 47159227114392960,\n 47285264408385951360,\n 63057420721939066617600,\n 109118766834521171299756800,\n 239996135160204867851157273600,\n 659114500480471292127627441484800)\n```\n\nThe fact that the associated permutation group is transitive is equivalent to the \"connectedness\". You should either use one or the other.",
     "created_at": "2016-03-29T21:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -1469,7 +1466,6 @@ sage: seq.first_terms()
  659114500480471292127627441484800)
 ```
 
-
 The fact that the associated permutation group is transitive is equivalent to the "connectedness". You should either use one or the other.
 
 
@@ -1497,7 +1493,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_096241.json:
 ```json
 {
-    "body": "Replying to [comment:62 vdelecroix]:\n> I guess that it makes sense to move the remaining functions from `sage.misc.permutation` inside `constellation.py`.\n\nok, done\n\n> Since you are now using permutations, I would actually allow any domain. In other words, add a fixed symmetric group attribute to `Constellations`.\n\nmaybe for a later ticket ? this one has been waiting for years\n\n> When you check matching with the oeis sequence 220754, you can also do that in Sage\n> {{{\n> sage: seq = oeis('A220754')\n> sage: seq\n> A220754: Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that the triple a,b,c generates a transitive group.\n> sage: seq.first_terms()\n> (1,\n>  7,\n>  194,\n>  12858,\n>  1647384,\n>  361351560,\n>  125116670160,\n>  64439768489040,\n>  47159227114392960,\n>  47285264408385951360,\n>  63057420721939066617600,\n>  109118766834521171299756800,\n>  239996135160204867851157273600,\n>  659114500480471292127627441484800)\n> }}}\n\nI know. I would prefer not to depend on \"optional internet\". The current test is good enough.\n\n> The fact that the associated permutation group is transitive is equivalent to the \"connectedness\". You should either use one or the other.\n\nSorry, but where is the exact problem you talk about ?",
+    "body": "Replying to [comment:62 vdelecroix]:\n> I guess that it makes sense to move the remaining functions from `sage.misc.permutation` inside `constellation.py`.\n\n\nok, done\n\n> Since you are now using permutations, I would actually allow any domain. In other words, add a fixed symmetric group attribute to `Constellations`.\n\n\nmaybe for a later ticket ? this one has been waiting for years\n\n> When you check matching with the oeis sequence 220754, you can also do that in Sage\n> \n> ```\n> sage: seq = oeis('A220754')\n> sage: seq\n> A220754: Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that the triple a,b,c generates a transitive group.\n> sage: seq.first_terms()\n> (1,\n>  7,\n>  194,\n>  12858,\n>  1647384,\n>  361351560,\n>  125116670160,\n>  64439768489040,\n>  47159227114392960,\n>  47285264408385951360,\n>  63057420721939066617600,\n>  109118766834521171299756800,\n>  239996135160204867851157273600,\n>  659114500480471292127627441484800)\n> ```\n\n\nI know. I would prefer not to depend on \"optional internet\". The current test is good enough.\n\n> The fact that the associated permutation group is transitive is equivalent to the \"connectedness\". You should either use one or the other.\n\n\nSorry, but where is the exact problem you talk about ?",
     "created_at": "2016-03-30T08:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -1509,14 +1505,17 @@ archive/issue_comments_096241.json:
 Replying to [comment:62 vdelecroix]:
 > I guess that it makes sense to move the remaining functions from `sage.misc.permutation` inside `constellation.py`.
 
+
 ok, done
 
 > Since you are now using permutations, I would actually allow any domain. In other words, add a fixed symmetric group attribute to `Constellations`.
 
+
 maybe for a later ticket ? this one has been waiting for years
 
 > When you check matching with the oeis sequence 220754, you can also do that in Sage
-> {{{
+> 
+> ```
 > sage: seq = oeis('A220754')
 > sage: seq
 > A220754: Number of ordered triples (a,b,c) of elements of the symmetric group S_n such that the triple a,b,c generates a transitive group.
@@ -1535,11 +1534,13 @@ maybe for a later ticket ? this one has been waiting for years
 >  109118766834521171299756800,
 >  239996135160204867851157273600,
 >  659114500480471292127627441484800)
-> }}}
+> ```
+
 
 I know. I would prefer not to depend on "optional internet". The current test is good enough.
 
 > The fact that the associated permutation group is transitive is equivalent to the "connectedness". You should either use one or the other.
+
 
 Sorry, but where is the exact problem you talk about ?
 
@@ -1586,7 +1587,7 @@ Vincent, is the current state good enough for you ?
 archive/issue_comments_096244.json:
 ```json
 {
-    "body": "The support for any symmetric group was completely broken! Moreover, I double checked and many methods were broken.\n\nYou can start the review from the current code. And please keep the code in `perm_X` to work only with list on `0, 1, ..., d-1`.\n----\nNew commits:",
+    "body": "The support for any symmetric group was completely broken! Moreover, I double checked and many methods were broken.\n\nYou can start the review from the current code. And please keep the code in `perm_X` to work only with list on `0, 1, ..., d-1`.\n\n---\nNew commits:",
     "created_at": "2016-04-11T01:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
@@ -1598,7 +1599,8 @@ archive/issue_comments_096244.json:
 The support for any symmetric group was completely broken! Moreover, I double checked and many methods were broken.
 
 You can start the review from the current code. And please keep the code in `perm_X` to work only with list on `0, 1, ..., d-1`.
-----
+
+---
 New commits:
 
 

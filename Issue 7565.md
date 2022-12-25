@@ -3,7 +3,7 @@
 archive/issues_007565.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4a36a68dcd5a9190):\n\n```\n> My two-cent, but you probably know already: Say as root, you build\n> Sage and then move the resulting binary to a different directory.\n> After moving the whole Sage (binary) directory, you need to start up\n> Sage as root at least once before you use Sage as another user.\n\nI guess David's point was that this information should be stated more\nclearly in the Readme text.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7565\n\n",
+    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/4a36a68dcd5a9190):\n\n```\n> My two-cent, but you probably know already: Say as root, you build\n> Sage and then move the resulting binary to a different directory.\n> After moving the whole Sage (binary) directory, you need to start up\n> Sage as root at least once before you use Sage as another user.\n\nI guess David's point was that this information should be stated more\nclearly in the Readme text.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7565\n\n",
     "created_at": "2009-11-30T23:04:10Z",
     "labels": [
         "component: documentation",
@@ -29,7 +29,6 @@ From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread
 I guess David's point was that this information should be stated more
 clearly in the Readme text.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7565
 

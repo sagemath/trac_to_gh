@@ -301,7 +301,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_068350.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> and maybe do some benchmarking.\n\nIf you find useful ways to do benchmarks, please let me know. I might re-use those benchmarks to optimize `sig_on()` and `sig_off()`.",
+    "body": "Replying to [comment:7 robertwb]:\n> and maybe do some benchmarking.\n\n\nIf you find useful ways to do benchmarks, please let me know. I might re-use those benchmarks to optimize `sig_on()` and `sig_off()`.",
     "created_at": "2011-05-17T20:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -312,6 +312,7 @@ archive/issue_comments_068350.json:
 
 Replying to [comment:7 robertwb]:
 > and maybe do some benchmarking.
+
 
 If you find useful ways to do benchmarks, please let me know. I might re-use those benchmarks to optimize `sig_on()` and `sig_off()`.
 
@@ -340,7 +341,7 @@ The patch adds one unrelated doctest.  This doctest has been moved to #11344.
 archive/issue_comments_068352.json:
 ```json
 {
-    "body": "\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: bitrot\n| Sage Version 4.7, Release Date: 2011-05-23                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: L = [RR(k) for k in range(1000)]\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 569 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 509 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 513 \u00b5s per loop\n\nsage: timeit(\"[a.sqrt() for a in L]\", number=10000)\n10000 loops, best of 3: 519 \u00b5s per loop\n\nsage: \nExiting Sage (CPU time 0m19.94s, Wall time 1m9.75s).\nrobertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ hg qpush\napplying 7879-RR-signal.patch\nnow at: 7879-RR-signal.patch\nrobertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ ../../sage -br\n[...]\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: bitrot\n| Sage Version 4.7, Release Date: 2011-05-23                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: L = [RR(k) for k in range(1000)]\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 498 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 498 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 496 \u00b5s per loop\n\nsage: timeit(\"[a.sqrt() for a in L]\", number=10000)\n10000 loops, best of 3: 499 \u00b5s per loop\n```\n\n\nLooks like about a 5% win (much smaller than I remember it being before).",
+    "body": "```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: bitrot\n| Sage Version 4.7, Release Date: 2011-05-23                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: L = [RR(k) for k in range(1000)]\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 569 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 509 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 513 \u00b5s per loop\n\nsage: timeit(\"[a.sqrt() for a in L]\", number=10000)\n10000 loops, best of 3: 519 \u00b5s per loop\n\nsage: \nExiting Sage (CPU time 0m19.94s, Wall time 1m9.75s).\nrobertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ hg qpush\napplying 7879-RR-signal.patch\nnow at: 7879-RR-signal.patch\nrobertwb@sage:/scratch/robertwb/sage-4.7/devel/sage-bitrot$ ../../sage -br\n[...]\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: bitrot\n| Sage Version 4.7, Release Date: 2011-05-23                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: L = [RR(k) for k in range(1000)]\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 498 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 498 \u00b5s per loop\n\nsage: %timeit [a.sqrt() for a in L]\n 625 loops, best of 3: 496 \u00b5s per loop\n\nsage: timeit(\"[a.sqrt() for a in L]\", number=10000)\n10000 loops, best of 3: 499 \u00b5s per loop\n```\n\nLooks like about a 5% win (much smaller than I remember it being before).",
     "created_at": "2011-05-31T08:01:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -348,7 +349,6 @@ archive/issue_comments_068352.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
 ----------------------------------------------------------------------
@@ -397,7 +397,6 @@ sage: timeit("[a.sqrt() for a in L]", number=10000)
 10000 loops, best of 3: 499 µs per loop
 ```
 
-
 Looks like about a 5% win (much smaller than I remember it being before).
 
 
@@ -445,7 +444,7 @@ Rebased on 4.7
 archive/issue_comments_068355.json:
 ```json
 {
-    "body": "patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.\nThe following test failed:\n\n\n```\neno% ./sage -t  -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\nsage -t -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 670:\n    sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        I = QQ[Integer(3)**(Integer(1)/Integer(3))].factor(Integer(5))[Integer(1)][Integer(0)]; I###line 670:\n    sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\n      File \"ring.pyx\", line 167, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2007)\n      File \"expression.pyx\", line 8287, in sage.symbolic.expression.Expression.minpoly (sage/symbolic/expression.cpp:31950)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/lib/python/site-packages/sage/calculus/calculus.py\", line 925, in minpoly\n        if g(ex).simplify_trig().simplify_radical() == 0:\n      File \"expression.pyx\", line 6546, in sage.symbolic.expression.Expression.simplify_trig (sage/symbolic/expression.cpp:24657)\n      File \"expression.pyx\", line 460, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3674)\n      File \"sage_object.pyx\", line 429, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3451)\n      File \"lazy_import.pyx\", line 167, in sage.misc.lazy_import.LazyImport.__getattr__ (sage/misc/lazy_import.c:1353)\n      File \"lazy_import.pyx\", line 110, in sage.misc.lazy_import.LazyImport._get_object (sage/misc/lazy_import.c:1023)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 152, in <module>\n        ecl_eval(\"#$%s$\"%l)\n      File \"ecl.pyx\", line 1224, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6301)\n      File \"ecl.pyx\", line 1239, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6252)\n      File \"ecl.pyx\", line 252, in sage.libs.ecl.ecl_safe_eval (sage/libs/ecl.c:2544)\n    RuntimeError: ECL says: THROW: The catch MACSYMA-QUIT is undefined.\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 672:\n    sage: k = I.residue_field(); k\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        k = I.residue_field(); k###line 672:\n    sage: k = I.residue_field(); k\n      File \"element.pyx\", line 328, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2792)\n      File \"parent.pyx\", line 277, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2940)\n      File \"parent.pyx\", line 175, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2709)\n    AttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'residue_field'\n**********************************************************************\n```\n\n\netc.",
+    "body": "patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.\nThe following test failed:\n\n```\neno% ./sage -t  -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\nsage -t -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 670:\n    sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        I = QQ[Integer(3)**(Integer(1)/Integer(3))].factor(Integer(5))[Integer(1)][Integer(0)]; I###line 670:\n    sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\n      File \"ring.pyx\", line 167, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2007)\n      File \"expression.pyx\", line 8287, in sage.symbolic.expression.Expression.minpoly (sage/symbolic/expression.cpp:31950)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/lib/python/site-packages/sage/calculus/calculus.py\", line 925, in minpoly\n        if g(ex).simplify_trig().simplify_radical() == 0:\n      File \"expression.pyx\", line 6546, in sage.symbolic.expression.Expression.simplify_trig (sage/symbolic/expression.cpp:24657)\n      File \"expression.pyx\", line 460, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3674)\n      File \"sage_object.pyx\", line 429, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3451)\n      File \"lazy_import.pyx\", line 167, in sage.misc.lazy_import.LazyImport.__getattr__ (sage/misc/lazy_import.c:1353)\n      File \"lazy_import.pyx\", line 110, in sage.misc.lazy_import.LazyImport._get_object (sage/misc/lazy_import.c:1023)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/lib/python/site-packages/sage/interfaces/maxima_lib.py\", line 152, in <module>\n        ecl_eval(\"#$%s$\"%l)\n      File \"ecl.pyx\", line 1224, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6301)\n      File \"ecl.pyx\", line 1239, in sage.libs.ecl.ecl_eval (sage/libs/ecl.c:6252)\n      File \"ecl.pyx\", line 252, in sage.libs.ecl.ecl_safe_eval (sage/libs/ecl.c:2544)\n    RuntimeError: ECL says: THROW: The catch MACSYMA-QUIT is undefined.\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 672:\n    sage: k = I.residue_field(); k\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        k = I.residue_field(); k###line 672:\n    sage: k = I.residue_field(); k\n      File \"element.pyx\", line 328, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2792)\n      File \"parent.pyx\", line 277, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2940)\n      File \"parent.pyx\", line 175, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2709)\n    AttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'residue_field'\n**********************************************************************\n```\n\netc.",
     "created_at": "2011-06-01T15:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -456,7 +455,6 @@ archive/issue_comments_068355.json:
 
 patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.
 The following test failed:
-
 
 ```
 eno% ./sage -t  -long -force_lib "devel/sage/sage/rings/residue_field.pyx"
@@ -511,7 +509,6 @@ Exception raised:
 **********************************************************************
 ```
 
-
 etc.
 
 
@@ -539,7 +536,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068357.json:
 ```json
 {
-    "body": "Replying to [comment:12 mariah]:\n> patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.\n> The following test failed:\n> \n> {{{\n> eno% ./sage -t  -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n> sage -t -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n> **********************************************************************\n> File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 670:\n>     sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\n> Exception raised:\n\nThese errors don't occur for me with sage-4.7.2.alpha2.",
+    "body": "Replying to [comment:12 mariah]:\n> patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.\n> The following test failed:\n> \n> \n> ```\n> eno% ./sage -t  -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n> sage -t -long -force_lib \"devel/sage/sage/rings/residue_field.pyx\"\n> **********************************************************************\n> File \"/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx\", line 670:\n>     sage: I = QQ[3^(1/3)].factor(5)[1][0]; I\n> Exception raised:\n\n\nThese errors don't occur for me with sage-4.7.2.alpha2.",
     "created_at": "2011-08-23T07:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
@@ -552,13 +549,15 @@ Replying to [comment:12 mariah]:
 > patch [attachment:7879-RR-signal.2.patch] applied to sage-4.7.1.alpha1.  Then did 'sage -b' followed by 'make testlong'.
 > The following test failed:
 > 
-> {{{
+> 
+> ```
 > eno% ./sage -t  -long -force_lib "devel/sage/sage/rings/residue_field.pyx"
 > sage -t -long -force_lib "devel/sage/sage/rings/residue_field.pyx"
 > **********************************************************************
 > File "/home/mariah/sage/sage-4.7.1.alpha1-x86_64-Linux-core2-fc-review-7879/devel/sage/sage/rings/residue_field.pyx", line 670:
 >     sage: I = QQ[3^(1/3)].factor(5)[1][0]; I
 > Exception raised:
+
 
 These errors don't occur for me with sage-4.7.2.alpha2.
 

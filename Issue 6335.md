@@ -3,7 +3,7 @@
 archive/issues_006335.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/kash.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/kash.py\", line 68:\n    sage: a = kash('(9 - 7) * (5 + 6)'); a              # optional -- kash\nExpected nothing\nGot:\n    22\n**********************************************************************\n1 items had failures:\n   1 of 103 in __main__.example_0\n***Test Failed*** 1 failures.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6335\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/kash.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/kash.py\", line 68:\n    sage: a = kash('(9 - 7) * (5 + 6)'); a              # optional -- kash\nExpected nothing\nGot:\n    22\n**********************************************************************\n1 items had failures:\n   1 of 103 in __main__.example_0\n***Test Failed*** 1 failures.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6335\n\n",
     "created_at": "2009-06-16T15:18:16Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006335.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/sage/interfaces/kash.py
@@ -34,7 +33,6 @@ Got:
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6335
 
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6335
 archive/issue_comments_050470.json:
 ```json
 {
-    "body": "On my Sage 5.7.beta4, all tests pass. \n\n\n```\nsage -t  \"devel/sage-main/sage/interfaces/kash.py\"          \n\t [17.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.4 seconds\n```\n\n\nSo, I am marking this invalid.",
+    "body": "On my Sage 5.7.beta4, all tests pass. \n\n```\nsage -t  \"devel/sage-main/sage/interfaces/kash.py\"          \n\t [17.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 17.4 seconds\n```\n\nSo, I am marking this invalid.",
     "created_at": "2013-02-18T21:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6335",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ archive/issue_comments_050470.json:
 
 On my Sage 5.7.beta4, all tests pass. 
 
-
 ```
 sage -t  "devel/sage-main/sage/interfaces/kash.py"          
 	 [17.2 s]
@@ -66,7 +63,6 @@ sage -t  "devel/sage-main/sage/interfaces/kash.py"
 All tests passed!
 Total time for all tests: 17.4 seconds
 ```
-
 
 So, I am marking this invalid.
 

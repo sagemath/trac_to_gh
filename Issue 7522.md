@@ -3,7 +3,7 @@
 archive/issues_007522.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\n\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nIt should be easy to get the orthogonal complement of a subspace W of a vector space V.   From Jason Grout: \n\n```\nsage: def orthogonal_complement(space):\n....:     if space.dimension()==0:\n....:         return space.ambient_vector_space()\n....:     else:\n....:         return space.basis_matrix().right_kernel()\n```\nOne would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7522\n\n",
     "created_at": "2009-11-24T01:27:57Z",
     "labels": [
         "component: linear algebra"
@@ -28,7 +28,6 @@ sage: def orthogonal_complement(space):
 ....:     else:
 ....:         return space.basis_matrix().right_kernel()
 ```
-
 One would also want to add an option to specify the larger space in which you were dealing, with it defaulting to the ambient vector space.  Probably 'perp()' should be an alias.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7522
@@ -96,7 +95,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063622.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> This adds the basic orthogonal complement command.  Specifying a larger space can go on another ticket, if someone wants it.\nThanks for doing this - I never got to it, since I haven't used this lately.   Agreed on the enhancement.\n\nThe documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?",
+    "body": "Replying to [comment:1 jason]:\n> This adds the basic orthogonal complement command.  Specifying a larger space can go on another ticket, if someone wants it.\n\nThanks for doing this - I never got to it, since I haven't used this lately.   Agreed on the enhancement.\n\nThe documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?",
     "created_at": "2010-09-23T00:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -107,6 +106,7 @@ archive/issue_comments_063622.json:
 
 Replying to [comment:1 jason]:
 > This adds the basic orthogonal complement command.  Specifying a larger space can go on another ticket, if someone wants it.
+
 Thanks for doing this - I never got to it, since I haven't used this lately.   Agreed on the enhancement.
 
 The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?
@@ -136,7 +136,7 @@ apply on top of previous patches
 archive/issue_comments_063624.json:
 ```json
 {
-    "body": "Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by @jasongrout created at 2010-09-23 23:28:31\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\nReview patch attached.  Better now?",
+    "body": "Attachment [7522-review.patch](tarball://root/attachments/some-uuid/ticket7522/7522-review.patch) by @jasongrout created at 2010-09-23 23:28:31\n\nReplying to [comment:2 kcrisman]:\n\n\n> The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  \n\n\nReview patch attached.  Better now?",
     "created_at": "2010-09-23T23:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -151,6 +151,7 @@ Replying to [comment:2 kcrisman]:
 
 
 > The documentation should make it clear what the ambient space is by default, perhaps by adding an example where things fail?  Or at least commenting that the first example just shows itself as the ambient space.  What would happen if one took a double subspace - what would it consider to be the ambient subspace?  
+
 
 Review patch attached.  Better now?
 
@@ -179,7 +180,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063626.json:
 ```json
 {
-    "body": "I got a chance to look at this over the weekend.  Unsurprisingly, in general it's great.  But...\n\nSince this is in the free module module (!), there should be a better error for \n\n```\nsage: c = FreeModule(Integers(8), 2)\nsage: c.perp()\n---------------------------------------------------------------------------\n<snip>\nNotImplementedError: Don't know how to compute kernels over Ring of integers modulo 8\n```\n\nI also noticed the following behavior, which is probably desirable, but which should then definitely be explicitly mentioned in the documentation for this function, since it does return a different type of object for the perp object:\n\n```\nsage: c = FreeModule(ZZ, 2)\nsage: c\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\nsage: c.perp()\nVector space of degree 2 and dimension 0 over Rational Field\nBasis matrix:\n[]\n```\n",
+    "body": "I got a chance to look at this over the weekend.  Unsurprisingly, in general it's great.  But...\n\nSince this is in the free module module (!), there should be a better error for \n\n```\nsage: c = FreeModule(Integers(8), 2)\nsage: c.perp()\n---------------------------------------------------------------------------\n<snip>\nNotImplementedError: Don't know how to compute kernels over Ring of integers modulo 8\n```\nI also noticed the following behavior, which is probably desirable, but which should then definitely be explicitly mentioned in the documentation for this function, since it does return a different type of object for the perp object:\n\n```\nsage: c = FreeModule(ZZ, 2)\nsage: c\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\nsage: c.perp()\nVector space of degree 2 and dimension 0 over Rational Field\nBasis matrix:\n[]\n```",
     "created_at": "2010-09-27T12:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -199,7 +200,6 @@ sage: c.perp()
 <snip>
 NotImplementedError: Don't know how to compute kernels over Ring of integers modulo 8
 ```
-
 I also noticed the following behavior, which is probably desirable, but which should then definitely be explicitly mentioned in the documentation for this function, since it does return a different type of object for the perp object:
 
 ```
@@ -214,13 +214,12 @@ Basis matrix:
 
 
 
-
 ---
 
 archive/issue_comments_063627.json:
 ```json
 {
-    "body": "By the way, why didn't `TestSuite` catch this?\n\n```\n    sage: M = ZZ^3\n    sage: TestSuite(M).run()\n    sage: W = M.span_of_basis([[1,2,3],[4,5,19]])\n    sage: TestSuite(W).run()\n```\n",
+    "body": "By the way, why didn't `TestSuite` catch this?\n\n```\n    sage: M = ZZ^3\n    sage: TestSuite(M).run()\n    sage: W = M.span_of_basis([[1,2,3],[4,5,19]])\n    sage: TestSuite(W).run()\n```",
     "created_at": "2010-09-27T20:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -237,7 +236,6 @@ By the way, why didn't `TestSuite` catch this?
     sage: W = M.span_of_basis([[1,2,3],[4,5,19]])
     sage: TestSuite(W).run()
 ```
-
 
 
 
@@ -302,7 +300,7 @@ Apply: trac_7522-perp-ts.patch
 archive/issue_comments_063631.json:
 ```json
 {
-    "body": "`perp()` isn't documented in this patch.  Also,\n\n```\nsage: c = FreeModule(Integers(8), 2)\nsage: c.perp()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\nAttributeError: 'FreeModule_ambient_with_category' object has no attribute 'perp'\n<and later>\nAttributeError: 'IntegerModRing_generic_with_category' object has no attribute 'parent'\n```\n\nApparently `Integers(8)` isn't a PID, according to Sage?  This isn't bad, but perhaps we should have a different error message... or maybe this is okay.",
+    "body": "`perp()` isn't documented in this patch.  Also,\n\n```\nsage: c = FreeModule(Integers(8), 2)\nsage: c.perp()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\nAttributeError: 'FreeModule_ambient_with_category' object has no attribute 'perp'\n<and later>\nAttributeError: 'IntegerModRing_generic_with_category' object has no attribute 'parent'\n```\nApparently `Integers(8)` isn't a PID, according to Sage?  This isn't bad, but perhaps we should have a different error message... or maybe this is okay.",
     "created_at": "2013-04-05T00:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -322,7 +320,6 @@ AttributeError: 'FreeModule_ambient_with_category' object has no attribute 'perp
 <and later>
 AttributeError: 'IntegerModRing_generic_with_category' object has no attribute 'parent'
 ```
-
 Apparently `Integers(8)` isn't a PID, according to Sage?  This isn't bad, but perhaps we should have a different error message... or maybe this is okay.
 
 
@@ -391,7 +388,7 @@ I suggest you don't call it orthogonal complement. For instance, on vector space
 archive/issue_comments_063635.json:
 ```json
 {
-    "body": ">  - You only have an orthogonal complement on an inner product space.\n>  - Whenever you have a canonical isomorphism between a vector space and its dual, you can do the \"kernel trick\" that you're doing (note you have to take a transpose somewhere). A basis choice induces such a canonical isomorphism, as does an inner product. For every subspace `W subset V` it gives you a complementary subspace `W'` such that V is a direct product of `W` and `W'`.\n>  - For (free) modules over rings this doesn't really work, because not every submodule is a direct summand.\nAargh!  You had to go remind us of the whole mathematical correctness thing.  You're right, of course.  Not every submodule is projective.\n>  - Of course, if your ring is a domain, you can tensor with the field of fractions, take the complement, and intersect with the module inside to get another submodule. Doing that twice should get you the \"saturation\" of your original module.\n> I suggest you don't call it orthogonal complement. For instance, on vector spaces over finite fields, it's not (but a basis choice still induces an isomorphism to the dual).\nThen what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.  In particular, I think it's definitely appropriate to not allow this for anything but vector spaces.\n\nOne interesting thing is that Sage is already doing something analogous to your suggestion about tensoring in getting the \"basis matrix\", which led to the workaround Travis made.  Then again,\n\n```\nVector space of degree 3 and dimension 2 over Integer Ring\n```\n\nshouldn't even be legal to appear in Sage, in some sense...",
+    "body": ">  - You only have an orthogonal complement on an inner product space.\n>  - Whenever you have a canonical isomorphism between a vector space and its dual, you can do the \"kernel trick\" that you're doing (note you have to take a transpose somewhere). A basis choice induces such a canonical isomorphism, as does an inner product. For every subspace `W subset V` it gives you a complementary subspace `W'` such that V is a direct product of `W` and `W'`.\n>  - For (free) modules over rings this doesn't really work, because not every submodule is a direct summand.\n \nAargh!  You had to go remind us of the whole mathematical correctness thing.  You're right, of course.  Not every submodule is projective.\n>  - Of course, if your ring is a domain, you can tensor with the field of fractions, take the complement, and intersect with the module inside to get another submodule. Doing that twice should get you the \"saturation\" of your original module.\n \n> I suggest you don't call it orthogonal complement. For instance, on vector spaces over finite fields, it's not (but a basis choice still induces an isomorphism to the dual).\nThen what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.  In particular, I think it's definitely appropriate to not allow this for anything but vector spaces.\n\nOne interesting thing is that Sage is already doing something analogous to your suggestion about tensoring in getting the \"basis matrix\", which led to the workaround Travis made.  Then again,\n\n```\nVector space of degree 3 and dimension 2 over Integer Ring\n```\nshouldn't even be legal to appear in Sage, in some sense...",
     "created_at": "2013-04-05T01:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -403,8 +400,10 @@ archive/issue_comments_063635.json:
 >  - You only have an orthogonal complement on an inner product space.
 >  - Whenever you have a canonical isomorphism between a vector space and its dual, you can do the "kernel trick" that you're doing (note you have to take a transpose somewhere). A basis choice induces such a canonical isomorphism, as does an inner product. For every subspace `W subset V` it gives you a complementary subspace `W'` such that V is a direct product of `W` and `W'`.
 >  - For (free) modules over rings this doesn't really work, because not every submodule is a direct summand.
+ 
 Aargh!  You had to go remind us of the whole mathematical correctness thing.  You're right, of course.  Not every submodule is projective.
 >  - Of course, if your ring is a domain, you can tensor with the field of fractions, take the complement, and intersect with the module inside to get another submodule. Doing that twice should get you the "saturation" of your original module.
+ 
 > I suggest you don't call it orthogonal complement. For instance, on vector spaces over finite fields, it's not (but a basis choice still induces an isomorphism to the dual).
 Then what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.  In particular, I think it's definitely appropriate to not allow this for anything but vector spaces.
 
@@ -413,7 +412,6 @@ One interesting thing is that Sage is already doing something analogous to your 
 ```
 Vector space of degree 3 and dimension 2 over Integer Ring
 ```
-
 shouldn't even be legal to appear in Sage, in some sense...
 
 
@@ -423,7 +421,7 @@ shouldn't even be legal to appear in Sage, in some sense...
 archive/issue_comments_063636.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> Then what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.\n\nEven there it's only wrt the standard inner product (i.e., if your basis is orthogonal) that this complement is *orthogonal*.\n\nWouldn't just `complement` work? I think that's a reasonably established term for direct cofactor.\n\nAnd indeed, you should probably only offer this for vector spaces, i.e., when the base ring is a field.",
+    "body": "Replying to [comment:12 kcrisman]:\n> Then what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.\n\n\nEven there it's only wrt the standard inner product (i.e., if your basis is orthogonal) that this complement is *orthogonal*.\n\nWouldn't just `complement` work? I think that's a reasonably established term for direct cofactor.\n\nAnd indeed, you should probably only offer this for vector spaces, i.e., when the base ring is a field.",
     "created_at": "2013-04-05T03:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -434,6 +432,7 @@ archive/issue_comments_063636.json:
 
 Replying to [comment:12 kcrisman]:
 > Then what do you suggest?  Since this is primarily useful for pedagogical purposes, perhaps we can just raise an error outside of QQ, RR, and friends.
+
 
 Even there it's only wrt the standard inner product (i.e., if your basis is orthogonal) that this complement is *orthogonal*.
 
@@ -448,7 +447,7 @@ And indeed, you should probably only offer this for vector spaces, i.e., when th
 archive/issue_comments_063637.json:
 ```json
 {
-    "body": "First, if the ring is not a PID, there are many attributes that are not there anymore (ex. `span()`), so getting the attribute error is consistent with the rest of free modules.\n\nAs for them being inner product spaces, we have this in sage:\n\n```\nsage: F = FreeModule(Integers(8), 3)\nsage: v = F([1, 2, 3])\nsage: v*v\n6\nsage: F.inner_product_matrix()\n[1 0 0]\n[0 1 0]\n[0 0 1]\n```\n\nso I think sage always assumes it has an inner product (although not necessarily a nice inner product).\n\nFor the\n\n```\nVector space of degree 3 and dimension 2 over Integer Ring\n```\n\nthat was a doctest error coming from me thinking I know what the output should be >_<.\n\nAnyways, new version of the patch with the method now called `complement()`, removed `perp()`, and only works for vector spaces.\n\nFor patchbot:\n\nApply: trac_7522-perp-ts.patch",
+    "body": "First, if the ring is not a PID, there are many attributes that are not there anymore (ex. `span()`), so getting the attribute error is consistent with the rest of free modules.\n\nAs for them being inner product spaces, we have this in sage:\n\n```\nsage: F = FreeModule(Integers(8), 3)\nsage: v = F([1, 2, 3])\nsage: v*v\n6\nsage: F.inner_product_matrix()\n[1 0 0]\n[0 1 0]\n[0 0 1]\n```\nso I think sage always assumes it has an inner product (although not necessarily a nice inner product).\n\nFor the\n\n```\nVector space of degree 3 and dimension 2 over Integer Ring\n```\nthat was a doctest error coming from me thinking I know what the output should be >_<.\n\nAnyways, new version of the patch with the method now called `complement()`, removed `perp()`, and only works for vector spaces.\n\nFor patchbot:\n\nApply: trac_7522-perp-ts.patch",
     "created_at": "2013-04-05T16:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -471,7 +470,6 @@ sage: F.inner_product_matrix()
 [0 1 0]
 [0 0 1]
 ```
-
 so I think sage always assumes it has an inner product (although not necessarily a nice inner product).
 
 For the
@@ -479,7 +477,6 @@ For the
 ```
 Vector space of degree 3 and dimension 2 over Integer Ring
 ```
-
 that was a doctest error coming from me thinking I know what the output should be >_<.
 
 Anyways, new version of the patch with the method now called `complement()`, removed `perp()`, and only works for vector spaces.
@@ -645,7 +642,7 @@ Patchbot, apply trac_7522-perp-ts.patch and trac_7522-finite.patch
 archive/issue_comments_063646.json:
 ```json
 {
-    "body": "There's a small typo:\n\n```\na a vector\n```\n\nonce that is fixed, I'm fine with this being set to positive reivew (but I'm probably one of the less opinionated people on this). Feel free to do this on my behalf because I'm going to sleep now to be ready for more Sage Days 49. Hope the 48 is going well.\n\nTravis",
+    "body": "There's a small typo:\n\n```\na a vector\n```\nonce that is fixed, I'm fine with this being set to positive reivew (but I'm probably one of the less opinionated people on this). Feel free to do this on my behalf because I'm going to sleep now to be ready for more Sage Days 49. Hope the 48 is going well.\n\nTravis",
     "created_at": "2013-06-18T23:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7522",
     "type": "issue_comment",
@@ -659,7 +656,6 @@ There's a small typo:
 ```
 a a vector
 ```
-
 once that is fixed, I'm fine with this being set to positive reivew (but I'm probably one of the less opinionated people on this). Feel free to do this on my behalf because I'm going to sleep now to be ready for more Sage Days 49. Hope the 48 is going well.
 
 Travis

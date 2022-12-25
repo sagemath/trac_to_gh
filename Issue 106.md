@@ -49,7 +49,7 @@ archive/issue_events_000213.json:
 archive/issue_comments_000501.json:
 ```json
 {
-    "body": "This is still an issue with Sage 2.8.2-rc3:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2.rc3, Release Date: 2007-08-21                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple.\nBuilding Maple command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/mabshoff/.sage//maple_commandlist_cache.sobj.\n\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     maple.\n           ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: maple.\nBuilding Maple command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/mabshoff/.sage//maple_commandlist_cache.sobj.\n\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     maple.\n           ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage:\n```\n\n\nAn exception is raised you try execute a maple command without maple being installed:\n\n```\nsage: maple(1+1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/data/extcode/maple/user/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    556                 return cls(self, str(x))\n    557             except TypeError, msg2:\n--> 558                 raise TypeError, msg\n    559\n    560\n\n<type 'exceptions.TypeError'>: Unable to start maple because the command 'maple -t' failed.\n```\n\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
+    "body": "This is still an issue with Sage 2.8.2-rc3:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2.rc3, Release Date: 2007-08-21                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple.\nBuilding Maple command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/mabshoff/.sage//maple_commandlist_cache.sobj.\n\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     maple.\n           ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage: maple.\nBuilding Maple command completion list (this takes\na few seconds only the first time you do it).\nTo force rebuild later, delete /home/mabshoff/.sage//maple_commandlist_cache.sobj.\n\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     maple.\n           ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n\nsage:\n```\n\nAn exception is raised you try execute a maple command without maple being installed:\n\n```\nsage: maple(1+1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/data/extcode/maple/user/<ipython console> in <module>()\n\n/tmp/Work2/sage-2.8.1/sage-2.8.2.rc3/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    556                 return cls(self, str(x))\n    557             except TypeError, msg2:\n--> 558                 raise TypeError, msg\n    559\n    560\n\n<type 'exceptions.TypeError'>: Unable to start maple because the command 'maple -t' failed.\n```\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
     "created_at": "2007-08-23T12:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/106",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ To force rebuild later, delete /home/mabshoff/.sage//maple_commandlist_cache.sob
 sage:
 ```
 
-
 An exception is raised you try execute a maple command without maple being installed:
 
 ```
@@ -109,7 +108,6 @@ sage: maple(1+1)
 
 <type 'exceptions.TypeError'>: Unable to start maple because the command 'maple -t' failed.
 ```
-
 
 Cheers,
 

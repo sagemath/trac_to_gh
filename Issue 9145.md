@@ -93,7 +93,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_085260.json:
 ```json
 {
-    "body": "Without the patch, when building the PDF version of the reference manual for Sage 4.4.3, I got:\n\n```\n! Undefined control sequence.\nl.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant \n                                                   i \\leqslant n}$\n```\n\nNote that the HTML version built OK. With the patch, the PDF version built successfully on these machines:\n\n* sage.math, Ubuntu 8.04.4 LTS, with latex and pdflatex\n* bsd.math, Mac OS X 10.6.3, with latex and pdflatex\n\nBut failed on these machines:\n\n* eno.skynet, Fedora 12, no latex or pdflatex\n* rh.math, Ubuntu 10.04 LTS, no latex or pdflatex\n* rosemary.math, Red Hat Enterprise Linux Server 5.5, with latex and pdflatex, but I got the following error when building the PDF version:\n {{{\n! LaTeX Error: File `utf8x.def' not found.\n }}}\n This also happens without the patch. The issue is more likely due to the LaTeX installation on rosemary.math.\n\nAs for `doc/common/macros.tex`, that file was during the days when Sage's documentation followed how Python did it. Since switching over to Sphinx, we don't need that file any more.",
+    "body": "Without the patch, when building the PDF version of the reference manual for Sage 4.4.3, I got:\n\n```\n! Undefined control sequence.\nl.217693 ...als}(\\mathrm{pos}_{i+1})]_{1 \\leqslant \n                                                   i \\leqslant n}$\n```\nNote that the HTML version built OK. With the patch, the PDF version built successfully on these machines:\n\n* sage.math, Ubuntu 8.04.4 LTS, with latex and pdflatex\n* bsd.math, Mac OS X 10.6.3, with latex and pdflatex\n\nBut failed on these machines:\n\n* eno.skynet, Fedora 12, no latex or pdflatex\n* rh.math, Ubuntu 10.04 LTS, no latex or pdflatex\n* rosemary.math, Red Hat Enterprise Linux Server 5.5, with latex and pdflatex, but I got the following error when building the PDF version:\n {{{\n! LaTeX Error: File `utf8x.def' not found.\n }}}\n This also happens without the patch. The issue is more likely due to the LaTeX installation on rosemary.math.\n\nAs for `doc/common/macros.tex`, that file was during the days when Sage's documentation followed how Python did it. Since switching over to Sphinx, we don't need that file any more.",
     "created_at": "2010-06-05T21:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9145",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ Without the patch, when building the PDF version of the reference manual for Sag
 l.217693 ...als}(\mathrm{pos}_{i+1})]_{1 \leqslant 
                                                    i \leqslant n}$
 ```
-
 Note that the HTML version built OK. With the patch, the PDF version built successfully on these machines:
 
 * sage.math, Ubuntu 8.04.4 LTS, with latex and pdflatex

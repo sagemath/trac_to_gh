@@ -3,7 +3,7 @@
 archive/issues_006549.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSome doctests in `schemes/plane_curves/affine_curve.py` are marked \"not tested\" with the comment that they crash on OS X intel.  This appears to not be the case any more:\n\n\n```\naghitza@192-168-1-2:~/opt/sage-4.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x, y = (GF(17)['x,y']).gens()\nsage: C = Curve(x^2+y^5+x*y-19)\nsage: v = C.rational_points(algorithm='bn')\nsage: w = C.rational_points(algorithm='enum')\nsage: len(v)\n20\nsage: v == w\nTrue\nsage: \nExiting SAGE (CPU time 0m0.23s, Wall time 1m59.83s).\nExiting spawned Singular process.\naghitza@192-168-1-2:~/opt/sage-4.1$ uname -a\nDarwin 192-168-1-2.tpgi.com.au 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6549\n\n",
+    "body": "Assignee: tbd\n\nSome doctests in `schemes/plane_curves/affine_curve.py` are marked \"not tested\" with the comment that they crash on OS X intel.  This appears to not be the case any more:\n\n```\naghitza@192-168-1-2:~/opt/sage-4.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x, y = (GF(17)['x,y']).gens()\nsage: C = Curve(x^2+y^5+x*y-19)\nsage: v = C.rational_points(algorithm='bn')\nsage: w = C.rational_points(algorithm='enum')\nsage: len(v)\n20\nsage: v == w\nTrue\nsage: \nExiting SAGE (CPU time 0m0.23s, Wall time 1m59.83s).\nExiting spawned Singular process.\naghitza@192-168-1-2:~/opt/sage-4.1$ uname -a\nDarwin 192-168-1-2.tpgi.com.au 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6549\n\n",
     "created_at": "2009-07-17T14:12:32Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_006549.json:
 Assignee: tbd
 
 Some doctests in `schemes/plane_curves/affine_curve.py` are marked "not tested" with the comment that they crash on OS X intel.  This appears to not be the case any more:
-
 
 ```
 aghitza@192-168-1-2:~/opt/sage-4.1$ ./sage
@@ -39,7 +38,6 @@ Exiting spawned Singular process.
 aghitza@192-168-1-2:~/opt/sage-4.1$ uname -a
 Darwin 192-168-1-2.tpgi.com.au 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6549
 

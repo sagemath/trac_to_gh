@@ -71,7 +71,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071660.json:
 ```json
 {
-    "body": "I think the idea is good, but this needs work; I'm getting some doctest failures with this patch:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/structure/element.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 6 doctests failed\n\tsage -t -long devel/sage/sage/structure/element_wrapper.py # Segfault\n\tsage -t -long devel/sage/sage/misc/sageinspect.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/structure/dynamic_class.py # 1 doctests failed\n```\n\nI'll try to work on them, and anyone else who is interested can do the same.",
+    "body": "I think the idea is good, but this needs work; I'm getting some doctest failures with this patch:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/structure/element.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 6 doctests failed\n\tsage -t -long devel/sage/sage/structure/element_wrapper.py # Segfault\n\tsage -t -long devel/sage/sage/misc/sageinspect.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/structure/dynamic_class.py # 1 doctests failed\n```\nI'll try to work on them, and anyone else who is interested can do the same.",
     "created_at": "2010-02-03T03:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ The following tests failed:
 	sage -t -long devel/sage/sage/misc/sageinspect.py # 4 doctests failed
 	sage -t -long devel/sage/sage/structure/dynamic_class.py # 1 doctests failed
 ```
-
 I'll try to work on them, and anyone else who is interested can do the same.
 
 
@@ -156,7 +155,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071664.json:
 ```json
 {
-    "body": "This looks good.  I noticed an existing problem with Unicode docstrings.  With #8051 and with or without #8167,\n\n```python\nsage: sagenb.notebook.worksheet.Worksheet.name?\nsage: sagenb.misc.misc.unicode_str?\n```\n\nhave `'<no docstring>'`.  V2 should fix this.",
+    "body": "This looks good.  I noticed an existing problem with Unicode docstrings.  With #8051 and with or without #8167,\n\n```python\nsage: sagenb.notebook.worksheet.Worksheet.name?\nsage: sagenb.misc.misc.unicode_str?\n```\nhave `'<no docstring>'`.  V2 should fix this.",
     "created_at": "2010-02-04T06:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -171,7 +170,6 @@ This looks good.  I noticed an existing problem with Unicode docstrings.  With #
 sage: sagenb.notebook.worksheet.Worksheet.name?
 sage: sagenb.misc.misc.unicode_str?
 ```
-
 have `'<no docstring>'`.  V2 should fix this.
 
 
@@ -219,7 +217,7 @@ Update `sagenb.misc.sageinspect` doctests.  **sagenb** repo.
 archive/issue_comments_071667.json:
 ```json
 {
-    "body": "Attachment [trac_8161-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect.patch) by @qed777 created at 2010-02-04 06:59:21\n\nV2 replaces `return str(r)` with\n\n```python\n    from sagenb.misc.misc import encoded_str\n    return encoded_str(r)\n```\n\nin `sage.misc.sageinspect._sage_getdoc_unformatted`.\n\nThe sagenb patch depends on #8051 + #8167 + #8102 + #8160.",
+    "body": "Attachment [trac_8161-sagenb_sageinspect.patch](tarball://root/attachments/some-uuid/ticket8161/trac_8161-sagenb_sageinspect.patch) by @qed777 created at 2010-02-04 06:59:21\n\nV2 replaces `return str(r)` with\n\n```python\n    from sagenb.misc.misc import encoded_str\n    return encoded_str(r)\n```\nin `sage.misc.sageinspect._sage_getdoc_unformatted`.\n\nThe sagenb patch depends on #8051 + #8167 + #8102 + #8160.",
     "created_at": "2010-02-04T06:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8161",
     "type": "issue_comment",
@@ -236,7 +234,6 @@ V2 replaces `return str(r)` with
     from sagenb.misc.misc import encoded_str
     return encoded_str(r)
 ```
-
 in `sage.misc.sageinspect._sage_getdoc_unformatted`.
 
 The sagenb patch depends on #8051 + #8167 + #8102 + #8160.

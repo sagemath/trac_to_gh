@@ -158,7 +158,7 @@ should be E.integral_short_weierstrass_model..
 archive/issue_comments_027646.json:
 ```json
 {
-    "body": "Replying to [comment:3 cremona]:\n> Review by Chris Wuthrich:\n> \n> So, I had a closer look at your division polynomials.\n\nThanks!\n\n> \n> I don't get any errors with 3.1.1. (without the changes in 3927).\n> I will make some small changes, like the spelling of my name :), and\n> some bigger ones, depending on your views on these :\n\nThe only appearance of your name I found has it spelled \"Wuthrich\" (and not by me).  Is it an umlaut you want?\n\nI have made some changes based on your comments, and there is a second patch.\n\n> \n>     * Personally I would have chosen one name, say division_polynomial,\n> and then an option in it to get the full_ version or the pseudo\n> version. There are already very many (218) function on the elliptic\n> curve class and it would be less confusing for the average user. That\n> is a matter of taste, I guess.\n\nI do agree, so I have refactored the code accordingly.  The only function the user needs is `division_polynomial()`.    Using the value of a flag one can access all the existing functionality.  I have commented out code which is now redundant:  the function `full_division_polynomial()`, originally written by William Stein and rewritten by me, is now accessible by calling division_polynomial with parameter two_torsion_multiplicity=2.  The alternative old `torsion_polynomial()` code by David Kohel has been commented out since it duplicates what is there.  The old function `pseudo_torsion_polynomial()` by David Harvey is now the basis of everything, but is renamed `division_polynomial_0()`.\n\n> \n>     * multiply_x_* should maybe be a _multiply_x_* as I don't think\n> someone will ever use that directly and it will certainly be confusing\n> for the newbie. Where was this function before ? Has it something to\n> do with the _multiply_point in padics.py ?\n\nThese functions were implemented by David Harvey along with `pseudo_torsion_polynomial()`.  I left the names as they were since we need to access them from ell_point.py which would be awkward if they had leading underscores.  (But I am open to other suggestions for the names of these).\n\n>  There is another implementation of the division_polynomials that\n> could be rewritten. But there the curve has coefficients in a ring and\n> one computes integrally. So that does not make sense in ell_generic.\n\nI'm not sure where you are referring to here.\n\n> \n>     * By the way and completely unrelated, I saw the example\n>   E = EllipticCurve(GF(3),[1,2])\n>   E.short_weierstrass_model()\n> which gives \"no short model for Elliptic Curve defined by y^2  = x^3 +\n> x + 2 over Finite Field of size 3\". Do you agree that we should not\n> raise an error when the model is already in short form ?\n> \n\nFair enough, but that belongs in another ticket.\n\n>     * Also, completely unrelated again. E.integral_weierstrass_model\n> should be E.integral_short_weierstrass_model..\n> \n\nDitto.",
+    "body": "Replying to [comment:3 cremona]:\n> Review by Chris Wuthrich:\n> \n> So, I had a closer look at your division polynomials.\n\n\nThanks!\n\n> \n> I don't get any errors with 3.1.1. (without the changes in 3927).\n> I will make some small changes, like the spelling of my name :), and\n> some bigger ones, depending on your views on these :\n\n\nThe only appearance of your name I found has it spelled \"Wuthrich\" (and not by me).  Is it an umlaut you want?\n\nI have made some changes based on your comments, and there is a second patch.\n\n> \n> * Personally I would have chosen one name, say division_polynomial,\n> and then an option in it to get the full_ version or the pseudo\n> version. There are already very many (218) function on the elliptic\n> curve class and it would be less confusing for the average user. That\n> is a matter of taste, I guess.\n\n\nI do agree, so I have refactored the code accordingly.  The only function the user needs is `division_polynomial()`.    Using the value of a flag one can access all the existing functionality.  I have commented out code which is now redundant:  the function `full_division_polynomial()`, originally written by William Stein and rewritten by me, is now accessible by calling division_polynomial with parameter two_torsion_multiplicity=2.  The alternative old `torsion_polynomial()` code by David Kohel has been commented out since it duplicates what is there.  The old function `pseudo_torsion_polynomial()` by David Harvey is now the basis of everything, but is renamed `division_polynomial_0()`.\n\n> \n> * multiply_x_* should maybe be a _multiply_x_* as I don't think\n> someone will ever use that directly and it will certainly be confusing\n> for the newbie. Where was this function before ? Has it something to\n> do with the _multiply_point in padics.py ?\n\n\nThese functions were implemented by David Harvey along with `pseudo_torsion_polynomial()`.  I left the names as they were since we need to access them from ell_point.py which would be awkward if they had leading underscores.  (But I am open to other suggestions for the names of these).\n\n>  There is another implementation of the division_polynomials that\n\n> could be rewritten. But there the curve has coefficients in a ring and\n> one computes integrally. So that does not make sense in ell_generic.\n\n\nI'm not sure where you are referring to here.\n\n> \n> * By the way and completely unrelated, I saw the example\n>   E = EllipticCurve(GF(3),[1,2])\n>   E.short_weierstrass_model()\n> which gives \"no short model for Elliptic Curve defined by y^2  = x^3 +\n> x + 2 over Finite Field of size 3\". Do you agree that we should not\n> raise an error when the model is already in short form ?\n> \n\n\nFair enough, but that belongs in another ticket.\n\n>     * Also, completely unrelated again. E.integral_weierstrass_model\n \n> should be E.integral_short_weierstrass_model..\n> \n\n\nDitto.",
     "created_at": "2008-08-26T15:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_comment",
@@ -172,6 +172,7 @@ Replying to [comment:3 cremona]:
 > 
 > So, I had a closer look at your division polynomials.
 
+
 Thanks!
 
 > 
@@ -179,35 +180,40 @@ Thanks!
 > I will make some small changes, like the spelling of my name :), and
 > some bigger ones, depending on your views on these :
 
+
 The only appearance of your name I found has it spelled "Wuthrich" (and not by me).  Is it an umlaut you want?
 
 I have made some changes based on your comments, and there is a second patch.
 
 > 
->     * Personally I would have chosen one name, say division_polynomial,
+> * Personally I would have chosen one name, say division_polynomial,
 > and then an option in it to get the full_ version or the pseudo
 > version. There are already very many (218) function on the elliptic
 > curve class and it would be less confusing for the average user. That
 > is a matter of taste, I guess.
 
+
 I do agree, so I have refactored the code accordingly.  The only function the user needs is `division_polynomial()`.    Using the value of a flag one can access all the existing functionality.  I have commented out code which is now redundant:  the function `full_division_polynomial()`, originally written by William Stein and rewritten by me, is now accessible by calling division_polynomial with parameter two_torsion_multiplicity=2.  The alternative old `torsion_polynomial()` code by David Kohel has been commented out since it duplicates what is there.  The old function `pseudo_torsion_polynomial()` by David Harvey is now the basis of everything, but is renamed `division_polynomial_0()`.
 
 > 
->     * multiply_x_* should maybe be a _multiply_x_* as I don't think
+> * multiply_x_* should maybe be a _multiply_x_* as I don't think
 > someone will ever use that directly and it will certainly be confusing
 > for the newbie. Where was this function before ? Has it something to
 > do with the _multiply_point in padics.py ?
 
+
 These functions were implemented by David Harvey along with `pseudo_torsion_polynomial()`.  I left the names as they were since we need to access them from ell_point.py which would be awkward if they had leading underscores.  (But I am open to other suggestions for the names of these).
 
 >  There is another implementation of the division_polynomials that
+
 > could be rewritten. But there the curve has coefficients in a ring and
 > one computes integrally. So that does not make sense in ell_generic.
+
 
 I'm not sure where you are referring to here.
 
 > 
->     * By the way and completely unrelated, I saw the example
+> * By the way and completely unrelated, I saw the example
 >   E = EllipticCurve(GF(3),[1,2])
 >   E.short_weierstrass_model()
 > which gives "no short model for Elliptic Curve defined by y^2  = x^3 +
@@ -215,11 +221,14 @@ I'm not sure where you are referring to here.
 > raise an error when the model is already in short form ?
 > 
 
+
 Fair enough, but that belongs in another ticket.
 
 >     * Also, completely unrelated again. E.integral_weierstrass_model
+ 
 > should be E.integral_short_weierstrass_model..
 > 
+
 
 Ditto.
 
@@ -274,7 +283,7 @@ POSITIVE REVIEW (both with only the first two or will all three patches).
 archive/issue_comments_027649.json:
 ```json
 {
-    "body": "> The only appearance of your name I found has it spelled \"Wuthrich\" (and not by me). Is it an umlaut you want?\n\nNo there was a Christopher before. :)\n\n> I do agree, so I have refactored the code accordingly. [..] but is renamed division_polynomial_0().\n\nI agree with you and the new version.\n\n\n>>   There is another implementation of the division_polynomials that could be rewritten. \n>> But there the curve has coefficients in a ring and one computes integrally. So that does\n>>  not make sense in ell_generic.\n>\n> I'm not sure where you are referring to here.\n\nThe function _multiply_point on line 303 in padics.py is just another version of an implementation of the division polynomials. In fact this builds the polynomials that you called multiply_x_numerator and denominator, but as homogeneous polynomials. To clear up denominators so that integers can be plugged in to get integers. The p-adic height computation needs the computation of the square root of numerator of \nx(m*P) for a large m. Using this function is much faster than computing m*P. \n\nBut I think it is better to leave that as it is by now.\n\nChris.",
+    "body": "> The only appearance of your name I found has it spelled \"Wuthrich\" (and not by me). Is it an umlaut you want?\n\n\nNo there was a Christopher before. :)\n\n> I do agree, so I have refactored the code accordingly. [..] but is renamed division_polynomial_0().\n\n\nI agree with you and the new version.\n\n\n>>   There is another implementation of the division_polynomials that could be rewritten. \n\n>> But there the curve has coefficients in a ring and one computes integrally. So that does\n>>  not make sense in ell_generic.\n\n>\n> I'm not sure where you are referring to here.\n\n\nThe function _multiply_point on line 303 in padics.py is just another version of an implementation of the division polynomials. In fact this builds the polynomials that you called multiply_x_numerator and denominator, but as homogeneous polynomials. To clear up denominators so that integers can be plugged in to get integers. The p-adic height computation needs the computation of the square root of numerator of \nx(m*P) for a large m. Using this function is much faster than computing m*P. \n\nBut I think it is better to leave that as it is by now.\n\nChris.",
     "created_at": "2008-08-27T17:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3883",
     "type": "issue_comment",
@@ -285,18 +294,23 @@ archive/issue_comments_027649.json:
 
 > The only appearance of your name I found has it spelled "Wuthrich" (and not by me). Is it an umlaut you want?
 
+
 No there was a Christopher before. :)
 
 > I do agree, so I have refactored the code accordingly. [..] but is renamed division_polynomial_0().
+
 
 I agree with you and the new version.
 
 
 >>   There is another implementation of the division_polynomials that could be rewritten. 
+
 >> But there the curve has coefficients in a ring and one computes integrally. So that does
 >>  not make sense in ell_generic.
+
 >
 > I'm not sure where you are referring to here.
+
 
 The function _multiply_point on line 303 in padics.py is just another version of an implementation of the division polynomials. In fact this builds the polynomials that you called multiply_x_numerator and denominator, but as homogeneous polynomials. To clear up denominators so that integers can be plugged in to get integers. The p-adic height computation needs the computation of the square root of numerator of 
 x(m*P) for a large m. Using this function is much faster than computing m*P. 

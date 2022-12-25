@@ -3,7 +3,7 @@
 archive/issues_001062.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @videlec @jdemeyer @slel\n\n\n```\n<wstein> \n The new ?? help looks quite nice. It would\n be good for gp.foo? to use it.\n```\n\n\nThe idea is that\n\n```\nsage: foo = gp(x)\nsage: foo.polroots?\n```\n\n\nshould use the help text from the gp command `??polroots`.\n\nThe obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  This doesn't quite work, for two reasons:\n\n1) gphelp carefully formats the text to fit in the current line width, and then Sage displays this text indented; so almost every line wraps.\n\n2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1062\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @videlec @jdemeyer @slel\n\n```\n<wstein> \n The new ?? help looks quite nice. It would\n be good for gp.foo? to use it.\n```\n\nThe idea is that\n\n```\nsage: foo = gp(x)\nsage: foo.polroots?\n```\n\nshould use the help text from the gp command `??polroots`.\n\nThe obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  This doesn't quite work, for two reasons:\n\n1) gphelp carefully formats the text to fit in the current line width, and then Sage displays this text indented; so almost every line wraps.\n\n2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1062\n\n",
     "created_at": "2007-11-02T01:31:09Z",
     "labels": [
         "component: interfaces"
@@ -19,13 +19,11 @@ Assignee: @williamstein
 
 CC:  @videlec @jdemeyer @slel
 
-
 ```
 <wstein> 
  The new ?? help looks quite nice. It would
  be good for gp.foo? to use it.
 ```
-
 
 The idea is that
 
@@ -33,7 +31,6 @@ The idea is that
 sage: foo = gp(x)
 sage: foo.polroots?
 ```
-
 
 should use the help text from the gp command `??polroots`.
 
@@ -107,7 +104,7 @@ archive/issue_events_002872.json:
 archive/issue_comments_006431.json:
 ```json
 {
-    "body": "This works in `cypari2` which is de facto the way to use PARI in Sage\n\n```\nsage: x.polroots?\nSignature:      x.polroots(precision)\nDocstring:     \n   Complex roots of the given polynomial using Schonhage's method, as\n   modified by Gourdon.\n```\n",
+    "body": "This works in `cypari2` which is de facto the way to use PARI in Sage\n\n```\nsage: x.polroots?\nSignature:      x.polroots(precision)\nDocstring:     \n   Complex roots of the given polynomial using Schonhage's method, as\n   modified by Gourdon.\n```",
     "created_at": "2020-02-17T13:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
@@ -125,7 +122,6 @@ Docstring:
    Complex roots of the given polynomial using Schonhage's method, as
    modified by Gourdon.
 ```
-
 
 
 

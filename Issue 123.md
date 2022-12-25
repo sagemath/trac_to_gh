@@ -66,7 +66,7 @@ Resolution: fixed
 archive/issue_comments_000563.json:
 ```json
 {
-    "body": "Replying to [ticket:123 dmharvey]:\n> When I start up SAGE in a non-main branch, it prints the branch name. It should print something nicer, like \"Current branch is: ...\"\n\nFixed in hg_sage patch 1403:c01f39e80b67 and hg_scripts patch 52:7dafe792dbfc.",
+    "body": "Replying to [ticket:123 dmharvey]:\n> When I start up SAGE in a non-main branch, it prints the branch name. It should print something nicer, like \"Current branch is: ...\"\n\n\nFixed in hg_sage patch 1403:c01f39e80b67 and hg_scripts patch 52:7dafe792dbfc.",
     "created_at": "2006-10-10T05:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/123",
     "type": "issue_comment",
@@ -77,5 +77,6 @@ archive/issue_comments_000563.json:
 
 Replying to [ticket:123 dmharvey]:
 > When I start up SAGE in a non-main branch, it prints the branch name. It should print something nicer, like "Current branch is: ..."
+
 
 Fixed in hg_sage patch 1403:c01f39e80b67 and hg_scripts patch 52:7dafe792dbfc.

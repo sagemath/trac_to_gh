@@ -3,7 +3,7 @@
 archive/issues_004287.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a\nfailure:\n\n```\nsage: E = EllipticCurve('11a')\nsage: F = E.formal_group()\nsage: F == loads(dumps(F))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4287\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is for the file formal_group.py. Note that adding a s == loads(dumps(s)) test revealed a\nfailure:\n\n```\nsage: E = EllipticCurve('11a')\nsage: F = E.formal_group()\nsage: F == loads(dumps(F))\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4287\n\n",
     "created_at": "2008-10-14T19:58:56Z",
     "labels": [
         "component: algebraic geometry",
@@ -29,7 +29,6 @@ sage: F = E.formal_group()
 sage: F == loads(dumps(F))
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4287
 
@@ -98,7 +97,7 @@ Attachment [trac_4287_2.patch](tarball://root/attachments/some-uuid/ticket4287/t
 archive/issue_comments_031319.json:
 ```json
 {
-    "body": "Replying to [comment:1 cremona]:\n> Patch looks good and applies ok.  But as Paul says, we need to see why load(dumps(F))!=F for a formal group F.\n> \n> I don't know how to fix this.\n\nI didn't know, but now I do.  There was nothing wrong with loads() or dumps() for formal groups, but they were missing a _cmp_ function so the \"==\" comparison was not giving the expected answer.\nThe second patch (modelled on a similar one by robertwb for ell_tate_curve.py) seems to do the trick.  All tests pass in elliptic_curves.",
+    "body": "Replying to [comment:1 cremona]:\n> Patch looks good and applies ok.  But as Paul says, we need to see why load(dumps(F))!=F for a formal group F.\n> \n> I don't know how to fix this.\n\n\nI didn't know, but now I do.  There was nothing wrong with loads() or dumps() for formal groups, but they were missing a _cmp_ function so the \"==\" comparison was not giving the expected answer.\nThe second patch (modelled on a similar one by robertwb for ell_tate_curve.py) seems to do the trick.  All tests pass in elliptic_curves.",
     "created_at": "2008-10-19T21:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4287",
     "type": "issue_comment",
@@ -111,6 +110,7 @@ Replying to [comment:1 cremona]:
 > Patch looks good and applies ok.  But as Paul says, we need to see why load(dumps(F))!=F for a formal group F.
 > 
 > I don't know how to fix this.
+
 
 I didn't know, but now I do.  There was nothing wrong with loads() or dumps() for formal groups, but they were missing a _cmp_ function so the "==" comparison was not giving the expected answer.
 The second patch (modelled on a similar one by robertwb for ell_tate_curve.py) seems to do the trick.  All tests pass in elliptic_curves.

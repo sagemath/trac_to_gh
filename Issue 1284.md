@@ -3,7 +3,7 @@
 archive/issues_001284.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  fwclarke\n\n\n```\nFrancis Clarke to sage-support\n\nSubgroups of abelian groups:\n\nsage: G.<a, b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nTrue\n\nSurely not!\n\nOn the other hand for vector spaces:\n\nsage: W.<u, v> = QQ^2\nsage: U = W.subspace([u])\nsage: V = W.subspace([v])\nsage: U == V\nFalse\n\nAs expected.\n```\n\n\nI have verified this and I agree that this is stupid.\nThe problem is that the __cmp__ method is just comparing\nthe groups abstract structure:\n\n\n```\n        if not is_AbelianGroup(right):\n            return -1\n        return cmp(self.invariants(), right.invariants())\n```\n\n\nIt should also take into account the embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1284\n\n",
+    "body": "Assignee: somebody\n\nCC:  fwclarke\n\n```\nFrancis Clarke to sage-support\n\nSubgroups of abelian groups:\n\nsage: G.<a, b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nTrue\n\nSurely not!\n\nOn the other hand for vector spaces:\n\nsage: W.<u, v> = QQ^2\nsage: U = W.subspace([u])\nsage: V = W.subspace([v])\nsage: U == V\nFalse\n\nAs expected.\n```\n\nI have verified this and I agree that this is stupid.\nThe problem is that the __cmp__ method is just comparing\nthe groups abstract structure:\n\n```\n        if not is_AbelianGroup(right):\n            return -1\n        return cmp(self.invariants(), right.invariants())\n```\n\nIt should also take into account the embedding. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1284\n\n",
     "created_at": "2007-11-26T21:04:14Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ archive/issues_001284.json:
 Assignee: somebody
 
 CC:  fwclarke
-
 
 ```
 Francis Clarke to sage-support
@@ -46,18 +45,15 @@ False
 As expected.
 ```
 
-
 I have verified this and I agree that this is stupid.
 The problem is that the __cmp__ method is just comparing
 the groups abstract structure:
-
 
 ```
         if not is_AbelianGroup(right):
             return -1
         return cmp(self.invariants(), right.invariants())
 ```
-
 
 It should also take into account the embedding. 
 
@@ -107,7 +103,7 @@ Changing assignee from somebody to @rlmill.
 archive/issue_comments_008026.json:
 ```json
 {
-    "body": "This fixes the bugs at #2272 and #3127 as well.\n\n\n```\nrank4:sage-3.0.1 rlmill$ ./sage -t devel/sage/sage/groups/\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 183.2 seconds\n```\n",
+    "body": "This fixes the bugs at #2272 and #3127 as well.\n\n```\nrank4:sage-3.0.1 rlmill$ ./sage -t devel/sage/sage/groups/\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 183.2 seconds\n```",
     "created_at": "2008-05-10T23:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -118,7 +114,6 @@ archive/issue_comments_008026.json:
 
 This fixes the bugs at #2272 and #3127 as well.
 
-
 ```
 rank4:sage-3.0.1 rlmill$ ./sage -t devel/sage/sage/groups/
 ...
@@ -126,7 +121,6 @@ rank4:sage-3.0.1 rlmill$ ./sage -t devel/sage/sage/groups/
 All tests passed!
 Total time for all tests: 183.2 seconds
 ```
-
 
 
 
@@ -259,7 +253,7 @@ Michael
 archive/issue_comments_008033.json:
 ```json
 {
-    "body": "Sorry for the missing doctest, however:\n\n```\nsage: G.<a,b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nFalse\n```\n",
+    "body": "Sorry for the missing doctest, however:\n\n```\nsage: G.<a,b> = AbelianGroup(2)\nsage: A = G.subgroup([a])\nsage: B = G.subgroup([b])\nsage: A == B\nFalse\n```",
     "created_at": "2008-05-11T20:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -280,13 +274,12 @@ False
 
 
 
-
 ---
 
 archive/issue_comments_008034.json:
 ```json
 {
-    "body": "Yes, the original problem is solved, but others remain. \n \nWith the two patches installed:\n\n```\nsage: G.<a, b> = AbelianGroup(2)\nsage: H.<c> = AbelianGroup(1)\nsage: H < G\nTrue\n```\n\nwhich is not what I would expect.  There is no reason to assume H is a subgroup of G.\n\nBut anyway `__cmp__` and `__contains__` are inconsistent.  For\n\n```\nsage: c in H\nTrue\nsage: c in G\nFalse\n```\n\n\nMoreover\n\n```\nsage: A = G.subgroup([a])\nsage: A == H\nFalse\nsage: H == A\nTrue\n```\n",
+    "body": "Yes, the original problem is solved, but others remain. \n \nWith the two patches installed:\n\n```\nsage: G.<a, b> = AbelianGroup(2)\nsage: H.<c> = AbelianGroup(1)\nsage: H < G\nTrue\n```\nwhich is not what I would expect.  There is no reason to assume H is a subgroup of G.\n\nBut anyway `__cmp__` and `__contains__` are inconsistent.  For\n\n```\nsage: c in H\nTrue\nsage: c in G\nFalse\n```\n\nMoreover\n\n```\nsage: A = G.subgroup([a])\nsage: A == H\nFalse\nsage: H == A\nTrue\n```",
     "created_at": "2008-05-11T21:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -305,7 +298,6 @@ sage: H.<c> = AbelianGroup(1)
 sage: H < G
 True
 ```
-
 which is not what I would expect.  There is no reason to assume H is a subgroup of G.
 
 But anyway `__cmp__` and `__contains__` are inconsistent.  For
@@ -316,7 +308,6 @@ True
 sage: c in G
 False
 ```
-
 
 Moreover
 
@@ -330,13 +321,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_008035.json:
 ```json
 {
-    "body": "With this latest patch:\n\n```\nsage: G.<a, b> = AbelianGroup(2)\nsage: H.<c> = AbelianGroup(1)\nsage: H < G\nFalse\nsage: c in H\nTrue\nsage: c in G\nFalse\nsage: A = G.subgroup([a])\nsage: A == H\nFalse\nsage: H == A\nFalse\n```\n\n\nI know it's still missing some documentation, I just want to see if there is more work necessary.",
+    "body": "With this latest patch:\n\n```\nsage: G.<a, b> = AbelianGroup(2)\nsage: H.<c> = AbelianGroup(1)\nsage: H < G\nFalse\nsage: c in H\nTrue\nsage: c in G\nFalse\nsage: A = G.subgroup([a])\nsage: A == H\nFalse\nsage: H == A\nFalse\n```\n\nI know it's still missing some documentation, I just want to see if there is more work necessary.",
     "created_at": "2008-05-11T23:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -362,7 +352,6 @@ False
 sage: H == A
 False
 ```
-
 
 I know it's still missing some documentation, I just want to see if there is more work necessary.
 
@@ -407,7 +396,7 @@ archive/issue_events_003372.json:
 archive/issue_comments_008036.json:
 ```json
 {
-    "body": "I am beginning to think the problem is rather deeper.  There are many inconsistencies in the way that algebraic objects are implemented.  It should be possible for a user to learn the basic syntax for, say, rings, and then adopt most of the basics when working with vector spaces, or abelian groups, etc.\n\nSome examples of inconsistent behaviour follow.\n\n\n```\nsage: R.<r> = PolynomialRing(QQ)\nsage: S.<s> = PolynomialRing(QQ)\nsage: R == S\nFalse\nsage: R.ideal(r^2 - 1) < S\nTrue\n```\n\n\n\n```\nsage: U.<u1, u2> = QQ^2\nsage: V.<v1, v2> = QQ^2\nsage: U == V\nTrue\nsage: W = VectorSpace(QQ, 2)\nsage: U == W\nTrue\nsage: W.<w1, w2> = VectorSpace(QQ, 2)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/mafwc/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: VectorSpace() got an unexpected keyword argument 'names'\n```\n\n\nIn my experience of doing calculations (rather than looking at the code) number fields have the best implementation of the algebraic objects which I have encountered .  But even so there are things that could be improved.  For example:\n\n```\nsage: K.subfield((theta^4 + 26*theta)/84)\n\n(Number Field in theta0 with defining polynomial x^3 - 2,\n Ring morphism:\n  From: Number Field in theta0 with defining polynomial x^3 - 2\n  To:   Number Field in theta with defining polynomial x^6 + 40*x^3 + 1372\n  Defn: theta0 |--> 1/84*theta^4 + 13/42*theta)\n```\n\nHere a subfield is generated by a single element.  There is no definition for a subfield generated by a list of elements; `K.subfield([(theta^4 + 26*theta)/84])` leads to a long, unhelpful error message.  In contrast, subgroups of abelian groups and subspaces of vector spaces **must** be generated by a list.  \n\nSurely `X.subobject([x,y,z])` should be standard, with `X.subobject(x)`equivalent to `X.subobject([x])`.  Ideals of rings work well in this respect:\n\n```\nsage: R.<r> = PolynomialRing(QQ)\nsage: R.ideal([r^2, r^3])\nPrincipal ideal (r^2) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal(r^2 - 1)\nPrincipal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal([r^2 - 1])\nPrincipal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal([r^2 - 1, r - 1])\nPrincipal ideal (r - 1) of Univariate Polynomial Ring in r over Rational Field\n```\n\nBut\n\n```\nsage: R.ideal([r^2, r - 1])\nPrincipal ideal (1) of Univariate Polynomial Ring in r over Rational Field\nsage: R == R.ideal([r^2, r - 1])\nFalse\n```\n\nand at the moment there doesn't seem to be any subring construction, while `is_subring` restricts itself to 'natural' inclusions.\n\nOne thing that appears to be missing from most (all?) the algebraic objects is intersection of subobjects.\n\nProbably what is needed to to rethink, and eventually, rewrite all the standard algebraic categories in a consistent and standard way.",
+    "body": "I am beginning to think the problem is rather deeper.  There are many inconsistencies in the way that algebraic objects are implemented.  It should be possible for a user to learn the basic syntax for, say, rings, and then adopt most of the basics when working with vector spaces, or abelian groups, etc.\n\nSome examples of inconsistent behaviour follow.\n\n```\nsage: R.<r> = PolynomialRing(QQ)\nsage: S.<s> = PolynomialRing(QQ)\nsage: R == S\nFalse\nsage: R.ideal(r^2 - 1) < S\nTrue\n```\n\n```\nsage: U.<u1, u2> = QQ^2\nsage: V.<v1, v2> = QQ^2\nsage: U == V\nTrue\nsage: W = VectorSpace(QQ, 2)\nsage: U == W\nTrue\nsage: W.<w1, w2> = VectorSpace(QQ, 2)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/mafwc/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: VectorSpace() got an unexpected keyword argument 'names'\n```\n\nIn my experience of doing calculations (rather than looking at the code) number fields have the best implementation of the algebraic objects which I have encountered .  But even so there are things that could be improved.  For example:\n\n```\nsage: K.subfield((theta^4 + 26*theta)/84)\n\n(Number Field in theta0 with defining polynomial x^3 - 2,\n Ring morphism:\n  From: Number Field in theta0 with defining polynomial x^3 - 2\n  To:   Number Field in theta with defining polynomial x^6 + 40*x^3 + 1372\n  Defn: theta0 |--> 1/84*theta^4 + 13/42*theta)\n```\nHere a subfield is generated by a single element.  There is no definition for a subfield generated by a list of elements; `K.subfield([(theta^4 + 26*theta)/84])` leads to a long, unhelpful error message.  In contrast, subgroups of abelian groups and subspaces of vector spaces **must** be generated by a list.  \n\nSurely `X.subobject([x,y,z])` should be standard, with `X.subobject(x)`equivalent to `X.subobject([x])`.  Ideals of rings work well in this respect:\n\n```\nsage: R.<r> = PolynomialRing(QQ)\nsage: R.ideal([r^2, r^3])\nPrincipal ideal (r^2) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal(r^2 - 1)\nPrincipal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal([r^2 - 1])\nPrincipal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field\nsage: R.ideal([r^2 - 1, r - 1])\nPrincipal ideal (r - 1) of Univariate Polynomial Ring in r over Rational Field\n```\nBut\n\n```\nsage: R.ideal([r^2, r - 1])\nPrincipal ideal (1) of Univariate Polynomial Ring in r over Rational Field\nsage: R == R.ideal([r^2, r - 1])\nFalse\n```\nand at the moment there doesn't seem to be any subring construction, while `is_subring` restricts itself to 'natural' inclusions.\n\nOne thing that appears to be missing from most (all?) the algebraic objects is intersection of subobjects.\n\nProbably what is needed to to rethink, and eventually, rewrite all the standard algebraic categories in a consistent and standard way.",
     "created_at": "2008-05-12T08:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -420,7 +409,6 @@ I am beginning to think the problem is rather deeper.  There are many inconsiste
 
 Some examples of inconsistent behaviour follow.
 
-
 ```
 sage: R.<r> = PolynomialRing(QQ)
 sage: S.<s> = PolynomialRing(QQ)
@@ -429,8 +417,6 @@ False
 sage: R.ideal(r^2 - 1) < S
 True
 ```
-
-
 
 ```
 sage: U.<u1, u2> = QQ^2
@@ -449,7 +435,6 @@ sage: W.<w1, w2> = VectorSpace(QQ, 2)
 <type 'exceptions.TypeError'>: VectorSpace() got an unexpected keyword argument 'names'
 ```
 
-
 In my experience of doing calculations (rather than looking at the code) number fields have the best implementation of the algebraic objects which I have encountered .  But even so there are things that could be improved.  For example:
 
 ```
@@ -461,7 +446,6 @@ sage: K.subfield((theta^4 + 26*theta)/84)
   To:   Number Field in theta with defining polynomial x^6 + 40*x^3 + 1372
   Defn: theta0 |--> 1/84*theta^4 + 13/42*theta)
 ```
-
 Here a subfield is generated by a single element.  There is no definition for a subfield generated by a list of elements; `K.subfield([(theta^4 + 26*theta)/84])` leads to a long, unhelpful error message.  In contrast, subgroups of abelian groups and subspaces of vector spaces **must** be generated by a list.  
 
 Surely `X.subobject([x,y,z])` should be standard, with `X.subobject(x)`equivalent to `X.subobject([x])`.  Ideals of rings work well in this respect:
@@ -477,7 +461,6 @@ Principal ideal (r^2 - 1) of Univariate Polynomial Ring in r over Rational Field
 sage: R.ideal([r^2 - 1, r - 1])
 Principal ideal (r - 1) of Univariate Polynomial Ring in r over Rational Field
 ```
-
 But
 
 ```
@@ -486,7 +469,6 @@ Principal ideal (1) of Univariate Polynomial Ring in r over Rational Field
 sage: R == R.ideal([r^2, r - 1])
 False
 ```
-
 and at the moment there doesn't seem to be any subring construction, while `is_subring` restricts itself to 'natural' inclusions.
 
 One thing that appears to be missing from most (all?) the algebraic objects is intersection of subobjects.
@@ -724,7 +706,7 @@ So I would be happier if < and > were defined this way!
 archive/issue_comments_008047.json:
 ```json
 {
-    "body": "Replying to [comment:20 cremona]:\n> Sorry about this, but:  we all agreed that H<=G should mean \"H is a subgroup of G\" and have nothing to do with order-comparison.  But you still have H<G meaning such an order-comparison!  As a user I would expect H<G to mean \"H is a proper subgroup of G\" so that (H<=G) == ((H<G) or (H==G)) and (H<G) == ((H<=G) and not (H==G)).\n> \n> So I would be happier if < and > were defined this way!\n\nLook more carefully: this is exactly what they *are* defined to do.",
+    "body": "Replying to [comment:20 cremona]:\n> Sorry about this, but:  we all agreed that H<=G should mean \"H is a subgroup of G\" and have nothing to do with order-comparison.  But you still have H<G meaning such an order-comparison!  As a user I would expect H<G to mean \"H is a proper subgroup of G\" so that (H<=G) == ((H<G) or (H==G)) and (H<G) == ((H<=G) and not (H==G)).\n> \n> So I would be happier if < and > were defined this way!\n\n\nLook more carefully: this is exactly what they *are* defined to do.",
     "created_at": "2008-05-25T20:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1284",
     "type": "issue_comment",
@@ -737,6 +719,7 @@ Replying to [comment:20 cremona]:
 > Sorry about this, but:  we all agreed that H<=G should mean "H is a subgroup of G" and have nothing to do with order-comparison.  But you still have H<G meaning such an order-comparison!  As a user I would expect H<G to mean "H is a proper subgroup of G" so that (H<=G) == ((H<G) or (H==G)) and (H<G) == ((H<=G) and not (H==G)).
 > 
 > So I would be happier if < and > were defined this way!
+
 
 Look more carefully: this is exactly what they *are* defined to do.
 

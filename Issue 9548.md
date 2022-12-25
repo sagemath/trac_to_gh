@@ -3,7 +3,7 @@
 archive/issues_009548.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis should do something reasonable:\n\n\n```\nsage: Infinity * I\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11428)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6123)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11356)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._mul_ (sage/symbolic/expression.cpp:11042)()\n\nArithmeticError: x*Infinity with non real x encountered.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9548\n\n",
+    "body": "Assignee: @aghitza\n\nThis should do something reasonable:\n\n```\nsage: Infinity * I\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n\n/home/fredrik/sage/<ipython console> in <module>()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11428)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6123)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11356)()\n\n/home/fredrik/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._mul_ (sage/symbolic/expression.cpp:11042)()\n\nArithmeticError: x*Infinity with non real x encountered.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9548\n\n",
     "created_at": "2010-07-19T08:27:56Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_009548.json:
 Assignee: @aghitza
 
 This should do something reasonable:
-
 
 ```
 sage: Infinity * I
@@ -38,7 +37,6 @@ ArithmeticError                           Traceback (most recent call last)
 
 ArithmeticError: x*Infinity with non real x encountered.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9548
 

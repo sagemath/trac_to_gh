@@ -51,7 +51,7 @@ archive/issue_events_018412.json:
 archive/issue_comments_066066.json:
 ```json
 {
-    "body": "Still there in 4.3.1:\n\n```\nsage: rational_reconstruction?\n...\n\n        exists, that pair is unique and this function returns it. If no\n        such pair exists, this function raises ZeroDivisionError.\n```\n\nand:\n\n```\nsage: rational_reconstruction(29,105)\n...\nValueError: Rational reconstruction of 29 (mod 105) does not exist.\n```\n\n\nNote also that in 4.3.1 a.rational_reconstruction? gives a different documentation, which does\nnot mention what happens in case of error. Why are the documentations different?",
+    "body": "Still there in 4.3.1:\n\n```\nsage: rational_reconstruction?\n...\n\n        exists, that pair is unique and this function returns it. If no\n        such pair exists, this function raises ZeroDivisionError.\n```\nand:\n\n```\nsage: rational_reconstruction(29,105)\n...\nValueError: Rational reconstruction of 29 (mod 105) does not exist.\n```\n\nNote also that in 4.3.1 a.rational_reconstruction? gives a different documentation, which does\nnot mention what happens in case of error. Why are the documentations different?",
     "created_at": "2010-02-05T20:42:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7710",
     "type": "issue_comment",
@@ -69,7 +69,6 @@ sage: rational_reconstruction?
         exists, that pair is unique and this function returns it. If no
         such pair exists, this function raises ZeroDivisionError.
 ```
-
 and:
 
 ```
@@ -77,7 +76,6 @@ sage: rational_reconstruction(29,105)
 ...
 ValueError: Rational reconstruction of 29 (mod 105) does not exist.
 ```
-
 
 Note also that in 4.3.1 a.rational_reconstruction? gives a different documentation, which does
 not mention what happens in case of error. Why are the documentations different?

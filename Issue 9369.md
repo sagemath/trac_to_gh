@@ -67,7 +67,7 @@ Changing status from new to needs_review.
 archive/issue_comments_088865.json:
 ```json
 {
-    "body": "The point of this is that if you do\n\n\n```\nsage foo.sage > output.out\ntail -f output.out\n```\n\n\nand use verbose(...) in foo.sage, you'll see nothing for a while, which sucks.",
+    "body": "The point of this is that if you do\n\n```\nsage foo.sage > output.out\ntail -f output.out\n```\n\nand use verbose(...) in foo.sage, you'll see nothing for a while, which sucks.",
     "created_at": "2010-06-28T23:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
@@ -78,12 +78,10 @@ archive/issue_comments_088865.json:
 
 The point of this is that if you do
 
-
 ```
 sage foo.sage > output.out
 tail -f output.out
 ```
-
 
 and use verbose(...) in foo.sage, you'll see nothing for a while, which sucks.
 
@@ -94,7 +92,7 @@ and use verbose(...) in foo.sage, you'll see nothing for a while, which sucks.
 archive/issue_comments_088866.json:
 ```json
 {
-    "body": "This might or might not be slightly off topic. Without verbose, it doesn't seem to be flushing at all. I tried the following in a file called `test.sage` with `./sage test.sage > ~/foo.txt` and `tail -f ~/foo.txt` only showed the output once I interrupted the loop.\n\n\n```\nfor E in cremona_optimal_curves(range(10000)):\n    print E.label(), E.sha().an()\n```\n\n\nI remember doing something like this a long time ago and it working. Wassupwiddat?",
+    "body": "This might or might not be slightly off topic. Without verbose, it doesn't seem to be flushing at all. I tried the following in a file called `test.sage` with `./sage test.sage > ~/foo.txt` and `tail -f ~/foo.txt` only showed the output once I interrupted the loop.\n\n```\nfor E in cremona_optimal_curves(range(10000)):\n    print E.label(), E.sha().an()\n```\n\nI remember doing something like this a long time ago and it working. Wassupwiddat?",
     "created_at": "2010-06-29T18:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
@@ -105,12 +103,10 @@ archive/issue_comments_088866.json:
 
 This might or might not be slightly off topic. Without verbose, it doesn't seem to be flushing at all. I tried the following in a file called `test.sage` with `./sage test.sage > ~/foo.txt` and `tail -f ~/foo.txt` only showed the output once I interrupted the loop.
 
-
 ```
 for E in cremona_optimal_curves(range(10000)):
     print E.label(), E.sha().an()
 ```
-
 
 I remember doing something like this a long time ago and it working. Wassupwiddat?
 

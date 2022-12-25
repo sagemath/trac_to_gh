@@ -313,7 +313,7 @@ The results are a little scruffy in places, but that will be much easier to sort
 archive/issue_comments_089080.json:
 ```json
 {
-    "body": "I'm OK with the attachment [attachment:trac_9383_v4.patch]. Note that it adds the following modules to the reference manual:\n\n\n```\nsage/quadratic_forms/quadratic_form \nsage/quadratic_forms/binary_qf \nsage/quadratic_forms/constructions \nsage/quadratic_forms/random_quadraticform \nsage/quadratic_forms/special_values \nsage/quadratic_forms/count_local_2\n```\n\n\nThe attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:\n\n\n```\nsage/quadratic_forms/quadratic_form__automorphisms.py\nsage/quadratic_forms/quadratic_form__count_local_2.py\nsage/quadratic_forms/quadratic_form__equivalence_testing.py\nsage/quadratic_forms/quadratic_form__genus.py\nsage/quadratic_forms/quadratic_form__local_density_congruence.py\nsage/quadratic_forms/quadratic_form__local_density_interfaces.py\nsage/quadratic_forms/quadratic_form__local_field_invariants.py\nsage/quadratic_forms/quadratic_form__local_normal_form.py\nsage/quadratic_forms/quadratic_form__local_representation_conditions.py\nsage/quadratic_forms/quadratic_form__mass.py\nsage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\nsage/quadratic_forms/quadratic_form__mass__Siegel_densities.py\nsage/quadratic_forms/quadratic_form__neighbors.py\nsage/quadratic_forms/quadratic_form__reduction_theory.py\nsage/quadratic_forms/quadratic_form__siegel_product.py\nsage/quadratic_forms/quadratic_form__split_local_covering.py\nsage/quadratic_forms/quadratic_form__ternary_Tornaria.py\nsage/quadratic_forms/quadratic_form__theta.py\nsage/quadratic_forms/quadratic_form__variable_substitutions.py\n```\n\n\nThe [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.",
+    "body": "I'm OK with the attachment [attachment:trac_9383_v4.patch]. Note that it adds the following modules to the reference manual:\n\n```\nsage/quadratic_forms/quadratic_form \nsage/quadratic_forms/binary_qf \nsage/quadratic_forms/constructions \nsage/quadratic_forms/random_quadraticform \nsage/quadratic_forms/special_values \nsage/quadratic_forms/count_local_2\n```\n\nThe attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:\n\n```\nsage/quadratic_forms/quadratic_form__automorphisms.py\nsage/quadratic_forms/quadratic_form__count_local_2.py\nsage/quadratic_forms/quadratic_form__equivalence_testing.py\nsage/quadratic_forms/quadratic_form__genus.py\nsage/quadratic_forms/quadratic_form__local_density_congruence.py\nsage/quadratic_forms/quadratic_form__local_density_interfaces.py\nsage/quadratic_forms/quadratic_form__local_field_invariants.py\nsage/quadratic_forms/quadratic_form__local_normal_form.py\nsage/quadratic_forms/quadratic_form__local_representation_conditions.py\nsage/quadratic_forms/quadratic_form__mass.py\nsage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\nsage/quadratic_forms/quadratic_form__mass__Siegel_densities.py\nsage/quadratic_forms/quadratic_form__neighbors.py\nsage/quadratic_forms/quadratic_form__reduction_theory.py\nsage/quadratic_forms/quadratic_form__siegel_product.py\nsage/quadratic_forms/quadratic_form__split_local_covering.py\nsage/quadratic_forms/quadratic_form__ternary_Tornaria.py\nsage/quadratic_forms/quadratic_form__theta.py\nsage/quadratic_forms/quadratic_form__variable_substitutions.py\n```\n\nThe [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.",
     "created_at": "2010-09-21T07:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -324,7 +324,6 @@ archive/issue_comments_089080.json:
 
 I'm OK with the attachment [attachment:trac_9383_v4.patch]. Note that it adds the following modules to the reference manual:
 
-
 ```
 sage/quadratic_forms/quadratic_form 
 sage/quadratic_forms/binary_qf 
@@ -334,9 +333,7 @@ sage/quadratic_forms/special_values
 sage/quadratic_forms/count_local_2
 ```
 
-
 The attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:
-
 
 ```
 sage/quadratic_forms/quadratic_form__automorphisms.py
@@ -359,7 +356,6 @@ sage/quadratic_forms/quadratic_form__ternary_Tornaria.py
 sage/quadratic_forms/quadratic_form__theta.py
 sage/quadratic_forms/quadratic_form__variable_substitutions.py
 ```
-
 
 The [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.
 
@@ -388,7 +384,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089082.json:
 ```json
 {
-    "body": "Replying to [comment:7 mvngu]:\n> The attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:\n> \n> {{{\n> sage/quadratic_forms/quadratic_form__automorphisms.py\n> sage/quadratic_forms/quadratic_form__count_local_2.py\n> sage/quadratic_forms/quadratic_form__equivalence_testing.py\n> sage/quadratic_forms/quadratic_form__genus.py\n> sage/quadratic_forms/quadratic_form__local_density_congruence.py\n> sage/quadratic_forms/quadratic_form__local_density_interfaces.py\n> sage/quadratic_forms/quadratic_form__local_field_invariants.py\n> sage/quadratic_forms/quadratic_form__local_normal_form.py\n> sage/quadratic_forms/quadratic_form__local_representation_conditions.py\n> sage/quadratic_forms/quadratic_form__mass.py\n> sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\n> sage/quadratic_forms/quadratic_form__mass__Siegel_densities.py\n> sage/quadratic_forms/quadratic_form__neighbors.py\n> sage/quadratic_forms/quadratic_form__reduction_theory.py\n> sage/quadratic_forms/quadratic_form__siegel_product.py\n> sage/quadratic_forms/quadratic_form__split_local_covering.py\n> sage/quadratic_forms/quadratic_form__ternary_Tornaria.py\n> sage/quadratic_forms/quadratic_form__theta.py\n> sage/quadratic_forms/quadratic_form__variable_substitutions.py\n> }}}\n> \n> The [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.\n\nNo, there is no need to do this. The functions from those modules are all imported into quadratic__form.py; they are divided into separate modules solely in order to keep the size of the top-level file manageable. The ReST parser follows these imports, so adding the separate files to the manual as well would just mean everything was in there twice.\n\nThanks for the review, anyway!\n\nDavid",
+    "body": "Replying to [comment:7 mvngu]:\n> The attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:\n> \n> \n> ```\n> sage/quadratic_forms/quadratic_form__automorphisms.py\n> sage/quadratic_forms/quadratic_form__count_local_2.py\n> sage/quadratic_forms/quadratic_form__equivalence_testing.py\n> sage/quadratic_forms/quadratic_form__genus.py\n> sage/quadratic_forms/quadratic_form__local_density_congruence.py\n> sage/quadratic_forms/quadratic_form__local_density_interfaces.py\n> sage/quadratic_forms/quadratic_form__local_field_invariants.py\n> sage/quadratic_forms/quadratic_form__local_normal_form.py\n> sage/quadratic_forms/quadratic_form__local_representation_conditions.py\n> sage/quadratic_forms/quadratic_form__mass.py\n> sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\n> sage/quadratic_forms/quadratic_form__mass__Siegel_densities.py\n> sage/quadratic_forms/quadratic_form__neighbors.py\n> sage/quadratic_forms/quadratic_form__reduction_theory.py\n> sage/quadratic_forms/quadratic_form__siegel_product.py\n> sage/quadratic_forms/quadratic_form__split_local_covering.py\n> sage/quadratic_forms/quadratic_form__ternary_Tornaria.py\n> sage/quadratic_forms/quadratic_form__theta.py\n> sage/quadratic_forms/quadratic_form__variable_substitutions.py\n> ```\n> \n> The [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.\n\n\nNo, there is no need to do this. The functions from those modules are all imported into quadratic__form.py; they are divided into separate modules solely in order to keep the size of the top-level file manageable. The ReST parser follows these imports, so adding the separate files to the manual as well would just mean everything was in there twice.\n\nThanks for the review, anyway!\n\nDavid",
     "created_at": "2010-09-21T15:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9383",
     "type": "issue_comment",
@@ -400,7 +396,8 @@ archive/issue_comments_089082.json:
 Replying to [comment:7 mvngu]:
 > The attachment make numerous ReST changes to the following modules, but does not add them to the reference manual:
 > 
-> {{{
+> 
+> ```
 > sage/quadratic_forms/quadratic_form__automorphisms.py
 > sage/quadratic_forms/quadratic_form__count_local_2.py
 > sage/quadratic_forms/quadratic_form__equivalence_testing.py
@@ -420,9 +417,10 @@ Replying to [comment:7 mvngu]:
 > sage/quadratic_forms/quadratic_form__ternary_Tornaria.py
 > sage/quadratic_forms/quadratic_form__theta.py
 > sage/quadratic_forms/quadratic_form__variable_substitutions.py
-> }}}
+> ```
 > 
 > The [attachment:trac_9383_v4.patch] receives a positive review as is. If you want, you could open another ticket to add the missing modules to the reference manual.
+
 
 No, there is no need to do this. The functions from those modules are all imported into quadratic__form.py; they are divided into separate modules solely in order to keep the size of the top-level file manageable. The ReST parser follows these imports, so adding the separate files to the manual as well would just mean everything was in there twice.
 

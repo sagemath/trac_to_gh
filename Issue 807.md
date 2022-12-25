@@ -3,7 +3,7 @@
 archive/issues_000807.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @kwankyu\n\nThe following does not work and it seems to fail in an odd way wrt. the preparser\n\n```\nP1.<t> = QQ[].fraction_field()\n```\n\nThere doesn't seem to be a convenient way of constructing a rational function field\nwith a named variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/807\n\n",
+    "body": "Assignee: somebody\n\nCC:  @kwankyu\n\nThe following does not work and it seems to fail in an odd way wrt. the preparser\n\n```\nP1.<t> = QQ[].fraction_field()\n```\nThere doesn't seem to be a convenient way of constructing a rational function field\nwith a named variable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/807\n\n",
     "created_at": "2007-10-03T15:37:31Z",
     "labels": [
         "component: basic arithmetic",
@@ -25,7 +25,6 @@ The following does not work and it seems to fail in an odd way wrt. the preparse
 ```
 P1.<t> = QQ[].fraction_field()
 ```
-
 There doesn't seem to be a convenient way of constructing a rational function field
 with a named variable.
 
@@ -40,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/807
 archive/issue_comments_004857.json:
 ```json
 {
-    "body": "This works:\n\n\n```\nsage: P1 = PolynomialRing(QQ,'t').fraction_field()\nsage: P1.gen()\nt\nsage: t=P1.gen()\nsage: P1((t+1)/(t-3))\n(t + 1)/(t - 3)\n```\n\n\nNote that the fraction field picks up the display name 't', but that to get the identifier t defined requires the assignment.\n\nI guess this does not qualify for what you wanted, namely to have t assigned automatically on the line defining the field.\n\n Looking into this I found something else peculiar:\n\n\n```\nsage: t=polygen(QQ)\nsage: t\nx\nsage: t.parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\n\n\nI have found polygen to be useful, but now I think that using it is fraught with possible confusion.  It causes the PolynomialRing in 'x' to be created with no choice as to the display string for the variable.",
+    "body": "This works:\n\n```\nsage: P1 = PolynomialRing(QQ,'t').fraction_field()\nsage: P1.gen()\nt\nsage: t=P1.gen()\nsage: P1((t+1)/(t-3))\n(t + 1)/(t - 3)\n```\n\nNote that the fraction field picks up the display name 't', but that to get the identifier t defined requires the assignment.\n\nI guess this does not qualify for what you wanted, namely to have t assigned automatically on the line defining the field.\n\n Looking into this I found something else peculiar:\n\n```\nsage: t=polygen(QQ)\nsage: t\nx\nsage: t.parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nI have found polygen to be useful, but now I think that using it is fraught with possible confusion.  It causes the PolynomialRing in 'x' to be created with no choice as to the display string for the variable.",
     "created_at": "2008-02-18T12:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -51,7 +50,6 @@ archive/issue_comments_004857.json:
 
 This works:
 
-
 ```
 sage: P1 = PolynomialRing(QQ,'t').fraction_field()
 sage: P1.gen()
@@ -61,13 +59,11 @@ sage: P1((t+1)/(t-3))
 (t + 1)/(t - 3)
 ```
 
-
 Note that the fraction field picks up the display name 't', but that to get the identifier t defined requires the assignment.
 
 I guess this does not qualify for what you wanted, namely to have t assigned automatically on the line defining the field.
 
  Looking into this I found something else peculiar:
-
 
 ```
 sage: t=polygen(QQ)
@@ -76,7 +72,6 @@ x
 sage: t.parent()
 Univariate Polynomial Ring in x over Rational Field
 ```
-
 
 I have found polygen to be useful, but now I think that using it is fraught with possible confusion.  It causes the PolynomialRing in 'x' to be created with no choice as to the display string for the variable.
 
@@ -87,7 +82,7 @@ I have found polygen to be useful, but now I think that using it is fraught with
 archive/issue_comments_004858.json:
 ```json
 {
-    "body": "> I have found polygen to be useful, but now I think that using it is fraught \n> with possible confusion. It causes the PolynomialRing? in 'x' to be created \n> with no choice as to the display string for the variable.\n\nThat's not true.  Did you try reading `polygen?`\n\n\n```\nsage: t = polygen(QQ,'t')\nsage: t\nt\nsage: t.parent()\nUnivariate Polynomial Ring in t over Rational Field\n```\n",
+    "body": "> I have found polygen to be useful, but now I think that using it is fraught \n> with possible confusion. It causes the PolynomialRing? in 'x' to be created \n> with no choice as to the display string for the variable.\n\n\nThat's not true.  Did you try reading `polygen?`\n\n```\nsage: t = polygen(QQ,'t')\nsage: t\nt\nsage: t.parent()\nUnivariate Polynomial Ring in t over Rational Field\n```",
     "created_at": "2008-02-19T00:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -100,8 +95,8 @@ archive/issue_comments_004858.json:
 > with possible confusion. It causes the PolynomialRing? in 'x' to be created 
 > with no choice as to the display string for the variable.
 
-That's not true.  Did you try reading `polygen?`
 
+That's not true.  Did you try reading `polygen?`
 
 ```
 sage: t = polygen(QQ,'t')
@@ -113,13 +108,12 @@ Univariate Polynomial Ring in t over Rational Field
 
 
 
-
 ---
 
 archive/issue_comments_004859.json:
 ```json
 {
-    "body": "\n```\n14:42 < cwitty-rvw3129> I'd be fine with saying 807 is invalid (since it doesn't have any sort of concrete \n                        proposal); wstein-2605, what do you think?\n14:43 < wstein-406> It's invalid.\n14:43 < wstein-406> It should be an error.\n14:43 < wstein-406> He has to give the poly ring variable explicitly; there is no way around htat.\n14:44 < mhansen> This is what it preparses to: \"P1 = QQ[].fraction_field(names=('t',)); (t,) = \n                 P1._first_ngens(Integer(1))\"\n14:44 < wstein-406> However, it might be nice for this to work:\n14:44 < cwitty-rvw3129> Well, he's trying to give the variable explicitly with the P1.<t> syntax.\n14:44 < wstein-406> P1.<t> = QQ['t'].fraction_field()\n14:44 < wstein-406> What would happen is that fraction_field would have a names option, and if the\n14:44 < wstein-406> names didn't match with the gen names of R (=QQ['t']) then a copy is returned with\n14:44 < wstein-406> those variable names.\n14:45 < wstein-406> E.g., \n14:45 < wstein-406> P1.<t> = QQ['x'].fraction_field()\n14:45 < wstein-406> should work.\n14:45 < wstein-406> Too.\n14:45 < wstein-406> So I do not think #807 is invalid; it just needs to be changed slightly.\n```\n",
+    "body": "```\n14:42 < cwitty-rvw3129> I'd be fine with saying 807 is invalid (since it doesn't have any sort of concrete \n                        proposal); wstein-2605, what do you think?\n14:43 < wstein-406> It's invalid.\n14:43 < wstein-406> It should be an error.\n14:43 < wstein-406> He has to give the poly ring variable explicitly; there is no way around htat.\n14:44 < mhansen> This is what it preparses to: \"P1 = QQ[].fraction_field(names=('t',)); (t,) = \n                 P1._first_ngens(Integer(1))\"\n14:44 < wstein-406> However, it might be nice for this to work:\n14:44 < cwitty-rvw3129> Well, he's trying to give the variable explicitly with the P1.<t> syntax.\n14:44 < wstein-406> P1.<t> = QQ['t'].fraction_field()\n14:44 < wstein-406> What would happen is that fraction_field would have a names option, and if the\n14:44 < wstein-406> names didn't match with the gen names of R (=QQ['t']) then a copy is returned with\n14:44 < wstein-406> those variable names.\n14:45 < wstein-406> E.g., \n14:45 < wstein-406> P1.<t> = QQ['x'].fraction_field()\n14:45 < wstein-406> should work.\n14:45 < wstein-406> Too.\n14:45 < wstein-406> So I do not think #807 is invalid; it just needs to be changed slightly.\n```",
     "created_at": "2008-05-10T21:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -127,7 +121,6 @@ archive/issue_comments_004859.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 14:42 < cwitty-rvw3129> I'd be fine with saying 807 is invalid (since it doesn't have any sort of concrete 
@@ -152,13 +145,12 @@ archive/issue_comments_004859.json:
 
 
 
-
 ---
 
 archive/issue_comments_004860.json:
 ```json
 {
-    "body": "Still all true.  Four years later!\n\n```\nsage: P1.<t> = QQ[].fraction_field()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     P1 = QQ[].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\n             ^\nSyntaxError: invalid syntax\n\nsage: P1.<t> = QQ['x'].fraction_field()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nTypeError: fraction_field() got an unexpected keyword argument 'names'\n```\n",
+    "body": "Still all true.  Four years later!\n\n```\nsage: P1.<t> = QQ[].fraction_field()\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     P1 = QQ[].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\n             ^\nSyntaxError: invalid syntax\n\nsage: P1.<t> = QQ['x'].fraction_field()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\nTypeError: fraction_field() got an unexpected keyword argument 'names'\n```",
     "created_at": "2011-12-02T21:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -183,7 +175,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: fraction_field() got an unexpected keyword argument 'names'
 ```
-
 
 
 
@@ -234,7 +225,7 @@ Travis
 archive/issue_comments_004863.json:
 ```json
 {
-    "body": "Replying to [comment:6 tscrim]:\n> I think the underlying problem is that the language syntax does not truly support doing `QQ[]`, so when it is trying to parse `QQ[].fraction_field()`, it first must evaluate `QQ[]` as a standalone (thus the `SyntaxError`), in order to get the output object to find the attribute `fraction_field()`.\n> \n> I don't know where/how the syntax `P.<x> = QQ[]` comes from/works (in the preparser perhaps?), so perhaps we can use that, but I don't know if that is easily done, safe, or even feasible. I'll do some looking around, but I'm thinking this might not be doable considering the semantics of python... Anyone else's thoughts?\n\n\n```\nsage: preparse(\"P.<x> = QQ[]\")\n\"P = QQ['x']; (x,) = P._first_ngens(1)\"\n```\n\n\nAs I understand it, the . before the < triggers a python error which is caught and then handled nicely.\n\n\n> \n> Best,\n\n> Travis",
+    "body": "Replying to [comment:6 tscrim]:\n> I think the underlying problem is that the language syntax does not truly support doing `QQ[]`, so when it is trying to parse `QQ[].fraction_field()`, it first must evaluate `QQ[]` as a standalone (thus the `SyntaxError`), in order to get the output object to find the attribute `fraction_field()`.\n> \n> I don't know where/how the syntax `P.<x> = QQ[]` comes from/works (in the preparser perhaps?), so perhaps we can use that, but I don't know if that is easily done, safe, or even feasible. I'll do some looking around, but I'm thinking this might not be doable considering the semantics of python... Anyone else's thoughts?\n\n\n```\nsage: preparse(\"P.<x> = QQ[]\")\n\"P = QQ['x']; (x,) = P._first_ngens(1)\"\n```\n\nAs I understand it, the . before the < triggers a python error which is caught and then handled nicely.\n\n\n> \n> Best,\n\n\n> Travis",
     "created_at": "2013-02-26T16:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -254,12 +245,12 @@ sage: preparse("P.<x> = QQ[]")
 "P = QQ['x']; (x,) = P._first_ngens(1)"
 ```
 
-
 As I understand it, the . before the < triggers a python error which is caught and then handled nicely.
 
 
 > 
 > Best,
+
 
 > Travis
 
@@ -270,7 +261,7 @@ As I understand it, the . before the < triggers a python error which is caught a
 archive/issue_comments_004864.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> As I understand it, the . before the < triggers a python error which is caught and then handled nicely.\n\nThe preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:\n\n```\nsage: preparse(\"P1.<t> = QQ['x'].fraction_field()\")\n\"P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\"\n```\n\nand supporting it seems straightforward, but this is where things get questionable: `names` supplied on construction are part of the construction data, so\n\n```\nsage: R=QQ['x']\nsage: F1=R.fraction_field(names=('u',))\nsage: F2=R.fraction_field(names=('v',))\n```\n\nshould produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for\n\n```\nsage: K=QQ['x,u,v'].fraction_field()\n```\n\nall of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.\n\nFor better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.\n\n(oh, I didn't realize I made this ticket!)",
+    "body": "Replying to [comment:7 cremona]:\n> As I understand it, the . before the < triggers a python error which is caught and then handled nicely.\n\n\nThe preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:\n\n```\nsage: preparse(\"P1.<t> = QQ['x'].fraction_field()\")\n\"P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\"\n```\nand supporting it seems straightforward, but this is where things get questionable: `names` supplied on construction are part of the construction data, so\n\n```\nsage: R=QQ['x']\nsage: F1=R.fraction_field(names=('u',))\nsage: F2=R.fraction_field(names=('v',))\n```\nshould produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for\n\n```\nsage: K=QQ['x,u,v'].fraction_field()\n```\nall of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.\n\nFor better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.\n\n(oh, I didn't realize I made this ticket!)",
     "created_at": "2013-02-26T18:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -282,13 +273,13 @@ archive/issue_comments_004864.json:
 Replying to [comment:7 cremona]:
 > As I understand it, the . before the < triggers a python error which is caught and then handled nicely.
 
+
 The preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:
 
 ```
 sage: preparse("P1.<t> = QQ['x'].fraction_field()")
 "P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)"
 ```
-
 and supporting it seems straightforward, but this is where things get questionable: `names` supplied on construction are part of the construction data, so
 
 ```
@@ -296,13 +287,11 @@ sage: R=QQ['x']
 sage: F1=R.fraction_field(names=('u',))
 sage: F2=R.fraction_field(names=('v',))
 ```
-
 should produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for
 
 ```
 sage: K=QQ['x,u,v'].fraction_field()
 ```
-
 all of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.
 
 For better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.
@@ -316,7 +305,7 @@ For better of for worse, it was decided that the names of polynomial variables h
 archive/issue_comments_004865.json:
 ```json
 {
-    "body": "Replying to [comment:8 nbruin]:\n> The preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:\n> {{{\n> sage: preparse(\"P1.<t> = QQ['x'].fraction_field()\")\n> \"P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\"\n> }}}\n> and supporting it seems straightforward,\n\nThat's not as scary as I expected it to be.\n\n> but this is where things get questionable: `names` supplied on construction are part of the construction data, so\n> {{{\n> sage: R=QQ['x']\n> sage: F1=R.fraction_field(names=('u',))\n> sage: F2=R.fraction_field(names=('v',))\n> }}}\n> should produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for\n> {{{\n> sage: K=QQ['x,u,v'].fraction_field()\n> }}}\n> all of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.\n\nSo you're considering adding a `names` argument in a meaningful way to `fraction_field()`? However this does not quite make sense to me and would conflict with the behavior of `FractionField` (which takes `names` as input and just ignores them; although it just redirects the call to the respective `fraction_field()` with no arguments). It seems like the correct fix would be to have the following:\n\n```\nsage: preparse(\"R.<x,y> = QQ[].fraction_field()\") \n\"R = QQ['x, y'].fraction_field(names=('x', 'y',)); (x, y,) = R._first_ngens(2)\"\n```\n\nand have `fraction_field()` take `names` as an optional argument and ignore the input.\n\nJust to note, this is the current behavior in Sage when there is no other function:\n\n```\nsage: preparse(\"R.<x,y> = QQ[]\")                 \n\"R = QQ['x, y']; (x, y,) = R._first_ngens(2)\"\n```\n\n\nIn some ways, I'd almost like the following to throw an error:\n\n```\nsage: R.<x> = QQ['t']\nsage: x\nt\n```\n\nsince the variable names don't match. But that might just be me...\n\n> For better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.",
+    "body": "Replying to [comment:8 nbruin]:\n> The preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:\n> \n> ```\n> sage: preparse(\"P1.<t> = QQ['x'].fraction_field()\")\n> \"P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\"\n> ```\n> and supporting it seems straightforward,\n\n\nThat's not as scary as I expected it to be.\n\n> but this is where things get questionable: `names` supplied on construction are part of the construction data, so\n> \n> ```\n> sage: R=QQ['x']\n> sage: F1=R.fraction_field(names=('u',))\n> sage: F2=R.fraction_field(names=('v',))\n> ```\n> should produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for\n> \n> ```\n> sage: K=QQ['x,u,v'].fraction_field()\n> ```\n> all of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.\n\n\nSo you're considering adding a `names` argument in a meaningful way to `fraction_field()`? However this does not quite make sense to me and would conflict with the behavior of `FractionField` (which takes `names` as input and just ignores them; although it just redirects the call to the respective `fraction_field()` with no arguments). It seems like the correct fix would be to have the following:\n\n```\nsage: preparse(\"R.<x,y> = QQ[].fraction_field()\") \n\"R = QQ['x, y'].fraction_field(names=('x', 'y',)); (x, y,) = R._first_ngens(2)\"\n```\nand have `fraction_field()` take `names` as an optional argument and ignore the input.\n\nJust to note, this is the current behavior in Sage when there is no other function:\n\n```\nsage: preparse(\"R.<x,y> = QQ[]\")                 \n\"R = QQ['x, y']; (x, y,) = R._first_ngens(2)\"\n```\n\nIn some ways, I'd almost like the following to throw an error:\n\n```\nsage: R.<x> = QQ['t']\nsage: x\nt\n```\nsince the variable names don't match. But that might just be me...\n\n> For better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.",
     "created_at": "2013-02-26T20:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -327,25 +316,30 @@ archive/issue_comments_004865.json:
 
 Replying to [comment:8 nbruin]:
 > The preparser is just a preprocessor, so no python errors are involved. The string is modified before the python parser ever sees it. Anyway:
-> {{{
+> 
+> ```
 > sage: preparse("P1.<t> = QQ['x'].fraction_field()")
 > "P1 = QQ['x'].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)"
-> }}}
+> ```
 > and supporting it seems straightforward,
+
 
 That's not as scary as I expected it to be.
 
 > but this is where things get questionable: `names` supplied on construction are part of the construction data, so
-> {{{
+> 
+> ```
 > sage: R=QQ['x']
 > sage: F1=R.fraction_field(names=('u',))
 > sage: F2=R.fraction_field(names=('v',))
-> }}}
+> ```
 > should produce two fields F1,F2. Both would have coercions from R installed, since they are constructed as field-of-fractions of R. There would not be a coercion from F1 to F2. Furthermore, for
-> {{{
+> 
+> ```
 > sage: K=QQ['x,u,v'].fraction_field()
-> }}}
+> ```
 > all of R,F1,F2 would coerce into K, but coercion from R to K would not be compatible with the coercions from F1 and F2 into K, which is bad.
+
 
 So you're considering adding a `names` argument in a meaningful way to `fraction_field()`? However this does not quite make sense to me and would conflict with the behavior of `FractionField` (which takes `names` as input and just ignores them; although it just redirects the call to the respective `fraction_field()` with no arguments). It seems like the correct fix would be to have the following:
 
@@ -353,7 +347,6 @@ So you're considering adding a `names` argument in a meaningful way to `fraction
 sage: preparse("R.<x,y> = QQ[].fraction_field()") 
 "R = QQ['x, y'].fraction_field(names=('x', 'y',)); (x, y,) = R._first_ngens(2)"
 ```
-
 and have `fraction_field()` take `names` as an optional argument and ignore the input.
 
 Just to note, this is the current behavior in Sage when there is no other function:
@@ -363,7 +356,6 @@ sage: preparse("R.<x,y> = QQ[]")
 "R = QQ['x, y']; (x, y,) = R._first_ngens(2)"
 ```
 
-
 In some ways, I'd almost like the following to throw an error:
 
 ```
@@ -371,7 +363,6 @@ sage: R.<x> = QQ['t']
 sage: x
 t
 ```
-
 since the variable names don't match. But that might just be me...
 
 > For better of for worse, it was decided that the names of polynomial variables have meaning in sage. A consequence of that is that you don't get to choose the name upon applying the function_field functor.
@@ -383,7 +374,7 @@ since the variable names don't match. But that might just be me...
 archive/issue_comments_004866.json:
 ```json
 {
-    "body": "Replying to [comment:9 tscrim]:\n\n> \n> In some ways, I'd almost like the following to throw an error:\n> {{{\n> sage: R.<x> = QQ['t']\n> sage: x\n> t\n> }}}\n> since the variable names don't match. But that might just be me...\n\nNo, not just you.  And you probably also dislike this, as I do:\n\n```\nsage: y = polygen(QQ)\nsage: y\nx\n```\n\nThis would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...",
+    "body": "Replying to [comment:9 tscrim]:\n\n> \n> In some ways, I'd almost like the following to throw an error:\n> \n> ```\n> sage: R.<x> = QQ['t']\n> sage: x\n> t\n> ```\n> since the variable names don't match. But that might just be me...\n\n\nNo, not just you.  And you probably also dislike this, as I do:\n\n```\nsage: y = polygen(QQ)\nsage: y\nx\n```\nThis would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...",
     "created_at": "2013-02-26T20:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -396,12 +387,14 @@ Replying to [comment:9 tscrim]:
 
 > 
 > In some ways, I'd almost like the following to throw an error:
-> {{{
+> 
+> ```
 > sage: R.<x> = QQ['t']
 > sage: x
 > t
-> }}}
+> ```
 > since the variable names don't match. But that might just be me...
+
 
 No, not just you.  And you probably also dislike this, as I do:
 
@@ -410,7 +403,6 @@ sage: y = polygen(QQ)
 sage: y
 x
 ```
-
 This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to "x").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...
 
 
@@ -420,7 +412,7 @@ This would be avoided by disallowing polygen()'s name parameter being omitted (i
 archive/issue_comments_004867.json:
 ```json
 {
-    "body": "Replying to [comment:10 cremona]:\n> No, not just you.  And you probably also dislike this, as I do:\n> {{{\n> sage: y = polygen(QQ)\n> sage: y\n> x\n> }}}\n> This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...\n\nYes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:\n\n```\nsage: y = polygen(QQ, 'a')\nsage: y\na\n```\n\nFrom looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).",
+    "body": "Replying to [comment:10 cremona]:\n> No, not just you.  And you probably also dislike this, as I do:\n> \n> ```\n> sage: y = polygen(QQ)\n> sage: y\n> x\n> ```\n> This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...\n\n\nYes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:\n\n```\nsage: y = polygen(QQ, 'a')\nsage: y\na\n```\nFrom looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).",
     "created_at": "2013-02-26T20:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -431,12 +423,14 @@ archive/issue_comments_004867.json:
 
 Replying to [comment:10 cremona]:
 > No, not just you.  And you probably also dislike this, as I do:
-> {{{
+> 
+> ```
 > sage: y = polygen(QQ)
 > sage: y
 > x
-> }}}
+> ```
 > This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to "x").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...
+
 
 Yes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:
 
@@ -445,7 +439,6 @@ sage: y = polygen(QQ, 'a')
 sage: y
 a
 ```
-
 From looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).
 
 
@@ -455,7 +448,7 @@ From looking at the function, I'd want to deprecate it if we decide to forbid `R
 archive/issue_comments_004868.json:
 ```json
 {
-    "body": "Replying to [comment:9 tscrim]:\nAh, I wasn't aware of the `FractionField` behaviour.\nIn a way, ignoring \"names\" would be good. Compare:\n\n```\nsage: preparse(\"R.<x>=QQ[t]\")\n'R = QQ[t]; (x,) = R._first_ngens(1)'\nsage: preparse(\"R.<x>=PolynomialRing(QQ,'t')\")\n\"R = PolynomialRing(QQ,'t', names=('x',)); (x,) = R._first_ngens(1)\"\nsage: preparse(\"R.<x>=PolynomialRing(QQ,names='t')\")\n\"R = PolynomialRing(QQ,names='t', names=('x',)); (x,) = R._first_ngens(1)\"\n```\n\nIn the first and second cases, it is recognised that a print name supplied by the LHS is superfluous, so it gets ignored (meaning: not inserted into the RHS). In the third case, the preparser fails to recognize this (the preparser will always have problems like that).\n\nGiven that print names are always superfluous for FractionField, ignoring the names field would be the right thing. However, I think `fraction_field` is not the proper place to do this and it would not solve the issue of this ticket: In\n\n```\nP1.<t>=FractionField(QQ[])\n```\n\nor\n\n```\nP1.<t>=QQ[].fraction_field()\n```\n\nit's not just that a `names=('t',)` should not be injected into the `fraction_field` call, it should be injected into the polynomial ring constructor. Of course, for this case the solution is\n\n```\nsage: P1.<t>=FunctionField(QQ)\n```\n",
+    "body": "Replying to [comment:9 tscrim]:\nAh, I wasn't aware of the `FractionField` behaviour.\nIn a way, ignoring \"names\" would be good. Compare:\n\n```\nsage: preparse(\"R.<x>=QQ[t]\")\n'R = QQ[t]; (x,) = R._first_ngens(1)'\nsage: preparse(\"R.<x>=PolynomialRing(QQ,'t')\")\n\"R = PolynomialRing(QQ,'t', names=('x',)); (x,) = R._first_ngens(1)\"\nsage: preparse(\"R.<x>=PolynomialRing(QQ,names='t')\")\n\"R = PolynomialRing(QQ,names='t', names=('x',)); (x,) = R._first_ngens(1)\"\n```\nIn the first and second cases, it is recognised that a print name supplied by the LHS is superfluous, so it gets ignored (meaning: not inserted into the RHS). In the third case, the preparser fails to recognize this (the preparser will always have problems like that).\n\nGiven that print names are always superfluous for FractionField, ignoring the names field would be the right thing. However, I think `fraction_field` is not the proper place to do this and it would not solve the issue of this ticket: In\n\n```\nP1.<t>=FractionField(QQ[])\n```\nor\n\n```\nP1.<t>=QQ[].fraction_field()\n```\nit's not just that a `names=('t',)` should not be injected into the `fraction_field` call, it should be injected into the polynomial ring constructor. Of course, for this case the solution is\n\n```\nsage: P1.<t>=FunctionField(QQ)\n```",
     "created_at": "2013-02-26T20:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -476,7 +469,6 @@ sage: preparse("R.<x>=PolynomialRing(QQ,'t')")
 sage: preparse("R.<x>=PolynomialRing(QQ,names='t')")
 "R = PolynomialRing(QQ,names='t', names=('x',)); (x,) = R._first_ngens(1)"
 ```
-
 In the first and second cases, it is recognised that a print name supplied by the LHS is superfluous, so it gets ignored (meaning: not inserted into the RHS). In the third case, the preparser fails to recognize this (the preparser will always have problems like that).
 
 Given that print names are always superfluous for FractionField, ignoring the names field would be the right thing. However, I think `fraction_field` is not the proper place to do this and it would not solve the issue of this ticket: In
@@ -484,13 +476,11 @@ Given that print names are always superfluous for FractionField, ignoring the na
 ```
 P1.<t>=FractionField(QQ[])
 ```
-
 or
 
 ```
 P1.<t>=QQ[].fraction_field()
 ```
-
 it's not just that a `names=('t',)` should not be injected into the `fraction_field` call, it should be injected into the polynomial ring constructor. Of course, for this case the solution is
 
 ```
@@ -499,13 +489,12 @@ sage: P1.<t>=FunctionField(QQ)
 
 
 
-
 ---
 
 archive/issue_comments_004869.json:
 ```json
 {
-    "body": "Replying to [comment:11 tscrim]:\n> > This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...\n\nIsn't the whole point of `polygen` that people get tired of supplying names? Otherwise you can just spell it `QQ['a'].0`, which is shorter anyway (or `QQ['a'].gen(0)` if you don't want to rely on the preparser and is still shorter than `polygen(QQ,'a')` and requires the same number of \"shift\" characters on a US keyboard)\n> \n> Yes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:\n> {{{\n> sage: y = polygen(QQ, 'a')\n> sage: y\n> a\n> }}}\n> From looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).\nDeciding *if* the `names=` implied by `R.<x>` is necessary is already flaky. Deciding if the implied `names=` is consistent with what is on the RHS is going to be very complicated within the limited view of the preparser. I don't think we want to grow a new attribute `preparser_generated_names` just to accommodate this.\n\nWe can document what it does:\n- bind generators to the python identifiers supplied\n- if the RHS requires print names for the generators and doesn't supply them, derive them from the python names.\n\nOf course it's good style to let python names and print names bear resemblance, but ultimately users will have to know that they are not the same thing.",
+    "body": "Replying to [comment:11 tscrim]:\n> > This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to \"x\").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...\n\n\nIsn't the whole point of `polygen` that people get tired of supplying names? Otherwise you can just spell it `QQ['a'].0`, which is shorter anyway (or `QQ['a'].gen(0)` if you don't want to rely on the preparser and is still shorter than `polygen(QQ,'a')` and requires the same number of \"shift\" characters on a US keyboard)\n> \n> Yes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:\n> \n> ```\n> sage: y = polygen(QQ, 'a')\n> sage: y\n> a\n> ```\n> From looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).\n\nDeciding *if* the `names=` implied by `R.<x>` is necessary is already flaky. Deciding if the implied `names=` is consistent with what is on the RHS is going to be very complicated within the limited view of the preparser. I don't think we want to grow a new attribute `preparser_generated_names` just to accommodate this.\n\nWe can document what it does:\n- bind generators to the python identifiers supplied\n- if the RHS requires print names for the generators and doesn't supply them, derive them from the python names.\n\nOf course it's good style to let python names and print names bear resemblance, but ultimately users will have to know that they are not the same thing.",
     "created_at": "2013-02-26T21:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -517,15 +506,18 @@ archive/issue_comments_004869.json:
 Replying to [comment:11 tscrim]:
 > > This would be avoided by disallowing polygen()'s name parameter being omitted (it defaults to "x").  After all we are not allowed to construct number fields, or non-prime finite fields, without naming a generator, and this is worse since we usually think that we have named a generator...
 
+
 Isn't the whole point of `polygen` that people get tired of supplying names? Otherwise you can just spell it `QQ['a'].0`, which is shorter anyway (or `QQ['a'].gen(0)` if you don't want to rely on the preparser and is still shorter than `polygen(QQ,'a')` and requires the same number of "shift" characters on a US keyboard)
 > 
 > Yes I do not like that as well. However, even making name a mandatory argument, it still does not prevent things such as:
-> {{{
+> 
+> ```
 > sage: y = polygen(QQ, 'a')
 > sage: y
 > a
-> }}}
+> ```
 > From looking at the function, I'd want to deprecate it if we decide to forbid `R.<x> = QQ['t']` (which could be done in the preparse).
+
 Deciding *if* the `names=` implied by `R.<x>` is necessary is already flaky. Deciding if the implied `names=` is consistent with what is on the RHS is going to be very complicated within the limited view of the preparser. I don't think we want to grow a new attribute `preparser_generated_names` just to accommodate this.
 
 We can document what it does:
@@ -752,7 +744,7 @@ Changing status from new to needs_review.
 archive/issue_comments_004873.json:
 ```json
 {
-    "body": "That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable. Right now it is a two-step process:\n\n```\nsage: R = QQ['t'].fraction_field()\nsage: t = R.gen()\n```\n\nThis ticket is about combining that into 1 step using our modified syntactic sugar.",
+    "body": "That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable. Right now it is a two-step process:\n\n```\nsage: R = QQ['t'].fraction_field()\nsage: t = R.gen()\n```\nThis ticket is about combining that into 1 step using our modified syntactic sugar.",
     "created_at": "2020-07-08T23:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -767,7 +759,6 @@ That is not true. It is not about a lack of function fields but about an easy wa
 sage: R = QQ['t'].fraction_field()
 sage: t = R.gen()
 ```
-
 This ticket is about combining that into 1 step using our modified syntactic sugar.
 
 
@@ -795,7 +786,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_004875.json:
 ```json
 {
-    "body": "Also, still an error:\n\n```\nsage: P1.<t> = QQ[].fraction_field()\n  File \"<ipython-input-1-4fe507ca8d97>\", line 1\n    P1 = QQ[].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\n            ^\nSyntaxError: invalid syntax\n\nsage: P1.<t> = FractionField(QQ[])\n  File \"<ipython-input-2-301ad9082694>\", line 1\n    P1 = FractionField(QQ[], names=('t',)); (t,) = P1._first_ngens(1)\n                          ^\nSyntaxError: invalid syntax\n```\n",
+    "body": "Also, still an error:\n\n```\nsage: P1.<t> = QQ[].fraction_field()\n  File \"<ipython-input-1-4fe507ca8d97>\", line 1\n    P1 = QQ[].fraction_field(names=('t',)); (t,) = P1._first_ngens(1)\n            ^\nSyntaxError: invalid syntax\n\nsage: P1.<t> = FractionField(QQ[])\n  File \"<ipython-input-2-301ad9082694>\", line 1\n    P1 = FractionField(QQ[], names=('t',)); (t,) = P1._first_ngens(1)\n                          ^\nSyntaxError: invalid syntax\n```",
     "created_at": "2020-07-08T23:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -822,13 +813,12 @@ SyntaxError: invalid syntax
 
 
 
-
 ---
 
 archive/issue_comments_004876.json:
 ```json
 {
-    "body": "Replying to [comment:22 tscrim]:\n> That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n\nWhen this ticket was created, I guess this was not available:\n\n```\nsage: R.<t> = FunctionField(QQ)\n```\n\nwhich is \"a convenient way of constructing a rational function field with a named variable.\" \n\n> Right now it is a two-step process:\n> {{{\n> sage: R = QQ['t'].fraction_field()\n> sage: t = R.gen()\n> }}}\n> This ticket is about combining that into 1 step using our modified syntactic sugar.\n\nTherefore I think there is no need now to do that combining. \n\nNow this also works (perhaps didn't work at that time):\n\n```\nsage: P.<t> = QQ[]\nsage: f = t/(1-t)\nsage: f\n-t/(t - 1)\nsage: f.parent()\nFraction Field of Univariate Polynomial Ring in t over Rational Field\n```\n\nThen why need to get the generator of the fraction field(=function field)?",
+    "body": "Replying to [comment:22 tscrim]:\n> That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n\n\nWhen this ticket was created, I guess this was not available:\n\n```\nsage: R.<t> = FunctionField(QQ)\n```\nwhich is \"a convenient way of constructing a rational function field with a named variable.\" \n\n> Right now it is a two-step process:\n> \n> ```\n> sage: R = QQ['t'].fraction_field()\n> sage: t = R.gen()\n> ```\n> This ticket is about combining that into 1 step using our modified syntactic sugar.\n\n\nTherefore I think there is no need now to do that combining. \n\nNow this also works (perhaps didn't work at that time):\n\n```\nsage: P.<t> = QQ[]\nsage: f = t/(1-t)\nsage: f\n-t/(t - 1)\nsage: f.parent()\nFraction Field of Univariate Polynomial Ring in t over Rational Field\n```\nThen why need to get the generator of the fraction field(=function field)?",
     "created_at": "2020-07-09T01:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -840,20 +830,22 @@ archive/issue_comments_004876.json:
 Replying to [comment:22 tscrim]:
 > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.
 
+
 When this ticket was created, I guess this was not available:
 
 ```
 sage: R.<t> = FunctionField(QQ)
 ```
-
 which is "a convenient way of constructing a rational function field with a named variable." 
 
 > Right now it is a two-step process:
-> {{{
+> 
+> ```
 > sage: R = QQ['t'].fraction_field()
 > sage: t = R.gen()
-> }}}
+> ```
 > This ticket is about combining that into 1 step using our modified syntactic sugar.
+
 
 Therefore I think there is no need now to do that combining. 
 
@@ -867,7 +859,6 @@ sage: f
 sage: f.parent()
 Fraction Field of Univariate Polynomial Ring in t over Rational Field
 ```
-
 Then why need to get the generator of the fraction field(=function field)?
 
 
@@ -877,7 +868,7 @@ Then why need to get the generator of the fraction field(=function field)?
 archive/issue_comments_004877.json:
 ```json
 {
-    "body": "Replying to [comment:24 klee]:\n> Replying to [comment:22 tscrim]:\n> > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n> \n> When this ticket was created, I guess this was not available:\n> {{{\n> sage: R.<t> = FunctionField(QQ)\n> }}}\n> which is \"a convenient way of constructing a rational function field with a named variable.\" \n\nThe next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)\n\nAlthough that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n\n> > Right now it is a two-step process:\n> > {{{\n> > sage: R = QQ['t'].fraction_field()\n> > sage: t = R.gen()\n> > }}}\n> > This ticket is about combining that into 1 step using our modified syntactic sugar.\n> \n> Therefore I think there is no need now to do that combining. \n> \n> Now this also works (perhaps didn't work at that time):\n> {{{\n> sage: P.<t> = QQ[]\n> sage: f = t/(1-t)\n> sage: f\n> -t/(t - 1)\n> sage: f.parent()\n> Fraction Field of Univariate Polynomial Ring in t over Rational Field\n> }}}\n> Then why need to get the generator of the fraction field(=function field)?\n\nBecause if it was a polynomial, it would have different methods and not as easy to ducktype. This can be a bit annoying in code when you do something with division sometimes but not every time (say, `t^n for n in [-1,0,1]`). So I do the two steps in my personal code when this shows up. There also is a mild issue of having to do the conversions to the fraction field, which adds a bit of time but usually not significantly more.",
+    "body": "Replying to [comment:24 klee]:\n> Replying to [comment:22 tscrim]:\n> > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n\n> \n> When this ticket was created, I guess this was not available:\n> \n> ```\n> sage: R.<t> = FunctionField(QQ)\n> ```\n> which is \"a convenient way of constructing a rational function field with a named variable.\" \n\n\nThe next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)\n\nAlthough that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n\n> > Right now it is a two-step process:\n> > \n> > ```\n> > sage: R = QQ['t'].fraction_field()\n> > sage: t = R.gen()\n> > ```\n> > This ticket is about combining that into 1 step using our modified syntactic sugar.\n\n> \n> Therefore I think there is no need now to do that combining. \n> \n> Now this also works (perhaps didn't work at that time):\n> \n> ```\n> sage: P.<t> = QQ[]\n> sage: f = t/(1-t)\n> sage: f\n> -t/(t - 1)\n> sage: f.parent()\n> Fraction Field of Univariate Polynomial Ring in t over Rational Field\n> ```\n> Then why need to get the generator of the fraction field(=function field)?\n\n\nBecause if it was a polynomial, it would have different methods and not as easy to ducktype. This can be a bit annoying in code when you do something with division sometimes but not every time (say, `t^n for n in [-1,0,1]`). So I do the two steps in my personal code when this shows up. There also is a mild issue of having to do the conversions to the fraction field, which adds a bit of time but usually not significantly more.",
     "created_at": "2020-07-09T01:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -889,36 +880,43 @@ archive/issue_comments_004877.json:
 Replying to [comment:24 klee]:
 > Replying to [comment:22 tscrim]:
 > > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.
+
 > 
 > When this ticket was created, I guess this was not available:
-> {{{
+> 
+> ```
 > sage: R.<t> = FunctionField(QQ)
-> }}}
+> ```
 > which is "a convenient way of constructing a rational function field with a named variable." 
+
 
 The next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)
 
 Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.
 
 > > Right now it is a two-step process:
-> > {{{
+> > 
+> > ```
 > > sage: R = QQ['t'].fraction_field()
 > > sage: t = R.gen()
-> > }}}
+> > ```
 > > This ticket is about combining that into 1 step using our modified syntactic sugar.
+
 > 
 > Therefore I think there is no need now to do that combining. 
 > 
 > Now this also works (perhaps didn't work at that time):
-> {{{
+> 
+> ```
 > sage: P.<t> = QQ[]
 > sage: f = t/(1-t)
 > sage: f
 > -t/(t - 1)
 > sage: f.parent()
 > Fraction Field of Univariate Polynomial Ring in t over Rational Field
-> }}}
+> ```
 > Then why need to get the generator of the fraction field(=function field)?
+
 
 Because if it was a polynomial, it would have different methods and not as easy to ducktype. This can be a bit annoying in code when you do something with division sometimes but not every time (say, `t^n for n in [-1,0,1]`). So I do the two steps in my personal code when this shows up. There also is a mild issue of having to do the conversions to the fraction field, which adds a bit of time but usually not significantly more.
 
@@ -929,7 +927,7 @@ Because if it was a polynomial, it would have different methods and not as easy 
 archive/issue_comments_004878.json:
 ```json
 {
-    "body": "Replying to [comment:25 tscrim]:\n> Replying to [comment:24 klee]:\n> > Replying to [comment:22 tscrim]:\n> > > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n> > \n> > When this ticket was created, I guess this was not available:\n> > {{{\n> > sage: R.<t> = FunctionField(QQ)\n> > }}}\n> > which is \"a convenient way of constructing a rational function field with a named variable.\" \n> \n> The next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)\n> \n> Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n\n`FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.\n\nOn the other hand, trying to make this\n\n```\nsage: R = QQ['x,y'].fraction_field()\nsage: x,y = R.gens()\n```\n\nto a one-step process by some syntatic sugar seems to have no good solution. \n\nI would suggest to close this ticket and open a new one with an achievable goal.",
+    "body": "Replying to [comment:25 tscrim]:\n> Replying to [comment:24 klee]:\n> > Replying to [comment:22 tscrim]:\n> > > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.\n\n> > \n> > When this ticket was created, I guess this was not available:\n> > \n> > ```\n> > sage: R.<t> = FunctionField(QQ)\n> > ```\n> > which is \"a convenient way of constructing a rational function field with a named variable.\" \n\n> \n> The next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)\n> \n> Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n\n\n`FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.\n\nOn the other hand, trying to make this\n\n```\nsage: R = QQ['x,y'].fraction_field()\nsage: x,y = R.gens()\n```\nto a one-step process by some syntatic sugar seems to have no good solution. \n\nI would suggest to close this ticket and open a new one with an achievable goal.",
     "created_at": "2020-07-09T05:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -942,16 +940,20 @@ Replying to [comment:25 tscrim]:
 > Replying to [comment:24 klee]:
 > > Replying to [comment:22 tscrim]:
 > > > That is not true. It is not about a lack of function fields but about an easy way to construct them with a variable.
+
 > > 
 > > When this ticket was created, I guess this was not available:
-> > {{{
+> > 
+> > ```
 > > sage: R.<t> = FunctionField(QQ)
-> > }}}
+> > ```
 > > which is "a convenient way of constructing a rational function field with a named variable." 
+
 > 
 > The next thing I would want to try would be to get a multivariate fraction field, which doesn't work using that construction. (See also comment:12.)
 > 
 > Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.
+
 
 `FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.
 
@@ -961,7 +963,6 @@ On the other hand, trying to make this
 sage: R = QQ['x,y'].fraction_field()
 sage: x,y = R.gens()
 ```
-
 to a one-step process by some syntatic sugar seems to have no good solution. 
 
 I would suggest to close this ticket and open a new one with an achievable goal.
@@ -973,7 +974,7 @@ I would suggest to close this ticket and open a new one with an achievable goal.
 archive/issue_comments_004879.json:
 ```json
 {
-    "body": "Replying to [comment:26 klee]:\n> Replying to [comment:25 tscrim]:\n> > Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n> \n> `FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.\n\nThat is a good point.\n\n> On the other hand, trying to make this\n> {{{\n> sage: R = QQ['x,y'].fraction_field()\n> sage: x,y = R.gens()\n> }}}\n> to a one-step process by some syntatic sugar seems to have no good solution. \n\nAlthough you can do this:\n\n```\nsage: R.<x,y> = FractionField(QQ['x,y'])\n```\n\nwhich is a bit of an abuse with some redundancy. However, it is a one-line thing.\n\n> I would suggest to close this ticket and open a new one with an achievable goal.\n\nI don't think that is a reason to close the ticket (I also disagree with your assessment that it is unachievable). Even still, this ticket could be recycled as the discussion above could prove useful to that effort.",
+    "body": "Replying to [comment:26 klee]:\n> Replying to [comment:25 tscrim]:\n> > Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.\n\n> \n> `FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.\n\n\nThat is a good point.\n\n> On the other hand, trying to make this\n> \n> ```\n> sage: R = QQ['x,y'].fraction_field()\n> sage: x,y = R.gens()\n> ```\n> to a one-step process by some syntatic sugar seems to have no good solution. \n\n\nAlthough you can do this:\n\n```\nsage: R.<x,y> = FractionField(QQ['x,y'])\n```\nwhich is a bit of an abuse with some redundancy. However, it is a one-line thing.\n\n> I would suggest to close this ticket and open a new one with an achievable goal.\n\n\nI don't think that is a reason to close the ticket (I also disagree with your assessment that it is unachievable). Even still, this ticket could be recycled as the discussion above could prove useful to that effort.",
     "created_at": "2020-07-09T23:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -985,27 +986,31 @@ archive/issue_comments_004879.json:
 Replying to [comment:26 klee]:
 > Replying to [comment:25 tscrim]:
 > > Although that does give an idea for extending the `FractionField(R)` to not just ignore the `names` parameter, but instead create the polynomial ring over the `R`. This would make it similar to `FunctionField`.
+
 > 
 > `FractionField(R)` is a bad naming. It can be confused with the fraction field of `R`. `FunctionField(R)` might be better, but the name `FunctionField` seems too much associated with function fields with one variable.
+
 
 That is a good point.
 
 > On the other hand, trying to make this
-> {{{
+> 
+> ```
 > sage: R = QQ['x,y'].fraction_field()
 > sage: x,y = R.gens()
-> }}}
+> ```
 > to a one-step process by some syntatic sugar seems to have no good solution. 
+
 
 Although you can do this:
 
 ```
 sage: R.<x,y> = FractionField(QQ['x,y'])
 ```
-
 which is a bit of an abuse with some redundancy. However, it is a one-line thing.
 
 > I would suggest to close this ticket and open a new one with an achievable goal.
+
 
 I don't think that is a reason to close the ticket (I also disagree with your assessment that it is unachievable). Even still, this ticket could be recycled as the discussion above could prove useful to that effort.
 
@@ -1016,7 +1021,7 @@ I don't think that is a reason to close the ticket (I also disagree with your as
 archive/issue_comments_004880.json:
 ```json
 {
-    "body": "Replying to [comment:27 tscrim]:\n \n> Although you can do this:\n> {{{\n> sage: R.<x,y> = FractionField(QQ['x,y'])\n> }}}\n> which is a bit of an abuse with some redundancy. However, it is a one-line thing.\n\nAh. So there is already a convenient method to create function fields of several variables.\n\n> I also disagree with your assessment that it is unachievable.\n\nI am at the point of not understanding what you have in mind.  \n\n> Even still, this ticket could be recycled as the discussion above could prove useful to that effort.\n\nOkay. No problem. Just please make the ticket description reflect the final solution.",
+    "body": "Replying to [comment:27 tscrim]:\n \n> Although you can do this:\n> \n> ```\n> sage: R.<x,y> = FractionField(QQ['x,y'])\n> ```\n> which is a bit of an abuse with some redundancy. However, it is a one-line thing.\n\n\nAh. So there is already a convenient method to create function fields of several variables.\n\n> I also disagree with your assessment that it is unachievable.\n\n\nI am at the point of not understanding what you have in mind.  \n\n> Even still, this ticket could be recycled as the discussion above could prove useful to that effort.\n\n\nOkay. No problem. Just please make the ticket description reflect the final solution.",
     "created_at": "2020-07-10T00:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/807",
     "type": "issue_comment",
@@ -1028,18 +1033,22 @@ archive/issue_comments_004880.json:
 Replying to [comment:27 tscrim]:
  
 > Although you can do this:
-> {{{
+> 
+> ```
 > sage: R.<x,y> = FractionField(QQ['x,y'])
-> }}}
+> ```
 > which is a bit of an abuse with some redundancy. However, it is a one-line thing.
+
 
 Ah. So there is already a convenient method to create function fields of several variables.
 
 > I also disagree with your assessment that it is unachievable.
 
+
 I am at the point of not understanding what you have in mind.  
 
 > Even still, this ticket could be recycled as the discussion above could prove useful to that effort.
+
 
 Okay. No problem. Just please make the ticket description reflect the final solution.
 

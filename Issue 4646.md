@@ -119,7 +119,7 @@ Changing keywords from "" to "release note".
 archive/issue_comments_034907.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> Hi Minh,\n> \n> here is draft 1. As mentioned there is likely some change log to be added for 3.2.1.final. Some of the data like release dates, final tally of tickets and so on still need to be filled in once we get closed to the real 3.2.1.\n\n\nThe first draft is good. I'm planning to edit notes for the release tour of Sage 3.2.1, and hopefully have some high-level stuff to patch against your first draft, before Sage 3.2.1 is released. So I can definitely give your patch a positive review as it now stands.",
+    "body": "Replying to [comment:1 mabshoff]:\n> Hi Minh,\n> \n> here is draft 1. As mentioned there is likely some change log to be added for 3.2.1.final. Some of the data like release dates, final tally of tickets and so on still need to be filled in once we get closed to the real 3.2.1.\n\n\n\nThe first draft is good. I'm planning to edit notes for the release tour of Sage 3.2.1, and hopefully have some high-level stuff to patch against your first draft, before Sage 3.2.1 is released. So I can definitely give your patch a positive review as it now stands.",
     "created_at": "2008-12-01T22:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4646",
     "type": "issue_comment",
@@ -132,6 +132,7 @@ Replying to [comment:1 mabshoff]:
 > Hi Minh,
 > 
 > here is draft 1. As mentioned there is likely some change log to be added for 3.2.1.final. Some of the data like release dates, final tally of tickets and so on still need to be filled in once we get closed to the real 3.2.1.
+
 
 
 The first draft is good. I'm planning to edit notes for the release tour of Sage 3.2.1, and hopefully have some high-level stuff to patch against your first draft, before Sage 3.2.1 is released. So I can definitely give your patch a positive review as it now stands.
@@ -190,7 +191,7 @@ Attachment [sage-3.2.1-release-notes-draft3.txt](tarball://root/attachments/some
 archive/issue_comments_034910.json:
 ```json
 {
-    "body": "\n```\n[04:23am] mabshoff|zzzz: craigcitro, mhansen: the problem is that we cleanup up which flags to consider.\n[04:24am] mhansen: I don't understand why this should affect a build from source.\n[04:36am] gabkdlly joined the chat room.\n[04:53am] mabshoff|zzzz: on sage.math it is likely an upgrade.\n[04:53am] mabshoff|zzzz: So the flags file with the old flags already existed.\n[04:54am] mabshoff|zzzz: I am not sure it is worth working around that since the\nproblem only happens when upgrading from 3.2, so in a couple releases this will \nbecome a non-issue.\n[04:54am] mhansen: I got this on my own box too.\n[04:56am] gabkdlly left the chat room. (\"Leaving.\")\n[05:00am] mabshoff|zzzz: Did you upgrade?\n[05:01am] mhansen: Yes\n[05:01am] mabshoff|zz:\n[05:01am] mabshoff|zz: delete $SAGE_LOCAL/lib/sage-flags.txt and the problem is gone\n[05:02am] mhansen: Yes, I know.  I fixed it on my box and sage.math.\n[05:02am] mabshoff|zz: thanks\n[05:02am] mabshoff|zz: It is an annoyance and I think we shouldn't add a workaround to the detection code.\n[05:03am] mabshoff|zz: The people who can upgrade will be able to fix it themselves, but we might want to add an FAQ entry\n[05:03am] mabshoff|zz: Going back to catch a few more z \n[05:03am] mhansen: Or send a preemptive email to sage-devel.\n[05:03am] mabshoff|zz: +1\n[05:04am] mabshoff|zz: knock yourself out \n[05:04am] mabshoff|zz: We might as well add  a warning to the release notes to \"KNOWN ISSUES\".\n[05:04am] mhansen: Too busy with #3950\n[05:04am] mabshoff|zz: I.e feel free to post a patch at #4646\n[05:05am] mabshoff|zz: Ok, I will do it then.\n```\n",
+    "body": "```\n[04:23am] mabshoff|zzzz: craigcitro, mhansen: the problem is that we cleanup up which flags to consider.\n[04:24am] mhansen: I don't understand why this should affect a build from source.\n[04:36am] gabkdlly joined the chat room.\n[04:53am] mabshoff|zzzz: on sage.math it is likely an upgrade.\n[04:53am] mabshoff|zzzz: So the flags file with the old flags already existed.\n[04:54am] mabshoff|zzzz: I am not sure it is worth working around that since the\nproblem only happens when upgrading from 3.2, so in a couple releases this will \nbecome a non-issue.\n[04:54am] mhansen: I got this on my own box too.\n[04:56am] gabkdlly left the chat room. (\"Leaving.\")\n[05:00am] mabshoff|zzzz: Did you upgrade?\n[05:01am] mhansen: Yes\n[05:01am] mabshoff|zz:\n[05:01am] mabshoff|zz: delete $SAGE_LOCAL/lib/sage-flags.txt and the problem is gone\n[05:02am] mhansen: Yes, I know.  I fixed it on my box and sage.math.\n[05:02am] mabshoff|zz: thanks\n[05:02am] mabshoff|zz: It is an annoyance and I think we shouldn't add a workaround to the detection code.\n[05:03am] mabshoff|zz: The people who can upgrade will be able to fix it themselves, but we might want to add an FAQ entry\n[05:03am] mabshoff|zz: Going back to catch a few more z \n[05:03am] mhansen: Or send a preemptive email to sage-devel.\n[05:03am] mabshoff|zz: +1\n[05:04am] mabshoff|zz: knock yourself out \n[05:04am] mabshoff|zz: We might as well add  a warning to the release notes to \"KNOWN ISSUES\".\n[05:04am] mhansen: Too busy with #3950\n[05:04am] mabshoff|zz: I.e feel free to post a patch at #4646\n[05:05am] mabshoff|zz: Ok, I will do it then.\n```",
     "created_at": "2008-12-02T13:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4646",
     "type": "issue_comment",
@@ -198,7 +199,6 @@ archive/issue_comments_034910.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [04:23am] mabshoff|zzzz: craigcitro, mhansen: the problem is that we cleanup up which flags to consider.
@@ -228,7 +228,6 @@ become a non-issue.
 [05:04am] mabshoff|zz: I.e feel free to post a patch at #4646
 [05:05am] mabshoff|zz: Ok, I will do it then.
 ```
-
 
 
 

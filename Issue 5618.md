@@ -3,7 +3,7 @@
 archive/issues_005618.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  joyner\n\nAlthough this works:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\n```\n\nthe resulting gap element doesn't have the correct properties:\n\n```\nsage: K(gap.E(3)) == z  # Good!\nTrue\nsage: gap(K(gap.E(3))) == gap.E(3)  # Bad!\nFalse\n```\n\n\nThis causes the following problem with group characters.\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2])\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `CONDUCTOR' on 1 arguments\n```\n\nNote: the above works if one takes z = gap.E(3).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5618\n\n",
+    "body": "Assignee: tbd\n\nCC:  joyner\n\nAlthough this works:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\n```\nthe resulting gap element doesn't have the correct properties:\n\n```\nsage: K(gap.E(3)) == z  # Good!\nTrue\nsage: gap(K(gap.E(3))) == gap.E(3)  # Bad!\nFalse\n```\n\nThis causes the following problem with group characters.\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2])\n...\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `CONDUCTOR' on 1 arguments\n```\nNote: the above works if one takes z = gap.E(3).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5618\n\n",
     "created_at": "2009-03-26T19:40:53Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ zeta3
 sage: gap(z)
 zeta3
 ```
-
 the resulting gap element doesn't have the correct properties:
 
 ```
@@ -38,7 +37,6 @@ True
 sage: gap(K(gap.E(3))) == gap.E(3)  # Bad!
 False
 ```
-
 
 This causes the following problem with group characters.
 
@@ -52,7 +50,6 @@ sage: c = K.character([1,z,z**2])
 RuntimeError: Gap produced error output
 Error, no 1st choice method found for `CONDUCTOR' on 1 arguments
 ```
-
 Note: the above works if one takes z = gap.E(3).
 
 Issue created by migration from https://trac.sagemath.org/ticket/5618
@@ -66,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5618
 archive/issue_comments_043780.json:
 ```json
 {
-    "body": "Here is some problem analysis:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\nsage: K(gap(z))\nzeta3\nsage: gap.E(3)\nE(3)\nsage: gap.E(3) == gap(z)\nFalse\nsage: K(gap.E(3)) == K(gap(z)) == z\nTrue\n```\n\n\nSo, apparently GAP treats \"the same\" elements of a cyclotomic field differently if they have different names. But this isn't particularly surprising, since the two cyclotomic fields seem to have a totaly different representation in GAP:\n\n```\nsage: ZFgap = gap('CyclotomicField(3)')\nsage: Kgap = gap(K)\nsage: Kgap\n<algebraic extension over the Rationals of degree 2>\nsage: ZFgap\nCF(3)\nsage: ZFgap.GeneratorsOfField()\n[ E(3) ]\nsage: Kgap.GeneratorsOfField()\n[ zeta3 ]\n```\n\n\nNote that comparison of the two field in the GAP interface results in an error:\n\n\n```\nsage: Kgap == ZFgap\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (47, 0))\n\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/king/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7061)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:6943)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __cmp__(self, other)\n   1527                                  other.name())) == P._true_symbol():\n   1528             return 0\n-> 1529         elif P.eval(\"%s %s %s\"%(self.name(), P._lessthan_symbol(), other.name())) == P._true_symbol():\n   1530             return -1\n   1531         elif P.eval(\"%s %s %s\"%(self.name(), P._greaterthan_symbol(), other.name())) == P._true_symbol():\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in eval(self, x, newlines, strip, **kwds)\n    478             input_line += ';'\n    479\n--> 480         result = Expect.eval(self, input_line, **kwds)\n    481\n    482         if not newlines:\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in eval(self, code, strip, synchronize, locals, **kwds)\n    981         try:\n    982             with gc_disabled():\n--> 983                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    984         except KeyboardInterrupt:\n    985             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    720                         return ''\n    721                 else:\n--> 722                     raise RuntimeError, message\n    723\n    724         except KeyboardInterrupt:\n\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage2 < $sage8;\n```\n\n\nBut GAP indeed considers the two fields to be different:\n\n```\nsage: gap.eval(Kgap.name() + ' = ' + ZFgap.name())\n'false'\n```\n\n\nSo, what does all this mean?\n\n1. The `__cmp__` method of the GAP interface has a bug. An error raised by GAP when attempting \"<\" or \">\" should be caught and then \"=\" should be tried.\n2. A GAP cyclotomic field is different from the GAP version of a Sage cyclotomic field. This is since the GAP version of a Sage cyclotomic field is a number field. It could be solved by providing a genuine `_gap_init_` method for Sage cyclotomic fields (currently, it is inherited from number fields).\n\nIt seems likely to me that after implementing 2., things will already work. But 1. should be fixed as well.",
+    "body": "Here is some problem analysis:\n\n```\nsage: K = CyclotomicField(3)\nsage: z = K.an_element(); z\nzeta3\nsage: gap(z)\nzeta3\nsage: K(gap(z))\nzeta3\nsage: gap.E(3)\nE(3)\nsage: gap.E(3) == gap(z)\nFalse\nsage: K(gap.E(3)) == K(gap(z)) == z\nTrue\n```\n\nSo, apparently GAP treats \"the same\" elements of a cyclotomic field differently if they have different names. But this isn't particularly surprising, since the two cyclotomic fields seem to have a totaly different representation in GAP:\n\n```\nsage: ZFgap = gap('CyclotomicField(3)')\nsage: Kgap = gap(K)\nsage: Kgap\n<algebraic extension over the Rationals of degree 2>\nsage: ZFgap\nCF(3)\nsage: ZFgap.GeneratorsOfField()\n[ E(3) ]\nsage: Kgap.GeneratorsOfField()\n[ zeta3 ]\n```\n\nNote that comparison of the two field in the GAP interface results in an error:\n\n```\nsage: Kgap == ZFgap\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (47, 0))\n\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/king/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7061)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:6943)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __cmp__(self, other)\n   1527                                  other.name())) == P._true_symbol():\n   1528             return 0\n-> 1529         elif P.eval(\"%s %s %s\"%(self.name(), P._lessthan_symbol(), other.name())) == P._true_symbol():\n   1530             return -1\n   1531         elif P.eval(\"%s %s %s\"%(self.name(), P._greaterthan_symbol(), other.name())) == P._true_symbol():\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in eval(self, x, newlines, strip, **kwds)\n    478             input_line += ';'\n    479\n--> 480         result = Expect.eval(self, input_line, **kwds)\n    481\n    482         if not newlines:\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in eval(self, code, strip, synchronize, locals, **kwds)\n    981         try:\n    982             with gc_disabled():\n--> 983                 return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n    984         except KeyboardInterrupt:\n    985             # DO NOT CATCH KeyboardInterrupt, as it is being caught\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    720                         return ''\n    721                 else:\n--> 722                     raise RuntimeError, message\n    723\n    724         except KeyboardInterrupt:\n\nRuntimeError: Gap produced error output\nError, no 1st choice method found for `LT' on 2 arguments\n\n   executing $sage2 < $sage8;\n```\n\nBut GAP indeed considers the two fields to be different:\n\n```\nsage: gap.eval(Kgap.name() + ' = ' + ZFgap.name())\n'false'\n```\n\nSo, what does all this mean?\n\n1. The `__cmp__` method of the GAP interface has a bug. An error raised by GAP when attempting \"<\" or \">\" should be caught and then \"=\" should be tried.\n2. A GAP cyclotomic field is different from the GAP version of a Sage cyclotomic field. This is since the GAP version of a Sage cyclotomic field is a number field. It could be solved by providing a genuine `_gap_init_` method for Sage cyclotomic fields (currently, it is inherited from number fields).\n\nIt seems likely to me that after implementing 2., things will already work. But 1. should be fixed as well.",
     "created_at": "2010-07-03T11:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5618",
     "type": "issue_comment",
@@ -93,7 +90,6 @@ sage: K(gap.E(3)) == K(gap(z)) == z
 True
 ```
 
-
 So, apparently GAP treats "the same" elements of a cyclotomic field differently if they have different names. But this isn't particularly surprising, since the two cyclotomic fields seem to have a totaly different representation in GAP:
 
 ```
@@ -109,9 +105,7 @@ sage: Kgap.GeneratorsOfField()
 [ zeta3 ]
 ```
 
-
 Note that comparison of the two field in the GAP interface results in an error:
-
 
 ```
 sage: Kgap == ZFgap
@@ -162,14 +156,12 @@ Error, no 1st choice method found for `LT' on 2 arguments
    executing $sage2 < $sage8;
 ```
 
-
 But GAP indeed considers the two fields to be different:
 
 ```
 sage: gap.eval(Kgap.name() + ' = ' + ZFgap.name())
 'false'
 ```
-
 
 So, what does all this mean?
 
@@ -239,7 +231,7 @@ Changing keywords from "" to "gap interface cyclotomic field".
 archive/issue_comments_043784.json:
 ```json
 {
-    "body": "Attachment [trac_5618_gap_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket5618/trac_5618_gap_for_cyclotomic_fields.patch) by @simon-king-jena created at 2010-07-04 18:46:22\n\nI created the patch after the patches from #8909 and #9423 -- so, it is possible that the new patch actually depends on the two other tickets (but one of them already has a positive review).\n\nWith the patch, a cyclotomic field in Sage is represented as a cyclotomic field (and not as a number field) in GAP:\n\n```\nsage: Z = CyclotomicField(8)\nsage: gap(Z)\nCF(8)\nsage: Z(gap(Z.0^2))\nzeta8^2\n```\n\n\nThe advantage is that the motivating example from the ticket description now works (and is used as a doctest):\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2]); c\nCharacter of Subgroup of AlternatingGroup(4) generated by [(2,3,4)]\nsage: c(g^2); z^2\n-zeta3 - 1\n-zeta3 - 1\n```\n\n\nThe disadvantage: While it is still possible to chose the name of a number field generator in GAP as in Sage\n\n```\nsage: K.<tau> = NumberField(x^2+x+1)\nsage: gap(K)\n<algebraic extension over the Rationals of degree 3>\nsage: K.0\ntau\nsage: gap(K.0)\ntau\n```\n\nit is now impossible to do the same for cyclotomic fields:\n\n```\nsage: L.<zeta> = CyclotomicField(3)\nsage: L.0\nzeta\nsage: gap(L.0)\nE(3)\n```\n\n\nBy consequence, I had to fix a couple of doctests. All doctests pass, but I can not vouch for external code.",
+    "body": "Attachment [trac_5618_gap_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket5618/trac_5618_gap_for_cyclotomic_fields.patch) by @simon-king-jena created at 2010-07-04 18:46:22\n\nI created the patch after the patches from #8909 and #9423 -- so, it is possible that the new patch actually depends on the two other tickets (but one of them already has a positive review).\n\nWith the patch, a cyclotomic field in Sage is represented as a cyclotomic field (and not as a number field) in GAP:\n\n```\nsage: Z = CyclotomicField(8)\nsage: gap(Z)\nCF(8)\nsage: Z(gap(Z.0^2))\nzeta8^2\n```\n\nThe advantage is that the motivating example from the ticket description now works (and is used as a doctest):\n\n```\nsage: H = AlternatingGroup(4)\nsage: g = H.list()[1]\nsage: K = H.subgroup([g])\nsage: z = CyclotomicField(3).an_element(); z\nsage: c = K.character([1,z,z**2]); c\nCharacter of Subgroup of AlternatingGroup(4) generated by [(2,3,4)]\nsage: c(g^2); z^2\n-zeta3 - 1\n-zeta3 - 1\n```\n\nThe disadvantage: While it is still possible to chose the name of a number field generator in GAP as in Sage\n\n```\nsage: K.<tau> = NumberField(x^2+x+1)\nsage: gap(K)\n<algebraic extension over the Rationals of degree 3>\nsage: K.0\ntau\nsage: gap(K.0)\ntau\n```\nit is now impossible to do the same for cyclotomic fields:\n\n```\nsage: L.<zeta> = CyclotomicField(3)\nsage: L.0\nzeta\nsage: gap(L.0)\nE(3)\n```\n\nBy consequence, I had to fix a couple of doctests. All doctests pass, but I can not vouch for external code.",
     "created_at": "2010-07-04T18:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5618",
     "type": "issue_comment",
@@ -262,7 +254,6 @@ sage: Z(gap(Z.0^2))
 zeta8^2
 ```
 
-
 The advantage is that the motivating example from the ticket description now works (and is used as a doctest):
 
 ```
@@ -277,7 +268,6 @@ sage: c(g^2); z^2
 -zeta3 - 1
 ```
 
-
 The disadvantage: While it is still possible to chose the name of a number field generator in GAP as in Sage
 
 ```
@@ -289,7 +279,6 @@ tau
 sage: gap(K.0)
 tau
 ```
-
 it is now impossible to do the same for cyclotomic fields:
 
 ```
@@ -299,7 +288,6 @@ zeta
 sage: gap(L.0)
 E(3)
 ```
-
 
 By consequence, I had to fix a couple of doctests. All doctests pass, but I can not vouch for external code.
 
@@ -328,7 +316,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_043786.json:
 ```json
 {
-    "body": "The patch simply converts sage Cyclotomic fields to gap cyclotomic fields instead of generic number fields. The disadvantage presented is just a limitation of gap, not sage.\n\nThe semantics of gap(CyclotomicField(n)) have changed!\nDeprecationWarning would be too pedantic here. Current behaviour of sage is considered a bug and I cannot see any functionality loss. So the code is ok.\n\nThe doctests are relevant. However, this patch depends on #9423 and one doctest has disappeared in that patch. That doctest is relevant, because it shows the change in the code. So, I would add the output of:\n\n\n```\nsage: F=CyclotomicField(8)\nsage: F.gen()\nsage: F._gap_init_() # the following variable name $sage1 represents the F.base_ring() in gap and is somehow random\nsage: f=gap(F)\nsage: f.GeneratorsOfDivisionRing() \n```\n\n\nin NumberField_cyclotomic._gap_init_()",
+    "body": "The patch simply converts sage Cyclotomic fields to gap cyclotomic fields instead of generic number fields. The disadvantage presented is just a limitation of gap, not sage.\n\nThe semantics of gap(CyclotomicField(n)) have changed!\nDeprecationWarning would be too pedantic here. Current behaviour of sage is considered a bug and I cannot see any functionality loss. So the code is ok.\n\nThe doctests are relevant. However, this patch depends on #9423 and one doctest has disappeared in that patch. That doctest is relevant, because it shows the change in the code. So, I would add the output of:\n\n```\nsage: F=CyclotomicField(8)\nsage: F.gen()\nsage: F._gap_init_() # the following variable name $sage1 represents the F.base_ring() in gap and is somehow random\nsage: f=gap(F)\nsage: f.GeneratorsOfDivisionRing() \n```\n\nin NumberField_cyclotomic._gap_init_()",
     "created_at": "2010-12-04T16:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5618",
     "type": "issue_comment",
@@ -344,7 +332,6 @@ DeprecationWarning would be too pedantic here. Current behaviour of sage is cons
 
 The doctests are relevant. However, this patch depends on #9423 and one doctest has disappeared in that patch. That doctest is relevant, because it shows the change in the code. So, I would add the output of:
 
-
 ```
 sage: F=CyclotomicField(8)
 sage: F.gen()
@@ -352,7 +339,6 @@ sage: F._gap_init_() # the following variable name $sage1 represents the F.base_
 sage: f=gap(F)
 sage: f.GeneratorsOfDivisionRing() 
 ```
-
 
 in NumberField_cyclotomic._gap_init_()
 

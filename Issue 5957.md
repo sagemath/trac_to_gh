@@ -3,7 +3,7 @@
 archive/issues_005957.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis happens with gcc 4.3.3 on iras and cicero:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2.rc0/sage-3.4.2.rc0-ciero-gcc-4.3.3/\ndevel/sage/sage/matrix/matrix_symbolic_dense.pyx\", line 413:\n   sage: M.determinant()\nExpected:\n   4*x - 6\nGot:\n   determinant(sage513)\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5957\n\n",
+    "body": "Assignee: mabshoff\n\nThis happens with gcc 4.3.3 on iras and cicero:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2.rc0/sage-3.4.2.rc0-ciero-gcc-4.3.3/\ndevel/sage/sage/matrix/matrix_symbolic_dense.pyx\", line 413:\n   sage: M.determinant()\nExpected:\n   4*x - 6\nGot:\n   determinant(sage513)\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5957\n\n",
     "created_at": "2009-05-01T13:34:36Z",
     "labels": [
         "component: doctest coverage",
@@ -33,7 +33,6 @@ Got:
    determinant(sage513)
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5957
 

@@ -113,7 +113,7 @@ Should I rewrite it to the new matrix automorphism function?
 archive/issue_comments_028218.json:
 ```json
 {
-    "body": "> (1) How is a block design a nonlinear binary code? Via its incidence matrix?\n\nCorrect.\n\n> If yes, then users who wish to \"play\" with block designs using Sage will want commands which are fairly intuitive.\n\nI agree. Optimally, a `BlockDesign` class would extend a more general `IncidenceStructure` class, and much of the functionality would go in there. Incidentally, \"incidence structure\" is yet another word for hypergraph/nonlinear binary code... Without polish, the pydesign classes don't hold up to the current standards for inclusion into Sage, and the `BaseBlockDesign` class itself doesn't seem to provide much functionality. It seems much smarter to implement these things \"the Sage way,\" porting the needed functions from pydesign.\n\n> ... the automorphism of a block design is computed using NICE, so that function *does* call Cython. \n> Should I rewrite it to the new matrix automorphism function?\n\nYou should probably be using the nonlinear binary code routines for this (you should only use the matrix automorphism routines for matrices which have more than 0 and 1 as entries), as they would probably be the fastest. Certainly faster than NICE, since these routines know not to include the blocks in the partitions which determine the search tree (I can explain a little more if you want...).\n\n> (3) I'm happy to scrap the XML stuff for now and maybe add it back in later. I don't really understand how they use that interface anyway.\n\nIn my opinion, the way block designs are stored (in XML) is about the least efficient way possible. For example, the Fano plane looks like this (snipped from one of the patches):\n\n```\n BD.xml(name=\"Fano plane\") \n \t219\t            <?xml version=\"1.0\"?> \n \t220\t            <block design \n \t221\t             b=\"7\" \n \t222\t             id=\"Fano plane\" \n \t223\t             v=\"7\"> \n \t224\t             <blocks ordered=\"true\"> \n \t225\t              <block> \n \t226\t               <z>0</z> \n \t227\t               <z>1</z> \n \t228\t               <z>2</z> \n \t229\t              </block> \n \t230\t              <block> \n \t231\t               <z>0</z> \n \t232\t               <z>3</z> \n \t233\t               <z>4</z> \n \t234\t              </block> \n \t235\t              <block> \n \t236\t               <z>0</z> \n \t237\t               <z>5</z> \n \t238\t               <z>6</z> \n \t239\t              </block> \n \t240\t              <block> \n \t241\t               <z>1</z> \n \t242\t               <z>3</z> \n \t243\t               <z>5</z> \n \t244\t              </block> \n \t245\t              <block> \n \t246\t               <z>1</z> \n \t247\t               <z>4</z> \n \t248\t               <z>6</z> \n \t249\t              </block> \n \t250\t              <block> \n \t251\t               <z>2</z> \n \t252\t               <z>3</z> \n \t253\t               <z>6</z> \n \t254\t              </block> \n \t255\t              <block> \n \t256\t               <z>2</z> \n \t257\t               <z>4</z> \n \t258\t               <z>5</z> \n \t259\t              </block> \n \t260\t             </blocks> \n \t261\t            </block design> \n```\n\n\nOnce people start using large block designs, this would be completely ridiculous. That's three whole lines for one block on seven points-- this should fit into at most one byte!",
+    "body": "> (1) How is a block design a nonlinear binary code? Via its incidence matrix?\n\n\nCorrect.\n\n> If yes, then users who wish to \"play\" with block designs using Sage will want commands which are fairly intuitive.\n\n\nI agree. Optimally, a `BlockDesign` class would extend a more general `IncidenceStructure` class, and much of the functionality would go in there. Incidentally, \"incidence structure\" is yet another word for hypergraph/nonlinear binary code... Without polish, the pydesign classes don't hold up to the current standards for inclusion into Sage, and the `BaseBlockDesign` class itself doesn't seem to provide much functionality. It seems much smarter to implement these things \"the Sage way,\" porting the needed functions from pydesign.\n\n> ... the automorphism of a block design is computed using NICE, so that function *does* call Cython. \n> Should I rewrite it to the new matrix automorphism function?\n\n\nYou should probably be using the nonlinear binary code routines for this (you should only use the matrix automorphism routines for matrices which have more than 0 and 1 as entries), as they would probably be the fastest. Certainly faster than NICE, since these routines know not to include the blocks in the partitions which determine the search tree (I can explain a little more if you want...).\n\n> (3) I'm happy to scrap the XML stuff for now and maybe add it back in later. I don't really understand how they use that interface anyway.\n\n\nIn my opinion, the way block designs are stored (in XML) is about the least efficient way possible. For example, the Fano plane looks like this (snipped from one of the patches):\n\n```\n BD.xml(name=\"Fano plane\") \n \t219\t            <?xml version=\"1.0\"?> \n \t220\t            <block design \n \t221\t             b=\"7\" \n \t222\t             id=\"Fano plane\" \n \t223\t             v=\"7\"> \n \t224\t             <blocks ordered=\"true\"> \n \t225\t              <block> \n \t226\t               <z>0</z> \n \t227\t               <z>1</z> \n \t228\t               <z>2</z> \n \t229\t              </block> \n \t230\t              <block> \n \t231\t               <z>0</z> \n \t232\t               <z>3</z> \n \t233\t               <z>4</z> \n \t234\t              </block> \n \t235\t              <block> \n \t236\t               <z>0</z> \n \t237\t               <z>5</z> \n \t238\t               <z>6</z> \n \t239\t              </block> \n \t240\t              <block> \n \t241\t               <z>1</z> \n \t242\t               <z>3</z> \n \t243\t               <z>5</z> \n \t244\t              </block> \n \t245\t              <block> \n \t246\t               <z>1</z> \n \t247\t               <z>4</z> \n \t248\t               <z>6</z> \n \t249\t              </block> \n \t250\t              <block> \n \t251\t               <z>2</z> \n \t252\t               <z>3</z> \n \t253\t               <z>6</z> \n \t254\t              </block> \n \t255\t              <block> \n \t256\t               <z>2</z> \n \t257\t               <z>4</z> \n \t258\t               <z>5</z> \n \t259\t              </block> \n \t260\t             </blocks> \n \t261\t            </block design> \n```\n\nOnce people start using large block designs, this would be completely ridiculous. That's three whole lines for one block on seven points-- this should fit into at most one byte!",
     "created_at": "2008-09-10T13:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -124,18 +124,22 @@ archive/issue_comments_028218.json:
 
 > (1) How is a block design a nonlinear binary code? Via its incidence matrix?
 
+
 Correct.
 
 > If yes, then users who wish to "play" with block designs using Sage will want commands which are fairly intuitive.
+
 
 I agree. Optimally, a `BlockDesign` class would extend a more general `IncidenceStructure` class, and much of the functionality would go in there. Incidentally, "incidence structure" is yet another word for hypergraph/nonlinear binary code... Without polish, the pydesign classes don't hold up to the current standards for inclusion into Sage, and the `BaseBlockDesign` class itself doesn't seem to provide much functionality. It seems much smarter to implement these things "the Sage way," porting the needed functions from pydesign.
 
 > ... the automorphism of a block design is computed using NICE, so that function *does* call Cython. 
 > Should I rewrite it to the new matrix automorphism function?
 
+
 You should probably be using the nonlinear binary code routines for this (you should only use the matrix automorphism routines for matrices which have more than 0 and 1 as entries), as they would probably be the fastest. Certainly faster than NICE, since these routines know not to include the blocks in the partitions which determine the search tree (I can explain a little more if you want...).
 
 > (3) I'm happy to scrap the XML stuff for now and maybe add it back in later. I don't really understand how they use that interface anyway.
+
 
 In my opinion, the way block designs are stored (in XML) is about the least efficient way possible. For example, the Fano plane looks like this (snipped from one of the patches):
 
@@ -185,7 +189,6 @@ In my opinion, the way block designs are stored (in XML) is about the least effi
  	260	             </blocks> 
  	261	            </block design> 
 ```
-
 
 Once people start using large block designs, this would be completely ridiculous. That's three whole lines for one block on seven points-- this should fit into at most one byte!
 
@@ -240,7 +243,7 @@ Michae
 archive/issue_comments_028221.json:
 ```json
 {
-    "body": "> Since this requires an spkg I see little possibility for \n\nHuh?? What spkg??\n\nThis is (AFAIK) pure Sage/python. I stripped out the majority of the original pydesign code and rewrote it. It does have one (very short) method which outputs the design in xml. Are you suggesting to delete that method? It does not communicate in xml (though I think the original pydesign has that option) since I stripped that part out. I did leave the xml output method (which I partially wrote) in.",
+    "body": "> Since this requires an spkg I see little possibility for \n\n\nHuh?? What spkg??\n\nThis is (AFAIK) pure Sage/python. I stripped out the majority of the original pydesign code and rewrote it. It does have one (very short) method which outputs the design in xml. Are you suggesting to delete that method? It does not communicate in xml (though I think the original pydesign has that option) since I stripped that part out. I did leave the xml output method (which I partially wrote) in.",
     "created_at": "2008-09-21T12:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -250,6 +253,7 @@ archive/issue_comments_028221.json:
 ```
 
 > Since this requires an spkg I see little possibility for 
+
 
 Huh?? What spkg??
 
@@ -262,7 +266,7 @@ This is (AFAIK) pure Sage/python. I stripped out the majority of the original py
 archive/issue_comments_028222.json:
 ```json
 {
-    "body": "Replying to [comment:8 wdj]:\n> > Since this requires an spkg I see little possibility for \n> \n> Huh?? What spkg??\n\nOk, taking a closer look I see that you copy some substantial amount of code from that Python code base. It seems to duplicate a bunch if things already in Sage in one form or another, i.e. \n\n* def binomial_new(n, k)\n* def int_div\n\nThe version number code is more than ugly and uses IMHO rather non-standard tags, i.e. why the external CVS version?\n\n> This is (AFAIK) pure Sage/python. I stripped out the majority of the original pydesign code and rewrote it. It does have one (very short) method which outputs the design in xml. Are you suggesting to delete that method? It does not communicate in xml (though I think the original pydesign has that option) since I stripped that part out. I did leave the xml output method (which I partially wrote) in.\n\nThen why add the XML method? Is that some kind of standard that is actually used by other code? As rlm originally pointed out: If you turn 7 bits of info into a couple dozen lines of ASCII the efficiency goes right out of the window and it isn't exactly human readable.\n\nThis ticket also does not belong to the sage-combinat milestone unless you plan to submit the code via the sage-combinat patch server. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 wdj]:\n> > Since this requires an spkg I see little possibility for \n\n> \n> Huh?? What spkg??\n\n\nOk, taking a closer look I see that you copy some substantial amount of code from that Python code base. It seems to duplicate a bunch if things already in Sage in one form or another, i.e. \n\n* def binomial_new(n, k)\n* def int_div\n\nThe version number code is more than ugly and uses IMHO rather non-standard tags, i.e. why the external CVS version?\n\n> This is (AFAIK) pure Sage/python. I stripped out the majority of the original pydesign code and rewrote it. It does have one (very short) method which outputs the design in xml. Are you suggesting to delete that method? It does not communicate in xml (though I think the original pydesign has that option) since I stripped that part out. I did leave the xml output method (which I partially wrote) in.\n\n\nThen why add the XML method? Is that some kind of standard that is actually used by other code? As rlm originally pointed out: If you turn 7 bits of info into a couple dozen lines of ASCII the efficiency goes right out of the window and it isn't exactly human readable.\n\nThis ticket also does not belong to the sage-combinat milestone unless you plan to submit the code via the sage-combinat patch server. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-21T17:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -273,8 +277,10 @@ archive/issue_comments_028222.json:
 
 Replying to [comment:8 wdj]:
 > > Since this requires an spkg I see little possibility for 
+
 > 
 > Huh?? What spkg??
+
 
 Ok, taking a closer look I see that you copy some substantial amount of code from that Python code base. It seems to duplicate a bunch if things already in Sage in one form or another, i.e. 
 
@@ -284,6 +290,7 @@ Ok, taking a closer look I see that you copy some substantial amount of code fro
 The version number code is more than ugly and uses IMHO rather non-standard tags, i.e. why the external CVS version?
 
 > This is (AFAIK) pure Sage/python. I stripped out the majority of the original pydesign code and rewrote it. It does have one (very short) method which outputs the design in xml. Are you suggesting to delete that method? It does not communicate in xml (though I think the original pydesign has that option) since I stripped that part out. I did leave the xml output method (which I partially wrote) in.
+
 
 Then why add the XML method? Is that some kind of standard that is actually used by other code? As rlm originally pointed out: If you turn 7 bits of info into a couple dozen lines of ASCII the efficiency goes right out of the window and it isn't exactly human readable.
 
@@ -355,7 +362,7 @@ apply 10575 and 10576 to 3.1.3.alpha0.
 archive/issue_comments_028225.json:
 ```json
 {
-    "body": "Replying to [comment:11 wdj]:\n> I think I have implemented everything both Robert M and Michael have suggested. It needs more functionality but this is a basic start and passes sage -testall. To install,\n> apply 10575 and 10576 to 3.1.3.alpha0.\n\nThere are many added functions without doctests -- my hands are tied, those are the rules. Also, the format \n\n```\n\"\"\" \n'designs' package. \n \nModules: \n \n    block_design \n    ext_rep \n\"\"\" \n \n__version__     = '0.7' \n_revision       = '$Id: __init__.py 274 2004-11-18 13:13:10Z peter $' \n_author         = 'Peter Dobcsanyi <peter@designtheory.org>, David Joyner <wdjoyner@gmail.com>' \n\t \nLicense = ''' \nCopyright (c) 2004, 2008 Peter Dobcsanyi, David Joyner. \nThis program is free software; you can redistribute it and/or modify it \nunder the terms of the GNU General Public License as published by the \nFree Software Foundation; either version 2 of the License, or (at your \noption) any later version.  This program is distributed in the hope that \nit will be useful, but WITHOUT ANY WARRANTY; without even the implied \nwarranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the \nGNU General Public License for more details. \n''' \n```\n\nmismatches with almost every other sage module out there.\n\nIf you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`, so I'm not sure why it's there. `int_div`, `binomial_new` similarly don't seem necessary. \n\n`ProjectiveGeometryDesign` is a perfect example, I think, of how not to use the GAP interface in Sage. I think the number of calls to `gap.eval` could certainly be reduced.\n\n`IncidenceStructure` should not be the base class for block designs, since it is in fact much more general than block designs.\n\nWhy is `#!/usr/bin/env python` appearing in the Sage library?",
+    "body": "Replying to [comment:11 wdj]:\n> I think I have implemented everything both Robert M and Michael have suggested. It needs more functionality but this is a basic start and passes sage -testall. To install,\n> apply 10575 and 10576 to 3.1.3.alpha0.\n\n\nThere are many added functions without doctests -- my hands are tied, those are the rules. Also, the format \n\n```\n\"\"\" \n'designs' package. \n \nModules: \n \n    block_design \n    ext_rep \n\"\"\" \n \n__version__     = '0.7' \n_revision       = '$Id: __init__.py 274 2004-11-18 13:13:10Z peter $' \n_author         = 'Peter Dobcsanyi <peter@designtheory.org>, David Joyner <wdjoyner@gmail.com>' \n\t \nLicense = ''' \nCopyright (c) 2004, 2008 Peter Dobcsanyi, David Joyner. \nThis program is free software; you can redistribute it and/or modify it \nunder the terms of the GNU General Public License as published by the \nFree Software Foundation; either version 2 of the License, or (at your \noption) any later version.  This program is distributed in the hope that \nit will be useful, but WITHOUT ANY WARRANTY; without even the implied \nwarranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the \nGNU General Public License for more details. \n''' \n```\nmismatches with almost every other sage module out there.\n\nIf you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`, so I'm not sure why it's there. `int_div`, `binomial_new` similarly don't seem necessary. \n\n`ProjectiveGeometryDesign` is a perfect example, I think, of how not to use the GAP interface in Sage. I think the number of calls to `gap.eval` could certainly be reduced.\n\n`IncidenceStructure` should not be the base class for block designs, since it is in fact much more general than block designs.\n\nWhy is `#!/usr/bin/env python` appearing in the Sage library?",
     "created_at": "2008-09-24T01:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -367,6 +374,7 @@ archive/issue_comments_028225.json:
 Replying to [comment:11 wdj]:
 > I think I have implemented everything both Robert M and Michael have suggested. It needs more functionality but this is a basic start and passes sage -testall. To install,
 > apply 10575 and 10576 to 3.1.3.alpha0.
+
 
 There are many added functions without doctests -- my hands are tied, those are the rules. Also, the format 
 
@@ -395,7 +403,6 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details. 
 ''' 
 ```
-
 mismatches with almost every other sage module out there.
 
 If you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`, so I'm not sure why it's there. `int_div`, `binomial_new` similarly don't seem necessary. 
@@ -495,7 +502,7 @@ This is not a discussion for this particular ticket, but for sage-devel.
 archive/issue_comments_028230.json:
 ```json
 {
-    "body": "Replying to [comment:16 AlexGhitza]:\n> Actually, can I suggest getting rid of the \"trac_\" part and just going with \"XXXX-description-of-patch.patch\"?  Our policy is that all patches go through trac, so it's somewhat redundant.  Also, it's quicker easier to tab-complete if the \"trac_\" prefix is not there.\n\nI use that prefix for all the patches I apply to contrast them with the spkgs I merge, so I am strongly in favor of using the prefix. Either way, encoding the ticket is essential to make things easy.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:16 AlexGhitza]:\n> Actually, can I suggest getting rid of the \"trac_\" part and just going with \"XXXX-description-of-patch.patch\"?  Our policy is that all patches go through trac, so it's somewhat redundant.  Also, it's quicker easier to tab-complete if the \"trac_\" prefix is not there.\n\n\nI use that prefix for all the patches I apply to contrast them with the spkgs I merge, so I am strongly in favor of using the prefix. Either way, encoding the ticket is essential to make things easy.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T01:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -506,6 +513,7 @@ archive/issue_comments_028230.json:
 
 Replying to [comment:16 AlexGhitza]:
 > Actually, can I suggest getting rid of the "trac_" part and just going with "XXXX-description-of-patch.patch"?  Our policy is that all patches go through trac, so it's somewhat redundant.  Also, it's quicker easier to tab-complete if the "trac_" prefix is not there.
+
 
 I use that prefix for all the patches I apply to contrast them with the spkgs I merge, so I am strongly in favor of using the prefix. Either way, encoding the ticket is essential to make things easy.
 
@@ -615,7 +623,7 @@ Thank you for putting up with such a tedious review process. This new patch is l
 archive/issue_comments_028235.json:
 ```json
 {
-    "body": "Robert:\n\n> I still think that the class IncidenceStructure belongs \n> somewhere else than in block_design.py, although I'm not \n> sure where it should go. I had once thought that \n> sage.graphs should be something like \n> sage.incidence_structures, and from \n> there we would have designs, graphs, hypergraphs, etc. \n> Although, the naming is ugly, and this is probably not the \n> right approach. Any thoughts you have on this are welcome. \n\nMaybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n\n> I'd really like to see this patch's dependence on \n> GAP decrease more. One task which would go a very \n> far way in doing this would be to implement #1323, \n> which shouldn't really be all that hard, since it \n> would ultimately just be an exercise in linear algebra. \n\nI just saw your post regarding a `subspaces` method for a\n`FreeModule` over a finite field. I'll work on that next.\n(I don't think I need the projective case - as you pointed out in your second post it is a trivial consquence of the affine case.)\n\n> ... subject heading ... (more) doctests ...\n\nWill do. Please let me know what you think of the above \n`IncidenceStructure` idea though.",
+    "body": "Robert:\n\n> I still think that the class IncidenceStructure belongs \n> somewhere else than in block_design.py, although I'm not \n> sure where it should go. I had once thought that \n> sage.graphs should be something like \n> sage.incidence_structures, and from \n> there we would have designs, graphs, hypergraphs, etc. \n> Although, the naming is ugly, and this is probably not the \n> right approach. Any thoughts you have on this are welcome. \n\n\nMaybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n\n> I'd really like to see this patch's dependence on \n> GAP decrease more. One task which would go a very \n> far way in doing this would be to implement #1323, \n> which shouldn't really be all that hard, since it \n> would ultimately just be an exercise in linear algebra. \n\n\nI just saw your post regarding a `subspaces` method for a\n`FreeModule` over a finite field. I'll work on that next.\n(I don't think I need the projective case - as you pointed out in your second post it is a trivial consquence of the affine case.)\n\n> ... subject heading ... (more) doctests ...\n\n\nWill do. Please let me know what you think of the above \n`IncidenceStructure` idea though.",
     "created_at": "2008-09-25T23:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -635,6 +643,7 @@ Robert:
 > Although, the naming is ugly, and this is probably not the 
 > right approach. Any thoughts you have on this are welcome. 
 
+
 Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?
 
 > I'd really like to see this patch's dependence on 
@@ -643,11 +652,13 @@ Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_s
 > which shouldn't really be all that hard, since it 
 > would ultimately just be an exercise in linear algebra. 
 
+
 I just saw your post regarding a `subspaces` method for a
 `FreeModule` over a finite field. I'll work on that next.
 (I don't think I need the projective case - as you pointed out in your second post it is a trivial consquence of the affine case.)
 
 > ... subject heading ... (more) doctests ...
+
 
 Will do. Please let me know what you think of the above 
 `IncidenceStructure` idea though.
@@ -659,7 +670,7 @@ Will do. Please let me know what you think of the above
 archive/issue_comments_028236.json:
 ```json
 {
-    "body": "Replying to [comment:22 wdj]:\n> Robert:\n> \n> Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n\nThat definitely works for me. If anyone wants to move it around, they can discuss it later.",
+    "body": "Replying to [comment:22 wdj]:\n> Robert:\n> \n> Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n\n\nThat definitely works for me. If anyone wants to move it around, they can discuss it later.",
     "created_at": "2008-09-25T23:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -673,6 +684,7 @@ Replying to [comment:22 wdj]:
 > 
 > Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?
 
+
 That definitely works for me. If anyone wants to move it around, they can discuss it later.
 
 
@@ -682,7 +694,7 @@ That definitely works for me. If anyone wants to move it around, they can discus
 archive/issue_comments_028237.json:
 ```json
 {
-    "body": "Replying to [comment:23 rlm]:\n> Replying to [comment:22 wdj]:\n> > Robert:\n> > \n> > Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n> \n> That definitely works for me. If anyone wants to move it around, they can discuss it later.\n> \n\nMoving things around breaks the ABI and we would need to deprecate the code in the old location. So let's write an email to [sage-devel] and/or [sage-combinat-devel] and hope that someone smarter than us three here comes up with a good suggestion. If no one cares we just go ahead as planned :p\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:23 rlm]:\n> Replying to [comment:22 wdj]:\n> > Robert:\n> > \n> > Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?\n\n> \n> That definitely works for me. If anyone wants to move it around, they can discuss it later.\n> \n\n\nMoving things around breaks the ABI and we would need to deprecate the code in the old location. So let's write an email to [sage-devel] and/or [sage-combinat-devel] and hope that someone smarter than us three here comes up with a good suggestion. If no one cares we just go ahead as planned :p\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T23:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -696,9 +708,11 @@ Replying to [comment:23 rlm]:
 > > Robert:
 > > 
 > > Maybe the class `IncidenceStructure` belongs in its own module, say `incidence_structures.py`? Which directory it goes in might does not matter so much, so why not put both in designs? What do you think?
+
 > 
 > That definitely works for me. If anyone wants to move it around, they can discuss it later.
 > 
+
 
 Moving things around breaks the ABI and we would need to deprecate the code in the old location. So let's write an email to [sage-devel] and/or [sage-combinat-devel] and hope that someone smarter than us three here comes up with a good suggestion. If no one cares we just go ahead as planned :p
 
@@ -808,7 +822,7 @@ Appliy this after the others. Based on 3.1.3.alpha1. Arrgghh.
 archive/issue_comments_028243.json:
 ```json
 {
-    "body": "1. These need to be fixed:\n\n```\nSCORE devel/sage/sage/combinat/designs//incidence_structures.py: 94% (16 of 17)\n\nMissing documentation:\n\t * incidence_matrix(self):\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * block_sizes(self):\n```\n\n\n2. Earlier, I made the comment \"If you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`.\" This hasn't yet been addressed. I think you can just remove the function and replace calls to it with just `cmp` and be fine.\n\n3. Like I said before, `BlockDesign` should be a class which inherits from the Incidence structure class-- not just a function which returns an incidence structure (e.g. Graph and DiGraph inheriting from GenericGraph in graph.py). Does `dual_block_design` make sense as a function of just any incidence structure? If so, maybe it should be called `dual_incidence_structure`. Either way it should not call BlockDesign unless it is guaranteed to be one.\n\nOnce these three issues are taken care of I am prepared to give the ticket a positive review.",
+    "body": "1. These need to be fixed:\n\n```\nSCORE devel/sage/sage/combinat/designs//incidence_structures.py: 94% (16 of 17)\n\nMissing documentation:\n\t * incidence_matrix(self):\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * block_sizes(self):\n```\n\n2. Earlier, I made the comment \"If you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`.\" This hasn't yet been addressed. I think you can just remove the function and replace calls to it with just `cmp` and be fine.\n\n3. Like I said before, `BlockDesign` should be a class which inherits from the Incidence structure class-- not just a function which returns an incidence structure (e.g. Graph and DiGraph inheriting from GenericGraph in graph.py). Does `dual_block_design` make sense as a function of just any incidence structure? If so, maybe it should be called `dual_incidence_structure`. Either way it should not call BlockDesign unless it is guaranteed to be one.\n\nOnce these three issues are taken care of I am prepared to give the ticket a positive review.",
     "created_at": "2008-09-27T20:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -828,7 +842,6 @@ Missing documentation:
 Possibly wrong (function name doesn't occur in doctests):
 	 * block_sizes(self):
 ```
-
 
 2. Earlier, I made the comment "If you are comparing two lists of ints, `block_cmp` gives exactly the same output as `cmp`." This hasn't yet been addressed. I think you can just remove the function and replace calls to it with just `cmp` and be fine.
 
@@ -885,7 +898,7 @@ based on 3.1.3.alpha1. To be applied after the 5 others before this one.
 archive/issue_comments_028246.json:
 ```json
 {
-    "body": "> 1. These need to be fixed:\n> ...\n> Missing documentation:\n>\t * incidence_matrix(self):\n\nI don't understand this. It had a docstring and a test.\n\n> 2. Earlier, I made the comment \"If you are comparing \n> two lists of ints, block_cmp gives exactly the same \n> output as cmp.\" This hasn't yet been addressed. \n> I think you can just remove the function and \n> replace calls to it with just cmp and be fine. \n\nSorry I forgot. Done now. \n\n> 3. Like I said before, BlockDesign should be a class \n> which inherits from the Incidence structure \n> class-- not just a function which returns an \n> incidence structure (e.g. Graph and DiGraph? \n> inheriting from GenericGraph? in graph.py). \n\nTo me this makes mathematical sense so I added a \nline \n\n```\nBlockDesign_generic = IncidenceStructure\n```\n\nbut there are no methods I know of currently\n(maybe this will change in the future) which\napply to block designs and not incidence structures.\n\n> Does dual_block_design make sense as a function \n> of just any incidence structure? \n\nYes.\n\n> If so, maybe it should be called \n> dual_incidence_structure. Either way it should \n> not call BlockDesign unless it is guaranteed to \n> be one. \n\nDone. I added an option method=\"gap\" as well.\n\nPlease apply the 7 patches in order to 3.1.3.alpha1. They pass sage -t -optional.",
+    "body": "> 1. These need to be fixed:\n> ...\n> Missing documentation:\n\n>\t * incidence_matrix(self):\n\nI don't understand this. It had a docstring and a test.\n\n> 2. Earlier, I made the comment \"If you are comparing \n> two lists of ints, block_cmp gives exactly the same \n> output as cmp.\" This hasn't yet been addressed. \n> I think you can just remove the function and \n> replace calls to it with just cmp and be fine. \n\n\nSorry I forgot. Done now. \n\n> 3. Like I said before, BlockDesign should be a class \n> which inherits from the Incidence structure \n> class-- not just a function which returns an \n> incidence structure (e.g. Graph and DiGraph? \n> inheriting from GenericGraph? in graph.py). \n\n\nTo me this makes mathematical sense so I added a \nline \n\n```\nBlockDesign_generic = IncidenceStructure\n```\nbut there are no methods I know of currently\n(maybe this will change in the future) which\napply to block designs and not incidence structures.\n\n> Does dual_block_design make sense as a function \n> of just any incidence structure? \n\n\nYes.\n\n> If so, maybe it should be called \n> dual_incidence_structure. Either way it should \n> not call BlockDesign unless it is guaranteed to \n> be one. \n\n\nDone. I added an option method=\"gap\" as well.\n\nPlease apply the 7 patches in order to 3.1.3.alpha1. They pass sage -t -optional.",
     "created_at": "2008-09-28T01:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -897,6 +910,7 @@ archive/issue_comments_028246.json:
 > 1. These need to be fixed:
 > ...
 > Missing documentation:
+
 >	 * incidence_matrix(self):
 
 I don't understand this. It had a docstring and a test.
@@ -907,6 +921,7 @@ I don't understand this. It had a docstring and a test.
 > I think you can just remove the function and 
 > replace calls to it with just cmp and be fine. 
 
+
 Sorry I forgot. Done now. 
 
 > 3. Like I said before, BlockDesign should be a class 
@@ -915,13 +930,13 @@ Sorry I forgot. Done now.
 > incidence structure (e.g. Graph and DiGraph? 
 > inheriting from GenericGraph? in graph.py). 
 
+
 To me this makes mathematical sense so I added a 
 line 
 
 ```
 BlockDesign_generic = IncidenceStructure
 ```
-
 but there are no methods I know of currently
 (maybe this will change in the future) which
 apply to block designs and not incidence structures.
@@ -929,12 +944,14 @@ apply to block designs and not incidence structures.
 > Does dual_block_design make sense as a function 
 > of just any incidence structure? 
 
+
 Yes.
 
 > If so, maybe it should be called 
 > dual_incidence_structure. Either way it should 
 > not call BlockDesign unless it is guaranteed to 
 > be one. 
+
 
 Done. I added an option method="gap" as well.
 
@@ -1046,7 +1063,7 @@ Apply all patches in order.
 archive/issue_comments_028252.json:
 ```json
 {
-    "body": "Replying to [comment:32 rlm]:\n> Apply all patches in order.\n\nI am merging this to get this ticket over with, but next time please post a cumulative patch since this is trivial to do. All the changes go into the repo and add up in the end.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:32 rlm]:\n> Apply all patches in order.\n\n\nI am merging this to get this ticket over with, but next time please post a cumulative patch since this is trivial to do. All the changes go into the repo and add up in the end.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-30T06:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
@@ -1057,6 +1074,7 @@ archive/issue_comments_028252.json:
 
 Replying to [comment:32 rlm]:
 > Apply all patches in order.
+
 
 I am merging this to get this ticket over with, but next time please post a cumulative patch since this is trivial to do. All the changes go into the repo and add up in the end.
 

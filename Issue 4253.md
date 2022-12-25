@@ -3,7 +3,7 @@
 archive/issues_004253.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: polybori\n\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\n\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
+    "body": "Assignee: @malb\n\nKeywords: polybori\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
     "created_at": "2008-10-08T06:42:41Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ Assignee: @malb
 
 Keywords: polybori
 
-
 ```
 sage: r.<x,y>=BooleanPolynomialRing(2)
 
@@ -28,7 +27,6 @@ sage: p=r("0")
 sage: p.navigation()==p.navigation()
 False
 ```
-
 Should be True, probably `__eq__` not implemented.
 
 Michael

@@ -3,7 +3,7 @@
 archive/issues_004671.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nOn OS X the Sage startup time is horrible.  Doing sage -startuptime yields:\n\n```\n## Slowest (including children)\n1.604 sage.all (None)\n0.453 sage.server.all (sage.all)\n0.449 notebook.all (sage.server.all)\n0.445 notebook_object (notebook.all)\n0.441 notebook (notebook_object)\n0.352 worksheet (notebook)\n0.345 twist (worksheet)\n0.329 sage.misc.all (sage.all)\n0.246 twisted.web2 (twist)\n0.125 sage_timeit_class (sage.misc.all)\n0.125 sage_timeit (sage_timeit_class)\n```\n\n\nI'm pretty suspicious, because the twisted stuff does *not* have to be imported at all for Sage to startup and in fact I put a lot of effort into making sure they don't (it's really annoying that they are suddenly being imported again!)\n\nThe tiny attached patch just moves a few imports and for me on OS X reduces the startup time of Sage from about 1.64 to 1.273.  It also includes a doctest that makes sure twisted will *never* get imported on startup by default.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4671\n\n",
+    "body": "Assignee: boothby\n\nOn OS X the Sage startup time is horrible.  Doing sage -startuptime yields:\n\n```\n## Slowest (including children)\n1.604 sage.all (None)\n0.453 sage.server.all (sage.all)\n0.449 notebook.all (sage.server.all)\n0.445 notebook_object (notebook.all)\n0.441 notebook (notebook_object)\n0.352 worksheet (notebook)\n0.345 twist (worksheet)\n0.329 sage.misc.all (sage.all)\n0.246 twisted.web2 (twist)\n0.125 sage_timeit_class (sage.misc.all)\n0.125 sage_timeit (sage_timeit_class)\n```\n\nI'm pretty suspicious, because the twisted stuff does *not* have to be imported at all for Sage to startup and in fact I put a lot of effort into making sure they don't (it's really annoying that they are suddenly being imported again!)\n\nThe tiny attached patch just moves a few imports and for me on OS X reduces the startup time of Sage from about 1.64 to 1.273.  It also includes a doctest that makes sure twisted will *never* get imported on startup by default.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4671\n\n",
     "created_at": "2008-12-02T05:24:14Z",
     "labels": [
         "component: notebook",
@@ -35,7 +35,6 @@ On OS X the Sage startup time is horrible.  Doing sage -startuptime yields:
 0.125 sage_timeit_class (sage.misc.all)
 0.125 sage_timeit (sage_timeit_class)
 ```
-
 
 I'm pretty suspicious, because the twisted stuff does *not* have to be imported at all for Sage to startup and in fact I put a lot of effort into making sure they don't (it's really annoying that they are suddenly being imported again!)
 
@@ -90,7 +89,7 @@ Looks good to me.
 archive/issue_comments_035117.json:
 ```json
 {
-    "body": "Bad mhansen: This patch breaks pickling all over the combinat tree:\n\n```\n\tsage -t -long devel/sage/sage/combinat/root_system/weight_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_reducible.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_dual.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_G.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_F.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_E.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_A.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/root_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/root_system.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/dynkin_diagram.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/cartan_type.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/ambient_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/spins.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/sloane_functions.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed\n```\n\nProbably a trivial problem, but \"needs work\" nonetheless :p\n\nCheers,\n\nMichael",
+    "body": "Bad mhansen: This patch breaks pickling all over the combinat tree:\n\n```\n\tsage -t -long devel/sage/sage/combinat/root_system/weight_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_reducible.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_dual.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_G.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_F.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_E.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/type_A.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/root_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/root_system.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/dynkin_diagram.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/cartan_type.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/ambient_space.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/spins.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/sloane_functions.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed\n```\nProbably a trivial problem, but \"needs work\" nonetheless :p\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T08:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
@@ -121,7 +120,6 @@ Bad mhansen: This patch breaks pickling all over the combinat tree:
 	sage -t -long devel/sage/sage/combinat/root_system/weyl_group.py # 2 doctests failed
 	sage -t -long devel/sage/sage/combinat/root_system/weyl_characters.py # 4 doctests failed
 ```
-
 Probably a trivial problem, but "needs work" nonetheless :p
 
 Cheers,
@@ -135,7 +133,7 @@ Michael
 archive/issue_comments_035118.json:
 ```json
 {
-    "body": "This is really really weird.  The *only* thing I change is to remove two instances of \"import twist\" in the notebook code.  The *only* doctests in the whole Sage tree that break are those combinat pickles.  Absolutely nothing else breaks (I just tested this).  If one tries them by hand on the command line they break, but if one does\n\n```\n  sage: import sage.server.notebook.twist\n```\n\nthen they suddenly work. \n\nAnd those tests are not just pickle tests that fail.\n\nMike -- can you think of anything that combinat code uses that might somehow have something to do with twisted or twist.py being imported?",
+    "body": "This is really really weird.  The *only* thing I change is to remove two instances of \"import twist\" in the notebook code.  The *only* doctests in the whole Sage tree that break are those combinat pickles.  Absolutely nothing else breaks (I just tested this).  If one tries them by hand on the command line they break, but if one does\n\n```\n  sage: import sage.server.notebook.twist\n```\nthen they suddenly work. \n\nAnd those tests are not just pickle tests that fail.\n\nMike -- can you think of anything that combinat code uses that might somehow have something to do with twisted or twist.py being imported?",
     "created_at": "2008-12-04T21:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
@@ -149,7 +147,6 @@ This is really really weird.  The *only* thing I change is to remove two instanc
 ```
   sage: import sage.server.notebook.twist
 ```
-
 then they suddenly work. 
 
 And those tests are not just pickle tests that fail.
@@ -181,7 +178,7 @@ Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/t
 archive/issue_comments_035120.json:
 ```json
 {
-    "body": "I've put up a new patch which imports twisted.persisted.styles, but still make startup time way faster.\n\n\n```\n<mhansen> No\n<mhansen> I still have no idea why it's happening.\n<mhansen> And I found it.  [08:40]\n<mhansen> Twisted has some code in twisted.persistant.styles that allows you\n          to pickle things that aren't picklable normally.  [08:42]\n<mhansen> Importing just that takes .110s on my machine while doing import\n          twist takes 0.675s.  [08:48]\n<mhansen> Doing so causes wstein|afk's doctest to fail.  [08:49]\n<wstein|afk> mhansen -- importing twisted.persistant.styles and changing my\n             doctest is a good solution.  [09:02]\n```\n",
+    "body": "I've put up a new patch which imports twisted.persisted.styles, but still make startup time way faster.\n\n```\n<mhansen> No\n<mhansen> I still have no idea why it's happening.\n<mhansen> And I found it.  [08:40]\n<mhansen> Twisted has some code in twisted.persistant.styles that allows you\n          to pickle things that aren't picklable normally.  [08:42]\n<mhansen> Importing just that takes .110s on my machine while doing import\n          twist takes 0.675s.  [08:48]\n<mhansen> Doing so causes wstein|afk's doctest to fail.  [08:49]\n<wstein|afk> mhansen -- importing twisted.persistant.styles and changing my\n             doctest is a good solution.  [09:02]\n```",
     "created_at": "2008-12-16T17:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
@@ -191,7 +188,6 @@ archive/issue_comments_035120.json:
 ```
 
 I've put up a new patch which imports twisted.persisted.styles, but still make startup time way faster.
-
 
 ```
 <mhansen> No
@@ -205,7 +201,6 @@ I've put up a new patch which imports twisted.persisted.styles, but still make s
 <wstein|afk> mhansen -- importing twisted.persistant.styles and changing my
              doctest is a good solution.  [09:02]
 ```
-
 
 
 

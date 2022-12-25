@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/60
 archive/issue_comments_000315.json:
 ```json
 {
-    "body": "Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely returns a string -- so if you want to see both f and g, \n\n\n```\n    f = maxima(\"%e(k*x)+sin(b*x)+x3\")\n    g = f.diff(\"x\")\n    print view(f)\n    print view(g)\n```\n\n\nPerhaps view() should print?",
+    "body": "Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely returns a string -- so if you want to see both f and g, \n\n```\n    f = maxima(\"%e(k*x)+sin(b*x)+x3\")\n    g = f.diff(\"x\")\n    print view(f)\n    print view(g)\n```\n\nPerhaps view() should print?",
     "created_at": "2006-09-14T18:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/60",
     "type": "issue_comment",
@@ -56,14 +56,12 @@ archive/issue_comments_000315.json:
 
 Currently, view() calls typeset() if EMBEDDED_MODE is True.  typeset() merely returns a string -- so if you want to see both f and g, 
 
-
 ```
     f = maxima("%e(k*x)+sin(b*x)+x3")
     g = f.diff("x")
     print view(f)
     print view(g)
 ```
-
 
 Perhaps view() should print?
 
@@ -128,7 +126,7 @@ I definitely consider this a bug.
 archive/issue_comments_000319.json:
 ```json
 {
-    "body": "Fixed.  Changed start of view function in sage/misc/latex.py to the following:\n\n```\n    if EMBEDDED_MODE:\n        print typeset(objects)\n        return \n```\n",
+    "body": "Fixed.  Changed start of view function in sage/misc/latex.py to the following:\n\n```\n    if EMBEDDED_MODE:\n        print typeset(objects)\n        return \n```",
     "created_at": "2006-10-15T17:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/60",
     "type": "issue_comment",
@@ -144,7 +142,6 @@ Fixed.  Changed start of view function in sage/misc/latex.py to the following:
         print typeset(objects)
         return 
 ```
-
 
 
 

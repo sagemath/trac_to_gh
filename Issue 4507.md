@@ -3,7 +3,7 @@
 archive/issues_004507.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  ekirkman bober\n\nI get the following compile warning:\n\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/jason/sage/local//include -I/home/jason/sage/local//include/csage -I/home/jason/sage/devel//sage/sage/ext -I/home/jason/sage/local/include/python2.5 -c sage/graphs/planarity/graphEmbed.c -o build/temp.linux-i686-2.5/sage/graphs/planarity/graphEmbed.o\nsage/graphs/planarity/graphEmbed.c: In function \u2018_CreateSortedSeparatedDFSChildLists\u2019:\nsage/graphs/planarity/graphEmbed.c:84: warning: implicit declaration of function \u2018memset\u2019\nsage/graphs/planarity/graphEmbed.c:84: warning: incompatible implicit declaration of built-in function \u2018memset\u2019\n\n```\n\n\nI fixed this by adding #include <string.h> (which declares the memset function) to listcoll.h (where the LCReset macro is defined).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4507\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ekirkman bober\n\nI get the following compile warning:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/jason/sage/local//include -I/home/jason/sage/local//include/csage -I/home/jason/sage/devel//sage/sage/ext -I/home/jason/sage/local/include/python2.5 -c sage/graphs/planarity/graphEmbed.c -o build/temp.linux-i686-2.5/sage/graphs/planarity/graphEmbed.o\nsage/graphs/planarity/graphEmbed.c: In function \u2018_CreateSortedSeparatedDFSChildLists\u2019:\nsage/graphs/planarity/graphEmbed.c:84: warning: implicit declaration of function \u2018memset\u2019\nsage/graphs/planarity/graphEmbed.c:84: warning: incompatible implicit declaration of built-in function \u2018memset\u2019\n\n```\n\nI fixed this by adding #include <string.h> (which declares the memset function) to listcoll.h (where the LCReset macro is defined).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4507\n\n",
     "created_at": "2008-11-13T01:24:07Z",
     "labels": [
         "component: graph theory",
@@ -22,7 +22,6 @@ CC:  ekirkman bober
 
 I get the following compile warning:
 
-
 ```
 gcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/jason/sage/local//include -I/home/jason/sage/local//include/csage -I/home/jason/sage/devel//sage/sage/ext -I/home/jason/sage/local/include/python2.5 -c sage/graphs/planarity/graphEmbed.c -o build/temp.linux-i686-2.5/sage/graphs/planarity/graphEmbed.o
 sage/graphs/planarity/graphEmbed.c: In function ‘_CreateSortedSeparatedDFSChildLists’:
@@ -30,7 +29,6 @@ sage/graphs/planarity/graphEmbed.c:84: warning: implicit declaration of function
 sage/graphs/planarity/graphEmbed.c:84: warning: incompatible implicit declaration of built-in function ‘memset’
 
 ```
-
 
 I fixed this by adding #include <string.h> (which declares the memset function) to listcoll.h (where the LCReset macro is defined).
 

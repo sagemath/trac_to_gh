@@ -3,7 +3,7 @@
 archive/issues_006902.json:
 ```json
 {
-    "body": "\n```\nsage: log(x)\nlog(x)\nsage: latex(log(x))\n\\ln\\left(x\\right)\n```\n\n\nWe should switch back to `\\log`. See this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db\n\nIssue created by migration from https://trac.sagemath.org/ticket/6902\n\n",
+    "body": "```\nsage: log(x)\nlog(x)\nsage: latex(log(x))\n\\ln\\left(x\\right)\n```\n\nWe should switch back to `\\log`. See this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db\n\nIssue created by migration from https://trac.sagemath.org/ticket/6902\n\n",
     "created_at": "2009-09-07T19:05:26Z",
     "labels": [
         "component: symbolics",
@@ -16,14 +16,12 @@ archive/issues_006902.json:
     "user": "https://github.com/burcin"
 }
 ```
-
 ```
 sage: log(x)
 log(x)
 sage: latex(log(x))
 \ln\left(x\right)
 ```
-
 
 We should switch back to `\log`. See this thread:
 

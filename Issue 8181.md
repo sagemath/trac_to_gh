@@ -3,7 +3,7 @@
 archive/issues_008181.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @roed314 @orlitzky\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @roed314 @orlitzky\n\nI should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\n---------------------------------------------------------------------------\nTypeError\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8181\n\n",
     "created_at": "2010-02-03T23:35:50Z",
     "labels": [
         "component: padics",
@@ -22,7 +22,6 @@ CC:  @roed314 @orlitzky
 
 I should be able to coerce elements of the residue field of a p-adic ring back into the ring, but I can't:
 
-
 ```
 sage: R.<z> = Zq(9)
 sage: F = R.residue_class_field()
@@ -33,7 +32,6 @@ sage: R(a)
 ---------------------------------------------------------------------------
 TypeError
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8181
@@ -67,7 +65,7 @@ http://groups.google.com/group/sage-support/browse_thread/thread/ce14b31005ec053
 archive/issue_comments_071975.json:
 ```json
 {
-    "body": "This works now:\n\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\nz + O(3)\n```\n\n\nI can create a patch with a doctest, but I don't know if the result is correct. Does it look about right?",
+    "body": "This works now:\n\n```\nsage: R.<z> = Zq(9)\nsage: F = R.residue_class_field()\nsage: F\nFinite Field in z0 of size 3^2\nsage: a = F.gen()\nsage: R(a)\nz + O(3)\n```\n\nI can create a patch with a doctest, but I don't know if the result is correct. Does it look about right?",
     "created_at": "2012-01-13T19:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ archive/issue_comments_071975.json:
 
 This works now:
 
-
 ```
 sage: R.<z> = Zq(9)
 sage: F = R.residue_class_field()
@@ -88,7 +85,6 @@ sage: a = F.gen()
 sage: R(a)
 z + O(3)
 ```
-
 
 I can create a patch with a doctest, but I don't know if the result is correct. Does it look about right?
 
@@ -278,7 +274,7 @@ archive/issue_events_019585.json:
 archive/issue_comments_071985.json:
 ```json
 {
-    "body": "Fixed the merge problem.\n----\nNew commits:",
+    "body": "Fixed the merge problem.\n\n---\nNew commits:",
     "created_at": "2016-11-20T01:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8181",
     "type": "issue_comment",
@@ -288,7 +284,8 @@ archive/issue_comments_071985.json:
 ```
 
 Fixed the merge problem.
-----
+
+---
 New commits:
 
 

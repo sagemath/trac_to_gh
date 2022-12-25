@@ -139,7 +139,7 @@ In any case, it is also obsoleted by #10508.
 archive/issue_comments_057655.json:
 ```json
 {
-    "body": "> In any case, it is also obsoleted by #10508.\nTrue, but who knows when that will get in.",
+    "body": "> In any case, it is also obsoleted by #10508.\n\nTrue, but who knows when that will get in.",
     "created_at": "2013-04-26T16:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
@@ -149,6 +149,7 @@ archive/issue_comments_057655.json:
 ```
 
 > In any case, it is also obsoleted by #10508.
+
 True, but who knows when that will get in.
 
 

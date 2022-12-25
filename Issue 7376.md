@@ -51,7 +51,7 @@ We should also consider supporting more complex queries, e.g., on an "Advanced S
 archive/issue_comments_061694.json:
 ```json
 {
-    "body": "It seems this will work: \n\n```diff\ndiff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py\n--- a/sagenb/notebook/worksheet.py\n+++ b/sagenb/notebook/worksheet.py\n@@ -1973,7 +1973,7 @@ class Worksheet(object):\n         \"\"\"\n         # Load the worksheet data file from disk.\n         filename = self.worksheet_html_filename()\n-        r = (self.owner().lower() + ' ' + self.name().lower() + ' '\n+        r = (self.publisher().lower() + ' ' + self.name().lower() + ' '\n              + open(filename).read().lower())\n         # Check that every single word is in the file from disk.\n         for W in split_search_string_into_keywords(search):\n```\n",
+    "body": "It seems this will work: \n\n```diff\ndiff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py\n--- a/sagenb/notebook/worksheet.py\n+++ b/sagenb/notebook/worksheet.py\n@@ -1973,7 +1973,7 @@ class Worksheet(object):\n         \"\"\"\n         # Load the worksheet data file from disk.\n         filename = self.worksheet_html_filename()\n-        r = (self.owner().lower() + ' ' + self.name().lower() + ' '\n+        r = (self.publisher().lower() + ' ' + self.name().lower() + ' '\n              + open(filename).read().lower())\n         # Check that every single word is in the file from disk.\n         for W in split_search_string_into_keywords(search):\n```",
     "created_at": "2009-11-12T15:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7376",
     "type": "issue_comment",
@@ -79,13 +79,12 @@ diff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py
 
 
 
-
 ---
 
 archive/issue_comments_061695.json:
 ```json
 {
-    "body": "But:\n\n```python\nsage: from sagenb.notebook.worksheet import split_search_string_into_keywords as ss\nsage: ss('hello there')\n['hello', 'there']\nsage: ss(\" foo bar  'modular form' hello there\")\n['modular form', \"'\", 'hello', 'there']\n```\n\n\n[Pyparsing](http://pyparsing.wikispaces.com/) is another alternative.  There's a [search query parser](http://pyparsing.wikispaces.com/file/view/searchparser.py) among the [examples](http://pyparsing.wikispaces.com/Examples).  The license appears to be a modified-BSD license.\n\nShould we add modifiers?  For example, the search phrase `\"Fourier user:joe` would restrict the search to worksheets published by Joe.  Other possible modifiers: `title`, `text_cell`, `compute_cell`, `dates`, `input`, `output`, `collaborators`, `rating`.",
+    "body": "But:\n\n```python\nsage: from sagenb.notebook.worksheet import split_search_string_into_keywords as ss\nsage: ss('hello there')\n['hello', 'there']\nsage: ss(\" foo bar  'modular form' hello there\")\n['modular form', \"'\", 'hello', 'there']\n```\n\n[Pyparsing](http://pyparsing.wikispaces.com/) is another alternative.  There's a [search query parser](http://pyparsing.wikispaces.com/file/view/searchparser.py) among the [examples](http://pyparsing.wikispaces.com/Examples).  The license appears to be a modified-BSD license.\n\nShould we add modifiers?  For example, the search phrase `\"Fourier user:joe` would restrict the search to worksheets published by Joe.  Other possible modifiers: `title`, `text_cell`, `compute_cell`, `dates`, `input`, `output`, `collaborators`, `rating`.",
     "created_at": "2009-11-12T15:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7376",
     "type": "issue_comment",
@@ -103,7 +102,6 @@ sage: ss('hello there')
 sage: ss(" foo bar  'modular form' hello there")
 ['modular form', "'", 'hello', 'there']
 ```
-
 
 [Pyparsing](http://pyparsing.wikispaces.com/) is another alternative.  There's a [search query parser](http://pyparsing.wikispaces.com/file/view/searchparser.py) among the [examples](http://pyparsing.wikispaces.com/Examples).  The license appears to be a modified-BSD license.
 

@@ -3,7 +3,7 @@
 archive/issues_002916.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs reported by Kiran Kedlaya on sage-devel:\n\n\n```\nsage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)\n0\n```\n\n\nThis is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2916\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by Kiran Kedlaya on sage-devel:\n\n```\nsage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)\n0\n```\n\nThis is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2916\n\n",
     "created_at": "2008-04-14T14:57:13Z",
     "labels": [
         "component: number theory",
@@ -20,12 +20,10 @@ Assignee: @williamstein
 
 As reported by Kiran Kedlaya on sage-devel:
 
-
 ```
 sage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)
 0
 ```
-
 
 This is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.
 
@@ -97,7 +95,7 @@ Michael
 archive/issue_comments_020046.json:
 ```json
 {
-    "body": "Patch looks good and \n\n\n```\n[21:20] <mabshoff> Can you referee #2916?\n[21:20] <mabshoff> It passes doctests on sage.math\n```\n\n\n=> **positive review**",
+    "body": "Patch looks good and \n\n```\n[21:20] <mabshoff> Can you referee #2916?\n[21:20] <mabshoff> It passes doctests on sage.math\n```\n\n=> **positive review**",
     "created_at": "2008-04-14T20:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2916",
     "type": "issue_comment",
@@ -108,12 +106,10 @@ archive/issue_comments_020046.json:
 
 Patch looks good and 
 
-
 ```
 [21:20] <mabshoff> Can you referee #2916?
 [21:20] <mabshoff> It passes doctests on sage.math
 ```
-
 
 => **positive review**
 

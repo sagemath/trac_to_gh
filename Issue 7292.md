@@ -174,7 +174,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_060600.json:
 ```json
 {
-    "body": "I get the following failure:\n\n\n```\n**********************************************************************\nFile \"/scratch/mhansen/release/4.3/rc1/sage-4.3.rc1/devel/sage-main/sage/graphs/graph.py\", line 3581:\n    sage: g.vertex_cover(value_only=True)\nExpected:\n    9\nGot nothing\n**********************************************************************\n```\n",
+    "body": "I get the following failure:\n\n```\n**********************************************************************\nFile \"/scratch/mhansen/release/4.3/rc1/sage-4.3.rc1/devel/sage-main/sage/graphs/graph.py\", line 3581:\n    sage: g.vertex_cover(value_only=True)\nExpected:\n    9\nGot nothing\n**********************************************************************\n```",
     "created_at": "2009-12-19T23:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
@@ -185,7 +185,6 @@ archive/issue_comments_060600.json:
 
 I get the following failure:
 
-
 ```
 **********************************************************************
 File "/scratch/mhansen/release/4.3/rc1/sage-4.3.rc1/devel/sage-main/sage/graphs/graph.py", line 3581:
@@ -195,7 +194,6 @@ Expected:
 Got nothing
 **********************************************************************
 ```
-
 
 
 

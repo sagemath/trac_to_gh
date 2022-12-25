@@ -3,7 +3,7 @@
 archive/issues_006969.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe error:\n\n\n```\n gcc -DPACKAGE_NAME=\\\"gc\\\" -DPACKAGE_TARNAME=\\\"gc\\\" -DPACKAGE_VERSION=\\\"7.1\\\" \"-DPACKAGE_STRING=\\\"gc 7.1\\\"\" -DPACKAGE_BUGREPORT=\\\"Hans.Boehm@hp.com\\\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\\\"gc\\\" -DVERSION=\\\"7.1\\\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1 -I./include -fexceptions -I libatomic_ops/src -O2 -g -fPIC -m64 -MT mach_dep.lo -MD -MP -MF .deps/mach_dep.Tpo -c mach_dep.c  -fno-common -DPIC -o .libs/mach_dep.o\nIn file included from mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[1]: *** [mach_dep.lo] Error 1\nmake: *** [all-recursive] Error 1\nbash-3.2$ \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6969\n\n",
+    "body": "Assignee: tbd\n\nThe error:\n\n```\n gcc -DPACKAGE_NAME=\\\"gc\\\" -DPACKAGE_TARNAME=\\\"gc\\\" -DPACKAGE_VERSION=\\\"7.1\\\" \"-DPACKAGE_STRING=\\\"gc 7.1\\\"\" -DPACKAGE_BUGREPORT=\\\"Hans.Boehm@hp.com\\\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\\\"gc\\\" -DVERSION=\\\"7.1\\\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1 -I./include -fexceptions -I libatomic_ops/src -O2 -g -fPIC -m64 -MT mach_dep.lo -MD -MP -MF .deps/mach_dep.Tpo -c mach_dep.c  -fno-common -DPIC -o .libs/mach_dep.o\nIn file included from mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[1]: *** [mach_dep.lo] Error 1\nmake: *** [all-recursive] Error 1\nbash-3.2$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6969\n\n",
     "created_at": "2009-09-20T22:05:59Z",
     "labels": [
         "component: build",
@@ -21,7 +21,6 @@ Assignee: tbd
 
 The error:
 
-
 ```
  gcc -DPACKAGE_NAME=\"gc\" -DPACKAGE_TARNAME=\"gc\" -DPACKAGE_VERSION=\"7.1\" "-DPACKAGE_STRING=\"gc 7.1\"" -DPACKAGE_BUGREPORT=\"Hans.Boehm@hp.com\" -DGC_VERSION_MAJOR=7 -DGC_VERSION_MINOR=1 -DPACKAGE=\"gc\" -DVERSION=\"7.1\" -DGC_DARWIN_THREADS=1 -DTHREAD_LOCAL_ALLOC=1 -DHAS_X86_THREAD_STATE32___EAX=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DNO_EXECUTE_PERMISSION=1 -DALL_INTERIOR_POINTERS=1 -DGC_GCJ_SUPPORT=1 -DJAVA_FINALIZATION=1 -DATOMIC_UNCOLLECTABLE=1 -DLARGE_CONFIG=1 -I./include -fexceptions -I libatomic_ops/src -O2 -g -fPIC -m64 -MT mach_dep.lo -MD -MP -MF .deps/mach_dep.Tpo -c mach_dep.c  -fno-common -DPIC -o .libs/mach_dep.o
 In file included from mach_dep.c:163:
@@ -30,7 +29,6 @@ make[1]: *** [mach_dep.lo] Error 1
 make: *** [all-recursive] Error 1
 bash-3.2$ 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6969

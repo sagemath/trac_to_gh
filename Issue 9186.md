@@ -3,7 +3,7 @@
 archive/issues_009186.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime\n\nTo build R with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the \"make install\" part of the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9186\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime\n\nTo build R with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\nto the \"make install\" part of the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9186\n\n",
     "created_at": "2010-06-08T08:42:08Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ To build R with `SAGE_PARALLEL_SPKG_BUILD="yes"` on Mac OS X, we need to add, e.
 MAKEFLAGS=
 export MAKEFLAGS
 ```
-
 to the "make install" part of the package's `spkg-install`.
 
 Please see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).
@@ -100,7 +99,7 @@ I've put a new spkg at
 archive/issue_comments_085792.json:
 ```json
 {
-    "body": "Positive review. It is extreamly simple, looks good and I've tested it on Solaris 10 on an old Sun Blade 2000 SPARC. \n\n\n```\nreal    21m53.863s\nuser    17m29.388s\nsys     3m22.428s\nSuccessfully installed r-2.10.1.p2\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4/spkg/build/r-2.10.1.p2\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.p2.spkg\n```\n\n\n**I really hope your code for building packages in parallel gets into Sage asap. It could make a huge difference to build times. I'll see if I can get some interest in pushing this up the priority list!**",
+    "body": "Positive review. It is extreamly simple, looks good and I've tested it on Solaris 10 on an old Sun Blade 2000 SPARC. \n\n```\nreal    21m53.863s\nuser    17m29.388s\nsys     3m22.428s\nSuccessfully installed r-2.10.1.p2\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4/spkg/build/r-2.10.1.p2\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.p2.spkg\n```\n\n**I really hope your code for building packages in parallel gets into Sage asap. It could make a huge difference to build times. I'll see if I can get some interest in pushing this up the priority list!**",
     "created_at": "2010-06-24T17:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
@@ -110,7 +109,6 @@ archive/issue_comments_085792.json:
 ```
 
 Positive review. It is extreamly simple, looks good and I've tested it on Solaris 10 on an old Sun Blade 2000 SPARC. 
-
 
 ```
 real    21m53.863s
@@ -124,7 +122,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing r-2.10.1.p2.spkg
 ```
-
 
 **I really hope your code for building packages in parallel gets into Sage asap. It could make a huge difference to build times. I'll see if I can get some interest in pushing this up the priority list!**
 

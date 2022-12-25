@@ -3,7 +3,7 @@
 archive/issues_001983.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nAs justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:\n\n\n```\n\nsage: gp('0^0')\n1\nsage: magma('0^0')\n1\nsage: mathematica('0^0')\n...\nMathematica ERROR:\n\t                                        0\nPower::indet: Indeterminate expression 0  encountered.\nsage: maple('0^0')\n1\nsage: int(0)^int(0)\n1\nsage: float(0)^float(0)\n1.0\nsage: 0.0^0.0\n1.00000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1983\n\n",
+    "body": "Assignee: somebody\n\nAs justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:\n\n```\n\nsage: gp('0^0')\n1\nsage: magma('0^0')\n1\nsage: mathematica('0^0')\n...\nMathematica ERROR:\n\t                                        0\nPower::indet: Indeterminate expression 0  encountered.\nsage: maple('0^0')\n1\nsage: int(0)^int(0)\n1\nsage: float(0)^float(0)\n1.0\nsage: 0.0^0.0\n1.00000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1983\n\n",
     "created_at": "2008-01-30T13:35:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_001983.json:
 Assignee: somebody
 
 As justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:
-
 
 ```
 
@@ -41,7 +40,6 @@ sage: float(0)^float(0)
 sage: 0.0^0.0
 1.00000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1983
 

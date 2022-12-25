@@ -126,7 +126,7 @@ Changing keywords from "permutation, cycle, enumeration" to "permutation groups,
 archive/issue_comments_077180.json:
 ```json
 {
-    "body": "If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass.  If I instead apply the patch from #8500, all tests pass.  If I apply *both* patches, though, then I get a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.4.alpha1/devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 315:\n    sage: len(C.points())\nException raised:\n    Traceback (most recent call last):\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        len(C.points())###line 315:\n    sage: len(C.points())\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 327, in points\n        self.__points = self._points_fast_sqrt() # this is fast using Zech logarithms\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 239, in _points_fast_sqrt\n        points.append(self.point([x, v+sqrtD, one], check=True))\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/scheme.py\", line 256, in point\n        return self._point_class(self, v, check=check)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 196, in _point_class\n        return self.__A._point_class(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/projective_space.py\", line 535, in _point_class\n        return morphism.SchemeMorphism_projective_coordinates_field(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/morphism.py\", line 608, in __init__\n        X.codomain()._check_satisfies_equations(v)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 465, in _check_satisfies_equations\n        raise TypeError, \"Coordinates %s do not define a point on %s\"%(list(v),self)\n    TypeError: Coordinates [7*a + 9, 2*a + 2, 1] do not define a point on Hyperelliptic Curve over Finite Field in a of size 11^2 defined by y^2 + (x^2 + 2)*y = x^5 + x + 10\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_hyperelliptic_finite_field.py\n\t [8.2 s]\n```\n",
+    "body": "If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass.  If I instead apply the patch from #8500, all tests pass.  If I apply *both* patches, though, then I get a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.4.alpha1/devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 315:\n    sage: len(C.points())\nException raised:\n    Traceback (most recent call last):\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        len(C.points())###line 315:\n    sage: len(C.points())\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 327, in points\n        self.__points = self._points_fast_sqrt() # this is fast using Zech logarithms\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 239, in _points_fast_sqrt\n        points.append(self.point([x, v+sqrtD, one], check=True))\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/scheme.py\", line 256, in point\n        return self._point_class(self, v, check=check)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 196, in _point_class\n        return self.__A._point_class(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/projective_space.py\", line 535, in _point_class\n        return morphism.SchemeMorphism_projective_coordinates_field(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/morphism.py\", line 608, in __init__\n        X.codomain()._check_satisfies_equations(v)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 465, in _check_satisfies_equations\n        raise TypeError, \"Coordinates %s do not define a point on %s\"%(list(v),self)\n    TypeError: Coordinates [7*a + 9, 2*a + 2, 1] do not define a point on Hyperelliptic Curve over Finite Field in a of size 11^2 defined by y^2 + (x^2 + 2)*y = x^5 + x + 10\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_hyperelliptic_finite_field.py\n\t [8.2 s]\n```",
     "created_at": "2010-04-22T02:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",
     "type": "issue_comment",
@@ -178,7 +178,6 @@ For whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_hyperell
 
 
 
-
 ---
 
 archive/issue_comments_077181.json:
@@ -220,7 +219,7 @@ I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On 
 archive/issue_comments_077183.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.\n\n#8500 and #8549 together pass all long tests on 64-bit Ubuntu 9.04.  I also saw Mike Hansen at Sage Days 21 test just the file `sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py` with both patches and it passed all tests as well.  I'll be working on a review at some point today.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.\n\n\n#8500 and #8549 together pass all long tests on 64-bit Ubuntu 9.04.  I also saw Mike Hansen at Sage Days 21 test just the file `sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py` with both patches and it passed all tests as well.  I'll be working on a review at some point today.",
     "created_at": "2010-05-28T15:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",
     "type": "issue_comment",
@@ -232,6 +231,7 @@ archive/issue_comments_077183.json:
 Replying to [comment:7 jhpalmieri]:
 > I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.
 
+
 #8500 and #8549 together pass all long tests on 64-bit Ubuntu 9.04.  I also saw Mike Hansen at Sage Days 21 test just the file `sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py` with both patches and it passed all tests as well.  I'll be working on a review at some point today.
 
 
@@ -241,7 +241,7 @@ Replying to [comment:7 jhpalmieri]:
 archive/issue_comments_077184.json:
 ```json
 {
-    "body": "Nicolas(s),\n\nThis is a nice addition, and I can already think of a use for it in a classroom example.\n\nSome small comments/suggestions:\n\n1.  One small bit of language, in\n\n\n```\nHere are the cycle index of some permutation groups\n```\n\n\nI would write the plural as \"cycle indices.\"  Nicely written otherwise.\n\n\n2.  Would there be some way to qualify a value for the parent keyword as being legitimate?  For example, with `D=DihedralGroup(7)`, `14*D.cycle_index(parent=QQ)` goes boom.  It doesn't seem that there is a simple type to test on (but maybe I'm wrong on this), but it does look like parent need only implement  term() and sum().  Would it work to put something like  `parent.term(Partition([1]), 1)` in a try/except block?\n\n\n3.  Documentation.\n\n(a)  Do you want to add this into the reference manual?\n\n(b)  Last doctest block needs a preceding \"::\" to make it render as verbatim.\n\n(c)  Two instances of \"cycle_type\" near the top print weird due to the underscore.\n\n\nImportant stuff:  builds and passes long tests, works as advertised.  So I'm ready to give this a positive review subject to the above minor items.\n\nRob",
+    "body": "Nicolas(s),\n\nThis is a nice addition, and I can already think of a use for it in a classroom example.\n\nSome small comments/suggestions:\n\n1.  One small bit of language, in\n\n```\nHere are the cycle index of some permutation groups\n```\n\nI would write the plural as \"cycle indices.\"  Nicely written otherwise.\n\n\n2.  Would there be some way to qualify a value for the parent keyword as being legitimate?  For example, with `D=DihedralGroup(7)`, `14*D.cycle_index(parent=QQ)` goes boom.  It doesn't seem that there is a simple type to test on (but maybe I'm wrong on this), but it does look like parent need only implement  term() and sum().  Would it work to put something like  `parent.term(Partition([1]), 1)` in a try/except block?\n\n\n3.  Documentation.\n\n(a)  Do you want to add this into the reference manual?\n\n(b)  Last doctest block needs a preceding \"::\" to make it render as verbatim.\n\n(c)  Two instances of \"cycle_type\" near the top print weird due to the underscore.\n\n\nImportant stuff:  builds and passes long tests, works as advertised.  So I'm ready to give this a positive review subject to the above minor items.\n\nRob",
     "created_at": "2010-05-29T04:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",
     "type": "issue_comment",
@@ -258,11 +258,9 @@ Some small comments/suggestions:
 
 1.  One small bit of language, in
 
-
 ```
 Here are the cycle index of some permutation groups
 ```
-
 
 I would write the plural as "cycle indices."  Nicely written otherwise.
 
@@ -388,7 +386,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077190.json:
 ```json
 {
-    "body": "I change two times the status of this patch but I precise the last change come from Nicolas Thi\u00e9ry.\n\nThis positive review is also modulo the comment \n\n> If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass. If I instead apply the patch from #8500, all tests pass. If I apply both patches, though, then I get a doctest failure\n\nI currently have no possible access to any OS X machine. All my tests was computing from Ubuntu machines.",
+    "body": "I change two times the status of this patch but I precise the last change come from Nicolas Thi\u00e9ry.\n\nThis positive review is also modulo the comment \n\n> If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass. If I instead apply the patch from #8500, all tests pass. If I apply both patches, though, then I get a doctest failure\n\n\nI currently have no possible access to any OS X machine. All my tests was computing from Ubuntu machines.",
     "created_at": "2010-06-01T11:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8549",
     "type": "issue_comment",
@@ -402,6 +400,7 @@ I change two times the status of this patch but I precise the last change come f
 This positive review is also modulo the comment 
 
 > If I apply "trac_8549_cycle_enumerator-nb.patch" on top of 4.4.alpha1, all tests pass. If I instead apply the patch from #8500, all tests pass. If I apply both patches, though, then I get a doctest failure
+
 
 I currently have no possible access to any OS X machine. All my tests was computing from Ubuntu machines.
 

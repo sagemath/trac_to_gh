@@ -3,7 +3,7 @@
 archive/issues_006861.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nAt least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:\n\n```\n[mvngu@mod mvngu]$ cat demo.sage \nprint 2\n[mvngu@mod mvngu]$ sage -t demo.sage \nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/sage-test\", line 49, in <module>\n    os.makedirs(TMP)\n  File \"/usr/local/sage/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'\n```\n\nThat is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6861\n\n",
+    "body": "Assignee: tbd\n\nAt least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:\n\n```\n[mvngu@mod mvngu]$ cat demo.sage \nprint 2\n[mvngu@mod mvngu]$ sage -t demo.sage \nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/sage-test\", line 49, in <module>\n    os.makedirs(TMP)\n  File \"/usr/local/sage/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'\n```\nThat is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6861\n\n",
     "created_at": "2009-09-02T04:47:07Z",
     "labels": [
         "component: doctest coverage"
@@ -30,7 +30,6 @@ Traceback (most recent call last):
     mkdir(name, mode)
 OSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'
 ```
-
 That is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6861
@@ -102,7 +101,7 @@ In addition to the change made by the patch, some corresponding changes need mak
 archive/issue_comments_056488.json:
 ```json
 {
-    "body": "Replying to [comment:2 fwclarke]:\n> Replying to [comment:1 jason]:\n> \n> In addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`). \n\n\nYou sound like you know what needs to be done.  Please, please post a patch.",
+    "body": "Replying to [comment:2 fwclarke]:\n> Replying to [comment:1 jason]:\n> \n> In addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`). \n\n\n\nYou sound like you know what needs to be done.  Please, please post a patch.",
     "created_at": "2009-09-03T07:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -117,6 +116,7 @@ Replying to [comment:2 fwclarke]:
 > In addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`). 
 
 
+
 You sound like you know what needs to be done.  Please, please post a patch.
 
 
@@ -126,7 +126,7 @@ You sound like you know what needs to be done.  Please, please post a patch.
 archive/issue_comments_056489.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> You sound like you know what needs to be done.  Please, please post a patch.\n\nWill do, but not immediately; there are a few things I don't quite understand, and I'm off to the day-job now.",
+    "body": "Replying to [comment:3 jason]:\n> You sound like you know what needs to be done.  Please, please post a patch.\n\n\nWill do, but not immediately; there are a few things I don't quite understand, and I'm off to the day-job now.",
     "created_at": "2009-09-03T07:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -138,6 +138,7 @@ archive/issue_comments_056489.json:
 Replying to [comment:3 jason]:
 > You sound like you know what needs to be done.  Please, please post a patch.
 
+
 Will do, but not immediately; there are a few things I don't quite understand, and I'm off to the day-job now.
 
 
@@ -147,7 +148,7 @@ Will do, but not immediately; there are a few things I don't quite understand, a
 archive/issue_comments_056490.json:
 ```json
 {
-    "body": "Replying to [comment:4 fwclarke]:\n \n> There are a few things I don't quite understand ...\n\nIt seems to me that if (because of the changed definition of `SAGE_TESTDIR`) the directory `~/.sage/tmp` is to be used for testing system files, then logically it should also be used for testing users' own files.  This requires a few more changes.    \n\nIt also seems worthwhile to active the function `delete_tmpfiles` in `sage-doctest`; at present this function does nothing.  The obvious things is for it to get called if the doctest succeeds without any failures, but at present the method of counting the number of failures is defective.\n\nI have implemented these ideas and am testing the code.  A patch will follow soon.",
+    "body": "Replying to [comment:4 fwclarke]:\n \n> There are a few things I don't quite understand ...\n\n\nIt seems to me that if (because of the changed definition of `SAGE_TESTDIR`) the directory `~/.sage/tmp` is to be used for testing system files, then logically it should also be used for testing users' own files.  This requires a few more changes.    \n\nIt also seems worthwhile to active the function `delete_tmpfiles` in `sage-doctest`; at present this function does nothing.  The obvious things is for it to get called if the doctest succeeds without any failures, but at present the method of counting the number of failures is defective.\n\nI have implemented these ideas and am testing the code.  A patch will follow soon.",
     "created_at": "2009-09-05T18:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
@@ -159,6 +160,7 @@ archive/issue_comments_056490.json:
 Replying to [comment:4 fwclarke]:
  
 > There are a few things I don't quite understand ...
+
 
 It seems to me that if (because of the changed definition of `SAGE_TESTDIR`) the directory `~/.sage/tmp` is to be used for testing system files, then logically it should also be used for testing users' own files.  This requires a few more changes.    
 

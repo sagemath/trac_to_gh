@@ -129,7 +129,7 @@ Dave
 archive/issue_comments_094691.json:
 ```json
 {
-    "body": "Ralf Wildenhues, who is a **libtool** developer kindly took a look at this for me - iconv uses libtool. The solution is to use:\n\n\n\n```\nCC=\"gcc -m64\"\n```\n\n\nrather than have \n\n\n```\nCC=gcc\nCFLAGS=-m64\n```\n\n\n(Of course, gcc and -m64 should not be hardcoded - use $CC and $CFLAG64 in place). But the basic problem is that setting -m64 in CLFAGS does not work for some packages, and iconv is one of them. `Numpy` `Pynac` and `Libfplll` are other packages which will not build properly if only `CFLAGS` is set. \n\nI will add the necessary changes to #9603, which initially started off as a very small fix to install iconv on HP-UX, but has now generated into an almost complete redesign of the iconv package. \n\nThe solution Ralf found has been posted to the libtool mailing list, but I'll get it put in the iconv one too, so others hopefully don't hit this problem. \n\nI'm cc'ing Leif, so he knows why the change will need to be made to #9603.\n\nDave",
+    "body": "Ralf Wildenhues, who is a **libtool** developer kindly took a look at this for me - iconv uses libtool. The solution is to use:\n\n\n```\nCC=\"gcc -m64\"\n```\n\nrather than have \n\n```\nCC=gcc\nCFLAGS=-m64\n```\n\n(Of course, gcc and -m64 should not be hardcoded - use $CC and $CFLAG64 in place). But the basic problem is that setting -m64 in CLFAGS does not work for some packages, and iconv is one of them. `Numpy` `Pynac` and `Libfplll` are other packages which will not build properly if only `CFLAGS` is set. \n\nI will add the necessary changes to #9603, which initially started off as a very small fix to install iconv on HP-UX, but has now generated into an almost complete redesign of the iconv package. \n\nThe solution Ralf found has been posted to the libtool mailing list, but I'll get it put in the iconv one too, so others hopefully don't hit this problem. \n\nI'm cc'ing Leif, so he knows why the change will need to be made to #9603.\n\nDave",
     "created_at": "2010-08-29T12:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -141,20 +141,16 @@ archive/issue_comments_094691.json:
 Ralf Wildenhues, who is a **libtool** developer kindly took a look at this for me - iconv uses libtool. The solution is to use:
 
 
-
 ```
 CC="gcc -m64"
 ```
 
-
 rather than have 
-
 
 ```
 CC=gcc
 CFLAGS=-m64
 ```
-
 
 (Of course, gcc and -m64 should not be hardcoded - use $CC and $CFLAG64 in place). But the basic problem is that setting -m64 in CLFAGS does not work for some packages, and iconv is one of them. `Numpy` `Pynac` and `Libfplll` are other packages which will not build properly if only `CFLAGS` is set. 
 
@@ -173,7 +169,7 @@ Dave
 archive/issue_comments_094692.json:
 ```json
 {
-    "body": "Replying to [comment:4 drkirkby]:\n> The solution is to use:\n\n\n```\nCC=\"gcc -m64\"\n```\n\n> rather than have \n\n```\nCC=gcc\nCFLAGS=-m64\n```\n\n\nHonestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)",
+    "body": "Replying to [comment:4 drkirkby]:\n> The solution is to use:\n\n\n```\nCC=\"gcc -m64\"\n```\n> rather than have \n\n{{{\nCC=gcc\nCFLAGS=-m64\n}}}\n\nHonestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)",
     "created_at": "2010-08-29T14:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -189,14 +185,12 @@ Replying to [comment:4 drkirkby]:
 ```
 CC="gcc -m64"
 ```
-
 > rather than have 
 
-```
+{{{
 CC=gcc
 CFLAGS=-m64
-```
-
+}}}
 
 Honestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)
 
@@ -207,7 +201,7 @@ Honestly, that's well-documented in many installation instructions of packages u
 archive/issue_comments_094693.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> Replying to [comment:4 drkirkby]:\n> > The solution is to use:\n> \n> {{{\n> CC=\"gcc -m64\"\n> }}}\n> > rather than have \n> {{{\n> CC=gcc\n> CFLAGS=-m64\n> }}}\n> \n> Honestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)\n> \n\nI have come across the problem before I must admit. Strange thing is though, this works OK on:\n\n* OS X 64-bit\n* Numerous Solaris systems - see above table. \n\nI'll create a patch and add it to the HP-UX patch, #9603. \n\nDave",
+    "body": "Replying to [comment:5 leif]:\n> Replying to [comment:4 drkirkby]:\n> > The solution is to use:\n\n> \n> {{{\n> CC=\"gcc -m64\"\n> }}}\n> > rather than have \n\n> {{{\n> CC=gcc\n> CFLAGS=-m64\n> }}}\n> \n> Honestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)\n> \n\n\nI have come across the problem before I must admit. Strange thing is though, this works OK on:\n\n* OS X 64-bit\n* Numerous Solaris systems - see above table. \n\nI'll create a patch and add it to the HP-UX patch, #9603. \n\nDave",
     "created_at": "2010-08-29T14:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -219,11 +213,13 @@ archive/issue_comments_094693.json:
 Replying to [comment:5 leif]:
 > Replying to [comment:4 drkirkby]:
 > > The solution is to use:
+
 > 
 > {{{
 > CC="gcc -m64"
 > }}}
 > > rather than have 
+
 > {{{
 > CC=gcc
 > CFLAGS=-m64
@@ -231,6 +227,7 @@ Replying to [comment:5 leif]:
 > 
 > Honestly, that's well-documented in many installation instructions of packages using `autoconf` / `automake` and `libtool`... (`libtool` strips flags from `CFLAGS` et al., but **not** from `CC`.)
 > 
+
 
 I have come across the problem before I must admit. Strange thing is though, this works OK on:
 
@@ -248,7 +245,7 @@ Dave
 archive/issue_comments_094694.json:
 ```json
 {
-    "body": "I'm attaching a file showing this now building fully on `fulvia` at Skynet  - the machine where `iconv-1.13.1.p2` had failed before. \n\nSince SAGE_CHECK was set to \"yes\", the test suite is run. Note there are 3 core dumps, but these are to be expected, and documented in messages printed to the screen. \n\n\n```\nRunning the test suite.\nIf you see 3 core dumps, do not be too alarmed. See\nhttp://trac.sagemath.org/sage_trac/ticket/8270\nThis is a Solaris bug and can be safely ignored\nhttp://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6550204\nIt will probably be fixed in later releases of Solaris 10\nIt was fixed in build 66 of OpenSolaris.\n```\n\n\nAs such, I consider this issue is now resolved. A patch will be attached to #9603.\n\nDave",
+    "body": "I'm attaching a file showing this now building fully on `fulvia` at Skynet  - the machine where `iconv-1.13.1.p2` had failed before. \n\nSince SAGE_CHECK was set to \"yes\", the test suite is run. Note there are 3 core dumps, but these are to be expected, and documented in messages printed to the screen. \n\n```\nRunning the test suite.\nIf you see 3 core dumps, do not be too alarmed. See\nhttp://trac.sagemath.org/sage_trac/ticket/8270\nThis is a Solaris bug and can be safely ignored\nhttp://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6550204\nIt will probably be fixed in later releases of Solaris 10\nIt was fixed in build 66 of OpenSolaris.\n```\n\nAs such, I consider this issue is now resolved. A patch will be attached to #9603.\n\nDave",
     "created_at": "2010-08-29T15:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9718",
     "type": "issue_comment",
@@ -261,7 +258,6 @@ I'm attaching a file showing this now building fully on `fulvia` at Skynet  - th
 
 Since SAGE_CHECK was set to "yes", the test suite is run. Note there are 3 core dumps, but these are to be expected, and documented in messages printed to the screen. 
 
-
 ```
 Running the test suite.
 If you see 3 core dumps, do not be too alarmed. See
@@ -271,7 +267,6 @@ http://bugs.opensolaris.org/bugdatabase/view_bug.do?bug_id=6550204
 It will probably be fixed in later releases of Solaris 10
 It was fixed in build 66 of OpenSolaris.
 ```
-
 
 As such, I consider this issue is now resolved. A patch will be attached to #9603.
 

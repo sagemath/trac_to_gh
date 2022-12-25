@@ -3,7 +3,7 @@
 archive/issues_001288.json:
 ```json
 {
-    "body": "Assignee: tba\n\nSee below.  I suspect that the best solution is to remove this stuff about \"sage -advanced\" from the reference manual entirely, since it is always going to get out of date, hence be misleading.  It's much better to just described how \"sage -advanced\" works, and suggest that the user try it out, then improve the output of \"sage -advanced\". \n\n\n\n```\nReading 2.3 of the Reference Manual from the Notebook interface, I find that this \"live\" version has turned the lines:\n\n\\item\n\\verb+-advanced+ Lists additional options:\n\n\\begin{verbatim}\n$ sage -advanced\nin devel/doc-main/ref/options.tex into\n\n<li><code>-advanced</code> Lists additional options:\n\n<p>\n<div class=\"verbatim\"><pre><span class=\"math\"> sage -advanced\n\nin localhost:8000/doc/live/ref/node7.html , which, of course, completely wrecks the formatting.  There seems to be no problem with the pre-built  devel/doc-main/html/ref/node7.html , where latex2html has correctly turned the TeX into\n\n<LI><code>-advanced</code> Lists additional options:\n\n<P>\n<div class=\"verbatim\"><pre>\n$ sage -advanced\n\n\nMoreover, the list of options given in options.tex is considerably different from those currently produced by sage -advanced .\n\n\nMac OS X 10.4.11\nSage 2.8.14\n\n-- \n\nFrancis Clarke\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1288\n\n",
+    "body": "Assignee: tba\n\nSee below.  I suspect that the best solution is to remove this stuff about \"sage -advanced\" from the reference manual entirely, since it is always going to get out of date, hence be misleading.  It's much better to just described how \"sage -advanced\" works, and suggest that the user try it out, then improve the output of \"sage -advanced\". \n\n\n```\nReading 2.3 of the Reference Manual from the Notebook interface, I find that this \"live\" version has turned the lines:\n\n\\item\n\\verb+-advanced+ Lists additional options:\n\n\\begin{verbatim}\n$ sage -advanced\nin devel/doc-main/ref/options.tex into\n\n<li><code>-advanced</code> Lists additional options:\n\n<p>\n<div class=\"verbatim\"><pre><span class=\"math\"> sage -advanced\n\nin localhost:8000/doc/live/ref/node7.html , which, of course, completely wrecks the formatting.  There seems to be no problem with the pre-built  devel/doc-main/html/ref/node7.html , where latex2html has correctly turned the TeX into\n\n<LI><code>-advanced</code> Lists additional options:\n\n<P>\n<div class=\"verbatim\"><pre>\n$ sage -advanced\n\n\nMoreover, the list of options given in options.tex is considerably different from those currently produced by sage -advanced .\n\n\nMac OS X 10.4.11\nSage 2.8.14\n\n-- \n\nFrancis Clarke\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1288\n\n",
     "created_at": "2007-11-27T14:09:36Z",
     "labels": [
         "component: documentation",
@@ -19,7 +19,6 @@ archive/issues_001288.json:
 Assignee: tba
 
 See below.  I suspect that the best solution is to remove this stuff about "sage -advanced" from the reference manual entirely, since it is always going to get out of date, hence be misleading.  It's much better to just described how "sage -advanced" works, and suggest that the user try it out, then improve the output of "sage -advanced". 
-
 
 
 ```
@@ -56,7 +55,6 @@ Sage 2.8.14
 
 Francis Clarke
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1288
 

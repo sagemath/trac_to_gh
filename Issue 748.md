@@ -3,7 +3,7 @@
 archive/issues_000748.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\n\n```\n\n2. For iml-1.0.1.p8, there is some autotools problem\nthat I have not been able to track down.  Is\neverything up-to-date with configure, etc.\nfor this package?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/748\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\n```\n\n2. For iml-1.0.1.p8, there is some autotools problem\nthat I have not been able to track down.  Is\neverything up-to-date with configure, etc.\nfor this package?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/748\n\n",
     "created_at": "2007-09-24T20:58:43Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  jpflori
 
-
 ```
 
 2. For iml-1.0.1.p8, there is some autotools problem
@@ -28,7 +27,6 @@ that I have not been able to track down.  Is
 everything up-to-date with configure, etc.
 for this package?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/748
 
@@ -428,7 +426,7 @@ I have a patch for repl problem in sage-on-gentoo but all the autotool chain nee
 archive/issue_comments_004375.json:
 ```json
 {
-    "body": "Thanks, that will help. We cannot run autotools at build time, only at packaging time, since we don't have autotools as a dependency of Sage, nor do we package it in Sage. So rather than including your patch I guess I should apply it, run autotools, and then save *that* diff as a patch to apply at build time.\n\nBefore seeing your diff I had solved the repl problem like this:\n\n\n```diff\ndiff --git a/repl/Makefile.am b/repl/Makefile.am\nindex 4cf001b..7be2e86 100644\n--- a/repl/Makefile.am\n+++ b/repl/Makefile.am\n@@ -1,4 +1,4 @@\n noinst_LTLIBRARIES      = librepl.la\n-librepl_la_SOURCES   =\n+librepl_la_SOURCES   = dummy.c\n librepl_la_LIBADD    = @LTLIBOBJS@\n \ndiff --git a/repl/Makefile.in b/repl/Makefile.in\nindex 5c65bfa..ba963ec 100644\n--- a/repl/Makefile.in\n+++ b/repl/Makefile.in\n@@ -51,7 +51,7 @@ CONFIG_HEADER = $(top_builddir)/config.h\n CONFIG_CLEAN_FILES =\n LTLIBRARIES = $(noinst_LTLIBRARIES)\n librepl_la_DEPENDENCIES = @LTLIBOBJS@\n-am_librepl_la_OBJECTS =\n+am_librepl_la_OBJECTS = dummy.lo\n librepl_la_OBJECTS = $(am_librepl_la_OBJECTS)\n DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)\n depcomp = $(SHELL) $(top_srcdir)/config/depcomp\n@@ -172,7 +172,7 @@ sharedstatedir = @sharedstatedir@\n sysconfdir = @sysconfdir@\n target_alias = @target_alias@\n noinst_LTLIBRARIES = librepl.la\n-librepl_la_SOURCES = \n+librepl_la_SOURCES = dummy.c\n librepl_la_LIBADD = @LTLIBOBJS@\n all: all-am\n \n@@ -226,6 +226,7 @@ distclean-compile:\n \t-rm -f *.tab.c\n \n @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/realloc.Plo@am__quote@\n+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dummy.Plo@am__quote@\n \n .c.o:\n @am__fastdepCC_TRUE@\tif $(COMPILE) -MT $@ -MD -MP -MF \"$(DEPDIR)/$*.Tpo\" -c -o $@ $<; \\\n@@ -367,7 +368,7 @@ clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \\\n \tmostlyclean-am\n \n distclean: distclean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n distclean-am: clean-am distclean-compile distclean-generic \\\n \tdistclean-libtool distclean-tags\n@@ -393,7 +394,7 @@ install-man:\n installcheck-am:\n \n maintainer-clean: maintainer-clean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n maintainer-clean-am: distclean-am maintainer-clean-generic\n \ndiff --git a/repl/dummy.c b/repl/dummy.c\nnew file mode 100644\nindex 0000000..39e7442\n--- /dev/null\n+++ b/repl/dummy.c\n@@ -0,0 +1 @@\n+void dummy () { return; }\ndiff --git a/src/Makefile.in b/src/Makefile.in\nindex e9ca293..a1f5a81 100644\n--- a/src/Makefile.in\n+++ b/src/Makefile.in\n@@ -223,6 +223,7 @@ libiml_la_CFLAGS = $(AM_CFLAGS)\n libiml_la_LIBADD = $(EXTERNLIB) \\\n \t \t   $(top_builddir)/repl/librepl.la\n \n+libiml_la_LDFLAGS = -version-info 1:0:1\n all: all-am\n \n .SUFFIXES:\n```\n\n\nThe first hunk is manually edited, as is the hunk adding the file `repl/dummy.c`; the rest are created by running automake in the src directory.\n\nThere are a couple of things that worry me, such as the `-version-info 1:0:1` near the end of the diff. Does that mean that autotools are misunderstanding the version of IML as 1.0.1 instead of 1.0.3? Why does a similar line not already exist in that file? As far as I can tell, I made sure I was using the same versions of autotools that the authors of IML were - autoconf 2.59, automake 1.9.6, and libtool 1.5.22.\n\nAnyway, I'll try again with your patch instead of this dummy function and see what's different. This time I'll also try the whole autotools suite by running `autoreconf -i` (as recommended to me by Jeroen) - is this what you recommend too, fbissey?",
+    "body": "Thanks, that will help. We cannot run autotools at build time, only at packaging time, since we don't have autotools as a dependency of Sage, nor do we package it in Sage. So rather than including your patch I guess I should apply it, run autotools, and then save *that* diff as a patch to apply at build time.\n\nBefore seeing your diff I had solved the repl problem like this:\n\n```diff\ndiff --git a/repl/Makefile.am b/repl/Makefile.am\nindex 4cf001b..7be2e86 100644\n--- a/repl/Makefile.am\n+++ b/repl/Makefile.am\n@@ -1,4 +1,4 @@\n noinst_LTLIBRARIES      = librepl.la\n-librepl_la_SOURCES   =\n+librepl_la_SOURCES   = dummy.c\n librepl_la_LIBADD    = @LTLIBOBJS@\n \ndiff --git a/repl/Makefile.in b/repl/Makefile.in\nindex 5c65bfa..ba963ec 100644\n--- a/repl/Makefile.in\n+++ b/repl/Makefile.in\n@@ -51,7 +51,7 @@ CONFIG_HEADER = $(top_builddir)/config.h\n CONFIG_CLEAN_FILES =\n LTLIBRARIES = $(noinst_LTLIBRARIES)\n librepl_la_DEPENDENCIES = @LTLIBOBJS@\n-am_librepl_la_OBJECTS =\n+am_librepl_la_OBJECTS = dummy.lo\n librepl_la_OBJECTS = $(am_librepl_la_OBJECTS)\n DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)\n depcomp = $(SHELL) $(top_srcdir)/config/depcomp\n@@ -172,7 +172,7 @@ sharedstatedir = @sharedstatedir@\n sysconfdir = @sysconfdir@\n target_alias = @target_alias@\n noinst_LTLIBRARIES = librepl.la\n-librepl_la_SOURCES = \n+librepl_la_SOURCES = dummy.c\n librepl_la_LIBADD = @LTLIBOBJS@\n all: all-am\n \n@@ -226,6 +226,7 @@ distclean-compile:\n \t-rm -f *.tab.c\n \n @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/realloc.Plo@am__quote@\n+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dummy.Plo@am__quote@\n \n .c.o:\n @am__fastdepCC_TRUE@\tif $(COMPILE) -MT $@ -MD -MP -MF \"$(DEPDIR)/$*.Tpo\" -c -o $@ $<; \\\n@@ -367,7 +368,7 @@ clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \\\n \tmostlyclean-am\n \n distclean: distclean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n distclean-am: clean-am distclean-compile distclean-generic \\\n \tdistclean-libtool distclean-tags\n@@ -393,7 +394,7 @@ install-man:\n installcheck-am:\n \n maintainer-clean: maintainer-clean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n maintainer-clean-am: distclean-am maintainer-clean-generic\n \ndiff --git a/repl/dummy.c b/repl/dummy.c\nnew file mode 100644\nindex 0000000..39e7442\n--- /dev/null\n+++ b/repl/dummy.c\n@@ -0,0 +1 @@\n+void dummy () { return; }\ndiff --git a/src/Makefile.in b/src/Makefile.in\nindex e9ca293..a1f5a81 100644\n--- a/src/Makefile.in\n+++ b/src/Makefile.in\n@@ -223,6 +223,7 @@ libiml_la_CFLAGS = $(AM_CFLAGS)\n libiml_la_LIBADD = $(EXTERNLIB) \\\n \t \t   $(top_builddir)/repl/librepl.la\n \n+libiml_la_LDFLAGS = -version-info 1:0:1\n all: all-am\n \n .SUFFIXES:\n```\n\nThe first hunk is manually edited, as is the hunk adding the file `repl/dummy.c`; the rest are created by running automake in the src directory.\n\nThere are a couple of things that worry me, such as the `-version-info 1:0:1` near the end of the diff. Does that mean that autotools are misunderstanding the version of IML as 1.0.1 instead of 1.0.3? Why does a similar line not already exist in that file? As far as I can tell, I made sure I was using the same versions of autotools that the authors of IML were - autoconf 2.59, automake 1.9.6, and libtool 1.5.22.\n\nAnyway, I'll try again with your patch instead of this dummy function and see what's different. This time I'll also try the whole autotools suite by running `autoreconf -i` (as recommended to me by Jeroen) - is this what you recommend too, fbissey?",
     "created_at": "2012-05-28T16:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -440,7 +438,6 @@ archive/issue_comments_004375.json:
 Thanks, that will help. We cannot run autotools at build time, only at packaging time, since we don't have autotools as a dependency of Sage, nor do we package it in Sage. So rather than including your patch I guess I should apply it, run autotools, and then save *that* diff as a patch to apply at build time.
 
 Before seeing your diff I had solved the repl problem like this:
-
 
 ```diff
 diff --git a/repl/Makefile.am b/repl/Makefile.am
@@ -522,7 +519,6 @@ index e9ca293..a1f5a81 100644
  .SUFFIXES:
 ```
 
-
 The first hunk is manually edited, as is the hunk adding the file `repl/dummy.c`; the rest are created by running automake in the src directory.
 
 There are a couple of things that worry me, such as the `-version-info 1:0:1` near the end of the diff. Does that mean that autotools are misunderstanding the version of IML as 1.0.1 instead of 1.0.3? Why does a similar line not already exist in that file? As far as I can tell, I made sure I was using the same versions of autotools that the authors of IML were - autoconf 2.59, automake 1.9.6, and libtool 1.5.22.
@@ -536,7 +532,7 @@ Anyway, I'll try again with your patch instead of this dummy function and see wh
 archive/issue_comments_004376.json:
 ```json
 {
-    "body": "Oh, I should mention that the patch I pasted in the previous comment actually does work to get rid of the build failure caused in `repl/`. Now the problem seems to be something with dynamic linking. To copy from #13027:\n\n\n```\ncreating test-largeentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 74987 Trace/BPT trap          ${dir}$tst\nFAIL: test-smallentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 75006 Trace/BPT trap          ${dir}$tst\nFAIL: test-largeentry\n===================\n2 of 2 tests failed\n===================\nmake[2]: *** [check-TESTS] Error 1\nmake[1]: *** [check-am] Error 2\nmake: *** [check-recursive] Error 1\nError testing IML\n```\n\n\nAs you can see, this is during the testing phase, so building completes successfully with the patch I pasted in the previous comment.",
+    "body": "Oh, I should mention that the patch I pasted in the previous comment actually does work to get rid of the build failure caused in `repl/`. Now the problem seems to be something with dynamic linking. To copy from #13027:\n\n```\ncreating test-largeentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 74987 Trace/BPT trap          ${dir}$tst\nFAIL: test-smallentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 75006 Trace/BPT trap          ${dir}$tst\nFAIL: test-largeentry\n===================\n2 of 2 tests failed\n===================\nmake[2]: *** [check-TESTS] Error 1\nmake[1]: *** [check-am] Error 2\nmake: *** [check-recursive] Error 1\nError testing IML\n```\n\nAs you can see, this is during the testing phase, so building completes successfully with the patch I pasted in the previous comment.",
     "created_at": "2012-05-28T16:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -546,7 +542,6 @@ archive/issue_comments_004376.json:
 ```
 
 Oh, I should mention that the patch I pasted in the previous comment actually does work to get rid of the build failure caused in `repl/`. Now the problem seems to be something with dynamic linking. To copy from #13027:
-
 
 ```
 creating test-largeentry
@@ -578,7 +573,6 @@ make[1]: *** [check-am] Error 2
 make: *** [check-recursive] Error 1
 Error testing IML
 ```
-
 
 As you can see, this is during the testing phase, so building completes successfully with the patch I pasted in the previous comment.
 
@@ -947,7 +941,7 @@ archive/issue_comments_004393.json:
 archive/issue_comments_004394.json:
 ```json
 {
-    "body": "I still get\n\n```\n./configure: line 18624: -O2: command not found\n```\n",
+    "body": "I still get\n\n```\n./configure: line 18624: -O2: command not found\n```",
     "created_at": "2013-06-12T13:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -964,13 +958,12 @@ I still get
 
 
 
-
 ---
 
 archive/issue_comments_004395.json:
 ```json
 {
-    "body": "Replying to [comment:37 leif]:\n> I still get\n> {{{\n> ./configure: line 18624: -O2: command not found\n> }}}\nFixed in new spkg.\n\nDoctests on boxen.math pass.",
+    "body": "Replying to [comment:37 leif]:\n> I still get\n> \n> ```\n> ./configure: line 18624: -O2: command not found\n> ```\n\nFixed in new spkg.\n\nDoctests on boxen.math pass.",
     "created_at": "2013-06-12T16:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -981,9 +974,11 @@ archive/issue_comments_004395.json:
 
 Replying to [comment:37 leif]:
 > I still get
-> {{{
+> 
+> ```
 > ./configure: line 18624: -O2: command not found
-> }}}
+> ```
+
 Fixed in new spkg.
 
 Doctests on boxen.math pass.
@@ -1041,7 +1036,7 @@ And lets move the sage3_memleak.patch to memleak.patch while at it.
 archive/issue_comments_004398.json:
 ```json
 {
-    "body": "Replying to [comment:40 jpflori]:\n> Why merge tinyatlas.patch into sage1.patch?\nBecause those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\n\n> On top of that I don't really get the use of the tinyatlas patch.\n> The function it defines (in a header file) is used nor in IML nor in Sage.\nThat's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n\nMy guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
+    "body": "Replying to [comment:40 jpflori]:\n> Why merge tinyatlas.patch into sage1.patch?\n\nBecause those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\n\n> On top of that I don't really get the use of the tinyatlas patch.\n> The function it defines (in a header file) is used nor in IML nor in Sage.\n\nThat's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n\nMy guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
     "created_at": "2013-06-14T13:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1052,10 +1047,12 @@ archive/issue_comments_004398.json:
 
 Replying to [comment:40 jpflori]:
 > Why merge tinyatlas.patch into sage1.patch?
+
 Because those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.
 
 > On top of that I don't really get the use of the tinyatlas patch.
 > The function it defines (in a header file) is used nor in IML nor in Sage.
+
 That's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.
 
 My guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.
@@ -1067,7 +1064,7 @@ My guess is that's a function which normally comes from ATLAS, but which is need
 archive/issue_comments_004399.json:
 ```json
 {
-    "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:40 jpflori]:\n> > Why merge tinyatlas.patch into sage1.patch?\n> Because those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\nOk, i thought the include was in tinyatlas.h as well, so I did not check.\n> \n> > On top of that I don't really get the use of the tinyatlas patch.\n> > The function it defines (in a header file) is used nor in IML nor in Sage.\n> That's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n> \nIt seems to be true with IML 1.0.3 but not with 1.0.1 indeed.\n(I mean the daxpby function was needed in 1.0.1 but is not anymore in 1.0.3.)\n> My guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
+    "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:40 jpflori]:\n> > Why merge tinyatlas.patch into sage1.patch?\n\n> Because those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\nOk, i thought the include was in tinyatlas.h as well, so I did not check.\n> \n> > On top of that I don't really get the use of the tinyatlas patch.\n> > The function it defines (in a header file) is used nor in IML nor in Sage.\n\n> That's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n> \n\nIt seems to be true with IML 1.0.3 but not with 1.0.1 indeed.\n(I mean the daxpby function was needed in 1.0.1 but is not anymore in 1.0.3.)\n> My guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
     "created_at": "2013-06-14T13:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1079,13 +1076,16 @@ archive/issue_comments_004399.json:
 Replying to [comment:41 jdemeyer]:
 > Replying to [comment:40 jpflori]:
 > > Why merge tinyatlas.patch into sage1.patch?
+
 > Because those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.
 Ok, i thought the include was in tinyatlas.h as well, so I did not check.
 > 
 > > On top of that I don't really get the use of the tinyatlas patch.
 > > The function it defines (in a header file) is used nor in IML nor in Sage.
+
 > That's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.
 > 
+
 It seems to be true with IML 1.0.3 but not with 1.0.1 indeed.
 (I mean the daxpby function was needed in 1.0.1 but is not anymore in 1.0.3.)
 > My guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.
@@ -1115,7 +1115,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_004401.json:
 ```json
 {
-    "body": "Replying to [comment:42 jpflori]:\n> It seems to be true with IML 1.0.3 but not with 1.0.1.\nOK, right, I checked the old sources.",
+    "body": "Replying to [comment:42 jpflori]:\n> It seems to be true with IML 1.0.3 but not with 1.0.1.\n\nOK, right, I checked the old sources.",
     "created_at": "2013-06-14T13:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1126,6 +1126,7 @@ archive/issue_comments_004401.json:
 
 Replying to [comment:42 jpflori]:
 > It seems to be true with IML 1.0.3 but not with 1.0.1.
+
 OK, right, I checked the old sources.
 
 
@@ -1155,7 +1156,7 @@ Working on new spkg...
 archive/issue_comments_004403.json:
 ```json
 {
-    "body": "Applying the following changes:\n\n```diff\ndiff --git a/SPKG.txt b/SPKG.txt\n--- a/SPKG.txt\n+++ b/SPKG.txt\n@@ -32,21 +32,27 @@\n\n === Patches ===\n\n- * rename_lift.patch: Change lift to iml_lift in padiclift.* and\n-   nonsingsolve.*, since otherwise  on OSX you'll have horrible weird\n-   conflict problems.\n+ * blas_headers.patch: Add BLAS header files from GSL, needed in case\n+   ATLAS has not been installed.\n+ * build.patch: Made build scripts that work.\n  * configure_default_cflags.patch: get rid of the following error\n    during configure:\n      ./configure: line 18624: -O3: command not found\n- * Modified some of the examples, and made build scripts that work.\n+ * examples.patch: Modified some of the examples.\n+ * memleak.patch: use mpz_set_ui instead of mpz_init_set_ui on mpz\n+   which is already allocated.\n+ * remove_repl.patch: Do not build/install src/repl at all, since it\n+   does nothing anyway and creating empty archives fails on OS X.\n\n == Changelog ==\n\n === iml-1.0.3.p0 (Jeroen Demeyer, 12 June 2013) ===\n  * #748: Upgrade to latest upstream version, rebase patches.\n  * Remove rename_lift.patch and sage2.patch, which were upstreamed.\n- * Merged tinyatlas.patch into sage1.patch.\n- * Apply sage3_memleak.patch in all 3 places with similar code.\n+ * Removed tinyatlas.patch and #include \"tinyatlas.h\"\n+ * Removed sage1.patch\n+ * Apply sage3_memleak.patch in all 3 places with similar code, rename\n+   to memleak.patch\n  * Use -O3 optimization level by default.\n  * Add configure_default_cflags.patch.\n\ndiff --git a/patches/sage3_memleak.patch b/patches/memleak.patch\nrename from patches/sage3_memleak.patch\nrename to patches/memleak.patch\ndiff --git a/patches/sage1.patch b/patches/sage1.patch\ndeleted file mode 100644\n--- a/patches/sage1.patch\n+++ /dev/null\n@@ -1,80 +0,0 @@\n-diff -ruN b/src/RNSop.c a/src/RNSop.c\n---- b/src/RNSop.c      2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/RNSop.c      2013-06-10 23:05:18.872404179 +0200\n-@@ -46,6 +46,7 @@\n- \n- \n- #include \"RNSop.h\"\n-+#include \"tinyatlas.h\"\n- \n- /*\n-  *\n-diff -ruN b/src/memalloc.c a/src/memalloc.c\n---- b/src/memalloc.c   2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/memalloc.c   2013-06-10 23:05:18.872404179 +0200\n-@@ -48,13 +48,16 @@\n- \n- #include \"error.h\"\n- #include \"common.h\"\n-+#include \"stdio.h\"\n- \n- void *\n- xmalloc (size_t num)\n- {\n-   void * new = malloc(num);\n--  if (!new)\n--    iml_fatal (\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal (\"Memory exhausted in xmalloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -65,8 +68,10 @@\n-   if (!p)\n-     return xmalloc(num);\n-   new = realloc(p, num);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xrealloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -76,8 +81,10 @@\n- {\n- #if HAVE_CALLOC\n-   void * new = calloc(num, size);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xcalloc\");\n-+  }\n- #else\n-   void * new = xmalloc(num*size);\n-   bzero(new, num*size);\n-diff -ruN iml-1.0.1-sage/src/tinyatlas.h src/src/tinyatlas.h\n---- iml-1.0.1-sage/src/tinyatlas.h     1970-01-01 01:00:00.000000000 +0100\n-+++ src/src/tinyatlas.h        2007-03-01 04:11:42.000000000 +0100\n-@@ -0,0 +1,17 @@\n-+/* \n-+Compute Y = alpha * X + beta * Y\n-+\n-+where \n-+   N = degree of each vector\n-+   incX = X stride\n-+   incY = Y stride\n-+*/\n-+\n-+void catlas_daxpby(const int N, const double alpha, const double *X,\n-+const int incX, const double beta, double *Y, const int incY) \n-+{\n-+  int i;\n-+  for(i=0; i < N; i++) {\n-+    Y[i*incY] = alpha * X[i*incX] + beta * Y[i*incY];\n-+  }\n-+}\n```\n",
+    "body": "Applying the following changes:\n\n```diff\ndiff --git a/SPKG.txt b/SPKG.txt\n--- a/SPKG.txt\n+++ b/SPKG.txt\n@@ -32,21 +32,27 @@\n\n === Patches ===\n\n- * rename_lift.patch: Change lift to iml_lift in padiclift.* and\n-   nonsingsolve.*, since otherwise  on OSX you'll have horrible weird\n-   conflict problems.\n+ * blas_headers.patch: Add BLAS header files from GSL, needed in case\n+   ATLAS has not been installed.\n+ * build.patch: Made build scripts that work.\n  * configure_default_cflags.patch: get rid of the following error\n    during configure:\n      ./configure: line 18624: -O3: command not found\n- * Modified some of the examples, and made build scripts that work.\n+ * examples.patch: Modified some of the examples.\n+ * memleak.patch: use mpz_set_ui instead of mpz_init_set_ui on mpz\n+   which is already allocated.\n+ * remove_repl.patch: Do not build/install src/repl at all, since it\n+   does nothing anyway and creating empty archives fails on OS X.\n\n == Changelog ==\n\n === iml-1.0.3.p0 (Jeroen Demeyer, 12 June 2013) ===\n  * #748: Upgrade to latest upstream version, rebase patches.\n  * Remove rename_lift.patch and sage2.patch, which were upstreamed.\n- * Merged tinyatlas.patch into sage1.patch.\n- * Apply sage3_memleak.patch in all 3 places with similar code.\n+ * Removed tinyatlas.patch and #include \"tinyatlas.h\"\n+ * Removed sage1.patch\n+ * Apply sage3_memleak.patch in all 3 places with similar code, rename\n+   to memleak.patch\n  * Use -O3 optimization level by default.\n  * Add configure_default_cflags.patch.\n\ndiff --git a/patches/sage3_memleak.patch b/patches/memleak.patch\nrename from patches/sage3_memleak.patch\nrename to patches/memleak.patch\ndiff --git a/patches/sage1.patch b/patches/sage1.patch\ndeleted file mode 100644\n--- a/patches/sage1.patch\n+++ /dev/null\n@@ -1,80 +0,0 @@\n-diff -ruN b/src/RNSop.c a/src/RNSop.c\n---- b/src/RNSop.c      2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/RNSop.c      2013-06-10 23:05:18.872404179 +0200\n-@@ -46,6 +46,7 @@\n- \n- \n- #include \"RNSop.h\"\n-+#include \"tinyatlas.h\"\n- \n- /*\n-  *\n-diff -ruN b/src/memalloc.c a/src/memalloc.c\n---- b/src/memalloc.c   2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/memalloc.c   2013-06-10 23:05:18.872404179 +0200\n-@@ -48,13 +48,16 @@\n- \n- #include \"error.h\"\n- #include \"common.h\"\n-+#include \"stdio.h\"\n- \n- void *\n- xmalloc (size_t num)\n- {\n-   void * new = malloc(num);\n--  if (!new)\n--    iml_fatal (\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal (\"Memory exhausted in xmalloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -65,8 +68,10 @@\n-   if (!p)\n-     return xmalloc(num);\n-   new = realloc(p, num);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xrealloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -76,8 +81,10 @@\n- {\n- #if HAVE_CALLOC\n-   void * new = calloc(num, size);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xcalloc\");\n-+  }\n- #else\n-   void * new = xmalloc(num*size);\n-   bzero(new, num*size);\n-diff -ruN iml-1.0.1-sage/src/tinyatlas.h src/src/tinyatlas.h\n---- iml-1.0.1-sage/src/tinyatlas.h     1970-01-01 01:00:00.000000000 +0100\n-+++ src/src/tinyatlas.h        2007-03-01 04:11:42.000000000 +0100\n-@@ -0,0 +1,17 @@\n-+/* \n-+Compute Y = alpha * X + beta * Y\n-+\n-+where \n-+   N = degree of each vector\n-+   incX = X stride\n-+   incY = Y stride\n-+*/\n-+\n-+void catlas_daxpby(const int N, const double alpha, const double *X,\n-+const int incX, const double beta, double *Y, const int incY) \n-+{\n-+  int i;\n-+  for(i=0; i < N; i++) {\n-+    Y[i*incY] = alpha * X[i*incX] + beta * Y[i*incY];\n-+  }\n-+}\n```",
     "created_at": "2013-06-14T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1296,7 +1297,6 @@ deleted file mode 100644
 
 
 
-
 ---
 
 archive/issue_comments_004404.json:
@@ -1408,7 +1408,7 @@ archive/issue_comments_004408.json:
 archive/issue_comments_004409.json:
 ```json
 {
-    "body": "Replying to [comment:50 leif]:\n> **Sign of life of IML upstream** on #14648 !!1!111!\n\nhttp://trac.sagemath.org/ticket/14648#comment:51 ff. that is.",
+    "body": "Replying to [comment:50 leif]:\n> **Sign of life of IML upstream** on #14648 !!1!111!\n\n\nhttp://trac.sagemath.org/ticket/14648#comment:51 ff. that is.",
     "created_at": "2014-04-16T16:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
@@ -1419,5 +1419,6 @@ archive/issue_comments_004409.json:
 
 Replying to [comment:50 leif]:
 > **Sign of life of IML upstream** on #14648 !!1!111!
+
 
 http://trac.sagemath.org/ticket/14648#comment:51 ff. that is.

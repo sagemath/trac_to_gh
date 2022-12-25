@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3324
 archive/issue_comments_022993.json:
 ```json
 {
-    "body": "REFEREE CHAT:\n\n```\n\n07:44 < wstein-3324> Does to_png *have* to use a disk file?  Could it do everything in memory?\n07:44 < malb> then it couldn't use GD\n07:44 < wstein-3324> I'm just a little worried, e.g., say one pickles up 100000 2x2 GF(2) matrices.\n07:44 < wstein-3324> OK, so GD is disk only?\n07:44 < malb> I think so\n07:45 < malb> at least the public API\n07:45 < malb> but I plan to add native 1-bit PNG support \n07:45 < malb> which would work in MEM\n07:45 < wstein-3324> OK.\n07:45 < malb> and is also useful for sparse matrices \n07:45 < wstein-3324> That's enough to satisfy me.\n07:45 < wstein-3324> Should your cdef extern from \"gd.h\":  stuff go in a file gd.pxi?\n07:46 < wstein-3324> Since it probably gets re-used a lot, or could be.\n07:46 < wstein-3324> Just curious.\n07:46 < wstein-3324> Or is it not systematic and only a tiny chunk of gd.h.\n07:46 < malb> boothby did some work in that area I believe\n07:46 < wstein-3324> Did you benchmark your new code against the old code?\n07:47 < malb> it is only a small chunk\n07:47 < wstein-3324> ok, then leave as is.\n07:47 < malb> re: benchmarking\n07:47 < malb> yes\n07:47 < malb> it was unfeasible vs. 5 seconds\n07:47 < wstein-3324> sweet.\n07:47 < wstein-3324> What did you develop on?  64-bit linux?\n07:48 < malb> I use that code on a daily basis since Michael provides test data for M4RI in 1-bit PNGs\n07:48 < malb> 64-bit linux\n07:48 < wstein-3324> ok, so I'll test on 32-bit os x powerpc, say.\n07:48 < malb> yep\n07:48 < malb> but I doubt endianess issues, since I use the gd library and the most naiv bit access code available \n              in M4RI\n07:49 < wstein-3324> famous last wods.\n07:49 < malb> :-)\n\n```\n\n\nThis fails to work on OS X PPC:\n\n```\n/Users/was/build/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37\n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40\n\nImportError: dlopen(/Users/was/build/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/build/sage-3.0.3.alpha0/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\n```\n\n\nThis fails to work on 32-bit Linux against vanilla 3.0.2 and exactly the same\nproblem on minimal 64-bit debian:\n\n```\npatching file sage/matrix/matrix_mod2_dense.pyx\nHunk #1 succeeded at 893 with fuzz 1 (offset -310 lines).\nsage:\n\nsage -br\n\nBuilding sage/matrix/matrix_mod2_dense.c because it depends on sage/matrix/matrix_mod2_dense.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/home/was/build/sage-3.0.2/devel/sage-main -o sage/matrix/matrix_mod2_dense.c sage/matrix/matrix_mod2_dense.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n... \n\n    A = <Matrix_mod2_dense>Matrix(GF(2),r,c)\n\n    for i from 0 <= i < r:\n        for j from 0 <= j < c:\n            mzd_write_bit(A._entries, i, j, 1-gdImageGetPixel(im, j, i))\n                        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.0.2/devel/sage-main/sage/matrix/matrix_mod2_dense.pyx:989:25: undeclared name not builtin: mzd_write_bit\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n... \n    cdef int black = gdImageColorAllocate(im, 0, 0, 0)\n    cdef int white = gdImageColorAllocate(im, 255, 255, 255)\n    gdImageFilledRectangle(im, 0, 0, c-1, r-1, white)\n    for i from 0 <= i < r:\n        for j from 0 <= j < c:\n            if mzd_read_bit(A._entries, i, j):\n                          ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.0.2/devel/sage-main/sage/matrix/matrix_mod2_dense.pyx:1024:27: undeclared name not builtin: mzd_read_bit\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n\n\n```\n",
+    "body": "REFEREE CHAT:\n\n```\n\n07:44 < wstein-3324> Does to_png *have* to use a disk file?  Could it do everything in memory?\n07:44 < malb> then it couldn't use GD\n07:44 < wstein-3324> I'm just a little worried, e.g., say one pickles up 100000 2x2 GF(2) matrices.\n07:44 < wstein-3324> OK, so GD is disk only?\n07:44 < malb> I think so\n07:45 < malb> at least the public API\n07:45 < malb> but I plan to add native 1-bit PNG support \n07:45 < malb> which would work in MEM\n07:45 < wstein-3324> OK.\n07:45 < malb> and is also useful for sparse matrices \n07:45 < wstein-3324> That's enough to satisfy me.\n07:45 < wstein-3324> Should your cdef extern from \"gd.h\":  stuff go in a file gd.pxi?\n07:46 < wstein-3324> Since it probably gets re-used a lot, or could be.\n07:46 < wstein-3324> Just curious.\n07:46 < wstein-3324> Or is it not systematic and only a tiny chunk of gd.h.\n07:46 < malb> boothby did some work in that area I believe\n07:46 < wstein-3324> Did you benchmark your new code against the old code?\n07:47 < malb> it is only a small chunk\n07:47 < wstein-3324> ok, then leave as is.\n07:47 < malb> re: benchmarking\n07:47 < malb> yes\n07:47 < malb> it was unfeasible vs. 5 seconds\n07:47 < wstein-3324> sweet.\n07:47 < wstein-3324> What did you develop on?  64-bit linux?\n07:48 < malb> I use that code on a daily basis since Michael provides test data for M4RI in 1-bit PNGs\n07:48 < malb> 64-bit linux\n07:48 < wstein-3324> ok, so I'll test on 32-bit os x powerpc, say.\n07:48 < malb> yep\n07:48 < malb> but I doubt endianess issues, since I use the gd library and the most naiv bit access code available \n              in M4RI\n07:49 < wstein-3324> famous last wods.\n07:49 < malb> :-)\n\n```\n\nThis fails to work on OS X PPC:\n\n```\n/Users/was/build/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37\n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40\n\nImportError: dlopen(/Users/was/build/sage-3.0.3.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/build/sage-3.0.3.alpha0/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\n```\n\nThis fails to work on 32-bit Linux against vanilla 3.0.2 and exactly the same\nproblem on minimal 64-bit debian:\n\n```\npatching file sage/matrix/matrix_mod2_dense.pyx\nHunk #1 succeeded at 893 with fuzz 1 (offset -310 lines).\nsage:\n\nsage -br\n\nBuilding sage/matrix/matrix_mod2_dense.c because it depends on sage/matrix/matrix_mod2_dense.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/home/was/build/sage-3.0.2/devel/sage-main -o sage/matrix/matrix_mod2_dense.c sage/matrix/matrix_mod2_dense.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n... \n\n    A = <Matrix_mod2_dense>Matrix(GF(2),r,c)\n\n    for i from 0 <= i < r:\n        for j from 0 <= j < c:\n            mzd_write_bit(A._entries, i, j, 1-gdImageGetPixel(im, j, i))\n                        ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.0.2/devel/sage-main/sage/matrix/matrix_mod2_dense.pyx:989:25: undeclared name not builtin: mzd_write_bit\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n... \n    cdef int black = gdImageColorAllocate(im, 0, 0, 0)\n    cdef int white = gdImageColorAllocate(im, 255, 255, 255)\n    gdImageFilledRectangle(im, 0, 0, c-1, r-1, white)\n    for i from 0 <= i < r:\n        for j from 0 <= j < c:\n            if mzd_read_bit(A._entries, i, j):\n                          ^\n------------------------------------------------------------\n\n/home/was/build/sage-3.0.2/devel/sage-main/sage/matrix/matrix_mod2_dense.pyx:1024:27: undeclared name not builtin: mzd_read_bit\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n\n\n```",
     "created_at": "2008-06-03T14:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ REFEREE CHAT:
 
 ```
 
-
 This fails to work on OS X PPC:
 
 ```
@@ -101,7 +100,6 @@ ImportError: dlopen(/Users/was/build/sage-3.0.3.alpha0/local/lib/python2.5/site-
   Expected in: flat namespace
 
 ```
-
 
 This fails to work on 32-bit Linux against vanilla 3.0.2 and exactly the same
 problem on minimal 64-bit debian:
@@ -148,7 +146,6 @@ sage: There was an error installing modified sage library code.
 
 
 ```
-
 
 
 
@@ -249,7 +246,7 @@ wstein, can you review my update until 6/18?
 archive/issue_comments_022999.json:
 ```json
 {
-    "body": "Doesn't work on OS X:\n\n\n```\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/s/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```\n",
+    "body": "Doesn't work on OS X:\n\n```\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/s/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```",
     "created_at": "2008-06-19T23:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -260,13 +257,11 @@ archive/issue_comments_022999.json:
 
 Doesn't work on OS X:
 
-
 ```
 ImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig
   Referenced from: /Users/was/s/local/lib//libgd.2.dylib
   Expected in: flat namespace
 ```
-
 
 
 
@@ -313,7 +308,7 @@ The attached patch addresses this issue.
 archive/issue_comments_023002.json:
 ```json
 {
-    "body": "This does not fix the problem for me:\n\n\n```\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37 \n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40 \n\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/s/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\nsage: \n\n```\n",
+    "body": "This does not fix the problem for me:\n\n```\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37 \n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40 \n\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/s/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\nsage: \n\n```",
     "created_at": "2008-06-20T04:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -323,7 +318,6 @@ archive/issue_comments_023002.json:
 ```
 
 This does not fix the problem for me:
-
 
 ```
 
@@ -341,7 +335,6 @@ ImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/sage/matrix/m
 sage: 
 
 ```
-
 
 
 
@@ -368,7 +361,7 @@ Are you 100% sure that you rebuilt with the patch applied? Note that I just repl
 archive/issue_comments_023004.json:
 ```json
 {
-    "body": "I cleanly applied the patch on bsd.math.washington.edu to a 100% fresh clean build of sage-3.0.3.  It does not work.  You should build sage on bsd, and get the patch to work there:\n\n\n```\nLoading SAGE library. Current Mercurial branch is: review\nException exceptions.ImportError: 'dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\\n  Expected in: flat namespace\\n' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\nException exceptions.ImportError: 'dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\\n  Expected in: flat namespace\\n' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/was/build/sage-3.0.3/local/bin/<ipython console> in <module>()\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/all.py in <module>()\n     64 get_sigs()\n     65 \n---> 66 from sage.rings.all      import *\n     67 from sage.matrix.all     import *\n     68 \n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/rings/all.py in <module>()\n     92 \n     93 # Algebraic numbers\n---> 94 from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n     95                    AlgebraicReal, is_AlgebraicReal,\n     96                    AlgebraicField, is_AlgebraicField, QQbar,\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/rings/qqbar.py in <module>()\n   4734 \n   4735 \n-> 4736 RR_1_10 = RR(ZZ(1)/10)\n   4737 QQ_0 = QQ(0)\n   4738 QQ_1 = QQ(1)\n\n/Users/was/build/sage-3.0.3/local/bin/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5088)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion_c (sage/structure/coerce.c:5462)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps_c (sage/structure/coerce.c:6459)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion_c (sage/structure/coerce.c:7479)()\n\n/Users/was/build/sage-3.0.3/local/bin/parent.pyx in sage.structure.parent.Parent.coerce_map_from_c (sage/structure/parent.c:1061)()\n\n/Users/was/build/sage-3.0.3/local/bin/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.coerce_map_from_c_impl (sage/rings/integer_ring.c:5224)()\n\n/Users/was/build/sage-3.0.3/local/bin/integer.pyx in sage.rings.integer.int_to_Z.__init__ (sage/rings/integer.c:20488)()\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/categories/homset.py in Hom(X, Y, cat)\n     57     if hasattr(X, '_Hom_'):\n     58         return X._Hom_(Y, cat)\n---> 59     import category_types\n     60     global _cache\n     61     key = (X,Y,cat)\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/categories/category_types.py in <module>()\n     24 from category import *\n     25 import sage.rings.all\n---> 26 import sage.algebras.all\n     27 \n     28 \n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/algebras/all.py in <module>()\n     26 \n     27 from free_algebra import FreeAlgebra, is_FreeAlgebra\n---> 28 from free_algebra_quotient import FreeAlgebraQuotient\n     29 from quaternion_algebra import (QuaternionAlgebra, QuaternionAlgebraWithInnerProduct,\n     30      QuaternionAlgebraWithGramMatrix, QuaternionAlgebraWithDiscriminants,\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/algebras/free_algebra_quotient.py in <module>()\n     34 \n     35 from sage.rings.integer import Integer\n---> 36 from sage.modules.free_module import FreeModule\n     37 from sage.monoids.free_monoid import FreeMonoid\n     38 from sage.monoids.free_monoid_element import FreeMonoidElement\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/modules/free_module.py in <module>()\n    133 import module\n    134 \n--> 135 import sage.matrix.matrix_space\n    136 \n    137 import sage.misc.latex as latex\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37 \n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40 \n\nImportError: dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\n\n```\n",
+    "body": "I cleanly applied the patch on bsd.math.washington.edu to a 100% fresh clean build of sage-3.0.3.  It does not work.  You should build sage on bsd, and get the patch to work there:\n\n```\nLoading SAGE library. Current Mercurial branch is: review\nException exceptions.ImportError: 'dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\\n  Expected in: flat namespace\\n' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\nException exceptions.ImportError: 'dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\\n  Expected in: flat namespace\\n' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/was/build/sage-3.0.3/local/bin/<ipython console> in <module>()\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/all.py in <module>()\n     64 get_sigs()\n     65 \n---> 66 from sage.rings.all      import *\n     67 from sage.matrix.all     import *\n     68 \n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/rings/all.py in <module>()\n     92 \n     93 # Algebraic numbers\n---> 94 from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n     95                    AlgebraicReal, is_AlgebraicReal,\n     96                    AlgebraicField, is_AlgebraicField, QQbar,\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/rings/qqbar.py in <module>()\n   4734 \n   4735 \n-> 4736 RR_1_10 = RR(ZZ(1)/10)\n   4737 QQ_0 = QQ(0)\n   4738 QQ_1 = QQ(1)\n\n/Users/was/build/sage-3.0.3/local/bin/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5088)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion_c (sage/structure/coerce.c:5462)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps_c (sage/structure/coerce.c:6459)()\n\n/Users/was/build/sage-3.0.3/local/bin/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion_c (sage/structure/coerce.c:7479)()\n\n/Users/was/build/sage-3.0.3/local/bin/parent.pyx in sage.structure.parent.Parent.coerce_map_from_c (sage/structure/parent.c:1061)()\n\n/Users/was/build/sage-3.0.3/local/bin/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.coerce_map_from_c_impl (sage/rings/integer_ring.c:5224)()\n\n/Users/was/build/sage-3.0.3/local/bin/integer.pyx in sage.rings.integer.int_to_Z.__init__ (sage/rings/integer.c:20488)()\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/categories/homset.py in Hom(X, Y, cat)\n     57     if hasattr(X, '_Hom_'):\n     58         return X._Hom_(Y, cat)\n---> 59     import category_types\n     60     global _cache\n     61     key = (X,Y,cat)\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/categories/category_types.py in <module>()\n     24 from category import *\n     25 import sage.rings.all\n---> 26 import sage.algebras.all\n     27 \n     28 \n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/algebras/all.py in <module>()\n     26 \n     27 from free_algebra import FreeAlgebra, is_FreeAlgebra\n---> 28 from free_algebra_quotient import FreeAlgebraQuotient\n     29 from quaternion_algebra import (QuaternionAlgebra, QuaternionAlgebraWithInnerProduct,\n     30      QuaternionAlgebraWithGramMatrix, QuaternionAlgebraWithDiscriminants,\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/algebras/free_algebra_quotient.py in <module>()\n     34 \n     35 from sage.rings.integer import Integer\n---> 36 from sage.modules.free_module import FreeModule\n     37 from sage.monoids.free_monoid import FreeMonoid\n     38 from sage.monoids.free_monoid_element import FreeMonoidElement\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/modules/free_module.py in <module>()\n    133 import module\n    134 \n--> 135 import sage.matrix.matrix_space\n    136 \n    137 import sage.misc.latex as latex\n\n/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in <module>()\n     36 import matrix_modn_sparse\n     37 \n---> 38 import matrix_mod2_dense\n     39 #import matrix_mod2_sparse\n     40 \n\nImportError: dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-packages/sage/matrix/matrix_mod2_dense.so, 2): Symbol not found: _png_check_sig\n  Referenced from: /Users/was/build/sage-3.0.3/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n\n\n```",
     "created_at": "2008-06-24T03:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -378,7 +371,6 @@ archive/issue_comments_023004.json:
 ```
 
 I cleanly applied the patch on bsd.math.washington.edu to a 100% fresh clean build of sage-3.0.3.  It does not work.  You should build sage on bsd, and get the patch to work there:
-
 
 ```
 Loading SAGE library. Current Mercurial branch is: review
@@ -484,7 +476,6 @@ ImportError: dlopen(/Users/was/build/sage-3.0.3/local/lib/python2.5/site-package
 
 
 
-
 ---
 
 archive/issue_comments_023005.json:
@@ -510,7 +501,7 @@ I do have a working copy on bsd and I'm trying to find out what exactly made it 
 archive/issue_comments_023006.json:
 ```json
 {
-    "body": "Okay, I found it:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"Keeping 64 bit OSX libpng.dylib around\"\nelse\n    # There is a weird problem on Darwin where most programs\n    # will crash if they see the libpng built as part of this\n    # package instead of the system-wide apple libpng.  So\n    # we delete it.\n    # NOTE -- we *only* delete the dylib's.  Apps that need libpng can still link it in statically.\n    rm -f \"$SAGE_LOCAL\"/lib/libpng*dylib\n    rm -f \"$SAGE_LOCAL\"/lib/libpng*.la\nfi\n```\n\n\nfrom `spkg-install}} in libpng. Why do we even install it, if we remove it afterwards? Maybe the headers don't match the system wide libpng and thus linking for gd fails. This problem is also bigger than just my {{{Matrix_mod2_dense` patch. Mabshoff, any idea?",
+    "body": "Okay, I found it:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"Keeping 64 bit OSX libpng.dylib around\"\nelse\n    # There is a weird problem on Darwin where most programs\n    # will crash if they see the libpng built as part of this\n    # package instead of the system-wide apple libpng.  So\n    # we delete it.\n    # NOTE -- we *only* delete the dylib's.  Apps that need libpng can still link it in statically.\n    rm -f \"$SAGE_LOCAL\"/lib/libpng*dylib\n    rm -f \"$SAGE_LOCAL\"/lib/libpng*.la\nfi\n```\n\nfrom `spkg-install}} in libpng. Why do we even install it, if we remove it afterwards? Maybe the headers don't match the system wide libpng and thus linking for gd fails. This problem is also bigger than just my {{{Matrix_mod2_dense` patch. Mabshoff, any idea?",
     "created_at": "2008-06-25T12:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3324",
     "type": "issue_comment",
@@ -520,7 +511,6 @@ archive/issue_comments_023006.json:
 ```
 
 Okay, I found it:
-
 
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
@@ -535,7 +525,6 @@ else
     rm -f "$SAGE_LOCAL"/lib/libpng*.la
 fi
 ```
-
 
 from `spkg-install}} in libpng. Why do we even install it, if we remove it afterwards? Maybe the headers don't match the system wide libpng and thus linking for gd fails. This problem is also bigger than just my {{{Matrix_mod2_dense` patch. Mabshoff, any idea?
 

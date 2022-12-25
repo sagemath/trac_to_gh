@@ -249,7 +249,7 @@ Oops!
 archive/issue_comments_079429.json:
 ```json
 {
-    "body": "\n```\nApply trac_8716-gamma_h_modforms.patch, trac_8716-docfix.patch\n```\n\n\n(FAO PatchBot)",
+    "body": "```\nApply trac_8716-gamma_h_modforms.patch, trac_8716-docfix.patch\n```\n\n(FAO PatchBot)",
     "created_at": "2010-12-31T14:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
@@ -258,11 +258,9 @@ archive/issue_comments_079429.json:
 }
 ```
 
-
 ```
 Apply trac_8716-gamma_h_modforms.patch, trac_8716-docfix.patch
 ```
-
 
 (FAO PatchBot)
 

@@ -3,7 +3,7 @@
 archive/issues_005936.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCurrently we have this:\n\n```\nsage: Q = GraphQuery(\n       display_cols=['graph6','num_vertices','degree_sequence'],\n       num_edges=['<=',5],min_degree=1)\nsage: for G in Q: print G\n```\n\noutputs\n\n```\nTraceback (click to the left for traceback)\n...\nTypeError: 'GraphQuery' object is not iterable\n```\n\n\nWhy not have it Q.__iter__() return an iterator over `Q.get_graphs_list()`, which would easily work?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5936\n\n",
+    "body": "Assignee: @rlmill\n\nCurrently we have this:\n\n```\nsage: Q = GraphQuery(\n       display_cols=['graph6','num_vertices','degree_sequence'],\n       num_edges=['<=',5],min_degree=1)\nsage: for G in Q: print G\n```\noutputs\n\n```\nTraceback (click to the left for traceback)\n...\nTypeError: 'GraphQuery' object is not iterable\n```\n\nWhy not have it Q.__iter__() return an iterator over `Q.get_graphs_list()`, which would easily work?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5936\n\n",
     "created_at": "2009-04-29T15:59:37Z",
     "labels": [
         "component: graph theory"
@@ -25,7 +25,6 @@ sage: Q = GraphQuery(
        num_edges=['<=',5],min_degree=1)
 sage: for G in Q: print G
 ```
-
 outputs
 
 ```
@@ -33,7 +32,6 @@ Traceback (click to the left for traceback)
 ...
 TypeError: 'GraphQuery' object is not iterable
 ```
-
 
 Why not have it Q.__iter__() return an iterator over `Q.get_graphs_list()`, which would easily work?
 

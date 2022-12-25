@@ -3,7 +3,7 @@
 archive/issues_009119.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @robertwb wcauchois\n\nThis patch takes care of a minor issue with variables being used, and then later declared.  This takes care of these warnings:\n\n\n```\nwarning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:20: cdef variable 'u' declared after it is used\nwarning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:23: cdef variable 'v' declared after it is used\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9119\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb wcauchois\n\nThis patch takes care of a minor issue with variables being used, and then later declared.  This takes care of these warnings:\n\n```\nwarning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:20: cdef variable 'u' declared after it is used\nwarning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:23: cdef variable 'v' declared after it is used\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9119\n\n",
     "created_at": "2010-06-03T02:23:06Z",
     "labels": [
         "component: graphics",
@@ -23,12 +23,10 @@ CC:  @robertwb wcauchois
 
 This patch takes care of a minor issue with variables being used, and then later declared.  This takes care of these warnings:
 
-
 ```
 warning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:20: cdef variable 'u' declared after it is used
 warning: /Users/grout/sage-4.4.2/devel/sage-main/sage/plot/plot3d/parametric_surface.pyx:355:23: cdef variable 'v' declared after it is used
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9119

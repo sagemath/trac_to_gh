@@ -3,7 +3,7 @@
 archive/issues_008421.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, partitions, sets\n\nThe documentation describes the 'left' and 'right' attributes of BipartiteGrpah as sets.  And deleting vertices is much more efficient if they are.  But they are currently stored as lists.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: bg.left\n[0, 2]\n```\n\n\nOf course, it's easy to change from one to the other.  But we will get better performance from sets.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8421\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph, partitions, sets\n\nThe documentation describes the 'left' and 'right' attributes of BipartiteGrpah as sets.  And deleting vertices is much more efficient if they are.  But they are currently stored as lists.\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: bg.left\n[0, 2]\n```\n\nOf course, it's easy to change from one to the other.  But we will get better performance from sets.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8421\n\n",
     "created_at": "2010-03-02T16:05:50Z",
     "labels": [
         "component: graph theory",
@@ -29,7 +29,6 @@ sage: bg = BipartiteGraph(graphs.CycleGraph(4))
 sage: bg.left
 [0, 2]
 ```
-
 
 Of course, it's easy to change from one to the other.  But we will get better performance from sets.
 

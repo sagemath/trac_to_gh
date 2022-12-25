@@ -3,7 +3,7 @@
 archive/issues_009274.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @jhpalmieri\n\n\n```\n\nHere is an excerpt from \"deps\" , the makefile in spkg/standard\n\n$(INST)/$(FORTRAN):\n       $(SAGE_SPKG) $(FORTRAN) 2>&1\n\n$(INST)/$(F2C): $(INST)/$(FORTRAN)\n       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n                    ^^^^^^^ --------------------Notice that this is\nwrong.\n                                              the INST is not needed\nand is wrong.\n$(INST)/$(PIL): $(INST)/$(PYTHON)\n       $(SAGE_SPKG) $(PIL) 2>&1\n\n\nThe only reason it works is that the script that reads it cleans it up\nwith\n\"basename\".\n\nBut that's imperfect.\n\n\nThere are 3 instances, shown in this diff:\n\n\n401c400\n<       $(SAGE_SPKG) $(F2C) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n413c412\n<       $(SAGE_SPKG) $(LAPACK) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(LAPACK) 2>&1\n416c415\n<       $(SAGE_SPKG) $(BLAS) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(BLAS) 2>&1\n\n\n\n\nAlso in deps there are references to   TWISTEDWEB2  but that doesn't\nseem to exist anymore.\n\n\nI do not write access to the code. I hope someone who does will take\nthis\nand do right thing with it.\n\n************************************************\ncarlhansen1234\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9274\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby @jhpalmieri\n\n```\n\nHere is an excerpt from \"deps\" , the makefile in spkg/standard\n\n$(INST)/$(FORTRAN):\n       $(SAGE_SPKG) $(FORTRAN) 2>&1\n\n$(INST)/$(F2C): $(INST)/$(FORTRAN)\n       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n                    ^^^^^^^ --------------------Notice that this is\nwrong.\n                                              the INST is not needed\nand is wrong.\n$(INST)/$(PIL): $(INST)/$(PYTHON)\n       $(SAGE_SPKG) $(PIL) 2>&1\n\n\nThe only reason it works is that the script that reads it cleans it up\nwith\n\"basename\".\n\nBut that's imperfect.\n\n\nThere are 3 instances, shown in this diff:\n\n\n401c400\n<       $(SAGE_SPKG) $(F2C) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(F2C) 2>&1\n413c412\n<       $(SAGE_SPKG) $(LAPACK) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(LAPACK) 2>&1\n416c415\n<       $(SAGE_SPKG) $(BLAS) 2>&1\n---\n>       $(SAGE_SPKG) $(INST)/$(BLAS) 2>&1\n\n\n\n\nAlso in deps there are references to   TWISTEDWEB2  but that doesn't\nseem to exist anymore.\n\n\nI do not write access to the code. I hope someone who does will take\nthis\nand do right thing with it.\n\n************************************************\ncarlhansen1234\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9274\n\n",
     "created_at": "2010-06-19T17:01:07Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_009274.json:
 Assignee: GeorgSWeber
 
 CC:  drkirkby @jhpalmieri
-
 
 ```
 
@@ -75,7 +74,6 @@ and do right thing with it.
 ************************************************
 carlhansen1234
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9274
 
@@ -223,7 +221,7 @@ archive/issue_events_022846.json:
 archive/issue_comments_087212.json:
 ```json
 {
-    "body": "#9351, which has positive review, makes Sagetex dependant on both gap and Sage, since you need a working Sage in order that Sagetex can be tested with SAGE_CHECK=yes. So the 'deps' file attached to this ticket would need that dependency updating.\n\nI've printed this on paper and looked though it fairly carefully, and can't see anything wrong with it. Everything looks logical to me. On a few occasions where things only depended on 'BASE', but I was slightly suspicious they might have other dependencies, I checked the packages more carefully by inspection of their contents. I can't see anything wrong. \n\nI've used this 'deps' file to build Sage on my OpenSolaris machine, and found the 'deps' file appears OK, though since neither R or Maxima build on OpenSolaris, I'm unable to test this 'deps' file fully on OpenSolaris. Since you have a specific issue with Maxima, I can't provide convincing evidence this is OK. But it looks OK to me. \n\nI would never be totally surprised by any failures of builds on the *.math.washington.edu network if an NFS-shared directory is used for building Sage - which includes the home directories. Most of the hard disks are attached to a server called 'disk.math.washington.edu' which is running OpenSolaris. But the ZFS intent Log (ZIL) has been disabled to increase NFS speed. This means that if you write something to disk, then try to read it, there is no guarantee it can be read. Hence (on t2), the system log shows things like\n\n\n```\nJun 30 19:06:03 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.\nJun 30 19:06:03 t2 last message repeated 2 times\nJun 30 19:06:03 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJun 30 19:06:03 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File configure (rnode_pt: 3000cdca018) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJun 30 19:06:03 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJun 30 19:06:03 t2  Action: NR_STALE \nJun 30 19:06:03 t2  NFS4 error: NFS4ERR_STALE   \n```\n\n\nSo if you get strange behavior, I would try it on a scratch area, with local storage, since I would not 100% trust the way the ZFS pools are configured.",
+    "body": "#9351, which has positive review, makes Sagetex dependant on both gap and Sage, since you need a working Sage in order that Sagetex can be tested with SAGE_CHECK=yes. So the 'deps' file attached to this ticket would need that dependency updating.\n\nI've printed this on paper and looked though it fairly carefully, and can't see anything wrong with it. Everything looks logical to me. On a few occasions where things only depended on 'BASE', but I was slightly suspicious they might have other dependencies, I checked the packages more carefully by inspection of their contents. I can't see anything wrong. \n\nI've used this 'deps' file to build Sage on my OpenSolaris machine, and found the 'deps' file appears OK, though since neither R or Maxima build on OpenSolaris, I'm unable to test this 'deps' file fully on OpenSolaris. Since you have a specific issue with Maxima, I can't provide convincing evidence this is OK. But it looks OK to me. \n\nI would never be totally surprised by any failures of builds on the *.math.washington.edu network if an NFS-shared directory is used for building Sage - which includes the home directories. Most of the hard disks are attached to a server called 'disk.math.washington.edu' which is running OpenSolaris. But the ZFS intent Log (ZIL) has been disabled to increase NFS speed. This means that if you write something to disk, then try to read it, there is no guarantee it can be read. Hence (on t2), the system log shows things like\n\n```\nJun 30 19:06:03 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.\nJun 30 19:06:03 t2 last message repeated 2 times\nJun 30 19:06:03 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJun 30 19:06:03 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File configure (rnode_pt: 3000cdca018) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJun 30 19:06:03 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJun 30 19:06:03 t2  Action: NR_STALE \nJun 30 19:06:03 t2  NFS4 error: NFS4ERR_STALE   \n```\n\nSo if you get strange behavior, I would try it on a scratch area, with local storage, since I would not 100% trust the way the ZFS pools are configured.",
     "created_at": "2010-07-03T19:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -240,7 +238,6 @@ I've used this 'deps' file to build Sage on my OpenSolaris machine, and found th
 
 I would never be totally surprised by any failures of builds on the *.math.washington.edu network if an NFS-shared directory is used for building Sage - which includes the home directories. Most of the hard disks are attached to a server called 'disk.math.washington.edu' which is running OpenSolaris. But the ZFS intent Log (ZIL) has been disabled to increase NFS speed. This means that if you write something to disk, then try to read it, there is no guarantee it can be read. Hence (on t2), the system log shows things like
 
-
 ```
 Jun 30 19:06:03 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.
 Jun 30 19:06:03 t2 last message repeated 2 times
@@ -250,7 +247,6 @@ Jun 30 19:06:03 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET:
 Jun 30 19:06:03 t2  Action: NR_STALE 
 Jun 30 19:06:03 t2  NFS4 error: NFS4ERR_STALE   
 ```
-
 
 So if you get strange behavior, I would try it on a scratch area, with local storage, since I would not 100% trust the way the ZFS pools are configured.
 
@@ -376,7 +372,7 @@ Is this as good a place as any to work out dependencies for glpk?  (See [http://
 archive/issue_comments_087217.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> Is this as good a place as any to work out dependencies for glpk?\n\nAs you're probably aware, this made it into sage-4.5.alpha3:\n\nhttp://sage.math.washington.edu/home/rlmill/release/sage-4.5.alpha3.tar\n\nCan the deps file here and the patch be rebased on top of alpha3? I promise this will be the last time.",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> Is this as good a place as any to work out dependencies for glpk?\n\n\nAs you're probably aware, this made it into sage-4.5.alpha3:\n\nhttp://sage.math.washington.edu/home/rlmill/release/sage-4.5.alpha3.tar\n\nCan the deps file here and the patch be rebased on top of alpha3? I promise this will be the last time.",
     "created_at": "2010-07-06T03:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -387,6 +383,7 @@ archive/issue_comments_087217.json:
 
 Replying to [comment:7 jhpalmieri]:
 > Is this as good a place as any to work out dependencies for glpk?
+
 
 As you're probably aware, this made it into sage-4.5.alpha3:
 
@@ -543,7 +540,7 @@ Make sure to merge "deps-new", not "deps".
 archive/issue_comments_087225.json:
 ```json
 {
-    "body": "Replying to [comment:13 jhpalmieri]:\n> Make sure to merge \"deps-new\", not \"deps\".\n> \n\nYep, that's what I merged. Thanks for the extra care.",
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Make sure to merge \"deps-new\", not \"deps\".\n> \n\n\nYep, that's what I merged. Thanks for the extra care.",
     "created_at": "2010-07-06T05:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -555,6 +552,7 @@ archive/issue_comments_087225.json:
 Replying to [comment:13 jhpalmieri]:
 > Make sure to merge "deps-new", not "deps".
 > 
+
 
 Yep, that's what I merged. Thanks for the extra care.
 
@@ -589,7 +587,7 @@ Nathann
 archive/issue_comments_087227.json:
 ```json
 {
-    "body": "Replying to [comment:15 ncohen]:\n> Hmmmm :-/\n> \n> I do not think it can hurt, though why should GLPK depend on Cython ? In the last version (the version embedded in alpha3), there is no setup.py file, no Cython code at all... Actually, there are only bash scripts and GLPK's own sources !!!\n> \n> Sorry for not having brought this up earlier (I just woke up) :-/\n> \n> Nathann\n\nAn interesting point. It can hurt for two reasons\n\n* It will slow parallel builds unnecessarily, as GLPK has to wait until Cython has built. That's not a major issue, as GLPK takes very little time to build. \n* The real reason people got a failure might be something else. \n\nThat's worth investigating.",
+    "body": "Replying to [comment:15 ncohen]:\n> Hmmmm :-/\n> \n> I do not think it can hurt, though why should GLPK depend on Cython ? In the last version (the version embedded in alpha3), there is no setup.py file, no Cython code at all... Actually, there are only bash scripts and GLPK's own sources !!!\n> \n> Sorry for not having brought this up earlier (I just woke up) :-/\n> \n> Nathann\n\n\nAn interesting point. It can hurt for two reasons\n\n* It will slow parallel builds unnecessarily, as GLPK has to wait until Cython has built. That's not a major issue, as GLPK takes very little time to build. \n* The real reason people got a failure might be something else. \n\nThat's worth investigating.",
     "created_at": "2010-07-06T06:59:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -607,6 +605,7 @@ Replying to [comment:15 ncohen]:
 > 
 > Nathann
 
+
 An interesting point. It can hurt for two reasons
 
 * It will slow parallel builds unnecessarily, as GLPK has to wait until Cython has built. That's not a major issue, as GLPK takes very little time to build. 
@@ -621,7 +620,7 @@ That's worth investigating.
 archive/issue_comments_087228.json:
 ```json
 {
-    "body": "I apologize for my late reply.\n\n* Off-topic, I admit:  Robert, what do you think about making new releases available in `/home/release` on `sage.math`?\n* I've been running test builds under `/scratch` on sage.math.\n* For what it's worth, I later sometimes experienced the same Maxima reinstallation problem when building an *unmodified* 4.5.alpha1 on sage.math --- with 4, 6, or 12 parallel jobs.\n* For the record, here are two errors representative of those fixed by reinstalling Maxima:\n\n```sh\n./sage -c 'print QQ[2^(1/3)]'\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"ring.pyx\", line 205, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 343, in PolynomialRing\n    R = _single_variate(base_ring, name, sparse, implementation)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 395, in _single_variate\n    name = normalize_names(1, name)\n  File \"parent_gens.pyx\", line 204, in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2093)\n  File \"parent_gens.pyx\", line 145, in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1650)\nValueError: variable names must be alphanumeric, but one is '2^(1/3)' which is not.\n```\n\n  and\n\n```sh\n./sage -c \"var('x'); print solve(x, x)\"\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/symbolic/relation.py\", line 619, in solve\n    ans = f.solve(*args,**kwds)\n  File \"expression.pyx\", line 6735, in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:25171)\n  File \"expression.pyx\", line 433, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3382)\n  File \"sage_object.pyx\", line 386, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: error evaluating \"load(to_poly_solver)\":\nError executing code in Maxima\nCODE:\n        load(to_poly_solver);\nMaxima ERROR:\n\nCould not find `to_poly_solver' using paths in file_search_maxima,file_search_lisp.\n -- an error. To debug this try: debugmode(true);\n```\n\n* Curiously:  Moving the build tree (renaming `SAGE_ROOT`) also fixes the errors, possibly because this forces `sage-location` to run.",
+    "body": "I apologize for my late reply.\n\n* Off-topic, I admit:  Robert, what do you think about making new releases available in `/home/release` on `sage.math`?\n* I've been running test builds under `/scratch` on sage.math.\n* For what it's worth, I later sometimes experienced the same Maxima reinstallation problem when building an *unmodified* 4.5.alpha1 on sage.math --- with 4, 6, or 12 parallel jobs.\n* For the record, here are two errors representative of those fixed by reinstalling Maxima:\n\n```sh\n./sage -c 'print QQ[2^(1/3)]'\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"ring.pyx\", line 205, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 343, in PolynomialRing\n    R = _single_variate(base_ring, name, sparse, implementation)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 395, in _single_variate\n    name = normalize_names(1, name)\n  File \"parent_gens.pyx\", line 204, in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2093)\n  File \"parent_gens.pyx\", line 145, in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1650)\nValueError: variable names must be alphanumeric, but one is '2^(1/3)' which is not.\n```\n  and\n\n```sh\n./sage -c \"var('x'); print solve(x, x)\"\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/symbolic/relation.py\", line 619, in solve\n    ans = f.solve(*args,**kwds)\n  File \"expression.pyx\", line 6735, in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:25171)\n  File \"expression.pyx\", line 433, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3382)\n  File \"sage_object.pyx\", line 386, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha1-j12-par/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: error evaluating \"load(to_poly_solver)\":\nError executing code in Maxima\nCODE:\n        load(to_poly_solver);\nMaxima ERROR:\n\nCould not find `to_poly_solver' using paths in file_search_maxima,file_search_lisp.\n -- an error. To debug this try: debugmode(true);\n```\n* Curiously:  Moving the build tree (renaming `SAGE_ROOT`) also fixes the errors, possibly because this forces `sage-location` to run.",
     "created_at": "2010-07-06T07:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9274",
     "type": "issue_comment",
@@ -652,7 +651,6 @@ Traceback (most recent call last):
   File "parent_gens.pyx", line 145, in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1650)
 ValueError: variable names must be alphanumeric, but one is '2^(1/3)' which is not.
 ```
-
   and
 
 ```sh
@@ -679,5 +677,4 @@ Maxima ERROR:
 Could not find `to_poly_solver' using paths in file_search_maxima,file_search_lisp.
  -- an error. To debug this try: debugmode(true);
 ```
-
 * Curiously:  Moving the build tree (renaming `SAGE_ROOT`) also fixes the errors, possibly because this forces `sage-location` to run.

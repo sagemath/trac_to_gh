@@ -226,7 +226,7 @@ Changing assignee from mhampton to somebody.
 archive/issue_comments_018684.json:
 ```json
 {
-    "body": "**Review**\n* I cannot vouch for the math\n* `trac_2716_gfan_polyhedra.patch` applies cleanly against `3.0.alpha1`\n* all methods have doctests\n* I find the coding/interface style slightly strange and un-Sage-ish:\n\n```\nsage: po = extreme_verts([[1,2],[2,2],[2,1],[0,0]]) \nsage: po.ex_vertices \n[[1, 1, 2], [1, 2, 2], [1, 2, 1], [1, 0, 0]] \n```\n\n* But that shouldn't be a show-stopper, I'm giving it a preliminary positive review\n* PS: My first review with mercurial queues ;-)",
+    "body": "**Review**\n* I cannot vouch for the math\n* `trac_2716_gfan_polyhedra.patch` applies cleanly against `3.0.alpha1`\n* all methods have doctests\n* I find the coding/interface style slightly strange and un-Sage-ish:\n\n```\nsage: po = extreme_verts([[1,2],[2,2],[2,1],[0,0]]) \nsage: po.ex_vertices \n[[1, 1, 2], [1, 2, 2], [1, 2, 1], [1, 0, 0]] \n```\n* But that shouldn't be a show-stopper, I'm giving it a preliminary positive review\n* PS: My first review with mercurial queues ;-)",
     "created_at": "2008-04-05T22:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -246,7 +246,6 @@ sage: po = extreme_verts([[1,2],[2,2],[2,1],[0,0]])
 sage: po.ex_vertices 
 [[1, 1, 2], [1, 2, 2], [1, 2, 1], [1, 0, 0]] 
 ```
-
 * But that shouldn't be a show-stopper, I'm giving it a preliminary positive review
 * PS: My first review with mercurial queues ;-)
 
@@ -282,7 +281,7 @@ Thanks for the review.
 archive/issue_comments_018686.json:
 ```json
 {
-    "body": "Replying to [comment:7 mhampton]:\n> I do plan on cleaning this up more; I am still giving a lot of thought\n> to what polytope classes there should be, and how they should behave,\n> etc.   When I rearrange things again I will try to give variable names\n> more suggestive names.    In the example below, \"po\" was my temporary\n> shorthand for PolyhedralObject, which is a class that I know I will\n> change.\n\nSorry for not being more precise:\n* it might be fine for the particular situation but general, having functions rather than methods feels odd to me. However, in some cases it is just better.\n* It is quite seldom in the Sage library that attributes are actually accessed as attributes, like: `po.ex_vertices`, whereas in Sage it is more likely to meet `po.ex_vertices()`. However, Python encourages your coding style and I think Sage is off the path here.",
+    "body": "Replying to [comment:7 mhampton]:\n> I do plan on cleaning this up more; I am still giving a lot of thought\n> to what polytope classes there should be, and how they should behave,\n> etc.   When I rearrange things again I will try to give variable names\n> more suggestive names.    In the example below, \"po\" was my temporary\n> shorthand for PolyhedralObject, which is a class that I know I will\n> change.\n\n\nSorry for not being more precise:\n* it might be fine for the particular situation but general, having functions rather than methods feels odd to me. However, in some cases it is just better.\n* It is quite seldom in the Sage library that attributes are actually accessed as attributes, like: `po.ex_vertices`, whereas in Sage it is more likely to meet `po.ex_vertices()`. However, Python encourages your coding style and I think Sage is off the path here.",
     "created_at": "2008-04-05T23:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -298,6 +297,7 @@ Replying to [comment:7 mhampton]:
 > more suggestive names.    In the example below, "po" was my temporary
 > shorthand for PolyhedralObject, which is a class that I know I will
 > change.
+
 
 Sorry for not being more precise:
 * it might be fine for the particular situation but general, having functions rather than methods feels odd to me. However, in some cases it is just better.
@@ -368,7 +368,7 @@ Changing keywords from "" to "polyhedra, convex hull, polytope, gfan".
 archive/issue_comments_018690.json:
 ```json
 {
-    "body": "Installs cleanly. sage -testall passed all tests (on an old rather cantankerous machine) but \n\n```\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\n```\n\nHowever, when I reran sage -t devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py,\nI got all tests passed. I especially like the render_wireframe plotting function.\n\nLooks like a very interesting patch and I vote to apply it.",
+    "body": "Installs cleanly. sage -testall passed all tests (on an old rather cantankerous machine) but \n\n```\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\n```\nHowever, when I reran sage -t devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py,\nI got all tests passed. I especially like the render_wireframe plotting function.\n\nLooks like a very interesting patch and I vote to apply it.",
     "created_at": "2008-04-27T20:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2716",
     "type": "issue_comment",
@@ -385,7 +385,6 @@ The following tests failed:
 
         sage -t  devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py
 ```
-
 However, when I reran sage -t devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py,
 I got all tests passed. I especially like the render_wireframe plotting function.
 

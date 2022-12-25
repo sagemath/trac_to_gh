@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6808
 archive/issue_comments_055942.json:
 ```json
 {
-    "body": "I thought it work putting alist of the thing Karl'sbenchmark does.\n\n\n```\nFollowing calculations are performed\n\n   1. Timing[N[Pi, 5000000]]][[1]]\n   2. Timing[N[Sin[1/2], 3000000]][[1]]\n   3. Timing[10000000!][[1]]\n   4. Timing[FactorInteger[2^256 - 1]][[1]]\n   5. Timing[PrimeQ[2^19937 - 1]][[1]]\n   6. Timing[Eigenvalues[Table[Random[], {1200}, {1200}]]][[1]]\n   7. Timing[Nest[BesselJ[0, #] &, 2, 11000]][[1]]\n   8. Timing[Table[Together[c[k]], {k, 4, 24}]][[1]]\n   9. Timing[Integrate[1/(1 + x^1005), x]][[1]]\n  10. Timing[Table[N[WeierstrassP[n, {1, 1}]], {n, 40000}]][[1]]\n  11. Sum[2 / Pi Integrate[Log[2 Cos[x/2]] * Cos[n x], {x, 0, Pi}], {n, 0, 15}]][[1]]\n  12. Timing[Sum[HermiteH[n, z], {n, 1500}]][[1]]\n  13. Timing[Expand[(a1 + a2 + a3 + a4 + a5 + a6 + a7)^29]][[1]]\n  14. Timing[LinearSolve[RandomReal[{0, 1}, {6000, 6000}], RandomReal[{0, 1}, 6000]]][[1]]\n  15. Timing[Eliminate[{a0*b0 == g0, a1*b0 + a0*b1 == g1,\n      a2*b0 + 2*a1*b1 + a0*b2 == g2,\n      3*a2*b1 + 3*a1*b2 - q1*g1 - g0*q11 == g3,\n      -3*z*(a1*b0 - a0*b1) - q1*g2 - 7/2*q11*g1 - g0*q12 + 6*a2*b2 - 6*a1*b1*q1 == g4,\n      g2 - 3*a1*b1 + q1*g0 == -1}, {a0, a1, a2, b0, b1, b2}]][[1]] \n\nwhere\nc[2]   := c2; c[3] := c3; \nc[k_]  := 3/((2*k + 1)*(k - 3))*Sum[c[m]*c[k - m], {m, 2, k - 2}];\n```\n",
+    "body": "I thought it work putting alist of the thing Karl'sbenchmark does.\n\n```\nFollowing calculations are performed\n\n   1. Timing[N[Pi, 5000000]]][[1]]\n   2. Timing[N[Sin[1/2], 3000000]][[1]]\n   3. Timing[10000000!][[1]]\n   4. Timing[FactorInteger[2^256 - 1]][[1]]\n   5. Timing[PrimeQ[2^19937 - 1]][[1]]\n   6. Timing[Eigenvalues[Table[Random[], {1200}, {1200}]]][[1]]\n   7. Timing[Nest[BesselJ[0, #] &, 2, 11000]][[1]]\n   8. Timing[Table[Together[c[k]], {k, 4, 24}]][[1]]\n   9. Timing[Integrate[1/(1 + x^1005), x]][[1]]\n  10. Timing[Table[N[WeierstrassP[n, {1, 1}]], {n, 40000}]][[1]]\n  11. Sum[2 / Pi Integrate[Log[2 Cos[x/2]] * Cos[n x], {x, 0, Pi}], {n, 0, 15}]][[1]]\n  12. Timing[Sum[HermiteH[n, z], {n, 1500}]][[1]]\n  13. Timing[Expand[(a1 + a2 + a3 + a4 + a5 + a6 + a7)^29]][[1]]\n  14. Timing[LinearSolve[RandomReal[{0, 1}, {6000, 6000}], RandomReal[{0, 1}, 6000]]][[1]]\n  15. Timing[Eliminate[{a0*b0 == g0, a1*b0 + a0*b1 == g1,\n      a2*b0 + 2*a1*b1 + a0*b2 == g2,\n      3*a2*b1 + 3*a1*b2 - q1*g1 - g0*q11 == g3,\n      -3*z*(a1*b0 - a0*b1) - q1*g2 - 7/2*q11*g1 - g0*q12 + 6*a2*b2 - 6*a1*b1*q1 == g4,\n      g2 - 3*a1*b1 + q1*g0 == -1}, {a0, a1, a2, b0, b1, b2}]][[1]] \n\nwhere\nc[2]   := c2; c[3] := c3; \nc[k_]  := 3/((2*k + 1)*(k - 3))*Sum[c[m]*c[k - m], {m, 2, k - 2}];\n```",
     "created_at": "2010-08-29T01:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6808",
     "type": "issue_comment",
@@ -69,7 +69,6 @@ archive/issue_comments_055942.json:
 ```
 
 I thought it work putting alist of the thing Karl'sbenchmark does.
-
 
 ```
 Following calculations are performed
@@ -98,7 +97,6 @@ where
 c[2]   := c2; c[3] := c3; 
 c[k_]  := 3/((2*k + 1)*(k - 3))*Sum[c[m]*c[k - m], {m, 2, k - 2}];
 ```
-
 
 
 

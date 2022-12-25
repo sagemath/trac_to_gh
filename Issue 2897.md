@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2897
 archive/issue_comments_019898.json:
 ```json
 {
-    "body": "Two issue: Somebody is moving back in time. \n\n```\n### gap-4.4.10.p3 (David Joyner, March 30th, 2008)\n * replace guava 3.4 by guava 3.4 with fixed Makefile.in\n\n### gap-4.4.10.p5 (Michael Abshoff, April 1st, 2008)\n * Debianize GAP spkg (Tim Abbott, #2756)\n```\n\nDavid, are you a terminator? ;)\n\nThe other thing is that the changes to SPKG.txt were not checked into the main spkg repo. The slightly updated spkg builds fine and passes doctests for me. Positive review.\n\nCheers,\n\nMichael",
+    "body": "Two issue: Somebody is moving back in time. \n\n```\n### gap-4.4.10.p3 (David Joyner, March 30th, 2008)\n * replace guava 3.4 by guava 3.4 with fixed Makefile.in\n\n### gap-4.4.10.p5 (Michael Abshoff, April 1st, 2008)\n * Debianize GAP spkg (Tim Abbott, #2756)\n```\nDavid, are you a terminator? ;)\n\nThe other thing is that the changes to SPKG.txt were not checked into the main spkg repo. The slightly updated spkg builds fine and passes doctests for me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-12T16:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2897",
     "type": "issue_comment",
@@ -51,7 +51,6 @@ Two issue: Somebody is moving back in time.
 ### gap-4.4.10.p5 (Michael Abshoff, April 1st, 2008)
  * Debianize GAP spkg (Tim Abbott, #2756)
 ```
-
 David, are you a terminator? ;)
 
 The other thing is that the changes to SPKG.txt were not checked into the main spkg repo. The slightly updated spkg builds fine and passes doctests for me. Positive review.

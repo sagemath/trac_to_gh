@@ -3,7 +3,7 @@
 archive/issues_001281.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\n\n```\n[10:24] <mabshoff> I think we should change the failure message if Sage fails to compile to first check \n[10:24] <mabshoff> if it is the latest version and try that before contacting the lists\n[10:25] <williamstein> sure.  make it so.\n[10:25] <mabshoff> It should also mention to gzip up the log somewhere and post a link instead of sending \n[10:25] <mabshoff> a couple MB to 230+ people.\n[10:25] <williamstein> agreed.\n[10:25] <mabshoff> Ok, will open tichet.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1281\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\n```\n[10:24] <mabshoff> I think we should change the failure message if Sage fails to compile to first check \n[10:24] <mabshoff> if it is the latest version and try that before contacting the lists\n[10:25] <williamstein> sure.  make it so.\n[10:25] <mabshoff> It should also mention to gzip up the log somewhere and post a link instead of sending \n[10:25] <mabshoff> a couple MB to 230+ people.\n[10:25] <williamstein> agreed.\n[10:25] <mabshoff> Ok, will open tichet.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1281\n\n",
     "created_at": "2007-11-26T09:30:31Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 CC:  @williamstein
 
-
 ```
 [10:24] <mabshoff> I think we should change the failure message if Sage fails to compile to first check 
 [10:24] <mabshoff> if it is the latest version and try that before contacting the lists
@@ -30,7 +29,6 @@ CC:  @williamstein
 [10:25] <williamstein> agreed.
 [10:25] <mabshoff> Ok, will open tichet.
 ```
-
 
 Cheers,
 

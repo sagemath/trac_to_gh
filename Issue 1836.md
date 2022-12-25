@@ -84,7 +84,7 @@ updated patch which uses Python techniques to implement reduction of Groebner ba
 archive/issue_comments_011594.json:
 ```json
 {
-    "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by @malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
+    "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by @malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\n\nThe updated patch is supposed to implement that.",
     "created_at": "2008-01-20T22:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
@@ -97,6 +97,7 @@ Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/re
 
 Replying to [comment:1 ncalexan]:
 > There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?
+
 
 The updated patch is supposed to implement that.
 

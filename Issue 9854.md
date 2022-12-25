@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097104.json:
 ```json
 {
-    "body": "Here's a somewhat recursive example that shows the use of the fisheye projection and then uses that image as a plane tiling.  This needs to be done in the notebook, or you need to change the DATA directory to something else.\n\n\n\n```\nT = Tachyon(xres = 800, yres = 600, camera_center = (-2.0,-.1,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0))\nT.texture('t1',color=(0,0,1))\ncedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nfor ed in cedges:\n    T.fcylinder(ed[0],ed[1],.05,'t1')\nT.light((-4,-4,4),.1,(1,1,1))\nT.show()\n```\n\n\n\n```\nT.save(DATA+'t1.png')\nr2 = os.system('convert '+DATA+'t1.png '+DATA+'t1.ppm')\nT = Tachyon(xres = 800, yres = 600, camera_center = (-2.0,-.1,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0))\nT.texture('t1',color=(0,0,1))\nT.texture('p1',color=(1,1,1),opacity = .1, imagefile=DATA+'t1.ppm', texfunc=9)\ncedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nT.plane((0,0,-1),(0,0,1),'p1')\nfor ed in cedges:\n    T.fcylinder(ed[0],ed[1],.05,'t1')\nT.light((-4,-4,4),.1,(1,1,1))\nT.show()\n```\n",
+    "body": "Here's a somewhat recursive example that shows the use of the fisheye projection and then uses that image as a plane tiling.  This needs to be done in the notebook, or you need to change the DATA directory to something else.\n\n\n```\nT = Tachyon(xres = 800, yres = 600, camera_center = (-2.0,-.1,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0))\nT.texture('t1',color=(0,0,1))\ncedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nfor ed in cedges:\n    T.fcylinder(ed[0],ed[1],.05,'t1')\nT.light((-4,-4,4),.1,(1,1,1))\nT.show()\n```\n\n```\nT.save(DATA+'t1.png')\nr2 = os.system('convert '+DATA+'t1.png '+DATA+'t1.ppm')\nT = Tachyon(xres = 800, yres = 600, camera_center = (-2.0,-.1,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0))\nT.texture('t1',color=(0,0,1))\nT.texture('p1',color=(1,1,1),opacity = .1, imagefile=DATA+'t1.ppm', texfunc=9)\ncedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nT.plane((0,0,-1),(0,0,1),'p1')\nfor ed in cedges:\n    T.fcylinder(ed[0],ed[1],.05,'t1')\nT.light((-4,-4,4),.1,(1,1,1))\nT.show()\n```",
     "created_at": "2010-09-12T01:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ archive/issue_comments_097104.json:
 Here's a somewhat recursive example that shows the use of the fisheye projection and then uses that image as a plane tiling.  This needs to be done in the notebook, or you need to change the DATA directory to something else.
 
 
-
 ```
 T = Tachyon(xres = 800, yres = 600, camera_center = (-2.0,-.1,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0))
 T.texture('t1',color=(0,0,1))
@@ -94,8 +93,6 @@ for ed in cedges:
 T.light((-4,-4,4),.1,(1,1,1))
 T.show()
 ```
-
-
 
 ```
 T.save(DATA+'t1.png')
@@ -110,7 +107,6 @@ for ed in cedges:
 T.light((-4,-4,4),.1,(1,1,1))
 T.show()
 ```
-
 
 
 
@@ -158,7 +154,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_097107.json:
 ```json
 {
-    "body": "The `aperture` option does not work for me:\n\n```\nsage: T = Tachyon(xres = 800, yres = 600, camera_center = (-1.5,-1.5,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0), aperture = 1)\nsage: T.texture('t1',color=(0,0,1)) \nsage: cedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nsage: for ed in cedges: \n....:     T.fcylinder(ed[0],ed[1],.05,'t1') \n....:     \nsage: T.light((-4,-4,4),.1,(1,1,1)) \nsage: T.show() \n```\n\nand nothing appears. Works fine without the aperture option.",
+    "body": "The `aperture` option does not work for me:\n\n```\nsage: T = Tachyon(xres = 800, yres = 600, camera_center = (-1.5,-1.5,.3), projection='fisheye', frustum=(-1.0, 1.0, -1.0, 1.0), aperture = 1)\nsage: T.texture('t1',color=(0,0,1)) \nsage: cedges = [[[1, 1, 1], [-1, 1, 1]], [[1, 1, 1], [1, -1, 1]], [[1, 1, 1], [1, 1, -1]], [[-1, 1, 1], [-1, -1, 1]], [[-1, 1, 1],  [-1, 1, -1]], [[1, -1, 1], [-1, -1, 1]], [[1, -1, 1], [1, -1, -1]], [[-1, -1, 1], [-1, -1, -1]], [[1, 1, -1], [-1, 1, -1]], [[1, 1, -1],  [1, -1, -1]], [[-1, 1, -1], [-1, -1, -1]], [[1, -1, -1], [-1, -1, -1]]]\nsage: for ed in cedges: \n....:     T.fcylinder(ed[0],ed[1],.05,'t1') \n....:     \nsage: T.light((-4,-4,4),.1,(1,1,1)) \nsage: T.show() \n```\nand nothing appears. Works fine without the aperture option.",
     "created_at": "2010-09-23T12:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -179,7 +175,6 @@ sage: for ed in cedges:
 sage: T.light((-4,-4,4),.1,(1,1,1)) 
 sage: T.show() 
 ```
-
 and nothing appears. Works fine without the aperture option.
 
 
@@ -189,7 +184,7 @@ and nothing appears. Works fine without the aperture option.
 archive/issue_comments_097108.json:
 ```json
 {
-    "body": "Thanks for taking a look.\n\nObviously I need to add quite a bit of examples and more documentation; unfortunately most of these options aren't well (or at all) documented upstream.\n\nI think the aperture option only works with projection = 'perspective_dof', and then you also need the focallength parameter.  These don't work quite as I would expect but my knowledge of optics is limited.\n\n\n```\nT = Tachyon(xres=800,antialiasing=4, raydepth=10, projection = 'perspective_dof', focallength = '1.0', aperture = '.0025')\nT.light((0,5,7),1.0,(1,1,1))\nT.texture('t1', opacity=1, specular = .3)\nT.texture('t2', opacity=1, specular = .3, color = (0,0,1))\nT.texture('t3', opacity = 1, specular = 1, color = (1,.8,1), diffuse=0.2)\nT.plane((0,0,-1),(0,0,1),'t3')\nttlist = ['t1','t2']\ntt = 't1'\nT.cylinder((0,0,.1),(1,1/3,0),.05,'t3')\nfor q in srange(-3,100,.15):\n    if tt == 't1':\n        tt = 't2'\n    else:\n        tt = 't1'\n    T.sphere((q,q/3+.3*sin(3*q),.1+.3*cos(3*q)), .1, tt)\nT.show()\n```\n",
+    "body": "Thanks for taking a look.\n\nObviously I need to add quite a bit of examples and more documentation; unfortunately most of these options aren't well (or at all) documented upstream.\n\nI think the aperture option only works with projection = 'perspective_dof', and then you also need the focallength parameter.  These don't work quite as I would expect but my knowledge of optics is limited.\n\n```\nT = Tachyon(xres=800,antialiasing=4, raydepth=10, projection = 'perspective_dof', focallength = '1.0', aperture = '.0025')\nT.light((0,5,7),1.0,(1,1,1))\nT.texture('t1', opacity=1, specular = .3)\nT.texture('t2', opacity=1, specular = .3, color = (0,0,1))\nT.texture('t3', opacity = 1, specular = 1, color = (1,.8,1), diffuse=0.2)\nT.plane((0,0,-1),(0,0,1),'t3')\nttlist = ['t1','t2']\ntt = 't1'\nT.cylinder((0,0,.1),(1,1/3,0),.05,'t3')\nfor q in srange(-3,100,.15):\n    if tt == 't1':\n        tt = 't2'\n    else:\n        tt = 't1'\n    T.sphere((q,q/3+.3*sin(3*q),.1+.3*cos(3*q)), .1, tt)\nT.show()\n```",
     "created_at": "2010-09-24T13:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -203,7 +198,6 @@ Thanks for taking a look.
 Obviously I need to add quite a bit of examples and more documentation; unfortunately most of these options aren't well (or at all) documented upstream.
 
 I think the aperture option only works with projection = 'perspective_dof', and then you also need the focallength parameter.  These don't work quite as I would expect but my knowledge of optics is limited.
-
 
 ```
 T = Tachyon(xres=800,antialiasing=4, raydepth=10, projection = 'perspective_dof', focallength = '1.0', aperture = '.0025')
@@ -223,7 +217,6 @@ for q in srange(-3,100,.15):
     T.sphere((q,q/3+.3*sin(3*q),.1+.3*cos(3*q)), .1, tt)
 T.show()
 ```
-
 
 
 
@@ -497,7 +490,7 @@ archive/issue_events_024814.json:
 archive/issue_comments_097115.json:
 ```json
 {
-    "body": "Here is a git branch, still working after so many years ! I just made a quick refreshing.\n\nThere remains to make the #optional more precise. Can one use #optional - convert ?\n----\nNew commits:",
+    "body": "Here is a git branch, still working after so many years ! I just made a quick refreshing.\n\nThere remains to make the #optional more precise. Can one use #optional - convert ?\n\n---\nNew commits:",
     "created_at": "2014-12-28T14:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9854",
     "type": "issue_comment",
@@ -509,7 +502,8 @@ archive/issue_comments_097115.json:
 Here is a git branch, still working after so many years ! I just made a quick refreshing.
 
 There remains to make the #optional more precise. Can one use #optional - convert ?
-----
+
+---
 New commits:
 
 

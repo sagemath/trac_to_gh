@@ -3,7 +3,7 @@
 archive/issues_007494.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nDid you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if nobody seriously cares, I'm going to *delete it* from future versions of Sage, since it is still a mess, and the last nontrivial commit was 1.5 years ago (!):\n\n```\nchangeset:   158:d18dad210d3b\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Mon Apr 14 03:08:48 2008 -0700\nsummary:     Extract sagetex.py and sagetex.sty\n```\n\nI can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7494\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nDid you know there is a directory SAGE_ROOT/examples?   Do you care?  Because if nobody seriously cares, I'm going to *delete it* from future versions of Sage, since it is still a mess, and the last nontrivial commit was 1.5 years ago (!):\n\n```\nchangeset:   158:d18dad210d3b\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Mon Apr 14 03:08:48 2008 -0700\nsummary:     Extract sagetex.py and sagetex.sty\n```\nI can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7494\n\n",
     "created_at": "2009-11-19T22:55:57Z",
     "labels": [
         "component: misc"
@@ -27,7 +27,6 @@ user:        Mike Hansen <mhansen@gmail.com>
 date:        Mon Apr 14 03:08:48 2008 -0700
 summary:     Extract sagetex.py and sagetex.sty
 ```
-
 I can put the same directory online somewhere, and move the fortran file that is used in one doctest out.  I'm just really curious if anybody knows about this directory and cares.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7494
@@ -103,7 +102,7 @@ The GSL folder is quite large compared to the rest and perhaps has some examples
 archive/issue_comments_063190.json:
 ```json
 {
-    "body": "> \n> I am cc:ing wdj to see if he thinks all his examples/routines from calculus are now in the main Sage library.\n\nSee #7936 for this - we can delete this one, at least.",
+    "body": "> \n> I am cc:ing wdj to see if he thinks all his examples/routines from calculus are now in the main Sage library.\n\n\nSee #7936 for this - we can delete this one, at least.",
     "created_at": "2010-04-27T19:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -114,6 +113,7 @@ archive/issue_comments_063190.json:
 
 > 
 > I am cc:ing wdj to see if he thinks all his examples/routines from calculus are now in the main Sage library.
+
 
 See #7936 for this - we can delete this one, at least.
 
@@ -187,7 +187,7 @@ Changing status from new to needs_review.
 archive/issue_comments_063194.json:
 ```json
 {
-    "body": "Delete it!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\nI wrote almost everything in there, and it should just go. \n\nI give \"delete the examples directory\" a positive review.  To merge this ticket, do\n\n```\ncd SAGE_ROOT\nrm -rf examples\n```\n",
+    "body": "Delete it!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\nI wrote almost everything in there, and it should just go. \n\nI give \"delete the examples directory\" a positive review.  To merge this ticket, do\n\n```\ncd SAGE_ROOT\nrm -rf examples\n```",
     "created_at": "2011-08-24T06:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -206,7 +206,6 @@ I give "delete the examples directory" a positive review.  To merge this ticket,
 cd SAGE_ROOT
 rm -rf examples
 ```
-
 
 
 
@@ -253,7 +252,7 @@ For future reference, I've put that directory here:
 archive/issue_comments_063197.json:
 ```json
 {
-    "body": "I just realized that there is one thing that has to be done. Observe:\n\n```\nwstein@ubuntu:~/d/sage$ sage -grep \"examples\"|grep SAGE_ROOT\nfinance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]\nfinance/stock.py:            sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]\nfinance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + \"/examples/finance/AAPL-minutely.csv\")\nmisc/hg.py:hg_examples = HG('%s/data/examples'%SAGE_ROOT,\nmisc/inline_fortran.py:            sage: s = open(os.environ['SAGE_ROOT'] + '/examples/fortran/FIB1.F').read()\nwstein@ubuntu:~/d/sage$ \n```\n\n\nSo the stuff in examples that are used in doctests need to be moved to the SAGE_ROOT/data/ directory.  Thus one needs to attach a patch that does this to this ticket, and that patch will need to be reviewed.",
+    "body": "I just realized that there is one thing that has to be done. Observe:\n\n```\nwstein@ubuntu:~/d/sage$ sage -grep \"examples\"|grep SAGE_ROOT\nfinance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]\nfinance/stock.py:            sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')[:5]\nfinance/stock.py:            sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + \"/examples/finance/AAPL-minutely.csv\")\nmisc/hg.py:hg_examples = HG('%s/data/examples'%SAGE_ROOT,\nmisc/inline_fortran.py:            sage: s = open(os.environ['SAGE_ROOT'] + '/examples/fortran/FIB1.F').read()\nwstein@ubuntu:~/d/sage$ \n```\n\nSo the stuff in examples that are used in doctests need to be moved to the SAGE_ROOT/data/ directory.  Thus one needs to attach a patch that does this to this ticket, and that patch will need to be reviewed.",
     "created_at": "2011-08-24T06:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -273,7 +272,6 @@ misc/hg.py:hg_examples = HG('%s/data/examples'%SAGE_ROOT,
 misc/inline_fortran.py:            sage: s = open(os.environ['SAGE_ROOT'] + '/examples/fortran/FIB1.F').read()
 wstein@ubuntu:~/d/sage$ 
 ```
-
 
 So the stuff in examples that are used in doctests need to be moved to the SAGE_ROOT/data/ directory.  Thus one needs to attach a patch that does this to this ticket, and that patch will need to be reviewed.
 
@@ -544,7 +542,7 @@ I'm good with jhpalmieri's cleanup of my patch.
 archive/issue_comments_063212.json:
 ```json
 {
-    "body": "The root repository certainly also has to get patched:\n\n```sh\n$ grep -win examples spkg/install spkg/standard/deps \nspkg/install:184:EXAMPLES=`$newest examples`\nspkg/install:185:export EXAMPLES\nspkg/standard/deps:48:     $(INST)/$(EXAMPLES) \\\nspkg/standard/deps:398:$(INST)/$(EXAMPLES): $(BASE) $(INST)/$(PATCH)\nspkg/standard/deps:399:\t$(INSTALL) \"$(SAGE_SPKG) $(EXAMPLES) 2>&1\" \"tee -a $(SAGE_LOGS)/$(EXAMPLES).log\"\n```\n",
+    "body": "The root repository certainly also has to get patched:\n\n```sh\n$ grep -win examples spkg/install spkg/standard/deps \nspkg/install:184:EXAMPLES=`$newest examples`\nspkg/install:185:export EXAMPLES\nspkg/standard/deps:48:     $(INST)/$(EXAMPLES) \\\nspkg/standard/deps:398:$(INST)/$(EXAMPLES): $(BASE) $(INST)/$(PATCH)\nspkg/standard/deps:399:\t$(INSTALL) \"$(SAGE_SPKG) $(EXAMPLES) 2>&1\" \"tee -a $(SAGE_LOGS)/$(EXAMPLES).log\"\n```",
     "created_at": "2011-09-27T18:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -563,7 +561,6 @@ spkg/standard/deps:48:     $(INST)/$(EXAMPLES) \
 spkg/standard/deps:398:$(INST)/$(EXAMPLES): $(BASE) $(INST)/$(PATCH)
 spkg/standard/deps:399:	$(INSTALL) "$(SAGE_SPKG) $(EXAMPLES) 2>&1" "tee -a $(SAGE_LOGS)/$(EXAMPLES).log"
 ```
-
 
 
 
@@ -608,7 +605,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063215.json:
 ```json
 {
-    "body": "I think this searches through all of the relevant files:\n\n```\n$ grep -win examples `hg manifest`\n```\n\nI'm attaching a patch for this.  In addition to the two files you found, it also patches libdist_filelist, which looks like it is *completely* out of date, but it doesn't hurt to patch it anyway.",
+    "body": "I think this searches through all of the relevant files:\n\n```\n$ grep -win examples `hg manifest`\n```\nI'm attaching a patch for this.  In addition to the two files you found, it also patches libdist_filelist, which looks like it is *completely* out of date, but it doesn't hurt to patch it anyway.",
     "created_at": "2011-09-27T19:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -622,7 +619,6 @@ I think this searches through all of the relevant files:
 ```
 $ grep -win examples `hg manifest`
 ```
-
 I'm attaching a patch for this.  In addition to the two files you found, it also patches libdist_filelist, which looks like it is *completely* out of date, but it doesn't hurt to patch it anyway.
 
 
@@ -700,7 +696,7 @@ Unfortunately we don't win much regarding the size; the current examples spkg is
 archive/issue_comments_063219.json:
 ```json
 {
-    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:8: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:8: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2011-10-04T21:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -715,7 +711,6 @@ Problems while building the documentation:
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:3: (WARNING/2) Block quote ends without a blank line; unexpected unindent.
 dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.2.alpha4/local/lib/python2.6/site-packages/sage/finance/stock.py:docstring of sage.finance.stock.OHLC:8: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 
@@ -798,7 +793,7 @@ Sage library: fix docbuilding problem
 archive/issue_comments_063224.json:
 ```json
 {
-    "body": "Replying to [comment:22 jhpalmieri]:\n> I believe this referee patch should fix the documentation problem.\n\nBelief is not a technical category.\n\nNice patch by the way.",
+    "body": "Replying to [comment:22 jhpalmieri]:\n> I believe this referee patch should fix the documentation problem.\n\n\nBelief is not a technical category.\n\nNice patch by the way.",
     "created_at": "2011-10-05T00:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7494",
     "type": "issue_comment",
@@ -809,6 +804,7 @@ archive/issue_comments_063224.json:
 
 Replying to [comment:22 jhpalmieri]:
 > I believe this referee patch should fix the documentation problem.
+
 
 Belief is not a technical category.
 

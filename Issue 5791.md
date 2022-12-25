@@ -52,7 +52,7 @@ Changing status from new to assigned.
 archive/issue_comments_045266.json:
 ```json
 {
-    "body": "Here's an attempt at this.  To use it:\n\n```\nsage: latex.add_macro('\\\\newcommand{\\\\foo}{bar}')\n```\n\nand then a %latex cell with \\\\foo in it will be processed correctly, as will %jsmath and %html cells.  Also,\n\n```\nsage: latex.add_to_preamble('\\\\usepackage{blah}')\n```\n\nwill do what it says; it should only have an effect on %latex cells.\n\n(In this patch, \"macros\" are things which are processed by latex and jsmath, while the \"preamble\" is only passed to latex.  For both categories, you can add to the current string with latex.add_macro or latex.add_preamble, or you can replace it with latex.extra_macros or latex.extra_preamble.)\n\nSome pictures are [here](http://sage.math.washington.edu/home/palmieri/misc/foobar.png) and [here](http://sage.math.washington.edu/home/palmieri/misc/ext.png).\n\nAnyway, please test it out; the patch is against 3.4.2.alpha0.",
+    "body": "Here's an attempt at this.  To use it:\n\n```\nsage: latex.add_macro('\\\\newcommand{\\\\foo}{bar}')\n```\nand then a %latex cell with \\\\foo in it will be processed correctly, as will %jsmath and %html cells.  Also,\n\n```\nsage: latex.add_to_preamble('\\\\usepackage{blah}')\n```\nwill do what it says; it should only have an effect on %latex cells.\n\n(In this patch, \"macros\" are things which are processed by latex and jsmath, while the \"preamble\" is only passed to latex.  For both categories, you can add to the current string with latex.add_macro or latex.add_preamble, or you can replace it with latex.extra_macros or latex.extra_preamble.)\n\nSome pictures are [here](http://sage.math.washington.edu/home/palmieri/misc/foobar.png) and [here](http://sage.math.washington.edu/home/palmieri/misc/ext.png).\n\nAnyway, please test it out; the patch is against 3.4.2.alpha0.",
     "created_at": "2009-04-24T20:02:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5791",
     "type": "issue_comment",
@@ -66,13 +66,11 @@ Here's an attempt at this.  To use it:
 ```
 sage: latex.add_macro('\\newcommand{\\foo}{bar}')
 ```
-
 and then a %latex cell with \\foo in it will be processed correctly, as will %jsmath and %html cells.  Also,
 
 ```
 sage: latex.add_to_preamble('\\usepackage{blah}')
 ```
-
 will do what it says; it should only have an effect on %latex cells.
 
 (In this patch, "macros" are things which are processed by latex and jsmath, while the "preamble" is only passed to latex.  For both categories, you can add to the current string with latex.add_macro or latex.add_preamble, or you can replace it with latex.extra_macros or latex.extra_preamble.)

@@ -3,7 +3,7 @@
 archive/issues_004501.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: 1j\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(1)j\n               ^\nSyntaxError: invalid syntax\n```\n\n\nbut in python:\n\n\n```\nsage: preparser(False)\nsage: 1j\n1j\nsage: type(1j)\n<type 'complex'>\n```\n\n\nNote that this does work now:\n\n\n```\nsage: 1rj\n1j\nsage: 1rj == complex('j')\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4501\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: 1j\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     Integer(1)j\n               ^\nSyntaxError: invalid syntax\n```\n\nbut in python:\n\n```\nsage: preparser(False)\nsage: 1j\n1j\nsage: type(1j)\n<type 'complex'>\n```\n\nNote that this does work now:\n\n```\nsage: 1rj\n1j\nsage: 1rj == complex('j')\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4501\n\n",
     "created_at": "2008-11-12T16:57:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_004501.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: 1j
 ------------------------------------------------------------
@@ -28,9 +27,7 @@ sage: 1j
 SyntaxError: invalid syntax
 ```
 
-
 but in python:
-
 
 ```
 sage: preparser(False)
@@ -40,9 +37,7 @@ sage: type(1j)
 <type 'complex'>
 ```
 
-
 Note that this does work now:
-
 
 ```
 sage: 1rj
@@ -50,7 +45,6 @@ sage: 1rj
 sage: 1rj == complex('j')
 True
 ```
-
 
 
 
@@ -85,7 +79,7 @@ imagnumber ::=  (floatnumber | intpart) ("j" | "J")
 archive/issue_comments_033271.json:
 ```json
 {
-    "body": "\n```\n[10:57] <mhansen> jason-: I don't have time to make a patch now, but the following two lines around line 805 in sage/misc/preparser.py are the correct fix if we want 1j to return a <type 'complex'>:\n[10:57] <mhansen>                 elif i < len(line) and line[i] == 'j':\n[10:57] <mhansen>                     pass\n[10:57] <jason-> I can make a quick patch\n[10:57] <jason-> It needs to support \"J\"\n[10:57] <jason-> and also work for floating numbers too\n[10:58] <jason-> and then there's the issue of if we want to construct Sage complex numbers instead of python complex numbers\n```\n",
+    "body": "```\n[10:57] <mhansen> jason-: I don't have time to make a patch now, but the following two lines around line 805 in sage/misc/preparser.py are the correct fix if we want 1j to return a <type 'complex'>:\n[10:57] <mhansen>                 elif i < len(line) and line[i] == 'j':\n[10:57] <mhansen>                     pass\n[10:57] <jason-> I can make a quick patch\n[10:57] <jason-> It needs to support \"J\"\n[10:57] <jason-> and also work for floating numbers too\n[10:58] <jason-> and then there's the issue of if we want to construct Sage complex numbers instead of python complex numbers\n```",
     "created_at": "2008-11-12T17:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
@@ -93,7 +87,6 @@ archive/issue_comments_033271.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-
 
 ```
 [10:57] <mhansen> jason-: I don't have time to make a patch now, but the following two lines around line 805 in sage/misc/preparser.py are the correct fix if we want 1j to return a <type 'complex'>:
@@ -107,13 +100,12 @@ archive/issue_comments_033271.json:
 
 
 
-
 ---
 
 archive/issue_comments_033272.json:
 ```json
 {
-    "body": "and the next line:\n\n\n```\n[10:58] <mhansen> Just change == \"j\" to in 'jJ'\n```\n",
+    "body": "and the next line:\n\n```\n[10:58] <mhansen> Just change == \"j\" to in 'jJ'\n```",
     "created_at": "2008-11-12T17:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
@@ -124,11 +116,9 @@ archive/issue_comments_033272.json:
 
 and the next line:
 
-
 ```
 [10:58] <mhansen> Just change == "j" to in 'jJ'
 ```
-
 
 
 
@@ -155,7 +145,7 @@ I think 1j should be a Sage complex number.
 archive/issue_comments_033274.json:
 ```json
 {
-    "body": "> I think 1j should be a Sage complex number. \n\nAnd I think it should return a Python complex number. :-)",
+    "body": "> I think 1j should be a Sage complex number. \n\n\nAnd I think it should return a Python complex number. :-)",
     "created_at": "2008-11-13T01:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
@@ -165,6 +155,7 @@ archive/issue_comments_033274.json:
 ```
 
 > I think 1j should be a Sage complex number. 
+
 
 And I think it should return a Python complex number. :-)
 

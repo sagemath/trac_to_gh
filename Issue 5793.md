@@ -150,7 +150,7 @@ Duplication of #6355.
 archive/issue_comments_045283.json:
 ```json
 {
-    "body": "To get this going again, here are some specific suggestions for patch 12427.patch and the associated spkg:\n\n* copy the header files to somewhere in $SAGE_LOCAL/include (maybe $SAGE_LOCAL/include/cliquer/*.h\n\n* Make a cliquer.pxd file that declares the necessary functions and structs from the header files.  Make sure that you are only doing cdef externs from the header files, not the .c files like the patch is currently doing.  Don't include the path; just do  `cdef extern from \"cliquer/graph.h\":` since the header is in the include path.  This cliquer.pxd file can go into sage/graphs.\n\n* Make a cliquer.pyx in sage/graphs that contains the definitions of max_clique, all_max_clique, and clique_number.  Document and add doctests to these functions.\n\n* Delete the lines\n\n```\nfrom sage.graphs.graph import Graph \n#from distutils.core import setup \n#from distutils.extension import Extension \nfrom Cython.Distutils import build_ext \n```\n\n\n* In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).\n\n* Compile the cliquer sources into a shared library, named libcliquer.so, using the instructions in the HowTo William posted.  Place this shared library into $SAGE_LOCAL/lib.\n\n* In the graphs.py, I don't think you need to do `from sage.graphs.cliquer import clique_number`.  Since the module will be in that directory, I think it would be sufficient to do `from cliquer import clique_number`.",
+    "body": "To get this going again, here are some specific suggestions for patch 12427.patch and the associated spkg:\n\n* copy the header files to somewhere in $SAGE_LOCAL/include (maybe $SAGE_LOCAL/include/cliquer/*.h\n\n* Make a cliquer.pxd file that declares the necessary functions and structs from the header files.  Make sure that you are only doing cdef externs from the header files, not the .c files like the patch is currently doing.  Don't include the path; just do  `cdef extern from \"cliquer/graph.h\":` since the header is in the include path.  This cliquer.pxd file can go into sage/graphs.\n\n* Make a cliquer.pyx in sage/graphs that contains the definitions of max_clique, all_max_clique, and clique_number.  Document and add doctests to these functions.\n\n* Delete the lines\n\n```\nfrom sage.graphs.graph import Graph \n#from distutils.core import setup \n#from distutils.extension import Extension \nfrom Cython.Distutils import build_ext \n```\n\n* In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).\n\n* Compile the cliquer sources into a shared library, named libcliquer.so, using the instructions in the HowTo William posted.  Place this shared library into $SAGE_LOCAL/lib.\n\n* In the graphs.py, I don't think you need to do `from sage.graphs.cliquer import clique_number`.  Since the module will be in that directory, I think it would be sufficient to do `from cliquer import clique_number`.",
     "created_at": "2009-07-01T05:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -175,7 +175,6 @@ from sage.graphs.graph import Graph
 #from distutils.extension import Extension 
 from Cython.Distutils import build_ext 
 ```
-
 
 * In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).
 
@@ -412,7 +411,7 @@ Cliquer, from the beginning to the end, with the good directory's name !
 archive/issue_comments_045295.json:
 ```json
 {
-    "body": "Nathann,\n\nI have deleted the previous patches to avoid confusion.\n\nWhen addressing the following issues, please post another patch to be applied on top of the first (this makes review easier).\n\n1. `algorithm=='networkx'` is never tested, and if it were, it would fail, due to the `cliques` parameter\n\n2. Why are you using `cliquer.pxi` instead of `cliquer.pxd`? If it were `pxd` instead, then other Cython files could `cimport` the same data types.\n\n3. It should go:\n\n```\nif algorithm=='networkx':\n    ...\nelif algorithm=='cliquer':\n    ...\nelse:\n    raise NotImplementedError(\"Only 'networkx' and 'cliquer' are supported.\")\n```\n\nAlso you need to change one instance of `'Cliquer'` to `'cliquer'`.\n\n4. In maximum_cliques, \"vertex set\" should be \"vertex sets\"",
+    "body": "Nathann,\n\nI have deleted the previous patches to avoid confusion.\n\nWhen addressing the following issues, please post another patch to be applied on top of the first (this makes review easier).\n\n1. `algorithm=='networkx'` is never tested, and if it were, it would fail, due to the `cliques` parameter\n\n2. Why are you using `cliquer.pxi` instead of `cliquer.pxd`? If it were `pxd` instead, then other Cython files could `cimport` the same data types.\n\n3. It should go:\n\n```\nif algorithm=='networkx':\n    ...\nelif algorithm=='cliquer':\n    ...\nelse:\n    raise NotImplementedError(\"Only 'networkx' and 'cliquer' are supported.\")\n```\nAlso you need to change one instance of `'Cliquer'` to `'cliquer'`.\n\n4. In maximum_cliques, \"vertex set\" should be \"vertex sets\"",
     "created_at": "2009-07-18T17:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -441,7 +440,6 @@ elif algorithm=='cliquer':
 else:
     raise NotImplementedError("Only 'networkx' and 'cliquer' are supported.")
 ```
-
 Also you need to change one instance of `'Cliquer'` to `'cliquer'`.
 
 4. In maximum_cliques, "vertex set" should be "vertex sets"
@@ -541,7 +539,7 @@ Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cli
 archive/issue_comments_045299.json:
 ```json
 {
-    "body": "Replying to [comment:15 ncohen]:\n> By the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful...\n\nThere are plenty of reasons to have two different implementations, and one I can think of right off the top of my head is to compare results for correctness.\n\n1. You have removed the input \"cliques,\" which is used by NetworkX. You need to put this back in, and mention that it is ignored unless the algorithm is \"networkx.\"\n\n2. The `include '../ext/cliquer.pxd'` line at the beginning of cliquer.pyx is not necessary. \"include\" is a plain text include, and `pxd` files are forward declarations, which get automatically included by Cython as long as the other part of the filename is the same.\n\n3. One thing I should have mentioned last round: the three functions introduced in cliquer.pyx need to be documented, including some nontrivial doctests.\n\nAfter all this is done, we should be very close to finished!",
+    "body": "Replying to [comment:15 ncohen]:\n> By the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful...\n\n\nThere are plenty of reasons to have two different implementations, and one I can think of right off the top of my head is to compare results for correctness.\n\n1. You have removed the input \"cliques,\" which is used by NetworkX. You need to put this back in, and mention that it is ignored unless the algorithm is \"networkx.\"\n\n2. The `include '../ext/cliquer.pxd'` line at the beginning of cliquer.pyx is not necessary. \"include\" is a plain text include, and `pxd` files are forward declarations, which get automatically included by Cython as long as the other part of the filename is the same.\n\n3. One thing I should have mentioned last round: the three functions introduced in cliquer.pyx need to be documented, including some nontrivial doctests.\n\nAfter all this is done, we should be very close to finished!",
     "created_at": "2009-07-20T15:17:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -552,6 +550,7 @@ archive/issue_comments_045299.json:
 
 Replying to [comment:15 ncohen]:
 > By the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful...
+
 
 There are plenty of reasons to have two different implementations, and one I can think of right off the top of my head is to compare results for correctness.
 
@@ -596,7 +595,7 @@ What do we do in this situation ? ^^;
 archive/issue_comments_045301.json:
 ```json
 {
-    "body": "Replying to [comment:18 ncohen]:\n> What do we do in this situation ? ^^;\n\nWe debug! I'm looking into this now, but I'm not sure what I'll be able to find out...\n\n4. Another thing is that `cliquer.pxd` needs to be in the same directory as `cliquer.pyx`.",
+    "body": "Replying to [comment:18 ncohen]:\n> What do we do in this situation ? ^^;\n\n\nWe debug! I'm looking into this now, but I'm not sure what I'll be able to find out...\n\n4. Another thing is that `cliquer.pxd` needs to be in the same directory as `cliquer.pyx`.",
     "created_at": "2009-07-20T18:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -607,6 +606,7 @@ archive/issue_comments_045301.json:
 
 Replying to [comment:18 ncohen]:
 > What do we do in this situation ? ^^;
+
 
 We debug! I'm looking into this now, but I'm not sure what I'll be able to find out...
 
@@ -698,7 +698,7 @@ DO NOT APPLY!
 archive/issue_comments_045305.json:
 ```json
 {
-    "body": "It seems as if Cliquer is subtracting one from each vertex in the input, and so the input needs to have one added to it. To see this, apply `trac_5793_debug_only.patch`, and you get:\n\n\n```\nsage: G = Graph({0:[1,2,3], 1:[2], 3:[0,1]}); G.maximum_clique()\n(0, 1, None)\n e 0 1\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 2, None)\n e 0 2\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 3, None)\n e 0 3\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(1, 2, None)\n e 1 2\nUnweighted graph has 4 vertices, 1 edges (density 0.17).\n 0 -> 1\n 1 -> 0\n 2 ->\n 3 ->\n(1, 3, None)\n e 1 3\nUnweighted graph has 4 vertices, 2 edges (density 0.33).\n 0 -> 1 2\n 1 -> 0\n 2 -> 0\n 3 ->\n[0, 2]\n```\n\n\nYou should probably also expose at least this `print_graph` function in the official versions.",
+    "body": "It seems as if Cliquer is subtracting one from each vertex in the input, and so the input needs to have one added to it. To see this, apply `trac_5793_debug_only.patch`, and you get:\n\n```\nsage: G = Graph({0:[1,2,3], 1:[2], 3:[0,1]}); G.maximum_clique()\n(0, 1, None)\n e 0 1\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 2, None)\n e 0 2\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 3, None)\n e 0 3\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(1, 2, None)\n e 1 2\nUnweighted graph has 4 vertices, 1 edges (density 0.17).\n 0 -> 1\n 1 -> 0\n 2 ->\n 3 ->\n(1, 3, None)\n e 1 3\nUnweighted graph has 4 vertices, 2 edges (density 0.33).\n 0 -> 1 2\n 1 -> 0\n 2 -> 0\n 3 ->\n[0, 2]\n```\n\nYou should probably also expose at least this `print_graph` function in the official versions.",
     "created_at": "2009-07-20T18:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -708,7 +708,6 @@ archive/issue_comments_045305.json:
 ```
 
 It seems as if Cliquer is subtracting one from each vertex in the input, and so the input needs to have one added to it. To see this, apply `trac_5793_debug_only.patch`, and you get:
-
 
 ```
 sage: G = Graph({0:[1,2,3], 1:[2], 3:[0,1]}); G.maximum_clique()
@@ -749,7 +748,6 @@ Unweighted graph has 4 vertices, 2 edges (density 0.33).
  3 ->
 [0, 2]
 ```
-
 
 You should probably also expose at least this `print_graph` function in the official versions.
 
@@ -814,7 +812,7 @@ Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cli
 archive/issue_comments_045309.json:
 ```json
 {
-    "body": "OK, I have a few more requests:\n\n1. I think you should expose Cliquer's `graph_print` function in `cliquer.pxd`, so other people see it when they try to play around with the interface.\n\n2. In general, doctests should be indented, so e.g.\n\n```\nEXAMPLES:: \n\nsage: C=graphs.PetersenGraph() \nsage: max_clique(C) \n[7, 9] \n\"\"\" \n```\n\nshould be\n\n```\nEXAMPLES:: \n\n    sage: C=graphs.PetersenGraph() \n    sage: max_clique(C) \n    [7, 9] \n\n\"\"\" \n```\n\n\n3. In fact, you should probably check out\n\nhttp://www.sagemath.org/doc/developer/conventions.html\n\nFor example, the following belongs in an `INPUT:` block, and would look much more professional there:\n\n\n```\nThe parameter 'cliques' is an optional list of cliques that can be input if already computed. \nONLY USED BY NetworkX !!!\n```\n\n\n4. There are several functions in `graph.py` which compute with cliques, which haven't been exposed to this new interface. For example, `G.cliques()`. It would be nice to take care of those functions now too, so people don't unnecessarily complain about these functions being slow later. They are all in the same part of the file, which starts with `### Cliques`.",
+    "body": "OK, I have a few more requests:\n\n1. I think you should expose Cliquer's `graph_print` function in `cliquer.pxd`, so other people see it when they try to play around with the interface.\n\n2. In general, doctests should be indented, so e.g.\n\n```\nEXAMPLES:: \n\nsage: C=graphs.PetersenGraph() \nsage: max_clique(C) \n[7, 9] \n\"\"\" \n```\nshould be\n\n```\nEXAMPLES:: \n\n    sage: C=graphs.PetersenGraph() \n    sage: max_clique(C) \n    [7, 9] \n\n\"\"\" \n```\n\n3. In fact, you should probably check out\n\nhttp://www.sagemath.org/doc/developer/conventions.html\n\nFor example, the following belongs in an `INPUT:` block, and would look much more professional there:\n\n```\nThe parameter 'cliques' is an optional list of cliques that can be input if already computed. \nONLY USED BY NetworkX !!!\n```\n\n4. There are several functions in `graph.py` which compute with cliques, which haven't been exposed to this new interface. For example, `G.cliques()`. It would be nice to take care of those functions now too, so people don't unnecessarily complain about these functions being slow later. They are all in the same part of the file, which starts with `### Cliques`.",
     "created_at": "2009-07-20T18:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -837,7 +835,6 @@ sage: max_clique(C)
 [7, 9] 
 """ 
 ```
-
 should be
 
 ```
@@ -850,19 +847,16 @@ EXAMPLES::
 """ 
 ```
 
-
 3. In fact, you should probably check out
 
 http://www.sagemath.org/doc/developer/conventions.html
 
 For example, the following belongs in an `INPUT:` block, and would look much more professional there:
 
-
 ```
 The parameter 'cliques' is an optional list of cliques that can be input if already computed. 
 ONLY USED BY NetworkX !!!
 ```
-
 
 4. There are several functions in `graph.py` which compute with cliques, which haven't been exposed to this new interface. For example, `G.cliques()`. It would be nice to take care of those functions now too, so people don't unnecessarily complain about these functions being slow later. They are all in the same part of the file, which starts with `### Cliques`.
 
@@ -873,7 +867,7 @@ ONLY USED BY NetworkX !!!
 archive/issue_comments_045310.json:
 ```json
 {
-    "body": "5. There is one other thing to be aware of. You are assuming that the vertex set is *always* {0,...,n-1}. In fact, this will cause some trouble:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.maximum_clique()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: cannot concatenate 'str' and 'int' objects\nsage: C.vertices()[0]\n'0000'\n```\n\n\nHere is the idea to get around this, since this problem has come up many times before:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: G,d = C.relabel(inplace=False, return_map=True)\nsage: d_inv = {}\nsage: for v in d:\n....:     d_inv[d[v]] = v\n....:     \nsage: C.vertices()\n\n['0000',\n '0001',\n '0010',\n '0011',\n '0100',\n '0101',\n '0110',\n '0111',\n '1000',\n '1001',\n '1010',\n '1011',\n '1100',\n '1101',\n '1110',\n '1111']\nsage: G.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\nsage: d\n\n{'0000': 0,\n '0001': 1,\n '0010': 2,\n '0011': 3,\n '0100': 4,\n '0101': 5,\n '0110': 6,\n '0111': 7,\n '1000': 8,\n '1001': 9,\n '1010': 10,\n '1011': 11,\n '1100': 12,\n '1101': 13,\n '1110': 14,\n '1111': 15}\nsage: d_inv\n\n{0: '0000',\n 1: '0001',\n 2: '0010',\n 3: '0011',\n 4: '0100',\n 5: '0101',\n 6: '0110',\n 7: '0111',\n 8: '1000',\n 9: '1001',\n 10: '1010',\n 11: '1011',\n 12: '1100',\n 13: '1101',\n 14: '1110',\n 15: '1111'}\n```\n",
+    "body": "5. There is one other thing to be aware of. You are assuming that the vertex set is *always* {0,...,n-1}. In fact, this will cause some trouble:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.maximum_clique()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: cannot concatenate 'str' and 'int' objects\nsage: C.vertices()[0]\n'0000'\n```\n\nHere is the idea to get around this, since this problem has come up many times before:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: G,d = C.relabel(inplace=False, return_map=True)\nsage: d_inv = {}\nsage: for v in d:\n....:     d_inv[d[v]] = v\n....:     \nsage: C.vertices()\n\n['0000',\n '0001',\n '0010',\n '0011',\n '0100',\n '0101',\n '0110',\n '0111',\n '1000',\n '1001',\n '1010',\n '1011',\n '1100',\n '1101',\n '1110',\n '1111']\nsage: G.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\nsage: d\n\n{'0000': 0,\n '0001': 1,\n '0010': 2,\n '0011': 3,\n '0100': 4,\n '0101': 5,\n '0110': 6,\n '0111': 7,\n '1000': 8,\n '1001': 9,\n '1010': 10,\n '1011': 11,\n '1100': 12,\n '1101': 13,\n '1110': 14,\n '1111': 15}\nsage: d_inv\n\n{0: '0000',\n 1: '0001',\n 2: '0010',\n 3: '0011',\n 4: '0100',\n 5: '0101',\n 6: '0110',\n 7: '0111',\n 8: '1000',\n 9: '1001',\n 10: '1010',\n 11: '1011',\n 12: '1100',\n 13: '1101',\n 14: '1110',\n 15: '1111'}\n```",
     "created_at": "2009-07-20T19:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -894,7 +888,6 @@ TypeError: cannot concatenate 'str' and 'int' objects
 sage: C.vertices()[0]
 '0000'
 ```
-
 
 Here is the idea to get around this, since this problem has come up many times before:
 
@@ -962,7 +955,6 @@ sage: d_inv
  14: '1110',
  15: '1111'}
 ```
-
 
 
 
@@ -1073,7 +1065,7 @@ Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uu
 archive/issue_comments_045316.json:
 ```json
 {
-    "body": "Replying to [comment:29 ncohen]:\n> Concerning the cliques, I agree when you say that a \"A maximum clique is just a clique of maximal size\", but a \"maximal clique\" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.\n\nI had realized this some time after writing that comment. Please forgive me.",
+    "body": "Replying to [comment:29 ncohen]:\n> Concerning the cliques, I agree when you say that a \"A maximum clique is just a clique of maximal size\", but a \"maximal clique\" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.\n\n\nI had realized this some time after writing that comment. Please forgive me.",
     "created_at": "2009-07-21T18:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -1084,6 +1076,7 @@ archive/issue_comments_045316.json:
 
 Replying to [comment:29 ncohen]:
 > Concerning the cliques, I agree when you say that a "A maximum clique is just a clique of maximal size", but a "maximal clique" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.
+
 
 I had realized this some time after writing that comment. Please forgive me.
 
@@ -1156,7 +1149,7 @@ In the last patch:
 archive/issue_comments_045320.json:
 ```json
 {
-    "body": "With the SPKG at #6355 and the patch on this ticket, I got the following doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\", line 318:\n    sage: clqs = (HS.complement()).cliques()\nExpected nothing\nGot:\n    doctest:1: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n**********************************************************************\n1 items had failures:\n   1 of  89 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_refinement_graphs.py\n\t [231.6 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/graphs/graph_coloring.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/graphs/graph_coloring.py\", line 208:\n    sage: chromatic_number(G)\nExpected:\n    3\nGot:\n    doctest:224: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n    3\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_graph_coloring.py\n\t [2.3 s]\n```\n",
+    "body": "With the SPKG at #6355 and the patch on this ticket, I got the following doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\", line 318:\n    sage: clqs = (HS.complement()).cliques()\nExpected nothing\nGot:\n    doctest:1: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n**********************************************************************\n1 items had failures:\n   1 of  89 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_refinement_graphs.py\n\t [231.6 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/graphs/graph_coloring.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/graphs/graph_coloring.py\", line 208:\n    sage: chromatic_number(G)\nExpected:\n    3\nGot:\n    doctest:224: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n    3\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_graph_coloring.py\n\t [2.3 s]\n```",
     "created_at": "2009-07-23T04:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
@@ -1200,7 +1193,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_graph_coloring.py
 	 [2.3 s]
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009254.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9253, which depends on #9247. Still needs work, since there is now the following error, which is very mysterious to me:\n\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 371:\n    sage: E.prove_BSD(verbosity=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[21]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))###line 371:\n    sage: E.prove_BSD(verbosity=2)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/BSD.py\", line 538, in prove_BSD\n        I = BSD.curve.heegner_index(D)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6464, in heegner_index\n        reg = F.regulator(descent_second_limit=descent_second_limit, verbose=verbose_mwrank)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2095, in regulator\n        G = self.gens(proof=proof, use_database=use_database, descent_second_limit=descent_second_limit, verbose=verbose)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1934, in gens\n        G = C.gens()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/libs/mwrank/interface.py\", line 595, in gens\n        return eval(preparse(self.__two_descent_data().getbasis().replace(\":\",\",\")))\n    RuntimeError\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9254\n\n",
+    "body": "Assignee: @JohnCremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9253, which depends on #9247. Still needs work, since there is now the following error, which is very mysterious to me:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha0/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line 371:\n    sage: E.prove_BSD(verbosity=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[21]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))###line 371:\n    sage: E.prove_BSD(verbosity=2)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/BSD.py\", line 538, in prove_BSD\n        I = BSD.curve.heegner_index(D)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/heegner.py\", line 6464, in heegner_index\n        reg = F.regulator(descent_second_limit=descent_second_limit, verbose=verbose_mwrank)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2095, in regulator\n        G = self.gens(proof=proof, use_database=use_database, descent_second_limit=descent_second_limit, verbose=verbose)\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1934, in gens\n        G = C.gens()\n      File \"/Users/rlmill/sage-4.4.4.alpha0/local/lib/python/site-packages/sage/libs/mwrank/interface.py\", line 595, in gens\n        return eval(preparse(self.__two_descent_data().getbasis().replace(\":\",\",\")))\n    RuntimeError\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9254\n\n",
     "created_at": "2010-06-17T18:28:22Z",
     "labels": [
         "component: elliptic curves",
@@ -21,7 +21,6 @@ Assignee: @JohnCremona
 These are some of the things I did while working on my thesis.
 
 Depends on #9253, which depends on #9247. Still needs work, since there is now the following error, which is very mysterious to me:
-
 
 ```
 sage -t  "devel/sage-main/sage/schemes/elliptic_curves/BSD.py"
@@ -52,7 +51,6 @@ Exception raised:
     RuntimeError
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9254
 
@@ -137,7 +135,7 @@ See also #9535
 archive/issue_comments_086956.json:
 ```json
 {
-    "body": "On t2:\n\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n         [225.4 s]\n```\n\n\nOh yeah.",
+    "body": "On t2:\n\n```\nsage -t  \"devel/sage-main/sage/schemes/elliptic_curves/BSD.py\"\n         [225.4 s]\n```\n\nOh yeah.",
     "created_at": "2010-07-21T15:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
@@ -148,12 +146,10 @@ archive/issue_comments_086956.json:
 
 On t2:
 
-
 ```
 sage -t  "devel/sage-main/sage/schemes/elliptic_curves/BSD.py"
          [225.4 s]
 ```
-
 
 Oh yeah.
 
@@ -199,7 +195,7 @@ archive/issue_events_022797.json:
 archive/issue_comments_086958.json:
 ```json
 {
-    "body": "I get a long doctest failure on t2 and sage.math:\n\n```python\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2-fin/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 383:\n    sage: E.prove_BSD(verbosity=2)               # long time\nExpected:\n    p = 2: True by 2-descent...\n    True for p not in {2, 3} by Kolyvagin....\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\nGot:\n    p = 2: True by 2-descent\n    True for p not in {2, 3} by Kolyvagin.\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n        ord_p(#Sha_an) = 2\n    [3]\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_6\n***Test Failed*** 1 failures.\n```\n\nI'm using 4.5.2 + #9476 + #9247 + #9253 + #9254.  The failure first appears with this ticket.",
+    "body": "I get a long doctest failure on t2 and sage.math:\n\n```python\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.2-fin/devel/sage/sage/schemes/elliptic_curves/BSD.py\", line 383:\n    sage: E.prove_BSD(verbosity=2)               # long time\nExpected:\n    p = 2: True by 2-descent...\n    True for p not in {2, 3} by Kolyvagin....\n    ALERT: p = 3 left in Kolyvagin bound\n        0 <= ord_p(#Sha) <= 2\n        ord_p(#Sha_an) = 2\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n    [3]\nGot:\n    p = 2: True by 2-descent\n    True for p not in {2, 3} by Kolyvagin.\n    Remaining primes:\n    p = 3: irreducible, surjective, non-split multiplicative\n        (0 <= ord_p <= 2)\n        ord_p(#Sha_an) = 2\n    [3]\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_6\n***Test Failed*** 1 failures.\n```\nI'm using 4.5.2 + #9476 + #9247 + #9253 + #9254.  The failure first appears with this ticket.",
     "created_at": "2010-08-08T08:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9254",
     "type": "issue_comment",
@@ -238,7 +234,6 @@ Got:
    1 of  36 in __main__.example_6
 ***Test Failed*** 1 failures.
 ```
-
 I'm using 4.5.2 + #9476 + #9247 + #9253 + #9254.  The failure first appears with this ticket.
 
 

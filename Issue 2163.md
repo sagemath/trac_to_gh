@@ -3,7 +3,7 @@
 archive/issues_002163.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAt the command line:\n\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
+    "body": "Assignee: @williamstein\n\nAt the command line:\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
     "created_at": "2008-02-14T23:00:03Z",
     "labels": [
         "component: algebraic geometry",
@@ -20,13 +20,11 @@ Assignee: @williamstein
 
 At the command line:
 
-
 ```
 sage: a=plot(x^2,(x,-1,1))
 sage: a.show??
 sage: a.show?
 ```
-
 
 In either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).
 
@@ -113,7 +111,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_comments_014172.json:
 ```json
 {
-    "body": "This is due to the following:\n\n\n```\nString Form:    <bound method Graphics.show of >\n```\n\n\nwhereas after show_default(False), we get:\n\n\n```\nString Form:    <bound method Graphics.show of Graphics object consisting of 1 graphics primitive>\n```\n",
+    "body": "This is due to the following:\n\n```\nString Form:    <bound method Graphics.show of >\n```\n\nwhereas after show_default(False), we get:\n\n```\nString Form:    <bound method Graphics.show of Graphics object consisting of 1 graphics primitive>\n```",
     "created_at": "2008-02-15T01:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
@@ -124,19 +122,15 @@ archive/issue_comments_014172.json:
 
 This is due to the following:
 
-
 ```
 String Form:    <bound method Graphics.show of >
 ```
 
-
 whereas after show_default(False), we get:
-
 
 ```
 String Form:    <bound method Graphics.show of Graphics object consisting of 1 graphics primitive>
 ```
-
 
 
 

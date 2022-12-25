@@ -3,7 +3,7 @@
 archive/issues_005980.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n\nOn May 4, 9:07 am, Jaap Spies <j.sp...@hccnet.nl> wrote:\n> > mabshoff wrote:\n>> > > Hello folks,\n\n<SNIP>\n\n>> > > Please build, test and report issues as usual.\n> >\n> > On Fedora 9, 32 bit upgraded from alpha0 -> rc0-> sage-3.4.2\n> > and on Fedora 10, 32 bit upgraded from rc0 I get tons\n> > of failures with prime_pi, e.g.:\n> >\n> > sage -t  \"devel/sage/sage/functions/prime_pi.pyx\"\n> > **********************************************************************\n> > File \"/home/jaap/Download/sage-3.4.2.rc0/devel/sage/sage/functions/prime_pi.pyx\", line 74:\n> >      sage: prime_pi(7)\n> > Exception raised:\n> >      Traceback (most recent call last):\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n> >          self.run_one_example(test, example, filename, compileflags)\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n> >          OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n> >          compileflags, 1) in test.globs\n> >        File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n> >          prime_pi(Integer(7))###line 74:\n> >      sage: prime_pi(7)\n> >        File \"prime_pi.pyx\", line 175, in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1101)\n> >      NotImplementedError: computation of prime_pi() greater 2**40 not implemented\n> > \nArrg, this is cause by Integer(2**40) on 32 bit systems being \"0\" in\nCython. I didn't use any long representation of 2^40 to avoid running\ninto 32 vs. 64 bit issues. Oh well, please open a ticket, I guess\nthere will be another \"final\" 3.4.2 tarball :(\n\n> > Jaap\n\nCheers,\n\nMichael\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5980\n\n",
+    "body": "Assignee: mabshoff\n\n```\n\nOn May 4, 9:07 am, Jaap Spies <j.sp...@hccnet.nl> wrote:\n> > mabshoff wrote:\n>> > > Hello folks,\n\n<SNIP>\n\n>> > > Please build, test and report issues as usual.\n> >\n> > On Fedora 9, 32 bit upgraded from alpha0 -> rc0-> sage-3.4.2\n> > and on Fedora 10, 32 bit upgraded from rc0 I get tons\n> > of failures with prime_pi, e.g.:\n> >\n> > sage -t  \"devel/sage/sage/functions/prime_pi.pyx\"\n> > **********************************************************************\n> > File \"/home/jaap/Download/sage-3.4.2.rc0/devel/sage/sage/functions/prime_pi.pyx\", line 74:\n> >      sage: prime_pi(7)\n> > Exception raised:\n> >      Traceback (most recent call last):\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n> >          self.run_one_example(test, example, filename, compileflags)\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n> >          OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n> >        File \"/home/jaap/Download/sage-3.4.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n> >          compileflags, 1) in test.globs\n> >        File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n> >          prime_pi(Integer(7))###line 74:\n> >      sage: prime_pi(7)\n> >        File \"prime_pi.pyx\", line 175, in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1101)\n> >      NotImplementedError: computation of prime_pi() greater 2**40 not implemented\n> > \nArrg, this is cause by Integer(2**40) on 32 bit systems being \"0\" in\nCython. I didn't use any long representation of 2^40 to avoid running\ninto 32 vs. 64 bit issues. Oh well, please open a ticket, I guess\nthere will be another \"final\" 3.4.2 tarball :(\n\n> > Jaap\n\nCheers,\n\nMichael\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5980\n\n",
     "created_at": "2009-05-04T16:45:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_005980.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 
@@ -63,7 +62,6 @@ Cheers,
 
 Michael
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5980
 

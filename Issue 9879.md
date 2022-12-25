@@ -66,7 +66,7 @@ archive/issue_events_024887.json:
 archive/issue_comments_097649.json:
 ```json
 {
-    "body": "The bug happened because of the comparison functions which are used in a call to std::sort.\n\nI have finally looked at the comparison functions and exchanging :\n\n\n```\ncmpval = seq[0].coeff.compare(other.exponent);\n```\n\nby\n\n\n```\ncmpval = -seq[0].coeff.compare(other.exponent);\n```\n\nin mul::compare_pow (mul.cpp:1265) seems to prevent the above bug from happening.\n\nIt seems to fit better with the change made by William Stein in power::compare_same_type (power.cpp:951).\n\nHowever it doesn't mean the problem is completely solved...\n\nI'll try to take a deeper look at the comparison functions at some point.\n\nI tested the above fix with pynac 0.2.1.",
+    "body": "The bug happened because of the comparison functions which are used in a call to std::sort.\n\nI have finally looked at the comparison functions and exchanging :\n\n```\ncmpval = seq[0].coeff.compare(other.exponent);\n```\nby\n\n```\ncmpval = -seq[0].coeff.compare(other.exponent);\n```\nin mul::compare_pow (mul.cpp:1265) seems to prevent the above bug from happening.\n\nIt seems to fit better with the change made by William Stein in power::compare_same_type (power.cpp:951).\n\nHowever it doesn't mean the problem is completely solved...\n\nI'll try to take a deeper look at the comparison functions at some point.\n\nI tested the above fix with pynac 0.2.1.",
     "created_at": "2010-09-29T14:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -79,18 +79,14 @@ The bug happened because of the comparison functions which are used in a call to
 
 I have finally looked at the comparison functions and exchanging :
 
-
 ```
 cmpval = seq[0].coeff.compare(other.exponent);
 ```
-
 by
-
 
 ```
 cmpval = -seq[0].coeff.compare(other.exponent);
 ```
-
 in mul::compare_pow (mul.cpp:1265) seems to prevent the above bug from happening.
 
 It seems to fit better with the change made by William Stein in power::compare_same_type (power.cpp:951).
@@ -292,7 +288,7 @@ Re-enable doctests that fail on PPC due to this issue (updated)
 archive/issue_comments_097659.json:
 ```json
 {
-    "body": "> I don't use everything pynac provides so it is more than probable that some expression are not correctly printed now.\n> \n> Do not hesitate to report it.\n\nI'd like to test this at some point, but have two problems. \n\n- There is too much C++ for me to review it properly, unless a lot of it really is just reverting.  Is there an easy way to figure out what is actual new code, and what is going back to something more-or-less Ginac?\n\n- I am not sure exactly what sort of expressions would not be properly printed.  Can you give any kind of example of what sort of bad behavior to look for with testing (perhaps randomized)?",
+    "body": "> I don't use everything pynac provides so it is more than probable that some expression are not correctly printed now.\n> \n> Do not hesitate to report it.\n\n\nI'd like to test this at some point, but have two problems. \n\n- There is too much C++ for me to review it properly, unless a lot of it really is just reverting.  Is there an easy way to figure out what is actual new code, and what is going back to something more-or-less Ginac?\n\n- I am not sure exactly what sort of expressions would not be properly printed.  Can you give any kind of example of what sort of bad behavior to look for with testing (perhaps randomized)?",
     "created_at": "2011-01-13T16:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -304,6 +300,7 @@ archive/issue_comments_097659.json:
 > I don't use everything pynac provides so it is more than probable that some expression are not correctly printed now.
 > 
 > Do not hesitate to report it.
+
 
 I'd like to test this at some point, but have two problems. 
 
@@ -431,7 +428,7 @@ By the way, the problem of different ordering on different architecture should s
 archive/issue_comments_097665.json:
 ```json
 {
-    "body": "Ok, here is a kind of strange example for the problems of ordering still hapenning with Sage 4.6.1:\n\n\n```\nsage: b_0,b_1,b_2=var('b_0,b_1,b_2')\nsage: f = 1/27*b_2^2/(2^b_2)^2 + 1/27*b_1^2/(2^b_1)^2 + 1/27*b_0^2/(2^b_0)^2 + 1/27*b_2/(2^b_2)^2 - 2/81/(2^b_2)^2 + 1/27*b_1/(2^b_1)^2 + 8/243/(2^b_2)^2 - 1/81*b_0/(2^b_0)^2 - 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_0^2/((2^b_2)^2*(2^b_0)^2) - 20/243/(2^b_1)^2 + 1/9/2^b_0 + 4/81*b_0/(2^b_0)^2 - 8/243/(2^b_2)^2 - 2/9/(2^b_2*2^b_1) - 2/9/(2^b_2*2^b_0) + 8/243/(2^b_1)^2 - 1/9/2^b_0 + 2/9/(2^b_2*2^b_1) + 2/9/(2^b_2*2^b_0) - 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2) - 2/27*b_0*b_2/((2^b_2)^2*(2^b_0)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_0)^2) + 2/81/(2^b_1)^2 - 1/27*b_0^2/((2^b_1)^2*(2^b_0)^2) - 2/27*b_0*b_1/((2^b_1)^2*(2^b_0)^2) - 1/27*b_1^2/((2^b_1)^2*(2^b_0)^2) - 2/81/(2^b_0)^2 + 5/27*b_1/((2^b_2)^2*(2^b_1)^2) + 5/27*b_2/((2^b_2)^2*(2^b_1)^2) + 5/27*b_0/((2^b_2)^2*(2^b_0)^2) + 5/27*b_2/((2^b_2)^2*(2^b_0)^2) + 5/27*b_0/((2^b_1)^2*(2^b_0)^2) + 5/27*b_1/((2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_1)^2) + 1/27*b_0^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_0)^2) - 4/81/((2^b_1)^2*(2^b_0)^2) - 11/27*b_0/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 64/81/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 35/81\nsage: f\n1/27*b_2^2/(2^b_2)^2 + 1/27*b_1^2/(2^b_1)^2 + 1/27*b_0^2/(2^b_0)^2 + 1/27*b_2/(2^b_2)^2 + 1/27*b_1/(2^b_1)^2 - 8/243/(2^b_2)^2 + 2/9/(2^b_2*2^b_1) + 2/9/(2^b_2*2^b_0) - 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2) - 2/27*b_0*b_2/((2^b_2)^2*(2^b_0)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_0)^2) + 14/243/(2^b_1)^2 + 1/27*b_0/(2^b_0)^2 + 2/243/(2^b_2)^2 - 2/9/(2^b_2*2^b_1) - 2/9/(2^b_2*2^b_0) - 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_0^2/((2^b_2)^2*(2^b_0)^2) - 20/243/(2^b_1)^2 - 1/27*b_0^2/((2^b_1)^2*(2^b_0)^2) - 2/27*b_0*b_1/((2^b_1)^2*(2^b_0)^2) - 1/27*b_1^2/((2^b_1)^2*(2^b_0)^2) - 2/81/(2^b_0)^2 + 5/27*b_1/((2^b_2)^2*(2^b_1)^2) + 5/27*b_2/((2^b_2)^2*(2^b_1)^2) + 5/27*b_0/((2^b_2)^2*(2^b_0)^2) + 5/27*b_2/((2^b_2)^2*(2^b_0)^2) + 5/27*b_0/((2^b_1)^2*(2^b_0)^2) + 5/27*b_1/((2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_1)^2) + 1/27*b_0^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_0)^2) - 4/81/((2^b_1)^2*(2^b_0)^2) - 11/27*b_0/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 64/81/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 35/81\n\n\n```\n\nThe expression for f should get (a little bit) simplified.\n\nFor example, there are different summands where the only symbolic expressions used are (2!<sup>b_2)!</sup>-2 and they should get automatically gathered when pynac creates the object.\n\nIn fact calling expand() method on f gives you the right expression, but if things were working correctly you should not have to do this.",
+    "body": "Ok, here is a kind of strange example for the problems of ordering still hapenning with Sage 4.6.1:\n\n```\nsage: b_0,b_1,b_2=var('b_0,b_1,b_2')\nsage: f = 1/27*b_2^2/(2^b_2)^2 + 1/27*b_1^2/(2^b_1)^2 + 1/27*b_0^2/(2^b_0)^2 + 1/27*b_2/(2^b_2)^2 - 2/81/(2^b_2)^2 + 1/27*b_1/(2^b_1)^2 + 8/243/(2^b_2)^2 - 1/81*b_0/(2^b_0)^2 - 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_0^2/((2^b_2)^2*(2^b_0)^2) - 20/243/(2^b_1)^2 + 1/9/2^b_0 + 4/81*b_0/(2^b_0)^2 - 8/243/(2^b_2)^2 - 2/9/(2^b_2*2^b_1) - 2/9/(2^b_2*2^b_0) + 8/243/(2^b_1)^2 - 1/9/2^b_0 + 2/9/(2^b_2*2^b_1) + 2/9/(2^b_2*2^b_0) - 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2) - 2/27*b_0*b_2/((2^b_2)^2*(2^b_0)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_0)^2) + 2/81/(2^b_1)^2 - 1/27*b_0^2/((2^b_1)^2*(2^b_0)^2) - 2/27*b_0*b_1/((2^b_1)^2*(2^b_0)^2) - 1/27*b_1^2/((2^b_1)^2*(2^b_0)^2) - 2/81/(2^b_0)^2 + 5/27*b_1/((2^b_2)^2*(2^b_1)^2) + 5/27*b_2/((2^b_2)^2*(2^b_1)^2) + 5/27*b_0/((2^b_2)^2*(2^b_0)^2) + 5/27*b_2/((2^b_2)^2*(2^b_0)^2) + 5/27*b_0/((2^b_1)^2*(2^b_0)^2) + 5/27*b_1/((2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_1)^2) + 1/27*b_0^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_0)^2) - 4/81/((2^b_1)^2*(2^b_0)^2) - 11/27*b_0/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 64/81/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 35/81\nsage: f\n1/27*b_2^2/(2^b_2)^2 + 1/27*b_1^2/(2^b_1)^2 + 1/27*b_0^2/(2^b_0)^2 + 1/27*b_2/(2^b_2)^2 + 1/27*b_1/(2^b_1)^2 - 8/243/(2^b_2)^2 + 2/9/(2^b_2*2^b_1) + 2/9/(2^b_2*2^b_0) - 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2) - 2/27*b_0*b_2/((2^b_2)^2*(2^b_0)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_0)^2) + 14/243/(2^b_1)^2 + 1/27*b_0/(2^b_0)^2 + 2/243/(2^b_2)^2 - 2/9/(2^b_2*2^b_1) - 2/9/(2^b_2*2^b_0) - 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_0^2/((2^b_2)^2*(2^b_0)^2) - 20/243/(2^b_1)^2 - 1/27*b_0^2/((2^b_1)^2*(2^b_0)^2) - 2/27*b_0*b_1/((2^b_1)^2*(2^b_0)^2) - 1/27*b_1^2/((2^b_1)^2*(2^b_0)^2) - 2/81/(2^b_0)^2 + 5/27*b_1/((2^b_2)^2*(2^b_1)^2) + 5/27*b_2/((2^b_2)^2*(2^b_1)^2) + 5/27*b_0/((2^b_2)^2*(2^b_0)^2) + 5/27*b_2/((2^b_2)^2*(2^b_0)^2) + 5/27*b_0/((2^b_1)^2*(2^b_0)^2) + 5/27*b_1/((2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_1)^2) + 1/27*b_0^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_0)^2) - 4/81/((2^b_1)^2*(2^b_0)^2) - 11/27*b_0/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 64/81/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 35/81\n\n\n```\nThe expression for f should get (a little bit) simplified.\n\nFor example, there are different summands where the only symbolic expressions used are (2!<sup>b_2)!</sup>-2 and they should get automatically gathered when pynac creates the object.\n\nIn fact calling expand() method on f gives you the right expression, but if things were working correctly you should not have to do this.",
     "created_at": "2011-01-14T09:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -442,7 +439,6 @@ archive/issue_comments_097665.json:
 
 Ok, here is a kind of strange example for the problems of ordering still hapenning with Sage 4.6.1:
 
-
 ```
 sage: b_0,b_1,b_2=var('b_0,b_1,b_2')
 sage: f = 1/27*b_2^2/(2^b_2)^2 + 1/27*b_1^2/(2^b_1)^2 + 1/27*b_0^2/(2^b_0)^2 + 1/27*b_2/(2^b_2)^2 - 2/81/(2^b_2)^2 + 1/27*b_1/(2^b_1)^2 + 8/243/(2^b_2)^2 - 1/81*b_0/(2^b_0)^2 - 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_0^2/((2^b_2)^2*(2^b_0)^2) - 20/243/(2^b_1)^2 + 1/9/2^b_0 + 4/81*b_0/(2^b_0)^2 - 8/243/(2^b_2)^2 - 2/9/(2^b_2*2^b_1) - 2/9/(2^b_2*2^b_0) + 8/243/(2^b_1)^2 - 1/9/2^b_0 + 2/9/(2^b_2*2^b_1) + 2/9/(2^b_2*2^b_0) - 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2) - 2/27*b_0*b_2/((2^b_2)^2*(2^b_0)^2) - 1/27*b_2^2/((2^b_2)^2*(2^b_0)^2) + 2/81/(2^b_1)^2 - 1/27*b_0^2/((2^b_1)^2*(2^b_0)^2) - 2/27*b_0*b_1/((2^b_1)^2*(2^b_0)^2) - 1/27*b_1^2/((2^b_1)^2*(2^b_0)^2) - 2/81/(2^b_0)^2 + 5/27*b_1/((2^b_2)^2*(2^b_1)^2) + 5/27*b_2/((2^b_2)^2*(2^b_1)^2) + 5/27*b_0/((2^b_2)^2*(2^b_0)^2) + 5/27*b_2/((2^b_2)^2*(2^b_0)^2) + 5/27*b_0/((2^b_1)^2*(2^b_0)^2) + 5/27*b_1/((2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_1)^2) + 1/27*b_0^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_0*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_1^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 2/27*b_1*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 1/27*b_2^2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 4/81/((2^b_2)^2*(2^b_0)^2) - 4/81/((2^b_1)^2*(2^b_0)^2) - 11/27*b_0/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_1/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) - 11/27*b_2/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 64/81/((2^b_2)^2*(2^b_1)^2*(2^b_0)^2) + 35/81
@@ -451,7 +447,6 @@ sage: f
 
 
 ```
-
 The expression for f should get (a little bit) simplified.
 
 For example, there are different summands where the only symbolic expressions used are (2!<sup>b_2)!</sup>-2 and they should get automatically gathered when pynac creates the object.
@@ -655,7 +650,7 @@ And valgrind output also:
 archive/issue_comments_097668.json:
 ```json
 {
-    "body": "Replying to [comment:17 jpflori]:\n>  * the segfault happens in a call to std::sort() in a call to compare() because the ordering used by pynac is not a strict weak ordering. so it is kind of random.\n\n`std::sort` with anything but a strict weak ordering is a receipe for disaster. It is expected to crash, and it does in the example. So you are saying that we must never use GiNaC internal order for sorting.\n\nI take it that `expair_is_greater_degrevlex` does implement a strict weak ordering, so it is safe to use with `std::sort`?\n\nIs the patch in this ticket still relevant or has this been fixed elsewhere?",
+    "body": "Replying to [comment:17 jpflori]:\n>  * the segfault happens in a call to std::sort() in a call to compare() because the ordering used by pynac is not a strict weak ordering. so it is kind of random.\n\n\n`std::sort` with anything but a strict weak ordering is a receipe for disaster. It is expected to crash, and it does in the example. So you are saying that we must never use GiNaC internal order for sorting.\n\nI take it that `expair_is_greater_degrevlex` does implement a strict weak ordering, so it is safe to use with `std::sort`?\n\nIs the patch in this ticket still relevant or has this been fixed elsewhere?",
     "created_at": "2011-02-28T14:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -666,6 +661,7 @@ archive/issue_comments_097668.json:
 
 Replying to [comment:17 jpflori]:
 >  * the segfault happens in a call to std::sort() in a call to compare() because the ordering used by pynac is not a strict weak ordering. so it is kind of random.
+
 
 `std::sort` with anything but a strict weak ordering is a receipe for disaster. It is expected to crash, and it does in the example. So you are saying that we must never use GiNaC internal order for sorting.
 
@@ -742,7 +738,7 @@ I don't understand  the GiNaC documentation that you referred to (http://www.gin
 archive/issue_comments_097672.json:
 ```json
 {
-    "body": "#10833 was a duplicate of this. Here is the example from that ticket:\n\n```\nphi(x) = x^2 + c\ndef iterkate(n):\n    pol = x\n    for i in range(1,n):\n        pol = phi(pol)\n    return pol\ng = expand(iterkate(7))\n```\n",
+    "body": "#10833 was a duplicate of this. Here is the example from that ticket:\n\n```\nphi(x) = x^2 + c\ndef iterkate(n):\n    pol = x\n    for i in range(1,n):\n        pol = phi(pol)\n    return pol\ng = expand(iterkate(7))\n```",
     "created_at": "2011-03-01T13:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -765,13 +761,12 @@ g = expand(iterkate(7))
 
 
 
-
 ---
 
 archive/issue_comments_097673.json:
 ```json
 {
-    "body": "Replying to [comment:21 vbraun]:\n\n> I don't understand  the GiNaC documentation that you referred to (http://www.ginac.de/reference/structGiNaC_1_1expair__rest__is__less.html). They state it is not a SWO, and their example is that neither 3*x<2*x nor 2*x<3*x. But thats perfectly fine in a SWO, you can have incomparable elements. The only constraint on incomparable elements is transitivity, that is, if A and B are incomparable and B and C are incomparable then A and C are also incomparable. Do you understand why its not a SWO?\n\nI have no idea why GiNaC order is not an SWO, my point was just to link that page where the GiNaC devs state it is not one.\n\nHowever I never had problems with it so far, so maybe it is a SWO and the statement in GiNaC doc is just wrong.\n\nWe should post on GiNaC mailing list to get more info on that one. Maybe Burcin knows also.\n\nWhat is definitely sure is that the modified order used in pynac is not correct. Because of it the result of a call to std::sort is flawed. This can be not too harmful (e.g. automatic simplification does not occur because terms which should be adjacent in the internal structure are not) but can also lead to segfaults (even if that dramatic side effect seems to depend on something mysterious, potentially on the gcc version used as you stated).\n\nSo at least for me, using the original GiNaC order solves many problems.",
+    "body": "Replying to [comment:21 vbraun]:\n\n> I don't understand  the GiNaC documentation that you referred to (http://www.ginac.de/reference/structGiNaC_1_1expair__rest__is__less.html). They state it is not a SWO, and their example is that neither 3*x<2*x nor 2*x<3*x. But thats perfectly fine in a SWO, you can have incomparable elements. The only constraint on incomparable elements is transitivity, that is, if A and B are incomparable and B and C are incomparable then A and C are also incomparable. Do you understand why its not a SWO?\n\n\nI have no idea why GiNaC order is not an SWO, my point was just to link that page where the GiNaC devs state it is not one.\n\nHowever I never had problems with it so far, so maybe it is a SWO and the statement in GiNaC doc is just wrong.\n\nWe should post on GiNaC mailing list to get more info on that one. Maybe Burcin knows also.\n\nWhat is definitely sure is that the modified order used in pynac is not correct. Because of it the result of a call to std::sort is flawed. This can be not too harmful (e.g. automatic simplification does not occur because terms which should be adjacent in the internal structure are not) but can also lead to segfaults (even if that dramatic side effect seems to depend on something mysterious, potentially on the gcc version used as you stated).\n\nSo at least for me, using the original GiNaC order solves many problems.",
     "created_at": "2011-03-01T13:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -783,6 +778,7 @@ archive/issue_comments_097673.json:
 Replying to [comment:21 vbraun]:
 
 > I don't understand  the GiNaC documentation that you referred to (http://www.ginac.de/reference/structGiNaC_1_1expair__rest__is__less.html). They state it is not a SWO, and their example is that neither 3*x<2*x nor 2*x<3*x. But thats perfectly fine in a SWO, you can have incomparable elements. The only constraint on incomparable elements is transitivity, that is, if A and B are incomparable and B and C are incomparable then A and C are also incomparable. Do you understand why its not a SWO?
+
 
 I have no idea why GiNaC order is not an SWO, my point was just to link that page where the GiNaC devs state it is not one.
 
@@ -819,7 +815,7 @@ Burcin: If you are working on pynac, can you add some private function/method th
 archive/issue_comments_097675.json:
 ```json
 {
-    "body": "Replying to [comment:24 vbraun]:\n\n> Burcin: If you are working on pynac, can you add some private function/method that exposes the GiNaC order to Sage in addition to the Sage (printing) order? Then we can add some randomized testing to make sure that both are strict weak orders.\n\nCalling the _cmp_ method of an expression should give you access to pynac internal ordering (i.e. with the patched spkg, it is GiNaC original ordering; with the old one you would get the modified order currently used by pynac).\n\nFor example (with the new spkg):\n\n\n```\nsage: var('a b')\n(a, b)\nsage: x._cmp_(a)\n1\nsage: a._cmp_(b)\n1\nsage: a+b\na + b\nsage: x+a\na + x\n\n```\n\nIn GiNaC order, vars are ordered according to creation order iirc. So here we have x (automatically created) > a > b.\n\nFor printing, we use lexicographic order a > b > x and print bigger terms first.\n\nTo check it the only current way is to look at what gets printed, the internal ordering is used for everything else.\n\nI'll try to post a minimal patch to have access to that order in sage.",
+    "body": "Replying to [comment:24 vbraun]:\n\n> Burcin: If you are working on pynac, can you add some private function/method that exposes the GiNaC order to Sage in addition to the Sage (printing) order? Then we can add some randomized testing to make sure that both are strict weak orders.\n\n\nCalling the _cmp_ method of an expression should give you access to pynac internal ordering (i.e. with the patched spkg, it is GiNaC original ordering; with the old one you would get the modified order currently used by pynac).\n\nFor example (with the new spkg):\n\n```\nsage: var('a b')\n(a, b)\nsage: x._cmp_(a)\n1\nsage: a._cmp_(b)\n1\nsage: a+b\na + b\nsage: x+a\na + x\n\n```\nIn GiNaC order, vars are ordered according to creation order iirc. So here we have x (automatically created) > a > b.\n\nFor printing, we use lexicographic order a > b > x and print bigger terms first.\n\nTo check it the only current way is to look at what gets printed, the internal ordering is used for everything else.\n\nI'll try to post a minimal patch to have access to that order in sage.",
     "created_at": "2011-03-01T14:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -832,10 +828,10 @@ Replying to [comment:24 vbraun]:
 
 > Burcin: If you are working on pynac, can you add some private function/method that exposes the GiNaC order to Sage in addition to the Sage (printing) order? Then we can add some randomized testing to make sure that both are strict weak orders.
 
+
 Calling the _cmp_ method of an expression should give you access to pynac internal ordering (i.e. with the patched spkg, it is GiNaC original ordering; with the old one you would get the modified order currently used by pynac).
 
 For example (with the new spkg):
-
 
 ```
 sage: var('a b')
@@ -850,7 +846,6 @@ sage: x+a
 a + x
 
 ```
-
 In GiNaC order, vars are ordered according to creation order iirc. So here we have x (automatically created) > a > b.
 
 For printing, we use lexicographic order a > b > x and print bigger terms first.
@@ -1027,7 +1022,7 @@ Randomized testing of orders
 archive/issue_comments_097684.json:
 ```json
 {
-    "body": "Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by @vbraun created at 2011-03-02 14:23:45\n\nWith the attached script I find some examples in `cmp_add` where `a<b<c<a`. This violates SWO:\n\n```\nsage: attach strict_weak_order.py\nsage: test_symbolic_expression_order(10000)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/Order/<ipython console> in <module>()\n\n/home/vbraun/Sage/Order/strict_weak_order.py in test_symbolic_expression_order(repetitions)\n    113         c = make_random_expr()\n    114         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_(y))\n--> 115         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_add(y))\n    116         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_mul(y))\n    117 \n\n/home/vbraun/Sage/Order/strict_weak_order.py in assert_strict_weak_order(a, b, c, cmp_func)\n     63             \n     64     for i,j,k in Permutations([0,1,2]):   # transitivity\n---> 65         if cmp[i,j] and cmp[j,k] and not cmp[i,k]: raise ValueError, msg\n     66 \n     67     def incomparable(i,j):\n\nValueError: The binary relation failed to be a strict weak order on the elements\n a = 2*v10*(v5 - 2)*v7 + (-(v8 + e)*(-v8 + pi) + v6)*(v9*e - 2) - v2 - v3 - v5 - v9\n b = -(v3*v8 - 51*v2 - 105)*(v2 + 5)*(v3 - 1) + 3*v6*v9\n c = -v1*v6*brun + v6*v9*pi + 3*(7*(v5 + 1)*v7 - 3)*(-(v3 - 1)*e + v4) - (v5 - 4)*(v9 + 8) - v3 - 3\n[0 0 1]\n[1 0 0]\n[0 1 0]\n```\n",
+    "body": "Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by @vbraun created at 2011-03-02 14:23:45\n\nWith the attached script I find some examples in `cmp_add` where `a<b<c<a`. This violates SWO:\n\n```\nsage: attach strict_weak_order.py\nsage: test_symbolic_expression_order(10000)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/Order/<ipython console> in <module>()\n\n/home/vbraun/Sage/Order/strict_weak_order.py in test_symbolic_expression_order(repetitions)\n    113         c = make_random_expr()\n    114         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_(y))\n--> 115         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_add(y))\n    116         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_mul(y))\n    117 \n\n/home/vbraun/Sage/Order/strict_weak_order.py in assert_strict_weak_order(a, b, c, cmp_func)\n     63             \n     64     for i,j,k in Permutations([0,1,2]):   # transitivity\n---> 65         if cmp[i,j] and cmp[j,k] and not cmp[i,k]: raise ValueError, msg\n     66 \n     67     def incomparable(i,j):\n\nValueError: The binary relation failed to be a strict weak order on the elements\n a = 2*v10*(v5 - 2)*v7 + (-(v8 + e)*(-v8 + pi) + v6)*(v9*e - 2) - v2 - v3 - v5 - v9\n b = -(v3*v8 - 51*v2 - 105)*(v2 + 5)*(v3 - 1) + 3*v6*v9\n c = -v1*v6*brun + v6*v9*pi + 3*(7*(v5 + 1)*v7 - 3)*(-(v3 - 1)*e + v4) - (v5 - 4)*(v9 + 8) - v3 - 3\n[0 0 1]\n[1 0 0]\n[0 1 0]\n```",
     "created_at": "2011-03-02T14:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1070,7 +1065,6 @@ ValueError: The binary relation failed to be a strict weak order on the elements
 [1 0 0]
 [0 1 0]
 ```
-
 
 
 
@@ -1228,7 +1222,7 @@ BTW, Jean-Pierre, I wouldn't mind at all if you want to cut the new pynac releas
 archive/issue_comments_097692.json:
 ```json
 {
-    "body": "Replying to [comment:36 burcin]:\n\n> * doesn't this require a patch to the Sage library at least to fix doctests? Is the new printing order exactly the same as the old (inconsistent) one?\nI don't think this order and the old one will coincide and a lot of doctests will have to be fixed if we use it.\nI'll try to have a look at all of this soon, I must admit I did not touch that code since my last post here.\n> * Don't we also need to modify the operand access functions (at least the one in Sage - not the .op() function of ginac) to return the operands in the sorted order, not the stored (somewhat random) order?\nI think you are right.\nI did not test it but it should return unexpected values with the new code.\nI'll include that when the new order seems consistent.\n> BTW, Jean-Pierre, I wouldn't mind at all if you want to cut the new pynac release yourself. I can provide instructions on how to do this.\nPlease go ahead, I'll find the time to do it.\n\nI'm currently rebuilding everything and running some tests, but IIRC the piece of code Volker provided did not raise errors anymore.\nOf course there could be other inconsistencies here and there.",
+    "body": "Replying to [comment:36 burcin]:\n\n> * doesn't this require a patch to the Sage library at least to fix doctests? Is the new printing order exactly the same as the old (inconsistent) one?\n \nI don't think this order and the old one will coincide and a lot of doctests will have to be fixed if we use it.\nI'll try to have a look at all of this soon, I must admit I did not touch that code since my last post here.\n> * Don't we also need to modify the operand access functions (at least the one in Sage - not the .op() function of ginac) to return the operands in the sorted order, not the stored (somewhat random) order?\n \nI think you are right.\nI did not test it but it should return unexpected values with the new code.\nI'll include that when the new order seems consistent.\n> BTW, Jean-Pierre, I wouldn't mind at all if you want to cut the new pynac release yourself. I can provide instructions on how to do this.\n\nPlease go ahead, I'll find the time to do it.\n\nI'm currently rebuilding everything and running some tests, but IIRC the piece of code Volker provided did not raise errors anymore.\nOf course there could be other inconsistencies here and there.",
     "created_at": "2011-05-04T15:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1240,13 +1234,16 @@ archive/issue_comments_097692.json:
 Replying to [comment:36 burcin]:
 
 > * doesn't this require a patch to the Sage library at least to fix doctests? Is the new printing order exactly the same as the old (inconsistent) one?
+ 
 I don't think this order and the old one will coincide and a lot of doctests will have to be fixed if we use it.
 I'll try to have a look at all of this soon, I must admit I did not touch that code since my last post here.
 > * Don't we also need to modify the operand access functions (at least the one in Sage - not the .op() function of ginac) to return the operands in the sorted order, not the stored (somewhat random) order?
+ 
 I think you are right.
 I did not test it but it should return unexpected values with the new code.
 I'll include that when the new order seems consistent.
 > BTW, Jean-Pierre, I wouldn't mind at all if you want to cut the new pynac release yourself. I can provide instructions on how to do this.
+
 Please go ahead, I'll find the time to do it.
 
 I'm currently rebuilding everything and running some tests, but IIRC the piece of code Volker provided did not raise errors anymore.
@@ -1259,7 +1256,7 @@ Of course there could be other inconsistencies here and there.
 archive/issue_comments_097693.json:
 ```json
 {
-    "body": "I did not get inconsistencies using Volker code yet. I'll package a candidate updated spkg today so that someone can have a look at the code update in pynac.\n\nI'll do a proper pynac release when the code is positively reviewed and Burcin tells me how to.\n\nHere is the list of doctests failure with the new spkg:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sage/doc/en/constructions/polynomials.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/constructions/calculus.rst # 7 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/tutorial/tour_algebra.rst # 3 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/tutorial/introduction.rst # 2 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/a_tour_of_sage/index.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/bordeaux_2008/nf_introduction.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/tutorial/tour_algebra.rst # 3 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/tutorial/introduction.rst # 2 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/a_tour_of_sage/index.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/modules/vector_callable_symbolic_dense.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/modules/free_module_element.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/interfaces/maxima_abstract.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/interfaces/maxima_lib.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/numerical/optimize.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/tensor/differential_form_element.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/integer.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/qqbar.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/power_series_ring.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/number_field/number_field_element.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/gsl/dft.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/functional.py # 12 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/tests.py # 16 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/desolvers.py # 14 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/calculus.py # 19 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/test_sympy.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/functions.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/wester.py # 10 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/var.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/categories/classical_crystals.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/perfect_matching.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/partition.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/sf/ns_macdonald.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/ext/fast_callable.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/stats/basic_stats.py # 7 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/log.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/hyperbolic.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/special.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/orthogonal_polys.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/trig.py # 5 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/wigner.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/other.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/piecewise.py # 12 doctests failed\n\tsage -t  -force_lib devel/sage/sage/matrix/matrix_symbolic_dense.pyx # 17 doctests failed\n\tsage -t  -force_lib devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/function_factory.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/maxima_wrapper.py # 14 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression_conversions.py # 7 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/ring.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/constants.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/random_tests.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/relation.py # 13 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/function.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/callable.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/assumptions.py # 11 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/integration/integral.py # 9 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression.pyx # 162 doctests failed\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/plot3d.py # 6 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/preparser.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/functional.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/graphs/generic_graph.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/prandom.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/parser.pyx # 2 doctests failed\n----------------------------------------------------------------------\n\n```\n\nI hope that all of them are trivial...\n\nOne question for Burcin: when you speak of operand access, are you thinking of #9989 or am I missing something in the current Sage code ?",
+    "body": "I did not get inconsistencies using Volker code yet. I'll package a candidate updated spkg today so that someone can have a look at the code update in pynac.\n\nI'll do a proper pynac release when the code is positively reviewed and Burcin tells me how to.\n\nHere is the list of doctests failure with the new spkg:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sage/doc/en/constructions/polynomials.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/constructions/calculus.rst # 7 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/tutorial/tour_algebra.rst # 3 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/tutorial/introduction.rst # 2 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/a_tour_of_sage/index.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/en/bordeaux_2008/nf_introduction.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/tutorial/tour_algebra.rst # 3 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/tutorial/introduction.rst # 2 doctests failed\n\tsage -t  -force_lib devel/sage/doc/fr/a_tour_of_sage/index.rst # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/modules/vector_callable_symbolic_dense.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/modules/free_module_element.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/interfaces/maxima_abstract.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/interfaces/maxima_lib.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/numerical/optimize.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/tensor/differential_form_element.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/integer.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/qqbar.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/power_series_ring.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/number_field/number_field_element.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/polynomial/polynomial_element.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/gsl/dft.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/functional.py # 12 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/tests.py # 16 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/desolvers.py # 14 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/calculus.py # 19 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/test_sympy.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/functions.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/wester.py # 10 doctests failed\n\tsage -t  -force_lib devel/sage/sage/calculus/var.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/categories/classical_crystals.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/perfect_matching.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/partition.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/combinat/sf/ns_macdonald.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/ext/fast_callable.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/stats/basic_stats.py # 7 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/log.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/hyperbolic.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/special.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/orthogonal_polys.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/trig.py # 5 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/wigner.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/other.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/functions/piecewise.py # 12 doctests failed\n\tsage -t  -force_lib devel/sage/sage/matrix/matrix_symbolic_dense.pyx # 17 doctests failed\n\tsage -t  -force_lib devel/sage/sage/matrix/matrix2.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/function_factory.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/maxima_wrapper.py # 14 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression_conversions.py # 7 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/ring.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/constants.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/random_tests.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/relation.py # 13 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/function.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/callable.py # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/assumptions.py # 11 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/integration/integral.py # 9 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression.pyx # 162 doctests failed\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/plot3d.py # 6 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/preparser.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/functional.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/graphs/generic_graph.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/prandom.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/parser.pyx # 2 doctests failed\n----------------------------------------------------------------------\n\n```\nI hope that all of them are trivial...\n\nOne question for Burcin: when you speak of operand access, are you thinking of #9989 or am I missing something in the current Sage code ?",
     "created_at": "2011-05-05T08:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1273,7 +1270,6 @@ I did not get inconsistencies using Volker code yet. I'll package a candidate up
 I'll do a proper pynac release when the code is positively reviewed and Burcin tells me how to.
 
 Here is the list of doctests failure with the new spkg:
-
 
 ```
 ----------------------------------------------------------------------
@@ -1347,7 +1343,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 
 ```
-
 I hope that all of them are trivial...
 
 One question for Burcin: when you speak of operand access, are you thinking of #9989 or am I missing something in the current Sage code ?
@@ -1572,7 +1567,7 @@ What remains for 'needs review' so one could review it?
 archive/issue_comments_097704.json:
 ```json
 {
-    "body": "Replying to [comment:44 kcrisman]:\n> What remains for 'needs review' so one could review it?\n\nVolker has changes to pynac to fix simplification of expressions involving infinity when we can't assume anything about the internal ordering.\n\nI am trying to fix printing of `mul` objects where we get `-` right after a parenthesis, such as `-(4*cos(x)^2 - 1)*sin(x)/(-4*cos(x)^3 + 3*cos(x))`.\n\nIt might be good to update my [attachment:trac_9880-stable_operands.patch] to make it optional to use the printing order.\n\nThen a lot of doctests need to get fixed. We also need to document that `.find()`, `.match()` and friends will not return results in a canonical order any more and that expressions constructed with `hold =True` do not print in the order provided by the user.",
+    "body": "Replying to [comment:44 kcrisman]:\n> What remains for 'needs review' so one could review it?\n\n\nVolker has changes to pynac to fix simplification of expressions involving infinity when we can't assume anything about the internal ordering.\n\nI am trying to fix printing of `mul` objects where we get `-` right after a parenthesis, such as `-(4*cos(x)^2 - 1)*sin(x)/(-4*cos(x)^3 + 3*cos(x))`.\n\nIt might be good to update my [attachment:trac_9880-stable_operands.patch] to make it optional to use the printing order.\n\nThen a lot of doctests need to get fixed. We also need to document that `.find()`, `.match()` and friends will not return results in a canonical order any more and that expressions constructed with `hold =True` do not print in the order provided by the user.",
     "created_at": "2011-06-16T20:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1583,6 +1578,7 @@ archive/issue_comments_097704.json:
 
 Replying to [comment:44 kcrisman]:
 > What remains for 'needs review' so one could review it?
+
 
 Volker has changes to pynac to fix simplification of expressions involving infinity when we can't assume anything about the internal ordering.
 
@@ -1619,7 +1615,7 @@ Initial patch
 archive/issue_comments_097706.json:
 ```json
 {
-    "body": "Patch fixes the segfault \n\n```\nsage: x._cmp_add(1)\n```\n",
+    "body": "Patch fixes the segfault \n\n```\nsage: x._cmp_add(1)\n```",
     "created_at": "2011-06-17T19:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1633,7 +1629,6 @@ Patch fixes the segfault
 ```
 sage: x._cmp_add(1)
 ```
-
 
 
 
@@ -1700,7 +1695,7 @@ The `trac_9880-fix_doctests_symbolic.patch` fixes the bulk of the doctests in `s
 archive/issue_comments_097710.json:
 ```json
 {
-    "body": "tdupu on `#sagemath` reported the following on sage-4.7.1.alpha2:\n\n```\nsage: ff = 117306*x^2 + x\nsage: gg = x + 7^3*x^2\nsage: R.<x> = PolynomialRing(ZZ.quotient(7^6),1)\nsage: ggred = R(gg)\nsage: print expand(ff(x=ggred))\n0*x^4 + 0*x^3\nsage: print expand(ggred(x=ff))\nx\n```\n\nThis is also fixed in the updated pynac and now prints `x` both times.",
+    "body": "tdupu on `#sagemath` reported the following on sage-4.7.1.alpha2:\n\n```\nsage: ff = 117306*x^2 + x\nsage: gg = x + 7^3*x^2\nsage: R.<x> = PolynomialRing(ZZ.quotient(7^6),1)\nsage: ggred = R(gg)\nsage: print expand(ff(x=ggred))\n0*x^4 + 0*x^3\nsage: print expand(ggred(x=ff))\nx\n```\nThis is also fixed in the updated pynac and now prints `x` both times.",
     "created_at": "2011-06-21T18:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1721,7 +1716,6 @@ sage: print expand(ff(x=ggred))
 sage: print expand(ggred(x=ff))
 x
 ```
-
 This is also fixed in the updated pynac and now prints `x` both times.
 
 
@@ -1769,7 +1763,7 @@ I'll try to build your updated version and have a look at the crashes this week.
 archive/issue_comments_097713.json:
 ```json
 {
-    "body": "So I'm finally having a look at that.\n\nHere are some examples producing the bug or not:\n\n\n```\nsage: var('t')\nt\nsage: (x-t)^3\n(-t + x)^3\nsage: (-t+x)^3\n(-t + x)^3\nsage: (-x+t)^3\n\nProgram received signal...\nsage: (t-x)^3\n\nProgram received signal...\nsage: var('z')\nz\nsage: (-x+z)^3\n-(x - z)^3\nsage: (x-z)^3\n(x - z\t)^3\nsage: (-z+x)^3\n(x - z)^3\nsage: (z-x)^3\n-(x - z)^3\nsage: var('y')\ny\nsage: (y-t)^3\n-(t - y)^3\nsage: (t-y)^3\n(t - y)^3\nsage: (-y+z)^3\n(-y + z)^3\nsage: (y-z)^3\n\nProgram received signal ...\n```\n",
+    "body": "So I'm finally having a look at that.\n\nHere are some examples producing the bug or not:\n\n```\nsage: var('t')\nt\nsage: (x-t)^3\n(-t + x)^3\nsage: (-t+x)^3\n(-t + x)^3\nsage: (-x+t)^3\n\nProgram received signal...\nsage: (t-x)^3\n\nProgram received signal...\nsage: var('z')\nz\nsage: (-x+z)^3\n-(x - z)^3\nsage: (x-z)^3\n(x - z\t)^3\nsage: (-z+x)^3\n(x - z)^3\nsage: (z-x)^3\n-(x - z)^3\nsage: var('y')\ny\nsage: (y-t)^3\n-(t - y)^3\nsage: (t-y)^3\n(t - y)^3\nsage: (-y+z)^3\n(-y + z)^3\nsage: (y-z)^3\n\nProgram received signal ...\n```",
     "created_at": "2011-09-19T13:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1781,7 +1775,6 @@ archive/issue_comments_097713.json:
 So I'm finally having a look at that.
 
 Here are some examples producing the bug or not:
-
 
 ```
 sage: var('t')
@@ -1821,7 +1814,6 @@ Program received signal ...
 
 
 
-
 ---
 
 archive/issue_comments_097714.json:
@@ -1849,7 +1841,7 @@ And isn't there a better way to check for leading minus than to emulate printing
 archive/issue_comments_097715.json:
 ```json
 {
-    "body": "I updated my patch-queue with some small but important fixes to the handling of these leading minuses. Please update and try that version. There updates were sitting on my hard disk for months, so I need some time to remember the details again.\n\nReplying to [comment:53 jpflori]:\n> And isn't there a better way to check for leading minus than to emulate printing (even at the cost of duplicating some code) ?\n\nSince the coefficient can be any Sage type, I don't think there is any way to get that information without printing. IIRC, GiNaC handles this by defining the csgn() function appropriately, but they don't support as many types and printing styles as we do.",
+    "body": "I updated my patch-queue with some small but important fixes to the handling of these leading minuses. Please update and try that version. There updates were sitting on my hard disk for months, so I need some time to remember the details again.\n\nReplying to [comment:53 jpflori]:\n> And isn't there a better way to check for leading minus than to emulate printing (even at the cost of duplicating some code) ?\n\n\nSince the coefficient can be any Sage type, I don't think there is any way to get that information without printing. IIRC, GiNaC handles this by defining the csgn() function appropriately, but they don't support as many types and printing styles as we do.",
     "created_at": "2011-09-19T16:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -1862,6 +1854,7 @@ I updated my patch-queue with some small but important fixes to the handling of 
 
 Replying to [comment:53 jpflori]:
 > And isn't there a better way to check for leading minus than to emulate printing (even at the cost of duplicating some code) ?
+
 
 Since the coefficient can be any Sage type, I don't think there is any way to get that information without printing. IIRC, GiNaC handles this by defining the csgn() function appropriately, but they don't support as many types and printing styles as we do.
 
@@ -2054,7 +2047,7 @@ Revert previous ordering for "variables" function
 archive/issue_comments_097725.json:
 ```json
 {
-    "body": "Apart from changes in the printing order, we now get the following error:\n\n\n```\nsage: print ((a+b)*(a+c)).match((w0+w1)*(w0+w2))\nExpected:\n    {$2: b, $0: a, $1: c}\nGot:\n    None\n```\n",
+    "body": "Apart from changes in the printing order, we now get the following error:\n\n```\nsage: print ((a+b)*(a+c)).match((w0+w1)*(w0+w2))\nExpected:\n    {$2: b, $0: a, $1: c}\nGot:\n    None\n```",
     "created_at": "2011-09-21T09:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2065,7 +2058,6 @@ archive/issue_comments_097725.json:
 
 Apart from changes in the printing order, we now get the following error:
 
-
 ```
 sage: print ((a+b)*(a+c)).match((w0+w1)*(w0+w2))
 Expected:
@@ -2073,7 +2065,6 @@ Expected:
 Got:
     None
 ```
-
 
 
 
@@ -2100,7 +2091,7 @@ Attachment [trac_9880-fix_doctests-be.patch](tarball://root/attachments/some-uui
 archive/issue_comments_097727.json:
 ```json
 {
-    "body": "I've just pushed updates to my pynac patch queue that include Jean-Pierre's `numerics.patch`, a preliminary fix for `match()` and some attempts to fix the random effects of normalization of minus signs on printing. I don't expect all of these to be committed, they are work in progress.\n\nI also uploaded a slightly changed version of Volker's doctest fix patch [attachment:trac_9880-fix_doctests_symbolic.take2.patch], and a new patch [attachment:trac_9880-fix_doctests-be.patch] fixing many more doctests which I believe to be correct.\n\nRunning the test suite on `sage/{symbolic,function}` directories after these patches shows more clearly that there is still some work to be done here. We get some random output from `.factor()`  and `.numerator()` calls (#12068), and a timeout on `sage/calculus/calculus.py` since `minpoly` doesn't terminate.\n\n\nHere is my current sage patch queue in case you decide to apply the new patches:\n\n```\ntrac_12068-numer_denom_ginac-fh.patch\ntrac_12068-denominator.patch\ntrac_12074-nth_root.patch\ntrac_9880_fix_import.patch\ntrac_9880_pynac_order.take2.patch\ntrac_9880_randomized_testing.patch\ntrac_9880-stable_operands.patch\ntrac_9880_pynac_infinities.patch\ntrac_9880-fix_comparison-p1.patch\ntrac_9880-fix_variables_ordering.patch\ntrac_9880-fix_doctests_symbolic.patch\ntrac_9880-fix_doctests-be.patch\n```\n\nI'll write to pynac-devel with more details of the remaining problems.",
+    "body": "I've just pushed updates to my pynac patch queue that include Jean-Pierre's `numerics.patch`, a preliminary fix for `match()` and some attempts to fix the random effects of normalization of minus signs on printing. I don't expect all of these to be committed, they are work in progress.\n\nI also uploaded a slightly changed version of Volker's doctest fix patch [attachment:trac_9880-fix_doctests_symbolic.take2.patch], and a new patch [attachment:trac_9880-fix_doctests-be.patch] fixing many more doctests which I believe to be correct.\n\nRunning the test suite on `sage/{symbolic,function}` directories after these patches shows more clearly that there is still some work to be done here. We get some random output from `.factor()`  and `.numerator()` calls (#12068), and a timeout on `sage/calculus/calculus.py` since `minpoly` doesn't terminate.\n\n\nHere is my current sage patch queue in case you decide to apply the new patches:\n\n```\ntrac_12068-numer_denom_ginac-fh.patch\ntrac_12068-denominator.patch\ntrac_12074-nth_root.patch\ntrac_9880_fix_import.patch\ntrac_9880_pynac_order.take2.patch\ntrac_9880_randomized_testing.patch\ntrac_9880-stable_operands.patch\ntrac_9880_pynac_infinities.patch\ntrac_9880-fix_comparison-p1.patch\ntrac_9880-fix_variables_ordering.patch\ntrac_9880-fix_doctests_symbolic.patch\ntrac_9880-fix_doctests-be.patch\n```\nI'll write to pynac-devel with more details of the remaining problems.",
     "created_at": "2011-11-25T17:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2132,7 +2123,6 @@ trac_9880-fix_variables_ordering.patch
 trac_9880-fix_doctests_symbolic.patch
 trac_9880-fix_doctests-be.patch
 ```
-
 I'll write to pynac-devel with more details of the remaining problems.
 
 
@@ -2142,7 +2132,7 @@ I'll write to pynac-devel with more details of the remaining problems.
 archive/issue_comments_097728.json:
 ```json
 {
-    "body": "Here is a small example producing the random minus sign problem for anyone wanting to investigate it apart from Burcin and I:\n\n```\nsage -c \"var('x y z'); print (-x+z)*(3*x-3*z)\"\n```\n",
+    "body": "Here is a small example producing the random minus sign problem for anyone wanting to investigate it apart from Burcin and I:\n\n```\nsage -c \"var('x y z'); print (-x+z)*(3*x-3*z)\"\n```",
     "created_at": "2011-11-27T00:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2156,7 +2146,6 @@ Here is a small example producing the random minus sign problem for anyone wanti
 ```
 sage -c "var('x y z'); print (-x+z)*(3*x-3*z)"
 ```
-
 
 
 
@@ -2301,7 +2290,7 @@ Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://r
 archive/issue_comments_097736.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by @burcin created at 2013-05-07 16:56:37\n\nI rebased the patches to 5.9.\n\nHere is an example where `minpoly()` does not terminate:\n\n\n```\nsage: var('x')\nx\nsage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage: a = solve(eqn, x)[0].rhs()\nsage: a\n-1/2*(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)*(I*sqrt(3) + 1) - 1/6*sqrt(2)*(I*sqrt(3) - 1)/(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)\nsage: QQ[a]\n```\n\nor \n\n```\nsage: a.minpoly()\n```\n",
+    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by @burcin created at 2013-05-07 16:56:37\n\nI rebased the patches to 5.9.\n\nHere is an example where `minpoly()` does not terminate:\n\n```\nsage: var('x')\nx\nsage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage: a = solve(eqn, x)[0].rhs()\nsage: a\n-1/2*(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)*(I*sqrt(3) + 1) - 1/6*sqrt(2)*(I*sqrt(3) - 1)/(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)\nsage: QQ[a]\n```\nor \n\n```\nsage: a.minpoly()\n```",
     "created_at": "2013-05-07T16:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2316,7 +2305,6 @@ I rebased the patches to 5.9.
 
 Here is an example where `minpoly()` does not terminate:
 
-
 ```
 sage: var('x')
 x
@@ -2326,13 +2314,11 @@ sage: a
 -1/2*(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)*(I*sqrt(3) + 1) - 1/6*sqrt(2)*(I*sqrt(3) - 1)/(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)
 sage: QQ[a]
 ```
-
 or 
 
 ```
 sage: a.minpoly()
 ```
-
 
 
 
@@ -2523,7 +2509,7 @@ I'm setting this to `needs_review`. Please test and report any problems.
 archive/issue_comments_097746.json:
 ```json
 {
-    "body": "I get a bunch of doctest failures because of changed term orders, stuff like\n\n```\nFile \"devel/sage/sage/plot/plot3d/plot3d.py\", line 418, in sage.plot.plot3d.plot3d.Spherical\nFailed example:\n    T.transform(radius=r, azimuth=theta, inclination=phi)\nExpected:\n    (r*sin(phi)*cos(theta), r*sin(phi)*sin(theta), r*cos(phi))\nGot:\n    (r*cos(theta)*sin(phi), r*sin(phi)*sin(theta), r*cos(phi))\n```\n",
+    "body": "I get a bunch of doctest failures because of changed term orders, stuff like\n\n```\nFile \"devel/sage/sage/plot/plot3d/plot3d.py\", line 418, in sage.plot.plot3d.plot3d.Spherical\nFailed example:\n    T.transform(radius=r, azimuth=theta, inclination=phi)\nExpected:\n    (r*sin(phi)*cos(theta), r*sin(phi)*sin(theta), r*cos(phi))\nGot:\n    (r*cos(theta)*sin(phi), r*sin(phi)*sin(theta), r*cos(phi))\n```",
     "created_at": "2013-05-10T18:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2543,7 +2529,6 @@ Expected:
 Got:
     (r*cos(theta)*sin(phi), r*sin(phi)*sin(theta), r*cos(phi))
 ```
-
 
 
 
@@ -2595,7 +2580,7 @@ BTW, we still need #13213 reviewed before this can go in.
 archive/issue_comments_097749.json:
 ```json
 {
-    "body": "I've had a quick look at the failing doctests and think there is no real problem hidden there.\n\nThe only thing which may be a little distrubing is that now we print\n\n```\n(2*x+1)*x^2\n```\n\nrather than\n\n```\nx^2*(2*x+1)\n```\n\n\nThis should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\n\nThe other disturbing thing is than fractions get automatically modified when they used not to be:\n\n```\nFile \"devel/sage/doc/ru/tutorial/introduction.rst\", line 49, in doc.ru.tutorial.introduction\nFailed example:\n    k = 1/(sqrt(3)*I + 3/4 + sqrt(73)*5/9); k\nExpected:\n    1/(I*sqrt(3) + 5/9*sqrt(73) + 3/4)\nGot:\n    36/(20*sqrt(73) + 36*I*sqrt(3) + 27)\n```\n\n\nApart from that we also get a lot of nicer things now (in addition to bug fixes) than before.",
+    "body": "I've had a quick look at the failing doctests and think there is no real problem hidden there.\n\nThe only thing which may be a little distrubing is that now we print\n\n```\n(2*x+1)*x^2\n```\nrather than\n\n```\nx^2*(2*x+1)\n```\n\nThis should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\n\nThe other disturbing thing is than fractions get automatically modified when they used not to be:\n\n```\nFile \"devel/sage/doc/ru/tutorial/introduction.rst\", line 49, in doc.ru.tutorial.introduction\nFailed example:\n    k = 1/(sqrt(3)*I + 3/4 + sqrt(73)*5/9); k\nExpected:\n    1/(I*sqrt(3) + 5/9*sqrt(73) + 3/4)\nGot:\n    36/(20*sqrt(73) + 36*I*sqrt(3) + 27)\n```\n\nApart from that we also get a lot of nicer things now (in addition to bug fixes) than before.",
     "created_at": "2013-05-16T20:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2611,13 +2596,11 @@ The only thing which may be a little distrubing is that now we print
 ```
 (2*x+1)*x^2
 ```
-
 rather than
 
 ```
 x^2*(2*x+1)
 ```
-
 
 This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.
 
@@ -2633,7 +2616,6 @@ Got:
     36/(20*sqrt(73) + 36*I*sqrt(3) + 27)
 ```
 
-
 Apart from that we also get a lot of nicer things now (in addition to bug fixes) than before.
 
 
@@ -2643,7 +2625,7 @@ Apart from that we also get a lot of nicer things now (in addition to bug fixes)
 archive/issue_comments_097750.json:
 ```json
 {
-    "body": "I cannot review this patch for the doctests of our book in french, since the dependency patch\n#13213 does not apply to Sage 5.9 (which is the version we use in the book):\n\n```\napplying /tmp/trac_13213-quadratic_field_comparison.patch\npatching file sage/schemes/elliptic_curves/ell_number_field.py\nHunk #1 FAILED at 1347\n1 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_number_field.py.rej\nabort: patch failed to apply\n```\n\n\nPaul",
+    "body": "I cannot review this patch for the doctests of our book in french, since the dependency patch\n#13213 does not apply to Sage 5.9 (which is the version we use in the book):\n\n```\napplying /tmp/trac_13213-quadratic_field_comparison.patch\npatching file sage/schemes/elliptic_curves/ell_number_field.py\nHunk #1 FAILED at 1347\n1 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_number_field.py.rej\nabort: patch failed to apply\n```\n\nPaul",
     "created_at": "2013-05-22T08:45:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2662,7 +2644,6 @@ Hunk #1 FAILED at 1347
 1 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_number_field.py.rej
 abort: patch failed to apply
 ```
-
 
 Paul
 
@@ -2711,7 +2692,7 @@ Now all that remains is to make a proper spkg, and someone to look over the doct
 archive/issue_comments_097753.json:
 ```json
 {
-    "body": "Thanks Burcin!\nI was finally going to do it today, but you were faster than me.\nAt least I can give it a try on beta4 and check there is nothing else to fix (all other patches apply cleanly.\n\nI'd really like other people (let's say at least one) to have a look at the new order before you finalize 3.0 (or if it's already finalized/tagged in your repo make a 3.1 or 3.0.1) in case we want to make minimal changes.\nE.g. I don't reallylike the following, but do not really mind as well:\nReplying to [comment:77 jpflori]:\n> The only thing which may be a little distrubing is that now we print\n> {{{\n> (2*x+1)*x^2\n> }}}\n> rather than\n> {{{\n> x^2*(2*x+1)\n> }}}\n> \n> This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\nBut it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).",
+    "body": "Thanks Burcin!\nI was finally going to do it today, but you were faster than me.\nAt least I can give it a try on beta4 and check there is nothing else to fix (all other patches apply cleanly.\n\nI'd really like other people (let's say at least one) to have a look at the new order before you finalize 3.0 (or if it's already finalized/tagged in your repo make a 3.1 or 3.0.1) in case we want to make minimal changes.\nE.g. I don't reallylike the following, but do not really mind as well:\nReplying to [comment:77 jpflori]:\n> The only thing which may be a little distrubing is that now we print\n> \n> ```\n> (2*x+1)*x^2\n> ```\n> rather than\n> \n> ```\n> x^2*(2*x+1)\n> ```\n> \n> This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\n\nBut it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).",
     "created_at": "2013-05-23T12:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2728,15 +2709,18 @@ I'd really like other people (let's say at least one) to have a look at the new 
 E.g. I don't reallylike the following, but do not really mind as well:
 Replying to [comment:77 jpflori]:
 > The only thing which may be a little distrubing is that now we print
-> {{{
+> 
+> ```
 > (2*x+1)*x^2
-> }}}
+> ```
 > rather than
-> {{{
+> 
+> ```
 > x^2*(2*x+1)
-> }}}
+> ```
 > 
 > This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.
+
 But it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).
 
 
@@ -2746,7 +2730,7 @@ But it would be really better to make these changes, if we plan to make them, be
 archive/issue_comments_097754.json:
 ```json
 {
-    "body": "Replying to [comment:81 jpflori]:\n> Thanks Burcin!\n> I was finally going to do it today, but you were faster than me.\n> At least I can give it a try on beta4 and check there is nothing else to fix (all other patches apply cleanly.\n> \n> I'd really like other people (let's say at least one) to have a look at the new order before you finalize 3.0 (or if it's already finalized/tagged in your repo make a 3.1 or 3.0.1) in case we want to make minimal changes.\n\nI agree. This is the reason I set this ticket to needs review even though it was failing tests all over the library. :)\n\nI tagged the 0.3.0 release already, but I can easily make a 0.3.1 if necessary.\n\n> E.g. I don't reallylike the following, but do not really mind as well:\n> Replying to [comment:77 jpflori]:\n> > The only thing which may be a little distrubing is that now we print\n> > {{{\n> > (2*x+1)*x^2\n> > }}}\n> > rather than\n> > {{{\n> > x^2*(2*x+1)\n> > }}}\n> > \n> > This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\n> But it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).\n\nFeel free to submit patches to pynac with necessary changes. I don't have time to work on this any more right now, but I can spare some minutes to make a new release with simple patches.\n\nThat said, I'd really like this ticket to go in as soon as possible. It really is not fun to maintain the patch with the doctest fixes.",
+    "body": "Replying to [comment:81 jpflori]:\n> Thanks Burcin!\n> I was finally going to do it today, but you were faster than me.\n> At least I can give it a try on beta4 and check there is nothing else to fix (all other patches apply cleanly.\n> \n> I'd really like other people (let's say at least one) to have a look at the new order before you finalize 3.0 (or if it's already finalized/tagged in your repo make a 3.1 or 3.0.1) in case we want to make minimal changes.\n\n\nI agree. This is the reason I set this ticket to needs review even though it was failing tests all over the library. :)\n\nI tagged the 0.3.0 release already, but I can easily make a 0.3.1 if necessary.\n\n> E.g. I don't reallylike the following, but do not really mind as well:\n> Replying to [comment:77 jpflori]:\n> > The only thing which may be a little distrubing is that now we print\n> > \n> > ```\n> > (2*x+1)*x^2\n> > ```\n> > rather than\n> > \n> > ```\n> > x^2*(2*x+1)\n> > ```\n> > \n> > This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.\n\n> But it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).\n\nFeel free to submit patches to pynac with necessary changes. I don't have time to work on this any more right now, but I can spare some minutes to make a new release with simple patches.\n\nThat said, I'd really like this ticket to go in as soon as possible. It really is not fun to maintain the patch with the doctest fixes.",
     "created_at": "2013-05-26T10:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2762,6 +2746,7 @@ Replying to [comment:81 jpflori]:
 > 
 > I'd really like other people (let's say at least one) to have a look at the new order before you finalize 3.0 (or if it's already finalized/tagged in your repo make a 3.1 or 3.0.1) in case we want to make minimal changes.
 
+
 I agree. This is the reason I set this ticket to needs review even though it was failing tests all over the library. :)
 
 I tagged the 0.3.0 release already, but I can easily make a 0.3.1 if necessary.
@@ -2769,15 +2754,18 @@ I tagged the 0.3.0 release already, but I can easily make a 0.3.1 if necessary.
 > E.g. I don't reallylike the following, but do not really mind as well:
 > Replying to [comment:77 jpflori]:
 > > The only thing which may be a little distrubing is that now we print
-> > {{{
+> > 
+> > ```
 > > (2*x+1)*x^2
-> > }}}
+> > ```
 > > rather than
-> > {{{
+> > 
+> > ```
 > > x^2*(2*x+1)
-> > }}}
+> > ```
 > > 
 > > This should be easily fixed in pynac hopefully, but even if not I don't think it should be a blocker.
+
 > But it would be really better to make these changes, if we plan to make them, before merging the ticket, so that people preparing books (I'm thinking of the french book which is in the process of being published) can expect their examples to pass for a quite long amount of time (or at least not to fail in the next version of Sage).
 
 Feel free to submit patches to pynac with necessary changes. I don't have time to work on this any more right now, but I can spare some minutes to make a new release with simple patches.
@@ -2809,7 +2797,7 @@ Burcin, could you reup a proper spkg? i.e. with just an additional line in SPKG.
 archive/issue_comments_097756.json:
 ```json
 {
-    "body": "Replying to [comment:83 jpflori]:\n> Burcin, could you reup a proper spkg? i.e. with just an additional line in SPKG.txt and an hg commit message?\n\nI updated the spkg at the URL given in the description with a new one.\n\nMany thanks for reviewing this!",
+    "body": "Replying to [comment:83 jpflori]:\n> Burcin, could you reup a proper spkg? i.e. with just an additional line in SPKG.txt and an hg commit message?\n\n\nI updated the spkg at the URL given in the description with a new one.\n\nMany thanks for reviewing this!",
     "created_at": "2013-05-27T13:23:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -2820,6 +2808,7 @@ archive/issue_comments_097756.json:
 
 Replying to [comment:83 jpflori]:
 > Burcin, could you reup a proper spkg? i.e. with just an additional line in SPKG.txt and an hg commit message?
+
 
 I updated the spkg at the URL given in the description with a new one.
 
@@ -3108,7 +3097,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_097770.json:
 ```json
 {
-    "body": "Replying to [comment:91 jdemeyer]:\n> Please rebase to #14550.\n\nDone.",
+    "body": "Replying to [comment:91 jdemeyer]:\n> Please rebase to #14550.\n\n\nDone.",
     "created_at": "2013-05-29T08:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -3119,6 +3108,7 @@ archive/issue_comments_097770.json:
 
 Replying to [comment:91 jdemeyer]:
 > Please rebase to #14550.
+
 
 Done.
 
@@ -3165,7 +3155,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097773.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by @burcin created at 2013-05-29 12:56:44\n\nReplying to [comment:94 jdemeyer]:\n> Please rebase to #9890 (the latest patch applies with fuzz 2).\n\nDone.",
+    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by @burcin created at 2013-05-29 12:56:44\n\nReplying to [comment:94 jdemeyer]:\n> Please rebase to #9890 (the latest patch applies with fuzz 2).\n\n\nDone.",
     "created_at": "2013-05-29T12:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -3178,6 +3168,7 @@ Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/a
 
 Replying to [comment:94 jdemeyer]:
 > Please rebase to #9890 (the latest patch applies with fuzz 2).
+
 
 Done.
 

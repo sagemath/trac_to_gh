@@ -66,7 +66,7 @@ Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_056981.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. Awesome trace of product trick!\n\n2. I think the following range must start at 1 -- otherwise this is potentially (in theory) a major bug:\n\n```\nspan = [self.hecke_operator(n) for n in range(2, bound+1) if not self.is_anemic() or gcd(n, level) == 1] \n```\n\n\n3. \"eisenstein\" should be capitalized below:\n\n```\n \t1182\t        Returns whether self is cuspidal, i.e. has no eisenstein part.\n```\n\n\n4. The patch doesn't seem to apply cleanly to 4.1.2.alpha1:\n\n```\nHunk #4 FAILED at 214\n1 out of 6 hunks FAILED -- saving rejects to file sage/modular/hecke/algebra.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "REFEREE REPORT:\n\n1. Awesome trace of product trick!\n\n2. I think the following range must start at 1 -- otherwise this is potentially (in theory) a major bug:\n\n```\nspan = [self.hecke_operator(n) for n in range(2, bound+1) if not self.is_anemic() or gcd(n, level) == 1] \n```\n\n3. \"eisenstein\" should be capitalized below:\n\n```\n \t1182\t        Returns whether self is cuspidal, i.e. has no eisenstein part.\n```\n\n4. The patch doesn't seem to apply cleanly to 4.1.2.alpha1:\n\n```\nHunk #4 FAILED at 214\n1 out of 6 hunks FAILED -- saving rejects to file sage/modular/hecke/algebra.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2009-09-17T07:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
@@ -85,13 +85,11 @@ REFEREE REPORT:
 span = [self.hecke_operator(n) for n in range(2, bound+1) if not self.is_anemic() or gcd(n, level) == 1] 
 ```
 
-
 3. "eisenstein" should be capitalized below:
 
 ```
  	1182	        Returns whether self is cuspidal, i.e. has no eisenstein part.
 ```
-
 
 4. The patch doesn't seem to apply cleanly to 4.1.2.alpha1:
 
@@ -100,7 +98,6 @@ Hunk #4 FAILED at 214
 1 out of 6 hunks FAILED -- saving rejects to file sage/modular/hecke/algebra.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -145,7 +142,7 @@ Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://roo
 archive/issue_comments_056984.json:
 ```json
 {
-    "body": "Apply these:\n\n```\ntrac_6911-referee-replace_other_patch-apply_only_this.patch\ntrac_6911-referee_followup_that_fixes_some_bugs.patch \n```\n",
+    "body": "Apply these:\n\n```\ntrac_6911-referee-replace_other_patch-apply_only_this.patch\ntrac_6911-referee_followup_that_fixes_some_bugs.patch \n```",
     "created_at": "2009-09-19T11:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
@@ -160,7 +157,6 @@ Apply these:
 trac_6911-referee-replace_other_patch-apply_only_this.patch
 trac_6911-referee_followup_that_fixes_some_bugs.patch 
 ```
-
 
 
 

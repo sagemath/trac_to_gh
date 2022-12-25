@@ -3,7 +3,7 @@
 archive/issues_008034.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: A Tour of Sage\n\nI got the following error when building the PDF (French) version of the document \"A Tour of Sage\":\n\n```\nWriting index file a_tour_of_sage.idx\n\n! LaTeX Error: Command \\at already defined.\n               Or name \\end... illegal, see p.192 of the manual.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.39 \\newcommand\\at{@}\n                      \n?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8034\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: A Tour of Sage\n\nI got the following error when building the PDF (French) version of the document \"A Tour of Sage\":\n\n```\nWriting index file a_tour_of_sage.idx\n\n! LaTeX Error: Command \\at already defined.\n               Or name \\end... illegal, see p.192 of the manual.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.39 \\newcommand\\at{@}\n                      \n?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8034\n\n",
     "created_at": "2010-01-21T23:56:38Z",
     "labels": [
         "component: documentation",
@@ -37,7 +37,6 @@ l.39 \newcommand\at{@}
                       
 ?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8034
 

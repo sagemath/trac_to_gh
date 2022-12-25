@@ -72,7 +72,7 @@ Looks good, mostly.  I'm attaching a new patch to fix a few issues; positive rev
 archive/issue_comments_043041.json:
 ```json
 {
-    "body": "For the patch **5542-referee.patch**, everything looks good except for this line:\n\n```\n2017\t        The normal subgroups of `H = PSL(2,7) \\times PSL(2,7)` are\n```\n\nThe LaTeX macro `\\times` is meant to render as a multiplication symbol that looks like this \"x\". But after applying **5542-referee.patch** on top of **trac_5542-docstring-fixes.patch** and rebuilding the HTML version of the reference manual, the said macro doesn't render as expected; see the rebuilt ref manual at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/scratch/sage-3.4/devel/sage-5542/doc/output/html/en/reference/sage/groups/perm_gps/permgroup.html#sage.groups.perm_gps.permgroup.PermutationGroup_generic.normal_subgroups\n\n\n\nto see what it's rendered as.",
+    "body": "For the patch **5542-referee.patch**, everything looks good except for this line:\n\n```\n2017\t        The normal subgroups of `H = PSL(2,7) \\times PSL(2,7)` are\n```\nThe LaTeX macro `\\times` is meant to render as a multiplication symbol that looks like this \"x\". But after applying **5542-referee.patch** on top of **trac_5542-docstring-fixes.patch** and rebuilding the HTML version of the reference manual, the said macro doesn't render as expected; see the rebuilt ref manual at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/scratch/sage-3.4/devel/sage-5542/doc/output/html/en/reference/sage/groups/perm_gps/permgroup.html#sage.groups.perm_gps.permgroup.PermutationGroup_generic.normal_subgroups\n\n\n\nto see what it's rendered as.",
     "created_at": "2009-03-18T09:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5542",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ For the patch **5542-referee.patch**, everything looks good except for this line
 ```
 2017	        The normal subgroups of `H = PSL(2,7) \times PSL(2,7)` are
 ```
-
 The LaTeX macro `\times` is meant to render as a multiplication symbol that looks like this "x". But after applying **5542-referee.patch** on top of **trac_5542-docstring-fixes.patch** and rebuilding the HTML version of the reference manual, the said macro doesn't render as expected; see the rebuilt ref manual at
 
 

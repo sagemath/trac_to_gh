@@ -72,7 +72,7 @@ Fixes various bugs and doctest failures introduced in earlier patches.
 archive/issue_comments_074109.json:
 ```json
 {
-    "body": "Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by @roed314 created at 2010-02-23 17:37:23\n\nPart of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by @roed314 created at 2010-02-23 17:37:23\n\nPart of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -116,7 +115,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074111.json:
 ```json
 {
-    "body": "FWIW, testing with this and all the prior patches in the series applied under 4.3.4.rc0 brings up exactly 1 doctest failure, in line 321 of sage/rings/finite_rings/finite_field_givaro.py:\n\n```\nFile \"/home/masiao/sage-4.3.4.rc0/devel/sage-working/sage/rings/finite_rings/finite_field_\ngivaro.py\", line 321:\n    sage: F81(F9.gen())\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: unable to coerce from a finite field other than the prime subfield\nGot:\n    Traceback (most recent call last):\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_te\nst\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/sagedoctest.py\", line 38, in run_one_exa\nmple\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_ex\nample\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[49]>\", line 1, in <module>\n        F81(F9.gen())###line 321:\n    sage: F81(F9.gen())\n      File \"parent.pyx\", line 826, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6232)\n      File \"parent.pyx\", line 1876, in sage.structure.parent.Parent.convert_map_from (sage/structure/parent.c:12773)\n      File \"parent.pyx\", line 1883, in sage.structure.parent.Parent.discover_convert_map_from (sage/structure/parent.c:12925)\n      File \"parent.pyx\", line 1740, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:11546)\n      File \"parent.pyx\", line 1791, in sage.structure.parent.Parent.discover_coerce_map_from (sage/structure/parent.c:11946)\n      File \"parent_old.pyx\", line 503, in sage.structure.parent_old.Parent._coerce_map_from_ (sage/structure/parent_old.c:5943)\n      File \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/rings/finite_rings/finite_field_givaro.py\", line 350, in _coerce_map_from_\n        raise NotImplementedError\n    NotImplementedError\n```\n",
+    "body": "FWIW, testing with this and all the prior patches in the series applied under 4.3.4.rc0 brings up exactly 1 doctest failure, in line 321 of sage/rings/finite_rings/finite_field_givaro.py:\n\n```\nFile \"/home/masiao/sage-4.3.4.rc0/devel/sage-working/sage/rings/finite_rings/finite_field_\ngivaro.py\", line 321:\n    sage: F81(F9.gen())\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: unable to coerce from a finite field other than the prime subfield\nGot:\n    Traceback (most recent call last):\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_te\nst\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/sagedoctest.py\", line 38, in run_one_exa\nmple\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/masiao/sage-4.3.4.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_ex\nample\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[49]>\", line 1, in <module>\n        F81(F9.gen())###line 321:\n    sage: F81(F9.gen())\n      File \"parent.pyx\", line 826, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6232)\n      File \"parent.pyx\", line 1876, in sage.structure.parent.Parent.convert_map_from (sage/structure/parent.c:12773)\n      File \"parent.pyx\", line 1883, in sage.structure.parent.Parent.discover_convert_map_from (sage/structure/parent.c:12925)\n      File \"parent.pyx\", line 1740, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:11546)\n      File \"parent.pyx\", line 1791, in sage.structure.parent.Parent.discover_coerce_map_from (sage/structure/parent.c:11946)\n      File \"parent_old.pyx\", line 503, in sage.structure.parent_old.Parent._coerce_map_from_ (sage/structure/parent_old.c:5943)\n      File \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/rings/finite_rings/finite_field_givaro.py\", line 350, in _coerce_map_from_\n        raise NotImplementedError\n    NotImplementedError\n```",
     "created_at": "2010-03-18T17:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -159,7 +158,6 @@ ample
         raise NotImplementedError
     NotImplementedError
 ```
-
 
 
 
@@ -224,7 +222,7 @@ The patch conflicts with #8446, so I've uploaded a rebased version.
 archive/issue_comments_074115.json:
 ```json
 {
-    "body": "Apply:\n\n\n```\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch.2\n```\n",
+    "body": "Apply:\n\n```\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch.2\n```",
     "created_at": "2010-09-19T13:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -235,13 +233,11 @@ archive/issue_comments_074115.json:
 
 Apply:
 
-
 ```
 7585_9_1_frac_and_coerce_updates.patch
 8334_residue_fields-rebased_for_8446.patch
 7585_12_1_fixes.patch.2
 ```
-
 
 
 
@@ -268,7 +264,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074117.json:
 ```json
 {
-    "body": "It doesn't work. On vanilla 4.6.alpha1, if I apply \n\n```\n7883_ideals.patch\n7883_fixes.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n```\n\nthen the first five apply (with minor fuzz) but the last one is completely knackered, with 23 out of 27 hunks failing. I think the problem is caused by #9343/#9400 which both make extensive changes to residue fields.\n\nJust a general observation: you've managed to virtually guarantee that these patches are impossible to review, because they're all linked together in such a way that they fail doctests unless you apply the whole series. So the effect is a huge patch bomb, which is unappealing to review; hence it sits around for ages, and inevitably bitrots. Please, please, please back-port the doctest fixes etc, so each ticket in the series passes doctests on its own. Otherwise this will really never get merged and all of your hard work writing this excellent code (not to mention the work of those who have attempted to review it) will be for nothing.",
+    "body": "It doesn't work. On vanilla 4.6.alpha1, if I apply \n\n```\n7883_ideals.patch\n7883_fixes.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n```\nthen the first five apply (with minor fuzz) but the last one is completely knackered, with 23 out of 27 hunks failing. I think the problem is caused by #9343/#9400 which both make extensive changes to residue fields.\n\nJust a general observation: you've managed to virtually guarantee that these patches are impossible to review, because they're all linked together in such a way that they fail doctests unless you apply the whole series. So the effect is a huge patch bomb, which is unappealing to review; hence it sits around for ages, and inevitably bitrots. Please, please, please back-port the doctest fixes etc, so each ticket in the series passes doctests on its own. Otherwise this will really never get merged and all of your hard work writing this excellent code (not to mention the work of those who have attempted to review it) will be for nothing.",
     "created_at": "2010-09-23T14:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -287,7 +283,6 @@ It doesn't work. On vanilla 4.6.alpha1, if I apply
 7585_9_1_frac_and_coerce_updates.patch
 8334_residue_fields-rebased_for_8446.patch
 ```
-
 then the first five apply (with minor fuzz) but the last one is completely knackered, with 23 out of 27 hunks failing. I think the problem is caused by #9343/#9400 which both make extensive changes to residue fields.
 
 Just a general observation: you've managed to virtually guarantee that these patches are impossible to review, because they're all linked together in such a way that they fail doctests unless you apply the whole series. So the effect is a huge patch bomb, which is unappealing to review; hence it sits around for ages, and inevitably bitrots. Please, please, please back-port the doctest fixes etc, so each ticket in the series passes doctests on its own. Otherwise this will really never get merged and all of your hard work writing this excellent code (not to mention the work of those who have attempted to review it) will be for nothing.
@@ -355,7 +350,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074121.json:
 ```json
 {
-    "body": "I'm sorry that this has been so difficult to review.  I've tended to work in chunks: I just start ripping things apart and changing lots of stuff, and then I need to fix it all; by the time I've managed to make all the doctests pass it's turned into a patch-bomb.  I've tried to split things into logically consistent chunks, but it's really frustrating trying to backport fixes.  I also really shouldn't be working on Sage right now: I should be working on my thesis, which has nothing to do with this.\n\nI've tried to get these tickets working against 4.6.alpha1 (in particular, I think they should now).  If they don't get reviewed, I'll try your approach.  In the mean time, the sequence of patches should be \n\n\n```\n7883_ideals.patch\n7883_fixes.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_9343.patch\n7585_12_1_fixes.2.patch\n```\n",
+    "body": "I'm sorry that this has been so difficult to review.  I've tended to work in chunks: I just start ripping things apart and changing lots of stuff, and then I need to fix it all; by the time I've managed to make all the doctests pass it's turned into a patch-bomb.  I've tried to split things into logically consistent chunks, but it's really frustrating trying to backport fixes.  I also really shouldn't be working on Sage right now: I should be working on my thesis, which has nothing to do with this.\n\nI've tried to get these tickets working against 4.6.alpha1 (in particular, I think they should now).  If they don't get reviewed, I'll try your approach.  In the mean time, the sequence of patches should be \n\n```\n7883_ideals.patch\n7883_fixes.patch\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_9343.patch\n7585_12_1_fixes.2.patch\n```",
     "created_at": "2010-09-23T16:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -368,7 +363,6 @@ I'm sorry that this has been so difficult to review.  I've tended to work in chu
 
 I've tried to get these tickets working against 4.6.alpha1 (in particular, I think they should now).  If they don't get reviewed, I'll try your approach.  In the mean time, the sequence of patches should be 
 
-
 ```
 7883_ideals.patch
 7883_fixes.patch
@@ -378,7 +372,6 @@ I've tried to get these tickets working against 4.6.alpha1 (in particular, I thi
 8334_residue_fields-rebased_for_9343.patch
 7585_12_1_fixes.2.patch
 ```
-
 
 
 
@@ -749,7 +742,7 @@ In fact, I can think of one hashing doctest which will fail on a 32-bit machine.
 archive/issue_comments_074141.json:
 ```json
 {
-    "body": "Replying to [comment:20 davidloeffler]:\n> - Install #9898/#9753/#9764 and test everything in sage/rings.\n> - Then install #7883 and the combined patch from this ticket, and do sage/rings again.\n> - Then install #9359 and repeat.\n> \n> I'm a little nervous about silly doctest failures coming up from Pari's unpredictable choices of generators of ideals, and this would set my mind at rest a bit :-)\n\nI will do this (and should have done it for my patches).",
+    "body": "Replying to [comment:20 davidloeffler]:\n> - Install #9898/#9753/#9764 and test everything in sage/rings.\n> - Then install #7883 and the combined patch from this ticket, and do sage/rings again.\n> - Then install #9359 and repeat.\n> \n> I'm a little nervous about silly doctest failures coming up from Pari's unpredictable choices of generators of ideals, and this would set my mind at rest a bit :-)\n\n\nI will do this (and should have done it for my patches).",
     "created_at": "2010-09-25T09:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -765,6 +758,7 @@ Replying to [comment:20 davidloeffler]:
 > 
 > I'm a little nervous about silly doctest failures coming up from Pari's unpredictable choices of generators of ideals, and this would set my mind at rest a bit :-)
 
+
 I will do this (and should have done it for my patches).
 
 
@@ -774,7 +768,7 @@ I will do this (and should have done it for my patches).
 archive/issue_comments_074142.json:
 ```json
 {
-    "body": "I have testing the following chain of patches on a 32-bit PPC machine:\n\n```\ntrac_7883-ideals-folded.patch\n9898_pari_decl.patch\n9753.patch\n9764_ideal_repr_new.patch\n8333_8334_ALL-rebased_for_9764.patch\n```\n\n\nThe only failure was in `sage/schemes/generic/toric_divisor.py`, which is a known problem.",
+    "body": "I have testing the following chain of patches on a 32-bit PPC machine:\n\n```\ntrac_7883-ideals-folded.patch\n9898_pari_decl.patch\n9753.patch\n9764_ideal_repr_new.patch\n8333_8334_ALL-rebased_for_9764.patch\n```\n\nThe only failure was in `sage/schemes/generic/toric_divisor.py`, which is a known problem.",
     "created_at": "2010-09-26T10:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -792,7 +786,6 @@ trac_7883-ideals-folded.patch
 9764_ideal_repr_new.patch
 8333_8334_ALL-rebased_for_9764.patch
 ```
-
 
 The only failure was in `sage/schemes/generic/toric_divisor.py`, which is a known problem.
 
@@ -998,7 +991,7 @@ Paul: I'm sorry, I didn't mean to break anything -- I didn't know there was an o
 archive/issue_comments_074152.json:
 ```json
 {
-    "body": "David (Loeffler), I didn't write to you, but to David Roe... You are just the reviewer.\nThis policy is explained in http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :\n\n```\n\nNote that you could also submit a patch to Sage with the code you're doctesting.\nI did that with all the tests from both of the books I published, and\nI encourage you and many others to do the same with the code from your\narticle.  The code would go in a file\n\n    devel/sage/sage/tests/\n\nlike the file devel/sage/sage/tests/book_stein_modform.py\n\nIn fact, I could imagine having dozens of files in that directory, and\nwhen doctests break there, we could notify the authors before\nreleasing the version of Sage that breaks their doctests for feedback\n-- then they could update their papers or Sage.\n```\n\n\nMy personal opinion is that \"we could notify\" should read \"we should notify\"...\n\nPaul",
+    "body": "David (Loeffler), I didn't write to you, but to David Roe... You are just the reviewer.\nThis policy is explained in http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :\n\n```\n\nNote that you could also submit a patch to Sage with the code you're doctesting.\nI did that with all the tests from both of the books I published, and\nI encourage you and many others to do the same with the code from your\narticle.  The code would go in a file\n\n    devel/sage/sage/tests/\n\nlike the file devel/sage/sage/tests/book_stein_modform.py\n\nIn fact, I could imagine having dozens of files in that directory, and\nwhen doctests break there, we could notify the authors before\nreleasing the version of Sage that breaks their doctests for feedback\n-- then they could update their papers or Sage.\n```\n\nMy personal opinion is that \"we could notify\" should read \"we should notify\"...\n\nPaul",
     "created_at": "2011-11-23T10:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
@@ -1026,7 +1019,6 @@ when doctests break there, we could notify the authors before
 releasing the version of Sage that breaks their doctests for feedback
 -- then they could update their papers or Sage.
 ```
-
 
 My personal opinion is that "we could notify" should read "we should notify"...
 

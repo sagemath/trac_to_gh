@@ -3,7 +3,7 @@
 archive/issues_000814.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nNotice the following printing bug with `NumberField`:\n\n\n```\n\nsage: K .<a,b>= NumberField([x^3-2,x^2+1])\nsage: K\nNumber Field in a with defining polynomial x^3 + -2 over its base field\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/814\n\n",
+    "body": "Assignee: @williamstein\n\nNotice the following printing bug with `NumberField`:\n\n```\n\nsage: K .<a,b>= NumberField([x^3-2,x^2+1])\nsage: K\nNumber Field in a with defining polynomial x^3 + -2 over its base field\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/814\n\n",
     "created_at": "2007-10-03T19:36:43Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 Notice the following printing bug with `NumberField`:
 
-
 ```
 
 sage: K .<a,b>= NumberField([x^3-2,x^2+1])
@@ -29,7 +28,6 @@ sage: K
 Number Field in a with defining polynomial x^3 + -2 over its base field
 
 ```
-
 
 
 

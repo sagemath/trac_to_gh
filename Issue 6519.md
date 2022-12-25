@@ -88,7 +88,7 @@ patches server history.)
 archive/issue_comments_053036.json:
 ```json
 {
-    "body": "On top of a fresh sage-4.1 build (OS X), this patch fails to build:\n\n\n```\nbuilding 'sage.combinat.words.word_datatypes' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Isage/combinat/words -I/Users/rlmill/sage-4.1.32bit/local//include -I/Users/rlmill/sage-4.1.32bit/local//include/csage -I/Users/rlmill/sage-4.1.32bit/devel//sage/sage/ext -I/Users/rlmill/sage-4.1.32bit/local/include/python2.6 -c sage/combinat/words/word_cpp_basic_string.cpp -o build/temp.macosx-10.3-i386-2.6/sage/combinat/words/word_cpp_basic_string.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for C/ObjC but not for C++\nsage/combinat/words/word_cpp_basic_string.cpp: In member function \u2018size_t Word::find_factor_naive(Word*)\u2019:\nsage/combinat/words/word_cpp_basic_string.cpp:70: error: \u2018memmem\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n",
+    "body": "On top of a fresh sage-4.1 build (OS X), this patch fails to build:\n\n```\nbuilding 'sage.combinat.words.word_datatypes' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -Isage/combinat/words -I/Users/rlmill/sage-4.1.32bit/local//include -I/Users/rlmill/sage-4.1.32bit/local//include/csage -I/Users/rlmill/sage-4.1.32bit/devel//sage/sage/ext -I/Users/rlmill/sage-4.1.32bit/local/include/python2.6 -c sage/combinat/words/word_cpp_basic_string.cpp -o build/temp.macosx-10.3-i386-2.6/sage/combinat/words/word_cpp_basic_string.o -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for C/ObjC but not for C++\nsage/combinat/words/word_cpp_basic_string.cpp: In member function \u2018size_t Word::find_factor_naive(Word*)\u2019:\nsage/combinat/words/word_cpp_basic_string.cpp:70: error: \u2018memmem\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```",
     "created_at": "2009-07-13T19:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ archive/issue_comments_053036.json:
 ```
 
 On top of a fresh sage-4.1 build (OS X), this patch fails to build:
-
 
 ```
 building 'sage.combinat.words.word_datatypes' extension
@@ -112,13 +111,12 @@ sage: There was an error installing modified sage library code.
 
 
 
-
 ---
 
 archive/issue_comments_053037.json:
 ```json
 {
-    "body": "Replying to [comment:3 rlm]:\n\n> On top of a fresh sage-4.1 build (OS X), this patch fails to build:\n\nOkay, I've factored the offending code out of this patch (once it is fixed,\nwe will create a new ticket for it), so there should no longer be any\nproblems. Can you test it again?",
+    "body": "Replying to [comment:3 rlm]:\n\n> On top of a fresh sage-4.1 build (OS X), this patch fails to build:\n\n\nOkay, I've factored the offending code out of this patch (once it is fixed,\nwe will create a new ticket for it), so there should no longer be any\nproblems. Can you test it again?",
     "created_at": "2009-07-13T23:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -131,6 +129,7 @@ Replying to [comment:3 rlm]:
 
 > On top of a fresh sage-4.1 build (OS X), this patch fails to build:
 
+
 Okay, I've factored the offending code out of this patch (once it is fixed,
 we will create a new ticket for it), so there should no longer be any
 problems. Can you test it again?
@@ -142,7 +141,7 @@ problems. Can you test it again?
 archive/issue_comments_053038.json:
 ```json
 {
-    "body": "Replying to [comment:4 saliola]:\n> Can you test it again?\n\nThe patch now applies, builds and passes long doctests in `sage/combinat`. I've also skimmed the patch (`historic.txt` was interesting), and it looked good. If you want, I can also run a valgrind session.\n\nDoesn't the date in the deprecation comments need to be updated?\n\n```\n+    ###########################################################################\n+    ##### DEPRECATION WARNINGS (next 4 functions) #############################\n+    ##### Added 23 February 2008 ##############################################\n+    ###########################################################################\n```\n",
+    "body": "Replying to [comment:4 saliola]:\n> Can you test it again?\n\n\nThe patch now applies, builds and passes long doctests in `sage/combinat`. I've also skimmed the patch (`historic.txt` was interesting), and it looked good. If you want, I can also run a valgrind session.\n\nDoesn't the date in the deprecation comments need to be updated?\n\n```\n+    ###########################################################################\n+    ##### DEPRECATION WARNINGS (next 4 functions) #############################\n+    ##### Added 23 February 2008 ##############################################\n+    ###########################################################################\n```",
     "created_at": "2009-07-14T16:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -154,6 +153,7 @@ archive/issue_comments_053038.json:
 Replying to [comment:4 saliola]:
 > Can you test it again?
 
+
 The patch now applies, builds and passes long doctests in `sage/combinat`. I've also skimmed the patch (`historic.txt` was interesting), and it looked good. If you want, I can also run a valgrind session.
 
 Doesn't the date in the deprecation comments need to be updated?
@@ -164,7 +164,6 @@ Doesn't the date in the deprecation comments need to be updated?
 +    ##### Added 23 February 2008 ##############################################
 +    ###########################################################################
 ```
-
 
 
 
@@ -249,7 +248,7 @@ Dear Franco, even if Robert already gave a positive review, I will look the modi
 archive/issue_comments_053043.json:
 ```json
 {
-    "body": "I'm getting a doctest failure:\n\n```\nsage -t -long devel/sage-exp/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-exp/sage/structure/sage_object.pyx\", line 813:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_combinat_words_morphism_WordMorphism__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj\n    ** failed:  _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj\n    ** failed:  _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj\n    ** failed:  _class__sage_combinat_words_word_AbstractWord__.sobj\n    ** failed:  _class__sage_combinat_words_word_Word_over_Alphabet__.sobj\n    ** failed:  _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_words_morphism_WordMorphism__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj\n    _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj\n    _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj\n    _class__sage_combinat_words_word_AbstractWord__.sobj\n    _class__sage_combinat_words_word_Word_over_Alphabet__.sobj\n    _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj\n    Successfully unpickled 562 objects.\n    Failed to unpickle 10 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sage_object.py\n\t [6.6 s]\n```\n",
+    "body": "I'm getting a doctest failure:\n\n```\nsage -t -long devel/sage-exp/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-exp/sage/structure/sage_object.pyx\", line 813:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_combinat_words_morphism_WordMorphism__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj\n    ** failed:  _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj\n    ** failed:  _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj\n    ** failed:  _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj\n    ** failed:  _class__sage_combinat_words_word_AbstractWord__.sobj\n    ** failed:  _class__sage_combinat_words_word_Word_over_Alphabet__.sobj\n    ** failed:  _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_words_morphism_WordMorphism__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_overlapping_r__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_shifted__.sobj\n    _class__sage_combinat_words_shuffle_product_ShuffleProduct_w1w2__.sobj\n    _class__sage_combinat_words_suffix_trees_ImplicitSuffixTree__.sobj\n    _class__sage_combinat_words_suffix_trees_SuffixTrie__.sobj\n    _class__sage_combinat_words_word_AbstractWord__.sobj\n    _class__sage_combinat_words_word_Word_over_Alphabet__.sobj\n    _class__sage_combinat_words_word_Word_over_OrderedAlphabet__.sobj\n    Successfully unpickled 562 objects.\n    Failed to unpickle 10 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_sage_object.py\n\t [6.6 s]\n```",
     "created_at": "2009-07-17T09:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -305,13 +304,12 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.docte
 
 
 
-
 ---
 
 archive/issue_comments_053044.json:
 ```json
 {
-    "body": "I am currently trying to understand the pickle problem... Using debug=True, I am getting more information (see below). The 10 problems look the same... I still don't know how to fix this...\n\nS\u00e9bastien\n\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std, debug=True)\n...\n[same thing as above]\n...\nSuccessfully unpickled 562 objects.\nFailed to unpickle 10 objects.\n\n[(<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbef502c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbef5c84>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf006bc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf005cc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf00554>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf091bc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf095f4>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf0966c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf09b6c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf09c84>)]\n```\n",
+    "body": "I am currently trying to understand the pickle problem... Using debug=True, I am getting more information (see below). The 10 problems look the same... I still don't know how to fix this...\n\nS\u00e9bastien\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std, debug=True)\n...\n[same thing as above]\n...\nSuccessfully unpickled 562 objects.\nFailed to unpickle 10 objects.\n\n[(<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbef502c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbef5c84>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf006bc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf005cc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf00554>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf091bc>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf095f4>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf0966c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf09b6c>),\n (<type 'exceptions.TypeError'>,\n  TypeError('__new__() takes at least 3 arguments (1 given)',),\n  <traceback object at 0xbf09c84>)]\n```",
     "created_at": "2009-07-17T19:32:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -323,7 +321,6 @@ archive/issue_comments_053044.json:
 I am currently trying to understand the pickle problem... Using debug=True, I am getting more information (see below). The 10 problems look the same... I still don't know how to fix this...
 
 Sébastien
-
 
 ```
 sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'
@@ -368,13 +365,12 @@ Failed to unpickle 10 objects.
 
 
 
-
 ---
 
 archive/issue_comments_053045.json:
 ```json
 {
-    "body": "Replying to [comment:2 saliola]:\n> **Partial Review:** I reviewed and documented Vincent's code, to which give a positive\n> review. I also reviewed S\u00e9bastien's code, which also gets a positive review.\n> \n> S\u00e9bastien, can you look over the changes that I made that you haven't yet\n> reviewed? I guess these are just the changes that I made this past week?\n\nI just looked at the changes that Franco made in the last week and I am giving a positive review to them. We now have to tackle the pickle problem described above.",
+    "body": "Replying to [comment:2 saliola]:\n> **Partial Review:** I reviewed and documented Vincent's code, to which give a positive\n> review. I also reviewed S\u00e9bastien's code, which also gets a positive review.\n> \n> S\u00e9bastien, can you look over the changes that I made that you haven't yet\n> reviewed? I guess these are just the changes that I made this past week?\n\n\nI just looked at the changes that Franco made in the last week and I am giving a positive review to them. We now have to tackle the pickle problem described above.",
     "created_at": "2009-07-17T20:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -389,6 +385,7 @@ Replying to [comment:2 saliola]:
 > 
 > Sébastien, can you look over the changes that I made that you haven't yet
 > reviewed? I guess these are just the changes that I made this past week?
+
 
 I just looked at the changes that Franco made in the last week and I am giving a positive review to them. We now have to tackle the pickle problem described above.
 
@@ -417,7 +414,7 @@ I have a working patch right now. I am going to run a few more tests, and the po
 archive/issue_comments_053047.json:
 ```json
 {
-    "body": "The problem. The picklejar contains objects saved with older versions of\nSage, and since we changed a bunch of things, these older objects don't get\nloaded correctly.\n\nThe solution. The old word objects use the `WordContent` backend, which\nmy original patch completely removed (the new implementation is much\nbetter). So my fix was to restore the (`word_content.py` and\n`utils.py`); this way, an old-style word can be unpickled, and during\nthe unpickling, it gets converted to a new-style word, and the user is\ngiven a warning to re-save the word:\n\n```\nsage: load /tmp/foo\n...DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\nword: abbabaab\n```\n\nI also added a bunch of deprecation warnings to these files and to the\ndocumentation for these files. \n\nThis is a temporary fix: since the `WordContent` code is not necessary\nfor any other part of Sage, it will be deleted in a few months. In the\nmeantime, if there is anyone with some saved word objects, then unpickling\nwill work.",
+    "body": "The problem. The picklejar contains objects saved with older versions of\nSage, and since we changed a bunch of things, these older objects don't get\nloaded correctly.\n\nThe solution. The old word objects use the `WordContent` backend, which\nmy original patch completely removed (the new implementation is much\nbetter). So my fix was to restore the (`word_content.py` and\n`utils.py`); this way, an old-style word can be unpickled, and during\nthe unpickling, it gets converted to a new-style word, and the user is\ngiven a warning to re-save the word:\n\n```\nsage: load /tmp/foo\n...DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\nword: abbabaab\n```\nI also added a bunch of deprecation warnings to these files and to the\ndocumentation for these files. \n\nThis is a temporary fix: since the `WordContent` code is not necessary\nfor any other part of Sage, it will be deleted in a few months. In the\nmeantime, if there is anyone with some saved word objects, then unpickling\nwill work.",
     "created_at": "2009-07-17T21:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -442,7 +439,6 @@ sage: load /tmp/foo
 ...DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing "word.save(filename)" to ensure that it will load in future versions of Sage.
 word: abbabaab
 ```
-
 I also added a bunch of deprecation warnings to these files and to the
 documentation for these files. 
 
@@ -523,7 +519,7 @@ reviewer needs to concentrate their attention.
 archive/issue_comments_053051.json:
 ```json
 {
-    "body": "I applied the latest `trac_6519-words_ng.patch` on a clean version of sage-4.1. The following now works :\n\n\n```\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n\t [4.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.9 seconds\n```\n\n\nI also run sage -t -long on all the sage tree and the only tests that failed are the following :\n\n\n```\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"\nsage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"    \n**********************************************************************\nFile \"/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py\", line 549:\n    sage: r.library('foobar')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ImportError: there is no package called 'foobar'\nGot nothing\n**********************************************************************\nFile \"/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py\", line 835:\n    sage: r.completions('tes')\nExpected:\n    ['testPlatformEquivalence', 'testVirtual']\nGot:\n    ['testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_17\n   1 of   3 in __main__.example_34\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/slabbe/sage-4.1/tmp/.doctest_r.py\n\t [4.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"\nTotal time for all tests: 4.5 seconds\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ \n```\n\n\nbut those were also broken on my clean version of sage-4.1. Hence, I am giving a positive review to the changes made by Franco to solve the pickle problem.",
+    "body": "I applied the latest `trac_6519-words_ng.patch` on a clean version of sage-4.1. The following now works :\n\n```\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n\t [4.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.9 seconds\n```\n\nI also run sage -t -long on all the sage tree and the only tests that failed are the following :\n\n```\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"\nsage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"    \n**********************************************************************\nFile \"/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py\", line 549:\n    sage: r.library('foobar')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ImportError: there is no package called 'foobar'\nGot nothing\n**********************************************************************\nFile \"/home/slabbe/sage-4.1/devel/sage-words_ng/sage/interfaces/r.py\", line 835:\n    sage: r.completions('tes')\nExpected:\n    ['testPlatformEquivalence', 'testVirtual']\nGot:\n    ['testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_17\n   1 of   3 in __main__.example_34\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/slabbe/sage-4.1/tmp/.doctest_r.py\n\t [4.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-words_ng/sage/interfaces/r.py\"\nTotal time for all tests: 4.5 seconds\nslabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ \n```\n\nbut those were also broken on my clean version of sage-4.1. Hence, I am giving a positive review to the changes made by Franco to solve the pickle problem.",
     "created_at": "2009-07-18T13:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
@@ -533,7 +529,6 @@ archive/issue_comments_053051.json:
 ```
 
 I applied the latest `trac_6519-words_ng.patch` on a clean version of sage-4.1. The following now works :
-
 
 ```
 slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t  "devel/sage/sage/structure/sage_object.pyx"
@@ -545,9 +540,7 @@ All tests passed!
 Total time for all tests: 4.9 seconds
 ```
 
-
 I also run sage -t -long on all the sage tree and the only tests that failed are the following :
-
 
 ```
 slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ sage -t -long "devel/sage-words_ng/sage/interfaces/r.py"
@@ -584,7 +577,6 @@ The following tests failed:
 Total time for all tests: 4.5 seconds
 slabbe@slabbe-laptop:~/sage-4.1/devel/sage-words_ng$ 
 ```
-
 
 but those were also broken on my clean version of sage-4.1. Hence, I am giving a positive review to the changes made by Franco to solve the pickle problem.
 

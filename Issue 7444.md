@@ -3,7 +3,7 @@
 archive/issues_007444.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nFrom Tim Dumol (also [comment:6:ticket:7343 here]):\n\nCreating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:\n\n\n```\n[...]\nFile \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1652, in render\n            s = render_worksheet_list(ctx.args, pub=True, username=self.username)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1483, in render_worksheet_list\n            search=search, reverse=reverse)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/notebook.py\", line 1292, in worksheet_list_for_public\n            W = [x for x in W if x.satisfies_search(search)]\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line 1977, in satisfies_search\n            + open(filename).read().lower())\nexceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7444\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nFrom Tim Dumol (also [comment:6:ticket:7343 here]):\n\nCreating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:\n\n```\n[...]\nFile \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1652, in render\n            s = render_worksheet_list(ctx.args, pub=True, username=self.username)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1483, in render_worksheet_list\n            search=search, reverse=reverse)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/notebook.py\", line 1292, in worksheet_list_for_public\n            W = [x for x in W if x.satisfies_search(search)]\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line 1977, in satisfies_search\n            + open(filename).read().lower())\nexceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7444\n\n",
     "created_at": "2009-11-12T14:02:43Z",
     "labels": [
         "component: notebook",
@@ -24,7 +24,6 @@ From Tim Dumol (also [comment:6:ticket:7343 here]):
 
 Creating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:
 
-
 ```
 [...]
 File "/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py", line 1652, in render
@@ -37,7 +36,6 @@ File "/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py",
             + open(filename).read().lower())
 exceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7444
 

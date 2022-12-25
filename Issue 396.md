@@ -3,7 +3,7 @@
 archive/issues_000396.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nMultiplying a mix of vectors and matrices is allowed presently in sage, but it is not associative:\n\n```\nv=vector([1,2,3])\nM=matrix([[1,0],[0,1],[1,1]])\nw=vector([1,2])\n\nprint v*M*w\nprint (v*M)*w\nprint v*(M*w)\n///\n(4, 10)\n(4, 10)\n(1, 4, 9)\n```\n\nIt is a combination of vectors not knowing whether they are row- or column vectors (probably good)\nand that v * w has the odd meaning of doing a component-wise multiplication. Perhaps it inherits the method from lists or something? It would be safest to explicitly cast an error if one tries to multiply vectors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/396\n\n",
+    "body": "Assignee: @williamstein\n\nMultiplying a mix of vectors and matrices is allowed presently in sage, but it is not associative:\n\n```\nv=vector([1,2,3])\nM=matrix([[1,0],[0,1],[1,1]])\nw=vector([1,2])\n\nprint v*M*w\nprint (v*M)*w\nprint v*(M*w)\n///\n(4, 10)\n(4, 10)\n(1, 4, 9)\n```\nIt is a combination of vectors not knowing whether they are row- or column vectors (probably good)\nand that v * w has the odd meaning of doing a component-wise multiplication. Perhaps it inherits the method from lists or something? It would be safest to explicitly cast an error if one tries to multiply vectors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/396\n\n",
     "created_at": "2007-06-28T23:46:25Z",
     "labels": [
         "component: algebraic geometry",
@@ -33,7 +33,6 @@ print v*(M*w)
 (4, 10)
 (1, 4, 9)
 ```
-
 It is a combination of vectors not knowing whether they are row- or column vectors (probably good)
 and that v * w has the odd meaning of doing a component-wise multiplication. Perhaps it inherits the method from lists or something? It would be safest to explicitly cast an error if one tries to multiply vectors.
 

@@ -53,7 +53,7 @@ As a different ticket, we should make text work with 2d or 3d plots, like most o
 archive/issue_comments_097326.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> As a different ticket, we should make text work with 2d or 3d plots, like most other plotting functions do.\nCan you clarify what you mean by that?  Do you mean a `.3d()` method (or whatever it's called)?  Or do you mean like how `point` or `line` know whether there are two or three coordinates?",
+    "body": "Replying to [comment:1 jason]:\n> As a different ticket, we should make text work with 2d or 3d plots, like most other plotting functions do.\n\nCan you clarify what you mean by that?  Do you mean a `.3d()` method (or whatever it's called)?  Or do you mean like how `point` or `line` know whether there are two or three coordinates?",
     "created_at": "2010-09-07T16:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
@@ -64,6 +64,7 @@ archive/issue_comments_097326.json:
 
 Replying to [comment:1 jason]:
 > As a different ticket, we should make text work with 2d or 3d plots, like most other plotting functions do.
+
 Can you clarify what you mean by that?  Do you mean a `.3d()` method (or whatever it's called)?  Or do you mean like how `point` or `line` know whether there are two or three coordinates?
 
 

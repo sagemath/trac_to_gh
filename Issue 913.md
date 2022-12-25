@@ -3,7 +3,7 @@
 archive/issues_000913.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe following test case will loop forever:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + 1).real_root_intervals()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/913\n\n",
+    "body": "Assignee: cwitty\n\nThe following test case will loop forever:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + 1).real_root_intervals()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/913\n\n",
     "created_at": "2007-10-17T15:38:15Z",
     "labels": [
         "component: numerical",
@@ -24,7 +24,6 @@ The following test case will loop forever:
 sage: x = polygen(ZZ)
 sage: (x^2 + 1).real_root_intervals()
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/913

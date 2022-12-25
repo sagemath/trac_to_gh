@@ -182,7 +182,7 @@ archive/issue_events_016168.json:
 archive/issue_comments_056630.json:
 ```json
 {
-    "body": "The 'error' message is long since gone.\n\nI cannot replicate the issue in comment:1, though it is certainly not gratuitous.  Partly that is because we now say\n> The username must start with a letter and be between 4 and 32 characters long.\n\nSo the only remaining issue is, of course, the one actually mentioned.  The question is whether this is a problem...",
+    "body": "The 'error' message is long since gone.\n\nI cannot replicate the issue in comment:1, though it is certainly not gratuitous.  Partly that is because we now say\n> The username must start with a letter and be between 4 and 32 characters long.\n\n\nSo the only remaining issue is, of course, the one actually mentioned.  The question is whether this is a problem...",
     "created_at": "2014-12-10T19:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6871",
     "type": "issue_comment",
@@ -195,6 +195,7 @@ The 'error' message is long since gone.
 
 I cannot replicate the issue in comment:1, though it is certainly not gratuitous.  Partly that is because we now say
 > The username must start with a letter and be between 4 and 32 characters long.
+
 
 So the only remaining issue is, of course, the one actually mentioned.  The question is whether this is a problem...
 

@@ -3,7 +3,7 @@
 archive/issues_006012.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\n\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
     "created_at": "2009-05-09T17:45:19Z",
     "labels": [
         "component: misc"
@@ -24,7 +24,6 @@ With this patch, you can use pdflatex instead of latex, in two different ways: u
 ```
 latex.pdflatex(True)
 ```
-
 after which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.
 
 This way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)
@@ -90,7 +89,7 @@ This is very nice.  To be able to go get a pretty PNG of a graph in the notebook
 archive/issue_comments_047751.json:
 ```json
 {
-    "body": "> %latex seems to fail on the use of dvipng. \n\nThis isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\n> Outside of Sage, I can take source with tkz-graph code, run (plain)latex, then convert the dvi to Postscript with dvips, then convert to PNG with imagemagick's convert. I get full pages with numbers, and the resolution looks a bit crummy, but I presume that can be fixed with options.\n\nCan you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?",
+    "body": "> %latex seems to fail on the use of dvipng. \n\n\nThis isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\n> Outside of Sage, I can take source with tkz-graph code, run (plain)latex, then convert the dvi to Postscript with dvips, then convert to PNG with imagemagick's convert. I get full pages with numbers, and the resolution looks a bit crummy, but I presume that can be fixed with options.\n\n\nCan you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?",
     "created_at": "2009-05-09T20:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
@@ -101,9 +100,11 @@ archive/issue_comments_047751.json:
 
 > %latex seems to fail on the use of dvipng. 
 
+
 This isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.
 
 > Outside of Sage, I can take source with tkz-graph code, run (plain)latex, then convert the dvi to Postscript with dvips, then convert to PNG with imagemagick's convert. I get full pages with numbers, and the resolution looks a bit crummy, but I presume that can be fixed with options.
+
 
 Can you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?
 
@@ -114,7 +115,7 @@ Can you temporarily move dvipng out of your path and see what Sage does then?  (
 archive/issue_comments_047752.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> This isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\nIt's not the patch's fault.  It's dvipng failing no matter what on the dvi created by tkz-graph.  Somewhere I got the impression  tkz-graph  played fast and loose with \\special's or something like that, which is why I previously thought pdflatex was *required*.  But I'm not sure I understand the exact nature of the problem here, so I shouldn't throw stones.\n\n> Can you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?\n\n`have_dvipng()` caches its result.  :-(  That cost me 5 minutes.  ;-)  But, yes, that works - renamed dvipng temporarily, loaded up the preamble in one cell, used `%latex_debug` in a second cell, followed with the Altermundus graph in the screenshot,  Great-looking PNG in the notebook results.\n\ndvipng has a `--picky` switch which is designed for just this (I think, \\specials etc).  It results in no output on warnings - I just tested it.  Guess you could then test for the presence of output (are filenames unique across runs?) or perhaps test for newer output with the right name.  Or maybe there is something easier.\n\nI got `view()` tested in the notebook, which was a bit of a hack to get the right string in.  Let me know how you want to proceed and I'm ready to give this a positive review.  I'll be in/out the rest of the afternoon before a 6 PM engagement and have IRC on.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> This isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\n\nIt's not the patch's fault.  It's dvipng failing no matter what on the dvi created by tkz-graph.  Somewhere I got the impression  tkz-graph  played fast and loose with \\special's or something like that, which is why I previously thought pdflatex was *required*.  But I'm not sure I understand the exact nature of the problem here, so I shouldn't throw stones.\n\n> Can you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?\n\n\n`have_dvipng()` caches its result.  :-(  That cost me 5 minutes.  ;-)  But, yes, that works - renamed dvipng temporarily, loaded up the preamble in one cell, used `%latex_debug` in a second cell, followed with the Altermundus graph in the screenshot,  Great-looking PNG in the notebook results.\n\ndvipng has a `--picky` switch which is designed for just this (I think, \\specials etc).  It results in no output on warnings - I just tested it.  Guess you could then test for the presence of output (are filenames unique across runs?) or perhaps test for newer output with the right name.  Or maybe there is something easier.\n\nI got `view()` tested in the notebook, which was a bit of a hack to get the right string in.  Let me know how you want to proceed and I'm ready to give this a positive review.  I'll be in/out the rest of the afternoon before a 6 PM engagement and have IRC on.",
     "created_at": "2009-05-09T21:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
@@ -126,9 +127,11 @@ archive/issue_comments_047752.json:
 Replying to [comment:3 jhpalmieri]:
 > This isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.
 
+
 It's not the patch's fault.  It's dvipng failing no matter what on the dvi created by tkz-graph.  Somewhere I got the impression  tkz-graph  played fast and loose with \special's or something like that, which is why I previously thought pdflatex was *required*.  But I'm not sure I understand the exact nature of the problem here, so I shouldn't throw stones.
 
 > Can you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?
+
 
 `have_dvipng()` caches its result.  :-(  That cost me 5 minutes.  ;-)  But, yes, that works - renamed dvipng temporarily, loaded up the preamble in one cell, used `%latex_debug` in a second cell, followed with the Altermundus graph in the screenshot,  Great-looking PNG in the notebook results.
 

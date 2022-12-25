@@ -3,7 +3,7 @@
 archive/issues_003681.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nwdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py\", line 170:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.0.4.rc0/tmp/.doctest_finite_field_ntl_gf2e.py\n         [2.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 2.9 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3681\n\n",
+    "body": "Assignee: tbd\n\n```\nwdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py\", line 170:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.0.4.rc0/tmp/.doctest_finite_field_ntl_gf2e.py\n         [2.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 2.9 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3681\n\n",
     "created_at": "2008-07-19T14:03:56Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_003681.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
@@ -45,7 +44,6 @@ The following tests failed:
 Total time for all tests: 2.9 seconds
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3681
 
 
@@ -57,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3681
 archive/issue_comments_026012.json:
 ```json
 {
-    "body": "Hi,\n\nThe attached two patches make the bug stop, though I'm not completely happy.  Here's what happens.\n\nPatch 1: This is a patch for a completely different bug that I noticed -- namely that the finite field is cached even if modulus='random', which is very stupid:\n\n```\nsage: k.<a> = GF(2^17,modulus='random')\nsage: k.modulus()\nx^17 + x^16 + x^15 + x^14 + x^13 + x^12 + x^11 + x^8 + x^6 + x^4 + x^2 + x + 1\nsage: n.<a> = GF(2^17,modulus='random')\nsage: n.modulus()\nx^17 + x^16 + x^15 + x^14 + x^13 + x^12 + x^11 + x^8 + x^6 + x^4 + x^2 + x + 1\nsage: n is k\nTrue\n```\n\n\nMuch to my surprise fixing the above caching bug -- i.e., not doing caching, makes\nthe bug that is the subject of this ticket just go away.  Weird!!!\n\nPatch 2: Looking at the code in finite_field_ntl_gf2e.pyx I saw that GF2X_construct\nis used inconsistently.  It is used on ntl_m but *not* on ntl_tmp.  So one or the\nother is wrong.  Digging deeper it seems that using GF2X_construct on ntl_m is\ntotally wrong, since it is only supposed to be used on pointers that are allocated\nusing malloc/new not on C++ classes that are created by just declaring them.  So patch\n2 gets rid of this use of GF2X_construct.   I think this call to GF2X_construct would\npossibly have been a small memory leak (mabshoff?). \n\nNOTE: Applying *only* patch 2 does not fix the bug.  Only patch 1 makes the bug stop happening.\n\nThus I do not understand the bug.  It must somehow be triggered by Python weakrefs and caching\nin a very unusual situation that we just happen to hit with this doctest.    Another remark is\nthat putting \n\n```\nprint \"\"\n```\n\nin the source code of finite_field_ntl_gf2e.pyx right before the random modulus is computed also causes the bug to stop happening.  \n\nWilliam",
+    "body": "Hi,\n\nThe attached two patches make the bug stop, though I'm not completely happy.  Here's what happens.\n\nPatch 1: This is a patch for a completely different bug that I noticed -- namely that the finite field is cached even if modulus='random', which is very stupid:\n\n```\nsage: k.<a> = GF(2^17,modulus='random')\nsage: k.modulus()\nx^17 + x^16 + x^15 + x^14 + x^13 + x^12 + x^11 + x^8 + x^6 + x^4 + x^2 + x + 1\nsage: n.<a> = GF(2^17,modulus='random')\nsage: n.modulus()\nx^17 + x^16 + x^15 + x^14 + x^13 + x^12 + x^11 + x^8 + x^6 + x^4 + x^2 + x + 1\nsage: n is k\nTrue\n```\n\nMuch to my surprise fixing the above caching bug -- i.e., not doing caching, makes\nthe bug that is the subject of this ticket just go away.  Weird!!!\n\nPatch 2: Looking at the code in finite_field_ntl_gf2e.pyx I saw that GF2X_construct\nis used inconsistently.  It is used on ntl_m but *not* on ntl_tmp.  So one or the\nother is wrong.  Digging deeper it seems that using GF2X_construct on ntl_m is\ntotally wrong, since it is only supposed to be used on pointers that are allocated\nusing malloc/new not on C++ classes that are created by just declaring them.  So patch\n2 gets rid of this use of GF2X_construct.   I think this call to GF2X_construct would\npossibly have been a small memory leak (mabshoff?). \n\nNOTE: Applying *only* patch 2 does not fix the bug.  Only patch 1 makes the bug stop happening.\n\nThus I do not understand the bug.  It must somehow be triggered by Python weakrefs and caching\nin a very unusual situation that we just happen to hit with this doctest.    Another remark is\nthat putting \n\n```\nprint \"\"\n```\nin the source code of finite_field_ntl_gf2e.pyx right before the random modulus is computed also causes the bug to stop happening.  \n\nWilliam",
     "created_at": "2008-07-20T13:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ sage: n is k
 True
 ```
 
-
 Much to my surprise fixing the above caching bug -- i.e., not doing caching, makes
 the bug that is the subject of this ticket just go away.  Weird!!!
 
@@ -104,7 +101,6 @@ that putting
 ```
 print ""
 ```
-
 in the source code of finite_field_ntl_gf2e.pyx right before the random modulus is computed also causes the bug to stop happening.  
 
 William
@@ -199,7 +195,7 @@ patch attached that addresses mabshoff's nitpicks.
 archive/issue_comments_026017.json:
 ```json
 {
-    "body": "I was puzzled by these lines in finite_field_ntl_gf2e.pyx:\n\n```\n            if modulus == \"random\":\n                current_randstate().set_seed_ntl(False)\n                GF2X_BuildSparseIrred(ntl_tmp, k)\n                GF2X_BuildRandomIrred(ntl_m, ntl_tmp)\n```\n\nFrom looking at NTL's functions, it looks as if we are creating two irreducibles here, one sparse and one random.  Also, the sparse creation function is *not* random for degrees up to 2048 since it just uses a lookup table.\n\nThe solution is that `GF2X_BuildRandomIrred` takes as input some monic poly, and (by changing some coefficients at random, I think) changes it into another one which has the same degree and passes the irreducibility test.  So I guess that is random, but it seems a bit of overkill to call the first function (especially for degrees >2048) rather than start with `X^k`, say.",
+    "body": "I was puzzled by these lines in finite_field_ntl_gf2e.pyx:\n\n```\n            if modulus == \"random\":\n                current_randstate().set_seed_ntl(False)\n                GF2X_BuildSparseIrred(ntl_tmp, k)\n                GF2X_BuildRandomIrred(ntl_m, ntl_tmp)\n```\nFrom looking at NTL's functions, it looks as if we are creating two irreducibles here, one sparse and one random.  Also, the sparse creation function is *not* random for degrees up to 2048 since it just uses a lookup table.\n\nThe solution is that `GF2X_BuildRandomIrred` takes as input some monic poly, and (by changing some coefficients at random, I think) changes it into another one which has the same degree and passes the irreducibility test.  So I guess that is random, but it seems a bit of overkill to call the first function (especially for degrees >2048) rather than start with `X^k`, say.",
     "created_at": "2008-07-21T16:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
@@ -216,7 +212,6 @@ I was puzzled by these lines in finite_field_ntl_gf2e.pyx:
                 GF2X_BuildSparseIrred(ntl_tmp, k)
                 GF2X_BuildRandomIrred(ntl_m, ntl_tmp)
 ```
-
 From looking at NTL's functions, it looks as if we are creating two irreducibles here, one sparse and one random.  Also, the sparse creation function is *not* random for degrees up to 2048 since it just uses a lookup table.
 
 The solution is that `GF2X_BuildRandomIrred` takes as input some monic poly, and (by changing some coefficients at random, I think) changes it into another one which has the same degree and passes the irreducibility test.  So I guess that is random, but it seems a bit of overkill to call the first function (especially for degrees >2048) rather than start with `X^k`, say.
@@ -272,7 +267,7 @@ By the way, do we need any more reviewing before this one gets the go-ahead?
 archive/issue_comments_026020.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> That's a clever way of doing it, certainly (OK, so Victor Shoup is clever) -- e.g. if the degree is prime then (almost) any element will do.  I wonder how sparse a random min poly is.\n\nI am sure Victor should \"ain't no dummy\" :)\n\n> In the old Sage code, before I fixed it,  it was generating random polys over GF(2) and testing them for irreducibility.  This was bad on two counts:  (a) it took many tries before an irreducible was hit; (b) the polys used had 50% of their coefficients =1, so were slow to deal with (and the field arithmetic was also then slow).\n> \n> I cannot actually think of a situation where I would want to have a random generator...\n> \n> By the way, do we need any more reviewing before this one gets the go-ahead?\n\nNo, I consider what you and William wrote a positive review. This has been a Heisenbug and it has been fixed by the patch on the box we did hit the problem on. Should it resurface we will deal with it.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 cremona]:\n> That's a clever way of doing it, certainly (OK, so Victor Shoup is clever) -- e.g. if the degree is prime then (almost) any element will do.  I wonder how sparse a random min poly is.\n\n\nI am sure Victor should \"ain't no dummy\" :)\n\n> In the old Sage code, before I fixed it,  it was generating random polys over GF(2) and testing them for irreducibility.  This was bad on two counts:  (a) it took many tries before an irreducible was hit; (b) the polys used had 50% of their coefficients =1, so were slow to deal with (and the field arithmetic was also then slow).\n> \n> I cannot actually think of a situation where I would want to have a random generator...\n> \n> By the way, do we need any more reviewing before this one gets the go-ahead?\n\n\nNo, I consider what you and William wrote a positive review. This has been a Heisenbug and it has been fixed by the patch on the box we did hit the problem on. Should it resurface we will deal with it.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T17:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
@@ -284,6 +279,7 @@ archive/issue_comments_026020.json:
 Replying to [comment:7 cremona]:
 > That's a clever way of doing it, certainly (OK, so Victor Shoup is clever) -- e.g. if the degree is prime then (almost) any element will do.  I wonder how sparse a random min poly is.
 
+
 I am sure Victor should "ain't no dummy" :)
 
 > In the old Sage code, before I fixed it,  it was generating random polys over GF(2) and testing them for irreducibility.  This was bad on two counts:  (a) it took many tries before an irreducible was hit; (b) the polys used had 50% of their coefficients =1, so were slow to deal with (and the field arithmetic was also then slow).
@@ -291,6 +287,7 @@ I am sure Victor should "ain't no dummy" :)
 > I cannot actually think of a situation where I would want to have a random generator...
 > 
 > By the way, do we need any more reviewing before this one gets the go-ahead?
+
 
 No, I consider what you and William wrote a positive review. This has been a Heisenbug and it has been fixed by the patch on the box we did hit the problem on. Should it resurface we will deal with it.
 

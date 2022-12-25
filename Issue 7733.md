@@ -3,7 +3,7 @@
 archive/issues_007733.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nJust try ::\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.show()\nsage: Graph(g).show()\nsage: DiGraph(g).show()\n```\n\n\nThe positions are not kept.... Why isn't Graph(g) equivalent to copy(g) ?\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7733\n\n",
+    "body": "Assignee: @rlmill\n\nJust try ::\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.show()\nsage: Graph(g).show()\nsage: DiGraph(g).show()\n```\n\nThe positions are not kept.... Why isn't Graph(g) equivalent to copy(g) ?\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7733\n\n",
     "created_at": "2009-12-18T08:25:18Z",
     "labels": [
         "component: graph theory",
@@ -20,14 +20,12 @@ Assignee: @rlmill
 
 Just try ::
 
-
 ```
 sage: g = graphs.PetersenGraph()
 sage: g.show()
 sage: Graph(g).show()
 sage: DiGraph(g).show()
 ```
-
 
 The positions are not kept.... Why isn't Graph(g) equivalent to copy(g) ?
 
@@ -226,7 +224,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_066334.json:
 ```json
 {
-    "body": "What do you think of line 300 ?\n\n\n```\nsage: g = DiGraph(graphs.PetersenGraph()) \n```\n\n\nWould you like to see an independent test for it ?\n\nNathann",
+    "body": "What do you think of line 300 ?\n\n```\nsage: g = DiGraph(graphs.PetersenGraph()) \n```\n\nWould you like to see an independent test for it ?\n\nNathann",
     "created_at": "2010-03-07T17:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7733",
     "type": "issue_comment",
@@ -237,11 +235,9 @@ archive/issue_comments_066334.json:
 
 What do you think of line 300 ?
 
-
 ```
 sage: g = DiGraph(graphs.PetersenGraph()) 
 ```
-
 
 Would you like to see an independent test for it ?
 

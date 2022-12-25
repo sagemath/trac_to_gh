@@ -119,7 +119,7 @@ to include the fixes for enabling the coefficient rings which are not fields.
 archive/issue_comments_047957.json:
 ```json
 {
-    "body": "The attached patch enables the Singular coefficient rings natively. It passes doctests except:\n\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\n\n\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
+    "body": "The attached patch enables the Singular coefficient rings natively. It passes doctests except:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/toy_d_basis.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1049.8 seconds\n```\n\nwhich I reported upstream at \n\n  http://www.singular.uni-kl.de:8002/trac/ticket/137",
     "created_at": "2009-05-17T01:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -130,7 +130,6 @@ archive/issue_comments_047957.json:
 
 The attached patch enables the Singular coefficient rings natively. It passes doctests except:
 
-
 ```
 The following tests failed:
 
@@ -138,7 +137,6 @@ The following tests failed:
 ----------------------------------------------------------------------
 Total time for all tests: 1049.8 seconds
 ```
-
 
 which I reported upstream at 
 
@@ -225,7 +223,7 @@ Kiran
 archive/issue_comments_047961.json:
 ```json
 {
-    "body": "I am not quite sure what you're asking since singular_env.patch is a HG patch which should be applied via \n\n\n```\ncd $SAGE_LOCAL/bin\nhg import ~/singular_env.patch \n```\n",
+    "body": "I am not quite sure what you're asking since singular_env.patch is a HG patch which should be applied via \n\n```\ncd $SAGE_LOCAL/bin\nhg import ~/singular_env.patch \n```",
     "created_at": "2009-05-31T13:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -236,12 +234,10 @@ archive/issue_comments_047961.json:
 
 I am not quite sure what you're asking since singular_env.patch is a HG patch which should be applied via 
 
-
 ```
 cd $SAGE_LOCAL/bin
 hg import ~/singular_env.patch 
 ```
-
 
 
 
@@ -288,7 +284,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_047964.json:
 ```json
 {
-    "body": "Sorry, but something is wrong.\n\nI get\n\n```\nsage: import os\nsage: os.environ['SINGULARPATH']\n'/home/king/SAGE/devel/sage-4.0/local/share/singular'\nsage: singular.eval('system(\"SingularLib\")')\n'/home/king/SAGE/devel/sage-4.0/local/share/singular:/home/king/SAGE/devel/sage-4.0/local/LIB'\n```\n\n\nBut the last line is Singular's way of telling where the libs are.",
+    "body": "Sorry, but something is wrong.\n\nI get\n\n```\nsage: import os\nsage: os.environ['SINGULARPATH']\n'/home/king/SAGE/devel/sage-4.0/local/share/singular'\nsage: singular.eval('system(\"SingularLib\")')\n'/home/king/SAGE/devel/sage-4.0/local/share/singular:/home/king/SAGE/devel/sage-4.0/local/LIB'\n```\n\nBut the last line is Singular's way of telling where the libs are.",
     "created_at": "2009-06-08T14:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -308,7 +304,6 @@ sage: os.environ['SINGULARPATH']
 sage: singular.eval('system("SingularLib")')
 '/home/king/SAGE/devel/sage-4.0/local/share/singular:/home/king/SAGE/devel/sage-4.0/local/LIB'
 ```
-
 
 But the last line is Singular's way of telling where the libs are.
 
@@ -339,7 +334,7 @@ why is the last result wrong? It searches in `/home/king/SAGE/devel/sage-4.0/loc
 archive/issue_comments_047966.json:
 ```json
 {
-    "body": "Replying to [comment:13 malb]:\n> Hi Simon,\n> \n> why is the last result wrong? It searches in `/home/king/SAGE/devel/sage-4.0/local/share/singular` first, which looks correct to me. What am I missing?\n\nDouble sorry. I was missing something. Ithought that ``system(\"SingularLib\")`` gives precisely one location in which Singular is looking for libraries. But, as you point out, it may provide multiple search paths.\n\nOK, then back to Kiran's positive review.",
+    "body": "Replying to [comment:13 malb]:\n> Hi Simon,\n> \n> why is the last result wrong? It searches in `/home/king/SAGE/devel/sage-4.0/local/share/singular` first, which looks correct to me. What am I missing?\n\n\nDouble sorry. I was missing something. Ithought that ``system(\"SingularLib\")`` gives precisely one location in which Singular is looking for libraries. But, as you point out, it may provide multiple search paths.\n\nOK, then back to Kiran's positive review.",
     "created_at": "2009-06-08T14:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -352,6 +347,7 @@ Replying to [comment:13 malb]:
 > Hi Simon,
 > 
 > why is the last result wrong? It searches in `/home/king/SAGE/devel/sage-4.0/local/share/singular` first, which looks correct to me. What am I missing?
+
 
 Double sorry. I was missing something. Ithought that ``system("SingularLib")`` gives precisely one location in which Singular is looking for libraries. But, as you point out, it may provide multiple search paths.
 
@@ -382,7 +378,7 @@ This segfaults on startup for me with sage-4.0.1.  I thought the patch at #6051 
 archive/issue_comments_047968.json:
 ```json
 {
-    "body": "Replying to [comment:15 ncalexan]:\n> This segfaults on startup for me with sage-4.0.1.  I thought the patch at #6051 might help, but it doesn't apply against 4.0.1.  We want to merge this in 4.0.2 so quick movement is appreciated.\n\nWhat did you do in order to install the spkg?\n\nYou should do:\n1. Either replace the singular-3-0-4 spkg by the new spkg and re-build Sage *from scratch*\n2. Or do the following:\n     i. ``sage -i singular-3-1-0...`` (so, install it into an existing sage)\n     iii. ``sage -f ntl...`` (so, force a re-installation of the ntl-spkg)\n     iiiii. \n       * Do ``sage -ba``, or \n       * touch all Cython extensions depending on Singular (these are sage.libs.singular.singular, sage.matrix.matrix_mpolynomial_dense, sage.rings.polynomial.multi_polynomial_ideal_libsingular and sage.rings.polynomial.multi_polynomial_libsingular) and do ``sage -b``\n\nThis is how I installed the new spkg.\n\nCheers,\n    Simon",
+    "body": "Replying to [comment:15 ncalexan]:\n> This segfaults on startup for me with sage-4.0.1.  I thought the patch at #6051 might help, but it doesn't apply against 4.0.1.  We want to merge this in 4.0.2 so quick movement is appreciated.\n\n\nWhat did you do in order to install the spkg?\n\nYou should do:\n1. Either replace the singular-3-0-4 spkg by the new spkg and re-build Sage *from scratch*\n2. Or do the following:\n     i. ``sage -i singular-3-1-0...`` (so, install it into an existing sage)\n     iii. ``sage -f ntl...`` (so, force a re-installation of the ntl-spkg)\n     iiiii. \n       * Do ``sage -ba``, or \n       * touch all Cython extensions depending on Singular (these are sage.libs.singular.singular, sage.matrix.matrix_mpolynomial_dense, sage.rings.polynomial.multi_polynomial_ideal_libsingular and sage.rings.polynomial.multi_polynomial_libsingular) and do ``sage -b``\n\nThis is how I installed the new spkg.\n\nCheers,\n    Simon",
     "created_at": "2009-06-10T06:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -393,6 +389,7 @@ archive/issue_comments_047968.json:
 
 Replying to [comment:15 ncalexan]:
 > This segfaults on startup for me with sage-4.0.1.  I thought the patch at #6051 might help, but it doesn't apply against 4.0.1.  We want to merge this in 4.0.2 so quick movement is appreciated.
+
 
 What did you do in order to install the spkg?
 
@@ -417,7 +414,7 @@ Cheers,
 archive/issue_comments_047969.json:
 ```json
 {
-    "body": "> This is how I installed the new spkg.\n\nThanks Simon, it now builds and runs and I'll get to testing it tomorrow.",
+    "body": "> This is how I installed the new spkg.\n\n\nThanks Simon, it now builds and runs and I'll get to testing it tomorrow.",
     "created_at": "2009-06-10T07:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -428,6 +425,7 @@ archive/issue_comments_047969.json:
 
 > This is how I installed the new spkg.
 
+
 Thanks Simon, it now builds and runs and I'll get to testing it tomorrow.
 
 
@@ -437,7 +435,7 @@ Thanks Simon, it now builds and runs and I'll get to testing it tomorrow.
 archive/issue_comments_047970.json:
 ```json
 {
-    "body": "Replying to [comment:17 ncalexan]:\n> > This is how I installed the new spkg.\n> \n> Thanks Simon, it now builds and runs and I'll get to testing it tomorrow.\n\nJust for my own reference:\n\n\n```\ntouch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*\n```\n",
+    "body": "Replying to [comment:17 ncalexan]:\n> > This is how I installed the new spkg.\n\n> \n> Thanks Simon, it now builds and runs and I'll get to testing it tomorrow.\n\n\nJust for my own reference:\n\n```\ntouch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*\n```",
     "created_at": "2009-06-10T17:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -448,16 +446,16 @@ archive/issue_comments_047970.json:
 
 Replying to [comment:17 ncalexan]:
 > > This is how I installed the new spkg.
+
 > 
 > Thanks Simon, it now builds and runs and I'll get to testing it tomorrow.
 
-Just for my own reference:
 
+Just for my own reference:
 
 ```
 touch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*
 ```
-
 
 
 
@@ -466,7 +464,7 @@ touch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/poly
 archive/issue_comments_047971.json:
 ```json
 {
-    "body": "Replying to [comment:18 ncalexan]:\n> Just for my own reference:\n> \n> {{{\n> touch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*\n> }}}\n\nShould we add something involving these dependencies to `module_list.py`?",
+    "body": "Replying to [comment:18 ncalexan]:\n> Just for my own reference:\n> \n> \n> ```\n> touch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*\n> ```\n\n\nShould we add something involving these dependencies to `module_list.py`?",
     "created_at": "2009-06-10T17:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -478,9 +476,11 @@ archive/issue_comments_047971.json:
 Replying to [comment:18 ncalexan]:
 > Just for my own reference:
 > 
-> {{{
+> 
+> ```
 > touch sage/libs/singular/* sage/matrix/matrix_mpolynomial_dense* sage/rings/polynomial/multi_polynomial_ideal_libsingular* sage/rings/polynomial/multi_polynomial_libsingular*
-> }}}
+> ```
+
 
 Should we add something involving these dependencies to `module_list.py`?
 
@@ -491,7 +491,7 @@ Should we add something involving these dependencies to `module_list.py`?
 archive/issue_comments_047972.json:
 ```json
 {
-    "body": "Replying to [comment:19 craigcitro]:\n> Should we add something involving these dependencies to `module_list.py`?\n\nYes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.",
+    "body": "Replying to [comment:19 craigcitro]:\n> Should we add something involving these dependencies to `module_list.py`?\n\n\nYes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.",
     "created_at": "2009-06-10T17:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -503,6 +503,7 @@ archive/issue_comments_047972.json:
 Replying to [comment:19 craigcitro]:
 > Should we add something involving these dependencies to `module_list.py`?
 
+
 Yes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.
 
 
@@ -512,7 +513,7 @@ Yes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strang
 archive/issue_comments_047973.json:
 ```json
 {
-    "body": "Replying to [comment:20 malb]:\n> Replying to [comment:19 craigcitro]:\n> > Should we add something involving these dependencies to `module_list.py`?\n> \n> Yes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.\n\nAren't these dependencies already in `module_list.py`? Actually this is where I was looking what I had to touch. Or perhaps touching `libsingular.h` would have been enough, who knows...",
+    "body": "Replying to [comment:20 malb]:\n> Replying to [comment:19 craigcitro]:\n> > Should we add something involving these dependencies to `module_list.py`?\n\n> \n> Yes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.\n\n\nAren't these dependencies already in `module_list.py`? Actually this is where I was looking what I had to touch. Or perhaps touching `libsingular.h` would have been enough, who knows...",
     "created_at": "2009-06-11T06:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6034",
     "type": "issue_comment",
@@ -524,8 +525,10 @@ archive/issue_comments_047973.json:
 Replying to [comment:20 malb]:
 > Replying to [comment:19 craigcitro]:
 > > Should we add something involving these dependencies to `module_list.py`?
+
 > 
 > Yes. The right dependencies would be `$SAGE_LOCAL/include/libsingular.h`, strange I thought I did that a while ago.
+
 
 Aren't these dependencies already in `module_list.py`? Actually this is where I was looking what I had to touch. Or perhaps touching `libsingular.h` would have been enough, who knows...
 

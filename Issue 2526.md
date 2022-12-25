@@ -130,7 +130,7 @@ Changing assignee from @williamstein to mabshoff.
 archive/issue_comments_017196.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> As I don't know what the problems were with the linbox function originally, or whether that problem has been fixed, I don't know whether switching the default back to linbox is a good idea!\n\nHi John,\n\nthe bug in LinBox still hasn't been fixed. Hence this patch will not be applied until the LinBox.spkg with the bug fix will be merged in Sage. It looked initially that this would happen quickly, but that didn't go as planned. Since the bug is trivial and has a positive review it can be instantly merged once the upstream fix in LinBox has happened.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 cremona]:\n> As I don't know what the problems were with the linbox function originally, or whether that problem has been fixed, I don't know whether switching the default back to linbox is a good idea!\n\n\nHi John,\n\nthe bug in LinBox still hasn't been fixed. Hence this patch will not be applied until the LinBox.spkg with the bug fix will be merged in Sage. It looked initially that this would happen quickly, but that didn't go as planned. Since the bug is trivial and has a positive review it can be instantly merged once the upstream fix in LinBox has happened.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-27T17:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
@@ -141,6 +141,7 @@ archive/issue_comments_017196.json:
 
 Replying to [comment:4 cremona]:
 > As I don't know what the problems were with the linbox function originally, or whether that problem has been fixed, I don't know whether switching the default back to linbox is a good idea!
+
 
 Hi John,
 
@@ -193,7 +194,7 @@ Sounds good -as long as it doesn't get forgotten!
 archive/issue_comments_017199.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Sounds good -as long as it doesn't get forgotten!\n\nNah, it is actually listed on my internal ToDo list. And I am sure Clement and William will also remember. Since it has a positive review it always pops up when I look for tickets than can be merged.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 cremona]:\n> Sounds good -as long as it doesn't get forgotten!\n\n\nNah, it is actually listed on my internal ToDo list. And I am sure Clement and William will also remember. Since it has a positive review it always pops up when I look for tickets than can be merged.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-28T08:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
@@ -204,6 +205,7 @@ archive/issue_comments_017199.json:
 
 Replying to [comment:6 cremona]:
 > Sounds good -as long as it doesn't get forgotten!
+
 
 Nah, it is actually listed on my internal ToDo list. And I am sure Clement and William will also remember. Since it has a positive review it always pops up when I look for tickets than can be merged.
 

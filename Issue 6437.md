@@ -171,7 +171,7 @@ Changing keywords from "" to "solaris GNUism sun linker".
 archive/issue_comments_051576.json:
 ```json
 {
-    "body": "FWIW, the actual code which decided on what flags to use is below. \n\n```\ndef sonameprefix(env):\n    print (\"Checking for the operating system and linker, to find appropiate flags for the linker.\")\n    if env['PLATFORM']==\"darwin\":\n        return \"-Wl,-dylib_install_name -Wl,\"\n    elif env['PLATFORM']==\"sunos\":\n        # if GNU in os.system('ld --version 2>&1 /dev/null '):\n        if os.system('ld --version > /dev/null 2>&1 ') == 0  :\n           print (\"You are using the GNU linker on Solaris. Linker flag set to -soname\")\n           print (\"Genererally, the Sun linker is recked to be better on Solaris\")\n           print (\"but Sage has been built using the GNU linker\")\n           return '-Wl,-soname'  # GNU linker on Solaris\n        else:\n           print (\"You are using the Sun linker on Solaris. Linker flag set to -h\")\n           return '-Wl,-h'       # Sun linker on Solaris\n    else:\n        return '-Wl,-soname,'    # Everything else, including linux\n\n```\n",
+    "body": "FWIW, the actual code which decided on what flags to use is below. \n\n```\ndef sonameprefix(env):\n    print (\"Checking for the operating system and linker, to find appropiate flags for the linker.\")\n    if env['PLATFORM']==\"darwin\":\n        return \"-Wl,-dylib_install_name -Wl,\"\n    elif env['PLATFORM']==\"sunos\":\n        # if GNU in os.system('ld --version 2>&1 /dev/null '):\n        if os.system('ld --version > /dev/null 2>&1 ') == 0  :\n           print (\"You are using the GNU linker on Solaris. Linker flag set to -soname\")\n           print (\"Genererally, the Sun linker is recked to be better on Solaris\")\n           print (\"but Sage has been built using the GNU linker\")\n           return '-Wl,-soname'  # GNU linker on Solaris\n        else:\n           print (\"You are using the Sun linker on Solaris. Linker flag set to -h\")\n           return '-Wl,-h'       # Sun linker on Solaris\n    else:\n        return '-Wl,-soname,'    # Everything else, including linux\n\n```",
     "created_at": "2009-06-28T23:13:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6437",
     "type": "issue_comment",
@@ -201,7 +201,6 @@ def sonameprefix(env):
         return '-Wl,-soname,'    # Everything else, including linux
 
 ```
-
 
 
 
@@ -248,7 +247,7 @@ Best regards,
 archive/issue_comments_051579.json:
 ```json
 {
-    "body": "Replying to [comment:1 drkirkby]:\n> I've now got this fixed, thanks in no small part to the help of Arnaud Bergeron, as my python skills are next to useless. \n> \n> \n> The patch is here. \n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/polybori/\n> \n> Since the SConstruct file has been patched many times, I also created a diff from the last version (p7).\n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/polybori/SConstruct-diff-from-p7.patch\n> \n> since a patch from the original source is very large. \nAfter uncompressing polybori-0.5rc.p9.spkg, I see a junk file:\n\n```\n[mvngu@sage polybori-0.5rc.p9]$ hg st\nM SPKG.txt\nM patches/SConstruct\nM patches/custom.py\n? patches/SConstruct.p7\n```\n\nnamely `patches/SConstruct.p7`. If you've patched the relevant scripts/build files, can you please remove the junk files? Afterwards, if you're not comfortable with checking in changes using Mercurial, I can deal with that.",
+    "body": "Replying to [comment:1 drkirkby]:\n> I've now got this fixed, thanks in no small part to the help of Arnaud Bergeron, as my python skills are next to useless. \n> \n> \n> The patch is here. \n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/polybori/\n> \n> Since the SConstruct file has been patched many times, I also created a diff from the last version (p7).\n> \n> http://sage.math.washington.edu/home/kirkby/Solaris-fixes/polybori/SConstruct-diff-from-p7.patch\n> \n> since a patch from the original source is very large. \n\nAfter uncompressing polybori-0.5rc.p9.spkg, I see a junk file:\n\n```\n[mvngu@sage polybori-0.5rc.p9]$ hg st\nM SPKG.txt\nM patches/SConstruct\nM patches/custom.py\n? patches/SConstruct.p7\n```\nnamely `patches/SConstruct.p7`. If you've patched the relevant scripts/build files, can you please remove the junk files? Afterwards, if you're not comfortable with checking in changes using Mercurial, I can deal with that.",
     "created_at": "2009-07-15T16:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6437",
     "type": "issue_comment",
@@ -270,6 +269,7 @@ Replying to [comment:1 drkirkby]:
 > http://sage.math.washington.edu/home/kirkby/Solaris-fixes/polybori/SConstruct-diff-from-p7.patch
 > 
 > since a patch from the original source is very large. 
+
 After uncompressing polybori-0.5rc.p9.spkg, I see a junk file:
 
 ```
@@ -279,7 +279,6 @@ M patches/SConstruct
 M patches/custom.py
 ? patches/SConstruct.p7
 ```
-
 namely `patches/SConstruct.p7`. If you've patched the relevant scripts/build files, can you please remove the junk files? Afterwards, if you're not comfortable with checking in changes using Mercurial, I can deal with that.
 
 

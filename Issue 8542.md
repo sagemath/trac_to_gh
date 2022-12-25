@@ -3,7 +3,7 @@
 archive/issues_008542.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nHowever, if I go into src/ginac/.libs and run\n\n\n```\ngcc -shared -L/home/mhansen/sage-4.3.3.alpha0/local//lib -L/home/mhansen/sage-4.3.3.alpha0/local/lib/python2.6/config -o libpynac.dll *.o -lstdc++ -lpython2.6\n```\n\n\na working DLL gets built.  The trick would be to figure out how to get autotools to do this for us.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8542\n\n",
+    "body": "Assignee: tbd\n\nHowever, if I go into src/ginac/.libs and run\n\n```\ngcc -shared -L/home/mhansen/sage-4.3.3.alpha0/local//lib -L/home/mhansen/sage-4.3.3.alpha0/local/lib/python2.6/config -o libpynac.dll *.o -lstdc++ -lpython2.6\n```\n\na working DLL gets built.  The trick would be to figure out how to get autotools to do this for us.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8542\n\n",
     "created_at": "2010-03-15T05:27:50Z",
     "labels": [
         "component: porting: cygwin",
@@ -20,11 +20,9 @@ Assignee: tbd
 
 However, if I go into src/ginac/.libs and run
 
-
 ```
 gcc -shared -L/home/mhansen/sage-4.3.3.alpha0/local//lib -L/home/mhansen/sage-4.3.3.alpha0/local/lib/python2.6/config -o libpynac.dll *.o -lstdc++ -lpython2.6
 ```
-
 
 a working DLL gets built.  The trick would be to figure out how to get autotools to do this for us.
 
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8542
 archive/issue_comments_077097.json:
 ```json
 {
-    "body": "It basically comes down to adding the following changes\n\n\n```\ndiff -r 1cf1634d68b0 configure.ac\n--- a/configure.ac\tSun Mar 14 20:20:48 2010 -0800\n+++ b/configure.ac\tMon Mar 15 00:15:49 2010 -0800\n@@ -71,6 +71,7 @@\n AC_PROG_CXXCPP\n AC_PROG_INSTALL\n AM_PROG_LIBTOOL\n+AC_LIBTOOL_WIN32_DLL\n \n dnl Check for data types which are needed by the hash function \n dnl (golden_ratio_hash).\ndiff -r 1cf1634d68b0 ginac/Makefile.am\n--- a/ginac/Makefile.am\tSun Mar 14 20:20:48 2010 -0800\n+++ b/ginac/Makefile.am\tMon Mar 15 00:15:49 2010 -0800\n@@ -10,7 +10,7 @@\n   pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \\\n   utils.cpp wildcard.cpp \\\n   remember.h tostring.h utils.h compiler.h\n-libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE)\n+libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE) -no-undefined\n ginacincludedir = $(includedir)/pynac\n ginacinclude_HEADERS = ginac.h add.h archive.h assertion.h basic.h class_info.h \\\n   clifford.h color.h constant.h container.h ex.h expair.h expairseq.h \\\n```\n\n\nand fixing the fallout by making sure that Python gets linked in.",
+    "body": "It basically comes down to adding the following changes\n\n```\ndiff -r 1cf1634d68b0 configure.ac\n--- a/configure.ac\tSun Mar 14 20:20:48 2010 -0800\n+++ b/configure.ac\tMon Mar 15 00:15:49 2010 -0800\n@@ -71,6 +71,7 @@\n AC_PROG_CXXCPP\n AC_PROG_INSTALL\n AM_PROG_LIBTOOL\n+AC_LIBTOOL_WIN32_DLL\n \n dnl Check for data types which are needed by the hash function \n dnl (golden_ratio_hash).\ndiff -r 1cf1634d68b0 ginac/Makefile.am\n--- a/ginac/Makefile.am\tSun Mar 14 20:20:48 2010 -0800\n+++ b/ginac/Makefile.am\tMon Mar 15 00:15:49 2010 -0800\n@@ -10,7 +10,7 @@\n   pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \\\n   utils.cpp wildcard.cpp \\\n   remember.h tostring.h utils.h compiler.h\n-libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE)\n+libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE) -no-undefined\n ginacincludedir = $(includedir)/pynac\n ginacinclude_HEADERS = ginac.h add.h archive.h assertion.h basic.h class_info.h \\\n   clifford.h color.h constant.h container.h ex.h expair.h expairseq.h \\\n```\n\nand fixing the fallout by making sure that Python gets linked in.",
     "created_at": "2010-03-15T08:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
@@ -49,7 +47,6 @@ archive/issue_comments_077097.json:
 ```
 
 It basically comes down to adding the following changes
-
 
 ```
 diff -r 1cf1634d68b0 configure.ac
@@ -76,7 +73,6 @@ diff -r 1cf1634d68b0 ginac/Makefile.am
  ginacinclude_HEADERS = ginac.h add.h archive.h assertion.h basic.h class_info.h \
    clifford.h color.h constant.h container.h ex.h expair.h expairseq.h \
 ```
-
 
 and fixing the fallout by making sure that Python gets linked in.
 
@@ -196,7 +192,7 @@ There's an spkg at http://sage.math.washington.edu/home/mhansen/pynac-0.13.spkg,
 archive/issue_comments_077103.json:
 ```json
 {
-    "body": "Replying to [comment:6 mhansen]:\n> There's an spkg at http://sage.math.washington.edu/home/mhansen/pynac-0.13.spkg, but it needs to have changes committed / SPKG.txt made / version number updated.\n\nI'll take a look at these and merge #8651 as well.",
+    "body": "Replying to [comment:6 mhansen]:\n> There's an spkg at http://sage.math.washington.edu/home/mhansen/pynac-0.13.spkg, but it needs to have changes committed / SPKG.txt made / version number updated.\n\n\nI'll take a look at these and merge #8651 as well.",
     "created_at": "2010-05-05T02:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
@@ -207,6 +203,7 @@ archive/issue_comments_077103.json:
 
 Replying to [comment:6 mhansen]:
 > There's an spkg at http://sage.math.washington.edu/home/mhansen/pynac-0.13.spkg, but it needs to have changes committed / SPKG.txt made / version number updated.
+
 
 I'll take a look at these and merge #8651 as well.
 
@@ -253,7 +250,7 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_077106.json:
 ```json
 {
-    "body": "Both patches, for pynac and Sage, look good to me.\n\nBuilding the new pynac package fails with the following error:\n\n\n```\n...\n/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/../../../../x86_64-pc-linux-gnu/bin/ld: /home/burcin/sage/sage-4.4.1.alpha2-patched/local/lib/python2.6/config/libpython2.6.a(abstract.o): relocation R_X86_64_32 against `a local symbol' can not be used when making a shared object; recompile with -fPIC\n/home/burcin/sage/sage-4.4.1.alpha2-patched/local/lib/python2.6/config/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nmake[2]: *** [libpynac.la] Error 1\nmake[2]: Leaving directory `/home/burcin/sage/sage-4.4.1.alpha2-patched/spkg/build/pynac-0.1.13/src/ginac'\n...\n```\n\n\nDo we have a python package that uses `-fPIC`?",
+    "body": "Both patches, for pynac and Sage, look good to me.\n\nBuilding the new pynac package fails with the following error:\n\n```\n...\n/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/../../../../x86_64-pc-linux-gnu/bin/ld: /home/burcin/sage/sage-4.4.1.alpha2-patched/local/lib/python2.6/config/libpython2.6.a(abstract.o): relocation R_X86_64_32 against `a local symbol' can not be used when making a shared object; recompile with -fPIC\n/home/burcin/sage/sage-4.4.1.alpha2-patched/local/lib/python2.6/config/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nmake[2]: *** [libpynac.la] Error 1\nmake[2]: Leaving directory `/home/burcin/sage/sage-4.4.1.alpha2-patched/spkg/build/pynac-0.1.13/src/ginac'\n...\n```\n\nDo we have a python package that uses `-fPIC`?",
     "created_at": "2010-05-05T15:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
@@ -266,7 +263,6 @@ Both patches, for pynac and Sage, look good to me.
 
 Building the new pynac package fails with the following error:
 
-
 ```
 ...
 /usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/../../../../x86_64-pc-linux-gnu/bin/ld: /home/burcin/sage/sage-4.4.1.alpha2-patched/local/lib/python2.6/config/libpython2.6.a(abstract.o): relocation R_X86_64_32 against `a local symbol' can not be used when making a shared object; recompile with -fPIC
@@ -276,7 +272,6 @@ make[2]: *** [libpynac.la] Error 1
 make[2]: Leaving directory `/home/burcin/sage/sage-4.4.1.alpha2-patched/spkg/build/pynac-0.1.13/src/ginac'
 ...
 ```
-
 
 Do we have a python package that uses `-fPIC`?
 

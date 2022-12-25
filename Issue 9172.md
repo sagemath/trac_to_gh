@@ -3,7 +3,7 @@
 archive/issues_009172.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori\n\n\n```\n\nsage -t  \"devel/sage/sage/rings/integer.pyx\"                \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/integer.pyx\", line 1681:\n    sage: 2^float(1.5)       # python float\nExpected:\n    2.8284271247461903\nGot:\n    2.8284271247461898\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py\n\t [15.2 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9172\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\n```\n\nsage -t  \"devel/sage/sage/rings/integer.pyx\"                \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/integer.pyx\", line 1681:\n    sage: 2^float(1.5)       # python float\nExpected:\n    2.8284271247461903\nGot:\n    2.8284271247461898\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py\n\t [15.2 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9172\n\n",
     "created_at": "2010-06-07T04:52:04Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009172.json:
 Assignee: tbd
 
 CC:  jpflori
-
 
 ```
 
@@ -38,7 +37,6 @@ Got:
 For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_integer.py
 	 [15.2 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9172
 
@@ -129,7 +127,7 @@ Changing priority from major to minor.
 archive/issue_comments_085649.json:
 ```json
 {
-    "body": "This now fails with\n\n```\n2.82842712474619\n```\n\nwhich I suppose is an improvement.  Maybe we can use `abs tol`?",
+    "body": "This now fails with\n\n```\n2.82842712474619\n```\nwhich I suppose is an improvement.  Maybe we can use `abs tol`?",
     "created_at": "2013-01-15T15:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ This now fails with
 ```
 2.82842712474619
 ```
-
 which I suppose is an improvement.  Maybe we can use `abs tol`?
 
 
@@ -171,7 +168,7 @@ And the test passes for me (64bits W7 + 5.6.rc0).
 archive/issue_comments_085651.json:
 ```json
 {
-    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\nIn which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?",
+    "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\n\nIn which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?",
     "created_at": "2013-01-15T18:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
@@ -181,6 +178,7 @@ archive/issue_comments_085651.json:
 ```
 
 > And the test passes for me (64bits W7 + 5.6.rc0).
+
 In which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?
 
 
@@ -208,7 +206,7 @@ Changing status from new to needs_review.
 archive/issue_comments_085653.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> > And the test passes for me (64bits W7 + 5.6.rc0).\n> In which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?\n\nworks for me, both ways. I think we can close this one.",
+    "body": "Replying to [comment:6 kcrisman]:\n> > And the test passes for me (64bits W7 + 5.6.rc0).\n\n> In which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?\n\nworks for me, both ways. I think we can close this one.",
     "created_at": "2013-01-27T10:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
@@ -219,6 +217,7 @@ archive/issue_comments_085653.json:
 
 Replying to [comment:6 kcrisman]:
 > > And the test passes for me (64bits W7 + 5.6.rc0).
+
 > In which case it might just be a 32-bit versus 64-bit issue.  Did you try it by hand as well?
 
 works for me, both ways. I think we can close this one.

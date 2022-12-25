@@ -72,7 +72,7 @@ It looks good so far. Is there any reason we're still using Pari to compute in t
 archive/issue_comments_047850.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> It looks good so far. Is there any reason we're still using Pari to compute in the real embedding case rather than just doing it all ourself? \n\nWell,  in either case we are using pari for the agm (real and complex cases)!  In the real case one has to be a bit careful to get the real and im periods properly, but I certainly know how to do that.  So I could put that in if you thought it better (but I will not have time until Wednesday...)\n\nJohn",
+    "body": "Replying to [comment:3 robertwb]:\n> It looks good so far. Is there any reason we're still using Pari to compute in the real embedding case rather than just doing it all ourself? \n\n\nWell,  in either case we are using pari for the agm (real and complex cases)!  In the real case one has to be a bit careful to get the real and im periods properly, but I certainly know how to do that.  So I could put that in if you thought it better (but I will not have time until Wednesday...)\n\nJohn",
     "created_at": "2009-05-11T20:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_047850.json:
 
 Replying to [comment:3 robertwb]:
 > It looks good so far. Is there any reason we're still using Pari to compute in the real embedding case rather than just doing it all ourself? 
+
 
 Well,  in either case we are using pari for the agm (real and complex cases)!  In the real case one has to be a bit careful to get the real and im periods properly, but I certainly know how to do that.  So I could put that in if you thought it better (but I will not have time until Wednesday...)
 
@@ -155,7 +156,7 @@ Looks good to me. Works as advertised and well documented. Nice work.
 archive/issue_comments_047854.json:
 ```json
 {
-    "body": "Unsurprisingly this causes a bunch of numerical noise problems:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/rational_field.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/period_lattice.py # 11 doctests failed\n```\n\nSome of them are quite disturbing:\n\n```\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/schemes/elliptic_curves/period_lattice.py\", line 439:\n    sage: Ls[2]._compute_periods_complex(100)\nExpected:\n    (1.9072648860892726204877126889 - 1.3404778596244020430694806590*I,\n    -1.9072648860892726204877126889 - 1.3404778596244020430694806590*I)\nGot:\n    (-1.9072648860892727038846028695 - 1.3404778596244020695699736749*I,\n     -1.9072648860892727038846028695 + 1.3404778596244020695699736749*I)\n```\n\nI.e. notice that for the real part above **11** digits are different.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Unsurprisingly this causes a bunch of numerical noise problems:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_number_field.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py # 1 doctests failed\n        sage -t -long devel/sage/sage/rings/rational_field.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/period_lattice.py # 11 doctests failed\n```\nSome of them are quite disturbing:\n\n```\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/schemes/elliptic_curves/period_lattice.py\", line 439:\n    sage: Ls[2]._compute_periods_complex(100)\nExpected:\n    (1.9072648860892726204877126889 - 1.3404778596244020430694806590*I,\n    -1.9072648860892726204877126889 - 1.3404778596244020430694806590*I)\nGot:\n    (-1.9072648860892727038846028695 - 1.3404778596244020695699736749*I,\n     -1.9072648860892727038846028695 + 1.3404778596244020695699736749*I)\n```\nI.e. notice that for the real part above **11** digits are different.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2009-05-15T06:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
@@ -172,7 +173,6 @@ Unsurprisingly this causes a bunch of numerical noise problems:
         sage -t -long devel/sage/sage/rings/rational_field.py # 1 doctests failed
         sage -t -long devel/sage/sage/schemes/elliptic_curves/period_lattice.py # 11 doctests failed
 ```
-
 Some of them are quite disturbing:
 
 ```
@@ -185,7 +185,6 @@ Got:
     (-1.9072648860892727038846028695 - 1.3404778596244020695699736749*I,
      -1.9072648860892727038846028695 + 1.3404778596244020695699736749*I)
 ```
-
 I.e. notice that for the real part above **11** digits are different.
 
 Thoughts?

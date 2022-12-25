@@ -3,7 +3,7 @@
 archive/issues_008630.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
     "created_at": "2010-03-30T11:37:41Z",
     "labels": [
         "component: modular forms",
@@ -18,13 +18,11 @@ archive/issues_008630.json:
 ```
 Assignee: @craigcitro
 
-
 ```
 sage: chi = DirichletGroup(109, CyclotomicField(3)).0
 sage: CuspForms(chi, 2, base_ring = CyclotomicField(9))
 Cuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6
 ```
-
 
 *facepalm*
 
@@ -182,7 +180,7 @@ All doctests pass when this is applied against sage-4.3.5.
 archive/issue_comments_078123.json:
 ```json
 {
-    "body": "1. Below \"ring\" should be \"modular symbols space\":\n\n```\n \t117\t    def change_ring(self, R): \n \t118\t        r\"\"\" \n \t119\t        Return this ring with the base ring changed to the ring R. \n```\n\n\n2. Here I think the sentence should end with ::\n\n\n```\n \t419\t    A more complicated example involving both a nontrivial character, and a \n \t420\t    base field that is not minimal for that character: \n```\n\n\n\nIt's really awesome that you sphinxified a bunch of docs, in addition to fixing the bug in this ticket.",
+    "body": "1. Below \"ring\" should be \"modular symbols space\":\n\n```\n \t117\t    def change_ring(self, R): \n \t118\t        r\"\"\" \n \t119\t        Return this ring with the base ring changed to the ring R. \n```\n\n2. Here I think the sentence should end with ::\n\n```\n \t419\t    A more complicated example involving both a nontrivial character, and a \n \t420\t    base field that is not minimal for that character: \n```\n\n\nIt's really awesome that you sphinxified a bunch of docs, in addition to fixing the bug in this ticket.",
     "created_at": "2010-03-31T05:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
@@ -199,15 +197,12 @@ archive/issue_comments_078123.json:
  	119	        Return this ring with the base ring changed to the ring R. 
 ```
 
-
 2. Here I think the sentence should end with ::
-
 
 ```
  	419	    A more complicated example involving both a nontrivial character, and a 
  	420	    base field that is not minimal for that character: 
 ```
-
 
 
 It's really awesome that you sphinxified a bunch of docs, in addition to fixing the bug in this ticket.

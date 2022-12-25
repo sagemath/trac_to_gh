@@ -3,7 +3,7 @@
 archive/issues_004337.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
     "created_at": "2008-10-22T17:46:16Z",
     "labels": [
         "component: modular forms",
@@ -18,12 +18,10 @@ archive/issues_004337.json:
 ```
 Assignee: @craigcitro
 
-
 ```
 sage: ModularForms(Gamma1(11),2).hecke_matrix(2)
 boom!
 ```
-
 
 and a genuine bug:
 
@@ -34,7 +32,6 @@ RuntimeError                              Traceback (most recent call last)
 ...
 RuntimeError: maximum recursion depth exceeded in cmp
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4337
 

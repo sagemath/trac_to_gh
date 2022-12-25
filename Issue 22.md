@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/22
 archive/issue_comments_000162.json:
 ```json
 {
-    "body": "\n```\n[01:10] <william> the problem was doing something like \"sage -br\" on both a 32-bit and 64-bit machine but\n[01:10] <william> with a shared filesystem.\n[01:10] <mabshoff> Ah, that makes sense.\n[01:10] <william> I.e., when you build sage for one architecture, maybe you shouldn't be allowed to\n[01:10] <william> do \"sage -br\" or \"sage -i\" if the architectrue doesn't match.\n[01:11] <mabshoff> okay,\n[01:11] <william> or something like that.\n```\n",
+    "body": "```\n[01:10] <william> the problem was doing something like \"sage -br\" on both a 32-bit and 64-bit machine but\n[01:10] <william> with a shared filesystem.\n[01:10] <mabshoff> Ah, that makes sense.\n[01:10] <william> I.e., when you build sage for one architecture, maybe you shouldn't be allowed to\n[01:10] <william> do \"sage -br\" or \"sage -i\" if the architectrue doesn't match.\n[01:11] <mabshoff> okay,\n[01:11] <william> or something like that.\n```",
     "created_at": "2007-08-19T08:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
@@ -40,7 +40,6 @@ archive/issue_comments_000162.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 [01:10] <william> the problem was doing something like "sage -br" on both a 32-bit and 64-bit machine but
@@ -54,13 +53,12 @@ archive/issue_comments_000162.json:
 
 
 
-
 ---
 
 archive/issue_comments_000163.json:
 ```json
 {
-    "body": "\n```\n[10:01] <wstein> regarding #22 the idea is that people might do \"sage -br\" on one machine, then login to another machine that\n[10:02] <wstein> nsf mounts the same directory, and muck things up.\n[10:02] <wstein> We should cache \"uname -p\" in SAGE_ROOT, and if it changes not allow \"sage -br\" unless the user\n[10:02] <wstein> (or sage -i) or sage -upgrade, unless the user manually deletes the file.\n[10:03] <wstein> Thoughts?\n```\n",
+    "body": "```\n[10:01] <wstein> regarding #22 the idea is that people might do \"sage -br\" on one machine, then login to another machine that\n[10:02] <wstein> nsf mounts the same directory, and muck things up.\n[10:02] <wstein> We should cache \"uname -p\" in SAGE_ROOT, and if it changes not allow \"sage -br\" unless the user\n[10:02] <wstein> (or sage -i) or sage -upgrade, unless the user manually deletes the file.\n[10:03] <wstein> Thoughts?\n```",
     "created_at": "2007-09-18T17:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ archive/issue_comments_000163.json:
 }
 ```
 
-
 ```
 [10:01] <wstein> regarding #22 the idea is that people might do "sage -br" on one machine, then login to another machine that
 [10:02] <wstein> nsf mounts the same directory, and muck things up.
@@ -77,7 +74,6 @@ archive/issue_comments_000163.json:
 [10:02] <wstein> (or sage -i) or sage -upgrade, unless the user manually deletes the file.
 [10:03] <wstein> Thoughts?
 ```
-
 
 
 
@@ -357,7 +353,7 @@ Michael
 archive/issue_comments_000176.json:
 ```json
 {
-    "body": "Unfortunately the trick William suggested does not work everywhere, i.e. even on the latest stable Debian release this happens:\n\n```\nmabshoff@modular:~$ uname -p\nunknown\n```\n\nFrom **man uname** on that box:\n\n```\n       -p, --processor\n              print the processor type or \"unknown\"\n```\n\n\nSo we might want to make that part of the ticket a followup ticket.\n\nCheers,\n\nMichael",
+    "body": "Unfortunately the trick William suggested does not work everywhere, i.e. even on the latest stable Debian release this happens:\n\n```\nmabshoff@modular:~$ uname -p\nunknown\n```\nFrom **man uname** on that box:\n\n```\n       -p, --processor\n              print the processor type or \"unknown\"\n```\n\nSo we might want to make that part of the ticket a followup ticket.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-16T17:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/22",
     "type": "issue_comment",
@@ -372,14 +368,12 @@ Unfortunately the trick William suggested does not work everywhere, i.e. even on
 mabshoff@modular:~$ uname -p
 unknown
 ```
-
 From **man uname** on that box:
 
 ```
        -p, --processor
               print the processor type or "unknown"
 ```
-
 
 So we might want to make that part of the ticket a followup ticket.
 

@@ -3,7 +3,7 @@
 archive/issues_007036.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: GNUism gcc CC\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nCC was set to the Sun C compiler, CXX to the Sun C++ compiler and SAGE_FORTRAN to the Sun Fortran 95 compiler. \n\nrubiks-20070912.p9 totally ignores the setting of CC, and uses gcc which it finds in the path. This is unfortunately not an uncommon problem. \n\n\n```\nrubiks-20070912.p9/src/dik/globals.h\nrubiks-20070912.p9/src/dik/permcube.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nBuilding Rubiks cube solvers\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/rubiks-20070912.p9/src'\nfor dir in dietz/cu2 dietz/mcube dietz/solver dik reid; do \\\n        (cd ${dir} && make all)\\\ndone\nmake[3]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/rubiks-20070912.p9/src/dietz/cu2'\ng++ -O2 -c cu2.cpp\ng++ -O2 -c main.cpp\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7036\n\n",
+    "body": "Assignee: tbd\n\nKeywords: GNUism gcc CC\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nCC was set to the Sun C compiler, CXX to the Sun C++ compiler and SAGE_FORTRAN to the Sun Fortran 95 compiler. \n\nrubiks-20070912.p9 totally ignores the setting of CC, and uses gcc which it finds in the path. This is unfortunately not an uncommon problem. \n\n```\nrubiks-20070912.p9/src/dik/globals.h\nrubiks-20070912.p9/src/dik/permcube.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nBuilding Rubiks cube solvers\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/rubiks-20070912.p9/src'\nfor dir in dietz/cu2 dietz/mcube dietz/solver dik reid; do \\\n        (cd ${dir} && make all)\\\ndone\nmake[3]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/rubiks-20070912.p9/src/dietz/cu2'\ng++ -O2 -c cu2.cpp\ng++ -O2 -c main.cpp\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7036\n\n",
     "created_at": "2009-09-27T15:33:55Z",
     "labels": [
         "component: build",
@@ -31,7 +31,6 @@ CC was set to the Sun C compiler, CXX to the Sun C++ compiler and SAGE_FORTRAN t
 
 rubiks-20070912.p9 totally ignores the setting of CC, and uses gcc which it finds in the path. This is unfortunately not an uncommon problem. 
 
-
 ```
 rubiks-20070912.p9/src/dik/globals.h
 rubiks-20070912.p9/src/dik/permcube.c
@@ -56,7 +55,6 @@ g++ -O2 -c cu2.cpp
 g++ -O2 -c main.cpp
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7036
 

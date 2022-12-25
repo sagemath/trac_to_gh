@@ -107,7 +107,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075935.json:
 ```json
 {
-    "body": "Successfully installed the new spkg and patch on 4.3.4.alpha0 on a 32-bit ubuntu machine.  Tested all library (-long) and found a few failures which should be easy to fix (especially the last one!):\n\n```\nsage -t -long sage/functions/transcendental.py\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/functions/transcendental.py\", line 78:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.048900510708061118, 0.003779352409848905, 0.00036008245216265542, 3.7665622843921715e-05] \nGot:\n    [0.048900510708061118, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05]\n```\n\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/functions/special.py\", line 1456:\n    sage: exp_int(6)\nExpected:\n    doctest:...: DeprecationWarning: The method expint() is deprecated. Use -Ei(-x) or exponential_integral_1(x) as needed instead.\n    0.000360082452162655\nGot:\n    doctest:1: DeprecationWarning: The method expint() is deprecated. Use -Ei(-x) or exponential_integral_1(x) as needed instead.\n    0.000360082452162659\n```\n\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/libs/pari/gen.pyx\", line 7848:\n    sage: E.ellwp(1, flag=2)\nExpected:\n    [14.2992028590818 + 1.140149682 E-18*I, 50.0619300880073 + 1.040834085 E-17*I] \nGot:\n    [14.2992028590818 + 0.E-18*I, 50.0619300880073 - 3.469446952 E-18*I]\n```\n\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/interfaces/gp.py\", line 476:\n    sage: gp.version()\nExpected:\n    ((2, 3, 3), 'GP/PARI CALCULATOR Version 2.3.3 (released)')\nGot:\n    ((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')\n```\n",
+    "body": "Successfully installed the new spkg and patch on 4.3.4.alpha0 on a 32-bit ubuntu machine.  Tested all library (-long) and found a few failures which should be easy to fix (especially the last one!):\n\n```\nsage -t -long sage/functions/transcendental.py\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/functions/transcendental.py\", line 78:\n    sage: w = exponential_integral_1(2,4); w\nExpected:\n    [0.048900510708061118, 0.003779352409848905, 0.00036008245216265542, 3.7665622843921715e-05] \nGot:\n    [0.048900510708061118, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05]\n```\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/functions/special.py\", line 1456:\n    sage: exp_int(6)\nExpected:\n    doctest:...: DeprecationWarning: The method expint() is deprecated. Use -Ei(-x) or exponential_integral_1(x) as needed instead.\n    0.000360082452162655\nGot:\n    doctest:1: DeprecationWarning: The method expint() is deprecated. Use -Ei(-x) or exponential_integral_1(x) as needed instead.\n    0.000360082452162659\n```\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/libs/pari/gen.pyx\", line 7848:\n    sage: E.ellwp(1, flag=2)\nExpected:\n    [14.2992028590818 + 1.140149682 E-18*I, 50.0619300880073 + 1.040834085 E-17*I] \nGot:\n    [14.2992028590818 + 0.E-18*I, 50.0619300880073 - 3.469446952 E-18*I]\n```\n\n```\n**********************************************************************\nFile \"/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/interfaces/gp.py\", line 476:\n    sage: gp.version()\nExpected:\n    ((2, 3, 3), 'GP/PARI CALCULATOR Version 2.3.3 (released)')\nGot:\n    ((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')\n```",
     "created_at": "2010-03-06T13:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ Got:
     [0.048900510708061118, 0.0037793524098489067, 0.00036008245216265873, 3.7665622843924751e-05]
 ```
 
-
 ```
 **********************************************************************
 File "/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/functions/special.py", line 1456:
@@ -142,7 +141,6 @@ Got:
     0.000360082452162659
 ```
 
-
 ```
 **********************************************************************
 File "/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/libs/pari/gen.pyx", line 7848:
@@ -153,7 +151,6 @@ Got:
     [14.2992028590818 + 0.E-18*I, 50.0619300880073 - 3.469446952 E-18*I]
 ```
 
-
 ```
 **********************************************************************
 File "/home/john/sage-4.3.4.alpha0/devel/sage-pari/sage/interfaces/gp.py", line 476:
@@ -163,7 +160,6 @@ Expected:
 Got:
     ((2, 3, 5), 'GP/PARI CALCULATOR Version 2.3.5 (released)')
 ```
-
 
 
 
@@ -232,7 +228,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075939.json:
 ```json
 {
-    "body": "Replying to [comment:4 davidloeffler]:\n> I have added a second patch which changes the doctests mentioned above. They should now pass on both 64-bit and 32-bit (the latter using the output John got above). I've also put in a doctest to confirm that #8415 is fixed. \n\nExcellent\n\n> \n> John, can you double-check that it now works on 32-bit? I've marked it as \"needs review\" for now, but if that passes, I think we can give it a positive review (and mark #8415 as fixed as well). Sadly, #7736 is still broken.\n\nOK, testing now....\n\n> \n> David",
+    "body": "Replying to [comment:4 davidloeffler]:\n> I have added a second patch which changes the doctests mentioned above. They should now pass on both 64-bit and 32-bit (the latter using the output John got above). I've also put in a doctest to confirm that #8415 is fixed. \n\n\nExcellent\n\n> \n> John, can you double-check that it now works on 32-bit? I've marked it as \"needs review\" for now, but if that passes, I think we can give it a positive review (and mark #8415 as fixed as well). Sadly, #7736 is still broken.\n\n\nOK, testing now....\n\n> \n> David",
     "created_at": "2010-03-11T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
@@ -244,10 +240,12 @@ archive/issue_comments_075939.json:
 Replying to [comment:4 davidloeffler]:
 > I have added a second patch which changes the doctests mentioned above. They should now pass on both 64-bit and 32-bit (the latter using the output John got above). I've also put in a doctest to confirm that #8415 is fixed. 
 
+
 Excellent
 
 > 
 > John, can you double-check that it now works on 32-bit? I've marked it as "needs review" for now, but if that passes, I think we can give it a positive review (and mark #8415 as fixed as well). Sadly, #7736 is still broken.
+
 
 OK, testing now....
 

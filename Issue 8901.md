@@ -3,7 +3,7 @@
 archive/issues_008901.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @sdenton4\n\nKeywords: integer, vector\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @sdenton4\n\nKeywords: integer, vector\n\nIntegerVectors() seems to only include vectors with positive integer entries:\n\n```\nsage: [-1,4] in IntegerVectors()\nFalse\n```\n\nCan the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?\n\nThanks,\nEva\n\nIssue created by migration from https://trac.sagemath.org/ticket/8901\n\n",
     "created_at": "2010-05-06T01:14:18Z",
     "labels": [
         "component: combinatorics",
@@ -29,7 +29,6 @@ IntegerVectors() seems to only include vectors with positive integer entries:
 sage: [-1,4] in IntegerVectors()
 False
 ```
-
 
 Can the class be changed to include vectors with some/all negative integer entries as well, or create a new, larger class for all integer vectors (since I can imagine that having a class for positive integer vectors would be useful in some applications)?
 
@@ -208,7 +207,7 @@ archive/issue_events_021721.json:
 archive/issue_comments_081797.json:
 ```json
 {
-    "body": "The formatting of the documentation should be like\n\n```\nEntries are non-negative::\n```\n\nwith the double colon at the end.",
+    "body": "The formatting of the documentation should be like\n\n```\nEntries are non-negative::\n```\nwith the double colon at the end.",
     "created_at": "2012-05-11T11:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
@@ -222,7 +221,6 @@ The formatting of the documentation should be like
 ```
 Entries are non-negative::
 ```
-
 with the double colon at the end.
 
 
@@ -322,7 +320,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081803.json:
 ```json
 {
-    "body": "There is a further problem with the documentation formatting: the list of AUTHORS should be indented like\n\n```\nAUTHORS:\n\n * bla bla bla\n * bla bla bla\n   bla bla bla\n```\n\nas opposed to\n\n```\nAUTHORS:\n\n * bla bla bla\n * bla bla bla\n bla bla bla\n```\n",
+    "body": "There is a further problem with the documentation formatting: the list of AUTHORS should be indented like\n\n```\nAUTHORS:\n\n * bla bla bla\n * bla bla bla\n   bla bla bla\n```\nas opposed to\n\n```\nAUTHORS:\n\n * bla bla bla\n * bla bla bla\n bla bla bla\n```",
     "created_at": "2012-05-18T14:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8901",
     "type": "issue_comment",
@@ -340,7 +338,6 @@ AUTHORS:
  * bla bla bla
    bla bla bla
 ```
-
 as opposed to
 
 ```
@@ -350,7 +347,6 @@ AUTHORS:
  * bla bla bla
  bla bla bla
 ```
-
 
 
 

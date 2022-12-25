@@ -3,7 +3,7 @@
 archive/issues_007984.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: QQbar(2) == GF(7)(2)\nBOOM\n```\n\nShould be False. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7984\n\n",
     "created_at": "2010-01-18T20:29:47Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_007984.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: QQbar(2) == GF(7)(2)
 BOOM
 ```
-
 
 Should be False. 
 
@@ -128,7 +126,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069614.json:
 ```json
 {
-    "body": "This one looks good to me.  However, when testing #4621 I noticed that this:\n\n```\nF.<a>= NumberField(x^2-2)\nRR(a)\n```\n\ncauses an infinite recursion, which is not good, but not caused by this patch.\n\nI am giving this a positive review, and letting #4621 be sorted out after, also the issue above.  Perhaps rwb would like to open a ticket for that unless it is already covered by one?",
+    "body": "This one looks good to me.  However, when testing #4621 I noticed that this:\n\n```\nF.<a>= NumberField(x^2-2)\nRR(a)\n```\ncauses an infinite recursion, which is not good, but not caused by this patch.\n\nI am giving this a positive review, and letting #4621 be sorted out after, also the issue above.  Perhaps rwb would like to open a ticket for that unless it is already covered by one?",
     "created_at": "2010-02-21T16:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7984",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ This one looks good to me.  However, when testing #4621 I noticed that this:
 F.<a>= NumberField(x^2-2)
 RR(a)
 ```
-
 causes an infinite recursion, which is not good, but not caused by this patch.
 
 I am giving this a positive review, and letting #4621 be sorted out after, also the issue above.  Perhaps rwb would like to open a ticket for that unless it is already covered by one?

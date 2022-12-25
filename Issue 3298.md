@@ -3,7 +3,7 @@
 archive/issues_003298.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @robertwb @burcin\n\nKeywords: polybori, cython\n\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.0/devel/sage-main -opbori.pyx\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:40:56: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:41:59: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:200:10: Function signature does not match previous declaration\nFinished updating Cython code (time = 2.520616 seconds)\n```\n\n\nI couldn't figure out what is wrong. Maybe a false positive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3298\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb @burcin\n\nKeywords: polybori, cython\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.0/devel/sage-main -opbori.pyx\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:40:56: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:41:59: Function signature does not match previous declaration\nwarning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:200:10: Function signature does not match previous declaration\nFinished updating Cython code (time = 2.520616 seconds)\n```\n\nI couldn't figure out what is wrong. Maybe a false positive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3298\n\n",
     "created_at": "2008-05-25T13:41:31Z",
     "labels": [
         "component: misc",
@@ -22,7 +22,6 @@ CC:  @robertwb @burcin
 
 Keywords: polybori, cython
 
-
 ```
 python2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.0/devel/sage-main -opbori.pyx
 warning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:40:56: Function signature does not match previous declaration
@@ -30,7 +29,6 @@ warning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/po
 warning: /usr/local/sage-3.0/devel/sage-main/sage/rings/polynomial/../../libs/polybori/decl.pxi:200:10: Function signature does not match previous declaration
 Finished updating Cython code (time = 2.520616 seconds)
 ```
-
 
 I couldn't figure out what is wrong. Maybe a false positive?
 

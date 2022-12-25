@@ -3,7 +3,7 @@
 archive/issues_002913.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nToday when I was using the notebook I got this:\n\nhttp://skitch.com/yqiang/jqwb/notebook-bug\n\nIs this a known bug? It happened when I deleted a cell while it was\nstill running and trying to produce output.\n\nCheers,\nYi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2913\n\n",
+    "body": "Assignee: boothby\n\n```\nToday when I was using the notebook I got this:\n\nhttp://skitch.com/yqiang/jqwb/notebook-bug\n\nIs this a known bug? It happened when I deleted a cell while it was\nstill running and trying to produce output.\n\nCheers,\nYi\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2913\n\n",
     "created_at": "2008-04-14T03:27:27Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_002913.json:
 ```
 Assignee: boothby
 
-
 ```
 Today when I was using the notebook I got this:
 
@@ -30,7 +29,6 @@ still running and trying to produce output.
 Cheers,
 Yi
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2913
 

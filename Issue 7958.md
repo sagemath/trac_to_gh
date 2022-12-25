@@ -3,7 +3,7 @@
 archive/issues_007958.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
+    "body": "Assignee: @aghitza\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
     "created_at": "2010-01-16T19:28:41Z",
     "labels": [
         "component: algebra",
@@ -19,14 +19,12 @@ archive/issues_007958.json:
 ```
 Assignee: @aghitza
 
-
 ```
 sage: F = Frac(PolynomialRing(ZZ, 't'))
 sage: F(1/2)
 ...
 TypeError: no conversion of this rational to integer
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7958
 
@@ -111,7 +109,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069324.json:
 ```json
 {
-    "body": "Your fix does work great for QQ, but this is actually a more general issue than just QQ:\n\n\n```\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^2-2)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = FractionField(S)\nsage: F(1)/F(a)\n1/a\nsage: F(1/a)\n*boom*\n```\n\n\nAnd a minor issue: I think the comment about QQ should be a code comment rather than in the doctest, since it might now confuse users (who might think they need to handle QQ specially themselves).",
+    "body": "Your fix does work great for QQ, but this is actually a more general issue than just QQ:\n\n```\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^2-2)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = FractionField(S)\nsage: F(1)/F(a)\n1/a\nsage: F(1/a)\n*boom*\n```\n\nAnd a minor issue: I think the comment about QQ should be a code comment rather than in the doctest, since it might now confuse users (who might think they need to handle QQ specially themselves).",
     "created_at": "2010-01-17T17:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ archive/issue_comments_069324.json:
 ```
 
 Your fix does work great for QQ, but this is actually a more general issue than just QQ:
-
 
 ```
 sage: _.<x> = ZZ[]
@@ -134,7 +131,6 @@ sage: F(1)/F(a)
 sage: F(1/a)
 *boom*
 ```
-
 
 And a minor issue: I think the comment about QQ should be a code comment rather than in the doctest, since it might now confuse users (who might think they need to handle QQ specially themselves).
 
@@ -181,7 +177,7 @@ Attachment [trac7958_c.patch](tarball://root/attachments/some-uuid/ticket7958/tr
 archive/issue_comments_069327.json:
 ```json
 {
-    "body": "To see that this issue is now resolved (for rationals and number fields), consider\n\n```\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n```\n\n\nBut the last three lines highlight a bug in the printing routines.",
+    "body": "To see that this issue is now resolved (for rationals and number fields), consider\n\n```\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n```\n\nBut the last three lines highlight a bug in the printing routines.",
     "created_at": "2010-01-17T21:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -205,7 +201,6 @@ a^4 - 3*a^3 + 2424*a^2 + 2
 sage: F(1/a).denominator()
 232
 ```
-
 
 But the last three lines highlight a bug in the printing routines.
 
@@ -234,7 +229,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069329.json:
 ```json
 {
-    "body": "Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by @mwhansen created at 2010-01-20 04:16:42\n\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```\n",
+    "body": "Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by @mwhansen created at 2010-01-20 04:16:42\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```",
     "created_at": "2010-01-20T04:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -244,7 +239,6 @@ archive/issue_comments_069329.json:
 ```
 
 Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by @mwhansen created at 2010-01-20 04:16:42
-
 
 ```
 
@@ -261,7 +255,6 @@ sage: F(1/a).denominator()
 232
 
 ```
-
 
 
 

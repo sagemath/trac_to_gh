@@ -51,7 +51,7 @@ archive/issue_events_022939.json:
 archive/issue_comments_087513.json:
 ```json
 {
-    "body": "I think we can resolve this as \"fixed.\"  For 4.4.4, 4.5.alpha0, and 4.5.alpha1, I get\n\n```sh\n$ cd SAGE_ROOT\n$ grep -i ghmm spkg/install spkg/standard/deps\n$ find | grep -i ghmm\n$\n```\n",
+    "body": "I think we can resolve this as \"fixed.\"  For 4.4.4, 4.5.alpha0, and 4.5.alpha1, I get\n\n```sh\n$ cd SAGE_ROOT\n$ grep -i ghmm spkg/install spkg/standard/deps\n$ find | grep -i ghmm\n$\n```",
     "created_at": "2010-06-29T21:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9307",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ $ grep -i ghmm spkg/install spkg/standard/deps
 $ find | grep -i ghmm
 $
 ```
-
 
 
 

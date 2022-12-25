@@ -162,7 +162,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070094.json:
 ```json
 {
-    "body": "Merged [trac_8037_sagetex_french_tutorial.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch).\n\n\n\nMarc, Dan: Avoid putting the following line at the top of your patch file:\n\n```\nexporting patch:\n```\n\nIt can result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.",
+    "body": "Merged [trac_8037_sagetex_french_tutorial.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch).\n\n\n\nMarc, Dan: Avoid putting the following line at the top of your patch file:\n\n```\nexporting patch:\n```\nIt can result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.",
     "created_at": "2010-03-02T22:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
@@ -180,7 +180,6 @@ Marc, Dan: Avoid putting the following line at the top of your patch file:
 ```
 exporting patch:
 ```
-
 It can result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.
 
 

@@ -200,7 +200,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069434.json:
 ```json
 {
-    "body": "Attachment [13639_03.patch](tarball://root/attachments/some-uuid/ticket7973/13639_03.patch) by mvngu created at 2010-01-18 08:17:05\n\nYou're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush\nadding 13639.patch to series file\napplying 13639.patch\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 13639.patch\n```\n\nLooking at the attachment [13639.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.patch) more closely, I see that the three patches only touch the file\n\n```\ndoc/en/developer/producing_patches.rst\n```\n\nI have split the three different patches into three different files and attached them to this ticket for reference. Applying any one of them individually is OK. But if I then first apply one and then any of the other two, I'd get hunk failures. So of all the changes in your original attachment, which set of changes did you intend to submit for review? Also, one minor nit-pick: please reference the ticket number in your commit message. The general format of a commit message should be:\n\n```\ntrac xxxx: <your-commit-message-here>\n```\n\nwhere \"xxxx\" is the ticket number.",
+    "body": "Attachment [13639_03.patch](tarball://root/attachments/some-uuid/ticket7973/13639_03.patch) by mvngu created at 2010-01-18 08:17:05\n\nYou're concatenating three different patches into one file. That would result in failures when applying the resulting one file (with the three patches):\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7973/13639.patch && hg qpush\nadding 13639.patch to series file\napplying 13639.patch\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatching file doc/en/developer/producing_patches.rst\nHunk #1 FAILED at 21\nHunk #2 FAILED at 58\n2 out of 2 hunks FAILED -- saving rejects to file doc/en/developer/producing_patches.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 13639.patch\n```\nLooking at the attachment [13639.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.patch) more closely, I see that the three patches only touch the file\n\n```\ndoc/en/developer/producing_patches.rst\n```\nI have split the three different patches into three different files and attached them to this ticket for reference. Applying any one of them individually is OK. But if I then first apply one and then any of the other two, I'd get hunk failures. So of all the changes in your original attachment, which set of changes did you intend to submit for review? Also, one minor nit-pick: please reference the ticket number in your commit message. The general format of a commit message should be:\n\n```\ntrac xxxx: <your-commit-message-here>\n```\nwhere \"xxxx\" is the ticket number.",
     "created_at": "2010-01-18T08:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -229,19 +229,16 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh 13639.patch
 ```
-
 Looking at the attachment [13639.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.patch) more closely, I see that the three patches only touch the file
 
 ```
 doc/en/developer/producing_patches.rst
 ```
-
 I have split the three different patches into three different files and attached them to this ticket for reference. Applying any one of them individually is OK. But if I then first apply one and then any of the other two, I'd get hunk failures. So of all the changes in your original attachment, which set of changes did you intend to submit for review? Also, one minor nit-pick: please reference the ticket number in your commit message. The general format of a commit message should be:
 
 ```
 trac xxxx: <your-commit-message-here>
 ```
-
 where "xxxx" is the ticket number.
 
 
@@ -327,7 +324,7 @@ I'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sag
 archive/issue_comments_069439.json:
 ```json
 {
-    "body": "Now wait, what's wrong with \"Cardinal Fang\"?  According to [the Python documentation](http://docs.python.org/tutorial/appetite.html), \n\n```\nMaking references to Monty Python skits in documentation is not only allowed, it is encouraged!\n```\n\nSince Sage is written in Python, \"Cardinal Fang\" seems completely appropriate. :)",
+    "body": "Now wait, what's wrong with \"Cardinal Fang\"?  According to [the Python documentation](http://docs.python.org/tutorial/appetite.html), \n\n```\nMaking references to Monty Python skits in documentation is not only allowed, it is encouraged!\n```\nSince Sage is written in Python, \"Cardinal Fang\" seems completely appropriate. :)",
     "created_at": "2010-01-18T15:44:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -341,7 +338,6 @@ Now wait, what's wrong with "Cardinal Fang"?  According to [the Python documenta
 ```
 Making references to Monty Python skits in documentation is not only allowed, it is encouraged!
 ```
-
 Since Sage is written in Python, "Cardinal Fang" seems completely appropriate. :)
 
 
@@ -351,7 +347,7 @@ Since Sage is written in Python, "Cardinal Fang" seems completely appropriate. :
 archive/issue_comments_069440.json:
 ```json
 {
-    "body": "Replying to [comment:6 jhpalmieri]:\n> Now wait, what's wrong with \"Cardinal Fang\"?  According to [the Python documentation](http://docs.python.org/tutorial/appetite.html), \n> {{{\n> Making references to Monty Python skits in documentation is not only allowed, it is encouraged!\n> }}}\n> Since Sage is written in Python, \"Cardinal Fang\" seems completely appropriate. :)\n> \n\nThat change was a direct request from wstein, who is, apparently, the anti-Python(Monty). :-)",
+    "body": "Replying to [comment:6 jhpalmieri]:\n> Now wait, what's wrong with \"Cardinal Fang\"?  According to [the Python documentation](http://docs.python.org/tutorial/appetite.html), \n> \n> ```\n> Making references to Monty Python skits in documentation is not only allowed, it is encouraged!\n> ```\n> Since Sage is written in Python, \"Cardinal Fang\" seems completely appropriate. :)\n> \n\n\nThat change was a direct request from wstein, who is, apparently, the anti-Python(Monty). :-)",
     "created_at": "2010-01-18T20:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -362,11 +358,13 @@ archive/issue_comments_069440.json:
 
 Replying to [comment:6 jhpalmieri]:
 > Now wait, what's wrong with "Cardinal Fang"?  According to [the Python documentation](http://docs.python.org/tutorial/appetite.html), 
-> {{{
+> 
+> ```
 > Making references to Monty Python skits in documentation is not only allowed, it is encouraged!
-> }}}
+> ```
 > Since Sage is written in Python, "Cardinal Fang" seems completely appropriate. :)
 > 
+
 
 That change was a direct request from wstein, who is, apparently, the anti-Python(Monty). :-)
 
@@ -377,7 +375,7 @@ That change was a direct request from wstein, who is, apparently, the anti-Pytho
 archive/issue_comments_069441.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n> I'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.\n\nAll those reviewer changes are spot on.  Thanks!  It's good to go for me.",
+    "body": "Replying to [comment:5 mvngu]:\n> I'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.\n\n\nAll those reviewer changes are spot on.  Thanks!  It's good to go for me.",
     "created_at": "2010-01-18T20:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7973",
     "type": "issue_comment",
@@ -388,6 +386,7 @@ archive/issue_comments_069441.json:
 
 Replying to [comment:5 mvngu]:
 > I'm OK with the proposed changes in [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch). I have attached a reviewer patch [trac_7973-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/trac_7973-reviewer.patch), which fixes some typos. The attachment [13639.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7973/13639.2.patch) contains some tab characters, which don't look good when you view the HTML version of the Developer's Guide, i.e. only the corresponding section in the Developer's Guide. Try to avoid tabs as much as possible in patches. If you're OK with the reviewer patch, then the whole ticket gets a positive review.
+
 
 All those reviewer changes are spot on.  Thanks!  It's good to go for me.
 

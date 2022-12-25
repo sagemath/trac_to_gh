@@ -3,7 +3,7 @@
 archive/issues_006184.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nJust like the title says; the options noted do not have any effect on 3D plots in Sage 4.0.rc0.\n\nFor example, the command\n\n```\nplot3d(lambda x,y: exp(x+y*I).real(), (-2, 2.4), (-3, 3), mesh=True)\n```\n\nShould display a 3D plot with mesh lines drawn in. However, the result does not have mesh lines.\n\n(This bug was discussed at [this forum thread](http://groups.google.com/group/sage-devel/browse_thread/thread/ac3ae56aa896826f).)\n\nI will attach a patch that fixes the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6184\n\n",
+    "body": "Assignee: tbd\n\nJust like the title says; the options noted do not have any effect on 3D plots in Sage 4.0.rc0.\n\nFor example, the command\n\n```\nplot3d(lambda x,y: exp(x+y*I).real(), (-2, 2.4), (-3, 3), mesh=True)\n```\nShould display a 3D plot with mesh lines drawn in. However, the result does not have mesh lines.\n\n(This bug was discussed at [this forum thread](http://groups.google.com/group/sage-devel/browse_thread/thread/ac3ae56aa896826f).)\n\nI will attach a patch that fixes the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6184\n\n",
     "created_at": "2009-06-02T08:30:53Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ For example, the command
 ```
 plot3d(lambda x,y: exp(x+y*I).real(), (-2, 2.4), (-3, 3), mesh=True)
 ```
-
 Should display a 3D plot with mesh lines drawn in. However, the result does not have mesh lines.
 
 (This bug was discussed at [this forum thread](http://groups.google.com/group/sage-devel/browse_thread/thread/ac3ae56aa896826f).)

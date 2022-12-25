@@ -3,7 +3,7 @@
 archive/issues_002896.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @haraldschilly\n\nKeywords: utf-8\n\nLars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):\n\nPlease note that before I published the worksheet the \u00dc in the cells\nwere a \u00dc, after publishing, the \"\u00dc\" look like \"\ufffd\" in the published document.\n\nMy workflow was\n* New worksheet\n* Edit, and I inserted everything in the Edit-Field.\n* Use, and evaluate the first two cells.\n* Then I published.\n\n\n```\nprint \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\n\n```\nprint \"Ue\" #print \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2896\n\n",
+    "body": "Assignee: boothby\n\nCC:  @haraldschilly\n\nKeywords: utf-8\n\nLars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):\n\nPlease note that before I published the worksheet the \u00dc in the cells\nwere a \u00dc, after publishing, the \"\u00dc\" look like \"\ufffd\" in the published document.\n\nMy workflow was\n* New worksheet\n* Edit, and I inserted everything in the Edit-Field.\n* Use, and evaluate the first two cells.\n* Then I published.\n\n```\nprint \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n```\nprint \"Ue\" #print \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2896\n\n",
     "created_at": "2008-04-12T12:05:51Z",
     "labels": [
         "component: notebook",
@@ -33,7 +33,6 @@ My workflow was
 * Use, and evaluate the first two cells.
 * Then I published.
 
-
 ```
 print "Ü"
 ///
@@ -43,8 +42,6 @@ UnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:
 unexpected end of data
 ```
 
-
-
 ```
 print "Ue" #print "Ü"
 ///
@@ -53,7 +50,6 @@ Traceback (most recent call last):
 UnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:
 unexpected end of data
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2896
@@ -85,7 +81,7 @@ Changing keywords from "utf-8" to "utf-8, notebook, encoding".
 archive/issue_comments_019891.json:
 ```json
 {
-    "body": "Hello,\n\nwhat happened when I click on publish, is only a symptom. My problem is really simple:\n**I cannot use unicode inside a notebook cell.**\n\nPlease create a new empty worksheet and enter the next examples in different cells, to see the problem:\n\n```\n# this is what I want to do, but I only get exceptions\nprint '\u00dc'\n# also exceptions\nprint u'\u00dc'\nprint ur'\u00dc'\n\n# This works but it is ugly. If I want to convince some students to use sage with this, they will laugh\nprint u'\\xdc'   \n# \u00dc \n\n# An this is interesting because the same question mark occurs when I hit for example publish:\nprint '\\xdc'     \n# \ufffd  \n```\n\n\nWith best regards,\n\nLars Fischer",
+    "body": "Hello,\n\nwhat happened when I click on publish, is only a symptom. My problem is really simple:\n**I cannot use unicode inside a notebook cell.**\n\nPlease create a new empty worksheet and enter the next examples in different cells, to see the problem:\n\n```\n# this is what I want to do, but I only get exceptions\nprint '\u00dc'\n# also exceptions\nprint u'\u00dc'\nprint ur'\u00dc'\n\n# This works but it is ugly. If I want to convince some students to use sage with this, they will laugh\nprint u'\\xdc'   \n# \u00dc \n\n# An this is interesting because the same question mark occurs when I hit for example publish:\nprint '\\xdc'     \n# \ufffd  \n```\n\nWith best regards,\n\nLars Fischer",
     "created_at": "2008-04-12T12:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
@@ -116,7 +112,6 @@ print u'\xdc'
 print '\xdc'     
 # �  
 ```
-
 
 With best regards,
 

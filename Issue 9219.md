@@ -177,7 +177,7 @@ Resolution: fixed
 archive/issue_comments_086253.json:
 ```json
 {
-    "body": "Docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\nI'm closing this ticket, but I've opened #9561 as a blocker for 4.5.2.",
+    "body": "Docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\nI'm closing this ticket, but I've opened #9561 as a blocker for 4.5.2.",
     "created_at": "2010-07-21T10:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9219",
     "type": "issue_comment",
@@ -194,5 +194,4 @@ docstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/
 docstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.
 docstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.
 ```
-
 I'm closing this ticket, but I've opened #9561 as a blocker for 4.5.2.

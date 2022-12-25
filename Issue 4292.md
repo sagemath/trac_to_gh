@@ -3,7 +3,7 @@
 archive/issues_004292.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you do\n\n```\n   graphics_array([[plot(sin)]]).show(axes=False)\n```\n\nthe axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. \n\nFortunately, it's a trivial 1-line fix, which I've attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4292\n\n",
+    "body": "Assignee: @williamstein\n\nIf you do\n\n```\n   graphics_array([[plot(sin)]]).show(axes=False)\n```\nthe axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. \n\nFortunately, it's a trivial 1-line fix, which I've attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4292\n\n",
     "created_at": "2008-10-15T11:11:36Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ If you do
 ```
    graphics_array([[plot(sin)]]).show(axes=False)
 ```
-
 the axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. 
 
 Fortunately, it's a trivial 1-line fix, which I've attached.
@@ -102,7 +101,7 @@ archive/issue_events_009689.json:
 archive/issue_comments_031354.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> I checked the source and the patch still applies, but it seems that the doctest posted does not test that particular code path, so I would suggest that the patch should be applied anyway.\n> \n> Cheers,\n> \n> Michael\n\nOk, after testing it with the command line version it becomes clear that the bug remains unfixed and that William's fix is the correct one. In the end I learned something about the plotting code :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 mabshoff]:\n> I checked the source and the patch still applies, but it seems that the doctest posted does not test that particular code path, so I would suggest that the patch should be applied anyway.\n> \n> Cheers,\n> \n> Michael\n\n\nOk, after testing it with the command line version it becomes clear that the bug remains unfixed and that William's fix is the correct one. In the end I learned something about the plotting code :)\n\nCheers,\n\nMichael",
     "created_at": "2008-10-15T16:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4292",
     "type": "issue_comment",
@@ -117,6 +116,7 @@ Replying to [comment:2 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Ok, after testing it with the command line version it becomes clear that the bug remains unfixed and that William's fix is the correct one. In the end I learned something about the plotting code :)
 

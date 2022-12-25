@@ -203,7 +203,7 @@ Should I review your patches or does someone other than the 2 of us review both 
 archive/issue_comments_049057.json:
 ```json
 {
-    "body": "Nick,\n\nI have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:\n\n\n```\nsage: hg_sage.apply(\"trac_6162-plotting.patch\")\ncd \"/home/cswiercz/sage/devel/sage\" && hg status\ncd \"/home/cswiercz/sage/devel/sage\" && hg status\ncd \"/home/cswiercz/sage/devel/sage\" && hg import   \"/home/cswiercz/trac_6162-plotting.patch\"\napplying /home/cswiercz/trac_6162-plotting.patch\npatching file sage/gsl/dft.py\nHunk #2 FAILED at 52\nHunk #3 FAILED at 156\n2 out of 4 hunks FAILED -- saving rejects to file sage/gsl/dft.py.rej\nabort: patch failed to apply\n```\n\n\nThis was done on a local sage.math install. I wonder if there were changes to `sage/gsl/dft.py` between the two versions...\n\nI don't have a 4.0.rc1 install anywhere so I'll have to get that up and running in order to review.",
+    "body": "Nick,\n\nI have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:\n\n```\nsage: hg_sage.apply(\"trac_6162-plotting.patch\")\ncd \"/home/cswiercz/sage/devel/sage\" && hg status\ncd \"/home/cswiercz/sage/devel/sage\" && hg status\ncd \"/home/cswiercz/sage/devel/sage\" && hg import   \"/home/cswiercz/trac_6162-plotting.patch\"\napplying /home/cswiercz/trac_6162-plotting.patch\npatching file sage/gsl/dft.py\nHunk #2 FAILED at 52\nHunk #3 FAILED at 156\n2 out of 4 hunks FAILED -- saving rejects to file sage/gsl/dft.py.rej\nabort: patch failed to apply\n```\n\nThis was done on a local sage.math install. I wonder if there were changes to `sage/gsl/dft.py` between the two versions...\n\nI don't have a 4.0.rc1 install anywhere so I'll have to get that up and running in order to review.",
     "created_at": "2009-06-23T16:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -215,7 +215,6 @@ archive/issue_comments_049057.json:
 Nick,
 
 I have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:
-
 
 ```
 sage: hg_sage.apply("trac_6162-plotting.patch")
@@ -230,7 +229,6 @@ Hunk #3 FAILED at 156
 abort: patch failed to apply
 ```
 
-
 This was done on a local sage.math install. I wonder if there were changes to `sage/gsl/dft.py` between the two versions...
 
 I don't have a 4.0.rc1 install anywhere so I'll have to get that up and running in order to review.
@@ -242,7 +240,7 @@ I don't have a 4.0.rc1 install anywhere so I'll have to get that up and running 
 archive/issue_comments_049058.json:
 ```json
 {
-    "body": "Replying to [comment:7 cswiercz]:\n> Nick,\n> \n> I have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:\n\nSorry, I wasn't clear.  Apply *only* `-histogram.patch`.",
+    "body": "Replying to [comment:7 cswiercz]:\n> Nick,\n> \n> I have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:\n\n\nSorry, I wasn't clear.  Apply *only* `-histogram.patch`.",
     "created_at": "2009-06-23T16:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -256,6 +254,7 @@ Replying to [comment:7 cswiercz]:
 > 
 > I have very bad luck with your patches. :( Is `trac_6162-plotting.patch` also based on 4.0.rc1? I tried applying it to 4.0.2 after successfully applying `trac_6162-histogram.patch` and I received the following error:
 
+
 Sorry, I wasn't clear.  Apply *only* `-histogram.patch`.
 
 
@@ -265,7 +264,7 @@ Sorry, I wasn't clear.  Apply *only* `-histogram.patch`.
 archive/issue_comments_049059.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncalexan]:\n> Sorry, I wasn't clear.  Apply *only* `-histogram.patch`.\n\nPerhaps I don't understand the difference between a histogram of a set of values and a histogram of an _indexed_ set of values but it seems to me that the following should output the familiar \"bell-shaped\" distribution:\n\n```\nsage: J = [ZZ(n) for n in range(10^3)]\nsage: A = [RR(gauss(0,1)) for n in range(10^3)]\nsage: s = IndexedSequence(A,J)\nsage: P = s.plot_histogram()\n```\n\n\nHowever, this looks pretty much the same as\n\n```\nsage: Q = s.plot()\n```\n\n\nAlso, the following is closer to the bell curve but it still doesn't capture what's going on: (swapping the `IndexedSequence` inputs)\n\n```\nsage: t = IndexedSequence(J,A)\nsage: R = t.plot_histogram()\n```\n\n\nI'm just wondering if I'm missing something.\n\nFinally, `finance.timeseries.TimeSeries` has a `plot_histogram` method that seems to work pretty well. Maybe you can use it somehow? Anyway, those are just my thoughts. Again, if I'm missing something I'll be happy to take another look.",
+    "body": "Replying to [comment:8 ncalexan]:\n> Sorry, I wasn't clear.  Apply *only* `-histogram.patch`.\n\n\nPerhaps I don't understand the difference between a histogram of a set of values and a histogram of an _indexed_ set of values but it seems to me that the following should output the familiar \"bell-shaped\" distribution:\n\n```\nsage: J = [ZZ(n) for n in range(10^3)]\nsage: A = [RR(gauss(0,1)) for n in range(10^3)]\nsage: s = IndexedSequence(A,J)\nsage: P = s.plot_histogram()\n```\n\nHowever, this looks pretty much the same as\n\n```\nsage: Q = s.plot()\n```\n\nAlso, the following is closer to the bell curve but it still doesn't capture what's going on: (swapping the `IndexedSequence` inputs)\n\n```\nsage: t = IndexedSequence(J,A)\nsage: R = t.plot_histogram()\n```\n\nI'm just wondering if I'm missing something.\n\nFinally, `finance.timeseries.TimeSeries` has a `plot_histogram` method that seems to work pretty well. Maybe you can use it somehow? Anyway, those are just my thoughts. Again, if I'm missing something I'll be happy to take another look.",
     "created_at": "2009-06-23T20:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -277,6 +276,7 @@ archive/issue_comments_049059.json:
 Replying to [comment:8 ncalexan]:
 > Sorry, I wasn't clear.  Apply *only* `-histogram.patch`.
 
+
 Perhaps I don't understand the difference between a histogram of a set of values and a histogram of an _indexed_ set of values but it seems to me that the following should output the familiar "bell-shaped" distribution:
 
 ```
@@ -286,13 +286,11 @@ sage: s = IndexedSequence(A,J)
 sage: P = s.plot_histogram()
 ```
 
-
 However, this looks pretty much the same as
 
 ```
 sage: Q = s.plot()
 ```
-
 
 Also, the following is closer to the bell curve but it still doesn't capture what's going on: (swapping the `IndexedSequence` inputs)
 
@@ -300,7 +298,6 @@ Also, the following is closer to the bell curve but it still doesn't capture wha
 sage: t = IndexedSequence(J,A)
 sage: R = t.plot_histogram()
 ```
-
 
 I'm just wondering if I'm missing something.
 
@@ -313,7 +310,7 @@ Finally, `finance.timeseries.TimeSeries` has a `plot_histogram` method that seem
 archive/issue_comments_049060.json:
 ```json
 {
-    "body": "I don't know why you expect your example to look like a bell curve.\nIn any case, there are too many points for plot_histogram to work with your example. Try\n\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: P = s.plot_histogram()\nsage: show(P)\n```\n\nRegarding your suggestion to use , I get:\n\n\n```\nsage: import finance.timeseries.TimeSeries\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n....\n```\n\nCan you be more specific?",
+    "body": "I don't know why you expect your example to look like a bell curve.\nIn any case, there are too many points for plot_histogram to work with your example. Try\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: P = s.plot_histogram()\nsage: show(P)\n```\nRegarding your suggestion to use , I get:\n\n```\nsage: import finance.timeseries.TimeSeries\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n....\n```\nCan you be more specific?",
     "created_at": "2009-06-23T20:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -325,7 +322,6 @@ archive/issue_comments_049060.json:
 I don't know why you expect your example to look like a bell curve.
 In any case, there are too many points for plot_histogram to work with your example. Try
 
-
 ```
 sage: J = [ZZ(n) for n in range(10)]
 sage: A = [RR(gauss(0,1)) for n in range(10)]
@@ -333,9 +329,7 @@ sage: s = IndexedSequence(A,J)
 sage: P = s.plot_histogram()
 sage: show(P)
 ```
-
 Regarding your suggestion to use , I get:
-
 
 ```
 sage: import finance.timeseries.TimeSeries
@@ -344,7 +338,6 @@ ImportError                               Traceback (most recent call last)
 
 ....
 ```
-
 Can you be more specific?
 
 
@@ -354,7 +347,7 @@ Can you be more specific?
 archive/issue_comments_049061.json:
 ```json
 {
-    "body": "Now I see what you meant.\n\nI think you meant to compare the following plots:\n\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: s.plot_histogram()\nsage: t = finance.TimeSeries(A); t\n[0.6636, 0.7983, -0.1451, 0.0838, -0.4355, -0.5719, 0.2572, 1.2802, -1.2696, -0.0642]\nsage: t.plot_histogram()\n```\n\nIf so, you can see that they are completely different. I don't see how to use the `sage/finance/time_series.pyx`\nfor this purpose.",
+    "body": "Now I see what you meant.\n\nI think you meant to compare the following plots:\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: s.plot_histogram()\nsage: t = finance.TimeSeries(A); t\n[0.6636, 0.7983, -0.1451, 0.0838, -0.4355, -0.5719, 0.2572, 1.2802, -1.2696, -0.0642]\nsage: t.plot_histogram()\n```\nIf so, you can see that they are completely different. I don't see how to use the `sage/finance/time_series.pyx`\nfor this purpose.",
     "created_at": "2009-06-24T08:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -367,7 +360,6 @@ Now I see what you meant.
 
 I think you meant to compare the following plots:
 
-
 ```
 sage: J = [ZZ(n) for n in range(10)]
 sage: A = [RR(gauss(0,1)) for n in range(10)]
@@ -377,7 +369,6 @@ sage: t = finance.TimeSeries(A); t
 [0.6636, 0.7983, -0.1451, 0.0838, -0.4355, -0.5719, 0.2572, 1.2802, -1.2696, -0.0642]
 sage: t.plot_histogram()
 ```
-
 If so, you can see that they are completely different. I don't see how to use the `sage/finance/time_series.pyx`
 for this purpose.
 
@@ -388,7 +379,7 @@ for this purpose.
 archive/issue_comments_049062.json:
 ```json
 {
-    "body": "Using your example, I'm just curious is there's any difference between the following two plots: (aside from the default red indexing below each bar in the plot)\n\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: s.plot_histogram()\nsage: bar_chart(s.list())\n```\n\n\nThe only difference I can see is bar placement. (The indexing set easily allows you to place the bars in `IndexedSequence().plot_histogram()` wherever you like.) I'm sure that there's a lot of application for kind of plot with an indexed set.\n\nI tested the functionality of your code and, from my observations, it works great! Therefore, I give it a positive review. I just wanted a little bit of clarification on what kind of information the `plot_histogram()` method was actually presenting.\n\nSorry if my questions caused too much of a problem.",
+    "body": "Using your example, I'm just curious is there's any difference between the following two plots: (aside from the default red indexing below each bar in the plot)\n\n```\nsage: J = [ZZ(n) for n in range(10)]\nsage: A = [RR(gauss(0,1)) for n in range(10)]\nsage: s = IndexedSequence(A,J)\nsage: s.plot_histogram()\nsage: bar_chart(s.list())\n```\n\nThe only difference I can see is bar placement. (The indexing set easily allows you to place the bars in `IndexedSequence().plot_histogram()` wherever you like.) I'm sure that there's a lot of application for kind of plot with an indexed set.\n\nI tested the functionality of your code and, from my observations, it works great! Therefore, I give it a positive review. I just wanted a little bit of clarification on what kind of information the `plot_histogram()` method was actually presenting.\n\nSorry if my questions caused too much of a problem.",
     "created_at": "2009-06-24T17:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
@@ -399,7 +390,6 @@ archive/issue_comments_049062.json:
 
 Using your example, I'm just curious is there's any difference between the following two plots: (aside from the default red indexing below each bar in the plot)
 
-
 ```
 sage: J = [ZZ(n) for n in range(10)]
 sage: A = [RR(gauss(0,1)) for n in range(10)]
@@ -407,7 +397,6 @@ sage: s = IndexedSequence(A,J)
 sage: s.plot_histogram()
 sage: bar_chart(s.list())
 ```
-
 
 The only difference I can see is bar placement. (The indexing set easily allows you to place the bars in `IndexedSequence().plot_histogram()` wherever you like.) I'm sure that there's a lot of application for kind of plot with an indexed set.
 

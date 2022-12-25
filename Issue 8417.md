@@ -122,7 +122,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_075304.json:
 ```json
 {
-    "body": "Beware, with your patch applied I get:\n\n```\nsage: %timeit graphs.CubeGraph(12)\n5 loops, best of 3: 2.95 s per loop\nsage: time g = graphs.CubeGraph(14)\nCPU times: user 72.66 s, sys: 0.42 s, total: 73.08 s\n```\n\nwhereas with mine only I have:\n\n```\nsage: %timeit graphs.CubeGraph(12)\n5 loops, best of 3: 653 ms per loop\nsage: time g = graphs.CubeGraph(14)\nCPU times: user 3.10 s, sys: 0.06 s, total: 3.16 s\n```\n\n\nThis is mainly because using the construction `Graph(d, ...)` add\nsome checks I avoid setting vertices and edges myself.",
+    "body": "Beware, with your patch applied I get:\n\n```\nsage: %timeit graphs.CubeGraph(12)\n5 loops, best of 3: 2.95 s per loop\nsage: time g = graphs.CubeGraph(14)\nCPU times: user 72.66 s, sys: 0.42 s, total: 73.08 s\n```\nwhereas with mine only I have:\n\n```\nsage: %timeit graphs.CubeGraph(12)\n5 loops, best of 3: 653 ms per loop\nsage: time g = graphs.CubeGraph(14)\nCPU times: user 3.10 s, sys: 0.06 s, total: 3.16 s\n```\n\nThis is mainly because using the construction `Graph(d, ...)` add\nsome checks I avoid setting vertices and edges myself.",
     "created_at": "2010-03-09T18:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
@@ -139,7 +139,6 @@ sage: %timeit graphs.CubeGraph(12)
 sage: time g = graphs.CubeGraph(14)
 CPU times: user 72.66 s, sys: 0.42 s, total: 73.08 s
 ```
-
 whereas with mine only I have:
 
 ```
@@ -148,7 +147,6 @@ sage: %timeit graphs.CubeGraph(12)
 sage: time g = graphs.CubeGraph(14)
 CPU times: user 3.10 s, sys: 0.06 s, total: 3.16 s
 ```
-
 
 This is mainly because using the construction `Graph(d, ...)` add
 some checks I avoid setting vertices and edges myself.
@@ -178,7 +176,7 @@ apply on top of other patch
 archive/issue_comments_075306.json:
 ```json
 {
-    "body": "Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by @rlmill created at 2010-03-09 18:23:57\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
+    "body": "Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by @rlmill created at 2010-03-09 18:23:57\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
     "created_at": "2010-03-09T18:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
@@ -191,6 +189,7 @@ Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417
 
 Replying to [comment:3 ylchapuy]:
 > Beware, with your patch applied I get:
+
 
 Thank you for pointing this out. I've reverted that part of the patch.
 

@@ -61,7 +61,7 @@ this way, it should always just work?
 archive/issue_comments_028208.json:
 ```json
 {
-    "body": "\n```\nrank4:sage-main rlmill$ ../../sage -tp 2 sage/interfaces/\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nsage -t  devel/sage-main/sage/interfaces/tachyon.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/tests.py\n\t [3.5 s]\nsage -t  devel/sage-main/sage/interfaces/singular.py\n\t [3.5 s]\nsage -t  devel/sage-main/sage/interfaces/sage0.py\n\t [9.4 s]\nsage -t  devel/sage-main/sage/interfaces/r.py\n\t [7.0 s]\nsage -t  devel/sage-main/sage/interfaces/rubik.py\n\t [15.8 s]\nsage -t  devel/sage-main/sage/interfaces/qsieve.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/povray.py\n\t [2.2 s]\nsage -t  devel/sage-main/sage/interfaces/phc.py\n\t [3.2 s]\nsage -t  devel/sage-main/sage/interfaces/octave.py\n\t [2.9 s]\nsage -t  devel/sage-main/sage/interfaces/psage.py\n\t [11.8 s]\nsage -t  devel/sage-main/sage/interfaces/mwrank.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/mupad.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/monitor.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/matlab.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/mathematica.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/maple.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/magma_sim.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/magma_free.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/magma.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/macaulay2.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/lie.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/maxima.py\n\t [17.0 s]\nsage -t  devel/sage-main/sage/interfaces/kash.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/gnuplot.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/gp.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/gfan.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/get_sigs.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/genus2reduction.py\n\t [2.7 s]\nsage -t  devel/sage-main/sage/interfaces/gap.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/frobby.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/expect.py\n\t [6.9 s]\nsage -t  devel/sage-main/sage/interfaces/axiom.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/ecm.py\n\t [14.5 s]\nAll tests passed!\nTotal time for all tests: 76.7 seconds\nrank4:sage-main rlmill$ \n```\n",
+    "body": "```\nrank4:sage-main rlmill$ ../../sage -tp 2 sage/interfaces/\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\n \n----------------------------------------------------------------------\nsage -t  devel/sage-main/sage/interfaces/tachyon.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/tests.py\n\t [3.5 s]\nsage -t  devel/sage-main/sage/interfaces/singular.py\n\t [3.5 s]\nsage -t  devel/sage-main/sage/interfaces/sage0.py\n\t [9.4 s]\nsage -t  devel/sage-main/sage/interfaces/r.py\n\t [7.0 s]\nsage -t  devel/sage-main/sage/interfaces/rubik.py\n\t [15.8 s]\nsage -t  devel/sage-main/sage/interfaces/qsieve.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/povray.py\n\t [2.2 s]\nsage -t  devel/sage-main/sage/interfaces/phc.py\n\t [3.2 s]\nsage -t  devel/sage-main/sage/interfaces/octave.py\n\t [2.9 s]\nsage -t  devel/sage-main/sage/interfaces/psage.py\n\t [11.8 s]\nsage -t  devel/sage-main/sage/interfaces/mwrank.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/mupad.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/monitor.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/matlab.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/mathematica.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/maple.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/magma_sim.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/magma_free.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/magma.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/macaulay2.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/lie.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/maxima.py\n\t [17.0 s]\nsage -t  devel/sage-main/sage/interfaces/kash.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/gnuplot.py\n\t [2.1 s]\nsage -t  devel/sage-main/sage/interfaces/gp.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/gfan.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/get_sigs.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/genus2reduction.py\n\t [2.7 s]\nsage -t  devel/sage-main/sage/interfaces/gap.py\n\t [3.4 s]\nsage -t  devel/sage-main/sage/interfaces/frobby.py\n\t [2.0 s]\nsage -t  devel/sage-main/sage/interfaces/expect.py\n\t [6.9 s]\nsage -t  devel/sage-main/sage/interfaces/axiom.py\n\t [1.9 s]\nsage -t  devel/sage-main/sage/interfaces/ecm.py\n\t [14.5 s]\nAll tests passed!\nTotal time for all tests: 76.7 seconds\nrank4:sage-main rlmill$ \n```",
     "created_at": "2008-08-24T14:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
@@ -69,7 +69,6 @@ archive/issue_comments_028208.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 rank4:sage-main rlmill$ ../../sage -tp 2 sage/interfaces/
@@ -153,7 +152,6 @@ rank4:sage-main rlmill$
 
 
 
-
 ---
 
 archive/issue_comments_028209.json:
@@ -195,7 +193,7 @@ My one concern with this patch is that the temp files should be cleaned up prope
 archive/issue_comments_028211.json:
 ```json
 {
-    "body": "> My one concern with this patch is that the temp files should be cleaned up properly. \n> I don't know the mechanisms for this... \n\nThat's all taken care of because the files are in SAGE_TMP.  No worries.\n\nI think this is a good patch.",
+    "body": "> My one concern with this patch is that the temp files should be cleaned up properly. \n> I don't know the mechanisms for this... \n\n\nThat's all taken care of because the files are in SAGE_TMP.  No worries.\n\nI think this is a good patch.",
     "created_at": "2008-08-24T17:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3942",
     "type": "issue_comment",
@@ -206,6 +204,7 @@ archive/issue_comments_028211.json:
 
 > My one concern with this patch is that the temp files should be cleaned up properly. 
 > I don't know the mechanisms for this... 
+
 
 That's all taken care of because the files are in SAGE_TMP.  No worries.
 

@@ -3,7 +3,7 @@
 archive/issues_008674.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis is fine :\n\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\n\nBut we would like the following to be an endomorphism as well:\n\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis is fine :\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\nBut we would like the following to be an endomorphism as well:\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
     "created_at": "2010-04-11T14:17:52Z",
     "labels": [
         "component: combinatorics",
@@ -22,16 +22,13 @@ CC:  abmasse
 
 This is fine :
 
-
 ```
 sage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')
 sage: m.is_endomorphism()
 True
 ```
 
-
 But we would like the following to be an endomorphism as well:
-
 
 ```
 sage: P = WordPaths('abcd')
@@ -39,7 +36,6 @@ sage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)
 sage: m.is_endomorphism()
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8674
 
@@ -124,7 +120,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_078807.json:
 ```json
 {
-    "body": "I understand that you want to correct the function `is_endormorphism`, but there is something strange about combinatorial class comparison.\n\nFor instance, I get the following:\n\n\n```\nsage: Words('ab') == WordPaths('ab')\nFalse\nsage: Words('ab') <= WordPaths('ab')\nTrue\nsage: Words('ab') >= WordPaths('ab')\nFalse\n```\n\n\nWouldn't we want\n\n\n```\nsage: Words('ab') == WordPaths('ab')\nTrue\n```\n\n\nor is there something I miss ?\n\nIf it is a problem, maybe it's not necessary to fix the `__eq__` operator now but do it in another ticket, but since you're at it...",
+    "body": "I understand that you want to correct the function `is_endormorphism`, but there is something strange about combinatorial class comparison.\n\nFor instance, I get the following:\n\n```\nsage: Words('ab') == WordPaths('ab')\nFalse\nsage: Words('ab') <= WordPaths('ab')\nTrue\nsage: Words('ab') >= WordPaths('ab')\nFalse\n```\n\nWouldn't we want\n\n```\nsage: Words('ab') == WordPaths('ab')\nTrue\n```\n\nor is there something I miss ?\n\nIf it is a problem, maybe it's not necessary to fix the `__eq__` operator now but do it in another ticket, but since you're at it...",
     "created_at": "2010-04-17T16:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
@@ -137,7 +133,6 @@ I understand that you want to correct the function `is_endormorphism`, but there
 
 For instance, I get the following:
 
-
 ```
 sage: Words('ab') == WordPaths('ab')
 False
@@ -147,15 +142,12 @@ sage: Words('ab') >= WordPaths('ab')
 False
 ```
 
-
 Wouldn't we want
-
 
 ```
 sage: Words('ab') == WordPaths('ab')
 True
 ```
-
 
 or is there something I miss ?
 
@@ -251,7 +243,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078812.json:
 ```json
 {
-    "body": "Already 7 months !!!! Sorry again for the delay...\n\nI retested on sage-4.6 the two patches but I get a bunch of doctest failures. Were they already there or do they come from the fact that the patches were submitted seven months ago?\n\n\n```\nlabo [~/Applications/sage/devel/sage-t8674/sage/combinat/words]\n $ sage -t *\nsage -t  \"devel/sage-t8674/sage/combinat/words/__init__.py\" \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/abstract_word.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/all.py\"      \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/alphabet.py\" \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/finite_word.py\"\n\t [13.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/infinite_word.py\"\n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\" \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/morphism.py\", line 907:\n    sage: m.is_endomorphism()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_morphism.py\n\t [2.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/nfactor_enumerable_word.py\"\n\t [5.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/paths.py\"    \n\t [7.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/shuffle_product.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/suffix_trees.py\"\n\t [5.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/utils.py\"    \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word.py\"     \n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_content.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_datatypes.pyx\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_generators.py\"\n\t [7.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_infinite_datatypes.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_options.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"    \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 690:\n    sage: WordPaths('abcd') != Words('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 692:\n    sage: Words('abcd') != WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 925:\n    sage: WordPaths('abcd') <= Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 952:\n    sage: Words('abcd') >= WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 437:\n    sage: type(z)\nExpected:\n    <class 'sage.combinat.words.word.FiniteWord_list'>\nGot:\n    <class 'sage.combinat.words.word.FiniteWord_str'>\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 661:\n    sage: WordPaths('abcd') == Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 663:\n    sage: Words('abcd') == WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 667:\n    sage: WordPaths('bacd') == WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n5 items had failures:\n   2 of   7 in __main__.example_10\n   1 of   7 in __main__.example_22\n   1 of   7 in __main__.example_23\n   1 of  63 in __main__.example_5\n   3 of  12 in __main__.example_9\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_words.py\n\t [2.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\"\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"\nTotal time for all tests: 70.4 seconds\n```\n",
+    "body": "Already 7 months !!!! Sorry again for the delay...\n\nI retested on sage-4.6 the two patches but I get a bunch of doctest failures. Were they already there or do they come from the fact that the patches were submitted seven months ago?\n\n```\nlabo [~/Applications/sage/devel/sage-t8674/sage/combinat/words]\n $ sage -t *\nsage -t  \"devel/sage-t8674/sage/combinat/words/__init__.py\" \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/abstract_word.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/all.py\"      \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/alphabet.py\" \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/finite_word.py\"\n\t [13.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/infinite_word.py\"\n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\" \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/morphism.py\", line 907:\n    sage: m.is_endomorphism()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_morphism.py\n\t [2.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/nfactor_enumerable_word.py\"\n\t [5.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/paths.py\"    \n\t [7.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/shuffle_product.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/suffix_trees.py\"\n\t [5.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/utils.py\"    \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word.py\"     \n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_content.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_datatypes.pyx\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_generators.py\"\n\t [7.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_infinite_datatypes.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_options.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"    \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 690:\n    sage: WordPaths('abcd') != Words('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 692:\n    sage: Words('abcd') != WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 925:\n    sage: WordPaths('abcd') <= Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 952:\n    sage: Words('abcd') >= WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 437:\n    sage: type(z)\nExpected:\n    <class 'sage.combinat.words.word.FiniteWord_list'>\nGot:\n    <class 'sage.combinat.words.word.FiniteWord_str'>\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 661:\n    sage: WordPaths('abcd') == Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 663:\n    sage: Words('abcd') == WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 667:\n    sage: WordPaths('bacd') == WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n5 items had failures:\n   2 of   7 in __main__.example_10\n   1 of   7 in __main__.example_22\n   1 of   7 in __main__.example_23\n   1 of  63 in __main__.example_5\n   3 of  12 in __main__.example_9\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_words.py\n\t [2.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\"\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"\nTotal time for all tests: 70.4 seconds\n```",
     "created_at": "2010-11-14T01:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
@@ -263,7 +255,6 @@ archive/issue_comments_078812.json:
 Already 7 months !!!! Sorry again for the delay...
 
 I retested on sage-4.6 the two patches but I get a bunch of doctest failures. Were they already there or do they come from the fact that the patches were submitted seven months ago?
-
 
 ```
 labo [~/Applications/sage/devel/sage-t8674/sage/combinat/words]
@@ -395,7 +386,6 @@ Total time for all tests: 70.4 seconds
 
 
 
-
 ---
 
 archive/issue_comments_078813.json:
@@ -419,7 +409,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078814.json:
 ```json
 {
-    "body": "> I retested on sage-4.6 the two patches but I get a bunch of doctest failures.\n\nOn sage-4.6, I get All tests passed. Did you sage -b ?",
+    "body": "> I retested on sage-4.6 the two patches but I get a bunch of doctest failures.\n\n\nOn sage-4.6, I get All tests passed. Did you sage -b ?",
     "created_at": "2010-11-14T06:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8674",
     "type": "issue_comment",
@@ -429,6 +419,7 @@ archive/issue_comments_078814.json:
 ```
 
 > I retested on sage-4.6 the two patches but I get a bunch of doctest failures.
+
 
 On sage-4.6, I get All tests passed. Did you sage -b ?
 

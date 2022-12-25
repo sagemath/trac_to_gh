@@ -122,7 +122,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067955.json:
 ```json
 {
-    "body": "A few quick comments: SPGK.txt needs to be updated.  Also, is the hack appropriate for OS X running 10.5 (since it now just checks for \"DARWIN\", not the version number)?  I don't have access to a machine to test that.\n\nFinally, if SAGE64 is set and we're on DARWIN, is it worth making some of the other changes in [http://blog.hyperjeff.net/?p=160](http://blog.hyperjeff.net/?p=160)?  For example, in src/make.osx, changing \n\n```\nCFLAGS=\"-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk\"\nLDFLAGS=\"-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk\"\n```\n\nso that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)",
+    "body": "A few quick comments: SPGK.txt needs to be updated.  Also, is the hack appropriate for OS X running 10.5 (since it now just checks for \"DARWIN\", not the version number)?  I don't have access to a machine to test that.\n\nFinally, if SAGE64 is set and we're on DARWIN, is it worth making some of the other changes in [http://blog.hyperjeff.net/?p=160](http://blog.hyperjeff.net/?p=160)?  For example, in src/make.osx, changing \n\n```\nCFLAGS=\"-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk\"\nLDFLAGS=\"-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk\"\n```\nso that \"-arch ppc\" gets changed to \"-arch x86_64\"?  (That web page also suggests adding \"FFLAGS\", and making a few other changes.  We can defer these until later, also.)",
     "created_at": "2010-01-06T16:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7856",
     "type": "issue_comment",
@@ -139,7 +139,6 @@ Finally, if SAGE64 is set and we're on DARWIN, is it worth making some of the ot
 CFLAGS="-arch i386 -arch ppc -I${PREFIX}/include -I${PREFIX}/include/freetype2 -isysroot /Developer/SDKs/MacOSX10.4u.sdk"
 LDFLAGS="-arch i386 -arch ppc -L${PREFIX}/lib -syslibroot,/Developer/SDKs/MacOSX10.4u.sdk"
 ```
-
 so that "-arch ppc" gets changed to "-arch x86_64"?  (That web page also suggests adding "FFLAGS", and making a few other changes.  We can defer these until later, also.)
 
 
@@ -213,7 +212,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067959.json:
 ```json
 {
-    "body": "> A few quick comments: SPGK.txt needs to be updated. Also, is the hack \n> appropriate for OS X running 10.5 (since it now just checks for \"DARWIN\", \n> not the version number)?\n\nIt runs patches/osx10.6hack on any OS X, but *only* actually applies the hack on 10.6.  It immediately exits patches/osx10.6hack on other than 10.6. \n\nI've updated the spkg, and also now tested it on 10.5 and it works fine (as before).  So, can you change it to positive review?",
+    "body": "> A few quick comments: SPGK.txt needs to be updated. Also, is the hack \n> appropriate for OS X running 10.5 (since it now just checks for \"DARWIN\", \n> not the version number)?\n\n\nIt runs patches/osx10.6hack on any OS X, but *only* actually applies the hack on 10.6.  It immediately exits patches/osx10.6hack on other than 10.6. \n\nI've updated the spkg, and also now tested it on 10.5 and it works fine (as before).  So, can you change it to positive review?",
     "created_at": "2010-01-06T23:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7856",
     "type": "issue_comment",
@@ -225,6 +224,7 @@ archive/issue_comments_067959.json:
 > A few quick comments: SPGK.txt needs to be updated. Also, is the hack 
 > appropriate for OS X running 10.5 (since it now just checks for "DARWIN", 
 > not the version number)?
+
 
 It runs patches/osx10.6hack on any OS X, but *only* actually applies the hack on 10.6.  It immediately exits patches/osx10.6hack on other than 10.6. 
 
@@ -273,7 +273,7 @@ Please see [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.
 archive/issue_comments_067962.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> Please see [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html) and [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html) for something which looks relevant - namely, DPY_ARRAYAUNIQUE_SYMBOL is, in fact, a typo for DPY_ARRAY_UNIQUE_SYMBOL.  I don't know if this would fix things for us, but at any rate the 'horrible hack' uses precisely this (incorrect) variable, so we should at least fix both the source and the hack to use the correct one.\n\nI tried just the patches mentioned above, not the \"horrible hack\", but it didn't work: the hack was needed to avoid crashes.",
+    "body": "Replying to [comment:11 kcrisman]:\n> Please see [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html) and [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html) for something which looks relevant - namely, DPY_ARRAYAUNIQUE_SYMBOL is, in fact, a typo for DPY_ARRAY_UNIQUE_SYMBOL.  I don't know if this would fix things for us, but at any rate the 'horrible hack' uses precisely this (incorrect) variable, so we should at least fix both the source and the hack to use the correct one.\n\n\nI tried just the patches mentioned above, not the \"horrible hack\", but it didn't work: the hack was needed to avoid crashes.",
     "created_at": "2010-01-08T06:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7856",
     "type": "issue_comment",
@@ -284,6 +284,7 @@ archive/issue_comments_067962.json:
 
 Replying to [comment:11 kcrisman]:
 > Please see [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04165.html) and [http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html](http://www.mail-archive.com/matplotlib-checkins`@`lists.sourceforge.net/msg04166.html) for something which looks relevant - namely, DPY_ARRAYAUNIQUE_SYMBOL is, in fact, a typo for DPY_ARRAY_UNIQUE_SYMBOL.  I don't know if this would fix things for us, but at any rate the 'horrible hack' uses precisely this (incorrect) variable, so we should at least fix both the source and the hack to use the correct one.
+
 
 I tried just the patches mentioned above, not the "horrible hack", but it didn't work: the hack was needed to avoid crashes.
 

@@ -66,7 +66,7 @@ Attachment [trac_7388.patch](tarball://root/attachments/some-uuid/ticket7388/tra
 archive/issue_comments_062015.json:
 ```json
 {
-    "body": "You seem to have left in a directory src-2.1.2 for no reason:\n\n```\nwstein@sage:~/build/sage-4.3.alpha1/spkg/optional/ratpoints-2.1.3$ ls\nspkg-install  SPKG.txt  src  src-2.1.2\n```\n\n\nOtherwise this looks fine.",
+    "body": "You seem to have left in a directory src-2.1.2 for no reason:\n\n```\nwstein@sage:~/build/sage-4.3.alpha1/spkg/optional/ratpoints-2.1.3$ ls\nspkg-install  SPKG.txt  src  src-2.1.2\n```\n\nOtherwise this looks fine.",
     "created_at": "2009-12-09T01:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ You seem to have left in a directory src-2.1.2 for no reason:
 wstein@sage:~/build/sage-4.3.alpha1/spkg/optional/ratpoints-2.1.3$ ls
 spkg-install  SPKG.txt  src  src-2.1.2
 ```
-
 
 Otherwise this looks fine.
 

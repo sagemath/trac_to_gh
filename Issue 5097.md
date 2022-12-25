@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5097
 archive/issue_comments_038805.json:
 ```json
 {
-    "body": "Thanks for the fixes, but they all should read\n\n```\n# optional -- requires Octave \n```\n\nor whatever system is required. I will fix the patch if no one beats me to it.\n\nCheers,\n\nMichael",
+    "body": "Thanks for the fixes, but they all should read\n\n```\n# optional -- requires Octave \n```\nor whatever system is required. I will fix the patch if no one beats me to it.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-25T14:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5097",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ Thanks for the fixes, but they all should read
 ```
 # optional -- requires Octave 
 ```
-
 or whatever system is required. I will fix the patch if no one beats me to it.
 
 Cheers,

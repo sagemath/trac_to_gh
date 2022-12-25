@@ -3,7 +3,7 @@
 archive/issues_005398.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @JohnCremona\n\nJohn Cremona reported in http://groups.google.com/group/sage-devel/browse_thread/thread/dc34f1b1f5fc4251\n\n```\nFrom my newly built 3.4.alpha0 I made a clone but it will not run, \ncomplaining about things like this: \n\nSyntaxError: Non-ASCII character '\\xc3' in file \n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages\n/sage/combinat/sloane_functions.py \n\non line 6381, but no encoding declared; see \nhttp://www.python.org/peps/pep-0263.html for details \n(sloane_functions.py, line 6380) \n\nThat one is Mobius, spelled Mo\"bius (with an o-umlaut character). \nAnd before that I had a problem with Gro\"bner in interfaces/singular.py.\n \nIs this somehow caused by the ReST/Sphinx stuff?  It is hard to \nreview  patches when clones don't run... \n\nJohn \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5398\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @JohnCremona\n\nJohn Cremona reported in http://groups.google.com/group/sage-devel/browse_thread/thread/dc34f1b1f5fc4251\n\n```\nFrom my newly built 3.4.alpha0 I made a clone but it will not run, \ncomplaining about things like this: \n\nSyntaxError: Non-ASCII character '\\xc3' in file \n/home/john/sage-3.4.alpha0/local/lib/python2.5/site-packages\n/sage/combinat/sloane_functions.py \n\non line 6381, but no encoding declared; see \nhttp://www.python.org/peps/pep-0263.html for details \n(sloane_functions.py, line 6380) \n\nThat one is Mobius, spelled Mo\"bius (with an o-umlaut character). \nAnd before that I had a problem with Gro\"bner in interfaces/singular.py.\n \nIs this somehow caused by the ReST/Sphinx stuff?  It is hard to \nreview  patches when clones don't run... \n\nJohn \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5398\n\n",
     "created_at": "2009-02-27T21:32:52Z",
     "labels": [
         "component: misc",
@@ -43,7 +43,6 @@ review  patches when clones don't run...
 
 John 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5398
 

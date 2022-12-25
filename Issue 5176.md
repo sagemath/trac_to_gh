@@ -3,7 +3,7 @@
 archive/issues_005176.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nI have worksheet with the word \"Gr\u00f6bner\" in it which prevents me from using the notebook at all because the listing of worksheets crashes.\n\n\n```\n        Traceback (most recent call last):\n          File \".../twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \".../twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \".../twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \".../twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \".../twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \".../sage/server/notebook/twist.py\", line 1408, in render\n            return self.render_list(ctx)\n          File \".../sage/server/notebook/twist.py\", line 1403, in render_list\n            s = render_worksheet_list(ctx.args, pub=False, username=self.user)\n          File \".../sage/server/notebook/twist.py\", line 1390, in render_worksheet_list\n            return template('worksheet_listing.html', **locals())\n          File \".../sage/server/notebook/template.py\", line 70, in template\n            return str(tmpl.render(**context))\n        exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\\xf6' in position 4445: ordinal not in range(128)\n```\n\n\nBefore umlauts where displayed wrong but at least they didn't crash the server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5176\n\n",
+    "body": "Assignee: boothby\n\nI have worksheet with the word \"Gr\u00f6bner\" in it which prevents me from using the notebook at all because the listing of worksheets crashes.\n\n```\n        Traceback (most recent call last):\n          File \".../twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \".../twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \".../twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \".../twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \".../twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \".../sage/server/notebook/twist.py\", line 1408, in render\n            return self.render_list(ctx)\n          File \".../sage/server/notebook/twist.py\", line 1403, in render_list\n            s = render_worksheet_list(ctx.args, pub=False, username=self.user)\n          File \".../sage/server/notebook/twist.py\", line 1390, in render_worksheet_list\n            return template('worksheet_listing.html', **locals())\n          File \".../sage/server/notebook/template.py\", line 70, in template\n            return str(tmpl.render(**context))\n        exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\\xf6' in position 4445: ordinal not in range(128)\n```\n\nBefore umlauts where displayed wrong but at least they didn't crash the server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5176\n\n",
     "created_at": "2009-02-04T17:23:06Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ archive/issues_005176.json:
 Assignee: boothby
 
 I have worksheet with the word "Gröbner" in it which prevents me from using the notebook at all because the listing of worksheets crashes.
-
 
 ```
         Traceback (most recent call last):
@@ -53,7 +52,6 @@ I have worksheet with the word "Gröbner" in it which prevents me from using the
             return str(tmpl.render(**context))
         exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xf6' in position 4445: ordinal not in range(128)
 ```
-
 
 Before umlauts where displayed wrong but at least they didn't crash the server.
 
@@ -106,7 +104,7 @@ patch looks good, fixes the crashing for me, and is doctested.  Positive review.
 archive/issue_comments_039574.json:
 ```json
 {
-    "body": "\n```\n[13:09] <mabshoff> Someone needs to make sure we can still clone the repo with that patch since last time we had Nicola's name spelled correctly in a patch we had issues like that.\n```\n\n\nI did not do the above.  mabshoff, if you feel it's needed, can you check it before you merge?",
+    "body": "```\n[13:09] <mabshoff> Someone needs to make sure we can still clone the repo with that patch since last time we had Nicola's name spelled correctly in a patch we had issues like that.\n```\n\nI did not do the above.  mabshoff, if you feel it's needed, can you check it before you merge?",
     "created_at": "2009-02-05T19:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
@@ -115,11 +113,9 @@ archive/issue_comments_039574.json:
 }
 ```
 
-
 ```
 [13:09] <mabshoff> Someone needs to make sure we can still clone the repo with that patch since last time we had Nicola's name spelled correctly in a patch we had issues like that.
 ```
-
 
 I did not do the above.  mabshoff, if you feel it's needed, can you check it before you merge?
 

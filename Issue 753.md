@@ -119,7 +119,7 @@ archive/issue_events_002052.json:
 archive/issue_comments_004435.json:
 ```json
 {
-    "body": "arrggh this is a bit of a mess currently. All the types seem to behave differently at the moment. Some standardisation is really needed here, and things pulled back closer to the base classes. Examples:\n\n\n```\nsage: x = var(\"x\")\nsage: type(x)\n<class 'sage.calculus.calculus.SymbolicVariable'>\nsage: x.diff()\n1\nsage: x.derivative()\n1\nsage: x.differentiate()\n1\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: x.derivative()\n1\nsage: x.diff()\n[boom]\n\nsage: R.<x> = PolynomialRing(QQ)\nsage: x.diff()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: diff() takes at least 2 arguments (1 given)\nsage: x.derivative()\n1\n```\n",
+    "body": "arrggh this is a bit of a mess currently. All the types seem to behave differently at the moment. Some standardisation is really needed here, and things pulled back closer to the base classes. Examples:\n\n```\nsage: x = var(\"x\")\nsage: type(x)\n<class 'sage.calculus.calculus.SymbolicVariable'>\nsage: x.diff()\n1\nsage: x.derivative()\n1\nsage: x.differentiate()\n1\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: x.derivative()\n1\nsage: x.diff()\n[boom]\n\nsage: R.<x> = PolynomialRing(QQ)\nsage: x.diff()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: diff() takes at least 2 arguments (1 given)\nsage: x.derivative()\n1\n```",
     "created_at": "2008-01-02T19:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ archive/issue_comments_004435.json:
 ```
 
 arrggh this is a bit of a mess currently. All the types seem to behave differently at the moment. Some standardisation is really needed here, and things pulled back closer to the base classes. Examples:
-
 
 ```
 sage: x = var("x")
@@ -159,7 +158,6 @@ sage: x.diff()
 sage: x.derivative()
 1
 ```
-
 
 
 

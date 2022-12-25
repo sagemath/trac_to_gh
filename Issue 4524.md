@@ -3,7 +3,7 @@
 archive/issues_004524.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
+    "body": "Assignee: @itolkov\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
     "created_at": "2008-11-14T17:04:23Z",
     "labels": [
         "component: interact",
@@ -23,23 +23,19 @@ Keywords: input_box
 Using interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.
 The folowing example works well 
 
-
 ```
 @interact
 def _(a=input_box(default='interact is "cool"',type=str,label='Name:')):
     print a
 ```
 
-
 and it puts *interact is "cool"* in the input box. But in the next one, 
-
 
 ```
 @interact
 def _(a=input_box(default="interact is 'cool'",type=str,label='Name:')):
     print a
 ```
-
 
 the default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !
 
@@ -108,7 +104,7 @@ Changing status from new to assigned.
 archive/issue_comments_033511.json:
 ```json
 {
-    "body": "First, that is the first time I review a patch. So if you have comment on the way I review, tell me. I also have some questions that I write below as I have them. Moreover, I am not familiar with notebook code at all....so should I let the job to somebody else?\n\nHowever, I applied the patch and I can at least say that the problem I submitted is now fixed which is cool!\n\nThere is a small issue here (double that) :\n\n\n```\nNote that any HTML that that uses quotes around this should use double quotes and not single quotes. \n```\n\n\nAlso, I don't know if you agreee, but I suggest to add the second example below :\n\n\n```\nEXAMPLES: \n    sage: from sage.server.notebook.interact import InteractControl \n    sage: InteractControl('x', '\"cool\"').html_escaped_default_value() \n    '&quot;cool&quot;' \n    sage: InteractControl('x',\"'cool'\").html_escaped_default_value()\n    \"'cool'\"\n```\n\n\nMy last question is : I could have posted a patch for both issues (double that, and the 2nd example). What is commonly done? Do we leave the changes to the patcher?\n\nMy statement is Positive review pending fixes on at least the first of my two doc-suggestions.\n\nThanks for the fix,",
+    "body": "First, that is the first time I review a patch. So if you have comment on the way I review, tell me. I also have some questions that I write below as I have them. Moreover, I am not familiar with notebook code at all....so should I let the job to somebody else?\n\nHowever, I applied the patch and I can at least say that the problem I submitted is now fixed which is cool!\n\nThere is a small issue here (double that) :\n\n```\nNote that any HTML that that uses quotes around this should use double quotes and not single quotes. \n```\n\nAlso, I don't know if you agreee, but I suggest to add the second example below :\n\n```\nEXAMPLES: \n    sage: from sage.server.notebook.interact import InteractControl \n    sage: InteractControl('x', '\"cool\"').html_escaped_default_value() \n    '&quot;cool&quot;' \n    sage: InteractControl('x',\"'cool'\").html_escaped_default_value()\n    \"'cool'\"\n```\n\nMy last question is : I could have posted a patch for both issues (double that, and the 2nd example). What is commonly done? Do we leave the changes to the patcher?\n\nMy statement is Positive review pending fixes on at least the first of my two doc-suggestions.\n\nThanks for the fix,",
     "created_at": "2009-01-23T18:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
@@ -123,14 +119,11 @@ However, I applied the patch and I can at least say that the problem I submitted
 
 There is a small issue here (double that) :
 
-
 ```
 Note that any HTML that that uses quotes around this should use double quotes and not single quotes. 
 ```
 
-
 Also, I don't know if you agreee, but I suggest to add the second example below :
-
 
 ```
 EXAMPLES: 
@@ -140,7 +133,6 @@ EXAMPLES:
     sage: InteractControl('x',"'cool'").html_escaped_default_value()
     "'cool'"
 ```
-
 
 My last question is : I could have posted a patch for both issues (double that, and the 2nd example). What is commonly done? Do we leave the changes to the patcher?
 

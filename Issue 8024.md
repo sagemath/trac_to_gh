@@ -3,7 +3,7 @@
 archive/issues_008024.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein\n\nPrior to 4.3.1.rc2, Sage included a Fortran compiler for Linux and OS X, so there was no need to have one. \n\nAs such, the 'prereq' script did not check for it. #7485 merged in sage-4.3.1.rc2 removed the Fortran compiler. \n\nIt would appear from at least one log posted\n\nhttp://sporadic.stanford.edu/bump/sage-4.3.1-errors\n\nthat despite gcc being built with Fortran support\n\n\n```\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang \n--prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext \n--enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 \n--enable-clocale=gnu --enable-libstdcxx-debug \n--enable-objc-gc --enable-mpfr --enable-targets=all \n--enable-checking=release --build=i486-linux-gnu \n--host=i486-linux-gnu --target=i486-linux-gnu\n```\n\n\nFortran it is not installed on some Ubunta systems. As such, prereq should be modified to check for a Fortran compiler on every platform except OS X. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8024\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein\n\nPrior to 4.3.1.rc2, Sage included a Fortran compiler for Linux and OS X, so there was no need to have one. \n\nAs such, the 'prereq' script did not check for it. #7485 merged in sage-4.3.1.rc2 removed the Fortran compiler. \n\nIt would appear from at least one log posted\n\nhttp://sporadic.stanford.edu/bump/sage-4.3.1-errors\n\nthat despite gcc being built with Fortran support\n\n```\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang \n--prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext \n--enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 \n--enable-clocale=gnu --enable-libstdcxx-debug \n--enable-objc-gc --enable-mpfr --enable-targets=all \n--enable-checking=release --build=i486-linux-gnu \n--host=i486-linux-gnu --target=i486-linux-gnu\n```\n\nFortran it is not installed on some Ubunta systems. As such, prereq should be modified to check for a Fortran compiler on every platform except OS X. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8024\n\n",
     "created_at": "2010-01-21T12:05:49Z",
     "labels": [
         "component: build",
@@ -30,7 +30,6 @@ http://sporadic.stanford.edu/bump/sage-4.3.1-errors
 
 that despite gcc being built with Fortran support
 
-
 ```
 Configured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang 
 --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext 
@@ -40,7 +39,6 @@ Configured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c
 --enable-checking=release --build=i486-linux-gnu 
 --host=i486-linux-gnu --target=i486-linux-gnu
 ```
-
 
 Fortran it is not installed on some Ubunta systems. As such, prereq should be modified to check for a Fortran compiler on every platform except OS X. 
 

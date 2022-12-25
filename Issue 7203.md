@@ -3,7 +3,7 @@
 archive/issues_007203.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOne of changes made in my recent update of prereq (#7021) from 0.3 to 0.4 was to exit when there was a mix of GNU and non-GNU compilers. \n\nWhilst this works if you have a GNU C compiler and a non-GNU C++ compiler, it does **not** work if you have a non-GNU C compiler and a GNU C++ compiler. This is a bug, and is entirely my fault. \n\nBasically the testing for mixing of compilers happens in configure.ac something like this:\n\n\n\n```\nif test x$GCC = xyes\nthen\n    # Check if C++ compiler is g++. If not, there is a problem.\n    # as mixing GNU and non-GNU compilers is likely to cause problems.\n    if test x$GXX != xyes\n    then\n       AC_MSG_WARN([You are trying to use gcc but not g++])\n       AC_MSG_ERROR([The mixing of GNU and non-GNU compilers is not permitted])\n    fi\n```\n\n\nThere is no corresponding test if x$GXX (the C++ compiler) is GNU. (Yes, GXX is correct, its not a mistake/)\n\nI will also need to fix #7156, which is a minor portability issue with prereq. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7203\n\n",
+    "body": "Assignee: tbd\n\nOne of changes made in my recent update of prereq (#7021) from 0.3 to 0.4 was to exit when there was a mix of GNU and non-GNU compilers. \n\nWhilst this works if you have a GNU C compiler and a non-GNU C++ compiler, it does **not** work if you have a non-GNU C compiler and a GNU C++ compiler. This is a bug, and is entirely my fault. \n\nBasically the testing for mixing of compilers happens in configure.ac something like this:\n\n\n```\nif test x$GCC = xyes\nthen\n    # Check if C++ compiler is g++. If not, there is a problem.\n    # as mixing GNU and non-GNU compilers is likely to cause problems.\n    if test x$GXX != xyes\n    then\n       AC_MSG_WARN([You are trying to use gcc but not g++])\n       AC_MSG_ERROR([The mixing of GNU and non-GNU compilers is not permitted])\n    fi\n```\n\nThere is no corresponding test if x$GXX (the C++ compiler) is GNU. (Yes, GXX is correct, its not a mistake/)\n\nI will also need to fix #7156, which is a minor portability issue with prereq. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7203\n\n",
     "created_at": "2009-10-13T23:02:54Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ Whilst this works if you have a GNU C compiler and a non-GNU C++ compiler, it do
 Basically the testing for mixing of compilers happens in configure.ac something like this:
 
 
-
 ```
 if test x$GCC = xyes
 then
@@ -37,7 +36,6 @@ then
        AC_MSG_ERROR([The mixing of GNU and non-GNU compilers is not permitted])
     fi
 ```
-
 
 There is no corresponding test if x$GXX (the C++ compiler) is GNU. (Yes, GXX is correct, its not a mistake/)
 

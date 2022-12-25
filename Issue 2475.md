@@ -3,7 +3,7 @@
 archive/issues_002475.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen I started this (sage-2.10.3):\n\n```\ndims.py\nSCORE dims.py: 11% (6 of 54)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2475\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I started this (sage-2.10.3):\n\n```\ndims.py\nSCORE dims.py: 11% (6 of 54)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2475\n\n",
     "created_at": "2008-03-11T23:06:58Z",
     "labels": [
         "component: modular forms",
@@ -24,7 +24,6 @@ When I started this (sage-2.10.3):
 dims.py
 SCORE dims.py: 11% (6 of 54)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2475
 
@@ -92,7 +91,7 @@ archive/issue_events_005847.json:
 archive/issue_comments_016728.json:
 ```json
 {
-    "body": "Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by @williamstein created at 2008-03-15 02:30:17\n\nTo referee these patches:\n1. verify that they fix the coverage to 100%\n2. look for typos in the docstrings\n3. The p-new subspace \"serious bugfixes\" make it so one doesn't get negative dimensions.  This was because the old new subspace code subtracted off the images of old subspaces from the tiny little new subspace instead of subtracting off from the ful l cuspidal subspace. \n4. This is almost all docstring addition and fixing return types to be Integer.\n\nAfter applying these two patches:\n\n```\nteragon:modular was$ sage -coverage dims.py\n----------------------------------------------------------------------\ndims.py\nSCORE dims.py: 100% (46 of 46)\n----------------------------------------------------------------------\n```\n",
+    "body": "Attachment [sage-2475-part2_of_2.patch](tarball://root/attachments/some-uuid/ticket2475/sage-2475-part2_of_2.patch) by @williamstein created at 2008-03-15 02:30:17\n\nTo referee these patches:\n1. verify that they fix the coverage to 100%\n2. look for typos in the docstrings\n3. The p-new subspace \"serious bugfixes\" make it so one doesn't get negative dimensions.  This was because the old new subspace code subtracted off the images of old subspaces from the tiny little new subspace instead of subtracting off from the ful l cuspidal subspace. \n4. This is almost all docstring addition and fixing return types to be Integer.\n\nAfter applying these two patches:\n\n```\nteragon:modular was$ sage -coverage dims.py\n----------------------------------------------------------------------\ndims.py\nSCORE dims.py: 100% (46 of 46)\n----------------------------------------------------------------------\n```",
     "created_at": "2008-03-15T02:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2475",
     "type": "issue_comment",
@@ -118,7 +117,6 @@ dims.py
 SCORE dims.py: 100% (46 of 46)
 ----------------------------------------------------------------------
 ```
-
 
 
 

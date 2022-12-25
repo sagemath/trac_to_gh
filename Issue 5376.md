@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5376
 archive/issue_comments_041321.json:
 ```json
 {
-    "body": "Attachment [plot-rst.patch](tarball://root/attachments/some-uuid/ticket5376/plot-rst.patch) by mvngu created at 2009-02-27 08:24:50\n\nREFEREE REPORT\n\n\n\nThe patch **plot-rst.patch** applied OK against 3.4.alpha0 and all doctests passed with the options\n\n```\n-t -long -optional\n```\n\nThe reference manual built OK with the command\n\n```\nsage -docbuild reference html\n```\n\nChecking the relevant HTML file\n\n```\n/path/to/html/en/reference/sage/plot/plot.html\n```\n\nI see that the patch fixes the formatting and typo issues. Positive review.",
+    "body": "Attachment [plot-rst.patch](tarball://root/attachments/some-uuid/ticket5376/plot-rst.patch) by mvngu created at 2009-02-27 08:24:50\n\nREFEREE REPORT\n\n\n\nThe patch **plot-rst.patch** applied OK against 3.4.alpha0 and all doctests passed with the options\n\n```\n-t -long -optional\n```\nThe reference manual built OK with the command\n\n```\nsage -docbuild reference html\n```\nChecking the relevant HTML file\n\n```\n/path/to/html/en/reference/sage/plot/plot.html\n```\nI see that the patch fixes the formatting and typo issues. Positive review.",
     "created_at": "2009-02-27T08:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5376",
     "type": "issue_comment",
@@ -53,19 +53,16 @@ The patch **plot-rst.patch** applied OK against 3.4.alpha0 and all doctests pass
 ```
 -t -long -optional
 ```
-
 The reference manual built OK with the command
 
 ```
 sage -docbuild reference html
 ```
-
 Checking the relevant HTML file
 
 ```
 /path/to/html/en/reference/sage/plot/plot.html
 ```
-
 I see that the patch fixes the formatting and typo issues. Positive review.
 
 

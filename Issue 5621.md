@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5621
 archive/issue_comments_043807.json:
 ```json
 {
-    "body": "The patch `trac_5621-doctests-calculus.patch` adds doctests to 6 functions/methods in `sage/calculus/calculus.py`, raising the coverage of that module by 1% to 52%. Interestingly, with the command\n\n```\nsage -coverage\n```\n\nSage doesn't pick up doctests for functions/methods where there's a blank line between the docstring and the function/method. For example, as it now stands with Sage 3.4, the function `desolve_system_strings()` in the module `sage/calculus/desolvers.py` has doctests but Sage doesn't pick that up. Doing a doctest coverage on Sage 3.4 shows that the coverage for `sage/calculus/desolvers.py` is at 75%. But after removing the blank line between the function signature and its docstring, running the doctest coverage again shows that `sage/calculus/desolvers.py` has 87% coverage.",
+    "body": "The patch `trac_5621-doctests-calculus.patch` adds doctests to 6 functions/methods in `sage/calculus/calculus.py`, raising the coverage of that module by 1% to 52%. Interestingly, with the command\n\n```\nsage -coverage\n```\nSage doesn't pick up doctests for functions/methods where there's a blank line between the docstring and the function/method. For example, as it now stands with Sage 3.4, the function `desolve_system_strings()` in the module `sage/calculus/desolvers.py` has doctests but Sage doesn't pick that up. Doing a doctest coverage on Sage 3.4 shows that the coverage for `sage/calculus/desolvers.py` is at 75%. But after removing the blank line between the function signature and its docstring, running the doctest coverage again shows that `sage/calculus/desolvers.py` has 87% coverage.",
     "created_at": "2009-03-28T04:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5621",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ The patch `trac_5621-doctests-calculus.patch` adds doctests to 6 functions/metho
 ```
 sage -coverage
 ```
-
 Sage doesn't pick up doctests for functions/methods where there's a blank line between the docstring and the function/method. For example, as it now stands with Sage 3.4, the function `desolve_system_strings()` in the module `sage/calculus/desolvers.py` has doctests but Sage doesn't pick that up. Doing a doctest coverage on Sage 3.4 shows that the coverage for `sage/calculus/desolvers.py` is at 75%. But after removing the blank line between the function signature and its docstring, running the doctest coverage again shows that `sage/calculus/desolvers.py` has 87% coverage.
 
 
@@ -56,7 +55,7 @@ Sage doesn't pick up doctests for functions/methods where there's a blank line b
 archive/issue_comments_043808.json:
 ```json
 {
-    "body": "This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4921:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4968:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 5537:\n    sage: var(\"a,b\");\nExpected nothing\nGot:\n    (a, b)\n**********************************************************************\n3 items had failures:\n   1 of   6 in __main__.example_119\n   1 of  12 in __main__.example_121\n   1 of   5 in __main__.example_138\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_calculus.py\n         [48.7 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/calculus/calculus.py # 3 doctests failed\n```\n",
+    "body": "This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4921:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4968:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 5537:\n    sage: var(\"a,b\");\nExpected nothing\nGot:\n    (a, b)\n**********************************************************************\n3 items had failures:\n   1 of   6 in __main__.example_119\n   1 of  12 in __main__.example_121\n   1 of   5 in __main__.example_138\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_calculus.py\n         [48.7 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/calculus/calculus.py # 3 doctests failed\n```",
     "created_at": "2009-04-12T06:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5621",
     "type": "issue_comment",
@@ -105,7 +104,6 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_043809.json:
@@ -131,7 +129,7 @@ based on sage-3.4.1.rc3
 archive/issue_comments_043810.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n\nYour wish is my command :-)  Please see the new patch, rebased against sage-3.4.1.rc3.",
+    "body": "Replying to [comment:2 was]:\n> This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n\n\nYour wish is my command :-)  Please see the new patch, rebased against sage-3.4.1.rc3.",
     "created_at": "2009-04-17T03:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5621",
     "type": "issue_comment",
@@ -142,6 +140,7 @@ archive/issue_comments_043810.json:
 
 Replying to [comment:2 was]:
 > This patch causes a few tiny doctest failures.  Can you fix them and post another patch:
+
 
 
 Your wish is my command :-)  Please see the new patch, rebased against sage-3.4.1.rc3.

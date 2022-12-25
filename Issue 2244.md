@@ -172,7 +172,7 @@ Apply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-i
 archive/issue_comments_014844.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> Apply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n> \n>  -- William\n\nNo, it doesn't, at least for me:\n\n```\nsage$ patch -p1 --dry-run < trac_2244-nowiggle.patch \npatching file sage/plot/plot.py\nHunk #1 FAILED at 3284.\nHunk #2 succeeded at 3421 with fuzz 2 (offset -11 lines).\nHunk #3 succeeded at 3445 (offset -12 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\n```\n\nI checked for hunk one in plot.py and it just isn't there. Maybe this patch depends on another patch to be applied first? \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 was]:\n> Apply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n> \n>  -- William\n\n\nNo, it doesn't, at least for me:\n\n```\nsage$ patch -p1 --dry-run < trac_2244-nowiggle.patch \npatching file sage/plot/plot.py\nHunk #1 FAILED at 3284.\nHunk #2 succeeded at 3421 with fuzz 2 (offset -11 lines).\nHunk #3 succeeded at 3445 (offset -12 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\n```\nI checked for hunk one in plot.py and it just isn't there. Maybe this patch depends on another patch to be applied first? \n\nCheers,\n\nMichael",
     "created_at": "2008-02-25T02:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
@@ -186,6 +186,7 @@ Replying to [comment:6 was]:
 > 
 >  -- William
 
+
 No, it doesn't, at least for me:
 
 ```
@@ -196,7 +197,6 @@ Hunk #2 succeeded at 3421 with fuzz 2 (offset -11 lines).
 Hunk #3 succeeded at 3445 (offset -12 lines).
 1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 ```
-
 I checked for hunk one in plot.py and it just isn't there. Maybe this patch depends on another patch to be applied first? 
 
 Cheers,
@@ -210,7 +210,7 @@ Michael
 archive/issue_comments_014845.json:
 ```json
 {
-    "body": "This gives the following reject:\n\n\n```\n\n--- plot.py\n+++ plot.py\n@@ -3284,8 +3284,9 @@ class PlotFactory(GraphicPrimitiveFactor\n         200\n         sage: P          # render\n \n-    We plot with randomize=False, so that the same points are\n-    evenly spaced (and always the same):\n+    We plot with randomize=False, which makes the initial sample\n+    points evenly spaced (hence always the same).  Adaptive plotting\n+    might insert other points, however.\n         sage: p = plot(sin,-1,1,plot_points=3,plot_division=0,randomize=False)\n         sage: p[0][1][0]\n         -0.66666666666666...\n\n```\n\n\nand the corresponding bit in plot.py in 2.10.3.rc1 is\n\n\n```\n\n        sage: len(P[0])  # random output\n        80\n        sage: P          # render\n\n    Some colored functions:\n\n        sage: plot(sin, 0, 10, rgbcolor='#ff00ff')\n        sage: plot(sin, 0, 10, rgbcolor='purple')\n    \n    We plot several functions together by passing a list\n    of functions as input:\n        sage: plot([sin(n*x) for n in [1..4]], (0, pi))\n\n```\n",
+    "body": "This gives the following reject:\n\n```\n\n--- plot.py\n+++ plot.py\n@@ -3284,8 +3284,9 @@ class PlotFactory(GraphicPrimitiveFactor\n         200\n         sage: P          # render\n \n-    We plot with randomize=False, so that the same points are\n-    evenly spaced (and always the same):\n+    We plot with randomize=False, which makes the initial sample\n+    points evenly spaced (hence always the same).  Adaptive plotting\n+    might insert other points, however.\n         sage: p = plot(sin,-1,1,plot_points=3,plot_division=0,randomize=False)\n         sage: p[0][1][0]\n         -0.66666666666666...\n\n```\n\nand the corresponding bit in plot.py in 2.10.3.rc1 is\n\n```\n\n        sage: len(P[0])  # random output\n        80\n        sage: P          # render\n\n    Some colored functions:\n\n        sage: plot(sin, 0, 10, rgbcolor='#ff00ff')\n        sage: plot(sin, 0, 10, rgbcolor='purple')\n    \n    We plot several functions together by passing a list\n    of functions as input:\n        sage: plot([sin(n*x) for n in [1..4]], (0, pi))\n\n```",
     "created_at": "2008-03-05T00:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
@@ -220,7 +220,6 @@ archive/issue_comments_014845.json:
 ```
 
 This gives the following reject:
-
 
 ```
 
@@ -241,9 +240,7 @@ This gives the following reject:
 
 ```
 
-
 and the corresponding bit in plot.py in 2.10.3.rc1 is
-
 
 ```
 
@@ -261,7 +258,6 @@ and the corresponding bit in plot.py in 2.10.3.rc1 is
         sage: plot([sin(n*x) for n in [1..4]], (0, pi))
 
 ```
-
 
 
 

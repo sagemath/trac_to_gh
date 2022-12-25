@@ -3,7 +3,7 @@
 archive/issues_005855.json:
 ```json
 {
-    "body": "Assignee: somebody\n\ne.g.\n\n```\nsage: list(squarefree_divisors(12))\n[1, 2, 3, 6, -1, -2, -3, -6]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5855\n\n",
+    "body": "Assignee: somebody\n\ne.g.\n\n```\nsage: list(squarefree_divisors(12))\n[1, 2, 3, 6, -1, -2, -3, -6]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5855\n\n",
     "created_at": "2009-04-22T15:30:53Z",
     "labels": [
         "component: basic arithmetic",
@@ -24,7 +24,6 @@ e.g.
 sage: list(squarefree_divisors(12))
 [1, 2, 3, 6, -1, -2, -3, -6]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5855
 
@@ -144,7 +143,7 @@ Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some
 archive/issue_comments_046172.json:
 ```json
 {
-    "body": "I'm a bit late to this discussion.  I see that the new funtcion applies, for example, tp ZZ[x], but gives the wrong results because factor() is wrong for that ring:\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 30*x\nsage: f.factor()\n30 * x\n```\n\nwhich should return 2*3*5*x, if we mean the factors to be irreducibles in th parent ring.  Unless we make a deliberate design decision not to (since then factorization obviously becomes as hard as in ZZ).",
+    "body": "I'm a bit late to this discussion.  I see that the new funtcion applies, for example, tp ZZ[x], but gives the wrong results because factor() is wrong for that ring:\n\n```\nsage: R.<x> = ZZ[]\nsage: f = 30*x\nsage: f.factor()\n30 * x\n```\nwhich should return 2*3*5*x, if we mean the factors to be irreducibles in th parent ring.  Unless we make a deliberate design decision not to (since then factorization obviously becomes as hard as in ZZ).",
     "created_at": "2009-04-28T17:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
@@ -161,7 +160,6 @@ sage: f = 30*x
 sage: f.factor()
 30 * x
 ```
-
 which should return 2*3*5*x, if we mean the factors to be irreducibles in th parent ring.  Unless we make a deliberate design decision not to (since then factorization obviously becomes as hard as in ZZ).
 
 

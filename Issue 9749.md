@@ -3,7 +3,7 @@
 archive/issues_009749.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  alexghitza @craigcitro\n\nI was working on the Ribet-Stein book, and a computation that is trivial in Magma, and must have been trivial in Sage until recently is now impossibly hard.\n\n\n```\nsage: M = ModularForms(1,512)\nsage: time M.hecke_matrix(5)\n[[takes a very, very long time indeed.]]\n```\n\nThis is very sad, since M has dimension only 43. Also, it is easy to get the answer directly --from start to finish in less than a second! -- as follows:\n\n```\nsage: time B = victor_miller_basis(512,5*43+1)\nCPU times: user 0.21 s, sys: 0.00 s, total: 0.21 s\nWall time: 0.21 s\nsage: time t5 = hecke_operator_on_basis(B, 5, 512)\nCPU times: user 0.61 s, sys: 0.00 s, total: 0.61 s\nWall time: 0.61 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9749\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  alexghitza @craigcitro\n\nI was working on the Ribet-Stein book, and a computation that is trivial in Magma, and must have been trivial in Sage until recently is now impossibly hard.\n\n```\nsage: M = ModularForms(1,512)\nsage: time M.hecke_matrix(5)\n[[takes a very, very long time indeed.]]\n```\nThis is very sad, since M has dimension only 43. Also, it is easy to get the answer directly --from start to finish in less than a second! -- as follows:\n\n```\nsage: time B = victor_miller_basis(512,5*43+1)\nCPU times: user 0.21 s, sys: 0.00 s, total: 0.21 s\nWall time: 0.21 s\nsage: time t5 = hecke_operator_on_basis(B, 5, 512)\nCPU times: user 0.61 s, sys: 0.00 s, total: 0.61 s\nWall time: 0.61 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9749\n\n",
     "created_at": "2010-08-14T19:06:36Z",
     "labels": [
         "component: modular forms",
@@ -22,13 +22,11 @@ CC:  alexghitza @craigcitro
 
 I was working on the Ribet-Stein book, and a computation that is trivial in Magma, and must have been trivial in Sage until recently is now impossibly hard.
 
-
 ```
 sage: M = ModularForms(1,512)
 sage: time M.hecke_matrix(5)
 [[takes a very, very long time indeed.]]
 ```
-
 This is very sad, since M has dimension only 43. Also, it is easy to get the answer directly --from start to finish in less than a second! -- as follows:
 
 ```
@@ -39,7 +37,6 @@ sage: time t5 = hecke_operator_on_basis(B, 5, 512)
 CPU times: user 0.61 s, sys: 0.00 s, total: 0.61 s
 Wall time: 0.61 s
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9749

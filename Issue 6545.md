@@ -223,7 +223,7 @@ Should I mark this as a positive review? Once the patch to ticket 5958 is applie
 archive/issue_comments_053272.json:
 ```json
 {
-    "body": "I just did a {{{make test}} with the following patches applied on sage.math\n\n\n```\nvariety_CC.patch\nvariety_CC2.patch\ntrac_6545_mpolynomial_ideal_sorted_outputs.patch\n```\n\n\nand all tests passed. So I guess it is a **positive review** then? I leave it up to you.",
+    "body": "I just did a {{{make test}} with the following patches applied on sage.math\n\n```\nvariety_CC.patch\nvariety_CC2.patch\ntrac_6545_mpolynomial_ideal_sorted_outputs.patch\n```\n\nand all tests passed. So I guess it is a **positive review** then? I leave it up to you.",
     "created_at": "2009-08-26T21:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
@@ -234,13 +234,11 @@ archive/issue_comments_053272.json:
 
 I just did a {{{make test}} with the following patches applied on sage.math
 
-
 ```
 variety_CC.patch
 variety_CC2.patch
 trac_6545_mpolynomial_ideal_sorted_outputs.patch
 ```
-
 
 and all tests passed. So I guess it is a **positive review** then? I leave it up to you.
 
@@ -271,7 +269,7 @@ Well, maybe not. But I'll want to. ;-)
 archive/issue_comments_053274.json:
 ```json
 {
-    "body": "First I merged patches at #6596 and #6628. Merging `trac_6545_mpolynomial_ideal_sorted_outputs.patch` results in a hunk failure:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch && hg qpush\nadding trac_6545_mpolynomial_ideal_sorted_outputs.patch to series file\napplying trac_6545_mpolynomial_ideal_sorted_outputs.patch\npatching file sage/schemes/hyperelliptic_curves/jacobian_morphism.py\nHunk #1 FAILED at 294\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/jacobian_morphism.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6545_mpolynomial_ideal_sorted_outputs.patch\n```\n",
+    "body": "First I merged patches at #6596 and #6628. Merging `trac_6545_mpolynomial_ideal_sorted_outputs.patch` results in a hunk failure:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch && hg qpush\nadding trac_6545_mpolynomial_ideal_sorted_outputs.patch to series file\napplying trac_6545_mpolynomial_ideal_sorted_outputs.patch\npatching file sage/schemes/hyperelliptic_curves/jacobian_morphism.py\nHunk #1 FAILED at 294\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/jacobian_morphism.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6545_mpolynomial_ideal_sorted_outputs.patch\n```",
     "created_at": "2009-09-03T06:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
@@ -293,7 +291,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_6545_mpolynomial_ideal_sorted_outputs.patch
 ```
-
 
 
 
@@ -338,7 +335,7 @@ rebased against Sage 4.1.2.alpha1
 archive/issue_comments_053277.json:
 ```json
 {
-    "body": "Attachment [trac_6545-rebased.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545-rebased.patch) by mvngu created at 2009-09-09 06:04:43\n\nThe patch `trac_6545-rebased.patch` is a rebase of `trac_6545_mpolynomial_ideal_sorted_outputs.patch` against Sage 4.1.2.alpha1. The rebased patch is the same as the previous patch, but without this hunk:\n\n```\n--- jacobian_morphism.py                                                                                                                                                                                             \n+++ jacobian_morphism.py                                                                                                                                                                                             \n@@ -295,7 +295,7 @@\n         sage: H = HyperellipticCurve(f, 2*x); H                                                                                                                                                                     \n         Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1                                                                                        \n         sage: J = H.jacobian()(F); J                                                                                                                                                                                \n-        verbose 0 (919: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.                                                                                                \n+        verbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.                                                                                                \n         Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 10000000000000000000000\\\n00000057                                                                                                                                                                                                             \n         sage: Q = J(H.lift_x(F(1))); Q                                                                                                                                                                              \n         (x + 1000000000000000000000000000056, y + 1000000000000000000000000000056)\n```\n",
+    "body": "Attachment [trac_6545-rebased.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545-rebased.patch) by mvngu created at 2009-09-09 06:04:43\n\nThe patch `trac_6545-rebased.patch` is a rebase of `trac_6545_mpolynomial_ideal_sorted_outputs.patch` against Sage 4.1.2.alpha1. The rebased patch is the same as the previous patch, but without this hunk:\n\n```\n--- jacobian_morphism.py                                                                                                                                                                                             \n+++ jacobian_morphism.py                                                                                                                                                                                             \n@@ -295,7 +295,7 @@\n         sage: H = HyperellipticCurve(f, 2*x); H                                                                                                                                                                     \n         Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1                                                                                        \n         sage: J = H.jacobian()(F); J                                                                                                                                                                                \n-        verbose 0 (919: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.                                                                                                \n+        verbose 0 (...: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.                                                                                                \n         Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 10000000000000000000000\\\n00000057                                                                                                                                                                                                             \n         sage: Q = J(H.lift_x(F(1))); Q                                                                                                                                                                              \n         (x + 1000000000000000000000000000056, y + 1000000000000000000000000000056)\n```",
     "created_at": "2009-09-09T06:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
@@ -365,7 +362,6 @@ The patch `trac_6545-rebased.patch` is a rebase of `trac_6545_mpolynomial_ideal_
          sage: Q = J(H.lift_x(F(1))); Q                                                                                                                                                                              
          (x + 1000000000000000000000000000056, y + 1000000000000000000000000000056)
 ```
-
 
 
 

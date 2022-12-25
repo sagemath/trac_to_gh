@@ -3,7 +3,7 @@
 archive/issues_005939.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThere is a typo in the docstring for the graph automorphism function:\n\n\n```\n``translation`` - if True, then output includes a a\n           dictionary translating from keys == vertices to entries == elements\n           of 1,2,...,n (since permutation groups can currently only act on\n           positive integers).\n```\n\n\nNotice that it says \"includes a a\" (a appears twice). \n\nAlso, the doctests in that docstring do not test the partition parameter at all, and it seems to me that would be a very important parameter to illustrate, especially given that the docstring starts {{{\n        Returns the largest subgroup of the automorphism group of the\n        (di)graph whose orbit partition is finer than the partition given.\n}}}\nwhich suggests that the most important thing the reader should know is that the automorphism_group computes something associated to a partition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5939\n\n",
+    "body": "Assignee: @rlmill\n\nThere is a typo in the docstring for the graph automorphism function:\n\n```\n``translation`` - if True, then output includes a a\n           dictionary translating from keys == vertices to entries == elements\n           of 1,2,...,n (since permutation groups can currently only act on\n           positive integers).\n```\n\nNotice that it says \"includes a a\" (a appears twice). \n\nAlso, the doctests in that docstring do not test the partition parameter at all, and it seems to me that would be a very important parameter to illustrate, especially given that the docstring starts {{{\n        Returns the largest subgroup of the automorphism group of the\n        (di)graph whose orbit partition is finer than the partition given.\n}}}\nwhich suggests that the most important thing the reader should know is that the automorphism_group computes something associated to a partition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5939\n\n",
     "created_at": "2009-04-29T16:26:04Z",
     "labels": [
         "component: graph theory",
@@ -21,14 +21,12 @@ Assignee: @rlmill
 
 There is a typo in the docstring for the graph automorphism function:
 
-
 ```
 ``translation`` - if True, then output includes a a
            dictionary translating from keys == vertices to entries == elements
            of 1,2,...,n (since permutation groups can currently only act on
            positive integers).
 ```
-
 
 Notice that it says "includes a a" (a appears twice). 
 

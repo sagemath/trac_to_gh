@@ -141,7 +141,7 @@ Michael
 archive/issue_comments_001733.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> Hi John,\n> \n> I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.\n> \n\nNone of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.\n\nIt's something I could do, yes.  So please keep the ticket open.\n\n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:4 mabshoff]:\n> Hi John,\n> \n> I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.\n> \n\n\nNone of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.\n\nIt's something I could do, yes.  So please keep the ticket open.\n\n> Cheers,\n> \n> Michael",
     "created_at": "2008-04-07T08:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ Replying to [comment:4 mabshoff]:
 > 
 > I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.
 > 
+
 
 None of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.
 
@@ -171,7 +172,7 @@ It's something I could do, yes.  So please keep the ticket open.
 archive/issue_comments_001734.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> Replying to [comment:4 mabshoff]:\n> > Hi John,\n\nHi John,\n\n> > \n> > I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.\n> > \n> \n> None of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.\n> \n> It's something I could do, yes.  So please keep the ticket open.\n\nSure. I just wanted to make sure that the ticket hadn't already been solved. If you plan to work on it you might want to take ownership of this ticket since roed is rather busy these days.\n \n> > Cheers,\n> > \n> > Michael\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 cremona]:\n> Replying to [comment:4 mabshoff]:\n> > Hi John,\n\n\nHi John,\n\n> > \n> > I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.\n> > \n\n> \n> None of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.\n> \n> It's something I could do, yes.  So please keep the ticket open.\n\n\nSure. I just wanted to make sure that the ticket hadn't already been solved. If you plan to work on it you might want to take ownership of this ticket since roed is rather busy these days.\n \n> > Cheers,\n> > \n> > Michael\n\n\nCheers,\n\nMichael",
     "created_at": "2008-04-07T14:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/360",
     "type": "issue_comment",
@@ -184,21 +185,25 @@ Replying to [comment:5 cremona]:
 > Replying to [comment:4 mabshoff]:
 > > Hi John,
 
+
 Hi John,
 
 > > 
 > > I am curious how much of this code has found its way into Sage and it this ticket can be closed. I did add you to the CC field.
 > > 
+
 > 
 > None of this is in Sage at all yet.  Over Q the functionality is there (provided by eclib) but not over number fields.
 > 
 > It's something I could do, yes.  So please keep the ticket open.
+
 
 Sure. I just wanted to make sure that the ticket hadn't already been solved. If you plan to work on it you might want to take ownership of this ticket since roed is rather busy these days.
  
 > > Cheers,
 > > 
 > > Michael
+
 
 Cheers,
 

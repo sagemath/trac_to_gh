@@ -3,7 +3,7 @@
 archive/issues_000682.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n     --  It would be great to have a short, simple description of\n    how to save and retrieve worksheets.  And maybe there could be an\n    `Open Worksheet' option on the file menu, right below `New Worksheet',\n    where it usually comes.  It took be the longest time to find the `Home' button!\n```\n\n\nBasically, the idea of this ticket is that upload/download is confusing for some people -- maybe load/save would be clearer.  Also, he's definitely right that there should be an Open option in the File menu when one is looking at a worksheet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/682\n\n",
+    "body": "Assignee: boothby\n\n```\n     --  It would be great to have a short, simple description of\n    how to save and retrieve worksheets.  And maybe there could be an\n    `Open Worksheet' option on the file menu, right below `New Worksheet',\n    where it usually comes.  It took be the longest time to find the `Home' button!\n```\n\nBasically, the idea of this ticket is that upload/download is confusing for some people -- maybe load/save would be clearer.  Also, he's definitely right that there should be an Open option in the File menu when one is looking at a worksheet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/682\n\n",
     "created_at": "2007-09-17T21:35:00Z",
     "labels": [
         "component: notebook"
@@ -17,14 +17,12 @@ archive/issues_000682.json:
 ```
 Assignee: boothby
 
-
 ```
      --  It would be great to have a short, simple description of
     how to save and retrieve worksheets.  And maybe there could be an
     `Open Worksheet' option on the file menu, right below `New Worksheet',
     where it usually comes.  It took be the longest time to find the `Home' button!
 ```
-
 
 Basically, the idea of this ticket is that upload/download is confusing for some people -- maybe load/save would be clearer.  Also, he's definitely right that there should be an Open option in the File menu when one is looking at a worksheet.
 

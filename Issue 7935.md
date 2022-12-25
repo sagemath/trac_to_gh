@@ -3,7 +3,7 @@
 archive/issues_007935.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @robertwb\n\nKeywords: elliptic curve, number fields, local data, tamagawa\n\nFirst of all, I spotted the following bug:\n\n\n```\nK.<a> = NumberField(x^2-38)\nE = EllipticCurve([a,1/2])\nE.global_integral_model()\n```\n\n\nwhich yields\n\n```\nAssertionError: bug in global_integral_model: [0, 0, 0, 4/361*a, 4/6859]\n```\n\n\nand that is easy to fix. But I also wish to add a `tamagawa_product` and improve the documentation.\n\nI will post a patch later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7935\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @robertwb\n\nKeywords: elliptic curve, number fields, local data, tamagawa\n\nFirst of all, I spotted the following bug:\n\n```\nK.<a> = NumberField(x^2-38)\nE = EllipticCurve([a,1/2])\nE.global_integral_model()\n```\n\nwhich yields\n\n```\nAssertionError: bug in global_integral_model: [0, 0, 0, 4/361*a, 4/6859]\n```\n\nand that is easy to fix. But I also wish to add a `tamagawa_product` and improve the documentation.\n\nI will post a patch later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7935\n\n",
     "created_at": "2010-01-15T13:41:18Z",
     "labels": [
         "component: elliptic curves",
@@ -24,20 +24,17 @@ Keywords: elliptic curve, number fields, local data, tamagawa
 
 First of all, I spotted the following bug:
 
-
 ```
 K.<a> = NumberField(x^2-38)
 E = EllipticCurve([a,1/2])
 E.global_integral_model()
 ```
 
-
 which yields
 
 ```
 AssertionError: bug in global_integral_model: [0, 0, 0, 4/361*a, 4/6859]
 ```
-
 
 and that is easy to fix. But I also wish to add a `tamagawa_product` and improve the documentation.
 
@@ -148,7 +145,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069028.json:
 ```json
 {
-    "body": "Thanks for all the excellent documentation!\n\nAbout the bug:  I am puzzled by this, as I still don't see how either my original code failed or how the change (of uniformiser) works best.  Here was my thinking:  if val(a_i)<0 for some i, then find the minimal e such that e*i+valuation(a_i) is >=0 for i in [1,2,3,4,6] and then replace a_i by `a_i/pi^(e*i)`.  The point about using the \"negative\" flag on the uniformiser was so ensure that dividing by a power of pi maintained integrality at all other primes.  Your new code will not do that.\n\nWould this be better:\n\n```\n        D = self.discriminant()\n        for P in D.prime_factors():\n            if not all([a.valuation(P)>=0 for a in ai]):\n                   pi=K.uniformizer(P,'negative')\n                   e  = min([(ai[i].valuation(P)/[1,2,3,4,6][i]) for i in range(5)]).floor()\n                   ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n```\n\n? \n\nI have not looked at your last point yet.  I am not so keen on tamagawa_product() not giving the product of the Tamagawa numbers.  Are you sure that over Q when an equation is non-minimal at p that the number returned by tamagawa_number() is not the index for the minimal model?  I thought that was what Tate's algorithm would give.  I'll need to look at it more closely.\n\n\nI am leaving this as \"needs review\" as I have not actually tested it yet!",
+    "body": "Thanks for all the excellent documentation!\n\nAbout the bug:  I am puzzled by this, as I still don't see how either my original code failed or how the change (of uniformiser) works best.  Here was my thinking:  if val(a_i)<0 for some i, then find the minimal e such that e*i+valuation(a_i) is >=0 for i in [1,2,3,4,6] and then replace a_i by `a_i/pi^(e*i)`.  The point about using the \"negative\" flag on the uniformiser was so ensure that dividing by a power of pi maintained integrality at all other primes.  Your new code will not do that.\n\nWould this be better:\n\n```\n        D = self.discriminant()\n        for P in D.prime_factors():\n            if not all([a.valuation(P)>=0 for a in ai]):\n                   pi=K.uniformizer(P,'negative')\n                   e  = min([(ai[i].valuation(P)/[1,2,3,4,6][i]) for i in range(5)]).floor()\n                   ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n```\n? \n\nI have not looked at your last point yet.  I am not so keen on tamagawa_product() not giving the product of the Tamagawa numbers.  Are you sure that over Q when an equation is non-minimal at p that the number returned by tamagawa_number() is not the index for the minimal model?  I thought that was what Tate's algorithm would give.  I'll need to look at it more closely.\n\n\nI am leaving this as \"needs review\" as I have not actually tested it yet!",
     "created_at": "2010-01-15T16:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -171,7 +168,6 @@ Would this be better:
                    e  = min([(ai[i].valuation(P)/[1,2,3,4,6][i]) for i in range(5)]).floor()
                    ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]
 ```
-
 ? 
 
 I have not looked at your last point yet.  I am not so keen on tamagawa_product() not giving the product of the Tamagawa numbers.  Are you sure that over Q when an equation is non-minimal at p that the number returned by tamagawa_number() is not the index for the minimal model?  I thought that was what Tate's algorithm would give.  I'll need to look at it more closely.
@@ -186,7 +182,7 @@ I am leaving this as "needs review" as I have not actually tested it yet!
 archive/issue_comments_069029.json:
 ```json
 {
-    "body": "Maybe you make a little sign error ? In the bug-example, the valuation of a6 at P = (a) is -2. So e is -1. So you are really multiplying the ais by pi<sup>+i</sup>. So pi should be integral away from P.\n\nAs to your comment on `tamagawa_product()`, we have\n\n\n```\nsage: E = EllipticCurve('11a2')\nsage: E.tamagawa_product()\n1\n\nsage: E2 = E.change_weierstrass_model([1/11,0,0,1])\nsage: E2\nElliptic Curve defined by y^2 + 3993*y = x^3 - 121*x^2 - 114492620*x - 466951591502 over Rational Field\nsage: E2.tamagawa_product()\n1\n```\n\n\nSo it is defined to be the product of the Tamagawa numbers (i.e. the index of E<sup>0</sup> (K_v)) on the minimal model.\n\nMy definition (and that is the only sensible over number fields) of `tamagawa_product()` changes as one changes the chosen invariant differential in such a way that the product of it with the periods is invariant under this choice. In particular it is not the product of the Tamagawa numbers despite the name.",
+    "body": "Maybe you make a little sign error ? In the bug-example, the valuation of a6 at P = (a) is -2. So e is -1. So you are really multiplying the ais by pi<sup>+i</sup>. So pi should be integral away from P.\n\nAs to your comment on `tamagawa_product()`, we have\n\n```\nsage: E = EllipticCurve('11a2')\nsage: E.tamagawa_product()\n1\n\nsage: E2 = E.change_weierstrass_model([1/11,0,0,1])\nsage: E2\nElliptic Curve defined by y^2 + 3993*y = x^3 - 121*x^2 - 114492620*x - 466951591502 over Rational Field\nsage: E2.tamagawa_product()\n1\n```\n\nSo it is defined to be the product of the Tamagawa numbers (i.e. the index of E<sup>0</sup> (K_v)) on the minimal model.\n\nMy definition (and that is the only sensible over number fields) of `tamagawa_product()` changes as one changes the chosen invariant differential in such a way that the product of it with the periods is invariant under this choice. In particular it is not the product of the Tamagawa numbers despite the name.",
     "created_at": "2010-01-15T17:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -199,7 +195,6 @@ Maybe you make a little sign error ? In the bug-example, the valuation of a6 at 
 
 As to your comment on `tamagawa_product()`, we have
 
-
 ```
 sage: E = EllipticCurve('11a2')
 sage: E.tamagawa_product()
@@ -211,7 +206,6 @@ Elliptic Curve defined by y^2 + 3993*y = x^3 - 121*x^2 - 114492620*x - 466951591
 sage: E2.tamagawa_product()
 1
 ```
-
 
 So it is defined to be the product of the Tamagawa numbers (i.e. the index of E<sup>0</sup> (K_v)) on the minimal model.
 
@@ -284,7 +278,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069033.json:
 ```json
 {
-    "body": "\n```\nFile \"sage/schemes/elliptic_curves/ell_number_field.py\", line 1026:\n    sage: E2\nExpected:\n    Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38\nGot:\n    Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38\n**********************************************************************\n```\n",
+    "body": "```\nFile \"sage/schemes/elliptic_curves/ell_number_field.py\", line 1026:\n    sage: E2\nExpected:\n    Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38\nGot:\n    Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38\n**********************************************************************\n```",
     "created_at": "2010-01-19T00:01:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -292,7 +286,6 @@ archive/issue_comments_069033.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 File "sage/schemes/elliptic_curves/ell_number_field.py", line 1026:
@@ -303,7 +296,6 @@ Got:
     Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38
 **********************************************************************
 ```
-
 
 
 
@@ -330,7 +322,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_069035.json:
 ```json
 {
-    "body": "This is very strange.  For that curve E2, I sometimes get\n\n```\nElliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38\n```\n\nbut sometimes I get\n\n```\nElliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38\n```\n\non the same machine.  (Note that both are valid, since both are models with a unit Discriminant so are certainly global minimal models.)\n\nThe only way round this I can see in the short term is to remove the line in the doctest which displays E2 itself.  What do people think?",
+    "body": "This is very strange.  For that curve E2, I sometimes get\n\n```\nElliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38\n```\nbut sometimes I get\n\n```\nElliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38\n```\non the same machine.  (Note that both are valid, since both are models with a unit Discriminant so are certainly global minimal models.)\n\nThe only way round this I can see in the short term is to remove the line in the doctest which displays E2 itself.  What do people think?",
     "created_at": "2010-01-19T14:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -344,13 +336,11 @@ This is very strange.  For that curve E2, I sometimes get
 ```
 Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38
 ```
-
 but sometimes I get
 
 ```
 Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38
 ```
-
 on the same machine.  (Note that both are valid, since both are models with a unit Discriminant so are certainly global minimal models.)
 
 The only way round this I can see in the short term is to remove the line in the doctest which displays E2 itself.  What do people think?
@@ -399,7 +389,7 @@ As we are back to review: What about another name for `tamagawa_product`. It see
 archive/issue_comments_069038.json:
 ```json
 {
-    "body": "Replying to [comment:11 wuthrich]:\n> I was afraid that this would happen. I strongly believe that this is the same bug as #7930.\n> Both answers are valid global minimal models (as mentionned earlier), I could propose that we put a #random behind it and wait for #7930 to be solved. \n\nI'll go with that.  I'll even put in a comment after the #random saying (minimal model is not unique).",
+    "body": "Replying to [comment:11 wuthrich]:\n> I was afraid that this would happen. I strongly believe that this is the same bug as #7930.\n> Both answers are valid global minimal models (as mentionned earlier), I could propose that we put a #random behind it and wait for #7930 to be solved. \n\n\nI'll go with that.  I'll even put in a comment after the #random saying (minimal model is not unique).",
     "created_at": "2010-01-19T15:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -412,6 +402,7 @@ Replying to [comment:11 wuthrich]:
 > I was afraid that this would happen. I strongly believe that this is the same bug as #7930.
 > Both answers are valid global minimal models (as mentionned earlier), I could propose that we put a #random behind it and wait for #7930 to be solved. 
 
+
 I'll go with that.  I'll even put in a comment after the #random saying (minimal model is not unique).
 
 
@@ -421,7 +412,7 @@ I'll go with that.  I'll even put in a comment after the #random saying (minimal
 archive/issue_comments_069039.json:
 ```json
 {
-    "body": "Replying to [comment:12 wuthrich]:\n> As we are back to review: What about another name for `tamagawa_product`. It seems not a bad name for what it is, but I admit that John objection is a fair one. What other names could we give it ?\n\nHowe about bsd_tamagawa_product() or minimal_tamagawa_product()?",
+    "body": "Replying to [comment:12 wuthrich]:\n> As we are back to review: What about another name for `tamagawa_product`. It seems not a bad name for what it is, but I admit that John objection is a fair one. What other names could we give it ?\n\n\nHowe about bsd_tamagawa_product() or minimal_tamagawa_product()?",
     "created_at": "2010-01-19T15:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -432,6 +423,7 @@ archive/issue_comments_069039.json:
 
 Replying to [comment:12 wuthrich]:
 > As we are back to review: What about another name for `tamagawa_product`. It seems not a bad name for what it is, but I admit that John objection is a fair one. What other names could we give it ?
+
 
 Howe about bsd_tamagawa_product() or minimal_tamagawa_product()?
 
@@ -460,7 +452,7 @@ Patch trac_7935b.patch adds the #random tag.
 archive/issue_comments_069041.json:
 ```json
 {
-    "body": "> How about bsd_tamagawa_product() or minimal_tamagawa_product()?\n\nthe first one would be ok, the second is missleading as it is not minimal.\n\ntamagawa_product_bsd or tamagawa_product_as_in_bsd so that the tab still\ncompletes it as before.",
+    "body": "> How about bsd_tamagawa_product() or minimal_tamagawa_product()?\n\n\nthe first one would be ok, the second is missleading as it is not minimal.\n\ntamagawa_product_bsd or tamagawa_product_as_in_bsd so that the tab still\ncompletes it as before.",
     "created_at": "2010-01-19T15:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7935",
     "type": "issue_comment",
@@ -470,6 +462,7 @@ archive/issue_comments_069041.json:
 ```
 
 > How about bsd_tamagawa_product() or minimal_tamagawa_product()?
+
 
 the first one would be ok, the second is missleading as it is not minimal.
 

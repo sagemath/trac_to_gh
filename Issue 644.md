@@ -46,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/644
 archive/issue_comments_003325.json:
 ```json
 {
-    "body": "Better formatting: \n\n```\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos         # should be sin(1)+cos(1), or at least throw an error\nsage: f = 3*sin\nsage: f(1)\n3*sin             # should be 3*sin(1)\n```\n",
+    "body": "Better formatting: \n\n```\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos         # should be sin(1)+cos(1), or at least throw an error\nsage: f = 3*sin\nsage: f(1)\n3*sin             # should be 3*sin(1)\n```",
     "created_at": "2007-09-12T19:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
@@ -74,7 +74,6 @@ sage: f(1)
 
 
 
-
 ---
 
 archive/issue_events_001715.json:
@@ -97,7 +96,7 @@ archive/issue_events_001715.json:
 archive/issue_comments_003326.json:
 ```json
 {
-    "body": "Also should have \n\n\n```\nsage: f(x) = x^2\nsage: f + sin\nx |--> sin(x) + x^2\n```\n",
+    "body": "Also should have \n\n```\nsage: f(x) = x^2\nsage: f + sin\nx |--> sin(x) + x^2\n```",
     "created_at": "2007-09-13T09:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
@@ -108,13 +107,11 @@ archive/issue_comments_003326.json:
 
 Also should have 
 
-
 ```
 sage: f(x) = x^2
 sage: f + sin
 x |--> sin(x) + x^2
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002410.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is a companion to #2409\n\n\n```\nsage: parametric_plot((t^2,t),-12,12)\n```\n\nworks as expected, but \n\n```\nsage: parametric_plot((1,t),-12,12)\n...\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\n\ndoes not.\n\nMore generally, I would like to see the following syntax supported \n\n```\nsage: parametric_plot((1,t),(t,-12,12))\n```\n\nwhich is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to \n\n```\nsage: plot(t,(t,-12,12))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2410\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a companion to #2409\n\n```\nsage: parametric_plot((t^2,t),-12,12)\n```\nworks as expected, but \n\n```\nsage: parametric_plot((1,t),-12,12)\n...\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\ndoes not.\n\nMore generally, I would like to see the following syntax supported \n\n```\nsage: parametric_plot((1,t),(t,-12,12))\n```\nwhich is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to \n\n```\nsage: plot(t,(t,-12,12))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2410\n\n",
     "created_at": "2008-03-06T20:48:30Z",
     "labels": [
         "component: graphics",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 This is a companion to #2409
 
-
 ```
 sage: parametric_plot((t^2,t),-12,12)
 ```
-
 works as expected, but 
 
 ```
@@ -32,7 +30,6 @@ sage: parametric_plot((1,t),-12,12)
 ...
 <type 'exceptions.TypeError'>: 'float' object is unsubscriptable
 ```
-
 does not.
 
 More generally, I would like to see the following syntax supported 
@@ -40,13 +37,11 @@ More generally, I would like to see the following syntax supported
 ```
 sage: parametric_plot((1,t),(t,-12,12))
 ```
-
 which is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to 
 
 ```
 sage: plot(t,(t,-12,12))
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2410

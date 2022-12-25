@@ -119,7 +119,7 @@ Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-
 archive/issue_comments_066929.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> I'd rather it looked for `__name__ == '__main__'` than `wiki_create_instance`.\n\nAh, excellent, that sure is the right way for doing this. I had missed this __name__ thing. \n\nThanks for the suggestion! Patch updated.",
+    "body": "Replying to [comment:3 robertwb]:\n> I'd rather it looked for `__name__ == '__main__'` than `wiki_create_instance`.\n\n\nAh, excellent, that sure is the right way for doing this. I had missed this __name__ thing. \n\nThanks for the suggestion! Patch updated.",
     "created_at": "2010-01-03T16:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
@@ -130,6 +130,7 @@ archive/issue_comments_066929.json:
 
 Replying to [comment:3 robertwb]:
 > I'd rather it looked for `__name__ == '__main__'` than `wiki_create_instance`.
+
 
 Ah, excellent, that sure is the right way for doing this. I had missed this __name__ thing. 
 
@@ -178,7 +179,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066932.json:
 ```json
 {
-    "body": "If I do\n\n```\nsage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do\n```\n\nthen tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.\n\nHere's another question:\n\n```\nsage: from sage.misc.misc import inject_variable\nsage: inject_variable('a', 23)\nsage: inject_variable('a', 26)\n/Applications/sage/local/bin/sage-ipython:1: RuntimeWarning: redefining global value `a`\n  #!/usr/bin/env python\nsage: inject_variable('a', 29)\nsage: inject_variable('a', 33)\n```\n\nWhy is the warning only printed the first time?  Is that just the nature of these warnings?",
+    "body": "If I do\n\n```\nsage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do\n```\nthen tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.\n\nHere's another question:\n\n```\nsage: from sage.misc.misc import inject_variable\nsage: inject_variable('a', 23)\nsage: inject_variable('a', 26)\n/Applications/sage/local/bin/sage-ipython:1: RuntimeWarning: redefining global value `a`\n  #!/usr/bin/env python\nsage: inject_variable('a', 29)\nsage: inject_variable('a', 33)\n```\nWhy is the warning only printed the first time?  Is that just the nature of these warnings?",
     "created_at": "2010-01-13T23:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
@@ -192,7 +193,6 @@ If I do
 ```
 sage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do
 ```
-
 then tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.
 
 Here's another question:
@@ -206,7 +206,6 @@ sage: inject_variable('a', 26)
 sage: inject_variable('a', 29)
 sage: inject_variable('a', 33)
 ```
-
 Why is the warning only printed the first time?  Is that just the nature of these warnings?
 
 
@@ -250,7 +249,7 @@ archive/issue_events_018603.json:
 archive/issue_comments_066934.json:
 ```json
 {
-    "body": "Replying to [comment:6 jhpalmieri]:\n> If I do\n> {{{\n> sage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do\n> }}}\n> then tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.\n\nThanks for catching this. Please review the trivial #7928 follow up!\n\n> Here's another question:\n> {{{\n> sage: from sage.misc.misc import inject_variable\n> sage: inject_variable('a', 23)\n> sage: inject_variable('a', 26)\n> /Applications/sage/local/bin/sage-ipython:1: RuntimeWarning: redefining global value `a`\n>   #!/usr/bin/env python\n> sage: inject_variable('a', 29)\n> sage: inject_variable('a', 33)\n> }}}\n> Why is the warning only printed the first time?  Is that just the nature of these warnings?\n\nAh, I had not noticed this. It seems to be a feature of warn. I added a comment in #7928.",
+    "body": "Replying to [comment:6 jhpalmieri]:\n> If I do\n> \n> ```\n> sage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do\n> ```\n> then tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.\n\n\nThanks for catching this. Please review the trivial #7928 follow up!\n\n> Here's another question:\n> \n> ```\n> sage: from sage.misc.misc import inject_variable\n> sage: inject_variable('a', 23)\n> sage: inject_variable('a', 26)\n> /Applications/sage/local/bin/sage-ipython:1: RuntimeWarning: redefining global value `a`\n>   #!/usr/bin/env python\n> sage: inject_variable('a', 29)\n> sage: inject_variable('a', 33)\n> ```\n> Why is the warning only printed the first time?  Is that just the nature of these warnings?\n\n\nAh, I had not noticed this. It seems to be a feature of warn. I added a comment in #7928.",
     "created_at": "2010-01-14T08:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
@@ -261,15 +260,18 @@ archive/issue_comments_066934.json:
 
 Replying to [comment:6 jhpalmieri]:
 > If I do
-> {{{
+> 
+> ```
 > sage: inject_variable(3, 34)  # pass a non-string to inject_variable, which I probably shouldn't do
-> }}}
+> ```
 > then tab-completion is broken.  This is odd, and a little alarming.  Since this function isn't meant for casual users, maybe this isn't a big deal, but otherwise, perhaps we should check that the first argument is a string.
+
 
 Thanks for catching this. Please review the trivial #7928 follow up!
 
 > Here's another question:
-> {{{
+> 
+> ```
 > sage: from sage.misc.misc import inject_variable
 > sage: inject_variable('a', 23)
 > sage: inject_variable('a', 26)
@@ -277,7 +279,8 @@ Thanks for catching this. Please review the trivial #7928 follow up!
 >   #!/usr/bin/env python
 > sage: inject_variable('a', 29)
 > sage: inject_variable('a', 33)
-> }}}
+> ```
 > Why is the warning only printed the first time?  Is that just the nature of these warnings?
+
 
 Ah, I had not noticed this. It seems to be a feature of warn. I added a comment in #7928.

@@ -3,7 +3,7 @@
 archive/issues_002668.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
     "created_at": "2008-03-25T21:42:47Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ CC:  @ncalexan
 
 Keywords: QQbar AA loads dumps save
 
-
 ```
 sage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)
 ---------------------------------------------------------------------------
@@ -38,7 +37,6 @@ invalid data stream
 invalid load key, 'x'.
 Unable to load pickled data.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2668
 

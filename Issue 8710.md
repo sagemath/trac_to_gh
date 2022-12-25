@@ -119,7 +119,7 @@ archive/issue_comments_079349.json:
 archive/issue_comments_079350.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> 2. The doctests actually look much nicer normalized to have first entry 1! \n\nThe output looks nicer because this matrix is out of my textbook and was *designed* to have nice-looking answers.  I don't like the hard-to-decipher code that gets you there, but that's the way it goes.  Thanks for having a look and for the advice on getting this squared away.\n\nRob",
+    "body": "Replying to [comment:3 was]:\n> 2. The doctests actually look much nicer normalized to have first entry 1! \n\n\nThe output looks nicer because this matrix is out of my textbook and was *designed* to have nice-looking answers.  I don't like the hard-to-decipher code that gets you there, but that's the way it goes.  Thanks for having a look and for the advice on getting this squared away.\n\nRob",
     "created_at": "2010-04-19T05:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8710",
     "type": "issue_comment",
@@ -130,6 +130,7 @@ archive/issue_comments_079350.json:
 
 Replying to [comment:3 was]:
 > 2. The doctests actually look much nicer normalized to have first entry 1! 
+
 
 The output looks nicer because this matrix is out of my textbook and was *designed* to have nice-looking answers.  I don't like the hard-to-decipher code that gets you there, but that's the way it goes.  Thanks for having a look and for the advice on getting this squared away.
 

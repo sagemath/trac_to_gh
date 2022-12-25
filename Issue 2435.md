@@ -115,7 +115,7 @@ archive/issue_events_005746.json:
 archive/issue_comments_016439.json:
 ```json
 {
-    "body": "Line 3209 of integer.pyx\n\n\n```\nONE = Integer(1)\n```\n\n\nIt has refcount 2 when one quits. It gets overwritten in two dictionaries one dictionary, then two separate dictionaries that refer to it get deleted. \n\nAny easy fix is to cdef it or incref it, but that isn't what the real problem is.",
+    "body": "Line 3209 of integer.pyx\n\n```\nONE = Integer(1)\n```\n\nIt has refcount 2 when one quits. It gets overwritten in two dictionaries one dictionary, then two separate dictionaries that refer to it get deleted. \n\nAny easy fix is to cdef it or incref it, but that isn't what the real problem is.",
     "created_at": "2008-03-11T10:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
@@ -126,11 +126,9 @@ archive/issue_comments_016439.json:
 
 Line 3209 of integer.pyx
 
-
 ```
 ONE = Integer(1)
 ```
-
 
 It has refcount 2 when one quits. It gets overwritten in two dictionaries one dictionary, then two separate dictionaries that refer to it get deleted. 
 

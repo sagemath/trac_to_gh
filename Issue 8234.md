@@ -3,7 +3,7 @@
 archive/issues_008234.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nDelete a file in the data directory of the notebook and you get a page back about an \"Internal Server Error\"  (by selecting the file in the drop-down box, and clicking on the \"delete\" hyperlink).  File is actually deleted, though.\n\nTrace back from Sage command-line invocation of `notebook()` below.\n\nThis does not happen on 4.3.2rc0, but does happen on 4.3.2.  Some discussion, but not much that isn't here already:  \nhttp://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f852\n\n\n```\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Exception rendering:\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/sagenb-0.7.4-py2.6.egg/sagenb/notebook/twist.py\", line 671, in render\n            title=u'%s delete successful' % filename))\n        exceptions.TypeError: message() got an unexpected keyword argument 'title'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8234\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nDelete a file in the data directory of the notebook and you get a page back about an \"Internal Server Error\"  (by selecting the file in the drop-down box, and clicking on the \"delete\" hyperlink).  File is actually deleted, though.\n\nTrace back from Sage command-line invocation of `notebook()` below.\n\nThis does not happen on 4.3.2rc0, but does happen on 4.3.2.  Some discussion, but not much that isn't here already:  \nhttp://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f852\n\n```\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Exception rendering:\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/sagenb-0.7.4-py2.6.egg/sagenb/notebook/twist.py\", line 671, in render\n            title=u'%s delete successful' % filename))\n        exceptions.TypeError: message() got an unexpected keyword argument 'title'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8234\n\n",
     "created_at": "2010-02-10T18:45:13Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ Trace back from Sage command-line invocation of `notebook()` below.
 
 This does not happen on 4.3.2rc0, but does happen on 4.3.2.  Some discussion, but not much that isn't here already:  
 http://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f852
-
 
 ```
 2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Exception rendering:
@@ -55,7 +54,6 @@ http://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f8
             title=u'%s delete successful' % filename))
         exceptions.TypeError: message() got an unexpected keyword argument 'title'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8234
 
@@ -104,7 +102,7 @@ But we still need to fix the page title ("Error -- Sage"), which is wrong.
 archive/issue_comments_072614.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> But we still need to fix the page title (\"Error -- Sage\"), which is wrong.\nSee V3 at #6069.",
+    "body": "Replying to [comment:2 mpatel]:\n> But we still need to fix the page title (\"Error -- Sage\"), which is wrong.\n\nSee V3 at #6069.",
     "created_at": "2010-02-14T01:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8234",
     "type": "issue_comment",
@@ -115,6 +113,7 @@ archive/issue_comments_072614.json:
 
 Replying to [comment:2 mpatel]:
 > But we still need to fix the page title ("Error -- Sage"), which is wrong.
+
 See V3 at #6069.
 
 

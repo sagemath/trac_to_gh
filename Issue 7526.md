@@ -3,7 +3,7 @@
 archive/issues_007526.json:
 ```json
 {
-    "body": "Assignee: tbd\n\ne.g. in __mod__, we should coerce other only if needed.\nThis gives great speed up, e.g:\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 677 \u00b5s per loop  #Before\n625 loops, best of 3: 60.3 \u00b5s per loop #After\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7526\n\n",
+    "body": "Assignee: tbd\n\ne.g. in __mod__, we should coerce other only if needed.\nThis gives great speed up, e.g:\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 677 \u00b5s per loop  #Before\n625 loops, best of 3: 60.3 \u00b5s per loop #After\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7526\n\n",
     "created_at": "2009-11-24T21:57:05Z",
     "labels": [
         "component: performance",
@@ -29,7 +29,6 @@ sage: timeit('p%q')
 625 loops, best of 3: 677 µs per loop  #Before
 625 loops, best of 3: 60.3 µs per loop #After
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7526
@@ -109,7 +108,7 @@ for readability.
 archive/issue_comments_063680.json:
 ```json
 {
-    "body": "The patch looks good and applies & doctests cleanly for me. However, we can do a little better. \n\nOn my machine I get the following:\n\n**Before**\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 193 \u00b5s per loop\n```\n\n\n**Patch**\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 26.6 \u00b5s per loop\n```\n\n\nWith my incremental reviewer patch I get:\n\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 18.2 \u00b5s per loop\n```\n\n\nSo, this is a positive review if someone reviews my reviewer patch.",
+    "body": "The patch looks good and applies & doctests cleanly for me. However, we can do a little better. \n\nOn my machine I get the following:\n\n**Before**\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 193 \u00b5s per loop\n```\n\n**Patch**\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 26.6 \u00b5s per loop\n```\n\nWith my incremental reviewer patch I get:\n\n```\nsage: R.<x> = GF(3)[]\nsage: p=x^100 + x^81 + x^67 + x^33 + 1\nsage: q=x^10 + x^8 + x^6 + x^3 + 1\nsage: timeit('p%q')\n625 loops, best of 3: 18.2 \u00b5s per loop\n```\n\nSo, this is a positive review if someone reviews my reviewer patch.",
     "created_at": "2009-11-25T20:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
@@ -132,7 +131,6 @@ sage: timeit('p%q')
 625 loops, best of 3: 193 µs per loop
 ```
 
-
 **Patch**
 
 ```
@@ -143,9 +141,7 @@ sage: timeit('p%q')
 625 loops, best of 3: 26.6 µs per loop
 ```
 
-
 With my incremental reviewer patch I get:
-
 
 ```
 sage: R.<x> = GF(3)[]
@@ -154,7 +150,6 @@ sage: q=x^10 + x^8 + x^6 + x^3 + 1
 sage: timeit('p%q')
 625 loops, best of 3: 18.2 µs per loop
 ```
-
 
 So, this is a positive review if someone reviews my reviewer patch.
 
@@ -165,7 +160,7 @@ So, this is a positive review if someone reviews my reviewer patch.
 archive/issue_comments_063681.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> So, this is a positive review if someone reviews my reviewer patch.\n\nI think you attached the patch for #7531.",
+    "body": "Replying to [comment:2 malb]:\n> So, this is a positive review if someone reviews my reviewer patch.\n\n\nI think you attached the patch for #7531.",
     "created_at": "2009-11-25T22:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
@@ -176,6 +171,7 @@ archive/issue_comments_063681.json:
 
 Replying to [comment:2 malb]:
 > So, this is a positive review if someone reviews my reviewer patch.
+
 
 I think you attached the patch for #7531.
 

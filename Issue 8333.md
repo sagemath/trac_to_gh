@@ -86,7 +86,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074087.json:
 ```json
 {
-    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Part of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -100,7 +100,6 @@ Part of a series:
 ```
 8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335
 ```
-
 I tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.
 
 
@@ -110,7 +109,7 @@ I tried to make each of these mostly self contained, with doctests passing after
 archive/issue_comments_074088.json:
 ```json
 {
-    "body": "Some strange things going on here. I installed the patches on 4.3.4.rc0 with the preceding patches in the series applied. \n\n(1) It builds fine, but Sage won't start because the patched `finite_field_prime_modn.py` contains the line\n\n```\nfrom sage.rings.integer_mod_ring import IntegerModRing_generic\n```\n\nand that file has been removed by #8218.\n\n(2) There is also a problem in `element_ext_pari.py` caused by the line\n\n```\nelif isinstance(value, FreeModuleElement):\n```\n\nbeing used without FreeModuleElement being imported first. \n\n(3) Next up, there's another issue in `element_ntl_gf2e` caused by trying to import `is_FiniteField` from the wrong place. \n\n(4) I'm getting a bunch of identical errors relating to the Singular library -- it says \n\n```\n File \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/interfaces/singular.py\", line 672, in has_coerce_map_from_impl\n        raise NotImplementedError\n```\n\n\n(5) Something weird is going on in sage/modular/dirichlet.py which causes an infinite recursion error when reducing an element of a number field modulo a prime; this may well be dealt with by #8334, I haven't checked. Same in three places in sage/schemes/elliptic_curves/ell_point.py and a bunch of other elliptic curves modules, and in sage/rings/residue_field.py\n\n(6) The patch changes a whole load of doctests in sage/libs/flint/zmod_poly_linkage for no apparent reason, and thus causes them to fail. (Are you running a newer FLINT version on your development machine?)\n\n(7)  Various errors in the rings/finite_rings directory, e.g. this one: \n\n```\nFile \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/rings/finite_rings/finite_field_ext_pari.py\", line 580, in _coerce_map_from_\n        elif self.degree() % K.degree() == 0:\n    NameError: global name 'K' is not defined\n```\n\n\n\nMost of these are trivial, but (4) is beyond my ability to fix. I'm sorry, but that's definitely a \"needs work\".",
+    "body": "Some strange things going on here. I installed the patches on 4.3.4.rc0 with the preceding patches in the series applied. \n\n(1) It builds fine, but Sage won't start because the patched `finite_field_prime_modn.py` contains the line\n\n```\nfrom sage.rings.integer_mod_ring import IntegerModRing_generic\n```\nand that file has been removed by #8218.\n\n(2) There is also a problem in `element_ext_pari.py` caused by the line\n\n```\nelif isinstance(value, FreeModuleElement):\n```\nbeing used without FreeModuleElement being imported first. \n\n(3) Next up, there's another issue in `element_ntl_gf2e` caused by trying to import `is_FiniteField` from the wrong place. \n\n(4) I'm getting a bunch of identical errors relating to the Singular library -- it says \n\n```\n File \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/interfaces/singular.py\", line 672, in has_coerce_map_from_impl\n        raise NotImplementedError\n```\n\n(5) Something weird is going on in sage/modular/dirichlet.py which causes an infinite recursion error when reducing an element of a number field modulo a prime; this may well be dealt with by #8334, I haven't checked. Same in three places in sage/schemes/elliptic_curves/ell_point.py and a bunch of other elliptic curves modules, and in sage/rings/residue_field.py\n\n(6) The patch changes a whole load of doctests in sage/libs/flint/zmod_poly_linkage for no apparent reason, and thus causes them to fail. (Are you running a newer FLINT version on your development machine?)\n\n(7)  Various errors in the rings/finite_rings directory, e.g. this one: \n\n```\nFile \"/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/rings/finite_rings/finite_field_ext_pari.py\", line 580, in _coerce_map_from_\n        elif self.degree() % K.degree() == 0:\n    NameError: global name 'K' is not defined\n```\n\n\nMost of these are trivial, but (4) is beyond my ability to fix. I'm sorry, but that's definitely a \"needs work\".",
     "created_at": "2010-03-18T16:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -126,7 +125,6 @@ Some strange things going on here. I installed the patches on 4.3.4.rc0 with the
 ```
 from sage.rings.integer_mod_ring import IntegerModRing_generic
 ```
-
 and that file has been removed by #8218.
 
 (2) There is also a problem in `element_ext_pari.py` caused by the line
@@ -134,7 +132,6 @@ and that file has been removed by #8218.
 ```
 elif isinstance(value, FreeModuleElement):
 ```
-
 being used without FreeModuleElement being imported first. 
 
 (3) Next up, there's another issue in `element_ntl_gf2e` caused by trying to import `is_FiniteField` from the wrong place. 
@@ -145,7 +142,6 @@ being used without FreeModuleElement being imported first.
  File "/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/interfaces/singular.py", line 672, in has_coerce_map_from_impl
         raise NotImplementedError
 ```
-
 
 (5) Something weird is going on in sage/modular/dirichlet.py which causes an infinite recursion error when reducing an element of a number field modulo a prime; this may well be dealt with by #8334, I haven't checked. Same in three places in sage/schemes/elliptic_curves/ell_point.py and a bunch of other elliptic curves modules, and in sage/rings/residue_field.py
 
@@ -158,7 +154,6 @@ File "/home/masiao/sage-4.3.4.rc0/local/lib/python/site-packages/sage/rings/fini
         elif self.degree() % K.degree() == 0:
     NameError: global name 'K' is not defined
 ```
-
 
 
 Most of these are trivial, but (4) is beyond my ability to fix. I'm sorry, but that's definitely a "needs work".
@@ -288,7 +283,7 @@ Did you apply 8333_parent_init.patch first?
 archive/issue_comments_074095.json:
 ```json
 {
-    "body": "After applying both patches from #7883 and also 8333_parent_init.patch, I see this in 4.5.3:\n\n```\nsage: hg_sage.import_patch('Downloads/8333_finite_fields_to_new_coercion.patch')\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg status\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg status\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg import   \"/Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\"\napplying /Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\npatching file sage/libs/flint/zmod_poly_linkage.pxi\nHunk #1 FAILED at 455\nHunk #2 FAILED at 470\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly_linkage.pxi.rej\npatching file sage/rings/finite_rings/finite_field_prime_modn.py\nHunk #1 FAILED at 57\n1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej\nabort: patch failed to apply\n```\n\nIn 4.6.alpha1, I see almost the same message:\n\n```\n\nsage: hg_sage.import_patch('Downloads/8333_finite_fields_to_new_coercion.patch')\ncd \"/Applications/sage/devel/sage\" && hg status\ncd \"/Applications/sage/devel/sage\" && hg status\ncd \"/Applications/sage/devel/sage\" && hg import   \"/Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\"\napplying /Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\npatching file sage/libs/flint/zmod_poly_linkage.pxi\nHunk #1 FAILED at 455\nHunk #2 FAILED at 470\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly_linkage.pxi.rej\npatching file sage/rings/finite_rings/finite_field_ext_pari.py\nHunk #1 succeeded at 243 with fuzz 2 (offset 6 lines).\npatching file sage/rings/finite_rings/finite_field_prime_modn.py\nHunk #1 FAILED at 57\n1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "After applying both patches from #7883 and also 8333_parent_init.patch, I see this in 4.5.3:\n\n```\nsage: hg_sage.import_patch('Downloads/8333_finite_fields_to_new_coercion.patch')\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg status\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg status\ncd \"/Applications/sage_builds/sage-4.5.3/devel/sage\" && hg import   \"/Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\"\napplying /Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\npatching file sage/libs/flint/zmod_poly_linkage.pxi\nHunk #1 FAILED at 455\nHunk #2 FAILED at 470\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly_linkage.pxi.rej\npatching file sage/rings/finite_rings/finite_field_prime_modn.py\nHunk #1 FAILED at 57\n1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej\nabort: patch failed to apply\n```\nIn 4.6.alpha1, I see almost the same message:\n\n```\n\nsage: hg_sage.import_patch('Downloads/8333_finite_fields_to_new_coercion.patch')\ncd \"/Applications/sage/devel/sage\" && hg status\ncd \"/Applications/sage/devel/sage\" && hg status\ncd \"/Applications/sage/devel/sage\" && hg import   \"/Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\"\napplying /Users/palmieri/Downloads/8333_finite_fields_to_new_coercion.patch\npatching file sage/libs/flint/zmod_poly_linkage.pxi\nHunk #1 FAILED at 455\nHunk #2 FAILED at 470\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly_linkage.pxi.rej\npatching file sage/rings/finite_rings/finite_field_ext_pari.py\nHunk #1 succeeded at 243 with fuzz 2 (offset 6 lines).\npatching file sage/rings/finite_rings/finite_field_prime_modn.py\nHunk #1 FAILED at 57\n1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2010-09-20T05:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8333",
     "type": "issue_comment",
@@ -314,7 +309,6 @@ Hunk #1 FAILED at 57
 1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej
 abort: patch failed to apply
 ```
-
 In 4.6.alpha1, I see almost the same message:
 
 ```
@@ -335,7 +329,6 @@ Hunk #1 FAILED at 57
 1 out of 5 hunks FAILED -- saving rejects to file sage/rings/finite_rings/finite_field_prime_modn.py.rej
 abort: patch failed to apply
 ```
-
 
 
 

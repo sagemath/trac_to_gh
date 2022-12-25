@@ -3,7 +3,7 @@
 archive/issues_008346.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jhpalmieri boothby\n\n\n```\nI got this from the \"report a problem\" bugtracker:\n\nFeature request: rename data files in the notebook\n\nIf you upload a data file to the notebook and make a mistake in the\n\"What do you want to call it?\" field, there is no way to change the\nname from within the notebook, except for deleting the file and\nre-uploading it.        It would be convenient if one could rename data files\nfrom within the notebook.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8346\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jhpalmieri boothby\n\n```\nI got this from the \"report a problem\" bugtracker:\n\nFeature request: rename data files in the notebook\n\nIf you upload a data file to the notebook and make a mistake in the\n\"What do you want to call it?\" field, there is no way to change the\nname from within the notebook, except for deleting the file and\nre-uploading it.        It would be convenient if one could rename data files\nfrom within the notebook.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8346\n\n",
     "created_at": "2010-02-24T14:50:04Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 CC:  @kcrisman @jhpalmieri boothby
 
-
 ```
 I got this from the "report a problem" bugtracker:
 
@@ -32,7 +31,6 @@ name from within the notebook, except for deleting the file and
 re-uploading it.        It would be convenient if one could rename data files
 from within the notebook.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8346
 

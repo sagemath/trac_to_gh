@@ -3,7 +3,7 @@
 archive/issues_004092.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
+    "body": "Assignee: @malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
     "created_at": "2008-09-09T18:52:10Z",
     "labels": [
         "component: packages: standard",
@@ -41,7 +41,6 @@ second level name l1cachesize in hw.l1cachesize is invalid
 token is "/ 1024") 
 Error configuring libm4ri 
 ```
-
 
 Malb: any chance we missed a patch that did not make it in?
 
@@ -132,7 +131,7 @@ I can't test it myself, since I don't have any machines with 10.4 though.
 archive/issue_comments_029466.json:
 ```json
 {
-    "body": "It works for me now on a Dual G5 OSX 10.4 box:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 32768 Bytes\nchecking the L2 cache size... 524288 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\nconfigure: creating ./config.status\n```\n\n\nI will do some build testing on other machines before giving this a positive review :)\n\nCheers,\n\nMichael",
+    "body": "It works for me now on a Dual G5 OSX 10.4 box:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 32768 Bytes\nchecking the L2 cache size... 524288 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\nconfigure: creating ./config.status\n```\n\nI will do some build testing on other machines before giving this a positive review :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-09T19:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4092",
     "type": "issue_comment",
@@ -154,7 +153,6 @@ checking the L2 cache size... 524288 Bytes
 checking whether make sets $(MAKE)... (cached) yes
 configure: creating ./config.status
 ```
-
 
 I will do some build testing on other machines before giving this a positive review :)
 

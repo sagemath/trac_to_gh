@@ -213,7 +213,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078396.json:
 ```json
 {
-    "body": "Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\n\n\n`install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\n\n\n----\n\nCould do some bikeshedding here:\n\n* The following\n\n```sh\n    some_program \"$@\"\n    exit $?\n```\n\n   should be just\n\n```sh\n    exec some_program \"$@\"\n```\n\n   (perhaps followed by `exit $?` if we want to go triple-safe).\n\n* The help messages should use the long option form (`--foo` rather than `-foo`). \n\n  Stating that `sage -foobar` runs Sage's version of `foobar` foreach foobar \\in {A,...,Z} is of questionable value.\n\n* Doing\n\n```sh\nif [ foo = bar -o foo = BAR ]; then\n    ...\nfi\n\nif [ foo = baz -o foo = BAZ ]; then\n    ...\nfi\n\nif [ foo = whatever ]; then\n    ...\nfi\n```\n\n   is very poor.  It should simply be\n\n```sh\ncase foo in\n    bar|BAR)\n        ...\n        ;;\n    baz|BAZ)\n        ...\n        ;;\n    ...\nesac\n```\n\n   which is faster, safer, easier to read and also less error-prone.\n\n\nOne could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)",
+    "body": "Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\n\n\n`install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\n\n\n---\n\nCould do some bikeshedding here:\n\n* The following\n\n```sh\n    some_program \"$@\"\n    exit $?\n```\n   should be just\n\n```sh\n    exec some_program \"$@\"\n```\n   (perhaps followed by `exit $?` if we want to go triple-safe).\n\n* The help messages should use the long option form (`--foo` rather than `-foo`). \n\n  Stating that `sage -foobar` runs Sage's version of `foobar` foreach foobar \\in {A,...,Z} is of questionable value.\n\n* Doing\n\n```sh\nif [ foo = bar -o foo = BAR ]; then\n    ...\nfi\n\nif [ foo = baz -o foo = BAZ ]; then\n    ...\nfi\n\nif [ foo = whatever ]; then\n    ...\nfi\n```\n   is very poor.  It should simply be\n\n```sh\ncase foo in\n    bar|BAR)\n        ...\n        ;;\n    baz|BAZ)\n        ...\n        ;;\n    ...\nesac\n```\n   which is faster, safer, easier to read and also less error-prone.\n\n\nOne could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)",
     "created_at": "2011-10-29T21:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
@@ -228,7 +228,7 @@ Testing for the exact version number in `sage/tests/cmdline.py` is certainly sub
 `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.
 
 
-----
+---
 
 Could do some bikeshedding here:
 
@@ -238,13 +238,11 @@ Could do some bikeshedding here:
     some_program "$@"
     exit $?
 ```
-
    should be just
 
 ```sh
     exec some_program "$@"
 ```
-
    (perhaps followed by `exit $?` if we want to go triple-safe).
 
 * The help messages should use the long option form (`--foo` rather than `-foo`). 
@@ -266,7 +264,6 @@ if [ foo = whatever ]; then
     ...
 fi
 ```
-
    is very poor.  It should simply be
 
 ```sh
@@ -280,7 +277,6 @@ case foo in
     ...
 esac
 ```
-
    which is faster, safer, easier to read and also less error-prone.
 
 
@@ -293,7 +289,7 @@ One could change *all* of these at once on a separate ticket, but it's IMHO dumb
 archive/issue_comments_078397.json:
 ```json
 {
-    "body": "Replying to [comment:10 leif]:\n> Could do some bikeshedding here: \n\n> ... \n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\n\nSee #21, although that patch will probably need to get rewritten with argparse now that optparse has been deprecated.",
+    "body": "Replying to [comment:10 leif]:\n> Could do some bikeshedding here: \n\n\n> ... \n\n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\n\n\nSee #21, although that patch will probably need to get rewritten with argparse now that optparse has been deprecated.",
     "created_at": "2011-10-30T00:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
@@ -305,9 +301,12 @@ archive/issue_comments_078397.json:
 Replying to [comment:10 leif]:
 > Could do some bikeshedding here: 
 
+
 > ... 
 
+
 > One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+
 
 See #21, although that patch will probably need to get rewritten with argparse now that optparse has been deprecated.
 
@@ -338,7 +337,7 @@ Add test for --sqlite3 command line option
 archive/issue_comments_078399.json:
 ```json
 {
-    "body": "Replying to [comment:10 leif]:\n> Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\nChanged.\n\n> `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\nDone.\n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\nWell, I agree that we should change all this in a separate ticket (I guess #21 is the place to be).  By copying the same so-called \"bad\" code we at least have consistency which is also a good thing.  If every command line option is implemented in a different way, that will make the code harder to understand.  Moreover, this ticket is not the correct place to discuss what the \"right\" code is.",
+    "body": "Replying to [comment:10 leif]:\n> Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\n\nChanged.\n\n> `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\n\nDone.\n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\n\nWell, I agree that we should change all this in a separate ticket (I guess #21 is the place to be).  By copying the same so-called \"bad\" code we at least have consistency which is also a good thing.  If every command line option is implemented in a different way, that will make the code harder to understand.  Moreover, this ticket is not the correct place to discuss what the \"right\" code is.",
     "created_at": "2011-10-30T11:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
@@ -349,12 +348,15 @@ archive/issue_comments_078399.json:
 
 Replying to [comment:10 leif]:
 > Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.
+
 Changed.
 
 > `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.
+
 Done.
 
 > One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+
 Well, I agree that we should change all this in a separate ticket (I guess #21 is the place to be).  By copying the same so-called "bad" code we at least have consistency which is also a good thing.  If every command line option is implemented in a different way, that will make the code harder to understand.  Moreover, this ticket is not the correct place to discuss what the "right" code is.
 
 

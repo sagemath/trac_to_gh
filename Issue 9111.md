@@ -221,7 +221,7 @@ Attachment [trac_9111-doc-edits.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_084619.json:
 ```json
 {
-    "body": "Replying to [comment:5 ncohen]:\n> 2. I mean by this that the lines of the code building the graph according to the format used in the .c file, along with the ones reading the decomposition once it is computed, can be found in the .c files too. I copied those and Cythonized them, but the \"real\" code is still contained in the .c file.\n\nCan you make this a bit more clear in the documentation? (Please, in a new patch on top of attachment:trac_9111-doc-edits.patch to avoid conflict with the other patch.)\n\nIt seems like there should be more thorough documentation of the idea of modular decomposition. Perhaps a chapter, or at least a chunk, for the reference manual, or a guided tour or something? I don't want to block this from getting merged because of this, but maybe in a future ticket?\n\nI'm happy with this patch in that it passes its tests and the docs look good, but I'd be much more comfortable with a second reviewer, since I'm not very familiar with modular decompositions. I can certainly offer half of a positive review, though.",
+    "body": "Replying to [comment:5 ncohen]:\n> 2. I mean by this that the lines of the code building the graph according to the format used in the .c file, along with the ones reading the decomposition once it is computed, can be found in the .c files too. I copied those and Cythonized them, but the \"real\" code is still contained in the .c file.\n\n\nCan you make this a bit more clear in the documentation? (Please, in a new patch on top of attachment:trac_9111-doc-edits.patch to avoid conflict with the other patch.)\n\nIt seems like there should be more thorough documentation of the idea of modular decomposition. Perhaps a chapter, or at least a chunk, for the reference manual, or a guided tour or something? I don't want to block this from getting merged because of this, but maybe in a future ticket?\n\nI'm happy with this patch in that it passes its tests and the docs look good, but I'd be much more comfortable with a second reviewer, since I'm not very familiar with modular decompositions. I can certainly offer half of a positive review, though.",
     "created_at": "2010-06-21T21:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -232,6 +232,7 @@ archive/issue_comments_084619.json:
 
 Replying to [comment:5 ncohen]:
 > 2. I mean by this that the lines of the code building the graph according to the format used in the .c file, along with the ones reading the decomposition once it is computed, can be found in the .c files too. I copied those and Cythonized them, but the "real" code is still contained in the .c file.
+
 
 Can you make this a bit more clear in the documentation? (Please, in a new patch on top of attachment:trac_9111-doc-edits.patch to avoid conflict with the other patch.)
 
@@ -286,7 +287,7 @@ Attachment [trac_9111-doc_addition.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_084622.json:
 ```json
 {
-    "body": "\n```\nsage -t -long sage/graphs/modular_decomposition/modular_decomposition.pyx\n**********************************************************************\nError: TAB character found.\n\n\t [4.5 s]\n```\n",
+    "body": "```\nsage -t -long sage/graphs/modular_decomposition/modular_decomposition.pyx\n**********************************************************************\nError: TAB character found.\n\n\t [4.5 s]\n```",
     "created_at": "2010-07-18T09:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -295,7 +296,6 @@ archive/issue_comments_084622.json:
 }
 ```
 
-
 ```
 sage -t -long sage/graphs/modular_decomposition/modular_decomposition.pyx
 **********************************************************************
@@ -303,7 +303,6 @@ Error: TAB character found.
 
 	 [4.5 s]
 ```
-
 
 
 
@@ -386,7 +385,7 @@ Attachment [trac_9111.patch](tarball://root/attachments/some-uuid/ticket9111/tra
 archive/issue_comments_084627.json:
 ```json
 {
-    "body": "Apply in the following order:\n\n```\n\n\ntrac_9111.patch\ntrac_9111-doc-edits.patch\ntrac_9111-doc_addition.patch\n\n```\n",
+    "body": "Apply in the following order:\n\n```\n\n\ntrac_9111.patch\ntrac_9111-doc-edits.patch\ntrac_9111-doc_addition.patch\n\n```",
     "created_at": "2010-07-19T08:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9111",
     "type": "issue_comment",
@@ -405,7 +404,6 @@ trac_9111-doc-edits.patch
 trac_9111-doc_addition.patch
 
 ```
-
 
 
 

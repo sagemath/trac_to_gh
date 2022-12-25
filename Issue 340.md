@@ -3,7 +3,7 @@
 archive/issues_000340.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn 4/1/07, Joshua Kantor <kantor.jm@gmail.com> wrote:\n> I just installed a new version of sage and \n> ode_solver?  fails with the same errors as in his message. Did something\n> change \n> which would obviously cause this.\n\nThis is probably bug in the misc/sageinspect.py, which Nick Alexander recently rewrote\n(so the bug is either mine or his).  In any case, a temporary work around is to type\node_solver?? which will show the documentation (and source code). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/340\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn 4/1/07, Joshua Kantor <kantor.jm@gmail.com> wrote:\n> I just installed a new version of sage and \n> ode_solver?  fails with the same errors as in his message. Did something\n> change \n> which would obviously cause this.\n\nThis is probably bug in the misc/sageinspect.py, which Nick Alexander recently rewrote\n(so the bug is either mine or his).  In any case, a temporary work around is to type\node_solver?? which will show the documentation (and source code). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/340\n\n",
     "created_at": "2007-04-01T14:43:12Z",
     "labels": [
         "component: user interface",
@@ -18,7 +18,6 @@ archive/issues_000340.json:
 ```
 Assignee: @williamstein
 
-
 ```
 
 
@@ -32,7 +31,6 @@ This is probably bug in the misc/sageinspect.py, which Nick Alexander recently r
 (so the bug is either mine or his).  In any case, a temporary work around is to type
 ode_solver?? which will show the documentation (and source code). 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/340
 

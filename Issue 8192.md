@@ -139,7 +139,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072105.json:
 ```json
 {
-    "body": "Do you know why the spkg is so small?\n\n```\npalmieri@sage:~$ ls -l /home/dreyer/spkg/polybori-0.6.4.spkg \n... 2040576 2010-03-12 06:13 /home/dreyer/spkg/polybori-0.6.4.spkg\npalmieri@sage:~$ ls -l /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg \n... 6825939 2010-02-11 08:56 /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg\n```\n\nI'm not complaining, but I'm curious.",
+    "body": "Do you know why the spkg is so small?\n\n```\npalmieri@sage:~$ ls -l /home/dreyer/spkg/polybori-0.6.4.spkg \n... 2040576 2010-03-12 06:13 /home/dreyer/spkg/polybori-0.6.4.spkg\npalmieri@sage:~$ ls -l /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg \n... 6825939 2010-02-11 08:56 /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg\n```\nI'm not complaining, but I'm curious.",
     "created_at": "2010-04-19T21:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ palmieri@sage:~$ ls -l /home/dreyer/spkg/polybori-0.6.4.spkg
 palmieri@sage:~$ ls -l /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg 
 ... 6825939 2010-02-11 08:56 /home/release/sage-4.3.5/sage-4.3.5/spkg/standard/polybori-0.6.3-20091028.spkg
 ```
-
 I'm not complaining, but I'm curious.
 
 
@@ -229,7 +228,7 @@ Could someone review my changes?  Otherwise, I can make a new ticket for this.
 archive/issue_comments_072109.json:
 ```json
 {
-    "body": "Hi Mike,\n\nI'm afraid your SPKG will need a new ticket since this one was merged in 4.4 already. \n\nYour SPKG builds fine on sage.math, however I get\n\n\n```\nExiting Sage (CPU time 0m0.06s, Wall time 0m0.88s).\n*** glibc detected *** python: corrupted double-linked list: 0x000000000329b9c0 ***\n======= Backtrace: =========\n/lib/libc.so.6[0x7fccf4577663]\n/lib/libc.so.6[0x7fccf4578ea1]\n/lib/libc.so.6(cfree+0x8c)[0x7fccf457cc1c]\n/lib/libc.so.6(exit+0xe0)[0x7fccf453a110]\npython[0x4baac3]\npython(PyErr_PrintEx+0x19a)[0x4bacca]\npython(PyRun_SimpleFileExFlags+0x116)[0x4bb926]\npython(Py_Main+0x984)[0x416354]\n/lib/libc.so.6(__libc_start_main+0xf4)[0x7fccf45231c4]\npython[0x415629]\n```\n\n\nwhich is likely unrelated to your SPKG? I will build a fresh 4.4 to check.",
+    "body": "Hi Mike,\n\nI'm afraid your SPKG will need a new ticket since this one was merged in 4.4 already. \n\nYour SPKG builds fine on sage.math, however I get\n\n```\nExiting Sage (CPU time 0m0.06s, Wall time 0m0.88s).\n*** glibc detected *** python: corrupted double-linked list: 0x000000000329b9c0 ***\n======= Backtrace: =========\n/lib/libc.so.6[0x7fccf4577663]\n/lib/libc.so.6[0x7fccf4578ea1]\n/lib/libc.so.6(cfree+0x8c)[0x7fccf457cc1c]\n/lib/libc.so.6(exit+0xe0)[0x7fccf453a110]\npython[0x4baac3]\npython(PyErr_PrintEx+0x19a)[0x4bacca]\npython(PyRun_SimpleFileExFlags+0x116)[0x4bb926]\npython(Py_Main+0x984)[0x416354]\n/lib/libc.so.6(__libc_start_main+0xf4)[0x7fccf45231c4]\npython[0x415629]\n```\n\nwhich is likely unrelated to your SPKG? I will build a fresh 4.4 to check.",
     "created_at": "2010-04-27T17:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -243,7 +242,6 @@ Hi Mike,
 I'm afraid your SPKG will need a new ticket since this one was merged in 4.4 already. 
 
 Your SPKG builds fine on sage.math, however I get
-
 
 ```
 Exiting Sage (CPU time 0m0.06s, Wall time 0m0.88s).
@@ -260,7 +258,6 @@ python(Py_Main+0x984)[0x416354]
 /lib/libc.so.6(__libc_start_main+0xf4)[0x7fccf45231c4]
 python[0x415629]
 ```
-
 
 which is likely unrelated to your SPKG? I will build a fresh 4.4 to check.
 
@@ -415,7 +412,7 @@ given the report of segfaults above, I'm changing this to needs work!
 archive/issue_comments_072118.json:
 ```json
 {
-    "body": "Replying to [comment:18 was]:\n> given the report of segfaults above, I'm changing this to needs work!\n\nOr you could merge the package which got a positive review and we move the Cygwin problems to a different ticket.\n\nhttp://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.spkg",
+    "body": "Replying to [comment:18 was]:\n> given the report of segfaults above, I'm changing this to needs work!\n\n\nOr you could merge the package which got a positive review and we move the Cygwin problems to a different ticket.\n\nhttp://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.spkg",
     "created_at": "2010-04-28T19:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -426,6 +423,7 @@ archive/issue_comments_072118.json:
 
 Replying to [comment:18 was]:
 > given the report of segfaults above, I'm changing this to needs work!
+
 
 Or you could merge the package which got a positive review and we move the Cygwin problems to a different ticket.
 
@@ -526,7 +524,7 @@ Resolution: fixed
 archive/issue_comments_072123.json:
 ```json
 {
-    "body": "Both the 0.6.4.spkgs here give those crashes reported above, but only once in every 10-15 runs.\n\nValgrind shows invalid reads/writes on exit pointing to polybori:\n\n\n```\n==14880== Invalid read of size 4\n==14880==    at 0x30CE3642: __tcf_1 (sp_counted_base_gcc_x86.hpp:50)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x3225a538 is not stack'd, malloc'd or (recently) free'd\n==14880== \n==14880== Invalid read of size 8\n==14880==    at 0x30CE365C: __tcf_1 (CCuddCore.h:208)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x31a599e8 is 8 bytes inside a block of size 64 free'd\n==14880==    at 0x4C2216E: operator delete(void*) (vg_replace_malloc.c:346)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880== \n==14880== Invalid write of size 8\n==14880==    at 0x30CE3667: __tcf_1 (CCuddCore.h:208)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x31a599e8 is 8 bytes inside a block of size 64 free'd\n==14880==    at 0x4C2216E: operator delete(void*) (vg_replace_malloc.c:346)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n```\n",
+    "body": "Both the 0.6.4.spkgs here give those crashes reported above, but only once in every 10-15 runs.\n\nValgrind shows invalid reads/writes on exit pointing to polybori:\n\n```\n==14880== Invalid read of size 4\n==14880==    at 0x30CE3642: __tcf_1 (sp_counted_base_gcc_x86.hpp:50)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x3225a538 is not stack'd, malloc'd or (recently) free'd\n==14880== \n==14880== Invalid read of size 8\n==14880==    at 0x30CE365C: __tcf_1 (CCuddCore.h:208)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x31a599e8 is 8 bytes inside a block of size 64 free'd\n==14880==    at 0x4C2216E: operator delete(void*) (vg_replace_malloc.c:346)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880== \n==14880== Invalid write of size 8\n==14880==    at 0x30CE3667: __tcf_1 (CCuddCore.h:208)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n==14880==  Address 0x31a599e8 is 8 bytes inside a block of size 64 free'd\n==14880==    at 0x4C2216E: operator delete(void*) (vg_replace_malloc.c:346)\n==14880==    by 0x56FEB48: exit (in /lib64/libc-2.9.so)\n==14880==    by 0x4B9531: handle_system_exit (pythonrun.c:1716)\n==14880==    by 0x4B9738: PyErr_PrintEx (pythonrun.c:1126)\n==14880==    by 0x4BA334: PyRun_SimpleFileExFlags (pythonrun.c:1035)\n==14880==    by 0x4164C4: Py_Main (main.c:142)\n==14880==    by 0x56E95E3: (below main) (in /lib64/libc-2.9.so)\n```",
     "created_at": "2010-04-29T12:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -538,7 +536,6 @@ archive/issue_comments_072123.json:
 Both the 0.6.4.spkgs here give those crashes reported above, but only once in every 10-15 runs.
 
 Valgrind shows invalid reads/writes on exit pointing to polybori:
-
 
 ```
 ==14880== Invalid read of size 4
@@ -588,13 +585,12 @@ Valgrind shows invalid reads/writes on exit pointing to polybori:
 
 
 
-
 ---
 
 archive/issue_comments_072124.json:
 ```json
 {
-    "body": "Hi Willem Jan,\n\nThe crashes are probably caused by the fact that I disabled the code that statically links polybori in the new package. IIRC, we were doing that exactly because of these double free errors. We tested the new package on different platforms, and didn't see the crashes, so we assumed the problem was fixed.\n\nI don't have time to reproduce the problem, or test new packages at the moment. Can you try enabling the static build and try again?\n\nFrom the diff of the changes (of an earlier version of the package in Alexander Dreyer's home dir), this looks like the relevant change:\n\n\n```\ndiff --git a/patches/SConstruct b/patches/SConstruct\n--- a/patches/SConstruct\n+++ b/patches/SConstruct\n@@ -561,7 +581,7 @@\n gb_src = [GBPath('src', source) for source in gb_src]\n if not(external_m4ri):\n    gb_src += m4ri\n-gb=env.StaticLibrary(GBPath('groebner'), gb_src+[libpb])\n+gb=env.StaticLibrary(GBPath('groebner'), gb_src)#+[libpb])\n \n #print \"gb:\", gb, dir(gb)\n #sometimes l seems to be boxed by a list\n```\n\n\n\nBTW, this also looks suspect to me:\n\n\n```\ndiff --git a/patches/SConstruct b/patches/SConstruct\n--- a/patches/SConstruct\n+++ b/patches/SConstruct\n@@ -327,7 +350,7 @@\n Help(opts.GenerateHelpText(env))\n \n have_l2h = have_t4h = False\n-external_m4ri = True\n+external_m4ri = False\n \n if not env.GetOption('clean'):\n     conf = Configure(env)\n```\n\n\nMany thanks for looking into this.",
+    "body": "Hi Willem Jan,\n\nThe crashes are probably caused by the fact that I disabled the code that statically links polybori in the new package. IIRC, we were doing that exactly because of these double free errors. We tested the new package on different platforms, and didn't see the crashes, so we assumed the problem was fixed.\n\nI don't have time to reproduce the problem, or test new packages at the moment. Can you try enabling the static build and try again?\n\nFrom the diff of the changes (of an earlier version of the package in Alexander Dreyer's home dir), this looks like the relevant change:\n\n```\ndiff --git a/patches/SConstruct b/patches/SConstruct\n--- a/patches/SConstruct\n+++ b/patches/SConstruct\n@@ -561,7 +581,7 @@\n gb_src = [GBPath('src', source) for source in gb_src]\n if not(external_m4ri):\n    gb_src += m4ri\n-gb=env.StaticLibrary(GBPath('groebner'), gb_src+[libpb])\n+gb=env.StaticLibrary(GBPath('groebner'), gb_src)#+[libpb])\n \n #print \"gb:\", gb, dir(gb)\n #sometimes l seems to be boxed by a list\n```\n\n\nBTW, this also looks suspect to me:\n\n```\ndiff --git a/patches/SConstruct b/patches/SConstruct\n--- a/patches/SConstruct\n+++ b/patches/SConstruct\n@@ -327,7 +350,7 @@\n Help(opts.GenerateHelpText(env))\n \n have_l2h = have_t4h = False\n-external_m4ri = True\n+external_m4ri = False\n \n if not env.GetOption('clean'):\n     conf = Configure(env)\n```\n\nMany thanks for looking into this.",
     "created_at": "2010-04-29T13:10:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -610,7 +606,6 @@ The crashes are probably caused by the fact that I disabled the code that static
 I don't have time to reproduce the problem, or test new packages at the moment. Can you try enabling the static build and try again?
 
 From the diff of the changes (of an earlier version of the package in Alexander Dreyer's home dir), this looks like the relevant change:
-
 
 ```
 diff --git a/patches/SConstruct b/patches/SConstruct
@@ -628,9 +623,7 @@ diff --git a/patches/SConstruct b/patches/SConstruct
 ```
 
 
-
 BTW, this also looks suspect to me:
-
 
 ```
 diff --git a/patches/SConstruct b/patches/SConstruct
@@ -646,7 +639,6 @@ diff --git a/patches/SConstruct b/patches/SConstruct
  if not env.GetOption('clean'):
      conf = Configure(env)
 ```
-
 
 Many thanks for looking into this.
 
@@ -681,7 +673,7 @@ Regards,
 archive/issue_comments_072126.json:
 ```json
 {
-    "body": "> BTW, this also looks suspect to me:\n> \n> {{{\n> diff --git a/patches/SConstruct b/patches/SConstruct\n> --- a/patches/SConstruct\n> +++ b/patches/SConstruct\n> `@``@` -327,7 +350,7 `@``@`\n>  Help(opts.GenerateHelpText(env))\n>  \n>  have_l2h = have_t4h = False\n> -external_m4ri = True\n> +external_m4ri = False\n>  \n>  if not env.GetOption('clean'):\n>      conf = Configure(env)\n> }}}\n\nI agree, that this wrong and should be reverted (we really want the external M4RI)",
+    "body": "> BTW, this also looks suspect to me:\n> \n> \n> ```\n> diff --git a/patches/SConstruct b/patches/SConstruct\n> --- a/patches/SConstruct\n> +++ b/patches/SConstruct\n> @@ -327,7 +350,7 @@\n>  Help(opts.GenerateHelpText(env))\n>  \n>  have_l2h = have_t4h = False\n> -external_m4ri = True\n> +external_m4ri = False\n>  \n>  if not env.GetOption('clean'):\n>      conf = Configure(env)\n> ```\n\n\nI agree, that this wrong and should be reverted (we really want the external M4RI)",
     "created_at": "2010-04-29T13:26:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -692,11 +684,12 @@ archive/issue_comments_072126.json:
 
 > BTW, this also looks suspect to me:
 > 
-> {{{
+> 
+> ```
 > diff --git a/patches/SConstruct b/patches/SConstruct
 > --- a/patches/SConstruct
 > +++ b/patches/SConstruct
-> `@``@` -327,7 +350,7 `@``@`
+> @@ -327,7 +350,7 @@
 >  Help(opts.GenerateHelpText(env))
 >  
 >  have_l2h = have_t4h = False
@@ -705,7 +698,8 @@ archive/issue_comments_072126.json:
 >  
 >  if not env.GetOption('clean'):
 >      conf = Configure(env)
-> }}}
+> ```
+
 
 I agree, that this wrong and should be reverted (we really want the external M4RI)
 
@@ -820,7 +814,7 @@ Thanks!
 archive/issue_comments_072131.json:
 ```json
 {
-    "body": "From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/ff294013a41ea05c):\n\n\n\nSage 4.4.1.alpha2 contains two PolyBoRi spkg's:\n\n* polybori-0.6.3-20091028.spkg\n* polybori-0.6.4.spkg\n\nI think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `SAGE_ROOT/spkg/standard/`. Here's a diff between the `spkg-install` of polybori-0.6.3-20091028.spkg and polybori-0.6.4.spkg:\n\n\n```diff\n[mvngu@sage mvngu]$ diff -Naur polybori-0.6.3-20091028/spkg-install polybori-0.6.4.p0/spkg-install \n--- polybori-0.6.3-20091028/spkg-install\t2009-05-17 10:31:16.000000000 -0700\n+++ polybori-0.6.4.p0/spkg-install\t2010-04-29 07:10:46.000000000 -0700\n@@ -6,14 +6,14 @@\n    exit 1\n fi\n \n-PBDIR=polybori-0.6\n+PBDIR=polybori-0.6.4\n WORKDIR=${PWD}/src\n SCONS=scons\n \n # For some strange reason the installed boost in $SAGE_LOCAL causes \n # make install failures, so copy it over. \n-mkdir src/boost_1_34_1.cropped\n-cp -r $SAGE_LOCAL/include/boost src/boost_1_34_1.cropped\n+#mkdir src/boost_1_34_1.cropped\n+#cp -r $SAGE_LOCAL/include/boost src/boost_1_34_1.cropped\n BOOSTDIR=boost_1_34_1.cropped\n \n patch() \n@@ -26,9 +26,6 @@\n \n     cp patches/SConstruct src/${PBDIR}/SConstruct\n     cp patches/PyPolyBoRi.py src/${PBDIR}/pyroot/polybori\n-\n-    # workaround so will build on cygwin\n-    cp patches/cpu_stats.c src/${PBDIR}/Cudd/util/cpu_stats.c\n }\n \n \n@@ -68,7 +65,7 @@\n \n remove_dylib()\n {\n-    # linking dynmic libraries causes segfaults at exit (see #2822)\n+    # linking dynamic libraries causes segfaults at exit (see #2822)\n     if [ `uname` = \"Darwin\" ]; then\n         rm -f $SAGE_LOCAL/lib/libpolybori.dylib\n         rm -f $SAGE_LOCAL/lib/libpboriCudd.dylib\n@@ -101,9 +98,3 @@\n echo \"Removing dynamic libraries...\"\n remove_dylib\n echo \"Done removing dynamic libraries.\"\n-\n-# force a rebuild of the PolyBoRi extension\n-if [ -f $SAGE_ROOT/devel/sage/sage/rings/polynomial/pbori.pyx ]; then\n-    touch $SAGE_ROOT/devel/sage/sage/rings/polynomial/pbori.pyx\n-fi\n-\n```\n\n\nI replaced polybori-0.6.4.spkg with\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg\n\nThe latter spkg restores the command \"remove_dynlib\". I then built Sage 4.4.1.alpha2 from scratch on sage.math with polybori-0.6.4.p0.spkg. Doctesting resulted in the following failure:\n\n\n```sh\n[mvngu@sage sage-4.4.1.alpha2]$ ./sage -t -long local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\"\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\", line 109:\n    sage: print \"ignore this\";  sage.server.misc.find_next_available_port('', 9000, verbose=False)   # random output -- depends on network\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        print \"ignore this\";  sage.server.misc.find_next_available_port('', Integer(9000), verbose=False)   # random output -- depends on network###line 109:\n    sage: print \"ignore this\";  sage.server.misc.find_next_available_port('', 9000, verbose=False)   # random output -- depends on network\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python/site-packages/sage/server/misc.py\", line 105, in find_next_available_port\n        for port in range(start, start+max_tries+1):\n      File \"element.pyx\", line 1271, in sage.structure.element.RingElement.__add__ (sage/structure/element.c:10830)\n      File \"coerce.pyx\", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)\n    TypeError: unsupported operand parent(s) for '+': '<type 'str'>' and 'Integer Ring'\n```\n\n\nI have wrapped up a sage.math binary of this patched version of Sage 4.4.1.alpha2. You can find it at\n\nhttp://sage.math.washington.edu/home/mvngu/sage.math-bin/sage-4.4.1.alpha2-patched-sage.math.washington.edu-x86_64-Linux.tar.gz\n\nI removed the directory\n\n`SAGE_ROOT/devel/sage-main/doc/en/thematic_tutorials/`\n\nand wrapped up a source distribution, which can be found at\n\nhttp://sage.math.washington.edu/home/mvngu/sage-src/sage-4.4.1.alpha2-patched.tar",
+    "body": "From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/ff294013a41ea05c):\n\n\n\nSage 4.4.1.alpha2 contains two PolyBoRi spkg's:\n\n* polybori-0.6.3-20091028.spkg\n* polybori-0.6.4.spkg\n\nI think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `SAGE_ROOT/spkg/standard/`. Here's a diff between the `spkg-install` of polybori-0.6.3-20091028.spkg and polybori-0.6.4.spkg:\n\n```diff\n[mvngu@sage mvngu]$ diff -Naur polybori-0.6.3-20091028/spkg-install polybori-0.6.4.p0/spkg-install \n--- polybori-0.6.3-20091028/spkg-install\t2009-05-17 10:31:16.000000000 -0700\n+++ polybori-0.6.4.p0/spkg-install\t2010-04-29 07:10:46.000000000 -0700\n@@ -6,14 +6,14 @@\n    exit 1\n fi\n \n-PBDIR=polybori-0.6\n+PBDIR=polybori-0.6.4\n WORKDIR=${PWD}/src\n SCONS=scons\n \n # For some strange reason the installed boost in $SAGE_LOCAL causes \n # make install failures, so copy it over. \n-mkdir src/boost_1_34_1.cropped\n-cp -r $SAGE_LOCAL/include/boost src/boost_1_34_1.cropped\n+#mkdir src/boost_1_34_1.cropped\n+#cp -r $SAGE_LOCAL/include/boost src/boost_1_34_1.cropped\n BOOSTDIR=boost_1_34_1.cropped\n \n patch() \n@@ -26,9 +26,6 @@\n \n     cp patches/SConstruct src/${PBDIR}/SConstruct\n     cp patches/PyPolyBoRi.py src/${PBDIR}/pyroot/polybori\n-\n-    # workaround so will build on cygwin\n-    cp patches/cpu_stats.c src/${PBDIR}/Cudd/util/cpu_stats.c\n }\n \n \n@@ -68,7 +65,7 @@\n \n remove_dylib()\n {\n-    # linking dynmic libraries causes segfaults at exit (see #2822)\n+    # linking dynamic libraries causes segfaults at exit (see #2822)\n     if [ `uname` = \"Darwin\" ]; then\n         rm -f $SAGE_LOCAL/lib/libpolybori.dylib\n         rm -f $SAGE_LOCAL/lib/libpboriCudd.dylib\n@@ -101,9 +98,3 @@\n echo \"Removing dynamic libraries...\"\n remove_dylib\n echo \"Done removing dynamic libraries.\"\n-\n-# force a rebuild of the PolyBoRi extension\n-if [ -f $SAGE_ROOT/devel/sage/sage/rings/polynomial/pbori.pyx ]; then\n-    touch $SAGE_ROOT/devel/sage/sage/rings/polynomial/pbori.pyx\n-fi\n-\n```\n\nI replaced polybori-0.6.4.spkg with\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg\n\nThe latter spkg restores the command \"remove_dynlib\". I then built Sage 4.4.1.alpha2 from scratch on sage.math with polybori-0.6.4.p0.spkg. Doctesting resulted in the following failure:\n\n```sh\n[mvngu@sage sage-4.4.1.alpha2]$ ./sage -t -long local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\nsage -t -long \"local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\"\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\", line 109:\n    sage: print \"ignore this\";  sage.server.misc.find_next_available_port('', 9000, verbose=False)   # random output -- depends on network\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        print \"ignore this\";  sage.server.misc.find_next_available_port('', Integer(9000), verbose=False)   # random output -- depends on network###line 109:\n    sage: print \"ignore this\";  sage.server.misc.find_next_available_port('', 9000, verbose=False)   # random output -- depends on network\n      File \"/dev/shm/mvngu/sandbox/sage-4.4.1.alpha2/local/lib/python/site-packages/sage/server/misc.py\", line 105, in find_next_available_port\n        for port in range(start, start+max_tries+1):\n      File \"element.pyx\", line 1271, in sage.structure.element.RingElement.__add__ (sage/structure/element.c:10830)\n      File \"coerce.pyx\", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)\n    TypeError: unsupported operand parent(s) for '+': '<type 'str'>' and 'Integer Ring'\n```\n\nI have wrapped up a sage.math binary of this patched version of Sage 4.4.1.alpha2. You can find it at\n\nhttp://sage.math.washington.edu/home/mvngu/sage.math-bin/sage-4.4.1.alpha2-patched-sage.math.washington.edu-x86_64-Linux.tar.gz\n\nI removed the directory\n\n`SAGE_ROOT/devel/sage-main/doc/en/thematic_tutorials/`\n\nand wrapped up a source distribution, which can be found at\n\nhttp://sage.math.washington.edu/home/mvngu/sage-src/sage-4.4.1.alpha2-patched.tar",
     "created_at": "2010-04-29T19:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8192",
     "type": "issue_comment",
@@ -839,7 +833,6 @@ Sage 4.4.1.alpha2 contains two PolyBoRi spkg's:
 * polybori-0.6.4.spkg
 
 I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `SAGE_ROOT/spkg/standard/`. Here's a diff between the `spkg-install` of polybori-0.6.3-20091028.spkg and polybori-0.6.4.spkg:
-
 
 ```diff
 [mvngu@sage mvngu]$ diff -Naur polybori-0.6.3-20091028/spkg-install polybori-0.6.4.p0/spkg-install 
@@ -894,13 +887,11 @@ I think polybori-0.6.4.spkg is the newer one, so I deleted the other one from `S
 -
 ```
 
-
 I replaced polybori-0.6.4.spkg with
 
 http://sage.math.washington.edu/home/mvngu/spkg/standard/polybori/polybori-0.6.4.p0.spkg
 
 The latter spkg restores the command "remove_dynlib". I then built Sage 4.4.1.alpha2 from scratch on sage.math with polybori-0.6.4.p0.spkg. Doctesting resulted in the following failure:
-
 
 ```sh
 [mvngu@sage sage-4.4.1.alpha2]$ ./sage -t -long local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py
@@ -925,7 +916,6 @@ Exception raised:
       File "coerce.pyx", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)
     TypeError: unsupported operand parent(s) for '+': '<type 'str'>' and 'Integer Ring'
 ```
-
 
 I have wrapped up a sage.math binary of this patched version of Sage 4.4.1.alpha2. You can find it at
 

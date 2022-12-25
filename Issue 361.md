@@ -3,7 +3,7 @@
 archive/issues_000361.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
+    "body": "Assignee: @williamstein\n\nSee attached file.\n\n```\nFrom John Cremona:\n\nSorry I promised this a while ago.\n\nThis is essentially the file I gave to Magma in '02 or '03 which became\ntheir package/Geometry/CrvEll/minmodel.m after a bit of work by Nils\nBruin and Geoff Bailey.  From what I can tell their changes are only\ncosmetic (e.g. replacing my intrinsic with function somewhere, and also\nfiddling with the input & output parameters to make the order of terms\nconsistent with other Magma functions.\n\nApart from that I just replaced UniformizingParameter() with\nMyUniformizingParameter() as explained in the comment.\n\nYou can do what you like with this now!\n\nJohn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/361\n\n",
     "created_at": "2007-05-07T16:18:33Z",
     "labels": [
         "component: algebraic geometry"
@@ -38,7 +38,6 @@ You can do what you like with this now!
 
 John
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/361
 

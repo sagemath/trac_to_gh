@@ -3,7 +3,7 @@
 archive/issues_003423.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nConsider this sage session:\n\n\n```\nsage: pari('1.q')\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/gen.pyx in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:32332)()\n\n<class 'sage.libs.pari.gen.PariError'>:  (7)\n```\n\n\nas opposed to this gp session:\n\n\n```\n? 1.q\n  ***   unknown member function: 1.q\n                                   ^-\n```\n\n\nIt'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3423\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nConsider this sage session:\n\n```\nsage: pari('1.q')\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/gen.pyx in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:32332)()\n\n<class 'sage.libs.pari.gen.PariError'>:  (7)\n```\n\nas opposed to this gp session:\n\n```\n? 1.q\n  ***   unknown member function: 1.q\n                                   ^-\n```\n\nIt'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3423\n\n",
     "created_at": "2008-06-14T01:12:31Z",
     "labels": [
         "component: interfaces",
@@ -22,7 +22,6 @@ CC:  @craigcitro
 
 Consider this sage session:
 
-
 ```
 sage: pari('1.q')
 ---------------------------------------------------------------------------
@@ -35,16 +34,13 @@ sage: pari('1.q')
 <class 'sage.libs.pari.gen.PariError'>:  (7)
 ```
 
-
 as opposed to this gp session:
-
 
 ```
 ? 1.q
   ***   unknown member function: 1.q
                                    ^-
 ```
-
 
 It'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.
 
@@ -59,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3423
 archive/issue_comments_024042.json:
 ```json
 {
-    "body": "I think I tracked down why we can't display more information as of now:\n\nThe `pari_err` function contains the following code:\n\n\n```\npari_err(long numerr, ...)\n{\n  char s[128], *ch1;\n  PariOUT *out = pariOut;\n  va_list ap;\n\n  va_start(ap,numerr);\n  if (is_warn(numerr)) pari_err(talker,\"use pari_warn for warnings\");\n\n  global_err_data = NULL;\n  if (err_catch_stack)\n  {\n    cell *trapped = NULL;\n    if ( (trapped = err_seek(numerr)) )\n    {\n      jmp_buf *e = trapped->penv;\n      if (numerr == invmoder)\n      {\n        (void)va_arg(ap, char*); /* junk 1st arg */\n        global_err_data = (void*)va_arg(ap, GEN);\n      }\n      longjmp(*e, numerr);\n    }\n```\n\n\nThe difference between us and gp is that `if (err_catch_stack)` evaluates to true because all our pari calls are encapsulated in `_sig_on/_sig_off` calls.",
+    "body": "I think I tracked down why we can't display more information as of now:\n\nThe `pari_err` function contains the following code:\n\n```\npari_err(long numerr, ...)\n{\n  char s[128], *ch1;\n  PariOUT *out = pariOut;\n  va_list ap;\n\n  va_start(ap,numerr);\n  if (is_warn(numerr)) pari_err(talker,\"use pari_warn for warnings\");\n\n  global_err_data = NULL;\n  if (err_catch_stack)\n  {\n    cell *trapped = NULL;\n    if ( (trapped = err_seek(numerr)) )\n    {\n      jmp_buf *e = trapped->penv;\n      if (numerr == invmoder)\n      {\n        (void)va_arg(ap, char*); /* junk 1st arg */\n        global_err_data = (void*)va_arg(ap, GEN);\n      }\n      longjmp(*e, numerr);\n    }\n```\n\nThe difference between us and gp is that `if (err_catch_stack)` evaluates to true because all our pari calls are encapsulated in `_sig_on/_sig_off` calls.",
     "created_at": "2009-01-22T01:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3423",
     "type": "issue_comment",
@@ -71,7 +67,6 @@ archive/issue_comments_024042.json:
 I think I tracked down why we can't display more information as of now:
 
 The `pari_err` function contains the following code:
-
 
 ```
 pari_err(long numerr, ...)
@@ -98,7 +93,6 @@ pari_err(long numerr, ...)
       longjmp(*e, numerr);
     }
 ```
-
 
 The difference between us and gp is that `if (err_catch_stack)` evaluates to true because all our pari calls are encapsulated in `_sig_on/_sig_off` calls.
 

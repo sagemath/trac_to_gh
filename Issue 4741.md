@@ -148,7 +148,7 @@ p-adic elliptic log:  we call this on several points for each prime, but a lot o
 archive/issue_comments_035763.json:
 ```json
 {
-    "body": "Hey John,\n\nI'm having a hard time with the latest patch. It does not apply on a fresh clone from 3.2.1 with the patches from ticket 4715 and the 2 others from this ticket.\n\nIt gives me:\n\n```\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4532\nHunk #4 succeeded at 4611 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 4633\nHunk #6 FAILED at 4655\nHunk #11 FAILED at 4822\nHunk #12 FAILED at 4845\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\nabort: patch failed to apply\n```\n\nwhen I try. Perhaps you changed something else in your file before exporting this one.\nOr am I doing something wrong?",
+    "body": "Hey John,\n\nI'm having a hard time with the latest patch. It does not apply on a fresh clone from 3.2.1 with the patches from ticket 4715 and the 2 others from this ticket.\n\nIt gives me:\n\n```\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4532\nHunk #4 succeeded at 4611 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 4633\nHunk #6 FAILED at 4655\nHunk #11 FAILED at 4822\nHunk #12 FAILED at 4845\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\nabort: patch failed to apply\n```\nwhen I try. Perhaps you changed something else in your file before exporting this one.\nOr am I doing something wrong?",
     "created_at": "2008-12-12T06:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -174,7 +174,6 @@ Hunk #12 FAILED at 4845
 5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej
 abort: patch failed to apply
 ```
-
 when I try. Perhaps you changed something else in your file before exporting this one.
 Or am I doing something wrong?
 
@@ -185,7 +184,7 @@ Or am I doing something wrong?
 archive/issue_comments_035764.json:
 ```json
 {
-    "body": "Yep, same thing for me in my current 3.2.2.alpha2 merge tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage$ patch -p1 < trac-4741-fix2.patch\\?format\\=raw patching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4533.\nHunk #2 succeeded at 4547 (offset 1 line).\nHunk #4 succeeded at 4609 with fuzz 2.\nHunk #5 FAILED at 4634.\nHunk #6 FAILED at 4662.\nHunk #7 succeeded at 4669 (offset -10 lines).\nHunk #8 succeeded at 4695 (offset -10 lines).\nHunk #9 succeeded at 4728 (offset -10 lines).\nHunk #10 succeeded at 4744 (offset -10 lines).\nHunk #11 FAILED at 4819.\nHunk #12 FAILED at 4854.\nHunk #13 succeeded at 4936 (offset -19 lines).\nHunk #14 succeeded at 4972 (offset -19 lines).\nHunk #15 succeeded at 5014 (offset -19 lines).\nHunk #16 succeeded at 5094 (offset -19 lines).\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\n\nThe only changes post 3.2.1 to that file were:\n\n```\nhangeset:   11145:614177b99fa2\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 13:34:53 2008 +0000\nsummary:     #4715 second patch\n\nchangeset:   11144:84cee787fc0f\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 11:58:48 2008 +0000\nsummary:     #4715: tiny bug fix in KodairaSymbol + doctest\n```\n\nBut even reverting those two patches does not make fix2 apply, so are we missing a patch?\n\nCheers,\n\nMichael",
+    "body": "Yep, same thing for me in my current 3.2.2.alpha2 merge tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage$ patch -p1 < trac-4741-fix2.patch\\?format\\=raw patching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4533.\nHunk #2 succeeded at 4547 (offset 1 line).\nHunk #4 succeeded at 4609 with fuzz 2.\nHunk #5 FAILED at 4634.\nHunk #6 FAILED at 4662.\nHunk #7 succeeded at 4669 (offset -10 lines).\nHunk #8 succeeded at 4695 (offset -10 lines).\nHunk #9 succeeded at 4728 (offset -10 lines).\nHunk #10 succeeded at 4744 (offset -10 lines).\nHunk #11 FAILED at 4819.\nHunk #12 FAILED at 4854.\nHunk #13 succeeded at 4936 (offset -19 lines).\nHunk #14 succeeded at 4972 (offset -19 lines).\nHunk #15 succeeded at 5014 (offset -19 lines).\nHunk #16 succeeded at 5094 (offset -19 lines).\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\nThe only changes post 3.2.1 to that file were:\n\n```\nhangeset:   11145:614177b99fa2\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 13:34:53 2008 +0000\nsummary:     #4715 second patch\n\nchangeset:   11144:84cee787fc0f\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 11:58:48 2008 +0000\nsummary:     #4715: tiny bug fix in KodairaSymbol + doctest\n```\nBut even reverting those two patches does not make fix2 apply, so are we missing a patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-12-12T06:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -216,7 +215,6 @@ Hunk #15 succeeded at 5014 (offset -19 lines).
 Hunk #16 succeeded at 5094 (offset -19 lines).
 5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej
 ```
-
 The only changes post 3.2.1 to that file were:
 
 ```
@@ -230,7 +228,6 @@ user:        John Cremona <john.cremona@gmail.com>
 date:        Fri Dec 05 11:58:48 2008 +0000
 summary:     #4715: tiny bug fix in KodairaSymbol + doctest
 ```
-
 But even reverting those two patches does not make fix2 apply, so are we missing a patch?
 
 Cheers,
@@ -317,7 +314,7 @@ archive/issue_events_010837.json:
 archive/issue_comments_035768.json:
 ```json
 {
-    "body": "trac-4741-rebase.patch applies cleanly to my Sage 3.2.2.alpha2 merge tree. But I am seeing one doctest failure with -long on sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3338, in __main__.example_110\nFailed example:\n    time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_110[10]>\", line 1\n         time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\n              ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_110\n***Test Failed*** 1 failures.\n\n         [221.0 s]\nexit code: 1024\n```\n\n\nCheers,\n\nMichael",
+    "body": "trac-4741-rebase.patch applies cleanly to my Sage 3.2.2.alpha2 merge tree. But I am seeing one doctest failure with -long on sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3338, in __main__.example_110\nFailed example:\n    time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_110[10]>\", line 1\n         time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\n              ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_110\n***Test Failed*** 1 failures.\n\n         [221.0 s]\nexit code: 1024\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-12T17:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -355,7 +352,6 @@ Exception raised:
          [221.0 s]
 exit code: 1024
 ```
-
 
 Cheers,
 
@@ -464,7 +460,7 @@ Thanks Michael (M).  Michael (A), can we put a positive review on this?  I would
 archive/issue_comments_035774.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nTwo trivial typo fixes:\n\n* \"It is not necessary to specify mw_base, then the Mordell-Weil basis must be computed (may take much longer)\" --> \"It is not necessary to specify mw_base; if it is not specified, then the Mordell-Weil basis must be computed, which may take much longer.\"\n\n* \"Computes the p-adic elliptic logarithm of self\" --> \"Computes the p-adic elliptic logarithm of self.\"\n\nA BUG:\n\n```\nsage: E = EllipticCurve('794a1')\nsage: E.S_integral_points([2,3,5])\nTraceback (most recent call last):\n...\nsage.rings.padics.precision_error.PrecisionError: cannot divide by something indistinguishable from zero\n```\n",
+    "body": "REFEREE REPORT:\n\nTwo trivial typo fixes:\n\n* \"It is not necessary to specify mw_base, then the Mordell-Weil basis must be computed (may take much longer)\" --> \"It is not necessary to specify mw_base; if it is not specified, then the Mordell-Weil basis must be computed, which may take much longer.\"\n\n* \"Computes the p-adic elliptic logarithm of self\" --> \"Computes the p-adic elliptic logarithm of self.\"\n\nA BUG:\n\n```\nsage: E = EllipticCurve('794a1')\nsage: E.S_integral_points([2,3,5])\nTraceback (most recent call last):\n...\nsage.rings.padics.precision_error.PrecisionError: cannot divide by something indistinguishable from zero\n```",
     "created_at": "2008-12-13T21:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -490,7 +486,6 @@ Traceback (most recent call last):
 ...
 sage.rings.padics.precision_error.PrecisionError: cannot divide by something indistinguishable from zero
 ```
-
 
 
 
@@ -579,7 +574,7 @@ Next I tested again the database curves of rank at least 2 with S=[2,3,5].  No p
 archive/issue_comments_035779.json:
 ```json
 {
-    "body": "\n```\n[12:23am] wstein: I can't apply trac-4741-fix3.patch  from cremona's ticket cleanly...\n[12:24am] wstein: If the patch passes all doctests and you can apply it, then positive review.\n[12:24am] mabshoff: mk\n[12:24am] wstein: He addressed my issues, and did a good test of running the code.\n[12:24am] mabshoff: ok\n```\n",
+    "body": "```\n[12:23am] wstein: I can't apply trac-4741-fix3.patch  from cremona's ticket cleanly...\n[12:24am] wstein: If the patch passes all doctests and you can apply it, then positive review.\n[12:24am] mabshoff: mk\n[12:24am] wstein: He addressed my issues, and did a good test of running the code.\n[12:24am] mabshoff: ok\n```",
     "created_at": "2008-12-14T08:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -588,7 +583,6 @@ archive/issue_comments_035779.json:
 }
 ```
 
-
 ```
 [12:23am] wstein: I can't apply trac-4741-fix3.patch  from cremona's ticket cleanly...
 [12:24am] wstein: If the patch passes all doctests and you can apply it, then positive review.
@@ -596,7 +590,6 @@ archive/issue_comments_035779.json:
 [12:24am] wstein: He addressed my issues, and did a good test of running the code.
 [12:24am] mabshoff: ok
 ```
-
 
 
 
@@ -623,7 +616,7 @@ So sort of positive review.  I have read all the latest changes and they *look* 
 archive/issue_comments_035781.json:
 ```json
 {
-    "body": "Yep, I am seeing the same issue as William:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_1_rebase.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4585 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_2_doctest.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4669 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_3_prec.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_4_typos.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4651 (offset 66 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 --dry-run < trac_4741_part_5_fix3.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 485.\nHunk #2 FAILED at 509.\nHunk #3 succeeded at 4644 (offset 66 lines).\n2 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatching file sage/schemes/elliptic_curves/kodaira_symbol.py\nHunk #1 FAILED at 78.\n1 out of 1 hunk FAILED -- saving rejects to file sage/schemes/elliptic_curves/kodaira_symbol.py.rej\n```\n\nSo either I am doing something wrong, i.e. merging the wrong patches or fix3 needs a rebase.\n\nCheers,\n\nMichael",
+    "body": "Yep, I am seeing the same issue as William:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_1_rebase.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4585 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_2_doctest.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4669 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_3_prec.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_4_typos.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4651 (offset 66 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 --dry-run < trac_4741_part_5_fix3.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 485.\nHunk #2 FAILED at 509.\nHunk #3 succeeded at 4644 (offset 66 lines).\n2 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatching file sage/schemes/elliptic_curves/kodaira_symbol.py\nHunk #1 FAILED at 78.\n1 out of 1 hunk FAILED -- saving rejects to file sage/schemes/elliptic_curves/kodaira_symbol.py.rej\n```\nSo either I am doing something wrong, i.e. merging the wrong patches or fix3 needs a rebase.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T08:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -659,7 +652,6 @@ patching file sage/schemes/elliptic_curves/kodaira_symbol.py
 Hunk #1 FAILED at 78.
 1 out of 1 hunk FAILED -- saving rejects to file sage/schemes/elliptic_curves/kodaira_symbol.py.rej
 ```
-
 So either I am doing something wrong, i.e. merging the wrong patches or fix3 needs a rebase.
 
 Cheers,
@@ -721,7 +713,7 @@ and you should find that all doctests in sage/schemes/elliptic_curves pass, and 
 archive/issue_comments_035784.json:
 ```json
 {
-    "body": "Replying to [comment:18 was]:\n> \n> \n> So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch. \n\nApplying \n\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\n\nleads to a working Sage as well as passing doctests.\n\nWilliam: I assume you want to give this the final positive review once you poke around a little more.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:18 was]:\n> \n> \n> So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch. \n\n\nApplying \n\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\n\nleads to a working Sage as well as passing doctests.\n\nWilliam: I assume you want to give this the final positive review once you poke around a little more.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T16:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -734,6 +726,7 @@ Replying to [comment:18 was]:
 > 
 > 
 > So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch. 
+
 
 Applying 
 
@@ -756,7 +749,7 @@ Michael
 archive/issue_comments_035785.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nI broke it again with a simple for loop.\n\n\n```\nsage: EllipticCurve('2534g1').S_integral_points([13,2])\n...\n--> 576             return self[0]/self[2], self[1]/self[2]\n    577 \n    578     def is_divisible_by(self, m):\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/rings/padics/padic_capped_relative_element.so in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement._div_ (sage/rings/padics/padic_capped_relative_element.c:11055)()\n\nZeroDivisionError: cannot divide by zero\n```\n\n\nThis is the loop that got it:\n\n```\nsage: for E in cremona_optimal_curves([1000..10000]):\n    if E.rank() == 2:\n        print E.cremona_label(), E.S_integral_points([13]+[E.conductor().factor()[0][0]])\n```\n",
+    "body": "REFEREE REPORT:\n\nI broke it again with a simple for loop.\n\n```\nsage: EllipticCurve('2534g1').S_integral_points([13,2])\n...\n--> 576             return self[0]/self[2], self[1]/self[2]\n    577 \n    578     def is_divisible_by(self, m):\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/rings/padics/padic_capped_relative_element.so in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement._div_ (sage/rings/padics/padic_capped_relative_element.c:11055)()\n\nZeroDivisionError: cannot divide by zero\n```\n\nThis is the loop that got it:\n\n```\nsage: for E in cremona_optimal_curves([1000..10000]):\n    if E.rank() == 2:\n        print E.cremona_label(), E.S_integral_points([13]+[E.conductor().factor()[0][0]])\n```",
     "created_at": "2008-12-14T19:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -768,7 +761,6 @@ archive/issue_comments_035785.json:
 REFEREE REPORT:
 
 I broke it again with a simple for loop.
-
 
 ```
 sage: EllipticCurve('2534g1').S_integral_points([13,2])
@@ -784,7 +776,6 @@ sage: EllipticCurve('2534g1').S_integral_points([13,2])
 ZeroDivisionError: cannot divide by zero
 ```
 
-
 This is the loop that got it:
 
 ```
@@ -792,7 +783,6 @@ sage: for E in cremona_optimal_curves([1000..10000]):
     if E.rank() == 2:
         print E.cremona_label(), E.S_integral_points([13]+[E.conductor().factor()[0][0]])
 ```
-
 
 
 
@@ -956,7 +946,7 @@ So "positive review" modulo adding such a note.
 archive/issue_comments_035793.json:
 ```json
 {
-    "body": "Replying to [comment:30 was]:\n> I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> \n> So \"positive review\" modulo adding such a note.\n\nSounds good to me.  I'll try to add such a NOTE today.  JEC",
+    "body": "Replying to [comment:30 was]:\n> I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> \n> So \"positive review\" modulo adding such a note.\n\n\nSounds good to me.  I'll try to add such a NOTE today.  JEC",
     "created_at": "2008-12-15T15:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -970,6 +960,7 @@ Replying to [comment:30 was]:
 > 
 > So "positive review" modulo adding such a note.
 
+
 Sounds good to me.  I'll try to add such a NOTE today.  JEC
 
 
@@ -979,7 +970,7 @@ Sounds good to me.  I'll try to add such a NOTE today.  JEC
 archive/issue_comments_035794.json:
 ```json
 {
-    "body": "Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by @JohnCremona created at 2008-12-15 16:32:01\n\nReplying to [comment:31 cremona]:\n> Replying to [comment:30 was]:\n> > I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> > \n> > So \"positive review\" modulo adding such a note.\n> \n> Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done",
+    "body": "Attachment [trac-4741-note.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note.patch) by @JohnCremona created at 2008-12-15 16:32:01\n\nReplying to [comment:31 cremona]:\n> Replying to [comment:30 was]:\n> > I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> > \n> > So \"positive review\" modulo adding such a note.\n\n> \n> Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done",
     "created_at": "2008-12-15T16:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -995,6 +986,7 @@ Replying to [comment:31 cremona]:
 > > I am OK with merging the code as is now, as long as a "NOTE:" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of "there are no bugs here" approach, where one lets the user discover bugs.
 > > 
 > > So "positive review" modulo adding such a note.
+
 > 
 > Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done
 
@@ -1005,7 +997,7 @@ Replying to [comment:31 cremona]:
 archive/issue_comments_035795.json:
 ```json
 {
-    "body": "Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n\n```\nEllipticCurve?(\"7690e1\").S_integral_points([13,2])\n```\n\n\nWilliam",
+    "body": "Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n\n```\nEllipticCurve?(\"7690e1\").S_integral_points([13,2])\n```\n\nWilliam",
     "created_at": "2008-12-15T16:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -1019,7 +1011,6 @@ Positive review pending deletion of the question mark "?" in this line of the la
 ```
 EllipticCurve?("7690e1").S_integral_points([13,2])
 ```
-
 
 William
 
@@ -1054,7 +1045,7 @@ Michael
 archive/issue_comments_035797.json:
 ```json
 {
-    "body": "Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by @JohnCremona created at 2008-12-15 17:02:39\n\nReplying to [comment:34 mabshoff]:\n> John,\n> \n> please also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n> \n> Cheers,\n> \n> Michael\n\nTypo fixed and reference to new ticket #4805 added in *-note2.patch.",
+    "body": "Attachment [trac-4741-note2.patch](tarball://root/attachments/some-uuid/ticket4741/trac-4741-note2.patch) by @JohnCremona created at 2008-12-15 17:02:39\n\nReplying to [comment:34 mabshoff]:\n> John,\n> \n> please also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n> \n> Cheers,\n> \n> Michael\n\n\nTypo fixed and reference to new ticket #4805 added in *-note2.patch.",
     "created_at": "2008-12-15T17:02:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -1074,6 +1065,7 @@ Replying to [comment:34 mabshoff]:
 > 
 > Michael
 
+
 Typo fixed and reference to new ticket #4805 added in *-note2.patch.
 
 
@@ -1083,7 +1075,7 @@ Typo fixed and reference to new ticket #4805 added in *-note2.patch.
 archive/issue_comments_035798.json:
 ```json
 {
-    "body": "Replying to [comment:33 was]:\n> Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n> {{{\n> EllipticCurve?(\"7690e1\").S_integral_points([13,2])\n> }}}\n> \n> William\n\nPerfectionist!  Of course I notived that after uploading the patch (after which there is no way of deleting it for us ordinary mortals ;)).",
+    "body": "Replying to [comment:33 was]:\n> Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n> \n> ```\n> EllipticCurve?(\"7690e1\").S_integral_points([13,2])\n> ```\n> \n> William\n\n\nPerfectionist!  Of course I notived that after uploading the patch (after which there is no way of deleting it for us ordinary mortals ;)).",
     "created_at": "2008-12-15T17:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4741",
     "type": "issue_comment",
@@ -1094,11 +1086,13 @@ archive/issue_comments_035798.json:
 
 Replying to [comment:33 was]:
 > Positive review pending deletion of the question mark "?" in this line of the last patch:
-> {{{
+> 
+> ```
 > EllipticCurve?("7690e1").S_integral_points([13,2])
-> }}}
+> ```
 > 
 > William
+
 
 Perfectionist!  Of course I notived that after uploading the patch (after which there is no way of deleting it for us ordinary mortals ;)).
 

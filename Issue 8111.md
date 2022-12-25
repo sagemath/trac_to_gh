@@ -3,7 +3,7 @@
 archive/issues_008111.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n\n```\nK.<k>= QQ[];\nprint gcd(64,256)\nprint gcd(K(64),K(256))\nprint gcd(64*k^2+128,64*k^3+256)\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint frac\n```\n\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\n\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
+    "body": "Assignee: @aghitza\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n```\nK.<k>= QQ[];\nprint gcd(64,256)\nprint gcd(K(64),K(256))\nprint gcd(64*k^2+128,64*k^3+256)\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint frac\n```\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
     "created_at": "2010-01-28T15:04:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 The GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). 
 
-
 ```
 K.<k>= QQ[];
 print gcd(64,256)
@@ -30,7 +29,6 @@ frac = (64*k^2+128)/(64*k^3+256)
 frac.reduce()
 print frac
 ```
-
 gives
 
 ```
@@ -39,7 +37,6 @@ gives
 1
 (64*k^2 + 128)/(64*k^3 + 256)
 ```
-
 The last line in particular is false, according to me.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8111
@@ -91,7 +88,7 @@ archive/issue_comments_071079.json:
 archive/issue_comments_071080.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> #10771 is probably related/same thing.\n\nIt may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.",
+    "body": "Replying to [comment:2 kcrisman]:\n> #10771 is probably related/same thing.\n\n\nIt may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.",
     "created_at": "2011-02-17T07:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
@@ -103,6 +100,7 @@ archive/issue_comments_071080.json:
 Replying to [comment:2 kcrisman]:
 > #10771 is probably related/same thing.
 
+
 It may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.
 
 
@@ -112,7 +110,7 @@ It may be related, but my patch from #10771 does not touch the gcd for `QQ['x']`
 archive/issue_comments_071081.json:
 ```json
 {
-    "body": "Replying to [comment:3 SimonKing]:\n> Replying to [comment:2 kcrisman]:\n> > #10771 is probably related/same thing.\n> \n> It may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.\n\nPS: It seems to me that for changing gcd for univariate polynomials over the rationals, one has to dive into flint. I'll not do that, it'd be too far off topic for me. BTW, the doc string explicitly states that gcd in `QQ['x']` returns the *monic* gcd.",
+    "body": "Replying to [comment:3 SimonKing]:\n> Replying to [comment:2 kcrisman]:\n> > #10771 is probably related/same thing.\n\n> \n> It may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.\n\n\nPS: It seems to me that for changing gcd for univariate polynomials over the rationals, one has to dive into flint. I'll not do that, it'd be too far off topic for me. BTW, the doc string explicitly states that gcd in `QQ['x']` returns the *monic* gcd.",
     "created_at": "2011-02-17T07:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
@@ -124,8 +122,10 @@ archive/issue_comments_071081.json:
 Replying to [comment:3 SimonKing]:
 > Replying to [comment:2 kcrisman]:
 > > #10771 is probably related/same thing.
+
 > 
 > It may be related, but my patch from #10771 does not touch the gcd for `QQ['x']` (perhaps it should?). So far, the two tickets are about different issues.
+
 
 PS: It seems to me that for changing gcd for univariate polynomials over the rationals, one has to dive into flint. I'll not do that, it'd be too far off topic for me. BTW, the doc string explicitly states that gcd in `QQ['x']` returns the *monic* gcd.
 

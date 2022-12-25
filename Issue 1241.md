@@ -3,7 +3,7 @@
 archive/issues_001241.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nAnother problem reported by Emmanuel Thome: the following symbolic links are absolute with respect to the\nbuild directory of SAGE, thus won't work any more after \"make install\":\n\n```\n$ find sage-2.8.13/ | while read f ; do [ -h \"$f\" ] && [ ! \\\n-e \"$f\" ] && ls -l \"$f\" ; done\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzc\\\nmp -> /tmp/sage-2.8.13/spkg/../local/bin/bzdiff\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzf\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzl\\\ness -> /tmp/sage-2.8.13/spkg/../local/bin/bzmore\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bze\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1241\n\n",
+    "body": "Assignee: mabshoff\n\nAnother problem reported by Emmanuel Thome: the following symbolic links are absolute with respect to the\nbuild directory of SAGE, thus won't work any more after \"make install\":\n\n```\n$ find sage-2.8.13/ | while read f ; do [ -h \"$f\" ] && [ ! \\\n-e \"$f\" ] && ls -l \"$f\" ; done\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzc\\\nmp -> /tmp/sage-2.8.13/spkg/../local/bin/bzdiff\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzf\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bzl\\\ness -> /tmp/sage-2.8.13/spkg/../local/bin/bzmore\nlrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bze\\\ngrep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1241\n\n",
     "created_at": "2007-11-22T12:15:36Z",
     "labels": [
         "component: distribution",
@@ -33,7 +33,6 @@ ess -> /tmp/sage-2.8.13/spkg/../local/bin/bzmore
 lrwxrwxrwx 1 zimmerma spaces 41 2007-11-22 11:03 sage-2.8.13/sage/local/bin/bze\
 grep -> /tmp/sage-2.8.13/spkg/../local/bin/bzgrep
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1241
 
@@ -86,7 +85,7 @@ Michael
 archive/issue_comments_007751.json:
 ```json
 {
-    "body": "This problem seems fixed in sage-2.9:\n\n```\nbash-3.2$ pwd\n/usr/local/sage-2.9/sage/local/bin\nbash-3.2$ ls -l bz*\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzcat\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzcmp -> bzdiff\n-rwxr-xr-x 1 zimmerma spaces   2128 2007-12-17 11:25 bzdiff\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzegrep -> bzgrep\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzfgrep -> bzgrep\n-rwxr-xr-x 1 zimmerma spaces   1677 2007-12-17 11:25 bzgrep\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzip2\n-rwxr-xr-x 1 zimmerma spaces  14861 2007-12-17 11:25 bzip2recover\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzless -> bzmore\n-rwxr-xr-x 1 zimmerma spaces   1259 2007-12-17 11:25 bzmore\n```\n",
+    "body": "This problem seems fixed in sage-2.9:\n\n```\nbash-3.2$ pwd\n/usr/local/sage-2.9/sage/local/bin\nbash-3.2$ ls -l bz*\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzcat\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzcmp -> bzdiff\n-rwxr-xr-x 1 zimmerma spaces   2128 2007-12-17 11:25 bzdiff\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzegrep -> bzgrep\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzfgrep -> bzgrep\n-rwxr-xr-x 1 zimmerma spaces   1677 2007-12-17 11:25 bzgrep\n-rwxr-xr-x 1 zimmerma spaces 131001 2007-12-17 11:25 bzip2\n-rwxr-xr-x 1 zimmerma spaces  14861 2007-12-17 11:25 bzip2recover\nlrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzless -> bzmore\n-rwxr-xr-x 1 zimmerma spaces   1259 2007-12-17 11:25 bzmore\n```",
     "created_at": "2007-12-17T12:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1241",
     "type": "issue_comment",
@@ -112,7 +111,6 @@ lrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzfgrep -> bzgrep
 lrwxrwxrwx 1 zimmerma spaces      6 2007-12-17 11:25 bzless -> bzmore
 -rwxr-xr-x 1 zimmerma spaces   1259 2007-12-17 11:25 bzmore
 ```
-
 
 
 

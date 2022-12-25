@@ -3,7 +3,7 @@
 archive/issues_003962.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a=(QQ^3).subspace([[1,0,1]])\nsage: b=a.basis()[0]\nsage: b.change_ring(SR)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/modules/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/modules/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.change_ring (sage/modules/free_module_element.c:3583)()\n    407         if P.base_ring() is R:\n    408             return self\n--> 409         return P.change_ring(R)(self)\n    410\n    411     def additive_order(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in change_ring(self, R)\n   4406             return M.span_of_basis(B)\n   4407         else:\n-> 4408             return M.span(B)\n   4409\n   4410     def coordinate_vector(self, v, check=True):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in span(self, gens, base_ring, check, already_echelonized)\n   2571         if base_ring is None or base_ring == self.base_ring():\n   2572             return FreeModule_submodule_field(\n-> 2573                 self.ambient_module(), gens=gens, check=check, already_echelonized=already_echelonized)\n   2574         else:\n   2575             try:\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, gens, check, already_echelonized)\n   4857             raise TypeError, \"Argument gens (= %s) must be a list, tuple, or sequence.\"%gens\n   4858         FreeModule_submodule_with_basis_field.__init__(self, ambient, basis=gens, check=check,\n-> 4859             echelonize=not already_echelonized, already_echelonized=already_echelonized)\n   4860\n   4861     def _repr_(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, basis, check, echelonize, echelonized_basis, already_echelonized)\n   4683         FreeModule_submodule_with_basis_pid.__init__(\n   4684             self, ambient, basis=basis, check=check, echelonize=echelonize,\n-> 4685             echelonized_basis=echelonized_basis, already_echelonized=already_echelonized)\n   4686\n   4687     def _repr_(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, basis, check, echelonize, echelonized_basis, already_echelonized)\n   3745\n   3746         if echelonize and not already_echelonized:\n-> 3747             basis = self._echelonized_basis(ambient, basis)\n   3748\n   3749         FreeModule_generic.__init__(self, R, rank=len(basis), degree=ambient.degree(), sparse=ambient.is_sparse())\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in _echelonized_basis(self, ambient, basis)\n   4794         E = A.echelon_form()\n   4795         # Return the first rank rows (i.e., the nonzero rows).\n-> 4796         return E.rows()[:E.rank()]\n   4797\n   4798     def is_ambient(self):\n\nTypeError: slice indices must be integers or None or have an __index__ method\n```\n\n\nAttached patch fixes this problem\n\nIssue created by migration from https://trac.sagemath.org/ticket/3962\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a=(QQ^3).subspace([[1,0,1]])\nsage: b=a.basis()[0]\nsage: b.change_ring(SR)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/modules/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/modules/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.change_ring (sage/modules/free_module_element.c:3583)()\n    407         if P.base_ring() is R:\n    408             return self\n--> 409         return P.change_ring(R)(self)\n    410\n    411     def additive_order(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in change_ring(self, R)\n   4406             return M.span_of_basis(B)\n   4407         else:\n-> 4408             return M.span(B)\n   4409\n   4410     def coordinate_vector(self, v, check=True):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in span(self, gens, base_ring, check, already_echelonized)\n   2571         if base_ring is None or base_ring == self.base_ring():\n   2572             return FreeModule_submodule_field(\n-> 2573                 self.ambient_module(), gens=gens, check=check, already_echelonized=already_echelonized)\n   2574         else:\n   2575             try:\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, gens, check, already_echelonized)\n   4857             raise TypeError, \"Argument gens (= %s) must be a list, tuple, or sequence.\"%gens\n   4858         FreeModule_submodule_with_basis_field.__init__(self, ambient, basis=gens, check=check,\n-> 4859             echelonize=not already_echelonized, already_echelonized=already_echelonized)\n   4860\n   4861     def _repr_(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, basis, check, echelonize, echelonized_basis, already_echelonized)\n   4683         FreeModule_submodule_with_basis_pid.__init__(\n   4684             self, ambient, basis=basis, check=check, echelonize=echelonize,\n-> 4685             echelonized_basis=echelonized_basis, already_echelonized=already_echelonized)\n   4686\n   4687     def _repr_(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in __init__(self, ambient, basis, check, echelonize, echelonized_basis, already_echelonized)\n   3745\n   3746         if echelonize and not already_echelonized:\n-> 3747             basis = self._echelonized_basis(ambient, basis)\n   3748\n   3749         FreeModule_generic.__init__(self, R, rank=len(basis), degree=ambient.degree(), sparse=ambient.is_sparse())\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/modules/free_module.py in _echelonized_basis(self, ambient, basis)\n   4794         E = A.echelon_form()\n   4795         # Return the first rank rows (i.e., the nonzero rows).\n-> 4796         return E.rows()[:E.rank()]\n   4797\n   4798     def is_ambient(self):\n\nTypeError: slice indices must be integers or None or have an __index__ method\n```\n\nAttached patch fixes this problem\n\nIssue created by migration from https://trac.sagemath.org/ticket/3962\n\n",
     "created_at": "2008-08-26T21:08:18Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_003962.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: a=(QQ^3).subspace([[1,0,1]])
@@ -80,7 +79,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: slice indices must be integers or None or have an __index__ method
 ```
 
-
 Attached patch fixes this problem
 
 Issue created by migration from https://trac.sagemath.org/ticket/3962
@@ -130,7 +128,7 @@ mhansen's patch does indeed correct the issue and is much more general, so posit
 archive/issue_comments_028402.json:
 ```json
 {
-    "body": "This patch causes a doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2$ ./sage -t -long devel/sage/sage/structure/element.pyx\nsage -t -long devel/sage/sage/structure/element.pyx         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/element.py\", line 1458:\n    sage: 2r**(SR(2)-1-1r)\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError: non-integral exponents not supported\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_60\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/.doctest_element.py\n         [6.1 s]\nexit code: 1024\n```\n",
+    "body": "This patch causes a doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2$ ./sage -t -long devel/sage/sage/structure/element.pyx\nsage -t -long devel/sage/sage/structure/element.pyx         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/element.py\", line 1458:\n    sage: 2r**(SR(2)-1-1r)\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError: non-integral exponents not supported\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_60\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/.doctest_element.py\n         [6.1 s]\nexit code: 1024\n```",
     "created_at": "2008-08-29T06:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3962",
     "type": "issue_comment",
@@ -161,7 +159,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.a
          [6.1 s]
 exit code: 1024
 ```
-
 
 
 
@@ -226,7 +223,7 @@ So the last two patches should be applied.  I haven't tested the last patch, but
 archive/issue_comments_028406.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> So the last two patches should be applied.  I haven't tested the last patch, but it's a simple doctest fix, so what could go wrong? :)\n\nMike Hansen had some reservations, so let's wait until he signs off on it.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 jason]:\n> So the last two patches should be applied.  I haven't tested the last patch, but it's a simple doctest fix, so what could go wrong? :)\n\n\nMike Hansen had some reservations, so let's wait until he signs off on it.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-02T02:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3962",
     "type": "issue_comment",
@@ -237,6 +234,7 @@ archive/issue_comments_028406.json:
 
 Replying to [comment:7 jason]:
 > So the last two patches should be applied.  I haven't tested the last patch, but it's a simple doctest fix, so what could go wrong? :)
+
 
 Mike Hansen had some reservations, so let's wait until he signs off on it.
 

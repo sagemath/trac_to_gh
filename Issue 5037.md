@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5037
 archive/issue_comments_038273.json:
 ```json
 {
-    "body": "This is the example of a bad ticket having many feature to fix/add. Fortunately, all of those were solved by #6519 merged in sage recently.\n\nIn fact, you can now glue word morphism together using the function `extend_by` :\n\n\n```\nsage: n = WordMorphism({0:1,1:0,'a':5})\nsage: m = WordMorphism('a->ab,b->ba')\nsage: print n.extend_by(m)\nWordMorphism: 0->1, 1->0, a->5, b->ba\nsage: \nsage: print m.extend_by(n)\nWordMorphism: 0->1, 1->0, a->ab, b->ba\n```\n\n\nYou can now restrict the domain of a morphism by using `restrict_domain` :\n\n```\nsage: print n.restrict_domain([0,'a'])\nWordMorphism: 0->1, a->5\n```\n\n\nYou can now get the partition of the domain alphabet defined (not uniquely) by a involution :\n\n\n```\nsage: inv = WordMorphism({0:1,1:0,2:2,3:3,4:5,5:4})\nsage: inv.is_involution()\nTrue\nsage: inv.partition_of_domain_alphabet()\n({0, 4}, {1, 5}, {2, 3})\n```\n\n\n\nThe code of `is_involution` first check that self is an endomorphism before comptuting the square of self, which gives a better error message :\n\n\n```\nsage: print n\nWordMorphism: 0->1, 1->0, a->5\nsage: n.is_involution()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/slabbe/.sage/temp/slabbe_laptop/8706/_home_slabbe__sage_init_sage_0.py in <module>()\n\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/combinat/words/morphism.pyc in is_involution(self)\n    973         \"\"\"\n    974         if not self.is_endomorphism():\n--> 975             raise TypeError, \"self (=%s) is not a endomorphism\"%self\n    976 \n    977         return (self*self).is_identity()\n\nTypeError: self (=WordMorphism: 0->1, 1->0, a->5) is not a endomorphism\n```\n\n\nThe colored vector is not broken anymore on the empty word :\n\n\n```\nsage: empty = Word(); empty\nword: \nsage: empty.colored_vector()\n\n```\n\n\nA label can now be added to the colored vector of a word (a graphic object useful to study equations on words) :\n\n\n```\nsage: w = Word([0..10]+[10,9..0])\nsage: w.colored_vector(label='a palindrome rainbow')\n\n```\n\n\nHence, I recommand that this ticket be closed.",
+    "body": "This is the example of a bad ticket having many feature to fix/add. Fortunately, all of those were solved by #6519 merged in sage recently.\n\nIn fact, you can now glue word morphism together using the function `extend_by` :\n\n```\nsage: n = WordMorphism({0:1,1:0,'a':5})\nsage: m = WordMorphism('a->ab,b->ba')\nsage: print n.extend_by(m)\nWordMorphism: 0->1, 1->0, a->5, b->ba\nsage: \nsage: print m.extend_by(n)\nWordMorphism: 0->1, 1->0, a->ab, b->ba\n```\n\nYou can now restrict the domain of a morphism by using `restrict_domain` :\n\n```\nsage: print n.restrict_domain([0,'a'])\nWordMorphism: 0->1, a->5\n```\n\nYou can now get the partition of the domain alphabet defined (not uniquely) by a involution :\n\n```\nsage: inv = WordMorphism({0:1,1:0,2:2,3:3,4:5,5:4})\nsage: inv.is_involution()\nTrue\nsage: inv.partition_of_domain_alphabet()\n({0, 4}, {1, 5}, {2, 3})\n```\n\n\nThe code of `is_involution` first check that self is an endomorphism before comptuting the square of self, which gives a better error message :\n\n```\nsage: print n\nWordMorphism: 0->1, 1->0, a->5\nsage: n.is_involution()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/slabbe/.sage/temp/slabbe_laptop/8706/_home_slabbe__sage_init_sage_0.py in <module>()\n\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/combinat/words/morphism.pyc in is_involution(self)\n    973         \"\"\"\n    974         if not self.is_endomorphism():\n--> 975             raise TypeError, \"self (=%s) is not a endomorphism\"%self\n    976 \n    977         return (self*self).is_identity()\n\nTypeError: self (=WordMorphism: 0->1, 1->0, a->5) is not a endomorphism\n```\n\nThe colored vector is not broken anymore on the empty word :\n\n```\nsage: empty = Word(); empty\nword: \nsage: empty.colored_vector()\n\n```\n\nA label can now be added to the colored vector of a word (a graphic object useful to study equations on words) :\n\n```\nsage: w = Word([0..10]+[10,9..0])\nsage: w.colored_vector(label='a palindrome rainbow')\n\n```\n\nHence, I recommand that this ticket be closed.",
     "created_at": "2009-07-22T21:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5037",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ This is the example of a bad ticket having many feature to fix/add. Fortunately,
 
 In fact, you can now glue word morphism together using the function `extend_by` :
 
-
 ```
 sage: n = WordMorphism({0:1,1:0,'a':5})
 sage: m = WordMorphism('a->ab,b->ba')
@@ -71,7 +70,6 @@ sage: print m.extend_by(n)
 WordMorphism: 0->1, 1->0, a->ab, b->ba
 ```
 
-
 You can now restrict the domain of a morphism by using `restrict_domain` :
 
 ```
@@ -79,9 +77,7 @@ sage: print n.restrict_domain([0,'a'])
 WordMorphism: 0->1, a->5
 ```
 
-
 You can now get the partition of the domain alphabet defined (not uniquely) by a involution :
-
 
 ```
 sage: inv = WordMorphism({0:1,1:0,2:2,3:3,4:5,5:4})
@@ -92,9 +88,7 @@ sage: inv.partition_of_domain_alphabet()
 ```
 
 
-
 The code of `is_involution` first check that self is an endomorphism before comptuting the square of self, which gives a better error message :
-
 
 ```
 sage: print n
@@ -115,9 +109,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: self (=WordMorphism: 0->1, 1->0, a->5) is not a endomorphism
 ```
 
-
 The colored vector is not broken anymore on the empty word :
-
 
 ```
 sage: empty = Word(); empty
@@ -126,16 +118,13 @@ sage: empty.colored_vector()
 
 ```
 
-
 A label can now be added to the colored vector of a word (a graphic object useful to study equations on words) :
-
 
 ```
 sage: w = Word([0..10]+[10,9..0])
 sage: w.colored_vector(label='a palindrome rainbow')
 
 ```
-
 
 Hence, I recommand that this ticket be closed.
 

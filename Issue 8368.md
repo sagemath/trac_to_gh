@@ -104,7 +104,7 @@ One thing I don't like about this is that you can't easily get a 1:1 aspect rati
 archive/issue_comments_074676.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhampton]:\n> One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n\nOf course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.",
+    "body": "Replying to [comment:4 mhampton]:\n> One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n\n\nOf course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.",
     "created_at": "2010-04-15T03:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
@@ -115,6 +115,7 @@ archive/issue_comments_074676.json:
 
 Replying to [comment:4 mhampton]:
 > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.
+
 
 Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the "figure size", i.e., the size of the entire figure.
 
@@ -143,7 +144,7 @@ apply instead of previous patch (rebased for the new #8366)
 archive/issue_comments_074678.json:
 ```json
 {
-    "body": "Attachment [trac-8368-colorbars.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-colorbars.patch) by mhampton created at 2010-04-15 15:14:56\n\nReplying to [comment:5 jason]:\n> Replying to [comment:4 mhampton]:\n> > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n> \n> Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.\n\nOK.  I think I got into the habit of using figsize before aspect_ratio worked.  I will check the rebased version as soon as I can.",
+    "body": "Attachment [trac-8368-colorbars.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-colorbars.patch) by mhampton created at 2010-04-15 15:14:56\n\nReplying to [comment:5 jason]:\n> Replying to [comment:4 mhampton]:\n> > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.\n\n> \n> Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the \"figure size\", i.e., the size of the entire figure.\n\n\nOK.  I think I got into the habit of using figsize before aspect_ratio worked.  I will check the rebased version as soon as I can.",
     "created_at": "2010-04-15T15:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
@@ -157,8 +158,10 @@ Attachment [trac-8368-colorbars.patch](tarball://root/attachments/some-uuid/tick
 Replying to [comment:5 jason]:
 > Replying to [comment:4 mhampton]:
 > > One thing I don't like about this is that you can't easily get a 1:1 aspect ratio plot - using figsize = [a,a] makes the overall figure square but not the plotted region.
+
 > 
 > Of course.  If you want the aspect ratio to be 1, then use the aspect_ratio=1 argument, which controls the aspect ratio.  The figsize option controls the "figure size", i.e., the size of the entire figure.
+
 
 OK.  I think I got into the habit of using figsize before aspect_ratio worked.  I will check the rebased version as soon as I can.
 
@@ -169,7 +172,7 @@ OK.  I think I got into the habit of using figsize before aspect_ratio worked.  
 archive/issue_comments_074679.json:
 ```json
 {
-    "body": "Thanks for rebasing, I got the following errors. (But I do not switch the 'needs_review' flag unless somebody confirms this issue.)\n\n```\n...\n      File \"/mnt/usb1/scratch/marik/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/plot/contour_plot.py\", line 193, in _render_on_subplot\n        if options['colorbar']:\n    KeyError: 'colorbar'\n**********************************************************************\n...\n----------------------------------------------------------------------\nThe following tests failed:\n\n        sage -t  \"devel/sage/sage/plot/contour_plot.py\"\nTotal time for all tests: 25.0 seconds\n```\n\n\nIt would be also nice to add :: in between each pair of different examples - this allows to run any of the examples provided in this patch immediately from reference guide.\nRobert",
+    "body": "Thanks for rebasing, I got the following errors. (But I do not switch the 'needs_review' flag unless somebody confirms this issue.)\n\n```\n...\n      File \"/mnt/usb1/scratch/marik/sage-4.3.5-sage.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/plot/contour_plot.py\", line 193, in _render_on_subplot\n        if options['colorbar']:\n    KeyError: 'colorbar'\n**********************************************************************\n...\n----------------------------------------------------------------------\nThe following tests failed:\n\n        sage -t  \"devel/sage/sage/plot/contour_plot.py\"\nTotal time for all tests: 25.0 seconds\n```\n\nIt would be also nice to add :: in between each pair of different examples - this allows to run any of the examples provided in this patch immediately from reference guide.\nRobert",
     "created_at": "2010-04-16T11:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
@@ -193,7 +196,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/plot/contour_plot.py"
 Total time for all tests: 25.0 seconds
 ```
-
 
 It would be also nice to add :: in between each pair of different examples - this allows to run any of the examples provided in this patch immediately from reference guide.
 Robert

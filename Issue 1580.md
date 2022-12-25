@@ -3,7 +3,7 @@
 archive/issues_001580.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(1).show()\nplot(x^3,xmin=0,xmax=1).show()\n```\n\n\nshows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1580\n\n",
+    "body": "Assignee: boothby\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(1).show()\nplot(x^3,xmin=0,xmax=1).show()\n```\n\nshows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1580\n\n",
     "created_at": "2007-12-21T08:44:06Z",
     "labels": [
         "component: notebook",
@@ -18,13 +18,11 @@ archive/issues_001580.json:
 ```
 Assignee: boothby
 
-
 ```
 from sage.plot.plot3d.all import Sphere
 Sphere(1).show()
 plot(x^3,xmin=0,xmax=1).show()
 ```
-
 
 shows the plot first and the sphere second on my computer (old 850 Mhz PIII running ubuntu 7.10).  This is confusing.
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1580
 archive/issue_comments_010042.json:
 ```json
 {
-    "body": "William says,\n\n```\nThis will likely happen for everybody.  It is likely caused by the 3d\ngraphics not\ncalling the right function to get the next default png filename.\nThanks for reporting it. \n```\n",
+    "body": "William says,\n\n```\nThis will likely happen for everybody.  It is likely caused by the 3d\ngraphics not\ncalling the right function to get the next default png filename.\nThanks for reporting it. \n```",
     "created_at": "2007-12-21T21:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1580",
     "type": "issue_comment",
@@ -57,7 +55,6 @@ graphics not
 calling the right function to get the next default png filename.
 Thanks for reporting it. 
 ```
-
 
 
 

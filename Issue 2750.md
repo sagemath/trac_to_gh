@@ -3,7 +3,7 @@
 archive/issues_002750.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb dmharvey @koffie\n\nOver at #2384 Robert wrote:\n> On another note, I think I remember hearing somewhere that magma uses zech logs as \n> coefficients, e.g. GF(p<sup>n</sup>) is implemented as a relative extension of GF(p<sup>d</sup>) \n> where p<sup>d</sup> is small enough for the log representation. Would this be worth looking\n> at?\n\nand David replied:\n> This would only work when n is sufficiently composite, but in that case I think\n> it's a great idea. Still, you need to have very good generic polynomial arithmetic\n> to make this work. I think this is something to work on later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2750\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb dmharvey @koffie\n\nOver at #2384 Robert wrote:\n> On another note, I think I remember hearing somewhere that magma uses zech logs as \n> coefficients, e.g. GF(p<sup>n</sup>) is implemented as a relative extension of GF(p<sup>d</sup>) \n> where p<sup>d</sup> is small enough for the log representation. Would this be worth looking\n> at?\n\n\nand David replied:\n> This would only work when n is sufficiently composite, but in that case I think\n> it's a great idea. Still, you need to have very good generic polynomial arithmetic\n> to make this work. I think this is something to work on later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2750\n\n",
     "created_at": "2008-04-01T12:04:12Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,6 +26,7 @@ Over at #2384 Robert wrote:
 > coefficients, e.g. GF(p<sup>n</sup>) is implemented as a relative extension of GF(p<sup>d</sup>) 
 > where p<sup>d</sup> is small enough for the log representation. Would this be worth looking
 > at?
+
 
 and David replied:
 > This would only work when n is sufficiently composite, but in that case I think

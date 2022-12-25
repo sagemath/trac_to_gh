@@ -90,7 +90,7 @@ Arbitrary-precision integration and differentiation is also available in mpmath.
 archive/issue_comments_044177.json:
 ```json
 {
-    "body": "> Arbitrary-precision integration and differentiation is also available in mpmath. \n\nCool.  And in case people don't know, mpmath is in Sage.\n\n```\nsage: import sympy.mpmath\nsage: sympy.mpmath.\nDisplay all 206 possibilities? (y or n)\n```\n",
+    "body": "> Arbitrary-precision integration and differentiation is also available in mpmath. \n\n\nCool.  And in case people don't know, mpmath is in Sage.\n\n```\nsage: import sympy.mpmath\nsage: sympy.mpmath.\nDisplay all 206 possibilities? (y or n)\n```",
     "created_at": "2009-04-02T23:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5661",
     "type": "issue_comment",
@@ -101,6 +101,7 @@ archive/issue_comments_044177.json:
 
 > Arbitrary-precision integration and differentiation is also available in mpmath. 
 
+
 Cool.  And in case people don't know, mpmath is in Sage.
 
 ```
@@ -108,7 +109,6 @@ sage: import sympy.mpmath
 sage: sympy.mpmath.
 Display all 206 possibilities? (y or n)
 ```
-
 
 
 

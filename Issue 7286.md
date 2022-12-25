@@ -3,7 +3,7 @@
 archive/issues_007286.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n> 11:24 < williamstein> I tried \"sage -upgrade\" on a clean install (the systemwide one) on geom.math.\n\n> 11:24 < williamstein> It fails with:\n\n> 11:24 < williamstein>   File \"/usr/local/sage/local/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\", line 204, in frompickle\n\n> 11:24 < williamstein>     env = pickle.load(picklefile)\n\n> 11:24 < williamstein> AttributeError: 'module' object has no attribute 'RedirStream'\n\nIssue created by migration from https://trac.sagemath.org/ticket/7286\n\n",
+    "body": "Assignee: mabshoff\n\n> 11:24 < williamstein> I tried \"sage -upgrade\" on a clean install (the systemwide one) on geom.math.\n\n\n> 11:24 < williamstein> It fails with:\n\n\n> 11:24 < williamstein>   File \"/usr/local/sage/local/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\", line 204, in frompickle\n\n\n> 11:24 < williamstein>     env = pickle.load(picklefile)\n\n\n> 11:24 < williamstein> AttributeError: 'module' object has no attribute 'RedirStream'\n\nIssue created by migration from https://trac.sagemath.org/ticket/7286\n\n",
     "created_at": "2009-10-25T03:53:47Z",
     "labels": [
         "component: packages: standard",
@@ -20,11 +20,15 @@ Assignee: mabshoff
 
 > 11:24 < williamstein> I tried "sage -upgrade" on a clean install (the systemwide one) on geom.math.
 
+
 > 11:24 < williamstein> It fails with:
+
 
 > 11:24 < williamstein>   File "/usr/local/sage/local/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py", line 204, in frompickle
 
+
 > 11:24 < williamstein>     env = pickle.load(picklefile)
+
 
 > 11:24 < williamstein> AttributeError: 'module' object has no attribute 'RedirStream'
 

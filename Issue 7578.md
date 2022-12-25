@@ -3,7 +3,7 @@
 archive/issues_007578.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nKeywords: infinite polynomial ring, basic arithmetic\n\n[Martin Albrecht](http://groups.google.com/group/sage-devel/browse_thread/thread/20e0fc8f5c5be582) reported the following example:\n\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 43.09 s, sys: 0.02 s, total: 43.12 s\nWall time: 43.12 s\n1/2*x10000\n```\n\n\nThis is inacceptably slow.\n\nNote that this problem does not occur with the sparse implementation of infinite polynomial rings:\n\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1/2*x10000\n```\n\n\nPart of the problem is a slowness of element conversion in polynomial rings:\n\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001)\nsage: R2 = PolynomialRing(QQ,'x',10002)\nsage: x10000 = R1('x10000')\nsage: %time a = R2(x10000)\nCPU times: user 4.96 s, sys: 0.12 s, total: 5.08 s\nWall time: 5.11 s\n```\n\nwhich is rather slow as  well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7578\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: infinite polynomial ring, basic arithmetic\n\n[Martin Albrecht](http://groups.google.com/group/sage-devel/browse_thread/thread/20e0fc8f5c5be582) reported the following example:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 43.09 s, sys: 0.02 s, total: 43.12 s\nWall time: 43.12 s\n1/2*x10000\n```\n\nThis is inacceptably slow.\n\nNote that this problem does not occur with the sparse implementation of infinite polynomial rings:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1/2*x10000\n```\n\nPart of the problem is a slowness of element conversion in polynomial rings:\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001)\nsage: R2 = PolynomialRing(QQ,'x',10002)\nsage: x10000 = R1('x10000')\nsage: %time a = R2(x10000)\nCPU times: user 4.96 s, sys: 0.12 s, total: 5.08 s\nWall time: 5.11 s\n```\nwhich is rather slow as  well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7578\n\n",
     "created_at": "2009-12-01T23:14:52Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ Keywords: infinite polynomial ring, basic arithmetic
 
 [Martin Albrecht](http://groups.google.com/group/sage-devel/browse_thread/thread/20e0fc8f5c5be582) reported the following example:
 
-
 ```
 sage: X.<x> = InfinitePolynomialRing(QQ)
 sage: x10000 = x[10000]
@@ -33,11 +32,9 @@ Wall time: 43.12 s
 1/2*x10000
 ```
 
-
 This is inacceptably slow.
 
 Note that this problem does not occur with the sparse implementation of infinite polynomial rings:
-
 
 ```
 sage: X.<x> = InfinitePolynomialRing(QQ,implementation='sparse')
@@ -49,9 +46,7 @@ Wall time: 0.00 s
 1/2*x10000
 ```
 
-
 Part of the problem is a slowness of element conversion in polynomial rings:
-
 
 ```
 sage: R1 = PolynomialRing(QQ,'x',10001)
@@ -61,7 +56,6 @@ sage: %time a = R2(x10000)
 CPU times: user 4.96 s, sys: 0.12 s, total: 5.08 s
 Wall time: 5.11 s
 ```
-
 which is rather slow as  well.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7578
@@ -93,7 +87,7 @@ Improving basic arithmetic of infinite polynomial rings
 archive/issue_comments_064428.json:
 ```json
 {
-    "body": "Attachment [7578_basic_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7578/7578_basic_arithmetic.patch) by @simon-king-jena created at 2009-12-01 23:50:45\n\nWith the attached patch, the example improves a lot:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 7.37 s, sys: 0.01 s, total: 7.38 s\nWall time: 7.38 s\n1/2*x10000\n```\n\n\nOf course, this is still a shame. But it may be better than nothing.\n\nThe idea / reason for the slowness:\n\n* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.\n* In the old code, the underlying finite polynomial of x10000 was not updated.\n* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.\n\nHence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time x10000._p = X._P(x10000._p)\nCPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s\nWall time: 6.91 s\n```\n\n\nI don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.",
+    "body": "Attachment [7578_basic_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7578/7578_basic_arithmetic.patch) by @simon-king-jena created at 2009-12-01 23:50:45\n\nWith the attached patch, the example improves a lot:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 7.37 s, sys: 0.01 s, total: 7.38 s\nWall time: 7.38 s\n1/2*x10000\n```\n\nOf course, this is still a shame. But it may be better than nothing.\n\nThe idea / reason for the slowness:\n\n* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.\n* In the old code, the underlying finite polynomial of x10000 was not updated.\n* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.\n\nHence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time x10000._p = X._P(x10000._p)\nCPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s\nWall time: 6.91 s\n```\n\nI don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.",
     "created_at": "2009-12-01T23:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7578",
     "type": "issue_comment",
@@ -116,7 +110,6 @@ Wall time: 7.38 s
 1/2*x10000
 ```
 
-
 Of course, this is still a shame. But it may be better than nothing.
 
 The idea / reason for the slowness:
@@ -135,7 +128,6 @@ sage: %time x10000._p = X._P(x10000._p)
 CPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s
 Wall time: 6.91 s
 ```
-
 
 I don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.
 

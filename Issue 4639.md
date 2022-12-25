@@ -3,7 +3,7 @@
 archive/issues_004639.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nI think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)\n\nAlso, I believe that these examples had no problems in sage 3.0.2.\n\n\n```\nbober@bober:~/math/tests$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: get_memory_usage()\n114.5546875\nsage: for z in xrange(10000):\n   ...:     a = 3^i\n   ...:     \nsage: get_memory_usage()\n121.4375\nsage: for z in xrange(10000):\n    a = 3^CC.0\n   ...:     \nsage: get_memory_usage()\n128.96484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ...:     \nsage: get_memory_usage()\n187.36328125\nsage: var('t')\nt\nsage: for z in xrange(10000):\n    a = 3.0^t\n   ....:     \nsage: get_memory_usage()\n231.4609375\nsage: #But, integer^integer is OK:\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage\n<function get_memory_usage at 0x8415f0c>\nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ....:     \nsaget_memory_usage()\n290.1640625\nsage: for z in xrange(10000):\n    a = CC.0^CC.0\n   ....:     \nsage: get_memory_usage()\n290.1640625\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4639\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nI think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)\n\nAlso, I believe that these examples had no problems in sage 3.0.2.\n\n```\nbober@bober:~/math/tests$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: get_memory_usage()\n114.5546875\nsage: for z in xrange(10000):\n   ...:     a = 3^i\n   ...:     \nsage: get_memory_usage()\n121.4375\nsage: for z in xrange(10000):\n    a = 3^CC.0\n   ...:     \nsage: get_memory_usage()\n128.96484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ...:     \nsage: get_memory_usage()\n187.36328125\nsage: var('t')\nt\nsage: for z in xrange(10000):\n    a = 3.0^t\n   ....:     \nsage: get_memory_usage()\n231.4609375\nsage: #But, integer^integer is OK:\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage\n<function get_memory_usage at 0x8415f0c>\nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3^3\n   ....:     \nsage: get_memory_usage()\n231.58984375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n   ....:     \nsaget_memory_usage()\n290.1640625\nsage: for z in xrange(10000):\n    a = CC.0^CC.0\n   ....:     \nsage: get_memory_usage()\n290.1640625\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4639\n\n",
     "created_at": "2008-11-27T19:06:08Z",
     "labels": [
         "component: basic arithmetic",
@@ -24,7 +24,6 @@ CC:  @robertwb
 I think that the following example speaks for itself. (This was on an x86, 32 bit, running Ubuntu.)
 
 Also, I believe that these examples had no problems in sage 3.0.2.
-
 
 ```
 bober@bober:~/math/tests$ sage
@@ -80,7 +79,6 @@ sage: for z in xrange(10000):
 sage: get_memory_usage()
 290.1640625
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4639
 
@@ -174,7 +172,7 @@ Michael
 archive/issue_comments_034829.json:
 ```json
 {
-    "body": "Burcin about his code, not the problem reported here:\n\n```\n[6:36pm] burcin: hmm.. I think I found the problem..\n[6:36pm] burcin: still vague though\n[6:36pm] mabshoff: burcin: I CCed RobertWB on that existing leak ticket with the exponentiation and hopefully he will just post a one line patch.\n[6:36pm] mabshoff: Ok \n[6:36pm] burcin: I was being a good coercion user and called .coerce()\n[6:36pm] burcin: if I just use the __call__ on the parent, things work much much faster\n[6:36pm] mabshoff: And it doesn't leak?\n[6:37pm] burcin: I am guessing that the leak also goes away.. because this example ate more than 2gb memory with the leak\n[6:37pm] mabshoff: yeah\n```\n",
+    "body": "Burcin about his code, not the problem reported here:\n\n```\n[6:36pm] burcin: hmm.. I think I found the problem..\n[6:36pm] burcin: still vague though\n[6:36pm] mabshoff: burcin: I CCed RobertWB on that existing leak ticket with the exponentiation and hopefully he will just post a one line patch.\n[6:36pm] mabshoff: Ok \n[6:36pm] burcin: I was being a good coercion user and called .coerce()\n[6:36pm] burcin: if I just use the __call__ on the parent, things work much much faster\n[6:36pm] mabshoff: And it doesn't leak?\n[6:37pm] burcin: I am guessing that the leak also goes away.. because this example ate more than 2gb memory with the leak\n[6:37pm] mabshoff: yeah\n```",
     "created_at": "2008-11-28T02:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -199,13 +197,12 @@ Burcin about his code, not the problem reported here:
 
 
 
-
 ---
 
 archive/issue_comments_034830.json:
 ```json
 {
-    "body": "Here is my leak:\n\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```\n",
+    "body": "Here is my leak:\n\n```\nsage: F = GF(13)\nsage: get_memory_usage()\n708.02734375\nsage: for _ in xrange(10000):\n....:     t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n728.15234375\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n932.3125\nsage: for _ in xrange(100000):\n    t = F.coerce(F(234234))\n....:     \nsage: get_memory_usage()\n1136.35546875\n```",
     "created_at": "2008-11-28T02:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -215,7 +212,6 @@ archive/issue_comments_034830.json:
 ```
 
 Here is my leak:
-
 
 ```
 sage: F = GF(13)
@@ -237,7 +233,6 @@ sage: for _ in xrange(100000):
 sage: get_memory_usage()
 1136.35546875
 ```
-
 
 
 
@@ -336,7 +331,7 @@ archive/issue_events_010583.json:
 archive/issue_comments_034832.json:
 ```json
 {
-    "body": "Here's the bug: \n\n\n```\nsage: sage: get_memory_usage()\n'465M'\nsage: for _ in xrange(10000): t = Hom(QQ, QQ)\n....: \nsage: sage: get_memory_usage()\n'476M'\nsage: Hom(QQ, QQ) is Hom(QQ, QQ)\nFalse\n```\n",
+    "body": "Here's the bug: \n\n```\nsage: sage: get_memory_usage()\n'465M'\nsage: for _ in xrange(10000): t = Hom(QQ, QQ)\n....: \nsage: sage: get_memory_usage()\n'476M'\nsage: Hom(QQ, QQ) is Hom(QQ, QQ)\nFalse\n```",
     "created_at": "2008-12-02T12:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -346,7 +341,6 @@ archive/issue_comments_034832.json:
 ```
 
 Here's the bug: 
-
 
 ```
 sage: sage: get_memory_usage()
@@ -358,7 +352,6 @@ sage: sage: get_memory_usage()
 sage: Hom(QQ, QQ) is Hom(QQ, QQ)
 False
 ```
-
 
 
 
@@ -555,7 +548,7 @@ Michael
 archive/issue_comments_034842.json:
 ```json
 {
-    "body": "An interesting test point: \n\n\n```\nclass TestParent(Parent):\n    def __init__(self):\n        self._populate_coercion_lists_()\n    def _has_coerce_map_from_(self, X):\n        return True\n    def _element_constructor_(self, x):\n        raise TypeError\n```\n\n\nNow this leaks\n\n\n```\n%python\n\nfrom sage.all import get_memory_usage\n\ndef test(R, S):\n    mor = S.convert_map_from(R)\n    print get_memory_usage()\n    for i in range(10000):\n        try:\n            mor = S.convert_map_from(R)\n            a = mor._call_(R.gen())\n        except:\n            pass\n    print get_memory_usage()\n```\n\n\nBut this doesn't \n\n\n```\n%cython\n\nfrom sage.all import get_memory_usage\n\ndef test(R, S):\n    mor = S.convert_map_from(R)\n    print get_memory_usage()\n    for i in range(10000):\n        try:\n            mor = S.convert_map_from(R)\n            a = mor._call_(R.gen())\n        except:\n            pass\n    print get_memory_usage()\n```\n\n\nThe *only* difference here is Python vs. Cython (leaking in the Python case).",
+    "body": "An interesting test point: \n\n```\nclass TestParent(Parent):\n    def __init__(self):\n        self._populate_coercion_lists_()\n    def _has_coerce_map_from_(self, X):\n        return True\n    def _element_constructor_(self, x):\n        raise TypeError\n```\n\nNow this leaks\n\n```\n%python\n\nfrom sage.all import get_memory_usage\n\ndef test(R, S):\n    mor = S.convert_map_from(R)\n    print get_memory_usage()\n    for i in range(10000):\n        try:\n            mor = S.convert_map_from(R)\n            a = mor._call_(R.gen())\n        except:\n            pass\n    print get_memory_usage()\n```\n\nBut this doesn't \n\n```\n%cython\n\nfrom sage.all import get_memory_usage\n\ndef test(R, S):\n    mor = S.convert_map_from(R)\n    print get_memory_usage()\n    for i in range(10000):\n        try:\n            mor = S.convert_map_from(R)\n            a = mor._call_(R.gen())\n        except:\n            pass\n    print get_memory_usage()\n```\n\nThe *only* difference here is Python vs. Cython (leaking in the Python case).",
     "created_at": "2008-12-14T05:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -565,7 +558,6 @@ archive/issue_comments_034842.json:
 ```
 
 An interesting test point: 
-
 
 ```
 class TestParent(Parent):
@@ -577,9 +569,7 @@ class TestParent(Parent):
         raise TypeError
 ```
 
-
 Now this leaks
-
 
 ```
 %python
@@ -598,9 +588,7 @@ def test(R, S):
     print get_memory_usage()
 ```
 
-
 But this doesn't 
-
 
 ```
 %cython
@@ -619,7 +607,6 @@ def test(R, S):
     print get_memory_usage()
 ```
 
-
 The *only* difference here is Python vs. Cython (leaking in the Python case).
 
 
@@ -629,7 +616,7 @@ The *only* difference here is Python vs. Cython (leaking in the Python case).
 archive/issue_comments_034843.json:
 ```json
 {
-    "body": "And running \n\n\n```\ntest(TestParent(), ZZ['x']) # python\n638M\n640M\n```\n\n\n\n\n```\ntest(TestParent(), ZZ['x']) # cython\n640M\n640M\n```\n\n\nIt feels like something is getting cached in an exception.",
+    "body": "And running \n\n```\ntest(TestParent(), ZZ['x']) # python\n638M\n640M\n```\n\n\n```\ntest(TestParent(), ZZ['x']) # cython\n640M\n640M\n```\n\nIt feels like something is getting cached in an exception.",
     "created_at": "2008-12-14T05:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -640,7 +627,6 @@ archive/issue_comments_034843.json:
 
 And running 
 
-
 ```
 test(TestParent(), ZZ['x']) # python
 638M
@@ -648,14 +634,11 @@ test(TestParent(), ZZ['x']) # python
 ```
 
 
-
-
 ```
 test(TestParent(), ZZ['x']) # cython
 640M
 640M
 ```
-
 
 It feels like something is getting cached in an exception.
 
@@ -708,7 +691,7 @@ Michael
 archive/issue_comments_034846.json:
 ```json
 {
-    "body": "This is a Cython error, not a coercion error. When something is returned from within a try block, it appears the (cached) exception is not released. \n\n\n```\n%cython\ndef foo():\n    try:\n        return None\n    except:\n        pass\n```\n\n\n\n```\n%python\ndef test():\n    print get_memory_usage()\n    for i in range(100000):\n        try:\n            foo()\n            raise TypeError\n        except TypeError:\n            pass\n    print get_memory_usage()\n```\n\n\nNow `test()` will leak.",
+    "body": "This is a Cython error, not a coercion error. When something is returned from within a try block, it appears the (cached) exception is not released. \n\n```\n%cython\ndef foo():\n    try:\n        return None\n    except:\n        pass\n```\n\n```\n%python\ndef test():\n    print get_memory_usage()\n    for i in range(100000):\n        try:\n            foo()\n            raise TypeError\n        except TypeError:\n            pass\n    print get_memory_usage()\n```\n\nNow `test()` will leak.",
     "created_at": "2008-12-14T09:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -719,7 +702,6 @@ archive/issue_comments_034846.json:
 
 This is a Cython error, not a coercion error. When something is returned from within a try block, it appears the (cached) exception is not released. 
 
-
 ```
 %cython
 def foo():
@@ -728,8 +710,6 @@ def foo():
     except:
         pass
 ```
-
-
 
 ```
 %python
@@ -743,7 +723,6 @@ def test():
             pass
     print get_memory_usage()
 ```
-
 
 Now `test()` will leak.
 
@@ -772,7 +751,7 @@ Install cython-0.10.3.spkg at http://sage.math.washington.edu/home/robertwb/cyth
 archive/issue_comments_034848.json:
 ```json
 {
-    "body": "The new Cython.spkg reduces the leak significantly:\nWithout:\n\n```\nsage: get_memory_usage()\n417.98828125\nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n509.26171875\n```\n\nWith:\n\n```\nsage: get_memory_usage()\n416.19140625\nsage: \nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n437.97265625\n```\n\nBut unfortunately it doesn't fix it completely:\n\n```\nsage: get_memory_usage()\n416.19140625\nsage: \nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n437.97265625\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n459.99609375\n```\n\nConsequently I will split the Cython.spkg from this ticket.\n\nCheers,\n\nMichael",
+    "body": "The new Cython.spkg reduces the leak significantly:\nWithout:\n\n```\nsage: get_memory_usage()\n417.98828125\nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n509.26171875\n```\nWith:\n\n```\nsage: get_memory_usage()\n416.19140625\nsage: \nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n437.97265625\n```\nBut unfortunately it doesn't fix it completely:\n\n```\nsage: get_memory_usage()\n416.19140625\nsage: \nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n437.97265625\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n459.99609375\n```\nConsequently I will split the Cython.spkg from this ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T15:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -793,7 +772,6 @@ sage: for z in xrange(10000):
 sage: get_memory_usage()
 509.26171875
 ```
-
 With:
 
 ```
@@ -806,7 +784,6 @@ sage: for z in xrange(10000):
 sage: get_memory_usage()
 437.97265625
 ```
-
 But unfortunately it doesn't fix it completely:
 
 ```
@@ -824,7 +801,6 @@ sage: for z in xrange(10000):
 sage: get_memory_usage()
 459.99609375
 ```
-
 Consequently I will split the Cython.spkg from this ticket.
 
 Cheers,
@@ -934,7 +910,7 @@ Michael
 archive/issue_comments_034852.json:
 ```json
 {
-    "body": "Another data point.\n\nI took the example from #4683 (Michael, it was argued that #4683 is a duplicate).\n\n```\nsage: get_memory_usage()\n704.5390625\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n803.67578125\n...\nsage: get_memory_usage()\n1093.203125\nsage: del v\nsage: get_memory_usage()\n1093.203125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n1183.86328125\nsage: del v\nsage: get_memory_usage()\n1183.86328125\nsage: v=1\nsage: get_memory_usage()\n1183.86328125\n...\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n1279.55078125\nsage: w = deepcopy(v)\nsage: get_memory_usage()\n1295.18359375\nsage: del w\nsage: get_memory_usage()\n1295.18359375\n```\n\n\nTherefore it seems to me that the problem is not exponentiation but a failure in deallocation.",
+    "body": "Another data point.\n\nI took the example from #4683 (Michael, it was argued that #4683 is a duplicate).\n\n```\nsage: get_memory_usage()\n704.5390625\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n803.67578125\n...\nsage: get_memory_usage()\n1093.203125\nsage: del v\nsage: get_memory_usage()\n1093.203125\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n1183.86328125\nsage: del v\nsage: get_memory_usage()\n1183.86328125\nsage: v=1\nsage: get_memory_usage()\n1183.86328125\n...\nsage: v = [CDF(i)^2 for n in range(50000)]\nsage: get_memory_usage()\n1279.55078125\nsage: w = deepcopy(v)\nsage: get_memory_usage()\n1295.18359375\nsage: del w\nsage: get_memory_usage()\n1295.18359375\n```\n\nTherefore it seems to me that the problem is not exponentiation but a failure in deallocation.",
     "created_at": "2008-12-16T13:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -979,7 +955,6 @@ sage: del w
 sage: get_memory_usage()
 1295.18359375
 ```
-
 
 Therefore it seems to me that the problem is not exponentiation but a failure in deallocation.
 
@@ -1034,7 +1009,7 @@ Michael
 archive/issue_comments_034855.json:
 ```json
 {
-    "body": "This does indeed fix the issue for me:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: get_memory_usage()\n416.21484375\nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n416.21484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n416.21484375\n```\n\nDoctesting now ...\n| Sage Version 3.2.2.rc0, Release Date: 2008-12-15                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "This does indeed fix the issue for me:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: get_memory_usage()\n416.21484375\nsage: for z in xrange(10000):\n....:     a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n416.21484375\nsage: for z in xrange(10000):\n    a = 3.0^CC.0\n....:     \nsage: get_memory_usage()\n416.21484375\n```\nDoctesting now ...\n| Sage Version 3.2.2.rc0, Release Date: 2008-12-15                   |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
     "created_at": "2008-12-16T20:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4639",
     "type": "issue_comment",
@@ -1061,7 +1036,6 @@ sage: for z in xrange(10000):
 sage: get_memory_usage()
 416.21484375
 ```
-
 Doctesting now ...
 | Sage Version 3.2.2.rc0, Release Date: 2008-12-15                   |
 | Type notebook() for the GUI, and license() for information.        |

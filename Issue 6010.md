@@ -52,7 +52,7 @@ Wow, awesome that you did this! Thanks!!
 archive/issue_comments_047736.json:
 ```json
 {
-    "body": "Can you rebase this against 3.4.2.  I get:\n\n```\npatching file sage/schemes/hyperelliptic_curves/all.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/all.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 25\n2 out of 3 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 62\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nfile sage/schemes/hyperelliptic_curves/invariants.py already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/invariants.py.rej\nabort: patch failed to apply\n\n```\n",
+    "body": "Can you rebase this against 3.4.2.  I get:\n\n```\npatching file sage/schemes/hyperelliptic_curves/all.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/all.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 25\n2 out of 3 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 62\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nfile sage/schemes/hyperelliptic_curves/invariants.py already exists\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/invariants.py.rej\nabort: patch failed to apply\n\n```",
     "created_at": "2009-05-12T05:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6010",
     "type": "issue_comment",
@@ -79,7 +79,6 @@ file sage/schemes/hyperelliptic_curves/invariants.py already exists
 abort: patch failed to apply
 
 ```
-
 
 
 

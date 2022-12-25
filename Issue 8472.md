@@ -3,7 +3,7 @@
 archive/issues_008472.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/bbb437ab04ff64d), there is a request for something like this to work in the notebook:\n\n```\n%xelatex\n\uc2e4\uc218 $x$\uc5d0 \ub300\ud574\uc11c \ub2e4\uc74c\uc774 \uc131\ub9bd\ud55c\ub2e4.\n\\[\n    \\sqrt{x^2}=|x|\n\\]\n```\n\n[XeTeX](http://en.wikipedia.org/wiki/XeTeX) is an extension of TeX that makes working with arbitrary fonts very easy. In practice, this means that users of non-European languages can simply set a font that supports their writing system, type their document, and everything just works.\n\nAdding support for this would be useful to anyone who uses both Sage and non-European languages.\n\nNote that it will be necessary for most users to use a function corresponding to `latex.add_to_preamble()`, since XeTeX by default uses the Computer Modern fonts and for non-trivial uses, one needs to tell XeTeX what font to use. Also, XeTeX produces PDFs by default, so it will be necessary to use something other than `dvipng` to get something that we can display in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8472\n\n",
+    "body": "Assignee: @williamstein\n\nIn [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/bbb437ab04ff64d), there is a request for something like this to work in the notebook:\n\n```\n%xelatex\n\uc2e4\uc218 $x$\uc5d0 \ub300\ud574\uc11c \ub2e4\uc74c\uc774 \uc131\ub9bd\ud55c\ub2e4.\n\\[\n    \\sqrt{x^2}=|x|\n\\]\n```\n[XeTeX](http://en.wikipedia.org/wiki/XeTeX) is an extension of TeX that makes working with arbitrary fonts very easy. In practice, this means that users of non-European languages can simply set a font that supports their writing system, type their document, and everything just works.\n\nAdding support for this would be useful to anyone who uses both Sage and non-European languages.\n\nNote that it will be necessary for most users to use a function corresponding to `latex.add_to_preamble()`, since XeTeX by default uses the Computer Modern fonts and for non-trivial uses, one needs to tell XeTeX what font to use. Also, XeTeX produces PDFs by default, so it will be necessary to use something other than `dvipng` to get something that we can display in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8472\n\n",
     "created_at": "2010-03-07T04:08:15Z",
     "labels": [
         "component: notebook"
@@ -26,7 +26,6 @@ In [this sage-support thread](http://groups.google.com/group/sage-support/browse
     \sqrt{x^2}=|x|
 \]
 ```
-
 [XeTeX](http://en.wikipedia.org/wiki/XeTeX) is an extension of TeX that makes working with arbitrary fonts very easy. In practice, this means that users of non-European languages can simply set a font that supports their writing system, type their document, and everything just works.
 
 Adding support for this would be useful to anyone who uses both Sage and non-European languages.

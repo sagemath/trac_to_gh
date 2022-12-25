@@ -3,7 +3,7 @@
 archive/issues_000590.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nThe rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:\n\nwas`@`ubuntu:~/d/sage/sage/rings$ sage -coverage extended_rational_field.py\n----------------------------------------------------------------------\nextended_rational_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nOVERALL SCORE: 0%  (2 good, 71 bad)\n\nMissing documentation:\n* __init__(self)\n* _repr_(self)\n* _latex_(self)\n* __call__(self, x, base = 0)\n* _coerce_impl(self, x)\n* _is_valid_homomorphism(self, codomain, im_gens)\n* __iter__(self)\n* complex_embedding(self, prec=53)\n* gens(self)\n* gen(self, n=0)\n* is_prime_field(self)\n* ngens(self)\n* numberfield(self, poly_var, nf_var)\n* __init__(self, x = None, base = 0)\n* __cmp__(self, other)\n* copy(self)\n* lcm(self, other)\n* square_root(self)\n* nth_root(self)\n* _add_(self, right)\n* _sub_(self, right)\n* _neg_(self)\n* _mul_(self, right)\n* _div_(self, right)\n* __invert__(self)\n* __pow__(self, n)\n* __abs__(self)\n* floor(self)\n* ceil(self)\n* __lshift__(self, n)\n* __rshift__(self, n)\n* __init__(self)\n* __cmp__(self, other)\n* __repr__(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n* __init__(self)\n* __cmp__(self, other)\n* _repr_(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n\n\nMissing doctests:\n* numerator(self)\n* denominator(self)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/590\n\n",
+    "body": "Assignee: @roed314\n\nThe rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:\n\nwas`@`ubuntu:~/d/sage/sage/rings$ sage -coverage extended_rational_field.py\n\n---\nextended_rational_field.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nOVERALL SCORE: 0%  (2 good, 71 bad)\n\nMissing documentation:\n* __init__(self)\n* _repr_(self)\n* _latex_(self)\n* __call__(self, x, base = 0)\n* _coerce_impl(self, x)\n* _is_valid_homomorphism(self, codomain, im_gens)\n* __iter__(self)\n* complex_embedding(self, prec=53)\n* gens(self)\n* gen(self, n=0)\n* is_prime_field(self)\n* ngens(self)\n* numberfield(self, poly_var, nf_var)\n* __init__(self, x = None, base = 0)\n* __cmp__(self, other)\n* copy(self)\n* lcm(self, other)\n* square_root(self)\n* nth_root(self)\n* _add_(self, right)\n* _sub_(self, right)\n* _neg_(self)\n* _mul_(self, right)\n* _div_(self, right)\n* __invert__(self)\n* __pow__(self, n)\n* __abs__(self)\n* floor(self)\n* ceil(self)\n* __lshift__(self, n)\n* __rshift__(self, n)\n* __init__(self)\n* __cmp__(self, other)\n* __repr__(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n* __init__(self)\n* __cmp__(self, other)\n* _repr_(self)\n* _latex_(self)\n* _add_(self, other)\n* _mul_(self, other)\n* _sub_(self, other)\n* _div_(self, other)\n* _neg_(self)\n* __invert__(self)\n* __abs__(self)\n* __pow__(self, right)\n* sqrt(self)\n* square_root(self)\n* nth_root(self, n)\n* floor(self)\n* ceil(self)\n* numerator(self)\n* denominator(self)\n\n\nMissing doctests:\n* numerator(self)\n* denominator(self)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/590\n\n",
     "created_at": "2007-09-05T15:37:42Z",
     "labels": [
         "component: basic arithmetic"
@@ -20,7 +20,8 @@ Assignee: @roed314
 The rings/extended_rational_field.py file is terribly documented.  There are no doctests, no copyright notice, no author, etc.   I think David Roe wrote this:
 
 was`@`ubuntu:~/d/sage/sage/rings$ sage -coverage extended_rational_field.py
-----------------------------------------------------------------------
+
+---
 extended_rational_field.py
 ERROR: Please define a s == loads(dumps(s)) doctest.
 OVERALL SCORE: 0%  (2 good, 71 bad)
@@ -168,7 +169,7 @@ Attachment [590.patch](tarball://root/attachments/some-uuid/ticket590/590.patch)
 archive/issue_comments_003032.json:
 ```json
 {
-    "body": "I'm mostly happy with this patch; I have a few questions.\n\n* What is `IntegerWrapper`? That's been added with no explanation at all, and I don't understand its purpose. Is it really necessary? If so, there needs to be some documentation.\n\n* regarding `coerce_map_from_impl` and `Q_to_ExtendedQ`: I don't understand the coercion framework any more, so I can't vouch for correctness of the implementations. I'd like someone who understands coercion to take a quick look. Mike, if you find someone on IRC who can sign off on these, that's fine. One thing that bothers me slightly is:\n\n\n```\nsage: ExtendedRationalField.coerce_map_from_impl(ExtendedIntegerRing)\n[boom]\n```\n\n\n* docstring for `ExtendedRational.__init__` is a little confusing; \"The class of extended rational numbers\" is a little confusing, sounds like \"The set of extended rational numbers\". Perhaps better something like \"Constructor for elements of the extended rational field\".\n\n* `_mul_`: I'd like to see examples of multiplying infinity by infinity and minus infinity\n\nI have various other complaints about this module, but it's not in the new code you've written and I don't want to hold up this patch, so I won't go into them now.",
+    "body": "I'm mostly happy with this patch; I have a few questions.\n\n* What is `IntegerWrapper`? That's been added with no explanation at all, and I don't understand its purpose. Is it really necessary? If so, there needs to be some documentation.\n\n* regarding `coerce_map_from_impl` and `Q_to_ExtendedQ`: I don't understand the coercion framework any more, so I can't vouch for correctness of the implementations. I'd like someone who understands coercion to take a quick look. Mike, if you find someone on IRC who can sign off on these, that's fine. One thing that bothers me slightly is:\n\n```\nsage: ExtendedRationalField.coerce_map_from_impl(ExtendedIntegerRing)\n[boom]\n```\n\n* docstring for `ExtendedRational.__init__` is a little confusing; \"The class of extended rational numbers\" is a little confusing, sounds like \"The set of extended rational numbers\". Perhaps better something like \"Constructor for elements of the extended rational field\".\n\n* `_mul_`: I'd like to see examples of multiplying infinity by infinity and minus infinity\n\nI have various other complaints about this module, but it's not in the new code you've written and I don't want to hold up this patch, so I won't go into them now.",
     "created_at": "2008-03-02T16:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
@@ -183,12 +184,10 @@ I'm mostly happy with this patch; I have a few questions.
 
 * regarding `coerce_map_from_impl` and `Q_to_ExtendedQ`: I don't understand the coercion framework any more, so I can't vouch for correctness of the implementations. I'd like someone who understands coercion to take a quick look. Mike, if you find someone on IRC who can sign off on these, that's fine. One thing that bothers me slightly is:
 
-
 ```
 sage: ExtendedRationalField.coerce_map_from_impl(ExtendedIntegerRing)
 [boom]
 ```
-
 
 * docstring for `ExtendedRational.__init__` is a little confusing; "The class of extended rational numbers" is a little confusing, sounds like "The set of extended rational numbers". Perhaps better something like "Constructor for elements of the extended rational field".
 
@@ -275,7 +274,7 @@ Which ones fail?  What version are you applying against?  If it's the cmp ones, 
 archive/issue_comments_003037.json:
 ```json
 {
-    "body": "It's mac os 10.4.11 intel. Here's the failure:\n\n\n```\nsage -t  devel/sage-590/sage/rings/extended_integer_ring.py **********************************************************************\nFile \"extended_integer_ring.py\", line 58:\n    sage: cmp(ExtendedIntegerRing, ExtendedRationalField)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\n\nWhy would cmp be architecture-dependent? Is it comparing pointers somewhere or something stupid like that?",
+    "body": "It's mac os 10.4.11 intel. Here's the failure:\n\n```\nsage -t  devel/sage-590/sage/rings/extended_integer_ring.py **********************************************************************\nFile \"extended_integer_ring.py\", line 58:\n    sage: cmp(ExtendedIntegerRing, ExtendedRationalField)\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\nWhy would cmp be architecture-dependent? Is it comparing pointers somewhere or something stupid like that?",
     "created_at": "2008-03-03T22:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/590",
     "type": "issue_comment",
@@ -285,7 +284,6 @@ archive/issue_comments_003037.json:
 ```
 
 It's mac os 10.4.11 intel. Here's the failure:
-
 
 ```
 sage -t  devel/sage-590/sage/rings/extended_integer_ring.py **********************************************************************
@@ -297,7 +295,6 @@ Got:
     -1
 **********************************************************************
 ```
-
 
 Why would cmp be architecture-dependent? Is it comparing pointers somewhere or something stupid like that?
 

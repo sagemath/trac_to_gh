@@ -3,7 +3,7 @@
 archive/issues_008089.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jas\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n## The problem\nThis looks like an assembly code issue. \n\n\n```\n/ecl-9.10.2-20091105cvs.p1/src/src/c/arch/ffi_x86.d -> ffi_x86.c\ngcc -DECLDIR=\"\\\"/export/home/drkirkby/sage-4.3.1/local/lib/ecl-9.10.2\\\"\" -I. -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/src/c -I../ecl/gc -DECL_API -DECL_NO_LEGACY   -I/export/home/drkirkby/sage-4.3.1/local/include  -O2  -m64  -g  -Wall  -fPIC  -Dsun4sol2 -c -o ffi_x86.o ffi_x86.c\n/var/tmp//ccvhai7u.s: Assembler messages:\n/var/tmp//ccvhai7u.s:49: Error: suffix or operands invalid for `mov'\n/var/tmp//ccvhai7u.s:51: Error: suffix or operands invalid for `mov'\n/var/tmp//ccvhai7u.s:136: Error: suffix or operands invalid for `mov'\nmake[4]: *** [ffi_x86.o] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build/c'\nmake[3]: *** [libeclmin.a] Error 2\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src'\nFailed to build ECL ... exiting\n\nreal\t0m32.626s\nuser\t0m21.119s\nsys\t0m10.626s\nsage: An error occurred while installing ecl-9.10.2-20091105cvs.p1\n```\n\n\n == Possible solution ==\nI note from the ECL mailing list, that this option to configure might fix this, though it might need a later CVS snapshot. \n\n# --with-dffi=no is required to bypass inline assembly errors\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8089\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  jas\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n## The problem\nThis looks like an assembly code issue. \n\n```\n/ecl-9.10.2-20091105cvs.p1/src/src/c/arch/ffi_x86.d -> ffi_x86.c\ngcc -DECLDIR=\"\\\"/export/home/drkirkby/sage-4.3.1/local/lib/ecl-9.10.2\\\"\" -I. -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/src/c -I../ecl/gc -DECL_API -DECL_NO_LEGACY   -I/export/home/drkirkby/sage-4.3.1/local/include  -O2  -m64  -g  -Wall  -fPIC  -Dsun4sol2 -c -o ffi_x86.o ffi_x86.c\n/var/tmp//ccvhai7u.s: Assembler messages:\n/var/tmp//ccvhai7u.s:49: Error: suffix or operands invalid for `mov'\n/var/tmp//ccvhai7u.s:51: Error: suffix or operands invalid for `mov'\n/var/tmp//ccvhai7u.s:136: Error: suffix or operands invalid for `mov'\nmake[4]: *** [ffi_x86.o] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build/c'\nmake[3]: *** [libeclmin.a] Error 2\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src'\nFailed to build ECL ... exiting\n\nreal\t0m32.626s\nuser\t0m21.119s\nsys\t0m10.626s\nsage: An error occurred while installing ecl-9.10.2-20091105cvs.p1\n```\n\n == Possible solution ==\nI note from the ECL mailing list, that this option to configure might fix this, though it might need a later CVS snapshot. \n\n# --with-dffi=no is required to bypass inline assembly errors\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8089\n\n",
     "created_at": "2010-01-27T04:21:05Z",
     "labels": [
         "component: porting: solaris",
@@ -30,7 +30,6 @@ CC:  jas
 ## The problem
 This looks like an assembly code issue. 
 
-
 ```
 /ecl-9.10.2-20091105cvs.p1/src/src/c/arch/ffi_x86.d -> ffi_x86.c
 gcc -DECLDIR="\"/export/home/drkirkby/sage-4.3.1/local/lib/ecl-9.10.2\"" -I. -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/build -I/export/home/drkirkby/sage-4.3.1/spkg/build/ecl-9.10.2-20091105cvs.p1/src/src/c -I../ecl/gc -DECL_API -DECL_NO_LEGACY   -I/export/home/drkirkby/sage-4.3.1/local/include  -O2  -m64  -g  -Wall  -fPIC  -Dsun4sol2 -c -o ffi_x86.o ffi_x86.c
@@ -51,7 +50,6 @@ user	0m21.119s
 sys	0m10.626s
 sage: An error occurred while installing ecl-9.10.2-20091105cvs.p1
 ```
-
 
  == Possible solution ==
 I note from the ECL mailing list, that this option to configure might fix this, though it might need a later CVS snapshot. 
@@ -89,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_070768.json:
 ```json
 {
-    "body": "The latest version of Sage has ECL 10.2.1. Whilst the problem observed above still exists, the configure option \n\n```\n--with-dffi=no\n```\n\nis implemented in this version of ECL. \n\nA new spkg which resolves this problem by adding that option can be found at:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p0.spkg\n\nAll I needed to do was add this bit of code:\n\n\n```\nif [ \"x`uname -rsm`\" = \"xSunOS 5.11 i86pc\" ] && [ \"x$SAGE64\" = xyes ]  ; then\n   # Need to add --with-dffi=no to disable assembly code on OpenSolaris x64. \n   # This may be needed for other variants of Solaris, but for now at least\n   # the option is only given if all the following are true\n   # 1) OpenSolaris (SunOS 5.11)\n   # 2) Intel or AMD CPU \n   # 3) 64-bit build\n   ./configure --prefix=$SAGE_LOCAL --with-dffi=no\nelse\n   ./configure --prefix=$SAGE_LOCAL \nfi\n```\n\n\nto ensure the option is only given on OpenSolaris (SunOS 5.11) with an Intel/AMD CPU if built in 64-bit mode. Whether the option would be needed on Solaris 10, or with SPARC processors I don't know. So for now it is applied in very specific circumstances. \n\nWith that configure option added, ECL then builds properly. \n\n\n```\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/ecl-10.2.1.p0/src/build'\n\nreal\t1m41.880s\nuser\t1m26.518s\nsys\t0m14.183s\nSuccessfully installed ecl-10.2.1.p0\n```\n",
+    "body": "The latest version of Sage has ECL 10.2.1. Whilst the problem observed above still exists, the configure option \n\n```\n--with-dffi=no\n```\nis implemented in this version of ECL. \n\nA new spkg which resolves this problem by adding that option can be found at:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p0.spkg\n\nAll I needed to do was add this bit of code:\n\n```\nif [ \"x`uname -rsm`\" = \"xSunOS 5.11 i86pc\" ] && [ \"x$SAGE64\" = xyes ]  ; then\n   # Need to add --with-dffi=no to disable assembly code on OpenSolaris x64. \n   # This may be needed for other variants of Solaris, but for now at least\n   # the option is only given if all the following are true\n   # 1) OpenSolaris (SunOS 5.11)\n   # 2) Intel or AMD CPU \n   # 3) 64-bit build\n   ./configure --prefix=$SAGE_LOCAL --with-dffi=no\nelse\n   ./configure --prefix=$SAGE_LOCAL \nfi\n```\n\nto ensure the option is only given on OpenSolaris (SunOS 5.11) with an Intel/AMD CPU if built in 64-bit mode. Whether the option would be needed on Solaris 10, or with SPARC processors I don't know. So for now it is applied in very specific circumstances. \n\nWith that configure option added, ECL then builds properly. \n\n```\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/ecl-10.2.1.p0/src/build'\n\nreal\t1m41.880s\nuser\t1m26.518s\nsys\t0m14.183s\nSuccessfully installed ecl-10.2.1.p0\n```",
     "created_at": "2010-05-31T00:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_comment",
@@ -103,7 +101,6 @@ The latest version of Sage has ECL 10.2.1. Whilst the problem observed above sti
 ```
 --with-dffi=no
 ```
-
 is implemented in this version of ECL. 
 
 A new spkg which resolves this problem by adding that option can be found at:
@@ -111,7 +108,6 @@ A new spkg which resolves this problem by adding that option can be found at:
 http://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p0.spkg
 
 All I needed to do was add this bit of code:
-
 
 ```
 if [ "x`uname -rsm`" = "xSunOS 5.11 i86pc" ] && [ "x$SAGE64" = xyes ]  ; then
@@ -127,11 +123,9 @@ else
 fi
 ```
 
-
 to ensure the option is only given on OpenSolaris (SunOS 5.11) with an Intel/AMD CPU if built in 64-bit mode. Whether the option would be needed on Solaris 10, or with SPARC processors I don't know. So for now it is applied in very specific circumstances. 
 
 With that configure option added, ECL then builds properly. 
-
 
 ```
 make[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/ecl-10.2.1.p0/src/build'
@@ -141,7 +135,6 @@ user	1m26.518s
 sys	0m14.183s
 Successfully installed ecl-10.2.1.p0
 ```
-
 
 
 

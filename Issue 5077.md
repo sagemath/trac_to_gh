@@ -3,7 +3,7 @@
 archive/issues_005077.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nDelete this line from the docstring.  It is just inconsistent.\n\n\n```\n  For negative n, define F_{n} = -F_{|n|}.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5077\n\n",
+    "body": "Assignee: somebody\n\nDelete this line from the docstring.  It is just inconsistent.\n\n```\n  For negative n, define F_{n} = -F_{|n|}.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5077\n\n",
     "created_at": "2009-01-23T22:22:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,11 +20,9 @@ Assignee: somebody
 
 Delete this line from the docstring.  It is just inconsistent.
 
-
 ```
   For negative n, define F_{n} = -F_{|n|}.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5077
 

@@ -3,7 +3,7 @@
 archive/issues_002619.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
+    "body": "Assignee: @malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
     "created_at": "2008-03-20T21:58:52Z",
     "labels": [
         "component: commutative algebra",
@@ -28,7 +28,6 @@ sage: I2 = ideal([Q(f) for f in I1.gens()])
 sage: I2.groebner_basis()
 [ebar, cbar + 1, bbar + 1, abar + dbar + 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2619
 

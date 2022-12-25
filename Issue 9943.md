@@ -207,7 +207,7 @@ I would give this a positive review for Robert's idea and I would open a new tic
 archive/issue_comments_098847.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> The first patch only concerned univarite polynomial rings, the logic is not all correct for multivariate polynomial rings (though on an orthogonal note, that could use some fixing up as well). It seems odd to have a category of univariate polynomial rings over a fixed basering, which is why I put the logic into the concrete object. I suppose the category should a be declared as a graded R-algebra as well (do we have join categories yet?). \n\nSorry for the very late answer. In MuPAD, we had a category for\nunivariate polynomial rings: there are several possible\nimplementations of such, and it's natural to factor out the generic\ncode, together with the category inheritance logic, in a category.\n\nAnd yes, we have join categories. See Category.join.\n\nI let you see whether to create the UnivariatePolynomialRing category\nin this ticket or in a later ticket.",
+    "body": "Replying to [comment:4 robertwb]:\n> The first patch only concerned univarite polynomial rings, the logic is not all correct for multivariate polynomial rings (though on an orthogonal note, that could use some fixing up as well). It seems odd to have a category of univariate polynomial rings over a fixed basering, which is why I put the logic into the concrete object. I suppose the category should a be declared as a graded R-algebra as well (do we have join categories yet?). \n\n\nSorry for the very late answer. In MuPAD, we had a category for\nunivariate polynomial rings: there are several possible\nimplementations of such, and it's natural to factor out the generic\ncode, together with the category inheritance logic, in a category.\n\nAnd yes, we have join categories. See Category.join.\n\nI let you see whether to create the UnivariatePolynomialRing category\nin this ticket or in a later ticket.",
     "created_at": "2011-03-29T09:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -218,6 +218,7 @@ archive/issue_comments_098847.json:
 
 Replying to [comment:4 robertwb]:
 > The first patch only concerned univarite polynomial rings, the logic is not all correct for multivariate polynomial rings (though on an orthogonal note, that could use some fixing up as well). It seems odd to have a category of univariate polynomial rings over a fixed basering, which is why I put the logic into the concrete object. I suppose the category should a be declared as a graded R-algebra as well (do we have join categories yet?). 
+
 
 Sorry for the very late answer. In MuPAD, we had a category for
 univariate polynomial rings: there are several possible
@@ -236,7 +237,7 @@ in this ticket or in a later ticket.
 archive/issue_comments_098848.json:
 ```json
 {
-    "body": "Replying to [comment:8 nthiery]:\n> Sorry for the very late answer. In MuPAD, we had a category for\n> univariate polynomial rings: there are several possible\n> implementations of such, and it's natural to factor out the generic\n> code, together with the category inheritance logic, in a category.\n\nAparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\nQuestion: Do we really want a category of polynomial rings? Or do we want that (1) polynomial rings use the category framework (that's the purpose of my patch for #9138) and (2) the category to which a given polynomial ring belongs is a bit narrower than simply \"category of rings\"? I hope it is the latter.\n\nMy suggestion is that I submit a small patch fixing the doctests. Please tell whether my patch for #9138 improves the multivariate case. Then, perhaps it would be possible to give Roberts patches (+ doctest fix) a positive review, so that we can focus on #9138.",
+    "body": "Replying to [comment:8 nthiery]:\n> Sorry for the very late answer. In MuPAD, we had a category for\n> univariate polynomial rings: there are several possible\n> implementations of such, and it's natural to factor out the generic\n> code, together with the category inheritance logic, in a category.\n\n\nAparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\nQuestion: Do we really want a category of polynomial rings? Or do we want that (1) polynomial rings use the category framework (that's the purpose of my patch for #9138) and (2) the category to which a given polynomial ring belongs is a bit narrower than simply \"category of rings\"? I hope it is the latter.\n\nMy suggestion is that I submit a small patch fixing the doctests. Please tell whether my patch for #9138 improves the multivariate case. Then, perhaps it would be possible to give Roberts patches (+ doctest fix) a positive review, so that we can focus on #9138.",
     "created_at": "2011-03-29T15:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -250,6 +251,7 @@ Replying to [comment:8 nthiery]:
 > univariate polynomial rings: there are several possible
 > implementations of such, and it's natural to factor out the generic
 > code, together with the category inheritance logic, in a category.
+
 
 Aparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, "needs work".
 
@@ -300,7 +302,7 @@ At #9138, Jason Bandlow reported a slow-down, that is at least partially caused 
 archive/issue_comments_098851.json:
 ```json
 {
-    "body": "Replying to [comment:9 SimonKing]:\n> Aparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\nStrange: Although the patch bot did see that error in one run, I can not reproduce it (but I had to change that test in my patch for #9138, because it turns `QQ['x'].category()` into the join of the category of euclidean domains and commutative algebras over `QQ`.\n\nThe other issue, namely the performance loss, was studied on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e4af3f1705b76955).\n\nFlorent Hivert found that a long mro does not matter for Python, but it *does* matter if the classes inherit from a cdef class. That is the case for most classes in Sage (inheriting from `SageObject`), so, we should address the problem of a long mro.\n\nEventually, that should be fixed in Cython (and I think Florent reported it upstream). But for now, it seems to me we should think of a work-around.\n\nWould it be acceptable coding practice to explicitly state in a derived class (say, `MPolynomialRing_generic`), that frequently used methods such as base or base_ring are the same as `Parent.base` or `Parent.base_ring`? David Roe stated that it might be dangerous to do so, at least if `cpdef` methods are involved.",
+    "body": "Replying to [comment:9 SimonKing]:\n> Aparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\n\nStrange: Although the patch bot did see that error in one run, I can not reproduce it (but I had to change that test in my patch for #9138, because it turns `QQ['x'].category()` into the join of the category of euclidean domains and commutative algebras over `QQ`.\n\nThe other issue, namely the performance loss, was studied on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e4af3f1705b76955).\n\nFlorent Hivert found that a long mro does not matter for Python, but it *does* matter if the classes inherit from a cdef class. That is the case for most classes in Sage (inheriting from `SageObject`), so, we should address the problem of a long mro.\n\nEventually, that should be fixed in Cython (and I think Florent reported it upstream). But for now, it seems to me we should think of a work-around.\n\nWould it be acceptable coding practice to explicitly state in a derived class (say, `MPolynomialRing_generic`), that frequently used methods such as base or base_ring are the same as `Parent.base` or `Parent.base_ring`? David Roe stated that it might be dangerous to do so, at least if `cpdef` methods are involved.",
     "created_at": "2011-03-30T06:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -311,6 +313,7 @@ archive/issue_comments_098851.json:
 
 Replying to [comment:9 SimonKing]:
 > Aparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, "needs work".
+
 
 Strange: Although the patch bot did see that error in one run, I can not reproduce it (but I had to change that test in my patch for #9138, because it turns `QQ['x'].category()` into the join of the category of euclidean domains and commutative algebras over `QQ`.
 
@@ -485,7 +488,7 @@ So, what shall one do? Give it a positive review and accept the deceleration, or
 archive/issue_comments_098859.json:
 ```json
 {
-    "body": "Replying to [comment:17 SimonKing]:\n> A similar issue has been studied at #10467. It seems to be important that an attribute error is raised as quickly as possible. That becomes difficult, if 60 parent classes need to be searched, before one eventually finds that the requested attribute does not exist.\n\nNo, that is not the problem here! I was inserting print statements into `getattr_from_other_class` in order to find out what attributes are actually requested from the category when doing arithmetic. It turned out that, during the first computation of `(2*x-1)^2+5`, some attributes are requested. But when one repeats that computation, `getattr_from_other_class` is *not* involved.\n\nBut what else could be the reason?",
+    "body": "Replying to [comment:17 SimonKing]:\n> A similar issue has been studied at #10467. It seems to be important that an attribute error is raised as quickly as possible. That becomes difficult, if 60 parent classes need to be searched, before one eventually finds that the requested attribute does not exist.\n\n\nNo, that is not the problem here! I was inserting print statements into `getattr_from_other_class` in order to find out what attributes are actually requested from the category when doing arithmetic. It turned out that, during the first computation of `(2*x-1)^2+5`, some attributes are requested. But when one repeats that computation, `getattr_from_other_class` is *not* involved.\n\nBut what else could be the reason?",
     "created_at": "2011-03-30T13:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -496,6 +499,7 @@ archive/issue_comments_098859.json:
 
 Replying to [comment:17 SimonKing]:
 > A similar issue has been studied at #10467. It seems to be important that an attribute error is raised as quickly as possible. That becomes difficult, if 60 parent classes need to be searched, before one eventually finds that the requested attribute does not exist.
+
 
 No, that is not the problem here! I was inserting print statements into `getattr_from_other_class` in order to find out what attributes are actually requested from the category when doing arithmetic. It turned out that, during the first computation of `(2*x-1)^2+5`, some attributes are requested. But when one repeats that computation, `getattr_from_other_class` is *not* involved.
 
@@ -508,7 +512,7 @@ But what else could be the reason?
 archive/issue_comments_098860.json:
 ```json
 {
-    "body": "Perhaps it is a conversion map that is slower than necessary?\n\nIf you look at `sage.categories.algebras.Algebras.ParentMethods.__init_extra__`, you see that it tries to register a certain set morphism as a coercion from the base ring into the algebra (that obviously works only if the algebra is unital). \n\nBut aparently a different coercion is used -- a slower coercion!\n\nNamely, together with my patch from #9138:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.category() # the __init_extra__ was supposed to be used.\nJoin of Category of unique factorization domains and Category of commutative algebras over Integer Ring\nsage: c = R.convert_map_from(R.base_ring())\nsage: c\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nThat is not what `__init_extra__` attempted to register!\n\nLet us compare:\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: H = R.base().Hom(R)\nsage: f = SetMorphism(H,R.from_base_ring)\nsage: timeit('c(100)',number=10^5)\n100000 loops, best of 3: 8.13 \u00c2\u00b5s per loop\nsage: timeit('f(100)',number=10^5)\n100000 loops, best of 3: 1.75 \u00c2\u00b5s per loop\n```\n\n\nSo, things could be considerably improved. Obvious questions: Will `from_base` always yield a faster approach than the base injection morphism? And can we enforce to use the faster coercion?\n\nAparently it is not so easy:\n\n```\nsage: AC = Algebras(ZZ).parent_class\nsage: R._unset_coercions_used()\nsage: AC.__init_extra__(R)\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\nsage: R._unset_coercions_used()\nsage: f.register_as_coercion()\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nCan you explain how to force the use of a particular map for coercion of the base ring?",
+    "body": "Perhaps it is a conversion map that is slower than necessary?\n\nIf you look at `sage.categories.algebras.Algebras.ParentMethods.__init_extra__`, you see that it tries to register a certain set morphism as a coercion from the base ring into the algebra (that obviously works only if the algebra is unital). \n\nBut aparently a different coercion is used -- a slower coercion!\n\nNamely, together with my patch from #9138:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.category() # the __init_extra__ was supposed to be used.\nJoin of Category of unique factorization domains and Category of commutative algebras over Integer Ring\nsage: c = R.convert_map_from(R.base_ring())\nsage: c\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\nThat is not what `__init_extra__` attempted to register!\n\nLet us compare:\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: H = R.base().Hom(R)\nsage: f = SetMorphism(H,R.from_base_ring)\nsage: timeit('c(100)',number=10^5)\n100000 loops, best of 3: 8.13 \u00c2\u00b5s per loop\nsage: timeit('f(100)',number=10^5)\n100000 loops, best of 3: 1.75 \u00c2\u00b5s per loop\n```\n\nSo, things could be considerably improved. Obvious questions: Will `from_base` always yield a faster approach than the base injection morphism? And can we enforce to use the faster coercion?\n\nAparently it is not so easy:\n\n```\nsage: AC = Algebras(ZZ).parent_class\nsage: R._unset_coercions_used()\nsage: AC.__init_extra__(R)\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\nsage: R._unset_coercions_used()\nsage: f.register_as_coercion()\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\nCan you explain how to force the use of a particular map for coercion of the base ring?",
     "created_at": "2011-03-30T19:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -536,7 +540,6 @@ Polynomial base injection morphism:
   To:   Univariate Polynomial Ring in x over Integer Ring
 ```
 
-
 That is not what `__init_extra__` attempted to register!
 
 Let us compare:
@@ -550,7 +553,6 @@ sage: timeit('c(100)',number=10^5)
 sage: timeit('f(100)',number=10^5)
 100000 loops, best of 3: 1.75 Âµs per loop
 ```
-
 
 So, things could be considerably improved. Obvious questions: Will `from_base` always yield a faster approach than the base injection morphism? And can we enforce to use the faster coercion?
 
@@ -572,7 +574,6 @@ Polynomial base injection morphism:
   To:   Univariate Polynomial Ring in x over Integer Ring
 ```
 
-
 Can you explain how to force the use of a particular map for coercion of the base ring?
 
 
@@ -582,7 +583,7 @@ Can you explain how to force the use of a particular map for coercion of the bas
 archive/issue_comments_098861.json:
 ```json
 {
-    "body": "And aparently the univariate polynomial rings are special in their choice of a conversion from the base ring. Again with #9138\n\n```\nsage: R.<m> = ZZ[]\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in m over Integer Ring\nsage: R.<x,y> = QQ['t'][]\nsage: R.convert_map_from(R.base_ring())\nGeneric morphism:\n  From: Univariate Polynomial Ring in t over Rational Field\n  To:   Multivariate Polynomial Ring in x, y over Univariate Polynomial Ring in t over Rational Field\n```\n",
+    "body": "And aparently the univariate polynomial rings are special in their choice of a conversion from the base ring. Again with #9138\n\n```\nsage: R.<m> = ZZ[]\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in m over Integer Ring\nsage: R.<x,y> = QQ['t'][]\nsage: R.convert_map_from(R.base_ring())\nGeneric morphism:\n  From: Univariate Polynomial Ring in t over Rational Field\n  To:   Multivariate Polynomial Ring in x, y over Univariate Polynomial Ring in t over Rational Field\n```",
     "created_at": "2011-03-30T19:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -605,7 +606,6 @@ Generic morphism:
   From: Univariate Polynomial Ring in t over Rational Field
   To:   Multivariate Polynomial Ring in x, y over Univariate Polynomial Ring in t over Rational Field
 ```
-
 
 
 
@@ -674,7 +674,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098865.json:
 ```json
 {
-    "body": "Good news! Things are now *faster* than without the patches!\n\nI found that one can considerably improve the conversion of an element of the base ring into a polynomial ring. Some polynomial rings used a generic conversion map, some used a polynomial base injection map -- and both were slow.\n\nMy inspiration came from `Algebras.ParentMethods.__init_extra__`: If R is a polynomial ring, then multiplication of a scalar with `R.one()` often is a very fast method to convert the scalar into R.\n\nProblems:\n\n* We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n* Calling `R.one()` will usually trigger the creation of a generic conversion - hence, it would be difficult to register it as conversion.\n* Not all flavours of polynomial elements have a `_rmul_` (polynomial_element_generic has not).\n* Sometimes, other conversion maps are registered when one wants to register the polynomial base injection map.\n\nSo, I implemented `_rmul_` and `_lmul_` for polynomial_element_generic, try various ways (old and new coercion model) of creating a One bypassing conversion maps, and in one init method of polynomial rings I decided to re-initialise the conversion maps.\n\n**__Timings__**\n\nI tried to test as many cases (multi- versus univariate, `libSingular` and others, different base rings,...). Without all the patches, we have the following:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 23.4 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 24.6 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 87.9 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 113 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 13 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.6 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.8 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 238 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 511 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.06 ms per loop\n```\n\n\nWith the patches, I get\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.97 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.3 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 70.3 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 82.6 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 12.6 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.4 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.5 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 187 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 503 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.08 ms per loop\n```\n\n\nSo, there is no significant slow down at all, but a considerable speed up in most cases.\n\nI suppose it can now be reviewed. I understood that the Robert's patches essentially have a positive review, except for the slow-down. So, would it suffice if some of you test my patch?\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
+    "body": "Good news! Things are now *faster* than without the patches!\n\nI found that one can considerably improve the conversion of an element of the base ring into a polynomial ring. Some polynomial rings used a generic conversion map, some used a polynomial base injection map -- and both were slow.\n\nMy inspiration came from `Algebras.ParentMethods.__init_extra__`: If R is a polynomial ring, then multiplication of a scalar with `R.one()` often is a very fast method to convert the scalar into R.\n\nProblems:\n\n* We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n* Calling `R.one()` will usually trigger the creation of a generic conversion - hence, it would be difficult to register it as conversion.\n* Not all flavours of polynomial elements have a `_rmul_` (polynomial_element_generic has not).\n* Sometimes, other conversion maps are registered when one wants to register the polynomial base injection map.\n\nSo, I implemented `_rmul_` and `_lmul_` for polynomial_element_generic, try various ways (old and new coercion model) of creating a One bypassing conversion maps, and in one init method of polynomial rings I decided to re-initialise the conversion maps.\n\n**__Timings__**\n\nI tried to test as many cases (multi- versus univariate, `libSingular` and others, different base rings,...). Without all the patches, we have the following:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 23.4 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 24.6 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 87.9 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 113 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 13 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.6 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.8 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 238 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 511 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.06 ms per loop\n```\n\nWith the patches, I get\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.97 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.3 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 70.3 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 82.6 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 12.6 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.4 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.5 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 187 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 503 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.08 ms per loop\n```\n\nSo, there is no significant slow down at all, but a considerable speed up in most cases.\n\nI suppose it can now be reviewed. I understood that the Robert's patches essentially have a positive review, except for the slow-down. So, would it suffice if some of you test my patch?\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
     "created_at": "2011-03-31T11:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -735,7 +735,6 @@ sage: timeit('(2*x-1)^2+5', number=10^4)
 10000 loops, best of 3: 1.06 ms per loop
 ```
 
-
 With the patches, I get
 
 ```
@@ -770,7 +769,6 @@ sage: R.<x> = Qp(3)[]
 sage: timeit('(2*x-1)^2+5', number=10^4)
 10000 loops, best of 3: 1.08 ms per loop
 ```
-
 
 So, there is no significant slow down at all, but a considerable speed up in most cases.
 
@@ -825,7 +823,7 @@ Simon: I guess I'll focus on the reviewing of the other patches.
 archive/issue_comments_098868.json:
 ```json
 {
-    "body": "Replying to [comment:22 SimonKing]:\n> Problems:\n> \n>  * We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n\nRings() assumes its objects to be unital. If we want to support\npolynomials over non unital rings, then this should go through the use\nof Rngs(). If we make sure the coercion morphism from the base ring is always declared by Algebras(), all we will have to do is to use some new category NonUnitalAlgebras() when the base ring is just in Rngs(). Bwt: having a PolynomialRings() (PolynomialRngs?) category would be a good way to factor out this logic.\n\nBut one thing at a time :-)\n\nCheers,\n\t\t\tNicolas",
+    "body": "Replying to [comment:22 SimonKing]:\n> Problems:\n> \n> * We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n\n\nRings() assumes its objects to be unital. If we want to support\npolynomials over non unital rings, then this should go through the use\nof Rngs(). If we make sure the coercion morphism from the base ring is always declared by Algebras(), all we will have to do is to use some new category NonUnitalAlgebras() when the base ring is just in Rngs(). Bwt: having a PolynomialRings() (PolynomialRngs?) category would be a good way to factor out this logic.\n\nBut one thing at a time :-)\n\nCheers,\n\t\t\tNicolas",
     "created_at": "2011-03-31T17:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -837,7 +835,8 @@ archive/issue_comments_098868.json:
 Replying to [comment:22 SimonKing]:
 > Problems:
 > 
->  * We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).
+> * We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).
+
 
 Rings() assumes its objects to be unital. If we want to support
 polynomials over non unital rings, then this should go through the use
@@ -893,7 +892,7 @@ The patchs are very good. I am waiting for the tests to finish, but I guess this
 archive/issue_comments_098871.json:
 ```json
 {
-    "body": "The speed up is significant and all tests pass. This gets a positive review.\n\nLet me point out the following (that won't show up in many use case, but still might deserve some consideration later):\n\nunpatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 94.5 \u00b5s per loop\n```\n\n\npatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 131 \u00b5s per loop\n```\n",
+    "body": "The speed up is significant and all tests pass. This gets a positive review.\n\nLet me point out the following (that won't show up in many use case, but still might deserve some consideration later):\n\nunpatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 94.5 \u00b5s per loop\n```\n\npatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 131 \u00b5s per loop\n```",
     "created_at": "2011-04-01T00:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -915,7 +914,6 @@ sage: timeit('(2*x - 1)^2 + 5', number = 10^4)
 10000 loops, best of 3: 94.5 µs per loop
 ```
 
-
 patched:
 
 ```
@@ -924,7 +922,6 @@ sage: x = R.gen(0)
 sage: timeit('(2*x - 1)^2 + 5', number = 10^4)
 10000 loops, best of 3: 131 µs per loop
 ```
-
 
 
 
@@ -951,7 +948,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098873.json:
 ```json
 {
-    "body": "The PDF documentation doesn't build:\n\n```\n! Missing { inserted.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n?\n! Emergency stop.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on reference.log.\nmake[1]: *** [reference.pdf] Error 1\n```\n",
+    "body": "The PDF documentation doesn't build:\n\n```\n! Missing { inserted.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n?\n! Emergency stop.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on reference.log.\nmake[1]: *** [reference.pdf] Error 1\n```",
     "created_at": "2011-04-12T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -978,7 +975,6 @@ l.358009 ...ment with the One by means of $_rmul_$
 Transcript written on reference.log.
 make[1]: *** [reference.pdf] Error 1
 ```
-
 
 
 
@@ -1186,7 +1182,7 @@ archive/issue_events_025088.json:
 archive/issue_comments_098883.json:
 ```json
 {
-    "body": "For some obscure reason, this breaks the following test on 32-bit systems:\n\n```\nsage -t \"devel/sage-main/sage/modular/abvar/morphism.py\"\n```\n\n\nThe problem is that the following command hangs forever:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\n```\n\n\nInterestingly, interrupting at this point makes the command return the **correct output** without raising a `KeyboardInterrupt` which is a bug within the bug.",
+    "body": "For some obscure reason, this breaks the following test on 32-bit systems:\n\n```\nsage -t \"devel/sage-main/sage/modular/abvar/morphism.py\"\n```\n\nThe problem is that the following command hangs forever:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\n```\n\nInterestingly, interrupting at this point makes the command return the **correct output** without raising a `KeyboardInterrupt` which is a bug within the bug.",
     "created_at": "2011-05-05T20:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1201,14 +1197,12 @@ For some obscure reason, this breaks the following test on 32-bit systems:
 sage -t "devel/sage-main/sage/modular/abvar/morphism.py"
 ```
 
-
 The problem is that the following command hangs forever:
 
 ```
 sage: J = J1(12345)
 sage: J.hecke_operator(997)
 ```
-
 
 Interestingly, interrupting at this point makes the command return the **correct output** without raising a `KeyboardInterrupt` which is a bug within the bug.
 
@@ -1271,7 +1265,7 @@ Resolution changed from fixed to
 archive/issue_comments_098886.json:
 ```json
 {
-    "body": "Replying to [comment:34 jdemeyer]:\n> For some obscure reason, this breaks the following test on 32-bit systems:\n> The problem is that the following command hangs forever:\n> {{{\n> sage: J = J1(12345)\n> sage: J.hecke_operator(997)\n> }}}\n\nInteresting. If I remember correctly, I had problems with that exact doctest on my machine and was able to solve it. But my machine is 64 bit.\n\nSo, I'll try with a 32 bit installation on bsd.math.",
+    "body": "Replying to [comment:34 jdemeyer]:\n> For some obscure reason, this breaks the following test on 32-bit systems:\n> The problem is that the following command hangs forever:\n> \n> ```\n> sage: J = J1(12345)\n> sage: J.hecke_operator(997)\n> ```\n\n\nInteresting. If I remember correctly, I had problems with that exact doctest on my machine and was able to solve it. But my machine is 64 bit.\n\nSo, I'll try with a 32 bit installation on bsd.math.",
     "created_at": "2011-05-05T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1283,10 +1277,12 @@ archive/issue_comments_098886.json:
 Replying to [comment:34 jdemeyer]:
 > For some obscure reason, this breaks the following test on 32-bit systems:
 > The problem is that the following command hangs forever:
-> {{{
+> 
+> ```
 > sage: J = J1(12345)
 > sage: J.hecke_operator(997)
-> }}}
+> ```
+
 
 Interesting. If I remember correctly, I had problems with that exact doctest on my machine and was able to solve it. But my machine is 64 bit.
 
@@ -1299,7 +1295,7 @@ So, I'll try with a 32 bit installation on bsd.math.
 archive/issue_comments_098887.json:
 ```json
 {
-    "body": "I get a different error on bsd.math in 32bit mode:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\nHecke operator T_997 on Abelian variety J1(12345) of dimension 5405473\n```\n\n\nSo, it reports problem with memory allocation, but in almost no time it still returns the correct answer!",
+    "body": "I get a different error on bsd.math in 32bit mode:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\nHecke operator T_997 on Abelian variety J1(12345) of dimension 5405473\n```\n\nSo, it reports problem with memory allocation, but in almost no time it still returns the correct answer!",
     "created_at": "2011-05-05T21:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1321,7 +1317,6 @@ python(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)
 *** set a breakpoint in malloc_error_break to debug
 Hecke operator T_997 on Abelian variety J1(12345) of dimension 5405473
 ```
-
 
 So, it reports problem with memory allocation, but in almost no time it still returns the correct answer!
 
@@ -1352,7 +1347,7 @@ But perhaps I *am* mistaken. After all, the memory consumption is not big at all
 archive/issue_comments_098889.json:
 ```json
 {
-    "body": "Replying to [comment:36 SimonKing]:\n> So, it reports problem with memory allocation, but in almost no time it still returns the correct answer!\n\nThe fact that errors (including interrupts) are ignored in this code is very bad in itself, I think there must be some `except:` catching all this.",
+    "body": "Replying to [comment:36 SimonKing]:\n> So, it reports problem with memory allocation, but in almost no time it still returns the correct answer!\n\n\nThe fact that errors (including interrupts) are ignored in this code is very bad in itself, I think there must be some `except:` catching all this.",
     "created_at": "2011-05-06T07:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1364,6 +1359,7 @@ archive/issue_comments_098889.json:
 Replying to [comment:36 SimonKing]:
 > So, it reports problem with memory allocation, but in almost no time it still returns the correct answer!
 
+
 The fact that errors (including interrupts) are ignored in this code is very bad in itself, I think there must be some `except:` catching all this.
 
 
@@ -1373,7 +1369,7 @@ The fact that errors (including interrupts) are ignored in this code is very bad
 archive/issue_comments_098890.json:
 ```json
 {
-    "body": "Using `trace`, it seems to me that the error occurs in line 245 of `sage/matrix/matrix_space.py`:\n\n```\nif nrows >= 2**63 or ncols >= 2**63:\n```\n\n\nIs computing `2**63` (with Python ints) a problem on 32 bit?? Apparently not:\n\n```\nsage: int(2)**int(63)\n9223372036854775808L\n```\n\n\nSo, the problem isn't solved, yet.",
+    "body": "Using `trace`, it seems to me that the error occurs in line 245 of `sage/matrix/matrix_space.py`:\n\n```\nif nrows >= 2**63 or ncols >= 2**63:\n```\n\nIs computing `2**63` (with Python ints) a problem on 32 bit?? Apparently not:\n\n```\nsage: int(2)**int(63)\n9223372036854775808L\n```\n\nSo, the problem isn't solved, yet.",
     "created_at": "2011-05-06T07:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1388,14 +1384,12 @@ Using `trace`, it seems to me that the error occurs in line 245 of `sage/matrix/
 if nrows >= 2**63 or ncols >= 2**63:
 ```
 
-
 Is computing `2**63` (with Python ints) a problem on 32 bit?? Apparently not:
 
 ```
 sage: int(2)**int(63)
 9223372036854775808L
 ```
-
 
 So, the problem isn't solved, yet.
 
@@ -1424,7 +1418,7 @@ Sorry, I had misinterpreted something.
 archive/issue_comments_098892.json:
 ```json
 {
-    "body": "But there is something else:\n\n```\nsage: sage.misc.misc.is_64_bit\nTrue\nsage: os.environ['SAGE64']\n'no'\n```\n\n\nCould that be the problem?",
+    "body": "But there is something else:\n\n```\nsage: sage.misc.misc.is_64_bit\nTrue\nsage: os.environ['SAGE64']\n'no'\n```\n\nCould that be the problem?",
     "created_at": "2011-05-06T07:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1441,7 +1435,6 @@ True
 sage: os.environ['SAGE64']
 'no'
 ```
-
 
 Could that be the problem?
 
@@ -1520,7 +1513,7 @@ Fix a problem with initialisation of endomorphism rings of abelian varieties on 
 archive/issue_comments_098896.json:
 ```json
 {
-    "body": "The problem seems solved.\n\nWhat I did: Initialise the endomorphism ring first as a ring, and provide it with the intended category. Then initialise it as a homset as well. That solves the problem in the sense that it disappears.\n\nAdmittedly I can not explain how exactly the problem has originally emerged. But I guess it makes sense that it is a problem if a homset gives itself a certain category and then sage.rings.ring.Ring tries to work with another category.\n\nWith the new patch, we have (also as an additional doc test)\n\n```\nsage: J = J1(12345)\nsage: J.endomorphism_ring()\nEndomorphism ring of Abelian variety J1(12345) of dimension 5405473\n```\n\nboth on my machine (x86_64 Linux) and on bsd.math in a 32 bit installation. Moreover, on both machines, the tests in sage.modular pass.\n\nNeeds review, I guess.\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch",
+    "body": "The problem seems solved.\n\nWhat I did: Initialise the endomorphism ring first as a ring, and provide it with the intended category. Then initialise it as a homset as well. That solves the problem in the sense that it disappears.\n\nAdmittedly I can not explain how exactly the problem has originally emerged. But I guess it makes sense that it is a problem if a homset gives itself a certain category and then sage.rings.ring.Ring tries to work with another category.\n\nWith the new patch, we have (also as an additional doc test)\n\n```\nsage: J = J1(12345)\nsage: J.endomorphism_ring()\nEndomorphism ring of Abelian variety J1(12345) of dimension 5405473\n```\nboth on my machine (x86_64 Linux) and on bsd.math in a 32 bit installation. Moreover, on both machines, the tests in sage.modular pass.\n\nNeeds review, I guess.\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch",
     "created_at": "2011-05-06T13:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1542,7 +1535,6 @@ sage: J = J1(12345)
 sage: J.endomorphism_ring()
 Endomorphism ring of Abelian variety J1(12345) of dimension 5405473
 ```
-
 both on my machine (x86_64 Linux) and on bsd.math in a 32 bit installation. Moreover, on both machines, the tests in sage.modular pass.
 
 Needs review, I guess.
@@ -1610,7 +1602,7 @@ The patch at #11310 solves the "exceptions are ignored" problem.
 archive/issue_comments_098900.json:
 ```json
 {
-    "body": "There is a huge performance regression in creating iterated polynomial rings:\n\nBEFORE:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\n\nAFTER:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 53.38 s, sys: 0.19 s, total: 53.57 s\nWall time: 53.58 s\n```\n",
+    "body": "There is a huge performance regression in creating iterated polynomial rings:\n\nBEFORE:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\nAFTER:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 53.38 s, sys: 0.19 s, total: 53.57 s\nWall time: 53.58 s\n```",
     "created_at": "2011-05-08T10:10:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1630,7 +1622,6 @@ CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 ```
 
-
 AFTER:
 
 ```
@@ -1639,7 +1630,6 @@ sage: %time for n in range(11): S = PolynomialRing(S,'w')
 CPU times: user 53.38 s, sys: 0.19 s, total: 53.57 s
 Wall time: 53.58 s
 ```
-
 
 
 
@@ -1666,7 +1656,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_098902.json:
 ```json
 {
-    "body": "Replying to [comment:47 jdemeyer]:\n> There is a huge performance regression in creating iterated polynomial rings:\n> ...\n> sage: %time for n in range(11): S = PolynomialRing(S,'w')\n\nNote that the whole point of this ticket is to do more things during initialisation of polynomial rings. So, no surprise that initialisation becomes a lot slower. However, I agree that it should not be *that* slow.",
+    "body": "Replying to [comment:47 jdemeyer]:\n> There is a huge performance regression in creating iterated polynomial rings:\n> ...\n> sage: %time for n in range(11): S = PolynomialRing(S,'w')\n\n\nNote that the whole point of this ticket is to do more things during initialisation of polynomial rings. So, no surprise that initialisation becomes a lot slower. However, I agree that it should not be *that* slow.",
     "created_at": "2011-05-08T11:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1680,6 +1670,7 @@ Replying to [comment:47 jdemeyer]:
 > ...
 > sage: %time for n in range(11): S = PolynomialRing(S,'w')
 
+
 Note that the whole point of this ticket is to do more things during initialisation of polynomial rings. So, no surprise that initialisation becomes a lot slower. However, I agree that it should not be *that* slow.
 
 
@@ -1689,7 +1680,7 @@ Note that the whole point of this ticket is to do more things during initialisat
 archive/issue_comments_098903.json:
 ```json
 {
-    "body": "Strange. With the patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(5): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\nSo, that's quick. Continuing:\n\n```\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 8.38 s, sys: 0.00 s, total: 8.38 s\nWall time: 8.38 s\n```\n\n\nSo, suddenly there is a jump in the initialisation time.",
+    "body": "Strange. With the patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(5): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\nSo, that's quick. Continuing:\n\n```\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 8.38 s, sys: 0.00 s, total: 8.38 s\nWall time: 8.38 s\n```\n\nSo, suddenly there is a jump in the initialisation time.",
     "created_at": "2011-05-08T11:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1706,7 +1697,6 @@ sage: %time for n in range(5): S = PolynomialRing(S,'w')
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 ```
-
 So, that's quick. Continuing:
 
 ```
@@ -1727,7 +1717,6 @@ CPU times: user 8.38 s, sys: 0.00 s, total: 8.38 s
 Wall time: 8.38 s
 ```
 
-
 So, suddenly there is a jump in the initialisation time.
 
 
@@ -1737,7 +1726,7 @@ So, suddenly there is a jump in the initialisation time.
 archive/issue_comments_098904.json:
 ```json
 {
-    "body": "Sorry, my fault. I did not restart before doing the test above, so, rings were found in the cache.\n\nAfter restart with all patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.03 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.10 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.70 s, sys: 0.00 s, total: 0.70 s\nWall time: 0.70 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 2.58 s, sys: 0.00 s, total: 2.58 s\nWall time: 2.58 s\n```\n\n\nI found that the problem comes up with [attachment:trac9944-polynomial_speedup.patch]. So, let's work on it.",
+    "body": "Sorry, my fault. I did not restart before doing the test above, so, rings were found in the cache.\n\nAfter restart with all patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.03 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.10 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.70 s, sys: 0.00 s, total: 0.70 s\nWall time: 0.70 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 2.58 s, sys: 0.00 s, total: 2.58 s\nWall time: 2.58 s\n```\n\nI found that the problem comes up with [attachment:trac9944-polynomial_speedup.patch]. So, let's work on it.",
     "created_at": "2011-05-08T11:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1781,7 +1770,6 @@ CPU times: user 2.58 s, sys: 0.00 s, total: 2.58 s
 Wall time: 2.58 s
 ```
 
-
 I found that the problem comes up with [attachment:trac9944-polynomial_speedup.patch]. So, let's work on it.
 
 
@@ -1791,7 +1779,7 @@ I found that the problem comes up with [attachment:trac9944-polynomial_speedup.p
 archive/issue_comments_098905.json:
 ```json
 {
-    "body": "Using prun, I found for one case:\n\n```\n   Ordered by: internal time\n \n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.141    0.141    0.238    0.238 polynomial_ring.py:178(__init__)\n     1414    0.055    0.000    0.071    0.000 polynomial_ring.py:234(_element_constructor_)\n    11104    0.020    0.000    0.020    0.000 polynomial_ring.py:1821(modulus)\n     1420    0.005    0.000    0.005    0.000 finite_field_givaro.py:153(degree)\n...\n```\n\n\nIn other words: In order to construct just *one* polynomial ring over an iterated polynomial ring, the element constructor is called 1414 times and the modulus method 11104 times. At a different ticket, I suggested to turn the modulus method into a cached method. Perhaps that should already be done here. However, there should be no need to construct 1414 elements, just to initialise one ring!",
+    "body": "Using prun, I found for one case:\n\n```\n   Ordered by: internal time\n \n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.141    0.141    0.238    0.238 polynomial_ring.py:178(__init__)\n     1414    0.055    0.000    0.071    0.000 polynomial_ring.py:234(_element_constructor_)\n    11104    0.020    0.000    0.020    0.000 polynomial_ring.py:1821(modulus)\n     1420    0.005    0.000    0.005    0.000 finite_field_givaro.py:153(degree)\n...\n```\n\nIn other words: In order to construct just *one* polynomial ring over an iterated polynomial ring, the element constructor is called 1414 times and the modulus method 11104 times. At a different ticket, I suggested to turn the modulus method into a cached method. Perhaps that should already be done here. However, there should be no need to construct 1414 elements, just to initialise one ring!",
     "created_at": "2011-05-08T11:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1812,7 +1800,6 @@ Using prun, I found for one case:
      1420    0.005    0.000    0.005    0.000 finite_field_givaro.py:153(degree)
 ...
 ```
-
 
 In other words: In order to construct just *one* polynomial ring over an iterated polynomial ring, the element constructor is called 1414 times and the modulus method 11104 times. At a different ticket, I suggested to turn the modulus method into a cached method. Perhaps that should already be done here. However, there should be no need to construct 1414 elements, just to initialise one ring!
 
@@ -1841,7 +1828,7 @@ Interesting. Now it seems to me that the element constructor is in fact called f
 archive/issue_comments_098907.json:
 ```json
 {
-    "body": "I think I somehow located the problem. I created recursively a univariate polynomial ring, as in your example, with a total of 8 variables:\n\n```\nsage: S\nUnivariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Finite Field in a of size 3^2\n```\n\n\nThen, with the patches\n\n```\nsage: timeit(\"S(0)\")\n5 loops, best of 3: 83 ms per loop\n```\n\nbut without the patches\n\n```\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 121 \u00b5s per loop\n```\n\n\nSince the above relies on coercion maps, which are compositions of polynomial base injection maps, and since my patch touched the polynomial base injection maps, it is conceivable that we'll find the problem there.\n\nNote, however, that it might be a better solution to let the composition of two polynomial base injection maps be another polynomial base injection map -- that ought to be a lot faster than a composite map.",
+    "body": "I think I somehow located the problem. I created recursively a univariate polynomial ring, as in your example, with a total of 8 variables:\n\n```\nsage: S\nUnivariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Finite Field in a of size 3^2\n```\n\nThen, with the patches\n\n```\nsage: timeit(\"S(0)\")\n5 loops, best of 3: 83 ms per loop\n```\nbut without the patches\n\n```\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 121 \u00b5s per loop\n```\n\nSince the above relies on coercion maps, which are compositions of polynomial base injection maps, and since my patch touched the polynomial base injection maps, it is conceivable that we'll find the problem there.\n\nNote, however, that it might be a better solution to let the composition of two polynomial base injection maps be another polynomial base injection map -- that ought to be a lot faster than a composite map.",
     "created_at": "2011-05-08T14:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1857,21 +1844,18 @@ sage: S
 Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Finite Field in a of size 3^2
 ```
 
-
 Then, with the patches
 
 ```
 sage: timeit("S(0)")
 5 loops, best of 3: 83 ms per loop
 ```
-
 but without the patches
 
 ```
 sage: timeit("S(0)")
 625 loops, best of 3: 121 µs per loop
 ```
-
 
 Since the above relies on coercion maps, which are compositions of polynomial base injection maps, and since my patch touched the polynomial base injection maps, it is conceivable that we'll find the problem there.
 
@@ -1948,7 +1932,7 @@ While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, wh
 archive/issue_comments_098911.json:
 ```json
 {
-    "body": "Replying to [comment:56 SimonKing]:\n> While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, which is not yet included into the manual, and which had syntax errors in all doc strings.\n\nOr perhaps the inclusion of sage/schemes into the manual should be on a different ticket, since most files are missing.",
+    "body": "Replying to [comment:56 SimonKing]:\n> While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, which is not yet included into the manual, and which had syntax errors in all doc strings.\n\n\nOr perhaps the inclusion of sage/schemes into the manual should be on a different ticket, since most files are missing.",
     "created_at": "2011-05-12T06:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1960,6 +1944,7 @@ archive/issue_comments_098911.json:
 Replying to [comment:56 SimonKing]:
 > While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, which is not yet included into the manual, and which had syntax errors in all doc strings.
 
+
 Or perhaps the inclusion of sage/schemes into the manual should be on a different ticket, since most files are missing.
 
 
@@ -1969,7 +1954,7 @@ Or perhaps the inclusion of sage/schemes into the manual should be on a differen
 archive/issue_comments_098912.json:
 ```json
 {
-    "body": "Replying to [comment:56 SimonKing]:\n> I am totally frustrated.\n\nStill the case, although I am already down to 251 doctest failures and one timeout. That's the disadvantage of doing changes in coercion.",
+    "body": "Replying to [comment:56 SimonKing]:\n> I am totally frustrated.\n\n\nStill the case, although I am already down to 251 doctest failures and one timeout. That's the disadvantage of doing changes in coercion.",
     "created_at": "2011-05-13T05:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -1981,6 +1966,7 @@ archive/issue_comments_098912.json:
 Replying to [comment:56 SimonKing]:
 > I am totally frustrated.
 
+
 Still the case, although I am already down to 251 doctest failures and one timeout. That's the disadvantage of doing changes in coercion.
 
 
@@ -1990,7 +1976,7 @@ Still the case, although I am already down to 251 doctest failures and one timeo
 archive/issue_comments_098913.json:
 ```json
 {
-    "body": "Finally I got my new patch to work. Here are the new features and, in particular, the new timings. I think it was worth the effort!\n\n__Polynomial Construction Functors__\n\n\n```\nsage: R.<x> = PolynomialRing(GF(5), sparse=True)\nsage: F,B = R.construction()\nsage: F(B) is R\nTrue   # was False\n```\n\n\n__zero_element__\n\nIn various places, constructions such as self.parent()(0) are used. It should be more efficient to have self.parent().zero_element() instead, in particular if this is cached using the improved cached methods from #11115.\n\nThat means I had to introduce zero_element() for various classes, mostly in sage/modular.\n\n__Fix zero element of free module homomorphisms__\n\nThe following used to fail with an error:\n\n```\nsage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\nsage: V.Hom(V).zero()\nFree module morphism defined by the matrix\n[0 0 0]\n[0 0 0]\n[0 0 0]\nDomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\nCodomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\n```\n\n\n__Calling any parent with None should return zero__\n\nThis used to be true for finite prime fields, but failed with an error\nfor finite non-prime fields:\n\n```\nsage: GF(5)(None)\n0\nsage: GF(5^2,'a')(None)\n0\n```\n\n\n__Implement/improve `_new_constant_poly` for various polynomial classes__\n\nThis is the main reason why the timings stated below have improved. I thought that `_new_constant_poly` should be a method of a polynomial ring, but I think it should better stay as a method of polynomials: Polynomials are often implemented in Cython, but polynomial rings in Python.\n\nIn order to get a little bit of more speed, I introduce another parameter to `_new_constant_poly`, namely the parent in which the new polynomial is supposed to be created. This is because often the parent `P` of a polynomial `self` is already known when calling `self._new_constant_poly(a, P)`, so that it would be a waste of time to call `self.parent()` internally to determine the parent.\n\n__Improve Polynomial Base Injection Morphisms and use it for coercion__\n\nConversion into a polynomial ring P from its base ring occurs frequently and should be as quick as possible.\n\nI had already improved the performance in the old patch version. However, it turned out to be better to use `_new_constant_poly`, rather than always using multiplication with `P.one()`.\n\nThe rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\nPolynomial base injection morphisms are now always registered as coercion.\n\n__Call method for compiled polynomials__\n\nThe documentation for compiled polynomials states that it can be called, although the cdef method `.eval(...)` has less overhead. That was not true, there has been no `__call__` method. I added one.\n\n__Constant polynomial section__\n\nIt was stated that it uses the `constant_coefficient` method, which can be optimized for a particulare polynomial type. However, in fact a generic `constant_coefficient` method was **explicitly** called, even if a polynomial type did provide a more efficient method. That has now changed.\n\n__Sparse versus dense versus differently implemented polynomial rings__\n\nA univariate polynomial ring can be sparse or dense, and if it is dense and over `ZZ` (or also `QQ`) they can be implemented with `FLINT` or `NTL`. Dense and sparse rings used to be equal, but they were not identical - a violation to the unique parent assumption.\n\nMoreover, in the multivariate case, the `implementation` and `sparse` arguments had no effect on the resulting ring, but were used in the cache key, yielding another violation of the unique parent assumption.\n\nI resolved these violations. I was not sure whether one should silently ignore arguments that are not used, or should raise an error if they are provided. I decided to ignore `sparse` if it is not supported, and raise an error for dense or multivariate rings if an implementation is not supported.\n\nWe have, e.g.:\n\n```\nsage: S.<x,y> = PolynomialRing(ZZ,sparse=True)\nsage: S is ZZ['x','y']\nTrue  # used to be False\nsage: R.<x> = PolynomialRing(ZZ,sparse=True,implementation='FLINT')\nsage: S.<x> = PolynomialRing(ZZ,sparse=True,implementation='NTL')\nsage: R is S\nTrue  # used to be False\nsage: R == ZZ['x']\nFalse # used to be True\nsage: S.<x,y> = PolynomialRing(ZZ, implementation='NTL')\nTraceback (most recent call last):\n...\nValueError: The NTL implementation is not known for multivariate polynomial rings\n```\n\n\nThe last example used to return a ring that was equal but not identic to `ZZ['x','y']`!\n\nPolynomial rings are now equal if and only if they are identical. Coercions exist from the non-default to the default version of a ring (hence, from sparse to dense, from NTL to FLINT.\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: S.<x> = PolynomialRing(ZZ, implementation='NTL')\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\nsage: S.<x> = PolynomialRing(ZZ, sparse=True)\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\n```\n\n\nBy consequence, the parent of a sum of polynomials is now unique - it used to depend on the summation order if dense and sparse summands were involved.\n\n__Documentation and examples__\n\nI think all changes are covered by doctests. Occasionally I fixed wrongly formatted docstrings.\n\n__Performance__\n\nHere are the new timings for the examples that we had discussed above. I use sage-4.7.alpha5 with the patches from this ticket applied, and I compare with timings that I had obtained with an unpatched version of sage-4.7.alpha5\n\nThere is no significant change in the startup time: I got `1.253` for sage.all in unpatched sage, but the margin of error seems rather wide.\n\n```\n$ sage -startuptime\n...\n## Slowest (including children)\n1.100 sage.all (None)\n0.279 sage.schemes.all (sage.all)\n0.178 twisted.persisted.styles (sage.all)\n0.164 elliptic_curves.all (sage.schemes.all)\n0.162 ell_rational_field (elliptic_curves.all)\n0.150 ell_number_field (ell_rational_field)\n...\n```\n\n\nHere is the example brought up by Jeroen. There is now a drastic speedup were previously was a drastic slow down:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(8): S = PolynomialRing(S,'w')\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n# unpatched: 0.04 s\nsage: len(S.variable_names_recursive())\n8\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 27.9 \u00b5s per loop\n# with only the other patches: 83 ms\n# unpatched: 121 \u00b5s\n```\n\n\nHere is the example brought up by Martin Raum:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 58.2 \u00b5s per loop\n# unpatched: 66.9 \u00b5s\n```\n\n\nHere are the arithmetic examples that I had provided earlier:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.58 \u00b5s per loop\n# unpatched: 23.6 \u00b5s\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.4 \u00b5s per loop\n# unpatched: 25.8 \u00b5s\nsage: R.<x> = GF(3)[]   # sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 66.4 \u00b5s per loop\n# unpatched: 90.1 \u00b5s\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 75.4 \u00b5s per loop\n# unpatched: 117 \u00b5s\nsage: R.<x,y> = ZZ[]  # sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.85 \u00b5s per loop\n# unpatched: 13.6 \u00b5s\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.33 \u00b5s per loop\n# unpatched: 16.9 \u00b5s\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 6.59 \u00b5s per loop\n# unpatched: 11.2 \u00b5s\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 158 \u00b5s per loop\n# unpatched: 251 \u00b5s\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 488 \u00b5s per loop\n# unpatched: 521 \u00b5s\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 894 \u00b5s per loop\n# unpatched: 1.06 ms\nsage: R.<x> = PolynomialRing(GF(9,'a'), sparse=True)\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 236 \u00b5s per loop\n# unpatched: 265 \u00b5s\n```\n\n\nSo, in **all** examples there is a noticeable speedup.\n\n__Conclusion__\n\nThe new patch cleans coercion of polynomial rings, by enforcing uniqueness of parents.\n\nIt considerably improves the performance, even when comparing with the improvements that were introduced in the previous patches.\n\n`sage -testall -long` passed. So, it is finally ready for review again.\n\nDepends on sage-4.7\n\nApply Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch trac9944_faster_and_cleaner_coercion.patch",
+    "body": "Finally I got my new patch to work. Here are the new features and, in particular, the new timings. I think it was worth the effort!\n\n__Polynomial Construction Functors__\n\n```\nsage: R.<x> = PolynomialRing(GF(5), sparse=True)\nsage: F,B = R.construction()\nsage: F(B) is R\nTrue   # was False\n```\n\n__zero_element__\n\nIn various places, constructions such as self.parent()(0) are used. It should be more efficient to have self.parent().zero_element() instead, in particular if this is cached using the improved cached methods from #11115.\n\nThat means I had to introduce zero_element() for various classes, mostly in sage/modular.\n\n__Fix zero element of free module homomorphisms__\n\nThe following used to fail with an error:\n\n```\nsage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\nsage: V.Hom(V).zero()\nFree module morphism defined by the matrix\n[0 0 0]\n[0 0 0]\n[0 0 0]\nDomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\nCodomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\n```\n\n__Calling any parent with None should return zero__\n\nThis used to be true for finite prime fields, but failed with an error\nfor finite non-prime fields:\n\n```\nsage: GF(5)(None)\n0\nsage: GF(5^2,'a')(None)\n0\n```\n\n__Implement/improve `_new_constant_poly` for various polynomial classes__\n\nThis is the main reason why the timings stated below have improved. I thought that `_new_constant_poly` should be a method of a polynomial ring, but I think it should better stay as a method of polynomials: Polynomials are often implemented in Cython, but polynomial rings in Python.\n\nIn order to get a little bit of more speed, I introduce another parameter to `_new_constant_poly`, namely the parent in which the new polynomial is supposed to be created. This is because often the parent `P` of a polynomial `self` is already known when calling `self._new_constant_poly(a, P)`, so that it would be a waste of time to call `self.parent()` internally to determine the parent.\n\n__Improve Polynomial Base Injection Morphisms and use it for coercion__\n\nConversion into a polynomial ring P from its base ring occurs frequently and should be as quick as possible.\n\nI had already improved the performance in the old patch version. However, it turned out to be better to use `_new_constant_poly`, rather than always using multiplication with `P.one()`.\n\nThe rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\nPolynomial base injection morphisms are now always registered as coercion.\n\n__Call method for compiled polynomials__\n\nThe documentation for compiled polynomials states that it can be called, although the cdef method `.eval(...)` has less overhead. That was not true, there has been no `__call__` method. I added one.\n\n__Constant polynomial section__\n\nIt was stated that it uses the `constant_coefficient` method, which can be optimized for a particulare polynomial type. However, in fact a generic `constant_coefficient` method was **explicitly** called, even if a polynomial type did provide a more efficient method. That has now changed.\n\n__Sparse versus dense versus differently implemented polynomial rings__\n\nA univariate polynomial ring can be sparse or dense, and if it is dense and over `ZZ` (or also `QQ`) they can be implemented with `FLINT` or `NTL`. Dense and sparse rings used to be equal, but they were not identical - a violation to the unique parent assumption.\n\nMoreover, in the multivariate case, the `implementation` and `sparse` arguments had no effect on the resulting ring, but were used in the cache key, yielding another violation of the unique parent assumption.\n\nI resolved these violations. I was not sure whether one should silently ignore arguments that are not used, or should raise an error if they are provided. I decided to ignore `sparse` if it is not supported, and raise an error for dense or multivariate rings if an implementation is not supported.\n\nWe have, e.g.:\n\n```\nsage: S.<x,y> = PolynomialRing(ZZ,sparse=True)\nsage: S is ZZ['x','y']\nTrue  # used to be False\nsage: R.<x> = PolynomialRing(ZZ,sparse=True,implementation='FLINT')\nsage: S.<x> = PolynomialRing(ZZ,sparse=True,implementation='NTL')\nsage: R is S\nTrue  # used to be False\nsage: R == ZZ['x']\nFalse # used to be True\nsage: S.<x,y> = PolynomialRing(ZZ, implementation='NTL')\nTraceback (most recent call last):\n...\nValueError: The NTL implementation is not known for multivariate polynomial rings\n```\n\nThe last example used to return a ring that was equal but not identic to `ZZ['x','y']`!\n\nPolynomial rings are now equal if and only if they are identical. Coercions exist from the non-default to the default version of a ring (hence, from sparse to dense, from NTL to FLINT.\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: S.<x> = PolynomialRing(ZZ, implementation='NTL')\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\nsage: S.<x> = PolynomialRing(ZZ, sparse=True)\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\n```\n\nBy consequence, the parent of a sum of polynomials is now unique - it used to depend on the summation order if dense and sparse summands were involved.\n\n__Documentation and examples__\n\nI think all changes are covered by doctests. Occasionally I fixed wrongly formatted docstrings.\n\n__Performance__\n\nHere are the new timings for the examples that we had discussed above. I use sage-4.7.alpha5 with the patches from this ticket applied, and I compare with timings that I had obtained with an unpatched version of sage-4.7.alpha5\n\nThere is no significant change in the startup time: I got `1.253` for sage.all in unpatched sage, but the margin of error seems rather wide.\n\n```\n$ sage -startuptime\n...\n## Slowest (including children)\n1.100 sage.all (None)\n0.279 sage.schemes.all (sage.all)\n0.178 twisted.persisted.styles (sage.all)\n0.164 elliptic_curves.all (sage.schemes.all)\n0.162 ell_rational_field (elliptic_curves.all)\n0.150 ell_number_field (ell_rational_field)\n...\n```\n\nHere is the example brought up by Jeroen. There is now a drastic speedup were previously was a drastic slow down:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(8): S = PolynomialRing(S,'w')\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n# unpatched: 0.04 s\nsage: len(S.variable_names_recursive())\n8\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 27.9 \u00b5s per loop\n# with only the other patches: 83 ms\n# unpatched: 121 \u00b5s\n```\n\nHere is the example brought up by Martin Raum:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 58.2 \u00b5s per loop\n# unpatched: 66.9 \u00b5s\n```\n\nHere are the arithmetic examples that I had provided earlier:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.58 \u00b5s per loop\n# unpatched: 23.6 \u00b5s\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.4 \u00b5s per loop\n# unpatched: 25.8 \u00b5s\nsage: R.<x> = GF(3)[]   # sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 66.4 \u00b5s per loop\n# unpatched: 90.1 \u00b5s\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 75.4 \u00b5s per loop\n# unpatched: 117 \u00b5s\nsage: R.<x,y> = ZZ[]  # sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.85 \u00b5s per loop\n# unpatched: 13.6 \u00b5s\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.33 \u00b5s per loop\n# unpatched: 16.9 \u00b5s\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 6.59 \u00b5s per loop\n# unpatched: 11.2 \u00b5s\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 158 \u00b5s per loop\n# unpatched: 251 \u00b5s\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 488 \u00b5s per loop\n# unpatched: 521 \u00b5s\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 894 \u00b5s per loop\n# unpatched: 1.06 ms\nsage: R.<x> = PolynomialRing(GF(9,'a'), sparse=True)\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 236 \u00b5s per loop\n# unpatched: 265 \u00b5s\n```\n\nSo, in **all** examples there is a noticeable speedup.\n\n__Conclusion__\n\nThe new patch cleans coercion of polynomial rings, by enforcing uniqueness of parents.\n\nIt considerably improves the performance, even when comparing with the improvements that were introduced in the previous patches.\n\n`sage -testall -long` passed. So, it is finally ready for review again.\n\nDepends on sage-4.7\n\nApply Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch trac9944_faster_and_cleaner_coercion.patch",
     "created_at": "2011-05-13T15:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2003,14 +1989,12 @@ Finally I got my new patch to work. Here are the new features and, in particular
 
 __Polynomial Construction Functors__
 
-
 ```
 sage: R.<x> = PolynomialRing(GF(5), sparse=True)
 sage: F,B = R.construction()
 sage: F(B) is R
 True   # was False
 ```
-
 
 __zero_element__
 
@@ -2035,7 +2019,6 @@ Codomain: Free module of degree 3 and rank 3 over Integer Ring
 Echelon ...
 ```
 
-
 __Calling any parent with None should return zero__
 
 This used to be true for finite prime fields, but failed with an error
@@ -2047,7 +2030,6 @@ sage: GF(5)(None)
 sage: GF(5^2,'a')(None)
 0
 ```
-
 
 __Implement/improve `_new_constant_poly` for various polynomial classes__
 
@@ -2099,7 +2081,6 @@ Traceback (most recent call last):
 ValueError: The NTL implementation is not known for multivariate polynomial rings
 ```
 
-
 The last example used to return a ring that was equal but not identic to `ZZ['x','y']`!
 
 Polynomial rings are now equal if and only if they are identical. Coercions exist from the non-default to the default version of a ring (hence, from sparse to dense, from NTL to FLINT.
@@ -2121,7 +2102,6 @@ True
 sage: S.has_coerce_map_from(R)
 False
 ```
-
 
 By consequence, the parent of a sum of polynomials is now unique - it used to depend on the summation order if dense and sparse summands were involved.
 
@@ -2148,7 +2128,6 @@ $ sage -startuptime
 ...
 ```
 
-
 Here is the example brought up by Jeroen. There is now a drastic speedup were previously was a drastic slow down:
 
 ```
@@ -2165,7 +2144,6 @@ sage: timeit("S(0)")
 # unpatched: 121 µs
 ```
 
-
 Here is the example brought up by Martin Raum:
 
 ```
@@ -2175,7 +2153,6 @@ sage: timeit('(2*x - 1)^2 + 5', number = 10^4)
 10000 loops, best of 3: 58.2 µs per loop
 # unpatched: 66.9 µs
 ```
-
 
 Here are the arithmetic examples that I had provided earlier:
 
@@ -2226,7 +2203,6 @@ sage: timeit('(2*x-1)^2+5', number=10^4)
 # unpatched: 265 µs
 ```
 
-
 So, in **all** examples there is a noticeable speedup.
 
 __Conclusion__
@@ -2266,7 +2242,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098915.json:
 ```json
 {
-    "body": "Replying to [comment:59 SimonKing]:\n> ...\n> __Improve Polynomial Base Injection Morphisms and use it for coercion__\n> \n>...\n> \n> The rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\nI stand corrected. The above rule did hold for an intermediate (unpublished) patch version. With the new patch, all polynomial classes have `_new_constant_poly`, and it will *always* be used for basering injection.\n\nHence, there is a return statement after getting `_new_constant_poly`, and the subsequent lines of `sage.rings.polynomial.polynomial_element.PolynomialBaseInjection.__init__` will never be executed. I will remove them in the final patch version, but I first wait for input of a referee.",
+    "body": "Replying to [comment:59 SimonKing]:\n> ...\n> __Improve Polynomial Base Injection Morphisms and use it for coercion__\n> \n\n>...\n> \n> The rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\n\nI stand corrected. The above rule did hold for an intermediate (unpublished) patch version. With the new patch, all polynomial classes have `_new_constant_poly`, and it will *always* be used for basering injection.\n\nHence, there is a return statement after getting `_new_constant_poly`, and the subsequent lines of `sage.rings.polynomial.polynomial_element.PolynomialBaseInjection.__init__` will never be executed. I will remove them in the final patch version, but I first wait for input of a referee.",
     "created_at": "2011-05-13T17:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2279,9 +2255,11 @@ Replying to [comment:59 SimonKing]:
 > ...
 > __Improve Polynomial Base Injection Morphisms and use it for coercion__
 > 
+
 >...
 > 
 > The rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.
+
 
 I stand corrected. The above rule did hold for an intermediate (unpublished) patch version. With the new patch, all polynomial classes have `_new_constant_poly`, and it will *always* be used for basering injection.
 
@@ -2373,7 +2351,7 @@ PS: I am still building 4.7, so I haven't run any tests yet.
 archive/issue_comments_098920.json:
 ```json
 {
-    "body": "Replying to [comment:64 mraum]:\n> So far I read till sage/rings/polynomial/laurent_polynomial_ring.py in the order that the patch is printed. Only one issue here:\n> in free_module_homspace.py l.128 (new counting) a doctest is missing that checks that passing a function works fine.\n\nIt **is** tested. The patch has added the following test:\n\n```\n\n            sage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\n            sage: V.Hom(V).zero()\n            Free module morphism defined by the matrix\n            [0 0 0]\n            [0 0 0]\n            [0 0 0]\n            Domain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n            Codomain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n```\n\nIn unpatched sage-4.7.alpha5, you would get\n\n```\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (396, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (6924, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: 'function' object is not iterable\n```\n\n\n> Simon, if you rebase this, could you also upload a diff file for the new and old patch? That would make my and possibly the life of all others easier.\n\nOK.",
+    "body": "Replying to [comment:64 mraum]:\n> So far I read till sage/rings/polynomial/laurent_polynomial_ring.py in the order that the patch is printed. Only one issue here:\n> in free_module_homspace.py l.128 (new counting) a doctest is missing that checks that passing a function works fine.\n\n\nIt **is** tested. The patch has added the following test:\n\n```\n\n            sage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\n            sage: V.Hom(V).zero()\n            Free module morphism defined by the matrix\n            [0 0 0]\n            [0 0 0]\n            [0 0 0]\n            Domain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n            Codomain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n```\nIn unpatched sage-4.7.alpha5, you would get\n\n```\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (396, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (6924, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: 'function' object is not iterable\n```\n\n> Simon, if you rebase this, could you also upload a diff file for the new and old patch? That would make my and possibly the life of all others easier.\n\n\nOK.",
     "created_at": "2011-05-16T11:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2385,6 +2363,7 @@ archive/issue_comments_098920.json:
 Replying to [comment:64 mraum]:
 > So far I read till sage/rings/polynomial/laurent_polynomial_ring.py in the order that the patch is printed. Only one issue here:
 > in free_module_homspace.py l.128 (new counting) a doctest is missing that checks that passing a function works fine.
+
 
 It **is** tested. The patch has added the following test:
 
@@ -2401,7 +2380,6 @@ It **is** tested. The patch has added the following test:
             Codomain: Free module of degree 3 and rank 3 over Integer Ring
             Echelon ...
 ```
-
 In unpatched sage-4.7.alpha5, you would get
 
 ```
@@ -2419,8 +2397,8 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'function' object is not iterable
 ```
 
-
 > Simon, if you rebase this, could you also upload a diff file for the new and old patch? That would make my and possibly the life of all others easier.
+
 
 OK.
 
@@ -2471,7 +2449,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098923.json:
 ```json
 {
-    "body": "Replying to [comment:66 SimonKing]:\n> Patch's up!\n\nAnd diff file as well.",
+    "body": "Replying to [comment:66 SimonKing]:\n> Patch's up!\n\n\nAnd diff file as well.",
     "created_at": "2011-05-16T11:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2482,6 +2460,7 @@ archive/issue_comments_098923.json:
 
 Replying to [comment:66 SimonKing]:
 > Patch's up!
+
 
 And diff file as well.
 
@@ -2510,7 +2489,7 @@ With a freshly built 4.7 I get a reject in polynomial_element.pyx.  This only co
 archive/issue_comments_098925.json:
 ```json
 {
-    "body": "Replying to [comment:68 mraum]:\n> With a freshly built 4.7 I get a reject in polynomial_element.pyx.\n\nStrange. I started with sage.4.7.alpha5, imported the patch from #11139 (it is only one, if I am not mistaken), and then the patches apply cleanly for me. Is there another merged ticket that interferes?",
+    "body": "Replying to [comment:68 mraum]:\n> With a freshly built 4.7 I get a reject in polynomial_element.pyx.\n\n\nStrange. I started with sage.4.7.alpha5, imported the patch from #11139 (it is only one, if I am not mistaken), and then the patches apply cleanly for me. Is there another merged ticket that interferes?",
     "created_at": "2011-05-17T21:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2521,6 +2500,7 @@ archive/issue_comments_098925.json:
 
 Replying to [comment:68 mraum]:
 > With a freshly built 4.7 I get a reject in polynomial_element.pyx.
+
 
 Strange. I started with sage.4.7.alpha5, imported the patch from #11139 (it is only one, if I am not mistaken), and then the patches apply cleanly for me. Is there another merged ticket that interferes?
 
@@ -2584,7 +2564,7 @@ hg blame gives me that some changes were, for example, made to denominator. My l
 archive/issue_comments_098928.json:
 ```json
 {
-    "body": "Replying to [comment:70 mraum]:\n> Simon, you are completely right about the doctest with span. Could we add #indirect doctest so that attention is drawn to this?\n\nOK, and perhaps I even add a comment like \"The method zero() calls this hom space with a function, not with a matrix, and that case had previously not been taken care of\".\n\n> Some issues, that I encountered:\n> in polynomial_element.pxy new line 5352 : what about p-adics? I haven't had the time to check, but perhaps you can already say something about it.\n\nYou mean the fact that I return `<Polynomial>self._parent(self[:n])` when it previously was `<Polynomial>self._parent(self[:n], check=False)`?\n\nI tried to reconstruct what made me do that change. It now seems to me that it was not because of a bug but because I thought `self[:n]` would return a truncated list of coefficients, which apparently is not the case (at least not always).\n\nAnyway. *If* you feed a truncated list of coefficients into the element constructor of a univariate polynomial ring, and if you give `check=False`, then you could create a polynomial whose list of coefficients ends with a zero. That is a problem for non-padic polynomials, since `valuation()` and other methods will result in an error.\n\nSo, `if` there are polynomials p so that `p[:n]` returns the list of the first n coefficients, then `check=False` is a bug.\n\nHowever, if `p[:n]` returns a polynomial that actually has the right parent, then the argument `check` will not be tested at all. So, `False` or `True` does not matter.\n\n**Conclusion:** Removing `check=True` should have no influence on performance, but may fix a potential problem (depending on the behaviour of `p[:n]`).\n\n\nIn any case, it can not be a problem for padics, even *if* `self[:n]` returns a list: I do not remove trailing zeroes from the coefficient list, but simply let the element constructor of `self._parent` decide what to do -- and the element constructor of padic and non-padic polynomial rings will do the right thing.\n\nHere is a padic example:\n\n```\nsage: P.<x> = Zp(5)[]\nsage: p = x^4\nsage: p.truncate(3).valuation()\n+Infinity\n```\n\nand that is because `p[:3].parent() is P`.\n\nI just found that the existing test for the `truncate` method in `sage.rings.polynomial.polynomial_element` does *not* test that method. Namely:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = R[]\nsage: f = y^3 + x*y -3*x\nsage: from sage.misc.sageinspect import sage_getfile, sage_getsourcelines\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n6000\n```\n\n\nSo, `f.truncate` is a different truncate method. I'll change that doctest by making S a sparse polynomial ring:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = PolynomialRing(R, sparse=True)\nsage: f = y^3 + x*y -3*x\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n5335\n```\n\n\n> in polynomial_element.pxy new line 6180ff : there are two returns that do not belong there\n\nYep. See post 60. I promised to remove the lines starting with the comment `# this is likely to be overridden below:` in the final patch version, but wanted to wait for input of a reviewer (thank you, reviewer!)\n\n> in polynomial_real_mpfr_dense.pxy new line 57: Do you mean [0]?\n\nYes, and I'm changing it, although `i` works as well:\n\n```\nsage: from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\nsage: PolynomialRealDense(RR['x'],None)\n0\n```\n\n\n> in polynomial_ring.py new line 468 : The coercing is the other way around.\n\nThank you!\n\n> Please don't forget to check the rejects that I've mentioned above. This could be a real problem for Jeroen.\n\nI'll try it, and will soon submit a new version of the last patch.",
+    "body": "Replying to [comment:70 mraum]:\n> Simon, you are completely right about the doctest with span. Could we add #indirect doctest so that attention is drawn to this?\n\n\nOK, and perhaps I even add a comment like \"The method zero() calls this hom space with a function, not with a matrix, and that case had previously not been taken care of\".\n\n> Some issues, that I encountered:\n> in polynomial_element.pxy new line 5352 : what about p-adics? I haven't had the time to check, but perhaps you can already say something about it.\n\n\nYou mean the fact that I return `<Polynomial>self._parent(self[:n])` when it previously was `<Polynomial>self._parent(self[:n], check=False)`?\n\nI tried to reconstruct what made me do that change. It now seems to me that it was not because of a bug but because I thought `self[:n]` would return a truncated list of coefficients, which apparently is not the case (at least not always).\n\nAnyway. *If* you feed a truncated list of coefficients into the element constructor of a univariate polynomial ring, and if you give `check=False`, then you could create a polynomial whose list of coefficients ends with a zero. That is a problem for non-padic polynomials, since `valuation()` and other methods will result in an error.\n\nSo, `if` there are polynomials p so that `p[:n]` returns the list of the first n coefficients, then `check=False` is a bug.\n\nHowever, if `p[:n]` returns a polynomial that actually has the right parent, then the argument `check` will not be tested at all. So, `False` or `True` does not matter.\n\n**Conclusion:** Removing `check=True` should have no influence on performance, but may fix a potential problem (depending on the behaviour of `p[:n]`).\n\n\nIn any case, it can not be a problem for padics, even *if* `self[:n]` returns a list: I do not remove trailing zeroes from the coefficient list, but simply let the element constructor of `self._parent` decide what to do -- and the element constructor of padic and non-padic polynomial rings will do the right thing.\n\nHere is a padic example:\n\n```\nsage: P.<x> = Zp(5)[]\nsage: p = x^4\nsage: p.truncate(3).valuation()\n+Infinity\n```\nand that is because `p[:3].parent() is P`.\n\nI just found that the existing test for the `truncate` method in `sage.rings.polynomial.polynomial_element` does *not* test that method. Namely:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = R[]\nsage: f = y^3 + x*y -3*x\nsage: from sage.misc.sageinspect import sage_getfile, sage_getsourcelines\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n6000\n```\n\nSo, `f.truncate` is a different truncate method. I'll change that doctest by making S a sparse polynomial ring:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = PolynomialRing(R, sparse=True)\nsage: f = y^3 + x*y -3*x\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n5335\n```\n\n> in polynomial_element.pxy new line 6180ff : there are two returns that do not belong there\n\n\nYep. See post 60. I promised to remove the lines starting with the comment `# this is likely to be overridden below:` in the final patch version, but wanted to wait for input of a reviewer (thank you, reviewer!)\n\n> in polynomial_real_mpfr_dense.pxy new line 57: Do you mean [0]?\n\n\nYes, and I'm changing it, although `i` works as well:\n\n```\nsage: from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\nsage: PolynomialRealDense(RR['x'],None)\n0\n```\n\n> in polynomial_ring.py new line 468 : The coercing is the other way around.\n\n\nThank you!\n\n> Please don't forget to check the rejects that I've mentioned above. This could be a real problem for Jeroen.\n\n\nI'll try it, and will soon submit a new version of the last patch.",
     "created_at": "2011-05-18T07:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2596,10 +2576,12 @@ archive/issue_comments_098928.json:
 Replying to [comment:70 mraum]:
 > Simon, you are completely right about the doctest with span. Could we add #indirect doctest so that attention is drawn to this?
 
+
 OK, and perhaps I even add a comment like "The method zero() calls this hom space with a function, not with a matrix, and that case had previously not been taken care of".
 
 > Some issues, that I encountered:
 > in polynomial_element.pxy new line 5352 : what about p-adics? I haven't had the time to check, but perhaps you can already say something about it.
+
 
 You mean the fact that I return `<Polynomial>self._parent(self[:n])` when it previously was `<Polynomial>self._parent(self[:n], check=False)`?
 
@@ -2624,7 +2606,6 @@ sage: p = x^4
 sage: p.truncate(3).valuation()
 +Infinity
 ```
-
 and that is because `p[:3].parent() is P`.
 
 I just found that the existing test for the `truncate` method in `sage.rings.polynomial.polynomial_element` does *not* test that method. Namely:
@@ -2639,7 +2620,6 @@ sage: sage_getsourcelines(f.truncate)[1]
 6000
 ```
 
-
 So, `f.truncate` is a different truncate method. I'll change that doctest by making S a sparse polynomial ring:
 
 ```
@@ -2651,12 +2631,13 @@ sage: sage_getsourcelines(f.truncate)[1]
 5335
 ```
 
-
 > in polynomial_element.pxy new line 6180ff : there are two returns that do not belong there
+
 
 Yep. See post 60. I promised to remove the lines starting with the comment `# this is likely to be overridden below:` in the final patch version, but wanted to wait for input of a reviewer (thank you, reviewer!)
 
 > in polynomial_real_mpfr_dense.pxy new line 57: Do you mean [0]?
+
 
 Yes, and I'm changing it, although `i` works as well:
 
@@ -2666,12 +2647,13 @@ sage: PolynomialRealDense(RR['x'],None)
 0
 ```
 
-
 > in polynomial_ring.py new line 468 : The coercing is the other way around.
+
 
 Thank you!
 
 > Please don't forget to check the rejects that I've mentioned above. This could be a real problem for Jeroen.
+
 
 I'll try it, and will soon submit a new version of the last patch.
 
@@ -2682,7 +2664,7 @@ I'll try it, and will soon submit a new version of the last patch.
 archive/issue_comments_098929.json:
 ```json
 {
-    "body": "Replying to [comment:71 mraum]:\n> hg blame gives me that some changes were, for example, made to denominator. My last tags are 15689, so my version is the same as 4.7rc2.\n\nI went through all patches that where merged since 4.7.alpha5 according to http://boxen.math.washington.edu/home/release/sage-4.7.rc2/tickets.html\n\nI found no patch touching sage.rings.polynomial.polynomial_element.pyx, actually no patch that contains the word fragment \"poly\".\n\nSo, I am still puzzled. Perhaps the release manager can state what ticket (in addition to #11139) I have to take into account.",
+    "body": "Replying to [comment:71 mraum]:\n> hg blame gives me that some changes were, for example, made to denominator. My last tags are 15689, so my version is the same as 4.7rc2.\n\n\nI went through all patches that where merged since 4.7.alpha5 according to http://boxen.math.washington.edu/home/release/sage-4.7.rc2/tickets.html\n\nI found no patch touching sage.rings.polynomial.polynomial_element.pyx, actually no patch that contains the word fragment \"poly\".\n\nSo, I am still puzzled. Perhaps the release manager can state what ticket (in addition to #11139) I have to take into account.",
     "created_at": "2011-05-18T07:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2693,6 +2675,7 @@ archive/issue_comments_098929.json:
 
 Replying to [comment:71 mraum]:
 > hg blame gives me that some changes were, for example, made to denominator. My last tags are 15689, so my version is the same as 4.7rc2.
+
 
 I went through all patches that where merged since 4.7.alpha5 according to http://boxen.math.washington.edu/home/release/sage-4.7.rc2/tickets.html
 
@@ -2745,7 +2728,7 @@ To be clear, I meant rebase to sage-4.7.1.alpha0 + #11139.
 archive/issue_comments_098932.json:
 ```json
 {
-    "body": "Replying to [comment:74 jdemeyer]:\n> There shouldn't be any other patch to take into account (apart from #11139).  Could it be that you rebased to a non-clean sage-4.7.alpha5?\n\nI don't think so.\n\nAnyway. I just finished the built of sage-4.7.rc2, and I found no problems at all with my patches. [attachment:trac9944_polynomial_speedup.patch] succeeded with a little fuzz, but there has been no rejection.\n\nTherefore I just submitted a new version of [attachment:trac9944_faster_and_cleaner_coercion.patch] that addresses Martin's comments, but the other patches can stay as they are, IMHO.",
+    "body": "Replying to [comment:74 jdemeyer]:\n> There shouldn't be any other patch to take into account (apart from #11139).  Could it be that you rebased to a non-clean sage-4.7.alpha5?\n\n\nI don't think so.\n\nAnyway. I just finished the built of sage-4.7.rc2, and I found no problems at all with my patches. [attachment:trac9944_polynomial_speedup.patch] succeeded with a little fuzz, but there has been no rejection.\n\nTherefore I just submitted a new version of [attachment:trac9944_faster_and_cleaner_coercion.patch] that addresses Martin's comments, but the other patches can stay as they are, IMHO.",
     "created_at": "2011-05-18T12:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2756,6 +2739,7 @@ archive/issue_comments_098932.json:
 
 Replying to [comment:74 jdemeyer]:
 > There shouldn't be any other patch to take into account (apart from #11139).  Could it be that you rebased to a non-clean sage-4.7.alpha5?
+
 
 I don't think so.
 
@@ -2836,7 +2820,7 @@ Martin
 archive/issue_comments_098936.json:
 ```json
 {
-    "body": "Replying to [comment:78 mraum]:\n> I encountered only two further issues:\n> in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n\nI am trying. But probably you are right, it should probably be `except TypeError`.\n \n> I don't understand the changes to qqbar.py. And also I have the feeling I saw this kind of change already. Have you, perhaps, confused this change? If not, could you say, why you made it?\n\nThat change only concerns a doctest involving the function `sage_input`. Its purpose is to give a construction to any given object. Apparently, the coercion changes led to a different but equivalent construction in one of the examples.\n\n> There is still the issue with the rejects. \n\nIs there really? Meanwhile I got sage-4.7.rc2, and I did *not* get any rejects for any of the patches. I merely got an \"applied with fuzz\", but that's not a reject. Are you sure that you started with a fresh sage-4.7.rc2, applied #11139, and then applied the 6 patches in order as listed in the ticket description, and only these? Please do not apply [attachment:trac9944_second_referee.patch], if that was the problem.\n\n> Will you rebase to 4.7.1?\n\nI don't see the need, since it does apply to 4.7.rc2, IMHO.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:78 mraum]:\n> I encountered only two further issues:\n> in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n\n\nI am trying. But probably you are right, it should probably be `except TypeError`.\n \n> I don't understand the changes to qqbar.py. And also I have the feeling I saw this kind of change already. Have you, perhaps, confused this change? If not, could you say, why you made it?\n\n\nThat change only concerns a doctest involving the function `sage_input`. Its purpose is to give a construction to any given object. Apparently, the coercion changes led to a different but equivalent construction in one of the examples.\n\n> There is still the issue with the rejects. \n\n\nIs there really? Meanwhile I got sage-4.7.rc2, and I did *not* get any rejects for any of the patches. I merely got an \"applied with fuzz\", but that's not a reject. Are you sure that you started with a fresh sage-4.7.rc2, applied #11139, and then applied the 6 patches in order as listed in the ticket description, and only these? Please do not apply [attachment:trac9944_second_referee.patch], if that was the problem.\n\n> Will you rebase to 4.7.1?\n\n\nI don't see the need, since it does apply to 4.7.rc2, IMHO.\n\nCheers,\nSimon",
     "created_at": "2011-05-19T06:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2849,17 +2833,21 @@ Replying to [comment:78 mraum]:
 > I encountered only two further issues:
 > in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this "on the fly". Can we have a doctest for this?
 
+
 I am trying. But probably you are right, it should probably be `except TypeError`.
  
 > I don't understand the changes to qqbar.py. And also I have the feeling I saw this kind of change already. Have you, perhaps, confused this change? If not, could you say, why you made it?
+
 
 That change only concerns a doctest involving the function `sage_input`. Its purpose is to give a construction to any given object. Apparently, the coercion changes led to a different but equivalent construction in one of the examples.
 
 > There is still the issue with the rejects. 
 
+
 Is there really? Meanwhile I got sage-4.7.rc2, and I did *not* get any rejects for any of the patches. I merely got an "applied with fuzz", but that's not a reject. Are you sure that you started with a fresh sage-4.7.rc2, applied #11139, and then applied the 6 patches in order as listed in the ticket description, and only these? Please do not apply [attachment:trac9944_second_referee.patch], if that was the problem.
 
 > Will you rebase to 4.7.1?
+
 
 I don't see the need, since it does apply to 4.7.rc2, IMHO.
 
@@ -2873,7 +2861,7 @@ Simon
 archive/issue_comments_098937.json:
 ```json
 {
-    "body": "Replying to [comment:79 SimonKing]:\n> Replying to [comment:78 mraum]:\n> > I encountered only two further issues:\n> > in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n> \n> I am trying. But probably you are right, it should probably be `except TypeError`.\n\nI think I misunderstood your remark: You do not complain about the fact that there is a bare `except`, but you noticed that the TypeError is constructed but not raised. That's odd, of course.\n\nI found the following example, in which the error should be raised:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n3*x + 3\n```\n\nHence, currently there is no error raised and the result is absolute nonsense.\n\nI'll fix that.",
+    "body": "Replying to [comment:79 SimonKing]:\n> Replying to [comment:78 mraum]:\n> > I encountered only two further issues:\n> > in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n\n> \n> I am trying. But probably you are right, it should probably be `except TypeError`.\n\n\nI think I misunderstood your remark: You do not complain about the fact that there is a bare `except`, but you noticed that the TypeError is constructed but not raised. That's odd, of course.\n\nI found the following example, in which the error should be raised:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n3*x + 3\n```\nHence, currently there is no error raised and the result is absolute nonsense.\n\nI'll fix that.",
     "created_at": "2011-05-19T06:19:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2886,8 +2874,10 @@ Replying to [comment:79 SimonKing]:
 > Replying to [comment:78 mraum]:
 > > I encountered only two further issues:
 > > in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this "on the fly". Can we have a doctest for this?
+
 > 
 > I am trying. But probably you are right, it should probably be `except TypeError`.
+
 
 I think I misunderstood your remark: You do not complain about the fact that there is a bare `except`, but you noticed that the TypeError is constructed but not raised. That's odd, of course.
 
@@ -2899,7 +2889,6 @@ sage: R.<x> = PolynomialRing(K,implementation='NTL')
 sage: R([3,'1234'])
 3*x + 3
 ```
-
 Hence, currently there is no error raised and the result is absolute nonsense.
 
 I'll fix that.
@@ -2953,7 +2942,7 @@ I have just made the changes to rebase to 4.7.1.alpha0. I think the point of Jer
 archive/issue_comments_098940.json:
 ```json
 {
-    "body": "Replying to [comment:82 mraum]:\n> To me this sounds reasonable.\n\nWhat is \"this\"? Do you mean, raising an error is reasonable, or trying conversion rather than coercion is reasonable?",
+    "body": "Replying to [comment:82 mraum]:\n> To me this sounds reasonable.\n\n\nWhat is \"this\"? Do you mean, raising an error is reasonable, or trying conversion rather than coercion is reasonable?",
     "created_at": "2011-05-19T06:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2965,6 +2954,7 @@ archive/issue_comments_098940.json:
 Replying to [comment:82 mraum]:
 > To me this sounds reasonable.
 
+
 What is "this"? Do you mean, raising an error is reasonable, or trying conversion rather than coercion is reasonable?
 
 
@@ -2974,7 +2964,7 @@ What is "this"? Do you mean, raising an error is reasonable, or trying conversio
 archive/issue_comments_098941.json:
 ```json
 {
-    "body": "I found another bug in polynomial_zz_pex.pyx:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,x])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\nTraceback (most recent call last):\n...\nTypeError: polynomial() takes exactly one argument (0 given)\n```\n\n\nI suggest to not only catch an attribute error (namely when requesting `e.polynomial()`) but also a type error.\n\nAnd my preference is to do try a conversion, before raising an error on a failing coercion. If that sounds reasonable to you then I'll submit an update of my patch.",
+    "body": "I found another bug in polynomial_zz_pex.pyx:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,x])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\nTraceback (most recent call last):\n...\nTypeError: polynomial() takes exactly one argument (0 given)\n```\n\nI suggest to not only catch an attribute error (namely when requesting `e.polynomial()`) but also a type error.\n\nAnd my preference is to do try a conversion, before raising an error on a failing coercion. If that sounds reasonable to you then I'll submit an update of my patch.",
     "created_at": "2011-05-19T08:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -2996,7 +2986,6 @@ Traceback (most recent call last):
 ...
 TypeError: polynomial() takes exactly one argument (0 given)
 ```
-
 
 I suggest to not only catch an attribute error (namely when requesting `e.polynomial()`) but also a type error.
 
@@ -3045,7 +3034,7 @@ Enforce uniqueness of parents for polynomial rings; further perfomance improveme
 archive/issue_comments_098944.json:
 ```json
 {
-    "body": "Attachment [trac9944_faster_and_cleaner_coercion.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.patch) by @simon-king-jena created at 2011-05-19 10:48:07\n\nWith the new patch version, we have\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n1234*x + 3\nsage: R([3,'12e34'])\nTraceback (most recent call last):\n...\nTypeError: unable to convert '12e34' into the base ring\nsage: R([3,x])\nTraceback (most recent call last):\n...\nTypeError: unable to convert x into the base ring\n```\n\nSo, a conversion is attempted, and the error message is mentioning conversion and not coercion.\n\nThe tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.",
+    "body": "Attachment [trac9944_faster_and_cleaner_coercion.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.patch) by @simon-king-jena created at 2011-05-19 10:48:07\n\nWith the new patch version, we have\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n1234*x + 3\nsage: R([3,'12e34'])\nTraceback (most recent call last):\n...\nTypeError: unable to convert '12e34' into the base ring\nsage: R([3,x])\nTraceback (most recent call last):\n...\nTypeError: unable to convert x into the base ring\n```\nSo, a conversion is attempted, and the error message is mentioning conversion and not coercion.\n\nThe tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.",
     "created_at": "2011-05-19T10:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3072,7 +3061,6 @@ Traceback (most recent call last):
 ...
 TypeError: unable to convert x into the base ring
 ```
-
 So, a conversion is attempted, and the error message is mentioning conversion and not coercion.
 
 The tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.
@@ -3182,7 +3170,7 @@ Updating the apply statements.
 archive/issue_comments_098950.json:
 ```json
 {
-    "body": "Hi Martin,\n\ncould it be that you had worked with an old version of [attachment:trac9944_polynomial_speedup.patch]?\n\nThere was a misspelling that I had introduced into the documentation of polynomial base injection maps, in the original version of that patch: It was\n\n```\nWe use `_rmul_` and not `_lmul_` since...\n```\n\nwhere it should have been\n\n```\nWe use ``_rmul_`` and not ``_lmul_`` since...\n```\n\n\nI had corrected that typo and updated the patch. But in your version [attachment:trac-9944-polynomial_speedup.patch], you still have the single back tick.\n\nAnyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_",
+    "body": "Hi Martin,\n\ncould it be that you had worked with an old version of [attachment:trac9944_polynomial_speedup.patch]?\n\nThere was a misspelling that I had introduced into the documentation of polynomial base injection maps, in the original version of that patch: It was\n\n```\nWe use `_rmul_` and not `_lmul_` since...\n```\nwhere it should have been\n\n```\nWe use ``_rmul_`` and not ``_lmul_`` since...\n```\n\nI had corrected that typo and updated the patch. But in your version [attachment:trac-9944-polynomial_speedup.patch], you still have the single back tick.\n\nAnyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_",
     "created_at": "2011-05-19T13:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3200,13 +3188,11 @@ There was a misspelling that I had introduced into the documentation of polynomi
 ```
 We use `_rmul_` and not `_lmul_` since...
 ```
-
 where it should have been
 
 ```
 We use ``_rmul_`` and not ``_lmul_`` since...
 ```
-
 
 I had corrected that typo and updated the patch. But in your version [attachment:trac-9944-polynomial_speedup.patch], you still have the single back tick.
 
@@ -3219,7 +3205,7 @@ Anyway. If you apply my version or your version of the two patches, the result w
 archive/issue_comments_098951.json:
 ```json
 {
-    "body": "Replying to [comment:89 SimonKing]:\n> Anyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_\n\nOr rather: The result will be in both cases that that text line will be completely removed.",
+    "body": "Replying to [comment:89 SimonKing]:\n> Anyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_\n\n\nOr rather: The result will be in both cases that that text line will be completely removed.",
     "created_at": "2011-05-19T13:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3230,6 +3216,7 @@ archive/issue_comments_098951.json:
 
 Replying to [comment:89 SimonKing]:
 > Anyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_
+
 
 Or rather: The result will be in both cases that that text line will be completely removed.
 
@@ -3312,7 +3299,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_098956.json:
 ```json
 {
-    "body": "I hope it is OK that I modified one test in sage.rings.polynomial.polynomial_ring, by the new patch [attachment:trac9944_addendum.patch].\n\nThat test used to be\n\n```\nsage: QQ['y'] < QQ['x']\nFalse\nsage: QQ['y'] < QQ['z']\nTrue\n```\n\n\nBut that is unsafe, because this ticket removes the custom `__cmp__` method of polynomial rings. So, the comparison relies on virtually random data such as `id(QQ['x'])`, if I am not mistaken.\n\nTherefore, it seems safer to me to replace it by\n\n```\nsage: QQ['y'] != QQ['x']\nTrue\nsage: QQ['y'] != QQ['z']\nTrue\n```\n",
+    "body": "I hope it is OK that I modified one test in sage.rings.polynomial.polynomial_ring, by the new patch [attachment:trac9944_addendum.patch].\n\nThat test used to be\n\n```\nsage: QQ['y'] < QQ['x']\nFalse\nsage: QQ['y'] < QQ['z']\nTrue\n```\n\nBut that is unsafe, because this ticket removes the custom `__cmp__` method of polynomial rings. So, the comparison relies on virtually random data such as `id(QQ['x'])`, if I am not mistaken.\n\nTherefore, it seems safer to me to replace it by\n\n```\nsage: QQ['y'] != QQ['x']\nTrue\nsage: QQ['y'] != QQ['z']\nTrue\n```",
     "created_at": "2011-05-23T18:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3332,7 +3319,6 @@ sage: QQ['y'] < QQ['z']
 True
 ```
 
-
 But that is unsafe, because this ticket removes the custom `__cmp__` method of polynomial rings. So, the comparison relies on virtually random data such as `id(QQ['x'])`, if I am not mistaken.
 
 Therefore, it seems safer to me to replace it by
@@ -3343,7 +3329,6 @@ True
 sage: QQ['y'] != QQ['z']
 True
 ```
-
 
 
 
@@ -3407,7 +3392,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098960.json:
 ```json
 {
-    "body": "Replying to [comment:96 mraum]:\n> I'm not sure how happy the release manager is with changing tickets after positive review (except it is him who is doing it).\n\nI reckon that it does not matter to the release manager, unless one re-opens a ticket that is already closed (but that has not been the case here).\n\n> But I completely agree that this change makes sense. As expected, all tests pass, so I can change this back to positive review.\n\nThank you!",
+    "body": "Replying to [comment:96 mraum]:\n> I'm not sure how happy the release manager is with changing tickets after positive review (except it is him who is doing it).\n\n\nI reckon that it does not matter to the release manager, unless one re-opens a ticket that is already closed (but that has not been the case here).\n\n> But I completely agree that this change makes sense. As expected, all tests pass, so I can change this back to positive review.\n\n\nThank you!",
     "created_at": "2011-05-23T21:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
@@ -3419,9 +3404,11 @@ archive/issue_comments_098960.json:
 Replying to [comment:96 mraum]:
 > I'm not sure how happy the release manager is with changing tickets after positive review (except it is him who is doing it).
 
+
 I reckon that it does not matter to the release manager, unless one re-opens a ticket that is already closed (but that has not been the case here).
 
 > But I completely agree that this change makes sense. As expected, all tests pass, so I can change this back to positive review.
+
 
 Thank you!
 

@@ -80,7 +80,7 @@ That is the most obvious explanation to the problem, so, perhaps we should go ba
 archive/issue_comments_089101.json:
 ```json
 {
-    "body": "Replying to [comment:2 olazo]:\n> It happened with sage-4.4.4, my latest succesful compilation was sage-4.4.1. I am under the impression that ATLAS was changed towards a more recent version (a beta) in this latest version of sage. \n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/f4a78427d007d3d8?lnk=raot\n> \n> That is the most obvious explanation to the problem, so, perhaps we should go back to the version of ATLAS used before...\n\nThere was a discussion of updating ATLAS, but it has not been changed to any beta version - I looked at doing it, but it is a non-trivial task. \n\nThe changes to the ATLAS package are listed in the file SPKG.txt in the ATLAS package.\n\nTry something like:\n\n\n```\ndrkirkby@hawk:~/clean$ cd sage-4.5.alpha0/spkg/standard\ndrkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ tar xfj atlas-3.8.3.p12.spkg\ndrkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ cat atlas-3.8.3.p12/SPKG.txt\n```\n\n\nLooking further down you will see the ChangeLog section. \n\n\n```\n## ChangeLog\n\n### atlas-3.8.3.p12 (Jaap Spies, Februari 22th 2010)\n * #8039 For use with the Sun ld with SAGE64=\"yes\" change ldflag -melf_86_64 to -64\n * See also the remarks from David Kirky on atlas-3.8.3.p5\n\n=== atlas-3.8.3.p11 (Peter Jeremy, 2010-01-25)===\n * #7827: Fix atlas-3.8.3.p9 compilation on FreeBSD\n * Minh Van Nguyen: patch spkg-install-script to copy\n   patches/SpewMakeInc.c over to src/CONFIG/src/SpewMakeInc.c\n\n### atlas-3.8.3.p10 (David Kirkby, January 5th 2010)\n * replace bitwidth.py which uses 'ctypes' at that is broken \n   on many platforms. \n```\n\n\nThe most recent change, #8039 was in February this year and was merged in sage-4.3.4.alpha0. So the ATLAS .spkg has not been updated since your last successful build on 4.4.1. \n\nSo I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. \n\nDave",
+    "body": "Replying to [comment:2 olazo]:\n> It happened with sage-4.4.4, my latest succesful compilation was sage-4.4.1. I am under the impression that ATLAS was changed towards a more recent version (a beta) in this latest version of sage. \n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/f4a78427d007d3d8?lnk=raot\n> \n> That is the most obvious explanation to the problem, so, perhaps we should go back to the version of ATLAS used before...\n\n\nThere was a discussion of updating ATLAS, but it has not been changed to any beta version - I looked at doing it, but it is a non-trivial task. \n\nThe changes to the ATLAS package are listed in the file SPKG.txt in the ATLAS package.\n\nTry something like:\n\n```\ndrkirkby@hawk:~/clean$ cd sage-4.5.alpha0/spkg/standard\ndrkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ tar xfj atlas-3.8.3.p12.spkg\ndrkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ cat atlas-3.8.3.p12/SPKG.txt\n```\n\nLooking further down you will see the ChangeLog section. \n\n```\n## ChangeLog\n\n### atlas-3.8.3.p12 (Jaap Spies, Februari 22th 2010)\n * #8039 For use with the Sun ld with SAGE64=\"yes\" change ldflag -melf_86_64 to -64\n * See also the remarks from David Kirky on atlas-3.8.3.p5\n\n=== atlas-3.8.3.p11 (Peter Jeremy, 2010-01-25)===\n * #7827: Fix atlas-3.8.3.p9 compilation on FreeBSD\n * Minh Van Nguyen: patch spkg-install-script to copy\n   patches/SpewMakeInc.c over to src/CONFIG/src/SpewMakeInc.c\n\n### atlas-3.8.3.p10 (David Kirkby, January 5th 2010)\n * replace bitwidth.py which uses 'ctypes' at that is broken \n   on many platforms. \n```\n\nThe most recent change, #8039 was in February this year and was merged in sage-4.3.4.alpha0. So the ATLAS .spkg has not been updated since your last successful build on 4.4.1. \n\nSo I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. \n\nDave",
     "created_at": "2010-06-30T14:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -96,12 +96,12 @@ Replying to [comment:2 olazo]:
 > 
 > That is the most obvious explanation to the problem, so, perhaps we should go back to the version of ATLAS used before...
 
+
 There was a discussion of updating ATLAS, but it has not been changed to any beta version - I looked at doing it, but it is a non-trivial task. 
 
 The changes to the ATLAS package are listed in the file SPKG.txt in the ATLAS package.
 
 Try something like:
-
 
 ```
 drkirkby@hawk:~/clean$ cd sage-4.5.alpha0/spkg/standard
@@ -109,9 +109,7 @@ drkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ tar xfj atlas-3.8.3.p12.spk
 drkirkby@hawk:~/clean/sage-4.5.alpha0/spkg/standard$ cat atlas-3.8.3.p12/SPKG.txt
 ```
 
-
 Looking further down you will see the ChangeLog section. 
-
 
 ```
 ## ChangeLog
@@ -130,7 +128,6 @@ Looking further down you will see the ChangeLog section.
    on many platforms. 
 ```
 
-
 The most recent change, #8039 was in February this year and was merged in sage-4.3.4.alpha0. So the ATLAS .spkg has not been updated since your last successful build on 4.4.1. 
 
 So I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. 
@@ -144,7 +141,7 @@ Dave
 archive/issue_comments_089102.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n> The most recent change, #8039 was in February this year and was merged in sage-4.3.4.alpha0. So the ATLAS .spkg has not been updated since your last successful build on 4.4.1. \n> \n> So I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. \n> \n\nI tried the compilation again, and found the following behaviour:\n1.- Several packages are compiled during aproximately 1 hour and a half.\n2.- ATLAS starts to compile\n3.- About 2 hours later, ATLAS fails to compile with the following message:\n\nError report error_<ARCH>.tgz has been created in your top-level ATLAS\ndirectory.  Be sure to include this file in any help request.\ncat: ../../CONFIG/error.txt: No existe el fichero o el directorio\ncat: ../../CONFIG/error.txt: No existe el fichero o el directorio\n\n\nIN STAGE 1 INSTALL:  SYSTEM PROBE/AUX COMPILE\n\n\n   Level 1 cache size calculated as 32KB\n   dFPU: Combined muladd instruction with 5 cycle pipeline.\n         Apparent number of registers : 6\n         Register-register performance=810.76MFLOPS\n   sFPU: Separate multiply and add instructions with 3 cycle pipeline.\n         Apparent number of registers : 7\n         Register-register performance=811.10MFLOPS\n\n\nIN STAGE 2 INSTALL:  TYPE-DEPENDENT TUNING\n\n\nSTAGE 2-1: TUNING PREC='d' (precision 1 of 4)\n\n\n   STAGE 2-1-1 : BUILDING BLOCK MATMUL TUNE\nmake -f Makefile INSTALL_LOG/dMMRES pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG\n      dL1MATMUL: lat=1, nb=60, pf=512, mu=6, nu=1, ku=60, if=6, nf=1;\n                 Performance: 704.53 (37.74 percent of of detected clock rate)\nmake -f Makefile INSTALL_LOG/dNCNB pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOGmake -f Makefile INSTALL_LOG/dbestNN_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNN : muladd=0, lat=1, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 647.68 (91.93 of copy matmul, 34.69 of clock)\nmake -f Makefile INSTALL_LOG/dbestNT_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNT : muladd=0, lat=4, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 617.01 (87.58 of copy matmul, 33.05 of clock)\nmake -f Makefile INSTALL_LOG/dbestTN_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTN : muladd=0, lat=3, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 655.13 (92.99 of copy matmul, 35.09 of clock)\nmake -f Makefile INSTALL_LOG/dbestTT_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTT : muladd=0, lat=8, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 624.61 (88.66 of copy matmul, 33.46 of clock)\nmake -f Makefile MMinstall pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG\n\n\n   STAGE 2-1-2: CacheEdge DETECTION\nmake -f Makefile INSTALL_LOG/atlas_cacheedge.h pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMCACHEEDGE.LOG\nmake[3]: *** [build] Error 255\nmake[3]: se sale del directorio `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nmake[2]: *** [build] Error 2\nmake[2]: se sale del directorio `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nFailed to build ATLAS.\n\n4.- The terminal prompt does not appear (the process seems to have paused, but not ended). CPU usage descends from nearly full usage to almost none.\n\n5 .- After approximately 20 minutes, return to No 2\n\nI asked a friend who has also installed Fedora 13 in his 32 bit computer, to compile sage as well, and got the same behaviour.\n\nThere is currently no Fedora 13 compilation of sage (the fedora 12 version hasn't worked on my computer), so I must guess this must be a fedora 13 - related problem.\n\nI hope this could get fixed soon, if it doesn't I'll have to change my OS.",
+    "body": "Replying to [comment:3 drkirkby]:\n> The most recent change, #8039 was in February this year and was merged in sage-4.3.4.alpha0. So the ATLAS .spkg has not been updated since your last successful build on 4.4.1. \n> \n> So I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. \n> \n\n\nI tried the compilation again, and found the following behaviour:\n1.- Several packages are compiled during aproximately 1 hour and a half.\n2.- ATLAS starts to compile\n3.- About 2 hours later, ATLAS fails to compile with the following message:\n\nError report error_<ARCH>.tgz has been created in your top-level ATLAS\ndirectory.  Be sure to include this file in any help request.\ncat: ../../CONFIG/error.txt: No existe el fichero o el directorio\ncat: ../../CONFIG/error.txt: No existe el fichero o el directorio\n\n\nIN STAGE 1 INSTALL:  SYSTEM PROBE/AUX COMPILE\n\n\n   Level 1 cache size calculated as 32KB\n   dFPU: Combined muladd instruction with 5 cycle pipeline.\n         Apparent number of registers : 6\n         Register-register performance=810.76MFLOPS\n   sFPU: Separate multiply and add instructions with 3 cycle pipeline.\n         Apparent number of registers : 7\n         Register-register performance=811.10MFLOPS\n\n\nIN STAGE 2 INSTALL:  TYPE-DEPENDENT TUNING\n\n\nSTAGE 2-1: TUNING PREC='d' (precision 1 of 4)\n\n\n   STAGE 2-1-1 : BUILDING BLOCK MATMUL TUNE\nmake -f Makefile INSTALL_LOG/dMMRES pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG\n      dL1MATMUL: lat=1, nb=60, pf=512, mu=6, nu=1, ku=60, if=6, nf=1;\n                 Performance: 704.53 (37.74 percent of of detected clock rate)\nmake -f Makefile INSTALL_LOG/dNCNB pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOGmake -f Makefile INSTALL_LOG/dbestNN_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNN : muladd=0, lat=1, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 647.68 (91.93 of copy matmul, 34.69 of clock)\nmake -f Makefile INSTALL_LOG/dbestNT_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmNT : muladd=0, lat=4, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 617.01 (87.58 of copy matmul, 33.05 of clock)\nmake -f Makefile INSTALL_LOG/dbestTN_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTN : muladd=0, lat=3, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 655.13 (92.99 of copy matmul, 35.09 of clock)\nmake -f Makefile INSTALL_LOG/dbestTT_56x56x56 pre=d nb=56 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG      NCgemmTT : muladd=0, lat=8, pf=512, nb=56, mu=6, nu=1 ku=56,\n                 ForceFetch=1, ifetch=6 nfetch=1\n                 Performance = 624.61 (88.66 of copy matmul, 33.46 of clock)\nmake -f Makefile MMinstall pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMSEARCH.LOG\n\n\n   STAGE 2-1-2: CacheEdge DETECTION\nmake -f Makefile INSTALL_LOG/atlas_cacheedge.h pre=d 2>&1 | ./xatlas_tee INSTALL_LOG/dMMCACHEEDGE.LOG\nmake[3]: *** [build] Error 255\nmake[3]: se sale del directorio `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nmake[2]: *** [build] Error 2\nmake[2]: se sale del directorio `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nFailed to build ATLAS.\n\n4.- The terminal prompt does not appear (the process seems to have paused, but not ended). CPU usage descends from nearly full usage to almost none.\n\n5 .- After approximately 20 minutes, return to No 2\n\nI asked a friend who has also installed Fedora 13 in his 32 bit computer, to compile sage as well, and got the same behaviour.\n\nThere is currently no Fedora 13 compilation of sage (the fedora 12 version hasn't worked on my computer), so I must guess this must be a fedora 13 - related problem.\n\nI hope this could get fixed soon, if it doesn't I'll have to change my OS.",
     "created_at": "2010-07-01T20:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -158,6 +155,7 @@ Replying to [comment:3 drkirkby]:
 > 
 > So I would look outside of there for the problem. As to what it might be, the obvious one is the load average on the system is too high, in which case ATLAS will be rebuilt a maximum of 5 times. If that's not the case, then I don't know what it might be. You mentioned readline elsewhere as a possible candidate. That has been updated. 
 > 
+
 
 I tried the compilation again, and found the following behaviour:
 1.- Several packages are compiled during aproximately 1 hour and a half.
@@ -250,7 +248,7 @@ Don't forget, there have been others affected on archlinux, so it isn't just fed
 archive/issue_comments_089104.json:
 ```json
 {
-    "body": "Replying to [comment:5 gostrc]:\n> Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.\n\nI don't have a clue what the problem might be, but I do know that the version of ATLAS in Sage has remained unchanged. Of course, each release of Sage many things do get changed, and its hard to know why something built ok but now does not. You could try building the version which you knew worked before, to confirm it is not something changed on your computer. \n\nI would ask for more help on sage-support and hope someone else can help you. \n\nDave",
+    "body": "Replying to [comment:5 gostrc]:\n> Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.\n\n\nI don't have a clue what the problem might be, but I do know that the version of ATLAS in Sage has remained unchanged. Of course, each release of Sage many things do get changed, and its hard to know why something built ok but now does not. You could try building the version which you knew worked before, to confirm it is not something changed on your computer. \n\nI would ask for more help on sage-support and hope someone else can help you. \n\nDave",
     "created_at": "2010-07-02T13:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -261,6 +259,7 @@ archive/issue_comments_089104.json:
 
 Replying to [comment:5 gostrc]:
 > Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.
+
 
 I don't have a clue what the problem might be, but I do know that the version of ATLAS in Sage has remained unchanged. Of course, each release of Sage many things do get changed, and its hard to know why something built ok but now does not. You could try building the version which you knew worked before, to confirm it is not something changed on your computer. 
 
@@ -451,7 +450,7 @@ However, if atlas would really die in stage 2-1-2 then it would never build zMMS
 archive/issue_comments_089114.json:
 ```json
 {
-    "body": "Replying to [comment:13 vbraun]:\n> Those errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n> \n> However, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log? \n\nWhich log do you mean? Is it sage-4.4.4/install.log ? That log will go into an infinite loop. So it is not clear at which point it should be halted. I ran the process only until the first looping. At that point install.log is over 20 Megabytes. Or is it some other \"complete log\"?\n\nHow do I turn on LANG=en_US?",
+    "body": "Replying to [comment:13 vbraun]:\n> Those errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n> \n> However, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log? \n\n\nWhich log do you mean? Is it sage-4.4.4/install.log ? That log will go into an infinite loop. So it is not clear at which point it should be halted. I ran the process only until the first looping. At that point install.log is over 20 Megabytes. Or is it some other \"complete log\"?\n\nHow do I turn on LANG=en_US?",
     "created_at": "2010-07-03T16:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -465,6 +464,7 @@ Replying to [comment:13 vbraun]:
 > 
 > However, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log? 
 
+
 Which log do you mean? Is it sage-4.4.4/install.log ? That log will go into an infinite loop. So it is not clear at which point it should be halted. I ran the process only until the first looping. At that point install.log is over 20 Megabytes. Or is it some other "complete log"?
 
 How do I turn on LANG=en_US?
@@ -476,7 +476,7 @@ How do I turn on LANG=en_US?
 archive/issue_comments_089115.json:
 ```json
 {
-    "body": "Yes, I mean the complete install.log. Just wait until it loops once. Upload it somewhere with enough disk space ;-)\n\nThe fastest way is to start a new shell with a different locale like this:\n\n```\n[vbraun@volker-desktop ~]$ date\n2010\u5e74  7\u6708  3\u65e5 \u571f\u66dc\u65e5 18:00:03 IST\n[vbraun@volker-desktop ~]$ LANG=en_US bash\n[vbraun@volker-desktop ~]$ date\nSat Jul  3 18:00:14 IST 2010\n```\n",
+    "body": "Yes, I mean the complete install.log. Just wait until it loops once. Upload it somewhere with enough disk space ;-)\n\nThe fastest way is to start a new shell with a different locale like this:\n\n```\n[vbraun@volker-desktop ~]$ date\n2010\u5e74  7\u6708  3\u65e5 \u571f\u66dc\u65e5 18:00:03 IST\n[vbraun@volker-desktop ~]$ LANG=en_US bash\n[vbraun@volker-desktop ~]$ date\nSat Jul  3 18:00:14 IST 2010\n```",
     "created_at": "2010-07-03T17:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -496,7 +496,6 @@ The fastest way is to start a new shell with a different locale like this:
 [vbraun@volker-desktop ~]$ date
 Sat Jul  3 18:00:14 IST 2010
 ```
-
 
 
 
@@ -561,7 +560,7 @@ Rather than attaching the log here, especially if it's large, it would be much b
 archive/issue_comments_089119.json:
 ```json
 {
-    "body": "Replying to [comment:5 gostrc]:\n> Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.\n\nNote this comment by Alex Ghitza on sage-devel. \n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/fba88176344c2814\n\nAlex is able to both build Sage 4.4.4 from scratch, and perform an upgrade on Arch Linux. So if some people are having problems with ATLAS on Arch Linux, it is certainly not all users of that distribution. \n\n\n\nDave",
+    "body": "Replying to [comment:5 gostrc]:\n> Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.\n\n\nNote this comment by Alex Ghitza on sage-devel. \n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/fba88176344c2814\n\nAlex is able to both build Sage 4.4.4 from scratch, and perform an upgrade on Arch Linux. So if some people are having problems with ATLAS on Arch Linux, it is certainly not all users of that distribution. \n\n\n\nDave",
     "created_at": "2010-07-03T22:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -572,6 +571,7 @@ archive/issue_comments_089119.json:
 
 Replying to [comment:5 gostrc]:
 > Don't forget, there have been others affected on archlinux, so it isn't just fedora that's affected.
+
 
 Note this comment by Alex Ghitza on sage-devel. 
 
@@ -628,7 +628,7 @@ Resolution: worksforme
 archive/issue_comments_089122.json:
 ```json
 {
-    "body": "Replying to [comment:20 jsp]:\n> ATLAS builds here ok on Fedora 13, 32 bit.\n> \n> Jaap\n> \n\nThank you Jaap. \n\nI've set this to 'worksforme', though a more accurate description would be 'works for some'. I don't believe this can remain a blocker for the next release, when there are positive confirmations it can build on both Fedora 13 and Arch Linux - the two platforms olazo mentioned were causing problems. \n\nI'm not dismissing the fact there may be a problem, and this may break on some installations, but it can't remain a blocker. \n\nI've cc'ed the 4.5 release manager (Robert Miller), in case he feels otherwise. \n\nDave",
+    "body": "Replying to [comment:20 jsp]:\n> ATLAS builds here ok on Fedora 13, 32 bit.\n> \n> Jaap\n> \n\n\nThank you Jaap. \n\nI've set this to 'worksforme', though a more accurate description would be 'works for some'. I don't believe this can remain a blocker for the next release, when there are positive confirmations it can build on both Fedora 13 and Arch Linux - the two platforms olazo mentioned were causing problems. \n\nI'm not dismissing the fact there may be a problem, and this may break on some installations, but it can't remain a blocker. \n\nI've cc'ed the 4.5 release manager (Robert Miller), in case he feels otherwise. \n\nDave",
     "created_at": "2010-07-04T14:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -642,6 +642,7 @@ Replying to [comment:20 jsp]:
 > 
 > Jaap
 > 
+
 
 Thank you Jaap. 
 
@@ -696,7 +697,7 @@ Oscar can still attach his log, and I'm sure others will still try to resolve it
 archive/issue_comments_089124.json:
 ```json
 {
-    "body": "Replying to [comment:21 drkirkby]:\n> Replying to [comment:20 jsp]:\n> > ATLAS builds here ok on Fedora 13, 32 bit.\n> > \n> > Jaap\n> > \n> \n> Thank you Jaap. \n> \n> I've set this to 'worksforme', though a more accurate description would be 'works for some'. I don't believe this can remain a blocker for the next release, when there are positive confirmations it can build on both Fedora 13 and Arch Linux - the two platforms olazo mentioned were causing problems. \n> \n> I'm not dismissing the fact there may be a problem, and this may break on some installations, but it can't remain a blocker. \n> \n> I've cc'ed the 4.5 release manager (Robert Miller), in case he feels otherwise. \n> \n\nSadly, I agree. I'll put the log here, it's not that big once compressed (1.3 Megabytes).",
+    "body": "Replying to [comment:21 drkirkby]:\n> Replying to [comment:20 jsp]:\n> > ATLAS builds here ok on Fedora 13, 32 bit.\n> > \n> > Jaap\n> > \n\n> \n> Thank you Jaap. \n> \n> I've set this to 'worksforme', though a more accurate description would be 'works for some'. I don't believe this can remain a blocker for the next release, when there are positive confirmations it can build on both Fedora 13 and Arch Linux - the two platforms olazo mentioned were causing problems. \n> \n> I'm not dismissing the fact there may be a problem, and this may break on some installations, but it can't remain a blocker. \n> \n> I've cc'ed the 4.5 release manager (Robert Miller), in case he feels otherwise. \n> \n\n\nSadly, I agree. I'll put the log here, it's not that big once compressed (1.3 Megabytes).",
     "created_at": "2010-07-04T14:44:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -711,6 +712,7 @@ Replying to [comment:21 drkirkby]:
 > > 
 > > Jaap
 > > 
+
 > 
 > Thank you Jaap. 
 > 
@@ -720,6 +722,7 @@ Replying to [comment:21 drkirkby]:
 > 
 > I've cc'ed the 4.5 release manager (Robert Miller), in case he feels otherwise. 
 > 
+
 
 Sadly, I agree. I'll put the log here, it's not that big once compressed (1.3 Megabytes).
 
@@ -748,7 +751,7 @@ Attachment [install.log.tar.gz](tarball://root/attachments/some-uuid/ticket9385/
 archive/issue_comments_089126.json:
 ```json
 {
-    "body": "Replying to [comment:20 jsp]:\n> ATLAS builds here ok on Fedora 13, 32 bit.\n> \n> Jaap\n> \n\nCould you please post your binary to sagemath.org, so it's available from the mirrors?",
+    "body": "Replying to [comment:20 jsp]:\n> ATLAS builds here ok on Fedora 13, 32 bit.\n> \n> Jaap\n> \n\n\nCould you please post your binary to sagemath.org, so it's available from the mirrors?",
     "created_at": "2010-07-04T14:48:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -762,6 +765,7 @@ Replying to [comment:20 jsp]:
 > 
 > Jaap
 > 
+
 
 Could you please post your binary to sagemath.org, so it's available from the mirrors?
 
@@ -792,7 +796,7 @@ Dave
 archive/issue_comments_089128.json:
 ```json
 {
-    "body": "This **might** be a clue:\n\n\n```\nIt appears you have cpu throttling enabled, which makes timings\nunreliable and an ATLAS install nonsensical.  Aborting.\nSee ATLAS/INSTALL.txt for further information\nIgnoring CPU throttling by user override!\n```\n\n\nCPU throttling is whereby the CPU speed reduces when the system load is low. It could confuse ATLAS when it goes into its timing routines. \n\nI have a program called 'powertop' which shows the states of the CPUs. Since my machine is busy, it is currently running at 3499 MHz, but it can go down as low as 1600 MHz and can climb a bit more, depending on the temperature, how many cores are active etc. \n\nIt may be worth trying to disable CPU throttling on your system. Google should indicate how you might be able to do that. \n\n\n```\n                                                                                 OpenSolaris PowerTOP version 1.2\n\nC-states (idle power)\tAvg\tResidency                                                                P-states (frequencies)\nC0 (cpu\trunning)\t\t(18.6%)                                                                  1600 Mhz\t 0.0%\nC1\t\t\t2.2ms   (10.5%)                                                                  1733 Mhz\t 0.0%\nC2\t\t\t1.8ms\t(10.4%)                                                                  1867 Mhz\t 0.0%\nC3\t\t\t2.1ms   (60.5%)                                                                  2000 Mhz\t 0.0%\n                                                                                                         2133 Mhz\t 0.0%\n                                                                                                         2267 Mhz\t 0.0%\n                                                                                                         2400 Mhz\t 0.0%\n                                                                                                         2533 Mhz\t 0.0%\n                                                                                                         2667 Mhz\t 0.0%\n                                                                                                         2800 Mhz\t 0.0%\n                                                                                                         2933 Mhz\t 0.0%\n                                                                                                         3067 Mhz\t 0.0%\n                                                                                                         3200 Mhz\t 0.0%\n                                                                                                         3333 Mhz\t 0.0%\n                                                                                                         3499 Mhz(turbo) 100.0%\n```\n",
+    "body": "This **might** be a clue:\n\n```\nIt appears you have cpu throttling enabled, which makes timings\nunreliable and an ATLAS install nonsensical.  Aborting.\nSee ATLAS/INSTALL.txt for further information\nIgnoring CPU throttling by user override!\n```\n\nCPU throttling is whereby the CPU speed reduces when the system load is low. It could confuse ATLAS when it goes into its timing routines. \n\nI have a program called 'powertop' which shows the states of the CPUs. Since my machine is busy, it is currently running at 3499 MHz, but it can go down as low as 1600 MHz and can climb a bit more, depending on the temperature, how many cores are active etc. \n\nIt may be worth trying to disable CPU throttling on your system. Google should indicate how you might be able to do that. \n\n```\n                                                                                 OpenSolaris PowerTOP version 1.2\n\nC-states (idle power)\tAvg\tResidency                                                                P-states (frequencies)\nC0 (cpu\trunning)\t\t(18.6%)                                                                  1600 Mhz\t 0.0%\nC1\t\t\t2.2ms   (10.5%)                                                                  1733 Mhz\t 0.0%\nC2\t\t\t1.8ms\t(10.4%)                                                                  1867 Mhz\t 0.0%\nC3\t\t\t2.1ms   (60.5%)                                                                  2000 Mhz\t 0.0%\n                                                                                                         2133 Mhz\t 0.0%\n                                                                                                         2267 Mhz\t 0.0%\n                                                                                                         2400 Mhz\t 0.0%\n                                                                                                         2533 Mhz\t 0.0%\n                                                                                                         2667 Mhz\t 0.0%\n                                                                                                         2800 Mhz\t 0.0%\n                                                                                                         2933 Mhz\t 0.0%\n                                                                                                         3067 Mhz\t 0.0%\n                                                                                                         3200 Mhz\t 0.0%\n                                                                                                         3333 Mhz\t 0.0%\n                                                                                                         3499 Mhz(turbo) 100.0%\n```",
     "created_at": "2010-07-04T15:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -803,7 +807,6 @@ archive/issue_comments_089128.json:
 
 This **might** be a clue:
 
-
 ```
 It appears you have cpu throttling enabled, which makes timings
 unreliable and an ATLAS install nonsensical.  Aborting.
@@ -811,13 +814,11 @@ See ATLAS/INSTALL.txt for further information
 Ignoring CPU throttling by user override!
 ```
 
-
 CPU throttling is whereby the CPU speed reduces when the system load is low. It could confuse ATLAS when it goes into its timing routines. 
 
 I have a program called 'powertop' which shows the states of the CPUs. Since my machine is busy, it is currently running at 3499 MHz, but it can go down as low as 1600 MHz and can climb a bit more, depending on the temperature, how many cores are active etc. 
 
 It may be worth trying to disable CPU throttling on your system. Google should indicate how you might be able to do that. 
-
 
 ```
                                                                                  OpenSolaris PowerTOP version 1.2
@@ -842,13 +843,12 @@ C3			2.1ms   (60.5%)                                                            
 
 
 
-
 ---
 
 archive/issue_comments_089129.json:
 ```json
 {
-    "body": "I think the real bug is\n\n```\ngcc -DL2SIZE=4194304 -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/include -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//include -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_CoreDuo -DATL_CPUMHZ=800 -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_GAS_x8632  -fomit-frame-pointer -O3 -mfpmath=387 -fPIC -m32 -o xcsfindCE csfindCE.o \\\n                   /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/src/blas/gemm/ATL_csFindCE_mm.o /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/lib/libatlas.a -lm\n/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/bin/ATLrun.sh /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm xcsfindCE -f res/atlas_csNKB.h\nassertion t1 > 0.0 failed, line 257 of file /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//tune/blas/gemm/findCE.c\nTA TB      M      N      K    alpha       beta     CacheEdge      TIME   MFLOPS\n## ==\n\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0         0     7.953  1738.26\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0        64    -2.000     0.00\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       128    -2.000     0.00\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       256     7.945  1740.01\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       512     8.315  1662.59\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0      1024     8.002  1727.61\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0      2048     8.334  1658.80\nmake[6]: *** [csRunFindCE] Error 255\nmake[6]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm'\nmake[5]: *** [res/atlas_csNKB.h] Error 2\nmake[5]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm'\nmake[4]: *** [/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm/res/atlas_csNKB.h] Error 2\nmake[4]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/bin'\nERROR 664 DURING CACHE EDGE DETECTION!!.\n```\n\nThis same assertion failure appears once on the atlas bugtracker at\nhttp://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.",
+    "body": "I think the real bug is\n\n```\ngcc -DL2SIZE=4194304 -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/include -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//include -I/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_CoreDuo -DATL_CPUMHZ=800 -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_GAS_x8632  -fomit-frame-pointer -O3 -mfpmath=387 -fPIC -m32 -o xcsfindCE csfindCE.o \\\n                   /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/src/blas/gemm/ATL_csFindCE_mm.o /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/lib/libatlas.a -lm\n/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/bin/ATLrun.sh /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm xcsfindCE -f res/atlas_csNKB.h\nassertion t1 > 0.0 failed, line 257 of file /home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/../src//tune/blas/gemm/findCE.c\nTA TB      M      N      K    alpha       beta     CacheEdge      TIME   MFLOPS\n## ==\n\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0         0     7.953  1738.26\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0        64    -2.000     0.00\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       128    -2.000     0.00\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       256     7.945  1740.01\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0       512     8.315  1662.59\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0      1024     8.002  1727.61\n T  N   1200   1200   1200   1.0   0.0   1.0   0.0      2048     8.334  1658.80\nmake[6]: *** [csRunFindCE] Error 255\nmake[6]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm'\nmake[5]: *** [res/atlas_csNKB.h] Error 2\nmake[5]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm'\nmake[4]: *** [/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune/blas/gemm/res/atlas_csNKB.h] Error 2\nmake[4]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/bin'\nERROR 664 DURING CACHE EDGE DETECTION!!.\n```\nThis same assertion failure appears once on the atlas bugtracker at\nhttp://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.",
     "created_at": "2010-07-04T15:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -882,7 +882,6 @@ make[4]: *** [/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/tune
 make[4]: Leaving directory `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/bin'
 ERROR 664 DURING CACHE EDGE DETECTION!!.
 ```
-
 This same assertion failure appears once on the atlas bugtracker at
 http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.
 
@@ -893,7 +892,7 @@ http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&a
 archive/issue_comments_089130.json:
 ```json
 {
-    "body": "Replying to [comment:27 vbraun]:\n> This same assertion failure appears once on the atlas bugtracker at\n> http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.\n\nDoes this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.\n\nAlso, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).",
+    "body": "Replying to [comment:27 vbraun]:\n> This same assertion failure appears once on the atlas bugtracker at\n> http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.\n\n\nDoes this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.\n\nAlso, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).",
     "created_at": "2010-07-04T15:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -905,6 +904,7 @@ archive/issue_comments_089130.json:
 Replying to [comment:27 vbraun]:
 > This same assertion failure appears once on the atlas bugtracker at
 > http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.
+
 
 Does this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.
 
@@ -992,7 +992,7 @@ I'll set the priority to the default since it seems to be working for most peopl
 archive/issue_comments_089134.json:
 ```json
 {
-    "body": "Attachment [error_CoreDuo32SSE3.tgz](tarball://root/attachments/some-uuid/ticket9385/error_CoreDuo32SSE3.tgz) by olazo created at 2010-07-04 16:52:40\n\nReplying to [comment:29 vbraun]:\n> Some questions for the OP:\n>   * Is your CPU trottled?\n\nI guess it is, since the install.log says so (see a pervious message fro drkirkby in this ticket)\n\n>   * Were other applications open/running at build time?\n\nYes, should I try again with no ther applications running?\n\n>   * Upload your `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/error_CoreDuo32SSE3.tar`\n\nDone.\n\nAlso, thank you very much for helping me out!",
+    "body": "Attachment [error_CoreDuo32SSE3.tgz](tarball://root/attachments/some-uuid/ticket9385/error_CoreDuo32SSE3.tgz) by olazo created at 2010-07-04 16:52:40\n\nReplying to [comment:29 vbraun]:\n> Some questions for the OP:\n> * Is your CPU trottled?\n\n\nI guess it is, since the install.log says so (see a pervious message fro drkirkby in this ticket)\n\n>   * Were other applications open/running at build time?\n\n\nYes, should I try again with no ther applications running?\n\n>   * Upload your `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/error_CoreDuo32SSE3.tar`\n\n\nDone.\n\nAlso, thank you very much for helping me out!",
     "created_at": "2010-07-04T16:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1005,15 +1005,18 @@ Attachment [error_CoreDuo32SSE3.tgz](tarball://root/attachments/some-uuid/ticket
 
 Replying to [comment:29 vbraun]:
 > Some questions for the OP:
->   * Is your CPU trottled?
+> * Is your CPU trottled?
+
 
 I guess it is, since the install.log says so (see a pervious message fro drkirkby in this ticket)
 
 >   * Were other applications open/running at build time?
 
+
 Yes, should I try again with no ther applications running?
 
 >   * Upload your `/home/oscar/sage-4.4.4/spkg/build/atlas-3.8.3.p12/ATLAS-build/error_CoreDuo32SSE3.tar`
+
 
 Done.
 
@@ -1026,7 +1029,7 @@ Also, thank you very much for helping me out!
 archive/issue_comments_089135.json:
 ```json
 {
-    "body": "Replying to [comment:28 olazo]:\n> Replying to [comment:27 vbraun]:\n> > This same assertion failure appears once on the atlas bugtracker at\n> > http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.\n> \n> Does this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.\n> \n> Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n\nPossibly with information like the amount of RAM and swap space, and what other applications were running, we might be able to make a judgment on that. I've regularly built Sage in 2 GB RAM on Solaris, but I'm just using the machine as a server, with no graphical interface running, so I could get away with less than someone with a Gnome or similar running. I've built older (4 month or so) versions of Sage with 1.5 GB on Solaris too. \n\nI know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n\nYou have not really provided much information about your system. Your initial report had little useful information to help someone debug the problem. You never stated the version of Sage you were using, or the version which built ok. (I realise you have since done this). \n\nIn future, it would help if you provide more information. This is not just for Sage, but anytime you have build problems with any software. \n\n\n> Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n\nIt is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that \"wordsforme\" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. \n\nThings I would suggest include \n* Stating the RAM and swap space you have. Google for how to find these out if you are not sure. \n* Disable CPU throttling. \n* If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. \n* Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. \n\nMaybe others have some more ideas how to solve this. \n\nDave",
+    "body": "Replying to [comment:28 olazo]:\n> Replying to [comment:27 vbraun]:\n> > This same assertion failure appears once on the atlas bugtracker at\n> > http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.\n  \n> \n> Does this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.\n> \n> Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n\n\nPossibly with information like the amount of RAM and swap space, and what other applications were running, we might be able to make a judgment on that. I've regularly built Sage in 2 GB RAM on Solaris, but I'm just using the machine as a server, with no graphical interface running, so I could get away with less than someone with a Gnome or similar running. I've built older (4 month or so) versions of Sage with 1.5 GB on Solaris too. \n\nI know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n\nYou have not really provided much information about your system. Your initial report had little useful information to help someone debug the problem. You never stated the version of Sage you were using, or the version which built ok. (I realise you have since done this). \n\nIn future, it would help if you provide more information. This is not just for Sage, but anytime you have build problems with any software. \n\n\n> Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n\n\nIt is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that \"wordsforme\" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. \n\nThings I would suggest include \n* Stating the RAM and swap space you have. Google for how to find these out if you are not sure. \n* Disable CPU throttling. \n* If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. \n* Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. \n\nMaybe others have some more ideas how to solve this. \n\nDave",
     "created_at": "2010-07-04T17:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1039,10 +1042,12 @@ Replying to [comment:28 olazo]:
 > Replying to [comment:27 vbraun]:
 > > This same assertion failure appears once on the atlas bugtracker at
 > > http://sourceforge.net/tracker/index.php?func=detail&aid=878809&group_id=23725&atid=379483. The problem might be that there is not enough available RAM. Once the cache edge detection fails, the rest of the build is pretty much hopeless.
+  
 > 
 > Does this mean that I'm unable to build because of hardware limitations (not enough RAM)? But I built just fine in ubuntu.
 > 
 > Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).
+
 
 Possibly with information like the amount of RAM and swap space, and what other applications were running, we might be able to make a judgment on that. I've regularly built Sage in 2 GB RAM on Solaris, but I'm just using the machine as a server, with no graphical interface running, so I could get away with less than someone with a Gnome or similar running. I've built older (4 month or so) versions of Sage with 1.5 GB on Solaris too. 
 
@@ -1054,6 +1059,7 @@ In future, it would help if you provide more information. This is not just for S
 
 
 > Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).
+
 
 It is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that "wordsforme" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. 
 
@@ -1074,7 +1080,7 @@ Dave
 archive/issue_comments_089136.json:
 ```json
 {
-    "body": "Replying to [comment:31 drkirkby]:\n> Possibly with information like the amount of RAM and swap space, and what other applications were running, we might be able to make a judgment on that. I've regularly built Sage in 2 GB RAM on Solaris, but I'm just using the machine as a server, with no graphical interface running, so I could get away with less than someone with a Gnome or similar running. I've built older (4 month or so) versions of Sage with 1.5 GB on Solaris too. \n> \n> I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n> \n> You have not really provided much information about your system. Your initial report had little useful information to help someone debug the problem. You never stated the version of Sage you were using, or the version which built ok. (I realise you have since done this). \n> \n> In future, it would help if you provide more information. This is not just for Sage, but anytime you have build problems with any software. \n\nI've got an Intel Core Duo, and 1.8 Gb of RAM. My Swap is 5 Gb. I was probably running both Firefox and Thunderbird, watching stuff in YouTube... Thinking back that does seem quite CPU-expensive\n\n> > Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n> \n> It is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that \"wordsforme\" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. \n> \n> Things I would suggest include \n>  * Stating the RAM and swap space you have. Google for how to find these out if you are not sure. \n>  * Disable CPU throttling. \n>  * If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. \n>  * Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. \n\nI will try all of that and report here\n\n> Maybe others have some more ideas how to solve this. \n> \n> Dave \n\nThank you too for your help!",
+    "body": "Replying to [comment:31 drkirkby]:\n> Possibly with information like the amount of RAM and swap space, and what other applications were running, we might be able to make a judgment on that. I've regularly built Sage in 2 GB RAM on Solaris, but I'm just using the machine as a server, with no graphical interface running, so I could get away with less than someone with a Gnome or similar running. I've built older (4 month or so) versions of Sage with 1.5 GB on Solaris too. \n> \n> I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n> \n> You have not really provided much information about your system. Your initial report had little useful information to help someone debug the problem. You never stated the version of Sage you were using, or the version which built ok. (I realise you have since done this). \n> \n> In future, it would help if you provide more information. This is not just for Sage, but anytime you have build problems with any software. \n\n\nI've got an Intel Core Duo, and 1.8 Gb of RAM. My Swap is 5 Gb. I was probably running both Firefox and Thunderbird, watching stuff in YouTube... Thinking back that does seem quite CPU-expensive\n\n> > Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).\n\n> \n> It is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that \"wordsforme\" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. \n> \n> Things I would suggest include \n> * Stating the RAM and swap space you have. Google for how to find these out if you are not sure. \n> * Disable CPU throttling. \n> * If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. \n> * Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. \n\n\nI will try all of that and report here\n\n> Maybe others have some more ideas how to solve this. \n> \n> Dave \n\n\nThank you too for your help!",
     "created_at": "2010-07-04T18:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1092,23 +1098,27 @@ Replying to [comment:31 drkirkby]:
 > 
 > In future, it would help if you provide more information. This is not just for Sage, but anytime you have build problems with any software. 
 
+
 I've got an Intel Core Duo, and 1.8 Gb of RAM. My Swap is 5 Gb. I was probably running both Firefox and Thunderbird, watching stuff in YouTube... Thinking back that does seem quite CPU-expensive
 
 > > Also, this ticket is clearly not resolved. I'll reverse that (I hope that's not against the rules).
+
 > 
 > It is actually against the rules. You should not reopen or close tickets without admin rights. However, in this case, I may have been wrong to close it. I was expecting that "wordsforme" would leave it open. Either way, from a practical point of view, I don't think it makes a lot of difference - we will still try to resolve the ticket. I suspect it should however be closed, but I'm not 100% sure. I will seek clarification on this issue. 
 > 
 > Things I would suggest include 
->  * Stating the RAM and swap space you have. Google for how to find these out if you are not sure. 
->  * Disable CPU throttling. 
->  * If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. 
->  * Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. 
+> * Stating the RAM and swap space you have. Google for how to find these out if you are not sure. 
+> * Disable CPU throttling. 
+> * If none of those work, download the latest ATLAS beta and try building that. If that fails, then report it to the ATLAS bug tracker. Since this is the latest stable ATLAS, report that to the ATLAS bug tracker too. 
+> * Add the links to the ATLAS bug tracker to this ticket, so we have a reference of it. 
+
 
 I will try all of that and report here
 
 > Maybe others have some more ideas how to solve this. 
 > 
 > Dave 
+
 
 Thank you too for your help!
 
@@ -1119,7 +1129,7 @@ Thank you too for your help!
 archive/issue_comments_089137.json:
 ```json
 {
-    "body": "Replying to [comment:31 drkirkby]:\n> I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n\nIt has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?",
+    "body": "Replying to [comment:31 drkirkby]:\n> I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n\n\nIt has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?",
     "created_at": "2010-07-05T15:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1131,6 +1141,7 @@ archive/issue_comments_089137.json:
 Replying to [comment:31 drkirkby]:
 > I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. 
 
+
 It has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?
 
 
@@ -1140,7 +1151,7 @@ It has ocurred to me, that since I have a dual core processor (each core having 
 archive/issue_comments_089138.json:
 ```json
 {
-    "body": "Replying to [comment:33 olazo]:\n> Replying to [comment:31 drkirkby]:\n> > I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n> \n> It has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?\n\nAlmost all modern machines (and 100% of all PCs) share the memory, so you do not have 800 MB/CPU. \n\nTyping\n\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=yes\nexport MAKE=\"make -j 3\"\n```\n\n\nwill launch 3 threads and build upto 3 .spkg files in parallel. When .spkg files are independant of each other, they can be built in parallel. Other times, only one will be built. So my CPU load changed from about 12.5% (1/8th of the threads being used) to 100% in the instances where 8 can all be built in parallel.\n\nHowever, building packages in parallel is not 100% reliable yet, so the last thing you want to do is try that. That will just add another thing that can go wrong. \n\nDave",
+    "body": "Replying to [comment:33 olazo]:\n> Replying to [comment:31 drkirkby]:\n> > I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. \n\n> \n> It has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?\n\n\nAlmost all modern machines (and 100% of all PCs) share the memory, so you do not have 800 MB/CPU. \n\nTyping\n\n```\nexport SAGE_PARALLEL_SPKG_BUILD=yes\nexport MAKE=\"make -j 3\"\n```\n\nwill launch 3 threads and build upto 3 .spkg files in parallel. When .spkg files are independant of each other, they can be built in parallel. Other times, only one will be built. So my CPU load changed from about 12.5% (1/8th of the threads being used) to 100% in the instances where 8 can all be built in parallel.\n\nHowever, building packages in parallel is not 100% reliable yet, so the last thing you want to do is try that. That will just add another thing that can go wrong. \n\nDave",
     "created_at": "2010-07-05T15:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1152,19 +1163,19 @@ archive/issue_comments_089138.json:
 Replying to [comment:33 olazo]:
 > Replying to [comment:31 drkirkby]:
 > > I know others have built Sage with < 2 GB on Linux. I'm not sure what the practical limit is though. I think if have 2 GB, then it should not be a problem and even 1 GB **may** be ok. Any less than 1 GB and you are certainly pushing your luck. 
+
 > 
 > It has ocurred to me, that since I have a dual core processor (each core having 800 Mb of RAM) perhaps the compillation is not being done in parallel. I did notice that the CPU load during compilation was almost always near half. How can I make sure the compilation is done in parallel?
+
 
 Almost all modern machines (and 100% of all PCs) share the memory, so you do not have 800 MB/CPU. 
 
 Typing
 
-
 ```
 export SAGE_PARALLEL_SPKG_BUILD=yes
 export MAKE="make -j 3"
 ```
-
 
 will launch 3 threads and build upto 3 .spkg files in parallel. When .spkg files are independant of each other, they can be built in parallel. Other times, only one will be built. So my CPU load changed from about 12.5% (1/8th of the threads being used) to 100% in the instances where 8 can all be built in parallel.
 
@@ -1179,7 +1190,7 @@ Dave
 archive/issue_comments_089139.json:
 ```json
 {
-    "body": "I'm seeing the same thing on Fedora 13 32 bit. Intel i3/4GB RAM\n\nTurned off cpuspeed, disabled SpeedStep in the BIOS and finally booted into single user mode but the problem persisted unchanged.\n\nThe following error shows up a few lines before the \"error 639 during edge detection\":\n\n\n```\nATL_dupKBmm_b0.c: In function \u2018ATL_dpKBmm_b0\u2019:\nATL_dupKBmm_b0.c:26: error: \u2018else\u2019 without a previous \u2018if\u2019\nATL_dupKBmm_b0.c:30: error: \u2018else\u2019 without a previous \u2018if\u2019\nmake[7]: *** [ATL_dupKBmm_b0.o] Error 1\nmake[7]: *** Waiting for unfinished jobs....\nATL_dupKBmm_b1.c: In function \u2018ATL_dpKBmm_b1\u2019:\nATL_dupKBmm_b1.c:27: error: \u2018else\u2019 without a previous \u2018if\u2019\nATL_dupKBmm_b1.c:31: error: \u2018else\u2019 without a previous \u2018if\u2019\nmake[7]: *** [ATL_dupKBmm_b1.o] Error 1\n\n```\n\nCompilation stops here.\n\nThe same code builds without problem on Fedora 12.",
+    "body": "I'm seeing the same thing on Fedora 13 32 bit. Intel i3/4GB RAM\n\nTurned off cpuspeed, disabled SpeedStep in the BIOS and finally booted into single user mode but the problem persisted unchanged.\n\nThe following error shows up a few lines before the \"error 639 during edge detection\":\n\n```\nATL_dupKBmm_b0.c: In function \u2018ATL_dpKBmm_b0\u2019:\nATL_dupKBmm_b0.c:26: error: \u2018else\u2019 without a previous \u2018if\u2019\nATL_dupKBmm_b0.c:30: error: \u2018else\u2019 without a previous \u2018if\u2019\nmake[7]: *** [ATL_dupKBmm_b0.o] Error 1\nmake[7]: *** Waiting for unfinished jobs....\nATL_dupKBmm_b1.c: In function \u2018ATL_dpKBmm_b1\u2019:\nATL_dupKBmm_b1.c:27: error: \u2018else\u2019 without a previous \u2018if\u2019\nATL_dupKBmm_b1.c:31: error: \u2018else\u2019 without a previous \u2018if\u2019\nmake[7]: *** [ATL_dupKBmm_b1.o] Error 1\n\n```\nCompilation stops here.\n\nThe same code builds without problem on Fedora 12.",
     "created_at": "2010-07-08T15:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1194,7 +1205,6 @@ Turned off cpuspeed, disabled SpeedStep in the BIOS and finally booted into sing
 
 The following error shows up a few lines before the "error 639 during edge detection":
 
-
 ```
 ATL_dupKBmm_b0.c: In function ‘ATL_dpKBmm_b0’:
 ATL_dupKBmm_b0.c:26: error: ‘else’ without a previous ‘if’
@@ -1207,7 +1217,6 @@ ATL_dupKBmm_b1.c:31: error: ‘else’ without a previous ‘if’
 make[7]: *** [ATL_dupKBmm_b1.o] Error 1
 
 ```
-
 Compilation stops here.
 
 The same code builds without problem on Fedora 12.
@@ -1279,7 +1288,7 @@ archive/issue_events_023143.json:
 archive/issue_comments_089142.json:
 ```json
 {
-    "body": "Replying to [comment:36 olazo]:\n> I have just managed to compile sage in my fedora 13 32 bits computer. I am not completely sure what made the difference. I can see two differences between this and my previous atempts: \n> \n> 1) I updated the compilers to their latest versions.\n> 2) I was compiling in a partition formated as ext3, this time i used a partition formated as ext4.\n> 3) I compiled as superuser\n\nCompiling as root is a very dangerous thing to do. I've personally had builds of Sage fail when they try to write to system directories like /usr/lib. I'd rather them fail, than corrupt my system. Sage should not need root privileges to build. \n\nI'm glad you have solved this. Given most people had no problem, I will close this as invalid. \n\nDave",
+    "body": "Replying to [comment:36 olazo]:\n> I have just managed to compile sage in my fedora 13 32 bits computer. I am not completely sure what made the difference. I can see two differences between this and my previous atempts: \n> \n> 1) I updated the compilers to their latest versions.\n> 2) I was compiling in a partition formated as ext3, this time i used a partition formated as ext4.\n> 3) I compiled as superuser\n\n\nCompiling as root is a very dangerous thing to do. I've personally had builds of Sage fail when they try to write to system directories like /usr/lib. I'd rather them fail, than corrupt my system. Sage should not need root privileges to build. \n\nI'm glad you have solved this. Given most people had no problem, I will close this as invalid. \n\nDave",
     "created_at": "2010-07-13T00:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1295,6 +1304,7 @@ Replying to [comment:36 olazo]:
 > 2) I was compiling in a partition formated as ext3, this time i used a partition formated as ext4.
 > 3) I compiled as superuser
 
+
 Compiling as root is a very dangerous thing to do. I've personally had builds of Sage fail when they try to write to system directories like /usr/lib. I'd rather them fail, than corrupt my system. Sage should not need root privileges to build. 
 
 I'm glad you have solved this. Given most people had no problem, I will close this as invalid. 
@@ -1308,7 +1318,7 @@ Dave
 archive/issue_comments_089143.json:
 ```json
 {
-    "body": "Fedora 13 had already 4 gcc updates. Part of its purpose is trying the bleeding edge for the compiler. Installing the gcc updates is definitely recommended ;-)\n\n```\nyum.log:Apr 06 16:38:57 Installed: gcc-4.4.3-12.fc13.x86_64\nyum.log:Apr 16 12:48:20 Updated: gcc-4.4.3-16.fc13.x86_64\nyum.log:Apr 23 18:16:11 Updated: gcc-4.4.3-18.fc13.x86_64\nyum.log:May 04 23:53:12 Updated: gcc-4.4.4-2.fc13.x86_64\nyum.log:Jul 06 11:03:57 Updated: gcc-4.4.4-10.fc13.x86_64\n```\n\nIf anyone still has problems please reopen with specific information about your compiler...",
+    "body": "Fedora 13 had already 4 gcc updates. Part of its purpose is trying the bleeding edge for the compiler. Installing the gcc updates is definitely recommended ;-)\n\n```\nyum.log:Apr 06 16:38:57 Installed: gcc-4.4.3-12.fc13.x86_64\nyum.log:Apr 16 12:48:20 Updated: gcc-4.4.3-16.fc13.x86_64\nyum.log:Apr 23 18:16:11 Updated: gcc-4.4.3-18.fc13.x86_64\nyum.log:May 04 23:53:12 Updated: gcc-4.4.4-2.fc13.x86_64\nyum.log:Jul 06 11:03:57 Updated: gcc-4.4.4-10.fc13.x86_64\n```\nIf anyone still has problems please reopen with specific information about your compiler...",
     "created_at": "2010-07-13T00:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1326,7 +1336,6 @@ yum.log:Apr 23 18:16:11 Updated: gcc-4.4.3-18.fc13.x86_64
 yum.log:May 04 23:53:12 Updated: gcc-4.4.4-2.fc13.x86_64
 yum.log:Jul 06 11:03:57 Updated: gcc-4.4.4-10.fc13.x86_64
 ```
-
 If anyone still has problems please reopen with specific information about your compiler...
 
 
@@ -1353,7 +1362,7 @@ archive/issue_events_023144.json:
 archive/issue_comments_089144.json:
 ```json
 {
-    "body": "I've just spent several hours trying to compile sage (compiling on an Atom processor takes some time...) while I stumbled upon the same problem.\n\nDistribution: Fedora 13 (i686)\n\nSystem: EeePC 1000H / Intel Atom N270\n\nCompiler: gcc-4.4.4-10.fc13\n\nRAM: 1GB (completely used during the compilation of ATLAS)\n\nSwap: 2GB (nearly unused)\n\nWhat I've tried after reading all comments here:\n\n* adding more swap\n* no X, single user\n* disabling cpu throttling\n* closing all other services and programs\n\nUnfortunately without any success. But then I've read about the `SAGE_ATLAS_LIB` environment variable in the [docs](http://www.sagemath.org/doc/installation/source.html#environment-variables). So here is a simple workaround for F13:\n\n**Workaround:**\n\n```\nsudo yum install atlas atlas-devel\nsudo mkdir /opt/atlas/\nsudo ln -s /usr/lib/atlas /opt/atlas/lib\nsudo mkdir /opt/atlas/include\nsudo ln -s /usr/include/atlas /opt/atlas/include/atlas\nexport SAGE_ATLAS_LIB=/opt/atlas\nmake\n```\n\n\nRegards,\n\nChristoph",
+    "body": "I've just spent several hours trying to compile sage (compiling on an Atom processor takes some time...) while I stumbled upon the same problem.\n\nDistribution: Fedora 13 (i686)\n\nSystem: EeePC 1000H / Intel Atom N270\n\nCompiler: gcc-4.4.4-10.fc13\n\nRAM: 1GB (completely used during the compilation of ATLAS)\n\nSwap: 2GB (nearly unused)\n\nWhat I've tried after reading all comments here:\n\n* adding more swap\n* no X, single user\n* disabling cpu throttling\n* closing all other services and programs\n\nUnfortunately without any success. But then I've read about the `SAGE_ATLAS_LIB` environment variable in the [docs](http://www.sagemath.org/doc/installation/source.html#environment-variables). So here is a simple workaround for F13:\n\n**Workaround:**\n\n```\nsudo yum install atlas atlas-devel\nsudo mkdir /opt/atlas/\nsudo ln -s /usr/lib/atlas /opt/atlas/lib\nsudo mkdir /opt/atlas/include\nsudo ln -s /usr/include/atlas /opt/atlas/include/atlas\nexport SAGE_ATLAS_LIB=/opt/atlas\nmake\n```\n\nRegards,\n\nChristoph",
     "created_at": "2010-10-01T20:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1395,7 +1404,6 @@ export SAGE_ATLAS_LIB=/opt/atlas
 make
 ```
 
-
 Regards,
 
 Christoph
@@ -1407,7 +1415,7 @@ Christoph
 archive/issue_comments_089145.json:
 ```json
 {
-    "body": "Replying to [comment:40 tux21b]:\n> I've just spent several hours trying to compile sage (compiling on an Atom processor takes some time...) \n\n<snip>\n\n> **Workaround:**\n\nThank you. I must admit, I'm a bit concerned at this bug. I've seen it myself on Debian in virtual machines too. Just installing another version of ATLAS is obviously fine for you, but in general it is not good. \n\nIf you still have the log, can I suggest you open another ticket, attach the file spkg/logs/atlas$verison.log and leave it open as a bug, as there does appear to be a problem here. \n\nDave",
+    "body": "Replying to [comment:40 tux21b]:\n> I've just spent several hours trying to compile sage (compiling on an Atom processor takes some time...) \n\n\n<snip>\n\n> **Workaround:**\n\n\nThank you. I must admit, I'm a bit concerned at this bug. I've seen it myself on Debian in virtual machines too. Just installing another version of ATLAS is obviously fine for you, but in general it is not good. \n\nIf you still have the log, can I suggest you open another ticket, attach the file spkg/logs/atlas$verison.log and leave it open as a bug, as there does appear to be a problem here. \n\nDave",
     "created_at": "2010-10-01T21:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1419,9 +1427,11 @@ archive/issue_comments_089145.json:
 Replying to [comment:40 tux21b]:
 > I've just spent several hours trying to compile sage (compiling on an Atom processor takes some time...) 
 
+
 <snip>
 
 > **Workaround:**
+
 
 Thank you. I must admit, I'm a bit concerned at this bug. I've seen it myself on Debian in virtual machines too. Just installing another version of ATLAS is obviously fine for you, but in general it is not good. 
 
@@ -1436,7 +1446,7 @@ Dave
 archive/issue_comments_089146.json:
 ```json
 {
-    "body": "Replying to [comment:41 drkirkby]:\n> Just installing another version of ATLAS is obviously fine for you, but in general it is not good.\nSure, that's why it's called a \u00bbworkaround\u00ab and not \u00bbsolution\u00ab. Anyway, I am happy with it and it might help many others too.\n\n> If you still have the log, can I suggest you open another ticket, attach the file spkg/logs/atlas$verison.log and leave it open as a bug, as there does appear to be a problem here.\nHere it is: http://trac.sagemath.org/sage_trac/ticket/10051\n\nFeel free to ask for more information/test runs/whatever.\n\nChristoph",
+    "body": "Replying to [comment:41 drkirkby]:\n> Just installing another version of ATLAS is obviously fine for you, but in general it is not good.\n\nSure, that's why it's called a \u00bbworkaround\u00ab and not \u00bbsolution\u00ab. Anyway, I am happy with it and it might help many others too.\n\n> If you still have the log, can I suggest you open another ticket, attach the file spkg/logs/atlas$verison.log and leave it open as a bug, as there does appear to be a problem here.\n\nHere it is: http://trac.sagemath.org/sage_trac/ticket/10051\n\nFeel free to ask for more information/test runs/whatever.\n\nChristoph",
     "created_at": "2010-10-01T22:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1447,9 +1457,11 @@ archive/issue_comments_089146.json:
 
 Replying to [comment:41 drkirkby]:
 > Just installing another version of ATLAS is obviously fine for you, but in general it is not good.
+
 Sure, that's why it's called a »workaround« and not »solution«. Anyway, I am happy with it and it might help many others too.
 
 > If you still have the log, can I suggest you open another ticket, attach the file spkg/logs/atlas$verison.log and leave it open as a bug, as there does appear to be a problem here.
+
 Here it is: http://trac.sagemath.org/sage_trac/ticket/10051
 
 Feel free to ask for more information/test runs/whatever.
@@ -1632,7 +1644,7 @@ Maybe someone here can confirm this?
 archive/issue_comments_089153.json:
 ```json
 {
-    "body": "I'm trying to build sage on Fedora 16 but I'm also ending in an infinite ATLAS build loop.\nSage 4.7 builds fine in Fedora 15 on my AMD desktop but on my Intel notebook sage 4.7 and sage 4.7.1\nare hanging at the ATLAS build.\n\nJust looking at the install.log for example ATLAS was trying over 600 times to compile fc.c\n\n```\n[chris@thinkpad sage-4.7.1]$ cat install.log | grep -c \"sage-4.7.1/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/fc.c\"\n648\n```\n\nAttatched:\n\n```\ninstall.log.lzma\ncat /proc/meminfo >proc_meminfo\ncat /proc/cpuinfo >proc_cpuinfo\n```\n\nHere you can see that there are some crashes in \"ATLAS-build/tune/blas/\":\n\n```\ncat /var/log/messages |grep abrt |grep \"Aug 26 18\" >abrt.log\n```\n\nI've also tried disabling cpu throttling with no effect.\n\n```\nsudo cpupower frequency-set -g performance\n```\n\nAnd the workaround from comment 40:\n\n```\n$ sudo yum install atlas atlas-devel\n$ rpm -q atlas\natlas-3.8.4-1.fc16.x86_64\n$ sudo mkdir /opt/atlas/\n$ #sudo ln -s /usr/lib/atlas /opt/atlas/lib\n$ sudo ln -s /usr/lib64/atlas /opt/atlas/lib\n$ sudo mkdir /opt/atlas/include\n$ sudo ln -s /usr/include/atlas /opt/atlas/include/atlas\n$ export SAGE_ATLAS_LIB=/opt/atlas\n$ export MAKE=\"make -j6\"\n$ make\n```\n\n\nBut make will fail (see install_with_system_atlas.tar.lzma) because /opt/atlas/lib\nonly contains shared objects and no static library files.\n\n\"Unable to find one of liblapack.a, libcblas.a, libatlas.a or libf77blas.a\nin the directory /opt/atlas/lib\"\n\n```\n$ ls /opt/atlas/lib\nlibatlas.so      libcblas.so      libclapack.so      libf77blas.so      liblapack.so      libptcblas.so      libptf77blas.so\nlibatlas.so.3    libcblas.so.3    libclapack.so.3    libf77blas.so.3    liblapack.so.3    libptcblas.so.3    libptf77blas.so.3\nlibatlas.so.3.0  libcblas.so.3.0  libclapack.so.3.0  libf77blas.so.3.0  liblapack.so.3.0  libptcblas.so.3.0  libptf77blas.so.3.0\n```\n\n\nWhat should I do next? If you need more information to fix this bug please ask.\n\nchris",
+    "body": "I'm trying to build sage on Fedora 16 but I'm also ending in an infinite ATLAS build loop.\nSage 4.7 builds fine in Fedora 15 on my AMD desktop but on my Intel notebook sage 4.7 and sage 4.7.1\nare hanging at the ATLAS build.\n\nJust looking at the install.log for example ATLAS was trying over 600 times to compile fc.c\n\n```\n[chris@thinkpad sage-4.7.1]$ cat install.log | grep -c \"sage-4.7.1/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/fc.c\"\n648\n```\nAttatched:\n\n```\ninstall.log.lzma\ncat /proc/meminfo >proc_meminfo\ncat /proc/cpuinfo >proc_cpuinfo\n```\nHere you can see that there are some crashes in \"ATLAS-build/tune/blas/\":\n\n```\ncat /var/log/messages |grep abrt |grep \"Aug 26 18\" >abrt.log\n```\nI've also tried disabling cpu throttling with no effect.\n\n```\nsudo cpupower frequency-set -g performance\n```\nAnd the workaround from comment 40:\n\n```\n$ sudo yum install atlas atlas-devel\n$ rpm -q atlas\natlas-3.8.4-1.fc16.x86_64\n$ sudo mkdir /opt/atlas/\n$ #sudo ln -s /usr/lib/atlas /opt/atlas/lib\n$ sudo ln -s /usr/lib64/atlas /opt/atlas/lib\n$ sudo mkdir /opt/atlas/include\n$ sudo ln -s /usr/include/atlas /opt/atlas/include/atlas\n$ export SAGE_ATLAS_LIB=/opt/atlas\n$ export MAKE=\"make -j6\"\n$ make\n```\n\nBut make will fail (see install_with_system_atlas.tar.lzma) because /opt/atlas/lib\nonly contains shared objects and no static library files.\n\n\"Unable to find one of liblapack.a, libcblas.a, libatlas.a or libf77blas.a\nin the directory /opt/atlas/lib\"\n\n```\n$ ls /opt/atlas/lib\nlibatlas.so      libcblas.so      libclapack.so      libf77blas.so      liblapack.so      libptcblas.so      libptf77blas.so\nlibatlas.so.3    libcblas.so.3    libclapack.so.3    libf77blas.so.3    liblapack.so.3    libptcblas.so.3    libptf77blas.so.3\nlibatlas.so.3.0  libcblas.so.3.0  libclapack.so.3.0  libf77blas.so.3.0  liblapack.so.3.0  libptcblas.so.3.0  libptf77blas.so.3.0\n```\n\nWhat should I do next? If you need more information to fix this bug please ask.\n\nchris",
     "created_at": "2011-08-28T22:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1651,7 +1663,6 @@ Just looking at the install.log for example ATLAS was trying over 600 times to c
 [chris@thinkpad sage-4.7.1]$ cat install.log | grep -c "sage-4.7.1/spkg/build/atlas-3.8.3.p16/ATLAS-build/../src//tune/blas/gemm/fc.c"
 648
 ```
-
 Attatched:
 
 ```
@@ -1659,19 +1670,16 @@ install.log.lzma
 cat /proc/meminfo >proc_meminfo
 cat /proc/cpuinfo >proc_cpuinfo
 ```
-
 Here you can see that there are some crashes in "ATLAS-build/tune/blas/":
 
 ```
 cat /var/log/messages |grep abrt |grep "Aug 26 18" >abrt.log
 ```
-
 I've also tried disabling cpu throttling with no effect.
 
 ```
 sudo cpupower frequency-set -g performance
 ```
-
 And the workaround from comment 40:
 
 ```
@@ -1688,7 +1696,6 @@ $ export MAKE="make -j6"
 $ make
 ```
 
-
 But make will fail (see install_with_system_atlas.tar.lzma) because /opt/atlas/lib
 only contains shared objects and no static library files.
 
@@ -1701,7 +1708,6 @@ libatlas.so      libcblas.so      libclapack.so      libf77blas.so      liblapac
 libatlas.so.3    libcblas.so.3    libclapack.so.3    libf77blas.so.3    liblapack.so.3    libptcblas.so.3    libptf77blas.so.3
 libatlas.so.3.0  libcblas.so.3.0  libclapack.so.3.0  libf77blas.so.3.0  liblapack.so.3.0  libptcblas.so.3.0  libptf77blas.so.3.0
 ```
-
 
 What should I do next? If you need more information to fix this bug please ask.
 
@@ -1788,7 +1794,7 @@ Can you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher
 archive/issue_comments_089158.json:
 ```json
 {
-    "body": "OK. Thanks I've updated ATLAS and now the system-wide atlas install works but the ATLAS build will still go into a loop.\n\n```\n$ wget http://boxen.math.washington.edu/home/release/sage-4.7.2.alpha2/sage-4.7.2.alpha2/spkg/standard/atlas-3.8.4.spkg\n$ cp atlas-3.8.4.spkg ~/excluded/sage-4.7.1/spkg/standard/\n```\n\n\nchris",
+    "body": "OK. Thanks I've updated ATLAS and now the system-wide atlas install works but the ATLAS build will still go into a loop.\n\n```\n$ wget http://boxen.math.washington.edu/home/release/sage-4.7.2.alpha2/sage-4.7.2.alpha2/spkg/standard/atlas-3.8.4.spkg\n$ cp atlas-3.8.4.spkg ~/excluded/sage-4.7.1/spkg/standard/\n```\n\nchris",
     "created_at": "2011-08-29T10:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
@@ -1803,7 +1809,6 @@ OK. Thanks I've updated ATLAS and now the system-wide atlas install works but th
 $ wget http://boxen.math.washington.edu/home/release/sage-4.7.2.alpha2/sage-4.7.2.alpha2/spkg/standard/atlas-3.8.4.spkg
 $ cp atlas-3.8.4.spkg ~/excluded/sage-4.7.1/spkg/standard/
 ```
-
 
 chris
 

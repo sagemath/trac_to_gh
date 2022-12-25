@@ -3,7 +3,7 @@
 archive/issues_008148.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus @orlitzky\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\n\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\n\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus @orlitzky\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
     "created_at": "2010-02-02T04:52:34Z",
     "labels": [
         "component: combinatorics",
@@ -29,13 +29,11 @@ sage: Q.dual().show()
 ...
 IndexError: list index out of range
 ```
-
 Note that the following works, and is what I'm using in my code right now:
 
 ```
 sage: Poset(Q.hasse_diagram().reverse()).show()
 ```
-
 Actually, though, this fails if Q is defined instead to be
 
 ```
@@ -45,7 +43,6 @@ sage: Poset(Q.hasse_diagram().reverse()).show()
 ...
 RuntimeError: Error building image
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8148
 
@@ -58,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8148
 archive/issue_comments_071503.json:
 ```json
 {
-    "body": "\n```\nsage:Poset({1: [], 3: [], 2: [1, 3]}).dual().relations()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations(self)\n    717         - Rob Beezer (2011-05-04)\n    718         \"\"\"\n--> 719         return list(self.relations_iterator())\n    720 \n    721     def relations_iterator(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations_iterator(self)\n    745         # Relies on vertices the fact that _elements correspond to the rows and\n    746         # columns of the lequal matrix\n--> 747         leq_mat = self.lequal_matrix()\n    748         n = leq_mat.nrows()\n    749         elements = self._elements\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in lequal_matrix(self, **kwds)\n   1282             False\n   1283         \"\"\"\n-> 1284         return self._hasse_diagram.lequal_matrix(**kwds)\n   1285 \n   1286     def meet_matrix(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/hasse_diagram.pyc in lequal_matrix(self, ring, sparse)\n    867         D = {}\n    868         for i in range(n):\n--> 869             for v in self.breadth_first_search(i):\n    870                 D[(i,v)] = 1\n    871         self._leq_matrix = matrix(ring, n, n, D, sparse=sparse)\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in breadth_first_search(self, start, ignore_direction, distance, neighbors)\n  11565         # Preferably use the Cython implementation \n  11566         if neighbors is None and not isinstance(start,list) and distance is None and hasattr(self._backend,\"breadth_first_search\"): \n> 11567             for v in self._backend.breadth_first_search(start, ignore_direction = ignore_direction): \n  11568                 yield v \n  11569         else: \n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.Search_iterator.__next__ (sage/graphs/base/c_graph.c:19732)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:8007)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:7841)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.CGraph.check_vertex (sage/graphs/base/c_graph.c:5697)()\n\nRuntimeError: Vertex (0) is not a vertex of the graph.\n```\n",
+    "body": "```\nsage:Poset({1: [], 3: [], 2: [1, 3]}).dual().relations()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations(self)\n    717         - Rob Beezer (2011-05-04)\n    718         \"\"\"\n--> 719         return list(self.relations_iterator())\n    720 \n    721     def relations_iterator(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations_iterator(self)\n    745         # Relies on vertices the fact that _elements correspond to the rows and\n    746         # columns of the lequal matrix\n--> 747         leq_mat = self.lequal_matrix()\n    748         n = leq_mat.nrows()\n    749         elements = self._elements\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in lequal_matrix(self, **kwds)\n   1282             False\n   1283         \"\"\"\n-> 1284         return self._hasse_diagram.lequal_matrix(**kwds)\n   1285 \n   1286     def meet_matrix(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/hasse_diagram.pyc in lequal_matrix(self, ring, sparse)\n    867         D = {}\n    868         for i in range(n):\n--> 869             for v in self.breadth_first_search(i):\n    870                 D[(i,v)] = 1\n    871         self._leq_matrix = matrix(ring, n, n, D, sparse=sparse)\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in breadth_first_search(self, start, ignore_direction, distance, neighbors)\n  11565         # Preferably use the Cython implementation \n  11566         if neighbors is None and not isinstance(start,list) and distance is None and hasattr(self._backend,\"breadth_first_search\"): \n> 11567             for v in self._backend.breadth_first_search(start, ignore_direction = ignore_direction): \n  11568                 yield v \n  11569         else: \n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.Search_iterator.__next__ (sage/graphs/base/c_graph.c:19732)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:8007)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:7841)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.CGraph.check_vertex (sage/graphs/base/c_graph.c:5697)()\n\nRuntimeError: Vertex (0) is not a vertex of the graph.\n```",
     "created_at": "2011-12-13T23:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
@@ -66,7 +63,6 @@ archive/issue_comments_071503.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
-
 
 ```
 sage:Poset({1: [], 3: [], 2: [1, 3]}).dual().relations()
@@ -120,7 +116,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: Vertex (0) is not a vertex of the graph.
 ```
-
 
 
 
@@ -183,7 +178,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071507.json:
 ```json
 {
-    "body": "This is probably the best fix at the moment (although it would be nice if FinitePoset() could be used by itself).\n\nFor the patch, can you add the ticket number to the doctest somewhere?\n\nI would also create a \"TESTS:\" section under examples, since this isn't really a useful example independent of the fact that it demonstrates this bug.\n\nYou can give the doctest a little introduction, too. For example,\n\n\n```\nTESTS:\n\nWe should get a valid FinitePoset back if we call dual() on a finite poset (trac #8148)::\n\n    sage: ...\n```\n\n\nIt's the double-colon that says \"here comes a doctest.\"",
+    "body": "This is probably the best fix at the moment (although it would be nice if FinitePoset() could be used by itself).\n\nFor the patch, can you add the ticket number to the doctest somewhere?\n\nI would also create a \"TESTS:\" section under examples, since this isn't really a useful example independent of the fact that it demonstrates this bug.\n\nYou can give the doctest a little introduction, too. For example,\n\n```\nTESTS:\n\nWe should get a valid FinitePoset back if we call dual() on a finite poset (trac #8148)::\n\n    sage: ...\n```\n\nIt's the double-colon that says \"here comes a doctest.\"",
     "created_at": "2012-01-07T22:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
@@ -200,7 +195,6 @@ I would also create a "TESTS:" section under examples, since this isn't really a
 
 You can give the doctest a little introduction, too. For example,
 
-
 ```
 TESTS:
 
@@ -208,7 +202,6 @@ We should get a valid FinitePoset back if we call dual() on a finite poset (trac
 
     sage: ...
 ```
-
 
 It's the double-colon that says "here comes a doctest."
 

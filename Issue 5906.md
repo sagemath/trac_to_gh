@@ -3,7 +3,7 @@
 archive/issues_005906.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
+    "body": "Assignee: @rlmill\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
     "created_at": "2009-04-26T21:47:04Z",
     "labels": [
         "component: graph theory",
@@ -28,7 +28,6 @@ sage: g.show()
 libpng error: Image width or height is zero in IHDR
 <SNIP>
 ```
-
 | Sage Version 3.4.1, Release Date: 2009-04-21                       |
 | Type notebook() for the GUI, and license() for information.        |
 Cheers,

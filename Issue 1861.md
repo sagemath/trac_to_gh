@@ -284,7 +284,7 @@ archive/issue_events_004505.json:
 archive/issue_comments_011755.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n> Great, this is an immediate improvement on the wiki, and 0.8 has this as well.  Putting back to a \"normal\" milestone since #13176 is slightly more complex.\n\nSo, this has positive_review but no patch and not a duplicate?  What is it then?",
+    "body": "Replying to [comment:8 kcrisman]:\n> Great, this is an immediate improvement on the wiki, and 0.8 has this as well.  Putting back to a \"normal\" milestone since #13176 is slightly more complex.\n\n\nSo, this has positive_review but no patch and not a duplicate?  What is it then?",
     "created_at": "2012-06-29T14:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1861",
     "type": "issue_comment",
@@ -295,6 +295,7 @@ archive/issue_comments_011755.json:
 
 Replying to [comment:8 kcrisman]:
 > Great, this is an immediate improvement on the wiki, and 0.8 has this as well.  Putting back to a "normal" milestone since #13176 is slightly more complex.
+
 
 So, this has positive_review but no patch and not a duplicate?  What is it then?
 

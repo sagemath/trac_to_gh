@@ -3,7 +3,7 @@
 archive/issues_003863.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nKeywords: integration integral calculus symbolic\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = var('x')\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/sage-3.0.6.final/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in numerical_approx(self, prec, digits)\n   1266         except TypeError:\n   1267             # try to return a complex result\n-> 1268             approx = self._complex_mpfr_field_(ComplexField(prec))\n   1269 \n   1270         return approx\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   1419 \n   1420     def _complex_mpfr_field_(self, field):\n-> 1421         raise TypeError\n   1422 \n   1423     def _complex_double_(self, C):\n\nTypeError: \nsage: \n```\n\n\nOddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:\n\n\n```\nplot(x^2.7 * e^(-2.4*x), x, 0, 3)\n```\n\nworks fine.\n\nSome values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:\n\n\n```\n(2.7, -2.4): this is the above example\n(27/10, -2.4): same error as above\n(1.5, -2.4): works\n(1.6, -2.4): same error as above\n(1.6, -2.0): same error as above\n(1.0, -2.4): works\n(5.5, -2.4): works\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3863\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: integration integral calculus symbolic\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = var('x')\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/sage-3.0.6.final/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in numerical_approx(self, prec, digits)\n   1266         except TypeError:\n   1267             # try to return a complex result\n-> 1268             approx = self._complex_mpfr_field_(ComplexField(prec))\n   1269 \n   1270         return approx\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   1419 \n   1420     def _complex_mpfr_field_(self, field):\n-> 1421         raise TypeError\n   1422 \n   1423     def _complex_double_(self, C):\n\nTypeError: \nsage: \n```\n\nOddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:\n\n```\nplot(x^2.7 * e^(-2.4*x), x, 0, 3)\n```\nworks fine.\n\nSome values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:\n\n```\n(2.7, -2.4): this is the above example\n(27/10, -2.4): same error as above\n(1.5, -2.4): works\n(1.6, -2.4): same error as above\n(1.6, -2.0): same error as above\n(1.0, -2.4): works\n(5.5, -2.4): works\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3863\n\n",
     "created_at": "2008-08-15T00:46:06Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_003863.json:
 Assignee: @garyfurnish
 
 Keywords: integration integral calculus symbolic
-
 
 ```
 ----------------------------------------------------------------------
@@ -51,18 +50,14 @@ TypeError:
 sage: 
 ```
 
-
 Oddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:
-
 
 ```
 plot(x^2.7 * e^(-2.4*x), x, 0, 3)
 ```
-
 works fine.
 
 Some values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:
-
 
 ```
 (2.7, -2.4): this is the above example
@@ -73,7 +68,6 @@ Some values for the exponents do work -- it seems like the exponent of `x` needs
 (1.0, -2.4): works
 (5.5, -2.4): works
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3863
 
@@ -86,7 +80,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3863
 archive/issue_comments_027463.json:
 ```json
 {
-    "body": "With the new symbolics in 4.0.rc0, this still doesn't work; the error is now:\n\n```\nsage: integrate(x^2.7 * exp(-2.4*x), x, 0, 3).n()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (10003, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/.sage/temp/sage.math.washington.edu/22166/_home_drake__sage_init_sage_0.py in <module>()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15691)()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2641)()\n\nTypeError: self must be a numeric expression\n```\n\nPutting parentheses around the 2.7 and -2.4 didn't change anything.",
+    "body": "With the new symbolics in 4.0.rc0, this still doesn't work; the error is now:\n\n```\nsage: integrate(x^2.7 * exp(-2.4*x), x, 0, 3).n()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (10003, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/.sage/temp/sage.math.washington.edu/22166/_home_drake__sage_init_sage_0.py in <module>()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15691)()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2641)()\n\nTypeError: self must be a numeric expression\n```\nPutting parentheses around the 2.7 and -2.4 didn't change anything.",
     "created_at": "2009-05-21T11:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -114,7 +108,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: self must be a numeric expression
 ```
-
 Putting parentheses around the 2.7 and -2.4 didn't change anything.
 
 
@@ -124,7 +117,7 @@ Putting parentheses around the 2.7 and -2.4 didn't change anything.
 archive/issue_comments_027464.json:
 ```json
 {
-    "body": "The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\nMy view is that the correct fix is to put some kind of check in for when \"integrate\" is part of the output string fed into .n() and in that case at least attempt to use numerical_integral or something.  Of course that has the problem that things like \n\n```\nsage: integrate(1/(1+x^7))\n1/7*log(x + 1) - 1/7*integrate((x^5 - 2*x^4 + 3*x^3 - 4*x^2 + 5*x - 6)/(x^6 - x^5 + x^4 - x^3 + x^2 - x + 1), x)\n```\n\nMaxima is able to partly symbolically integrate, leaving\n\n```\nsage: integrate(1/(1+x^7),x,0,1)\n```\n\nin trouble.  But at least a check for \"integrate\" at the beginning could help.",
+    "body": "The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\nMy view is that the correct fix is to put some kind of check in for when \"integrate\" is part of the output string fed into .n() and in that case at least attempt to use numerical_integral or something.  Of course that has the problem that things like \n\n```\nsage: integrate(1/(1+x^7))\n1/7*log(x + 1) - 1/7*integrate((x^5 - 2*x^4 + 3*x^3 - 4*x^2 + 5*x - 6)/(x^6 - x^5 + x^4 - x^3 + x^2 - x + 1), x)\n```\nMaxima is able to partly symbolically integrate, leaving\n\n```\nsage: integrate(1/(1+x^7),x,0,1)\n```\nin trouble.  But at least a check for \"integrate\" at the beginning could help.",
     "created_at": "2009-05-22T15:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -141,13 +134,11 @@ My view is that the correct fix is to put some kind of check in for when "integr
 sage: integrate(1/(1+x^7))
 1/7*log(x + 1) - 1/7*integrate((x^5 - 2*x^4 + 3*x^3 - 4*x^2 + 5*x - 6)/(x^6 - x^5 + x^4 - x^3 + x^2 - x + 1), x)
 ```
-
 Maxima is able to partly symbolically integrate, leaving
 
 ```
 sage: integrate(1/(1+x^7),x,0,1)
 ```
-
 in trouble.  But at least a check for "integrate" at the beginning could help.
 
 
@@ -157,7 +148,7 @@ in trouble.  But at least a check for "integrate" at the beginning could help.
 archive/issue_comments_027465.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\nAh, that makes sense. I don't mind that just naively running `.n()` doesn't work; we could have, like Mathematica, some sort of numerical_integrate that would try to evaluate the integral, and then punt to something like Simpson's rule to just estimate it. I'm sure, though, that there's vastly better ways to actually do numerical integrals than just a plain vanilla Calculus 1 application of Simpson's Rule.",
+    "body": "Replying to [comment:2 kcrisman]:\n> The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\n\nAh, that makes sense. I don't mind that just naively running `.n()` doesn't work; we could have, like Mathematica, some sort of numerical_integrate that would try to evaluate the integral, and then punt to something like Simpson's rule to just estimate it. I'm sure, though, that there's vastly better ways to actually do numerical integrals than just a plain vanilla Calculus 1 application of Simpson's Rule.",
     "created_at": "2009-05-23T01:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -169,6 +160,7 @@ archive/issue_comments_027465.json:
 Replying to [comment:2 kcrisman]:
 > The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.
 
+
 Ah, that makes sense. I don't mind that just naively running `.n()` doesn't work; we could have, like Mathematica, some sort of numerical_integrate that would try to evaluate the integral, and then punt to something like Simpson's rule to just estimate it. I'm sure, though, that there's vastly better ways to actually do numerical integrals than just a plain vanilla Calculus 1 application of Simpson's Rule.
 
 
@@ -178,7 +170,7 @@ Ah, that makes sense. I don't mind that just naively running `.n()` doesn't work
 archive/issue_comments_027466.json:
 ```json
 {
-    "body": "Oh, totally, and of course we have numerical_integrate and nintegral (one is Maxima, one is GSL I think).  So I guess what I'm saying is that when someone has time (which won't be me until June due to the (US) holiday and then a conference) it should be relatively straightforward to at least do something in the generic code for .n() on whatever kind of object (symbolic?) an expression like integrate(f(x),x,a,b) is like\n\n```\ntry:\n    usual code\nexcept TypeError:\n    if \"integrate\" is in the string:\n        either reraise the TypeError with a message suggesting the use of numerical_integrate\n        or actually try to string-magic replace \"integrate\" with \"numerical_integrate\", which should be possible (you'd have to take [0] of that result, of course)\n    else:\n        do whatever used to happen with a TypeError\n```\n\nI think that it is reasonable for a user to expect that .n() numerically evaluates an expression as best as possible, even one Maxima can't evaluate!  And all these methods are much more sophisticated than Simpson, certainly, so that's not the issue.",
+    "body": "Oh, totally, and of course we have numerical_integrate and nintegral (one is Maxima, one is GSL I think).  So I guess what I'm saying is that when someone has time (which won't be me until June due to the (US) holiday and then a conference) it should be relatively straightforward to at least do something in the generic code for .n() on whatever kind of object (symbolic?) an expression like integrate(f(x),x,a,b) is like\n\n```\ntry:\n    usual code\nexcept TypeError:\n    if \"integrate\" is in the string:\n        either reraise the TypeError with a message suggesting the use of numerical_integrate\n        or actually try to string-magic replace \"integrate\" with \"numerical_integrate\", which should be possible (you'd have to take [0] of that result, of course)\n    else:\n        do whatever used to happen with a TypeError\n```\nI think that it is reasonable for a user to expect that .n() numerically evaluates an expression as best as possible, even one Maxima can't evaluate!  And all these methods are much more sophisticated than Simpson, certainly, so that's not the issue.",
     "created_at": "2009-05-23T18:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -199,7 +191,6 @@ except TypeError:
     else:
         do whatever used to happen with a TypeError
 ```
-
 I think that it is reasonable for a user to expect that .n() numerically evaluates an expression as best as possible, even one Maxima can't evaluate!  And all these methods are much more sophisticated than Simpson, certainly, so that's not the issue.
 
 
@@ -283,7 +274,7 @@ Changing keywords from "integration integral calculus symbolic" to "integration 
 archive/issue_comments_027471.json:
 ```json
 {
-    "body": "Update: in 4.3.alpha1 with Maxima 5.20.1, we now get\n\n```\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3)\n119/6144*2^(3/5)*3^(3/10)*5^(7/10)*gamma(7/10) - 125/20736*2^(3/5)*3^(3/10)*5^(7/10)*gamma_incomplete(37/10, 36/5)\n```\n\nBut it won't evaluate the gamma_incomplete, since for some reason we aren't translating it to gamma_inc or incomplete_gamma, which are the supported functions; however, otherwise it is correct (as comparing with results of numerical_integral).\n\nThis does not fix the problem, of course, but I will change the summary to get at the fundamental thing mhansen and I discussed, and open a separate ticket (if it doesn't exist) for the gamma_incomplete not being translated correctly from Maxima.  That is #7748.\n\nDo we in the meantime have the _evalf_ method on a symbolic integral that can be changed?",
+    "body": "Update: in 4.3.alpha1 with Maxima 5.20.1, we now get\n\n```\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3)\n119/6144*2^(3/5)*3^(3/10)*5^(7/10)*gamma(7/10) - 125/20736*2^(3/5)*3^(3/10)*5^(7/10)*gamma_incomplete(37/10, 36/5)\n```\nBut it won't evaluate the gamma_incomplete, since for some reason we aren't translating it to gamma_inc or incomplete_gamma, which are the supported functions; however, otherwise it is correct (as comparing with results of numerical_integral).\n\nThis does not fix the problem, of course, but I will change the summary to get at the fundamental thing mhansen and I discussed, and open a separate ticket (if it doesn't exist) for the gamma_incomplete not being translated correctly from Maxima.  That is #7748.\n\nDo we in the meantime have the _evalf_ method on a symbolic integral that can be changed?",
     "created_at": "2009-12-22T17:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -298,7 +289,6 @@ Update: in 4.3.alpha1 with Maxima 5.20.1, we now get
 sage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3)
 119/6144*2^(3/5)*3^(3/10)*5^(7/10)*gamma(7/10) - 125/20736*2^(3/5)*3^(3/10)*5^(7/10)*gamma_incomplete(37/10, 36/5)
 ```
-
 But it won't evaluate the gamma_incomplete, since for some reason we aren't translating it to gamma_inc or incomplete_gamma, which are the supported functions; however, otherwise it is correct (as comparing with results of numerical_integral).
 
 This does not fix the problem, of course, but I will change the summary to get at the fundamental thing mhansen and I discussed, and open a separate ticket (if it doesn't exist) for the gamma_incomplete not being translated correctly from Maxima.  That is #7748.
@@ -312,7 +302,7 @@ Do we in the meantime have the _evalf_ method on a symbolic integral that can be
 archive/issue_comments_027472.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Do we in the meantime have the _evalf_ method on a symbolic integral that can be changed?\n\n#6465 has a patch with such an `_evalf_` method. It needs a rebase though. I'm still playing with the symbolic functions in pynac. If nobody gets to it, I'll update those patches after I'm done with pynac.",
+    "body": "Replying to [comment:6 kcrisman]:\n> Do we in the meantime have the _evalf_ method on a symbolic integral that can be changed?\n\n\n#6465 has a patch with such an `_evalf_` method. It needs a rebase though. I'm still playing with the symbolic functions in pynac. If nobody gets to it, I'll update those patches after I'm done with pynac.",
     "created_at": "2009-12-22T22:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -323,6 +313,7 @@ archive/issue_comments_027472.json:
 
 Replying to [comment:6 kcrisman]:
 > Do we in the meantime have the _evalf_ method on a symbolic integral that can be changed?
+
 
 #6465 has a patch with such an `_evalf_` method. It needs a rebase though. I'm still playing with the symbolic functions in pynac. If nobody gets to it, I'll update those patches after I'm done with pynac.
 
@@ -353,7 +344,7 @@ trivial doctest
 archive/issue_comments_027474.json:
 ```json
 {
-    "body": "This was fixed by #6465. Despite the fact that we still have problems with numerical integration (#8321), the problem addressed here is solved. I suggest that we add a doctest and close this ticket.\n\nattachment:trac_3863-doctest.patch adds a trivial doctest. Here is the same computation in Maple: \n\n\n```\n    |\\^/|     Maple 12 (IBM INTEL LINUX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2008\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> Digits:=30;                             \n                                 Digits := 30\n\n> evalf(Int(x^2.7 * exp(-2.4*x), x=0..3));\nmemory used=3.8MB, alloc=3.1MB, time=0.06\nmemory used=7.6MB, alloc=4.4MB, time=0.13\nmemory used=11.4MB, alloc=4.4MB, time=0.21\n                       0.154572952320789711837207551604\n```\n",
+    "body": "This was fixed by #6465. Despite the fact that we still have problems with numerical integration (#8321), the problem addressed here is solved. I suggest that we add a doctest and close this ticket.\n\nattachment:trac_3863-doctest.patch adds a trivial doctest. Here is the same computation in Maple: \n\n```\n    |\\^/|     Maple 12 (IBM INTEL LINUX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2008\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> Digits:=30;                             \n                                 Digits := 30\n\n> evalf(Int(x^2.7 * exp(-2.4*x), x=0..3));\nmemory used=3.8MB, alloc=3.1MB, time=0.06\nmemory used=7.6MB, alloc=4.4MB, time=0.13\nmemory used=11.4MB, alloc=4.4MB, time=0.21\n                       0.154572952320789711837207551604\n```",
     "created_at": "2010-04-05T13:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -365,7 +356,6 @@ archive/issue_comments_027474.json:
 This was fixed by #6465. Despite the fact that we still have problems with numerical integration (#8321), the problem addressed here is solved. I suggest that we add a doctest and close this ticket.
 
 attachment:trac_3863-doctest.patch adds a trivial doctest. Here is the same computation in Maple: 
-
 
 ```
     |\^/|     Maple 12 (IBM INTEL LINUX)
@@ -382,7 +372,6 @@ memory used=7.6MB, alloc=4.4MB, time=0.13
 memory used=11.4MB, alloc=4.4MB, time=0.21
                        0.154572952320789711837207551604
 ```
-
 
 
 
@@ -427,7 +416,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_027477.json:
 ```json
 {
-    "body": "Hrm, the doctest from the patch doesn't work for me:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: review\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n() \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.5, Release Date: 2010-03-28                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/sage-4.3.5/<ipython console> in <module>()\n\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17049)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n",
+    "body": "Hrm, the doctest from the patch doesn't work for me:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: review\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n() \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.5, Release Date: 2010-03-28                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/sage-4.3.5/<ipython console> in <module>()\n\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17049)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```",
     "created_at": "2010-04-06T11:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -453,7 +442,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: cannot evaluate symbolic expression numerically
 ```
-
 
 
 
@@ -500,7 +488,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027480.json:
 ```json
 {
-    "body": "Replying to [comment:10 burcin]:\n> Thanks for the quick feedback Dan.\n> \n> Now I remember why I didn't suggest to close this ticket earlier. Conversion of the result back from maxima was broken (#7661). Can you try with the patch from #7661 applied. Here is a quick link attachment:trac_7661-maxima_convert_back.patch:ticket:7661.\n\nUh oh...that patch doesn't apply. On top of vanilla 4.3.5, it fails in calculus.py and random_tests.py. I tried to fix the failing hunk in calculus.py (and ignored random_tests.py, since that seemed like a harmless change), but with that applied, it still fails for me.\n\nI tried applying the patches from #7748 on top of the #7661 patch, but Sage doesn't even properly start:\n\n```\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/functions/other.py in <module>()\n    540 # We have to add the wrapper function manually to the symbol_table when we have\n\n    541 # two functions with different number of arguments and the same name\n\n--> 542 symbol_table['functions']['gamma'] = gamma\n    543 \n    544 class Function_gamma_inc(BuiltinFunction):\n\nNameError: name 'gamma' is not defined\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\n\nAny ideas?",
+    "body": "Replying to [comment:10 burcin]:\n> Thanks for the quick feedback Dan.\n> \n> Now I remember why I didn't suggest to close this ticket earlier. Conversion of the result back from maxima was broken (#7661). Can you try with the patch from #7661 applied. Here is a quick link attachment:trac_7661-maxima_convert_back.patch:ticket:7661.\n\n\nUh oh...that patch doesn't apply. On top of vanilla 4.3.5, it fails in calculus.py and random_tests.py. I tried to fix the failing hunk in calculus.py (and ignored random_tests.py, since that seemed like a harmless change), but with that applied, it still fails for me.\n\nI tried applying the patches from #7748 on top of the #7661 patch, but Sage doesn't even properly start:\n\n```\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/functions/other.py in <module>()\n    540 # We have to add the wrapper function manually to the symbol_table when we have\n\n    541 # two functions with different number of arguments and the same name\n\n--> 542 symbol_table['functions']['gamma'] = gamma\n    543 \n    544 class Function_gamma_inc(BuiltinFunction):\n\nNameError: name 'gamma' is not defined\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\nAny ideas?",
     "created_at": "2010-04-06T13:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -513,6 +501,7 @@ Replying to [comment:10 burcin]:
 > Thanks for the quick feedback Dan.
 > 
 > Now I remember why I didn't suggest to close this ticket earlier. Conversion of the result back from maxima was broken (#7661). Can you try with the patch from #7661 applied. Here is a quick link attachment:trac_7661-maxima_convert_back.patch:ticket:7661.
+
 
 Uh oh...that patch doesn't apply. On top of vanilla 4.3.5, it fails in calculus.py and random_tests.py. I tried to fix the failing hunk in calculus.py (and ignored random_tests.py, since that seemed like a harmless change), but with that applied, it still fails for me.
 
@@ -532,7 +521,6 @@ NameError: name 'gamma' is not defined
 Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 ```
-
 
 Any ideas?
 
@@ -563,7 +551,7 @@ I'm sorry for the inconvenience. Many thanks for helping me sort through the dep
 archive/issue_comments_027482.json:
 ```json
 {
-    "body": "Replying to [comment:12 burcin]:\n> Apparently #7661 depends on #7748, which already has a positive review, but requires 3 patches to be applied. Instructions are here: comment:15:ticket:7748\n\nSuccess! With vanilla 4.3.5 and the following patches applied, the doctest passes!\n\n```\n$ hg qapplied\ntrac_7748-exp_integral_ver2.4.3.3.alpha1.patch\ntrac_7748-incomplete_gamma_ver2.4.3.3.alpha1.patch\ntrac_7748-gamma_wrapper.3.patch\ntrac_7661-maxima_convert_back.patch\ntrac_3863-doctest.patch\n```\n\nWith the same set of patches applied to 4.3.3 on bsd.math, the doctest also passes. Positive review here.",
+    "body": "Replying to [comment:12 burcin]:\n> Apparently #7661 depends on #7748, which already has a positive review, but requires 3 patches to be applied. Instructions are here: comment:15:ticket:7748\n\n\nSuccess! With vanilla 4.3.5 and the following patches applied, the doctest passes!\n\n```\n$ hg qapplied\ntrac_7748-exp_integral_ver2.4.3.3.alpha1.patch\ntrac_7748-incomplete_gamma_ver2.4.3.3.alpha1.patch\ntrac_7748-gamma_wrapper.3.patch\ntrac_7661-maxima_convert_back.patch\ntrac_3863-doctest.patch\n```\nWith the same set of patches applied to 4.3.3 on bsd.math, the doctest also passes. Positive review here.",
     "created_at": "2010-04-07T02:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -575,6 +563,7 @@ archive/issue_comments_027482.json:
 Replying to [comment:12 burcin]:
 > Apparently #7661 depends on #7748, which already has a positive review, but requires 3 patches to be applied. Instructions are here: comment:15:ticket:7748
 
+
 Success! With vanilla 4.3.5 and the following patches applied, the doctest passes!
 
 ```
@@ -585,7 +574,6 @@ trac_7748-gamma_wrapper.3.patch
 trac_7661-maxima_convert_back.patch
 trac_3863-doctest.patch
 ```
-
 With the same set of patches applied to 4.3.3 on bsd.math, the doctest also passes. Positive review here.
 
 
@@ -631,7 +619,7 @@ Release manager: this ticket depends on #7748 and #7761.
 archive/issue_comments_027485.json:
 ```json
 {
-    "body": "Replying to [comment:14 ddrake]:\n> Release manager: this ticket depends on #7748 and #7761. \n\nAck, typo: it's #7748 and #7661.",
+    "body": "Replying to [comment:14 ddrake]:\n> Release manager: this ticket depends on #7748 and #7761. \n\n\nAck, typo: it's #7748 and #7661.",
     "created_at": "2010-04-07T02:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
@@ -642,6 +630,7 @@ archive/issue_comments_027485.json:
 
 Replying to [comment:14 ddrake]:
 > Release manager: this ticket depends on #7748 and #7761. 
+
 
 Ack, typo: it's #7748 and #7661.
 

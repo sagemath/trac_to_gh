@@ -93,7 +93,7 @@ Nick, Is this supposed be "with patch; needs review"?
 archive/issue_comments_034799.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nI applied this patch and doctested the rings directory.  I get a couple of doctest failures:\n\n\n```\nsage -t  devel/sage-main/sage/rings/integer_mod.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/integer_mod.pyx\", line 505:\n    sage: type(a.polynomial())\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n\nsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field_givaro.pyx\", line 1799:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n\nsage -t  devel/sage-main/sage/rings/finite_field.py\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field.py\", line 178:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n...\n\tsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/integer_mod.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field.py # 1 doctests failed\n\n```\n",
+    "body": "REFEREE REPORT:\n\nI applied this patch and doctested the rings directory.  I get a couple of doctest failures:\n\n```\nsage -t  devel/sage-main/sage/rings/integer_mod.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/integer_mod.pyx\", line 505:\n    sage: type(a.polynomial())\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n\nsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field_givaro.pyx\", line 1799:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n\nsage -t  devel/sage-main/sage/rings/finite_field.py\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field.py\", line 178:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n...\n\tsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/integer_mod.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field.py # 1 doctests failed\n\n```",
     "created_at": "2008-11-28T04:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ archive/issue_comments_034799.json:
 REFEREE REPORT:
 
 I applied this patch and doctested the rings directory.  I get a couple of doctest failures:
-
 
 ```
 sage -t  devel/sage-main/sage/rings/integer_mod.pyx
@@ -148,7 +147,6 @@ Got:
 	sage -t  devel/sage-main/sage/rings/finite_field.py # 1 doctests failed
 
 ```
-
 
 
 
@@ -229,7 +227,7 @@ What is the status of this?  If no one is going to do the templated version, the
 archive/issue_comments_034804.json:
 ```json
 {
-    "body": "I vote for closing this ticket\n\n\n```\nsage: f = GF(7)['x']([2, 1, 3])\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```\n",
+    "body": "I vote for closing this ticket\n\n```\nsage: f = GF(7)['x']([2, 1, 3])\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```",
     "created_at": "2010-07-21T16:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
@@ -240,13 +238,11 @@ archive/issue_comments_034804.json:
 
 I vote for closing this ticket
 
-
 ```
 sage: f = GF(7)['x']([2, 1, 3])
 sage: type(f)
 <type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>
 ```
-
 
 
 

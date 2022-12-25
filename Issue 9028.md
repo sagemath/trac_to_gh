@@ -142,7 +142,7 @@ fix plus an example to test it
 archive/issue_comments_083420.json:
 ```json
 {
-    "body": "Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by @benjaminfjones created at 2010-11-18 22:18:49\n\nI've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.\n\nMaybe someone can suggest a better example?\n\nHere is a before / after log to show that the fix works and that the example tests it.\n\n\n```\n\nsage: R = SillyPythonList()\nsage: list(R)\n[2L, 4L]\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n1\nsage: variance(R, bias=True)\n1\n\nsage: R = [2,4]\nsage: mean(R)\n3\nsage: variance(R)\n2\nsage: variance(R,bias=True)\n1\n\n### LOG (after patch)\nsage: R=SillyPythonList()\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\nsage: R = [2,4]\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\n```\n",
+    "body": "Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by @benjaminfjones created at 2010-11-18 22:18:49\n\nI've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.\n\nMaybe someone can suggest a better example?\n\nHere is a before / after log to show that the fix works and that the example tests it.\n\n```\n\nsage: R = SillyPythonList()\nsage: list(R)\n[2L, 4L]\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n1\nsage: variance(R, bias=True)\n1\n\nsage: R = [2,4]\nsage: mean(R)\n3\nsage: variance(R)\n2\nsage: variance(R,bias=True)\n1\n\n### LOG (after patch)\nsage: R=SillyPythonList()\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\nsage: R = [2,4]\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\n```",
     "created_at": "2010-11-18T22:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
@@ -158,7 +158,6 @@ I've attached a new patch witch includes the fix plus an example to test the aff
 Maybe someone can suggest a better example?
 
 Here is a before / after log to show that the fix works and that the example tests it.
-
 
 ```
 
@@ -198,7 +197,6 @@ sage: variance(R)
 sage: variance(R, bias=True)
 1
 ```
-
 
 
 

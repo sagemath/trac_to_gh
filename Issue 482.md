@@ -120,7 +120,7 @@ Mihcaek
 archive/issue_comments_002397.json:
 ```json
 {
-    "body": "Some comments, based on 3.1.3.alpha1:\n\n* attach? does work (so fixed)\n* print? does not work (so still an issue)\n* att[tab] gives attach, not attr (so fixed)\n* the following works when written on one line:\n\n```\nsage: time for i in range(10000): a = i^2\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n```\n\n* however, I cannot see how to make it work with a for loop spread over several lines\n\nSeveral of the other suggestions seem more appropriate for the FAQ (on the wiki) than for the tutorial (e.g. the cputime issue, the \"use screen instead of nohup\").  I think it is a good idea to mention screen somewhere in the tutorial, as well as a section about converting from .sage to .spyx.  I am happy to write a small paragraph about the former, but I'm not the right person for the latter.\n\nI've opened #4204 regarding screen, and someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.  Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.",
+    "body": "Some comments, based on 3.1.3.alpha1:\n\n* attach? does work (so fixed)\n* print? does not work (so still an issue)\n* att[tab] gives attach, not attr (so fixed)\n* the following works when written on one line:\n\n```\nsage: time for i in range(10000): a = i^2\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n```\n* however, I cannot see how to make it work with a for loop spread over several lines\n\nSeveral of the other suggestions seem more appropriate for the FAQ (on the wiki) than for the tutorial (e.g. the cputime issue, the \"use screen instead of nohup\").  I think it is a good idea to mention screen somewhere in the tutorial, as well as a section about converting from .sage to .spyx.  I am happy to write a small paragraph about the former, but I'm not the right person for the latter.\n\nI've opened #4204 regarding screen, and someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.  Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.",
     "created_at": "2008-09-27T02:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
@@ -141,7 +141,6 @@ sage: time for i in range(10000): a = i^2
 CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
 Wall time: 0.02 s
 ```
-
 * however, I cannot see how to make it work with a for loop spread over several lines
 
 Several of the other suggestions seem more appropriate for the FAQ (on the wiki) than for the tutorial (e.g. the cputime issue, the "use screen instead of nohup").  I think it is a good idea to mention screen somewhere in the tutorial, as well as a section about converting from .sage to .spyx.  I am happy to write a small paragraph about the former, but I'm not the right person for the latter.
@@ -155,7 +154,7 @@ I've opened #4204 regarding screen, and someone who agrees that the "sage 2 spyx
 archive/issue_comments_002398.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexGhitza]:\n> Someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.\n\nIsn't that covered by Cython already? What exactly would the goal of that section be?\n\n> Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.\n\nWell, that is really a Python issue. I do not recall it ever coming up.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 AlexGhitza]:\n> Someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.\n\n\nIsn't that covered by Cython already? What exactly would the goal of that section be?\n\n> Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.\n\n\nWell, that is really a Python issue. I do not recall it ever coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T02:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
@@ -167,9 +166,11 @@ archive/issue_comments_002398.json:
 Replying to [comment:6 AlexGhitza]:
 > Someone who agrees that the "sage 2 spyx" section should exist should open a ticket for that.
 
+
 Isn't that covered by Cython already? What exactly would the goal of that section be?
 
 > Maybe there should also be a ticket for "print?".  Then we can close this ancient and somewhat vague ticket.
+
 
 Well, that is really a Python issue. I do not recall it ever coming up.
 

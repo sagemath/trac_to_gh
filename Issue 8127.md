@@ -3,7 +3,7 @@
 archive/issues_008127.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  @seblabbe sage-combinat\n\nKeywords: string, word\n\nPython has low-level operations for strings and we should allow them for words. For example\n\n```\nsage: sage: s = \"ma maman est magique\"\nsage: s.split(' ')\n['ma', 'maman', 'est', 'magique']\nsage: s.split('ma')\n['', ' ', '', 'n est ', 'gique']\n```\n\n\nThe patch implements split and partition for words\n\n```\nsage: w = Word(\"ma maman est magique\")\nsage: w.split(' ')\n[word: ma, word: maman, word: est, word: magique]\nsage: w.split('ma')\n[word: , word:  , word: , word: n est , word: gique]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8127\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @seblabbe sage-combinat\n\nKeywords: string, word\n\nPython has low-level operations for strings and we should allow them for words. For example\n\n```\nsage: sage: s = \"ma maman est magique\"\nsage: s.split(' ')\n['ma', 'maman', 'est', 'magique']\nsage: s.split('ma')\n['', ' ', '', 'n est ', 'gique']\n```\n\nThe patch implements split and partition for words\n\n```\nsage: w = Word(\"ma maman est magique\")\nsage: w.split(' ')\n[word: ma, word: maman, word: est, word: magique]\nsage: w.split('ma')\n[word: , word:  , word: , word: n est , word: gique]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8127\n\n",
     "created_at": "2010-01-29T23:05:14Z",
     "labels": [
         "component: algebra"
@@ -31,7 +31,6 @@ sage: s.split('ma')
 ['', ' ', '', 'n est ', 'gique']
 ```
 
-
 The patch implements split and partition for words
 
 ```
@@ -41,7 +40,6 @@ sage: w.split(' ')
 sage: w.split('ma')
 [word: , word:  , word: , word: n est , word: gique]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8127
@@ -55,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8127
 archive/issue_comments_071331.json:
 ```json
 {
-    "body": "With the patch applied, I obtain some doctest failures :\n\n\n\n```\nsage -t  \"devel/sage-combinat/sage/combinat/words/morphism.py\"\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 485:\n    sage: w = m('aaab',datatype='str')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[28]>\", line 1, in <module>\n        w = m('aaab',datatype='str')###line 485:\n    sage: w = m('aaab',datatype='str')\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 582, in __call__\n        return self.codomain()((x for y in w for x in self._morph[y]), length=length, datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 272, in __call__\n        self._check(w)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 501, in _check\n        for a in itertools.islice(w, length):\n      File \"word_datatypes.pyx\", line 244, in sage.combinat.words.word_datatypes.WordDatatype_str.__iter__ (sage/combinat/words/word_datatypes.cpp:1480)\n        return iter(self._data)\n    TypeError: 'NoneType' object is not iterable\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 486:\n    sage: type(w)\nExpected:\n    <class 'sage.combinat.words.word.FiniteWord_str'>\nGot:\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 507:\n    sage: w = m([0],4,datatype='str')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 0 not in alphabet!\nGot:\n    Traceback (most recent call last):\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[37]>\", line 1, in <module>\n        w = m([Integer(0)],Integer(4),datatype='str')###line 507:\n    sage: w = m([0],4,datatype='str')\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 586, in __call__\n        return self(self(w, order-1),datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 582, in __call__\n        return self.codomain()((x for y in w for x in self._morph[y]), length=length, datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 272, in __call__\n        self._check(w)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 501, in _check\n        for a in itertools.islice(w, length):\n      File \"word_datatypes.pyx\", line 244, in sage.combinat.words.word_datatypes.WordDatatype_str.__iter__ (sage/combinat/words/word_datatypes.cpp:1480)\n        return iter(self._data)\n    TypeError: 'NoneType' object is not iterable\n**********************************************************************\n1 items had failures:\n   3 of  48 in __main__.example_8\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/slabbe/.sage//tmp/.doctest_morphism.py\n\t [3.6 s]\nexit code: 1024\n\n```\n",
+    "body": "With the patch applied, I obtain some doctest failures :\n\n\n```\nsage -t  \"devel/sage-combinat/sage/combinat/words/morphism.py\"\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 485:\n    sage: w = m('aaab',datatype='str')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[28]>\", line 1, in <module>\n        w = m('aaab',datatype='str')###line 485:\n    sage: w = m('aaab',datatype='str')\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 582, in __call__\n        return self.codomain()((x for y in w for x in self._morph[y]), length=length, datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 272, in __call__\n        self._check(w)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 501, in _check\n        for a in itertools.islice(w, length):\n      File \"word_datatypes.pyx\", line 244, in sage.combinat.words.word_datatypes.WordDatatype_str.__iter__ (sage/combinat/words/word_datatypes.cpp:1480)\n        return iter(self._data)\n    TypeError: 'NoneType' object is not iterable\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 486:\n    sage: type(w)\nExpected:\n    <class 'sage.combinat.words.word.FiniteWord_str'>\nGot:\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n**********************************************************************\nFile \"/Users/slabbe/Applications/sage-4.3.1/devel/sage-combinat/sage/combinat/words/morphism.py\", line 507:\n    sage: w = m([0],4,datatype='str')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: 0 not in alphabet!\nGot:\n    Traceback (most recent call last):\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[37]>\", line 1, in <module>\n        w = m([Integer(0)],Integer(4),datatype='str')###line 507:\n    sage: w = m([0],4,datatype='str')\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 586, in __call__\n        return self(self(w, order-1),datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/morphism.py\", line 582, in __call__\n        return self.codomain()((x for y in w for x in self._morph[y]), length=length, datatype=datatype)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 272, in __call__\n        self._check(w)\n      File \"/Users/slabbe/Applications/sage-4.3.1/local/lib/python/site-packages/sage/combinat/words/words.py\", line 501, in _check\n        for a in itertools.islice(w, length):\n      File \"word_datatypes.pyx\", line 244, in sage.combinat.words.word_datatypes.WordDatatype_str.__iter__ (sage/combinat/words/word_datatypes.cpp:1480)\n        return iter(self._data)\n    TypeError: 'NoneType' object is not iterable\n**********************************************************************\n1 items had failures:\n   3 of  48 in __main__.example_8\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/slabbe/.sage//tmp/.doctest_morphism.py\n\t [3.6 s]\nexit code: 1024\n\n```",
     "created_at": "2010-01-31T22:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ archive/issue_comments_071331.json:
 ```
 
 With the patch applied, I obtain some doctest failures :
-
 
 
 ```
@@ -141,7 +138,6 @@ exit code: 1024
 
 
 
-
 ---
 
 archive/issue_comments_071332.json:
@@ -165,7 +161,7 @@ Changing status from new to needs_review.
 archive/issue_comments_071333.json:
 ```json
 {
-    "body": "I just tested the patch. All test passed. Not tested the sphinx docbuild because the affected file is not part of the doc (maybe it should?). But I wonder if no blank line before the INPUT: line could raise a error in the docbuild process. I think the patch needs work for the reasons explained below.\n\n\nThe `string_rep()` output depends on the current state of the truncate length :\n\n\n```\nsage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')\nsage: u.string_rep()\n'abcdbruitbruit01234...ababbruitbruit0123...'\n```\n\n\nwhich leads to the following bug :\n\n\n```\nsage: w = Word(range(20))\nsage: u.split(w)\n[word: abcdbruitbruit01234...ababbruitbruit0123...]\nsage: WordOptions(truncate_length=5)\nsage: u.split(w)\n[word: abcdb..., word: ababb..., word: ababa...]\n```\n\n\nTo correct this, I suggest that the function `split` be supported only for str and `WordDatatype_str` object.\n\nSame suggestion for partition function:\n\n\n```\nsage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')\nsage: w = Word(range(20))\nsage: u.partition(w)\n[word: abcdbruitbruit01234...ababbruitbruit0123..., word: , word: ]\nsage: WordOptions(truncate_length=5)\nsage: u.partition(w)\n[word: abcdb..., word: 01234..., word: ababb...]\n```\n\n\n\nI think split should follow the behavior of the python split for str, i.e works for no input given :\n\n\n```\nsage: s = 'absdg asdfas asdfa'\nsage: s.split()\n['absdg', 'asdfas', 'asdfa']\nsage: s.split(' ')\n['absdg', 'asdfas', 'asdfa']\nsage: s.split(None)\n['absdg', 'asdfas', 'asdfa']\nsage: w = Word(s)\nsage: w.split()\nTraceback (most recent call last):\n...\nAttributeError: 'NoneType' object has no attribute 'string_rep'\nsage: w.split(' ')\n[word: absdg, word: asdfas, word: asdfa]\nsage: w.split(None)\nTraceback (most recent call last):\n...\nAttributeError: 'NoneType' object has no attribute 'string_rep'\n```\n\n\nThe INPUT block of `split` should mention the part `(optional, default: None)` for both arguments.\n\nFor both functions, I suggest to move the `..notes` block after the OUTPUT block.",
+    "body": "I just tested the patch. All test passed. Not tested the sphinx docbuild because the affected file is not part of the doc (maybe it should?). But I wonder if no blank line before the INPUT: line could raise a error in the docbuild process. I think the patch needs work for the reasons explained below.\n\n\nThe `string_rep()` output depends on the current state of the truncate length :\n\n```\nsage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')\nsage: u.string_rep()\n'abcdbruitbruit01234...ababbruitbruit0123...'\n```\n\nwhich leads to the following bug :\n\n```\nsage: w = Word(range(20))\nsage: u.split(w)\n[word: abcdbruitbruit01234...ababbruitbruit0123...]\nsage: WordOptions(truncate_length=5)\nsage: u.split(w)\n[word: abcdb..., word: ababb..., word: ababa...]\n```\n\nTo correct this, I suggest that the function `split` be supported only for str and `WordDatatype_str` object.\n\nSame suggestion for partition function:\n\n```\nsage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')\nsage: w = Word(range(20))\nsage: u.partition(w)\n[word: abcdbruitbruit01234...ababbruitbruit0123..., word: , word: ]\nsage: WordOptions(truncate_length=5)\nsage: u.partition(w)\n[word: abcdb..., word: 01234..., word: ababb...]\n```\n\n\nI think split should follow the behavior of the python split for str, i.e works for no input given :\n\n```\nsage: s = 'absdg asdfas asdfa'\nsage: s.split()\n['absdg', 'asdfas', 'asdfa']\nsage: s.split(' ')\n['absdg', 'asdfas', 'asdfa']\nsage: s.split(None)\n['absdg', 'asdfas', 'asdfa']\nsage: w = Word(s)\nsage: w.split()\nTraceback (most recent call last):\n...\nAttributeError: 'NoneType' object has no attribute 'string_rep'\nsage: w.split(' ')\n[word: absdg, word: asdfas, word: asdfa]\nsage: w.split(None)\nTraceback (most recent call last):\n...\nAttributeError: 'NoneType' object has no attribute 'string_rep'\n```\n\nThe INPUT block of `split` should mention the part `(optional, default: None)` for both arguments.\n\nFor both functions, I suggest to move the `..notes` block after the OUTPUT block.",
     "created_at": "2010-02-01T22:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
@@ -179,16 +175,13 @@ I just tested the patch. All test passed. Not tested the sphinx docbuild because
 
 The `string_rep()` output depends on the current state of the truncate length :
 
-
 ```
 sage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')
 sage: u.string_rep()
 'abcdbruitbruit01234...ababbruitbruit0123...'
 ```
 
-
 which leads to the following bug :
-
 
 ```
 sage: w = Word(range(20))
@@ -199,11 +192,9 @@ sage: u.split(w)
 [word: abcdb..., word: ababb..., word: ababa...]
 ```
 
-
 To correct this, I suggest that the function `split` be supported only for str and `WordDatatype_str` object.
 
 Same suggestion for partition function:
-
 
 ```
 sage: u = Word('abcdbruitbruit01234...ababbruitbruit01234...abababab')
@@ -216,9 +207,7 @@ sage: u.partition(w)
 ```
 
 
-
 I think split should follow the behavior of the python split for str, i.e works for no input given :
-
 
 ```
 sage: s = 'absdg asdfas asdfa'
@@ -240,7 +229,6 @@ Traceback (most recent call last):
 ...
 AttributeError: 'NoneType' object has no attribute 'string_rep'
 ```
-
 
 The INPUT block of `split` should mention the part `(optional, default: None)` for both arguments.
 

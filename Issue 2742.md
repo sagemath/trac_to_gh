@@ -50,7 +50,7 @@ Changing status from new to assigned.
 archive/issue_comments_018814.json:
 ```json
 {
-    "body": "Attachment [trac_2472-crystals.hg](tarball://root/attachments/some-uuid/ticket2742/trac_2472-crystals.hg) by @mwhansen created at 2008-03-31 20:01:17\n\nPeople who had patches in this bundle:\n\n\n```\nJason Bandlow\nDan Bump\nMike Hansen\nAnne Schilling\nNicolas Thiery\nJustin Walker\n```\n\n\nPositive review from me.",
+    "body": "Attachment [trac_2472-crystals.hg](tarball://root/attachments/some-uuid/ticket2742/trac_2472-crystals.hg) by @mwhansen created at 2008-03-31 20:01:17\n\nPeople who had patches in this bundle:\n\n```\nJason Bandlow\nDan Bump\nMike Hansen\nAnne Schilling\nNicolas Thiery\nJustin Walker\n```\n\nPositive review from me.",
     "created_at": "2008-03-31T20:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2742",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ Attachment [trac_2472-crystals.hg](tarball://root/attachments/some-uuid/ticket27
 
 People who had patches in this bundle:
 
-
 ```
 Jason Bandlow
 Dan Bump
@@ -72,7 +71,6 @@ Anne Schilling
 Nicolas Thiery
 Justin Walker
 ```
-
 
 Positive review from me.
 

@@ -3,7 +3,7 @@
 archive/issues_003373.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nFor x a ZZ variable, 1/x claims to be an integer:\n\n```\nsage: var('x', ZZ)\nx\nsage: (1/x).sym_parent()\nInteger Ring\n```\n\n\nBut in Sage, integer division always gives a rational:\n\n```\nsage: parent(1/1)\nRational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3373\n\n",
+    "body": "Assignee: @garyfurnish\n\nFor x a ZZ variable, 1/x claims to be an integer:\n\n```\nsage: var('x', ZZ)\nx\nsage: (1/x).sym_parent()\nInteger Ring\n```\n\nBut in Sage, integer division always gives a rational:\n\n```\nsage: parent(1/1)\nRational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3373\n\n",
     "created_at": "2008-06-05T20:07:17Z",
     "labels": [
         "component: symbolics",
@@ -26,14 +26,12 @@ sage: (1/x).sym_parent()
 Integer Ring
 ```
 
-
 But in Sage, integer division always gives a rational:
 
 ```
 sage: parent(1/1)
 Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3373
 

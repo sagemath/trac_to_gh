@@ -142,7 +142,7 @@ Thanks for creating this ticket and working on it! I was about just to create on
 archive/issue_comments_087805.json:
 ```json
 {
-    "body": "Replying to [comment:3 nthiery]:\n> Thanks for creating this ticket and working on it! I was about just to create one to suggest that the encoding lines \"# -*- coding: utf-8 -*-\" would not be stripped away.\n\nOops, never mind. This line is already propagated properly. Mine had a double # at the beginning.",
+    "body": "Replying to [comment:3 nthiery]:\n> Thanks for creating this ticket and working on it! I was about just to create one to suggest that the encoding lines \"# -*- coding: utf-8 -*-\" would not be stripped away.\n\n\nOops, never mind. This line is already propagated properly. Mine had a double # at the beginning.",
     "created_at": "2010-07-01T09:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9325",
     "type": "issue_comment",
@@ -153,5 +153,6 @@ archive/issue_comments_087805.json:
 
 Replying to [comment:3 nthiery]:
 > Thanks for creating this ticket and working on it! I was about just to create one to suggest that the encoding lines "# -*- coding: utf-8 -*-" would not be stripped away.
+
 
 Oops, never mind. This line is already propagated properly. Mine had a double # at the beginning.

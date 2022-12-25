@@ -3,7 +3,7 @@
 archive/issues_002928.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\n\n```\nK.<b> = Qp(13).extension(x^2+x-1)\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort\ntrap              python \"$@\"\n```\n\n\nApplying the patches from #2843 didn't fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2928\n\n",
+    "body": "Assignee: @roed314\n\n```\nK.<b> = Qp(13).extension(x^2+x-1)\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort\ntrap              python \"$@\"\n```\n\nApplying the patches from #2843 didn't fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2928\n\n",
     "created_at": "2008-04-15T05:49:17Z",
     "labels": [
         "component: number theory",
@@ -19,7 +19,6 @@ archive/issues_002928.json:
 ```
 Assignee: @roed314
 
-
 ```
 K.<b> = Qp(13).extension(x^2+x-1)
 fatal error:
@@ -28,7 +27,6 @@ exit...
 /Users/robert/sage/current/local/bin/sage-sage: line 357: 18024 Abort
 trap              python "$@"
 ```
-
 
 Applying the patches from #2843 didn't fix this. 
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2928
 archive/issue_comments_020113.json:
 ```json
 {
-    "body": "Hi Robert, \n\nmy alpha5 merge tree doesn't experience the problem:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha5$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha4, Release Date: 2008-04-12                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: K.<b> = Qp(13).extension(x^2+x-1)\nsage:\n```\n\nI would suggest you wait for alpha5 [out once I merge #2927, #2929 and the LinBox.spkg update not yet in trac] and then verify that it works for you, too.\n\nCheers,\n\nMichael",
+    "body": "Hi Robert, \n\nmy alpha5 merge tree doesn't experience the problem:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha5$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha4, Release Date: 2008-04-12                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: K.<b> = Qp(13).extension(x^2+x-1)\nsage:\n```\nI would suggest you wait for alpha5 [out once I merge #2927, #2929 and the LinBox.spkg update not yet in trac] and then verify that it works for you, too.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-15T05:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
@@ -65,7 +63,6 @@ mabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha5$ ./sage
 sage: K.<b> = Qp(13).extension(x^2+x-1)
 sage:
 ```
-
 I would suggest you wait for alpha5 [out once I merge #2927, #2929 and the LinBox.spkg update not yet in trac] and then verify that it works for you, too.
 
 Cheers,
@@ -95,7 +92,7 @@ archive/issue_events_006697.json:
 archive/issue_comments_020114.json:
 ```json
 {
-    "body": "This is fixed in my alpha4 tree (which also has #2903 and #2928 applied):\n\n```\nsage: K.<b> = Qp(13).extension(x^2+x-1)\nsage: print K\nUnramified Extension of 13-adic Field with capped relative precision 20 in b defined by (1 + O(13^20))*x^2 + (1 + O(13^20))*x + (12 + 12*13 + 12*13^2 + 12*13^3 + 12*13^4 + 12*13^5 + 12*13^6 + 12*13^7 + 12*13^8 + 12*13^9 + 12*13^10 + 12*13^11 + 12*13^12 + 12*13^13 + 12*13^14 + 12*13^15 + 12*13^16 + 12*13^17 + 12*13^18 + 12*13^19 + O(13^20))\n```\n\nso this ticket is being closed.",
+    "body": "This is fixed in my alpha4 tree (which also has #2903 and #2928 applied):\n\n```\nsage: K.<b> = Qp(13).extension(x^2+x-1)\nsage: print K\nUnramified Extension of 13-adic Field with capped relative precision 20 in b defined by (1 + O(13^20))*x^2 + (1 + O(13^20))*x + (12 + 12*13 + 12*13^2 + 12*13^3 + 12*13^4 + 12*13^5 + 12*13^6 + 12*13^7 + 12*13^8 + 12*13^9 + 12*13^10 + 12*13^11 + 12*13^12 + 12*13^13 + 12*13^14 + 12*13^15 + 12*13^16 + 12*13^17 + 12*13^18 + 12*13^19 + O(13^20))\n```\nso this ticket is being closed.",
     "created_at": "2008-04-15T11:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2928",
     "type": "issue_comment",
@@ -111,7 +108,6 @@ sage: K.<b> = Qp(13).extension(x^2+x-1)
 sage: print K
 Unramified Extension of 13-adic Field with capped relative precision 20 in b defined by (1 + O(13^20))*x^2 + (1 + O(13^20))*x + (12 + 12*13 + 12*13^2 + 12*13^3 + 12*13^4 + 12*13^5 + 12*13^6 + 12*13^7 + 12*13^8 + 12*13^9 + 12*13^10 + 12*13^11 + 12*13^12 + 12*13^13 + 12*13^14 + 12*13^15 + 12*13^16 + 12*13^17 + 12*13^18 + 12*13^19 + O(13^20))
 ```
-
 so this ticket is being closed.
 
 

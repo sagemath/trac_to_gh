@@ -3,7 +3,7 @@
 archive/issues_002793.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nIn the Python tutorial (http://docs.python.org/tut/node5.html#SECTION005120000000000000000)\n there's an example of making a string:\n\n```\n>>> \"\\\"Yes,\\\" he said.\"\n'\"Yes,\" he said.'\n```\n\n\nThis fails in Sage because of the preparser!\n\n\n```\nsage: \"\\\"Yes,\\\" he said.\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     \"\\\"Yes,._backslash_()\" he said.\"\n                             ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\n\nThis is obviously a bug in the _backslash_ or \"in quotes\" part of the preparser.  So it's almost certainly my fault.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2793\n\n",
+    "body": "Assignee: cwitty\n\nIn the Python tutorial (http://docs.python.org/tut/node5.html#SECTION005120000000000000000)\n there's an example of making a string:\n\n```\n>>> \"\\\"Yes,\\\" he said.\"\n'\"Yes,\" he said.'\n```\n\nThis fails in Sage because of the preparser!\n\n```\nsage: \"\\\"Yes,\\\" he said.\"\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     \"\\\"Yes,._backslash_()\" he said.\"\n                             ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\nThis is obviously a bug in the _backslash_ or \"in quotes\" part of the preparser.  So it's almost certainly my fault.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2793\n\n",
     "created_at": "2008-04-04T00:44:28Z",
     "labels": [
         "component: misc",
@@ -26,9 +26,7 @@ In the Python tutorial (http://docs.python.org/tut/node5.html#SECTION00512000000
 '"Yes," he said.'
 ```
 
-
 This fails in Sage because of the preparser!
-
 
 ```
 sage: "\"Yes,\" he said."
@@ -38,7 +36,6 @@ sage: "\"Yes,\" he said."
                              ^
 <type 'exceptions.SyntaxError'>: invalid syntax
 ```
-
 
 This is obviously a bug in the _backslash_ or "in quotes" part of the preparser.  So it's almost certainly my fault.
 

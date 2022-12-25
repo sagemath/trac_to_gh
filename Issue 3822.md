@@ -3,7 +3,7 @@
 archive/issues_003822.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\n\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
+    "body": "Assignee: @itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
     "created_at": "2008-08-12T20:20:22Z",
     "labels": [
         "component: notebook",
@@ -23,12 +23,12 @@ Assignee: @itolkov
 > which lead to the browser spitting out errors, etc.  Basically you
 > exceed hard limits.
 
+
 The problem is that something like
 
 ```
 slider(1, 10^6)
 ```
-
 generates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.
 
 
@@ -64,7 +64,7 @@ Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.pat
 archive/issue_comments_027127.json:
 ```json
 {
-    "body": "It is still broken since you didn't deal with the case when the input is a list of values.  \n\nE.g.,\n\n```\n@interact\ndef _(n=range_slider([1..10000])):\n    print n\n```\n\n\nbreaks it.",
+    "body": "It is still broken since you didn't deal with the case when the input is a list of values.  \n\nE.g.,\n\n```\n@interact\ndef _(n=range_slider([1..10000])):\n    print n\n```\n\nbreaks it.",
     "created_at": "2008-08-12T21:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ E.g.,
 def _(n=range_slider([1..10000])):
     print n
 ```
-
 
 breaks it.
 
@@ -150,7 +149,7 @@ archive/issue_comments_027130.json:
 archive/issue_comments_027131.json:
 ```json
 {
-    "body": "Good job.  Note that this still breaks things.  But still this patch needs to go in.\n\n\n```\n@interact\ndef _(n=[1..10^5]):\n    print n\n```\n",
+    "body": "Good job.  Note that this still breaks things.  But still this patch needs to go in.\n\n```\n@interact\ndef _(n=[1..10^5]):\n    print n\n```",
     "created_at": "2008-08-15T10:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
@@ -161,13 +160,11 @@ archive/issue_comments_027131.json:
 
 Good job.  Note that this still breaks things.  But still this patch needs to go in.
 
-
 ```
 @interact
 def _(n=[1..10^5]):
     print n
 ```
-
 
 
 

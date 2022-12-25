@@ -3,7 +3,7 @@
 archive/issues_007758.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long \"devel/sage/sage/numerical/mip.pyx\"**********************************************************************\nFile \"/Users/wstein/build/sage-4.3.rc1/devel/sage/sage/numerical/mip.pyx\", line 364:\n    sage: p.show()\nExpected:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x1 is a real variable (min=0.0, max=+oo)\n      x0 is a real variable (min=0.0, max=+oo)\nGot:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x0 is a real variable (min=0.0, max=+oo)\n      x1 is a real variable (min=0.0, max=+oo)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7758\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long \"devel/sage/sage/numerical/mip.pyx\"**********************************************************************\nFile \"/Users/wstein/build/sage-4.3.rc1/devel/sage/sage/numerical/mip.pyx\", line 364:\n    sage: p.show()\nExpected:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x1 is a real variable (min=0.0, max=+oo)\n      x0 is a real variable (min=0.0, max=+oo)\nGot:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x0 is a real variable (min=0.0, max=+oo)\n      x1 is a real variable (min=0.0, max=+oo)\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7758\n\n",
     "created_at": "2009-12-24T07:52:44Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_007758.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long "devel/sage/sage/numerical/mip.pyx"**********************************************************************
@@ -42,7 +41,6 @@ Got:
       x1 is a real variable (min=0.0, max=+oo)
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7758
 

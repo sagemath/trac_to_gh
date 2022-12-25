@@ -3,7 +3,7 @@
 archive/issues_001320.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  bober\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\n\n```\n>>> Someone is eventually going to ask for a routine to test for planarity. I\n>>> believe that there are good ones in existence, but it's going to be\n>>> hard to get\n>>> a good one with an open source licence.\n>> The nauty README has this to say about the new planarity testing feature:\n>> \"New program planarg to test for planarity and find planar embeddings:\n>> planarg -help for details. The planarity code was written by Paulette\n>> Lieby for the Magma project and used with permission.\"\n>>\n>> Does anyone know Paulette Lieby? Can we ask about releasing the code\n>> under GPL? It looks like the source has now been released as a part of\n>> nauty.\n> Emily Kirkman understands a linear time algorithm for testing for\n> planarity. There is one in BOOST, which is GPL, and has been nominated\n> for inclusion in Sage several times.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1320\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  bober\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\n```\n>>> Someone is eventually going to ask for a routine to test for planarity. I\n>>> believe that there are good ones in existence, but it's going to be\n>>> hard to get\n>>> a good one with an open source licence.\n>> The nauty README has this to say about the new planarity testing feature:\n>> \"New program planarg to test for planarity and find planar embeddings:\n>> planarg -help for details. The planarity code was written by Paulette\n>> Lieby for the Magma project and used with permission.\"\n>>\n>> Does anyone know Paulette Lieby? Can we ask about releasing the code\n>> under GPL? It looks like the source has now been released as a part of\n>> nauty.\n> Emily Kirkman understands a linear time algorithm for testing for\n> planarity. There is one in BOOST, which is GPL, and has been nominated\n> for inclusion in Sage several times.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1320\n\n",
     "created_at": "2007-11-28T20:08:11Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ Keywords: graphs
 
 From Chris Godsil's wishlist.
 
-
 ```
 >>> Someone is eventually going to ask for a routine to test for planarity. I
 >>> believe that there are good ones in existence, but it's going to be
@@ -41,7 +40,6 @@ From Chris Godsil's wishlist.
 > planarity. There is one in BOOST, which is GPL, and has been nominated
 > for inclusion in Sage several times.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1320
@@ -162,7 +160,7 @@ archive/issue_events_003450.json:
 archive/issue_comments_008378.json:
 ```json
 {
-    "body": "Hi, I had a single, easy to fix merge conflict:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.3.rc0/devel/sage-main/sage/graphs/graph.py.orig.1734827483\nfrom sage.graphs.graph_coloring import chromatic_number, chromatic_polynomial\n=======\nfrom sage.rings.rational import Rational\n```\n\nThe above was caused by the work on the chromatic number and chromatic polynomial by Tom.\n||||||| /tmp/graph.py~base.vsk2R5\nCheers,\n\nMichael",
+    "body": "Hi, I had a single, easy to fix merge conflict:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.3.rc0/devel/sage-main/sage/graphs/graph.py.orig.1734827483\nfrom sage.graphs.graph_coloring import chromatic_number, chromatic_polynomial\n=======\nfrom sage.rings.rational import Rational\n```\nThe above was caused by the work on the chromatic number and chromatic polynomial by Tom.\n||||||| /tmp/graph.py~base.vsk2R5\nCheers,\n\nMichael",
     "created_at": "2008-02-28T06:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1320",
     "type": "issue_comment",
@@ -179,7 +177,6 @@ from sage.graphs.graph_coloring import chromatic_number, chromatic_polynomial
 =======
 from sage.rings.rational import Rational
 ```
-
 The above was caused by the work on the chromatic number and chromatic polynomial by Tom.
 ||||||| /tmp/graph.py~base.vsk2R5
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_008100.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIn sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:\n\n```\nsage: pwd\n'/Users/palmieri'\nsage: notebook()\nThe notebook files are stored in: sage_notebook.sagenb\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n...\n^C\n...\nsage: pwd\n'/Users/palmieri/.sage'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8100\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:\n\n```\nsage: pwd\n'/Users/palmieri'\nsage: notebook()\nThe notebook files are stored in: sage_notebook.sagenb\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n...\n^C\n...\nsage: pwd\n'/Users/palmieri/.sage'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8100\n\n",
     "created_at": "2010-01-27T23:45:50Z",
     "labels": [
         "component: notebook",
@@ -36,7 +36,6 @@ The notebook files are stored in: sage_notebook.sagenb
 sage: pwd
 '/Users/palmieri/.sage'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8100

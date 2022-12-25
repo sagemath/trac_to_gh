@@ -84,7 +84,7 @@ Bundle also contains #1473
 archive/issue_comments_009663.json:
 ```json
 {
-    "body": "\n```\n    sage: from sage.plot.plot3d.shapes import *\n    sage: from sage.plot.plot3d.plot3d import plot3d\n    sage: S = Sphere(.5, color='yellow')\n    sage: S += Cone(.5, .5, color='red').translate(0,0,.3)\n    sage: S += Sphere(.1, color='white').translate(.45,-.1,.15) + Sphere(.05, color='black').translate(.51,-.1,.17)\n    sage: S += Sphere(.1, color='white').translate(.45, .1,.15) + Sphere(.05, color='black').translate(.51, .1,.17)\n    sage: S += Sphere(.1, color='yellow').translate(.5, 0, -.2)\n    sage: def f(x,y): return math.exp(x/5)*math.cos(y)\n```\n\n\n```\n    sage: P = plot3d(f,(-5,5),(-5,5), ['red','yellow'], max_depth=10)\n    sage: cape_man = P.scale(.2)+S.translate(1,0,0)\n    sage: cape_man.export_jmol('/path/to/a.script')\n```\n\nThen, after downloading jmol, do \n\n```\n./jmol /path/to/a.script\n```\n",
+    "body": "```\n    sage: from sage.plot.plot3d.shapes import *\n    sage: from sage.plot.plot3d.plot3d import plot3d\n    sage: S = Sphere(.5, color='yellow')\n    sage: S += Cone(.5, .5, color='red').translate(0,0,.3)\n    sage: S += Sphere(.1, color='white').translate(.45,-.1,.15) + Sphere(.05, color='black').translate(.51,-.1,.17)\n    sage: S += Sphere(.1, color='white').translate(.45, .1,.15) + Sphere(.05, color='black').translate(.51, .1,.17)\n    sage: S += Sphere(.1, color='yellow').translate(.5, 0, -.2)\n    sage: def f(x,y): return math.exp(x/5)*math.cos(y)\n```\n\n```\n    sage: P = plot3d(f,(-5,5),(-5,5), ['red','yellow'], max_depth=10)\n    sage: cape_man = P.scale(.2)+S.translate(1,0,0)\n    sage: cape_man.export_jmol('/path/to/a.script')\n```\nThen, after downloading jmol, do \n\n```\n./jmol /path/to/a.script\n```",
     "created_at": "2007-12-15T00:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ archive/issue_comments_009663.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
     sage: from sage.plot.plot3d.shapes import *
@@ -105,19 +104,16 @@ archive/issue_comments_009663.json:
     sage: def f(x,y): return math.exp(x/5)*math.cos(y)
 ```
 
-
 ```
     sage: P = plot3d(f,(-5,5),(-5,5), ['red','yellow'], max_depth=10)
     sage: cape_man = P.scale(.2)+S.translate(1,0,0)
     sage: cape_man.export_jmol('/path/to/a.script')
 ```
-
 Then, after downloading jmol, do 
 
 ```
 ./jmol /path/to/a.script
 ```
-
 
 
 
@@ -144,7 +140,7 @@ Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol
 archive/issue_comments_009665.json:
 ```json
 {
-    "body": "It works perfectly!!! Of course, it needs some doctests...\n\nTry this out, it's awesome:\n\n```\n sage: from sage.plot.plot3d.shapes import *\n    sage: from sage.plot.plot3d.plot3d import plot3d\n    sage: S = Sphere(.5, color='yellow')\n    sage: S += Cone(.5, .5, color='red').translate(0,0,.3)\n    sage: S += Sphere(.1, color='white').translate(.45,-.1,.15) + Sphere(.05, color='black').translate(.51,-.1,.17)\n    sage: S += Sphere(.1, color='white').translate(.45, .1,.15) + Sphere(.05, color='black').translate(.51, .1,.17)\n    sage: S += Sphere(.1, color='yellow').translate(.5, 0, -.2)\n    sage: def f(x,y): return math.exp(x/5)*math.cos(y)\n    sage: P = plot3d(f,(-200,20),(-200,20), ['red','yellow'], max_depth=10)\n    sage: cape_man = P.scale(.2)+S.translate(1,0,0)\n    sage: cape_man.export_jmol('/Users/was/sage-2.9.alpha7/jmol/a.script')\n```\n",
+    "body": "It works perfectly!!! Of course, it needs some doctests...\n\nTry this out, it's awesome:\n\n```\n sage: from sage.plot.plot3d.shapes import *\n    sage: from sage.plot.plot3d.plot3d import plot3d\n    sage: S = Sphere(.5, color='yellow')\n    sage: S += Cone(.5, .5, color='red').translate(0,0,.3)\n    sage: S += Sphere(.1, color='white').translate(.45,-.1,.15) + Sphere(.05, color='black').translate(.51,-.1,.17)\n    sage: S += Sphere(.1, color='white').translate(.45, .1,.15) + Sphere(.05, color='black').translate(.51, .1,.17)\n    sage: S += Sphere(.1, color='yellow').translate(.5, 0, -.2)\n    sage: def f(x,y): return math.exp(x/5)*math.cos(y)\n    sage: P = plot3d(f,(-200,20),(-200,20), ['red','yellow'], max_depth=10)\n    sage: cape_man = P.scale(.2)+S.translate(1,0,0)\n    sage: cape_man.export_jmol('/Users/was/sage-2.9.alpha7/jmol/a.script')\n```",
     "created_at": "2007-12-15T01:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
@@ -170,7 +166,6 @@ Try this out, it's awesome:
     sage: cape_man = P.scale(.2)+S.translate(1,0,0)
     sage: cape_man.export_jmol('/Users/was/sage-2.9.alpha7/jmol/a.script')
 ```
-
 
 
 

@@ -197,7 +197,7 @@ and doing `hg status`, I see lots of changes haven't been checked in. So I'm reo
 archive/issue_comments_050182.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> After uncompressing \n> \n> http://sage.math.washington.edu/home/wstein/patches/openopt-0.24.spkg\n> \n> and doing `hg status`, I see lots of changes haven't been checked in.\n\nNo, that's wrong.  Everything was checked in.  The problem is that there was no hgignore, so all possible files that could get added to the repo (i.e. the stuff in src) got listed.  I've added an .hgignore and rebuilt the spkg then posted it again in the optional package repo.",
+    "body": "Replying to [comment:4 mvngu]:\n> After uncompressing \n> \n> http://sage.math.washington.edu/home/wstein/patches/openopt-0.24.spkg\n> \n> and doing `hg status`, I see lots of changes haven't been checked in.\n\n\nNo, that's wrong.  Everything was checked in.  The problem is that there was no hgignore, so all possible files that could get added to the repo (i.e. the stuff in src) got listed.  I've added an .hgignore and rebuilt the spkg then posted it again in the optional package repo.",
     "created_at": "2009-07-20T19:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
@@ -213,6 +213,7 @@ Replying to [comment:4 mvngu]:
 > 
 > and doing `hg status`, I see lots of changes haven't been checked in.
 
+
 No, that's wrong.  Everything was checked in.  The problem is that there was no hgignore, so all possible files that could get added to the repo (i.e. the stuff in src) got listed.  I've added an .hgignore and rebuilt the spkg then posted it again in the optional package repo.
 
 
@@ -222,7 +223,7 @@ No, that's wrong.  Everything was checked in.  The problem is that there was no 
 archive/issue_comments_050183.json:
 ```json
 {
-    "body": "installs fine on kbuntu 9.04/32bit /w sage 4.1. I'm able to run an arbitrary example from the openopt website as a test problem. It uses the \"ralg\" solver provided by openopt.\n\n\n```\npreparser(False)\nfrom numpy import *\nfrom openopt import NLP\nn = 10\nan = arange(n) # array [0, 1, 2, ..., n-1]\nx0 = n+15*(1+cos(an))\nf = lambda x: (x**2).sum() + sqrt(x**3-arange(n)**3).sum()\ndf = lambda x: 2*x + 0.5*3*x**2/sqrt(x**3-arange(n)**3)\nc = lambda x: an**3 - x**3\ndc = lambda x: diag(-3 * x**2)\nlb = arange(n)\np = NLP(f, x0, df=df, lb=lb, c=c, dc=dc, iprint = 100, maxIter = 10000, maxFunEvals = 1e8)\nr = p.solve('ralg')\n# expected r.xf = [0, 1, 2, ..., n-1]\n```\n\n\n\n```\nsage: r = p.solve('ralg')\n-----------------------------------------------------\nsolver: ralg   problem: unnamed   goal: minimum\n iter    objFunVal    log10(maxResidual)\n    0  9.129e+03            -100.00\n  100  4.104e+03            -100.00\n  169  2.878e+02            -100.00\nistop:  3 (|| X[k] - X[k-1] || < xtol)\nSolver:   Time Elapsed = 2.41   CPU Time Elapsed = 1.88\nobjFunValue: 287.75368 (feasible, max constraint =  0)\n\nsage: # expected r.xf = [0, 1, 2, ..., n-1]\nsage: r.xf\n\narray([ 0.5964556 ,  1.00355187,  2.00415294,  3.00156818,  4.0012493 ,\n        5.00080644,  6.00036981,  7.00052146,  8.00016061,  9.00015341])\n\n```\n",
+    "body": "installs fine on kbuntu 9.04/32bit /w sage 4.1. I'm able to run an arbitrary example from the openopt website as a test problem. It uses the \"ralg\" solver provided by openopt.\n\n```\npreparser(False)\nfrom numpy import *\nfrom openopt import NLP\nn = 10\nan = arange(n) # array [0, 1, 2, ..., n-1]\nx0 = n+15*(1+cos(an))\nf = lambda x: (x**2).sum() + sqrt(x**3-arange(n)**3).sum()\ndf = lambda x: 2*x + 0.5*3*x**2/sqrt(x**3-arange(n)**3)\nc = lambda x: an**3 - x**3\ndc = lambda x: diag(-3 * x**2)\nlb = arange(n)\np = NLP(f, x0, df=df, lb=lb, c=c, dc=dc, iprint = 100, maxIter = 10000, maxFunEvals = 1e8)\nr = p.solve('ralg')\n# expected r.xf = [0, 1, 2, ..., n-1]\n```\n\n```\nsage: r = p.solve('ralg')\n-----------------------------------------------------\nsolver: ralg   problem: unnamed   goal: minimum\n iter    objFunVal    log10(maxResidual)\n    0  9.129e+03            -100.00\n  100  4.104e+03            -100.00\n  169  2.878e+02            -100.00\nistop:  3 (|| X[k] - X[k-1] || < xtol)\nSolver:   Time Elapsed = 2.41   CPU Time Elapsed = 1.88\nobjFunValue: 287.75368 (feasible, max constraint =  0)\n\nsage: # expected r.xf = [0, 1, 2, ..., n-1]\nsage: r.xf\n\narray([ 0.5964556 ,  1.00355187,  2.00415294,  3.00156818,  4.0012493 ,\n        5.00080644,  6.00036981,  7.00052146,  8.00016061,  9.00015341])\n\n```",
     "created_at": "2009-07-27T13:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
@@ -232,7 +233,6 @@ archive/issue_comments_050183.json:
 ```
 
 installs fine on kbuntu 9.04/32bit /w sage 4.1. I'm able to run an arbitrary example from the openopt website as a test problem. It uses the "ralg" solver provided by openopt.
-
 
 ```
 preparser(False)
@@ -250,8 +250,6 @@ p = NLP(f, x0, df=df, lb=lb, c=c, dc=dc, iprint = 100, maxIter = 10000, maxFunEv
 r = p.solve('ralg')
 # expected r.xf = [0, 1, 2, ..., n-1]
 ```
-
-
 
 ```
 sage: r = p.solve('ralg')
@@ -272,7 +270,6 @@ array([ 0.5964556 ,  1.00355187,  2.00415294,  3.00156818,  4.0012493 ,
         5.00080644,  6.00036981,  7.00052146,  8.00016061,  9.00015341])
 
 ```
-
 
 
 

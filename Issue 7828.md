@@ -68,7 +68,7 @@ Especially, if some of the methods are .sign().
 archive/issue_comments_067652.json:
 ```json
 {
-    "body": "Okay, this makes lots of sense, and in fact we should check hasattr with that first.  Patch coming up, which should work but will also allow (perhaps this is not good):\n\n```\n            sage: p = PermutationGroupElement('(3,4,8,7,9)')\n            sage: p.sign()\n            1\n            sage: sign(p)\n            1\n```\n",
+    "body": "Okay, this makes lots of sense, and in fact we should check hasattr with that first.  Patch coming up, which should work but will also allow (perhaps this is not good):\n\n```\n            sage: p = PermutationGroupElement('(3,4,8,7,9)')\n            sage: p.sign()\n            1\n            sage: sign(p)\n            1\n```",
     "created_at": "2010-05-26T19:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7828",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ Okay, this makes lots of sense, and in fact we should check hasattr with that fi
             sage: sign(p)
             1
 ```
-
 
 
 
@@ -189,7 +188,7 @@ Also, I looked for places where sgn() was used/defined and found a redundant  de
 archive/issue_comments_067658.json:
 ```json
 {
-    "body": "> I did wonder whether it would be better to return a Sage integer rather than an int?\n\nHmm, that is an interesting thing I should have considered but did not.  As long as we are consistent, that's probably the main thing, though it is often helpful to return something that has the Integer methods... Are there any current sign()/sgn() methods that return something other than an int?  \n\nUsually one just adds or multiplies it with Integers, but I could imagine that sometimes the output itself would be important and that it should also then be an Integer.  If so... another ticket, or on this one?",
+    "body": "> I did wonder whether it would be better to return a Sage integer rather than an int?\n\n\nHmm, that is an interesting thing I should have considered but did not.  As long as we are consistent, that's probably the main thing, though it is often helpful to return something that has the Integer methods... Are there any current sign()/sgn() methods that return something other than an int?  \n\nUsually one just adds or multiplies it with Integers, but I could imagine that sometimes the output itself would be important and that it should also then be an Integer.  If so... another ticket, or on this one?",
     "created_at": "2010-05-28T00:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7828",
     "type": "issue_comment",
@@ -199,6 +198,7 @@ archive/issue_comments_067658.json:
 ```
 
 > I did wonder whether it would be better to return a Sage integer rather than an int?
+
 
 Hmm, that is an interesting thing I should have considered but did not.  As long as we are consistent, that's probably the main thing, though it is often helpful to return something that has the Integer methods... Are there any current sign()/sgn() methods that return something other than an int?  
 

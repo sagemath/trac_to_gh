@@ -102,7 +102,7 @@ archive/issue_comments_069979.json:
 archive/issue_comments_069980.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> #5155 has a similar fix along with other stuff for preventing stuff to be written to $SAGE_ROOT\n\nOkay, I'll mark this as a duplicate.",
+    "body": "Replying to [comment:2 mhansen]:\n> #5155 has a similar fix along with other stuff for preventing stuff to be written to $SAGE_ROOT\n\n\nOkay, I'll mark this as a duplicate.",
     "created_at": "2010-01-21T21:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8023",
     "type": "issue_comment",
@@ -113,6 +113,7 @@ archive/issue_comments_069980.json:
 
 Replying to [comment:2 mhansen]:
 > #5155 has a similar fix along with other stuff for preventing stuff to be written to $SAGE_ROOT
+
 
 Okay, I'll mark this as a duplicate.
 

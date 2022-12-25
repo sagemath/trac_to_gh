@@ -3,7 +3,7 @@
 archive/issues_002596.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py\n**********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2596\n\n",
+    "body": "Assignee: failure\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py\n**********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2596\n\n",
     "created_at": "2008-03-19T13:31:01Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002596.json:
 }
 ```
 Assignee: failure
-
 
 ```
 sage -t -long devel/sage/sage/plot/plot.py
@@ -45,7 +44,6 @@ For whitespace errors, see the file .doctest_plot.py
          [68.5 s]
 exit code: 256
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2596
 

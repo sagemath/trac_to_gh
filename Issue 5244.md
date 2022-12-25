@@ -3,7 +3,7 @@
 archive/issues_005244.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: is_unit, symbolic ring\n\nHere is the code of is_unit for symbolic rings (it is actually iherited from Ring):\n\n```\n    def is_unit(self):\n        if self == 1 or self == -1:\n            return True\n        raise NotImplementedError\n```\n\nOn can do better !!!\n\nAs a result\n\n```\nsage: m=matrix(SR, 2,2)\nsage: m.is_invertible()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5244\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: is_unit, symbolic ring\n\nHere is the code of is_unit for symbolic rings (it is actually iherited from Ring):\n\n```\n    def is_unit(self):\n        if self == 1 or self == -1:\n            return True\n        raise NotImplementedError\n```\nOn can do better !!!\n\nAs a result\n\n```\nsage: m=matrix(SR, 2,2)\nsage: m.is_invertible()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5244\n\n",
     "created_at": "2009-02-12T14:06:17Z",
     "labels": [
         "component: algebra",
@@ -30,7 +30,6 @@ Here is the code of is_unit for symbolic rings (it is actually iherited from Rin
             return True
         raise NotImplementedError
 ```
-
 On can do better !!!
 
 As a result
@@ -41,7 +40,6 @@ sage: m.is_invertible()
 ---------------------------------------------------------------------------
 NotImplementedError                       Traceback (most recent call last)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5244
@@ -218,7 +216,7 @@ archive/issue_events_012177.json:
 archive/issue_comments_040130.json:
 ```json
 {
-    "body": "I have doctested this patch on top of #5242 in my current Sage 3.3.rc1 merge tree and:\n\n```\nAll tests passed!\n```\n\n\nCheers,\n\nMichael",
+    "body": "I have doctested this patch on top of #5242 in my current Sage 3.3.rc1 merge tree and:\n\n```\nAll tests passed!\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T16:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5244",
     "type": "issue_comment",
@@ -232,7 +230,6 @@ I have doctested this patch on top of #5242 in my current Sage 3.3.rc1 merge tre
 ```
 All tests passed!
 ```
-
 
 Cheers,
 

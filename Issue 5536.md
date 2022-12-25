@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5536
 archive/issue_comments_042963.json:
 ```json
 {
-    "body": "Attachment [permgp.patch](tarball://root/attachments/some-uuid/ticket5536/permgp.patch) by mvngu created at 2009-03-17 05:51:29\n\nREFEREE REPORT\n\n\n\nThe patch **permgp.patch** applies OK against Sage 3.4 and all doctests passed with the options\n\n```\n-t -long\n```\n\nThe reference manual builds fine. Looking at the HTML doc for `sage/groups/perm_gps/permgroup.py`, I see that the patch fixes the formatting issues that it meant to fix. So positive review. \n\n\n\nHowever, while reviewing the patch I noticed that there are more formatting issues in `sage/groups/perm_gps/permgroup.py`. But these are addressed in ticket #5542.",
+    "body": "Attachment [permgp.patch](tarball://root/attachments/some-uuid/ticket5536/permgp.patch) by mvngu created at 2009-03-17 05:51:29\n\nREFEREE REPORT\n\n\n\nThe patch **permgp.patch** applies OK against Sage 3.4 and all doctests passed with the options\n\n```\n-t -long\n```\nThe reference manual builds fine. Looking at the HTML doc for `sage/groups/perm_gps/permgroup.py`, I see that the patch fixes the formatting issues that it meant to fix. So positive review. \n\n\n\nHowever, while reviewing the patch I noticed that there are more formatting issues in `sage/groups/perm_gps/permgroup.py`. But these are addressed in ticket #5542.",
     "created_at": "2009-03-17T05:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5536",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ The patch **permgp.patch** applies OK against Sage 3.4 and all doctests passed w
 ```
 -t -long
 ```
-
 The reference manual builds fine. Looking at the HTML doc for `sage/groups/perm_gps/permgroup.py`, I see that the patch fixes the formatting issues that it meant to fix. So positive review. 
 
 

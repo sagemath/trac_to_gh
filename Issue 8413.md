@@ -3,7 +3,7 @@
 archive/issues_008413.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  @robertwb\n\nKeywords: Unknown Boolean\n\nAs discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96) it could be good to have an \"Unkown\" value in sage which semantic is a truth value. Here are the intended truth table:\n\n```\n      and             or\n    F  U  T         F  U  T\n F [F, F, F]     F [F, U, T]\n U [F, U, U]     U [U, U, T]\n T [F, U, T]     T [T, T, T]\n```\n\nUnfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's \"and\" and \"or\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8413\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @robertwb\n\nKeywords: Unknown Boolean\n\nAs discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96) it could be good to have an \"Unkown\" value in sage which semantic is a truth value. Here are the intended truth table:\n\n```\n      and             or\n    F  U  T         F  U  T\n F [F, F, F]     F [F, U, T]\n U [F, U, U]     U [U, U, T]\n T [F, U, T]     T [T, T, T]\n```\nUnfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's \"and\" and \"or\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8413\n\n",
     "created_at": "2010-03-01T23:05:49Z",
     "labels": [
         "component: misc"
@@ -30,7 +30,6 @@ As discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c323
  U [F, U, U]     U [U, U, T]
  T [F, U, T]     T [T, T, T]
 ```
-
 Unfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's "and" and "or".
 
 Issue created by migration from https://trac.sagemath.org/ticket/8413

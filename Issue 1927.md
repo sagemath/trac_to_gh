@@ -3,7 +3,7 @@
 archive/issues_001927.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
+    "body": "Assignee: @williamstein\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
     "created_at": "2008-01-25T17:21:18Z",
     "labels": [
         "component: calculus",
@@ -27,7 +27,6 @@ sage: var('.foo')
 sage: var('.foo/x')
 .foo/x
 ```
-
 
 Thanks to janwil for pointing this out. 
 

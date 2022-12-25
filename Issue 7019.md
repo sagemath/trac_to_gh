@@ -3,7 +3,7 @@
 archive/issues_007019.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  tkeller\n\nKeywords: biopython\n\nUpdating to biopython-1.52, which was released September 22, 2009.  Main improvements were to alignment and sequence file conversion, population genetics statistics, and the Bio.SeqIO.indexed_dict() for handling large numbers of sequences.\n\nHere is an example that will not work with previous biopython packages:\n\n```\nsage: import urllib2 as U\nsage: f = U.urlopen('http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk')\nsage: orchidfile = file(DATA+\"ls_orchid.gbk\",'w')\nsage: orchidfile.write(f.read())\nsage: orchidfile.close()\nsage: f.close()\nsage: from Bio import SeqIO\nsage: orchid_dict = SeqIO.index(DATA+\"ls_orchid.gbk\", \"genbank\")\nsage: print 'Number of records: ' + str(len(orchid_dict))\nsage: orchid_dict.keys()\nsage: seq_record = orchid_dict[\"Z78475.1\"]\nsage: print 'Description: ' + seq_record.description\nsage: seq_record.seq\n\nNumber of records: 94\nDescription: P.supardii 5.8S rRNA gene and ITS1 and ITS2 DNA.\nSeq('CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTTGAGATCACAT...GGT', IUPACAmbiguousDNA())\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7019\n\n",
+    "body": "Assignee: tbd\n\nCC:  tkeller\n\nKeywords: biopython\n\nUpdating to biopython-1.52, which was released September 22, 2009.  Main improvements were to alignment and sequence file conversion, population genetics statistics, and the Bio.SeqIO.indexed_dict() for handling large numbers of sequences.\n\nHere is an example that will not work with previous biopython packages:\n\n```\nsage: import urllib2 as U\nsage: f = U.urlopen('http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk')\nsage: orchidfile = file(DATA+\"ls_orchid.gbk\",'w')\nsage: orchidfile.write(f.read())\nsage: orchidfile.close()\nsage: f.close()\nsage: from Bio import SeqIO\nsage: orchid_dict = SeqIO.index(DATA+\"ls_orchid.gbk\", \"genbank\")\nsage: print 'Number of records: ' + str(len(orchid_dict))\nsage: orchid_dict.keys()\nsage: seq_record = orchid_dict[\"Z78475.1\"]\nsage: print 'Description: ' + seq_record.description\nsage: seq_record.seq\n\nNumber of records: 94\nDescription: P.supardii 5.8S rRNA gene and ITS1 and ITS2 DNA.\nSeq('CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTTGAGATCACAT...GGT', IUPACAmbiguousDNA())\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7019\n\n",
     "created_at": "2009-09-26T14:40:37Z",
     "labels": [
         "component: packages: optional",
@@ -45,7 +45,6 @@ Number of records: 94
 Description: P.supardii 5.8S rRNA gene and ITS1 and ITS2 DNA.
 Seq('CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGTTGAGATCACAT...GGT', IUPACAmbiguousDNA())
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7019
 
@@ -165,7 +164,7 @@ Adam
 archive/issue_comments_058001.json:
 ```json
 {
-    "body": "Some suggestions. ;-)\n\nSPKG.txt\n\n```\n## Description\n\nBiopython is a set of freely available tools for biological computation written in Python by an international team of developers.\n\nIt is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics.\n\n## License\n\nBiopython License\n\n## SPKG Maintainers\n\n  -- Marshall Hampton, mhampton at d.umn.edu or hamptonio at gmail.com.\n\n## Upstream Contact\n\n  -- wiki - http://biopython.org/wiki/Main_Page\n```\n\n\nspkg-check (keeping biopython as directory name)\n\n```/usr/bin/env bash\n\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\ncd biopython\npython setup.py test\n\nif [ $? -ne 0 ]; then\n   echo \"Error testing biopython\"\n   exit 1\nfi\n```\n\n\nI hope this is useful,\n\nAdam",
+    "body": "Some suggestions. ;-)\n\nSPKG.txt\n\n```\n## Description\n\nBiopython is a set of freely available tools for biological computation written in Python by an international team of developers.\n\nIt is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics.\n\n## License\n\nBiopython License\n\n## SPKG Maintainers\n\n  -- Marshall Hampton, mhampton at d.umn.edu or hamptonio at gmail.com.\n\n## Upstream Contact\n\n  -- wiki - http://biopython.org/wiki/Main_Page\n```\n\nspkg-check (keeping biopython as directory name)\n\n```/usr/bin/env bash\n\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\ncd biopython\npython setup.py test\n\nif [ $? -ne 0 ]; then\n   echo \"Error testing biopython\"\n   exit 1\nfi\n```\n\nI hope this is useful,\n\nAdam",
     "created_at": "2009-10-07T18:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7019",
     "type": "issue_comment",
@@ -198,7 +197,6 @@ Biopython License
   -- wiki - http://biopython.org/wiki/Main_Page
 ```
 
-
 spkg-check (keeping biopython as directory name)
 
 ```/usr/bin/env bash
@@ -217,7 +215,6 @@ if [ $? -ne 0 ]; then
    exit 1
 fi
 ```
-
 
 I hope this is useful,
 

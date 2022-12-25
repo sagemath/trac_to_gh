@@ -3,7 +3,7 @@
 archive/issues_007263.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
     "created_at": "2009-10-21T23:21:15Z",
     "labels": [
         "component: graphics",
@@ -36,7 +36,6 @@ get the featureless black box), so I think it may be a command-line
 issue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel
 running OSX 10.5.
 ```
-
 
 
 
@@ -73,7 +72,7 @@ jmol has apparently moved...
 archive/issue_comments_060221.json:
 ```json
 {
-    "body": "after this patch:\n\n\n```\ndiff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx\n--- a/sage/plot/plot3d/base.pyx\tFri May 15 06:48:50 2009 -0500\n+++ b/sage/plot/plot3d/base.pyx\tWed Oct 21 21:06:46 2009 -0500\n@@ -1064,7 +1064,7 @@\n             f.write(self.mtl_str())\n             f.close()\n             ext = \"obj\"\n-            viewer_app = sage.misc.misc.SAGE_LOCAL + \"/java/java3d/start_viewer\"\n+            viewer_app = sage.misc.misc.SAGE_LOCAL + \"lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar\"\n \n         if DOCTEST_MODE or viewer=='jmol':\n             # Temporary hack: encode the desired applet size in the end of the filename:\n@@ -1082,7 +1082,7 @@\n \n             T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n             T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)\n-            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/java/jmol/jmol\"\n+            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar\"\n \n             # We need a script to load the file\n             f = open(filename + '.jmol', 'w')\n```\n\n\nI get: \n\n\n```\nsage: var('x,y')\n(x, y)\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='java3d',verbosity=True)\nsh: /home/jason/sage/local/lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar: Permission denied\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='jmol',verbosity=True)\n/home/jason/sage/local/bin/sage-native-execute: 8: /home/jason/sage/local//lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar: Permission denied\n```\n\n\nWhat happened to the jmol application?\n\nAlso, how come jmol and the java3d viewer aren't their own spkgs?",
+    "body": "after this patch:\n\n```\ndiff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx\n--- a/sage/plot/plot3d/base.pyx\tFri May 15 06:48:50 2009 -0500\n+++ b/sage/plot/plot3d/base.pyx\tWed Oct 21 21:06:46 2009 -0500\n@@ -1064,7 +1064,7 @@\n             f.write(self.mtl_str())\n             f.close()\n             ext = \"obj\"\n-            viewer_app = sage.misc.misc.SAGE_LOCAL + \"/java/java3d/start_viewer\"\n+            viewer_app = sage.misc.misc.SAGE_LOCAL + \"lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar\"\n \n         if DOCTEST_MODE or viewer=='jmol':\n             # Temporary hack: encode the desired applet size in the end of the filename:\n@@ -1082,7 +1082,7 @@\n \n             T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n             T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)\n-            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/java/jmol/jmol\"\n+            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar\"\n \n             # We need a script to load the file\n             f = open(filename + '.jmol', 'w')\n```\n\nI get: \n\n```\nsage: var('x,y')\n(x, y)\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='java3d',verbosity=True)\nsh: /home/jason/sage/local/lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar: Permission denied\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='jmol',verbosity=True)\n/home/jason/sage/local/bin/sage-native-execute: 8: /home/jason/sage/local//lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar: Permission denied\n```\n\nWhat happened to the jmol application?\n\nAlso, how come jmol and the java3d viewer aren't their own spkgs?",
     "created_at": "2009-10-22T02:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
@@ -83,7 +82,6 @@ archive/issue_comments_060221.json:
 ```
 
 after this patch:
-
 
 ```
 diff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx
@@ -109,9 +107,7 @@ diff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx
              f = open(filename + '.jmol', 'w')
 ```
 
-
 I get: 
-
 
 ```
 sage: var('x,y')
@@ -121,7 +117,6 @@ sh: /home/jason/sage/local/lib/python2.6/site-packages/sagenb/data/java/3d/lib/s
 sage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='jmol',verbosity=True)
 /home/jason/sage/local/bin/sage-native-execute: 8: /home/jason/sage/local//lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar: Permission denied
 ```
-
 
 What happened to the jmol application?
 
@@ -134,7 +129,7 @@ Also, how come jmol and the java3d viewer aren't their own spkgs?
 archive/issue_comments_060222.json:
 ```json
 {
-    "body": "The jmol application in 4.1.2.alpha2 was:\n\n\n```/bin/sh\nJMOL_HOME=`dirname \"$0\"`\n\n\n# Collect -D & -m options as java arguments\ncommand=java\nwhile [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n        command=\"$command $1\"\n        shift\ndone\n\nif [ -f ./Jmol.jar ] ; then\n  jarpath=./Jmol.jar\nelif [ -f $JMOL_HOME/Jmol.jar ] ; then\n  jarpath=$JMOL_HOME/Jmol.jar\nelif [ -f /usr/share/jmol/Jmol.jar ] ; then\n  jarpath=/usr/share/jmol/Jmol.jar\nelse\n  echo Jmol.jar not found\n  exit\nfi\n$command -Xmx512m -jar $jarpath $@\n```\n",
+    "body": "The jmol application in 4.1.2.alpha2 was:\n\n```/bin/sh\nJMOL_HOME=`dirname \"$0\"`\n\n\n# Collect -D & -m options as java arguments\ncommand=java\nwhile [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n        command=\"$command $1\"\n        shift\ndone\n\nif [ -f ./Jmol.jar ] ; then\n  jarpath=./Jmol.jar\nelif [ -f $JMOL_HOME/Jmol.jar ] ; then\n  jarpath=$JMOL_HOME/Jmol.jar\nelif [ -f /usr/share/jmol/Jmol.jar ] ; then\n  jarpath=/usr/share/jmol/Jmol.jar\nelse\n  echo Jmol.jar not found\n  exit\nfi\n$command -Xmx512m -jar $jarpath $@\n```",
     "created_at": "2009-10-22T02:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
@@ -144,7 +139,6 @@ archive/issue_comments_060222.json:
 ```
 
 The jmol application in 4.1.2.alpha2 was:
-
 
 ```/bin/sh
 JMOL_HOME=`dirname "$0"`
@@ -169,7 +163,6 @@ else
 fi
 $command -Xmx512m -jar $jarpath $@
 ```
-
 
 
 

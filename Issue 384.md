@@ -60,7 +60,7 @@ archive/issue_events_000893.json:
 archive/issue_comments_001867.json:
 ```json
 {
-    "body": "This is still an issue with Sage 2.10:\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{\\left( {\\left( {\\left( {x}^{2}  - 2 \\right) \\cdot \\left( x - y \\right)} \\right) \\cdot \\left( y + x \\right)} \\right) \\cdot \\left( {y}^{2}  - 3 \\right)}\n```\n\nWe really ought to fix this.\n\nCheers,\n\nMichael",
+    "body": "This is still an issue with Sage 2.10:\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{\\left( {\\left( {\\left( {x}^{2}  - 2 \\right) \\cdot \\left( x - y \\right)} \\right) \\cdot \\left( y + x \\right)} \\right) \\cdot \\left( {y}^{2}  - 3 \\right)}\n```\nWe really ought to fix this.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T15:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -78,7 +78,6 @@ sage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)
 sage: latex(f)
 {\left( {\left( {\left( {x}^{2}  - 2 \right) \cdot \left( x - y \right)} \right) \cdot \left( y + x \right)} \right) \cdot \left( {y}^{2}  - 3 \right)}
 ```
-
 We really ought to fix this.
 
 Cheers,
@@ -92,7 +91,7 @@ Michael
 archive/issue_comments_001868.json:
 ```json
 {
-    "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by @aghitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
+    "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by @aghitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
     "created_at": "2008-01-27T02:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
@@ -109,7 +108,6 @@ See the patch.  A few comments:
 2. After some thinking, I decided to do away with all the \cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.
 
 Some examples:
-
 
 ```
 sage: var('x,y')

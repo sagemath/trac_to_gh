@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1721
 archive/issue_comments_010877.json:
 ```json
 {
-    "body": "The following patch should solve the problem of Pentium Ms which are misrecognized as CoreDuo:\n\n```\n$ pwd\n/tmp/atlas-3.8.p6/src/ATLAS/CONFIG/src/backend\n$ diff -u archinfo_x86.c.orig archinfo_x86.c\n--- archinfo_x86.c.orig 2008-01-09 23:43:59.000000000 +0100\n+++ archinfo_x86.c      2008-01-09 23:44:11.000000000 +0100\n@@ -281,6 +281,7 @@\n       case  9:\n       case 13:\n          iret = IntPM;\n+        break;\n       case 14:\n          iret = IntCoreDuo;\n          break;\n```\n\nThis should also solve (partly) #1547.",
+    "body": "The following patch should solve the problem of Pentium Ms which are misrecognized as CoreDuo:\n\n```\n$ pwd\n/tmp/atlas-3.8.p6/src/ATLAS/CONFIG/src/backend\n$ diff -u archinfo_x86.c.orig archinfo_x86.c\n--- archinfo_x86.c.orig 2008-01-09 23:43:59.000000000 +0100\n+++ archinfo_x86.c      2008-01-09 23:44:11.000000000 +0100\n@@ -281,6 +281,7 @@\n       case  9:\n       case 13:\n          iret = IntPM;\n+        break;\n       case 14:\n          iret = IntCoreDuo;\n          break;\n```\nThis should also solve (partly) #1547.",
     "created_at": "2008-01-09T23:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1721",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ $ diff -u archinfo_x86.c.orig archinfo_x86.c
           iret = IntCoreDuo;
           break;
 ```
-
 This should also solve (partly) #1547.
 
 

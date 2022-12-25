@@ -3,7 +3,7 @@
 archive/issues_008563.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('r')\nr\nsage: simplify((r-1)^3 *r)\n(r - 1)^3*r\nsage: quit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m32.87s).\nExiting spawned R Interpreter process.\nExiting spawned Maxima process.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8563\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('r')\nr\nsage: simplify((r-1)^3 *r)\n(r - 1)^3*r\nsage: quit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m32.87s).\nExiting spawned R Interpreter process.\nExiting spawned Maxima process.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8563\n\n",
     "created_at": "2010-03-20T01:48:46Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 CC:  @mwhansen
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -33,7 +32,6 @@ Exiting SAGE (CPU time 0m0.08s, Wall time 0m32.87s).
 Exiting spawned R Interpreter process.
 Exiting spawned Maxima process.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8563
 

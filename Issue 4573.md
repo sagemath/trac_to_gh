@@ -3,7 +3,7 @@
 archive/issues_004573.json:
 ```json
 {
-    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\n\n```\nsage: p = PermutationGroupElement([2, 1, 4, 5, 3])\nsage: p(1)\n2\nsage: q = Permutation([2, 1, 4, 5, 3])\nsage: q(1)\n...\nTypeError: 'Permutation_class' object is not callable\n```\n\n\nThis causes me some confusion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4573\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\n```\nsage: p = PermutationGroupElement([2, 1, 4, 5, 3])\nsage: p(1)\n2\nsage: q = Permutation([2, 1, 4, 5, 3])\nsage: q(1)\n...\nTypeError: 'Permutation_class' object is not callable\n```\n\nThis causes me some confusion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4573\n\n",
     "created_at": "2008-11-20T22:15:08Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +20,6 @@ Assignee: @saliola
 
 CC:  sage-combinat
 
-
 ```
 sage: p = PermutationGroupElement([2, 1, 4, 5, 3])
 sage: p(1)
@@ -30,7 +29,6 @@ sage: q(1)
 ...
 TypeError: 'Permutation_class' object is not callable
 ```
-
 
 This causes me some confusion.
 

@@ -78,7 +78,7 @@ Is this still an issue?
 archive/issue_comments_092898.json:
 ```json
 {
-    "body": "The relevant part of the script says\n\n```sh\n        sh)\n            # We don't really know which shell \"sh\" is (it could be\n            # bash, but this is not guaranteed), so we don't set\n            # SHELL_OPTS.\n            if [ \"$color_prompt\" = yes ] ; then\n                PS1=\"$(tput rev)(sage-sh)$(tput sgr0) $USER@`hostname -s`:\\${PWD##*/}$ \"\n            else\n                PS1=\"(sage-sh) $USER@`hostname -s`:\\${PWD}$ \"\n            fi\n            export PS1\n            ;;\n```\n\nSo it doesn't look like this ticket is relevant any more.",
+    "body": "The relevant part of the script says\n\n```sh\n        sh)\n            # We don't really know which shell \"sh\" is (it could be\n            # bash, but this is not guaranteed), so we don't set\n            # SHELL_OPTS.\n            if [ \"$color_prompt\" = yes ] ; then\n                PS1=\"$(tput rev)(sage-sh)$(tput sgr0) $USER@`hostname -s`:\\${PWD##*/}$ \"\n            else\n                PS1=\"(sage-sh) $USER@`hostname -s`:\\${PWD}$ \"\n            fi\n            export PS1\n            ;;\n```\nSo it doesn't look like this ticket is relevant any more.",
     "created_at": "2012-04-19T23:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ The relevant part of the script says
             export PS1
             ;;
 ```
-
 So it doesn't look like this ticket is relevant any more.
 
 

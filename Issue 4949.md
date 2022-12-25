@@ -187,7 +187,7 @@ Making use of e.g. a RAM disk (or some user-provided directory) for doctesting i
 archive/issue_comments_037506.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.\n\nYou can already set `SAGE_TESTDIR` (or `DOT_SAGE`) to do this.  Or maybe I misunderstand?",
+    "body": "Replying to [comment:7 leif]:\n> Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.\n\n\nYou can already set `SAGE_TESTDIR` (or `DOT_SAGE`) to do this.  Or maybe I misunderstand?",
     "created_at": "2010-08-19T21:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -198,6 +198,7 @@ archive/issue_comments_037506.json:
 
 Replying to [comment:7 leif]:
 > Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.
+
 
 You can already set `SAGE_TESTDIR` (or `DOT_SAGE`) to do this.  Or maybe I misunderstand?
 
@@ -226,7 +227,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_037508.json:
 ```json
 {
-    "body": "[attachment: trac_4949-scripts.patch] does not apply:\n\n\n```\nsage: hg_sage.apply(\"/home/mariah/trac_4949-scripts.patch\")\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg import   \"/home/mariah/trac_4949-scripts.patch\"\napplying /home/mariah/trac_4949-scripts.patch\nunable to find 'sage-spkg' for patching\n5 out of 5 hunks FAILED -- saving rejects to file sage-spkg.rej\nabort: patch failed to apply\nsage: \n```\n",
+    "body": "[attachment: trac_4949-scripts.patch] does not apply:\n\n```\nsage: hg_sage.apply(\"/home/mariah/trac_4949-scripts.patch\")\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg import   \"/home/mariah/trac_4949-scripts.patch\"\napplying /home/mariah/trac_4949-scripts.patch\nunable to find 'sage-spkg' for patching\n5 out of 5 hunks FAILED -- saving rejects to file sage-spkg.rej\nabort: patch failed to apply\nsage: \n```",
     "created_at": "2011-05-20T14:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -236,7 +237,6 @@ archive/issue_comments_037508.json:
 ```
 
 [attachment: trac_4949-scripts.patch] does not apply:
-
 
 ```
 sage: hg_sage.apply("/home/mariah/trac_4949-scripts.patch")
@@ -249,7 +249,6 @@ unable to find 'sage-spkg' for patching
 abort: patch failed to apply
 sage: 
 ```
-
 
 
 
@@ -425,7 +424,7 @@ Ooops, unfortunately it's not *that* easy, because `$BUILD` is also just used as
 archive/issue_comments_037517.json:
 ```json
 {
-    "body": "Replying to [comment:13 jdemeyer]:\n> I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?\n\nI've modified the documentation to try to address this.  I built Sage on various machines (sage.math, David Kirkby's machine hawk, various skynet machines), and found that\n\n- the single largest subdirectory of \"build\" can be up to 1165M (building eclib on the skynet machines iras and cleo, ia64 processors).  On all of the other machines, it took at most 880M.  On sage.math, cicero, and my mac, the largest took 320M.\n\n- the total amount of disk space, if you keep all of the subdirectories can be as large as 5.3G (iras and cleo again) or as small as 2.2G (hawk).\n\nI've put in conservative estimates for these in the documentation.",
+    "body": "Replying to [comment:13 jdemeyer]:\n> I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?\n\n\nI've modified the documentation to try to address this.  I built Sage on various machines (sage.math, David Kirkby's machine hawk, various skynet machines), and found that\n\n- the single largest subdirectory of \"build\" can be up to 1165M (building eclib on the skynet machines iras and cleo, ia64 processors).  On all of the other machines, it took at most 880M.  On sage.math, cicero, and my mac, the largest took 320M.\n\n- the total amount of disk space, if you keep all of the subdirectories can be as large as 5.3G (iras and cleo again) or as small as 2.2G (hawk).\n\nI've put in conservative estimates for these in the documentation.",
     "created_at": "2011-08-04T15:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -436,6 +435,7 @@ archive/issue_comments_037517.json:
 
 Replying to [comment:13 jdemeyer]:
 > I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?
+
 
 I've modified the documentation to try to address this.  I built Sage on various machines (sage.math, David Kirkby's machine hawk, various skynet machines), and found that
 
@@ -470,7 +470,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_037519.json:
 ```json
 {
-    "body": "Replying to [comment:16 jhpalmieri]:\n> I've modified the documentation to try to address this.\n\nThe usage of `$` is a bit inconsistent: `:file:`$SAGE_ROOT/...`` vs. `:file:`SAGE_BUILD_TMPDIR/...``.\n\nI would add a warning that `SAGE_BUILD_TMPDIR` must not contain spaces, and should be an absolute path (starting with a slash or whatever). Note that none of this is checked in `sage-spkg`; also, a broken `test` might return `true` for an empty string, so I would also `test -n \"$SAGE_BUILD_TMPDIR\"`.\n\nAlso, if `SAGE_BUILD_TMPDIR` is set but the directory does not exist, no warning or error message is printed.\n\n\n\n\n> I built Sage on various machines [...] and found that [...]\n> I've put in conservative estimates for these in the documentation.\n\nThe actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\nThe worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the `$BUILD/old/` directory if `-s` was specified or `SAGE_KEEP_BUILT_SPKGS=yes`.\n\n(Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"`BUILD` bug\", haven't tracked this down.)\n\nI would mention the relationship to the `-s` parameter when installing packages with `sage`; the main reason for the additional environment variable is that there's no other way to achieve what `-s` does when using `make`.",
+    "body": "Replying to [comment:16 jhpalmieri]:\n> I've modified the documentation to try to address this.\n\n\nThe usage of `$` is a bit inconsistent: `:file:`$SAGE_ROOT/...`` vs. `:file:`SAGE_BUILD_TMPDIR/...``.\n\nI would add a warning that `SAGE_BUILD_TMPDIR` must not contain spaces, and should be an absolute path (starting with a slash or whatever). Note that none of this is checked in `sage-spkg`; also, a broken `test` might return `true` for an empty string, so I would also `test -n \"$SAGE_BUILD_TMPDIR\"`.\n\nAlso, if `SAGE_BUILD_TMPDIR` is set but the directory does not exist, no warning or error message is printed.\n\n\n\n\n> I built Sage on various machines [...] and found that [...]\n> I've put in conservative estimates for these in the documentation.\n\n\nThe actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\nThe worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the `$BUILD/old/` directory if `-s` was specified or `SAGE_KEEP_BUILT_SPKGS=yes`.\n\n(Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"`BUILD` bug\", haven't tracked this down.)\n\nI would mention the relationship to the `-s` parameter when installing packages with `sage`; the main reason for the additional environment variable is that there's no other way to achieve what `-s` does when using `make`.",
     "created_at": "2011-08-04T18:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -481,6 +481,7 @@ archive/issue_comments_037519.json:
 
 Replying to [comment:16 jhpalmieri]:
 > I've modified the documentation to try to address this.
+
 
 The usage of `$` is a bit inconsistent: `:file:`$SAGE_ROOT/...`` vs. `:file:`SAGE_BUILD_TMPDIR/...``.
 
@@ -493,6 +494,7 @@ Also, if `SAGE_BUILD_TMPDIR` is set but the directory does not exist, no warning
 
 > I built Sage on various machines [...] and found that [...]
 > I've put in conservative estimates for these in the documentation.
+
 
 The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.
 
@@ -509,7 +511,7 @@ I would mention the relationship to the `-s` parameter when installing packages 
 archive/issue_comments_037520.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\nWell, many of the systems on which I tested were on skynet, built in subdirectories of a shared home directory -- all of the skynet machines use the same $HOME.  On some of those machines, building eclib took over 1 gigabyte, while on others, it took under 320 megabytes.  There are certainly differences between the types of libraries produced: .so files on linux, .dylib files on darwin, etc.  I would also guess that the size of the library files might vary depending on the compiler, whether it's 32- or 64-bit, etc.\n\n> The worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the $BUILD/old/ directory if -s was specified or SAGE_KEEP_BUILT_SPKGS=yes.\n\nRight, but the documentation as written is accurate (\"After a full build of Sage...\") and I think is good enough.  Anyone who sets this variable should be paying attention to the build directory anyway.\n\n> (Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"BUILD bug\", haven't tracked this down.)\n\n`prereq` and `bzip` are not installed by sage-spkg but by their own install scripts (`prereq-0.9-install` and `bzip2-1.0.5-install`), which create subdirectories of `build` but don't delete them when they're done.\n\nAdding a comment about the relationship to the `-s` option is a good idea.  I'll try to add some tests for `SAGE_BUILD_TEMPDIR`, too.",
+    "body": "Replying to [comment:17 leif]:\n> The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\n\nWell, many of the systems on which I tested were on skynet, built in subdirectories of a shared home directory -- all of the skynet machines use the same $HOME.  On some of those machines, building eclib took over 1 gigabyte, while on others, it took under 320 megabytes.  There are certainly differences between the types of libraries produced: .so files on linux, .dylib files on darwin, etc.  I would also guess that the size of the library files might vary depending on the compiler, whether it's 32- or 64-bit, etc.\n\n> The worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the $BUILD/old/ directory if -s was specified or SAGE_KEEP_BUILT_SPKGS=yes.\n\n\nRight, but the documentation as written is accurate (\"After a full build of Sage...\") and I think is good enough.  Anyone who sets this variable should be paying attention to the build directory anyway.\n\n> (Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"BUILD bug\", haven't tracked this down.)\n\n\n`prereq` and `bzip` are not installed by sage-spkg but by their own install scripts (`prereq-0.9-install` and `bzip2-1.0.5-install`), which create subdirectories of `build` but don't delete them when they're done.\n\nAdding a comment about the relationship to the `-s` option is a good idea.  I'll try to add some tests for `SAGE_BUILD_TEMPDIR`, too.",
     "created_at": "2011-08-07T20:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -521,13 +523,16 @@ archive/issue_comments_037520.json:
 Replying to [comment:17 leif]:
 > The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.
 
+
 Well, many of the systems on which I tested were on skynet, built in subdirectories of a shared home directory -- all of the skynet machines use the same $HOME.  On some of those machines, building eclib took over 1 gigabyte, while on others, it took under 320 megabytes.  There are certainly differences between the types of libraries produced: .so files on linux, .dylib files on darwin, etc.  I would also guess that the size of the library files might vary depending on the compiler, whether it's 32- or 64-bit, etc.
 
 > The worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the $BUILD/old/ directory if -s was specified or SAGE_KEEP_BUILT_SPKGS=yes.
 
+
 Right, but the documentation as written is accurate ("After a full build of Sage...") and I think is good enough.  Anyone who sets this variable should be paying attention to the build directory anyway.
 
 > (Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the "BUILD bug", haven't tracked this down.)
+
 
 `prereq` and `bzip` are not installed by sage-spkg but by their own install scripts (`prereq-0.9-install` and `bzip2-1.0.5-install`), which create subdirectories of `build` but don't delete them when they're done.
 
@@ -576,7 +581,7 @@ scripts repo
 archive/issue_comments_037523.json:
 ```json
 {
-    "body": "Attachment [trac_4949-scripts.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-scripts.patch) by @nexttime created at 2011-08-08 12:58:06\n\nThere's a `$` missing in\n\n```\n:file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`\n```\n\n\nI would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).\n\n\n\n\nYour observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\nThere are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.\n\nI would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.",
+    "body": "Attachment [trac_4949-scripts.patch](tarball://root/attachments/some-uuid/ticket4949/trac_4949-scripts.patch) by @nexttime created at 2011-08-08 12:58:06\n\nThere's a `$` missing in\n\n```\n:file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`\n```\n\nI would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).\n\n\n\n\nYour observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\nThere are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.\n\nI would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.",
     "created_at": "2011-08-08T12:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -592,7 +597,6 @@ There's a `$` missing in
 ```
 :file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`
 ```
-
 
 I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).
 
@@ -632,7 +636,7 @@ sage repo: update installation guide
 archive/issue_comments_037525.json:
 ```json
 {
-    "body": "Replying to [comment:20 leif]:\n> I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations.\n\nDone\n\n> and that the build directory will definitely grow over time\n\nI've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, *overwriting* copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.\n\n> Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\n\"eclib\" is the usual culprit.  There are huge differences in the amount of disk space it uses, so on some systems it is by far the largest, and on others, it isn't.  On the skynet machines, \"moin\" uses a consistent 320 megabytes, whereas eclib ranges from something under that to over 1 gig, depending on the OS and the processor.\n\n> I would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.\n\nDone.",
+    "body": "Replying to [comment:20 leif]:\n> I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations.\n\n\nDone\n\n> and that the build directory will definitely grow over time\n\n\nI've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, *overwriting* copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.\n\n> Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\n\n\"eclib\" is the usual culprit.  There are huge differences in the amount of disk space it uses, so on some systems it is by far the largest, and on others, it isn't.  On the skynet machines, \"moin\" uses a consistent 320 megabytes, whereas eclib ranges from something under that to over 1 gig, depending on the OS and the processor.\n\n> I would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.\n\n\nDone.",
     "created_at": "2011-08-08T16:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -644,17 +648,21 @@ archive/issue_comments_037525.json:
 Replying to [comment:20 leif]:
 > I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations.
 
+
 Done
 
 > and that the build directory will definitely grow over time
+
 
 I've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, *overwriting* copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.
 
 > Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing "the same thing".
 
+
 "eclib" is the usual culprit.  There are huge differences in the amount of disk space it uses, so on some systems it is by far the largest, and on others, it isn't.  On the skynet machines, "moin" uses a consistent 320 megabytes, whereas eclib ranges from something under that to over 1 gig, depending on the OS and the processor.
 
 > I would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.
+
 
 Done.
 
@@ -791,7 +799,7 @@ By the way, regarding "After applying, replace the bootstrap version of `sage-sp
 archive/issue_comments_037531.json:
 ```json
 {
-    "body": "Replying to [comment:27 jhpalmieri]:\n> By the way, regarding \"After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version\": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.\n\nYep.\n\nHope you don't mind me temporarily moving this to \"sage-pending\"; I intend to finish #11021 and rebase the patch(es) here on that, the latter presumably much easier than the other way around.\n\nIf I don't find the time, I'll set the milestone back to 4.7.2 of course.",
+    "body": "Replying to [comment:27 jhpalmieri]:\n> By the way, regarding \"After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version\": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.\n\n\nYep.\n\nHope you don't mind me temporarily moving this to \"sage-pending\"; I intend to finish #11021 and rebase the patch(es) here on that, the latter presumably much easier than the other way around.\n\nIf I don't find the time, I'll set the milestone back to 4.7.2 of course.",
     "created_at": "2011-09-09T22:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -802,6 +810,7 @@ archive/issue_comments_037531.json:
 
 Replying to [comment:27 jhpalmieri]:
 > By the way, regarding "After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.
+
 
 Yep.
 
@@ -924,7 +933,7 @@ root repo
 archive/issue_comments_037536.json:
 ```json
 {
-    "body": "Do we *really* want\n\n```\nBUILD=build\n```\n\n?\n\nI think we have too many variables already.\n\nAlso, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?",
+    "body": "Do we *really* want\n\n```\nBUILD=build\n```\n?\n\nI think we have too many variables already.\n\nAlso, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?",
     "created_at": "2012-01-23T16:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -938,7 +947,6 @@ Do we *really* want
 ```
 BUILD=build
 ```
-
 ?
 
 I think we have too many variables already.
@@ -952,7 +960,7 @@ Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TM
 archive/issue_comments_037537.json:
 ```json
 {
-    "body": "Replying to [comment:32 jdemeyer]:\n> Do we *really* want\n {{{\n BUILD=build\n }}}\n> ?\n\nI don't see a reason for it, it was there before.  Should I create a new patch which removes it?  I think that would fix one or two of the issues from #11021.\n\n> Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?\n\nThe code says, roughly\n\n```\nif $SAGE_BUILD_TMPDIR is not empty and points to an existing directory:\n    BUILD_DIR=$SAGE_BUILD_TMPDIR\nelse\n    BUILD_DIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $BUILD_DIR\n```\n",
+    "body": "Replying to [comment:32 jdemeyer]:\n> Do we *really* want\n\n {{{\n BUILD=build\n }}}\n> ?\n\n\nI don't see a reason for it, it was there before.  Should I create a new patch which removes it?  I think that would fix one or two of the issues from #11021.\n\n> Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?\n\n\nThe code says, roughly\n\n```\nif $SAGE_BUILD_TMPDIR is not empty and points to an existing directory:\n    BUILD_DIR=$SAGE_BUILD_TMPDIR\nelse\n    BUILD_DIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $BUILD_DIR\n```",
     "created_at": "2012-01-23T18:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -963,14 +971,17 @@ archive/issue_comments_037537.json:
 
 Replying to [comment:32 jdemeyer]:
 > Do we *really* want
+
  {{{
  BUILD=build
  }}}
 > ?
 
+
 I don't see a reason for it, it was there before.  Should I create a new patch which removes it?  I think that would fix one or two of the issues from #11021.
 
 > Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?
+
 
 The code says, roughly
 
@@ -986,13 +997,12 @@ build Sage in $BUILD_DIR
 
 
 
-
 ---
 
 archive/issue_comments_037538.json:
 ```json
 {
-    "body": "But why not simplify this to:\n\n```\nif $SAGE_BUILD_TMPDIR is not empty:\n    sanity check $SAGE_BUILD_TMPDIR but don't change any variables\nelse\n    SAGE_BUILD_TMPDIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $SAGE_BUILD_TMPDIR\n```\n",
+    "body": "But why not simplify this to:\n\n```\nif $SAGE_BUILD_TMPDIR is not empty:\n    sanity check $SAGE_BUILD_TMPDIR but don't change any variables\nelse\n    SAGE_BUILD_TMPDIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $SAGE_BUILD_TMPDIR\n```",
     "created_at": "2012-01-23T18:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1012,7 +1022,6 @@ fi
 
 build Sage in $SAGE_BUILD_TMPDIR
 ```
-
 
 
 
@@ -1057,7 +1066,7 @@ Concerning `$BUILD`: it existed before, but was almost not used.  If the variabl
 archive/issue_comments_037541.json:
 ```json
 {
-    "body": "Something else: do we really want to build in\n\n```\n$SAGE_BUILD_TMPDIR/build/atlas-3.8.4.p1/\n```\n\n\nI would find it more natural to build in\n\n```\n$SAGE_BUILD_TMPDIR/atlas-3.8.4.p1/\n```\n\n\nAnd therefore, let $SAGE_BUILD_TMPDIR by default be equal to\n\n```\n$SAGE_ROOT/spkg/build/\n```\n\n\nAnd perhaps drop the requirement for `$SAGE_BUILD_TMPDIR` to be an existing directory: just create it if needed.\n\n(This is just an idea: I don't have strong feelings about this)",
+    "body": "Something else: do we really want to build in\n\n```\n$SAGE_BUILD_TMPDIR/build/atlas-3.8.4.p1/\n```\n\nI would find it more natural to build in\n\n```\n$SAGE_BUILD_TMPDIR/atlas-3.8.4.p1/\n```\n\nAnd therefore, let $SAGE_BUILD_TMPDIR by default be equal to\n\n```\n$SAGE_ROOT/spkg/build/\n```\n\nAnd perhaps drop the requirement for `$SAGE_BUILD_TMPDIR` to be an existing directory: just create it if needed.\n\n(This is just an idea: I don't have strong feelings about this)",
     "created_at": "2012-01-23T18:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1072,20 +1081,17 @@ Something else: do we really want to build in
 $SAGE_BUILD_TMPDIR/build/atlas-3.8.4.p1/
 ```
 
-
 I would find it more natural to build in
 
 ```
 $SAGE_BUILD_TMPDIR/atlas-3.8.4.p1/
 ```
 
-
 And therefore, let $SAGE_BUILD_TMPDIR by default be equal to
 
 ```
 $SAGE_ROOT/spkg/build/
 ```
-
 
 And perhaps drop the requirement for `$SAGE_BUILD_TMPDIR` to be an existing directory: just create it if needed.
 
@@ -1308,7 +1314,7 @@ sage repo: diff between original and v2
 archive/issue_comments_037553.json:
 ```json
 {
-    "body": "Replying to [comment:37 jhpalmieri]:\n> Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`\nI totally agree on this.",
+    "body": "Replying to [comment:37 jhpalmieri]:\n> Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`\n\nI totally agree on this.",
     "created_at": "2012-02-12T12:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1319,6 +1325,7 @@ archive/issue_comments_037553.json:
 
 Replying to [comment:37 jhpalmieri]:
 > Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`
+
 I totally agree on this.
 
 
@@ -1328,7 +1335,7 @@ I totally agree on this.
 archive/issue_comments_037554.json:
 ```json
 {
-    "body": "Replying to [comment:37 jhpalmieri]:\n> I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n\nI ask you again: why???",
+    "body": "Replying to [comment:37 jhpalmieri]:\n> I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n\n\nI ask you again: why???",
     "created_at": "2012-02-12T12:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1339,6 +1346,7 @@ archive/issue_comments_037554.json:
 
 Replying to [comment:37 jhpalmieri]:
 > I've appended "build" to the setting of "$SAGE_BUILD_TMPDIR".
+
 
 I ask you again: why???
 
@@ -1367,7 +1375,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_037556.json:
 ```json
 {
-    "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:37 jhpalmieri]:\n> > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n> \n> I ask you again: why???\n\nIt feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"",
+    "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:37 jhpalmieri]:\n> > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n\n> \n> I ask you again: why???\n\n\nIt feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"",
     "created_at": "2012-02-12T16:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1379,8 +1387,10 @@ archive/issue_comments_037556.json:
 Replying to [comment:41 jdemeyer]:
 > Replying to [comment:37 jhpalmieri]:
 > > I've appended "build" to the setting of "$SAGE_BUILD_TMPDIR".
+
 > 
 > I ask you again: why???
+
 
 It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should "Also delete files in other directories if they are created by this makefile."
 
@@ -1391,7 +1401,7 @@ It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than pro
 archive/issue_comments_037557.json:
 ```json
 {
-    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > Replying to [comment:37 jhpalmieri]:\n> > > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n> > \n> > I ask you again: why???\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.\nMy opinion is that the user should set `SAGE_BUILD_TMPDIR=/tmp/build` if that's what he wants.\n\n> Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \nI think it does make sense if `make clean` would always clean `$SAGE_ROOT/spkg/build` and not `SAGE_BUILD_TMPDIR`.\n\nAnyway: I don't want to fight over this.  I'm happy with whatever the outcome.  The last thing I want is that this ticket gets abandoned.",
+    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > Replying to [comment:37 jhpalmieri]:\n> > > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n\n> > \n> > I ask you again: why???\n\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.\n\nMy opinion is that the user should set `SAGE_BUILD_TMPDIR=/tmp/build` if that's what he wants.\n\n> Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n\nI think it does make sense if `make clean` would always clean `$SAGE_ROOT/spkg/build` and not `SAGE_BUILD_TMPDIR`.\n\nAnyway: I don't want to fight over this.  I'm happy with whatever the outcome.  The last thing I want is that this ticket gets abandoned.",
     "created_at": "2012-02-14T09:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1404,13 +1414,17 @@ Replying to [comment:42 jhpalmieri]:
 > Replying to [comment:41 jdemeyer]:
 > > Replying to [comment:37 jhpalmieri]:
 > > > I've appended "build" to the setting of "$SAGE_BUILD_TMPDIR".
+
 > > 
 > > I ask you again: why???
+
 > 
 > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.
+
 My opinion is that the user should set `SAGE_BUILD_TMPDIR=/tmp/build` if that's what he wants.
 
 > Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should "Also delete files in other directories if they are created by this makefile."  
+
 I think it does make sense if `make clean` would always clean `$SAGE_ROOT/spkg/build` and not `SAGE_BUILD_TMPDIR`.
 
 Anyway: I don't want to fight over this.  I'm happy with whatever the outcome.  The last thing I want is that this ticket gets abandoned.
@@ -1422,7 +1436,7 @@ Anyway: I don't want to fight over this.  I'm happy with whatever the outcome.  
 archive/issue_comments_037558.json:
 ```json
 {
-    "body": "One other small thing: I would prefer the directory `build/old` to be created only when needed: replace the line\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build/old\"\n```\n\nby\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build\"\n```\n\n(and change the error message below)\n\nAnd also replace\n\n```\n\n    mv -f \"$PKG_BASE-\"* old/  2>/dev/null\n```\n\nby\n\n```\n    mkdir -p old\n    if [ $? -ne 0 ]; then\n        echo >&2 \"Error creating directory $SAGE_BUILD_TMPDIR/old.\"\n        exit 1\n    fi\n    mv -f \"$PKG_BASE-\"* old/\n```\n",
+    "body": "One other small thing: I would prefer the directory `build/old` to be created only when needed: replace the line\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build/old\"\n```\nby\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build\"\n```\n(and change the error message below)\n\nAnd also replace\n\n```\n\n    mv -f \"$PKG_BASE-\"* old/  2>/dev/null\n```\nby\n\n```\n    mkdir -p old\n    if [ $? -ne 0 ]; then\n        echo >&2 \"Error creating directory $SAGE_BUILD_TMPDIR/old.\"\n        exit 1\n    fi\n    mv -f \"$PKG_BASE-\"* old/\n```",
     "created_at": "2012-02-14T09:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1436,13 +1450,11 @@ One other small thing: I would prefer the directory `build/old` to be created on
 ```
 mkdir -p "$SAGE_BUILD_TMPDIR/build/old"
 ```
-
 by
 
 ```
 mkdir -p "$SAGE_BUILD_TMPDIR/build"
 ```
-
 (and change the error message below)
 
 And also replace
@@ -1451,7 +1463,6 @@ And also replace
 
     mv -f "$PKG_BASE-"* old/  2>/dev/null
 ```
-
 by
 
 ```
@@ -1465,13 +1476,12 @@ by
 
 
 
-
 ---
 
 archive/issue_comments_037559.json:
 ```json
 {
-    "body": "If you really want to go with the \"build\" subdirectory, I would prefer appending it immediately:\n\n```\nif [ -n \"$SAGE_BUILD_TMPDIR\" ]; then\n    SAGE_BUILD_TMPDIR=\"$SAGE_BUILD_TMPDIR/build\"\n    if [ ! -d \"$SAGE_BUILD_TMPDIR\" ]; then\n        echo \"Creating directory \\$SAGE_BUILD_TMPDIR (=$SAGE_BUILD_TMPDIR).\"\n        mkdir -p \"$SAGE_BUILD_TMPDIR\"\n    fi\n    echo \"Building in $SAGE_BUILD_TMPDIR.\"\nelse\n    SAGE_BUILD_TMPDIR=\"$SAGE_PACKAGES/build\"\nfi\n```\n\n(Actually, the whole `if [ ! -d ] ... fi` block can be removed).",
+    "body": "If you really want to go with the \"build\" subdirectory, I would prefer appending it immediately:\n\n```\nif [ -n \"$SAGE_BUILD_TMPDIR\" ]; then\n    SAGE_BUILD_TMPDIR=\"$SAGE_BUILD_TMPDIR/build\"\n    if [ ! -d \"$SAGE_BUILD_TMPDIR\" ]; then\n        echo \"Creating directory \\$SAGE_BUILD_TMPDIR (=$SAGE_BUILD_TMPDIR).\"\n        mkdir -p \"$SAGE_BUILD_TMPDIR\"\n    fi\n    echo \"Building in $SAGE_BUILD_TMPDIR.\"\nelse\n    SAGE_BUILD_TMPDIR=\"$SAGE_PACKAGES/build\"\nfi\n```\n(Actually, the whole `if [ ! -d ] ... fi` block can be removed).",
     "created_at": "2012-02-14T09:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1494,7 +1504,6 @@ else
     SAGE_BUILD_TMPDIR="$SAGE_PACKAGES/build"
 fi
 ```
-
 (Actually, the whole `if [ ! -d ] ... fi` block can be removed).
 
 
@@ -1504,7 +1513,7 @@ fi
 archive/issue_comments_037560.json:
 ```json
 {
-    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > I ask you again: why???\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n\nJohn, \n\nhow do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? Perhaps /tmp/$user-sage-$SageVersion.$$ might be better. Someone can then find their own Sage-related files easily (for example \n\n\n```\nrm -rf /tmp/drkirkby-sage-4.5.6*\n```\n\nwithout risk of their being any race condition. \n\n\nDave",
+    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > I ask you again: why???\n\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n\n\nJohn, \n\nhow do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? Perhaps /tmp/$user-sage-$SageVersion.$$ might be better. Someone can then find their own Sage-related files easily (for example \n\n```\nrm -rf /tmp/drkirkby-sage-4.5.6*\n```\nwithout risk of their being any race condition. \n\n\nDave",
     "created_at": "2012-02-14T22:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1516,18 +1525,18 @@ archive/issue_comments_037560.json:
 Replying to [comment:42 jhpalmieri]:
 > Replying to [comment:41 jdemeyer]:
 > > I ask you again: why???
+
 > 
 > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should "Also delete files in other directories if they are created by this makefile."  
+
 
 John, 
 
 how do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? Perhaps /tmp/$user-sage-$SageVersion.$$ might be better. Someone can then find their own Sage-related files easily (for example 
 
-
 ```
 rm -rf /tmp/drkirkby-sage-4.5.6*
 ```
-
 without risk of their being any race condition. 
 
 
@@ -1540,7 +1549,7 @@ Dave
 archive/issue_comments_037561.json:
 ```json
 {
-    "body": "Replying to [comment:47 drkirkby]:\n> Replying to [comment:42 jhpalmieri]:\n> > Replying to [comment:41 jdemeyer]:\n> > > I ask you again: why???\n> > \n> > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n> \n> John, \n> \n> how do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? \n\nI don't.  If someone wants to set `$SAGE_BUILD_TMPDIR`, then I'm making it their responsibility to make sure that the directory is available and in good shape.  (If someone does `export SAGE_BUILD_TMPDIR=/tmp/sage` and then we mangle the file name somehow, I think that will lead to confusion much more often than it will help.  We could instead build in `SAGE_BUILD_TMPDIR/subdir` where we choose `subdir` to avoid race conditions.  But I'm not going to do that.)\n\nMeanwhile, I have new versions of the patches.  I'm going to give in on the \"build\" subdirectory: Sage will now build in `SAGE_BUILD_TMPDIR`.  Oh, and I changed the name to `SAGE_BUILD_DIR` instead; I think that name makes more sense.  I also patched bzip2 and prereq so they build in `SAGE_BUILD_DIR` as well \u2014 easy to do now that the base repo has been merged with the root repo.  `make clean` no longer touches `SAGE_BUILD_DIR`, nor does `make distclean`.  (Also, `make clean` no longer recreates `spkg/build` or `spkg/archive` \u2014 what's that directory for, anyway?).\n\nI updated the documentation accordingly.",
+    "body": "Replying to [comment:47 drkirkby]:\n> Replying to [comment:42 jhpalmieri]:\n> > Replying to [comment:41 jdemeyer]:\n> > > I ask you again: why???\n\n> > \n> > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n\n> \n> John, \n> \n> how do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? \n\n\nI don't.  If someone wants to set `$SAGE_BUILD_TMPDIR`, then I'm making it their responsibility to make sure that the directory is available and in good shape.  (If someone does `export SAGE_BUILD_TMPDIR=/tmp/sage` and then we mangle the file name somehow, I think that will lead to confusion much more often than it will help.  We could instead build in `SAGE_BUILD_TMPDIR/subdir` where we choose `subdir` to avoid race conditions.  But I'm not going to do that.)\n\nMeanwhile, I have new versions of the patches.  I'm going to give in on the \"build\" subdirectory: Sage will now build in `SAGE_BUILD_TMPDIR`.  Oh, and I changed the name to `SAGE_BUILD_DIR` instead; I think that name makes more sense.  I also patched bzip2 and prereq so they build in `SAGE_BUILD_DIR` as well \u2014 easy to do now that the base repo has been merged with the root repo.  `make clean` no longer touches `SAGE_BUILD_DIR`, nor does `make distclean`.  (Also, `make clean` no longer recreates `spkg/build` or `spkg/archive` \u2014 what's that directory for, anyway?).\n\nI updated the documentation accordingly.",
     "created_at": "2012-02-14T23:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1553,12 +1562,15 @@ Replying to [comment:47 drkirkby]:
 > Replying to [comment:42 jhpalmieri]:
 > > Replying to [comment:41 jdemeyer]:
 > > > I ask you again: why???
+
 > > 
 > > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should "Also delete files in other directories if they are created by this makefile."  
+
 > 
 > John, 
 > 
 > how do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? 
+
 
 I don't.  If someone wants to set `$SAGE_BUILD_TMPDIR`, then I'm making it their responsibility to make sure that the directory is available and in good shape.  (If someone does `export SAGE_BUILD_TMPDIR=/tmp/sage` and then we mangle the file name somehow, I think that will lead to confusion much more often than it will help.  We could instead build in `SAGE_BUILD_TMPDIR/subdir` where we choose `subdir` to avoid race conditions.  But I'm not going to do that.)
 
@@ -1705,7 +1717,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_037569.json:
 ```json
 {
-    "body": "Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\nLine 227 of `sage-spkg`: replace\n\n```\nif [ -e \"$dir\" ]; then\n```\n\nby\n\n```\nif [ -d \"$dir\" ]; then\n```\n",
+    "body": "Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\nLine 227 of `sage-spkg`: replace\n\n```\nif [ -e \"$dir\" ]; then\n```\nby\n\n```\nif [ -d \"$dir\" ]; then\n```",
     "created_at": "2012-02-15T08:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1721,13 +1733,11 @@ Line 227 of `sage-spkg`: replace
 ```
 if [ -e "$dir" ]; then
 ```
-
 by
 
 ```
 if [ -d "$dir" ]; then
 ```
-
 
 
 
@@ -1772,7 +1782,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_037572.json:
 ```json
 {
-    "body": "Replying to [comment:50 jdemeyer]:\n> Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\nWell, the old version had a second 'cd' command, justified by the comment\n\n```\n# Make triply sure that we are in the build directory before doing  \n# a scary \"rm -rf\"\n```\n\nSo I left the second one in.  You think I should change this?  In any case, you're right about the \"exit 1\".\n\n> Line 227 of `sage-spkg`: replace\n\n```\nif [ -e \"$dir\" ]; then\n```\n\n> by\n\n```\nif [ -d \"$dir\" ]; then\n```\n\n\nOn the off-chance that there is a file (not a directory) in the build directory with the wrong name, shouldn't we move it, too?\n\nReplying to [comment:51 jdemeyer]:\n> Line 235: why \"mv -f\" and not simply \"mv\"?\n\nLeft over from the previous version. I can fix that.",
+    "body": "Replying to [comment:50 jdemeyer]:\n> Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\n\nWell, the old version had a second 'cd' command, justified by the comment\n\n```\n# Make triply sure that we are in the build directory before doing  \n# a scary \"rm -rf\"\n```\nSo I left the second one in.  You think I should change this?  In any case, you're right about the \"exit 1\".\n\n> Line 227 of `sage-spkg`: replace\n\n{{{\nif [ -e \"$dir\" ]; then\n}}}\n> by\n\n{{{\nif [ -d \"$dir\" ]; then\n}}}\n\nOn the off-chance that there is a file (not a directory) in the build directory with the wrong name, shouldn't we move it, too?\n\nReplying to [comment:51 jdemeyer]:\n> Line 235: why \"mv -f\" and not simply \"mv\"?\n\n\nLeft over from the previous version. I can fix that.",
     "created_at": "2012-02-15T18:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4949",
     "type": "issue_comment",
@@ -1784,32 +1794,31 @@ archive/issue_comments_037572.json:
 Replying to [comment:50 jdemeyer]:
 > Lines 210 and 216 of `sage-spkg`: you have twice cd "$SAGE_BUILD_DIR".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to "exit 1" if cd fails.
 
+
 Well, the old version had a second 'cd' command, justified by the comment
 
 ```
 # Make triply sure that we are in the build directory before doing  
 # a scary "rm -rf"
 ```
-
 So I left the second one in.  You think I should change this?  In any case, you're right about the "exit 1".
 
 > Line 227 of `sage-spkg`: replace
 
-```
+{{{
 if [ -e "$dir" ]; then
-```
-
+}}}
 > by
 
-```
+{{{
 if [ -d "$dir" ]; then
-```
-
+}}}
 
 On the off-chance that there is a file (not a directory) in the build directory with the wrong name, shouldn't we move it, too?
 
 Replying to [comment:51 jdemeyer]:
 > Line 235: why "mv -f" and not simply "mv"?
+
 
 Left over from the previous version. I can fix that.
 

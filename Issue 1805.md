@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1805
 archive/issue_comments_011378.json:
 ```json
 {
-    "body": "Before:\n\n```\nsage@modular:~/d/sage/sage/structure$ sage -coverage factorization.py \n----------------------------------------------------------------------\nfactorization.py\nSCORE factorization.py: 28% (6 of 21)\n\nMissing documentation:\n\t * __init__(self, x, unit=None, cr=False, sort=True)\n\t * _set_cr(self, cr)\n\t * sort(self)\n\t * _cmp(f,g)\n\t * _cmp(f,g)\n\t * _cmp(f,g)\n\t * __reduce__(self)\n\t * _cr(self)\n\t * _repr_(self)\n\t * _latex_(self)\n\t * __pow__(self, n)\n\t * __invert__(self)\n\t * Factorization_deduce_unit(x, mul)\n\n\nMissing doctests:\n\t * unit_part(self)\n\t * expand(self)\n\n```\n\n\nAfter:\n\n```\nteragon:structure was$ sage -coverage factorization.py\n----------------------------------------------------------------------\nfactorization.py\nSCORE factorization.py: 100% (22 of 22)\n----------------------------------------------------------------------\n```\n\n\nand I fixed numerous conceptual bugs/mistakes in that file.",
+    "body": "Before:\n\n```\nsage@modular:~/d/sage/sage/structure$ sage -coverage factorization.py \n----------------------------------------------------------------------\nfactorization.py\nSCORE factorization.py: 28% (6 of 21)\n\nMissing documentation:\n\t * __init__(self, x, unit=None, cr=False, sort=True)\n\t * _set_cr(self, cr)\n\t * sort(self)\n\t * _cmp(f,g)\n\t * _cmp(f,g)\n\t * _cmp(f,g)\n\t * __reduce__(self)\n\t * _cr(self)\n\t * _repr_(self)\n\t * _latex_(self)\n\t * __pow__(self, n)\n\t * __invert__(self)\n\t * Factorization_deduce_unit(x, mul)\n\n\nMissing doctests:\n\t * unit_part(self)\n\t * expand(self)\n\n```\n\nAfter:\n\n```\nteragon:structure was$ sage -coverage factorization.py\n----------------------------------------------------------------------\nfactorization.py\nSCORE factorization.py: 100% (22 of 22)\n----------------------------------------------------------------------\n```\n\nand I fixed numerous conceptual bugs/mistakes in that file.",
     "created_at": "2008-01-17T20:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ Missing doctests:
 
 ```
 
-
 After:
 
 ```
@@ -80,7 +79,6 @@ factorization.py
 SCORE factorization.py: 100% (22 of 22)
 ----------------------------------------------------------------------
 ```
-
 
 and I fixed numerous conceptual bugs/mistakes in that file.
 
@@ -380,7 +378,7 @@ Positive review pending fix.
 archive/issue_comments_011394.json:
 ```json
 {
-    "body": "\n```\nsage -t  devel/sage-patch1805/build/sage/structure/factorization.py\n**********************************************************************\nFile \"factorization.py\", line 602:\n    sage: F = factor(-2*x^2 - 1); F\nExpected:\n    (-2.0) * (1.0*x^2 + 0.5) * (1.0*x^2 + 1.11022302463e-16*x + 0.5)\nGot:\n    (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)\n**********************************************************************\n```\n",
+    "body": "```\nsage -t  devel/sage-patch1805/build/sage/structure/factorization.py\n**********************************************************************\nFile \"factorization.py\", line 602:\n    sage: F = factor(-2*x^2 - 1); F\nExpected:\n    (-2.0) * (1.0*x^2 + 0.5) * (1.0*x^2 + 1.11022302463e-16*x + 0.5)\nGot:\n    (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)\n**********************************************************************\n```",
     "created_at": "2008-03-02T06:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -388,7 +386,6 @@ archive/issue_comments_011394.json:
     "user": "https://github.com/garyfurnish"
 }
 ```
-
 
 ```
 sage -t  devel/sage-patch1805/build/sage/structure/factorization.py
@@ -401,7 +398,6 @@ Got:
     (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)
 **********************************************************************
 ```
-
 
 
 
@@ -438,7 +434,7 @@ Got:
 archive/issue_comments_011396.json:
 ```json
 {
-    "body": "\n```\nsage -t  devel/sage-patch1805/build/sage/structure/factorization.py**********************************************************************\nFile \"factorization.py\", line 602:\n    sage: F = factor(-2*x^2 - 1); F\nExpected:\n    (-2.0) * (1.0*x^2 + 0.5) * (1.0*x^2 + 1.11022302463e-16*x + 0.5)\nGot:\n    (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)\n**********************************************************************\n```\n",
+    "body": "```\nsage -t  devel/sage-patch1805/build/sage/structure/factorization.py**********************************************************************\nFile \"factorization.py\", line 602:\n    sage: F = factor(-2*x^2 - 1); F\nExpected:\n    (-2.0) * (1.0*x^2 + 0.5) * (1.0*x^2 + 1.11022302463e-16*x + 0.5)\nGot:\n    (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)\n**********************************************************************\n```",
     "created_at": "2008-03-02T06:37:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1805",
     "type": "issue_comment",
@@ -446,7 +442,6 @@ archive/issue_comments_011396.json:
     "user": "https://github.com/garyfurnish"
 }
 ```
-
 
 ```
 sage -t  devel/sage-patch1805/build/sage/structure/factorization.py**********************************************************************
@@ -458,7 +453,6 @@ Got:
     (-2.0) * (1.0*x^2 - 2.22044604925e-16*x + 0.5) * (1.0*x^2 + 0.5)
 **********************************************************************
 ```
-
 
 
 

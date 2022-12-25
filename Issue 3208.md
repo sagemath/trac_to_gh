@@ -3,7 +3,7 @@
 archive/issues_003208.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: tutorial\n\nI've reworded a bunch of things in the first few sections of the tutorial, plus small changes scattered throughout (like changing Sage to \\sage).  As time permits, and if these changes are acceptable, I may get to the later parts.\n\nAside from random rewordings, I made the following changes and/or have the following comments:\n\n1. at various points, I replaced things like $BLAH$ with \\verb+BLAH+ or \\code{BLAH} or \\emph{BLAH}: when converted to html, these other things behave better than $BLAH$.\n\n2. In section 2.2, there is a sentence \"You do not have to specify the types of any of the input arguments.\"  This implies that it's possible to specify those types, I think, so I've removed the words \"have to\".\n\n3. In section 2.3, one of the examples says\n\n```\n sage: I = ComplexField().0\n```\n\nWhat does the '.0' do?  I can't find out where this might be documented.  Since it's not documented, I've removed its occurrences from this section.  (Replaced with CC(i), for instance.)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3208\n\n",
+    "body": "Assignee: somebody\n\nKeywords: tutorial\n\nI've reworded a bunch of things in the first few sections of the tutorial, plus small changes scattered throughout (like changing Sage to \\sage).  As time permits, and if these changes are acceptable, I may get to the later parts.\n\nAside from random rewordings, I made the following changes and/or have the following comments:\n\n1. at various points, I replaced things like $BLAH$ with \\verb+BLAH+ or \\code{BLAH} or \\emph{BLAH}: when converted to html, these other things behave better than $BLAH$.\n\n2. In section 2.2, there is a sentence \"You do not have to specify the types of any of the input arguments.\"  This implies that it's possible to specify those types, I think, so I've removed the words \"have to\".\n\n3. In section 2.3, one of the examples says\n\n```\n sage: I = ComplexField().0\n```\nWhat does the '.0' do?  I can't find out where this might be documented.  Since it's not documented, I've removed its occurrences from this section.  (Replaced with CC(i), for instance.)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3208\n\n",
     "created_at": "2008-05-15T01:48:59Z",
     "labels": [
         "component: documentation",
@@ -33,7 +33,6 @@ Aside from random rewordings, I made the following changes and/or have the follo
 ```
  sage: I = ComplexField().0
 ```
-
 What does the '.0' do?  I can't find out where this might be documented.  Since it's not documented, I've removed its occurrences from this section.  (Replaced with CC(i), for instance.)
 
 
@@ -68,7 +67,7 @@ lots of little changes to the tutorial
 archive/issue_comments_022127.json:
 ```json
 {
-    "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket3208/tut.patch) by @JohnCremona created at 2008-05-15 19:54:59\n\nReview: a very worthy effort!  Just two points.  Here:\n\n\n```\nThe symbol \\code{I} represents a formal square root of $-1$, as does \n\\code{i}; of course this is not in $\\Q$.  Neither is the square root \nof $-1$ in the complex numbers: \n```\n\n\nthe last part sounds to me as though you are saying that the square root of $-1$ is not in the complex numbers!  Perhaps change that to\n\n```\nNeither is the (complex) square root of $-1$ rational:\n```\n\n\nSecondly, I agree that `ComplexField().0` is obscure, as is `CC.0`, but it is just a synonym for `CC.gen(0)` or `CC.gen()` since `CC` has exactly one \"generator\" (though we had better not start to revive the old argument about what generators are...).  It would never have occurred to me to write `CC(i)` but it works fine.\n\nI vote to accept this after the change of wording suggested (or similar).",
+    "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket3208/tut.patch) by @JohnCremona created at 2008-05-15 19:54:59\n\nReview: a very worthy effort!  Just two points.  Here:\n\n```\nThe symbol \\code{I} represents a formal square root of $-1$, as does \n\\code{i}; of course this is not in $\\Q$.  Neither is the square root \nof $-1$ in the complex numbers: \n```\n\nthe last part sounds to me as though you are saying that the square root of $-1$ is not in the complex numbers!  Perhaps change that to\n\n```\nNeither is the (complex) square root of $-1$ rational:\n```\n\nSecondly, I agree that `ComplexField().0` is obscure, as is `CC.0`, but it is just a synonym for `CC.gen(0)` or `CC.gen()` since `CC` has exactly one \"generator\" (though we had better not start to revive the old argument about what generators are...).  It would never have occurred to me to write `CC(i)` but it works fine.\n\nI vote to accept this after the change of wording suggested (or similar).",
     "created_at": "2008-05-15T19:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
@@ -81,20 +80,17 @@ Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket3208/tut.patch
 
 Review: a very worthy effort!  Just two points.  Here:
 
-
 ```
 The symbol \code{I} represents a formal square root of $-1$, as does 
 \code{i}; of course this is not in $\Q$.  Neither is the square root 
 of $-1$ in the complex numbers: 
 ```
 
-
 the last part sounds to me as though you are saying that the square root of $-1$ is not in the complex numbers!  Perhaps change that to
 
 ```
 Neither is the (complex) square root of $-1$ rational:
 ```
-
 
 Secondly, I agree that `ComplexField().0` is obscure, as is `CC.0`, but it is just a synonym for `CC.gen(0)` or `CC.gen()` since `CC` has exactly one "generator" (though we had better not start to revive the old argument about what generators are...).  It would never have occurred to me to write `CC(i)` but it works fine.
 
@@ -107,7 +103,7 @@ I vote to accept this after the change of wording suggested (or similar).
 archive/issue_comments_022128.json:
 ```json
 {
-    "body": "We could finesse the whole issue and just say \"The square root of $-1$ is not rational\", followed by \n\n```\n sage: i in QQ\n False\n```\n\n\nThis ignores the fact that i is not actually an element of `CC` (which could mislead users, I suppose), but it means we don't have to use `CC(i)`, or `CC.0` which I think is more confusing, especially so early in the tutorial.  On the other hand, I've added the example\n\n```\n sage: c = GF(3)(1)    # c is the element 1 of the field GF(3)\n```\n\nso maybe `CC(i)` is not so obscure?\n\nI'm not sure what the right thing to do is.  I've changed it to the following:\n\nThe symbol \\code{I} represents the square root of $-1$; \\code{i} is a\nsynonym for \\code{I}.  Of course, this is not in $\\Q$:\n\n```\n sage: i  # square root of -1\n I     \n sage: i in QQ\n False\n```\n\n\nBecause of this change, I've re-inserted a mention of `CC` into the paragraph which follows this in the tutorial.\n\nI'll include a patch, but I'll keep the old patch too, in case people want to compare.",
+    "body": "We could finesse the whole issue and just say \"The square root of $-1$ is not rational\", followed by \n\n```\n sage: i in QQ\n False\n```\n\nThis ignores the fact that i is not actually an element of `CC` (which could mislead users, I suppose), but it means we don't have to use `CC(i)`, or `CC.0` which I think is more confusing, especially so early in the tutorial.  On the other hand, I've added the example\n\n```\n sage: c = GF(3)(1)    # c is the element 1 of the field GF(3)\n```\nso maybe `CC(i)` is not so obscure?\n\nI'm not sure what the right thing to do is.  I've changed it to the following:\n\nThe symbol \\code{I} represents the square root of $-1$; \\code{i} is a\nsynonym for \\code{I}.  Of course, this is not in $\\Q$:\n\n```\n sage: i  # square root of -1\n I     \n sage: i in QQ\n False\n```\n\nBecause of this change, I've re-inserted a mention of `CC` into the paragraph which follows this in the tutorial.\n\nI'll include a patch, but I'll keep the old patch too, in case people want to compare.",
     "created_at": "2008-05-15T21:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
@@ -123,13 +119,11 @@ We could finesse the whole issue and just say "The square root of $-1$ is not ra
  False
 ```
 
-
 This ignores the fact that i is not actually an element of `CC` (which could mislead users, I suppose), but it means we don't have to use `CC(i)`, or `CC.0` which I think is more confusing, especially so early in the tutorial.  On the other hand, I've added the example
 
 ```
  sage: c = GF(3)(1)    # c is the element 1 of the field GF(3)
 ```
-
 so maybe `CC(i)` is not so obscure?
 
 I'm not sure what the right thing to do is.  I've changed it to the following:
@@ -143,7 +137,6 @@ synonym for \code{I}.  Of course, this is not in $\Q$:
  sage: i in QQ
  False
 ```
-
 
 Because of this change, I've re-inserted a mention of `CC` into the paragraph which follows this in the tutorial.
 
@@ -214,7 +207,7 @@ new version of patch; this replaces the old patch, if people agree it's actually
 archive/issue_comments_022132.json:
 ```json
 {
-    "body": "I vote for tut-new.2.patch.\n\nSome of the issues which are now better explained here relate to the recent discussion on sage-devel  where behavious such as this is being discussed:\n\n```\nsage: sqrt(-1) in ComplexField()\nFalse\nsage: sqrt(2) in RealField()\nFalse\n```\n",
+    "body": "I vote for tut-new.2.patch.\n\nSome of the issues which are now better explained here relate to the recent discussion on sage-devel  where behavious such as this is being discussed:\n\n```\nsage: sqrt(-1) in ComplexField()\nFalse\nsage: sqrt(2) in RealField()\nFalse\n```",
     "created_at": "2008-05-16T08:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
@@ -233,7 +226,6 @@ False
 sage: sqrt(2) in RealField()
 False
 ```
-
 
 
 

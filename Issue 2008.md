@@ -3,7 +3,7 @@
 archive/issues_002008.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nin Sage-2.10.1.rc3:\n\n\n```\nsage-2.10.1.rc3/spkg/standard/cython-0.9.6.11b/Includes/._.DS_Store\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2008\n\n",
+    "body": "Assignee: mabshoff\n\nin Sage-2.10.1.rc3:\n\n```\nsage-2.10.1.rc3/spkg/standard/cython-0.9.6.11b/Includes/._.DS_Store\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2008\n\n",
     "created_at": "2008-01-31T23:20:03Z",
     "labels": [
         "component: packages: standard",
@@ -20,11 +20,9 @@ Assignee: mabshoff
 
 in Sage-2.10.1.rc3:
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/cython-0.9.6.11b/Includes/._.DS_Store
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2008
 

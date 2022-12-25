@@ -3,7 +3,7 @@
 archive/issues_001544.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n\nhttp://sagemath.org/doc/html/tut/node9.html\n\n  SAGE uses = for assignment and ==,<=,>=,<,> for comparison:\n  ---\n  SAGE uses = for assignment.  It uses ==, <=, >=, <, and >\n  for comparison:\n\n\n  ... after the list of variables names.\n                        variable\n\n\n  You can specify multiple inputs,\n  and optional defaults for the inputs.\n  ---\n  You can specify multiple inputs,\n  each of which may have a default value.\n\n\n  In Python  blocks of code are ...\n     Python,\n\n\n  ... because the return          statement is not ...\n                  <tt>return</tt>\n\n\n  If you fix the indentation, then the function works:\n  ---\n  If you fix the indentation, the function works:\n\n\n  ... on one line separate   by semicolons:\n             line, separated\n\n\n  ... multiple lines, use               backslash:\n                          a terminating\n\n\n  In SAGE  you count ...\n     SAGE,\n\n\n  ... is like (for(i=1;i<6;i+=2).\n               for(i=1;i<6;i+=2).\n\n\n  ... is to use string formating.\n                       formatting.\n\n\n  Below  we create three columns ...\n  Below,\n\n\n  ... except      it can be ...\n             that\n\n\n  ... is a powerful techniques that can ...\n                    technique\n\n\n  Below  we define a class ...\n  Below,\n\n\n  ... when it is created, and the ...\n  ---\n  ... when it is created; the ...\n\n\n  ... of numbers  use the list function:\n         numbers,\n\n\n  ... is considered       in ...\n                    to be\n\n  ... the following doesn't, since ...\n  ---\n  ... the following doesn't work, since ...\n\n\n  ... on the mailing      for further details.\n                     list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1544\n\n",
+    "body": "Assignee: tba\n\n```\n\nhttp://sagemath.org/doc/html/tut/node9.html\n\n  SAGE uses = for assignment and ==,<=,>=,<,> for comparison:\n  ---\n  SAGE uses = for assignment.  It uses ==, <=, >=, <, and >\n  for comparison:\n\n\n  ... after the list of variables names.\n                        variable\n\n\n  You can specify multiple inputs,\n  and optional defaults for the inputs.\n  ---\n  You can specify multiple inputs,\n  each of which may have a default value.\n\n\n  In Python  blocks of code are ...\n     Python,\n\n\n  ... because the return          statement is not ...\n                  <tt>return</tt>\n\n\n  If you fix the indentation, then the function works:\n  ---\n  If you fix the indentation, the function works:\n\n\n  ... on one line separate   by semicolons:\n             line, separated\n\n\n  ... multiple lines, use               backslash:\n                          a terminating\n\n\n  In SAGE  you count ...\n     SAGE,\n\n\n  ... is like (for(i=1;i<6;i+=2).\n               for(i=1;i<6;i+=2).\n\n\n  ... is to use string formating.\n                       formatting.\n\n\n  Below  we create three columns ...\n  Below,\n\n\n  ... except      it can be ...\n             that\n\n\n  ... is a powerful techniques that can ...\n                    technique\n\n\n  Below  we define a class ...\n  Below,\n\n\n  ... when it is created, and the ...\n  ---\n  ... when it is created; the ...\n\n\n  ... of numbers  use the list function:\n         numbers,\n\n\n  ... is considered       in ...\n                    to be\n\n  ... the following doesn't, since ...\n  ---\n  ... the following doesn't work, since ...\n\n\n  ... on the mailing      for further details.\n                     list\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1544\n\n",
     "created_at": "2007-12-17T03:22:35Z",
     "labels": [
         "component: documentation",
@@ -17,7 +17,6 @@ archive/issues_001544.json:
 }
 ```
 Assignee: tba
-
 
 ```
 
@@ -110,7 +109,6 @@ http://sagemath.org/doc/html/tut/node9.html
                      list
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1544
 
 
@@ -122,7 +120,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1544
 archive/issue_comments_009832.json:
 ```json
 {
-    "body": "Dear Matthew,\n\nThanks for your bug report!\n\nDear David Joyner (cc: sage-devel):\n\nThis is in some latex that you wrote.  Any ideas?\n\nI've made this trac #1602:\n   http://trac.sagemath.org/sage_trac/ticket/1602\n\n\n---------- Forwarded message ----------\nFrom: Matthew Moelter <>\nDate: Dec 26, 2007 4:24 PM\nSubject: typo in sage tutorial\nTo: wstein`@`gmail.com\n\n\non this page\n\nhttp://www.sagemath.org/doc/html/tut/node24.html\n\nin the table there is what appears to be raw latex rather than\ntypeset material.\nthis appears \"&vellip#vdots;\"\n\nMatt\n\n\n\nMatthew Moelter, Assoc Prof\nDepartment of Physics\nCalif. Polytechnic State Univ.\nSan Luis Obispo, CA 93407",
+    "body": "Dear Matthew,\n\nThanks for your bug report!\n\nDear David Joyner (cc: sage-devel):\n\nThis is in some latex that you wrote.  Any ideas?\n\nI've made this trac #1602:\n   http://trac.sagemath.org/sage_trac/ticket/1602\n\n\n---\nFrom: Matthew Moelter <>\nDate: Dec 26, 2007 4:24 PM\nSubject: typo in sage tutorial\nTo: wstein`@`gmail.com\n\n\non this page\n\nhttp://www.sagemath.org/doc/html/tut/node24.html\n\nin the table there is what appears to be raw latex rather than\ntypeset material.\nthis appears \"&vellip#vdots;\"\n\nMatt\n\n\n\nMatthew Moelter, Assoc Prof\nDepartment of Physics\nCalif. Polytechnic State Univ.\nSan Luis Obispo, CA 93407",
     "created_at": "2007-12-27T04:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1544",
     "type": "issue_comment",
@@ -143,7 +141,7 @@ I've made this trac #1602:
    http://trac.sagemath.org/sage_trac/ticket/1602
 
 
----------- Forwarded message ----------
+---
 From: Matthew Moelter <>
 Date: Dec 26, 2007 4:24 PM
 Subject: typo in sage tutorial

@@ -72,7 +72,7 @@ Changing status from new to assigned.
 archive/issue_comments_015061.json:
 ```json
 {
-    "body": "I don't think this is a good idea:\n\n```\nAll sloane_functions have extensive examples, but from design they are\nplaced just after the class declaration.\nIt feels stupid to have \"internal\" functions\nstarting with '__' or '_' documented with EXAMPLES!\n\nLet us think at the effect on the reference manual.\nI don't think it is a good idea to have internal functions like\n__init, _repr and other \"hidden\" fuctions documented with examples\nfiguring in the Reference Manual.\n\nIf we want users of the OEIS to use Sage, we have to provide them with\nadequate examples. Maybe raising the doctest coverage with 2% looks good\nbut it isn't in this case.\n\nAdding some sloane-functions I was following the 'template'. So there\nis, maybe, something wrong with the overall design.\n\n\nJaap\n\n\n\n```\n",
+    "body": "I don't think this is a good idea:\n\n```\nAll sloane_functions have extensive examples, but from design they are\nplaced just after the class declaration.\nIt feels stupid to have \"internal\" functions\nstarting with '__' or '_' documented with EXAMPLES!\n\nLet us think at the effect on the reference manual.\nI don't think it is a good idea to have internal functions like\n__init, _repr and other \"hidden\" fuctions documented with examples\nfiguring in the Reference Manual.\n\nIf we want users of the OEIS to use Sage, we have to provide them with\nadequate examples. Maybe raising the doctest coverage with 2% looks good\nbut it isn't in this case.\n\nAdding some sloane-functions I was following the 'template'. So there\nis, maybe, something wrong with the overall design.\n\n\nJaap\n\n\n\n```",
     "created_at": "2008-02-24T19:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
@@ -110,7 +110,6 @@ Jaap
 
 
 
-
 ---
 
 archive/issue_comments_015062.json:
@@ -134,7 +133,7 @@ I disagree with Jaap here.  I think getting coverage to 100% is a good idea.
 archive/issue_comments_015063.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> I disagree with Jaap here.  I think getting coverage to 100% is a good idea. \n\nGenerally spoken yes, but in this case I have my doubts.\n\nJaap",
+    "body": "Replying to [comment:3 was]:\n> I disagree with Jaap here.  I think getting coverage to 100% is a good idea. \n\n\nGenerally spoken yes, but in this case I have my doubts.\n\nJaap",
     "created_at": "2008-02-24T20:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
@@ -145,6 +144,7 @@ archive/issue_comments_015063.json:
 
 Replying to [comment:3 was]:
 > I disagree with Jaap here.  I think getting coverage to 100% is a good idea. 
+
 
 Generally spoken yes, but in this case I have my doubts.
 

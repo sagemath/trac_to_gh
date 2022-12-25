@@ -57,7 +57,7 @@ Wait until Sage 4.3.4 is released. I expect that release to fix all the warnings
 archive/issue_comments_076746.json:
 ```json
 {
-    "body": "Here are the warnings I get on my computer:\n\n\n```\n[~/Applications/sage/devel/sage-combinat/doc/en/reference]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 612 source files that are out of date\nupdating environment: 2 added, 612 changed, 0 removed\nreading sources... [100%] sage/symbolic/ring                   curve_morphismtorcfield\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph:3: (ERROR/3) Unexpected indentation.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.minimum_outdegree_orientation:7: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:18: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:27: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: (WARNING/2) Duplicate explicit target name: \"krg96\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: (WARNING/2) Duplicate explicit target name: \"gyll93\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: WARNING: duplicate citation KRG96, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: WARNING: duplicate citation GYLL93, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] structure                             urve_morphismtorcfield\nwriting additional files... genindex modindex search\ncopying images... media/homology/rp2.png media/homology/simplices.png media/homology/torus.png media/homology/klein.png media/homology/torus_labelled.png\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 8 warnings.\nBuild finished.  The built documents can be found in /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\n```\n\n\nI'll try to fix them and upload a patch soon.",
+    "body": "Here are the warnings I get on my computer:\n\n```\n[~/Applications/sage/devel/sage-combinat/doc/en/reference]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 612 source files that are out of date\nupdating environment: 2 added, 612 changed, 0 removed\nreading sources... [100%] sage/symbolic/ring                   curve_morphismtorcfield\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph:3: (ERROR/3) Unexpected indentation.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.minimum_outdegree_orientation:7: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:18: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:27: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: (WARNING/2) Duplicate explicit target name: \"krg96\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: (WARNING/2) Duplicate explicit target name: \"gyll93\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: WARNING: duplicate citation KRG96, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: WARNING: duplicate citation GYLL93, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] structure                             urve_morphismtorcfield\nwriting additional files... genindex modindex search\ncopying images... media/homology/rp2.png media/homology/simplices.png media/homology/torus.png media/homology/klein.png media/homology/torus_labelled.png\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 8 warnings.\nBuild finished.  The built documents can be found in /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\n```\n\nI'll try to fix them and upload a patch soon.",
     "created_at": "2010-03-22T17:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ archive/issue_comments_076746.json:
 ```
 
 Here are the warnings I get on my computer:
-
 
 ```
 [~/Applications/sage/devel/sage-combinat/doc/en/reference]$ sage -docbuild reference html
@@ -98,7 +97,6 @@ dumping object inventory... done
 build succeeded, 8 warnings.
 Build finished.  The built documents can be found in /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference
 ```
-
 
 I'll try to fix them and upload a patch soon.
 
@@ -227,7 +225,7 @@ Nathann
 archive/issue_comments_076753.json:
 ```json
 {
-    "body": "I agree with your changes ! I just hope it won't overlap with any other ticket.\n\nBy the way, did you test my patch ? When I created it, I used the sage-combinat queue and it worked fine, but here, when I tried to test your patch, I created a clone (with `hg -clone t8513`) to apply your patch on top of mine, but I got the following warning.\n\n\n```\n[~/Applications/sage/devel/sage-t8513]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: 0 added, 2 changed, 0 removed\nreading sources... [100%] sage/graphs/graph                          \n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/digraph'\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/generic_graph'\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] sage/graphs/graph                           \nwriting additional files... genindex modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 2 warnings.\n```\n\n\nIt's strange, it doesn't accept to add the two files to the doctree, as if the path was not correct when creating a clone, but was ok with sage-combinat. Does it work fine for you?",
+    "body": "I agree with your changes ! I just hope it won't overlap with any other ticket.\n\nBy the way, did you test my patch ? When I created it, I used the sage-combinat queue and it worked fine, but here, when I tried to test your patch, I created a clone (with `hg -clone t8513`) to apply your patch on top of mine, but I got the following warning.\n\n```\n[~/Applications/sage/devel/sage-t8513]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: 0 added, 2 changed, 0 removed\nreading sources... [100%] sage/graphs/graph                          \n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/digraph'\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/generic_graph'\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] sage/graphs/graph                           \nwriting additional files... genindex modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 2 warnings.\n```\n\nIt's strange, it doesn't accept to add the two files to the doctree, as if the path was not correct when creating a clone, but was ok with sage-combinat. Does it work fine for you?",
     "created_at": "2010-03-23T13:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -239,7 +237,6 @@ archive/issue_comments_076753.json:
 I agree with your changes ! I just hope it won't overlap with any other ticket.
 
 By the way, did you test my patch ? When I created it, I used the sage-combinat queue and it worked fine, but here, when I tried to test your patch, I created a clone (with `hg -clone t8513`) to apply your patch on top of mine, but I got the following warning.
-
 
 ```
 [~/Applications/sage/devel/sage-t8513]$ sage -docbuild reference html
@@ -262,7 +259,6 @@ dumping search index... done
 dumping object inventory... done
 build succeeded, 2 warnings.
 ```
-
 
 It's strange, it doesn't accept to add the two files to the doctree, as if the path was not correct when creating a clone, but was ok with sage-combinat. Does it work fine for you?
 
@@ -369,7 +365,7 @@ I don't know much about graph theory, but is there any sense to the current orde
 archive/issue_comments_076759.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\nI agree with you! There is some cleanup needed in the documentation. But maybe we should wait for it in another ticket. The goal of #8513 is to quickly make the graph documentation available so that one may check if Sphinx builds all right when reviewing related tickets. If it's ok for you, of course.\n\nSorry for being so late, by the way, Nathann, I'll try to finish this ticket today or at most, during the week.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\n\nI agree with you! There is some cleanup needed in the documentation. But maybe we should wait for it in another ticket. The goal of #8513 is to quickly make the graph documentation available so that one may check if Sphinx builds all right when reviewing related tickets. If it's ok for you, of course.\n\nSorry for being so late, by the way, Nathann, I'll try to finish this ticket today or at most, during the week.",
     "created_at": "2010-04-12T22:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -380,6 +376,7 @@ archive/issue_comments_076759.json:
 
 Replying to [comment:9 jhpalmieri]:
 > I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the "Graph Theory" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)
+
 
 I agree with you! There is some cleanup needed in the documentation. But maybe we should wait for it in another ticket. The goal of #8513 is to quickly make the graph documentation available so that one may check if Sphinx builds all right when reviewing related tickets. If it's ok for you, of course.
 
@@ -392,7 +389,7 @@ Sorry for being so late, by the way, Nathann, I'll try to finish this ticket tod
 archive/issue_comments_076760.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?\n\nNo, I don't think so. The current organization is a mess.\n\n\n\n\n\n> Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  \n\nYes. The current organization of the graph theory modules, as they appear in the reference manual, is rather unusual. For example, the interface to cliquer appears as the very first link. One would expect something along the following line to be more natural:\n\n   * undirected graph\n   * digraph\n   * generic graph\n   * applications of graph theory\n   * fast compiled graph\n   * etc. \n\nI have uploaded a reviewer patch that does something about this. With my reviewer patch, the organization of the graph theory modules should be more systematic.\n\n\n\n\n\n> I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\nNod. This needs to wait for another ticket.\n\n\n\n\nAfter applying [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch) and [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch), I then rebuilt the whole Sage documentation. A long doctest of the whole Sage library resulted in the following failure:\n\n```\nsage -t -long devel/sage-main/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.3.5-8513-graph-doc/devel/sage-main/sage/misc/sagedoc.py\", line 892:\n    sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100\nExpected:\n    True\nGot:\n    False\n```\n\nThis is due to adding two new files to the reference manual that happen to be about graph theory, hence the above search returns more matches for the word \"tree\". My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me. I'm happy with both abmasse and ncohen's patches. Apply patches in the following order:\n\n1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)\n2. [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch)\n3. [trac_8513-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513-reviewer.patch)",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?\n\n\nNo, I don't think so. The current organization is a mess.\n\n\n\n\n\n> Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  \n\n\nYes. The current organization of the graph theory modules, as they appear in the reference manual, is rather unusual. For example, the interface to cliquer appears as the very first link. One would expect something along the following line to be more natural:\n\n   * undirected graph\n   * digraph\n   * generic graph\n   * applications of graph theory\n   * fast compiled graph\n   * etc. \n\nI have uploaded a reviewer patch that does something about this. With my reviewer patch, the organization of the graph theory modules should be more systematic.\n\n\n\n\n\n> I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\n\nNod. This needs to wait for another ticket.\n\n\n\n\nAfter applying [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch) and [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch), I then rebuilt the whole Sage documentation. A long doctest of the whole Sage library resulted in the following failure:\n\n```\nsage -t -long devel/sage-main/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.3.5-8513-graph-doc/devel/sage-main/sage/misc/sagedoc.py\", line 892:\n    sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100\nExpected:\n    True\nGot:\n    False\n```\nThis is due to adding two new files to the reference manual that happen to be about graph theory, hence the above search returns more matches for the word \"tree\". My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me. I'm happy with both abmasse and ncohen's patches. Apply patches in the following order:\n\n1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)\n2. [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch)\n3. [trac_8513-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513-reviewer.patch)",
     "created_at": "2010-04-12T22:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -404,6 +401,7 @@ archive/issue_comments_076760.json:
 Replying to [comment:9 jhpalmieri]:
 > I don't know much about graph theory, but is there any sense to the current order in the reference manual?
 
+
 No, I don't think so. The current organization is a mess.
 
 
@@ -411,6 +409,7 @@ No, I don't think so. The current organization is a mess.
 
 
 > Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  
+
 
 Yes. The current organization of the graph theory modules, as they appear in the reference manual, is rather unusual. For example, the interface to cliquer appears as the very first link. One would expect something along the following line to be more natural:
 
@@ -429,6 +428,7 @@ I have uploaded a reviewer patch that does something about this. With my reviewe
 
 > I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the "Graph Theory" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)
 
+
 Nod. This needs to wait for another ticket.
 
 
@@ -446,7 +446,6 @@ Expected:
 Got:
     False
 ```
-
 This is due to adding two new files to the reference manual that happen to be about graph theory, hence the above search returns more matches for the word "tree". My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me. I'm happy with both abmasse and ncohen's patches. Apply patches in the following order:
 
 1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)
@@ -496,7 +495,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076763.json:
 ```json
 {
-    "body": "> My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me.\n\nYour patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?",
+    "body": "> My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me.\n\n\nYour patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?",
     "created_at": "2010-04-12T23:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -506,6 +505,7 @@ archive/issue_comments_076763.json:
 ```
 
 > My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me.
+
 
 Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?
 
@@ -554,7 +554,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076766.json:
 ```json
 {
-    "body": "Replying to [comment:13 jhpalmieri]:\n> Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?\n\nI see what you mean. Performing a search with `whole_word=False` results in too many matches. When using `whole_word=True`, we want to provide an upper bound on the number of matches. I have modified the reviewer patch accordingly.",
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?\n\n\nI see what you mean. Performing a search with `whole_word=False` results in too many matches. When using `whole_word=True`, we want to provide an upper bound on the number of matches. I have modified the reviewer patch accordingly.",
     "created_at": "2010-04-12T23:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -565,6 +565,7 @@ archive/issue_comments_076766.json:
 
 Replying to [comment:13 jhpalmieri]:
 > Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?
+
 
 I see what you mean. Performing a search with `whole_word=False` results in too many matches. When using `whole_word=True`, we want to provide an upper bound on the number of matches. I have modified the reviewer patch accordingly.
 
@@ -593,7 +594,7 @@ I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pas
 archive/issue_comments_076768.json:
 ```json
 {
-    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\nSure, if you're ok with the result. It's even better if the final reviewer isn't Nathann nor me.",
+    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\n\nSure, if you're ok with the result. It's even better if the final reviewer isn't Nathann nor me.",
     "created_at": "2010-04-13T13:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -605,6 +606,7 @@ archive/issue_comments_076768.json:
 Replying to [comment:15 jhpalmieri]:
 > I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?
 
+
 Sure, if you're ok with the result. It's even better if the final reviewer isn't Nathann nor me.
 
 
@@ -614,7 +616,7 @@ Sure, if you're ok with the result. It's even better if the final reviewer isn't
 archive/issue_comments_076769.json:
 ```json
 {
-    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\nI think so. Cleaning up the modules added by this ticket to the reference manual can be split off to an enhancement ticket.",
+    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\n\nI think so. Cleaning up the modules added by this ticket to the reference manual can be split off to an enhancement ticket.",
     "created_at": "2010-04-13T23:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8513",
     "type": "issue_comment",
@@ -625,6 +627,7 @@ archive/issue_comments_076769.json:
 
 Replying to [comment:15 jhpalmieri]:
 > I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?
+
 
 I think so. Cleaning up the modules added by this ticket to the reference manual can be split off to an enhancement ticket.
 

@@ -3,7 +3,7 @@
 archive/issues_009176.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kcrisman @dimpase\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @dimpase\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6380:\n    sage: E.heegner_index(-7)\nExpected:\n    1.00000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6410:\n    sage: I = E.heegner_index(-8); I\nExpected:\n    1.50000?\nGot:\n    1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6412:\n    sage: 2*I\nExpected:\n    3.0000?\nGot:\n    2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/heegner.py\", line 6546:\n    sage: E.heegner_index_bound()\nExpected:\n    ([2], -7)\nGot:\n    ([], -7)\n**********************************************************************\n2 items had failures:\n   3 of  15 in __main__.example_229\n   1 of   4 in __main__.example_231\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9176\n\n",
     "created_at": "2010-06-07T05:33:45Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009176.json:
 Assignee: tbd
 
 CC:  @kcrisman @dimpase
-
 
 ```
 
@@ -59,7 +58,6 @@ Got:
 ***Test Failed*** 4 failures.
 For whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_heegner.py
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9176
 
@@ -146,7 +144,7 @@ Also lots of MemoryError for PARI trying to allocate memory.
 archive/issue_comments_085693.json:
 ```json
 {
-    "body": "> Got lots of failures, apparently because of forking issues, I'll try a rebase.\nGlad at least *one* of the forking issues I had cropped up for you :-) Even if it does work on a rebase, don't forget to try by hand as well.",
+    "body": "> Got lots of failures, apparently because of forking issues, I'll try a rebase.\n\nGlad at least *one* of the forking issues I had cropped up for you :-) Even if it does work on a rebase, don't forget to try by hand as well.",
     "created_at": "2013-01-15T18:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
@@ -156,6 +154,7 @@ archive/issue_comments_085693.json:
 ```
 
 > Got lots of failures, apparently because of forking issues, I'll try a rebase.
+
 Glad at least *one* of the forking issues I had cropped up for you :-) Even if it does work on a rebase, don't forget to try by hand as well.
 
 
@@ -332,7 +331,7 @@ I propose to close it (as won't fix/worksforme), as it works now.
 archive/issue_comments_085703.json:
 ```json
 {
-    "body": "Replying to [comment:13 dimpase]:\n> I propose to close it (as won't fix/worksforme), as it works now.\nDid you actually manage to run the test without hacking around with --cygwin-heap?\nI think we should at least add some doc somewhere to state that the tests are expected to fail with default max heap memory and how to modify that (e.g. use peflags and the global var is not supported anymore).",
+    "body": "Replying to [comment:13 dimpase]:\n> I propose to close it (as won't fix/worksforme), as it works now.\n\nDid you actually manage to run the test without hacking around with --cygwin-heap?\nI think we should at least add some doc somewhere to state that the tests are expected to fail with default max heap memory and how to modify that (e.g. use peflags and the global var is not supported anymore).",
     "created_at": "2013-01-30T10:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
@@ -343,6 +342,7 @@ archive/issue_comments_085703.json:
 
 Replying to [comment:13 dimpase]:
 > I propose to close it (as won't fix/worksforme), as it works now.
+
 Did you actually manage to run the test without hacking around with --cygwin-heap?
 I think we should at least add some doc somewhere to state that the tests are expected to fail with default max heap memory and how to modify that (e.g. use peflags and the global var is not supported anymore).
 
@@ -428,7 +428,7 @@ This is #14207.
 archive/issue_comments_085708.json:
 ```json
 {
-    "body": "Okay, I finally got this to doctest without forking errors, and mostly am seeing the same problem you are.  I'm not going to bother messing around with Pari's memory because I don't know how to do that and you guys are on it.  I do get a lot of extra failures\n\n```\nExpected:\n    0\nGot:\n    32\n```\n\nwhich seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.",
+    "body": "Okay, I finally got this to doctest without forking errors, and mostly am seeing the same problem you are.  I'm not going to bother messing around with Pari's memory because I don't know how to do that and you guys are on it.  I do get a lot of extra failures\n\n```\nExpected:\n    0\nGot:\n    32\n```\nwhich seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.",
     "created_at": "2013-03-08T12:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
@@ -445,7 +445,6 @@ Expected:
 Got:
     32
 ```
-
 which seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.
 
 
@@ -455,7 +454,7 @@ which seems to be exactly one per example.  Of course, there *is* no such doctes
 archive/issue_comments_085709.json:
 ```json
 {
-    "body": "Replying to [comment:18 kcrisman]:\n> Okay, I finally got this to doctest without forking errors, and mostly am seeing the same problem you are.  I'm not going to bother messing around with Pari's memory because I don't know how to do that and you guys are on it.  I do get a lot of extra failures\n> {{{\n> Expected:\n>     0\n> Got:\n>     32\n> }}}\nI guess these extra failures are mostly due to the fact a previous doctest needing too much memory for PARI failed.\n> which seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.",
+    "body": "Replying to [comment:18 kcrisman]:\n> Okay, I finally got this to doctest without forking errors, and mostly am seeing the same problem you are.  I'm not going to bother messing around with Pari's memory because I don't know how to do that and you guys are on it.  I do get a lot of extra failures\n> \n> ```\n> Expected:\n>     0\n> Got:\n>     32\n> ```\n\nI guess these extra failures are mostly due to the fact a previous doctest needing too much memory for PARI failed.\n> which seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.",
     "created_at": "2013-03-14T00:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9176",
     "type": "issue_comment",
@@ -466,12 +465,14 @@ archive/issue_comments_085709.json:
 
 Replying to [comment:18 kcrisman]:
 > Okay, I finally got this to doctest without forking errors, and mostly am seeing the same problem you are.  I'm not going to bother messing around with Pari's memory because I don't know how to do that and you guys are on it.  I do get a lot of extra failures
-> {{{
+> 
+> ```
 > Expected:
 >     0
 > Got:
 >     32
-> }}}
+> ```
+
 I guess these extra failures are mostly due to the fact a previous doctest needing too much memory for PARI failed.
 > which seems to be exactly one per example.  Of course, there *is* no such doctest listed in the file, so this must be something in the framework.
 

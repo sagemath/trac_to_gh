@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6005
 archive/issue_comments_047682.json:
 ```json
 {
-    "body": "Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by @williamstein created at 2009-05-07 23:33:25\n\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
+    "body": "Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by @williamstein created at 2009-05-07 23:33:25\n\n```\nsage: K.<i> = QuadraticField(-1) \nsage: i.imag()\n1\n```\n\nThe above is hundreds of times slower than i.real().  That needs to be fixed.\n\nit's because of this line\n\n```",
     "created_at": "2009-05-07T23:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
@@ -42,13 +42,11 @@ archive/issue_comments_047682.json:
 
 Attachment [6005-qnf-real-imag.patch](tarball://root/attachments/some-uuid/ticket6005/6005-qnf-real-imag.patch) by @williamstein created at 2009-05-07 23:33:25
 
-
 ```
 sage: K.<i> = QuadraticField(-1) 
 sage: i.imag()
 1
 ```
-
 
 The above is hundreds of times slower than i.real().  That needs to be fixed.
 
@@ -81,7 +79,7 @@ Attachment [6005-qnf-real-imag-fix.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_047684.json:
 ```json
 {
-    "body": "Now \n\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: timeit(\"i.imag()\")\n625 loops, best of 3: 9.73 \u00b5s per loop\n```\n",
+    "body": "Now \n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: timeit(\"i.imag()\")\n625 loops, best of 3: 9.73 \u00b5s per loop\n```",
     "created_at": "2009-05-07T23:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
@@ -92,7 +90,6 @@ archive/issue_comments_047684.json:
 
 Now 
 
-
 ```
 sage: K.<i> = QuadraticField(-1)
 sage: timeit("i.imag()")
@@ -101,13 +98,12 @@ sage: timeit("i.imag()")
 
 
 
-
 ---
 
 archive/issue_comments_047685.json:
 ```json
 {
-    "body": "The two patches cause doctest failures in one file:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 5512:\n    sage: F, F_into_L, _ = L.subfields(2)[0]; F  \nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_124[42]>\", line 1, in <module>\n        F, F_into_L, _ = L.subfields(Integer(2))[Integer(0)]; F###line 5512:\n    sage: F, F_into_L, _ = L.subfields(2)[0]; F  \n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4676, in subfields\n        both_maps=True, optimize=False)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4733, in _subfields_helper\n        K = NumberField(f, names=name + str(i), embedding=embedding)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 423, in NumberField\n        K = NumberField_quadratic(polynomial, name, check, embedding)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 6852, in __init__\n        self._standard_embedding = RDF(rootD) > 0\n      File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4121)\n      File \"coerce_maps.pyx\", line 81, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3064)\n      File \"coerce_maps.pyx\", line 76, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2955)\n      File \"real_double.pyx\", line 525, in sage.rings.real_double.RealDoubleElement.__init__ (sage/rings/real_double.c:5668)\n    TypeError: float() argument must be a string or a number\n**********************************************************************\n<SNIP>\n```\n\n\nCheers,\n\nMichaep",
+    "body": "The two patches cause doctest failures in one file:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/rings/number_field/number_field.py\", line 5512:\n    sage: F, F_into_L, _ = L.subfields(2)[0]; F  \nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_124[42]>\", line 1, in <module>\n        F, F_into_L, _ = L.subfields(Integer(2))[Integer(0)]; F###line 5512:\n    sage: F, F_into_L, _ = L.subfields(2)[0]; F  \n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4676, in subfields\n        both_maps=True, optimize=False)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4733, in _subfields_helper\n        K = NumberField(f, names=name + str(i), embedding=embedding)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 423, in NumberField\n        K = NumberField_quadratic(polynomial, name, check, embedding)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 6852, in __init__\n        self._standard_embedding = RDF(rootD) > 0\n      File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4121)\n      File \"coerce_maps.pyx\", line 81, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3064)\n      File \"coerce_maps.pyx\", line 76, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2955)\n      File \"real_double.pyx\", line 525, in sage.rings.real_double.RealDoubleElement.__init__ (sage/rings/real_double.c:5668)\n    TypeError: float() argument must be a string or a number\n**********************************************************************\n<SNIP>\n```\n\nCheers,\n\nMichaep",
     "created_at": "2009-05-12T16:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6005",
     "type": "issue_comment",
@@ -150,7 +146,6 @@ Exception raised:
 **********************************************************************
 <SNIP>
 ```
-
 
 Cheers,
 

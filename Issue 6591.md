@@ -3,7 +3,7 @@
 archive/issues_006591.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\n\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nThis partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nThis partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
     "created_at": "2009-07-22T14:38:27Z",
     "labels": [
         "component: interfaces"
@@ -24,7 +24,6 @@ This small patch implements:
 ```
 sage: view(object, viewer = "pdf")
 ```
-
 which works even under the notebook.
 
 Typical use cases:
@@ -126,7 +125,7 @@ apply on top of the other patch
 archive/issue_comments_053840.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Everything works as advertised, both from the command-line and the notebook (except that tightpage=True has no effect in the notebook if viewer is None).  I would give it a positive review except that the new options aren't documented at all.  I'm attaching a patch with documentation; if you're happy with it, the whole thing can get a positive review.\n> \n> I have no idea how to doctest this, by the way...\n\nOops, sorry, I forgot about the doc ... Thanks!\n\nIn the meantime, I actually found a shortcoming in tightpage. I'll probably add a little fix later today.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Everything works as advertised, both from the command-line and the notebook (except that tightpage=True has no effect in the notebook if viewer is None).  I would give it a positive review except that the new options aren't documented at all.  I'm attaching a patch with documentation; if you're happy with it, the whole thing can get a positive review.\n> \n> I have no idea how to doctest this, by the way...\n\n\nOops, sorry, I forgot about the doc ... Thanks!\n\nIn the meantime, I actually found a shortcoming in tightpage. I'll probably add a little fix later today.",
     "created_at": "2009-07-23T07:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
@@ -139,6 +138,7 @@ Replying to [comment:3 jhpalmieri]:
 > Everything works as advertised, both from the command-line and the notebook (except that tightpage=True has no effect in the notebook if viewer is None).  I would give it a positive review except that the new options aren't documented at all.  I'm attaching a patch with documentation; if you're happy with it, the whole thing can get a positive review.
 > 
 > I have no idea how to doctest this, by the way...
+
 
 Oops, sorry, I forgot about the doc ... Thanks!
 

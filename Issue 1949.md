@@ -277,7 +277,7 @@ archive/issue_events_004724.json:
 archive/issue_comments_012379.json:
 ```json
 {
-    "body": "Replying to [comment:7 chapoton]:\n> Maybe we should close this very old one ?\n\nSurely, yes.  I don't think I have ever see it but eclib has changed enough in 10 years that anything in this direction (whatever it was) would need to be done again from scratch.",
+    "body": "Replying to [comment:7 chapoton]:\n> Maybe we should close this very old one ?\n\n\nSurely, yes.  I don't think I have ever see it but eclib has changed enough in 10 years that anything in this direction (whatever it was) would need to be done again from scratch.",
     "created_at": "2018-05-19T08:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1949",
     "type": "issue_comment",
@@ -288,6 +288,7 @@ archive/issue_comments_012379.json:
 
 Replying to [comment:7 chapoton]:
 > Maybe we should close this very old one ?
+
 
 Surely, yes.  I don't think I have ever see it but eclib has changed enough in 10 years that anything in this direction (whatever it was) would need to be done again from scratch.
 

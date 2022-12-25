@@ -94,7 +94,7 @@ Changing assignee from mabshoff to @ClementPernet.
 archive/issue_comments_016084.json:
 ```json
 {
-    "body": "Positive review after fixing various issues in the repo, i.e. \n\n```\nM SPKG.txt\n! linbox_wrap/src/linbox_wrap.cpp~\n! linbox_wrap/src/linbox_wrap.h~\n? linbox_wrap/src/linbox_wrap.cpp.ori\n```\n\n\nCheers,\n\nMichael",
+    "body": "Positive review after fixing various issues in the repo, i.e. \n\n```\nM SPKG.txt\n! linbox_wrap/src/linbox_wrap.cpp~\n! linbox_wrap/src/linbox_wrap.h~\n? linbox_wrap/src/linbox_wrap.cpp.ori\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-05T05:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2388",
     "type": "issue_comment",
@@ -111,7 +111,6 @@ M SPKG.txt
 ! linbox_wrap/src/linbox_wrap.h~
 ? linbox_wrap/src/linbox_wrap.cpp.ori
 ```
-
 
 Cheers,
 

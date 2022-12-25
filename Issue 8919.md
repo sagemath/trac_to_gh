@@ -3,7 +3,7 @@
 archive/issues_008919.json:
 ```json
 {
-    "body": "Assignee: wjlaffin\n\nThere is a hanging parens.\n\n\n```\na = Sets.super_categories\na?\n```\n\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8919\n\n",
+    "body": "Assignee: wjlaffin\n\nThere is a hanging parens.\n\n```\na = Sets.super_categories\na?\n```\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8919\n\n",
     "created_at": "2010-05-07T16:54:46Z",
     "labels": [
         "component: documentation",
@@ -21,12 +21,10 @@ Assignee: wjlaffin
 
 There is a hanging parens.
 
-
 ```
 a = Sets.super_categories
 a?
 ```
-
 
 A patch is coming.
 
@@ -79,7 +77,7 @@ Changing status from new to needs_review.
 archive/issue_comments_082009.json:
 ```json
 {
-    "body": "Replying to [comment:1 mvngu]:\n> Is this ready for review?\n\nThanks, sorry, New to this.",
+    "body": "Replying to [comment:1 mvngu]:\n> Is this ready for review?\n\n\nThanks, sorry, New to this.",
     "created_at": "2010-05-16T20:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8919",
     "type": "issue_comment",
@@ -90,6 +88,7 @@ archive/issue_comments_082009.json:
 
 Replying to [comment:1 mvngu]:
 > Is this ready for review?
+
 
 Thanks, sorry, New to this.
 

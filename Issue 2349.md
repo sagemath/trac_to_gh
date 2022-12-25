@@ -3,7 +3,7 @@
 archive/issues_002349.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: polynomial multi multivariate homogenize\n\nHere are some examples:\n\n\n```\nsage: x = Zmod(3)['x'].gen(); x.homogenize('y')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y, y over Ring of integers modulo 3\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y over Finite Field of size 3\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2349\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: polynomial multi multivariate homogenize\n\nHere are some examples:\n\n```\nsage: x = Zmod(3)['x'].gen(); x.homogenize('y')\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'homogenize'\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = Zmod(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y, y over Ring of integers modulo 3\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y)\nx^2 + x*y\nsage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()\nMultivariate Polynomial Ring in x, y over Finite Field of size 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2349\n\n",
     "created_at": "2008-02-28T21:54:09Z",
     "labels": [
         "component: commutative algebra",
@@ -24,7 +24,6 @@ Keywords: polynomial multi multivariate homogenize
 
 Here are some examples:
 
-
 ```
 sage: x = Zmod(3)['x'].gen(); x.homogenize('y')
 ---------------------------------------------------------------------------
@@ -42,7 +41,6 @@ x^2 + x*y
 sage: x, y = GF(3)['x', 'y'].gens(); (x + x^2).homogenize(y).parent()
 Multivariate Polynomial Ring in x, y over Finite Field of size 3
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2349

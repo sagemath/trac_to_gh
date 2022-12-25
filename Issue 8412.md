@@ -3,7 +3,7 @@
 archive/issues_008412.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nWhen calculating the center of a group, GAP returns an empty list of generators if the center is trivial.  This however throws off the creation of the MatrixGroup in Sage which checks to ensure that there is at least one generator.\n\n\n```\nsage: a=Matrix(FiniteField(5),\n....: [[2,0,0],\n....: [0,3,0],\n....: [0,0,1]])\nsage: \nsage: b=Matrix(FiniteField(5),\n....: [[0,1,0],\n....: [4,0,0],\n....: [0,0,1]])\nsage: \nsage: c=Matrix(FiniteField(5),\n....: [[1,0,0],\n....: [0,1,0],\n....: [0,1,1]])\nsage: \nsage: d=Matrix(FiniteField(5),\n....: [[1,0,0],\n....: [0,1,0],\n....: [1,0,1]])\nsage: \nsage: G = MatrixGroup([a,b,c,d])\nsage: G.center()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/<ipython console> in <module>()\n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in center(self)\n    733         F = self.field_of_definition()\n    734         from sage.groups.matrix_gps.matrix_group import MatrixGroup\n--> 735         self.__center = MatrixGroup([g._matrix_(F) for g in G])\n    736         return self.__center\n    737     \n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in MatrixGroup(gens)\n    156     \"\"\"\n    157     if len(gens) == 0:\n--> 158         raise ValueError, \"gens must have positive length\"\n    159     try:\n    160         R = gens[0].base_ring()\n\nValueError: gens must have positive length\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8412\n\n",
+    "body": "Assignee: joyner\n\nWhen calculating the center of a group, GAP returns an empty list of generators if the center is trivial.  This however throws off the creation of the MatrixGroup in Sage which checks to ensure that there is at least one generator.\n\n```\nsage: a=Matrix(FiniteField(5),\n....: [[2,0,0],\n....: [0,3,0],\n....: [0,0,1]])\nsage: \nsage: b=Matrix(FiniteField(5),\n....: [[0,1,0],\n....: [4,0,0],\n....: [0,0,1]])\nsage: \nsage: c=Matrix(FiniteField(5),\n....: [[1,0,0],\n....: [0,1,0],\n....: [0,1,1]])\nsage: \nsage: d=Matrix(FiniteField(5),\n....: [[1,0,0],\n....: [0,1,0],\n....: [1,0,1]])\nsage: \nsage: G = MatrixGroup([a,b,c,d])\nsage: G.center()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/<ipython console> in <module>()\n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in center(self)\n    733         F = self.field_of_definition()\n    734         from sage.groups.matrix_gps.matrix_group import MatrixGroup\n--> 735         self.__center = MatrixGroup([g._matrix_(F) for g in G])\n    736         return self.__center\n    737     \n\n/Users/gvol/Desktop/Sage-4.3.1.rc1.app/Contents/Resources/sage/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in MatrixGroup(gens)\n    156     \"\"\"\n    157     if len(gens) == 0:\n--> 158         raise ValueError, \"gens must have positive length\"\n    159     try:\n    160         R = gens[0].base_ring()\n\nValueError: gens must have positive length\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8412\n\n",
     "created_at": "2010-03-01T22:46:04Z",
     "labels": [
         "component: group theory",
@@ -19,7 +19,6 @@ archive/issues_008412.json:
 Assignee: joyner
 
 When calculating the center of a group, GAP returns an empty list of generators if the center is trivial.  This however throws off the creation of the MatrixGroup in Sage which checks to ensure that there is at least one generator.
-
 
 ```
 sage: a=Matrix(FiniteField(5),
@@ -65,7 +64,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: gens must have positive length
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8412
 
@@ -116,7 +114,7 @@ Sorry for the trailing whitespace differences.
 archive/issue_comments_075243.json:
 ```json
 {
-    "body": "Replying to [comment:1 iandrus]:\n> I added a patch which checks for a trivial center, and uses the identity for the group as a generator in this case.  \n> \n> Sorry for the trailing whitespace differences.\n\nThank you for noticing this problem and submitting a patch.\n\nI have not tested your patch yet, but it does not seem form reading the patch code that you have also added an example to the docstring which *tests* your new patch. If this is correct, can you please consider doing that?",
+    "body": "Replying to [comment:1 iandrus]:\n> I added a patch which checks for a trivial center, and uses the identity for the group as a generator in this case.  \n> \n> Sorry for the trailing whitespace differences.\n\n\nThank you for noticing this problem and submitting a patch.\n\nI have not tested your patch yet, but it does not seem form reading the patch code that you have also added an example to the docstring which *tests* your new patch. If this is correct, can you please consider doing that?",
     "created_at": "2010-03-01T23:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8412",
     "type": "issue_comment",
@@ -129,6 +127,7 @@ Replying to [comment:1 iandrus]:
 > I added a patch which checks for a trivial center, and uses the identity for the group as a generator in this case.  
 > 
 > Sorry for the trailing whitespace differences.
+
 
 Thank you for noticing this problem and submitting a patch.
 
@@ -287,7 +286,7 @@ properly folded patch; apply only this one
 archive/issue_comments_075252.json:
 ```json
 {
-    "body": "Attachment [trac_8412-folded.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412-folded.patch) by mvngu created at 2010-03-03 02:53:32\n\nIt looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8412/trac_8412_trivial_center.patch) consists of two patch files rolled into one, as evident from this snippet:\n\n```\n     ::\n-    \n+\n         sage: F = GF(5); MS = MatrixSpace(F,2,2)\n         sage: G = MatrixGroup([MS.0])\n         Traceback (most recent call last):\n# HG changeset patch\n# User Ivan Andrus <darthandrus@gmail.com>\n# Date 1267527460 -3600\n# Node ID fa0a59cf132bca55c4500e7c134157e57a23dc3d\n# Parent  023d02e0af46ae4e4450e3f2f14db54345aa8774\nAdded doctest for trivial center patch\n\ndiff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py\n--- a/sage/groups/matrix_gps/matrix_group.py\tMon Mar 01 23:52:39 2010 +0100\n+++ b/sage/groups/matrix_gps/matrix_group.py\tTue Mar 02 11:57:40 2010 +0100\n@@ -739,6 +739,11 @@\n```\n\nA patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)",
+    "body": "Attachment [trac_8412-folded.patch](tarball://root/attachments/some-uuid/ticket8412/trac_8412-folded.patch) by mvngu created at 2010-03-03 02:53:32\n\nIt looks like [trac_8412_trivial_center.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8412/trac_8412_trivial_center.patch) consists of two patch files rolled into one, as evident from this snippet:\n\n```\n     ::\n-    \n+\n         sage: F = GF(5); MS = MatrixSpace(F,2,2)\n         sage: G = MatrixGroup([MS.0])\n         Traceback (most recent call last):\n# HG changeset patch\n# User Ivan Andrus <darthandrus@gmail.com>\n# Date 1267527460 -3600\n# Node ID fa0a59cf132bca55c4500e7c134157e57a23dc3d\n# Parent  023d02e0af46ae4e4450e3f2f14db54345aa8774\nAdded doctest for trivial center patch\n\ndiff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py\n--- a/sage/groups/matrix_gps/matrix_group.py\tMon Mar 01 23:52:39 2010 +0100\n+++ b/sage/groups/matrix_gps/matrix_group.py\tTue Mar 02 11:57:40 2010 +0100\n@@ -739,6 +739,11 @@\n```\nA patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)",
     "created_at": "2010-03-03T02:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8412",
     "type": "issue_comment",
@@ -319,7 +318,6 @@ diff -r 023d02e0af46 -r fa0a59cf132b sage/groups/matrix_gps/matrix_group.py
 +++ b/sage/groups/matrix_gps/matrix_group.py	Tue Mar 02 11:57:40 2010 +0100
 @@ -739,6 +739,11 @@
 ```
-
 A patch file shouldn't be like that. I have attached the same patch, which also include the ticket number in the commit message. (Every commit message must have a ticket number.)
 
 

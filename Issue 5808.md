@@ -3,7 +3,7 @@
 archive/issues_005808.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nAlong with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/sage-test/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\ndone\npreparing documents... WARNING: html_favicon is not an .ico file\n```\n\nbut that's it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5808\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAlong with #5541, this patch fixes most of the warnings when building the reference manual in 3.4.1.rc3.  I still get these:\n\n```\nchecking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/sage-test/doc/en/reference/sage/combinat/family.rst:: document isn't included in any toctree\ndone\npreparing documents... WARNING: html_favicon is not an .ico file\n```\nbut that's it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5808\n\n",
     "created_at": "2009-04-17T06:04:42Z",
     "labels": [
         "component: documentation",
@@ -26,7 +26,6 @@ checking consistency... WARNING: /Applications/sage_builds/sage-3.4.1.rc3/devel/
 done
 preparing documents... WARNING: html_favicon is not an .ico file
 ```
-
 but that's it.
 
 
@@ -126,7 +125,7 @@ I think your patch to quaternion_algebra.py is going to clash with the one at #5
 archive/issue_comments_045529.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Hi John,\n> \n> I think your patch to quaternion_algebra.py is going to clash with the one at #5541, mentioned in the summary above.\n\nOK, kill that patch, I should not have wasted my time!\n\nI'm about to add a patch doing what you suggested for mwrank.  Which will make 4933 even harder to merge...so on second thoughts I will not post it here but will rebase my #4933 patch on this one and include the mwrank changes there.\n\nUPSHOT:   Positive review for ref-warnings.patch;  ignore the seond one.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Hi John,\n> \n> I think your patch to quaternion_algebra.py is going to clash with the one at #5541, mentioned in the summary above.\n\n\nOK, kill that patch, I should not have wasted my time!\n\nI'm about to add a patch doing what you suggested for mwrank.  Which will make 4933 even harder to merge...so on second thoughts I will not post it here but will rebase my #4933 patch on this one and include the mwrank changes there.\n\nUPSHOT:   Positive review for ref-warnings.patch;  ignore the seond one.",
     "created_at": "2009-04-17T15:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
@@ -139,6 +138,7 @@ Replying to [comment:3 jhpalmieri]:
 > Hi John,
 > 
 > I think your patch to quaternion_algebra.py is going to clash with the one at #5541, mentioned in the summary above.
+
 
 OK, kill that patch, I should not have wasted my time!
 
@@ -171,7 +171,7 @@ Okay, thanks, and sorry for the extra work you'll have to do rebasing.
 archive/issue_comments_045531.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Okay, thanks, and sorry for the extra work you'll have to do rebasing.\nNo problem -- done!",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Okay, thanks, and sorry for the extra work you'll have to do rebasing.\n\nNo problem -- done!",
     "created_at": "2009-04-17T15:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5808",
     "type": "issue_comment",
@@ -182,6 +182,7 @@ archive/issue_comments_045531.json:
 
 Replying to [comment:5 jhpalmieri]:
 > Okay, thanks, and sorry for the extra work you'll have to do rebasing.
+
 No problem -- done!
 
 

@@ -3,7 +3,7 @@
 archive/issues_005654.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nThis is wrong:\n\n```\nsage: ReflexivePolytope(2,0).faces(dim=0)[0].nboundary_points()\n1\n```\n\nbecause vertices do not have boundary points. \n\nThe patch fixes the function that caused this error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5654\n\n",
+    "body": "Assignee: mhampton\n\nThis is wrong:\n\n```\nsage: ReflexivePolytope(2,0).faces(dim=0)[0].nboundary_points()\n1\n```\nbecause vertices do not have boundary points. \n\nThe patch fixes the function that caused this error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5654\n\n",
     "created_at": "2009-04-01T02:00:01Z",
     "labels": [
         "component: geometry",
@@ -24,7 +24,6 @@ This is wrong:
 sage: ReflexivePolytope(2,0).faces(dim=0)[0].nboundary_points()
 1
 ```
-
 because vertices do not have boundary points. 
 
 The patch fixes the function that caused this error.

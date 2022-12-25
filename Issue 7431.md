@@ -3,7 +3,7 @@
 archive/issues_007431.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nCC:  @jasongrout\n\n\n```\n%hide \n@interact \ndef _(n=2): \n    f(x,y)=x^n \n    show(plot(f,(x,0,1))) \n```\n\ndoesn't work well, especially if you update the interact. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7431\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  @jasongrout\n\n```\n%hide \n@interact \ndef _(n=2): \n    f(x,y)=x^n \n    show(plot(f,(x,0,1))) \n```\ndoesn't work well, especially if you update the interact. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7431\n\n",
     "created_at": "2009-11-11T19:47:36Z",
     "labels": [
         "component: interact",
@@ -20,7 +20,6 @@ Assignee: @itolkov
 
 CC:  @jasongrout
 
-
 ```
 %hide 
 @interact 
@@ -28,7 +27,6 @@ def _(n=2):
     f(x,y)=x^n 
     show(plot(f,(x,0,1))) 
 ```
-
 doesn't work well, especially if you update the interact. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7431

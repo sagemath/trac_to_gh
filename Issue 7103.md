@@ -227,7 +227,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058684.json:
 ```json
 {
-    "body": "> \"(As I said on #7079, I think the issue is that doctesting creates \n> various subdirectories of .sage, and if two processes both try to \n> create .sage/gap at the same time, they clash and one of them bombs. ...\"\n\nThat's exactly right!",
+    "body": "> \"(As I said on #7079, I think the issue is that doctesting creates \n> various subdirectories of .sage, and if two processes both try to \n> create .sage/gap at the same time, they clash and one of them bombs. ...\"\n\n\nThat's exactly right!",
     "created_at": "2009-11-13T04:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
@@ -239,6 +239,7 @@ archive/issue_comments_058684.json:
 > "(As I said on #7079, I think the issue is that doctesting creates 
 > various subdirectories of .sage, and if two processes both try to 
 > create .sage/gap at the same time, they clash and one of them bombs. ..."
+
 
 That's exactly right!
 

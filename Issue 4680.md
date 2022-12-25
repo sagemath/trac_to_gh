@@ -3,7 +3,7 @@
 archive/issues_004680.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe matplotlib install on OSX can find the system-wide files, leading to problems like this:\n\n\n```\nsage: from matplotlib import _png\nImportError: dlopen(/sage/local/lib/python/site-packages/matplotlib/_png.so, 2): Library not loaded: /usr/X11/lib/libpng12.0.dylib\n      Referenced from: /sage/local/lib/python/site-packages/matplotlib/_png.so\n      Reason: Incompatible library version: _png.so requires version 27.0.0 or later, but libpng12.0.dylib provides version 23.0.0\n```\n\n\nThe matplotlib config tries to look all over for libpng, but we only want it to find the sage specific one. The attached diff of `setupext.py` in `matplotlib-0.98.3.p3/patches/` tells it not to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4680\n\n",
+    "body": "Assignee: mabshoff\n\nThe matplotlib install on OSX can find the system-wide files, leading to problems like this:\n\n```\nsage: from matplotlib import _png\nImportError: dlopen(/sage/local/lib/python/site-packages/matplotlib/_png.so, 2): Library not loaded: /usr/X11/lib/libpng12.0.dylib\n      Referenced from: /sage/local/lib/python/site-packages/matplotlib/_png.so\n      Reason: Incompatible library version: _png.so requires version 27.0.0 or later, but libpng12.0.dylib provides version 23.0.0\n```\n\nThe matplotlib config tries to look all over for libpng, but we only want it to find the sage specific one. The attached diff of `setupext.py` in `matplotlib-0.98.3.p3/patches/` tells it not to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4680\n\n",
     "created_at": "2008-12-02T23:59:37Z",
     "labels": [
         "component: build",
@@ -20,14 +20,12 @@ Assignee: mabshoff
 
 The matplotlib install on OSX can find the system-wide files, leading to problems like this:
 
-
 ```
 sage: from matplotlib import _png
 ImportError: dlopen(/sage/local/lib/python/site-packages/matplotlib/_png.so, 2): Library not loaded: /usr/X11/lib/libpng12.0.dylib
       Referenced from: /sage/local/lib/python/site-packages/matplotlib/_png.so
       Reason: Incompatible library version: _png.so requires version 27.0.0 or later, but libpng12.0.dylib provides version 23.0.0
 ```
-
 
 The matplotlib config tries to look all over for libpng, but we only want it to find the sage specific one. The attached diff of `setupext.py` in `matplotlib-0.98.3.p3/patches/` tells it not to.
 

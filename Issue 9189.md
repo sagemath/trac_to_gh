@@ -3,7 +3,7 @@
 archive/issues_009189.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\n\n```\nHi Maurice,\n\n> I'm trying to install sage-4.3.3 on fedora 13.\n> Compiling the source i got the message :\n> ------------------------------------------------------------------------\n>\n> /usr/bin/ld: register.o: undefined reference to symbol 'gpg_strerror'\n> /usr/bin/ld: note: 'gpg_strerror' is defined in DSO\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0 so try\n> adding it to the linker command line\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0: could not\n> read symbols: Invalid operation\n> collect2: ld returned 1 exit status\n> make[4]: *** [register] Erreur 1\n> make[4]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src/tests \u00bb\n> make[3]: *** [all-recursive] Erreur 1\n> make[3]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> make[2]: *** [all] Erreur 2\n> make[2]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> failed to build libgcrypt\n>\n> real 1m51.070s\n> user 1m4.656s\n> sys 0m33.780s\n>\n> ------------------------------------------------------------------------\n>\n> If somebody knows what is missing ...\n> Thanks\n> Maurice\n>\n>\n\nSame here on Fedora 13, 32 bit. I'll open a ticket.\n\nJaap\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9189\n\n",
+    "body": "Assignee: GeorgSWeber\n\n```\nHi Maurice,\n\n> I'm trying to install sage-4.3.3 on fedora 13.\n> Compiling the source i got the message :\n> ------------------------------------------------------------------------\n>\n> /usr/bin/ld: register.o: undefined reference to symbol 'gpg_strerror'\n> /usr/bin/ld: note: 'gpg_strerror' is defined in DSO\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0 so try\n> adding it to the linker command line\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0: could not\n> read symbols: Invalid operation\n> collect2: ld returned 1 exit status\n> make[4]: *** [register] Erreur 1\n> make[4]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src/tests \u00bb\n> make[3]: *** [all-recursive] Erreur 1\n> make[3]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> make[2]: *** [all] Erreur 2\n> make[2]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> failed to build libgcrypt\n>\n> real 1m51.070s\n> user 1m4.656s\n> sys 0m33.780s\n>\n> ------------------------------------------------------------------------\n>\n> If somebody knows what is missing ...\n> Thanks\n> Maurice\n>\n>\n\nSame here on Fedora 13, 32 bit. I'll open a ticket.\n\nJaap\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9189\n\n",
     "created_at": "2010-06-08T14:07:19Z",
     "labels": [
         "component: build",
@@ -17,7 +17,6 @@ archive/issues_009189.json:
 }
 ```
 Assignee: GeorgSWeber
-
 
 ```
 Hi Maurice,
@@ -61,7 +60,6 @@ Same here on Fedora 13, 32 bit. I'll open a ticket.
 Jaap
 
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9189
@@ -147,7 +145,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_085853.json:
 ```json
 {
-    "body": "This works on Fedora 13, 32 bit\n\n\n```\nSuccessfully installed libgcrypt-1.4.4.p3\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-4.4.3/spkg/build/libgcrypt-1.4.4.p3\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing libgcrypt-1.4.4.p3.spkg\n[jaap@paix sage-4.4.3]$ \n\n```\n\n\n\nPositive review.\n\nJaap",
+    "body": "This works on Fedora 13, 32 bit\n\n```\nSuccessfully installed libgcrypt-1.4.4.p3\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-4.4.3/spkg/build/libgcrypt-1.4.4.p3\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing libgcrypt-1.4.4.p3.spkg\n[jaap@paix sage-4.4.3]$ \n\n```\n\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-08T20:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
@@ -157,7 +155,6 @@ archive/issue_comments_085853.json:
 ```
 
 This works on Fedora 13, 32 bit
-
 
 ```
 Successfully installed libgcrypt-1.4.4.p3
@@ -169,7 +166,6 @@ Finished installing libgcrypt-1.4.4.p3.spkg
 [jaap@paix sage-4.4.3]$ 
 
 ```
-
 
 
 Positive review.

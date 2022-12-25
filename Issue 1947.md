@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1947
 archive/issue_comments_012340.json:
 ```json
 {
-    "body": "Craig, since homomorphisms between vector spaces *are* implemented (as I explained to you in irc last week), could you change the title of this trac ticket and explain what you are actually proposing be implemented?  Thanks.\n\n```\nsage: V = QQ^3; W = QQ^2\nsage: H = V.Hom(W)\nsage: H([1..6])\n\nFree module morphism defined by the matrix\n[1 2]\n[3 4]\n[5 6]\nDomain: Vector space of dimension 3 over Rational Field\nCodomain: Vector space of dimension 2 over Rational Field\n```\n",
+    "body": "Craig, since homomorphisms between vector spaces *are* implemented (as I explained to you in irc last week), could you change the title of this trac ticket and explain what you are actually proposing be implemented?  Thanks.\n\n```\nsage: V = QQ^3; W = QQ^2\nsage: H = V.Hom(W)\nsage: H([1..6])\n\nFree module morphism defined by the matrix\n[1 2]\n[3 4]\n[5 6]\nDomain: Vector space of dimension 3 over Rational Field\nCodomain: Vector space of dimension 2 over Rational Field\n```",
     "created_at": "2008-01-27T13:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
@@ -56,7 +56,6 @@ Free module morphism defined by the matrix
 Domain: Vector space of dimension 3 over Rational Field
 Codomain: Vector space of dimension 2 over Rational Field
 ```
-
 
 
 
@@ -238,7 +237,7 @@ archive/issue_events_004690.json:
 archive/issue_comments_012344.json:
 ```json
 {
-    "body": "Works now, but may be worth a few tests:\n\n```\nsage: Hom(QQ^3, RR^2)([[1,2],[3,4],[5,6]])\nVector space morphism represented by the matrix:\n[1 2]\n[3 4]\n[5 6]\nDomain: Vector space of dimension 3 over Rational Field\nCodomain: Vector space of dimension 2 over Real Field with 53 bits of precision\n```\n",
+    "body": "Works now, but may be worth a few tests:\n\n```\nsage: Hom(QQ^3, RR^2)([[1,2],[3,4],[5,6]])\nVector space morphism represented by the matrix:\n[1 2]\n[3 4]\n[5 6]\nDomain: Vector space of dimension 3 over Rational Field\nCodomain: Vector space of dimension 2 over Real Field with 53 bits of precision\n```",
     "created_at": "2015-04-13T14:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
@@ -258,7 +257,6 @@ Vector space morphism represented by the matrix:
 Domain: Vector space of dimension 3 over Rational Field
 Codomain: Vector space of dimension 2 over Real Field with 53 bits of precision
 ```
-
 
 
 
@@ -389,7 +387,7 @@ Changing status from new to needs_review.
 archive/issue_comments_012348.json:
 ```json
 {
-    "body": "Replying to [comment:9 mmezzarobba]:\n> Works now, but may be worth a few tests:\n> {{{\n> sage: Hom(QQ^3, RR^2)([[1,2],[3,4],[5,6]])\n> Vector space morphism represented by the matrix:\n> [1 2]\n> [3 4]\n> [5 6]\n> Domain: Vector space of dimension 3 over Rational Field\n> Codomain: Vector space of dimension 2 over Real Field with 53 bits of precision\n> }}}\n\nI took this example and turned it into two doctests. Nothing new was added, just wanted to close this decade-old ticket.",
+    "body": "Replying to [comment:9 mmezzarobba]:\n> Works now, but may be worth a few tests:\n> \n> ```\n> sage: Hom(QQ^3, RR^2)([[1,2],[3,4],[5,6]])\n> Vector space morphism represented by the matrix:\n> [1 2]\n> [3 4]\n> [5 6]\n> Domain: Vector space of dimension 3 over Rational Field\n> Codomain: Vector space of dimension 2 over Real Field with 53 bits of precision\n> ```\n\n\nI took this example and turned it into two doctests. Nothing new was added, just wanted to close this decade-old ticket.",
     "created_at": "2019-05-11T16:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
@@ -400,7 +398,8 @@ archive/issue_comments_012348.json:
 
 Replying to [comment:9 mmezzarobba]:
 > Works now, but may be worth a few tests:
-> {{{
+> 
+> ```
 > sage: Hom(QQ^3, RR^2)([[1,2],[3,4],[5,6]])
 > Vector space morphism represented by the matrix:
 > [1 2]
@@ -408,7 +407,8 @@ Replying to [comment:9 mmezzarobba]:
 > [5 6]
 > Domain: Vector space of dimension 3 over Rational Field
 > Codomain: Vector space of dimension 2 over Real Field with 53 bits of precision
-> }}}
+> ```
+
 
 I took this example and turned it into two doctests. Nothing new was added, just wanted to close this decade-old ticket.
 
@@ -419,7 +419,7 @@ I took this example and turned it into two doctests. Nothing new was added, just
 archive/issue_comments_012349.json:
 ```json
 {
-    "body": "It seems odd that the following also works. Is there a reason that this is not prevented?\n\n\n```\nsage: f = Hom(RR^2, QQ^2)([[1,2],[3,4]]); f\nVector space morphism represented by the matrix:\n[1 2]\n[3 4]\nDomain: Vector space of dimension 2 over Real Field with 53 bits of precision\nCodomain: Vector space of dimension 2 over Rational Field\nsage: f(vector(RR, [1,2]))\n(7, 10)\n```\n",
+    "body": "It seems odd that the following also works. Is there a reason that this is not prevented?\n\n```\nsage: f = Hom(RR^2, QQ^2)([[1,2],[3,4]]); f\nVector space morphism represented by the matrix:\n[1 2]\n[3 4]\nDomain: Vector space of dimension 2 over Real Field with 53 bits of precision\nCodomain: Vector space of dimension 2 over Rational Field\nsage: f(vector(RR, [1,2]))\n(7, 10)\n```",
     "created_at": "2019-05-17T15:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
@@ -429,7 +429,6 @@ archive/issue_comments_012349.json:
 ```
 
 It seems odd that the following also works. Is there a reason that this is not prevented?
-
 
 ```
 sage: f = Hom(RR^2, QQ^2)([[1,2],[3,4]]); f
@@ -441,7 +440,6 @@ Codomain: Vector space of dimension 2 over Rational Field
 sage: f(vector(RR, [1,2]))
 (7, 10)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002473.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nBipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, \n\n```\nsage: B = BipartiteGraph(None)\nsage: B\n```\n\nwill throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2473\n\n",
+    "body": "Assignee: @rlmill\n\nBipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, \n\n```\nsage: B = BipartiteGraph(None)\nsage: B\n```\nwill throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2473\n\n",
     "created_at": "2008-03-11T22:03:53Z",
     "labels": [
         "component: graph theory",
@@ -24,7 +24,6 @@ BipartiteGraph.__init__ does not call the base class __init__ for some inputs, l
 sage: B = BipartiteGraph(None)
 sage: B
 ```
-
 will throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.
 
 Issue created by migration from https://trac.sagemath.org/ticket/2473

@@ -66,7 +66,7 @@ Changing status from new to needs_review.
 archive/issue_comments_079899.json:
 ```json
 {
-    "body": "Private e-mail from Nicolas\n\n```\n- trac_8747-testsuite-speedup-fh.patch\n\n   \u00c7a m'a l'air bon! Est-ce que l'on veut syst\u00e9matiquement utiliser\n   des lazy-format dans tous les tests, ou seulement ceux o\u00f9 il y a un\n   impact de vitesse? Par exemple, Parent._test_category n'est\n   probablement pas critique.\n```\n\n\nTranslation: All looks good. Do we want to systematically use LazyFormat for all tests or only those impacting speed ? For example, Parent._test_category isn't critical.\n\n\nAnswer: I put them in parent to advertise the feature....",
+    "body": "Private e-mail from Nicolas\n\n```\n- trac_8747-testsuite-speedup-fh.patch\n\n   \u00c7a m'a l'air bon! Est-ce que l'on veut syst\u00e9matiquement utiliser\n   des lazy-format dans tous les tests, ou seulement ceux o\u00f9 il y a un\n   impact de vitesse? Par exemple, Parent._test_category n'est\n   probablement pas critique.\n```\n\nTranslation: All looks good. Do we want to systematically use LazyFormat for all tests or only those impacting speed ? For example, Parent._test_category isn't critical.\n\n\nAnswer: I put them in parent to advertise the feature....",
     "created_at": "2010-05-12T17:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ Private e-mail from Nicolas
    impact de vitesse? Par exemple, Parent._test_category n'est
    probablement pas critique.
 ```
-
 
 Translation: All looks good. Do we want to systematically use LazyFormat for all tests or only those impacting speed ? For example, Parent._test_category isn't critical.
 
@@ -135,7 +134,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079902.json:
 ```json
 {
-    "body": "All tests patch on Sage 4.4.3, with the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\n```\n\n\nExcept maybe on sage.misc.sagedoc, but that's most likely a glitch from building the doc previously with later patches applied.",
+    "body": "All tests patch on Sage 4.4.3, with the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\n```\n\nExcept maybe on sage.misc.sagedoc, but that's most likely a glitch from building the doc previously with later patches applied.",
     "created_at": "2010-06-07T17:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
@@ -175,7 +174,6 @@ gap3_interface_v4.3.3.patch
 gap3_interface_patch2.patch
 trac_8747-testsuite-speedup-fh.patch
 ```
-
 
 Except maybe on sage.misc.sagedoc, but that's most likely a glitch from building the doc previously with later patches applied.
 

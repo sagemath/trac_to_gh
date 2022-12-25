@@ -3,7 +3,7 @@
 archive/issues_007923.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nWhen 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.\n\n\n```\nsage: K.<a> = GF(3^10)\nsage: b = a^9 + a^7 + 2*a^6 + a^4 + a^3 + 2*a^2 + a + 2\nsage: b^(71*7381) == (b^71)^7381\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7923\n\n",
+    "body": "Assignee: @aghitza\n\nWhen 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.\n\n```\nsage: K.<a> = GF(3^10)\nsage: b = a^9 + a^7 + 2*a^6 + a^4 + a^3 + 2*a^2 + a + 2\nsage: b^(71*7381) == (b^71)^7381\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7923\n\n",
     "created_at": "2010-01-14T00:15:44Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,14 +20,12 @@ Assignee: @aghitza
 
 When 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.
 
-
 ```
 sage: K.<a> = GF(3^10)
 sage: b = a^9 + a^7 + 2*a^6 + a^4 + a^3 + 2*a^2 + a + 2
 sage: b^(71*7381) == (b^71)^7381
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7923
 

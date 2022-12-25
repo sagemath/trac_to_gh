@@ -113,7 +113,7 @@ The Dickman's function patch you just merged will need the _impl_c methods renam
 archive/issue_comments_030230.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> They should be fairly orthogonal--I tried to keep them that way.\n\nGood, let's hope for the best.\n\n> The Dickman's function patch you just merged will need the _impl_c methods renamed though. \n\nCan you throw a patch on top for that function then? Should doctests and build pass I will merge this patch and the Diekman fix now.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> They should be fairly orthogonal--I tried to keep them that way.\n\n\nGood, let's hope for the best.\n\n> The Dickman's function patch you just merged will need the _impl_c methods renamed though. \n\n\nCan you throw a patch on top for that function then? Should doctests and build pass I will merge this patch and the Diekman fix now.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-23T22:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
@@ -125,9 +125,11 @@ archive/issue_comments_030230.json:
 Replying to [comment:4 robertwb]:
 > They should be fairly orthogonal--I tried to keep them that way.
 
+
 Good, let's hope for the best.
 
 > The Dickman's function patch you just merged will need the _impl_c methods renamed though. 
+
 
 Can you throw a patch on top for that function then? Should doctests and build pass I will merge this patch and the Diekman fix now.
 

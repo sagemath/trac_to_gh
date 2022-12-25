@@ -194,7 +194,7 @@ archive/issue_comments_061920.json:
 archive/issue_comments_061921.json:
 ```json
 {
-    "body": "> ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.\n\nThat said, all tests pass. So once the above is addressed, I'll probably be happy.",
+    "body": "> ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.\n\n\nThat said, all tests pass. So once the above is addressed, I'll probably be happy.",
     "created_at": "2010-06-17T20:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
@@ -204,6 +204,7 @@ archive/issue_comments_061921.json:
 ```
 
 > ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.
+
 
 That said, all tests pass. So once the above is addressed, I'll probably be happy.
 
@@ -368,7 +369,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061930.json:
 ```json
 {
-    "body": "Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by @rlmill created at 2010-06-21 17:40:17\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
+    "body": "Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by @rlmill created at 2010-06-21 17:40:17\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
     "created_at": "2010-06-21T17:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
@@ -381,6 +382,7 @@ Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378
 
 Replying to [comment:10 ncohen]:
 > I really wanted the edge to be "split" into several parts, all bearing the same label. 
+
 
 Thanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.
 

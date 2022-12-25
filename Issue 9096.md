@@ -3,7 +3,7 @@
 archive/issues_009096.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Sphinx\n\nThe file `disjoint_union_enumerated_sets.py` contains the following wrong line\n\n```\n        Normalization of arguments; see :cls:`UniqueRepresentation`.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9096\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Sphinx\n\nThe file `disjoint_union_enumerated_sets.py` contains the following wrong line\n\n```\n        Normalization of arguments; see :cls:`UniqueRepresentation`.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9096\n\n",
     "created_at": "2010-05-30T18:52:00Z",
     "labels": [
         "component: documentation",
@@ -28,7 +28,6 @@ The file `disjoint_union_enumerated_sets.py` contains the following wrong line
 ```
         Normalization of arguments; see :cls:`UniqueRepresentation`.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9096
 
@@ -133,7 +132,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084380.json:
 ```json
 {
-    "body": "Replying to [comment:2 nthiery]:\n> Trivial patch. Florent: you may set a positive review as soon as you have checked that all test pass.\n\nMassena already did :-) !",
+    "body": "Replying to [comment:2 nthiery]:\n> Trivial patch. Florent: you may set a positive review as soon as you have checked that all test pass.\n\n\nMassena already did :-) !",
     "created_at": "2010-05-31T13:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9096",
     "type": "issue_comment",
@@ -144,6 +143,7 @@ archive/issue_comments_084380.json:
 
 Replying to [comment:2 nthiery]:
 > Trivial patch. Florent: you may set a positive review as soon as you have checked that all test pass.
+
 
 Massena already did :-) !
 

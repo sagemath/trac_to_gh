@@ -3,7 +3,7 @@
 archive/issues_000684.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
     "created_at": "2007-09-18T00:49:08Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_000684.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: x = ntl.ZZ(5)
@@ -35,7 +34,6 @@ sage: Integer(x)
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/684
@@ -67,7 +65,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_003535.json:
 ```json
 {
-    "body": "This isn't a bug, it's a lack of something that would be nice being implemented (because we never got to it).\n\nIt's easy to do this:\n\n\n```\nsage: Integer(repr(ntl.ZZ_random(1000)))\n937\n```\n\n\nHowever, that uses base 10 strings.   It would be much better to get at the underlying\nNTL pointer to some GMP data.  I have no clue how to do that. \n\nWilliam",
+    "body": "This isn't a bug, it's a lack of something that would be nice being implemented (because we never got to it).\n\nIt's easy to do this:\n\n```\nsage: Integer(repr(ntl.ZZ_random(1000)))\n937\n```\n\nHowever, that uses base 10 strings.   It would be much better to get at the underlying\nNTL pointer to some GMP data.  I have no clue how to do that. \n\nWilliam",
     "created_at": "2007-09-18T00:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
@@ -80,12 +78,10 @@ This isn't a bug, it's a lack of something that would be nice being implemented 
 
 It's easy to do this:
 
-
 ```
 sage: Integer(repr(ntl.ZZ_random(1000)))
 937
 ```
-
 
 However, that uses base 10 strings.   It would be much better to get at the underlying
 NTL pointer to some GMP data.  I have no clue how to do that. 
@@ -135,7 +131,7 @@ Changing status from new to assigned.
 archive/issue_comments_003538.json:
 ```json
 {
-    "body": "This seems to work now:\n\n```\nmabshoff@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.7, Release Date: 2007-10-15                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl_ZZ.ntl_ZZ'>\nsage: Integer(x)\n5\n```\n\nShould it be closed?\n\nCheers,\n\nMichael",
+    "body": "This seems to work now:\n\n```\nmabshoff@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.7, Release Date: 2007-10-15                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl_ZZ.ntl_ZZ'>\nsage: Integer(x)\n5\n```\nShould it be closed?\n\nCheers,\n\nMichael",
     "created_at": "2007-10-18T10:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
@@ -160,7 +156,6 @@ sage: type(x)
 sage: Integer(x)
 5
 ```
-
 Should it be closed?
 
 Cheers,

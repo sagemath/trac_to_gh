@@ -216,7 +216,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057081.json:
 ```json
 {
-    "body": "Hi Soroosh,\n\n1. Can you look into the following doctest failures (against sage-4.4.1, say, where your code applies fine)?\n\n```\n\nsage -t  devel/sage/sage/modular/abvar/cuspidal_subgroup.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 432:\n    sage: C._compute_lambda()\nExpected nothing\nGot:\n    [15/8 -3/8|-5/8  1/8]\n    [-3/8 15/8| 1/8 -5/8]\n    [---------+---------]\n    [-5/8  1/8|15/8 -3/8]\n    [ 1/8 -5/8|-3/8 15/8]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 442:\n    sage: C._compute_lambda()\nExpected nothing\nGot:\n    [    1  -1/5     0]\n    [ -1/4 13/10  -1/4]\n    [    0  -1/5     1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 475:\n    sage: C._compute_P_d_integral()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0]\n    [0 4 0]\n    [0 0 1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 498:\n    sage: C._compute_parity_module()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0]\n    [0 2 0]\n    [0 0 1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 508:\n    sage: C._compute_parity_module()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 4 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0 0]\n    [0 1 1 1]\n    [0 0 2 0]\n    [0 0 0 2]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 547:\n    sage: C.V0()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0  0 -1]\n    [ 0  1  0 -1]\n    [ 0  0  1 -1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 557:\n    sage: C.V0()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 2 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0 -1]\n    [ 0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 590:\n    sage: C.Vprincipal()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 2 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0 -1]\n    [ 0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 599:\n    sage: C.Vprincipal()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [ 1  1  3 -5]\n    [ 0  2  0 -2]\n    [ 0  0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 654:\n    sage: C.gens()\nExpected:\n    [-P15+P5, -P15+P3]\nGot:\n    [-P15 + P5, -P15 + P3]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 703:\n    sage: C.0\nExpected:\n    [-P15 + P5, -P15 + P3]\n    sgae: (C.0).additive_order()\n    2\nGot:\n    -P15 + P5\n**********************************************************************\n7 items had failures:\n   2 of   8 in __main__.example_13\n   1 of   5 in __main__.example_14\n   2 of   8 in __main__.example_15\n   2 of   8 in __main__.example_16\n   2 of   8 in __main__.example_17\n   1 of   5 in __main__.example_19\n   1 of   5 in __main__.example_22\n***Test Failed*** 11 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_cuspidal_subgroup.py\n         [6.4 s]\n\n```\n\n\n2. Everwhere that you have\n\n```\nExamples::  \n    sage:\n```\n\nchange it to\n\n\n```\nEXAMPLES::  \n\n    sage:\n```\n\n(note the newline)\n\n3. Everywhere you have -'d lists, e.g.,\n\n```\n        691\t        - `` parent`` - a subgroup of the cuspidal subgroup of  \n \t692\t        J0(N) \n \t693\t \n \t694\t        - ``element`` - an element in the quotient module of degree zero divisors of cusps \n \t695\t        modulo principal divisors. \n \t696\t \n \t697\t        - ``check`` - bool (default: False) whether to check \n \t698\t        that element is in the appropriate module \n```\n\nchange them so the second line (etc.) starts exactly two spaces in from the dash so it lines up with the previous line's text, e.g., \n\n```\n        691\t        - `` parent`` - a subgroup of the cuspidal subgroup of  \n \t692\t          J0(N) \n \t693\t \n \t694\t        - ``element`` - an element in the quotient module of degree zero divisors of cusps \n \t695\t          modulo principal divisors. \n }}}\n\n4. Can you be more careful that the docstrings match what they are documenting, e.g., \n{{{\n764\t    def _sub_(self, other): \n \t765\t        r\"\"\" \n \t766\t        Adds two elements in the cuspidal subgroup. \n}}}\nIt should be \"Subtract\" not add. \n\n5. \n{{{\n        827\t    def __cmp__(self, other): \n \t828\t        r\"\"\" \n \t829\t        Checks if two elements are the same. Right now this is not called, and I'm not sure why. \n}}}\n\nYou probably need to use/call __richmp__ instead...  there is some funny rule that if you define __cmp__ you have to also define __hash__ or something. Search sage-devel about this. \n\n7. Change this\n{{{\n        495\t        TESTS: \n \t496\t            sage: J=J0(25) \n}}}\nto\n{{{\n        495\t        TESTS::\n        496\n \t497\t            sage: J=J0(25) \n}}}\n\n8. I'm not sure about the name \"RationalDirectCuspidalSubgroup\".  Maybe \"RationalCuspidalSubgroupLigozat\" or something, i.e., use \"Ligozat\" instead of direct?",
+    "body": "Hi Soroosh,\n\n1. Can you look into the following doctest failures (against sage-4.4.1, say, where your code applies fine)?\n\n```\n\nsage -t  devel/sage/sage/modular/abvar/cuspidal_subgroup.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 432:\n    sage: C._compute_lambda()\nExpected nothing\nGot:\n    [15/8 -3/8|-5/8  1/8]\n    [-3/8 15/8| 1/8 -5/8]\n    [---------+---------]\n    [-5/8  1/8|15/8 -3/8]\n    [ 1/8 -5/8|-3/8 15/8]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 442:\n    sage: C._compute_lambda()\nExpected nothing\nGot:\n    [    1  -1/5     0]\n    [ -1/4 13/10  -1/4]\n    [    0  -1/5     1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 475:\n    sage: C._compute_P_d_integral()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0]\n    [0 4 0]\n    [0 0 1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 498:\n    sage: C._compute_parity_module()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0]\n    [0 2 0]\n    [0 0 1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 508:\n    sage: C._compute_parity_module()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 4 over Integer Ring\n    Echelon basis matrix:\n    [1 0 0 0]\n    [0 1 1 1]\n    [0 0 2 0]\n    [0 0 0 2]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 547:\n    sage: C.V0()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0  0 -1]\n    [ 0  1  0 -1]\n    [ 0  0  1 -1]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 557:\n    sage: C.V0()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 2 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0 -1]\n    [ 0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 590:\n    sage: C.Vprincipal()\nExpected nothing\nGot:\n    Free module of degree 3 and rank 2 over Integer Ring\n    Echelon basis matrix:\n    [ 1  0 -1]\n    [ 0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 599:\n    sage: C.Vprincipal()\nExpected nothing\nGot:\n    Free module of degree 4 and rank 3 over Integer Ring\n    Echelon basis matrix:\n    [ 1  1  3 -5]\n    [ 0  2  0 -2]\n    [ 0  0  4 -4]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 654:\n    sage: C.gens()\nExpected:\n    [-P15+P5, -P15+P3]\nGot:\n    [-P15 + P5, -P15 + P3]\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.4.1/devel/sage-main/sage/modular/abvar/cuspidal_subgroup.py\", line 703:\n    sage: C.0\nExpected:\n    [-P15 + P5, -P15 + P3]\n    sgae: (C.0).additive_order()\n    2\nGot:\n    -P15 + P5\n**********************************************************************\n7 items had failures:\n   2 of   8 in __main__.example_13\n   1 of   5 in __main__.example_14\n   2 of   8 in __main__.example_15\n   2 of   8 in __main__.example_16\n   2 of   8 in __main__.example_17\n   1 of   5 in __main__.example_19\n   1 of   5 in __main__.example_22\n***Test Failed*** 11 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_cuspidal_subgroup.py\n         [6.4 s]\n\n```\n\n2. Everwhere that you have\n\n```\nExamples::  \n    sage:\n```\nchange it to\n\n```\nEXAMPLES::  \n\n    sage:\n```\n(note the newline)\n\n3. Everywhere you have -'d lists, e.g.,\n\n```\n        691\t        - `` parent`` - a subgroup of the cuspidal subgroup of  \n \t692\t        J0(N) \n \t693\t \n \t694\t        - ``element`` - an element in the quotient module of degree zero divisors of cusps \n \t695\t        modulo principal divisors. \n \t696\t \n \t697\t        - ``check`` - bool (default: False) whether to check \n \t698\t        that element is in the appropriate module \n```\nchange them so the second line (etc.) starts exactly two spaces in from the dash so it lines up with the previous line's text, e.g., \n\n```\n        691\t        - `` parent`` - a subgroup of the cuspidal subgroup of  \n \t692\t          J0(N) \n \t693\t \n \t694\t        - ``element`` - an element in the quotient module of degree zero divisors of cusps \n \t695\t          modulo principal divisors. \n }}}\n\n4. Can you be more careful that the docstrings match what they are documenting, e.g., \n{{{\n764\t    def _sub_(self, other): \n \t765\t        r\"\"\" \n \t766\t        Adds two elements in the cuspidal subgroup. \n}}}\nIt should be \"Subtract\" not add. \n\n5. \n{{{\n        827\t    def __cmp__(self, other): \n \t828\t        r\"\"\" \n \t829\t        Checks if two elements are the same. Right now this is not called, and I'm not sure why. \n}}}\n\nYou probably need to use/call __richmp__ instead...  there is some funny rule that if you define __cmp__ you have to also define __hash__ or something. Search sage-devel about this. \n\n7. Change this\n{{{\n        495\t        TESTS: \n \t496\t            sage: J=J0(25) \n}}}\nto\n{{{\n        495\t        TESTS::\n        496\n \t497\t            sage: J=J0(25) \n}}}\n\n8. I'm not sure about the name \"RationalDirectCuspidalSubgroup\".  Maybe \"RationalCuspidalSubgroupLigozat\" or something, i.e., use \"Ligozat\" instead of direct?",
     "created_at": "2010-05-06T01:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -350,23 +350,19 @@ For whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_cuspidal_
 
 ```
 
-
 2. Everwhere that you have
 
 ```
 Examples::  
     sage:
 ```
-
 change it to
-
 
 ```
 EXAMPLES::  
 
     sage:
 ```
-
 (note the newline)
 
 3. Everywhere you have -'d lists, e.g.,
@@ -381,7 +377,6 @@ EXAMPLES::
  	697	        - ``check`` - bool (default: False) whether to check 
  	698	        that element is in the appropriate module 
 ```
-
 change them so the second line (etc.) starts exactly two spaces in from the dash so it lines up with the previous line's text, e.g., 
 
 ```
@@ -900,7 +895,7 @@ archive/issue_events_016275.json:
 archive/issue_comments_057101.json:
 ```json
 {
-    "body": "patchbot failed with coverage:\n\n```\ntests/cmdline.py: 100.0% (1 of 1)\ntests/\nTraceback (most recent call last):\n  File \"/home/ralf/sage/local/bin/patchbot/patchbot.py\", line 468, in test_a_ti\ncket\n    res = plugin(ticket, is_git=True, baseline=baseline, **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 152, in doctest_cont\ninuation\n    exclude_new(ticket, regex=r'^\\s*\\.\\.\\.\\s', msg=\"Old-style doctest continuat\nion\", **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 143, in exclude_new\n    raise ValueError(full_msg)\nValueError: Old-style doctest continuation inserted on 2 non-empty lines\n```\n\nbut this may be spurious because nothing in `tests/` is changed...",
+    "body": "patchbot failed with coverage:\n\n```\ntests/cmdline.py: 100.0% (1 of 1)\ntests/\nTraceback (most recent call last):\n  File \"/home/ralf/sage/local/bin/patchbot/patchbot.py\", line 468, in test_a_ti\ncket\n    res = plugin(ticket, is_git=True, baseline=baseline, **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 152, in doctest_cont\ninuation\n    exclude_new(ticket, regex=r'^\\s*\\.\\.\\.\\s', msg=\"Old-style doctest continuat\nion\", **kwds)\n  File \"/home/ralf/git/sage-patchbot/src/plugins.py\", line 143, in exclude_new\n    raise ValueError(full_msg)\nValueError: Old-style doctest continuation inserted on 2 non-empty lines\n```\nbut this may be spurious because nothing in `tests/` is changed...",
     "created_at": "2014-05-07T09:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -926,7 +921,6 @@ ion", **kwds)
     raise ValueError(full_msg)
 ValueError: Old-style doctest continuation inserted on 2 non-empty lines
 ```
-
 but this may be spurious because nothing in `tests/` is changed...
 
 
@@ -936,7 +930,7 @@ but this may be spurious because nothing in `tests/` is changed...
 archive/issue_comments_057102.json:
 ```json
 {
-    "body": "Replying to [comment:29 rws]:\n> patchbot failed\nThe failed plugin is `non_ascii`, because of the French accents in the author and journal of Ligozat's article.  We can ignore this, since the file has a `coding: utf-8` declaration in its first line.",
+    "body": "Replying to [comment:29 rws]:\n> patchbot failed\n\nThe failed plugin is `non_ascii`, because of the French accents in the author and journal of Ligozat's article.  We can ignore this, since the file has a `coding: utf-8` declaration in its first line.",
     "created_at": "2014-05-07T16:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -947,6 +941,7 @@ archive/issue_comments_057102.json:
 
 Replying to [comment:29 rws]:
 > patchbot failed
+
 The failed plugin is `non_ascii`, because of the French accents in the author and journal of Ligozat's article.  We can ignore this, since the file has a `coding: utf-8` declaration in its first line.
 
 
@@ -974,7 +969,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057104.json:
 ```json
 {
-    "body": "\n```\n+++ b/src/sage/modular/abvar/cuspidal_subgroup.py\n\n@@ -371,6 +378,538 @@ def is_rational_cusp_gamma0(c, N, data):\n\n+    .. [Ligo] G\u00c3\u00a9rard Ligozat, Courbes modulaires de genre 1.\n+       M\u00c3\u00a9moires de la Soci\u00c3\u00a9t\u00c3\u00a9 Math\u00c3\u00a9matique de France, 43 (1975), p. 5-80,\n\nNon-ascii characters inserted on 2 non-empty linesmultiple lines, ''no wiki''\n      white space respected\n```\n",
+    "body": "```\n+++ b/src/sage/modular/abvar/cuspidal_subgroup.py\n\n@@ -371,6 +378,538 @@ def is_rational_cusp_gamma0(c, N, data):\n\n+    .. [Ligo] G\u00c3\u00a9rard Ligozat, Courbes modulaires de genre 1.\n+       M\u00c3\u00a9moires de la Soci\u00c3\u00a9t\u00c3\u00a9 Math\u00c3\u00a9matique de France, 43 (1975), p. 5-80,\n\nNon-ascii characters inserted on 2 non-empty linesmultiple lines, ''no wiki''\n      white space respected\n```",
     "created_at": "2014-05-27T06:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -982,7 +977,6 @@ archive/issue_comments_057104.json:
     "user": "https://github.com/rwst"
 }
 ```
-
 
 ```
 +++ b/src/sage/modular/abvar/cuspidal_subgroup.py
@@ -995,7 +989,6 @@ archive/issue_comments_057104.json:
 Non-ascii characters inserted on 2 non-empty linesmultiple lines, ''no wiki''
       white space respected
 ```
-
 
 
 
@@ -1092,7 +1085,7 @@ archive/issue_events_016277.json:
 archive/issue_comments_057108.json:
 ```json
 {
-    "body": "I have correct the failing repr. Now there are failing doctests.\n----\nNew commits:",
+    "body": "I have correct the failing repr. Now there are failing doctests.\n\n---\nNew commits:",
     "created_at": "2015-02-16T10:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -1102,7 +1095,8 @@ archive/issue_comments_057108.json:
 ```
 
 I have correct the failing repr. Now there are failing doctests.
-----
+
+---
 New commits:
 
 
@@ -1580,7 +1574,7 @@ archive/issue_events_016295.json:
 archive/issue_comments_057118.json:
 ```json
 {
-    "body": "Do `RationalCuspidalSubgroupLigozat` and `RationalCuspSubgroup` provide the same features? Apparently it does\n\n```\nsage: X.rational_cuspidal_subgroup_ligozat()\nFinite subgroup with invariants (2, 4) over QQ of Abelian variety J0(15) of dimension 1\nsage: X.rational_cuspidal_subgroup()\nFinite subgroup with invariants [2, 4] over QQ of Abelian variety J0(15) of dimension 1\n```\n\nIt would be much better to provide an optional argument to `rational_cuspidal_subgroup` rather than having a distinct method. This branch provides (important) implementation details but nothing mathematically relevant. Moreover, inheritance choices should be more clearly explained.\n\nThe function names `_compute_XXX` make no sense. Should just be `_XXX`.",
+    "body": "Do `RationalCuspidalSubgroupLigozat` and `RationalCuspSubgroup` provide the same features? Apparently it does\n\n```\nsage: X.rational_cuspidal_subgroup_ligozat()\nFinite subgroup with invariants (2, 4) over QQ of Abelian variety J0(15) of dimension 1\nsage: X.rational_cuspidal_subgroup()\nFinite subgroup with invariants [2, 4] over QQ of Abelian variety J0(15) of dimension 1\n```\nIt would be much better to provide an optional argument to `rational_cuspidal_subgroup` rather than having a distinct method. This branch provides (important) implementation details but nothing mathematically relevant. Moreover, inheritance choices should be more clearly explained.\n\nThe function names `_compute_XXX` make no sense. Should just be `_XXX`.",
     "created_at": "2017-07-13T18:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -1597,7 +1591,6 @@ Finite subgroup with invariants (2, 4) over QQ of Abelian variety J0(15) of dime
 sage: X.rational_cuspidal_subgroup()
 Finite subgroup with invariants [2, 4] over QQ of Abelian variety J0(15) of dimension 1
 ```
-
 It would be much better to provide an optional argument to `rational_cuspidal_subgroup` rather than having a distinct method. This branch provides (important) implementation details but nothing mathematically relevant. Moreover, inheritance choices should be more clearly explained.
 
 The function names `_compute_XXX` make no sense. Should just be `_XXX`.
@@ -1627,7 +1620,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057120.json:
 ```json
 {
-    "body": "They don't provide the same features so I think they should stay separate. For instance,\n\n```\nsage: J = J0(15)\nsage: G = J.rational_cuspidal_subgroup()\nsage: H = J.rational_cuspidal_subgroup_ligozat()\nsage: G.intersection(J)\nFinite subgroup with invariants [2, 4] over QQ of Abelian variety J0(15) of dimension 1\nsage: H.intersection(J)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-16-7e6428c7da6a> in <module>()\n----> 1 H.intersection(J)\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in intersection(self, other)\n    399             K = coercion_model.common_parent(self.field_of_definition(), other.field_of_definition())\n    400\n--> 401         L = self.lattice()\n    402         if A != B:\n    403             # TODO: This might be way slower than what we could do if\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in lattice(self)\n    182             [   0    3   -2   -1    2    0]\n    183         \"\"\"\n--> 184         raise NotImplementedError\n    185\n    186     def _relative_basis_matrix(self):\n \nNotImplementedError:\n```\n\n\n```\nsage: G == G\nTrue\nsage: H == H\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-18-bc37629c2b89> in <module>()\n----> 1 H == H\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in __cmp__(self, other)\n    253         L = A.lattice() + B.lattice()\n    254         # Minus sign because order gets reversed in passing to lattices.\n--> 255         return -cmp(self.lattice() + L, other.lattice() + L)\n    256\n    257     def is_subgroup(self, other):\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in lattice(self)\n    182             [   0    3   -2   -1    2    0]\n    183         \"\"\"\n--> 184         raise NotImplementedError\n    185\n    186     def _relative_basis_matrix(self):\n \nNotImplementedError:\n```\n",
+    "body": "They don't provide the same features so I think they should stay separate. For instance,\n\n```\nsage: J = J0(15)\nsage: G = J.rational_cuspidal_subgroup()\nsage: H = J.rational_cuspidal_subgroup_ligozat()\nsage: G.intersection(J)\nFinite subgroup with invariants [2, 4] over QQ of Abelian variety J0(15) of dimension 1\nsage: H.intersection(J)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-16-7e6428c7da6a> in <module>()\n----> 1 H.intersection(J)\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in intersection(self, other)\n    399             K = coercion_model.common_parent(self.field_of_definition(), other.field_of_definition())\n    400\n--> 401         L = self.lattice()\n    402         if A != B:\n    403             # TODO: This might be way slower than what we could do if\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in lattice(self)\n    182             [   0    3   -2   -1    2    0]\n    183         \"\"\"\n--> 184         raise NotImplementedError\n    185\n    186     def _relative_basis_matrix(self):\n \nNotImplementedError:\n```\n\n```\nsage: G == G\nTrue\nsage: H == H\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-18-bc37629c2b89> in <module>()\n----> 1 H == H\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in __cmp__(self, other)\n    253         L = A.lattice() + B.lattice()\n    254         # Minus sign because order gets reversed in passing to lattices.\n--> 255         return -cmp(self.lattice() + L, other.lattice() + L)\n    256\n    257     def is_subgroup(self, other):\n \n/projects/c3e0a07c-fea5-4247-a328-e21feb6d7e5d/sage/local/lib/python2.7/site-packages/sage/modular/abvar/finite_subgroup.pyc in lattice(self)\n    182             [   0    3   -2   -1    2    0]\n    183         \"\"\"\n--> 184         raise NotImplementedError\n    185\n    186     def _relative_basis_matrix(self):\n \nNotImplementedError:\n```",
     "created_at": "2017-07-20T00:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -1667,7 +1660,6 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError:
 ```
 
-
 ```
 sage: G == G
 True
@@ -1696,13 +1688,12 @@ NotImplementedError:
 
 
 
-
 ---
 
 archive/issue_comments_057121.json:
 ```json
 {
-    "body": "Replying to [comment:49 klui]:\n> They don't provide the same features so I think they should stay separate. For instance,\n\nThat was not my question. Do they represent the same mathematical object? The fact that some methods are not implemented is a minor difference.",
+    "body": "Replying to [comment:49 klui]:\n> They don't provide the same features so I think they should stay separate. For instance,\n\n\nThat was not my question. Do they represent the same mathematical object? The fact that some methods are not implemented is a minor difference.",
     "created_at": "2017-07-20T08:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
@@ -1713,6 +1704,7 @@ archive/issue_comments_057121.json:
 
 Replying to [comment:49 klui]:
 > They don't provide the same features so I think they should stay separate. For instance,
+
 
 That was not my question. Do they represent the same mathematical object? The fact that some methods are not implemented is a minor difference.
 

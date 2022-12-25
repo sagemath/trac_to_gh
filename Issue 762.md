@@ -3,7 +3,7 @@
 archive/issues_000762.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is a bug in computing the values along a line of the L-series:\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a bug in computing the values along a line of the L-series:\n\n```\nsage: E = EllipticCurve('389a')\nsage: L = E.Lseries_dokchitser()\nsage: E.Lseries_values_along_line(0.5, 3, 5)\nTraceback (most recent call last):\n...\nValueError: too many values to unpack\n```\n\nThis is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/762\n\n",
     "created_at": "2007-09-30T04:34:43Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 There is a bug in computing the values along a line of the L-series:
 
-
 ```
 sage: E = EllipticCurve('389a')
 sage: L = E.Lseries_dokchitser()
@@ -29,7 +28,6 @@ Traceback (most recent call last):
 ...
 ValueError: too many values to unpack
 ```
-
 
 This is just a light wrapper around Rubinstein's lcalc, so should be very easy to fix.
 
@@ -44,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/762
 archive/issue_comments_004498.json:
 ```json
 {
-    "body": "With 2.8.10.alpha1 we are getting a different error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10.alpha1, Release Date: 2007-10-27               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: E = EllipticCurve('389a')\nsage: sage: L = E.Lseries_dokchitser()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/tmp/Work-mabshoff/sage-2.8.10.alpha1/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'EllipticCurve_rational_field' object has no attribute 'Lseries_dokchitser'\nsage: sage: E.Lseries_values_along_line(0.5, 3, 5)\n```\n\n\nCheers,\n\nMichael",
+    "body": "With 2.8.10.alpha1 we are getting a different error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10.alpha1, Release Date: 2007-10-27               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: E = EllipticCurve('389a')\nsage: sage: L = E.Lseries_dokchitser()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/tmp/Work-mabshoff/sage-2.8.10.alpha1/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'EllipticCurve_rational_field' object has no attribute 'Lseries_dokchitser'\nsage: sage: E.Lseries_values_along_line(0.5, 3, 5)\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-10-28T23:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/762",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ sage: sage: L = E.Lseries_dokchitser()
 <type 'exceptions.AttributeError'>: 'EllipticCurve_rational_field' object has no attribute 'Lseries_dokchitser'
 sage: sage: E.Lseries_values_along_line(0.5, 3, 5)
 ```
-
 
 Cheers,
 

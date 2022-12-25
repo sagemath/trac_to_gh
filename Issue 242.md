@@ -3,7 +3,7 @@
 archive/issues_000242.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nHere's one which must be an incorrect boundary check:\n \n----------------------------------------------------------------------\n----------------------------------------------------------------------\n \nsage: p = 2^32+15\nsage: FF = FiniteField(p)\nsage: a = FF(2)\nsage: a^0\n \n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/242\n\n",
+    "body": "Assignee: somebody\n\n```\nHere's one which must be an incorrect boundary check:\n \n----------------------------------------------------------------------\n----------------------------------------------------------------------\n \nsage: p = 2^32+15\nsage: FF = FiniteField(p)\nsage: a = FF(2)\nsage: a^0\n \n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/242\n\n",
     "created_at": "2007-02-03T19:13:42Z",
     "labels": [
         "component: basic arithmetic",
@@ -16,7 +16,6 @@ archive/issues_000242.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 Here's one which must be an incorrect boundary check:
@@ -37,7 +36,6 @@ or is not properly wrapped with _sig_on, _sig_off.
 You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/242
 

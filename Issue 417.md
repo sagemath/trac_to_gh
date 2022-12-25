@@ -158,7 +158,7 @@ No, this was not fixed by the NTL wrapper rewrite. NTL still needs to be actuall
 archive/issue_comments_002049.json:
 ```json
 {
-    "body": "Replying to [ticket:417 malb]:\n> The Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.\nI completely agree.  How much work has been done on this yet and how much work still needs to be done?",
+    "body": "Replying to [ticket:417 malb]:\n> The Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.\n\nI completely agree.  How much work has been done on this yet and how much work still needs to be done?",
     "created_at": "2011-08-18T17:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/417",
     "type": "issue_comment",
@@ -169,6 +169,7 @@ archive/issue_comments_002049.json:
 
 Replying to [ticket:417 malb]:
 > The Pari+Python interface is too slow. ntl.ZZ_pE+Cython should be much faster.
+
 I completely agree.  How much work has been done on this yet and how much work still needs to be done?
 
 

@@ -3,7 +3,7 @@
 archive/issues_009459.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nRight now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:\n\n```\nsage: radical(100)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/usr/local/src/sage-4.4.4/devel/sage-test/<ipython console> in <module>()\n\nNameError: name 'radical' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9459\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nRight now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:\n\n```\nsage: radical(100)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/usr/local/src/sage-4.4.4/devel/sage-test/<ipython console> in <module>()\n\nNameError: name 'radical' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9459\n\n",
     "created_at": "2010-07-08T21:43:40Z",
     "labels": [
         "component: number theory"
@@ -30,7 +30,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'radical' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9459
 
@@ -172,7 +171,7 @@ Thanks, this is something I did in Leiden and totally forgot about.
 archive/issue_comments_090535.json:
 ```json
 {
-    "body": "Replying to [comment:5 jdemeyer]:\n> Thanks, this is something I did in Leiden and totally forgot about.\n\nI cannot see a reason not to include it, despite the comment from kcrisman.",
+    "body": "Replying to [comment:5 jdemeyer]:\n> Thanks, this is something I did in Leiden and totally forgot about.\n\n\nI cannot see a reason not to include it, despite the comment from kcrisman.",
     "created_at": "2010-11-21T17:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
@@ -183,6 +182,7 @@ archive/issue_comments_090535.json:
 
 Replying to [comment:5 jdemeyer]:
 > Thanks, this is something I did in Leiden and totally forgot about.
+
 
 I cannot see a reason not to include it, despite the comment from kcrisman.
 

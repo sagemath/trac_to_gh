@@ -54,7 +54,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091864.json:
 ```json
 {
-    "body": "\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/graphs/graph.py # 7 doctests failed\n----------------------------------------------------------------------\n```\n\n\nThese all seem to be:\n\n\n```\nNameError: global name 'floor' is not defined\n```\n",
+    "body": "```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/graphs/graph.py # 7 doctests failed\n----------------------------------------------------------------------\n```\n\nThese all seem to be:\n\n```\nNameError: global name 'floor' is not defined\n```",
     "created_at": "2011-01-12T03:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ archive/issue_comments_091864.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 ----------------------------------------------------------------------
@@ -73,14 +72,11 @@ The following tests failed:
 ----------------------------------------------------------------------
 ```
 
-
 These all seem to be:
-
 
 ```
 NameError: global name 'floor' is not defined
 ```
-
 
 
 
@@ -186,7 +182,7 @@ Attachment [trac_9546.patch](tarball://root/attachments/some-uuid/ticket9546/tra
 archive/issue_comments_091869.json:
 ```json
 {
-    "body": "Using floor division here might be nice, but I'm concerned about the coercion model:\n\n\n```\nsage: 1215.151//1\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gbe/sage/dev/devel/sage-main/sage/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__floordiv__ (sage/rings/integer.c:11983)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.bin_op (sage/structure/element.c:17928)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.bin_op (sage/structure/element.c:17841)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6213)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6152)()\n\nTypeError: unsupported operand type(s) for //: 'sage.rings.real_mpfr.RealLiteral' and 'sage.rings.real_mpfr.RealNumber'\n```\n\n\nAlso, floor division doesn't seem to buy you any speedup:\n\n```\nsage: tests = [float(random()*10**randint(0,10)) for i in range(10)]\nsage: for i in tests:\n....:     timeit('floor(test)')\n\n625 loops, best of 3: 5.14 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.21 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.1 \u00b5s per loop\n625 loops, best of 3: 5.07 \u00b5s per loop\n625 loops, best of 3: 5.2 \u00b5s per loop\n625 loops, best of 3: 5.11 \u00b5s per loop\n625 loops, best of 3: 5.13 \u00b5s per loop\n\nsage: for i in tests:\n....:     timeit('test // 1')\n\n625 loops, best of 3: 9.33 \u00b5s per loop\n625 loops, best of 3: 9.47 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.44 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.35 \u00b5s per loop\n625 loops, best of 3: 9.31 \u00b5s per loop\n625 loops, best of 3: 9.3 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n```\n\n\nAll in all I think the better solution is to just bring floor(x) into scope from functions/other.py, as I've done in the attached patch.",
+    "body": "Using floor division here might be nice, but I'm concerned about the coercion model:\n\n```\nsage: 1215.151//1\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/gbe/sage/dev/devel/sage-main/sage/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__floordiv__ (sage/rings/integer.c:11983)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.bin_op (sage/structure/element.c:17928)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.bin_op (sage/structure/element.c:17841)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6213)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6152)()\n\nTypeError: unsupported operand type(s) for //: 'sage.rings.real_mpfr.RealLiteral' and 'sage.rings.real_mpfr.RealNumber'\n```\n\nAlso, floor division doesn't seem to buy you any speedup:\n\n```\nsage: tests = [float(random()*10**randint(0,10)) for i in range(10)]\nsage: for i in tests:\n....:     timeit('floor(test)')\n\n625 loops, best of 3: 5.14 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.21 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.12 \u00b5s per loop\n625 loops, best of 3: 5.1 \u00b5s per loop\n625 loops, best of 3: 5.07 \u00b5s per loop\n625 loops, best of 3: 5.2 \u00b5s per loop\n625 loops, best of 3: 5.11 \u00b5s per loop\n625 loops, best of 3: 5.13 \u00b5s per loop\n\nsage: for i in tests:\n....:     timeit('test // 1')\n\n625 loops, best of 3: 9.33 \u00b5s per loop\n625 loops, best of 3: 9.47 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.44 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n625 loops, best of 3: 9.35 \u00b5s per loop\n625 loops, best of 3: 9.31 \u00b5s per loop\n625 loops, best of 3: 9.3 \u00b5s per loop\n625 loops, best of 3: 9.4 \u00b5s per loop\n```\n\nAll in all I think the better solution is to just bring floor(x) into scope from functions/other.py, as I've done in the attached patch.",
     "created_at": "2011-01-12T23:05:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9546",
     "type": "issue_comment",
@@ -196,7 +192,6 @@ archive/issue_comments_091869.json:
 ```
 
 Using floor division here might be nice, but I'm concerned about the coercion model:
-
 
 ```
 sage: 1215.151//1
@@ -217,7 +212,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand type(s) for //: 'sage.rings.real_mpfr.RealLiteral' and 'sage.rings.real_mpfr.RealNumber'
 ```
-
 
 Also, floor division doesn't seem to buy you any speedup:
 
@@ -251,7 +245,6 @@ sage: for i in tests:
 625 loops, best of 3: 9.3 µs per loop
 625 loops, best of 3: 9.4 µs per loop
 ```
-
 
 All in all I think the better solution is to just bring floor(x) into scope from functions/other.py, as I've done in the attached patch.
 

@@ -3,7 +3,7 @@
 archive/issues_006915.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nKeywords: polyhedra\n\nSee this example:\n\n\n```\nsage: p=Polyhedron([[0,0],[0,1],[1,0]])\nsage: p.rays()                         \n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/seb/.sage/temp/thinbox/5080/_home_seb__sage_init_sage_0.py in <module>()\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in rays(self)\n    607                 return self._rays\n    608         except AttributeError:\n--> 609             dummy_verts = self.vertices(force_from_ieqs = True)\n    610             self._checked_rays = True\n    611             return self._rays\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in vertices(self, force_from_ieqs)\n    397         \"\"\"\n    398         if (self._vertices == [] and self._ieqs != []) or force_from_ieqs:\n--> 399             temp_poly_object = ieq_to_vert(self._ieqs, linearities = self._linearities, verbose = self._verbose)\n    400             self._vertices = temp_poly_object._vertices\n    401             self._vertex_incidences = temp_poly_object._vertex_incidences\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in ieq_to_vert(in_list, linearities, cdd_type, verbose)\n   1426     \"\"\"\n   1427     # first we create the input for cddlib:\n-> 1428     in_length = len(in_list[0])\n   1429     in_str = 'H-representation\\n'\n   1430     if linearities != []:\n\nIndexError: list index out of range\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6915\n\n",
+    "body": "Assignee: mhampton\n\nKeywords: polyhedra\n\nSee this example:\n\n```\nsage: p=Polyhedron([[0,0],[0,1],[1,0]])\nsage: p.rays()                         \n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/seb/.sage/temp/thinbox/5080/_home_seb__sage_init_sage_0.py in <module>()\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in rays(self)\n    607                 return self._rays\n    608         except AttributeError:\n--> 609             dummy_verts = self.vertices(force_from_ieqs = True)\n    610             self._checked_rays = True\n    611             return self._rays\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in vertices(self, force_from_ieqs)\n    397         \"\"\"\n    398         if (self._vertices == [] and self._ieqs != []) or force_from_ieqs:\n--> 399             temp_poly_object = ieq_to_vert(self._ieqs, linearities = self._linearities, verbose = self._verbose)\n    400             self._vertices = temp_poly_object._vertices\n    401             self._vertex_incidences = temp_poly_object._vertex_incidences\n\n/home/seb/.local/sage-4.1/local/lib/python2.6/site-packages/sage/geometry/polyhedra.pyc in ieq_to_vert(in_list, linearities, cdd_type, verbose)\n   1426     \"\"\"\n   1427     # first we create the input for cddlib:\n-> 1428     in_length = len(in_list[0])\n   1429     in_str = 'H-representation\\n'\n   1430     if linearities != []:\n\nIndexError: list index out of range\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6915\n\n",
     "created_at": "2009-09-10T11:47:55Z",
     "labels": [
         "component: geometry",
@@ -20,7 +20,6 @@ Assignee: mhampton
 Keywords: polyhedra
 
 See this example:
-
 
 ```
 sage: p=Polyhedron([[0,0],[0,1],[1,0]])
@@ -54,7 +53,6 @@ IndexError                                Traceback (most recent call last)
 IndexError: list index out of range
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6915
 
@@ -137,7 +135,7 @@ fixed in 4.3.2.alpha0
 archive/issue_comments_056999.json:
 ```json
 {
-    "body": "Replying to [comment:2 vbraun]:\n> fixed in 4.3.2.alpha0\n\nMake sure you understand the procedure for closing tickets. See http://www.sagemath.org/doc/developer/trac.html#closing-tickets",
+    "body": "Replying to [comment:2 vbraun]:\n> fixed in 4.3.2.alpha0\n\n\nMake sure you understand the procedure for closing tickets. See http://www.sagemath.org/doc/developer/trac.html#closing-tickets",
     "created_at": "2010-01-28T04:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6915",
     "type": "issue_comment",
@@ -148,5 +146,6 @@ archive/issue_comments_056999.json:
 
 Replying to [comment:2 vbraun]:
 > fixed in 4.3.2.alpha0
+
 
 Make sure you understand the procedure for closing tickets. See http://www.sagemath.org/doc/developer/trac.html#closing-tickets

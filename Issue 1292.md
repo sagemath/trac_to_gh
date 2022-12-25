@@ -3,7 +3,7 @@
 archive/issues_001292.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine\nbug which gives incorrect mathematical results (hence the critical marking). \n\n\n```\nR=IntegerModRing(3^2)\nA=PolynomialRing(R,'y')\ny=A.gen()\nf=10*y^2 - y^3 - 9;\nf.roots(multiplicities=false)\n///\n[1, 0]\n```\n\n\n\n```\nprint [k for k in R if f(k) == 0]\n///\n[0, 1, 3, 6]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1292\n\n",
+    "body": "Assignee: somebody\n\nThis was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine\nbug which gives incorrect mathematical results (hence the critical marking). \n\n```\nR=IntegerModRing(3^2)\nA=PolynomialRing(R,'y')\ny=A.gen()\nf=10*y^2 - y^3 - 9;\nf.roots(multiplicities=false)\n///\n[1, 0]\n```\n\n```\nprint [k for k in R if f(k) == 0]\n///\n[0, 1, 3, 6]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1292\n\n",
     "created_at": "2007-11-27T15:18:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -22,7 +22,6 @@ Assignee: somebody
 This was reported by michael to sage-devel on Nov 27, 2007.   It's a genuine
 bug which gives incorrect mathematical results (hence the critical marking). 
 
-
 ```
 R=IntegerModRing(3^2)
 A=PolynomialRing(R,'y')
@@ -33,14 +32,11 @@ f.roots(multiplicities=false)
 [1, 0]
 ```
 
-
-
 ```
 print [k for k in R if f(k) == 0]
 ///
 [0, 1, 3, 6]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1292
@@ -54,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1292
 archive/issue_comments_008084.json:
 ```json
 {
-    "body": "In this case, the roots method tries to factor f and extract roots from the factorization:\n\n```\nsage: factor(f)\n(8) * (y + 8) * y^2\n```\n\nI'm told that we need to check that the coefficient ring forms a unique factorization domain before using this strategy, but I don't know how to check that in Sage.",
+    "body": "In this case, the roots method tries to factor f and extract roots from the factorization:\n\n```\nsage: factor(f)\n(8) * (y + 8) * y^2\n```\nI'm told that we need to check that the coefficient ring forms a unique factorization domain before using this strategy, but I don't know how to check that in Sage.",
     "created_at": "2007-11-27T15:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
@@ -69,7 +65,6 @@ In this case, the roots method tries to factor f and extract roots from the fact
 sage: factor(f)
 (8) * (y + 8) * y^2
 ```
-
 I'm told that we need to check that the coefficient ring forms a unique factorization domain before using this strategy, but I don't know how to check that in Sage.
 
 
@@ -79,7 +74,7 @@ I'm told that we need to check that the coefficient ring forms a unique factoriz
 archive/issue_comments_008085.json:
 ```json
 {
-    "body": "In this particular case, roots() is done by factoring modulo n then extracting\nthe roots from the linear factors.  That algorithm makes no sense directly\nin case of a non-integral domain (unique factorization is irrelevant -- what\nmatters if that a product is 0 then at least 1 factor is). Use {{{R.is_integral_domain()}.\n\n\n\n```\nsage: f.factor()\n(8) * (y + 8) * y^2\n```\n\n\nThere is presumably another algorithm for finding roots that works given\na factorization even over a non-integral domain.  Probably we should\nlist all zero-divisor products a*b = 0, then for each factor `g_i(x)` of the\npolynomial, find all y such `g_1(y) = a, g_2(y) = b`.   Also, worry about the\n8 factor out front!\n\nFor now a quick hack would be to just do a stupid for loop to find all roots\nin the non-integral-domain case -- at least that would be mathematically correct.",
+    "body": "In this particular case, roots() is done by factoring modulo n then extracting\nthe roots from the linear factors.  That algorithm makes no sense directly\nin case of a non-integral domain (unique factorization is irrelevant -- what\nmatters if that a product is 0 then at least 1 factor is). Use {{{R.is_integral_domain()}.\n\n\n```\nsage: f.factor()\n(8) * (y + 8) * y^2\n```\n\nThere is presumably another algorithm for finding roots that works given\na factorization even over a non-integral domain.  Probably we should\nlist all zero-divisor products a*b = 0, then for each factor `g_i(x)` of the\npolynomial, find all y such `g_1(y) = a, g_2(y) = b`.   Also, worry about the\n8 factor out front!\n\nFor now a quick hack would be to just do a stupid for loop to find all roots\nin the non-integral-domain case -- at least that would be mathematically correct.",
     "created_at": "2007-11-27T16:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
@@ -94,12 +89,10 @@ in case of a non-integral domain (unique factorization is irrelevant -- what
 matters if that a product is 0 then at least 1 factor is). Use {{{R.is_integral_domain()}.
 
 
-
 ```
 sage: f.factor()
 (8) * (y + 8) * y^2
 ```
-
 
 There is presumably another algorithm for finding roots that works given
 a factorization even over a non-integral domain.  Probably we should

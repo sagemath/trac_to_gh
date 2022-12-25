@@ -74,7 +74,7 @@ Attachment [trac_9304-alternative.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_087492.json:
 ```json
 {
-    "body": "This is arguably my fault, since I reviewed #8218. Anyway, we have a much nicer way of fixing unpickling problems now, without all of these annoying file stubs lying around. \n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)\n```\n\n\nYou know better than I do whether that's the right output, but at least it isn't raising an error.",
+    "body": "This is arguably my fault, since I reviewed #8218. Anyway, we have a much nicer way of fixing unpickling problems now, without all of these annoying file stubs lying around. \n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)\n```\n\nYou know better than I do whether that's the right output, but at least it isn't raising an error.",
     "created_at": "2010-06-28T18:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9304",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ Attempting to load remote file: http://sage.math.washington.edu/home/wstein/db/m
 Loading: [..................................................]
 ((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)
 ```
-
 
 You know better than I do whether that's the right output, but at least it isn't raising an error.
 
@@ -120,7 +119,7 @@ What would be a good way to test this for review?
 archive/issue_comments_087494.json:
 ```json
 {
-    "body": "Hi John,\n\nTry running the command \n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\n```\n\n\nwith and without the patch (either one!) applied. Without the patch you'll get an error similar to the one Salman Baig reports on sage-devel ([here](http://groups.google.co.uk/group/sage-devel/browse_thread/thread/f208f9d1548564ee/d989b029608fa6ee)). With the patch it should load fine.",
+    "body": "Hi John,\n\nTry running the command \n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\n```\n\nwith and without the patch (either one!) applied. Without the patch you'll get an error similar to the one Salman Baig reports on sage-devel ([here](http://groups.google.co.uk/group/sage-devel/browse_thread/thread/f208f9d1548564ee/d989b029608fa6ee)). With the patch it should load fine.",
     "created_at": "2010-10-12T12:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9304",
     "type": "issue_comment",
@@ -137,7 +136,6 @@ Try running the command
 sage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')
 ```
 
-
 with and without the patch (either one!) applied. Without the patch you'll get an error similar to the one Salman Baig reports on sage-devel ([here](http://groups.google.co.uk/group/sage-devel/browse_thread/thread/f208f9d1548564ee/d989b029608fa6ee)). With the patch it should load fine.
 
 
@@ -147,7 +145,7 @@ with and without the patch (either one!) applied. Without the patch you'll get a
 archive/issue_comments_087495.json:
 ```json
 {
-    "body": "With either patch the load is OK but does give a deprecation warning:\n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n/home/jec/sage-current/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n  exec code_obj in self.user_global_ns, self.user_ns\n((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)\n```\n\nwhich is exactly the same warning as I get without the patch.  Am I doing something stupid here?\n\nOf the two patches, I prefer the second (\"alternative\") since it implements a more general method, and does not need to create that little dummy (almost) file.",
+    "body": "With either patch the load is OK but does give a deprecation warning:\n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n/home/jec/sage-current/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n  exec code_obj in self.user_global_ns, self.user_ns\n((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)\n```\nwhich is exactly the same warning as I get without the patch.  Am I doing something stupid here?\n\nOf the two patches, I prefer the second (\"alternative\") since it implements a more general method, and does not need to create that little dummy (almost) file.",
     "created_at": "2010-10-12T13:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9304",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ Loading: [..................................................]
   exec code_obj in self.user_global_ns, self.user_ns
 ((1088, 2), (0.69604299999997465, 1.0720680000000016, 8.3885230000000206, 11.104694999999936, 21.261328999999932), Modular Symbols space of dimension 148 for Gamma_0(1088) of weight 2 with sign 1 over Rational Field)
 ```
-
 which is exactly the same warning as I get without the patch.  Am I doing something stupid here?
 
 Of the two patches, I prefer the second ("alternative") since it implements a more general method, and does not need to create that little dummy (almost) file.
@@ -252,7 +249,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_087500.json:
 ```json
 {
-    "body": "I think you are right.  I tried it before applying patches, saw that something was not right but did not copy the output.  When I tried again after removing the patches (using hg qpop and sage -br) it still works!\n\nBut I just tried again on another machine, still 4.6.alpha3, and with no patches the load command gives\n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n/home/jec/sage-current/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n  exec code_obj in self.user_global_ns, self.user_ns\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/jec/sage-4.6.alpha3/devel/sage-main/<ipython console> in <module>()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7486)()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:9052)()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.unpickle_global (sage/structure/sage_object.c:8659)()\n\nImportError: No module named integer_mod_ring\n```\n\n\nIt's a mystery that popping the patches left a setup in which the load works;  and that left open the possibility that the only reason why the second patch worked was that the effect of the first patch was still around (!) so on the second machine I applied the second patch without previously applying the first, and that still worked.\n\nMoreover, then popping the second patch put the system back properly (the load again fails).\n\nSo I am giving the *second* patch a positive review.",
+    "body": "I think you are right.  I tried it before applying patches, saw that something was not right but did not copy the output.  When I tried again after removing the patches (using hg qpop and sage -br) it still works!\n\nBut I just tried again on another machine, still 4.6.alpha3, and with no patches the load command gives\n\n```\nsage: load('http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj')\nAttempting to load remote file: http://sage.math.washington.edu/home/wstein/db/modsym/data/gamma0-1088-2.sobj\nLoading: [..................................................]\n/home/jec/sage-current/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data in a more recent format.\n  exec code_obj in self.user_global_ns, self.user_ns\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/jec/sage-4.6.alpha3/devel/sage-main/<ipython console> in <module>()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7486)()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:9052)()\n\n/home/jec/sage-current/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.unpickle_global (sage/structure/sage_object.c:8659)()\n\nImportError: No module named integer_mod_ring\n```\n\nIt's a mystery that popping the patches left a setup in which the load works;  and that left open the possibility that the only reason why the second patch worked was that the effect of the first patch was still around (!) so on the second machine I applied the second patch without previously applying the first, and that still worked.\n\nMoreover, then popping the second patch put the system back properly (the load again fails).\n\nSo I am giving the *second* patch a positive review.",
     "created_at": "2010-10-12T13:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9304",
     "type": "issue_comment",
@@ -284,7 +281,6 @@ ImportError                               Traceback (most recent call last)
 
 ImportError: No module named integer_mod_ring
 ```
-
 
 It's a mystery that popping the patches left a setup in which the load works;  and that left open the possibility that the only reason why the second patch worked was that the effect of the first patch was still around (!) so on the second machine I applied the second patch without previously applying the first, and that still worked.
 

@@ -76,7 +76,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066656.json:
 ```json
 {
-    "body": "This patch implements the bruhat_order as a cached method and is badly needed.\n\nWith Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1010.\n\nThe definition of Q could be rewritten:\n\n\n```\nW = WeylGroup(\"B3\")\nsage: fcn = lambda x,y : x.bruhat_le(y)\nsage: Q=Poset((W.list(),fcn))\n```\n\n\nMaybe the `?!?` should be removed from the `# long time` directive\na couple of lines later since it is unclear what it means.",
+    "body": "This patch implements the bruhat_order as a cached method and is badly needed.\n\nWith Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1010.\n\nThe definition of Q could be rewritten:\n\n```\nW = WeylGroup(\"B3\")\nsage: fcn = lambda x,y : x.bruhat_le(y)\nsage: Q=Poset((W.list(),fcn))\n```\n\nMaybe the `?!?` should be removed from the `# long time` directive\na couple of lines later since it is unclear what it means.",
     "created_at": "2010-01-02T22:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
@@ -91,13 +91,11 @@ With Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1
 
 The definition of Q could be rewritten:
 
-
 ```
 W = WeylGroup("B3")
 sage: fcn = lambda x,y : x.bruhat_le(y)
 sage: Q=Poset((W.list(),fcn))
 ```
-
 
 Maybe the `?!?` should be removed from the `# long time` directive
 a couple of lines later since it is unclear what it means.
@@ -127,7 +125,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066658.json:
 ```json
 {
-    "body": "Replying to [comment:2 bump]:\n> This patch implements the bruhat_order as a cached method and is badly needed.\n> \n> With Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1010.\n\nOops, I forgot that this depended on another patch; now #7842.  As you mention, this dependency is trivial though, so we can also work around it if #7842 is not merged instantly.\n\n> Maybe the `?!?` should be removed from the `# long time` directive\n> a couple of lines later since it is unclear what it means.\n\nFixed, and updated the # long time around that line. I was just surprised by how much time this was taking. We need more Weyl group optimizations!",
+    "body": "Replying to [comment:2 bump]:\n> This patch implements the bruhat_order as a cached method and is badly needed.\n> \n> With Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1010.\n\n\nOops, I forgot that this depended on another patch; now #7842.  As you mention, this dependency is trivial though, so we can also work around it if #7842 is not merged instantly.\n\n> Maybe the `?!?` should be removed from the `# long time` directive\n> a couple of lines later since it is unclear what it means.\n\n\nFixed, and updated the # long time around that line. I was just surprised by how much time this was taking. We need more Weyl group optimizations!",
     "created_at": "2010-01-04T15:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
@@ -141,10 +139,12 @@ Replying to [comment:2 bump]:
 > 
 > With Sage 4.3, this raises an exception at the test in coxeter_groups.py, line 1010.
 
+
 Oops, I forgot that this depended on another patch; now #7842.  As you mention, this dependency is trivial though, so we can also work around it if #7842 is not merged instantly.
 
 > Maybe the `?!?` should be removed from the `# long time` directive
 > a couple of lines later since it is unclear what it means.
+
 
 Fixed, and updated the # long time around that line. I was just surprised by how much time this was taking. We need more Weyl group optimizations!
 

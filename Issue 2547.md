@@ -172,7 +172,7 @@ archive/issue_events_005964.json:
 archive/issue_comments_017352.json:
 ```json
 {
-    "body": "\n```\n13:57 < jkantor> The fact that gradient doesn't work with functions defined as f(x,y) is \n                 something I was aware of and was going to fix\n```\n",
+    "body": "```\n13:57 < jkantor> The fact that gradient doesn't work with functions defined as f(x,y) is \n                 something I was aware of and was going to fix\n```",
     "created_at": "2008-03-16T20:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
@@ -181,12 +181,10 @@ archive/issue_comments_017352.json:
 }
 ```
 
-
 ```
 13:57 < jkantor> The fact that gradient doesn't work with functions defined as f(x,y) is 
                  something I was aware of and was going to fix
 ```
-
 
 
 

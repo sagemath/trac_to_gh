@@ -160,7 +160,7 @@ Done in #12215?
 archive/issue_comments_053060.json:
 ```json
 {
-    "body": "Replying to [comment:3 mmezzarobba]:\n> Done in #12215?\n\nI think so.",
+    "body": "Replying to [comment:3 mmezzarobba]:\n> Done in #12215?\n\n\nI think so.",
     "created_at": "2014-02-11T15:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6520",
     "type": "issue_comment",
@@ -171,6 +171,7 @@ archive/issue_comments_053060.json:
 
 Replying to [comment:3 mmezzarobba]:
 > Done in #12215?
+
 
 I think so.
 

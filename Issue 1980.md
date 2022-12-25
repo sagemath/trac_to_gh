@@ -3,7 +3,7 @@
 archive/issues_001980.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nError message:\n\n\n```\n.o mpz_poly.o ZmodF_poly.o long_extras.o -L/home/malb/sage-2.10.1.rc2-stack-protector/local/lib/  -\nlgmp -lpthread -lm\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_guard'\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_fail'\ncollect2: ld returned 1 exit status\nmake[2]: *** [mpn_extras-test] Error 1\nmake[2]: Leaving directory `/home/malb/sage-2.10.1.rc2-stack-protector/spkg/build/flint-1.06/src'\n./spkg-check: line 46: ./mpn_extras-test: No such file or directory\n./spkg-check: line 47: ./ZmodF-test: No such file or directory\n...\n```\n\n\nSee http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html and http://wiki.debian.org/Hardening for rationale of `-fstack-protector`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1980\n\n",
+    "body": "Assignee: mabshoff\n\nError message:\n\n```\n.o mpz_poly.o ZmodF_poly.o long_extras.o -L/home/malb/sage-2.10.1.rc2-stack-protector/local/lib/  -\nlgmp -lpthread -lm\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_guard'\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_fail'\ncollect2: ld returned 1 exit status\nmake[2]: *** [mpn_extras-test] Error 1\nmake[2]: Leaving directory `/home/malb/sage-2.10.1.rc2-stack-protector/spkg/build/flint-1.06/src'\n./spkg-check: line 46: ./mpn_extras-test: No such file or directory\n./spkg-check: line 47: ./ZmodF-test: No such file or directory\n...\n```\n\nSee http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html and http://wiki.debian.org/Hardening for rationale of `-fstack-protector`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1980\n\n",
     "created_at": "2008-01-30T10:31:07Z",
     "labels": [
         "component: packages: standard",
@@ -21,7 +21,6 @@ Assignee: mabshoff
 
 Error message:
 
-
 ```
 .o mpz_poly.o ZmodF_poly.o long_extras.o -L/home/malb/sage-2.10.1.rc2-stack-protector/local/lib/  -
 lgmp -lpthread -lm
@@ -34,7 +33,6 @@ make[2]: Leaving directory `/home/malb/sage-2.10.1.rc2-stack-protector/spkg/buil
 ./spkg-check: line 47: ./ZmodF-test: No such file or directory
 ...
 ```
-
 
 See http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html and http://wiki.debian.org/Hardening for rationale of `-fstack-protector`.
 
@@ -72,7 +70,7 @@ Michael
 archive/issue_comments_012804.json:
 ```json
 {
-    "body": "Sorry for being ambiguous. To reproduce:\n\n\n```\nexport CFLAGS=\"-fstack-protector\"\nexport CXXLAGS=\"-fstack-protector\"\ncd <SAGE_ROOT>\nmake\n```\n\n\nThis requires GCC 4.1 and up.",
+    "body": "Sorry for being ambiguous. To reproduce:\n\n```\nexport CFLAGS=\"-fstack-protector\"\nexport CXXLAGS=\"-fstack-protector\"\ncd <SAGE_ROOT>\nmake\n```\n\nThis requires GCC 4.1 and up.",
     "created_at": "2008-01-30T10:37:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
@@ -83,14 +81,12 @@ archive/issue_comments_012804.json:
 
 Sorry for being ambiguous. To reproduce:
 
-
 ```
 export CFLAGS="-fstack-protector"
 export CXXLAGS="-fstack-protector"
 cd <SAGE_ROOT>
 make
 ```
-
 
 This requires GCC 4.1 and up.
 

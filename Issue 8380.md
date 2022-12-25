@@ -195,7 +195,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074816.json:
 ```json
 {
-    "body": "If you're a GAP3 user interested in trying the new interface, then you can follow the instructions below to patch your version of Sage. These instructions are just a summary of the procedure described at: [http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch](http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch). (Alternatively, your can just install all the sage-combinat patches using the command `\"sage -combinat install\"`, which includes the GAP3 interface patch.)\n\n1. First, create a branch of your Sage library (you can later switch between the main branch and the new gap3 branch with the commands `\"sage -b main\"` and `\"sage -b gap3\"`):\n   {{{\nsage -clone gap3\n}}}\n\n2. Next, start Sage and run one of the following commands, depending on the version of Sage you have installed.\n\n* For sage-4.3.2:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.2.patch\")\n```\n\n\n* For sage-4.3.3:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.3.patch\")\n```\n\n\n3. Finally, exist Sage and run the following command.\n\n```\nsage -br\n```\n\n\nYou should be up and running now.\n\nI've also generated the documentation and posted it as a PDF file. You can find it in the \"Attachments\" section.",
+    "body": "If you're a GAP3 user interested in trying the new interface, then you can follow the instructions below to patch your version of Sage. These instructions are just a summary of the procedure described at: [http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch](http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch). (Alternatively, your can just install all the sage-combinat patches using the command `\"sage -combinat install\"`, which includes the GAP3 interface patch.)\n\n1. First, create a branch of your Sage library (you can later switch between the main branch and the new gap3 branch with the commands `\"sage -b main\"` and `\"sage -b gap3\"`):\n   {{{\nsage -clone gap3\n}}}\n\n2. Next, start Sage and run one of the following commands, depending on the version of Sage you have installed.\n\n* For sage-4.3.2:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.2.patch\")\n```\n\n* For sage-4.3.3:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.3.patch\")\n```\n\n3. Finally, exist Sage and run the following command.\n\n```\nsage -br\n```\n\nYou should be up and running now.\n\nI've also generated the documentation and posted it as a PDF file. You can find it in the \"Attachments\" section.",
     "created_at": "2010-03-02T03:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -219,20 +219,17 @@ sage -clone gap3
 sage: hg_sage.apply("http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.2.patch")
 ```
 
-
 * For sage-4.3.3:
 
 ```
 sage: hg_sage.apply("http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8380/gap3_interface_v4.3.3.patch")
 ```
 
-
 3. Finally, exist Sage and run the following command.
 
 ```
 sage -br
 ```
-
 
 You should be up and running now.
 
@@ -309,7 +306,7 @@ Please test and report! Then we will submit this for submission in experimental/
 archive/issue_comments_074820.json:
 ```json
 {
-    "body": "Replying to [comment:7 nthiery]:\n\n> Hi! With Jean Michel, I just made an experimental spkg for gap3 + chevie + all other gap3 packages not available on gap4:  Please test and report! Then we will submit this for submission in experimental/optional\n\nUpdated package rebased on gap3-jm1 from http://www.math.jussieu.fr/~jmichel/gap3/ :\n\n  http://sage.math.washington.edu/home/nthiery/gap3-jm1.spkg",
+    "body": "Replying to [comment:7 nthiery]:\n\n> Hi! With Jean Michel, I just made an experimental spkg for gap3 + chevie + all other gap3 packages not available on gap4:  Please test and report! Then we will submit this for submission in experimental/optional\n\n\nUpdated package rebased on gap3-jm1 from http://www.math.jussieu.fr/~jmichel/gap3/ :\n\n  http://sage.math.washington.edu/home/nthiery/gap3-jm1.spkg",
     "created_at": "2010-04-06T21:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -321,6 +318,7 @@ archive/issue_comments_074820.json:
 Replying to [comment:7 nthiery]:
 
 > Hi! With Jean Michel, I just made an experimental spkg for gap3 + chevie + all other gap3 packages not available on gap4:  Please test and report! Then we will submit this for submission in experimental/optional
+
 
 Updated package rebased on gap3-jm1 from http://www.math.jussieu.fr/~jmichel/gap3/ :
 
@@ -421,7 +419,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074825.json:
 ```json
 {
-    "body": "Replying to [comment:11 burcin]:\n> I tested attachment:gap3_interface_v4.3.3.patch on Sage-4.4.1 with gap3 installed using [Frank Luebeck's distribution](http://www.math.rwth-aachen.de:8001/~Frank.Luebeck/gap/GAP3/index.html). The patch applies cleanly, but there are many doctest failures. This could be due to the fact that optional packages like chevie are not included in this distribution of GAP3.\n\nI downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:\n\n```\ngap>  SymmetricGroup(5);\nGasman: last bag of type +12 and size     16 has overwritten the free bag.\n```\n\nAs a result, I am getting several doctest errors. I wonder if this is the problem you are having: can you at least check that the above command works on your machine? I'll remark that Luebeck's distribution also includes a binary, and all the doctests but one (the banner) pass if I use that binary.",
+    "body": "Replying to [comment:11 burcin]:\n> I tested attachment:gap3_interface_v4.3.3.patch on Sage-4.4.1 with gap3 installed using [Frank Luebeck's distribution](http://www.math.rwth-aachen.de:8001/~Frank.Luebeck/gap/GAP3/index.html). The patch applies cleanly, but there are many doctest failures. This could be due to the fact that optional packages like chevie are not included in this distribution of GAP3.\n\n\nI downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:\n\n```\ngap>  SymmetricGroup(5);\nGasman: last bag of type +12 and size     16 has overwritten the free bag.\n```\nAs a result, I am getting several doctest errors. I wonder if this is the problem you are having: can you at least check that the above command works on your machine? I'll remark that Luebeck's distribution also includes a binary, and all the doctests but one (the banner) pass if I use that binary.",
     "created_at": "2010-05-05T14:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -433,13 +431,13 @@ archive/issue_comments_074825.json:
 Replying to [comment:11 burcin]:
 > I tested attachment:gap3_interface_v4.3.3.patch on Sage-4.4.1 with gap3 installed using [Frank Luebeck's distribution](http://www.math.rwth-aachen.de:8001/~Frank.Luebeck/gap/GAP3/index.html). The patch applies cleanly, but there are many doctest failures. This could be due to the fact that optional packages like chevie are not included in this distribution of GAP3.
 
+
 I downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:
 
 ```
 gap>  SymmetricGroup(5);
 Gasman: last bag of type +12 and size     16 has overwritten the free bag.
 ```
-
 As a result, I am getting several doctest errors. I wonder if this is the problem you are having: can you at least check that the above command works on your machine? I'll remark that Luebeck's distribution also includes a binary, and all the doctests but one (the banner) pass if I use that binary.
 
 
@@ -449,7 +447,7 @@ As a result, I am getting several doctest errors. I wonder if this is the proble
 archive/issue_comments_074826.json:
 ```json
 {
-    "body": "Replying to [comment:12 saliola]:\n> I downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:\n {{{\n gap>  SymmetricGroup(5);\n Gasman: last bag of type +12 and size     16 has overwritten the free bag.\n }}}\n\nYou're right, I get the same error. Sorry for the noise.\n\nUsing the binary, I get only one doctest failure:\n\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/interfaces/gap3.py\", line 169:\n    sage: gap3.RequirePackage('\"chevie\"')              #optional - gap3\nExpected:\n    Welcome  to  the  CHEVIE  package, ...\nGot:\n    WELCOME  to  the  CHEVIE  package,  Version 3  (Dec  1996)\n    <BLANKLINE>\n          Meinolf Geck,  Frank Luebeck,   Gerhard Hiss, \n          Gunter Malle,  Jean Michel, and Goetz Pfeiffer,\n              Lehrstuhl D fuer Mathematik, RWTH Aachen,\n              IWR der Universitaet Heidelberg,\n              University of St. Andrews and\n              Universite Paris VII\n    <BLANKLINE>\n       This replaces the former weyl package. For first help type\n    <BLANKLINE>\n              ?CHEVIE Version 3 -- a short introduction\n**********************************************************************\n```\n",
+    "body": "Replying to [comment:12 saliola]:\n> I downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:\n\n {{{\n gap>  SymmetricGroup(5);\n Gasman: last bag of type +12 and size     16 has overwritten the free bag.\n }}}\n\nYou're right, I get the same error. Sorry for the noise.\n\nUsing the binary, I get only one doctest failure:\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/interfaces/gap3.py\", line 169:\n    sage: gap3.RequirePackage('\"chevie\"')              #optional - gap3\nExpected:\n    Welcome  to  the  CHEVIE  package, ...\nGot:\n    WELCOME  to  the  CHEVIE  package,  Version 3  (Dec  1996)\n    <BLANKLINE>\n          Meinolf Geck,  Frank Luebeck,   Gerhard Hiss, \n          Gunter Malle,  Jean Michel, and Goetz Pfeiffer,\n              Lehrstuhl D fuer Mathematik, RWTH Aachen,\n              IWR der Universitaet Heidelberg,\n              University of St. Andrews and\n              Universite Paris VII\n    <BLANKLINE>\n       This replaces the former weyl package. For first help type\n    <BLANKLINE>\n              ?CHEVIE Version 3 -- a short introduction\n**********************************************************************\n```",
     "created_at": "2010-05-05T15:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -460,6 +458,7 @@ archive/issue_comments_074826.json:
 
 Replying to [comment:12 saliola]:
 > I downloaded Frank Luebeck's distribution and compiled it, but it is not working well on my machine:
+
  {{{
  gap>  SymmetricGroup(5);
  Gasman: last bag of type +12 and size     16 has overwritten the free bag.
@@ -468,7 +467,6 @@ Replying to [comment:12 saliola]:
 You're right, I get the same error. Sorry for the noise.
 
 Using the binary, I get only one doctest failure:
-
 
 ```
 **********************************************************************
@@ -491,7 +489,6 @@ Got:
               ?CHEVIE Version 3 -- a short introduction
 **********************************************************************
 ```
-
 
 
 
@@ -554,7 +551,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074830.json:
 ```json
 {
-    "body": "Attachment [gap3_interface_patch2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_patch2.patch) by @saliola created at 2010-05-12 03:12:54\n\nI've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n\n* attachment:gap3_interface_v4.3.3.patch\n* attachment:gap3_interface_patch2.patch\n\n\nReplying to [comment:11 burcin]:\n\n> Here is my review for the patch:\n>  * There is no doctest for the change in `sage/interfaces/expect.py`\n\nThe problem here was that a variable name could be overwritten; before the\npatch:\n\n```\nsage: x = gap(3)\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x # this should be 3!\n4\n```\n\nThis is now corrected, and I added the above as a doctest.\n\n>  * The method `load_package()` in `sage/interfaces/gap.py` doesn't have a doctest. I understand that this is copied as is from the old version, but if there is any package that is included by default in the GAP4 distribution (or one which we include in our package), we should add a test.\n\nNeither Sage nor Gap seem to distribute any packages (see the\n`$SAGE_ROOT/local/lib/gap-4.4.12/pkg` directory). I did, however,\nadd a test that at least tests that it raises an appropriate exception.\n\n>  * In `sage/interfaces/gap3.py`\n>   * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?\n\nYes, it is #8471. I added the ticket number to the comment, and\ncross-referenced that ticket to this one.\n\nIt is not specific to the GAP interface. It is an issue with any\n`Expect` instance. See #8471 for details.\n\n>   * does the GAP3 banner depend on the specific package installed?\n\nIt shouldn't since the software is so old. Note that when the banners are\nprinted in the documentation, it is only for illustration purposes. Those\ncommands are not tested because each spawns a console (which would require\nuser input to quit).\n\n>   * There are some doctests that depend on chevie, (`RequirePackage('\"chevie\"')` and `load_package(\"chevie\")`), these should be optional.\n\nI've marked them as `#optional - gap3chevie` instead of just\n`#optional - gap3`.\n\n>   * The docstring for `GAP3Record.__getattr__` ends with \" :: \" then an empty line. There are many places where there is an empty line at the end of the docstring, or right after.\n\nCorrected.\n\n> The optional package for gap3 in comment:9 looks good in general. Maybe the fact that it's binary only can be made more obvious, for example by adding a `bin` to the package name. \n\nThe discussion surrounding spkgs should be moved to #8906, which proposes\na source gap3 spkg instead.\n\n> BTW, it's not possible to install the version of GAP3 downloaded from the main web site (http://www.gap-system.org/Gap3/Download3/download.html) easily. I suggest moving the link to Frank Luebeck's distribution to the first place, and putting this option last.\n\nDone. I listed ticket #8906 as the first option (it should be changed when\nthat ticket is resolved).",
+    "body": "Attachment [gap3_interface_patch2.patch](tarball://root/attachments/some-uuid/ticket8380/gap3_interface_patch2.patch) by @saliola created at 2010-05-12 03:12:54\n\nI've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n\n* attachment:gap3_interface_v4.3.3.patch\n* attachment:gap3_interface_patch2.patch\n\n\nReplying to [comment:11 burcin]:\n\n> Here is my review for the patch:\n> * There is no doctest for the change in `sage/interfaces/expect.py`\n\n\nThe problem here was that a variable name could be overwritten; before the\npatch:\n\n```\nsage: x = gap(3)\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x # this should be 3!\n4\n```\nThis is now corrected, and I added the above as a doctest.\n\n>  * The method `load_package()` in `sage/interfaces/gap.py` doesn't have a doctest. I understand that this is copied as is from the old version, but if there is any package that is included by default in the GAP4 distribution (or one which we include in our package), we should add a test.\n\n\nNeither Sage nor Gap seem to distribute any packages (see the\n`$SAGE_ROOT/local/lib/gap-4.4.12/pkg` directory). I did, however,\nadd a test that at least tests that it raises an appropriate exception.\n\n>  * In `sage/interfaces/gap3.py`\n>    * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?\n\n\nYes, it is #8471. I added the ticket number to the comment, and\ncross-referenced that ticket to this one.\n\nIt is not specific to the GAP interface. It is an issue with any\n`Expect` instance. See #8471 for details.\n\n>   * does the GAP3 banner depend on the specific package installed?\n\n\nIt shouldn't since the software is so old. Note that when the banners are\nprinted in the documentation, it is only for illustration purposes. Those\ncommands are not tested because each spawns a console (which would require\nuser input to quit).\n\n>   * There are some doctests that depend on chevie, (`RequirePackage('\"chevie\"')` and `load_package(\"chevie\")`), these should be optional.\n\n\nI've marked them as `#optional - gap3chevie` instead of just\n`#optional - gap3`.\n\n>   * The docstring for `GAP3Record.__getattr__` ends with \" :: \" then an empty line. There are many places where there is an empty line at the end of the docstring, or right after.\n\n\nCorrected.\n\n> The optional package for gap3 in comment:9 looks good in general. Maybe the fact that it's binary only can be made more obvious, for example by adding a `bin` to the package name. \n\n\nThe discussion surrounding spkgs should be moved to #8906, which proposes\na source gap3 spkg instead.\n\n> BTW, it's not possible to install the version of GAP3 downloaded from the main web site (http://www.gap-system.org/Gap3/Download3/download.html) easily. I suggest moving the link to Frank Luebeck's distribution to the first place, and putting this option last.\n\n\nDone. I listed ticket #8906 as the first option (it should be changed when\nthat ticket is resolved).",
     "created_at": "2010-05-12T03:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -574,7 +571,8 @@ I've uploaded my changes in a separate patch to ease the review. Apply the patch
 Replying to [comment:11 burcin]:
 
 > Here is my review for the patch:
->  * There is no doctest for the change in `sage/interfaces/expect.py`
+> * There is no doctest for the change in `sage/interfaces/expect.py`
+
 
 The problem here was that a variable name could be overwritten; before the
 patch:
@@ -590,17 +588,18 @@ sage: y = gap(4); y
 sage: x # this should be 3!
 4
 ```
-
 This is now corrected, and I added the above as a doctest.
 
 >  * The method `load_package()` in `sage/interfaces/gap.py` doesn't have a doctest. I understand that this is copied as is from the old version, but if there is any package that is included by default in the GAP4 distribution (or one which we include in our package), we should add a test.
+
 
 Neither Sage nor Gap seem to distribute any packages (see the
 `$SAGE_ROOT/local/lib/gap-4.4.12/pkg` directory). I did, however,
 add a test that at least tests that it raises an appropriate exception.
 
 >  * In `sage/interfaces/gap3.py`
->   * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?
+>    * Is the bug in the pexpect interface mentioned around line 42 reported on trac? Can you mention the ticket number in that comment. Is this specific to the GAP interface?
+
 
 Yes, it is #8471. I added the ticket number to the comment, and
 cross-referenced that ticket to this one.
@@ -610,6 +609,7 @@ It is not specific to the GAP interface. It is an issue with any
 
 >   * does the GAP3 banner depend on the specific package installed?
 
+
 It shouldn't since the software is so old. Note that when the banners are
 printed in the documentation, it is only for illustration purposes. Those
 commands are not tested because each spawns a console (which would require
@@ -617,19 +617,23 @@ user input to quit).
 
 >   * There are some doctests that depend on chevie, (`RequirePackage('"chevie"')` and `load_package("chevie")`), these should be optional.
 
+
 I've marked them as `#optional - gap3chevie` instead of just
 `#optional - gap3`.
 
 >   * The docstring for `GAP3Record.__getattr__` ends with " :: " then an empty line. There are many places where there is an empty line at the end of the docstring, or right after.
 
+
 Corrected.
 
 > The optional package for gap3 in comment:9 looks good in general. Maybe the fact that it's binary only can be made more obvious, for example by adding a `bin` to the package name. 
+
 
 The discussion surrounding spkgs should be moved to #8906, which proposes
 a source gap3 spkg instead.
 
 > BTW, it's not possible to install the version of GAP3 downloaded from the main web site (http://www.gap-system.org/Gap3/Download3/download.html) easily. I suggest moving the link to Frank Luebeck's distribution to the first place, and putting this option last.
+
 
 Done. I listed ticket #8906 as the first option (it should be changed when
 that ticket is resolved).
@@ -641,7 +645,7 @@ that ticket is resolved).
 archive/issue_comments_074831.json:
 ```json
 {
-    "body": "Replying to [comment:15 saliola]:\n> \n> I've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n> \n>  * attachment:gap3_interface_v4.3.3.patch\n>  * attachment:gap3_interface_patch2.patch\n\nIgnore that the patch name says 4.3.3; it should apply cleanly against recent versions of Sage.",
+    "body": "Replying to [comment:15 saliola]:\n> \n> I've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:\n> \n> * attachment:gap3_interface_v4.3.3.patch\n> * attachment:gap3_interface_patch2.patch\n\n\nIgnore that the patch name says 4.3.3; it should apply cleanly against recent versions of Sage.",
     "created_at": "2010-05-12T03:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -654,8 +658,9 @@ Replying to [comment:15 saliola]:
 > 
 > I've uploaded my changes in a separate patch to ease the review. Apply the patches in this order:
 > 
->  * attachment:gap3_interface_v4.3.3.patch
->  * attachment:gap3_interface_patch2.patch
+> * attachment:gap3_interface_v4.3.3.patch
+> * attachment:gap3_interface_patch2.patch
+
 
 Ignore that the patch name says 4.3.3; it should apply cleanly against recent versions of Sage.
 
@@ -746,7 +751,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_074836.json:
 ```json
 {
-    "body": "I get the following failure\n\n\n```\n\nsage -t  \"devel/sage/sage/interfaces/expect.py\"\n**********************************************************************\nFile \"/virtual/scratch/mhansen/release/4.4.4/alpha0/sage-4.4.4.alpha0/devel/sage/sage/interfaces/expect.py\", line 1213:\n    sage: x\nExpected:\n    3\nGot:\n    4\n**********************************************************************\n```\n",
+    "body": "I get the following failure\n\n```\n\nsage -t  \"devel/sage/sage/interfaces/expect.py\"\n**********************************************************************\nFile \"/virtual/scratch/mhansen/release/4.4.4/alpha0/sage-4.4.4.alpha0/devel/sage/sage/interfaces/expect.py\", line 1213:\n    sage: x\nExpected:\n    3\nGot:\n    4\n**********************************************************************\n```",
     "created_at": "2010-06-05T22:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -756,7 +761,6 @@ archive/issue_comments_074836.json:
 ```
 
 I get the following failure
-
 
 ```
 
@@ -773,13 +777,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_074837.json:
 ```json
 {
-    "body": "Replying to [comment:18 mhansen]:\n> I get the following failure\n\nVery bizarre; this passes in a sage session (but it fails while doctesting):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: x = gap(3); x\n3\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x\n3\nsage: \n```\n",
+    "body": "Replying to [comment:18 mhansen]:\n> I get the following failure\n\n\nVery bizarre; this passes in a sage session (but it fails while doctesting):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: x = gap(3); x\n3\nsage: gap.clear(x.name())\nsage: gap.clear(x.name())\nsage: x = gap(3); x\n3\nsage: y = gap(4); y\n4\nsage: x\n3\nsage: \n```",
     "created_at": "2010-06-07T18:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8380",
     "type": "issue_comment",
@@ -790,6 +793,7 @@ archive/issue_comments_074837.json:
 
 Replying to [comment:18 mhansen]:
 > I get the following failure
+
 
 Very bizarre; this passes in a sage session (but it fails while doctesting):
 
@@ -813,7 +817,6 @@ sage: x
 3
 sage: 
 ```
-
 
 
 

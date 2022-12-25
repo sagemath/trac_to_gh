@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2177
 archive/issue_comments_014259.json:
 ```json
 {
-    "body": ">  The current spkg-install script just copies the pre-built jmol \n> jars, but presumably it'd be better to build our own (certainly\n> Debian will want me to do this).\n\nWe also *VERY MUCH* want easy-to-build-from source java code\nfor this package. Note that there is a jmol optional src package\nhere:\n\n   http://sagemath.org/packages/optional/",
+    "body": ">  The current spkg-install script just copies the pre-built jmol \n\n> jars, but presumably it'd be better to build our own (certainly\n> Debian will want me to do this).\n\n\nWe also *VERY MUCH* want easy-to-build-from source java code\nfor this package. Note that there is a jmol optional src package\nhere:\n\n   http://sagemath.org/packages/optional/",
     "created_at": "2008-02-16T06:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2177",
     "type": "issue_comment",
@@ -48,8 +48,10 @@ archive/issue_comments_014259.json:
 ```
 
 >  The current spkg-install script just copies the pre-built jmol 
+
 > jars, but presumably it'd be better to build our own (certainly
 > Debian will want me to do this).
+
 
 We also *VERY MUCH* want easy-to-build-from source java code
 for this package. Note that there is a jmol optional src package

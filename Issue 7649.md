@@ -3,7 +3,7 @@
 archive/issues_007649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHere is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.\n\n -- John Voight\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7649\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHere is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.\n\n -- John Voight\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7649\n\n",
     "created_at": "2009-12-10T01:25:12Z",
     "labels": [
         "component: number theory",
@@ -18,13 +18,11 @@ archive/issues_007649.json:
 ```
 Assignee: @williamstein
 
-
 ```
 Here is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.
 
  -- John Voight
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7649
 

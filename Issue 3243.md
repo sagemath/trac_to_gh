@@ -3,7 +3,7 @@
 archive/issues_003243.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWrap log2 in a function so it will work in cygwin.  In cygwin log2 is a macro:\n\n```\nsh-3.2$ grep log2 *.h\nmath.h:#define log2(x) (log (x) / M_LOG2_E)\nmath.h:#define log2f(x) (logf (x) / (float) M_LOG2_E)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3243\n\n",
+    "body": "Assignee: mabshoff\n\nWrap log2 in a function so it will work in cygwin.  In cygwin log2 is a macro:\n\n```\nsh-3.2$ grep log2 *.h\nmath.h:#define log2(x) (log (x) / M_LOG2_E)\nmath.h:#define log2f(x) (logf (x) / (float) M_LOG2_E)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3243\n\n",
     "created_at": "2008-05-17T20:44:59Z",
     "labels": [
         "component: porting: cygwin",
@@ -25,7 +25,6 @@ sh-3.2$ grep log2 *.h
 math.h:#define log2(x) (log (x) / M_LOG2_E)
 math.h:#define log2f(x) (logf (x) / (float) M_LOG2_E)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3243

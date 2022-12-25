@@ -139,7 +139,7 @@ archive/issue_events_007849.json:
 archive/issue_comments_024335.json:
 ```json
 {
-    "body": "Example test function:\n\n\n```\ndef MS1(N,k):\n    return ModularSymbols(N,k,sign=1).decomposition(10)[0]\n```\n\n\nTypical inputs:\n\n```\ntime v = MS1([(250,2), (11,2), (37,2)])\n```\n",
+    "body": "Example test function:\n\n```\ndef MS1(N,k):\n    return ModularSymbols(N,k,sign=1).decomposition(10)[0]\n```\n\nTypical inputs:\n\n```\ntime v = MS1([(250,2), (11,2), (37,2)])\n```",
     "created_at": "2008-06-19T01:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -150,19 +150,16 @@ archive/issue_comments_024335.json:
 
 Example test function:
 
-
 ```
 def MS1(N,k):
     return ModularSymbols(N,k,sign=1).decomposition(10)[0]
 ```
-
 
 Typical inputs:
 
 ```
 time v = MS1([(250,2), (11,2), (37,2)])
 ```
-
 
 
 
@@ -189,7 +186,7 @@ Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_024337.json:
 ```json
 {
-    "body": "patch 3 should not be used anymore since the p_iter implementation is in \n\n```\nsage.dsage.interface.parallel_iter\n```\n",
+    "body": "patch 3 should not be used anymore since the p_iter implementation is in \n\n```\nsage.dsage.interface.parallel_iter\n```",
     "created_at": "2008-06-19T21:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
@@ -203,7 +200,6 @@ patch 3 should not be used anymore since the p_iter implementation is in
 ```
 sage.dsage.interface.parallel_iter
 ```
-
 
 
 

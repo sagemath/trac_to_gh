@@ -3,7 +3,7 @@
 archive/issues_002087.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nWhen I install an optional package via\n\n ./sage -i [optional package]\n\nthe last line of output is \"Making script relocatable\".\n\nI frequently do the install in the background, redirecting\nthe output to a file\nand then use \"tail -f\" to monitor the output (and then go off\nand do something else).   When I come back, it is unclear\nto me whether the install has finished.  Perhaps something\nlike \"install finished\" could be added as a last line.\n\nJust a suggestion.\nKate\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2087\n\n",
+    "body": "Assignee: @williamstein\n\n```\nWhen I install an optional package via\n\n ./sage -i [optional package]\n\nthe last line of output is \"Making script relocatable\".\n\nI frequently do the install in the background, redirecting\nthe output to a file\nand then use \"tail -f\" to monitor the output (and then go off\nand do something else).   When I come back, it is unclear\nto me whether the install has finished.  Perhaps something\nlike \"install finished\" could be added as a last line.\n\nJust a suggestion.\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2087\n\n",
     "created_at": "2008-02-07T18:58:42Z",
     "labels": [
         "component: user interface",
@@ -17,7 +17,6 @@ archive/issues_002087.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 When I install an optional package via
@@ -37,7 +36,6 @@ Just a suggestion.
 Kate
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2087
 
 
@@ -49,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2087
 archive/issue_comments_013478.json:
 ```json
 {
-    "body": "The patch I will attach shortly does print the following at the end of an install:\n\n```\nSuccessfully installed valgrind_3.3.0\nNow cleaning up tmp files.\nMaking SAGE/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.0.spkg\n```\n\nwhere valgrind_3.3.0.spkg in this case was `$PKG_NAME.spkg`\n\nCheers,\n\nMichael",
+    "body": "The patch I will attach shortly does print the following at the end of an install:\n\n```\nSuccessfully installed valgrind_3.3.0\nNow cleaning up tmp files.\nMaking SAGE/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.0.spkg\n```\nwhere valgrind_3.3.0.spkg in this case was `$PKG_NAME.spkg`\n\nCheers,\n\nMichael",
     "created_at": "2008-02-25T18:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2087",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ Making SAGE/Python scripts relocatable...
 Making script relocatable
 Finished installing valgrind_3.3.0.spkg
 ```
-
 where valgrind_3.3.0.spkg in this case was `$PKG_NAME.spkg`
 
 Cheers,

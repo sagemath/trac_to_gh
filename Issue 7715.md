@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7715
 archive/issue_comments_066145.json:
 ```json
 {
-    "body": "The speed-up provided by this patch is considerable (but not as much as one would hope for). Here's the example from #3684:\n\n**Before**\n\n\n```python\nsage: A = random_matrix(GF(2),1000,2000)\nsage: %time K = A.right_kernel()\nCPU times: user 11.24 s, sys: 0.02 s, total: 11.25 s\nWall time: 11.42 s\n```\n\n\n\n**After**\n\n\n```python\nsage: A = random_matrix(GF(2),1000,2000)\nsage: %time K = A.right_kernel()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n```\n\n\nSpeed-up: 11.25/0.15 = 75\n\n\n----\n\nAnother example\n\n**Before**\n\n\n```python\nsage: VS = VectorSpace(GF(2),10^4)\nsage: e = VS.random_element()\nsage: f = VS.random_element()\nsage: %timeit e+f\n10000 loops, best of 3: 89.8 \u00b5s per loop\nsage: %timeit e*f\n10000 loops, best of 3: 146 \u00b5s per loop\n```\n\n\n**After**\n\n\n```python\nsage: VS = VectorSpace(GF(2),10^4)\nsage: e = VS.random_element()\nsage: f = VS.random_element()\nsage: %timeit e+f\n1000000 loops, best of 3: 1.08 \u00b5s per loop\nsage: %timeit e*f\n100000 loops, best of 3: 2.47 \u00b5s per loop\n```\n\n\nSpeed-ups: 83 and 59.\n\n----\nThe attached patch might indeed depend on #3684.",
+    "body": "The speed-up provided by this patch is considerable (but not as much as one would hope for). Here's the example from #3684:\n\n**Before**\n\n```python\nsage: A = random_matrix(GF(2),1000,2000)\nsage: %time K = A.right_kernel()\nCPU times: user 11.24 s, sys: 0.02 s, total: 11.25 s\nWall time: 11.42 s\n```\n\n\n**After**\n\n```python\nsage: A = random_matrix(GF(2),1000,2000)\nsage: %time K = A.right_kernel()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n```\n\nSpeed-up: 11.25/0.15 = 75\n\n\n---\n\nAnother example\n\n**Before**\n\n```python\nsage: VS = VectorSpace(GF(2),10^4)\nsage: e = VS.random_element()\nsage: f = VS.random_element()\nsage: %timeit e+f\n10000 loops, best of 3: 89.8 \u00b5s per loop\nsage: %timeit e*f\n10000 loops, best of 3: 146 \u00b5s per loop\n```\n\n**After**\n\n```python\nsage: VS = VectorSpace(GF(2),10^4)\nsage: e = VS.random_element()\nsage: f = VS.random_element()\nsage: %timeit e+f\n1000000 loops, best of 3: 1.08 \u00b5s per loop\nsage: %timeit e*f\n100000 loops, best of 3: 2.47 \u00b5s per loop\n```\n\nSpeed-ups: 83 and 59.\n\n---\nThe attached patch might indeed depend on #3684.",
     "created_at": "2009-12-16T17:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
@@ -47,7 +47,6 @@ The speed-up provided by this patch is considerable (but not as much as one woul
 
 **Before**
 
-
 ```python
 sage: A = random_matrix(GF(2),1000,2000)
 sage: %time K = A.right_kernel()
@@ -56,9 +55,7 @@ Wall time: 11.42 s
 ```
 
 
-
 **After**
-
 
 ```python
 sage: A = random_matrix(GF(2),1000,2000)
@@ -67,16 +64,14 @@ CPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s
 Wall time: 0.16 s
 ```
 
-
 Speed-up: 11.25/0.15 = 75
 
 
-----
+---
 
 Another example
 
 **Before**
-
 
 ```python
 sage: VS = VectorSpace(GF(2),10^4)
@@ -88,9 +83,7 @@ sage: %timeit e*f
 10000 loops, best of 3: 146 µs per loop
 ```
 
-
 **After**
-
 
 ```python
 sage: VS = VectorSpace(GF(2),10^4)
@@ -102,10 +95,9 @@ sage: %timeit e*f
 100000 loops, best of 3: 2.47 µs per loop
 ```
 
-
 Speed-ups: 83 and 59.
 
-----
+---
 The attached patch might indeed depend on #3684.
 
 

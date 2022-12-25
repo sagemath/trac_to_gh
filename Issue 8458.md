@@ -3,7 +3,7 @@
 archive/issues_008458.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nCC:  brunellus\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/4f822bba45432f7b):\n\n```\nSo, what you are saying is that the iterator for graphs() does not\nreturn independent graphs which can be changed without affecting the\nothers.\nThat does explain what I am seeing and is consistent with Pat\nLeSmith's suggested workaround.\n\nShould this property of the iterators to the generated graphs be\ndocumented?\n\nSo, I think I will try making a copy of just the graphs I want to\nchange or use the list() trick. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8458\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  brunellus\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/4f822bba45432f7b):\n\n```\nSo, what you are saying is that the iterator for graphs() does not\nreturn independent graphs which can be changed without affecting the\nothers.\nThat does explain what I am seeing and is consistent with Pat\nLeSmith's suggested workaround.\n\nShould this property of the iterators to the generated graphs be\ndocumented?\n\nSo, I think I will try making a copy of just the graphs I want to\nchange or use the list() trick. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8458\n\n",
     "created_at": "2010-03-06T19:18:00Z",
     "labels": [
         "component: graph theory",
@@ -35,7 +35,6 @@ documented?
 So, I think I will try making a copy of just the graphs I want to
 change or use the list() trick. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8458
 
@@ -142,7 +141,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_076009.json:
 ```json
 {
-    "body": "Helloooooo !!!\n\nThis is a good patch, but I do not think the documentation is very clear. What would you think of changing the new argument's name to \"return_copies\" or \"graph_copy\" ? To be honest I took me 2 minutes to understand that this message's title did not mean \"The independent graph is not returned by graphs(n)\" `:-p`\n\nEither way, with a name like \"independent\" it is not very clear that there may be performances issues hidden in this argument.\n\nHere's what I would write. Of course, it's just my advice, so take or leave whatever you want :\n\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default) this method makes copies of the graphs before returning them. If set to ``False`` the method returns the graph it is working on. The second alternative is faster, but modifying any of the graph instances returned by the method may break the function's behaviour, as it is using these graphs to compute the next ones : only use ``copy_graph = False`` when you stick to *reading* the graphs returned.\n```\n\n\nPlease tell me what you think `:-)`\n\nNathann",
+    "body": "Helloooooo !!!\n\nThis is a good patch, but I do not think the documentation is very clear. What would you think of changing the new argument's name to \"return_copies\" or \"graph_copy\" ? To be honest I took me 2 minutes to understand that this message's title did not mean \"The independent graph is not returned by graphs(n)\" `:-p`\n\nEither way, with a name like \"independent\" it is not very clear that there may be performances issues hidden in this argument.\n\nHere's what I would write. Of course, it's just my advice, so take or leave whatever you want :\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default) this method makes copies of the graphs before returning them. If set to ``False`` the method returns the graph it is working on. The second alternative is faster, but modifying any of the graph instances returned by the method may break the function's behaviour, as it is using these graphs to compute the next ones : only use ``copy_graph = False`` when you stick to *reading* the graphs returned.\n```\n\nPlease tell me what you think `:-)`\n\nNathann",
     "created_at": "2012-01-29T18:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -159,11 +158,9 @@ Either way, with a name like "independent" it is not very clear that there may b
 
 Here's what I would write. Of course, it's just my advice, so take or leave whatever you want :
 
-
 ```
 - ``copy_graphs`` (boolean) -- If set to ``True`` (default) this method makes copies of the graphs before returning them. If set to ``False`` the method returns the graph it is working on. The second alternative is faster, but modifying any of the graph instances returned by the method may break the function's behaviour, as it is using these graphs to compute the next ones : only use ``copy_graph = False`` when you stick to *reading* the graphs returned.
 ```
-
 
 Please tell me what you think `:-)`
 
@@ -176,7 +173,7 @@ Nathann
 archive/issue_comments_076010.json:
 ```json
 {
-    "body": "Arg.... It's all written on one line. Stupid me. Here it is :\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default)\n   this method makes copies of the graphs before returning \n   them. If set to ``False`` the method returns the graph it\n   is working on. The second alternative is faster, but modifying\n   any of the graph instances returned by the method may break\n   the function's behaviour, as it is using these graphs to \n   compute the next ones : only use ``copy_graph = False`` when\n   you stick to *reading* the graphs returned.\n```\n",
+    "body": "Arg.... It's all written on one line. Stupid me. Here it is :\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default)\n   this method makes copies of the graphs before returning \n   them. If set to ``False`` the method returns the graph it\n   is working on. The second alternative is faster, but modifying\n   any of the graph instances returned by the method may break\n   the function's behaviour, as it is using these graphs to \n   compute the next ones : only use ``copy_graph = False`` when\n   you stick to *reading* the graphs returned.\n```",
     "created_at": "2012-01-29T18:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -197,7 +194,6 @@ Arg.... It's all written on one line. Stupid me. Here it is :
    compute the next ones : only use ``copy_graph = False`` when
    you stick to *reading* the graphs returned.
 ```
-
 
 
 
@@ -224,7 +220,7 @@ Can I suggest `copy=True`, which is shorter and just as clear in the context?
 archive/issue_comments_076012.json:
 ```json
 {
-    "body": "> Can I suggest `copy=True`, which is shorter and just as clear in the context?\n\n`>_<`\n\nOf course... Much more natural `:-D`\n\nThanks !!\n\nNathann",
+    "body": "> Can I suggest `copy=True`, which is shorter and just as clear in the context?\n\n\n`>_<`\n\nOf course... Much more natural `:-D`\n\nThanks !!\n\nNathann",
     "created_at": "2012-01-30T12:39:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
@@ -234,6 +230,7 @@ archive/issue_comments_076012.json:
 ```
 
 > Can I suggest `copy=True`, which is shorter and just as clear in the context?
+
 
 `>_<`
 

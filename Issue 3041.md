@@ -3,7 +3,7 @@
 archive/issues_003041.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrancois reports:\n\n```\nJust reviewing what options linbox is compiled with for sage,\nwell I was really looking at whether optimizations are enabled.\nIn theory they are, except on Sun:\nif [ $UNAME = \"SunOS\" ]; then\n   OPT=\"--enable-optimization=false\"\n   echo \"Building on SunOS\"\nelse\n   OPT=\"--enable-optimization\"\nfi\n\nOf course in practice they aren't because \"$OPS\" and not\n\"$OPT\" is passed to the configuration. I must admit I didn't\ncheck if it was corrected in 3.0.1.alpha0 but if so I missed\nit in michael's log. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3041\n\n",
+    "body": "Assignee: mabshoff\n\nFrancois reports:\n\n```\nJust reviewing what options linbox is compiled with for sage,\nwell I was really looking at whether optimizations are enabled.\nIn theory they are, except on Sun:\nif [ $UNAME = \"SunOS\" ]; then\n   OPT=\"--enable-optimization=false\"\n   echo \"Building on SunOS\"\nelse\n   OPT=\"--enable-optimization\"\nfi\n\nOf course in practice they aren't because \"$OPS\" and not\n\"$OPT\" is passed to the configuration. I must admit I didn't\ncheck if it was corrected in 3.0.1.alpha0 but if so I missed\nit in michael's log. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3041\n\n",
     "created_at": "2008-04-27T04:54:06Z",
     "labels": [
         "component: packages: standard",
@@ -36,7 +36,6 @@ Of course in practice they aren't because "$OPS" and not
 check if it was corrected in 3.0.1.alpha0 but if so I missed
 it in michael's log. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3041
 

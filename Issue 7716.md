@@ -96,7 +96,7 @@ Looks very useful -- but for me it would not apply to a fresh clone of 4.3.rc0.
 archive/issue_comments_066153.json:
 ```json
 {
-    "body": "Overall looks good.  A few comments: It doesn't look like this will detect Sphinx/reST markup for input and output, as described [here](http://sagemath.org/doc/developer/conventions.html#documentation-strings) -- a block like\n\n```\n:param x: the length of the rectangle\n:type x: float\n:param w: the width of the rectangle\n:type w: float\n:return: the area of the rectange\n:rtype: float\n```\n\nOr am I missing something?\n\nAlso, as I've said on #4323, it takes a certain amount of hubris, or maybe (as mabshoff pointed out) just a strong sense of irony, to put functions with no docstrings into a file like \"sage-coverage\".\n\nFinally, I couldn't get it to apply cleanly, either.  When applying to the scripts repository in 4.3.rc0, I got the message\n\n```\napplying /Users/palmieri/Downloads/7716_coverage.patch\npatching file sage-coverage\nHunk #2 FAILED at 15\n1 out of 3 hunks FAILED -- saving rejects to file sage-coverage.rej\n```\n",
+    "body": "Overall looks good.  A few comments: It doesn't look like this will detect Sphinx/reST markup for input and output, as described [here](http://sagemath.org/doc/developer/conventions.html#documentation-strings) -- a block like\n\n```\n:param x: the length of the rectangle\n:type x: float\n:param w: the width of the rectangle\n:type w: float\n:return: the area of the rectange\n:rtype: float\n```\nOr am I missing something?\n\nAlso, as I've said on #4323, it takes a certain amount of hubris, or maybe (as mabshoff pointed out) just a strong sense of irony, to put functions with no docstrings into a file like \"sage-coverage\".\n\nFinally, I couldn't get it to apply cleanly, either.  When applying to the scripts repository in 4.3.rc0, I got the message\n\n```\napplying /Users/palmieri/Downloads/7716_coverage.patch\npatching file sage-coverage\nHunk #2 FAILED at 15\n1 out of 3 hunks FAILED -- saving rejects to file sage-coverage.rej\n```",
     "created_at": "2009-12-17T21:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -115,7 +115,6 @@ Overall looks good.  A few comments: It doesn't look like this will detect Sphin
 :return: the area of the rectange
 :rtype: float
 ```
-
 Or am I missing something?
 
 Also, as I've said on #4323, it takes a certain amount of hubris, or maybe (as mabshoff pointed out) just a strong sense of irony, to put functions with no docstrings into a file like "sage-coverage".
@@ -128,7 +127,6 @@ patching file sage-coverage
 Hunk #2 FAILED at 15
 1 out of 3 hunks FAILED -- saving rejects to file sage-coverage.rej
 ```
-
 
 
 
@@ -210,7 +208,7 @@ archive/issue_events_018439.json:
 archive/issue_comments_066157.json:
 ```json
 {
-    "body": "Fails to apply to sage-4.3:\n\n```\nwstein@boxen:~/build/referee/sage-4.3/local/bin$ hgimport http://trac.sagemath.org/sage_trac/attachment/ticket/7716/7716_coverage.patch\n--08:41:18--  http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7716/7716_coverage.patch\n           => `7716_coverage.patch'\nResolving trac.sagemath.org... 128.208.160.197\nConnecting to trac.sagemath.org|128.208.160.197|:80... connected.\nHTTP request sent, awaiting response... 200 Ok\nLength: 58,082 (57K) [text/x-diff]\n\n100%[====================================================================>] 58,082        --.--K/s             \n\n08:41:18 (220.36 MB/s) - `7716_coverage.patch' saved [58082/58082]\n\napplying 7716_coverage.patch\npatching file sage-coverage\nHunk #2 FAILED at 15\n1 out of 3 hunks FAILED -- saving rejects to file sage-coverage.rej\npatching file sage-coverage\nHunk #1 FAILED at 0\nHunk #4 FAILED at 622\n2 out of 4 hunks FAILED -- saving rejects to file sage-coverage.rej\npatching file sage-coverageall\nHunk #1 FAILED at 0\nHunk #2 FAILED at 22\nHunk #3 FAILED at 38\n3 out of 3 hunks FAILED -- saving rejects to file sage-coverageall.rej\nabort: patch failed to apply\n```\n\n\nMaybe the patch is broken/corrupt?  It starts\n\n```\n# HG changeset patch\n# User David Roe <roed@math.harvard.edu>\n# Date 1261014209 18000\n# Node ID da454b36cda7a92a4cbee40317e86f970a04dd8e\n# Parent  e4aff87d1aa188834f14c6f4643beff69879512f\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n...\n```\n\nthen line 604 is suddenly:\n\n```\n# HG changeset patch\n# User David Roe <roed@math.harvard.edu>\n# Date 1261014209 18000\n# Node ID e5314d3c2ba2b0ec34d8226ee80db4526a8a5678\n# Parent  2c17a7cee6e7b76fe67053f34c20ed7c6c33d7cb\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n- changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.\n...\n```\n\n\nwhich involves exactly the same changeset comment and changes to the same file (sage-coverage).\n\nAnyway, I'm pretty confused by this, and can't even referee it.",
+    "body": "Fails to apply to sage-4.3:\n\n```\nwstein@boxen:~/build/referee/sage-4.3/local/bin$ hgimport http://trac.sagemath.org/sage_trac/attachment/ticket/7716/7716_coverage.patch\n--08:41:18--  http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7716/7716_coverage.patch\n           => `7716_coverage.patch'\nResolving trac.sagemath.org... 128.208.160.197\nConnecting to trac.sagemath.org|128.208.160.197|:80... connected.\nHTTP request sent, awaiting response... 200 Ok\nLength: 58,082 (57K) [text/x-diff]\n\n100%[====================================================================>] 58,082        --.--K/s             \n\n08:41:18 (220.36 MB/s) - `7716_coverage.patch' saved [58082/58082]\n\napplying 7716_coverage.patch\npatching file sage-coverage\nHunk #2 FAILED at 15\n1 out of 3 hunks FAILED -- saving rejects to file sage-coverage.rej\npatching file sage-coverage\nHunk #1 FAILED at 0\nHunk #4 FAILED at 622\n2 out of 4 hunks FAILED -- saving rejects to file sage-coverage.rej\npatching file sage-coverageall\nHunk #1 FAILED at 0\nHunk #2 FAILED at 22\nHunk #3 FAILED at 38\n3 out of 3 hunks FAILED -- saving rejects to file sage-coverageall.rej\nabort: patch failed to apply\n```\n\nMaybe the patch is broken/corrupt?  It starts\n\n```\n# HG changeset patch\n# User David Roe <roed@math.harvard.edu>\n# Date 1261014209 18000\n# Node ID da454b36cda7a92a4cbee40317e86f970a04dd8e\n# Parent  e4aff87d1aa188834f14c6f4643beff69879512f\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n...\n```\nthen line 604 is suddenly:\n\n```\n# HG changeset patch\n# User David Roe <roed@math.harvard.edu>\n# Date 1261014209 18000\n# Node ID e5314d3c2ba2b0ec34d8226ee80db4526a8a5678\n# Parent  2c17a7cee6e7b76fe67053f34c20ed7c6c33d7cb\nAdds features to the sage-coverage script.\n\n- rewrite for modularity and easier addition of features\n- changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.\n...\n```\n\nwhich involves exactly the same changeset comment and changes to the same file (sage-coverage).\n\nAnyway, I'm pretty confused by this, and can't even referee it.",
     "created_at": "2009-12-31T16:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -250,7 +248,6 @@ Hunk #3 FAILED at 38
 abort: patch failed to apply
 ```
 
-
 Maybe the patch is broken/corrupt?  It starts
 
 ```
@@ -264,7 +261,6 @@ Adds features to the sage-coverage script.
 - rewrite for modularity and easier addition of features
 ...
 ```
-
 then line 604 is suddenly:
 
 ```
@@ -279,7 +275,6 @@ Adds features to the sage-coverage script.
 - changes the score of the file to reflect the presence or absence of a TestSuite.run or equivalent test.
 ...
 ```
-
 
 which involves exactly the same changeset comment and changes to the same file (sage-coverage).
 
@@ -350,7 +345,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066161.json:
 ```json
 {
-    "body": "Some issues:\n\n- sage-coverageall doesn't deal with unrecognized options well, since it just parses the output from sage-coverage.  So if you pass an unrecognized option, it ends up saying \"No files in ...\".  Instead of doing\n\n```\n    r = os.popen('sage -coverage %s * | grep SCORE'%opt).readlines()\n```\n\n we should probably set P to be the process and check its return status before asking for its output.\n\n- the options should work with either one or two hyphens.\n\n- We should have a \"--help\" option for sage-coverage which does the same thing as running sage-coverage with no arguments: print the usage.  I think we should also expand this usage message.\n\nI'm attaching a \"diff\" which makes these changes.  I haven't looked at the rest of the code in detail yet, but I may soon.",
+    "body": "Some issues:\n\n- sage-coverageall doesn't deal with unrecognized options well, since it just parses the output from sage-coverage.  So if you pass an unrecognized option, it ends up saying \"No files in ...\".  Instead of doing\n\n```\n    r = os.popen('sage -coverage %s * | grep SCORE'%opt).readlines()\n```\n we should probably set P to be the process and check its return status before asking for its output.\n\n- the options should work with either one or two hyphens.\n\n- We should have a \"--help\" option for sage-coverage which does the same thing as running sage-coverage with no arguments: print the usage.  I think we should also expand this usage message.\n\nI'm attaching a \"diff\" which makes these changes.  I haven't looked at the rest of the code in detail yet, but I may soon.",
     "created_at": "2011-09-19T21:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
@@ -366,7 +361,6 @@ Some issues:
 ```
     r = os.popen('sage -coverage %s * | grep SCORE'%opt).readlines()
 ```
-
  we should probably set P to be the process and check its return status before asking for its output.
 
 - the options should work with either one or two hyphens.

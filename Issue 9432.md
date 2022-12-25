@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9432
 archive/issue_comments_089898.json:
 ```json
 {
-    "body": "The following should also be addressed:\n\n\n```\nage -t -long \"devel/sage-main/sage/numerical/mip.pyx\"\n**********************************************************************\nFile \"/scratch/rlmill/release/sage-4.5.alpha2/devel/sage-main/sage/numerical/mip.pyx\",\nline 1055:\n   sage: p.get_values(x)\nExpected:\n   {0: 0.0, 1: 1.3333333333333333}\nGot:\n   {1: 0.0, 2: 1.3333333333333333}\n*********************************************************************\n```\n",
+    "body": "The following should also be addressed:\n\n```\nage -t -long \"devel/sage-main/sage/numerical/mip.pyx\"\n**********************************************************************\nFile \"/scratch/rlmill/release/sage-4.5.alpha2/devel/sage-main/sage/numerical/mip.pyx\",\nline 1055:\n   sage: p.get_values(x)\nExpected:\n   {0: 0.0, 1: 1.3333333333333333}\nGot:\n   {1: 0.0, 2: 1.3333333333333333}\n*********************************************************************\n```",
     "created_at": "2010-07-06T03:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
@@ -44,7 +44,6 @@ archive/issue_comments_089898.json:
 ```
 
 The following should also be addressed:
-
 
 ```
 age -t -long "devel/sage-main/sage/numerical/mip.pyx"
@@ -58,7 +57,6 @@ Got:
    {1: 0.0, 2: 1.3333333333333333}
 *********************************************************************
 ```
-
 
 
 

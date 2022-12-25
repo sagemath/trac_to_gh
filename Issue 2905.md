@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_019985.json:
 ```json
 {
-    "body": "\n```\n<gfurnish> I changed from __domain to _domain because homspace uses MI so there is no easy way to cython it, but that makes it easy to grab the attribute directly for places in coercion where speed matters\n<mabshoff> ok\n<gfurnish> the other change was -O2 spyx's\n<mabshoff> yeah, saw that\n<gfurnish> and finally I moved to a try->except instead of a has_key in coercion in parent.pyx\n<mabshoff> :)\n<gfurnish> maybe I should just paste those three sentences into the description\n```\n",
+    "body": "```\n<gfurnish> I changed from __domain to _domain because homspace uses MI so there is no easy way to cython it, but that makes it easy to grab the attribute directly for places in coercion where speed matters\n<mabshoff> ok\n<gfurnish> the other change was -O2 spyx's\n<mabshoff> yeah, saw that\n<gfurnish> and finally I moved to a try->except instead of a has_key in coercion in parent.pyx\n<mabshoff> :)\n<gfurnish> maybe I should just paste those three sentences into the description\n```",
     "created_at": "2008-04-13T06:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
@@ -75,7 +75,6 @@ archive/issue_comments_019985.json:
     "user": "https://github.com/garyfurnish"
 }
 ```
-
 
 ```
 <gfurnish> I changed from __domain to _domain because homspace uses MI so there is no easy way to cython it, but that makes it easy to grab the attribute directly for places in coercion where speed matters
@@ -86,7 +85,6 @@ archive/issue_comments_019985.json:
 <mabshoff> :)
 <gfurnish> maybe I should just paste those three sentences into the description
 ```
-
 
 
 

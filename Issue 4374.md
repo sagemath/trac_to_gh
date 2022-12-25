@@ -3,7 +3,7 @@
 archive/issues_004374.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
     "created_at": "2008-10-27T17:12:43Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ Assignee: mabshoff
 
 CC:  @craigcitro
 
-
 ```
 sage -t  devel/sage/sage/tests/book_stein_ent.py 
 ********************************************************************** 
@@ -33,7 +32,6 @@ Got:
 ********************************************************************** 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4374
 
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4374
 archive/issue_comments_032101.json:
 ```json
 {
-    "body": "On an Itanium I am seeing the following numerical results:\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py            \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-cleo/tmp/book_stein_ent.py\", line 5056:\n    : g2.complex_embedding()\nExpected:\n    -2.2360679775 + 3.33066907388e-16*I\nGot:\n    -2.2360679775 + 5.38810057558e-16*I\n**********************************************************************\n```\n",
+    "body": "On an Itanium I am seeing the following numerical results:\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py            \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-cleo/tmp/book_stein_ent.py\", line 5056:\n    : g2.complex_embedding()\nExpected:\n    -2.2360679775 + 3.33066907388e-16*I\nGot:\n    -2.2360679775 + 5.38810057558e-16*I\n**********************************************************************\n```",
     "created_at": "2008-10-27T17:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ Got:
     -2.2360679775 + 5.38810057558e-16*I
 **********************************************************************
 ```
-
 
 
 
@@ -94,7 +91,7 @@ Changing status from new to assigned.
 archive/issue_comments_032103.json:
 ```json
 {
-    "body": "And from a G5 running OSX 10.4:\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py            \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.2.alpha1/tmp/book_stein_ent.py\", line 5056:\n    : g2.complex_embedding()\nExpected:\n    -2.2360679775 + 3.33066907388e-16*I\nGot:\n    -2.2360679775 + 5.38810057558e-16*I\n**********************************************************************\n```\n",
+    "body": "And from a G5 running OSX 10.4:\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py            \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.2.alpha1/tmp/book_stein_ent.py\", line 5056:\n    : g2.complex_embedding()\nExpected:\n    -2.2360679775 + 3.33066907388e-16*I\nGot:\n    -2.2360679775 + 5.38810057558e-16*I\n**********************************************************************\n```",
     "created_at": "2008-10-27T18:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
@@ -116,7 +113,6 @@ Got:
     -2.2360679775 + 5.38810057558e-16*I
 **********************************************************************
 ```
-
 
 
 

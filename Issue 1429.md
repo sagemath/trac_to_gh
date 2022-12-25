@@ -3,7 +3,7 @@
 archive/issues_001429.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\n> Your tutorial is very well written!\n\nThanks. \n\n> One small thing is that \"axes\" was misspelled as \"ases\" at the top of page\n> 32.\n\nThanks!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1429\n\n",
+    "body": "Assignee: tba\n\n```\n> Your tutorial is very well written!\n\nThanks. \n\n> One small thing is that \"axes\" was misspelled as \"ases\" at the top of page\n> 32.\n\nThanks!\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1429\n\n",
     "created_at": "2007-12-08T22:16:01Z",
     "labels": [
         "component: documentation",
@@ -19,7 +19,6 @@ archive/issues_001429.json:
 ```
 Assignee: tba
 
-
 ```
 > Your tutorial is very well written!
 
@@ -30,7 +29,6 @@ Thanks.
 
 Thanks!
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1429
 

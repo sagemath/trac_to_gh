@@ -52,7 +52,7 @@ Attachment [pbori_bugfix.patch](tarball://root/attachments/some-uuid/ticket4324/
 archive/issue_comments_031619.json:
 ```json
 {
-    "body": "the patch is okay.\nNote, that the bug can only occur, when a system is passed, which is not a minimal GB.\nHowever, that's possible.\n\nIn the future version PolyBoRi 0.6 pure reduction can be implemented more efficiently without handling sets.\nHowever, you will need a different workaround there\n\n```\nr=ReductionStrategy()\nif not p.lead() in r.leading_terms:\n  r.add_generator(p)\n```\n",
+    "body": "the patch is okay.\nNote, that the bug can only occur, when a system is passed, which is not a minimal GB.\nHowever, that's possible.\n\nIn the future version PolyBoRi 0.6 pure reduction can be implemented more efficiently without handling sets.\nHowever, you will need a different workaround there\n\n```\nr=ReductionStrategy()\nif not p.lead() in r.leading_terms:\n  r.add_generator(p)\n```",
     "created_at": "2008-10-21T08:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4324",
     "type": "issue_comment",
@@ -73,7 +73,6 @@ r=ReductionStrategy()
 if not p.lead() in r.leading_terms:
   r.add_generator(p)
 ```
-
 
 
 

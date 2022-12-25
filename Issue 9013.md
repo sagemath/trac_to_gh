@@ -3,7 +3,7 @@
 archive/issues_009013.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\n\n```\nsage: G = graphs.PetersenGraph()\nsage: G.loops()\n[(0, 1, None), (0, 4, None), (0, 5, None), (0, 1, None), (1, 2, None),\n(1, 6, None), (1, 2, None), (2, 3, None), (2, 7, None), (2, 3, None),\n(3, 4, None), (3, 8, None), (0, 4, None), (3, 4, None), (4, 9, None),\n(0, 5, None), (5, 7, None), (5, 8, None), (1, 6, None), (6, 8, None),\n(6, 9, None), (2, 7, None), (5, 7, None), (7, 9, None), (3, 8, None),\n(5, 8, None), (6, 8, None), (4, 9, None), (6, 9, None), (7, 9, None)]\n```\n\n\n...but... the Petersen graph is loop free...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9013\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\n```\nsage: G = graphs.PetersenGraph()\nsage: G.loops()\n[(0, 1, None), (0, 4, None), (0, 5, None), (0, 1, None), (1, 2, None),\n(1, 6, None), (1, 2, None), (2, 3, None), (2, 7, None), (2, 3, None),\n(3, 4, None), (3, 8, None), (0, 4, None), (3, 4, None), (4, 9, None),\n(0, 5, None), (5, 7, None), (5, 8, None), (1, 6, None), (6, 8, None),\n(6, 9, None), (2, 7, None), (5, 7, None), (7, 9, None), (3, 8, None),\n(5, 8, None), (6, 8, None), (4, 9, None), (6, 9, None), (7, 9, None)]\n```\n\n...but... the Petersen graph is loop free...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9013\n\n",
     "created_at": "2010-05-21T21:19:23Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_009013.json:
 ```
 Assignee: jason, ncohen, rlm
 
-
 ```
 sage: G = graphs.PetersenGraph()
 sage: G.loops()
@@ -29,7 +28,6 @@ sage: G.loops()
 (6, 9, None), (2, 7, None), (5, 7, None), (7, 9, None), (3, 8, None),
 (5, 8, None), (6, 8, None), (4, 9, None), (6, 9, None), (7, 9, None)]
 ```
-
 
 ...but... the Petersen graph is loop free...
 

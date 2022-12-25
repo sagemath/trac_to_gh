@@ -3,7 +3,7 @@
 archive/issues_008422.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nKeywords: ChainPoset\n\nFor n>2 the answer is correct: \n\n```\nsage: Posets.ChainPoset(3).size()\n3\nsage: Posets.ChainPoset(4).size()\n4\nsage: Posets.ChainPoset(5).size()\n5\n```\n\nHowever:\n\n```\nsage: Posets.ChainPoset(2).size()\n1\nsage: Posets.ChainPoset(1).size()\n...\nValueError: not valid poset data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8422\n\n",
+    "body": "Assignee: sage-combinat\n\nKeywords: ChainPoset\n\nFor n>2 the answer is correct: \n\n```\nsage: Posets.ChainPoset(3).size()\n3\nsage: Posets.ChainPoset(4).size()\n4\nsage: Posets.ChainPoset(5).size()\n5\n```\nHowever:\n\n```\nsage: Posets.ChainPoset(2).size()\n1\nsage: Posets.ChainPoset(1).size()\n...\nValueError: not valid poset data.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8422\n\n",
     "created_at": "2010-03-02T17:54:52Z",
     "labels": [
         "component: combinatorics",
@@ -30,7 +30,6 @@ sage: Posets.ChainPoset(4).size()
 sage: Posets.ChainPoset(5).size()
 5
 ```
-
 However:
 
 ```
@@ -40,7 +39,6 @@ sage: Posets.ChainPoset(1).size()
 ...
 ValueError: not valid poset data.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8422
 

@@ -76,7 +76,7 @@ The patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutor
 archive/issue_comments_055613.json:
 ```json
 {
-    "body": "I get the following error even after installing both GLPK and CBC:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: linear_function = {\"variable1\" : 2, \"variable2\" : -1}\nsage: linear_function = {1 : 2, 2 : -1}\nsage: linear_function={(1,1) : 1, (1,2) : 2, (2,1) : 3, (2,2) : 4}\nsage: p = MIP(sense=1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/.sage/temp/sage.math.washington.edu/28962/_home_mvngu__sage_init_sage_0.py in <module>()\n\nNameError: name 'MIP' is not defined\n```\n\nNathann, you need to give commands on how to use the MIP capabilities of CBC. Where is `MIP()` defined? How do I import and use it? Please include those information in your patch.",
+    "body": "I get the following error even after installing both GLPK and CBC:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: linear_function = {\"variable1\" : 2, \"variable2\" : -1}\nsage: linear_function = {1 : 2, 2 : -1}\nsage: linear_function={(1,1) : 1, (1,2) : 2, (2,1) : 3, (2,2) : 4}\nsage: p = MIP(sense=1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/.sage/temp/sage.math.washington.edu/28962/_home_mvngu__sage_init_sage_0.py in <module>()\n\nNameError: name 'MIP' is not defined\n```\nNathann, you need to give commands on how to use the MIP capabilities of CBC. Where is `MIP()` defined? How do I import and use it? Please include those information in your patch.",
     "created_at": "2009-08-23T11:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'MIP' is not defined
 ```
-
 Nathann, you need to give commands on how to use the MIP capabilities of CBC. Where is `MIP()` defined? How do I import and use it? Please include those information in your patch.
 
 
@@ -112,7 +111,7 @@ Nathann, you need to give commands on how to use the MIP capabilities of CBC. Wh
 archive/issue_comments_055614.json:
 ```json
 {
-    "body": "Here's a conversion in IRC with Nathann:\n\n```\n05:00 < ncohen> mvngu: I do not understand the problem you have with MIP. It seems you copied some part of the examples into Sage\n05:00 < ncohen> mvngu: and Sage answered it did not know where to find the class MIP\n05:01 < ncohen> mvngu: even though I have added in sage/numerical/all.py a line : from MIP import *\n05:01 < mvngu> ncohen: David Joyner replied to me in an email that it depends on #6502.\n05:01 < mvngu> So I'll mark #6765 as depending on #6502.\n05:02 < ncohen> ooooops\n05:02 < ncohen> sorry ^^;\n05:02 < mvngu> This means that #6502 must be merged first.\n05:02 < ncohen> I've been working on this for some timme so sometimes I forget about it... ^^;\n05:02 < ncohen> indeed\n05:02 < ncohen> the thing is that I already posted something like 5 or 6 patches based upon #6502\n05:02 < ncohen> LP is so useful for graphs !\n05:03 < mvngu> Since GLPK is an optional spkg at the moment, so the doctests that depends on GLPK should be flagged as optional.\n05:03 < mvngu> Do so with the flag \"# optional\" in doctests.\n05:04 < mvngu> That way, when the test suite is run, anything with the flag \"# optional\" would be skipped over.\n05:04 < mvngu> Unless you have the required optional spkg installed.\n05:05 < ncohen> I see... :-/\n05:05 < mvngu> And any doctests that depend on CBC must also be flagged as \"# optional\".\n```\n\nAlso, this ticket depends on #6502.",
+    "body": "Here's a conversion in IRC with Nathann:\n\n```\n05:00 < ncohen> mvngu: I do not understand the problem you have with MIP. It seems you copied some part of the examples into Sage\n05:00 < ncohen> mvngu: and Sage answered it did not know where to find the class MIP\n05:01 < ncohen> mvngu: even though I have added in sage/numerical/all.py a line : from MIP import *\n05:01 < mvngu> ncohen: David Joyner replied to me in an email that it depends on #6502.\n05:01 < mvngu> So I'll mark #6765 as depending on #6502.\n05:02 < ncohen> ooooops\n05:02 < ncohen> sorry ^^;\n05:02 < mvngu> This means that #6502 must be merged first.\n05:02 < ncohen> I've been working on this for some timme so sometimes I forget about it... ^^;\n05:02 < ncohen> indeed\n05:02 < ncohen> the thing is that I already posted something like 5 or 6 patches based upon #6502\n05:02 < ncohen> LP is so useful for graphs !\n05:03 < mvngu> Since GLPK is an optional spkg at the moment, so the doctests that depends on GLPK should be flagged as optional.\n05:03 < mvngu> Do so with the flag \"# optional\" in doctests.\n05:04 < mvngu> That way, when the test suite is run, anything with the flag \"# optional\" would be skipped over.\n05:04 < mvngu> Unless you have the required optional spkg installed.\n05:05 < ncohen> I see... :-/\n05:05 < mvngu> And any doctests that depend on CBC must also be flagged as \"# optional\".\n```\nAlso, this ticket depends on #6502.",
     "created_at": "2009-08-23T12:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -143,7 +142,6 @@ Here's a conversion in IRC with Nathann:
 05:05 < ncohen> I see... :-/
 05:05 < mvngu> And any doctests that depend on CBC must also be flagged as "# optional".
 ```
-
 Also, this ticket depends on #6502.
 
 
@@ -267,7 +265,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055621.json:
 ```json
 {
-    "body": "Some comments: \n\n(1) When I run \"sage -docbuild tutorial html\", it complains\n\n```\n/Applications/sage/devel/sage/doc/en/tutorial/tour_LP.rst:64: (WARNING/2) Title underline too short.\n\nVariables in ``MixedIntegerLinearProgram``\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n```\n\nThe string of double quotes should line up exactly with the previous line.  (Maybe it's good enough it is at least as long, but I think it should be the same length.)\n\n(2) In a string like `minimized ( for example `2 x + y` )`, you shouldn't have a space after `(` or before `)`: it should say `minimized (for example `2 x + y`)`.  This happens throughout the document.  Along the same lines, there should be no space before \"?\" or before \":\".  Before a block of examples (like lines 69-70), I think you want a visible colon, and you achieve that by having \"::\" with no preceding space.  (Using \"::\" with a preceding space signals a block of examples but doesn't print a colon at all.)\n\n(3) On line 75, \"remperature\" should presumably be \"temperature\".  Try running a spell check.\n\n(4) You don't have a period at the sentence ending the paragraph \"What is a Mixed Integer Linear Program ?\"  I haven't done any more careful proofreading, but you should check for other spelling, usage, and grammar errors.\n\n(5) In multiline doctests, you need to change \"....:\" to \"...\".  As it stands, doctesting bombs on these lines.\n\n(6) If I don't have GLPK or numerical.MIP installed, doctests have to pass anyway.  Also, if I don't have them, I absolutely don't want doctesting to try to install them, which the lines\n\n```\n     sage: # To install GLPK\n     sage: install_package('glpk')\n     sage: # To install Coin-OR Branch and Cut ( CBC )\n     sage: install_package('cbc')\n```\n\nwill do.  Maybe mark those lines as \"# not tested\"?",
+    "body": "Some comments: \n\n(1) When I run \"sage -docbuild tutorial html\", it complains\n\n```\n/Applications/sage/devel/sage/doc/en/tutorial/tour_LP.rst:64: (WARNING/2) Title underline too short.\n\nVariables in ``MixedIntegerLinearProgram``\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n```\nThe string of double quotes should line up exactly with the previous line.  (Maybe it's good enough it is at least as long, but I think it should be the same length.)\n\n(2) In a string like `minimized ( for example `2 x + y` )`, you shouldn't have a space after `(` or before `)`: it should say `minimized (for example `2 x + y`)`.  This happens throughout the document.  Along the same lines, there should be no space before \"?\" or before \":\".  Before a block of examples (like lines 69-70), I think you want a visible colon, and you achieve that by having \"::\" with no preceding space.  (Using \"::\" with a preceding space signals a block of examples but doesn't print a colon at all.)\n\n(3) On line 75, \"remperature\" should presumably be \"temperature\".  Try running a spell check.\n\n(4) You don't have a period at the sentence ending the paragraph \"What is a Mixed Integer Linear Program ?\"  I haven't done any more careful proofreading, but you should check for other spelling, usage, and grammar errors.\n\n(5) In multiline doctests, you need to change \"....:\" to \"...\".  As it stands, doctesting bombs on these lines.\n\n(6) If I don't have GLPK or numerical.MIP installed, doctests have to pass anyway.  Also, if I don't have them, I absolutely don't want doctesting to try to install them, which the lines\n\n```\n     sage: # To install GLPK\n     sage: install_package('glpk')\n     sage: # To install Coin-OR Branch and Cut ( CBC )\n     sage: install_package('cbc')\n```\nwill do.  Maybe mark those lines as \"# not tested\"?",
     "created_at": "2009-11-19T22:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -286,7 +284,6 @@ Some comments:
 Variables in ``MixedIntegerLinearProgram``
 """"""""""""""""""""""""""
 ```
-
 The string of double quotes should line up exactly with the previous line.  (Maybe it's good enough it is at least as long, but I think it should be the same length.)
 
 (2) In a string like `minimized ( for example `2 x + y` )`, you shouldn't have a space after `(` or before `)`: it should say `minimized (for example `2 x + y`)`.  This happens throughout the document.  Along the same lines, there should be no space before "?" or before ":".  Before a block of examples (like lines 69-70), I think you want a visible colon, and you achieve that by having "::" with no preceding space.  (Using "::" with a preceding space signals a block of examples but doesn't print a colon at all.)
@@ -305,7 +302,6 @@ The string of double quotes should line up exactly with the previous line.  (May
      sage: # To install Coin-OR Branch and Cut ( CBC )
      sage: install_package('cbc')
 ```
-
 will do.  Maybe mark those lines as "# not tested"?
 
 
@@ -438,7 +434,7 @@ Could I do the same with my former ( and refused ) Graph Tour ?
 archive/issue_comments_055627.json:
 ```json
 {
-    "body": "Replying to [comment:15 ncohen]:\n> Could I do the same with my former ( and refused ) Graph Tour ?\n\nSure! Go for it.",
+    "body": "Replying to [comment:15 ncohen]:\n> Could I do the same with my former ( and refused ) Graph Tour ?\n\n\nSure! Go for it.",
     "created_at": "2009-12-10T18:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
@@ -449,5 +445,6 @@ archive/issue_comments_055627.json:
 
 Replying to [comment:15 ncohen]:
 > Could I do the same with my former ( and refused ) Graph Tour ?
+
 
 Sure! Go for it.

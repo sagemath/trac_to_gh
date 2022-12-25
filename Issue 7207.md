@@ -123,7 +123,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059692.json:
 ```json
 {
-    "body": "Needs work, since this has a subtle bug, which I bet you can easily fix.  See below.\n\nUsing regular expressions is unfortunately not rock solid.  For example, this input \"mysteriously\" gives a SyntaxError:\n\n```\nprint \"\"\"\nfrom __future__ import division\"\"\"\n```\n\noutputs:\n\n```\nSyntax Error:\n    from __future__ import division\"\"\"\n```\n\nwhereas the similar\n\n```\nprint \"\"\"\nfrom __xfuture__ import division\"\"\"\n```\n\nworks fine.  \n\nI think the right fix is to require that the even in the notebook the `from __future__ import ...` lines appear at the very top.  This would make it possible to use the same method you already used.",
+    "body": "Needs work, since this has a subtle bug, which I bet you can easily fix.  See below.\n\nUsing regular expressions is unfortunately not rock solid.  For example, this input \"mysteriously\" gives a SyntaxError:\n\n```\nprint \"\"\"\nfrom __future__ import division\"\"\"\n```\noutputs:\n\n```\nSyntax Error:\n    from __future__ import division\"\"\"\n```\nwhereas the similar\n\n```\nprint \"\"\"\nfrom __xfuture__ import division\"\"\"\n```\nworks fine.  \n\nI think the right fix is to require that the even in the notebook the `from __future__ import ...` lines appear at the very top.  This would make it possible to use the same method you already used.",
     "created_at": "2009-12-08T20:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -140,21 +140,18 @@ Using regular expressions is unfortunately not rock solid.  For example, this in
 print """
 from __future__ import division"""
 ```
-
 outputs:
 
 ```
 Syntax Error:
     from __future__ import division"""
 ```
-
 whereas the similar
 
 ```
 print """
 from __xfuture__ import division"""
 ```
-
 works fine.  
 
 I think the right fix is to require that the even in the notebook the `from __future__ import ...` lines appear at the very top.  This would make it possible to use the same method you already used.
@@ -318,7 +315,7 @@ Rebased to a bit after 0.60 (see trac_7207-sagenb-future-import.3.patch). Other 
 archive/issue_comments_059701.json:
 ```json
 {
-    "body": "V4 is rebased for this queue:\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\n```\n",
+    "body": "V4 is rebased for this queue:\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\n```",
     "created_at": "2010-01-25T00:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7207",
     "type": "issue_comment",
@@ -342,7 +339,6 @@ trac_7631-republish-name.patch
 trac_6353-cookies-diff-ports.patch
 trac_7207-sagenb-future-import.3.patch
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000978.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nAndrey Novoseltsev \t \nDear William,\n\nI have printing issues with sequences, cr parameter is not processed correctly\nwhen it is False:\n\nsage: s = Sequence([1,2,3], cr=False)\nsage: s\n[1, 2, 3]\nsage: print s, str(s), repr(s)\n[\n1,\n2,\n3\n] [\n1,\n2,\n3\n] [1, 2, 3]\nsage: s = Sequence([1,2,3], cr=True)\nsage: s\n[\n1,\n2,\n3\n]\nsage: print s, str(s), repr(s)\n[\n1,\n2,\n3\n] [\n1,\n2,\n3\n] [\n1,\n2,\n3\n]\n\nI get this both under notebook and command line and it is somewhat unpleasant.\n\nThank you,\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/978\n\n",
+    "body": "Assignee: somebody\n\n```\nAndrey Novoseltsev \t \nDear William,\n\nI have printing issues with sequences, cr parameter is not processed correctly\nwhen it is False:\n\nsage: s = Sequence([1,2,3], cr=False)\nsage: s\n[1, 2, 3]\nsage: print s, str(s), repr(s)\n[\n1,\n2,\n3\n] [\n1,\n2,\n3\n] [1, 2, 3]\nsage: s = Sequence([1,2,3], cr=True)\nsage: s\n[\n1,\n2,\n3\n]\nsage: print s, str(s), repr(s)\n[\n1,\n2,\n3\n] [\n1,\n2,\n3\n] [\n1,\n2,\n3\n]\n\nI get this both under notebook and command line and it is somewhat unpleasant.\n\nThank you,\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/978\n\n",
     "created_at": "2007-10-24T02:27:44Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000978.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 Andrey Novoseltsev 	 
@@ -65,7 +64,6 @@ I get this both under notebook and command line and it is somewhat unpleasant.
 
 Thank you,
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/978
 

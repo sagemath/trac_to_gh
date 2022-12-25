@@ -3,7 +3,7 @@
 archive/issues_006786.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n<SNIP>\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 205:\n    sage: lde1 = de1.laplace(\"t\",\"s\"); lde1\nExpected:\n    2*(-?%at('diff(x(t),t,1),t=0)+s^2*?%laplace(x(t),t,s)-x(0)*s)-2*?%laplace(y(t),t,s)+6*?%laplace(x(t),t,s)\nGot:\n    2*(-?%at('diff(x(t),t,1),t=0)+s^2*'laplace(x(t),t,s)-x(0)*s)-2*'laplace(y(t),t,s)+6*'laplace(x(t),t,s)\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 220:\n    sage: lde2 = de2.laplace(\"t\",\"s\"); lde2\nExpected:\n    -?%at('diff(y(t),t,1),t=0)+s^2*?%laplace(y(t),t,s)+2*?%laplace(y(t),t,s)-2*?%laplace(x(t),t,s)-y(0)*s\nGot:\n    -?%at('diff(y(t),t,1),t=0)+s^2*'laplace(y(t),t,s)+2*'laplace(y(t),t,s)-2*'laplace(x(t),t,s)-y(0)*s\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 410:\n    sage: maxima.eval(\"f:bessel_y(v, w)\")\nExpected:\n    '?%bessel_y(v,w)'\nGot:\n    'bessel_y(v,w)'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 412:\n    sage: maxima.eval(\"diff(f,w)\")\nExpected:\n    '(?%bessel_y(v-1,w)-?%bessel_y(v+1,w))/2'\nGot:\n    '(bessel_y(v-1,w)-bessel_y(v+1,w))/2'\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_11\n   1 of   4 in __main__.example_12\n   2 of   4 in __main__.example_20\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_tour_algebra.py\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6786\n\n",
+    "body": "Assignee: tbd\n\nOn Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n<SNIP>\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 205:\n    sage: lde1 = de1.laplace(\"t\",\"s\"); lde1\nExpected:\n    2*(-?%at('diff(x(t),t,1),t=0)+s^2*?%laplace(x(t),t,s)-x(0)*s)-2*?%laplace(y(t),t,s)+6*?%laplace(x(t),t,s)\nGot:\n    2*(-?%at('diff(x(t),t,1),t=0)+s^2*'laplace(x(t),t,s)-x(0)*s)-2*'laplace(y(t),t,s)+6*'laplace(x(t),t,s)\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 220:\n    sage: lde2 = de2.laplace(\"t\",\"s\"); lde2\nExpected:\n    -?%at('diff(y(t),t,1),t=0)+s^2*?%laplace(y(t),t,s)+2*?%laplace(y(t),t,s)-2*?%laplace(x(t),t,s)-y(0)*s\nGot:\n    -?%at('diff(y(t),t,1),t=0)+s^2*'laplace(y(t),t,s)+2*'laplace(y(t),t,s)-2*'laplace(x(t),t,s)-y(0)*s\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 410:\n    sage: maxima.eval(\"f:bessel_y(v, w)\")\nExpected:\n    '?%bessel_y(v,w)'\nGot:\n    'bessel_y(v,w)'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 412:\n    sage: maxima.eval(\"diff(f,w)\")\nExpected:\n    '(?%bessel_y(v-1,w)-?%bessel_y(v+1,w))/2'\nGot:\n    '(bessel_y(v-1,w)-bessel_y(v+1,w))/2'\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_11\n   1 of   4 in __main__.example_12\n   2 of   4 in __main__.example_20\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_tour_algebra.py\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6786\n\n",
     "created_at": "2009-08-20T21:55:52Z",
     "labels": [
         "component: algebra",
@@ -27,9 +27,9 @@ Thu Aug 20 20:02:37 BST 2009
 dsage-trial tmp directory doesn't exist - creating ...
 This script will run the unit tests for DSage
 ```
-
 <SNIP>
-
+| Sage Version 4.1.1, Release Date: 2009-08-14                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage -t  "devel/sage/doc/en/tutorial/tour_algebra.rst"
 **********************************************************************
@@ -67,10 +67,8 @@ Got:
    2 of   4 in __main__.example_20
 ***Test Failed*** 4 failures.
 For whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_tour_algebra.py
-| Sage Version 4.1.1, Release Date: 2009-08-14                       |
-| Type notebook() for the GUI, and license() for information.        |
-```
 
+```
 
 Issue created by migration from https://trac.sagemath.org/ticket/6786
 

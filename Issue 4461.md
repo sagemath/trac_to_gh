@@ -83,7 +83,7 @@ Michael
 archive/issue_comments_032871.json:
 ```json
 {
-    "body": "No package for fricas release 1.0.4 was ever completed. Meanwhile there is a new version of FriCAS available.\n\nAn experimental package for fricas release 1.0.5 is available here:\n\n[http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg](http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg)\n\nSo far I have only tested this package with sage-3.1.2 on sage.math using the following commands:\n\n\n```\n  $ wget http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg\n  $ .../sage -f fricas-1.0.5.spkg\n```\n\n\nFor example with this version you can compute the following integral:\n\n\n```\nsage: ex1=axiom(2^x/sqrt(1+4^x));ex1\n\n       x\n      2\n  ---------\n   +------+\n   | x\n  \\|4  + 1\nsage: ex1.integrate(x)\n\n         +-----------------+\n         |   x log(2) 2          x log(2)\n    log(\\|(%e        )  + 1  - %e        )\n  - --------------------------------------\n                    log(2)\n\n```\n\n\n\nHelp testing on other platforms and versions of Sage would be appreciated.",
+    "body": "No package for fricas release 1.0.4 was ever completed. Meanwhile there is a new version of FriCAS available.\n\nAn experimental package for fricas release 1.0.5 is available here:\n\n[http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg](http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg)\n\nSo far I have only tested this package with sage-3.1.2 on sage.math using the following commands:\n\n```\n  $ wget http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg\n  $ .../sage -f fricas-1.0.5.spkg\n```\n\nFor example with this version you can compute the following integral:\n\n```\nsage: ex1=axiom(2^x/sqrt(1+4^x));ex1\n\n       x\n      2\n  ---------\n   +------+\n   | x\n  \\|4  + 1\nsage: ex1.integrate(x)\n\n         +-----------------+\n         |   x log(2) 2          x log(2)\n    log(\\|(%e        )  + 1  - %e        )\n  - --------------------------------------\n                    log(2)\n\n```\n\n\nHelp testing on other platforms and versions of Sage would be appreciated.",
     "created_at": "2009-01-27T03:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
@@ -100,15 +100,12 @@ An experimental package for fricas release 1.0.5 is available here:
 
 So far I have only tested this package with sage-3.1.2 on sage.math using the following commands:
 
-
 ```
   $ wget http://sage.math.washington.edu/home/page/packages/fricas-1.0.5.spkg
   $ .../sage -f fricas-1.0.5.spkg
 ```
 
-
 For example with this version you can compute the following integral:
-
 
 ```
 sage: ex1=axiom(2^x/sqrt(1+4^x));ex1
@@ -130,7 +127,6 @@ sage: ex1.integrate(x)
 ```
 
 
-
 Help testing on other platforms and versions of Sage would be appreciated.
 
 
@@ -140,7 +136,7 @@ Help testing on other platforms and versions of Sage would be appreciated.
 archive/issue_comments_032872.json:
 ```json
 {
-    "body": "On Mon, 26 Jan 2009 21:56:44 -0800 William Stein wrote:\n\nIt fails the following tests (have you posted a patch to trac to update this)?\n\nBy the way, when using this, I repeatedly felt like I wished the\ncommand in Sage were \"fricas\" instead of \"axiom\" and the file to test\nwere \"fricas.py\" instead of \"axiom.py\".\n\n\n```\nwstein@sage:~/sage/devel/sage/sage/interfaces$ sage -t -optional axiom.py\nsage -t -optional \"devel/sage-main/sage/interfaces/axiom.py\"\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 61:\n    sage: F.type()                              # optional\nExpected:\n    Factored Polynomial Integer\nGot:\n    Factored(Polynomial(Integer))\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 80:\n    sage: print axiom.eval('factor(x^5 - y^5)')   # optional\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )\n    <BLANKLINE>\n    Type: Factored Polynomial Integer\nGot:\n                 4      3    2 2    3     4\n      - (y - x)(y  + x y  + x y  + x y + x )\n\n\n                                                                 Type:\nFactored(Polynomial(Integer))\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 561:\n    sage: axiom(x+2).type()  #optional -- requires Axiom\nExpected:\n    Polynomial Integer\nGot:\n    Polynomial(Integer)\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 623:\n    sage: _.type()        #optional\nExpected:\n    Tuple PositiveInteger\nGot:\n    Tuple(PositiveInteger)\n**********************************************************************\n3 items had failures:\n   2 of  21 in __main__.example_0\n   1 of   3 in __main__.example_19\n   1 of   6 in __main__.example_22\n\n```\n",
+    "body": "On Mon, 26 Jan 2009 21:56:44 -0800 William Stein wrote:\n\nIt fails the following tests (have you posted a patch to trac to update this)?\n\nBy the way, when using this, I repeatedly felt like I wished the\ncommand in Sage were \"fricas\" instead of \"axiom\" and the file to test\nwere \"fricas.py\" instead of \"axiom.py\".\n\n```\nwstein@sage:~/sage/devel/sage/sage/interfaces$ sage -t -optional axiom.py\nsage -t -optional \"devel/sage-main/sage/interfaces/axiom.py\"\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 61:\n    sage: F.type()                              # optional\nExpected:\n    Factored Polynomial Integer\nGot:\n    Factored(Polynomial(Integer))\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 80:\n    sage: print axiom.eval('factor(x^5 - y^5)')   # optional\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )\n    <BLANKLINE>\n    Type: Factored Polynomial Integer\nGot:\n                 4      3    2 2    3     4\n      - (y - x)(y  + x y  + x y  + x y + x )\n\n\n                                                                 Type:\nFactored(Polynomial(Integer))\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 561:\n    sage: axiom(x+2).type()  #optional -- requires Axiom\nExpected:\n    Polynomial Integer\nGot:\n    Polynomial(Integer)\n**********************************************************************\nFile \"/home/wstein/sage/devel/sage-main/sage/interfaces/axiom.py\", line 623:\n    sage: _.type()        #optional\nExpected:\n    Tuple PositiveInteger\nGot:\n    Tuple(PositiveInteger)\n**********************************************************************\n3 items had failures:\n   2 of  21 in __main__.example_0\n   1 of   3 in __main__.example_19\n   1 of   6 in __main__.example_22\n\n```",
     "created_at": "2009-01-27T13:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
@@ -156,7 +152,6 @@ It fails the following tests (have you posted a patch to trac to update this)?
 By the way, when using this, I repeatedly felt like I wished the
 command in Sage were "fricas" instead of "axiom" and the file to test
 were "fricas.py" instead of "axiom.py".
-
 
 ```
 wstein@sage:~/sage/devel/sage/sage/interfaces$ sage -t -optional axiom.py
@@ -205,7 +200,6 @@ Got:
    1 of   6 in __main__.example_22
 
 ```
-
 
 
 

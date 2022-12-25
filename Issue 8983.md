@@ -3,7 +3,7 @@
 archive/issues_008983.json:
 ```json
 {
-    "body": "Assignee: RossK\n\nCC:  @burcin @kcrisman\n\nKeywords: erf zero\n\nCurrently it doesnt...\n\n\n```\nsage: solve(erf(x)==0,x)\n[erf(x) == 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
+    "body": "Assignee: RossK\n\nCC:  @burcin @kcrisman\n\nKeywords: erf zero\n\nCurrently it doesnt...\n\n```\nsage: solve(erf(x)==0,x)\n[erf(x) == 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8983\n\n",
     "created_at": "2010-05-17T13:15:56Z",
     "labels": [
         "component: symbolics",
@@ -24,12 +24,10 @@ Keywords: erf zero
 
 Currently it doesnt...
 
-
 ```
 sage: solve(erf(x)==0,x)
 [erf(x) == 0]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8983
 
@@ -78,7 +76,7 @@ Changing priority from major to minor.
 archive/issue_comments_082734.json:
 ```json
 {
-    "body": "Here is the relevant thread on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/t/d236e80bf7826bff\n\nThe main problem is this:\n\n\n```\nsage: erf(0)\nerf(0)\n```\n\n\nWe should just return 0.",
+    "body": "Here is the relevant thread on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/t/d236e80bf7826bff\n\nThe main problem is this:\n\n```\nsage: erf(0)\nerf(0)\n```\n\nWe should just return 0.",
     "created_at": "2010-05-17T13:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -93,12 +91,10 @@ http://groups.google.com/group/sage-devel/t/d236e80bf7826bff
 
 The main problem is this:
 
-
 ```
 sage: erf(0)
 erf(0)
 ```
-
 
 We should just return 0.
 
@@ -155,7 +151,7 @@ But I have a few questions that came up along the way:
 archive/issue_comments_082737.json:
 ```json
 {
-    "body": "You should always feel free to add patches - it's MUCH easier to tell what people are talking about, even if the patch is really, really preliminary.\n> (1) In 4.6.1, solve(erf(x)==0,x) seems to work for me already, before the patch.  Did I get my binaries confused somehow, or did something change elsewhere?\nThis must be from an improvement in Maxima during the several recent upgrades.  I've updated the description.\n> (3) My patch broke a doctest in functions/special.py, which expected erf(0.5) to be evaluated to 0.520499877813047, but the existing doctests for erf demand that erf(2) = erf(2). I can get that behaviour, namely to evaluate for reals and to hold for integers except for zero, but I don't quite follow it.\nNo, the usual practice is to not evaluate (give symbolic back) for \"exact\" rings and evaluate (give numeric back) for \"inexact\" rings.  There is some disagreement among developers about exactly what these words mean, but basically `erf(x),erf(1/2),erf(2),erf(e)` should all return something symbolic and `erf(.1),erf(RDF(1))`, etc. should return something numeric.  I.e. `erf2)!=erf(2.)`.\n> \n> (4) Since I'm doing a bit more, should I open an enhancement ticket instead?\nI believe there already is a ticket for the complex pieces at #1173, similarly at #9044.  If you have a good solution to the whole thing, you could do it at one of those and then say this ticket can be closed when they are (if you have also documented that it's fixed.",
+    "body": "You should always feel free to add patches - it's MUCH easier to tell what people are talking about, even if the patch is really, really preliminary.\n> (1) In 4.6.1, solve(erf(x)==0,x) seems to work for me already, before the patch.  Did I get my binaries confused somehow, or did something change elsewhere?\n\nThis must be from an improvement in Maxima during the several recent upgrades.  I've updated the description.\n> (3) My patch broke a doctest in functions/special.py, which expected erf(0.5) to be evaluated to 0.520499877813047, but the existing doctests for erf demand that erf(2) = erf(2). I can get that behaviour, namely to evaluate for reals and to hold for integers except for zero, but I don't quite follow it.\n\nNo, the usual practice is to not evaluate (give symbolic back) for \"exact\" rings and evaluate (give numeric back) for \"inexact\" rings.  There is some disagreement among developers about exactly what these words mean, but basically `erf(x),erf(1/2),erf(2),erf(e)` should all return something symbolic and `erf(.1),erf(RDF(1))`, etc. should return something numeric.  I.e. `erf2)!=erf(2.)`.\n> \n> (4) Since I'm doing a bit more, should I open an enhancement ticket instead?\n\nI believe there already is a ticket for the complex pieces at #1173, similarly at #9044.  If you have a good solution to the whole thing, you could do it at one of those and then say this ticket can be closed when they are (if you have also documented that it's fixed.",
     "created_at": "2011-02-21T16:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -166,11 +162,14 @@ archive/issue_comments_082737.json:
 
 You should always feel free to add patches - it's MUCH easier to tell what people are talking about, even if the patch is really, really preliminary.
 > (1) In 4.6.1, solve(erf(x)==0,x) seems to work for me already, before the patch.  Did I get my binaries confused somehow, or did something change elsewhere?
+
 This must be from an improvement in Maxima during the several recent upgrades.  I've updated the description.
 > (3) My patch broke a doctest in functions/special.py, which expected erf(0.5) to be evaluated to 0.520499877813047, but the existing doctests for erf demand that erf(2) = erf(2). I can get that behaviour, namely to evaluate for reals and to hold for integers except for zero, but I don't quite follow it.
+
 No, the usual practice is to not evaluate (give symbolic back) for "exact" rings and evaluate (give numeric back) for "inexact" rings.  There is some disagreement among developers about exactly what these words mean, but basically `erf(x),erf(1/2),erf(2),erf(e)` should all return something symbolic and `erf(.1),erf(RDF(1))`, etc. should return something numeric.  I.e. `erf2)!=erf(2.)`.
 > 
 > (4) Since I'm doing a bit more, should I open an enhancement ticket instead?
+
 I believe there already is a ticket for the complex pieces at #1173, similarly at #9044.  If you have a good solution to the whole thing, you could do it at one of those and then say this ticket can be closed when they are (if you have also documented that it's fixed.
 
 
@@ -198,7 +197,7 @@ archive/issue_comments_082738.json:
 archive/issue_comments_082739.json:
 ```json
 {
-    "body": "If #1173 isn't going to happen anytime soon because of #11513, a very simple patch here would be nice.  It would document\n\n```\nsage: solve(erf(x)==0,x)\n[x == 0]\n```\n\nas mentioned above already works, and take care of the issue in the summary, of course.",
+    "body": "If #1173 isn't going to happen anytime soon because of #11513, a very simple patch here would be nice.  It would document\n\n```\nsage: solve(erf(x)==0,x)\n[x == 0]\n```\nas mentioned above already works, and take care of the issue in the summary, of course.",
     "created_at": "2011-12-19T17:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -213,7 +212,6 @@ If #1173 isn't going to happen anytime soon because of #11513, a very simple pat
 sage: solve(erf(x)==0,x)
 [x == 0]
 ```
-
 as mentioned above already works, and take care of the issue in the summary, of course.
 
 
@@ -297,7 +295,7 @@ I uploaded a simple patch now that #11513 is merged.
 archive/issue_comments_082744.json:
 ```json
 {
-    "body": "Looks good, but I think we should return a Sage zero (or at least match the type):\n\n\n```\n\nsage: erf(0)\n0\nsage: parent(erf(0))\n<type 'int'>\n\n```\n",
+    "body": "Looks good, but I think we should return a Sage zero (or at least match the type):\n\n```\n\nsage: erf(0)\n0\nsage: parent(erf(0))\n<type 'int'>\n\n```",
     "created_at": "2012-02-13T02:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -307,7 +305,6 @@ archive/issue_comments_082744.json:
 ```
 
 Looks good, but I think we should return a Sage zero (or at least match the type):
-
 
 ```
 
@@ -320,13 +317,12 @@ sage: parent(erf(0))
 
 
 
-
 ---
 
 archive/issue_comments_082745.json:
 ```json
 {
-    "body": "That's a good point, this patch addresses the issue by returning the input `x` instead of 0 when a python 0 would have been returned in the previous patch.\n\n\n```\nsage: erf(0)\n0\nsage: type(erf(0))\n<type 'sage.rings.integer.Integer'>\nsage: parent(erf(0))\nInteger Ring\n```\n",
+    "body": "That's a good point, this patch addresses the issue by returning the input `x` instead of 0 when a python 0 would have been returned in the previous patch.\n\n```\nsage: erf(0)\n0\nsage: type(erf(0))\n<type 'sage.rings.integer.Integer'>\nsage: parent(erf(0))\nInteger Ring\n```",
     "created_at": "2012-02-13T04:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -337,7 +333,6 @@ archive/issue_comments_082745.json:
 
 That's a good point, this patch addresses the issue by returning the input `x` instead of 0 when a python 0 would have been returned in the previous patch.
 
-
 ```
 sage: erf(0)
 0
@@ -346,7 +341,6 @@ sage: type(erf(0))
 sage: parent(erf(0))
 Integer Ring
 ```
-
 
 
 
@@ -393,7 +387,7 @@ Okay, looks good to me (or at least none of my obvious tricks could break it).
 archive/issue_comments_082748.json:
 ```json
 {
-    "body": "Thanks for the patch Benjamin. It looks great and gets the job done. However, I'd be much happier if there were a couple more doctests. There are quite a few branches in the new `_eval_()` function, but the patch adds only one doctest.\n\nOne more suggestion: It might be better to leave the last `return None` statement outside the `if`s. IMHO, the following is more compact and readable.\n\n\n```\nif not isinstance(x, Expression): \n    if is_inexact(x): \n        return self._evalf_(x, parent=parent(x)) \n    elif x == 0: \n        return x \nelif x.is_trivial_zero(): \n        return x \nreturn None \n```\n",
+    "body": "Thanks for the patch Benjamin. It looks great and gets the job done. However, I'd be much happier if there were a couple more doctests. There are quite a few branches in the new `_eval_()` function, but the patch adds only one doctest.\n\nOne more suggestion: It might be better to leave the last `return None` statement outside the `if`s. IMHO, the following is more compact and readable.\n\n```\nif not isinstance(x, Expression): \n    if is_inexact(x): \n        return self._evalf_(x, parent=parent(x)) \n    elif x == 0: \n        return x \nelif x.is_trivial_zero(): \n        return x \nreturn None \n```",
     "created_at": "2012-02-13T09:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -405,7 +399,6 @@ archive/issue_comments_082748.json:
 Thanks for the patch Benjamin. It looks great and gets the job done. However, I'd be much happier if there were a couple more doctests. There are quite a few branches in the new `_eval_()` function, but the patch adds only one doctest.
 
 One more suggestion: It might be better to leave the last `return None` statement outside the `if`s. IMHO, the following is more compact and readable.
-
 
 ```
 if not isinstance(x, Expression): 
@@ -420,13 +413,12 @@ return None
 
 
 
-
 ---
 
 archive/issue_comments_082749.json:
 ```json
 {
-    "body": "Replying to [comment:11 dsm]:\n> Looks good, but I think we should return a Sage zero (or at least match the type):\nIs this what you were referring to at comment:2:ticket:10133, dsm?\n\nMore generally, does anyone think the present way of ensuring `erf(0)` returns an Integer (or even Symbolic Expression) is a good one for #10133?  Or is it better to address this at the Pynac level?",
+    "body": "Replying to [comment:11 dsm]:\n> Looks good, but I think we should return a Sage zero (or at least match the type):\n\nIs this what you were referring to at comment:2:ticket:10133, dsm?\n\nMore generally, does anyone think the present way of ensuring `erf(0)` returns an Integer (or even Symbolic Expression) is a good one for #10133?  Or is it better to address this at the Pynac level?",
     "created_at": "2012-02-13T18:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -437,6 +429,7 @@ archive/issue_comments_082749.json:
 
 Replying to [comment:11 dsm]:
 > Looks good, but I think we should return a Sage zero (or at least match the type):
+
 Is this what you were referring to at comment:2:ticket:10133, dsm?
 
 More generally, does anyone think the present way of ensuring `erf(0)` returns an Integer (or even Symbolic Expression) is a good one for #10133?  Or is it better to address this at the Pynac level?
@@ -485,7 +478,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082752.json:
 ```json
 {
-    "body": "Replying to [comment:17 benjaminfjones]:\n> Maybe that's overkill, but it took me a while to find an input that actually reached the `x.is_trivial_zero()` branch.\n\nIt's not overkill at all, after adding _a_ doctest to every function, perhaps we will measure the coverage in terms of percentage of lines executed with those tests. Thanks for spending the time and giving this function 100% coverage. :)\n\nBTW, `erf(SR(0))` should be a simple way of hitting the `is_trivially_zero()` branch.",
+    "body": "Replying to [comment:17 benjaminfjones]:\n> Maybe that's overkill, but it took me a while to find an input that actually reached the `x.is_trivial_zero()` branch.\n\n\nIt's not overkill at all, after adding _a_ doctest to every function, perhaps we will measure the coverage in terms of percentage of lines executed with those tests. Thanks for spending the time and giving this function 100% coverage. :)\n\nBTW, `erf(SR(0))` should be a simple way of hitting the `is_trivially_zero()` branch.",
     "created_at": "2012-02-14T10:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8983",
     "type": "issue_comment",
@@ -496,6 +489,7 @@ archive/issue_comments_082752.json:
 
 Replying to [comment:17 benjaminfjones]:
 > Maybe that's overkill, but it took me a while to find an input that actually reached the `x.is_trivial_zero()` branch.
+
 
 It's not overkill at all, after adding _a_ doctest to every function, perhaps we will measure the coverage in terms of percentage of lines executed with those tests. Thanks for spending the time and giving this function 100% coverage. :)
 

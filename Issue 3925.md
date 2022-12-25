@@ -114,7 +114,7 @@ Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_028040.json:
 ```json
 {
-    "body": "I've added an attempt at an .spkg for primegen-0.97 as an attachment, and also took the liberty of patching (untested...) spkg/install and spkg/standard/deps to build it automatically when installing sage. (In the 'spkg_deps' patch.)\n\nI'm not entirely confident the build system of the library will work everywhere, since it is rather non-standard, but hopefully it is portable enough.\n\nThe library is tiny, with the .spkg only 32KB, and the compiled (Linux x86_64) library only 17KB.\n\nTiming:\n\n```\ndef f():    \n    P = Primes()\n    for p in P:\n        if p > 10^8:\n            break\ntime f()\n```\n\n\ngoes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz Opteron.",
+    "body": "I've added an attempt at an .spkg for primegen-0.97 as an attachment, and also took the liberty of patching (untested...) spkg/install and spkg/standard/deps to build it automatically when installing sage. (In the 'spkg_deps' patch.)\n\nI'm not entirely confident the build system of the library will work everywhere, since it is rather non-standard, but hopefully it is portable enough.\n\nThe library is tiny, with the .spkg only 32KB, and the compiled (Linux x86_64) library only 17KB.\n\nTiming:\n\n```\ndef f():    \n    P = Primes()\n    for p in P:\n        if p > 10^8:\n            break\ntime f()\n```\n\ngoes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz Opteron.",
     "created_at": "2009-07-13T22:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -139,7 +139,6 @@ def f():
             break
 time f()
 ```
-
 
 goes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz Opteron.
 
@@ -188,7 +187,7 @@ Hi John. The first patch isn't necessary to use the spkg. It's only for making a
 archive/issue_comments_028043.json:
 ```json
 {
-    "body": "Replying to [comment:6 wjp]:\n> Hi John. The first patch isn't necessary to use the spkg. It's only for making a fresh 'make' of sage automatically build the spkg. I'm not too sure sure if that patch is right, actually; that part should probably be left to a release manager.\n\nOK, I'll have another go sometime this weekend.  I'm glad about the first patch, since I'm not really competent to say if it's right (though it looks ok).",
+    "body": "Replying to [comment:6 wjp]:\n> Hi John. The first patch isn't necessary to use the spkg. It's only for making a fresh 'make' of sage automatically build the spkg. I'm not too sure sure if that patch is right, actually; that part should probably be left to a release manager.\n\n\nOK, I'll have another go sometime this weekend.  I'm glad about the first patch, since I'm not really competent to say if it's right (though it looks ok).",
     "created_at": "2009-07-25T09:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -200,6 +199,7 @@ archive/issue_comments_028043.json:
 Replying to [comment:6 wjp]:
 > Hi John. The first patch isn't necessary to use the spkg. It's only for making a fresh 'make' of sage automatically build the spkg. I'm not too sure sure if that patch is right, actually; that part should probably be left to a release manager.
 
+
 OK, I'll have another go sometime this weekend.  I'm glad about the first patch, since I'm not really competent to say if it's right (though it looks ok).
 
 
@@ -209,7 +209,7 @@ OK, I'll have another go sometime this weekend.  I'm glad about the first patch,
 archive/issue_comments_028044.json:
 ```json
 {
-    "body": "To adopt this spkg as part of Sage\nproper would need a vote on sage-devel.  I suggest that wjp helps that process\nby collecting some data (before and after).  For example:\n\n```\nsage: time P = prime_range(10^8)\nCPU times: user 1.83 s, sys: 0.50 s, total: 2.32 s\nWall time: 2.33 s\nsage: len(P)\n5761455\n```\n\nbut this does not use the new PrimeGen class.  I tried this (with the\nnew spkg + patch):\n\n```\nsage: pg=Primes().pg\nsage: pg.reset()\nsage: N=pg.count(10^8)\nsage: pg.reset()\nsage: time P=[pg.next() for _ in range(N)]\nCPU times: user 4.98 s, sys: 0.03 s, total: 5.01 s\nWall time: 5.02 s\n```\n\nwhich is slower but it's using a more stupid method to collect the\nprimes that in prime_range().",
+    "body": "To adopt this spkg as part of Sage\nproper would need a vote on sage-devel.  I suggest that wjp helps that process\nby collecting some data (before and after).  For example:\n\n```\nsage: time P = prime_range(10^8)\nCPU times: user 1.83 s, sys: 0.50 s, total: 2.32 s\nWall time: 2.33 s\nsage: len(P)\n5761455\n```\nbut this does not use the new PrimeGen class.  I tried this (with the\nnew spkg + patch):\n\n```\nsage: pg=Primes().pg\nsage: pg.reset()\nsage: N=pg.count(10^8)\nsage: pg.reset()\nsage: time P=[pg.next() for _ in range(N)]\nCPU times: user 4.98 s, sys: 0.03 s, total: 5.01 s\nWall time: 5.02 s\n```\nwhich is slower but it's using a more stupid method to collect the\nprimes that in prime_range().",
     "created_at": "2009-07-26T09:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ Wall time: 2.33 s
 sage: len(P)
 5761455
 ```
-
 but this does not use the new PrimeGen class.  I tried this (with the
 new spkg + patch):
 
@@ -242,7 +241,6 @@ sage: time P=[pg.next() for _ in range(N)]
 CPU times: user 4.98 s, sys: 0.03 s, total: 5.01 s
 Wall time: 5.02 s
 ```
-
 which is slower but it's using a more stupid method to collect the
 primes that in prime_range().
 

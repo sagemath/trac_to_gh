@@ -3,7 +3,7 @@
 archive/issues_005064.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
     "created_at": "2009-01-23T02:16:15Z",
     "labels": [
         "component: algebra",
@@ -20,13 +20,11 @@ Assignee: tbd
 
 CC:  @jhpalmieri
 
-
 ```
 sage: A = SteenrodAlgebra(17)
 sage: A(0).parent() is A
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5064
 

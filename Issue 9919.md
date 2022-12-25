@@ -149,7 +149,7 @@ Puts the "$SAGE_ROOT/devel/sagenb" in `develop` mode.
 archive/issue_comments_098552.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Does this mean that I should be using spkg-dist to make the spkg, instead of sage -spkg?\n> \n\nYes. That has been the case for a long time (c.f. SPKG.txt)\n\n> Also, does this set things up so that changes are reflected in the running notebook server?  It seems that the spkg-dist just copies the hg repository there, but the notebook install is completely different.\n\nI neglected to add that. Thanks for the notification. This new patch should fix it.",
+    "body": "Replying to [comment:2 jason]:\n> Does this mean that I should be using spkg-dist to make the spkg, instead of sage -spkg?\n> \n\n\nYes. That has been the case for a long time (c.f. SPKG.txt)\n\n> Also, does this set things up so that changes are reflected in the running notebook server?  It seems that the spkg-dist just copies the hg repository there, but the notebook install is completely different.\n\n\nI neglected to add that. Thanks for the notification. This new patch should fix it.",
     "created_at": "2010-09-24T07:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -162,9 +162,11 @@ Replying to [comment:2 jason]:
 > Does this mean that I should be using spkg-dist to make the spkg, instead of sage -spkg?
 > 
 
+
 Yes. That has been the case for a long time (c.f. SPKG.txt)
 
 > Also, does this set things up so that changes are reflected in the running notebook server?  It seems that the spkg-dist just copies the hg repository there, but the notebook install is completely different.
+
 
 I neglected to add that. Thanks for the notification. This new patch should fix it.
 
@@ -267,7 +269,7 @@ Does the new `spkg-install` now install SageNB two places, under `site-packages`
 archive/issue_comments_098558.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n\nCan we make a new ticket for that?\n\nIn fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\n> \n> Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n\n\nNo, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.",
+    "body": "Replying to [comment:6 mpatel]:\n> The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n\n\nCan we make a new ticket for that?\n\nIn fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\n> \n> Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n\n\n\nNo, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.",
     "created_at": "2010-10-04T11:50:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -279,12 +281,14 @@ archive/issue_comments_098558.json:
 Replying to [comment:6 mpatel]:
 > The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?
 
+
 Can we make a new ticket for that?
 
 In fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.
 
 > 
 > Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?
+
 
 
 No, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.
@@ -296,7 +300,7 @@ No, I don't think it installs twice (you can check the files to make sure).  The
 archive/issue_comments_098559.json:
 ```json
 {
-    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 mpatel]:\n> > The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n> \n> Can we make a new ticket for that?\n> \n> In fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\nI agree with Jason.\n\n> \n> > \n> > Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n> \n> \n> No, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.\n\nActually, it does, but doing so is needed for the docs to show (static docs). We can make another ticket for that.",
+    "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 mpatel]:\n> > The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n\n> \n> Can we make a new ticket for that?\n> \n> In fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\n\nI agree with Jason.\n\n> \n> > \n> > Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n\n> \n> \n> No, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.\n\n\nActually, it does, but doing so is needed for the docs to show (static docs). We can make another ticket for that.",
     "created_at": "2010-10-04T13:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -308,19 +312,23 @@ archive/issue_comments_098559.json:
 Replying to [comment:7 jason]:
 > Replying to [comment:6 mpatel]:
 > > The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?
+
 > 
 > Can we make a new ticket for that?
 > 
 > In fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.
+
 
 I agree with Jason.
 
 > 
 > > 
 > > Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?
+
 > 
 > 
 > No, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.
+
 
 Actually, it does, but doing so is needed for the docs to show (static docs). We can make another ticket for that.
 
@@ -513,7 +521,7 @@ I've added a patch that I'm testing now.
 archive/issue_comments_098569.json:
 ```json
 {
-    "body": "Replying to [comment:17 mpatel]:\n> I've added a patch that I'm testing now.\n\nIt works.",
+    "body": "Replying to [comment:17 mpatel]:\n> I've added a patch that I'm testing now.\n\n\nIt works.",
     "created_at": "2010-10-07T12:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -525,6 +533,7 @@ archive/issue_comments_098569.json:
 Replying to [comment:17 mpatel]:
 > I've added a patch that I'm testing now.
 
+
 It works.
 
 
@@ -534,7 +543,7 @@ It works.
 archive/issue_comments_098570.json:
 ```json
 {
-    "body": "I think we'll need to open a new ticket for making this link\n\n```\nln -sf \"$SAGE_ROOT/devel/sagenb-main\" \"$SAGE_ROOT/devel/sagenb\" \n```\n\nrelative.  Otherwise, Sage won't start after I move/rename the root directory.",
+    "body": "I think we'll need to open a new ticket for making this link\n\n```\nln -sf \"$SAGE_ROOT/devel/sagenb-main\" \"$SAGE_ROOT/devel/sagenb\" \n```\nrelative.  Otherwise, Sage won't start after I move/rename the root directory.",
     "created_at": "2010-10-07T12:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -548,7 +557,6 @@ I think we'll need to open a new ticket for making this link
 ```
 ln -sf "$SAGE_ROOT/devel/sagenb-main" "$SAGE_ROOT/devel/sagenb" 
 ```
-
 relative.  Otherwise, Sage won't start after I move/rename the root directory.
 
 
@@ -576,7 +584,7 @@ And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?
 archive/issue_comments_098572.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?\n\nSee #10097.",
+    "body": "Replying to [comment:20 mpatel]:\n> And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?\n\n\nSee #10097.",
     "created_at": "2010-10-07T22:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
@@ -587,5 +595,6 @@ archive/issue_comments_098572.json:
 
 Replying to [comment:20 mpatel]:
 > And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?
+
 
 See #10097.

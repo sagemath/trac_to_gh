@@ -3,7 +3,7 @@
 archive/issues_001158.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
+    "body": "Assignee: @williamstein\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
     "created_at": "2007-11-12T22:07:27Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 Some mathematical functions automatically evaluate to floating-point, even for a symbolic input
 (integer or variable):
-
 
 ```
 sage: Ei(10)
@@ -46,7 +45,6 @@ sage: bessel_J(0,x)
 
 <type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.
 ```
-
 
 In my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).
 
@@ -150,7 +148,7 @@ This is fixed in the new symbolics with #5777.
 archive/issue_comments_007048.json:
 ```json
 {
-    "body": "What is the status of this ticket? Can it be closed as fixed? In Sage 4.1, I get this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1171, 0))\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/12800/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    753             C = ComplexField(prec)\n    754             nu = C(nu)\n--> 755             z = C(z)\n    756             K = C\n    757         if nu == 0:\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/complex_field.pyc in __call__(self, x, im)\n    265         if im is not None:\n    266             x = x, im\n--> 267         return Parent.__call__(self, x)\n    268 \n    269     def _element_constructor_(self, x):\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/complex_field.pyc in _element_constructor_(self, x)\n    289 \n    290             try:\n--> 291                 return x._complex_mpfr_field_( self )\n    292             except AttributeError:\n    293                 pass\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._complex_mpfr_field_ (sage/symbolic/expression.cpp:5371)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._eval_self (sage/symbolic/expression.cpp:4825)()\n\nTypeError: Cannot evaluate symbolic expression to a numeric value.\n```\n",
+    "body": "What is the status of this ticket? Can it be closed as fixed? In Sage 4.1, I get this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1171, 0))\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/12800/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    753             C = ComplexField(prec)\n    754             nu = C(nu)\n--> 755             z = C(z)\n    756             K = C\n    757         if nu == 0:\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/complex_field.pyc in __call__(self, x, im)\n    265         if im is not None:\n    266             x = x, im\n--> 267         return Parent.__call__(self, x)\n    268 \n    269     def _element_constructor_(self, x):\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/complex_field.pyc in _element_constructor_(self, x)\n    289 \n    290             try:\n--> 291                 return x._complex_mpfr_field_( self )\n    292             except AttributeError:\n    293                 pass\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._complex_mpfr_field_ (sage/symbolic/expression.cpp:5371)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._eval_self (sage/symbolic/expression.cpp:4825)()\n\nTypeError: Cannot evaluate symbolic expression to a numeric value.\n```",
     "created_at": "2009-07-26T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
@@ -215,13 +213,12 @@ TypeError: Cannot evaluate symbolic expression to a numeric value.
 
 
 
-
 ---
 
 archive/issue_comments_007049.json:
 ```json
 {
-    "body": "> What is the status of this ticket? Can it be closed as fixed?\n\nno, the status is still the same (here with 3.4 since I cannot compile 4.1 from source on my laptop, but I guess the behaviour\nin 4.1 is still the same):\n\n```\nsage: sin(10)\nsin(10)\nsage: Ei(10)\n2492.22897624\nsage: sin(x)\nsin(x)\nsage: Ei(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/zimmerma/.sage/temp/toto.loria.fr/6274/_home_zimmerma__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-3.4/sage/local/lib/python2.5/site-packages/sage/functions/transcendental.pyc in Ei(z)\n\nTypeError: complex() argument must be a string or a number\n```\n\nTo be coherent, Ei(10) should return Ei(10) as sin(10) returns sin(10), and Ei(x) should return Ei(x) as sin(x) does return sin(x).",
+    "body": "> What is the status of this ticket? Can it be closed as fixed?\n\n\nno, the status is still the same (here with 3.4 since I cannot compile 4.1 from source on my laptop, but I guess the behaviour\nin 4.1 is still the same):\n\n```\nsage: sin(10)\nsin(10)\nsage: Ei(10)\n2492.22897624\nsage: sin(x)\nsin(x)\nsage: Ei(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/zimmerma/.sage/temp/toto.loria.fr/6274/_home_zimmerma__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-3.4/sage/local/lib/python2.5/site-packages/sage/functions/transcendental.pyc in Ei(z)\n\nTypeError: complex() argument must be a string or a number\n```\nTo be coherent, Ei(10) should return Ei(10) as sin(10) returns sin(10), and Ei(x) should return Ei(x) as sin(x) does return sin(x).",
     "created_at": "2009-07-27T06:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
@@ -231,6 +228,7 @@ archive/issue_comments_007049.json:
 ```
 
 > What is the status of this ticket? Can it be closed as fixed?
+
 
 no, the status is still the same (here with 3.4 since I cannot compile 4.1 from source on my laptop, but I guess the behaviour
 in 4.1 is still the same):
@@ -252,7 +250,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: complex() argument must be a string or a number
 ```
-
 To be coherent, Ei(10) should return Ei(10) as sin(10) returns sin(10), and Ei(x) should return Ei(x) as sin(x) does return sin(x).
 
 
@@ -262,7 +259,7 @@ To be coherent, Ei(10) should return Ei(10) as sin(10) returns sin(10), and Ei(x
 archive/issue_comments_007050.json:
 ```json
 {
-    "body": "OK, I get the same inconsistent behaviour:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sin(10)\nsin(10)\nsage: Ei(10)\n2492.22897624\nsage: sin(x)\nsin(x)\nsage: Ei(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/.sage/temp/sage.math.washington.edu/32665/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/functions/transcendental.pyc in Ei(z)\n    261     \"\"\"\n    262     import scipy.special, math\n--> 263     return CDF(-scipy.special.exp1(-complex(z)) + complex(0,math.pi))\n    264 \n    265 def Li(x, eps_rel=None, err_bound=False):\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__complex__ (sage/symbolic/expression.cpp:5609)()\n\nTypeError: unable to simplify to complex approximation\n```\n",
+    "body": "OK, I get the same inconsistent behaviour:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sin(10)\nsin(10)\nsage: Ei(10)\n2492.22897624\nsage: sin(x)\nsin(x)\nsage: Ei(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/.sage/temp/sage.math.washington.edu/32665/_home_mvngu__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/functions/transcendental.pyc in Ei(z)\n    261     \"\"\"\n    262     import scipy.special, math\n--> 263     return CDF(-scipy.special.exp1(-complex(z)) + complex(0,math.pi))\n    264 \n    265 def Li(x, eps_rel=None, err_bound=False):\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__complex__ (sage/symbolic/expression.cpp:5609)()\n\nTypeError: unable to simplify to complex approximation\n```",
     "created_at": "2009-07-27T06:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
@@ -300,7 +297,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unable to simplify to complex approximation
 ```
-
 
 
 
@@ -481,7 +477,7 @@ Changing status from new to needs_review.
 archive/issue_comments_007058.json:
 ```json
 {
-    "body": "We now have\n\n```\nsage: Ei(10)\nEi(10)\n```\n\nbut the rest aren't there yet...\n\nBut the problem is that this ticket is WAY too broad, at least in the current framework of how we deal with tickets.  We now have an entire [metapage on the wiki](symbolics-functions) devoted to this topic!   Bessel J is #4102, log gamma is #10075, etc.  \n\nSo I recommend that this ticket be closed as far too broad (in retrospect - somehow it seemed easier two years ago!) and adequately replaced by a slew of tickets already opened.",
+    "body": "We now have\n\n```\nsage: Ei(10)\nEi(10)\n```\nbut the rest aren't there yet...\n\nBut the problem is that this ticket is WAY too broad, at least in the current framework of how we deal with tickets.  We now have an entire [metapage on the wiki](symbolics-functions) devoted to this topic!   Bessel J is #4102, log gamma is #10075, etc.  \n\nSo I recommend that this ticket be closed as far too broad (in retrospect - somehow it seemed easier two years ago!) and adequately replaced by a slew of tickets already opened.",
     "created_at": "2012-01-26T03:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
@@ -496,7 +492,6 @@ We now have
 sage: Ei(10)
 Ei(10)
 ```
-
 but the rest aren't there yet...
 
 But the problem is that this ticket is WAY too broad, at least in the current framework of how we deal with tickets.  We now have an entire [metapage on the wiki](symbolics-functions) devoted to this topic!   Bessel J is #4102, log gamma is #10075, etc.  

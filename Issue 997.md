@@ -3,7 +3,7 @@
 archive/issues_000997.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nA command like\n\n```\nfind . -type f | xargs touch\n```\n\nwhich will touch all files (without spaces) in all subdirectories\nmay be useful.\n\nSorry this ticket is somewhat vague.  The point is mainly that\n\"sage -br\" causes rebuilding everything too often, e.g., after\nextracting a binary, or always if your machine has a huge clock skew, e..g, if your machine things it is a few days before the\ntimestamps on a release that you just downloaded or installed. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/997\n\n",
+    "body": "Assignee: cwitty\n\nA command like\n\n```\nfind . -type f | xargs touch\n```\nwhich will touch all files (without spaces) in all subdirectories\nmay be useful.\n\nSorry this ticket is somewhat vague.  The point is mainly that\n\"sage -br\" causes rebuilding everything too often, e.g., after\nextracting a binary, or always if your machine has a huge clock skew, e..g, if your machine things it is a few days before the\ntimestamps on a release that you just downloaded or installed. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/997\n\n",
     "created_at": "2007-10-25T06:37:32Z",
     "labels": [
         "component: misc"
@@ -22,7 +22,6 @@ A command like
 ```
 find . -type f | xargs touch
 ```
-
 which will touch all files (without spaces) in all subdirectories
 may be useful.
 
@@ -78,7 +77,7 @@ Resolution: invalid
 archive/issue_comments_006052.json:
 ```json
 {
-    "body": "\n```\n[08:19] <mabshoff> wstein: didn't you do something like #997?\n[08:19] <wstein> yes, but I had to revert what I did do, which was really dumb.\n[08:19] <wstein> You can close that as invalid.\n```\n\nCheers,\n\nMichael",
+    "body": "```\n[08:19] <mabshoff> wstein: didn't you do something like #997?\n[08:19] <wstein> yes, but I had to revert what I did do, which was really dumb.\n[08:19] <wstein> You can close that as invalid.\n```\nCheers,\n\nMichael",
     "created_at": "2007-10-29T07:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/997",
     "type": "issue_comment",
@@ -87,13 +86,11 @@ archive/issue_comments_006052.json:
 }
 ```
 
-
 ```
 [08:19] <mabshoff> wstein: didn't you do something like #997?
 [08:19] <wstein> yes, but I had to revert what I did do, which was really dumb.
 [08:19] <wstein> You can close that as invalid.
 ```
-
 Cheers,
 
 Michael

@@ -3,7 +3,7 @@
 archive/issues_008670.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nCC:  abmasse @videlec @robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse @videlec @robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
     "created_at": "2010-04-11T12:10:06Z",
     "labels": [
         "component: combinatorics"
@@ -25,7 +25,6 @@ This patch introduces 3 projection functions for word path. It also adds 1 funct
 
 The first 1000 points of the Rauzy fractal :
 
-
 ```
     sage: s = WordMorphism('1->12,2->13,3->1')
     sage: D = s.fixed_point('1')
@@ -34,7 +33,6 @@ The first 1000 points of the Rauzy fractal :
     sage: w = P(D[:1000])
     sage: w.projected_plot(v)
 ```
-
 
 See more examples in doctests.
 
@@ -85,7 +83,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078762.json:
 ```json
 {
-    "body": "There are some limit case problems :\n\n\n```\nsage: from sage.plot.plot3d.transform import *\nsage: rotate_vector_on_axis((1,0,0), 0)\nTraceback (most recent call last):\n...\nZeroDivisionError: Rational division by zero\n```\n\n\nWill post a new patch soon.",
+    "body": "There are some limit case problems :\n\n```\nsage: from sage.plot.plot3d.transform import *\nsage: rotate_vector_on_axis((1,0,0), 0)\nTraceback (most recent call last):\n...\nZeroDivisionError: Rational division by zero\n```\n\nWill post a new patch soon.",
     "created_at": "2010-04-13T11:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ archive/issue_comments_078762.json:
 
 There are some limit case problems :
 
-
 ```
 sage: from sage.plot.plot3d.transform import *
 sage: rotate_vector_on_axis((1,0,0), 0)
@@ -104,7 +101,6 @@ Traceback (most recent call last):
 ...
 ZeroDivisionError: Rational division by zero
 ```
-
 
 Will post a new patch soon.
 
@@ -171,7 +167,7 @@ Does not depend on any known patch. Applies on 4.3.4.
 archive/issue_comments_078766.json:
 ```json
 {
-    "body": "Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by @saliola created at 2010-06-23 16:04:26\n\n1. Your definition of Pisot eigenvector is ambiguous.\n\n```\nReturns the left eigenvector of the incidence matrix associated\nto the largest eigenvalue (in absolute value).\n```\n\nIt is possible that there are multiple eigenvalues with the same absolute value:\n\n```\nsage: mu = WordMorphism('a->c,b->c,c->ab')\nsage: m = matrix(mu); m\n[0 0 1]\n[0 0 1]\n[1 1 0]\nsage: m.eigenvalues()\n[0, -1.414213562373095?, 1.414213562373095?]\n```\n\nIt is not clear which eigenvector gets returned here.\n\nAlso, there may be more than one eigenvector associated to your \"maximal\" eigenvalue, and your method only returns one eigenvector:\n\n```\nsage: mu = WordMorphism('a->a,b->b,c->abc')\nsage: mu.pisot_eigenvector_left()\n(1, -1, 0)\nsage: m = matrix(mu); m\n[1 0 1]\n[0 1 1]\n[0 0 1]\nsage: m.eigenspaces_left()\n[\n(1, Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[ 1 -1  0]\n[ 0  0  1])\n]\n```\n\n\n2. The method `directive_vector` should include a definition of what the directive vector is.\n\n3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:\n\n```\nif compute_in_ring is True:\n    v = vector(ring, v)\n```\n",
+    "body": "Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by @saliola created at 2010-06-23 16:04:26\n\n1. Your definition of Pisot eigenvector is ambiguous.\n\n```\nReturns the left eigenvector of the incidence matrix associated\nto the largest eigenvalue (in absolute value).\n```\nIt is possible that there are multiple eigenvalues with the same absolute value:\n\n```\nsage: mu = WordMorphism('a->c,b->c,c->ab')\nsage: m = matrix(mu); m\n[0 0 1]\n[0 0 1]\n[1 1 0]\nsage: m.eigenvalues()\n[0, -1.414213562373095?, 1.414213562373095?]\n```\nIt is not clear which eigenvector gets returned here.\n\nAlso, there may be more than one eigenvector associated to your \"maximal\" eigenvalue, and your method only returns one eigenvector:\n\n```\nsage: mu = WordMorphism('a->a,b->b,c->abc')\nsage: mu.pisot_eigenvector_left()\n(1, -1, 0)\nsage: m = matrix(mu); m\n[1 0 1]\n[0 1 1]\n[0 0 1]\nsage: m.eigenspaces_left()\n[\n(1, Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[ 1 -1  0]\n[ 0  0  1])\n]\n```\n\n2. The method `directive_vector` should include a definition of what the directive vector is.\n\n3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:\n\n```\nif compute_in_ring is True:\n    v = vector(ring, v)\n```",
     "created_at": "2010-06-23T16:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
@@ -188,7 +184,6 @@ Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/
 Returns the left eigenvector of the incidence matrix associated
 to the largest eigenvalue (in absolute value).
 ```
-
 It is possible that there are multiple eigenvalues with the same absolute value:
 
 ```
@@ -200,7 +195,6 @@ sage: m = matrix(mu); m
 sage: m.eigenvalues()
 [0, -1.414213562373095?, 1.414213562373095?]
 ```
-
 It is not clear which eigenvector gets returned here.
 
 Also, there may be more than one eigenvector associated to your "maximal" eigenvalue, and your method only returns one eigenvector:
@@ -222,7 +216,6 @@ User basis matrix:
 ]
 ```
 
-
 2. The method `directive_vector` should include a definition of what the directive vector is.
 
 3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:
@@ -231,7 +224,6 @@ User basis matrix:
 if compute_in_ring is True:
     v = vector(ring, v)
 ```
-
 
 
 

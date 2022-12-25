@@ -3,7 +3,7 @@
 archive/issues_005846.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: p-adic L-series\n\nWhen looking up cached values of the p-adic L-series of an elliptic curve, there is a problem with the precision (as a powe-series in T) :\n\n\n```\nsage: E = EllipticCurve('389a')\nsage: p = 3\nsage: L = E.padic_lseries(p)\nsage: L.series(3)\nO(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T^4 + O(T^5)\nsage: L.series(3,prec=6)\nO(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T^4 + O(T^5)\n```\n\n\nThe attached patch changes the inequality sign in question.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5846\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: p-adic L-series\n\nWhen looking up cached values of the p-adic L-series of an elliptic curve, there is a problem with the precision (as a powe-series in T) :\n\n```\nsage: E = EllipticCurve('389a')\nsage: p = 3\nsage: L = E.padic_lseries(p)\nsage: L.series(3)\nO(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T^4 + O(T^5)\nsage: L.series(3,prec=6)\nO(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T^4 + O(T^5)\n```\n\nThe attached patch changes the inequality sign in question.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5846\n\n",
     "created_at": "2009-04-21T14:27:11Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ Keywords: p-adic L-series
 
 When looking up cached values of the p-adic L-series of an elliptic curve, there is a problem with the precision (as a powe-series in T) :
 
-
 ```
 sage: E = EllipticCurve('389a')
 sage: p = 3
@@ -33,7 +32,6 @@ O(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T
 sage: L.series(3,prec=6)
 O(3^5) + O(3^2)*T + (2 + 2*3 + O(3^2))*T^2 + (2 + O(3))*T^3 + (1 + 3 + O(3^2))*T^4 + O(T^5)
 ```
-
 
 The attached patch changes the inequality sign in question.
 

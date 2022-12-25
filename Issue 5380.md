@@ -181,7 +181,7 @@ file uploaded and everything working. just too bad that trac doesn't support sea
 archive/issue_comments_041351.json:
 ```json
 {
-    "body": "Replying to [comment:4 schilly]:\n> file uploaded and everything working. just too bad that trac doesn't support\n> searching by username, just this full text stuff, but indeed nice to be able\n> to see where he/she had the fingers in :)\nOK, with `contributors.xml` uploaded, I see that visitors to the devmap are able to search for a developer's contribution. If the said XML file contains a developer's trac username, then the visitor would be presented with a list of (possible) contributions made by the developer in question. However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\n\n\nHowever, I still see a number of weird things in the trac search functionalities. Disclaimer: I'm not an expert on how the trac server searches for a developer's contributions.\n1. In cases where a developer's trac username has not appeared on any trac tickets, the search is still performed using the developer's username. I think this would likely result in a misleading list of search results, and the said developer's contribution on trac tickets would be missed by the search. A case in point is Maite Aranes, who has the username \"mtaranes\". After clicking on the link \"search contributions\", the search result is just Maite's name highlighted on the page\n \n \n\n http://trac.sagemath.org/sage_trac/wiki/WikiStart\n  \n \n\n  From the release note of Sage 3.3 and release tour, I'm 99.9% certain that Maite has contributed code in that release, in particular the ticket #4831.\n1. If a developer's trac username is two characters in length, then the search query returns a \"Search Error\" message, with the explanation\n   {{{\n   Search query too short. Query must be at least 3 characters long.\n   }}}\n   For example, Yi Qiang's username is \"yi\" and a search of his contribution returns a search error. This is weird, because Yi has made substantial contributions to the dsage package, and I think he's the original developer of dsage. I'm not sure how to fix this. However, an ad hoc fix might be to have the following policy for trac usernames: i.e. a trac username must be at least 3 characters in length. Perhaps someone can suggest a better workaround.\n\nApart from the above comments, someone else should verify/review this ticket and the updated devmap.",
+    "body": "Replying to [comment:4 schilly]:\n> file uploaded and everything working. just too bad that trac doesn't support\n> searching by username, just this full text stuff, but indeed nice to be able\n> to see where he/she had the fingers in :)\n\nOK, with `contributors.xml` uploaded, I see that visitors to the devmap are able to search for a developer's contribution. If the said XML file contains a developer's trac username, then the visitor would be presented with a list of (possible) contributions made by the developer in question. However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\n\n\nHowever, I still see a number of weird things in the trac search functionalities. Disclaimer: I'm not an expert on how the trac server searches for a developer's contributions.\n1. In cases where a developer's trac username has not appeared on any trac tickets, the search is still performed using the developer's username. I think this would likely result in a misleading list of search results, and the said developer's contribution on trac tickets would be missed by the search. A case in point is Maite Aranes, who has the username \"mtaranes\". After clicking on the link \"search contributions\", the search result is just Maite's name highlighted on the page\n \n \n\n http://trac.sagemath.org/sage_trac/wiki/WikiStart\n  \n \n\n  From the release note of Sage 3.3 and release tour, I'm 99.9% certain that Maite has contributed code in that release, in particular the ticket #4831.\n1. If a developer's trac username is two characters in length, then the search query returns a \"Search Error\" message, with the explanation\n   {{{\n   Search query too short. Query must be at least 3 characters long.\n   }}}\n   For example, Yi Qiang's username is \"yi\" and a search of his contribution returns a search error. This is weird, because Yi has made substantial contributions to the dsage package, and I think he's the original developer of dsage. I'm not sure how to fix this. However, an ad hoc fix might be to have the following policy for trac usernames: i.e. a trac username must be at least 3 characters in length. Perhaps someone can suggest a better workaround.\n\nApart from the above comments, someone else should verify/review this ticket and the updated devmap.",
     "created_at": "2009-02-28T01:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -194,6 +194,7 @@ Replying to [comment:4 schilly]:
 > file uploaded and everything working. just too bad that trac doesn't support
 > searching by username, just this full text stuff, but indeed nice to be able
 > to see where he/she had the fingers in :)
+
 OK, with `contributors.xml` uploaded, I see that visitors to the devmap are able to search for a developer's contribution. If the said XML file contains a developer's trac username, then the visitor would be presented with a list of (possible) contributions made by the developer in question. However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.
 
 
@@ -262,7 +263,7 @@ archive/issue_events_012539.json:
 archive/issue_comments_041353.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n> However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\ni wanted to find a way to search for contributions where no trac account is known. That's why i take the real name. Plan B would have been to only include the link for those, where a trac account name is given and not for all the others. Testing some names seemed to be good enough to include the real name for those where no trac account is given...\n\nMixing trac account name and real name turned out to be a bad idea. In that case, sometimes nothing at all was found.\n\n> \"yi\" and a search of his contribution returns a search error. \n\nyeahr well, trac search isn't good. probably searching with google (restricted site search on trac.sagemath.org) would be better - at least for two letter words like this one ;)\n\nharald",
+    "body": "Replying to [comment:5 mvngu]:\n> However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\n\ni wanted to find a way to search for contributions where no trac account is known. That's why i take the real name. Plan B would have been to only include the link for those, where a trac account name is given and not for all the others. Testing some names seemed to be good enough to include the real name for those where no trac account is given...\n\nMixing trac account name and real name turned out to be a bad idea. In that case, sometimes nothing at all was found.\n\n> \"yi\" and a search of his contribution returns a search error. \n\n\nyeahr well, trac search isn't good. probably searching with google (restricted site search on trac.sagemath.org) would be better - at least for two letter words like this one ;)\n\nharald",
     "created_at": "2009-03-01T17:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -274,11 +275,13 @@ archive/issue_comments_041353.json:
 Replying to [comment:5 mvngu]:
 > However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.
 
+
 i wanted to find a way to search for contributions where no trac account is known. That's why i take the real name. Plan B would have been to only include the link for those, where a trac account name is given and not for all the others. Testing some names seemed to be good enough to include the real name for those where no trac account is given...
 
 Mixing trac account name and real name turned out to be a bad idea. In that case, sometimes nothing at all was found.
 
 > "yi" and a search of his contribution returns a search error. 
+
 
 yeahr well, trac search isn't good. probably searching with google (restricted site search on trac.sagemath.org) would be better - at least for two letter words like this one ;)
 
@@ -392,7 +395,7 @@ That's because the trac search function mistakens the trac usernames of these pe
 archive/issue_comments_041358.json:
 ```json
 {
-    "body": "Replying to [comment:8 mvngu]:\n> The updated contributors list **contributors.xml**...\n\nI've updated the website with that file. Changes looked good to me.",
+    "body": "Replying to [comment:8 mvngu]:\n> The updated contributors list **contributors.xml**...\n\n\nI've updated the website with that file. Changes looked good to me.",
     "created_at": "2009-03-16T11:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -404,6 +407,7 @@ archive/issue_comments_041358.json:
 Replying to [comment:8 mvngu]:
 > The updated contributors list **contributors.xml**...
 
+
 I've updated the website with that file. Changes looked good to me.
 
 
@@ -413,7 +417,7 @@ I've updated the website with that file. Changes looked good to me.
 archive/issue_comments_041359.json:
 ```json
 {
-    "body": "Replying to [comment:9 schilly]:\n> Replying to [comment:8 mvngu]:\n> > The updated contributors list **contributors.xml**...\n> \n> I've updated the website with that file. Changes looked good to me.\n\nChanging it to a positive review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 schilly]:\n> Replying to [comment:8 mvngu]:\n> > The updated contributors list **contributors.xml**...\n\n> \n> I've updated the website with that file. Changes looked good to me.\n\n\nChanging it to a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-16T15:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
@@ -425,8 +429,10 @@ archive/issue_comments_041359.json:
 Replying to [comment:9 schilly]:
 > Replying to [comment:8 mvngu]:
 > > The updated contributors list **contributors.xml**...
+
 > 
 > I've updated the website with that file. Changes looked good to me.
+
 
 Changing it to a positive review.
 

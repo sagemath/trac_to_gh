@@ -57,7 +57,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069461.json:
 ```json
 {
-    "body": "Thanks Florent, and thanks for using this occasion to cleanup my code!\n\nCan you fix the copyright dates? Mine should be 2009, and yours 2010\n\nI like the idea of using Python's standard convention for private attributes; on the other hand, I am a bit worried about emulating Python's mechanism. In particular, we could eventually get in trouble with the class name hacking we do for pickling:\n\n```\n   sage: Sets.ParentMethods.__name__\n   'Sets.ParentMethods'\n```\n\nI haven't found a way to *use* Python mechanism. So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n\n(I also prefer ``private`` to ``no_inherit``).\n\nCheers,",
+    "body": "Thanks Florent, and thanks for using this occasion to cleanup my code!\n\nCan you fix the copyright dates? Mine should be 2009, and yours 2010\n\nI like the idea of using Python's standard convention for private attributes; on the other hand, I am a bit worried about emulating Python's mechanism. In particular, we could eventually get in trouble with the class name hacking we do for pickling:\n\n```\n   sage: Sets.ParentMethods.__name__\n   'Sets.ParentMethods'\n```\nI haven't found a way to *use* Python mechanism. So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n\n(I also prefer ``private`` to ``no_inherit``).\n\nCheers,",
     "created_at": "2010-01-18T22:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
@@ -76,7 +76,6 @@ I like the idea of using Python's standard convention for private attributes; on
    sage: Sets.ParentMethods.__name__
    'Sets.ParentMethods'
 ```
-
 I haven't found a way to *use* Python mechanism. So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?
 
 (I also prefer ``private`` to ``no_inherit``).
@@ -144,7 +143,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069465.json:
 ```json
 {
-    "body": "Replying to [comment:2 nthiery]:\n> Thanks Florent, and thanks for using this occasion to cleanup my code!\n> \n> Can you fix the copyright dates? Mine should be 2009, and yours 2010\n> \n> [...]\n> So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n> \n> (I also prefer ``private`` to ``no_inherit``).\n\nI just uploaded a new patch which addresses all these remarks... Please re-review.",
+    "body": "Replying to [comment:2 nthiery]:\n> Thanks Florent, and thanks for using this occasion to cleanup my code!\n> \n> Can you fix the copyright dates? Mine should be 2009, and yours 2010\n> \n> [...]\n> So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n> \n> (I also prefer ``private`` to ``no_inherit``).\n\n\nI just uploaded a new patch which addresses all these remarks... Please re-review.",
     "created_at": "2010-01-19T05:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
@@ -162,6 +161,7 @@ Replying to [comment:2 nthiery]:
 > So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?
 > 
 > (I also prefer ``private`` to ``no_inherit``).
+
 
 I just uploaded a new patch which addresses all these remarks... Please re-review.
 
@@ -243,7 +243,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069469.json:
 ```json
 {
-    "body": "Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by @hivert created at 2010-01-19 11:50:38\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
+    "body": "Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by @hivert created at 2010-01-19 11:50:38\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
     "created_at": "2010-01-19T11:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
@@ -256,6 +256,7 @@ Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments
 
 Replying to [comment:4 nthiery]:
 > Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!
+
 
 I added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.
 

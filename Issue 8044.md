@@ -215,7 +215,7 @@ stuff (eg, Weyl groups). I did look at the permutation group aspect and positive
 archive/issue_comments_070184.json:
 ```json
 {
-    "body": "Replying to [comment:7 wdj]:\n> Applies fine to 4.3.2.a0 and passes sage -t (except those 2 apparently singular-related tests which failed before).\n> \n> I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category \n> stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.\n\nThanks much for your review!\n\nFlorent: could you have a look at the Weyl group + Cayley graph part?\nDavid: did you check the matrix part? If not, do you mind handling it?\nJavier: could you look at the category part?",
+    "body": "Replying to [comment:7 wdj]:\n> Applies fine to 4.3.2.a0 and passes sage -t (except those 2 apparently singular-related tests which failed before).\n> \n> I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category \n> stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.\n\n\nThanks much for your review!\n\nFlorent: could you have a look at the Weyl group + Cayley graph part?\nDavid: did you check the matrix part? If not, do you mind handling it?\nJavier: could you look at the category part?",
     "created_at": "2010-01-31T20:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -230,6 +230,7 @@ Replying to [comment:7 wdj]:
 > I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category 
 > stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.
 
+
 Thanks much for your review!
 
 Florent: could you have a look at the Weyl group + Cayley graph part?
@@ -243,7 +244,7 @@ Javier: could you look at the category part?
 archive/issue_comments_070185.json:
 ```json
 {
-    "body": "Replying to [comment:8 nthiery]:\n> Replying to [comment:7 wdj]:\n> > Applies fine to 4.3.2.a0 and passes sage -t (except those 2 apparently singular-related tests which failed before).\n> > \n> > I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category \n> > stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.\n> \n> Thanks much for your review!\n> \n> Florent: could you have a look at the Weyl group + Cayley graph part?\n> David: did you check the matrix part? If not, do you mind handling it?\n\n\nYes, I looked at it and also give that part a positive review. I like the way you handled \nover different fields.\n\n\n> Javier: could you look at the category part?\n>",
+    "body": "Replying to [comment:8 nthiery]:\n> Replying to [comment:7 wdj]:\n> > Applies fine to 4.3.2.a0 and passes sage -t (except those 2 apparently singular-related tests which failed before).\n> > \n> > I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category \n> > stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.\n\n> \n> Thanks much for your review!\n> \n> Florent: could you have a look at the Weyl group + Cayley graph part?\n> David: did you check the matrix part? If not, do you mind handling it?\n\n\n\nYes, I looked at it and also give that part a positive review. I like the way you handled \nover different fields.\n\n\n> Javier: could you look at the category part?\n\n>",
     "created_at": "2010-01-31T22:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -258,6 +259,7 @@ Replying to [comment:8 nthiery]:
 > > 
 > > I did not test sage -optional nor did I look carefully at how the category framework fits in with the rest of the category 
 > > stuff (eg, Weyl groups). I did look at the permutation group aspect and positive review for that part. Was someone else going to look at the rest (Javier, vengoroso`@`gmail.com)? If not, please let me know.
+
 > 
 > Thanks much for your review!
 > 
@@ -265,11 +267,13 @@ Replying to [comment:8 nthiery]:
 > David: did you check the matrix part? If not, do you mind handling it?
 
 
+
 Yes, I looked at it and also give that part a positive review. I like the way you handled 
 over different fields.
 
 
 > Javier: could you look at the category part?
+
 >
 
 
@@ -279,7 +283,7 @@ over different fields.
 archive/issue_comments_070186.json:
 ```json
 {
-    "body": "Replying to [comment:9 wdj]:\n> > David: did you check the matrix part? If not, do you mind handling it?\n> \n> Yes, I looked at it and also give that part a positive review. \n\nThanks!\n\n> I like the way you handled over different fields.\n\n:-) \n\nBeing able to choose at run time the category, and therefore the class hierarchy, as we could do in MuPAD, was one of my big incentive for writing the category code, and going for dynamic classes.",
+    "body": "Replying to [comment:9 wdj]:\n> > David: did you check the matrix part? If not, do you mind handling it?\n\n> \n> Yes, I looked at it and also give that part a positive review. \n\n\nThanks!\n\n> I like the way you handled over different fields.\n\n\n:-) \n\nBeing able to choose at run time the category, and therefore the class hierarchy, as we could do in MuPAD, was one of my big incentive for writing the category code, and going for dynamic classes.",
     "created_at": "2010-01-31T22:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -290,12 +294,15 @@ archive/issue_comments_070186.json:
 
 Replying to [comment:9 wdj]:
 > > David: did you check the matrix part? If not, do you mind handling it?
+
 > 
 > Yes, I looked at it and also give that part a positive review. 
+
 
 Thanks!
 
 > I like the way you handled over different fields.
+
 
 :-) 
 
@@ -308,7 +315,7 @@ Being able to choose at run time the category, and therefore the class hierarchy
 archive/issue_comments_070187.json:
 ```json
 {
-    "body": "The category part looks fine to me. This is an amazing patch, btw!\n\nI am getting some doctests failures:\n\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/tutorial/tour_advanced.rst\"\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_advanced.rst\"\n        sage -t  \"devel/sage/sage/categories/finite_groups.py\"\n        sage -t  \"devel/sage/sage/categories/finite_permutation_groups.py\"\n        sage -t  \"devel/sage/sage/groups/pari_group.py\"\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup_named.py\"\n        sage -t  \"devel/sage/sage/interfaces/r.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/groebner_fan.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n```\n\n\nthough they don't seem too serious.\n\nThere are a couple of \"The category of (multiplicative) finite semigroups\" in the docstrings that should be corrected.\n\nFor the rest, assuming that the doctest pass (it might be something with my sage, will try with a clean install at the office in a couple of hours), positive review.",
+    "body": "The category part looks fine to me. This is an amazing patch, btw!\n\nI am getting some doctests failures:\n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/tutorial/tour_advanced.rst\"\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_advanced.rst\"\n        sage -t  \"devel/sage/sage/categories/finite_groups.py\"\n        sage -t  \"devel/sage/sage/categories/finite_permutation_groups.py\"\n        sage -t  \"devel/sage/sage/groups/pari_group.py\"\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup_named.py\"\n        sage -t  \"devel/sage/sage/interfaces/r.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/groebner_fan.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n```\n\nthough they don't seem too serious.\n\nThere are a couple of \"The category of (multiplicative) finite semigroups\" in the docstrings that should be corrected.\n\nFor the rest, assuming that the doctest pass (it might be something with my sage, will try with a clean install at the office in a couple of hours), positive review.",
     "created_at": "2010-02-01T09:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -320,7 +327,6 @@ archive/issue_comments_070187.json:
 The category part looks fine to me. This is an amazing patch, btw!
 
 I am getting some doctests failures:
-
 
 
 ```
@@ -338,7 +344,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/rings/polynomial/groebner_fan.py"
         sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
 ```
-
 
 though they don't seem too serious.
 
@@ -373,7 +378,7 @@ Apply only this one
 archive/issue_comments_070189.json:
 ```json
 {
-    "body": "Replying to [comment:11 jlopez]:\n> The category part looks fine to me. This is an amazing patch, btw!\n\n:-)\n\n> I am getting some doctests failures:\n> \n> \n> {{{\n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>         sage -t  \"devel/sage/doc/en/tutorial/tour_advanced.rst\"\n>         sage -t  \"devel/sage/doc/fr/tutorial/tour_advanced.rst\"\n>         sage -t  \"devel/sage/sage/categories/finite_groups.py\"\n>         sage -t  \"devel/sage/sage/categories/finite_permutation_groups.py\"\n>         sage -t  \"devel/sage/sage/groups/pari_group.py\"\n>         sage -t  \"devel/sage/sage/groups/perm_gps/permgroup_named.py\"\n>         sage -t  \"devel/sage/sage/interfaces/r.py\"\n>         sage -t  \"devel/sage/sage/rings/polynomial/groebner_fan.py\"\n>         sage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n> }}}\n> \n> though they don't seem too serious.\n> (it might be something with my sage, will try with a clean install at the office in a couple of hours),\n\nFor the record, could you please post or attach here the complete log of the failures, even if it works at your office?\n\n> There are a couple of \"The category of (multiplicative) finite semigroups\" in the docstrings that should be corrected.\n\nOops, good catch. The updated patch fixes this.\n\n> For the rest, assuming that the doctest pass positive review.\n\nThanks!",
+    "body": "Replying to [comment:11 jlopez]:\n> The category part looks fine to me. This is an amazing patch, btw!\n\n\n:-)\n\n> I am getting some doctests failures:\n> \n> \n> \n> ```\n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>         sage -t  \"devel/sage/doc/en/tutorial/tour_advanced.rst\"\n>         sage -t  \"devel/sage/doc/fr/tutorial/tour_advanced.rst\"\n>         sage -t  \"devel/sage/sage/categories/finite_groups.py\"\n>         sage -t  \"devel/sage/sage/categories/finite_permutation_groups.py\"\n>         sage -t  \"devel/sage/sage/groups/pari_group.py\"\n>         sage -t  \"devel/sage/sage/groups/perm_gps/permgroup_named.py\"\n>         sage -t  \"devel/sage/sage/interfaces/r.py\"\n>         sage -t  \"devel/sage/sage/rings/polynomial/groebner_fan.py\"\n>         sage -t  \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n> ```\n> \n> though they don't seem too serious.\n> (it might be something with my sage, will try with a clean install at the office in a couple of hours),\n\n\nFor the record, could you please post or attach here the complete log of the failures, even if it works at your office?\n\n> There are a couple of \"The category of (multiplicative) finite semigroups\" in the docstrings that should be corrected.\n\n\nOops, good catch. The updated patch fixes this.\n\n> For the rest, assuming that the doctest pass positive review.\n\n\nThanks!",
     "created_at": "2010-02-01T10:04:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
@@ -385,12 +390,14 @@ archive/issue_comments_070189.json:
 Replying to [comment:11 jlopez]:
 > The category part looks fine to me. This is an amazing patch, btw!
 
+
 :-)
 
 > I am getting some doctests failures:
 > 
 > 
-> {{{
+> 
+> ```
 > ----------------------------------------------------------------------
 > The following tests failed:
 > 
@@ -404,18 +411,21 @@ Replying to [comment:11 jlopez]:
 >         sage -t  "devel/sage/sage/interfaces/r.py"
 >         sage -t  "devel/sage/sage/rings/polynomial/groebner_fan.py"
 >         sage -t  "devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py"
-> }}}
+> ```
 > 
 > though they don't seem too serious.
 > (it might be something with my sage, will try with a clean install at the office in a couple of hours),
+
 
 For the record, could you please post or attach here the complete log of the failures, even if it works at your office?
 
 > There are a couple of "The category of (multiplicative) finite semigroups" in the docstrings that should be corrected.
 
+
 Oops, good catch. The updated patch fixes this.
 
 > For the rest, assuming that the doctest pass positive review.
+
 
 Thanks!
 

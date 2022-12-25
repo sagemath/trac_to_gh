@@ -3,7 +3,7 @@
 archive/issues_007334.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  fmaltey@nerim.fr\n\nKeywords: logarithm\n\nCurrently there is no direct way in Sage to apply the transformation:\n\n```\nlog(x) + log(y) -> log(x*y)\n```\n\n\nThe attached patch fixes this by inserting a call to logcontract()\nin the definition of simplify_radical.\n\nNow the following works:\n\n```\nsage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)\nsage: f.simplify_full()\n0\n```\n\n\nBut I'm not sure if this is the right place for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7334\n\n",
+    "body": "Assignee: @burcin\n\nCC:  fmaltey@nerim.fr\n\nKeywords: logarithm\n\nCurrently there is no direct way in Sage to apply the transformation:\n\n```\nlog(x) + log(y) -> log(x*y)\n```\n\nThe attached patch fixes this by inserting a call to logcontract()\nin the definition of simplify_radical.\n\nNow the following works:\n\n```\nsage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)\nsage: f.simplify_full()\n0\n```\n\nBut I'm not sure if this is the right place for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7334\n\n",
     "created_at": "2009-10-28T17:32:35Z",
     "labels": [
         "component: calculus",
@@ -28,7 +28,6 @@ Currently there is no direct way in Sage to apply the transformation:
 log(x) + log(y) -> log(x*y)
 ```
 
-
 The attached patch fixes this by inserting a call to logcontract()
 in the definition of simplify_radical.
 
@@ -39,7 +38,6 @@ sage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)
 sage: f.simplify_full()
 0
 ```
-
 
 But I'm not sure if this is the right place for this.
 
@@ -148,7 +146,7 @@ I also think that it is better to keep the function logcontract separately from 
 archive/issue_comments_061229.json:
 ```json
 {
-    "body": "Replying to [comment:2 kcrisman]:\n> Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n\nDo not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n\n* domain of log(1-x)+log(1+x) is different from domain of log(1-x^2)\n\n* you should add a function which expands logarithms\n\nThanks \nRobert",
+    "body": "Replying to [comment:2 kcrisman]:\n> Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n\n\nDo not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n\n* domain of log(1-x)+log(1+x) is different from domain of log(1-x^2)\n\n* you should add a function which expands logarithms\n\nThanks \nRobert",
     "created_at": "2009-11-07T21:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -159,6 +157,7 @@ archive/issue_comments_061229.json:
 
 Replying to [comment:2 kcrisman]:
 > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  
+
 
 Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following
 
@@ -217,7 +216,7 @@ radical_simplify, simplify_radical, exp_simplify, simplify_exp
 archive/issue_comments_061232.json:
 ```json
 {
-    "body": "Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by @kcrisman created at 2009-11-08 01:58:15\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
+    "body": "Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by @kcrisman created at 2009-11-08 01:58:15\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n\n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
     "created_at": "2009-11-08T01:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -231,9 +230,11 @@ Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/
 Replying to [comment:4 robert.marik]:
 > Replying to [comment:2 kcrisman]:
 > > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  
+
 > 
 > Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following
 > 
+
 
 I disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  
 
@@ -326,7 +327,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061237.json:
 ```json
 {
-    "body": "Here are a few comments, which you can incorporate if you agree with them.  Overall, though, a VERY well documented patch, which tells the user exactly what they can and cannot do with it, options, etc.  Good work!\n\n1. typo of \"gowerns\" instead of \"governs\" in line 5268\n\n2. Maybe the if coeff is not None:\u00a0 should be set off in a block? For better readability and logical flow.\n\n3. Perhaps \n\n```\nsage: (log(5)-log(2)).simplify_log()\n-log(2) + log(5)\n```\n\nshould be included as a doctest, with a comment that this is not simplified (though it's not mathematically wrong, so I am okay with this being as is).  This will also encourage us to upgrade Maxima :)\n\n4. There are some duplicated doctests.  Is this intentional (i.e., to show it won't simplify any more)?  Since \n\n```\nsage: x,y,t=var('x y t') \nsage: f = log(x)+2*log(y)+1/2*log(t) \nsage: f.simplify_log()\nlog(x*y^2) + 1/2*log(t)\nsage: f\n1/2*log(t) + log(x) + 2*log(y)\n```\n\nit must have some other rationale.  Anyway, that should be clarified, or the duplicates should be removed, as this is confusing.",
+    "body": "Here are a few comments, which you can incorporate if you agree with them.  Overall, though, a VERY well documented patch, which tells the user exactly what they can and cannot do with it, options, etc.  Good work!\n\n1. typo of \"gowerns\" instead of \"governs\" in line 5268\n\n2. Maybe the if coeff is not None:\u00a0 should be set off in a block? For better readability and logical flow.\n\n3. Perhaps \n\n```\nsage: (log(5)-log(2)).simplify_log()\n-log(2) + log(5)\n```\nshould be included as a doctest, with a comment that this is not simplified (though it's not mathematically wrong, so I am okay with this being as is).  This will also encourage us to upgrade Maxima :)\n\n4. There are some duplicated doctests.  Is this intentional (i.e., to show it won't simplify any more)?  Since \n\n```\nsage: x,y,t=var('x y t') \nsage: f = log(x)+2*log(y)+1/2*log(t) \nsage: f.simplify_log()\nlog(x*y^2) + 1/2*log(t)\nsage: f\n1/2*log(t) + log(x) + 2*log(y)\n```\nit must have some other rationale.  Anyway, that should be clarified, or the duplicates should be removed, as this is confusing.",
     "created_at": "2009-11-10T14:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -347,7 +348,6 @@ Here are a few comments, which you can incorporate if you agree with them.  Over
 sage: (log(5)-log(2)).simplify_log()
 -log(2) + log(5)
 ```
-
 should be included as a doctest, with a comment that this is not simplified (though it's not mathematically wrong, so I am okay with this being as is).  This will also encourage us to upgrade Maxima :)
 
 4. There are some duplicated doctests.  Is this intentional (i.e., to show it won't simplify any more)?  Since 
@@ -360,7 +360,6 @@ log(x*y^2) + 1/2*log(t)
 sage: f
 1/2*log(t) + log(x) + 2*log(y)
 ```
-
 it must have some other rationale.  Anyway, that should be clarified, or the duplicates should be removed, as this is confusing.
 
 
@@ -560,7 +559,7 @@ archive/issue_comments_061247.json:
 archive/issue_comments_061248.json:
 ```json
 {
-    "body": "On Sage-4.3.2.alpha1, I get these doctest failures:\n\n\n```\nsage -t  devel/sage-s/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/berocal/sage/i686/sage-4.3.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 5837:\n    sage: (x*log(9)).simplify_log('all')\nExpected:\n    log(9^x)\nGot:\n    x*log(9)\n**********************************************************************\nFile \"/scratch/berocal/sage/i686/sage-4.3.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 5849:\n    sage: (log(5)-log(2)).simplify_log()\nExpected:\n    -log(2) + log(5)\nGot:\n    log(5/2)\n**********************************************************************\n```\n\n\nI don't know about the first one, but the second one seems to be confirming a bug fix in Maxima. :)",
+    "body": "On Sage-4.3.2.alpha1, I get these doctest failures:\n\n```\nsage -t  devel/sage-s/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/berocal/sage/i686/sage-4.3.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 5837:\n    sage: (x*log(9)).simplify_log('all')\nExpected:\n    log(9^x)\nGot:\n    x*log(9)\n**********************************************************************\nFile \"/scratch/berocal/sage/i686/sage-4.3.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 5849:\n    sage: (log(5)-log(2)).simplify_log()\nExpected:\n    -log(2) + log(5)\nGot:\n    log(5/2)\n**********************************************************************\n```\n\nI don't know about the first one, but the second one seems to be confirming a bug fix in Maxima. :)",
     "created_at": "2010-02-03T15:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -570,7 +569,6 @@ archive/issue_comments_061248.json:
 ```
 
 On Sage-4.3.2.alpha1, I get these doctest failures:
-
 
 ```
 sage -t  devel/sage-s/sage/symbolic/expression.pyx
@@ -590,7 +588,6 @@ Got:
     log(5/2)
 **********************************************************************
 ```
-
 
 I don't know about the first one, but the second one seems to be confirming a bug fix in Maxima. :)
 
@@ -619,7 +616,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061250.json:
 ```json
 {
-    "body": "The first problem is outside  maxima, since I have\n\n```\nsage: maxima(\"logconcoeffp:'logconfun\")\nlogconfun\nsage: maxima(\"logconfun(m):= true\")\nlogconfun(m):=true\nsage: maxima(\"logcontract(x*log(9))\")\nlog(9^x)\n```\n\nI have to investigate the problem in details (perhaps tomorrow).\n\nYes, the second \"problem\" is a fixed bug from Maxima :)",
+    "body": "The first problem is outside  maxima, since I have\n\n```\nsage: maxima(\"logconcoeffp:'logconfun\")\nlogconfun\nsage: maxima(\"logconfun(m):= true\")\nlogconfun(m):=true\nsage: maxima(\"logcontract(x*log(9))\")\nlog(9^x)\n```\nI have to investigate the problem in details (perhaps tomorrow).\n\nYes, the second \"problem\" is a fixed bug from Maxima :)",
     "created_at": "2010-02-03T15:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -638,7 +635,6 @@ logconfun(m):=true
 sage: maxima("logcontract(x*log(9))")
 log(9^x)
 ```
-
 I have to investigate the problem in details (perhaps tomorrow).
 
 Yes, the second "problem" is a fixed bug from Maxima :)
@@ -650,7 +646,7 @@ Yes, the second "problem" is a fixed bug from Maxima :)
 archive/issue_comments_061251.json:
 ```json
 {
-    "body": "Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by @robert-marik created at 2010-02-03 21:24:00\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n\n```\n./sage -t devel/sage/sage/symbolic\n```\n\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
+    "body": "Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by @robert-marik created at 2010-02-03 21:24:00\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n```\n./sage -t devel/sage/sage/symbolic\n```\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
     "created_at": "2010-02-03T21:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -663,11 +659,9 @@ Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/
 
 New patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.
 
-
 ```
 ./sage -t devel/sage/sage/symbolic
 ```
-
 passed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).
 
 
@@ -793,7 +787,7 @@ And to be honest, we should reset logexpand anyway, because after using log_expa
 archive/issue_comments_061258.json:
 ```json
 {
-    "body": "The reviwer patch seems to be O.K. for me. Thanks for fixing typos and adding docs. Running tests now.\n\nrestoring default value of logexpand was not necessary, since 'ev' environment has been used in my original patch and this has no influence to the value of logexpand\n\n```\nsage: maxima('logexpand')\ntrue\nsage: maxima('ev(log(x*y),logexpand:false)')\nlog(x*y)\nsage: maxima('logexpand')\ntrue\nsage: maxima('ev(log(x*y),logexpand:super)')\nlog(y)+log(x)\nsage: maxima('logexpand')\ntrue\n```\n\n\nbut the current method without 'ev' enviroment is also O.K. and perhaps better, since ev may lead sometimes to some other problems and should be avoided if possible (as I understand discussions related (for example)to substitution from maxima group).",
+    "body": "The reviwer patch seems to be O.K. for me. Thanks for fixing typos and adding docs. Running tests now.\n\nrestoring default value of logexpand was not necessary, since 'ev' environment has been used in my original patch and this has no influence to the value of logexpand\n\n```\nsage: maxima('logexpand')\ntrue\nsage: maxima('ev(log(x*y),logexpand:false)')\nlog(x*y)\nsage: maxima('logexpand')\ntrue\nsage: maxima('ev(log(x*y),logexpand:super)')\nlog(y)+log(x)\nsage: maxima('logexpand')\ntrue\n```\n\nbut the current method without 'ev' enviroment is also O.K. and perhaps better, since ev may lead sometimes to some other problems and should be avoided if possible (as I understand discussions related (for example)to substitution from maxima group).",
     "created_at": "2010-02-04T19:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -819,7 +813,6 @@ sage: maxima('logexpand')
 true
 ```
 
-
 but the current method without 'ev' enviroment is also O.K. and perhaps better, since ev may lead sometimes to some other problems and should be avoided if possible (as I understand discussions related (for example)to substitution from maxima group).
 
 
@@ -829,7 +822,7 @@ but the current method without 'ev' enviroment is also O.K. and perhaps better, 
 archive/issue_comments_061259.json:
 ```json
 {
-    "body": "> restoring default value of logexpand was not necessary, since 'ev' environment has been used in my original patch and this has no influence to the value of logexpand\n\nIt shouldn't have, but for some reason it did in my installation - specifically in some tests in solve and friends which had logs in their answers that mysteriously began simplifying!  Anyway, glad you think this solution is okay.",
+    "body": "> restoring default value of logexpand was not necessary, since 'ev' environment has been used in my original patch and this has no influence to the value of logexpand\n\n\nIt shouldn't have, but for some reason it did in my installation - specifically in some tests in solve and friends which had logs in their answers that mysteriously began simplifying!  Anyway, glad you think this solution is okay.",
     "created_at": "2010-02-04T20:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -839,6 +832,7 @@ archive/issue_comments_061259.json:
 ```
 
 > restoring default value of logexpand was not necessary, since 'ev' environment has been used in my original patch and this has no influence to the value of logexpand
+
 
 It shouldn't have, but for some reason it did in my installation - specifically in some tests in solve and friends which had logs in their answers that mysteriously began simplifying!  Anyway, glad you think this solution is okay.
 
@@ -885,7 +879,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_061262.json:
 ```json
 {
-    "body": "Replying to [comment:25 robert.marik]:\n> all tests passed for me after  trac-7334-logcontract-5.patch , trac-7334-logcontract-5-bugfix.patch, trac_7334-logcontract-5-reviewer.patch \n\nIt sounds like this means positive review for the last reviewer change.  Great!",
+    "body": "Replying to [comment:25 robert.marik]:\n> all tests passed for me after  trac-7334-logcontract-5.patch , trac-7334-logcontract-5-bugfix.patch, trac_7334-logcontract-5-reviewer.patch \n\n\nIt sounds like this means positive review for the last reviewer change.  Great!",
     "created_at": "2010-02-05T20:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
@@ -896,6 +890,7 @@ archive/issue_comments_061262.json:
 
 Replying to [comment:25 robert.marik]:
 > all tests passed for me after  trac-7334-logcontract-5.patch , trac-7334-logcontract-5-bugfix.patch, trac_7334-logcontract-5-reviewer.patch 
+
 
 It sounds like this means positive review for the last reviewer change.  Great!
 

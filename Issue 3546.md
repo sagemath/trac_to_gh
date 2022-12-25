@@ -3,7 +3,7 @@
 archive/issues_003546.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @slel\n\n\n```\nsage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])\n```\n\n\nWhen rendered with jmol, the lines produced are curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel\n\n```\nsage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])\n```\n\nWhen rendered with jmol, the lines produced are curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
     "created_at": "2008-07-03T21:27:23Z",
     "labels": [
         "component: graphics",
@@ -21,11 +21,9 @@ Assignee: @williamstein
 
 CC:  @slel
 
-
 ```
 sage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])
 ```
-
 
 When rendered with jmol, the lines produced are curves.
 

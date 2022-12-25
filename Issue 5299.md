@@ -47,7 +47,7 @@ archive/issue_events_012320.json:
 archive/issue_comments_040691.json:
 ```json
 {
-    "body": "This has already been done:\n\n\n```\nsage: hg_sage.q\nhg_sage.qapplied    hg_sage.qimport     hg_sage.qpush       hg_sage.qseries     \nhg_sage.qdelete     hg_sage.qnew        hg_sage.qrefresh    hg_sage.qunapplied  \nhg_sage.qdiff       hg_sage.qpop        hg_sage.qremove     \n```\n",
+    "body": "This has already been done:\n\n```\nsage: hg_sage.q\nhg_sage.qapplied    hg_sage.qimport     hg_sage.qpush       hg_sage.qseries     \nhg_sage.qdelete     hg_sage.qnew        hg_sage.qrefresh    hg_sage.qunapplied  \nhg_sage.qdiff       hg_sage.qpop        hg_sage.qremove     \n```",
     "created_at": "2013-07-23T14:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5299",
     "type": "issue_comment",
@@ -58,14 +58,12 @@ archive/issue_comments_040691.json:
 
 This has already been done:
 
-
 ```
 sage: hg_sage.q
 hg_sage.qapplied    hg_sage.qimport     hg_sage.qpush       hg_sage.qseries     
 hg_sage.qdelete     hg_sage.qnew        hg_sage.qrefresh    hg_sage.qunapplied  
 hg_sage.qdiff       hg_sage.qpop        hg_sage.qremove     
 ```
-
 
 
 

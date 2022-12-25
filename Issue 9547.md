@@ -3,7 +3,7 @@
 archive/issues_009547.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n\n```\nsage: var('x') * Infinity\n+Infinity\n```\n\n\nThis is not right; x could represent something non-positive.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9547\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n```\nsage: var('x') * Infinity\n+Infinity\n```\n\nThis is not right; x could represent something non-positive.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9547\n\n",
     "created_at": "2010-07-19T08:25:53Z",
     "labels": [
         "component: algebra",
@@ -20,12 +20,10 @@ Assignee: @aghitza
 
 CC:  @kcrisman
 
-
 ```
 sage: var('x') * Infinity
 +Infinity
 ```
-
 
 This is not right; x could represent something non-positive.
 
@@ -251,7 +249,7 @@ Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pyn
 archive/issue_comments_091881.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.\nSame question as #1861: why doesn't this count as duplicate/invalid/wontfix?",
+    "body": "Replying to [comment:6 kcrisman]:\n> Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.\n\nSame question as #1861: why doesn't this count as duplicate/invalid/wontfix?",
     "created_at": "2012-06-29T14:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_comment",
@@ -262,6 +260,7 @@ archive/issue_comments_091881.json:
 
 Replying to [comment:6 kcrisman]:
 > Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.
+
 Same question as #1861: why doesn't this count as duplicate/invalid/wontfix?
 
 
@@ -271,7 +270,7 @@ Same question as #1861: why doesn't this count as duplicate/invalid/wontfix?
 archive/issue_comments_091882.json:
 ```json
 {
-    "body": "> > Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.\n> Same question as #1861: why doesn't this count as duplicate/invalid/wontfix?\nIn my opinion (only?), tickets that are closed by metatickets are not duplicates.  It seems better to me (only?) to make it clear that work went into all of the issues we close, instead of making it seem like we have hundreds of duplicates that people open.  We already *do* have enough duplicates as it is :) \n\nAnd we certainly fixed it, so it's not \"wontfix\", and it's not invalid either, or at least wasn't before #12950, which however, explicitly refers to this ticket - it's not like some other change in #12950 made this invalid, which does sometimes happen.",
+    "body": "> > Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.\n\n> Same question as #1861: why doesn't this count as duplicate/invalid/wontfix?\nIn my opinion (only?), tickets that are closed by metatickets are not duplicates.  It seems better to me (only?) to make it clear that work went into all of the issues we close, instead of making it seem like we have hundreds of duplicates that people open.  We already *do* have enough duplicates as it is :) \n\nAnd we certainly fixed it, so it's not \"wontfix\", and it's not invalid either, or at least wasn't before #12950, which however, explicitly refers to this ticket - it's not like some other change in #12950 made this invalid, which does sometimes happen.",
     "created_at": "2012-06-29T15:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_comment",
@@ -281,6 +280,7 @@ archive/issue_comments_091882.json:
 ```
 
 > > Patch is at #12950, but still a valid ticket; that was a meta-ticket for the Pynac upgrade.
+
 > Same question as #1861: why doesn't this count as duplicate/invalid/wontfix?
 In my opinion (only?), tickets that are closed by metatickets are not duplicates.  It seems better to me (only?) to make it clear that work went into all of the issues we close, instead of making it seem like we have hundreds of duplicates that people open.  We already *do* have enough duplicates as it is :) 
 
@@ -313,7 +313,7 @@ Has a doctest been added for this?  If not, one could consider needs_work.
 archive/issue_comments_091884.json:
 ```json
 {
-    "body": "> If the issue is fixed by a *different* ticket, then this ticket should be either a \"duplicate\" or a \"worksforme\".\nI simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.\n> Has a doctest been added for this?  If not, one could consider needs_work.\nYes, it is at #12950.",
+    "body": "> If the issue is fixed by a *different* ticket, then this ticket should be either a \"duplicate\" or a \"worksforme\".\n\nI simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.\n> Has a doctest been added for this?  If not, one could consider needs_work.\n\nYes, it is at #12950.",
     "created_at": "2012-06-29T15:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_comment",
@@ -323,8 +323,10 @@ archive/issue_comments_091884.json:
 ```
 
 > If the issue is fixed by a *different* ticket, then this ticket should be either a "duplicate" or a "worksforme".
+
 I simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.
 > Has a doctest been added for this?  If not, one could consider needs_work.
+
 Yes, it is at #12950.
 
 
@@ -334,7 +336,7 @@ Yes, it is at #12950.
 archive/issue_comments_091885.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> > If the issue is fixed by a *different* ticket, then this ticket should be either a \"duplicate\" or a \"worksforme\".\n> I simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.\nYou could give credit to those people on the other gigantic metaticket.\n\nOn this particular ticket here, I don't see any work done, so I would simply close it as duplicate.",
+    "body": "Replying to [comment:10 kcrisman]:\n> > If the issue is fixed by a *different* ticket, then this ticket should be either a \"duplicate\" or a \"worksforme\".\n\n> I simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.\nYou could give credit to those people on the other gigantic metaticket.\n\nOn this particular ticket here, I don't see any work done, so I would simply close it as duplicate.",
     "created_at": "2012-06-29T16:25:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_comment",
@@ -345,6 +347,7 @@ archive/issue_comments_091885.json:
 
 Replying to [comment:10 kcrisman]:
 > > If the issue is fixed by a *different* ticket, then this ticket should be either a "duplicate" or a "worksforme".
+
 > I simply disagree.  So you are saying that, hypothetically, a gigantic metaticket for foo.spkg that bundles fifty changes, all of which are doctested by some huge patch at that ticket, means all the others are duplicates?  That seems to denigrate the hard work that went into each of those other tickets.  Although the people currently working on these particular tickets are not counting on this material for promotion, that is certainly a future possibility, as standards evolve, especially at less research-focused institutions.
 You could give credit to those people on the other gigantic metaticket.
 
@@ -391,7 +394,7 @@ archive/issue_events_023754.json:
 archive/issue_comments_091886.json:
 ```json
 {
-    "body": "> You could give credit to those people on the other gigantic metaticket.\nWhich Burcin did.  The point was that although a ticket isn't a great measure of work, we don't have to make it an even worse measure.\n> On this particular ticket here, I don't see any work done, so I would simply close it as duplicate.\nWell, I was going by the fact that someone else filled in author and reviewer fields and the work \"just happened\" to be there; see also the discussion at #12950.  But if you insist, I suppose I've engaged in enough bikeshedding for one day.",
+    "body": "> You could give credit to those people on the other gigantic metaticket.\n\nWhich Burcin did.  The point was that although a ticket isn't a great measure of work, we don't have to make it an even worse measure.\n> On this particular ticket here, I don't see any work done, so I would simply close it as duplicate.\n\nWell, I was going by the fact that someone else filled in author and reviewer fields and the work \"just happened\" to be there; see also the discussion at #12950.  But if you insist, I suppose I've engaged in enough bikeshedding for one day.",
     "created_at": "2012-06-29T16:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9547",
     "type": "issue_comment",
@@ -401,8 +404,10 @@ archive/issue_comments_091886.json:
 ```
 
 > You could give credit to those people on the other gigantic metaticket.
+
 Which Burcin did.  The point was that although a ticket isn't a great measure of work, we don't have to make it an even worse measure.
 > On this particular ticket here, I don't see any work done, so I would simply close it as duplicate.
+
 Well, I was going by the fact that someone else filled in author and reviewer fields and the work "just happened" to be there; see also the discussion at #12950.  But if you insist, I suppose I've engaged in enough bikeshedding for one day.
 
 

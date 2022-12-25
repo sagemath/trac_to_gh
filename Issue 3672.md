@@ -3,7 +3,7 @@
 archive/issues_003672.json:
 ```json
 {
-    "body": "Assignee: tba\n\n* in `http://www.sagemath.org/doc/html/prog/node72.html` - last line\n* here:\n\n```\n/sage/doc$ grep -r \"sagemath.org/sage//hg\" *\nprog/node31.html:cd \"/home/jaap/sage/devel/doc\" &amp;&amp; hg pull -u http://sagemath.org/sage//hg//doc-main\nprog/node31.html:pulling from http://sagemath.org/sage//hg//doc-main\nprog/node31.html:cd \"/home/jaap/sage/devel/doc\" &amp;&amp; hg bundle  tmphg http://sagemath.org/sage//hg//doc-main\n```\n\n* ... and probably elsewhere, too:\n\nreplace `http://sagemath.org/sage/[/]hg` -> `http://hg.sagemath.org/` or `http://www.sagemath.org/hg/` (and probably a trailing \"`sage-main`\" in node31.html)\n\n[backref: posting in sage-devel by bill hart](http://groups.google.com/group/sage-devel/msg/43f43fe73c851d44)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3672\n\n",
+    "body": "Assignee: tba\n\n* in `http://www.sagemath.org/doc/html/prog/node72.html` - last line\n* here:\n\n```\n/sage/doc$ grep -r \"sagemath.org/sage//hg\" *\nprog/node31.html:cd \"/home/jaap/sage/devel/doc\" &amp;&amp; hg pull -u http://sagemath.org/sage//hg//doc-main\nprog/node31.html:pulling from http://sagemath.org/sage//hg//doc-main\nprog/node31.html:cd \"/home/jaap/sage/devel/doc\" &amp;&amp; hg bundle  tmphg http://sagemath.org/sage//hg//doc-main\n```\n* ... and probably elsewhere, too:\n\nreplace `http://sagemath.org/sage/[/]hg` -> `http://hg.sagemath.org/` or `http://www.sagemath.org/hg/` (and probably a trailing \"`sage-main`\" in node31.html)\n\n[backref: posting in sage-devel by bill hart](http://groups.google.com/group/sage-devel/msg/43f43fe73c851d44)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3672\n\n",
     "created_at": "2008-07-18T09:58:05Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ prog/node31.html:cd "/home/jaap/sage/devel/doc" &amp;&amp; hg pull -u http://sag
 prog/node31.html:pulling from http://sagemath.org/sage//hg//doc-main
 prog/node31.html:cd "/home/jaap/sage/devel/doc" &amp;&amp; hg bundle  tmphg http://sagemath.org/sage//hg//doc-main
 ```
-
 * ... and probably elsewhere, too:
 
 replace `http://sagemath.org/sage/[/]hg` -> `http://hg.sagemath.org/` or `http://www.sagemath.org/hg/` (and probably a trailing "`sage-main`" in node31.html)

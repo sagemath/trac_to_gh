@@ -164,7 +164,7 @@ archive/issue_events_009024.json:
 archive/issue_comments_028095.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> Well, someone ought to change the subject of the tickets Jason opened analog to this, i.e. the 480 tickets, a while ago since they kind of suck (no offense Jason :)). A ticket should have a clear goal and discussions about whether to merge code or not do not belong into trac.\n\n+1\n\nI was just touching the ticket, since Ryan is about to post a patch here.",
+    "body": "Replying to [comment:4 mabshoff]:\n> Well, someone ought to change the subject of the tickets Jason opened analog to this, i.e. the 480 tickets, a while ago since they kind of suck (no offense Jason :)). A ticket should have a clear goal and discussions about whether to merge code or not do not belong into trac.\n\n\n+1\n\nI was just touching the ticket, since Ryan is about to post a patch here.",
     "created_at": "2009-04-16T22:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -175,6 +175,7 @@ archive/issue_comments_028095.json:
 
 Replying to [comment:4 mabshoff]:
 > Well, someone ought to change the subject of the tickets Jason opened analog to this, i.e. the 480 tickets, a while ago since they kind of suck (no offense Jason :)). A ticket should have a clear goal and discussions about whether to merge code or not do not belong into trac.
+
 
 +1
 
@@ -351,7 +352,7 @@ I've made the changes noted above and replaced the patch with the new patch.
 archive/issue_comments_028103.json:
 ```json
 {
-    "body": "Here's the timing improvement:\n\n\n```\nN   OLD   NEW\n6   .11   .00\n8   .87   .00\n10  58.   .01\n12  ???   .04\n15  ???   .67\n```\n",
+    "body": "Here's the timing improvement:\n\n```\nN   OLD   NEW\n6   .11   .00\n8   .87   .00\n10  58.   .01\n12  ???   .04\n15  ???   .67\n```",
     "created_at": "2009-04-29T16:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -362,7 +363,6 @@ archive/issue_comments_028103.json:
 
 Here's the timing improvement:
 
-
 ```
 N   OLD   NEW
 6   .11   .00
@@ -371,7 +371,6 @@ N   OLD   NEW
 12  ???   .04
 15  ???   .67
 ```
-
 
 
 
@@ -440,7 +439,7 @@ Michael
 archive/issue_comments_028107.json:
 ```json
 {
-    "body": "While I am in pedantic mode:\n\n```\n106\t        self.l = <int *>sage_malloc(self.n * sizeof(int)) \n107\t        self.w = <int *>sage_malloc(self.n * sizeof(int)) \n```\n\nshould verify that the allocation actually worked. If either one of them fails for whatever reason we will have the code go *boom*.\n\nAnd `__next__` also needs a doctest ;)\n\nCheers,\n\nMichael",
+    "body": "While I am in pedantic mode:\n\n```\n106\t        self.l = <int *>sage_malloc(self.n * sizeof(int)) \n107\t        self.w = <int *>sage_malloc(self.n * sizeof(int)) \n```\nshould verify that the allocation actually worked. If either one of them fails for whatever reason we will have the code go *boom*.\n\nAnd `__next__` also needs a doctest ;)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T03:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -455,7 +454,6 @@ While I am in pedantic mode:
 106	        self.l = <int *>sage_malloc(self.n * sizeof(int)) 
 107	        self.w = <int *>sage_malloc(self.n * sizeof(int)) 
 ```
-
 should verify that the allocation actually worked. If either one of them fails for whatever reason we will have the code go *boom*.
 
 And `__next__` also needs a doctest ;)
@@ -490,7 +488,7 @@ archive/issue_comments_028108.json:
 archive/issue_comments_028109.json:
 ```json
 {
-    "body": "This patch set causes two doctest failures for me:\n\n```\n        sage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n        sage -t -long devel/sage/sage/graphs/graph_plot.py # 1 doctests failed\n```\n\nSpecifically:\n\n```\nsage -t -long \"devel/sage/sage/graphs/graph.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/graphs/graph.py\", line 6415:\n    sage: t.set_edge_label(0,1,-7)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_134[57]>\", line 1, in <module>\n        t.set_edge_label(Integer(0),Integer(1),-Integer(7))###line 6415:\n    sage: t.set_edge_label(0,1,-7)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 3571, in set_edge_label\n        self._backend.set_edge_label(u, v, l, self._directed)\n      File \"sparse_graph.pyx\", line 1485, in sage.graphs.base.sparse_graph.SparseGraphBackend.set_edge_label (sage/graphs/base/sparse_graph.c:15129)\n      File \"sparse_graph.pyx\", line 547, in sage.graphs.base.sparse_graph.SparseGraph.add_arc_label (sage/graphs/base/sparse_graph.c:4373)\n    RuntimeError: Label (-7) must be a nonnegative integer.\n**********************************************************************\n1 items had failures:\n   1 of  84 in __main__.example_134\n```\n\nand\n\n```\nsage -t -long \"devel/sage/sage/graphs/graph_plot.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/graphs/graph_plot.py\", line 729:\n    sage: t.set_edge_label(0,1,-7)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[53]>\", line 1, in <module>\n        t.set_edge_label(Integer(0),Integer(1),-Integer(7))###line 729:\n    sage: t.set_edge_label(0,1,-7)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 3571, in set_edge_label\n        self._backend.set_edge_label(u, v, l, self._directed)\n      File \"sparse_graph.pyx\", line 1485, in sage.graphs.base.sparse_graph.SparseGraphBackend.set_edge_label (sage/graphs/base/sparse_graph.c:15129)\n      File \"sparse_graph.pyx\", line 547, in sage.graphs.base.sparse_graph.SparseGraph.add_arc_label (sage/graphs/base/sparse_graph.c:4373)\n    RuntimeError: Label (-7) must be a nonnegative integer.\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch set causes two doctest failures for me:\n\n```\n        sage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n        sage -t -long devel/sage/sage/graphs/graph_plot.py # 1 doctests failed\n```\nSpecifically:\n\n```\nsage -t -long \"devel/sage/sage/graphs/graph.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/graphs/graph.py\", line 6415:\n    sage: t.set_edge_label(0,1,-7)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_134[57]>\", line 1, in <module>\n        t.set_edge_label(Integer(0),Integer(1),-Integer(7))###line 6415:\n    sage: t.set_edge_label(0,1,-7)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 3571, in set_edge_label\n        self._backend.set_edge_label(u, v, l, self._directed)\n      File \"sparse_graph.pyx\", line 1485, in sage.graphs.base.sparse_graph.SparseGraphBackend.set_edge_label (sage/graphs/base/sparse_graph.c:15129)\n      File \"sparse_graph.pyx\", line 547, in sage.graphs.base.sparse_graph.SparseGraph.add_arc_label (sage/graphs/base/sparse_graph.c:4373)\n    RuntimeError: Label (-7) must be a nonnegative integer.\n**********************************************************************\n1 items had failures:\n   1 of  84 in __main__.example_134\n```\nand\n\n```\nsage -t -long \"devel/sage/sage/graphs/graph_plot.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.alpha0/devel/sage/sage/graphs/graph_plot.py\", line 729:\n    sage: t.set_edge_label(0,1,-7)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[53]>\", line 1, in <module>\n        t.set_edge_label(Integer(0),Integer(1),-Integer(7))###line 729:\n    sage: t.set_edge_label(0,1,-7)\n      File \"/scratch/mabshoff/sage-4.0.alpha0/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 3571, in set_edge_label\n        self._backend.set_edge_label(u, v, l, self._directed)\n      File \"sparse_graph.pyx\", line 1485, in sage.graphs.base.sparse_graph.SparseGraphBackend.set_edge_label (sage/graphs/base/sparse_graph.c:15129)\n      File \"sparse_graph.pyx\", line 547, in sage.graphs.base.sparse_graph.SparseGraph.add_arc_label (sage/graphs/base/sparse_graph.c:4373)\n    RuntimeError: Label (-7) must be a nonnegative integer.\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-05-13T18:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -505,7 +503,6 @@ This patch set causes two doctest failures for me:
         sage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed
         sage -t -long devel/sage/sage/graphs/graph_plot.py # 1 doctests failed
 ```
-
 Specifically:
 
 ```
@@ -533,7 +530,6 @@ Exception raised:
 1 items had failures:
    1 of  84 in __main__.example_134
 ```
-
 and
 
 ```
@@ -558,7 +554,6 @@ Exception raised:
       File "sparse_graph.pyx", line 547, in sage.graphs.base.sparse_graph.SparseGraph.add_arc_label (sage/graphs/base/sparse_graph.c:4373)
     RuntimeError: Label (-7) must be a nonnegative integer.
 ```
-
 
 Cheers,
 
@@ -715,7 +710,7 @@ archive/issue_events_009029.json:
 archive/issue_comments_028115.json:
 ```json
 {
-    "body": "Replying to [comment:11 rlm]:\n> Here's the timing improvement:\n> \n> {{{\n> N   OLD   NEW\n> 6   .11   .00\n> 8   .87   .00\n> 10  58.   .01\n> 12  ???   .04\n> 15  ???   .67\n> }}}\n\n\nHi Robert. I'm writing the release tour for Sage 4.0. To showcase the feature introduced by this ticket, is it possible for you to show me the code you used to obtain the above timing statistics?",
+    "body": "Replying to [comment:11 rlm]:\n> Here's the timing improvement:\n> \n> \n> ```\n> N   OLD   NEW\n> 6   .11   .00\n> 8   .87   .00\n> 10  58.   .01\n> 12  ???   .04\n> 15  ???   .67\n> ```\n\n\n\nHi Robert. I'm writing the release tour for Sage 4.0. To showcase the feature introduced by this ticket, is it possible for you to show me the code you used to obtain the above timing statistics?",
     "created_at": "2009-06-01T16:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -727,14 +722,16 @@ archive/issue_comments_028115.json:
 Replying to [comment:11 rlm]:
 > Here's the timing improvement:
 > 
-> {{{
+> 
+> ```
 > N   OLD   NEW
 > 6   .11   .00
 > 8   .87   .00
 > 10  58.   .01
 > 12  ???   .04
 > 15  ???   .67
-> }}}
+> ```
+
 
 
 Hi Robert. I'm writing the release tour for Sage 4.0. To showcase the feature introduced by this ticket, is it possible for you to show me the code you used to obtain the above timing statistics?
@@ -746,7 +743,7 @@ Hi Robert. I'm writing the release tour for Sage 4.0. To showcase the feature in
 archive/issue_comments_028116.json:
 ```json
 {
-    "body": "\n```\nsage: L = list(graphs.trees(n))\n```\n\nor something very similar.",
+    "body": "```\nsage: L = list(graphs.trees(n))\n```\nor something very similar.",
     "created_at": "2009-06-01T17:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
@@ -755,9 +752,7 @@ archive/issue_comments_028116.json:
 }
 ```
 
-
 ```
 sage: L = list(graphs.trees(n))
 ```
-
 or something very similar.

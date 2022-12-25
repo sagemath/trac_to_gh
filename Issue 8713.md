@@ -137,7 +137,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079376.json:
 ```json
 {
-    "body": "According to Robert Bradshaw:\n> Don't have time to review it, but sounds reasonable to me.\n\nMoreover patch look good and all tests are ok !",
+    "body": "According to Robert Bradshaw:\n> Don't have time to review it, but sounds reasonable to me.\n\n\nMoreover patch look good and all tests are ok !",
     "created_at": "2010-04-19T21:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8713",
     "type": "issue_comment",
@@ -148,6 +148,7 @@ archive/issue_comments_079376.json:
 
 According to Robert Bradshaw:
 > Don't have time to review it, but sounds reasonable to me.
+
 
 Moreover patch look good and all tests are ok !
 

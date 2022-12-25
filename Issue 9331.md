@@ -3,7 +3,7 @@
 archive/issues_009331.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nFrom [sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/bd0ef674ff168fe7):\n\n```\nIn Sage 4.4.4, I can't build the PDF version of the reference manual,\neven though the HTML version builds fine. Here is the error messsage:\n\nOverfull \\hbox (41.96407pt too wide) in paragraph at lines 73487--73489\n[]\\T1/pcr/m/n/10 MyClass2.__classcall__() \\T1/ptm/m/n/10 should re-turn the re-\nsult of \\T1/pcr/m/n/10 UniqueRepresentation.__classcall__()\n[890]\n! TeX capacity exceeded, sorry [input stack size=5000].\n\\reserved@a ->\\def \\reserved@a\n                               *{\\ttl@assign@i {\\@tempskipb }}\\reserved@a\nl.73597 ...{UniqueRepresentation}} and unpickling}\n\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on reference.log.\nmake: *** [reference.pdf] Error 1 \n```\n\nThis is traced to ticket #9106.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9331\n\n",
+    "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nFrom [sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/bd0ef674ff168fe7):\n\n```\nIn Sage 4.4.4, I can't build the PDF version of the reference manual,\neven though the HTML version builds fine. Here is the error messsage:\n\nOverfull \\hbox (41.96407pt too wide) in paragraph at lines 73487--73489\n[]\\T1/pcr/m/n/10 MyClass2.__classcall__() \\T1/ptm/m/n/10 should re-turn the re-\nsult of \\T1/pcr/m/n/10 UniqueRepresentation.__classcall__()\n[890]\n! TeX capacity exceeded, sorry [input stack size=5000].\n\\reserved@a ->\\def \\reserved@a\n                               *{\\ttl@assign@i {\\@tempskipb }}\\reserved@a\nl.73597 ...{UniqueRepresentation}} and unpickling}\n\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on reference.log.\nmake: *** [reference.pdf] Error 1 \n```\nThis is traced to ticket #9106.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9331\n\n",
     "created_at": "2010-06-24T17:56:34Z",
     "labels": [
         "component: documentation",
@@ -39,7 +39,6 @@ l.73597 ...{UniqueRepresentation}} and unpickling}
 Transcript written on reference.log.
 make: *** [reference.pdf] Error 1 
 ```
-
 This is traced to ticket #9106.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9331

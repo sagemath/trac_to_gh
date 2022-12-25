@@ -3,7 +3,7 @@
 archive/issues_009704.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nThis is confusing.  Refactor to fix it:\n\n\n```\nsage: det(matrix(2,[1,2,3,4]))\n-2\nsage: trace(matrix(2,[1,2,3,4]))\nTraceback (most recent call last)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' object has no attribute 'lstrip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9704\n\n",
+    "body": "Assignee: @jasongrout\n\nThis is confusing.  Refactor to fix it:\n\n```\nsage: det(matrix(2,[1,2,3,4]))\n-2\nsage: trace(matrix(2,[1,2,3,4]))\nTraceback (most recent call last)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' object has no attribute 'lstrip'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9704\n\n",
     "created_at": "2010-08-07T17:31:41Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ Assignee: @jasongrout
 
 This is confusing.  Refactor to fix it:
 
-
 ```
 sage: det(matrix(2,[1,2,3,4]))
 -2
@@ -29,7 +28,6 @@ Traceback (most recent call last)
 ...
 AttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' object has no attribute 'lstrip'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9704
 
@@ -134,7 +132,7 @@ archive/issue_comments_094243.json:
 archive/issue_comments_094244.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> * jason -- trace already means two different things, at least.   I'm not adding a new meaning. \n\nWhen I read the code, trace() has one purpose, not two.  Your patch will mean that the trace function has two completely different purposes, depending on the input.  That is what I'm -1 on.\n\nIf we change the trace() function so that it instead computes the trace of an object (i.e., x.trace()), then I agree that for a short amount of time, a deprecation warning should be added and trace() will have to serve two purposes.\n\n\n> \n> * regarding adding a deprecation warning, I think that is reasonable, but that should not go in this ticket.  If you want to do that, make it another ticket and do it. \n\nI'm -1 on a ticket (this one) which makes the Sage trace() function have two purposes (unless it's a temporary thing that is deprecated, of course).",
+    "body": "Replying to [comment:4 was]:\n> * jason -- trace already means two different things, at least.   I'm not adding a new meaning. \n\n\nWhen I read the code, trace() has one purpose, not two.  Your patch will mean that the trace function has two completely different purposes, depending on the input.  That is what I'm -1 on.\n\nIf we change the trace() function so that it instead computes the trace of an object (i.e., x.trace()), then I agree that for a short amount of time, a deprecation warning should be added and trace() will have to serve two purposes.\n\n\n> \n> * regarding adding a deprecation warning, I think that is reasonable, but that should not go in this ticket.  If you want to do that, make it another ticket and do it. \n\n\nI'm -1 on a ticket (this one) which makes the Sage trace() function have two purposes (unless it's a temporary thing that is deprecated, of course).",
     "created_at": "2010-08-07T19:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
@@ -146,6 +144,7 @@ archive/issue_comments_094244.json:
 Replying to [comment:4 was]:
 > * jason -- trace already means two different things, at least.   I'm not adding a new meaning. 
 
+
 When I read the code, trace() has one purpose, not two.  Your patch will mean that the trace function has two completely different purposes, depending on the input.  That is what I'm -1 on.
 
 If we change the trace() function so that it instead computes the trace of an object (i.e., x.trace()), then I agree that for a short amount of time, a deprecation warning should be added and trace() will have to serve two purposes.
@@ -153,6 +152,7 @@ If we change the trace() function so that it instead computes the trace of an ob
 
 > 
 > * regarding adding a deprecation warning, I think that is reasonable, but that should not go in this ticket.  If you want to do that, make it another ticket and do it. 
+
 
 I'm -1 on a ticket (this one) which makes the Sage trace() function have two purposes (unless it's a temporary thing that is deprecated, of course).
 
@@ -183,7 +183,7 @@ How about making the trace(x) function do what others do, which is to try return
 archive/issue_comments_094246.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Sage already has _lots_ of functions f() which do very different things depending on the type of the arguments.\n> \n> How about making the trace(x) function do what others do, which is to try returning x.trace() and if that fails do what the code_trace function does?\n\nIs there any other examples in Sage where a function does:\n\n* mathematically meaningful stuff (which may differ, depending on the mathematical object), and returns a mathematical answer\n* and also does something which is entirely non-mathematical, on a completely different level (a programming nuts-and-bolts debugging level, rather than a math level)?\n\nThe big conceptual difference between those two purposes is why I think having two functions, say `trace()` (which calls `x.trace()`) and `trace_execution()` (which does what trace does right now) is a much better design than lumping things into one function.",
+    "body": "Replying to [comment:6 cremona]:\n> Sage already has _lots_ of functions f() which do very different things depending on the type of the arguments.\n> \n> How about making the trace(x) function do what others do, which is to try returning x.trace() and if that fails do what the code_trace function does?\n\n\nIs there any other examples in Sage where a function does:\n\n* mathematically meaningful stuff (which may differ, depending on the mathematical object), and returns a mathematical answer\n* and also does something which is entirely non-mathematical, on a completely different level (a programming nuts-and-bolts debugging level, rather than a math level)?\n\nThe big conceptual difference between those two purposes is why I think having two functions, say `trace()` (which calls `x.trace()`) and `trace_execution()` (which does what trace does right now) is a much better design than lumping things into one function.",
     "created_at": "2010-08-12T03:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
@@ -196,6 +196,7 @@ Replying to [comment:6 cremona]:
 > Sage already has _lots_ of functions f() which do very different things depending on the type of the arguments.
 > 
 > How about making the trace(x) function do what others do, which is to try returning x.trace() and if that fails do what the code_trace function does?
+
 
 Is there any other examples in Sage where a function does:
 
@@ -231,7 +232,7 @@ English has words with different meanings.  Sorry. It's just the way the languag
 archive/issue_comments_094248.json:
 ```json
 {
-    "body": "Replying to [comment:8 was]:\n> Look Jason, this \"trace\" having two meanings is *already* in Sage.  \n\nNo, it doesn't at the top level, and not in the same function.\n\n> Whether or not that changes is orthogonal to this ticket.   You could post a patch *after* this ticket gets in later if you're really worried.\n> \n\nI'm posting one right now.\n\n\n> English has words with different meanings.  Sorry. It's just the way the language works. \n\nSure, but that doesn't excuse a bad design.",
+    "body": "Replying to [comment:8 was]:\n> Look Jason, this \"trace\" having two meanings is *already* in Sage.  \n\n\nNo, it doesn't at the top level, and not in the same function.\n\n> Whether or not that changes is orthogonal to this ticket.   You could post a patch *after* this ticket gets in later if you're really worried.\n> \n\n\nI'm posting one right now.\n\n\n> English has words with different meanings.  Sorry. It's just the way the language works. \n\n\nSure, but that doesn't excuse a bad design.",
     "created_at": "2010-08-12T11:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
@@ -243,15 +244,18 @@ archive/issue_comments_094248.json:
 Replying to [comment:8 was]:
 > Look Jason, this "trace" having two meanings is *already* in Sage.  
 
+
 No, it doesn't at the top level, and not in the same function.
 
 > Whether or not that changes is orthogonal to this ticket.   You could post a patch *after* this ticket gets in later if you're really worried.
 > 
 
+
 I'm posting one right now.
 
 
 > English has words with different meanings.  Sorry. It's just the way the language works. 
+
 
 Sure, but that doesn't excuse a bad design.
 

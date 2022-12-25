@@ -3,7 +3,7 @@
 archive/issues_001998.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nwas@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      **********************************************************************\nFile \"animate.py\", line 47:\n    sage: a.show()          # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[3]>\", line 1, in <module>\n        a.show()          # optional###line 47:\n    sage: a.show()          # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\nFile \"animate.py\", line 48:\n    sage: a[:5].show()      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[4]>\", line 1, in <module>\n        a[:Integer(5)].show()      # optional###line 48:\n    sage: a[:5].show()      # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\n\netc.\n```\n\n\nWe missed this because it is \"optional\", because of the reliance on the convert command. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1998\n\n",
+    "body": "Assignee: @williamstein\n\n```\nwas@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      **********************************************************************\nFile \"animate.py\", line 47:\n    sage: a.show()          # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[3]>\", line 1, in <module>\n        a.show()          # optional###line 47:\n    sage: a.show()          # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\nFile \"animate.py\", line 48:\n    sage: a[:5].show()      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[4]>\", line 1, in <module>\n        a[:Integer(5)].show()      # optional###line 48:\n    sage: a[:5].show()      # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\n\netc.\n```\n\nWe missed this because it is \"optional\", because of the reliance on the convert command. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1998\n\n",
     "created_at": "2008-01-31T05:07:18Z",
     "labels": [
         "component: graphics",
@@ -18,7 +18,6 @@ archive/issues_001998.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 was@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py
@@ -76,7 +75,6 @@ Exception raised:
 
 etc.
 ```
-
 
 We missed this because it is "optional", because of the reliance on the convert command. 
 
@@ -208,7 +206,7 @@ archive/issue_events_004826.json:
 archive/issue_comments_012893.json:
 ```json
 {
-    "body": "Is this still an issue:\n\n\n```\nmhansen@sage:~/sage-3.0.alpha2-sage.math-only-x86_64-Linux/devel/sage$ sage -t -optional sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      \n         [26.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 26.7 seconds\n```\n",
+    "body": "Is this still an issue:\n\n```\nmhansen@sage:~/sage-3.0.alpha2-sage.math-only-x86_64-Linux/devel/sage$ sage -t -optional sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      \n         [26.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 26.7 seconds\n```",
     "created_at": "2008-04-08T04:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
@@ -219,7 +217,6 @@ archive/issue_comments_012893.json:
 
 Is this still an issue:
 
-
 ```
 mhansen@sage:~/sage-3.0.alpha2-sage.math-only-x86_64-Linux/devel/sage$ sage -t -optional sage/plot/animate.py
 sage -t -optional devel/sage-main/sage/plot/animate.py      
@@ -229,7 +226,6 @@ sage -t -optional devel/sage-main/sage/plot/animate.py
 All tests passed!
 Total time for all tests: 26.7 seconds
 ```
-
 
 
 
@@ -299,7 +295,7 @@ Resolution: fixed
 archive/issue_comments_012896.json:
 ```json
 {
-    "body": "This is fixed:\n\n```\n[13:22] <mabshoff> wstein: can you comment on #1998 ?\n[13:25] <wstein> #1998 can be closed since the --optional doctests now pass on that file.\n[13:25] <mabshoff> ok. good\n```\n\n\nCheers,\n\nMichael",
+    "body": "This is fixed:\n\n```\n[13:22] <mabshoff> wstein: can you comment on #1998 ?\n[13:25] <wstein> #1998 can be closed since the --optional doctests now pass on that file.\n[13:25] <mabshoff> ok. good\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T12:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
@@ -315,7 +311,6 @@ This is fixed:
 [13:25] <wstein> #1998 can be closed since the --optional doctests now pass on that file.
 [13:25] <mabshoff> ok. good
 ```
-
 
 Cheers,
 

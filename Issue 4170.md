@@ -3,7 +3,7 @@
 archive/issues_004170.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThe easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because\n\n\n```\nsage: ZZ.has_coerce_map_from(long)\nTrue\nsage: SR.has_coerce_map_from(ZZ)\nTrue\n```\n\n\nThis should be handled in the new model, but symbolics are being changed anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4170\n\n",
+    "body": "Assignee: @burcin\n\nThe easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because\n\n```\nsage: ZZ.has_coerce_map_from(long)\nTrue\nsage: SR.has_coerce_map_from(ZZ)\nTrue\n```\n\nThis should be handled in the new model, but symbolics are being changed anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4170\n\n",
     "created_at": "2008-09-23T01:10:30Z",
     "labels": [
         "component: calculus",
@@ -20,14 +20,12 @@ Assignee: @burcin
 
 The easy fix is to add it to the big list in `_coerce_impl` at sage.calculus.calculus.py:481. Because
 
-
 ```
 sage: ZZ.has_coerce_map_from(long)
 True
 sage: SR.has_coerce_map_from(ZZ)
 True
 ```
-
 
 This should be handled in the new model, but symbolics are being changed anyways. 
 

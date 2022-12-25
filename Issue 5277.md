@@ -3,7 +3,7 @@
 archive/issues_005277.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\ntachyon - in src/unix/Make-config change -lpng to -lpng12:\n\n```\nUSEPNG= -DUSEPNG\nPNGINC= -I$(SAGE_LOCAL)/include\nPNGLIB= -L$(SAGE_LOCAL)/lib -lpng12 -lz\n```\n\nWe can probably set PNGLIB in spkg-install, so we don't have to edit any build system files.\n\nSpkg coming up. Together with some changes via the libpng update at #5217 this will solve a long standing problem when we run into symbol clashes on OSX with its IOKit.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5277\n\n",
+    "body": "Assignee: mabshoff\n\ntachyon - in src/unix/Make-config change -lpng to -lpng12:\n\n```\nUSEPNG= -DUSEPNG\nPNGINC= -I$(SAGE_LOCAL)/include\nPNGLIB= -L$(SAGE_LOCAL)/lib -lpng12 -lz\n```\nWe can probably set PNGLIB in spkg-install, so we don't have to edit any build system files.\n\nSpkg coming up. Together with some changes via the libpng update at #5217 this will solve a long standing problem when we run into symbol clashes on OSX with its IOKit.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5277\n\n",
     "created_at": "2009-02-15T15:27:42Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ USEPNG= -DUSEPNG
 PNGINC= -I$(SAGE_LOCAL)/include
 PNGLIB= -L$(SAGE_LOCAL)/lib -lpng12 -lz
 ```
-
 We can probably set PNGLIB in spkg-install, so we don't have to edit any build system files.
 
 Spkg coming up. Together with some changes via the libpng update at #5217 this will solve a long standing problem when we run into symbol clashes on OSX with its IOKit.

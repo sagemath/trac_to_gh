@@ -3,7 +3,7 @@
 archive/issues_001036.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nfirst `bison` is required and after installing that, this happens:\n\n\n```\nIn file included from ../comp.hpp:9,\n                 from ../comp_gb.hpp:6,\n                 from lingb.hpp:8,\n                 from lingb.cpp:1:\n../comp.hpp:7: error: previous declaration of \u2018int gbTrace\u2019 with \u2018C++\u2019 linkage\n../engine.h:1530: error: conflicts with new declaration with \u2018C\u2019 linkage\n```\n\n\nThis is with `GCC 4.2.3` on 64-bit Debian/testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1036\n\n",
+    "body": "Assignee: @williamstein\n\nfirst `bison` is required and after installing that, this happens:\n\n```\nIn file included from ../comp.hpp:9,\n                 from ../comp_gb.hpp:6,\n                 from lingb.hpp:8,\n                 from lingb.cpp:1:\n../comp.hpp:7: error: previous declaration of \u2018int gbTrace\u2019 with \u2018C++\u2019 linkage\n../engine.h:1530: error: conflicts with new declaration with \u2018C\u2019 linkage\n```\n\nThis is with `GCC 4.2.3` on 64-bit Debian/testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1036\n\n",
     "created_at": "2007-10-30T17:18:37Z",
     "labels": [
         "component: packages: standard",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 first `bison` is required and after installing that, this happens:
 
-
 ```
 In file included from ../comp.hpp:9,
                  from ../comp_gb.hpp:6,
@@ -30,7 +29,6 @@ In file included from ../comp.hpp:9,
 ../comp.hpp:7: error: previous declaration of ‘int gbTrace’ with ‘C++’ linkage
 ../engine.h:1530: error: conflicts with new declaration with ‘C’ linkage
 ```
-
 
 This is with `GCC 4.2.3` on 64-bit Debian/testing.
 

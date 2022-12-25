@@ -3,7 +3,7 @@
 archive/issues_006405.json:
 ```json
 {
-    "body": "CC:  @robertwb\n\nIn new symbolics, imaginary 'I' is typeset as 'I' which is not \"textbook style\". This is a regression compared to Sage 3.4\n\n\n```\nsage: latex( exp(i*x))\ne^{I \\, x}\n```\n\n\nLower case letter 'i' should be used in the typeset version.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6405\n\n",
+    "body": "CC:  @robertwb\n\nIn new symbolics, imaginary 'I' is typeset as 'I' which is not \"textbook style\". This is a regression compared to Sage 3.4\n\n```\nsage: latex( exp(i*x))\ne^{I \\, x}\n```\n\nLower case letter 'i' should be used in the typeset version.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6405\n\n",
     "created_at": "2009-06-25T14:30:01Z",
     "labels": [
         "component: symbolics",
@@ -20,12 +20,10 @@ CC:  @robertwb
 
 In new symbolics, imaginary 'I' is typeset as 'I' which is not "textbook style". This is a regression compared to Sage 3.4
 
-
 ```
 sage: latex( exp(i*x))
 e^{I \, x}
 ```
-
 
 Lower case letter 'i' should be used in the typeset version.
 

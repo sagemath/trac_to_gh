@@ -3,7 +3,7 @@
 archive/issues_003913.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nIn 3.1 you can't ask for the order of an ideal class.  Example:\n\n```\nsage: K.<w>=QuadraticField(-23)\nsage: OK=K.ring_of_integers()\nsage: C=OK.class_group()\nsage: h=C.order()\nsage: P2a,P2b=[P for P,e in (2*OK).factor()]\nsage: c=C(P2a); c\nFractional ideal class (2, 1/2*w - 1/2)\nsage: c.order()\n#boom\n```\n\n\nThis is easily provided:\n\n```\nsage: sage.groups.generic.order_from_multiple(c,c.parent().order(),operation='*')\n3\n```\n\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3913\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nIn 3.1 you can't ask for the order of an ideal class.  Example:\n\n```\nsage: K.<w>=QuadraticField(-23)\nsage: OK=K.ring_of_integers()\nsage: C=OK.class_group()\nsage: h=C.order()\nsage: P2a,P2b=[P for P,e in (2*OK).factor()]\nsage: c=C(P2a); c\nFractional ideal class (2, 1/2*w - 1/2)\nsage: c.order()\n#boom\n```\n\nThis is easily provided:\n\n```\nsage: sage.groups.generic.order_from_multiple(c,c.parent().order(),operation='*')\n3\n```\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3913\n\n",
     "created_at": "2008-08-20T16:36:43Z",
     "labels": [
         "component: number theory",
@@ -34,14 +34,12 @@ sage: c.order()
 #boom
 ```
 
-
 This is easily provided:
 
 ```
 sage: sage.groups.generic.order_from_multiple(c,c.parent().order(),operation='*')
 3
 ```
-
 
 Patch coming up.
 
@@ -147,7 +145,7 @@ archive/issue_events_008976.json:
 archive/issue_comments_027934.json:
 ```json
 {
-    "body": "Replying to [comment:3 AlexGhitza]:\n> Looks good and passes doctests.  Also, when this gets merged, #1400 should be closed as a duplicate (note btw that John's patch addresses precisely Nick's objection on #1400).\n\nThanks -- sorry to have opened a new ticket unnecessarily (I did look, honest).  In any case this patch is more efficient, and shows how useful the generic algorithms I implemented are!",
+    "body": "Replying to [comment:3 AlexGhitza]:\n> Looks good and passes doctests.  Also, when this gets merged, #1400 should be closed as a duplicate (note btw that John's patch addresses precisely Nick's objection on #1400).\n\n\nThanks -- sorry to have opened a new ticket unnecessarily (I did look, honest).  In any case this patch is more efficient, and shows how useful the generic algorithms I implemented are!",
     "created_at": "2008-08-27T08:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3913",
     "type": "issue_comment",
@@ -158,5 +156,6 @@ archive/issue_comments_027934.json:
 
 Replying to [comment:3 AlexGhitza]:
 > Looks good and passes doctests.  Also, when this gets merged, #1400 should be closed as a duplicate (note btw that John's patch addresses precisely Nick's objection on #1400).
+
 
 Thanks -- sorry to have opened a new ticket unnecessarily (I did look, honest).  In any case this patch is more efficient, and shows how useful the generic algorithms I implemented are!

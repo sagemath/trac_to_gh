@@ -3,7 +3,7 @@
 archive/issues_003124.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  alexghitza\n\n\n```\nHi,\n\nI think this is a bug. Solving x == y mod 3 works fine:\n\nsage: var('x,y')\n(x, y)\nsage: solve_mod([x == y], 3)\n[(0, 0), (1, 1), (2, 2)]\n\nBut solving mod 2 blows up:\n\n\nsage: solve_mod([x == y], 2)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/carlo/work/sagestuff/<ipython console> in <module>()\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/calculus/equations.py\nin solve_mod(eqns, modulus)\n  1339     S = MPolynomialRing(R, len(vars), vars)\n  1340     eqns_mod = [S(eq) if is_SymbolicExpression(eq) else \\\n-> 1341                   S(eq.lhs() - eq.rhs()) for eq in eqns]\n  1342\n  1343     ans = []\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring.py\nin __call__(self, x, check)\n   380\n   381         elif hasattr(x, '_polynomial_'):\n--> 382             return x._polynomial_(self)\n   383\n   384         elif isinstance(x, str) and x in self.variable_names():\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\nin _polynomial_(self, R)\n  1809         if len(sub) == 0:\n  1810             try:\n-> 1811                 return R(B(self))\n  1812             except TypeError:\n  1813                 if len(vars) == 1:\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py\nin __call__(self, x)\n   574     def __call__(self, x):\n   575         try:\n--> 576             return integer_mod.IntegerMod(self, x)\n   577         except (NotImplementedError, PariError):\n   578             return TypeError, \"error coercing to finite field\"\n\n/home/carlo/work/sagestuff/integer_mod.pyx in\nsage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:1731)()\n\n/home/carlo/work/sagestuff/integer_mod.pyx in\nsage.rings.integer_mod.IntegerMod_int.__init__\n(sage/rings/integer_mod.c:10153)()\n\n/home/carlo/work/sagestuff/integer_ring.pyx in\nsage.rings.integer_ring.IntegerRing_class.__call__\n(sage/rings/integer_ring.c:4473)()\n\n<type 'exceptions.TypeError'>: unable to convert x (=x - y) to an integer\n\n\n\nAny ideas?\n\n--\nCarlo Hamalainen\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3124\n\n",
+    "body": "Assignee: somebody\n\nCC:  alexghitza\n\n```\nHi,\n\nI think this is a bug. Solving x == y mod 3 works fine:\n\nsage: var('x,y')\n(x, y)\nsage: solve_mod([x == y], 3)\n[(0, 0), (1, 1), (2, 2)]\n\nBut solving mod 2 blows up:\n\n\nsage: solve_mod([x == y], 2)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/carlo/work/sagestuff/<ipython console> in <module>()\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/calculus/equations.py\nin solve_mod(eqns, modulus)\n  1339     S = MPolynomialRing(R, len(vars), vars)\n  1340     eqns_mod = [S(eq) if is_SymbolicExpression(eq) else \\\n-> 1341                   S(eq.lhs() - eq.rhs()) for eq in eqns]\n  1342\n  1343     ans = []\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring.py\nin __call__(self, x, check)\n   380\n   381         elif hasattr(x, '_polynomial_'):\n--> 382             return x._polynomial_(self)\n   383\n   384         elif isinstance(x, str) and x in self.variable_names():\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\nin _polynomial_(self, R)\n  1809         if len(sub) == 0:\n  1810             try:\n-> 1811                 return R(B(self))\n  1812             except TypeError:\n  1813                 if len(vars) == 1:\n\n/home/carlo/sage/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py\nin __call__(self, x)\n   574     def __call__(self, x):\n   575         try:\n--> 576             return integer_mod.IntegerMod(self, x)\n   577         except (NotImplementedError, PariError):\n   578             return TypeError, \"error coercing to finite field\"\n\n/home/carlo/work/sagestuff/integer_mod.pyx in\nsage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:1731)()\n\n/home/carlo/work/sagestuff/integer_mod.pyx in\nsage.rings.integer_mod.IntegerMod_int.__init__\n(sage/rings/integer_mod.c:10153)()\n\n/home/carlo/work/sagestuff/integer_ring.pyx in\nsage.rings.integer_ring.IntegerRing_class.__call__\n(sage/rings/integer_ring.c:4473)()\n\n<type 'exceptions.TypeError'>: unable to convert x (=x - y) to an integer\n\n\n\nAny ideas?\n\n--\nCarlo Hamalainen\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3124\n\n",
     "created_at": "2008-05-07T15:43:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_003124.json:
 Assignee: somebody
 
 CC:  alexghitza
-
 
 ```
 Hi,
@@ -93,7 +92,6 @@ Any ideas?
 Carlo Hamalainen
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3124
 
 
@@ -105,7 +103,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3124
 archive/issue_comments_021601.json:
 ```json
 {
-    "body": "The underlying issue is that the reprs of the generators of polynomial rings over Z/2Z have minus signs and SymbolicArithmetic._polynomial_ expects them to not have the signs.  I think the appropriate fix would be to fix the printing for the generators of polynomial rings over Z/2Z\n\n\n```\nsage: Integers(3)['x,y'].gens()\n(x, y)\nsage: Integers(2)['x,y'].gens()\n(-x, -y)\n```\n\n\n\n\n```\n        for v in vars:\n            r = repr(v)\n            for g in G:\n                if repr(g) == r:\n                    sub.append((v,g))\n```\n",
+    "body": "The underlying issue is that the reprs of the generators of polynomial rings over Z/2Z have minus signs and SymbolicArithmetic._polynomial_ expects them to not have the signs.  I think the appropriate fix would be to fix the printing for the generators of polynomial rings over Z/2Z\n\n```\nsage: Integers(3)['x,y'].gens()\n(x, y)\nsage: Integers(2)['x,y'].gens()\n(-x, -y)\n```\n\n\n```\n        for v in vars:\n            r = repr(v)\n            for g in G:\n                if repr(g) == r:\n                    sub.append((v,g))\n```",
     "created_at": "2008-05-08T04:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
@@ -116,15 +114,12 @@ archive/issue_comments_021601.json:
 
 The underlying issue is that the reprs of the generators of polynomial rings over Z/2Z have minus signs and SymbolicArithmetic._polynomial_ expects them to not have the signs.  I think the appropriate fix would be to fix the printing for the generators of polynomial rings over Z/2Z
 
-
 ```
 sage: Integers(3)['x,y'].gens()
 (x, y)
 sage: Integers(2)['x,y'].gens()
 (-x, -y)
 ```
-
-
 
 
 ```
@@ -134,7 +129,6 @@ sage: Integers(2)['x,y'].gens()
                 if repr(g) == r:
                     sub.append((v,g))
 ```
-
 
 
 

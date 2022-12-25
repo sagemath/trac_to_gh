@@ -3,7 +3,7 @@
 archive/issues_008491.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robert-marik\n\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robert-marik\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
     "created_at": "2010-03-10T17:23:44Z",
     "labels": [
         "component: algebra",
@@ -20,13 +20,11 @@ Assignee: @aghitza
 
 CC:  @robert-marik
 
-
 ```
 sage: f = 6.5/x
 sage: latex(f)
 \frac{1}{x}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8491
 

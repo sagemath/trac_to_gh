@@ -75,7 +75,7 @@ Changing keywords from "Words, Sets" to "Words, Sets, Cernay2012".
 archive/issue_comments_082015.json:
 ```json
 {
-    "body": "Many tests currently break because of the following behavior\n\n```\nsage: int(2) in Integers()\nTrue\nsage: int(2) in PositiveIntegers()\nFalse\n```\n",
+    "body": "Many tests currently break because of the following behavior\n\n```\nsage: int(2) in Integers()\nTrue\nsage: int(2) in PositiveIntegers()\nFalse\n```",
     "created_at": "2012-08-16T11:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ True
 sage: int(2) in PositiveIntegers()
 False
 ```
-
 
 
 
@@ -144,7 +143,7 @@ Travis
 archive/issue_comments_082018.json:
 ```json
 {
-    "body": "Replying to [comment:7 tscrim]:\n> Hey Vincent,\n>    The patch needs rebasing to 5.5.rc0. Once you upload the rebase, I'll review the patch.\n> \n> I think the only merged patch which might have caused the conflict is #13677.\n> \n> Thanks,\n\n> Travis\n\nHi Travis,\n\nI rebased the patch (together with Stepan Starosta) and actually we decided to simplify the FiniteEnumeratedSet (the new version was slower). Everything should apply and work on 5.5.rc0.\n\nBest,\nVincent",
+    "body": "Replying to [comment:7 tscrim]:\n> Hey Vincent,\n>    The patch needs rebasing to 5.5.rc0. Once you upload the rebase, I'll review the patch.\n> \n> I think the only merged patch which might have caused the conflict is #13677.\n> \n> Thanks,\n\n\n> Travis\n\n\nHi Travis,\n\nI rebased the patch (together with Stepan Starosta) and actually we decided to simplify the FiniteEnumeratedSet (the new version was slower). Everything should apply and work on 5.5.rc0.\n\nBest,\nVincent",
     "created_at": "2012-11-30T16:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -161,7 +160,9 @@ Replying to [comment:7 tscrim]:
 > 
 > Thanks,
 
+
 > Travis
+
 
 Hi Travis,
 
@@ -195,7 +196,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_082020.json:
 ```json
 {
-    "body": "Hey Vincent and Stepan,\n\nIn `build_alphabet`, the docstring states that this is an ordered alphabet. I get the following:\n\n```\nsage: A = Alphabet([1,3,7,2])\nsage: A(3) < A(7)     \nTrue\nsage: A(3) < A(2)\nFalse\n```\n\nI expected the last one to return `True` since I expected these to be letters in `A` and the comparison to take place in there (not default back to their natural ordering). I also get this:\n\n```\nsage: B = Alphabet(['a', 'b'])\nsage: B('a')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: Cannot convert str to sage.structure.element.Element\n```\n\nand both problems are because the alphabet does not have any element class. These problems were worse before this patch, but I was wondering if you wanted to take care of these here?\n\n`Words` still does proper comparison:\n\n```\nsage: W = Words(A); W\nWords over {1, 3, 7, 2}\nsage: W([2,1]) < W([2,2])\nTrue\nsage: W([2,3]) < W([2,2])\nTrue\nsage: W([2,2]) < W([2,7])\nFalse\n```\n\n\nAdditionally on `is_endomorphism()` (line 1111 in `morphism.py`), it was changed to test equality of the domain and codomain. What was the reasoning for this?\n\nThis applied cleanly for me on `5.5.rc0`, I'm curious as to why the patchbot defaulted back to `5.4.rc3`...\n\nThanks for you work on this,\n\nTravis",
+    "body": "Hey Vincent and Stepan,\n\nIn `build_alphabet`, the docstring states that this is an ordered alphabet. I get the following:\n\n```\nsage: A = Alphabet([1,3,7,2])\nsage: A(3) < A(7)     \nTrue\nsage: A(3) < A(2)\nFalse\n```\nI expected the last one to return `True` since I expected these to be letters in `A` and the comparison to take place in there (not default back to their natural ordering). I also get this:\n\n```\nsage: B = Alphabet(['a', 'b'])\nsage: B('a')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: Cannot convert str to sage.structure.element.Element\n```\nand both problems are because the alphabet does not have any element class. These problems were worse before this patch, but I was wondering if you wanted to take care of these here?\n\n`Words` still does proper comparison:\n\n```\nsage: W = Words(A); W\nWords over {1, 3, 7, 2}\nsage: W([2,1]) < W([2,2])\nTrue\nsage: W([2,3]) < W([2,2])\nTrue\nsage: W([2,2]) < W([2,7])\nFalse\n```\n\nAdditionally on `is_endomorphism()` (line 1111 in `morphism.py`), it was changed to test equality of the domain and codomain. What was the reasoning for this?\n\nThis applied cleanly for me on `5.5.rc0`, I'm curious as to why the patchbot defaulted back to `5.4.rc3`...\n\nThanks for you work on this,\n\nTravis",
     "created_at": "2012-12-02T08:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -215,7 +216,6 @@ True
 sage: A(3) < A(2)
 False
 ```
-
 I expected the last one to return `True` since I expected these to be letters in `A` and the comparison to take place in there (not default back to their natural ordering). I also get this:
 
 ```
@@ -226,7 +226,6 @@ TypeError                                 Traceback (most recent call last)
 ...
 TypeError: Cannot convert str to sage.structure.element.Element
 ```
-
 and both problems are because the alphabet does not have any element class. These problems were worse before this patch, but I was wondering if you wanted to take care of these here?
 
 `Words` still does proper comparison:
@@ -241,7 +240,6 @@ True
 sage: W([2,2]) < W([2,7])
 False
 ```
-
 
 Additionally on `is_endomorphism()` (line 1111 in `morphism.py`), it was changed to test equality of the domain and codomain. What was the reasoning for this?
 
@@ -276,7 +274,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_082022.json:
 ```json
 {
-    "body": "Hi Travis,\n\nthanks for reviewing the patch and your comments! I uploaded a new version with two major changes\n* a new class TotallyOrderedFiniteSet\n* a dependency on #13801\n\nAll problems are similar to the ones there are currently with Nathann and posets (#13747) : to be or not to be a facade, that is the question. One major difference with the previous patch is that we provide a class TotallyOrderedFiniteSet which has a facade option behavior and may choose the behavior you prefer.\n\n**How do facades behave**\n\nFacade are the default behavior for alphabets. The disadvantage of having a facade is that the elements need to have their order implemented, i.e., we get\n\n```\nsage: A = TotallyOrderedFiniteSet([0,2,1], facade=True)\nsage: A(2) < A(1) \nFalse\n```\n\nAnother disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error\n\n```\nsage: B = TotallyOrderedFiniteSet(['a','b',3],facade=True)\nsage: B('a')\nTraceback (most recent call last):\n...\nTypeError: Cannot convert str to sage.structure.element.Element\n```\n\n\n**Not using facade ?**\n\nThe possible workaround for the two above problems is to have a dedicated element class for TotallyOrderedFiniteSet. If the option facade is set to False, it is what you get\n\n```\nsage: C = TotallyOrderedFiniteSet([1, 'a', -4], facade = False)\nsage: C(1) < C(-4)\nTrue\nsage: C('a')\n'a'\n```\n\n... but\n\n```\nsage: 1 in C\nFalse\nsage: 1 == C(1)\nFalse\nsage: C(1) == 1\nTrue\n```\n\n\n**Partial conclusion**\n\n we do prefer having facade = True as a default behavior (as Nathann does).\n\n**About endomorphisms**\n\nTwo reason to change is_endomorphism() are: \n  1) the operator <= is not defined on sets\n  2) the test was mathematically inaccurate : an endomorphism is a morphism for which domain = codomain (and not just a subset of codomain)\n\nThanks,\nStepan and Vincent",
+    "body": "Hi Travis,\n\nthanks for reviewing the patch and your comments! I uploaded a new version with two major changes\n* a new class TotallyOrderedFiniteSet\n* a dependency on #13801\n\nAll problems are similar to the ones there are currently with Nathann and posets (#13747) : to be or not to be a facade, that is the question. One major difference with the previous patch is that we provide a class TotallyOrderedFiniteSet which has a facade option behavior and may choose the behavior you prefer.\n\n**How do facades behave**\n\nFacade are the default behavior for alphabets. The disadvantage of having a facade is that the elements need to have their order implemented, i.e., we get\n\n```\nsage: A = TotallyOrderedFiniteSet([0,2,1], facade=True)\nsage: A(2) < A(1) \nFalse\n```\nAnother disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error\n\n```\nsage: B = TotallyOrderedFiniteSet(['a','b',3],facade=True)\nsage: B('a')\nTraceback (most recent call last):\n...\nTypeError: Cannot convert str to sage.structure.element.Element\n```\n\n**Not using facade ?**\n\nThe possible workaround for the two above problems is to have a dedicated element class for TotallyOrderedFiniteSet. If the option facade is set to False, it is what you get\n\n```\nsage: C = TotallyOrderedFiniteSet([1, 'a', -4], facade = False)\nsage: C(1) < C(-4)\nTrue\nsage: C('a')\n'a'\n```\n... but\n\n```\nsage: 1 in C\nFalse\nsage: 1 == C(1)\nFalse\nsage: C(1) == 1\nTrue\n```\n\n**Partial conclusion**\n\n we do prefer having facade = True as a default behavior (as Nathann does).\n\n**About endomorphisms**\n\nTwo reason to change is_endomorphism() are: \n  1) the operator <= is not defined on sets\n  2) the test was mathematically inaccurate : an endomorphism is a morphism for which domain = codomain (and not just a subset of codomain)\n\nThanks,\nStepan and Vincent",
     "created_at": "2012-12-05T17:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -302,7 +300,6 @@ sage: A = TotallyOrderedFiniteSet([0,2,1], facade=True)
 sage: A(2) < A(1) 
 False
 ```
-
 Another disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error
 
 ```
@@ -312,7 +309,6 @@ Traceback (most recent call last):
 ...
 TypeError: Cannot convert str to sage.structure.element.Element
 ```
-
 
 **Not using facade ?**
 
@@ -325,7 +321,6 @@ True
 sage: C('a')
 'a'
 ```
-
 ... but
 
 ```
@@ -336,7 +331,6 @@ False
 sage: C(1) == 1
 True
 ```
-
 
 **Partial conclusion**
 
@@ -358,7 +352,7 @@ Stepan and Vincent
 archive/issue_comments_082023.json:
 ```json
 {
-    "body": "Replying to [comment:11 vdelecroix]:\n> Another disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error\n> {{{\n> sage: B = TotallyOrderedFiniteSet(['a','b',3],facade=True)\n> sage: B('a')\n> Traceback (most recent call last):\n> ...\n> TypeError: Cannot convert str to sage.structure.element.Element\n> }}}\n\nYeah, we hit the same problem in Poset, and we worked around it by\nhaving a custom __call__ function. At some point, we should really fix\nit once for all in Parent.__call__.\n\nCheers,\n                              Nicolas",
+    "body": "Replying to [comment:11 vdelecroix]:\n> Another disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error\n> \n> ```\n> sage: B = TotallyOrderedFiniteSet(['a','b',3],facade=True)\n> sage: B('a')\n> Traceback (most recent call last):\n> ...\n> TypeError: Cannot convert str to sage.structure.element.Element\n> ```\n\n\nYeah, we hit the same problem in Poset, and we worked around it by\nhaving a custom __call__ function. At some point, we should really fix\nit once for all in Parent.__call__.\n\nCheers,\n                              Nicolas",
     "created_at": "2012-12-06T09:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -369,13 +363,15 @@ archive/issue_comments_082023.json:
 
 Replying to [comment:11 vdelecroix]:
 > Another disadvantage of having a facade is that if some elements do not inherit from Element, the constructor raises an error
-> {{{
+> 
+> ```
 > sage: B = TotallyOrderedFiniteSet(['a','b',3],facade=True)
 > sage: B('a')
 > Traceback (most recent call last):
 > ...
 > TypeError: Cannot convert str to sage.structure.element.Element
-> }}}
+> ```
+
 
 Yeah, we hit the same problem in Poset, and we worked around it by
 having a custom __call__ function. At some point, we should really fix
@@ -391,7 +387,7 @@ Cheers,
 archive/issue_comments_082024.json:
 ```json
 {
-    "body": "Hey Stepan and Vincent,\n\nFew more things:\n\n- I get the same doctest failures as the patchbot; you just need to change the tests' output in `finite_word.py`.\n\n- Would it be possible to just have `Alphabet()` (thus removing/renaming the `build_alphabet()`)?\n\n- Could you issue a deprecation warning for `OrderedAlphabet`?\n\n- The `__new__()` function for `OrderedAlphabet` needs a doctest.\n\n- I would recommend for the documentation of `OrderedAlphabet_backward_compatibility`:\n\n```\nVersions prior to :trac:`8920` uses the ``Alphabet`` classes with an\nargument ``._alphabet()`` instead of ``._elements()`` used in\n:class:`TotallyOrderedFiniteSet`. This class is dedicated to handling this\nproblem which occurs when unpickling :class:`OrderedAlphabet`.\n```\n\n\n- The operator `<=` for `Alphabet` and `Words` did not behave as I expected:\n\n```\n# Before\nsage: Alphabet('abc') <= Alphabet('12')\nFalse\nsage: Alphabet('abc') >= Alphabet('12')\nFalse\nsage: Alphabet('abcdef') <= Alphabet('12')\nFalse\nsage: Words('a') <= Words('123')           \nFalse\nsage: Words('abcdef') <= Words('123')\nFalse\nsage: Words('abcdef') >= Words('123')\nFalse\n\n# With the patch\nsage: Alphabet('abc') <= Alphabet('12')\nTrue\nsage: Alphabet('abc') >= Alphabet('12')\nFalse\nsage: Alphabet('abcdef') <= Alphabet('12')\nTrue\nsage: Words('a') <= Words('123')     \nTrue\nsage: Words('abcdef') <= Words('123')\nFalse\nsage: Words('abcdef') >= Words('123')\nTrue\n```\n\n\n- I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.\n\n  If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests\n\n```\nsage: w = WordMorphism('a->a,b->aa,c->aaa', codomain=Words('abc'))\nsage: w.is_endomorphism()\nTrue\nsage: w2 = WordMorphism('a->a,b->aa,c->aaa')                      \nsage: w == w2\nFalse\n```\n\n  However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.\n\nThank you,\n\nTravis",
+    "body": "Hey Stepan and Vincent,\n\nFew more things:\n\n- I get the same doctest failures as the patchbot; you just need to change the tests' output in `finite_word.py`.\n\n- Would it be possible to just have `Alphabet()` (thus removing/renaming the `build_alphabet()`)?\n\n- Could you issue a deprecation warning for `OrderedAlphabet`?\n\n- The `__new__()` function for `OrderedAlphabet` needs a doctest.\n\n- I would recommend for the documentation of `OrderedAlphabet_backward_compatibility`:\n\n```\nVersions prior to :trac:`8920` uses the ``Alphabet`` classes with an\nargument ``._alphabet()`` instead of ``._elements()`` used in\n:class:`TotallyOrderedFiniteSet`. This class is dedicated to handling this\nproblem which occurs when unpickling :class:`OrderedAlphabet`.\n```\n\n- The operator `<=` for `Alphabet` and `Words` did not behave as I expected:\n\n```\n# Before\nsage: Alphabet('abc') <= Alphabet('12')\nFalse\nsage: Alphabet('abc') >= Alphabet('12')\nFalse\nsage: Alphabet('abcdef') <= Alphabet('12')\nFalse\nsage: Words('a') <= Words('123')           \nFalse\nsage: Words('abcdef') <= Words('123')\nFalse\nsage: Words('abcdef') >= Words('123')\nFalse\n\n# With the patch\nsage: Alphabet('abc') <= Alphabet('12')\nTrue\nsage: Alphabet('abc') >= Alphabet('12')\nFalse\nsage: Alphabet('abcdef') <= Alphabet('12')\nTrue\nsage: Words('a') <= Words('123')     \nTrue\nsage: Words('abcdef') <= Words('123')\nFalse\nsage: Words('abcdef') >= Words('123')\nTrue\n```\n\n- I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.\n\n  If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests\n\n```\nsage: w = WordMorphism('a->a,b->aa,c->aaa', codomain=Words('abc'))\nsage: w.is_endomorphism()\nTrue\nsage: w2 = WordMorphism('a->a,b->aa,c->aaa')                      \nsage: w == w2\nFalse\n```\n  However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.\n\nThank you,\n\nTravis",
     "created_at": "2012-12-12T20:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -420,7 +416,6 @@ argument ``._alphabet()`` instead of ``._elements()`` used in
 :class:`TotallyOrderedFiniteSet`. This class is dedicated to handling this
 problem which occurs when unpickling :class:`OrderedAlphabet`.
 ```
-
 
 - The operator `<=` for `Alphabet` and `Words` did not behave as I expected:
 
@@ -454,7 +449,6 @@ sage: Words('abcdef') >= Words('123')
 True
 ```
 
-
 - I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.
 
   If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests
@@ -467,7 +461,6 @@ sage: w2 = WordMorphism('a->a,b->aa,c->aaa')
 sage: w == w2
 False
 ```
-
   However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.
 
 Thank you,
@@ -481,7 +474,7 @@ Travis
 archive/issue_comments_082025.json:
 ```json
 {
-    "body": "Hey Stepan and Vincent,\n\nReplying to [comment:13 tscrim]:\n> - I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.\n> \n>   If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests\n> {{{\n> sage: w = WordMorphism('a->a,b->aa,c->aaa', codomain=Words('abc'))\n> sage: w.is_endomorphism()\n> True\n> sage: w2 = WordMorphism('a->a,b->aa,c->aaa')                      \n> sage: w == w2\n> False\n> }}}\n>   However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.\n\nI talked with Nicolas about this, and he agreed with the changes in your patch, but also said we needed to change the `==` operator to check the codomain (in particular, we don't want a map `f` to be surjective and `g` to not be and compare equal because `g` has a larger codomain). This might be a more general problem, and I'll take a look at it today and let you know what I find.\n\nBest,\n\nTravis",
+    "body": "Hey Stepan and Vincent,\n\nReplying to [comment:13 tscrim]:\n> - I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.\n> \n>   If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests\n> \n> ```\n> sage: w = WordMorphism('a->a,b->aa,c->aaa', codomain=Words('abc'))\n> sage: w.is_endomorphism()\n> True\n> sage: w2 = WordMorphism('a->a,b->aa,c->aaa')                      \n> sage: w == w2\n> False\n> ```\n>   However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.\n\n\nI talked with Nicolas about this, and he agreed with the changes in your patch, but also said we needed to change the `==` operator to check the codomain (in particular, we don't want a map `f` to be surjective and `g` to not be and compare equal because `g` has a larger codomain). This might be a more general problem, and I'll take a look at it today and let you know what I find.\n\nBest,\n\nTravis",
     "created_at": "2013-02-01T12:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -496,15 +489,17 @@ Replying to [comment:13 tscrim]:
 > - I'm still uncomfortable with the change to `is_endomorphism()` since I would (naively) expect the map `a->a, b->aa, c->aaa` be an endomorphism. The problem is word morphism automatically sets the codomain based on the image. As for the mathematics, yes, if it is a proper subset, it is not an endomorphism, but it naturally extends to one. I believe that having anything that is naturally extendable to an endomorphism should be considered an endomorphism by sage via the coercion model. Also in case you're worried, the above morphism worked with composition.
 > 
 >   If a third party agrees with the changes in the patch, then I would add a warning to `is_endomorphism()` and/or to `WordMorphism` about defining endomorphisms and add the tests
-> {{{
+> 
+> ```
 > sage: w = WordMorphism('a->a,b->aa,c->aaa', codomain=Words('abc'))
 > sage: w.is_endomorphism()
 > True
 > sage: w2 = WordMorphism('a->a,b->aa,c->aaa')                      
 > sage: w == w2
 > False
-> }}}
+> ```
 >   However there is one problem with this, and that is `w == w2` returns `True`. Thus the equality operator will need to be changed to reflect the dependency on the codomain.
+
 
 I talked with Nicolas about this, and he agreed with the changes in your patch, but also said we needed to change the `==` operator to check the codomain (in particular, we don't want a map `f` to be surjective and `g` to not be and compare equal because `g` has a larger codomain). This might be a more general problem, and I'll take a look at it today and let you know what I find.
 
@@ -650,7 +645,7 @@ archive/issue_events_021780.json:
 archive/issue_comments_082032.json:
 ```json
 {
-    "body": "This needs to be rebased to #6495 and also this fuzz needs to be fixed:\n\n```\napplying /release/merger/patches/trac_8920-alphabet.patch\nunable to find 'doc/en/reference/structure.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/structure.rst.rej\npatching file sage/combinat/words/morphism.py\nHunk #1 succeeded at 12 with fuzz 2 (offset 0 lines).\n```\n",
+    "body": "This needs to be rebased to #6495 and also this fuzz needs to be fixed:\n\n```\napplying /release/merger/patches/trac_8920-alphabet.patch\nunable to find 'doc/en/reference/structure.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/structure.rst.rej\npatching file sage/combinat/words/morphism.py\nHunk #1 succeeded at 12 with fuzz 2 (offset 0 lines).\n```",
     "created_at": "2013-02-19T11:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -668,7 +663,6 @@ unable to find 'doc/en/reference/structure.rst' for patching
 patching file sage/combinat/words/morphism.py
 Hunk #1 succeeded at 12 with fuzz 2 (offset 0 lines).
 ```
-
 
 
 
@@ -733,7 +727,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_082036.json:
 ```json
 {
-    "body": "On OS X:\n\n```\nsage -t  --long -force_lib devel/sage/sage/sets/totally_ordered_finite_set.py\n**********************************************************************\nFile \"/Users/dehayebuildbot/build/sage/dehaye/dehaye_full/build/sage-5.8.beta1/devel/sage-main/sage/sets/totally_ordered_finite_set.py\", line 207:\n    sage: A(1) < 1\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
+    "body": "On OS X:\n\n```\nsage -t  --long -force_lib devel/sage/sage/sets/totally_ordered_finite_set.py\n**********************************************************************\nFile \"/Users/dehayebuildbot/build/sage/dehaye/dehaye_full/build/sage-5.8.beta1/devel/sage-main/sage/sets/totally_ordered_finite_set.py\", line 207:\n    sage: A(1) < 1\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```",
     "created_at": "2013-02-21T13:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -758,13 +752,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_082037.json:
 ```json
 {
-    "body": "On `arando` (Ubuntu 12.04 Linux i686 32-bit):\n\n```\nsage -t  --long -force_lib devel/sage/sage/combinat/words/words.py\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.8.beta1/devel/sage-main/sage/combinat/words/words.py\", line 851:\n    sage: Words('ab') >= Words('abc')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.8.beta1/devel/sage-main/sage/combinat/words/words.py\", line 853:\n    sage: Words('abc') >= Words('ab')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
+    "body": "On `arando` (Ubuntu 12.04 Linux i686 32-bit):\n\n```\nsage -t  --long -force_lib devel/sage/sage/combinat/words/words.py\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.8.beta1/devel/sage-main/sage/combinat/words/words.py\", line 851:\n    sage: Words('ab') >= Words('abc')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.8.beta1/devel/sage-main/sage/combinat/words/words.py\", line 853:\n    sage: Words('abc') >= Words('ab')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```",
     "created_at": "2013-02-21T13:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8920",
     "type": "issue_comment",
@@ -793,7 +786,6 @@ Got:
     False
 **********************************************************************
 ```
-
 
 
 

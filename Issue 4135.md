@@ -142,7 +142,7 @@ I've had trouble in the pass with getting administrative users recognized by the
 archive/issue_comments_029934.json:
 ```json
 {
-    "body": "I've applied all the necessary patches to a 3.1.3alpha1 tree, but when I try to start Sage, I get:\n\n```\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py in <module>()\n   1935     return False\n   1936 \n-> 1937 from sage.server.notebook.template import registration_page_template\n   1938 from sage.server.notebook.template import login_page_template\n   1939 \n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in <module>()\n     38 templates = ['login', 'yes_no', 'failed_login', 'register', 'admin_add_user']\n     39 for name in templates:\n---> 40     G[name + '_template'] =  PageTemplate(pjoin(path, '%s.template'%name))\n     41 \n     42 def login_page_template(accounts, default_user, is_username_error=False, is_password_error=False, welcome=None, recover=False):\n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in __init__(self, filename)\n     27 class PageTemplate:\n     28     def __init__(self, filename):\n---> 29         file = open(filename, 'r')\n     30         self.__template = Template(file.read())\n     31         file.close()\n\nIOError: [Errno 2] No such file or directory: '/var/tmp/sage-3.1.3.alpha1/data/extcode/notebook/templates/admin_add_user.template'\n```\n\nThat's just the last part of the traceback; the rest doesn't seem so interesting...but let me know if you want to see it.\n\nI've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?",
+    "body": "I've applied all the necessary patches to a 3.1.3alpha1 tree, but when I try to start Sage, I get:\n\n```\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py in <module>()\n   1935     return False\n   1936 \n-> 1937 from sage.server.notebook.template import registration_page_template\n   1938 from sage.server.notebook.template import login_page_template\n   1939 \n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in <module>()\n     38 templates = ['login', 'yes_no', 'failed_login', 'register', 'admin_add_user']\n     39 for name in templates:\n---> 40     G[name + '_template'] =  PageTemplate(pjoin(path, '%s.template'%name))\n     41 \n     42 def login_page_template(accounts, default_user, is_username_error=False, is_password_error=False, welcome=None, recover=False):\n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in __init__(self, filename)\n     27 class PageTemplate:\n     28     def __init__(self, filename):\n---> 29         file = open(filename, 'r')\n     30         self.__template = Template(file.read())\n     31         file.close()\n\nIOError: [Errno 2] No such file or directory: '/var/tmp/sage-3.1.3.alpha1/data/extcode/notebook/templates/admin_add_user.template'\n```\nThat's just the last part of the traceback; the rest doesn't seem so interesting...but let me know if you want to see it.\n\nI've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?",
     "created_at": "2008-09-30T01:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -177,7 +177,6 @@ I've applied all the necessary patches to a 3.1.3alpha1 tree, but when I try to 
 
 IOError: [Errno 2] No such file or directory: '/var/tmp/sage-3.1.3.alpha1/data/extcode/notebook/templates/admin_add_user.template'
 ```
-
 That's just the last part of the traceback; the rest doesn't seem so interesting...but let me know if you want to see it.
 
 I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?
@@ -189,7 +188,7 @@ I've looked through the patches from 4134, 2407, and this ticket, and I don't se
 archive/issue_comments_029935.json:
 ```json
 {
-    "body": "Replying to [comment:7 ddrake]:\n> I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?\n\nDid you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4135/extcode-4135_1.patch') `",
+    "body": "Replying to [comment:7 ddrake]:\n> I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?\n\n\nDid you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4135/extcode-4135_1.patch') `",
     "created_at": "2008-09-30T02:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -201,6 +200,7 @@ archive/issue_comments_029935.json:
 Replying to [comment:7 ddrake]:
 > I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?
 
+
 Did you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4135/extcode-4135_1.patch') `
 
 
@@ -210,7 +210,7 @@ Did you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/tic
 archive/issue_comments_029936.json:
 ```json
 {
-    "body": "Or if you're using queues and don't want to mess up your tree, go to $SAGE_ROOT/data/extcode and do:\n\n\n```\nhg qinit\nhg qimport /path/to/extcode-patch\nhg qpush\n```\n",
+    "body": "Or if you're using queues and don't want to mess up your tree, go to $SAGE_ROOT/data/extcode and do:\n\n```\nhg qinit\nhg qimport /path/to/extcode-patch\nhg qpush\n```",
     "created_at": "2008-09-30T02:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -221,13 +221,11 @@ archive/issue_comments_029936.json:
 
 Or if you're using queues and don't want to mess up your tree, go to $SAGE_ROOT/data/extcode and do:
 
-
 ```
 hg qinit
 hg qimport /path/to/extcode-patch
 hg qpush
 ```
-
 
 
 
@@ -578,7 +576,7 @@ Everything works perfectly except for the cancel link in the Account Settings pa
 archive/issue_comments_029955.json:
 ```json
 {
-    "body": "Replying to [comment:24 timdumol]:\n> Applied patch to r12658.\n> \n> Everything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.\n\nI see the same error. I put in a `<pre>{{ debug()|e }}</pre>` bit (see http://jinja.pocoo.org/1/documentation/designerdoc) into `account_settings.html` and it looks like the template engine is not getting a username.",
+    "body": "Replying to [comment:24 timdumol]:\n> Applied patch to r12658.\n> \n> Everything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.\n\n\nI see the same error. I put in a `<pre>{{ debug()|e }}</pre>` bit (see http://jinja.pocoo.org/1/documentation/designerdoc) into `account_settings.html` and it looks like the template engine is not getting a username.",
     "created_at": "2009-07-27T22:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -591,6 +589,7 @@ Replying to [comment:24 timdumol]:
 > Applied patch to r12658.
 > 
 > Everything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.
+
 
 I see the same error. I put in a `<pre>{{ debug()|e }}</pre>` bit (see http://jinja.pocoo.org/1/documentation/designerdoc) into `account_settings.html` and it looks like the template engine is not getting a username.
 
@@ -637,7 +636,7 @@ I don't understand how (or if?) this patch implements the mentioned temporary pa
 archive/issue_comments_029958.json:
 ```json
 {
-    "body": "Replying to [comment:27 wjp]:\n> I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.\n\nWhen one adds a new user, you get a page saying \"The temporary password for the new user foo is 52oN5g2a\". Unfortunately, that password does not seem to be temporary; the new user can log in and out, and back in again with that password. When I read \"temporary password\", I think that the user will be able to log in once, and then be forced to change the password right away.\n\nAnother problem with the temporary password page is that the title of the page is \"Error\", even though there's no error.\n\nThat said: this patch, along with #6856 (which I just positively reviewed) does give us the basic functionality for adding users and resetting passwords from inside the notebook, which is something I'd really like. The last patch applies cleanly to 4.1.1. What do people think of merging this and opening a new ticket to fix the temporary password bits? (Or changing this patch so that it doesn't claim that the new password is temporary?)",
+    "body": "Replying to [comment:27 wjp]:\n> I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.\n\n\nWhen one adds a new user, you get a page saying \"The temporary password for the new user foo is 52oN5g2a\". Unfortunately, that password does not seem to be temporary; the new user can log in and out, and back in again with that password. When I read \"temporary password\", I think that the user will be able to log in once, and then be forced to change the password right away.\n\nAnother problem with the temporary password page is that the title of the page is \"Error\", even though there's no error.\n\nThat said: this patch, along with #6856 (which I just positively reviewed) does give us the basic functionality for adding users and resetting passwords from inside the notebook, which is something I'd really like. The last patch applies cleanly to 4.1.1. What do people think of merging this and opening a new ticket to fix the temporary password bits? (Or changing this patch so that it doesn't claim that the new password is temporary?)",
     "created_at": "2009-09-01T23:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -648,6 +647,7 @@ archive/issue_comments_029958.json:
 
 Replying to [comment:27 wjp]:
 > I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.
+
 
 When one adds a new user, you get a page saying "The temporary password for the new user foo is 52oN5g2a". Unfortunately, that password does not seem to be temporary; the new user can log in and out, and back in again with that password. When I read "temporary password", I think that the user will be able to log in once, and then be forced to change the password right away.
 
@@ -740,7 +740,7 @@ The temporary password ticket is #6871.
 archive/issue_comments_029963.json:
 ```json
 {
-    "body": "I got two hunk failures when merging `trac_4135.4.patch`:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4135/trac_4135.4.patch && hg qpush\nadding trac_4135.4.patch to series file\napplying trac_4135.4.patch\npatching file sage/server/notebook/twist.py\nHunk #6 FAILED at 217\nHunk #69 FAILED at 1747\n2 out of 102 hunks FAILED -- saving rejects to file sage/server/notebook/twist.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_4135.4.patch\n```\n\nThis might depend on #6742, #6840, and #6568.",
+    "body": "I got two hunk failures when merging `trac_4135.4.patch`:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4135/trac_4135.4.patch && hg qpush\nadding trac_4135.4.patch to series file\napplying trac_4135.4.patch\npatching file sage/server/notebook/twist.py\nHunk #6 FAILED at 217\nHunk #69 FAILED at 1747\n2 out of 102 hunks FAILED -- saving rejects to file sage/server/notebook/twist.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_4135.4.patch\n```\nThis might depend on #6742, #6840, and #6568.",
     "created_at": "2009-09-03T06:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -763,7 +763,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_4135.4.patch
 ```
-
 This might depend on #6742, #6840, and #6568.
 
 
@@ -773,7 +772,7 @@ This might depend on #6742, #6840, and #6568.
 archive/issue_comments_029964.json:
 ```json
 {
-    "body": "Replying to [comment:32 mvngu]:\n> I got two hunk failures when merging `trac_4135.4.patch`:\n\n(snip)\n\n> This might depend on #6742, #6840, and #6568.\n\nI tried applying the patch here on top of a 4.1.1 tree that already had the patches from those three tickets applied, and I get a different hunk that won't apply. Perhaps I'll wait for the alpha0 tarball to be released and rebase the patch here based on that...or, you could `hg serve` your merge tree and let me pull from that.",
+    "body": "Replying to [comment:32 mvngu]:\n> I got two hunk failures when merging `trac_4135.4.patch`:\n\n\n(snip)\n\n> This might depend on #6742, #6840, and #6568.\n\n\nI tried applying the patch here on top of a 4.1.1 tree that already had the patches from those three tickets applied, and I get a different hunk that won't apply. Perhaps I'll wait for the alpha0 tarball to be released and rebase the patch here based on that...or, you could `hg serve` your merge tree and let me pull from that.",
     "created_at": "2009-09-03T08:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
@@ -785,9 +784,11 @@ archive/issue_comments_029964.json:
 Replying to [comment:32 mvngu]:
 > I got two hunk failures when merging `trac_4135.4.patch`:
 
+
 (snip)
 
 > This might depend on #6742, #6840, and #6568.
+
 
 I tried applying the patch here on top of a 4.1.1 tree that already had the patches from those three tickets applied, and I get a different hunk that won't apply. Perhaps I'll wait for the alpha0 tarball to be released and rebase the patch here based on that...or, you could `hg serve` your merge tree and let me pull from that.
 

@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_074452.json:
 ```json
 {
-    "body": "Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by @jaapspies created at 2010-02-24 20:09:30\n\nA new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg)\n\n\n\n```\nfind_points.o:\tELF 64-bit LSB relocatable AMD64 Version 1\ninit.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsift.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsturm.o:\tELF 64-bit LSB relocatable AMD64 Version 1\n\n```\n\n\nJaap",
+    "body": "Attachment [ratpoints-2.1.3.p1.patch](tarball://root/attachments/some-uuid/ticket8351/ratpoints-2.1.3.p1.patch) by @jaapspies created at 2010-02-24 20:09:30\n\nA new spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg)\n\n\n```\nfind_points.o:\tELF 64-bit LSB relocatable AMD64 Version 1\ninit.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsift.o:\t\tELF 64-bit LSB relocatable AMD64 Version 1\nsturm.o:\tELF 64-bit LSB relocatable AMD64 Version 1\n\n```\n\nJaap",
     "created_at": "2010-02-24T20:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ A new spkg can be found here:
 [http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg](http://boxen.math.washington.edu/home/jsp/ports/ratpoints-2.1.3.p1.spkg)
 
 
-
 ```
 find_points.o:	ELF 64-bit LSB relocatable AMD64 Version 1
 init.o:		ELF 64-bit LSB relocatable AMD64 Version 1
@@ -79,7 +78,6 @@ sift.o:		ELF 64-bit LSB relocatable AMD64 Version 1
 sturm.o:	ELF 64-bit LSB relocatable AMD64 Version 1
 
 ```
-
 
 Jaap
 
@@ -108,7 +106,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074454.json:
 ```json
 {
-    "body": "There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as others do. So it needs work. \n\nHowever, there are other problems with ratpoints that I am aware of. It is using the compiler option \n\n\n```\n-DUSE_SSE \n```\n\n\non SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.\n\nIt might be better if you leave this one to me to try to sort out, as the SPARC issues are more serious. \n\nDave",
+    "body": "There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as others do. So it needs work. \n\nHowever, there are other problems with ratpoints that I am aware of. It is using the compiler option \n\n```\n-DUSE_SSE \n```\n\non SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.\n\nIt might be better if you leave this one to me to try to sort out, as the SPARC issues are more serious. \n\nDave",
     "created_at": "2010-02-24T20:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -121,11 +119,9 @@ There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as o
 
 However, there are other problems with ratpoints that I am aware of. It is using the compiler option 
 
-
 ```
 -DUSE_SSE 
 ```
-
 
 on SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.
 
@@ -140,7 +136,7 @@ Dave
 archive/issue_comments_074455.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as others do. So it needs work. \n> \n\nOk, I can do that though CFLAG64 is not used in this spkg.\n\n\n> However, there are other problems with ratpoints that I am aware of. It is using the compiler option \n> \n> {{{\n> -DUSE_SSE \n> }}}\n> \n> on SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.\n> \n> It might be better if you leave this one to me to try to sort out, as the SPARC issues are more serious. \n> \n\nYes, please solve the problems on SPARC, but that is certainly an other ticket.\nLet this spkg work on Open Solaris x64 is the only issue solved with this ticket.\n\nCheers,\n\nJaap\n\n\n> Dave",
+    "body": "Replying to [comment:2 drkirkby]:\n> There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as others do. So it needs work. \n> \n\n\nOk, I can do that though CFLAG64 is not used in this spkg.\n\n\n> However, there are other problems with ratpoints that I am aware of. It is using the compiler option \n> \n> \n> ```\n> -DUSE_SSE \n> ```\n> \n> on SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.\n> \n> It might be better if you leave this one to me to try to sort out, as the SPARC issues are more serious. \n> \n\n\nYes, please solve the problems on SPARC, but that is certainly an other ticket.\nLet this spkg work on Open Solaris x64 is the only issue solved with this ticket.\n\nCheers,\n\nJaap\n\n\n> Dave",
     "created_at": "2010-02-24T21:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -153,19 +149,22 @@ Replying to [comment:2 drkirkby]:
 > There is a problem with this patch, in that tests for CCFLAG64, not CFLAG64 as others do. So it needs work. 
 > 
 
+
 Ok, I can do that though CFLAG64 is not used in this spkg.
 
 
 > However, there are other problems with ratpoints that I am aware of. It is using the compiler option 
 > 
-> {{{
+> 
+> ```
 > -DUSE_SSE 
-> }}}
+> ```
 > 
 > on SPARC, even though the SPARC processor has no SSE instructions. That does not appear to be a serious issue, but ratpoints has been implicated as the reason the Sage library does not build - see #7867, which is **very** serious.
 > 
 > It might be better if you leave this one to me to try to sort out, as the SPARC issues are more serious. 
 > 
+
 
 Yes, please solve the problems on SPARC, but that is certainly an other ticket.
 Let this spkg work on Open Solaris x64 is the only issue solved with this ticket.
@@ -290,7 +289,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074461.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> Sorry, I should have noted this earlier, but the package says \n> \n> \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> \n> Whereas a more accurate description would be \n> \n> \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> \n\nHow important is this nit picking?\n\n> Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> \n\nSolaris 10 64 bit? Since when is this an option?\n\n> I would avoid mentioning Solaris specifically unless it is necessary. In this case it is not. \n> \n\nPlease go ahead and make a reviewers patch.\n\nJaap\n\n\n> Dave",
+    "body": "Replying to [comment:5 drkirkby]:\n> Sorry, I should have noted this earlier, but the package says \n> \n> \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> \n> Whereas a more accurate description would be \n> \n> \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> \n\n\nHow important is this nit picking?\n\n> Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> \n\n\nSolaris 10 64 bit? Since when is this an option?\n\n> I would avoid mentioning Solaris specifically unless it is necessary. In this case it is not. \n> \n\n\nPlease go ahead and make a reviewers patch.\n\nJaap\n\n\n> Dave",
     "created_at": "2010-03-03T21:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -309,15 +308,18 @@ Replying to [comment:5 drkirkby]:
 > "Building with the compiler flag(s) $CFLAG64 for a 64-bit build"
 > 
 
+
 How important is this nit picking?
 
 > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.
 > 
 
+
 Solaris 10 64 bit? Since when is this an option?
 
 > I would avoid mentioning Solaris specifically unless it is necessary. In this case it is not. 
 > 
+
 
 Please go ahead and make a reviewers patch.
 
@@ -333,7 +335,7 @@ Jaap
 archive/issue_comments_074462.json:
 ```json
 {
-    "body": "Replying to [comment:6 jsp]:\n> Replying to [comment:5 drkirkby]:\n> > Sorry, I should have noted this earlier, but the package says \n> > \n> > \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> > \n> > Whereas a more accurate description would be \n> > \n> > \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> > \n> \n> How important is this nit picking?\n\nI do not consider it nit-picking, for reasons you see below. \n \n> > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> > \n> \n> Solaris 10 64 bit? Since when is this an option?\n\nIt is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. \n\nIt could even beat the Open Solaris port, though my interest is more in Open Solaris now. \n\nDave",
+    "body": "Replying to [comment:6 jsp]:\n> Replying to [comment:5 drkirkby]:\n> > Sorry, I should have noted this earlier, but the package says \n> > \n> > \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> > \n> > Whereas a more accurate description would be \n> > \n> > \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> > \n\n> \n> How important is this nit picking?\n\n\nI do not consider it nit-picking, for reasons you see below. \n \n> > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> > \n\n> \n> Solaris 10 64 bit? Since when is this an option?\n\n\nIt is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. \n\nIt could even beat the Open Solaris port, though my interest is more in Open Solaris now. \n\nDave",
     "created_at": "2010-03-03T22:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -352,15 +354,19 @@ Replying to [comment:6 jsp]:
 > > 
 > > "Building with the compiler flag(s) $CFLAG64 for a 64-bit build"
 > > 
+
 > 
 > How important is this nit picking?
+
 
 I do not consider it nit-picking, for reasons you see below. 
  
 > > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.
 > > 
+
 > 
 > Solaris 10 64 bit? Since when is this an option?
+
 
 It is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. 
 
@@ -375,7 +381,7 @@ Dave
 archive/issue_comments_074463.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> Replying to [comment:6 jsp]:\n> > Replying to [comment:5 drkirkby]:\n> > > Sorry, I should have noted this earlier, but the package says \n> > > \n> > > \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> > > \n> > > Whereas a more accurate description would be \n> > > \n> > > \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> > > \n> > \n> > How important is this nit picking?\n> \n> I do not consider it nit-picking, for reasons you see below. \n> \n\nI don't see that.\n\n> > > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> > > \n> > \n> > Solaris 10 64 bit? Since when is this an option?\n> \n> It is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. \n> \n> It could even beat the Open Solaris port, though my interest is more in Open Solaris now. \n> \n\nPlease make it possible. My interest is in Open Solaris too. Let's make this\npossible asap. If you insist on making this ticket the first in a target to make Solaris 10 64 bit work, please go ahead and count me off.\n\nJaap\n\n\n> Dave \n>",
+    "body": "Replying to [comment:7 drkirkby]:\n> Replying to [comment:6 jsp]:\n> > Replying to [comment:5 drkirkby]:\n> > > Sorry, I should have noted this earlier, but the package says \n> > > \n> > > \"Building with extra 64-bit flags for OS X and Open Solaris\"\n> > > \n> > > Whereas a more accurate description would be \n> > > \n> > > \"Building with the compiler flag(s) $CFLAG64 for a 64-bit build\"\n> > > \n\n> > \n> > How important is this nit picking?\n\n> \n> I do not consider it nit-picking, for reasons you see below. \n> \n\n\nI don't see that.\n\n> > > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.\n> > > \n\n> > \n> > Solaris 10 64 bit? Since when is this an option?\n\n> \n> It is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. \n> \n> It could even beat the Open Solaris port, though my interest is more in Open Solaris now. \n> \n\n\nPlease make it possible. My interest is in Open Solaris too. Let's make this\npossible asap. If you insist on making this ticket the first in a target to make Solaris 10 64 bit work, please go ahead and count me off.\n\nJaap\n\n\n> Dave \n\n>",
     "created_at": "2010-03-03T22:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8351",
     "type": "issue_comment",
@@ -395,23 +401,29 @@ Replying to [comment:7 drkirkby]:
 > > > 
 > > > "Building with the compiler flag(s) $CFLAG64 for a 64-bit build"
 > > > 
+
 > > 
 > > How important is this nit picking?
+
 > 
 > I do not consider it nit-picking, for reasons you see below. 
 > 
+
 
 I don't see that.
 
 > > > Hopefully this should work at the very least on Solaris 10, and hopefully other platforms such as Cygwin, perhaps HP-UX and/or AIX.
 > > > 
+
 > > 
 > > Solaris 10 64 bit? Since when is this an option?
+
 > 
 > It is very much a Sage goal. There is every reason to believe a Solaris 10 port will be 64-bit. The only reason the port was first 32-bit is that gcc tends to be less reliable on 64-bit SPARC. 
 > 
 > It could even beat the Open Solaris port, though my interest is more in Open Solaris now. 
 > 
+
 
 Please make it possible. My interest is in Open Solaris too. Let's make this
 possible asap. If you insist on making this ticket the first in a target to make Solaris 10 64 bit work, please go ahead and count me off.
@@ -420,6 +432,7 @@ Jaap
 
 
 > Dave 
+
 >
 
 

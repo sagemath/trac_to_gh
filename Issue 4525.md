@@ -3,7 +3,7 @@
 archive/issues_004525.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve\n\nThe integral_points() function for elliptic curves can be speeded up if the Mordell-Weil basis used is first LLL-reduced, since this increases the minimal eigenvalue of the height-pairing matrix.  The patch achieves this.  For example, before:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 42.67 s, sys: 0.48 s, total: 43.15 s\nWall time: 43.50 s\n24\n```\n\nand after:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 8.18 s, sys: 0.12 s, total: 8.29 s\nWall time: 8.37 s\n24\n```\n\n(i.e. speedup by a factor of 5) and for a rank 5 example I had a speedup factor of 50.\n\nI implemented the LLL-reduction via pari's lllgram function, in a separate function lll_reduce() since it will be useful elsewhere.  There is a case for applying it whenever we compute generators (since, for example, mwrank does not LLL-reduce its generators, because the mwrank code has no access to a floating point LLL routine!) but I have not done that -- many doctest would need changing as generators would change.\n\nThe doctests include a long one on a curve of rank 24, which adds 2m to the -long doctest time.  If that is too long it could be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4525\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus\n\nKeywords: elliptic curve\n\nThe integral_points() function for elliptic curves can be speeded up if the Mordell-Weil basis used is first LLL-reduced, since this increases the minimal eigenvalue of the height-pairing matrix.  The patch achieves this.  For example, before:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 42.67 s, sys: 0.48 s, total: 43.15 s\nWall time: 43.50 s\n24\n```\nand after:\n\n```\nsage: E = EllipticCurve([0, 1, 1, -2, 42])\nsage: E.gens()\n[(-4 : 1 : 1), (-3 : 5 : 1), (-11/4 : 43/8 : 1), (-2 : 6 : 1)]\nsage: time len(E.integral_points())\nCPU times: user 8.18 s, sys: 0.12 s, total: 8.29 s\nWall time: 8.37 s\n24\n```\n(i.e. speedup by a factor of 5) and for a rank 5 example I had a speedup factor of 50.\n\nI implemented the LLL-reduction via pari's lllgram function, in a separate function lll_reduce() since it will be useful elsewhere.  There is a case for applying it whenever we compute generators (since, for example, mwrank does not LLL-reduce its generators, because the mwrank code has no access to a floating point LLL routine!) but I have not done that -- many doctest would need changing as generators would change.\n\nThe doctests include a long one on a curve of rank 24, which adds 2m to the -long doctest time.  If that is too long it could be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4525\n\n",
     "created_at": "2008-11-14T17:36:47Z",
     "labels": [
         "component: number theory"
@@ -32,7 +32,6 @@ CPU times: user 42.67 s, sys: 0.48 s, total: 43.15 s
 Wall time: 43.50 s
 24
 ```
-
 and after:
 
 ```
@@ -44,7 +43,6 @@ CPU times: user 8.18 s, sys: 0.12 s, total: 8.29 s
 Wall time: 8.37 s
 24
 ```
-
 (i.e. speedup by a factor of 5) and for a rank 5 example I had a speedup factor of 50.
 
 I implemented the LLL-reduction via pari's lllgram function, in a separate function lll_reduce() since it will be useful elsewhere.  There is a case for applying it whenever we compute generators (since, for example, mwrank does not LLL-reduce its generators, because the mwrank code has no access to a floating point LLL routine!) but I have not done that -- many doctest would need changing as generators would change.
@@ -80,7 +78,7 @@ Attachment [10902.patch](tarball://root/attachments/some-uuid/ticket4525/10902.p
 archive/issue_comments_033518.json:
 ```json
 {
-    "body": "> I implemented the LLL-reduction via pari's lllgram function\n\nIs there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.",
+    "body": "> I implemented the LLL-reduction via pari's lllgram function\n\n\nIs there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.",
     "created_at": "2008-11-15T11:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -91,6 +89,7 @@ archive/issue_comments_033518.json:
 
 > I implemented the LLL-reduction via pari's lllgram function
 
+
 Is there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.
 
 
@@ -100,7 +99,7 @@ Is there any particular reason you are not using Sage's fpLLL based LLL reductio
 archive/issue_comments_033519.json:
 ```json
 {
-    "body": "Replying to [comment:1 malb]:\n> > I implemented the LLL-reduction via pari's lllgram function\n> \n> Is there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.\n> \nUnless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.\n\nIt's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!",
+    "body": "Replying to [comment:1 malb]:\n> > I implemented the LLL-reduction via pari's lllgram function\n\n> \n> Is there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.\n> \n\nUnless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.\n\nIt's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!",
     "created_at": "2008-11-15T12:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -111,9 +110,11 @@ archive/issue_comments_033519.json:
 
 Replying to [comment:1 malb]:
 > > I implemented the LLL-reduction via pari's lllgram function
+
 > 
 > Is there any particular reason you are not using Sage's fpLLL based LLL reduction? It is (supposed to be) much faster, but maybe the speed of the LLL is negligible for your application? Just curious.
 > 
+
 Unless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.
 
 It's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!
@@ -125,7 +126,7 @@ It's the same reason why reduced_basis() for number fields uses pari, and also w
 archive/issue_comments_033520.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> Unless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.\n> \n> It's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!\n\nYou are 100% right. Sorry for the noise, I should have checked.",
+    "body": "Replying to [comment:2 cremona]:\n> Unless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.\n> \n> It's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!\n\n\nYou are 100% right. Sorry for the noise, I should have checked.",
     "created_at": "2008-11-15T12:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -138,6 +139,7 @@ Replying to [comment:2 cremona]:
 > Unless I am mistaken, fpLLL only works on *integer* matrices, where the input is a basis for the lattice.  The same is true of NTL's LLL code.  What we need here is LLL on a lattice given only the real (floating point) gram matrix;  there is no underlying integer lattice.
 > 
 > It's the same reason why reduced_basis() for number fields uses pari, and also why mwrank does not LLL-reduce its bases in the first place!
+
 
 You are 100% right. Sorry for the noise, I should have checked.
 
@@ -218,7 +220,7 @@ Changing type from enhancement to defect.
 archive/issue_comments_033524.json:
 ```json
 {
-    "body": "New patch 10984.patch fixes a bug whereby integral points of the form P+T where P is integral and with small x, and T is torsion, were missed.  Example:  in vanilla 3.2:\n\n```\nsage: E = EllipticCurve([0,0,0,-1131^2,0])\nsage: [P[0] for P in E.integral_points()]\n[-1131, -117, 0, 1131, 1392]\n```\n\nmisses x=10933.  After the patch:\n\n```\nsage: E = EllipticCurve([0,0,0,-1131^2,0])\nsage: [P[0] for P in E.integral_points()]\n[-1131, -117, 0, 1131, 1392, 10933]\n```\n\n\nThe funny thing is that I only ran this curve to check a claim made in \"\tSolving the Diophantine equation y2=x(x2\u2212n2)\" by Konstantinos Draziotis, Dimitrios Poulakis which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of the Journal of Number theory;  in that paper they miss x=1392!\n\nI guess this should have been a new ticket, but all three patches affect the same function and no-one has reviewed them yet anyway...",
+    "body": "New patch 10984.patch fixes a bug whereby integral points of the form P+T where P is integral and with small x, and T is torsion, were missed.  Example:  in vanilla 3.2:\n\n```\nsage: E = EllipticCurve([0,0,0,-1131^2,0])\nsage: [P[0] for P in E.integral_points()]\n[-1131, -117, 0, 1131, 1392]\n```\nmisses x=10933.  After the patch:\n\n```\nsage: E = EllipticCurve([0,0,0,-1131^2,0])\nsage: [P[0] for P in E.integral_points()]\n[-1131, -117, 0, 1131, 1392, 10933]\n```\n\nThe funny thing is that I only ran this curve to check a claim made in \"\tSolving the Diophantine equation y2=x(x2\u2212n2)\" by Konstantinos Draziotis, Dimitrios Poulakis which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of the Journal of Number theory;  in that paper they miss x=1392!\n\nI guess this should have been a new ticket, but all three patches affect the same function and no-one has reviewed them yet anyway...",
     "created_at": "2008-11-22T17:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -234,7 +236,6 @@ sage: E = EllipticCurve([0,0,0,-1131^2,0])
 sage: [P[0] for P in E.integral_points()]
 [-1131, -117, 0, 1131, 1392]
 ```
-
 misses x=10933.  After the patch:
 
 ```
@@ -242,7 +243,6 @@ sage: E = EllipticCurve([0,0,0,-1131^2,0])
 sage: [P[0] for P in E.integral_points()]
 [-1131, -117, 0, 1131, 1392, 10933]
 ```
-
 
 The funny thing is that I only ran this curve to check a claim made in "	Solving the Diophantine equation y2=x(x2−n2)" by Konstantinos Draziotis, Dimitrios Poulakis which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of the Journal of Number theory;  in that paper they miss x=1392!
 
@@ -275,7 +275,7 @@ this should replace the patch right above this one, which wouldn't apply cleanly
 archive/issue_comments_033526.json:
 ```json
 {
-    "body": "> The funny thing is that I only ran this curve to check a claim made in \" Solving \n> the Diophantine equation y2=x(x2\u2212n2)\" by Konstantinos Draziotis, Dimitrios Poulakis\n> which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of \n> the Journal of Number theory; in that paper they miss x=1392! \n\nThat's an extremely bizarre coincidence!!!!!!!  What did those guys use to get the wrong answer?  Magma finds 1392.",
+    "body": "> The funny thing is that I only ran this curve to check a claim made in \" Solving \n> the Diophantine equation y2=x(x2\u2212n2)\" by Konstantinos Draziotis, Dimitrios Poulakis\n> which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of \n> the Journal of Number theory; in that paper they miss x=1392! \n\n\nThat's an extremely bizarre coincidence!!!!!!!  What did those guys use to get the wrong answer?  Magma finds 1392.",
     "created_at": "2008-11-23T08:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -288,6 +288,7 @@ archive/issue_comments_033526.json:
 > the Diophantine equation y2=x(x2−n2)" by Konstantinos Draziotis, Dimitrios Poulakis
 > which just appeared in Volume 129, Issue 1, Pages 102-121 (January 2009) of 
 > the Journal of Number theory; in that paper they miss x=1392! 
+
 
 That's an extremely bizarre coincidence!!!!!!!  What did those guys use to get the wrong answer?  Magma finds 1392.
 
@@ -316,7 +317,7 @@ fix some numerical noise issues (part of refereeing)
 archive/issue_comments_033528.json:
 ```json
 {
-    "body": "Attachment [sage-4525-referee_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-referee_numerical_noise.patch) by @williamstein created at 2008-11-23 08:34:53\n\nOK, this looks good, but it introduces a *BUG*:\nWe have in sage-3.2 released:\n\n```\nwas@sage:~/www/talks$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: EllipticCurve('91b1').integral_points()\n[(-1 : 3 : 1), (1 : 0 : 1), (3 : 4 : 1)]\n```\n\n\nHowever, after applying these patches, I get:\n\n```\nEllipticCurve('91b1').integral_points()\nTraceback (click to the left for traceback)\n...\nValueError: No point with x-coordinate 0 on Elliptic Curve defined by\ny^2 + y = x^3 + x^2 - 7*x + 5 over Rational Field\n```\n\n\nI found with the following handy script, which anybody who ever works on the integral points code should always consider running:\n\n```\nfor e in cremona_curves([1..100]):\n    t = cputime(); i = len(e.integral_points()); t = cputime(t)\n    t2 = magma.cputime(); j = len(magma(e).IntegralPoints()); t2 = magma.cputime(t2)\n    print e.cremona_label(), i, j, t, t2\n    assert i == j\n```\n\n\nAlso, the curve 112a2 also gives the same error.\n\n\n** One weird thing I noticed using the script is that for the elliptic curve 102b5, magma takes 3.88 seconds to find all the integral points, and sage takes 0.004\n102b5 0 0 0.004 3.88.",
+    "body": "Attachment [sage-4525-referee_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4525/sage-4525-referee_numerical_noise.patch) by @williamstein created at 2008-11-23 08:34:53\n\nOK, this looks good, but it introduces a *BUG*:\nWe have in sage-3.2 released:\n\n```\nwas@sage:~/www/talks$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2, Release Date: 2008-11-20                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: EllipticCurve('91b1').integral_points()\n[(-1 : 3 : 1), (1 : 0 : 1), (3 : 4 : 1)]\n```\n\nHowever, after applying these patches, I get:\n\n```\nEllipticCurve('91b1').integral_points()\nTraceback (click to the left for traceback)\n...\nValueError: No point with x-coordinate 0 on Elliptic Curve defined by\ny^2 + y = x^3 + x^2 - 7*x + 5 over Rational Field\n```\n\nI found with the following handy script, which anybody who ever works on the integral points code should always consider running:\n\n```\nfor e in cremona_curves([1..100]):\n    t = cputime(); i = len(e.integral_points()); t = cputime(t)\n    t2 = magma.cputime(); j = len(magma(e).IntegralPoints()); t2 = magma.cputime(t2)\n    print e.cremona_label(), i, j, t, t2\n    assert i == j\n```\n\nAlso, the curve 112a2 also gives the same error.\n\n\n** One weird thing I noticed using the script is that for the elliptic curve 102b5, magma takes 3.88 seconds to find all the integral points, and sage takes 0.004\n102b5 0 0 0.004 3.88.",
     "created_at": "2008-11-23T08:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -340,7 +341,6 @@ sage: EllipticCurve('91b1').integral_points()
 [(-1 : 3 : 1), (1 : 0 : 1), (3 : 4 : 1)]
 ```
 
-
 However, after applying these patches, I get:
 
 ```
@@ -351,7 +351,6 @@ ValueError: No point with x-coordinate 0 on Elliptic Curve defined by
 y^2 + y = x^3 + x^2 - 7*x + 5 over Rational Field
 ```
 
-
 I found with the following handy script, which anybody who ever works on the integral points code should always consider running:
 
 ```
@@ -361,7 +360,6 @@ for e in cremona_curves([1..100]):
     print e.cremona_label(), i, j, t, t2
     assert i == j
 ```
-
 
 Also, the curve 112a2 also gives the same error.
 
@@ -420,7 +418,7 @@ About the email addresses:  we ordinary mortals do not have a list of trac accou
 archive/issue_comments_033531.json:
 ```json
 {
-    "body": "Replying to [comment:11 cremona]:\n> Sorry about my 3rd patch being based wrongly.  I'll look into the new bug (thanks for finding it).  I'm a bit embarrassed -- when we first released this code we tested it very thoroughly, but I have not repeated those tests after making changes.  As William says, we should do this every time.\n\nYes, I would certainly welcome optional and long tests comparing the output from Sage's implementation to Magma's. We could even introduce a new category  \"#very long ?\" in case those tests would burn more than 10 minutes of CPU time. The more automated regression testing there is the better we will be off. Sage 3.2.1 will contain a feature --only-optional where one can test only the Magma related doctests for example. \n\n> About the email addresses:  we ordinary mortals do not have a list of trac account names, so it can be impossible to add people in the way Michael recommends!  If that happens to me again, I'll add a comment asking for such-and-such a person to be added (if i don't know their trac a/c name) and hope that Michael picks it up ;)\n\nMaybe we should make a list in the wiki mapping real names to trac accounts?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:11 cremona]:\n> Sorry about my 3rd patch being based wrongly.  I'll look into the new bug (thanks for finding it).  I'm a bit embarrassed -- when we first released this code we tested it very thoroughly, but I have not repeated those tests after making changes.  As William says, we should do this every time.\n\n\nYes, I would certainly welcome optional and long tests comparing the output from Sage's implementation to Magma's. We could even introduce a new category  \"#very long ?\" in case those tests would burn more than 10 minutes of CPU time. The more automated regression testing there is the better we will be off. Sage 3.2.1 will contain a feature --only-optional where one can test only the Magma related doctests for example. \n\n> About the email addresses:  we ordinary mortals do not have a list of trac account names, so it can be impossible to add people in the way Michael recommends!  If that happens to me again, I'll add a comment asking for such-and-such a person to be added (if i don't know their trac a/c name) and hope that Michael picks it up ;)\n\n\nMaybe we should make a list in the wiki mapping real names to trac accounts?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-23T10:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -432,9 +430,11 @@ archive/issue_comments_033531.json:
 Replying to [comment:11 cremona]:
 > Sorry about my 3rd patch being based wrongly.  I'll look into the new bug (thanks for finding it).  I'm a bit embarrassed -- when we first released this code we tested it very thoroughly, but I have not repeated those tests after making changes.  As William says, we should do this every time.
 
+
 Yes, I would certainly welcome optional and long tests comparing the output from Sage's implementation to Magma's. We could even introduce a new category  "#very long ?" in case those tests would burn more than 10 minutes of CPU time. The more automated regression testing there is the better we will be off. Sage 3.2.1 will contain a feature --only-optional where one can test only the Magma related doctests for example. 
 
 > About the email addresses:  we ordinary mortals do not have a list of trac account names, so it can be impossible to add people in the way Michael recommends!  If that happens to me again, I'll add a comment asking for such-and-such a person to be added (if i don't know their trac a/c name) and hope that Michael picks it up ;)
+
 
 Maybe we should make a list in the wiki mapping real names to trac accounts?
 
@@ -554,7 +554,7 @@ Replace previous one with this
 archive/issue_comments_033537.json:
 ```json
 {
-    "body": "Replying to [comment:15 was]:\n> I strongly recommend adding this as a doctest.  It takes 11 seconds without database_cremona, and about 2.5 seconds with, so should be marked #long, probably:\n> \n> sage: [len(e.integral_points(both_signs=False)) for e in cremona_curves([1..100])]  # long\n> [2, 0, 2, 3, 2, 1, 3, 0, 2, 4, 2, 4, 3, 0, 0, 1, 2, 1, 2, 0, 2, 1, 0, 1, 3, 3, 1, 1, 4, 2, 3, 2, 0, 0, 5, 3, 2, 2, 1, 1, 1, 0, 1, 3, 0, 1, 0, 1, 1, 3, 6, 1, 2, 2, 2, 0, 0, 2, 3, 1, 2, 2, 1, 1, 0, 3, 2, 1, 0, 1, 0, 1, 3, 3, 1, 1, 5, 1, 0, 1, 1, 0, 1, 2, 0, 2, 0, 1, 1, 3, 1, 2, 2, 4, 4, 2, 1, 0, 0, 5, 1, 0, 1, 2, 0, 2, 2, 0, 0, 0, 1, 0, 3, 1, 5, 1, 2, 4, 1, 0, 1, 0, 1, 0, 1, 0, 2, 2, 0, 0, 1, 0, 1, 1, 4, 1, 0, 1, 1, 0, 4, 2, 0, 1, 1, 2, 3, 1, 1, 1, 1, 6, 2, 1, 1, 0, 2, 0, 6, 2, 0, 4, 2, 2, 0, 0, 1, 2, 0, 2, 1, 0, 3, 1, 2, 1, 4, 6, 3, 2, 1, 0, 2, 2, 0, 0, 5, 4, 1, 0, 0, 1, 0, 2, 2, 0, 0, 2, 3, 1, 3, 1, 1, 0, 1, 0, 0, 1, 2, 2, 0, 2, 0, 0, 1, 2, 0, 0, 4, 1, 0, 1, 1, 0, 1, 2, 0, 1, 4, 3, 1, 2, 2, 1, 1, 1, 1, 6, 3, 3, 3, 3, 1, 1, 1, 1, 1, 0, 7, 3, 0, 1, 3, 2, 1, 0, 3, 2, 1, 0, 2, 2, 6, 0, 0, 6, 2, 2, 3, 4, 6, 5, 1, 0, 6, 1, 0, 3, 1, 1, 2, 3, 1, 2, 1, 1, 0, 1, 0, 1, 0, 5, 5, 2, 2, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1]\n> \n> I believe the output numbers are right.  Two of them disagree with magma (that 92 example), but in those two cases magma is wrong, as you mention above.\n> \n> Positive review (but please add the above doctest).\n\nDone in trac-4525-combined-2.patch which *replaces* trac-4525-combined.patch .",
+    "body": "Replying to [comment:15 was]:\n> I strongly recommend adding this as a doctest.  It takes 11 seconds without database_cremona, and about 2.5 seconds with, so should be marked #long, probably:\n> \n> sage: [len(e.integral_points(both_signs=False)) for e in cremona_curves([1..100])]  # long\n> [2, 0, 2, 3, 2, 1, 3, 0, 2, 4, 2, 4, 3, 0, 0, 1, 2, 1, 2, 0, 2, 1, 0, 1, 3, 3, 1, 1, 4, 2, 3, 2, 0, 0, 5, 3, 2, 2, 1, 1, 1, 0, 1, 3, 0, 1, 0, 1, 1, 3, 6, 1, 2, 2, 2, 0, 0, 2, 3, 1, 2, 2, 1, 1, 0, 3, 2, 1, 0, 1, 0, 1, 3, 3, 1, 1, 5, 1, 0, 1, 1, 0, 1, 2, 0, 2, 0, 1, 1, 3, 1, 2, 2, 4, 4, 2, 1, 0, 0, 5, 1, 0, 1, 2, 0, 2, 2, 0, 0, 0, 1, 0, 3, 1, 5, 1, 2, 4, 1, 0, 1, 0, 1, 0, 1, 0, 2, 2, 0, 0, 1, 0, 1, 1, 4, 1, 0, 1, 1, 0, 4, 2, 0, 1, 1, 2, 3, 1, 1, 1, 1, 6, 2, 1, 1, 0, 2, 0, 6, 2, 0, 4, 2, 2, 0, 0, 1, 2, 0, 2, 1, 0, 3, 1, 2, 1, 4, 6, 3, 2, 1, 0, 2, 2, 0, 0, 5, 4, 1, 0, 0, 1, 0, 2, 2, 0, 0, 2, 3, 1, 3, 1, 1, 0, 1, 0, 0, 1, 2, 2, 0, 2, 0, 0, 1, 2, 0, 0, 4, 1, 0, 1, 1, 0, 1, 2, 0, 1, 4, 3, 1, 2, 2, 1, 1, 1, 1, 6, 3, 3, 3, 3, 1, 1, 1, 1, 1, 0, 7, 3, 0, 1, 3, 2, 1, 0, 3, 2, 1, 0, 2, 2, 6, 0, 0, 6, 2, 2, 3, 4, 6, 5, 1, 0, 6, 1, 0, 3, 1, 1, 2, 3, 1, 2, 1, 1, 0, 1, 0, 1, 0, 5, 5, 2, 2, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1]\n> \n> I believe the output numbers are right.  Two of them disagree with magma (that 92 example), but in those two cases magma is wrong, as you mention above.\n> \n> Positive review (but please add the above doctest).\n\n\nDone in trac-4525-combined-2.patch which *replaces* trac-4525-combined.patch .",
     "created_at": "2008-11-23T21:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4525",
     "type": "issue_comment",
@@ -572,6 +572,7 @@ Replying to [comment:15 was]:
 > I believe the output numbers are right.  Two of them disagree with magma (that 92 example), but in those two cases magma is wrong, as you mention above.
 > 
 > Positive review (but please add the above doctest).
+
 
 Done in trac-4525-combined-2.patch which *replaces* trac-4525-combined.patch .
 

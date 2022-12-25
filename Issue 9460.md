@@ -58,7 +58,7 @@ I've been unable to replicate this.  I've built Sage 4.5.alpha4 with SAGE_FAT_BI
 archive/issue_comments_090539.json:
 ```json
 {
-    "body": "Could the problem be building Sage from a script?  I get the failures if I build 4.5.alpha4 with\n\n```sh\n#!/bin/bash\nX=20\nexport MAKE=\"make -j$X\"\nVER=4.5.alpha4\nunset SAGE_CHECK SAGE_PARALLEL_SPKG_BUILD\n#export SAGE_CHECK=\"check\"\nexport SAGE_PARALLEL_SPKG_BUILD=\"yes\"\n\nTAG=\"-j$X\"\n[ ! -z \"$SAGE_PARALLEL_SPKG_BUILD\" ] && TAG=\"$TAG-par\"\n[ ! -z \"$SAGE_CHECK\" ] && TAG=\"$TAG-chk\"\n\ncd $HOME/scratch/tmp\nOLDDIR=\"sage-$VER\"\nNEWDIR=\"$OLDDIR$TAG\"\nrm -rf $OLDDIR $NEWDIR\ntar xvf /home/release/sage-$VER/sage-$VER.tar\nmv $OLDDIR $NEWDIR\ncd $NEWDIR\n\nnice -n 19 time make build\n```\n\nbut *not* if I build with\n\n```sh\n$ nohup nice -n 19 env MAKE=\"make -j20\" SAGE_PARALLEL_SPKG_BUILD=\"yes\" make build &\n```\n\nThe same happens even if I *do not* build with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).",
+    "body": "Could the problem be building Sage from a script?  I get the failures if I build 4.5.alpha4 with\n\n```sh\n#!/bin/bash\nX=20\nexport MAKE=\"make -j$X\"\nVER=4.5.alpha4\nunset SAGE_CHECK SAGE_PARALLEL_SPKG_BUILD\n#export SAGE_CHECK=\"check\"\nexport SAGE_PARALLEL_SPKG_BUILD=\"yes\"\n\nTAG=\"-j$X\"\n[ ! -z \"$SAGE_PARALLEL_SPKG_BUILD\" ] && TAG=\"$TAG-par\"\n[ ! -z \"$SAGE_CHECK\" ] && TAG=\"$TAG-chk\"\n\ncd $HOME/scratch/tmp\nOLDDIR=\"sage-$VER\"\nNEWDIR=\"$OLDDIR$TAG\"\nrm -rf $OLDDIR $NEWDIR\ntar xvf /home/release/sage-$VER/sage-$VER.tar\nmv $OLDDIR $NEWDIR\ncd $NEWDIR\n\nnice -n 19 time make build\n```\nbut *not* if I build with\n\n```sh\n$ nohup nice -n 19 env MAKE=\"make -j20\" SAGE_PARALLEL_SPKG_BUILD=\"yes\" make build &\n```\nThe same happens even if I *do not* build with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).",
     "created_at": "2010-07-09T04:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -92,13 +92,11 @@ cd $NEWDIR
 
 nice -n 19 time make build
 ```
-
 but *not* if I build with
 
 ```sh
 $ nohup nice -n 19 env MAKE="make -j20" SAGE_PARALLEL_SPKG_BUILD="yes" make build &
 ```
-
 The same happens even if I *do not* build with `SAGE_PARALLEL_SPKG_BUILD="yes"`.  The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).
 
 
@@ -207,7 +205,7 @@ I've built successfully by running the same script as William: I copied "buildbo
 archive/issue_comments_090545.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n\nDid you compare the build trees?",
+    "body": "Replying to [comment:2 mpatel]:\n> The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n\n\nDid you compare the build trees?",
     "created_at": "2010-07-09T15:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -218,6 +216,7 @@ archive/issue_comments_090545.json:
 
 Replying to [comment:2 mpatel]:
 > The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).
+
 
 Did you compare the build trees?
 
@@ -254,7 +253,7 @@ We'll see if it works.
 archive/issue_comments_090547.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:2 mpatel]:\n> > The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n> \n> Did you compare the build trees?\n> \nYes.  As far as I can tell, the non-binary differences are simple path differences.  For example, the output of\n\n```sh\ndiff -purN sage-4.5.alpha4-j20-env sage-4.5.alpha4-j20 2>&1 | grep -v \"Binary files\"\n```\n\nincludes\n\n```diff\n--- sage-4.5.alpha4-j20-env/local/bin/maxima    2010-07-08 02:40:13.000000000 -0700\n+++ sage-4.5.alpha4-j20/local/bin/maxima        2010-07-08 01:11:55.000000000 -0700\n@@ -9,10 +9,10 @@ setup_vars() {\n   if [ -z \"$MAXIMA_VERSION\" ]; then\n     MAXIMA_VERSION=5.20.1\n   fi\n-  prefix=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/local\"`\n+  prefix=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/local\"`\n   exec_prefix=`unixize \"${prefix}\"`\n   PACKAGE=maxima\n-  top_srcdir=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/spkg/build/maxima-5.20.1.p1/src\"`\n+  top_srcdir=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/spkg/build/maxima-5.20.1.p1/src\"`\n   libdir=`unixize \"${exec_prefix}/lib\"`\n   if [ -n \"$MAXIMA_LAYOUT_AUTOTOOLS\" ]; then\n       layout_autotools=\"$MAXIMA_LAYOUT_AUTOTOOLS\"\n```\n\nNote: `/home/mpatel/scratch` is a symbolic link to `/scratch/mpatel`, which expands to `/mnt/usb1/scratch/mpatel/`.",
+    "body": "Replying to [comment:9 leif]:\n> Replying to [comment:2 mpatel]:\n> > The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n\n> \n> Did you compare the build trees?\n> \nYes.  As far as I can tell, the non-binary differences are simple path differences.  For example, the output of\n\n```sh\ndiff -purN sage-4.5.alpha4-j20-env sage-4.5.alpha4-j20 2>&1 | grep -v \"Binary files\"\n```\nincludes\n\n```diff\n--- sage-4.5.alpha4-j20-env/local/bin/maxima    2010-07-08 02:40:13.000000000 -0700\n+++ sage-4.5.alpha4-j20/local/bin/maxima        2010-07-08 01:11:55.000000000 -0700\n@@ -9,10 +9,10 @@ setup_vars() {\n   if [ -z \"$MAXIMA_VERSION\" ]; then\n     MAXIMA_VERSION=5.20.1\n   fi\n-  prefix=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/local\"`\n+  prefix=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/local\"`\n   exec_prefix=`unixize \"${prefix}\"`\n   PACKAGE=maxima\n-  top_srcdir=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/spkg/build/maxima-5.20.1.p1/src\"`\n+  top_srcdir=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/spkg/build/maxima-5.20.1.p1/src\"`\n   libdir=`unixize \"${exec_prefix}/lib\"`\n   if [ -n \"$MAXIMA_LAYOUT_AUTOTOOLS\" ]; then\n       layout_autotools=\"$MAXIMA_LAYOUT_AUTOTOOLS\"\n```\nNote: `/home/mpatel/scratch` is a symbolic link to `/scratch/mpatel`, which expands to `/mnt/usb1/scratch/mpatel/`.",
     "created_at": "2010-07-09T22:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -266,6 +265,7 @@ archive/issue_comments_090547.json:
 Replying to [comment:9 leif]:
 > Replying to [comment:2 mpatel]:
 > > The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).
+
 > 
 > Did you compare the build trees?
 > 
@@ -274,7 +274,6 @@ Yes.  As far as I can tell, the non-binary differences are simple path differenc
 ```sh
 diff -purN sage-4.5.alpha4-j20-env sage-4.5.alpha4-j20 2>&1 | grep -v "Binary files"
 ```
-
 includes
 
 ```diff
@@ -294,7 +293,6 @@ includes
    if [ -n "$MAXIMA_LAYOUT_AUTOTOOLS" ]; then
        layout_autotools="$MAXIMA_LAYOUT_AUTOTOOLS"
 ```
-
 Note: `/home/mpatel/scratch` is a symbolic link to `/scratch/mpatel`, which expands to `/mnt/usb1/scratch/mpatel/`.
 
 
@@ -340,7 +338,7 @@ David Kirkby has had some suspicions about the way the disk storing the home dir
 archive/issue_comments_090550.json:
 ```json
 {
-    "body": "There is definitely a problem.  I tried rebuilding with the new maxima and ecl packages (in sage-4.5.alpha4) and had a huge number of failures.   Building the same sage-4.5.alpha4, but with the older maxima and ecl packages entirely fixes the problem.\n\n> David Kirkby has had some suspicions about the way the disk storing the home directories on \n> sage.math is set up. I wonder if that's causing the problem here.\n\nThat could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n\n* I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n* I build in /home/wstein/build.\n\nWilliam",
+    "body": "There is definitely a problem.  I tried rebuilding with the new maxima and ecl packages (in sage-4.5.alpha4) and had a huge number of failures.   Building the same sage-4.5.alpha4, but with the older maxima and ecl packages entirely fixes the problem.\n\n> David Kirkby has had some suspicions about the way the disk storing the home directories on \n> sage.math is set up. I wonder if that's causing the problem here.\n\n\nThat could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n\n* I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n* I build in /home/wstein/build.\n\nWilliam",
     "created_at": "2010-07-10T05:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -353,6 +351,7 @@ There is definitely a problem.  I tried rebuilding with the new maxima and ecl p
 
 > David Kirkby has had some suspicions about the way the disk storing the home directories on 
 > sage.math is set up. I wonder if that's causing the problem here.
+
 
 That could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:
 
@@ -388,7 +387,7 @@ I wonder if what Mitesh and William observed is really reproducible, or just a s
 archive/issue_comments_090552.json:
 ```json
 {
-    "body": "Replying to [comment:15 leif]:\n> I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n\nIt's reproducible since:\n\n  (1) I can systematically reproduce it, and \n  (2) Mitesh independently reproduced it.\n\nThat's pretty much the definition of reproducible.\n\nI think we should revert the maxima and ecl spkg's, and release 4.5 without them, then sort this out in 4.5.1.",
+    "body": "Replying to [comment:15 leif]:\n> I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n\n\nIt's reproducible since:\n\n  (1) I can systematically reproduce it, and \n  (2) Mitesh independently reproduced it.\n\nThat's pretty much the definition of reproducible.\n\nI think we should revert the maxima and ecl spkg's, and release 4.5 without them, then sort this out in 4.5.1.",
     "created_at": "2010-07-10T07:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -399,6 +398,7 @@ archive/issue_comments_090552.json:
 
 Replying to [comment:15 leif]:
 > I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.
+
 
 It's reproducible since:
 
@@ -438,7 +438,7 @@ So I'm not that sure that it's the package *version*, rather than the *build cir
 archive/issue_comments_090554.json:
 ```json
 {
-    "body": "Replying to [comment:16 was]:\n> Replying to [comment:15 leif]:\n> > I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n> \n> It's reproducible since:\n> \n>   (1) I can systematically reproduce it, and \n>   (2) Mitesh independently reproduced it.\n> \n> That's pretty much the definition of reproducible.\n\nI should have written *deterministic*.",
+    "body": "Replying to [comment:16 was]:\n> Replying to [comment:15 leif]:\n> > I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n\n> \n> It's reproducible since:\n> \n>   (1) I can systematically reproduce it, and \n>   (2) Mitesh independently reproduced it.\n> \n> That's pretty much the definition of reproducible.\n\n\nI should have written *deterministic*.",
     "created_at": "2010-07-10T08:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -450,6 +450,7 @@ archive/issue_comments_090554.json:
 Replying to [comment:16 was]:
 > Replying to [comment:15 leif]:
 > > I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.
+
 > 
 > It's reproducible since:
 > 
@@ -457,6 +458,7 @@ Replying to [comment:16 was]:
 >   (2) Mitesh independently reproduced it.
 > 
 > That's pretty much the definition of reproducible.
+
 
 I should have written *deterministic*.
 
@@ -467,7 +469,7 @@ I should have written *deterministic*.
 archive/issue_comments_090555.json:
 ```json
 {
-    "body": "Replying to [comment:14 was]:\n\n> > David Kirkby has had some suspicions about the way the disk storing the home directories on \n> > sage.math is set up. I wonder if that's causing the problem here.\n> \n> That could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n> \n>    * I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n>    * I build in /home/wstein/build.\n> \n> William\n\nIn this case, since William's '/scratch', I would tend to agree the bug is in Sage, not the file system. That said, I am not 100% sure, since you are mounting a local file sysmem on an NFS one. If the NFS one can't be trust, can the file system that's mounted on the NFS one? I would however tend to think it would be OK, but I'm not 100% sure. \n\nI know for a fact there are issues on 't2' with the NFS file system exported by 'disk - it is clearly logged\n\n\n```\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 12:06:06 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/bin/python2.6 (rnode_pt: 3003cad4018) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 12:06:06 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 12:06:06 t2  Action: NR_STALE \nJul  6 12:06:06 t2  NFS4 error: NFS4ERR_STALE   \nJul  6 13:25:28 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 13:25:28 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/lib/gap-4.4.12/bin/gap.sh (rnode_pt: 6004da64c50) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 13:25:28 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 13:25:28 t2  Action: NR_STALE \nJul  6 13:25:28 t2  NFS4 error: NFS4ERR_STALE   \n```\n\n\nI would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)",
+    "body": "Replying to [comment:14 was]:\n\n> > David Kirkby has had some suspicions about the way the disk storing the home directories on \n> > sage.math is set up. I wonder if that's causing the problem here.\n\n> \n> That could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n> \n> * I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n> * I build in /home/wstein/build.\n> \n> William\n\n\nIn this case, since William's '/scratch', I would tend to agree the bug is in Sage, not the file system. That said, I am not 100% sure, since you are mounting a local file sysmem on an NFS one. If the NFS one can't be trust, can the file system that's mounted on the NFS one? I would however tend to think it would be OK, but I'm not 100% sure. \n\nI know for a fact there are issues on 't2' with the NFS file system exported by 'disk - it is clearly logged\n\n```\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 12:06:06 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/bin/python2.6 (rnode_pt: 3003cad4018) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 12:06:06 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 12:06:06 t2  Action: NR_STALE \nJul  6 12:06:06 t2  NFS4 error: NFS4ERR_STALE   \nJul  6 13:25:28 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 13:25:28 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/lib/gap-4.4.12/bin/gap.sh (rnode_pt: 6004da64c50) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 13:25:28 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 13:25:28 t2  Action: NR_STALE \nJul  6 13:25:28 t2  NFS4 error: NFS4ERR_STALE   \n```\n\nI would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)",
     "created_at": "2010-07-10T08:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -480,18 +482,19 @@ Replying to [comment:14 was]:
 
 > > David Kirkby has had some suspicions about the way the disk storing the home directories on 
 > > sage.math is set up. I wonder if that's causing the problem here.
+
 > 
 > That could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:
 > 
->    * I make a symlink:   /home/wstein/build -> /scratch/wstein/build
->    * I build in /home/wstein/build.
+> * I make a symlink:   /home/wstein/build -> /scratch/wstein/build
+> * I build in /home/wstein/build.
 > 
 > William
+
 
 In this case, since William's '/scratch', I would tend to agree the bug is in Sage, not the file system. That said, I am not 100% sure, since you are mounting a local file sysmem on an NFS one. If the NFS one can't be trust, can the file system that's mounted on the NFS one? I would however tend to think it would be OK, but I'm not 100% sure. 
 
 I know for a fact there are issues on 't2' with the NFS file system exported by 'disk - it is clearly logged
-
 
 ```
 Jul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.
@@ -507,7 +510,6 @@ Jul  6 13:25:28 t2  Action: NR_STALE
 Jul  6 13:25:28 t2  NFS4 error: NFS4ERR_STALE   
 ```
 
-
 I would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)
 
 
@@ -517,7 +519,7 @@ I would bet a pound to a penny this is a result of disabling the ZIL Log, which 
 archive/issue_comments_090556.json:
 ```json
 {
-    "body": "Replying to [comment:19 drkirkby]:\n> I would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n> \nJust to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n\n\"Caution: Disabling the ZIL on an NFS server can lead to client side corruption. The ZFS pool integrity itself is not compromised by this tuning.\"",
+    "body": "Replying to [comment:19 drkirkby]:\n> I would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n> \n\nJust to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n\n\"Caution: Disabling the ZIL on an NFS server can lead to client side corruption. The ZFS pool integrity itself is not compromised by this tuning.\"",
     "created_at": "2010-07-10T08:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -529,6 +531,7 @@ archive/issue_comments_090556.json:
 Replying to [comment:19 drkirkby]:
 > I would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)
 > 
+
 Just to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)
 
 "Caution: Disabling the ZIL on an NFS server can lead to client side corruption. The ZFS pool integrity itself is not compromised by this tuning."
@@ -540,7 +543,7 @@ Just to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/
 archive/issue_comments_090557.json:
 ```json
 {
-    "body": "I'm attaching a log of \n\n$ make ptestlong\n\non sage.math. I did forget, and actually built this in $HOME, not on a scratch disk. However, I did not use a script. \n\nUltimately there are 4 failures. \n\n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/interfaces/expect.py # 11 doctests failed\n\tsage -t  -long devel/sage/sage/interfaces/r.py # 184 doctests failed\n\tsage -t  -long devel/sage/sage/stats/r.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/tests/startup.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n\n\nAll Maxima tests appear to have passed as far as I can see.\n\nOne possibility for the changed behavior might be the changes to 'deps'. This is now much better than it was before, with more accurate rules about the order things are built. This could mean that the build order has changed from previous versions of Sage and possibly libraries in Sage are now used when before the system libraries might be used - or visa versa. \n\nAnother useful to track this might be to write a script that\n* Build Sage with the old maxima. Run just the maxima test to reduce the time. \n* Build Sage with the old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the old maxima and old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the new Maxima and new ECL. Run just the maxima test to reduce the time. \n\nRepeat the above 10 times. Then look at the results, and see if failures are correlated or not. \n \nI see from his comment above William rolled back Maxima, and started a build. That has now finished. All his Maxima tests pass, but he gets this failure - which is new as far as I can see. I've just built Sage on sage.math without this failure. \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.5.alphastein1/testlong.log\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\nTotal time for all tests: 8270.6 seconds\n```\n\n\nWhy should changing Maxima make `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` fail? I suspect the real cause of these problems might not be Maxima at all. There appears to be sporadic problems in this release of Sage (William for example failed to get R to build on OS X, but that works for me). \n\nThis is a shame, as I know Robert has put a lot of effort into this release. I was actually expecting it to be one of the more stable Sage releases - which hopefully it will be, once the problem is resolved. \n\nIs it possible GPLK is responsible for this? That is a new standard package. I agree it seems unlikely, but I'm not convinced it is just a Maxima issue. Most likely is a build issue, which makes me think 'deps' might be the cause. \n\nDave",
+    "body": "I'm attaching a log of \n\n$ make ptestlong\n\non sage.math. I did forget, and actually built this in $HOME, not on a scratch disk. However, I did not use a script. \n\nUltimately there are 4 failures. \n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/interfaces/expect.py # 11 doctests failed\n\tsage -t  -long devel/sage/sage/interfaces/r.py # 184 doctests failed\n\tsage -t  -long devel/sage/sage/stats/r.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/tests/startup.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n\nAll Maxima tests appear to have passed as far as I can see.\n\nOne possibility for the changed behavior might be the changes to 'deps'. This is now much better than it was before, with more accurate rules about the order things are built. This could mean that the build order has changed from previous versions of Sage and possibly libraries in Sage are now used when before the system libraries might be used - or visa versa. \n\nAnother useful to track this might be to write a script that\n* Build Sage with the old maxima. Run just the maxima test to reduce the time. \n* Build Sage with the old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the old maxima and old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the new Maxima and new ECL. Run just the maxima test to reduce the time. \n\nRepeat the above 10 times. Then look at the results, and see if failures are correlated or not. \n \nI see from his comment above William rolled back Maxima, and started a build. That has now finished. All his Maxima tests pass, but he gets this failure - which is new as far as I can see. I've just built Sage on sage.math without this failure. \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.5.alphastein1/testlong.log\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\nTotal time for all tests: 8270.6 seconds\n```\n\nWhy should changing Maxima make `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` fail? I suspect the real cause of these problems might not be Maxima at all. There appears to be sporadic problems in this release of Sage (William for example failed to get R to build on OS X, but that works for me). \n\nThis is a shame, as I know Robert has put a lot of effort into this release. I was actually expecting it to be one of the more stable Sage releases - which hopefully it will be, once the problem is resolved. \n\nIs it possible GPLK is responsible for this? That is a new standard package. I agree it seems unlikely, but I'm not convinced it is just a Maxima issue. Most likely is a build issue, which makes me think 'deps' might be the cause. \n\nDave",
     "created_at": "2010-07-10T09:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -557,7 +560,6 @@ on sage.math. I did forget, and actually built this in $HOME, not on a scratch d
 
 Ultimately there are 4 failures. 
 
-
 ```
 The following tests failed:
 
@@ -567,7 +569,6 @@ The following tests failed:
 	sage -t  -long devel/sage/sage/tests/startup.py # 1 doctests failed
 ----------------------------------------------------------------------
 ```
-
 
 All Maxima tests appear to have passed as far as I can see.
 
@@ -593,7 +594,6 @@ The following tests failed:
 	sage -t  -long "devel/sage/sage/schemes/elliptic_curves/lseries_ell.py"
 Total time for all tests: 8270.6 seconds
 ```
-
 
 Why should changing Maxima make `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` fail? I suspect the real cause of these problems might not be Maxima at all. There appears to be sporadic problems in this release of Sage (William for example failed to get R to build on OS X, but that works for me). 
 
@@ -628,7 +628,7 @@ Tests on sage.math. Built in $HOME, not on /scratch. A script was not used.
 archive/issue_comments_090559.json:
 ```json
 {
-    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9460/ptestlong.log) by drkirkby created at 2010-07-10 09:30:58\n\nReplying to [comment:17 leif]:\n\n> It's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n> \n> So I'm not that sure that it's the package *version*, rather than the *build circumstances*.\n> \n\nI too think this is the build problem. \n* Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  \n* Why should Maxima pass all tests for me, and all tests for John, yet fail for Metesh and William? \n* Why should I get 4 failures when I build on sage.math, which don't share anything in common with the failures observed by William? \n\nI think one pass with the old Maxima and old ECL does not prove the problem is with ECL and/or Maxima. Since there issues which are not 100% reproducible, I fail to see how one good build by one person proves anything. (And even \"good build\" is not really true, as there is the elliptic curves test failed). \n\nIMHO, just changing ECL and Maxima and producing a 4.5 would be unwise until there is more proof there is not another more subtle error. \n\n\nI've just run 'dmesg' on sage.math and don't see anything like uncorrected RAM errors. In fact, I don't see any corrected RAM errors, so I doubt it is a memory fault. \n\nDave",
+    "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9460/ptestlong.log) by drkirkby created at 2010-07-10 09:30:58\n\nReplying to [comment:17 leif]:\n\n> It's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n> \n> So I'm not that sure that it's the package *version*, rather than the *build circumstances*.\n> \n\n\nI too think this is the build problem. \n* Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  \n* Why should Maxima pass all tests for me, and all tests for John, yet fail for Metesh and William? \n* Why should I get 4 failures when I build on sage.math, which don't share anything in common with the failures observed by William? \n\nI think one pass with the old Maxima and old ECL does not prove the problem is with ECL and/or Maxima. Since there issues which are not 100% reproducible, I fail to see how one good build by one person proves anything. (And even \"good build\" is not really true, as there is the elliptic curves test failed). \n\nIMHO, just changing ECL and Maxima and producing a 4.5 would be unwise until there is more proof there is not another more subtle error. \n\n\nI've just run 'dmesg' on sage.math and don't see anything like uncorrected RAM errors. In fact, I don't see any corrected RAM errors, so I doubt it is a memory fault. \n\nDave",
     "created_at": "2010-07-10T09:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -645,6 +645,7 @@ Replying to [comment:17 leif]:
 > 
 > So I'm not that sure that it's the package *version*, rather than the *build circumstances*.
 > 
+
 
 I too think this is the build problem. 
 * Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  
@@ -667,7 +668,7 @@ Dave
 archive/issue_comments_090560.json:
 ```json
 {
-    "body": "Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\n\n```\nkirkby@sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep \"maxima|sage-4.5.alpha4\"\n-rw-r--r-- 1 kirkby kirkby 265 2010-07-09 08:41 sage-4.5.alpha4\n-rw-r--r-- 1 kirkby kirkby 266 2010-07-09 08:51 maxima-5.20.1.p1\n```\n\n\nI'm going to create a 'deps' file which will ensure Maxima builds before Sage. Give that a try. \n\nDave",
+    "body": "Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\n```\nkirkby@sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep \"maxima|sage-4.5.alpha4\"\n-rw-r--r-- 1 kirkby kirkby 265 2010-07-09 08:41 sage-4.5.alpha4\n-rw-r--r-- 1 kirkby kirkby 266 2010-07-09 08:51 maxima-5.20.1.p1\n```\n\nI'm going to create a 'deps' file which will ensure Maxima builds before Sage. Give that a try. \n\nDave",
     "created_at": "2010-07-10T09:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -678,13 +679,11 @@ archive/issue_comments_090560.json:
 
 Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? 
 
-
 ```
 kirkby@sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep "maxima|sage-4.5.alpha4"
 -rw-r--r-- 1 kirkby kirkby 265 2010-07-09 08:41 sage-4.5.alpha4
 -rw-r--r-- 1 kirkby kirkby 266 2010-07-09 08:51 maxima-5.20.1.p1
 ```
-
 
 I'm going to create a 'deps' file which will ensure Maxima builds before Sage. Give that a try. 
 
@@ -735,7 +734,7 @@ Difference from the deps file in sage-4.5.alpha4.
 archive/issue_comments_090563.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by @nexttime created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by @nexttime created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
     "created_at": "2010-07-10T10:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -748,6 +747,7 @@ Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff
 
 Replying to [comment:23 drkirkby]:
 > Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?
+
 
 In my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.
 
@@ -796,7 +796,7 @@ If we do revert ECL and Maxima, which changes from #8645 and #9264 should we bac
 archive/issue_comments_090566.json:
 ```json
 {
-    "body": "Replying to [comment:26 mpatel]:\n> If we do revert ECL and Maxima, which changes from #8645 and #9264 should we backport?\n\nI think revert ECL and Maxima is just a *very* temporary reversion so that we can release sage-4.5.   This reversion is just until we can fix whatever bug was introduced in these new packages, and hopefully we'll put them back in for sage-4.5.1.\n\nWe really need to get sage-4.5 out the door.",
+    "body": "Replying to [comment:26 mpatel]:\n> If we do revert ECL and Maxima, which changes from #8645 and #9264 should we backport?\n\n\nI think revert ECL and Maxima is just a *very* temporary reversion so that we can release sage-4.5.   This reversion is just until we can fix whatever bug was introduced in these new packages, and hopefully we'll put them back in for sage-4.5.1.\n\nWe really need to get sage-4.5 out the door.",
     "created_at": "2010-07-11T10:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -807,6 +807,7 @@ archive/issue_comments_090566.json:
 
 Replying to [comment:26 mpatel]:
 > If we do revert ECL and Maxima, which changes from #8645 and #9264 should we backport?
+
 
 I think revert ECL and Maxima is just a *very* temporary reversion so that we can release sage-4.5.   This reversion is just until we can fix whatever bug was introduced in these new packages, and hopefully we'll put them back in for sage-4.5.1.
 
@@ -847,7 +848,7 @@ Dave
 archive/issue_comments_090568.json:
 ```json
 {
-    "body": "> As a matter of interest, does William have any idea why after reverting ECL and Maxima,\n>  his build still failed with devel/sage/sage/schemes/elliptic_curves/lseries_ell.py?\n\nThat was caused by memory fragmentation on sage.math -- it has nothing to do with Sage itself.   So no worries at all.\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\n  ***   not enough memory\nAborted\n  ***   not enough memory\nAborted**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 226:\n    sage: E.lseries().zeros(2)\nExpected:\n    [0.000000000, 5.00317001]\nGot:\n    []\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 230:\n    sage: point([(1,x) for x in a])             # graph  (long time)\nException raised:\n }}}",
+    "body": "> As a matter of interest, does William have any idea why after reverting ECL and Maxima,\n>  his build still failed with devel/sage/sage/schemes/elliptic_curves/lseries_ell.py?\n\n\nThat was caused by memory fragmentation on sage.math -- it has nothing to do with Sage itself.   So no worries at all.\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\n  ***   not enough memory\nAborted\n  ***   not enough memory\nAborted**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 226:\n    sage: E.lseries().zeros(2)\nExpected:\n    [0.000000000, 5.00317001]\nGot:\n    []\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 230:\n    sage: point([(1,x) for x in a])             # graph  (long time)\nException raised:\n }}}",
     "created_at": "2010-07-11T12:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -858,6 +859,7 @@ archive/issue_comments_090568.json:
 
 > As a matter of interest, does William have any idea why after reverting ECL and Maxima,
 >  his build still failed with devel/sage/sage/schemes/elliptic_curves/lseries_ell.py?
+
 
 That was caused by memory fragmentation on sage.math -- it has nothing to do with Sage itself.   So no worries at all.
 
@@ -908,7 +910,7 @@ P.S.: Dave has built a [ecl-10.2.1.p0.spkg](http://boxen.math.washington.edu/hom
 archive/issue_comments_090570.json:
 ```json
 {
-    "body": "> Then we could try just building Maxima as the last package, after all other packages have been \n> built (or even temporarily force reinstallation as the last build step just to get 4.5 working).\n\nThat's a really cool idea (!)",
+    "body": "> Then we could try just building Maxima as the last package, after all other packages have been \n> built (or even temporarily force reinstallation as the last build step just to get 4.5 working).\n\n\nThat's a really cool idea (!)",
     "created_at": "2010-07-11T13:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -919,6 +921,7 @@ archive/issue_comments_090570.json:
 
 > Then we could try just building Maxima as the last package, after all other packages have been 
 > built (or even temporarily force reinstallation as the last build step just to get 4.5 working).
+
 
 That's a really cool idea (!)
 
@@ -949,7 +952,7 @@ On the other hand, then failing *builds* would be more likely, rather than "succ
 archive/issue_comments_090572.json:
 ```json
 {
-    "body": "Replying to [comment:32 leif]:\n> ... completely(?) unrelated to Maxima and ECL, like `pi in RR` evaluating to `False` IIRC.\n\nOh, at least that example *starts* a Maxima process... :/",
+    "body": "Replying to [comment:32 leif]:\n> ... completely(?) unrelated to Maxima and ECL, like `pi in RR` evaluating to `False` IIRC.\n\n\nOh, at least that example *starts* a Maxima process... :/",
     "created_at": "2010-07-11T15:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -961,6 +964,7 @@ archive/issue_comments_090572.json:
 Replying to [comment:32 leif]:
 > ... completely(?) unrelated to Maxima and ECL, like `pi in RR` evaluating to `False` IIRC.
 
+
 Oh, at least that example *starts* a Maxima process... :/
 
 
@@ -970,7 +974,7 @@ Oh, at least that example *starts* a Maxima process... :/
 archive/issue_comments_090573.json:
 ```json
 {
-    "body": "\n```\n$ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log \n.../ecl-10.4.1/src/src/c/num_rand.d:73: warning: ignoring return value of 'fread', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:421: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:437: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:470: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:473: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:476: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n```\n",
+    "body": "```\n$ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log \n.../ecl-10.4.1/src/src/c/num_rand.d:73: warning: ignoring return value of 'fread', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:421: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:437: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:470: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:473: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:476: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n```",
     "created_at": "2010-07-11T15:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -978,7 +982,6 @@ archive/issue_comments_090573.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```
 $ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log 
@@ -989,7 +992,6 @@ $ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log
 .../ecl-10.4.1/src/src/c/unixsys.d:473: warning: ignoring return value of 'dup', declared with attribute warn_unused_result
 .../ecl-10.4.1/src/src/c/unixsys.d:476: warning: ignoring return value of 'dup', declared with attribute warn_unused_result
 ```
-
 
 
 
@@ -1060,7 +1062,7 @@ I haven't had any doctest failures on that system with Sage 4.5.alpha4 though, s
 archive/issue_comments_090577.json:
 ```json
 {
-    "body": "Replying to [comment:35 jhpalmieri]:\n> Is it possible that those of you who have seen failures have some crap lying around in /tmp which is interfering with your build and/or doctesting?  I'm still trying to understand why some people have problems and others don't.\n\nIf things in /tmp are a problem, then I feel that should be considered a bug. One should be able to write something to /tmp and some other package not read or write the same file. (That's currently happening on t2, which the ECL developer admits is an ECL bug. He assumed temporary file names created by 'mktemp' can't have a dot in their name, but that is not required by POSIX standards, and occasionally on Solaris tmp files have a dot in their name.) But I suspect mktemp on Linux does not use a dot, otherwise the issue would have been noticed before. \n\nI've seen failures with sage-4.5.alpha4 which are repeatable but go away as soon as I do an rm -r of $HOME/.sage. However, they were unrelated to the Maxima issues. \n\nThis bug sure is weird. It might depend on what way the wind is blowing or the longitude. Has anyone in Europe seen this bug? \n\nIf the system is low on memory, it could mean Sage mis-compiles. It would probably be worth logging the free memory 20 seconds or so, to see if it runs low. There are probably times of the day (i.e. longitude) where the system gets more use and so memory is lower. \n\nDave",
+    "body": "Replying to [comment:35 jhpalmieri]:\n> Is it possible that those of you who have seen failures have some crap lying around in /tmp which is interfering with your build and/or doctesting?  I'm still trying to understand why some people have problems and others don't.\n\n\nIf things in /tmp are a problem, then I feel that should be considered a bug. One should be able to write something to /tmp and some other package not read or write the same file. (That's currently happening on t2, which the ECL developer admits is an ECL bug. He assumed temporary file names created by 'mktemp' can't have a dot in their name, but that is not required by POSIX standards, and occasionally on Solaris tmp files have a dot in their name.) But I suspect mktemp on Linux does not use a dot, otherwise the issue would have been noticed before. \n\nI've seen failures with sage-4.5.alpha4 which are repeatable but go away as soon as I do an rm -r of $HOME/.sage. However, they were unrelated to the Maxima issues. \n\nThis bug sure is weird. It might depend on what way the wind is blowing or the longitude. Has anyone in Europe seen this bug? \n\nIf the system is low on memory, it could mean Sage mis-compiles. It would probably be worth logging the free memory 20 seconds or so, to see if it runs low. There are probably times of the day (i.e. longitude) where the system gets more use and so memory is lower. \n\nDave",
     "created_at": "2010-07-12T10:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1071,6 +1073,7 @@ archive/issue_comments_090577.json:
 
 Replying to [comment:35 jhpalmieri]:
 > Is it possible that those of you who have seen failures have some crap lying around in /tmp which is interfering with your build and/or doctesting?  I'm still trying to understand why some people have problems and others don't.
+
 
 If things in /tmp are a problem, then I feel that should be considered a bug. One should be able to write something to /tmp and some other package not read or write the same file. (That's currently happening on t2, which the ECL developer admits is an ECL bug. He assumed temporary file names created by 'mktemp' can't have a dot in their name, but that is not required by POSIX standards, and occasionally on Solaris tmp files have a dot in their name.) But I suspect mktemp on Linux does not use a dot, otherwise the issue would have been noticed before. 
 
@@ -1089,7 +1092,7 @@ Dave
 archive/issue_comments_090578.json:
 ```json
 {
-    "body": "Some more information, which may or may not be useful:\n\n* In my tests at #9274, I tried making the Sage package depend on Maxima in `deps`, but the problems remained.\n\n* I have the same problem if I move `~/.bash*`, `~/.inputrc`, and `~/.profile` to another location, log out, log in, and build 4.5.alpha4 with the `go` script mentioned above.\n\n* I have the same problem (with 4.5.alpha4) on sage.math with William's [buildbot](http://sage.math.washington.edu/home/wstein/buildbot) setup.  I did\n\n```sh\n$ cd\n$ cp ~wstein/buildbot .\n$ mkdir /scratch/mpatel/build\n$ ln -s /scratch/mpatel/build .\n$ ./buildbot\n```\n\n   in a screen session.\n\n* Removing `/tmp` files owned by me and `~/.sage` also didn't help.",
+    "body": "Some more information, which may or may not be useful:\n\n* In my tests at #9274, I tried making the Sage package depend on Maxima in `deps`, but the problems remained.\n\n* I have the same problem if I move `~/.bash*`, `~/.inputrc`, and `~/.profile` to another location, log out, log in, and build 4.5.alpha4 with the `go` script mentioned above.\n\n* I have the same problem (with 4.5.alpha4) on sage.math with William's [buildbot](http://sage.math.washington.edu/home/wstein/buildbot) setup.  I did\n\n```sh\n$ cd\n$ cp ~wstein/buildbot .\n$ mkdir /scratch/mpatel/build\n$ ln -s /scratch/mpatel/build .\n$ ./buildbot\n```\n   in a screen session.\n\n* Removing `/tmp` files owned by me and `~/.sage` also didn't help.",
     "created_at": "2010-07-14T22:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1113,7 +1116,6 @@ $ mkdir /scratch/mpatel/build
 $ ln -s /scratch/mpatel/build .
 $ ./buildbot
 ```
-
    in a screen session.
 
 * Removing `/tmp` files owned by me and `~/.sage` also didn't help.
@@ -1125,7 +1127,7 @@ $ ./buildbot
 archive/issue_comments_090579.json:
 ```json
 {
-    "body": "But building/testing 4.5.alpha4 in `/dev/shm` on sage.math works for me.  I did\n\n```sh\n$ cd\n$ mkdir -p /dev/shm/mpatel\n$ ln -s /dev/shm/mpatel SHM\n$ cd SHM\n$ emacs -nw go  # Replace 'cd $HOME/scratch/tmp' with 'cp $HOME/SHM' in \"go\" script above\n$ nohup go &\n```\n",
+    "body": "But building/testing 4.5.alpha4 in `/dev/shm` on sage.math works for me.  I did\n\n```sh\n$ cd\n$ mkdir -p /dev/shm/mpatel\n$ ln -s /dev/shm/mpatel SHM\n$ cd SHM\n$ emacs -nw go  # Replace 'cd $HOME/scratch/tmp' with 'cp $HOME/SHM' in \"go\" script above\n$ nohup go &\n```",
     "created_at": "2010-07-18T10:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1147,13 +1149,12 @@ $ nohup go &
 
 
 
-
 ---
 
 archive/issue_comments_090580.json:
 ```json
 {
-    "body": "Replying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\nThis should not matter. the \"library\" maxima.fas is an ECL library that can be loaded into ECL completely dynamically. It is currently not used in sage anyway, but even if it were, maxima.fas does not have to be present at build-time - only at runtime.",
+    "body": "Replying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\n\nThis should not matter. the \"library\" maxima.fas is an ECL library that can be loaded into ECL completely dynamically. It is currently not used in sage anyway, but even if it were, maxima.fas does not have to be present at build-time - only at runtime.",
     "created_at": "2010-07-30T06:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1164,6 +1165,7 @@ archive/issue_comments_090580.json:
 
 Replying to [comment:23 drkirkby]:
 > Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? 
+
 
 This should not matter. the "library" maxima.fas is an ECL library that can be loaded into ECL completely dynamically. It is currently not used in sage anyway, but even if it were, maxima.fas does not have to be present at build-time - only at runtime.
 
@@ -1192,7 +1194,7 @@ Does this still need to be open?
 archive/issue_comments_090582.json:
 ```json
 {
-    "body": "Replying to [comment:42 drkirkby]:\n> Does this still need to be open? \n\nI still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\nAccording to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.",
+    "body": "Replying to [comment:42 drkirkby]:\n> Does this still need to be open? \n\n\nI still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\nAccording to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.",
     "created_at": "2010-08-20T21:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1203,6 +1205,7 @@ archive/issue_comments_090582.json:
 
 Replying to [comment:42 drkirkby]:
 > Does this still need to be open? 
+
 
 I still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.
 
@@ -1215,7 +1218,7 @@ According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer
 archive/issue_comments_090583.json:
 ```json
 {
-    "body": "Replying to [comment:43 mpatel]:\n> Replying to [comment:42 drkirkby]:\n> > Does this still need to be open? \n> \n> I still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\nHere's the situation. \n\n[ZFS](http://en.wikipedia.org/wiki/ZFS) is the file system used on the main server disk.math. The ZFS Intent Log (ZIL) was disabled by William long ago (> 1 year). It speeds up NFS writes considerably, but it risks data corruption on the NFS clients (sage.math, t2.math, boxen.math etc). IMHO, this is a very bad idea. \n\nWilliam has three choices\n* Leave the ZIL disabled and risk data corruption. \n* Re-enable the ZIL, get valid data, but at a cost of a dramatic slow down in NFS speed. \n* Buy a fast solid state disk. Then configure the storage pool so the ZIL is written to the fast solid state disk. The disk does not need to be large (even 100 MB would be sufficient), but it needs to be a good quality enterprise grade disks. Logging to a USB memory stick would not be a good idea. \n\nI've made William aware of this long ago. What he does is up to him. As far as I'm aware, the ZIL is disabled. Therefore, I would not trust any file in the home directories at all. I would only trust the disks locally mounted on the machines. If the problem goes away when things are built in \n\nLooking on sage.math, I see `/mnt/usb1/scratch` is locally mounted, so that should not suffer the problems the NFS mounted directories have. (I'm a bit suspicious that `/mnt/usb1 ` might actually be a USB mounted hard drive, which undoubtedly uses a consumer grade disk. The disks on a server like sage.math should not be on USB connectors, which is what that device name implies to me.)\n\n`/scratch` on 't2.math' is a high quality local disk, so I trust that as much as you can trust any single hard drive. It is not backed up and its not mirrored. \n\n> According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.\n\nI've no idea. \n\nWe did try updating both ECL and Maxima recently, and it all went pear shaped. I don't think that has been resolved. I've rather lost track of what happened over that. \n\nDave",
+    "body": "Replying to [comment:43 mpatel]:\n> Replying to [comment:42 drkirkby]:\n> > Does this still need to be open? \n\n> \n> I still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\n\nHere's the situation. \n\n[ZFS](http://en.wikipedia.org/wiki/ZFS) is the file system used on the main server disk.math. The ZFS Intent Log (ZIL) was disabled by William long ago (> 1 year). It speeds up NFS writes considerably, but it risks data corruption on the NFS clients (sage.math, t2.math, boxen.math etc). IMHO, this is a very bad idea. \n\nWilliam has three choices\n* Leave the ZIL disabled and risk data corruption. \n* Re-enable the ZIL, get valid data, but at a cost of a dramatic slow down in NFS speed. \n* Buy a fast solid state disk. Then configure the storage pool so the ZIL is written to the fast solid state disk. The disk does not need to be large (even 100 MB would be sufficient), but it needs to be a good quality enterprise grade disks. Logging to a USB memory stick would not be a good idea. \n\nI've made William aware of this long ago. What he does is up to him. As far as I'm aware, the ZIL is disabled. Therefore, I would not trust any file in the home directories at all. I would only trust the disks locally mounted on the machines. If the problem goes away when things are built in \n\nLooking on sage.math, I see `/mnt/usb1/scratch` is locally mounted, so that should not suffer the problems the NFS mounted directories have. (I'm a bit suspicious that `/mnt/usb1 ` might actually be a USB mounted hard drive, which undoubtedly uses a consumer grade disk. The disks on a server like sage.math should not be on USB connectors, which is what that device name implies to me.)\n\n`/scratch` on 't2.math' is a high quality local disk, so I trust that as much as you can trust any single hard drive. It is not backed up and its not mirrored. \n\n> According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.\n\n\nI've no idea. \n\nWe did try updating both ECL and Maxima recently, and it all went pear shaped. I don't think that has been resolved. I've rather lost track of what happened over that. \n\nDave",
     "created_at": "2010-08-20T23:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
@@ -1227,8 +1230,10 @@ archive/issue_comments_090583.json:
 Replying to [comment:43 mpatel]:
 > Replying to [comment:42 drkirkby]:
 > > Does this still need to be open? 
+
 > 
 > I still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.
+
 
 Here's the situation. 
 
@@ -1246,6 +1251,7 @@ Looking on sage.math, I see `/mnt/usb1/scratch` is locally mounted, so that shou
 `/scratch` on 't2.math' is a high quality local disk, so I trust that as much as you can trust any single hard drive. It is not backed up and its not mirrored. 
 
 > According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.
+
 
 I've no idea. 
 

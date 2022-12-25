@@ -226,7 +226,7 @@ Thanks for the help! I've changed the indentation in your patch for three lines,
 archive/issue_comments_094195.json:
 ```json
 {
-    "body": "> Thanks for the help! I've changed the indentation in your patch for three lines, otherwise it's the same.\n\nYeah, let's skip reviewing those changes `:-D`\n\nNathann",
+    "body": "> Thanks for the help! I've changed the indentation in your patch for three lines, otherwise it's the same.\n\n\nYeah, let's skip reviewing those changes `:-D`\n\nNathann",
     "created_at": "2010-11-26T16:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -236,6 +236,7 @@ archive/issue_comments_094195.json:
 ```
 
 > Thanks for the help! I've changed the indentation in your patch for three lines, otherwise it's the same.
+
 
 Yeah, let's skip reviewing those changes `:-D`
 
@@ -265,7 +266,7 @@ archive/issue_events_024246.json:
 archive/issue_comments_094196.json:
 ```json
 {
-    "body": "Please fix the Sphinx WARNING:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n```\n",
+    "body": "Please fix the Sphinx WARNING:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n```",
     "created_at": "2010-12-06T13:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -279,7 +280,6 @@ Please fix the Sphinx WARNING:
 ```
 /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst
 ```
-
 
 
 
@@ -306,7 +306,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_094198.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n> Please fix the Sphinx WARNING:\n> {{{\n> /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n> }}}\n\nNathann,\n\nCan you fix this?",
+    "body": "Replying to [comment:9 jdemeyer]:\n> Please fix the Sphinx WARNING:\n> \n> ```\n> /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n> ```\n\n\nNathann,\n\nCan you fix this?",
     "created_at": "2010-12-06T16:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
@@ -317,9 +317,11 @@ archive/issue_comments_094198.json:
 
 Replying to [comment:9 jdemeyer]:
 > Please fix the Sphinx WARNING:
-> {{{
+> 
+> ```
 > /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst
-> }}}
+> ```
+
 
 Nathann,
 

@@ -3,7 +3,7 @@
 archive/issues_008069.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
     "created_at": "2010-01-26T00:01:49Z",
     "labels": [
         "component: porting"
@@ -25,7 +25,6 @@ The spkg is here:
 [http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)
 
 
-
 ```
 make[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'
 make[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'
@@ -43,7 +42,6 @@ jaap@opensolaris:~/Downloads/sage-4.3.1$
 
 
 ```
-
 
 Jaap
 

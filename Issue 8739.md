@@ -163,7 +163,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_079807.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> Looks nice ! :-)\n> \n> Several remarks though, that I do not dare implement myself :\n> \n> * You specify in the private function `_KolakoskiWord_iterator` that the alphabet must be composed of two positive integers, but not in `KolakoskiWord`. Are the users supposed to know they should not use anything else ? (honest question, Words are not my field at all even if I can understand the construction :-) )\n> \nYou're right, I forgot to document it in the main function. \n\n> * You write `current_letter = bar(w[-1])`, thus accessing the -1'th element. What about writing `current_letter = bar(current_letter)` at the end of the loop ?\n> \n\nRight again. I think I did it to avoid initializing `current_letter` in the basis, but this is less readable and we're not sure if `w[-1]` is performed in constant time. Is it ?\n\n> * You maintain a variable named `current_run`, and keep in memory a list of letters you already used (`w[:current_run]`). Wouldn't it be easier to forget about the current run variable, and just use your list as a queue with append() and pop(0) operations ? :-)\n>\n\nOnce again right. When I first wrote the function, I did as you say, but there was a mistake I couldn't solve. Then I simplified by keeping the complete prefix of the word, but now that it is working, it shouldn't be hard to modify.\n \n> As I did not know the construction, I thought a bit about how I would write the algorithm and could not find any way to do it without keeping a lot of things in memory, what your `w` variable actually contains. Do you know if there exists a way to get rid of it ? I'm just being curious :-)\n> \n\nI feel it would be hard, but I don't have any proof. On the other hand, I can get rid of all values of `w` that have already been read by the `current_run` cursor, as you mentionned above.\n\n> Nathann\n\nThank you for your comment. I'll upload a new patch soon.",
+    "body": "Replying to [comment:3 ncohen]:\n> Looks nice ! :-)\n> \n> Several remarks though, that I do not dare implement myself :\n> \n> * You specify in the private function `_KolakoskiWord_iterator` that the alphabet must be composed of two positive integers, but not in `KolakoskiWord`. Are the users supposed to know they should not use anything else ? (honest question, Words are not my field at all even if I can understand the construction :-) )\n> \n \nYou're right, I forgot to document it in the main function. \n\n> * You write `current_letter = bar(w[-1])`, thus accessing the -1'th element. What about writing `current_letter = bar(current_letter)` at the end of the loop ?\n> \n\n\nRight again. I think I did it to avoid initializing `current_letter` in the basis, but this is less readable and we're not sure if `w[-1]` is performed in constant time. Is it ?\n\n> * You maintain a variable named `current_run`, and keep in memory a list of letters you already used (`w[:current_run]`). Wouldn't it be easier to forget about the current run variable, and just use your list as a queue with append() and pop(0) operations ? :-)\n \n>\n\nOnce again right. When I first wrote the function, I did as you say, but there was a mistake I couldn't solve. Then I simplified by keeping the complete prefix of the word, but now that it is working, it shouldn't be hard to modify.\n \n> As I did not know the construction, I thought a bit about how I would write the algorithm and could not find any way to do it without keeping a lot of things in memory, what your `w` variable actually contains. Do you know if there exists a way to get rid of it ? I'm just being curious :-)\n> \n\n\nI feel it would be hard, but I don't have any proof. On the other hand, I can get rid of all values of `w` that have already been read by the `current_run` cursor, as you mentionned above.\n\n> Nathann\n\n\nThank you for your comment. I'll upload a new patch soon.",
     "created_at": "2010-04-24T15:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8739",
     "type": "issue_comment",
@@ -179,14 +179,17 @@ Replying to [comment:3 ncohen]:
 > 
 > * You specify in the private function `_KolakoskiWord_iterator` that the alphabet must be composed of two positive integers, but not in `KolakoskiWord`. Are the users supposed to know they should not use anything else ? (honest question, Words are not my field at all even if I can understand the construction :-) )
 > 
+ 
 You're right, I forgot to document it in the main function. 
 
 > * You write `current_letter = bar(w[-1])`, thus accessing the -1'th element. What about writing `current_letter = bar(current_letter)` at the end of the loop ?
 > 
 
+
 Right again. I think I did it to avoid initializing `current_letter` in the basis, but this is less readable and we're not sure if `w[-1]` is performed in constant time. Is it ?
 
 > * You maintain a variable named `current_run`, and keep in memory a list of letters you already used (`w[:current_run]`). Wouldn't it be easier to forget about the current run variable, and just use your list as a queue with append() and pop(0) operations ? :-)
+ 
 >
 
 Once again right. When I first wrote the function, I did as you say, but there was a mistake I couldn't solve. Then I simplified by keeping the complete prefix of the word, but now that it is working, it shouldn't be hard to modify.
@@ -194,9 +197,11 @@ Once again right. When I first wrote the function, I did as you say, but there w
 > As I did not know the construction, I thought a bit about how I would write the algorithm and could not find any way to do it without keeping a lot of things in memory, what your `w` variable actually contains. Do you know if there exists a way to get rid of it ? I'm just being curious :-)
 > 
 
+
 I feel it would be hard, but I don't have any proof. On the other hand, I can get rid of all values of `w` that have already been read by the `current_run` cursor, as you mentionned above.
 
 > Nathann
+
 
 Thank you for your comment. I'll upload a new patch soon.
 

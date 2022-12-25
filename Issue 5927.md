@@ -67,7 +67,7 @@ archive/issue_events_013894.json:
 archive/issue_comments_046769.json:
 ```json
 {
-    "body": "Oops, there are three doctest failures with this patch applied:\n\n```\n        sage -t -long devel/sage/sage/interfaces/expect.py # 1 doctests failed\n        sage -t -long devel/sage/doc/en/developer/coding_in_other.rst # 2 doctests failed\n        sage -t -long devel/sage/doc/en/constructions/algebraic_geometry.rst # 4 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "Oops, there are three doctest failures with this patch applied:\n\n```\n        sage -t -long devel/sage/sage/interfaces/expect.py # 1 doctests failed\n        sage -t -long devel/sage/doc/en/developer/coding_in_other.rst # 2 doctests failed\n        sage -t -long devel/sage/doc/en/constructions/algebraic_geometry.rst # 4 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-29T23:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ Oops, there are three doctest failures with this patch applied:
         sage -t -long devel/sage/doc/en/developer/coding_in_other.rst # 2 doctests failed
         sage -t -long devel/sage/doc/en/constructions/algebraic_geometry.rst # 4 doctests failed
 ```
-
 
 Cheers,
 
@@ -226,7 +225,7 @@ Changing assignee from mabshoff to @mwhansen.
 archive/issue_comments_046775.json:
 ```json
 {
-    "body": "Hmm, I am not so sure the patch does fix every problem:\nWithout the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.eval(\"intvec G = 4,4,4,0,0,0;\")\n''\n```\n\nWith the patch applied:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.eval(\"intvec G = 4,4,4,0,0,0;\")\n'intvec G = 4,4,4,0,0,0;'\nsage: \n```\n\n| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |\n| Type notebook() for the GUI, and license() for information.        |\n| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |\n| Type notebook() for the GUI, and license() for information.        |\nIf you look at the attached patch here it seems that we sometimes get the echo of the command and some times not. It might be consistent, i.e. the doctests pass on all platforms (I hope), but something still seems fishy.\n\nI am not saying we shouldn't apply the patch since it fixes a much more severe bug, I just think that there is more to the story. Anyway, doctests do pass, so I will open a followup ticket and merge this patch.\n\nCheers,\n\nMichael",
+    "body": "Hmm, I am not so sure the patch does fix every problem:\nWithout the patch:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.eval(\"intvec G = 4,4,4,0,0,0;\")\n''\n```\nWith the patch applied:\n| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |\n| Type notebook() for the GUI, and license() for information.        |\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: singular.eval(\"intvec G = 4,4,4,0,0,0;\")\n'intvec G = 4,4,4,0,0,0;'\nsage: \n```\n| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |\n| Type notebook() for the GUI, and license() for information.        |\nIf you look at the attached patch here it seems that we sometimes get the echo of the command and some times not. It might be consistent, i.e. the doctests pass on all platforms (I hope), but something still seems fishy.\n\nI am not saying we shouldn't apply the patch since it fixes a much more severe bug, I just think that there is more to the story. Anyway, doctests do pass, so I will open a followup ticket and merge this patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-22T12:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
@@ -244,9 +243,9 @@ Without the patch:
 sage: singular.eval("intvec G = 4,4,4,0,0,0;")
 ''
 ```
-
 With the patch applied:
-
+| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 mabshoff@sage:/scratch/mabshoff/sage-4.0.rc1$ ./sage
 ----------------------------------------------------------------------
@@ -255,9 +254,6 @@ sage: singular.eval("intvec G = 4,4,4,0,0,0;")
 'intvec G = 4,4,4,0,0,0;'
 sage: 
 ```
-
-| Sage Version 4.0.rc0, Release Date: 2009-05-21                     |
-| Type notebook() for the GUI, and license() for information.        |
 | Sage Version 4.0.rc0, Release Date: 2009-05-21                     |
 | Type notebook() for the GUI, and license() for information.        |
 If you look at the attached patch here it seems that we sometimes get the echo of the command and some times not. It might be consistent, i.e. the doctests pass on all platforms (I hope), but something still seems fishy.

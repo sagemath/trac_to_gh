@@ -3,7 +3,7 @@
 archive/issues_008728.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom #sage-devel:\n\n\n```\nBoulemans left the chat room. (Read error: Connection reset by peer)\n[11:58am] Boule joined the chat room.\n[11:58am] Boule: (laptop shutdown due to power supply)\n[11:59am] Boule: e, T, w = var(\"e T w\"); assume(1 = e^2)>0; integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi) should give -2*pi e cos w/(1-e^2)^3/2 instead of 0\n[11:59am] Boule: can someone help?\n[12:00pm] wjp: yeah, sage seems to have some trouble with this integral. You could try http://groups.google.com/group/sage-support since the right people don't seem to be here currently\n[12:00pm] Boule: ok, thanx\n[12:08pm] kcrisman: By the way, I just tried this and get a hang in Maxima.  Can you type the exact commands which lead to an answer of 0?\n[12:08pm] kcrisman: If I plug something (.5, .75) in for e in Maxima in Sage, I do get zero as an output.\n[12:12pm] Boule: don't know maxima, but with numerical values for e and w at wolfram-alfa, it gives something different than 0\n[12:13pm] wjp: *nod* maple gives non-zeros too\n[12:13pm] kcrisman: Can you give the *exact* sequence of commands which yield zero in Sage itself? \n[12:14pm] Boule: e = var('e')\n[12:14pm] Boule: T = var('T')\n[12:14pm] Boule: w = var('w')\n[12:14pm] baali1 joined the chat room.\n[12:14pm] baali left the chat room. (Quit: Leaving.)\n[12:15pm] Boule: assume(1-e^2>0)\n[12:15pm] Boule:  integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n[12:15pm] kcrisman: Okay, that's what I thought.\n[12:16pm] kcrisman: Okay, it takes a while but I do get 0.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8728\n\n",
+    "body": "Assignee: @burcin\n\nFrom #sage-devel:\n\n```\nBoulemans left the chat room. (Read error: Connection reset by peer)\n[11:58am] Boule joined the chat room.\n[11:58am] Boule: (laptop shutdown due to power supply)\n[11:59am] Boule: e, T, w = var(\"e T w\"); assume(1 = e^2)>0; integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi) should give -2*pi e cos w/(1-e^2)^3/2 instead of 0\n[11:59am] Boule: can someone help?\n[12:00pm] wjp: yeah, sage seems to have some trouble with this integral. You could try http://groups.google.com/group/sage-support since the right people don't seem to be here currently\n[12:00pm] Boule: ok, thanx\n[12:08pm] kcrisman: By the way, I just tried this and get a hang in Maxima.  Can you type the exact commands which lead to an answer of 0?\n[12:08pm] kcrisman: If I plug something (.5, .75) in for e in Maxima in Sage, I do get zero as an output.\n[12:12pm] Boule: don't know maxima, but with numerical values for e and w at wolfram-alfa, it gives something different than 0\n[12:13pm] wjp: *nod* maple gives non-zeros too\n[12:13pm] kcrisman: Can you give the *exact* sequence of commands which yield zero in Sage itself? \n[12:14pm] Boule: e = var('e')\n[12:14pm] Boule: T = var('T')\n[12:14pm] Boule: w = var('w')\n[12:14pm] baali1 joined the chat room.\n[12:14pm] baali left the chat room. (Quit: Leaving.)\n[12:15pm] Boule: assume(1-e^2>0)\n[12:15pm] Boule:  integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n[12:15pm] kcrisman: Okay, that's what I thought.\n[12:16pm] kcrisman: Okay, it takes a while but I do get 0.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8728\n\n",
     "created_at": "2010-04-20T16:22:21Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_008728.json:
 Assignee: @burcin
 
 From #sage-devel:
-
 
 ```
 Boulemans left the chat room. (Read error: Connection reset by peer)
@@ -45,7 +44,6 @@ Boulemans left the chat room. (Read error: Connection reset by peer)
 [12:16pm] kcrisman: Okay, it takes a while but I do get 0.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8728
 
 
@@ -57,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8728
 archive/issue_comments_079582.json:
 ```json
 {
-    "body": "I wonder if this is another manifestation of this bug:\n\n\n```\nsage: integrate(sqrt(sin(x)^2+cos(x)^2), x,0,2*pi)\npi\n```\n",
+    "body": "I wonder if this is another manifestation of this bug:\n\n```\nsage: integrate(sqrt(sin(x)^2+cos(x)^2), x,0,2*pi)\npi\n```",
     "created_at": "2010-04-20T16:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -68,12 +66,10 @@ archive/issue_comments_079582.json:
 
 I wonder if this is another manifestation of this bug:
 
-
 ```
 sage: integrate(sqrt(sin(x)^2+cos(x)^2), x,0,2*pi)
 pi
 ```
-
 
 
 
@@ -154,7 +150,7 @@ Sweet.  I haven't been keeping up on the Maxima list lately, thanks.
 archive/issue_comments_079587.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> I wonder if this is another manifestation of this bug:\n> \n> {{{\n> sage: integrate(sqrt(sin(x)<sup>2+cos(x)</sup>2), x,0,2*pi)\n> pi\n> }}}\n\nI just checked; this ticket isn't the same bug.",
+    "body": "Replying to [comment:1 jason]:\n> I wonder if this is another manifestation of this bug:\n> \n> \n> ```\n> sage: integrate(sqrt(sin(x)^2+cos(x)^2), x,0,2*pi)\n> pi\n> ```\n\n\nI just checked; this ticket isn't the same bug.",
     "created_at": "2010-04-20T19:27:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -166,10 +162,12 @@ archive/issue_comments_079587.json:
 Replying to [comment:1 jason]:
 > I wonder if this is another manifestation of this bug:
 > 
-> {{{
-> sage: integrate(sqrt(sin(x)<sup>2+cos(x)</sup>2), x,0,2*pi)
+> 
+> ```
+> sage: integrate(sqrt(sin(x)^2+cos(x)^2), x,0,2*pi)
 > pi
-> }}}
+> ```
+
 
 I just checked; this ticket isn't the same bug.
 
@@ -180,7 +178,7 @@ I just checked; this ticket isn't the same bug.
 archive/issue_comments_079588.json:
 ```json
 {
-    "body": "The upgrade to maxima 5.21.1 does not fix this.  After #8731:\n\n\n```\nsage: e, T, w = var(\"e T w\")    \nsage: assume(1-e^2>0)\nsage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)                                           \n0\n```\n",
+    "body": "The upgrade to maxima 5.21.1 does not fix this.  After #8731:\n\n```\nsage: e, T, w = var(\"e T w\")    \nsage: assume(1-e^2>0)\nsage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)                                           \n0\n```",
     "created_at": "2010-05-13T04:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -191,7 +189,6 @@ archive/issue_comments_079588.json:
 
 The upgrade to maxima 5.21.1 does not fix this.  After #8731:
 
-
 ```
 sage: e, T, w = var("e T w")    
 sage: assume(1-e^2>0)
@@ -201,13 +198,12 @@ sage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)
 
 
 
-
 ---
 
 archive/issue_comments_079589.json:
 ```json
 {
-    "body": "Maxima 5.23.2 still has this, and we still haven't reported it. \n\n```\nMaxima 5.23.2 http://maxima.sourceforge.net\nusing Lisp SBCL 1.0.24\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) assume(1-e^2>0);\n                                     2\n(%o1)                              [e  < 1]\n(%i3) integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*%pi);\n(%o3)                                  0\n```\n\nThis is now Maxima bug 3211975.",
+    "body": "Maxima 5.23.2 still has this, and we still haven't reported it. \n\n```\nMaxima 5.23.2 http://maxima.sourceforge.net\nusing Lisp SBCL 1.0.24\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) assume(1-e^2>0);\n                                     2\n(%o1)                              [e  < 1]\n(%i3) integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*%pi);\n(%o3)                                  0\n```\nThis is now Maxima bug 3211975.",
     "created_at": "2011-03-14T20:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -230,7 +226,6 @@ The function bug_report() provides bug reporting information.
 (%i3) integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*%pi);
 (%o3)                                  0
 ```
-
 This is now Maxima bug 3211975.
 
 
@@ -379,7 +374,7 @@ archive/issue_events_021198.json:
 archive/issue_comments_079593.json:
 ```json
 {
-    "body": "In Maxima 5.33.0 (see #13973):\n\n```\n(%i1) assume(e^2<1);\n                                     2\n(%o1)                              [e  < 1]\n(%i2) integrate(cos(w+T)/(1+e*cos(T))^2, T, 0, 2*%pi);\n                      2\nIs abs(e) - sqrt(1 - e ) - 1 positive, negative or zero?\n\nnegative;\n   !          2     !\nIs !sqrt(1 - e ) - 1! - abs(e) positive, negative or zero?\n\nnegative;\n                                             2\n                           2 %pi e sqrt(1 - e ) cos(w)\n(%o2)                    - ---------------------------\n                                   4      2\n                                  e  - 2 e  + 1\n```\n\nThis appears to be the correct answer.  Note that the answers to both questions are \"negative\" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.",
+    "body": "In Maxima 5.33.0 (see #13973):\n\n```\n(%i1) assume(e^2<1);\n                                     2\n(%o1)                              [e  < 1]\n(%i2) integrate(cos(w+T)/(1+e*cos(T))^2, T, 0, 2*%pi);\n                      2\nIs abs(e) - sqrt(1 - e ) - 1 positive, negative or zero?\n\nnegative;\n   !          2     !\nIs !sqrt(1 - e ) - 1! - abs(e) positive, negative or zero?\n\nnegative;\n                                             2\n                           2 %pi e sqrt(1 - e ) cos(w)\n(%o2)                    - ---------------------------\n                                   4      2\n                                  e  - 2 e  + 1\n```\nThis appears to be the correct answer.  Note that the answers to both questions are \"negative\" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.",
     "created_at": "2014-05-21T20:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -409,7 +404,6 @@ negative;
                                    4      2
                                   e  - 2 e  + 1
 ```
-
 This appears to be the correct answer.  Note that the answers to both questions are "negative" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.
 
 
@@ -453,7 +447,7 @@ archive/issue_events_021200.json:
 archive/issue_comments_079594.json:
 ```json
 {
-    "body": "> In Maxima 5.33.0 (see #13973):\n> This appears to be the correct answer.  Note that the answers to both questions are \"negative\" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.\nThe thing noted in the message upstream when they closed their ticket\n\n```\nsage: integrate(cos(w+T)/(1+.5*cos(T))^2,T,0,2*pi)\n<boom>\n```\n\ndoes still happen, but I think that is a different issue tracked elsewhere here (the usual keepfloat thing).\n\nSo... do we have a reasonable test case to add here to confirm this is fixed and close it?",
+    "body": "> In Maxima 5.33.0 (see #13973):\n> This appears to be the correct answer.  Note that the answers to both questions are \"negative\" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.\n\nThe thing noted in the message upstream when they closed their ticket\n\n```\nsage: integrate(cos(w+T)/(1+.5*cos(T))^2,T,0,2*pi)\n<boom>\n```\ndoes still happen, but I think that is a different issue tracked elsewhere here (the usual keepfloat thing).\n\nSo... do we have a reasonable test case to add here to confirm this is fixed and close it?",
     "created_at": "2014-10-20T13:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -464,13 +458,13 @@ archive/issue_comments_079594.json:
 
 > In Maxima 5.33.0 (see #13973):
 > This appears to be the correct answer.  Note that the answers to both questions are "negative" for all *e* with -1 < *e* < 1, so it would be nice if Maxima didn't ask those questions.
+
 The thing noted in the message upstream when they closed their ticket
 
 ```
 sage: integrate(cos(w+T)/(1+.5*cos(T))^2,T,0,2*pi)
 <boom>
 ```
-
 does still happen, but I think that is a different issue tracked elsewhere here (the usual keepfloat thing).
 
 So... do we have a reasonable test case to add here to confirm this is fixed and close it?
@@ -482,7 +476,7 @@ So... do we have a reasonable test case to add here to confirm this is fixed and
 archive/issue_comments_079595.json:
 ```json
 {
-    "body": "Here's the doctest:\n\n```\nsage: assume(1-e^2>0)\nsage: assume(abs(e)-sqrt(1-e^2)-1>0)\nsage: assume(abs(sqrt(1-e^2)-1)-abs(e)>0)\nsage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n2*pi*sqrt(-e^2 + 1)*e*cos(w)/(e^4 - 2*e^2 + 1)\n```\n",
+    "body": "Here's the doctest:\n\n```\nsage: assume(1-e^2>0)\nsage: assume(abs(e)-sqrt(1-e^2)-1>0)\nsage: assume(abs(sqrt(1-e^2)-1)-abs(e)>0)\nsage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)\n2*pi*sqrt(-e^2 + 1)*e*cos(w)/(e^4 - 2*e^2 + 1)\n```",
     "created_at": "2015-02-01T13:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -500,7 +494,6 @@ sage: assume(abs(sqrt(1-e^2)-1)-abs(e)>0)
 sage: integrate(cos(w+T)/(1+e*cos(T))^2,T,0,2*pi)
 2*pi*sqrt(-e^2 + 1)*e*cos(w)/(e^4 - 2*e^2 + 1)
 ```
-
 
 
 
@@ -741,7 +734,7 @@ That would seem so. I think you are asking for a feature (redundancy of addition
 archive/issue_comments_079606.json:
 ```json
 {
-    "body": "Replying to [comment:28 rws]:\n> I think you are asking for a feature (redundancy of additional assumptions) in Maxima that would warrant a separate ticket.\nThat too, but more importantly I meant the fact that the assumptions that are currently made in the doctest are mutually inconsistent:\n\n```\nassume(1-c^2 > 0)\nassume(abs(c) - sqrt(1-c^2) - 1 > 0)\nassume(abs(sqrt(1-c^2)-1) - abs(c) > 0)\n```\n\nNamely, the first assumption is equivalent to `-1 < c < 1`, and on this domain the functions `abs(c) - sqrt(1-c^2) - 1` and `abs(sqrt(1-c^2)-1) - abs(c)` are strictly negative.\n\nThere is already some functionality for detecting inconsistent assumptions (e.g. `assume(x > 0); assume(x < 0)` raises an error), but it doesn't detect this case.",
+    "body": "Replying to [comment:28 rws]:\n> I think you are asking for a feature (redundancy of additional assumptions) in Maxima that would warrant a separate ticket.\n\nThat too, but more importantly I meant the fact that the assumptions that are currently made in the doctest are mutually inconsistent:\n\n```\nassume(1-c^2 > 0)\nassume(abs(c) - sqrt(1-c^2) - 1 > 0)\nassume(abs(sqrt(1-c^2)-1) - abs(c) > 0)\n```\nNamely, the first assumption is equivalent to `-1 < c < 1`, and on this domain the functions `abs(c) - sqrt(1-c^2) - 1` and `abs(sqrt(1-c^2)-1) - abs(c)` are strictly negative.\n\nThere is already some functionality for detecting inconsistent assumptions (e.g. `assume(x > 0); assume(x < 0)` raises an error), but it doesn't detect this case.",
     "created_at": "2016-08-11T09:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8728",
     "type": "issue_comment",
@@ -752,6 +745,7 @@ archive/issue_comments_079606.json:
 
 Replying to [comment:28 rws]:
 > I think you are asking for a feature (redundancy of additional assumptions) in Maxima that would warrant a separate ticket.
+
 That too, but more importantly I meant the fact that the assumptions that are currently made in the doctest are mutually inconsistent:
 
 ```
@@ -759,7 +753,6 @@ assume(1-c^2 > 0)
 assume(abs(c) - sqrt(1-c^2) - 1 > 0)
 assume(abs(sqrt(1-c^2)-1) - abs(c) > 0)
 ```
-
 Namely, the first assumption is equivalent to `-1 < c < 1`, and on this domain the functions `abs(c) - sqrt(1-c^2) - 1` and `abs(sqrt(1-c^2)-1) - abs(c)` are strictly negative.
 
 There is already some functionality for detecting inconsistent assumptions (e.g. `assume(x > 0); assume(x < 0)` raises an error), but it doesn't detect this case.

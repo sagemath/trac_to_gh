@@ -3,7 +3,7 @@
 archive/issues_003612.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nIs it possible to put links in the trackback messages that refer to\nlines in the current noteook (as opposed to stuff in the sage or\npython libraries) so that you can jump to that line?  I have found\nthat the code that it spits out is usually very ambiguous (and there\nare no line numbers, another potentially useful feature) and so its\nhard to find the line where the error occurs.\n\nThanks,\nEric\n```\n\n\nNick Alexander's sage mode does something like this so it should be doable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3612\n\n",
+    "body": "Assignee: boothby\n\n```\nIs it possible to put links in the trackback messages that refer to\nlines in the current noteook (as opposed to stuff in the sage or\npython libraries) so that you can jump to that line?  I have found\nthat the code that it spits out is usually very ambiguous (and there\nare no line numbers, another potentially useful feature) and so its\nhard to find the line where the error occurs.\n\nThanks,\nEric\n```\n\nNick Alexander's sage mode does something like this so it should be doable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3612\n\n",
     "created_at": "2008-07-08T17:46:31Z",
     "labels": [
         "component: notebook",
@@ -18,7 +18,6 @@ archive/issues_003612.json:
 ```
 Assignee: boothby
 
-
 ```
 Is it possible to put links in the trackback messages that refer to
 lines in the current noteook (as opposed to stuff in the sage or
@@ -30,7 +29,6 @@ hard to find the line where the error occurs.
 Thanks,
 Eric
 ```
-
 
 Nick Alexander's sage mode does something like this so it should be doable.
 

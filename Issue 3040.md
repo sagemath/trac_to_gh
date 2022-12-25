@@ -57,7 +57,7 @@ Michael
 archive/issue_comments_020873.json:
 ```json
 {
-    "body": "As written, this does not work.  Was it the wrong version of the patch?\n\nHere's a potential doctest, it fails because magma(K) does not work.\n\n\n```\n        We coerce a matrix over a cyclotomic field, where the\n        generator must be named during the coercion.\n            sage: K.<z> = CyclotomicField(12)\n            sage: A = matrix(K, 2, 3, [z, 1+z, z^7 - z + 10/3, 1, 0, z^2 + z + 9*z^11])\n            sage: B = magma(A); B                       # optional\n            sage: B.Type()                              # optional\n            ModMatFldElt\n            sage: B.Parent()                            # optional\n            Full KMatrixSpace of 2 by 3 matrices over XXX\n```\n",
+    "body": "As written, this does not work.  Was it the wrong version of the patch?\n\nHere's a potential doctest, it fails because magma(K) does not work.\n\n```\n        We coerce a matrix over a cyclotomic field, where the\n        generator must be named during the coercion.\n            sage: K.<z> = CyclotomicField(12)\n            sage: A = matrix(K, 2, 3, [z, 1+z, z^7 - z + 10/3, 1, 0, z^2 + z + 9*z^11])\n            sage: B = magma(A); B                       # optional\n            sage: B.Type()                              # optional\n            ModMatFldElt\n            sage: B.Parent()                            # optional\n            Full KMatrixSpace of 2 by 3 matrices over XXX\n```",
     "created_at": "2008-05-05T18:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ As written, this does not work.  Was it the wrong version of the patch?
 
 Here's a potential doctest, it fails because magma(K) does not work.
 
-
 ```
         We coerce a matrix over a cyclotomic field, where the
         generator must be named during the coercion.
@@ -82,7 +81,6 @@ Here's a potential doctest, it fails because magma(K) does not work.
             sage: B.Parent()                            # optional
             Full KMatrixSpace of 2 by 3 matrices over XXX
 ```
-
 
 
 

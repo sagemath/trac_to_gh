@@ -3,7 +3,7 @@
 archive/issues_005401.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nCC:  @mwhansen @jasongrout\n\nFrom #5400:\n\nMe:\n\n```\nI assume you know about the CC field, so what is the problem? \n```\n\nJason:\n\n```\nThe only CC option I have now with the new trac is to add myself. It's not a text box anymore. \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5401\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @mwhansen @jasongrout\n\nFrom #5400:\n\nMe:\n\n```\nI assume you know about the CC field, so what is the problem? \n```\nJason:\n\n```\nThe only CC option I have now with the new trac is to add myself. It's not a text box anymore. \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5401\n\n",
     "created_at": "2009-02-28T16:55:46Z",
     "labels": [
         "component: website/wiki",
@@ -27,13 +27,11 @@ Me:
 ```
 I assume you know about the CC field, so what is the problem? 
 ```
-
 Jason:
 
 ```
 The only CC option I have now with the new trac is to add myself. It's not a text box anymore. 
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_003372.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\n\n```\nsage: var('x,y', MatrixSpace(QQ, 5, 5))\n(x, y)\nsage: ((x+y)^3).expand()\nx^3 + x*y*x + y*x*x + x*y^2 + y*x^2 + x*y*y + y*x*y + y^3\n```\n\n\nThis is the wrong answer (it has two terms `x*y*y` and `x*y^2`, when only one should exist; and it does not have an `x^2*y`); also, this answer is printed poorly (`x*y*y + ... + x*y^2` should simplify to `2*x*y^2 + ...`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3372\n\n",
+    "body": "Assignee: @garyfurnish\n\n```\nsage: var('x,y', MatrixSpace(QQ, 5, 5))\n(x, y)\nsage: ((x+y)^3).expand()\nx^3 + x*y*x + y*x*x + x*y^2 + y*x^2 + x*y*y + y*x*y + y^3\n```\n\nThis is the wrong answer (it has two terms `x*y*y` and `x*y^2`, when only one should exist; and it does not have an `x^2*y`); also, this answer is printed poorly (`x*y*y + ... + x*y^2` should simplify to `2*x*y^2 + ...`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3372\n\n",
     "created_at": "2008-06-05T19:33:16Z",
     "labels": [
         "component: symbolics",
@@ -17,14 +17,12 @@ archive/issues_003372.json:
 ```
 Assignee: @garyfurnish
 
-
 ```
 sage: var('x,y', MatrixSpace(QQ, 5, 5))
 (x, y)
 sage: ((x+y)^3).expand()
 x^3 + x*y*x + y*x*x + x*y^2 + y*x^2 + x*y*y + y*x*y + y^3
 ```
-
 
 This is the wrong answer (it has two terms `x*y*y` and `x*y^2`, when only one should exist; and it does not have an `x^2*y`); also, this answer is printed poorly (`x*y*y + ... + x*y^2` should simplify to `2*x*y^2 + ...`).
 

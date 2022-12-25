@@ -117,7 +117,7 @@ Extra patch applies fine on top of old, and builds (inc. reference html) fine.  
 archive/issue_comments_048220.json:
 ```json
 {
-    "body": "This patch by itself causes a doctest failure for the pickle jar:\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.rc0/devel/sage/sage/structure/sage_object.pyx\", line 724:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 483 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_modular_modform_cuspidal_submodule_CuspidalSubmodule_g1_Q__.sobj\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_modular_modform_cuspidal_submodule_CuspidalSubmodule_g1_Q__.sobj\n    Successfully unpickled 482 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-4.0.rc0/tmp/.doctest_sage_object.py\n         [3.2 s]\nexit code: 1024\n```\n\nThat is without #5080, so there is also the other two failures mentioned above. Note the comment on #5080 causing a significant slowdown in sage/schemes/elliptic_curves/sha_tate.py.\n\nSorry, but \"needs work\" :(\n\nCheers,\n\nMichael",
+    "body": "This patch by itself causes a doctest failure for the pickle jar:\n\n```\nsage -t -long \"devel/sage/sage/structure/sage_object.pyx\"   \n**********************************************************************\nFile \"/scratch/mabshoff/sage-4.0.rc0/devel/sage/sage/structure/sage_object.pyx\", line 724:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 483 objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_modular_modform_cuspidal_submodule_CuspidalSubmodule_g1_Q__.sobj\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_modular_modform_cuspidal_submodule_CuspidalSubmodule_g1_Q__.sobj\n    Successfully unpickled 482 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-4.0.rc0/tmp/.doctest_sage_object.py\n         [3.2 s]\nexit code: 1024\n```\nThat is without #5080, so there is also the other two failures mentioned above. Note the comment on #5080 causing a significant slowdown in sage/schemes/elliptic_curves/sha_tate.py.\n\nSorry, but \"needs work\" :(\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T23:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
@@ -152,7 +152,6 @@ For whitespace errors, see the file /scratch/mabshoff/sage-4.0.rc0/tmp/.doctest_
          [3.2 s]
 exit code: 1024
 ```
-
 That is without #5080, so there is also the other two failures mentioned above. Note the comment on #5080 causing a significant slowdown in sage/schemes/elliptic_curves/sha_tate.py.
 
 Sorry, but "needs work" :(
@@ -224,7 +223,7 @@ Since I gave the earlier patch a positive review I clearly don't know all the te
 archive/issue_comments_048224.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> Since I gave the earlier patch a positive review I clearly don't know all the tests which need doing -- so Michael, is David's new patch passes your tests it is certainly ok with me.\n\nI haven't tried the new patch yet, but the old one caused issues in `sage/modular/modsym/space.py` which were fixed by #5080. Unfortunately that ticket caused a massive slowdown (see David's comment toward the end why), so I cannot merge both tickets due to the slowdown and this ticket due to the failure.\n\nWe are about to leave for MSR, so I won't have net access for the next 8 hours or so.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n> Since I gave the earlier patch a positive review I clearly don't know all the tests which need doing -- so Michael, is David's new patch passes your tests it is certainly ok with me.\n\n\nI haven't tried the new patch yet, but the old one caused issues in `sage/modular/modsym/space.py` which were fixed by #5080. Unfortunately that ticket caused a massive slowdown (see David's comment toward the end why), so I cannot merge both tickets due to the slowdown and this ticket due to the failure.\n\nWe are about to leave for MSR, so I won't have net access for the next 8 hours or so.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T14:54:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
@@ -235,6 +234,7 @@ archive/issue_comments_048224.json:
 
 Replying to [comment:8 cremona]:
 > Since I gave the earlier patch a positive review I clearly don't know all the tests which need doing -- so Michael, is David's new patch passes your tests it is certainly ok with me.
+
 
 I haven't tried the new patch yet, but the old one caused issues in `sage/modular/modsym/space.py` which were fixed by #5080. Unfortunately that ticket caused a massive slowdown (see David's comment toward the end why), so I cannot merge both tickets due to the slowdown and this ticket due to the failure.
 
@@ -293,7 +293,7 @@ David
 archive/issue_comments_048227.json:
 ```json
 {
-    "body": "Sounds good as a reasonable stopgap.  \n\nI applied both patches in turn to 4.0.alpha0.  There was this:\n\n```\npatching file sage/modular/modsym/ambient.py\nHunk #1 succeeded at 233 with fuzz 1 (offset -81 lines).\n```\n\nwhich I think can be ignored.  All tests (including long) in sage/modular pass, as does Michael's test of sage/structure/sage_object.pyx.  So I am reinstating the positive review and hoping for the best.",
+    "body": "Sounds good as a reasonable stopgap.  \n\nI applied both patches in turn to 4.0.alpha0.  There was this:\n\n```\npatching file sage/modular/modsym/ambient.py\nHunk #1 succeeded at 233 with fuzz 1 (offset -81 lines).\n```\nwhich I think can be ignored.  All tests (including long) in sage/modular pass, as does Michael's test of sage/structure/sage_object.pyx.  So I am reinstating the positive review and hoping for the best.",
     "created_at": "2009-05-20T09:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
@@ -310,7 +310,6 @@ I applied both patches in turn to 4.0.alpha0.  There was this:
 patching file sage/modular/modsym/ambient.py
 Hunk #1 succeeded at 233 with fuzz 1 (offset -81 lines).
 ```
-
 which I think can be ignored.  All tests (including long) in sage/modular pass, as does Michael's test of sage/structure/sage_object.pyx.  So I am reinstating the positive review and hoping for the best.
 
 

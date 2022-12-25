@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5967
 archive/issue_comments_047188.json:
 ```json
 {
-    "body": "This is broken:\n\n```\n \t129\t            sage: cmp(l11, l12), cmp(l12, l11)   # values differ \n \t130\t            (-1, 1) \n \t131\t            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ \n \t132\t            (-1, 1) \n```\n\n**Never** check the return value of `cmp` to be -1 or 1, but always write\n\n```\nsage: cmp(l11, l21) in [-1,1]\nTrue\n```\n\nsince the value depends on memory location. I have had to fix this literally dozens of times in doctests.\n\nCheers,\n\nMichael",
+    "body": "This is broken:\n\n```\n \t129\t            sage: cmp(l11, l12), cmp(l12, l11)   # values differ \n \t130\t            (-1, 1) \n \t131\t            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ \n \t132\t            (-1, 1) \n```\n**Never** check the return value of `cmp` to be -1 or 1, but always write\n\n```\nsage: cmp(l11, l21) in [-1,1]\nTrue\n```\nsince the value depends on memory location. I have had to fix this literally dozens of times in doctests.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-03T01:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -56,14 +56,12 @@ This is broken:
  	131	            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ 
  	132	            (-1, 1) 
 ```
-
 **Never** check the return value of `cmp` to be -1 or 1, but always write
 
 ```
 sage: cmp(l11, l21) in [-1,1]
 True
 ```
-
 since the value depends on memory location. I have had to fix this literally dozens of times in doctests.
 
 Cheers,
@@ -101,7 +99,7 @@ Michael
 archive/issue_comments_047190.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> This is broken:\n> {{{\n>  \t129\t            sage: cmp(l11, l12), cmp(l12, l11)   # values differ \n>  \t130\t            (-1, 1) \n>  \t131\t            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ \n>  \t132\t            (-1, 1) \n> }}}\n> **Never** check the return value of `cmp` to be -1 or 1, but always write\n> {{{\n> sage: cmp(l11, l21) in [-1,1]\n> True\n> }}}\n> since the value depends on memory location. I have had to fix this literally dozens of times in doctests.\n\nOk, will do.",
+    "body": "Replying to [comment:1 mabshoff]:\n> This is broken:\n> \n> ```\n>  \t129\t            sage: cmp(l11, l12), cmp(l12, l11)   # values differ \n>  \t130\t            (-1, 1) \n>  \t131\t            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ \n>  \t132\t            (-1, 1) \n> ```\n> **Never** check the return value of `cmp` to be -1 or 1, but always write\n> \n> ```\n> sage: cmp(l11, l21) in [-1,1]\n> True\n> ```\n> since the value depends on memory location. I have had to fix this literally dozens of times in doctests.\n\n\nOk, will do.",
     "created_at": "2009-05-03T02:25:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -112,18 +110,21 @@ archive/issue_comments_047190.json:
 
 Replying to [comment:1 mabshoff]:
 > This is broken:
-> {{{
+> 
+> ```
 >  	129	            sage: cmp(l11, l12), cmp(l12, l11)   # values differ 
 >  	130	            (-1, 1) 
 >  	131	            sage: cmp(l11, l21), cmp(l21, l11)   # parents differ 
 >  	132	            (-1, 1) 
-> }}}
+> ```
 > **Never** check the return value of `cmp` to be -1 or 1, but always write
-> {{{
+> 
+> ```
 > sage: cmp(l11, l21) in [-1,1]
 > True
-> }}}
+> ```
 > since the value depends on memory location. I have had to fix this literally dozens of times in doctests.
+
 
 Ok, will do.
 
@@ -134,7 +135,7 @@ Ok, will do.
 archive/issue_comments_047191.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> This ticket also needs to be properly market with a marker so it is picked up for review.\n\nAny suggestion for that marker?\n\n> Another thing to fix is to get this file into the documentation. Unless it is in the documentation the vast majority of people will never know of its existence. Current policy is that every file that is well documented and 100% doctested belongs in the documentation. \n\nOk, will do.",
+    "body": "Replying to [comment:2 mabshoff]:\n> This ticket also needs to be properly market with a marker so it is picked up for review.\n\n\nAny suggestion for that marker?\n\n> Another thing to fix is to get this file into the documentation. Unless it is in the documentation the vast majority of people will never know of its existence. Current policy is that every file that is well documented and 100% doctested belongs in the documentation. \n\n\nOk, will do.",
     "created_at": "2009-05-03T02:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -146,9 +147,11 @@ archive/issue_comments_047191.json:
 Replying to [comment:2 mabshoff]:
 > This ticket also needs to be properly market with a marker so it is picked up for review.
 
+
 Any suggestion for that marker?
 
 > Another thing to fix is to get this file into the documentation. Unless it is in the documentation the vast majority of people will never know of its existence. Current policy is that every file that is well documented and 100% doctested belongs in the documentation. 
+
 
 Ok, will do.
 
@@ -159,7 +162,7 @@ Ok, will do.
 archive/issue_comments_047192.json:
 ```json
 {
-    "body": "Replying to [comment:4 nthiery]:\n> Replying to [comment:2 mabshoff]:\n> > This ticket also needs to be properly market with a marker so it is picked up for review.\n> \n> Any suggestion for that marker?\n\nI meant the standard \"[with patch, needs review]\" :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 nthiery]:\n> Replying to [comment:2 mabshoff]:\n> > This ticket also needs to be properly market with a marker so it is picked up for review.\n\n> \n> Any suggestion for that marker?\n\n\nI meant the standard \"[with patch, needs review]\" :)\n\nCheers,\n\nMichael",
     "created_at": "2009-05-03T02:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -171,8 +174,10 @@ archive/issue_comments_047192.json:
 Replying to [comment:4 nthiery]:
 > Replying to [comment:2 mabshoff]:
 > > This ticket also needs to be properly market with a marker so it is picked up for review.
+
 > 
 > Any suggestion for that marker?
+
 
 I meant the standard "[with patch, needs review]" :)
 
@@ -187,7 +192,7 @@ Michael
 archive/issue_comments_047193.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> I meant the standard \"[with patch, needs review]\" :)\n\nOops, I was sure I had done this!",
+    "body": "Replying to [comment:5 mabshoff]:\n> I meant the standard \"[with patch, needs review]\" :)\n\n\nOops, I was sure I had done this!",
     "created_at": "2009-05-03T02:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -198,6 +203,7 @@ archive/issue_comments_047193.json:
 
 Replying to [comment:5 mabshoff]:
 > I meant the standard "[with patch, needs review]" :)
+
 
 Oops, I was sure I had done this!
 
@@ -311,7 +317,7 @@ Robert promised to have a look at this shortly.
 archive/issue_comments_047199.json:
 ```json
 {
-    "body": "I agree this looks good. The only caveat is that the docstring reads \n\n\n```\nTherefore, ``o`` does inherit the string\n```\n\n\nwhere it probably should be \"does not.\"",
+    "body": "I agree this looks good. The only caveat is that the docstring reads \n\n```\nTherefore, ``o`` does inherit the string\n```\n\nwhere it probably should be \"does not.\"",
     "created_at": "2009-05-23T08:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -322,11 +328,9 @@ archive/issue_comments_047199.json:
 
 I agree this looks good. The only caveat is that the docstring reads 
 
-
 ```
 Therefore, ``o`` does inherit the string
 ```
-
 
 where it probably should be "does not."
 
@@ -355,7 +359,7 @@ Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/som
 archive/issue_comments_047201.json:
 ```json
 {
-    "body": "Replying to [comment:12 robertwb]:\n> I agree this looks good. The only caveat is that the docstring reads \n> \n> {{{\n> Therefore, ``o`` does inherit the string\n> }}}\n> \n> where it probably should be \"does not.\"\n\nOops, indeed! Thanks. Patch updated.",
+    "body": "Replying to [comment:12 robertwb]:\n> I agree this looks good. The only caveat is that the docstring reads \n> \n> \n> ```\n> Therefore, ``o`` does inherit the string\n> ```\n> \n> where it probably should be \"does not.\"\n\n\nOops, indeed! Thanks. Patch updated.",
     "created_at": "2009-05-23T15:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
@@ -367,11 +371,13 @@ archive/issue_comments_047201.json:
 Replying to [comment:12 robertwb]:
 > I agree this looks good. The only caveat is that the docstring reads 
 > 
-> {{{
+> 
+> ```
 > Therefore, ``o`` does inherit the string
-> }}}
+> ```
 > 
 > where it probably should be "does not."
+
 
 Oops, indeed! Thanks. Patch updated.
 

@@ -3,7 +3,7 @@
 archive/issues_002799.json:
 ```json
 {
-    "body": "Assignee: @dfdeshom\n\nEx: ` A[:,0:4:2]` should return the 0th and 2nd column of A, if possible:\n\n\n```\nage: A = matrix(ZZ,3,4, [3, 2, -5, 0, 1, -1, 1, -4, 1, 0, 1, -3]); A\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\nsage: A[:,0:4:2]\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2799\n\n",
+    "body": "Assignee: @dfdeshom\n\nEx: ` A[:,0:4:2]` should return the 0th and 2nd column of A, if possible:\n\n```\nage: A = matrix(ZZ,3,4, [3, 2, -5, 0, 1, -1, 1, -4, 1, 0, 1, -3]); A\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\nsage: A[:,0:4:2]\n[ 3  2 -5  0]\n[ 1 -1  1 -4]\n[ 1  0  1 -3]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2799\n\n",
     "created_at": "2008-04-04T19:09:31Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @dfdeshom
 
 Ex: ` A[:,0:4:2]` should return the 0th and 2nd column of A, if possible:
 
-
 ```
 age: A = matrix(ZZ,3,4, [3, 2, -5, 0, 1, -1, 1, -4, 1, 0, 1, -3]); A
 [ 3  2 -5  0]
@@ -34,7 +33,6 @@ sage: A[:,0:4:2]
 [ 1  0  1 -3]
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2799
 

@@ -127,7 +127,7 @@ Sébastien
 archive/issue_comments_075313.json:
 ```json
 {
-    "body": "10. \n\nThe following result seem broken. There should be 3 edges :\n\n\n```\nsage: w = words.FibonacciWord()[:100]\nsage: h = w.reduced_rauzy_graph(9)\nsage: for e in h.edges(): print e\n(word: 001010010, word: 010010100, word: 010100)\n(word: 010010100, word: 001010010, word: 10)\n```\n\n\nOnce it is fixed. This example should be added to the documentation.",
+    "body": "10. \n\nThe following result seem broken. There should be 3 edges :\n\n```\nsage: w = words.FibonacciWord()[:100]\nsage: h = w.reduced_rauzy_graph(9)\nsage: for e in h.edges(): print e\n(word: 001010010, word: 010010100, word: 010100)\n(word: 010010100, word: 001010010, word: 10)\n```\n\nOnce it is fixed. This example should be added to the documentation.",
     "created_at": "2010-03-03T15:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
@@ -140,7 +140,6 @@ archive/issue_comments_075313.json:
 
 The following result seem broken. There should be 3 edges :
 
-
 ```
 sage: w = words.FibonacciWord()[:100]
 sage: h = w.reduced_rauzy_graph(9)
@@ -148,7 +147,6 @@ sage: for e in h.edges(): print e
 (word: 001010010, word: 010010100, word: 010100)
 (word: 010010100, word: 001010010, word: 10)
 ```
-
 
 Once it is fixed. This example should be added to the documentation.
 

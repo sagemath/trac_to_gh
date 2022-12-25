@@ -102,7 +102,7 @@ Attachment [frobenius.patch](tarball://root/attachments/some-uuid/ticket793/frob
 archive/issue_comments_004752.json:
 ```json
 {
-    "body": "Very basic wrapper attached. This is code by Nick Alexander and myself. Sample:\n\n\n```\nsage: R.<x> = PolynomialRing(GF(10007))\nsage: H = HyperellipticCurve(x^7 + x + 1)\nsage: time H.frobenius_polynomial()\nCPU times: user 1.62 s, sys: 0.01 s, total: 1.63 s\nWall time: 1.63 s\nx^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034\n```\n",
+    "body": "Very basic wrapper attached. This is code by Nick Alexander and myself. Sample:\n\n```\nsage: R.<x> = PolynomialRing(GF(10007))\nsage: H = HyperellipticCurve(x^7 + x + 1)\nsage: time H.frobenius_polynomial()\nCPU times: user 1.62 s, sys: 0.01 s, total: 1.63 s\nWall time: 1.63 s\nx^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034\n```",
     "created_at": "2009-03-17T19:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ archive/issue_comments_004752.json:
 
 Very basic wrapper attached. This is code by Nick Alexander and myself. Sample:
 
-
 ```
 sage: R.<x> = PolynomialRing(GF(10007))
 sage: H = HyperellipticCurve(x^7 + x + 1)
@@ -122,7 +121,6 @@ CPU times: user 1.62 s, sys: 0.01 s, total: 1.63 s
 Wall time: 1.63 s
 x^6 + 4*x^5 + 21884*x^4 - 99088*x^3 + 218993188*x^2 + 400560196*x + 100210147034
 ```
-
 
 
 
@@ -247,7 +245,7 @@ Does this mean that if I combine all the functions into one megalithic unreadabl
 archive/issue_comments_004757.json:
 ```json
 {
-    "body": "Replying to [comment:9 dmharvey]:\n> Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?\n\nTechnically yes, but I would not consider this the cleanest solution :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 dmharvey]:\n> Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?\n\n\nTechnically yes, but I would not consider this the cleanest solution :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-01T06:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
@@ -258,6 +256,7 @@ archive/issue_comments_004757.json:
 
 Replying to [comment:9 dmharvey]:
 > Does this mean that if I combine all the functions into one megalithic unreadable function, it would pass review without writing any more doctests?
+
 
 Technically yes, but I would not consider this the cleanest solution :)
 
@@ -290,7 +289,7 @@ I consider them to be tested indirectly by the main function.
 archive/issue_comments_004759.json:
 ```json
 {
-    "body": "> I consider them to be tested indirectly by the main function. \n\nSo are you refusing to doctest your functions and expect this patch to sit in limbo into either somebody else does it for you or the policy of the sage project for the last two years changes?\n\n> Does this mean that if I combine all the functions into one megalithic \n> unreadable  function, it would pass review without writing any more doctests? \n\nNot from me. \n\n -- William",
+    "body": "> I consider them to be tested indirectly by the main function. \n\n\nSo are you refusing to doctest your functions and expect this patch to sit in limbo into either somebody else does it for you or the policy of the sage project for the last two years changes?\n\n> Does this mean that if I combine all the functions into one megalithic \n> unreadable  function, it would pass review without writing any more doctests? \n\n\nNot from me. \n\n -- William",
     "created_at": "2009-04-01T12:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
@@ -301,10 +300,12 @@ archive/issue_comments_004759.json:
 
 > I consider them to be tested indirectly by the main function. 
 
+
 So are you refusing to doctest your functions and expect this patch to sit in limbo into either somebody else does it for you or the policy of the sage project for the last two years changes?
 
 > Does this mean that if I combine all the functions into one megalithic 
 > unreadable  function, it would pass review without writing any more doctests? 
+
 
 Not from me. 
 

@@ -107,7 +107,7 @@ The upgraded package [sagenb-0.7.5.2.spkg](http://sage.math.washington.edu/home/
 archive/issue_comments_075587.json:
 ```json
 {
-    "body": "I have two other problems (after intallation and sage -t -sagenb)\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.3/local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 688:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    34\nGot:\n    33\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_13\n***Test Failed*** 1 failures.\n\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/notebook/interact.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.3/local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/notebook/interact.py\", line 2720:\n    sage: color_selector('purple', widget = 'colorpicker')\nExpected:\n    Interact color selector labeled None, with default RGB color (0.50..., 0.0, 0.50...), widget 'colorpicker', and visible input box\nGot:\n    Interact color selector labeled None, with default RGB color (0.5, 0.0, 1.0), widget 'colorpicker', and visible input box\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_109\n***Test Failed*** 1 failures.\n\n```\n\nto Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(.",
+    "body": "I have two other problems (after intallation and sage -t -sagenb)\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.3/local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 688:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    34\nGot:\n    33\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_13\n***Test Failed*** 1 failures.\n\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/notebook/interact.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.3/local/lib/python2.6/site-packages/sagenb-0.7.5.2-py2.6.egg/sagenb/notebook/interact.py\", line 2720:\n    sage: color_selector('purple', widget = 'colorpicker')\nExpected:\n    Interact color selector labeled None, with default RGB color (0.50..., 0.0, 0.50...), widget 'colorpicker', and visible input box\nGot:\n    Interact color selector labeled None, with default RGB color (0.5, 0.0, 1.0), widget 'colorpicker', and visible input box\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_109\n***Test Failed*** 1 failures.\n\n```\nto Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(.",
     "created_at": "2010-03-07T18:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -146,7 +146,6 @@ Got:
 ***Test Failed*** 1 failures.
 
 ```
-
 to Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(.
 
 
@@ -156,7 +155,7 @@ to Minh: I think that allmost nobody else than mpatel has deep knowledges of Sag
 archive/issue_comments_075588.json:
 ```json
 {
-    "body": "Replying to [comment:6 robert.marik]:\n> to Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(. \n\nI don't think that's true.  I think that William, Tim Dumol, and myself are all pretty comfortable with the code.  I think it's more of any issue that other people haven't put time in trying to work on it.",
+    "body": "Replying to [comment:6 robert.marik]:\n> to Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(. \n\n\nI don't think that's true.  I think that William, Tim Dumol, and myself are all pretty comfortable with the code.  I think it's more of any issue that other people haven't put time in trying to work on it.",
     "created_at": "2010-03-07T18:36:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -168,6 +167,7 @@ archive/issue_comments_075588.json:
 Replying to [comment:6 robert.marik]:
 > to Minh: I think that allmost nobody else than mpatel has deep knowledges of SageNB code :(. 
 
+
 I don't think that's true.  I think that William, Tim Dumol, and myself are all pretty comfortable with the code.  I think it's more of any issue that other people haven't put time in trying to work on it.
 
 
@@ -177,7 +177,7 @@ I don't think that's true.  I think that William, Tim Dumol, and myself are all 
 archive/issue_comments_075589.json:
 ```json
 {
-    "body": "Replying to [comment:6 robert.marik]:\n> I have two other problems (after intallation and sage -t -sagenb)\n\nWhich version of Sage is this?  Those doctest failures sound like consequences of patches to keep up with changes in Sage 4.3.4.alpha0, so you might get errors if you run this version of sagenb with an older version of Sage.",
+    "body": "Replying to [comment:6 robert.marik]:\n> I have two other problems (after intallation and sage -t -sagenb)\n\n\nWhich version of Sage is this?  Those doctest failures sound like consequences of patches to keep up with changes in Sage 4.3.4.alpha0, so you might get errors if you run this version of sagenb with an older version of Sage.",
     "created_at": "2010-03-07T18:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -189,6 +189,7 @@ archive/issue_comments_075589.json:
 Replying to [comment:6 robert.marik]:
 > I have two other problems (after intallation and sage -t -sagenb)
 
+
 Which version of Sage is this?  Those doctest failures sound like consequences of patches to keep up with changes in Sage 4.3.4.alpha0, so you might get errors if you run this version of sagenb with an older version of Sage.
 
 
@@ -198,7 +199,7 @@ Which version of Sage is this?  Those doctest failures sound like consequences o
 archive/issue_comments_075590.json:
 ```json
 {
-    "body": "Replying to [comment:7 mhansen]:\n> \n> I don't think that's true.  I think that William, Tim Dumol, and myself ....\n\nOh sorry, I forgot ...\n\nAnd yes, I tested on the last released Sage - Sage 4.3.3. So sorry for the noise.\n\nRobert",
+    "body": "Replying to [comment:7 mhansen]:\n> \n> I don't think that's true.  I think that William, Tim Dumol, and myself ....\n\n\nOh sorry, I forgot ...\n\nAnd yes, I tested on the last released Sage - Sage 4.3.3. So sorry for the noise.\n\nRobert",
     "created_at": "2010-03-07T20:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -210,6 +211,7 @@ archive/issue_comments_075590.json:
 Replying to [comment:7 mhansen]:
 > 
 > I don't think that's true.  I think that William, Tim Dumol, and myself ....
+
 
 Oh sorry, I forgot ...
 
@@ -224,7 +226,7 @@ Robert
 archive/issue_comments_075591.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n> The upgraded package [sagenb-0.7.5.2.spkg](http://sage.math.washington.edu/home/mpatel/trac/8435/sagenb-0.7.5.2.spkg) works for me. All doctests passed. I'm not familiar with the SageNB package, so I invite someone more knowledgeable to review the code changes.\n\nI think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.  Opinions?  (Now sagenb-0.7.5.3 is available, so it should be tested.)",
+    "body": "Replying to [comment:5 mvngu]:\n> The upgraded package [sagenb-0.7.5.2.spkg](http://sage.math.washington.edu/home/mpatel/trac/8435/sagenb-0.7.5.2.spkg) works for me. All doctests passed. I'm not familiar with the SageNB package, so I invite someone more knowledgeable to review the code changes.\n\n\nI think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.  Opinions?  (Now sagenb-0.7.5.3 is available, so it should be tested.)",
     "created_at": "2010-03-09T05:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -236,6 +238,7 @@ archive/issue_comments_075591.json:
 Replying to [comment:5 mvngu]:
 > The upgraded package [sagenb-0.7.5.2.spkg](http://sage.math.washington.edu/home/mpatel/trac/8435/sagenb-0.7.5.2.spkg) works for me. All doctests passed. I'm not familiar with the SageNB package, so I invite someone more knowledgeable to review the code changes.
 
+
 I think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.  Opinions?  (Now sagenb-0.7.5.3 is available, so it should be tested.)
 
 
@@ -245,7 +248,7 @@ I think that if all of the relevant tickets have received positive reviews, then
 archive/issue_comments_075592.json:
 ```json
 {
-    "body": "Replying to [comment:11 jhpalmieri]:\n> I think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.\n\nI think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release. Anyway, John's argument convinces me.",
+    "body": "Replying to [comment:11 jhpalmieri]:\n> I think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.\n\n\nI think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release. Anyway, John's argument convinces me.",
     "created_at": "2010-03-09T05:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -257,6 +260,7 @@ archive/issue_comments_075592.json:
 Replying to [comment:11 jhpalmieri]:
 > I think that if all of the relevant tickets have received positive reviews, then people have presumably reviewed the code changes.  So perhaps passing doctests should be good enough for this ticket to be given a positive review.
 
+
 I think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release. Anyway, John's argument convinces me.
 
 
@@ -266,7 +270,7 @@ I think that is reasonable. In most cases, it is safe for a new SageNB spkg to g
 archive/issue_comments_075593.json:
 ```json
 {
-    "body": "Replying to [comment:12 mvngu]:\n> I think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release.\n\nThis sounds sensible.",
+    "body": "Replying to [comment:12 mvngu]:\n> I think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release.\n\n\nThis sounds sensible.",
     "created_at": "2010-03-09T06:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -277,6 +281,7 @@ archive/issue_comments_075593.json:
 
 Replying to [comment:12 mvngu]:
 > I think that is reasonable. In most cases, it is safe for a new SageNB spkg to go into an alpha release. But I would refrain from putting a new SageNB spkg into an rc release.
+
 
 This sounds sensible.
 
@@ -331,7 +336,7 @@ My setup:
 archive/issue_comments_075596.json:
 ```json
 {
-    "body": "You're right. I just upgraded to Selenium 1.0.3 (from 1.0.1) and now they don't all pass.  I'll investigate.\n\nTo run the [Selenium](http://seleniumhq.org/) tests with Firefox, check that Java is installed and [download Selenium RC](http://seleniumhq.org/download/):\n\n```sh\nwget http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip\nmkdir selenium\ncd selenium\nunzip selenium-remote-control-1.0.3.zip\ncd selenium-server-1.0.3\njava -jar selenium-server.jar\n```\n\nTo run the SageNB tests, I usually do the following, e.g., in a script:\n\n```python\nsage: import sagenb.testing.run_tests as rt\nsage: brow = '*firefox3 /usr/lib64/firefox-3.5.8/firefox'  \nsage: rt.setup_tests('localhost', False, brow)\nsage: rt.run_any()\n```\n\nThe `setup_tests` step may not be necessary, but I think it helps to give the path to the actual Firefox binary.  See docstrings for a few examples.",
+    "body": "You're right. I just upgraded to Selenium 1.0.3 (from 1.0.1) and now they don't all pass.  I'll investigate.\n\nTo run the [Selenium](http://seleniumhq.org/) tests with Firefox, check that Java is installed and [download Selenium RC](http://seleniumhq.org/download/):\n\n```sh\nwget http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip\nmkdir selenium\ncd selenium\nunzip selenium-remote-control-1.0.3.zip\ncd selenium-server-1.0.3\njava -jar selenium-server.jar\n```\nTo run the SageNB tests, I usually do the following, e.g., in a script:\n\n```python\nsage: import sagenb.testing.run_tests as rt\nsage: brow = '*firefox3 /usr/lib64/firefox-3.5.8/firefox'  \nsage: rt.setup_tests('localhost', False, brow)\nsage: rt.run_any()\n```\nThe `setup_tests` step may not be necessary, but I think it helps to give the path to the actual Firefox binary.  See docstrings for a few examples.",
     "created_at": "2010-03-09T07:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8435",
     "type": "issue_comment",
@@ -352,7 +357,6 @@ unzip selenium-remote-control-1.0.3.zip
 cd selenium-server-1.0.3
 java -jar selenium-server.jar
 ```
-
 To run the SageNB tests, I usually do the following, e.g., in a script:
 
 ```python
@@ -361,7 +365,6 @@ sage: brow = '*firefox3 /usr/lib64/firefox-3.5.8/firefox'
 sage: rt.setup_tests('localhost', False, brow)
 sage: rt.run_any()
 ```
-
 The `setup_tests` step may not be necessary, but I think it helps to give the path to the actual Firefox binary.  See docstrings for a few examples.
 
 

@@ -3,7 +3,7 @@
 archive/issues_000725.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:\n\n\n```\n            self._zero_out_matrix()\n            j = 0\n            for i from 0 <= i < self._nrows:\n                mpz_init_set(self._entries[j], x.value)\n                j = j + self._nrows + 1\n            self._initialized = True\n```\n\n\nas the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.\n\nAttached patch fixes this.\n\nThe valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.\n\nIssue created by migration from https://trac.sagemath.org/ticket/725\n\n",
+    "body": "Assignee: @williamstein\n\nFor the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:\n\n```\n            self._zero_out_matrix()\n            j = 0\n            for i from 0 <= i < self._nrows:\n                mpz_init_set(self._entries[j], x.value)\n                j = j + self._nrows + 1\n            self._initialized = True\n```\n\nas the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.\n\nAttached patch fixes this.\n\nThe valgrind output of this error is similar to that of #621, but the example on that ticket uses a different code path. So this is not related.\n\nIssue created by migration from https://trac.sagemath.org/ticket/725\n\n",
     "created_at": "2007-09-21T02:34:04Z",
     "labels": [
         "component: algebraic geometry",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 For the diagonal case, the `__init__` function of `Matrix_integer_dense` contains the following code:
 
-
 ```
             self._zero_out_matrix()
             j = 0
@@ -29,7 +28,6 @@ For the diagonal case, the `__init__` function of `Matrix_integer_dense` contain
                 j = j + self._nrows + 1
             self._initialized = True
 ```
-
 
 as the _zero_out_matrix function calls mpz_init on self.entries, we should use mpz_set instead of mpz_init_set.
 

@@ -114,7 +114,7 @@ archive/issue_comments_023306.json:
 archive/issue_comments_023307.json:
 ```json
 {
-    "body": "The problem here is that the old build system does not know about memory.[pyx|lxd] because then I get:\n\n```\nsage -t -long devel/sage/sage/structure/wrapper_parent.pyx\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/tmp/.doctest_wrapper_parent.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all.py\", line 58, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/all.py\", line 76, in <module>\n    from functional import (additive_order,\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 34, in <module>\n    from sage.rings.complex_double import CDF\n  File \"integer.pxd\", line 9, in sage.rings.complex_double (sage/rings/complex_double.c:9324)\n  File \"integer.pyx\", line 1, in sage.rings.integer (sage/rings/integer.c:22427)\nImportError: No module named memory\n```\n\n\nAs Robert suggested it might also be a good idea to renames memory.$FOO to allocator.$FOO.\n\nCheers,\n\nMichael",
+    "body": "The problem here is that the old build system does not know about memory.[pyx|lxd] because then I get:\n\n```\nsage -t -long devel/sage/sage/structure/wrapper_parent.pyx\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/tmp/.doctest_wrapper_parent.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all.py\", line 58, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/all.py\", line 76, in <module>\n    from functional import (additive_order,\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 34, in <module>\n    from sage.rings.complex_double import CDF\n  File \"integer.pxd\", line 9, in sage.rings.complex_double (sage/rings/complex_double.c:9324)\n  File \"integer.pyx\", line 1, in sage.rings.integer (sage/rings/integer.c:22427)\nImportError: No module named memory\n```\n\nAs Robert suggested it might also be a good idea to renames memory.$FOO to allocator.$FOO.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-04T21:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
@@ -143,7 +143,6 @@ Traceback (most recent call last):
 ImportError: No module named memory
 ```
 
-
 As Robert suggested it might also be a good idea to renames memory.$FOO to allocator.$FOO.
 
 Cheers,
@@ -157,7 +156,7 @@ Michael
 archive/issue_comments_023308.json:
 ```json
 {
-    "body": "This fixes at least the build issue:\n\n```\n--- a/setup.py  Sat May 24 16:03:19 2008 -0700\n+++ b/setup.py  Wed Jun 04 14:46:10 2008 -0700\n@@ -720,6 +720,9 @@ ext_modules = [ \\\n     Extension('sage.rings.integer',\n               sources = ['sage/ext/arith.pyx', 'sage/rings/integer.pyx'],\n               libraries=['ntl', 'gmp']), \\\n+\n+    Extension('sage.misc.memory',\n+                  sources = ['sage/misc/memory.pyx']), \\\n\n     Extension('sage.rings.integer_ring',\n               sources = ['sage/rings/integer_ring.pyx'],\n```\n\n\nNow doctesting & valgrinding ....\n\nCheers,\n\nMichael",
+    "body": "This fixes at least the build issue:\n\n```\n--- a/setup.py  Sat May 24 16:03:19 2008 -0700\n+++ b/setup.py  Wed Jun 04 14:46:10 2008 -0700\n@@ -720,6 +720,9 @@ ext_modules = [ \\\n     Extension('sage.rings.integer',\n               sources = ['sage/ext/arith.pyx', 'sage/rings/integer.pyx'],\n               libraries=['ntl', 'gmp']), \\\n+\n+    Extension('sage.misc.memory',\n+                  sources = ['sage/misc/memory.pyx']), \\\n\n     Extension('sage.rings.integer_ring',\n               sources = ['sage/rings/integer_ring.pyx'],\n```\n\nNow doctesting & valgrinding ....\n\nCheers,\n\nMichael",
     "created_at": "2008-06-04T21:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
@@ -182,7 +181,6 @@ This fixes at least the build issue:
      Extension('sage.rings.integer_ring',
                sources = ['sage/rings/integer_ring.pyx'],
 ```
-
 
 Now doctesting & valgrinding ....
 

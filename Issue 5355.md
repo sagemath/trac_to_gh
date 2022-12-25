@@ -72,7 +72,7 @@ Related: #12715
 archive/issue_comments_041177.json:
 ```json
 {
-    "body": "We do have\n\n```\nsage: K.<a> = NumberField(x^3 - 7, embedding=AA(7)**(1/3))\nsage: AA.has_coerce_map_from(K)\nTrue\nsage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))\nsage: QQbar.has_coerce_map_from(K)\nTrue\n```\n\nIsn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.",
+    "body": "We do have\n\n```\nsage: K.<a> = NumberField(x^3 - 7, embedding=AA(7)**(1/3))\nsage: AA.has_coerce_map_from(K)\nTrue\nsage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))\nsage: QQbar.has_coerce_map_from(K)\nTrue\n```\nIsn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.",
     "created_at": "2016-03-11T20:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5355",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ sage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))
 sage: QQbar.has_coerce_map_from(K)
 True
 ```
-
 Isn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.
 
 
@@ -137,7 +136,7 @@ There are memory-leak implications on this: Coercions are normally cached on the
 archive/issue_comments_041180.json:
 ```json
 {
-    "body": "Replying to [comment:3 vdelecroix]:\n> We do have\n> {{{\n> sage: K.<a> = NumberField(x^3 - 7, embedding=AA(7)**(1/3))\n> sage: AA.has_coerce_map_from(K)\n> True\n> sage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))\n> sage: QQbar.has_coerce_map_from(K)\n> True\n> }}}\n> Isn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.\nTo automate the embedding, what should be the interface, perhaps something like this?\n\n```\nK.<a> = NumberField(x^3 - 7, embedding=1.9, embedding_field=AA)\n```\n",
+    "body": "Replying to [comment:3 vdelecroix]:\n> We do have\n> \n> ```\n> sage: K.<a> = NumberField(x^3 - 7, embedding=AA(7)**(1/3))\n> sage: AA.has_coerce_map_from(K)\n> True\n> sage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))\n> sage: QQbar.has_coerce_map_from(K)\n> True\n> ```\n> Isn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.\n\nTo automate the embedding, what should be the interface, perhaps something like this?\n\n```\nK.<a> = NumberField(x^3 - 7, embedding=1.9, embedding_field=AA)\n```",
     "created_at": "2019-04-22T22:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5355",
     "type": "issue_comment",
@@ -148,18 +147,19 @@ archive/issue_comments_041180.json:
 
 Replying to [comment:3 vdelecroix]:
 > We do have
-> {{{
+> 
+> ```
 > sage: K.<a> = NumberField(x^3 - 7, embedding=AA(7)**(1/3))
 > sage: AA.has_coerce_map_from(K)
 > True
 > sage: K.<a> = NumberField(x^3 - 7, embedding=QQbar(7)**(1/3) * QQbar.zeta(3))
 > sage: QQbar.has_coerce_map_from(K)
 > True
-> }}}
+> ```
 > Isn't it enough? What should be simplified is to automatized the embedding into `AA`/`QQbar`. And it is more or less the purpose of #19356.
+
 To automate the embedding, what should be the interface, perhaps something like this?
 
 ```
 K.<a> = NumberField(x^3 - 7, embedding=1.9, embedding_field=AA)
 ```
-

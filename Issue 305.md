@@ -3,7 +3,7 @@
 archive/issues_000305.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: y = loads(dumps(x))\nsage: x.parent().print_prec()\n Infinity\nsage: y.parent().print_prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/305\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: y = loads(dumps(x))\nsage: x.parent().print_prec()\n Infinity\nsage: y.parent().print_prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/305\n\n",
     "created_at": "2007-03-03T14:57:19Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000305.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: K = pAdicField(5)
 sage: x = K(0)
@@ -27,7 +26,6 @@ sage: x.parent().print_prec()
 sage: y.parent().print_prec()
  <class 'sage.rings.padic_field.pAdicField_generic'>
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/305
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/305
 archive/issue_comments_001449.json:
 ```json
 {
-    "body": "Two more examples of weirdness:\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\nand\n\n\n```\nsage: K = pAdicField(5)\nsage: x = K(42)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n '_pAdicField_generic__p'\n```\n",
+    "body": "Two more examples of weirdness:\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\nand\n\n```\nsage: K = pAdicField(5)\nsage: x = K(42)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n '_pAdicField_generic__p'\n```",
     "created_at": "2007-03-03T15:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/305",
     "type": "issue_comment",
@@ -62,9 +60,7 @@ sage: y.prec()
  <class 'sage.rings.padic_field.pAdicField_generic'>
 ```
 
-
 and
-
 
 ```
 sage: K = pAdicField(5)
@@ -75,7 +71,6 @@ sage: y = loads(dumps(x))
 sage: y.prec()
  '_pAdicField_generic__p'
 ```
-
 
 
 

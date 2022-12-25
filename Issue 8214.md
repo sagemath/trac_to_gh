@@ -3,7 +3,7 @@
 archive/issues_008214.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFrom sage-devel:\n\n\n```\nOn Sun, 7 Feb 2010 10:36:29 -0800 (PST)\nGustav Delius <gustav.delius@gmail.com> wrote:\n\n> I wonder whether it would be possible to give a better error message\n> when a user leaves out the multiplication operator in something like\n> x(x+1). Perhaps somthing like: \"Warning: you may have forgotten a\n> multiplication operator.\"\n> \n> Currently one gets the error message: \"DeprecationWarning:\n> Substitution using function-call syntax and unnamed arguments is\n> deprecated and will be removed from a future release of Sage; you can\n> use named arguments instead, like EXPR(x=...,y=...)\". This error\n> message is meaningful only to people who know the history of sage and\n> know that there used to be a confusing shorthand notation that allowed\n> something like x=a^2 to be interpreted as x(a)=a^2. I am glad that was\n> deprecated, but I think that the deprecation warning should be\n> preceeded by the warning about the possibility of a missing *.\n```\n\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/de97f91d548cc0ec\n\nIncidentally, it's almost a year since this was deprecated, #5413. Maybe we can remove the deprecation message for good. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8214\n\n",
+    "body": "Assignee: @burcin\n\nFrom sage-devel:\n\n```\nOn Sun, 7 Feb 2010 10:36:29 -0800 (PST)\nGustav Delius <gustav.delius@gmail.com> wrote:\n\n> I wonder whether it would be possible to give a better error message\n> when a user leaves out the multiplication operator in something like\n> x(x+1). Perhaps somthing like: \"Warning: you may have forgotten a\n> multiplication operator.\"\n> \n> Currently one gets the error message: \"DeprecationWarning:\n> Substitution using function-call syntax and unnamed arguments is\n> deprecated and will be removed from a future release of Sage; you can\n> use named arguments instead, like EXPR(x=...,y=...)\". This error\n> message is meaningful only to people who know the history of sage and\n> know that there used to be a confusing shorthand notation that allowed\n> something like x=a^2 to be interpreted as x(a)=a^2. I am glad that was\n> deprecated, but I think that the deprecation warning should be\n> preceeded by the warning about the possibility of a missing *.\n```\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/de97f91d548cc0ec\n\nIncidentally, it's almost a year since this was deprecated, #5413. Maybe we can remove the deprecation message for good. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8214\n\n",
     "created_at": "2010-02-08T13:36:24Z",
     "labels": [
         "component: symbolics",
@@ -19,7 +19,6 @@ archive/issues_008214.json:
 Assignee: @burcin
 
 From sage-devel:
-
 
 ```
 On Sun, 7 Feb 2010 10:36:29 -0800 (PST)
@@ -40,7 +39,6 @@ Gustav Delius <gustav.delius@gmail.com> wrote:
 > deprecated, but I think that the deprecation warning should be
 > preceeded by the warning about the possibility of a missing *.
 ```
-
 
 Here is the thread:
 
@@ -77,7 +75,7 @@ Burcin, I agree with your observation that the shortcut notation has now been de
 archive/issue_comments_072314.json:
 ```json
 {
-    "body": "As to what the new message should be:\n\n```\nMaybe, but that message is not so helpful.  I guarantee you that you don't need to know the history of Sage to do\n\nsage: f=x^2\nsage: f(2)\n\nand expect 4.  You just need to attend an insufficiently pedantic algebra or calculus lecture :)\n```\n",
+    "body": "As to what the new message should be:\n\n```\nMaybe, but that message is not so helpful.  I guarantee you that you don't need to know the history of Sage to do\n\nsage: f=x^2\nsage: f(2)\n\nand expect 4.  You just need to attend an insufficiently pedantic algebra or calculus lecture :)\n```",
     "created_at": "2010-05-27T14:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8214",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ sage: f(2)
 
 and expect 4.  You just need to attend an insufficiently pedantic algebra or calculus lecture :)
 ```
-
 
 
 

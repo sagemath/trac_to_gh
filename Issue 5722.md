@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5722
 archive/issue_comments_044626.json:
 ```json
 {
-    "body": "Oops, I spoke too soon in person. There are two doctest failures that need fixing:\n\n```\nsage -t -long \"devel/sage/sage/ext/fast_callable.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/fast_callable.pyx\", line 2213:\n    sage: fast_callable(sin(x)/x, vars=[x], domain=RDF).get_orig_args()\nExpected:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 7, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\nGot:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 8, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\n**********************************************************************\n1 items had failures:\n```\n\nAnd\n\n```\nsage -t -long \"devel/sage/sage/ext/gen_interpreters.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/gen_interpreters.py\", line 2772:\n    sage: print buff.getvalue()\nExpected:\n        case 7: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\nGot:\n        case 8: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\n<SNIP>\n```\n\n\nI think that just the doctests need to be updated, but I will leave this to you :)\n\nCheers,\n\nMichael",
+    "body": "Oops, I spoke too soon in person. There are two doctest failures that need fixing:\n\n```\nsage -t -long \"devel/sage/sage/ext/fast_callable.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/fast_callable.pyx\", line 2213:\n    sage: fast_callable(sin(x)/x, vars=[x], domain=RDF).get_orig_args()\nExpected:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 7, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\nGot:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 8, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\n**********************************************************************\n1 items had failures:\n```\nAnd\n\n```\nsage -t -long \"devel/sage/sage/ext/gen_interpreters.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/gen_interpreters.py\", line 2772:\n    sage: print buff.getvalue()\nExpected:\n        case 7: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\nGot:\n        case 8: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\n<SNIP>\n```\n\nI think that just the doctests need to be updated, but I will leave this to you :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T02:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ Got:
 **********************************************************************
 1 items had failures:
 ```
-
 And
 
 ```
@@ -90,7 +89,6 @@ Got:
 <SNIP>
 ```
 
-
 I think that just the doctests need to be updated, but I will leave this to you :)
 
 Cheers,
@@ -122,7 +120,7 @@ Yes, those are both inconsequential ordering issues.
 archive/issue_comments_044628.json:
 ```json
 {
-    "body": "Hi Robert,\n\nthere are actually two more doctest failure that I cut off since the failure message is quite long:\n\n```\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3592:\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3608:\n```\n\nSorry for causing confusion ;)\n\nBut the other doctest failures are fixed.\n\nCheers,\n\nMichael",
+    "body": "Hi Robert,\n\nthere are actually two more doctest failure that I cut off since the failure message is quite long:\n\n```\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3592:\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3608:\n```\nSorry for causing confusion ;)\n\nBut the other doctest failures are fixed.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T06:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
@@ -139,7 +137,6 @@ there are actually two more doctest failure that I cut off since the failure mes
 File "/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py", line 3592:
 File "/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py", line 3608:
 ```
-
 Sorry for causing confusion ;)
 
 But the other doctest failures are fixed.

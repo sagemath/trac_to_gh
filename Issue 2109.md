@@ -3,7 +3,7 @@
 archive/issues_002109.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: maxima.eval('sage0: x == x;')\ndisplay2d : false; \n(%o2) false\n\n0; \n(%o4) 0\n```\n\n\nIt hangs there.  If doing the same thing in Maxima, we get the following results:\n\n\n```\n(%i1) sage0: x==x;\nIncorrect syntax: = is not a prefix operator\nsage0: x==\n        ^\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2109\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: maxima.eval('sage0: x == x;')\ndisplay2d : false; \n(%o2) false\n\n0; \n(%o4) 0\n```\n\nIt hangs there.  If doing the same thing in Maxima, we get the following results:\n\n```\n(%i1) sage0: x==x;\nIncorrect syntax: = is not a prefix operator\nsage0: x==\n        ^\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2109\n\n",
     "created_at": "2008-02-08T10:44:29Z",
     "labels": [
         "component: interfaces",
@@ -19,7 +19,6 @@ archive/issues_002109.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: maxima.eval('sage0: x == x;')
 display2d : false; 
@@ -29,9 +28,7 @@ display2d : false;
 (%o4) 0
 ```
 
-
 It hangs there.  If doing the same thing in Maxima, we get the following results:
-
 
 ```
 (%i1) sage0: x==x;
@@ -40,7 +37,6 @@ sage0: x==
         ^
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2109
 
@@ -53,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2109
 archive/issue_comments_013723.json:
 ```json
 {
-    "body": "Here is what happens in sage-4.1.1:\n\n\n```\nsage: maxima.eval('sage0: x == x;')\n'x'\n```\n",
+    "body": "Here is what happens in sage-4.1.1:\n\n```\nsage: maxima.eval('sage0: x == x;')\n'x'\n```",
     "created_at": "2009-08-24T09:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
@@ -64,12 +60,10 @@ archive/issue_comments_013723.json:
 
 Here is what happens in sage-4.1.1:
 
-
 ```
 sage: maxima.eval('sage0: x == x;')
 'x'
 ```
-
 
 
 
@@ -150,7 +144,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_013728.json:
 ```json
 {
-    "body": "Passes relevant tests, catches several different types of incorrect input errors, and helped me learn a little more about pexpect.  Positive review, and thanks! \n\nUnfortunately, it doesn't catch when someone does something like this, but I'm not sure this is really an \"error\", as it's intended that Maxima can handle this sort of thing... yet it could easily come as a result of an error by the user.  Oh well.\n\n```\nintegrate(f,\nx,1,\n2)\n```\n",
+    "body": "Passes relevant tests, catches several different types of incorrect input errors, and helped me learn a little more about pexpect.  Positive review, and thanks! \n\nUnfortunately, it doesn't catch when someone does something like this, but I'm not sure this is really an \"error\", as it's intended that Maxima can handle this sort of thing... yet it could easily come as a result of an error by the user.  Oh well.\n\n```\nintegrate(f,\nx,1,\n2)\n```",
     "created_at": "2010-01-18T15:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
@@ -168,7 +162,6 @@ integrate(f,
 x,1,
 2)
 ```
-
 
 
 

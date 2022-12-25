@@ -3,7 +3,7 @@
 archive/issues_000671.json:
 ```json
 {
-    "body": "Assignee: malb or was\n\nKeywords: Solaris 10, doctest, singular\n\n\n```\nsage -t  interfaces/singular.py                             **********************************************************************\nFile \"singular.py\", line 337:\n    sage: singular.eval('2 > 1')\nExpected:\n    '1'\nGot:\n    '2'\n**********************************************************************\nFile \"singular.py\", line 339:\n    sage: singular.eval('2 + 2')\nExpected:\n    '4'\nGot:\n    '1'\n**********************************************************************\n```\n\n\nRunning the same commands directly via Singular:\n\n```\n-bash-3.00$ Singular-3-0-3\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> 2+2\n. ;\n4\n> 1<2;\n1\n> 2<1;\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/671\n\n",
+    "body": "Assignee: malb or was\n\nKeywords: Solaris 10, doctest, singular\n\n```\nsage -t  interfaces/singular.py                             **********************************************************************\nFile \"singular.py\", line 337:\n    sage: singular.eval('2 > 1')\nExpected:\n    '1'\nGot:\n    '2'\n**********************************************************************\nFile \"singular.py\", line 339:\n    sage: singular.eval('2 + 2')\nExpected:\n    '4'\nGot:\n    '1'\n**********************************************************************\n```\n\nRunning the same commands directly via Singular:\n\n```\n-bash-3.00$ Singular-3-0-3\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> 2+2\n. ;\n4\n> 1<2;\n1\n> 2<1;\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/671\n\n",
     "created_at": "2007-09-17T00:32:29Z",
     "labels": [
         "component: packages",
@@ -19,7 +19,6 @@ archive/issues_000671.json:
 Assignee: malb or was
 
 Keywords: Solaris 10, doctest, singular
-
 
 ```
 sage -t  interfaces/singular.py                             **********************************************************************
@@ -39,7 +38,6 @@ Got:
 **********************************************************************
 ```
 
-
 Running the same commands directly via Singular:
 
 ```
@@ -57,7 +55,6 @@ FB Mathematik der Universitaet, D-67653 Kaiserslautern    \
 > 2<1;
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/671
 
@@ -88,7 +85,7 @@ Changing component from packages to doctest.
 archive/issue_comments_003464.json:
 ```json
 {
-    "body": "Another interesting data point:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/toy_buchberger.py\n<SNIP>\nTrying:\n    Ideal(g1).basis_is_groebner()###line 44:_sage_    >>> Ideal(g1).basis_is_groebner()\nExpecting:\n    True\n```\n\nResult: hang\n\nAnd:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/multi_polynomial_element.py\nTrying:\n    k.factor()###line 1035:_sage_    >>> k.factor()\nExpecting:\n    (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5\n```\n\nResult: hang  \n\nCheers,\n\nMichael",
+    "body": "Another interesting data point:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/toy_buchberger.py\n<SNIP>\nTrying:\n    Ideal(g1).basis_is_groebner()###line 44:_sage_    >>> Ideal(g1).basis_is_groebner()\nExpecting:\n    True\n```\nResult: hang\n\nAnd:\n\n```\n./sage -t -verbose devel/sage/sage/rings/polynomial/multi_polynomial_element.py\nTrying:\n    k.factor()###line 1035:_sage_    >>> k.factor()\nExpecting:\n    (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5\n```\nResult: hang  \n\nCheers,\n\nMichael",
     "created_at": "2007-09-17T09:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/671",
     "type": "issue_comment",
@@ -107,7 +104,6 @@ Trying:
 Expecting:
     True
 ```
-
 Result: hang
 
 And:
@@ -119,7 +115,6 @@ Trying:
 Expecting:
     (s^2 + 2/3) * (x + s*y)^2 * (x + (-s)*y)^5 * (x^2 + s*x*y + s^2*y^2)^5
 ```
-
 Result: hang  
 
 Cheers,

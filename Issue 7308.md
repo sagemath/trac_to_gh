@@ -74,7 +74,7 @@ Attachment [trac_7308.patch](tarball://root/attachments/some-uuid/ticket7308/tra
 archive/issue_comments_060917.json:
 ```json
 {
-    "body": "I'm not in a position to test this, but if you need to make any changes, I would suggest the following would be helpful. Some are I admit code I introduced, which is probaby not necessary. None are particularly important. \n\n* There is no longer any need to have \n\n\n```\nif [ -n \"$SAGE_FORTRAN_LIB\" ] && [ ! -e \"$SAGE_FORTRAN_LIB\" ]; then\n    echo \"SAGE_FORTRAN_LIB is defined as $SAGE_FORTRAN_LIB, but does not exist\"\n    exit 1\nfi\n```\n \nsince code in the recent *prereq-0.4* (#7021) script checks this, so the above code is redundant. \n\n* There is no need to have the following line\n\n` if [ \"x$SAGE64\" = \"xyes\" ] || [ \"x$SAGE64\" = \"x1\" ]; then `\n\nIt should instead be replaced by\n\n   ` if [ \"x$SAGE64\" = \"xyes\" ]; then `\n\nsince some earlier code in the *prereq-0.3* script written by William only allows SAGE64 to be unset, or set to *yes* or *no*. It is not possible to set it to *1*, so there is no point testing if it is *1*. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)\n\n* There is no need to have \n  {{{\n   # We exit here, since we are possibly on an unsupported platform.\n   if [ -n \"${SAGE_PORT:-x}\" ]; then\n       echo \"Cannot determine your platform or it is not supported... exiting\"\n       exit 1\n   else\n  }}}\nsince the recent *prereq-0.4* update will exit for **all** unsupported platforms unless SAGE_PORT is set to 'yes'.",
+    "body": "I'm not in a position to test this, but if you need to make any changes, I would suggest the following would be helpful. Some are I admit code I introduced, which is probaby not necessary. None are particularly important. \n\n* There is no longer any need to have \n\n```\nif [ -n \"$SAGE_FORTRAN_LIB\" ] && [ ! -e \"$SAGE_FORTRAN_LIB\" ]; then\n    echo \"SAGE_FORTRAN_LIB is defined as $SAGE_FORTRAN_LIB, but does not exist\"\n    exit 1\nfi\n``` \nsince code in the recent *prereq-0.4* (#7021) script checks this, so the above code is redundant. \n\n* There is no need to have the following line\n\n` if [ \"x$SAGE64\" = \"xyes\" ] || [ \"x$SAGE64\" = \"x1\" ]; then `\n\nIt should instead be replaced by\n\n   ` if [ \"x$SAGE64\" = \"xyes\" ]; then `\n\nsince some earlier code in the *prereq-0.3* script written by William only allows SAGE64 to be unset, or set to *yes* or *no*. It is not possible to set it to *1*, so there is no point testing if it is *1*. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)\n\n* There is no need to have \n  {{{\n   # We exit here, since we are possibly on an unsupported platform.\n   if [ -n \"${SAGE_PORT:-x}\" ]; then\n       echo \"Cannot determine your platform or it is not supported... exiting\"\n       exit 1\n   else\n  }}}\nsince the recent *prereq-0.4* update will exit for **all** unsupported platforms unless SAGE_PORT is set to 'yes'.",
     "created_at": "2009-10-30T14:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
@@ -87,14 +87,12 @@ I'm not in a position to test this, but if you need to make any changes, I would
 
 * There is no longer any need to have 
 
-
 ```
 if [ -n "$SAGE_FORTRAN_LIB" ] && [ ! -e "$SAGE_FORTRAN_LIB" ]; then
     echo "SAGE_FORTRAN_LIB is defined as $SAGE_FORTRAN_LIB, but does not exist"
     exit 1
 fi
-```
- 
+``` 
 since code in the recent *prereq-0.4* (#7021) script checks this, so the above code is redundant. 
 
 * There is no need to have the following line

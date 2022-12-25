@@ -3,7 +3,7 @@
 archive/issues_005009.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: elementary divisor\n\nThe doc string for the `elementary_divisors` method in matrix_integer_dense.pyx says\n\n```\nThe elementary divisors are the invariants of the finite\nabelian group that is the cokernel of this matrix. \n```\n\nThe word \"cokernel\" needs to be expanded upon.  I think, from trial and error, that this is computing the cokernel of left multiplication by the matrix, and this needs to be **clearly stated**, especially given other left/right issues with matrices in Sage.  (See #1587, for example.)\n\nFurthermore, give at least one example where the matrix *isn't square* so we can see a bit more clearly on which side the matrix is acting, say a simple matrix like [[3, 0, 0], [0, 0, 0]].  Maybe even include both this and its transpose.\n\n(As an editorial comment, I find it really annoying that methods like this are for left multiplication, while methods like `restrict_codomain` are for right multiplication, so if I want to use them both, I have to take transposes way too many times.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5009\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elementary divisor\n\nThe doc string for the `elementary_divisors` method in matrix_integer_dense.pyx says\n\n```\nThe elementary divisors are the invariants of the finite\nabelian group that is the cokernel of this matrix. \n```\nThe word \"cokernel\" needs to be expanded upon.  I think, from trial and error, that this is computing the cokernel of left multiplication by the matrix, and this needs to be **clearly stated**, especially given other left/right issues with matrices in Sage.  (See #1587, for example.)\n\nFurthermore, give at least one example where the matrix *isn't square* so we can see a bit more clearly on which side the matrix is acting, say a simple matrix like [[3, 0, 0], [0, 0, 0]].  Maybe even include both this and its transpose.\n\n(As an editorial comment, I find it really annoying that methods like this are for left multiplication, while methods like `restrict_codomain` are for right multiplication, so if I want to use them both, I have to take transposes way too many times.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5009\n\n",
     "created_at": "2009-01-18T06:32:17Z",
     "labels": [
         "component: linear algebra",
@@ -26,7 +26,6 @@ The doc string for the `elementary_divisors` method in matrix_integer_dense.pyx 
 The elementary divisors are the invariants of the finite
 abelian group that is the cokernel of this matrix. 
 ```
-
 The word "cokernel" needs to be expanded upon.  I think, from trial and error, that this is computing the cokernel of left multiplication by the matrix, and this needs to be **clearly stated**, especially given other left/right issues with matrices in Sage.  (See #1587, for example.)
 
 Furthermore, give at least one example where the matrix *isn't square* so we can see a bit more clearly on which side the matrix is acting, say a simple matrix like [[3, 0, 0], [0, 0, 0]].  Maybe even include both this and its transpose.

@@ -53,7 +53,7 @@ first patch -- does everything but needs more testing and documentation
 archive/issue_comments_025056.json:
 ```json
 {
-    "body": "\n```\nBEFORE: \n  TIME: Several *minutes* to store.\n  SPACE: 310MB.\n\nAFTER THIS PATCH, which automigrates the sage notebook:\n  TIME: 6.7 seconds to save (on sage.math)\n  SPACE: 8.8MB.\n```\n\n\nSo basically everything is about 30 times faster / smaller. \n\nThe main problem is that I might have introduced bugs, and of course 7 seconds\nis a lot longer than nothing.  But this seems like a worthwhile payback for\n3 hours of work.\n\nNOTE: There are no doctests yet, since those are very strange to write for the notebook.",
+    "body": "```\nBEFORE: \n  TIME: Several *minutes* to store.\n  SPACE: 310MB.\n\nAFTER THIS PATCH, which automigrates the sage notebook:\n  TIME: 6.7 seconds to save (on sage.math)\n  SPACE: 8.8MB.\n```\n\nSo basically everything is about 30 times faster / smaller. \n\nThe main problem is that I might have introduced bugs, and of course 7 seconds\nis a lot longer than nothing.  But this seems like a worthwhile payback for\n3 hours of work.\n\nNOTE: There are no doctests yet, since those are very strange to write for the notebook.",
     "created_at": "2008-07-04T11:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ archive/issue_comments_025056.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 BEFORE: 
@@ -72,7 +71,6 @@ AFTER THIS PATCH, which automigrates the sage notebook:
   TIME: 6.7 seconds to save (on sage.math)
   SPACE: 8.8MB.
 ```
-
 
 So basically everything is about 30 times faster / smaller. 
 

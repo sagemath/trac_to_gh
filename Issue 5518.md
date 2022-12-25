@@ -3,7 +3,7 @@
 archive/issues_005518.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: number field multiplicative order\n\nThe attached patch vastly improves the efficiency of the multiplicative_order() function for number field elements.  Before, this example:\n\n```\n sage: x = polygen(QQ)\n            sage: K.<a>=NumberField(x^40 - x^20 + 4)\n            sage: u = 1/4*a^30 + 1/4*a^10 + 1/2\n            sage: u.multiplicative_order()\n            6\n            sage: a.multiplicative_order()\n            +Infinity\n```\n\nwould have required raising a to the power 2**40 (I'm serious).  Now it just works (fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5518\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field multiplicative order\n\nThe attached patch vastly improves the efficiency of the multiplicative_order() function for number field elements.  Before, this example:\n\n```\n sage: x = polygen(QQ)\n            sage: K.<a>=NumberField(x^40 - x^20 + 4)\n            sage: u = 1/4*a^30 + 1/4*a^10 + 1/2\n            sage: u.multiplicative_order()\n            6\n            sage: a.multiplicative_order()\n            +Infinity\n```\nwould have required raising a to the power 2**40 (I'm serious).  Now it just works (fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5518\n\n",
     "created_at": "2009-03-14T18:53:55Z",
     "labels": [
         "component: number theory"
@@ -30,7 +30,6 @@ The attached patch vastly improves the efficiency of the multiplicative_order() 
             sage: a.multiplicative_order()
             +Infinity
 ```
-
 would have required raising a to the power 2**40 (I'm serious).  Now it just works (fast).
 
 Issue created by migration from https://trac.sagemath.org/ticket/5518
@@ -80,7 +79,7 @@ Changing priority from major to minor.
 archive/issue_comments_042807.json:
 ```json
 {
-    "body": "This is excellent.  A great speed up, and it gives the right answer!  \n\nI would suggest adding the doctest\n\n```\nsage: K.<a, b> = NumberField([x^2 + x + 1, x^2 - 3])\nsage: z = (a - 1)*b/3\nsage: z.multiplicative_order()\n12\n```\n\nbecause sage-3.4 says the order is `+infinity`.",
+    "body": "This is excellent.  A great speed up, and it gives the right answer!  \n\nI would suggest adding the doctest\n\n```\nsage: K.<a, b> = NumberField([x^2 + x + 1, x^2 - 3])\nsage: z = (a - 1)*b/3\nsage: z.multiplicative_order()\n12\n```\nbecause sage-3.4 says the order is `+infinity`.",
     "created_at": "2009-03-17T20:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
@@ -99,7 +98,6 @@ sage: z = (a - 1)*b/3
 sage: z.multiplicative_order()
 12
 ```
-
 because sage-3.4 says the order is `+infinity`.
 
 

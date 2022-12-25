@@ -3,7 +3,7 @@
 archive/issues_000111.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @mwhansen\n\nThere are many instances of copy methods in SAGE.  They should all be __copy__, which\nis what gets called by the standard copy module (part of the standard Python library). \n\n\n```\nsage: search_sage('def copy')\n\nmatrix/sparse_matrix.py:    def copy(self):\nmodules/free_module_element.py:    def copy(self):\nplot/graph.py:    def copy(self, name):\nrings/finite_field_element.py:    def copy(self):\nrings/fraction_field_element.py:    def copy(self):\nrings/laurent_series_ring_element.py:    def copy(self):\nrings/padic.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/quotient_ring_element.py:    def copy(self):\nlibs/pari/functional.py:def copy(self): return pari(self).copy()\nmodular/modsym/manin_symbols.py:    def copy(self):\nserver/server1/server1.py:    def copyfile(self, source, outputfile): \nmatrix/dense_matrix_pyx.pyx:    def copy(self):\nmatrix/matrix_generic.pyx:    def copy(self):\nmatrix/matrix_integer_dense.pyx:    def copy(self):\nmatrix/matrix_modn_dense.pyx:    def copy(Matrix_modn_dense self):\nmatrix/matrix_modn_sparse.pyx:    def copy(self):\nmatrix/matrix_rational_dense.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nrings/integer.pyx:    def copy(self):\nrings/integer_mod.pyx:    def copy(IntegerMod_gmp self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int64 self):\nrings/mpc.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/real_double.pyx:    def copy(self):\nrings/real_mpfr.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nlibs/linbox/finite_field_givaro.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(ntl_GF2E self):\nlibs/pari/_py_pari_orig.pyx:    def copy(gen self):\nlibs/pari/gen.pyx:    def copy(gen self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/111\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @mwhansen\n\nThere are many instances of copy methods in SAGE.  They should all be __copy__, which\nis what gets called by the standard copy module (part of the standard Python library). \n\n```\nsage: search_sage('def copy')\n\nmatrix/sparse_matrix.py:    def copy(self):\nmodules/free_module_element.py:    def copy(self):\nplot/graph.py:    def copy(self, name):\nrings/finite_field_element.py:    def copy(self):\nrings/fraction_field_element.py:    def copy(self):\nrings/laurent_series_ring_element.py:    def copy(self):\nrings/padic.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/quotient_ring_element.py:    def copy(self):\nlibs/pari/functional.py:def copy(self): return pari(self).copy()\nmodular/modsym/manin_symbols.py:    def copy(self):\nserver/server1/server1.py:    def copyfile(self, source, outputfile): \nmatrix/dense_matrix_pyx.pyx:    def copy(self):\nmatrix/matrix_generic.pyx:    def copy(self):\nmatrix/matrix_integer_dense.pyx:    def copy(self):\nmatrix/matrix_modn_dense.pyx:    def copy(Matrix_modn_dense self):\nmatrix/matrix_modn_sparse.pyx:    def copy(self):\nmatrix/matrix_rational_dense.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nrings/integer.pyx:    def copy(self):\nrings/integer_mod.pyx:    def copy(IntegerMod_gmp self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int64 self):\nrings/mpc.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/real_double.pyx:    def copy(self):\nrings/real_mpfr.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nlibs/linbox/finite_field_givaro.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(ntl_GF2E self):\nlibs/pari/_py_pari_orig.pyx:    def copy(gen self):\nlibs/pari/gen.pyx:    def copy(gen self):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/111\n\n",
     "created_at": "2006-10-05T06:24:07Z",
     "labels": [
         "component: user interface",
@@ -23,7 +23,6 @@ CC:  @robertwb @mwhansen
 
 There are many instances of copy methods in SAGE.  They should all be __copy__, which
 is what gets called by the standard copy module (part of the standard Python library). 
-
 
 ```
 sage: search_sage('def copy')
@@ -73,7 +72,6 @@ libs/ntl/ntl.pyx:    def copy(ntl_GF2E self):
 libs/pari/_py_pari_orig.pyx:    def copy(gen self):
 libs/pari/gen.pyx:    def copy(gen self):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/111
 
@@ -226,7 +224,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_000521.json:
 ```json
 {
-    "body": "The number has decreased significantly:\n\n```\nlibs/ntl/ntl_ZZX.pyx:    def copy(self):\nlibs/ntl/ntl_ZZ_pEX.pyx:    def copy(self):\nlibs/ntl/ntl_ZZ_pX.pyx:    def copy(self):\nlibs/pari/gen.pyx:    def copy(gen self):\nmatrix/matrix0.pyx:    def copy(self):\nmodules/free_module_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_CA_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_CR_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_FM_element.pyx:    def copy(self):\nrings/padics/padic_capped_absolute_element.pyx:    def copy(pAdicCappedAbsoluteElement self):\nrings/padics/padic_capped_relative_element.pyx:    def copy(self):\nrings/padics/padic_fixed_mod_element.pyx:    def copy(self):\nrings/polynomial/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial/polynomial_pyx.pyx:    def copy(self):\nrings/laurent_series_ring_element.pyx:    def copy(self):\nrings/power_series_poly.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\n```\n\n\nIt would be nice if someone could take an axe to the remaining ones.\n\nCheers,\n\nMichael",
+    "body": "The number has decreased significantly:\n\n```\nlibs/ntl/ntl_ZZX.pyx:    def copy(self):\nlibs/ntl/ntl_ZZ_pEX.pyx:    def copy(self):\nlibs/ntl/ntl_ZZ_pX.pyx:    def copy(self):\nlibs/pari/gen.pyx:    def copy(gen self):\nmatrix/matrix0.pyx:    def copy(self):\nmodules/free_module_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_CA_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_CR_element.pyx:    def copy(self):\nrings/padics/padic_ZZ_pX_FM_element.pyx:    def copy(self):\nrings/padics/padic_capped_absolute_element.pyx:    def copy(pAdicCappedAbsoluteElement self):\nrings/padics/padic_capped_relative_element.pyx:    def copy(self):\nrings/padics/padic_fixed_mod_element.pyx:    def copy(self):\nrings/polynomial/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial/polynomial_pyx.pyx:    def copy(self):\nrings/laurent_series_ring_element.pyx:    def copy(self):\nrings/power_series_poly.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\n```\n\nIt would be nice if someone could take an axe to the remaining ones.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T21:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
@@ -259,7 +257,6 @@ rings/sparse_poly.pyx:    def copy(self):
 rings/sparse_poly.pyx:    def copy(self):
 ```
 
-
 It would be nice if someone could take an axe to the remaining ones.
 
 Cheers,
@@ -273,7 +270,7 @@ Michael
 archive/issue_comments_000522.json:
 ```json
 {
-    "body": "In sage-4.1, I am seeing\n\n\n```\nlibs/pari/gen.pyx:1051:    def copy(gen self):\nlibs/ntl/ntl_ZZ_pEX.pyx:197:    def copy(self):\nlibs/ntl/ntl_ZZ_pX.pyx:189:    def copy(self):\nlibs/ntl/ntl_ZZX.pyx:152:    def copy(self):\ngraphs/graph.py:780:    def copy(self, implementation='networkx', sparse=None):\ncombinat/matrices/latin.py:321:    def copy(self):\nmatrix/matrix0.pyx:115:    def copy(self):\nmodular/modsym/manin_symbols.py:1667:    def copy(self):\nrings/laurent_series_ring_element.pyx:943:    def copy(self):\nrings/finite_field_givaro.pyx:1118:    cdef FiniteField_givaro copy\nrings/finite_field_element.py:396:    def copy(self):\nrings/fraction_field_element.pyx:179:    def copy(self):\nrings/power_series_poly.pyx:575:    def copy(self):\nrings/rational.pyx:558:    def copy(self):\nrings/padics/padic_fixed_mod_element.pyx:661:    def copy(self):\nrings/padics/padic_ZZ_pX_CA_element.pyx:1567:    def copy(self):\nrings/padics/padic_ZZ_pX_CR_element.pyx:2193:    def copy(self):\nrings/padics/padic_ZZ_pX_FM_element.pyx:840:    def copy(self):\nrings/padics/padic_capped_relative_element.pyx:1453:    def copy(self):\nrings/padics/padic_capped_absolute_element.pyx:810:    def copy(pAdicCappedAbsoluteElement self):\nrings/polynomial/polynomial_element_generic.py:866:    def copy(self):\nrings/polynomial/padics/polynomial_padic_capped_relative_dense.py:726:    def copy(self):\ngroups/perm_gps/partn_ref/refinement_python.pyx:145:    def copy(self):\nmodules/free_module_element.pyx:513:    def copy(self):\ndatabases/database.py:575:    def copy(self):\ndatabases/database.py:1003:    def copy(self):\ndatabases/database.py:1546:    def copy(self):\n```\n",
+    "body": "In sage-4.1, I am seeing\n\n```\nlibs/pari/gen.pyx:1051:    def copy(gen self):\nlibs/ntl/ntl_ZZ_pEX.pyx:197:    def copy(self):\nlibs/ntl/ntl_ZZ_pX.pyx:189:    def copy(self):\nlibs/ntl/ntl_ZZX.pyx:152:    def copy(self):\ngraphs/graph.py:780:    def copy(self, implementation='networkx', sparse=None):\ncombinat/matrices/latin.py:321:    def copy(self):\nmatrix/matrix0.pyx:115:    def copy(self):\nmodular/modsym/manin_symbols.py:1667:    def copy(self):\nrings/laurent_series_ring_element.pyx:943:    def copy(self):\nrings/finite_field_givaro.pyx:1118:    cdef FiniteField_givaro copy\nrings/finite_field_element.py:396:    def copy(self):\nrings/fraction_field_element.pyx:179:    def copy(self):\nrings/power_series_poly.pyx:575:    def copy(self):\nrings/rational.pyx:558:    def copy(self):\nrings/padics/padic_fixed_mod_element.pyx:661:    def copy(self):\nrings/padics/padic_ZZ_pX_CA_element.pyx:1567:    def copy(self):\nrings/padics/padic_ZZ_pX_CR_element.pyx:2193:    def copy(self):\nrings/padics/padic_ZZ_pX_FM_element.pyx:840:    def copy(self):\nrings/padics/padic_capped_relative_element.pyx:1453:    def copy(self):\nrings/padics/padic_capped_absolute_element.pyx:810:    def copy(pAdicCappedAbsoluteElement self):\nrings/polynomial/polynomial_element_generic.py:866:    def copy(self):\nrings/polynomial/padics/polynomial_padic_capped_relative_dense.py:726:    def copy(self):\ngroups/perm_gps/partn_ref/refinement_python.pyx:145:    def copy(self):\nmodules/free_module_element.pyx:513:    def copy(self):\ndatabases/database.py:575:    def copy(self):\ndatabases/database.py:1003:    def copy(self):\ndatabases/database.py:1546:    def copy(self):\n```",
     "created_at": "2009-07-12T01:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
@@ -283,7 +280,6 @@ archive/issue_comments_000522.json:
 ```
 
 In sage-4.1, I am seeing
-
 
 ```
 libs/pari/gen.pyx:1051:    def copy(gen self):
@@ -314,7 +310,6 @@ databases/database.py:575:    def copy(self):
 databases/database.py:1003:    def copy(self):
 databases/database.py:1546:    def copy(self):
 ```
-
 
 
 

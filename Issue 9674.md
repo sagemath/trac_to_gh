@@ -56,7 +56,7 @@ Does ticket #9366 fix your problem?
 archive/issue_comments_093845.json:
 ```json
 {
-    "body": "Replying to [comment:1 ylchapuy]:\n> Does ticket #9366 fix your problem?\n\nThank you for looking into this. You patch fixes the second bullet point. But the main problem is this line: \"self.n = ZZ(max(S)+1).exact_log(2)\".\n\nTry this, and see what happens:\nS = mq.SBox(5,6,0,3,4,2,1,2);\nS.difference_distribution_matrix();",
+    "body": "Replying to [comment:1 ylchapuy]:\n> Does ticket #9366 fix your problem?\n\n\nThank you for looking into this. You patch fixes the second bullet point. But the main problem is this line: \"self.n = ZZ(max(S)+1).exact_log(2)\".\n\nTry this, and see what happens:\nS = mq.SBox(5,6,0,3,4,2,1,2);\nS.difference_distribution_matrix();",
     "created_at": "2010-08-07T23:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
@@ -67,6 +67,7 @@ archive/issue_comments_093845.json:
 
 Replying to [comment:1 ylchapuy]:
 > Does ticket #9366 fix your problem?
+
 
 Thank you for looking into this. You patch fixes the second bullet point. But the main problem is this line: "self.n = ZZ(max(S)+1).exact_log(2)".
 

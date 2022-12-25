@@ -3,7 +3,7 @@
 archive/issues_006738.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI just noticed this in an error message:\n\n\n```\nBuilding shared ATLAS libraris failed\n```\n\n\nSee the typo in the word \"libraris\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6738\n\n",
+    "body": "Assignee: mabshoff\n\nI just noticed this in an error message:\n\n```\nBuilding shared ATLAS libraris failed\n```\n\nSee the typo in the word \"libraris\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6738\n\n",
     "created_at": "2009-08-11T22:45:21Z",
     "labels": [
         "component: packages: standard",
@@ -20,11 +20,9 @@ Assignee: mabshoff
 
 I just noticed this in an error message:
 
-
 ```
 Building shared ATLAS libraris failed
 ```
-
 
 See the typo in the word "libraris".
 

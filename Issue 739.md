@@ -3,7 +3,7 @@
 archive/issues_000739.json:
 ```json
 {
-    "body": "Assignee: failure\n\nMany people (John Cremona and David Harvey at least) had the following problem:\n\n\n```\nI upgraded to 2.8.5 ok (kubuntu 7.04, kernel 2.6.20-16-generic, gcc\nversion 4.1.2).\n\nsage --testall hangs at this point:\nTesting SAGE constructions guide\nsage -t  const.tex\n\nand \"ps -ux\" shows that all the processes are in swap (S status).\nAlso Ctrl-C did not kill it, I am having to kill all the processes one\nby one.\n\nJohn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/739\n\n",
+    "body": "Assignee: failure\n\nMany people (John Cremona and David Harvey at least) had the following problem:\n\n```\nI upgraded to 2.8.5 ok (kubuntu 7.04, kernel 2.6.20-16-generic, gcc\nversion 4.1.2).\n\nsage --testall hangs at this point:\nTesting SAGE constructions guide\nsage -t  const.tex\n\nand \"ps -ux\" shows that all the processes are in swap (S status).\nAlso Ctrl-C did not kill it, I am having to kill all the processes one\nby one.\n\nJohn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/739\n\n",
     "created_at": "2007-09-22T22:02:03Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ Assignee: failure
 
 Many people (John Cremona and David Harvey at least) had the following problem:
 
-
 ```
 I upgraded to 2.8.5 ok (kubuntu 7.04, kernel 2.6.20-16-generic, gcc
 version 4.1.2).
@@ -35,7 +34,6 @@ by one.
 
 John
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/739
 

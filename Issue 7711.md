@@ -3,7 +3,7 @@
 archive/issues_007711.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nConsider the following example:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z   \nsage: p.integral()\n1/2*y^2 + (x + z)*y\n```\n\nNote the leading coefficient 1/2 is not reduced mod 2147483647.\n\nFor smaller p this seems to work:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483629))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z\nsage: p.integral()\n-1073741814*y^2 + (x + z)*y\n```\n\nIt works also when the smaller ring P has only one variable:\n\n```\nsage: P.<x> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y\nsage: p.integral()\n1073741824*y^2 + x*y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7711\n\n",
+    "body": "Assignee: @malb\n\nConsider the following example:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z   \nsage: p.integral()\n1/2*y^2 + (x + z)*y\n```\nNote the leading coefficient 1/2 is not reduced mod 2147483647.\n\nFor smaller p this seems to work:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483629))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z\nsage: p.integral()\n-1073741814*y^2 + (x + z)*y\n```\nIt works also when the smaller ring P has only one variable:\n\n```\nsage: P.<x> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y\nsage: p.integral()\n1073741824*y^2 + x*y\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7711\n\n",
     "created_at": "2009-12-16T12:21:31Z",
     "labels": [
         "component: commutative algebra",
@@ -27,7 +27,6 @@ sage: p=x+y+z
 sage: p.integral()
 1/2*y^2 + (x + z)*y
 ```
-
 Note the leading coefficient 1/2 is not reduced mod 2147483647.
 
 For smaller p this seems to work:
@@ -39,7 +38,6 @@ sage: p=x+y+z
 sage: p.integral()
 -1073741814*y^2 + (x + z)*y
 ```
-
 It works also when the smaller ring P has only one variable:
 
 ```
@@ -49,7 +47,6 @@ sage: p=x+y
 sage: p.integral()
 1073741824*y^2 + x*y
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7711
 
@@ -97,7 +94,7 @@ archive/issue_events_018424.json:
 archive/issue_comments_066072.json:
 ```json
 {
-    "body": "Note also that in Paul's first example we have:\n\n\n```\nsage: p.integral().parent()\nUnivariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Finite Field of size 2147483647\n```\n\n\nwhereas in the second:\n\n\n```\nsage: p.integral().parent()\nUnivariate Polynomial Ring in y over Multivariate Polynomial Ring in x, z over Finite Field of size 2147483629\n```\n\n\nThis is probably where the issue is.",
+    "body": "Note also that in Paul's first example we have:\n\n```\nsage: p.integral().parent()\nUnivariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Finite Field of size 2147483647\n```\n\nwhereas in the second:\n\n```\nsage: p.integral().parent()\nUnivariate Polynomial Ring in y over Multivariate Polynomial Ring in x, z over Finite Field of size 2147483629\n```\n\nThis is probably where the issue is.",
     "created_at": "2010-01-02T11:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -108,21 +105,17 @@ archive/issue_comments_066072.json:
 
 Note also that in Paul's first example we have:
 
-
 ```
 sage: p.integral().parent()
 Univariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Finite Field of size 2147483647
 ```
 
-
 whereas in the second:
-
 
 ```
 sage: p.integral().parent()
 Univariate Polynomial Ring in y over Multivariate Polynomial Ring in x, z over Finite Field of size 2147483629
 ```
-
 
 This is probably where the issue is.
 
@@ -221,7 +214,7 @@ archive/issue_events_018426.json:
 archive/issue_comments_066076.json:
 ```json
 {
-    "body": "This is no longer an issue:\n\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z   \nsage: p.integral()\n-1073741823*y^2 + (x + z)*y\nsage: P(-1073741823*2)\n1\n```\n",
+    "body": "This is no longer an issue:\n\n```\nsage: P.<x,z> = PolynomialRing(GF(2147483647))\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z   \nsage: p.integral()\n-1073741823*y^2 + (x + z)*y\nsage: P(-1073741823*2)\n1\n```",
     "created_at": "2012-03-19T18:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -232,7 +225,6 @@ archive/issue_comments_066076.json:
 
 This is no longer an issue:
 
-
 ```
 sage: P.<x,z> = PolynomialRing(GF(2147483647))
 sage: Q.<y> = PolynomialRing(P)
@@ -242,7 +234,6 @@ sage: p.integral()
 sage: P(-1073741823*2)
 1
 ```
-
 
 
 
@@ -269,7 +260,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066078.json:
 ```json
 {
-    "body": "I don't agree that this has been fixed.  In 5.0.beta8, I only have to go up to the next prime:\n\n\n\n```\n\nsage: def f(N):\n....:     P.<x,z> = PolynomialRing(GF(N))\n....:     Q.<y> = PolynomialRing(P)\n....:     p=x+y+z   \n....:     return p.integral()\n....: \nsage: N = 2147483647\nsage: f(N)\n-1073741823*y^2 + (x + z)*y\nsage: N = next_prime(N)\nsage: N\n2147483659\nsage: f(N)\n1/2*y^2 + (x + z)*y\n\n```\n",
+    "body": "I don't agree that this has been fixed.  In 5.0.beta8, I only have to go up to the next prime:\n\n\n```\n\nsage: def f(N):\n....:     P.<x,z> = PolynomialRing(GF(N))\n....:     Q.<y> = PolynomialRing(P)\n....:     p=x+y+z   \n....:     return p.integral()\n....: \nsage: N = 2147483647\nsage: f(N)\n-1073741823*y^2 + (x + z)*y\nsage: N = next_prime(N)\nsage: N\n2147483659\nsage: f(N)\n1/2*y^2 + (x + z)*y\n\n```",
     "created_at": "2012-03-19T18:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -279,7 +270,6 @@ archive/issue_comments_066078.json:
 ```
 
 I don't agree that this has been fixed.  In 5.0.beta8, I only have to go up to the next prime:
-
 
 
 ```
@@ -300,7 +290,6 @@ sage: f(N)
 1/2*y^2 + (x + z)*y
 
 ```
-
 
 
 
@@ -435,7 +424,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066084.json:
 ```json
 {
-    "body": "Alex,\n\nthere is something I don't understand with your patch. You check that `right` is in the base\nring, but not `1/right`, thus what happens the base ring is not a field? Compare for example:\n\n```\nsage: P.<x,z> = PolynomialRing(ZZ)\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z\nsage: t=p/2\nsage: t.parent()\nUnivariate Polynomial Ring in y over Multivariate Polynomial Ring in x, z over Rational Field\nsage: u=p.integral()\nsage: u.parent()\nUnivariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Integer Ring\n```\n\nWhy do t and u have different parents?\n\nPaul",
+    "body": "Alex,\n\nthere is something I don't understand with your patch. You check that `right` is in the base\nring, but not `1/right`, thus what happens the base ring is not a field? Compare for example:\n\n```\nsage: P.<x,z> = PolynomialRing(ZZ)\nsage: Q.<y> = PolynomialRing(P)\nsage: p=x+y+z\nsage: t=p/2\nsage: t.parent()\nUnivariate Polynomial Ring in y over Multivariate Polynomial Ring in x, z over Rational Field\nsage: u=p.integral()\nsage: u.parent()\nUnivariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Integer Ring\n```\nWhy do t and u have different parents?\n\nPaul",
     "created_at": "2012-03-24T08:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -460,7 +449,6 @@ sage: u=p.integral()
 sage: u.parent()
 Univariate Polynomial Ring in y over Fraction Field of Multivariate Polynomial Ring in x, z over Integer Ring
 ```
-
 Why do t and u have different parents?
 
 Paul
@@ -490,7 +478,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_066086.json:
 ```json
 {
-    "body": "I guess I always found the following strange:\n\n\n```\nsage: type(3)\n<type 'sage.rings.integer.Integer'>\nsage: type(3/1)\n<type 'sage.rings.rational.Rational'>\n```\n\n\nand that influenced me in writing this patch.  I don't however have a strong opinion about this, and I'm happy to change it to make things more consistent by working in the fraction field of base_ring.  I'll replace the patch with one having this behavior soon.",
+    "body": "I guess I always found the following strange:\n\n```\nsage: type(3)\n<type 'sage.rings.integer.Integer'>\nsage: type(3/1)\n<type 'sage.rings.rational.Rational'>\n```\n\nand that influenced me in writing this patch.  I don't however have a strong opinion about this, and I'm happy to change it to make things more consistent by working in the fraction field of base_ring.  I'll replace the patch with one having this behavior soon.",
     "created_at": "2012-03-24T09:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -501,14 +489,12 @@ archive/issue_comments_066086.json:
 
 I guess I always found the following strange:
 
-
 ```
 sage: type(3)
 <type 'sage.rings.integer.Integer'>
 sage: type(3/1)
 <type 'sage.rings.rational.Rational'>
 ```
-
 
 and that influenced me in writing this patch.  I don't however have a strong opinion about this, and I'm happy to change it to make things more consistent by working in the fraction field of base_ring.  I'll replace the patch with one having this behavior soon.
 
@@ -598,7 +584,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_066091.json:
 ```json
 {
-    "body": "Alright, I'm starting to see what you are objecting to, and I agree with you.  Just to make sure I get this right: even the documented examples from the docstring of integral are inconsistent in this way\n\n\n```\n        EXAMPLES::\n        \n            sage: R.<x> = ZZ[]\n            sage: R(0).integral()\n            0\n            sage: f = R(2).integral(); f\n            2*x\n        \n        Note that since the integral is defined over the same base ring the\n        integral is actually in the base ring.\n        \n        ::\n        \n            sage: f.parent()\n            Univariate Polynomial Ring in x over Integer Ring\n        \n        If the integral isn't defined over the same base ring, then the\n        base ring is extended::\n        \n            sage: f = x^3 + x - 2\n            sage: g = f.integral(); g\n            1/4*x^4 + 1/2*x^2 - 2*x\n            sage: g.parent()\n            Univariate Polynomial Ring in x over Rational Field\n```\n\n\nWe want Sage to be less clever and more consistent, so the integral of 2 should be 2x in QQ[x] rather than in ZZ[x].\n\nOf course, this is fun to implement, because you might have something like:\n\n\n```\nsage: A.<a, b> = PolynomialRing(ZZ)\nsage: C.<c> = PolynomialRing(A)\nsage: D.<d> = PowerSeriesRing(C)\nsage: R.<x> = PolynomialRing(D)\nsage: f = a*x^2 + c*x\nsage: f.parent()\nUnivariate Polynomial Ring in x over Power Series Ring in d over \nUnivariate Polynomial Ring in c over Multivariate Polynomial Ring \nin a, b over Integer Ring\n```\n\n\nWhat I would like to do is have f.integral() live in\n\n```\nUnivariate Polynomial Ring in x over Power Series Ring in d over \nUnivariate Polynomial Ring in c over Multivariate Polynomial Ring \nin a, b over Rational Field\n```\n\n\nSo I want to change to the fraction field at the very bottom of the chain of extensions.  This means starting with R and going down to ZZ step by step, then changing ZZ to QQ and walking back up, changing all the intermediate rings along the way.  It can get expensive, but I guess that's the price to pay for working with such monstrosities.\n\nIf my outline agrees with what you had in mind, I'll produce a new patch based on it.",
+    "body": "Alright, I'm starting to see what you are objecting to, and I agree with you.  Just to make sure I get this right: even the documented examples from the docstring of integral are inconsistent in this way\n\n```\n        EXAMPLES::\n        \n            sage: R.<x> = ZZ[]\n            sage: R(0).integral()\n            0\n            sage: f = R(2).integral(); f\n            2*x\n        \n        Note that since the integral is defined over the same base ring the\n        integral is actually in the base ring.\n        \n        ::\n        \n            sage: f.parent()\n            Univariate Polynomial Ring in x over Integer Ring\n        \n        If the integral isn't defined over the same base ring, then the\n        base ring is extended::\n        \n            sage: f = x^3 + x - 2\n            sage: g = f.integral(); g\n            1/4*x^4 + 1/2*x^2 - 2*x\n            sage: g.parent()\n            Univariate Polynomial Ring in x over Rational Field\n```\n\nWe want Sage to be less clever and more consistent, so the integral of 2 should be 2x in QQ[x] rather than in ZZ[x].\n\nOf course, this is fun to implement, because you might have something like:\n\n```\nsage: A.<a, b> = PolynomialRing(ZZ)\nsage: C.<c> = PolynomialRing(A)\nsage: D.<d> = PowerSeriesRing(C)\nsage: R.<x> = PolynomialRing(D)\nsage: f = a*x^2 + c*x\nsage: f.parent()\nUnivariate Polynomial Ring in x over Power Series Ring in d over \nUnivariate Polynomial Ring in c over Multivariate Polynomial Ring \nin a, b over Integer Ring\n```\n\nWhat I would like to do is have f.integral() live in\n\n```\nUnivariate Polynomial Ring in x over Power Series Ring in d over \nUnivariate Polynomial Ring in c over Multivariate Polynomial Ring \nin a, b over Rational Field\n```\n\nSo I want to change to the fraction field at the very bottom of the chain of extensions.  This means starting with R and going down to ZZ step by step, then changing ZZ to QQ and walking back up, changing all the intermediate rings along the way.  It can get expensive, but I guess that's the price to pay for working with such monstrosities.\n\nIf my outline agrees with what you had in mind, I'll produce a new patch based on it.",
     "created_at": "2012-03-24T10:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -608,7 +594,6 @@ archive/issue_comments_066091.json:
 ```
 
 Alright, I'm starting to see what you are objecting to, and I agree with you.  Just to make sure I get this right: even the documented examples from the docstring of integral are inconsistent in this way
-
 
 ```
         EXAMPLES::
@@ -637,11 +622,9 @@ Alright, I'm starting to see what you are objecting to, and I agree with you.  J
             Univariate Polynomial Ring in x over Rational Field
 ```
 
-
 We want Sage to be less clever and more consistent, so the integral of 2 should be 2x in QQ[x] rather than in ZZ[x].
 
 Of course, this is fun to implement, because you might have something like:
-
 
 ```
 sage: A.<a, b> = PolynomialRing(ZZ)
@@ -655,7 +638,6 @@ Univariate Polynomial Ring in c over Multivariate Polynomial Ring
 in a, b over Integer Ring
 ```
 
-
 What I would like to do is have f.integral() live in
 
 ```
@@ -663,7 +645,6 @@ Univariate Polynomial Ring in x over Power Series Ring in d over
 Univariate Polynomial Ring in c over Multivariate Polynomial Ring 
 in a, b over Rational Field
 ```
-
 
 So I want to change to the fraction field at the very bottom of the chain of extensions.  This means starting with R and going down to ZZ step by step, then changing ZZ to QQ and walking back up, changing all the intermediate rings along the way.  It can get expensive, but I guess that's the price to pay for working with such monstrosities.
 
@@ -676,7 +657,7 @@ If my outline agrees with what you had in mind, I'll produce a new patch based o
 archive/issue_comments_066092.json:
 ```json
 {
-    "body": "Alex,\n\nin fact I guess your initial patch did what we want. Indeed with your latest example:\n\n```\nsage: g=f/2\nsage: g.parent()\nUnivariate Polynomial Ring in x over Power Series Ring in d over Univariate Polynomial Ring in c over Multivariate Polynomial Ring in a, b over Rational Field\n```\n\nthus the fact of dividing f by an element of the base ring automatically extends it to the corresponding\nfraction field if necessary.\n\nThus I suggest you revert to your first patch (sorry) and add the above example as test.\n\nPaul",
+    "body": "Alex,\n\nin fact I guess your initial patch did what we want. Indeed with your latest example:\n\n```\nsage: g=f/2\nsage: g.parent()\nUnivariate Polynomial Ring in x over Power Series Ring in d over Univariate Polynomial Ring in c over Multivariate Polynomial Ring in a, b over Rational Field\n```\nthus the fact of dividing f by an element of the base ring automatically extends it to the corresponding\nfraction field if necessary.\n\nThus I suggest you revert to your first patch (sorry) and add the above example as test.\n\nPaul",
     "created_at": "2012-03-24T11:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -694,7 +675,6 @@ sage: g=f/2
 sage: g.parent()
 Univariate Polynomial Ring in x over Power Series Ring in d over Univariate Polynomial Ring in c over Multivariate Polynomial Ring in a, b over Rational Field
 ```
-
 thus the fact of dividing f by an element of the base ring automatically extends it to the corresponding
 fraction field if necessary.
 
@@ -750,7 +730,7 @@ Paul
 archive/issue_comments_066095.json:
 ```json
 {
-    "body": "Replying to [comment:20 was]:\n> Does this patch break a major fundamental design decision in both Sage and Magma, namely that / is a constructor for elements of the fraction field.   E.g.,  3/1 has parent QQ.\n\nHi William, can you have a look at the docstring for p.integral() as it stands now and tell me whether you think it complies with this design decision?  Here is an example:\n\n\n```\nsage: S.<x> = ZZ[]\nsage: p = 2*x\nsage: p.integral()\nx^2\nsage: p.integral().parent()\nUnivariate Polynomial Ring in x over Integer Ring\n```\n\n\nBehind the scenes Sage performed 2/2 and decided that the answer was 1 in ZZ rather than 1 in QQ, so this seems to break the convention.  Also, the answer has a different parent than (3*x).integral(), which is the type of inconsistency that Paul was pointing out before.  So should this stay the way it is, or should this be changed to be more consistent?\n\nBut it gets a tiny bit more complicated than this.  Suppose your coefficients are not ZZ, but rather ZZ[y], where y is a vector of 200 variables.  The integral of 2*x is still `x^2`, but where do we want this `x^2` to live?  Possible answers are (a) ZZ[y][x], (b) Frac(ZZ[y])[x], (c) QQ[y][x].\nThe current behavior is (a) for 2*x and (b) for 3*x, and I am currently leaning toward changing both to (c).  Here's why: you have p in R[x], where R is some coefficient ring.  When you do p.integral(), you are not really dividing p by integers n, but rather the coefficients of p by integers n.  So maybe we should look at what division by n in the coefficient ring R does:\n\n\n```\nsage: R.<y0,y1,y2,y3> = ZZ[]\nsage: S.<x> = R[]\nsage: p = 2*y0\nsage: p.parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Integer Ring\nsage: (p/2).parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field\nsage: p = 3*y0\nsage: (p/2).parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field\n```\n\n\nSo p/2 is not in the fraction field of R.  This is what I would like integral() to do as well.\n\nThoughts?",
+    "body": "Replying to [comment:20 was]:\n> Does this patch break a major fundamental design decision in both Sage and Magma, namely that / is a constructor for elements of the fraction field.   E.g.,  3/1 has parent QQ.\n\n\nHi William, can you have a look at the docstring for p.integral() as it stands now and tell me whether you think it complies with this design decision?  Here is an example:\n\n```\nsage: S.<x> = ZZ[]\nsage: p = 2*x\nsage: p.integral()\nx^2\nsage: p.integral().parent()\nUnivariate Polynomial Ring in x over Integer Ring\n```\n\nBehind the scenes Sage performed 2/2 and decided that the answer was 1 in ZZ rather than 1 in QQ, so this seems to break the convention.  Also, the answer has a different parent than (3*x).integral(), which is the type of inconsistency that Paul was pointing out before.  So should this stay the way it is, or should this be changed to be more consistent?\n\nBut it gets a tiny bit more complicated than this.  Suppose your coefficients are not ZZ, but rather ZZ[y], where y is a vector of 200 variables.  The integral of 2*x is still `x^2`, but where do we want this `x^2` to live?  Possible answers are (a) ZZ[y][x], (b) Frac(ZZ[y])[x], (c) QQ[y][x].\nThe current behavior is (a) for 2*x and (b) for 3*x, and I am currently leaning toward changing both to (c).  Here's why: you have p in R[x], where R is some coefficient ring.  When you do p.integral(), you are not really dividing p by integers n, but rather the coefficients of p by integers n.  So maybe we should look at what division by n in the coefficient ring R does:\n\n```\nsage: R.<y0,y1,y2,y3> = ZZ[]\nsage: S.<x> = R[]\nsage: p = 2*y0\nsage: p.parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Integer Ring\nsage: (p/2).parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field\nsage: p = 3*y0\nsage: (p/2).parent()\nMultivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field\n```\n\nSo p/2 is not in the fraction field of R.  This is what I would like integral() to do as well.\n\nThoughts?",
     "created_at": "2012-03-24T21:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -762,8 +742,8 @@ archive/issue_comments_066095.json:
 Replying to [comment:20 was]:
 > Does this patch break a major fundamental design decision in both Sage and Magma, namely that / is a constructor for elements of the fraction field.   E.g.,  3/1 has parent QQ.
 
-Hi William, can you have a look at the docstring for p.integral() as it stands now and tell me whether you think it complies with this design decision?  Here is an example:
 
+Hi William, can you have a look at the docstring for p.integral() as it stands now and tell me whether you think it complies with this design decision?  Here is an example:
 
 ```
 sage: S.<x> = ZZ[]
@@ -774,12 +754,10 @@ sage: p.integral().parent()
 Univariate Polynomial Ring in x over Integer Ring
 ```
 
-
 Behind the scenes Sage performed 2/2 and decided that the answer was 1 in ZZ rather than 1 in QQ, so this seems to break the convention.  Also, the answer has a different parent than (3*x).integral(), which is the type of inconsistency that Paul was pointing out before.  So should this stay the way it is, or should this be changed to be more consistent?
 
 But it gets a tiny bit more complicated than this.  Suppose your coefficients are not ZZ, but rather ZZ[y], where y is a vector of 200 variables.  The integral of 2*x is still `x^2`, but where do we want this `x^2` to live?  Possible answers are (a) ZZ[y][x], (b) Frac(ZZ[y])[x], (c) QQ[y][x].
 The current behavior is (a) for 2*x and (b) for 3*x, and I am currently leaning toward changing both to (c).  Here's why: you have p in R[x], where R is some coefficient ring.  When you do p.integral(), you are not really dividing p by integers n, but rather the coefficients of p by integers n.  So maybe we should look at what division by n in the coefficient ring R does:
-
 
 ```
 sage: R.<y0,y1,y2,y3> = ZZ[]
@@ -793,7 +771,6 @@ sage: p = 3*y0
 sage: (p/2).parent()
 Multivariate Polynomial Ring in y0, y1, y2, y3 over Rational Field
 ```
-
 
 So p/2 is not in the fraction field of R.  This is what I would like integral() to do as well.
 
@@ -842,7 +819,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_066098.json:
 ```json
 {
-    "body": "Alex, I tried to apply your patch to sage-5.0.beta9 but it failed:\n\n```\n\nsage: hg_sage.import_patch(\"trac7711.patch\")\ncd \"/localdisk/tmp/sage-5.0.beta9/devel/sage\" && sage --hg import   \"/localdisk/tmp/sage-5.0.beta9/trac7711.patch\"\napplying /localdisk/tmp/sage-5.0.beta9/trac7711.patch\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 2369\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\nabort: patch failed to apply\n```\n\nFor which version is this patch?\n\nPaul",
+    "body": "Alex, I tried to apply your patch to sage-5.0.beta9 but it failed:\n\n```\n\nsage: hg_sage.import_patch(\"trac7711.patch\")\ncd \"/localdisk/tmp/sage-5.0.beta9/devel/sage\" && sage --hg import   \"/localdisk/tmp/sage-5.0.beta9/trac7711.patch\"\napplying /localdisk/tmp/sage-5.0.beta9/trac7711.patch\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 2369\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\nabort: patch failed to apply\n```\nFor which version is this patch?\n\nPaul",
     "created_at": "2012-03-26T07:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -863,7 +840,6 @@ Hunk #1 FAILED at 2369
 1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej
 abort: patch failed to apply
 ```
-
 For which version is this patch?
 
 Paul
@@ -875,7 +851,7 @@ Paul
 archive/issue_comments_066099.json:
 ```json
 {
-    "body": "> For which version is this patch?\n\nIt's based on sage-4.8.  I have a sage-5.0.beta10 somewhere, I'll rebase it on that soon.",
+    "body": "> For which version is this patch?\n\n\nIt's based on sage-4.8.  I have a sage-5.0.beta10 somewhere, I'll rebase it on that soon.",
     "created_at": "2012-03-26T07:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -885,6 +861,7 @@ archive/issue_comments_066099.json:
 ```
 
 > For which version is this patch?
+
 
 It's based on sage-4.8.  I have a sage-5.0.beta10 somewhere, I'll rebase it on that soon.
 
@@ -955,7 +932,7 @@ Paul
 archive/issue_comments_066103.json:
 ```json
 {
-    "body": "I confirm the rebased patch applies cleanly to sage-5.0.beta10.\n\nHowever there is still an issue:\n\n```\nsage: R.<x> = ZZ[]\nsage: R(0).integral().parent()\nUnivariate Polynomial Ring in x over Integer Ring\nsage: R(3).integral().parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nWhy do we get a different parent for zero?\n\nPaul",
+    "body": "I confirm the rebased patch applies cleanly to sage-5.0.beta10.\n\nHowever there is still an issue:\n\n```\nsage: R.<x> = ZZ[]\nsage: R(0).integral().parent()\nUnivariate Polynomial Ring in x over Integer Ring\nsage: R(3).integral().parent()\nUnivariate Polynomial Ring in x over Rational Field\n```\nWhy do we get a different parent for zero?\n\nPaul",
     "created_at": "2012-03-26T16:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -975,7 +952,6 @@ Univariate Polynomial Ring in x over Integer Ring
 sage: R(3).integral().parent()
 Univariate Polynomial Ring in x over Rational Field
 ```
-
 Why do we get a different parent for zero?
 
 Paul
@@ -1059,7 +1035,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_066108.json:
 ```json
 {
-    "body": "I get only one doctest failure, but it also fails with vanilla sage-5.0.beta10 and seems\nunrelated:\n\n```\nsage -t  \"devel/sage-7711/sage/misc/sagedoc.py\"             \n\n**********************************************************************\nFile \"/localdisk/tmp/sage-5.0.beta10/devel/sage-7711/sage/misc/sagedoc.py\", line 566:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /localdisk/tmp/sage-5.0.beta10/devel/sage/doc/output/html/de/tutorial\n...\n```\n\n\nThis patch not only fixes the original issue, but improves the coherence of Sage results.\nGood job Alex!\n\nPaul",
+    "body": "I get only one doctest failure, but it also fails with vanilla sage-5.0.beta10 and seems\nunrelated:\n\n```\nsage -t  \"devel/sage-7711/sage/misc/sagedoc.py\"             \n\n**********************************************************************\nFile \"/localdisk/tmp/sage-5.0.beta10/devel/sage-7711/sage/misc/sagedoc.py\", line 566:\n    sage: 'abvar/homology' in _search_src_or_doc('doc', 'homology', 'variety', interact=False)\nExpected:\n    True\nGot:\n    Warning, the following Sage documentation hasn't been built,\n    so documentation search results may be incomplete:\n    <BLANKLINE>\n    /localdisk/tmp/sage-5.0.beta10/devel/sage/doc/output/html/de/tutorial\n...\n```\n\nThis patch not only fixes the original issue, but improves the coherence of Sage results.\nGood job Alex!\n\nPaul",
     "created_at": "2012-03-27T11:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7711",
     "type": "issue_comment",
@@ -1086,7 +1062,6 @@ Got:
     /localdisk/tmp/sage-5.0.beta10/devel/sage/doc/output/html/de/tutorial
 ...
 ```
-
 
 This patch not only fixes the original issue, but improves the coherence of Sage results.
 Good job Alex!

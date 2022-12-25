@@ -3,7 +3,7 @@
 archive/issues_007796.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/64bcac2d0705570f):\n\n```\nI built the html documentation in a fresh 4.3 build using \"sage\n-docbuild reference html\" as usual.  I made a clone, and it appeared\nthat all the docs were rebuilt (another 5 mins).  I made a change to a\ndocstring in one file (see #7780) and did \"sage -b\" and then \"sage\n-docbuild reference html\" again, and again it appeared that all the\ndocs were built -- another 5 mins. \n```\n\nMitesh Patel suggests the following fix:\n\n```\nA possible workaround:  In\n\nSAGE_LOCAL/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\n\nimport inspect and insert, e.g.,\n\n                if inspect.isfunction(config[key]):\n                    continue\n\naround line 474. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7796\n\n",
+    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/64bcac2d0705570f):\n\n```\nI built the html documentation in a fresh 4.3 build using \"sage\n-docbuild reference html\" as usual.  I made a clone, and it appeared\nthat all the docs were rebuilt (another 5 mins).  I made a change to a\ndocstring in one file (see #7780) and did \"sage -b\" and then \"sage\n-docbuild reference html\" again, and again it appeared that all the\ndocs were built -- another 5 mins. \n```\nMitesh Patel suggests the following fix:\n\n```\nA possible workaround:  In\n\nSAGE_LOCAL/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\n\nimport inspect and insert, e.g.,\n\n                if inspect.isfunction(config[key]):\n                    continue\n\naround line 474. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7796\n\n",
     "created_at": "2009-12-30T15:26:07Z",
     "labels": [
         "component: documentation",
@@ -28,7 +28,6 @@ docstring in one file (see #7780) and did "sage -b" and then "sage
 -docbuild reference html" again, and again it appeared that all the
 docs were built -- another 5 mins. 
 ```
-
 Mitesh Patel suggests the following fix:
 
 ```
@@ -43,7 +42,6 @@ import inspect and insert, e.g.,
 
 around line 474. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7796
 
@@ -159,7 +157,7 @@ I would think that making this spkg replacement part of the first alpha release 
 archive/issue_comments_067214.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> I then switched back to the main branch and again did a docbuild, expecting nothing to happen -- but a complete docbuild started.\n\nThe new spkg-install file deletes all of the documentation output (from all of the branches, not just the active one), so the docs for sage-main were deleted -- that's why they had to be rebuilt.\n\nAnyway, the whole thing works as advertised for me.  Can we give it a positive review now?\n\nAlso, do we need to report anything upstream (in conjunction with the changes in #7683)?",
+    "body": "Replying to [comment:2 cremona]:\n> I then switched back to the main branch and again did a docbuild, expecting nothing to happen -- but a complete docbuild started.\n\n\nThe new spkg-install file deletes all of the documentation output (from all of the branches, not just the active one), so the docs for sage-main were deleted -- that's why they had to be rebuilt.\n\nAnyway, the whole thing works as advertised for me.  Can we give it a positive review now?\n\nAlso, do we need to report anything upstream (in conjunction with the changes in #7683)?",
     "created_at": "2009-12-30T23:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7796",
     "type": "issue_comment",
@@ -170,6 +168,7 @@ archive/issue_comments_067214.json:
 
 Replying to [comment:2 cremona]:
 > I then switched back to the main branch and again did a docbuild, expecting nothing to happen -- but a complete docbuild started.
+
 
 The new spkg-install file deletes all of the documentation output (from all of the branches, not just the active one), so the docs for sage-main were deleted -- that's why they had to be rebuilt.
 

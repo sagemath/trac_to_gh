@@ -3,7 +3,7 @@
 archive/issues_003968.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis fails:\n\n```\n%magma\nQt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(Qt, 4);\nP0 := w^3 + x^3 + y^3 + z^3;\nP := P0 + (w+x)*(w+2*y)*(w+3*z) + x*y*z;\nPt := P0 + t*P;\nPt_gradient := [Derivative(Pt, w), Derivative(Pt, x), Derivative(Pt, y), Derivative(Pt, z)];\nPt_jac := IdealWithFixedBasis(Pt_gradient);\nPt_gradient_long := Append(Pt_gradient, (1+t)*w*x*y*z);\nPt_jac_long := IdealWithFixedBasis(Pt_gradient_long);\nb := (1+t)*w*x*y*z;\ndiffbasis := [2*w*P, 2*x*P, 2*y*P, 2*z*P, 3*b*P];\ntemp := Coordinates(Pt_jac, diffbasis[5]);\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \\\n    Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);\n```\n\nwith the error: \n\n```\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"Loading \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/22570//interface//tmp\"\"\"\")\n                                                                                             ^\nSyntaxError: EOL while scanning single-quoted string\n```\n\nbut if you replace the last two lines by\n\n```\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);\n```\n\nthen nothing breaks.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3968\n\n",
+    "body": "Assignee: @williamstein\n\nThis fails:\n\n```\n%magma\nQt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(Qt, 4);\nP0 := w^3 + x^3 + y^3 + z^3;\nP := P0 + (w+x)*(w+2*y)*(w+3*z) + x*y*z;\nPt := P0 + t*P;\nPt_gradient := [Derivative(Pt, w), Derivative(Pt, x), Derivative(Pt, y), Derivative(Pt, z)];\nPt_jac := IdealWithFixedBasis(Pt_gradient);\nPt_gradient_long := Append(Pt_gradient, (1+t)*w*x*y*z);\nPt_jac_long := IdealWithFixedBasis(Pt_gradient_long);\nb := (1+t)*w*x*y*z;\ndiffbasis := [2*w*P, 2*x*P, 2*y*P, 2*z*P, 3*b*P];\ntemp := Coordinates(Pt_jac, diffbasis[5]);\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \\\n    Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);\n```\nwith the error: \n\n```\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"Loading \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/22570//interface//tmp\"\"\"\")\n                                                                                             ^\nSyntaxError: EOL while scanning single-quoted string\n```\nbut if you replace the last two lines by\n\n```\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);\n```\nthen nothing breaks.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3968\n\n",
     "created_at": "2008-08-27T17:27:14Z",
     "labels": [
         "component: interfaces",
@@ -37,7 +37,6 @@ temp := Coordinates(Pt_jac, diffbasis[5]);
 diffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \
     Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);
 ```
-
 with the error: 
 
 ```
@@ -46,13 +45,11 @@ with the error:
                                                                                              ^
 SyntaxError: EOL while scanning single-quoted string
 ```
-
 but if you replace the last two lines by
 
 ```
 diffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);
 ```
-
 then nothing breaks.
 
 
@@ -67,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3968
 archive/issue_comments_028453.json:
 ```json
 {
-    "body": "From IRC\n\n```\n[12:20] <jason_> my error has:\n[12:20] <jason_>    File \"<ipython console>\", line 1\n[12:20] <jason_>      logstr(r\"\"\"Loading \"/home/jason/.sage//temp/sage/4426//interface//tmp4426\"\"\"\")\n[12:20] <kedlaya> yeah, I see something similar\n[12:20] <jason_> I think that last \"\"\"\" is the problem\n[12:20] <jason_> is it being parsed as \" \"\"\"\n[12:20] <jason_> or as \"\"\" \"\n[12:21] <wjp> funny that that error message has a \"# TODO: this is a very lazy temporary bug fix\" above the line in the sources\n[12:21] <kedlaya> too lazy, i guess\n[12:21] <wjp> (sage/misc/preparser_ipython.py, search for logstr)\n[12:21] <kedlaya> i wonder if I can find the ticket for it\n[12:21] <jason_> wjp: if you have the sources, can you put a space in between the \" and the \"\"\" ?\n[12:22] <wjp> the line is return 'logstr(r\"\"\"%s\"\"\")'%t, but I'll add a space after the %s\n[12:23] <wjp> works now\n[12:23] <jason_> okay, now time for the ticket :)\n[12:23] <kedlaya> I'm working on it now\n[12:23] <jason_> from http://docs.python.org/ref/strings.html\n[12:23] <jason_> In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained), except that three unescaped quotes in a row terminate the string. (A ``quote'' is the character used to open the string, i.e. either ' or \".) \n[12:23] <jason_> so apparently the first three \"\"\" terminated the string\n[12:24] <wjp> yes\n[12:24] <kedlaya> ticket #3968 created. Now go fix it. :)\n```\n",
+    "body": "From IRC\n\n```\n[12:20] <jason_> my error has:\n[12:20] <jason_>    File \"<ipython console>\", line 1\n[12:20] <jason_>      logstr(r\"\"\"Loading \"/home/jason/.sage//temp/sage/4426//interface//tmp4426\"\"\"\")\n[12:20] <kedlaya> yeah, I see something similar\n[12:20] <jason_> I think that last \"\"\"\" is the problem\n[12:20] <jason_> is it being parsed as \" \"\"\"\n[12:20] <jason_> or as \"\"\" \"\n[12:21] <wjp> funny that that error message has a \"# TODO: this is a very lazy temporary bug fix\" above the line in the sources\n[12:21] <kedlaya> too lazy, i guess\n[12:21] <wjp> (sage/misc/preparser_ipython.py, search for logstr)\n[12:21] <kedlaya> i wonder if I can find the ticket for it\n[12:21] <jason_> wjp: if you have the sources, can you put a space in between the \" and the \"\"\" ?\n[12:22] <wjp> the line is return 'logstr(r\"\"\"%s\"\"\")'%t, but I'll add a space after the %s\n[12:23] <wjp> works now\n[12:23] <jason_> okay, now time for the ticket :)\n[12:23] <kedlaya> I'm working on it now\n[12:23] <jason_> from http://docs.python.org/ref/strings.html\n[12:23] <jason_> In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained), except that three unescaped quotes in a row terminate the string. (A ``quote'' is the character used to open the string, i.e. either ' or \".) \n[12:23] <jason_> so apparently the first three \"\"\" terminated the string\n[12:24] <wjp> yes\n[12:24] <kedlaya> ticket #3968 created. Now go fix it. :)\n```",
     "created_at": "2008-08-27T17:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
@@ -101,7 +98,6 @@ From IRC
 [12:24] <wjp> yes
 [12:24] <kedlaya> ticket #3968 created. Now go fix it. :)
 ```
-
 
 
 
@@ -225,7 +221,7 @@ Michael
 archive/issue_comments_028459.json:
 ```json
 {
-    "body": "For a potential doctest, this is easy to trigger with the singular interface too:\n\n\n```\nsage: %singular\n\n  --> Switching to Singular <-- \n\n''\nsingular: print(\"\\\"test\\\"\")\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"\"test\"\"\"\")\n                         ^\nSyntaxError: EOL while scanning single-quoted string\n```\n",
+    "body": "For a potential doctest, this is easy to trigger with the singular interface too:\n\n```\nsage: %singular\n\n  --> Switching to Singular <-- \n\n''\nsingular: print(\"\\\"test\\\"\")\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"\"test\"\"\"\")\n                         ^\nSyntaxError: EOL while scanning single-quoted string\n```",
     "created_at": "2008-08-27T21:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
@@ -235,7 +231,6 @@ archive/issue_comments_028459.json:
 ```
 
 For a potential doctest, this is easy to trigger with the singular interface too:
-
 
 ```
 sage: %singular
@@ -250,7 +245,6 @@ singular: print("\"test\"")
                          ^
 SyntaxError: EOL while scanning single-quoted string
 ```
-
 
 
 

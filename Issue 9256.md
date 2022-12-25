@@ -105,7 +105,7 @@ Looks good to me.
 archive/issue_comments_086971.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> Looks good to me.\n\nThanks for the review !",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Looks good to me.\n\n\nThanks for the review !",
     "created_at": "2010-06-21T22:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
@@ -116,6 +116,7 @@ archive/issue_comments_086971.json:
 
 Replying to [comment:2 jhpalmieri]:
 > Looks good to me.
+
 
 Thanks for the review !
 

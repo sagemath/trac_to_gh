@@ -3,7 +3,7 @@
 archive/issues_003063.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix([])\n\nsage: a.norm()\n---------------------------------------------------------------------------\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nI think the answer in this case should be 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3063\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a = matrix([])\n\nsage: a.norm()\n---------------------------------------------------------------------------\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\nI think the answer in this case should be 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3063\n\n",
     "created_at": "2008-04-30T15:10:44Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_003063.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: a = matrix([])
 
@@ -27,7 +26,6 @@ sage: a.norm()
 
 <type 'exceptions.ValueError'>: max() arg is an empty sequence
 ```
-
 
 I think the answer in this case should be 0.
 

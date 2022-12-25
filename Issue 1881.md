@@ -3,7 +3,7 @@
 archive/issues_001881.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nInitially reported by Jaap:\n\n```\nsage -t  tut.tex                                            \n**********************************************************************\nFile \"tut.py\", line 3574:\n    : factor(f)\nExpected:\n    9 * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\nGot:\n    (9) * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\n**********************************************************************\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1881\n\n",
+    "body": "Assignee: mabshoff\n\nInitially reported by Jaap:\n\n```\nsage -t  tut.tex                                            \n**********************************************************************\nFile \"tut.py\", line 3574:\n    : factor(f)\nExpected:\n    9 * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\nGot:\n    (9) * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1881\n\n",
     "created_at": "2008-01-21T22:00:18Z",
     "labels": [
         "component: doctest coverage",
@@ -31,7 +31,6 @@ Got:
     (9) * (-x^5 + y^2)^2 * (x^6 - 2*x^3*y^2 - x^2*y^3 + y^4)
 **********************************************************************
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1881

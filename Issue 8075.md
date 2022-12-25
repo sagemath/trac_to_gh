@@ -68,7 +68,7 @@ Is this still of any actual pertinence ?
 archive/issue_comments_070632.json:
 ```json
 {
-    "body": "Yes.  It would be nice to expose more of the modular symbol functionality of eclib to Sage, more than the minimal `CremonaModularSymbols()` which was done a long time ago:\n\n```\nsage: %time M = ModularSymbols(10001)\nCPU times: user 6.42 s, sys: 196 ms, total: 6.62 s\nWall time: 6.61 s\nsage: %time M = CremonaModularSymbols(10001)\nCPU times: user 139 ms, sys: 3.87 ms, total: 143 ms\nWall time: 142 ms\n```\n\nThere is no reason in principle for Sage not to be able to access all the functionality which is used to produce all the modular elliptic curves of conductor `N` for reasonable `N`.",
+    "body": "Yes.  It would be nice to expose more of the modular symbol functionality of eclib to Sage, more than the minimal `CremonaModularSymbols()` which was done a long time ago:\n\n```\nsage: %time M = ModularSymbols(10001)\nCPU times: user 6.42 s, sys: 196 ms, total: 6.62 s\nWall time: 6.61 s\nsage: %time M = CremonaModularSymbols(10001)\nCPU times: user 139 ms, sys: 3.87 ms, total: 143 ms\nWall time: 142 ms\n```\nThere is no reason in principle for Sage not to be able to access all the functionality which is used to produce all the modular elliptic curves of conductor `N` for reasonable `N`.",
     "created_at": "2015-03-16T21:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
@@ -87,7 +87,6 @@ sage: %time M = CremonaModularSymbols(10001)
 CPU times: user 139 ms, sys: 3.87 ms, total: 143 ms
 Wall time: 142 ms
 ```
-
 There is no reason in principle for Sage not to be able to access all the functionality which is used to produce all the modular elliptic curves of conductor `N` for reasonable `N`.
 
 

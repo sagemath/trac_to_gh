@@ -84,7 +84,7 @@ archive/issue_events_015578.json:
 archive/issue_comments_053929.json:
 ```json
 {
-    "body": "Importing individual modules without initializing sage by doing `import sage.all` is not supported. You should add a line with\n\n\n```\nimport sage.all\n```\n\n\nat the beginning of your script.",
+    "body": "Importing individual modules without initializing sage by doing `import sage.all` is not supported. You should add a line with\n\n```\nimport sage.all\n```\n\nat the beginning of your script.",
     "created_at": "2010-01-16T23:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6601",
     "type": "issue_comment",
@@ -95,11 +95,9 @@ archive/issue_comments_053929.json:
 
 Importing individual modules without initializing sage by doing `import sage.all` is not supported. You should add a line with
 
-
 ```
 import sage.all
 ```
-
 
 at the beginning of your script.
 

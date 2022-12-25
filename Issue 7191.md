@@ -3,7 +3,7 @@
 archive/issues_007191.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @categorie\n\nSee the following example:\n\n\n```\nsage: G = DirichletGroup(500, base_ring=CC)\nsage: G[0].is_primitive()\nFalse\nsage: G[1].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage: G[3].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7191\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @categorie\n\nSee the following example:\n\n```\nsage: G = DirichletGroup(500, base_ring=CC)\nsage: G[0].is_primitive()\nFalse\nsage: G[1].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage: G[3].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7191\n\n",
     "created_at": "2009-10-12T02:58:56Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 CC:  @categorie
 
 See the following example:
-
 
 ```
 sage: G = DirichletGroup(500, base_ring=CC)
@@ -170,7 +169,6 @@ KeyError: -1.00000000000000 - 2.63677968348475e-16*I
 sage:
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7191
 
 
@@ -260,7 +258,7 @@ It looks to me as you attached the printout of an "ls" rather than the ticket in
 archive/issue_comments_059455.json:
 ```json
 {
-    "body": "Replying to [comment:4 wuthrich]:\n> It looks to me as you attached the printout of an \"ls\" rather than the ticket in this directory.\n\nOops. Fixed now. \n\n(Curiously, my bash history contains the lines:\n\nhg export 15468\nls\nls > trac7191.patch\n)",
+    "body": "Replying to [comment:4 wuthrich]:\n> It looks to me as you attached the printout of an \"ls\" rather than the ticket in this directory.\n\n\nOops. Fixed now. \n\n(Curiously, my bash history contains the lines:\n\nhg export 15468\nls\nls > trac7191.patch\n)",
     "created_at": "2011-04-05T18:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -271,6 +269,7 @@ archive/issue_comments_059455.json:
 
 Replying to [comment:4 wuthrich]:
 > It looks to me as you attached the printout of an "ls" rather than the ticket in this directory.
+
 
 Oops. Fixed now. 
 
@@ -436,7 +435,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059464.json:
 ```json
 {
-    "body": "The NotImplementedError message should also be adjusted in the gauss_sum() function as you did in gauss_sum_numerical().\n\n```\nsage: G = DirichletGroup(500, base_ring=RR)\nsage: G[1].gauss_sum()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Gauss sums only currently implemented when the base ring is a cyclotomic field or QQ.\n```\n\n\nIn the function is_odd:\n\n```\n       if rings.is_ComplexField(self.base_ring()):\n            return abs(self(-1) - self.base_ring()(-1)) < 1.0/self.parent().zeta_order()\n```\n\nI do not understand why the rather mysterious expression 1.0/self.parent().zeta_order() is used.  I'd say that the difference is either 0 or 2, so if it's less than 1 in absolute value, this should already be sufficient to test numerically that it is 0.  Similarly for is_even().\n\nAnd now that I've put you back to work anyway, let's remove the C-style brackets in the if-statement in line 1616. ;).\n\n```\n            if(rings.is_ComplexField(C)):\n```\n",
+    "body": "The NotImplementedError message should also be adjusted in the gauss_sum() function as you did in gauss_sum_numerical().\n\n```\nsage: G = DirichletGroup(500, base_ring=RR)\nsage: G[1].gauss_sum()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Gauss sums only currently implemented when the base ring is a cyclotomic field or QQ.\n```\n\nIn the function is_odd:\n\n```\n       if rings.is_ComplexField(self.base_ring()):\n            return abs(self(-1) - self.base_ring()(-1)) < 1.0/self.parent().zeta_order()\n```\nI do not understand why the rather mysterious expression 1.0/self.parent().zeta_order() is used.  I'd say that the difference is either 0 or 2, so if it's less than 1 in absolute value, this should already be sufficient to test numerically that it is 0.  Similarly for is_even().\n\nAnd now that I've put you back to work anyway, let's remove the C-style brackets in the if-statement in line 1616. ;).\n\n```\n            if(rings.is_ComplexField(C)):\n```",
     "created_at": "2011-11-14T18:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -456,14 +455,12 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError: Gauss sums only currently implemented when the base ring is a cyclotomic field or QQ.
 ```
 
-
 In the function is_odd:
 
 ```
        if rings.is_ComplexField(self.base_ring()):
             return abs(self(-1) - self.base_ring()(-1)) < 1.0/self.parent().zeta_order()
 ```
-
 I do not understand why the rather mysterious expression 1.0/self.parent().zeta_order() is used.  I'd say that the difference is either 0 or 2, so if it's less than 1 in absolute value, this should already be sufficient to test numerically that it is 0.  Similarly for is_even().
 
 And now that I've put you back to work anyway, let's remove the C-style brackets in the if-statement in line 1616. ;).
@@ -471,7 +468,6 @@ And now that I've put you back to work anyway, let's remove the C-style brackets
 ```
             if(rings.is_ComplexField(C)):
 ```
-
 
 
 
@@ -535,7 +531,7 @@ apply trac_7191_v2.patch
 archive/issue_comments_059467.json:
 ```json
 {
-    "body": "Here is a git branch\n----\nNew commits:",
+    "body": "Here is a git branch\n\n---\nNew commits:",
     "created_at": "2014-01-07T19:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -545,7 +541,8 @@ archive/issue_comments_059467.json:
 ```
 
 Here is a git branch
-----
+
+---
 New commits:
 
 

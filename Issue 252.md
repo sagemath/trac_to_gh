@@ -3,7 +3,7 @@
 archive/issues_000252.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @katestange bouillaguet\n\nMake number fields work when polynomial not integral or not monic.\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\nTraceback (most recent call last):\n...\ngen.PariError:  (8)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/252\n\n",
     "created_at": "2007-02-08T17:49:51Z",
     "labels": [
         "component: number theory",
@@ -23,7 +23,6 @@ CC:  @katestange bouillaguet
 
 Make number fields work when polynomial not integral or not monic.
 
-
 ```
 sage: R.<x> = QQ[]
 sage: L.<b> = NumberField(x^2-1/2)
@@ -32,7 +31,6 @@ Traceback (most recent call last):
 ...
 gen.PariError:  (8)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/252
 
@@ -63,7 +61,7 @@ You may find sage.rings.algebraic_real.clear_denominators() useful here.  (If so
 archive/issue_comments_001103.json:
 ```json
 {
-    "body": "The example above works.  But other things don't:\n\n\n```\nsage: R.<x> = QQ[]\nsage: sage: L.<b> = NumberField(x^2-1/2)\nsage: sage: L.discriminant()\n8\nsage: L.ring_of_integers()\nboom\n```\n",
+    "body": "The example above works.  But other things don't:\n\n```\nsage: R.<x> = QQ[]\nsage: sage: L.<b> = NumberField(x^2-1/2)\nsage: sage: L.discriminant()\n8\nsage: L.ring_of_integers()\nboom\n```",
     "created_at": "2007-10-21T01:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -74,7 +72,6 @@ archive/issue_comments_001103.json:
 
 The example above works.  But other things don't:
 
-
 ```
 sage: R.<x> = QQ[]
 sage: sage: L.<b> = NumberField(x^2-1/2)
@@ -83,7 +80,6 @@ sage: sage: L.discriminant()
 sage: L.ring_of_integers()
 boom
 ```
-
 
 
 
@@ -167,7 +163,7 @@ Changing assignee from @williamstein to @loefflerd.
 archive/issue_comments_001107.json:
 ```json
 {
-    "body": "Another example from #9408\n\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```\n",
+    "body": "Another example from #9408\n\n```\nsage: L.<a,b> = QQ[i].relativize(1) #Ok\nsage: L.<a,b> = QQ[i].relativize(1/2) #PariError\n```",
     "created_at": "2010-07-06T10:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -178,12 +174,10 @@ archive/issue_comments_001107.json:
 
 Another example from #9408
 
-
 ```
 sage: L.<a,b> = QQ[i].relativize(1) #Ok
 sage: L.<a,b> = QQ[i].relativize(1/2) #PariError
 ```
-
 
 
 
@@ -248,7 +242,7 @@ In any case, current situation in Sage is not admissible. If we decide not to fi
 archive/issue_comments_001111.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n> I agree that fixing this would be very nice, but also would require \n> completely reworking the number field code.  I think it is feasible,\n> but do we really want to put that much effort into this?\n\nI don't know about \"we\", but it is a total no brainer that this has to get done eventually.   It is certainly easier than writing the number field code in the first place, which was hard, but not that hard.",
+    "body": "Replying to [comment:9 jdemeyer]:\n> I agree that fixing this would be very nice, but also would require \n> completely reworking the number field code.  I think it is feasible,\n> but do we really want to put that much effort into this?\n\n\nI don't know about \"we\", but it is a total no brainer that this has to get done eventually.   It is certainly easier than writing the number field code in the first place, which was hard, but not that hard.",
     "created_at": "2011-10-09T16:00:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -261,6 +255,7 @@ Replying to [comment:9 jdemeyer]:
 > I agree that fixing this would be very nice, but also would require 
 > completely reworking the number field code.  I think it is feasible,
 > but do we really want to put that much effort into this?
+
 
 I don't know about "we", but it is a total no brainer that this has to get done eventually.   It is certainly easier than writing the number field code in the first place, which was hard, but not that hard.
 
@@ -459,7 +454,7 @@ archive/issue_events_000537.json:
 archive/issue_comments_001113.json:
 ```json
 {
-    "body": "In SageMath 6.7.beta1:\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\n8\nsage: L.ring_of_integers()\nMaximal Order in Number Field in b with defining polynomial x^2 - 1/2\n```\n\nHowever, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to **Q**[*x*]/(*f*) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.",
+    "body": "In SageMath 6.7.beta1:\n\n```\nsage: R.<x> = QQ[]\nsage: L.<b> = NumberField(x^2-1/2)\nsage: L.discriminant()\n8\nsage: L.ring_of_integers()\nMaximal Order in Number Field in b with defining polynomial x^2 - 1/2\n```\nHowever, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to **Q**[*x*]/(*f*) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.",
     "created_at": "2015-04-17T22:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -478,7 +473,6 @@ sage: L.discriminant()
 sage: L.ring_of_integers()
 Maximal Order in Number Field in b with defining polynomial x^2 - 1/2
 ```
-
 However, there are still problems; see e.g. #18243.  We should make use of the fact that when one feeds a non-monic or non-integral polynomial `f` to PARI's `nfinit()`, it returns a pair `[nf, c]` where `nf` is an number field isomorphic to **Q**[*x*]/(*f*) and defined by a monic integral polynomial, and `c` is a root of `f` in `nf`.
 
 
@@ -668,7 +662,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_001124.json:
 ```json
 {
-    "body": "Something weird seems to be going on with factoring. This is \"normal\" behavior for a number field.\n\n```\nsage: F.<a> = NumberField(x^3+x+1)\nsage: F(2).factor()\n2\nsage: F(3).factor()\n(a^2 + a + 2) * (-a + 1)\nsage: (a^2 + a + 2).factor()\na^2 + a + 2\nsage: F.factor(3)\n(Fractional ideal (a^2 + a + 2)) * (Fractional ideal (-a + 1))\nsage: (-a+1).factor()\n-a + 1\n```\n\n\nThis is not.\n\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: F(2).factor()\n(-47*a^2 + 21*a - 93/2) * (-1/2*a^2 + 1/2*a)^2 * (1/2*a^2 + 1/2*a)\nsage: F.factor(2)\n(Fractional ideal (-1/2*a^2 + 1/2*a))^2 * (Fractional ideal (1/2*a^2 + 1/2*a))\nsage: (-47*a^2 + 21*a - 93/2).norm()\n-8192\nsage: (-47*a^2 + 21*a - 93/2).factor()\n(3718815975/16384*a^2 - 1336872061/16384*a + 7884913157/32768) * (-1/2*a^2 + 1/2*a)^14 * (1/2*a^2 + 1/2*a)^-1\nsage: (1/2*a^2 + 1/2*a).factor()\n(13/512*a^2 - 11/512*a - 7/256) * (-1/2*a^2 + 1/2*a)^-4\n```\n\n\nSomehow, it's not controlling primes over the leading coefficient properly...",
+    "body": "Something weird seems to be going on with factoring. This is \"normal\" behavior for a number field.\n\n```\nsage: F.<a> = NumberField(x^3+x+1)\nsage: F(2).factor()\n2\nsage: F(3).factor()\n(a^2 + a + 2) * (-a + 1)\nsage: (a^2 + a + 2).factor()\na^2 + a + 2\nsage: F.factor(3)\n(Fractional ideal (a^2 + a + 2)) * (Fractional ideal (-a + 1))\nsage: (-a+1).factor()\n-a + 1\n```\n\nThis is not.\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: F(2).factor()\n(-47*a^2 + 21*a - 93/2) * (-1/2*a^2 + 1/2*a)^2 * (1/2*a^2 + 1/2*a)\nsage: F.factor(2)\n(Fractional ideal (-1/2*a^2 + 1/2*a))^2 * (Fractional ideal (1/2*a^2 + 1/2*a))\nsage: (-47*a^2 + 21*a - 93/2).norm()\n-8192\nsage: (-47*a^2 + 21*a - 93/2).factor()\n(3718815975/16384*a^2 - 1336872061/16384*a + 7884913157/32768) * (-1/2*a^2 + 1/2*a)^14 * (1/2*a^2 + 1/2*a)^-1\nsage: (1/2*a^2 + 1/2*a).factor()\n(13/512*a^2 - 11/512*a - 7/256) * (-1/2*a^2 + 1/2*a)^-4\n```\n\nSomehow, it's not controlling primes over the leading coefficient properly...",
     "created_at": "2015-08-22T22:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -693,9 +687,7 @@ sage: (-a+1).factor()
 -a + 1
 ```
 
-
 This is not.
-
 
 ```
 sage: F.<a> = NumberField(2*x^3+x+1)
@@ -711,7 +703,6 @@ sage: (1/2*a^2 + 1/2*a).factor()
 (13/512*a^2 - 11/512*a - 7/256) * (-1/2*a^2 + 1/2*a)^-4
 ```
 
-
 Somehow, it's not controlling primes over the leading coefficient properly...
 
 
@@ -721,7 +712,7 @@ Somehow, it's not controlling primes over the leading coefficient properly...
 archive/issue_comments_001125.json:
 ```json
 {
-    "body": "The underlying problem seems to be converting PARI ideals in Hilbert normal form to Sage ideals:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: Fp = F.pari_nf()\nsage: I = F.ideal(2)\nsage: Ip = I.pari_hnf()\nsage: fact = Fp.idealfactor(Ip)\nsage: Jp = fact[0, 0]\nsage: Fp.idealnorm(Jp)\n2\nsage: J = F.ideal(Jp)\nsage: J.norm()\n1/2             # should be 2, like Fp.idealnorm(Jp)\n```\n",
+    "body": "The underlying problem seems to be converting PARI ideals in Hilbert normal form to Sage ideals:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: Fp = F.pari_nf()\nsage: I = F.ideal(2)\nsage: Ip = I.pari_hnf()\nsage: fact = Fp.idealfactor(Ip)\nsage: Jp = fact[0, 0]\nsage: Fp.idealnorm(Jp)\n2\nsage: J = F.ideal(Jp)\nsage: J.norm()\n1/2             # should be 2, like Fp.idealnorm(Jp)\n```",
     "created_at": "2015-08-24T13:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -748,13 +739,12 @@ sage: J.norm()
 
 
 
-
 ---
 
 archive/issue_comments_001126.json:
 ```json
 {
-    "body": "Actually the bug is in the conversion from PARI elements expressed on the integral basis:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: b = F.random_element()\nsage: F(F.pari_nf().nfalgtobasis(b)) == b\nFalse  # should be True\n```\n\nI'm working on a patch.",
+    "body": "Actually the bug is in the conversion from PARI elements expressed on the integral basis:\n\n```\nsage: F.<a> = NumberField(2*x^3+x+1)\nsage: b = F.random_element()\nsage: F(F.pari_nf().nfalgtobasis(b)) == b\nFalse  # should be True\n```\nI'm working on a patch.",
     "created_at": "2015-08-24T16:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -771,7 +761,6 @@ sage: b = F.random_element()
 sage: F(F.pari_nf().nfalgtobasis(b)) == b
 False  # should be True
 ```
-
 I'm working on a patch.
 
 
@@ -889,7 +878,7 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 archive/issue_comments_001133.json:
 ```json
 {
-    "body": "Replying to [comment:33 kartikv]:\n> Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.\nThanks for your comments.  If you approve of the new examples you can set this to positive review (and remember to fill in your [real] name as reviewer).",
+    "body": "Replying to [comment:33 kartikv]:\n> Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.\n\nThanks for your comments.  If you approve of the new examples you can set this to positive review (and remember to fill in your [real] name as reviewer).",
     "created_at": "2015-08-25T11:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/252",
     "type": "issue_comment",
@@ -900,6 +889,7 @@ archive/issue_comments_001133.json:
 
 Replying to [comment:33 kartikv]:
 > Positive review. I think there should probably be an example in the docstring to NumberField that demonstrates/tests this functionality (since it has been missing for so long), but otherwise ready to submit. You're welcome to use my example or any of yours from deeper in the number field code.
+
 Thanks for your comments.  If you approve of the new examples you can set this to positive review (and remember to fill in your [real] name as reviewer).
 
 

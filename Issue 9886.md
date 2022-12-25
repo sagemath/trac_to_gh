@@ -3,7 +3,7 @@
 archive/issues_009886.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: timeit(\"z = R(u)\")\n625 loops, best of 3: 6.84 \u00b5s per loop\n```\n\n\nWhy does it take 18000 cycles to convert a tiny integer to an element of R?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9887\n\n",
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: timeit(\"z = R(u)\")\n625 loops, best of 3: 6.84 \u00b5s per loop\n```\n\nWhy does it take 18000 cycles to convert a tiny integer to an element of R?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9887\n\n",
     "created_at": "2010-09-09T16:09:17Z",
     "labels": [
         "component: performance",
@@ -20,14 +20,12 @@ Assignee: tbd
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
 
-
 ```
 sage: R = Integers(3^20)
 sage: u = Integer(2)
 sage: timeit("z = R(u)")
 625 loops, best of 3: 6.84 µs per loop
 ```
-
 
 Why does it take 18000 cycles to convert a tiny integer to an element of R?
 
@@ -43,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9887
 archive/issue_comments_097828.json:
 ```json
 {
-    "body": "This depends on #7883, #8333, #8334 and #9814.  In particular, you first need to apply\n\n```\n333_finite_fields_to_new_coercion.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch\n9814-2.patch\n```\n\nfrom those tickets.\n\nOn the other hand, it also addresses the speed issues in #9885, #9884, #9883 and #9882.  It should also fix #9886: the timings indicate that `ZZ.convert_map_from(R)` is getting called each time, rather than the morphism being found in the `convert_from_hash,` and I don't know why this would be the case.",
+    "body": "This depends on #7883, #8333, #8334 and #9814.  In particular, you first need to apply\n\n```\n333_finite_fields_to_new_coercion.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch\n9814-2.patch\n```\nfrom those tickets.\n\nOn the other hand, it also addresses the speed issues in #9885, #9884, #9883 and #9882.  It should also fix #9886: the timings indicate that `ZZ.convert_map_from(R)` is getting called each time, rather than the morphism being found in the `convert_from_hash,` and I don't know why this would be the case.",
     "created_at": "2010-09-23T11:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -63,7 +61,6 @@ This depends on #7883, #8333, #8334 and #9814.  In particular, you first need to
 7585_12_1_fixes.patch
 9814-2.patch
 ```
-
 from those tickets.
 
 On the other hand, it also addresses the speed issues in #9885, #9884, #9883 and #9882.  It should also fix #9886: the timings indicate that `ZZ.convert_map_from(R)` is getting called each time, rather than the morphism being found in the `convert_from_hash,` and I don't know why this would be the case.
@@ -93,7 +90,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097830.json:
 ```json
 {
-    "body": "Oops, the top of the dependencies got cut off, and there are newer versions of some of these patches.  It should read:\n\n```\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch.2\n9814-2.patch\n```\n\nNote that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_updates.patch` at #8334.",
+    "body": "Oops, the top of the dependencies got cut off, and there are newer versions of some of these patches.  It should read:\n\n```\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch.2\n9814-2.patch\n```\nNote that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_updates.patch` at #8334.",
     "created_at": "2010-09-23T11:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -114,7 +111,6 @@ Oops, the top of the dependencies got cut off, and there are newer versions of s
 7585_12_1_fixes.patch.2
 9814-2.patch
 ```
-
 Note that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_updates.patch` at #8334.
 
 
@@ -124,7 +120,7 @@ Note that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_upd
 archive/issue_comments_097831.json:
 ```json
 {
-    "body": "I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 without this patch, and with this patch. Apologies for the crappy ASCII-art table.\n\n\n```\n      -------------------------------\n      |   4.5.3 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.8 \u00b5s | 15.9 \u00b5s | 3.87 \u00b5s |\n#9883 | 4.25 ms |  133 \u00b5s | 21.5 \u00b5s |\n#9884 | 1.04 ms |  385 \u00b5s |   18 \u00b5s |\n#9885 | 1.23 \u00b5s | 1.24 \u00b5s | 1.34 \u00b5s |\n#9886 | 33.7 \u00b5s | 32.5 \u00b5s | 32.9 \u00b5s |\n#9887 | 6.54 \u00b5s |  966 ns |  992 ns |\n-------------------------------------\n```\n\n\nSo it looks like David's other finite rings patches have already made a dramatic speed improvement to several of these, and the patch on this ticket further improves some of them. The fact that #9885 actually slowed down marginally as a result of the patch is slightly worrying; it might just be random noise, but I did several more runs and the slight slowdowns in #9885 and (to a lesser extent) #9887 seemed quite consistent. It might be a price worth paying for the dramatic speedups elsewhere, but it would be nice if we could avoid it.\n\nI'd be interested to see corresponding timings on other systems.",
+    "body": "I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 without this patch, and with this patch. Apologies for the crappy ASCII-art table.\n\n```\n      -------------------------------\n      |   4.5.3 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.8 \u00b5s | 15.9 \u00b5s | 3.87 \u00b5s |\n#9883 | 4.25 ms |  133 \u00b5s | 21.5 \u00b5s |\n#9884 | 1.04 ms |  385 \u00b5s |   18 \u00b5s |\n#9885 | 1.23 \u00b5s | 1.24 \u00b5s | 1.34 \u00b5s |\n#9886 | 33.7 \u00b5s | 32.5 \u00b5s | 32.9 \u00b5s |\n#9887 | 6.54 \u00b5s |  966 ns |  992 ns |\n-------------------------------------\n```\n\nSo it looks like David's other finite rings patches have already made a dramatic speed improvement to several of these, and the patch on this ticket further improves some of them. The fact that #9885 actually slowed down marginally as a result of the patch is slightly worrying; it might just be random noise, but I did several more runs and the slight slowdowns in #9885 and (to a lesser extent) #9887 seemed quite consistent. It might be a price worth paying for the dramatic speedups elsewhere, but it would be nice if we could avoid it.\n\nI'd be interested to see corresponding timings on other systems.",
     "created_at": "2010-10-03T16:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -134,7 +130,6 @@ archive/issue_comments_097831.json:
 ```
 
 I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 without this patch, and with this patch. Apologies for the crappy ASCII-art table.
-
 
 ```
       -------------------------------
@@ -148,7 +143,6 @@ I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 wi
 #9887 | 6.54 µs |  966 ns |  992 ns |
 -------------------------------------
 ```
-
 
 So it looks like David's other finite rings patches have already made a dramatic speed improvement to several of these, and the patch on this ticket further improves some of them. The fact that #9885 actually slowed down marginally as a result of the patch is slightly worrying; it might just be random noise, but I did several more runs and the slight slowdowns in #9885 and (to a lesser extent) #9887 seemed quite consistent. It might be a price worth paying for the dramatic speedups elsewhere, but it would be nice if we could avoid it.
 
@@ -178,7 +172,7 @@ archive/issue_events_024897.json:
 archive/issue_comments_097832.json:
 ```json
 {
-    "body": "I'm not sure why there are slight slowdowns for #9885 and #9887.  But I did figure out why #9886 was unexpectedly slow: see #10130.\n\nHere are timings on my Macbook Pro (+ patch includes the patch at #10130):\n\n```\n      -------------------------------\n      | 4.3.rc0 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.9 \u00b5s |   15 \u00b5s | 3.71 \u00b5s |\n#9883 | 4.34 ms |  117 \u00b5s | 20.2 \u00b5s |\n#9884 | 3.79 ms |  314 \u00b5s | 30.7 \u00b5s |\n#9885 | 1.22 \u00b5s |  850 ns |  938 ns |\n#9886 | 9.99 \u00b5s | 33.4 \u00b5s |  264 ns |\n#9887 |    ? \u00b5s |  787 ns |  814 ns |\n-------------------------------------\n```\n\nI got a range of values for #9885 in the middle column, from 835ns to 1.07\u00b5s.\n\nI wanted to check 9.99\u00b5s in the first column in a different branch, so rebuilt only to discover that that copy of sage was built when I had an earlier version of OS X and was thus running 32 bit...",
+    "body": "I'm not sure why there are slight slowdowns for #9885 and #9887.  But I did figure out why #9886 was unexpectedly slow: see #10130.\n\nHere are timings on my Macbook Pro (+ patch includes the patch at #10130):\n\n```\n      -------------------------------\n      | 4.3.rc0 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.9 \u00b5s |   15 \u00b5s | 3.71 \u00b5s |\n#9883 | 4.34 ms |  117 \u00b5s | 20.2 \u00b5s |\n#9884 | 3.79 ms |  314 \u00b5s | 30.7 \u00b5s |\n#9885 | 1.22 \u00b5s |  850 ns |  938 ns |\n#9886 | 9.99 \u00b5s | 33.4 \u00b5s |  264 ns |\n#9887 |    ? \u00b5s |  787 ns |  814 ns |\n-------------------------------------\n```\nI got a range of values for #9885 in the middle column, from 835ns to 1.07\u00b5s.\n\nI wanted to check 9.99\u00b5s in the first column in a different branch, so rebuilt only to discover that that copy of sage was built when I had an earlier version of OS X and was thus running 32 bit...",
     "created_at": "2010-10-15T08:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -203,7 +197,6 @@ Here are timings on my Macbook Pro (+ patch includes the patch at #10130):
 #9887 |    ? µs |  787 ns |  814 ns |
 -------------------------------------
 ```
-
 I got a range of values for #9885 in the middle column, from 835ns to 1.07µs.
 
 I wanted to check 9.99µs in the first column in a different branch, so rebuilt only to discover that that copy of sage was built when I had an earlier version of OS X and was thus running 32 bit...
@@ -233,7 +226,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_097834.json:
 ```json
 {
-    "body": "This patch fails to apply against 4.7:\n\n```\ncd \"/home/kedlaya/Downloads/sage-4.7/devel/sage\" && hg import   \"/home/kedlaya/Downloads/9887.patch\"\napplying /home/kedlaya/Downloads/9887.patch\npatching file sage/rings/finite_rings/integer_mod.pxd\nHunk #1 succeeded at 12 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #7 FAILED at 1246\n1 out of 13 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_ring.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "This patch fails to apply against 4.7:\n\n```\ncd \"/home/kedlaya/Downloads/sage-4.7/devel/sage\" && hg import   \"/home/kedlaya/Downloads/9887.patch\"\napplying /home/kedlaya/Downloads/9887.patch\npatching file sage/rings/finite_rings/integer_mod.pxd\nHunk #1 succeeded at 12 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #7 FAILED at 1246\n1 out of 13 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_ring.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2011-06-17T16:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -254,7 +247,6 @@ Hunk #7 FAILED at 1246
 1 out of 13 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_ring.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -447,7 +439,7 @@ This does not apply to the current beta, as it conflicts with #9138 and #11900, 
 archive/issue_comments_097845.json:
 ```json
 {
-    "body": "There is at least some partial work on this done in `5.7.beta3`:\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit z = R(u)\n100000 loops, best of 3: 1.48 us per loop\nsage: %timeit z = R(u)\n1000000 loops, best of 3: 1.74 us per loop\n```\n\n\nSo should we close this ticket?\n\nEdit - I'm running this test on my Ubuntu VM while video chatting on Skype in my Host OS.",
+    "body": "There is at least some partial work on this done in `5.7.beta3`:\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit z = R(u)\n100000 loops, best of 3: 1.48 us per loop\nsage: %timeit z = R(u)\n1000000 loops, best of 3: 1.74 us per loop\n```\n\nSo should we close this ticket?\n\nEdit - I'm running this test on my Ubuntu VM while video chatting on Skype in my Host OS.",
     "created_at": "2013-02-25T04:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -466,7 +458,6 @@ sage: %timeit z = R(u)
 sage: %timeit z = R(u)
 1000000 loops, best of 3: 1.74 us per loop
 ```
-
 
 So should we close this ticket?
 
@@ -533,7 +524,7 @@ Changing status from needs_info to positive_review.
 archive/issue_comments_097849.json:
 ```json
 {
-    "body": "I second the request to close the ticket.  On sage-5.10:\n\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit(\"z = R(u)\")\n10000000 loops, best of 3: 24.6 ns per loop\nsage: %timeit(\"z = ZZ(u)\")\n10000000 loops, best of 3: 24.5 ns per loop\n```\n\n\nIn other words, putting u into R takes the same time as putting u into ZZ (where it is already).  It shouldn't be possible to do any better.\n\nI'll tag this as \"positive review\" to bring it to the release manager's attention.",
+    "body": "I second the request to close the ticket.  On sage-5.10:\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit(\"z = R(u)\")\n10000000 loops, best of 3: 24.6 ns per loop\nsage: %timeit(\"z = ZZ(u)\")\n10000000 loops, best of 3: 24.5 ns per loop\n```\n\nIn other words, putting u into R takes the same time as putting u into ZZ (where it is already).  It shouldn't be possible to do any better.\n\nI'll tag this as \"positive review\" to bring it to the release manager's attention.",
     "created_at": "2013-07-23T22:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9886",
     "type": "issue_comment",
@@ -544,7 +535,6 @@ archive/issue_comments_097849.json:
 
 I second the request to close the ticket.  On sage-5.10:
 
-
 ```
 sage: R = Integers(3^20)
 sage: u = Integer(2)
@@ -553,7 +543,6 @@ sage: %timeit("z = R(u)")
 sage: %timeit("z = ZZ(u)")
 10000000 loops, best of 3: 24.5 ns per loop
 ```
-
 
 In other words, putting u into R takes the same time as putting u into ZZ (where it is already).  It shouldn't be possible to do any better.
 

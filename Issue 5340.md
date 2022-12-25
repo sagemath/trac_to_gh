@@ -50,7 +50,7 @@ Changing status from new to assigned.
 archive/issue_comments_041061.json:
 ```json
 {
-    "body": "The problem is that `__dealloc__` can happen at \"random\" times (whenever the garbage collector happens to trigger), so it must not have global side-effects.\n\nTo the reviewer: Note that the NTL documentation explicitly says you don't need to have the correct context when you destroy an object:\n\n```\nNote, however, that if a GF2E object is created under one modulus \nand then used in any way (except destroyed) under another, \nprogram behavior is not predictable.\n```\n\nEssentially identical language occurs in the documentation for lzz_pE, lzz_p, ZZ_pE, and ZZ_p.\n\nI fixed 9 potential instances of the problem, but only added a doctest for one of them; you'll understand why when you see how hard it is to doctest.\n\nAll doctests pass.\n\nThis is based on sage-3.3 + ReST patches, but I think it would probably apply without the ReST patches just fine.",
+    "body": "The problem is that `__dealloc__` can happen at \"random\" times (whenever the garbage collector happens to trigger), so it must not have global side-effects.\n\nTo the reviewer: Note that the NTL documentation explicitly says you don't need to have the correct context when you destroy an object:\n\n```\nNote, however, that if a GF2E object is created under one modulus \nand then used in any way (except destroyed) under another, \nprogram behavior is not predictable.\n```\nEssentially identical language occurs in the documentation for lzz_pE, lzz_p, ZZ_pE, and ZZ_p.\n\nI fixed 9 potential instances of the problem, but only added a doctest for one of them; you'll understand why when you see how hard it is to doctest.\n\nAll doctests pass.\n\nThis is based on sage-3.3 + ReST patches, but I think it would probably apply without the ReST patches just fine.",
     "created_at": "2009-02-22T20:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5340",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ Note, however, that if a GF2E object is created under one modulus
 and then used in any way (except destroyed) under another, 
 program behavior is not predictable.
 ```
-
 Essentially identical language occurs in the documentation for lzz_pE, lzz_p, ZZ_pE, and ZZ_p.
 
 I fixed 9 potential instances of the problem, but only added a doctest for one of them; you'll understand why when you see how hard it is to doctest.

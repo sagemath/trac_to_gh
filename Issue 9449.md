@@ -3,7 +3,7 @@
 archive/issues_009449.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n\n```\n$ make ptestlong\n```\n\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
+    "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n```\n$ make ptestlong\n```\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
     "created_at": "2010-07-07T19:57:20Z",
     "labels": [
         "component: doctest coverage",
@@ -23,17 +23,14 @@ CC:  simonking @jhpalmieri @qed777 @nexttime
 
 The following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage
 
-
 ```
 $ make ptestlong
 ```
-
 
 was executed. 
 
 * 5 of the 6 doctest failures in the summary have 0 tests failing.
 * BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. 
-
 
 ```
 
@@ -48,15 +45,12 @@ The following tests failed:
 Total time for all tests: 3990.8 seconds 
 ```
 
-
 In the case of one of the tests, it would appear from the log that it actually passed 
-
 
 ```
 sage -t     -long devel/sage/sage/parallel/decorate.py
      [44.0 s] 
 ```
-
 
 This is pretty damn serious, as it means we can not rely on the doctest results. 
 
@@ -142,7 +136,7 @@ Also corrected something which was cut and pasted from another ticket
 archive/issue_comments_090400.json:
 ```json
 {
-    "body": "Replying to [comment:1 wjp]:\n> Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nYes. The only problem I have is that these test failures are not always reproducible. Tests which failed when I run \n\n`$ make ptestlong` \n\nactually passed later. There's a report from John H Palmieri on sage-release of `devel/sage/sage/misc/trace.py` failing for him three times on this machine, then working. This makes any sort of testing difficult, and means it will be hard for me to know if s #8641, #9243, #9316 really solve the problem or not. But I will try them and report back later. \n \n> If they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.\n\nOK, thank you. \n\nI know there was a recent patch to the doctesting to remove spurious errors about files not found - #9316. I don't know if these could be related or not. \n\nI've got other strange results from doctests too, but I'll put that on another ticket. \n\nDave",
+    "body": "Replying to [comment:1 wjp]:\n> Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\n\nYes. The only problem I have is that these test failures are not always reproducible. Tests which failed when I run \n\n`$ make ptestlong` \n\nactually passed later. There's a report from John H Palmieri on sage-release of `devel/sage/sage/misc/trace.py` failing for him three times on this machine, then working. This makes any sort of testing difficult, and means it will be hard for me to know if s #8641, #9243, #9316 really solve the problem or not. But I will try them and report back later. \n \n> If they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.\n\n\nOK, thank you. \n\nI know there was a recent patch to the doctesting to remove spurious errors about files not found - #9316. I don't know if these could be related or not. \n\nI've got other strange results from doctests too, but I'll put that on another ticket. \n\nDave",
     "created_at": "2010-07-07T20:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -154,6 +148,7 @@ archive/issue_comments_090400.json:
 Replying to [comment:1 wjp]:
 > Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.
 
+
 Yes. The only problem I have is that these test failures are not always reproducible. Tests which failed when I run 
 
 `$ make ptestlong` 
@@ -161,6 +156,7 @@ Yes. The only problem I have is that these test failures are not always reproduc
 actually passed later. There's a report from John H Palmieri on sage-release of `devel/sage/sage/misc/trace.py` failing for him three times on this machine, then working. This makes any sort of testing difficult, and means it will be hard for me to know if s #8641, #9243, #9316 really solve the problem or not. But I will try them and report back later. 
  
 > If they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.
+
 
 OK, thank you. 
 
@@ -177,7 +173,7 @@ Dave
 archive/issue_comments_090401.json:
 ```json
 {
-    "body": "I was unable to apply the last patch cleanly - the first two were ok. \n\n\n```\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch\nadding trac_8641-doctest_exit_codes.3.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_8641-doctest_exit_codes.3.patch\nnow at: trac_8641-doctest_exit_codes.3.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9243/trac_9243.patch\nadding trac_9243.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_9243.patch\nnow at: trac_9243.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9316/scripts9316_timeout_rebased.patch\nadding scripts9316_timeout_rebased.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying scripts9316_timeout_rebased.patch\npatching file sage-doctest\nHunk #1 FAILED at 18\n1 out of 2 hunks FAILED -- saving rejects to file sage-doctest.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh scripts9316_timeout_rebased.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg status\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg log | more\nchangeset:   1541:6510dc91cc05\ntag:         scripts9316_timeout_rebased.patch\ntag:         qtip\ntag:         tip\nuser:        Willem Jan Palenstijn <wpalenst@math.leidenuniv.nl>\ndate:        Tue Jul 06 22:58:13 2010 +0200\nsummary:     #9316: Add exit code 64 for time out to doctests\n\nchangeset:   1540:6e69aa36dd4d\ntag:         trac_9243.patch\nuser:        Dan Drake <drake@kaist.edu>\ndate:        Wed Jun 16 13:48:32 2010 +0900\nsummary:     trac 9243: sage-doctest should use powers of 2 for return codes\n\nchangeset:   1539:08d8519d03dc\ntag:         trac_8641-doctest_exit_codes.3.patch\ntag:         qbase\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Wed Jun 16 00:06:03 2010 -0700\nsummary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palmieri\n```\n",
+    "body": "I was unable to apply the last patch cleanly - the first two were ok. \n\n```\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch\nadding trac_8641-doctest_exit_codes.3.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_8641-doctest_exit_codes.3.patch\nnow at: trac_8641-doctest_exit_codes.3.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9243/trac_9243.patch\nadding trac_9243.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_9243.patch\nnow at: trac_9243.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9316/scripts9316_timeout_rebased.patch\nadding scripts9316_timeout_rebased.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying scripts9316_timeout_rebased.patch\npatching file sage-doctest\nHunk #1 FAILED at 18\n1 out of 2 hunks FAILED -- saving rejects to file sage-doctest.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh scripts9316_timeout_rebased.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg status\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg log | more\nchangeset:   1541:6510dc91cc05\ntag:         scripts9316_timeout_rebased.patch\ntag:         qtip\ntag:         tip\nuser:        Willem Jan Palenstijn <wpalenst@math.leidenuniv.nl>\ndate:        Tue Jul 06 22:58:13 2010 +0200\nsummary:     #9316: Add exit code 64 for time out to doctests\n\nchangeset:   1540:6e69aa36dd4d\ntag:         trac_9243.patch\nuser:        Dan Drake <drake@kaist.edu>\ndate:        Wed Jun 16 13:48:32 2010 +0900\nsummary:     trac 9243: sage-doctest should use powers of 2 for return codes\n\nchangeset:   1539:08d8519d03dc\ntag:         trac_8641-doctest_exit_codes.3.patch\ntag:         qbase\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Wed Jun 16 00:06:03 2010 -0700\nsummary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palmieri\n```",
     "created_at": "2010-07-07T20:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -187,7 +183,6 @@ archive/issue_comments_090401.json:
 ```
 
 I was unable to apply the last patch cleanly - the first two were ok. 
-
 
 ```
 kirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch
@@ -236,7 +231,6 @@ summary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palm
 
 
 
-
 ---
 
 archive/issue_comments_090402.json:
@@ -260,7 +254,7 @@ You're missing the second patch at #9243.
 archive/issue_comments_090403.json:
 ```json
 {
-    "body": "Replying to [comment:5 wjp]:\n> You're missing the second patch at #9243.\n\nThank you. I've applied them all now and started the doctests, but I feel tired tonight and are going to sleep now.  So I doubt I'll post the results for a few hours yet. \n \n\nDave",
+    "body": "Replying to [comment:5 wjp]:\n> You're missing the second patch at #9243.\n\n\nThank you. I've applied them all now and started the doctests, but I feel tired tonight and are going to sleep now.  So I doubt I'll post the results for a few hours yet. \n \n\nDave",
     "created_at": "2010-07-07T21:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -271,6 +265,7 @@ archive/issue_comments_090403.json:
 
 Replying to [comment:5 wjp]:
 > You're missing the second patch at #9243.
+
 
 Thank you. I've applied them all now and started the doctests, but I feel tired tonight and are going to sleep now.  So I doubt I'll post the results for a few hours yet. 
  
@@ -284,7 +279,7 @@ Dave
 archive/issue_comments_090404.json:
 ```json
 {
-    "body": "Here's the results after applying #8641, #9243, #9316. As you can see, there are still tests which fail with 0 doctest failures (These results are again on the Sun T5240 t2.math.washington.edu, which is the same as before). \n\n\n```\n\nsage -t  -long devel/sage/sage/modular/ssmod/ssmod.py\n         [3001.1 s]\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n         [3137.3 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/doc/en/constructions/number_fields.rst # 0 doctests failed\n        sage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py # 0 doctests failed\n        sage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4264.8 seconds\n```\n\n\n\n\nHere's the first one, which fails, but with 0 recorded failures. \n\n\n```\nsage -t  -long devel/sage/doc/en/constructions/number_fields.rst\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/number_fields.py': [Errno 2] No such file or directory\n\n         [1.9 s]\n```\n\n\nHere's the second recorded failure \n\n\n```\nsage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/hopf_algebras_with_basis.py': [Errno 2] No such file or directory\n\n         [1.7 s]\n```\n\n\nThe third failure is where Sage crashed:\n\n\n```\nsage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n         [21.5 s]\n```\n\n\nThis is recorded as 0 failures, despite the fact Sage crashed. \n\nThe only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\n\n```\nsage -t  -long devel/sage/sage/parallel/decorate.py\n**********************************************************************\nFile \"/tmp/kirkby/sage-4.5.alpha4/devel/sage-testing/sage/parallel/decorate.py\", line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[9]>\", line 1, in <module>\n        v = list(f([Integer(1),Integer(2),Integer(4)])); v.sort(); v###line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python/site-packages/sage/parallel/multiprocessing_sage.py\", line 64, in parallel_iter\n        p = Pool(processes)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/__init__.py\", line 227, in Pool\n        return Pool(processes, initializer, initargs)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/pool.py\", line 104, in __init__\n        w.start()\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/process.py\", line 104, in start\n        self._popen = Popen(self)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/forking.py\", line 94, in __init__\n        self.pid = os.fork()\n    OSError: [Errno 12] Not enough space\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_4\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /rootpool2/local/kirkby/.sage//tmp/.doctest_decorate.py\n         [51.3 s]\n```\n\n\nDave",
+    "body": "Here's the results after applying #8641, #9243, #9316. As you can see, there are still tests which fail with 0 doctest failures (These results are again on the Sun T5240 t2.math.washington.edu, which is the same as before). \n\n```\n\nsage -t  -long devel/sage/sage/modular/ssmod/ssmod.py\n         [3001.1 s]\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n         [3137.3 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/doc/en/constructions/number_fields.rst # 0 doctests failed\n        sage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py # 0 doctests failed\n        sage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4264.8 seconds\n```\n\n\n\nHere's the first one, which fails, but with 0 recorded failures. \n\n```\nsage -t  -long devel/sage/doc/en/constructions/number_fields.rst\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/number_fields.py': [Errno 2] No such file or directory\n\n         [1.9 s]\n```\n\nHere's the second recorded failure \n\n```\nsage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/hopf_algebras_with_basis.py': [Errno 2] No such file or directory\n\n         [1.7 s]\n```\n\nThe third failure is where Sage crashed:\n\n```\nsage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n         [21.5 s]\n```\n\nThis is recorded as 0 failures, despite the fact Sage crashed. \n\nThe only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\n```\nsage -t  -long devel/sage/sage/parallel/decorate.py\n**********************************************************************\nFile \"/tmp/kirkby/sage-4.5.alpha4/devel/sage-testing/sage/parallel/decorate.py\", line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[9]>\", line 1, in <module>\n        v = list(f([Integer(1),Integer(2),Integer(4)])); v.sort(); v###line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python/site-packages/sage/parallel/multiprocessing_sage.py\", line 64, in parallel_iter\n        p = Pool(processes)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/__init__.py\", line 227, in Pool\n        return Pool(processes, initializer, initargs)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/pool.py\", line 104, in __init__\n        w.start()\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/process.py\", line 104, in start\n        self._popen = Popen(self)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/forking.py\", line 94, in __init__\n        self.pid = os.fork()\n    OSError: [Errno 12] Not enough space\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_4\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /rootpool2/local/kirkby/.sage//tmp/.doctest_decorate.py\n         [51.3 s]\n```\n\nDave",
     "created_at": "2010-07-08T08:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -294,7 +289,6 @@ archive/issue_comments_090404.json:
 ```
 
 Here's the results after applying #8641, #9243, #9316. As you can see, there are still tests which fail with 0 doctest failures (These results are again on the Sun T5240 t2.math.washington.edu, which is the same as before). 
-
 
 ```
 
@@ -317,9 +311,7 @@ Total time for all tests: 4264.8 seconds
 
 
 
-
 Here's the first one, which fails, but with 0 recorded failures. 
-
 
 ```
 sage -t  -long devel/sage/doc/en/constructions/number_fields.rst
@@ -328,9 +320,7 @@ python: can't open file '/rootpool2/local/kirkby/.sage//tmp/number_fields.py': [
          [1.9 s]
 ```
 
-
 Here's the second recorded failure 
-
 
 ```
 sage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py
@@ -339,9 +329,7 @@ python: can't open file '/rootpool2/local/kirkby/.sage//tmp/hopf_algebras_with_b
          [1.7 s]
 ```
 
-
 The third failure is where Sage crashed:
-
 
 ```
 sage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx
@@ -360,11 +348,9 @@ Sage will now terminate (sorry).
          [21.5 s]
 ```
 
-
 This is recorded as 0 failures, despite the fact Sage crashed. 
 
 The only test that is recorded as a failure, with a non-zero number of failures, is the last test
-
 
 ```
 sage -t  -long devel/sage/sage/parallel/decorate.py
@@ -400,7 +386,6 @@ Exception raised:
 For whitespace errors, see the file /rootpool2/local/kirkby/.sage//tmp/.doctest_decorate.py
          [51.3 s]
 ```
-
 
 Dave
 
@@ -510,7 +495,7 @@ The file not found errors (Are you out of disk space?) should probably be caught
 archive/issue_comments_090410.json:
 ```json
 {
-    "body": "To reproduce the singal reporting issue:\n\n\n```\n./sage -tp 1 bus.sage\n```\n\n\nwith bus.sage containing\n\n\n```\n\"\"\"\n    sage: import os\n    sage: os.kill(os.getpid(), 7)\n\"\"\"\n```\n",
+    "body": "To reproduce the singal reporting issue:\n\n```\n./sage -tp 1 bus.sage\n```\n\nwith bus.sage containing\n\n```\n\"\"\"\n    sage: import os\n    sage: os.kill(os.getpid(), 7)\n\"\"\"\n```",
     "created_at": "2010-07-08T16:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -521,14 +506,11 @@ archive/issue_comments_090410.json:
 
 To reproduce the singal reporting issue:
 
-
 ```
 ./sage -tp 1 bus.sage
 ```
 
-
 with bus.sage containing
-
 
 ```
 """
@@ -536,7 +518,6 @@ with bus.sage containing
     sage: os.kill(os.getpid(), 7)
 """
 ```
-
 
 
 
@@ -616,7 +597,7 @@ Yes, it definitely needs more cleaning up. There are already a number of patches
 archive/issue_comments_090414.json:
 ```json
 {
-    "body": "I don't know if *this* one is the origin, but it's simply **horrible**:\n\n```python\ndef test_file(F):\n    \"\"\"\n    This is the function that actually tests a file\n    \"\"\"\n    outfile = tempfile.NamedTemporaryFile()\n    base, ext = os.path.splitext(F)\n\n    cmd = 'doctest ' + opts\n    if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n        cmd += ' -force_lib'\n\n    filestr = os.path.split(F)[1]\n    for i in range(0,numiteration):\n        os.chdir(os.path.dirname(F))\n        command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n        s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n        try:\n            t = time.time()\n            ret = os.system(s)\n            finished_time = time.time() - t\n            if ret>=256:\n                ret=ret/256\n            ret = -ret\n        except:\n            ol = outfile.read()\n            return (-5, 0, ol)\n        ol = outfile.read()\n        if ret != 0:\n            break\n    return (F, ret, finished_time, ol)\n```\n\n(Excerpt from `sage-ptest`, note not just the returned tuples...)\n\nBeat me if I've missed something here...",
+    "body": "I don't know if *this* one is the origin, but it's simply **horrible**:\n\n```python\ndef test_file(F):\n    \"\"\"\n    This is the function that actually tests a file\n    \"\"\"\n    outfile = tempfile.NamedTemporaryFile()\n    base, ext = os.path.splitext(F)\n\n    cmd = 'doctest ' + opts\n    if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n        cmd += ' -force_lib'\n\n    filestr = os.path.split(F)[1]\n    for i in range(0,numiteration):\n        os.chdir(os.path.dirname(F))\n        command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n        s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n        try:\n            t = time.time()\n            ret = os.system(s)\n            finished_time = time.time() - t\n            if ret>=256:\n                ret=ret/256\n            ret = -ret\n        except:\n            ol = outfile.read()\n            return (-5, 0, ol)\n        ol = outfile.read()\n        if ret != 0:\n            break\n    return (F, ret, finished_time, ol)\n```\n(Excerpt from `sage-ptest`, note not just the returned tuples...)\n\nBeat me if I've missed something here...",
     "created_at": "2010-07-08T20:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -659,7 +640,6 @@ def test_file(F):
             break
     return (F, ret, finished_time, ol)
 ```
-
 (Excerpt from `sage-ptest`, note not just the returned tuples...)
 
 Beat me if I've missed something here...
@@ -671,7 +651,7 @@ Beat me if I've missed something here...
 archive/issue_comments_090415.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> I don't know if *this* one is the origin, but it's simply **horrible**:\n> {{{\n> #!python\n> def test_file(F):\n>     \"\"\"\n>     This is the function that actually tests a file\n>     \"\"\"\n>     outfile = tempfile.NamedTemporaryFile()\n>     base, ext = os.path.splitext(F)\n> \n>     cmd = 'doctest ' + opts\n>     if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n>         cmd += ' -force_lib'\n> \n>     filestr = os.path.split(F)[1]\n>     for i in range(0,numiteration):\n>         os.chdir(os.path.dirname(F))\n>         command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n>         s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n>         try:\n>             t = time.time()\n>             ret = os.system(s)\n>             finished_time = time.time() - t\n>             if ret>=256:\n>                 ret=ret/256\n>             ret = -ret\n>         except:\n>             ol = outfile.read()\n>             return (-5, 0, ol)\n>         ol = outfile.read()\n>         if ret != 0:\n>             break\n>     return (F, ret, finished_time, ol)\n> }}}\n> (Excerpt from `sage-ptest`, note not just the returned tuples...)\n> \n> Beat me if I've missed something here...\n> \nI barely know Python, so there is nothing I can do about this. But if you have a better solution, it would be worth trying it. I feel a bit uneasy about Sage, when we can't trust the mechanism for testing it. \n\nIt's odd why failures on some test is pretty repeatable when running `make ptestlong` but run individually, they pass. I'm pretty sure that is not a memory issue, as I've noticed that on my Sun Blade 2000 SPARC where I'm the only user. That machine has 8 GB RAM and only two processors (its not multi-cored or multi-threaded), so I don't run more than 3 tests in parallel.",
+    "body": "Replying to [comment:17 leif]:\n> I don't know if *this* one is the origin, but it's simply **horrible**:\n> \n> ```\n> #!python\n> def test_file(F):\n>     \"\"\"\n>     This is the function that actually tests a file\n>     \"\"\"\n>     outfile = tempfile.NamedTemporaryFile()\n>     base, ext = os.path.splitext(F)\n> \n>     cmd = 'doctest ' + opts\n>     if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n>         cmd += ' -force_lib'\n> \n>     filestr = os.path.split(F)[1]\n>     for i in range(0,numiteration):\n>         os.chdir(os.path.dirname(F))\n>         command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n>         s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n>         try:\n>             t = time.time()\n>             ret = os.system(s)\n>             finished_time = time.time() - t\n>             if ret>=256:\n>                 ret=ret/256\n>             ret = -ret\n>         except:\n>             ol = outfile.read()\n>             return (-5, 0, ol)\n>         ol = outfile.read()\n>         if ret != 0:\n>             break\n>     return (F, ret, finished_time, ol)\n> ```\n> (Excerpt from `sage-ptest`, note not just the returned tuples...)\n> \n> Beat me if I've missed something here...\n> \n\nI barely know Python, so there is nothing I can do about this. But if you have a better solution, it would be worth trying it. I feel a bit uneasy about Sage, when we can't trust the mechanism for testing it. \n\nIt's odd why failures on some test is pretty repeatable when running `make ptestlong` but run individually, they pass. I'm pretty sure that is not a memory issue, as I've noticed that on my Sun Blade 2000 SPARC where I'm the only user. That machine has 8 GB RAM and only two processors (its not multi-cored or multi-threaded), so I don't run more than 3 tests in parallel.",
     "created_at": "2010-07-19T10:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -682,7 +662,8 @@ archive/issue_comments_090415.json:
 
 Replying to [comment:17 leif]:
 > I don't know if *this* one is the origin, but it's simply **horrible**:
-> {{{
+> 
+> ```
 > #!python
 > def test_file(F):
 >     """
@@ -714,11 +695,12 @@ Replying to [comment:17 leif]:
 >         if ret != 0:
 >             break
 >     return (F, ret, finished_time, ol)
-> }}}
+> ```
 > (Excerpt from `sage-ptest`, note not just the returned tuples...)
 > 
 > Beat me if I've missed something here...
 > 
+
 I barely know Python, so there is nothing I can do about this. But if you have a better solution, it would be worth trying it. I feel a bit uneasy about Sage, when we can't trust the mechanism for testing it. 
 
 It's odd why failures on some test is pretty repeatable when running `make ptestlong` but run individually, they pass. I'm pretty sure that is not a memory issue, as I've noticed that on my Sun Blade 2000 SPARC where I'm the only user. That machine has 8 GB RAM and only two processors (its not multi-cored or multi-threaded), so I don't run more than 3 tests in parallel.
@@ -730,7 +712,7 @@ It's odd why failures on some test is pretty repeatable when running `make ptest
 archive/issue_comments_090416.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> The only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\nI've opened #9895 for the recurring \"Not enough space\" error on Solaris raised by `os.fork` in `sage/parallel/decorate.py`.",
+    "body": "Replying to [comment:7 drkirkby]:\n> The only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\n\nI've opened #9895 for the recurring \"Not enough space\" error on Solaris raised by `os.fork` in `sage/parallel/decorate.py`.",
     "created_at": "2010-09-11T00:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
@@ -741,6 +723,7 @@ archive/issue_comments_090416.json:
 
 Replying to [comment:7 drkirkby]:
 > The only test that is recorded as a failure, with a non-zero number of failures, is the last test
+
 
 I've opened #9895 for the recurring "Not enough space" error on Solaris raised by `os.fork` in `sage/parallel/decorate.py`.
 

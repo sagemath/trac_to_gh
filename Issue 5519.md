@@ -67,7 +67,7 @@ Also, I'm CCing Paul Zimmermann who would know about fast implementations of thi
 archive/issue_comments_042812.json:
 ```json
 {
-    "body": "I think your timings are off since you time the `random_element()` call.\n\n## BEFORE\n\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 948 ms per loop\n\nsage: f = P.random_element(10000)\nsage: %time f.is_irreducible()\n# gave up because it took minutes!\n```\n\n\n## AFTER\n\n\n```\nsage: P.<x> = GF(2)[]\n\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10000 loops, best of 3: 22.7 \u00b5s per loop\n\nsage: f = P.random_element(10000)\nsage: %timeit f.is_irreducible()\n1000 loops, best of 3: 394 \u00b5s per loop\n\nsage: f = P.random_element(100000)\nsage: %timeit f.is_irreducible()\n100 loops, best of 3: 10.4 ms per loop\n```\n\n\nSo we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`",
+    "body": "I think your timings are off since you time the `random_element()` call.\n\n## BEFORE\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 948 ms per loop\n\nsage: f = P.random_element(10000)\nsage: %time f.is_irreducible()\n# gave up because it took minutes!\n```\n\n## AFTER\n\n```\nsage: P.<x> = GF(2)[]\n\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10000 loops, best of 3: 22.7 \u00b5s per loop\n\nsage: f = P.random_element(10000)\nsage: %timeit f.is_irreducible()\n1000 loops, best of 3: 394 \u00b5s per loop\n\nsage: f = P.random_element(100000)\nsage: %timeit f.is_irreducible()\n100 loops, best of 3: 10.4 ms per loop\n```\n\nSo we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`",
     "created_at": "2009-03-15T12:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ I think your timings are off since you time the `random_element()` call.
 
 ## BEFORE
 
-
 ```
 sage: P.<x> = GF(2)[]
 sage: f = P.random_element(1000)
@@ -92,9 +91,7 @@ sage: %time f.is_irreducible()
 # gave up because it took minutes!
 ```
 
-
 ## AFTER
-
 
 ```
 sage: P.<x> = GF(2)[]
@@ -111,7 +108,6 @@ sage: f = P.random_element(100000)
 sage: %timeit f.is_irreducible()
 100 loops, best of 3: 10.4 ms per loop
 ```
-
 
 So we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`
 
@@ -164,7 +160,7 @@ Paul, does GF2X also have a `is_primitive()` function of some sorts?
 archive/issue_comments_042815.json:
 ```json
 {
-    "body": "> Paul, does GF2X also have a is_primitive() function of some sorts? \n\nnot directly, but the factor.cpp program searches for the smaller factor (in terms of degree)\nof x^r + x^s + 1, it can be used as a starting point for a general irreducibility test.\n\nPaul",
+    "body": "> Paul, does GF2X also have a is_primitive() function of some sorts? \n\n\nnot directly, but the factor.cpp program searches for the smaller factor (in terms of degree)\nof x^r + x^s + 1, it can be used as a starting point for a general irreducibility test.\n\nPaul",
     "created_at": "2009-03-16T12:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -174,6 +170,7 @@ archive/issue_comments_042815.json:
 ```
 
 > Paul, does GF2X also have a is_primitive() function of some sorts? 
+
 
 not directly, but the factor.cpp program searches for the smaller factor (in terms of degree)
 of x^r + x^s + 1, it can be used as a starting point for a general irreducibility test.
@@ -207,7 +204,7 @@ malb: Why don't you like the cpdef?  That allows it to be called from Python (cu
 archive/issue_comments_042817.json:
 ```json
 {
-    "body": "Replying to [comment:7 rhinton]:\n> malb: Why don't you like the cpdef?  That allows it to be called from Python (current usage) \n> _and_ should make it faster if I call it from another Cython module (possible future usage), \n> correct?  I'm new at this, so I'm happy to learn more of the \"why\"s of Sage coding.\n\nBecause it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.\n\nI agree that this is somewhat a question of taste but I'd rather avoid a false sense of optimisation.",
+    "body": "Replying to [comment:7 rhinton]:\n> malb: Why don't you like the cpdef?  That allows it to be called from Python (current usage) \n> _and_ should make it faster if I call it from another Cython module (possible future usage), \n> correct?  I'm new at this, so I'm happy to learn more of the \"why\"s of Sage coding.\n\n\nBecause it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.\n\nI agree that this is somewhat a question of taste but I'd rather avoid a false sense of optimisation.",
     "created_at": "2009-03-16T15:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -221,6 +218,7 @@ Replying to [comment:7 rhinton]:
 > _and_ should make it faster if I call it from another Cython module (possible future usage), 
 > correct?  I'm new at this, so I'm happy to learn more of the "why"s of Sage coding.
 
+
 Because it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.
 
 I agree that this is somewhat a question of taste but I'd rather avoid a false sense of optimisation.
@@ -232,7 +230,7 @@ I agree that this is somewhat a question of taste but I'd rather avoid a false s
 archive/issue_comments_042818.json:
 ```json
 {
-    "body": "> Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...\n\ndo you have any argument supporting that claim?",
+    "body": "> Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...\n\n\ndo you have any argument supporting that claim?",
     "created_at": "2009-03-16T17:03:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -243,6 +241,7 @@ archive/issue_comments_042818.json:
 
 > Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...
 
+
 do you have any argument supporting that claim?
 
 
@@ -252,7 +251,7 @@ do you have any argument supporting that claim?
 archive/issue_comments_042819.json:
 ```json
 {
-    "body": "Replying to [comment:8 malb]:\n> Replying to [comment:7 rhinton]:\n> > malb: Why don't you like the cpdef?  That allows it to be called from Python (current usage) \n> > _and_ should make it faster if I call it from another Cython module (possible future usage), \n> > correct?  I'm new at this, so I'm happy to learn more of the \"why\"s of Sage coding.\n> \n> Because it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.\n\nYou are absolutely right.  Apparently I've already blocked out calling the M4RI interface directly. :-)\n\n> I agree that this is somewhat a question of taste but I'd rather avoid a false sense of optimisation.",
+    "body": "Replying to [comment:8 malb]:\n> Replying to [comment:7 rhinton]:\n> > malb: Why don't you like the cpdef?  That allows it to be called from Python (current usage) \n> > _and_ should make it faster if I call it from another Cython module (possible future usage), \n> > correct?  I'm new at this, so I'm happy to learn more of the \"why\"s of Sage coding.\n\n> \n> Because it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.\n\n\nYou are absolutely right.  Apparently I've already blocked out calling the M4RI interface directly. :-)\n\n> I agree that this is somewhat a question of taste but I'd rather avoid a false sense of optimisation.",
     "created_at": "2009-03-16T20:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -266,8 +265,10 @@ Replying to [comment:8 malb]:
 > > malb: Why don't you like the cpdef?  That allows it to be called from Python (current usage) 
 > > _and_ should make it faster if I call it from another Cython module (possible future usage), 
 > > correct?  I'm new at this, so I'm happy to learn more of the "why"s of Sage coding.
+
 > 
 > Because it seems like premature optimisation. If now one wants to change stuff around one always has to touch the header now which I find annoying. Also, I see little benefit in making this optimisation. From Python the advantage is nil and from Cython it is trivial to call NTL's function directly which is *much* faster.
+
 
 You are absolutely right.  Apparently I've already blocked out calling the M4RI interface directly. :-)
 
@@ -318,7 +319,7 @@ The new patch removes the cpdef.  I agree, it is much cleaner.
 archive/issue_comments_042822.json:
 ```json
 {
-    "body": "Replying to [comment:9 zimmerma]:\n> > Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...\n> \n> do you have any argument supporting that claim?\n\nI'm just reciting what I've read.  I am enjoying [1] right now, available at\n\nhttp://www.iro.umontreal.ca/~lecuyer/papers.html\n\nas f2lin.pdf.  They make this claim on page 11 in the first full paragraph, and cite [2] and [3].  They malign trinomials and pentanomials in particular (no offense intended) for PRNGs.  Incidentally, I'm working on a tool to search for maximally-equidistributed WELL generators (explained in [1], defined in [4] -- also very readable).\n\n[1] L'Ecuyer and F. Panneton, ``F_2-Linear Random Number Generators'', 2007, to appear with minor revisions in \"Advancing the Frontiers of Simulation: A Festschrift in Honor of George S. Fishman.\" GERAD Report 2007-21. \n\n[2] A. Compagner. The hierarchy of correlations in random binary sequences. Journal of Statistical Physics, 63:883\u2013896, 1991.\n\n[3] D. Wang and A. Compagner. On the use of reducible polynomials as random number generators. Mathematics of Computation, 60:363\u2013374, 1993.\n\n[4] F. Panneton, P. L'Ecuyer, and M. Matsumoto, ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software, 32, 1 (2006), 1-16.\n\nNote that [4] is also available with errata from L'Ecuyer's site along with C source code.  And I have a few additional errata not currently listed in case you want to implement one.",
+    "body": "Replying to [comment:9 zimmerma]:\n> > Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...\n\n> \n> do you have any argument supporting that claim?\n\n\nI'm just reciting what I've read.  I am enjoying [1] right now, available at\n\nhttp://www.iro.umontreal.ca/~lecuyer/papers.html\n\nas f2lin.pdf.  They make this claim on page 11 in the first full paragraph, and cite [2] and [3].  They malign trinomials and pentanomials in particular (no offense intended) for PRNGs.  Incidentally, I'm working on a tool to search for maximally-equidistributed WELL generators (explained in [1], defined in [4] -- also very readable).\n\n[1] L'Ecuyer and F. Panneton, ``F_2-Linear Random Number Generators'', 2007, to appear with minor revisions in \"Advancing the Frontiers of Simulation: A Festschrift in Honor of George S. Fishman.\" GERAD Report 2007-21. \n\n[2] A. Compagner. The hierarchy of correlations in random binary sequences. Journal of Statistical Physics, 63:883\u2013896, 1991.\n\n[3] D. Wang and A. Compagner. On the use of reducible polynomials as random number generators. Mathematics of Computation, 60:363\u2013374, 1993.\n\n[4] F. Panneton, P. L'Ecuyer, and M. Matsumoto, ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software, 32, 1 (2006), 1-16.\n\nNote that [4] is also available with errata from L'Ecuyer's site along with C source code.  And I have a few additional errata not currently listed in case you want to implement one.",
     "created_at": "2009-03-16T20:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -329,8 +330,10 @@ archive/issue_comments_042822.json:
 
 Replying to [comment:9 zimmerma]:
 > > Supposedly, polynomials with few terms (e.g. trinomials) have relatively poor properties for PRNGs...
+
 > 
 > do you have any argument supporting that claim?
+
 
 I'm just reciting what I've read.  I am enjoying [1] right now, available at
 
@@ -373,7 +376,7 @@ Patch looks good, doctests pass.
 archive/issue_comments_042824.json:
 ```json
 {
-    "body": "Replying to [comment:3 malb]:\n> I think your timings are off since you time the `random_element()` call.\n<SNIP>\n> So we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`\nHi Martin. Is it possible for you to provide some system info? It would be good to accompany your timing statistics with some system architecture info.",
+    "body": "Replying to [comment:3 malb]:\n> I think your timings are off since you time the `random_element()` call.\n\n<SNIP>\n> So we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`\n\nHi Martin. Is it possible for you to provide some system info? It would be good to accompany your timing statistics with some system architecture info.",
     "created_at": "2009-03-18T23:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -384,8 +387,10 @@ archive/issue_comments_042824.json:
 
 Replying to [comment:3 malb]:
 > I think your timings are off since you time the `random_element()` call.
+
 <SNIP>
 > So we have 948*ms* vs. 22.3*micros* => `948*1000/22.3 = 42511.2107623318`
+
 Hi Martin. Is it possible for you to provide some system info? It would be good to accompany your timing statistics with some system architecture info.
 
 
@@ -395,7 +400,7 @@ Hi Martin. Is it possible for you to provide some system info? It would be good 
 archive/issue_comments_042825.json:
 ```json
 {
-    "body": "On Debian 5.0 Lenny with the following system info:\n\n```\nkernel: 2.6.24-1-686\nCPU: Intel(R) Celeron(R) 2.00GHz \nRAM: 1.0GB\n```\n\nhere are some timing statistics:\n\n```\n# BEFORE\n\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 1.14 s per loop\nsage: \nsage: f = P.random_element(10000)\nsage: %time f.is_irreducible()\nCPU times: user 4972.13 s, sys: 2.83 s, total: 4974.95 s\nWall time: 5043.02 s\nFalse\n\n\n# AFTER\n\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10000 loops, best of 3: 40.7 \u00b5s per loop\nsage: \nsage: f = P.random_element(10000)\nsage: %timeit f.is_irreducible()\n1000 loops, best of 3: 930 \u00b5s per loop\nsage: \nsage: \nsage: f = P.random_element(100000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 27.6 ms per loop\n```\n\nThat is, a \"before\" 1.14 seconds vs. an \"after\" 40.7 microseconds, resulting in a speedup of 28x:\n\n```\nsage: a = 1.14 * 1000  # convert to microseconds\nsage: b = 40.7  # unit is microseconds\nsage: (a - b) / a\n0.964298245614035\nsage: a / b\n28.0098280098280\n```\n",
+    "body": "On Debian 5.0 Lenny with the following system info:\n\n```\nkernel: 2.6.24-1-686\nCPU: Intel(R) Celeron(R) 2.00GHz \nRAM: 1.0GB\n```\nhere are some timing statistics:\n\n```\n# BEFORE\n\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 1.14 s per loop\nsage: \nsage: f = P.random_element(10000)\nsage: %time f.is_irreducible()\nCPU times: user 4972.13 s, sys: 2.83 s, total: 4974.95 s\nWall time: 5043.02 s\nFalse\n\n\n# AFTER\n\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(1000)\nsage: %timeit f.is_irreducible()\n10000 loops, best of 3: 40.7 \u00b5s per loop\nsage: \nsage: f = P.random_element(10000)\nsage: %timeit f.is_irreducible()\n1000 loops, best of 3: 930 \u00b5s per loop\nsage: \nsage: \nsage: f = P.random_element(100000)\nsage: %timeit f.is_irreducible()\n10 loops, best of 3: 27.6 ms per loop\n```\nThat is, a \"before\" 1.14 seconds vs. an \"after\" 40.7 microseconds, resulting in a speedup of 28x:\n\n```\nsage: a = 1.14 * 1000  # convert to microseconds\nsage: b = 40.7  # unit is microseconds\nsage: (a - b) / a\n0.964298245614035\nsage: a / b\n28.0098280098280\n```",
     "created_at": "2009-03-19T04:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -411,7 +416,6 @@ kernel: 2.6.24-1-686
 CPU: Intel(R) Celeron(R) 2.00GHz 
 RAM: 1.0GB
 ```
-
 here are some timing statistics:
 
 ```
@@ -445,7 +449,6 @@ sage: f = P.random_element(100000)
 sage: %timeit f.is_irreducible()
 10 loops, best of 3: 27.6 ms per loop
 ```
-
 That is, a "before" 1.14 seconds vs. an "after" 40.7 microseconds, resulting in a speedup of 28x:
 
 ```
@@ -459,13 +462,12 @@ sage: a / b
 
 
 
-
 ---
 
 archive/issue_comments_042826.json:
 ```json
 {
-    "body": "Hi Minh,\n\nmy system is a 2.33 Ghz Core2Duo running 64-bit Debian/squeeze.\n\nNote that you mixed up the units in your calculation. `1.14` seconds are `1.14 * 10<sup>6</sup>` microseconds not `1.14 * 10<sup>3</sup>`, i.e. you're mixing it up with milliseconds.\n\n http://en.wikipedia.org/wiki/Orders_of_magnitude_(time)\n\nSo you need to add a factor of 1000.\n\nFor `d=10000` it seems even more:\n\n\n```\n  4974.95 * 10^6 / 930\n```\n",
+    "body": "Hi Minh,\n\nmy system is a 2.33 Ghz Core2Duo running 64-bit Debian/squeeze.\n\nNote that you mixed up the units in your calculation. `1.14` seconds are `1.14 * 10<sup>6</sup>` microseconds not `1.14 * 10<sup>3</sup>`, i.e. you're mixing it up with milliseconds.\n\n http://en.wikipedia.org/wiki/Orders_of_magnitude_(time)\n\nSo you need to add a factor of 1000.\n\nFor `d=10000` it seems even more:\n\n```\n  4974.95 * 10^6 / 930\n```",
     "created_at": "2009-03-19T11:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -486,11 +488,9 @@ So you need to add a factor of 1000.
 
 For `d=10000` it seems even more:
 
-
 ```
   4974.95 * 10^6 / 930
 ```
-
 
 
 
@@ -499,7 +499,7 @@ For `d=10000` it seems even more:
 archive/issue_comments_042827.json:
 ```json
 {
-    "body": "Replying to [comment:16 malb]:\n> my system is a 2.33 Ghz Core2Duo running 64-bit Debian/squeeze.\nThanks for this. I'll put it in the release tour.\n\n\n\n\n> Note that you mixed up the units in your calculation. `1.14` seconds are `1.14 * 10<sup>6</sup>` microseconds not `1.14 * 10<sup>3</sup>`, i.e. you're mixing it up with milliseconds.\n> \n>  http://en.wikipedia.org/wiki/Orders_of_magnitude_(time)\n> \n> So you need to add a factor of 1000.\n> \n> For `d=10000` it seems even more:\n> \n> {{{\n>   4974.95 * 10^6 / 930\n> }}}\nYou're absolutely right. Thanks for catching that. I really need to learn some physics :-)",
+    "body": "Replying to [comment:16 malb]:\n> my system is a 2.33 Ghz Core2Duo running 64-bit Debian/squeeze.\n\nThanks for this. I'll put it in the release tour.\n\n\n\n\n> Note that you mixed up the units in your calculation. `1.14` seconds are `1.14 * 10<sup>6</sup>` microseconds not `1.14 * 10<sup>3</sup>`, i.e. you're mixing it up with milliseconds.\n> \n>  http://en.wikipedia.org/wiki/Orders_of_magnitude_(time)\n> \n> So you need to add a factor of 1000.\n> \n> For `d=10000` it seems even more:\n> \n> \n> ```\n>   4974.95 * 10^6 / 930\n> ```\n\nYou're absolutely right. Thanks for catching that. I really need to learn some physics :-)",
     "created_at": "2009-03-20T01:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
@@ -510,6 +510,7 @@ archive/issue_comments_042827.json:
 
 Replying to [comment:16 malb]:
 > my system is a 2.33 Ghz Core2Duo running 64-bit Debian/squeeze.
+
 Thanks for this. I'll put it in the release tour.
 
 
@@ -523,9 +524,11 @@ Thanks for this. I'll put it in the release tour.
 > 
 > For `d=10000` it seems even more:
 > 
-> {{{
+> 
+> ```
 >   4974.95 * 10^6 / 930
-> }}}
+> ```
+
 You're absolutely right. Thanks for catching that. I really need to learn some physics :-)
 
 

@@ -129,7 +129,7 @@ Changing keywords from "latex, view" to "latex, view, editor_wstein".
 archive/issue_comments_021777.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. The new docs say \"If in notebook mode, this embeds a png image in the output.\".  That is not true.  view uses jsmath to typeset output -- this does not in any way involve png's.\n\n2. There absolutely have to be some doctests added, e.g., examples illustrating what this function does.  E.g., you can in the doctest set the system to be in EMBEDDED_MODE, then get html  output, or something. \n\n3. I agree with removing center and the sep, i.e., with the core changes.\n\n4.. I can't actually apply this patch to either sage-3.0.2 or sage-3.0.2.alpha2:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3145/3145.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3145/3145.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/32714/tmp_1.patch\"\napplying /home/was/.sage/temp/sage/32714/tmp_1.patch\npatching file sage/misc/latex.py\nHunk #1 FAILED at 423\nHunk #2 FAILED at 452\n2 out of 2 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\nabort: patch failed to apply\nsage: \n```\n\n\nSo please do what you can from above and let me know.",
+    "body": "REFEREE REPORT:\n\n1. The new docs say \"If in notebook mode, this embeds a png image in the output.\".  That is not true.  view uses jsmath to typeset output -- this does not in any way involve png's.\n\n2. There absolutely have to be some doctests added, e.g., examples illustrating what this function does.  E.g., you can in the doctest set the system to be in EMBEDDED_MODE, then get html  output, or something. \n\n3. I agree with removing center and the sep, i.e., with the core changes.\n\n4.. I can't actually apply this patch to either sage-3.0.2 or sage-3.0.2.alpha2:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3145/3145.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3145/3145.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.0.3.alpha2/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/32714/tmp_1.patch\"\napplying /home/was/.sage/temp/sage/32714/tmp_1.patch\npatching file sage/misc/latex.py\nHunk #1 FAILED at 423\nHunk #2 FAILED at 452\n2 out of 2 hunks FAILED -- saving rejects to file sage/misc/latex.py.rej\nabort: patch failed to apply\nsage: \n```\n\nSo please do what you can from above and let me know.",
     "created_at": "2008-06-16T00:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
@@ -163,7 +163,6 @@ Hunk #2 FAILED at 452
 abort: patch failed to apply
 sage: 
 ```
-
 
 So please do what you can from above and let me know.
 

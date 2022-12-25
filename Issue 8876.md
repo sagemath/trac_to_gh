@@ -88,7 +88,7 @@ Hi Florent, I found some issues with the file as I was going through it, which I
 archive/issue_comments_081440.json:
 ```json
 {
-    "body": "Everything was ok with the following patch applied:\n\n```\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\n```\n\n\nThanks for the review and the corrections. Your patch is good. Positive review",
+    "body": "Everything was ok with the following patch applied:\n\n```\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\n```\n\nThanks for the review and the corrections. Your patch is good. Positive review",
     "created_at": "2010-06-04T08:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8876",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ trac_8742-lazy_format-review-nt.patch
 trac_8876-triangular_morphisms_improve-fh.patch
 trac_8876-reviewer_patch-jb.patch
 ```
-
 
 Thanks for the review and the corrections. Your patch is good. Positive review
 

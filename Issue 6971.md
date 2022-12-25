@@ -3,7 +3,7 @@
 archive/issues_006971.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o\nIn file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[5]: *** [mach_dep.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [libeclgc.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6971\n\n",
+    "body": "Assignee: tbd\n\n```\nha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o\nIn file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[5]: *** [mach_dep.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [libeclgc.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6971\n\n",
     "created_at": "2009-09-20T22:28:14Z",
     "labels": [
         "component: build",
@@ -19,7 +19,6 @@ archive/issues_006971.json:
 ```
 Assignee: tbd
 
-
 ```
 ha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o
 In file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:
@@ -31,7 +30,6 @@ make[2]: *** [all] Error 2
 Failed to build ECL ... exiting
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6971
 

@@ -3,7 +3,7 @@
 archive/issues_004582.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nGuillaume Moroz wrote on [sage-devel]:\n\n\"\nit seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.\n\n\n```\nsage: from sage.rings.polynomial.polynomial_singular_interface import\ncan_convert_to_singular\nsage: r=Frac(QQ['a,b'])['x,y']\nsage: can_convert_to_singular(r)\nFalse\n```\n\n\nHowever, it is possible to define it in Singular: in this case, it would be\n\n\n```\nring R=(0,a,b),(x,y),dp;\n```\n\n\n(following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)\n\nIn particular, Gr\u00f6bner basis can be computed by Singular in these polynomial rings more efficiently than the toy algorithm currently used.\n\"\n\n\nI hope this can help!\n\nBest regards,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4582\n\n",
+    "body": "Assignee: @malb\n\nGuillaume Moroz wrote on [sage-devel]:\n\n\"\nit seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.\n\n```\nsage: from sage.rings.polynomial.polynomial_singular_interface import\ncan_convert_to_singular\nsage: r=Frac(QQ['a,b'])['x,y']\nsage: can_convert_to_singular(r)\nFalse\n```\n\nHowever, it is possible to define it in Singular: in this case, it would be\n\n```\nring R=(0,a,b),(x,y),dp;\n```\n\n(following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)\n\nIn particular, Gr\u00f6bner basis can be computed by Singular in these polynomial rings more efficiently than the toy algorithm currently used.\n\"\n\n\nI hope this can help!\n\nBest regards,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4582\n\n",
     "created_at": "2008-11-22T12:01:16Z",
     "labels": [
         "component: commutative algebra"
@@ -22,7 +22,6 @@ Guillaume Moroz wrote on [sage-devel]:
 "
 it seems that the sage interface to singular is not aware that Singular handles multivariate polynomial rings with coefficients in a fraction field.
 
-
 ```
 sage: from sage.rings.polynomial.polynomial_singular_interface import
 can_convert_to_singular
@@ -31,14 +30,11 @@ sage: can_convert_to_singular(r)
 False
 ```
 
-
 However, it is possible to define it in Singular: in this case, it would be
-
 
 ```
 ring R=(0,a,b),(x,y),dp;
 ```
-
 
 (following the syntax 2. given at http://www.singular.uni-kl.de/Manual/latest/sing_30.htm#SEC40)
 
@@ -271,7 +267,7 @@ archive/issue_events_010426.json:
 archive/issue_comments_034297.json:
 ```json
 {
-    "body": "Replying to [comment:4 gmoroz]:\n> Yes sorry, I realized this too late.\n\nNo problem, plenty of us have made that mistake :)\n\n> It is the first time I use mercurial and just piped the output of 'sage -hg diff' in the text file: I'll check the export mercurial function and send a normal patch in some days.\n\nCool. Welcome aboard Sage development.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 gmoroz]:\n> Yes sorry, I realized this too late.\n\n\nNo problem, plenty of us have made that mistake :)\n\n> It is the first time I use mercurial and just piped the output of 'sage -hg diff' in the text file: I'll check the export mercurial function and send a normal patch in some days.\n\n\nCool. Welcome aboard Sage development.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T00:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4582",
     "type": "issue_comment",
@@ -283,9 +279,11 @@ archive/issue_comments_034297.json:
 Replying to [comment:4 gmoroz]:
 > Yes sorry, I realized this too late.
 
+
 No problem, plenty of us have made that mistake :)
 
 > It is the first time I use mercurial and just piped the output of 'sage -hg diff' in the text file: I'll check the export mercurial function and send a normal patch in some days.
+
 
 Cool. Welcome aboard Sage development.
 

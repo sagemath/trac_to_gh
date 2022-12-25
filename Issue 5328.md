@@ -57,7 +57,7 @@ Changing status from new to assigned.
 archive/issue_comments_040933.json:
 ```json
 {
-    "body": "This info from the ATLAS 3.8 errata page might also be relevant here:\n\n```\nHow do I restart an interrupted install?\n\nIf your ATLAS install was interrupted, and you have fixed the problem, you \ncan usually safely (there are always exceptions; if the install died in the \nmiddle of an ar command, for instance, many systems cannot recover) restart \nthe install by:\n\n(1) Edit your Make.inc and if the INSTFLAGS macro includes the flags -a 1 \nchange them to: -a 0. This tells ATLAS not to recopy the arch defaults \nover your partially completed results.\n\n(2) Issuing \"make\" from your BLDdir directory.\n```\n\n\nCheers,\n\nMichael",
+    "body": "This info from the ATLAS 3.8 errata page might also be relevant here:\n\n```\nHow do I restart an interrupted install?\n\nIf your ATLAS install was interrupted, and you have fixed the problem, you \ncan usually safely (there are always exceptions; if the install died in the \nmiddle of an ar command, for instance, many systems cannot recover) restart \nthe install by:\n\n(1) Edit your Make.inc and if the INSTFLAGS macro includes the flags -a 1 \nchange them to: -a 0. This tells ATLAS not to recopy the arch defaults \nover your partially completed results.\n\n(2) Issuing \"make\" from your BLDdir directory.\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-21T07:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5328",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ over your partially completed results.
 
 (2) Issuing "make" from your BLDdir directory.
 ```
-
 
 Cheers,
 

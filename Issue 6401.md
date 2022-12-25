@@ -3,7 +3,7 @@
 archive/issues_006401.json:
 ```json
 {
-    "body": "Typesetting of real() and imag() methods are broken due to missing parenthesis.\n\n\n```\nsage: latex(x.real())\n\\Rex\n```\n\n\"\\Rex\" is not a valid latex expression. It should be something\nlike \"\\Re\\left(x\\right)\".\n\nSimilar issues are present also for Symbolic functions\n\n```\nsage: f(x) = function('f',x)\nsage: latex( f(x).imag())\n\\Imf\\left(x\\right)\n```\n\nAgain it should be similar to \"\\Im\\left(f\\left(x\\right)\\right)\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6401\n\n",
+    "body": "Typesetting of real() and imag() methods are broken due to missing parenthesis.\n\n```\nsage: latex(x.real())\n\\Rex\n```\n\"\\Rex\" is not a valid latex expression. It should be something\nlike \"\\Re\\left(x\\right)\".\n\nSimilar issues are present also for Symbolic functions\n\n```\nsage: f(x) = function('f',x)\nsage: latex( f(x).imag())\n\\Imf\\left(x\\right)\n```\nAgain it should be similar to \"\\Im\\left(f\\left(x\\right)\\right)\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6401\n\n",
     "created_at": "2009-06-25T11:09:12Z",
     "labels": [
         "component: symbolics",
@@ -18,12 +18,10 @@ archive/issues_006401.json:
 ```
 Typesetting of real() and imag() methods are broken due to missing parenthesis.
 
-
 ```
 sage: latex(x.real())
 \Rex
 ```
-
 "\Rex" is not a valid latex expression. It should be something
 like "\Re\left(x\right)".
 
@@ -34,7 +32,6 @@ sage: f(x) = function('f',x)
 sage: latex( f(x).imag())
 \Imf\left(x\right)
 ```
-
 Again it should be similar to "\Im\left(f\left(x\right)\right)".
 
 
@@ -160,7 +157,7 @@ Please follow the instructions on that ticket to apply & test.
 archive/issue_comments_051315.json:
 ```json
 {
-    "body": "Hi Burcin,\n\nI am testing out the new pynac spkg. Seems alright to me so far. Out of curiosity: is there\nany reason to print the extra spaces around the the argument of real() and imag()?\n\n```\nsage: latex(real(x))\n\\Re \\left( x \\right)\n```\n\nGiven it differs a bit from your earlier convention for default typesetting of \nsymbolic function\n\n```\nsage: psi(x) = function('psi',x)\nsage: latex(psi(x))\n\\psi\\left(x\\right)\n```\n\n\nOtherwise, I am ready to give positive review as the output is valid latex expression in\nboth cases.",
+    "body": "Hi Burcin,\n\nI am testing out the new pynac spkg. Seems alright to me so far. Out of curiosity: is there\nany reason to print the extra spaces around the the argument of real() and imag()?\n\n```\nsage: latex(real(x))\n\\Re \\left( x \\right)\n```\nGiven it differs a bit from your earlier convention for default typesetting of \nsymbolic function\n\n```\nsage: psi(x) = function('psi',x)\nsage: latex(psi(x))\n\\psi\\left(x\\right)\n```\n\nOtherwise, I am ready to give positive review as the output is valid latex expression in\nboth cases.",
     "created_at": "2009-08-02T15:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
@@ -178,7 +175,6 @@ any reason to print the extra spaces around the the argument of real() and imag(
 sage: latex(real(x))
 \Re \left( x \right)
 ```
-
 Given it differs a bit from your earlier convention for default typesetting of 
 symbolic function
 
@@ -187,7 +183,6 @@ sage: psi(x) = function('psi',x)
 sage: latex(psi(x))
 \psi\left(x\right)
 ```
-
 
 Otherwise, I am ready to give positive review as the output is valid latex expression in
 both cases.

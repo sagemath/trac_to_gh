@@ -96,7 +96,7 @@ Michael
 archive/issue_comments_009952.json:
 ```json
 {
-    "body": "\n```\n[03:27] <dmharvey> i strongly recommend NOT putting zn_poly.spkg into 2.9.1\n[03:28] <mabshoff> :)\n[03:28] <dmharvey> agree with mabshoff it's too early\n```\n",
+    "body": "```\n[03:27] <dmharvey> i strongly recommend NOT putting zn_poly.spkg into 2.9.1\n[03:28] <mabshoff> :)\n[03:28] <dmharvey> agree with mabshoff it's too early\n```",
     "created_at": "2007-12-23T02:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1567",
     "type": "issue_comment",
@@ -105,13 +105,11 @@ archive/issue_comments_009952.json:
 }
 ```
 
-
 ```
 [03:27] <dmharvey> i strongly recommend NOT putting zn_poly.spkg into 2.9.1
 [03:28] <mabshoff> :)
 [03:28] <dmharvey> agree with mabshoff it's too early
 ```
-
 
 
 

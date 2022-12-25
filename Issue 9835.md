@@ -334,7 +334,7 @@ Add new .png files to `MANIFEST.in`
 archive/issue_comments_096905.json:
 ```json
 {
-    "body": "I've attached a patch that fixes two Sphinx warnings:\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot1.png\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot2.png\n```\n",
+    "body": "I've attached a patch that fixes two Sphinx warnings:\n\n```\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot1.png\n/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot2.png\n```",
     "created_at": "2010-09-16T02:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9835",
     "type": "issue_comment",
@@ -349,4 +349,3 @@ I've attached a patch that fixes two Sphinx warnings:
 /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot1.png
 /mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage/doc/en/thematic_tutorials/linear_programming.rst:: WARNING: image file not readable: static/lp_flot2.png
 ```
-

@@ -3,7 +3,7 @@
 archive/issues_000674.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  drkirkby\n\nKeywords: Solaris 10, sympow\n\n\n```\n-bash-3.00$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins -**ERROR** QD_check failed at x[1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/674\n\n",
+    "body": "Assignee: somebody\n\nCC:  drkirkby\n\nKeywords: Solaris 10, sympow\n\n```\n-bash-3.00$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins -**ERROR** QD_check failed at x[1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/674\n\n",
     "created_at": "2007-09-17T00:36:38Z",
     "labels": [
         "component: packages",
@@ -22,12 +22,10 @@ CC:  drkirkby
 
 Keywords: Solaris 10, sympow
 
-
 ```
 -bash-3.00$ sympow
 sympow 1.018 RELEASE  (c) Mark Watkins -**ERROR** QD_check failed at x[1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/674
 
@@ -151,7 +149,7 @@ I'm cc:ing Dr. Kirkby on this since he is likely to have a way to test this easi
 archive/issue_comments_003483.json:
 ```json
 {
-    "body": "If the subject lines is to believed, then this was Solaris 10 x86. I do not have such a system. I've got Open Solaris (Solaris 11) on x86 and Solaris 10 on SPARC. But I do not have any Solaris 10 x86 system. I could install Solaris 10 on a virtual machine, but I don't have it running just now and would rather concentrate on Solaris 11 (Open Solaris). \n\nI'm not getting any doctest failures with the name *sympow* in them. I know nothing about this package, but I do not see anything obviously wrong on Solaris 10 SPARC. \n\n\n```\nkirkby@t2:[~/sage-4.3] $ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n/rootpool2/local/kirkby/sage-4.3\nsage subshell$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n```\n\n\nThere is a copy of Sage 4.3 at /rootpool2/local/kirkby/sage-4.3 on 't2'. If you are able to test that there, it would be helpful, but I do not see the obvious crash. But x86 could be a different matter of course. \n\ndave",
+    "body": "If the subject lines is to believed, then this was Solaris 10 x86. I do not have such a system. I've got Open Solaris (Solaris 11) on x86 and Solaris 10 on SPARC. But I do not have any Solaris 10 x86 system. I could install Solaris 10 on a virtual machine, but I don't have it running just now and would rather concentrate on Solaris 11 (Open Solaris). \n\nI'm not getting any doctest failures with the name *sympow* in them. I know nothing about this package, but I do not see anything obviously wrong on Solaris 10 SPARC. \n\n```\nkirkby@t2:[~/sage-4.3] $ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n/rootpool2/local/kirkby/sage-4.3\nsage subshell$ sympow\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n```\n\nThere is a copy of Sage 4.3 at /rootpool2/local/kirkby/sage-4.3 on 't2'. If you are able to test that there, it would be helpful, but I do not see the obvious crash. But x86 could be a different matter of course. \n\ndave",
     "created_at": "2009-12-30T15:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/674",
     "type": "issue_comment",
@@ -163,7 +161,6 @@ archive/issue_comments_003483.json:
 If the subject lines is to believed, then this was Solaris 10 x86. I do not have such a system. I've got Open Solaris (Solaris 11) on x86 and Solaris 10 on SPARC. But I do not have any Solaris 10 x86 system. I could install Solaris 10 on a virtual machine, but I don't have it running just now and would rather concentrate on Solaris 11 (Open Solaris). 
 
 I'm not getting any doctest failures with the name *sympow* in them. I know nothing about this package, but I do not see anything obviously wrong on Solaris 10 SPARC. 
-
 
 ```
 kirkby@t2:[~/sage-4.3] $ ./sage -sh
@@ -178,7 +175,6 @@ Bypassing shell configuration files ...
 sage subshell$ sympow
 sympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details
 ```
-
 
 There is a copy of Sage 4.3 at /rootpool2/local/kirkby/sage-4.3 on 't2'. If you are able to test that there, it would be helpful, but I do not see the obvious crash. But x86 could be a different matter of course. 
 

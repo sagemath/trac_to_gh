@@ -3,7 +3,7 @@
 archive/issues_004710.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nOn Dec 4, 2008, at 9:35 PM, pong wrote:\n\nIn SAGE 3.2.1 , the docstring of divisors says:\n\nDefinition:\tdivisors(n)\nDocstring:\n\n        Returns a list of all positive integer divisors\n        of the nonzero integer n.\n\n        A second parameter may be passed to surpress sorting\n        of the list (as ordering the list can be more time\n        consuming then creating it).\n\n        INPUT:\n            n -- the element\n            sorted -- whether or not to sort the output (default True)\n\nMy question is how to get an unsorted output?\n\nI tried divisors(300, sorted=False) but SAGE complaints that divisors\nonly takes 1 argument. In fact, the source codes seem to suggest that\nit will always return a sorted list.\n```\n\n\nNow the divisors are always returned sorted (as we have resolved the issue of sorting taking the majority of the time). The documentation needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4710\n\n",
+    "body": "Assignee: tba\n\n```\nOn Dec 4, 2008, at 9:35 PM, pong wrote:\n\nIn SAGE 3.2.1 , the docstring of divisors says:\n\nDefinition:\tdivisors(n)\nDocstring:\n\n        Returns a list of all positive integer divisors\n        of the nonzero integer n.\n\n        A second parameter may be passed to surpress sorting\n        of the list (as ordering the list can be more time\n        consuming then creating it).\n\n        INPUT:\n            n -- the element\n            sorted -- whether or not to sort the output (default True)\n\nMy question is how to get an unsorted output?\n\nI tried divisors(300, sorted=False) but SAGE complaints that divisors\nonly takes 1 argument. In fact, the source codes seem to suggest that\nit will always return a sorted list.\n```\n\nNow the divisors are always returned sorted (as we have resolved the issue of sorting taking the majority of the time). The documentation needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4710\n\n",
     "created_at": "2008-12-05T06:09:06Z",
     "labels": [
         "component: documentation",
@@ -17,7 +17,6 @@ archive/issues_004710.json:
 }
 ```
 Assignee: tba
-
 
 ```
 On Dec 4, 2008, at 9:35 PM, pong wrote:
@@ -44,7 +43,6 @@ I tried divisors(300, sorted=False) but SAGE complaints that divisors
 only takes 1 argument. In fact, the source codes seem to suggest that
 it will always return a sorted list.
 ```
-
 
 Now the divisors are always returned sorted (as we have resolved the issue of sorting taking the majority of the time). The documentation needs to be fixed.
 

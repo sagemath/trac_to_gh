@@ -3,7 +3,7 @@
 archive/issues_001521.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\ng++ -bundle -undefined dynamic_lookup build/temp.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.o \n-L/Users/mabshoff/sage-2.9.alpha7-PowerMacintosh-Darwin/local//lib -lcsage -lcsage -lntl -lstdc++ \n-lstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.so\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1521\n\n",
+    "body": "Assignee: mabshoff\n\n```\ng++ -bundle -undefined dynamic_lookup build/temp.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.o \n-L/Users/mabshoff/sage-2.9.alpha7-PowerMacintosh-Darwin/local//lib -lcsage -lcsage -lntl -lstdc++ \n-lstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.so\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1521\n\n",
     "created_at": "2007-12-15T06:29:50Z",
     "labels": [
         "component: relocation",
@@ -19,13 +19,11 @@ archive/issues_001521.json:
 ```
 Assignee: mabshoff
 
-
 ```
 g++ -bundle -undefined dynamic_lookup build/temp.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.o 
 -L/Users/mabshoff/sage-2.9.alpha7-PowerMacintosh-Darwin/local//lib -lcsage -lcsage -lntl -lstdc++ 
 -lstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.5/sage/libs/ntl/ntl_GF2.so
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1521
 

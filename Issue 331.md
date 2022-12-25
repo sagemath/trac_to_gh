@@ -179,7 +179,7 @@ Perhaps the title should be changed to "compiled implementation of asymptoticall
 archive/issue_comments_001630.json:
 ```json
 {
-    "body": "We already have karatsuba, which leads to really bad bugs like\n\n\n```\nsage: R.<x> = RR[]\nsage: (x+1e20)^2\n1.00000000000000*x^2 + 1.00000000000000e40\n```\n\n\nfor inexact rings. I don't think there's anything for division yet though.",
+    "body": "We already have karatsuba, which leads to really bad bugs like\n\n```\nsage: R.<x> = RR[]\nsage: (x+1e20)^2\n1.00000000000000*x^2 + 1.00000000000000e40\n```\n\nfor inexact rings. I don't think there's anything for division yet though.",
     "created_at": "2008-09-23T20:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/331",
     "type": "issue_comment",
@@ -190,13 +190,11 @@ archive/issue_comments_001630.json:
 
 We already have karatsuba, which leads to really bad bugs like
 
-
 ```
 sage: R.<x> = RR[]
 sage: (x+1e20)^2
 1.00000000000000*x^2 + 1.00000000000000e40
 ```
-
 
 for inexact rings. I don't think there's anything for division yet though.
 

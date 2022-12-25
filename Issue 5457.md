@@ -252,7 +252,7 @@ Apply [attachment:trac_5457-symmetric_functions-mz.patch]
 archive/issue_comments_042213.json:
 ```json
 {
-    "body": "Hi Dan!\n\nThank you very much for your comments on the failing doctests in \n\n* devel/sage/sage/algebras/nil_coxeter_algebra.py\n\n* devel/sage/sage/categories/realizations.py\n\nThey are fixed in the updated version of the patch. I do not get failures for \n\n* devel/sage/sage/sandpiles/sandpile.py\n\non my machine.\n\nlolita-4:sandpiles anne$ sage -t sandpile.py \nsage -t  \"devel/sage-sf/sage/sandpiles/sandpile.py\"         \n\t [19.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 19.0 seconds\n\n\nAnne",
+    "body": "Hi Dan!\n\nThank you very much for your comments on the failing doctests in \n\n* devel/sage/sage/algebras/nil_coxeter_algebra.py\n\n* devel/sage/sage/categories/realizations.py\n\nThey are fixed in the updated version of the patch. I do not get failures for \n\n* devel/sage/sage/sandpiles/sandpile.py\n\non my machine.\n\nlolita-4:sandpiles anne$ sage -t sandpile.py \nsage -t  \"devel/sage-sf/sage/sandpiles/sandpile.py\"         \n\t [19.0 s]\n \n---\nAll tests passed!\nTotal time for all tests: 19.0 seconds\n\n\nAnne",
     "created_at": "2012-07-24T22:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -279,7 +279,7 @@ lolita-4:sandpiles anne$ sage -t sandpile.py
 sage -t  "devel/sage-sf/sage/sandpiles/sandpile.py"         
 	 [19.0 s]
  
-----------------------------------------------------------------------
+---
 All tests passed!
 Total time for all tests: 19.0 seconds
 
@@ -293,7 +293,7 @@ Anne
 archive/issue_comments_042214.json:
 ```json
 {
-    "body": "Replying to [comment:20 aschilling]:\n> Hi Dan!\n> \n> Thank you very much for your comments on the failing doctests in \n> \n> * devel/sage/sage/algebras/nil_coxeter_algebra.py\n> \n> * devel/sage/sage/categories/realizations.py\n> \n> They are fixed in the updated version of the patch. I do not get failures for \n> \n> * devel/sage/sage/sandpiles/sandpile.py\n> \n> on my machine.\n\nI also get a doctest failure in sandpile.py with unpatched sage-5.2.rc0 so this failure is not caused by the patch.",
+    "body": "Replying to [comment:20 aschilling]:\n> Hi Dan!\n> \n> Thank you very much for your comments on the failing doctests in \n> \n> * devel/sage/sage/algebras/nil_coxeter_algebra.py\n> \n> * devel/sage/sage/categories/realizations.py\n> \n> They are fixed in the updated version of the patch. I do not get failures for \n> \n> * devel/sage/sage/sandpiles/sandpile.py\n> \n> on my machine.\n\n\nI also get a doctest failure in sandpile.py with unpatched sage-5.2.rc0 so this failure is not caused by the patch.",
     "created_at": "2012-07-24T23:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -316,6 +316,7 @@ Replying to [comment:20 aschilling]:
 > * devel/sage/sage/sandpiles/sandpile.py
 > 
 > on my machine.
+
 
 I also get a doctest failure in sandpile.py with unpatched sage-5.2.rc0 so this failure is not caused by the patch.
 
@@ -402,7 +403,7 @@ In addition to normal testing I spent quite a bit of time and privately sent com
 archive/issue_comments_042219.json:
 ```json
 {
-    "body": "Replying to [comment:25 bump]:\n> This patch is a huge step forward for symmetric functions.\n> \n> In addition to normal testing I spent quite a bit of time and privately sent comments (mainly on documentation) that have been taken into account in trac_5457-review-as.patch. I'm changing the status to positive review.\n\nDear Dan, Thank you so much for your thorough and quick review of this huge patch! Mike and I just finished the review patch. Tests pass on both of our machines.\n\nAnne",
+    "body": "Replying to [comment:25 bump]:\n> This patch is a huge step forward for symmetric functions.\n> \n> In addition to normal testing I spent quite a bit of time and privately sent comments (mainly on documentation) that have been taken into account in trac_5457-review-as.patch. I'm changing the status to positive review.\n\n\nDear Dan, Thank you so much for your thorough and quick review of this huge patch! Mike and I just finished the review patch. Tests pass on both of our machines.\n\nAnne",
     "created_at": "2012-07-31T01:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -415,6 +416,7 @@ Replying to [comment:25 bump]:
 > This patch is a huge step forward for symmetric functions.
 > 
 > In addition to normal testing I spent quite a bit of time and privately sent comments (mainly on documentation) that have been taken into account in trac_5457-review-as.patch. I'm changing the status to positive review.
+
 
 Dear Dan, Thank you so much for your thorough and quick review of this huge patch! Mike and I just finished the review patch. Tests pass on both of our machines.
 
@@ -467,7 +469,7 @@ Anne
 archive/issue_comments_042222.json:
 ```json
 {
-    "body": "This needs to be rebased to sage-5.3.beta0 (not yet released):\n\n```\npatching file sage/categories/realizations.py\nHunk #1 FAILED at 74\n1 out of 1 hunks FAILED -- saving rejects to file sage/categories/realizations.py.rej\npatching file sage/combinat/sf/classical.py\nHunk #3 FAILED at 88\n1 out of 9 hunks FAILED -- saving rejects to file sage/combinat/sf/classical.py.rej\npatching file sage/combinat/sf/sfa.py\nHunk #61 FAILED at 2589\n1 out of 63 hunks FAILED -- saving rejects to file sage/combinat/sf/sfa.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "This needs to be rebased to sage-5.3.beta0 (not yet released):\n\n```\npatching file sage/categories/realizations.py\nHunk #1 FAILED at 74\n1 out of 1 hunks FAILED -- saving rejects to file sage/categories/realizations.py.rej\npatching file sage/combinat/sf/classical.py\nHunk #3 FAILED at 88\n1 out of 9 hunks FAILED -- saving rejects to file sage/combinat/sf/classical.py.rej\npatching file sage/combinat/sf/sfa.py\nHunk #61 FAILED at 2589\n1 out of 63 hunks FAILED -- saving rejects to file sage/combinat/sf/sfa.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2012-08-01T18:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -490,7 +492,6 @@ Hunk #61 FAILED at 2589
 1 out of 63 hunks FAILED -- saving rejects to file sage/combinat/sf/sfa.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -676,7 +677,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_042232.json:
 ```json
 {
-    "body": "This fails on arando (32-bit i386 Linux):\n\n```\nsage -t --long \"devel/sage/sage/combinat/sf/llt.py\"\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.3.beta1/devel/sage/sage/combinat/sf/llt.py\", line 329:\n    sage: cmp(L3Q, L3Z)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n```\n",
+    "body": "This fails on arando (32-bit i386 Linux):\n\n```\nsage -t --long \"devel/sage/sage/combinat/sf/llt.py\"\n**********************************************************************\nFile \"/var/lib/buildbot/build/sage/arando-1/arando_full/build/sage-5.3.beta1/devel/sage/sage/combinat/sf/llt.py\", line 329:\n    sage: cmp(L3Q, L3Z)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n```",
     "created_at": "2012-08-08T12:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -698,7 +699,6 @@ Got:
     1
 **********************************************************************
 ```
-
 
 
 
@@ -844,7 +844,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_042240.json:
 ```json
 {
-    "body": "> I think one of the original reviewers should review this additional patch.\n\nThis adds a __cmp__ method for SymmetricFunctions, which was missing, and that\nwas uncovered by the test in llt.py. Two SymmetricFunctions instances are\ncompared equal if and only if they have the same base ring, which is as it\nshould be.\n\nUnless I'm missing something the patch is obviously correct. I ran --testall --long\nin the sf directory and all tests passed.",
+    "body": "> I think one of the original reviewers should review this additional patch.\n\n\nThis adds a __cmp__ method for SymmetricFunctions, which was missing, and that\nwas uncovered by the test in llt.py. Two SymmetricFunctions instances are\ncompared equal if and only if they have the same base ring, which is as it\nshould be.\n\nUnless I'm missing something the patch is obviously correct. I ran --testall --long\nin the sf directory and all tests passed.",
     "created_at": "2012-08-09T16:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -854,6 +854,7 @@ archive/issue_comments_042240.json:
 ```
 
 > I think one of the original reviewers should review this additional patch.
+
 
 This adds a __cmp__ method for SymmetricFunctions, which was missing, and that
 was uncovered by the test in llt.py. Two SymmetricFunctions instances are
@@ -1171,7 +1172,7 @@ Anne
 archive/issue_comments_042255.json:
 ```json
 {
-    "body": "Replying to [comment:61 aschilling]:\n> Wow, unbelievable!! Thank you everyone for your work on this!\n\nCongratulations!\n\nAnd thanks on behalf of all symmetric function users!\n\n                                 Nicolas",
+    "body": "Replying to [comment:61 aschilling]:\n> Wow, unbelievable!! Thank you everyone for your work on this!\n\n\nCongratulations!\n\nAnd thanks on behalf of all symmetric function users!\n\n                                 Nicolas",
     "created_at": "2012-08-19T18:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1182,6 +1183,7 @@ archive/issue_comments_042255.json:
 
 Replying to [comment:61 aschilling]:
 > Wow, unbelievable!! Thank you everyone for your work on this!
+
 
 Congratulations!
 
@@ -1355,7 +1357,7 @@ archive/issue_events_012752.json:
 archive/issue_comments_042263.json:
 ```json
 {
-    "body": "I hate to be the bringer of bad news, but after playing a bit with this patch, I think I found an actual bug:\n\n```\nsage: HS3t2 = SymmetricFunctions(QQ).llt(3,t=2).hspin()\nsage: TestSuite(HS3t2).run()\nFailure in _test_associativity:\nTraceback (most recent call last):\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 275, in run\n    test_method(tester = tester)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/semigroups.py\", line 120, in _test_associativity\n    tester.assert_((x * y) * z == x * (y * z))\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/algebras.py\", line 202, in __mul__\n    return self._mul_(right)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/magmas.py\", line 361, in _mul_parent\n    return self.parent().product(self, other)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/algebras_with_basis.py\", line 351, in _product_from_combinatorial_algebra_multiply\n    m = self._multiply(left, right)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 683, in _multiply\n    return self( self._m(left) * self._m(right) )\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"morphism.pyx\", line 243, in sage.categories.morphism.SetMorphism._call_ (sage/categories/morphism.c:4412)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 617, in _self_to_m\n    return self._m._from_cache(x, self._m_cache, self._self_to_m_cache, t = self.t)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/sfa.py\", line 857, in _from_cache\n    cache_function(sum(part))\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 714, in _m_cache\n    self._m_to_self_cache, to_other_function = self._to_m)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/sfa.py\", line 1057, in _invert_morphism\n    known_matrix_n[i,j] = value\n  File \"matrix0.pyx\", line 1415, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:6745)\n  File \"matrix0.pyx\", line 1520, in sage.matrix.matrix0.Matrix._coerce_element (sage/matrix/matrix0.c:7937)\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3547)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3449)\n  File \"rational.pyx\", line 371, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:6534)\n  File \"rational.pyx\", line 484, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7337)\n  File \"fraction_field_element.pyx\", line 736, in sage.rings.fraction_field_element.FractionFieldElement._rational_ (sage/rings/fraction_field_element.c:7197)\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"polynomial_element.pyx\", line 6521, in sage.rings.polynomial.polynomial_element.ConstantPolynomialSection._call_ (sage/rings/polynomial/polynomial_element.c:46753)\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_distributivity:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_one:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_prod:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nThe following tests failed: _test_associativity, _test_distributivity, _test_one, _test_prod\n```\n",
+    "body": "I hate to be the bringer of bad news, but after playing a bit with this patch, I think I found an actual bug:\n\n```\nsage: HS3t2 = SymmetricFunctions(QQ).llt(3,t=2).hspin()\nsage: TestSuite(HS3t2).run()\nFailure in _test_associativity:\nTraceback (most recent call last):\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/misc/sage_unittest.py\", line 275, in run\n    test_method(tester = tester)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/semigroups.py\", line 120, in _test_associativity\n    tester.assert_((x * y) * z == x * (y * z))\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/algebras.py\", line 202, in __mul__\n    return self._mul_(right)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/magmas.py\", line 361, in _mul_parent\n    return self.parent().product(self, other)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/categories/algebras_with_basis.py\", line 351, in _product_from_combinatorial_algebra_multiply\n    m = self._multiply(left, right)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 683, in _multiply\n    return self( self._m(left) * self._m(right) )\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"morphism.pyx\", line 243, in sage.categories.morphism.SetMorphism._call_ (sage/categories/morphism.c:4412)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 617, in _self_to_m\n    return self._m._from_cache(x, self._m_cache, self._self_to_m_cache, t = self.t)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/sfa.py\", line 857, in _from_cache\n    cache_function(sum(part))\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/llt.py\", line 714, in _m_cache\n    self._m_to_self_cache, to_other_function = self._to_m)\n  File \"/release/sage-5.3.rc1/local/lib/python2.7/site-packages/sage/combinat/sf/sfa.py\", line 1057, in _invert_morphism\n    known_matrix_n[i,j] = value\n  File \"matrix0.pyx\", line 1415, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:6745)\n  File \"matrix0.pyx\", line 1520, in sage.matrix.matrix0.Matrix._coerce_element (sage/matrix/matrix0.c:7937)\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3547)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3449)\n  File \"rational.pyx\", line 371, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:6534)\n  File \"rational.pyx\", line 484, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7337)\n  File \"fraction_field_element.pyx\", line 736, in sage.rings.fraction_field_element.FractionFieldElement._rational_ (sage/rings/fraction_field_element.c:7197)\n  File \"parent.pyx\", line 804, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:7228)\n  File \"polynomial_element.pyx\", line 6521, in sage.rings.polynomial.polynomial_element.ConstantPolynomialSection._call_ (sage/rings/polynomial/polynomial_element.c:46753)\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_distributivity:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_one:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nFailure in _test_prod:\n[...]\nTypeError: not a constant polynomial\n------------------------------------------------------------\nThe following tests failed: _test_associativity, _test_distributivity, _test_one, _test_prod\n```",
     "created_at": "2012-09-01T13:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1419,7 +1421,6 @@ TypeError: not a constant polynomial
 ------------------------------------------------------------
 The following tests failed: _test_associativity, _test_distributivity, _test_one, _test_prod
 ```
-
 
 
 
@@ -1488,7 +1489,7 @@ I will post a patch later today when I am confident that this actually fixes the
 archive/issue_comments_042267.json:
 ```json
 {
-    "body": "I also found that the tests that are currently in llt.py will fail if they are run separately.\n\n\n```\nsage: HSp3 = SymmetricFunctions(FractionField(QQ['t'])).llt(3).hspin()\nsage: TestSuite(HSp3).run(skip = [\"_test_associativity\", \"_test_distributivity\", \"_test_prod\"])\nsage: HS3t2 = SymmetricFunctions(QQ).llt(3,t=2).hspin()\nsage: TestSuite(HS3t2).run(skip = [\"_test_associativity\", \"_test_distributivity\", \"_test_prod\"])\n```\n\n\nExecutes without errors (even without the 'skip's).  However, if you delete the first two lines then these tests fail.  I will fix this by putting these tests in their own block.",
+    "body": "I also found that the tests that are currently in llt.py will fail if they are run separately.\n\n```\nsage: HSp3 = SymmetricFunctions(FractionField(QQ['t'])).llt(3).hspin()\nsage: TestSuite(HSp3).run(skip = [\"_test_associativity\", \"_test_distributivity\", \"_test_prod\"])\nsage: HS3t2 = SymmetricFunctions(QQ).llt(3,t=2).hspin()\nsage: TestSuite(HS3t2).run(skip = [\"_test_associativity\", \"_test_distributivity\", \"_test_prod\"])\n```\n\nExecutes without errors (even without the 'skip's).  However, if you delete the first two lines then these tests fail.  I will fix this by putting these tests in their own block.",
     "created_at": "2012-09-01T17:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1499,14 +1500,12 @@ archive/issue_comments_042267.json:
 
 I also found that the tests that are currently in llt.py will fail if they are run separately.
 
-
 ```
 sage: HSp3 = SymmetricFunctions(FractionField(QQ['t'])).llt(3).hspin()
 sage: TestSuite(HSp3).run(skip = ["_test_associativity", "_test_distributivity", "_test_prod"])
 sage: HS3t2 = SymmetricFunctions(QQ).llt(3,t=2).hspin()
 sage: TestSuite(HS3t2).run(skip = ["_test_associativity", "_test_distributivity", "_test_prod"])
 ```
-
 
 Executes without errors (even without the 'skip's).  However, if you delete the first two lines then these tests fail.  I will fix this by putting these tests in their own block.
 
@@ -1553,7 +1552,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_042270.json:
 ```json
 {
-    "body": "Replying to [comment:70 zabrocki]:\n> Just an FYI, this does not seem to be a new bug introduced by this patch.\nWhat do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.",
+    "body": "Replying to [comment:70 zabrocki]:\n> Just an FYI, this does not seem to be a new bug introduced by this patch.\n\nWhat do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.",
     "created_at": "2012-09-01T18:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1564,6 +1563,7 @@ archive/issue_comments_042270.json:
 
 Replying to [comment:70 zabrocki]:
 > Just an FYI, this does not seem to be a new bug introduced by this patch.
+
 What do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.
 
 
@@ -1613,7 +1613,7 @@ I rebased the three patches (there was some fuzz) and made some additional chang
 archive/issue_comments_042273.json:
 ```json
 {
-    "body": "Replying to [comment:73 jdemeyer]:\n> Replying to [comment:70 zabrocki]:\n> > Just an FYI, this does not seem to be a new bug introduced by this patch.\n> What do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.\n\nThe failures are related to failures that already existed before this patch.\nOn sage 5.0.1 (plain) one obtains\n\n```\nsage: LLTHSpin(QQ,3,t=2)\nLLT polynomials in the HSp basis at level 3 with t=2 over Rational Field\nsage: H = LLTHSpin(QQ,3,t=2)\nsage: s = SFASchur(QQ)\nsage: s(H([2,1]))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1760, 0))\n```\n\n\nAnne",
+    "body": "Replying to [comment:73 jdemeyer]:\n> Replying to [comment:70 zabrocki]:\n> > Just an FYI, this does not seem to be a new bug introduced by this patch.\n\n> What do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.\n\nThe failures are related to failures that already existed before this patch.\nOn sage 5.0.1 (plain) one obtains\n\n```\nsage: LLTHSpin(QQ,3,t=2)\nLLT polynomials in the HSp basis at level 3 with t=2 over Rational Field\nsage: H = LLTHSpin(QQ,3,t=2)\nsage: s = SFASchur(QQ)\nsage: s(H([2,1]))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1760, 0))\n```\n\nAnne",
     "created_at": "2012-09-01T20:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1625,6 +1625,7 @@ archive/issue_comments_042273.json:
 Replying to [comment:73 jdemeyer]:
 > Replying to [comment:70 zabrocki]:
 > > Just an FYI, this does not seem to be a new bug introduced by this patch.
+
 > What do you mean?  The doctest is testing code which did not exist before.  So I would say the bug was introduced by this patch.
 
 The failures are related to failures that already existed before this patch.
@@ -1640,7 +1641,6 @@ ERROR: An unexpected error occurred while tokenizing input
 The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (1760, 0))
 ```
-
 
 Anne
 
@@ -1693,7 +1693,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_042276.json:
 ```json
 {
-    "body": "Replying to [comment:76 aschilling]:\n> Will it be merged again in a different version of sage?\nYes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?",
+    "body": "Replying to [comment:76 aschilling]:\n> Will it be merged again in a different version of sage?\n\nYes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?",
     "created_at": "2012-09-02T21:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1704,6 +1704,7 @@ archive/issue_comments_042276.json:
 
 Replying to [comment:76 aschilling]:
 > Will it be merged again in a different version of sage?
+
 Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?
 
 
@@ -1713,7 +1714,7 @@ Yes, I don't want to merge any more new patches in sage-5.3 so it will be remove
 archive/issue_comments_042277.json:
 ```json
 {
-    "body": "Replying to [comment:78 jdemeyer]:\n> Replying to [comment:76 aschilling]:\n> > Will it be merged again in a different version of sage?\n> Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?\n\nMike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).\n\nThanks,\n\nAnne",
+    "body": "Replying to [comment:78 jdemeyer]:\n> Replying to [comment:76 aschilling]:\n> > Will it be merged again in a different version of sage?\n\n> Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?\n\nMike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).\n\nThanks,\n\nAnne",
     "created_at": "2012-09-03T00:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1725,6 +1726,7 @@ archive/issue_comments_042277.json:
 Replying to [comment:78 jdemeyer]:
 > Replying to [comment:76 aschilling]:
 > > Will it be merged again in a different version of sage?
+
 > Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?
 
 Mike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).
@@ -1740,7 +1742,7 @@ Anne
 archive/issue_comments_042278.json:
 ```json
 {
-    "body": "Replying to [comment:79 aschilling]:\n> Mike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).\nI believe everything you say in this paragraph, but I see no arguments to merge it in sage-5.3.\n\nYou have to convince me that this patch will absolutely not break anything on any system, nor cause doctest timeouts.",
+    "body": "Replying to [comment:79 aschilling]:\n> Mike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).\n\nI believe everything you say in this paragraph, but I see no arguments to merge it in sage-5.3.\n\nYou have to convince me that this patch will absolutely not break anything on any system, nor cause doctest timeouts.",
     "created_at": "2012-09-03T06:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1751,6 +1753,7 @@ archive/issue_comments_042278.json:
 
 Replying to [comment:79 aschilling]:
 > Mike's patch fixes a bug that is actually in the current version of Sage (as I outlined above). Wouldn't it be better to merge the two extra patches into sage-5.3 instead? Quite a lot of other patches depend on this patch (plus an upcoming book).
+
 I believe everything you say in this paragraph, but I see no arguments to merge it in sage-5.3.
 
 You have to convince me that this patch will absolutely not break anything on any system, nor cause doctest timeouts.
@@ -1762,7 +1765,7 @@ You have to convince me that this patch will absolutely not break anything on an
 archive/issue_comments_042279.json:
 ```json
 {
-    "body": "Ah shoot, my comment did not get through yesterday; well, it's a bit outaded, but here it is anyway ...\n\nReplying to [comment:78 jdemeyer]:\n> Replying to [comment:76 aschilling]:\n> > Will it be merged again in a different version of sage?\n> Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?\n\nTechnically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.\n\nAnne, Mike: are there specific deadlines (e.g. the book or meetings) for which waiting for 5.4 could be a bother?\n\nOther than that, it's quite a big patch, on a very central feature for people in algebraic combinatorics; and the authors (Mike and Anne mostly) did put quite a lot of work and energy into it. So it will be quite frustrating for theim to not be able to cross it out of their TODO list while the semester starts. But that's life ...\n\nCheers,\n                              Nicolas",
+    "body": "Ah shoot, my comment did not get through yesterday; well, it's a bit outaded, but here it is anyway ...\n\nReplying to [comment:78 jdemeyer]:\n> Replying to [comment:76 aschilling]:\n> > Will it be merged again in a different version of sage?\n\n> Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?\n\nTechnically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.\n\nAnne, Mike: are there specific deadlines (e.g. the book or meetings) for which waiting for 5.4 could be a bother?\n\nOther than that, it's quite a big patch, on a very central feature for people in algebraic combinatorics; and the authors (Mike and Anne mostly) did put quite a lot of work and energy into it. So it will be quite frustrating for theim to not be able to cross it out of their TODO list while the semester starts. But that's life ...\n\nCheers,\n                              Nicolas",
     "created_at": "2012-09-03T11:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1776,6 +1779,7 @@ Ah shoot, my comment did not get through yesterday; well, it's a bit outaded, bu
 Replying to [comment:78 jdemeyer]:
 > Replying to [comment:76 aschilling]:
 > > Will it be merged again in a different version of sage?
+
 > Yes, I don't want to merge any more new patches in sage-5.3 so it will be removed from sage-5.3 and then merged again in sage-5.4 such that it can be tested better.  Does this cause trouble?
 
 Technically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.
@@ -1794,7 +1798,7 @@ Cheers,
 archive/issue_comments_042280.json:
 ```json
 {
-    "body": "Replying to [comment:81 nthiery]:\n> So it will be quite frustrating for theim to not be able to cross it out of their TODO list while the semester starts.\nBut if the patch has *positive review*, then it is effectively off the TODO list, right?  Personally, I don't think it makes a big difference for a patch Author whether a patch gets merged in sage-5.3 or sage-5.4.",
+    "body": "Replying to [comment:81 nthiery]:\n> So it will be quite frustrating for theim to not be able to cross it out of their TODO list while the semester starts.\n\nBut if the patch has *positive review*, then it is effectively off the TODO list, right?  Personally, I don't think it makes a big difference for a patch Author whether a patch gets merged in sage-5.3 or sage-5.4.",
     "created_at": "2012-09-03T11:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1805,6 +1809,7 @@ archive/issue_comments_042280.json:
 
 Replying to [comment:81 nthiery]:
 > So it will be quite frustrating for theim to not be able to cross it out of their TODO list while the semester starts.
+
 But if the patch has *positive review*, then it is effectively off the TODO list, right?  Personally, I don't think it makes a big difference for a patch Author whether a patch gets merged in sage-5.3 or sage-5.4.
 
 
@@ -1886,7 +1891,7 @@ I'm not sure what you want in the commit message and I don't have permission to 
 archive/issue_comments_042285.json:
 ```json
 {
-    "body": "Replying to [comment:85 zabrocki]:\n> I'm not sure what you want in the commit message\nWell, I don't want anything refering to `[mq]` or the patch name.  So if you delete the second line of the commit message in your patch, that will be fine.",
+    "body": "Replying to [comment:85 zabrocki]:\n> I'm not sure what you want in the commit message\n\nWell, I don't want anything refering to `[mq]` or the patch name.  So if you delete the second line of the commit message in your patch, that will be fine.",
     "created_at": "2012-09-03T12:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1897,6 +1902,7 @@ archive/issue_comments_042285.json:
 
 Replying to [comment:85 zabrocki]:
 > I'm not sure what you want in the commit message
+
 Well, I don't want anything refering to `[mq]` or the patch name.  So if you delete the second line of the commit message in your patch, that will be fine.
 
 
@@ -1962,7 +1968,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_042289.json:
 ```json
 {
-    "body": "Replying to [comment:87 zabrocki]:\n> Sorry I don't know what the [mq] is or how it got there.\n\nThe [mq] is short for mercurial queue; it is automatically placed there by hg.",
+    "body": "Replying to [comment:87 zabrocki]:\n> Sorry I don't know what the [mq] is or how it got there.\n\n\nThe [mq] is short for mercurial queue; it is automatically placed there by hg.",
     "created_at": "2012-09-03T13:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1974,6 +1980,7 @@ archive/issue_comments_042289.json:
 Replying to [comment:87 zabrocki]:
 > Sorry I don't know what the [mq] is or how it got there.
 
+
 The [mq] is short for mercurial queue; it is automatically placed there by hg.
 
 
@@ -1983,7 +1990,7 @@ The [mq] is short for mercurial queue; it is automatically placed there by hg.
 archive/issue_comments_042290.json:
 ```json
 {
-    "body": "Hi Nicolas,\n\n> Technically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.\n\nI have no idea how to handle the sage-combinat queue now. Do nothing until sage-5.3 comes out and then force everyone to move to sage-5.3?\n\n> Anne, Mike: are there specific deadlines (e.g. the book or meetings) for which waiting for 5.4 could be a bother?\n\nBeginning for the quarter for the book since my students are supposed to use it and sage!\n\nCheers,\n\nAnne",
+    "body": "Hi Nicolas,\n\n> Technically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.\n\n\nI have no idea how to handle the sage-combinat queue now. Do nothing until sage-5.3 comes out and then force everyone to move to sage-5.3?\n\n> Anne, Mike: are there specific deadlines (e.g. the book or meetings) for which waiting for 5.4 could be a bother?\n\n\nBeginning for the quarter for the book since my students are supposed to use it and sage!\n\nCheers,\n\nAnne",
     "created_at": "2012-09-03T14:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -1996,9 +2003,11 @@ Hi Nicolas,
 
 > Technically, the Sage-Combinat queue can't handle patches that are merged and then unmerged. Now, this just means that we will have to everyone using a 5.3 beta to switch to 5.3 final; not a big deal.
 
+
 I have no idea how to handle the sage-combinat queue now. Do nothing until sage-5.3 comes out and then force everyone to move to sage-5.3?
 
 > Anne, Mike: are there specific deadlines (e.g. the book or meetings) for which waiting for 5.4 could be a bother?
+
 
 Beginning for the quarter for the book since my students are supposed to use it and sage!
 
@@ -2123,7 +2132,7 @@ My second additional patch [attachment:5457_long_time_2.patch] needs review (jus
 archive/issue_comments_042296.json:
 ```json
 {
-    "body": "Replying to [comment:95 jdemeyer]:\n> My second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).\n\nPositive review! Thanks!",
+    "body": "Replying to [comment:95 jdemeyer]:\n> My second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).\n\n\nPositive review! Thanks!",
     "created_at": "2012-09-21T09:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2135,6 +2144,7 @@ archive/issue_comments_042296.json:
 Replying to [comment:95 jdemeyer]:
 > My second additional patch [attachment:5457_long_time_2.patch] needs review (just mention the review in the comments, don't change the status).
 
+
 Positive review! Thanks!
 
 
@@ -2144,7 +2154,7 @@ Positive review! Thanks!
 archive/issue_comments_042297.json:
 ```json
 {
-    "body": "This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n            sage: f.skew_by([1])\n            Traceback (most recent call last):\n            ...\n            AssertionError: x needs to be a symmetric function\n```\n\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
+    "body": "This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n            sage: f.skew_by([1])\n            Traceback (most recent call last):\n            ...\n            AssertionError: x needs to be a symmetric function\n```\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
     "created_at": "2012-09-24T07:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2163,7 +2173,6 @@ For example:
             ...
             AssertionError: x needs to be a symmetric function
 ```
-
 This is a simple user mistake, for which `assert` is not right.
 
 I think this must be fixed.
@@ -2175,7 +2184,7 @@ I think this must be fixed.
 archive/issue_comments_042298.json:
 ```json
 {
-    "body": "Hi Jeroen,\n\nReplying to [comment:97 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> {{{\n>             sage: f.skew_by([1])\n>             Traceback (most recent call last):\n>             ...\n>             AssertionError: x needs to be a symmetric function\n> }}}\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed\n\nGiven the discussion on sage-devel, do we agree that there is no control flow involved and it's a not so common function, so it's ok to use assert?\n\nCheers,\n                    Nicolas",
+    "body": "Hi Jeroen,\n\nReplying to [comment:97 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> \n> ```\n>             sage: f.skew_by([1])\n>             Traceback (most recent call last):\n>             ...\n>             AssertionError: x needs to be a symmetric function\n> ```\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed\n\n\nGiven the discussion on sage-devel, do we agree that there is no control flow involved and it's a not so common function, so it's ok to use assert?\n\nCheers,\n                    Nicolas",
     "created_at": "2012-09-24T09:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2190,15 +2199,17 @@ Replying to [comment:97 jdemeyer]:
 > This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.
 > 
 > For example:
-> {{{
+> 
+> ```
 >             sage: f.skew_by([1])
 >             Traceback (most recent call last):
 >             ...
 >             AssertionError: x needs to be a symmetric function
-> }}}
+> ```
 > This is a simple user mistake, for which `assert` is not right.
 > 
 > I think this must be fixed
+
 
 Given the discussion on sage-devel, do we agree that there is no control flow involved and it's a not so common function, so it's ok to use assert?
 
@@ -2212,7 +2223,7 @@ Cheers,
 archive/issue_comments_042299.json:
 ```json
 {
-    "body": "Replying to [comment:97 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> {{{\n>             sage: f.skew_by([1])\n>             Traceback (most recent call last):\n>             ...\n>             AssertionError: x needs to be a symmetric function\n> }}}\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\nWe had a user who used this method wrongly at FPSAC (he used a partition instead of a symmetric function). That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!\n\nAnne",
+    "body": "Replying to [comment:97 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> \n> ```\n>             sage: f.skew_by([1])\n>             Traceback (most recent call last):\n>             ...\n>             AssertionError: x needs to be a symmetric function\n> ```\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\n\nWe had a user who used this method wrongly at FPSAC (he used a partition instead of a symmetric function). That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!\n\nAnne",
     "created_at": "2012-09-24T14:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2225,15 +2236,17 @@ Replying to [comment:97 jdemeyer]:
 > This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.
 > 
 > For example:
-> {{{
+> 
+> ```
 >             sage: f.skew_by([1])
 >             Traceback (most recent call last):
 >             ...
 >             AssertionError: x needs to be a symmetric function
-> }}}
+> ```
 > This is a simple user mistake, for which `assert` is not right.
 > 
 > I think this must be fixed.
+
 
 We had a user who used this method wrongly at FPSAC (he used a partition instead of a symmetric function). That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!
 
@@ -2246,7 +2259,7 @@ Anne
 archive/issue_comments_042300.json:
 ```json
 {
-    "body": "Replying to [comment:99 aschilling]:\n> That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!\nYes, it should be done differently.  The correct way would be:\n\n```\nif not needed_condition:\n    raise ValueError(\"Error message\")\n```\n\n\nAs I said: `assert` is only meant to catch *bugs*, not user errors.  Although, as Nicolas Thi\u00e9ry argued, something `assert` is acceptible.  See also the sage-devel thread.",
+    "body": "Replying to [comment:99 aschilling]:\n> That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!\n\nYes, it should be done differently.  The correct way would be:\n\n```\nif not needed_condition:\n    raise ValueError(\"Error message\")\n```\n\nAs I said: `assert` is only meant to catch *bugs*, not user errors.  Although, as Nicolas Thi\u00e9ry argued, something `assert` is acceptible.  See also the sage-devel thread.",
     "created_at": "2012-09-24T18:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5457",
     "type": "issue_comment",
@@ -2257,13 +2270,13 @@ archive/issue_comments_042300.json:
 
 Replying to [comment:99 aschilling]:
 > That's why we added this (since this can potentially be a common user mistake). If this should be done differently, feel free to change it!
+
 Yes, it should be done differently.  The correct way would be:
 
 ```
 if not needed_condition:
     raise ValueError("Error message")
 ```
-
 
 As I said: `assert` is only meant to catch *bugs*, not user errors.  Although, as Nicolas Thiéry argued, something `assert` is acceptible.  See also the sage-devel thread.
 

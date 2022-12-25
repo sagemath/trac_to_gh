@@ -3,7 +3,7 @@
 archive/issues_009063.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nIf you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:\n\n\n```\nsage: R.<t> = GF(5)['t']\nsage: x = R(0)\nsage: type(x.denominator())\n<type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9063\n\n",
+    "body": "Assignee: @aghitza\n\nIf you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:\n\n```\nsage: R.<t> = GF(5)['t']\nsage: x = R(0)\nsage: type(x.denominator())\n<type 'int'>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9063\n\n",
     "created_at": "2010-05-27T06:51:35Z",
     "labels": [
         "component: algebra",
@@ -20,14 +20,12 @@ Assignee: @aghitza
 
 If you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:
 
-
 ```
 sage: R.<t> = GF(5)['t']
 sage: x = R(0)
 sage: type(x.denominator())
 <type 'int'>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9063
 
@@ -114,7 +112,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083959.json:
 ```json
 {
-    "body": "This looks good to me.  It applied ok to 4.5.3.alpha1, and all (long) tests pass, except for one:\n\n```\n\nsage -t -long \"sage/matrix/matrix2.pyx\"                     \n**********************************************************************\nFile \"/storage/jec/sage-4.5.3.alpha1/devel/sage-tests/sage/matrix/matrix2.pyx\", line 4665:\n    sage: M.weak_popov_form()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_68[7]>\", line 1, in <module>\n        M.weak_popov_form()###line 4665:\n    sage: M.weak_popov_form()\n      File \"matrix2.pyx\", line 4748, in sage.matrix.matrix2.Matrix.weak_popov_form (sage/matrix/matrix2.c:26417)\n        ::\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/matrix/matrix_misc.py\", line 90, in weak_popov_form\n        den = R(lcm([a.denominator() for a in M.list()]))\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/rings/arith.py\", line 1527, in lcm\n        return __LCM_sequence(seq)\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/rings/arith.py\", line 1583, in __LCM_sequence\n        g = vi.lcm(g)\n      File \"element.pyx\", line 306, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)\n        return getattr_from_other_class(self, self.parent().category().element_class, name)\n      File \"parent.pyx\", line 268, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)\n        raise_attribute_error(self, name)\n      File \"parent.pyx\", line 170, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)\n        raise AttributeError, \"'%s.%s' object has no attribute '%s'\"%(cls.__module__, cls.__name__, name)\n    AttributeError: 'sage.rings.finite_rings.integer_mod.IntegerMod_int' object has no attribute 'lcm'\n**********************************************************************\n1 items had failures:\n```\n\n\nThe problem is in the function weak_popov_form() in sage/rings/matrix/matrix_misc.py  (which was only merged into Sage receontly -- and I was, by chance, its reviewer).  There one has matrices of polynomials over fields and the code tries to clear denominators, by forming the LCM of the denominators;  and that now fails when those denominators are all equal to 1 in a finite field!\n\nRather than mess with the weakpopov form code, this could be solved if there was an lcm function for finite field elements which always returned 1 (except lcm(0,0)=0, perhaps).",
+    "body": "This looks good to me.  It applied ok to 4.5.3.alpha1, and all (long) tests pass, except for one:\n\n```\n\nsage -t -long \"sage/matrix/matrix2.pyx\"                     \n**********************************************************************\nFile \"/storage/jec/sage-4.5.3.alpha1/devel/sage-tests/sage/matrix/matrix2.pyx\", line 4665:\n    sage: M.weak_popov_form()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_68[7]>\", line 1, in <module>\n        M.weak_popov_form()###line 4665:\n    sage: M.weak_popov_form()\n      File \"matrix2.pyx\", line 4748, in sage.matrix.matrix2.Matrix.weak_popov_form (sage/matrix/matrix2.c:26417)\n        ::\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/matrix/matrix_misc.py\", line 90, in weak_popov_form\n        den = R(lcm([a.denominator() for a in M.list()]))\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/rings/arith.py\", line 1527, in lcm\n        return __LCM_sequence(seq)\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/rings/arith.py\", line 1583, in __LCM_sequence\n        g = vi.lcm(g)\n      File \"element.pyx\", line 306, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)\n        return getattr_from_other_class(self, self.parent().category().element_class, name)\n      File \"parent.pyx\", line 268, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)\n        raise_attribute_error(self, name)\n      File \"parent.pyx\", line 170, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)\n        raise AttributeError, \"'%s.%s' object has no attribute '%s'\"%(cls.__module__, cls.__name__, name)\n    AttributeError: 'sage.rings.finite_rings.integer_mod.IntegerMod_int' object has no attribute 'lcm'\n**********************************************************************\n1 items had failures:\n```\n\nThe problem is in the function weak_popov_form() in sage/rings/matrix/matrix_misc.py  (which was only merged into Sage receontly -- and I was, by chance, its reviewer).  There one has matrices of polynomials over fields and the code tries to clear denominators, by forming the LCM of the denominators;  and that now fails when those denominators are all equal to 1 in a finite field!\n\nRather than mess with the weakpopov form code, this could be solved if there was an lcm function for finite field elements which always returned 1 (except lcm(0,0)=0, perhaps).",
     "created_at": "2010-08-18T12:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -161,7 +159,6 @@ Exception raised:
 1 items had failures:
 ```
 
-
 The problem is in the function weak_popov_form() in sage/rings/matrix/matrix_misc.py  (which was only merged into Sage receontly -- and I was, by chance, its reviewer).  There one has matrices of polynomials over fields and the code tries to clear denominators, by forming the LCM of the denominators;  and that now fails when those denominators are all equal to 1 in a finite field!
 
 Rather than mess with the weakpopov form code, this could be solved if there was an lcm function for finite field elements which always returned 1 (except lcm(0,0)=0, perhaps).
@@ -173,7 +170,7 @@ Rather than mess with the weakpopov form code, this could be solved if there was
 archive/issue_comments_083960.json:
 ```json
 {
-    "body": "Well, \n\nThe issue of adding a lcm function for finite fields has some problems associated:\n\n- Except is degenerate cases, all elements are units, so the lcm being 1 is not nonsense.\n\n- The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.\n\n\n```\nsage: m = GF(5)\nsage: a= m(4)\nsage: lcm(a,a)\n4\n```\n\n\nSo this approach will add a backwards incompatibility at least.",
+    "body": "Well, \n\nThe issue of adding a lcm function for finite fields has some problems associated:\n\n- Except is degenerate cases, all elements are units, so the lcm being 1 is not nonsense.\n\n- The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.\n\n```\nsage: m = GF(5)\nsage: a= m(4)\nsage: lcm(a,a)\n4\n```\n\nSo this approach will add a backwards incompatibility at least.",
     "created_at": "2010-08-26T09:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -190,14 +187,12 @@ The issue of adding a lcm function for finite fields has some problems associate
 
 - The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.
 
-
 ```
 sage: m = GF(5)
 sage: a= m(4)
 sage: lcm(a,a)
 4
 ```
-
 
 So this approach will add a backwards incompatibility at least.
 
@@ -208,7 +203,7 @@ So this approach will add a backwards incompatibility at least.
 archive/issue_comments_083961.json:
 ```json
 {
-    "body": "Replying to [comment:5 lftabera]:\n> Well, \n> \n> The issue of adding a lcm function for finite fields has some problems associated:\n> \n> - Except is degenerate cases, all elements are units, so the lcm being 1 is not nonsense.\n> \n> - The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.\n> \n> {{{\n> sage: m = GF(5)\n> sage: a= m(4)\n> sage: lcm(a,a)\n> 4\n> }}}\n> \n> So this approach will add a backwards incompatibility at least.\n\nWell spotted!  I think that this current behavour is a bug:\n\n```\nsage: a = GF(5)(4)\nsage: type(a)\n<type 'sage.rings.finite_rings.integer_mod.IntegerMod_int'>\nsage: lcm(a,a)\n4\nsage: type(lcm(a,a))\n<type 'sage.rings.integer.Integer'>\n```\n\nsince it makes no mathematical sense at all.  It's the same for gcd:\n\n```\nsage: gcd(a,a)\n4\nsage: type(gcd(a,a))\n<type 'sage.rings.integer.Integer'>\n```\n\nBoth of these would not happen if finite field elements have gcd and lcm methods, and in my opinion that would be better.\n\nSomeone should try to implement this and do a full test to see if any existing code (tests) is broken.  I hope not -- I cannot imagine anyone relying on this rather crazy behaviour.",
+    "body": "Replying to [comment:5 lftabera]:\n> Well, \n> \n> The issue of adding a lcm function for finite fields has some problems associated:\n> \n> - Except is degenerate cases, all elements are units, so the lcm being 1 is not nonsense.\n> \n> - The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.\n> \n> \n> ```\n> sage: m = GF(5)\n> sage: a= m(4)\n> sage: lcm(a,a)\n> 4\n> ```\n> \n> So this approach will add a backwards incompatibility at least.\n\n\nWell spotted!  I think that this current behavour is a bug:\n\n```\nsage: a = GF(5)(4)\nsage: type(a)\n<type 'sage.rings.finite_rings.integer_mod.IntegerMod_int'>\nsage: lcm(a,a)\n4\nsage: type(lcm(a,a))\n<type 'sage.rings.integer.Integer'>\n```\nsince it makes no mathematical sense at all.  It's the same for gcd:\n\n```\nsage: gcd(a,a)\n4\nsage: type(gcd(a,a))\n<type 'sage.rings.integer.Integer'>\n```\nBoth of these would not happen if finite field elements have gcd and lcm methods, and in my opinion that would be better.\n\nSomeone should try to implement this and do a full test to see if any existing code (tests) is broken.  I hope not -- I cannot imagine anyone relying on this rather crazy behaviour.",
     "created_at": "2010-08-26T09:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -226,14 +221,16 @@ Replying to [comment:5 lftabera]:
 > 
 > - The problem is that currently, sage already does some lcm for finite fields if the elements can be coerced to ZZ.
 > 
-> {{{
+> 
+> ```
 > sage: m = GF(5)
 > sage: a= m(4)
 > sage: lcm(a,a)
 > 4
-> }}}
+> ```
 > 
 > So this approach will add a backwards incompatibility at least.
+
 
 Well spotted!  I think that this current behavour is a bug:
 
@@ -246,7 +243,6 @@ sage: lcm(a,a)
 sage: type(lcm(a,a))
 <type 'sage.rings.integer.Integer'>
 ```
-
 since it makes no mathematical sense at all.  It's the same for gcd:
 
 ```
@@ -255,7 +251,6 @@ sage: gcd(a,a)
 sage: type(gcd(a,a))
 <type 'sage.rings.integer.Integer'>
 ```
-
 Both of these would not happen if finite field elements have gcd and lcm methods, and in my opinion that would be better.
 
 Someone should try to implement this and do a full test to see if any existing code (tests) is broken.  I hope not -- I cannot imagine anyone relying on this rather crazy behaviour.
@@ -285,7 +280,7 @@ I have added a new bug dealing with the issue of lcm. So this bug now depends on
 archive/issue_comments_083963.json:
 ```json
 {
-    "body": "Replying to [comment:7 lftabera]:\n> I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819\n\nI hope you do not mean exactly what you wrote!",
+    "body": "Replying to [comment:7 lftabera]:\n> I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819\n\n\nI hope you do not mean exactly what you wrote!",
     "created_at": "2010-08-27T11:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -297,6 +292,7 @@ archive/issue_comments_083963.json:
 Replying to [comment:7 lftabera]:
 > I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819
 
+
 I hope you do not mean exactly what you wrote!
 
 
@@ -306,7 +302,7 @@ I hope you do not mean exactly what you wrote!
 archive/issue_comments_083964.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:7 lftabera]:\n> > I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819\n> \n> I hope you do not mean exactly what you wrote!\n\nWhat do you exactly mean? I think this is the correct wayy to go. The problem may be solved by a workaround on weak_popov_form, but surely will appear on other instances of fields or other methods that may be added in the future.",
+    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:7 lftabera]:\n> > I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819\n\n> \n> I hope you do not mean exactly what you wrote!\n\n\nWhat do you exactly mean? I think this is the correct wayy to go. The problem may be solved by a workaround on weak_popov_form, but surely will appear on other instances of fields or other methods that may be added in the future.",
     "created_at": "2010-09-01T07:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -318,8 +314,10 @@ archive/issue_comments_083964.json:
 Replying to [comment:8 cremona]:
 > Replying to [comment:7 lftabera]:
 > > I have added a new bug dealing with the issue of lcm. So this bug now depends on #9819
+
 > 
 > I hope you do not mean exactly what you wrote!
+
 
 What do you exactly mean? I think this is the correct wayy to go. The problem may be solved by a workaround on weak_popov_form, but surely will appear on other instances of fields or other methods that may be added in the future.
 
@@ -465,7 +463,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083971.json:
 ```json
 {
-    "body": "failed on coverage for both files \n\n./sage -coverage sage/rings/polynomial/multi_polynomial.pyx\n----------------------------------------------------------------------\nsage/rings/polynomial/multi_polynomial.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/rings/polynomial/multi_polynomial.pyx: 89% (33 of 37)\n\nMissing documentation:\n* is_MPolynomial(x):\n* _polynomial_(self, R):\n* __hash__(self):\n\n\nMissing doctests:\n* truncate(self, var, n):\n\n----------------------------------------------------------------------\n\n./sage -coverage sage/matrix/matrix2.pyx ----------------------------------------------------------------------\nsage/matrix/matrix2.pyx\nSCORE sage/matrix/matrix2.pyx: 92% (104 of 112)\n\nMissing documentation:\n* _row_ambient_module(self, base_ring=None):\n* _column_ambient_module(self):\n* _decomposition_using_kernels(self, is_diagonalizable=False, dual=False):\n\n\nMissing doctests:\n* _decomposition_spin_generic(self, is_diagonalizable=False):\n* eigenspaces(self, var='a', even_if_inexact=None):\n* _echelon_classical(self):\n* _cholesky_decomposition_(self):\n* cmp_pivots(x,y):\n\n----------------------------------------------------------------------",
+    "body": "failed on coverage for both files \n\n./sage -coverage sage/rings/polynomial/multi_polynomial.pyx\n\n---\nsage/rings/polynomial/multi_polynomial.pyx\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE sage/rings/polynomial/multi_polynomial.pyx: 89% (33 of 37)\n\nMissing documentation:\n* is_MPolynomial(x):\n* _polynomial_(self, R):\n* __hash__(self):\n\n\nMissing doctests:\n* truncate(self, var, n):\n\n---\n\n./sage -coverage sage/matrix/matrix2.pyx ----------------------------------------------------------------------\nsage/matrix/matrix2.pyx\nSCORE sage/matrix/matrix2.pyx: 92% (104 of 112)\n\nMissing documentation:\n* _row_ambient_module(self, base_ring=None):\n* _column_ambient_module(self):\n* _decomposition_using_kernels(self, is_diagonalizable=False, dual=False):\n\n\nMissing doctests:\n* _decomposition_spin_generic(self, is_diagonalizable=False):\n* eigenspaces(self, var='a', even_if_inexact=None):\n* _echelon_classical(self):\n* _cholesky_decomposition_(self):\n* cmp_pivots(x,y):\n\n---",
     "created_at": "2011-01-08T02:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
@@ -477,7 +475,8 @@ archive/issue_comments_083971.json:
 failed on coverage for both files 
 
 ./sage -coverage sage/rings/polynomial/multi_polynomial.pyx
-----------------------------------------------------------------------
+
+---
 sage/rings/polynomial/multi_polynomial.pyx
 ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE sage/rings/polynomial/multi_polynomial.pyx: 89% (33 of 37)
@@ -491,7 +490,7 @@ Missing documentation:
 Missing doctests:
 * truncate(self, var, n):
 
-----------------------------------------------------------------------
+---
 
 ./sage -coverage sage/matrix/matrix2.pyx ----------------------------------------------------------------------
 sage/matrix/matrix2.pyx
@@ -510,7 +509,7 @@ Missing doctests:
 * _cholesky_decomposition_(self):
 * cmp_pivots(x,y):
 
-----------------------------------------------------------------------
+---
 
 
 

@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_061493.json:
 ```json
 {
-    "body": "Right now this doesn't quite work: your sage-latest-online-version prints things with \".spkg\" on the end, and that confuses sage-spkg. One fix is to change the line\n\n```\nv = list(set([x.strip() for x in r if x.endswith('.spkg')]))\n```\n\nto\n\n```\nv = list(set([x.strip()[:-5] for x in r if x.endswith('.spkg')]))\n```\n\nto strip off the .spkg at the end.\n\nI'll work on a review this weekend, I hope.",
+    "body": "Right now this doesn't quite work: your sage-latest-online-version prints things with \".spkg\" on the end, and that confuses sage-spkg. One fix is to change the line\n\n```\nv = list(set([x.strip() for x in r if x.endswith('.spkg')]))\n```\nto\n\n```\nv = list(set([x.strip()[:-5] for x in r if x.endswith('.spkg')]))\n```\nto strip off the .spkg at the end.\n\nI'll work on a review this weekend, I hope.",
     "created_at": "2009-10-30T09:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -101,13 +101,11 @@ Right now this doesn't quite work: your sage-latest-online-version prints things
 ```
 v = list(set([x.strip() for x in r if x.endswith('.spkg')]))
 ```
-
 to
 
 ```
 v = list(set([x.strip()[:-5] for x in r if x.endswith('.spkg')]))
 ```
-
 to strip off the .spkg at the end.
 
 I'll work on a review this weekend, I hope.
@@ -175,7 +173,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061497.json:
 ```json
 {
-    "body": "I'm looking at the proposed sage-latest-online-package script and have some comments.\n\nI don't really like the 'list.tmp' temporary file business. It's nice to check if the user has the permissions to upgrade, but I think doing so should be the job of whatever actually does the upgrade. The name of the script implies that it tells you the latest online package name, and I'd like to see it do *only* that.\n\nI see that urlretrieve always uses a temporary file automatically (which gets deleted automatically), so perhaps we could do the first part of spkg_list like so:\n\n```\nweb_url = \"%s/%s\"%(PKG_SERVER, url)\nfn = urllib.urlretrieve(web_url)[0]\nr = open(fn).read()\n[etc]\n```\n\n\nAlso, when you build the list of spkgs, why do list(set(..)), then sort the list? The listings are alphabetized anyway, and if we run into a duplicate, the script will exit on the first occurrence anyway. It looks like just this will be fine:\n\n```\nreturn [x.strip()[:-5] for x in r if x.endswith('.spkg')]\n```\n\ninstead of \n\n```\nv = list(set(...))\nv.sort\nreturn v\n```\n\n\nWith the above changes, the script seems to work fine. I'd like to know if anyone uses a nonstandard SAGE_SERVER so we can make sure the script still works for such cases.",
+    "body": "I'm looking at the proposed sage-latest-online-package script and have some comments.\n\nI don't really like the 'list.tmp' temporary file business. It's nice to check if the user has the permissions to upgrade, but I think doing so should be the job of whatever actually does the upgrade. The name of the script implies that it tells you the latest online package name, and I'd like to see it do *only* that.\n\nI see that urlretrieve always uses a temporary file automatically (which gets deleted automatically), so perhaps we could do the first part of spkg_list like so:\n\n```\nweb_url = \"%s/%s\"%(PKG_SERVER, url)\nfn = urllib.urlretrieve(web_url)[0]\nr = open(fn).read()\n[etc]\n```\n\nAlso, when you build the list of spkgs, why do list(set(..)), then sort the list? The listings are alphabetized anyway, and if we run into a duplicate, the script will exit on the first occurrence anyway. It looks like just this will be fine:\n\n```\nreturn [x.strip()[:-5] for x in r if x.endswith('.spkg')]\n```\ninstead of \n\n```\nv = list(set(...))\nv.sort\nreturn v\n```\n\nWith the above changes, the script seems to work fine. I'd like to know if anyone uses a nonstandard SAGE_SERVER so we can make sure the script still works for such cases.",
     "created_at": "2009-11-04T02:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -197,13 +195,11 @@ r = open(fn).read()
 [etc]
 ```
 
-
 Also, when you build the list of spkgs, why do list(set(..)), then sort the list? The listings are alphabetized anyway, and if we run into a duplicate, the script will exit on the first occurrence anyway. It looks like just this will be fine:
 
 ```
 return [x.strip()[:-5] for x in r if x.endswith('.spkg')]
 ```
-
 instead of 
 
 ```
@@ -211,7 +207,6 @@ v = list(set(...))
 v.sort
 return v
 ```
-
 
 With the above changes, the script seems to work fine. I'd like to know if anyone uses a nonstandard SAGE_SERVER so we can make sure the script still works for such cases.
 
@@ -222,7 +217,7 @@ With the above changes, the script seems to work fine. I'd like to know if anyon
 archive/issue_comments_061498.json:
 ```json
 {
-    "body": "Harald Schilly says that each subdirectory of packages has a \"list\" file; for example, http://sagemath.org/packages/standard/list which simplifies the script even more (presuming we can depend on the \"list\" file being present). Something like this should be okay:\n\n```\nfn, hdrs = urllib.urlretrieve(url + '/list')\nspkgs = open(fn).read().splitlines()\nif spkgs[0].endswith('.spkg'):\n    return spkgs\n```\n\nIf you get a 404, the first line will be some html and won't be a string ending in \".spkg\".",
+    "body": "Harald Schilly says that each subdirectory of packages has a \"list\" file; for example, http://sagemath.org/packages/standard/list which simplifies the script even more (presuming we can depend on the \"list\" file being present). Something like this should be okay:\n\n```\nfn, hdrs = urllib.urlretrieve(url + '/list')\nspkgs = open(fn).read().splitlines()\nif spkgs[0].endswith('.spkg'):\n    return spkgs\n```\nIf you get a 404, the first line will be some html and won't be a string ending in \".spkg\".",
     "created_at": "2009-11-04T07:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -239,7 +234,6 @@ spkgs = open(fn).read().splitlines()
 if spkgs[0].endswith('.spkg'):
     return spkgs
 ```
-
 If you get a 404, the first line will be some html and won't be a string ending in ".spkg".
 
 
@@ -249,7 +243,7 @@ If you get a 404, the first line will be some html and won't be a string ending 
 archive/issue_comments_061499.json:
 ```json
 {
-    "body": "Another idea: use urllib2.urlopen (http://docs.python.org/library/urllib2.html#urllib2.urlopen) which throws an HTTPError when we don't find the list, and doesn't use any temporary files at all.\n\n```\ntry:\n  data = urllib2.urlopen(some_url)\nexcept HTTPError:\n  # can explicitly check for a 404 if we want\n  print \"couldn't find it\"\n  sys.exit(whatever)\nreturn data.read().splitlines()\n```\n",
+    "body": "Another idea: use urllib2.urlopen (http://docs.python.org/library/urllib2.html#urllib2.urlopen) which throws an HTTPError when we don't find the list, and doesn't use any temporary files at all.\n\n```\ntry:\n  data = urllib2.urlopen(some_url)\nexcept HTTPError:\n  # can explicitly check for a 404 if we want\n  print \"couldn't find it\"\n  sys.exit(whatever)\nreturn data.read().splitlines()\n```",
     "created_at": "2009-11-04T07:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -269,7 +263,6 @@ except HTTPError:
   sys.exit(whatever)
 return data.read().splitlines()
 ```
-
 
 
 
@@ -370,7 +363,7 @@ Hrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be up
 archive/issue_comments_061505.json:
 ```json
 {
-    "body": "Replying to [comment:9 ddrake]:\n> Hrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.\n\nSorry about that. I have posted the actual patch now.",
+    "body": "Replying to [comment:9 ddrake]:\n> Hrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.\n\n\nSorry about that. I have posted the actual patch now.",
     "created_at": "2009-11-12T11:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -381,6 +374,7 @@ archive/issue_comments_061505.json:
 
 Replying to [comment:9 ddrake]:
 > Hrm, I think attachment:rac_7355-sage-i-no-version.3.patch was supposed to be uploaded to another ticket -- I see a one-line patch to `sagenb/data/sage/html/worksheet/worksheet.html`.
+
 
 Sorry about that. I have posted the actual patch now.
 
@@ -521,7 +515,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061513.json:
 ```json
 {
-    "body": "You have to change the license from \n\n```\n \t6\t# License: GPLv2 \n```\n\nto \n\n```\n\n \t6\t# License: GPLv2+ = GPLv2 or any later version at the user's option\n```\n",
+    "body": "You have to change the license from \n\n```\n \t6\t# License: GPLv2 \n```\nto \n\n```\n\n \t6\t# License: GPLv2+ = GPLv2 or any later version at the user's option\n```",
     "created_at": "2009-11-14T04:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7355",
     "type": "issue_comment",
@@ -535,14 +529,12 @@ You have to change the license from
 ```
  	6	# License: GPLv2 
 ```
-
 to 
 
 ```
 
  	6	# License: GPLv2+ = GPLv2 or any later version at the user's option
 ```
-
 
 
 

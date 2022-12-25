@@ -79,7 +79,7 @@ archive/issue_events_010084.json:
 archive/issue_comments_032904.json:
 ```json
 {
-    "body": "Replying to [comment:1 bump]:\n> I think the file weyl_characters.py should be converted to Cython. The single most computationally intensive thing is the Freudenthal multiplicity formula (which is invoked a lot).\n\nHi Dan,\n\nthat sounds fine to me, but we should do that on another ticket post Sage 3.2.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 bump]:\n> I think the file weyl_characters.py should be converted to Cython. The single most computationally intensive thing is the Freudenthal multiplicity formula (which is invoked a lot).\n\n\nHi Dan,\n\nthat sounds fine to me, but we should do that on another ticket post Sage 3.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T00:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4464",
     "type": "issue_comment",
@@ -90,6 +90,7 @@ archive/issue_comments_032904.json:
 
 Replying to [comment:1 bump]:
 > I think the file weyl_characters.py should be converted to Cython. The single most computationally intensive thing is the Freudenthal multiplicity formula (which is invoked a lot).
+
 
 Hi Dan,
 

@@ -3,7 +3,7 @@
 archive/issues_008330.json:
 ```json
 {
-    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n\n```\n```\n\n\nIt should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n```\n```\n\nIt should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
     "created_at": "2010-02-22T21:23:20Z",
     "labels": [
         "component: graph theory",
@@ -24,10 +24,8 @@ Keywords: BipartiteGraph
 
 BipartiteGraph needs to hook delete_vertex() and delete_vertices().
 
-
 ```
 ```
-
 
 It should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.
 

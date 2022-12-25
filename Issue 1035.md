@@ -3,7 +3,7 @@
 archive/issues_001035.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nClement wrote on [linbox-devel]:\n\n\n```\nI forgot to mention that a new version of Givaro has been released, in\norder to comply with the design changes due to gcc-4.2 support.\nYou can get it at the address:\n\nhttp://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1035\n\n",
+    "body": "Assignee: @williamstein\n\nClement wrote on [linbox-devel]:\n\n```\nI forgot to mention that a new version of Givaro has been released, in\norder to comply with the design changes due to gcc-4.2 support.\nYou can get it at the address:\n\nhttp://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1035\n\n",
     "created_at": "2007-10-30T15:17:16Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 Clement wrote on [linbox-devel]:
 
-
 ```
 I forgot to mention that a new version of Givaro has been released, in
 order to comply with the design changes due to gcc-4.2 support.
@@ -28,7 +27,6 @@ You can get it at the address:
 
 http://www.cs.uwaterloo.ca/~cpernet/givaro-3.2.8.tar.gz
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1035
 

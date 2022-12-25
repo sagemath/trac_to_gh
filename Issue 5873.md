@@ -134,7 +134,7 @@ The matplotlib spkg up at #9202 should take care of the remaining issue in this 
 archive/issue_comments_046293.json:
 ```json
 {
-    "body": "Replying to [comment:3 jason]:\n> The matplotlib spkg up at #9202 should take care of the remaining issue in this patch (by prepending the SAGE_LOCAL directory no matter what the platform).  Can you check to see if #9202 fixes things?\n\nAny thoughts about this Peter? I noticed you created (or at least edited) a wiki page about the FreeBSD port, and still reference this old patch, which is probably no longer needed. \n\nDave",
+    "body": "Replying to [comment:3 jason]:\n> The matplotlib spkg up at #9202 should take care of the remaining issue in this patch (by prepending the SAGE_LOCAL directory no matter what the platform).  Can you check to see if #9202 fixes things?\n\n\nAny thoughts about this Peter? I noticed you created (or at least edited) a wiki page about the FreeBSD port, and still reference this old patch, which is probably no longer needed. \n\nDave",
     "created_at": "2010-07-13T10:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -145,6 +145,7 @@ archive/issue_comments_046293.json:
 
 Replying to [comment:3 jason]:
 > The matplotlib spkg up at #9202 should take care of the remaining issue in this patch (by prepending the SAGE_LOCAL directory no matter what the platform).  Can you check to see if #9202 fixes things?
+
 
 Any thoughts about this Peter? I noticed you created (or at least edited) a wiki page about the FreeBSD port, and still reference this old patch, which is probably no longer needed. 
 
@@ -193,7 +194,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_046296.json:
 ```json
 {
-    "body": "Replying to [comment:5 pjeremy]:\n> Unfortunately, a variant of this patch is still needed to support FreeBSD later than FreeBSD6.  Whilst #9202 means prepending SAGE_LOCAL should no longer be necessary, additional OS-related lines are still needed to support recent versions of FreeBSD.\n\nIf you wish to create one, I'll try to review it reasonably quickly. It makes review a lot easier if you can include things inside \n\n\n``` \n#ifdef FREEBSD \n#endif\n```\n\n\nor if appropriate \n\n\n```\n#ifdef HAVE_BUGGY_GCC_ON_FREEBSD\n#undef putchar\n#endif\n```\n\nor similar. Otherwise, it requires the reviewer to have a much deeper knowledge of the code to evaluate if the changes are desirable or not. If it can be seen the changes only affect FreeBSD, then it will be much easier to get a positive review. That's been my experience with Solaris and OpenSolaris related problems. \n\n\n\nDave",
+    "body": "Replying to [comment:5 pjeremy]:\n> Unfortunately, a variant of this patch is still needed to support FreeBSD later than FreeBSD6.  Whilst #9202 means prepending SAGE_LOCAL should no longer be necessary, additional OS-related lines are still needed to support recent versions of FreeBSD.\n\n\nIf you wish to create one, I'll try to review it reasonably quickly. It makes review a lot easier if you can include things inside \n\n``` \n#ifdef FREEBSD \n#endif\n```\n\nor if appropriate \n\n```\n#ifdef HAVE_BUGGY_GCC_ON_FREEBSD\n#undef putchar\n#endif\n```\nor similar. Otherwise, it requires the reviewer to have a much deeper knowledge of the code to evaluate if the changes are desirable or not. If it can be seen the changes only affect FreeBSD, then it will be much easier to get a positive review. That's been my experience with Solaris and OpenSolaris related problems. \n\n\n\nDave",
     "created_at": "2010-07-13T20:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -205,24 +206,21 @@ archive/issue_comments_046296.json:
 Replying to [comment:5 pjeremy]:
 > Unfortunately, a variant of this patch is still needed to support FreeBSD later than FreeBSD6.  Whilst #9202 means prepending SAGE_LOCAL should no longer be necessary, additional OS-related lines are still needed to support recent versions of FreeBSD.
 
-If you wish to create one, I'll try to review it reasonably quickly. It makes review a lot easier if you can include things inside 
 
+If you wish to create one, I'll try to review it reasonably quickly. It makes review a lot easier if you can include things inside 
 
 ``` 
 #ifdef FREEBSD 
 #endif
 ```
 
-
 or if appropriate 
-
 
 ```
 #ifdef HAVE_BUGGY_GCC_ON_FREEBSD
 #undef putchar
 #endif
 ```
-
 or similar. Otherwise, it requires the reviewer to have a much deeper knowledge of the code to evaluate if the changes are desirable or not. If it can be seen the changes only affect FreeBSD, then it will be much easier to get a positive review. That's been my experience with Solaris and OpenSolaris related problems. 
 
 
@@ -272,7 +270,7 @@ Point 0 has been reported upstream as https://sourceforge.net/tracker/?func=deta
 archive/issue_comments_046299.json:
 ```json
 {
-    "body": "Replying to [comment:7 pjeremy]:\n> Point 0 has been reported upstream as https://sourceforge.net/tracker/?func=detail&aid=3031051&group_id=80706&atid=560722 and an updated patch (not yet converted to spkg) uploaded.\nUnfortunately, this link no longer works, as matplotlib has moved its bug tracker to Github.  Pleasantly, the [ticket](https://github.com/matplotlib/matplotlib/issues/225) is still there.  Sadly, the patch appears to have been lost there, though it's still here.",
+    "body": "Replying to [comment:7 pjeremy]:\n> Point 0 has been reported upstream as https://sourceforge.net/tracker/?func=detail&aid=3031051&group_id=80706&atid=560722 and an updated patch (not yet converted to spkg) uploaded.\n\nUnfortunately, this link no longer works, as matplotlib has moved its bug tracker to Github.  Pleasantly, the [ticket](https://github.com/matplotlib/matplotlib/issues/225) is still there.  Sadly, the patch appears to have been lost there, though it's still here.",
     "created_at": "2011-08-19T16:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -283,6 +281,7 @@ archive/issue_comments_046299.json:
 
 Replying to [comment:7 pjeremy]:
 > Point 0 has been reported upstream as https://sourceforge.net/tracker/?func=detail&aid=3031051&group_id=80706&atid=560722 and an updated patch (not yet converted to spkg) uploaded.
+
 Unfortunately, this link no longer works, as matplotlib has moved its bug tracker to Github.  Pleasantly, the [ticket](https://github.com/matplotlib/matplotlib/issues/225) is still there.  Sadly, the patch appears to have been lost there, though it's still here.
 
 
@@ -461,7 +460,7 @@ I am going to have to say that I don't know why the FreeBSD port of sage doesn't
 archive/issue_comments_046308.json:
 ```json
 {
-    "body": "TLDR: you don't need this patch.\n\nThe mpl `setupext.py` code in question gets used when there is not an entry for `basedirlist` in `setup.cfg`, in which case it'll grab it from this pre-defined `basedir` dictionary using `sys.platform` as they key. From what I see that's checked into hg for SAGE, you do define `basedirlist` in `setup.cfg`, which is why this patch is un-necessary. The code is in the SPKG `matplotlib.../make-setup-config.py:7`\n\n\n\n```\nconfig.set('directories', 'basedirlist', os.environ['SAGE_LOCAL'])\n```\n\n\n\nwhich is why this patch is not needed for SPKG matplotlib being built on **any** platform.\n\nFrom what I understand from the discussion at [Python Bug #12326](http://bugs.python.org/issue12326), it seems like we (MPL) should not have been using `sys.platform` in the first place for making these decisions (but given the somewhat exotic nature of the platforms which have exceptions there now, it's best to remain conservative about re-writing that portion of the code to use something like the `platform` modules). But to reiterate, the approach taken in the SPKG bypasses this fragility for SAGE that is completely platform independent.",
+    "body": "TLDR: you don't need this patch.\n\nThe mpl `setupext.py` code in question gets used when there is not an entry for `basedirlist` in `setup.cfg`, in which case it'll grab it from this pre-defined `basedir` dictionary using `sys.platform` as they key. From what I see that's checked into hg for SAGE, you do define `basedirlist` in `setup.cfg`, which is why this patch is un-necessary. The code is in the SPKG `matplotlib.../make-setup-config.py:7`\n\n\n```\nconfig.set('directories', 'basedirlist', os.environ['SAGE_LOCAL'])\n```\n\n\nwhich is why this patch is not needed for SPKG matplotlib being built on **any** platform.\n\nFrom what I understand from the discussion at [Python Bug #12326](http://bugs.python.org/issue12326), it seems like we (MPL) should not have been using `sys.platform` in the first place for making these decisions (but given the somewhat exotic nature of the platforms which have exceptions there now, it's best to remain conservative about re-writing that portion of the code to use something like the `platform` modules). But to reiterate, the approach taken in the SPKG bypasses this fragility for SAGE that is completely platform independent.",
     "created_at": "2012-07-03T20:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
@@ -475,11 +474,9 @@ TLDR: you don't need this patch.
 The mpl `setupext.py` code in question gets used when there is not an entry for `basedirlist` in `setup.cfg`, in which case it'll grab it from this pre-defined `basedir` dictionary using `sys.platform` as they key. From what I see that's checked into hg for SAGE, you do define `basedirlist` in `setup.cfg`, which is why this patch is un-necessary. The code is in the SPKG `matplotlib.../make-setup-config.py:7`
 
 
-
 ```
 config.set('directories', 'basedirlist', os.environ['SAGE_LOCAL'])
 ```
-
 
 
 which is why this patch is not needed for SPKG matplotlib being built on **any** platform.

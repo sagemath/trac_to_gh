@@ -50,7 +50,7 @@ archive/issue_events_000190.json:
 archive/issue_comments_000450.json:
 ```json
 {
-    "body": "I asked on the mercurial mailing list, and got the following prompt reply:\n \n\n```\nhttp://sage.math.washington.edu/sage/hg/sage-main?cmd=manifest;manifest=-1;path=/sage/\n }}}\nDavid Harvey",
+    "body": "I asked on the mercurial mailing list, and got the following prompt reply:\n \n```\nhttp://sage.math.washington.edu/sage/hg/sage-main?cmd=manifest;manifest=-1;path=/sage/\n }}}\nDavid Harvey",
     "created_at": "2006-09-29T14:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/94",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ archive/issue_comments_000450.json:
 
 I asked on the mercurial mailing list, and got the following prompt reply:
  
-
 ```
 http://sage.math.washington.edu/sage/hg/sage-main?cmd=manifest;manifest=-1;path=/sage/
  }}}

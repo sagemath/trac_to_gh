@@ -3,7 +3,7 @@
 archive/issues_002624.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
+    "body": "Assignee: @garyfurnish\n\nOops: \n\n```\n./sage -tp -long devel/sage/sage/plot/plot.py\nGlobal iterations: 1\nFile iterations: 1\nTeX files: 0\nUsage: sage -t <files or directories>.\nFor more information, type 'sage -help'.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2624\n\n",
     "created_at": "2008-03-21T00:46:53Z",
     "labels": [
         "component: doctest coverage",
@@ -28,7 +28,6 @@ TeX files: 0
 Usage: sage -t <files or directories>.
 For more information, type 'sage -help'.
 ```
-
 
 
 
@@ -273,7 +272,7 @@ Changing status from new to assigned.
 archive/issue_comments_017987.json:
 ```json
 {
-    "body": "With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n\n```\ndrake@klee:/var/tmp/sage-4.1.2.alpha2$ ./sage -tp fjfjfj \nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 0 files \n \n----------------------------------------------------------------------\nAll tests passed!\nTimings have been updated.\nTotal time for all tests: 0.1 seconds\n```\n\nAlso, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)",
+    "body": "With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n\n```\ndrake@klee:/var/tmp/sage-4.1.2.alpha2$ ./sage -tp fjfjfj \nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 0 files \n \n----------------------------------------------------------------------\nAll tests passed!\nTimings have been updated.\nTotal time for all tests: 0.1 seconds\n```\nAlso, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)",
     "created_at": "2009-09-23T01:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -296,7 +295,6 @@ All tests passed!
 Timings have been updated.
 Total time for all tests: 0.1 seconds
 ```
-
 Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)
 
 
@@ -306,7 +304,7 @@ Also, when it makes an assumption about the number of threads, I'd like it to pr
 archive/issue_comments_017988.json:
 ```json
 {
-    "body": "> With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n\nI feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:\n\n```\n               else:\n                    continue # prefer silence to: raise TypeError, \"Unknown File %s\" % F\n```\n\n\n> Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)\n\nThat's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.",
+    "body": "> With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n\n\nI feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:\n\n```\n               else:\n                    continue # prefer silence to: raise TypeError, \"Unknown File %s\" % F\n```\n\n> Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)\n\n\nThat's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.",
     "created_at": "2009-09-23T02:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -317,6 +315,7 @@ archive/issue_comments_017988.json:
 
 > With this patch, when I do something like "sage -tp fjfjfjfjfj", it doesn't tell me that I gave it a bad file:
 
+
 I feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:
 
 ```
@@ -324,8 +323,8 @@ I feel as though this belongs in another ticket.  For what it's worth, previous 
                     continue # prefer silence to: raise TypeError, "Unknown File %s" % F
 ```
 
-
 > Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)
+
 
 That's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.
 
@@ -336,7 +335,7 @@ That's easy enough to change; see the new patch.  This version also sets numthre
 archive/issue_comments_017989.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> > With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n> \n> I feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:\n> {{{\n>                else:\n>                     continue # prefer silence to: raise TypeError, \"Unknown File %s\" % F\n> }}}\n\nOkay, that does look like another ticket.\n\n> > Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)\n> \n> That's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.\n\nThose look like good changes. Magic 8-ball says...positive review likely.",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> > With this patch, when I do something like \"sage -tp fjfjfjfjfj\", it doesn't tell me that I gave it a bad file:\n\n> \n> I feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:\n> \n> ```\n>                else:\n>                     continue # prefer silence to: raise TypeError, \"Unknown File %s\" % F\n> ```\n\n\nOkay, that does look like another ticket.\n\n> > Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)\n\n> \n> That's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.\n\n\nThose look like good changes. Magic 8-ball says...positive review likely.",
     "created_at": "2009-09-23T02:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -347,18 +346,23 @@ archive/issue_comments_017989.json:
 
 Replying to [comment:8 jhpalmieri]:
 > > With this patch, when I do something like "sage -tp fjfjfjfjfj", it doesn't tell me that I gave it a bad file:
+
 > 
 > I feel as though this belongs in another ticket.  For what it's worth, previous authors of the file seem to have made this decision intentionally:
-> {{{
+> 
+> ```
 >                else:
 >                     continue # prefer silence to: raise TypeError, "Unknown File %s" % F
-> }}}
+> ```
+
 
 Okay, that does look like another ticket.
 
 > > Also, when it makes an assumption about the number of threads, I'd like it to print that it's using 1 thread. (Mostly for my own reassurance.)
+
 > 
 > That's easy enough to change; see the new patch.  This version also sets numthreads to be no more than the number of files.
+
 
 Those look like good changes. Magic 8-ball says...positive review likely.
 
@@ -389,7 +393,7 @@ Oops, there's a typo: `numthreads = min(numthreads, len(files))` should be *afte
 archive/issue_comments_017991.json:
 ```json
 {
-    "body": "Replying to [comment:10 ddrake]:\n> Oops, there's a typo\n\nGood catch.  Fixed in the new patch.",
+    "body": "Replying to [comment:10 ddrake]:\n> Oops, there's a typo\n\n\nGood catch.  Fixed in the new patch.",
     "created_at": "2009-09-23T05:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -400,6 +404,7 @@ archive/issue_comments_017991.json:
 
 Replying to [comment:10 ddrake]:
 > Oops, there's a typo
+
 
 Good catch.  Fixed in the new patch.
 
@@ -446,7 +451,7 @@ Attachment [trac_2624-ptest-scripts.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_017994.json:
 ```json
 {
-    "body": "Replying to [comment:10 ddrake]:\n> **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.\nWhen packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as\n\n* `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:\n {{{\n[mvngu`@`sage sage-4.1.2.alpha2]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n }}}\n* `install` becomes SAGE_ROOT/spkg/install --- The directory `SAGE_ROOT/spkg` is not tracked:\n {{{\n[mvngu`@`sage spkg]$ pwd\n/scratch/mvngu/release/sage-4.1.2.alpha2/spkg\n[mvngu`@`sage spkg]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n }}}\n* `spkg-install` becomes SAGE_ROOT/local/bin/sage-spkg-install --- The directory `SAGE_ROOT/local/bin` is indeed tracked.\n\nAs it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/local/bin/sage-spkg-install`. Changes for the other two files would need to be manually applied to the relevant files.",
+    "body": "Replying to [comment:10 ddrake]:\n> **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.\n\nWhen packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as\n\n* `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:\n {{{\n[mvngu`@`sage sage-4.1.2.alpha2]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n }}}\n* `install` becomes SAGE_ROOT/spkg/install --- The directory `SAGE_ROOT/spkg` is not tracked:\n {{{\n[mvngu`@`sage spkg]$ pwd\n/scratch/mvngu/release/sage-4.1.2.alpha2/spkg\n[mvngu`@`sage spkg]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n }}}\n* `spkg-install` becomes SAGE_ROOT/local/bin/sage-spkg-install --- The directory `SAGE_ROOT/local/bin` is indeed tracked.\n\nAs it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/local/bin/sage-spkg-install`. Changes for the other two files would need to be manually applied to the relevant files.",
     "created_at": "2009-09-25T04:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -457,6 +462,7 @@ archive/issue_comments_017994.json:
 
 Replying to [comment:10 ddrake]:
 > **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.
+
 When packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as
 
 * `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:
@@ -482,7 +488,7 @@ As it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/l
 archive/issue_comments_017995.json:
 ```json
 {
-    "body": "Replying to [comment:13 mvngu]:\n> Replying to [comment:10 ddrake]:\n> > **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.\n> When packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as\n> \n>  * `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:\n[snip]\n>  * `install` becomes SAGE_ROOT/spkg/install --- The directory `SAGE_ROOT/spkg` is not tracked:\n[snip]\n>  * `spkg-install` becomes SAGE_ROOT/local/bin/sage-spkg-install --- The directory `SAGE_ROOT/local/bin` is indeed tracked.\n> \n> As it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/local/bin/sage-spkg-install`. Changes for the other two files would need to be manually applied to the relevant files.\n\nOkay. It does seem weird that basic source files are not version controlled...but whatever. :)  For the purposes of this ticket, you just need to merge the patch to sage-ptest.",
+    "body": "Replying to [comment:13 mvngu]:\n> Replying to [comment:10 ddrake]:\n> > **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.\n\n> When packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as\n> \n> * `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:\n\n[snip]\n>  * `install` becomes SAGE_ROOT/spkg/install --- The directory `SAGE_ROOT/spkg` is not tracked:\n \n[snip]\n>  * `spkg-install` becomes SAGE_ROOT/local/bin/sage-spkg-install --- The directory `SAGE_ROOT/local/bin` is indeed tracked.\n \n> \n> As it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/local/bin/sage-spkg-install`. Changes for the other two files would need to be manually applied to the relevant files.\n\n\nOkay. It does seem weird that basic source files are not version controlled...but whatever. :)  For the purposes of this ticket, you just need to merge the patch to sage-ptest.",
     "created_at": "2009-09-25T05:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2624",
     "type": "issue_comment",
@@ -494,15 +500,20 @@ archive/issue_comments_017995.json:
 Replying to [comment:13 mvngu]:
 > Replying to [comment:10 ddrake]:
 > > **Release manager**: please check the files `COPYING.txt`, `install`, and `spkg-install` into the sage_scripts hg repo! Right now they're not tracked at all.
+
 > When packaging the Sage source tarball, the files `COPYING.txt`, `install`, and `spkg-install` all end up in the package `sage_scripts.x.y.z.spkg`. When building from source, those three files end up as
 > 
->  * `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:
+> * `COPYING.txt` becomes SAGE_ROOT/COPYING.txt --- The directory `SAGE_ROOT` is not tracked:
+
 [snip]
 >  * `install` becomes SAGE_ROOT/spkg/install --- The directory `SAGE_ROOT/spkg` is not tracked:
+ 
 [snip]
 >  * `spkg-install` becomes SAGE_ROOT/local/bin/sage-spkg-install --- The directory `SAGE_ROOT/local/bin` is indeed tracked.
+ 
 > 
 > As it now stand, the changes to `spkg-install` can be checked in to `SAGE_ROOT/local/bin/sage-spkg-install`. Changes for the other two files would need to be manually applied to the relevant files.
+
 
 Okay. It does seem weird that basic source files are not version controlled...but whatever. :)  For the purposes of this ticket, you just need to merge the patch to sage-ptest.
 

@@ -3,7 +3,7 @@
 archive/issues_003363.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nHi\nI just read the installation readme and built my own application to\nstart the sageserver:\n\nJust start the Apple-ScriptEditor and enter the following code:\n\ntell application \"Terminal\"\n        do script \"/Applications/sage/sage -notebook\"\nend tell\n\nWell, that's all. Now only save the script as a program-bundle. After\nthat, you can assign the .app file a nice icon and put it in your\ndock, click it, see firefox coming up and have fun.\n\nI'd propose that this app could be part of the sage-install\nbundle... ;-)\n\nHope, you like this tip\n\ngreeting,\nKai-Philipp \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3363\n\n",
+    "body": "Assignee: mabshoff\n\n```\nHi\nI just read the installation readme and built my own application to\nstart the sageserver:\n\nJust start the Apple-ScriptEditor and enter the following code:\n\ntell application \"Terminal\"\n        do script \"/Applications/sage/sage -notebook\"\nend tell\n\nWell, that's all. Now only save the script as a program-bundle. After\nthat, you can assign the .app file a nice icon and put it in your\ndock, click it, see firefox coming up and have fun.\n\nI'd propose that this app could be part of the sage-install\nbundle... ;-)\n\nHope, you like this tip\n\ngreeting,\nKai-Philipp \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3363\n\n",
     "created_at": "2008-06-04T16:23:07Z",
     "labels": [
         "component: distribution",
@@ -17,7 +17,6 @@ archive/issues_003363.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 Hi
@@ -42,7 +41,6 @@ Hope, you like this tip
 greeting,
 Kai-Philipp 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3363
 
@@ -107,7 +105,7 @@ archive/issue_events_007566.json:
 archive/issue_comments_023485.json:
 ```json
 {
-    "body": "On OS X, we can create an app bundle from a newly compiled source tarball:\n\n\n```\nexport SAGE_APP_BUNDLE=yes\n./sage -bdist version\n```\n\n\nSo close as invalid.",
+    "body": "On OS X, we can create an app bundle from a newly compiled source tarball:\n\n```\nexport SAGE_APP_BUNDLE=yes\n./sage -bdist version\n```\n\nSo close as invalid.",
     "created_at": "2010-06-12T18:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3363",
     "type": "issue_comment",
@@ -118,12 +116,10 @@ archive/issue_comments_023485.json:
 
 On OS X, we can create an app bundle from a newly compiled source tarball:
 
-
 ```
 export SAGE_APP_BUNDLE=yes
 ./sage -bdist version
 ```
-
 
 So close as invalid.
 

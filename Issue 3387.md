@@ -3,7 +3,7 @@
 archive/issues_003387.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage: x = (2^1000000 - 1) / (2^1000000)\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time z = Rational(y)\nCPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s\nWall time: 11.33\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3387\n\n",
+    "body": "Assignee: tbd\n\n```\nsage: x = (2^1000000 - 1) / (2^1000000)\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time z = Rational(y)\nCPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s\nWall time: 11.33\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3387\n\n",
     "created_at": "2008-06-09T22:19:45Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_003387.json:
 ```
 Assignee: tbd
 
-
 ```
 sage: x = (2^1000000 - 1) / (2^1000000)
 sage: time y = pari(x)
@@ -28,7 +27,6 @@ sage: time z = Rational(y)
 CPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s
 Wall time: 11.33
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3387
@@ -95,7 +93,7 @@ archive/issue_events_007639.json:
 archive/issue_comments_023663.json:
 ```json
 {
-    "body": "with this patch the situation is better:\n\n\n```\nsage: x = pari('(2^1000000 - 1) / (2^1000000)')\nsage: time y = Rational(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit('Rational(x)')\n625 loops, best of 3: 858 \u00b5s per loop\nsage: Rational(pari('x^2+1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/was/Desktop/movies/<ipython console> in <module>()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3321)()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4386)()\n\n/Users/was/Desktop/movies/integer.pyx in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5183)()\n\n/Users/was/Desktop/movies/gen.pyx in sage.libs.pari.gen.gen.__hex__ (sage/libs/pari/gen.c:5096)()\n\nTypeError: gen must be of PARI type t_INT\n```\n",
+    "body": "with this patch the situation is better:\n\n```\nsage: x = pari('(2^1000000 - 1) / (2^1000000)')\nsage: time y = Rational(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit('Rational(x)')\n625 loops, best of 3: 858 \u00b5s per loop\nsage: Rational(pari('x^2+1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/was/Desktop/movies/<ipython console> in <module>()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3321)()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4386)()\n\n/Users/was/Desktop/movies/integer.pyx in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5183)()\n\n/Users/was/Desktop/movies/gen.pyx in sage.libs.pari.gen.gen.__hex__ (sage/libs/pari/gen.c:5096)()\n\nTypeError: gen must be of PARI type t_INT\n```",
     "created_at": "2008-06-09T22:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
@@ -105,7 +103,6 @@ archive/issue_comments_023663.json:
 ```
 
 with this patch the situation is better:
-
 
 ```
 sage: x = pari('(2^1000000 - 1) / (2^1000000)')
@@ -130,7 +127,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: gen must be of PARI type t_INT
 ```
-
 
 
 

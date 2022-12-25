@@ -103,7 +103,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091994.json:
 ```json
 {
-    "body": "\n```\n477c477,478\n< groups/perm_gps/partn_ref/refinement_graphs.pyx: 100% (8 of 8)\n---\n> groups/perm_gps/partn_ref/refinement_graphs.pyx: 100% (10 of 10)\n> groups/perm_gps/partn_ref/refinement_sets.pyx: 100% (3 of 3)\n1299,1300c1300,1301\n< Total number of functions:  28567\n< We need 1110 more function to get to 90% coverage.\n---\n> Total number of functions:  28572\n> We need 1109 more function to get to 90% coverage.\n```\n",
+    "body": "```\n477c477,478\n< groups/perm_gps/partn_ref/refinement_graphs.pyx: 100% (8 of 8)\n---\n> groups/perm_gps/partn_ref/refinement_graphs.pyx: 100% (10 of 10)\n> groups/perm_gps/partn_ref/refinement_sets.pyx: 100% (3 of 3)\n1299,1300c1300,1301\n< Total number of functions:  28567\n< We need 1110 more function to get to 90% coverage.\n---\n> Total number of functions:  28572\n> We need 1109 more function to get to 90% coverage.\n```",
     "created_at": "2012-01-22T01:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
@@ -111,7 +111,6 @@ archive/issue_comments_091994.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
-
 
 ```
 477c477,478
@@ -126,7 +125,6 @@ archive/issue_comments_091994.json:
 > Total number of functions:  28572
 > We need 1109 more function to get to 90% coverage.
 ```
-
 
 
 

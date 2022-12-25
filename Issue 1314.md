@@ -88,7 +88,7 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008255.json:
 ```json
 {
-    "body": "http://homepages.mcs.vuw.ac.nz/~djp/tutte/\n\nThis software could be pretty useful.... But I know nothing about license matters :\n\n\n--------------------------------------------------------------------------------\nThe majority of files are currently under the following simple and quite\nunrestrictive license:\n\n \"(C) Copyright David James Pearce and Gary Haggard, 2007.\n  Permission to copy, use, modify, sell and distribute this software\n  is granted provided this copyright notice appears in all copies.\n  This software is provided \"as is\" without express or implied\n  warranty, and with no claim as to its suitability for any purpose.\n\n  Email: david.pearce`@`mcs.vuw.ac.nz\"\n\nThis license may not be removed from any of the files in question.\n\nThis software makes use of Brendan McKay's excellent \"Nauty\" program\nfor determining (amongst other things) whether two graphs are\nisomorphic or not.  You can find more information about this program\nhere: http://cs.anu.edu.au/~bdm/nauty\n\nAll files from the Nauty program are located in the nauty/\nsubdirectory.  The following license applies to all files in the\nnauty/ directory (see nauty.h for more details):\n\n  \"Copyright (1984-2004) Brendan McKay.  All rights reserved.  Permission\n   is hereby given for use and/or distribution with the exception of\n   sale for profit or application with nontrivial military significance.\n   You must not remove this copyright notice, and you must document any\n   changes that you make to this program.\n   This software is subject to this copyright only, irrespective of\n   any copyright attached to any package of which this is a part.\n\n   This program is only provided \"as is\".  No responsibility will be taken\n   by the author, his employer or his pet rabbit for any misfortune which\n   befalls you because of its use.  I don't think it will delete all your\n   files, burn down your computer room or turn your children against you,\n   but if it does: stiff cheddar.  On the other hand, I very much welcome\n   bug reports, or at least I would if there were any bugs.\n                                                        RIP, 1989\n-----------------------------------------------------------------------------\n\nSo in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...",
+    "body": "http://homepages.mcs.vuw.ac.nz/~djp/tutte/\n\nThis software could be pretty useful.... But I know nothing about license matters :\n\n\n---\nThe majority of files are currently under the following simple and quite\nunrestrictive license:\n\n \"(C) Copyright David James Pearce and Gary Haggard, 2007.\n  Permission to copy, use, modify, sell and distribute this software\n  is granted provided this copyright notice appears in all copies.\n  This software is provided \"as is\" without express or implied\n  warranty, and with no claim as to its suitability for any purpose.\n\n  Email: david.pearce`@`mcs.vuw.ac.nz\"\n\nThis license may not be removed from any of the files in question.\n\nThis software makes use of Brendan McKay's excellent \"Nauty\" program\nfor determining (amongst other things) whether two graphs are\nisomorphic or not.  You can find more information about this program\nhere: http://cs.anu.edu.au/~bdm/nauty\n\nAll files from the Nauty program are located in the nauty/\nsubdirectory.  The following license applies to all files in the\nnauty/ directory (see nauty.h for more details):\n\n  \"Copyright (1984-2004) Brendan McKay.  All rights reserved.  Permission\n   is hereby given for use and/or distribution with the exception of\n   sale for profit or application with nontrivial military significance.\n   You must not remove this copyright notice, and you must document any\n   changes that you make to this program.\n   This software is subject to this copyright only, irrespective of\n   any copyright attached to any package of which this is a part.\n\n   This program is only provided \"as is\".  No responsibility will be taken\n   by the author, his employer or his pet rabbit for any misfortune which\n   befalls you because of its use.  I don't think it will delete all your\n   files, burn down your computer room or turn your children against you,\n   but if it does: stiff cheddar.  On the other hand, I very much welcome\n   bug reports, or at least I would if there were any bugs.\n                                                        RIP, 1989\n\n---\n\nSo in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...",
     "created_at": "2009-05-17T16:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ http://homepages.mcs.vuw.ac.nz/~djp/tutte/
 This software could be pretty useful.... But I know nothing about license matters :
 
 
---------------------------------------------------------------------------------
+---
 The majority of files are currently under the following simple and quite
 unrestrictive license:
 
@@ -140,7 +140,8 @@ nauty/ directory (see nauty.h for more details):
    but if it does: stiff cheddar.  On the other hand, I very much welcome
    bug reports, or at least I would if there were any bugs.
                                                         RIP, 1989
------------------------------------------------------------------------------
+
+---
 
 So in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...
 
@@ -151,7 +152,7 @@ So in the end it reads like the license is at least as GPL-uncompatible as Nauty
 archive/issue_comments_008256.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> So in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...\n\nNot really. Sage includes software which could be used to replace this functionality. We just need to get the *rest* of the software relicensed, if this is possible.",
+    "body": "Replying to [comment:3 ncohen]:\n> So in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...\n\n\nNot really. Sage includes software which could be used to replace this functionality. We just need to get the *rest* of the software relicensed, if this is possible.",
     "created_at": "2009-05-17T18:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -162,6 +163,7 @@ archive/issue_comments_008256.json:
 
 Replying to [comment:3 ncohen]:
 > So in the end it reads like the license is at least as GPL-uncompatible as Nauty's, and will then have to be included as an external software...
+
 
 Not really. Sage includes software which could be used to replace this functionality. We just need to get the *rest* of the software relicensed, if this is possible.
 
@@ -282,7 +284,7 @@ I had some old code from awhile back for computing this which I've attached, alo
 archive/issue_comments_008263.json:
 ```json
 {
-    "body": "Replying to [comment:12 mhansen]:\n\n> I had some old code from awhile back for computing this which I've attached, along with some commented out possible optimizations.  I think I remember when doing this in practice, avoiding copying the graph saved quite a bit of time (hence the unmerge function).\n\nmhansen, thanks for sharing this code.  Unfortunately, it does not seem to give the right answer for K_4:\n\nsage: G = graphs.[This is the Trac macro *CompleteGraph* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#CompleteGraph-macro)(4); G.allow_loops(true); G.allow_multiple_edges(true); tp = tutte_polynomial(G,x,y); tp\n\nx<sup>2</sup>*y<sup>2</sup> + x*y<sup>3</sup> + x<sup>3</sup> + x<sup>2</sup>*y + x*y<sup>2</sup> + x<sup>2</sup> + x*y\n\nThe actual Tutte polynomial of K4 is x<sup>3</sup> + 3*x<sup>2</sup> + y<sup>3</sup> + 4*x*y + 3*y<sup>2</sup> + 2*x + 2*y.  \n\nI currently do not see a way to implement the Tutte polynomial without making lots of copies of graphs, but maybe someone else can.",
+    "body": "Replying to [comment:12 mhansen]:\n\n> I had some old code from awhile back for computing this which I've attached, along with some commented out possible optimizations.  I think I remember when doing this in practice, avoiding copying the graph saved quite a bit of time (hence the unmerge function).\n\n\nmhansen, thanks for sharing this code.  Unfortunately, it does not seem to give the right answer for K_4:\n\nsage: G = graphs.[This is the Trac macro *CompleteGraph* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#CompleteGraph-macro)(4); G.allow_loops(true); G.allow_multiple_edges(true); tp = tutte_polynomial(G,x,y); tp\n\nx<sup>2</sup>*y<sup>2</sup> + x*y<sup>3</sup> + x<sup>3</sup> + x<sup>2</sup>*y + x*y<sup>2</sup> + x<sup>2</sup> + x*y\n\nThe actual Tutte polynomial of K4 is x<sup>3</sup> + 3*x<sup>2</sup> + y<sup>3</sup> + 4*x*y + 3*y<sup>2</sup> + 2*x + 2*y.  \n\nI currently do not see a way to implement the Tutte polynomial without making lots of copies of graphs, but maybe someone else can.",
     "created_at": "2012-07-13T15:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -294,6 +296,7 @@ archive/issue_comments_008263.json:
 Replying to [comment:12 mhansen]:
 
 > I had some old code from awhile back for computing this which I've attached, along with some commented out possible optimizations.  I think I remember when doing this in practice, avoiding copying the graph saved quite a bit of time (hence the unmerge function).
+
 
 mhansen, thanks for sharing this code.  Unfortunately, it does not seem to give the right answer for K_4:
 
@@ -436,7 +439,7 @@ Additionally, in the `tuttepolynomial.sage` code, you should probably be caching
 archive/issue_comments_008269.json:
 ```json
 {
-    "body": "Replying to [comment:17 mhansen]:\n> `x` and `y` should ideally be integer polynomials (i.e., `R.<x,y> = ZZ[]`) -- then you don't have to deal with manually \"expanding\".\n> \n\nI see now!  This makes it much better.  If we put R.<x,y> = ZZ[] as the first line in the Tutte polynomial code it does this for us.  Doing that shouldn't mess anything up, right?\n\n> Additionally, in the `tuttepolynomial.sage` code, you should probably be caching a canonical label of the graph -- see the `cache_key` method in my patch.\n\nWill do!",
+    "body": "Replying to [comment:17 mhansen]:\n> `x` and `y` should ideally be integer polynomials (i.e., `R.<x,y> = ZZ[]`) -- then you don't have to deal with manually \"expanding\".\n> \n\n\nI see now!  This makes it much better.  If we put R.<x,y> = ZZ[] as the first line in the Tutte polynomial code it does this for us.  Doing that shouldn't mess anything up, right?\n\n> Additionally, in the `tuttepolynomial.sage` code, you should probably be caching a canonical label of the graph -- see the `cache_key` method in my patch.\n\n\nWill do!",
     "created_at": "2012-07-15T21:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -449,9 +452,11 @@ Replying to [comment:17 mhansen]:
 > `x` and `y` should ideally be integer polynomials (i.e., `R.<x,y> = ZZ[]`) -- then you don't have to deal with manually "expanding".
 > 
 
+
 I see now!  This makes it much better.  If we put R.<x,y> = ZZ[] as the first line in the Tutte polynomial code it does this for us.  Doing that shouldn't mess anything up, right?
 
 > Additionally, in the `tuttepolynomial.sage` code, you should probably be caching a canonical label of the graph -- see the `cache_key` method in my patch.
+
 
 Will do!
 
@@ -534,7 +539,7 @@ tutte.sage works -- it just needs to be added as a patch, documented, etc.  I ha
 archive/issue_comments_008274.json:
 ```json
 {
-    "body": "Nice, perhaps I'll do that one time if you wish.\n\nBtw, there is a minor bug in tutte.sage. In the corner case \n\n\n```\n257     if G.num_edges() == 0:\n258         return 1\n```\n\n\nwe should actually still return a polynomial since otherwise:\n\n\n```\ntutte_polynomial(graphs.CompleteGraph(10).complement())(0,3)\n```\n\n\nwould break.",
+    "body": "Nice, perhaps I'll do that one time if you wish.\n\nBtw, there is a minor bug in tutte.sage. In the corner case \n\n```\n257     if G.num_edges() == 0:\n258         return 1\n```\n\nwe should actually still return a polynomial since otherwise:\n\n```\ntutte_polynomial(graphs.CompleteGraph(10).complement())(0,3)\n```\n\nwould break.",
     "created_at": "2013-05-05T14:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -547,20 +552,16 @@ Nice, perhaps I'll do that one time if you wish.
 
 Btw, there is a minor bug in tutte.sage. In the corner case 
 
-
 ```
 257     if G.num_edges() == 0:
 258         return 1
 ```
 
-
 we should actually still return a polynomial since otherwise:
-
 
 ```
 tutte_polynomial(graphs.CompleteGraph(10).complement())(0,3)
 ```
-
 
 would break.
 
@@ -571,7 +572,7 @@ would break.
 archive/issue_comments_008275.json:
 ```json
 {
-    "body": "Replying to [comment:24 azi]:\n> Btw, there is a minor bug in tutte.sage. In the corner case \n> \n> {{{\n> 257     if G.num_edges() == 0:\n> 258         return 1\n> }}}\n\nYep.  One of the things that helps a lot is being able to avoid copying the graph.  For the Tutte polynomial code, we just make one copy of the graph on the initial call, but never copy it afterward.  I found context managers useful to manage mutating the graph and restoring it.\n\nAlso, I think the edge selection strategy has a bit of an effect on the speed of the chromatic polynomial computation as well.",
+    "body": "Replying to [comment:24 azi]:\n> Btw, there is a minor bug in tutte.sage. In the corner case \n> \n> \n> ```\n> 257     if G.num_edges() == 0:\n> 258         return 1\n> ```\n\n\nYep.  One of the things that helps a lot is being able to avoid copying the graph.  For the Tutte polynomial code, we just make one copy of the graph on the initial call, but never copy it afterward.  I found context managers useful to manage mutating the graph and restoring it.\n\nAlso, I think the edge selection strategy has a bit of an effect on the speed of the chromatic polynomial computation as well.",
     "created_at": "2013-05-05T15:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -583,10 +584,12 @@ archive/issue_comments_008275.json:
 Replying to [comment:24 azi]:
 > Btw, there is a minor bug in tutte.sage. In the corner case 
 > 
-> {{{
+> 
+> ```
 > 257     if G.num_edges() == 0:
 > 258         return 1
-> }}}
+> ```
+
 
 Yep.  One of the things that helps a lot is being able to avoid copying the graph.  For the Tutte polynomial code, we just make one copy of the graph on the initial call, but never copy it afterward.  I found context managers useful to manage mutating the graph and restoring it.
 
@@ -619,7 +622,7 @@ Do you happen to have an idea where the fault for this could be?
 archive/issue_comments_008277.json:
 ```json
 {
-    "body": "Can you give some code to reproduce this?  I've been running code like\n\n\n```python\nfor g in graphs.nauty_geng(\"7\"):\n    print tutte_polynomial(g, x, y)\n```\n\n\nbut haven't been able to reproduce this.",
+    "body": "Can you give some code to reproduce this?  I've been running code like\n\n```python\nfor g in graphs.nauty_geng(\"7\"):\n    print tutte_polynomial(g, x, y)\n```\n\nbut haven't been able to reproduce this.",
     "created_at": "2013-05-11T08:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -630,12 +633,10 @@ archive/issue_comments_008277.json:
 
 Can you give some code to reproduce this?  I've been running code like
 
-
 ```python
 for g in graphs.nauty_geng("7"):
     print tutte_polynomial(g, x, y)
 ```
-
 
 but haven't been able to reproduce this.
 
@@ -646,7 +647,7 @@ but haven't been able to reproduce this.
 archive/issue_comments_008278.json:
 ```json
 {
-    "body": "Sure here is an example.\n\n\n```\nload tutte.sage\nc = 0 \nfor G in graphs.nauty_geng(\"13 39:39\"):\n    \n    if sorted(G.degree_sequence()) != sorted(G.complement().degree_sequence()):\n        c+=1\n        if tutte_polynomial(G,x,y) == tutte_polynomial(G.complement(),x,y):\n            print G.graph6_string()\n            from time import sleep\n            sleep(24*60*60)\n        if c % 1000 == 0:\n            print c\n```\n\n\nThe motivation of this code stems from an open problem that I am now working on.",
+    "body": "Sure here is an example.\n\n```\nload tutte.sage\nc = 0 \nfor G in graphs.nauty_geng(\"13 39:39\"):\n    \n    if sorted(G.degree_sequence()) != sorted(G.complement().degree_sequence()):\n        c+=1\n        if tutte_polynomial(G,x,y) == tutte_polynomial(G.complement(),x,y):\n            print G.graph6_string()\n            from time import sleep\n            sleep(24*60*60)\n        if c % 1000 == 0:\n            print c\n```\n\nThe motivation of this code stems from an open problem that I am now working on.",
     "created_at": "2013-05-11T08:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -656,7 +657,6 @@ archive/issue_comments_008278.json:
 ```
 
 Sure here is an example.
-
 
 ```
 load tutte.sage
@@ -672,7 +672,6 @@ for G in graphs.nauty_geng("13 39:39"):
         if c % 1000 == 0:
             print c
 ```
-
 
 The motivation of this code stems from an open problem that I am now working on.
 
@@ -913,7 +912,7 @@ What exactly is still required to be done? Also, is there a reason for renaming 
 archive/issue_comments_008290.json:
 ```json
 {
-    "body": "There is nothing like chrompoly, the function is called \n\n```\nG.chromatic_polynomial\n```\n\n\nWhat remains to be done: add explanations, and document every function. See the previous comments (see comments 34 and 35 in particular)",
+    "body": "There is nothing like chrompoly, the function is called \n\n```\nG.chromatic_polynomial\n```\n\nWhat remains to be done: add explanations, and document every function. See the previous comments (see comments 34 and 35 in particular)",
     "created_at": "2013-07-29T12:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -927,7 +926,6 @@ There is nothing like chrompoly, the function is called
 ```
 G.chromatic_polynomial
 ```
-
 
 What remains to be done: add explanations, and document every function. See the previous comments (see comments 34 and 35 in particular)
 
@@ -1056,7 +1054,7 @@ archive/issue_comments_008296.json:
 archive/issue_comments_008297.json:
 ```json
 {
-    "body": "Yep, I think this was before cached_function existed.  Anyway, you can add \"`@`sage_wraps(func)\" before \"def wrapper\" to make things nicer on that front.  I also feel that at the end of the tutte_polynomial function, we should add something like \n\n\n```\nif initial_call is True:\n    tutte_polynomial.cache.clear()\n```\n\n\nso that the cache is valid for only the computation of one \"tree\".  This does play bad with threads (which aren't used much).  It might be better to just manually pass the cache along as a default argument throughout the call tree.  I think that's probably best.",
+    "body": "Yep, I think this was before cached_function existed.  Anyway, you can add \"`@`sage_wraps(func)\" before \"def wrapper\" to make things nicer on that front.  I also feel that at the end of the tutte_polynomial function, we should add something like \n\n```\nif initial_call is True:\n    tutte_polynomial.cache.clear()\n```\n\nso that the cache is valid for only the computation of one \"tree\".  This does play bad with threads (which aren't used much).  It might be better to just manually pass the cache along as a default argument throughout the call tree.  I think that's probably best.",
     "created_at": "2013-10-03T08:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1067,12 +1065,10 @@ archive/issue_comments_008297.json:
 
 Yep, I think this was before cached_function existed.  Anyway, you can add "`@`sage_wraps(func)" before "def wrapper" to make things nicer on that front.  I also feel that at the end of the tutte_polynomial function, we should add something like 
 
-
 ```
 if initial_call is True:
     tutte_polynomial.cache.clear()
 ```
-
 
 so that the cache is valid for only the computation of one "tree".  This does play bad with threads (which aren't used much).  It might be better to just manually pass the cache along as a default argument throughout the call tree.  I think that's probably best.
 
@@ -1160,7 +1156,7 @@ archive/issue_events_003438.json:
 archive/issue_comments_008301.json:
 ```json
 {
-    "body": "> I have not taken care of the cache cleaning, as I do not know where to put the lines you suggested.\n\nAt the end of the block `if initial_call is True`, you can add the following :\n\n\n```\nans = tutte_polynomial(G, initial_call=False, edge_selector=edge_selector)\ntutte_polynomial.cache.clear()\nreturn ans\n```\n\n\nNathann",
+    "body": "> I have not taken care of the cache cleaning, as I do not know where to put the lines you suggested.\n\n\nAt the end of the block `if initial_call is True`, you can add the following :\n\n```\nans = tutte_polynomial(G, initial_call=False, edge_selector=edge_selector)\ntutte_polynomial.cache.clear()\nreturn ans\n```\n\nNathann",
     "created_at": "2013-10-16T15:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1171,15 +1167,14 @@ archive/issue_comments_008301.json:
 
 > I have not taken care of the cache cleaning, as I do not know where to put the lines you suggested.
 
-At the end of the block `if initial_call is True`, you can add the following :
 
+At the end of the block `if initial_call is True`, you can add the following :
 
 ```
 ans = tutte_polynomial(G, initial_call=False, edge_selector=edge_selector)
 tutte_polynomial.cache.clear()
 return ans
 ```
-
 
 Nathann
 
@@ -1298,7 +1293,7 @@ What does that mean ? `O_o`
 archive/issue_comments_008308.json:
 ```json
 {
-    "body": "This mean that somebody else has done the job for matroids.\n\n```\nsage: Matroid(graphs.PetersenGraph()).tutte_polynomial()\nx^9 + 6*x^8 + 21*x^7 + 56*x^6 + 12*x^5*y + y^6 + 114*x^5 + 70*x^4*y + 30*x^3*y^2 + 15*x^2*y^3 + 10*x*y^4 + 9*y^5 + 170*x^4 + 170*x^3*y + 105*x^2*y^2 + 65*x*y^3 + 35*y^4 + 180*x^3 + 240*x^2*y + 171*x*y^2 + 75*y^3 + 120*x^2 + 168*x*y + 84*y^2 + 36*x + 36*y\n```\n",
+    "body": "This mean that somebody else has done the job for matroids.\n\n```\nsage: Matroid(graphs.PetersenGraph()).tutte_polynomial()\nx^9 + 6*x^8 + 21*x^7 + 56*x^6 + 12*x^5*y + y^6 + 114*x^5 + 70*x^4*y + 30*x^3*y^2 + 15*x^2*y^3 + 10*x*y^4 + 9*y^5 + 170*x^4 + 170*x^3*y + 105*x^2*y^2 + 65*x*y^3 + 35*y^4 + 180*x^3 + 240*x^2*y + 171*x*y^2 + 75*y^3 + 120*x^2 + 168*x*y + 84*y^2 + 36*x + 36*y\n```",
     "created_at": "2014-01-07T11:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1313,7 +1308,6 @@ This mean that somebody else has done the job for matroids.
 sage: Matroid(graphs.PetersenGraph()).tutte_polynomial()
 x^9 + 6*x^8 + 21*x^7 + 56*x^6 + 12*x^5*y + y^6 + 114*x^5 + 70*x^4*y + 30*x^3*y^2 + 15*x^2*y^3 + 10*x*y^4 + 9*y^5 + 170*x^4 + 170*x^3*y + 105*x^2*y^2 + 65*x*y^3 + 35*y^4 + 180*x^3 + 240*x^2*y + 171*x*y^2 + 75*y^3 + 120*x^2 + 168*x*y + 84*y^2 + 36*x + 36*y
 ```
-
 
 
 
@@ -1523,7 +1517,7 @@ Edit - I just realized I forgot to move the ``@`_cache` to the internal function
 archive/issue_comments_008319.json:
 ```json
 {
-    "body": "Okay, ``@`cached_function` doesn't work because we can't pass a key function to it... (aside: I think such a feature would be quite useful) Back to the custom ``@`_cache`.\n\nWith my changes (including some other optimizations):\n\n```\nsage: P = graphs.PetersenGraph()\nsage: %timeit P.tutte_polynomial()\n1 loops, best of 3: 256 ms per loop\n```\n\nBefore:\n\n```\nsage: P = graphs.PetersenGraph()\nsage: %timeit P.tutte_polynomial()\n1000 loops, best of 3: 1.08 ms per loop\n```\n\n\nNow I'm currently perplexed...currently the best involves extra if statements, creation of parents, and unused arguments being passed. So we might just want to merge `6ef434e` instead. Still testing stuff...",
+    "body": "Okay, ``@`cached_function` doesn't work because we can't pass a key function to it... (aside: I think such a feature would be quite useful) Back to the custom ``@`_cache`.\n\nWith my changes (including some other optimizations):\n\n```\nsage: P = graphs.PetersenGraph()\nsage: %timeit P.tutte_polynomial()\n1 loops, best of 3: 256 ms per loop\n```\nBefore:\n\n```\nsage: P = graphs.PetersenGraph()\nsage: %timeit P.tutte_polynomial()\n1000 loops, best of 3: 1.08 ms per loop\n```\n\nNow I'm currently perplexed...currently the best involves extra if statements, creation of parents, and unused arguments being passed. So we might just want to merge `6ef434e` instead. Still testing stuff...",
     "created_at": "2014-01-07T17:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1541,7 +1535,6 @@ sage: P = graphs.PetersenGraph()
 sage: %timeit P.tutte_polynomial()
 1 loops, best of 3: 256 ms per loop
 ```
-
 Before:
 
 ```
@@ -1549,7 +1542,6 @@ sage: P = graphs.PetersenGraph()
 sage: %timeit P.tutte_polynomial()
 1000 loops, best of 3: 1.08 ms per loop
 ```
-
 
 Now I'm currently perplexed...currently the best involves extra if statements, creation of parents, and unused arguments being passed. So we might just want to merge `6ef434e` instead. Still testing stuff...
 
@@ -1652,7 +1644,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_008325.json:
 ```json
 {
-    "body": "Okay, I figured out what was changing. I wasn't caching the final result of the Tutte polynomial, and how it currently is done will overly clear the cache. For example, say you compute the Tutte polynomial on some large graph `G`, then you compute it on a very small graph `H` and ask it to clear the cache. Now the cached data for `G` is gone. I think we should always cache the final results, and with the current implementation, there is the possibility we've already computed the Tutte polynomial of a small graph. However I think this will be infrequent or you should not be clearing the utility cache.\n\nAlthough there is a problem, we get memory leaks. Now one can argue with the previous behavior along with the default implementation, this is not a leak. If the user was deciding to keep the cache, this would be the user knowing what (s)he is doing. Yet I wouldn't want my small computation to destroy the data of my big one, nor store it myself. So which way should we go, and if we go with 2 caches, how usable would the weak caches be? Feedback is needed.\n\nSimon, Nils -- I cc-ed you here because we might need a good weak cache solution here and I'd like your thoughts and expertise.\n----\nNew commits:",
+    "body": "Okay, I figured out what was changing. I wasn't caching the final result of the Tutte polynomial, and how it currently is done will overly clear the cache. For example, say you compute the Tutte polynomial on some large graph `G`, then you compute it on a very small graph `H` and ask it to clear the cache. Now the cached data for `G` is gone. I think we should always cache the final results, and with the current implementation, there is the possibility we've already computed the Tutte polynomial of a small graph. However I think this will be infrequent or you should not be clearing the utility cache.\n\nAlthough there is a problem, we get memory leaks. Now one can argue with the previous behavior along with the default implementation, this is not a leak. If the user was deciding to keep the cache, this would be the user knowing what (s)he is doing. Yet I wouldn't want my small computation to destroy the data of my big one, nor store it myself. So which way should we go, and if we go with 2 caches, how usable would the weak caches be? Feedback is needed.\n\nSimon, Nils -- I cc-ed you here because we might need a good weak cache solution here and I'd like your thoughts and expertise.\n\n---\nNew commits:",
     "created_at": "2014-01-07T19:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1666,7 +1658,8 @@ Okay, I figured out what was changing. I wasn't caching the final result of the 
 Although there is a problem, we get memory leaks. Now one can argue with the previous behavior along with the default implementation, this is not a leak. If the user was deciding to keep the cache, this would be the user knowing what (s)he is doing. Yet I wouldn't want my small computation to destroy the data of my big one, nor store it myself. So which way should we go, and if we go with 2 caches, how usable would the weak caches be? Feedback is needed.
 
 Simon, Nils -- I cc-ed you here because we might need a good weak cache solution here and I'd like your thoughts and expertise.
-----
+
+---
 New commits:
 
 
@@ -1700,7 +1693,7 @@ Nathann
 archive/issue_comments_008327.json:
 ```json
 {
-    "body": "Replying to [comment:71 tscrim]:\n> Okay, ``@`cached_function` doesn't work because we can't pass a key function to it...\n\nI don't understand what you mean with this. Note that in the `@`_cached decorator you are not passing an arbitrary key function either: You have _cache_key hardcoded.",
+    "body": "Replying to [comment:71 tscrim]:\n> Okay, ``@`cached_function` doesn't work because we can't pass a key function to it...\n\n\nI don't understand what you mean with this. Note that in the `@`_cached decorator you are not passing an arbitrary key function either: You have _cache_key hardcoded.",
     "created_at": "2014-01-07T21:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1712,6 +1705,7 @@ archive/issue_comments_008327.json:
 Replying to [comment:71 tscrim]:
 > Okay, ``@`cached_function` doesn't work because we can't pass a key function to it...
 
+
 I don't understand what you mean with this. Note that in the `@`_cached decorator you are not passing an arbitrary key function either: You have _cache_key hardcoded.
 
 
@@ -1721,7 +1715,7 @@ I don't understand what you mean with this. Note that in the `@`_cached decorato
 archive/issue_comments_008328.json:
 ```json
 {
-    "body": "Replying to [comment:77 ncohen]:\n> Ahahahah. So you will not do without a \"local cache\" and a \"global cache\". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.\n\nWhat we should probably do, if we do keep a global cache, is during the computation check if the key is in the global cache as well. However I'm thinking we should not have a global cache because we get a memory leak. Create a graph `G`, compute it's Tutte polynomial, then delete `G`. The polynomial is now stuck in the global cache (that we don't want to have to manually clear). I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs. That way when we delete the graph (along with the local cache), the resulting polynomial can be garbage collected. It's probably better to call the local cache the computation cache.\n\n> And what happens if the local cache generates values that exist in the global cache too ? `:-P` What do you cache then ? `:-P`\n\nIn effect what I'm proposing is we keep them completely separate, I think that would create the least amount of problems. One other thing we could do is keep a small fixed-size permanent cache.\n\nThat gives me an idea about something else to do: have an option for the max size of a truly local cache when doing the computations. A priority queue up to some fixed size which keeps track of computed Tutte polynomials (with the priority being most often computed or some other heuristic) from that in the local cache. However the above, which turns it into a paging problem, might be an over-thought approach.\n\nHow big of a concern is it for recomputing Tutte polynomials for isomorphic-but-not-identical graphs?\n\nSimon, I was trying to convert it to use the usual ``@`cached_function` instead of the custom cache.",
+    "body": "Replying to [comment:77 ncohen]:\n> Ahahahah. So you will not do without a \"local cache\" and a \"global cache\". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.\n\n\nWhat we should probably do, if we do keep a global cache, is during the computation check if the key is in the global cache as well. However I'm thinking we should not have a global cache because we get a memory leak. Create a graph `G`, compute it's Tutte polynomial, then delete `G`. The polynomial is now stuck in the global cache (that we don't want to have to manually clear). I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs. That way when we delete the graph (along with the local cache), the resulting polynomial can be garbage collected. It's probably better to call the local cache the computation cache.\n\n> And what happens if the local cache generates values that exist in the global cache too ? `:-P` What do you cache then ? `:-P`\n\n\nIn effect what I'm proposing is we keep them completely separate, I think that would create the least amount of problems. One other thing we could do is keep a small fixed-size permanent cache.\n\nThat gives me an idea about something else to do: have an option for the max size of a truly local cache when doing the computations. A priority queue up to some fixed size which keeps track of computed Tutte polynomials (with the priority being most often computed or some other heuristic) from that in the local cache. However the above, which turns it into a paging problem, might be an over-thought approach.\n\nHow big of a concern is it for recomputing Tutte polynomials for isomorphic-but-not-identical graphs?\n\nSimon, I was trying to convert it to use the usual ``@`cached_function` instead of the custom cache.",
     "created_at": "2014-01-07T21:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1733,9 +1727,11 @@ archive/issue_comments_008328.json:
 Replying to [comment:77 ncohen]:
 > Ahahahah. So you will not do without a "local cache" and a "global cache". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.
 
+
 What we should probably do, if we do keep a global cache, is during the computation check if the key is in the global cache as well. However I'm thinking we should not have a global cache because we get a memory leak. Create a graph `G`, compute it's Tutte polynomial, then delete `G`. The polynomial is now stuck in the global cache (that we don't want to have to manually clear). I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs. That way when we delete the graph (along with the local cache), the resulting polynomial can be garbage collected. It's probably better to call the local cache the computation cache.
 
 > And what happens if the local cache generates values that exist in the global cache too ? `:-P` What do you cache then ? `:-P`
+
 
 In effect what I'm proposing is we keep them completely separate, I think that would create the least amount of problems. One other thing we could do is keep a small fixed-size permanent cache.
 
@@ -1752,7 +1748,7 @@ Simon, I was trying to convert it to use the usual ``@`cached_function` instead 
 archive/issue_comments_008329.json:
 ```json
 {
-    "body": "Replying to [comment:77 ncohen]:\n> Ahahahah. So you will not do without a \"local cache\" and a \"global cache\". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.\n\nWhere are the two merged? I can't see it in the code.\n\n> And what happens if the local cache generates values that exist in the global cache too ?\n\nWhat should happen? You have two caches caching the same value. You clear the first cache. The value is still in the second cache.",
+    "body": "Replying to [comment:77 ncohen]:\n> Ahahahah. So you will not do without a \"local cache\" and a \"global cache\". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.\n\n\nWhere are the two merged? I can't see it in the code.\n\n> And what happens if the local cache generates values that exist in the global cache too ?\n\n\nWhat should happen? You have two caches caching the same value. You clear the first cache. The value is still in the second cache.",
     "created_at": "2014-01-07T21:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1764,9 +1760,11 @@ archive/issue_comments_008329.json:
 Replying to [comment:77 ncohen]:
 > Ahahahah. So you will not do without a "local cache" and a "global cache". You want to use the global cache to speedup the results, and you want to clear the local cache only. And merge the two if the user wants to keep it.
 
+
 Where are the two merged? I can't see it in the code.
 
 > And what happens if the local cache generates values that exist in the global cache too ?
+
 
 What should happen? You have two caches caching the same value. You clear the first cache. The value is still in the second cache.
 
@@ -1777,7 +1775,7 @@ What should happen? You have two caches caching the same value. You clear the fi
 archive/issue_comments_008330.json:
 ```json
 {
-    "body": "Replying to [comment:79 tscrim]:\n> I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs.\n\nSounds reasonable.\n\n> Simon, I was trying to convert it to use the usual ``@`cached_function` instead of the custom cache.\n\nCan you use immutable graphs? See #15278, #15603, #15619 and #15622. These can be used as dictionary key and are thus acceptable input for a cached function.",
+    "body": "Replying to [comment:79 tscrim]:\n> I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs.\n\n\nSounds reasonable.\n\n> Simon, I was trying to convert it to use the usual ``@`cached_function` instead of the custom cache.\n\n\nCan you use immutable graphs? See #15278, #15603, #15619 and #15622. These can be used as dictionary key and are thus acceptable input for a cached function.",
     "created_at": "2014-01-07T22:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1789,9 +1787,11 @@ archive/issue_comments_008330.json:
 Replying to [comment:79 tscrim]:
 > I'm thinking the better way to do things is only have a local cache and make `tutte_polynomial()` a cached method of the graphs.
 
+
 Sounds reasonable.
 
 > Simon, I was trying to convert it to use the usual ``@`cached_function` instead of the custom cache.
+
 
 Can you use immutable graphs? See #15278, #15603, #15619 and #15622. These can be used as dictionary key and are thus acceptable input for a cached function.
 
@@ -1820,7 +1820,7 @@ The problem is we can't currently do any preprocessing  on the arguments for ``@
 archive/issue_comments_008332.json:
 ```json
 {
-    "body": "I pushed a change which just makes the cache an optional keyword argument.  All of the sub-calls to tutte_polynomial use the same cache as the top-level one.  Additionally, if the use does not want the cache destroyed at the end of the computation, they just provide their own dictionary to the method.\n----\nNew commits:",
+    "body": "I pushed a change which just makes the cache an optional keyword argument.  All of the sub-calls to tutte_polynomial use the same cache as the top-level one.  Additionally, if the use does not want the cache destroyed at the end of the computation, they just provide their own dictionary to the method.\n\n---\nNew commits:",
     "created_at": "2014-01-08T01:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1830,7 +1830,8 @@ archive/issue_comments_008332.json:
 ```
 
 I pushed a change which just makes the cache an optional keyword argument.  All of the sub-calls to tutte_polynomial use the same cache as the top-level one.  Additionally, if the use does not want the cache destroyed at the end of the computation, they just provide their own dictionary to the method.
-----
+
+---
 New commits:
 
 
@@ -1876,7 +1877,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_008335.json:
 ```json
 {
-    "body": "> I like the elegance of it; so positive review from me. Nathann and anyone else, any objections?\n\nNono, it's fine `:-)`\n\nNathann",
+    "body": "> I like the elegance of it; so positive review from me. Nathann and anyone else, any objections?\n\n\nNono, it's fine `:-)`\n\nNathann",
     "created_at": "2014-01-09T16:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1314",
     "type": "issue_comment",
@@ -1886,6 +1887,7 @@ archive/issue_comments_008335.json:
 ```
 
 > I like the elegance of it; so positive review from me. Nathann and anyone else, any objections?
+
 
 Nono, it's fine `:-)`
 

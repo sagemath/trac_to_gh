@@ -3,7 +3,7 @@
 archive/issues_009000.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nPeople voted yes to the following:\n\n\n```\nWould anybody be opposed to me changing the default for \ncolor_select from 'farbtastic' to 'colorpicker'.  The \nfarbtastic color picker is *HUGE*, whereas the 'colorpicker' \none is much smaller and more usable.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9000\n\n",
+    "body": "Assignee: jason, was\n\nPeople voted yes to the following:\n\n```\nWould anybody be opposed to me changing the default for \ncolor_select from 'farbtastic' to 'colorpicker'.  The \nfarbtastic color picker is *HUGE*, whereas the 'colorpicker' \none is much smaller and more usable.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9000\n\n",
     "created_at": "2010-05-20T19:37:34Z",
     "labels": [
         "component: notebook",
@@ -20,14 +20,12 @@ Assignee: jason, was
 
 People voted yes to the following:
 
-
 ```
 Would anybody be opposed to me changing the default for 
 color_select from 'farbtastic' to 'colorpicker'.  The 
 farbtastic color picker is *HUGE*, whereas the 'colorpicker' 
 one is much smaller and more usable.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9000
 

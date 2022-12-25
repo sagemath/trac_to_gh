@@ -3,7 +3,7 @@
 archive/issues_000317.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following should obviously fail, but it doesn't:\n\n\n```\nsage: x = 2^1000000000000000\n```\n\n\nThe reason is that the `Integer.__pow__` function uses `mpz_pow_ui` which only accepts an unsigned long as the exponent, so the exponent is getting stupidly truncated.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/317\n\n",
+    "body": "Assignee: somebody\n\nThe following should obviously fail, but it doesn't:\n\n```\nsage: x = 2^1000000000000000\n```\n\nThe reason is that the `Integer.__pow__` function uses `mpz_pow_ui` which only accepts an unsigned long as the exponent, so the exponent is getting stupidly truncated.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/317\n\n",
     "created_at": "2007-03-11T05:31:49Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,11 +19,9 @@ Assignee: somebody
 
 The following should obviously fail, but it doesn't:
 
-
 ```
 sage: x = 2^1000000000000000
 ```
-
 
 The reason is that the `Integer.__pow__` function uses `mpz_pow_ui` which only accepts an unsigned long as the exponent, so the exponent is getting stupidly truncated.
 
@@ -73,7 +71,7 @@ Resolution: fixed
 archive/issue_comments_001510.json:
 ```json
 {
-    "body": "Fixed for sage-2.4\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1174518201 25200\n# Node ID 4181b9b6dfab32ec0d7382b58d29ffaf3486bfd9\n# Parent  7ffbc455086b1fdce659c26b3e702a7bd4be4ba7\nFix track # 317 -- bug in powering over the integers.\n\ndiff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx\n--- a/sage/rings/integer.pyx    Wed Mar 21 15:50:24 2007 -0700\n+++ b/sage/rings/integer.pyx    Wed Mar 21 16:03:21 2007 -0700\n@@ -121,6 +121,8 @@ cdef set_from_int(Integer self, int othe\n\n cdef public mpz_t* get_value(Integer self):\n     return &self.value\n+\n+MAX_UNSIGNED_LONG = 2 * sys.maxint\n\n # This crashes SAGE:\n #  s = 2003^100300000\n@@ -658,6 +660,13 @@ cdef class Integer(sage.structure.elemen\n             9536.7431640625\n             sage: 'sage'^3\n             'sagesagesage'\n+\n+\n+        The exponent must first in an unsigned long.\n+            sage: x = 2^1000000000000000\n+            Traceback (most recent call last):\n+            ...\n+            RuntimeError: exponent must be at most 4294967294\n         \"\"\"\n         cdef Integer _self, _n\n         cdef unsigned int _nval\n@@ -672,6 +681,8 @@ cdef class Integer(sage.structure.elemen\n             raise TypeError, \"exponent (=%s) must be an integer.\\nCoerce your numbers to real or complex numbers first.\"%n\n         if _n < 0:\n             return Integer(1)/(self**(-_n))\n+        if _n > MAX_UNSIGNED_LONG:\n+            raise RuntimeError, \"exponent must be at most %s\"%MAX_UNSIGNED_LONG\n         _self = integer(self)\n         cdef Integer x\n         x = Integer()\n@@ -1010,23 +1021,23 @@ cdef class Integer(sage.structure.elemen\n             0\n             sage: z.powermodm_ui(2, 14)\n             2\n-            sage: z.powermodm_ui(2^31-1, 14)\n-            4\n-            sage: z.powermodm_ui(2^31, 14)\n+            sage: z.powermodm_ui(2^32-2, 14)\n+            2\n+            sage: z.powermodm_ui(2^32-1, 14)\n             Traceback (most recent call last):                              # 32-bit\n             ...                                                             # 32-bit\n-            OverflowError: exp (=2147483648) must be <= 2147483647   # 32-bit\n-            2              # 64-bit\n-            sage: z.powermodm_ui(2^63, 14)\n+            OverflowError: exp (=4294967295) must be <= 4294967294          # 32-bit\n+            8              # 64-bit\n+            sage: z.powermodm_ui(2^65, 14)\n             Traceback (most recent call last):\n             ...\n-            OverflowError: exp (=9223372036854775808) must be <= 2147483647           # 32-bit\n-            OverflowError: exp (=9223372036854775808) must be <= 9223372036854775807  # 64-bit\n+            OverflowError: exp (=36893488147419103232) must be <= 4294967294  # 32-bit\n+            OverflowError: exp (=9223372036854775808) must be <= 18446744065119617024  # 64-bit\n         \"\"\"\n         if exp < 0:\n             raise ValueError, \"exp (=%s) must be nonnegative\"%exp\n-        elif exp > sys.maxint:\n-            raise OverflowError, \"exp (=%s) must be <= %s\"%(exp, sys.maxint)\n+        elif exp > MAX_UNSIGNED_LONG:\n+            raise OverflowError, \"exp (=%s) must be <= %s\"%(exp, MAX_UNSIGNED_LONG)\n         cdef Integer x, _mod\n         _mod = Integer(mod)\n         x = Integer()\n```\n",
+    "body": "Fixed for sage-2.4\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1174518201 25200\n# Node ID 4181b9b6dfab32ec0d7382b58d29ffaf3486bfd9\n# Parent  7ffbc455086b1fdce659c26b3e702a7bd4be4ba7\nFix track # 317 -- bug in powering over the integers.\n\ndiff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx\n--- a/sage/rings/integer.pyx    Wed Mar 21 15:50:24 2007 -0700\n+++ b/sage/rings/integer.pyx    Wed Mar 21 16:03:21 2007 -0700\n@@ -121,6 +121,8 @@ cdef set_from_int(Integer self, int othe\n\n cdef public mpz_t* get_value(Integer self):\n     return &self.value\n+\n+MAX_UNSIGNED_LONG = 2 * sys.maxint\n\n # This crashes SAGE:\n #  s = 2003^100300000\n@@ -658,6 +660,13 @@ cdef class Integer(sage.structure.elemen\n             9536.7431640625\n             sage: 'sage'^3\n             'sagesagesage'\n+\n+\n+        The exponent must first in an unsigned long.\n+            sage: x = 2^1000000000000000\n+            Traceback (most recent call last):\n+            ...\n+            RuntimeError: exponent must be at most 4294967294\n         \"\"\"\n         cdef Integer _self, _n\n         cdef unsigned int _nval\n@@ -672,6 +681,8 @@ cdef class Integer(sage.structure.elemen\n             raise TypeError, \"exponent (=%s) must be an integer.\\nCoerce your numbers to real or complex numbers first.\"%n\n         if _n < 0:\n             return Integer(1)/(self**(-_n))\n+        if _n > MAX_UNSIGNED_LONG:\n+            raise RuntimeError, \"exponent must be at most %s\"%MAX_UNSIGNED_LONG\n         _self = integer(self)\n         cdef Integer x\n         x = Integer()\n@@ -1010,23 +1021,23 @@ cdef class Integer(sage.structure.elemen\n             0\n             sage: z.powermodm_ui(2, 14)\n             2\n-            sage: z.powermodm_ui(2^31-1, 14)\n-            4\n-            sage: z.powermodm_ui(2^31, 14)\n+            sage: z.powermodm_ui(2^32-2, 14)\n+            2\n+            sage: z.powermodm_ui(2^32-1, 14)\n             Traceback (most recent call last):                              # 32-bit\n             ...                                                             # 32-bit\n-            OverflowError: exp (=2147483648) must be <= 2147483647   # 32-bit\n-            2              # 64-bit\n-            sage: z.powermodm_ui(2^63, 14)\n+            OverflowError: exp (=4294967295) must be <= 4294967294          # 32-bit\n+            8              # 64-bit\n+            sage: z.powermodm_ui(2^65, 14)\n             Traceback (most recent call last):\n             ...\n-            OverflowError: exp (=9223372036854775808) must be <= 2147483647           # 32-bit\n-            OverflowError: exp (=9223372036854775808) must be <= 9223372036854775807  # 64-bit\n+            OverflowError: exp (=36893488147419103232) must be <= 4294967294  # 32-bit\n+            OverflowError: exp (=9223372036854775808) must be <= 18446744065119617024  # 64-bit\n         \"\"\"\n         if exp < 0:\n             raise ValueError, \"exp (=%s) must be nonnegative\"%exp\n-        elif exp > sys.maxint:\n-            raise OverflowError, \"exp (=%s) must be <= %s\"%(exp, sys.maxint)\n+        elif exp > MAX_UNSIGNED_LONG:\n+            raise OverflowError, \"exp (=%s) must be <= %s\"%(exp, MAX_UNSIGNED_LONG)\n         cdef Integer x, _mod\n         _mod = Integer(mod)\n         x = Integer()\n```",
     "created_at": "2007-03-21T23:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/317",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ archive/issue_comments_001510.json:
 ```
 
 Fixed for sage-2.4
-
 
 ```
 # HG changeset patch
@@ -163,4 +160,3 @@ diff -r 7ffbc455086b -r 4181b9b6dfab sage/rings/integer.pyx
          _mod = Integer(mod)
          x = Integer()
 ```
-

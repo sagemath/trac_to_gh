@@ -3,7 +3,7 @@
 archive/issues_001519.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nDoing\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')\n```\n\n\nshould work, but doesn't, because of the ?stuff at the end.  Fix this.\n\nHow to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1519\n\n",
+    "body": "Assignee: @williamstein\n\nDoing\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')\n```\n\nshould work, but doesn't, because of the ?stuff at the end.  Fix this.\n\nHow to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1519\n\n",
     "created_at": "2007-12-15T05:52:18Z",
     "labels": [
         "component: user interface",
@@ -23,7 +23,6 @@ Doing
 ```
 sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')
 ```
-
 
 should work, but doesn't, because of the ?stuff at the end.  Fix this.
 

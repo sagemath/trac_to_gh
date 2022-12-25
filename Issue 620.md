@@ -3,7 +3,7 @@
 archive/issues_000620.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThis is caused when running Sage 2.8.3.6+malb's fix for #566:\n\n```\nfor i in range(3):\n    get_memory_usage()\n    m = ModularSymbols(501,2).decomposition(3); \n    del m; ModularSymbols_clear_cache(); \n    get_memory_usage()\n```\n\nand results in \n\n```\n==8920== LEAK SUMMARY:\n==8920==    definitely lost: 1,518,830 bytes in 183,739 blocks.\n==8920==    indirectly lost: 288,408 bytes in 610 blocks.\n==8920==      possibly lost: 489,439 bytes in 1,002 blocks.\n==8920==    still reachable: 160,311,066 bytes in 872,845 blocks.\n==8920==         suppressed: 0 bytes in 0 blocks.\n```\n\nThe exact problem:\n\n```\n\n==8920== 1,612,736 bytes in 446 blocks are still reachable in loss record 2,367 of 2,372\n==8920==    at 0x4A05A66: malloc (vg_replace_malloc.c:207)\n==8920==    by 0x210A2D65: __pyx_f_21vector_rational_dense_21Vector_rational_dense__init (vector_rational_dense.c:770)\n==8920==    by 0x210A0DE7: __pyx_tp_new_21vector_rational_dense_Vector_rational_dense (vector_rational_dense.c:865)\n==8920==    by 0x45A272: type_call (typeobject.c:422)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==8920==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==8920==    by 0x4CFED0: function_call (funcobject.c:517)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x41BE0C: instancemethod_call (classobject.c:2497)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/620\n\n",
+    "body": "Assignee: mabshoff\n\nThis is caused when running Sage 2.8.3.6+malb's fix for #566:\n\n```\nfor i in range(3):\n    get_memory_usage()\n    m = ModularSymbols(501,2).decomposition(3); \n    del m; ModularSymbols_clear_cache(); \n    get_memory_usage()\n```\nand results in \n\n```\n==8920== LEAK SUMMARY:\n==8920==    definitely lost: 1,518,830 bytes in 183,739 blocks.\n==8920==    indirectly lost: 288,408 bytes in 610 blocks.\n==8920==      possibly lost: 489,439 bytes in 1,002 blocks.\n==8920==    still reachable: 160,311,066 bytes in 872,845 blocks.\n==8920==         suppressed: 0 bytes in 0 blocks.\n```\nThe exact problem:\n\n```\n\n==8920== 1,612,736 bytes in 446 blocks are still reachable in loss record 2,367 of 2,372\n==8920==    at 0x4A05A66: malloc (vg_replace_malloc.c:207)\n==8920==    by 0x210A2D65: __pyx_f_21vector_rational_dense_21Vector_rational_dense__init (vector_rational_dense.c:770)\n==8920==    by 0x210A0DE7: __pyx_tp_new_21vector_rational_dense_Vector_rational_dense (vector_rational_dense.c:865)\n==8920==    by 0x45A272: type_call (typeobject.c:422)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==8920==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n==8920==    by 0x4CFED0: function_call (funcobject.c:517)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x41BE0C: instancemethod_call (classobject.c:2497)\n==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/620\n\n",
     "created_at": "2007-09-07T16:59:17Z",
     "labels": [
         "component: memleak",
@@ -27,7 +27,6 @@ for i in range(3):
     del m; ModularSymbols_clear_cache(); 
     get_memory_usage()
 ```
-
 and results in 
 
 ```
@@ -38,7 +37,6 @@ and results in
 ==8920==    still reachable: 160,311,066 bytes in 872,845 blocks.
 ==8920==         suppressed: 0 bytes in 0 blocks.
 ```
-
 The exact problem:
 
 ```
@@ -57,7 +55,6 @@ The exact problem:
 ==8920==    by 0x4156A2: PyObject_Call (abstract.c:1860)
 ==8920==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)
 ```
-
 
 Cheers,
 
@@ -109,7 +106,7 @@ archive/issue_events_001641.json:
 archive/issue_comments_003172.json:
 ```json
 {
-    "body": "It looks like the ModularSymbols_clear_cache() does nothing:\n\n```\nmabshoff@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.11, Release Date: 2007-11-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: for i in range(3):\n....:         print \"start: \", get_memory_usage()\n....:     m = ModularSymbols(501,2).decomposition(3);\n....:     del m;\n....:     print \"deleted m: \", get_memory_usage()\n....:     ModularSymbols_clear_cache();\n....:     print \"cache cleaned: \", get_memory_usage()\n....:\nstart:  329.03515625\ndeleted m:  379.66015625\ncache cleaned:  379.66015625\nstart:  379.66015625\ndeleted m:  391.63671875\ncache cleaned:  391.63671875\nstart:  391.63671875\ndeleted m:  401.21484375\ncache cleaned:  401.21484375\n```\n\nI had a quick look at the code and we play with weak references there, so that might be the cause. Same applies to #621.\n\nCheers,\n\nMichael",
+    "body": "It looks like the ModularSymbols_clear_cache() does nothing:\n\n```\nmabshoff@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.11, Release Date: 2007-11-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: for i in range(3):\n....:         print \"start: \", get_memory_usage()\n....:     m = ModularSymbols(501,2).decomposition(3);\n....:     del m;\n....:     print \"deleted m: \", get_memory_usage()\n....:     ModularSymbols_clear_cache();\n....:     print \"cache cleaned: \", get_memory_usage()\n....:\nstart:  329.03515625\ndeleted m:  379.66015625\ncache cleaned:  379.66015625\nstart:  379.66015625\ndeleted m:  391.63671875\ncache cleaned:  391.63671875\nstart:  391.63671875\ndeleted m:  401.21484375\ncache cleaned:  401.21484375\n```\nI had a quick look at the code and we play with weak references there, so that might be the cause. Same applies to #621.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-03T14:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/620",
     "type": "issue_comment",
@@ -144,7 +141,6 @@ start:  391.63671875
 deleted m:  401.21484375
 cache cleaned:  401.21484375
 ```
-
 I had a quick look at the code and we play with weak references there, so that might be the cause. Same applies to #621.
 
 Cheers,
@@ -192,7 +188,7 @@ archive/issue_events_001643.json:
 archive/issue_comments_003173.json:
 ```json
 {
-    "body": "This is still a problem in Sage 4.3:\n\n```\nstart:  162.12109375\ndeleted m:  185.9375\ncache cleaned:  185.9375\nstart:  185.9375\ndeleted m:  194.11328125\ncache cleaned:  194.11328125\nstart:  194.11328125\ndeleted m:  199.1328125\ncache cleaned:  199.1328125\n```\n",
+    "body": "This is still a problem in Sage 4.3:\n\n```\nstart:  162.12109375\ndeleted m:  185.9375\ncache cleaned:  185.9375\nstart:  185.9375\ndeleted m:  194.11328125\ncache cleaned:  194.11328125\nstart:  194.11328125\ndeleted m:  199.1328125\ncache cleaned:  199.1328125\n```",
     "created_at": "2009-12-30T04:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/620",
     "type": "issue_comment",
@@ -214,7 +210,6 @@ start:  194.11328125
 deleted m:  199.1328125
 cache cleaned:  199.1328125
 ```
-
 
 
 
@@ -329,7 +324,7 @@ It looks like tons of rings of integer modulo p and matrix spaces over these rin
 archive/issue_comments_003176.json:
 ```json
 {
-    "body": "After a merging #14711 (actually `21aa9bc`) into `6.2.beta1` and applying the mercurial patch from #14072 on top, the memory leak gets under control. But it doesn't entirely disappear, as illustrated below. What happens is apparently that the entries of `sage.modular.hecke.algebra._cache` stay alive; I don't understand if it is intentional or not.\n\n\n```\nsage: import objgraph, inspect, random, gc\nsage: objgraph.show_growth(limit=20)\n...\nsage: objgraph.show_most_common_types()\nfunction                   26766\ntuple                      10264\ndict                       8604\nmethod_descriptor          6292\nweakref                    4856\nlist                       4330\nwrapper_descriptor         3952\ngetset_descriptor          2638\nbuiltin_function_or_method 2423\ntype                       2046\nsage: for i in range(30):                   \n         print get_memory_usage()\n         m = ModularSymbols(501,2).decomposition(3)\n         del m; ModularSymbols_clear_cache()\n....:     \n971.3828125\n1052.734375\n...\n1087.4140625\n...\n1087.4140625\n1087.671875\n...\n1087.1484375\nsage: gc.collect()\n11973\nsage: gc.collect()\n317\nsage: gc.collect()\n0\nsage: objgraph.show_growth(limit=20)\ntuple                         12128     +1897\nfunction                      28505     +1739\ndict                          10148     +1553\nlist                           5303      +983\nRational                        823      +794\nManinSymbol                     785      +785   <-----\nweakref                        5481      +629\nwrapper_descriptor             4367      +427\nVector_rational_dense           336      +336\nKeyedRef                        939      +280\nmethod_descriptor              6516      +225\ncell                           1556      +209\ngetset_descriptor              2836      +202\nbuiltin_function_or_method     2610      +188\nMonoDictEraser                  446      +183\nMonoDict                        446      +183\nstaticmethod                    739      +134\nFormalSum                       113      +113\nModularSymbolsElement           113      +113   <-----\ninstance                        215      +106\n```\n",
+    "body": "After a merging #14711 (actually `21aa9bc`) into `6.2.beta1` and applying the mercurial patch from #14072 on top, the memory leak gets under control. But it doesn't entirely disappear, as illustrated below. What happens is apparently that the entries of `sage.modular.hecke.algebra._cache` stay alive; I don't understand if it is intentional or not.\n\n```\nsage: import objgraph, inspect, random, gc\nsage: objgraph.show_growth(limit=20)\n...\nsage: objgraph.show_most_common_types()\nfunction                   26766\ntuple                      10264\ndict                       8604\nmethod_descriptor          6292\nweakref                    4856\nlist                       4330\nwrapper_descriptor         3952\ngetset_descriptor          2638\nbuiltin_function_or_method 2423\ntype                       2046\nsage: for i in range(30):                   \n         print get_memory_usage()\n         m = ModularSymbols(501,2).decomposition(3)\n         del m; ModularSymbols_clear_cache()\n....:     \n971.3828125\n1052.734375\n...\n1087.4140625\n...\n1087.4140625\n1087.671875\n...\n1087.1484375\nsage: gc.collect()\n11973\nsage: gc.collect()\n317\nsage: gc.collect()\n0\nsage: objgraph.show_growth(limit=20)\ntuple                         12128     +1897\nfunction                      28505     +1739\ndict                          10148     +1553\nlist                           5303      +983\nRational                        823      +794\nManinSymbol                     785      +785   <-----\nweakref                        5481      +629\nwrapper_descriptor             4367      +427\nVector_rational_dense           336      +336\nKeyedRef                        939      +280\nmethod_descriptor              6516      +225\ncell                           1556      +209\ngetset_descriptor              2836      +202\nbuiltin_function_or_method     2610      +188\nMonoDictEraser                  446      +183\nMonoDict                        446      +183\nstaticmethod                    739      +134\nFormalSum                       113      +113\nModularSymbolsElement           113      +113   <-----\ninstance                        215      +106\n```",
     "created_at": "2014-02-16T13:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/620",
     "type": "issue_comment",
@@ -339,7 +334,6 @@ archive/issue_comments_003176.json:
 ```
 
 After a merging #14711 (actually `21aa9bc`) into `6.2.beta1` and applying the mercurial patch from #14072 on top, the memory leak gets under control. But it doesn't entirely disappear, as illustrated below. What happens is apparently that the entries of `sage.modular.hecke.algebra._cache` stay alive; I don't understand if it is intentional or not.
-
 
 ```
 sage: import objgraph, inspect, random, gc
@@ -398,7 +392,6 @@ FormalSum                       113      +113
 ModularSymbolsElement           113      +113   <-----
 instance                        215      +106
 ```
-
 
 
 

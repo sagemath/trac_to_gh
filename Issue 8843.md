@@ -159,7 +159,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081166.json:
 ```json
 {
-    "body": "Doesn't work:\n\n\n```\nInstalling c_lib\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/python/config -lntl -lgmp -lpari -lpython2.6\n/usr/bin/ld: /mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a(exceptions.o): relocation R_X86_64_32 against `_Py_NoneStruct' can not be used when making a shared object; recompile with -fPIC\n/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nscons: *** [libcsage.so] Error 1\nERROR: There was an error building c_lib.\n```\n\n\nHowever, Mike says there is a Python spkg that may fix this...",
+    "body": "Doesn't work:\n\n```\nInstalling c_lib\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/python/config -lntl -lgmp -lpari -lpython2.6\n/usr/bin/ld: /mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a(exceptions.o): relocation R_X86_64_32 against `_Py_NoneStruct' can not be used when making a shared object; recompile with -fPIC\n/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nscons: *** [libcsage.so] Error 1\nERROR: There was an error building c_lib.\n```\n\nHowever, Mike says there is a Python spkg that may fix this...",
     "created_at": "2010-05-26T00:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
@@ -170,7 +170,6 @@ archive/issue_comments_081166.json:
 
 Doesn't work:
 
-
 ```
 Installing c_lib
 g++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/python/config -lntl -lgmp -lpari -lpython2.6
@@ -180,7 +179,6 @@ collect2: ld returned 1 exit status
 scons: *** [libcsage.so] Error 1
 ERROR: There was an error building c_lib.
 ```
-
 
 However, Mike says there is a Python spkg that may fix this...
 

@@ -3,7 +3,7 @@
 archive/issues_006783.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n\n```\nsage -t  \"devel/sage/doc/en/constructions/linear_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 276:\n    sage: eig\nExpected:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[1,(sqrt(3)*%i+1)/4],[1,-(sqrt(3)*%i-1)/4]]\nGot:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[[[1,(sqrt(3)*%i+1)/4]],[[1,-(sqrt(3)*%i-1)/4]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 291:\n    sage: A.eigenvectors()\nExpected:\n    [[[2,11],[1,2]],[0,0,1],[0,1,1/3]]\nGot:\n    [[[2,11],[1,2]],[[[0,0,1]],[[0,1,1/3]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 294:\n    sage: A.eigenvectors()\nExpected:\n     [[[-1,2],[2,1]],[0,1,-1],[0,0,1]]\nGot:\n    [[[-1,2],[2,1]],[[[0,1,-1]],[[0,0,1]]]]\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_11\n   2 of   6 in __main__.example_12\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_linear_algebra.py\n         [19.2 s]\nsage -t  \"devel/sage/doc/en/constructions/number_theory.rst\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6783\n\n",
+    "body": "Assignee: @williamstein\n\nOn Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/doc/en/constructions/linear_algebra.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 276:\n    sage: eig\nExpected:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[1,(sqrt(3)*%i+1)/4],[1,-(sqrt(3)*%i-1)/4]]\nGot:\n    [[[-sqrt(3)*%i,sqrt(3)*%i],[1,1]],[[[1,(sqrt(3)*%i+1)/4]],[[1,-(sqrt(3)*%i-1)/4]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 291:\n    sage: A.eigenvectors()\nExpected:\n    [[[2,11],[1,2]],[0,0,1],[0,1,1/3]]\nGot:\n    [[[2,11],[1,2]],[[[0,0,1]],[[0,1,1/3]]]]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/linear_algebra.rst\", line 294:\n    sage: A.eigenvectors()\nExpected:\n     [[[-1,2],[2,1]],[0,1,-1],[0,0,1]]\nGot:\n    [[[-1,2],[2,1]],[[[0,1,-1]],[[0,0,1]]]]\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_11\n   2 of   6 in __main__.example_12\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_linear_algebra.py\n         [19.2 s]\nsage -t  \"devel/sage/doc/en/constructions/number_theory.rst\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6783\n\n",
     "created_at": "2009-08-20T21:34:42Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 On Solaris (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1
 
-
 ```
 
 ----------------------------------------------------------------------
@@ -29,11 +28,9 @@ Thu Aug 20 20:02:37 BST 2009
 dsage-trial tmp directory doesn't exist - creating ...
 This script will run the unit tests for DSage
 ```
-
 | Sage Version 4.1.1, Release Date: 2009-08-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 <SNIP>
-
 
 ```
 sage -t  "devel/sage/doc/en/constructions/linear_algebra.rst"
@@ -67,7 +64,6 @@ For whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.d
          [19.2 s]
 sage -t  "devel/sage/doc/en/constructions/number_theory.rst"
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6783
 

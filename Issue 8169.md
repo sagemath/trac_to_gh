@@ -3,7 +3,7 @@
 archive/issues_008169.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  mhampton @novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:\n\n- dynamically link TOPCOM via libtools to reduce size\n- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py\n\nAs an initial submission, my libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg\n\nand a first draft of triangulation.py is attached. The basic usage is\n\n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\nA triangulation in QQ^2 consisting of 4 simplices.\nsage: triang.plot(axes=False)                                        \n```\n\n\nAfter we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.\n\nNote: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mhampton @novoselt\n\nTOPCOM is a C++ program for triangulating polyhedra. More generally, it can find a single triangulation as well as enumerate all triangulations of a \"point configuration\", that is, the convex hull of points in euclidean space such that all vertices of simplices of the triangulation are in the given (finite) list of points.\n\nOne problem with the upstream distribution is that it statically links many helper programs, yielding almost 200mb of binaries. Therefore, I suggest the following:\n\n- dynamically link TOPCOM via libtools to reduce size\n- Write a sage<->TOPCOM interface at sage.geometry.triangulation.py\n\nAs an initial submission, my libtoolized TOPCOM spkg is here:\n\nhttp://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg\n\nand a first draft of triangulation.py is attached. The basic usage is\n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\nA triangulation in QQ^2 consisting of 4 simplices.\nsage: triang.plot(axes=False)                                        \n```\n\nAfter we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.\n\nNote: see #8115 for a modified cddlib (required by TOPCOM) that provides a non-static cddlib library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8169\n\n",
     "created_at": "2010-02-03T12:11:31Z",
     "labels": [
         "component: algebra"
@@ -32,7 +32,6 @@ http://www.stp.dias.ie/~vbraun/TOPCOM-0.16.2.spkg
 
 and a first draft of triangulation.py is attached. The basic usage is
 
-
 ```
 sage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);
 sage: points
@@ -42,7 +41,6 @@ sage: triang
 A triangulation in QQ^2 consisting of 4 simplices.
 sage: triang.plot(axes=False)                                        
 ```
-
 
 After we confirm that the libtoolized TOPCOM builds on all sage platforms, I'll contact upstream for eventual inclusion of the autotools sources.
 
@@ -198,7 +196,7 @@ Whoever is interested in using it can now either apply `trac_8169_triangulate_us
 archive/issue_comments_071767.json:
 ```json
 {
-    "body": "I get the following error when trying to install the spkg on a mac (10.5.8):\n\n```\nconfig.status: executing libtool commands\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run aclocal-1.11 -I m4\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing: line 52: aclocal-1.11: command not found\nWARNING: `aclocal-1.11' is missing on your system.  You should only need it if\n         you modified `acinclude.m4' or `configure.ac'.  You might want\n         to install the `Automake' and `Perl' packages.  Grab them from\n         any GNU archive site.\n cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run automake-1.11 --gnu\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing: line 52: automake-1.11: command not found\nWARNING: `automake-1.11' is missing on your system.  You should only need it if\n         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.\n         You might want to install the `Automake' and `Perl' packages.\n         Grab them from any GNU archive site.\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run autoconf\naclocal.m4:20: warning: this file was generated for autoconf 2.63.\nYou have another version of autoconf.  It may work, but is not guaranteed to.\nIf you have problems, you may need to regenerate the build system entirely.\nTo do so, use the procedure documented by the package, typically `autoreconf'.\n/usr/bin/gm4:aclocal.m4:953: cannot open `m4/ltoptions.m4': No such file or directory\nautom4te: /usr/bin/gm4 failed with exit status: 1\nmake: *** [configure] Error 1\nError building TOPCOM.\n```\n",
+    "body": "I get the following error when trying to install the spkg on a mac (10.5.8):\n\n```\nconfig.status: executing libtool commands\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run aclocal-1.11 -I m4\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing: line 52: aclocal-1.11: command not found\nWARNING: `aclocal-1.11' is missing on your system.  You should only need it if\n         you modified `acinclude.m4' or `configure.ac'.  You might want\n         to install the `Automake' and `Perl' packages.  Grab them from\n         any GNU archive site.\n cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run automake-1.11 --gnu\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing: line 52: automake-1.11: command not found\nWARNING: `automake-1.11' is missing on your system.  You should only need it if\n         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.\n         You might want to install the `Automake' and `Perl' packages.\n         Grab them from any GNU archive site.\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2.p1/src/missing --run autoconf\naclocal.m4:20: warning: this file was generated for autoconf 2.63.\nYou have another version of autoconf.  It may work, but is not guaranteed to.\nIf you have problems, you may need to regenerate the build system entirely.\nTo do so, use the procedure documented by the package, typically `autoreconf'.\n/usr/bin/gm4:aclocal.m4:953: cannot open `m4/ltoptions.m4': No such file or directory\nautom4te: /usr/bin/gm4 failed with exit status: 1\nmake: *** [configure] Error 1\nError building TOPCOM.\n```",
     "created_at": "2010-08-14T15:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -236,7 +234,6 @@ Error building TOPCOM.
 
 
 
-
 ---
 
 archive/issue_comments_071768.json:
@@ -260,7 +257,7 @@ The `patches/autogenerated/m4` directory had symlinks to `/usr` instead of copie
 archive/issue_comments_071769.json:
 ```json
 {
-    "body": "Great! That fixed it.  Patch applies fine too (to sage-4.5.2).\n\nI get the following coverage issues, which I would be happy to work on if you don't mind:\n\n\n```\nSCORE devel/sage-p1/sage/geometry//triangulation.py: 66% (14 of 21)\n\nMissing documentation:\n\t * __len__(self):\n\t * _TOPCOM_points(self):\n\t * liststring(container, conversion=str):\n\n\nMissing doctests:\n\t * __iter__(self):\n\t * __getitem__(self, i):\n\t * __init__(self, points, projective=False):\n\t * _repr_(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _render_2d(triangulation, **kwds):\n\t * _render_3d(triangulation, **kwds):\n\t * _repr_(self):\n```\n",
+    "body": "Great! That fixed it.  Patch applies fine too (to sage-4.5.2).\n\nI get the following coverage issues, which I would be happy to work on if you don't mind:\n\n```\nSCORE devel/sage-p1/sage/geometry//triangulation.py: 66% (14 of 21)\n\nMissing documentation:\n\t * __len__(self):\n\t * _TOPCOM_points(self):\n\t * liststring(container, conversion=str):\n\n\nMissing doctests:\n\t * __iter__(self):\n\t * __getitem__(self, i):\n\t * __init__(self, points, projective=False):\n\t * _repr_(self):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _render_2d(triangulation, **kwds):\n\t * _render_3d(triangulation, **kwds):\n\t * _repr_(self):\n```",
     "created_at": "2010-08-14T16:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -272,7 +269,6 @@ archive/issue_comments_071769.json:
 Great! That fixed it.  Patch applies fine too (to sage-4.5.2).
 
 I get the following coverage issues, which I would be happy to work on if you don't mind:
-
 
 ```
 SCORE devel/sage-p1/sage/geometry//triangulation.py: 66% (14 of 21)
@@ -295,7 +291,6 @@ Possibly wrong (function name doesn't occur in doctests):
 	 * _render_3d(triangulation, **kwds):
 	 * _repr_(self):
 ```
-
 
 
 
@@ -322,7 +317,7 @@ Feel free to make changes! I'm right now working on other tickets.
 archive/issue_comments_071771.json:
 ```json
 {
-    "body": "I'm getting lots of doctest failures; I think most of them are because points2placingtriang doesn't work:\n\n\n```\n(sage subshell) thorn:bin mh$ ./points2placingtriang\nBus error\n```\n\n\nI didn't see any errors relating to this during compilation; not sure what is going on.",
+    "body": "I'm getting lots of doctest failures; I think most of them are because points2placingtriang doesn't work:\n\n```\n(sage subshell) thorn:bin mh$ ./points2placingtriang\nBus error\n```\n\nI didn't see any errors relating to this during compilation; not sure what is going on.",
     "created_at": "2010-08-14T18:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -333,12 +328,10 @@ archive/issue_comments_071771.json:
 
 I'm getting lots of doctest failures; I think most of them are because points2placingtriang doesn't work:
 
-
 ```
 (sage subshell) thorn:bin mh$ ./points2placingtriang
 Bus error
 ```
-
 
 I didn't see any errors relating to this during compilation; not sure what is going on.
 
@@ -411,7 +404,7 @@ As for the bus error, I don't have a OSX machine to test on. But running points2
 archive/issue_comments_071775.json:
 ```json
 {
-    "body": "Replying to [comment:11 vbraun]:\n> I'll try to add the 64-bit stuff and a spkg-check. The examples are huge (the upstream distribution is 22M gzipped), but we probably should keep some for the check. \n\nI think we should keep them **all** for the check myself if they can be used in a check. The problem with the doc tests is that they test so little really in most cases. \n\n> Since the intention is to eventually move the changes upstream I would prefer to move the deprecated `configure.in` to `configure.ac`. We do copy `patches/autogenerated/configure` over the configure script.\n\nI must have missed that. \n \n> As for the bus error, I don't have a OSX machine to test on. But running points2placingtriangs in gdb and producing a stack trace would probably help.\n\nWilliam will give you access to bsd.math I expect. That runs OS X.",
+    "body": "Replying to [comment:11 vbraun]:\n> I'll try to add the 64-bit stuff and a spkg-check. The examples are huge (the upstream distribution is 22M gzipped), but we probably should keep some for the check. \n\n\nI think we should keep them **all** for the check myself if they can be used in a check. The problem with the doc tests is that they test so little really in most cases. \n\n> Since the intention is to eventually move the changes upstream I would prefer to move the deprecated `configure.in` to `configure.ac`. We do copy `patches/autogenerated/configure` over the configure script.\n\n\nI must have missed that. \n \n> As for the bus error, I don't have a OSX machine to test on. But running points2placingtriangs in gdb and producing a stack trace would probably help.\n\n\nWilliam will give you access to bsd.math I expect. That runs OS X.",
     "created_at": "2010-08-14T23:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -423,13 +416,16 @@ archive/issue_comments_071775.json:
 Replying to [comment:11 vbraun]:
 > I'll try to add the 64-bit stuff and a spkg-check. The examples are huge (the upstream distribution is 22M gzipped), but we probably should keep some for the check. 
 
+
 I think we should keep them **all** for the check myself if they can be used in a check. The problem with the doc tests is that they test so little really in most cases. 
 
 > Since the intention is to eventually move the changes upstream I would prefer to move the deprecated `configure.in` to `configure.ac`. We do copy `patches/autogenerated/configure` over the configure script.
 
+
 I must have missed that. 
  
 > As for the bus error, I don't have a OSX machine to test on. But running points2placingtriangs in gdb and producing a stack trace would probably help.
+
 
 William will give you access to bsd.math I expect. That runs OS X.
 
@@ -550,7 +546,7 @@ I still haven't fixed the build on OS X; on the TOPCOM page it says "The current
 archive/issue_comments_071781.json:
 ```json
 {
-    "body": "I think this is a bug in the secondary polytope code, maybe from the optional argument reduce_dimension not being set correctly in the LatticePolytope call.\n\n\n```\nc = polytopes.n_cube(3)\np = PointConfiguration(c.vertices())\np.secondary_polytope()\n```\n\n\n...this results in:\n\n\n```\nRuntimeError: Error executing \"poly.x -fv\" for a polytope sequence!\nOutput:\npoly.x: Vertex.c:613: Finish_Find_Equations: Assertion `_V->nv<64' failed.\nAborted\n```\n\n\nA similar command with an octahedron instead of a cube works fine.",
+    "body": "I think this is a bug in the secondary polytope code, maybe from the optional argument reduce_dimension not being set correctly in the LatticePolytope call.\n\n```\nc = polytopes.n_cube(3)\np = PointConfiguration(c.vertices())\np.secondary_polytope()\n```\n\n...this results in:\n\n```\nRuntimeError: Error executing \"poly.x -fv\" for a polytope sequence!\nOutput:\npoly.x: Vertex.c:613: Finish_Find_Equations: Assertion `_V->nv<64' failed.\nAborted\n```\n\nA similar command with an octahedron instead of a cube works fine.",
     "created_at": "2010-09-11T19:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -561,16 +557,13 @@ archive/issue_comments_071781.json:
 
 I think this is a bug in the secondary polytope code, maybe from the optional argument reduce_dimension not being set correctly in the LatticePolytope call.
 
-
 ```
 c = polytopes.n_cube(3)
 p = PointConfiguration(c.vertices())
 p.secondary_polytope()
 ```
 
-
 ...this results in:
-
 
 ```
 RuntimeError: Error executing "poly.x -fv" for a polytope sequence!
@@ -578,7 +571,6 @@ Output:
 poly.x: Vertex.c:613: Finish_Find_Equations: Assertion `_V->nv<64' failed.
 Aborted
 ```
-
 
 A similar command with an octahedron instead of a cube works fine.
 
@@ -625,7 +617,7 @@ Yes, the secondary polytope needs to be returned as a Polyhedron to avoid the di
 archive/issue_comments_071784.json:
 ```json
 {
-    "body": "I was checking some things from the TOPCOM examples, and this seems odd:\n\n```\nsage: q = [[0,0,0,0,0,1],[1,1,1,1,1,1],[2,4,8,16,32,1],[3,9,27,81,243,1],[4,16,64,256,1024,1],[5,25,125,625,3125,1],[6,36,216,1296,7776,1],[7,49,343,2401,16807,1],[8,64,512,4096,32768,1],[9,81,729,6561,59049,1],[10,100,1000,10000,100000,1]]\nsage: p = PointConfiguration(q)\nsage: t = p.triangulations_list()\nsage: len(t)\n0\n```\n\n\nThis is a 5-dimensional point configuration with 11 points.  Shouldn't it have some triangulations?",
+    "body": "I was checking some things from the TOPCOM examples, and this seems odd:\n\n```\nsage: q = [[0,0,0,0,0,1],[1,1,1,1,1,1],[2,4,8,16,32,1],[3,9,27,81,243,1],[4,16,64,256,1024,1],[5,25,125,625,3125,1],[6,36,216,1296,7776,1],[7,49,343,2401,16807,1],[8,64,512,4096,32768,1],[9,81,729,6561,59049,1],[10,100,1000,10000,100000,1]]\nsage: p = PointConfiguration(q)\nsage: t = p.triangulations_list()\nsage: len(t)\n0\n```\n\nThis is a 5-dimensional point configuration with 11 points.  Shouldn't it have some triangulations?",
     "created_at": "2010-09-11T22:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -644,7 +636,6 @@ sage: len(t)
 0
 ```
 
-
 This is a 5-dimensional point configuration with 11 points.  Shouldn't it have some triangulations?
 
 
@@ -654,7 +645,7 @@ This is a 5-dimensional point configuration with 11 points.  Shouldn't it have s
 archive/issue_comments_071785.json:
 ```json
 {
-    "body": "Here's a simpler example with similar problems.\n\n\n```\nsage: p = [[0,0,0,1],[0,3,0,1],[3,0,0,1],[0,0,1,1],[0,3,1,1],[3,0,1,1],[1,1,2,1]]\nsage: pc = PointConfiguration(p)\nsage: t = pc.triangulations_list()\nsage: len(t)\n0\n```\n\n\nAnd this blows up:\n\n\n```\nsage: pc.restrict_to_nonregular_triangulations()\nsage: t = pc.triangulations_list()\n```\n\n\nIs this the same problem that is noted by the line:\n# TOPCOM bug: points2alltriangs --nonregular does not work\n?",
+    "body": "Here's a simpler example with similar problems.\n\n```\nsage: p = [[0,0,0,1],[0,3,0,1],[3,0,0,1],[0,0,1,1],[0,3,1,1],[3,0,1,1],[1,1,2,1]]\nsage: pc = PointConfiguration(p)\nsage: t = pc.triangulations_list()\nsage: len(t)\n0\n```\n\nAnd this blows up:\n\n```\nsage: pc.restrict_to_nonregular_triangulations()\nsage: t = pc.triangulations_list()\n```\n\nIs this the same problem that is noted by the line:\n# TOPCOM bug: points2alltriangs --nonregular does not work\n?",
     "created_at": "2010-09-11T22:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -665,7 +656,6 @@ archive/issue_comments_071785.json:
 
 Here's a simpler example with similar problems.
 
-
 ```
 sage: p = [[0,0,0,1],[0,3,0,1],[3,0,0,1],[0,0,1,1],[0,3,1,1],[3,0,1,1],[1,1,2,1]]
 sage: pc = PointConfiguration(p)
@@ -674,15 +664,12 @@ sage: len(t)
 0
 ```
 
-
 And this blows up:
-
 
 ```
 sage: pc.restrict_to_nonregular_triangulations()
 sage: t = pc.triangulations_list()
 ```
-
 
 Is this the same problem that is noted by the line:
 # TOPCOM bug: points2alltriangs --nonregular does not work
@@ -875,7 +862,7 @@ In any case, doctests pass on OS X and Fedora 13 x86_64
 archive/issue_comments_071795.json:
 ```json
 {
-    "body": "Trying on OS X 10.5, against sage-4.6.alpha1, and using your http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p2.spkg, I get:\n\n\n```\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run aclocal-1.11 -I m4\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing: line 46: aclocal-1.11: command not found\nWARNING: `aclocal-1.11' is missing on your system.  You should only need it if\n         you modified `acinclude.m4' or `configure.ac'.  You might want\n         to install the `Automake' and `Perl' packages.  Grab them from\n         any GNU archive site.\n cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run automake-1.11 --gnu\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing: line 46: automake-1.11: command not found\nWARNING: `automake-1.11' is missing on your system.  You should only need it if\n         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.\n         You might want to install the `Automake' and `Perl' packages.\n         Grab them from any GNU archive site.\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run autoconf\naclocal.m4:20: warning: this file was generated for autoconf 2.63.\nYou have another version of autoconf.  It may work, but is not guaranteed to.\nIf you have problems, you may need to regenerate the build system entirely.\nTo do so, use the procedure documented by the package, typically `autoreconf'.\n/usr/bin/gm4:aclocal.m4:953: cannot open `m4/ltoptions.m4': No such file or directory\nautom4te: /usr/bin/gm4 failed with exit status: 1\nmake: *** [configure] Error 1\nError building TOPCOM.\n```\n",
+    "body": "Trying on OS X 10.5, against sage-4.6.alpha1, and using your http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p2.spkg, I get:\n\n```\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run aclocal-1.11 -I m4\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing: line 46: aclocal-1.11: command not found\nWARNING: `aclocal-1.11' is missing on your system.  You should only need it if\n         you modified `acinclude.m4' or `configure.ac'.  You might want\n         to install the `Automake' and `Perl' packages.  Grab them from\n         any GNU archive site.\n cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run automake-1.11 --gnu\n/Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing: line 46: automake-1.11: command not found\nWARNING: `automake-1.11' is missing on your system.  You should only need it if\n         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.\n         You might want to install the `Automake' and `Perl' packages.\n         Grab them from any GNU archive site.\nCDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run autoconf\naclocal.m4:20: warning: this file was generated for autoconf 2.63.\nYou have another version of autoconf.  It may work, but is not guaranteed to.\nIf you have problems, you may need to regenerate the build system entirely.\nTo do so, use the procedure documented by the package, typically `autoreconf'.\n/usr/bin/gm4:aclocal.m4:953: cannot open `m4/ltoptions.m4': No such file or directory\nautom4te: /usr/bin/gm4 failed with exit status: 1\nmake: *** [configure] Error 1\nError building TOPCOM.\n```",
     "created_at": "2010-09-26T16:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -885,7 +872,6 @@ archive/issue_comments_071795.json:
 ```
 
 Trying on OS X 10.5, against sage-4.6.alpha1, and using your http://www.stp.dias.ie/~vbraun/Sage/spkg/TOPCOM-0.16.2.p2.spkg, I get:
-
 
 ```
 CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /Users/mh/sagestuff/sage-4-x/spkg/build/TOPCOM-0.16.2/src/missing --run aclocal-1.11 -I m4
@@ -910,7 +896,6 @@ autom4te: /usr/bin/gm4 failed with exit status: 1
 make: *** [configure] Error 1
 Error building TOPCOM.
 ```
-
 
 
 
@@ -991,7 +976,7 @@ The warnings are ok except for the "cannot open m4/ltoptions.m4"; This looks lik
 archive/issue_comments_071800.json:
 ```json
 {
-    "body": "OK, sorry about that.  I had some older versions lying around and mistakenly installed one of those.  The new one seems to build fine, but after installing 9918 it doesn't seem to work.  The first doctest failure looks like this:\n\n\n```\nsage -t  \"devel/sage-t2/sage/geometry/triangulation/base.pyx\"\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4-x/devel/sage-t2/sage/geometry/triangulation/base.pyx\", line 259:\n    sage: p = PointConfiguration([[0, 1], [0, 0], [1, 0]])   # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        p = PointConfiguration([[Integer(0), Integer(1)], [Integer(0), Integer(0)], [Integer(1), Integer(0)]])   # indirect doctest###line 259:\n    sage: p = PointConfiguration([[0, 1], [0, 0], [1, 0]])   # indirect doctest\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/classcall_metaclass.py\", line 258, in __call__\n        return cls.__classcall__(cls, *args, **options)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 759, in __classcall__\n        .__classcall__(cls, points, connected, fine, regular, star)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/cachefunc.py\", line 115, in __call__\n        w = self.f(*args, **kwds)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/structure/unique_representation.py\", line 449, in __classcall__\n        instance = type.__call__(cls, *args, **options)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 793, in __init__\n        self.set_engine()\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 821, in set_engine\n        self._use_TOPCOM = (engine=='TOPCOM') or (engine=='auto' and PointConfiguration._have_TOPCOM())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 730, in _have_TOPCOM\n        except ExceptionPexpect:\n    NameError: global name 'ExceptionPexpect' is not defined\n**********************************************************************\n```\n",
+    "body": "OK, sorry about that.  I had some older versions lying around and mistakenly installed one of those.  The new one seems to build fine, but after installing 9918 it doesn't seem to work.  The first doctest failure looks like this:\n\n```\nsage -t  \"devel/sage-t2/sage/geometry/triangulation/base.pyx\"\n**********************************************************************\nFile \"/Users/mh/sagestuff/sage-4-x/devel/sage-t2/sage/geometry/triangulation/base.pyx\", line 259:\n    sage: p = PointConfiguration([[0, 1], [0, 0], [1, 0]])   # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mh/sagestuff/sage-4-x/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        p = PointConfiguration([[Integer(0), Integer(1)], [Integer(0), Integer(0)], [Integer(1), Integer(0)]])   # indirect doctest###line 259:\n    sage: p = PointConfiguration([[0, 1], [0, 0], [1, 0]])   # indirect doctest\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/classcall_metaclass.py\", line 258, in __call__\n        return cls.__classcall__(cls, *args, **options)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 759, in __classcall__\n        .__classcall__(cls, points, connected, fine, regular, star)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/misc/cachefunc.py\", line 115, in __call__\n        w = self.f(*args, **kwds)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/structure/unique_representation.py\", line 449, in __classcall__\n        instance = type.__call__(cls, *args, **options)\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 793, in __init__\n        self.set_engine()\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 821, in set_engine\n        self._use_TOPCOM = (engine=='TOPCOM') or (engine=='auto' and PointConfiguration._have_TOPCOM())\n      File \"/Users/mh/sagestuff/sage-4-x/local/lib/python/site-packages/sage/geometry/triangulation/point_configuration.py\", line 730, in _have_TOPCOM\n        except ExceptionPexpect:\n    NameError: global name 'ExceptionPexpect' is not defined\n**********************************************************************\n```",
     "created_at": "2010-09-26T18:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -1001,7 +986,6 @@ archive/issue_comments_071800.json:
 ```
 
 OK, sorry about that.  I had some older versions lying around and mistakenly installed one of those.  The new one seems to build fine, but after installing 9918 it doesn't seem to work.  The first doctest failure looks like this:
-
 
 ```
 sage -t  "devel/sage-t2/sage/geometry/triangulation/base.pyx"
@@ -1039,7 +1023,6 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_071801.json:
@@ -1063,7 +1046,7 @@ I tried installing the patch for this ticket but it seems to conflict with the o
 archive/issue_comments_071802.json:
 ```json
 {
-    "body": "I tried directly running points2facets from $SAGE_LOCAL/bin and got this:\n\n```\nsage-4-x: local/bin/points2facets \ndyld: Library not loaded: /Users/mh/sagestuff/sage-4.6.alpha0/local/lib/libgmpxx.3.dylib\n  Referenced from: /Users/mh/sagestuff/sage-4-x/local/bin/points2facets\n  Reason: image not found\nTrace/BPT trap\n```\n\n\nI had renamed my sage folder from \"sage-4.6.alpha0\" to \"sage-4-x\" after upgrading to 4.6.alpha1, and apparently that is causing some problems.  So I'll try this again with a cleaner 4.6.alpha1 but that will take me a while.",
+    "body": "I tried directly running points2facets from $SAGE_LOCAL/bin and got this:\n\n```\nsage-4-x: local/bin/points2facets \ndyld: Library not loaded: /Users/mh/sagestuff/sage-4.6.alpha0/local/lib/libgmpxx.3.dylib\n  Referenced from: /Users/mh/sagestuff/sage-4-x/local/bin/points2facets\n  Reason: image not found\nTrace/BPT trap\n```\n\nI had renamed my sage folder from \"sage-4.6.alpha0\" to \"sage-4-x\" after upgrading to 4.6.alpha1, and apparently that is causing some problems.  So I'll try this again with a cleaner 4.6.alpha1 but that will take me a while.",
     "created_at": "2010-09-26T19:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -1081,7 +1064,6 @@ dyld: Library not loaded: /Users/mh/sagestuff/sage-4.6.alpha0/local/lib/libgmpxx
   Reason: image not found
 Trace/BPT trap
 ```
-
 
 I had renamed my sage folder from "sage-4.6.alpha0" to "sage-4-x" after upgrading to 4.6.alpha1, and apparently that is causing some problems.  So I'll try this again with a cleaner 4.6.alpha1 but that will take me a while.
 
@@ -1206,7 +1188,7 @@ That sounds strange; can you post the output of `otool -L points2alltriangs` bef
 archive/issue_comments_071809.json:
 ```json
 {
-    "body": "OK, here it is:\n\n\n```\nbin: otool -L points2alltriangs\npoints2alltriangs:\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libcddgmp.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libgmpxx.3.dylib (compatibility version 5.0.0, current version 5.6.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libgmp.3.dylib (compatibility version 8.0.0, current version 8.6.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libTOPCOM.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libCHECKREG.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)\n\t/usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 111.1.5)\n```\n\n\n\n```\nbin: gcc --version\ni686-apple-darwin9-gcc-4.0.1 (GCC) 4.0.1 (Apple Inc. build 5465)\nCopyright (C) 2005 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n",
+    "body": "OK, here it is:\n\n```\nbin: otool -L points2alltriangs\npoints2alltriangs:\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libcddgmp.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libgmpxx.3.dylib (compatibility version 5.0.0, current version 5.6.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libgmp.3.dylib (compatibility version 8.0.0, current version 8.6.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libTOPCOM.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/Users/mh/sagestuff/sage-4-x/local/lib/libCHECKREG.0.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libstdc++.6.dylib (compatibility version 7.0.0, current version 7.4.0)\n\t/usr/lib/libgcc_s.1.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 111.1.5)\n```\n\n```\nbin: gcc --version\ni686-apple-darwin9-gcc-4.0.1 (GCC) 4.0.1 (Apple Inc. build 5465)\nCopyright (C) 2005 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```",
     "created_at": "2010-09-28T00:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8169",
     "type": "issue_comment",
@@ -1216,7 +1198,6 @@ archive/issue_comments_071809.json:
 ```
 
 OK, here it is:
-
 
 ```
 bin: otool -L points2alltriangs
@@ -1231,8 +1212,6 @@ points2alltriangs:
 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 111.1.5)
 ```
 
-
-
 ```
 bin: gcc --version
 i686-apple-darwin9-gcc-4.0.1 (GCC) 4.0.1 (Apple Inc. build 5465)
@@ -1240,7 +1219,6 @@ Copyright (C) 2005 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
-
 
 
 

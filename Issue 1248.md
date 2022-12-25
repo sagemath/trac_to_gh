@@ -3,7 +3,7 @@
 archive/issues_001248.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe mwrank wrapper crashes for curves requiring a large precision:\n\n```\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\n\nThe workaround is to enlarge the precision, but this does not seem to work:\n\n```\nsage: mwrank_set_precision(40)\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\n\nIn comparison, the mwrank console works:\n\n```\npasta% sage -mwrank -p40\n...\nEnter curve: [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n...\nRank = 2\n...\nGenerator 1 is [-64279912864146869343830:9890032513326436827332346415:5023053676376]; height 19.3576595783878252695113978299426894052\nGenerator 2 is [15973785170:1448063200169915:1]; height 4.540177201347877276441819514533365581727\n```\n\nThis proves that the defect is in the mwrank wrapper, not in mwrank itself.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1248\n\n",
+    "body": "Assignee: @williamstein\n\nThe mwrank wrapper crashes for curves requiring a large precision:\n\n```\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\nThe workaround is to enlarge the precision, but this does not seem to work:\n\n```\nsage: mwrank_set_precision(40)\nsage: F=EllipticCurve([1, 0, 0, -276367728491702366785, 2435648906608461566891797433225])\nsage: F.gens()\n...\nMwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n```\nIn comparison, the mwrank console works:\n\n```\npasta% sage -mwrank -p40\n...\nEnter curve: [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]\n...\nRank = 2\n...\nGenerator 1 is [-64279912864146869343830:9890032513326436827332346415:5023053676376]; height 19.3576595783878252695113978299426894052\nGenerator 2 is [15973785170:1448063200169915:1]; height 4.540177201347877276441819514533365581727\n```\nThis proves that the defect is in the mwrank wrapper, not in mwrank itself.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1248\n\n",
     "created_at": "2007-11-23T16:32:03Z",
     "labels": [
         "component: algebraic geometry",
@@ -26,7 +26,6 @@ sage: F.gens()
 ...
 Mwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]
 ```
-
 The workaround is to enlarge the precision, but this does not seem to work:
 
 ```
@@ -36,7 +35,6 @@ sage: F.gens()
 ...
 Mwrank crashed executing [1, 0, 0, -276367728491702366785, 2435648906608461566891797433225]
 ```
-
 In comparison, the mwrank console works:
 
 ```
@@ -49,7 +47,6 @@ Rank = 2
 Generator 1 is [-64279912864146869343830:9890032513326436827332346415:5023053676376]; height 19.3576595783878252695113978299426894052
 Generator 2 is [15973785170:1448063200169915:1]; height 4.540177201347877276441819514533365581727
 ```
-
 This proves that the defect is in the mwrank wrapper, not in mwrank itself.
 
 

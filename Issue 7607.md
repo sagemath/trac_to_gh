@@ -3,7 +3,7 @@
 archive/issues_007607.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @mwhansen\n\nWith Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:\n\n```\n~/Desktop/sage-4.3.alpha1/sage -hg st\n? hmac256\n? jmol\n? pilconvert.py\n? pildriver.py\n? pilfile.py\n? pilfont.py\n? pilprint.py\n? sphinx-autogen\n```\n\nThose files should be added using \"hg add\" and then checked in with \"hg ci\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7607\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen\n\nWith Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:\n\n```\n~/Desktop/sage-4.3.alpha1/sage -hg st\n? hmac256\n? jmol\n? pilconvert.py\n? pildriver.py\n? pilfile.py\n? pilfont.py\n? pilprint.py\n? sphinx-autogen\n```\nThose files should be added using \"hg add\" and then checked in with \"hg ci\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7607\n\n",
     "created_at": "2009-12-05T13:33:46Z",
     "labels": [
         "component: documentation",
@@ -33,7 +33,6 @@ With Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:
 ? pilprint.py
 ? sphinx-autogen
 ```
-
 Those files should be added using "hg add" and then checked in with "hg ci".
 
 Issue created by migration from https://trac.sagemath.org/ticket/7607
@@ -101,7 +100,7 @@ Changing component from documentation to misc.
 archive/issue_comments_064781.json:
 ```json
 {
-    "body": "Attachment [trac_7607-hgignore.patch](tarball://root/attachments/some-uuid/ticket7607/trac_7607-hgignore.patch) by mvngu created at 2009-12-05 13:59:52\n\nReplying to [comment:1 mhansen]:\n> I don't think that those should be checked in since they are installed by spkgs.\n\nYes, good point! Would you consider configuring Mercurial to ignore those files? If so, I have attached the patch `trac_7607-hgignore.patch` to take care of the Mercurial configuration. That patch should be applied to the script repository.",
+    "body": "Attachment [trac_7607-hgignore.patch](tarball://root/attachments/some-uuid/ticket7607/trac_7607-hgignore.patch) by mvngu created at 2009-12-05 13:59:52\n\nReplying to [comment:1 mhansen]:\n> I don't think that those should be checked in since they are installed by spkgs.\n\n\nYes, good point! Would you consider configuring Mercurial to ignore those files? If so, I have attached the patch `trac_7607-hgignore.patch` to take care of the Mercurial configuration. That patch should be applied to the script repository.",
     "created_at": "2009-12-05T13:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7607",
     "type": "issue_comment",
@@ -114,6 +113,7 @@ Attachment [trac_7607-hgignore.patch](tarball://root/attachments/some-uuid/ticke
 
 Replying to [comment:1 mhansen]:
 > I don't think that those should be checked in since they are installed by spkgs.
+
 
 Yes, good point! Would you consider configuring Mercurial to ignore those files? If so, I have attached the patch `trac_7607-hgignore.patch` to take care of the Mercurial configuration. That patch should be applied to the script repository.
 

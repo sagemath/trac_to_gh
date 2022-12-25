@@ -3,7 +3,7 @@
 archive/issues_000273.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nline 35 in sage-location tries to split off SAGE-ROOT by looking for the first occurrence of\n\"local/\" in the string. This fails if, for instance, sage is installed in\n\"/usr/local/sage/latestversion/...\"\n\nA fix that seems to work at present if to search for the last occurrence of \"local/\" instead:\n\n```\n           i = z.rfind('local/')\n```\n\n\nOne would have to check that no further \"local/\" can occur inside\n$SAGE_ROOT/local/\nin order for this criterion to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/273\n\n",
+    "body": "Assignee: @williamstein\n\nline 35 in sage-location tries to split off SAGE-ROOT by looking for the first occurrence of\n\"local/\" in the string. This fails if, for instance, sage is installed in\n\"/usr/local/sage/latestversion/...\"\n\nA fix that seems to work at present if to search for the last occurrence of \"local/\" instead:\n\n```\n           i = z.rfind('local/')\n```\n\nOne would have to check that no further \"local/\" can occur inside\n$SAGE_ROOT/local/\nin order for this criterion to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/273\n\n",
     "created_at": "2007-02-21T02:05:02Z",
     "labels": [
         "component: packages: standard",
@@ -27,7 +27,6 @@ A fix that seems to work at present if to search for the last occurrence of "loc
 ```
            i = z.rfind('local/')
 ```
-
 
 One would have to check that no further "local/" can occur inside
 $SAGE_ROOT/local/

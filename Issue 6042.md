@@ -55,7 +55,7 @@ Applies to 3.4.2
 archive/issue_comments_048022.json:
 ```json
 {
-    "body": "Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by @JohnCremona created at 2009-05-16 15:39:20\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
+    "body": "Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by @JohnCremona created at 2009-05-16 15:39:20\n\nThis is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n\n```\njohn@ubuntu%sage -hg qpush\napplying trac_6042.patch\npatching file sage/modular/modsym/ambient.py\nHunk #17 FAILED at 800\nHunk #25 FAILED at 1291\nHunk #45 FAILED at 2230\nHunk #60 FAILED at 2829\nHunk #61 FAILED at 2836\nHunk #65 FAILED at 2962\nHunk #71 FAILED at 3195\n7 out of 76 hunks FAILED -- saving rejects to file sage/modular/modsym/ambient.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6042.patch\n```\n\nI'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.\n\nI will at least upload my patch  so that it does not get lost, but I have other things to do.",
     "created_at": "2009-05-16T15:39:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ archive/issue_comments_048022.json:
 Attachment [trac_6042.patch](tarball://root/attachments/some-uuid/ticket6042/trac_6042.patch) by @JohnCremona created at 2009-05-16 15:39:20
 
 This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:
-
 
 ```
 john@ubuntu%sage -hg qpush
@@ -86,7 +85,6 @@ patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac_6042.patch
 ```
 
-
 I'm really not sure I can be bothered to mess with this any more.  Is there any system to actually help one merge conflicting patches sensibly?  I have never managed to get things like k3diff to work.
 
 I will at least upload my patch  so that it does not get lost, but I have other things to do.
@@ -98,7 +96,7 @@ I will at least upload my patch  so that it does not get lost, but I have other 
 archive/issue_comments_048023.json:
 ```json
 {
-    "body": "Replying to [comment:1 cremona]:\n> This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n> \n> I will at least upload my patch  so that it does not get lost, but I have other things to do.\n\nHi John,\n\nI feel your pain.  I don't know of an automated system to get this done properly.  But I'll try to rebase it to 4.0alpha0, and review it in the process.  Hopefully I can do this in the next 36 hours or so.",
+    "body": "Replying to [comment:1 cremona]:\n> This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:\n> \n> I will at least upload my patch  so that it does not get lost, but I have other things to do.\n\n\nHi John,\n\nI feel your pain.  I don't know of an automated system to get this done properly.  But I'll try to rebase it to 4.0alpha0, and review it in the process.  Hopefully I can do this in the next 36 hours or so.",
     "created_at": "2009-05-17T00:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -111,6 +109,7 @@ Replying to [comment:1 cremona]:
 > This is just sickening.  I must have spent over 10 hours in the last week documenting this file, resulting in a patch over 2000 lines long, and 100% doctest coverage.  But now I cannot apply it since after the 7 patches on 3 tickets which David warned me about (#5736, #4357 and #5250 all already merged in 4.0alpha0, in that order) I get this mess:
 > 
 > I will at least upload my patch  so that it does not get lost, but I have other things to do.
+
 
 Hi John,
 
@@ -230,7 +229,7 @@ archive/issue_events_014190.json:
 archive/issue_comments_048029.json:
 ```json
 {
-    "body": "Replying to [comment:7 cremona]:\n> BTW, I see that \"rebasing\" has included \"reattributing credit in the patch header\"! :)\n\nHehe, I will fix this once I import the patch. \n\nDavid: Before posting the patch you can just edit the credit in the hg header at the top of the file.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 cremona]:\n> BTW, I see that \"rebasing\" has included \"reattributing credit in the patch header\"! :)\n\n\nHehe, I will fix this once I import the patch. \n\nDavid: Before posting the patch you can just edit the credit in the hg header at the top of the file.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -241,6 +240,7 @@ archive/issue_comments_048029.json:
 
 Replying to [comment:7 cremona]:
 > BTW, I see that "rebasing" has included "reattributing credit in the patch header"! :)
+
 
 Hehe, I will fix this once I import the patch. 
 
@@ -257,7 +257,7 @@ Michael
 archive/issue_comments_048030.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> Replying to [comment:7 cremona]:\n> > BTW, I see that \"rebasing\" has included \"reattributing credit in the patch header\"! :)\n> \n> Hehe, I will fix this once I import the patch. \n> \n> David: Before posting the patch you can just edit the credit in the hg header at the top of the file.\n> \n> Cheers,\n> \n> Michael\n\nOf course I would like credit to go to David too, if hg will allow.",
+    "body": "Replying to [comment:8 mabshoff]:\n> Replying to [comment:7 cremona]:\n> > BTW, I see that \"rebasing\" has included \"reattributing credit in the patch header\"! :)\n\n> \n> Hehe, I will fix this once I import the patch. \n> \n> David: Before posting the patch you can just edit the credit in the hg header at the top of the file.\n> \n> Cheers,\n> \n> Michael\n\n\nOf course I would like credit to go to David too, if hg will allow.",
     "created_at": "2009-05-18T15:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -269,6 +269,7 @@ archive/issue_comments_048030.json:
 Replying to [comment:8 mabshoff]:
 > Replying to [comment:7 cremona]:
 > > BTW, I see that "rebasing" has included "reattributing credit in the patch header"! :)
+
 > 
 > Hehe, I will fix this once I import the patch. 
 > 
@@ -277,6 +278,7 @@ Replying to [comment:8 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Of course I would like credit to go to David too, if hg will allow.
 
@@ -325,7 +327,7 @@ I just found out about "qrefresh -u", so I can masquerade as anybody I like. I'l
 archive/issue_comments_048033.json:
 ```json
 {
-    "body": "Replying to [comment:10 davidloeffler]:\n> I just found out about \"qrefresh -u\", so I can masquerade as anybody I like. I'll now attribute any patches that don't work to some unsuspecting victim :-) I've uploaded a new version with credit correctly attributed to John.\n\nthanks -- I don't really mind, of course, but I was looking when I made sure that yours was a replacement patch and not a second patch.",
+    "body": "Replying to [comment:10 davidloeffler]:\n> I just found out about \"qrefresh -u\", so I can masquerade as anybody I like. I'll now attribute any patches that don't work to some unsuspecting victim :-) I've uploaded a new version with credit correctly attributed to John.\n\n\nthanks -- I don't really mind, of course, but I was looking when I made sure that yours was a replacement patch and not a second patch.",
     "created_at": "2009-05-18T15:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -337,6 +339,7 @@ archive/issue_comments_048033.json:
 Replying to [comment:10 davidloeffler]:
 > I just found out about "qrefresh -u", so I can masquerade as anybody I like. I'll now attribute any patches that don't work to some unsuspecting victim :-) I've uploaded a new version with credit correctly attributed to John.
 
+
 thanks -- I don't really mind, of course, but I was looking when I made sure that yours was a replacement patch and not a second patch.
 
 
@@ -346,7 +349,7 @@ thanks -- I don't really mind, of course, but I was looking when I made sure tha
 archive/issue_comments_048034.json:
 ```json
 {
-    "body": "The rebased patch on top of two other trivial tickets in my 4.0.rc0 merge tree:\n\n```\nOverall weighted coverage score:  75.0%\nTotal number of functions:  22100\nWe need    6 more function to get to 75% coverage.\n```\n\n\n:))\n\nCheers,\n\nMichael",
+    "body": "The rebased patch on top of two other trivial tickets in my 4.0.rc0 merge tree:\n\n```\nOverall weighted coverage score:  75.0%\nTotal number of functions:  22100\nWe need    6 more function to get to 75% coverage.\n```\n\n:))\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T16:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6042",
     "type": "issue_comment",
@@ -362,7 +365,6 @@ Overall weighted coverage score:  75.0%
 Total number of functions:  22100
 We need    6 more function to get to 75% coverage.
 ```
-
 
 :))
 

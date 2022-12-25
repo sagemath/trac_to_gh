@@ -3,7 +3,7 @@
 archive/issues_001773.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst\n\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst\n\n```\nOn 1/13/08, Hector Villafuerte <> wrote:\n> \n> I defined a piecewise function (specifically, a triangular wave) like this:\n> \n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> \n> One can plot it and it looks very nice:\n> \n> sage: tri_wave.plot()\n> \n> But while calculating this integral I get \"ValueError: Value not\n> defined outside of domain.\"\n> \n> sage: integrate(tri_wave(x)^2, x, -1, 3)\n> \n> Is there a way to integrate piecewise-defined functions?\n> As always, thanks for your help,\n\nThis is clearly broken.  As a band-aide, you can at least\nnumerically integrate as follows:\n\nsage: integral_numerical(lambda x: tri_wave(x)^2, -1, 3)\n(1.3333333333333333, 1.4765966227514582e-14)\n\nThe first output (1.3333...) is the answer, and the second is an error bound.\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1773\n\n",
     "created_at": "2008-01-14T06:02:44Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_001773.json:
 Assignee: @williamstein
 
 CC:  @kcrisman @jondo @vbraun @slel @mkoeppe @eviatarbach @rwst
-
 
 ```
 On 1/13/08, Hector Villafuerte <> wrote:
@@ -52,7 +51,6 @@ The first output (1.3333...) is the answer, and the second is an error bound.
 
  -- William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1773
 
@@ -101,7 +99,7 @@ Changing status from new to assigned.
 archive/issue_comments_011185.json:
 ```json
 {
-    "body": "This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*\n\n\n```\nsage: f1(x) = -abs(x) + 1\nsage: f2(x) = abs(x - 2) - 1\nsage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\nsage: tri_wave(x)\nSAME ERROR\n```\n",
+    "body": "This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*\n\n```\nsage: f1(x) = -abs(x) + 1\nsage: f2(x) = abs(x - 2) - 1\nsage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\nsage: tri_wave(x)\nSAME ERROR\n```",
     "created_at": "2009-01-22T07:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -112,7 +110,6 @@ archive/issue_comments_011185.json:
 
 This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*
 
-
 ```
 sage: f1(x) = -abs(x) + 1
 sage: f2(x) = abs(x - 2) - 1
@@ -120,7 +117,6 @@ sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])
 sage: tri_wave(x)
 SAME ERROR
 ```
-
 
 
 
@@ -165,7 +161,7 @@ See also #11225, which is about plotting - but sometimes this stuff causes plots
 archive/issue_comments_011188.json:
 ```json
 {
-    "body": "Replying to [comment:2 rlm]:\n> This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*\n> \n> {{{\n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> sage: tri_wave(x)\n> SAME ERROR\n> }}}\n\nOr see what happens when we try to multiply piecewise and symbolic.\n\n```\nsage: f = Piecewise([[(0,pi/2),-1],[(pi/2,pi),2]]) \nsage: f*sin(x)\n---------------------------------------------------------------------------\nAttributeError              \n```\n",
+    "body": "Replying to [comment:2 rlm]:\n> This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*\n> \n> \n> ```\n> sage: f1(x) = -abs(x) + 1\n> sage: f2(x) = abs(x - 2) - 1\n> sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\n> sage: tri_wave(x)\n> SAME ERROR\n> ```\n\n\nOr see what happens when we try to multiply piecewise and symbolic.\n\n```\nsage: f = Piecewise([[(0,pi/2),-1],[(pi/2,pi),2]]) \nsage: f*sin(x)\n---------------------------------------------------------------------------\nAttributeError              \n```",
     "created_at": "2011-08-15T14:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -177,13 +173,15 @@ archive/issue_comments_011188.json:
 Replying to [comment:2 rlm]:
 > This isn't specific to integrate. The problem is that piecewise functions don't play well with *symbolics*
 > 
-> {{{
+> 
+> ```
 > sage: f1(x) = -abs(x) + 1
 > sage: f2(x) = abs(x - 2) - 1
 > sage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])
 > sage: tri_wave(x)
 > SAME ERROR
-> }}}
+> ```
+
 
 Or see what happens when we try to multiply piecewise and symbolic.
 
@@ -193,7 +191,6 @@ sage: f*sin(x)
 ---------------------------------------------------------------------------
 AttributeError              
 ```
-
 
 
 
@@ -321,7 +318,7 @@ archive/issue_events_004323.json:
 archive/issue_comments_011189.json:
 ```json
 {
-    "body": "While all the examples appearing in the comments are fixed with the new `piecewise` of #14801, the original bug example still fails (but with a different error message). \n\nCc'ing #14801's cc list.\n\n\n```\nsage: f1(x) = -abs(x) + 1\nsage: f2(x) = abs(x - 2) - 1\nsage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\nsage: tri_wave.plot()\nLaunched png viewer for Graphics object consisting of 1 graphics primitive\nsage: integrate(tri_wave(x)^2, x, -1, 3)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-8-9387c34a513c> in <module>()\n----> 1 integrate(tri_wave(x)**Integer(2), x, -Integer(1), Integer(3))\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/misc/functional.py in integral(x, *args, **kwds)\n    663     \"\"\"\n    664     if hasattr(x, 'integral'):\n--> 665         return x.integral(*args, **kwds)\n    666     else:\n    667         from sage.symbolic.ring import SR\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/expression.pyx in sage.symbolic.expression.Expression.integral (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/expression.cpp:60225)()\n  11484                     R = ring.SR\n  11485             return R(integral(f, v, a, b, **kwds))\n> 11486         return integral(self, *args, **kwds)\n  11487 \n  11488     integrate = integral\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/integral.py in integrate(expression, v, a, b, algorithm, hold)\n    763         return indefinite_integral(expression, v, hold=hold)\n    764     else:\n--> 765         return definite_integral(expression, v, a, b, hold=hold)\n    766 \n    767 integral = integrate\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.BuiltinFunction.__call__ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:11170)()\n    970             res = self._evalf_try_(*args)\n    971             if res is None:\n--> 972                 res = super(BuiltinFunction, self).__call__(\n    973                         *args, coerce=coerce, hold=hold)\n    974 \n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.Function.__call__ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:6921)()\n    481             for i from 0 <= i < len(args):\n    482                 vec.push_back((<Expression>args[i])._gobj)\n--> 483             res = g_function_evalv(self._serial, vec, hold)\n    484         elif self._nargs == 1:\n    485             res = g_function_eval1(self._serial,\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.BuiltinFunction._evalf_or_eval_ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:12417)()\n   1059         res = self._evalf_try_(*args)\n   1060         if res is None:\n-> 1061             return self._eval0_(*args)\n   1062         else:\n   1063             return res\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/integral.py in _eval_(self, f, x, a, b)\n    176         for integrator in self.integrators:\n    177             try:\n--> 178                 return integrator(*args)\n    179             except NotImplementedError:\n    180                 pass\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/external.py in maxima_integrator(expression, v, a, b)\n     22         result = maxima.sr_integral(expression,v)\n     23     else:\n---> 24         result = maxima.sr_integral(expression, v, a, b)\n     25     return result._sage_()\n     26 \n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in sr_integral(self, *args)\n    796         \"\"\"\n    797         try:\n--> 798             return max_to_sr(maxima_eval(([max_integrate],[sr_to_max(SR(a)) for a in args])))\n    799         except RuntimeError as error:\n    800             s = str(error)\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1634         op_max=caar(expr)\n   1635         if op_max in special_max_to_sage:\n-> 1636             return special_max_to_sage[op_max](expr)\n   1637         if not(op_max in max_op_dict):\n   1638             op_max_str=maxprint(op_max).python()[1:-1]\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in dummy_integrate(expr)\n   1428         integrate(f(x), x, 0, 10)\n   1429     \"\"\"\n-> 1430     args=[max_to_sr(a) for a in cdr(expr)]\n   1431     if len(args) == 4 :\n   1432         return sage.symbolic.integration.integral.definite_integral(*args,\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1651             op=max_op_dict[op_max]\n   1652         max_args=cdr(expr)\n-> 1653         args=[max_to_sr(a) for a in max_args]\n   1654         return op(*args)\n   1655     elif expr.symbolp():\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1652         max_args=cdr(expr)\n   1653         args=[max_to_sr(a) for a in max_args]\n-> 1654         return op(*args)\n   1655     elif expr.symbolp():\n   1656         if not(expr in max_sym_dict):\n\nTypeError: __call__() takes exactly 2 arguments (3 given)\n```\n",
+    "body": "While all the examples appearing in the comments are fixed with the new `piecewise` of #14801, the original bug example still fails (but with a different error message). \n\nCc'ing #14801's cc list.\n\n```\nsage: f1(x) = -abs(x) + 1\nsage: f2(x) = abs(x - 2) - 1\nsage: tri_wave = piecewise([ [(-1,1), f1], [(1,3), f2]])\nsage: tri_wave.plot()\nLaunched png viewer for Graphics object consisting of 1 graphics primitive\nsage: integrate(tri_wave(x)^2, x, -1, 3)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-8-9387c34a513c> in <module>()\n----> 1 integrate(tri_wave(x)**Integer(2), x, -Integer(1), Integer(3))\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/misc/functional.py in integral(x, *args, **kwds)\n    663     \"\"\"\n    664     if hasattr(x, 'integral'):\n--> 665         return x.integral(*args, **kwds)\n    666     else:\n    667         from sage.symbolic.ring import SR\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/expression.pyx in sage.symbolic.expression.Expression.integral (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/expression.cpp:60225)()\n  11484                     R = ring.SR\n  11485             return R(integral(f, v, a, b, **kwds))\n> 11486         return integral(self, *args, **kwds)\n  11487 \n  11488     integrate = integral\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/integral.py in integrate(expression, v, a, b, algorithm, hold)\n    763         return indefinite_integral(expression, v, hold=hold)\n    764     else:\n--> 765         return definite_integral(expression, v, a, b, hold=hold)\n    766 \n    767 integral = integrate\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.BuiltinFunction.__call__ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:11170)()\n    970             res = self._evalf_try_(*args)\n    971             if res is None:\n--> 972                 res = super(BuiltinFunction, self).__call__(\n    973                         *args, coerce=coerce, hold=hold)\n    974 \n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.Function.__call__ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:6921)()\n    481             for i from 0 <= i < len(args):\n    482                 vec.push_back((<Expression>args[i])._gobj)\n--> 483             res = g_function_evalv(self._serial, vec, hold)\n    484         elif self._nargs == 1:\n    485             res = g_function_eval1(self._serial,\n\n/Users/mkoeppe/cvs/sage/src/sage/symbolic/function.pyx in sage.symbolic.function.BuiltinFunction._evalf_or_eval_ (/Users/mkoeppe/cvs/sage/src/build/cythonized/sage/symbolic/function.cpp:12417)()\n   1059         res = self._evalf_try_(*args)\n   1060         if res is None:\n-> 1061             return self._eval0_(*args)\n   1062         else:\n   1063             return res\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/integral.py in _eval_(self, f, x, a, b)\n    176         for integrator in self.integrators:\n    177             try:\n--> 178                 return integrator(*args)\n    179             except NotImplementedError:\n    180                 pass\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/symbolic/integration/external.py in maxima_integrator(expression, v, a, b)\n     22         result = maxima.sr_integral(expression,v)\n     23     else:\n---> 24         result = maxima.sr_integral(expression, v, a, b)\n     25     return result._sage_()\n     26 \n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in sr_integral(self, *args)\n    796         \"\"\"\n    797         try:\n--> 798             return max_to_sr(maxima_eval(([max_integrate],[sr_to_max(SR(a)) for a in args])))\n    799         except RuntimeError as error:\n    800             s = str(error)\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1634         op_max=caar(expr)\n   1635         if op_max in special_max_to_sage:\n-> 1636             return special_max_to_sage[op_max](expr)\n   1637         if not(op_max in max_op_dict):\n   1638             op_max_str=maxprint(op_max).python()[1:-1]\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in dummy_integrate(expr)\n   1428         integrate(f(x), x, 0, 10)\n   1429     \"\"\"\n-> 1430     args=[max_to_sr(a) for a in cdr(expr)]\n   1431     if len(args) == 4 :\n   1432         return sage.symbolic.integration.integral.definite_integral(*args,\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1651             op=max_op_dict[op_max]\n   1652         max_args=cdr(expr)\n-> 1653         args=[max_to_sr(a) for a in max_args]\n   1654         return op(*args)\n   1655     elif expr.symbolp():\n\n/Users/mkoeppe/cvs/sage/local/lib/python2.7/site-packages/sage/interfaces/maxima_lib.py in max_to_sr(expr)\n   1652         max_args=cdr(expr)\n   1653         args=[max_to_sr(a) for a in max_args]\n-> 1654         return op(*args)\n   1655     elif expr.symbolp():\n   1656         if not(expr in max_sym_dict):\n\nTypeError: __call__() takes exactly 2 arguments (3 given)\n```",
     "created_at": "2016-06-25T17:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -333,7 +330,6 @@ archive/issue_comments_011189.json:
 While all the examples appearing in the comments are fixed with the new `piecewise` of #14801, the original bug example still fails (but with a different error message). 
 
 Cc'ing #14801's cc list.
-
 
 ```
 sage: f1(x) = -abs(x) + 1
@@ -443,7 +439,6 @@ TypeError: __call__() takes exactly 2 arguments (3 given)
 
 
 
-
 ---
 
 archive/issue_events_004324.json:
@@ -483,7 +478,7 @@ archive/issue_events_004325.json:
 archive/issue_comments_011190.json:
 ```json
 {
-    "body": "The problem on first sight here is that operations on `piecewise` do not get translated to what is expected, i.e., squaring the pieces. Also it seems that Maxima does not convert them, nor is it considering loading `pw.mac` without which it simply knows nothing about piecewise functions. So we must either load this package when encountering `piecewise` in the Maxima interface then convert, or the expression must be simplified, i.e., the operations applied piecewise, probably by Pynac. Or both.\n\nOf course, the `integral` member function is accessible with pure `piecewise` objects:\n\n```\nsage: tri_wave1 = piecewise([ [(-1,1), f1^2], [(1,3), f2^2]])\nsage: tri_wave1.integral(definite=True)\n4/3\n```\n",
+    "body": "The problem on first sight here is that operations on `piecewise` do not get translated to what is expected, i.e., squaring the pieces. Also it seems that Maxima does not convert them, nor is it considering loading `pw.mac` without which it simply knows nothing about piecewise functions. So we must either load this package when encountering `piecewise` in the Maxima interface then convert, or the expression must be simplified, i.e., the operations applied piecewise, probably by Pynac. Or both.\n\nOf course, the `integral` member function is accessible with pure `piecewise` objects:\n\n```\nsage: tri_wave1 = piecewise([ [(-1,1), f1^2], [(1,3), f2^2]])\nsage: tri_wave1.integral(definite=True)\n4/3\n```",
     "created_at": "2016-06-26T15:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -504,13 +499,12 @@ sage: tri_wave1.integral(definite=True)
 
 
 
-
 ---
 
 archive/issue_comments_011191.json:
 ```json
 {
-    "body": "`@`rws: does adding a new `__pow__` method in piecewise fix the issue or not? (cf. code+test added in this branch)\n\n\n----\n\n\n... well it doesn't work for the OP problem, but that's another thing (misuse?) i guess, since:\n\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x, -1, 3)\n...\nValueError: point 3 is not in the domain\n```\n\n\nalthough\n\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x)\npiecewise(x|-->1/2*x^2 - 1/2 on (-1, 1), x|-->1/3*x^3 - 1/3 on (1, 3); x)\n```\n\n\nand with the current patch one has:\n\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]])**2, x)\npiecewise(x|-->1/3*x^3 + 1/3 on (-1, 1), x|-->1/5*x^5 + 7/15 on (1, 3); x)\n```\n\n----\nNew commits:",
+    "body": "`@`rws: does adding a new `__pow__` method in piecewise fix the issue or not? (cf. code+test added in this branch)\n\n\n---\n\n\n... well it doesn't work for the OP problem, but that's another thing (misuse?) i guess, since:\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x, -1, 3)\n...\nValueError: point 3 is not in the domain\n```\n\nalthough\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x)\npiecewise(x|-->1/2*x^2 - 1/2 on (-1, 1), x|-->1/3*x^3 - 1/3 on (1, 3); x)\n```\n\nand with the current patch one has:\n\n```\nsage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]])**2, x)\npiecewise(x|-->1/3*x^3 + 1/3 on (-1, 1), x|-->1/5*x^5 + 7/15 on (1, 3); x)\n```\n\n---\nNew commits:",
     "created_at": "2017-05-07T19:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -522,11 +516,10 @@ archive/issue_comments_011191.json:
 `@`rws: does adding a new `__pow__` method in piecewise fix the issue or not? (cf. code+test added in this branch)
 
 
-----
+---
 
 
 ... well it doesn't work for the OP problem, but that's another thing (misuse?) i guess, since:
-
 
 ```
 sage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x, -1, 3)
@@ -534,25 +527,21 @@ sage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x, -1, 3)
 ValueError: point 3 is not in the domain
 ```
 
-
 although
-
 
 ```
 sage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]]), x)
 piecewise(x|-->1/2*x^2 - 1/2 on (-1, 1), x|-->1/3*x^3 - 1/3 on (1, 3); x)
 ```
 
-
 and with the current patch one has:
-
 
 ```
 sage: integrate(piecewise([ [(-1,1), x], [(1,3), x^2]])**2, x)
 piecewise(x|-->1/3*x^3 + 1/3 on (-1, 1), x|-->1/5*x^5 + 7/15 on (1, 3); x)
 ```
 
-----
+---
 New commits:
 
 
@@ -580,7 +569,7 @@ Changing status from new to needs_review.
 archive/issue_comments_011193.json:
 ```json
 {
-    "body": "Hmmm, what i've uploaded doesn't work well with symbolic expressions as exponents!\n\n\n```\nsage: f = piecewise([ [(-1,1), x], [(1,3), x^2]])\nsage: k = var('k')\nsage: f**k\npiecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)\n```\n\n\nthe independent variable is misunderstood.",
+    "body": "Hmmm, what i've uploaded doesn't work well with symbolic expressions as exponents!\n\n```\nsage: f = piecewise([ [(-1,1), x], [(1,3), x^2]])\nsage: k = var('k')\nsage: f**k\npiecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)\n```\n\nthe independent variable is misunderstood.",
     "created_at": "2017-05-07T19:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -591,14 +580,12 @@ archive/issue_comments_011193.json:
 
 Hmmm, what i've uploaded doesn't work well with symbolic expressions as exponents!
 
-
 ```
 sage: f = piecewise([ [(-1,1), x], [(1,3), x^2]])
 sage: k = var('k')
 sage: f**k
 piecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)
 ```
-
 
 the independent variable is misunderstood.
 
@@ -609,7 +596,7 @@ the independent variable is misunderstood.
 archive/issue_comments_011194.json:
 ```json
 {
-    "body": "This seems to depend on if the expression contains a lexicographically earlier symbol:\n\n```\nsage: f^y\npiecewise(x|-->x^y on (-1, 1), x|-->(x^2)^y on (1, 3); x)\nsage: f^k\npiecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)\nsage: f^z\npiecewise(x|-->x^z on (-1, 1), x|-->(x^2)^z on (1, 3); x)\nsage: f^t\npiecewise(t|-->x^t on (-1, 1), t|-->(x^2)^t on (1, 3); t)\n```\n",
+    "body": "This seems to depend on if the expression contains a lexicographically earlier symbol:\n\n```\nsage: f^y\npiecewise(x|-->x^y on (-1, 1), x|-->(x^2)^y on (1, 3); x)\nsage: f^k\npiecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)\nsage: f^z\npiecewise(x|-->x^z on (-1, 1), x|-->(x^2)^z on (1, 3); x)\nsage: f^t\npiecewise(t|-->x^t on (-1, 1), t|-->(x^2)^t on (1, 3); t)\n```",
     "created_at": "2017-05-08T06:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -630,7 +617,6 @@ piecewise(x|-->x^z on (-1, 1), x|-->(x^2)^z on (1, 3); x)
 sage: f^t
 piecewise(t|-->x^t on (-1, 1), t|-->(x^2)^t on (1, 3); t)
 ```
-
 
 
 
@@ -657,7 +643,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_011196.json:
 ```json
 {
-    "body": "Replying to [comment:17 rws]:\n> This seems to depend on if the expression contains a lexicographically earlier symbol:\n> {{{\n> sage: f^y\n> piecewise(x|-->x^y on (-1, 1), x|-->(x<sup>2)</sup>y on (1, 3); x)\n> sage: f^k\n> piecewise(k|-->x^k on (-1, 1), k|-->(x<sup>2)</sup>k on (1, 3); k)\n> sage: f^z\n> piecewise(x|-->x^z on (-1, 1), x|-->(x<sup>2)</sup>z on (1, 3); x)\n> sage: f^t\n> piecewise(t|-->x^t on (-1, 1), t|-->(x<sup>2)</sup>t on (1, 3); t)\n> }}}\n\nOk, i see. as a workaround i've specified the `var` argument to the constructor, which gives the same result as `self.variables()[0]`.",
+    "body": "Replying to [comment:17 rws]:\n> This seems to depend on if the expression contains a lexicographically earlier symbol:\n> \n> ```\n> sage: f^y\n> piecewise(x|-->x^y on (-1, 1), x|-->(x^2)^y on (1, 3); x)\n> sage: f^k\n> piecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)\n> sage: f^z\n> piecewise(x|-->x^z on (-1, 1), x|-->(x^2)^z on (1, 3); x)\n> sage: f^t\n> piecewise(t|-->x^t on (-1, 1), t|-->(x^2)^t on (1, 3); t)\n> ```\n\n\nOk, i see. as a workaround i've specified the `var` argument to the constructor, which gives the same result as `self.variables()[0]`.",
     "created_at": "2017-05-08T14:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1773",
     "type": "issue_comment",
@@ -668,16 +654,18 @@ archive/issue_comments_011196.json:
 
 Replying to [comment:17 rws]:
 > This seems to depend on if the expression contains a lexicographically earlier symbol:
-> {{{
+> 
+> ```
 > sage: f^y
-> piecewise(x|-->x^y on (-1, 1), x|-->(x<sup>2)</sup>y on (1, 3); x)
+> piecewise(x|-->x^y on (-1, 1), x|-->(x^2)^y on (1, 3); x)
 > sage: f^k
-> piecewise(k|-->x^k on (-1, 1), k|-->(x<sup>2)</sup>k on (1, 3); k)
+> piecewise(k|-->x^k on (-1, 1), k|-->(x^2)^k on (1, 3); k)
 > sage: f^z
-> piecewise(x|-->x^z on (-1, 1), x|-->(x<sup>2)</sup>z on (1, 3); x)
+> piecewise(x|-->x^z on (-1, 1), x|-->(x^2)^z on (1, 3); x)
 > sage: f^t
-> piecewise(t|-->x^t on (-1, 1), t|-->(x<sup>2)</sup>t on (1, 3); t)
-> }}}
+> piecewise(t|-->x^t on (-1, 1), t|-->(x^2)^t on (1, 3); t)
+> ```
+
 
 Ok, i see. as a workaround i've specified the `var` argument to the constructor, which gives the same result as `self.variables()[0]`.
 

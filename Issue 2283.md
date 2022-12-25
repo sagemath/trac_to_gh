@@ -3,7 +3,7 @@
 archive/issues_002283.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nIn this example the last print statement goes boom, but should work fine.\n\n\n```\nclass Foo:\n   def __rmul__(self, left):\n      return 'hello'\n\nH = Foo()\nprint int(3)*H\nprint 3*H\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2283\n\n",
+    "body": "Assignee: @robertwb\n\nIn this example the last print statement goes boom, but should work fine.\n\n```\nclass Foo:\n   def __rmul__(self, left):\n      return 'hello'\n\nH = Foo()\nprint int(3)*H\nprint 3*H\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2283\n\n",
     "created_at": "2008-02-23T22:32:25Z",
     "labels": [
         "component: coercion",
@@ -20,7 +20,6 @@ Assignee: @robertwb
 
 In this example the last print statement goes boom, but should work fine.
 
-
 ```
 class Foo:
    def __rmul__(self, left):
@@ -30,7 +29,6 @@ H = Foo()
 print int(3)*H
 print 3*H
 ```
-
 
 
 
@@ -63,7 +61,7 @@ Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283
 archive/issue_comments_015113.json:
 ```json
 {
-    "body": "Currently, (before this patch), if a class did\n\n\n```\n_r_action = __rmul__\n```\n\n\nthings would work since the coercion model looks for an _r_action function as a last resort.  This patch just makes this line unnecessary by having the coercion system also look for an __rmul__ function (which is standard python; see http://docs.python.org/ref/numeric-types.html)\n\nApparently this patch is controversial to at least one person, so it probably ought to be discussed.",
+    "body": "Currently, (before this patch), if a class did\n\n```\n_r_action = __rmul__\n```\n\nthings would work since the coercion model looks for an _r_action function as a last resort.  This patch just makes this line unnecessary by having the coercion system also look for an __rmul__ function (which is standard python; see http://docs.python.org/ref/numeric-types.html)\n\nApparently this patch is controversial to at least one person, so it probably ought to be discussed.",
     "created_at": "2008-02-27T21:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
@@ -74,11 +72,9 @@ archive/issue_comments_015113.json:
 
 Currently, (before this patch), if a class did
 
-
 ```
 _r_action = __rmul__
 ```
-
 
 things would work since the coercion model looks for an _r_action function as a last resort.  This patch just makes this line unnecessary by having the coercion system also look for an __rmul__ function (which is standard python; see http://docs.python.org/ref/numeric-types.html)
 

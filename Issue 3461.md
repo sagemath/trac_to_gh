@@ -3,7 +3,7 @@
 archive/issues_003461.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nThis happens in the coercion branch:\n\n\n```\nsage: P1 = PermutationGroup([[(1,2)]]); P1\nPermutation Group with generators [(1,2)]\nsage: P2 = PermutationGroup([[(1,3)]]); P2\nPermutation Group with generators [(1,3)]\nsage: p1 = P1.gen(); p2 = P2.gen()\nsage: p1*p2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.0.3.rc0/devel/sage-main/sage/combinat/matrices/<ipython console> in <module>()\n\n/opt/sage-3.0.3.rc0/devel/sage-main/sage/combinat/matrices/element.pyx in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7517)()\n\nTypeError: unsupported operand parent(s) for '*': 'Permutation Group with generators [(1,2)]' and 'Permutation Group with generators [(1,3)]'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3461\n\n",
+    "body": "Assignee: joyner\n\nThis happens in the coercion branch:\n\n```\nsage: P1 = PermutationGroup([[(1,2)]]); P1\nPermutation Group with generators [(1,2)]\nsage: P2 = PermutationGroup([[(1,3)]]); P2\nPermutation Group with generators [(1,3)]\nsage: p1 = P1.gen(); p2 = P2.gen()\nsage: p1*p2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-3.0.3.rc0/devel/sage-main/sage/combinat/matrices/<ipython console> in <module>()\n\n/opt/sage-3.0.3.rc0/devel/sage-main/sage/combinat/matrices/element.pyx in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7517)()\n\nTypeError: unsupported operand parent(s) for '*': 'Permutation Group with generators [(1,2)]' and 'Permutation Group with generators [(1,3)]'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3461\n\n",
     "created_at": "2008-06-18T09:05:16Z",
     "labels": [
         "component: group theory",
@@ -21,7 +21,6 @@ Assignee: joyner
 
 This happens in the coercion branch:
 
-
 ```
 sage: P1 = PermutationGroup([[(1,2)]]); P1
 Permutation Group with generators [(1,2)]
@@ -38,7 +37,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unsupported operand parent(s) for '*': 'Permutation Group with generators [(1,2)]' and 'Permutation Group with generators [(1,3)]'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3461
 

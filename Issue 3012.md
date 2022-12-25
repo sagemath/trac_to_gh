@@ -3,7 +3,7 @@
 archive/issues_003012.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nBjake Hammersholt Roune reported:\n\n```\n> [...]\n sage -t  devel/sage/sage/plot/animate.py                    sh:\n convert: command\n  not found\n```\n\nHide it or test if it exists before running it. This should be easy to fix.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3012\n\n",
+    "body": "Assignee: mabshoff\n\nBjake Hammersholt Roune reported:\n\n```\n> [...]\n sage -t  devel/sage/sage/plot/animate.py                    sh:\n convert: command\n  not found\n```\nHide it or test if it exists before running it. This should be easy to fix.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3012\n\n",
     "created_at": "2008-04-23T22:07:43Z",
     "labels": [
         "component: misc",
@@ -26,7 +26,6 @@ Bjake Hammersholt Roune reported:
  convert: command
   not found
 ```
-
 Hide it or test if it exists before running it. This should be easy to fix.
 
 Cheers,

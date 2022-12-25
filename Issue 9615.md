@@ -3,7 +3,7 @@
 archive/issues_009615.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\n\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
+    "body": "Assignee: mvngu\n\nCC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
     "created_at": "2010-07-28T02:41:49Z",
     "labels": [
         "component: doctest coverage",
@@ -35,7 +35,6 @@ Got:
     -1.28235854574334e-17
 ----------------------------------------------- 
 ```
-
 This is related to #5396.
 
 
@@ -218,7 +217,7 @@ If this kind of behavior is expected on 32-bit versus 64-bit machines, and if lc
 archive/issue_comments_092960.json:
 ```json
 {
-    "body": "Replying to [comment:5 ddrake]:\n> [...] It seems unusual to me that software doing floating point calculations would return precisely zero on some platforms and a noisy zero on others. \n> \n> If this kind of behavior is expected on 32-bit versus 64-bit machines, [...]\n\nI can only imagine this is related to (unintentionally) different [default] rounding modes on different processors.\n\nSo this patch fixes the failing doctest (which is IMHO ok for the moment), but doesn't address its reason.\n\nUnless the involved `abs()` (or `<`) is somehow broken, I can give this a positive review without applying the patch and actually testing it... ;-)",
+    "body": "Replying to [comment:5 ddrake]:\n> [...] It seems unusual to me that software doing floating point calculations would return precisely zero on some platforms and a noisy zero on others. \n> \n> If this kind of behavior is expected on 32-bit versus 64-bit machines, [...]\n\n\nI can only imagine this is related to (unintentionally) different [default] rounding modes on different processors.\n\nSo this patch fixes the failing doctest (which is IMHO ok for the moment), but doesn't address its reason.\n\nUnless the involved `abs()` (or `<`) is somehow broken, I can give this a positive review without applying the patch and actually testing it... ;-)",
     "created_at": "2010-07-29T01:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -231,6 +230,7 @@ Replying to [comment:5 ddrake]:
 > [...] It seems unusual to me that software doing floating point calculations would return precisely zero on some platforms and a noisy zero on others. 
 > 
 > If this kind of behavior is expected on 32-bit versus 64-bit machines, [...]
+
 
 I can only imagine this is related to (unintentionally) different [default] rounding modes on different processors.
 
@@ -267,7 +267,7 @@ I remember there was a single machine reported on sage-release to have a differe
 archive/issue_comments_092962.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).\n\n    \n  ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,\n  though the non-zero value in the lcalc test is slightly different (~e-18). [...]''\n  \n  *Rob*\n\nRob, could you perhaps test this patch, too? (Though I don't expect it to fail on your machine either, since your result was even closer to zero.)",
+    "body": "Replying to [comment:7 leif]:\n> I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).\n\n\n    \n  ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,\n  though the non-zero value in the lcalc test is slightly different (~e-18). [...]''\n  \n  *Rob*\n\nRob, could you perhaps test this patch, too? (Though I don't expect it to fail on your machine either, since your result was even closer to zero.)",
     "created_at": "2010-07-29T02:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -278,6 +278,7 @@ archive/issue_comments_092962.json:
 
 Replying to [comment:7 leif]:
 > I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).
+
 
     
   ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,
@@ -321,7 +322,7 @@ Replying to [comment:5 ddrake]:
 archive/issue_comments_092964.json:
 ```json
 {
-    "body": "Same 32-bit system as before, applied \".2\" patch.  Then\n\n\n```\nsage -t -long \"devel/sage-main/sage/libs/lcalc/lcalc_Lfunction.pyx\"\n\t [3.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.3 seconds\n```\n\n\nReplying to [comment:8 leif]:\n> Replying to [comment:7 leif]:\n> > I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).\n> \n>     \n>   ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,\n>   though the non-zero value in the lcalc test is slightly different (~e-18). [...]''\n>   \n>   *Rob*\n> \n> Rob, could you perhaps test this patch, too? (Though I don't expect it to fail on your machine either, since your result was even closer to zero.)",
+    "body": "Same 32-bit system as before, applied \".2\" patch.  Then\n\n```\nsage -t -long \"devel/sage-main/sage/libs/lcalc/lcalc_Lfunction.pyx\"\n\t [3.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.3 seconds\n```\n\nReplying to [comment:8 leif]:\n> Replying to [comment:7 leif]:\n> > I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).\n\n> \n>     \n\n>   ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,\n>   though the non-zero value in the lcalc test is slightly different (~e-18). [...]''\n>   \n>   *Rob*\n\n> \n> Rob, could you perhaps test this patch, too? (Though I don't expect it to fail on your machine either, since your result was even closer to zero.)",
     "created_at": "2010-07-29T03:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -332,7 +333,6 @@ archive/issue_comments_092964.json:
 
 Same 32-bit system as before, applied ".2" patch.  Then
 
-
 ```
 sage -t -long "devel/sage-main/sage/libs/lcalc/lcalc_Lfunction.pyx"
 	 [3.3 s]
@@ -342,16 +342,18 @@ All tests passed!
 Total time for all tests: 3.3 seconds
 ```
 
-
 Replying to [comment:8 leif]:
 > Replying to [comment:7 leif]:
 > > I remember there was a single machine reported on sage-release to have a different result than my two 32-bit machines previously had, on which the patch should perhaps be tested, too (but afair also with `abs(...)` below 10<sup>-15</sup>).
+
 > 
 >     
+
 >   ''[...] On 32-bit Ubuntu 10.04 on Pentium M I get the same results as Harald,
 >   though the non-zero value in the lcalc test is slightly different (~e-18). [...]''
 >   
 >   *Rob*
+
 > 
 > Rob, could you perhaps test this patch, too? (Though I don't expect it to fail on your machine either, since your result was even closer to zero.)
 
@@ -362,7 +364,7 @@ Replying to [comment:8 leif]:
 archive/issue_comments_092965.json:
 ```json
 {
-    "body": "Replying to [comment:5 ddrake]:\n> The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.\n\nFor what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).",
+    "body": "Replying to [comment:5 ddrake]:\n> The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.\n\n\nFor what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).",
     "created_at": "2010-07-29T04:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -373,6 +375,7 @@ archive/issue_comments_092965.json:
 
 Replying to [comment:5 ddrake]:
 > The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.
+
 
 For what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).
 
@@ -478,7 +481,7 @@ Resolution: fixed
 archive/issue_comments_092970.json:
 ```json
 {
-    "body": "Replying to [comment:11 jhpalmieri]:\n> Replying to [comment:5 ddrake]:\n> > The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.\n> \n> For what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).\n\nDoes iras default to 32-bit builds? (I only know it's running a 64-bit SuSE.)\n\nI ask this because Harald also saw this doctest failure on a (newer) 64-bit processor running a 32-bit OS (Core2 quad, Ubuntu 8.10 x86).\n\n----\n\nI think someone should track down if this difference is an lcalc \"feature\" or perhaps a Sage library interface issue (and in the latter case open a new ticket).",
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Replying to [comment:5 ddrake]:\n> > The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.\n\n> \n> For what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).\n\n\nDoes iras default to 32-bit builds? (I only know it's running a 64-bit SuSE.)\n\nI ask this because Harald also saw this doctest failure on a (newer) 64-bit processor running a 32-bit OS (Core2 quad, Ubuntu 8.10 x86).\n\n---\n\nI think someone should track down if this difference is an lcalc \"feature\" or perhaps a Sage library interface issue (and in the latter case open a new ticket).",
     "created_at": "2010-07-29T17:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -490,14 +493,16 @@ archive/issue_comments_092970.json:
 Replying to [comment:11 jhpalmieri]:
 > Replying to [comment:5 ddrake]:
 > > The patch fixes the problem on a 32-bit Ubuntu Hardy VM which exhibits the doctest failure.
+
 > 
 > For what it's worth, it also fixes it on two different skynet machines which had the failure: cicero (x86-Linux-pentium4-fc) and iras (ia64-Linux-suse).
+
 
 Does iras default to 32-bit builds? (I only know it's running a 64-bit SuSE.)
 
 I ask this because Harald also saw this doctest failure on a (newer) 64-bit processor running a 32-bit OS (Core2 quad, Ubuntu 8.10 x86).
 
-----
+---
 
 I think someone should track down if this difference is an lcalc "feature" or perhaps a Sage library interface issue (and in the latter case open a new ticket).
 
@@ -508,7 +513,7 @@ I think someone should track down if this difference is an lcalc "feature" or pe
 archive/issue_comments_092971.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n>  * [attachment:trac_9615-lcalc_doctest_note.patch]\n> \n>  [...] which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?\n\nWell, I would have written\n\n```\n          ... # \"noisy\" zero on some platforms (see #9615)\n```\n\n\nBut now it's too late...",
+    "body": "Replying to [comment:12 mpatel]:\n>  * [attachment:trac_9615-lcalc_doctest_note.patch]\n \n> \n>  [...] which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?\n\n\nWell, I would have written\n\n```\n          ... # \"noisy\" zero on some platforms (see #9615)\n```\n\nBut now it's too late...",
     "created_at": "2010-07-29T17:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -519,15 +524,16 @@ archive/issue_comments_092971.json:
 
 Replying to [comment:12 mpatel]:
 >  * [attachment:trac_9615-lcalc_doctest_note.patch]
+ 
 > 
 >  [...] which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?
+
 
 Well, I would have written
 
 ```
           ... # "noisy" zero on some platforms (see #9615)
 ```
-
 
 But now it's too late...
 
@@ -558,7 +564,7 @@ Use Leif's better note.  Replaces previous version.  Apply on top of [attachment
 archive/issue_comments_092973.json:
 ```json
 {
-    "body": "Replying to [comment:15 leif]:\n> But now it's too late...\n\nI've attached an update with Leif's better comment.  I'll merge\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.2.patch]\n\ninto 4.5.2.rc0.  I'm adding Leif as an author and me as a reviewer.",
+    "body": "Replying to [comment:15 leif]:\n> But now it's too late...\n\n\nI've attached an update with Leif's better comment.  I'll merge\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.2.patch]\n\ninto 4.5.2.rc0.  I'm adding Leif as an author and me as a reviewer.",
     "created_at": "2010-08-01T08:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
@@ -569,6 +575,7 @@ archive/issue_comments_092973.json:
 
 Replying to [comment:15 leif]:
 > But now it's too late...
+
 
 I've attached an update with Leif's better comment.  I'll merge
 

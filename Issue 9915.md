@@ -127,7 +127,7 @@ I can still merge this into 4.6.alpha1, while I wait for a response to a build e
 archive/issue_comments_098496.json:
 ```json
 {
-    "body": "Are the stack size warnings expected here:\n\n```python\nsage -t -long  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4805:\n    sage: S\nExpected:\n    Shafarevich-Tate group for the Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field\nGot:\n    Tate-Shafarevich group for the Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field\n```\n\n?",
+    "body": "Are the stack size warnings expected here:\n\n```python\nsage -t -long  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n  ***   Warning: new stack size = 1003360 (0.957 Mbytes).\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 4805:\n    sage: S\nExpected:\n    Shafarevich-Tate group for the Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field\nGot:\n    Tate-Shafarevich group for the Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field\n```\n?",
     "created_at": "2010-09-16T23:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -150,7 +150,6 @@ Expected:
 Got:
     Tate-Shafarevich group for the Elliptic Curve defined by y^2 + y = x^3 - x over Rational Field
 ```
-
 ?
 
 
@@ -202,7 +201,7 @@ By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha
 archive/issue_comments_098499.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> I can upload a second patch for that, too, which in addition fixes one occurrence (documentation only) in `.../elliptic_curves/padic_lseries.py` as well.\n\nCould you add the patch?  I haven't fixed this elsewhere.  Thanks for opening this ticket.",
+    "body": "Replying to [comment:7 leif]:\n> I can upload a second patch for that, too, which in addition fixes one occurrence (documentation only) in `.../elliptic_curves/padic_lseries.py` as well.\n\n\nCould you add the patch?  I haven't fixed this elsewhere.  Thanks for opening this ticket.",
     "created_at": "2010-09-17T00:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -214,6 +213,7 @@ archive/issue_comments_098499.json:
 Replying to [comment:7 leif]:
 > I can upload a second patch for that, too, which in addition fixes one occurrence (documentation only) in `.../elliptic_curves/padic_lseries.py` as well.
 
+
 Could you add the patch?  I haven't fixed this elsewhere.  Thanks for opening this ticket.
 
 
@@ -223,7 +223,7 @@ Could you add the patch?  I haven't fixed this elsewhere.  Thanks for opening th
 archive/issue_comments_098500.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha1` on the Sage cluster.\n\n? What do you think mine came from? ;-) Or did you mean the **absent reviewers**?\n\n(Cron ignores \"README_first\"...)\n\nSo I'll upload a second patch in a few seconds.",
+    "body": "Replying to [comment:8 mpatel]:\n> By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha1` on the Sage cluster.\n\n\n? What do you think mine came from? ;-) Or did you mean the **absent reviewers**?\n\n(Cron ignores \"README_first\"...)\n\nSo I'll upload a second patch in a few seconds.",
     "created_at": "2010-09-17T00:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -234,6 +234,7 @@ archive/issue_comments_098500.json:
 
 Replying to [comment:8 mpatel]:
 > By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha1` on the Sage cluster.
+
 
 ? What do you think mine came from? ;-) Or did you mean the **absent reviewers**?
 
@@ -360,7 +361,7 @@ Apologies for my bad work on #9330 which caused all this to happen. Thanks for f
 archive/issue_comments_098506.json:
 ```json
 {
-    "body": "Replying to [comment:16 wuthrich]:\n> Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.\n\nNever mind. If only all doctest failures (or bugs) were that trivial to fix...\n\nI just cc'ed all of you to get this reviewed as quick as possible, not to blame anyone.",
+    "body": "Replying to [comment:16 wuthrich]:\n> Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.\n\n\nNever mind. If only all doctest failures (or bugs) were that trivial to fix...\n\nI just cc'ed all of you to get this reviewed as quick as possible, not to blame anyone.",
     "created_at": "2010-09-17T18:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -371,6 +372,7 @@ archive/issue_comments_098506.json:
 
 Replying to [comment:16 wuthrich]:
 > Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.
+
 
 Never mind. If only all doctest failures (or bugs) were that trivial to fix...
 
@@ -383,7 +385,7 @@ I just cc'ed all of you to get this reviewed as quick as possible, not to blame 
 archive/issue_comments_098507.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> Replying to [comment:16 wuthrich]:\n> > Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.\n> \n> Never mind. If only all doctest failures (or bugs) were that trivial to fix...\n\nHey, I reviewed that patch, and it was merged!  So there are at least three to blame :)\n\nI wonder why it didn't cause any failures for me...  Anyway, thanks for looking into this so quickly.",
+    "body": "Replying to [comment:17 leif]:\n> Replying to [comment:16 wuthrich]:\n> > Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.\n\n> \n> Never mind. If only all doctest failures (or bugs) were that trivial to fix...\n\n\nHey, I reviewed that patch, and it was merged!  So there are at least three to blame :)\n\nI wonder why it didn't cause any failures for me...  Anyway, thanks for looking into this so quickly.",
     "created_at": "2010-09-17T19:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9915",
     "type": "issue_comment",
@@ -395,8 +397,10 @@ archive/issue_comments_098507.json:
 Replying to [comment:17 leif]:
 > Replying to [comment:16 wuthrich]:
 > > Apologies for my bad work on #9330 which caused all this to happen. Thanks for fixing it.
+
 > 
 > Never mind. If only all doctest failures (or bugs) were that trivial to fix...
+
 
 Hey, I reviewed that patch, and it was merged!  So there are at least three to blame :)
 

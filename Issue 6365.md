@@ -3,7 +3,7 @@
 archive/issues_006365.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nTraceback (most recent call last):\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6365\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nTraceback (most recent call last):\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6365\n\n",
     "created_at": "2009-06-20T15:00:13Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_006365.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: F = GF(2)
 sage: P.<x> = F[]
@@ -28,7 +27,6 @@ Traceback (most recent call last):
 ...
 ValueError: variable names must be alphanumeric, but one is '('a' which is not.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6365
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6365
 archive/issue_comments_050825.json:
 ```json
 {
-    "body": "This is no longer a problem:\n\n\n```\n\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nsage: K\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 2 with modulus a^4 + a + 1\n\n```\n",
+    "body": "This is no longer a problem:\n\n```\n\nsage: F = GF(2)\nsage: P.<x> = F[]\nsage: f = 1+x+x^4\nsage: K.<a> = F.extension(f)\nsage: K\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 2 with modulus a^4 + a + 1\n\n```",
     "created_at": "2012-03-19T17:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
@@ -51,7 +49,6 @@ archive/issue_comments_050825.json:
 ```
 
 This is no longer a problem:
-
 
 ```
 
@@ -63,7 +60,6 @@ sage: K
 Univariate Quotient Polynomial Ring in a over Finite Field of size 2 with modulus a^4 + a + 1
 
 ```
-
 
 
 

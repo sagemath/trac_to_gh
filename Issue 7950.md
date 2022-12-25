@@ -3,7 +3,7 @@
 archive/issues_007950.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t.factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7950\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t.factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7950\n\n",
     "created_at": "2010-01-16T17:52:56Z",
     "labels": [
         "component: commutative algebra",
@@ -17,7 +17,6 @@ archive/issues_007950.json:
 }
 ```
 Assignee: @malb
-
 
 ```
 sage: P = PolynomialRing(QQ,0,'')
@@ -48,7 +47,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: tuple index out of range
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7950
 
@@ -135,7 +133,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069250.json:
 ```json
 {
-    "body": "1. Factoring of 0 should raise an error like it does over ZZ, but doesn't right now:\n\n```\nsage: P = PolynomialRing(ZZ,0,'')\nsage: P(10).factor()\n10\nsage: P(0).factor()\n0\nsage: factor(0)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n```\n\n\n2. The element 10 in the polynomial ring \"ZZ[]\" in 0-variables is actually *not* a unit.  So it is wrong that it is put in the \"unit\" slot of the factorization.   Notice how factoring 10 works:\n\n```\nsage: R.<x> = ZZ[]\nsage: (10*x).factor()\n2 * 5 * x\nsage: list((10*x).factor())\n[(2, 1), (5, 1), (x, 1)]\n```\n\nIn particular, the 10 is *not* treated incorrectly as a unit.\n\nSo I think this patch needs work.",
+    "body": "1. Factoring of 0 should raise an error like it does over ZZ, but doesn't right now:\n\n```\nsage: P = PolynomialRing(ZZ,0,'')\nsage: P(10).factor()\n10\nsage: P(0).factor()\n0\nsage: factor(0)\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n```\n\n2. The element 10 in the polynomial ring \"ZZ[]\" in 0-variables is actually *not* a unit.  So it is wrong that it is put in the \"unit\" slot of the factorization.   Notice how factoring 10 works:\n\n```\nsage: R.<x> = ZZ[]\nsage: (10*x).factor()\n2 * 5 * x\nsage: list((10*x).factor())\n[(2, 1), (5, 1), (x, 1)]\n```\nIn particular, the 10 is *not* treated incorrectly as a unit.\n\nSo I think this patch needs work.",
     "created_at": "2010-01-18T09:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
@@ -157,7 +155,6 @@ sage: factor(0)
 ArithmeticError                           Traceback (most recent call last)
 ```
 
-
 2. The element 10 in the polynomial ring "ZZ[]" in 0-variables is actually *not* a unit.  So it is wrong that it is put in the "unit" slot of the factorization.   Notice how factoring 10 works:
 
 ```
@@ -167,7 +164,6 @@ sage: (10*x).factor()
 sage: list((10*x).factor())
 [(2, 1), (5, 1), (x, 1)]
 ```
-
 In particular, the 10 is *not* treated incorrectly as a unit.
 
 So I think this patch needs work.
@@ -255,7 +251,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069255.json:
 ```json
 {
-    "body": "Replying to [comment:3 burcin]:\n> New patch addressing both points is available at attachment:trac_7950-zero_variable_factor.take2.patch. I hope it doesn't contain more stupid mistakes. :)\n\nNot that I could find :)\n\nLooks good to me.",
+    "body": "Replying to [comment:3 burcin]:\n> New patch addressing both points is available at attachment:trac_7950-zero_variable_factor.take2.patch. I hope it doesn't contain more stupid mistakes. :)\n\n\nNot that I could find :)\n\nLooks good to me.",
     "created_at": "2010-01-23T01:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
@@ -266,6 +262,7 @@ archive/issue_comments_069255.json:
 
 Replying to [comment:3 burcin]:
 > New patch addressing both points is available at attachment:trac_7950-zero_variable_factor.take2.patch. I hope it doesn't contain more stupid mistakes. :)
+
 
 Not that I could find :)
 

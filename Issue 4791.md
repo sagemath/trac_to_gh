@@ -3,7 +3,7 @@
 archive/issues_004791.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nWe should doctest every possible file and not put up with any nodoctest.py crap. This keeps certain files from getting doctested, i.e.\n\n```\nsage -t -long devel/sage/sage/dsage/server/stats.py\n         [2.3 s]\nsage -t -long devel/sage/sage/dsage/server/tests/test_server.py\n         [2.6 s]\nsage -t -long devel/sage/sage/dsage/twisted/tests/test_pubkeyauth.py\n         [2.4 s]\nsage -t -long devel/sage/sage/dsage/twisted/tests/test_remote.py\n         [2.5 s]\nsage -t -long devel/sage/sage/dsage/twisted/pubkeyauth.py\n         [2.6 s]\nsage -t -long devel/sage/sage/dsage/twisted/pb.py\n         [2.7 s]\nsage -t -long devel/sage/sage/server/notebook/sage_email.py\n         [2.5 s]\nsage -t -long devel/sage/sage/quadratic_forms/genera/genus.py\n         [2.7 s]\n```\n\nThe following files are removed by this patch:\n\n```\nsage/dsage/database/tests/nodoctest.py\nsage/dsage/database/nodoctest.py\nsage/dsage/errors/nodoctest.py\nsage/dsage/misc/nodoctest.py\nsage/dsage/scripts/nodoctest.py\nsage/dsage/server/tests/nodoctest.py\nsage/dsage/server/nodoctest.py\nsage/dsage/twisted/tests/nodoctest.py\nsage/dsage/twisted/nodoctest.py\nsage/dsage/nodoctest.py\nsage/quadratic_forms/genera/nodoctest.py\nsage/server/notebook/compress/nodoctest.py\n```\n\nWith my current merge tree -t -long passes.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4791\n\n",
+    "body": "Assignee: mabshoff\n\nWe should doctest every possible file and not put up with any nodoctest.py crap. This keeps certain files from getting doctested, i.e.\n\n```\nsage -t -long devel/sage/sage/dsage/server/stats.py\n         [2.3 s]\nsage -t -long devel/sage/sage/dsage/server/tests/test_server.py\n         [2.6 s]\nsage -t -long devel/sage/sage/dsage/twisted/tests/test_pubkeyauth.py\n         [2.4 s]\nsage -t -long devel/sage/sage/dsage/twisted/tests/test_remote.py\n         [2.5 s]\nsage -t -long devel/sage/sage/dsage/twisted/pubkeyauth.py\n         [2.6 s]\nsage -t -long devel/sage/sage/dsage/twisted/pb.py\n         [2.7 s]\nsage -t -long devel/sage/sage/server/notebook/sage_email.py\n         [2.5 s]\nsage -t -long devel/sage/sage/quadratic_forms/genera/genus.py\n         [2.7 s]\n```\nThe following files are removed by this patch:\n\n```\nsage/dsage/database/tests/nodoctest.py\nsage/dsage/database/nodoctest.py\nsage/dsage/errors/nodoctest.py\nsage/dsage/misc/nodoctest.py\nsage/dsage/scripts/nodoctest.py\nsage/dsage/server/tests/nodoctest.py\nsage/dsage/server/nodoctest.py\nsage/dsage/twisted/tests/nodoctest.py\nsage/dsage/twisted/nodoctest.py\nsage/dsage/nodoctest.py\nsage/quadratic_forms/genera/nodoctest.py\nsage/server/notebook/compress/nodoctest.py\n```\nWith my current merge tree -t -long passes.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4791\n\n",
     "created_at": "2008-12-14T07:22:12Z",
     "labels": [
         "component: doctest coverage",
@@ -38,7 +38,6 @@ sage -t -long devel/sage/sage/server/notebook/sage_email.py
 sage -t -long devel/sage/sage/quadratic_forms/genera/genus.py
          [2.7 s]
 ```
-
 The following files are removed by this patch:
 
 ```
@@ -55,7 +54,6 @@ sage/dsage/nodoctest.py
 sage/quadratic_forms/genera/nodoctest.py
 sage/server/notebook/compress/nodoctest.py
 ```
-
 With my current merge tree -t -long passes.
 
 Cheers,

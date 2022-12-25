@@ -3,7 +3,7 @@
 archive/issues_001374.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.\n\nHere's a sample session:\n\n\n```\nsage: M = MatrixSpace(GF(5),2,2)\n\nsage: A = M([1,0,0,1])\n\nsage: A - int(-1)\n \n[2 0]\n[0 2]\n\nsage: B = M([4,0,0,1])\n\nsage: B - int(-1)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1374\n\n",
+    "body": "Assignee: somebody\n\nThis is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.\n\nHere's a sample session:\n\n```\nsage: M = MatrixSpace(GF(5),2,2)\n\nsage: A = M([1,0,0,1])\n\nsage: A - int(-1)\n \n[2 0]\n[0 2]\n\nsage: B = M([4,0,0,1])\n\nsage: B - int(-1)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1374\n\n",
     "created_at": "2007-12-02T19:23:51Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: somebody
 This is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.
 
 Here's a sample session:
-
 
 ```
 sage: M = MatrixSpace(GF(5),2,2)
@@ -49,7 +48,6 @@ SAGE will now terminate (sorry).
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1374
 
@@ -98,7 +96,7 @@ Changing component from basic arithmetic to coercion.
 archive/issue_comments_008789.json:
 ```json
 {
-    "body": "First obvious thing to do (on sage.math):\n\n\n```\nsage: matrix(GF(5), 2, [4,0,0,1]) - int(-1)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47703056093024 (LWP 5657)]\n__pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62cd298e30, __pyx_v_value=5)\n    at sage/rings/integer_mod.c:2750\n2750      Py_INCREF(__pyx_1);\n```\n",
+    "body": "First obvious thing to do (on sage.math):\n\n```\nsage: matrix(GF(5), 2, [4,0,0,1]) - int(-1)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47703056093024 (LWP 5657)]\n__pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62cd298e30, __pyx_v_value=5)\n    at sage/rings/integer_mod.c:2750\n2750      Py_INCREF(__pyx_1);\n```",
     "created_at": "2007-12-02T19:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
@@ -109,7 +107,6 @@ archive/issue_comments_008789.json:
 
 First obvious thing to do (on sage.math):
 
-
 ```
 sage: matrix(GF(5), 2, [4,0,0,1]) - int(-1)
 
@@ -119,7 +116,6 @@ __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62
     at sage/rings/integer_mod.c:2750
 2750      Py_INCREF(__pyx_1);
 ```
-
 
 
 
@@ -163,7 +159,7 @@ Changing priority from major to critical.
 archive/issue_comments_008791.json:
 ```json
 {
-    "body": "The problem is very likely related to this:\n\n\n```\nsage: matrix(GF(5),2, [4,0,0,1]).parent()(int(6))\n[6 0]\n[0 6]\n```\n\n\nThis is over GF(5), so we should not see 6!",
+    "body": "The problem is very likely related to this:\n\n```\nsage: matrix(GF(5),2, [4,0,0,1]).parent()(int(6))\n[6 0]\n[0 6]\n```\n\nThis is over GF(5), so we should not see 6!",
     "created_at": "2007-12-02T21:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
@@ -174,13 +170,11 @@ archive/issue_comments_008791.json:
 
 The problem is very likely related to this:
 
-
 ```
 sage: matrix(GF(5),2, [4,0,0,1]).parent()(int(6))
 [6 0]
 [0 6]
 ```
-
 
 This is over GF(5), so we should not see 6!
 
@@ -191,7 +185,7 @@ This is over GF(5), so we should not see 6!
 archive/issue_comments_008792.json:
 ```json
 {
-    "body": "\n```\nsage: m = matrix(GF(5),2, [4,0,0,1])\nsage: a = matrix(GF(5),2, [4,0,0,1]).parent()(int(7))\nsage: m[1,1]\n1\nsage: a[1,1]\n7\nsage: m[1,1] - a[1,1]\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\n```\n",
+    "body": "```\nsage: m = matrix(GF(5),2, [4,0,0,1])\nsage: a = matrix(GF(5),2, [4,0,0,1]).parent()(int(7))\nsage: m[1,1]\n1\nsage: a[1,1]\n7\nsage: m[1,1] - a[1,1]\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\n```",
     "created_at": "2007-12-02T21:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
@@ -199,7 +193,6 @@ archive/issue_comments_008792.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 sage: m = matrix(GF(5),2, [4,0,0,1])
@@ -214,7 +207,6 @@ sage: m[1,1] - a[1,1]
 ------------------------------------------------------------
 Unhandled SIGBUS: A bus error occured in SAGE.
 ```
-
 
 
 

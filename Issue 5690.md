@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5690
 archive/issue_comments_044415.json:
 ```json
 {
-    "body": "Put in quotes: `\"$SAGE_LOCAL\"`\n\n```\n    rm -f $SAGE_LOCAL/include/mpir*.h $SAGE_LOCAL/include/gmp*.h\n    rm -f $SAGE_LOCAL/lib/libmpir* $SAGE_LOCAL/lib/libgmp*\n```\n",
+    "body": "Put in quotes: `\"$SAGE_LOCAL\"`\n\n```\n    rm -f $SAGE_LOCAL/include/mpir*.h $SAGE_LOCAL/include/gmp*.h\n    rm -f $SAGE_LOCAL/lib/libmpir* $SAGE_LOCAL/lib/libgmp*\n```",
     "created_at": "2009-04-06T02:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5690",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ Put in quotes: `"$SAGE_LOCAL"`
     rm -f $SAGE_LOCAL/include/mpir*.h $SAGE_LOCAL/include/gmp*.h
     rm -f $SAGE_LOCAL/lib/libmpir* $SAGE_LOCAL/lib/libgmp*
 ```
-
 
 
 

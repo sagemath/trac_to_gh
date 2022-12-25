@@ -3,7 +3,7 @@
 archive/issues_009842.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nThis is in the top-level docstring of the file:\n\n\n```\nsage: L = Qp(17).extension(x^2 - 17, names='a'); L.rename('L')\nsage: \nExiting Sage (CPU time 0m0.94s, Wall time 0m25.72s).\nExiting spawned Maxima process.\n```\n\n\nPatch on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9843\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @loefflerd\n\nThis is in the top-level docstring of the file:\n\n```\nsage: L = Qp(17).extension(x^2 - 17, names='a'); L.rename('L')\nsage: \nExiting Sage (CPU time 0m0.94s, Wall time 0m25.72s).\nExiting spawned Maxima process.\n```\n\nPatch on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9843\n\n",
     "created_at": "2010-08-31T22:09:56Z",
     "labels": [
         "component: modular forms",
@@ -22,14 +22,12 @@ CC:  @loefflerd
 
 This is in the top-level docstring of the file:
 
-
 ```
 sage: L = Qp(17).extension(x^2 - 17, names='a'); L.rename('L')
 sage: 
 Exiting Sage (CPU time 0m0.94s, Wall time 0m25.72s).
 Exiting spawned Maxima process.
 ```
-
 
 Patch on its way.
 

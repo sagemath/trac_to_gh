@@ -3,7 +3,7 @@
 archive/issues_006515.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nThis has been brought up several times on the mailing lists. As a specific example \n\n\n```\nsage: assume(x>0)\nsage: solve([x^2-1],x)\n[x == -1, x == 1]\n```\n\n\nAt the very least, we could probably filter out the \"solutions\" that violate the assumptions. \n\n\n\n```\nsage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]\n[False, True]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6515\n\n",
+    "body": "Assignee: @burcin\n\nThis has been brought up several times on the mailing lists. As a specific example \n\n```\nsage: assume(x>0)\nsage: solve([x^2-1],x)\n[x == -1, x == 1]\n```\n\nAt the very least, we could probably filter out the \"solutions\" that violate the assumptions. \n\n\n```\nsage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]\n[False, True]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6515\n\n",
     "created_at": "2009-07-12T04:22:28Z",
     "labels": [
         "component: calculus",
@@ -20,23 +20,19 @@ Assignee: @burcin
 
 This has been brought up several times on the mailing lists. As a specific example 
 
-
 ```
 sage: assume(x>0)
 sage: solve([x^2-1],x)
 [x == -1, x == 1]
 ```
 
-
 At the very least, we could probably filter out the "solutions" that violate the assumptions. 
-
 
 
 ```
 sage: [all(a.subs(s) for a in assumptions()) for s in solve(x^2-1==0, x)]
 [False, True]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6515
 
@@ -159,7 +155,7 @@ minor documentation fixes
 archive/issue_comments_052980.json:
 ```json
 {
-    "body": "The patch looks good and doctests pass. There is one minor problem, the line\n\n\n```\nsage: GenericDeclaration(x, 'rational').contradicts(y==pi)\n```\n\n\nis repeated several times in the doctest for `sage.symbolic.assumptions.GenericDeclaration.contradicts()`.\n\nI attached a patch to change these lines and add an `INPUT` field to the docstring. Can you look over my patch and change the status to positive_review if you agree with the changes?",
+    "body": "The patch looks good and doctests pass. There is one minor problem, the line\n\n```\nsage: GenericDeclaration(x, 'rational').contradicts(y==pi)\n```\n\nis repeated several times in the doctest for `sage.symbolic.assumptions.GenericDeclaration.contradicts()`.\n\nI attached a patch to change these lines and add an `INPUT` field to the docstring. Can you look over my patch and change the status to positive_review if you agree with the changes?",
     "created_at": "2010-02-03T16:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
@@ -170,11 +166,9 @@ archive/issue_comments_052980.json:
 
 The patch looks good and doctests pass. There is one minor problem, the line
 
-
 ```
 sage: GenericDeclaration(x, 'rational').contradicts(y==pi)
 ```
-
 
 is repeated several times in the doctest for `sage.symbolic.assumptions.GenericDeclaration.contradicts()`.
 
@@ -223,7 +217,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_052983.json:
 ```json
 {
-    "body": "For the record: Applying the patch to 4.3.2 + [a long queue](http://trac.sagemath.org/sage_trac/ticket/8186#comment:6) gives\n\n\n```\napplying 6515-solve-assume.patch\npatching file sage/symbolic/expression.pyx\nHunk #2 succeeded at 5952 with fuzz 2 (offset 40 lines).\nHunk #3 succeeded at 6037 with fuzz 1 (offset 83 lines).\n```\n\n\nPlease let us know (via sage-devel) about the best order in which to apply the symbolics and calculus patches.",
+    "body": "For the record: Applying the patch to 4.3.2 + [a long queue](http://trac.sagemath.org/sage_trac/ticket/8186#comment:6) gives\n\n```\napplying 6515-solve-assume.patch\npatching file sage/symbolic/expression.pyx\nHunk #2 succeeded at 5952 with fuzz 2 (offset 40 lines).\nHunk #3 succeeded at 6037 with fuzz 1 (offset 83 lines).\n```\n\nPlease let us know (via sage-devel) about the best order in which to apply the symbolics and calculus patches.",
     "created_at": "2010-02-10T15:54:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6515",
     "type": "issue_comment",
@@ -234,14 +228,12 @@ archive/issue_comments_052983.json:
 
 For the record: Applying the patch to 4.3.2 + [a long queue](http://trac.sagemath.org/sage_trac/ticket/8186#comment:6) gives
 
-
 ```
 applying 6515-solve-assume.patch
 patching file sage/symbolic/expression.pyx
 Hunk #2 succeeded at 5952 with fuzz 2 (offset 40 lines).
 Hunk #3 succeeded at 6037 with fuzz 1 (offset 83 lines).
 ```
-
 
 Please let us know (via sage-devel) about the best order in which to apply the symbolics and calculus patches.
 

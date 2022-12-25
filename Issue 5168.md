@@ -3,7 +3,7 @@
 archive/issues_005168.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: matrix0, commutator\n\nHere is the extent of the docstring for the commutator method in matrix0.pyx:\n\n```\n        Return the commutator self*other - other*self.\n\n        EXAMPLES:\n            sage: A = Matrix(QQ[['t']], 2, 2, range(4))\n```\n\nFix the doctest so that it actually computes a commutator.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5168\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix0, commutator\n\nHere is the extent of the docstring for the commutator method in matrix0.pyx:\n\n```\n        Return the commutator self*other - other*self.\n\n        EXAMPLES:\n            sage: A = Matrix(QQ[['t']], 2, 2, range(4))\n```\nFix the doctest so that it actually computes a commutator.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5168\n\n",
     "created_at": "2009-02-03T21:17:52Z",
     "labels": [
         "component: linear algebra",
@@ -29,7 +29,6 @@ Here is the extent of the docstring for the commutator method in matrix0.pyx:
         EXAMPLES:
             sage: A = Matrix(QQ[['t']], 2, 2, range(4))
 ```
-
 Fix the doctest so that it actually computes a commutator.
 
 

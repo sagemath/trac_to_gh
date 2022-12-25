@@ -3,7 +3,7 @@
 archive/issues_001456.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThere are some problems with the function gaussian_binomial\nin sage 2.8.14. The help string contains a typo:\n\n binom{n}{k}_q = frac{(1-q<sup>m)(1-q</sup>{m-1})... (1-q^{m-r+1})}\n{(1-q)(1-q^2)... (1-q^r)}.\n\nThe typo is that m and r on the RHS should match n and k on the LHS.\n\nI feel that to be useful gaussian_binomial(n,k,q) should work if n\nand k are integers and 0<=k<=n, no matter what q is. At the moment,\nthe function requires q to be an integer but there will be\napplications if q is an indeterminate.  Moreover if q = 1 this\nshould give the ordinary binomial coefficient but the current\nimplementation fails due to division by zero.\n\nPerhaps the following is one way to improve the\nfunction would be as follows. Then it gives the\ncorrect behavior when q is an indeterminate or q=1.\n\nWhy does the original function use misc.prod instead\nof prod?\n\nDaniel Bump\n\n\n```\ndef gaussian_binomial(n,k,q):\n   r\"\"\"\n   Return the gaussian binomial\n   $$\n      \\binom{n}{k}_q = \\frac{(1-q^n)(1-q^{n-1})\\cdots (1-q^{n-k+1})}\n                            {(1-q)(1-q^2)\\cdots (1-q^k)}.\n   $$\n\n   EXAMPLES:\n       sage: gaussian_binomial(5,1,2)\n       31\n\n   AUTHOR: David Joyner and William Stein\n   \"\"\"\n\n   R.<x>=QQ[]\n\n   n = prod([1 - x**i for i in range((n-k+1),n+1)])\n   d = prod([1 - x**i for i in range(1,k+1)])\n\n   return (n / d).subs(x = q)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1456\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThere are some problems with the function gaussian_binomial\nin sage 2.8.14. The help string contains a typo:\n\n binom{n}{k}_q = frac{(1-q<sup>m)(1-q</sup>{m-1})... (1-q^{m-r+1})}\n{(1-q)(1-q^2)... (1-q^r)}.\n\nThe typo is that m and r on the RHS should match n and k on the LHS.\n\nI feel that to be useful gaussian_binomial(n,k,q) should work if n\nand k are integers and 0<=k<=n, no matter what q is. At the moment,\nthe function requires q to be an integer but there will be\napplications if q is an indeterminate.  Moreover if q = 1 this\nshould give the ordinary binomial coefficient but the current\nimplementation fails due to division by zero.\n\nPerhaps the following is one way to improve the\nfunction would be as follows. Then it gives the\ncorrect behavior when q is an indeterminate or q=1.\n\nWhy does the original function use misc.prod instead\nof prod?\n\nDaniel Bump\n\n```\ndef gaussian_binomial(n,k,q):\n   r\"\"\"\n   Return the gaussian binomial\n   $$\n      \\binom{n}{k}_q = \\frac{(1-q^n)(1-q^{n-1})\\cdots (1-q^{n-k+1})}\n                            {(1-q)(1-q^2)\\cdots (1-q^k)}.\n   $$\n\n   EXAMPLES:\n       sage: gaussian_binomial(5,1,2)\n       31\n\n   AUTHOR: David Joyner and William Stein\n   \"\"\"\n\n   R.<x>=QQ[]\n\n   n = prod([1 - x**i for i in range((n-k+1),n+1)])\n   d = prod([1 - x**i for i in range(1,k+1)])\n\n   return (n / d).subs(x = q)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1456\n\n",
     "created_at": "2007-12-11T01:07:28Z",
     "labels": [
         "component: combinatorics",
@@ -44,7 +44,6 @@ of prod?
 
 Daniel Bump
 
-
 ```
 def gaussian_binomial(n,k,q):
    r"""
@@ -68,7 +67,6 @@ def gaussian_binomial(n,k,q):
 
    return (n / d).subs(x = q)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1456

@@ -3,7 +3,7 @@
 archive/issues_009053.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  minz\n\nThe last output below should obviously be True, but it is False.\n\n```\nsage: R.<x> = GF(7)[]\nsage: A = R^3\nsage: L = A.span([x*A.0 + (x^3 + 1)*A.1, x*A.2]); L\nFree module of degree 3 and rank 2 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[      x x^3 + 1       0]\n[      0       0       x]\nsage: M = A.span([x*L.0]); M\nFree module of degree 3 and rank 1 over Univariate Polynomial Ring in x over Finite Field of size 7\nEchelon basis matrix:\n[    x^2 x^4 + x       0]\nsage: M.0 in L\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9053\n\n",
     "created_at": "2010-05-26T08:41:23Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  minz
 
 The last output below should obviously be True, but it is False.
 
-
 ```
 sage: R.<x> = GF(7)[]
 sage: A = R^3
@@ -38,7 +37,6 @@ Echelon basis matrix:
 sage: M.0 in L
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9053
 
@@ -87,7 +85,7 @@ Changing component from algebra to linear algebra.
 archive/issue_comments_083709.json:
 ```json
 {
-    "body": "Attachment [trac_9053_fixes_pivots.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.patch) by minz created at 2011-03-18 10:47:06\n\nThe bug was a single line in _echelon_form_PID which returned the wrong pivot element for matrices of one row. The attached patch should fix that.\n\nWhile doctesting all of Sage I received two errors (that seem unrelated?):\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/schemes/elliptic_curves/gal_reps.py # Time out\n        sage -t  -long -force_lib devel/sage/sage/interfaces/sage0.py # 2 doctests failed\n```\n\n\nThe first apparently also came up during discussions on [#9390](http://trac.sagemath.org/sage_trac/ticket/9390). The doctest failure in sage0.py \"randomly\" appeared or not when I reran the test mutiple times. I'm not quite sure what to make of this...",
+    "body": "Attachment [trac_9053_fixes_pivots.patch](tarball://root/attachments/some-uuid/ticket9053/trac_9053_fixes_pivots.patch) by minz created at 2011-03-18 10:47:06\n\nThe bug was a single line in _echelon_form_PID which returned the wrong pivot element for matrices of one row. The attached patch should fix that.\n\nWhile doctesting all of Sage I received two errors (that seem unrelated?):\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/schemes/elliptic_curves/gal_reps.py # Time out\n        sage -t  -long -force_lib devel/sage/sage/interfaces/sage0.py # 2 doctests failed\n```\n\nThe first apparently also came up during discussions on [#9390](http://trac.sagemath.org/sage_trac/ticket/9390). The doctest failure in sage0.py \"randomly\" appeared or not when I reran the test mutiple times. I'm not quite sure what to make of this...",
     "created_at": "2011-03-18T10:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9053",
     "type": "issue_comment",
@@ -108,7 +106,6 @@ The following tests failed:
         sage -t  -long -force_lib devel/sage/sage/schemes/elliptic_curves/gal_reps.py # Time out
         sage -t  -long -force_lib devel/sage/sage/interfaces/sage0.py # 2 doctests failed
 ```
-
 
 The first apparently also came up during discussions on [#9390](http://trac.sagemath.org/sage_trac/ticket/9390). The doctest failure in sage0.py "randomly" appeared or not when I reran the test mutiple times. I'm not quite sure what to make of this...
 

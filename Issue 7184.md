@@ -154,7 +154,7 @@ Ooops, sorry for the last line, which was not meant to be included in my message
 archive/issue_comments_059383.json:
 ```json
 {
-    "body": "Ncohen, you've broken kirchhoff_matrix.  According to the definition, row-sums of the Kirchhoff matrix should be zero.  Here's the doctest before you changed it:\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 3 -3] \n[-4  4] \n```\n\nhere, the row-sums are zero.\n\nBut you actually had to change the doctest to make the code pass,\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 4 -3] \n[-4  3] \n```\n\nbut the row-sums aren't zero!  Don't break math to make code work!",
+    "body": "Ncohen, you've broken kirchhoff_matrix.  According to the definition, row-sums of the Kirchhoff matrix should be zero.  Here's the doctest before you changed it:\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 3 -3] \n[-4  4] \n```\nhere, the row-sums are zero.\n\nBut you actually had to change the doctest to make the code pass,\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 4 -3] \n[-4  3] \n```\nbut the row-sums aren't zero!  Don't break math to make code work!",
     "created_at": "2009-10-18T17:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -171,7 +171,6 @@ sage: G.laplacian_matrix()
 [ 3 -3] 
 [-4  4] 
 ```
-
 here, the row-sums are zero.
 
 But you actually had to change the doctest to make the code pass,
@@ -182,7 +181,6 @@ sage: G.laplacian_matrix()
 [ 4 -3] 
 [-4  3] 
 ```
-
 but the row-sums aren't zero!  Don't break math to make code work!
 
 
@@ -459,7 +457,7 @@ remove unneeded reassignment of all diagonal entries of Kirchhoff matrix
 archive/issue_comments_059397.json:
 ```json
 {
-    "body": "Attachment [trac7184-simplified.patch](tarball://root/attachments/some-uuid/ticket7184/trac7184-simplified.patch) by @nathanncohen created at 2009-10-21 12:55:17\n\nSorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !\n\nHere is a new patch removing this line which is now integrated into kirchhoff_matrix. Besides, I wanted to do something about \n\n```\n\t            for i in self.vertices():  \n\t                        M[j,j]=self.in_degree(i)  \n\t                        if (self.vertices()[j]== root_vertex):  \n\t                            M[j,j]= M[j,j] + 1  \n\t                        j= j + 1  \n```\n\nWith these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)",
+    "body": "Attachment [trac7184-simplified.patch](tarball://root/attachments/some-uuid/ticket7184/trac7184-simplified.patch) by @nathanncohen created at 2009-10-21 12:55:17\n\nSorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !\n\nHere is a new patch removing this line which is now integrated into kirchhoff_matrix. Besides, I wanted to do something about \n\n```\n\t            for i in self.vertices():  \n\t                        M[j,j]=self.in_degree(i)  \n\t                        if (self.vertices()[j]== root_vertex):  \n\t                            M[j,j]= M[j,j] + 1  \n\t                        j= j + 1  \n```\nWith these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)",
     "created_at": "2009-10-21T12:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7184",
     "type": "issue_comment",
@@ -481,7 +479,6 @@ Here is a new patch removing this line which is now integrated into kirchhoff_ma
 	                            M[j,j]= M[j,j] + 1  
 	                        j= j + 1  
 ```
-
 With these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)
 
 

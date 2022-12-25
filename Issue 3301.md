@@ -3,7 +3,7 @@
 archive/issues_003301.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nUbuntu 8.04, 64-bit.\n\nFails to build GMP.  All before this seems to work ok.\n\nFirst message that looks suspect in \"install.log\" is:\n\nPatching gmp-h.in (fixes OSX 10.5 issues and gcc 4.3 problems)\nDo we have a Core2 CPU?... No\n[: 220: ==: unexpected operator\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3301\n\n",
+    "body": "Assignee: mabshoff\n\n```\nUbuntu 8.04, 64-bit.\n\nFails to build GMP.  All before this seems to work ok.\n\nFirst message that looks suspect in \"install.log\" is:\n\nPatching gmp-h.in (fixes OSX 10.5 issues and gcc 4.3 problems)\nDo we have a Core2 CPU?... No\n[: 220: ==: unexpected operator\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3301\n\n",
     "created_at": "2008-05-25T20:26:39Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_003301.json:
 ```
 Assignee: mabshoff
 
-
 ```
 Ubuntu 8.04, 64-bit.
 
@@ -30,7 +29,6 @@ Patching gmp-h.in (fixes OSX 10.5 issues and gcc 4.3 problems)
 Do we have a Core2 CPU?... No
 [: 220: ==: unexpected operator
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3301

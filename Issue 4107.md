@@ -53,7 +53,7 @@ Michael
 archive/issue_comments_029683.json:
 ```json
 {
-    "body": "I have attached a diff (not a patch) against 3.1.2.rc2 since not all fixes do apply any more due to the rewrite of the manual by John Palmieri. I left out the fix \n\n```\n There is one subtlety in defining complex numbers: as mentioned above, \n-the symbol \\code{i} represents a square root of \\minusone, but it is a \n+the symbol \\code{i} represents the square root of \\minusone, but it is a \n \\emph{formal} square root of \\minusone; it is not in the complex numbers. \n Calling \\code{CC(i)} returns the complex square root of \\minusone.\n```\n\nsince there are multiple roots.\n\nCheers,\n\nMichael",
+    "body": "I have attached a diff (not a patch) against 3.1.2.rc2 since not all fixes do apply any more due to the rewrite of the manual by John Palmieri. I left out the fix \n\n```\n There is one subtlety in defining complex numbers: as mentioned above, \n-the symbol \\code{i} represents a square root of \\minusone, but it is a \n+the symbol \\code{i} represents the square root of \\minusone, but it is a \n \\emph{formal} square root of \\minusone; it is not in the complex numbers. \n Calling \\code{CC(i)} returns the complex square root of \\minusone.\n```\nsince there are multiple roots.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-13T00:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4107",
     "type": "issue_comment",
@@ -71,7 +71,6 @@ I have attached a diff (not a patch) against 3.1.2.rc2 since not all fixes do ap
  \emph{formal} square root of \minusone; it is not in the complex numbers. 
  Calling \code{CC(i)} returns the complex square root of \minusone.
 ```
-
 since there are multiple roots.
 
 Cheers,

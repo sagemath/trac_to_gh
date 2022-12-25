@@ -206,7 +206,7 @@ Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s
 archive/issue_comments_014562.json:
 ```json
 {
-    "body": "I skimmed Steve Linton's patch from \n\n http://www.gap-system.org/Faq/Hardware-OS/hardware-os8.html\n\nthen applied it and tested it on itanium.  It worked perfectly, and also gave a nice 5 times speed up on the first thing I tried:\n\n```\nsage: G = SymmetricGroup(16)\nsage: h = G.normal_subgroups()\n```\n\n\nI doctested the groups directory, and have started the doctest cycle on everything else.\nI'll post a note here when that is done.",
+    "body": "I skimmed Steve Linton's patch from \n\n http://www.gap-system.org/Faq/Hardware-OS/hardware-os8.html\n\nthen applied it and tested it on itanium.  It worked perfectly, and also gave a nice 5 times speed up on the first thing I tried:\n\n```\nsage: G = SymmetricGroup(16)\nsage: h = G.normal_subgroups()\n```\n\nI doctested the groups directory, and have started the doctest cycle on everything else.\nI'll post a note here when that is done.",
     "created_at": "2008-08-27T21:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
@@ -225,7 +225,6 @@ then applied it and tested it on itanium.  It worked perfectly, and also gave a 
 sage: G = SymmetricGroup(16)
 sage: h = G.normal_subgroups()
 ```
-
 
 I doctested the groups directory, and have started the doctest cycle on everything else.
 I'll post a note here when that is done.

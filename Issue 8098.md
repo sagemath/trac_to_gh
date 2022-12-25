@@ -3,7 +3,7 @@
 archive/issues_008098.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  polybori @malb @robertwb\n\nI was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:\n\n```\nsage: var('x')\nsage: solve_mod([x^2==1], 9)\n[]         # WTF?\n```\n\nand:\n\n```\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (4,), (5,), (7,)]\n```\n\n\nEtc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8098\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  polybori @malb @robertwb\n\nI was just grading papers in my class and one student (Andrew Ohana) pointed out in his solution that Sage's solve_mod is massively broken.  For example:\n\n```\nsage: var('x')\nsage: solve_mod([x^2==1], 9)\n[]         # WTF?\n```\nand:\n\n```\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (4,), (5,), (7,)]\n```\n\nEtc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8098\n\n",
     "created_at": "2010-01-27T23:13:42Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,14 +28,12 @@ sage: var('x')
 sage: solve_mod([x^2==1], 9)
 []         # WTF?
 ```
-
 and:
 
 ```
 sage: solve_mod([x^2==1], 8)
 [(1,), (3,), (4,), (5,), (7,)]
 ```
-
 
 Etc. 
 
@@ -50,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8098
 archive/issue_comments_070926.json:
 ```json
 {
-    "body": "I tried to chase down the bug but it seems the rabbit hole goes deeper (all the way to multivariate singular polynomial evaluation). \n\n\n```\nsage: P.<x,y> = Zmod(3^2)[]\nsage: f=P(x*x)\nsage: f(3,0)\n1\n\nsage: P.<x,y> = Zmod(10)[]\nsage: f=P(x*y)\nsage: f(2,5)\n1\n```\n\n\nI think the problem is in the __call__ method in http://sagenb.org/src/libs/singular/polynomial.pyx/ but its all Cython land there, so I can't do much. In any case seems that Singular is fine, and something gets lost in the translation.\n\n\n```\n> ring R= (integer,9),(x,y),dp;\n> poly f=x2;\n> subst(f,x,3,y,0);\n0\n```\n",
+    "body": "I tried to chase down the bug but it seems the rabbit hole goes deeper (all the way to multivariate singular polynomial evaluation). \n\n```\nsage: P.<x,y> = Zmod(3^2)[]\nsage: f=P(x*x)\nsage: f(3,0)\n1\n\nsage: P.<x,y> = Zmod(10)[]\nsage: f=P(x*y)\nsage: f(2,5)\n1\n```\n\nI think the problem is in the __call__ method in http://sagenb.org/src/libs/singular/polynomial.pyx/ but its all Cython land there, so I can't do much. In any case seems that Singular is fine, and something gets lost in the translation.\n\n```\n> ring R= (integer,9),(x,y),dp;\n> poly f=x2;\n> subst(f,x,3,y,0);\n0\n```",
     "created_at": "2010-02-01T06:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ archive/issue_comments_070926.json:
 ```
 
 I tried to chase down the bug but it seems the rabbit hole goes deeper (all the way to multivariate singular polynomial evaluation). 
-
 
 ```
 sage: P.<x,y> = Zmod(3^2)[]
@@ -74,9 +71,7 @@ sage: f(2,5)
 1
 ```
 
-
 I think the problem is in the __call__ method in http://sagenb.org/src/libs/singular/polynomial.pyx/ but its all Cython land there, so I can't do much. In any case seems that Singular is fine, and something gets lost in the translation.
-
 
 ```
 > ring R= (integer,9),(x,y),dp;
@@ -84,7 +79,6 @@ I think the problem is in the __call__ method in http://sagenb.org/src/libs/sing
 > subst(f,x,3,y,0);
 0
 ```
-
 
 
 
@@ -113,7 +107,7 @@ Note that the function we call is `fast_map()` and it returns `1` as the generat
 archive/issue_comments_070928.json:
 ```json
 {
-    "body": "The Singular map works fine in my somewhat ancient Singular version here...\n\n```\n> poly f=x2;\n> subst(f,x,3,y,0);\n0\n> map m=R,3,0;\n> m(f);\n0\n\n```\n\n\nDoes this fail with newer versions?",
+    "body": "The Singular map works fine in my somewhat ancient Singular version here...\n\n```\n> poly f=x2;\n> subst(f,x,3,y,0);\n0\n> map m=R,3,0;\n> m(f);\n0\n\n```\n\nDoes this fail with newer versions?",
     "created_at": "2010-02-02T08:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -133,7 +127,6 @@ The Singular map works fine in my somewhat ancient Singular version here...
 0
 
 ```
-
 
 Does this fail with newer versions?
 
@@ -295,7 +288,7 @@ Anyone?
 archive/issue_comments_070937.json:
 ```json
 {
-    "body": "I tried the doctests, but unfortunately one more test is Segfaulting wrt #7773:\n\n```\n[zimmerma@coing sage]$ sage -t -verbose rings/polynomial/multi_polynomial_libsingular.pyx\n...\nTrying:\n    f(Integer(0),Integer(0),Integer(0))###line 1725:_sage_    >>> f(0,0,0)\nExpecting:\n    0\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nSince this is precisely linked to the modified file, I give a negative review.",
+    "body": "I tried the doctests, but unfortunately one more test is Segfaulting wrt #7773:\n\n```\n[zimmerma@coing sage]$ sage -t -verbose rings/polynomial/multi_polynomial_libsingular.pyx\n...\nTrying:\n    f(Integer(0),Integer(0),Integer(0))###line 1725:_sage_    >>> f(0,0,0)\nExpecting:\n    0\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nSince this is precisely linked to the modified file, I give a negative review.",
     "created_at": "2010-03-14T15:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -324,7 +317,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 Since this is precisely linked to the modified file, I give a negative review.
 
 
@@ -370,7 +362,7 @@ Paul, which combination of SPKGs and patches did you apply?
 archive/issue_comments_070940.json:
 ```json
 {
-    "body": "Michael,\n\n> Paul, which combination of SPKGs and patches did you apply? \n\njust a clone of 4.3.3 + your patch. I just reproduced it on a different computer.\n\nPaul",
+    "body": "Michael,\n\n> Paul, which combination of SPKGs and patches did you apply? \n\n\njust a clone of 4.3.3 + your patch. I just reproduced it on a different computer.\n\nPaul",
     "created_at": "2010-03-15T10:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -382,6 +374,7 @@ archive/issue_comments_070940.json:
 Michael,
 
 > Paul, which combination of SPKGs and patches did you apply? 
+
 
 just a clone of 4.3.3 + your patch. I just reproduced it on a different computer.
 
@@ -415,7 +408,7 @@ Martin
 archive/issue_comments_070942.json:
 ```json
 {
-    "body": "With 4.6.1.rc1 I get:\n\n```python\nsage: var('x')\nx\nsage: solve_mod([x^2==1], 9)\n[(1,), (8,)]\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (5,), (7,)]\n```\n\n\nThus, I believe this bug is fixed.",
+    "body": "With 4.6.1.rc1 I get:\n\n```python\nsage: var('x')\nx\nsage: solve_mod([x^2==1], 9)\n[(1,), (8,)]\nsage: solve_mod([x^2==1], 8)\n[(1,), (3,), (5,), (7,)]\n```\n\nThus, I believe this bug is fixed.",
     "created_at": "2011-01-14T15:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8098",
     "type": "issue_comment",
@@ -434,7 +427,6 @@ sage: solve_mod([x^2==1], 9)
 sage: solve_mod([x^2==1], 8)
 [(1,), (3,), (5,), (7,)]
 ```
-
 
 Thus, I believe this bug is fixed.
 

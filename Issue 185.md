@@ -3,7 +3,7 @@
 archive/issues_000185.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nOn my P4 so as my P3 system whenever I undertake a long calculation using the notebook the polling for results takes way too much cputime. I guess it's caused by a very high polling frequency. top output follows:\n\n```\n XXXX martin    25   0  125m  36m 9.8m R   80  2.4   1:13.44 python\n XXXX root      16   0  285m 176m 2860 R   36 11.6 204:18.81 Xorg\n XXXX martin    15   0 95860  43m  19m S   30  2.8   3:50.28 firefox-bin\n```\n\nHow to reproduce: Calculate something difficult and monitor top.\n\nIssue created by migration from https://trac.sagemath.org/ticket/185\n\n",
+    "body": "Assignee: boothby\n\nOn my P4 so as my P3 system whenever I undertake a long calculation using the notebook the polling for results takes way too much cputime. I guess it's caused by a very high polling frequency. top output follows:\n\n```\n XXXX martin    25   0  125m  36m 9.8m R   80  2.4   1:13.44 python\n XXXX root      16   0  285m 176m 2860 R   36 11.6 204:18.81 Xorg\n XXXX martin    15   0 95860  43m  19m S   30  2.8   3:50.28 firefox-bin\n```\nHow to reproduce: Calculate something difficult and monitor top.\n\nIssue created by migration from https://trac.sagemath.org/ticket/185\n\n",
     "created_at": "2006-12-18T00:00:39Z",
     "labels": [
         "component: notebook",
@@ -25,7 +25,6 @@ On my P4 so as my P3 system whenever I undertake a long calculation using the no
  XXXX root      16   0  285m 176m 2860 R   36 11.6 204:18.81 Xorg
  XXXX martin    15   0 95860  43m  19m S   30  2.8   3:50.28 firefox-bin
 ```
-
 How to reproduce: Calculate something difficult and monitor top.
 
 Issue created by migration from https://trac.sagemath.org/ticket/185

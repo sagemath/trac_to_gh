@@ -3,7 +3,7 @@
 archive/issues_009621.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nKeywords: GAP string representation\n\nThe following was reported by [Kenny Brown](http://groups.google.com/group/sage-support/browse_thread/thread/9fbca4e4dbadbe37):\n\n```\nsage: n = 3^2 * 7^2\nsage: G = CyclicPermutationGroup(n)\nsage: G.sylow_subgroup(3)\nTraceback (most recent call last):\n...\n```\n\n\nThe problem is that in the sylow_subgroup method, it is attempted to get the string presentation of a permutation in GAP by calling gap.eval(...). However, GAP truncates the output. So, better use gap.eval('Print(...)') instead.\n\nMoreover, the method uses quite generic variable names in the GAP interface. This is dangerous, as the use of variable names that any average user might choose as well can have nasty side effects.\n\nThe attached patch fixes both problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9621\n\n",
+    "body": "Assignee: joyner\n\nKeywords: GAP string representation\n\nThe following was reported by [Kenny Brown](http://groups.google.com/group/sage-support/browse_thread/thread/9fbca4e4dbadbe37):\n\n```\nsage: n = 3^2 * 7^2\nsage: G = CyclicPermutationGroup(n)\nsage: G.sylow_subgroup(3)\nTraceback (most recent call last):\n...\n```\n\nThe problem is that in the sylow_subgroup method, it is attempted to get the string presentation of a permutation in GAP by calling gap.eval(...). However, GAP truncates the output. So, better use gap.eval('Print(...)') instead.\n\nMoreover, the method uses quite generic variable names in the GAP interface. This is dangerous, as the use of variable names that any average user might choose as well can have nasty side effects.\n\nThe attached patch fixes both problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9621\n\n",
     "created_at": "2010-07-28T08:18:22Z",
     "labels": [
         "component: group theory",
@@ -29,7 +29,6 @@ sage: G.sylow_subgroup(3)
 Traceback (most recent call last):
 ...
 ```
-
 
 The problem is that in the sylow_subgroup method, it is attempted to get the string presentation of a permutation in GAP by calling gap.eval(...). However, GAP truncates the output. So, better use gap.eval('Print(...)') instead.
 
@@ -144,7 +143,7 @@ Replaces the other two patches
 archive/issue_comments_093042.json:
 ```json
 {
-    "body": "Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by @simon-king-jena created at 2010-07-30 13:11:55\n\nHi Johan!\n\nReplying to [comment:2 jsrn]:\n> It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n\nYou have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n\nHowever, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n\nNow the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n\nCheers,\nSimon",
+    "body": "Attachment [trac-9621_permgroup_sylow_subgroup_with_simplification.patch](tarball://root/attachments/some-uuid/ticket9621/trac-9621_permgroup_sylow_subgroup_with_simplification.patch) by @simon-king-jena created at 2010-07-30 13:11:55\n\nHi Johan!\n\nReplying to [comment:2 jsrn]:\n> It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n\n\nYou have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n\nHowever, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n\nNow the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n\nCheers,\nSimon",
     "created_at": "2010-07-30T13:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
@@ -159,6 +158,7 @@ Hi Johan!
 
 Replying to [comment:2 jsrn]:
 > It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. 
+
 
 You have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().
 
@@ -176,7 +176,7 @@ Simon
 archive/issue_comments_093043.json:
 ```json
 {
-    "body": "Ah, embarrassing; I had seen that mistake, but must have forgotten to remake the patch or something :-) \n\nThanks for adding me as author. I guess we'll have to wait for a nice person to come along and review the (final?) patch.\n\nRegards,\nJohan\n\nReplying to [comment:3 SimonKing]:\n> Hi Johan!\n> \n> Replying to [comment:2 jsrn]:\n> > It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n> \n> You have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n> \n> However, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n> \n> Now the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n> \n> Cheers,\n> Simon",
+    "body": "Ah, embarrassing; I had seen that mistake, but must have forgotten to remake the patch or something :-) \n\nThanks for adding me as author. I guess we'll have to wait for a nice person to come along and review the (final?) patch.\n\nRegards,\nJohan\n\nReplying to [comment:3 SimonKing]:\n> Hi Johan!\n> \n> Replying to [comment:2 jsrn]:\n> > It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. \n\n> \n> You have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().\n> \n> However, your suggestion makes indeed sense. So, I created a patch that corrects that misprint and combines both of our patches into one.\n> \n> Now the big question is: I think we are both Authors now (and I inserted your name in the corresponding field of this ticket). So, who will review??\n> \n> Cheers,\n> Simon",
     "created_at": "2010-07-30T13:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
@@ -197,6 +197,7 @@ Replying to [comment:3 SimonKing]:
 > 
 > Replying to [comment:2 jsrn]:
 > > It seems that some parsing functionality has already been built into the gap interface, so all the last lines of sylow_subgroups can be greatly simplified. 
+
 > 
 > You have a misprint in your patch. You wrote self_element_class(), but it should be self._element_class().
 > 
@@ -254,7 +255,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_093046.json:
 ```json
 {
-    "body": "Replying to [comment:5 SimonKing]:\n> Apply trac-9621_permgroup_sylow_subgroup_with_simplification.patch\n> \n> (For the patchbot)\n> \n> Probably this patch is bit rotting and we need rebasing. \nIndeed we do. :).",
+    "body": "Replying to [comment:5 SimonKing]:\n> Apply trac-9621_permgroup_sylow_subgroup_with_simplification.patch\n> \n> (For the patchbot)\n> \n> Probably this patch is bit rotting and we need rebasing. \n\nIndeed we do. :).",
     "created_at": "2011-11-30T21:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
@@ -269,6 +270,7 @@ Replying to [comment:5 SimonKing]:
 > (For the patchbot)
 > 
 > Probably this patch is bit rotting and we need rebasing. 
+
 Indeed we do. :).
 
 
@@ -296,7 +298,7 @@ I think this can be closed as I fixed this problem in #10334.
 archive/issue_comments_093048.json:
 ```json
 {
-    "body": "Replying to [comment:7 mhansen]:\n> I think this can be closed as I fixed this problem in #10334.\n\nOK, I just tested that it works with sage-5.0.rc0. Hence, it is a duplicate (or sub-problem) of #10334.",
+    "body": "Replying to [comment:7 mhansen]:\n> I think this can be closed as I fixed this problem in #10334.\n\n\nOK, I just tested that it works with sage-5.0.rc0. Hence, it is a duplicate (or sub-problem) of #10334.",
     "created_at": "2012-05-15T05:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9621",
     "type": "issue_comment",
@@ -307,6 +309,7 @@ archive/issue_comments_093048.json:
 
 Replying to [comment:7 mhansen]:
 > I think this can be closed as I fixed this problem in #10334.
+
 
 OK, I just tested that it works with sage-5.0.rc0. Hence, it is a duplicate (or sub-problem) of #10334.
 

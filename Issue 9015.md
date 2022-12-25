@@ -3,7 +3,7 @@
 archive/issues_009015.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\nI was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.\n\nWe should change this to show the text displayed with `help()`.\n\nPrinting some more information when someone types `help` without the parenthesis would also be nice.\n\n\n```\nsage: help\n<function help at 0x1d6fc80>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9015\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\nI was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.\n\nWe should change this to show the text displayed with `help()`.\n\nPrinting some more information when someone types `help` without the parenthesis would also be nice.\n\n```\nsage: help\n<function help at 0x1d6fc80>\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9015\n\n",
     "created_at": "2010-05-22T11:39:16Z",
     "labels": [
         "component: documentation",
@@ -26,12 +26,10 @@ We should change this to show the text displayed with `help()`.
 
 Printing some more information when someone types `help` without the parenthesis would also be nice.
 
-
 ```
 sage: help
 <function help at 0x1d6fc80>
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9015
 
@@ -163,7 +161,7 @@ archive/issue_events_022066.json:
 archive/issue_comments_083247.json:
 ```json
 {
-    "body": "This is still the case, though now\n\n```\nsage: help\n<function sage.misc.sagedoc.help>\n```\n\n\nVolker, you are currently the Ipython-in-Sage guru - is there an easy way to fix this?",
+    "body": "This is still the case, though now\n\n```\nsage: help\n<function sage.misc.sagedoc.help>\n```\n\nVolker, you are currently the Ipython-in-Sage guru - is there an easy way to fix this?",
     "created_at": "2014-11-24T17:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
@@ -179,7 +177,6 @@ sage: help
 <function sage.misc.sagedoc.help>
 ```
 
-
 Volker, you are currently the Ipython-in-Sage guru - is there an easy way to fix this?
 
 
@@ -189,7 +186,7 @@ Volker, you are currently the Ipython-in-Sage guru - is there an easy way to fix
 archive/issue_comments_083248.json:
 ```json
 {
-    "body": "I was hoping that you could add `usage = 'Useful message here'` somewhere in `DEFAULT_SAGE_CONFIG` in sage/repl/interpreter.py`, but that doesn't seem to have any effect. I also tried\n\n```diff\ndiff --git a/src/sage/repl/interpreter.py b/src/sage/repl/interpreter.py\nindex dbbd683..e748b9e 100644\n--- a/src/sage/repl/interpreter.py\n+++ b/src/sage/repl/interpreter.py\n@@ -502,6 +502,7 @@ class SageCrashHandler(IPAppCrashHandler):\n \n class SageTerminalApp(TerminalIPythonApp):\n     name = u'Sage'\n+    usage='Useful message here'\n     crash_handler_class = SageCrashHandler\n     test_shell = False\n \n```\n\nI don't know what else to try right now.",
+    "body": "I was hoping that you could add `usage = 'Useful message here'` somewhere in `DEFAULT_SAGE_CONFIG` in sage/repl/interpreter.py`, but that doesn't seem to have any effect. I also tried\n\n```diff\ndiff --git a/src/sage/repl/interpreter.py b/src/sage/repl/interpreter.py\nindex dbbd683..e748b9e 100644\n--- a/src/sage/repl/interpreter.py\n+++ b/src/sage/repl/interpreter.py\n@@ -502,6 +502,7 @@ class SageCrashHandler(IPAppCrashHandler):\n \n class SageTerminalApp(TerminalIPythonApp):\n     name = u'Sage'\n+    usage='Useful message here'\n     crash_handler_class = SageCrashHandler\n     test_shell = False\n \n```\nI don't know what else to try right now.",
     "created_at": "2014-11-25T00:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
@@ -214,7 +211,6 @@ index dbbd683..e748b9e 100644
      test_shell = False
  
 ```
-
 I don't know what else to try right now.
 
 
@@ -260,7 +256,7 @@ New commits:
 archive/issue_comments_083251.json:
 ```json
 {
-    "body": "If you want to figure out what happens you can always run in under the debugger:\n\n```\nsage: ip = get_ipython()\nsage: %debug ip.run_cell('?')\n```\n",
+    "body": "If you want to figure out what happens you can always run in under the debugger:\n\n```\nsage: ip = get_ipython()\nsage: %debug ip.run_cell('?')\n```",
     "created_at": "2014-11-25T12:11:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
@@ -275,7 +271,6 @@ If you want to figure out what happens you can always run in under the debugger:
 sage: ip = get_ipython()
 sage: %debug ip.run_cell('?')
 ```
-
 
 
 
@@ -342,7 +337,7 @@ IMHO it is confusing to have the IPython help crop up. If there is anything that
 archive/issue_comments_083255.json:
 ```json
 {
-    "body": "I think this is good. Regarding the comment in the ticket description,\n> Printing some more information when someone types help without the parenthesis would also be nice.\nI guess there are ways to do this (see http://stackoverflow.com/questions/10875442/possible-to-change-a-functions-repr-in-python), but I don't know if they're worth it. The banner when you start Sage already says\n\n```\nType \"help()\" for help.\n```\n\n\nPositive review from me. Karl-Dieter?",
+    "body": "I think this is good. Regarding the comment in the ticket description,\n> Printing some more information when someone types help without the parenthesis would also be nice.\n\nI guess there are ways to do this (see http://stackoverflow.com/questions/10875442/possible-to-change-a-functions-repr-in-python), but I don't know if they're worth it. The banner when you start Sage already says\n\n```\nType \"help()\" for help.\n```\n\nPositive review from me. Karl-Dieter?",
     "created_at": "2014-12-01T20:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
@@ -353,12 +348,12 @@ archive/issue_comments_083255.json:
 
 I think this is good. Regarding the comment in the ticket description,
 > Printing some more information when someone types help without the parenthesis would also be nice.
+
 I guess there are ways to do this (see http://stackoverflow.com/questions/10875442/possible-to-change-a-functions-repr-in-python), but I don't know if they're worth it. The banner when you start Sage already says
 
 ```
 Type "help()" for help.
 ```
-
 
 Positive review from me. Karl-Dieter?
 

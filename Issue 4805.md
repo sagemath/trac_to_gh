@@ -3,7 +3,7 @@
 archive/issues_004805.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus @roed314\n\nKeywords: elliptic curve\n\nAfter #4741 we still have this problem:\n\n```\nsage: EllipticCurve(\"7690e1\").S_integral_points([13,2])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (178, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/john/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in S_integral_points(self, S, mw_base, both_signs, verbose, proof)\n   5062             while not p_prec_ok:\n   5063                 try:\n-> 5064                     mw_base_p_log.append([mp_temp*(pts.padic_elliptic_logarithm(p,precision=p_prec)) for pts in mw_base])\n   5065                     p_prec_ok=True\n   5066                 except (PrecisionError, ZeroDivisionError, TypeError):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in padic_elliptic_logarithm(self, p, precision)\n   1399         t = -x/y\n   1400         v = t.valuation()\n-> 1401         phi = Ep.formal().log(prec=1+precision//v)\n   1402         return phi(t)/f\n   1403 \n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/formal_group.pyc in log(self, prec)\n    348            -- David Harvey (2006-09-10): rewrote to use differential\n    349         \"\"\"\n--> 350         return self.differential(prec-1).integral().add_bigoh(prec)\n    351 \n    352     def inverse(self, prec=20):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_ring_element.so in sage.rings.power_series_ring_element.PowerSeries.add_bigoh (sage/rings/power_series_ring_element.c:5413)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    324             v = sage_eval(f.Eltseq())\n    325             return self(v) * (self.gen(0)**f.Valuation())\n--> 326         return self.__power_series_class(self, f, prec, check=check)\n    327         \n    328     def construction(self):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_poly.so in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2160)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.truncate (sage/rings/polynomial/polynomial_element.c:27152)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.pyc in __getslice__(self, i, j)\n    372             j = len(self._relprecs) + j\n    373             if j < 0:\n--> 374                 raise IndexError, \"list index out of range\"\n    375         if i >= j:\n    376             return Polynomial_padic_capped_relative_dense(self.parent(), [])\n\nIndexError: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4805\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  tnagel mardaus @roed314\n\nKeywords: elliptic curve\n\nAfter #4741 we still have this problem:\n\n```\nsage: EllipticCurve(\"7690e1\").S_integral_points([13,2])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (178, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/john/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in S_integral_points(self, S, mw_base, both_signs, verbose, proof)\n   5062             while not p_prec_ok:\n   5063                 try:\n-> 5064                     mw_base_p_log.append([mp_temp*(pts.padic_elliptic_logarithm(p,precision=p_prec)) for pts in mw_base])\n   5065                     p_prec_ok=True\n   5066                 except (PrecisionError, ZeroDivisionError, TypeError):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in padic_elliptic_logarithm(self, p, precision)\n   1399         t = -x/y\n   1400         v = t.valuation()\n-> 1401         phi = Ep.formal().log(prec=1+precision//v)\n   1402         return phi(t)/f\n   1403 \n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/formal_group.pyc in log(self, prec)\n    348            -- David Harvey (2006-09-10): rewrote to use differential\n    349         \"\"\"\n--> 350         return self.differential(prec-1).integral().add_bigoh(prec)\n    351 \n    352     def inverse(self, prec=20):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_ring_element.so in sage.rings.power_series_ring_element.PowerSeries.add_bigoh (sage/rings/power_series_ring_element.c:5413)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    324             v = sage_eval(f.Eltseq())\n    325             return self(v) * (self.gen(0)**f.Valuation())\n--> 326         return self.__power_series_class(self, f, prec, check=check)\n    327         \n    328     def construction(self):\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/power_series_poly.so in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2160)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.truncate (sage/rings/polynomial/polynomial_element.c:27152)()\n\n/home/john/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.pyc in __getslice__(self, i, j)\n    372             j = len(self._relprecs) + j\n    373             if j < 0:\n--> 374                 raise IndexError, \"list index out of range\"\n    375         if i >= j:\n    376             return Polynomial_padic_capped_relative_dense(self.parent(), [])\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4805\n\n",
     "created_at": "2008-12-15T16:59:44Z",
     "labels": [
         "component: number theory",
@@ -78,7 +78,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4805
@@ -290,7 +289,7 @@ archive/issue_events_010995.json:
 archive/issue_comments_036357.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> John,\n> \n> can you make the easy changes that Roed requested and then open another ticket for the heavy lifting he wants implemented? I am willing to give this a positive review then and take the heat in case things go wrong :)\n\nOK, I'll do that as soon as I can.  Then we might want to ping one of our p-adic experts to do a better job.\n\n\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:5 mabshoff]:\n> John,\n> \n> can you make the easy changes that Roed requested and then open another ticket for the heavy lifting he wants implemented? I am willing to give this a positive review then and take the heat in case things go wrong :)\n\n\nOK, I'll do that as soon as I can.  Then we might want to ping one of our p-adic experts to do a better job.\n\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2009-02-02T18:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4805",
     "type": "issue_comment",
@@ -303,6 +302,7 @@ Replying to [comment:5 mabshoff]:
 > John,
 > 
 > can you make the easy changes that Roed requested and then open another ticket for the heavy lifting he wants implemented? I am willing to give this a positive review then and take the heat in case things go wrong :)
+
 
 OK, I'll do that as soon as I can.  Then we might want to ping one of our p-adic experts to do a better job.
 
@@ -405,7 +405,7 @@ Assuming this passes all tests, I'm fine with it getting a positive review.
 archive/issue_comments_036362.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n\n> Assuming this passes all tests, I'm fine with it getting a positive review. \n\nDoctests on sage.math do pass with both patches applied, so I am changing this to a positive review as indicated by William.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:9 was]:\n\n> Assuming this passes all tests, I'm fine with it getting a positive review. \n\n\nDoctests on sage.math do pass with both patches applied, so I am changing this to a positive review as indicated by William.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T22:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4805",
     "type": "issue_comment",
@@ -417,6 +417,7 @@ archive/issue_comments_036362.json:
 Replying to [comment:9 was]:
 
 > Assuming this passes all tests, I'm fine with it getting a positive review. 
+
 
 Doctests on sage.math do pass with both patches applied, so I am changing this to a positive review as indicated by William.
 

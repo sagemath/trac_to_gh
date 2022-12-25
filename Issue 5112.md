@@ -215,7 +215,7 @@ Michael
 archive/issue_comments_039000.json:
 ```json
 {
-    "body": "SECOND REVIEW:\n\n* Line 1 of docstring: \"Pollard Lambda algorithm for computing discrete logarithm.\"\nIt should be \"Pollard Lambda algorithm for computing discrete logarithms.\" or \"Pollard Lambda algorithm for computing the discrete logarithm.\"\n\n* The docstring has a typo in line 2: \"usefull\" \n\n* The sections in the docstring should have space between them (e.g., a blank line before EXAMPLES:).  This can be ignored because of the ReST/Sphinx transition, which will probably change that. \n\n* I noticed this line\n\n```\nN = width.isqrt()+1 \n```\n\nIf width is a Python int then that will fail.  This is easy to trigger and will accidentally happen in library code easily:\n\n```\nsage: F.<a> = GF(2^63) \nsage: g = F.gen()\nsage: pollard_lambda(g, g^1234567, (1200000,1250000)) \n1234567\nsage: pollard_lambda(g, g^1234567, (int(1200000), int(1250000))) \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/space/wstein/sage-3.3.rc0/<ipython console> in <module>()\n\n/space/wstein/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/groups/generic.pyc in pollard_lambda(base, a, bounds, ord, operation, hash_function, memory)\n    649 \n    650     width = ub-lb\n--> 651     N = width.isqrt()+1\n    652 \n    653     M = dict()\n\nAttributeError: 'int' object has no attribute 'isqrt'\n```\n\n\n* the doctests are insufficient.  The function signature is\n\n```\ndef pollard_lambda(base, a, bounds, ord=None, operation='*', hash_function=hash, memory=None): \n```\n\nAt a bare minimum, there must be doctests that test use of all the inputs to the function.",
+    "body": "SECOND REVIEW:\n\n* Line 1 of docstring: \"Pollard Lambda algorithm for computing discrete logarithm.\"\nIt should be \"Pollard Lambda algorithm for computing discrete logarithms.\" or \"Pollard Lambda algorithm for computing the discrete logarithm.\"\n\n* The docstring has a typo in line 2: \"usefull\" \n\n* The sections in the docstring should have space between them (e.g., a blank line before EXAMPLES:).  This can be ignored because of the ReST/Sphinx transition, which will probably change that. \n\n* I noticed this line\n\n```\nN = width.isqrt()+1 \n```\nIf width is a Python int then that will fail.  This is easy to trigger and will accidentally happen in library code easily:\n\n```\nsage: F.<a> = GF(2^63) \nsage: g = F.gen()\nsage: pollard_lambda(g, g^1234567, (1200000,1250000)) \n1234567\nsage: pollard_lambda(g, g^1234567, (int(1200000), int(1250000))) \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/space/wstein/sage-3.3.rc0/<ipython console> in <module>()\n\n/space/wstein/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/groups/generic.pyc in pollard_lambda(base, a, bounds, ord, operation, hash_function, memory)\n    649 \n    650     width = ub-lb\n--> 651     N = width.isqrt()+1\n    652 \n    653     M = dict()\n\nAttributeError: 'int' object has no attribute 'isqrt'\n```\n\n* the doctests are insufficient.  The function signature is\n\n```\ndef pollard_lambda(base, a, bounds, ord=None, operation='*', hash_function=hash, memory=None): \n```\nAt a bare minimum, there must be doctests that test use of all the inputs to the function.",
     "created_at": "2009-02-15T08:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5112",
     "type": "issue_comment",
@@ -238,7 +238,6 @@ It should be "Pollard Lambda algorithm for computing discrete logarithms." or "P
 ```
 N = width.isqrt()+1 
 ```
-
 If width is a Python int then that will fail.  This is easy to trigger and will accidentally happen in library code easily:
 
 ```
@@ -262,13 +261,11 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'int' object has no attribute 'isqrt'
 ```
 
-
 * the doctests are insufficient.  The function signature is
 
 ```
 def pollard_lambda(base, a, bounds, ord=None, operation='*', hash_function=hash, memory=None): 
 ```
-
 At a bare minimum, there must be doctests that test use of all the inputs to the function.
 
 

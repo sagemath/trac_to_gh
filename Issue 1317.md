@@ -3,7 +3,7 @@
 archive/issues_001317.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  mvngu\n\nKeywords: graphs\n\n\n```\n>> * cut-sets (more generally, min/max flow algorithms)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1317\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  mvngu\n\nKeywords: graphs\n\n```\n>> * cut-sets (more generally, min/max flow algorithms)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1317\n\n",
     "created_at": "2007-11-28T20:04:22Z",
     "labels": [
         "component: combinatorics"
@@ -21,11 +21,9 @@ CC:  mvngu
 
 Keywords: graphs
 
-
 ```
 >> * cut-sets (more generally, min/max flow algorithms)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1317
 

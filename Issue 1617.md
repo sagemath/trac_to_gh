@@ -3,7 +3,7 @@
 archive/issues_001617.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
     "created_at": "2007-12-28T22:01:50Z",
     "labels": [
         "component: algebraic geometry",
@@ -22,7 +22,6 @@ There is a huge speed difference. Any special reasons? A novice user would possi
 
 
 
-
 ```
 var('x,y')
 time p1=factor(x^99+y^99)
@@ -32,15 +31,12 @@ Time: CPU 0.05 s, Wall: 58.43 s
 
 
 
-
-
 ```
 R.<x,y> = QQ[]
 time p2=factor(x^99+y^99)
 
 Time: CPU 0.06 s, Wall: 0.06 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1617
 
@@ -200,7 +196,7 @@ Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/tra
 archive/issue_comments_010263.json:
 ```json
 {
-    "body": "At least one comment is wrong in the patch since the \"-\" no longer shows up:\n\n```\n2288\t2288\t        Notice that the -1 factor is separated out: \n2289\t2289\t            sage: f.factor_list() \n2290\t \t            [(-1, 1), (y - x, 1), (y^2 + x*y + x^2, 1)] \n \t2290\t            [(x - y, 1), (y^2 + x*y + x^2, 1)] \n```\n\n\nCheers,\n\nMichael",
+    "body": "At least one comment is wrong in the patch since the \"-\" no longer shows up:\n\n```\n2288\t2288\t        Notice that the -1 factor is separated out: \n2289\t2289\t            sage: f.factor_list() \n2290\t \t            [(-1, 1), (y - x, 1), (y^2 + x*y + x^2, 1)] \n \t2290\t            [(x - y, 1), (y^2 + x*y + x^2, 1)] \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-16T17:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
@@ -217,7 +213,6 @@ At least one comment is wrong in the patch since the "-" no longer shows up:
 2290	 	            [(-1, 1), (y - x, 1), (y^2 + x*y + x^2, 1)] 
  	2290	            [(x - y, 1), (y^2 + x*y + x^2, 1)] 
 ```
-
 
 Cheers,
 

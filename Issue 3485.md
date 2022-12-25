@@ -3,7 +3,7 @@
 archive/issues_003485.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\n\nI am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.)\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates a new sage_input function, that does things like this:\n\n```\nsage: sage_input((polygen(GF(3))+1)^4)\n\nR.<x> = GF(3)[]\nx^4 + x^3 + x + 1\n```\n\nI am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked \"complicated\" types, so I think the underlying framework is ready to go.)\n\nThis patch depends on #3484.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3485\n\n",
     "created_at": "2008-06-20T08:18:11Z",
     "labels": [
         "component: misc",
@@ -28,7 +28,6 @@ sage: sage_input((polygen(GF(3))+1)^4)
 R.<x> = GF(3)[]
 x^4 + x^3 + x + 1
 ```
-
 
 I am not done writing docstrings and doctests, so the patch is not ready for review; but any comments on the general approach would be appreciated.  (Also, sage_input is implemented for only a few types; but I picked "complicated" types, so I think the underlying framework is ready to go.)
 
@@ -158,7 +157,7 @@ archive/issue_events_007936.json:
 archive/issue_comments_024517.json:
 ```json
 {
-    "body": "There is some slight problem applying this:\n\n```\nsage-3.1.alpha2/devel/sage$ patch -p1 --dry-run < trac_3485-sage_input-v2.patch \npatching file sage/misc/all.py\nHunk #1 succeeded at 65 (offset 2 lines).\npatching file sage/misc/sage_input.py\npatching file sage/rings/integer.pyx\nHunk #1 succeeded at 2943 (offset 16 lines).\npatching file sage/rings/integer_mod.pyx\npatching file sage/rings/integer_ring.pyx\nHunk #1 succeeded at 823 with fuzz 2 (offset 8 lines).\npatching file sage/rings/polynomial/polynomial_element.pyx\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #1 succeeded at 392 with fuzz 2 (offset 17 lines).\npatching file sage/rings/real_mpfr.pyx\nHunk #1 succeeded at 280 (offset 12 lines).\nHunk #2 succeeded at 966 (offset 16 lines).\npatching file sage/rings/ring.pyx\nHunk #1 FAILED at 1505.\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/ring.pyx.rej\n```\n\nIt also seems that only trac3485-sage_input-v2.patch should be applied.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "There is some slight problem applying this:\n\n```\nsage-3.1.alpha2/devel/sage$ patch -p1 --dry-run < trac_3485-sage_input-v2.patch \npatching file sage/misc/all.py\nHunk #1 succeeded at 65 (offset 2 lines).\npatching file sage/misc/sage_input.py\npatching file sage/rings/integer.pyx\nHunk #1 succeeded at 2943 (offset 16 lines).\npatching file sage/rings/integer_mod.pyx\npatching file sage/rings/integer_ring.pyx\nHunk #1 succeeded at 823 with fuzz 2 (offset 8 lines).\npatching file sage/rings/polynomial/polynomial_element.pyx\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #1 succeeded at 392 with fuzz 2 (offset 17 lines).\npatching file sage/rings/real_mpfr.pyx\nHunk #1 succeeded at 280 (offset 12 lines).\nHunk #2 succeeded at 966 (offset 16 lines).\npatching file sage/rings/ring.pyx\nHunk #1 FAILED at 1505.\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/ring.pyx.rej\n```\nIt also seems that only trac3485-sage_input-v2.patch should be applied.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T17:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3485",
     "type": "issue_comment",
@@ -189,7 +188,6 @@ patching file sage/rings/ring.pyx
 Hunk #1 FAILED at 1505.
 1 out of 1 hunk FAILED -- saving rejects to file sage/rings/ring.pyx.rej
 ```
-
 It also seems that only trac3485-sage_input-v2.patch should be applied.
 
 Thoughts?

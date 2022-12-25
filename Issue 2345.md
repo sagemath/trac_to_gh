@@ -3,7 +3,7 @@
 archive/issues_002345.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
     "created_at": "2008-02-28T08:47:58Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_002345.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: vector(RR,range(3))[2]
@@ -36,7 +35,6 @@ reeModuleElement_generic_dense.__getitem__()
 <type 'exceptions.IndexError'>: index (i=-1) must be
  between 0 and 2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2345
 

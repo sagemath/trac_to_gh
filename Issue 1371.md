@@ -123,7 +123,7 @@ I do worry about the copyright change, though -- I thought we agreed to give all
 archive/issue_comments_008777.json:
 ```json
 {
-    "body": "> I do worry about the copyright change, though -- I thought we agreed \n> to give all the copyright's to William Stein, to ease future license \n> changes. We should check if Jon Hanke is okay with that?\n\nWe did not agree to do that.  Some people did, but it is completely\noptional.  The key requirement is that all code in the core Sage library \nbe licensed  \"GPL V2 or greater\". The copyright holder can be anybody.",
+    "body": "> I do worry about the copyright change, though -- I thought we agreed \n> to give all the copyright's to William Stein, to ease future license \n> changes. We should check if Jon Hanke is okay with that?\n\n\nWe did not agree to do that.  Some people did, but it is completely\noptional.  The key requirement is that all code in the core Sage library \nbe licensed  \"GPL V2 or greater\". The copyright holder can be anybody.",
     "created_at": "2008-01-22T22:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1371",
     "type": "issue_comment",
@@ -135,6 +135,7 @@ archive/issue_comments_008777.json:
 > I do worry about the copyright change, though -- I thought we agreed 
 > to give all the copyright's to William Stein, to ease future license 
 > changes. We should check if Jon Hanke is okay with that?
+
 
 We did not agree to do that.  Some people did, but it is completely
 optional.  The key requirement is that all code in the core Sage library 

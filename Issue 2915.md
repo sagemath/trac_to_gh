@@ -3,7 +3,7 @@
 archive/issues_002915.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI tried the first integral inthe Axiom book in Sage and get a big boom!\n\n```\nsage: var('a,b')\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\nTraceback (most recent call last):\n...\nTypeError: \nIs  a  \nComputation failed due to a bug in Maxima -- NOTE: Maxima had to be restarted.\n```\n\n\nTrying maxima interactively shows it is just prompting for\nwhether or not a is positive.  Specifying which makes this work fine:\n\n```\nsage: var('a,b')\nsage: assume(a>0)\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\n2*b^2*arctan((2*(b*x + a)^(1/3) + a^(1/3))/(sqrt(3)*a^(1/3)))/(3*sqrt(3)*a^(7/3)) - b^2*log((b*x + a)^(2/3) + a^(1/3)*(b*x + a)^(1/3) + a^(2/3))/(9*a^(7/3)) + 2*b^2*log((b*x + a)^(1/3) - a^(1/3))/(9*a^(7/3)) + (4*b^2*(b*x + a)^(5/3) - 7*a*b^2*(b*x + a)^(2/3))/(6*a^2*(b*x + a)^2 - 12*a^3*(b*x + a) + 6*a^4)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2915\n\n",
+    "body": "Assignee: @williamstein\n\nI tried the first integral inthe Axiom book in Sage and get a big boom!\n\n```\nsage: var('a,b')\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\nTraceback (most recent call last):\n...\nTypeError: \nIs  a  \nComputation failed due to a bug in Maxima -- NOTE: Maxima had to be restarted.\n```\n\nTrying maxima interactively shows it is just prompting for\nwhether or not a is positive.  Specifying which makes this work fine:\n\n```\nsage: var('a,b')\nsage: assume(a>0)\nsage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)\n2*b^2*arctan((2*(b*x + a)^(1/3) + a^(1/3))/(sqrt(3)*a^(1/3)))/(3*sqrt(3)*a^(7/3)) - b^2*log((b*x + a)^(2/3) + a^(1/3)*(b*x + a)^(1/3) + a^(2/3))/(9*a^(7/3)) + 2*b^2*log((b*x + a)^(1/3) - a^(1/3))/(9*a^(7/3)) + (4*b^2*(b*x + a)^(5/3) - 7*a*b^2*(b*x + a)^(2/3))/(6*a^2*(b*x + a)^2 - 12*a^3*(b*x + a) + 6*a^4)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2915\n\n",
     "created_at": "2008-04-14T05:27:46Z",
     "labels": [
         "component: calculus",
@@ -30,7 +30,6 @@ Is  a
 Computation failed due to a bug in Maxima -- NOTE: Maxima had to be restarted.
 ```
 
-
 Trying maxima interactively shows it is just prompting for
 whether or not a is positive.  Specifying which makes this work fine:
 
@@ -40,7 +39,6 @@ sage: assume(a>0)
 sage: integrate(1/(x^3 *(a+b*x)^(1/3)), x)
 2*b^2*arctan((2*(b*x + a)^(1/3) + a^(1/3))/(sqrt(3)*a^(1/3)))/(3*sqrt(3)*a^(7/3)) - b^2*log((b*x + a)^(2/3) + a^(1/3)*(b*x + a)^(1/3) + a^(2/3))/(9*a^(7/3)) + 2*b^2*log((b*x + a)^(1/3) - a^(1/3))/(9*a^(7/3)) + (4*b^2*(b*x + a)^(5/3) - 7*a*b^2*(b*x + a)^(2/3))/(6*a^2*(b*x + a)^2 - 12*a^3*(b*x + a) + 6*a^4)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2915
 

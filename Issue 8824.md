@@ -3,7 +3,7 @@
 archive/issues_008824.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nFrom sage-devel: http://groups.google.com/group/sage-devel/browse_frm/thread/221f569eaba874de\n\n>   Hello:\n> >   Tracking a weird bug I've discovered the following:\n> >   For a symbolic variable x and a numpy.float64 y, the code 'x<y' evals\n> > to a Symbolic expression, while 'y<x' evals to a numpy.bool.\n> >   I'm afraid I'm stacked, as it is the responsability of the method\n> > numpy.float64.__lt__, and I can't assign it to a custom method, for example.\n> >   Any idea what can I try so that 'y<x' evals to a Symbolic Expression\n> > too (if you agree this should be the result)?\nSage should set the __array_priority__ attribute to something very\nhigh in its base class(es), then let the coercion model decide how\nNumPy objects should be handled (in this case, coerce to RDF or CDF).\n\nNumPy uses the custom convention that __array_priority__ decides which\noperand gets to handle the operation.\n\nExample:\n\n```\nimport numpy as np\n\nclass MagicOne:\n    __array_priority__ = 1000\n    def __cmp__(self, other):\n        print 'MagicOne has control'\n        return cmp(1, other)\n\none = MagicOne()\n\nprint one < np.float64(63.3)\nprint np.float64(63.3) < one\n```\n\nThis prints\n\n```\nMagicOne has control\nTrue\nMagicOne has control\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8824\n\n",
+    "body": "Assignee: @robertwb\n\nFrom sage-devel: http://groups.google.com/group/sage-devel/browse_frm/thread/221f569eaba874de\n\n>   Hello:\n\n> >   Tracking a weird bug I've discovered the following:\n> >   For a symbolic variable x and a numpy.float64 y, the code 'x<y' evals\n\n> > to a Symbolic expression, while 'y<x' evals to a numpy.bool.\n> >   I'm afraid I'm stacked, as it is the responsability of the method\n\n> > numpy.float64.__lt__, and I can't assign it to a custom method, for example.\n> >   Any idea what can I try so that 'y<x' evals to a Symbolic Expression\n\n> > too (if you agree this should be the result)?\nSage should set the __array_priority__ attribute to something very\nhigh in its base class(es), then let the coercion model decide how\nNumPy objects should be handled (in this case, coerce to RDF or CDF).\n\nNumPy uses the custom convention that __array_priority__ decides which\noperand gets to handle the operation.\n\nExample:\n\n```\nimport numpy as np\n\nclass MagicOne:\n    __array_priority__ = 1000\n    def __cmp__(self, other):\n        print 'MagicOne has control'\n        return cmp(1, other)\n\none = MagicOne()\n\nprint one < np.float64(63.3)\nprint np.float64(63.3) < one\n```\nThis prints\n\n```\nMagicOne has control\nTrue\nMagicOne has control\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8824\n\n",
     "created_at": "2010-04-29T15:36:37Z",
     "labels": [
         "component: coercion",
@@ -21,12 +21,16 @@ Assignee: @robertwb
 From sage-devel: http://groups.google.com/group/sage-devel/browse_frm/thread/221f569eaba874de
 
 >   Hello:
+
 > >   Tracking a weird bug I've discovered the following:
 > >   For a symbolic variable x and a numpy.float64 y, the code 'x<y' evals
+
 > > to a Symbolic expression, while 'y<x' evals to a numpy.bool.
 > >   I'm afraid I'm stacked, as it is the responsability of the method
+
 > > numpy.float64.__lt__, and I can't assign it to a custom method, for example.
 > >   Any idea what can I try so that 'y<x' evals to a Symbolic Expression
+
 > > too (if you agree this should be the result)?
 Sage should set the __array_priority__ attribute to something very
 high in its base class(es), then let the coercion model decide how
@@ -51,7 +55,6 @@ one = MagicOne()
 print one < np.float64(63.3)
 print np.float64(63.3) < one
 ```
-
 This prints
 
 ```
@@ -60,7 +63,6 @@ True
 MagicOne has control
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8824
 
@@ -73,7 +75,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8824
 archive/issue_comments_080898.json:
 ```json
 {
-    "body": "This might be a fitting place to record a wish: If Sage decides to do something with NumPy arrays (not just scalars), I think the behaviour should be something like:\n\n\n```\nsage: M = random_matrix(RDF, 4, 3)\nsage: A = np.random.normal(size=(12, 10, 4)).astype(np.float32)\nsage: type(A * M)\n<type np.ndarray...>\nsage: (A * M).shape\n(12, 10, 3)\nsage: (A * M).dtype\nfloat64\n```\n\nI.e. let matrices be operators acting on data, operating along the vectors along the rightmost dimension (matrix on right) or leftmost dimension (matrix on left).\n\nIn particular, I think it would be very bad to coerce NumPy arrays to Sage matrices!",
+    "body": "This might be a fitting place to record a wish: If Sage decides to do something with NumPy arrays (not just scalars), I think the behaviour should be something like:\n\n```\nsage: M = random_matrix(RDF, 4, 3)\nsage: A = np.random.normal(size=(12, 10, 4)).astype(np.float32)\nsage: type(A * M)\n<type np.ndarray...>\nsage: (A * M).shape\n(12, 10, 3)\nsage: (A * M).dtype\nfloat64\n```\nI.e. let matrices be operators acting on data, operating along the vectors along the rightmost dimension (matrix on right) or leftmost dimension (matrix on left).\n\nIn particular, I think it would be very bad to coerce NumPy arrays to Sage matrices!",
     "created_at": "2010-04-29T18:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8824",
     "type": "issue_comment",
@@ -83,7 +85,6 @@ archive/issue_comments_080898.json:
 ```
 
 This might be a fitting place to record a wish: If Sage decides to do something with NumPy arrays (not just scalars), I think the behaviour should be something like:
-
 
 ```
 sage: M = random_matrix(RDF, 4, 3)
@@ -95,7 +96,6 @@ sage: (A * M).shape
 sage: (A * M).dtype
 float64
 ```
-
 I.e. let matrices be operators acting on data, operating along the vectors along the rightmost dimension (matrix on right) or leftmost dimension (matrix on left).
 
 In particular, I think it would be very bad to coerce NumPy arrays to Sage matrices!

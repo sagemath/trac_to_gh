@@ -3,7 +3,7 @@
 archive/issues_000479.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @ClementPernet drkirkby\n\nKeywords: LinBox\n\nHello,\n\nThe current LinBox package in Sage 2.8.2 has the following assignments in spkg-install\n\n\n```\nCFLAGS=\"$CFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"-L\\\"$SAGE_LOCAL/lib\\\"\"\nCXXFLAGS=\"$CXXFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"  -L\\\"$SAGE_LOCAL/lib\\\"\"\nCPPFLAGS=\"$CPPFLAGS  -I\\\"$SAGE_LOCAL/include/linbox\\\" -I\\\"$SAGE_LOCAL\\\"/include\"\n```\n\nbut uses the configure with the following options:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-givaro=\"$SAGE_LOCAL\" --with-gmp=\"$SAGE_LOCAL\" --with-ntl=\"$SAGE_LOCAL\" $OPS --with-blas=\"$LINBOX_BLAS\"\n```\n\nThis is due to a bug in LinBox where for exmaple GMP_CFLAGS is not propagated down into the Makefiles (via Makefile.am). I have fixed this for the GMP and I assume that it is the same fix for NTL and Givaro. The GMP fix already made it into LinBox-20070814.spkg and I did verify on my systems that the right gmp selected during configure is also linked against. Once I have made the fixes for NTL and Givaro I will push those fixes toward LinBox upstream.\n\nCheers,\n\nMichael\n\nI \n\nIssue created by migration from https://trac.sagemath.org/ticket/479\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @ClementPernet drkirkby\n\nKeywords: LinBox\n\nHello,\n\nThe current LinBox package in Sage 2.8.2 has the following assignments in spkg-install\n\n```\nCFLAGS=\"$CFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"-L\\\"$SAGE_LOCAL/lib\\\"\"\nCXXFLAGS=\"$CXXFLAGS -fPIC -I\\\"$SAGE_LOCAL/include\\\" -I\\\"$SAGE_LOCAL/include/linbox\\\"  -L\\\"$SAGE_LOCAL/lib\\\"\"\nCPPFLAGS=\"$CPPFLAGS  -I\\\"$SAGE_LOCAL/include/linbox\\\" -I\\\"$SAGE_LOCAL\\\"/include\"\n```\nbut uses the configure with the following options:\n\n```\n./configure --prefix=\"$SAGE_LOCAL\" --with-givaro=\"$SAGE_LOCAL\" --with-gmp=\"$SAGE_LOCAL\" --with-ntl=\"$SAGE_LOCAL\" $OPS --with-blas=\"$LINBOX_BLAS\"\n```\nThis is due to a bug in LinBox where for exmaple GMP_CFLAGS is not propagated down into the Makefiles (via Makefile.am). I have fixed this for the GMP and I assume that it is the same fix for NTL and Givaro. The GMP fix already made it into LinBox-20070814.spkg and I did verify on my systems that the right gmp selected during configure is also linked against. Once I have made the fixes for NTL and Givaro I will push those fixes toward LinBox upstream.\n\nCheers,\n\nMichael\n\nI \n\nIssue created by migration from https://trac.sagemath.org/ticket/479\n\n",
     "created_at": "2007-08-22T19:36:34Z",
     "labels": [
         "component: packages: standard",
@@ -26,19 +26,16 @@ Hello,
 
 The current LinBox package in Sage 2.8.2 has the following assignments in spkg-install
 
-
 ```
 CFLAGS="$CFLAGS -fPIC -I\"$SAGE_LOCAL/include\" -I\"$SAGE_LOCAL/include/linbox\"-L\"$SAGE_LOCAL/lib\""
 CXXFLAGS="$CXXFLAGS -fPIC -I\"$SAGE_LOCAL/include\" -I\"$SAGE_LOCAL/include/linbox\"  -L\"$SAGE_LOCAL/lib\""
 CPPFLAGS="$CPPFLAGS  -I\"$SAGE_LOCAL/include/linbox\" -I\"$SAGE_LOCAL\"/include"
 ```
-
 but uses the configure with the following options:
 
 ```
 ./configure --prefix="$SAGE_LOCAL" --with-givaro="$SAGE_LOCAL" --with-gmp="$SAGE_LOCAL" --with-ntl="$SAGE_LOCAL" $OPS --with-blas="$LINBOX_BLAS"
 ```
-
 This is due to a bug in LinBox where for exmaple GMP_CFLAGS is not propagated down into the Makefiles (via Makefile.am). I have fixed this for the GMP and I assume that it is the same fix for NTL and Givaro. The GMP fix already made it into LinBox-20070814.spkg and I did verify on my systems that the right gmp selected during configure is also linked against. Once I have made the fixes for NTL and Givaro I will push those fixes toward LinBox upstream.
 
 Cheers,

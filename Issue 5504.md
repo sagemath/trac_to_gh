@@ -142,7 +142,7 @@ archive/issue_events_012885.json:
 archive/issue_comments_042671.json:
 ```json
 {
-    "body": "Replying to [comment:3 GeorgSWeber]:\n\nThis is indeed a dupe of  #4354.\n\n> Am I allowed to close this?\n\nNope, the release manager does that after verifying that it is a dupe. And I have to state that you are right, so closed as a dupe :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 GeorgSWeber]:\n\nThis is indeed a dupe of  #4354.\n\n> Am I allowed to close this?\n\n\nNope, the release manager does that after verifying that it is a dupe. And I have to state that you are right, so closed as a dupe :)\n\nCheers,\n\nMichael",
     "created_at": "2009-03-27T20:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5504",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ Replying to [comment:3 GeorgSWeber]:
 This is indeed a dupe of  #4354.
 
 > Am I allowed to close this?
+
 
 Nope, the release manager does that after verifying that it is a dupe. And I have to state that you are right, so closed as a dupe :)
 

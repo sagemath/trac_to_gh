@@ -3,7 +3,7 @@
 archive/issues_001386.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  alexghitza\n\nShould go something like:\n\n```\nsage: K.<a> = SplittingField(QQ, x^5 - 1)\n```\n\nThen maybe a1, ..., an would be roots of the polynomial not already in `QQ` or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1386\n\n",
+    "body": "Assignee: @malb\n\nCC:  alexghitza\n\nShould go something like:\n\n```\nsage: K.<a> = SplittingField(QQ, x^5 - 1)\n```\nThen maybe a1, ..., an would be roots of the polynomial not already in `QQ` or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1386\n\n",
     "created_at": "2007-12-03T20:38:43Z",
     "labels": [
         "component: commutative algebra",
@@ -25,7 +25,6 @@ Should go something like:
 ```
 sage: K.<a> = SplittingField(QQ, x^5 - 1)
 ```
-
 Then maybe a1, ..., an would be roots of the polynomial not already in `QQ` or something...
 
 Issue created by migration from https://trac.sagemath.org/ticket/1386

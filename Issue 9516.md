@@ -3,7 +3,7 @@
 archive/issues_009516.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\n\n```\nsage -t  -long \"devel/sage/sage/plot/plot3d/parametric_surface.pyx\"\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.5.rc1/devel/sage/sage/plot/plot3d/parametric_surface.pyx\", line 311:\n    sage: M.bounding_box()\nExpected:\n    ((-10.0, -7.5390734925047846, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\nGot:\n    ((-10.0, -7.5390734925047855, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wstein/.sage//tmp/.doctest\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9516\n\n",
+    "body": "Assignee: mvngu\n\n```\nsage -t  -long \"devel/sage/sage/plot/plot3d/parametric_surface.pyx\"\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.5.rc1/devel/sage/sage/plot/plot3d/parametric_surface.pyx\", line 311:\n    sage: M.bounding_box()\nExpected:\n    ((-10.0, -7.5390734925047846, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\nGot:\n    ((-10.0, -7.5390734925047855, -2.9940801852848145), (10.0, 7.5390734925047846, 2.9940801852848145))\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wstein/.sage//tmp/.doctest\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9516\n\n",
     "created_at": "2010-07-16T09:38:53Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_009516.json:
 }
 ```
 Assignee: mvngu
-
 
 ```
 sage -t  -long "devel/sage/sage/plot/plot3d/parametric_surface.pyx"
@@ -35,7 +34,6 @@ Got:
 ***Test Failed*** 1 failures.
 For whitespace errors, see the file /Users/wstein/.sage//tmp/.doctest
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9516
 

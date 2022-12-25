@@ -3,7 +3,7 @@
 archive/issues_003985.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nPlotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  \nE.g.\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\n\nexcept automatic detection of the ymin and ymax.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
+    "body": "Assignee: @williamstein\n\nPlotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  \nE.g.\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\nexcept automatic detection of the ymin and ymax.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
     "created_at": "2008-08-29T02:28:48Z",
     "labels": [
         "component: graphics",
@@ -24,7 +24,6 @@ E.g.
 ```
 sage: plot(tan,-20,20).show(ymin=-5, ymax=5) 
 ```
-
 except automatic detection of the ymin and ymax.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3985
@@ -80,7 +79,7 @@ It's actually kind of fun to evaluate the above command again and again, seeing 
 archive/issue_comments_028607.json:
 ```json
 {
-    "body": "Just FYI, #6035 partially resolves this.  \n\nHowever, \n\n```\nsage: plot(tan,-20,20, detect_poles='show')\nsage: plot(tan,-20,20, detect_poles=True)\n```\n\nshows that 'show' still keeps the \"missing\" points (which include not just the asymptote but also the high slopes on either side) and that True doesn't create a uniform height as one might desire in the Description.  \n\nDescription changed to indicate this successful partial resolution, however!",
+    "body": "Just FYI, #6035 partially resolves this.  \n\nHowever, \n\n```\nsage: plot(tan,-20,20, detect_poles='show')\nsage: plot(tan,-20,20, detect_poles=True)\n```\nshows that 'show' still keeps the \"missing\" points (which include not just the asymptote but also the high slopes on either side) and that True doesn't create a uniform height as one might desire in the Description.  \n\nDescription changed to indicate this successful partial resolution, however!",
     "created_at": "2009-05-21T18:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3985",
     "type": "issue_comment",
@@ -97,7 +96,6 @@ However,
 sage: plot(tan,-20,20, detect_poles='show')
 sage: plot(tan,-20,20, detect_poles=True)
 ```
-
 shows that 'show' still keeps the "missing" points (which include not just the asymptote but also the high slopes on either side) and that True doesn't create a uniform height as one might desire in the Description.  
 
 Description changed to indicate this successful partial resolution, however!

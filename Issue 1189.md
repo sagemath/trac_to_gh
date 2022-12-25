@@ -93,7 +93,7 @@ Changing component from algebraic geometry to calculus.
 archive/issue_comments_007337.json:
 ```json
 {
-    "body": "After upgrading the spkg and applying the patch, please check, that everything works as it should by:\n\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py \nsage -t  devel/sage-main/sage/calculus/test_sympy.py        \n         [2.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.9 seconds",
+    "body": "After upgrading the spkg and applying the patch, please check, that everything works as it should by:\n\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py \nsage -t  devel/sage-main/sage/calculus/test_sympy.py        \n         [2.9 s]\n \n---\nAll tests passed!\nTotal time for all tests: 2.9 seconds",
     "created_at": "2007-11-17T00:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ $ ./sage -t devel/sage/sage/calculus/test_sympy.py
 sage -t  devel/sage-main/sage/calculus/test_sympy.py        
          [2.9 s]
  
-----------------------------------------------------------------------
+---
 All tests passed!
 Total time for all tests: 2.9 seconds
 
@@ -431,7 +431,7 @@ archive/issue_events_003178.json:
 archive/issue_comments_007347.json:
 ```json
 {
-    "body": "> Hehe, I assumed you ran testall, especially after touching coerce.pyx.\n\nYeah, I am still learning how to properly contribute to SAGE. :)",
+    "body": "> Hehe, I assumed you ran testall, especially after touching coerce.pyx.\n\n\nYeah, I am still learning how to properly contribute to SAGE. :)",
     "created_at": "2007-11-19T08:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -441,6 +441,7 @@ archive/issue_comments_007347.json:
 ```
 
 > Hehe, I assumed you ran testall, especially after touching coerce.pyx.
+
 
 Yeah, I am still learning how to properly contribute to SAGE. :)
 
@@ -509,7 +510,7 @@ But probably needs some review before committing.
 archive/issue_comments_007349.json:
 ```json
 {
-    "body": "I was not able to apply sympy2.patch cleanly against Sage 2.8.14. \n\nThat said, I think _verify_canonical_coercion_c is the wrong thing to call here--please see the attached change which should fix the segfault issue in a much cleaner way and allow stuff like\n \n\n```\nsage: Integer(1) + sympy.Symbol(\"x\")\nx + 1\n```\n",
+    "body": "I was not able to apply sympy2.patch cleanly against Sage 2.8.14. \n\nThat said, I think _verify_canonical_coercion_c is the wrong thing to call here--please see the attached change which should fix the segfault issue in a much cleaner way and allow stuff like\n \n```\nsage: Integer(1) + sympy.Symbol(\"x\")\nx + 1\n```",
     "created_at": "2007-11-27T03:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
@@ -522,12 +523,10 @@ I was not able to apply sympy2.patch cleanly against Sage 2.8.14.
 
 That said, I think _verify_canonical_coercion_c is the wrong thing to call here--please see the attached change which should fix the segfault issue in a much cleaner way and allow stuff like
  
-
 ```
 sage: Integer(1) + sympy.Symbol("x")
 x + 1
 ```
-
 
 
 

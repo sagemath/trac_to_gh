@@ -3,7 +3,7 @@
 archive/issues_009169.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
     "created_at": "2010-06-07T04:32:34Z",
     "labels": [
         "component: porting: cygwin",
@@ -31,7 +31,6 @@ On Cygwin, the following test hangs:
             sage: oddprime_factors.precompute(range(1,100), 4)
 ```
 
-
 The above is very fast on any other platform. 
 
 This results in a doctest file failure:
@@ -42,7 +41,6 @@ sage -t  "devel/sage/sage/misc/cachefunc.py"
 *** *** Error: TIMED OUT! *** ***
 	 [361.6 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9169
 
@@ -127,7 +125,7 @@ That's good to hear.  I am frustrated by this forking business.  A complete reba
 archive/issue_comments_085599.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.\n\nAre you working on a 32-bit Windows? I've given up on attempting to use Cygwin on 32-bit systems.\n\nAnyhow, this test works for me too. Let's close this one.",
+    "body": "Replying to [comment:5 kcrisman]:\n> That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.\n\n\nAre you working on a 32-bit Windows? I've given up on attempting to use Cygwin on 32-bit systems.\n\nAnyhow, this test works for me too. Let's close this one.",
     "created_at": "2013-01-27T10:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
@@ -138,6 +136,7 @@ archive/issue_comments_085599.json:
 
 Replying to [comment:5 kcrisman]:
 > That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.
+
 
 Are you working on a 32-bit Windows? I've given up on attempting to use Cygwin on 32-bit systems.
 

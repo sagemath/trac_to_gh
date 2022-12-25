@@ -170,7 +170,7 @@ Yes Sure. I more than agree with you. Remember that I didn't wrote this code, I 
 archive/issue_comments_040103.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\nActually it seems that for n it is possible because we know its type. On the contrary it is not possible for a. Indeed a can be a plain Python int (wich forbid the use of `a.is_zero()`) of any type eg polynomial with forbid the use of `== 0` so I don't know what else to do (I'm far from being a cython expert) :\n\n```\n sage -t  \"devel/sage-combinat/sage/rings/polynomial/polydict.pyx\"\n**********************************************************************\nFile \"/usr/local/sage/devel/sage-combinat/sage/rings/polynomial/polydict.pyx\", line 695:\n    sage: (f-f)**0\nExpected:\n    Traceback (most recent call last):\n    ...\n    ArithmeticError: 0^0 is undefined.\nGot:\n    PolyDict with representation {0: 1}\n```\n\n\nSo if there is no better suggestion I'll stick with the current patch.",
+    "body": "Replying to [comment:5 cremona]:\nActually it seems that for n it is possible because we know its type. On the contrary it is not possible for a. Indeed a can be a plain Python int (wich forbid the use of `a.is_zero()`) of any type eg polynomial with forbid the use of `== 0` so I don't know what else to do (I'm far from being a cython expert) :\n\n```\n sage -t  \"devel/sage-combinat/sage/rings/polynomial/polydict.pyx\"\n**********************************************************************\nFile \"/usr/local/sage/devel/sage-combinat/sage/rings/polynomial/polydict.pyx\", line 695:\n    sage: (f-f)**0\nExpected:\n    Traceback (most recent call last):\n    ...\n    ArithmeticError: 0^0 is undefined.\nGot:\n    PolyDict with representation {0: 1}\n```\n\nSo if there is no better suggestion I'll stick with the current patch.",
     "created_at": "2009-02-14T15:59:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
@@ -195,7 +195,6 @@ Got:
     PolyDict with representation {0: 1}
 ```
 
-
 So if there is no better suggestion I'll stick with the current patch.
 
 
@@ -205,7 +204,7 @@ So if there is no better suggestion I'll stick with the current patch.
 archive/issue_comments_040104.json:
 ```json
 {
-    "body": "I just tested my current 3.3.rc1 merge tree with this patch and\n\n```\nAll tests passed!\n```\n\n\nCheers,\n\nMichael",
+    "body": "I just tested my current 3.3.rc1 merge tree with this patch and\n\n```\nAll tests passed!\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T16:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
@@ -219,7 +218,6 @@ I just tested my current 3.3.rc1 merge tree with this patch and
 ```
 All tests passed!
 ```
-
 
 Cheers,
 

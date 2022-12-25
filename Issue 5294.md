@@ -72,7 +72,7 @@ The attached patch improves the pickle_jar documentation, with the primary aim o
 archive/issue_comments_040616.json:
 ```json
 {
-    "body": "Currently one doc test fails, but I don't think that this is an issue with the patch. This seems to have nothing to do with the patch but, rather, is a consequence of the following which looks like a bug to me:\n\n\n```\nsage: from sage.structure.sage_object import unpickle_all\nsage: %timeit unpickle_all()\n/usr/local/src/sage/sage-5.3/local/lib/python/timeit.py:195: DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\nSee http://trac.sagemath.org/4260 for details.\n  timing = self.inner(it, self.timer)\n\n------------------------------------------------------------------------\nUnhandled SIGABRT: An abort() occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\n/usr/local/src/sage/sage-5.3/spkg/bin/sage: line 335: 73974 Abort trap: 6           sage-ipython \"$@\" -i\n```\n\nCan anyone confirm whether this is a bug or known issue? Either way, is there a way around this? \n\nAlternatively I could just remove this doc test from unpickle_all() as it is now referred to in the section in the developers guide.",
+    "body": "Currently one doc test fails, but I don't think that this is an issue with the patch. This seems to have nothing to do with the patch but, rather, is a consequence of the following which looks like a bug to me:\n\n```\nsage: from sage.structure.sage_object import unpickle_all\nsage: %timeit unpickle_all()\n/usr/local/src/sage/sage-5.3/local/lib/python/timeit.py:195: DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\nSee http://trac.sagemath.org/4260 for details.\n  timing = self.inner(it, self.timer)\n\n------------------------------------------------------------------------\nUnhandled SIGABRT: An abort() occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\n/usr/local/src/sage/sage-5.3/spkg/bin/sage: line 335: 73974 Abort trap: 6           sage-ipython \"$@\" -i\n```\nCan anyone confirm whether this is a bug or known issue? Either way, is there a way around this? \n\nAlternatively I could just remove this doc test from unpickle_all() as it is now referred to in the section in the developers guide.",
     "created_at": "2012-10-19T12:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ archive/issue_comments_040616.json:
 ```
 
 Currently one doc test fails, but I don't think that this is an issue with the patch. This seems to have nothing to do with the patch but, rather, is a consequence of the following which looks like a bug to me:
-
 
 ```
 sage: from sage.structure.sage_object import unpickle_all
@@ -100,7 +99,6 @@ Sage will now terminate.
 ------------------------------------------------------------------------
 /usr/local/src/sage/sage-5.3/spkg/bin/sage: line 335: 73974 Abort trap: 6           sage-ipython "$@" -i
 ```
-
 Can anyone confirm whether this is a bug or known issue? Either way, is there a way around this? 
 
 Alternatively I could just remove this doc test from unpickle_all() as it is now referred to in the section in the developers guide.
@@ -133,7 +131,7 @@ archive/issue_comments_040617.json:
 archive/issue_comments_040618.json:
 ```json
 {
-    "body": "Replying to [comment:3 roed]:\n> The SIGABRT is certainly a bug, and a quick google search doesn't reveal any tickets related to it.  Opening a new ticket seems reasonable.  What's the doctest that fails?\n\nThe doctest that fails is essentially the problem above. The actual doctest, which appears below, is in unpickle_all() and it ends with the command unpickle_all(). It runs fine from the command line back buts when you run it via the doctest framework. The difference, I think, is that during a doctest the code is running inside of (something like) timeit(). Here is the doctest:\n\n\n```\nsage: from sage.structure.sage_object import unpickle_all, register_unpickle_override\nsage: class A(CombinatorialObject,sage.structure.element.Element):\n...       pass # to break a pickle\nsage: register_unpickle_override('sage.combinat.tableau','Tableau_class',A) # breaking the pickle\nsage: unpickle_all()  # long time\n```\n",
+    "body": "Replying to [comment:3 roed]:\n> The SIGABRT is certainly a bug, and a quick google search doesn't reveal any tickets related to it.  Opening a new ticket seems reasonable.  What's the doctest that fails?\n\n\nThe doctest that fails is essentially the problem above. The actual doctest, which appears below, is in unpickle_all() and it ends with the command unpickle_all(). It runs fine from the command line back buts when you run it via the doctest framework. The difference, I think, is that during a doctest the code is running inside of (something like) timeit(). Here is the doctest:\n\n```\nsage: from sage.structure.sage_object import unpickle_all, register_unpickle_override\nsage: class A(CombinatorialObject,sage.structure.element.Element):\n...       pass # to break a pickle\nsage: register_unpickle_override('sage.combinat.tableau','Tableau_class',A) # breaking the pickle\nsage: unpickle_all()  # long time\n```",
     "created_at": "2012-10-19T21:19:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -145,8 +143,8 @@ archive/issue_comments_040618.json:
 Replying to [comment:3 roed]:
 > The SIGABRT is certainly a bug, and a quick google search doesn't reveal any tickets related to it.  Opening a new ticket seems reasonable.  What's the doctest that fails?
 
-The doctest that fails is essentially the problem above. The actual doctest, which appears below, is in unpickle_all() and it ends with the command unpickle_all(). It runs fine from the command line back buts when you run it via the doctest framework. The difference, I think, is that during a doctest the code is running inside of (something like) timeit(). Here is the doctest:
 
+The doctest that fails is essentially the problem above. The actual doctest, which appears below, is in unpickle_all() and it ends with the command unpickle_all(). It runs fine from the command line back buts when you run it via the doctest framework. The difference, I think, is that during a doctest the code is running inside of (something like) timeit(). Here is the doctest:
 
 ```
 sage: from sage.structure.sage_object import unpickle_all, register_unpickle_override
@@ -155,7 +153,6 @@ sage: class A(CombinatorialObject,sage.structure.element.Element):
 sage: register_unpickle_override('sage.combinat.tableau','Tableau_class',A) # breaking the pickle
 sage: unpickle_all()  # long time
 ```
-
 
 
 
@@ -363,7 +360,7 @@ Thanks very much Julian. I have folder in your review patch and set it to a posi
 archive/issue_comments_040629.json:
 ```json
 {
-    "body": "The docbuilder doesn't like all those weird characters on line 218 of `sage/structure/sage_object.pyx`:\n\n```\n! Package ucs Error: Unknown Unicode character 156 = U+009C,\n(ucs)                possibly declared in uni-0.def.\n(ucs)                Type H to see if it is available with options.\n\nSee the ucs package documentation for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.111426 ...~T\u00c3\u00a4^^R\u00c2\u00ae{}` \u00c3~[^^_\u00c3~B,d\u00c3~Tl,d\u00c3~R\\PYGZca{}}\n\n?\n! Emergency stop.\n ...\n\nl.111426 ...~T\u00c3\u00a4^^R\u00c2\u00ae{}` \u00c3~[^^_\u00c3~B,d\u00c3~Tl,d\u00c3~R\\PYGZca{}}\n\n!  ==> Fatal error occurred, no output PDF file produced!\n```\n",
+    "body": "The docbuilder doesn't like all those weird characters on line 218 of `sage/structure/sage_object.pyx`:\n\n```\n! Package ucs Error: Unknown Unicode character 156 = U+009C,\n(ucs)                possibly declared in uni-0.def.\n(ucs)                Type H to see if it is available with options.\n\nSee the ucs package documentation for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.111426 ...~T\u00c3\u00a4^^R\u00c2\u00ae{}` \u00c3~[^^_\u00c3~B,d\u00c3~Tl,d\u00c3~R\\PYGZca{}}\n\n?\n! Emergency stop.\n ...\n\nl.111426 ...~T\u00c3\u00a4^^R\u00c2\u00ae{}` \u00c3~[^^_\u00c3~B,d\u00c3~Tl,d\u00c3~R\\PYGZca{}}\n\n!  ==> Fatal error occurred, no output PDF file produced!\n```",
     "created_at": "2013-01-08T09:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -393,7 +390,6 @@ l.111426 ...~TÃ¤^^RÂ®{}` Ã~[^^_Ã~B,dÃ~Tl,dÃ~R\PYGZca{}}
 
 !  ==> Fatal error occurred, no output PDF file produced!
 ```
-
 
 
 
@@ -476,7 +472,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_040634.json:
 ```json
 {
-    "body": "There's an obvious doctest failure:\n\n```\nsage -t  -force_lib devel/sage/doc/en/developer/conventions.rst\n**********************************************************************\nFile \"/release/merger/sage-5.6.beta3/devel/sage-main/doc/en/developer/conventions.rst\", line 1040:\n    sage: sage -t structure/sage_object.pyx\nException raised:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.6.beta3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.6.beta3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.6.beta3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[2]>\", line 1\n        sage -t structure/sage_object.pyx###line 1040:\n    sage: sage -t structure/sage_object.pyx\n                        ^\n    SyntaxError: invalid syntax\n**********************************************************************\n```\n",
+    "body": "There's an obvious doctest failure:\n\n```\nsage -t  -force_lib devel/sage/doc/en/developer/conventions.rst\n**********************************************************************\nFile \"/release/merger/sage-5.6.beta3/devel/sage-main/doc/en/developer/conventions.rst\", line 1040:\n    sage: sage -t structure/sage_object.pyx\nException raised:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.6.beta3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.6.beta3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.6.beta3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[2]>\", line 1\n        sage -t structure/sage_object.pyx###line 1040:\n    sage: sage -t structure/sage_object.pyx\n                        ^\n    SyntaxError: invalid syntax\n**********************************************************************\n```",
     "created_at": "2013-01-08T15:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -510,13 +506,12 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_040635.json:
 ```json
 {
-    "body": "And perhaps this failure is also caused by this ticket:\n\n```\nsage -t  --long -force_lib devel/sage/sage/structure/sage_object.pyx\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(print_backtrace+0x2b)[0x2ba301ee166e]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(sigdie+0x14)[0x2ba301ee169b]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(sage_signal_handler+0x1d8)[0x2ba301ee1156]\n/lib/libpthread.so.0[0x2ba2fff4b7d0]\n/lib/libc.so.6(gsignal+0x35)[0x2ba3008140c5]\n/lib/libc.so.6(abort+0x110)[0x2ba300815b20]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(init_csage+0x0)[0x2ba301ee1fc8]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL5ErrorEPKc+0x1f)[0x2ba30255e4cf]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL6InvModEll+0x39)[0x2ba3024ad1a9]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL8PlainRemERNS_5zz_pXERKS0_S3_+0x2a9)[0x2ba3025222a9]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL3GCDERNS_5zz_pXERKS0_S3_+0x19a)[0x2ba30252f7fa]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so[0x2ba31acb0216]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x605)[0x2ba31acabda5]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z3gcdRK13CanonicalFormS1_+0x257)[0x2ba31acac2e7]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so[0x2ba31acae0fd]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7contentRK13CanonicalFormRK8Variable+0xce)[0x2ba31acae29e]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7contentRK13CanonicalFormRK8Variable+0x62)[0x2ba31acae232]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7EZGCD_PRK13CanonicalFormS1_+0xde8)[0x2ba31acc5378]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x59f)[0x2ba31acabd3f]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z11chinrem_gcdRK13CanonicalFormS1_+0xbab)[0x2ba31acad13b]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x656)[0x2ba31acabdf6]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z3gcdRK13CanonicalFormS1_+0x257)[0x2ba31acac2e7]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z14singclap_gcd_rP8spolyrecS0_P9sip_sring+0xf8)[0x2ba31ab0ba28]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z12singclap_gcdP8spolyrecS0_+0x56)[0x2ba31ab0eb26]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so[0x2ba31a7851df]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so[0x2ba31a7868ef]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x56)[0x2ba2ffc3eb26]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbbad06]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/element.so[0x2ba3093808c3]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba315661005]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba31565941c]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbfa5a8]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba31564b644]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x56)[0x2ba2ffc3eb26]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528381e]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528a162]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528dc35]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d2bbc4]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d1c693]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d23d06]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5de2)[0x2ba2ffc45662]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x2ba2ffc47472]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x714e)[0x2ba2ffc469ce]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x2ba2ffc47472]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyRun_FileExFlags+0xc1)[0x2ba2ffc6b1f1]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyRun_SimpleFileExFlags+0x1f9)[0x2ba2ffc6b4c9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(Py_Main+0xb15)[0x2ba2ffc7e115]\n/lib/libc.so.6(__libc_start_main+0xf4)[0x2ba3008001f4]\npython[0x400679]\n\n------------------------------------------------------------------------\nUnhandled SIGABRT: An abort() occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nAborted\n```\n",
+    "body": "And perhaps this failure is also caused by this ticket:\n\n```\nsage -t  --long -force_lib devel/sage/sage/structure/sage_object.pyx\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(print_backtrace+0x2b)[0x2ba301ee166e]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(sigdie+0x14)[0x2ba301ee169b]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(sage_signal_handler+0x1d8)[0x2ba301ee1156]\n/lib/libpthread.so.0[0x2ba2fff4b7d0]\n/lib/libc.so.6(gsignal+0x35)[0x2ba3008140c5]\n/lib/libc.so.6(abort+0x110)[0x2ba300815b20]\n/release/merger/sage-5.6.beta3/local/lib/libcsage.so(init_csage+0x0)[0x2ba301ee1fc8]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL5ErrorEPKc+0x1f)[0x2ba30255e4cf]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL6InvModEll+0x39)[0x2ba3024ad1a9]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL8PlainRemERNS_5zz_pXERKS0_S3_+0x2a9)[0x2ba3025222a9]\n/release/merger/sage-5.6.beta3/local/lib/libntl.so.0(_ZN3NTL3GCDERNS_5zz_pXERKS0_S3_+0x19a)[0x2ba30252f7fa]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so[0x2ba31acb0216]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x605)[0x2ba31acabda5]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z3gcdRK13CanonicalFormS1_+0x257)[0x2ba31acac2e7]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so[0x2ba31acae0fd]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7contentRK13CanonicalFormRK8Variable+0xce)[0x2ba31acae29e]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7contentRK13CanonicalFormRK8Variable+0x62)[0x2ba31acae232]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z7EZGCD_PRK13CanonicalFormS1_+0xde8)[0x2ba31acc5378]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x59f)[0x2ba31acabd3f]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z11chinrem_gcdRK13CanonicalFormS1_+0xbab)[0x2ba31acad13b]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z8gcd_polyRK13CanonicalFormS1_+0x656)[0x2ba31acabdf6]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z3gcdRK13CanonicalFormS1_+0x257)[0x2ba31acac2e7]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z14singclap_gcd_rP8spolyrecS0_P9sip_sring+0xf8)[0x2ba31ab0ba28]\n/release/merger/sage-5.6.beta3/local/lib/libsingular.so(_Z12singclap_gcdP8spolyrecS0_+0x56)[0x2ba31ab0eb26]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so[0x2ba31a7851df]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so[0x2ba31a7868ef]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x56)[0x2ba2ffc3eb26]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbbad06]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/element.so[0x2ba3093808c3]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba315661005]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba31565941c]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbfa5a8]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/rings/fraction_field_element.so[0x2ba31564b644]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_CallObjectWithKeywords+0x56)[0x2ba2ffc3eb26]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528381e]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528a162]\n/release/merger/sage-5.6.beta3/local/lib/python2.7/lib-dynload/cPickle.so[0x2ba30528dc35]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d2bbc4]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d1c693]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/python/site-packages/sage/structure/sage_object.so[0x2ba305d23d06]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5de2)[0x2ba2ffc45662]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x2ba2ffc47472]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x714e)[0x2ba2ffc469ce]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbcb9b9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0[0x2ba2ffbae8bf]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyObject_Call+0x68)[0x2ba2ffb9e308]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x1299)[0x2ba2ffc40b19]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x5ae4)[0x2ba2ffc45364]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x852)[0x2ba2ffc47352]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyEval_EvalCode+0x32)[0x2ba2ffc47472]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyRun_FileExFlags+0xc1)[0x2ba2ffc6b1f1]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(PyRun_SimpleFileExFlags+0x1f9)[0x2ba2ffc6b4c9]\n/release/merger/sage-5.6.beta3/local/lib/libpython2.7.so.1.0(Py_Main+0xb15)[0x2ba2ffc7e115]\n/lib/libc.so.6(__libc_start_main+0xf4)[0x2ba3008001f4]\npython[0x400679]\n\n------------------------------------------------------------------------\nUnhandled SIGABRT: An abort() occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\nAborted\n```",
     "created_at": "2013-01-08T15:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -630,13 +625,12 @@ Aborted
 
 
 
-
 ---
 
 archive/issue_comments_040636.json:
 ```json
 {
-    "body": "I'm confused because the first test\n\n```\nsage -t -force_lib devel/sage/doc/en/developer/conventions.rst\n```\n\npasses on sage 5.5. So I compiled 5.6.beta2 (beta3 has not been released yet) and it works there too. Nonetheless, even though I can't replicate the error I agree that there is a problem here so I've fixed it, but I can't check that it's fixed.\n\nWith the second test, \n\n```\nsage -t --long -force_lib devel/sage/sage/structure/sage_object.pyx\n```\n\nI get a timeout error rather than a SIGBART. It's caused by a call to \n\n```\nsage: unpickle_all() # long time\n```\n\nThis test works but it would take longer than the *#long time* tests are supposed to take so I have replaced this with\n\n```\nsage: unpickle_all()  # todo: not tested\n```\n",
+    "body": "I'm confused because the first test\n\n```\nsage -t -force_lib devel/sage/doc/en/developer/conventions.rst\n```\npasses on sage 5.5. So I compiled 5.6.beta2 (beta3 has not been released yet) and it works there too. Nonetheless, even though I can't replicate the error I agree that there is a problem here so I've fixed it, but I can't check that it's fixed.\n\nWith the second test, \n\n```\nsage -t --long -force_lib devel/sage/sage/structure/sage_object.pyx\n```\nI get a timeout error rather than a SIGBART. It's caused by a call to \n\n```\nsage: unpickle_all() # long time\n```\nThis test works but it would take longer than the *#long time* tests are supposed to take so I have replaced this with\n\n```\nsage: unpickle_all()  # todo: not tested\n```",
     "created_at": "2013-01-09T02:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -650,7 +644,6 @@ I'm confused because the first test
 ```
 sage -t -force_lib devel/sage/doc/en/developer/conventions.rst
 ```
-
 passes on sage 5.5. So I compiled 5.6.beta2 (beta3 has not been released yet) and it works there too. Nonetheless, even though I can't replicate the error I agree that there is a problem here so I've fixed it, but I can't check that it's fixed.
 
 With the second test, 
@@ -658,13 +651,11 @@ With the second test,
 ```
 sage -t --long -force_lib devel/sage/sage/structure/sage_object.pyx
 ```
-
 I get a timeout error rather than a SIGBART. It's caused by a call to 
 
 ```
 sage: unpickle_all() # long time
 ```
-
 This test works but it would take longer than the *#long time* tests are supposed to take so I have replaced this with
 
 ```
@@ -673,13 +664,12 @@ sage: unpickle_all()  # todo: not tested
 
 
 
-
 ---
 
 archive/issue_comments_040637.json:
 ```json
 {
-    "body": "Replying to [comment:19 andrew.mathas]:\n> I'm confused because the first test\n> {{{\n> sage -t -force_lib devel/sage/doc/en/developer/conventions.rst\n> }}}\n> passes on sage 5.5.\nSorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.",
+    "body": "Replying to [comment:19 andrew.mathas]:\n> I'm confused because the first test\n> \n> ```\n> sage -t -force_lib devel/sage/doc/en/developer/conventions.rst\n> ```\n> passes on sage 5.5.\n\nSorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.",
     "created_at": "2013-01-09T07:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -690,10 +680,12 @@ archive/issue_comments_040637.json:
 
 Replying to [comment:19 andrew.mathas]:
 > I'm confused because the first test
-> {{{
+> 
+> ```
 > sage -t -force_lib devel/sage/doc/en/developer/conventions.rst
-> }}}
+> ```
 > passes on sage 5.5.
+
 Sorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.
 
 
@@ -703,7 +695,7 @@ Sorry, I know what happened. There are some formatting errors in that file with 
 archive/issue_comments_040638.json:
 ```json
 {
-    "body": "Replying to [comment:20 jdemeyer]:\n\n> Sorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.\n\nThanks for the explanation. Does that mean that the problem with this patch is fixed or should it depend on, and need to be rebased over, #13899?\n\nAndrew",
+    "body": "Replying to [comment:20 jdemeyer]:\n\n> Sorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.\n\n\nThanks for the explanation. Does that mean that the problem with this patch is fixed or should it depend on, and need to be rebased over, #13899?\n\nAndrew",
     "created_at": "2013-01-09T08:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -715,6 +707,7 @@ archive/issue_comments_040638.json:
 Replying to [comment:20 jdemeyer]:
 
 > Sorry, I know what happened. There are some formatting errors in that file with the consequence that doctests aren't run. This is fixed by #13899.
+
 
 Thanks for the explanation. Does that mean that the problem with this patch is fixed or should it depend on, and need to be rebased over, #13899?
 
@@ -781,7 +774,7 @@ I've just tested the patch against 5.6.beta3, which has #13899 applied, and the 
 archive/issue_comments_040642.json:
 ```json
 {
-    "body": "Replying to [comment:23 andrew.mathas]:\n> I've just tested the patch against 5.6.beta3, which has #13899 applied, and the tests above pass. I'm checking everything else now but given that the patch only touches doctests I don't think that they can possibly fail, so I'll put it back to a positive review.\n\n\nJust to confirm: all tests pass on 5.6.beta3",
+    "body": "Replying to [comment:23 andrew.mathas]:\n> I've just tested the patch against 5.6.beta3, which has #13899 applied, and the tests above pass. I'm checking everything else now but given that the patch only touches doctests I don't think that they can possibly fail, so I'll put it back to a positive review.\n\n\n\nJust to confirm: all tests pass on 5.6.beta3",
     "created_at": "2013-01-10T10:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -792,6 +785,7 @@ archive/issue_comments_040642.json:
 
 Replying to [comment:23 andrew.mathas]:
 > I've just tested the patch against 5.6.beta3, which has #13899 applied, and the tests above pass. I'm checking everything else now but given that the patch only touches doctests I don't think that they can possibly fail, so I'll put it back to a positive review.
+
 
 
 Just to confirm: all tests pass on 5.6.beta3
@@ -837,7 +831,7 @@ archive/issue_events_012310.json:
 archive/issue_comments_040643.json:
 ```json
 {
-    "body": "There is still:\n\n```\nsage -t  -force_lib devel/sage/doc/en/developer/conventions.rst\n**********************************************************************\nFile \"/release/merger/sage-5.7.alpha0/devel/sage-main/doc/en/developer/conventions.rst\", line 1052:\n    sage: sage -t devel/sage-main/sage/structure/sage_object.pyx\nException raised:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.7.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[2]>\", line 1\n        sage -t devel/sage-main/sage/structure/sage_object.pyx###line 1052:\n    sage: sage -t devel/sage-main/sage/structure/sage_object.pyx\n                    ^\n    SyntaxError: invalid syntax\n**********************************************************************\n```\n",
+    "body": "There is still:\n\n```\nsage -t  -force_lib devel/sage/doc/en/developer/conventions.rst\n**********************************************************************\nFile \"/release/merger/sage-5.7.alpha0/devel/sage-main/doc/en/developer/conventions.rst\", line 1052:\n    sage: sage -t devel/sage-main/sage/structure/sage_object.pyx\nException raised:\n    Traceback (most recent call last):\n      File \"/release/merger/sage-5.7.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/release/merger/sage-5.7.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[2]>\", line 1\n        sage -t devel/sage-main/sage/structure/sage_object.pyx###line 1052:\n    sage: sage -t devel/sage-main/sage/structure/sage_object.pyx\n                    ^\n    SyntaxError: invalid syntax\n**********************************************************************\n```",
     "created_at": "2013-01-12T15:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -868,7 +862,6 @@ Exception raised:
     SyntaxError: invalid syntax
 **********************************************************************
 ```
-
 
 
 
@@ -987,7 +980,7 @@ Concerning the pickle jar, I use this opportunity to make some publicity for #10
 archive/issue_comments_040650.json:
 ```json
 {
-    "body": "Replying to [comment:30 slabbe]:\n> Concerning the pickle jar, I use this opportunity to make some publicity for #10705.\n\nSee #13636 for another seg fault associated with unpickle_all.",
+    "body": "Replying to [comment:30 slabbe]:\n> Concerning the pickle jar, I use this opportunity to make some publicity for #10705.\n\n\nSee #13636 for another seg fault associated with unpickle_all.",
     "created_at": "2013-01-25T00:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5294",
     "type": "issue_comment",
@@ -998,6 +991,7 @@ archive/issue_comments_040650.json:
 
 Replying to [comment:30 slabbe]:
 > Concerning the pickle jar, I use this opportunity to make some publicity for #10705.
+
 
 See #13636 for another seg fault associated with unpickle_all.
 

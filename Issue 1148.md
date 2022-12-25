@@ -3,7 +3,7 @@
 archive/issues_001148.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIt would be nice if `valuation(3/5, 5)` returned -1, but it does this:\n\n\n```\nsage: valuation(3/5, 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/david/series/<ipython console> in <module>()\n\n/Users/david/sage-2.8.12/local/lib/python2.5/site-packages/sage/rings/arith.py in valuation(m, p)\n    425     r=0\n    426     power=p\n--> 427     while m%power==0:\n    428         r += 1\n    429         power *= p\n\n/Users/david/series/rational.pyx in sage.rings.rational.Rational.__mod__()\n\n/Users/david/series/integer.pyx in sage.rings.integer.Integer.inverse_mod()\n\n<type 'exceptions.ZeroDivisionError'>: Inverse does not exist.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1148\n\n",
+    "body": "Assignee: somebody\n\nIt would be nice if `valuation(3/5, 5)` returned -1, but it does this:\n\n```\nsage: valuation(3/5, 5)\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/david/series/<ipython console> in <module>()\n\n/Users/david/sage-2.8.12/local/lib/python2.5/site-packages/sage/rings/arith.py in valuation(m, p)\n    425     r=0\n    426     power=p\n--> 427     while m%power==0:\n    428         r += 1\n    429         power *= p\n\n/Users/david/series/rational.pyx in sage.rings.rational.Rational.__mod__()\n\n/Users/david/series/integer.pyx in sage.rings.integer.Integer.inverse_mod()\n\n<type 'exceptions.ZeroDivisionError'>: Inverse does not exist.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1148\n\n",
     "created_at": "2007-11-11T16:50:33Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_001148.json:
 Assignee: somebody
 
 It would be nice if `valuation(3/5, 5)` returned -1, but it does this:
-
 
 ```
 sage: valuation(3/5, 5)
@@ -41,7 +40,6 @@ sage: valuation(3/5, 5)
 
 <type 'exceptions.ZeroDivisionError'>: Inverse does not exist.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1148

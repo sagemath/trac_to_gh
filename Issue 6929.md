@@ -147,7 +147,7 @@ But how do you DO that?
 archive/issue_comments_057168.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> But how do you DO that?\n\n1. Download the patch `trac_6929-rebased.patch` to a local machine.\n2. Open `trac_6929-rebased.patch` in a text editor.\n3. Change the line\n {{{\n# User J. H. Palmieri <palmieri`@`math.washington.edu>\n }}}\n to \n {{{\n# User Karl-Dieter Crisman <kcrisman`@`gmail.com>\n }}}\n1. Upload the patch with the modified username to the trac server.",
+    "body": "Replying to [comment:5 kcrisman]:\n> But how do you DO that?\n\n\n1. Download the patch `trac_6929-rebased.patch` to a local machine.\n2. Open `trac_6929-rebased.patch` in a text editor.\n3. Change the line\n {{{\n# User J. H. Palmieri <palmieri`@`math.washington.edu>\n }}}\n to \n {{{\n# User Karl-Dieter Crisman <kcrisman`@`gmail.com>\n }}}\n1. Upload the patch with the modified username to the trac server.",
     "created_at": "2009-09-24T13:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
@@ -158,6 +158,7 @@ archive/issue_comments_057168.json:
 
 Replying to [comment:5 kcrisman]:
 > But how do you DO that?
+
 
 1. Download the patch `trac_6929-rebased.patch` to a local machine.
 2. Open `trac_6929-rebased.patch` in a text editor.

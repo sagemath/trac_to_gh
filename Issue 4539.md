@@ -657,7 +657,7 @@ Changing assignee from OleksandrMotsak,AlexanderDreyer to OleksandrMotsak, Alexa
 archive/issue_comments_033796.json:
 ```json
 {
-    "body": "Hi!\n\nI have some computations to do with Weyl algebras, and would love to have this cool piece of work at my fingertips! Please keep it up!\n\nFor the record: I tried to apply those patches to Sage 4.5.2, and got the following rejects:\n\n```\nzephyr-/opt/sage/devel/sage>hg qimport ~/plural-wrapper-2010-07-27.patch\nadding plural-wrapper-2010-07-27.patch to series file\nzephyr-/opt/sage/devel/sage>hg qpush\napplying plural-wrapper-2010-07-27.patch\npatching file sage/libs/singular/function.pyx\nHunk #3 succeeded at 96 with fuzz 2 (offset 0 lines).\nHunk #36 FAILED at 1378\n1 out of 38 hunks FAILED -- saving rejects to file sage/libs/singular/function.pyx.rej\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #3 succeeded at 218 with fuzz 2 (offset -1 lines).\npatching file sage/rings/ideal_monoid.py\nHunk #1 FAILED at 12\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/ideal_monoid.py.rej\npatching file sage/rings/polynomial/term_order.py\nHunk #1 FAILED at 419\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/term_order.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh plural-wrapper-2010-07-27.patch\n```\n\n\nCheers,",
+    "body": "Hi!\n\nI have some computations to do with Weyl algebras, and would love to have this cool piece of work at my fingertips! Please keep it up!\n\nFor the record: I tried to apply those patches to Sage 4.5.2, and got the following rejects:\n\n```\nzephyr-/opt/sage/devel/sage>hg qimport ~/plural-wrapper-2010-07-27.patch\nadding plural-wrapper-2010-07-27.patch to series file\nzephyr-/opt/sage/devel/sage>hg qpush\napplying plural-wrapper-2010-07-27.patch\npatching file sage/libs/singular/function.pyx\nHunk #3 succeeded at 96 with fuzz 2 (offset 0 lines).\nHunk #36 FAILED at 1378\n1 out of 38 hunks FAILED -- saving rejects to file sage/libs/singular/function.pyx.rej\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #3 succeeded at 218 with fuzz 2 (offset -1 lines).\npatching file sage/rings/ideal_monoid.py\nHunk #1 FAILED at 12\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/ideal_monoid.py.rej\npatching file sage/rings/polynomial/term_order.py\nHunk #1 FAILED at 419\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/term_order.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh plural-wrapper-2010-07-27.patch\n```\n\nCheers,",
     "created_at": "2010-10-01T07:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -694,7 +694,6 @@ patch failed, rejects left in working dir
 errors during apply, please fix and refresh plural-wrapper-2010-07-27.patch
 ```
 
-
 Cheers,
 
 
@@ -726,7 +725,7 @@ Regards,
 archive/issue_comments_033798.json:
 ```json
 {
-    "body": "Yes, it now applies smoothly on 4.5.2, and compiles. Thanks!\n\n\n```\nzephyr-~sage-main>sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<x,dx> = FreeAlgebra(QQ,2)    \nsage: F.g_algebra({dx*x: x*dx+1})\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nSame problem with the example taken from the documentation:\n\n\n```\nzephyr-~sage-main>sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A.<x,y,z>=FreeAlgebra(QQ,3)\nsage: G=A.g_algebra({y*x:-x*y})\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nShould I be using 4.5.3 (being downloaded)?",
+    "body": "Yes, it now applies smoothly on 4.5.2, and compiles. Thanks!\n\n```\nzephyr-~sage-main>sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: F.<x,dx> = FreeAlgebra(QQ,2)    \nsage: F.g_algebra({dx*x: x*dx+1})\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nSame problem with the example taken from the documentation:\n\n```\nzephyr-~sage-main>sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A.<x,y,z>=FreeAlgebra(QQ,3)\nsage: G=A.g_algebra({y*x:-x*y})\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nShould I be using 4.5.3 (being downloaded)?",
     "created_at": "2010-10-01T12:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -736,7 +735,6 @@ archive/issue_comments_033798.json:
 ```
 
 Yes, it now applies smoothly on 4.5.2, and compiles. Thanks!
-
 
 ```
 zephyr-~sage-main>sage
@@ -753,11 +751,9 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 | Sage Version 4.5.2, Release Date: 2010-08-05                       |
 | Type notebook() for the GUI, and license() for information.        |
 Same problem with the example taken from the documentation:
-
 
 ```
 zephyr-~sage-main>sage
@@ -774,7 +770,6 @@ You might want to run Sage under gdb with 'sage -gdb' to debug this.
 Sage will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 | Sage Version 4.5.2, Release Date: 2010-08-05                       |
 | Type notebook() for the GUI, and license() for information.        |
 Should I be using 4.5.3 (being downloaded)?
@@ -804,7 +799,7 @@ Did you rebuild? (`sage -br`)
 archive/issue_comments_033800.json:
 ```json
 {
-    "body": "Replying to [comment:24 AlexanderDreyer]:\n> Did you rebuild? (`sage -br`)\n\nYup.",
+    "body": "Replying to [comment:24 AlexanderDreyer]:\n> Did you rebuild? (`sage -br`)\n\n\nYup.",
     "created_at": "2010-10-01T12:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -816,6 +811,7 @@ archive/issue_comments_033800.json:
 Replying to [comment:24 AlexanderDreyer]:
 > Did you rebuild? (`sage -br`)
 
+
 Yup.
 
 
@@ -825,7 +821,7 @@ Yup.
 archive/issue_comments_033801.json:
 ```json
 {
-    "body": "I could reproduce the issue: `sage -gdb` vields the following;\n\n```\nsage: A.<x,y,z>=FreeAlgebra(QQ,3)\nsage: G=A.g_algebra({y*x:-x*y})\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffdec7c488 in __pyx_f_4sage_4libs_8singular_8function_call_function (__pyx_v_self=0x459f910, __pyx_v_args=0x4538ab8, __pyx_v_R=0x4676480,\n    __pyx_optional_args=<value optimized out>) at sage/libs/singular/function.cpp:11969\n11969       currRingHdl->data.uring->ref += 1;\n```\n",
+    "body": "I could reproduce the issue: `sage -gdb` vields the following;\n\n```\nsage: A.<x,y,z>=FreeAlgebra(QQ,3)\nsage: G=A.g_algebra({y*x:-x*y})\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffdec7c488 in __pyx_f_4sage_4libs_8singular_8function_call_function (__pyx_v_self=0x459f910, __pyx_v_args=0x4538ab8, __pyx_v_R=0x4676480,\n    __pyx_optional_args=<value optimized out>) at sage/libs/singular/function.cpp:11969\n11969       currRingHdl->data.uring->ref += 1;\n```",
     "created_at": "2010-10-01T14:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -845,7 +841,6 @@ Program received signal SIGSEGV, Segmentation fault.
     __pyx_optional_args=<value optimized out>) at sage/libs/singular/function.cpp:11969
 11969       currRingHdl->data.uring->ref += 1;
 ```
-
 
 
 
@@ -934,7 +929,7 @@ Though I think we should try to get this patch in as soon as possible. I'm sure 
 archive/issue_comments_033806.json:
 ```json
 {
-    "body": "Replying to [comment:28 burcin]:\n> It was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.\n\nIt also does for me so far! Thanks a lot for the quick rebase!\n\n> Nicolas, it would be great if you could help with the review. We are pretty confident with the interface to Singular and low-level code, since, as you can also see from the comments on the ticket, many Singular and Sage developers were involved in writing the code. However, we added many of the noncommutative structures on the spot (in a late night coding sprint) as we needed them. Another pair of eyes checking the mathematical structures and design would be really useful.\n\nI don't want to promise much at this time because I am already (very) late with a couple other reviews. But since the code is going to very useful for my research right now, I can promise to provide feedback for how it feels in practice!\n\n> Though I think we should try to get this patch in as soon as possible. I'm sure quite a few people would be interested in the functionality of Plural. We can always work on providing a better interface later, as the number of users/developers increases. \n\nSounds good to me!",
+    "body": "Replying to [comment:28 burcin]:\n> It was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.\n\n\nIt also does for me so far! Thanks a lot for the quick rebase!\n\n> Nicolas, it would be great if you could help with the review. We are pretty confident with the interface to Singular and low-level code, since, as you can also see from the comments on the ticket, many Singular and Sage developers were involved in writing the code. However, we added many of the noncommutative structures on the spot (in a late night coding sprint) as we needed them. Another pair of eyes checking the mathematical structures and design would be really useful.\n\n\nI don't want to promise much at this time because I am already (very) late with a couple other reviews. But since the code is going to very useful for my research right now, I can promise to provide feedback for how it feels in practice!\n\n> Though I think we should try to get this patch in as soon as possible. I'm sure quite a few people would be interested in the functionality of Plural. We can always work on providing a better interface later, as the number of users/developers increases. \n\n\nSounds good to me!",
     "created_at": "2010-10-03T21:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -946,13 +941,16 @@ archive/issue_comments_033806.json:
 Replying to [comment:28 burcin]:
 > It was indeed careless rebasing. attachment:plural-wrapper-2010-10-01.patch (patch with same name as before, to hide my shame :) ) seems to work.
 
+
 It also does for me so far! Thanks a lot for the quick rebase!
 
 > Nicolas, it would be great if you could help with the review. We are pretty confident with the interface to Singular and low-level code, since, as you can also see from the comments on the ticket, many Singular and Sage developers were involved in writing the code. However, we added many of the noncommutative structures on the spot (in a late night coding sprint) as we needed them. Another pair of eyes checking the mathematical structures and design would be really useful.
 
+
 I don't want to promise much at this time because I am already (very) late with a couple other reviews. But since the code is going to very useful for my research right now, I can promise to provide feedback for how it feels in practice!
 
 > Though I think we should try to get this patch in as soon as possible. I'm sure quite a few people would be interested in the functionality of Plural. We can always work on providing a better interface later, as the number of users/developers increases. 
+
 
 Sounds good to me!
 
@@ -981,7 +979,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_033808.json:
 ```json
 {
-    "body": "Is it possible at this stage to define non commutative polynomial rings over QQ['q'].fraction_field()?\nI got an error with what I tried:\n\n\n```\nsage: K = QQ['q'].fraction_field()\nq = K.gen()\nF.<x,y,ex,ey> = FreeAlgebra(K,4)\nW =  F.g_algebra({ex*x: x*(1+ex),ey*y:y*(1+ey)})\n\nsage: ------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/algebras/free_algebra.py\", line 547, in g_algebra\n    return NCPolynomialRing_plural(base_ring, n, \",\".join([str(g) for g in self.gens()]), c=cmat, d=dmat, order=order, check=check)\n  File \"plural.pyx\", line 223, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__init__ (sage/rings/polynomial/plural.cpp:3772)\n  File \"matrix0.pyx\", line 1520, in sage.matrix.matrix0.Matrix.change_ring (sage/matrix/matrix0.c:7670)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce)\n  File \"matrix_generic_dense.pyx\", line 93, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:2321)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ring.py\", line 468, in __call__\n    c = self.base_ring()(x)\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/fraction_field.py\", line 467, in _element_constructor_\n    coerce=coerce, reduce = self.is_exact())\n  File \"fraction_field_element.pyx\", line 120, in sage.rings.fraction_field_element.FractionFieldElement.__init__ (sage/rings/fraction_field_element.c:1934)\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 313, in _element_constructor_\n    return C(self, x, check, is_gen, construct=construct, **kwds)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.py\", line 656, in __init__\n    x = [QQ(z) for z in x]\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n  File \"rational.pyx\", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)\nTypeError: Unable to coerce 0 (<class 'sage.algebras.free_algebra_element.FreeAlgebraElement'>) to Rational\n```\n\n\nThanks!",
+    "body": "Is it possible at this stage to define non commutative polynomial rings over QQ['q'].fraction_field()?\nI got an error with what I tried:\n\n```\nsage: K = QQ['q'].fraction_field()\nq = K.gen()\nF.<x,y,ex,ey> = FreeAlgebra(K,4)\nW =  F.g_algebra({ex*x: x*(1+ex),ey*y:y*(1+ey)})\n\nsage: ------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/algebras/free_algebra.py\", line 547, in g_algebra\n    return NCPolynomialRing_plural(base_ring, n, \",\".join([str(g) for g in self.gens()]), c=cmat, d=dmat, order=order, check=check)\n  File \"plural.pyx\", line 223, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__init__ (sage/rings/polynomial/plural.cpp:3772)\n  File \"matrix0.pyx\", line 1520, in sage.matrix.matrix0.Matrix.change_ring (sage/matrix/matrix0.c:7670)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce)\n  File \"matrix_generic_dense.pyx\", line 93, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:2321)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ring.py\", line 468, in __call__\n    c = self.base_ring()(x)\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/fraction_field.py\", line 467, in _element_constructor_\n    coerce=coerce, reduce = self.is_exact())\n  File \"fraction_field_element.pyx\", line 120, in sage.rings.fraction_field_element.FractionFieldElement.__init__ (sage/rings/fraction_field_element.c:1934)\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 313, in _element_constructor_\n    return C(self, x, check, is_gen, construct=construct, **kwds)\n  File \"/opt/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.py\", line 656, in __init__\n    x = [QQ(z) for z in x]\n  File \"parent.pyx\", line 859, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n  File \"rational.pyx\", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)\nTypeError: Unable to coerce 0 (<class 'sage.algebras.free_algebra_element.FreeAlgebraElement'>) to Rational\n```\n\nThanks!",
     "created_at": "2010-10-03T21:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -992,7 +990,6 @@ archive/issue_comments_033808.json:
 
 Is it possible at this stage to define non commutative polynomial rings over QQ['q'].fraction_field()?
 I got an error with what I tried:
-
 
 ```
 sage: K = QQ['q'].fraction_field()
@@ -1035,7 +1032,6 @@ Traceback (most recent call last):
 TypeError: Unable to coerce 0 (<class 'sage.algebras.free_algebra_element.FreeAlgebraElement'>) to Rational
 ```
 
-
 Thanks!
 
 
@@ -1045,7 +1041,7 @@ Thanks!
 archive/issue_comments_033809.json:
 ```json
 {
-    "body": "I started playing with ideals. Currently, one creates an ideal I, and\nthen when one calls I.std() or I.twostd() to create a new left or\ntwosided ideal, and actually compute the Groebner basis. What about\nthe following variants:\n\n(A) Take the side decision at the time the ideal is created:\n\n```\n    sage: I = W.ideal([...], side=...)\n```\n\n(to be documented in ``W.ideal?``).\n\nWith that, ``I`` would be well defined as an ideal; otherwise it is\nmore a ``collection of polynomials'' and the name is misleading.\n\n(B) About computing the Grobner basis:\n\n```\n    sage: I.groebner_basis()\n```\n\n\nor:\n\n```\n    sage: I.std() \n```\n\nwould compute the groebner basis, store it for later calculations, and\nreturn it as a list of polynomials rather than a new ideal.\n\nI haven't actually played with ideals in Sage; so maybe point (B) is\njust how things are with commutative ideals in Sage, and consistency\nshould take precedence.\n\nCheers,\n                    Nicolas",
+    "body": "I started playing with ideals. Currently, one creates an ideal I, and\nthen when one calls I.std() or I.twostd() to create a new left or\ntwosided ideal, and actually compute the Groebner basis. What about\nthe following variants:\n\n(A) Take the side decision at the time the ideal is created:\n\n```\n    sage: I = W.ideal([...], side=...)\n```\n(to be documented in ``W.ideal?``).\n\nWith that, ``I`` would be well defined as an ideal; otherwise it is\nmore a ``collection of polynomials'' and the name is misleading.\n\n(B) About computing the Grobner basis:\n\n```\n    sage: I.groebner_basis()\n```\n\nor:\n\n```\n    sage: I.std() \n```\nwould compute the groebner basis, store it for later calculations, and\nreturn it as a list of polynomials rather than a new ideal.\n\nI haven't actually played with ideals in Sage; so maybe point (B) is\njust how things are with commutative ideals in Sage, and consistency\nshould take precedence.\n\nCheers,\n                    Nicolas",
     "created_at": "2010-10-03T21:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1064,7 +1060,6 @@ the following variants:
 ```
     sage: I = W.ideal([...], side=...)
 ```
-
 (to be documented in ``W.ideal?``).
 
 With that, ``I`` would be well defined as an ideal; otherwise it is
@@ -1076,13 +1071,11 @@ more a ``collection of polynomials'' and the name is misleading.
     sage: I.groebner_basis()
 ```
 
-
 or:
 
 ```
     sage: I.std() 
 ```
-
 would compute the groebner basis, store it for later calculations, and
 return it as a list of polynomials rather than a new ideal.
 
@@ -1100,7 +1093,7 @@ Cheers,
 archive/issue_comments_033810.json:
 ```json
 {
-    "body": "Replying to [comment:32 nthiery]:\n> I started playing with ideals. Currently, one creates an ideal I, and\n> then when one calls I.std() or I.twostd() to create a new left or\n> twosided ideal, and actually compute the Groebner basis. What about\n> the following variants:\n\nCurrently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.\n\nHow to implement it? Well, on could have a base class for ideals over non-commutative rings (let's call it `NCIdeal`), and derive from it `NCIdeal_left`, `NCIdeal_right`, `NCIdeal_twodsided`.\n\nThen, one has to modify the multiplication method for rings so that sidedness is taken care of (there is a method ideal_class(), that probably needs to accept an optional argument \"side\"). And of course, the one-sided ideal classes need a multiplication method as well.\n\nAnd then, `NCIdeal_twodsided.groebner_basis()` would yield a two-sided Gr\u00f6bner basis, while `NCIdeal_left/right.groebner_basis()` would only yield a one-sided Gr\u00f6bner basis, of course unless a two-sided Gr\u00f6bner basis is requested by using an optional argument.",
+    "body": "Replying to [comment:32 nthiery]:\n> I started playing with ideals. Currently, one creates an ideal I, and\n> then when one calls I.std() or I.twostd() to create a new left or\n> twosided ideal, and actually compute the Groebner basis. What about\n> the following variants:\n\n\nCurrently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.\n\nHow to implement it? Well, on could have a base class for ideals over non-commutative rings (let's call it `NCIdeal`), and derive from it `NCIdeal_left`, `NCIdeal_right`, `NCIdeal_twodsided`.\n\nThen, one has to modify the multiplication method for rings so that sidedness is taken care of (there is a method ideal_class(), that probably needs to accept an optional argument \"side\"). And of course, the one-sided ideal classes need a multiplication method as well.\n\nAnd then, `NCIdeal_twodsided.groebner_basis()` would yield a two-sided Gr\u00f6bner basis, while `NCIdeal_left/right.groebner_basis()` would only yield a one-sided Gr\u00f6bner basis, of course unless a two-sided Gr\u00f6bner basis is requested by using an optional argument.",
     "created_at": "2010-10-03T21:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1114,6 +1107,7 @@ Replying to [comment:32 nthiery]:
 > then when one calls I.std() or I.twostd() to create a new left or
 > twosided ideal, and actually compute the Groebner basis. What about
 > the following variants:
+
 
 Currently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.
 
@@ -1130,7 +1124,7 @@ And then, `NCIdeal_twodsided.groebner_basis()` would yield a two-sided Gröbner 
 archive/issue_comments_033811.json:
 ```json
 {
-    "body": "Replying to [comment:32 nthiery]:\n> I started playing with ideals. Currently, one creates an ideal I, and\n> then when one calls I.std() or I.twostd() to create a new left or\n> twosided ideal, and actually compute the Groebner basis. \n\nBy the way: right ideals are not yet handled yet, right? Would it be a lot of work? It's just that the ideals I am currently playing with are right ideals, and I keep mixing myself up when playing with the \"dualized\" version I had to write in Sage.",
+    "body": "Replying to [comment:32 nthiery]:\n> I started playing with ideals. Currently, one creates an ideal I, and\n> then when one calls I.std() or I.twostd() to create a new left or\n> twosided ideal, and actually compute the Groebner basis. \n\n\nBy the way: right ideals are not yet handled yet, right? Would it be a lot of work? It's just that the ideals I am currently playing with are right ideals, and I keep mixing myself up when playing with the \"dualized\" version I had to write in Sage.",
     "created_at": "2010-10-12T15:20:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1144,6 +1138,7 @@ Replying to [comment:32 nthiery]:
 > then when one calls I.std() or I.twostd() to create a new left or
 > twosided ideal, and actually compute the Groebner basis. 
 
+
 By the way: right ideals are not yet handled yet, right? Would it be a lot of work? It's just that the ideals I am currently playing with are right ideals, and I keep mixing myself up when playing with the "dualized" version I had to write in Sage.
 
 
@@ -1153,7 +1148,7 @@ By the way: right ideals are not yet handled yet, right? Would it be a lot of wo
 archive/issue_comments_033812.json:
 ```json
 {
-    "body": "Hi Simon!\n\nReplying to [comment:33 SimonKing]:\n> Replying to [comment:32 nthiery]:\n> > I started playing with ideals. Currently, one creates an ideal I, and\n> > then when one calls I.std() or I.twostd() to create a new left or\n> > twosided ideal, and actually compute the Groebner basis. What about\n> > the following variants:\n> \n> Currently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.\n\n+1 for the implementation proposal!\n\nI also like that shorthand syntax for interactive usage. However, in\ncode, I prefer using something more explicit like R.ideal(L,side=...).\nBesides, having an R.ideal method also provides with:\n\n- a good place for advertising (it appears in R.<tab>), documenting,\n  testing the feature and its shorthand\n- an easy way for subclasses of (the class of) R to override this\n  method without having to worry about overloading/coercion/...\n\nCheers,\n\t\t\tNicolas",
+    "body": "Hi Simon!\n\nReplying to [comment:33 SimonKing]:\n> Replying to [comment:32 nthiery]:\n> > I started playing with ideals. Currently, one creates an ideal I, and\n> > then when one calls I.std() or I.twostd() to create a new left or\n> > twosided ideal, and actually compute the Groebner basis. What about\n> > the following variants:\n\n> \n> Currently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.\n\n\n+1 for the implementation proposal!\n\nI also like that shorthand syntax for interactive usage. However, in\ncode, I prefer using something more explicit like R.ideal(L,side=...).\nBesides, having an R.ideal method also provides with:\n\n- a good place for advertising (it appears in R.<tab>), documenting,\n  testing the feature and its shorthand\n- an easy way for subclasses of (the class of) R to override this\n  method without having to worry about overloading/coercion/...\n\nCheers,\n\t\t\tNicolas",
     "created_at": "2010-10-12T15:28:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1170,8 +1165,10 @@ Replying to [comment:33 SimonKing]:
 > > then when one calls I.std() or I.twostd() to create a new left or
 > > twosided ideal, and actually compute the Groebner basis. What about
 > > the following variants:
+
 > 
 > Currently, if R is a commutative ring and L is a list of elements of R, one may use the shorthand notation `I = R*L` or `I = L*R` to create an ideal. It seems natural to me to extend this to the non-commutative case: `R*L` for left ideal,  `L*R` for right ideal, and `R*L*R` for two-sided ideal.
+
 
 +1 for the implementation proposal!
 
@@ -1236,7 +1233,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033815.json:
 ```json
 {
-    "body": "Apply trac4539_libplural.patch\n\nIt turned out that the old patch did not apply, since meanwhile the libsingular options are dealt with in a different way. I have rebased the patch, and also adopted the new option syntax.\n\nHowever, not all is good. Here is one error that I just found:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3) \nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y}) \nsage: H.inject_variables() \nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False) \nsage: G = vector(I.gens()); G  \n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\n/mnt/local/king/SAGE/sage-4.6.2/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.is_integral_domain (sage/rings/ring.c:6035)()\n\nNotImplementedError: \n```\n\n\nSo, there remains work to do!",
+    "body": "Apply trac4539_libplural.patch\n\nIt turned out that the old patch did not apply, since meanwhile the libsingular options are dealt with in a different way. I have rebased the patch, and also adopted the new option syntax.\n\nHowever, not all is good. Here is one error that I just found:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3) \nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y}) \nsage: H.inject_variables() \nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False) \nsage: G = vector(I.gens()); G  \n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\n/mnt/local/king/SAGE/sage-4.6.2/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.is_integral_domain (sage/rings/ring.c:6035)()\n\nNotImplementedError: \n```\n\nSo, there remains work to do!",
     "created_at": "2011-03-13T14:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1265,7 +1262,6 @@ NotImplementedError                       Traceback (most recent call last)
 
 NotImplementedError: 
 ```
-
 
 So, there remains work to do!
 
@@ -1390,7 +1386,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033822.json:
 ```json
 {
-    "body": "It would be great to have this in Sage!\n\nI'm seeing some problems with the patch.  First, it doesn't apply cleanly to Sage 4.7.alpha1.  I haven't tried applying to 4.6.2.  I rebased it by hand.\n\nSecond, the change\n\n```diff\n-                    block_name, block_length, _ = re.split(length_pattern,block)\n+                    block_name, block_length, _ = re.split(pattern, block.strip())\n```\n\nin term_order.py is problematic, because \"pattern\" is not defined anywhere.  Replacing it by \"length_pattern\" seems to work.\n\nThird, in multipolynomial_ideal.py, `_groebner_basis_libsingular` is being called with keywords \"deg_bound\" and \"mult_bound\", but it doesn't accept those keywords as valid arguments.  Should we add `*args, **kwds` to the argument list?    Or should those keywords be dealt with explicitly?  I tried adding generic `*args` and `**kwds`, but doctesting on that file segfaults.\n\nWhen I doctest the whole Sage library after making these changes, I get the following failures:\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Killed/crashed\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/libs/singular/polynomial.pyx # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/plural.pyx # 6 doctests failed\n```\n\nOn one machine, I also had this failure:\n\n```\n\tsage -t -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial.pyx # Killed/crashed\n```\n",
+    "body": "It would be great to have this in Sage!\n\nI'm seeing some problems with the patch.  First, it doesn't apply cleanly to Sage 4.7.alpha1.  I haven't tried applying to 4.6.2.  I rebased it by hand.\n\nSecond, the change\n\n```diff\n-                    block_name, block_length, _ = re.split(length_pattern,block)\n+                    block_name, block_length, _ = re.split(pattern, block.strip())\n```\nin term_order.py is problematic, because \"pattern\" is not defined anywhere.  Replacing it by \"length_pattern\" seems to work.\n\nThird, in multipolynomial_ideal.py, `_groebner_basis_libsingular` is being called with keywords \"deg_bound\" and \"mult_bound\", but it doesn't accept those keywords as valid arguments.  Should we add `*args, **kwds` to the argument list?    Or should those keywords be dealt with explicitly?  I tried adding generic `*args` and `**kwds`, but doctesting on that file segfaults.\n\nWhen I doctest the whole Sage library after making these changes, I get the following failures:\n\n```\nThe following tests failed:\n\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Killed/crashed\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/libs/singular/polynomial.pyx # 1 doctests failed\n        sage -t  -long -force_lib devel/sage/sage/rings/polynomial/plural.pyx # 6 doctests failed\n```\nOn one machine, I also had this failure:\n\n```\n\tsage -t -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial.pyx # Killed/crashed\n```",
     "created_at": "2011-03-23T22:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1409,7 +1405,6 @@ Second, the change
 -                    block_name, block_length, _ = re.split(length_pattern,block)
 +                    block_name, block_length, _ = re.split(pattern, block.strip())
 ```
-
 in term_order.py is problematic, because "pattern" is not defined anywhere.  Replacing it by "length_pattern" seems to work.
 
 Third, in multipolynomial_ideal.py, `_groebner_basis_libsingular` is being called with keywords "deg_bound" and "mult_bound", but it doesn't accept those keywords as valid arguments.  Should we add `*args, **kwds` to the argument list?    Or should those keywords be dealt with explicitly?  I tried adding generic `*args` and `**kwds`, but doctesting on that file segfaults.
@@ -1424,13 +1419,11 @@ The following tests failed:
         sage -t  -long -force_lib devel/sage/sage/libs/singular/polynomial.pyx # 1 doctests failed
         sage -t  -long -force_lib devel/sage/sage/rings/polynomial/plural.pyx # 6 doctests failed
 ```
-
 On one machine, I also had this failure:
 
 ```
 	sage -t -long -force_lib devel/sage/sage/rings/polynomial/multi_polynomial.pyx # Killed/crashed
 ```
-
 
 
 
@@ -1535,7 +1528,7 @@ Can you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does t
 archive/issue_comments_033828.json:
 ```json
 {
-    "body": "Replying to [comment:44 AlexanderDreyer]:\n> Can you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?\n\nWe were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome).\n\nBut is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 already has a positive review, and since it adds one- and twosided ideals of non-commutative rings, it seems like a natural dependency for a plural wrapper.",
+    "body": "Replying to [comment:44 AlexanderDreyer]:\n> Can you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?\n\n\nWe were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome).\n\nBut is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 already has a positive review, and since it adds one- and twosided ideals of non-commutative rings, it seems like a natural dependency for a plural wrapper.",
     "created_at": "2011-09-26T23:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1546,6 +1539,7 @@ archive/issue_comments_033828.json:
 
 Replying to [comment:44 AlexanderDreyer]:
 > Can you test, whether Attach:trac4539_libplural-2011-09-27-untested.patch does the job?
+
 
 We were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome).
 
@@ -1558,7 +1552,7 @@ But is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 alre
 archive/issue_comments_033829.json:
 ```json
 {
-    "body": "Replying to [comment:45 SimonKing]:\n\n> We were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome). But is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 already has a positive review, and since it adds one- and twosided ideals of non-commutative rings, it seems like a natural dependency for a plural wrapper.\n\nSorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.",
+    "body": "Replying to [comment:45 SimonKing]:\n\n> We were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome). But is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 already has a positive review, and since it adds one- and twosided ideals of non-commutative rings, it seems like a natural dependency for a plural wrapper.\n\n\nSorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.",
     "created_at": "2011-09-26T23:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1571,6 +1565,7 @@ Replying to [comment:45 SimonKing]:
 
 > We were just dubling the work, it seems. I had rebased my old patch and was running tests (don't know the outcome). But is your patch relative to #11068 (and perhaps to #7797 as well)? #11068 already has a positive review, and since it adds one- and twosided ideals of non-commutative rings, it seems like a natural dependency for a plural wrapper.
 
+
 Sorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.
 
 
@@ -1580,7 +1575,7 @@ Sorry, I thought rebasing couldn't be finished. But it seems, that something is 
 archive/issue_comments_033830.json:
 ```json
 {
-    "body": "Replying to [comment:46 AlexanderDreyer]:\n> Sorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.\nJust foudn out, the patch was fine (so far), but my sage/devel directory was corrupted. (Luckily I cloned.)",
+    "body": "Replying to [comment:46 AlexanderDreyer]:\n> Sorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.\n\nJust foudn out, the patch was fine (so far), but my sage/devel directory was corrupted. (Luckily I cloned.)",
     "created_at": "2011-09-26T23:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1591,6 +1586,7 @@ archive/issue_comments_033830.json:
 
 Replying to [comment:46 AlexanderDreyer]:
 > Sorry, I thought rebasing couldn't be finished. But it seems, that something is wrong with my rebased patch. So you should post yours.
+
 Just foudn out, the patch was fine (so far), but my sage/devel directory was corrupted. (Luckily I cloned.)
 
 
@@ -1645,7 +1641,7 @@ I am now testing Alexander's patch. First good news: It applies without fuzz, ev
 archive/issue_comments_033833.json:
 ```json
 {
-    "body": "I started with \"manually\" testing against three of the doc test errors that I got with my patch. Two of them fail with Alexander's patch as well:\n\n```\nsage: P.<x,y,z> = QQ[]\nsage: x/0\nTraceback (most recent call last):\n...\nZeroDivisionError:\n```\n\n --> The old error message \"rational division by zero\" has gone.\n\n\n```\nsage: (x*y).is_monomial()\nTrue\nsage: (2*y).is_monomial()\nFalse\n```\n\n --> That's better than my patch, where these return 1 and 0.\n\n\n```\nsage: (x+y^2^30)^10\nx^10\n```\n\n --> That should result in an overflow error.\n\nI didn't analyse the segmentation faults.",
+    "body": "I started with \"manually\" testing against three of the doc test errors that I got with my patch. Two of them fail with Alexander's patch as well:\n\n```\nsage: P.<x,y,z> = QQ[]\nsage: x/0\nTraceback (most recent call last):\n...\nZeroDivisionError:\n```\n --> The old error message \"rational division by zero\" has gone.\n\n```\nsage: (x*y).is_monomial()\nTrue\nsage: (2*y).is_monomial()\nFalse\n```\n --> That's better than my patch, where these return 1 and 0.\n\n```\nsage: (x+y^2^30)^10\nx^10\n```\n --> That should result in an overflow error.\n\nI didn't analyse the segmentation faults.",
     "created_at": "2011-09-27T08:21:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1663,9 +1659,7 @@ Traceback (most recent call last):
 ...
 ZeroDivisionError:
 ```
-
  --> The old error message "rational division by zero" has gone.
-
 
 ```
 sage: (x*y).is_monomial()
@@ -1673,15 +1667,12 @@ True
 sage: (2*y).is_monomial()
 False
 ```
-
  --> That's better than my patch, where these return 1 and 0.
-
 
 ```
 sage: (x+y^2^30)^10
 x^10
 ```
-
  --> That should result in an overflow error.
 
 I didn't analyse the segmentation faults.
@@ -1711,7 +1702,7 @@ PS: Note that all these problems concern *commutative* polynomials.
 archive/issue_comments_033835.json:
 ```json
 {
-    "body": "Replying to [comment:50 SimonKing]:\n> sage: P.<x,y,z> = QQ[]\n> sage: x/0\n> Traceback (most recent call last):\n> ...\n> ZeroDivisionError:\n\nHere is the explanation:\n\nLet `P = QQ[x,y,z]`. Since coercion is now done properly, x/0 is first converting 0 into P and tries to invert it there. The result is a naked `ZeroDivisionError` in\nsage.libs.singular.polynomial.singular_polynomial_div_coeff.\nBefore, it used to invert 0 as a rational number, resulting in a `ZeroDivisionError` with some error message.\n\nBurcin and I agree that it is ok to have the `ZeroDivisionError` without a message: What else could it state but \"don't divide by zero\"?\n\nSo, it is not an issue.\n\n> {{{\n> sage: (x*y).is_monomial()\n> True\n> sage: (2*y).is_monomial()\n> False\n\nI don't know why it has occured in the first place, but now it seems alright, even with my patch.\n\n> {{{\n> sage: (x+y<sup>2</sup>30)^10\n> x^10\n> }}}\n>  --> That should result in an overflow error.\n\nIt turns out that one gets the *same* stupid result with an unpatched sage-4.7.2.alpha2. Burcin told me that this patch is supposed to fix it. Apparently it fails, and we need to understand why it fails.\n\n> I didn't analyse the segmentation faults.\n\nThat will be next...",
+    "body": "Replying to [comment:50 SimonKing]:\n> sage: P.<x,y,z> = QQ[]\n> sage: x/0\n> Traceback (most recent call last):\n> ...\n> ZeroDivisionError:\n\n\nHere is the explanation:\n\nLet `P = QQ[x,y,z]`. Since coercion is now done properly, x/0 is first converting 0 into P and tries to invert it there. The result is a naked `ZeroDivisionError` in\nsage.libs.singular.polynomial.singular_polynomial_div_coeff.\nBefore, it used to invert 0 as a rational number, resulting in a `ZeroDivisionError` with some error message.\n\nBurcin and I agree that it is ok to have the `ZeroDivisionError` without a message: What else could it state but \"don't divide by zero\"?\n\nSo, it is not an issue.\n\n> {{{\n> sage: (x*y).is_monomial()\n> True\n> sage: (2*y).is_monomial()\n> False\n\n\nI don't know why it has occured in the first place, but now it seems alright, even with my patch.\n\n> {{{\n> sage: (x+y<sup>2</sup>30)^10\n> x^10\n> }}}\n>  --> That should result in an overflow error.\n\n\nIt turns out that one gets the *same* stupid result with an unpatched sage-4.7.2.alpha2. Burcin told me that this patch is supposed to fix it. Apparently it fails, and we need to understand why it fails.\n\n> I didn't analyse the segmentation faults.\n\n\nThat will be next...",
     "created_at": "2011-09-27T14:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1726,6 +1717,7 @@ Replying to [comment:50 SimonKing]:
 > Traceback (most recent call last):
 > ...
 > ZeroDivisionError:
+
 
 Here is the explanation:
 
@@ -1743,6 +1735,7 @@ So, it is not an issue.
 > sage: (2*y).is_monomial()
 > False
 
+
 I don't know why it has occured in the first place, but now it seems alright, even with my patch.
 
 > {{{
@@ -1751,9 +1744,11 @@ I don't know why it has occured in the first place, but now it seems alright, ev
 > }}}
 >  --> That should result in an overflow error.
 
+
 It turns out that one gets the *same* stupid result with an unpatched sage-4.7.2.alpha2. Burcin told me that this patch is supposed to fix it. Apparently it fails, and we need to understand why it fails.
 
 > I didn't analyse the segmentation faults.
+
 
 That will be next...
 
@@ -1782,7 +1777,7 @@ I created a new ticket #11856 for the (missing) overflow error.
 archive/issue_comments_033837.json:
 ```json
 {
-    "body": "Replying to [comment:53 SimonKing]:\n> I created a new ticket #11856 for the (missing) overflow error.\n\nSorry, I forgot: It should be a dependency.",
+    "body": "Replying to [comment:53 SimonKing]:\n> I created a new ticket #11856 for the (missing) overflow error.\n\n\nSorry, I forgot: It should be a dependency.",
     "created_at": "2011-09-27T14:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -1793,6 +1788,7 @@ archive/issue_comments_033837.json:
 
 Replying to [comment:53 SimonKing]:
 > I created a new ticket #11856 for the (missing) overflow error.
+
 
 Sorry, I forgot: It should be a dependency.
 
@@ -2139,7 +2135,7 @@ Apply trac4539_libplural.2.patch
 archive/issue_comments_033855.json:
 ```json
 {
-    "body": "I get a doctest failure in sage/rings/polynomial/multi_polynomial_ideal.py. There, a protocol of a Gr\u00f6bner basis computation is printed where we do not expect it.\n\nThe problem: If one runs the test separately, it works fine:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\nsage: G = vector(I.gens()); G\n/mnt/local/king/SAGE/debug/sage-4.7.2.alpha3-prerelease/local/lib/python2.6/site-packages/sage/modules/free_module.py:366: UserWarning: You are constructing a free module   over a noncommutative ring. Sage does\n             not have a concept of left/right and both sided modules, so be careful. It's also\n             not guaranteed that all multiplications are done from the right side.\n  not guaranteed that all multiplications are done from the right side.\"\"\")\n/mnt/local/king/SAGE/debug/sage-4.7.2.alpha3-prerelease/local/lib/python2.6/site-packages/sage/modules/free_module.py:584: UserWarning: You are constructing a free module over a noncommutative ring. Sage does not have a concept of left/right and both sided modules be careful. It's also not guarantied that all multiplications are done from the right side.\n  warn(\"\"\"You are constructing a free module over a noncommutative ring. Sage does not have a concept of left/right and both sided modules be careful. It's also not guarantied that all multiplications are done from the right side.\"\"\")\n(y^2, x^2, z^2 - 1)\n```\n\n\nBut the same doctest executed as part of the doctest suite has a \n\n```\nstd in (0),(x,y),(dp(2),C)\n[4294967295:2]3ss4s6\n(S:2)--\nproduct criterion:1 chain criterion:0\n```\n\nprinted after (!!) the result.\n\nSo, apparently another test has a side effect. I tried to identify it (e.g., a test that sets verbosity and forgets to reset it), but I did not succeed.  Also I wonder why one first sees the result and only later sees the protocol.",
+    "body": "I get a doctest failure in sage/rings/polynomial/multi_polynomial_ideal.py. There, a protocol of a Gr\u00f6bner basis computation is printed where we do not expect it.\n\nThe problem: If one runs the test separately, it works fine:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\nsage: G = vector(I.gens()); G\n/mnt/local/king/SAGE/debug/sage-4.7.2.alpha3-prerelease/local/lib/python2.6/site-packages/sage/modules/free_module.py:366: UserWarning: You are constructing a free module   over a noncommutative ring. Sage does\n             not have a concept of left/right and both sided modules, so be careful. It's also\n             not guaranteed that all multiplications are done from the right side.\n  not guaranteed that all multiplications are done from the right side.\"\"\")\n/mnt/local/king/SAGE/debug/sage-4.7.2.alpha3-prerelease/local/lib/python2.6/site-packages/sage/modules/free_module.py:584: UserWarning: You are constructing a free module over a noncommutative ring. Sage does not have a concept of left/right and both sided modules be careful. It's also not guarantied that all multiplications are done from the right side.\n  warn(\"\"\"You are constructing a free module over a noncommutative ring. Sage does not have a concept of left/right and both sided modules be careful. It's also not guarantied that all multiplications are done from the right side.\"\"\")\n(y^2, x^2, z^2 - 1)\n```\n\nBut the same doctest executed as part of the doctest suite has a \n\n```\nstd in (0),(x,y),(dp(2),C)\n[4294967295:2]3ss4s6\n(S:2)--\nproduct criterion:1 chain criterion:0\n```\nprinted after (!!) the result.\n\nSo, apparently another test has a side effect. I tried to identify it (e.g., a test that sets verbosity and forgets to reset it), but I did not succeed.  Also I wonder why one first sees the result and only later sees the protocol.",
     "created_at": "2011-09-28T15:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2168,7 +2164,6 @@ sage: G = vector(I.gens()); G
 (y^2, x^2, z^2 - 1)
 ```
 
-
 But the same doctest executed as part of the doctest suite has a 
 
 ```
@@ -2177,7 +2172,6 @@ std in (0),(x,y),(dp(2),C)
 (S:2)--
 product criterion:1 chain criterion:0
 ```
-
 printed after (!!) the result.
 
 So, apparently another test has a side effect. I tried to identify it (e.g., a test that sets verbosity and forgets to reset it), but I did not succeed.  Also I wonder why one first sees the result and only later sees the protocol.
@@ -2330,7 +2324,7 @@ In sage/algebras/free_algebra.py in the method g_algebra, I find the statement:
 archive/issue_comments_033863.json:
 ```json
 {
-    "body": "PS: The other statements\n\n```\n        - Coercion doesn't work yet, there is some cheating about assumptions\n        - The optional argument ``check`` controls checking the degeneracy conditions.\n          Furthermore, the default values interfere with non-degeneracy conditions.\n```\n\naren't clear to  me either. \n\n* What does \"cheating about assumptions\" mean (what are the assumptions)?\n* What exactly does not work in coercion (perhaps I can fix it?)?\n* What are \"the default values\" (the only default is `order=\"degrevlex\"`)?\n* How do they interfere with non-degeneracy conditions? What are these conditions?",
+    "body": "PS: The other statements\n\n```\n        - Coercion doesn't work yet, there is some cheating about assumptions\n        - The optional argument ``check`` controls checking the degeneracy conditions.\n          Furthermore, the default values interfere with non-degeneracy conditions.\n```\naren't clear to  me either. \n\n* What does \"cheating about assumptions\" mean (what are the assumptions)?\n* What exactly does not work in coercion (perhaps I can fix it?)?\n* What are \"the default values\" (the only default is `order=\"degrevlex\"`)?\n* How do they interfere with non-degeneracy conditions? What are these conditions?",
     "created_at": "2011-09-28T18:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2346,7 +2340,6 @@ PS: The other statements
         - The optional argument ``check`` controls checking the degeneracy conditions.
           Furthermore, the default values interfere with non-degeneracy conditions.
 ```
-
 aren't clear to  me either. 
 
 * What does "cheating about assumptions" mean (what are the assumptions)?
@@ -2451,7 +2444,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033869.json:
 ```json
 {
-    "body": "Here's a report on features that I implemented today (not posted yet), missing features, and I also have some questions for you:\n\n__Sidedness of ideals__\n\nBy #11068, we can have one- and two-sided ideals. Oleksander told me that Singular can only compute left or twosided Gr\u00f6bner bases. Therefore, I think non-commutative polynomial ideals should refuse to be right-sided. The default should be left ideal. If the ideal is defined as a two-sided ideal, then std should return the same as twostd. Here is an example:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL\nLeft Ideal (x^3, y^3, z^3 - 4*z) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT\nTwosided Ideal (x^3, y^3, z^3 - 4*z) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT.std() == JL.twostd()\nTrue\n```\n\n\nI think that's a good solution.\n\n__Cache__\n\nI added a cached_method decorator to std and twostd - I guess it is obvious that the result of a GB computation should be cached.\n\n**Question:** Should g-algebras be unique parents? If you agree that they should be, then I can try to implement it.\n\n__Category__\n\nA proper initialisation of non-commutative polynomial rings in the category of algebras was missing and is now added:\n\n```\nsage: H._is_category_initialized()\nTrue\nsage: H.category()\nCategory of algebras over Rational Field\n```\n\n\n__Pickling__\n\nThe test suite does not pass. Among other things, pickling of g-algebras has simply been forgotten. This certainly must be fixed:\n\n```\nsage: dumps(H)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: expected string or Unicode object, NoneType found\n```\n\nIt could be that, by using a `UniqueFactory` or `UniqueRepresentation`, the pickling problem automatically vanishes. Otherwise, a `__reduce__` method must be implemented.\n\n__Generator names for g-algebras__\n\nIt should be possible to choose names in the `g_algebra()` method.\n\n__Quotients__\n\nThere is a custom `quotient()` method for g-algebras (not using #11068). The question is: Is that really a quotient? It isn't printed as such, and the quotient relations are not used in arithmetic nor in comparison:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\nsage: Q = H.quotient(I); Q\nNoncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: Q.relations()\n{y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: I.twostd()\nTwosided Ideal (z^2 - 1, y*z - y, x*z + x, y^2, 2*x*y - z - 1, x^2) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: Q.2^2\nz^2\nsage: Q.2^2 == Q.one_element()\nFalse\n```\n\n**Question:** Did I misinterprete it? Hence, is there a way to make Q show that `Q.2^2` is equal to one?\n\nOtherwise, the custom `quotient()` should be dropped. #11068 provides the framework for nc-quotient rings; one just needs to add a `I.reduce(p)` method to our ideals (which is missing anyway).\n\n__Doc strings__\n\nI fixed various wrong doc string formats. Of course, after the changes mentioned above, some doc tests need to be modified.",
+    "body": "Here's a report on features that I implemented today (not posted yet), missing features, and I also have some questions for you:\n\n__Sidedness of ideals__\n\nBy #11068, we can have one- and two-sided ideals. Oleksander told me that Singular can only compute left or twosided Gr\u00f6bner bases. Therefore, I think non-commutative polynomial ideals should refuse to be right-sided. The default should be left ideal. If the ideal is defined as a two-sided ideal, then std should return the same as twostd. Here is an example:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL\nLeft Ideal (x^3, y^3, z^3 - 4*z) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT\nTwosided Ideal (x^3, y^3, z^3 - 4*z) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT.std() == JL.twostd()\nTrue\n```\n\nI think that's a good solution.\n\n__Cache__\n\nI added a cached_method decorator to std and twostd - I guess it is obvious that the result of a GB computation should be cached.\n\n**Question:** Should g-algebras be unique parents? If you agree that they should be, then I can try to implement it.\n\n__Category__\n\nA proper initialisation of non-commutative polynomial rings in the category of algebras was missing and is now added:\n\n```\nsage: H._is_category_initialized()\nTrue\nsage: H.category()\nCategory of algebras over Rational Field\n```\n\n__Pickling__\n\nThe test suite does not pass. Among other things, pickling of g-algebras has simply been forgotten. This certainly must be fixed:\n\n```\nsage: dumps(H)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: expected string or Unicode object, NoneType found\n```\nIt could be that, by using a `UniqueFactory` or `UniqueRepresentation`, the pickling problem automatically vanishes. Otherwise, a `__reduce__` method must be implemented.\n\n__Generator names for g-algebras__\n\nIt should be possible to choose names in the `g_algebra()` method.\n\n__Quotients__\n\nThere is a custom `quotient()` method for g-algebras (not using #11068). The question is: Is that really a quotient? It isn't printed as such, and the quotient relations are not used in arithmetic nor in comparison:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H.inject_variables()\nDefining x, y, z\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\nsage: Q = H.quotient(I); Q\nNoncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: Q.relations()\n{y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: I.twostd()\nTwosided Ideal (z^2 - 1, y*z - y, x*z + x, y^2, 2*x*y - z - 1, x^2) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: Q.2^2\nz^2\nsage: Q.2^2 == Q.one_element()\nFalse\n```\n**Question:** Did I misinterprete it? Hence, is there a way to make Q show that `Q.2^2` is equal to one?\n\nOtherwise, the custom `quotient()` should be dropped. #11068 provides the framework for nc-quotient rings; one just needs to add a `I.reduce(p)` method to our ideals (which is missing anyway).\n\n__Doc strings__\n\nI fixed various wrong doc string formats. Of course, after the changes mentioned above, some doc tests need to be modified.",
     "created_at": "2011-09-29T00:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2485,7 +2478,6 @@ sage: JT.std() == JL.twostd()
 True
 ```
 
-
 I think that's a good solution.
 
 __Cache__
@@ -2505,7 +2497,6 @@ sage: H.category()
 Category of algebras over Rational Field
 ```
 
-
 __Pickling__
 
 The test suite does not pass. Among other things, pickling of g-algebras has simply been forgotten. This certainly must be fixed:
@@ -2517,7 +2508,6 @@ TypeError                                 Traceback (most recent call last)
 ...
 TypeError: expected string or Unicode object, NoneType found
 ```
-
 It could be that, by using a `UniqueFactory` or `UniqueRepresentation`, the pickling problem automatically vanishes. Otherwise, a `__reduce__` method must be implemented.
 
 __Generator names for g-algebras__
@@ -2545,7 +2535,6 @@ z^2
 sage: Q.2^2 == Q.one_element()
 False
 ```
-
 **Question:** Did I misinterprete it? Hence, is there a way to make Q show that `Q.2^2` is equal to one?
 
 Otherwise, the custom `quotient()` should be dropped. #11068 provides the framework for nc-quotient rings; one just needs to add a `I.reduce(p)` method to our ideals (which is missing anyway).
@@ -2599,7 +2588,7 @@ New patch posted! It does what I have announced above. I suggest that the next s
 archive/issue_comments_033872.json:
 ```json
 {
-    "body": "The patch that I have just attached provides uniqueness of the parent (using a `UniqueFactory`) and pickling for nc rings and polynomials.\n\nIn short:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H is loads(dumps(H))\nTrue\nsage: TestSuite(H).run()\n```\n\n\nDoc tests still need to be updated, though. I also think that normal form computation should be easy to implement.\n\nApply trac4539_libplural.patch trac4539_pickling.patch",
+    "body": "The patch that I have just attached provides uniqueness of the parent (using a `UniqueFactory`) and pickling for nc rings and polynomials.\n\nIn short:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: H is loads(dumps(H))\nTrue\nsage: TestSuite(H).run()\n```\n\nDoc tests still need to be updated, though. I also think that normal form computation should be easy to implement.\n\nApply trac4539_libplural.patch trac4539_pickling.patch",
     "created_at": "2011-09-29T10:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2619,7 +2608,6 @@ sage: H is loads(dumps(H))
 True
 sage: TestSuite(H).run()
 ```
-
 
 Doc tests still need to be updated, though. I also think that normal form computation should be easy to implement.
 
@@ -2652,7 +2640,7 @@ Pickling of nc rings and polynomials
 archive/issue_comments_033874.json:
 ```json
 {
-    "body": "I have updated the second patch (adding a commit message), and I added a third patch. It provides a non-commutative \"Gr\u00f6bner strategy\", normal form computation, and thus quotient rings of g-algebras.\n\nNote that the quotients use the general framework from #11068. They *should* simply be g-algebras as well. But I suggest that this will be done on a different ticket.\n\nWith the new patch, one can do:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False, side='twosided')\nsage: Q = H.quotient(I); Q\nQuotient of Noncommutative Multivariate Polynomial Ring in x, y, z\nover Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y,\nz*x: x*z + 2*x} by the ideal (y^2, x^2, z^2 - 1)\nsage: Q.2^2 == Q.one_element()   # indirect doctest\nTrue\n```\n\nHere, we see that the relation that we just found in the quotient is actually a consequence of the given relations:\n\n```\nsage: I.twostd()\nTwosided Ideal (z^2 - 1, y*z - y, x*z + x, y^2, 2*x*y - z - 1, x^2)\nof Noncommutative Multivariate Polynomial Ring in x, y, z over\nRational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\n\n\nNote that reduction of polynomials by a list of polynomials is, in general, not a normal form. However, reduction of a polynomial by an ideal uses a two-sided Gr\u00f6bner basis and is thus a normal form.\n\nI just thought that it would better be reduction by a left Gr\u00f6bner basis, if the ideal is just a left ideal. OK, doing it soon...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
+    "body": "I have updated the second patch (adding a commit message), and I added a third patch. It provides a non-commutative \"Gr\u00f6bner strategy\", normal form computation, and thus quotient rings of g-algebras.\n\nNote that the quotients use the general framework from #11068. They *should* simply be g-algebras as well. But I suggest that this will be done on a different ticket.\n\nWith the new patch, one can do:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False, side='twosided')\nsage: Q = H.quotient(I); Q\nQuotient of Noncommutative Multivariate Polynomial Ring in x, y, z\nover Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y,\nz*x: x*z + 2*x} by the ideal (y^2, x^2, z^2 - 1)\nsage: Q.2^2 == Q.one_element()   # indirect doctest\nTrue\n```\nHere, we see that the relation that we just found in the quotient is actually a consequence of the given relations:\n\n```\nsage: I.twostd()\nTwosided Ideal (z^2 - 1, y*z - y, x*z + x, y^2, 2*x*y - z - 1, x^2)\nof Noncommutative Multivariate Polynomial Ring in x, y, z over\nRational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\n\nNote that reduction of polynomials by a list of polynomials is, in general, not a normal form. However, reduction of a polynomial by an ideal uses a two-sided Gr\u00f6bner basis and is thus a normal form.\n\nI just thought that it would better be reduction by a left Gr\u00f6bner basis, if the ideal is just a left ideal. OK, doing it soon...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
     "created_at": "2011-09-29T12:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2678,7 +2666,6 @@ z*x: x*z + 2*x} by the ideal (y^2, x^2, z^2 - 1)
 sage: Q.2^2 == Q.one_element()   # indirect doctest
 True
 ```
-
 Here, we see that the relation that we just found in the quotient is actually a consequence of the given relations:
 
 ```
@@ -2687,7 +2674,6 @@ Twosided Ideal (z^2 - 1, y*z - y, x*z + x, y^2, 2*x*y - z - 1, x^2)
 of Noncommutative Multivariate Polynomial Ring in x, y, z over
 Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}
 ```
-
 
 Note that reduction of polynomials by a list of polynomials is, in general, not a normal form. However, reduction of a polynomial by an ideal uses a two-sided Gröbner basis and is thus a normal form.
 
@@ -2740,7 +2726,7 @@ Normal forms, quotient rings, and ideal containment
 archive/issue_comments_033877.json:
 ```json
 {
-    "body": "Attachment [trac4539_normal_forms.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms.patch) by @simon-king-jena created at 2011-09-29 12:56:09\n\nSorry, I couldn't resist to add one more feature: Ideal containment, which is a direct application of normal form computation.\n\nWith the new version of the third patch, we have:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\n\nApparently, ``x*y^2-y*z`` should be in the two-sided, but not in the left ideal. And that is indeed what we get:\n\n```\nsage: x*y^2-y*z in JL\nFalse\nsage: x*y^2-y*z in JT\nTrue\n```\n\n\nDocs are still to fix. And I promise to focus on it - no new features...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
+    "body": "Attachment [trac4539_normal_forms.patch](tarball://root/attachments/some-uuid/ticket4539/trac4539_normal_forms.patch) by @simon-king-jena created at 2011-09-29 12:56:09\n\nSorry, I couldn't resist to add one more feature: Ideal containment, which is a direct application of normal form computation.\n\nWith the new version of the third patch, we have:\n\n```\nsage: A.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: H.<x,y,z> = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\nsage: JL = H.ideal([x^3, y^3, z^3 - 4*z])\nsage: JL.std()\nLeft Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, 2*x*y*z - z^2 - 2*z, y^3, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\nsage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')\nsage: JT.std()\nTwosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}\n```\nApparently, ``x*y^2-y*z`` should be in the two-sided, but not in the left ideal. And that is indeed what we get:\n\n```\nsage: x*y^2-y*z in JL\nFalse\nsage: x*y^2-y*z in JT\nTrue\n```\n\nDocs are still to fix. And I promise to focus on it - no new features...\n\nApply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.patch",
     "created_at": "2011-09-29T12:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2765,7 +2751,6 @@ sage: JT = H.ideal([x^3, y^3, z^3 - 4*z], side='twosided')
 sage: JT.std()
 Twosided Ideal (z^3 - 4*z, y*z^2 - 2*y*z, x*z^2 + 2*x*z, y^2*z - 2*y^2, 2*x*y*z - z^2 - 2*z, x^2*z + 2*x^2, y^3, x*y^2 - y*z, x^2*y - x*z - 2*x, x^3) of Noncommutative Multivariate Polynomial Ring in x, y, z over Rational Field, nc-relations: {y*x: x*y - z, z*y: y*z - 2*y, z*x: x*z + 2*x}
 ```
-
 Apparently, ``x*y^2-y*z`` should be in the two-sided, but not in the left ideal. And that is indeed what we get:
 
 ```
@@ -2774,7 +2759,6 @@ False
 sage: x*y^2-y*z in JT
 True
 ```
-
 
 Docs are still to fix. And I promise to focus on it - no new features...
 
@@ -2933,7 +2917,7 @@ Apply trac4539_libplural.patch trac4539_pickling.patch trac4539_normal_forms.pat
 archive/issue_comments_033885.json:
 ```json
 {
-    "body": "Replying to [comment:83 SimonKing]:\n> I hope all tests will pass by now!\n\nThey do!",
+    "body": "Replying to [comment:83 SimonKing]:\n> I hope all tests will pass by now!\n\n\nThey do!",
     "created_at": "2011-09-29T20:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -2944,6 +2928,7 @@ archive/issue_comments_033885.json:
 
 Replying to [comment:83 SimonKing]:
 > I hope all tests will pass by now!
+
 
 They do!
 
@@ -2991,7 +2976,7 @@ Hm, trac4539_fix_docs.patch doesn't apply cleanly, maybe i used the  wrong order
 archive/issue_comments_033888.json:
 ```json
 {
-    "body": "Replying to [comment:86 AlexanderDreyer]:\n> Hm, trac4539_fix_docs.patch doesn't apply cleanly, maybe i used the  wrong order. What does the following tell you?\n\n```\nhg qseries\ntrac11815_format_must_preserve_embedding.patch\ntrac11817_question_mark_using_sage_getdoc.patch\ntrac11768_source_of_dynamic_class.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac11791_dynamic_metaclass_introspection.patch\ntrac11780_unique_auxiliar_polyring.patch\ntrac11856_exponent_overflow.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac4539_libplural.patch\ntrac4539_pickling.patch\ntrac4539_normal_forms.patch\ntrac4539_fix_docs.patch\n```\n\n\nSo, as you can see, I indeed have more stuff applied in front of the plural patches. I will try to see what went wrong.",
+    "body": "Replying to [comment:86 AlexanderDreyer]:\n> Hm, trac4539_fix_docs.patch doesn't apply cleanly, maybe i used the  wrong order. What does the following tell you?\n\n{{{\nhg qseries\ntrac11815_format_must_preserve_embedding.patch\ntrac11817_question_mark_using_sage_getdoc.patch\ntrac11768_source_of_dynamic_class.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac11791_dynamic_metaclass_introspection.patch\ntrac11780_unique_auxiliar_polyring.patch\ntrac11856_exponent_overflow.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac4539_libplural.patch\ntrac4539_pickling.patch\ntrac4539_normal_forms.patch\ntrac4539_fix_docs.patch\n}}}\n\nSo, as you can see, I indeed have more stuff applied in front of the plural patches. I will try to see what went wrong.",
     "created_at": "2011-09-30T06:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3003,7 +2988,7 @@ archive/issue_comments_033888.json:
 Replying to [comment:86 AlexanderDreyer]:
 > Hm, trac4539_fix_docs.patch doesn't apply cleanly, maybe i used the  wrong order. What does the following tell you?
 
-```
+{{{
 hg qseries
 trac11815_format_must_preserve_embedding.patch
 trac11817_question_mark_using_sage_getdoc.patch
@@ -3021,8 +3006,7 @@ trac4539_libplural.patch
 trac4539_pickling.patch
 trac4539_normal_forms.patch
 trac4539_fix_docs.patch
-```
-
+}}}
 
 So, as you can see, I indeed have more stuff applied in front of the plural patches. I will try to see what went wrong.
 
@@ -3033,7 +3017,7 @@ So, as you can see, I indeed have more stuff applied in front of the plural patc
 archive/issue_comments_033889.json:
 ```json
 {
-    "body": "I can not confirm Alexander's statement that some patch does not apply.\n\nI cleaned my patch queue, so that I only use the patches that are dependencies. Now, I have\n\n```\n$ hg qapplied\ntrac11815_format_must_preserve_embedding.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac11856_exponent_overflow.patch\ntrac4539_libplural.patch\ntrac4539_pickling.patch\ntrac4539_normal_forms.patch\ntrac4539_fix_docs.patch\n```\n\non top of sage-4.7.2.alpha3-prerelease.\n\nOne remark: It happened to me recently that I tried to qimport a patch from trac, but my university had a proxy, and for some reason it thought that the patch is cached. I therefore switched the cache off, for the computer in my office. That is where I test the patches.\n\nBut Burcin just told me that they have a proxy here as well. So, could it be that you tried to download the latest patch version, but your proxy only provided you with a cached but outdated version of the patches?\n\nThe other possibility is that I thought I have posted the patch version that I have on my computer in my office, but in fact posted an outdated version that I have on my netbook here. Testing it now.",
+    "body": "I can not confirm Alexander's statement that some patch does not apply.\n\nI cleaned my patch queue, so that I only use the patches that are dependencies. Now, I have\n\n```\n$ hg qapplied\ntrac11815_format_must_preserve_embedding.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac11856_exponent_overflow.patch\ntrac4539_libplural.patch\ntrac4539_pickling.patch\ntrac4539_normal_forms.patch\ntrac4539_fix_docs.patch\n```\non top of sage-4.7.2.alpha3-prerelease.\n\nOne remark: It happened to me recently that I tried to qimport a patch from trac, but my university had a proxy, and for some reason it thought that the patch is cached. I therefore switched the cache off, for the computer in my office. That is where I test the patches.\n\nBut Burcin just told me that they have a proxy here as well. So, could it be that you tried to download the latest patch version, but your proxy only provided you with a cached but outdated version of the patches?\n\nThe other possibility is that I thought I have posted the patch version that I have on my computer in my office, but in fact posted an outdated version that I have on my netbook here. Testing it now.",
     "created_at": "2011-09-30T08:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3061,7 +3045,6 @@ trac4539_pickling.patch
 trac4539_normal_forms.patch
 trac4539_fix_docs.patch
 ```
-
 on top of sage-4.7.2.alpha3-prerelease.
 
 One remark: It happened to me recently that I tried to qimport a patch from trac, but my university had a proxy, and for some reason it thought that the patch is cached. I therefore switched the cache off, for the computer in my office. That is where I test the patches.
@@ -3095,7 +3078,7 @@ See #11878 for quotients of g-algebras.
 archive/issue_comments_033891.json:
 ```json
 {
-    "body": "Replying to [comment:88 SimonKing]:\n> I can not confirm Alexander's statement that some patch does not apply.\nYeah, I just mixed up the order of the following patches:\n> trac4539_pickling.patch\n> trac4539_normal_forms.patch\nAlready the first didn't apply cleanly, but I overlooked. It built fine and the tests are running.",
+    "body": "Replying to [comment:88 SimonKing]:\n> I can not confirm Alexander's statement that some patch does not apply.\n\nYeah, I just mixed up the order of the following patches:\n> trac4539_pickling.patch\n> trac4539_normal_forms.patch\n\nAlready the first didn't apply cleanly, but I overlooked. It built fine and the tests are running.",
     "created_at": "2011-09-30T10:44:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3106,9 +3089,11 @@ archive/issue_comments_033891.json:
 
 Replying to [comment:88 SimonKing]:
 > I can not confirm Alexander's statement that some patch does not apply.
+
 Yeah, I just mixed up the order of the following patches:
 > trac4539_pickling.patch
 > trac4539_normal_forms.patch
+
 Already the first didn't apply cleanly, but I overlooked. It built fine and the tests are running.
 
 
@@ -3174,7 +3159,7 @@ PS: Even *if* it returns a valid picklable ring, uniqueness of parents would bre
 archive/issue_comments_033895.json:
 ```json
 {
-    "body": "Replying to [comment:92 SimonKing]:\n> PS: Even *if* it returns a valid picklable ring, uniqueness of parents would break. So, we should analyse whether `new_NRing` is used in a critical (uniqueness-breaking) way in the current patch.\n\nIt concerncs the `SCA` function and the original approach towards quotients.",
+    "body": "Replying to [comment:92 SimonKing]:\n> PS: Even *if* it returns a valid picklable ring, uniqueness of parents would break. So, we should analyse whether `new_NRing` is used in a critical (uniqueness-breaking) way in the current patch.\n\n\nIt concerncs the `SCA` function and the original approach towards quotients.",
     "created_at": "2011-09-30T12:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3185,6 +3170,7 @@ archive/issue_comments_033895.json:
 
 Replying to [comment:92 SimonKing]:
 > PS: Even *if* it returns a valid picklable ring, uniqueness of parents would break. So, we should analyse whether `new_NRing` is used in a critical (uniqueness-breaking) way in the current patch.
+
 
 It concerncs the `SCA` function and the original approach towards quotients.
 
@@ -3235,7 +3221,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_033898.json:
 ```json
 {
-    "body": "Replying to [comment:94 SimonKing]:\n> If I am not mistaken, `SCA` is a special case in Singular anyway, and it is a huge difference whether one works in an `SCA` or in an isomorphic general g-algebra quotient (Oleksandr, could you tell how the ring should be created in this case? I guess the function `SCA` in the patch does not do the right thing).\n\nSCA structure is _autodetected_ upon creation of a GR-algebra (`qring`) in runtime. Therefore one should not use an extra method for this: just create a GRing and its quotient by correct twosided ideal there.\n\nTest: if SCA implementation is used then `y*y == 0;` for each non-commutative (odd degree) variable `y`.",
+    "body": "Replying to [comment:94 SimonKing]:\n> If I am not mistaken, `SCA` is a special case in Singular anyway, and it is a huge difference whether one works in an `SCA` or in an isomorphic general g-algebra quotient (Oleksandr, could you tell how the ring should be created in this case? I guess the function `SCA` in the patch does not do the right thing).\n\n\nSCA structure is _autodetected_ upon creation of a GR-algebra (`qring`) in runtime. Therefore one should not use an extra method for this: just create a GRing and its quotient by correct twosided ideal there.\n\nTest: if SCA implementation is used then `y*y == 0;` for each non-commutative (odd degree) variable `y`.",
     "created_at": "2011-09-30T15:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3246,6 +3232,7 @@ archive/issue_comments_033898.json:
 
 Replying to [comment:94 SimonKing]:
 > If I am not mistaken, `SCA` is a special case in Singular anyway, and it is a huge difference whether one works in an `SCA` or in an isomorphic general g-algebra quotient (Oleksandr, could you tell how the ring should be created in this case? I guess the function `SCA` in the patch does not do the right thing).
+
 
 SCA structure is _autodetected_ upon creation of a GR-algebra (`qring`) in runtime. Therefore one should not use an extra method for this: just create a GRing and its quotient by correct twosided ideal there.
 
@@ -3298,7 +3285,7 @@ One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch. Since w
 archive/issue_comments_033901.json:
 ```json
 {
-    "body": "Replying to [comment:96 AlexanderDreyer]:\n> One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.\n\nIt looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.\n\n> `@`Simon: If you accept my part we would have a positive review now.\n\nThe \"big\" patch merely combines work of y'all, and I certainly give the stuff there a positive review. However, the question on #11856 should first be answered.",
+    "body": "Replying to [comment:96 AlexanderDreyer]:\n> One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.\n\n\nIt looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.\n\n> `@`Simon: If you accept my part we would have a positive review now.\n\n\nThe \"big\" patch merely combines work of y'all, and I certainly give the stuff there a positive review. However, the question on #11856 should first be answered.",
     "created_at": "2011-10-01T09:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3310,9 +3297,11 @@ archive/issue_comments_033901.json:
 Replying to [comment:96 AlexanderDreyer]:
 > One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.
 
+
 It looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.
 
 > `@`Simon: If you accept my part we would have a positive review now.
+
 
 The "big" patch merely combines work of y'all, and I certainly give the stuff there a positive review. However, the question on #11856 should first be answered.
 
@@ -3341,7 +3330,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_033903.json:
 ```json
 {
-    "body": "Replying to [comment:97 SimonKing]:\n> Replying to [comment:96 AlexanderDreyer]:\n> > One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.\n> \n> It looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.\nIndeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.",
+    "body": "Replying to [comment:97 SimonKing]:\n> Replying to [comment:96 AlexanderDreyer]:\n> > One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.\n\n> \n> It looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.\n\nIndeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.",
     "created_at": "2011-10-01T22:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3353,8 +3342,10 @@ archive/issue_comments_033903.json:
 Replying to [comment:97 SimonKing]:
 > Replying to [comment:96 AlexanderDreyer]:
 > > One doctest failed on OSX 10.5 PPC. This is fixed in the attached patch.
+
 > 
 > It looks like this error already occurs #11856 - can you verify whether the error occurs on 32-bit with #11856? Then it might be better to post your patch there.
+
 Indeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.
 
 
@@ -3364,7 +3355,7 @@ Indeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/tic
 archive/issue_comments_033904.json:
 ```json
 {
-    "body": "Replying to [comment:98 AlexanderDreyer]:\n> Indeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.\n\nOK, then [attachment:trac4539_fix_docs_32bit.patch] should better be moved to #11856 - since it only concerns doctests in the obvious way, but does not change the code, I think that your patch can be a reviewer patch for #11856, thus, preserving the positive review that Martin gave (but then add your name in the \"Reviewer\" field of #11856).\n\nIf that's done, then I'll try the stuff from here again, and then hopefully it can be turned into a positive review.",
+    "body": "Replying to [comment:98 AlexanderDreyer]:\n> Indeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.\n\n\nOK, then [attachment:trac4539_fix_docs_32bit.patch] should better be moved to #11856 - since it only concerns doctests in the obvious way, but does not change the code, I think that your patch can be a reviewer patch for #11856, thus, preserving the positive review that Martin gave (but then add your name in the \"Reviewer\" field of #11856).\n\nIf that's done, then I'll try the stuff from here again, and then hopefully it can be turned into a positive review.",
     "created_at": "2011-10-02T06:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3375,6 +3366,7 @@ archive/issue_comments_033904.json:
 
 Replying to [comment:98 AlexanderDreyer]:
 > Indeed, I already had to apply http://trac.sagemath.org/sage_trac/attachment/ticket/4539/trac4539_fix_docs_32bit.patch to #11856 on 32-bit systems.
+
 
 OK, then [attachment:trac4539_fix_docs_32bit.patch] should better be moved to #11856 - since it only concerns doctests in the obvious way, but does not change the code, I think that your patch can be a reviewer patch for #11856, thus, preserving the positive review that Martin gave (but then add your name in the "Reviewer" field of #11856).
 
@@ -3513,7 +3505,7 @@ archive/issue_comments_033911.json:
 archive/issue_comments_033912.json:
 ```json
 {
-    "body": "Replying to [comment:105 malb]:\n> `n_IsOne` was replaced by `ring.cf.nIsOne(foo)`. We didn't remove any functionality, only replaced it by calls which are more explicit about the ring. If in doubt just ask :)\n\nYep, I already found the replacement (by doing a grep for `n_IsOne` in my `.hg/patches`, when I wanted to find out where that function came from).",
+    "body": "Replying to [comment:105 malb]:\n> `n_IsOne` was replaced by `ring.cf.nIsOne(foo)`. We didn't remove any functionality, only replaced it by calls which are more explicit about the ring. If in doubt just ask :)\n\n\nYep, I already found the replacement (by doing a grep for `n_IsOne` in my `.hg/patches`, when I wanted to find out where that function came from).",
     "created_at": "2011-10-04T18:31:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3525,6 +3517,7 @@ archive/issue_comments_033912.json:
 Replying to [comment:105 malb]:
 > `n_IsOne` was replaced by `ring.cf.nIsOne(foo)`. We didn't remove any functionality, only replaced it by calls which are more explicit about the ring. If in doubt just ask :)
 
+
 Yep, I already found the replacement (by doing a grep for `n_IsOne` in my `.hg/patches`, when I wanted to find out where that function came from).
 
 
@@ -3534,7 +3527,7 @@ Yep, I already found the replacement (by doing a grep for `n_IsOne` in my `.hg/p
 archive/issue_comments_033913.json:
 ```json
 {
-    "body": "I didn't post my rebased patches yet, since I need to fix a few doctest errors.\n\nActually, the first error is a clear improvement. We have the following doctest:\n\n```\n            sage: A.<x,y,z> = FreeAlgebra(QQ, 3)\n            sage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\n            sage: H.inject_variables()\n            Defining x, y, z\n            sage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\n            sage: G = vector(I.gens()); G\n            d...: UserWarning: You are constructing a free module\n            over a noncommutative ring. Sage does not have a concept\n            of left/right and both sided modules, so be careful.\n            It's also not guaranteed that all multiplications are\n            done from the right side.\n            d...: UserWarning: You are constructing a free module\n            over a noncommutative ring. Sage does not have a concept\n            of left/right and both sided modules, so be careful.\n            It's also not guaranteed that all multiplications are\n            done from the right side.\n            (y^2, x^2, z^2 - 1)\n            sage: M = I.syzygy_module()\n```\n\n\nWith #10903 applied, one gets 9 Syzygies:\n\n```\nsage: M[0]\n(-z^2 - 8*z - 15, 0, y^2)\nsage: M[1]\n(0, -z^2 + 8*z - 15, x^2)\nsage: M[2]\n(x^2*z^2 + 8*x^2*z + 15*x^2, -y^2*z^2 + 8*y^2*z - 15*y^2, -4*x*y*z + 2*z^2 + 2*z)\nsage: M[3]\n(x^2*y*z^2 + 9*x^2*y*z - 6*x*z^3 + 20*x^2*y - 72*x*z^2 - 282*x*z - 360*x, -y^3*z^2 + 7*y^3*z - 12*y^3, 6*y*z^2)\nsage: M[4]\n(x^3*z^2 + 7*x^3*z + 12*x^3, -x*y^2*z^2 + 9*x*y^2*z - 4*y*z^3 - 20*x*y^2 + 52*y*z^2 - 224*y*z + 320*y, -6*x*z^2)\nsage: M[5]\n(x^2*y^2*z + 4*x^2*y^2 - 8*x*y*z^2 - 48*x*y*z + 12*z^3 - 64*x*y + 108*z^2 + 312*z + 288, -y^4*z + 4*y^4, 0)\nsage: M[6]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[7]\n(x^4*z + 4*x^4, -x^2*y^2*z + 4*x^2*y^2 - 4*x*y*z^2 + 32*x*y*z - 6*z^3 - 64*x*y + 66*z^2 - 240*z + 288, 0)\nsage: M[8]\n(x^3*y^2*z + 4*x^3*y^2 + 18*x^2*y*z - 36*x*z^3 + 66*x^2*y - 432*x*z^2 - 1656*x*z - 2052*x, -x*y^4*z + 4*x*y^4 - 8*y^3*z^2 + 62*y^3*z - 114*y^3, 48*y*z^2 - 36*y*z)\nsage: M[9]\nTraceback (most recent call last):\n...\nIndexError: matrix index out of range\n```\n\n\nHowever, without #10903 (and with the original patches applied), one gets what is expected in the doc tests, namely 10 Syzygies -- but two of them are identical:\n\n```\nsage: M[0]\n(-z^2 - 8*z - 15, 0, y^2)\nsage: M[1]\n(0, -z^2 + 8*z - 15, x^2)\nsage: M[2]\n(x^2*z^2 + 8*x^2*z + 15*x^2, -y^2*z^2 + 8*y^2*z - 15*y^2, -4*x*y*z + 2*z^2 + 2*z)\nsage: M[3]\n(x^2*y*z^2 + 9*x^2*y*z - 6*x*z^3 + 20*x^2*y - 72*x*z^2 - 282*x*z - 360*x, -y^3*z^2 + 7*y^3*z - 12*y^3, 6*y*z^2)\nsage: M[4]\n(x^3*z^2 + 7*x^3*z + 12*x^3, -x*y^2*z^2 + 9*x*y^2*z - 4*y*z^3 - 20*x*y^2 + 52*y*z^2 - 224*y*z + 320*y, -6*x*z^2)\nsage: M[5]\n(x^2*y^2*z + 4*x^2*y^2 - 8*x*y*z^2 - 48*x*y*z + 12*z^3 - 64*x*y + 108*z^2 + 312*z + 288, -y^4*z + 4*y^4, 0)\nsage: M[6]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[7]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[8]\n(x^4*z + 4*x^4, -x^2*y^2*z + 4*x^2*y^2 - 4*x*y*z^2 + 32*x*y*z - 6*z^3 - 64*x*y + 66*z^2 - 240*z + 288, 0)\nsage: M[9]\n(x^3*y^2*z + 4*x^3*y^2 + 18*x^2*y*z - 36*x*z^3 + 66*x^2*y - 432*x*z^2 - 1656*x*z - 2052*x, -x*y^4*z + 4*x*y^4 - 8*y^3*z^2 + 62*y^3*z - 114*y^3, 48*y*z^2 - 36*y*z)\nsage: M[7]==M[6]\nTrue\n```\n\n\nSo, the old Singular version forgot to remove a redundant Syzygy.",
+    "body": "I didn't post my rebased patches yet, since I need to fix a few doctest errors.\n\nActually, the first error is a clear improvement. We have the following doctest:\n\n```\n            sage: A.<x,y,z> = FreeAlgebra(QQ, 3)\n            sage: H = A.g_algebra({y*x:x*y-z, z*x:x*z+2*x, z*y:y*z-2*y})\n            sage: H.inject_variables()\n            Defining x, y, z\n            sage: I = H.ideal([y^2, x^2, z^2-H.one_element()],coerce=False)\n            sage: G = vector(I.gens()); G\n            d...: UserWarning: You are constructing a free module\n            over a noncommutative ring. Sage does not have a concept\n            of left/right and both sided modules, so be careful.\n            It's also not guaranteed that all multiplications are\n            done from the right side.\n            d...: UserWarning: You are constructing a free module\n            over a noncommutative ring. Sage does not have a concept\n            of left/right and both sided modules, so be careful.\n            It's also not guaranteed that all multiplications are\n            done from the right side.\n            (y^2, x^2, z^2 - 1)\n            sage: M = I.syzygy_module()\n```\n\nWith #10903 applied, one gets 9 Syzygies:\n\n```\nsage: M[0]\n(-z^2 - 8*z - 15, 0, y^2)\nsage: M[1]\n(0, -z^2 + 8*z - 15, x^2)\nsage: M[2]\n(x^2*z^2 + 8*x^2*z + 15*x^2, -y^2*z^2 + 8*y^2*z - 15*y^2, -4*x*y*z + 2*z^2 + 2*z)\nsage: M[3]\n(x^2*y*z^2 + 9*x^2*y*z - 6*x*z^3 + 20*x^2*y - 72*x*z^2 - 282*x*z - 360*x, -y^3*z^2 + 7*y^3*z - 12*y^3, 6*y*z^2)\nsage: M[4]\n(x^3*z^2 + 7*x^3*z + 12*x^3, -x*y^2*z^2 + 9*x*y^2*z - 4*y*z^3 - 20*x*y^2 + 52*y*z^2 - 224*y*z + 320*y, -6*x*z^2)\nsage: M[5]\n(x^2*y^2*z + 4*x^2*y^2 - 8*x*y*z^2 - 48*x*y*z + 12*z^3 - 64*x*y + 108*z^2 + 312*z + 288, -y^4*z + 4*y^4, 0)\nsage: M[6]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[7]\n(x^4*z + 4*x^4, -x^2*y^2*z + 4*x^2*y^2 - 4*x*y*z^2 + 32*x*y*z - 6*z^3 - 64*x*y + 66*z^2 - 240*z + 288, 0)\nsage: M[8]\n(x^3*y^2*z + 4*x^3*y^2 + 18*x^2*y*z - 36*x*z^3 + 66*x^2*y - 432*x*z^2 - 1656*x*z - 2052*x, -x*y^4*z + 4*x*y^4 - 8*y^3*z^2 + 62*y^3*z - 114*y^3, 48*y*z^2 - 36*y*z)\nsage: M[9]\nTraceback (most recent call last):\n...\nIndexError: matrix index out of range\n```\n\nHowever, without #10903 (and with the original patches applied), one gets what is expected in the doc tests, namely 10 Syzygies -- but two of them are identical:\n\n```\nsage: M[0]\n(-z^2 - 8*z - 15, 0, y^2)\nsage: M[1]\n(0, -z^2 + 8*z - 15, x^2)\nsage: M[2]\n(x^2*z^2 + 8*x^2*z + 15*x^2, -y^2*z^2 + 8*y^2*z - 15*y^2, -4*x*y*z + 2*z^2 + 2*z)\nsage: M[3]\n(x^2*y*z^2 + 9*x^2*y*z - 6*x*z^3 + 20*x^2*y - 72*x*z^2 - 282*x*z - 360*x, -y^3*z^2 + 7*y^3*z - 12*y^3, 6*y*z^2)\nsage: M[4]\n(x^3*z^2 + 7*x^3*z + 12*x^3, -x*y^2*z^2 + 9*x*y^2*z - 4*y*z^3 - 20*x*y^2 + 52*y*z^2 - 224*y*z + 320*y, -6*x*z^2)\nsage: M[5]\n(x^2*y^2*z + 4*x^2*y^2 - 8*x*y*z^2 - 48*x*y*z + 12*z^3 - 64*x*y + 108*z^2 + 312*z + 288, -y^4*z + 4*y^4, 0)\nsage: M[6]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[7]\n(2*x^3*y*z + 8*x^3*y + 9*x^2*z + 27*x^2, -2*x*y^3*z + 8*x*y^3 - 12*y^2*z^2 + 99*y^2*z - 195*y^2, -36*x*y*z + 24*z^2 + 18*z)\nsage: M[8]\n(x^4*z + 4*x^4, -x^2*y^2*z + 4*x^2*y^2 - 4*x*y*z^2 + 32*x*y*z - 6*z^3 - 64*x*y + 66*z^2 - 240*z + 288, 0)\nsage: M[9]\n(x^3*y^2*z + 4*x^3*y^2 + 18*x^2*y*z - 36*x*z^3 + 66*x^2*y - 432*x*z^2 - 1656*x*z - 2052*x, -x*y^4*z + 4*x*y^4 - 8*y^3*z^2 + 62*y^3*z - 114*y^3, 48*y*z^2 - 36*y*z)\nsage: M[7]==M[6]\nTrue\n```\n\nSo, the old Singular version forgot to remove a redundant Syzygy.",
     "created_at": "2011-10-05T08:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3568,7 +3561,6 @@ Actually, the first error is a clear improvement. We have the following doctest:
             sage: M = I.syzygy_module()
 ```
 
-
 With #10903 applied, one gets 9 Syzygies:
 
 ```
@@ -3596,7 +3588,6 @@ Traceback (most recent call last):
 IndexError: matrix index out of range
 ```
 
-
 However, without #10903 (and with the original patches applied), one gets what is expected in the doc tests, namely 10 Syzygies -- but two of them are identical:
 
 ```
@@ -3623,7 +3614,6 @@ sage: M[9]
 sage: M[7]==M[6]
 True
 ```
-
 
 So, the old Singular version forgot to remove a redundant Syzygy.
 
@@ -3788,7 +3778,7 @@ Can you just post the output of `hg qapplied`? this would simplify things for me
 archive/issue_comments_033922.json:
 ```json
 {
-    "body": "Replying to [comment:111 AlexanderDreyer]:\n> Can you just post the output of `hg qapplied`? this would simplify things for me. \n\nStarting with sage-4.7.2.alpha3 (no prerelease this time):\n\n```\n$ hg qapplied\ntrac_11339_refcount_singular_rings.patch\ntrac_11339_refcount_singular_polynomials.patch\ntrac_10903_singular-3-1-3-3.patch\ntrac_10903_singular-fixes.patch\ntrac11856_exponent_overflow.patch\ntrac11856_fix_docs_32bit.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac_11115_reviewer.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac4539_libplural_rel10903.patch\ntrac4539_pickling_rel10903.patch\ntrac4539_normal_forms_rel10903.patch\ntrac4539_fix_docs_rel10903.patch\n```\n",
+    "body": "Replying to [comment:111 AlexanderDreyer]:\n> Can you just post the output of `hg qapplied`? this would simplify things for me. \n\n\nStarting with sage-4.7.2.alpha3 (no prerelease this time):\n\n```\n$ hg qapplied\ntrac_11339_refcount_singular_rings.patch\ntrac_11339_refcount_singular_polynomials.patch\ntrac_10903_singular-3-1-3-3.patch\ntrac_10903_singular-fixes.patch\ntrac11856_exponent_overflow.patch\ntrac11856_fix_docs_32bit.patch\ntrac11115-cached_cython.patch\ntrac11115_element_with_cache.patch\ntrac11115_cached_function_pickling.patch\ntrac_11115_reviewer.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac4539_libplural_rel10903.patch\ntrac4539_pickling_rel10903.patch\ntrac4539_normal_forms_rel10903.patch\ntrac4539_fix_docs_rel10903.patch\n```",
     "created_at": "2011-10-05T09:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -3799,6 +3789,7 @@ archive/issue_comments_033922.json:
 
 Replying to [comment:111 AlexanderDreyer]:
 > Can you just post the output of `hg qapplied`? this would simplify things for me. 
+
 
 Starting with sage-4.7.2.alpha3 (no prerelease this time):
 
@@ -3822,7 +3813,6 @@ trac4539_pickling_rel10903.patch
 trac4539_normal_forms_rel10903.patch
 trac4539_fix_docs_rel10903.patch
 ```
-
 
 
 
@@ -3995,7 +3985,7 @@ Apply trac4539_libplural_rel10903.patch trac4539_pickling_rel10903.patch trac453
 archive/issue_comments_033931.json:
 ```json
 {
-    "body": "Everything is fine, but one issue: Unfortunately the docbuild contains one uncaught exception (on SuSE 11):\n\n\n```\nsphinx-build -b html -d /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/doctrees/en/reference    /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/en/reference /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference\nRunning Sphinx v1.0.4\nloading pickled environment... done\nbuilding [html]: targets for 152 source files that are out of date\nupdating environment: 1 added, 152 changed, 0 removed\nreading sources... [ 99%] sage/symbolic/expression\nException occurred:\n  File \"/p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/common/conf.py\", line 378, in skip_member\n    if (hasattr(obj, '__name__') and obj.__name__.find('.') != -1 and\nAttributeError: 'NoneType' object has no attribute 'find'\nThe full traceback has been saved in /tmp/sphinx-err-RJnoHz.log, if you want to report the issue to the developers.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nEither send bugs to the mailing list at <http://groups.google.com/group/sphinx-dev/>,\nor report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!\nBuild finished.  The built documents can be found in /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference\n```\n\n\nI suggested the reviewer patch: [attachment:trac4539_docbuild_reviewer.patch]\n\nWith that patch we are close to a positive review: I'm also running tests on OS X.",
+    "body": "Everything is fine, but one issue: Unfortunately the docbuild contains one uncaught exception (on SuSE 11):\n\n```\nsphinx-build -b html -d /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/doctrees/en/reference    /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/en/reference /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference\nRunning Sphinx v1.0.4\nloading pickled environment... done\nbuilding [html]: targets for 152 source files that are out of date\nupdating environment: 1 added, 152 changed, 0 removed\nreading sources... [ 99%] sage/symbolic/expression\nException occurred:\n  File \"/p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/common/conf.py\", line 378, in skip_member\n    if (hasattr(obj, '__name__') and obj.__name__.find('.') != -1 and\nAttributeError: 'NoneType' object has no attribute 'find'\nThe full traceback has been saved in /tmp/sphinx-err-RJnoHz.log, if you want to report the issue to the developers.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nEither send bugs to the mailing list at <http://groups.google.com/group/sphinx-dev/>,\nor report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!\nBuild finished.  The built documents can be found in /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference\n```\n\nI suggested the reviewer patch: [attachment:trac4539_docbuild_reviewer.patch]\n\nWith that patch we are close to a positive review: I'm also running tests on OS X.",
     "created_at": "2011-10-05T18:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -4005,7 +3995,6 @@ archive/issue_comments_033931.json:
 ```
 
 Everything is fine, but one issue: Unfortunately the docbuild contains one uncaught exception (on SuSE 11):
-
 
 ```
 sphinx-build -b html -d /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/doctrees/en/reference    /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/en/reference /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference
@@ -4024,7 +4013,6 @@ Either send bugs to the mailing list at <http://groups.google.com/group/sphinx-d
 or report them in the tracker at <http://bitbucket.org/birkenfeld/sphinx/issues/>. Thanks!
 Build finished.  The built documents can be found in /p/sys/Sage/share/versions/sage-4.7.2.alpha3/devel/sage/doc/output/html/en/reference
 ```
-
 
 I suggested the reviewer patch: [attachment:trac4539_docbuild_reviewer.patch]
 
@@ -4132,7 +4120,7 @@ Attachment [trac4539_libplural_rel11761.patch](tarball://root/attachments/some-u
 archive/issue_comments_033936.json:
 ```json
 {
-    "body": "It could be that we need some work here. The first patch does not apply when we start with sage-4.8.alpha0. Namely, in sage/libs/singular/function.pyx, it expects the line\n\n```\n       ring2 = None\n```\n\nbut this line has been removed. I don't know in which ticket that has happened. By consequence, a rather complicated chunk of the patch does not apply.\n\nWhat shall we do? In order to avoid premature work, it would be an option to wait until finally all the dependencies got a positive review.",
+    "body": "It could be that we need some work here. The first patch does not apply when we start with sage-4.8.alpha0. Namely, in sage/libs/singular/function.pyx, it expects the line\n\n```\n       ring2 = None\n```\nbut this line has been removed. I don't know in which ticket that has happened. By consequence, a rather complicated chunk of the patch does not apply.\n\nWhat shall we do? In order to avoid premature work, it would be an option to wait until finally all the dependencies got a positive review.",
     "created_at": "2011-11-08T15:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -4146,7 +4134,6 @@ It could be that we need some work here. The first patch does not apply when we 
 ```
        ring2 = None
 ```
-
 but this line has been removed. I don't know in which ticket that has happened. By consequence, a rather complicated chunk of the patch does not apply.
 
 What shall we do? In order to avoid premature work, it would be an option to wait until finally all the dependencies got a positive review.
@@ -4212,7 +4199,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_033940.json:
 ```json
 {
-    "body": "Replying to [comment:123 AlexanderDreyer]:\n> That line comes from http://trac.sagemath.org/sage_trac/attachment/ticket/11761/11761-cython-0.15.patch (Cython is more strict here.)\n\nYes, now I see it: #11761 is a dependency! So, sorry for the noise, and back to a positive review - which needs two steps. One...",
+    "body": "Replying to [comment:123 AlexanderDreyer]:\n> That line comes from http://trac.sagemath.org/sage_trac/attachment/ticket/11761/11761-cython-0.15.patch (Cython is more strict here.)\n\n\nYes, now I see it: #11761 is a dependency! So, sorry for the noise, and back to a positive review - which needs two steps. One...",
     "created_at": "2011-11-08T23:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4539",
     "type": "issue_comment",
@@ -4223,6 +4210,7 @@ archive/issue_comments_033940.json:
 
 Replying to [comment:123 AlexanderDreyer]:
 > That line comes from http://trac.sagemath.org/sage_trac/attachment/ticket/11761/11761-cython-0.15.patch (Cython is more strict here.)
+
 
 Yes, now I see it: #11761 is a dependency! So, sorry for the noise, and back to a positive review - which needs two steps. One...
 

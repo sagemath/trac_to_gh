@@ -3,7 +3,7 @@
 archive/issues_000662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with \n\n\n```\n/usr/lib/iceweasel/firefox-bin: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n```\n\n\nwhen logging in.\n\nIf I start Iceweasel again afterwards, I can log in and everything works. I suspect that this behaviour is caused by the SAGE environment variables (e.g. `LD_PATH`). A fix would be to start the browser with a clean (as in pre-SAGE) environment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/662\n\n",
+    "body": "Assignee: @williamstein\n\nIf I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with \n\n```\n/usr/lib/iceweasel/firefox-bin: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64\n```\n\nwhen logging in.\n\nIf I start Iceweasel again afterwards, I can log in and everything works. I suspect that this behaviour is caused by the SAGE environment variables (e.g. `LD_PATH`). A fix would be to start the browser with a clean (as in pre-SAGE) environment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/662\n\n",
     "created_at": "2007-09-15T19:08:50Z",
     "labels": [
         "component: user interface",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 If I call `sage -notebook` and Firefox/Iceweasel comes up automatically, it crashes on me with 
 
-
 ```
 /usr/lib/iceweasel/firefox-bin: symbol lookup error: /usr/lib/libxml2.so.2: undefined symbol: gzopen64
 ```
-
 
 when logging in.
 

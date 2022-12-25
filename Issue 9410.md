@@ -3,7 +3,7 @@
 archive/issues_009410.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein cturner beankao\n\nKeywords: local_data\n\nIn 4.4.4 the following code produces a ValueError:\n\n\n```\nsage: K.<a> = NumberField(x^2+1)\nsage: L.<b> = K.extension(x^2-17)\nsage: E = EllipticCurve(L, [1,1])\nsage: E.local_data()\n```\n\n\nAs a workaround, one can use absolute_field:\n\n\n```\nL1.<c> = L.absolute_field()\nE1 = EllipticCurve(L1, [1,1])\nE1.local_data()\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9410\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein cturner beankao\n\nKeywords: local_data\n\nIn 4.4.4 the following code produces a ValueError:\n\n```\nsage: K.<a> = NumberField(x^2+1)\nsage: L.<b> = K.extension(x^2-17)\nsage: E = EllipticCurve(L, [1,1])\nsage: E.local_data()\n```\n\nAs a workaround, one can use absolute_field:\n\n```\nL1.<c> = L.absolute_field()\nE1 = EllipticCurve(L1, [1,1])\nE1.local_data()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9410\n\n",
     "created_at": "2010-07-02T17:40:15Z",
     "labels": [
         "component: elliptic curves",
@@ -24,7 +24,6 @@ Keywords: local_data
 
 In 4.4.4 the following code produces a ValueError:
 
-
 ```
 sage: K.<a> = NumberField(x^2+1)
 sage: L.<b> = K.extension(x^2-17)
@@ -32,16 +31,13 @@ sage: E = EllipticCurve(L, [1,1])
 sage: E.local_data()
 ```
 
-
 As a workaround, one can use absolute_field:
-
 
 ```
 L1.<c> = L.absolute_field()
 E1 = EllipticCurve(L1, [1,1])
 E1.local_data()
 ```
-
 
 
 

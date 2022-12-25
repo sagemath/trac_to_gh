@@ -3,7 +3,7 @@
 archive/issues_001268.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
+    "body": "Assignee: @williamstein\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
     "created_at": "2007-11-25T15:26:58Z",
     "labels": [
         "component: packages: standard",
@@ -30,7 +30,6 @@ By the way, if you're going to test it, you can't just install the new spkg, bec
 touch devel/sage/sage/rings/mpfi.pxi
 sage -b
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1268
 
@@ -61,7 +60,7 @@ As mentioned above, simply installing the new spkg isn't enough; we need to ensu
 archive/issue_comments_007929.json:
 ```json
 {
-    "body": "\n```\n(cd .libs && rm -f libmpfi.0 && ln -s libmpfi.0.0.0 libmpfi.0)\n(cd .libs && rm -f libmpfi && ln -s libmpfi.0.0.0 libmpfi)\nar cru .libs/libmpfi.a  mpfi.o mpfi_io.o mpfi_trigo.o~ranlib .libs/libmpfi.a\nar: mpfi_trigo.o~ranlib: No such file or directory\nmake[1]: *** [libmpfi.la] Error 1\nmake: *** [install-recursive] Error 1\nAn error occurred while building mpfi.\n\nreal    0m19.460s\nuser    0m4.463s\nsys     0m8.673s\nsage: An error occurred while installing mpfi-1.3.4-cvs20071125\n```\n\n\nOS X 10.4, Intel (core duo)",
+    "body": "```\n(cd .libs && rm -f libmpfi.0 && ln -s libmpfi.0.0.0 libmpfi.0)\n(cd .libs && rm -f libmpfi && ln -s libmpfi.0.0.0 libmpfi)\nar cru .libs/libmpfi.a  mpfi.o mpfi_io.o mpfi_trigo.o~ranlib .libs/libmpfi.a\nar: mpfi_trigo.o~ranlib: No such file or directory\nmake[1]: *** [libmpfi.la] Error 1\nmake: *** [install-recursive] Error 1\nAn error occurred while building mpfi.\n\nreal    0m19.460s\nuser    0m4.463s\nsys     0m8.673s\nsage: An error occurred while installing mpfi-1.3.4-cvs20071125\n```\n\nOS X 10.4, Intel (core duo)",
     "created_at": "2007-11-29T22:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1268",
     "type": "issue_comment",
@@ -69,7 +68,6 @@ archive/issue_comments_007929.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
 (cd .libs && rm -f libmpfi.0 && ln -s libmpfi.0.0.0 libmpfi.0)
@@ -85,7 +83,6 @@ user    0m4.463s
 sys     0m8.673s
 sage: An error occurred while installing mpfi-1.3.4-cvs20071125
 ```
-
 
 OS X 10.4, Intel (core duo)
 

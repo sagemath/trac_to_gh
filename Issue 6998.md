@@ -3,7 +3,7 @@
 archive/issues_006998.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: R.<x> = QQ[[]]\nsage: (x^10/2).sqrt()\nTraceback (click to the left for traceback)\n...\nValueError: power series does not have a square root since it has odd\nvaluation.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6998\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: R.<x> = QQ[[]]\nsage: (x^10/2).sqrt()\nTraceback (click to the left for traceback)\n...\nValueError: power series does not have a square root since it has odd\nvaluation.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6998\n\n",
     "created_at": "2009-09-22T23:19:05Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_006998.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: R.<x> = QQ[[]]
 sage: (x^10/2).sqrt()
@@ -28,7 +27,6 @@ Traceback (click to the left for traceback)
 ValueError: power series does not have a square root since it has odd
 valuation.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6998
 

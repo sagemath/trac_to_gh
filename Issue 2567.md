@@ -3,7 +3,7 @@
 archive/issues_002567.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @kiwifb\n\n\n```\n> >  CODE:\n>\n> >  s = pi.str(3000000*log(10,2))\n> >  o = open('/Users/ericahls/Desktop/file.txt','w')\n> >  o.write(str(s))\n> >  o.close()\n>\n> >  --- Trying to get out to the farthest decimal point of PI I can.\n>\n> >  Error message:\n>\n> >  Traceback (most recent call last):    o.write(str(s))\n> >   File \"/Applications/sage/local/lib/python2.5/site-packages/sage/\n> >  functions/functions.py\", line 140, in str\n> >     raise ValueError, \"Number of bits must be at most 2^23.\"\n> >  ValueError: Number of bits must be at most 2^23.\n>\n> >  ----If i Put 2000000 instead 0f 3000000 the equation works.  much over\n> >  2 million the equation breaks dwon.\n>\n> I think that 2^23 is a bound in mpfr, and Sage uses mpfr to\n> compute digits of pi.  I don't know if one can compute more than\n> about 2^23 digits using mpfr.\n>\n> William\n\n\nYes we can. The issue was that MPFR used the stack instead of the heap\nfor certain operations [even when told not to use alloca] and would\nsmash it therefore with large number of digits. That has been fixed in\nMPFR 2.3.1 (which we include) and all we need to do is to raise or\nremove the limit in our code and do some testing. Care to open a\nticket?\n\n -- Mabshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2567\n\n",
+    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @kiwifb\n\n```\n> >  CODE:\n>\n> >  s = pi.str(3000000*log(10,2))\n> >  o = open('/Users/ericahls/Desktop/file.txt','w')\n> >  o.write(str(s))\n> >  o.close()\n>\n> >  --- Trying to get out to the farthest decimal point of PI I can.\n>\n> >  Error message:\n>\n> >  Traceback (most recent call last):    o.write(str(s))\n> >   File \"/Applications/sage/local/lib/python2.5/site-packages/sage/\n> >  functions/functions.py\", line 140, in str\n> >     raise ValueError, \"Number of bits must be at most 2^23.\"\n> >  ValueError: Number of bits must be at most 2^23.\n>\n> >  ----If i Put 2000000 instead 0f 3000000 the equation works.  much over\n> >  2 million the equation breaks dwon.\n>\n> I think that 2^23 is a bound in mpfr, and Sage uses mpfr to\n> compute digits of pi.  I don't know if one can compute more than\n> about 2^23 digits using mpfr.\n>\n> William\n\n\nYes we can. The issue was that MPFR used the stack instead of the heap\nfor certain operations [even when told not to use alloca] and would\nsmash it therefore with large number of digits. That has been fixed in\nMPFR 2.3.1 (which we include) and all we need to do is to raise or\nremove the limit in our code and do some testing. Care to open a\nticket?\n\n -- Mabshoff\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2567\n\n",
     "created_at": "2008-03-17T07:03:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_002567.json:
 Assignee: somebody
 
 CC:  @zimmermann6 @kiwifb
-
 
 ```
 > >  CODE:
@@ -58,7 +57,6 @@ ticket?
 
  -- Mabshoff
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2567
 
@@ -135,7 +133,7 @@ Michael
 archive/issue_comments_017463.json:
 ```json
 {
-    "body": "> The solution to this ticket might be to import MPFR_PREC_MAX from mpfr.h\n\nright. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63</sup>-1 on a 64-bit machine.",
+    "body": "> The solution to this ticket might be to import MPFR_PREC_MAX from mpfr.h\n\n\nright. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63</sup>-1 on a 64-bit machine.",
     "created_at": "2009-02-06T06:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -146,6 +144,7 @@ archive/issue_comments_017463.json:
 
 > The solution to this ticket might be to import MPFR_PREC_MAX from mpfr.h
 
+
 right. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63</sup>-1 on a 64-bit machine.
 
 
@@ -155,7 +154,7 @@ right. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63<
 archive/issue_comments_017464.json:
 ```json
 {
-    "body": "> You could use the pi function in mpmath; as far as I know, it is limited only by available memory. I just verified that computing 100 million digits works on a 32-bit system. The last time someone compared, it was also about three times faster than MPFR (but probably less memory efficient).\n\nI am curious. Can you give real timings? Here is what I get on sage.math:\n\n```\nzimmerma@sage:~/mpfr-2.4.0/tests$ pwd\n/home/zimmerma/mpfr-2.4.0/tests\nzimmerma@sage:~/mpfr-2.4.0/tests$ time ./tconst_pi 332192809 0 0\n\nreal    42m21.420s\nuser    41m55.500s\nsys     0m25.910s\n```\n\nThis is without using the new FFT code we designed with Gaudry and Kruppa, which should give a\ntwofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am\nreally impressed!",
+    "body": "> You could use the pi function in mpmath; as far as I know, it is limited only by available memory. I just verified that computing 100 million digits works on a 32-bit system. The last time someone compared, it was also about three times faster than MPFR (but probably less memory efficient).\n\n\nI am curious. Can you give real timings? Here is what I get on sage.math:\n\n```\nzimmerma@sage:~/mpfr-2.4.0/tests$ pwd\n/home/zimmerma/mpfr-2.4.0/tests\nzimmerma@sage:~/mpfr-2.4.0/tests$ time ./tconst_pi 332192809 0 0\n\nreal    42m21.420s\nuser    41m55.500s\nsys     0m25.910s\n```\nThis is without using the new FFT code we designed with Gaudry and Kruppa, which should give a\ntwofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am\nreally impressed!",
     "created_at": "2009-02-06T07:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -165,6 +164,7 @@ archive/issue_comments_017464.json:
 ```
 
 > You could use the pi function in mpmath; as far as I know, it is limited only by available memory. I just verified that computing 100 million digits works on a 32-bit system. The last time someone compared, it was also about three times faster than MPFR (but probably less memory efficient).
+
 
 I am curious. Can you give real timings? Here is what I get on sage.math:
 
@@ -177,7 +177,6 @@ real    42m21.420s
 user    41m55.500s
 sys     0m25.910s
 ```
-
 This is without using the new FFT code we designed with Gaudry and Kruppa, which should give a
 twofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am
 really impressed!
@@ -189,7 +188,7 @@ really impressed!
 archive/issue_comments_017465.json:
 ```json
 {
-    "body": "In mpmath on an Athlon 3700+ 2.21 GHz, 1 GB RAM,\n\n10**6 digits took 5.96 seconds (4.77 calc, 1.19 convert)\n\n10**7 digits took 109.45 seconds (82.16 calc, 27.28 convert)\n\n10**8 digits took 2184.68 seconds (1634.65 calc, 550.02 convert)\n\nI can't compare with MPFR on the same computer at the moment, due to network problems. (With an old version of sage, 3.0.2, %time str(pi.n(10**6*log(10.,2))) takes 43.06 s, but I don't trust that number).\n\nThis is the result reported by Ondrej a few months ago:\n\n```\nE.g. in sympy+gmpy:\n\nIn [3]: time a = pi.evalf(10**6)\nCPU times: user 5.13 s, sys: 0.04 s, total: 5.17 s\nWall time: 5.19 s\n\nSage 3.1.1:\n\nsage: time a = pi.n(digits=10**6)\nCPU times: user 14.06 s, sys: 0.06 s, total: 14.12 s\nWall time: 14.34 s \n```\n\n\n> This is without using the new FFT code we designed with Gaudry and Kruppa, which should give a twofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am really impressed!\n\nMpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.",
+    "body": "In mpmath on an Athlon 3700+ 2.21 GHz, 1 GB RAM,\n\n10**6 digits took 5.96 seconds (4.77 calc, 1.19 convert)\n\n10**7 digits took 109.45 seconds (82.16 calc, 27.28 convert)\n\n10**8 digits took 2184.68 seconds (1634.65 calc, 550.02 convert)\n\nI can't compare with MPFR on the same computer at the moment, due to network problems. (With an old version of sage, 3.0.2, %time str(pi.n(10**6*log(10.,2))) takes 43.06 s, but I don't trust that number).\n\nThis is the result reported by Ondrej a few months ago:\n\n```\nE.g. in sympy+gmpy:\n\nIn [3]: time a = pi.evalf(10**6)\nCPU times: user 5.13 s, sys: 0.04 s, total: 5.17 s\nWall time: 5.19 s\n\nSage 3.1.1:\n\nsage: time a = pi.n(digits=10**6)\nCPU times: user 14.06 s, sys: 0.06 s, total: 14.12 s\nWall time: 14.34 s \n```\n\n> This is without using the new FFT code we designed with Gaudry and Kruppa, which should give a twofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am really impressed!\n\n\nMpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.",
     "created_at": "2009-02-06T09:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -224,8 +223,8 @@ CPU times: user 14.06 s, sys: 0.06 s, total: 14.12 s
 Wall time: 14.34 s 
 ```
 
-
 > This is without using the new FFT code we designed with Gaudry and Kruppa, which should give a twofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am really impressed!
+
 
 Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.
 
@@ -260,7 +259,7 @@ Michael
 archive/issue_comments_017467.json:
 ```json
 {
-    "body": "> Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.\n\nyes in a previous version MPFR did use the Chudnovsky series, but it only gives a fixed number of terms per iteration, whereas the current AGM-based code doubles the accuracy at each iteration, thus is asymptotically better. Also when the division in GMP is really O(M(n)) the current MPFR code should be much faster. However we should use the Chudnovsky series for small precision and the AGM for large precision.",
+    "body": "> Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.\n\n\nyes in a previous version MPFR did use the Chudnovsky series, but it only gives a fixed number of terms per iteration, whereas the current AGM-based code doubles the accuracy at each iteration, thus is asymptotically better. Also when the division in GMP is really O(M(n)) the current MPFR code should be much faster. However we should use the Chudnovsky series for small precision and the AGM for large precision.",
     "created_at": "2009-02-06T10:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -270,6 +269,7 @@ archive/issue_comments_017467.json:
 ```
 
 > Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.
+
 
 yes in a previous version MPFR did use the Chudnovsky series, but it only gives a fixed number of terms per iteration, whereas the current AGM-based code doubles the accuracy at each iteration, thus is asymptotically better. Also when the division in GMP is really O(M(n)) the current MPFR code should be much faster. However we should use the Chudnovsky series for small precision and the AGM for large precision.
 
@@ -352,7 +352,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_017472.json:
 ```json
 {
-    "body": "> I've attached a patch which removes our hard coded value. \n\nMike, I guess this has to be rebased due to #8157. Or #8157 should be undone since your patch is\nbetter (in particular on 64-bit machines we should be able to compute with more that 2<sup>31</sup> bits).\n\nPaul",
+    "body": "> I've attached a patch which removes our hard coded value. \n\n\nMike, I guess this has to be rebased due to #8157. Or #8157 should be undone since your patch is\nbetter (in particular on 64-bit machines we should be able to compute with more that 2<sup>31</sup> bits).\n\nPaul",
     "created_at": "2010-03-05T19:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -362,6 +362,7 @@ archive/issue_comments_017472.json:
 ```
 
 > I've attached a patch which removes our hard coded value. 
+
 
 Mike, I guess this has to be rebased due to #8157. Or #8157 should be undone since your patch is
 better (in particular on 64-bit machines we should be able to compute with more that 2<sup>31</sup> bits).
@@ -395,7 +396,7 @@ The warning in the comment seems not to apply now.
 archive/issue_comments_017474.json:
 ```json
 {
-    "body": "Mike,\n\n> The warning in the comment seems not to apply now. \n\nwhich warning do you mean?",
+    "body": "Mike,\n\n> The warning in the comment seems not to apply now. \n\n\nwhich warning do you mean?",
     "created_at": "2010-03-05T20:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -407,6 +408,7 @@ archive/issue_comments_017474.json:
 Mike,
 
 > The warning in the comment seems not to apply now. 
+
 
 which warning do you mean?
 
@@ -489,7 +491,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_017479.json:
 ```json
 {
-    "body": "while trying to review that ticket, I get with the input in the description:\n\n```\nsage: s = pi.str(3000000*log(10,2))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/localdisk/tmp/sage-4.4.4/<ipython console> in <module>()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'str'\n```\n\nIs that normal?\n\nPaul",
+    "body": "while trying to review that ticket, I get with the input in the description:\n\n```\nsage: s = pi.str(3000000*log(10,2))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/localdisk/tmp/sage-4.4.4/<ipython console> in <module>()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'str'\n```\nIs that normal?\n\nPaul",
     "created_at": "2010-07-11T16:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -515,7 +517,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'str'
 ```
-
 Is that normal?
 
 Paul
@@ -527,7 +528,7 @@ Paul
 archive/issue_comments_017480.json:
 ```json
 {
-    "body": "Did you mean\n\n\n```\nsage: s = pi.n(digits=3000000*log(10,2))\n```\n\n?\n\nExpression objects don't have a `str` method.",
+    "body": "Did you mean\n\n```\nsage: s = pi.n(digits=3000000*log(10,2))\n```\n?\n\nExpression objects don't have a `str` method.",
     "created_at": "2010-07-11T17:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -538,11 +539,9 @@ archive/issue_comments_017480.json:
 
 Did you mean
 
-
 ```
 sage: s = pi.n(digits=3000000*log(10,2))
 ```
-
 ?
 
 Expression objects don't have a `str` method.
@@ -554,7 +553,7 @@ Expression objects don't have a `str` method.
 archive/issue_comments_017481.json:
 ```json
 {
-    "body": "Replying to [comment:17 mhansen]:\n> Did you mean\n> \n> {{{\n> sage: s = pi.n(digits=3000000*log(10,2))\n> }}}\n> ?\n\nno, I just copy-pasted the example in the description above.\n\nPaul",
+    "body": "Replying to [comment:17 mhansen]:\n> Did you mean\n> \n> \n> ```\n> sage: s = pi.n(digits=3000000*log(10,2))\n> ```\n> ?\n\n\nno, I just copy-pasted the example in the description above.\n\nPaul",
     "created_at": "2010-07-11T18:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -566,10 +565,12 @@ archive/issue_comments_017481.json:
 Replying to [comment:17 mhansen]:
 > Did you mean
 > 
-> {{{
+> 
+> ```
 > sage: s = pi.n(digits=3000000*log(10,2))
-> }}}
+> ```
 > ?
+
 
 no, I just copy-pasted the example in the description above.
 
@@ -600,7 +601,7 @@ I'm not sure what pi was defined to be in that example, and I was unable to find
 archive/issue_comments_017483.json:
 ```json
 {
-    "body": "Replying to [comment:19 mhansen]:\n> I'm not sure what pi was defined to be in that example, and I was unable to find it in the logs.  I could try tracking down an old Sage install to possibly find out.\n\nmaybe William remembers, since he reported that ticket.\n\nPaul",
+    "body": "Replying to [comment:19 mhansen]:\n> I'm not sure what pi was defined to be in that example, and I was unable to find it in the logs.  I could try tracking down an old Sage install to possibly find out.\n\n\nmaybe William remembers, since he reported that ticket.\n\nPaul",
     "created_at": "2010-07-18T08:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -611,6 +612,7 @@ archive/issue_comments_017483.json:
 
 Replying to [comment:19 mhansen]:
 > I'm not sure what pi was defined to be in that example, and I was unable to find it in the logs.  I could try tracking down an old Sage install to possibly find out.
+
 
 maybe William remembers, since he reported that ticket.
 
@@ -659,7 +661,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_017486.json:
 ```json
 {
-    "body": "Mike, why do you import sys at line 186? Also, please could you add a short test on 64-bit\ncomputers? For example:\n\n```\nsage: R = RealField(2^31)\nsage: RR(R(2.0)) == RR(2.0)\nTrue\n```\n\nPaul",
+    "body": "Mike, why do you import sys at line 186? Also, please could you add a short test on 64-bit\ncomputers? For example:\n\n```\nsage: R = RealField(2^31)\nsage: RR(R(2.0)) == RR(2.0)\nTrue\n```\nPaul",
     "created_at": "2011-12-18T15:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -676,7 +678,6 @@ sage: R = RealField(2^31)
 sage: RR(R(2.0)) == RR(2.0)
 True
 ```
-
 Paul
 
 
@@ -758,7 +759,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_017491.json:
 ```json
 {
-    "body": "Mike, there is a test that fails:\n\n```\n[zimmerma@coing sage]$ sage -t  devel/sage-2567/sage/misc/explain_pickle.py\nsage -t  \"devel/sage-2567/sage/misc/explain_pickle.py\"      \n**********************************************************************\nFile \"/usr/local/sage-4.7.2/sage/devel/sage-2567/sage/misc/explain_pickle.py\", line 210:\n    sage: explain_pickle(dumps(RR(pi)), in_current_sage=True)\nExpected:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(53r, False, 'RNDN'), '3.4gvml245kc0@0', 32r)\nGot:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(long(53), False, 'RNDN'), '3.4gvml245kc0@0', 32r)\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_1\n```\n\nPlease could you have a look?\n\nPaul",
+    "body": "Mike, there is a test that fails:\n\n```\n[zimmerma@coing sage]$ sage -t  devel/sage-2567/sage/misc/explain_pickle.py\nsage -t  \"devel/sage-2567/sage/misc/explain_pickle.py\"      \n**********************************************************************\nFile \"/usr/local/sage-4.7.2/sage/devel/sage-2567/sage/misc/explain_pickle.py\", line 210:\n    sage: explain_pickle(dumps(RR(pi)), in_current_sage=True)\nExpected:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(53r, False, 'RNDN'), '3.4gvml245kc0@0', 32r)\nGot:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(long(53), False, 'RNDN'), '3.4gvml245kc0@0', 32r)\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_1\n```\nPlease could you have a look?\n\nPaul",
     "created_at": "2011-12-18T19:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -787,7 +788,6 @@ Got:
 1 items had failures:
    1 of  14 in __main__.example_1
 ```
-
 Please could you have a look?
 
 Paul
@@ -855,7 +855,7 @@ Paul
 archive/issue_comments_017495.json:
 ```json
 {
-    "body": "one item fails on a 32-bit machine (with Sage 4.7.2):\n\n```\nsage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"              \n**********************************************************************\nFile \"/localdisk/tmp/sage-4.7.2/devel/sage/sage/rings/real_mpfr.pyx\", line 196:\n    sage: R = RealField(2^31); R\nExpected:\n    Traceback (most recent call last):                     \n    ...                                                    \n    OverflowError: ... too large to convert to int         \nGot:\n    Traceback (most recent call last):\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        R = RealField(Integer(2)**Integer(31)); R###line 196:\n    sage: R = RealField(2^31); R\n      File \"real_mpfr.pyx\", line 280, in sage.rings.real_mpfr.RealField (sage/rings/real_mpfr.c:3802)\n      File \"real_mpfr.pyx\", line 299, in sage.rings.real_mpfr.RealField_class.__init__ (sage/rings/real_mpfr.c:4025)\n    ValueError: prec (=2147483648) must be >= 2 and <= 2147483647.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /users/caramel/zimmerma/.sage//tmp/real_mpfr_5754.py\n         [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"\n```\n\nPaul",
+    "body": "one item fails on a 32-bit machine (with Sage 4.7.2):\n\n```\nsage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"              \n**********************************************************************\nFile \"/localdisk/tmp/sage-4.7.2/devel/sage/sage/rings/real_mpfr.pyx\", line 196:\n    sage: R = RealField(2^31); R\nExpected:\n    Traceback (most recent call last):                     \n    ...                                                    \n    OverflowError: ... too large to convert to int         \nGot:\n    Traceback (most recent call last):\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        R = RealField(Integer(2)**Integer(31)); R###line 196:\n    sage: R = RealField(2^31); R\n      File \"real_mpfr.pyx\", line 280, in sage.rings.real_mpfr.RealField (sage/rings/real_mpfr.c:3802)\n      File \"real_mpfr.pyx\", line 299, in sage.rings.real_mpfr.RealField_class.__init__ (sage/rings/real_mpfr.c:4025)\n    ValueError: prec (=2147483648) must be >= 2 and <= 2147483647.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /users/caramel/zimmerma/.sage//tmp/real_mpfr_5754.py\n         [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"\n```\nPaul",
     "created_at": "2011-12-20T08:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
@@ -902,7 +902,6 @@ The following tests failed:
 
         sage -t  "devel/sage/sage/rings/real_mpfr.pyx"
 ```
-
 Paul
 
 

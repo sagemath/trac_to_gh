@@ -92,7 +92,7 @@ Resolution: duplicate
 archive/issue_comments_000606.json:
 ```json
 {
-    "body": "This is now fixed.  I fixed it by creating the script below and calling\nit from the sage_setup() section of sage-sage:\n\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file) or open(location_file).read() != SAGE_ROOT:\n        open(location_file,'w').write(SAGE_ROOT)\n        return True\n    return False\n\ndef update_hardcoded_files(path):\n    # The only known files with hard coded paths.\n    if os.path.isdir(path):\n        for X in os.listdir(path):\n            update_hardcoded_files('%s/%s'%(path,X))\n    else:\n        P = path[-4:]\n        if P == '.pyo' or P == '.pyc':\n            try:\n                os.unlink(path)\n            except OSError, msg:\n                print msg\n\nif __name__ ==  '__main__':\n    # Check if SAGE has moved, and if so delete all .pyo and .pyc files\n    # in the python libs directory, so they are rebuilt. \n    if install_moved():\n        print \"The SAGE install tree may have moved.\"\n        print \"Regenerating files that hardcode the install PATH (please wait a few seconds)...\"\n        update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')\n```\n",
+    "body": "This is now fixed.  I fixed it by creating the script below and calling\nit from the sage_setup() section of sage-sage:\n\n```/usr/bin/env sage.bin\n\nimport os\n\nSAGE_ROOT = os.environ['SAGE_ROOT']\n\nlocation_file = '%s/local/lib/sage-current-location.txt'%SAGE_ROOT\n\ndef install_moved():\n    if not os.path.exists(location_file) or open(location_file).read() != SAGE_ROOT:\n        open(location_file,'w').write(SAGE_ROOT)\n        return True\n    return False\n\ndef update_hardcoded_files(path):\n    # The only known files with hard coded paths.\n    if os.path.isdir(path):\n        for X in os.listdir(path):\n            update_hardcoded_files('%s/%s'%(path,X))\n    else:\n        P = path[-4:]\n        if P == '.pyo' or P == '.pyc':\n            try:\n                os.unlink(path)\n            except OSError, msg:\n                print msg\n\nif __name__ ==  '__main__':\n    # Check if SAGE has moved, and if so delete all .pyo and .pyc files\n    # in the python libs directory, so they are rebuilt. \n    if install_moved():\n        print \"The SAGE install tree may have moved.\"\n        print \"Regenerating files that hardcode the install PATH (please wait a few seconds)...\"\n        update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')\n```",
     "created_at": "2006-10-15T17:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/129",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ archive/issue_comments_000606.json:
 
 This is now fixed.  I fixed it by creating the script below and calling
 it from the sage_setup() section of sage-sage:
-
 
 ```/usr/bin/env sage.bin
 
@@ -140,4 +139,3 @@ if __name__ ==  '__main__':
         print "Regenerating files that hardcode the install PATH (please wait a few seconds)..."
         update_hardcoded_files(SAGE_ROOT + '/local/lib/python/')
 ```
-

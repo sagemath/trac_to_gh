@@ -3,7 +3,7 @@
 archive/issues_002324.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nBoth of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).\n\n\n```\nsage: QQ(RR(0.0/0.0))\n/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n\n\n```\nsage: QQ(RR(1.0/0.0))\n... infinite loop?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2324\n\n",
+    "body": "Assignee: somebody\n\nBoth of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).\n\n```\nsage: QQ(RR(0.0/0.0))\n/home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n```\nsage: QQ(RR(1.0/0.0))\n... infinite loop?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2324\n\n",
     "created_at": "2008-02-26T20:27:06Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,19 +20,15 @@ Assignee: somebody
 
 Both of these should raise an exception immediately.  Instead, the former crashes, and the latter takes a long time to do something (I haven't tracked down what yet).
 
-
 ```
 sage: QQ(RR(0.0/0.0))
 /home/cwitty/sage/local/bin/sage-sage: line 212:  5344 Segmentation fault      sage-ipython -wthread -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
 
-
-
 ```
 sage: QQ(RR(1.0/0.0))
 ... infinite loop?
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2324

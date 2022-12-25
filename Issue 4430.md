@@ -103,7 +103,7 @@ Resolution: invalid
 archive/issue_comments_032493.json:
 ```json
 {
-    "body": "I'm closing this, since we now start a worksheet when it's first served.  From `twist.py`, around line #1514:\n\n```python\nclass Worksheet(WorksheetResource, resource.Resource):\n    addSlash = True\n\n    def render(self, ctx):\n        self.worksheet.sage()\n        s = notebook.html(worksheet_filename = self.name,  username=self.username)\n        return HTMLResponse(stream=s)\n```\n\nI've also confirmed this with a print statement in `Worksheet.sage`.\n\nBy the way, the patch here appears to be for a different ticket.",
+    "body": "I'm closing this, since we now start a worksheet when it's first served.  From `twist.py`, around line #1514:\n\n```python\nclass Worksheet(WorksheetResource, resource.Resource):\n    addSlash = True\n\n    def render(self, ctx):\n        self.worksheet.sage()\n        s = notebook.html(worksheet_filename = self.name,  username=self.username)\n        return HTMLResponse(stream=s)\n```\nI've also confirmed this with a print statement in `Worksheet.sage`.\n\nBy the way, the patch here appears to be for a different ticket.",
     "created_at": "2010-01-25T16:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4430",
     "type": "issue_comment",
@@ -123,7 +123,6 @@ class Worksheet(WorksheetResource, resource.Resource):
         s = notebook.html(worksheet_filename = self.name,  username=self.username)
         return HTMLResponse(stream=s)
 ```
-
 I've also confirmed this with a print statement in `Worksheet.sage`.
 
 By the way, the patch here appears to be for a different ticket.

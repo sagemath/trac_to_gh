@@ -3,7 +3,7 @@
 archive/issues_009434.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri\n\nIn install.log, we often see:\n\n\n```\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\nsage_scripts-4.5.alpha3/.hg/store/data/sage-banner.i\nsage_scripts-4.5.alpha3/sage-banner\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ \n```\n\n\nI think this is probably due to some code in sage-sage\n\n\n```\nif [ \"$1\" = '-v' -o \"$1\" = '-version' -o \"$1\" = '--version' ]; then\n    cat \"$SAGE_LOCAL/bin/sage-banner\" | grep -i \"version\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n    exit $?\nfi\n```\n\n\nThis will obviously fail if sage-banner does not exist. \n\nAlso\n* There is an useless use of 'cat'. Perhaps the author was hoping to get a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) (Well worth a read - it's both funny and educational.) \n* There is an an unnecessary use of double-quotes around 'version'. \n\nThe following will save a few bytes of disk space and a few CPU cycles, as it will invoke one less process. \n\n\n```\n    grep -i version \"$SAGE_LOCAL/bin/sage-banner\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\n\n\nMore importantly, we should check that sage-banner exists before doing this, so it does not produce potentially confusing error messages. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9434\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri\n\nIn install.log, we often see:\n\n```\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\ngrep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner\nsage_scripts-4.5.alpha3/.hg/store/data/sage-banner.i\nsage_scripts-4.5.alpha3/sage-banner\ndrkirkby@hawk:~/f/sage-4.5.alpha3$ \n```\n\nI think this is probably due to some code in sage-sage\n\n```\nif [ \"$1\" = '-v' -o \"$1\" = '-version' -o \"$1\" = '--version' ]; then\n    cat \"$SAGE_LOCAL/bin/sage-banner\" | grep -i \"version\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n    exit $?\nfi\n```\n\nThis will obviously fail if sage-banner does not exist. \n\nAlso\n* There is an useless use of 'cat'. Perhaps the author was hoping to get a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) (Well worth a read - it's both funny and educational.) \n* There is an an unnecessary use of double-quotes around 'version'. \n\nThe following will save a few bytes of disk space and a few CPU cycles, as it will invoke one less process. \n\n```\n    grep -i version \"$SAGE_LOCAL/bin/sage-banner\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\n\nMore importantly, we should check that sage-banner exists before doing this, so it does not produce potentially confusing error messages. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9434\n\n",
     "created_at": "2010-07-06T06:50:04Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ CC:  @jhpalmieri
 
 In install.log, we often see:
 
-
 ```
 drkirkby@hawk:~/f/sage-4.5.alpha3$ grep sage-banner install.log
 grep: can't open /export/home/drkirkby/f/sage-4.5.alpha3/local/bin/sage-banner
@@ -35,9 +34,7 @@ sage_scripts-4.5.alpha3/sage-banner
 drkirkby@hawk:~/f/sage-4.5.alpha3$ 
 ```
 
-
 I think this is probably due to some code in sage-sage
-
 
 ```
 if [ "$1" = '-v' -o "$1" = '-version' -o "$1" = '--version' ]; then
@@ -45,7 +42,6 @@ if [ "$1" = '-v' -o "$1" = '-version' -o "$1" = '--version' ]; then
     exit $?
 fi
 ```
-
 
 This will obviously fail if sage-banner does not exist. 
 
@@ -55,11 +51,9 @@ Also
 
 The following will save a few bytes of disk space and a few CPU cycles, as it will invoke one less process. 
 
-
 ```
     grep -i version "$SAGE_LOCAL/bin/sage-banner" | sed "s/\| //" | sed "s/ *\|//"
 ```
-
 
 More importantly, we should check that sage-banner exists before doing this, so it does not produce potentially confusing error messages. 
 
@@ -76,7 +70,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9434
 archive/issue_comments_090099.json:
 ```json
 {
-    "body": "Well, reading carefully, your error messages can't come from `sage-sage`... (I know you haven't had much sleep... ;-) )\n\nBtw, there are more superfluous quotes.\n\nIf you want to save another \"redundant\" process invocation (there are in general many), at the expense of losing some parallelism, substitute\n\n```\n... | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\n\nby\n\n```\n... | sed -e \"s/\\| //\" -e \"s/ *\\|//\"\n```\n\n\n(The whole line could be replaced by a single invocation of `sed`.)",
+    "body": "Well, reading carefully, your error messages can't come from `sage-sage`... (I know you haven't had much sleep... ;-) )\n\nBtw, there are more superfluous quotes.\n\nIf you want to save another \"redundant\" process invocation (there are in general many), at the expense of losing some parallelism, substitute\n\n```\n... | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n```\nby\n\n```\n... | sed -e \"s/\\| //\" -e \"s/ *\\|//\"\n```\n\n(The whole line could be replaced by a single invocation of `sed`.)",
     "created_at": "2010-07-06T11:38:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -94,13 +88,11 @@ If you want to save another "redundant" process invocation (there are in general
 ```
 ... | sed "s/\| //" | sed "s/ *\|//"
 ```
-
 by
 
 ```
 ... | sed -e "s/\| //" -e "s/ *\|//"
 ```
-
 
 (The whole line could be replaced by a single invocation of `sed`.)
 
@@ -111,7 +103,7 @@ by
 archive/issue_comments_090100.json:
 ```json
 {
-    "body": "Just for the record:\n\n```sh\ngrep -c \"^grep:\" install.log\n```\n\ngives me zero for both sequential and parallel builds of Sage 4.5.alpha4 (Ubuntu 9.04).",
+    "body": "Just for the record:\n\n```sh\ngrep -c \"^grep:\" install.log\n```\ngives me zero for both sequential and parallel builds of Sage 4.5.alpha4 (Ubuntu 9.04).",
     "created_at": "2010-07-10T05:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -125,7 +117,6 @@ Just for the record:
 ```sh
 grep -c "^grep:" install.log
 ```
-
 gives me zero for both sequential and parallel builds of Sage 4.5.alpha4 (Ubuntu 9.04).
 
 
@@ -178,7 +169,7 @@ Dave
 archive/issue_comments_090103.json:
 ```json
 {
-    "body": "Replying to [comment:3 drkirkby]:\n>  * I was not aware of that shorter sed sequence. I just found the 'cat' a bit amuzing.\n\nYes, though I love cats. One of my favorites is:\n\n```sh\nsed -n \"/[Vv]ersion/s/ *| *//gp\" $SAGE_LOCAL/bin/sage-banner\n```\n\n(Spaces in `$SAGE_LOCAL` are forbidden, otherwise we'd need quotes there.)\n\nNote that the original version gives two lines for non-finals; it does **not** remove the vertical bars (nor the whitespace) because the pipe symbol is \"superfluously\" escaped: :)\n\n```sh\nleif64@portland:~/Sage/sage-4.5.alpha4-serial$ ./sage -v\n* Warning: this is a prerelease version, and it may be unstable.     *\n```\n\n| Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |\nMore important, the discussion is still somewhat off-topic or off-ticket, since - as mentioned - the error messages do not originate from `sage-sage`, so the issue has to be fixed elsewhere.\n\n> I'll have to look at this, but its not exactly the most serious Sage bug.\n\nObviously, I agree.",
+    "body": "Replying to [comment:3 drkirkby]:\n>  * I was not aware of that shorter sed sequence. I just found the 'cat' a bit amuzing.\n\n\nYes, though I love cats. One of my favorites is:\n\n```sh\nsed -n \"/[Vv]ersion/s/ *| *//gp\" $SAGE_LOCAL/bin/sage-banner\n```\n(Spaces in `$SAGE_LOCAL` are forbidden, otherwise we'd need quotes there.)\n\nNote that the original version gives two lines for non-finals; it does **not** remove the vertical bars (nor the whitespace) because the pipe symbol is \"superfluously\" escaped: :)\n\n```sh\nleif64@portland:~/Sage/sage-4.5.alpha4-serial$ ./sage -v\n* Warning: this is a prerelease version, and it may be unstable.     *\n```\n| Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |\nMore important, the discussion is still somewhat off-topic or off-ticket, since - as mentioned - the error messages do not originate from `sage-sage`, so the issue has to be fixed elsewhere.\n\n> I'll have to look at this, but its not exactly the most serious Sage bug.\n\n\nObviously, I agree.",
     "created_at": "2010-07-10T09:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -190,12 +181,12 @@ archive/issue_comments_090103.json:
 Replying to [comment:3 drkirkby]:
 >  * I was not aware of that shorter sed sequence. I just found the 'cat' a bit amuzing.
 
+
 Yes, though I love cats. One of my favorites is:
 
 ```sh
 sed -n "/[Vv]ersion/s/ *| *//gp" $SAGE_LOCAL/bin/sage-banner
 ```
-
 (Spaces in `$SAGE_LOCAL` are forbidden, otherwise we'd need quotes there.)
 
 Note that the original version gives two lines for non-finals; it does **not** remove the vertical bars (nor the whitespace) because the pipe symbol is "superfluously" escaped: :)
@@ -204,11 +195,11 @@ Note that the original version gives two lines for non-finals; it does **not** r
 leif64@portland:~/Sage/sage-4.5.alpha4-serial$ ./sage -v
 * Warning: this is a prerelease version, and it may be unstable.     *
 ```
-
 | Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |
 More important, the discussion is still somewhat off-topic or off-ticket, since - as mentioned - the error messages do not originate from `sage-sage`, so the issue has to be fixed elsewhere.
 
 > I'll have to look at this, but its not exactly the most serious Sage bug.
+
 
 Obviously, I agree.
 
@@ -219,7 +210,7 @@ Obviously, I agree.
 archive/issue_comments_090104.json:
 ```json
 {
-    "body": "I think I've found the *real* culprit:\n\n```sh\n    # Mark that the new package has been installed. \n    # This file will eventually be a certificate like in OS X.\n    echo \"PACKAGE NAME: $PKG_NAME\" > \"$PKG_NAME\"\n    echo \"INSTALL DATE: `date`\" >> \"$PKG_NAME\"\n    echo \"UNAME: `uname -a`\" >> \"$PKG_NAME\"\n    echo \"Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`\" >> \"$PKG_NAME\"\n    echo \"Successfully installed $PKG_NAME\"\n```\n\n(This is from `sage-spkg`.)",
+    "body": "I think I've found the *real* culprit:\n\n```sh\n    # Mark that the new package has been installed. \n    # This file will eventually be a certificate like in OS X.\n    echo \"PACKAGE NAME: $PKG_NAME\" > \"$PKG_NAME\"\n    echo \"INSTALL DATE: `date`\" >> \"$PKG_NAME\"\n    echo \"UNAME: `uname -a`\" >> \"$PKG_NAME\"\n    echo \"Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`\" >> \"$PKG_NAME\"\n    echo \"Successfully installed $PKG_NAME\"\n```\n(This is from `sage-spkg`.)",
     "created_at": "2010-07-12T23:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -239,7 +230,6 @@ I think I've found the *real* culprit:
     echo "Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`" >> "$PKG_NAME"
     echo "Successfully installed $PKG_NAME"
 ```
-
 (This is from `sage-spkg`.)
 
 
@@ -249,7 +239,7 @@ I think I've found the *real* culprit:
 archive/issue_comments_090105.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> I think I've found the *real* culprit:\n> {{{\n> #!sh\n>     # Mark that the new package has been installed. \n>     # This file will eventually be a certificate like in OS X.\n>     echo \"PACKAGE NAME: $PKG_NAME\" > \"$PKG_NAME\"\n>     echo \"INSTALL DATE: `date`\" >> \"$PKG_NAME\"\n>     echo \"UNAME: `uname -a`\" >> \"$PKG_NAME\"\n>     echo \"Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`\" >> \"$PKG_NAME\"\n>     echo \"Successfully installed $PKG_NAME\"\n> }}}\n> (This is from `sage-spkg`.)\n\n\nYes, it looks like you have. It seems the author was not trying to win a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html). \n\nDo you have any idea why some people do not see this error message? If you can produce a patch, I can test it. \n\nDave",
+    "body": "Replying to [comment:5 leif]:\n> I think I've found the *real* culprit:\n> \n> ```\n> #!sh\n>     # Mark that the new package has been installed. \n>     # This file will eventually be a certificate like in OS X.\n>     echo \"PACKAGE NAME: $PKG_NAME\" > \"$PKG_NAME\"\n>     echo \"INSTALL DATE: `date`\" >> \"$PKG_NAME\"\n>     echo \"UNAME: `uname -a`\" >> \"$PKG_NAME\"\n>     echo \"Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`\" >> \"$PKG_NAME\"\n>     echo \"Successfully installed $PKG_NAME\"\n> ```\n> (This is from `sage-spkg`.)\n\n\n\nYes, it looks like you have. It seems the author was not trying to win a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html). \n\nDo you have any idea why some people do not see this error message? If you can produce a patch, I can test it. \n\nDave",
     "created_at": "2010-07-12T23:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -260,7 +250,8 @@ archive/issue_comments_090105.json:
 
 Replying to [comment:5 leif]:
 > I think I've found the *real* culprit:
-> {{{
+> 
+> ```
 > #!sh
 >     # Mark that the new package has been installed. 
 >     # This file will eventually be a certificate like in OS X.
@@ -269,8 +260,9 @@ Replying to [comment:5 leif]:
 >     echo "UNAME: `uname -a`" >> "$PKG_NAME"
 >     echo "Sage VERSION: `grep Sage $SAGE_LOCAL/bin/sage-banner`" >> "$PKG_NAME"
 >     echo "Successfully installed $PKG_NAME"
-> }}}
+> ```
 > (This is from `sage-spkg`.)
+
 
 
 Yes, it looks like you have. It seems the author was not trying to win a [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html). 
@@ -286,7 +278,7 @@ Dave
 archive/issue_comments_090106.json:
 ```json
 {
-    "body": "Since sage-spkg is in spkg/base and in sage_scripts, while sage-banner is only in sage_scripts, you should see this message for any spkgs installed before sage-scripts.  In the most recent version of Sage, deps should install sage_scripts right at the beginning:\n\n```\nBASE = $(INST)/$(PREREQ) $(INST)/$(DIR) $(INST)/$(SAGE_BZIP2)\n\n# Also install scripts before we continue with other spkgs\nBASE += $(INST)/$(SAGE_SCRIPTS)\n```\n\nSo I hope this problem has already been taken care of.  Installing sage_scripts itself looks like the only possible problem.",
+    "body": "Since sage-spkg is in spkg/base and in sage_scripts, while sage-banner is only in sage_scripts, you should see this message for any spkgs installed before sage-scripts.  In the most recent version of Sage, deps should install sage_scripts right at the beginning:\n\n```\nBASE = $(INST)/$(PREREQ) $(INST)/$(DIR) $(INST)/$(SAGE_BZIP2)\n\n# Also install scripts before we continue with other spkgs\nBASE += $(INST)/$(SAGE_SCRIPTS)\n```\nSo I hope this problem has already been taken care of.  Installing sage_scripts itself looks like the only possible problem.",
     "created_at": "2010-07-12T23:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -303,7 +295,6 @@ BASE = $(INST)/$(PREREQ) $(INST)/$(DIR) $(INST)/$(SAGE_BZIP2)
 # Also install scripts before we continue with other spkgs
 BASE += $(INST)/$(SAGE_SCRIPTS)
 ```
-
 So I hope this problem has already been taken care of.  Installing sage_scripts itself looks like the only possible problem.
 
 
@@ -313,7 +304,7 @@ So I hope this problem has already been taken care of.  Installing sage_scripts 
 archive/issue_comments_090107.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> If you can produce a patch, I can test it.\n\nMilestone: Sage 5.0 ;-)\n\nI think a file containing (just) the Sage version number should be in `$SAGE_ROOT` anyhow; then we could `cat` that. (Testing for the existence of files is though not a bad idea...)",
+    "body": "Replying to [comment:6 drkirkby]:\n> If you can produce a patch, I can test it.\n\n\nMilestone: Sage 5.0 ;-)\n\nI think a file containing (just) the Sage version number should be in `$SAGE_ROOT` anyhow; then we could `cat` that. (Testing for the existence of files is though not a bad idea...)",
     "created_at": "2010-07-12T23:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -324,6 +315,7 @@ archive/issue_comments_090107.json:
 
 Replying to [comment:6 drkirkby]:
 > If you can produce a patch, I can test it.
+
 
 Milestone: Sage 5.0 ;-)
 
@@ -376,7 +368,7 @@ Changing status from new to needs_review.
 archive/issue_comments_090110.json:
 ```json
 {
-    "body": "To be more precise: with the patch, in a non-upgrade, the file SAGE_ROOT/VERSION.txt will look like this:\n\n```\nSage version: 4.6.alpha2, Release date: 2010-09-29\n```\n\nI haven't tested the upgrade script yet, but it should produce\n\n```\nSage version: 4.6.alpha2, Release date: 2010-09-29\nUpgraded from Sage version: 4.6.alpha1, Release date: 2010-09-18\nUpgraded from ...\n```\n",
+    "body": "To be more precise: with the patch, in a non-upgrade, the file SAGE_ROOT/VERSION.txt will look like this:\n\n```\nSage version: 4.6.alpha2, Release date: 2010-09-29\n```\nI haven't tested the upgrade script yet, but it should produce\n\n```\nSage version: 4.6.alpha2, Release date: 2010-09-29\nUpgraded from Sage version: 4.6.alpha1, Release date: 2010-09-18\nUpgraded from ...\n```",
     "created_at": "2010-09-29T21:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -390,7 +382,6 @@ To be more precise: with the patch, in a non-upgrade, the file SAGE_ROOT/VERSION
 ```
 Sage version: 4.6.alpha2, Release date: 2010-09-29
 ```
-
 I haven't tested the upgrade script yet, but it should produce
 
 ```
@@ -398,7 +389,6 @@ Sage version: 4.6.alpha2, Release date: 2010-09-29
 Upgraded from Sage version: 4.6.alpha1, Release date: 2010-09-18
 Upgraded from ...
 ```
-
 
 
 
@@ -431,7 +421,7 @@ I'd prefer having *"Sage version: ... [Last] Upgraded from: ..."* on a single li
 archive/issue_comments_090112.json:
 ```json
 {
-    "body": "You could use\n\n```sh\n    ...\n    if [ -f \"$SAGE_ROOT/VERSION.txt\" ]; then\n        sed -i -e \"1iSage version: $SAGE_VERSION, Release date: $SAGE_RELEASE_DATE\\nUpdated from $OLD_VERSION\"\n    else\n        ...\n```\n\nto avoid `cat` ... ;-)\n\n(Perhaps omit the newline, i.e. replace it by e.g. two spaces.)",
+    "body": "You could use\n\n```sh\n    ...\n    if [ -f \"$SAGE_ROOT/VERSION.txt\" ]; then\n        sed -i -e \"1iSage version: $SAGE_VERSION, Release date: $SAGE_RELEASE_DATE\\nUpdated from $OLD_VERSION\"\n    else\n        ...\n```\nto avoid `cat` ... ;-)\n\n(Perhaps omit the newline, i.e. replace it by e.g. two spaces.)",
     "created_at": "2010-09-29T21:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -449,7 +439,6 @@ You could use
     else
         ...
 ```
-
 to avoid `cat` ... ;-)
 
 (Perhaps omit the newline, i.e. replace it by e.g. two spaces.)
@@ -479,7 +468,7 @@ And we'd have to make sure the version file doesn't get overwritten later once w
 archive/issue_comments_090114.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> Hmmm, besides I don't like the date format string (which is *local* time), I don't think `$SAGE_RELEASE_DATE` is available (i.e. set) in `sage-upgrade`.\n> \n> Do you intentionally export `OLD_VERSION`?\n\nRight, I'll fix these.\n\n> A non-existing `$SAGE_ROOT/VERSION.txt` could be handled as well.\n> \n> I'd prefer having *\"Sage version: ... [Last] Upgraded from: ...\"* on a single line (at least in the log).\n\nNote that the Sage version doesn't appear in the log: it should only appear in the files in spkg/installed/.  But maybe a single line is cleaner.\n\n> And we'd have to make sure the version file doesn't get overwritten later once we have the root repo.\n\nWe can add VERSION.txt to .hgignore; I think that should do it.",
+    "body": "Replying to [comment:11 leif]:\n> Hmmm, besides I don't like the date format string (which is *local* time), I don't think `$SAGE_RELEASE_DATE` is available (i.e. set) in `sage-upgrade`.\n> \n> Do you intentionally export `OLD_VERSION`?\n\n\nRight, I'll fix these.\n\n> A non-existing `$SAGE_ROOT/VERSION.txt` could be handled as well.\n> \n> I'd prefer having *\"Sage version: ... [Last] Upgraded from: ...\"* on a single line (at least in the log).\n\n\nNote that the Sage version doesn't appear in the log: it should only appear in the files in spkg/installed/.  But maybe a single line is cleaner.\n\n> And we'd have to make sure the version file doesn't get overwritten later once we have the root repo.\n\n\nWe can add VERSION.txt to .hgignore; I think that should do it.",
     "created_at": "2010-09-29T22:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -493,15 +482,18 @@ Replying to [comment:11 leif]:
 > 
 > Do you intentionally export `OLD_VERSION`?
 
+
 Right, I'll fix these.
 
 > A non-existing `$SAGE_ROOT/VERSION.txt` could be handled as well.
 > 
 > I'd prefer having *"Sage version: ... [Last] Upgraded from: ..."* on a single line (at least in the log).
 
+
 Note that the Sage version doesn't appear in the log: it should only appear in the files in spkg/installed/.  But maybe a single line is cleaner.
 
 > And we'd have to make sure the version file doesn't get overwritten later once we have the root repo.
+
 
 We can add VERSION.txt to .hgignore; I think that should do it.
 
@@ -567,7 +559,7 @@ The new patch also modifies sage-make_devel_packages: when preparing the scripts
 archive/issue_comments_090117.json:
 ```json
 {
-    "body": "I wouldn't call `sage` in `sage-upgrade`. Also, `sage-spkg` is run before `sage-upgrade` updates `VERSION.txt`, so (just) the old version would be logged. (I consider the files in `spkg/installed/` also logs, though they have no `.log` extension.)\n\nRather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\nAs noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\nWe'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\n----\n\n*\"While you're at it\"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?",
+    "body": "I wouldn't call `sage` in `sage-upgrade`. Also, `sage-spkg` is run before `sage-upgrade` updates `VERSION.txt`, so (just) the old version would be logged. (I consider the files in `spkg/installed/` also logs, though they have no `.log` extension.)\n\nRather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\nAs noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\nWe'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\n---\n\n*\"While you're at it\"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?",
     "created_at": "2010-09-29T23:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -584,7 +576,7 @@ As noted, the version file should be updated *before* `spkg/install` is called (
 
 We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)
 
-----
+---
 
 *"While you're at it"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?
 
@@ -613,7 +605,7 @@ P.S.: See also #9905 (for the date format).
 archive/issue_comments_090119.json:
 ```json
 {
-    "body": "Replying to [comment:12 leif]:\n> You could use\n> {{{\n> #!sh\n>     ...\n>     if [ -f \"$SAGE_ROOT/VERSION.txt\" ]; then\n>         sed -i -e \"1iSage version: $SAGE_VERSION, Release date: $SAGE_RELEASE_DATE\\nUpdated from $OLD_VERSION\"\n>     else\n>         ...\n> }}}\n> to avoid `cat` ... ;-)\n> \n> (Perhaps omit the newline, i.e. replace it by e.g. two spaces.)\n> \n\nBut that would be an even bigger mistake than to use an unnecessary cat, as you are making use of non-POSIX options to `sed` - see [POSIX specifiction of sed](http://www.opengroup.org/onlinepubs/009695399/utilities/sed.html) I can guarantee that will fail on Solaris and AIX and probably other Unix systems too. \n\nDave",
+    "body": "Replying to [comment:12 leif]:\n> You could use\n> \n> ```\n> #!sh\n>     ...\n>     if [ -f \"$SAGE_ROOT/VERSION.txt\" ]; then\n>         sed -i -e \"1iSage version: $SAGE_VERSION, Release date: $SAGE_RELEASE_DATE\\nUpdated from $OLD_VERSION\"\n>     else\n>         ...\n> ```\n> to avoid `cat` ... ;-)\n> \n> (Perhaps omit the newline, i.e. replace it by e.g. two spaces.)\n> \n\n\nBut that would be an even bigger mistake than to use an unnecessary cat, as you are making use of non-POSIX options to `sed` - see [POSIX specifiction of sed](http://www.opengroup.org/onlinepubs/009695399/utilities/sed.html) I can guarantee that will fail on Solaris and AIX and probably other Unix systems too. \n\nDave",
     "created_at": "2010-09-30T05:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -624,18 +616,20 @@ archive/issue_comments_090119.json:
 
 Replying to [comment:12 leif]:
 > You could use
-> {{{
+> 
+> ```
 > #!sh
 >     ...
 >     if [ -f "$SAGE_ROOT/VERSION.txt" ]; then
 >         sed -i -e "1iSage version: $SAGE_VERSION, Release date: $SAGE_RELEASE_DATE\nUpdated from $OLD_VERSION"
 >     else
 >         ...
-> }}}
+> ```
 > to avoid `cat` ... ;-)
 > 
 > (Perhaps omit the newline, i.e. replace it by e.g. two spaces.)
 > 
+
 
 But that would be an even bigger mistake than to use an unnecessary cat, as you are making use of non-POSIX options to `sed` - see [POSIX specifiction of sed](http://www.opengroup.org/onlinepubs/009695399/utilities/sed.html) I can guarantee that will fail on Solaris and AIX and probably other Unix systems too. 
 
@@ -648,7 +642,7 @@ Dave
 archive/issue_comments_090120.json:
 ```json
 {
-    "body": "Replying to [comment:17 leif]:\n> I wouldn't call `sage` in `sage-upgrade`. \n\nI can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`, after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n\n> Also, `sage-spkg` is run before `sage-upgrade` updates `VERSION.txt`, so (just) the old version would be logged. (I consider the files in `spkg/installed/` also logs, though they have no `.log` extension.)\n\nThat makes sense.\n\n> Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\nWhy?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.  I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.  If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n\n> As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\nRight.\n\n> We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\nHow about extracting it from VERSION.txt?  I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\n> *\"While you're at it\"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?\n\nI don't have time to do this now.",
+    "body": "Replying to [comment:17 leif]:\n> I wouldn't call `sage` in `sage-upgrade`. \n\n\nI can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`, after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n\n> Also, `sage-spkg` is run before `sage-upgrade` updates `VERSION.txt`, so (just) the old version would be logged. (I consider the files in `spkg/installed/` also logs, though they have no `.log` extension.)\n\n\nThat makes sense.\n\n> Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\n\nWhy?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.  I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.  If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n\n> As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\n\nRight.\n\n> We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\n\nHow about extracting it from VERSION.txt?  I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\n> *\"While you're at it\"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?\n\n\nI don't have time to do this now.",
     "created_at": "2010-09-30T05:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -660,25 +654,31 @@ archive/issue_comments_090120.json:
 Replying to [comment:17 leif]:
 > I wouldn't call `sage` in `sage-upgrade`. 
 
+
 I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`, after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.
 
 > Also, `sage-spkg` is run before `sage-upgrade` updates `VERSION.txt`, so (just) the old version would be logged. (I consider the files in `spkg/installed/` also logs, though they have no `.log` extension.)
+
 
 That makes sense.
 
 > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.
 
+
 Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.  I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.  If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.
 
 > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).
+
 
 Right.
 
 > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)
 
+
 How about extracting it from VERSION.txt?  I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.
 
 > *"While you're at it"*<sup>TM</sup>, would you mind quoting more instances of `$SAGE_ROOT` etc.?
+
 
 I don't have time to do this now.
 
@@ -689,7 +689,7 @@ I don't have time to do this now.
 archive/issue_comments_090121.json:
 ```json
 {
-    "body": "I also didn't change the date format.  I wasn't sure exactly what you meant; if you're not happy with the date format in a line like \n\n```\nINSTALL DATE: Tue Sep 21 12:48:53 PDT 2010\n```\n\nfrom a file in spkg/installed, I didn't touch any of that code, and I don't have time to deal with it now.  I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.",
+    "body": "I also didn't change the date format.  I wasn't sure exactly what you meant; if you're not happy with the date format in a line like \n\n```\nINSTALL DATE: Tue Sep 21 12:48:53 PDT 2010\n```\nfrom a file in spkg/installed, I didn't touch any of that code, and I don't have time to deal with it now.  I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.",
     "created_at": "2010-09-30T05:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -703,7 +703,6 @@ I also didn't change the date format.  I wasn't sure exactly what you meant; if 
 ```
 INSTALL DATE: Tue Sep 21 12:48:53 PDT 2010
 ```
-
 from a file in spkg/installed, I didn't touch any of that code, and I don't have time to deal with it now.  I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.
 
 
@@ -713,7 +712,7 @@ from a file in spkg/installed, I didn't touch any of that code, and I don't have
 archive/issue_comments_090122.json:
 ```json
 {
-    "body": "Replying to [comment:21 jhpalmieri]:\n> I also didn't change the date format.  I wasn't sure exactly what you meant; if you're not happy with the date format in a line like \n> {{{\n> INSTALL DATE: Tue Sep 21 12:48:53 PDT 2010\n> }}}\n> from a file in spkg/installed, I didn't touch any of that code,\n\nI didn't mean that. (At least not for this ticket, since #9905 addresses this.)\n\n> I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.\n\nIt should simply be UTC. (`date -u +\"%Y-%m-%d\"` or better `date -u +\"%Y-%m-%d %Z\"` to include \"UTC\". One could also print the UTC verbatim, without `%Z`...)",
+    "body": "Replying to [comment:21 jhpalmieri]:\n> I also didn't change the date format.  I wasn't sure exactly what you meant; if you're not happy with the date format in a line like \n> \n> ```\n> INSTALL DATE: Tue Sep 21 12:48:53 PDT 2010\n> ```\n> from a file in spkg/installed, I didn't touch any of that code,\n\n\nI didn't mean that. (At least not for this ticket, since #9905 addresses this.)\n\n> I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.\n\n\nIt should simply be UTC. (`date -u +\"%Y-%m-%d\"` or better `date -u +\"%Y-%m-%d %Z\"` to include \"UTC\". One could also print the UTC verbatim, without `%Z`...)",
     "created_at": "2010-09-30T06:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -724,14 +723,17 @@ archive/issue_comments_090122.json:
 
 Replying to [comment:21 jhpalmieri]:
 > I also didn't change the date format.  I wasn't sure exactly what you meant; if you're not happy with the date format in a line like 
-> {{{
+> 
+> ```
 > INSTALL DATE: Tue Sep 21 12:48:53 PDT 2010
-> }}}
+> ```
 > from a file in spkg/installed, I didn't touch any of that code,
+
 
 I didn't mean that. (At least not for this ticket, since #9905 addresses this.)
 
 > I think for a release date, we don't need anything more precise than `2010-09-29`: no hours, minutes, second, or time zone.
+
 
 It should simply be UTC. (`date -u +"%Y-%m-%d"` or better `date -u +"%Y-%m-%d %Z"` to include "UTC". One could also print the UTC verbatim, without `%Z`...)
 
@@ -742,7 +744,7 @@ It should simply be UTC. (`date -u +"%Y-%m-%d"` or better `date -u +"%Y-%m-%d %Z
 archive/issue_comments_090123.json:
 ```json
 {
-    "body": "Replying to [comment:20 jhpalmieri]:\n> Replying to [comment:17 leif]:\n> > I wouldn't call `sage` in `sage-upgrade`. \n> \n> I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,\n\n`sage-upgrade` isn't \"the end\" of the upgrade process (it's called by `sage-sage`),\nand calling the \"new\" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.\n\n> after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n\nThis is done later, and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.\n\n> > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n> \n> Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.\n\nI didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.\n \n> I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.\n\nSee above.\n\n> If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n\nWell, `VERSION.txt` shouldn't be under revision control.\n \n> > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n> \n> Right.\n> \n> > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n> \n> How about extracting it from VERSION.txt?\n\nExtracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.\n\n> I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\nI'll take a look at it.",
+    "body": "Replying to [comment:20 jhpalmieri]:\n> Replying to [comment:17 leif]:\n> > I wouldn't call `sage` in `sage-upgrade`. \n\n> \n> I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,\n\n\n`sage-upgrade` isn't \"the end\" of the upgrade process (it's called by `sage-sage`),\nand calling the \"new\" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.\n\n> after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n\n\nThis is done later, and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.\n\n> > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\n> \n> Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.\n\n\nI didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.\n \n> I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.\n\n\nSee above.\n\n> If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n\n\nWell, `VERSION.txt` shouldn't be under revision control.\n \n> > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\n> \n> Right.\n> \n> > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\n> \n> How about extracting it from VERSION.txt?\n\n\nExtracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.\n\n> I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\n\nI'll take a look at it.",
     "created_at": "2010-09-30T06:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -754,41 +756,52 @@ archive/issue_comments_090123.json:
 Replying to [comment:20 jhpalmieri]:
 > Replying to [comment:17 leif]:
 > > I wouldn't call `sage` in `sage-upgrade`. 
+
 > 
 > I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,
+
 
 `sage-upgrade` isn't "the end" of the upgrade process (it's called by `sage-sage`),
 and calling the "new" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.
 
 > after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.
 
+
 This is done later, and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.
 
 > > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.
+
 > 
 > Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.
+
 
 I didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.
  
 > I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.
 
+
 See above.
 
 > If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.
 
+
 Well, `VERSION.txt` shouldn't be under revision control.
  
 > > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).
+
 > 
 > Right.
 > 
 > > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)
+
 > 
 > How about extracting it from VERSION.txt?
+
 
 Extracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.
 
 > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.
+
 
 I'll take a look at it.
 
@@ -833,7 +846,7 @@ dave
 archive/issue_comments_090125.json:
 ```json
 {
-    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:20 jhpalmieri]:\n> > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n> \n> I'll take a look at it.\n\nOk, if we supply a separate file in the upgrade path. The code is a *bit* complicated though.",
+    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:20 jhpalmieri]:\n> > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\n> \n> I'll take a look at it.\n\n\nOk, if we supply a separate file in the upgrade path. The code is a *bit* complicated though.",
     "created_at": "2010-09-30T07:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -845,8 +858,10 @@ archive/issue_comments_090125.json:
 Replying to [comment:23 leif]:
 > Replying to [comment:20 jhpalmieri]:
 > > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.
+
 > 
 > I'll take a look at it.
+
 
 Ok, if we supply a separate file in the upgrade path. The code is a *bit* complicated though.
 
@@ -857,7 +872,7 @@ Ok, if we supply a separate file in the upgrade path. The code is a *bit* compli
 archive/issue_comments_090126.json:
 ```json
 {
-    "body": "Replying to [comment:24 drkirkby]:\n> Although I'm aware of the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) date format, for humans to read, having the month (Jan, Feb etc) and day (Mon, Tue etc) is useful.\n\nThat depends on the locale and isn't easily sortable or grepable. (I thought you had to deal with airlines; you know every date is always UTC there, regardless of any daylight saving or whatever.)\n\n> It's obvious that 2001 is the year, but things like 2010-05-06 are not so good for human readability. Is that the the 5th of June or the 6th of May?\n\nI'm aware there are some <censored> people writing 2010/28/02, but with slashes, not dashes.\n\n\n> One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.\n\nDetecting such is easier with the date format we have. ;-)\n\nBut I'm strongly against nagging or annoying users, especially since the default is to print the Sage banner when Sage starts up, which shows the release date.",
+    "body": "Replying to [comment:24 drkirkby]:\n> Although I'm aware of the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) date format, for humans to read, having the month (Jan, Feb etc) and day (Mon, Tue etc) is useful.\n\n\nThat depends on the locale and isn't easily sortable or grepable. (I thought you had to deal with airlines; you know every date is always UTC there, regardless of any daylight saving or whatever.)\n\n> It's obvious that 2001 is the year, but things like 2010-05-06 are not so good for human readability. Is that the the 5th of June or the 6th of May?\n\n\nI'm aware there are some <censored> people writing 2010/28/02, but with slashes, not dashes.\n\n\n> One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.\n\n\nDetecting such is easier with the date format we have. ;-)\n\nBut I'm strongly against nagging or annoying users, especially since the default is to print the Sage banner when Sage starts up, which shows the release date.",
     "created_at": "2010-09-30T07:42:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -869,14 +884,17 @@ archive/issue_comments_090126.json:
 Replying to [comment:24 drkirkby]:
 > Although I'm aware of the [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) date format, for humans to read, having the month (Jan, Feb etc) and day (Mon, Tue etc) is useful.
 
+
 That depends on the locale and isn't easily sortable or grepable. (I thought you had to deal with airlines; you know every date is always UTC there, regardless of any daylight saving or whatever.)
 
 > It's obvious that 2001 is the year, but things like 2010-05-06 are not so good for human readability. Is that the the 5th of June or the 6th of May?
+
 
 I'm aware there are some <censored> people writing 2010/28/02, but with slashes, not dashes.
 
 
 > One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.
+
 
 Detecting such is easier with the date format we have. ;-)
 
@@ -889,7 +907,7 @@ But I'm strongly against nagging or annoying users, especially since the default
 archive/issue_comments_090127.json:
 ```json
 {
-    "body": "Replying to [comment:26 leif]:\n\n> > One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.\n> \n> Detecting such is easier with the date format we have. ;-)\n> \n> But I'm strongly against nagging or annoying users, especially since the default is to print the Sage banner when Sage starts up, which shows the release date. \n>  \n\nIf we nagged users their version of Sage was very old, we would not have the problems there are with the Debian distribution, and some other distributions of Sage. I think more than a year old and you do seriously need to nag them! \n\nDave",
+    "body": "Replying to [comment:26 leif]:\n\n> > One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.\n\n> \n> Detecting such is easier with the date format we have. ;-)\n> \n> But I'm strongly against nagging or annoying users, especially since the default is to print the Sage banner when Sage starts up, which shows the release date. \n>  \n\n\nIf we nagged users their version of Sage was very old, we would not have the problems there are with the Debian distribution, and some other distributions of Sage. I think more than a year old and you do seriously need to nag them! \n\nDave",
     "created_at": "2010-09-30T07:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -901,11 +919,13 @@ archive/issue_comments_090127.json:
 Replying to [comment:26 leif]:
 
 > > One other thing, that I'll mention though this is perhaps not the best ticket for it, is  #8447, which was a suggestion of mine to detect when the Sage version is old. Having the release date stored as seconds since the Epoch (in addition to a human friendly way), would enable us to detect when Sage is old. So I suggest anywhere one adds a release date, we bear that in mind.
+
 > 
 > Detecting such is easier with the date format we have. ;-)
 > 
 > But I'm strongly against nagging or annoying users, especially since the default is to print the Sage banner when Sage starts up, which shows the release date. 
 >  
+
 
 If we nagged users their version of Sage was very old, we would not have the problems there are with the Debian distribution, and some other distributions of Sage. I think more than a year old and you do seriously need to nag them! 
 
@@ -918,7 +938,7 @@ Dave
 archive/issue_comments_090128.json:
 ```json
 {
-    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:20 jhpalmieri]:\n> > Replying to [comment:17 leif]:\n> > > I wouldn't call `sage` in `sage-upgrade`. \n> > \n> > I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,\n> \n> `sage-upgrade` isn't \"the end\" of the upgrade process (it's called by `sage-sage`),\n> and calling the \"new\" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.\n> \n> > after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n> \n> This is done later\n\nWhere?  sage-upgrade gets called twice in sage-sage, but that's basically all that happens when you run \"sage -upgrade\", isn't it?  I guess running it twice means that VERSION.txt may end up being wrong; I'll have to fix that.\n\n> , and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.\n> \n> > > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n> > \n> > Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.\n> \n> I didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.\n\nVERSION.txt is written to SAGE_ROOT by sage-sdist, so it's present in the Sage tarball.  It will therefore also be available in the upgrade path.\n\n> > I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.\n> \n> See above.\n> \n> > If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n> \n> Well, `VERSION.txt` shouldn't be under revision control.\n>  \n> > > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n> > \n> > Right.\n> > \n> > > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n> > \n> > How about extracting it from VERSION.txt?\n> \n> Extracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.\n\nAlthough we can't get the release date from it, we could also use the *file name* for the main Sage repo, for example.\n\n> > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n> \n> I'll take a look at it.\n\nReplying to [comment:25 leif]:\n> Ok, if we supply a separate file in the upgrade path. \n\n(See above: the file VERSION.txt gets written to SAGE_ROOT by sage-sdist, so it will be there.)\n\n> The code is a *bit* complicated though.\n\nIt's straightforward, but long: first you extract the old version from VERSION.txt, then you download the new VERSION.txt and extract the new version, then you produce the updated VERSION.txt.  I need to check whether the new version matches the beginning of the old version, in case this is the second time sage-upgrade is run.  \n\nFinally, I think having \"UTC\" at the end of the date looks a little silly when it's just a date, no time, but I've included it.\n\nHere's a new patch.",
+    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:20 jhpalmieri]:\n> > Replying to [comment:17 leif]:\n> > > I wouldn't call `sage` in `sage-upgrade`. \n\n> > \n> > I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,\n\n> \n> `sage-upgrade` isn't \"the end\" of the upgrade process (it's called by `sage-sage`),\n> and calling the \"new\" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.\n> \n> > after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.\n\n> \n> This is done later\n\n\nWhere?  sage-upgrade gets called twice in sage-sage, but that's basically all that happens when you run \"sage -upgrade\", isn't it?  I guess running it twice means that VERSION.txt may end up being wrong; I'll have to fix that.\n\n> , and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.\n> \n> > > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.\n\n> > \n> > Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.\n\n> \n> I didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.\n\n\nVERSION.txt is written to SAGE_ROOT by sage-sdist, so it's present in the Sage tarball.  It will therefore also be available in the upgrade path.\n\n> > I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.\n\n> \n> See above.\n> \n> > If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.\n\n> \n> Well, `VERSION.txt` shouldn't be under revision control.\n>  \n> > > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).\n\n> > \n> > Right.\n> > \n> > > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)\n\n> > \n> > How about extracting it from VERSION.txt?\n\n> \n> Extracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.\n\n\nAlthough we can't get the release date from it, we could also use the *file name* for the main Sage repo, for example.\n\n> > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.\n\n> \n> I'll take a look at it.\n\n\nReplying to [comment:25 leif]:\n> Ok, if we supply a separate file in the upgrade path. \n\n\n(See above: the file VERSION.txt gets written to SAGE_ROOT by sage-sdist, so it will be there.)\n\n> The code is a *bit* complicated though.\n\n\nIt's straightforward, but long: first you extract the old version from VERSION.txt, then you download the new VERSION.txt and extract the new version, then you produce the updated VERSION.txt.  I need to check whether the new version matches the beginning of the old version, in case this is the second time sage-upgrade is run.  \n\nFinally, I think having \"UTC\" at the end of the date looks a little silly when it's just a date, no time, but I've included it.\n\nHere's a new patch.",
     "created_at": "2010-09-30T15:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -931,58 +951,75 @@ Replying to [comment:23 leif]:
 > Replying to [comment:20 jhpalmieri]:
 > > Replying to [comment:17 leif]:
 > > > I wouldn't call `sage` in `sage-upgrade`. 
+
 > > 
 > > I can see from your other reasons that we need to update the version number earlier so my solution won't work, but I see no reason, a priori, not to call `sage` in `sage-upgrade`,
+
 > 
 > `sage-upgrade` isn't "the end" of the upgrade process (it's called by `sage-sage`),
 > and calling the "new" Sage there can potentially cause more trouble than we want. So since it's not necessary, I would leave it.
 > 
 > > after the upgrade process has completed, apparently successfully.  It actually tests further whether the upgrade succeeded.
+
 > 
 > This is done later
+
 
 Where?  sage-upgrade gets called twice in sage-sage, but that's basically all that happens when you run "sage -upgrade", isn't it?  I guess running it twice means that VERSION.txt may end up being wrong; I'll have to fix that.
 
 > , and finally calling the new Sage should be up to the user, e.g. indirectly by building the documentation.
 > 
 > > > Rather than omitting `VERSION.txt` from the `sage_scripts` spkg, I would put the code to update (or better: not overwrite) an existing `VERSION.txt` in its `spkg-install`.
+
 > > 
 > > Why?  In general, copying over all *.txt files is a little dangerous, and is part of the reason that the file sage-README-osx.txt appears in the wrong places and isn't currently tracked in any repo.
+
 > 
 > I didn't say copy `*.txt` (otherwise checking the presence of an existing `$SAGE_ROOT/VERSION.txt` wouldn't make much sense). But having it there (*not* in the repo, i.e., in `.hgignore`) we can easily extract it before that spkg gets installed, because a new scripts repo is always there, is relatively small and gets created by `sage -sdist` anyway, where the new version and release date are known.
+
 
 VERSION.txt is written to SAGE_ROOT by sage-sdist, so it's present in the Sage tarball.  It will therefore also be available in the upgrade path.
 
 > > I think if we want to include a file, it should be tracked.  If it's automatically generated, I don't see any reason to include it in a repo.
+
 > 
 > See above.
 > 
 > > If #9433 ever gets reviewed and merged, then all of the *.txt files in SAGE_ROOT will be taken out of the scripts repo in any case.
+
 > 
 > Well, `VERSION.txt` shouldn't be under revision control.
 >  
 > > > As noted, the version file should be updated *before* `spkg/install` is called (and that's also before a new scripts spkg gets installed).
+
 > > 
 > > Right.
 > > 
 > > > We'd have to extract the new version from some newly downloaded file. (This only works for later Sage versions anyway, unless we handle it in `spkg/install`, too.)
+
 > > 
 > > How about extracting it from VERSION.txt?
+
 > 
 > Extracting the file from the file itself? You misunderstood me. I meant we could extract `VERSION.txt` e.g. from the scripts repo, with `tar`.
+
 
 Although we can't get the release date from it, we could also use the *file name* for the main Sage repo, for example.
 
 > > I'm attaching a patch which does this, perhaps not in the optimal way, but I think it should work.
+
 > 
 > I'll take a look at it.
+
 
 Replying to [comment:25 leif]:
 > Ok, if we supply a separate file in the upgrade path. 
 
+
 (See above: the file VERSION.txt gets written to SAGE_ROOT by sage-sdist, so it will be there.)
 
 > The code is a *bit* complicated though.
+
 
 It's straightforward, but long: first you extract the old version from VERSION.txt, then you download the new VERSION.txt and extract the new version, then you produce the updated VERSION.txt.  I need to check whether the new version matches the beginning of the old version, in case this is the second time sage-upgrade is run.  
 
@@ -1015,7 +1052,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090130.json:
 ```json
 {
-    "body": "This needs to be rebased (and perhaps coordinated with #9433?):\n\n```\npatching file sage-make_devel_packages\npatching file sage-sdist\npatching file sage-spkg\npatching file sage-update\nHunk #1 succeeded at 344 (offset 35 lines).\nHunk #2 FAILED at 380.\n1 out of 2 hunks FAILED -- saving rejects to file sage-update.rej\npatching file sage-upgrade\nHunk #1 succeeded at 35 (offset 4 lines).\n```\n",
+    "body": "This needs to be rebased (and perhaps coordinated with #9433?):\n\n```\npatching file sage-make_devel_packages\npatching file sage-sdist\npatching file sage-spkg\npatching file sage-update\nHunk #1 succeeded at 344 (offset 35 lines).\nHunk #2 FAILED at 380.\n1 out of 2 hunks FAILED -- saving rejects to file sage-update.rej\npatching file sage-upgrade\nHunk #1 succeeded at 35 (offset 4 lines).\n```",
     "created_at": "2010-11-11T20:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1037,7 +1074,6 @@ Hunk #2 FAILED at 380.
 patching file sage-upgrade
 Hunk #1 succeeded at 35 (offset 4 lines).
 ```
-
 
 
 
@@ -1102,7 +1138,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090134.json:
 ```json
 {
-    "body": "Replying to [comment:28 jhpalmieri]:\n> Finally, I think having \"UTC\" at the end of the date looks a little silly when it's just a date, no time.\n\nI agree, this should be removed.  This just looks so strange:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:\n```\n\n| Sage Version 4.6.1.alpha3, Release Date: 2010-11-26 UTC            |\n| Type notebook() for the GUI, and license() for information.        |\nThe patch looks okay to me (apart from this minor UTC issue).  I will do some more testing (also upgrade).",
+    "body": "Replying to [comment:28 jhpalmieri]:\n> Finally, I think having \"UTC\" at the end of the date looks a little silly when it's just a date, no time.\n\n\nI agree, this should be removed.  This just looks so strange:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:\n```\n| Sage Version 4.6.1.alpha3, Release Date: 2010-11-26 UTC            |\n| Type notebook() for the GUI, and license() for information.        |\nThe patch looks okay to me (apart from this minor UTC issue).  I will do some more testing (also upgrade).",
     "created_at": "2010-11-26T12:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1113,6 +1149,7 @@ archive/issue_comments_090134.json:
 
 Replying to [comment:28 jhpalmieri]:
 > Finally, I think having "UTC" at the end of the date looks a little silly when it's just a date, no time.
+
 
 I agree, this should be removed.  This just looks so strange:
 
@@ -1126,7 +1163,6 @@ I agree, this should be removed.  This just looks so strange:
 **********************************************************************
 sage:
 ```
-
 | Sage Version 4.6.1.alpha3, Release Date: 2010-11-26 UTC            |
 | Type notebook() for the GUI, and license() for information.        |
 The patch looks okay to me (apart from this minor UTC issue).  I will do some more testing (also upgrade).
@@ -1212,7 +1248,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_090139.json:
 ```json
 {
-    "body": "Replying to [comment:32 jdemeyer]:\n> positive_review to everything except for my patch.\n\nI'm giving a positive review to your patch, and so setting this to positive review.",
+    "body": "Replying to [comment:32 jdemeyer]:\n> positive_review to everything except for my patch.\n\n\nI'm giving a positive review to your patch, and so setting this to positive review.",
     "created_at": "2010-11-27T00:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1223,6 +1259,7 @@ archive/issue_comments_090139.json:
 
 Replying to [comment:32 jdemeyer]:
 > positive_review to everything except for my patch.
+
 
 I'm giving a positive review to your patch, and so setting this to positive review.
 
@@ -1285,7 +1322,7 @@ I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_t
 archive/issue_comments_090142.json:
 ```json
 {
-    "body": "Replying to [comment:35 mpatel]:\n> I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.\n\nDoes `download_file(\"VERSION.txt\")` attempt to download a non-existent file, e.g.,\n\n http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt\n\n?  The successful upgrades I've done from 4.6 to 4.6.1.alpha3 somehow avoid this problem --- after the upgrade, `SAGE_ROOT` does not contain a `VERSION.txt`.  But upgrades that failed I cannot resume:\n\n```\n$ ./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3\n[...]\nhttp://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt --> VERSION.txt [.]\nFailed to download 'http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt'.\nAbort.\n$ \n```\n",
+    "body": "Replying to [comment:35 mpatel]:\n> I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.\n\n\nDoes `download_file(\"VERSION.txt\")` attempt to download a non-existent file, e.g.,\n\n http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt\n\n?  The successful upgrades I've done from 4.6 to 4.6.1.alpha3 somehow avoid this problem --- after the upgrade, `SAGE_ROOT` does not contain a `VERSION.txt`.  But upgrades that failed I cannot resume:\n\n```\n$ ./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3\n[...]\nhttp://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt --> VERSION.txt [.]\nFailed to download 'http://sage.math.washington.edu/home/release/sage-4.6.1.alpha3/sage-4.6.1.alpha3/spkg/VERSION.txt'.\nAbort.\n$ \n```",
     "created_at": "2010-12-14T04:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1296,6 +1333,7 @@ archive/issue_comments_090142.json:
 
 Replying to [comment:35 mpatel]:
 > I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.
+
 
 Does `download_file("VERSION.txt")` attempt to download a non-existent file, e.g.,
 
@@ -1314,13 +1352,12 @@ $
 
 
 
-
 ---
 
 archive/issue_comments_090143.json:
 ```json
 {
-    "body": "> Does download_file(\"VERSION.txt\") attempt to download a non-existent file\n\nI think that might be the problem.  I thought we tested this with upgrades, but obviously not well enough.  How about a patch like this:\n\n```diff\ndiff -r 6e07658dbbd6 -r b35cea7f82c9 sage-sdist\n--- a/sage-sdist\n+++ b/sage-sdist\n@@ -58,6 +58,9 @@ cp -LRp Makefile *.txt *.sage sage ipyth\n STD=standard\n mkdir $TMP/$PKGDIR\n mkdir $TMP/$PKGDIR/$STD\n+# Put VERSION.txt in a directory available for download during the\n+# update process.  (See sage-update.)\n+cp VERSION.txt $TMP/$PKGDIR/$STD/.VERSION.txt\n cp -p $PKGDIR/$STD/deps $TMP/$PKGDIR/$STD/\n cp -p $PKGDIR/$STD/libdist_filelist $TMP/$PKGDIR/$STD/\n cp -p $PKGDIR/$STD/newest_version $TMP/$PKGDIR/$STD/\ndiff -r 6e07658dbbd6 -r b35cea7f82c9 sage-update\n--- a/sage-update\n+++ b/sage-update\n@@ -351,11 +351,16 @@ def do_update():\n         version_file.close()\n     else:\n         old_version = \"\"\n-    download_file(\"VERSION.txt\")\n-    version_file = open(\"VERSION.txt\")\n+    download_file(\"standard/.VERSION.txt\")\n+    version_file = open(\".VERSION.txt\")\n     new_version = version_file.read()\n     new_version = new_version.strip()  # remove trailing newline\n     version_file.close()\n+    try:\n+        os.remove(os.path.join(SPKG_ROOT, \"standard\", \".VERSION.txt\"))\n+    except OSError:\n+        pass\n+    os.rename(\".VERSION.txt\", os.path.join(SPKG_ROOT, \"standard\", \".VERSION.txt\"))\n     # sage-upgrade, hence sage-update, gets run twice during the\n     # upgrade process.  If old_version starts with new_version, then\n     # this should be the second time through, so don't update the\n```\n\n(The \"try ... except\" block is probably not necessary except on Windows, but it feels safer this way, and who knows, we might eventually support Windows.)\n\nI've created two upgrade paths which include this (one, version \"V0\", to test upgrading from anything else to this, and then the second, version \"V1\", to try upgrading from version \"V0\"):\n\n- [http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V0/](http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V0/)\n- [http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V1/](http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V1/)\n\nWe can open up a new ticket with a formally attached patch if this seems like the right approach.  I won't have much time to work on this, though: I have to focus on grading exams and getting ready for next quarter's classes.",
+    "body": "> Does download_file(\"VERSION.txt\") attempt to download a non-existent file\n\n\nI think that might be the problem.  I thought we tested this with upgrades, but obviously not well enough.  How about a patch like this:\n\n```diff\ndiff -r 6e07658dbbd6 -r b35cea7f82c9 sage-sdist\n--- a/sage-sdist\n+++ b/sage-sdist\n@@ -58,6 +58,9 @@ cp -LRp Makefile *.txt *.sage sage ipyth\n STD=standard\n mkdir $TMP/$PKGDIR\n mkdir $TMP/$PKGDIR/$STD\n+# Put VERSION.txt in a directory available for download during the\n+# update process.  (See sage-update.)\n+cp VERSION.txt $TMP/$PKGDIR/$STD/.VERSION.txt\n cp -p $PKGDIR/$STD/deps $TMP/$PKGDIR/$STD/\n cp -p $PKGDIR/$STD/libdist_filelist $TMP/$PKGDIR/$STD/\n cp -p $PKGDIR/$STD/newest_version $TMP/$PKGDIR/$STD/\ndiff -r 6e07658dbbd6 -r b35cea7f82c9 sage-update\n--- a/sage-update\n+++ b/sage-update\n@@ -351,11 +351,16 @@ def do_update():\n         version_file.close()\n     else:\n         old_version = \"\"\n-    download_file(\"VERSION.txt\")\n-    version_file = open(\"VERSION.txt\")\n+    download_file(\"standard/.VERSION.txt\")\n+    version_file = open(\".VERSION.txt\")\n     new_version = version_file.read()\n     new_version = new_version.strip()  # remove trailing newline\n     version_file.close()\n+    try:\n+        os.remove(os.path.join(SPKG_ROOT, \"standard\", \".VERSION.txt\"))\n+    except OSError:\n+        pass\n+    os.rename(\".VERSION.txt\", os.path.join(SPKG_ROOT, \"standard\", \".VERSION.txt\"))\n     # sage-upgrade, hence sage-update, gets run twice during the\n     # upgrade process.  If old_version starts with new_version, then\n     # this should be the second time through, so don't update the\n```\n(The \"try ... except\" block is probably not necessary except on Windows, but it feels safer this way, and who knows, we might eventually support Windows.)\n\nI've created two upgrade paths which include this (one, version \"V0\", to test upgrading from anything else to this, and then the second, version \"V1\", to try upgrading from version \"V0\"):\n\n- [http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V0/](http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V0/)\n- [http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V1/](http://sage.math.washington.edu/home/palmieri/misc/sage-4.6.1.V1/)\n\nWe can open up a new ticket with a formally attached patch if this seems like the right approach.  I won't have much time to work on this, though: I have to focus on grading exams and getting ready for next quarter's classes.",
     "created_at": "2010-12-14T06:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1330,6 +1367,7 @@ archive/issue_comments_090143.json:
 ```
 
 > Does download_file("VERSION.txt") attempt to download a non-existent file
+
 
 I think that might be the problem.  I thought we tested this with upgrades, but obviously not well enough.  How about a patch like this:
 
@@ -1370,7 +1408,6 @@ diff -r 6e07658dbbd6 -r b35cea7f82c9 sage-update
      # upgrade process.  If old_version starts with new_version, then
      # this should be the second time through, so don't update the
 ```
-
 (The "try ... except" block is probably not necessary except on Windows, but it feels safer this way, and who knows, we might eventually support Windows.)
 
 I've created two upgrade paths which include this (one, version "V0", to test upgrading from anything else to this, and then the second, version "V1", to try upgrading from version "V0"):
@@ -1516,7 +1553,7 @@ Could when the new `sage_scripts` package is installed matter for either the `VE
 archive/issue_comments_090150.json:
 ```json
 {
-    "body": "Replying to [comment:40 mpatel]:\n> Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n\nIf that's true, it's probably a better solution (but it needs to be tested properly).",
+    "body": "Replying to [comment:40 mpatel]:\n> Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n\n\nIf that's true, it's probably a better solution (but it needs to be tested properly).",
     "created_at": "2010-12-14T16:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1528,6 +1565,7 @@ archive/issue_comments_090150.json:
 Replying to [comment:40 mpatel]:
 > Using `download_file("../VERSION.txt")` may also work (I've tested this only once).
 
+
 If that's true, it's probably a better solution (but it needs to be tested properly).
 
 
@@ -1537,7 +1575,7 @@ If that's true, it's probably a better solution (but it needs to be tested prope
 archive/issue_comments_090151.json:
 ```json
 {
-    "body": "Replying to [comment:40 mpatel]:\n> Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n\nI would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like \"http://boxen.math.washington.edu/sage/spkg/../COPYING.txt\", the file is not found.  I think the same would be true of VERSION.txt: I don't think the top-level directory is available on the official Sage mirrors.",
+    "body": "Replying to [comment:40 mpatel]:\n> Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n\n\nI would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like \"http://boxen.math.washington.edu/sage/spkg/../COPYING.txt\", the file is not found.  I think the same would be true of VERSION.txt: I don't think the top-level directory is available on the official Sage mirrors.",
     "created_at": "2010-12-14T18:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1549,6 +1587,7 @@ archive/issue_comments_090151.json:
 Replying to [comment:40 mpatel]:
 > Using `download_file("../VERSION.txt")` may also work (I've tested this only once).
 
+
 I would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like "http://boxen.math.washington.edu/sage/spkg/../COPYING.txt", the file is not found.  I think the same would be true of VERSION.txt: I don't think the top-level directory is available on the official Sage mirrors.
 
 
@@ -1558,7 +1597,7 @@ I would expect it to work from an upgrade path like the one I provided, or like 
 archive/issue_comments_090152.json:
 ```json
 {
-    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:40 mpatel]:\n> > Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n> \n> I would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like \"http://boxen.math.washington.edu/sage/spkg/../COPYING.txt\", the file is not found.\n\nWell, the file is not found because it doesn't actually exist.  So your comment doesn't really prove anything.",
+    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:40 mpatel]:\n> > Using `download_file(\"../VERSION.txt\")` may also work (I've tested this only once).\n\n> \n> I would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like \"http://boxen.math.washington.edu/sage/spkg/../COPYING.txt\", the file is not found.\n\n\nWell, the file is not found because it doesn't actually exist.  So your comment doesn't really prove anything.",
     "created_at": "2010-12-14T19:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1570,8 +1609,10 @@ archive/issue_comments_090152.json:
 Replying to [comment:42 jhpalmieri]:
 > Replying to [comment:40 mpatel]:
 > > Using `download_file("../VERSION.txt")` may also work (I've tested this only once).
+
 > 
 > I would expect it to work from an upgrade path like the one I provided, or like the ones provided by release managers for alpha releases.  But if I try to download from a URL like "http://boxen.math.washington.edu/sage/spkg/../COPYING.txt", the file is not found.
+
 
 Well, the file is not found because it doesn't actually exist.  So your comment doesn't really prove anything.
 
@@ -1618,7 +1659,7 @@ Changing status from new to needs_work.
 archive/issue_comments_090155.json:
 ```json
 {
-    "body": "Replying to [comment:44 jdemeyer]:\n> I don't see any reason why [http://boxen.math.washington.edu/sage/spkg/../COPYING.txt](http://boxen.math.washington.edu/sage/spkg/../COPYING.txt) shouldn't work while John's URL works.\n\nI think that on the official Sage mirrors, none of the top-level files (makefile or Makefile, COPYING.txt, etc.) are available for download via the URLs in the sage-update script.  So if we have VERSION.txt only in the top-level, it won't be available for download (unless the scripts which make the official release available are rewritten). That is, after Sage 4.6.1 is released, running \"sage -upgrade\" with no arguments will fail to download VERSION.txt because that file won't be anywhere on the server.\n\nI could be wrong, though.  Does anyone know for sure what files are mirrored on the official servers?  Browsing around the /home/sagemath directory on sage.math, for example the www-files subdirectory, I don't see 'makefile' anywhere...",
+    "body": "Replying to [comment:44 jdemeyer]:\n> I don't see any reason why [http://boxen.math.washington.edu/sage/spkg/../COPYING.txt](http://boxen.math.washington.edu/sage/spkg/../COPYING.txt) shouldn't work while John's URL works.\n\n\nI think that on the official Sage mirrors, none of the top-level files (makefile or Makefile, COPYING.txt, etc.) are available for download via the URLs in the sage-update script.  So if we have VERSION.txt only in the top-level, it won't be available for download (unless the scripts which make the official release available are rewritten). That is, after Sage 4.6.1 is released, running \"sage -upgrade\" with no arguments will fail to download VERSION.txt because that file won't be anywhere on the server.\n\nI could be wrong, though.  Does anyone know for sure what files are mirrored on the official servers?  Browsing around the /home/sagemath directory on sage.math, for example the www-files subdirectory, I don't see 'makefile' anywhere...",
     "created_at": "2010-12-14T19:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1629,6 +1670,7 @@ archive/issue_comments_090155.json:
 
 Replying to [comment:44 jdemeyer]:
 > I don't see any reason why [http://boxen.math.washington.edu/sage/spkg/../COPYING.txt](http://boxen.math.washington.edu/sage/spkg/../COPYING.txt) shouldn't work while John's URL works.
+
 
 I think that on the official Sage mirrors, none of the top-level files (makefile or Makefile, COPYING.txt, etc.) are available for download via the URLs in the sage-update script.  So if we have VERSION.txt only in the top-level, it won't be available for download (unless the scripts which make the official release available are rewritten). That is, after Sage 4.6.1 is released, running "sage -upgrade" with no arguments will fail to download VERSION.txt because that file won't be anywhere on the server.
 
@@ -1677,7 +1719,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090158.json:
 ```json
 {
-    "body": "Replying to [comment:45 jhpalmieri]:\n> I could be wrong, though.  Does anyone know for sure what files are mirrored on the official servers?  Browsing around the /home/sagemath directory on sage.math, for example the www-files subdirectory, I don't see 'makefile' anywhere...\n\nDoes this mean that `Makefile` will never get upgraded?  That doesn't sound good, especially given #9799, #10156.",
+    "body": "Replying to [comment:45 jhpalmieri]:\n> I could be wrong, though.  Does anyone know for sure what files are mirrored on the official servers?  Browsing around the /home/sagemath directory on sage.math, for example the www-files subdirectory, I don't see 'makefile' anywhere...\n\n\nDoes this mean that `Makefile` will never get upgraded?  That doesn't sound good, especially given #9799, #10156.",
     "created_at": "2010-12-14T20:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1688,6 +1730,7 @@ archive/issue_comments_090158.json:
 
 Replying to [comment:45 jhpalmieri]:
 > I could be wrong, though.  Does anyone know for sure what files are mirrored on the official servers?  Browsing around the /home/sagemath directory on sage.math, for example the www-files subdirectory, I don't see 'makefile' anywhere...
+
 
 Does this mean that `Makefile` will never get upgraded?  That doesn't sound good, especially given #9799, #10156.
 
@@ -1716,7 +1759,7 @@ Well, I think `Makefile` never gets run during an upgrade, so while it doesn't g
 archive/issue_comments_090160.json:
 ```json
 {
-    "body": "Replying to [comment:35 mpatel]:\n> I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.\n\nJust for the record (from IRC):\n\n```\n<kini>\n  er... I just ran `sage -upgrade` (from 4.6) to see if it would pull a development version\n  - sage told me that everything was already upgraded, and it exited without seeming to do\n  anything but now when I load sage it's telling me I have 4.6.rc0\n  odd\n  curiouser and curiouser\n  sage.misc.banner.banner() returns the correct, 4.6 banner\n  ... hm\n  so apparently `sage -version` just cats a text file,  $SAGE_ROOT/local/bin/sage-banner\n  odd, my $SAGE_ROOT/local/bin repository's files are for some reason marked as descended\n  from 4.6.rc0\n  well, never mind\n```\n\n\n8)",
+    "body": "Replying to [comment:35 mpatel]:\n> I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.\n\n\nJust for the record (from IRC):\n\n```\n<kini>\n  er... I just ran `sage -upgrade` (from 4.6) to see if it would pull a development version\n  - sage told me that everything was already upgraded, and it exited without seeming to do\n  anything but now when I load sage it's telling me I have 4.6.rc0\n  odd\n  curiouser and curiouser\n  sage.misc.banner.banner() returns the correct, 4.6 banner\n  ... hm\n  so apparently `sage -version` just cats a text file,  $SAGE_ROOT/local/bin/sage-banner\n  odd, my $SAGE_ROOT/local/bin repository's files are for some reason marked as descended\n  from 4.6.rc0\n  well, never mind\n```\n\n8)",
     "created_at": "2010-12-16T03:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1727,6 +1770,7 @@ archive/issue_comments_090160.json:
 
 Replying to [comment:35 mpatel]:
 > I've reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/461c1eeb61cc6f45/56108269d1090223?#56108269d1090223) a *possible* problem involving `VERSION.txt` and failed upgrades.
+
 
 Just for the record (from IRC):
 
@@ -1744,7 +1788,6 @@ Just for the record (from IRC):
   from 4.6.rc0
   well, never mind
 ```
-
 
 8)
 
@@ -1795,7 +1838,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_090163.json:
 ```json
 {
-    "body": "Replying to [comment:50 jdemeyer]:\n> 1) Why not rename/copy the file \"SAGE_ROOT/spkg/standard/.VERSION.txt\" to \"SAGE_ROOT/VERSION.txt\" in `spkg-upgrade`?  That way, there will be a top-level `VERSION.txt` just like one would have with a clean build.\n\nI agree that the top-level VERSION.txt should be the same as spkg/standard/VERSION.txt, which was not the case in my previous patch.  I've fixed that so that once the top-level file is created, it's copied to spkg/standard.  (The top-level file contains upgrade information, and since upgrade info may be helpful in tracking down problems, we should keep that one rather than the downloaded one.)\n\n> 2) I would *not* make the file hidden, I don't think there is a problem with a file `spkg/standard/VERSION.txt`.\n\nOkay.\n \n> 3) I would copy using `cp -p`.\n\nGood idea.\n\nI'm attaching two patches, one of which just fixes these issues.  The other patch, which could be applied on top of the others, does a little miscellaneous clean-up in sage-update, using `os.path.join(x,y)` instead of `\"%s/%s\" %(x,y)`.  Feel free to ignore the second patch completely; it is entirely optional right now.",
+    "body": "Replying to [comment:50 jdemeyer]:\n> 1) Why not rename/copy the file \"SAGE_ROOT/spkg/standard/.VERSION.txt\" to \"SAGE_ROOT/VERSION.txt\" in `spkg-upgrade`?  That way, there will be a top-level `VERSION.txt` just like one would have with a clean build.\n\n\nI agree that the top-level VERSION.txt should be the same as spkg/standard/VERSION.txt, which was not the case in my previous patch.  I've fixed that so that once the top-level file is created, it's copied to spkg/standard.  (The top-level file contains upgrade information, and since upgrade info may be helpful in tracking down problems, we should keep that one rather than the downloaded one.)\n\n> 2) I would *not* make the file hidden, I don't think there is a problem with a file `spkg/standard/VERSION.txt`.\n\n\nOkay.\n \n> 3) I would copy using `cp -p`.\n\n\nGood idea.\n\nI'm attaching two patches, one of which just fixes these issues.  The other patch, which could be applied on top of the others, does a little miscellaneous clean-up in sage-update, using `os.path.join(x,y)` instead of `\"%s/%s\" %(x,y)`.  Feel free to ignore the second patch completely; it is entirely optional right now.",
     "created_at": "2010-12-16T21:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1807,13 +1850,16 @@ archive/issue_comments_090163.json:
 Replying to [comment:50 jdemeyer]:
 > 1) Why not rename/copy the file "SAGE_ROOT/spkg/standard/.VERSION.txt" to "SAGE_ROOT/VERSION.txt" in `spkg-upgrade`?  That way, there will be a top-level `VERSION.txt` just like one would have with a clean build.
 
+
 I agree that the top-level VERSION.txt should be the same as spkg/standard/VERSION.txt, which was not the case in my previous patch.  I've fixed that so that once the top-level file is created, it's copied to spkg/standard.  (The top-level file contains upgrade information, and since upgrade info may be helpful in tracking down problems, we should keep that one rather than the downloaded one.)
 
 > 2) I would *not* make the file hidden, I don't think there is a problem with a file `spkg/standard/VERSION.txt`.
 
+
 Okay.
  
 > 3) I would copy using `cp -p`.
+
 
 Good idea.
 
@@ -1925,7 +1971,7 @@ I just created new upgrade paths for further testing: I took a vanilla version o
 archive/issue_comments_090169.json:
 ```json
 {
-    "body": "I'm also testing with the upgrade path [http://sage.math.washington.edu/home/release/sage-4.6.1.rc0/sage-4.6.1.rc0/](http://sage.math.washington.edu/home/release/sage-4.6.1.rc0/sage-4.6.1.rc0/) (including also other tickets such as #10176).\n\nI currently get the following problem (building an \"nameless\" package), still investigating:\n\n```\n/mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/pipestatus \"sage-spkg ${SAGE_SPKG_OPTS}  2>&1\" \"tee -a /mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/logs/.log\"\n```\n",
+    "body": "I'm also testing with the upgrade path [http://sage.math.washington.edu/home/release/sage-4.6.1.rc0/sage-4.6.1.rc0/](http://sage.math.washington.edu/home/release/sage-4.6.1.rc0/sage-4.6.1.rc0/) (including also other tickets such as #10176).\n\nI currently get the following problem (building an \"nameless\" package), still investigating:\n\n```\n/mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/pipestatus \"sage-spkg ${SAGE_SPKG_OPTS}  2>&1\" \"tee -a /mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/logs/.log\"\n```",
     "created_at": "2010-12-18T09:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9434",
     "type": "issue_comment",
@@ -1941,7 +1987,6 @@ I currently get the following problem (building an "nameless" package), still in
 ```
 /mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/pipestatus "sage-spkg ${SAGE_SPKG_OPTS}  2>&1" "tee -a /mnt/usb1/scratch/jdemeyer/sage-4.6.1.rc0_upgraded/spkg/logs/.log"
 ```
-
 
 
 

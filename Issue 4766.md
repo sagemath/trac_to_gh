@@ -3,7 +3,7 @@
 archive/issues_004766.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mvngu\n\n\n```\n20:11 < wstein> I just noticed that the doctesting for parallel? is very confusing.\n20:11 < wstein> It has no examples, and doesn't even seem right.\n20:12 < wstein> The examples are in the __init__ method.\n20:12 < wstein> Moreover, the docstring doesn't document that one can give an integer\n20:12 < wstein> as input, which defaults to pyprocessing with that many cores.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4766\n\n",
+    "body": "Assignee: cwitty\n\nCC:  mvngu\n\n```\n20:11 < wstein> I just noticed that the doctesting for parallel? is very confusing.\n20:11 < wstein> It has no examples, and doesn't even seem right.\n20:12 < wstein> The examples are in the __init__ method.\n20:12 < wstein> Moreover, the docstring doesn't document that one can give an integer\n20:12 < wstein> as input, which defaults to pyprocessing with that many cores.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4766\n\n",
     "created_at": "2008-12-12T04:16:06Z",
     "labels": [
         "component: misc",
@@ -20,7 +20,6 @@ Assignee: cwitty
 
 CC:  mvngu
 
-
 ```
 20:11 < wstein> I just noticed that the doctesting for parallel? is very confusing.
 20:11 < wstein> It has no examples, and doesn't even seem right.
@@ -28,7 +27,6 @@ CC:  mvngu
 20:12 < wstein> Moreover, the docstring doesn't document that one can give an integer
 20:12 < wstein> as input, which defaults to pyprocessing with that many cores.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4766
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4766
 archive/issue_comments_036044.json:
 ```json
 {
-    "body": "Further comment.  On the command line, IPython outputs the docstring for the class *and* the __init__ method, but in the notebook the output is *only* the class docstring.  Thus maybe the problem is partly in how the notebook shows docstrings.\n\n```\nIn IPython.\n        Create paralleled functions.\n    \n        INPUT:\n            p_iter -- parallel iterator function or string:\n                      'multiprocessing' -- use multiprocessing (aka pyprocessing)\n                      'reference'       -- use a fake serial reference\n                                           implementation\n                      DSage instance    -- use dsage\n        \n\nConstructor information:\nDefinition:     parallel(self, p_iter='multiprocessing')\nDocstring:\n    \n            Create a parallel iterator decorator object.\n    \n            EXAMPLES:\n                sage: @parallel()\n                ... def f(N): return N^2\n                sage: v = list(f([1,2,4])); v.sort(); v\n                [(((1,), {}), 1), (((2,), {}), 4), (((4,), {}), 16)]\n                sage: @parallel('reference')\n                ... def f(N): return N^2\n```\n",
+    "body": "Further comment.  On the command line, IPython outputs the docstring for the class *and* the __init__ method, but in the notebook the output is *only* the class docstring.  Thus maybe the problem is partly in how the notebook shows docstrings.\n\n```\nIn IPython.\n        Create paralleled functions.\n    \n        INPUT:\n            p_iter -- parallel iterator function or string:\n                      'multiprocessing' -- use multiprocessing (aka pyprocessing)\n                      'reference'       -- use a fake serial reference\n                                           implementation\n                      DSage instance    -- use dsage\n        \n\nConstructor information:\nDefinition:     parallel(self, p_iter='multiprocessing')\nDocstring:\n    \n            Create a parallel iterator decorator object.\n    \n            EXAMPLES:\n                sage: @parallel()\n                ... def f(N): return N^2\n                sage: v = list(f([1,2,4])); v.sort(); v\n                [(((1,), {}), 1), (((2,), {}), 4), (((4,), {}), 16)]\n                sage: @parallel('reference')\n                ... def f(N): return N^2\n```",
     "created_at": "2008-12-12T04:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4766",
     "type": "issue_comment",
@@ -78,7 +76,6 @@ Docstring:
                 sage: @parallel('reference')
                 ... def f(N): return N^2
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000260.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set the background as transparent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kcrisman\n\n```\n\nIt may be helpful for users who want to use SAGE graphics on their web\npages to be able to set the background as transparent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/260\n\n",
     "created_at": "2007-02-12T04:20:44Z",
     "labels": [
         "component: notebook",
@@ -20,13 +20,11 @@ Assignee: boothby
 
 CC:  @kcrisman
 
-
 ```
 
 It may be helpful for users who want to use SAGE graphics on their web
 pages to be able to set the background as transparent.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/260
 
@@ -204,7 +202,7 @@ Ticket #5448 may necessitate an update.
 archive/issue_comments_001210.json:
 ```json
 {
-    "body": "Yes, I'm almost sure that #5448 will necessitate an update (or this will necessitate an update of #5448).\n\n1. I would change the keyword argument to something that is used more in Sage (like alpha or opacity) if we are going to have multiple levels of transparency.  If it is just a True/False option, then \"transparent\" seems like a fine keyword.\n\n2. What do you think about using the \"transparent\" option of savefig, as documented here: http://matplotlib.sourceforge.net/api/figure_api.html#matplotlib.figure.Figure.savefig ?\n\n3. The transparent option of savefig has the following code.  It looks like this code not only sets the figure patch, but goes through each axes object in the figure and sets the axes patch alpha level.  We should probably do the same.\n\n\n```\n 1036         if transparent:\n 1037             original_figure_alpha = self.patch.get_alpha()\n 1038             self.patch.set_alpha(0.0)\n 1039             original_axes_alpha = []\n 1040             for ax in self.axes:\n 1041                 patch = ax.patch\n 1042                 original_axes_alpha.append(patch.get_alpha())\n 1043                 patch.set_alpha(0.0)\n```\n",
+    "body": "Yes, I'm almost sure that #5448 will necessitate an update (or this will necessitate an update of #5448).\n\n1. I would change the keyword argument to something that is used more in Sage (like alpha or opacity) if we are going to have multiple levels of transparency.  If it is just a True/False option, then \"transparent\" seems like a fine keyword.\n\n2. What do you think about using the \"transparent\" option of savefig, as documented here: http://matplotlib.sourceforge.net/api/figure_api.html#matplotlib.figure.Figure.savefig ?\n\n3. The transparent option of savefig has the following code.  It looks like this code not only sets the figure patch, but goes through each axes object in the figure and sets the axes patch alpha level.  We should probably do the same.\n\n```\n 1036         if transparent:\n 1037             original_figure_alpha = self.patch.get_alpha()\n 1038             self.patch.set_alpha(0.0)\n 1039             original_axes_alpha = []\n 1040             for ax in self.axes:\n 1041                 patch = ax.patch\n 1042                 original_axes_alpha.append(patch.get_alpha())\n 1043                 patch.set_alpha(0.0)\n```",
     "created_at": "2009-08-31T13:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -221,7 +219,6 @@ Yes, I'm almost sure that #5448 will necessitate an update (or this will necessi
 
 3. The transparent option of savefig has the following code.  It looks like this code not only sets the figure patch, but goes through each axes object in the figure and sets the axes patch alpha level.  We should probably do the same.
 
-
 ```
  1036         if transparent:
  1037             original_figure_alpha = self.patch.get_alpha()
@@ -232,7 +229,6 @@ Yes, I'm almost sure that #5448 will necessitate an update (or this will necessi
  1042                 original_axes_alpha.append(patch.get_alpha())
  1043                 patch.set_alpha(0.0)
 ```
-
 
 
 
@@ -301,7 +297,7 @@ On the other hand, if it's not wanted, maybe we should close this ticket after a
 archive/issue_comments_001214.json:
 ```json
 {
-    "body": "A quick (and crude) change to `Graphics.save()` sets up a `background_color` option:\n\n```python\n        if savenow:\n[...]\n            background_color = None\n            if kwds.has_key('background_color'):\n                background_color = kwds.pop('background_color', False)\n\n            figure=self.matplotlib(*args, **kwds)\n[...]\n            if background_color:\n                figure.patch.set_color(background_color)\n                for ax in figure.axes:\n                    ax.patch.set_color(background_color)\n                # Not sure how to avoid using these:\n                options['edgecolor'] = background_color\n                options['facecolor'] = background_color\n\n            figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n```\n\nIf we can avoid using the `savefig()` options, perhaps we can set a background color *and* transparency level entirely in `matplotlib()`.  Then, I think, we could handle combinations like\n\n* `transparent=True, opacity=0.5`\n* `opacity=0.8, background_color='#ffbefa'`\n\nin a way a user expects.  Thoughts?",
+    "body": "A quick (and crude) change to `Graphics.save()` sets up a `background_color` option:\n\n```python\n        if savenow:\n[...]\n            background_color = None\n            if kwds.has_key('background_color'):\n                background_color = kwds.pop('background_color', False)\n\n            figure=self.matplotlib(*args, **kwds)\n[...]\n            if background_color:\n                figure.patch.set_color(background_color)\n                for ax in figure.axes:\n                    ax.patch.set_color(background_color)\n                # Not sure how to avoid using these:\n                options['edgecolor'] = background_color\n                options['facecolor'] = background_color\n\n            figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)\n```\nIf we can avoid using the `savefig()` options, perhaps we can set a background color *and* transparency level entirely in `matplotlib()`.  Then, I think, we could handle combinations like\n\n* `transparent=True, opacity=0.5`\n* `opacity=0.8, background_color='#ffbefa'`\n\nin a way a user expects.  Thoughts?",
     "created_at": "2009-09-18T06:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -331,7 +327,6 @@ A quick (and crude) change to `Graphics.save()` sets up a `background_color` opt
 
             figure.savefig(filename,dpi=dpi,bbox_inches='tight',**options)
 ```
-
 If we can avoid using the `savefig()` options, perhaps we can set a background color *and* transparency level entirely in `matplotlib()`.  Then, I think, we could handle combinations like
 
 * `transparent=True, opacity=0.5`
@@ -364,7 +359,7 @@ Add opacity and background_color plot options.  Apply only this patch.
 archive/issue_comments_001216.json:
 ```json
 {
-    "body": "Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by @qed777 created at 2009-10-23 00:35:44\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\n\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
+    "body": "Attachment [trac_260-plot_bg_alpha.patch](tarball://root/attachments/some-uuid/ticket260/trac_260-plot_bg_alpha.patch) by @qed777 created at 2009-10-23 00:35:44\n\nThe [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` and `opacity` keyword options to `plot()`.  Examples:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)\n```\n\n```python\nsage: C = 1.0\nsage: a, b = var('a, b')\nsage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, -2, 2), plot_points=100, transparent=True, contours=25, cmap='Spectral')\nsage: lem.show(aspect_ratio=1.0, background_color='khaki')\n```\n\nCan a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:\n\n```python\nsage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)\n```\nNote how the plot's thick \"border\" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?",
     "created_at": "2009-10-23T00:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -381,7 +376,6 @@ The [attachment:trac_260-plot_bg_alpha.patch new patch] adds `background_color` 
 sage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', opacity=0.5)
 ```
 
-
 ```python
 sage: C = 1.0
 sage: a, b = var('a, b')
@@ -389,13 +383,11 @@ sage: lem = contour_plot(2 * C^2 * (b^2 - a^2) - (a^2 + b^2)^2, (a, -2, 2), (b, 
 sage: lem.show(aspect_ratio=1.0, background_color='khaki')
 ```
 
-
 Can a Sage plotting or matplotlib expert point out how to make the background uniform when *both* `background_color` and `opacity` are given?  Try this:
 
 ```python
 sage: plot(x^cos(x^(sin(x))), (0, 30),  fill='axis', fillcolor='yellow', background_color='red', opacity=0.5)
 ```
-
 Note how the plot's thick "border" has a different apparent transparency level.  Is this an [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing) or blending problem?
 
 
@@ -461,7 +453,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_001220.json:
 ```json
 {
-    "body": "Replying to [comment:12 jason]:\n> But post to the matplotlib mailing list.  I'm sure they'll have a good answer for you.\n\nOops.  I didn't notice your response.  I'll ask the matplotlib mavens.",
+    "body": "Replying to [comment:12 jason]:\n> But post to the matplotlib mailing list.  I'm sure they'll have a good answer for you.\n\n\nOops.  I didn't notice your response.  I'll ask the matplotlib mavens.",
     "created_at": "2009-12-11T11:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -472,6 +464,7 @@ archive/issue_comments_001220.json:
 
 Replying to [comment:12 jason]:
 > But post to the matplotlib mailing list.  I'm sure they'll have a good answer for you.
+
 
 Oops.  I didn't notice your response.  I'll ask the matplotlib mavens.
 
@@ -518,7 +511,7 @@ No, because I stupidly neglected to ask.  Sorry about this!  I'll try to ask on 
 archive/issue_comments_001223.json:
 ```json
 {
-    "body": "Replying to [comment:16 mpatel]:\n> No, because I stupidly neglected to ask.  Sorry about this!  I'll try to ask on the matplotlib mailing list soon, probably after we release Sage 4.5.2.\n\nI've [posted to matplotlib-users](http://sourceforge.net/mailarchive/forum.php?thread_name=4C7F4F10.8060208%40gmail.com&forum_name=matplotlib-users).",
+    "body": "Replying to [comment:16 mpatel]:\n> No, because I stupidly neglected to ask.  Sorry about this!  I'll try to ask on the matplotlib mailing list soon, probably after we release Sage 4.5.2.\n\n\nI've [posted to matplotlib-users](http://sourceforge.net/mailarchive/forum.php?thread_name=4C7F4F10.8060208%40gmail.com&forum_name=matplotlib-users).",
     "created_at": "2010-09-02T07:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/260",
     "type": "issue_comment",
@@ -529,6 +522,7 @@ archive/issue_comments_001223.json:
 
 Replying to [comment:16 mpatel]:
 > No, because I stupidly neglected to ask.  Sorry about this!  I'll try to ask on the matplotlib mailing list soon, probably after we release Sage 4.5.2.
+
 
 I've [posted to matplotlib-users](http://sourceforge.net/mailarchive/forum.php?thread_name=4C7F4F10.8060208%40gmail.com&forum_name=matplotlib-users).
 

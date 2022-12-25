@@ -3,7 +3,7 @@
 archive/issues_003980.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThe reciprocal of tangent is not a constant function, but Sage says otherwise.  \n\n\n```\nsage: z=tan\nsage: z\ntan\nsage: 1/z\n1/tan\nsage: find_root(1/z,1,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n<snip>\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3088                     return a\n   3089                 else:\n-> 3090                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3091             var = repr(w[0])\n   3092 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3980\n\n",
+    "body": "Assignee: jkantor\n\nThe reciprocal of tangent is not a constant function, but Sage says otherwise.  \n\n```\nsage: z=tan\nsage: z\ntan\nsage: 1/z\n1/tan\nsage: find_root(1/z,1,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n<snip>\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3088                     return a\n   3089                 else:\n-> 3090                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3091             var = repr(w[0])\n   3092 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3980\n\n",
     "created_at": "2008-08-28T20:38:30Z",
     "labels": [
         "component: numerical",
@@ -20,7 +20,6 @@ archive/issues_003980.json:
 Assignee: jkantor
 
 The reciprocal of tangent is not a constant function, but Sage says otherwise.  
-
 
 ```
 sage: z=tan
@@ -50,7 +49,6 @@ RuntimeError                              Traceback (most recent call last)
 
 RuntimeError: no zero in the interval, since constant expression is not 0.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3980
@@ -100,7 +98,7 @@ Changing component from numerical to calculus.
 archive/issue_comments_028567.json:
 ```json
 {
-    "body": "I have a less obscure example of this.  \n\n```\nsage: find_root(sin, -1, 1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/<ipython console> in <module>()\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3120                     return a\n   3121                 else:\n-> 3122                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3123             var = repr(w[0])\n   3124 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\nAnd I have traced down the bug to this:\n\n\n```\nsage: sin.variables()\n()\nsage: (1/tan).variables()\n()\n```\n\n\nSince these expressions contain no variables they are deemed constant and since they are not equal to 0 they have no roots.  You can fix your example by trying:\n\n\n```\nsage: find_root(1/tan(x), 1, 2)\n1.5707963267948968\n```\n\n\nAlso note that this works:\n\n\n```\nsage: (1/tan)(1)\n1/tan(1)\n```\n\n\nAlthough, technically no variables are there to be replaced.\n\nI don't know if this is really a bug or not, or how to fix it.",
+    "body": "I have a less obscure example of this.  \n\n```\nsage: find_root(sin, -1, 1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/<ipython console> in <module>()\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3120                     return a\n   3121                 else:\n-> 3122                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3123             var = repr(w[0])\n   3124 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\nAnd I have traced down the bug to this:\n\n```\nsage: sin.variables()\n()\nsage: (1/tan).variables()\n()\n```\n\nSince these expressions contain no variables they are deemed constant and since they are not equal to 0 they have no roots.  You can fix your example by trying:\n\n```\nsage: find_root(1/tan(x), 1, 2)\n1.5707963267948968\n```\n\nAlso note that this works:\n\n```\nsage: (1/tan)(1)\n1/tan(1)\n```\n\nAlthough, technically no variables are there to be replaced.\n\nI don't know if this is really a bug or not, or how to fix it.",
     "created_at": "2008-09-08T20:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
@@ -135,9 +133,7 @@ RuntimeError                              Traceback (most recent call last)
 RuntimeError: no zero in the interval, since constant expression is not 0.
 ```
 
-
 And I have traced down the bug to this:
-
 
 ```
 sage: sin.variables()
@@ -146,24 +142,19 @@ sage: (1/tan).variables()
 ()
 ```
 
-
 Since these expressions contain no variables they are deemed constant and since they are not equal to 0 they have no roots.  You can fix your example by trying:
-
 
 ```
 sage: find_root(1/tan(x), 1, 2)
 1.5707963267948968
 ```
 
-
 Also note that this works:
-
 
 ```
 sage: (1/tan)(1)
 1/tan(1)
 ```
-
 
 Although, technically no variables are there to be replaced.
 
@@ -230,7 +221,7 @@ Changing assignee from @burcin to @jicama.
 archive/issue_comments_028571.json:
 ```json
 {
-    "body": "Somehow this is now too permissive, since the following should return an error:\n\n```\nsage: var('t')\nsage: find_root(1/t-x,0,2)\n     1.0000000000005\n```\n",
+    "body": "Somehow this is now too permissive, since the following should return an error:\n\n```\nsage: var('t')\nsage: find_root(1/t-x,0,2)\n     1.0000000000005\n```",
     "created_at": "2008-09-21T03:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
@@ -246,7 +237,6 @@ sage: var('t')
 sage: find_root(1/t-x,0,2)
      1.0000000000005
 ```
-
 
 
 
@@ -291,7 +281,7 @@ Good catch mhampton.  I modified the patch to throw a NotImplementedError if sel
 archive/issue_comments_028574.json:
 ```json
 {
-    "body": "OK, this passes tests and it seems OK.  One thing I noticed, which I think can be considered beyond the scope of this patch, is that \n\n\n\n```\nvar('t')\nplot(sin(t*x),-1,1)\n```\n\nquickly fails with \"ValueError: free variable: x\", which is good, but:\n\n\n```\nplot(lambda t: sin(t*x),-1,1)\n```\n\ntries to plot 400 values and finally gives \n\n```\nverbose 0 (3585: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3585: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nand an empty plot.  It would be nice to speed up that failure if you know an easy way.",
+    "body": "OK, this passes tests and it seems OK.  One thing I noticed, which I think can be considered beyond the scope of this patch, is that \n\n\n```\nvar('t')\nplot(sin(t*x),-1,1)\n```\nquickly fails with \"ValueError: free variable: x\", which is good, but:\n\n```\nplot(lambda t: sin(t*x),-1,1)\n```\ntries to plot 400 values and finally gives \n\n```\nverbose 0 (3585: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3585: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\nand an empty plot.  It would be nice to speed up that failure if you know an easy way.",
     "created_at": "2008-10-01T01:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3980",
     "type": "issue_comment",
@@ -303,26 +293,21 @@ archive/issue_comments_028574.json:
 OK, this passes tests and it seems OK.  One thing I noticed, which I think can be considered beyond the scope of this patch, is that 
 
 
-
 ```
 var('t')
 plot(sin(t*x),-1,1)
 ```
-
 quickly fails with "ValueError: free variable: x", which is good, but:
-
 
 ```
 plot(lambda t: sin(t*x),-1,1)
 ```
-
 tries to plot 400 values and finally gives 
 
 ```
 verbose 0 (3585: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.
 verbose 0 (3585: plot.py, _plot) Last error message: 'float() argument must be a string or a number'
 ```
-
 and an empty plot.  It would be nice to speed up that failure if you know an easy way.
 
 

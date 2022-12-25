@@ -92,7 +92,7 @@ You mean like evaluating it in nested form, similar to Horner's method? Do'h, I 
 archive/issue_comments_049618.json:
 ```json
 {
-    "body": "The patch contains the suggested fix by ylchapuy. It's ylchapuy's code, not mine, so authorship credit goes to ylchapuy. I'm just reviewing the code. Here are some timing statistics on sage.math:\n\n```\n# BEFORE\n\nsage: R = PolynomialRing(QQ, 'x')\nsage: %timeit R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n1000 loops, best of 3: 830 \u00b5s per loop\nsage: R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n-23/84*x^3 - 11/84*x^2 + 13/7*x + 1\nsage: R = PolynomialRing(GF(2**3,'a'), 'x')\nsage: a = R.base_ring().gen()\nsage: timeit(\"R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\")\n625 loops, best of 3: 112 \u00b5s per loop\nsage: R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\na^2*x^2 + a^2*x + a^2\n\n\n# AFTER\n\nsage: R = PolynomialRing(QQ, 'x')\nsage: %timeit R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n1000 loops, best of 3: 416 \u00b5s per loop\nsage: R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n-23/84*x^3 - 11/84*x^2 + 13/7*x + 1\nsage: R = PolynomialRing(GF(2**3,'a'), 'x')\nsage: a = R.base_ring().gen()\nsage: timeit(\"R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\")\n625 loops, best of 3: 86.2 \u00b5s per loop\nsage: R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\na^2*x^2 + a^2*x + a^2\n```\n\nSo efficiency gain of up to 50%. Positive review.",
+    "body": "The patch contains the suggested fix by ylchapuy. It's ylchapuy's code, not mine, so authorship credit goes to ylchapuy. I'm just reviewing the code. Here are some timing statistics on sage.math:\n\n```\n# BEFORE\n\nsage: R = PolynomialRing(QQ, 'x')\nsage: %timeit R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n1000 loops, best of 3: 830 \u00b5s per loop\nsage: R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n-23/84*x^3 - 11/84*x^2 + 13/7*x + 1\nsage: R = PolynomialRing(GF(2**3,'a'), 'x')\nsage: a = R.base_ring().gen()\nsage: timeit(\"R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\")\n625 loops, best of 3: 112 \u00b5s per loop\nsage: R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\na^2*x^2 + a^2*x + a^2\n\n\n# AFTER\n\nsage: R = PolynomialRing(QQ, 'x')\nsage: %timeit R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n1000 loops, best of 3: 416 \u00b5s per loop\nsage: R.lagrange_polynomial([(0,1),(2,2),(3,-2),(-4,9)])\n-23/84*x^3 - 11/84*x^2 + 13/7*x + 1\nsage: R = PolynomialRing(GF(2**3,'a'), 'x')\nsage: a = R.base_ring().gen()\nsage: timeit(\"R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\")\n625 loops, best of 3: 86.2 \u00b5s per loop\nsage: R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])\na^2*x^2 + a^2*x + a^2\n```\nSo efficiency gain of up to 50%. Positive review.",
     "created_at": "2009-06-06T00:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6229",
     "type": "issue_comment",
@@ -133,7 +133,6 @@ sage: timeit("R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])")
 sage: R.lagrange_polynomial([(a^2+a,a),(a,1),(a^2,a^2+a+1)])
 a^2*x^2 + a^2*x + a^2
 ```
-
 So efficiency gain of up to 50%. Positive review.
 
 

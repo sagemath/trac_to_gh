@@ -3,7 +3,7 @@
 archive/issues_001948.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.factor_integer(1/3)\nFractional ideal (3)^-1\nsage: K.factor_integer(1+a)\nFractional ideal (a + 1)\nsage: K.factor_integer(1+a/5)\n(Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1\nsage: \n```\n\n\nSo it needs to be named something else.  Suggestions welcome.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1948\n\n",
+    "body": "Assignee: @williamstein\n\nFor K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: K.factor_integer(1/3)\nFractional ideal (3)^-1\nsage: K.factor_integer(1+a)\nFractional ideal (a + 1)\nsage: K.factor_integer(1+a/5)\n(Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1\nsage: \n```\n\nSo it needs to be named something else.  Suggestions welcome.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/1948\n\n",
     "created_at": "2008-01-27T15:33:16Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 For K a number field, K.factor_integer slices, dices, and also factors rationals, elements of the number field, etc.:
 
-
 ```
 sage: K.<a> = NumberField(x^2 + 1)
 sage: K.factor_integer(1/3)
@@ -31,7 +30,6 @@ sage: K.factor_integer(1+a/5)
 (Fractional ideal (-3*a - 2)) * (Fractional ideal (a + 1)) * (Fractional ideal (-a - 2))^-1 * (Fractional ideal (2*a + 1))^-1
 sage: 
 ```
-
 
 So it needs to be named something else.  Suggestions welcome.  
 
@@ -334,7 +332,7 @@ Resolution: fixed
 archive/issue_comments_012370.json:
 ```json
 {
-    "body": "Replying to [comment:7 AlexGhitza]:\n> While working on something else, I realized that there are a few instances of factor_integer in ell_finite_field.py, which is now broken.  See the attached (trivial) patch.\n> \n> BTW, I checked and there are no other instances of factor_integer anywhere else in the Sage code (yes, I should have done that before...)\n> \n\nHi Alex,\n\nthose factor_integer instances do no longer exist in alpha4 [I assume John has rewritten that code in some other patch]:\n\n```\nsage-3.0.alpha4/devel/sage$ grep -r factor_integer *\nsage-3.0.alpha4/devel/sage$     \n```\n\nI did run `-t -long` on the tree after applying the inital two patches. So I am closing this again.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 AlexGhitza]:\n> While working on something else, I realized that there are a few instances of factor_integer in ell_finite_field.py, which is now broken.  See the attached (trivial) patch.\n> \n> BTW, I checked and there are no other instances of factor_integer anywhere else in the Sage code (yes, I should have done that before...)\n> \n\n\nHi Alex,\n\nthose factor_integer instances do no longer exist in alpha4 [I assume John has rewritten that code in some other patch]:\n\n```\nsage-3.0.alpha4/devel/sage$ grep -r factor_integer *\nsage-3.0.alpha4/devel/sage$     \n```\nI did run `-t -long` on the tree after applying the inital two patches. So I am closing this again.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T15:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1948",
     "type": "issue_comment",
@@ -349,6 +347,7 @@ Replying to [comment:7 AlexGhitza]:
 > BTW, I checked and there are no other instances of factor_integer anywhere else in the Sage code (yes, I should have done that before...)
 > 
 
+
 Hi Alex,
 
 those factor_integer instances do no longer exist in alpha4 [I assume John has rewritten that code in some other patch]:
@@ -357,7 +356,6 @@ those factor_integer instances do no longer exist in alpha4 [I assume John has r
 sage-3.0.alpha4/devel/sage$ grep -r factor_integer *
 sage-3.0.alpha4/devel/sage$     
 ```
-
 I did run `-t -long` on the tree after applying the inital two patches. So I am closing this again.
 
 Cheers,

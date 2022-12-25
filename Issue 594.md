@@ -52,7 +52,7 @@ Forgot to mention:
 archive/issue_comments_003050.json:
 ```json
 {
-    "body": "The patch adds a couple of debug print statements, e.g.,\n\n```\n  +        print \"INPUT\",x\n```\n",
+    "body": "The patch adds a couple of debug print statements, e.g.,\n\n```\n  +        print \"INPUT\",x\n```",
     "created_at": "2007-09-05T21:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/594",
     "type": "issue_comment",
@@ -69,13 +69,12 @@ The patch adds a couple of debug print statements, e.g.,
 
 
 
-
 ---
 
 archive/issue_comments_003051.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> The patch adds a couple of debug print statements, e.g.,\n> {{{\n>   +        print \"INPUT\",x\n> }}}\n\nand removes them again in the second patch in the file. `sage -upgrade` committed my unfinished business.",
+    "body": "Replying to [comment:2 was]:\n> The patch adds a couple of debug print statements, e.g.,\n> \n> ```\n>   +        print \"INPUT\",x\n> ```\n\n\nand removes them again in the second patch in the file. `sage -upgrade` committed my unfinished business.",
     "created_at": "2007-09-05T21:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/594",
     "type": "issue_comment",
@@ -86,9 +85,11 @@ archive/issue_comments_003051.json:
 
 Replying to [comment:2 was]:
 > The patch adds a couple of debug print statements, e.g.,
-> {{{
+> 
+> ```
 >   +        print "INPUT",x
-> }}}
+> ```
+
 
 and removes them again in the second patch in the file. `sage -upgrade` committed my unfinished business.
 

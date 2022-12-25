@@ -3,7 +3,7 @@
 archive/issues_008473.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIt would be great for those of us who have installed Sage to be able\nto double click on these files and have sage open them in the\nnotebook.\n\nSupoorting a command on the likes of\n\n\n```\nsage -notebook /path/to/worksheet.sws\n```\n\n\nwould be a very good step in this direction\n\nIssue created by migration from https://trac.sagemath.org/ticket/8473\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be great for those of us who have installed Sage to be able\nto double click on these files and have sage open them in the\nnotebook.\n\nSupoorting a command on the likes of\n\n```\nsage -notebook /path/to/worksheet.sws\n```\n\nwould be a very good step in this direction\n\nIssue created by migration from https://trac.sagemath.org/ticket/8473\n\n",
     "created_at": "2010-03-07T04:15:40Z",
     "labels": [
         "component: notebook",
@@ -24,11 +24,9 @@ notebook.
 
 Supoorting a command on the likes of
 
-
 ```
 sage -notebook /path/to/worksheet.sws
 ```
-
 
 would be a very good step in this direction
 
@@ -173,7 +171,7 @@ Changing assignee from @williamstein to @gvol.
 archive/issue_comments_076193.json:
 ```json
 {
-    "body": "Replying to [comment:6 iandrus]:\n> I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\nBut I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...",
+    "body": "Replying to [comment:6 iandrus]:\n> I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\n\nBut I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...",
     "created_at": "2010-12-29T17:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -184,6 +182,7 @@ archive/issue_comments_076193.json:
 
 Replying to [comment:6 iandrus]:
 > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.
+
 But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...
 
 
@@ -193,7 +192,7 @@ But I can imagine people definitely wanting to upload an sws file to a Sage inst
 archive/issue_comments_076194.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> Replying to [comment:6 iandrus]:\n> > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\n> But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...\n\nI was probably unclear.  With a file url, it would grab the file from the server rather than the local machine, so it's probably not what people want or expect at all.  e.g. if you try to upload file:///home/iandrus/sage/sws1.sws, this will only work if the machine the server is running on also has a file at /home/iandrus/sage/sws1.sws, and then only if the file is the same.  \n\nIt might be nice to add some way to upload a file to a remote server programmatically, but I think that entails logging in and then sending off a POST request from a script, so it has a different feel.  I tried writing a simple script using curl a while ago, but I couldn't get it to work for some reason.  Perhaps someone knows of a better/different way to accomplish it.\n\nYou are right about the security hole though, it's probably the least of our worries :-)",
+    "body": "Replying to [comment:7 kcrisman]:\n> Replying to [comment:6 iandrus]:\n> > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\n\n> But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...\n\nI was probably unclear.  With a file url, it would grab the file from the server rather than the local machine, so it's probably not what people want or expect at all.  e.g. if you try to upload file:///home/iandrus/sage/sws1.sws, this will only work if the machine the server is running on also has a file at /home/iandrus/sage/sws1.sws, and then only if the file is the same.  \n\nIt might be nice to add some way to upload a file to a remote server programmatically, but I think that entails logging in and then sending off a POST request from a script, so it has a different feel.  I tried writing a simple script using curl a while ago, but I couldn't get it to work for some reason.  Perhaps someone knows of a better/different way to accomplish it.\n\nYou are right about the security hole though, it's probably the least of our worries :-)",
     "created_at": "2010-12-29T17:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -205,6 +204,7 @@ archive/issue_comments_076194.json:
 Replying to [comment:7 kcrisman]:
 > Replying to [comment:6 iandrus]:
 > > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.
+
 > But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...
 
 I was probably unclear.  With a file url, it would grab the file from the server rather than the local machine, so it's probably not what people want or expect at all.  e.g. if you try to upload file:///home/iandrus/sage/sws1.sws, this will only work if the machine the server is running on also has a file at /home/iandrus/sage/sws1.sws, and then only if the file is the same.  
@@ -294,7 +294,7 @@ I added zip and txt files to the Mac App as well as support (icons etc.) for Cyt
 archive/issue_comments_076199.json:
 ```json
 {
-    "body": "I can taste it now that you reviewed #693.    This is great stuff, good work.\n\nOkay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\nI also have a couple questions, but they just indicate my lack of knowledge. \n* I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n\n```\n                        browse_to(old_interface, old_port, old_secure, '/') \n                        browse_to(old_interface, old_port, old_secure, startpath)\n```\n\n* You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n* Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n* I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\nI'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.",
+    "body": "I can taste it now that you reviewed #693.    This is great stuff, good work.\n\nOkay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\nI also have a couple questions, but they just indicate my lack of knowledge. \n* I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n\n```\n                        browse_to(old_interface, old_port, old_secure, '/') \n                        browse_to(old_interface, old_port, old_secure, startpath)\n```\n* You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n* Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n* I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\nI'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.",
     "created_at": "2011-03-25T03:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -314,7 +314,6 @@ I also have a couple questions, but they just indicate my lack of knowledge.
                         browse_to(old_interface, old_port, old_secure, '/') 
                         browse_to(old_interface, old_port, old_secure, startpath)
 ```
-
 * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.
 * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\ sheet.sws'
 * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
@@ -328,7 +327,7 @@ I'd be inclined to separate the new notebook functionality from adding clickable
 archive/issue_comments_076200.json:
 ```json
 {
-    "body": "This doesn't even work - it asks for a password:\n\n```\nnotebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)\n```\n\nwhile `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.",
+    "body": "This doesn't even work - it asks for a password:\n\n```\nnotebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)\n```\nwhile `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.",
     "created_at": "2011-03-25T03:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -342,7 +341,6 @@ This doesn't even work - it asks for a password:
 ```
 notebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)
 ```
-
 while `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.
 
 
@@ -370,7 +368,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076202.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> I can taste it now that you reviewed #693.    This is great stuff, good work.\n\n:-)\n\n> Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\nGood point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\n\n> I also have a couple questions, but they just indicate my lack of knowledge. \n>  * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n> {{{\n>                         browse_to(old_interface, old_port, old_secure, '/') \n>                         browse_to(old_interface, old_port, old_secure, startpath)\n> }}}\n\nI don't think that should matter, but I changed it to `'/'` since it makes more sense.  In an earlier version of the patch I think I appended to `startpath` and that's why it was empty.\n\n>  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n\nYou are right, there was a bug there.  I need it both places.  Thanks.\n\n>  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n\nYes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\n\n>  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\nI think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\n> I'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.\n\nThat's probably a good idea.  I'll split the extcode off into another ticket.",
+    "body": "Replying to [comment:13 kcrisman]:\n> I can taste it now that you reviewed #693.    This is great stuff, good work.\n\n\n:-)\n\n> Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\n\nGood point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\n\n> I also have a couple questions, but they just indicate my lack of knowledge. \n> * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n> \n> ```\n>                         browse_to(old_interface, old_port, old_secure, '/') \n>                         browse_to(old_interface, old_port, old_secure, startpath)\n> ```\n\n\nI don't think that should matter, but I changed it to `'/'` since it makes more sense.  In an earlier version of the patch I think I appended to `startpath` and that's why it was empty.\n\n>  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n\n\nYou are right, there was a bug there.  I need it both places.  Thanks.\n\n>  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n\n\nYes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\n\n>  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\n\nI think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\n> I'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.\n\n\nThat's probably a good idea.  I'll split the extcode off into another ticket.",
     "created_at": "2011-03-25T05:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -382,34 +380,42 @@ archive/issue_comments_076202.json:
 Replying to [comment:13 kcrisman]:
 > I can taste it now that you reviewed #693.    This is great stuff, good work.
 
+
 :-)
 
 > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  
 
+
 Good point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?
 
 > I also have a couple questions, but they just indicate my lack of knowledge. 
->  * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\`.  Will that matter somewhere for non-uploading situations?
-> {{{
+> * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\`.  Will that matter somewhere for non-uploading situations?
+> 
+> ```
 >                         browse_to(old_interface, old_port, old_secure, '/') 
 >                         browse_to(old_interface, old_port, old_secure, startpath)
-> }}}
+> ```
+
 
 I don't think that should matter, but I changed it to `'/'` since it makes more sense.  In an earlier version of the patch I think I appended to `startpath` and that's why it was empty.
 
 >  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.
 
+
 You are right, there was a bug there.  I need it both places.  Thanks.
 
 >  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\ sheet.sws'
+
 
 Yes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload="/path/to work sheet.sws"`.  I guess that's why we need documentation, eh? :-)
 
 >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
 
+
 I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.
 
 > I'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.
+
 
 That's probably a good idea.  I'll split the extcode off into another ticket.
 
@@ -438,7 +444,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076204.json:
 ```json
 {
-    "body": "> > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n> \n> Good point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\nNo, because that says the options are as in `notebook()` in the command line, which covers it.\n> >  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n> \n> You are right, there was a bug there.  I need it both places.  Thanks.\nGood.\n> >  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n> \n> Yes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\nHah!  But it's nice that this also works.\n> >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n> \n> I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\nHmm.  So if I use the upload= syntax I should be okay?",
+    "body": "> > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\n> \n> Good point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\n\nNo, because that says the options are as in `notebook()` in the command line, which covers it.\n> >  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n \n> \n> You are right, there was a bug there.  I need it both places.  Thanks.\n\nGood.\n> >  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n \n> \n> Yes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\n  \nHah!  But it's nice that this also works.\n> >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n \n> \n> I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\nHmm.  So if I use the upload= syntax I should be okay?",
     "created_at": "2011-03-25T15:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -448,18 +454,25 @@ archive/issue_comments_076204.json:
 ```
 
 > > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  
+
 > 
 > Good point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?
+
 No, because that says the options are as in `notebook()` in the command line, which covers it.
 > >  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.
+ 
 > 
 > You are right, there was a bug there.  I need it both places.  Thanks.
+
 Good.
 > >  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\ sheet.sws'
+ 
 > 
 > Yes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload="/path/to work sheet.sws"`.  I guess that's why we need documentation, eh? :-)
+  
 Hah!  But it's nice that this also works.
 > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
+ 
 > 
 > I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.
 Hmm.  So if I use the upload= syntax I should be okay?
@@ -471,7 +484,7 @@ Hmm.  So if I use the upload= syntax I should be okay?
 archive/issue_comments_076205.json:
 ```json
 {
-    "body": "> > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n> > \n> > I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\nYeah, you're right - I found a random new sagenb folder there! \n\nOne thing that happens is that your thing checks whether ANY other Sage server is running with the same folder of worksheets.  But I had a different Sage version already running through my usual !sage_notebook.sagenb, and that caused an error since it didn't have the syntax, I guess.  I don't know that that's a bug.\n\nI think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\nDownloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\nI think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n```\n\ngives \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n```\n\nSo we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.",
+    "body": "> > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n \n> > \n> > I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\n\nYeah, you're right - I found a random new sagenb folder there! \n\nOne thing that happens is that your thing checks whether ANY other Sage server is running with the same folder of worksheets.  But I had a different Sage version already running through my usual !sage_notebook.sagenb, and that caused an error since it didn't have the syntax, I guess.  I don't know that that's a bug.\n\nI think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\nDownloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\nI think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n```\ngives \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n```\nSo we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.",
     "created_at": "2011-03-25T15:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -481,8 +494,10 @@ archive/issue_comments_076205.json:
 ```
 
 > > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
+ 
 > > 
 > > I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.
+
 
 Yeah, you're right - I found a random new sagenb folder there! 
 
@@ -494,19 +509,16 @@ I think that the extra `/` is causing problems, though.  Here are two things.  T
 Downloads/sage-4.7.alpha1/sage -n upload="/Users/.../MAT338Day1-2011.sws"
 Downloads/sage-4.7.alpha1/sage -n upload="Users/.../MAT338Day1-2011.sws"
 ```
-
 I think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,
 
 ```
 Downloads/sage-4.7.alpha1/sage -n upload="~/Downloads/MAT338Day1-2011.sws"
 ```
-
 gives 
 
 ```
 exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'
 ```
-
 So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.
 
 
@@ -534,7 +546,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076207.json:
 ```json
 {
-    "body": "Replying to [comment:18 kcrisman]:\n> I think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n> {{{\n> Downloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n> Downloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n> }}}\n> I think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n> {{{\n> Downloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n> }}}\n> gives \n> {{{\n> exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n> }}}\n> So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.\n\nHmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed differences in URL handling on earlier version of OS X, so I'll go ahead a remove it.",
+    "body": "Replying to [comment:18 kcrisman]:\n> I think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n> \n> ```\n> Downloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n> Downloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n> ```\n> I think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n> \n> ```\n> Downloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n> ```\n> gives \n> \n> ```\n> exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n> ```\n> So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.\n\n\nHmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed differences in URL handling on earlier version of OS X, so I'll go ahead a remove it.",
     "created_at": "2011-03-25T17:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -545,19 +557,23 @@ archive/issue_comments_076207.json:
 
 Replying to [comment:18 kcrisman]:
 > I think that the extra `/` is causing problems, though.  Here are two things.  The second one works.
-> {{{
+> 
+> ```
 > Downloads/sage-4.7.alpha1/sage -n upload="/Users/.../MAT338Day1-2011.sws"
 > Downloads/sage-4.7.alpha1/sage -n upload="Users/.../MAT338Day1-2011.sws"
-> }}}
+> ```
 > I think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,
-> {{{
+> 
+> ```
 > Downloads/sage-4.7.alpha1/sage -n upload="~/Downloads/MAT338Day1-2011.sws"
-> }}}
+> ```
 > gives 
-> {{{
+> 
+> ```
 > exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'
-> }}}
+> ```
 > So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.
+
 
 Hmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed differences in URL handling on earlier version of OS X, so I'll go ahead a remove it.
 
@@ -604,7 +620,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076210.json:
 ```json
 {
-    "body": "Ivan, is it very hard to catch a certain kind of error?  I get \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n```\n\nif I try to upload it with \n\n```\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\nIf I try to upload with \n\n```\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n```\n\nI get \n\n```\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n```\n\nThe same if I do \n\n```\nsage: notebook(upload=\"...\")\n```\n\nSo here is what works for me.\n* old patch, not including first slash.\nHere is what doesn't work.\n* old patch with a slash.\n* new patch with or without slash.\nI'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.",
+    "body": "Ivan, is it very hard to catch a certain kind of error?  I get \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n```\nif I try to upload it with \n\n```\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\nIf I try to upload with \n\n```\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n```\nI get \n\n```\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n```\nThe same if I do \n\n```\nsage: notebook(upload=\"...\")\n```\nSo here is what works for me.\n* old patch, not including first slash.\nHere is what doesn't work.\n* old patch with a slash.\n* new patch with or without slash.\nI'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.",
     "created_at": "2011-04-02T02:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -618,31 +634,26 @@ Ivan, is it very hard to catch a certain kind of error?  I get
 ```
 exceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'
 ```
-
 if I try to upload it with 
 
 ```
 sage -n upload="Users/.../MAT338Day1-2011.sws"
 ```
-
 If I try to upload with 
 
 ```
 sage -n upload="/Users/.../MAT338Day1-2011.sws"
 ```
-
 I get 
 
 ```
 The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.
 ```
-
 The same if I do 
 
 ```
 sage: notebook(upload="...")
 ```
-
 So here is what works for me.
 * old patch, not including first slash.
 Here is what doesn't work.
@@ -657,7 +668,7 @@ I'm confused.  I really wanted to get this all reviewed but have no idea what is
 archive/issue_comments_076211.json:
 ```json
 {
-    "body": "Replying to [comment:22 kcrisman]:\n> Ivan, is it very hard to catch a certain kind of error?  I get \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n```\n\n> if I try to upload it with \n\n```\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\n\nThat's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\n\n> If I try to upload with \n\n```\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n```\n\n> I get \n\n```\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n```\n\n\nI was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\n> So here is what works for me.\n>  * old patch, not including first slash.\n> Here is what doesn't work.\n>  * old patch with a slash.\n>  * new patch with or without slash.\n> I'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.\n\nI don't understand why the old patch would work but not the new one.  If it's not the same problem as above then maybe you could try `sage --notebook upload=`localhost/Users/...`  That also works for me and it may work better on older versions of OS X.",
+    "body": "Replying to [comment:22 kcrisman]:\n> Ivan, is it very hard to catch a certain kind of error?  I get \n\n{{{\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n}}}\n> if I try to upload it with \n\n{{{\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n}}}\n\nThat's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\n\n> If I try to upload with \n\n{{{\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n}}}\n> I get \n\n{{{\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n}}}\n\nI was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\n> So here is what works for me.\n> * old patch, not including first slash.\n> Here is what doesn't work.\n> * old patch with a slash.\n> * new patch with or without slash.\n> I'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.\n\n\nI don't understand why the old patch would work but not the new one.  If it's not the same problem as above then maybe you could try `sage --notebook upload=`localhost/Users/...`  That also works for me and it may work better on older versions of OS X.",
     "created_at": "2011-04-09T20:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -669,40 +680,37 @@ archive/issue_comments_076211.json:
 Replying to [comment:22 kcrisman]:
 > Ivan, is it very hard to catch a certain kind of error?  I get 
 
-```
+{{{
 exceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'
-```
-
+}}}
 > if I try to upload it with 
 
-```
+{{{
 sage -n upload="Users/.../MAT338Day1-2011.sws"
-```
-
+}}}
 
 That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)
 
 > If I try to upload with 
 
-```
+{{{
 sage -n upload="/Users/.../MAT338Day1-2011.sws"
-```
-
+}}}
 > I get 
 
-```
+{{{
 The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.
-```
-
+}}}
 
 I was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?
 
 > So here is what works for me.
->  * old patch, not including first slash.
+> * old patch, not including first slash.
 > Here is what doesn't work.
->  * old patch with a slash.
->  * new patch with or without slash.
+> * old patch with a slash.
+> * new patch with or without slash.
 > I'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.
+
 
 I don't understand why the old patch would work but not the new one.  If it's not the same problem as above then maybe you could try `sage --notebook upload=`localhost/Users/...`  That also works for me and it may work better on older versions of OS X.
 
@@ -713,7 +721,7 @@ I don't understand why the old patch would work but not the new one.  If it's no
 archive/issue_comments_076212.json:
 ```json
 {
-    "body": "> That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\nOkay!\n> The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n> I was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\nAha.  Well, I don't have Sage.app even on one of the computers any more (though the icons remain for sws files! what's up with that?), but what did the trick was starting the notebook, getting the error message, leaving the notebook running, and then uploading with the correct syntax a second time.  \n\nHow do I even check if !SAGE_BROWSER is set?  I can't use the command line of that terminal while the server is running, and a new terminal won't have it defined, presumably.\n\nAnyway, this makes me more hopeful this is doable; however, there should not be any connection between having once downloaded the app bundle (perhaps immediately trashed, even) and this syntax working.",
+    "body": "> That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\n\nOkay!\n> The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n> I was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\n\nAha.  Well, I don't have Sage.app even on one of the computers any more (though the icons remain for sws files! what's up with that?), but what did the trick was starting the notebook, getting the error message, leaving the notebook running, and then uploading with the correct syntax a second time.  \n\nHow do I even check if !SAGE_BROWSER is set?  I can't use the command line of that terminal while the server is running, and a new terminal won't have it defined, presumably.\n\nAnyway, this makes me more hopeful this is doable; however, there should not be any connection between having once downloaded the app bundle (perhaps immediately trashed, even) and this syntax working.",
     "created_at": "2011-04-15T16:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -723,9 +731,11 @@ archive/issue_comments_076212.json:
 ```
 
 > That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)
+
 Okay!
 > The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.
 > I was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?
+
 
 Aha.  Well, I don't have Sage.app even on one of the computers any more (though the icons remain for sws files! what's up with that?), but what did the trick was starting the notebook, getting the error message, leaving the notebook running, and then uploading with the correct syntax a second time.  
 
@@ -802,7 +812,7 @@ See #11026 for another weird type of error with uploading that only seems to man
 archive/issue_comments_076216.json:
 ```json
 {
-    "body": "I'm getting some other weird behavior, which I think is the same as the previous comment, but I can't be sure because it occurred in a different situation and a different computer.  I get \"The resource /upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws cannot be found.\" when going to\n\n```\nhttp://localhost:8000/upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws\n```\n\nThis is after a message about FF not opening because there is already one running.    It seems to happen when a separate Mac app is open (not necessarily with server running).",
+    "body": "I'm getting some other weird behavior, which I think is the same as the previous comment, but I can't be sure because it occurred in a different situation and a different computer.  I get \"The resource /upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws cannot be found.\" when going to\n\n```\nhttp://localhost:8000/upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws\n```\nThis is after a message about FF not opening because there is already one running.    It seems to happen when a separate Mac app is open (not necessarily with server running).",
     "created_at": "2011-08-02T12:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -816,7 +826,6 @@ I'm getting some other weird behavior, which I think is the same as the previous
 ```
 http://localhost:8000/upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws
 ```
-
 This is after a message about FF not opening because there is already one running.    It seems to happen when a separate Mac app is open (not necessarily with server running).
 
 
@@ -869,7 +878,7 @@ I figure this goes back to 'needs review' once (if) it's clarified what patches 
 archive/issue_comments_076219.json:
 ```json
 {
-    "body": "Also, those patches should probably be merged into one?  Anyway, I found at least one error there - \n\n```\n``http://localhost:8000/upload`` or to fetching\n```\n\nbut in the new notebook apparently (?) it's port 8080.",
+    "body": "Also, those patches should probably be merged into one?  Anyway, I found at least one error there - \n\n```\n``http://localhost:8000/upload`` or to fetching\n```\nbut in the new notebook apparently (?) it's port 8080.",
     "created_at": "2012-01-24T02:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -883,7 +892,6 @@ Also, those patches should probably be merged into one?  Anyway, I found at leas
 ```
 ``http://localhost:8000/upload`` or to fetching
 ```
-
 but in the new notebook apparently (?) it's port 8080.
 
 
@@ -893,7 +901,7 @@ but in the new notebook apparently (?) it's port 8080.
 archive/issue_comments_076220.json:
 ```json
 {
-    "body": "Replying to [comment:31 kcrisman]:\n> Also, those patches should probably be merged into one?  \n\nYes.  I'm not sure if I can do that now that I have pushed to github though.\n\n> Anyway, I found at least one error there - \n> {{{\n> ``http://localhost:8000/upload`` or to fetching\n> }}}\n> but in the new notebook apparently (?) it's port 8080.\n\nFixed, thanks.",
+    "body": "Replying to [comment:31 kcrisman]:\n> Also, those patches should probably be merged into one?  \n\n\nYes.  I'm not sure if I can do that now that I have pushed to github though.\n\n> Anyway, I found at least one error there - \n> \n> ```\n> ``http://localhost:8000/upload`` or to fetching\n> ```\n> but in the new notebook apparently (?) it's port 8080.\n\n\nFixed, thanks.",
     "created_at": "2012-01-24T07:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -905,13 +913,16 @@ archive/issue_comments_076220.json:
 Replying to [comment:31 kcrisman]:
 > Also, those patches should probably be merged into one?  
 
+
 Yes.  I'm not sure if I can do that now that I have pushed to github though.
 
 > Anyway, I found at least one error there - 
-> {{{
+> 
+> ```
 > ``http://localhost:8000/upload`` or to fetching
-> }}}
+> ```
 > but in the new notebook apparently (?) it's port 8080.
+
 
 Fixed, thanks.
 
@@ -922,7 +933,7 @@ Fixed, thanks.
 archive/issue_comments_076221.json:
 ```json
 {
-    "body": "Replying to [comment:30 kcrisman]:\n> This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).\n> \n> I figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.\n\nWe shouldn't need any of these patches here since the extcode patch was moved to #11026.",
+    "body": "Replying to [comment:30 kcrisman]:\n> This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).\n> \n> I figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.\n\n\nWe shouldn't need any of these patches here since the extcode patch was moved to #11026.",
     "created_at": "2012-01-24T07:57:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8473",
     "type": "issue_comment",
@@ -935,6 +946,7 @@ Replying to [comment:30 kcrisman]:
 > This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).
 > 
 > I figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.
+
 
 We shouldn't need any of these patches here since the extcode patch was moved to #11026.
 

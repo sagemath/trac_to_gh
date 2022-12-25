@@ -3,7 +3,7 @@
 archive/issues_007941.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nline 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:\n\n```\n    if len(failed) == 0:\n        if interrupt == False:\n            print \"All tests passed!\"\n        else:\n            print \"Keyboard Interrupt: All tests that ran passed.\"\n        #Only update timings if we are doing something standard\n        if opts==\"-long\" or len(opts)==0:\n            with open(time_file_name,\"w\") as time_file:\n                pickle.dump(time_dict, time_file)\n                print \"Timings have been updated.\"\n    else:\n        if interrupt:\n            print \"Keyboard Interrupt, not all tests ran\"\n        print \"\\nThe following tests failed:\\n\"\n        for i in range(len(failed)):\n               print \"\\t\", failed[i]\n        print \"-\"*int(70)\n```\n\n\nThe reason I want this is that if you're making lots of changes and testing frequently, and you never get a completely clean run, all the good files still run in a random order, which is inefficient.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7941\n\n",
+    "body": "Assignee: @aghitza\n\nline 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:\n\n```\n    if len(failed) == 0:\n        if interrupt == False:\n            print \"All tests passed!\"\n        else:\n            print \"Keyboard Interrupt: All tests that ran passed.\"\n        #Only update timings if we are doing something standard\n        if opts==\"-long\" or len(opts)==0:\n            with open(time_file_name,\"w\") as time_file:\n                pickle.dump(time_dict, time_file)\n                print \"Timings have been updated.\"\n    else:\n        if interrupt:\n            print \"Keyboard Interrupt, not all tests ran\"\n        print \"\\nThe following tests failed:\\n\"\n        for i in range(len(failed)):\n               print \"\\t\", failed[i]\n        print \"-\"*int(70)\n```\n\nThe reason I want this is that if you're making lots of changes and testing frequently, and you never get a completely clean run, all the good files still run in a random order, which is inefficient.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7941\n\n",
     "created_at": "2010-01-16T03:21:55Z",
     "labels": [
         "component: algebra",
@@ -39,7 +39,6 @@ line 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:
                print "\t", failed[i]
         print "-"*int(70)
 ```
-
 
 The reason I want this is that if you're making lots of changes and testing frequently, and you never get a completely clean run, all the good files still run in a random order, which is inefficient.
 

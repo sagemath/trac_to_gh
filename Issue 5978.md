@@ -87,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_047390.json:
 ```json
 {
-    "body": "Fixed by making the quotient by a zero ideal return the original ring.\n\n```\nsage: ZZ.quotient(ZZ.zero_ideal()) is ZZ\nTrue\nsage: R = QQ['x']\nsage: R.quotient(R.zero_ideal()) is R\nTrue\n```\n",
+    "body": "Fixed by making the quotient by a zero ideal return the original ring.\n\n```\nsage: ZZ.quotient(ZZ.zero_ideal()) is ZZ\nTrue\nsage: R = QQ['x']\nsage: R.quotient(R.zero_ideal()) is R\nTrue\n```",
     "created_at": "2012-11-18T07:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ sage: R = QQ['x']
 sage: R.quotient(R.zero_ideal()) is R
 True
 ```
-
 
 
 

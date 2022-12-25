@@ -3,7 +3,7 @@
 archive/issues_003902.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nRight now we have\n\n```\n      \\item[clang] may be either c or c++ indicating whether a C or\n                   C++ compiler should be used\n\n      \\item[clib] additional libraries to be linked in, the space\n                  separated list is split and passed to distutils.\n\n      \\item[cinclude] additional directories to search for header\n                      files. The space separated list is split and\n                      passed to distutils.\n```\n\nand we need\n\n```\n      \\item[clibinclude] additional directories to search for library\n                      files. The space separated list is split and\n                      passed to distutils.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3902\n\n",
+    "body": "Assignee: cwitty\n\nRight now we have\n\n```\n      \\item[clang] may be either c or c++ indicating whether a C or\n                   C++ compiler should be used\n\n      \\item[clib] additional libraries to be linked in, the space\n                  separated list is split and passed to distutils.\n\n      \\item[cinclude] additional directories to search for header\n                      files. The space separated list is split and\n                      passed to distutils.\n```\nand we need\n\n```\n      \\item[clibinclude] additional directories to search for library\n                      files. The space separated list is split and\n                      passed to distutils.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3902\n\n",
     "created_at": "2008-08-19T21:27:53Z",
     "labels": [
         "component: misc",
@@ -31,7 +31,6 @@ Right now we have
                       files. The space separated list is split and
                       passed to distutils.
 ```
-
 and we need
 
 ```
@@ -39,7 +38,6 @@ and we need
                       files. The space separated list is split and
                       passed to distutils.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3902
 

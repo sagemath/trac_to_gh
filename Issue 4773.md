@@ -3,7 +3,7 @@
 archive/issues_004773.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: w = random_matrix(GF(3),3,4)\nsage: w.determinant()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4773\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: w = random_matrix(GF(3),3,4)\nsage: w.determinant()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4773\n\n",
     "created_at": "2008-12-12T19:34:29Z",
     "labels": [
         "component: linear algebra",
@@ -18,13 +18,11 @@ archive/issues_004773.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: w = random_matrix(GF(3),3,4)
 sage: w.determinant()
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4773
 

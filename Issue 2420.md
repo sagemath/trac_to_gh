@@ -3,7 +3,7 @@
 archive/issues_002420.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @mwhansen @loefflerd\n\nKeywords: gap interface, polynomial rings, number fields\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @wdjoyner @mwhansen @loefflerd\n\nKeywords: gap interface, polynomial rings, number fields\n\nUp to now, the gap interface did not work on polynomial rings over number fields. This patch extends the interface accordingly, so that now the following works.\nUnivariate:\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree 4>, [\"x\"] )\nsage: p=R('zeta8^2*x+zeta8')\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\nMultivariate:\n\n```\nsage: R=PolynomialRing(F,'x,y')\nsage: gap(R)\nPolynomialRing( <algebraic extension over the Rationals of degree\n4>, [\"x\", \"y\"] )\nsage: p=R('zeta8*x+zeta8^2*y')^2\nsage: gap(p)\n(zeta8^2)*x^2+(2*zeta8^3)*x*y-y^2\nsage: p\nzeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2\n```\n\nThe patches also provide doc tests.\n\nHowever, there is one problem: On my machine, the doc tests of sage.rings.polynomial.polynomial_element.pyx trigger the bug reported in #2419.\nThat bug seems to occur only on few machines (up to now, only one other person can reproduce #2419). \n\nSo, there should be discussion how to deal with that issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2420\n\n",
     "created_at": "2008-03-07T09:05:58Z",
     "labels": [
         "component: interfaces"
@@ -36,7 +36,6 @@ sage: p^3
 (-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3
 ```
 
-
 Multivariate:
 
 ```
@@ -50,7 +49,6 @@ sage: gap(p)
 sage: p
 zeta8^2*x^2 + 2*zeta8^3*x*y + (-1)*y^2
 ```
-
 
 The patches also provide doc tests.
 
@@ -70,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2420
 archive/issue_comments_016324.json:
 ```json
 {
-    "body": "The _gap_init_ methods in a/sage/rings/polynomial/multi_polynomial_element.py and a/sage/rings/polynomial/multi_polynomial_ring_generic.pyx need doctests.  Also, the\n\"proper\" way to do\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: p=R('zeta8^2*x+zeta8')\n```\n\nin Sage is\n\n```\nsage: F.<zeta8>=CyclotomicField(8)\nsage: R.<x>=PolynomialRing(F)\nsage: p=zeta8^2*x+zeta8\n```\n",
+    "body": "The _gap_init_ methods in a/sage/rings/polynomial/multi_polynomial_element.py and a/sage/rings/polynomial/multi_polynomial_ring_generic.pyx need doctests.  Also, the\n\"proper\" way to do\n\n```\nsage: F=CyclotomicField(8)\nsage: R=PolynomialRing(F,'x')\nsage: p=R('zeta8^2*x+zeta8')\n```\nin Sage is\n\n```\nsage: F.<zeta8>=CyclotomicField(8)\nsage: R.<x>=PolynomialRing(F)\nsage: p=zeta8^2*x+zeta8\n```",
     "created_at": "2008-03-07T11:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -87,7 +85,6 @@ sage: F=CyclotomicField(8)
 sage: R=PolynomialRing(F,'x')
 sage: p=R('zeta8^2*x+zeta8')
 ```
-
 in Sage is
 
 ```
@@ -95,7 +92,6 @@ sage: F.<zeta8>=CyclotomicField(8)
 sage: R.<x>=PolynomialRing(F)
 sage: p=zeta8^2*x+zeta8
 ```
-
 
 
 
@@ -124,7 +120,7 @@ new patch, adding more doctests, should apply to sage 2.10.3.rc2
 archive/issue_comments_016326.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhansen]:\n> The _gap_init_ methods in a/sage/rings/polynomial/multi_polynomial_element.py and a/sage/rings/polynomial/multi_polynomial_ring_generic.pyx need doctests.  \n\nThank you, simply i forgot to include them - the new patch contains tests, it uses the \"proper\" sage syntax you indicated, and also i had to put a bracket in a different place in _gap_init_ for multi_polynomial_element.py\n\nOne more example: With the new patch, it is even possible to have polynomial rings over polynomial rings over ... :\n\n```\nsage: F.<c> = CyclotomicField(8)\nsage: r.<a,b> = PolynomialRing(F)\nsage: R.<x,y> = PolynomialRing(r)\nsage: p=R.random_element()+c^2*R.random_element()\nsage: g=gap(p)\nsage: p\n((-2*c^2)*a^2 + (-2*c^2)*b^2 + c^2*a + (-c^2)*b - 2*c^2)*x^2 + (2*c^2*a^2 + (-2*c^2 - 2)*a*b + (2*c^2 + 2)*b^2 + c^2*a + (-1)*b + 2*c^2 - 2)*x*y + ((-2*c^2)*a^2 + 2*c^2*a*b + (2*c^2 - 1)*b^2 + (2*c^2 - 2)*a + b + 2)*y^2 + (2*b^2 + a + 1)*x + ((-2*c^2 + 2)*a^2 + (-c^2 - 2)*a*b + (-c^2 + 1)*b^2 + (-c^2 + 2)*a + c^2*b - 2)*y + (-2*c^2)*a^2 + (-2*c^2 - 2)*a*b + c^2*b^2 + a + (-2*c^2)*b + 2*c^2 + 1\nsage: g\n(((-2*c^2))*a^2+((-2*c^2))*b^2+(c^2)*a+((-1*c^2))*b+((-2*c^2)))*x^2+((2*c^2)*a^2+((-2-2*c^2))*a*b+((2+2*c^2))*b^2+(c^2)*a-b+((-2+2*c^2)))*x*y+(((-2*c^2))*a^2+(2*c^2)*a*b+((-1+2*c^2))*b^2+((-2+2*c^2))*a+b+!2)*y^2+(!2*b^2+a+!1)*x+(((2-2*c^2))*a^2+((-2-1*c^2))*a*b+((1-1*c^2))*b^2+((2-1*c^2))*a+(c^2)*b+(!-2))*y+(((-2*c^2))*a^2+((-2-2*c^2))*a*b+(c^2)*b^2+a+((-2*c^2))*b+((1+2*c^2)))\nsage: g^3==gap(p^3)\nTrue\n```\n",
+    "body": "Replying to [comment:1 mhansen]:\n> The _gap_init_ methods in a/sage/rings/polynomial/multi_polynomial_element.py and a/sage/rings/polynomial/multi_polynomial_ring_generic.pyx need doctests.  \n\n\nThank you, simply i forgot to include them - the new patch contains tests, it uses the \"proper\" sage syntax you indicated, and also i had to put a bracket in a different place in _gap_init_ for multi_polynomial_element.py\n\nOne more example: With the new patch, it is even possible to have polynomial rings over polynomial rings over ... :\n\n```\nsage: F.<c> = CyclotomicField(8)\nsage: r.<a,b> = PolynomialRing(F)\nsage: R.<x,y> = PolynomialRing(r)\nsage: p=R.random_element()+c^2*R.random_element()\nsage: g=gap(p)\nsage: p\n((-2*c^2)*a^2 + (-2*c^2)*b^2 + c^2*a + (-c^2)*b - 2*c^2)*x^2 + (2*c^2*a^2 + (-2*c^2 - 2)*a*b + (2*c^2 + 2)*b^2 + c^2*a + (-1)*b + 2*c^2 - 2)*x*y + ((-2*c^2)*a^2 + 2*c^2*a*b + (2*c^2 - 1)*b^2 + (2*c^2 - 2)*a + b + 2)*y^2 + (2*b^2 + a + 1)*x + ((-2*c^2 + 2)*a^2 + (-c^2 - 2)*a*b + (-c^2 + 1)*b^2 + (-c^2 + 2)*a + c^2*b - 2)*y + (-2*c^2)*a^2 + (-2*c^2 - 2)*a*b + c^2*b^2 + a + (-2*c^2)*b + 2*c^2 + 1\nsage: g\n(((-2*c^2))*a^2+((-2*c^2))*b^2+(c^2)*a+((-1*c^2))*b+((-2*c^2)))*x^2+((2*c^2)*a^2+((-2-2*c^2))*a*b+((2+2*c^2))*b^2+(c^2)*a-b+((-2+2*c^2)))*x*y+(((-2*c^2))*a^2+(2*c^2)*a*b+((-1+2*c^2))*b^2+((-2+2*c^2))*a+b+!2)*y^2+(!2*b^2+a+!1)*x+(((2-2*c^2))*a^2+((-2-1*c^2))*a*b+((1-1*c^2))*b^2+((2-1*c^2))*a+(c^2)*b+(!-2))*y+(((-2*c^2))*a^2+((-2-2*c^2))*a*b+(c^2)*b^2+a+((-2*c^2))*b+((1+2*c^2)))\nsage: g^3==gap(p^3)\nTrue\n```",
     "created_at": "2008-03-08T00:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -135,6 +131,7 @@ archive/issue_comments_016326.json:
 
 Replying to [comment:1 mhansen]:
 > The _gap_init_ methods in a/sage/rings/polynomial/multi_polynomial_element.py and a/sage/rings/polynomial/multi_polynomial_ring_generic.pyx need doctests.  
+
 
 Thank you, simply i forgot to include them - the new patch contains tests, it uses the "proper" sage syntax you indicated, and also i had to put a bracket in a different place in _gap_init_ for multi_polynomial_element.py
 
@@ -153,7 +150,6 @@ sage: g
 sage: g^3==gap(p^3)
 True
 ```
-
 
 
 
@@ -179,7 +175,7 @@ archive/issue_events_005709.json:
 archive/issue_comments_016327.json:
 ```json
 {
-    "body": "I expected that with William's patch from #2419 the doc tests of polynomial_element.pyx would work, but they don't. And the strange thing is that they *do* work when sage is started from scratch:\n\nExample from _gap_init_():\n\n```\nsage: F.<zeta8>=CyclotomicField(8)\nsage: R.<x>=F[]\nsage: p=zeta8^2*x+zeta8\nsage: p._gap_init_()\n'(GeneratorsOfField($sage2)[1]*IndeterminatesOfPolynomialRing($sage3)[1]^0)+(GeneratorsOfField($sage2)[1]^2*IndeterminatesOfPolynomialRing($sage3)[1]^1)'\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\n\nExample from _gap_():\n\n```\nsage: R.<y> = ZZ[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f); g\ny^3-17*y+5\nsage: f._gap_init_()\n'(5*IndeterminatesOfPolynomialRing($sage6)[1]^0)+(-17*IndeterminatesOfPolynomialRing($sage6)[1]^1)+(0*IndeterminatesOfPolynomialRing($sage6)[1]^2)+(1*IndeterminatesOfPolynomialRing($sage6)[1]^3)'\nsage: R.<z> = ZZ[]\nsage: gap(R)\nPolynomialRing( Integers, [\"z\"] )\nsage: g\ny^3-17*y+5\nsage: gap(z^2 + z)\nz^2+z\nsage: R.<y> = GF(7)[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f); g\ny^3+Z(7)^4*y+Z(7)^5\nsage: g.Factors()\n[ y+Z(7)^0, y+Z(7)^0, y+Z(7)^5 ]\nsage: f.factor()\n(y + 5) * (y + 1)^2\n```\n\n\nAgh! I got it! If one now does the examples for resultant, it crashes (at least on my machine):\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + x + 1;  g = x^3 - x - 1\nsage: r = f.resultant(g); r\n-8\nsage: r.parent() is QQ\nTrue\nsage: R.<a> = QQ[]\nsage: S.<x> = R[]\nsage: f = x^2 + a; g = x^3 + a\nsage: r = f.resultant(g); r\na^3 + a^2\nsage: r.parent() is R\nTrue\nsage: R.<a, b> = QQ[]\nsage: S.<x> = R[]\nsage: f = x^2 + a; g = x^3 + b\nsage: r = f.resultant(g); r\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n...\n<type 'exceptions.NameError'>: name 'Mod' is not defined\n```\n\n\nBut if sage is restarted, the example for resultant works fine!\n\n**Conclusion**:\n* The patch from #2419 doesn't solve the problem. \n* Probably it is needed to do a synchronization (similar to #2419) for the gap interface as well.",
+    "body": "I expected that with William's patch from #2419 the doc tests of polynomial_element.pyx would work, but they don't. And the strange thing is that they *do* work when sage is started from scratch:\n\nExample from _gap_init_():\n\n```\nsage: F.<zeta8>=CyclotomicField(8)\nsage: R.<x>=F[]\nsage: p=zeta8^2*x+zeta8\nsage: p._gap_init_()\n'(GeneratorsOfField($sage2)[1]*IndeterminatesOfPolynomialRing($sage3)[1]^0)+(GeneratorsOfField($sage2)[1]^2*IndeterminatesOfPolynomialRing($sage3)[1]^1)'\nsage: gap(p)^3\n((-1*zeta8^2))*x^3+((-3*zeta8))*x^2+(!-3)*x+(zeta8^3)\nsage: p^3\n(-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3\n```\n\nExample from _gap_():\n\n```\nsage: R.<y> = ZZ[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f); g\ny^3-17*y+5\nsage: f._gap_init_()\n'(5*IndeterminatesOfPolynomialRing($sage6)[1]^0)+(-17*IndeterminatesOfPolynomialRing($sage6)[1]^1)+(0*IndeterminatesOfPolynomialRing($sage6)[1]^2)+(1*IndeterminatesOfPolynomialRing($sage6)[1]^3)'\nsage: R.<z> = ZZ[]\nsage: gap(R)\nPolynomialRing( Integers, [\"z\"] )\nsage: g\ny^3-17*y+5\nsage: gap(z^2 + z)\nz^2+z\nsage: R.<y> = GF(7)[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f); g\ny^3+Z(7)^4*y+Z(7)^5\nsage: g.Factors()\n[ y+Z(7)^0, y+Z(7)^0, y+Z(7)^5 ]\nsage: f.factor()\n(y + 5) * (y + 1)^2\n```\n\nAgh! I got it! If one now does the examples for resultant, it crashes (at least on my machine):\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + x + 1;  g = x^3 - x - 1\nsage: r = f.resultant(g); r\n-8\nsage: r.parent() is QQ\nTrue\nsage: R.<a> = QQ[]\nsage: S.<x> = R[]\nsage: f = x^2 + a; g = x^3 + a\nsage: r = f.resultant(g); r\na^3 + a^2\nsage: r.parent() is R\nTrue\nsage: R.<a, b> = QQ[]\nsage: S.<x> = R[]\nsage: f = x^2 + a; g = x^3 + b\nsage: r = f.resultant(g); r\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n...\n<type 'exceptions.NameError'>: name 'Mod' is not defined\n```\n\nBut if sage is restarted, the example for resultant works fine!\n\n**Conclusion**:\n* The patch from #2419 doesn't solve the problem. \n* Probably it is needed to do a synchronization (similar to #2419) for the gap interface as well.",
     "created_at": "2008-03-13T10:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -203,7 +199,6 @@ sage: gap(p)^3
 sage: p^3
 (-zeta8^2)*x^3 + (-3*zeta8)*x^2 + (-3)*x + zeta8^3
 ```
-
 
 Example from _gap_():
 
@@ -231,7 +226,6 @@ sage: f.factor()
 (y + 5) * (y + 1)^2
 ```
 
-
 Agh! I got it! If one now does the examples for resultant, it crashes (at least on my machine):
 
 ```
@@ -258,7 +252,6 @@ sage: r = f.resultant(g); r
 <type 'exceptions.NameError'>: name 'Mod' is not defined
 ```
 
-
 But if sage is restarted, the example for resultant works fine!
 
 **Conclusion**:
@@ -272,7 +265,7 @@ But if sage is restarted, the example for resultant works fine!
 archive/issue_comments_016328.json:
 ```json
 {
-    "body": "Note that in the above example, eventually R has no dictionary, `hasattr(R,'__dict__')` is False!\n\nSomething else seems very strange to me. In my patch i define _gap_init_() as method for a polynomial ring like that:\n\n```\ndef _gap_init_(self):\n    return 'PolynomialRing(%s, [\"%s\"])'%(sage.interfaces.gap.gap(self.base_ring()).name(), self.variable_name())\n```\n\n\nIf i define this function in sage (i.e., not as a method), i get\n\n```\nsage: R.<y> = GF(7)[]\nsage: gap(_gap_init_(R)).name()\n'$sage2'\nsage: gap(_gap_init_(R)).name()\n'$sage2'\n```\n\nso, the gap name is cached. But if _gap_init_ is a method of R, i obtain (re-starting sage)\n\n```\nsage: R.<y> = GF(7)[]\nsage: gap(R).name()\n'$sage2'\nsage: gap(R).name()\n'$sage3'\nsage: gap(R).name()\n'$sage3'\n```\n\n\nHence, it seems that gap(R) doesn't properly caches the things.\n\nSorry that my post is rather confused, but this is what i am now.",
+    "body": "Note that in the above example, eventually R has no dictionary, `hasattr(R,'__dict__')` is False!\n\nSomething else seems very strange to me. In my patch i define _gap_init_() as method for a polynomial ring like that:\n\n```\ndef _gap_init_(self):\n    return 'PolynomialRing(%s, [\"%s\"])'%(sage.interfaces.gap.gap(self.base_ring()).name(), self.variable_name())\n```\n\nIf i define this function in sage (i.e., not as a method), i get\n\n```\nsage: R.<y> = GF(7)[]\nsage: gap(_gap_init_(R)).name()\n'$sage2'\nsage: gap(_gap_init_(R)).name()\n'$sage2'\n```\nso, the gap name is cached. But if _gap_init_ is a method of R, i obtain (re-starting sage)\n\n```\nsage: R.<y> = GF(7)[]\nsage: gap(R).name()\n'$sage2'\nsage: gap(R).name()\n'$sage3'\nsage: gap(R).name()\n'$sage3'\n```\n\nHence, it seems that gap(R) doesn't properly caches the things.\n\nSorry that my post is rather confused, but this is what i am now.",
     "created_at": "2008-03-13T12:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -290,7 +283,6 @@ def _gap_init_(self):
     return 'PolynomialRing(%s, ["%s"])'%(sage.interfaces.gap.gap(self.base_ring()).name(), self.variable_name())
 ```
 
-
 If i define this function in sage (i.e., not as a method), i get
 
 ```
@@ -300,7 +292,6 @@ sage: gap(_gap_init_(R)).name()
 sage: gap(_gap_init_(R)).name()
 '$sage2'
 ```
-
 so, the gap name is cached. But if _gap_init_ is a method of R, i obtain (re-starting sage)
 
 ```
@@ -312,7 +303,6 @@ sage: gap(R).name()
 sage: gap(R).name()
 '$sage3'
 ```
-
 
 Hence, it seems that gap(R) doesn't properly caches the things.
 
@@ -343,7 +333,7 @@ Changing keywords from "gap interface, polynomial rings, number fields" to "gap 
 archive/issue_comments_016330.json:
 ```json
 {
-    "body": "I finally resumed work on this ticket. It now depends on #8909 and #9423. Therefore, I added all people who commented on these tickets as Cc here. I hope you don't mind.\n\nThe things that I announced above are still working (main difference: due to #8909, Sage's cyclotomic fields are now represented as cyclotomic fields in GAP).\n\nHowever, the doctest trouble persist, so, it still is \"needs_work\". But I was able to narrow the problem down.\n\nApparently it is a side effect of GAP on Pari. After two days of work, I found that it is triggered by two *different* doctests in sage/rings/polynomial/polynomial_element.pyx, namely the test for `_gap_()` and for `resultant()`.\n\nIt boils down to the following:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()   # this is fine\nb\nsage: R.<y> = GF(7)[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f)   # this uses the new patch\nsage: f.factor()   # this uses pari\n(y + 5) * (y + 1)^2\nsage: R.<a, b> = QQ[]\nsage: b._pari_()   # this is a disaster!\nMod(3, 7)\n```\n\n\nDoes any of you have an explanation for this?\n\nCheers,\n\nSimon",
+    "body": "I finally resumed work on this ticket. It now depends on #8909 and #9423. Therefore, I added all people who commented on these tickets as Cc here. I hope you don't mind.\n\nThe things that I announced above are still working (main difference: due to #8909, Sage's cyclotomic fields are now represented as cyclotomic fields in GAP).\n\nHowever, the doctest trouble persist, so, it still is \"needs_work\". But I was able to narrow the problem down.\n\nApparently it is a side effect of GAP on Pari. After two days of work, I found that it is triggered by two *different* doctests in sage/rings/polynomial/polynomial_element.pyx, namely the test for `_gap_()` and for `resultant()`.\n\nIt boils down to the following:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()   # this is fine\nb\nsage: R.<y> = GF(7)[]\nsage: f = y^3 - 17*y + 5\nsage: g = gap(f)   # this uses the new patch\nsage: f.factor()   # this uses pari\n(y + 5) * (y + 1)^2\nsage: R.<a, b> = QQ[]\nsage: b._pari_()   # this is a disaster!\nMod(3, 7)\n```\n\nDoes any of you have an explanation for this?\n\nCheers,\n\nSimon",
     "created_at": "2010-07-06T14:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -376,7 +366,6 @@ sage: b._pari_()   # this is a disaster!
 Mod(3, 7)
 ```
 
-
 Does any of you have an explanation for this?
 
 Cheers,
@@ -390,7 +379,7 @@ Simon
 archive/issue_comments_016331.json:
 ```json
 {
-    "body": "OK, problem solved!\n\nIt is a bug in {{IntegerMod_int.log()}}}, which had a side effect in PARI and is fixed at #9438. Apply `trac_2420_GAP_interface_polynomials.patch` after applying the patches from #8909, #9423 and #9438, and `sage -testall` passes!\n\nHere is a summary of the features:\n\nUnivariate\n\n```\nsage: F.<zeta> = CyclotomicField(8)\nsage: R.<x> = F[]\nsage: gap(R)\nPolynomialRing( CF(8), [\"x\"] )\nsage: p = zeta^2*x+2*zeta\nsage: gap(p)^3\n(-E(4))*x^3+(-6*E(8))*x^2-12*x+8*E(8)^3\nsage: p^3\n-zeta^2*x^3 - 6*zeta*x^2 - 12*x + 8*zeta^3\n```\n\n\nMultivariate\n\n```\nsage: R.<x,y> = F[]\nsage: p = zeta*x+zeta^2*y\nsage: gap(p)^2\nE(4)*x^2+2*E(8)^3*x*y-y^2\nsage: p^2\n(zeta^2)*x^2 + (2*zeta^3)*x*y - y^2\n```\n\n\nO dear! A stack of polynomial rings does not work as it should:\n\n```\nsage: P.<y> = QQ[]\nsage: K.<tau> = NumberField(y^2+y+1)\nsage: R.<x,y> = K[]\nsage: S.<z> = R[]\nsage: p = tau*x+tau^2*z+3*tau^3*x*y*z\nsage: p\n(3*x*y + (-tau - 1))*z + (tau)*x\nsage: gap(p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/work/Tickets/9438/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1032             return cls(self, x, name=name)\n   1033         try:\n-> 1034             return self._coerce_from_special_method(x)\n   1035         except TypeError:\n   1036             raise\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1056             s = '_gp_'\n   1057         try:\n-> 1058             return (x.__getattribute__(s))(self)\n   1059         except AttributeError:\n   1060             return self(x._interface_init_())\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._gap_ (sage/rings/polynomial/polynomial_element.c:27411)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Gap produced error output\nError, no 1st choice method found for `PROD' on 2 arguments\n\n   executing Read(\"/home/king/.sage//temp/gauss/30709//interface//tmp30709\");\n```\n\n\nThe string that was supposed to be executed is\n\n```\nsage: p._gap_init_()\n'CallFuncList(function() local z; z:=Indeterminate($sage12,\"z\"); return (CallFuncList(function() local x,y; x:=Indeterminate($sage5,\"x\"); y:=Indeterminate($sage5,\"y\"); return (GeneratorsOfField($sage5)[1])*x; end,[]))*1+(CallFuncList(function() local x,y; x:=Indeterminate($sage5,\"x\"); y:=Indeterminate($sage5,\"y\"); return (3)*x*y+(-GeneratorsOfField($sage5)[1] - 1)*1; end,[]))*z; end,[])'\n```\n\n\nSo, it is almost done, but I'd like to fix the last problem too.",
+    "body": "OK, problem solved!\n\nIt is a bug in {{IntegerMod_int.log()}}}, which had a side effect in PARI and is fixed at #9438. Apply `trac_2420_GAP_interface_polynomials.patch` after applying the patches from #8909, #9423 and #9438, and `sage -testall` passes!\n\nHere is a summary of the features:\n\nUnivariate\n\n```\nsage: F.<zeta> = CyclotomicField(8)\nsage: R.<x> = F[]\nsage: gap(R)\nPolynomialRing( CF(8), [\"x\"] )\nsage: p = zeta^2*x+2*zeta\nsage: gap(p)^3\n(-E(4))*x^3+(-6*E(8))*x^2-12*x+8*E(8)^3\nsage: p^3\n-zeta^2*x^3 - 6*zeta*x^2 - 12*x + 8*zeta^3\n```\n\nMultivariate\n\n```\nsage: R.<x,y> = F[]\nsage: p = zeta*x+zeta^2*y\nsage: gap(p)^2\nE(4)*x^2+2*E(8)^3*x*y-y^2\nsage: p^2\n(zeta^2)*x^2 + (2*zeta^3)*x*y - y^2\n```\n\nO dear! A stack of polynomial rings does not work as it should:\n\n```\nsage: P.<y> = QQ[]\nsage: K.<tau> = NumberField(y^2+y+1)\nsage: R.<x,y> = K[]\nsage: S.<z> = R[]\nsage: p = tau*x+tau^2*z+3*tau^3*x*y*z\nsage: p\n(3*x*y + (-tau - 1))*z + (tau)*x\nsage: gap(p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/work/Tickets/9438/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1032             return cls(self, x, name=name)\n   1033         try:\n-> 1034             return self._coerce_from_special_method(x)\n   1035         except TypeError:\n   1036             raise\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1056             s = '_gp_'\n   1057         try:\n-> 1058             return (x.__getattribute__(s))(self)\n   1059         except AttributeError:\n   1060             return self(x._interface_init_())\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._gap_ (sage/rings/polynomial/polynomial_element.c:27411)()\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030\n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/king/SAGE/sage-4.4.2/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453\n\nTypeError: Gap produced error output\nError, no 1st choice method found for `PROD' on 2 arguments\n\n   executing Read(\"/home/king/.sage//temp/gauss/30709//interface//tmp30709\");\n```\n\nThe string that was supposed to be executed is\n\n```\nsage: p._gap_init_()\n'CallFuncList(function() local z; z:=Indeterminate($sage12,\"z\"); return (CallFuncList(function() local x,y; x:=Indeterminate($sage5,\"x\"); y:=Indeterminate($sage5,\"y\"); return (GeneratorsOfField($sage5)[1])*x; end,[]))*1+(CallFuncList(function() local x,y; x:=Indeterminate($sage5,\"x\"); y:=Indeterminate($sage5,\"y\"); return (3)*x*y+(-GeneratorsOfField($sage5)[1] - 1)*1; end,[]))*z; end,[])'\n```\n\nSo, it is almost done, but I'd like to fix the last problem too.",
     "created_at": "2010-07-06T18:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -419,7 +408,6 @@ sage: p^3
 -zeta^2*x^3 - 6*zeta*x^2 - 12*x + 8*zeta^3
 ```
 
-
 Multivariate
 
 ```
@@ -430,7 +418,6 @@ E(4)*x^2+2*E(8)^3*x*y-y^2
 sage: p^2
 (zeta^2)*x^2 + (2*zeta^3)*x*y - y^2
 ```
-
 
 O dear! A stack of polynomial rings does not work as it should:
 
@@ -484,14 +471,12 @@ Error, no 1st choice method found for `PROD' on 2 arguments
    executing Read("/home/king/.sage//temp/gauss/30709//interface//tmp30709");
 ```
 
-
 The string that was supposed to be executed is
 
 ```
 sage: p._gap_init_()
 'CallFuncList(function() local z; z:=Indeterminate($sage12,"z"); return (CallFuncList(function() local x,y; x:=Indeterminate($sage5,"x"); y:=Indeterminate($sage5,"y"); return (GeneratorsOfField($sage5)[1])*x; end,[]))*1+(CallFuncList(function() local x,y; x:=Indeterminate($sage5,"x"); y:=Indeterminate($sage5,"y"); return (3)*x*y+(-GeneratorsOfField($sage5)[1] - 1)*1; end,[]))*z; end,[])'
 ```
-
 
 So, it is almost done, but I'd like to fix the last problem too.
 
@@ -540,7 +525,7 @@ Changing keywords from "gap interface, polynomial rings, number fields, editor_m
 archive/issue_comments_016334.json:
 ```json
 {
-    "body": "Finally it seems to work. `sage -testall` passes for me.\n\nFirst of all, I assume the result of various other tickets that are related with the GAP interface. To be precise: Before creating my patch, I did\n\n```\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9205/trac_9205-discrete_log.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9205/trac_9205-doctest.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9438/trac_9438_IntegerMod_log_vs_PARI.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9423/trac_9423_gap_for_numberfields.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8909/8909_gap2cyclotomic.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8909/trac_8909_catch_exception.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5618/trac_5618_gap_for_cyclotomic_fields.patch')\n```\n\n\n**__Interface cache framework for Parents__**\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/92a66b8e67eeae9b), I announced to introduce a general framework for caching interface representations for parents. It works like this:\n\n* The class `Parent` gets two new methods `_get_interface_cache_` and `_set_interface_cache_` that do exactly what the name suggests.\n* The method `_interface_`, defined on the level of Sage Objects, used to test whether there is an attribute `__interface` for caching. It still does, for backwards compatibility. If this fails, it now tries to call the new cache methods for parents.\n* Originally, the `_interface_` method, applied to an interface `foo` would call a method `_foo_init_` without additional argument. `_foo_init_()` is supposed to return a string, that is then used to call `foo`. I suggest that `_foo_init_` is called with the argument `foo` - see below why I think this is a good idea. Of course, many `_*_init_` methods don't accept an additional argument; we catch the error and thus have backwards compatibility.\n\n**__GAP representation of polynomial rings__**\n\nPolynomial rings can be quite complicated: The base ring might be not as simple as the rational field. You may even have a tower of polynomial rings.\n\nIn order to represent a polynomial ring with a complicated base ring in GAP, it seems reasonable to take a recursive approach: First represent the base ring in GAP, than form a polynomial ring over it.\n\nSince `self._gap_init_()` is supposed to return a string, we need a string that determines the GAP representation of `self.base_ring()`. Since (with my patch) the interface is cached for parents, `gap(self.base_ring()).name()` does the job and is quite efficient (i.e., short). Problem: It may be that we have a non-standard instance of the GAP interface. Therefore, I suggest to provide `_gap_init_` with an optional argument `gap`, so that `gap(self.base_ring())` lives in the right GAP instance.\n\nExample:\n\n```\nsage: from sage.interfaces.gap import Gap\nsage: MyGap = Gap()\nsage: MyGap is gap\nFalse\nsage: F.<zeta> = CyclotomicField(8)\nsage: P.<x,y> = F[]\nsage: a = gap(3)\nsage: P._gap_init_(gap)\n'PolynomialRing($sage2,[\"x\",\"y\"])'\nsage: P._gap_init_(MyGap)\n'PolynomialRing($sage1,[\"x\",\"y\"])'\nsage: gap('$sage1')\n3\nsage: MyGap('$sage1')\nCF(8)\n```\n\n\n**__GAP interface for polynomials__**\n\nWhile the interface representations for Parents should be cached, I think the representations for elements should (in general) not be cached. So, I don't use a general framework here, I just provide a `_gap_` method that requires one argument, namely the GAP instance to be used.\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a5761e7bf438cc98), I asked whether the variable names of a polynomial ring should be automatically inserted into the GAP interface (currently, they *are* inserted).\n\nThere was no answer. But I believe that automatic insertion of common qualifiers like `x,t` is bad practice.\n\nSo, instead of sending the string representation of a polynomial `p` to GAP, I compute `gap(p)` by adding representations of its terms; and for the terms, I access the variables of `gap(p.parent())` by position (rather than by name).\n\nI am not sure if this is the best solution. Anyway, the following now works and is doctested:\n\n```\n        Multivariate polynomial over a cyclotomic field::\n\n            sage: F.<zeta> = CyclotomicField(8)\n            sage: P.<x,y> = F[]\n            sage: p = zeta + zeta^2*x + zeta^3*y + (1+zeta)*x*y\n            sage: gap(p)    # indirect doctest\n            (1+E(8))*x*y+E(4)*x+E(8)^3*y+E(8)\n\n        Multivariate polynomial over a number field::\n\n            sage: Q.<t> = QQ[]\n            sage: K.<tau> = NumberField(t^2+t+1)\n            sage: P.<x,y> = K[]\n            sage: p = tau + tau^2*x + tau^3*y + (1+tau)*x*y\n            sage: p\n            (tau + 1)*x*y + (-tau - 1)*x + y + (tau)\n            sage: gap(p)     # indirect doctest\n            (tau+1)*x*y+(-tau-1)*x+y+tau\n\n        Multivariate polynomial over a polynomial ring\n        over a number field::\n\n            sage: S.<z> = K[]\n            sage: P.<x,y> = S[]\n            sage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\n            sage: p\n            ((tau + 1)*z)*x*y + ((-tau - 1)*z)*x + z^2*y + tau\n            sage: gap(p)     # indirect doctest\n            ((tau+1)*z)*x*y+((-tau-1)*z)*x+z^2*y+tau\n```\n\n\nSorry I made this ticket depend on five other tickets, but I think it is worth it, because most of the above examples didn't work *at all*.",
+    "body": "Finally it seems to work. `sage -testall` passes for me.\n\nFirst of all, I assume the result of various other tickets that are related with the GAP interface. To be precise: Before creating my patch, I did\n\n```\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9205/trac_9205-discrete_log.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9205/trac_9205-doctest.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9438/trac_9438_IntegerMod_log_vs_PARI.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9423/trac_9423_gap_for_numberfields.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8909/8909_gap2cyclotomic.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8909/trac_8909_catch_exception.patch')\nhg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5618/trac_5618_gap_for_cyclotomic_fields.patch')\n```\n\n**__Interface cache framework for Parents__**\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/92a66b8e67eeae9b), I announced to introduce a general framework for caching interface representations for parents. It works like this:\n\n* The class `Parent` gets two new methods `_get_interface_cache_` and `_set_interface_cache_` that do exactly what the name suggests.\n* The method `_interface_`, defined on the level of Sage Objects, used to test whether there is an attribute `__interface` for caching. It still does, for backwards compatibility. If this fails, it now tries to call the new cache methods for parents.\n* Originally, the `_interface_` method, applied to an interface `foo` would call a method `_foo_init_` without additional argument. `_foo_init_()` is supposed to return a string, that is then used to call `foo`. I suggest that `_foo_init_` is called with the argument `foo` - see below why I think this is a good idea. Of course, many `_*_init_` methods don't accept an additional argument; we catch the error and thus have backwards compatibility.\n\n**__GAP representation of polynomial rings__**\n\nPolynomial rings can be quite complicated: The base ring might be not as simple as the rational field. You may even have a tower of polynomial rings.\n\nIn order to represent a polynomial ring with a complicated base ring in GAP, it seems reasonable to take a recursive approach: First represent the base ring in GAP, than form a polynomial ring over it.\n\nSince `self._gap_init_()` is supposed to return a string, we need a string that determines the GAP representation of `self.base_ring()`. Since (with my patch) the interface is cached for parents, `gap(self.base_ring()).name()` does the job and is quite efficient (i.e., short). Problem: It may be that we have a non-standard instance of the GAP interface. Therefore, I suggest to provide `_gap_init_` with an optional argument `gap`, so that `gap(self.base_ring())` lives in the right GAP instance.\n\nExample:\n\n```\nsage: from sage.interfaces.gap import Gap\nsage: MyGap = Gap()\nsage: MyGap is gap\nFalse\nsage: F.<zeta> = CyclotomicField(8)\nsage: P.<x,y> = F[]\nsage: a = gap(3)\nsage: P._gap_init_(gap)\n'PolynomialRing($sage2,[\"x\",\"y\"])'\nsage: P._gap_init_(MyGap)\n'PolynomialRing($sage1,[\"x\",\"y\"])'\nsage: gap('$sage1')\n3\nsage: MyGap('$sage1')\nCF(8)\n```\n\n**__GAP interface for polynomials__**\n\nWhile the interface representations for Parents should be cached, I think the representations for elements should (in general) not be cached. So, I don't use a general framework here, I just provide a `_gap_` method that requires one argument, namely the GAP instance to be used.\n\nAt [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a5761e7bf438cc98), I asked whether the variable names of a polynomial ring should be automatically inserted into the GAP interface (currently, they *are* inserted).\n\nThere was no answer. But I believe that automatic insertion of common qualifiers like `x,t` is bad practice.\n\nSo, instead of sending the string representation of a polynomial `p` to GAP, I compute `gap(p)` by adding representations of its terms; and for the terms, I access the variables of `gap(p.parent())` by position (rather than by name).\n\nI am not sure if this is the best solution. Anyway, the following now works and is doctested:\n\n```\n        Multivariate polynomial over a cyclotomic field::\n\n            sage: F.<zeta> = CyclotomicField(8)\n            sage: P.<x,y> = F[]\n            sage: p = zeta + zeta^2*x + zeta^3*y + (1+zeta)*x*y\n            sage: gap(p)    # indirect doctest\n            (1+E(8))*x*y+E(4)*x+E(8)^3*y+E(8)\n\n        Multivariate polynomial over a number field::\n\n            sage: Q.<t> = QQ[]\n            sage: K.<tau> = NumberField(t^2+t+1)\n            sage: P.<x,y> = K[]\n            sage: p = tau + tau^2*x + tau^3*y + (1+tau)*x*y\n            sage: p\n            (tau + 1)*x*y + (-tau - 1)*x + y + (tau)\n            sage: gap(p)     # indirect doctest\n            (tau+1)*x*y+(-tau-1)*x+y+tau\n\n        Multivariate polynomial over a polynomial ring\n        over a number field::\n\n            sage: S.<z> = K[]\n            sage: P.<x,y> = S[]\n            sage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\n            sage: p\n            ((tau + 1)*z)*x*y + ((-tau - 1)*z)*x + z^2*y + tau\n            sage: gap(p)     # indirect doctest\n            ((tau+1)*z)*x*y+((-tau-1)*z)*x+z^2*y+tau\n```\n\nSorry I made this ticket depend on five other tickets, but I think it is worth it, because most of the above examples didn't work *at all*.",
     "created_at": "2010-07-08T10:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -562,7 +547,6 @@ hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8
 hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8909/trac_8909_catch_exception.patch')
 hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5618/trac_5618_gap_for_cyclotomic_fields.patch')
 ```
-
 
 **__Interface cache framework for Parents__**
 
@@ -599,7 +583,6 @@ sage: gap('$sage1')
 sage: MyGap('$sage1')
 CF(8)
 ```
-
 
 **__GAP interface for polynomials__**
 
@@ -645,7 +628,6 @@ I am not sure if this is the best solution. Anyway, the following now works and 
             ((tau+1)*z)*x*y+((-tau-1)*z)*x+z^2*y+tau
 ```
 
-
 Sorry I made this ticket depend on five other tickets, but I think it is worth it, because most of the above examples didn't work *at all*.
 
 
@@ -673,7 +655,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_016336.json:
 ```json
 {
-    "body": "I forgot to mention:\n\n\n```\nTower of polynomial rings over a number field\n\n    sage: Q.<t> = QQ[]\n    sage: K.<tau> = NumberField(t^2+t+1)\n    sage: P.<x,y> = K[]\n    sage: R.<z> = P[]\n    sage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\n    sage: gap(p)\n    y*z^2+((tau+1)*x*y+(-tau-1)*x)*z+tau\n```\n\nworks as well!",
+    "body": "I forgot to mention:\n\n```\nTower of polynomial rings over a number field\n\n    sage: Q.<t> = QQ[]\n    sage: K.<tau> = NumberField(t^2+t+1)\n    sage: P.<x,y> = K[]\n    sage: R.<z> = P[]\n    sage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\n    sage: gap(p)\n    y*z^2+((tau+1)*x*y+(-tau-1)*x)*z+tau\n```\nworks as well!",
     "created_at": "2010-07-08T11:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -683,7 +665,6 @@ archive/issue_comments_016336.json:
 ```
 
 I forgot to mention:
-
 
 ```
 Tower of polynomial rings over a number field
@@ -696,7 +677,6 @@ Tower of polynomial rings over a number field
     sage: gap(p)
     y*z^2+((tau+1)*x*y+(-tau-1)*x)*z+tau
 ```
-
 works as well!
 
 
@@ -1030,7 +1010,7 @@ archive/issue_events_005721.json:
 archive/issue_comments_016343.json:
 ```json
 {
-    "body": "I wonder if there's still anything worth salvaging from this ticket.  Some of the examples this was intended to make work now *do* work.  However, some still do not:\n\n\n```\nsage: R.<x,y> = ZZ[]\nsage: gap(x+y)\nx+y\nsage: S.<z> = K[]\nsage: P.<x,y> = S[]\nsage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\nsage: p\n((tau + 1)*z)*x*y + ((-tau - 1)*z)*x + z^2*y + tau\nsage: gap(p)\n...\n```\n\n\nresults in a long traceback ending with\n\n\n```\nTypeError: Gap produced error output\nError, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `*' on 2 arguments\n\n   executing \\$sage20:=\\$sage23 * \\$sage21;;\n```\n\n\nand no better if I try libgap:\n\n\n```\nsage: libgap(p)\n...\n\nValueError: libGAP: Syntax warning: Unbound global variable in stream:1\nPolynomialRing(PolynomialRing(CallFuncList(function() local t,E; t:=Indeterminate(\\$sage11,\"t\"); E:=AlgebraicExtension(\\$sage11,t^2 + t + 1,\"tau\"); return E; end,[]), [\"z\"]),[\"x\",\"y\"]);\n                                                                                          ^\nSyntax warning: Unbound global variable in stream:1\nPolynomialRing(PolynomialRing(CallFuncList(function() local t,E; t:=Indeterminate(\\$sage11,\"t\"); E:=AlgebraicExtension(\\$sage11,t^2 + t + 1,\"tau\"); return E; end,[]), [\"z\"]),[\"x\",\"y\"]);\n                                                                                                                               ^\nError, Variable: '$sage11' must have an assigned value\n```\n",
+    "body": "I wonder if there's still anything worth salvaging from this ticket.  Some of the examples this was intended to make work now *do* work.  However, some still do not:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: gap(x+y)\nx+y\nsage: S.<z> = K[]\nsage: P.<x,y> = S[]\nsage: p = tau + tau^2*x*z + tau^3*y*z^2 + (1+tau)*x*y*z\nsage: p\n((tau + 1)*z)*x*y + ((-tau - 1)*z)*x + z^2*y + tau\nsage: gap(p)\n...\n```\n\nresults in a long traceback ending with\n\n```\nTypeError: Gap produced error output\nError, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `*' on 2 arguments\n\n   executing \\$sage20:=\\$sage23 * \\$sage21;;\n```\n\nand no better if I try libgap:\n\n```\nsage: libgap(p)\n...\n\nValueError: libGAP: Syntax warning: Unbound global variable in stream:1\nPolynomialRing(PolynomialRing(CallFuncList(function() local t,E; t:=Indeterminate(\\$sage11,\"t\"); E:=AlgebraicExtension(\\$sage11,t^2 + t + 1,\"tau\"); return E; end,[]), [\"z\"]),[\"x\",\"y\"]);\n                                                                                          ^\nSyntax warning: Unbound global variable in stream:1\nPolynomialRing(PolynomialRing(CallFuncList(function() local t,E; t:=Indeterminate(\\$sage11,\"t\"); E:=AlgebraicExtension(\\$sage11,t^2 + t + 1,\"tau\"); return E; end,[]), [\"z\"]),[\"x\",\"y\"]);\n                                                                                                                               ^\nError, Variable: '$sage11' must have an assigned value\n```",
     "created_at": "2019-01-15T18:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -1040,7 +1020,6 @@ archive/issue_comments_016343.json:
 ```
 
 I wonder if there's still anything worth salvaging from this ticket.  Some of the examples this was intended to make work now *do* work.  However, some still do not:
-
 
 ```
 sage: R.<x,y> = ZZ[]
@@ -1055,9 +1034,7 @@ sage: gap(p)
 ...
 ```
 
-
 results in a long traceback ending with
-
 
 ```
 TypeError: Gap produced error output
@@ -1067,9 +1044,7 @@ Error, no 1st choice method found for `*' on 2 arguments
    executing \$sage20:=\$sage23 * \$sage21;;
 ```
 
-
 and no better if I try libgap:
-
 
 ```
 sage: libgap(p)
@@ -1083,7 +1058,6 @@ PolynomialRing(PolynomialRing(CallFuncList(function() local t,E; t:=Indeterminat
                                                                                                                                ^
 Error, Variable: '$sage11' must have an assigned value
 ```
-
 
 
 
@@ -1110,7 +1084,7 @@ Perhaps we don't have to make every imaginable case work in one fell swoop, so l
 archive/issue_comments_016345.json:
 ```json
 {
-    "body": "Replying to [comment:22 embray]:\n> Perhaps we don't have to make every imaginable case work in one fell swoop, so long as improvements can be made in specific cases, such as in #27005\n\nOr #21020 (that has some overlaps with this ticket).",
+    "body": "Replying to [comment:22 embray]:\n> Perhaps we don't have to make every imaginable case work in one fell swoop, so long as improvements can be made in specific cases, such as in #27005\n\n\nOr #21020 (that has some overlaps with this ticket).",
     "created_at": "2019-01-16T07:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -1122,6 +1096,7 @@ archive/issue_comments_016345.json:
 Replying to [comment:22 embray]:
 > Perhaps we don't have to make every imaginable case work in one fell swoop, so long as improvements can be made in specific cases, such as in #27005
 
+
 Or #21020 (that has some overlaps with this ticket).
 
 
@@ -1131,7 +1106,7 @@ Or #21020 (that has some overlaps with this ticket).
 archive/issue_comments_016346.json:
 ```json
 {
-    "body": "One problem is the number field conversion. This is fine\n\n```\nsage: libgap(ZZ['x,y'])\nIntegers[x,y]\n```\n\nThis is aslo fine\n\n```\nsage: K = CyclotomicField(8)\nsage: z = K.gen()\nsage: x,y = K['x,y'].gens()\nsage: libgap((1+z)*x*y^2 + z^2*x)\n(1+E(8))*x*y^2+E(4)*x\n```\n\nBut fails for more fancy number fields as the conversion is not available\n\n```\nsage: K = QQ[sqrt(2)]\nsage: libgap(K)\n...\nGAPError: Syntax warning: Unbound global variable in stream:1\nCallFuncList(function() local x,E; x:=Indeterminate(\\$sage1,\"x\"); E:=AlgebraicExtension(\\$sage1,x^2 - 2,\"sqrt2\"); return E; end,[]);\n```\n",
+    "body": "One problem is the number field conversion. This is fine\n\n```\nsage: libgap(ZZ['x,y'])\nIntegers[x,y]\n```\nThis is aslo fine\n\n```\nsage: K = CyclotomicField(8)\nsage: z = K.gen()\nsage: x,y = K['x,y'].gens()\nsage: libgap((1+z)*x*y^2 + z^2*x)\n(1+E(8))*x*y^2+E(4)*x\n```\nBut fails for more fancy number fields as the conversion is not available\n\n```\nsage: K = QQ[sqrt(2)]\nsage: libgap(K)\n...\nGAPError: Syntax warning: Unbound global variable in stream:1\nCallFuncList(function() local x,E; x:=Indeterminate(\\$sage1,\"x\"); E:=AlgebraicExtension(\\$sage1,x^2 - 2,\"sqrt2\"); return E; end,[]);\n```",
     "created_at": "2019-02-27T18:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2420",
     "type": "issue_comment",
@@ -1146,7 +1121,6 @@ One problem is the number field conversion. This is fine
 sage: libgap(ZZ['x,y'])
 Integers[x,y]
 ```
-
 This is aslo fine
 
 ```
@@ -1156,7 +1130,6 @@ sage: x,y = K['x,y'].gens()
 sage: libgap((1+z)*x*y^2 + z^2*x)
 (1+E(8))*x*y^2+E(4)*x
 ```
-
 But fails for more fancy number fields as the conversion is not available
 
 ```
@@ -1166,4 +1139,3 @@ sage: libgap(K)
 GAPError: Syntax warning: Unbound global variable in stream:1
 CallFuncList(function() local x,E; x:=Indeterminate(\$sage1,"x"); E:=AlgebraicExtension(\$sage1,x^2 - 2,"sqrt2"); return E; end,[]);
 ```
-

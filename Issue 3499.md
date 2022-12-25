@@ -3,7 +3,7 @@
 archive/issues_003499.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis fails:\n\n\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1])\nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0\nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])\nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3499\n\n",
+    "body": "Assignee: @craigcitro\n\nThis fails:\n\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1])\nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0\nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])\nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\n```\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3499\n\n",
     "created_at": "2008-06-24T00:23:31Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @craigcitro
 
 This fails:
 
-
 ```
 sage: N1 = Matrix(CyclotomicField(6), 1, [1])
 sage: cf6 = CyclotomicField(6) ; z6 = cf6.0
@@ -28,7 +27,6 @@ sage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1])
 sage: N1*N2
 [         0          1      zeta6     -zeta6 -zeta6 + 1]
 ```
-
 
 The attached patch fixes it.
 
@@ -81,7 +79,7 @@ I just realized that this may depend on trac #3495. Sorry.
 archive/issue_comments_024635.json:
 ```json
 {
-    "body": "\n```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1]) \nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0 \nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1]) \nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\nsage: N1 *N1\n[1]\nsage: N1 = Matrix(CyclotomicField(6), 1, [-1]) \nsage: N1 *N2\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11499)()\n\n/Users/was/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5061)()\n\n/Users/was/action.pyx in sage.categories.action.Action._call_c (sage/categories/action.c:1682)()\n\n/Users/was/action.pyx in sage.matrix.action.MatrixMatrixAction._call_c_impl (sage/matrix/action.c:1934)()\n\n/Users/was/matrix_cyclo_dense.pyx in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_c_impl (sage/matrix/matrix_cyclo_dense.c:3257)()\n\n/Users/was/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:26974)()\n\nIndexError: list index out of range\n```\n",
+    "body": "```\nsage: N1 = Matrix(CyclotomicField(6), 1, [1]) \nsage: cf6 = CyclotomicField(6) ; z6 = cf6.0 \nsage: N2 = Matrix(CyclotomicField(6), 1, 5, [0,1,z6,-z6,-z6+1]) \nsage: N1*N2\n[         0          1      zeta6     -zeta6 -zeta6 + 1]\nsage: N1 *N1\n[1]\nsage: N1 = Matrix(CyclotomicField(6), 1, [-1]) \nsage: N1 *N2\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:11499)()\n\n/Users/was/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5061)()\n\n/Users/was/action.pyx in sage.categories.action.Action._call_c (sage/categories/action.c:1682)()\n\n/Users/was/action.pyx in sage.matrix.action.MatrixMatrixAction._call_c_impl (sage/matrix/action.c:1934)()\n\n/Users/was/matrix_cyclo_dense.pyx in sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense._matrix_times_matrix_c_impl (sage/matrix/matrix_cyclo_dense.c:3257)()\n\n/Users/was/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense._lift_crt (sage/matrix/matrix_integer_dense.c:26974)()\n\nIndexError: list index out of range\n```",
     "created_at": "2008-06-24T00:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3499",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ archive/issue_comments_024635.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 sage: N1 = Matrix(CyclotomicField(6), 1, [1]) 
@@ -120,7 +117,6 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 ```
-
 
 
 

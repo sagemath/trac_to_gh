@@ -157,7 +157,7 @@ Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/tra
 archive/issue_comments_049273.json:
 ```json
 {
-    "body": "\n```\nsage: B.<i, j, k> = QuaternionAlgebra(RR, -1, -1) \nsage: latex(i + 1 - k) \n1.00000000000000 + i - k\n```\n\n\nWith all due respect, this is hideous :-) I know you only did it for consistency with the `repr` method, of course; but what would you say to the suggestion that we change `repr`, and `latex`, so they return something like `1.00000000000000 + 1.00000000000000*i - 1.00000000000000*k`? This is consistent with our conventions for other algebras over inexact rings (e.g. polynomials and power series).",
+    "body": "```\nsage: B.<i, j, k> = QuaternionAlgebra(RR, -1, -1) \nsage: latex(i + 1 - k) \n1.00000000000000 + i - k\n```\n\nWith all due respect, this is hideous :-) I know you only did it for consistency with the `repr` method, of course; but what would you say to the suggestion that we change `repr`, and `latex`, so they return something like `1.00000000000000 + 1.00000000000000*i - 1.00000000000000*k`? This is consistent with our conventions for other algebras over inexact rings (e.g. polynomials and power series).",
     "created_at": "2009-07-13T19:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
@@ -166,13 +166,11 @@ archive/issue_comments_049273.json:
 }
 ```
 
-
 ```
 sage: B.<i, j, k> = QuaternionAlgebra(RR, -1, -1) 
 sage: latex(i + 1 - k) 
 1.00000000000000 + i - k
 ```
-
 
 With all due respect, this is hideous :-) I know you only did it for consistency with the `repr` method, of course; but what would you say to the suggestion that we change `repr`, and `latex`, so they return something like `1.00000000000000 + 1.00000000000000*i - 1.00000000000000*k`? This is consistent with our conventions for other algebras over inexact rings (e.g. polynomials and power series).
 
@@ -203,7 +201,7 @@ I'm changing this to "needs work".  I'll try to find an elegant way of using the
 archive/issue_comments_049275.json:
 ```json
 {
-    "body": "Actually, note that printing of polynomials is *not* consistent, in that multivariable polynomials have \"hideous\" printing, whereas univariate ones have \"pretty\" printing:\n\n\n```\nsage: R.<i, j, k> = RR[]\nsage: i + 1 - k\ni - k + 1.00000000000000\nsage: R.<i> = RR[[]]\nsage: i+1\n1.00000000000000 + 1.00000000000000*i\n```\n\n\nSo this needs fixing.",
+    "body": "Actually, note that printing of polynomials is *not* consistent, in that multivariable polynomials have \"hideous\" printing, whereas univariate ones have \"pretty\" printing:\n\n```\nsage: R.<i, j, k> = RR[]\nsage: i + 1 - k\ni - k + 1.00000000000000\nsage: R.<i> = RR[[]]\nsage: i+1\n1.00000000000000 + 1.00000000000000*i\n```\n\nSo this needs fixing.",
     "created_at": "2009-07-14T07:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
@@ -214,7 +212,6 @@ archive/issue_comments_049275.json:
 
 Actually, note that printing of polynomials is *not* consistent, in that multivariable polynomials have "hideous" printing, whereas univariate ones have "pretty" printing:
 
-
 ```
 sage: R.<i, j, k> = RR[]
 sage: i + 1 - k
@@ -223,7 +220,6 @@ sage: R.<i> = RR[[]]
 sage: i+1
 1.00000000000000 + 1.00000000000000*i
 ```
-
 
 So this needs fixing.
 

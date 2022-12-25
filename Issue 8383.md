@@ -3,7 +3,7 @@
 archive/issues_008383.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @nexttime @benjaminfjones @eviatarbach @slel\n\nI hit the following problem:\n\n```\nsage: f(x) = sigma(x)-x\n...\nTypeError: unable to convert x (=x) to an integer\n```\n\nWouldn't it better to keep sigma(x) unevaluated for x not an integer?\nNote that `f = lambda(x):sigma(x)-x` works but it less nice.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8383\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @nexttime @benjaminfjones @eviatarbach @slel\n\nI hit the following problem:\n\n```\nsage: f(x) = sigma(x)-x\n...\nTypeError: unable to convert x (=x) to an integer\n```\nWouldn't it better to keep sigma(x) unevaluated for x not an integer?\nNote that `f = lambda(x):sigma(x)-x` works but it less nice.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8383\n\n",
     "created_at": "2010-02-26T23:10:51Z",
     "labels": [
         "component: calculus",
@@ -27,7 +27,6 @@ sage: f(x) = sigma(x)-x
 ...
 TypeError: unable to convert x (=x) to an integer
 ```
-
 Wouldn't it better to keep sigma(x) unevaluated for x not an integer?
 Note that `f = lambda(x):sigma(x)-x` works but it less nice.
 
@@ -60,7 +59,7 @@ We'd have to produce a symbolic version of sigma somewhere.  Do you want this fo
 archive/issue_comments_074856.json:
 ```json
 {
-    "body": "Replying to [comment:1 kcrisman]:\n> We'd have to produce a symbolic version of sigma somewhere.  Do you want this for all arithmetic functions?\n\nyes, in Maple for example numtheory[sigma](x) remains symbolic, and does not produce an error.",
+    "body": "Replying to [comment:1 kcrisman]:\n> We'd have to produce a symbolic version of sigma somewhere.  Do you want this for all arithmetic functions?\n\n\nyes, in Maple for example numtheory[sigma](x) remains symbolic, and does not produce an error.",
     "created_at": "2010-05-27T14:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8383",
     "type": "issue_comment",
@@ -71,6 +70,7 @@ archive/issue_comments_074856.json:
 
 Replying to [comment:1 kcrisman]:
 > We'd have to produce a symbolic version of sigma somewhere.  Do you want this for all arithmetic functions?
+
 
 yes, in Maple for example numtheory[sigma](x) remains symbolic, and does not produce an error.
 
@@ -157,7 +157,7 @@ Well, at the very least the ones in rings/arith.py which have 'standard' represe
 archive/issue_comments_074861.json:
 ```json
 {
-    "body": "Replying to [comment:4 burcin]:\n> Can you either provide a list of \"arithmetic functions\" which should be made symbolic, or just make this ticket about `sigma()`?\n\ndoesn't Sage provide such a list? It would then be easy to do a loop over all functions and\ndetermine those which don't work with symbolic arguments.\n\nPaul",
+    "body": "Replying to [comment:4 burcin]:\n> Can you either provide a list of \"arithmetic functions\" which should be made symbolic, or just make this ticket about `sigma()`?\n\n\ndoesn't Sage provide such a list? It would then be easy to do a loop over all functions and\ndetermine those which don't work with symbolic arguments.\n\nPaul",
     "created_at": "2010-05-27T16:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8383",
     "type": "issue_comment",
@@ -168,6 +168,7 @@ archive/issue_comments_074861.json:
 
 Replying to [comment:4 burcin]:
 > Can you either provide a list of "arithmetic functions" which should be made symbolic, or just make this ticket about `sigma()`?
+
 
 doesn't Sage provide such a list? It would then be easy to do a loop over all functions and
 determine those which don't work with symbolic arguments.
@@ -219,7 +220,7 @@ Changing keywords from "" to "beginner".
 archive/issue_comments_074864.json:
 ```json
 {
-    "body": "Is the best way to do this by just making all of the functions BuiltinFunctions? I'm trying to import BuiltinFunction in rings/arith.py, but when I do: \n\n\n```\nfrom sage.symbolic.function import BuiltinFunction\n```\n\n\nin rings/arith.py, I get the error:\n\n\n\n```\nImportError: cannot import name QuotientRing\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n",
+    "body": "Is the best way to do this by just making all of the functions BuiltinFunctions? I'm trying to import BuiltinFunction in rings/arith.py, but when I do: \n\n```\nfrom sage.symbolic.function import BuiltinFunction\n```\n\nin rings/arith.py, I get the error:\n\n\n```\nImportError: cannot import name QuotientRing\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```",
     "created_at": "2013-01-04T14:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8383",
     "type": "issue_comment",
@@ -230,14 +231,11 @@ archive/issue_comments_074864.json:
 
 Is the best way to do this by just making all of the functions BuiltinFunctions? I'm trying to import BuiltinFunction in rings/arith.py, but when I do: 
 
-
 ```
 from sage.symbolic.function import BuiltinFunction
 ```
 
-
 in rings/arith.py, I get the error:
-
 
 
 ```
@@ -245,7 +243,6 @@ ImportError: cannot import name QuotientRing
 Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 ```
-
 
 
 
@@ -274,7 +271,7 @@ Thanks for looking into this.
 archive/issue_comments_074866.json:
 ```json
 {
-    "body": "As I'm writing the symbolic version of sigma, it appears that a symbolic function created using BuiltinFunction has to have an explicit number of arguments. It is a little more work to write\n\n```\nsage: sigma(5, 1)\n```\n\nthan just\n\n```\nsage: sigma(5)\n```\n\nbut I'm not sure if there's a way around it.",
+    "body": "As I'm writing the symbolic version of sigma, it appears that a symbolic function created using BuiltinFunction has to have an explicit number of arguments. It is a little more work to write\n\n```\nsage: sigma(5, 1)\n```\nthan just\n\n```\nsage: sigma(5)\n```\nbut I'm not sure if there's a way around it.",
     "created_at": "2013-01-06T15:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8383",
     "type": "issue_comment",
@@ -288,13 +285,11 @@ As I'm writing the symbolic version of sigma, it appears that a symbolic functio
 ```
 sage: sigma(5, 1)
 ```
-
 than just
 
 ```
 sage: sigma(5)
 ```
-
 but I'm not sure if there's a way around it.
 
 
@@ -304,7 +299,7 @@ but I'm not sure if there's a way around it.
 archive/issue_comments_074867.json:
 ```json
 {
-    "body": "Hi, thanks for working on this!\n\nOne solution (this is one I'm using on #4102), is to write a wrapper function `sigma` that will take either one or two arguments and return the general symbolic function of two arguments accordingly:\n\n\n```\nsage: sigma(5)\nsymbolic_sigma(5, 1)\nsage: sigma(x, 2)\nsymbolic_sigma(x, 2)\n```\n\n\nThe symbolic function `symbolic_sigma` would inherit from `BuiltinFunction` and have two arguments. It's printed name could be just `sigma` instead of `symbolic_sigma` to lessen confusion.",
+    "body": "Hi, thanks for working on this!\n\nOne solution (this is one I'm using on #4102), is to write a wrapper function `sigma` that will take either one or two arguments and return the general symbolic function of two arguments accordingly:\n\n```\nsage: sigma(5)\nsymbolic_sigma(5, 1)\nsage: sigma(x, 2)\nsymbolic_sigma(x, 2)\n```\n\nThe symbolic function `symbolic_sigma` would inherit from `BuiltinFunction` and have two arguments. It's printed name could be just `sigma` instead of `symbolic_sigma` to lessen confusion.",
     "created_at": "2013-01-06T22:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8383",
     "type": "issue_comment",
@@ -317,14 +312,12 @@ Hi, thanks for working on this!
 
 One solution (this is one I'm using on #4102), is to write a wrapper function `sigma` that will take either one or two arguments and return the general symbolic function of two arguments accordingly:
 
-
 ```
 sage: sigma(5)
 symbolic_sigma(5, 1)
 sage: sigma(x, 2)
 symbolic_sigma(x, 2)
 ```
-
 
 The symbolic function `symbolic_sigma` would inherit from `BuiltinFunction` and have two arguments. It's printed name could be just `sigma` instead of `symbolic_sigma` to lessen confusion.
 

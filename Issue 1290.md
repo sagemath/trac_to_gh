@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1290
 archive/issue_comments_008079.json:
 ```json
 {
-    "body": "Attachment [trac1290.patch](tarball://root/attachments/some-uuid/ticket1290/trac1290.patch) by @jaapspies created at 2007-11-27 20:49:26\n\nSee my alternative on the mailing list sage-devel: derangements = rencontres\n\n\n```\ndef derangements(n, k):\n     if n == 0 and k == 0:\n         return 1\n     if n == 1 and k == 0:\n         return 0\n\n     if k == 0:\n         lst = [(-1)^r * binomial(n, r) * (n-r)^r * (n-r-1)^(n-r) for r in range(n)]\n         return sum(lst)\n     else:\n         return binomial(n, k) * derangements(n-k, 0)\n```\n\n\nSomeone should check the implications!?\nEventually translate it into Cython, etcetera.",
+    "body": "Attachment [trac1290.patch](tarball://root/attachments/some-uuid/ticket1290/trac1290.patch) by @jaapspies created at 2007-11-27 20:49:26\n\nSee my alternative on the mailing list sage-devel: derangements = rencontres\n\n```\ndef derangements(n, k):\n     if n == 0 and k == 0:\n         return 1\n     if n == 1 and k == 0:\n         return 0\n\n     if k == 0:\n         lst = [(-1)^r * binomial(n, r) * (n-r)^r * (n-r-1)^(n-r) for r in range(n)]\n         return sum(lst)\n     else:\n         return binomial(n, k) * derangements(n-k, 0)\n```\n\nSomeone should check the implications!?\nEventually translate it into Cython, etcetera.",
     "created_at": "2007-11-27T20:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1290",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_008079.json:
 Attachment [trac1290.patch](tarball://root/attachments/some-uuid/ticket1290/trac1290.patch) by @jaapspies created at 2007-11-27 20:49:26
 
 See my alternative on the mailing list sage-devel: derangements = rencontres
-
 
 ```
 def derangements(n, k):
@@ -61,7 +60,6 @@ def derangements(n, k):
      else:
          return binomial(n, k) * derangements(n-k, 0)
 ```
-
 
 Someone should check the implications!?
 Eventually translate it into Cython, etcetera.

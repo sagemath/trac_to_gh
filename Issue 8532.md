@@ -3,7 +3,7 @@
 archive/issues_008532.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @fchapoton @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional package mpi4py-1.1.0  ==\n\nThis might be because MPI fails to install - see #8522. \n\n\n```\nsrc/mpi4py.MPI.c:79127: error: 'MPI_VERSION' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79139: error: 'MPI_SUBVERSION' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79151: error: 'MPI_MAX_PROCESSOR_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79163: error: 'MPI_MAX_ERROR_STRING' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79175: error: 'MPI_MAX_PORT_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79187: error: 'MPI_MAX_INFO_KEY' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79199: error: 'MPI_MAX_INFO_VAL' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79211: error: 'MPI_MAX_OBJECT_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79223: error: 'MPI_MAX_DATAREP_STRING' undeclared (first use in this function)\nerror: command 'gcc' failed with exit status 1\n\nreal    0m5.609s\nuser    0m5.111s\nsys     0m0.434s\nsage: An error occurred while installing mpi4py-1.1.0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8532\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @fchapoton @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional package mpi4py-1.1.0  ==\n\nThis might be because MPI fails to install - see #8522. \n\n```\nsrc/mpi4py.MPI.c:79127: error: 'MPI_VERSION' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79139: error: 'MPI_SUBVERSION' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79151: error: 'MPI_MAX_PROCESSOR_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79163: error: 'MPI_MAX_ERROR_STRING' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79175: error: 'MPI_MAX_PORT_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79187: error: 'MPI_MAX_INFO_KEY' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79199: error: 'MPI_MAX_INFO_VAL' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79211: error: 'MPI_MAX_OBJECT_NAME' undeclared (first use in this function)\nsrc/mpi4py.MPI.c:79223: error: 'MPI_MAX_DATAREP_STRING' undeclared (first use in this function)\nerror: command 'gcc' failed with exit status 1\n\nreal    0m5.609s\nuser    0m5.111s\nsys     0m0.434s\nsage: An error occurred while installing mpi4py-1.1.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8532\n\n",
     "created_at": "2010-03-13T23:24:05Z",
     "labels": [
         "component: packages: optional",
@@ -36,7 +36,6 @@ CC:  @jhpalmieri @fchapoton @dimpase
 
 This might be because MPI fails to install - see #8522. 
 
-
 ```
 src/mpi4py.MPI.c:79127: error: 'MPI_VERSION' undeclared (first use in this function)
 src/mpi4py.MPI.c:79139: error: 'MPI_SUBVERSION' undeclared (first use in this function)
@@ -54,7 +53,6 @@ user    0m5.111s
 sys     0m0.434s
 sage: An error occurred while installing mpi4py-1.1.0
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8532

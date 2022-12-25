@@ -241,7 +241,7 @@ Dave
 archive/issue_comments_024792.json:
 ```json
 {
-    "body": "Replying to [comment:15 drkirkby]:\n> Can this now be closed, since the buildbot is working? \n\n\"Sounds\" good!",
+    "body": "Replying to [comment:15 drkirkby]:\n> Can this now be closed, since the buildbot is working? \n\n\n\"Sounds\" good!",
     "created_at": "2010-11-11T23:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
     "type": "issue_comment",
@@ -252,6 +252,7 @@ archive/issue_comments_024792.json:
 
 Replying to [comment:15 drkirkby]:
 > Can this now be closed, since the buildbot is working? 
+
 
 "Sounds" good!
 
@@ -298,7 +299,7 @@ Oh, I just wanted to improve sagebot's trac reporting. I also want to do some ot
 archive/issue_comments_024795.json:
 ```json
 {
-    "body": "Replying to [comment:15 drkirkby]:\n> Can this now be closed, since the buildbot is working?\n\nIt's working, but not very well.\n\nAnybody has any clue what's wrong with\n\n```\nhttp://build.sagemath.org/sage/builders/Skynet%20download\n```\n",
+    "body": "Replying to [comment:15 drkirkby]:\n> Can this now be closed, since the buildbot is working?\n\n\nIt's working, but not very well.\n\nAnybody has any clue what's wrong with\n\n```\nhttp://build.sagemath.org/sage/builders/Skynet%20download\n```",
     "created_at": "2011-11-02T14:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3524",
     "type": "issue_comment",
@@ -310,6 +311,7 @@ archive/issue_comments_024795.json:
 Replying to [comment:15 drkirkby]:
 > Can this now be closed, since the buildbot is working?
 
+
 It's working, but not very well.
 
 Anybody has any clue what's wrong with
@@ -317,7 +319,6 @@ Anybody has any clue what's wrong with
 ```
 http://build.sagemath.org/sage/builders/Skynet%20download
 ```
-
 
 
 

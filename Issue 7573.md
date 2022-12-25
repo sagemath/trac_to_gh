@@ -3,7 +3,7 @@
 archive/issues_007573.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nThis crashes Sage:\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nThis crashes Sage:\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
     "created_at": "2009-12-01T16:00:50Z",
     "labels": [
         "component: numerical",
@@ -22,7 +22,6 @@ CC:  @nathanncohen
 
 This crashes Sage:
 
-
 ```
 sage: g = graphs.PetersenGraph()
 sage: p = MixedIntegerLinearProgram(maximization=True)
@@ -31,7 +30,6 @@ sage: p.set_objective(sum([b[v] for v in g]))
 sage: p.set_binary(b)
 sage: p.solve(objective_only=True)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7573
 

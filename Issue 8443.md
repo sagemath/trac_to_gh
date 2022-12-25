@@ -109,7 +109,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075779.json:
 ```json
 {
-    "body": "This patch looks good. It fixes the problem for me with the worksheet I attached in that sage-notebook thread. I think it could use a doctest, though. Here's my idea:\n\n\n```\nsage: nb = sagenb.notebook.notebook.Notebook(tmp_dir()+'.sagenb')\nsage: nb.add_user('sage','sage','sage@sagemath.org',force=True)\nsage: W = nb.create_new_worksheet('Test trac #8443', 'sage')\nsage: W.edit_save(\"`\\n1+1\\n///\\n`\\n\\n<p>a text cell</p>\")\nsage: len(set(W.cell_id_list())) == 3\nTrue\n```\n\n\nThe idea is that if a duplicate cell id gets added, making a set out of the id list will be shorter than the plain id list. Does this seem like a reasonable test that will prevent a regression on this issue?",
+    "body": "This patch looks good. It fixes the problem for me with the worksheet I attached in that sage-notebook thread. I think it could use a doctest, though. Here's my idea:\n\n```\nsage: nb = sagenb.notebook.notebook.Notebook(tmp_dir()+'.sagenb')\nsage: nb.add_user('sage','sage','sage@sagemath.org',force=True)\nsage: W = nb.create_new_worksheet('Test trac #8443', 'sage')\nsage: W.edit_save(\"`\\n1+1\\n///\\n`\\n\\n<p>a text cell</p>\")\nsage: len(set(W.cell_id_list())) == 3\nTrue\n```\n\nThe idea is that if a duplicate cell id gets added, making a set out of the id list will be shorter than the plain id list. Does this seem like a reasonable test that will prevent a regression on this issue?",
     "created_at": "2010-03-06T08:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8443",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ archive/issue_comments_075779.json:
 
 This patch looks good. It fixes the problem for me with the worksheet I attached in that sage-notebook thread. I think it could use a doctest, though. Here's my idea:
 
-
 ```
 sage: nb = sagenb.notebook.notebook.Notebook(tmp_dir()+'.sagenb')
 sage: nb.add_user('sage','sage','sage@sagemath.org',force=True)
@@ -129,7 +128,6 @@ sage: W.edit_save("`\n1+1\n///\n`\n\n<p>a text cell</p>")
 sage: len(set(W.cell_id_list())) == 3
 True
 ```
-
 
 The idea is that if a duplicate cell id gets added, making a set out of the id list will be shorter than the plain id list. Does this seem like a reasonable test that will prevent a regression on this issue?
 
@@ -140,7 +138,7 @@ The idea is that if a duplicate cell id gets added, making a set out of the id l
 archive/issue_comments_075780.json:
 ```json
 {
-    "body": "Yes, definitely.  I should have written a test.  I've tweaked your example a bit, since it also passes without the patch.  Please see V2.\n\n**Without** the patch, I get\n\n```python\nsage: nb = sagenb.notebook.notebook.Notebook(tmp_dir() + '.sagenb')\nsage: nb.add_user('sage', 'sage', 'sage@sagemath.org', force=True)\nsage: W = nb.create_new_worksheet('Test trac #8443', 'sage')\nsage: W.edit_save('`\\n1+1\\n///\\n`')\nsage: W.cell_id_list()\n[0]\nsage: W.next_id()\n1\nsage: W.edit_save(\"`\\n1+1\\n///\\n`\\n\\n<p>a text cell</p>\")\nsage: len(set(W.cell_id_list())) == 3    # oops!\nFalse\nsage: W.cell_id_list()                   # oops!\n[0, 1, 1]\nsage: W.next_id()                        # oops!\n2\n```\n\nAs far as it goes, my review of the test is positive.",
+    "body": "Yes, definitely.  I should have written a test.  I've tweaked your example a bit, since it also passes without the patch.  Please see V2.\n\n**Without** the patch, I get\n\n```python\nsage: nb = sagenb.notebook.notebook.Notebook(tmp_dir() + '.sagenb')\nsage: nb.add_user('sage', 'sage', 'sage@sagemath.org', force=True)\nsage: W = nb.create_new_worksheet('Test trac #8443', 'sage')\nsage: W.edit_save('`\\n1+1\\n///\\n`')\nsage: W.cell_id_list()\n[0]\nsage: W.next_id()\n1\nsage: W.edit_save(\"`\\n1+1\\n///\\n`\\n\\n<p>a text cell</p>\")\nsage: len(set(W.cell_id_list())) == 3    # oops!\nFalse\nsage: W.cell_id_list()                   # oops!\n[0, 1, 1]\nsage: W.next_id()                        # oops!\n2\n```\nAs far as it goes, my review of the test is positive.",
     "created_at": "2010-03-06T13:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8443",
     "type": "issue_comment",
@@ -170,7 +168,6 @@ sage: W.cell_id_list()                   # oops!
 sage: W.next_id()                        # oops!
 2
 ```
-
 As far as it goes, my review of the test is positive.
 
 

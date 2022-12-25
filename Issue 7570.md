@@ -3,7 +3,7 @@
 archive/issues_007570.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\n\ndoes not work, whereas\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\ndoes not work, whereas\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
     "created_at": "2009-12-01T14:16:10Z",
     "labels": [
         "component: graphics",
@@ -25,21 +25,17 @@ Keywords: list_plot
 
 list_plot does not accept **empty** lists:
 
-
 ```
 list_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))
 
 IndexError: list index out of range
 ```
 
-
 does not work, whereas
-
 
 ```
 list_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))
 ```
-
 
 does work. It would be nicer if list_plot of empty lists gives an empty graphics object.
 
@@ -186,7 +182,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064298.json:
 ```json
 {
-    "body": "sage/plot/point.py fails. \n\nWhen I passed an empty list I got an error. \n\nsage: point([])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (273, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Applications/sage4.6/devel/sage-main/<ipython console> in <module>()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in __call__(self, arg)\n    549 \n    550             # and now call a possibly user-defined print mechanism\n--> 551             manipulated_val = self.display(arg)\n    552             \n    553             # user display hooks can change the variable to be stored in\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in _display(self, arg)\n    575             return IPython.generics.result_display(arg)\n    576         except TryNext:            \n--> 577             return self.shell.hooks.result_display(arg)\n    578 \n    579     # Assign the default display method:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/hooks.pyc in __call__(self, *args, **kw)\n    139             #print \"prio\",prio,\"cmd\",cmd #dbg\n    140             try:\n--> 141                 ret = cmd(*args, **kw)\n    142                 return ret\n    143             except ipapi.TryNext, exc:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in result_display(ip_self, obj)\n    148     # IPython's default result_display() uses the IPython.genutils.Term.cout stream.\n    149     # See also local/lib/python2.6/site-packages/IPython/hooks.py.\n--> 150     print_obj(IPython.genutils.Term.cout, obj)\n    151 \n    152 def displayhook(obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in print_obj(out_stream, obj)\n    140             if _check_tall_list_and_print(out_stream, obj):\n    141                 return\n--> 142     print >>out_stream, `obj`\n    143 \n    144 def result_display(ip_self, obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1341)()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in _repr_(self)\n   1078         \"\"\"\n   1079         if SHOW_DEFAULT:\n-> 1080             self.show()\n   1081             return ''\n   1082         else:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n     82             kwds[self.name + \"options\"] = suboptions\n     83 \n---> 84             return func(*args, **kwds)\n     85 \n     86         from sage.misc.sageinspect import sage_getsource\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in show(self, **kwds)\n   1737             if options['filename'] is None:\n   1738                 options['filename'] = sage.misc.misc.tmp_filename() + '.png'\n-> 1739             self.save(**options)\n   1740             os.system('%s %s 2>/dev/null 1>/dev/null &' % \\\n   1741                 (sage.misc.viewer.browser(), options['filename']))\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in save(self, filename, dpi, savenow, *args, **kwds)\n   2386             options=dict()\n   2387             options['transparent']=kwds.pop('transparent',False)\n-> 2388             figure=self.matplotlib(*args, **kwds)\n   2389             # You can output in PNG, PS, EPS, PDF, or SVG format, depending on the file extension. \n   2390             # matplotlib looks at the file extension to see what the renderer should be.\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in matplotlib(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, axes, axes_labels, fontsize, frame, verify, aspect_ratio, gridlines, gridlinesstyle, vgridlinesstyle, hgridlinesstyle, show_legend, legend_options, axes_pad, ticks_integer, tick_formatter, ticks)\n   1954         #add all the primitives to the subplot\n   1955         for g in self.__objects:\n-> 1956             g._render_on_subplot(subplot)\n   1957         \n   1958         #add the legend if requested\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/point.pyc in _render_on_subplot(self, subplot)\n    271         scatteroptions={}\n    272         if not faceted: scatteroptions['edgecolors'] = 'none'\n--> 273         subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, zorder=z, label=options['legend_label'], **scatteroptions)\n    274         \n    275 \n\n/Applications/sage4.6/local/lib/python2.6/site-packages/matplotlib/axes.pyc in scatter(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, faceted, verts, **kwargs)\n   5811         temp_y = y\n   5812 \n-> 5813         minx = np.amin(temp_x)\n   5814         maxx = np.amax(temp_x)\n   5815         miny = np.amin(temp_y)\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/numpy/core/fromnumeric.pyc in amin(a, axis, out)\n   1641     except AttributeError:\n   1642         return _wrapit(a, 'min', axis, out)\n-> 1643     return amin(axis, out)\n   1644 \n   1645 \n\nValueError: zero-size array to ufunc.reduce without identity",
+    "body": "sage/plot/point.py fails. \n\nWhen I passed an empty list I got an error. \n\nsage: point([])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (273, 0))\n\n---\nValueError                                Traceback (most recent call last)\n\n/Applications/sage4.6/devel/sage-main/<ipython console> in <module>()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in __call__(self, arg)\n    549 \n    550             # and now call a possibly user-defined print mechanism\n--> 551             manipulated_val = self.display(arg)\n    552             \n    553             # user display hooks can change the variable to be stored in\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in _display(self, arg)\n    575             return IPython.generics.result_display(arg)\n    576         except TryNext:            \n--> 577             return self.shell.hooks.result_display(arg)\n    578 \n    579     # Assign the default display method:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/hooks.pyc in __call__(self, *args, **kw)\n    139             #print \"prio\",prio,\"cmd\",cmd #dbg\n    140             try:\n--> 141                 ret = cmd(*args, **kw)\n    142                 return ret\n    143             except ipapi.TryNext, exc:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in result_display(ip_self, obj)\n    148     # IPython's default result_display() uses the IPython.genutils.Term.cout stream.\n    149     # See also local/lib/python2.6/site-packages/IPython/hooks.py.\n--> 150     print_obj(IPython.genutils.Term.cout, obj)\n    151 \n    152 def displayhook(obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in print_obj(out_stream, obj)\n    140             if _check_tall_list_and_print(out_stream, obj):\n    141                 return\n--> 142     print >>out_stream, `obj`\n    143 \n    144 def result_display(ip_self, obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1341)()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in _repr_(self)\n   1078         \"\"\"\n   1079         if SHOW_DEFAULT:\n-> 1080             self.show()\n   1081             return ''\n   1082         else:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n     82             kwds[self.name + \"options\"] = suboptions\n     83 \n---> 84             return func(*args, **kwds)\n     85 \n     86         from sage.misc.sageinspect import sage_getsource\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in show(self, **kwds)\n   1737             if options['filename'] is None:\n   1738                 options['filename'] = sage.misc.misc.tmp_filename() + '.png'\n-> 1739             self.save(**options)\n   1740             os.system('%s %s 2>/dev/null 1>/dev/null &' % \\\n   1741                 (sage.misc.viewer.browser(), options['filename']))\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in save(self, filename, dpi, savenow, *args, **kwds)\n   2386             options=dict()\n   2387             options['transparent']=kwds.pop('transparent',False)\n-> 2388             figure=self.matplotlib(*args, **kwds)\n   2389             # You can output in PNG, PS, EPS, PDF, or SVG format, depending on the file extension. \n   2390             # matplotlib looks at the file extension to see what the renderer should be.\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in matplotlib(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, axes, axes_labels, fontsize, frame, verify, aspect_ratio, gridlines, gridlinesstyle, vgridlinesstyle, hgridlinesstyle, show_legend, legend_options, axes_pad, ticks_integer, tick_formatter, ticks)\n   1954         #add all the primitives to the subplot\n   1955         for g in self.__objects:\n-> 1956             g._render_on_subplot(subplot)\n   1957         \n   1958         #add the legend if requested\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/point.pyc in _render_on_subplot(self, subplot)\n    271         scatteroptions={}\n    272         if not faceted: scatteroptions['edgecolors'] = 'none'\n--> 273         subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, zorder=z, label=options['legend_label'], **scatteroptions)\n    274         \n    275 \n\n/Applications/sage4.6/local/lib/python2.6/site-packages/matplotlib/axes.pyc in scatter(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, faceted, verts, **kwargs)\n   5811         temp_y = y\n   5812 \n-> 5813         minx = np.amin(temp_x)\n   5814         maxx = np.amax(temp_x)\n   5815         miny = np.amin(temp_y)\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/numpy/core/fromnumeric.pyc in amin(a, axis, out)\n   1641     except AttributeError:\n   1642         return _wrapit(a, 'min', axis, out)\n-> 1643     return amin(axis, out)\n   1644 \n   1645 \n\nValueError: zero-size array to ufunc.reduce without identity",
     "created_at": "2011-01-08T20:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -204,7 +200,7 @@ ERROR: An unexpected error occurred while tokenizing input
 The following traceback may be corrupted or invalid
 The error message is: ('EOF in multi-line statement', (273, 0))
 
----------------------------------------------------------------------------
+---
 ValueError                                Traceback (most recent call last)
 
 /Applications/sage4.6/devel/sage-main/<ipython console> in <module>()
@@ -447,7 +443,7 @@ added documentation
 archive/issue_comments_064306.json:
 ```json
 {
-    "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by @adeines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
+    "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by @adeines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\nIf you delete that line, the tests pass and everything looks good.",
     "created_at": "2011-01-09T20:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -463,7 +459,6 @@ The only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I
 ```
 sage: arrow2d(headpoint=None, tailpoint) 
 ```
-
 
 
 If you delete that line, the tests pass and everything looks good.
@@ -672,7 +667,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_064317.json:
 ```json
 {
-    "body": "There is also a Sphinx error:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha3/local/lib/python2.6/site-packages/sage/plot/plot.py:docstring of sage.plot.plot:157: (ERROR/3) Unexpected indentation.\n```\n",
+    "body": "There is also a Sphinx error:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha3/local/lib/python2.6/site-packages/sage/plot/plot.py:docstring of sage.plot.plot:157: (ERROR/3) Unexpected indentation.\n```",
     "created_at": "2011-01-28T08:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
@@ -686,7 +681,6 @@ There is also a Sphinx error:
 ```
 /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha3/local/lib/python2.6/site-packages/sage/plot/plot.py:docstring of sage.plot.plot:157: (ERROR/3) Unexpected indentation.
 ```
-
 
 
 

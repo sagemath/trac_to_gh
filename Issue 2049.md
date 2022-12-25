@@ -3,7 +3,7 @@
 archive/issues_002049.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n> On a related issue: is there a command corresponding to Mathematica's\n> MatrixExp? For example,\n> \n> sage: var('t')\n> sage: M=matrix(SR,2,[0,t,-t,0])\n> sage: M.matrix_exp()\n> \n> [cos(t), sin(t)]\n> [-sin(t), cos(t)]\n> \n\nThere is no such command in Sage, really.  Maxima\ndoes have such a command, so it would be\npossible to implement something easily:\n\nsage: t = var('t')\nsage: M = matrix(SR,2,[0,t,-t,0])\nsage: mm = maxima(M)\nsage: mm.matrixexp()\nmatrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2,%e^-(%i*t)*(%e^(2*%i*t)+1)/2])\n\nSo there will be an M.exp() function in some future version\nof Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2049\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n> On a related issue: is there a command corresponding to Mathematica's\n> MatrixExp? For example,\n> \n> sage: var('t')\n> sage: M=matrix(SR,2,[0,t,-t,0])\n> sage: M.matrix_exp()\n> \n> [cos(t), sin(t)]\n> [-sin(t), cos(t)]\n> \n\nThere is no such command in Sage, really.  Maxima\ndoes have such a command, so it would be\npossible to implement something easily:\n\nsage: t = var('t')\nsage: M = matrix(SR,2,[0,t,-t,0])\nsage: mm = maxima(M)\nsage: mm.matrixexp()\nmatrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2,%e^-(%i*t)*(%e^(2*%i*t)+1)/2])\n\nSo there will be an M.exp() function in some future version\nof Sage. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2049\n\n",
     "created_at": "2008-02-05T04:55:07Z",
     "labels": [
         "component: calculus"
@@ -16,7 +16,6 @@ archive/issues_002049.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -44,7 +43,6 @@ matrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i
 So there will be an M.exp() function in some future version
 of Sage. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2049
 

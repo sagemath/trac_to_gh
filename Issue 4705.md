@@ -431,7 +431,7 @@ This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and s
 archive/issue_comments_035404.json:
 ```json
 {
-    "body": "Replying to [comment:17 ddrake]:\n> I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> \n> If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> \n> This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n\nYes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.",
+    "body": "Replying to [comment:17 ddrake]:\n> I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> \n> If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> \n> This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n\n\nYes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.",
     "created_at": "2009-01-09T02:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -447,6 +447,7 @@ Replying to [comment:17 ddrake]:
 > 
 > This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.
 
+
 Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.
 
 
@@ -456,7 +457,7 @@ Yes, that sounds like the intended behavior.  Whether or not that should be what
 archive/issue_comments_035405.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> Replying to [comment:17 ddrake]:\n> > I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> > \n> > If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> > \n> > This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n> \n> Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.\n> \n\nHrm, it may be intended, but I don't like it at all. When I clicked \"cancel\", I wanted the entire business -- text cell and all -- to go away and, well, be cancelled. I had done one thing (shift-click) and when I clicked cancel, I wanted that one thing to be undone. I do see your point though, that shift-clicking (1) creates a text cell, and (2) starts the tinymce editor on it -- and the cancel button cancels (2).\n\nI'm also bothered by the text being \"ghostly\", in that you see it when viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\".",
+    "body": "Replying to [comment:18 jason]:\n> Replying to [comment:17 ddrake]:\n> > I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> > \n> > If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> > \n> > This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n\n> \n> Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.\n> \n\n\nHrm, it may be intended, but I don't like it at all. When I clicked \"cancel\", I wanted the entire business -- text cell and all -- to go away and, well, be cancelled. I had done one thing (shift-click) and when I clicked cancel, I wanted that one thing to be undone. I do see your point though, that shift-clicking (1) creates a text cell, and (2) starts the tinymce editor on it -- and the cancel button cancels (2).\n\nI'm also bothered by the text being \"ghostly\", in that you see it when viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\".",
     "created_at": "2009-01-09T10:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -472,9 +473,11 @@ Replying to [comment:18 jason]:
 > > If I choose "Edit" at the top, the text "Doubleclick to edit..." doesn't show up in the notebook, and if I click "Save changes", the extraneous text goes away.
 > > 
 > > This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.
+
 > 
 > Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.
 > 
+
 
 Hrm, it may be intended, but I don't like it at all. When I clicked "cancel", I wanted the entire business -- text cell and all -- to go away and, well, be cancelled. I had done one thing (shift-click) and when I clicked cancel, I wanted that one thing to be undone. I do see your point though, that shift-clicking (1) creates a text cell, and (2) starts the tinymce editor on it -- and the cancel button cancels (2).
 
@@ -523,7 +526,7 @@ Just to screw around, I tried [iCab](http://www.icab.de/), which edited existing
 archive/issue_comments_035407.json:
 ```json
 {
-    "body": "> I'm also bothered by the text being \"ghostly\", in that you see it when \n> viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\". \n\nI do not like either.  Actually, I'm very puzzled how it is possible that it wouldn't show up in Edit, since when one quits a notebook server and restarts it later, worksheets are loaded from disk entirely using their plane text representation (i.e., what you see in Edit), so it seems to me that if the text created is indeed \"ghostly\" as you claim, it will surely vanish when the server is restarted.",
+    "body": "> I'm also bothered by the text being \"ghostly\", in that you see it when \n> viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\". \n\n\nI do not like either.  Actually, I'm very puzzled how it is possible that it wouldn't show up in Edit, since when one quits a notebook server and restarts it later, worksheets are loaded from disk entirely using their plane text representation (i.e., what you see in Edit), so it seems to me that if the text created is indeed \"ghostly\" as you claim, it will surely vanish when the server is restarted.",
     "created_at": "2009-01-10T20:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -534,6 +537,7 @@ archive/issue_comments_035407.json:
 
 > I'm also bothered by the text being "ghostly", in that you see it when 
 > viewing the notebook normally, but it doesn't show up in the usual text-based "Edit". 
+
 
 I do not like either.  Actually, I'm very puzzled how it is possible that it wouldn't show up in Edit, since when one quits a notebook server and restarts it later, worksheets are loaded from disk entirely using their plane text representation (i.e., what you see in Edit), so it seems to me that if the text created is indeed "ghostly" as you claim, it will surely vanish when the server is restarted.
 
@@ -600,7 +604,7 @@ The ghostly text that is referred to is a TinyMCE setting.  Check the configurat
 archive/issue_comments_035411.json:
 ```json
 {
-    "body": "Here are the things that still need to be done to get this in.\n\n* testing with IE 6 on Windows\n* testing with FF 2.0.x on Windows, OSX and Linux\n* testing with Safari on 10.4\n* testing with Opera 9.5 on OSX,  Linux\n* review of the patches themselves\n* review of mabshoff's changes to the spkgs\n* trivial one-line patch to fix the \"ghostly text\" issue (just make the placeholder string the empty string in cell.py (search for \"placeholder\" in cell.py).\n* (maybe can wait for another patch): figure out what is going on with divs with the same id.  My guess is that it is an issue with setting the innerHTMl of an object, rather than replacing the object itself.  When the page is \"Edit\"ed and then reloaded, the duplicate nested IDs go away.  This points to the javascript code that inserts text cells as the problem.\n\nFrom mabshoff:\n> In the end having your assurance that you will available to fix some\n> of the inevitable issues would also be assuring.\n\nYou have my assurance.",
+    "body": "Here are the things that still need to be done to get this in.\n\n* testing with IE 6 on Windows\n* testing with FF 2.0.x on Windows, OSX and Linux\n* testing with Safari on 10.4\n* testing with Opera 9.5 on OSX,  Linux\n* review of the patches themselves\n* review of mabshoff's changes to the spkgs\n* trivial one-line patch to fix the \"ghostly text\" issue (just make the placeholder string the empty string in cell.py (search for \"placeholder\" in cell.py).\n* (maybe can wait for another patch): figure out what is going on with divs with the same id.  My guess is that it is an issue with setting the innerHTMl of an object, rather than replacing the object itself.  When the page is \"Edit\"ed and then reloaded, the duplicate nested IDs go away.  This points to the javascript code that inserts text cells as the problem.\n\nFrom mabshoff:\n> In the end having your assurance that you will available to fix some\n> of the inevitable issues would also be assuring.\n\n\nYou have my assurance.",
     "created_at": "2009-01-13T15:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -623,6 +627,7 @@ Here are the things that still need to be done to get this in.
 From mabshoff:
 > In the end having your assurance that you will available to fix some
 > of the inevitable issues would also be assuring.
+
 
 You have my assurance.
 
@@ -719,7 +724,7 @@ Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/
 archive/issue_comments_035416.json:
 ```json
 {
-    "body": "Replying to [comment:29 ddrake]:\n> I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.\n> \n> Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)\n\nI updated to 2.0.0.20 and the problem persists. However, I downloaded FF3.0.5 and the problem is not there, so it's definitely FF2-specific.  My guess is that a lot of people using FF only on occasion (which might be quite a few PC and Mac people, as opposed to Linux) may not even be aware that FF3 is out there (it was very dimly on my radar), so it would be worth at least some testing.\n\n[Here is a worksheet](http://www.math.uchicago.edu/~crisman/TinyMCE_Test.sws) - click on the \"Here is a problem\" area and then scroll up and down, assuming that area appears toward the bottom of your initial browser window.\n\nI am not sure what the problem is - presumably something Aqua+OSX.4+PPC+FF2 related.  It would be nice for people to check out whether this problem shows up in any other less heavily used browsers - Konqueror, for example, if that's still in use.  If this is the only place it happens, perhaps it's not the worst thing ever - though it IS really hard to use in this one case.",
+    "body": "Replying to [comment:29 ddrake]:\n> I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.\n> \n> Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)\n\n\nI updated to 2.0.0.20 and the problem persists. However, I downloaded FF3.0.5 and the problem is not there, so it's definitely FF2-specific.  My guess is that a lot of people using FF only on occasion (which might be quite a few PC and Mac people, as opposed to Linux) may not even be aware that FF3 is out there (it was very dimly on my radar), so it would be worth at least some testing.\n\n[Here is a worksheet](http://www.math.uchicago.edu/~crisman/TinyMCE_Test.sws) - click on the \"Here is a problem\" area and then scroll up and down, assuming that area appears toward the bottom of your initial browser window.\n\nI am not sure what the problem is - presumably something Aqua+OSX.4+PPC+FF2 related.  It would be nice for people to check out whether this problem shows up in any other less heavily used browsers - Konqueror, for example, if that's still in use.  If this is the only place it happens, perhaps it's not the worst thing ever - though it IS really hard to use in this one case.",
     "created_at": "2009-01-14T17:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -732,6 +737,7 @@ Replying to [comment:29 ddrake]:
 > I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.
 > 
 > Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)
+
 
 I updated to 2.0.0.20 and the problem persists. However, I downloaded FF3.0.5 and the problem is not there, so it's definitely FF2-specific.  My guess is that a lot of people using FF only on occasion (which might be quite a few PC and Mac people, as opposed to Linux) may not even be aware that FF3 is out there (it was very dimly on my radar), so it would be worth at least some testing.
 
@@ -783,7 +789,7 @@ archive/issue_events_010760.json:
 archive/issue_comments_035418.json:
 ```json
 {
-    "body": "Replying to [comment:31 mhampton]:\n\n> Like some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.\n\nYes, if the patch here in question does not mess up existing functionality, but has issues with the new functionality with some browsers this can be dealt with via a followup ticket. Getting this in working 99% now is much better than it bitrotting and I think Jason will be much happier, too :)\n\nSo someone give this a final positive review and it is in.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:31 mhampton]:\n\n> Like some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.\n\n\nYes, if the patch here in question does not mess up existing functionality, but has issues with the new functionality with some browsers this can be dealt with via a followup ticket. Getting this in working 99% now is much better than it bitrotting and I think Jason will be much happier, too :)\n\nSo someone give this a final positive review and it is in.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-15T01:37:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -795,6 +801,7 @@ archive/issue_comments_035418.json:
 Replying to [comment:31 mhampton]:
 
 > Like some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.
+
 
 Yes, if the patch here in question does not mess up existing functionality, but has issues with the new functionality with some browsers this can be dealt with via a followup ticket. Getting this in working 99% now is much better than it bitrotting and I think Jason will be much happier, too :)
 
@@ -829,7 +836,7 @@ I think now that people have hit this on a variety of platform combinations it s
 archive/issue_comments_035420.json:
 ```json
 {
-    "body": "Replying to [comment:33 mhampton]:\n> I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.\nI wasn't sure how picky to be.  Yes, and mabshoff's comment about Jason not wanting bitrot is certainly reasonable.\n\nDoes this mean that \n\n>   * testing with IE 6 on Windows\n>   * testing with Opera 9.5 on OSX,  Linux\n>   * review of the patches themselves\n>   * review of mabshoff's changes to the spkgs\n\nis all done?  I only looked at functionality, not the code.  \n\nLet the followup tickets begin!",
+    "body": "Replying to [comment:33 mhampton]:\n> I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.\n\nI wasn't sure how picky to be.  Yes, and mabshoff's comment about Jason not wanting bitrot is certainly reasonable.\n\nDoes this mean that \n\n>   * testing with IE 6 on Windows\n>   * testing with Opera 9.5 on OSX,  Linux\n>   * review of the patches themselves\n>   * review of mabshoff's changes to the spkgs\n\n\nis all done?  I only looked at functionality, not the code.  \n\nLet the followup tickets begin!",
     "created_at": "2009-01-15T02:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
@@ -840,6 +847,7 @@ archive/issue_comments_035420.json:
 
 Replying to [comment:33 mhampton]:
 > I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.
+
 I wasn't sure how picky to be.  Yes, and mabshoff's comment about Jason not wanting bitrot is certainly reasonable.
 
 Does this mean that 
@@ -848,6 +856,7 @@ Does this mean that
 >   * testing with Opera 9.5 on OSX,  Linux
 >   * review of the patches themselves
 >   * review of mabshoff's changes to the spkgs
+
 
 is all done?  I only looked at functionality, not the code.  
 

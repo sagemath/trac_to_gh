@@ -3,7 +3,7 @@
 archive/issues_000816.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nideal quotients:\n\n\n```\nsage: R.<x,y,z> = PolynomialRing(GF(181),3)\nsage: I = Ideal([x^2+x*y*z,y^2-z^3*y,z^3+y^5*x*z])\nsage: J = Ideal([x])\nsage: Q = I.quotient(J)\nsage: y*z + x in I\nFalse\nsage: x in J\nTrue\nsage: x * (y*z + x) in I\nTrue\n```\n\n\nchanging rings for ideals:\n\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: I\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: I.groebner_basis()\n[z^3 - 1, y^2 + y*z + z^2, x + y + z]\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex'); Q\nPolynomial Ring in x, y, z over Rational Field\nsage: Q.term_order()\nDegree reverse lexicographic term order\n\nsage: J = I.change_ring(Q)\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: J.groebner_basis()\n[x + y + z, y^2 + y*z + z^2, z^3 - 1]\n```\n\n\nconstructing new rings\n\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(127),3,order='lex')\nsage: x > y^2\nTrue\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex')\nsage: x > y^2\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/816\n\n",
+    "body": "Assignee: @williamstein\n\nideal quotients:\n\n```\nsage: R.<x,y,z> = PolynomialRing(GF(181),3)\nsage: I = Ideal([x^2+x*y*z,y^2-z^3*y,z^3+y^5*x*z])\nsage: J = Ideal([x])\nsage: Q = I.quotient(J)\nsage: y*z + x in I\nFalse\nsage: x in J\nTrue\nsage: x * (y*z + x) in I\nTrue\n```\n\nchanging rings for ideals:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3,order='lex')\nsage: I = sage.rings.ideal.Cyclic(P)\nsage: I\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: I.groebner_basis()\n[z^3 - 1, y^2 + y*z + z^2, x + y + z]\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex'); Q\nPolynomial Ring in x, y, z over Rational Field\nsage: Q.term_order()\nDegree reverse lexicographic term order\n\nsage: J = I.change_ring(Q)\nIdeal (x + y + z, x*y + x*z + y*z, x*y*z - 1) of Polynomial Ring in x, y, z over Rational Field\nsage: J.groebner_basis()\n[x + y + z, y^2 + y*z + z^2, z^3 - 1]\n```\n\nconstructing new rings\n\n```\nsage: P.<x,y,z> = PolynomialRing(GF(127),3,order='lex')\nsage: x > y^2\nTrue\nsage: Q.<x,y,z> = P.new_ring(order='degrevlex')\nsage: x > y^2\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/816\n\n",
     "created_at": "2007-10-04T00:38:17Z",
     "labels": [
         "component: algebraic geometry"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 ideal quotients:
 
-
 ```
 sage: R.<x,y,z> = PolynomialRing(GF(181),3)
 sage: I = Ideal([x^2+x*y*z,y^2-z^3*y,z^3+y^5*x*z])
@@ -33,9 +32,7 @@ sage: x * (y*z + x) in I
 True
 ```
 
-
 changing rings for ideals:
-
 
 ```
 sage: P.<x,y,z> = PolynomialRing(QQ,3,order='lex')
@@ -55,9 +52,7 @@ sage: J.groebner_basis()
 [x + y + z, y^2 + y*z + z^2, z^3 - 1]
 ```
 
-
 constructing new rings
-
 
 ```
 sage: P.<x,y,z> = PolynomialRing(GF(127),3,order='lex')
@@ -67,7 +62,6 @@ sage: Q.<x,y,z> = P.new_ring(order='degrevlex')
 sage: x > y^2
 False
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/816

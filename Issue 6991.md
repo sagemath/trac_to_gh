@@ -3,7 +3,7 @@
 archive/issues_006991.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\n\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
     "created_at": "2009-09-22T18:45:43Z",
     "labels": [
         "component: geometry",
@@ -26,13 +26,11 @@ In the nfacets method, for non-reflexive lattice polytopes this is computed from
 ```
 self._nfacets = len(self._facet_normals)
 ```
-
 but self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be
 
 ```
 self._nfacets = self._facet_normals.nrows()
 ```
-
 
 A doctest should also be added for this case.
 

@@ -3,7 +3,7 @@
 archive/issues_008912.json:
 ```json
 {
-    "body": "Assignee: @saliola\n\nKeywords: documentation\n\nthe word self is latexed in the first line of the documentation string, but it shouldn't be.\n\n\n```\nm = FiniteMonoids().example()\nx = m.an_element()\nx.pseudo_order??\n```\n\n\na patch is coming soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8912\n\n",
+    "body": "Assignee: @saliola\n\nKeywords: documentation\n\nthe word self is latexed in the first line of the documentation string, but it shouldn't be.\n\n```\nm = FiniteMonoids().example()\nx = m.an_element()\nx.pseudo_order??\n```\n\na patch is coming soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8912\n\n",
     "created_at": "2010-05-07T14:56:05Z",
     "labels": [
         "component: documentation",
@@ -23,13 +23,11 @@ Keywords: documentation
 
 the word self is latexed in the first line of the documentation string, but it shouldn't be.
 
-
 ```
 m = FiniteMonoids().example()
 x = m.an_element()
 x.pseudo_order??
 ```
-
 
 a patch is coming soon
 

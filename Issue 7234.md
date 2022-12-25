@@ -3,7 +3,7 @@
 archive/issues_007234.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @rbeezer @JohnCremona @kcrisman @slel\n\nKeywords: unit group finite field ring\n\nThe attached patch implements unit groups for finite fields.  It is \nmodelled on John Cremona's code for the unit groups of number fields.  One \ndifference is that if F is a finite field,  while F.unit_group() yields \nthe group of units (just as for a number field), F.unit_group(n) gives the \ngroup of n-th roots of unity.\n\nI have designated it as \"needs work\" for two reasons:\n\n1.  Both pieces of code deserve generalising to more general rings.  In\nparticular, Rob Beezer has\n[expressed](http://groups.google.com/group/sage-devel/browse_thread/thread/4f903f830aed653d) \na need to have the group of units of the integers modulo n.\n\n2.  There are certain aspects of the notation/terminology/implementation\nthat I am not totally happy with.  Maybe `F.unit_group(n)` is not such a\ngood idea.  Also it seems\nodd that one has\n\n```\nsage: F.<g> = FiniteField(16)\nsage: UF = F.unit_group()\nsage: UF.gen()\ng\nsage: g in UF\nTrue\n```\n\nbut\n\n```\nsage: UF(g)\nu\nsage: UF(1 + g + g^3)\nu^7\n```\n\nIt's similar for number fields:\n\n```\nsage: K.<a> = NumberField(x^3 - 39*x - 91)\nsage: UK = K.unit_group()\nsage: UK.gens()\n[-1, a^2 - 4*a - 22, a + 3]\nsage: UK(a + 3)\nu2\n```\n\nNote also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.\n\nDeciding how to be more consistent probably needs to be done at a more\ngeneral level and will most likely best be done by introducing a class\n`UnitGroupElement` based (for commutative rings anyway) on\n`AbelianGroupElement`, something that has been avoided in the finite field\nand number field cases.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7234\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rbeezer @JohnCremona @kcrisman @slel\n\nKeywords: unit group finite field ring\n\nThe attached patch implements unit groups for finite fields.  It is \nmodelled on John Cremona's code for the unit groups of number fields.  One \ndifference is that if F is a finite field,  while F.unit_group() yields \nthe group of units (just as for a number field), F.unit_group(n) gives the \ngroup of n-th roots of unity.\n\nI have designated it as \"needs work\" for two reasons:\n\n1.  Both pieces of code deserve generalising to more general rings.  In\nparticular, Rob Beezer has\n[expressed](http://groups.google.com/group/sage-devel/browse_thread/thread/4f903f830aed653d) \na need to have the group of units of the integers modulo n.\n\n2.  There are certain aspects of the notation/terminology/implementation\nthat I am not totally happy with.  Maybe `F.unit_group(n)` is not such a\ngood idea.  Also it seems\nodd that one has\n\n```\nsage: F.<g> = FiniteField(16)\nsage: UF = F.unit_group()\nsage: UF.gen()\ng\nsage: g in UF\nTrue\n```\nbut\n\n```\nsage: UF(g)\nu\nsage: UF(1 + g + g^3)\nu^7\n```\nIt's similar for number fields:\n\n```\nsage: K.<a> = NumberField(x^3 - 39*x - 91)\nsage: UK = K.unit_group()\nsage: UK.gens()\n[-1, a^2 - 4*a - 22, a + 3]\nsage: UK(a + 3)\nu2\n```\nNote also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.\n\nDeciding how to be more consistent probably needs to be done at a more\ngeneral level and will most likely best be done by introducing a class\n`UnitGroupElement` based (for commutative rings anyway) on\n`AbelianGroupElement`, something that has been avoided in the finite field\nand number field cases.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7234\n\n",
     "created_at": "2009-10-16T14:30:18Z",
     "labels": [
         "component: algebra"
@@ -47,7 +47,6 @@ g
 sage: g in UF
 True
 ```
-
 but
 
 ```
@@ -56,7 +55,6 @@ u
 sage: UF(1 + g + g^3)
 u^7
 ```
-
 It's similar for number fields:
 
 ```
@@ -67,7 +65,6 @@ sage: UK.gens()
 sage: UK(a + 3)
 u2
 ```
-
 Note also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.
 
 Deciding how to be more consistent probably needs to be done at a more
@@ -187,7 +184,7 @@ Changing keywords from "unit group finite field ring" to "unit group, finite fie
 archive/issue_comments_059897.json:
 ```json
 {
-    "body": "here is a branch, refreshed, but not working\n----\nNew commits:",
+    "body": "here is a branch, refreshed, but not working\n\n---\nNew commits:",
     "created_at": "2018-06-26T09:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
@@ -197,7 +194,8 @@ archive/issue_comments_059897.json:
 ```
 
 here is a branch, refreshed, but not working
-----
+
+---
 New commits:
 
 

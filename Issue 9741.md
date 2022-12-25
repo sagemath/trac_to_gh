@@ -90,7 +90,7 @@ Great idea!  So what about those functions that call vertices(), like adjacency 
 archive/issue_comments_095217.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> Great idea!  So what about those functions that call vertices(), like adjacency matrix, for example?  Will they have a default key?\n\nThe default value for key (in Python) is None.  I've specified None as the default for the key argument in this new function, so the behavior should be unchanged in other places that call vertices(), though after this patch that could be changed easily.  This patch is really just a convenience, but more about highlighting that you should think about how the sorting is going to work (or not work) if you have \"exotic\" objects for vertices.",
+    "body": "Replying to [comment:2 jason]:\n> Great idea!  So what about those functions that call vertices(), like adjacency matrix, for example?  Will they have a default key?\n\n\nThe default value for key (in Python) is None.  I've specified None as the default for the key argument in this new function, so the behavior should be unchanged in other places that call vertices(), though after this patch that could be changed easily.  This patch is really just a convenience, but more about highlighting that you should think about how the sorting is going to work (or not work) if you have \"exotic\" objects for vertices.",
     "created_at": "2010-08-14T03:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -101,6 +101,7 @@ archive/issue_comments_095217.json:
 
 Replying to [comment:2 jason]:
 > Great idea!  So what about those functions that call vertices(), like adjacency matrix, for example?  Will they have a default key?
+
 
 The default value for key (in Python) is None.  I've specified None as the default for the key argument in this new function, so the behavior should be unchanged in other places that call vertices(), though after this patch that could be changed easily.  This patch is really just a convenience, but more about highlighting that you should think about how the sorting is going to work (or not work) if you have "exotic" objects for vertices.
 
@@ -161,7 +162,7 @@ Standalone patch, apply only this
 archive/issue_comments_095220.json:
 ```json
 {
-    "body": "Replying to [comment:4 ncohen]:\n> Would it be possible to make a \n> \n> \"Return the list of vertices\"\n> \n> out of your\n> \n> \"Return a list of the vertices, usually as a sorted list\" (Why \"usually as\") ?\n\nYes, new v2 patch has this change.  My original goal was to make the default sorting behavior more obvious, but you are right that the doctests should do the job of explaining that.\n\nThanks,\nRob",
+    "body": "Replying to [comment:4 ncohen]:\n> Would it be possible to make a \n> \n> \"Return the list of vertices\"\n> \n> out of your\n> \n> \"Return a list of the vertices, usually as a sorted list\" (Why \"usually as\") ?\n\n\nYes, new v2 patch has this change.  My original goal was to make the default sorting behavior more obvious, but you are right that the doctests should do the job of explaining that.\n\nThanks,\nRob",
     "created_at": "2010-09-07T19:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -178,6 +179,7 @@ Replying to [comment:4 ncohen]:
 > out of your
 > 
 > "Return a list of the vertices, usually as a sorted list" (Why "usually as") ?
+
 
 Yes, new v2 patch has this change.  My original goal was to make the default sorting behavior more obvious, but you are right that the doctests should do the job of explaining that.
 
@@ -263,7 +265,7 @@ Resolution: fixed
 archive/issue_comments_095224.json:
 ```json
 {
-    "body": "We'll need to add a patch at #4000 to update this test line:\n\n\n```python\n    sage: dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant\n```\n\nI think we can use `Polynomial_rational_flint`, instead. See [comment:ticket:4000:88 comment 88].",
+    "body": "We'll need to add a patch at #4000 to update this test line:\n\n```python\n    sage: dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant\n```\nI think we can use `Polynomial_rational_flint`, instead. See [comment:ticket:4000:88 comment 88].",
     "created_at": "2010-09-18T23:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -274,11 +276,9 @@ archive/issue_comments_095224.json:
 
 We'll need to add a patch at #4000 to update this test line:
 
-
 ```python
     sage: dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant
 ```
-
 I think we can use `Polynomial_rational_flint`, instead. See [comment:ticket:4000:88 comment 88].
 
 
@@ -370,7 +370,7 @@ Rob
 archive/issue_comments_095229.json:
 ```json
 {
-    "body": "Replying to [comment:13 rbeezer]:\n> Did something change elsewhere?  This was passing tests before.\n\nTicket #4000 implements fast polynomial arithmetic over the rationals via FLINT1.  It removes the class `Polynomial_rational_dense` but \"replaces\" it with `Polynomial_rational_flint`.  \n\nWould `dsc = lambda x: x.discriminant()` work in the sorting test?  If it does, it could shield the test against changes to a lower-level API.\n\n> I could change this to something different.  I'm traveling with family right now, but could work on it tomorrow night.  How urgent is a fix?\n\nIt's not very urgent, though we're hoping to merge #4000 in 4.6.alpha2, which I plan to release at least a week from now (alpha1 is not yet out).  Currently, however, there's a more serious build error at #4000.",
+    "body": "Replying to [comment:13 rbeezer]:\n> Did something change elsewhere?  This was passing tests before.\n\n\nTicket #4000 implements fast polynomial arithmetic over the rationals via FLINT1.  It removes the class `Polynomial_rational_dense` but \"replaces\" it with `Polynomial_rational_flint`.  \n\nWould `dsc = lambda x: x.discriminant()` work in the sorting test?  If it does, it could shield the test against changes to a lower-level API.\n\n> I could change this to something different.  I'm traveling with family right now, but could work on it tomorrow night.  How urgent is a fix?\n\n\nIt's not very urgent, though we're hoping to merge #4000 in 4.6.alpha2, which I plan to release at least a week from now (alpha1 is not yet out).  Currently, however, there's a more serious build error at #4000.",
     "created_at": "2010-09-19T05:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -382,11 +382,13 @@ archive/issue_comments_095229.json:
 Replying to [comment:13 rbeezer]:
 > Did something change elsewhere?  This was passing tests before.
 
+
 Ticket #4000 implements fast polynomial arithmetic over the rationals via FLINT1.  It removes the class `Polynomial_rational_dense` but "replaces" it with `Polynomial_rational_flint`.  
 
 Would `dsc = lambda x: x.discriminant()` work in the sorting test?  If it does, it could shield the test against changes to a lower-level API.
 
 > I could change this to something different.  I'm traveling with family right now, but could work on it tomorrow night.  How urgent is a fix?
+
 
 It's not very urgent, though we're hoping to merge #4000 in 4.6.alpha2, which I plan to release at least a week from now (alpha1 is not yet out).  Currently, however, there's a more serious build error at #4000.
 
@@ -578,7 +580,7 @@ Oops:  I suppose I should have written `dsc = discriminant` or `dsc = sage.misc.
 archive/issue_comments_095237.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> No, that's sounds good to me.  Thanks for your explanation.\n> \n> Oops:  I suppose I should have written `dsc = discriminant` or `dsc = sage.misc.functional.discriminant` above.\n\nPatch to fix this, with a bit more explanation, up at #4000.\n\nThanks, Mitesh, for guiding me through this one.  First time I've had a mid-release conflict to resolve.\n\nRob",
+    "body": "Replying to [comment:20 mpatel]:\n> No, that's sounds good to me.  Thanks for your explanation.\n> \n> Oops:  I suppose I should have written `dsc = discriminant` or `dsc = sage.misc.functional.discriminant` above.\n\n\nPatch to fix this, with a bit more explanation, up at #4000.\n\nThanks, Mitesh, for guiding me through this one.  First time I've had a mid-release conflict to resolve.\n\nRob",
     "created_at": "2010-09-20T18:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
@@ -591,6 +593,7 @@ Replying to [comment:20 mpatel]:
 > No, that's sounds good to me.  Thanks for your explanation.
 > 
 > Oops:  I suppose I should have written `dsc = discriminant` or `dsc = sage.misc.functional.discriminant` above.
+
 
 Patch to fix this, with a bit more explanation, up at #4000.
 

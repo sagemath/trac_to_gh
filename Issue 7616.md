@@ -145,7 +145,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064923.json:
 ```json
 {
-    "body": "There's a long email thread about this between the Roberts and I, but I realized I should at least make a note here to keep other people up to date (in particular, I think John C is itching to see this in!) We're getting closer and closer, but unfortunately the current patch isn't it. (I think we can make Robert's previous patch work, but I won't have a chance to get to it until tonight.) Here's an example that blows up:\n\n\n```\nsage: K.<a> = NumberField(x^5+2) ; R.<y> = K[] ; L.<x0> = K.extension(y + a**2)\nsage: L(a)\n... RuntimeError ...\n```\n\n\nI'm going to have some time to work tonight (barring my daughter not sleeping), and I think we can finish this off then. The problem is that each case where this works also produces other weird bugs/issues ... in any event, ETA is soon for a working patch.",
+    "body": "There's a long email thread about this between the Roberts and I, but I realized I should at least make a note here to keep other people up to date (in particular, I think John C is itching to see this in!) We're getting closer and closer, but unfortunately the current patch isn't it. (I think we can make Robert's previous patch work, but I won't have a chance to get to it until tonight.) Here's an example that blows up:\n\n```\nsage: K.<a> = NumberField(x^5+2) ; R.<y> = K[] ; L.<x0> = K.extension(y + a**2)\nsage: L(a)\n... RuntimeError ...\n```\n\nI'm going to have some time to work tonight (barring my daughter not sleeping), and I think we can finish this off then. The problem is that each case where this works also produces other weird bugs/issues ... in any event, ETA is soon for a working patch.",
     "created_at": "2009-12-20T18:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7616",
     "type": "issue_comment",
@@ -156,13 +156,11 @@ archive/issue_comments_064923.json:
 
 There's a long email thread about this between the Roberts and I, but I realized I should at least make a note here to keep other people up to date (in particular, I think John C is itching to see this in!) We're getting closer and closer, but unfortunately the current patch isn't it. (I think we can make Robert's previous patch work, but I won't have a chance to get to it until tonight.) Here's an example that blows up:
 
-
 ```
 sage: K.<a> = NumberField(x^5+2) ; R.<y> = K[] ; L.<x0> = K.extension(y + a**2)
 sage: L(a)
 ... RuntimeError ...
 ```
-
 
 I'm going to have some time to work tonight (barring my daughter not sleeping), and I think we can finish this off then. The problem is that each case where this works also produces other weird bugs/issues ... in any event, ETA is soon for a working patch.
 
@@ -245,7 +243,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064928.json:
 ```json
 {
-    "body": "After the patch (with 4.3.rc0):\n\n```\nsage: K.<a> = QuadraticField(-3)\nsage: L.<b> = K.extension(x - 5)\nsage: a*b\n5*a\n```\n\nThe result was `0` before.\n\nBut\n\n```\nsage: b\n---------------------------------------------------------------------------\nIndexError \n...\nIndexError: tuple index out of range\n```\n\nThe result was `5` before.",
+    "body": "After the patch (with 4.3.rc0):\n\n```\nsage: K.<a> = QuadraticField(-3)\nsage: L.<b> = K.extension(x - 5)\nsage: a*b\n5*a\n```\nThe result was `0` before.\n\nBut\n\n```\nsage: b\n---------------------------------------------------------------------------\nIndexError \n...\nIndexError: tuple index out of range\n```\nThe result was `5` before.",
     "created_at": "2009-12-21T07:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7616",
     "type": "issue_comment",
@@ -262,7 +260,6 @@ sage: L.<b> = K.extension(x - 5)
 sage: a*b
 5*a
 ```
-
 The result was `0` before.
 
 But
@@ -274,7 +271,6 @@ IndexError
 ...
 IndexError: tuple index out of range
 ```
-
 The result was `5` before.
 
 
@@ -322,7 +318,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064931.json:
 ```json
 {
-    "body": "Replying to [comment:10 fwclarke]:\n> After the patch (with 4.3.rc0):\n> {{{\n> sage: K.<a> = QuadraticField(-3)\n> sage: L.<b> = K.extension(x - 5)\n> sage: a*b\n> 5*a\n> }}}\n> The result was `0` before.\n\nSince b == 5, this is correct.\n\n> But\n> {{{\n> sage: b\n> ---------------------------------------------------------------------------\n> IndexError \n> ...\n> IndexError: tuple index out of range\n> }}}\n> The result was `5` before.\n\nI've fixed this, and posted a new patch.",
+    "body": "Replying to [comment:10 fwclarke]:\n> After the patch (with 4.3.rc0):\n> \n> ```\n> sage: K.<a> = QuadraticField(-3)\n> sage: L.<b> = K.extension(x - 5)\n> sage: a*b\n> 5*a\n> ```\n> The result was `0` before.\n\n\nSince b == 5, this is correct.\n\n> But\n> \n> ```\n> sage: b\n> ---------------------------------------------------------------------------\n> IndexError \n> ...\n> IndexError: tuple index out of range\n> ```\n> The result was `5` before.\n\n\nI've fixed this, and posted a new patch.",
     "created_at": "2009-12-22T07:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7616",
     "type": "issue_comment",
@@ -333,25 +329,29 @@ archive/issue_comments_064931.json:
 
 Replying to [comment:10 fwclarke]:
 > After the patch (with 4.3.rc0):
-> {{{
+> 
+> ```
 > sage: K.<a> = QuadraticField(-3)
 > sage: L.<b> = K.extension(x - 5)
 > sage: a*b
 > 5*a
-> }}}
+> ```
 > The result was `0` before.
+
 
 Since b == 5, this is correct.
 
 > But
-> {{{
+> 
+> ```
 > sage: b
 > ---------------------------------------------------------------------------
 > IndexError 
 > ...
 > IndexError: tuple index out of range
-> }}}
+> ```
 > The result was `5` before.
+
 
 I've fixed this, and posted a new patch.
 
@@ -362,7 +362,7 @@ I've fixed this, and posted a new patch.
 archive/issue_comments_064932.json:
 ```json
 {
-    "body": "This example should go in doctests, as well:\n\n```\nsage: K.<a> = NumberField(x^5+2)\nsage: R.<y> = K[]\nsage: D.<x0> = K.extension(y + a + 1)\nsage: D(a)\na\n```\n",
+    "body": "This example should go in doctests, as well:\n\n```\nsage: K.<a> = NumberField(x^5+2)\nsage: R.<y> = K[]\nsage: D.<x0> = K.extension(y + a + 1)\nsage: D(a)\na\n```",
     "created_at": "2009-12-22T07:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7616",
     "type": "issue_comment",
@@ -380,7 +380,6 @@ sage: D.<x0> = K.extension(y + a + 1)
 sage: D(a)
 a
 ```
-
 
 
 

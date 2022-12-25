@@ -3,7 +3,7 @@
 archive/issues_009927.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nFrom Victor Miller:\n\n\n```\n\nsage: import numpy\nsage: a = numpy.array([1,2,3])\nsage: v = vector(a)\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'NoneType' and\n'int'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9928\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nFrom Victor Miller:\n\n```\n\nsage: import numpy\nsage: a = numpy.array([1,2,3])\nsage: v = vector(a)\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'NoneType' and\n'int'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9928\n\n",
     "created_at": "2010-09-17T02:00:19Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ CC:  @rbeezer
 
 From Victor Miller:
 
-
 ```
 
 sage: import numpy
@@ -34,7 +33,6 @@ Traceback (click to the left of this block for traceback)
 TypeError: unsupported operand type(s) for ** or pow(): 'NoneType' and
 'int'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9928

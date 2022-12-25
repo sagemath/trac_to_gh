@@ -134,7 +134,7 @@ See #4446 for a patch implementing a partial interface (still work in progress).
 archive/issue_comments_031474.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. There is no .hg repository in the spkg.  You need to\n\n```\n$cd mpc-0.5\n$ hg init\n$ hg add spkg-install spkg-check SPKG.txt\n```\n\n\n2. The SPKG.txt doesn't list anybody or any contact info under \"package maintainer\". \n\n3. The SPKG.txt has an empty changelog.  This should at least list exactly which version of upstream is in the src subdirectory.   Typically when refereeing a patch, I like to verify that src/ contains the claimed upstream exactly, since I don't want some virus crap sneaking in.\n\n4. Speaking of crap, the src/src/ subdirectory is full of .o pre-compiled binary object files.  These need to all be deleted.\n\n```\nteragon-2:src wstein$ pwd\n/Users/wstein/tmp/mpc-0.5/src/src\nteragon-2:src wstein$ ls -1 *.o |wc -l\n      57\n```\n",
+    "body": "REFEREE REPORT:\n\n1. There is no .hg repository in the spkg.  You need to\n\n```\n$cd mpc-0.5\n$ hg init\n$ hg add spkg-install spkg-check SPKG.txt\n```\n\n2. The SPKG.txt doesn't list anybody or any contact info under \"package maintainer\". \n\n3. The SPKG.txt has an empty changelog.  This should at least list exactly which version of upstream is in the src subdirectory.   Typically when refereeing a patch, I like to verify that src/ contains the claimed upstream exactly, since I don't want some virus crap sneaking in.\n\n4. Speaking of crap, the src/src/ subdirectory is full of .o pre-compiled binary object files.  These need to all be deleted.\n\n```\nteragon-2:src wstein$ pwd\n/Users/wstein/tmp/mpc-0.5/src/src\nteragon-2:src wstein$ ls -1 *.o |wc -l\n      57\n```",
     "created_at": "2008-11-27T17:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4308",
     "type": "issue_comment",
@@ -153,7 +153,6 @@ $ hg init
 $ hg add spkg-install spkg-check SPKG.txt
 ```
 
-
 2. The SPKG.txt doesn't list anybody or any contact info under "package maintainer". 
 
 3. The SPKG.txt has an empty changelog.  This should at least list exactly which version of upstream is in the src subdirectory.   Typically when refereeing a patch, I like to verify that src/ contains the claimed upstream exactly, since I don't want some virus crap sneaking in.
@@ -166,7 +165,6 @@ teragon-2:src wstein$ pwd
 teragon-2:src wstein$ ls -1 *.o |wc -l
       57
 ```
-
 
 
 

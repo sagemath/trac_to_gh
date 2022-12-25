@@ -148,7 +148,7 @@ I'm ccing the participants in the discussion at #4965 in case they had something
 archive/issue_comments_037910.json:
 ```json
 {
-    "body": "The only issue I can see is the potential performance overhead.\n\nVanilla 4.2.1:\n\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 792 ns per loop\n```\n\n\nThis patch:\n\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 952 ns per loop\n```\n\n\nMaybe a cdef method could be added which everyone (`shift`, `__lshift__`, `__rshift__`) calls?",
+    "body": "The only issue I can see is the potential performance overhead.\n\nVanilla 4.2.1:\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 792 ns per loop\n```\n\nThis patch:\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 952 ns per loop\n```\n\nMaybe a cdef method could be added which everyone (`shift`, `__lshift__`, `__rshift__`) calls?",
     "created_at": "2009-11-16T12:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
@@ -161,7 +161,6 @@ The only issue I can see is the potential performance overhead.
 
 Vanilla 4.2.1:
 
-
 ```
 sage: P.<x> = GF(2)[]
 sage: f = P.random_element(50)
@@ -169,9 +168,7 @@ sage: %timeit f<<50
 1000000 loops, best of 3: 792 ns per loop
 ```
 
-
 This patch:
-
 
 ```
 sage: P.<x> = GF(2)[]
@@ -179,7 +176,6 @@ sage: f = P.random_element(50)
 sage: %timeit f<<50
 1000000 loops, best of 3: 952 ns per loop
 ```
-
 
 Maybe a cdef method could be added which everyone (`shift`, `__lshift__`, `__rshift__`) calls?
 
@@ -208,7 +204,7 @@ Doctests pass btw., applies cleanly etc.
 archive/issue_comments_037912.json:
 ```json
 {
-    "body": "Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by @malb created at 2009-11-20 10:49:37\n\nAlex and I were discussing this off-list. The speedup patch does the following:\n\n* added a new C function which all methods call now \n* I inlined it\n* and I changed the code to avoid some initialisation\n\nHere is what I got:\n\n**Vanilla:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 730 ns per loop\n```\n\n\n**Patch:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n**Patch + Speed-up:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: %timeit f<<50\n1000000 loops, best of 3: 761 ns per loop\n```\n\n\nSo there is still some overhead, but I think its acceptable.",
+    "body": "Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by @malb created at 2009-11-20 10:49:37\n\nAlex and I were discussing this off-list. The speedup patch does the following:\n\n* added a new C function which all methods call now \n* I inlined it\n* and I changed the code to avoid some initialisation\n\nHere is what I got:\n\n**Vanilla:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 730 ns per loop\n```\n\n**Patch:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n**Patch + Speed-up:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: %timeit f<<50\n1000000 loops, best of 3: 761 ns per loop\n```\n\nSo there is still some overhead, but I think its acceptable.",
     "created_at": "2009-11-20T10:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
@@ -236,7 +232,6 @@ sage: %timeit f<<50
 1000000 loops, best of 3: 730 ns per loop
 ```
 
-
 **Patch:**
 
 ```
@@ -246,7 +241,6 @@ sage: %timeit f<<50
 1000000 loops, best of 3: 1.06 µs per loop
 ```
 
-
 **Patch + Speed-up:**
 
 ```
@@ -254,7 +248,6 @@ sage: P.<x> = GF(2)[]
 sage: %timeit f<<50
 1000000 loops, best of 3: 761 ns per loop
 ```
-
 
 So there is still some overhead, but I think its acceptable.
 

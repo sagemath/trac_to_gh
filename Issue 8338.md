@@ -91,7 +91,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_074322.json:
 ```json
 {
-    "body": "Replying to [comment:1 wdj]:\n> Sage has Fourier series in the Piecewise class. \n\nI'll be checking that.\n\n> For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n\nI don't understand what you mean there. Could you explain, perhaps post some latex formulas to show your proposed definition.\n\nthanks\n\nOscar",
+    "body": "Replying to [comment:1 wdj]:\n> Sage has Fourier series in the Piecewise class. \n\n\nI'll be checking that.\n\n> For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n\n\nI don't understand what you mean there. Could you explain, perhaps post some latex formulas to show your proposed definition.\n\nthanks\n\nOscar",
     "created_at": "2010-02-24T01:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
@@ -103,9 +103,11 @@ archive/issue_comments_074322.json:
 Replying to [comment:1 wdj]:
 > Sage has Fourier series in the Piecewise class. 
 
+
 I'll be checking that.
 
 > For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.
+
 
 I don't understand what you mean there. Could you explain, perhaps post some latex formulas to show your proposed definition.
 
@@ -120,7 +122,7 @@ Oscar
 archive/issue_comments_074323.json:
 ```json
 {
-    "body": "Replying to [comment:4 olazo]:\n> Replying to [comment:1 wdj]:\n> \n> > For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n> \n> I don't understand what you mean there. Could you explain, perhaps \n> post some latex formulas to show your proposed definition.\n\n\nThe formulas are at http://en.wikipedia.org/wiki/Fourier_transform\n(which in turn refers to Rudin)\n\n> \n> thanks\n> \n> Oscar",
+    "body": "Replying to [comment:4 olazo]:\n> Replying to [comment:1 wdj]:\n> \n> > For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n\n> \n> I don't understand what you mean there. Could you explain, perhaps \n> post some latex formulas to show your proposed definition.\n\n\n\nThe formulas are at http://en.wikipedia.org/wiki/Fourier_transform\n(which in turn refers to Rudin)\n\n> \n> thanks\n> \n> Oscar",
     "created_at": "2010-02-24T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
@@ -133,9 +135,11 @@ Replying to [comment:4 olazo]:
 > Replying to [comment:1 wdj]:
 > 
 > > For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.
+
 > 
 > I don't understand what you mean there. Could you explain, perhaps 
 > post some latex formulas to show your proposed definition.
+
 
 
 The formulas are at http://en.wikipedia.org/wiki/Fourier_transform

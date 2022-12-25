@@ -3,7 +3,7 @@
 archive/issues_003885.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nSalman Butt ran into the following bug:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
+    "body": "Assignee: @craigcitro\n\nSalman Butt ran into the following bug:\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
     "created_at": "2008-08-17T21:58:14Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @craigcitro
 
 Salman Butt ran into the following bug:
 
-
 ```
 sage: V = QQ**2
 sage: W = V.subspace([[1,2]])
@@ -28,9 +27,7 @@ sage: W([2,1])
 (2, 1)
 ```
 
-
 Fix is attached, but the fact that you can still do the following is possibly worrisome:
-
 
 ```
 sage: V = QQ**2
@@ -38,7 +35,6 @@ sage: W = V.subspace([[1,2]])
 sage: W([2,1], check=False) in W
 True
 ```
-
 
 I just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.
 
@@ -125,7 +121,7 @@ Looks good to me.
 archive/issue_comments_027662.json:
 ```json
 {
-    "body": "With the patch applied I am seeing the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/modular/modsym/ambient.py     **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/ambient.py\", line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[6]>\", line 1, in <module>\n        M.factorization()                    # long time (about 8 seconds)###line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 1143, in factorization\n        for E in self.eisenstein_submodule().decomposition(anemic=True):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 582, in decomposition\n        X = t.decomposition_of_subspace(U[i], is_diagonalizable=is_diagonalizable)\n      File \"matrix2.pyx\", line 2169, in sage.matrix.matrix2.Matrix.decomposition_of_subspace (sage/matrix/matrix2.c:13376)\n      File \"matrix2.pyx\", line 2255, in sage.matrix.matrix2.Matrix.restrict (sage/matrix/matrix2.c:14068)\n      File \"element.pyx\", line 1899, in sage.structure.element.Vector.__mul__ (sage/structure/element.c:11232)\n      File \"coerce.pyx\", line 634, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6030)\n      File \"action.pyx\", line 195, in sage.categories.action.PrecomposedAction._call_ (sage/categories/action.c:3506)\n      File \"morphism.pyx\", line 88, in sage.categories.morphism.CallMorphism._call_ (sage/categories/morphism.c:2309)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 684, in __call__\n        raise ValueError, \"element (= %s) is not in free module\"%(x,)\n    ValueError: element (= [0, 1, 0, -1, -zeta3 + 1, 1/2*zeta3 + 1, zeta3 + 1/2]) is not in free module\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_20\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/.doctest_ambient.py\n         [10.9 s]\nexit code: 1024\n```\n\n\nCheers,\n\nMichael",
+    "body": "With the patch applied I am seeing the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/modular/modsym/ambient.py     **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/ambient.py\", line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[6]>\", line 1, in <module>\n        M.factorization()                    # long time (about 8 seconds)###line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 1143, in factorization\n        for E in self.eisenstein_submodule().decomposition(anemic=True):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 582, in decomposition\n        X = t.decomposition_of_subspace(U[i], is_diagonalizable=is_diagonalizable)\n      File \"matrix2.pyx\", line 2169, in sage.matrix.matrix2.Matrix.decomposition_of_subspace (sage/matrix/matrix2.c:13376)\n      File \"matrix2.pyx\", line 2255, in sage.matrix.matrix2.Matrix.restrict (sage/matrix/matrix2.c:14068)\n      File \"element.pyx\", line 1899, in sage.structure.element.Vector.__mul__ (sage/structure/element.c:11232)\n      File \"coerce.pyx\", line 634, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6030)\n      File \"action.pyx\", line 195, in sage.categories.action.PrecomposedAction._call_ (sage/categories/action.c:3506)\n      File \"morphism.pyx\", line 88, in sage.categories.morphism.CallMorphism._call_ (sage/categories/morphism.c:2309)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 684, in __call__\n        raise ValueError, \"element (= %s) is not in free module\"%(x,)\n    ValueError: element (= [0, 1, 0, -1, -zeta3 + 1, 1/2*zeta3 + 1, zeta3 + 1/2]) is not in free module\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_20\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/.doctest_ambient.py\n         [10.9 s]\nexit code: 1024\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T02:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
@@ -168,7 +164,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.a
          [10.9 s]
 exit code: 1024
 ```
-
 
 Cheers,
 

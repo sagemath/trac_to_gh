@@ -3,7 +3,7 @@
 archive/issues_006018.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nKeywords: Dirichlet characters\n\nFunny things happen if you have two Dirichlet groups with the same modulus and the same base ring, but different roots of unity. This can happen if you use base_extend:\n\n\n```\nsage: G = DirichletGroup(10, QQ).base_extend(CyclotomicField(4))\nsage: H = DirichletGroup(10, CyclotomicField(4))\n```\n\n\nNow G and H look pretty similar:\n\n```\nsage: G\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\nsage: H\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\n```\n\n\nBut they don't compare as equal and the generators of H don't live in G:\n\n```\nsage: G == H\nFalse\nsage: H.0 in G\nFalse\n```\n\n\nHere G only actually contains those characters which factor through its original base ring, namely QQ. This is probably going to be a bit mystifying for the end-user.\n\nSimilar phenomena can make it next to impossible to do arithmetic with characters obtained by base extension, which somehow are second-class citizens:\n\n\n```\nsage: K5 = CyclotomicField(5); K3 = CyclotomicField(3); K30 = CyclotomicField(30)\nsage: (DirichletGroup(31, K5).0).base_extend(K30) * (DirichletGroup(31, K3).0).base_extend(K30)\nTypeError: unsupported operand parent(s) for '*': \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8' and \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8'\n```\n\n\nThis is a particularly mystifying error for the uninitiated, since it's asserting that it can't find a common parent, but the string representations of the parents it already has are identical.\n\nI can see a couple of solutions:\n\n- Change base_extend for Dirichlet groups to pick a maximal order root of unity in the new base ring, rather than just base-extending the root of unity it already has. This is nice and transparent, but it could be slow in some cases, and it prevents us constructing Dirichlet characters with values in rings where the unit group isn't cyclic or we can't compute a generator (e.g. we'd lose the ability to base extend elements of `DirichletGroup(N, ZZ)` to `DirichletGroup(N, Integers(15))`).\n\n- Change the `_repr_` method for Dirichlet groups so it explicitly prints the root of unity involved. I don't like this idea much.\n\n- Some combination of the above two, with a special class for Dirichlet groups over domains where a unique root of unity of maximal order dividing `euler_phi(N)` doesn't exist or can't be calculated. This might be fiddly to write and maintain.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6018\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: Dirichlet characters\n\nFunny things happen if you have two Dirichlet groups with the same modulus and the same base ring, but different roots of unity. This can happen if you use base_extend:\n\n```\nsage: G = DirichletGroup(10, QQ).base_extend(CyclotomicField(4))\nsage: H = DirichletGroup(10, CyclotomicField(4))\n```\n\nNow G and H look pretty similar:\n\n```\nsage: G\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\nsage: H\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\n```\n\nBut they don't compare as equal and the generators of H don't live in G:\n\n```\nsage: G == H\nFalse\nsage: H.0 in G\nFalse\n```\n\nHere G only actually contains those characters which factor through its original base ring, namely QQ. This is probably going to be a bit mystifying for the end-user.\n\nSimilar phenomena can make it next to impossible to do arithmetic with characters obtained by base extension, which somehow are second-class citizens:\n\n```\nsage: K5 = CyclotomicField(5); K3 = CyclotomicField(3); K30 = CyclotomicField(30)\nsage: (DirichletGroup(31, K5).0).base_extend(K30) * (DirichletGroup(31, K3).0).base_extend(K30)\nTypeError: unsupported operand parent(s) for '*': \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8' and \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8'\n```\n\nThis is a particularly mystifying error for the uninitiated, since it's asserting that it can't find a common parent, but the string representations of the parents it already has are identical.\n\nI can see a couple of solutions:\n\n- Change base_extend for Dirichlet groups to pick a maximal order root of unity in the new base ring, rather than just base-extending the root of unity it already has. This is nice and transparent, but it could be slow in some cases, and it prevents us constructing Dirichlet characters with values in rings where the unit group isn't cyclic or we can't compute a generator (e.g. we'd lose the ability to base extend elements of `DirichletGroup(N, ZZ)` to `DirichletGroup(N, Integers(15))`).\n\n- Change the `_repr_` method for Dirichlet groups so it explicitly prints the root of unity involved. I don't like this idea much.\n\n- Some combination of the above two, with a special class for Dirichlet groups over domains where a unique root of unity of maximal order dividing `euler_phi(N)` doesn't exist or can't be calculated. This might be fiddly to write and maintain.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6018\n\n",
     "created_at": "2009-05-11T09:18:29Z",
     "labels": [
         "component: modular forms",
@@ -23,12 +23,10 @@ Keywords: Dirichlet characters
 
 Funny things happen if you have two Dirichlet groups with the same modulus and the same base ring, but different roots of unity. This can happen if you use base_extend:
 
-
 ```
 sage: G = DirichletGroup(10, QQ).base_extend(CyclotomicField(4))
 sage: H = DirichletGroup(10, CyclotomicField(4))
 ```
-
 
 Now G and H look pretty similar:
 
@@ -39,7 +37,6 @@ sage: H
 Group of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2
 ```
 
-
 But they don't compare as equal and the generators of H don't live in G:
 
 ```
@@ -49,11 +46,9 @@ sage: H.0 in G
 False
 ```
 
-
 Here G only actually contains those characters which factor through its original base ring, namely QQ. This is probably going to be a bit mystifying for the end-user.
 
 Similar phenomena can make it next to impossible to do arithmetic with characters obtained by base extension, which somehow are second-class citizens:
-
 
 ```
 sage: K5 = CyclotomicField(5); K3 = CyclotomicField(3); K30 = CyclotomicField(30)
@@ -62,7 +57,6 @@ TypeError: unsupported operand parent(s) for '*':
 'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8' and 
 'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8'
 ```
-
 
 This is a particularly mystifying error for the uninitiated, since it's asserting that it can't find a common parent, but the string representations of the parents it already has are identical.
 
@@ -159,7 +153,7 @@ Also, one potentially silly comment: your fix assumes that the constructor for `
 archive/issue_comments_047792.json:
 ```json
 {
-    "body": "I am running sage -testall on this patch at the moment. \n\nThe key question, I think, is what we want to happen in the following situation:\n\n```\nsage: f = DirichletGroup(17, ZZ).0\nsage: f.base_extend(Integers(15))\n```\n\nThis worked under the old approach, because the parent of the base-extended thing was the Dirichlet group of modulus 17 and `zeta = ZZ(15)(-1)`, of order 2. But I suspect that with this patch it will fail now, with an error message about not being able to compute roots of unity mod 15.\n\nI suggest a further modification which makes the constructor raise a more intelligent error message if the root of unity isn't specified and the base ring is one where we can't do factorisation. If the tests pass I will write such a patch, and give William's patch a positive review conditional on that.",
+    "body": "I am running sage -testall on this patch at the moment. \n\nThe key question, I think, is what we want to happen in the following situation:\n\n```\nsage: f = DirichletGroup(17, ZZ).0\nsage: f.base_extend(Integers(15))\n```\nThis worked under the old approach, because the parent of the base-extended thing was the Dirichlet group of modulus 17 and `zeta = ZZ(15)(-1)`, of order 2. But I suspect that with this patch it will fail now, with an error message about not being able to compute roots of unity mod 15.\n\nI suggest a further modification which makes the constructor raise a more intelligent error message if the root of unity isn't specified and the base ring is one where we can't do factorisation. If the tests pass I will write such a patch, and give William's patch a positive review conditional on that.",
     "created_at": "2010-01-20T18:17:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -176,7 +170,6 @@ The key question, I think, is what we want to happen in the following situation:
 sage: f = DirichletGroup(17, ZZ).0
 sage: f.base_extend(Integers(15))
 ```
-
 This worked under the old approach, because the parent of the base-extended thing was the Dirichlet group of modulus 17 and `zeta = ZZ(15)(-1)`, of order 2. But I suspect that with this patch it will fail now, with an error message about not being able to compute roots of unity mod 15.
 
 I suggest a further modification which makes the constructor raise a more intelligent error message if the root of unity isn't specified and the base ring is one where we can't do factorisation. If the tests pass I will write such a patch, and give William's patch a positive review conditional on that.
@@ -380,7 +373,7 @@ apply only this patch
 archive/issue_comments_047803.json:
 ```json
 {
-    "body": "Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by @williamstein created at 2010-01-20 23:57:21\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
+    "body": "Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by @williamstein created at 2010-01-20 23:57:21\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
     "created_at": "2010-01-20T23:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -403,7 +396,6 @@ sage: G.0
 sage: G.0(2)
 0.309016994375 + 0.951056516295*I
 ```
-
 
 Please revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.
 
@@ -595,7 +587,7 @@ archive/issue_events_014138.json:
 archive/issue_comments_047807.json:
 ```json
 {
-    "body": "Here is a branch implementing a solution which is somewhat like the third option in the ticket description.  The idea is to introduce two different variants of `DirichletGroup`:\n- `DirichletGroup(N, base_ring)`, corresponding to the group Hom((**Z**/*N***Z**)<sup>*</sup>, *R*<sup>*</sup>);\n- `DirichletGroup(N, base_ring, zeta[, zeta_order])` corresponding to the group Hom((**Z**/*N***Z**)<sup>*</sup>, \u3008\u03b6\u3009).\nIf *R* is a domain, we also allow the user to only specify `zeta_order`, in which case the `DirichletGroup` factory tries to compute a suitable `zeta`.\n\nThe difference between the two variants is visible from the string representation:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: K.<a> = NumberField(x^4 + 1)\nsage: DirichletGroup(5, K)\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1\nsage: DirichletGroup(5, K, a)\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n```\n\n\nBecause it is no longer mandatory to have a distinguished `zeta`, Dirichlet characters are by default specified by their values instead of a vector of integers modulo the order of `zeta`.  For efficiency reasons, this vector is still used whenever a `zeta` is known (whether it has been specified as in the second syntax above or has been computed at a later stage).\n\nBesides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.  This is because `zeta` is only computed when needed, and hence factoring cyclotomic polynomials is avoided.  This factoring will still happen when one asks for things like generators or a list of all elements.\n\nDavid: part of the branch (including some doctests) is based on your patches; I hope you don't mind me adding you as an author.",
+    "body": "Here is a branch implementing a solution which is somewhat like the third option in the ticket description.  The idea is to introduce two different variants of `DirichletGroup`:\n- `DirichletGroup(N, base_ring)`, corresponding to the group Hom((**Z**/*N***Z**)<sup>*</sup>, *R*<sup>*</sup>);\n- `DirichletGroup(N, base_ring, zeta[, zeta_order])` corresponding to the group Hom((**Z**/*N***Z**)<sup>*</sup>, \u3008\u03b6\u3009).\nIf *R* is a domain, we also allow the user to only specify `zeta_order`, in which case the `DirichletGroup` factory tries to compute a suitable `zeta`.\n\nThe difference between the two variants is visible from the string representation:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: K.<a> = NumberField(x^4 + 1)\nsage: DirichletGroup(5, K)\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1\nsage: DirichletGroup(5, K, a)\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n```\n\nBecause it is no longer mandatory to have a distinguished `zeta`, Dirichlet characters are by default specified by their values instead of a vector of integers modulo the order of `zeta`.  For efficiency reasons, this vector is still used whenever a `zeta` is known (whether it has been specified as in the second syntax above or has been computed at a later stage).\n\nBesides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.  This is because `zeta` is only computed when needed, and hence factoring cyclotomic polynomials is avoided.  This factoring will still happen when one asks for things like generators or a list of all elements.\n\nDavid: part of the branch (including some doctests) is based on your patches; I hope you don't mind me adding you as an author.",
     "created_at": "2015-06-05T12:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -619,7 +611,6 @@ Group of Dirichlet characters of modulus 5 over Number Field in a with defining 
 sage: DirichletGroup(5, K, a)
 Group of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a
 ```
-
 
 Because it is no longer mandatory to have a distinguished `zeta`, Dirichlet characters are by default specified by their values instead of a vector of integers modulo the order of `zeta`.  For efficiency reasons, this vector is still used whenever a `zeta` is known (whether it has been specified as in the second syntax above or has been computed at a later stage).
 
@@ -706,7 +697,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_047812.json:
 ```json
 {
-    "body": "This is just a detail, but instead of\n\n```\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n```\n\nI would prefer\n\n```\nGroup of Dirichlet characters of modulus 5 with values in the group of order 8 generated by a over Number Field in a with defining polynomial x^4 + 1\n```\n",
+    "body": "This is just a detail, but instead of\n\n```\nGroup of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n```\nI would prefer\n\n```\nGroup of Dirichlet characters of modulus 5 with values in the group of order 8 generated by a over Number Field in a with defining polynomial x^4 + 1\n```",
     "created_at": "2015-07-17T20:01:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -720,7 +711,6 @@ This is just a detail, but instead of
 ```
 Group of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a
 ```
-
 I would prefer
 
 ```
@@ -729,13 +719,12 @@ Group of Dirichlet characters of modulus 5 with values in the group of order 8 g
 
 
 
-
 ---
 
 archive/issue_comments_047813.json:
 ```json
 {
-    "body": "Replying to [comment:18 pbruin]:\n> Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.\n\nI assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...\n\nIt is true that `zeta()` for number fields is slow, but that can easily be improved (#18917).",
+    "body": "Replying to [comment:18 pbruin]:\n> Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.\n\n\nI assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...\n\nIt is true that `zeta()` for number fields is slow, but that can easily be improved (#18917).",
     "created_at": "2015-07-17T20:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -746,6 +735,7 @@ archive/issue_comments_047813.json:
 
 Replying to [comment:18 pbruin]:
 > Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.
+
 
 I assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...
 
@@ -758,7 +748,7 @@ It is true that `zeta()` for number fields is slow, but that can easily be impro
 archive/issue_comments_047814.json:
 ```json
 {
-    "body": "Replying to [comment:24 jdemeyer]:\n> Replying to [comment:18 pbruin]:\n> > Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.\n> \n> I assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...\nThis is not really true; it also makes more sense conceptually if one does not have to make a choice of root of unity.  I think the problems related to base extension do deserve to be solved and are at least as important as the speed-up.\n> It is true that `zeta()` for number fields is slow, but that can easily be improved (#18917).\nIt would be great if it could, but when making a speed improvement to `zeta()` in #15486, I found out that it was necessary to avoid calling PARI's `nfinit()`, because it was too slow for the number fields involved.  This unfortunately precludes using PARI's `nfrootsof1()`...",
+    "body": "Replying to [comment:24 jdemeyer]:\n> Replying to [comment:18 pbruin]:\n> > Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.\n\n> \n> I assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...\n\nThis is not really true; it also makes more sense conceptually if one does not have to make a choice of root of unity.  I think the problems related to base extension do deserve to be solved and are at least as important as the speed-up.\n> It is true that `zeta()` for number fields is slow, but that can easily be improved (#18917).\n\nIt would be great if it could, but when making a speed improvement to `zeta()` in #15486, I found out that it was necessary to avoid calling PARI's `nfinit()`, because it was too slow for the number fields involved.  This unfortunately precludes using PARI's `nfrootsof1()`...",
     "created_at": "2015-07-18T10:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -770,10 +760,13 @@ archive/issue_comments_047814.json:
 Replying to [comment:24 jdemeyer]:
 > Replying to [comment:18 pbruin]:
 > > Besides solving the problems in the ticket description, this ticket greatly speeds up constructing Dirichlet groups over number fields.
+
 > 
 > I assume that this is the main motivation for making `zeta` optional, right? I am not really convinced though that this extra complexity is needed...
+
 This is not really true; it also makes more sense conceptually if one does not have to make a choice of root of unity.  I think the problems related to base extension do deserve to be solved and are at least as important as the speed-up.
 > It is true that `zeta()` for number fields is slow, but that can easily be improved (#18917).
+
 It would be great if it could, but when making a speed improvement to `zeta()` in #15486, I found out that it was necessary to avoid calling PARI's `nfinit()`, because it was too slow for the number fields involved.  This unfortunately precludes using PARI's `nfrootsof1()`...
 
 
@@ -801,7 +794,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_047816.json:
 ```json
 {
-    "body": "Replying to [comment:23 jdemeyer]:\n> This is just a detail, but instead of\n> {{{\n> Group of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n> }}}\n> I would prefer\n> {{{\n> Group of Dirichlet characters of modulus 5 with values in the group of order 8 generated by a over Number Field in a with defining polynomial x^4 + 1\n> }}}\nI took the opportunity to make a more general improvement to the wording; the format is now\n\n```\nGroup of Dirichlet characters modulo N with values in [the group of order M generated by Z in ]R",
+    "body": "Replying to [comment:23 jdemeyer]:\n> This is just a detail, but instead of\n> \n> ```\n> Group of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a\n> ```\n> I would prefer\n> \n> ```\n> Group of Dirichlet characters of modulus 5 with values in the group of order 8 generated by a over Number Field in a with defining polynomial x^4 + 1\n> ```\n\nI took the opportunity to make a more general improvement to the wording; the format is now\n\n```\nGroup of Dirichlet characters modulo N with values in [the group of order M generated by Z in ]R",
     "created_at": "2015-07-20T16:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -812,13 +805,16 @@ archive/issue_comments_047816.json:
 
 Replying to [comment:23 jdemeyer]:
 > This is just a detail, but instead of
-> {{{
+> 
+> ```
 > Group of Dirichlet characters of modulus 5 over Number Field in a with defining polynomial x^4 + 1 with values in the group of order 8 generated by a
-> }}}
+> ```
 > I would prefer
-> {{{
+> 
+> ```
 > Group of Dirichlet characters of modulus 5 with values in the group of order 8 generated by a over Number Field in a with defining polynomial x^4 + 1
-> }}}
+> ```
+
 I took the opportunity to make a more general improvement to the wording; the format is now
 
 ```
@@ -1011,7 +1007,7 @@ http://build.sagedev.org/release/builders/%20%20slow%20AIMS%20%20%28Debian%207%2
 archive/issue_comments_047827.json:
 ```json
 {
-    "body": "Replying to [comment:34 vbraun]:\n> http://build.sagedev.org/release/builders/%20%20slow%20AIMS%20%20%28Debian%207%2032%20bit%29%20incremental/builds/439/steps/shell_4/logs/stdio\nFrom the failing doctest in `cachefunc.pyx`, it seems that #15692 is also merged in that branch; I suspect the failure is actually due to that ticket (cf. comment:48:ticket:15692).",
+    "body": "Replying to [comment:34 vbraun]:\n> http://build.sagedev.org/release/builders/%20%20slow%20AIMS%20%20%28Debian%207%2032%20bit%29%20incremental/builds/439/steps/shell_4/logs/stdio\n\nFrom the failing doctest in `cachefunc.pyx`, it seems that #15692 is also merged in that branch; I suspect the failure is actually due to that ticket (cf. comment:48:ticket:15692).",
     "created_at": "2016-03-26T09:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
@@ -1022,6 +1018,7 @@ archive/issue_comments_047827.json:
 
 Replying to [comment:34 vbraun]:
 > http://build.sagedev.org/release/builders/%20%20slow%20AIMS%20%20%28Debian%207%2032%20bit%29%20incremental/builds/439/steps/shell_4/logs/stdio
+
 From the failing doctest in `cachefunc.pyx`, it seems that #15692 is also merged in that branch; I suspect the failure is actually due to that ticket (cf. comment:48:ticket:15692).
 
 

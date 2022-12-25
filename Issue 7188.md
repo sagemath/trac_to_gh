@@ -3,7 +3,7 @@
 archive/issues_007188.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @embray @jdemeyer @kiwifb\n\nKeywords: GNUism AIX HP-UX Solaris\n\nOnce one runs make it runs the script $SAGE_ROOT/spkg/install. \n\nUnfortunately, the very first command in there, the result of ticket #6744 has a GNUism. \n\n\n```\n echo `date -u \"+%s\"` > .BUILDSTART\n```\n\n\nThe '%s is **not** part of the current POSIX standard and fails to work on both the latest version of Solaris (which is a supported operating system), and with HP-UX 11i, which is not supported \nby Sage, but I think we should try to build Sage in such a way \nthat is should run on any decent operating system. \n\nThere are at least two ways around this issue of find the number of seconds since 1//1/1970:\n\nhttp://shell.cfajohnson.com/cus-faq.html#Q6\n\nOne requires 'perl' (which is not tested for at this point), the other relies on 'awk' being POSIX complaint, which we can't assume, but is probably the safer of the two assumptions. A third way would be a way to make it work with any 'date' command using some maths with 'bc' but that looks like a lot of work, for little gain. \n\n\n\n```\n# The method below looks a bit odd, as one uses a\n# random number generator to get the time! However,\n# it will work with any 'awk' supporting the\n# POSIX spec for srand().\n\n# David Kirkby has tested this on the following operating systems.\n# AIX, HP-UX, Linux, OS X and Solaris. (versions as available).\n\n# The trick is to first seed the srand random number generator\n# generator with the default value (which is the number\n# of seconds since 1/1/1970) then call srand() again, to give the\n# first random number, which will be the seed. Neat I think!\n\n# See  http://shell.cfajohnson.com/cus-faq.html#Q6\n\nif [ `uname` = \"SunOS\" ] ; then\n  # The standard awk in Solaris is not POSIX complaint, and so will not be\n  # acceptable. But Sun ship a POSIX complient version at nawk (new awk)\n  nawk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nelse\n  awk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nfi\n\n```\n\n\nThe updated install script, can be found at \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/top-level-install-script/\n\nI've tested this on\n\n* AIX 6.1, compliments of http://www.metamodul.com/10.html\n* HP-UX 11i (my own HP C3600)\n* Linux (sage.math)\n* Solaris 10 update 7 SPARC (t2.math)\n* OpenSolaris 2008.11 (disk.math)\n* OS X (bsd.math)\n\n \nAccording to #6744 this needs to be manually integrated into Sage. Note I stuck a readme file in the directory highlighting the fact this needs to have execute permissions too.\n \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7188\n\n",
+    "body": "Assignee: tbd\n\nCC:  @embray @jdemeyer @kiwifb\n\nKeywords: GNUism AIX HP-UX Solaris\n\nOnce one runs make it runs the script $SAGE_ROOT/spkg/install. \n\nUnfortunately, the very first command in there, the result of ticket #6744 has a GNUism. \n\n```\n echo `date -u \"+%s\"` > .BUILDSTART\n```\n\nThe '%s is **not** part of the current POSIX standard and fails to work on both the latest version of Solaris (which is a supported operating system), and with HP-UX 11i, which is not supported \nby Sage, but I think we should try to build Sage in such a way \nthat is should run on any decent operating system. \n\nThere are at least two ways around this issue of find the number of seconds since 1//1/1970:\n\nhttp://shell.cfajohnson.com/cus-faq.html#Q6\n\nOne requires 'perl' (which is not tested for at this point), the other relies on 'awk' being POSIX complaint, which we can't assume, but is probably the safer of the two assumptions. A third way would be a way to make it work with any 'date' command using some maths with 'bc' but that looks like a lot of work, for little gain. \n\n\n```\n# The method below looks a bit odd, as one uses a\n# random number generator to get the time! However,\n# it will work with any 'awk' supporting the\n# POSIX spec for srand().\n\n# David Kirkby has tested this on the following operating systems.\n# AIX, HP-UX, Linux, OS X and Solaris. (versions as available).\n\n# The trick is to first seed the srand random number generator\n# generator with the default value (which is the number\n# of seconds since 1/1/1970) then call srand() again, to give the\n# first random number, which will be the seed. Neat I think!\n\n# See  http://shell.cfajohnson.com/cus-faq.html#Q6\n\nif [ `uname` = \"SunOS\" ] ; then\n  # The standard awk in Solaris is not POSIX complaint, and so will not be\n  # acceptable. But Sun ship a POSIX complient version at nawk (new awk)\n  nawk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nelse\n  awk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nfi\n\n```\n\nThe updated install script, can be found at \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/top-level-install-script/\n\nI've tested this on\n\n* AIX 6.1, compliments of http://www.metamodul.com/10.html\n* HP-UX 11i (my own HP C3600)\n* Linux (sage.math)\n* Solaris 10 update 7 SPARC (t2.math)\n* OpenSolaris 2008.11 (disk.math)\n* OS X (bsd.math)\n\n \nAccording to #6744 this needs to be manually integrated into Sage. Note I stuck a readme file in the directory highlighting the fact this needs to have execute permissions too.\n \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7188\n\n",
     "created_at": "2009-10-11T10:40:13Z",
     "labels": [
         "component: porting",
@@ -26,11 +26,9 @@ Once one runs make it runs the script $SAGE_ROOT/spkg/install.
 
 Unfortunately, the very first command in there, the result of ticket #6744 has a GNUism. 
 
-
 ```
  echo `date -u "+%s"` > .BUILDSTART
 ```
-
 
 The '%s is **not** part of the current POSIX standard and fails to work on both the latest version of Solaris (which is a supported operating system), and with HP-UX 11i, which is not supported 
 by Sage, but I think we should try to build Sage in such a way 
@@ -41,7 +39,6 @@ There are at least two ways around this issue of find the number of seconds sinc
 http://shell.cfajohnson.com/cus-faq.html#Q6
 
 One requires 'perl' (which is not tested for at this point), the other relies on 'awk' being POSIX complaint, which we can't assume, but is probably the safer of the two assumptions. A third way would be a way to make it work with any 'date' command using some maths with 'bc' but that looks like a lot of work, for little gain. 
-
 
 
 ```
@@ -69,7 +66,6 @@ else
 fi
 
 ```
-
 
 The updated install script, can be found at 
 
@@ -119,7 +115,7 @@ Changing status from new to needs_review.
 archive/issue_comments_059430.json:
 ```json
 {
-    "body": "I just added a new comment to the file \n\n\n```\n# We would like to thank http://www.metamodul.com/ for free\n# access to the the IBM machine running AIX 6.1\n```\n\n\nThat site is providing the AIX machine which allowed me to test the patch under AIX, which I would not otherwise had been able to do so easily, even though I have an old RS6000 in my garage.",
+    "body": "I just added a new comment to the file \n\n```\n# We would like to thank http://www.metamodul.com/ for free\n# access to the the IBM machine running AIX 6.1\n```\n\nThat site is providing the AIX machine which allowed me to test the patch under AIX, which I would not otherwise had been able to do so easily, even though I have an old RS6000 in my garage.",
     "created_at": "2009-10-11T12:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
@@ -130,12 +126,10 @@ archive/issue_comments_059430.json:
 
 I just added a new comment to the file 
 
-
 ```
 # We would like to thank http://www.metamodul.com/ for free
 # access to the the IBM machine running AIX 6.1
 ```
-
 
 That site is providing the AIX machine which allowed me to test the patch under AIX, which I would not otherwise had been able to do so easily, even though I have an old RS6000 in my garage.
 
@@ -321,7 +315,7 @@ archive/issue_events_017017.json:
 archive/issue_comments_059434.json:
 ```json
 {
-    "body": "here is a branch that just get rid of the unused BUILDSTART file\n----\nNew commits:",
+    "body": "here is a branch that just get rid of the unused BUILDSTART file\n\n---\nNew commits:",
     "created_at": "2018-12-17T20:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
@@ -331,7 +325,8 @@ archive/issue_comments_059434.json:
 ```
 
 here is a branch that just get rid of the unused BUILDSTART file
-----
+
+---
 New commits:
 
 

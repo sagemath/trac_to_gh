@@ -3,7 +3,7 @@
 archive/issues_008709.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nOn one platform (an itanium machine running red hat), I see this:\n\n```\nFile \"/home/palmieri/cleo/sage-4.4.alpha0/devel/sage/sage/geometry/polyhedra.py\", line 3147:\n    sage: for lset in polytopes.cross_polytope(2).face_lattice().level_sets(): print lset[0]\nExpected:\n    (None, (0, 1, 2, 3))\n    ((1,), (2, 3))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\nGot:\n    (None, (0, 1, 2, 3))\n    ((0,), (1, 2))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\n```\n\nThis is with Sage 4.4.alpha0, and it comes from the patch in ticket #8650.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8709\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nOn one platform (an itanium machine running red hat), I see this:\n\n```\nFile \"/home/palmieri/cleo/sage-4.4.alpha0/devel/sage/sage/geometry/polyhedra.py\", line 3147:\n    sage: for lset in polytopes.cross_polytope(2).face_lattice().level_sets(): print lset[0]\nExpected:\n    (None, (0, 1, 2, 3))\n    ((1,), (2, 3))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\nGot:\n    (None, (0, 1, 2, 3))\n    ((0,), (1, 2))\n    ((1, 2), (3,))\n    ((0, 1, 2, 3), None)\n```\nThis is with Sage 4.4.alpha0, and it comes from the patch in ticket #8650.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8709\n\n",
     "created_at": "2010-04-18T03:07:19Z",
     "labels": [
         "component: geometry",
@@ -36,7 +36,6 @@ Got:
     ((1, 2), (3,))
     ((0, 1, 2, 3), None)
 ```
-
 This is with Sage 4.4.alpha0, and it comes from the patch in ticket #8650.
 
 
@@ -219,7 +218,7 @@ Apply only this one.
 archive/issue_comments_079343.json:
 ```json
 {
-    "body": "Replying to [comment:5 novoselt]:\n> Oops, good point. I am attaching a new patch that just replaces the doctest. Can I still leave it at positive review?..\n\nYes.",
+    "body": "Replying to [comment:5 novoselt]:\n> Oops, good point. I am attaching a new patch that just replaces the doctest. Can I still leave it at positive review?..\n\n\nYes.",
     "created_at": "2010-04-18T05:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8709",
     "type": "issue_comment",
@@ -230,6 +229,7 @@ archive/issue_comments_079343.json:
 
 Replying to [comment:5 novoselt]:
 > Oops, good point. I am attaching a new patch that just replaces the doctest. Can I still leave it at positive review?..
+
 
 Yes.
 

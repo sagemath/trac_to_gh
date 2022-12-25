@@ -3,7 +3,7 @@
 archive/issues_005017.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
     "created_at": "2009-01-18T18:29:03Z",
     "labels": [
         "component: graph theory",
@@ -17,7 +17,6 @@ archive/issues_005017.json:
 }
 ```
 Assignee: @rlmill
-
 
 
 ```
@@ -38,7 +37,6 @@ In sage-3.2.1 and later this fails.
 
 Jaap
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5017
@@ -70,7 +68,7 @@ Attachment [trac_5017-graph_aut_gp_trans.patch](tarball://root/attachments/some-
 archive/issue_comments_038154.json:
 ```json
 {
-    "body": "After the patch:\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: foo = Graph()\n\nsage:  sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n\nsage:  sage: foo.automorphism_group(translation=True)\n (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nsage: \n\n```\n\n\n\nlooking at the code, patch seems ok.\n\nJaap",
+    "body": "After the patch:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: foo = Graph()\n\nsage:  sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n\nsage:  sage: foo.automorphism_group(translation=True)\n (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nsage: \n\n```\n\n\nlooking at the code, patch seems ok.\n\nJaap",
     "created_at": "2009-01-18T21:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5017",
     "type": "issue_comment",
@@ -80,7 +78,6 @@ archive/issue_comments_038154.json:
 ```
 
 After the patch:
-
 
 
 ```
@@ -98,7 +95,6 @@ sage:  sage: foo.automorphism_group(translation=True)
 sage: 
 
 ```
-
 
 
 looking at the code, patch seems ok.

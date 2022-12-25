@@ -3,7 +3,7 @@
 archive/issues_000463.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n[12:25] <william> interesting feature idea:\n[12:25] <william> extend the \"sage -upgrade\" command so you an give the directory or URL\n[12:26] <william> of any other installed version of SAGE, and it will pull everything from there.\n[12:26] <william> install any newer spkg's and pull from any active repo.\n[12:26] <malb> definitely nice for sysadmins I guess\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/463\n\n",
+    "body": "Assignee: @williamstein\n\n```\n[12:25] <william> interesting feature idea:\n[12:25] <william> extend the \"sage -upgrade\" command so you an give the directory or URL\n[12:26] <william> of any other installed version of SAGE, and it will pull everything from there.\n[12:26] <william> install any newer spkg's and pull from any active repo.\n[12:26] <malb> definitely nice for sysadmins I guess\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/463\n\n",
     "created_at": "2007-08-19T19:32:14Z",
     "labels": [
         "component: packages: standard"
@@ -17,7 +17,6 @@ archive/issues_000463.json:
 ```
 Assignee: @williamstein
 
-
 ```
 [12:25] <william> interesting feature idea:
 [12:25] <william> extend the "sage -upgrade" command so you an give the directory or URL
@@ -25,7 +24,6 @@ Assignee: @williamstein
 [12:26] <william> install any newer spkg's and pull from any active repo.
 [12:26] <malb> definitely nice for sysadmins I guess
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/463
 
@@ -78,7 +76,7 @@ apply to the scripts repo.
 archive/issue_comments_002287.json:
 ```json
 {
-    "body": "To test this out try:\n\nOn an older sage install\n\n```\nsage -upgrade  # should do a standard upgrade to the latest version of sage\n```\n\n\nOn a new sage install\n\n```\nsage -upgrade http://sage.math.washington.edu/home/was/build/sage-3.2.1.alpha1\n```\n\nto upgrade to the latest devel version.",
+    "body": "To test this out try:\n\nOn an older sage install\n\n```\nsage -upgrade  # should do a standard upgrade to the latest version of sage\n```\n\nOn a new sage install\n\n```\nsage -upgrade http://sage.math.washington.edu/home/was/build/sage-3.2.1.alpha1\n```\nto upgrade to the latest devel version.",
     "created_at": "2008-11-27T01:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -95,13 +93,11 @@ On an older sage install
 sage -upgrade  # should do a standard upgrade to the latest version of sage
 ```
 
-
 On a new sage install
 
 ```
 sage -upgrade http://sage.math.washington.edu/home/was/build/sage-3.2.1.alpha1
 ```
-
 to upgrade to the latest devel version.
 
 
@@ -129,7 +125,7 @@ Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some
 archive/issue_comments_002289.json:
 ```json
 {
-    "body": "Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by @williamstein created at 2008-11-27 02:02:26\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```\n",
+    "body": "Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by @williamstein created at 2008-11-27 02:02:26\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```",
     "created_at": "2008-11-27T02:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
@@ -147,7 +143,6 @@ sage-463.patch
 scripts-463-rebase-3.1.alpha1.patch 
 scripts-463-rebase-3.2.1.alpha1-part2.patch 
 ```
-
 
 
 

@@ -106,7 +106,7 @@ Remove assignee @loefflerd.
 archive/issue_comments_051072.json:
 ```json
 {
-    "body": "Replying to [comment:2 cremona]:\n> Update 2009-07-21: I still have this only half done, the gap being proof of a theorem rather than any coding issue, and other responsibilities mean that it is likely to be August rather than July: sorry.\n\nMarch 2010:  it was clearly a mistake to put in a time estimate.  We now have a preprint explaining all the relevant theory:\n\nJ. E. Cremona and T. Thongjunthug, \"On computing complex elliptic logarithms\" (provisional title) \n\nwhich I am now going to implement i nSage (my coauthor has already implemented it in Magma).",
+    "body": "Replying to [comment:2 cremona]:\n> Update 2009-07-21: I still have this only half done, the gap being proof of a theorem rather than any coding issue, and other responsibilities mean that it is likely to be August rather than July: sorry.\n\n\nMarch 2010:  it was clearly a mistake to put in a time estimate.  We now have a preprint explaining all the relevant theory:\n\nJ. E. Cremona and T. Thongjunthug, \"On computing complex elliptic logarithms\" (provisional title) \n\nwhich I am now going to implement i nSage (my coauthor has already implemented it in Magma).",
     "created_at": "2010-03-16T14:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
@@ -117,6 +117,7 @@ archive/issue_comments_051072.json:
 
 Replying to [comment:2 cremona]:
 > Update 2009-07-21: I still have this only half done, the gap being proof of a theorem rather than any coding issue, and other responsibilities mean that it is likely to be August rather than July: sorry.
+
 
 March 2010:  it was clearly a mistake to put in a time estimate.  We now have a preprint explaining all the relevant theory:
 
@@ -227,7 +228,7 @@ Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390
 archive/issue_comments_051078.json:
 ```json
 {
-    "body": "Replying to [comment:5 cremona]:\n> I am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.\n\nThe following change fixes this, but I can't vouch for its advisability.\n\n```\n--- a/sage/schemes/elliptic_curves/heegner.py\tSat Mar 20 15:52:55 2010 +0000\n+++ b/sage/schemes/elliptic_curves/heegner.py\tTue Mar 23 08:39:11 2010 -0700\n@@ -4165,7 +4165,7 @@\n         # etc\" mentioned in Watkins' article... which involves local\n         # heights.\n         E = self.curve()  # over Q\n-        v = sum([list(n*w) for w in E.gens()] + [list(w) for w in E.torsion_points()], [])\n+        v = sum([list(n*w) for w in E.gens(use_database=False)] + [list(w) for w in E.torsion_points()], [])\n         # note -- we do not claim to prove anything, so making up a factor of 100 is fine.\n         max_denominator = 100*max([z.denominator() for z in v])\n         try:\n```\n\n\nWhen testing on my laptop, I came across another doctest error, and I've included a patch for it.",
+    "body": "Replying to [comment:5 cremona]:\n> I am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.\n\n\nThe following change fixes this, but I can't vouch for its advisability.\n\n```\n--- a/sage/schemes/elliptic_curves/heegner.py\tSat Mar 20 15:52:55 2010 +0000\n+++ b/sage/schemes/elliptic_curves/heegner.py\tTue Mar 23 08:39:11 2010 -0700\n@@ -4165,7 +4165,7 @@\n         # etc\" mentioned in Watkins' article... which involves local\n         # heights.\n         E = self.curve()  # over Q\n-        v = sum([list(n*w) for w in E.gens()] + [list(w) for w in E.torsion_points()], [])\n+        v = sum([list(n*w) for w in E.gens(use_database=False)] + [list(w) for w in E.torsion_points()], [])\n         # note -- we do not claim to prove anything, so making up a factor of 100 is fine.\n         max_denominator = 100*max([z.denominator() for z in v])\n         try:\n```\n\nWhen testing on my laptop, I came across another doctest error, and I've included a patch for it.",
     "created_at": "2010-03-23T15:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
@@ -238,6 +239,7 @@ archive/issue_comments_051078.json:
 
 Replying to [comment:5 cremona]:
 > I am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.
+
 
 The following change fixes this, but I can't vouch for its advisability.
 
@@ -254,7 +256,6 @@ The following change fixes this, but I can't vouch for its advisability.
          max_denominator = 100*max([z.denominator() for z in v])
          try:
 ```
-
 
 When testing on my laptop, I came across another doctest error, and I've included a patch for it.
 

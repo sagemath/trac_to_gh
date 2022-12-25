@@ -53,7 +53,7 @@ Changing assignee from wdjoyner to mabshoff.
 archive/issue_comments_010985.json:
 ```json
 {
-    "body": "Fix in gap_packages-4.4.10_3.spkg - already in the optional repo:\n\n```\nsage@modular:~/www/packages/optional$ tar xf gap_packages-4.4.10_3.spkg\nsage@modular:~/www/packages/optional$ \n```\n\n\nCheers,\n\nMichael",
+    "body": "Fix in gap_packages-4.4.10_3.spkg - already in the optional repo:\n\n```\nsage@modular:~/www/packages/optional$ tar xf gap_packages-4.4.10_3.spkg\nsage@modular:~/www/packages/optional$ \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-11T21:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1743",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ Fix in gap_packages-4.4.10_3.spkg - already in the optional repo:
 sage@modular:~/www/packages/optional$ tar xf gap_packages-4.4.10_3.spkg
 sage@modular:~/www/packages/optional$ 
 ```
-
 
 Cheers,
 

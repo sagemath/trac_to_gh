@@ -3,7 +3,7 @@
 archive/issues_002021.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix(SR, 2, [1,2,3,4])\nsage: a.eigenspaces()\nTraceback (most recent call last):\n...\nTypeError: 'SymbolicArithmetic' object is not iterable\nsage: a.eigenvalues()\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2021\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a = matrix(SR, 2, [1,2,3,4])\nsage: a.eigenspaces()\nTraceback (most recent call last):\n...\nTypeError: 'SymbolicArithmetic' object is not iterable\nsage: a.eigenvalues()\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2021\n\n",
     "created_at": "2008-02-01T03:29:51Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_002021.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: a = matrix(SR, 2, [1,2,3,4])
 sage: a.eigenspaces()
@@ -28,7 +27,6 @@ TypeError: 'SymbolicArithmetic' object is not iterable
 sage: a.eigenvalues()
 []
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2021
 
@@ -41,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2021
 archive/issue_comments_013010.json:
 ```json
 {
-    "body": "The problems go on:\n\n\n```\nsage: a.eigenvalues(SR)\nTraceback (most recent call last):\n...\nNotImplementedError\nsage: a.eigenvalues(CC)\nTraceback (most recent call last):\n...\nTypeError: len() of unsized object\nsage: a.eigenvalues?\nDocstring: [nothing]\n```\n",
+    "body": "The problems go on:\n\n```\nsage: a.eigenvalues(SR)\nTraceback (most recent call last):\n...\nNotImplementedError\nsage: a.eigenvalues(CC)\nTraceback (most recent call last):\n...\nTypeError: len() of unsized object\nsage: a.eigenvalues?\nDocstring: [nothing]\n```",
     "created_at": "2008-02-01T03:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -51,7 +49,6 @@ archive/issue_comments_013010.json:
 ```
 
 The problems go on:
-
 
 ```
 sage: a.eigenvalues(SR)
@@ -68,13 +65,12 @@ Docstring: [nothing]
 
 
 
-
 ---
 
 archive/issue_comments_013011.json:
 ```json
 {
-    "body": "Something *very* weird is going on here.  Here is something that I think is causing the problem with a.eigenvalues above:\n\n\n```\nsage: from sage.calculus.calculus import SymbolicVariable\nsage: tmp=SymbolicVariable('tmp_var')\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(tmp).expand().solve(tmp)\n[]\nsage: (tmp^2+2*tmp).solve(tmp)\n[]\nsage: tmp=SymbolicVariable('tmp_var')\nsage: (tmp^2+2*tmp).solve(tmp)\n[tmp_var == -2, tmp_var == 0]\nsage:\nExiting SAGE (CPU time 0m0.13s, Wall time 0m46.43s).\nExiting spawned Maxima process.\nExiting spawned Maxima process.\n```\n\n\nThe suspicious thing is the *two* maxima processes that are exiting when I exit sage.",
+    "body": "Something *very* weird is going on here.  Here is something that I think is causing the problem with a.eigenvalues above:\n\n```\nsage: from sage.calculus.calculus import SymbolicVariable\nsage: tmp=SymbolicVariable('tmp_var')\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(tmp).expand().solve(tmp)\n[]\nsage: (tmp^2+2*tmp).solve(tmp)\n[]\nsage: tmp=SymbolicVariable('tmp_var')\nsage: (tmp^2+2*tmp).solve(tmp)\n[tmp_var == -2, tmp_var == 0]\nsage:\nExiting SAGE (CPU time 0m0.13s, Wall time 0m46.43s).\nExiting spawned Maxima process.\nExiting spawned Maxima process.\n```\n\nThe suspicious thing is the *two* maxima processes that are exiting when I exit sage.",
     "created_at": "2008-02-01T15:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -84,7 +80,6 @@ archive/issue_comments_013011.json:
 ```
 
 Something *very* weird is going on here.  Here is something that I think is causing the problem with a.eigenvalues above:
-
 
 ```
 sage: from sage.calculus.calculus import SymbolicVariable
@@ -103,7 +98,6 @@ Exiting spawned Maxima process.
 Exiting spawned Maxima process.
 ```
 
-
 The suspicious thing is the *two* maxima processes that are exiting when I exit sage.
 
 
@@ -113,7 +107,7 @@ The suspicious thing is the *two* maxima processes that are exiting when I exit 
 archive/issue_comments_013012.json:
 ```json
 {
-    "body": "More data below.  When calling a.charpoly(y).expand().solve(y) first, things are messed up.  When calling it after solving an equation with y, things work fine\n\n\n```\nsage: from sage.calculus.calculus import SymbolicVariable\nsage: y=SymbolicVariable('y')\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: # First solve an equation, then solve a.charpoly\nsage: (y+1).solve(y)\n[y == -1]\nsage: a.charpoly(y).expand().solve(y)\n[y == (5 - sqrt(33))/2, y == (sqrt(33) + 5)/2]\nsage: y=SymbolicVariable('y')\nsage: # Now solve a.charpoly, then solve an equation\nsage: a.charpoly(y).expand().solve(y)\n[]\nsage: (y+1).solve(y)\n[]\n```\n",
+    "body": "More data below.  When calling a.charpoly(y).expand().solve(y) first, things are messed up.  When calling it after solving an equation with y, things work fine\n\n```\nsage: from sage.calculus.calculus import SymbolicVariable\nsage: y=SymbolicVariable('y')\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: # First solve an equation, then solve a.charpoly\nsage: (y+1).solve(y)\n[y == -1]\nsage: a.charpoly(y).expand().solve(y)\n[y == (5 - sqrt(33))/2, y == (sqrt(33) + 5)/2]\nsage: y=SymbolicVariable('y')\nsage: # Now solve a.charpoly, then solve an equation\nsage: a.charpoly(y).expand().solve(y)\n[]\nsage: (y+1).solve(y)\n[]\n```",
     "created_at": "2008-02-01T15:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -123,7 +117,6 @@ archive/issue_comments_013012.json:
 ```
 
 More data below.  When calling a.charpoly(y).expand().solve(y) first, things are messed up.  When calling it after solving an equation with y, things work fine
-
 
 ```
 sage: from sage.calculus.calculus import SymbolicVariable
@@ -141,7 +134,6 @@ sage: a.charpoly(y).expand().solve(y)
 sage: (y+1).solve(y)
 []
 ```
-
 
 
 
@@ -202,7 +194,7 @@ It follows the likely cause is then not importing maxima from calculus somewhere
 archive/issue_comments_013015.json:
 ```json
 {
-    "body": "The key part here seems to be that \n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(x).solve(x) []\n```\n\nwhile \n\n\n```\nsage: x._maxima_() \nx \nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(x).solve(x) \n[x == (5 - sqrt(33))/2, x == (sqrt(33) + 5)/2]\n```\n\n\nIn fact, we may manually reproduce this behavior by\n\n\n```\nsage: x._maxima_(maxima)\nx\nsage: a=matrix(SR,[[1,2],[3,4]]) \nsage: a.charpoly(x).solve(x) []\n```\n\n\nIt follows the likely cause is then not importing maxima from calculus somewhere and using instead the global maxima for a calculation involving charpoly.  Sorry about the double post but this at least is readable.",
+    "body": "The key part here seems to be that \n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(x).solve(x) []\n```\nwhile \n\n```\nsage: x._maxima_() \nx \nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: a.charpoly(x).solve(x) \n[x == (5 - sqrt(33))/2, x == (sqrt(33) + 5)/2]\n```\n\nIn fact, we may manually reproduce this behavior by\n\n```\nsage: x._maxima_(maxima)\nx\nsage: a=matrix(SR,[[1,2],[3,4]]) \nsage: a.charpoly(x).solve(x) []\n```\n\nIt follows the likely cause is then not importing maxima from calculus somewhere and using instead the global maxima for a calculation involving charpoly.  Sorry about the double post but this at least is readable.",
     "created_at": "2008-02-01T18:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -213,14 +205,11 @@ archive/issue_comments_013015.json:
 
 The key part here seems to be that 
 
-
 ```
 sage: a=matrix(SR,[[1,2],[3,4]])
 sage: a.charpoly(x).solve(x) []
 ```
-
 while 
-
 
 ```
 sage: x._maxima_() 
@@ -230,9 +219,7 @@ sage: a.charpoly(x).solve(x)
 [x == (5 - sqrt(33))/2, x == (sqrt(33) + 5)/2]
 ```
 
-
 In fact, we may manually reproduce this behavior by
-
 
 ```
 sage: x._maxima_(maxima)
@@ -240,7 +227,6 @@ x
 sage: a=matrix(SR,[[1,2],[3,4]]) 
 sage: a.charpoly(x).solve(x) []
 ```
-
 
 It follows the likely cause is then not importing maxima from calculus somewhere and using instead the global maxima for a calculation involving charpoly.  Sorry about the double post but this at least is readable.
 
@@ -251,7 +237,7 @@ It follows the likely cause is then not importing maxima from calculus somewhere
 archive/issue_comments_013016.json:
 ```json
 {
-    "body": "changing the import in matrix_symbolic_dense from from\n\n\n```\nfrom sage.interfaces.maxima import maxima\n```\n\nto \n\n```\nfrom sage.calculus.calculus import maxima\n```\n\nappears to fix the problem.  However, it appears that this issue is unrelated to the original eigenspaces issue.",
+    "body": "changing the import in matrix_symbolic_dense from from\n\n```\nfrom sage.interfaces.maxima import maxima\n```\nto \n\n```\nfrom sage.calculus.calculus import maxima\n```\nappears to fix the problem.  However, it appears that this issue is unrelated to the original eigenspaces issue.",
     "created_at": "2008-02-01T18:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -262,17 +248,14 @@ archive/issue_comments_013016.json:
 
 changing the import in matrix_symbolic_dense from from
 
-
 ```
 from sage.interfaces.maxima import maxima
 ```
-
 to 
 
 ```
 from sage.calculus.calculus import maxima
 ```
-
 appears to fix the problem.  However, it appears that this issue is unrelated to the original eigenspaces issue.
 
 
@@ -302,7 +285,7 @@ Thanks to gfurnish's brilliance, we found a sticky maxima issue corrected in the
 archive/issue_comments_013018.json:
 ```json
 {
-    "body": "Illustrating the eigenspaces issue:\n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n",
+    "body": "Illustrating the eigenspaces issue:\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```",
     "created_at": "2008-02-01T19:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -312,7 +295,6 @@ archive/issue_comments_013018.json:
 ```
 
 Illustrating the eigenspaces issue:
-
 
 ```
 sage: a=matrix(SR,[[1,2],[3,4]])
@@ -330,13 +312,12 @@ sage: [i for i in b.fcp()]
 
 
 
-
 ---
 
 archive/issue_comments_013019.json:
 ```json
 {
-    "body": "And another note:\n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic to iterate through factor_list() when we ask for an iterator.",
+    "body": "And another note:\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic to iterate through factor_list() when we ask for an iterator.",
     "created_at": "2008-02-01T19:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -347,13 +328,11 @@ archive/issue_comments_013019.json:
 
 And another note:
 
-
 ```
 sage: a=matrix(SR,[[1,2],[3,4]])
 sage: [i for i in a.fcp().factor_list()]
 [(x^2 - 5*x - 2, 1)]
 ```
-
 
 So apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic to iterate through factor_list() when we ask for an iterator.
 
@@ -400,7 +379,7 @@ don't close this issue yet, though.  A second patch should be coming along to fi
 archive/issue_comments_013022.json:
 ```json
 {
-    "body": "Replying to [comment:12 jason]:\n> don't close this issue yet, though.  A second patch should be coming along to fix the eigenspaces issue.\n\nJason, please open another ticket for that issue.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:12 jason]:\n> don't close this issue yet, though.  A second patch should be coming along to fix the eigenspaces issue.\n\n\nJason, please open another ticket for that issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-02T03:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2021",
     "type": "issue_comment",
@@ -411,6 +390,7 @@ archive/issue_comments_013022.json:
 
 Replying to [comment:12 jason]:
 > don't close this issue yet, though.  A second patch should be coming along to fix the eigenspaces issue.
+
 
 Jason, please open another ticket for that issue.
 

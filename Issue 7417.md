@@ -3,7 +3,7 @@
 archive/issues_007417.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe big public sagenb.org server, after a few days, often suddenly starts outputing this:\n\n\n```\nILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n```\n\n\nThis makes a multi-gigabyte logfile, and of course also means that the notebook is down.  This has not been observed on any other notebook server ever, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7417\n\n",
+    "body": "Assignee: boothby\n\nThe big public sagenb.org server, after a few days, often suddenly starts outputing this:\n\n```\nILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)\n```\n\nThis makes a multi-gigabyte logfile, and of course also means that the notebook is down.  This has not been observed on any other notebook server ever, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7417\n\n",
     "created_at": "2009-11-09T16:38:36Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 The big public sagenb.org server, after a few days, often suddenly starts outputing this:
 
-
 ```
 ILE)
 2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)
@@ -33,7 +32,6 @@ ILE)
 2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)
 2009-11-09 08:33:36-0800 [twisted.web2.channel.http.HTTPFactory] Could not accept new connection (EMFILE)
 ```
-
 
 This makes a multi-gigabyte logfile, and of course also means that the notebook is down.  This has not been observed on any other notebook server ever, I think.
 
@@ -48,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7417
 archive/issue_comments_062291.json:
 ```json
 {
-    "body": "This is caused by:\n\n```\n        exceptions.IOError: [Errno 24] Too many open files: '/sage/sage/local/lib/python/site-packages/sagenb/data/sag\ne/html/error_message.html'\n        exceptions.IOError: [Errno 24] Too many open files: '/sage/sage/local/lib/python/site-packages/sagenb/data/sag\ne/html/worksheet_listing.html'\n        exceptions.IOError: [Errno 24] Too many open files: '/home/sage/sagenb/sage_notebook.sagenb/home/deangelo/4/wo\nrksheet.html'\nexceptions.IOError: [Errno 24] Too many open files: '/home/sage/sagenb/sage_notebook.sagenb/home/pablo.albacete/2/worksheet_conf.pickle'\n```\n\n\nGoogling for this error shows that Python itself evidently has a 256 file hardcoded limit.  See, e.g., http://www.dslreports.com/forum/r21366308-Python-IOError-Errno-24-Too-many-open-files\n\nThis is regularly causing *massive* trouble on sagenb.org... when there are several dozen simultaneous users.  \n\nThis is particularly bad because it leads to data loss, since the notebook server can't save state, since it can't open files. \n\nThis simple test program illustrates this hard limit:\n\n```\nv = []\nfor i in range(300):\n    print i\n    v.append(open('a%s'%i,'w'))\n    sys.stdout.flush()\n```\n\n\nOutput:\n\n```\n0\n1\n2\n3\n...\n \t\n\nWARNING: Output truncated!  \nfull_output.txt\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n\n...\n\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n243\n244\n245\n246\n247\n248\n249\n250\n251\n252\n253\nTraceback (click to the left for traceback)\n...\nIOError: [Errno 24] Too many open files: 'a253'\n```\n",
+    "body": "This is caused by:\n\n```\n        exceptions.IOError: [Errno 24] Too many open files: '/sage/sage/local/lib/python/site-packages/sagenb/data/sag\ne/html/error_message.html'\n        exceptions.IOError: [Errno 24] Too many open files: '/sage/sage/local/lib/python/site-packages/sagenb/data/sag\ne/html/worksheet_listing.html'\n        exceptions.IOError: [Errno 24] Too many open files: '/home/sage/sagenb/sage_notebook.sagenb/home/deangelo/4/wo\nrksheet.html'\nexceptions.IOError: [Errno 24] Too many open files: '/home/sage/sagenb/sage_notebook.sagenb/home/pablo.albacete/2/worksheet_conf.pickle'\n```\n\nGoogling for this error shows that Python itself evidently has a 256 file hardcoded limit.  See, e.g., http://www.dslreports.com/forum/r21366308-Python-IOError-Errno-24-Too-many-open-files\n\nThis is regularly causing *massive* trouble on sagenb.org... when there are several dozen simultaneous users.  \n\nThis is particularly bad because it leads to data loss, since the notebook server can't save state, since it can't open files. \n\nThis simple test program illustrates this hard limit:\n\n```\nv = []\nfor i in range(300):\n    print i\n    v.append(open('a%s'%i,'w'))\n    sys.stdout.flush()\n```\n\nOutput:\n\n```\n0\n1\n2\n3\n...\n \t\n\nWARNING: Output truncated!  \nfull_output.txt\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n\n...\n\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n243\n244\n245\n246\n247\n248\n249\n250\n251\n252\n253\nTraceback (click to the left for traceback)\n...\nIOError: [Errno 24] Too many open files: 'a253'\n```",
     "created_at": "2009-11-11T23:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ rksheet.html'
 exceptions.IOError: [Errno 24] Too many open files: '/home/sage/sagenb/sage_notebook.sagenb/home/pablo.albacete/2/worksheet_conf.pickle'
 ```
 
-
 Googling for this error shows that Python itself evidently has a 256 file hardcoded limit.  See, e.g., http://www.dslreports.com/forum/r21366308-Python-IOError-Errno-24-Too-many-open-files
 
 This is regularly causing *massive* trouble on sagenb.org... when there are several dozen simultaneous users.  
@@ -85,7 +82,6 @@ for i in range(300):
     v.append(open('a%s'%i,'w'))
     sys.stdout.flush()
 ```
-
 
 Output:
 
@@ -226,13 +222,12 @@ IOError: [Errno 24] Too many open files: 'a253'
 
 
 
-
 ---
 
 archive/issue_comments_062292.json:
 ```json
 {
-    "body": "A solution may be here: http://ubuntuforums.org/showthread.php?t=919340\n\nThey explain that `tempfile.mkstemp()` returns a file descriptor that *must* be explicitly closed.   They give sample code:\n\n```\nimport sys\nimport os\nimport tempfile\nimport shutil \n\nfor idx in range(5000):\n    (outfd,outsock_path)=tempfile.mkstemp()\n    print \"%(outsock_path)s\"%locals()\n    try:\n        outsock=os.fdopen(outfd,'w')\n    except IOError,err:\n        print \"IOError:\",err\n        print \"idx=%s\"%idx\n        print \"Cannot write to %(outsock_path)s\"%locals()\n        sys.exit(1)\n    outsock.close()\n    os.remove(outsock_path)  \n```\n\n\nSince the Sage notebook now uses tempfile, maybe our problem is the same.",
+    "body": "A solution may be here: http://ubuntuforums.org/showthread.php?t=919340\n\nThey explain that `tempfile.mkstemp()` returns a file descriptor that *must* be explicitly closed.   They give sample code:\n\n```\nimport sys\nimport os\nimport tempfile\nimport shutil \n\nfor idx in range(5000):\n    (outfd,outsock_path)=tempfile.mkstemp()\n    print \"%(outsock_path)s\"%locals()\n    try:\n        outsock=os.fdopen(outfd,'w')\n    except IOError,err:\n        print \"IOError:\",err\n        print \"idx=%s\"%idx\n        print \"Cannot write to %(outsock_path)s\"%locals()\n        sys.exit(1)\n    outsock.close()\n    os.remove(outsock_path)  \n```\n\nSince the Sage notebook now uses tempfile, maybe our problem is the same.",
     "created_at": "2009-11-11T23:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
@@ -265,7 +260,6 @@ for idx in range(5000):
     os.remove(outsock_path)  
 ```
 
-
 Since the Sage notebook now uses tempfile, maybe our problem is the same.
 
 
@@ -275,7 +269,7 @@ Since the Sage notebook now uses tempfile, maybe our problem is the same.
 archive/issue_comments_062293.json:
 ```json
 {
-    "body": "In particular, the following fails:\n\n```\nfor i in range(400):\n    fd, name = tempfile.mkstemp()\n```\n\nbut the following works fine:\n\n```\nfor i in range(400):\n    fd, name = tempfile.mkstemp()\n    os.fdopen(fd,'w').close()\n```\n\n\nThere are two places in the sagenb code where mkstemp is used:\n\n```\nmisc/misc.py:        return tempfile.mkstemp()[1]\nstorage/filesystem_storage.py:        worksheet_txt =  tempfile.mkstemp()[1]\n```\n\n\nSo both of these just need to be fixed to properly close the file descriptor.  Or, if safe, instead use `tempfile.mktemp()`, which doesn't make a file descriptor. \n \nAnyway, this is a *huge* bug which will bring down any notebook server eventually so must be fixed for sage-4.2.1.",
+    "body": "In particular, the following fails:\n\n```\nfor i in range(400):\n    fd, name = tempfile.mkstemp()\n```\nbut the following works fine:\n\n```\nfor i in range(400):\n    fd, name = tempfile.mkstemp()\n    os.fdopen(fd,'w').close()\n```\n\nThere are two places in the sagenb code where mkstemp is used:\n\n```\nmisc/misc.py:        return tempfile.mkstemp()[1]\nstorage/filesystem_storage.py:        worksheet_txt =  tempfile.mkstemp()[1]\n```\n\nSo both of these just need to be fixed to properly close the file descriptor.  Or, if safe, instead use `tempfile.mktemp()`, which doesn't make a file descriptor. \n \nAnyway, this is a *huge* bug which will bring down any notebook server eventually so must be fixed for sage-4.2.1.",
     "created_at": "2009-11-11T23:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7417",
     "type": "issue_comment",
@@ -290,7 +284,6 @@ In particular, the following fails:
 for i in range(400):
     fd, name = tempfile.mkstemp()
 ```
-
 but the following works fine:
 
 ```
@@ -299,14 +292,12 @@ for i in range(400):
     os.fdopen(fd,'w').close()
 ```
 
-
 There are two places in the sagenb code where mkstemp is used:
 
 ```
 misc/misc.py:        return tempfile.mkstemp()[1]
 storage/filesystem_storage.py:        worksheet_txt =  tempfile.mkstemp()[1]
 ```
-
 
 So both of these just need to be fixed to properly close the file descriptor.  Or, if safe, instead use `tempfile.mktemp()`, which doesn't make a file descriptor. 
  

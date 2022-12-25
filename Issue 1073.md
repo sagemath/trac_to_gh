@@ -3,7 +3,7 @@
 archive/issues_001073.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis would save people a lot of confusion.\n\n\n```\n$ sage -pkg foo-bar-2.3\n...\n\nCreated package foo-bar-2.3.spkg, \n\nNAME: foo\nVERSION: bar-2.3      (not version number looks suspicious)\nSIZE: 2.3MB\nHG REPO: Unchecked in changes (!)\nSPKG.txt: File is missing.\n\nPlease test this package using\n    sage -f foo-bar-2.3.spkg\nimmediately.   Also, note that you can use \n    sage -pkg_nc foo-bar-2.3\nto make an uncompressed version of the package (useful if the\npackage is full of compressed data).\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1073\n\n",
+    "body": "Assignee: @williamstein\n\nThis would save people a lot of confusion.\n\n```\n$ sage -pkg foo-bar-2.3\n...\n\nCreated package foo-bar-2.3.spkg, \n\nNAME: foo\nVERSION: bar-2.3      (not version number looks suspicious)\nSIZE: 2.3MB\nHG REPO: Unchecked in changes (!)\nSPKG.txt: File is missing.\n\nPlease test this package using\n    sage -f foo-bar-2.3.spkg\nimmediately.   Also, note that you can use \n    sage -pkg_nc foo-bar-2.3\nto make an uncompressed version of the package (useful if the\npackage is full of compressed data).\n\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1073\n\n",
     "created_at": "2007-11-02T23:49:55Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_001073.json:
 Assignee: @williamstein
 
 This would save people a lot of confusion.
-
 
 ```
 $ sage -pkg foo-bar-2.3
@@ -43,7 +42,6 @@ package is full of compressed data).
 
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1073
 

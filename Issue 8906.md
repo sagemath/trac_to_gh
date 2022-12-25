@@ -235,7 +235,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081857.json:
 ```json
 {
-    "body": "Hi Minh,\n\nReplying to [comment:4 mvngu]:\n> Some problems with gap-3.4.4.p0.spkg:\n> \n>  1. All changes have not been checked in:\n>  {{{\n> #!sh\n> [mvngu`@`sage gap-3.4.4.p0]$ hg status\n> M SPKG.txt\n> ? spkg-check\n>  }}}\n>  You must check in all changes.\n>  1. The license file `COPYING` needs to go under the directory `src/`.\n\nFair enough, I didn't check these again myself. Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.\n\n>  1. The directory `src/` contains one package within another:\n\nThis is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.\n\n>  1. You don't have any patches on top of the upstream GAP 3 package, so you need to start the spkg numbering at `gap-3.4.4.spkg`, not at `gap-3.4.4.p0.spkg`. The name `gap-3.4.4.p0.spkg` implies that you have a patch to be applied on top of the upstream GAP 3 package.\n\nWhat is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. Marco did a tremendous job creating a GAP package which actually compiles and works on different platforms, and includes the latest versions of various GAP packages still being maintained.\n\n\nI agree with your points 1 and 2, but IMHO 3 and 4 are not problems that need to be addressed before this is accepted.\n\nThanks. \n\nBurcin",
+    "body": "Hi Minh,\n\nReplying to [comment:4 mvngu]:\n> Some problems with gap-3.4.4.p0.spkg:\n> \n> 1. All changes have not been checked in:\n>  {{{\n> #!sh\n> [mvngu`@`sage gap-3.4.4.p0]$ hg status\n> M SPKG.txt\n> ? spkg-check\n>  }}}\n>  You must check in all changes.\n> 1. The license file `COPYING` needs to go under the directory `src/`.\n\n\nFair enough, I didn't check these again myself. Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.\n\n>  1. The directory `src/` contains one package within another:\n\n\nThis is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.\n\n>  1. You don't have any patches on top of the upstream GAP 3 package, so you need to start the spkg numbering at `gap-3.4.4.spkg`, not at `gap-3.4.4.p0.spkg`. The name `gap-3.4.4.p0.spkg` implies that you have a patch to be applied on top of the upstream GAP 3 package.\n\n\nWhat is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. Marco did a tremendous job creating a GAP package which actually compiles and works on different platforms, and includes the latest versions of various GAP packages still being maintained.\n\n\nI agree with your points 1 and 2, but IMHO 3 and 4 are not problems that need to be addressed before this is accepted.\n\nThanks. \n\nBurcin",
     "created_at": "2010-05-08T23:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -249,7 +249,7 @@ Hi Minh,
 Replying to [comment:4 mvngu]:
 > Some problems with gap-3.4.4.p0.spkg:
 > 
->  1. All changes have not been checked in:
+> 1. All changes have not been checked in:
 >  {{{
 > #!sh
 > [mvngu`@`sage gap-3.4.4.p0]$ hg status
@@ -257,15 +257,18 @@ Replying to [comment:4 mvngu]:
 > ? spkg-check
 >  }}}
 >  You must check in all changes.
->  1. The license file `COPYING` needs to go under the directory `src/`.
+> 1. The license file `COPYING` needs to go under the directory `src/`.
+
 
 Fair enough, I didn't check these again myself. Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.
 
 >  1. The directory `src/` contains one package within another:
 
+
 This is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.
 
 >  1. You don't have any patches on top of the upstream GAP 3 package, so you need to start the spkg numbering at `gap-3.4.4.spkg`, not at `gap-3.4.4.p0.spkg`. The name `gap-3.4.4.p0.spkg` implies that you have a patch to be applied on top of the upstream GAP 3 package.
+
 
 What is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. Marco did a tremendous job creating a GAP package which actually compiles and works on different platforms, and includes the latest versions of various GAP packages still being maintained.
 
@@ -283,7 +286,7 @@ Burcin
 archive/issue_comments_081858.json:
 ```json
 {
-    "body": "Replying to [comment:5 burcin]:\n> Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.\n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\n\n> >  1. The directory `src/` contains one package within another:\n> \n> This is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.\n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\n\n\n> What is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. \n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\nAs you can tell, I raised the above objections because the file `SPKG.txt` did not document the reasons why the spkg was structured as given.",
+    "body": "Replying to [comment:5 burcin]:\n> Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.\n\n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\n\n> >  1. The directory `src/` contains one package within another:\n  \n> \n> This is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.\n\n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\n\n\n> What is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. \n\n\nCould you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.\n\n\n\nAs you can tell, I raised the above objections because the file `SPKG.txt` did not document the reasons why the spkg was structured as given.",
     "created_at": "2010-05-08T23:11:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -295,14 +298,17 @@ archive/issue_comments_081858.json:
 Replying to [comment:5 burcin]:
 > Note that the COPYING file doesn't exist in the original gap3 distribution. We decided to make one after it took us a while to discover the license has a non-commercial use restriction.
 
+
 Could you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.
 
 
 
 
 > >  1. The directory `src/` contains one package within another:
+  
 > 
 > This is just how the gap3 source is laid out. There are gap library files, and gap packages in the other directories. I don't see why this is a problem.
+
 
 Could you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.
 
@@ -311,6 +317,7 @@ Could you document that in the file `SPKG.txt`? Future reviewers/maintainers mig
 
 
 > What is in the spkg is very far from the original gap3 distribution. The changes couldn't be tracked with patches, so there is a mercurial repository in the src directory. 
+
 
 Could you document that in the file `SPKG.txt`? Future reviewers/maintainers might not know about this.
 
@@ -352,7 +359,7 @@ Jean would prefer the first option, since anyway gap3's version has not changed 
 archive/issue_comments_081860.json:
 ```json
 {
-    "body": "Hi!\n\nI just obtained the following with gap3 on winxp1 (win XP + cygwin host in the Sage build farm):\n\n\n```\ngap> W := CoxeterGroup(\"E\",8);\nCoxeterGroup(\"E\",8)\ngap> Size(W);                \n696729600\n```\n\n\nFor the record: I did not have Sage installed, so I did not try directly the spkg. Instead, I built and ran it by hand, using something like:\n\n\n```\ntar xvf gap3-jm2.spkg\ncd gap3-jm2/src/src\nmake ibm-i386-linux-gcc\ncd ..\ncp src/gap.exe bin\n<EDIT bin/gap.sh>\nbin/gap.sh\n```\n\n\nIn bin/gap.sh, I set GAP_PRG=gap.exe, and downgraded GAP_MEM=512m to GAP_MEM=64m (otherwise I was getting an error Gasman: can not get memory for the initial workspace).\n\nSo I assume that it should be easy to adapt the spkg to also work on windows+cygwin once sage will be more publicly available there (windows 7 still to be tested).",
+    "body": "Hi!\n\nI just obtained the following with gap3 on winxp1 (win XP + cygwin host in the Sage build farm):\n\n```\ngap> W := CoxeterGroup(\"E\",8);\nCoxeterGroup(\"E\",8)\ngap> Size(W);                \n696729600\n```\n\nFor the record: I did not have Sage installed, so I did not try directly the spkg. Instead, I built and ran it by hand, using something like:\n\n```\ntar xvf gap3-jm2.spkg\ncd gap3-jm2/src/src\nmake ibm-i386-linux-gcc\ncd ..\ncp src/gap.exe bin\n<EDIT bin/gap.sh>\nbin/gap.sh\n```\n\nIn bin/gap.sh, I set GAP_PRG=gap.exe, and downgraded GAP_MEM=512m to GAP_MEM=64m (otherwise I was getting an error Gasman: can not get memory for the initial workspace).\n\nSo I assume that it should be easy to adapt the spkg to also work on windows+cygwin once sage will be more publicly available there (windows 7 still to be tested).",
     "created_at": "2010-06-22T21:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -365,7 +372,6 @@ Hi!
 
 I just obtained the following with gap3 on winxp1 (win XP + cygwin host in the Sage build farm):
 
-
 ```
 gap> W := CoxeterGroup("E",8);
 CoxeterGroup("E",8)
@@ -373,9 +379,7 @@ gap> Size(W);
 696729600
 ```
 
-
 For the record: I did not have Sage installed, so I did not try directly the spkg. Instead, I built and ran it by hand, using something like:
-
 
 ```
 tar xvf gap3-jm2.spkg
@@ -386,7 +390,6 @@ cp src/gap.exe bin
 <EDIT bin/gap.sh>
 bin/gap.sh
 ```
-
 
 In bin/gap.sh, I set GAP_PRG=gap.exe, and downgraded GAP_MEM=512m to GAP_MEM=64m (otherwise I was getting an error Gasman: can not get memory for the initial workspace).
 
@@ -574,7 +577,7 @@ Is anyone still working on this spkg?  I'm interested in being able to use CHEVI
 archive/issue_comments_081864.json:
 ```json
 {
-    "body": "It would be great to make this an official package!\n\nI tried the spkg quickly on two machines and it didn't work on either:\n\n- I tried `sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg` on Mac OSX and got an error\n\n```\nimac: sage --version\nSage Version 6.2, Release Date: 2014-05-06\n\nimac: sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\nAttempting to download package gap3-jm2\n>>> Trying to download http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\n[............................................................]\ngap3-jm2\n====================================================\nExtracting package /Users/saliola/Applications/sage/upstream/gap3-jm2.spkg\n-rw-r--r--  1 saliola  staff  12234482 May 14 21:16 /Users/saliola/Applications/sage/upstream/gap3-jm2.spkg\nFinished extraction\n****************************************************\nHost system:\nDarwin imac.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/Users/saliola/Applications/sage/local/bin/gcc\nCOLLECT_LTO_WRAPPER=/Users/saliola/Applications/sage/local/libexec/gcc/x86_64-apple-darwin12.5.0/4.7.3/lto-wrapper\nTarget: x86_64-apple-darwin12.5.0\nConfigured with: ../src/configure --prefix=/Users/saliola/Applications/sage/local --with-local-prefix=/Users/saliola/Applications/sage/local --with-gmp=/Users/saliola/Applications/sage/local --with-mpfr=/Users/saliola/Applications/sage/local --with-mpc=/Users/saliola/Applications/sage/local --with-system-zlib --disable-multilib --disable-nls  \nThread model: posix\ngcc version 4.7.3 (GCC) \n****************************************************\ndyld: Symbol not found: _sqlite3_intarray_bind\n  Referenced from: /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData\n  Expected in: /Users/saliola/Applications/sage/local/lib/libsqlite3.dylib\n in /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData\nmake: error: unable to locate xcodebuild, please make sure the path to the Xcode folder is set correctly!\nmake: error: You can set the path to the Xcode folder using /usr/bin/xcode-select -switch\nCompiling target macosx-gcc-686-optimized\n18176\nError compiling Gap3\n```\n\n\n- I tried `sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg` with on Ubuntu 14.04 and got an error\n\n```\nT7600: sage --version\nExecuting: /home/saliola/Applications/sage/sage\nSageMath Version 6.7.beta2, Release Date: 2015-04-21\n\nT7600: sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\nExecuting: /home/saliola/Applications/sage/sage\nAttempting to download package gap3-jm2\n>>> Trying to download http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\n[............................................................]\ngap3-jm2\n====================================================\nExtracting package /home/saliola/Applications/sage/upstream/gap3-jm2.spkg\n-rw-rw-r-- 1 saliola saliola 12234482 May 14 21:14 /home/saliola/Applications/sage/upstream/gap3-jm2.spkg\nFinished extraction\n****************************************************\nHost system:\nLinux T7600 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/usr/bin/gcc\nCOLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) \n****************************************************\nmake[1]: Entering directory `/home/saliola/Applications/sage/local/var/tmp/sage/build/gap3-jm2/src/src'\ngcc -m32 -O3 -fomit-frame-pointer -pipe -fno-strength-reduce -march=i686 -DCPU=686 -g -O2 -DSYS_IS_USG -DSYS_HAS_TIME_PROTO -DSYS_HAS_SIGNAL_PROTO -DSYS_HAS_IOCTL_PROTO   -c -o system.o system.c\nIn file included from /usr/include/features.h:398:0,\n                 from /usr/include/ctype.h:25,\n                 from system.h:241,\n                 from system.c:157:\n/usr/include/x86_64-linux-gnu/gnu/stubs.h:7:27: fatal error: gnu/stubs-32.h: No such file or directory\n # include <gnu/stubs-32.h>\n                           ^\ncompilation terminated.\nmake[1]: *** [system.o] Error 1\nmake[1]: Leaving directory `/home/saliola/Applications/sage/local/var/tmp/sage/build/gap3-jm2/src/src'\nmake: *** [ibm-i386-linux-gcc-optimized] Error 2\nCompiling target ibm-i386-linux-gcc-optimized\n512\nError compiling Gap3\n\n```\n",
+    "body": "It would be great to make this an official package!\n\nI tried the spkg quickly on two machines and it didn't work on either:\n\n- I tried `sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg` on Mac OSX and got an error\n\n```\nimac: sage --version\nSage Version 6.2, Release Date: 2014-05-06\n\nimac: sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\nAttempting to download package gap3-jm2\n>>> Trying to download http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\n[............................................................]\ngap3-jm2\n====================================================\nExtracting package /Users/saliola/Applications/sage/upstream/gap3-jm2.spkg\n-rw-r--r--  1 saliola  staff  12234482 May 14 21:16 /Users/saliola/Applications/sage/upstream/gap3-jm2.spkg\nFinished extraction\n****************************************************\nHost system:\nDarwin imac.local 14.3.0 Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64 x86_64\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/Users/saliola/Applications/sage/local/bin/gcc\nCOLLECT_LTO_WRAPPER=/Users/saliola/Applications/sage/local/libexec/gcc/x86_64-apple-darwin12.5.0/4.7.3/lto-wrapper\nTarget: x86_64-apple-darwin12.5.0\nConfigured with: ../src/configure --prefix=/Users/saliola/Applications/sage/local --with-local-prefix=/Users/saliola/Applications/sage/local --with-gmp=/Users/saliola/Applications/sage/local --with-mpfr=/Users/saliola/Applications/sage/local --with-mpc=/Users/saliola/Applications/sage/local --with-system-zlib --disable-multilib --disable-nls  \nThread model: posix\ngcc version 4.7.3 (GCC) \n****************************************************\ndyld: Symbol not found: _sqlite3_intarray_bind\n  Referenced from: /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData\n  Expected in: /Users/saliola/Applications/sage/local/lib/libsqlite3.dylib\n in /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData\nmake: error: unable to locate xcodebuild, please make sure the path to the Xcode folder is set correctly!\nmake: error: You can set the path to the Xcode folder using /usr/bin/xcode-select -switch\nCompiling target macosx-gcc-686-optimized\n18176\nError compiling Gap3\n```\n\n- I tried `sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg` with on Ubuntu 14.04 and got an error\n\n```\nT7600: sage --version\nExecuting: /home/saliola/Applications/sage/sage\nSageMath Version 6.7.beta2, Release Date: 2015-04-21\n\nT7600: sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\nExecuting: /home/saliola/Applications/sage/sage\nAttempting to download package gap3-jm2\n>>> Trying to download http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg\n[............................................................]\ngap3-jm2\n====================================================\nExtracting package /home/saliola/Applications/sage/upstream/gap3-jm2.spkg\n-rw-rw-r-- 1 saliola saliola 12234482 May 14 21:14 /home/saliola/Applications/sage/upstream/gap3-jm2.spkg\nFinished extraction\n****************************************************\nHost system:\nLinux T7600 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/usr/bin/gcc\nCOLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) \n****************************************************\nmake[1]: Entering directory `/home/saliola/Applications/sage/local/var/tmp/sage/build/gap3-jm2/src/src'\ngcc -m32 -O3 -fomit-frame-pointer -pipe -fno-strength-reduce -march=i686 -DCPU=686 -g -O2 -DSYS_IS_USG -DSYS_HAS_TIME_PROTO -DSYS_HAS_SIGNAL_PROTO -DSYS_HAS_IOCTL_PROTO   -c -o system.o system.c\nIn file included from /usr/include/features.h:398:0,\n                 from /usr/include/ctype.h:25,\n                 from system.h:241,\n                 from system.c:157:\n/usr/include/x86_64-linux-gnu/gnu/stubs.h:7:27: fatal error: gnu/stubs-32.h: No such file or directory\n # include <gnu/stubs-32.h>\n                           ^\ncompilation terminated.\nmake[1]: *** [system.o] Error 1\nmake[1]: Leaving directory `/home/saliola/Applications/sage/local/var/tmp/sage/build/gap3-jm2/src/src'\nmake: *** [ibm-i386-linux-gcc-optimized] Error 2\nCompiling target ibm-i386-linux-gcc-optimized\n512\nError compiling Gap3\n\n```",
     "created_at": "2015-05-15T01:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -626,7 +629,6 @@ Compiling target macosx-gcc-686-optimized
 18176
 Error compiling Gap3
 ```
-
 
 - I tried `sage -i http://sage.math.washington.edu/home/nthiery/gap3-jm2.spkg` with on Ubuntu 14.04 and got an error
 
@@ -680,7 +682,6 @@ Error compiling Gap3
 
 
 
-
 ---
 
 archive/issue_comments_081865.json:
@@ -722,7 +723,7 @@ It may very well be that the problems with the above are related to unmet system
 archive/issue_comments_081867.json:
 ```json
 {
-    "body": "Replying to [comment:15 roed]:\n> Is anyone still working on this spkg?  I'm interested in being able to use CHEVIE from Sage....\n\nTo get yourself up and running quickly without waiting for this spkg to be finalized, just install GAP3 system-wide using one of the following options and you should be good to go.\n\n- http://www.math.rwth-aachen.de/~Frank.Luebeck/gap/GAP3\n\n- http://people.math.jussieu.fr/~jmichel/chevie/chevie.html",
+    "body": "Replying to [comment:15 roed]:\n> Is anyone still working on this spkg?  I'm interested in being able to use CHEVIE from Sage....\n\n\nTo get yourself up and running quickly without waiting for this spkg to be finalized, just install GAP3 system-wide using one of the following options and you should be good to go.\n\n- http://www.math.rwth-aachen.de/~Frank.Luebeck/gap/GAP3\n\n- http://people.math.jussieu.fr/~jmichel/chevie/chevie.html",
     "created_at": "2015-05-15T01:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -733,6 +734,7 @@ archive/issue_comments_081867.json:
 
 Replying to [comment:15 roed]:
 > Is anyone still working on this spkg?  I'm interested in being able to use CHEVIE from Sage....
+
 
 To get yourself up and running quickly without waiting for this spkg to be finalized, just install GAP3 system-wide using one of the following options and you should be good to go.
 
@@ -887,7 +889,7 @@ So Franco -- are we going to do something here?
 archive/issue_comments_081875.json:
 ```json
 {
-    "body": "OK, so besides the fact that I don't know what I am doing, I think this is ready for review.\n\nHere is what you have to do to test this.\n\n1. Checkout this branch: use your favourite method; for instance, with git-trac,\n\n```\ngit trac checkout 8906\n```\n\n\n2. Download the upstream tarball http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz and copy it into `SAGE_ROOT/upstream`; or just run the following commands:\n\n```\ncd $(sage --root)/upstream\ncurl -O http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz\n```\n\n\n3. Install the spkg:\n\n```\nsage -i gap3\n```\n\n\n**Question:** where do I put the upstream tarball so that people don't have to do step 2?\n\n----\nNew commits:",
+    "body": "OK, so besides the fact that I don't know what I am doing, I think this is ready for review.\n\nHere is what you have to do to test this.\n\n1. Checkout this branch: use your favourite method; for instance, with git-trac,\n\n```\ngit trac checkout 8906\n```\n\n2. Download the upstream tarball http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz and copy it into `SAGE_ROOT/upstream`; or just run the following commands:\n\n```\ncd $(sage --root)/upstream\ncurl -O http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz\n```\n\n3. Install the spkg:\n\n```\nsage -i gap3\n```\n\n**Question:** where do I put the upstream tarball so that people don't have to do step 2?\n\n---\nNew commits:",
     "created_at": "2015-07-25T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -906,7 +908,6 @@ Here is what you have to do to test this.
 git trac checkout 8906
 ```
 
-
 2. Download the upstream tarball http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz and copy it into `SAGE_ROOT/upstream`; or just run the following commands:
 
 ```
@@ -914,17 +915,15 @@ cd $(sage --root)/upstream
 curl -O http://webusers.imj-prg.fr/~jean.michel/gap3/gap3-jm5.tar.gz
 ```
 
-
 3. Install the spkg:
 
 ```
 sage -i gap3
 ```
 
-
 **Question:** where do I put the upstream tarball so that people don't have to do step 2?
 
-----
+---
 New commits:
 
 
@@ -970,7 +969,7 @@ So is that tarball the official release and the one you want mirrored once this 
 archive/issue_comments_081878.json:
 ```json
 {
-    "body": "I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n\nDo you know why the first call of `gap3` doesn't appear to work properly?\n\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 SageMath Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n\u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n\u2502 Type \"help()\" for help.                                            \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\nsage: gap3\nGap3\nsage: gap3.execute(\"1+1\")\n''\nsage: gap3.execute(\"1+1\")\n'2'\nsage: \n```\n",
+    "body": "I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n\nDo you know why the first call of `gap3` doesn't appear to work properly?\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 SageMath Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n\u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n\u2502 Type \"help()\" for help.                                            \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n\u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\nsage: gap3\nGap3\nsage: gap3.execute(\"1+1\")\n''\nsage: gap3.execute(\"1+1\")\n'2'\nsage: \n```",
     "created_at": "2015-07-26T22:06:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -982,7 +981,6 @@ archive/issue_comments_081878.json:
 I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!
 
 Do you know why the first call of `gap3` doesn't appear to work properly?
-
 
 ```
 ┌────────────────────────────────────────────────────────────────────┐
@@ -1001,7 +999,6 @@ sage: gap3.execute("1+1")
 '2'
 sage: 
 ```
-
 
 
 
@@ -1046,7 +1043,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_081881.json:
 ```json
 {
-    "body": "Replying to [comment:29 stumpc5]:\n> I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n> \n> Do you know why the first call of `gap3` doesn't appear to work properly?\n> \n> {{{\n> \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n> \u2502 [SageMath](SageMath) Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n> \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n> \u2502 Type \"help()\" for help.                                            \u2502\n> \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n> \u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n> \u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n> \u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n> sage: gap3\n> Gap3\n> sage: gap3.execute(\"1+1\")\n> ''\n> sage: gap3.execute(\"1+1\")\n> '2'\n> sage: \n> }}}\n\nThis is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.\n\nSo this should be a separate ticket.\n\nEdit: I created a ticket: #18971.",
+    "body": "Replying to [comment:29 stumpc5]:\n> I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n> \n> Do you know why the first call of `gap3` doesn't appear to work properly?\n> \n> \n> ```\n> \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n> \u2502 SageMath Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n> \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n> \u2502 Type \"help()\" for help.                                            \u2502\n> \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n> \u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n> \u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n> \u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n> sage: gap3\n> Gap3\n> sage: gap3.execute(\"1+1\")\n> ''\n> sage: gap3.execute(\"1+1\")\n> '2'\n> sage: \n> ```\n\n\nThis is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.\n\nSo this should be a separate ticket.\n\nEdit: I created a ticket: #18971.",
     "created_at": "2015-07-30T22:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -1060,9 +1057,10 @@ Replying to [comment:29 stumpc5]:
 > 
 > Do you know why the first call of `gap3` doesn't appear to work properly?
 > 
-> {{{
+> 
+> ```
 > ┌────────────────────────────────────────────────────────────────────┐
-> │ [SageMath](SageMath) Version 6.8.rc1, Release Date: 2015-07-22                 │
+> │ SageMath Version 6.8.rc1, Release Date: 2015-07-22                 │
 > │ Type "notebook()" for the browser-based notebook interface.        │
 > │ Type "help()" for help.                                            │
 > └────────────────────────────────────────────────────────────────────┘
@@ -1076,7 +1074,8 @@ Replying to [comment:29 stumpc5]:
 > sage: gap3.execute("1+1")
 > '2'
 > sage: 
-> }}}
+> ```
+
 
 This is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.
 
@@ -1091,7 +1090,7 @@ Edit: I created a ticket: #18971.
 archive/issue_comments_081882.json:
 ```json
 {
-    "body": "Replying to [comment:30 chapoton]:\n> As this is confusing the only running patchbot, I temporarily put this into 'needs_info'\n\nOK, but this still \"needs review\". :-)",
+    "body": "Replying to [comment:30 chapoton]:\n> As this is confusing the only running patchbot, I temporarily put this into 'needs_info'\n\n\nOK, but this still \"needs review\". :-)",
     "created_at": "2015-07-30T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -1103,6 +1102,7 @@ archive/issue_comments_081882.json:
 Replying to [comment:30 chapoton]:
 > As this is confusing the only running patchbot, I temporarily put this into 'needs_info'
 
+
 OK, but this still "needs review". :-)
 
 
@@ -1112,7 +1112,7 @@ OK, but this still "needs review". :-)
 archive/issue_comments_081883.json:
 ```json
 {
-    "body": "Replying to [comment:28 tscrim]:\n> So is that tarball the official release and the one you want mirrored once this ticket is merged? If so, then please add it to the ticket description. The release manager will add it to the tarball mirror list so a user will only have to do `sage -i gap3` once this is merged.\n\nThanks, Travis. I'll modify the description.",
+    "body": "Replying to [comment:28 tscrim]:\n> So is that tarball the official release and the one you want mirrored once this ticket is merged? If so, then please add it to the ticket description. The release manager will add it to the tarball mirror list so a user will only have to do `sage -i gap3` once this is merged.\n\n\nThanks, Travis. I'll modify the description.",
     "created_at": "2015-07-30T22:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -1124,6 +1124,7 @@ archive/issue_comments_081883.json:
 Replying to [comment:28 tscrim]:
 > So is that tarball the official release and the one you want mirrored once this ticket is merged? If so, then please add it to the ticket description. The release manager will add it to the tarball mirror list so a user will only have to do `sage -i gap3` once this is merged.
 
+
 Thanks, Travis. I'll modify the description.
 
 
@@ -1133,7 +1134,7 @@ Thanks, Travis. I'll modify the description.
 archive/issue_comments_081884.json:
 ```json
 {
-    "body": "> Replying to [comment:28 tscrim]: Thanks, Travis. I'll modify the description.\n\nHi there -- is anything missing here (except a positive review) in order to get this merged? tscrim, would you be able to do the review if necessary? Thanks, Christian",
+    "body": "> Replying to [comment:28 tscrim]: Thanks, Travis. I'll modify the description.\n\n\nHi there -- is anything missing here (except a positive review) in order to get this merged? tscrim, would you be able to do the review if necessary? Thanks, Christian",
     "created_at": "2015-08-24T09:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -1143,6 +1144,7 @@ archive/issue_comments_081884.json:
 ```
 
 > Replying to [comment:28 tscrim]: Thanks, Travis. I'll modify the description.
+
 
 Hi there -- is anything missing here (except a positive review) in order to get this merged? tscrim, would you be able to do the review if necessary? Thanks, Christian
 
@@ -1367,7 +1369,7 @@ archive/issue_comments_081893.json:
 archive/issue_comments_081894.json:
 ```json
 {
-    "body": "Replying to [comment:31 saliola]:\n> Replying to [comment:29 stumpc5]:\n> > I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n> > \n> > Do you know why the first call of `gap3` doesn't appear to work properly?\n> > \n> > {{{\n> > \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n> > \u2502 [SageMath](SageMath) Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n> > \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n> > \u2502 Type \"help()\" for help.                                            \u2502\n> > \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n> > \u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n> > \u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n> > \u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n> > sage: gap3\n> > Gap3\n> > sage: gap3.execute(\"1+1\")\n> > ''\n> > sage: gap3.execute(\"1+1\")\n> > '2'\n> > sage: \n> > }}}\n> \n> This is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.\n> \n> So this should be a separate ticket.\n> \n> Edit: I created a ticket: #18971.\n\nFixed in #23142.",
+    "body": "Replying to [comment:31 saliola]:\n> Replying to [comment:29 stumpc5]:\n> > I am certainly not the right one to do a review since I don't know either whether everything is correct here. Nevertheless, it seems to work like a charm, thanks for preparing it!\n> > \n> > Do you know why the first call of `gap3` doesn't appear to work properly?\n> > \n> > \n> > ```\n> > \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n> > \u2502 SageMath Version 6.8.rc1, Release Date: 2015-07-22                 \u2502\n> > \u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n> > \u2502 Type \"help()\" for help.                                            \u2502\n> > \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n> > \u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n> > \u2503 Warning: this is a prerelease version, and it may be unstable.     \u2503\n> > \u2517\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u251b\n> > sage: gap3\n> > Gap3\n> > sage: gap3.execute(\"1+1\")\n> > ''\n> > sage: gap3.execute(\"1+1\")\n> > '2'\n> > sage: \n> > ```\n\n> \n> This is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.\n> \n> So this should be a separate ticket.\n> \n> Edit: I created a ticket: #18971.\n\n\nFixed in #23142.",
     "created_at": "2017-06-06T21:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8906",
     "type": "issue_comment",
@@ -1382,9 +1384,10 @@ Replying to [comment:31 saliola]:
 > > 
 > > Do you know why the first call of `gap3` doesn't appear to work properly?
 > > 
-> > {{{
+> > 
+> > ```
 > > ┌────────────────────────────────────────────────────────────────────┐
-> > │ [SageMath](SageMath) Version 6.8.rc1, Release Date: 2015-07-22                 │
+> > │ SageMath Version 6.8.rc1, Release Date: 2015-07-22                 │
 > > │ Type "notebook()" for the browser-based notebook interface.        │
 > > │ Type "help()" for help.                                            │
 > > └────────────────────────────────────────────────────────────────────┘
@@ -1398,12 +1401,14 @@ Replying to [comment:31 saliola]:
 > > sage: gap3.execute("1+1")
 > > '2'
 > > sage: 
-> > }}}
+> > ```
+
 > 
 > This is not an issue with the proposed SPKG. In fact, it is a problem even with the first proposed SPKG from Marco Robado.
 > 
 > So this should be a separate ticket.
 > 
 > Edit: I created a ticket: #18971.
+
 
 Fixed in #23142.

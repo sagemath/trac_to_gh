@@ -252,7 +252,7 @@ I'll try this other debugging thing tonight if I get a chance.
 archive/issue_comments_038865.json:
 ```json
 {
-    "body": "Replying to [comment:8 mhansen]:\n> Also, one can run (while Safari is not running), \"defaults write com.apple.Safari IncludeDebugMenu 1\" in the terminal to enable the debug menu in Safari.    Choosing Develop -> Show WebInspector before trying to delete the worksheets may yield some useful information.\n\n\"Unmatched </input> encountered.  Ignoring tag.\"\n\nThis linked to line 38 of my HTML, which was:\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'trash');\" value\"\"></input>\n```\n\n\nBy the way, this *also* happened pretty much any time I used the Current Folder links in any way, so I'm not sure how this error report actually has anything to do with the onClick=\"empty_trash(); return false;\" (should that be False?), but it did generate an error, so perhaps it will be useful to someone.",
+    "body": "Replying to [comment:8 mhansen]:\n> Also, one can run (while Safari is not running), \"defaults write com.apple.Safari IncludeDebugMenu 1\" in the terminal to enable the debug menu in Safari.    Choosing Develop -> Show WebInspector before trying to delete the worksheets may yield some useful information.\n\n\n\"Unmatched </input> encountered.  Ignoring tag.\"\n\nThis linked to line 38 of my HTML, which was:\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'trash');\" value\"\"></input>\n```\n\nBy the way, this *also* happened pretty much any time I used the Current Folder links in any way, so I'm not sure how this error report actually has anything to do with the onClick=\"empty_trash(); return false;\" (should that be False?), but it did generate an error, so perhaps it will be useful to someone.",
     "created_at": "2009-01-27T03:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
@@ -264,6 +264,7 @@ archive/issue_comments_038865.json:
 Replying to [comment:8 mhansen]:
 > Also, one can run (while Safari is not running), "defaults write com.apple.Safari IncludeDebugMenu 1" in the terminal to enable the debug menu in Safari.    Choosing Develop -> Show WebInspector before trying to delete the worksheets may yield some useful information.
 
+
 "Unmatched </input> encountered.  Ignoring tag."
 
 This linked to line 38 of my HTML, which was:
@@ -271,7 +272,6 @@ This linked to line 38 of my HTML, which was:
 ```
 <input id="search_worksheets" size=20 onkeypress="return search_worksheets_enter_pressed(event, 'trash');" value""></input>
 ```
-
 
 By the way, this *also* happened pretty much any time I used the Current Folder links in any way, so I'm not sure how this error report actually has anything to do with the onClick="empty_trash(); return false;" (should that be False?), but it did generate an error, so perhaps it will be useful to someone.
 
@@ -320,7 +320,7 @@ The template in server/notebook/templates/search.html doesn't seem to be missing
 archive/issue_comments_038868.json:
 ```json
 {
-    "body": "Replying to [comment:11 jhpalmieri]:\n> I see the same things as kcrisman, including the same error message, but with Safari 3.2.1 (5525.27.1), OS X 10.5.6 on an Intel iMac.\n> \n\nI don't think that error message has anything to do with it.  Are you doing this in Sage 3.3.alpha2 + #5095.",
+    "body": "Replying to [comment:11 jhpalmieri]:\n> I see the same things as kcrisman, including the same error message, but with Safari 3.2.1 (5525.27.1), OS X 10.5.6 on an Intel iMac.\n> \n\n\nI don't think that error message has anything to do with it.  Are you doing this in Sage 3.3.alpha2 + #5095.",
     "created_at": "2009-01-27T03:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
@@ -333,6 +333,7 @@ Replying to [comment:11 jhpalmieri]:
 > I see the same things as kcrisman, including the same error message, but with Safari 3.2.1 (5525.27.1), OS X 10.5.6 on an Intel iMac.
 > 
 
+
 I don't think that error message has anything to do with it.  Are you doing this in Sage 3.3.alpha2 + #5095.
 
 
@@ -342,7 +343,7 @@ I don't think that error message has anything to do with it.  Are you doing this
 archive/issue_comments_038869.json:
 ```json
 {
-    "body": "Replying to [comment:12 jason]:\n> That is missing an equals sign between the value and the quotes.  Is that a typo or is that the error?\n\nTypo, I think.\n\nDon't have 3.3.alpha2+anything, and unfortunately that won't happen for a bit.  Sorry the debugger didn't help.",
+    "body": "Replying to [comment:12 jason]:\n> That is missing an equals sign between the value and the quotes.  Is that a typo or is that the error?\n\n\nTypo, I think.\n\nDon't have 3.3.alpha2+anything, and unfortunately that won't happen for a bit.  Sorry the debugger didn't help.",
     "created_at": "2009-01-27T04:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
@@ -353,6 +354,7 @@ archive/issue_comments_038869.json:
 
 Replying to [comment:12 jason]:
 > That is missing an equals sign between the value and the quotes.  Is that a typo or is that the error?
+
 
 Typo, I think.
 
@@ -365,7 +367,7 @@ Don't have 3.3.alpha2+anything, and unfortunately that won't happen for a bit.  
 archive/issue_comments_038870.json:
 ```json
 {
-    "body": "Now this is with 3.3.alpha2 + the 5095 patch.\n\nWhen I click the Trash button to get the list of deleted worksheets, I get this in the error console:\n\n```\nUnmatched </input> encountered.  Ignoring tag.\nhttp://localhost:8000/home/admin/?typ=trash (line 68)\n```\n\n\nThis points to the line\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'trash');\" \n```\n\n\nClicking \"Empty Trash\" then gives me\n\n```\nUnmatched </input> encountered.  Ignoring tag.\nhttp://localhost:8000/home/admin/ (line 68)\n```\n\nThis points to the line\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'active');\" \n```\n\n\n(By the way, for what it's worth, you can turn on the Develop menu in Safari from the \"Advanced\" tab in the preferences -- no need to quit and restart.)",
+    "body": "Now this is with 3.3.alpha2 + the 5095 patch.\n\nWhen I click the Trash button to get the list of deleted worksheets, I get this in the error console:\n\n```\nUnmatched </input> encountered.  Ignoring tag.\nhttp://localhost:8000/home/admin/?typ=trash (line 68)\n```\n\nThis points to the line\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'trash');\" \n```\n\nClicking \"Empty Trash\" then gives me\n\n```\nUnmatched </input> encountered.  Ignoring tag.\nhttp://localhost:8000/home/admin/ (line 68)\n```\nThis points to the line\n\n```\n<input id=\"search_worksheets\" size=20 onkeypress=\"return search_worksheets_enter_pressed(event, 'active');\" \n```\n\n(By the way, for what it's worth, you can turn on the Develop menu in Safari from the \"Advanced\" tab in the preferences -- no need to quit and restart.)",
     "created_at": "2009-01-27T05:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
@@ -383,13 +385,11 @@ Unmatched </input> encountered.  Ignoring tag.
 http://localhost:8000/home/admin/?typ=trash (line 68)
 ```
 
-
 This points to the line
 
 ```
 <input id="search_worksheets" size=20 onkeypress="return search_worksheets_enter_pressed(event, 'trash');" 
 ```
-
 
 Clicking "Empty Trash" then gives me
 
@@ -397,13 +397,11 @@ Clicking "Empty Trash" then gives me
 Unmatched </input> encountered.  Ignoring tag.
 http://localhost:8000/home/admin/ (line 68)
 ```
-
 This points to the line
 
 ```
 <input id="search_worksheets" size=20 onkeypress="return search_worksheets_enter_pressed(event, 'active');" 
 ```
-
 
 (By the way, for what it's worth, you can turn on the Develop menu in Safari from the "Advanced" tab in the preferences -- no need to quit and restart.)
 

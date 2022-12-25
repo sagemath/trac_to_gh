@@ -3,7 +3,7 @@
 archive/issues_009438.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: log finite field pari\n\nMotivated by a bug hunt for #2420, I found:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()\nb\nsage: GF(7)(5).log()\n5\nsage: b._pari_()\nMod(3, 7)\n```\n\n\nThe reason is that in the `log` method, the string\n\n```\n'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,\n                                                                           self.__modulus.sageInteger, self)\n```\n\nis evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.\n\nSince this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket \"critical\". I hope \"basic arithmetic\" is the right component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9438\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: log finite field pari\n\nMotivated by a bug hunt for #2420, I found:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()\nb\nsage: GF(7)(5).log()\n5\nsage: b._pari_()\nMod(3, 7)\n```\n\nThe reason is that in the `log` method, the string\n\n```\n'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,\n                                                                           self.__modulus.sageInteger, self)\n```\nis evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.\n\nSince this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket \"critical\". I hope \"basic arithmetic\" is the right component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9438\n\n",
     "created_at": "2010-07-06T15:34:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -33,14 +33,12 @@ sage: b._pari_()
 Mod(3, 7)
 ```
 
-
 The reason is that in the `log` method, the string
 
 ```
 'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,
                                                                            self.__modulus.sageInteger, self)
 ```
-
 is evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.
 
 Since this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket "critical". I hope "basic arithmetic" is the right component.
@@ -154,7 +152,7 @@ Fixes a side effect of log on PARI
 archive/issue_comments_090214.json:
 ```json
 {
-    "body": "Replying to [comment:3 davidloeffler]:\n> This modifies exactly the same code as #9205 (which already has a positive review). Sadly I \n> didn't spot this problem when I wrote that patch. Can you check to see if your patch applies OK \n> on top of #9205, and if not, rebase it?\n\nIt did not apply on top of #9205. So, I replaced the original patch by one that is to be applied after the two patches from #9205.\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:3 davidloeffler]:\n> This modifies exactly the same code as #9205 (which already has a positive review). Sadly I \n> didn't spot this problem when I wrote that patch. Can you check to see if your patch applies OK \n> on top of #9205, and if not, rebase it?\n\n\nIt did not apply on top of #9205. So, I replaced the original patch by one that is to be applied after the two patches from #9205.\n\nCheers,\n\nSimon",
     "created_at": "2010-07-07T11:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
@@ -167,6 +165,7 @@ Replying to [comment:3 davidloeffler]:
 > This modifies exactly the same code as #9205 (which already has a positive review). Sadly I 
 > didn't spot this problem when I wrote that patch. Can you check to see if your patch applies OK 
 > on top of #9205, and if not, rebase it?
+
 
 It did not apply on top of #9205. So, I replaced the original patch by one that is to be applied after the two patches from #9205.
 

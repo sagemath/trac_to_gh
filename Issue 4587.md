@@ -3,7 +3,7 @@
 archive/issues_004587.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: installing package latest version\n\nWilliam wrote at http://groups.google.com/group/sage-devel/browse_thread/thread/de91554d761c5f1b?hl=en\n\n''I think nobody every implemented a \"install latest version of package foo\" \nyet for Sage.  That's been on the todo list for *years*. ''\n\nIt is not difficult to implement, using the existing functtions from sage.misc.package, namely `install_package` and `optional_package` etc.\n\nI implemented a function `install_latest_version` in `package.py` and included it in `all.py`.\n\nNow, one can install the optional pil-1.1.6 package with\n\n```\nsage: install_latest_version('pi')\n```\n\nRepeating the command yields the Traceback\n\n```\nValueError                                Traceback (most recent call last)\n...\nValueError: There is no uninstalled package whose name starts with 'pi'.\n```\n\nForced re-installation is then possible with\n\n```\nsage: install_latest_version('pi',forced=True)\n```\n\n\nIf there is no possible package name extension, a Traceback results. There is also a Traceback if the extension is not unique. In that case, before raising the error, a list of all possible extensions is shown.\n\n```\nsage: install_latest_version('p',forced=True)\nPossible packages are:\n  palp-1.1.p1\n  pari-2.3.3.p0\n  pexpect-2.0.p1\n  polybori-0.5rc.p5\n  polytopes_db-20080430\n  pycrypto-2.0.1.p2\n  pygments-0.11.1\n  pynac-0.1.1\n  pyprocessing-0.52\n  python-2.5.2.p8\n  python_gnutls-1.1.4.p3\n  pil-1.1.6\n...\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\n\nOr should this function not raise an error?\n\nUnfortunately I have no idea how to have a non-destructive doc-test. Certainly it'd not be acceptable to have a doc-test installing something.\n\n\nUnfortunately, I have no idea how a non-destructive doc-test may look like. Certainly it would hardly be acceptable to have a doc-test that installs something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4587\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: installing package latest version\n\nWilliam wrote at http://groups.google.com/group/sage-devel/browse_thread/thread/de91554d761c5f1b?hl=en\n\n''I think nobody every implemented a \"install latest version of package foo\" \nyet for Sage.  That's been on the todo list for *years*. ''\n\nIt is not difficult to implement, using the existing functtions from sage.misc.package, namely `install_package` and `optional_package` etc.\n\nI implemented a function `install_latest_version` in `package.py` and included it in `all.py`.\n\nNow, one can install the optional pil-1.1.6 package with\n\n```\nsage: install_latest_version('pi')\n```\nRepeating the command yields the Traceback\n\n```\nValueError                                Traceback (most recent call last)\n...\nValueError: There is no uninstalled package whose name starts with 'pi'.\n```\nForced re-installation is then possible with\n\n```\nsage: install_latest_version('pi',forced=True)\n```\n\nIf there is no possible package name extension, a Traceback results. There is also a Traceback if the extension is not unique. In that case, before raising the error, a list of all possible extensions is shown.\n\n```\nsage: install_latest_version('p',forced=True)\nPossible packages are:\n  palp-1.1.p1\n  pari-2.3.3.p0\n  pexpect-2.0.p1\n  polybori-0.5rc.p5\n  polytopes_db-20080430\n  pycrypto-2.0.1.p2\n  pygments-0.11.1\n  pynac-0.1.1\n  pyprocessing-0.52\n  python-2.5.2.p8\n  python_gnutls-1.1.4.p3\n  pil-1.1.6\n...\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\nOr should this function not raise an error?\n\nUnfortunately I have no idea how to have a non-destructive doc-test. Certainly it'd not be acceptable to have a doc-test installing something.\n\n\nUnfortunately, I have no idea how a non-destructive doc-test may look like. Certainly it would hardly be acceptable to have a doc-test that installs something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4587\n\n",
     "created_at": "2008-11-23T01:01:01Z",
     "labels": [
         "component: packages: standard"
@@ -33,7 +33,6 @@ Now, one can install the optional pil-1.1.6 package with
 ```
 sage: install_latest_version('pi')
 ```
-
 Repeating the command yields the Traceback
 
 ```
@@ -41,13 +40,11 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: There is no uninstalled package whose name starts with 'pi'.
 ```
-
 Forced re-installation is then possible with
 
 ```
 sage: install_latest_version('pi',forced=True)
 ```
-
 
 If there is no possible package name extension, a Traceback results. There is also a Traceback if the extension is not unique. In that case, before raising the error, a list of all possible extensions is shown.
 
@@ -70,7 +67,6 @@ Possible packages are:
 ValueError: There is more than one package name starting with 'p'. Please specify!
 ```
 
-
 Or should this function not raise an error?
 
 Unfortunately I have no idea how to have a non-destructive doc-test. Certainly it'd not be acceptable to have a doc-test installing something.
@@ -89,7 +85,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4587
 archive/issue_comments_034325.json:
 ```json
 {
-    "body": "> Unfortunately, I have no idea how a non-destructive doc-test may look like. Certainly > it would hardly be acceptable to have a doc-test that installs something. \n\nWe could have an official \"test\" spkg.  And it would be marked\n\n```\noptional -- admin\n```\n\nmeaning one must have write privileges to the sage install in order to run it.\nThe test would install and uninstall that package.\n\nWilliam",
+    "body": "> Unfortunately, I have no idea how a non-destructive doc-test may look like. Certainly > it would hardly be acceptable to have a doc-test that installs something. \n\n\nWe could have an official \"test\" spkg.  And it would be marked\n\n```\noptional -- admin\n```\nmeaning one must have write privileges to the sage install in order to run it.\nThe test would install and uninstall that package.\n\nWilliam",
     "created_at": "2008-11-23T21:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -100,12 +96,12 @@ archive/issue_comments_034325.json:
 
 > Unfortunately, I have no idea how a non-destructive doc-test may look like. Certainly > it would hardly be acceptable to have a doc-test that installs something. 
 
+
 We could have an official "test" spkg.  And it would be marked
 
 ```
 optional -- admin
 ```
-
 meaning one must have write privileges to the sage install in order to run it.
 The test would install and uninstall that package.
 
@@ -118,7 +114,7 @@ William
 archive/issue_comments_034326.json:
 ```json
 {
-    "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> {{{\n> optional -- admin\n> }}}\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\nSorry, at that point I have to pass out. So far, I did not produce a new package (hopefully I'll learn it soon), and also I don't how one can un-install a package.",
+    "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> \n> ```\n> optional -- admin\n> ```\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\n\nSorry, at that point I have to pass out. So far, I did not produce a new package (hopefully I'll learn it soon), and also I don't how one can un-install a package.",
     "created_at": "2008-11-23T22:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -129,11 +125,13 @@ archive/issue_comments_034326.json:
 
 Replying to [comment:1 was]:
 > We could have an official "test" spkg.  And it would be marked
-> {{{
+> 
+> ```
 > optional -- admin
-> }}}
+> ```
 > meaning one must have write privileges to the sage install in order to run it.
 > The test would install and uninstall that package.
+
 
 Sorry, at that point I have to pass out. So far, I did not produce a new package (hopefully I'll learn it soon), and also I don't how one can un-install a package.
 
@@ -144,7 +142,7 @@ Sorry, at that point I have to pass out. So far, I did not produce a new package
 archive/issue_comments_034327.json:
 ```json
 {
-    "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> {{{\n> optional -- admin\n> }}}\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\nAnother idea: Call the test package `tomato.spkg`, and construct it such that the attempt to install it would actually have no effect. \n\nHence, there were no need to mark it `optional -- admin`, and also no need to uninstall it. \n\nThat package would just comprise a Makefile with the simple content\n\n```\nall:\n    echo \"Tomato ejects itself\"\n```\n\n\nWould it work? At least it would be rather \"pythonic\"...\n\nCheers,\n     Simon",
+    "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> \n> ```\n> optional -- admin\n> ```\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\n\nAnother idea: Call the test package `tomato.spkg`, and construct it such that the attempt to install it would actually have no effect. \n\nHence, there were no need to mark it `optional -- admin`, and also no need to uninstall it. \n\nThat package would just comprise a Makefile with the simple content\n\n```\nall:\n    echo \"Tomato ejects itself\"\n```\n\nWould it work? At least it would be rather \"pythonic\"...\n\nCheers,\n     Simon",
     "created_at": "2008-11-25T12:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -155,11 +153,13 @@ archive/issue_comments_034327.json:
 
 Replying to [comment:1 was]:
 > We could have an official "test" spkg.  And it would be marked
-> {{{
+> 
+> ```
 > optional -- admin
-> }}}
+> ```
 > meaning one must have write privileges to the sage install in order to run it.
 > The test would install and uninstall that package.
+
 
 Another idea: Call the test package `tomato.spkg`, and construct it such that the attempt to install it would actually have no effect. 
 
@@ -171,7 +171,6 @@ That package would just comprise a Makefile with the simple content
 all:
     echo "Tomato ejects itself"
 ```
-
 
 Would it work? At least it would be rather "pythonic"...
 
@@ -207,7 +206,7 @@ Michael
 archive/issue_comments_034329.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> Please open a ticket for a test-dummy.spkg and I will provide one. Uninstalling spkg per see is not really supported at the moment, but we can delete the entry from $SAGE_ROOT/spkg/installed/ manually.\n\nDone, see #4617.\n\nCheers,\n   Simon",
+    "body": "Replying to [comment:4 mabshoff]:\n> Please open a ticket for a test-dummy.spkg and I will provide one. Uninstalling spkg per see is not really supported at the moment, but we can delete the entry from $SAGE_ROOT/spkg/installed/ manually.\n\n\nDone, see #4617.\n\nCheers,\n   Simon",
     "created_at": "2008-11-25T12:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -218,6 +217,7 @@ archive/issue_comments_034329.json:
 
 Replying to [comment:4 mabshoff]:
 > Please open a ticket for a test-dummy.spkg and I will provide one. Uninstalling spkg per see is not really supported at the moment, but we can delete the entry from $SAGE_ROOT/spkg/installed/ manually.
+
 
 Done, see #4617.
 
@@ -330,7 +330,7 @@ What do you think:
 archive/issue_comments_034334.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nThe logic is now somewhat broken, unfortunately.  E.g.,\n\n```\nsage: install_package('database_sloane')\n... it works ...\n```\n\nbut then\n\n```\nsage: install_package('database_sloane')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/misc/package.pyc in install_package(package, force)\n     78         raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\n     79     if len(L)==0:\n---> 80         raise ValueError, \"There is no package name starting with '%s'.\"%(package)\n     81     os.system('sage -f \"%s\"'%(L[0]))\n     82     __installed_packages = None\n\nValueError: There is no package name starting with 'database_sloane'.\n\nsage: install_package('database_sloane_oeis-2005-12')\nsame error as above.\n```\n\nwhich is the wrong error message.",
+    "body": "REFEREE REPORT:\n\nThe logic is now somewhat broken, unfortunately.  E.g.,\n\n```\nsage: install_package('database_sloane')\n... it works ...\n```\nbut then\n\n```\nsage: install_package('database_sloane')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/misc/package.pyc in install_package(package, force)\n     78         raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\n     79     if len(L)==0:\n---> 80         raise ValueError, \"There is no package name starting with '%s'.\"%(package)\n     81     os.system('sage -f \"%s\"'%(L[0]))\n     82     __installed_packages = None\n\nValueError: There is no package name starting with 'database_sloane'.\n\nsage: install_package('database_sloane_oeis-2005-12')\nsame error as above.\n```\nwhich is the wrong error message.",
     "created_at": "2008-11-28T23:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -347,7 +347,6 @@ The logic is now somewhat broken, unfortunately.  E.g.,
 sage: install_package('database_sloane')
 ... it works ...
 ```
-
 but then
 
 ```
@@ -369,7 +368,6 @@ ValueError: There is no package name starting with 'database_sloane'.
 sage: install_package('database_sloane_oeis-2005-12')
 same error as above.
 ```
-
 which is the wrong error message.
 
 
@@ -379,7 +377,7 @@ which is the wrong error message.
 archive/issue_comments_034335.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n> REFEREE REPORT:\n> \n> The logic is now somewhat broken, unfortunately.  E.g.,\n> ValueError: There is no package name starting with 'database_sloane'.\n\nYep, this is what I meant when I said in my previous comment \"(perhaps it would be better to say 'no uninstalled package')\".\n\nThe logic is:\n* If force and there is a unique package then install it (regardless whether it is already installed or not)\n* If (not force) and there is a unique *non-installed* package then install it.\n* Otherwise, raise an error.\n\nI agree that the error message may be clearer. So, back at work...",
+    "body": "Replying to [comment:9 was]:\n> REFEREE REPORT:\n> \n> The logic is now somewhat broken, unfortunately.  E.g.,\n> ValueError: There is no package name starting with 'database_sloane'.\n\n\nYep, this is what I meant when I said in my previous comment \"(perhaps it would be better to say 'no uninstalled package')\".\n\nThe logic is:\n* If force and there is a unique package then install it (regardless whether it is already installed or not)\n* If (not force) and there is a unique *non-installed* package then install it.\n* Otherwise, raise an error.\n\nI agree that the error message may be clearer. So, back at work...",
     "created_at": "2008-11-28T23:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -393,6 +391,7 @@ Replying to [comment:9 was]:
 > 
 > The logic is now somewhat broken, unfortunately.  E.g.,
 > ValueError: There is no package name starting with 'database_sloane'.
+
 
 Yep, this is what I meant when I said in my previous comment "(perhaps it would be better to say 'no uninstalled package')".
 
@@ -430,7 +429,7 @@ To be applied after the first patch: Improving the error message
 archive/issue_comments_034337.json:
 ```json
 {
-    "body": "After applying the second patch:\nIf the name is non-unique, I get with force install:\n\n```\nsage: install_package('p',True)\nPossible package names starting with 'p' are:\n  palp-1.1.p1\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\nand without force:\n\n```\nsage: install_package('p')\nPossible names of non-installed packages starting with 'p':\n  phc-2.3.39.p0\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\n\nIf the package exists, without 'force' I get:\n\n```\nsage: install_package('pil')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: Package is already installed. Try install_package('pil',force=True)\n```\n\n\nIs this better?\n\nRemains the doc-test issue. I leave it up to you whether one should wait for the test_dummy.spkg, so, I keep the summary [with patch, needs work].",
+    "body": "After applying the second patch:\nIf the name is non-unique, I get with force install:\n\n```\nsage: install_package('p',True)\nPossible package names starting with 'p' are:\n  palp-1.1.p1\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\nand without force:\n\n```\nsage: install_package('p')\nPossible names of non-installed packages starting with 'p':\n  phc-2.3.39.p0\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\nIf the package exists, without 'force' I get:\n\n```\nsage: install_package('pil')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: Package is already installed. Try install_package('pil',force=True)\n```\n\nIs this better?\n\nRemains the doc-test issue. I leave it up to you whether one should wait for the test_dummy.spkg, so, I keep the summary [with patch, needs work].",
     "created_at": "2008-11-29T00:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -450,7 +449,6 @@ Possible package names starting with 'p' are:
   pyx-0.8.1
 ValueError: There is more than one package name starting with 'p'. Please specify!
 ```
-
 and without force:
 
 ```
@@ -462,7 +460,6 @@ Possible names of non-installed packages starting with 'p':
 ValueError: There is more than one package name starting with 'p'. Please specify!
 ```
 
-
 If the package exists, without 'force' I get:
 
 ```
@@ -472,7 +469,6 @@ ValueError                                Traceback (most recent call last)
 ...
 ValueError: Package is already installed. Try install_package('pil',force=True)
 ```
-
 
 Is this better?
 
@@ -485,7 +481,7 @@ Remains the doc-test issue. I leave it up to you whether one should wait for the
 archive/issue_comments_034338.json:
 ```json
 {
-    "body": "> Remains the doc-test issue. I leave it up to you whether one should wait for the \n> test_dummy.spkg, so, I keep the summary [with patch, needs work]. \n\nFor this sort of thing, I'm not too worried.  100% coverage is critical in cases when it is at least reasonably straightforward how to write the doctests.  Here it is itself pretty confusing.",
+    "body": "> Remains the doc-test issue. I leave it up to you whether one should wait for the \n> test_dummy.spkg, so, I keep the summary [with patch, needs work]. \n\n\nFor this sort of thing, I'm not too worried.  100% coverage is critical in cases when it is at least reasonably straightforward how to write the doctests.  Here it is itself pretty confusing.",
     "created_at": "2008-11-29T03:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
@@ -496,6 +492,7 @@ archive/issue_comments_034338.json:
 
 > Remains the doc-test issue. I leave it up to you whether one should wait for the 
 > test_dummy.spkg, so, I keep the summary [with patch, needs work]. 
+
 
 For this sort of thing, I'm not too worried.  100% coverage is critical in cases when it is at least reasonably straightforward how to write the doctests.  Here it is itself pretty confusing.
 

@@ -3,7 +3,7 @@
 archive/issues_006313.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 482:\n    sage: magma(f)                         # optional - magma\nExpected:\n    sin(cos(x^2) + log(x))\nGot:\n    sin(log(x) + cos(x^2))\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 2803:\n    sage: maple.eval('subs(x^2 + y^2 = t, cos(x) + sin(y) + x^2 + y^2 + t)')          # optional requires maple\nExpected:\n    'cos(x)+sin(y)+x^2+y^2+t'\nGot:\n    'read \"/scratch/wstein/sage//temp/sage.math.washington.edu/560//interface//'\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_14\n   1 of  18 in __main__.example_67\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_expression.py\n\t [26.8 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6313\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 482:\n    sage: magma(f)                         # optional - magma\nExpected:\n    sin(cos(x^2) + log(x))\nGot:\n    sin(log(x) + cos(x^2))\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 2803:\n    sage: maple.eval('subs(x^2 + y^2 = t, cos(x) + sin(y) + x^2 + y^2 + t)')          # optional requires maple\nExpected:\n    'cos(x)+sin(y)+x^2+y^2+t'\nGot:\n    'read \"/scratch/wstein/sage//temp/sage.math.washington.edu/560//interface//'\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_14\n   1 of  18 in __main__.example_67\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_expression.py\n\t [26.8 s]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6313\n\n",
     "created_at": "2009-06-16T14:42:04Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006313.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/sage/symbolic/expression.pyx
@@ -43,7 +42,6 @@ Got:
 For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_expression.py
 	 [26.8 s]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6313
 

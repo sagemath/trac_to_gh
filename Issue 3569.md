@@ -3,7 +3,7 @@
 archive/issues_003569.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nBEFORE\n\n```\nteragon-2:misc was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.092 (dist_function)\n         twisted.cred.credentials: 0.009 (sage.dsage.interface.dsage_interface)\n         twisted.internet.threads: 0.011 (sage.dsage.interface.dsage_interface)\n         twisted.internet.interfaces: 0.040 (sage.dsage.interface.dsage_interface)\n0.092 sage.dsage.interface.dsage_interface (dist_function)\n0.040 twisted.internet.interfaces (sage.dsage.interface.dsage_interface)\n```\n\n\nThis is after using it multiple times (so caching).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3569\n\n",
+    "body": "Assignee: cwitty\n\nBEFORE\n\n```\nteragon-2:misc was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.092 (dist_function)\n         twisted.cred.credentials: 0.009 (sage.dsage.interface.dsage_interface)\n         twisted.internet.threads: 0.011 (sage.dsage.interface.dsage_interface)\n         twisted.internet.interfaces: 0.040 (sage.dsage.interface.dsage_interface)\n0.092 sage.dsage.interface.dsage_interface (dist_function)\n0.040 twisted.internet.interfaces (sage.dsage.interface.dsage_interface)\n```\n\nThis is after using it multiple times (so caching).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3569\n\n",
     "created_at": "2008-07-06T20:13:04Z",
     "labels": [
         "component: misc"
@@ -29,7 +29,6 @@ teragon-2:misc was$ sage -startuptime|grep dsage_interface
 0.040 twisted.internet.interfaces (sage.dsage.interface.dsage_interface)
 ```
 
-
 This is after using it multiple times (so caching).
 
 Issue created by migration from https://trac.sagemath.org/ticket/3569
@@ -43,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3569
 archive/issue_comments_025166.json:
 ```json
 {
-    "body": "Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by @williamstein created at 2008-07-06 20:26:06\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```\n",
+    "body": "Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by @williamstein created at 2008-07-06 20:26:06\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```",
     "created_at": "2008-07-06T20:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3569",
     "type": "issue_comment",
@@ -60,14 +59,11 @@ AFTER
 teragon-2:dsage was$ sage -startuptime|grep twisted
 ```
 
-
-
 ```
 teragon-2:dsage was$ sage -startuptime|grep dsage_interface
         sage.dsage.interface.dsage_interface: 0.007 (dist_function)
          sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009962.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\n`ToricDivisor_generic.sections()` has an incorrect shortcut if the divisor is not nef. The cohomology of the divisor is computed correctly:\n\n```\nsage: rays = [(1,0,0),(0,1,0),(0,0,1),(-2,0,-1),(-2,-1,0),(-3,-1,-1),(1,1,1),(-1,0,0)]\nsage: cones = [[0,1,3],[0,1,6],[0,2,4],[0,2,6],[0,3,5],[0,4,5],[1,3,7],[1,6,7],[2,4,7],[2,6,7],[3,5,7],[4,5,7]]\nsage: X = ToricVariety(Fan(rays=rays,cones=cones))\nsage: D = X.divisor(2); D\nV(z2)\nsage: D.is_nef()\nFalse\nsage:  D.sections()\n()\nsage: D.cohomology(dim=True)\n(1, 0, 0, 0)\n```\n\nAttached one-line patch fixes this issue and adds doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9963\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\n`ToricDivisor_generic.sections()` has an incorrect shortcut if the divisor is not nef. The cohomology of the divisor is computed correctly:\n\n```\nsage: rays = [(1,0,0),(0,1,0),(0,0,1),(-2,0,-1),(-2,-1,0),(-3,-1,-1),(1,1,1),(-1,0,0)]\nsage: cones = [[0,1,3],[0,1,6],[0,2,4],[0,2,6],[0,3,5],[0,4,5],[1,3,7],[1,6,7],[2,4,7],[2,6,7],[3,5,7],[4,5,7]]\nsage: X = ToricVariety(Fan(rays=rays,cones=cones))\nsage: D = X.divisor(2); D\nV(z2)\nsage: D.is_nef()\nFalse\nsage:  D.sections()\n()\nsage: D.cohomology(dim=True)\n(1, 0, 0, 0)\n```\nAttached one-line patch fixes this issue and adds doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9963\n\n",
     "created_at": "2010-09-21T20:51:14Z",
     "labels": [
         "component: algebraic geometry",
@@ -35,7 +35,6 @@ sage:  D.sections()
 sage: D.cohomology(dim=True)
 (1, 0, 0, 0)
 ```
-
 Attached one-line patch fixes this issue and adds doctest.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9963

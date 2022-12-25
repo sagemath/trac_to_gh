@@ -3,7 +3,7 @@
 archive/issues_009820.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
+    "body": "Assignee: @malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
     "created_at": "2010-08-27T11:53:35Z",
     "labels": [
         "component: commutative algebra",
@@ -27,7 +27,6 @@ The functions `is_field` and `is_integral_domain` for infinite polynomial rings 
 sage: R.<x> = InfinitePolynomialRing(ZZ)
 sage: A.<t> = R[[]]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9821
 
@@ -114,7 +113,7 @@ Could you add a doctest testing the proof parameter.
 archive/issue_comments_096675.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n\n> Could you add a doctest testing the proof parameter.\n\nThis has turned out to be more difficult than expected, but I do now have a replacement patch.  In order to create a reasonable doctest I had to correct a bug in `sage.rings.quotient_rings.QuotientRing_generic.is_integral_domain`\n\nAt the same time I have eliminated the `Integer(8)` example from that function's doctests, since that ring uses code from `sage/rings/finite_rings/integer_mod_ring.pyx` rather than from `quotient_rings`.\n\nI didn't think it worth including an example of the use of `proof` in `is_field` because the parameter is ignored.\n\n> (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)\n\n(You must have meant #9549)",
+    "body": "Replying to [comment:2 mhansen]:\n\n> Could you add a doctest testing the proof parameter.\n\n\nThis has turned out to be more difficult than expected, but I do now have a replacement patch.  In order to create a reasonable doctest I had to correct a bug in `sage.rings.quotient_rings.QuotientRing_generic.is_integral_domain`\n\nAt the same time I have eliminated the `Integer(8)` example from that function's doctests, since that ring uses code from `sage/rings/finite_rings/integer_mod_ring.pyx` rather than from `quotient_rings`.\n\nI didn't think it worth including an example of the use of `proof` in `is_field` because the parameter is ignored.\n\n> (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)\n\n\n(You must have meant #9549)",
     "created_at": "2010-08-31T20:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
@@ -127,6 +126,7 @@ Replying to [comment:2 mhansen]:
 
 > Could you add a doctest testing the proof parameter.
 
+
 This has turned out to be more difficult than expected, but I do now have a replacement patch.  In order to create a reasonable doctest I had to correct a bug in `sage.rings.quotient_rings.QuotientRing_generic.is_integral_domain`
 
 At the same time I have eliminated the `Integer(8)` example from that function's doctests, since that ring uses code from `sage/rings/finite_rings/integer_mod_ring.pyx` rather than from `quotient_rings`.
@@ -134,6 +134,7 @@ At the same time I have eliminated the `Integer(8)` example from that function's
 I didn't think it worth including an example of the use of `proof` in `is_field` because the parameter is ignored.
 
 > (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)
+
 
 (You must have meant #9549)
 

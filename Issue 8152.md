@@ -3,7 +3,7 @@
 archive/issues_008152.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nSage currently depends on OpenSSL to build the haslib module in Python. OpenSSL is not distributed with Sage due to license issues. However, the GPL allows us to link to the libraries if they are part of the core operating system, such as the kernel or compilers. (Someone could argue OpenSSL is not part of the core operating system, so even if it comes with the operating system, we can't use it. However, that is another issue.)\n\nThe OpenSSL libraries are installed on Solaris 10 in /usr/sfw/lib.  The problem is, python does not currently look there for the libraries. I've submitted an enhancement request to the Python bug database. \n\nhttp://bugs.python.org/issue7836\n\nthat they add that directory to the list of directories searched. \n\nUntil this gets fixed, I believe we should add the directory /usr/sfw/lib to the top-level setup.py. Then Sage should build on Solaris 10 (but not OpenSolaris) without installation of any OpenSSL libraries. \n\nThere is no point making this patch operating system specific, as the code in python is only a search path: \n\n\n```\n       ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,\n                                     ['/usr/local/ssl/lib',\n                                      '/usr/contrib/ssl/lib/'\n                                     ] )\n\n```\n\n\nI'm not sure if we need to know the location of the include directories, but they are in /usr/src/include/openssl. There is again similar code in setup.py to search for the include files:\n\n\n```\n        # Detect SSL support for the socket module (via _ssl)\n        search_for_ssl_incs_in = [\n                              '/usr/local/ssl/include',\n                              '/usr/contrib/ssl/include/'\n                             ]\n\n```\n\n\nAny comments, before I go to the trouble of making a patch, which just appends the search path for the OpenSSL directories?  Does this seem a reasonable thing to do? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8152\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nSage currently depends on OpenSSL to build the haslib module in Python. OpenSSL is not distributed with Sage due to license issues. However, the GPL allows us to link to the libraries if they are part of the core operating system, such as the kernel or compilers. (Someone could argue OpenSSL is not part of the core operating system, so even if it comes with the operating system, we can't use it. However, that is another issue.)\n\nThe OpenSSL libraries are installed on Solaris 10 in /usr/sfw/lib.  The problem is, python does not currently look there for the libraries. I've submitted an enhancement request to the Python bug database. \n\nhttp://bugs.python.org/issue7836\n\nthat they add that directory to the list of directories searched. \n\nUntil this gets fixed, I believe we should add the directory /usr/sfw/lib to the top-level setup.py. Then Sage should build on Solaris 10 (but not OpenSolaris) without installation of any OpenSSL libraries. \n\nThere is no point making this patch operating system specific, as the code in python is only a search path: \n\n```\n       ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,\n                                     ['/usr/local/ssl/lib',\n                                      '/usr/contrib/ssl/lib/'\n                                     ] )\n\n```\n\nI'm not sure if we need to know the location of the include directories, but they are in /usr/src/include/openssl. There is again similar code in setup.py to search for the include files:\n\n```\n        # Detect SSL support for the socket module (via _ssl)\n        search_for_ssl_incs_in = [\n                              '/usr/local/ssl/include',\n                              '/usr/contrib/ssl/include/'\n                             ]\n\n```\n\nAny comments, before I go to the trouble of making a patch, which just appends the search path for the OpenSSL directories?  Does this seem a reasonable thing to do? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8152\n\n",
     "created_at": "2010-02-02T11:15:01Z",
     "labels": [
         "component: porting: solaris",
@@ -32,7 +32,6 @@ Until this gets fixed, I believe we should add the directory /usr/sfw/lib to the
 
 There is no point making this patch operating system specific, as the code in python is only a search path: 
 
-
 ```
        ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,
                                      ['/usr/local/ssl/lib',
@@ -41,9 +40,7 @@ There is no point making this patch operating system specific, as the code in py
 
 ```
 
-
 I'm not sure if we need to know the location of the include directories, but they are in /usr/src/include/openssl. There is again similar code in setup.py to search for the include files:
-
 
 ```
         # Detect SSL support for the socket module (via _ssl)
@@ -53,7 +50,6 @@ I'm not sure if we need to know the location of the include directories, but the
                              ]
 
 ```
-
 
 Any comments, before I go to the trouble of making a patch, which just appends the search path for the OpenSSL directories?  Does this seem a reasonable thing to do? 
 
@@ -70,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8152
 archive/issue_comments_071550.json:
 ```json
 {
-    "body": "> Sage currently depends on OpenSSL to build the haslib module in Python. \n\nAs I mentioned on the list, are we sure about this ?",
+    "body": "> Sage currently depends on OpenSSL to build the haslib module in Python. \n\n\nAs I mentioned on the list, are we sure about this ?",
     "created_at": "2010-02-03T05:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
@@ -80,6 +76,7 @@ archive/issue_comments_071550.json:
 ```
 
 > Sage currently depends on OpenSSL to build the haslib module in Python. 
+
 
 As I mentioned on the list, are we sure about this ?
 
@@ -148,7 +145,7 @@ Install.log showing the failure for python to install properly.
 archive/issue_comments_071554.json:
 ```json
 {
-    "body": "Here's one example of this failing on Solaris 10 03/2005. I freshly installed Solaris 10 on this machine yesterday. All that has been added are \n\n* Sun patch 123647-04 to overcome a bug in the supplied gcc 3.4.3\n* Installed gmp-4.3.2\n* Installed mpfr-2.4.2\n* Built gcc 4.4.3\n\nClearly there are failures on Solaris 10, which can be remidied by to LD_LIBRARY_PATH a directory containing the OpenSSL libraries. \n\n\n```\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3.2/local/lib/python2.6/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3.2/local/lib/python2.6/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\nhashlib module failed to import\n\nreal\t19m24.520s\nuser\t16m14.347s\nsys\t2m57.845s\nsage: An error occurred while installing python-2.6.4.p5\n```\n",
+    "body": "Here's one example of this failing on Solaris 10 03/2005. I freshly installed Solaris 10 on this machine yesterday. All that has been added are \n\n* Sun patch 123647-04 to overcome a bug in the supplied gcc 3.4.3\n* Installed gmp-4.3.2\n* Installed mpfr-2.4.2\n* Built gcc 4.4.3\n\nClearly there are failures on Solaris 10, which can be remidied by to LD_LIBRARY_PATH a directory containing the OpenSSL libraries. \n\n```\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3.2/local/lib/python2.6/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3.2/local/lib/python2.6/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\nhashlib module failed to import\n\nreal\t19m24.520s\nuser\t16m14.347s\nsys\t2m57.845s\nsage: An error occurred while installing python-2.6.4.p5\n```",
     "created_at": "2010-02-12T02:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
@@ -166,7 +163,6 @@ Here's one example of this failing on Solaris 10 03/2005. I freshly installed So
 
 Clearly there are failures on Solaris 10, which can be remidied by to LD_LIBRARY_PATH a directory containing the OpenSSL libraries. 
 
-
 ```
 Sleeping for three seconds before testing python
 Traceback (most recent call last):
@@ -183,7 +179,6 @@ user	16m14.347s
 sys	2m57.845s
 sage: An error occurred while installing python-2.6.4.p5
 ```
-
 
 
 

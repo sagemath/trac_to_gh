@@ -3,7 +3,7 @@
 archive/issues_002627.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nKeywords: gamma function, factorial\n\n`Integer(abs(gamma(n+1))) - factorial(n)` should be zero for all positive integers, but on 2.10.3, I get:\n\n\n```\nsage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n\n[0,\n 0,\n 0,\n 1572864,\n -29360128,\n 71303168,\n 14738784256,\n -220528115712,\n 11417398804480,\n -55923527647232]\n```\n\n\nI'm guessing this is due to some numerical noise. There should be some type-checking done in the gamma function.\n\nI would also like to see, for instance, gamma(1/2) return sqrt(pi) instead of a floating point number, although I think the above issue is more pressing and easier to deal with.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2627\n\n",
+    "body": "Assignee: cwitty\n\nKeywords: gamma function, factorial\n\n`Integer(abs(gamma(n+1))) - factorial(n)` should be zero for all positive integers, but on 2.10.3, I get:\n\n```\nsage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n\n[0,\n 0,\n 0,\n 1572864,\n -29360128,\n 71303168,\n 14738784256,\n -220528115712,\n 11417398804480,\n -55923527647232]\n```\n\nI'm guessing this is due to some numerical noise. There should be some type-checking done in the gamma function.\n\nI would also like to see, for instance, gamma(1/2) return sqrt(pi) instead of a floating point number, although I think the above issue is more pressing and easier to deal with.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2627\n\n",
     "created_at": "2008-03-21T06:59:01Z",
     "labels": [
         "component: misc",
@@ -22,7 +22,6 @@ Keywords: gamma function, factorial
 
 `Integer(abs(gamma(n+1))) - factorial(n)` should be zero for all positive integers, but on 2.10.3, I get:
 
-
 ```
 sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]
 
@@ -37,7 +36,6 @@ sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]
  11417398804480,
  -55923527647232]
 ```
-
 
 I'm guessing this is due to some numerical noise. There should be some type-checking done in the gamma function.
 
@@ -72,7 +70,7 @@ The right fix would probably be to add a .gamma() method to the integers, and th
 archive/issue_comments_018013.json:
 ```json
 {
-    "body": "Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by @robertwb created at 2008-03-26 11:17:51\n\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```\n",
+    "body": "Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by @robertwb created at 2008-03-26 11:17:51\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```",
     "created_at": "2008-03-26T11:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ archive/issue_comments_018013.json:
 
 Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by @robertwb created at 2008-03-26 11:17:51
 
-
 ```
 sage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -92,7 +89,6 @@ sqrt(pi)
 sage: gamma(-101/2)
 -2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375
 ```
-
 
 
 
@@ -195,7 +191,7 @@ Resolution: fixed
 archive/issue_comments_018018.json:
 ```json
 {
-    "body": "The is one doctest failure:\n\n```\nsage -t  devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"transcendental.py\", line 102:\n    sage: gamma(6)\nExpected:\n    120.000000000000\nGot:\n    120\n**********************************************************************\n```\n\nTrivial fix coming up.\n\nCheers,\n\nMichael",
+    "body": "The is one doctest failure:\n\n```\nsage -t  devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"transcendental.py\", line 102:\n    sage: gamma(6)\nExpected:\n    120.000000000000\nGot:\n    120\n**********************************************************************\n```\nTrivial fix coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-27T09:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
@@ -217,7 +213,6 @@ Got:
     120
 **********************************************************************
 ```
-
 Trivial fix coming up.
 
 Cheers,

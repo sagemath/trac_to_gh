@@ -69,7 +69,7 @@ I applied the patch on r12658 (Sage 4.1). There do not appear to be any differen
 archive/issue_comments_052924.json:
 ```json
 {
-    "body": "Can you be more specific, e.g., about the browser and OS?  Did you rebuild the HTML documentation?\n\nI should add that I don't have access to a machine running Mac OS.  It would be useful to know how it fares in multiple Mac OS browsers in all three scenarios (live, fast static, offline).\n\nBut first, we should try to get it working on some machine other than mine.\n\n(In applying the patch, I got this warning:\n\n```\nHunk #1 succeeded at 9 with fuzz 1 (offset -1 lines).\n```\n\nThis is just a consequence of #6512.)",
+    "body": "Can you be more specific, e.g., about the browser and OS?  Did you rebuild the HTML documentation?\n\nI should add that I don't have access to a machine running Mac OS.  It would be useful to know how it fares in multiple Mac OS browsers in all three scenarios (live, fast static, offline).\n\nBut first, we should try to get it working on some machine other than mine.\n\n(In applying the patch, I got this warning:\n\n```\nHunk #1 succeeded at 9 with fuzz 1 (offset -1 lines).\n```\nThis is just a consequence of #6512.)",
     "created_at": "2009-07-27T09:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6507",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ But first, we should try to get it working on some machine other than mine.
 ```
 Hunk #1 succeeded at 9 with fuzz 1 (offset -1 lines).
 ```
-
 This is just a consequence of #6512.)
 
 

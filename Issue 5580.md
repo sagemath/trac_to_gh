@@ -3,7 +3,7 @@
 archive/issues_005580.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mvngu\n\n\n```\nHi all,\n\nI ran into the following unexpected behavior, which I assume is because\nthe preparser does not work with nested loads.  I have two files,\nfoo.sage and bar.sage.  Their contents are as follows:\n\nfoo.sage\n--------\ndef foo():\n return (-1)**(-1)\n\n\nbar.sage\n--------\nload foo.sage\n\n\nThe following sage session works as expected:\n       sage: load foo.sage\n       sage: type(foo())\n       <type 'sage.rings.rational.Rational'>\n\nThe following session does not:\n       sage: load bar.sage\n       sage: type(foo())\n       <type 'float'>\n\nI'm guessing that in the second session the file foo.sage is not getting\npreparsed (and so foo() returns a Python object and not a Sage object).\n Is this correct? If so, is there a way to force it to be preparsed?  I\nlike to have lots of little files with different functions, and then a\nfile which loads whichever of these happen to be working/relevant at the\nmoment.  That way I only have to load one file at the start of my session.\n\nAny advice is much appreciated!\n\n  -- Jason Bandlow\n```\n\n\nI can confirm this bug in Sage-3.4. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5580\n\n",
+    "body": "Assignee: cwitty\n\nCC:  mvngu\n\n```\nHi all,\n\nI ran into the following unexpected behavior, which I assume is because\nthe preparser does not work with nested loads.  I have two files,\nfoo.sage and bar.sage.  Their contents are as follows:\n\nfoo.sage\n--------\ndef foo():\n return (-1)**(-1)\n\n\nbar.sage\n--------\nload foo.sage\n\n\nThe following sage session works as expected:\n       sage: load foo.sage\n       sage: type(foo())\n       <type 'sage.rings.rational.Rational'>\n\nThe following session does not:\n       sage: load bar.sage\n       sage: type(foo())\n       <type 'float'>\n\nI'm guessing that in the second session the file foo.sage is not getting\npreparsed (and so foo() returns a Python object and not a Sage object).\n Is this correct? If so, is there a way to force it to be preparsed?  I\nlike to have lots of little files with different functions, and then a\nfile which loads whichever of these happen to be working/relevant at the\nmoment.  That way I only have to load one file at the start of my session.\n\nAny advice is much appreciated!\n\n  -- Jason Bandlow\n```\n\nI can confirm this bug in Sage-3.4. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5580\n\n",
     "created_at": "2009-03-21T17:08:40Z",
     "labels": [
         "component: misc",
@@ -19,7 +19,6 @@ archive/issues_005580.json:
 Assignee: cwitty
 
 CC:  mvngu
-
 
 ```
 Hi all,
@@ -60,7 +59,6 @@ Any advice is much appreciated!
 
   -- Jason Bandlow
 ```
-
 
 I can confirm this bug in Sage-3.4. 
 
@@ -109,7 +107,7 @@ archive/issue_events_013138.json:
 archive/issue_comments_043419.json:
 ```json
 {
-    "body": "Close as fixed:\n\n```\n[mvngu@mod sage-4.3.2.alpha1-sage.math]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load foo.sage\nsage: type(foo())\n<type 'sage.rings.rational.Rational'>\nsage: load bar.sage\nsage: type(foo())\n<type 'sage.rings.rational.Rational'>\nsage: !more foo.sage\ndef foo():\n    return (-1)**(-1)\nsage: !more bar.sage\nload foo.sage\n```\n",
+    "body": "Close as fixed:\n\n```\n[mvngu@mod sage-4.3.2.alpha1-sage.math]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load foo.sage\nsage: type(foo())\n<type 'sage.rings.rational.Rational'>\nsage: load bar.sage\nsage: type(foo())\n<type 'sage.rings.rational.Rational'>\nsage: !more foo.sage\ndef foo():\n    return (-1)**(-1)\nsage: !more bar.sage\nload foo.sage\n```",
     "created_at": "2010-02-01T08:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5580",
     "type": "issue_comment",
@@ -141,7 +139,6 @@ def foo():
 sage: !more bar.sage
 load foo.sage
 ```
-
 
 
 

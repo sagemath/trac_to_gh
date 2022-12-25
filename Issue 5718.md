@@ -3,7 +3,7 @@
 archive/issues_005718.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nI was able to easily reproduce the following bug in sage-3.4.\n\n\n```\nHello,\n\n%hide works fine in the worksheet but shows up when printing.  Any\nadvice is appreciated.\n\n - Sage3.4 VMWare Image\n - Dell Vostro 200 desktop\n\nThanks,\nlmc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5718\n\n",
+    "body": "Assignee: boothby\n\nI was able to easily reproduce the following bug in sage-3.4.\n\n```\nHello,\n\n%hide works fine in the worksheet but shows up when printing.  Any\nadvice is appreciated.\n\n - Sage3.4 VMWare Image\n - Dell Vostro 200 desktop\n\nThanks,\nlmc\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5718\n\n",
     "created_at": "2009-04-08T19:40:13Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 I was able to easily reproduce the following bug in sage-3.4.
 
-
 ```
 Hello,
 
@@ -33,7 +32,6 @@ advice is appreciated.
 Thanks,
 lmc
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5718
 

@@ -3,7 +3,7 @@
 archive/issues_004065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
     "created_at": "2008-09-05T01:20:27Z",
     "labels": [
         "component: graphics",
@@ -20,21 +20,17 @@ Assignee: @williamstein
 
 CC:  @jasongrout
 
-
 ```
 sage: var('y')
 sage: plot3d(x^2*y,(-1,1),(-1,1))
 ```
 
-
 This takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do
-
 
 ```
 sage: var('y')
 sage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4065
 
@@ -123,7 +119,7 @@ I can't duplicate this on 3.1.2.rc0.
 archive/issue_comments_029276.json:
 ```json
 {
-    "body": "On bsd\n\n\n```\nsage: var('y')\ny\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.08 s, total: 0.24 s\nWall time: 0.78 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.14 s, sys: 0.06 s, total: 0.21 s\nWall time: 0.44 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.15 s, sys: 0.07 s, total: 0.22 s\nWall time: 0.48 s\n```\n",
+    "body": "On bsd\n\n```\nsage: var('y')\ny\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.08 s, total: 0.24 s\nWall time: 0.78 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.14 s, sys: 0.06 s, total: 0.21 s\nWall time: 0.44 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.15 s, sys: 0.07 s, total: 0.22 s\nWall time: 0.48 s\n```",
     "created_at": "2008-09-09T05:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
@@ -133,7 +129,6 @@ archive/issue_comments_029276.json:
 ```
 
 On bsd
-
 
 ```
 sage: var('y')
@@ -151,13 +146,12 @@ Wall time: 0.48 s
 
 
 
-
 ---
 
 archive/issue_comments_029277.json:
 ```json
 {
-    "body": "This is very strange to say the least:\n\n```\nsage: time p=plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\nCPU times: user 0.34 s, sys: 0.08 s, total: 0.42 s\nWall time: 3.07 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.06 s, total: 0.22 s\nWall time: 1.61 s\n```\n\nI must have started an old Sage. If someone can reproduce this with Sage 3.1.2.rc0 or later please give detailed information how to reproduce this. Fixed.\n\nCheers,\n\nMichael",
+    "body": "This is very strange to say the least:\n\n```\nsage: time p=plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\nCPU times: user 0.34 s, sys: 0.08 s, total: 0.42 s\nWall time: 3.07 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.06 s, total: 0.22 s\nWall time: 1.61 s\n```\nI must have started an old Sage. If someone can reproduce this with Sage 3.1.2.rc0 or later please give detailed information how to reproduce this. Fixed.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-09T05:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
@@ -176,7 +170,6 @@ sage: %time p = plot3d(x^2*y,(-1,1),(-1,1))
 CPU times: user 0.16 s, sys: 0.06 s, total: 0.22 s
 Wall time: 1.61 s
 ```
-
 I must have started an old Sage. If someone can reproduce this with Sage 3.1.2.rc0 or later please give detailed information how to reproduce this. Fixed.
 
 Cheers,
@@ -242,7 +235,7 @@ Resolution changed from fixed to
 archive/issue_comments_029280.json:
 ```json
 {
-    "body": "I just reproduced this problem on a freshly built 3.1.2.rc1, on OS X 10.5.4 intel macbook.  All I did was start sage in the terminal:\n\n\n```\nsage: version()\n'SAGE Version 3.1.2.rc1, Release Date: 2008-09-08'\nsage: var('y')\ny\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis is still going 5 minutes later.  There is a process called lisp.run eating up about 90% of my processor power, with memory usage steady around 17 MB.  The same thing happens in the notebook.  Pressinc ctrl-c gives\n\n\n```\nControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n\n\nWhich also seems to persist indefinitely.  I eventually killed things by closing the terminal window.\n\nHere's something else that takes virtually no time to run:\n\n\n```\nsage: plot3d(x^2*y,(x,-1,1),(y,-1,1))\n```\n\n\nBut these commands also run indefinitely\n\n\n```\nsage: plot3d(x + y,(-1,1),(-1,1))\nsage: plot3d(y*x,(-1,1),(-1,1))\n```\n",
+    "body": "I just reproduced this problem on a freshly built 3.1.2.rc1, on OS X 10.5.4 intel macbook.  All I did was start sage in the terminal:\n\n```\nsage: version()\n'SAGE Version 3.1.2.rc1, Release Date: 2008-09-08'\nsage: var('y')\ny\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\nThis is still going 5 minutes later.  There is a process called lisp.run eating up about 90% of my processor power, with memory usage steady around 17 MB.  The same thing happens in the notebook.  Pressinc ctrl-c gives\n\n```\nControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n\nWhich also seems to persist indefinitely.  I eventually killed things by closing the terminal window.\n\nHere's something else that takes virtually no time to run:\n\n```\nsage: plot3d(x^2*y,(x,-1,1),(y,-1,1))\n```\n\nBut these commands also run indefinitely\n\n```\nsage: plot3d(x + y,(-1,1),(-1,1))\nsage: plot3d(y*x,(-1,1),(-1,1))\n```",
     "created_at": "2008-09-09T20:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
@@ -253,7 +246,6 @@ archive/issue_comments_029280.json:
 
 I just reproduced this problem on a freshly built 3.1.2.rc1, on OS X 10.5.4 intel macbook.  All I did was start sage in the terminal:
 
-
 ```
 sage: version()
 'SAGE Version 3.1.2.rc1, Release Date: 2008-09-08'
@@ -262,33 +254,26 @@ y
 sage: plot3d(x^2*y,(-1,1),(-1,1))
 ```
 
-
 This is still going 5 minutes later.  There is a process called lisp.run eating up about 90% of my processor power, with memory usage steady around 17 MB.  The same thing happens in the notebook.  Pressinc ctrl-c gives
-
 
 ```
 Control-C pressed.  Interrupting Maxima. Please wait a few seconds...
 ```
 
-
 Which also seems to persist indefinitely.  I eventually killed things by closing the terminal window.
 
 Here's something else that takes virtually no time to run:
-
 
 ```
 sage: plot3d(x^2*y,(x,-1,1),(y,-1,1))
 ```
 
-
 But these commands also run indefinitely
-
 
 ```
 sage: plot3d(x + y,(-1,1),(-1,1))
 sage: plot3d(y*x,(-1,1),(-1,1))
 ```
-
 
 
 

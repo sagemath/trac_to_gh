@@ -3,7 +3,7 @@
 archive/issues_002339.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  bober mhampton @kcrisman\n\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\n\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober mhampton @kcrisman\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
     "created_at": "2008-02-28T02:36:46Z",
     "labels": [
         "component: graphics",
@@ -20,19 +20,16 @@ Assignee: @williamstein
 
 CC:  bober mhampton @kcrisman
 
-
 ```
 r(t) = 1000 * t * e^(-.5 * t)
 plot(r, xmin=0, xmax=20).show()
 ```
-
 
 doesn't work. But
 
 ```
 plot(r, (0,20)).show()
 ```
-
 does. The documentation still says
 
 ```
@@ -43,7 +40,6 @@ does. The documentation still says
         xmax -- ending x value
     [...]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2339
 
@@ -168,7 +164,7 @@ should fix the problem
 archive/issue_comments_015607.json:
 ```json
 {
-    "body": "Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by @jhpalmieri created at 2008-06-11 23:58:20\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
+    "body": "Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by @jhpalmieri created at 2008-06-11 23:58:20\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\nto\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```",
     "created_at": "2008-06-11T23:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -181,21 +177,17 @@ Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket233
 
 Looks okay to me, although I don't understand the purpose of the change from
 
-
 ```
 G = Graphics() 
 for i in range(0, len(funcs)): 
 ```
 
-
 to
-
 
 ```
 G = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) 
 for i in range(1, len(funcs)): 
 ```
-
 
 
 
@@ -224,7 +216,7 @@ There is probably a better systematic way of solving that problem but I don't ha
 archive/issue_comments_015609.json:
 ```json
 {
-    "body": "Hm. If I do:\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=10, xmax=20).show()\n```\n\nor (to make sure I didn't misunderstand \"greater than\" -1):\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=-2, xmax=20).show()\n```\n\nthen I seem to get the same behavior with or without this particular change in the code.\n\nI have two more questions: what should the following do?\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\n\nIt should probably print an error (since xmin > xmax), but right now I get a graph which is a bad approximation to \n\n```\nplot (r, xmin=-2, xmax=10).show()\n```\n\nIt's actually pretty strange looking...\n\nAlso, do you have any idea why, if I do\n\n```\nplot (r, xmin=5, xmax=20).show()\n```\n\nthen the vertical axis is the line x=5, not x=0?  When xmin is positive, I seem to get x=xmin as the vertical axis, which looks strange to me.  I guess the same happens if both xmin and xmax are negative: then x=xmax is drawn as the vertical axis.  (This is probably a completely separate issue, but I thought I'd ask.)",
+    "body": "Hm. If I do:\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=10, xmax=20).show()\n```\nor (to make sure I didn't misunderstand \"greater than\" -1):\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=-2, xmax=20).show()\n```\nthen I seem to get the same behavior with or without this particular change in the code.\n\nI have two more questions: what should the following do?\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\nIt should probably print an error (since xmin > xmax), but right now I get a graph which is a bad approximation to \n\n```\nplot (r, xmin=-2, xmax=10).show()\n```\nIt's actually pretty strange looking...\n\nAlso, do you have any idea why, if I do\n\n```\nplot (r, xmin=5, xmax=20).show()\n```\nthen the vertical axis is the line x=5, not x=0?  When xmin is positive, I seem to get x=xmin as the vertical axis, which looks strange to me.  I guess the same happens if both xmin and xmax are negative: then x=xmax is drawn as the vertical axis.  (This is probably a completely separate issue, but I thought I'd ask.)",
     "created_at": "2008-06-12T15:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -239,14 +231,12 @@ Hm. If I do:
 sage: r(t) = 1000 * t * e^(-0.5*t)
 sage: plot(r, xmin=10, xmax=20).show()
 ```
-
 or (to make sure I didn't misunderstand "greater than" -1):
 
 ```
 sage: r(t) = 1000 * t * e^(-0.5*t)
 sage: plot(r, xmin=-2, xmax=20).show()
 ```
-
 then I seem to get the same behavior with or without this particular change in the code.
 
 I have two more questions: what should the following do?
@@ -254,13 +244,11 @@ I have two more questions: what should the following do?
 ```
 plot (r, xmin=10, xmax=-2).show()
 ```
-
 It should probably print an error (since xmin > xmax), but right now I get a graph which is a bad approximation to 
 
 ```
 plot (r, xmin=-2, xmax=10).show()
 ```
-
 It's actually pretty strange looking...
 
 Also, do you have any idea why, if I do
@@ -268,7 +256,6 @@ Also, do you have any idea why, if I do
 ```
 plot (r, xmin=5, xmax=20).show()
 ```
-
 then the vertical axis is the line x=5, not x=0?  When xmin is positive, I seem to get x=xmin as the vertical axis, which looks strange to me.  I guess the same happens if both xmin and xmax are negative: then x=xmax is drawn as the vertical axis.  (This is probably a completely separate issue, but I thought I'd ask.)
 
 
@@ -314,7 +301,7 @@ This seems correct except for an error check, can we get a patch?
 archive/issue_comments_015612.json:
 ```json
 {
-    "body": "Here's a new version of the patch.  This (I hope) takes the arguments called xmin and xmax, and sets xmin to be the smaller of the two, xmax to be the larger.  This should fix the strange plots that commands like\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\n\nwere giving, as I mentioned above.",
+    "body": "Here's a new version of the patch.  This (I hope) takes the arguments called xmin and xmax, and sets xmin to be the smaller of the two, xmax to be the larger.  This should fix the strange plots that commands like\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\nwere giving, as I mentioned above.",
     "created_at": "2008-07-08T19:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -328,7 +315,6 @@ Here's a new version of the patch.  This (I hope) takes the arguments called xmi
 ```
 plot (r, xmin=10, xmax=-2).show()
 ```
-
 were giving, as I mentioned above.
 
 
@@ -414,7 +400,7 @@ Can I give a positive review to mhampton's contribution, and vice versa?
 archive/issue_comments_015617.json:
 ```json
 {
-    "body": "Replying to [comment:13 jhpalmieri]:\n> Can I give a positive review to mhampton's contribution, and vice versa?\n> \n\nYes, that is perfectly fine.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Can I give a positive review to mhampton's contribution, and vice versa?\n> \n\n\nYes, that is perfectly fine.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-16T01:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -426,6 +412,7 @@ archive/issue_comments_015617.json:
 Replying to [comment:13 jhpalmieri]:
 > Can I give a positive review to mhampton's contribution, and vice versa?
 > 
+
 
 Yes, that is perfectly fine.
 
@@ -458,7 +445,7 @@ My apologies, I should have positively reviewed this before.  Now I think the pa
 archive/issue_comments_015619.json:
 ```json
 {
-    "body": "File 2339-3.2.alpha0.patch is rebased patch against 3.2.alpha0.   As JHP says, please give credit to Marshall.\n\nInterestingly, all the plot improvements as of late have already fixed both the Graphics initialization problem of [-1,1] and the problem if you get the range in backwards, i.e. all of the following work with this patch:\n\n```\nplot(r, xmin=10, xmax=-2).show()\nplot(r, 10,-2).show()\nplot(r, (10,-2)).show()\n```\n",
+    "body": "File 2339-3.2.alpha0.patch is rebased patch against 3.2.alpha0.   As JHP says, please give credit to Marshall.\n\nInterestingly, all the plot improvements as of late have already fixed both the Graphics initialization problem of [-1,1] and the problem if you get the range in backwards, i.e. all of the following work with this patch:\n\n```\nplot(r, xmin=10, xmax=-2).show()\nplot(r, 10,-2).show()\nplot(r, (10,-2)).show()\n```",
     "created_at": "2008-10-21T18:19:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -476,7 +463,6 @@ plot(r, xmin=10, xmax=-2).show()
 plot(r, 10,-2).show()
 plot(r, (10,-2)).show()
 ```
-
 
 
 

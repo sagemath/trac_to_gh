@@ -3,7 +3,7 @@
 archive/issues_006907.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
     "created_at": "2009-09-09T02:42:38Z",
     "labels": [
         "component: graphics",
@@ -31,7 +31,6 @@ future release of Sage; you can use named arguments instead, like
 EXPR(x=..., y=...)
   k, _ = adapt_to_callable([f], 2)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6907
 
@@ -80,7 +79,7 @@ Can you give us the command you used?  It's likely that the command you used is 
 archive/issue_comments_056953.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> Can you give us the command you used?\n\nAt the time, every implicit_plot() command was doing this for me.\n\nTo be honest I had forgotten about this. It looks like it was an internal command that hadn't yet been brought up to the new format, because it works fine now. The ticket should be closed.",
+    "body": "Replying to [comment:1 jason]:\n> Can you give us the command you used?\n\n\nAt the time, every implicit_plot() command was doing this for me.\n\nTo be honest I had forgotten about this. It looks like it was an internal command that hadn't yet been brought up to the new format, because it works fine now. The ticket should be closed.",
     "created_at": "2010-01-20T14:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
@@ -91,6 +90,7 @@ archive/issue_comments_056953.json:
 
 Replying to [comment:1 jason]:
 > Can you give us the command you used?
+
 
 At the time, every implicit_plot() command was doing this for me.
 
@@ -103,7 +103,7 @@ To be honest I had forgotten about this. It looks like it was an internal comman
 archive/issue_comments_056954.json:
 ```json
 {
-    "body": "Replying to [comment:2 john_perry]:\n> ...it works fine now. The ticket should be closed.\n\nThat's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.",
+    "body": "Replying to [comment:2 john_perry]:\n> ...it works fine now. The ticket should be closed.\n\n\nThat's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.",
     "created_at": "2010-01-20T14:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
@@ -114,6 +114,7 @@ archive/issue_comments_056954.json:
 
 Replying to [comment:2 john_perry]:
 > ...it works fine now. The ticket should be closed.
+
 
 That's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.
 

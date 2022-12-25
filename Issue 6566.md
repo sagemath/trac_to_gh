@@ -42,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6566
 archive/issue_comments_053460.json:
 ```json
 {
-    "body": "As far as I can tell, these have been implemented since forever. For example: \n\n\n```\nsage: S = AlphabeticStrings()\nsage: H = HillCryptosystem(S,3)\nsage: H.key_space()\nFull MatrixSpace of 3 by 3 dense matrices over Ring of integers modulo 26\n```\n    \n\nSimilar results can be produced for all other ciphers mentioned. This is either inherited from SymmetricKeyCryptosystem or is overridden in the init methods.",
+    "body": "As far as I can tell, these have been implemented since forever. For example: \n\n```\nsage: S = AlphabeticStrings()\nsage: H = HillCryptosystem(S,3)\nsage: H.key_space()\nFull MatrixSpace of 3 by 3 dense matrices over Ring of integers modulo 26\n```    \n\nSimilar results can be produced for all other ciphers mentioned. This is either inherited from SymmetricKeyCryptosystem or is overridden in the init methods.",
     "created_at": "2012-12-16T13:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6566",
     "type": "issue_comment",
@@ -53,14 +53,12 @@ archive/issue_comments_053460.json:
 
 As far as I can tell, these have been implemented since forever. For example: 
 
-
 ```
 sage: S = AlphabeticStrings()
 sage: H = HillCryptosystem(S,3)
 sage: H.key_space()
 Full MatrixSpace of 3 by 3 dense matrices over Ring of integers modulo 26
-```
-    
+```    
 
 Similar results can be produced for all other ciphers mentioned. This is either inherited from SymmetricKeyCryptosystem or is overridden in the init methods.
 
@@ -260,7 +258,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053463.json:
 ```json
 {
-    "body": "I marked this as wont fix because it's implemented at least as of 6.4. In 6.7 The following works\n\n\n```\n    sage: S = HillCryptosystem(AlphabeticStrings(),3)\n    sage: S.key_space()\n    Full MatrixSpace of 3 by 3 dense matrices over Ring of integers modulo 26\n\n    sage: S = SubstitutionCryptosystem(AlphabeticStrings())\n    sage: S.key_space()\n    Free alphabetic string monoid on A-Z\n\n    sage: S = TranspositionCryptosystem(AlphabeticStrings(),2)\n    sage: S.key_space()\n    Symmetric group of order 2! as a permutation group\n\n    sage: S = VigenereCryptosystem(AlphabeticStrings(), 2)\n    sage: S.key_space()\n    Free alphabetic string monoid on A-Z\n```\n",
+    "body": "I marked this as wont fix because it's implemented at least as of 6.4. In 6.7 The following works\n\n```\n    sage: S = HillCryptosystem(AlphabeticStrings(),3)\n    sage: S.key_space()\n    Full MatrixSpace of 3 by 3 dense matrices over Ring of integers modulo 26\n\n    sage: S = SubstitutionCryptosystem(AlphabeticStrings())\n    sage: S.key_space()\n    Free alphabetic string monoid on A-Z\n\n    sage: S = TranspositionCryptosystem(AlphabeticStrings(),2)\n    sage: S.key_space()\n    Symmetric group of order 2! as a permutation group\n\n    sage: S = VigenereCryptosystem(AlphabeticStrings(), 2)\n    sage: S.key_space()\n    Free alphabetic string monoid on A-Z\n```",
     "created_at": "2015-05-26T18:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6566",
     "type": "issue_comment",
@@ -270,7 +268,6 @@ archive/issue_comments_053463.json:
 ```
 
 I marked this as wont fix because it's implemented at least as of 6.4. In 6.7 The following works
-
 
 ```
     sage: S = HillCryptosystem(AlphabeticStrings(),3)
@@ -289,7 +286,6 @@ I marked this as wont fix because it's implemented at least as of 6.4. In 6.7 Th
     sage: S.key_space()
     Free alphabetic string monoid on A-Z
 ```
-
 
 
 

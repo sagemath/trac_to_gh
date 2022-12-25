@@ -319,7 +319,7 @@ Merged in this order:
 archive/issue_comments_071051.json:
 ```json
 {
-    "body": "Replying to [comment:7 rbeezer]:\n> Ross,\n> \n> Thanks for the enthusiastic review!  I've included you as a cc on #8147 that will expand the material on Mercurial queues at the end.\n> \n> Rob\n> \nNo probs Rob :-)",
+    "body": "Replying to [comment:7 rbeezer]:\n> Ross,\n> \n> Thanks for the enthusiastic review!  I've included you as a cc on #8147 that will expand the material on Mercurial queues at the end.\n> \n> Rob\n> \n\nNo probs Rob :-)",
     "created_at": "2010-02-02T10:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
@@ -335,6 +335,7 @@ Replying to [comment:7 rbeezer]:
 > 
 > Rob
 > 
+
 No probs Rob :-)
 
 
@@ -362,7 +363,7 @@ Thanks to all for this and subsequent patches. It's a great improvement from wha
 archive/issue_comments_071053.json:
 ```json
 {
-    "body": "Replying to [comment:10 pdehaye]:\n> Thanks to all for this and subsequent patches.\n\npdehaye - thanks for the feedback.  I'm sitting on a pile of further suggestions for refinements, which I should whip into shape soon.\n\nRob",
+    "body": "Replying to [comment:10 pdehaye]:\n> Thanks to all for this and subsequent patches.\n\n\npdehaye - thanks for the feedback.  I'm sitting on a pile of further suggestions for refinements, which I should whip into shape soon.\n\nRob",
     "created_at": "2011-06-01T06:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
@@ -373,6 +374,7 @@ archive/issue_comments_071053.json:
 
 Replying to [comment:10 pdehaye]:
 > Thanks to all for this and subsequent patches.
+
 
 pdehaye - thanks for the feedback.  I'm sitting on a pile of further suggestions for refinements, which I should whip into shape soon.
 

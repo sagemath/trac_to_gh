@@ -106,7 +106,7 @@ Changing status from new to assigned.
 archive/issue_comments_036237.json:
 ```json
 {
-    "body": "Example:\n\n```\nsage: a = matrix(RDF,4,[1..16])*1.293949599304953485; a\n[ 1.2939495993 2.58789919861 3.88184879791 5.17579839722]\n[6.46974799652 7.76369759583 9.05764719513 10.3515967944]\n[11.6455463937  12.939495993 14.2334455924 15.5273951917]\n[ 16.821344791 18.1152943903 19.4092439896 20.7031935889]\nsage: a.kernel()\nVector space of degree 4 and dimension 0 over Real Double Field\nBasis matrix:\n[]\n```\n\nDefine this from the email linked to above:\n\n```\nimport scipy\nimport scipy.linalg\n\ndef null(A, eps=1e-15):\n    \"\"\"\n    computes the null space of the real matrix A\n    \"\"\"\n    n, m = scipy.shape(A)\n    if n > m :\n        return scipy.transpose(null(scipy.transpose(A), eps))\n        return null(scipy.transpose(A), eps)\n    u, s, vh = scipy.linalg.svd(A)\n    s=scipy.append(s,scipy.zeros(m))[0:m]\n    null_mask = (s <= eps)\n    null_space = scipy.compress(null_mask, vh, axis=0)\n    return scipy.transpose(null_space)\n```\n\n\nThen:\n\n\n```\nsage: null(a.numpy(),eps=1e-13)\narray([[-0.29797676,  0.45957573],\n       [ 0.73984987, -0.39066887],\n       [-0.58576946, -0.59738944],\n       [ 0.14389635,  0.52848258]])\n```\n",
+    "body": "Example:\n\n```\nsage: a = matrix(RDF,4,[1..16])*1.293949599304953485; a\n[ 1.2939495993 2.58789919861 3.88184879791 5.17579839722]\n[6.46974799652 7.76369759583 9.05764719513 10.3515967944]\n[11.6455463937  12.939495993 14.2334455924 15.5273951917]\n[ 16.821344791 18.1152943903 19.4092439896 20.7031935889]\nsage: a.kernel()\nVector space of degree 4 and dimension 0 over Real Double Field\nBasis matrix:\n[]\n```\nDefine this from the email linked to above:\n\n```\nimport scipy\nimport scipy.linalg\n\ndef null(A, eps=1e-15):\n    \"\"\"\n    computes the null space of the real matrix A\n    \"\"\"\n    n, m = scipy.shape(A)\n    if n > m :\n        return scipy.transpose(null(scipy.transpose(A), eps))\n        return null(scipy.transpose(A), eps)\n    u, s, vh = scipy.linalg.svd(A)\n    s=scipy.append(s,scipy.zeros(m))[0:m]\n    null_mask = (s <= eps)\n    null_space = scipy.compress(null_mask, vh, axis=0)\n    return scipy.transpose(null_space)\n```\n\nThen:\n\n```\nsage: null(a.numpy(),eps=1e-13)\narray([[-0.29797676,  0.45957573],\n       [ 0.73984987, -0.39066887],\n       [-0.58576946, -0.59738944],\n       [ 0.14389635,  0.52848258]])\n```",
     "created_at": "2009-12-11T23:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4789",
     "type": "issue_comment",
@@ -128,7 +128,6 @@ Vector space of degree 4 and dimension 0 over Real Double Field
 Basis matrix:
 []
 ```
-
 Define this from the email linked to above:
 
 ```
@@ -150,9 +149,7 @@ def null(A, eps=1e-15):
     return scipy.transpose(null_space)
 ```
 
-
 Then:
-
 
 ```
 sage: null(a.numpy(),eps=1e-13)
@@ -161,7 +158,6 @@ array([[-0.29797676,  0.45957573],
        [-0.58576946, -0.59738944],
        [ 0.14389635,  0.52848258]])
 ```
-
 
 
 

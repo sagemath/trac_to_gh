@@ -3,7 +3,7 @@
 archive/issues_007732.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nFigure out what these binary files are and if we can remove them:\n\n```\n         ecl-9.10.2-20091105cvs.p0/src/contrib/encodings/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7732\n\n",
+    "body": "Assignee: tbd\n\nFigure out what these binary files are and if we can remove them:\n\n```\n         ecl-9.10.2-20091105cvs.p0/src/contrib/encodings/\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7732\n\n",
     "created_at": "2009-12-18T06:19:16Z",
     "labels": [
         "component: distribution",
@@ -24,7 +24,6 @@ Figure out what these binary files are and if we can remove them:
          ecl-9.10.2-20091105cvs.p0/src/contrib/encodings/
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7732
 
 
@@ -36,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7732
 archive/issue_comments_066317.json:
 ```json
 {
-    "body": "The author of ECL remarks:\n\n```\nDear William,\n\nthe encodings directory contains files which are needed by ECL to understand files in other formats -- windows encodings, japanese, russian, etc. It only works if you build ECL with support for Unicode (--enable-unicode)\n\nJuanjo\n```\n",
+    "body": "The author of ECL remarks:\n\n```\nDear William,\n\nthe encodings directory contains files which are needed by ECL to understand files in other formats -- windows encodings, japanese, russian, etc. It only works if you build ECL with support for Unicode (--enable-unicode)\n\nJuanjo\n```",
     "created_at": "2009-12-18T06:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
@@ -57,13 +56,12 @@ Juanjo
 
 
 
-
 ---
 
 archive/issue_comments_066318.json:
 ```json
 {
-    "body": "More readable version:\n\n```\nDear William,\n\nthe encodings directory contains files which are needed by ECL to understand files in\n other formats -- windows encodings, japanese, russian, etc. It only works if you \nbuild ECL with support for Unicode (--enable-unicode)\n\nJuanjo\n```\n",
+    "body": "More readable version:\n\n```\nDear William,\n\nthe encodings directory contains files which are needed by ECL to understand files in\n other formats -- windows encodings, japanese, russian, etc. It only works if you \nbuild ECL with support for Unicode (--enable-unicode)\n\nJuanjo\n```",
     "created_at": "2009-12-18T06:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
@@ -83,7 +81,6 @@ build ECL with support for Unicode (--enable-unicode)
 
 Juanjo
 ```
-
 
 
 

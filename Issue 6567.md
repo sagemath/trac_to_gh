@@ -70,7 +70,7 @@ Changing status from new to needs_review.
 archive/issue_comments_053467.json:
 ```json
 {
-    "body": "There is a problem in the docstring:\n\n\n```\nTraceback (most recent call last):\n  File \"/dev/shm/sage_testdir/integer_mod_10415.py\", line 3096, in <module>\n    runner=runner)\n  File \"/dev/shm/sage/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 628, in _parse_example\n    self._check_prompt_blank(source_lines, indent, name, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 715, in _check_prompt_blank\n    line[indent:indent+3], line))\nValueError: line 27 of the docstring for __main__.example_32 lacks blank after ...: '            ....:     for k in range(Integer(1),Integer(4)):'\n```\n",
+    "body": "There is a problem in the docstring:\n\n```\nTraceback (most recent call last):\n  File \"/dev/shm/sage_testdir/integer_mod_10415.py\", line 3096, in <module>\n    runner=runner)\n  File \"/dev/shm/sage/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 628, in _parse_example\n    self._check_prompt_blank(source_lines, indent, name, lineno)\n  File \"/dev/shm/sage/local/bin/ncadoctest.py\", line 715, in _check_prompt_blank\n    line[indent:indent+3], line))\nValueError: line 27 of the docstring for __main__.example_32 lacks blank after ...: '            ....:     for k in range(Integer(1),Integer(4)):'\n```",
     "created_at": "2012-11-18T20:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
@@ -80,7 +80,6 @@ archive/issue_comments_053467.json:
 ```
 
 There is a problem in the docstring:
-
 
 ```
 Traceback (most recent call last):
@@ -110,7 +109,6 @@ Traceback (most recent call last):
     line[indent:indent+3], line))
 ValueError: line 27 of the docstring for __main__.example_32 lacks blank after ...: '            ....:     for k in range(Integer(1),Integer(4)):'
 ```
-
 
 
 
@@ -173,7 +171,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_053471.json:
 ```json
 {
-    "body": "\n```\n# self**(p**k*(p-1)//q) = 1 for some q \n```\n\nShould that be `k-1`?  I'd also put it \"# now self...\" just to make it clear\n\nEverything else looks nice.  I feel like I want to check the logic for numbers divisible by 2, 3, or 5 but where start > 5 a little more closely (getting late here) but if someone else does that first that is fine.",
+    "body": "```\n# self**(p**k*(p-1)//q) = 1 for some q \n```\nShould that be `k-1`?  I'd also put it \"# now self...\" just to make it clear\n\nEverything else looks nice.  I feel like I want to check the logic for numbers divisible by 2, 3, or 5 but where start > 5 a little more closely (getting late here) but if someone else does that first that is fine.",
     "created_at": "2013-02-27T04:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
@@ -182,11 +180,9 @@ archive/issue_comments_053471.json:
 }
 ```
 
-
 ```
 # self**(p**k*(p-1)//q) = 1 for some q 
 ```
-
 Should that be `k-1`?  I'd also put it "# now self..." just to make it clear
 
 Everything else looks nice.  I feel like I want to check the logic for numbers divisible by 2, 3, or 5 but where start > 5 a little more closely (getting late here) but if someone else does that first that is fine.
@@ -254,7 +250,7 @@ Fixes single line in self.is_primitive_root() to make compatible with new 12116.
 archive/issue_comments_053475.json:
 ```json
 {
-    "body": "Patch applies, but with the (proposed) change to #12116 - swapping the order integers returned by `perfect_power()` so that `(a^b).perfect_power()` returns `(a,b)` and not `(b,a)` - the code breaks on perfect powers or twice perfect powers. A simple single line change fixes this; I've uploaded a new patch with this fix. Line 1485 goes from\n\n```\nk, p = odd.perfect_power() \n```\n\nto\n\n```\np, k = odd.perfect_power() \n```\n\nEverything else is good.",
+    "body": "Patch applies, but with the (proposed) change to #12116 - swapping the order integers returned by `perfect_power()` so that `(a^b).perfect_power()` returns `(a,b)` and not `(b,a)` - the code breaks on perfect powers or twice perfect powers. A simple single line change fixes this; I've uploaded a new patch with this fix. Line 1485 goes from\n\n```\nk, p = odd.perfect_power() \n```\nto\n\n```\np, k = odd.perfect_power() \n```\nEverything else is good.",
     "created_at": "2013-02-28T23:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6567",
     "type": "issue_comment",
@@ -268,13 +264,11 @@ Patch applies, but with the (proposed) change to #12116 - swapping the order int
 ```
 k, p = odd.perfect_power() 
 ```
-
 to
 
 ```
 p, k = odd.perfect_power() 
 ```
-
 Everything else is good.
 
 

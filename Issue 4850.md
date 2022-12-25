@@ -3,7 +3,7 @@
 archive/issues_004850.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: power_mod(11,1,7)\n11\nsage: mod(11^1,7)\n4\nsage: # Hmmm...???\nsage:\n\n...al\n```\n\n\nNote above that power_mod(11,1,7) should return 4.  The fix is to look at the *pure python* code that defines power_mod in rings/arith.py and:\n\n1. change it to use some much more intelligent compiled code, i.e., either the powermod or powermod_ui methods when the first input coerces to ZZ, and\n\n2. when a doesn't coerce to ZZ, just revert to the existing Python code, but make sure to throw in an `%m` somewhere before returning the answer. \n\n3. Add a doctest like this that illustrates non-integer input for the first argument to power_mod:\n\n```\nsage: power_mod(3*x, 10, 7)\n4*x^10\n```\n\n\n4. There is an inconsistency in that the Integer method for power_mod is called \"powermod\" instead of \"power_mod\".  I think the Integer method should be changed, for consistency with the naming conventions used throughout sage (namely, be generous with underscores). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4850\n\n",
+    "body": "Assignee: somebody\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: power_mod(11,1,7)\n11\nsage: mod(11^1,7)\n4\nsage: # Hmmm...???\nsage:\n\n...al\n```\n\nNote above that power_mod(11,1,7) should return 4.  The fix is to look at the *pure python* code that defines power_mod in rings/arith.py and:\n\n1. change it to use some much more intelligent compiled code, i.e., either the powermod or powermod_ui methods when the first input coerces to ZZ, and\n\n2. when a doesn't coerce to ZZ, just revert to the existing Python code, but make sure to throw in an `%m` somewhere before returning the answer. \n\n3. Add a doctest like this that illustrates non-integer input for the first argument to power_mod:\n\n```\nsage: power_mod(3*x, 10, 7)\n4*x^10\n```\n\n4. There is an inconsistency in that the Integer method for power_mod is called \"powermod\" instead of \"power_mod\".  I think the Integer method should be changed, for consistency with the naming conventions used throughout sage (namely, be generous with underscores). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4850\n\n",
     "created_at": "2008-12-22T04:21:59Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_004850.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 ----------------------------------------------------------------------
@@ -34,7 +33,6 @@ sage:
 ...al
 ```
 
-
 Note above that power_mod(11,1,7) should return 4.  The fix is to look at the *pure python* code that defines power_mod in rings/arith.py and:
 
 1. change it to use some much more intelligent compiled code, i.e., either the powermod or powermod_ui methods when the first input coerces to ZZ, and
@@ -47,7 +45,6 @@ Note above that power_mod(11,1,7) should return 4.  The fix is to look at the *p
 sage: power_mod(3*x, 10, 7)
 4*x^10
 ```
-
 
 4. There is an inconsistency in that the Integer method for power_mod is called "powermod" instead of "power_mod".  I think the Integer method should be changed, for consistency with the naming conventions used throughout sage (namely, be generous with underscores). 
 
@@ -62,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4850
 archive/issue_comments_036702.json:
 ```json
 {
-    "body": "I suggest we remove the `power_mod` function completely, since python already supports this.\n\n\n```\nsage: pow?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in function pow>\nNamespace:      Python builtin\nDocstring:\n    pow(x, y[, z]) -> number\n    \n    With two arguments, equivalent to x**y.  With three arguments,\n    equivalent to (x**y) % z, but may be more efficient (e.g. for longs).\nClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n```\n\n\nThis would call the `__pow__` method of the function in question with the right arguments, so we can handle the modulo powering operation in the right place. Recall that the signature of the `__pow__` method is actually:\n\n\n```\n__pow__(self, other[, modulus]).\n```\n\n\n\nSo the objective of this ticket should be changed to:\n* let `sage.structure.element.generic_power_c` handle modulus arguments\n* change the `__pow__` methods in sage.structure.element to accept and pass on the third argument\n* deprecate `sage.rings.arith.power_mod`\n* deprecate `Integer.powermod`\n\nThoughts?",
+    "body": "I suggest we remove the `power_mod` function completely, since python already supports this.\n\n```\nsage: pow?\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in function pow>\nNamespace:      Python builtin\nDocstring:\n    pow(x, y[, z]) -> number\n    \n    With two arguments, equivalent to x**y.  With three arguments,\n    equivalent to (x**y) % z, but may be more efficient (e.g. for longs).\nClass Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n```\n\nThis would call the `__pow__` method of the function in question with the right arguments, so we can handle the modulo powering operation in the right place. Recall that the signature of the `__pow__` method is actually:\n\n```\n__pow__(self, other[, modulus]).\n```\n\n\nSo the objective of this ticket should be changed to:\n* let `sage.structure.element.generic_power_c` handle modulus arguments\n* change the `__pow__` methods in sage.structure.element to accept and pass on the third argument\n* deprecate `sage.rings.arith.power_mod`\n* deprecate `Integer.powermod`\n\nThoughts?",
     "created_at": "2008-12-23T12:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4850",
     "type": "issue_comment",
@@ -72,7 +69,6 @@ archive/issue_comments_036702.json:
 ```
 
 I suggest we remove the `power_mod` function completely, since python already supports this.
-
 
 ```
 sage: pow?
@@ -89,14 +85,11 @@ Class Docstring:
     <attribute '__doc__' of 'builtin_function_or_method' objects>
 ```
 
-
 This would call the `__pow__` method of the function in question with the right arguments, so we can handle the modulo powering operation in the right place. Recall that the signature of the `__pow__` method is actually:
-
 
 ```
 __pow__(self, other[, modulus]).
 ```
-
 
 
 So the objective of this ticket should be changed to:

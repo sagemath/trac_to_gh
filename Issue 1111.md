@@ -3,7 +3,7 @@
 archive/issues_001111.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
     "created_at": "2007-11-06T05:25:35Z",
     "labels": [
         "component: calculus"
@@ -17,13 +17,11 @@ archive/issues_001111.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: eqn.expand() # does it to both sides
 sage: eqn.expand('right') # does it to the right
 sage: eqn.expand('left') # does it to the right
 ```
-
 
 See the sage-devel thread Enhancing the SymbolicEquation class
 

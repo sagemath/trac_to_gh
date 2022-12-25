@@ -488,7 +488,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081712.json:
 ```json
 {
-    "body": "Replying to [comment:12 jdemeyer]:\n> Any complaints if I execute the script [attachment:8898.sh] instead of applying the patch?  The script also fixes some more files.\n\nNo complaints here. As I initially said my main concern are the cython files.\nI'll be happy if a fix goes in script or patch.",
+    "body": "Replying to [comment:12 jdemeyer]:\n> Any complaints if I execute the script [attachment:8898.sh] instead of applying the patch?  The script also fixes some more files.\n\n\nNo complaints here. As I initially said my main concern are the cython files.\nI'll be happy if a fix goes in script or patch.",
     "created_at": "2010-11-13T17:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
@@ -499,6 +499,7 @@ archive/issue_comments_081712.json:
 
 Replying to [comment:12 jdemeyer]:
 > Any complaints if I execute the script [attachment:8898.sh] instead of applying the patch?  The script also fixes some more files.
+
 
 No complaints here. As I initially said my main concern are the cython files.
 I'll be happy if a fix goes in script or patch.
@@ -566,7 +567,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081716.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Fran\u00e7ois, I am interpreting your post as a positive review, okay?\n\nOK, the build finished successfully, so yes positive review.",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Fran\u00e7ois, I am interpreting your post as a positive review, okay?\n\n\nOK, the build finished successfully, so yes positive review.",
     "created_at": "2010-11-14T18:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
@@ -577,6 +578,7 @@ archive/issue_comments_081716.json:
 
 Replying to [comment:15 jdemeyer]:
 > François, I am interpreting your post as a positive review, okay?
+
 
 OK, the build finished successfully, so yes positive review.
 

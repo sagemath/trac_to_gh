@@ -92,7 +92,7 @@ Changing component from doctest to documentation.
 archive/issue_comments_031127.json:
 ```json
 {
-    "body": "Files already included in the documentation are \n\n```\nUpdating 'sage.structure.element.tex'\nUpdating 'sage.structure.factorization.tex'\nUpdating 'sage.structure.formal-sum.tex'\nUpdating 'sage.structure.mutability.tex'\nUpdating 'sage.structure.parent-gens.tex'\nUpdating 'sage.structure.sage-object.tex'\nUpdating 'sage.structure.sequence.tex'\n```\n",
+    "body": "Files already included in the documentation are \n\n```\nUpdating 'sage.structure.element.tex'\nUpdating 'sage.structure.factorization.tex'\nUpdating 'sage.structure.formal-sum.tex'\nUpdating 'sage.structure.mutability.tex'\nUpdating 'sage.structure.parent-gens.tex'\nUpdating 'sage.structure.sage-object.tex'\nUpdating 'sage.structure.sequence.tex'\n```",
     "created_at": "2008-10-14T12:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4272",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ Updating 'sage.structure.parent-gens.tex'
 Updating 'sage.structure.sage-object.tex'
 Updating 'sage.structure.sequence.tex'
 ```
-
 
 
 

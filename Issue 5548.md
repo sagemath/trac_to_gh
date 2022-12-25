@@ -3,7 +3,7 @@
 archive/issues_005548.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @burcin @jdemeyer\n\n\n```\nteragon:algebras wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(ZZ,16,4)\nsage: a._hnf_mod(100)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5548\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @jdemeyer\n\n```\nteragon:algebras wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(ZZ,16,4)\nsage: a._hnf_mod(100)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5548\n\n",
     "created_at": "2009-03-17T11:53:49Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +19,6 @@ archive/issues_005548.json:
 Assignee: @williamstein
 
 CC:  @burcin @jdemeyer
-
 
 ```
 teragon:algebras wstein$ sage
@@ -39,7 +38,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5548
 
@@ -347,7 +345,7 @@ Shouldn't the added doctest block start with a `TEST::` block header?
 archive/issue_comments_043076.json:
 ```json
 {
-    "body": "Replying to [comment:13 slelievre]:\n> Shouldn't the added doctest block start with a `TEST::` block header?\n\nI believe that a line ending in `::` signifies the code following it is a doctest, it doesn't necessarily need to be `TEST::`. There are a few exceptions, like how `MATH::` indicates latex, but there are many doctests that say something like \"This fixes trac X::\", followed by a doctest.",
+    "body": "Replying to [comment:13 slelievre]:\n> Shouldn't the added doctest block start with a `TEST::` block header?\n\n\nI believe that a line ending in `::` signifies the code following it is a doctest, it doesn't necessarily need to be `TEST::`. There are a few exceptions, like how `MATH::` indicates latex, but there are many doctests that say something like \"This fixes trac X::\", followed by a doctest.",
     "created_at": "2019-05-25T15:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
@@ -359,6 +357,7 @@ archive/issue_comments_043076.json:
 Replying to [comment:13 slelievre]:
 > Shouldn't the added doctest block start with a `TEST::` block header?
 
+
 I believe that a line ending in `::` signifies the code following it is a doctest, it doesn't necessarily need to be `TEST::`. There are a few exceptions, like how `MATH::` indicates latex, but there are many doctests that say something like "This fixes trac X::", followed by a doctest.
 
 
@@ -368,7 +367,7 @@ I believe that a line ending in `::` signifies the code following it is a doctes
 archive/issue_comments_043077.json:
 ```json
 {
-    "body": "Although the code does get tested even without a TEST header, my understanding of the\n[documentation strings section](http://doc.sagemath.org/html/en/developer/coding_basics.html#documentation-strings)\nof Sage's [coding basics](http://doc.sagemath.org/html/en/developer/coding_basics.html)\nis that testable examples in docstrings are usually placed inside \"TEST\" or \"TESTS\"\nor \"EXAMPLE\" or \"EXAMPLES\" blocks, which can go either\n\n```\nTESTS::\n\n    sage: 1 + 1\n    2\n    sage: 1 + 2\n    3\n```\n\nor\n\n```\nTESTS:\n\nWe test that one plus one is two::\n\n    sage: 1 + 1\n    2\n\nWe test that one plus two is three::\n\n    sage: 1 + 2\n    3\n```\n\n(or similarly for TEST, EXAMPLE, EXAMPLES).\n\nIn addition, TEST and TESTS sections being meant more for developers\nthan users, they get removed when building the documentation, unless\none sets a dedicate environment variable:\n\n```\nSAGE_DOCBUILD_OPTS=\"--include-tests-blocks\"\n```\n\nto keep them in.\n\nAre there any doctests in docstrings elsewhere in the Sage sources that are\nnot introduced by an EXAMPLE, EXAMPLES, TEST or TESTS header?",
+    "body": "Although the code does get tested even without a TEST header, my understanding of the\n[documentation strings section](http://doc.sagemath.org/html/en/developer/coding_basics.html#documentation-strings)\nof Sage's [coding basics](http://doc.sagemath.org/html/en/developer/coding_basics.html)\nis that testable examples in docstrings are usually placed inside \"TEST\" or \"TESTS\"\nor \"EXAMPLE\" or \"EXAMPLES\" blocks, which can go either\n\n```\nTESTS::\n\n    sage: 1 + 1\n    2\n    sage: 1 + 2\n    3\n```\nor\n\n```\nTESTS:\n\nWe test that one plus one is two::\n\n    sage: 1 + 1\n    2\n\nWe test that one plus two is three::\n\n    sage: 1 + 2\n    3\n```\n(or similarly for TEST, EXAMPLE, EXAMPLES).\n\nIn addition, TEST and TESTS sections being meant more for developers\nthan users, they get removed when building the documentation, unless\none sets a dedicate environment variable:\n\n```\nSAGE_DOCBUILD_OPTS=\"--include-tests-blocks\"\n```\nto keep them in.\n\nAre there any doctests in docstrings elsewhere in the Sage sources that are\nnot introduced by an EXAMPLE, EXAMPLES, TEST or TESTS header?",
     "created_at": "2019-05-27T00:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5548",
     "type": "issue_comment",
@@ -391,7 +390,6 @@ TESTS::
     sage: 1 + 2
     3
 ```
-
 or
 
 ```
@@ -407,7 +405,6 @@ We test that one plus two is three::
     sage: 1 + 2
     3
 ```
-
 (or similarly for TEST, EXAMPLE, EXAMPLES).
 
 In addition, TEST and TESTS sections being meant more for developers
@@ -417,7 +414,6 @@ one sets a dedicate environment variable:
 ```
 SAGE_DOCBUILD_OPTS="--include-tests-blocks"
 ```
-
 to keep them in.
 
 Are there any doctests in docstrings elsewhere in the Sage sources that are

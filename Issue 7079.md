@@ -138,7 +138,7 @@ Attachment [trac_7079.patch](tarball://root/attachments/some-uuid/ticket7079/tra
 archive/issue_comments_058423.json:
 ```json
 {
-    "body": "With the patch `trac_7079.patch`, I followed the steps as listed above and got the following errors:\n\n```\ninit.sage does not exist ... creating\nGlobal iterations: 1\nFile iterations: 1\nNo long cached timings exist; will create upon successful finish.\nDoctesting 2096 files doing 10 jobs in parallel\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 608, in test_file\n    os.makedirs(VALGRIND)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '/home/mvngu/.sage//valgrind/'\n\n<SNIP>\n\nThe following tests failed:\n\n        sage -t -long devel/sage/doc/common/builder.py # File not found\n----------------------------------------------------------------------\nTotal time for all tests: 666.1 seconds\n```\n",
+    "body": "With the patch `trac_7079.patch`, I followed the steps as listed above and got the following errors:\n\n```\ninit.sage does not exist ... creating\nGlobal iterations: 1\nFile iterations: 1\nNo long cached timings exist; will create upon successful finish.\nDoctesting 2096 files doing 10 jobs in parallel\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 608, in test_file\n    os.makedirs(VALGRIND)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '/home/mvngu/.sage//valgrind/'\n\n<SNIP>\n\nThe following tests failed:\n\n        sage -t -long devel/sage/doc/common/builder.py # File not found\n----------------------------------------------------------------------\nTotal time for all tests: 666.1 seconds\n```",
     "created_at": "2009-09-30T09:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -175,13 +175,12 @@ Total time for all tests: 666.1 seconds
 
 
 
-
 ---
 
 archive/issue_comments_058424.json:
 ```json
 {
-    "body": "Replying to [comment:5 mvngu]:\n\nThis seems very strange.  Lines 606-608 of SAGE_ROOT/local/bin are \n\n```\n        VALGRIND = '%s/valgrind/'%DOT_SAGE\n        if not os.path.exists(VALGRIND):\n          os.makedirs(VALGRIND)\n```\n\nwhich, apart from the non-standard indent, seem perfectly ok.  In particular, line 608 can never be executed if the directory VALGRIND exists.  And yet this is what seems to be happening for you.\n\nI've tried following your steps (with NUM_THREADS=2), and it's running smoothly, though with\n\n```\nsage -t -long devel/sage/sage/calculus/calculus.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nand a couple more like this.  I'll investigate these cases and any others that arise.",
+    "body": "Replying to [comment:5 mvngu]:\n\nThis seems very strange.  Lines 606-608 of SAGE_ROOT/local/bin are \n\n```\n        VALGRIND = '%s/valgrind/'%DOT_SAGE\n        if not os.path.exists(VALGRIND):\n          os.makedirs(VALGRIND)\n```\nwhich, apart from the non-standard indent, seem perfectly ok.  In particular, line 608 can never be executed if the directory VALGRIND exists.  And yet this is what seems to be happening for you.\n\nI've tried following your steps (with NUM_THREADS=2), and it's running smoothly, though with\n\n```\nsage -t -long devel/sage/sage/calculus/calculus.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\nand a couple more like this.  I'll investigate these cases and any others that arise.",
     "created_at": "2009-09-30T17:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -199,7 +198,6 @@ This seems very strange.  Lines 606-608 of SAGE_ROOT/local/bin are
         if not os.path.exists(VALGRIND):
           os.makedirs(VALGRIND)
 ```
-
 which, apart from the non-standard indent, seem perfectly ok.  In particular, line 608 can never be executed if the directory VALGRIND exists.  And yet this is what seems to be happening for you.
 
 I've tried following your steps (with NUM_THREADS=2), and it's running smoothly, though with
@@ -208,7 +206,6 @@ I've tried following your steps (with NUM_THREADS=2), and it's running smoothly,
 sage -t -long devel/sage/sage/calculus/calculus.py
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 and a couple more like this.  I'll investigate these cases and any others that arise.
 
 
@@ -218,7 +215,7 @@ and a couple more like this.  I'll investigate these cases and any others that a
 archive/issue_comments_058425.json:
 ```json
 {
-    "body": "Replying to [comment:6 fwclarke]:\n\n>{{{\n> A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n> }}}\n> and a couple more like this.  I'll investigate these cases and any others that arise.\n\n\nThe \"mysterious\" errors (of which there were 14) seem to be cases where Sage 4.1.2.alpha4 crashes \n(on my Mac OS X 10.6.1).  E.g.,\n\n```\nsage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"  \n...\nTrying:\n    arccosh._evalf_(Integer(2), Integer(53))###line 13:_sage_    >>> arccosh._evalf_(2, 53)\nExpecting:\n    1.31695789692482\nok\n...\nTrying:\n    bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))###line 185:_sage_    >>> bool(diff(csch(x), x) == diff(1/sinh(x), x))\nExpecting:\n    True\n         [16.9 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"\nTotal time for all tests: 16.9 seconds\n```\n\n\nWhile\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n...\nsage: diff(csch(x), x) == diff(Integer(1)/sinh(x), x)\n-coth(x)*csch(x) == -cosh(x)/sinh(x)^2\nsage: bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))\n/Users/mafwc/sage-4.1.2.alpha4/local/bin/sage-sage: line 200:   \n378 Abort trap  sage-ipython \"$@\" -i\n```\n\ncompared with\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: fwc\nsage: bool(diff(csch(x), x) == diff(1/sinh(x), x))\nTrue\n```\n",
+    "body": "Replying to [comment:6 fwclarke]:\n\n>{{{\n> A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n> }}}\n> and a couple more like this.  I'll investigate these cases and any others that arise.\n\n\n\nThe \"mysterious\" errors (of which there were 14) seem to be cases where Sage 4.1.2.alpha4 crashes \n(on my Mac OS X 10.6.1).  E.g.,\n\n```\nsage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"  \n...\nTrying:\n    arccosh._evalf_(Integer(2), Integer(53))###line 13:_sage_    >>> arccosh._evalf_(2, 53)\nExpecting:\n    1.31695789692482\nok\n...\nTrying:\n    bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))###line 185:_sage_    >>> bool(diff(csch(x), x) == diff(1/sinh(x), x))\nExpecting:\n    True\n         [16.9 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"\nTotal time for all tests: 16.9 seconds\n```\n\nWhile\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n...\nsage: diff(csch(x), x) == diff(Integer(1)/sinh(x), x)\n-coth(x)*csch(x) == -cosh(x)/sinh(x)^2\nsage: bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))\n/Users/mafwc/sage-4.1.2.alpha4/local/bin/sage-sage: line 200:   \n378 Abort trap  sage-ipython \"$@\" -i\n```\ncompared with\n| Sage Version 4.1.2.alpha4, Release Date: 2009-09-27                |\n| Type notebook() for the GUI, and license() for information.        |\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: fwc\nsage: bool(diff(csch(x), x) == diff(1/sinh(x), x))\nTrue\n```",
     "created_at": "2009-10-01T08:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -233,6 +230,7 @@ Replying to [comment:6 fwclarke]:
 > A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 > }}}
 > and a couple more like this.  I'll investigate these cases and any others that arise.
+
 
 
 The "mysterious" errors (of which there were 14) seem to be cases where Sage 4.1.2.alpha4 crashes 
@@ -262,7 +260,6 @@ The following tests failed:
 Total time for all tests: 16.9 seconds
 ```
 
-
 While
 
 ```
@@ -275,9 +272,9 @@ sage: bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))
 /Users/mafwc/sage-4.1.2.alpha4/local/bin/sage-sage: line 200:   
 378 Abort trap  sage-ipython "$@" -i
 ```
-
 compared with
-
+| Sage Version 4.1.2.alpha4, Release Date: 2009-09-27                |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -288,13 +285,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_058426.json:
 ```json
 {
-    "body": "I think the patch is a good idea.  It basically works for me on Mac OS X 10.5 and on sage.math.  Maybe it should get a positive review and then we should work on the \"mysterious\" errors. On sage.math, if I don't apply the patch, delete my .sage directory, and do parallel doctesting, it's a complete disaster.  Once I apply the patch, if I delete my .sage directory, and while in SAGE_ROOT I do `sage -tp 2 devel/sage/sage/algebras`, then I get \n\n```\ninit.sage does not exist ... creating\ntouch: cannot touch `/home/palmieri/.sage//init.sage': No such file or directory\nGlobal iterations: 1\nFile iterations: 1\nNo cached timings exist; will create upon successful finish.\nDoctesting 21 files doing 2 jobs in parallel\nsage -t  devel/sage/sage/algebras/free_algebra_quotient.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nand then all of the other doctests pass.  This is not related, I think, to the problems on Mac OS X 10.6: if I do it again (but with an existing .sage directory), all tests pass.  Maybe the issue is that one thread is running a doctest while another is still busy creating .sage and all of its subdirectories, and so the doctest crashes?  Or two threads are both trying to create .sage at the same time, and this leads to problems?  This might also explain mvngu's problems with .sage/valgrind.  Should we run one test and then switch to parallel testing, or should we run the script (whatever it is) that creates .sage, and then go on to parallel testing?\n\nSo I don't know if this should get a positive review and the mysterious crashes should be in a separate ticket, since that would solve most of the problem, or if this should be marked \"needs work\" and the whole thing fixed at once...",
+    "body": "I think the patch is a good idea.  It basically works for me on Mac OS X 10.5 and on sage.math.  Maybe it should get a positive review and then we should work on the \"mysterious\" errors. On sage.math, if I don't apply the patch, delete my .sage directory, and do parallel doctesting, it's a complete disaster.  Once I apply the patch, if I delete my .sage directory, and while in SAGE_ROOT I do `sage -tp 2 devel/sage/sage/algebras`, then I get \n\n```\ninit.sage does not exist ... creating\ntouch: cannot touch `/home/palmieri/.sage//init.sage': No such file or directory\nGlobal iterations: 1\nFile iterations: 1\nNo cached timings exist; will create upon successful finish.\nDoctesting 21 files doing 2 jobs in parallel\nsage -t  devel/sage/sage/algebras/free_algebra_quotient.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\nand then all of the other doctests pass.  This is not related, I think, to the problems on Mac OS X 10.6: if I do it again (but with an existing .sage directory), all tests pass.  Maybe the issue is that one thread is running a doctest while another is still busy creating .sage and all of its subdirectories, and so the doctest crashes?  Or two threads are both trying to create .sage at the same time, and this leads to problems?  This might also explain mvngu's problems with .sage/valgrind.  Should we run one test and then switch to parallel testing, or should we run the script (whatever it is) that creates .sage, and then go on to parallel testing?\n\nSo I don't know if this should get a positive review and the mysterious crashes should be in a separate ticket, since that would solve most of the problem, or if this should be marked \"needs work\" and the whole thing fixed at once...",
     "created_at": "2009-10-03T22:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -315,7 +311,6 @@ Doctesting 21 files doing 2 jobs in parallel
 sage -t  devel/sage/sage/algebras/free_algebra_quotient.py
 A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.
 ```
-
 and then all of the other doctests pass.  This is not related, I think, to the problems on Mac OS X 10.6: if I do it again (but with an existing .sage directory), all tests pass.  Maybe the issue is that one thread is running a doctest while another is still busy creating .sage and all of its subdirectories, and so the doctest crashes?  Or two threads are both trying to create .sage at the same time, and this leads to problems?  This might also explain mvngu's problems with .sage/valgrind.  Should we run one test and then switch to parallel testing, or should we run the script (whatever it is) that creates .sage, and then go on to parallel testing?
 
 So I don't know if this should get a positive review and the mysterious crashes should be in a separate ticket, since that would solve most of the problem, or if this should be marked "needs work" and the whole thing fixed at once...
@@ -327,7 +322,7 @@ So I don't know if this should get a positive review and the mysterious crashes 
 archive/issue_comments_058427.json:
 ```json
 {
-    "body": "> So I don't know if this should get a positive review and the mysterious crashes \n> should be in a separate ticket,\n\nThat's what I think.  So I've switched to to that, applied it, and opened a new ticket: #7103",
+    "body": "> So I don't know if this should get a positive review and the mysterious crashes \n> should be in a separate ticket,\n\n\nThat's what I think.  So I've switched to to that, applied it, and opened a new ticket: #7103",
     "created_at": "2009-10-03T23:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
@@ -338,6 +333,7 @@ archive/issue_comments_058427.json:
 
 > So I don't know if this should get a positive review and the mysterious crashes 
 > should be in a separate ticket,
+
 
 That's what I think.  So I've switched to to that, applied it, and opened a new ticket: #7103
 

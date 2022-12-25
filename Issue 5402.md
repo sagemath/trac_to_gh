@@ -3,7 +3,7 @@
 archive/issues_005402.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jbandlow\n\nKeywords: determinant\n\nThe following timings should be able to be improved.\n\n```\n       sage: dd = {(0,0):1}\n       sage: %timeit matrix(8,dd).det()\n       10 loops, best of 3: 213 ms per loop\n       sage: %timeit matrix(8,dd,sparse = False).det()\n       100 loops, best of 3: 629 \u00b5s per loop\n```\n\nWilliam suggested:\nLikely the fix will be to implement\na 1-line function that is just\n\n```\n  return self.dense_matrix().det(*args, **kwds)\n```\n\nuntil there is somebody who wants to implement a sparse algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5402\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbandlow\n\nKeywords: determinant\n\nThe following timings should be able to be improved.\n\n```\n       sage: dd = {(0,0):1}\n       sage: %timeit matrix(8,dd).det()\n       10 loops, best of 3: 213 ms per loop\n       sage: %timeit matrix(8,dd,sparse = False).det()\n       100 loops, best of 3: 629 \u00b5s per loop\n```\nWilliam suggested:\nLikely the fix will be to implement\na 1-line function that is just\n\n```\n  return self.dense_matrix().det(*args, **kwds)\n```\nuntil there is somebody who wants to implement a sparse algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5402\n\n",
     "created_at": "2009-02-28T20:16:47Z",
     "labels": [
         "component: linear algebra"
@@ -30,7 +30,6 @@ The following timings should be able to be improved.
        sage: %timeit matrix(8,dd,sparse = False).det()
        100 loops, best of 3: 629 µs per loop
 ```
-
 William suggested:
 Likely the fix will be to implement
 a 1-line function that is just
@@ -38,7 +37,6 @@ a 1-line function that is just
 ```
   return self.dense_matrix().det(*args, **kwds)
 ```
-
 until there is somebody who wants to implement a sparse algorithm.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5402
@@ -70,7 +68,7 @@ I would tend to avoid converting to a dense matrix by default since one often us
 archive/issue_comments_041638.json:
 ```json
 {
-    "body": "Sure, but as of right now, I've been waiting over fifteen minutes for \n\n```\n       sage: dd = {(0,0):1}\n       sage: %time matrix(100,dd).det()\n```\n\nwhereas\n\n```\n       sage: %time matrix(100,dd,sparse=False).det()\n       CPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\n       Wall time: 0.08 s\n```\n\n\nSo, currently, for a matrix large enough to have memory issues, determinants are already completely infeasible.  So I don't think anything would be lost by the one-line change proposed by William.  Of course, writing a sparse algorithm that is competitive speed-wise, or could be used only for very large matrices, would be ideal.  But it took me some time today to figure out why computing ~1000 determinants of 8x8 sparse matrices was taking so long, and if there could be a quick fix to spare others from my pain, it would be nice. :)",
+    "body": "Sure, but as of right now, I've been waiting over fifteen minutes for \n\n```\n       sage: dd = {(0,0):1}\n       sage: %time matrix(100,dd).det()\n```\nwhereas\n\n```\n       sage: %time matrix(100,dd,sparse=False).det()\n       CPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\n       Wall time: 0.08 s\n```\n\nSo, currently, for a matrix large enough to have memory issues, determinants are already completely infeasible.  So I don't think anything would be lost by the one-line change proposed by William.  Of course, writing a sparse algorithm that is competitive speed-wise, or could be used only for very large matrices, would be ideal.  But it took me some time today to figure out why computing ~1000 determinants of 8x8 sparse matrices was taking so long, and if there could be a quick fix to spare others from my pain, it would be nice. :)",
     "created_at": "2009-02-28T22:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -85,7 +83,6 @@ Sure, but as of right now, I've been waiting over fifteen minutes for
        sage: dd = {(0,0):1}
        sage: %time matrix(100,dd).det()
 ```
-
 whereas
 
 ```
@@ -93,7 +90,6 @@ whereas
        CPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s
        Wall time: 0.08 s
 ```
-
 
 So, currently, for a matrix large enough to have memory issues, determinants are already completely infeasible.  So I don't think anything would be lost by the one-line change proposed by William.  Of course, writing a sparse algorithm that is competitive speed-wise, or could be used only for very large matrices, would be ideal.  But it took me some time today to figure out why computing ~1000 determinants of 8x8 sparse matrices was taking so long, and if there could be a quick fix to spare others from my pain, it would be nice. :)
 
@@ -164,7 +160,7 @@ Apparently, this issue has been fixed. The determinant that used to take 15 minu
 archive/issue_comments_041642.json:
 ```json
 {
-    "body": "I wouldn't say that it's fixed.  Note the comparison is better but still they are not that close.\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(8,dd).det()\n5 loops, best of 3: 2.83 ms per loop\nsage: %timeit matrix(8,dd,sparse = False).det()\n625 loops, best of 3: 147 \u00b5s per loop\nsage: %timeit matrix(100,dd).det()\n5 loops, best of 3: 228 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 15.2 ms per loop\n```\n\nIt's just that everything is faster now.  How much faster would Moore's law say these should be after four years?",
+    "body": "I wouldn't say that it's fixed.  Note the comparison is better but still they are not that close.\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(8,dd).det()\n5 loops, best of 3: 2.83 ms per loop\nsage: %timeit matrix(8,dd,sparse = False).det()\n625 loops, best of 3: 147 \u00b5s per loop\nsage: %timeit matrix(100,dd).det()\n5 loops, best of 3: 228 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 15.2 ms per loop\n```\nIt's just that everything is faster now.  How much faster would Moore's law say these should be after four years?",
     "created_at": "2013-01-03T15:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -186,7 +182,6 @@ sage: %timeit matrix(100,dd).det()
 sage: %timeit matrix(100,dd,sparse = False).det()
 25 loops, best of 3: 15.2 ms per loop
 ```
-
 It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?
 
 
@@ -214,7 +209,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_041644.json:
 ```json
 {
-    "body": "Replying to [comment:5 kcrisman]:\n> {{{\n> sage: %timeit matrix(100,dd).det()\n> 5 loops, best of 3: 228 ms per loop\n> sage: %timeit matrix(100,dd,sparse = False).det()\n> 25 loops, best of 3: 15.2 ms per loop\n> }}}\n> It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?\n\nIn comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.\n\nSo, there was clearly some improvement. \n\nHowever, if you look into it a bit deeper, then you'll see that in the sparse case, computing the determinant triggers the computation of the charpoly(), and the computation of the charpoly creates a dense version of the matrix, then runs the dense charpoly algorithm. I thus agree that this is suboptimal (in particular because linbox has fancy iterative methods for this kind of computation on sparse matrices).\n\nAnyway, why don't we : a) close this ticket, considering that it is outdated and that the situation has changed, and b) open a \"feature request\" ticket related to sparse matrices over exact rings? I would be happy to look into this.",
+    "body": "Replying to [comment:5 kcrisman]:\n> {{{\n> sage: %timeit matrix(100,dd).det()\n> 5 loops, best of 3: 228 ms per loop\n> sage: %timeit matrix(100,dd,sparse = False).det()\n> 25 loops, best of 3: 15.2 ms per loop\n> }}}\n> It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?\n\n\nIn comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.\n\nSo, there was clearly some improvement. \n\nHowever, if you look into it a bit deeper, then you'll see that in the sparse case, computing the determinant triggers the computation of the charpoly(), and the computation of the charpoly creates a dense version of the matrix, then runs the dense charpoly algorithm. I thus agree that this is suboptimal (in particular because linbox has fancy iterative methods for this kind of computation on sparse matrices).\n\nAnyway, why don't we : a) close this ticket, considering that it is outdated and that the situation has changed, and b) open a \"feature request\" ticket related to sparse matrices over exact rings? I would be happy to look into this.",
     "created_at": "2013-01-04T10:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -231,6 +226,7 @@ Replying to [comment:5 kcrisman]:
 > 25 loops, best of 3: 15.2 ms per loop
 > }}}
 > It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?
+
 
 In comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.
 
@@ -265,7 +261,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041646.json:
 ```json
 {
-    "body": "> > It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?\n> \n> In comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.\nInterestingly, other than that one, the rest indeed show a 4-10x speedup.\n\n> However, if you look into it a bit deeper, then you'll see that in the sparse case, computing the determinant triggers the computation of the charpoly(), and the computation of the charpoly creates a dense version of the matrix, then runs the dense charpoly algorithm. I thus agree that this is suboptimal (in particular because linbox has fancy iterative methods for this kind of computation on sparse matrices).\n> \n> Anyway, why don't we : a) close this ticket, considering that it is outdated and that the situation has changed, and b) open a \"feature request\" ticket related to sparse matrices over exact rings? I would be happy to look into this.\nWell, given that we *already* create the dense matrix, then William's fix seems like it would speed things up at least a little, or be no worse?  I don't see why we (by which I mean you and other people who compute such determinants!) couldn't try it out, *as well as* of course creating a new ticket to use fancy methods.  Seem reasonable?",
+    "body": "> > It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?\n\n> \n> In comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.\n\nInterestingly, other than that one, the rest indeed show a 4-10x speedup.\n\n> However, if you look into it a bit deeper, then you'll see that in the sparse case, computing the determinant triggers the computation of the charpoly(), and the computation of the charpoly creates a dense version of the matrix, then runs the dense charpoly algorithm. I thus agree that this is suboptimal (in particular because linbox has fancy iterative methods for this kind of computation on sparse matrices).\n> \n> Anyway, why don't we : a) close this ticket, considering that it is outdated and that the situation has changed, and b) open a \"feature request\" ticket related to sparse matrices over exact rings? I would be happy to look into this.\n\nWell, given that we *already* create the dense matrix, then William's fix seems like it would speed things up at least a little, or be no worse?  I don't see why we (by which I mean you and other people who compute such determinants!) couldn't try it out, *as well as* of course creating a new ticket to use fancy methods.  Seem reasonable?",
     "created_at": "2013-01-04T14:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -275,13 +271,16 @@ archive/issue_comments_041646.json:
 ```
 
 > > It's just that everything is faster now.  How much faster would Moore's law say these should be after four years?
+
 > 
 > In comment 2, someone complains about this test running for 15 minutes. On your machine, it runs in 228ms (sparse case). This is about 4000x times faster. Moore's law tell you that the number of transistor on a chip doubles every 18 months, so that in 4 years we would have at the very maximum a 10x speedup.
+
 Interestingly, other than that one, the rest indeed show a 4-10x speedup.
 
 > However, if you look into it a bit deeper, then you'll see that in the sparse case, computing the determinant triggers the computation of the charpoly(), and the computation of the charpoly creates a dense version of the matrix, then runs the dense charpoly algorithm. I thus agree that this is suboptimal (in particular because linbox has fancy iterative methods for this kind of computation on sparse matrices).
 > 
 > Anyway, why don't we : a) close this ticket, considering that it is outdated and that the situation has changed, and b) open a "feature request" ticket related to sparse matrices over exact rings? I would be happy to look into this.
+
 Well, given that we *already* create the dense matrix, then William's fix seems like it would speed things up at least a little, or be no worse?  I don't see why we (by which I mean you and other people who compute such determinants!) couldn't try it out, *as well as* of course creating a new ticket to use fancy methods.  Seem reasonable?
 
 
@@ -345,7 +344,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041650.json:
 ```json
 {
-    "body": "Attachment [5402_faster_dumber_det.patch](tarball://root/attachments/some-uuid/ticket5402/5402_faster_dumber_det.patch) by Bouillaguet created at 2013-01-04 17:26:04\n\nWith patch applied:\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(100,dd).det()\n125 loops, best of 3: 7.04 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 16.3 ms per loop\n```\n\n\nSo that now the sparse case is faster! I really don't understand why tough, because it converts the matrix to a dense representation before computing the (dense) det...",
+    "body": "Attachment [5402_faster_dumber_det.patch](tarball://root/attachments/some-uuid/ticket5402/5402_faster_dumber_det.patch) by Bouillaguet created at 2013-01-04 17:26:04\n\nWith patch applied:\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(100,dd).det()\n125 loops, best of 3: 7.04 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 16.3 ms per loop\n```\n\nSo that now the sparse case is faster! I really don't understand why tough, because it converts the matrix to a dense representation before computing the (dense) det...",
     "created_at": "2013-01-04T17:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -366,7 +365,6 @@ sage: %timeit matrix(100,dd,sparse = False).det()
 25 loops, best of 3: 16.3 ms per loop
 ```
 
-
 So that now the sparse case is faster! I really don't understand why tough, because it converts the matrix to a dense representation before computing the (dense) det...
 
 
@@ -376,7 +374,7 @@ So that now the sparse case is faster! I really don't understand why tough, beca
 archive/issue_comments_041651.json:
 ```json
 {
-    "body": "I get the same thing.  With a heavy load on the same computer (accounting for non-sparse slowdown),\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(8,dd).det()\n5 loops, best of 3: 207 \u00b5s per loop\nsage: %timeit matrix(8,dd,sparse = False).det()\n625 loops, best of 3: 240 \u00b5s per loop\nsage: %timeit matrix(100,dd).det()\n25 loops, best of 3: 11.2 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 23.3 ms per loop\n```\n\nMaybe the way we make dictionary-defined matrices dense with `sparse=False` is suboptimal?\n\nI like the patch, though it would be nice if you could find someone who has worked with caching before just to check that that code is correct - I haven't really used it in the past and don't have time to find similar examples in the code now, my apologies.",
+    "body": "I get the same thing.  With a heavy load on the same computer (accounting for non-sparse slowdown),\n\n```\nsage: dd = {(0,0):1}\nsage: %timeit matrix(8,dd).det()\n5 loops, best of 3: 207 \u00b5s per loop\nsage: %timeit matrix(8,dd,sparse = False).det()\n625 loops, best of 3: 240 \u00b5s per loop\nsage: %timeit matrix(100,dd).det()\n25 loops, best of 3: 11.2 ms per loop\nsage: %timeit matrix(100,dd,sparse = False).det()\n25 loops, best of 3: 23.3 ms per loop\n```\nMaybe the way we make dictionary-defined matrices dense with `sparse=False` is suboptimal?\n\nI like the patch, though it would be nice if you could find someone who has worked with caching before just to check that that code is correct - I haven't really used it in the past and don't have time to find similar examples in the code now, my apologies.",
     "created_at": "2013-01-04T17:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -398,7 +396,6 @@ sage: %timeit matrix(100,dd).det()
 sage: %timeit matrix(100,dd,sparse = False).det()
 25 loops, best of 3: 23.3 ms per loop
 ```
-
 Maybe the way we make dictionary-defined matrices dense with `sparse=False` is suboptimal?
 
 I like the patch, though it would be nice if you could find someone who has worked with caching before just to check that that code is correct - I haven't really used it in the past and don't have time to find similar examples in the code now, my apologies.
@@ -410,7 +407,7 @@ I like the patch, though it would be nice if you could find someone who has work
 archive/issue_comments_041652.json:
 ```json
 {
-    "body": "There is an example of caching (the one I just mimicked...) in matrix_sparse.pyx in the definition of charpoly().\n\nI checked that caching works by computing a large sparse determinant twice : the first call takes a few seconds, while the second call returns instantly.\n\nFor the sake of easy reviewing :-) here is the code of charpoly() :\n\n\n```python\ndef charpoly(self, var='x', **kwds):\n        f = self.fetch('charpoly')\n        if f is not None:\n            return f.change_variable_name(var)\n        f = self.dense_matrix().charpoly(var=var, **kwds)\n        self.cache('charpoly', f)\n        return f\n```\n",
+    "body": "There is an example of caching (the one I just mimicked...) in matrix_sparse.pyx in the definition of charpoly().\n\nI checked that caching works by computing a large sparse determinant twice : the first call takes a few seconds, while the second call returns instantly.\n\nFor the sake of easy reviewing :-) here is the code of charpoly() :\n\n```python\ndef charpoly(self, var='x', **kwds):\n        f = self.fetch('charpoly')\n        if f is not None:\n            return f.change_variable_name(var)\n        f = self.dense_matrix().charpoly(var=var, **kwds)\n        self.cache('charpoly', f)\n        return f\n```",
     "created_at": "2013-01-04T17:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
@@ -425,7 +422,6 @@ I checked that caching works by computing a large sparse determinant twice : the
 
 For the sake of easy reviewing :-) here is the code of charpoly() :
 
-
 ```python
 def charpoly(self, var='x', **kwds):
         f = self.fetch('charpoly')
@@ -435,7 +431,6 @@ def charpoly(self, var='x', **kwds):
         self.cache('charpoly', f)
         return f
 ```
-
 
 
 

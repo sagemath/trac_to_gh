@@ -3,7 +3,7 @@
 archive/issues_008119.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jasongrout simonking\n\nFor many objects the hash value is computed from `__repr__`. This is a bad idea since renaming the object change its hash value.\n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla)\n-1525918542791298668\nsage: bla.rename(\"toto\")\nsage: hash(bla)\n2314052222105390764\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8119\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout simonking\n\nFor many objects the hash value is computed from `__repr__`. This is a bad idea since renaming the object change its hash value.\n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla)\n-1525918542791298668\nsage: bla.rename(\"toto\")\nsage: hash(bla)\n2314052222105390764\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8119\n\n",
     "created_at": "2010-01-29T15:22:48Z",
     "labels": [
         "component: misc",
@@ -31,7 +31,6 @@ sage: hash(bla)
 2314052222105390764
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8119
 
 
@@ -43,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8119
 archive/issue_comments_071209.json:
 ```json
 {
-    "body": "For immutable objects, like Parents, the default __hash__ could store the value used the first time it is computed. This doesn't solve the problem of \n\n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla['t'])\n-1733828288\nsage: bla.rename(\"toto\")\nsage: hash(bla['t'])\n-1924319844\n```\n",
+    "body": "For immutable objects, like Parents, the default __hash__ could store the value used the first time it is computed. This doesn't solve the problem of \n\n```\nsage: bla = PolynomialRing(ZZ,\"x\")\nsage: hash(bla['t'])\n-1733828288\nsage: bla.rename(\"toto\")\nsage: hash(bla['t'])\n-1924319844\n```",
     "created_at": "2010-03-12T09:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -54,7 +53,6 @@ archive/issue_comments_071209.json:
 
 For immutable objects, like Parents, the default __hash__ could store the value used the first time it is computed. This doesn't solve the problem of 
 
-
 ```
 sage: bla = PolynomialRing(ZZ,"x")
 sage: hash(bla['t'])
@@ -63,7 +61,6 @@ sage: bla.rename("toto")
 sage: hash(bla['t'])
 -1924319844
 ```
-
 
 
 
@@ -169,7 +166,7 @@ Florent
 archive/issue_comments_071214.json:
 ```json
 {
-    "body": "Replying to [comment:3 hivert]:\n> Hi Robert,\n> \n> I've one question related to this and I like to have the confirmation from an expert. After your patch, upon pickling/unpickling the hash value can change because it is not pickled and neither is the name, right ? As far as I manage to test this is not harmful to pickle a dict containing a renamed parent. Indeed, trying to read `cPickle.c`, I understood that the dict is reconstructed from it's items and thus even if the hash changed the element is inserted correctly in the dict during unpickling. Can you confirm this ?\n\nThat is correct. Hashes in general are not guaranteed to be consistent from run to run, all that really matters is that they satisfy (to the best they can) the equality constraints. \n\n> If this is not both this patch and #8120 are broken.\n> \n> Also, after this, do you still need #8506 ?\n\nYes, #8506 is still important--in my case I'm reducing a curve mod many, many primes, doing just a bit of stuff on each before throwing them away. I suppose eventually caching the hash value would eventually be a win, but that's a separate optimization.",
+    "body": "Replying to [comment:3 hivert]:\n> Hi Robert,\n> \n> I've one question related to this and I like to have the confirmation from an expert. After your patch, upon pickling/unpickling the hash value can change because it is not pickled and neither is the name, right ? As far as I manage to test this is not harmful to pickle a dict containing a renamed parent. Indeed, trying to read `cPickle.c`, I understood that the dict is reconstructed from it's items and thus even if the hash changed the element is inserted correctly in the dict during unpickling. Can you confirm this ?\n\n\nThat is correct. Hashes in general are not guaranteed to be consistent from run to run, all that really matters is that they satisfy (to the best they can) the equality constraints. \n\n> If this is not both this patch and #8120 are broken.\n> \n> Also, after this, do you still need #8506 ?\n\n\nYes, #8506 is still important--in my case I'm reducing a curve mod many, many primes, doing just a bit of stuff on each before throwing them away. I suppose eventually caching the hash value would eventually be a win, but that's a separate optimization.",
     "created_at": "2010-03-13T09:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -183,11 +180,13 @@ Replying to [comment:3 hivert]:
 > 
 > I've one question related to this and I like to have the confirmation from an expert. After your patch, upon pickling/unpickling the hash value can change because it is not pickled and neither is the name, right ? As far as I manage to test this is not harmful to pickle a dict containing a renamed parent. Indeed, trying to read `cPickle.c`, I understood that the dict is reconstructed from it's items and thus even if the hash changed the element is inserted correctly in the dict during unpickling. Can you confirm this ?
 
+
 That is correct. Hashes in general are not guaranteed to be consistent from run to run, all that really matters is that they satisfy (to the best they can) the equality constraints. 
 
 > If this is not both this patch and #8120 are broken.
 > 
 > Also, after this, do you still need #8506 ?
+
 
 Yes, #8506 is still important--in my case I'm reducing a curve mod many, many primes, doing just a bit of stuff on each before throwing them away. I suppose eventually caching the hash value would eventually be a win, but that's a separate optimization.
 
@@ -234,7 +233,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071217.json:
 ```json
 {
-    "body": "> hivert: do you want to review this ticket?\n\nSure ! I completely forgot about this one. Sorry !\n\nThey are a few place where we should remove the bad implementation using `__repr__` since they all inherits from `CategoryObject`: \n\n```\npopcorn-*ge-combinat/sage $ grep \"hash(self.__repr__())\" **/*.py*\ngroups/group.pyx:        return hash(self.__repr__())\nmodules/module.pyx:        return hash(self.__repr__())\nmodules/module.pyx:        return hash(self.__repr__())\nrings/polynomial/multi_polynomial_libsingular.pyx:        return hash(self.__repr__())\nrings/ring.pyx:        return hash(self.__repr__())\nstructure/sage_object.pyx:        return hash(self.__repr__())\n```\n\nI don't have time to do it right now. I'll do it soon if you don't beat me.",
+    "body": "> hivert: do you want to review this ticket?\n\n\nSure ! I completely forgot about this one. Sorry !\n\nThey are a few place where we should remove the bad implementation using `__repr__` since they all inherits from `CategoryObject`: \n\n```\npopcorn-*ge-combinat/sage $ grep \"hash(self.__repr__())\" **/*.py*\ngroups/group.pyx:        return hash(self.__repr__())\nmodules/module.pyx:        return hash(self.__repr__())\nmodules/module.pyx:        return hash(self.__repr__())\nrings/polynomial/multi_polynomial_libsingular.pyx:        return hash(self.__repr__())\nrings/ring.pyx:        return hash(self.__repr__())\nstructure/sage_object.pyx:        return hash(self.__repr__())\n```\nI don't have time to do it right now. I'll do it soon if you don't beat me.",
     "created_at": "2011-04-04T17:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -244,6 +243,7 @@ archive/issue_comments_071217.json:
 ```
 
 > hivert: do you want to review this ticket?
+
 
 Sure ! I completely forgot about this one. Sorry !
 
@@ -258,7 +258,6 @@ rings/polynomial/multi_polynomial_libsingular.pyx:        return hash(self.__rep
 rings/ring.pyx:        return hash(self.__repr__())
 structure/sage_object.pyx:        return hash(self.__repr__())
 ```
-
 I don't have time to do it right now. I'll do it soon if you don't beat me.
 
 
@@ -286,7 +285,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071219.json:
 ```json
 {
-    "body": "> They are a few place where we should remove the bad implementation using\n> `__repr__` since they all inherits from `CategoryObject`:\n\nI just added a review patch which removes the wrong hash methods.\n\nPlease review. I'm ok with the original patch, so if my review patch is ok\nyou can put a positive review on my behalf.",
+    "body": "> They are a few place where we should remove the bad implementation using\n> `__repr__` since they all inherits from `CategoryObject`:\n\n\nI just added a review patch which removes the wrong hash methods.\n\nPlease review. I'm ok with the original patch, so if my review patch is ok\nyou can put a positive review on my behalf.",
     "created_at": "2011-04-04T18:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -297,6 +296,7 @@ archive/issue_comments_071219.json:
 
 > They are a few place where we should remove the bad implementation using
 > `__repr__` since they all inherits from `CategoryObject`:
+
 
 I just added a review patch which removes the wrong hash methods.
 
@@ -557,7 +557,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071231.json:
 ```json
 {
-    "body": "> I'd suggest to just fold it in the other patch.\n\nDone.",
+    "body": "> I'd suggest to just fold it in the other patch.\n\n\nDone.",
     "created_at": "2011-04-23T13:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -567,6 +567,7 @@ archive/issue_comments_071231.json:
 ```
 
 > I'd suggest to just fold it in the other patch.
+
 
 Done.
 
@@ -743,7 +744,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_071241.json:
 ```json
 {
-    "body": "On boxen (Linux x86_64), I get:\n\n```\nsage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n**********************************************************************\nFile \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n    sage: hash(bla)\nExpected:\n    -1525918542791298668\nGot:\n    -5279516879544852222\n**********************************************************************\nFile \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n    sage: hash(bla)\nExpected:\n    -1525918542791298668\nGot:\n    -5279516879544852222\n**********************************************************************\n```\n",
+    "body": "On boxen (Linux x86_64), I get:\n\n```\nsage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n**********************************************************************\nFile \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n    sage: hash(bla)\nExpected:\n    -1525918542791298668\nGot:\n    -5279516879544852222\n**********************************************************************\nFile \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n    sage: hash(bla)\nExpected:\n    -1525918542791298668\nGot:\n    -5279516879544852222\n**********************************************************************\n```",
     "created_at": "2012-04-06T06:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -775,7 +776,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_071242.json:
@@ -799,7 +799,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_071243.json:
 ```json
 {
-    "body": "Attachment [8119-parent-hash-final-fix32.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final-fix32.patch) by @nthiery created at 2012-04-06 14:45:27\n\nReplying to [comment:23 jdemeyer]:\n> On boxen (Linux x86_64), I get:\n> {{{\n> sage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> }}}\n\nWeird, I get here the same result as you on boxen, both with 4.8 and 5.0.beta8. I don't know how a wrong return value ended up in the patch. \n\nOh well, I updated the patch to expect the result obtained on boxen.",
+    "body": "Attachment [8119-parent-hash-final-fix32.patch](tarball://root/attachments/some-uuid/ticket8119/8119-parent-hash-final-fix32.patch) by @nthiery created at 2012-04-06 14:45:27\n\nReplying to [comment:23 jdemeyer]:\n> On boxen (Linux x86_64), I get:\n> \n> ```\n> sage -t  -force_lib devel/sage/sage/structure/category_object.pyx\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 757:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> File \"/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx\", line 761:\n>     sage: hash(bla)\n> Expected:\n>     -1525918542791298668\n> Got:\n>     -5279516879544852222\n> **********************************************************************\n> ```\n\n\nWeird, I get here the same result as you on boxen, both with 4.8 and 5.0.beta8. I don't know how a wrong return value ended up in the patch. \n\nOh well, I updated the patch to expect the result obtained on boxen.",
     "created_at": "2012-04-06T14:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8119",
     "type": "issue_comment",
@@ -812,7 +812,8 @@ Attachment [8119-parent-hash-final-fix32.patch](tarball://root/attachments/some-
 
 Replying to [comment:23 jdemeyer]:
 > On boxen (Linux x86_64), I get:
-> {{{
+> 
+> ```
 > sage -t  -force_lib devel/sage/sage/structure/category_object.pyx
 > **********************************************************************
 > File "/padic/scratch/jdemeyer/merger/sage-5.0.beta14/devel/sage-main/sage/structure/category_object.pyx", line 757:
@@ -829,7 +830,8 @@ Replying to [comment:23 jdemeyer]:
 > Got:
 >     -5279516879544852222
 > **********************************************************************
-> }}}
+> ```
+
 
 Weird, I get here the same result as you on boxen, both with 4.8 and 5.0.beta8. I don't know how a wrong return value ended up in the patch. 
 

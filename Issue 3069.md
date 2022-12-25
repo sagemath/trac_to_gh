@@ -3,7 +3,7 @@
 archive/issues_003069.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\n\nOn Wed, Apr 30, 2008 at 11:36 AM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> \n>  This is with Sage 3.0, Firefox 2.0.0.14, linux.\n>  \n>  If I check the little \"Typeset\" box at the top of the notebook, save\n>  and quit the notebook, then re-enter it, the box is still checked, but\n>  my output is not typeset.  If I uncheck it and then check it again, it\n>  works.\n>  \n>  Can anyone else reproduce this?\n>  \n\nI've seen this.  I consider it a bug.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3069\n\n",
+    "body": "Assignee: boothby\n\n```\n\n\nOn Wed, Apr 30, 2008 at 11:36 AM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> \n>  This is with Sage 3.0, Firefox 2.0.0.14, linux.\n>  \n>  If I check the little \"Typeset\" box at the top of the notebook, save\n>  and quit the notebook, then re-enter it, the box is still checked, but\n>  my output is not typeset.  If I uncheck it and then check it again, it\n>  works.\n>  \n>  Can anyone else reproduce this?\n>  \n\nI've seen this.  I consider it a bug.\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3069\n\n",
     "created_at": "2008-04-30T18:45:08Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_003069.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -37,7 +36,6 @@ On Wed, Apr 30, 2008 at 11:36 AM, John H Palmieri <jhpalmieri64@gmail.com> wrote
 I've seen this.  I consider it a bug.
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3069
 

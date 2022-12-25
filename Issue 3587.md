@@ -3,7 +3,7 @@
 archive/issues_003587.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @jasongrout\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> \ufeffhello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @jasongrout\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> \ufeffhello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
     "created_at": "2008-07-07T15:52:57Z",
     "labels": [
         "component: calculus"
@@ -26,7 +26,6 @@ We are constantly getting stuff like this:
 02:53 < nagyv> ﻿hello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity
 03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?
 ```
-
 
 Probably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.
 That is *not* a good enough reason, and don't worry, the work won't be lost.
@@ -167,7 +166,7 @@ In the long term, I would like to see `integral` and `sum` constructs as subclas
 archive/issue_comments_025274.json:
 ```json
 {
-    "body": "Replying to [comment:5 burcin]:\n> Many thanks for the patch, this was long overdue. A few comments after reading your patch:\n> \n> Your patch replicates the way integrate/integral works perfectly. Though, as Mike wrote in comment:3, we should just call this `sum`. There is also a discussion about naming here:\n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/bd4eb3b613c98030\n> \n> I suggest putting a `sum()` function in `sage.misc.misc_c`, that calls python's `sum()` or your function based on the type/number of the arguments. Would you like to do this or should I?\n\nIt would be great if you could do this.\n\n> Here are some suggested changes:\n> \n>  * rename all instances of the method to `sum` or `symbolic_sum`\n>  * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n>  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n>  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n>  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\nI will take care of these.\n \n> \n> In the long term, I would like to see `integral` and `sum` constructs as subclasses of `sage.symbolic.function.SFunction`, instead of the current thin wrappers around maxima functionality.\n\nThis is definitely necessary. Currently there is no way to interact with an unevaluated integral or sum.\n\n> I will take a look at the feasibility of doing this over the weekend. I don't want to hold your patch back for this though.",
+    "body": "Replying to [comment:5 burcin]:\n> Many thanks for the patch, this was long overdue. A few comments after reading your patch:\n> \n> Your patch replicates the way integrate/integral works perfectly. Though, as Mike wrote in comment:3, we should just call this `sum`. There is also a discussion about naming here:\n> \n> http://groups.google.com/group/sage-devel/browse_thread/thread/bd4eb3b613c98030\n> \n> I suggest putting a `sum()` function in `sage.misc.misc_c`, that calls python's `sum()` or your function based on the type/number of the arguments. Would you like to do this or should I?\n\n\nIt would be great if you could do this.\n\n> Here are some suggested changes:\n> \n> * rename all instances of the method to `sum` or `symbolic_sum`\n> * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n> * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n> * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n> * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\n\nI will take care of these.\n \n> \n> In the long term, I would like to see `integral` and `sum` constructs as subclasses of `sage.symbolic.function.SFunction`, instead of the current thin wrappers around maxima functionality.\n\n\nThis is definitely necessary. Currently there is no way to interact with an unevaluated integral or sum.\n\n> I will take a look at the feasibility of doing this over the weekend. I don't want to hold your patch back for this though.",
     "created_at": "2009-06-06T17:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -185,20 +184,23 @@ Replying to [comment:5 burcin]:
 > 
 > I suggest putting a `sum()` function in `sage.misc.misc_c`, that calls python's `sum()` or your function based on the type/number of the arguments. Would you like to do this or should I?
 
+
 It would be great if you could do this.
 
 > Here are some suggested changes:
 > 
->  * rename all instances of the method to `sum` or `symbolic_sum`
->  * you should import your function before the doctests in `calculus.py` to make sure you call the right function
->  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`
->  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output
->  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen
+> * rename all instances of the method to `sum` or `symbolic_sum`
+> * you should import your function before the doctests in `calculus.py` to make sure you call the right function
+> * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`
+> * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output
+> * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen
+
 
 I will take care of these.
  
 > 
 > In the long term, I would like to see `integral` and `sum` constructs as subclasses of `sage.symbolic.function.SFunction`, instead of the current thin wrappers around maxima functionality.
+
 
 This is definitely necessary. Currently there is no way to interact with an unevaluated integral or sum.
 
@@ -211,7 +213,7 @@ This is definitely necessary. Currently there is no way to interact with an unev
 archive/issue_comments_025275.json:
 ```json
 {
-    "body": "Attachment [summation.patch](tarball://root/attachments/some-uuid/ticket3587/summation.patch) by whuss created at 2009-06-07 12:16:53\n\nReplying to [comment:5 burcin]: \n> Here are some suggested changes:\n> \n>  * rename all instances of the method to `sum` or `symbolic_sum`\n>  * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n>  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n>  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n>  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\nI posted a new patch that takes care of these issues.\n\nThe second patch (sum.patch) renames summation to sum. This currently overwrites the python sum command.",
+    "body": "Attachment [summation.patch](tarball://root/attachments/some-uuid/ticket3587/summation.patch) by whuss created at 2009-06-07 12:16:53\n\nReplying to [comment:5 burcin]: \n> Here are some suggested changes:\n> \n> * rename all instances of the method to `sum` or `symbolic_sum`\n> * you should import your function before the doctests in `calculus.py` to make sure you call the right function\n> * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`\n> * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output\n> * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen\n\n\nI posted a new patch that takes care of these issues.\n\nThe second patch (sum.patch) renames summation to sum. This currently overwrites the python sum command.",
     "created_at": "2009-06-07T12:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -225,11 +227,12 @@ Attachment [summation.patch](tarball://root/attachments/some-uuid/ticket3587/sum
 Replying to [comment:5 burcin]: 
 > Here are some suggested changes:
 > 
->  * rename all instances of the method to `sum` or `symbolic_sum`
->  * you should import your function before the doctests in `calculus.py` to make sure you call the right function
->  * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`
->  * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output
->  * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen
+> * rename all instances of the method to `sum` or `symbolic_sum`
+> * you should import your function before the doctests in `calculus.py` to make sure you call the right function
+> * it would be good to add a comment to #6197 pointing to the comment you have in `calculus.py`
+> * you could add your code for converting MMA output back to Sage to a `_sage_()` method in `sage.interfaces.mathematica.MathematicaElement`, see the `MagmaElement` class in `sage.interfaces.magma` for an example, similarly for Maple output
+> * In the last lines of the docstring for `sage.symbolic.expression.Expression.summation`, choosen -> chosen
+
 
 I posted a new patch that takes care of these issues.
 
@@ -280,7 +283,7 @@ Burcin, can you look at this?
 archive/issue_comments_025278.json:
 ```json
 {
-    "body": "I uploaded a new patch in attachment:trac_3587-maxima_simplify_sum.patch. This has both patches folded together, and renames `sum()` to `symbolic_sum()` in `sage/calculus/calculus.py` and `sage/misc/functional.py` eliminating the risk of people using the symbolic sum instead of sum in library code without realizing, and the need to import `__builtin__`.\n\nI am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:\n\n\n```\nsage: sum(binomial(n,k), k, 1, n)\n2^n - 2\nsage: sum(binomial(n,k), k, 2, n)\n2^n - 2*n - 2\nsage: r=sum(binomial(n,k), k, 2, n-2)\nsage: r.simplify()\n2^n - 1/6*n^3 - 11/6*n - 2\n```\n\n\nIt seems that maxima doesn't handle definite sums with \"non natural\" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.\n\nIndefinite sums seem to be fine. In this case, we could check the inputs, and raise a warning if we have a definite sum. I'll try to do this, but don't count on me since I already signed up for a lot this week.",
+    "body": "I uploaded a new patch in attachment:trac_3587-maxima_simplify_sum.patch. This has both patches folded together, and renames `sum()` to `symbolic_sum()` in `sage/calculus/calculus.py` and `sage/misc/functional.py` eliminating the risk of people using the symbolic sum instead of sum in library code without realizing, and the need to import `__builtin__`.\n\nI am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:\n\n```\nsage: sum(binomial(n,k), k, 1, n)\n2^n - 2\nsage: sum(binomial(n,k), k, 2, n)\n2^n - 2*n - 2\nsage: r=sum(binomial(n,k), k, 2, n-2)\nsage: r.simplify()\n2^n - 1/6*n^3 - 11/6*n - 2\n```\n\nIt seems that maxima doesn't handle definite sums with \"non natural\" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.\n\nIndefinite sums seem to be fine. In this case, we could check the inputs, and raise a warning if we have a definite sum. I'll try to do this, but don't count on me since I already signed up for a lot this week.",
     "created_at": "2009-06-23T21:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -293,7 +296,6 @@ I uploaded a new patch in attachment:trac_3587-maxima_simplify_sum.patch. This h
 
 I am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:
 
-
 ```
 sage: sum(binomial(n,k), k, 1, n)
 2^n - 2
@@ -303,7 +305,6 @@ sage: r=sum(binomial(n,k), k, 2, n-2)
 sage: r.simplify()
 2^n - 1/6*n^3 - 11/6*n - 2
 ```
-
 
 It seems that maxima doesn't handle definite sums with "non natural" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.
 
@@ -334,7 +335,7 @@ Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some
 archive/issue_comments_025280.json:
 ```json
 {
-    "body": "I installed this, but it does not seem to work as advertised.  Namely, \n\n```\nsage: var('n,k')\n(k, n)\nsage: sum(binomial(n,k),k,0,n)\nsimplify_sum(sum(binomial(n,k),k,0,n))\n```\n\nIt does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.\n\n> I am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:\n> \n> {{{\n> sage: sum(binomial(n,k), k, 1, n)\n> 2^n - 2\n> sage: sum(binomial(n,k), k, 2, n)\n> 2^n - 2*n - 2\n> sage: r=sum(binomial(n,k), k, 2, n-2)\n> sage: r.simplify()\n> 2^n - 1/6*n^3 - 11/6*n - 2\n> }}}\n> \n> It seems that maxima doesn't handle definite sums with \"non natural\" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.\n\nLooks like this problem is fixed in Maxima 5.19 (at least they work properly in 5.19.1), so this is another good reason to get that in Sage soon (there was an experimental spkg posted at [http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg](http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg) at one point).  Incidentally, apparently it never got to as heavy a hitter as Zeilberger, but I'm not sure where the problem was.",
+    "body": "I installed this, but it does not seem to work as advertised.  Namely, \n\n```\nsage: var('n,k')\n(k, n)\nsage: sum(binomial(n,k),k,0,n)\nsimplify_sum(sum(binomial(n,k),k,0,n))\n```\nIt does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.\n\n> I am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:\n> \n> \n> ```\n> sage: sum(binomial(n,k), k, 1, n)\n> 2^n - 2\n> sage: sum(binomial(n,k), k, 2, n)\n> 2^n - 2*n - 2\n> sage: r=sum(binomial(n,k), k, 2, n-2)\n> sage: r.simplify()\n> 2^n - 1/6*n^3 - 11/6*n - 2\n> ```\n> \n> It seems that maxima doesn't handle definite sums with \"non natural\" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.\n\n\nLooks like this problem is fixed in Maxima 5.19 (at least they work properly in 5.19.1), so this is another good reason to get that in Sage soon (there was an experimental spkg posted at [http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg](http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg) at one point).  Incidentally, apparently it never got to as heavy a hitter as Zeilberger, but I'm not sure where the problem was.",
     "created_at": "2009-08-28T20:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -351,12 +352,12 @@ sage: var('n,k')
 sage: sum(binomial(n,k),k,0,n)
 simplify_sum(sum(binomial(n,k),k,0,n))
 ```
-
 It does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.
 
 > I am OK with the patch, and ready to give it a positive review. However, there is a problem, maxima returns wrong results in certain cases:
 > 
-> {{{
+> 
+> ```
 > sage: sum(binomial(n,k), k, 1, n)
 > 2^n - 2
 > sage: sum(binomial(n,k), k, 2, n)
@@ -364,9 +365,10 @@ It does behave as desired if I go to Maxima and load(simplify_sum) etc., but tha
 > sage: r=sum(binomial(n,k), k, 2, n-2)
 > sage: r.simplify()
 > 2^n - 1/6*n^3 - 11/6*n - 2
-> }}}
+> ```
 > 
 > It seems that maxima doesn't handle definite sums with "non natural" bounds. I.e., in the examples above the bounds don't span the whole support of the expression, so one needs further processing to get the final result after calling Zeilberger's algorithm.
+
 
 Looks like this problem is fixed in Maxima 5.19 (at least they work properly in 5.19.1), so this is another good reason to get that in Sage soon (there was an experimental spkg posted at [http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg](http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg) at one point).  Incidentally, apparently it never got to as heavy a hitter as Zeilberger, but I'm not sure where the problem was.
 
@@ -377,7 +379,7 @@ Looks like this problem is fixed in Maxima 5.19 (at least they work properly in 
 archive/issue_comments_025281.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> I installed this, but it does not seem to work as advertised.  Namely, \n> {{{\n> sage: var('n,k')\n> (k, n)\n> sage: sum(binomial(n,k),k,0,n)\n> simplify_sum(sum(binomial(n,k),k,0,n))\n> }}}\n> It does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.\n\nIt works for me on sage-4.1.1 on Linux. I don't have a Mac to check.",
+    "body": "Replying to [comment:10 kcrisman]:\n> I installed this, but it does not seem to work as advertised.  Namely, \n> \n> ```\n> sage: var('n,k')\n> (k, n)\n> sage: sum(binomial(n,k),k,0,n)\n> simplify_sum(sum(binomial(n,k),k,0,n))\n> ```\n> It does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.\n\n\nIt works for me on sage-4.1.1 on Linux. I don't have a Mac to check.",
     "created_at": "2009-08-31T11:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -388,13 +390,15 @@ archive/issue_comments_025281.json:
 
 Replying to [comment:10 kcrisman]:
 > I installed this, but it does not seem to work as advertised.  Namely, 
-> {{{
+> 
+> ```
 > sage: var('n,k')
 > (k, n)
 > sage: sum(binomial(n,k),k,0,n)
 > simplify_sum(sum(binomial(n,k),k,0,n))
-> }}}
+> ```
 > It does behave as desired if I go to Maxima and load(simplify_sum) etc., but that's not the same.  Somehow it's staying symbolic for some reason.  This is off of 4.1.1 on Mac OSX.5.
+
 
 It works for me on sage-4.1.1 on Linux. I don't have a Mac to check.
 
@@ -405,7 +409,7 @@ It works for me on sage-4.1.1 on Linux. I don't have a Mac to check.
 archive/issue_comments_025282.json:
 ```json
 {
-    "body": "The fix for my problem is to change\n\n```\nmaxima = Maxima(init_code = ['display2d:false; domain: complex; keepfloat: true; load(topoly_solver); load(simplify_sum)'],\n                script_subdirectory=None)\n```\n\nby\n\n```\nmaxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(topoly_solver)', 'load(simplify_sum)'],\n                script_subdirectory=None)\n```\n\nthe need for which perhaps does depend on the operating system.   Can someone check that this doesn't break Linux?",
+    "body": "The fix for my problem is to change\n\n```\nmaxima = Maxima(init_code = ['display2d:false; domain: complex; keepfloat: true; load(topoly_solver); load(simplify_sum)'],\n                script_subdirectory=None)\n```\nby\n\n```\nmaxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(topoly_solver)', 'load(simplify_sum)'],\n                script_subdirectory=None)\n```\nthe need for which perhaps does depend on the operating system.   Can someone check that this doesn't break Linux?",
     "created_at": "2009-09-02T18:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -420,14 +424,12 @@ The fix for my problem is to change
 maxima = Maxima(init_code = ['display2d:false; domain: complex; keepfloat: true; load(topoly_solver); load(simplify_sum)'],
                 script_subdirectory=None)
 ```
-
 by
 
 ```
 maxima = Maxima(init_code = ['display2d:false', 'domain: complex', 'keepfloat: true', 'load(topoly_solver)', 'load(simplify_sum)'],
                 script_subdirectory=None)
 ```
-
 the need for which perhaps does depend on the operating system.   Can someone check that this doesn't break Linux?
 
 
@@ -437,7 +439,7 @@ the need for which perhaps does depend on the operating system.   Can someone ch
 archive/issue_comments_025283.json:
 ```json
 {
-    "body": "The latest .spkg in #6699 (and hence in 4.1.2.alpha0) should fix the problems Burcin mentions, and seems to handle all the sums properly.\n\n```\nsage: sum(binomial(n,k), k, 1, n)\n2^n - 2\nsage: sum(binomial(n,k), k, 2, n)\n2^n - 2*n - 2\n```\n\nare now\n\n```\nsage: var('k,n')\n(k, n)\nsage: sum(binomial(n,k),k,0,n)\n2^n\nsage: sum(binomial(n,k),k,1,n)\n2^n - 1\nsage: sum(binomial(n,k),k,2,n)\n2^n - n - 1\n```\n\nSo perhaps a new patch based on 4.1.2.alpha0 is in order, but then the review should be quite straightforward, with the fix above.",
+    "body": "The latest .spkg in #6699 (and hence in 4.1.2.alpha0) should fix the problems Burcin mentions, and seems to handle all the sums properly.\n\n```\nsage: sum(binomial(n,k), k, 1, n)\n2^n - 2\nsage: sum(binomial(n,k), k, 2, n)\n2^n - 2*n - 2\n```\nare now\n\n```\nsage: var('k,n')\n(k, n)\nsage: sum(binomial(n,k),k,0,n)\n2^n\nsage: sum(binomial(n,k),k,1,n)\n2^n - 1\nsage: sum(binomial(n,k),k,2,n)\n2^n - n - 1\n```\nSo perhaps a new patch based on 4.1.2.alpha0 is in order, but then the review should be quite straightforward, with the fix above.",
     "created_at": "2009-09-02T19:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -454,7 +456,6 @@ sage: sum(binomial(n,k), k, 1, n)
 sage: sum(binomial(n,k), k, 2, n)
 2^n - 2*n - 2
 ```
-
 are now
 
 ```
@@ -467,7 +468,6 @@ sage: sum(binomial(n,k),k,1,n)
 sage: sum(binomial(n,k),k,2,n)
 2^n - n - 1
 ```
-
 So perhaps a new patch based on 4.1.2.alpha0 is in order, but then the review should be quite straightforward, with the fix above.
 
 
@@ -513,7 +513,7 @@ I browsed through the patch---is it still easy to access the (fast) native pytho
 archive/issue_comments_025286.json:
 ```json
 {
-    "body": "Well, the following was identical with and without the patch:\n\n```\nsage: l = range(10^6)\nsage: time sum(l)\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.15 s\n499999500000L\n```\n\nAnd the same with summing m = 5*l, both 0.79 s, and summing n = 100*m, both about 80 s.  And sum(l,3) returns the correct answer (without the L).  Also, earlier mhansen seems to indicate that it's still okay - I don't know exactly where in the code that happens, though.  Hope this helps.",
+    "body": "Well, the following was identical with and without the patch:\n\n```\nsage: l = range(10^6)\nsage: time sum(l)\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.15 s\n499999500000L\n```\nAnd the same with summing m = 5*l, both 0.79 s, and summing n = 100*m, both about 80 s.  And sum(l,3) returns the correct answer (without the L).  Also, earlier mhansen seems to indicate that it's still okay - I don't know exactly where in the code that happens, though.  Hope this helps.",
     "created_at": "2009-09-03T00:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -531,7 +531,6 @@ CPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s
 Wall time: 0.15 s
 499999500000L
 ```
-
 And the same with summing m = 5*l, both 0.79 s, and summing n = 100*m, both about 80 s.  And sum(l,3) returns the correct answer (without the L).  Also, earlier mhansen seems to indicate that it's still okay - I don't know exactly where in the code that happens, though.  Hope this helps.
 
 
@@ -541,7 +540,7 @@ And the same with summing m = 5*l, both 0.79 s, and summing n = 100*m, both abou
 archive/issue_comments_025287.json:
 ```json
 {
-    "body": "Fix this one broken doctest and this gets a positive review from me:\n\n```python\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t devel/sage/sage/misc/functional.py \nsage -t  \"devel/sage/sage/misc/functional.py\"               \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/misc/functional.py\", line 442:\n    sage: sum(k * binomial(n, k), k, 1, n)\nExpected:\n    1/2*2^n*n\nGot:\n    n*2^(n - 1)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/misc/functional.py\", line 480:\n    sage: sum(a*q^k, k, 0, oo)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Sum is divergent.\nGot:\n    -a/(q - 1)\n**********************************************************************\n1 items had failures:\n   2 of  20 in __main__.example_25\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1.2.alpha1/tmp/.doctest_functional.py\n         [8.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/functional.py\"\nTotal time for all tests: 8.3 seconds\nwstein@sage:~/build/sage-4.1.2.alpha1$ \n```\n\n\nThe above is just the result of changes in Maxima going from 5.16 to 5.19 in sage-4.1.2.\n\n  -- William",
+    "body": "Fix this one broken doctest and this gets a positive review from me:\n\n```python\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t devel/sage/sage/misc/functional.py \nsage -t  \"devel/sage/sage/misc/functional.py\"               \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/misc/functional.py\", line 442:\n    sage: sum(k * binomial(n, k), k, 1, n)\nExpected:\n    1/2*2^n*n\nGot:\n    n*2^(n - 1)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/misc/functional.py\", line 480:\n    sage: sum(a*q^k, k, 0, oo)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Sum is divergent.\nGot:\n    -a/(q - 1)\n**********************************************************************\n1 items had failures:\n   2 of  20 in __main__.example_25\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1.2.alpha1/tmp/.doctest_functional.py\n         [8.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/functional.py\"\nTotal time for all tests: 8.3 seconds\nwstein@sage:~/build/sage-4.1.2.alpha1$ \n```\n\nThe above is just the result of changes in Maxima going from 5.16 to 5.19 in sage-4.1.2.\n\n  -- William",
     "created_at": "2009-09-13T01:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -588,7 +587,6 @@ Total time for all tests: 8.3 seconds
 wstein@sage:~/build/sage-4.1.2.alpha1$ 
 ```
 
-
 The above is just the result of changes in Maxima going from 5.16 to 5.19 in sage-4.1.2.
 
   -- William
@@ -600,7 +598,7 @@ The above is just the result of changes in Maxima going from 5.16 to 5.19 in sag
 archive/issue_comments_025288.json:
 ```json
 {
-    "body": "This is nice!\n\nJust a small note: Sphinx warns about the indentation of the new `note::` block in `expression.pyx`:\n\n```\n/home/apps/sage/devel/sage/doc/en/reference/sage/symbolic/expression.rst:: (ERROR/3) Content block expected for the \"note\" directive; none found.\n```\n",
+    "body": "This is nice!\n\nJust a small note: Sphinx warns about the indentation of the new `note::` block in `expression.pyx`:\n\n```\n/home/apps/sage/devel/sage/doc/en/reference/sage/symbolic/expression.rst:: (ERROR/3) Content block expected for the \"note\" directive; none found.\n```",
     "created_at": "2009-09-13T01:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -616,7 +614,6 @@ Just a small note: Sphinx warns about the indentation of the new `note::` block 
 ```
 /home/apps/sage/devel/sage/doc/en/reference/sage/symbolic/expression.rst:: (ERROR/3) Content block expected for the "note" directive; none found.
 ```
-
 
 
 
@@ -744,7 +741,7 @@ Great, I'll do that as well.
 archive/issue_comments_025295.json:
 ```json
 {
-    "body": "I get *tons* of doctest failures when I apply this patch, say to sage-4.1.2.alpha1:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/misc/functional.py # 5 doctests failed\n        sage -t  devel/sage/sage/calculus/calculus.py # 10 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 9 doctests failed\n```\n\n\nSee http://sage.math.washington.edu/home/wstein/build/sage-4.1.2.alpha1/test_3587.out",
+    "body": "I get *tons* of doctest failures when I apply this patch, say to sage-4.1.2.alpha1:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/misc/functional.py # 5 doctests failed\n        sage -t  devel/sage/sage/calculus/calculus.py # 10 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 9 doctests failed\n```\n\nSee http://sage.math.washington.edu/home/wstein/build/sage-4.1.2.alpha1/test_3587.out",
     "created_at": "2009-09-22T14:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -762,7 +759,6 @@ The following tests failed:
         sage -t  devel/sage/sage/calculus/calculus.py # 10 doctests failed
         sage -t  devel/sage/sage/symbolic/expression.pyx # 9 doctests failed
 ```
-
 
 See http://sage.math.washington.edu/home/wstein/build/sage-4.1.2.alpha1/test_3587.out
 

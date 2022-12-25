@@ -3,7 +3,7 @@
 archive/issues_009363.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nConsider the following files and what sage\ndoes with each when they are loaded:\n\n---- foo1.sage ------\ndef add(a,b):\n return a+b\n------------------------\n\n--- foo2.py---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\n--- foo3.sage---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: load \"foo1.sage\"\nsage: load \"foo2.py\"\nsage: load \"foo3.sage\"\n------------------------------------------------------------\n  File \"<string>\", line 3\n    # this is a comment\n                      ^\nSyntaxError: invalid syntax\n| Sage Version 4.4.4, Release Date: 2010-06-23                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\n\nIs the inability to load foo3.sage a bug or a feature?\n\nAccording to William Stein: \n\n> It's a bug.   Please make a trac ticket for this. \n> Note that adding a newline to the end of the file is enough to \n> fix the problem... \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9363\n\n",
+    "body": "Assignee: somebody\n\n```\nConsider the following files and what sage\ndoes with each when they are loaded:\n\n---- foo1.sage ------\ndef add(a,b):\n return a+b\n------------------------\n\n--- foo2.py---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\n--- foo3.sage---\ndef add(a,b):\n return a+b\n# this is a comment\n---------------------\n\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: load \"foo1.sage\"\nsage: load \"foo2.py\"\nsage: load \"foo3.sage\"\n------------------------------------------------------------\n  File \"<string>\", line 3\n    # this is a comment\n                      ^\nSyntaxError: invalid syntax\n| Sage Version 4.4.4, Release Date: 2010-06-23                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\n\nIs the inability to load foo3.sage a bug or a feature?\n\nAccording to William Stein: \n\n> It's a bug.   Please make a trac ticket for this. \n> Note that adding a newline to the end of the file is enough to \n> fix the problem... \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9363\n\n",
     "created_at": "2010-06-28T19:38:07Z",
     "labels": [
         "component: misc",
@@ -18,7 +18,6 @@ archive/issues_009363.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 Consider the following files and what sage
@@ -65,7 +64,6 @@ According to William Stein:
 > fix the problem... 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9363
 
 
@@ -77,7 +75,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9363
 archive/issue_comments_088792.json:
 ```json
 {
-    "body": "One line reproduction recipe:\n\n\n```\nexec(\"if True:\\n pass\\n#\")\n```\n",
+    "body": "One line reproduction recipe:\n\n```\nexec(\"if True:\\n pass\\n#\")\n```",
     "created_at": "2011-01-07T23:08:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -88,11 +86,9 @@ archive/issue_comments_088792.json:
 
 One line reproduction recipe:
 
-
 ```
 exec("if True:\n pass\n#")
 ```
-
 
 
 
@@ -101,7 +97,7 @@ exec("if True:\n pass\n#")
 archive/issue_comments_088793.json:
 ```json
 {
-    "body": "The reason for this is likely this note from the python docs:\n\n\n```\nWhen compiling a string with multi-line code in\n'single' or 'eval' mode, input must be terminated\nby at least one newline character. This is to\nfacilitate detection of incomplete and complete\nstatements in the code module.\n```\n\n\n(Also note:\n\n```\nChanged in version 2.7: Allowed use of Windows and\nMac newlines. Also input in 'exec' mode does not\nhave to end in a newline anymore.\n```\n\n)\n\nThe obvious patch would be to add a newline automatically before passing the input to `exec`. I'll create a patch for this.",
+    "body": "The reason for this is likely this note from the python docs:\n\n```\nWhen compiling a string with multi-line code in\n'single' or 'eval' mode, input must be terminated\nby at least one newline character. This is to\nfacilitate detection of incomplete and complete\nstatements in the code module.\n```\n\n(Also note:\n\n```\nChanged in version 2.7: Allowed use of Windows and\nMac newlines. Also input in 'exec' mode does not\nhave to end in a newline anymore.\n```\n)\n\nThe obvious patch would be to add a newline automatically before passing the input to `exec`. I'll create a patch for this.",
     "created_at": "2011-01-07T23:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -112,7 +108,6 @@ archive/issue_comments_088793.json:
 
 The reason for this is likely this note from the python docs:
 
-
 ```
 When compiling a string with multi-line code in
 'single' or 'eval' mode, input must be terminated
@@ -121,7 +116,6 @@ facilitate detection of incomplete and complete
 statements in the code module.
 ```
 
-
 (Also note:
 
 ```
@@ -129,7 +123,6 @@ Changed in version 2.7: Allowed use of Windows and
 Mac newlines. Also input in 'exec' mode does not
 have to end in a newline anymore.
 ```
-
 )
 
 The obvious patch would be to add a newline automatically before passing the input to `exec`. I'll create a patch for this.
@@ -239,7 +232,7 @@ Which version of sage are you using? Unless I messed something up, it's a patch 
 archive/issue_comments_088799.json:
 ```json
 {
-    "body": "Replying to [comment:5 wjp]:\n> Which version of sage are you using? Unless I messed something up, it's a patch against 4.6.1.rc0, which I should have mentioned, sorry.\n\nOkay!  I was just using 4.6.",
+    "body": "Replying to [comment:5 wjp]:\n> Which version of sage are you using? Unless I messed something up, it's a patch against 4.6.1.rc0, which I should have mentioned, sorry.\n\n\nOkay!  I was just using 4.6.",
     "created_at": "2011-01-08T00:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -250,6 +243,7 @@ archive/issue_comments_088799.json:
 
 Replying to [comment:5 wjp]:
 > Which version of sage are you using? Unless I messed something up, it's a patch against 4.6.1.rc0, which I should have mentioned, sorry.
+
 
 Okay!  I was just using 4.6.
 
@@ -302,7 +296,7 @@ I'll try again on sage-4.6.rc1 and see what happens there.
 archive/issue_comments_088802.json:
 ```json
 {
-    "body": "Replying to [comment:8 aly.deines]:\n> On sage-4.6.rc0 the following tests failed:\n> \n> \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> \n> I'll try again on sage-4.6.rc1 and see what happens there.\n\nBetter formatting:\n\n\n```\n\n\tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n\tsage -t  \"devel/sage/sage/interfaces/r.py\"\n\tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n```\n",
+    "body": "Replying to [comment:8 aly.deines]:\n> On sage-4.6.rc0 the following tests failed:\n> \n> \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> \n> I'll try again on sage-4.6.rc1 and see what happens there.\n\n\nBetter formatting:\n\n```\n\n\tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n\tsage -t  \"devel/sage/sage/interfaces/r.py\"\n\tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n```",
     "created_at": "2011-01-08T20:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -320,8 +314,8 @@ Replying to [comment:8 aly.deines]:
 > 
 > I'll try again on sage-4.6.rc1 and see what happens there.
 
-Better formatting:
 
+Better formatting:
 
 ```
 
@@ -329,7 +323,6 @@ Better formatting:
 	sage -t  "devel/sage/sage/interfaces/r.py"
 	sage -t  "devel/sage/sage/plot/plot3d/base.pyx"
 ```
-
 
 
 
@@ -356,7 +349,7 @@ Strange, but those shouldn't be related to this patch (or so I hope). Do they al
 archive/issue_comments_088804.json:
 ```json
 {
-    "body": "Replying to [comment:10 wjp]:\n> Strange, but those shouldn't be related to this patch (or so I hope). Do they also happen if you run these three tests manually? And without this patch?\n\nI get the same thing when the three tests are run manually, and these tests pass when the patch is not applied.",
+    "body": "Replying to [comment:10 wjp]:\n> Strange, but those shouldn't be related to this patch (or so I hope). Do they also happen if you run these three tests manually? And without this patch?\n\n\nI get the same thing when the three tests are run manually, and these tests pass when the patch is not applied.",
     "created_at": "2011-01-08T23:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -367,6 +360,7 @@ archive/issue_comments_088804.json:
 
 Replying to [comment:10 wjp]:
 > Strange, but those shouldn't be related to this patch (or so I hope). Do they also happen if you run these three tests manually? And without this patch?
+
 
 I get the same thing when the three tests are run manually, and these tests pass when the patch is not applied.
 
@@ -395,7 +389,7 @@ Can you show the full output of the failing tests? (I can't get them to fail mys
 archive/issue_comments_088806.json:
 ```json
 {
-    "body": "Replying to [comment:9 aly.deines]:\n> Replying to [comment:8 aly.deines]:\n> > On sage-4.6.rc0 the following tests failed:\n> > \n> > \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> > \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> > \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> > \n> > I'll try again on sage-4.6.rc1 and see what happens there.\n> \n> Better formatting:\n> \n> {{{\n> \n> \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> }}}\n\nI'll unapply the patch and retry these three doctests, but earlier this afternoon they failed both before and after the patch was applied.\n\n\nHowever, the test\n\n\n```\n      sage -t  \"devel/sage/sage/misc/preparser.py\"\n```\n\n\nPasses both before and after applying the patch.",
+    "body": "Replying to [comment:9 aly.deines]:\n> Replying to [comment:8 aly.deines]:\n> > On sage-4.6.rc0 the following tests failed:\n> > \n> > \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> > \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> > \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> > \n> > I'll try again on sage-4.6.rc1 and see what happens there.\n\n> \n> Better formatting:\n> \n> \n> ```\n> \n> \tsage -t  \"devel/sage/sage/categories/hopf_algebras.py\" # Time out\n> \tsage -t  \"devel/sage/sage/interfaces/r.py\"\n> \tsage -t  \"devel/sage/sage/plot/plot3d/base.pyx\"\n> ```\n\n\nI'll unapply the patch and retry these three doctests, but earlier this afternoon they failed both before and after the patch was applied.\n\n\nHowever, the test\n\n```\n      sage -t  \"devel/sage/sage/misc/preparser.py\"\n```\n\nPasses both before and after applying the patch.",
     "created_at": "2011-01-09T00:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -413,26 +407,27 @@ Replying to [comment:9 aly.deines]:
 > > 	sage -t  "devel/sage/sage/plot/plot3d/base.pyx"
 > > 
 > > I'll try again on sage-4.6.rc1 and see what happens there.
+
 > 
 > Better formatting:
 > 
-> {{{
+> 
+> ```
 > 
 > 	sage -t  "devel/sage/sage/categories/hopf_algebras.py" # Time out
 > 	sage -t  "devel/sage/sage/interfaces/r.py"
 > 	sage -t  "devel/sage/sage/plot/plot3d/base.pyx"
-> }}}
+> ```
+
 
 I'll unapply the patch and retry these three doctests, but earlier this afternoon they failed both before and after the patch was applied.
 
 
 However, the test
 
-
 ```
       sage -t  "devel/sage/sage/misc/preparser.py"
 ```
-
 
 Passes both before and after applying the patch.
 
@@ -443,7 +438,7 @@ Passes both before and after applying the patch.
 archive/issue_comments_088807.json:
 ```json
 {
-    "body": "passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: \n\n\n```\n\ndevel/sage/sage/misc/preparser.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage/sage/misc/preparser.py: 88% (23 of 26)\n\nMissing documentation:\n\t * isalphadigit_(s):\n\t * for lambda try \"\"\".split() in_single_quote = False in_double_quote = False in_triple_quote = False def in_quote():\n\t * re_no_keyword(pattern, code):\n```\n",
+    "body": "passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: \n\n```\n\ndevel/sage/sage/misc/preparser.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage/sage/misc/preparser.py: 88% (23 of 26)\n\nMissing documentation:\n\t * isalphadigit_(s):\n\t * for lambda try \"\"\".split() in_single_quote = False in_double_quote = False in_triple_quote = False def in_quote():\n\t * re_no_keyword(pattern, code):\n```",
     "created_at": "2011-01-09T00:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -453,7 +448,6 @@ archive/issue_comments_088807.json:
 ```
 
 passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: 
-
 
 ```
 
@@ -469,13 +463,12 @@ Missing documentation:
 
 
 
-
 ---
 
 archive/issue_comments_088808.json:
 ```json
 {
-    "body": "Replying to [comment:14 jthurber]:\n> passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: \n> \n> {{{\n> \n> devel/sage/sage/misc/preparser.py\n> ERROR: Please add a `TestSuite(s).run()` doctest.\n> SCORE devel/sage/sage/misc/preparser.py: 88% (23 of 26)\n> \n> Missing documentation:\n> \t * isalphadigit_(s):\n> \t * for lambda try \"\"\".split() in_single_quote = False in_double_quote = False in_triple_quote = False def in_quote():\n> \t * re_no_keyword(pattern, code):\n> }}}\n\nSo two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  \nSecond, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)",
+    "body": "Replying to [comment:14 jthurber]:\n> passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: \n> \n> \n> ```\n> \n> devel/sage/sage/misc/preparser.py\n> ERROR: Please add a `TestSuite(s).run()` doctest.\n> SCORE devel/sage/sage/misc/preparser.py: 88% (23 of 26)\n> \n> Missing documentation:\n> \t * isalphadigit_(s):\n> \t * for lambda try \"\"\".split() in_single_quote = False in_double_quote = False in_triple_quote = False def in_quote():\n> \t * re_no_keyword(pattern, code):\n> ```\n\n\nSo two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  \nSecond, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)",
     "created_at": "2011-01-09T00:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -487,7 +480,8 @@ archive/issue_comments_088808.json:
 Replying to [comment:14 jthurber]:
 > passed all tests for me this afternoon (4.6.4.rc1), but checking coverage yielded: 
 > 
-> {{{
+> 
+> ```
 > 
 > devel/sage/sage/misc/preparser.py
 > ERROR: Please add a `TestSuite(s).run()` doctest.
@@ -497,7 +491,8 @@ Replying to [comment:14 jthurber]:
 > 	 * isalphadigit_(s):
 > 	 * for lambda try """.split() in_single_quote = False in_double_quote = False in_triple_quote = False def in_quote():
 > 	 * re_no_keyword(pattern, code):
-> }}}
+> ```
+
 
 So two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  
 Second, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)
@@ -527,7 +522,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088810.json:
 ```json
 {
-    "body": "Replying to [comment:15 aly.deines]:\n> So two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  \n> Second, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)\n\nIt looks to me like those doctest failures were fixed some time between 4.6 and 4.6.1rc0.",
+    "body": "Replying to [comment:15 aly.deines]:\n> So two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  \n> Second, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)\n\n\nIt looks to me like those doctest failures were fixed some time between 4.6 and 4.6.1rc0.",
     "created_at": "2011-01-09T01:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9363",
     "type": "issue_comment",
@@ -539,6 +534,7 @@ archive/issue_comments_088810.json:
 Replying to [comment:15 aly.deines]:
 > So two things, first, I think I ran the tests on a different version of sage, as now I am getting that those three tests fail both with and without the patch applied.  
 > Second, the add 'TestSuit(s).run()' doctest and the missing doctest are not related to this ticket (though completing the coverage could be another ticket.)
+
 
 It looks to me like those doctest failures were fixed some time between 4.6 and 4.6.1rc0.
 

@@ -3,7 +3,7 @@
 archive/issues_006645.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
     "created_at": "2009-07-28T03:01:36Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ archive/issues_006645.json:
 Assignee: tbd
 
 CC:  @mwhansen
-
 
 ```
 Hi,
@@ -45,7 +44,6 @@ Buiding Sage, doing "./sage -bdist", then extracting the result and having "make
 William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6645
 
 
@@ -57,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6645
 archive/issue_comments_054389.json:
 ```json
 {
-    "body": "It appears that the doc rebuild is a consequence of\n\n```\n#Build the documentation\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n```\n\nat the end of `spkg/install`.  Perhaps we should recast this as a `make` target?  I think this is a problem in a source distribution, too.\n\nBut if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests **still** fail...",
+    "body": "It appears that the doc rebuild is a consequence of\n\n```\n#Build the documentation\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n```\nat the end of `spkg/install`.  Perhaps we should recast this as a `make` target?  I think this is a problem in a source distribution, too.\n\nBut if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests **still** fail...",
     "created_at": "2009-07-28T10:40:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -74,7 +72,6 @@ rm -rf "$SAGE_ROOT"/devel/sage-main/doc/output/doctrees
 rm -rf "$SAGE_ROOT"/devel/sage-main/doc/en/reference/sage/*
 "$SAGE_ROOT"/sage -docbuild --jsmath all html
 ```
-
 at the end of `spkg/install`.  Perhaps we should recast this as a `make` target?  I think this is a problem in a source distribution, too.
 
 But if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests **still** fail...
@@ -128,7 +125,7 @@ On rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?
 archive/issue_comments_054392.json:
 ```json
 {
-    "body": "The idea is that a binary version shouldn't rebuild the documentation when you issue the command\n\n```\nmake test\n```\n\nin the Sage root directory. But with the patch, this still happens. I may be wrong, but here are the steps I followed:\n1. Take a binary version of Sage 4.1.1.rc1.\n2. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.\n3. Create another binary version from that binary version.\n4. Extract the new binary version.\n5. Navigate to `SAGE_ROOT` of the new binary version. Do `./sage`, exit Sage, and then do `./sage -br main` and exit Sage again.\n6. Run the command `make test`\nAnd the documentation is rebuilt regardless of whether or not I first build the HTML version of the documentation.",
+    "body": "The idea is that a binary version shouldn't rebuild the documentation when you issue the command\n\n```\nmake test\n```\nin the Sage root directory. But with the patch, this still happens. I may be wrong, but here are the steps I followed:\n1. Take a binary version of Sage 4.1.1.rc1.\n2. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.\n3. Create another binary version from that binary version.\n4. Extract the new binary version.\n5. Navigate to `SAGE_ROOT` of the new binary version. Do `./sage`, exit Sage, and then do `./sage -br main` and exit Sage again.\n6. Run the command `make test`\nAnd the documentation is rebuilt regardless of whether or not I first build the HTML version of the documentation.",
     "created_at": "2009-08-05T15:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -142,7 +139,6 @@ The idea is that a binary version shouldn't rebuild the documentation when you i
 ```
 make test
 ```
-
 in the Sage root directory. But with the patch, this still happens. I may be wrong, but here are the steps I followed:
 1. Take a binary version of Sage 4.1.1.rc1.
 2. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.
@@ -159,7 +155,7 @@ And the documentation is rebuilt regardless of whether or not I first build the 
 archive/issue_comments_054393.json:
 ```json
 {
-    "body": "I'm not even sure that the patch still works for the failed tests.\n\nIt should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROOT/spkg/install` is not under version control, but this is what I have in mind:\n\n```\n--- install.orig        2009-08-05 08:28:30.099076846 -0700\n+++ install     2009-08-05 07:35:39.097918589 -0700\n@@ -373,8 +373,8 @@ if [ $? -ne 0 ]; then\n fi\n \n #Build the documentation\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n \"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n \n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n```\n",
+    "body": "I'm not even sure that the patch still works for the failed tests.\n\nIt should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROOT/spkg/install` is not under version control, but this is what I have in mind:\n\n```\n--- install.orig        2009-08-05 08:28:30.099076846 -0700\n+++ install     2009-08-05 07:35:39.097918589 -0700\n@@ -373,8 +373,8 @@ if [ $? -ne 0 ]; then\n fi\n \n #Build the documentation\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n \"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n \n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n```",
     "created_at": "2009-08-05T15:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -187,7 +183,6 @@ It should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROO
  
  if [ "$1" = "all" -a $? = 0 ]; then
 ```
-
 
 
 
@@ -238,7 +233,7 @@ Why were the `rm -rf` lines first added to `spkg/install`?
 archive/issue_comments_054396.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n\n> Why were the `rm -rf` lines first added to `spkg/install`?\n\nI think Mike Hansen had a reason for it, but I don't remember what it was.  I'll cc him on the ticket, on the off-chance he can look at it.",
+    "body": "Replying to [comment:5 mpatel]:\n\n> Why were the `rm -rf` lines first added to `spkg/install`?\n\n\nI think Mike Hansen had a reason for it, but I don't remember what it was.  I'll cc him on the ticket, on the off-chance he can look at it.",
     "created_at": "2009-08-07T23:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -250,6 +245,7 @@ archive/issue_comments_054396.json:
 Replying to [comment:5 mpatel]:
 
 > Why were the `rm -rf` lines first added to `spkg/install`?
+
 
 I think Mike Hansen had a reason for it, but I don't remember what it was.  I'll cc him on the ticket, on the off-chance he can look at it.
 
@@ -417,7 +413,7 @@ So the culprit here is the option `--jsmath` to the docbuild script. I'm prepare
 archive/issue_comments_054402.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.\nAt least, it's not nilpotent, though that would be quite interesting.",
+    "body": "Replying to [comment:10 mpatel]:\n> In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.\n\nAt least, it's not nilpotent, though that would be quite interesting.",
     "created_at": "2009-08-10T01:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6645",
     "type": "issue_comment",
@@ -428,6 +424,7 @@ archive/issue_comments_054402.json:
 
 Replying to [comment:10 mpatel]:
 > In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.
+
 At least, it's not nilpotent, though that would be quite interesting.
 
 

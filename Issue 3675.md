@@ -3,7 +3,7 @@
 archive/issues_003675.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\n[12:50pm] rlm: __Pyx_ImportType?\n[12:51pm] rlm: sound familiar? i'm valgrinding, and this\nseems to be many of 13,030 loss records...\n[12:51pm] mabshoff: Yes.\n[12:51pm] mabshoff: It is Cython dictionaries and I plan\nto suppress them in the future.\n...\n[12:52pm] mabshoff: Can you make a ticket for it? I also\nwant to upgrade the optional valgrind.spkg to 3.3.1 and\nalso change some of the default options, i.e. no more\n--follow-children\n```\n\n\nAnother suggestion- an optional python spkg which has valgrind-friendly compile options set, perhaps even just a replacement `spkg-install` which uses the standard spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3675\n\n",
+    "body": "Assignee: mabshoff\n\n```\n[12:50pm] rlm: __Pyx_ImportType?\n[12:51pm] rlm: sound familiar? i'm valgrinding, and this\nseems to be many of 13,030 loss records...\n[12:51pm] mabshoff: Yes.\n[12:51pm] mabshoff: It is Cython dictionaries and I plan\nto suppress them in the future.\n...\n[12:52pm] mabshoff: Can you make a ticket for it? I also\nwant to upgrade the optional valgrind.spkg to 3.3.1 and\nalso change some of the default options, i.e. no more\n--follow-children\n```\n\nAnother suggestion- an optional python spkg which has valgrind-friendly compile options set, perhaps even just a replacement `spkg-install` which uses the standard spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3675\n\n",
     "created_at": "2008-07-18T20:03:58Z",
     "labels": [
         "component: packages: optional"
@@ -16,7 +16,6 @@ archive/issues_003675.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 [12:50pm] rlm: __Pyx_ImportType?
@@ -31,7 +30,6 @@ want to upgrade the optional valgrind.spkg to 3.3.1 and
 also change some of the default options, i.e. no more
 --follow-children
 ```
-
 
 Another suggestion- an optional python spkg which has valgrind-friendly compile options set, perhaps even just a replacement `spkg-install` which uses the standard spkg.
 

@@ -3,7 +3,7 @@
 archive/issues_002626.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nSage 2.10.4 contains 5 `__list__` methods, which are never called.  Apparently the authors of these methods thought that list(x) would call `x.__list__()`, but it does not; the Python source code contains no instance of the string \"`__list__`\".\n\nlist(x) does call `x.__iter__()`, which is how the doctests on these methods manage to work.\n\nThe methods should be removed, so as not to mislead future developers into thinking they do something.\n\n\n```\nsage: search_src('__list__')\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ncrypto/mq/mpolynomialsystem.py:    def __list__(self):\ncrypto/mq/mpolynomialsystem.py:    def __list__(self):\ncrypto/mq/sbox.py:    def __list__(self):\nschemes/elliptic_curves/ell_point.py:    def __list__(self):\nschemes/generic/morphism.py:    def __list__(self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2626\n\n",
+    "body": "Assignee: cwitty\n\nSage 2.10.4 contains 5 `__list__` methods, which are never called.  Apparently the authors of these methods thought that list(x) would call `x.__list__()`, but it does not; the Python source code contains no instance of the string \"`__list__`\".\n\nlist(x) does call `x.__iter__()`, which is how the doctests on these methods manage to work.\n\nThe methods should be removed, so as not to mislead future developers into thinking they do something.\n\n```\nsage: search_src('__list__')\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ncrypto/mq/mpolynomialsystem.py:    def __list__(self):\ncrypto/mq/mpolynomialsystem.py:    def __list__(self):\ncrypto/mq/sbox.py:    def __list__(self):\nschemes/elliptic_curves/ell_point.py:    def __list__(self):\nschemes/generic/morphism.py:    def __list__(self):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2626\n\n",
     "created_at": "2008-03-21T02:28:51Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ list(x) does call `x.__iter__()`, which is how the doctests on these methods man
 
 The methods should be removed, so as not to mislead future developers into thinking they do something.
 
-
 ```
 sage: search_src('__list__')
 ----------------------------------------------------------------------
@@ -35,7 +34,6 @@ crypto/mq/sbox.py:    def __list__(self):
 schemes/elliptic_curves/ell_point.py:    def __list__(self):
 schemes/generic/morphism.py:    def __list__(self):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2626
 

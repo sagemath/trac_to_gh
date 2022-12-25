@@ -3,7 +3,7 @@
 archive/issues_006643.json:
 ```json
 {
-    "body": "Assignee: @seblabbe\n\nThe following works fine, i.e vector function doesn't change the ring of the input vector :\n\n\n```\nsage: K.<sqrt3> = QuadraticField(3); K\nNumber Field in sqrt3 with defining polynomial x^2 - 3\nsage: v = vector(K, (1/2, sqrt3/2) ); v\n(1/2, 1/2*sqrt3)\nsage: v.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v).parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\n```\n\n\nFor rationals coordinates, it is also OK :\n\n\n```\nsage: v2 = vector(K, (1/2, 3/2) ); v2\n(1/2, 3/2)\nsage: v2.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v2).parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\n```\n\n\nBut, for integers, it changes the ring for ZZ :\n\n\n```\nsage: v3 = vector(K, (0, 1) )\nsage: v3.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v3).parent()\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\n```\n\n\nwhich I doesn't like because I want to be able to add them (the addition of those vector appears to be unsupported yet by the coercion system...this could be another ticket...) :\n\n\n```\nsage: v + v3\n(1/2, 1/2*sqrt3 + 1)\nsage: vector(v) + vector(v3)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1052, 0))\n\nTraceback (most recent call last):\n...\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/modules/free_module.pyc in __cmp__(self, other)\n   3806             if not c: return c\n   3807             try:\n-> 3808                 if self.base_ring().is_subring(other.base_ring()):\n   3809                     return -1\n   3810                 elif other.base_ring().is_subring(self.base_ring()):\n\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.is_subring (sage/rings/ring.c:4724)()\n\nAttributeError: 'NotImplementedType' object has no attribute 'natural_map'\n```\n\n\nI will also ask on sage-devel if there is a reason why the vector function changes the ring of a vector for ZZ when possible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6643\n\n",
+    "body": "Assignee: @seblabbe\n\nThe following works fine, i.e vector function doesn't change the ring of the input vector :\n\n```\nsage: K.<sqrt3> = QuadraticField(3); K\nNumber Field in sqrt3 with defining polynomial x^2 - 3\nsage: v = vector(K, (1/2, sqrt3/2) ); v\n(1/2, 1/2*sqrt3)\nsage: v.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v).parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\n```\n\nFor rationals coordinates, it is also OK :\n\n```\nsage: v2 = vector(K, (1/2, 3/2) ); v2\n(1/2, 3/2)\nsage: v2.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v2).parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\n```\n\nBut, for integers, it changes the ring for ZZ :\n\n```\nsage: v3 = vector(K, (0, 1) )\nsage: v3.parent()\nVector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3\nsage: vector(v3).parent()\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\n```\n\nwhich I doesn't like because I want to be able to add them (the addition of those vector appears to be unsupported yet by the coercion system...this could be another ticket...) :\n\n```\nsage: v + v3\n(1/2, 1/2*sqrt3 + 1)\nsage: vector(v) + vector(v3)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1052, 0))\n\nTraceback (most recent call last):\n...\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/modules/free_module.pyc in __cmp__(self, other)\n   3806             if not c: return c\n   3807             try:\n-> 3808                 if self.base_ring().is_subring(other.base_ring()):\n   3809                     return -1\n   3810                 elif other.base_ring().is_subring(self.base_ring()):\n\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.is_subring (sage/rings/ring.c:4724)()\n\nAttributeError: 'NotImplementedType' object has no attribute 'natural_map'\n```\n\nI will also ask on sage-devel if there is a reason why the vector function changes the ring of a vector for ZZ when possible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6643\n\n",
     "created_at": "2009-07-27T19:40:35Z",
     "labels": [
         "component: linear algebra",
@@ -20,7 +20,6 @@ Assignee: @seblabbe
 
 The following works fine, i.e vector function doesn't change the ring of the input vector :
 
-
 ```
 sage: K.<sqrt3> = QuadraticField(3); K
 Number Field in sqrt3 with defining polynomial x^2 - 3
@@ -32,9 +31,7 @@ sage: vector(v).parent()
 Vector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3
 ```
 
-
 For rationals coordinates, it is also OK :
-
 
 ```
 sage: v2 = vector(K, (1/2, 3/2) ); v2
@@ -45,9 +42,7 @@ sage: vector(v2).parent()
 Vector space of dimension 2 over Number Field in sqrt3 with defining polynomial x^2 - 3
 ```
 
-
 But, for integers, it changes the ring for ZZ :
-
 
 ```
 sage: v3 = vector(K, (0, 1) )
@@ -57,9 +52,7 @@ sage: vector(v3).parent()
 Ambient free module of rank 2 over the principal ideal domain Integer Ring
 ```
 
-
 which I doesn't like because I want to be able to add them (the addition of those vector appears to be unsupported yet by the coercion system...this could be another ticket...) :
-
 
 ```
 sage: v + v3
@@ -82,7 +75,6 @@ Traceback (most recent call last):
 
 AttributeError: 'NotImplementedType' object has no attribute 'natural_map'
 ```
-
 
 I will also ask on sage-devel if there is a reason why the vector function changes the ring of a vector for ZZ when possible.
 

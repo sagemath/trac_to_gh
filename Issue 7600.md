@@ -176,7 +176,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064728.json:
 ```json
 {
-    "body": "oops:\n\n```\nsage: vc2 = g.vertex_cover(algorithm=\"Cliquer\")\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/98560/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in vertex_cover(self, algorithm, value_only, log)\n   3325                 return self.order()-len(independent)\n   3326             else:\n-> 3327                 return set(g.vertices()).difference(set(independent))\n   3328 \n   3329         elif algorithm==\"MILP\":\n\nUnboundLocalError: local variable 'g' referenced before assignment\n```\n",
+    "body": "oops:\n\n```\nsage: vc2 = g.vertex_cover(algorithm=\"Cliquer\")\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/98560/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in vertex_cover(self, algorithm, value_only, log)\n   3325                 return self.order()-len(independent)\n   3326             else:\n-> 3327                 return set(g.vertices()).difference(set(independent))\n   3328 \n   3329         elif algorithm==\"MILP\":\n\nUnboundLocalError: local variable 'g' referenced before assignment\n```",
     "created_at": "2009-12-15T17:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7600",
     "type": "issue_comment",
@@ -203,7 +203,6 @@ UnboundLocalError                         Traceback (most recent call last)
 
 UnboundLocalError: local variable 'g' referenced before assignment
 ```
-
 
 
 

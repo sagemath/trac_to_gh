@@ -145,7 +145,7 @@ Has this fix been reported upstream?
 archive/issue_comments_012622.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> Has this fix been reported upstream?\n\nNope, not yet. It is mostly a work around for neron since the Sun compiler on there is busted. In fact, Sun stopped shipping their compiler suit for free [as in beer] many years ago, but recently started to offer them again for free [as in beer]. I can send a patch upstream, but the fix is trivial, i.e. replacing a hard coded `cc` in the makefile of the dik solver with `$(CC)`.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> Has this fix been reported upstream?\n\n\nNope, not yet. It is mostly a work around for neron since the Sun compiler on there is busted. In fact, Sun stopped shipping their compiler suit for free [as in beer] many years ago, but recently started to offer them again for free [as in beer]. I can send a patch upstream, but the fix is trivial, i.e. replacing a hard coded `cc` in the makefile of the dik solver with `$(CC)`.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-28T21:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1959",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_012622.json:
 
 Replying to [comment:4 robertwb]:
 > Has this fix been reported upstream?
+
 
 Nope, not yet. It is mostly a work around for neron since the Sun compiler on there is busted. In fact, Sun stopped shipping their compiler suit for free [as in beer] many years ago, but recently started to offer them again for free [as in beer]. I can send a patch upstream, but the fix is trivial, i.e. replacing a hard coded `cc` in the makefile of the dik solver with `$(CC)`.
 

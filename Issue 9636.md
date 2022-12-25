@@ -3,7 +3,7 @@
 archive/issues_009636.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @nexttime @robertwb\n\nThe output from print() functions in libpari is directly written to stdout and is not caught by Sage.  For example, the following doctest fails:\n\n```\ndef printhello():\n    \"\"\"\n    sage: printhello()\n    hello\n    \"\"\"\n    pari('print(\"hello\")')\n```\n\nIt gives\n\n```\nFile \"/home/jdemeyer/paritest.sage\", line 3:\n    sage: printhello()\nExpected:\n    hello\nGot nothing\n```\n\n\nLuckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().\n\nI will try to implement this (using #9343 as starting point). -- Jeroen Demeyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9636\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @robertwb\n\nThe output from print() functions in libpari is directly written to stdout and is not caught by Sage.  For example, the following doctest fails:\n\n```\ndef printhello():\n    \"\"\"\n    sage: printhello()\n    hello\n    \"\"\"\n    pari('print(\"hello\")')\n```\nIt gives\n\n```\nFile \"/home/jdemeyer/paritest.sage\", line 3:\n    sage: printhello()\nExpected:\n    hello\nGot nothing\n```\n\nLuckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().\n\nI will try to implement this (using #9343 as starting point). -- Jeroen Demeyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9636\n\n",
     "created_at": "2010-07-29T07:56:00Z",
     "labels": [
         "component: interfaces",
@@ -30,7 +30,6 @@ def printhello():
     """
     pari('print("hello")')
 ```
-
 It gives
 
 ```
@@ -40,7 +39,6 @@ Expected:
     hello
 Got nothing
 ```
-
 
 Luckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().
 
@@ -92,7 +90,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093257.json:
 ```json
 {
-    "body": "Attachment [9636.patch](tarball://root/attachments/some-uuid/ticket9636/9636.patch) by @nexttime created at 2010-09-07 11:18:23\n\n\n```\ncdef extern: \n    PariOUT defaultOut \n    PariOUT defaultErr \n\n```\n\nshould perhaps migrate to `sage/libs/pari/decl.pxi`, too.\n\n**Positive review** from me though. Robert, anything to complain about?\n\n----\n\nI wonder when Cython will support `const`...",
+    "body": "Attachment [9636.patch](tarball://root/attachments/some-uuid/ticket9636/9636.patch) by @nexttime created at 2010-09-07 11:18:23\n\n```\ncdef extern: \n    PariOUT defaultOut \n    PariOUT defaultErr \n\n```\nshould perhaps migrate to `sage/libs/pari/decl.pxi`, too.\n\n**Positive review** from me though. Robert, anything to complain about?\n\n---\n\nI wonder when Cython will support `const`...",
     "created_at": "2010-09-07T11:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9636",
     "type": "issue_comment",
@@ -103,19 +101,17 @@ archive/issue_comments_093257.json:
 
 Attachment [9636.patch](tarball://root/attachments/some-uuid/ticket9636/9636.patch) by @nexttime created at 2010-09-07 11:18:23
 
-
 ```
 cdef extern: 
     PariOUT defaultOut 
     PariOUT defaultErr 
 
 ```
-
 should perhaps migrate to `sage/libs/pari/decl.pxi`, too.
 
 **Positive review** from me though. Robert, anything to complain about?
 
-----
+---
 
 I wonder when Cython will support `const`...
 

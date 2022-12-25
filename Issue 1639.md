@@ -3,7 +3,7 @@
 archive/issues_001639.json:
 ```json
 {
-    "body": "Assignee: tba\n\nHow works completion?\n\n\n\n```\nP.<x> = PolynomialRing(QQ); P.completion?\n```\n\n\n\ntells me\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\nType:        <type 'instancemethod'>\nDefinition:  P.completion(p, prec, extras)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\n\nwhat's the p and examples are missing...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1639\n\n",
+    "body": "Assignee: tba\n\nHow works completion?\n\n\n```\nP.<x> = PolynomialRing(QQ); P.completion?\n```\n\n\ntells me\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\nType:        <type 'instancemethod'>\nDefinition:  P.completion(p, prec, extras)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\nwhat's the p and examples are missing...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1639\n\n",
     "created_at": "2007-12-30T13:35:00Z",
     "labels": [
         "component: documentation",
@@ -22,15 +22,12 @@ Assignee: tba
 How works completion?
 
 
-
 ```
 P.<x> = PolynomialRing(QQ); P.completion?
 ```
 
 
-
 tells me
-
 
 ```
 File:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py
@@ -39,7 +36,6 @@ Definition:  P.completion(p, prec, extras)
 Docstring: 
 x.__init__(...) initializes x; see x.__class__.__doc__ for signature
 ```
-
 
 
 what's the p and examples are missing...

@@ -3,7 +3,7 @@
 archive/issues_000658.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\n$ magma\nMagma V2.13-5     Fri Sep 14 2007 17:16:36 on sage     [Seed = 2401430993]\nType ? for help.  Type <Ctrl>-D to quit.\n>\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/658\n\n",
+    "body": "Assignee: somebody\n\n```\n$ magma\nMagma V2.13-5     Fri Sep 14 2007 17:16:36 on sage     [Seed = 2401430993]\nType ? for help.  Type <Ctrl>-D to quit.\n>\n```\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/658\n\n",
     "created_at": "2007-09-15T00:22:37Z",
     "labels": [
         "component: basic arithmetic"
@@ -17,14 +17,12 @@ archive/issues_000658.json:
 ```
 Assignee: somebody
 
-
 ```
 $ magma
 Magma V2.13-5     Fri Sep 14 2007 17:16:36 on sage     [Seed = 2401430993]
 Type ? for help.  Type <Ctrl>-D to quit.
 >
 ```
-
 Cheers,
 
 Michael
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/658
 archive/issue_comments_003412.json:
 ```json
 {
-    "body": "\n```\n> > We *really* need a way of specifying a random seed at startup.\n> >\n>\n> When we fixed all the leaks in the random seed code William wrote some\n> code to specify the random seed via an environment variable. I grepped\n> $SAGE_LOCAL/bin and couldn't find anything, so maybe it wasn't merged.\n\nI removed it because the implementation was way too hack-ish.  It was\nmainly for experimenting.\n\nI do encourage David to open a trac ticket about this.  He's right that\nseeding the random number generator should be possible via a command\nline argument at startup.\n\nOne perhaps reasonable way to do this is by setting an environment variable\nin local/bin/sage-sage if a certain command line option is set, then in\next/random.pxi (and anywhere else), somehow using that environment variable\n(if set) to seed the random number generator.     The tricky part is one has\nto also make sure in all cases that all seeding is done from one place, and\nthat the random seed is easily available from Sage on startup or in\ncrash messages.\n```\n",
+    "body": "```\n> > We *really* need a way of specifying a random seed at startup.\n> >\n>\n> When we fixed all the leaks in the random seed code William wrote some\n> code to specify the random seed via an environment variable. I grepped\n> $SAGE_LOCAL/bin and couldn't find anything, so maybe it wasn't merged.\n\nI removed it because the implementation was way too hack-ish.  It was\nmainly for experimenting.\n\nI do encourage David to open a trac ticket about this.  He's right that\nseeding the random number generator should be possible via a command\nline argument at startup.\n\nOne perhaps reasonable way to do this is by setting an environment variable\nin local/bin/sage-sage if a certain command line option is set, then in\next/random.pxi (and anywhere else), somehow using that environment variable\n(if set) to seed the random number generator.     The tricky part is one has\nto also make sure in all cases that all seeding is done from one place, and\nthat the random seed is easily available from Sage on startup or in\ncrash messages.\n```",
     "created_at": "2007-10-08T14:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/658",
     "type": "issue_comment",
@@ -48,7 +46,6 @@ archive/issue_comments_003412.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > > We *really* need a way of specifying a random seed at startup.
@@ -73,7 +70,6 @@ to also make sure in all cases that all seeding is done from one place, and
 that the random seed is easily available from Sage on startup or in
 crash messages.
 ```
-
 
 
 

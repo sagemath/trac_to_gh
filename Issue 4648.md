@@ -3,7 +3,7 @@
 archive/issues_004648.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKeywords: sparse\n\nCurrently, generic sparse matrices inherit their nonzero_positions method from matrix0.py.  This should be trivial to fix.\n\n\n```\ndef nonzero_positions(self):\n    return self._entries.keys()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4648\n\n",
+    "body": "Assignee: boothby\n\nKeywords: sparse\n\nCurrently, generic sparse matrices inherit their nonzero_positions method from matrix0.py.  This should be trivial to fix.\n\n```\ndef nonzero_positions(self):\n    return self._entries.keys()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4648\n\n",
     "created_at": "2008-11-29T00:54:49Z",
     "labels": [
         "component: linear algebra",
@@ -23,12 +23,10 @@ Keywords: sparse
 
 Currently, generic sparse matrices inherit their nonzero_positions method from matrix0.py.  This should be trivial to fix.
 
-
 ```
 def nonzero_positions(self):
     return self._entries.keys()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4648
 

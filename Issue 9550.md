@@ -3,7 +3,7 @@
 archive/issues_009550.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein\n\n\n```\nmake[1]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src'\nmake  all-recursive\nmake[2]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src'\nMaking all in src\nmake[3]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src/src'\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/home/wstein/build/sage-4.4.4/local/include -I../lib -I../lib   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT new-packet.lo -MD -MP -MF .deps/new-packet.Tpo -c -o new-packet.lo new-packet.c\nmkdir .libs\n gcc -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/build/sage-4.4.4/local/include -I../lib -I../lib -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT new-packet.lo -MD -MP -MF .deps/new-packet.Tpo -c new-packet.c  -fPIC -DPIC -o .libs/new-packet.o\nIn file included from new-packet.c:23:\nopencdk.h:23:20: error: gcrypt.h: No such file or directory\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9550\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @williamstein\n\n```\nmake[1]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src'\nmake  all-recursive\nmake[2]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src'\nMaking all in src\nmake[3]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src/src'\n/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I/home/wstein/build/sage-4.4.4/local/include -I../lib -I../lib   -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT new-packet.lo -MD -MP -MF .deps/new-packet.Tpo -c -o new-packet.lo new-packet.c\nmkdir .libs\n gcc -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/build/sage-4.4.4/local/include -I../lib -I../lib -g -O2 -Wall -Wcast-align -Wshadow -Wstrict-prototypes -MT new-packet.lo -MD -MP -MF .deps/new-packet.Tpo -c new-packet.c  -fPIC -DPIC -o .libs/new-packet.o\nIn file included from new-packet.c:23:\nopencdk.h:23:20: error: gcrypt.h: No such file or directory\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9550\n\n",
     "created_at": "2010-07-19T12:00:03Z",
     "labels": [
         "component: build",
@@ -20,7 +20,6 @@ Assignee: GeorgSWeber
 
 CC:  @williamstein
 
-
 ```
 make[1]: Entering directory `/scratch/rlmill/sage-4.4.4-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/spkg/build/opencdk-0.6.6.p5/src'
 make  all-recursive
@@ -33,7 +32,6 @@ mkdir .libs
 In file included from new-packet.c:23:
 opencdk.h:23:20: error: gcrypt.h: No such file or directory
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9550
 

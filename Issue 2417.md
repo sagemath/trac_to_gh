@@ -3,7 +3,7 @@
 archive/issues_002417.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFor non-monic polynomials, the discriminant method introduced in #2392 returns values in the fraction field of the base ring, instead of in the base ring.\n\n```\nsage: R.<y> = QQ[]\nsage: S.<x> = R[]\nsage: (x*y+x+y+1).discriminant()\n1\nsage: (x*y+x+y+1).discriminant().parent()\nFraction Field of Univariate Polynomial Ring in y over Rational Field\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2417\n\n",
+    "body": "Assignee: @williamstein\n\nFor non-monic polynomials, the discriminant method introduced in #2392 returns values in the fraction field of the base ring, instead of in the base ring.\n\n```\nsage: R.<y> = QQ[]\nsage: S.<x> = R[]\nsage: (x*y+x+y+1).discriminant()\n1\nsage: (x*y+x+y+1).discriminant().parent()\nFraction Field of Univariate Polynomial Ring in y over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2417\n\n",
     "created_at": "2008-03-07T04:43:09Z",
     "labels": [
         "component: algebraic geometry",
@@ -28,7 +28,6 @@ sage: (x*y+x+y+1).discriminant()
 sage: (x*y+x+y+1).discriminant().parent()
 Fraction Field of Univariate Polynomial Ring in y over Rational Field
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2417

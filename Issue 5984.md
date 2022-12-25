@@ -3,7 +3,7 @@
 archive/issues_005984.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2/sage-3.4.2-eno-gcc-4.3.3/devel/sage-main/sage/modular/arithgroup/arithgroup_perm.py\", line 204:\n    sage: cmp(G, Gamma0(8))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5984\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.4.2/sage-3.4.2-eno-gcc-4.3.3/devel/sage-main/sage/modular/arithgroup/arithgroup_perm.py\", line 204:\n    sage: cmp(G, Gamma0(8))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5984\n\n",
     "created_at": "2009-05-05T04:33:53Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_005984.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage -t -long devel/sage/sage/modular/arithgroup/arithgroup_perm.py
 **********************************************************************
@@ -31,7 +30,6 @@ Got:
     -1
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5984
 

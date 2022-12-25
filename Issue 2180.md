@@ -129,7 +129,7 @@ Changing assignee from mabshoff to @bobmoretti.
 archive/issue_comments_014289.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> I have seen this issue before and I believe the new caching code is at fault, so it should be assigned to Bobby Moretti. I have speculated that if you patch in a new file the time stamp of the new file is too old for the precomputed hashes to be recomputed. \n> \n> Cheers,\n> \n> Michael\n\nMicheal, I think you're dead on. This is actually William's code, but I'm pretty familiar with it and I'll try to implement a fix.\n\n-Bobby",
+    "body": "Replying to [comment:2 mabshoff]:\n> I have seen this issue before and I believe the new caching code is at fault, so it should be assigned to Bobby Moretti. I have speculated that if you patch in a new file the time stamp of the new file is too old for the precomputed hashes to be recomputed. \n> \n> Cheers,\n> \n> Michael\n\n\nMicheal, I think you're dead on. This is actually William's code, but I'm pretty familiar with it and I'll try to implement a fix.\n\n-Bobby",
     "created_at": "2008-02-24T02:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ Replying to [comment:2 mabshoff]:
 > Cheers,
 > 
 > Michael
+
 
 Micheal, I think you're dead on. This is actually William's code, but I'm pretty familiar with it and I'll try to implement a fix.
 
@@ -178,7 +179,7 @@ Were you running hg from the command line or were you applying the patch from wi
 archive/issue_comments_014291.json:
 ```json
 {
-    "body": "I do not know how to reproduce this.  I've tried what you suggested and I can't.\nI also think it is very unlikely that this is caused by the initial caching (i.e., my code) as Bobby suggests, since that code is really ridiculously simple.  It's just this: \n\n```\ndef hash_of_cython_file_timestamps():\n    h = 0\n    extensions = set(['.pyx', '.pxd', '.pxi'])\n    def hash_of_dir(dir):\n        h = 0\n        for f in os.listdir(dir):\n            z = dir + '/' + f\n            if os.path.isdir(z):\n                h += hash_of_dir(z)\n            elif f[-4:] in extensions and f[0] != '.':\n                h += hash(os.path.getmtime(z))\n        return h\n    return hash_of_dir('sage')\n```\n\n\nThe above just computes a hash of *all* cython related files in all subdirectories.\nIf you change anything it changes and the cythoning code reruns.  All that matters is that something has changed in any timestamp of any cython-related file, even something not listed in setup.py.  This gets run and if it isn't the same as last time then the usual Cython code gets run (Bobby's code).  If a patch has a Cython file in it, even if it hasn't changed in a long time, it'll change the above hash, which will make the Cythoning rerun.  \n\nSo I can't understand how to reproduce your bug.  Could you please please find a systematic way to reproduce it, so we can fix it?  I'm not clever enough to think of anything based on the hints.\n\nDid you definitely do `hg_sage.update()`?\n\nWAIT -- idea!\nActually, one possibility might be that the patch added a .pyx file that you \nalready had with the same time stamp, but it *only* added it to setup.py.  Thus setup.py changed but no Cython files changed, but indeed it's now necessary to\nrerun Cython.  Ah ha.  I bet the fix is to just add setup.py to the list of \"cython\"\nrelated files. \n\nI've made a patch based on this idea, and also added a little bit of nice\nverbose timing information about how long Cython'ing takes and attached a patch.\nJoel -- please referee this and let me know if this maybe solves this problem.\n\nOnce again, thanks for reporting these subtle bugs!",
+    "body": "I do not know how to reproduce this.  I've tried what you suggested and I can't.\nI also think it is very unlikely that this is caused by the initial caching (i.e., my code) as Bobby suggests, since that code is really ridiculously simple.  It's just this: \n\n```\ndef hash_of_cython_file_timestamps():\n    h = 0\n    extensions = set(['.pyx', '.pxd', '.pxi'])\n    def hash_of_dir(dir):\n        h = 0\n        for f in os.listdir(dir):\n            z = dir + '/' + f\n            if os.path.isdir(z):\n                h += hash_of_dir(z)\n            elif f[-4:] in extensions and f[0] != '.':\n                h += hash(os.path.getmtime(z))\n        return h\n    return hash_of_dir('sage')\n```\n\nThe above just computes a hash of *all* cython related files in all subdirectories.\nIf you change anything it changes and the cythoning code reruns.  All that matters is that something has changed in any timestamp of any cython-related file, even something not listed in setup.py.  This gets run and if it isn't the same as last time then the usual Cython code gets run (Bobby's code).  If a patch has a Cython file in it, even if it hasn't changed in a long time, it'll change the above hash, which will make the Cythoning rerun.  \n\nSo I can't understand how to reproduce your bug.  Could you please please find a systematic way to reproduce it, so we can fix it?  I'm not clever enough to think of anything based on the hints.\n\nDid you definitely do `hg_sage.update()`?\n\nWAIT -- idea!\nActually, one possibility might be that the patch added a .pyx file that you \nalready had with the same time stamp, but it *only* added it to setup.py.  Thus setup.py changed but no Cython files changed, but indeed it's now necessary to\nrerun Cython.  Ah ha.  I bet the fix is to just add setup.py to the list of \"cython\"\nrelated files. \n\nI've made a patch based on this idea, and also added a little bit of nice\nverbose timing information about how long Cython'ing takes and attached a patch.\nJoel -- please referee this and let me know if this maybe solves this problem.\n\nOnce again, thanks for reporting these subtle bugs!",
     "created_at": "2008-02-24T05:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
@@ -205,7 +206,6 @@ def hash_of_cython_file_timestamps():
         return h
     return hash_of_dir('sage')
 ```
-
 
 The above just computes a hash of *all* cython related files in all subdirectories.
 If you change anything it changes and the cythoning code reruns.  All that matters is that something has changed in any timestamp of any cython-related file, even something not listed in setup.py.  This gets run and if it isn't the same as last time then the usual Cython code gets run (Bobby's code).  If a patch has a Cython file in it, even if it hasn't changed in a long time, it'll change the above hash, which will make the Cythoning rerun.  

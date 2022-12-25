@@ -3,7 +3,7 @@
 archive/issues_006903.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nLet\n\n\n```\nsage: W = Words('ab')\n```\n\n\nIn the state of sage-4.1.1, the function `W.__call__` uses the function `Word`....but it should be the inverse. In fact, the code of the function `Word` contains code like :\n\n\n```\n[...]\n\n    # Construct the word\n    if datatype == 'list':\n        w = FiniteWord_list(parent=parent,data=data)\n    elif datatype == 'str':\n        w = FiniteWord_str(parent=parent,data=data)\n    elif datatype == 'tuple':\n        w = FiniteWord_tuple(parent=parent,data=data)\n    elif datatype == 'callable':\n        if caching:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable_with_caching\n            else:\n                cls = FiniteWord_callable_with_caching\n        else:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable\n            else:\n                cls = FiniteWord_callable\n        w = cls(parent=parent,callable=data,length=length)\n\n[...]\n```\n\n\nThe problems come when someone wants to inherits the class `Words_over_OrderedAlphabet` to create, let say, a combinatorial classes of all paths (see #5038). Below, we would like the `__call__` function of `WordPaths_all` to creates words paths instances and not the usual words instances. I don't want to rewrite the `__call__` function for `WordPaths_all` since it could be the exact same thing as the one of `Words_over_OrderedAlphabet`.\n\n\n```\nclass WordPaths_all(Words_over_OrderedAlphabet):\n    r\"\"\"\n    The combinatorial class of all paths, i.e of all words over\n    an alphabet where each letter is mapped to a step (a vector).\n    \"\"\"\n    def __init__(self, alphabet, steps):\n        r\"\"\"\n        INPUT:\n\n        - ``alphabet`` - an ordered alphabet \n\n        - ``steps`` - an iterable (of same length as alphabet) of ordered vectors\n\n        EXAMPLES::\n\n[...]\n```\n\n\nOne solution is that the current code of `Word` goes to `Words.__call__` and that the function `Word` simply creates the parent from the input alphabet and delegates the creation to the parent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6903\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nLet\n\n```\nsage: W = Words('ab')\n```\n\nIn the state of sage-4.1.1, the function `W.__call__` uses the function `Word`....but it should be the inverse. In fact, the code of the function `Word` contains code like :\n\n```\n[...]\n\n    # Construct the word\n    if datatype == 'list':\n        w = FiniteWord_list(parent=parent,data=data)\n    elif datatype == 'str':\n        w = FiniteWord_str(parent=parent,data=data)\n    elif datatype == 'tuple':\n        w = FiniteWord_tuple(parent=parent,data=data)\n    elif datatype == 'callable':\n        if caching:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable_with_caching\n            else:\n                cls = FiniteWord_callable_with_caching\n        else:\n            if length is None or length is Infinity:\n                cls = InfiniteWord_callable\n            else:\n                cls = FiniteWord_callable\n        w = cls(parent=parent,callable=data,length=length)\n\n[...]\n```\n\nThe problems come when someone wants to inherits the class `Words_over_OrderedAlphabet` to create, let say, a combinatorial classes of all paths (see #5038). Below, we would like the `__call__` function of `WordPaths_all` to creates words paths instances and not the usual words instances. I don't want to rewrite the `__call__` function for `WordPaths_all` since it could be the exact same thing as the one of `Words_over_OrderedAlphabet`.\n\n```\nclass WordPaths_all(Words_over_OrderedAlphabet):\n    r\"\"\"\n    The combinatorial class of all paths, i.e of all words over\n    an alphabet where each letter is mapped to a step (a vector).\n    \"\"\"\n    def __init__(self, alphabet, steps):\n        r\"\"\"\n        INPUT:\n\n        - ``alphabet`` - an ordered alphabet \n\n        - ``steps`` - an iterable (of same length as alphabet) of ordered vectors\n\n        EXAMPLES::\n\n[...]\n```\n\nOne solution is that the current code of `Word` goes to `Words.__call__` and that the function `Word` simply creates the parent from the input alphabet and delegates the creation to the parent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6903\n\n",
     "created_at": "2009-09-07T22:44:17Z",
     "labels": [
         "component: combinatorics",
@@ -22,14 +22,11 @@ CC:  @saliola
 
 Let
 
-
 ```
 sage: W = Words('ab')
 ```
 
-
 In the state of sage-4.1.1, the function `W.__call__` uses the function `Word`....but it should be the inverse. In fact, the code of the function `Word` contains code like :
-
 
 ```
 [...]
@@ -57,9 +54,7 @@ In the state of sage-4.1.1, the function `W.__call__` uses the function `Word`..
 [...]
 ```
 
-
 The problems come when someone wants to inherits the class `Words_over_OrderedAlphabet` to create, let say, a combinatorial classes of all paths (see #5038). Below, we would like the `__call__` function of `WordPaths_all` to creates words paths instances and not the usual words instances. I don't want to rewrite the `__call__` function for `WordPaths_all` since it could be the exact same thing as the one of `Words_over_OrderedAlphabet`.
-
 
 ```
 class WordPaths_all(Words_over_OrderedAlphabet):
@@ -79,7 +74,6 @@ class WordPaths_all(Words_over_OrderedAlphabet):
 
 [...]
 ```
-
 
 One solution is that the current code of `Word` goes to `Words.__call__` and that the function `Word` simply creates the parent from the input alphabet and delegates the creation to the parent.
 
@@ -150,7 +144,7 @@ Changing assignee from @mwhansen to @seblabbe.
 archive/issue_comments_056917.json:
 ```json
 {
-    "body": "Attachment [trac_6903_word_improve_constructor-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_word_improve_constructor-sl.patch) by @seblabbe created at 2009-09-13 12:48:34\n\nI just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :\n\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n```\n\n\nI keep the 'needs work' label, because there is still something I want to check. In fact, the code that changes the class of a word from `Word_class` to `FiniteWord_class` when it reaches the end of the word might be updated as well here, but I can't figure out where is that code!!! Franco should remember that.",
+    "body": "Attachment [trac_6903_word_improve_constructor-sl.patch](tarball://root/attachments/some-uuid/ticket6903/trac_6903_word_improve_constructor-sl.patch) by @seblabbe created at 2009-09-13 12:48:34\n\nI just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :\n\n```\nsage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\nsage: sage.structure.sage_object.unpickle_all(std)\n```\n\nI keep the 'needs work' label, because there is still something I want to check. In fact, the code that changes the class of a word from `Word_class` to `FiniteWord_class` when it reaches the end of the word might be updated as well here, but I can't figure out where is that code!!! Franco should remember that.",
     "created_at": "2009-09-13T12:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6903",
     "type": "issue_comment",
@@ -163,12 +157,10 @@ Attachment [trac_6903_word_improve_constructor-sl.patch](tarball://root/attachme
 
 I just posted a patch which correspond to something better. All test pass in sage/combinat/words. I also tested the pickle jar using (from http://www.sagemath.org/doc/reference/sage/structure/sage_object.html) :
 
-
 ```
 sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'
 sage: sage.structure.sage_object.unpickle_all(std)
 ```
-
 
 I keep the 'needs work' label, because there is still something I want to check. In fact, the code that changes the class of a word from `Word_class` to `FiniteWord_class` when it reaches the end of the word might be updated as well here, but I can't figure out where is that code!!! Franco should remember that.
 

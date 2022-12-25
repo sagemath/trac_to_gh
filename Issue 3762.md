@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3762
 archive/issue_comments_026689.json:
 ```json
 {
-    "body": "\n```\n\nMy real_roots.pyx uses a couple of functions from quaddouble:\nfpu_fix_start and fpu_fix_end.  (partitions_c.cc also uses these\nfunctions.)  These are found in the quaddouble source in src/fpu.cpp\nand include/fpu.h\n\nProbably the right fix is to copy only those two files into c_lib/.  I\ncan do that, but I'll need some help with configuration.  (The main\nthing is that the files want a preprocessor symbol X86 to be defined\niff we're using an x86-family processor.)\n\nCarl\n```\n",
+    "body": "```\n\nMy real_roots.pyx uses a couple of functions from quaddouble:\nfpu_fix_start and fpu_fix_end.  (partitions_c.cc also uses these\nfunctions.)  These are found in the quaddouble source in src/fpu.cpp\nand include/fpu.h\n\nProbably the right fix is to copy only those two files into c_lib/.  I\ncan do that, but I'll need some help with configuration.  (The main\nthing is that the files want a preprocessor symbol X86 to be defined\niff we're using an x86-family processor.)\n\nCarl\n```",
     "created_at": "2008-08-02T21:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_026689.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -58,7 +57,6 @@ iff we're using an x86-family processor.)
 
 Carl
 ```
-
 
 
 
@@ -182,7 +180,7 @@ archive/issue_events_008629.json:
 archive/issue_comments_026695.json:
 ```json
 {
-    "body": "1. I applied this to sage-3.3.alpha1 on sage.math and got:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/complex_field.py # 1 doctests failed\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 164.0 seconds\nwstein@sage:/scratch/wstein/sage-3.3.alpha1$  \n```\n\n\nWe have:\n\n```\nsage -t  devel/sage/sage/structure/sage_object.pyx**********************************************************************\nFile \"/scratch/wstein/sage-3.3.alpha1/devel/sage-main/sage/structure/sage_object.pyx\", line 682:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data i\nn a more recent format.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data \nin a more recent format.\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 448 objects.\n    Failed to unpickle 0 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage/sage/rings/complex_field.py\n**********************************************************************\nFile \"/scratch/wstein/sage-3.3.alpha1/devel/sage-main/sage/rings/complex_field.py\", line 105:\n    sage: C(RR.log2(), RR.e())\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[7]>\", line 1, in <module>\n        C(RR.log2(), RR.e())###line 105:\n    sage: C(RR.log2(), RR.e())\n    AttributeError: 'sage.rings.real_mpfr.RealField' object has no attribute 'e'\n**********************************************************************\n1 items had failures:\n\n```\n\n\n\n\n2. Performance on sage.math:\n\n```\nBEFORE:\nsage: time k = number_of_partitions(10^8)\nCPU times: user 2.48 s, sys: 0.00 s, total: 2.48 s\nWall time: 2.49 s\nsage: time k = number_of_partitions(10^9)\nCPU times: user 22.85 s, sys: 0.00 s, total: 22.85 s\nWall time: 22.85 s\n\n\nAFTER:\nsage: time k = number_of_partitions(10^8)\nCPU times: user 3.29 s, sys: 0.00 s, total: 3.29 s\nWall time: 3.29 s\nsage: time k = number_of_partitions(10^9)\nCPU times: user 35.68 s, sys: 0.00 s, total: 35.68 s\nWall time: 35.71 s\n```\n\n\n3. I read all the code in the patches, and am fine with it. \n\nPositive review if the two doctest issues above are fixed. \n\nNOTE: you should not delete the quaddouble package, since this code still links it in.  That will have to happen in a few months after Deprecation.",
+    "body": "1. I applied this to sage-3.3.alpha1 on sage.math and got:\n\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/complex_field.py # 1 doctests failed\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 164.0 seconds\nwstein@sage:/scratch/wstein/sage-3.3.alpha1$  \n```\n\nWe have:\n\n```\nsage -t  devel/sage/sage/structure/sage_object.pyx**********************************************************************\nFile \"/scratch/wstein/sage-3.3.alpha1/devel/sage-main/sage/structure/sage_object.pyx\", line 682:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data i\nn a more recent format.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1172: DeprecationWarning: Your data is stored in an old format. Please use the save() function to store your data \nin a more recent format.\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 448 objects.\n    Failed to unpickle 0 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_16\n***Test Failed*** 1 failures.\n\nsage -t  devel/sage/sage/rings/complex_field.py\n**********************************************************************\nFile \"/scratch/wstein/sage-3.3.alpha1/devel/sage-main/sage/rings/complex_field.py\", line 105:\n    sage: C(RR.log2(), RR.e())\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[7]>\", line 1, in <module>\n        C(RR.log2(), RR.e())###line 105:\n    sage: C(RR.log2(), RR.e())\n    AttributeError: 'sage.rings.real_mpfr.RealField' object has no attribute 'e'\n**********************************************************************\n1 items had failures:\n\n```\n\n\n\n2. Performance on sage.math:\n\n```\nBEFORE:\nsage: time k = number_of_partitions(10^8)\nCPU times: user 2.48 s, sys: 0.00 s, total: 2.48 s\nWall time: 2.49 s\nsage: time k = number_of_partitions(10^9)\nCPU times: user 22.85 s, sys: 0.00 s, total: 22.85 s\nWall time: 22.85 s\n\n\nAFTER:\nsage: time k = number_of_partitions(10^8)\nCPU times: user 3.29 s, sys: 0.00 s, total: 3.29 s\nWall time: 3.29 s\nsage: time k = number_of_partitions(10^9)\nCPU times: user 35.68 s, sys: 0.00 s, total: 35.68 s\nWall time: 35.71 s\n```\n\n3. I read all the code in the patches, and am fine with it. \n\nPositive review if the two doctest issues above are fixed. \n\nNOTE: you should not delete the quaddouble package, since this code still links it in.  That will have to happen in a few months after Deprecation.",
     "created_at": "2009-01-24T02:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
@@ -202,7 +200,6 @@ The following tests failed:
 Total time for all tests: 164.0 seconds
 wstein@sage:/scratch/wstein/sage-3.3.alpha1$  
 ```
-
 
 We have:
 
@@ -249,7 +246,6 @@ Exception raised:
 
 
 
-
 2. Performance on sage.math:
 
 ```
@@ -270,7 +266,6 @@ sage: time k = number_of_partitions(10^9)
 CPU times: user 35.68 s, sys: 0.00 s, total: 35.68 s
 Wall time: 35.71 s
 ```
-
 
 3. I read all the code in the patches, and am fine with it. 
 

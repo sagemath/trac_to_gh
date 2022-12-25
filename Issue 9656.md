@@ -394,7 +394,7 @@ archive/issue_events_024090.json:
 archive/issue_comments_093571.json:
 ```json
 {
-    "body": "I haven't seen this in a while, but I'm not sure if it could still happen with MathJax.\n\nCurrent code, however in roughly the same place and same file\n\n```\n // Call MathJax on the final output.\nif (status === 'd' ) {\ntry {\nMathJax.Hub.Queue([\"Typeset\",MathJax.Hub,cell_output]);\n} catch (e) {\ncell_output.innerHTML = 'Error typesetting mathematics' + cell_output.innerHTML;\ncell_output_nowrap.innerHTML = 'Error typesetting mathematics' +\ncell_output_nowrap.innerHTML;\n}\n}\n```\n",
+    "body": "I haven't seen this in a while, but I'm not sure if it could still happen with MathJax.\n\nCurrent code, however in roughly the same place and same file\n\n```\n // Call MathJax on the final output.\nif (status === 'd' ) {\ntry {\nMathJax.Hub.Queue([\"Typeset\",MathJax.Hub,cell_output]);\n} catch (e) {\ncell_output.innerHTML = 'Error typesetting mathematics' + cell_output.innerHTML;\ncell_output_nowrap.innerHTML = 'Error typesetting mathematics' +\ncell_output_nowrap.innerHTML;\n}\n}\n```",
     "created_at": "2014-12-19T04:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9656",
     "type": "issue_comment",
@@ -419,7 +419,6 @@ cell_output_nowrap.innerHTML;
 }
 }
 ```
-
 
 
 

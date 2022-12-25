@@ -124,7 +124,7 @@ There are still some open questions though; see e.g. my comments [comment:ticket
 archive/issue_comments_058182.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n\n> There are still some open questions though; see e.g. my comments [comment:ticket:10825:14 here] (on #10825).\n\nI think what you did on #10825 is good.",
+    "body": "Replying to [comment:4 leif]:\n\n> There are still some open questions though; see e.g. my comments [comment:ticket:10825:14 here] (on #10825).\n\n\nI think what you did on #10825 is good.",
     "created_at": "2012-03-25T06:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ archive/issue_comments_058182.json:
 Replying to [comment:4 leif]:
 
 > There are still some open questions though; see e.g. my comments [comment:ticket:10825:14 here] (on #10825).
+
 
 I think what you did on #10825 is good.
 

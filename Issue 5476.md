@@ -3,7 +3,7 @@
 archive/issues_005476.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: k.<a> = GF(9); R.<x> = k[]\nsage: HyperellipticCurve(x^3 + x - 1, x+a).jacobian().dimension()\nboom!\n```\n\n\nThis was found during Alex G.'s talk at Sage Days 14.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5476\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: k.<a> = GF(9); R.<x> = k[]\nsage: HyperellipticCurve(x^3 + x - 1, x+a).jacobian().dimension()\nboom!\n```\n\nThis was found during Alex G.'s talk at Sage Days 14.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5476\n\n",
     "created_at": "2009-03-10T22:02:08Z",
     "labels": [
         "component: algebraic geometry",
@@ -18,13 +18,11 @@ archive/issues_005476.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: k.<a> = GF(9); R.<x> = k[]
 sage: HyperellipticCurve(x^3 + x - 1, x+a).jacobian().dimension()
 boom!
 ```
-
 
 This was found during Alex G.'s talk at Sage Days 14.
 

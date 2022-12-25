@@ -313,7 +313,7 @@ Resolution: fixed
 archive/issue_comments_089226.json:
 ```json
 {
-    "body": "Replying to [comment:6 rlm]:\n\n> It might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.\n\nThat certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \nIf you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\nSorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n\nDave",
+    "body": "Replying to [comment:6 rlm]:\n\n> It might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.\n\n\nThat certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \nIf you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\nSorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n\nDave",
     "created_at": "2010-07-01T18:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
@@ -325,6 +325,7 @@ archive/issue_comments_089226.json:
 Replying to [comment:6 rlm]:
 
 > It might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.
+
 
 That certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. 
 If you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. 
@@ -340,7 +341,7 @@ Dave
 archive/issue_comments_089227.json:
 ```json
 {
-    "body": "Replying to [comment:8 drkirkby]:\n> That certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \n> If you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\nI frequently see the same two people listed as author and reviewer. Often there are multiple patches, with (author, reviewer) switching between persons (a,b) and (b,a), for one example. I am sure you did not intend anything rude, I just wanted to bring it up to avoid misunderstanding. The author and reviewer fields on the trac server should be the union of anyone who feels that they have contributed to that part of the process. The only rule to follow strictly is that the author of a patch cannot review that patch, but as you have seen, trac tickets frequently become pretty complicated. One applies that rule patch by patch, not ticket by ticket.\n\n> \n> Sorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n> \n\nThere is no offense here.\n\nCheers!\n-- RLM",
+    "body": "Replying to [comment:8 drkirkby]:\n> That certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \n> If you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\n\nI frequently see the same two people listed as author and reviewer. Often there are multiple patches, with (author, reviewer) switching between persons (a,b) and (b,a), for one example. I am sure you did not intend anything rude, I just wanted to bring it up to avoid misunderstanding. The author and reviewer fields on the trac server should be the union of anyone who feels that they have contributed to that part of the process. The only rule to follow strictly is that the author of a patch cannot review that patch, but as you have seen, trac tickets frequently become pretty complicated. One applies that rule patch by patch, not ticket by ticket.\n\n> \n> Sorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n> \n\n\nThere is no offense here.\n\nCheers!\n-- RLM",
     "created_at": "2010-07-01T20:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
@@ -353,11 +354,13 @@ Replying to [comment:8 drkirkby]:
 > That certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. 
 > If you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. 
 
+
 I frequently see the same two people listed as author and reviewer. Often there are multiple patches, with (author, reviewer) switching between persons (a,b) and (b,a), for one example. I am sure you did not intend anything rude, I just wanted to bring it up to avoid misunderstanding. The author and reviewer fields on the trac server should be the union of anyone who feels that they have contributed to that part of the process. The only rule to follow strictly is that the author of a patch cannot review that patch, but as you have seen, trac tickets frequently become pretty complicated. One applies that rule patch by patch, not ticket by ticket.
 
 > 
 > Sorry if I caused any offense to Justin or yourself - that was certainly not my intension. 
 > 
+
 
 There is no offense here.
 

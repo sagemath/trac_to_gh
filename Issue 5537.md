@@ -3,7 +3,7 @@
 archive/issues_005537.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  @robertwb\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/5dcc22b42a7227d4):\n\n```\nsage: h = PermutationGroupElement('(1,3,2)') \nsage: k = PermutationGroupElement('(1,2,3),(4,5)') \nsage: h\n(1,3,2)\nsage: k^2\n(1,3,2)\nsage: k^2 == h, h == k^2 \n(False, True)\n```\n\nClearly these comparisons should return the same thing. robertwb pointed out in the thread that, especially since the parents are not explicitly defined here, they should both return True.\n\nI'll post a patch, but I don't know much about this code, and I don't want to slow things down too much.  If anyone else has a faster way, please produce a new patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5537\n\n",
+    "body": "Assignee: joyner\n\nCC:  @robertwb\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/5dcc22b42a7227d4):\n\n```\nsage: h = PermutationGroupElement('(1,3,2)') \nsage: k = PermutationGroupElement('(1,2,3),(4,5)') \nsage: h\n(1,3,2)\nsage: k^2\n(1,3,2)\nsage: k^2 == h, h == k^2 \n(False, True)\n```\nClearly these comparisons should return the same thing. robertwb pointed out in the thread that, especially since the parents are not explicitly defined here, they should both return True.\n\nI'll post a patch, but I don't know much about this code, and I don't want to slow things down too much.  If anyone else has a faster way, please produce a new patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5537\n\n",
     "created_at": "2009-03-16T23:09:12Z",
     "labels": [
         "component: group theory",
@@ -32,7 +32,6 @@ sage: k^2
 sage: k^2 == h, h == k^2 
 (False, True)
 ```
-
 Clearly these comparisons should return the same thing. robertwb pointed out in the thread that, especially since the parents are not explicitly defined here, they should both return True.
 
 I'll post a patch, but I don't know much about this code, and I don't want to slow things down too much.  If anyone else has a faster way, please produce a new patch.
@@ -105,7 +104,7 @@ Changing assignee from joyner to @robertwb.
 archive/issue_comments_042969.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n\nI spent some time with this earlier today, and had the same concerns about speed.  I grabbed a random element of S_20 and of S_10 and then compared them repeatedly in a loop.  One trip through the loop took about 0.8 seconds (including starting up Sage).  Then for 2000 iterations the speed was 7.555s in 3.4 and 7.937s with the patch.  Other runs with different number of iterations also indicated about 5-10% longer runtimes.  I was just about to do more careful timings with timeit, but won't bother pending a new patch.\n\nI also added the following to the sage-devel thread, being current behavior under 3.4.  A variant should maybe be added to the docstring.\n\n\n```\nsage: G=SymmetricGroup(8)\nsage: H=SymmetricGroup(2)\nsage: a=H('(1,2)')\nsage: b=G('(1,2)(3,4)')\nsage: a==b\nTrue\n```\n",
+    "body": "Replying to [comment:2 robertwb]:\n\nI spent some time with this earlier today, and had the same concerns about speed.  I grabbed a random element of S_20 and of S_10 and then compared them repeatedly in a loop.  One trip through the loop took about 0.8 seconds (including starting up Sage).  Then for 2000 iterations the speed was 7.555s in 3.4 and 7.937s with the patch.  Other runs with different number of iterations also indicated about 5-10% longer runtimes.  I was just about to do more careful timings with timeit, but won't bother pending a new patch.\n\nI also added the following to the sage-devel thread, being current behavior under 3.4.  A variant should maybe be added to the docstring.\n\n```\nsage: G=SymmetricGroup(8)\nsage: H=SymmetricGroup(2)\nsage: a=H('(1,2)')\nsage: b=G('(1,2)(3,4)')\nsage: a==b\nTrue\n```",
     "created_at": "2009-03-17T22:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -120,7 +119,6 @@ I spent some time with this earlier today, and had the same concerns about speed
 
 I also added the following to the sage-devel thread, being current behavior under 3.4.  A variant should maybe be added to the docstring.
 
-
 ```
 sage: G=SymmetricGroup(8)
 sage: H=SymmetricGroup(2)
@@ -129,7 +127,6 @@ sage: b=G('(1,2)(3,4)')
 sage: a==b
 True
 ```
-
 
 
 
@@ -160,7 +157,7 @@ Michael
 archive/issue_comments_042971.json:
 ```json
 {
-    "body": "Attachment [5537-perm-cmp.patch](tarball://root/attachments/some-uuid/ticket5537/5537-perm-cmp.patch) by @robertwb created at 2009-03-18 05:23:22\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: time v = [a == b for _ in xrange(2000)]\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit(\"a==b\")\n625 loops, best of 3: 240 ns per loop\n```\n\n\nvs. the old code\n\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: timeit(\"a==b\")\n625 loops, best of 3: 3.19 \u00b5s per loop\n```\n",
+    "body": "Attachment [5537-perm-cmp.patch](tarball://root/attachments/some-uuid/ticket5537/5537-perm-cmp.patch) by @robertwb created at 2009-03-18 05:23:22\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: time v = [a == b for _ in xrange(2000)]\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit(\"a==b\")\n625 loops, best of 3: 240 ns per loop\n```\n\nvs. the old code\n\n```\nsage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\nsage: timeit(\"a==b\")\n625 loops, best of 3: 3.19 \u00b5s per loop\n```",
     "created_at": "2009-03-18T05:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -171,7 +168,6 @@ archive/issue_comments_042971.json:
 
 Attachment [5537-perm-cmp.patch](tarball://root/attachments/some-uuid/ticket5537/5537-perm-cmp.patch) by @robertwb created at 2009-03-18 05:23:22
 
-
 ```
 sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()
 sage: time v = [a == b for _ in xrange(2000)]
@@ -181,9 +177,7 @@ sage: timeit("a==b")
 625 loops, best of 3: 240 ns per loop
 ```
 
-
 vs. the old code
-
 
 ```
 sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()
@@ -193,13 +187,12 @@ sage: timeit("a==b")
 
 
 
-
 ---
 
 archive/issue_comments_042972.json:
 ```json
 {
-    "body": "I don't like having all of the < and > tests without documentation. I think in the old code, < and > didn't really mean anything, whereas now they do.  I also don't like the examples that were in the old code: things like `G.gen(0) < G.gen(1)`.  This is not very helpful to the user unless they first evaluate G.gen(0) and G.gen(1).  So I've changed the docstring a bit in a referee's patch.\n\nAlso, a very minor point, but I think that in\n\n```\n    TESTS:: \n\t         \n    Verify that we fixed bug #5537:: \n```\n\nthere should be only one colon after TESTS.  This isn't really important because right now, methods starting with an underscore don't appear in the reference manual, but I hope that some day they might...  I changed this, too.\n\nMeanwhile, the patch fixes the problem in the summary and also the problem that rbeezer reports.  All tests pass.  If my patch is acceptable, positive review.",
+    "body": "I don't like having all of the < and > tests without documentation. I think in the old code, < and > didn't really mean anything, whereas now they do.  I also don't like the examples that were in the old code: things like `G.gen(0) < G.gen(1)`.  This is not very helpful to the user unless they first evaluate G.gen(0) and G.gen(1).  So I've changed the docstring a bit in a referee's patch.\n\nAlso, a very minor point, but I think that in\n\n```\n    TESTS:: \n\t         \n    Verify that we fixed bug #5537:: \n```\nthere should be only one colon after TESTS.  This isn't really important because right now, methods starting with an underscore don't appear in the reference manual, but I hope that some day they might...  I changed this, too.\n\nMeanwhile, the patch fixes the problem in the summary and also the problem that rbeezer reports.  All tests pass.  If my patch is acceptable, positive review.",
     "created_at": "2009-03-18T06:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -217,7 +210,6 @@ Also, a very minor point, but I think that in
 	         
     Verify that we fixed bug #5537:: 
 ```
-
 there should be only one colon after TESTS.  This isn't really important because right now, methods starting with an underscore don't appear in the reference manual, but I hope that some day they might...  I changed this, too.
 
 Meanwhile, the patch fixes the problem in the summary and also the problem that rbeezer reports.  All tests pass.  If my patch is acceptable, positive review.
@@ -247,7 +239,7 @@ apply 5537-perm-cmp.patch and then this one
 archive/issue_comments_042974.json:
 ```json
 {
-    "body": "Attachment [5537-referee.patch](tarball://root/attachments/some-uuid/ticket5537/5537-referee.patch) by @rbeezer created at 2009-03-18 06:41:01\n\nReplying to [comment:5 robertwb]:\n\nHi Robert,\n\nMuch improved.  Correct and faster.  Passed all tests in sage/groups/perm_gps.\n\nDo you think the code for the second loop checking the fixed elements of the longer permutation would be more readable if it mimicked the first loop?  In other words, view the plain i's in the comparison as self.perm[i] and then have everything else match up exactly with the first loop:\n\n\n```\nfor i from self.n <= i < right.n:\n    if i < right.perm[i]:\n        return -swap\n    elif i > right.perm[i]:\n        return swap\n```\n",
+    "body": "Attachment [5537-referee.patch](tarball://root/attachments/some-uuid/ticket5537/5537-referee.patch) by @rbeezer created at 2009-03-18 06:41:01\n\nReplying to [comment:5 robertwb]:\n\nHi Robert,\n\nMuch improved.  Correct and faster.  Passed all tests in sage/groups/perm_gps.\n\nDo you think the code for the second loop checking the fixed elements of the longer permutation would be more readable if it mimicked the first loop?  In other words, view the plain i's in the comparison as self.perm[i] and then have everything else match up exactly with the first loop:\n\n```\nfor i from self.n <= i < right.n:\n    if i < right.perm[i]:\n        return -swap\n    elif i > right.perm[i]:\n        return swap\n```",
     "created_at": "2009-03-18T06:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -266,7 +258,6 @@ Much improved.  Correct and faster.  Passed all tests in sage/groups/perm_gps.
 
 Do you think the code for the second loop checking the fixed elements of the longer permutation would be more readable if it mimicked the first loop?  In other words, view the plain i's in the comparison as self.perm[i] and then have everything else match up exactly with the first loop:
 
-
 ```
 for i from self.n <= i < right.n:
     if i < right.perm[i]:
@@ -274,7 +265,6 @@ for i from self.n <= i < right.n:
     elif i > right.perm[i]:
         return swap
 ```
-
 
 
 
@@ -327,7 +317,7 @@ The first examples with the generators were there originally. I don't think they
 archive/issue_comments_042977.json:
 ```json
 {
-    "body": "Replying to [comment:9 robertwb]:\n> I'm not sure about the second colon on tests, but I thought that was needed for the ReST verbatim blocks.\n\nAfter a double colon, ReST expects some indented text, and in fact if you use \n\n```\nTESTS::\n\nanother sentence::\n```\n\nin a docstring for a function not starting with an underscore, you get a warning about that.  If you only use one colon after TESTS, the double colon at the end of the next part still signifies an upcoming verbatim block.\n\nAs far as the original examples, I don't think they're very illuminating.  I don't think it's that important, though, because it's not a docstring which appears in the reference manual or in a method people will be explicitly calling very much (and hence they won't be asking for interactive help about it, either).",
+    "body": "Replying to [comment:9 robertwb]:\n> I'm not sure about the second colon on tests, but I thought that was needed for the ReST verbatim blocks.\n\n\nAfter a double colon, ReST expects some indented text, and in fact if you use \n\n```\nTESTS::\n\nanother sentence::\n```\nin a docstring for a function not starting with an underscore, you get a warning about that.  If you only use one colon after TESTS, the double colon at the end of the next part still signifies an upcoming verbatim block.\n\nAs far as the original examples, I don't think they're very illuminating.  I don't think it's that important, though, because it's not a docstring which appears in the reference manual or in a method people will be explicitly calling very much (and hence they won't be asking for interactive help about it, either).",
     "created_at": "2009-03-18T16:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -339,6 +329,7 @@ archive/issue_comments_042977.json:
 Replying to [comment:9 robertwb]:
 > I'm not sure about the second colon on tests, but I thought that was needed for the ReST verbatim blocks.
 
+
 After a double colon, ReST expects some indented text, and in fact if you use 
 
 ```
@@ -346,7 +337,6 @@ TESTS::
 
 another sentence::
 ```
-
 in a docstring for a function not starting with an underscore, you get a warning about that.  If you only use one colon after TESTS, the double colon at the end of the next part still signifies an upcoming verbatim block.
 
 As far as the original examples, I don't think they're very illuminating.  I don't think it's that important, though, because it's not a docstring which appears in the reference manual or in a method people will be explicitly calling very much (and hence they won't be asking for interactive help about it, either).
@@ -376,7 +366,7 @@ RE ::, good point. I agree about the doctests, the most important point is that 
 archive/issue_comments_042979.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n\n```\n> {{{\n> sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\n> sage: time v = [a == b for _ in xrange(2000)]\n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> sage: timeit(\"a==b\")\n> 625 loops, best of 3: 240 ns per loop\n> }}}\n> \n> vs. the old code\n> \n> {{{\n> sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\n> sage: timeit(\"a==b\")\n> 625 loops, best of 3: 3.19 \u00b5s per loop\n> }}}\n```\n\nHi Robert. Is it possible for you to give some system info for those particular timing statistics? I think it's good to include both the statistics and some accompanying system/architecture info in a release tour.",
+    "body": "Replying to [comment:5 robertwb]:\n\n```\n> {{{\n> sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\n> sage: time v = [a == b for _ in xrange(2000)]\n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> sage: timeit(\"a==b\")\n> 625 loops, best of 3: 240 ns per loop\n> }}}\n> \n> vs. the old code\n> \n> {{{\n> sage: a = SymmetricGroup(20).random_element(); b = SymmetricGroup(10).random_element()\n> sage: timeit(\"a==b\")\n> 625 loops, best of 3: 3.19 \u00b5s per loop\n> }}}\n```\nHi Robert. Is it possible for you to give some system info for those particular timing statistics? I think it's good to include both the statistics and some accompanying system/architecture info in a release tour.",
     "created_at": "2009-03-19T02:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5537",
     "type": "issue_comment",
@@ -405,7 +395,6 @@ Replying to [comment:5 robertwb]:
 > 625 loops, best of 3: 3.19 µs per loop
 > }}}
 ```
-
 Hi Robert. Is it possible for you to give some system info for those particular timing statistics? I think it's good to include both the statistics and some accompanying system/architecture info in a release tour.
 
 

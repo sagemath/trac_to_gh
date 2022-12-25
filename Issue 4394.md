@@ -3,7 +3,7 @@
 archive/issues_004394.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nmabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/polynomial_element.py\", line 2833:\n    sage: g = magma(f); g              # optional -- requires Magma\nExpected:\n    y^3 - 17*y + 5\nGot:\n    $.1^3 - 17*$.1 + 5\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4394\n\n",
+    "body": "Assignee: @williamstein\n\n```\nmabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/polynomial_element.py\", line 2833:\n    sage: g = magma(f); g              # optional -- requires Magma\nExpected:\n    y^3 - 17*y + 5\nGot:\n    $.1^3 - 17*$.1 + 5\n**********************************************************************\n1 items had failures:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4394\n\n",
     "created_at": "2008-10-30T16:51:51Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_004394.json:
 ```
 Assignee: @williamstein
 
-
 ```
 mabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx
 sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx
@@ -32,7 +31,6 @@ Got:
 **********************************************************************
 1 items had failures:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4394
 
@@ -63,7 +61,7 @@ Attachment [sage-4394.patch](tarball://root/attachments/some-uuid/ticket4394/sag
 archive/issue_comments_032278.json:
 ```json
 {
-    "body": "Positive review. The patch makes the doctests pass:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ \n./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n\t [11.4 s]\n \n----------------------------------------------------------------------\n```\n\n\nCheers,\n\nMichael",
+    "body": "Positive review. The patch makes the doctests pass:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ \n./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n\t [11.4 s]\n \n----------------------------------------------------------------------\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T20:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4394",
     "type": "issue_comment",
@@ -82,7 +80,6 @@ sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx
  
 ----------------------------------------------------------------------
 ```
-
 
 Cheers,
 

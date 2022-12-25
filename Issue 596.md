@@ -3,7 +3,7 @@
 archive/issues_000596.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen I execute\n\n```\nsage: wiki()\n```\n\n\nI get ...\n\n```\n* Open your web browser to http://localhost:9000\n...\n```\n\nand it works fine.  Then how do I close it cleanly?\n\nI've tried ctrl-C in the sage window, which gives the following...\nIt closes that web window but then restarts the wiki.\n\n\n```\n2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 13:47 -0700 [-] (Port 9000 Closed)\n2007/09/05 13:47 -0700 [-] Stopping factory\n<MoinMoin.server.twistedmoin.MoinSite instance at 0x4060ebec>\n2007/09/05 13:47 -0700 [-] Main loop terminated.\n2007/09/05 13:47 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2007/09/05 13:47 -0700 [-] Log opened.\n```\n\netc.\n\nClosing the webpage first doesn't help and SAGE doesn't accept any\ncommands\nother than ctrl-C, including ctrl-D.\n\nApparently Ctl-C Ctl-C (twice in rapid succession) closes it.\n\nReported by rjleveque`@`gmail.com (Randy Leveque)\n\nIssue created by migration from https://trac.sagemath.org/ticket/596\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I execute\n\n```\nsage: wiki()\n```\n\nI get ...\n\n```\n* Open your web browser to http://localhost:9000\n...\n```\nand it works fine.  Then how do I close it cleanly?\n\nI've tried ctrl-C in the sage window, which gives the following...\nIt closes that web window but then restarts the wiki.\n\n```\n2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 13:47 -0700 [-] (Port 9000 Closed)\n2007/09/05 13:47 -0700 [-] Stopping factory\n<MoinMoin.server.twistedmoin.MoinSite instance at 0x4060ebec>\n2007/09/05 13:47 -0700 [-] Main loop terminated.\n2007/09/05 13:47 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2007/09/05 13:47 -0700 [-] Log opened.\n```\netc.\n\nClosing the webpage first doesn't help and SAGE doesn't accept any\ncommands\nother than ctrl-C, including ctrl-D.\n\nApparently Ctl-C Ctl-C (twice in rapid succession) closes it.\n\nReported by rjleveque`@`gmail.com (Randy Leveque)\n\nIssue created by migration from https://trac.sagemath.org/ticket/596\n\n",
     "created_at": "2007-09-05T22:18:22Z",
     "labels": [
         "component: algebraic geometry",
@@ -25,19 +25,16 @@ When I execute
 sage: wiki()
 ```
 
-
 I get ...
 
 ```
 * Open your web browser to http://localhost:9000
 ...
 ```
-
 and it works fine.  Then how do I close it cleanly?
 
 I've tried ctrl-C in the sage window, which gives the following...
 It closes that web window but then restarts the wiki.
-
 
 ```
 2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.
@@ -54,7 +51,6 @@ Port 9000 is already in use.  Trying next port...
 **************************************************
 2007/09/05 13:47 -0700 [-] Log opened.
 ```
-
 etc.
 
 Closing the webpage first doesn't help and SAGE doesn't accept any
@@ -94,7 +90,7 @@ Changing component from algebraic geometry to website/wiki.
 archive/issue_comments_003063.json:
 ```json
 {
-    "body": "I can't replicate this:\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2007/09/05 15:49 -0700 [-] Log opened.\n2007/09/05 15:49 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2007/09/05 15:49 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2007/09/05 15:49 -0700 [-] Loading twistedconf.py...\n2007/09/05 15:49 -0700 [-] Loaded.\n2007/09/05 15:49 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2007/09/05 15:49 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] set uid/gid 1000/1000\n2007/09/05 15:49 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 15:49 -0700 [-] (Port 9000 Closed)\n2007/09/05 15:49 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] Main loop terminated.\n2007/09/05 15:49 -0700 [-] Server Shut Down.\nTrue\nsage:       \n```\n",
+    "body": "I can't replicate this:\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2007/09/05 15:49 -0700 [-] Log opened.\n2007/09/05 15:49 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2007/09/05 15:49 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2007/09/05 15:49 -0700 [-] Loading twistedconf.py...\n2007/09/05 15:49 -0700 [-] Loaded.\n2007/09/05 15:49 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2007/09/05 15:49 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] set uid/gid 1000/1000\n2007/09/05 15:49 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 15:49 -0700 [-] (Port 9000 Closed)\n2007/09/05 15:49 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0xb9e998>\n2007/09/05 15:49 -0700 [-] Main loop terminated.\n2007/09/05 15:49 -0700 [-] Server Shut Down.\nTrue\nsage:       \n```",
     "created_at": "2007-09-05T22:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
@@ -128,7 +124,6 @@ sage: wiki()
 True
 sage:       
 ```
-
 
 
 

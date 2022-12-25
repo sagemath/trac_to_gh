@@ -3,7 +3,7 @@
 archive/issues_003969.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nRobert wrote:\n\"\"\"\n\n```\nMatrix hashes are specifically designed to be compatible with each other: \nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\n\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3969\n\n",
+    "body": "Assignee: @williamstein\n\nRobert wrote:\n\"\"\"\n\n```\nMatrix hashes are specifically designed to be compatible with each other: \nsage: M = random_matrix(GF(2), 10, 10)\nsage: M.set_immutable()\nsage: hash(M)\n561\nsage: MZ = M.change_ring(ZZ)\nsage: MZ.set_immutable()\nsage: hash(MZ)\n561\nsage: MS = M.sparse_matrix()\nsage: MS.set_immutable()\nsage: hash(MS)\n561\n```\nThis patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/3969\n\n",
     "created_at": "2008-08-27T19:52:53Z",
     "labels": [
         "component: linear algebra",
@@ -36,7 +36,6 @@ sage: MS.set_immutable()
 sage: hash(MS)
 561
 ```
-
 This patch seems to break that. At a minimum, it seems sparse and dense should hash to the same thing. If we want to change this policy, we should at least ask on sage-devel.
 """
 
@@ -51,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3969
 archive/issue_comments_028462.json:
 ```json
 {
-    "body": "Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by @robertwb created at 2008-08-31 10:36:46\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```\n",
+    "body": "Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by @robertwb created at 2008-08-31 10:36:46\n\nThis is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. \n\n```\nsage: M = random_matrix(GF(2), 3500, 3500)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1523294\nsage: M = random_matrix(GF(2), 10000, 10000)\nsage: M.set_immutable()\nsage: time hash(M)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n37785898\n```",
     "created_at": "2008-08-31T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
@@ -63,7 +62,6 @@ archive/issue_comments_028462.json:
 Attachment [3969-fast-matmod2-hash.patch](tarball://root/attachments/some-uuid/ticket3969/3969-fast-matmod2-hash.patch) by @robertwb created at 2008-08-31 10:36:46
 
 This is not as fast as xoring all the matrix entries, but is still very fast, and compatible (as possible) with the all the other matrices. 
-
 
 ```
 sage: M = random_matrix(GF(2), 3500, 3500)
@@ -79,7 +77,6 @@ CPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s
 Wall time: 0.02 s
 37785898
 ```
-
 
 
 
@@ -124,7 +121,7 @@ I rebased the patch to 3.1.2.alpha3 and fixed a small typo in a comment. I get t
 archive/issue_comments_028465.json:
 ```json
 {
-    "body": "malb's patch has a stray `32bit` in it that causes the following failure:\n\n```\nsage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.2.alpha3/tmp/matrix_mod2_dense.py\", line 284:\n    sage: {B:0} # indirect doctest\nExpected:\n    {[0 1 0]\n    [0 1 1]\n    [0 0 0]: 0}\n    '-0x21524113' \nGot:\n    {[0 1 0]\n    [0 1 1]\n    [0 0 0]: 0}\n**********************************************************************\n```\n\nThis is obviously trivial to fix :)\n\nCheers,\n\nMichael",
+    "body": "malb's patch has a stray `32bit` in it that causes the following failure:\n\n```\nsage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.2.alpha3/tmp/matrix_mod2_dense.py\", line 284:\n    sage: {B:0} # indirect doctest\nExpected:\n    {[0 1 0]\n    [0 1 1]\n    [0 0 0]: 0}\n    '-0x21524113' \nGot:\n    {[0 1 0]\n    [0 1 1]\n    [0 0 0]: 0}\n**********************************************************************\n```\nThis is obviously trivial to fix :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T12:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3969",
     "type": "issue_comment",
@@ -151,7 +148,6 @@ Got:
     [0 0 0]: 0}
 **********************************************************************
 ```
-
 This is obviously trivial to fix :)
 
 Cheers,

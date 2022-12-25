@@ -3,7 +3,7 @@
 archive/issues_002223.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nOn OSX \n\n```\nsage -t  devel/sage-main/sage/functions/special.py          **********************************************************************\nFile \"special.py\", line 506:\n    sage: bessel_J(3,10,\"scipy\")\nExpected:\n    0.0583793793052... - 1.65905485529...e-17*I\nGot:\n    0.0583793793052000 - 2.93425242844000e-17*I\n**********************************************************************\n1 items had failures:\n```\n\n\nThoughts:\n\nIt's likely a theorem that bessel_J is always real\nfor integer first argument?  If so, let's just return\nthe real part and be done with these weird imaginary\npart issues:\n\n```\nsage: bessel_J(3,10,\"scipy\")\n0.0583793793052000 - 2.93425242844000e-17*I\nsage: bessel_J(4,10,\"scipy\")\n9.69299109301000e-17*I - 0.219602686102000\nsage: bessel_J(5,10,\"scipy\")\n1.11203257018000e-16*I - 0.234061528187000\nsage: bessel_J(10,10,\"scipy\")\n0.207486106633000 - 1.17732704470000e-16*I\nsage: bessel_J(10,20,\"scipy\")\n0.186482558024000 - 2.10019326787000e-16*I\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2223\n\n",
+    "body": "Assignee: somebody\n\nOn OSX \n\n```\nsage -t  devel/sage-main/sage/functions/special.py          **********************************************************************\nFile \"special.py\", line 506:\n    sage: bessel_J(3,10,\"scipy\")\nExpected:\n    0.0583793793052... - 1.65905485529...e-17*I\nGot:\n    0.0583793793052000 - 2.93425242844000e-17*I\n**********************************************************************\n1 items had failures:\n```\n\nThoughts:\n\nIt's likely a theorem that bessel_J is always real\nfor integer first argument?  If so, let's just return\nthe real part and be done with these weird imaginary\npart issues:\n\n```\nsage: bessel_J(3,10,\"scipy\")\n0.0583793793052000 - 2.93425242844000e-17*I\nsage: bessel_J(4,10,\"scipy\")\n9.69299109301000e-17*I - 0.219602686102000\nsage: bessel_J(5,10,\"scipy\")\n1.11203257018000e-16*I - 0.234061528187000\nsage: bessel_J(10,10,\"scipy\")\n0.207486106633000 - 1.17732704470000e-16*I\nsage: bessel_J(10,20,\"scipy\")\n0.186482558024000 - 2.10019326787000e-16*I\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2223\n\n",
     "created_at": "2008-02-20T06:54:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -33,7 +33,6 @@ Got:
 1 items had failures:
 ```
 
-
 Thoughts:
 
 It's likely a theorem that bessel_J is always real
@@ -53,7 +52,6 @@ sage: bessel_J(10,10,"scipy")
 sage: bessel_J(10,20,"scipy")
 0.186482558024000 - 2.10019326787000e-16*I
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2223
 
@@ -203,7 +201,7 @@ William's pat
 archive/issue_comments_014704.json:
 ```json
 {
-    "body": "As is the patch doesn't apply:\n\n```\nsage$ patch -p1 --dry-run < trac_2223.patch\npatching file sage/functions/special.py\nHunk #1 FAILED at 5.\nHunk #2 succeeded at 500 (offset 7 lines).\nHunk #3 FAILED at 514.\nHunk #4 succeeded at 537 with fuzz 2 (offset 10 lines).\n2 out of 4 hunks FAILED -- saving rejects to file sage/functions/special.py.rej\n```\n\nI guess the only important hunk is the third one, so I will probably merge that one manually.\n\nCheers,\n\nMichael",
+    "body": "As is the patch doesn't apply:\n\n```\nsage$ patch -p1 --dry-run < trac_2223.patch\npatching file sage/functions/special.py\nHunk #1 FAILED at 5.\nHunk #2 succeeded at 500 (offset 7 lines).\nHunk #3 FAILED at 514.\nHunk #4 succeeded at 537 with fuzz 2 (offset 10 lines).\n2 out of 4 hunks FAILED -- saving rejects to file sage/functions/special.py.rej\n```\nI guess the only important hunk is the third one, so I will probably merge that one manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-22T01:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2223",
     "type": "issue_comment",
@@ -223,7 +221,6 @@ Hunk #3 FAILED at 514.
 Hunk #4 succeeded at 537 with fuzz 2 (offset 10 lines).
 2 out of 4 hunks FAILED -- saving rejects to file sage/functions/special.py.rej
 ```
-
 I guess the only important hunk is the third one, so I will probably merge that one manually.
 
 Cheers,

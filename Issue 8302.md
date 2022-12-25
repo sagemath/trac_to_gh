@@ -80,7 +80,7 @@ Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket830
 archive/issue_comments_073424.json:
 ```json
 {
-    "body": "Documentation looks fantastic.\n\nAll tests pass, 100% coverage.  Only coverage issue is that a few files bring up a\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\n```\n\nerror from sage -coverage.  Its unclear to me how important that is.\n\nI will test this out a little more before giving a positive review.",
+    "body": "Documentation looks fantastic.\n\nAll tests pass, 100% coverage.  Only coverage issue is that a few files bring up a\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\n```\nerror from sage -coverage.  Its unclear to me how important that is.\n\nI will test this out a little more before giving a positive review.",
     "created_at": "2010-02-25T23:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ All tests pass, 100% coverage.  Only coverage issue is that a few files bring up
 ```
 ERROR: Please add a `TestSuite(s).run()` doctest.
 ```
-
 error from sage -coverage.  Its unclear to me how important that is.
 
 I will test this out a little more before giving a positive review.
@@ -162,7 +161,7 @@ Changing assignee from mhampton to @jhpalmieri.
 archive/issue_comments_073428.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhampton]:\n> In several modules, instead of INPUT and OUTPUT blocks, \"parameter\" or \"param\" is used, or \"results\".  It would be better if these conformed more to the official conventions.\n\nJust so you know, the :param: form is the official Sphinx/reST format.  It's mentioned (briefly) in the Sage developer's guide: see the third bullet point [here](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings).",
+    "body": "Replying to [comment:5 mhampton]:\n> In several modules, instead of INPUT and OUTPUT blocks, \"parameter\" or \"param\" is used, or \"results\".  It would be better if these conformed more to the official conventions.\n\n\nJust so you know, the :param: form is the official Sphinx/reST format.  It's mentioned (briefly) in the Sage developer's guide: see the third bullet point [here](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings).",
     "created_at": "2010-02-26T02:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -173,6 +172,7 @@ archive/issue_comments_073428.json:
 
 Replying to [comment:5 mhampton]:
 > In several modules, instead of INPUT and OUTPUT blocks, "parameter" or "param" is used, or "results".  It would be better if these conformed more to the official conventions.
+
 
 Just so you know, the :param: form is the official Sphinx/reST format.  It's mentioned (briefly) in the Sage developer's guide: see the third bullet point [here](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings).
 
@@ -241,7 +241,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073432.json:
 ```json
 {
-    "body": "I got the following doctest failures after applying [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch) to Sage 4.3.3:\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/structure/sage_object.pyx\nsage -t -long \"devel/sage-main/sage/structure/sage_object.pyx\"\n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_homology_examples_SimplicialSurface__.sobj\n    Failed:\n    _class__sage_homology_examples_SimplicialSurface__.sobj\n    Successfully unpickled 570 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sage_object.py\n\t [5.3 s]\n```\n\nI don't know how to explain the above failure. Also note the following failure directly resulting from [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch):\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/interfaces/chomp.py\nsage -t -long \"devel/sage-main/sage/interfaces/chomp.py\"    \n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/interfaces/chomp.py\", line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>\n        homchain(C2, generators=True, base_ring=GF(Integer(2)))[Integer(2)]###line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 584, in homchain\n        return CHomP()('homchain', complex, **kwds)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 145, in __call__\n        raise OSError, \"Program %s not found\" % program\n    OSError: Program homchain not found\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_chomp.py\n\t [1.8 s]\n```\n\nI think the failure results from a missing \"# optional\" comment on line 564 of the module `sage/interfaces/chomp.py`. Something like the following change would fix the above failure:\n\n```diff\ndiff -r 0fa662e0a843 sage/interfaces/chomp.py\n--- a/sage/interfaces/chomp.py\n+++ b/sage/interfaces/chomp.py\n@@ -561,7 +561,7 @@\n         sage: C2 = delta_complexes.Sphere(2).chain_complex()\n         sage: homchain(C2, generators=True)[2]  # optional: need CHomP\n         (Z, [(1, -1)])\n-        sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n+        sage: homchain(C2, generators=True, base_ring=GF(2))[2]  # optional: need CHomP\n         (Vector space of dimension 1 over Finite Field of size 2, [(1, 1)])\n \n     TESTS:\n```\n",
+    "body": "I got the following doctest failures after applying [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch) to Sage 4.3.3:\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/structure/sage_object.pyx\nsage -t -long \"devel/sage-main/sage/structure/sage_object.pyx\"\n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_homology_examples_SimplicialSurface__.sobj\n    Failed:\n    _class__sage_homology_examples_SimplicialSurface__.sobj\n    Successfully unpickled 570 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sage_object.py\n\t [5.3 s]\n```\nI don't know how to explain the above failure. Also note the following failure directly resulting from [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch):\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/interfaces/chomp.py\nsage -t -long \"devel/sage-main/sage/interfaces/chomp.py\"    \n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/interfaces/chomp.py\", line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>\n        homchain(C2, generators=True, base_ring=GF(Integer(2)))[Integer(2)]###line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 584, in homchain\n        return CHomP()('homchain', complex, **kwds)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 145, in __call__\n        raise OSError, \"Program %s not found\" % program\n    OSError: Program homchain not found\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_chomp.py\n\t [1.8 s]\n```\nI think the failure results from a missing \"# optional\" comment on line 564 of the module `sage/interfaces/chomp.py`. Something like the following change would fix the above failure:\n\n```diff\ndiff -r 0fa662e0a843 sage/interfaces/chomp.py\n--- a/sage/interfaces/chomp.py\n+++ b/sage/interfaces/chomp.py\n@@ -561,7 +561,7 @@\n         sage: C2 = delta_complexes.Sphere(2).chain_complex()\n         sage: homchain(C2, generators=True)[2]  # optional: need CHomP\n         (Z, [(1, -1)])\n-        sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n+        sage: homchain(C2, generators=True, base_ring=GF(2))[2]  # optional: need CHomP\n         (Vector space of dimension 1 over Finite Field of size 2, [(1, 1)])\n \n     TESTS:\n```",
     "created_at": "2010-03-02T11:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -281,7 +281,6 @@ Got:
 For whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sage_object.py
 	 [5.3 s]
 ```
-
 I don't know how to explain the above failure. Also note the following failure directly resulting from [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch):
 
 ```sh
@@ -313,7 +312,6 @@ Exception raised:
 For whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_chomp.py
 	 [1.8 s]
 ```
-
 I think the failure results from a missing "# optional" comment on line 564 of the module `sage/interfaces/chomp.py`. Something like the following change would fix the above failure:
 
 ```diff
@@ -330,7 +328,6 @@ diff -r 0fa662e0a843 sage/interfaces/chomp.py
  
      TESTS:
 ```
-
 
 
 
@@ -419,7 +416,7 @@ Marshall's patch gets a positive review.  I've attached another small patch to d
 archive/issue_comments_073437.json:
 ```json
 {
-    "body": "Replying to [comment:10 mvngu]:\n\n> John: When this ticket is closed, do you also want the CHomP spkg at\n> \n> http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg\n> \n> to be uploaded to the experimental spkg repository?\n\nYes, that would be good.  William already uploaded an earlier version, so I don't even think it has to wait for this ticket to be closed...",
+    "body": "Replying to [comment:10 mvngu]:\n\n> John: When this ticket is closed, do you also want the CHomP spkg at\n> \n> http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg\n> \n> to be uploaded to the experimental spkg repository?\n\n\nYes, that would be good.  William already uploaded an earlier version, so I don't even think it has to wait for this ticket to be closed...",
     "created_at": "2010-03-02T18:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -435,6 +432,7 @@ Replying to [comment:10 mvngu]:
 > http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg
 > 
 > to be uploaded to the experimental spkg repository?
+
 
 Yes, that would be good.  William already uploaded an earlier version, so I don't even think it has to wait for this ticket to be closed...
 
@@ -501,7 +499,7 @@ apply on top of other patches
 archive/issue_comments_073441.json:
 ```json
 {
-    "body": "I just changed the pickle patch: I just added a comment.  The old version had\n\n```\nSimplicialSurface = SimplicialComplex \n```\n\nand the new version has\n\n```\n# for backwards compatibility:  \nSimplicialSurface = SimplicialComplex \n```\n\nI don't think this needs to be reviewed again...",
+    "body": "I just changed the pickle patch: I just added a comment.  The old version had\n\n```\nSimplicialSurface = SimplicialComplex \n```\nand the new version has\n\n```\n# for backwards compatibility:  \nSimplicialSurface = SimplicialComplex \n```\nI don't think this needs to be reviewed again...",
     "created_at": "2010-03-02T19:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -515,14 +513,12 @@ I just changed the pickle patch: I just added a comment.  The old version had
 ```
 SimplicialSurface = SimplicialComplex 
 ```
-
 and the new version has
 
 ```
 # for backwards compatibility:  
 SimplicialSurface = SimplicialComplex 
 ```
-
 I don't think this needs to be reviewed again...
 
 

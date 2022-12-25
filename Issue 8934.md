@@ -69,7 +69,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082136.json:
 ```json
 {
-    "body": "I'm pretty sure you need the double colon in \n\n```\nline 545:\"     Check that Trac 8934 is fixed::\"\n```\n\nor the example will not be typeset correctly.\n\nA special case of non-full-dimensional polytopes is the zero-dimensional case. This one is also broken, but in a slightly different way:\n\n```\nsage: p = LatticePolytope(matrix([[0]]))\nsage: p.poly_x(\"i\", reduce_dimension=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/ToricVariety/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in poly_x(self, keys, reduce_dimension)\n   2223                1  -1     2\n   2224         \"\"\"\n-> 2225         return self._palp(\"poly.x -f\" + keys, reduce_dimension)\n   2226 \n   2227     def skeleton(self):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in _palp(self, command, reduce_dimension)\n    772         if self.dim() == 0:\n    773             raise ValueError, (\"Cannot run \\\"%s\\\" for the zero-dimensional \"\n--> 774                 + \"polytope!\\nPolytope: %s\") % (command, self)\n    775         if self.dim() < self.ambient_dim() and not reduce_dimension:\n    776             raise ValueError((\"Cannot run PALP for a %d-dimensional polytope \" +\n\nValueError: Cannot run \"poly.x -fi\" for the zero-dimensional polytope!\nPolytope: A lattice polytope: 0-dimensional, 1 vertices.\n```\n\nAlso, `p.points()` fails for the same reason. It would be great if you could fix this case as well.",
+    "body": "I'm pretty sure you need the double colon in \n\n```\nline 545:\"     Check that Trac 8934 is fixed::\"\n```\nor the example will not be typeset correctly.\n\nA special case of non-full-dimensional polytopes is the zero-dimensional case. This one is also broken, but in a slightly different way:\n\n```\nsage: p = LatticePolytope(matrix([[0]]))\nsage: p.poly_x(\"i\", reduce_dimension=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/ToricVariety/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in poly_x(self, keys, reduce_dimension)\n   2223                1  -1     2\n   2224         \"\"\"\n-> 2225         return self._palp(\"poly.x -f\" + keys, reduce_dimension)\n   2226 \n   2227     def skeleton(self):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in _palp(self, command, reduce_dimension)\n    772         if self.dim() == 0:\n    773             raise ValueError, (\"Cannot run \\\"%s\\\" for the zero-dimensional \"\n--> 774                 + \"polytope!\\nPolytope: %s\") % (command, self)\n    775         if self.dim() < self.ambient_dim() and not reduce_dimension:\n    776             raise ValueError((\"Cannot run PALP for a %d-dimensional polytope \" +\n\nValueError: Cannot run \"poly.x -fi\" for the zero-dimensional polytope!\nPolytope: A lattice polytope: 0-dimensional, 1 vertices.\n```\nAlso, `p.points()` fails for the same reason. It would be great if you could fix this case as well.",
     "created_at": "2010-05-10T11:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ I'm pretty sure you need the double colon in
 ```
 line 545:"     Check that Trac 8934 is fixed::"
 ```
-
 or the example will not be typeset correctly.
 
 A special case of non-full-dimensional polytopes is the zero-dimensional case. This one is also broken, but in a slightly different way:
@@ -113,7 +112,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: Cannot run "poly.x -fi" for the zero-dimensional polytope!
 Polytope: A lattice polytope: 0-dimensional, 1 vertices.
 ```
-
 Also, `p.points()` fails for the same reason. It would be great if you could fix this case as well.
 
 

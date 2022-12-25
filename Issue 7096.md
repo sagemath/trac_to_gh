@@ -3,7 +3,7 @@
 archive/issues_007096.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\n\nThis looks like something which should be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\nThis looks like something which should be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
     "created_at": "2009-10-02T15:05:02Z",
     "labels": [
         "component: elliptic curves",
@@ -21,7 +21,6 @@ Assignee: @loefflerd
 CC:  shumow@gmail.com
 
 Keywords: elliptic curve isogeny
-
 
 ```
 sage: p = 1019
@@ -52,7 +51,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.
 ```
-
 
 This looks like something which should be easy to fix.
 
@@ -85,7 +83,7 @@ Remove assignee @loefflerd.
 archive/issue_comments_058588.json:
 ```json
 {
-    "body": "While looking at the code of `{dual()`, I found a second bug in this\n\n\n```\nE = EllipticCurve(GF(7),[1,-1,1,-3,3])\nphi = E.isogeny(E([1,0]))\nphi.dual()\n```\n\n\ngives a ZeroDivisionError. Only separable isogenies are implented, so one can not possibly take the dual of this separable isogeny of degree 7 in chracteristic 7. A quick check should be introduced here.",
+    "body": "While looking at the code of `{dual()`, I found a second bug in this\n\n```\nE = EllipticCurve(GF(7),[1,-1,1,-3,3])\nphi = E.isogeny(E([1,0]))\nphi.dual()\n```\n\ngives a ZeroDivisionError. Only separable isogenies are implented, so one can not possibly take the dual of this separable isogeny of degree 7 in chracteristic 7. A quick check should be introduced here.",
     "created_at": "2009-10-09T09:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -96,13 +94,11 @@ archive/issue_comments_058588.json:
 
 While looking at the code of `{dual()`, I found a second bug in this
 
-
 ```
 E = EllipticCurve(GF(7),[1,-1,1,-3,3])
 phi = E.isogeny(E([1,0]))
 phi.dual()
 ```
-
 
 gives a ZeroDivisionError. Only separable isogenies are implented, so one can not possibly take the dual of this separable isogeny of degree 7 in chracteristic 7. A quick check should be introduced here.
 
@@ -113,7 +109,7 @@ gives a ZeroDivisionError. Only separable isogenies are implented, so one can no
 archive/issue_comments_058589.json:
 ```json
 {
-    "body": "Yet another, bigger problem with dual() : Say E -> E' is an isogeny of degree d, then all the algorithm does is creating an isogeny E' -> E of degree d. This does not guarantee that it is the dual; it could be the dual composed with an automorphism, like [-1]. This probably happens quite often as it uses `WeierstrassIsomorphism(E,E')`. This returns one of the isomorphisms without any control of it, hence often the sign will be wrong.\n\nThe function dual definitely needs a lot of work.\n\nNow, the actual bug reported in this ticket is not in dual but occurs as\n\n```\nE1 = EllipticCurve(GF(1013),[1,-1,0,288,19])\nE2 = EllipticCurve(GF(1013),[7,970,0,363,464])\nEllipticCurveIsogeny(E1,None,E2,7)\n```\n",
+    "body": "Yet another, bigger problem with dual() : Say E -> E' is an isogeny of degree d, then all the algorithm does is creating an isogeny E' -> E of degree d. This does not guarantee that it is the dual; it could be the dual composed with an automorphism, like [-1]. This probably happens quite often as it uses `WeierstrassIsomorphism(E,E')`. This returns one of the isomorphisms without any control of it, hence often the sign will be wrong.\n\nThe function dual definitely needs a lot of work.\n\nNow, the actual bug reported in this ticket is not in dual but occurs as\n\n```\nE1 = EllipticCurve(GF(1013),[1,-1,0,288,19])\nE2 = EllipticCurve(GF(1013),[7,970,0,363,464])\nEllipticCurveIsogeny(E1,None,E2,7)\n```",
     "created_at": "2009-10-09T10:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -136,13 +132,12 @@ EllipticCurveIsogeny(E1,None,E2,7)
 
 
 
-
 ---
 
 archive/issue_comments_058590.json:
 ```json
 {
-    "body": "Of course the field in the previous lines should be 1019. The output is\n\n\n```\nIsogeny of degree 7 from Elliptic Curve defined by y^2 + x*y = x^3 + 1018*x^2 + 288*x + 19 over Finite Field of size 1019 to Elliptic Curve defined by y^2 + 7*x*y + 850*y = x^3 + 970*x^2 + 445*x + 202 over Finite Field of size 1019\n```\n\n\nwhich has visibly the wrong, but an isomorphic codomain.\nAfter 1 hour of chasing through the code, I was not able to find the error. I include the author as CC in the hope that he might have an idea.",
+    "body": "Of course the field in the previous lines should be 1019. The output is\n\n```\nIsogeny of degree 7 from Elliptic Curve defined by y^2 + x*y = x^3 + 1018*x^2 + 288*x + 19 over Finite Field of size 1019 to Elliptic Curve defined by y^2 + 7*x*y + 850*y = x^3 + 970*x^2 + 445*x + 202 over Finite Field of size 1019\n```\n\nwhich has visibly the wrong, but an isomorphic codomain.\nAfter 1 hour of chasing through the code, I was not able to find the error. I include the author as CC in the hope that he might have an idea.",
     "created_at": "2009-10-09T11:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -153,11 +148,9 @@ archive/issue_comments_058590.json:
 
 Of course the field in the previous lines should be 1019. The output is
 
-
 ```
 Isogeny of degree 7 from Elliptic Curve defined by y^2 + x*y = x^3 + 1018*x^2 + 288*x + 19 over Finite Field of size 1019 to Elliptic Curve defined by y^2 + 7*x*y + 850*y = x^3 + 970*x^2 + 445*x + 202 over Finite Field of size 1019
 ```
-
 
 which has visibly the wrong, but an isomorphic codomain.
 After 1 hour of chasing through the code, I was not able to find the error. I include the author as CC in the hope that he might have an idea.
@@ -242,7 +235,7 @@ I started implementing some more related to this ticket. Especially the `formal(
 archive/issue_comments_058594.json:
 ```json
 {
-    "body": "I found another issue with isogenies.\n\n\n```\nE = EllipticCurve('11a1')\nE2 = EllipticCurve('11a2')\nE2.isogeny(None,codomain=E1,degree=5)\n```\n\n\nfails with \n\n\n```\nValueError: Codomain parameter must be isomorphic to computed codomain isogeny\n```\n\n\nwhile `E.isogeny(None,codomain=E2,degree=5)` works fine. The reason is that the algorithm for computing the kernel polynomial in `compute_isogeny_starks` is only valid for **normalised** isogenies. \n\nStark's algorithm is implemented in ell_curve_isogeny.py from scratch and so it contains the computation of the formal expansion of the Weierstrass p function. I wonder if we should add as another possible algorithm to do the same sort of computation, but using the already existing code for formal groups instead. ....",
+    "body": "I found another issue with isogenies.\n\n```\nE = EllipticCurve('11a1')\nE2 = EllipticCurve('11a2')\nE2.isogeny(None,codomain=E1,degree=5)\n```\n\nfails with \n\n```\nValueError: Codomain parameter must be isomorphic to computed codomain isogeny\n```\n\nwhile `E.isogeny(None,codomain=E2,degree=5)` works fine. The reason is that the algorithm for computing the kernel polynomial in `compute_isogeny_starks` is only valid for **normalised** isogenies. \n\nStark's algorithm is implemented in ell_curve_isogeny.py from scratch and so it contains the computation of the formal expansion of the Weierstrass p function. I wonder if we should add as another possible algorithm to do the same sort of computation, but using the already existing code for formal groups instead. ....",
     "created_at": "2009-10-23T23:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -253,21 +246,17 @@ archive/issue_comments_058594.json:
 
 I found another issue with isogenies.
 
-
 ```
 E = EllipticCurve('11a1')
 E2 = EllipticCurve('11a2')
 E2.isogeny(None,codomain=E1,degree=5)
 ```
 
-
 fails with 
-
 
 ```
 ValueError: Codomain parameter must be isomorphic to computed codomain isogeny
 ```
-
 
 while `E.isogeny(None,codomain=E2,degree=5)` works fine. The reason is that the algorithm for computing the kernel polynomial in `compute_isogeny_starks` is only valid for **normalised** isogenies. 
 
@@ -280,7 +269,7 @@ Stark's algorithm is implemented in ell_curve_isogeny.py from scratch and so it 
 archive/issue_comments_058595.json:
 ```json
 {
-    "body": "Yet another bug with `dual`. I have to chase that. It does not look like being related to the previously reported bugs.\n\n\n```\nk = GF(103)\nE = EllipticCurve(k,[1,0,0,1,-1])\nP = E(60,85)\nphi = E.isogeny(P)\nphi.dual()\n```\n\n\ngives\n\n\n```\nIndexError: list index out of range\n```\n\n\nin  line 3789.\n\n(I keep on adding these bugs here and I try to resolve as many as I can with the patch for this. Only then I will open new tickets for the remaining ones)",
+    "body": "Yet another bug with `dual`. I have to chase that. It does not look like being related to the previously reported bugs.\n\n```\nk = GF(103)\nE = EllipticCurve(k,[1,0,0,1,-1])\nP = E(60,85)\nphi = E.isogeny(P)\nphi.dual()\n```\n\ngives\n\n```\nIndexError: list index out of range\n```\n\nin  line 3789.\n\n(I keep on adding these bugs here and I try to resolve as many as I can with the patch for this. Only then I will open new tickets for the remaining ones)",
     "created_at": "2009-10-24T17:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
@@ -291,7 +280,6 @@ archive/issue_comments_058595.json:
 
 Yet another bug with `dual`. I have to chase that. It does not look like being related to the previously reported bugs.
 
-
 ```
 k = GF(103)
 E = EllipticCurve(k,[1,0,0,1,-1])
@@ -300,14 +288,11 @@ phi = E.isogeny(P)
 phi.dual()
 ```
 
-
 gives
-
 
 ```
 IndexError: list index out of range
 ```
-
 
 in  line 3789.
 

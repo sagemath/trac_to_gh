@@ -297,7 +297,7 @@ Changing keywords from "days30" to "days30, schur".
 archive/issue_comments_084722.json:
 ```json
 {
-    "body": "Here is a git branch. Tests do pass, but the doc may not build.\n----\nNew commits:",
+    "body": "Here is a git branch. Tests do pass, but the doc may not build.\n\n---\nNew commits:",
     "created_at": "2015-04-24T08:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
@@ -307,7 +307,8 @@ archive/issue_comments_084722.json:
 ```
 
 Here is a git branch. Tests do pass, but the doc may not build.
-----
+
+---
 New commits:
 
 
@@ -387,7 +388,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_084725.json:
 ```json
 {
-    "body": "I made a bunch of major revisions:\n\n- I changed the indexing set for `SchurAlgebra` be tuples rather than words since it was not using any properties of words and was incurring for it.\n- I changed `TensorSpace` to `SchurTensorModule` (although I'm quite open to better names).\n- `SchurTensorModule` inherits from `CombinatorialFreeModule_Tensor`. This makes it behave like a tensor product with respect to things like `tensor()`.\n- I implemented the actions of the symmetric group (well...permutations), the symmetric group algebra, and the Schur algebra as actual actions using `_acted_upon_`. I also cached the Schur action morphism and implemented the permutation actions directly.\n- Renamed `GL_n_irred_character` to `GL_irreducible_character`.\n- Added documentation and doctests for full coverage.\n\nThe net result of my changes is over a 30x speedup to `GL_irreducible_character`, which allowed me to remove the `# long time` from those tests. If someone (Hugh, Frederic, ?) could review my changes, then I think we can set a positive review.\n----\nNew commits:",
+    "body": "I made a bunch of major revisions:\n\n- I changed the indexing set for `SchurAlgebra` be tuples rather than words since it was not using any properties of words and was incurring for it.\n- I changed `TensorSpace` to `SchurTensorModule` (although I'm quite open to better names).\n- `SchurTensorModule` inherits from `CombinatorialFreeModule_Tensor`. This makes it behave like a tensor product with respect to things like `tensor()`.\n- I implemented the actions of the symmetric group (well...permutations), the symmetric group algebra, and the Schur algebra as actual actions using `_acted_upon_`. I also cached the Schur action morphism and implemented the permutation actions directly.\n- Renamed `GL_n_irred_character` to `GL_irreducible_character`.\n- Added documentation and doctests for full coverage.\n\nThe net result of my changes is over a 30x speedup to `GL_irreducible_character`, which allowed me to remove the `# long time` from those tests. If someone (Hugh, Frederic, ?) could review my changes, then I think we can set a positive review.\n\n---\nNew commits:",
     "created_at": "2015-05-01T01:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9123",
     "type": "issue_comment",
@@ -406,7 +407,8 @@ I made a bunch of major revisions:
 - Added documentation and doctests for full coverage.
 
 The net result of my changes is over a 30x speedup to `GL_irreducible_character`, which allowed me to remove the `# long time` from those tests. If someone (Hugh, Frederic, ?) could review my changes, then I think we can set a positive review.
-----
+
+---
 New commits:
 
 

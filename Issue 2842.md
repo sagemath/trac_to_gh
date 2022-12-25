@@ -76,7 +76,7 @@ Looks good to me.  Apply just 2842.patch after #2844 .
 archive/issue_comments_019462.json:
 ```json
 {
-    "body": "I am seeing one doctest failure on sage.math:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/multi_polynomial_libsingular.py\", line 496:\n    sage: R.<x,y> = QQ[]; S.<xx,yy> = GF(5)[]; S(5*x*y + x + 17*y)\nExpected:\n    xx + 2*yy\nGot:\n    xx + 0*yy\n**********************************************************************\n```\n\nMartin will start poking around tomorrow.\n\nCheers,\n\nMichael",
+    "body": "I am seeing one doctest failure on sage.math:\n\n```\nsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha3/tmp/multi_polynomial_libsingular.py\", line 496:\n    sage: R.<x,y> = QQ[]; S.<xx,yy> = GF(5)[]; S(5*x*y + x + 17*y)\nExpected:\n    xx + 2*yy\nGot:\n    xx + 0*yy\n**********************************************************************\n```\nMartin will start poking around tomorrow.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T00:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2842",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ Got:
     xx + 0*yy
 **********************************************************************
 ```
-
 Martin will start poking around tomorrow.
 
 Cheers,

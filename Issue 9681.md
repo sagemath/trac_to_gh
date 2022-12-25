@@ -3,7 +3,7 @@
 archive/issues_009681.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake @qed777 @nexttime @jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\n\nthen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake @qed777 @nexttime @jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\nthen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
     "created_at": "2010-08-04T00:32:03Z",
     "labels": [
         "component: build",
@@ -23,21 +23,17 @@ CC:  @dandrake @qed777 @nexttime @jhpalmieri
 
 The zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:
 
-
 ```
 /configure --gmp-prefix="$SAGE_LOCAL" --ntl-prefix="$SAGE_LOCAL" \
             --prefix="$SAGE_LOCAL" --cflags="$CFLAGS" --ldflags="$LDFLAGS"
 ```
 
-
 Looking at $SAGE_ROOT/spkg/standard/deps, I see: 
-
 
 ```
 $(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)
         $(INSTALL) "$(SAGE_SPKG) $(ZNPOLY) 2>&1" "tee -a $(SAGE_LOGS)/$(ZNPOLY).log"
 ```
-
 
 then looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.
 
@@ -179,7 +175,7 @@ Unless it's actually causing problems for builds, or giving incorrect results, I
 archive/issue_comments_093962.json:
 ```json
 {
-    "body": "Replying to [comment:7 robertwb]:\n> Unless it's actually causing problems for builds, or giving incorrect results, I wouldn't classify this a as a blocker (though I'd say it is a bug for sure). \n\nSome rather subtle problems have been caused by dependencies which have not been correct - I'm thinking in particular of William's failure on OS X to compile some Fortran code, when in fact it was due to the fortran package being dependent on python for a very simple script. The strange thing about that was everyone else had no problems, including me, using William's script on bsd.math. \n\nI would have thought anything that had the potential to mis-compile would be a blocker personally, but that's a personal opinion of course. \n\nDave",
+    "body": "Replying to [comment:7 robertwb]:\n> Unless it's actually causing problems for builds, or giving incorrect results, I wouldn't classify this a as a blocker (though I'd say it is a bug for sure). \n\n\nSome rather subtle problems have been caused by dependencies which have not been correct - I'm thinking in particular of William's failure on OS X to compile some Fortran code, when in fact it was due to the fortran package being dependent on python for a very simple script. The strange thing about that was everyone else had no problems, including me, using William's script on bsd.math. \n\nI would have thought anything that had the potential to mis-compile would be a blocker personally, but that's a personal opinion of course. \n\nDave",
     "created_at": "2010-08-04T08:58:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9681",
     "type": "issue_comment",
@@ -190,6 +186,7 @@ archive/issue_comments_093962.json:
 
 Replying to [comment:7 robertwb]:
 > Unless it's actually causing problems for builds, or giving incorrect results, I wouldn't classify this a as a blocker (though I'd say it is a bug for sure). 
+
 
 Some rather subtle problems have been caused by dependencies which have not been correct - I'm thinking in particular of William's failure on OS X to compile some Fortran code, when in fact it was due to the fortran package being dependent on python for a very simple script. The strange thing about that was everyone else had no problems, including me, using William's script on bsd.math. 
 

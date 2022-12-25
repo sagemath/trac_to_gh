@@ -3,7 +3,7 @@
 archive/issues_000773.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
+    "body": "Assignee: @williamstein\n\n```\nwas@ubuntu:~/sd5/ant$ export PATH=.:$PATH\nwas@ubuntu:~/sd5/ant$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.5.1, Release Date: 2007-09-26                     |\n| Type notebook() for the GUI, and license() for information.        |\nos.ensage: os.environ['PATH']\n'/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/773\n\n",
     "created_at": "2007-10-01T19:05:57Z",
     "labels": [
         "component: interfaces",
@@ -18,7 +18,6 @@ archive/issues_000773.json:
 ```
 Assignee: @williamstein
 
-
 ```
 was@ubuntu:~/sd5/ant$ export PATH=.:$PATH
 was@ubuntu:~/sd5/ant$ sage
@@ -29,7 +28,6 @@ was@ubuntu:~/sd5/ant$ sage
 os.ensage: os.environ['PATH']
 '/home/was/s/local/polymake/bin/:/home/was/s:/home/was/s/local/bin:/home/was/s.dev:/usr/local/bin/:/home/was/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/773
 
@@ -59,7 +57,7 @@ archive/issue_events_002128.json:
 archive/issue_comments_004600.json:
 ```json
 {
-    "body": "I'm guessing this is caused by the following lines from expect.py...\n\n```\n# . in user's path causes *HUGE* trouble, e.g., pexpect will try to\n# run a directory name!\np = os.environ['PATH'].split(':')\nos.environ['PATH'] = ':'.join([v for v in p if v.strip() != '.'])\n```\n\n\nThese lines were added by William Stein:\n\n```\nchangeset:   2329:cccccf17fcd6\nuser:        William Stein <wstein@gmail.com>\ndate:        Thu Jan 11 14:10:46 2007 -0800\nsummary:     Make sure . is not in user's path.\n```\n",
+    "body": "I'm guessing this is caused by the following lines from expect.py...\n\n```\n# . in user's path causes *HUGE* trouble, e.g., pexpect will try to\n# run a directory name!\np = os.environ['PATH'].split(':')\nos.environ['PATH'] = ':'.join([v for v in p if v.strip() != '.'])\n```\n\nThese lines were added by William Stein:\n\n```\nchangeset:   2329:cccccf17fcd6\nuser:        William Stein <wstein@gmail.com>\ndate:        Thu Jan 11 14:10:46 2007 -0800\nsummary:     Make sure . is not in user's path.\n```",
     "created_at": "2007-12-11T02:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/773",
     "type": "issue_comment",
@@ -77,7 +75,6 @@ p = os.environ['PATH'].split(':')
 os.environ['PATH'] = ':'.join([v for v in p if v.strip() != '.'])
 ```
 
-
 These lines were added by William Stein:
 
 ```
@@ -86,7 +83,6 @@ user:        William Stein <wstein@gmail.com>
 date:        Thu Jan 11 14:10:46 2007 -0800
 summary:     Make sure . is not in user's path.
 ```
-
 
 
 

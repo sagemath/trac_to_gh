@@ -52,7 +52,7 @@ Oh, I forgot: you need to apply the patch at #6585 for the reference manual to b
 archive/issue_comments_053706.json:
 ```json
 {
-    "body": "I installed the updated SPKG with\n\n```\n./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg\n```\n\nand applied the patch at #6585. When doing\n\n```\n./sage -docbuild reference html\n```\n\nI got the following errors:\n\n```\nmvngu@sage sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux]$ ./sage -docbuild reference html\nTraceback (most recent call last):\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 412, in get_modified_modules\n    env = self.get_sphinx_environment()\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 403, in get_sphinx_environment\n    return BuildEnvironment.frompickle(config, env_pickle)\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/local/lib/python2.6/site-packages/Sphinx-0.6.2-py2.6.egg/sphinx/environment.py\", line 210, in frompickle\n    env = pickle.load(picklefile)\nAttributeError: 'module' object has no attribute 'RedirStream'\n```\n",
+    "body": "I installed the updated SPKG with\n\n```\n./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg\n```\nand applied the patch at #6585. When doing\n\n```\n./sage -docbuild reference html\n```\nI got the following errors:\n\n```\nmvngu@sage sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux]$ ./sage -docbuild reference html\nTraceback (most recent call last):\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 412, in get_modified_modules\n    env = self.get_sphinx_environment()\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/devel/sage/doc/common/builder.py\", line 403, in get_sphinx_environment\n    return BuildEnvironment.frompickle(config, env_pickle)\n  File \"/scratch/mvngu/sage-4.1.1.alpha0-sage.math.washignton.edu-x86_64-Linux/local/lib/python2.6/site-packages/Sphinx-0.6.2-py2.6.egg/sphinx/environment.py\", line 210, in frompickle\n    env = pickle.load(picklefile)\nAttributeError: 'module' object has no attribute 'RedirStream'\n```",
     "created_at": "2009-07-23T01:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -66,13 +66,11 @@ I installed the updated SPKG with
 ```
 ./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg
 ```
-
 and applied the patch at #6585. When doing
 
 ```
 ./sage -docbuild reference html
 ```
-
 I got the following errors:
 
 ```
@@ -90,7 +88,6 @@ Traceback (most recent call last):
     env = pickle.load(picklefile)
 AttributeError: 'module' object has no attribute 'RedirStream'
 ```
-
 
 
 
@@ -117,7 +114,7 @@ I think I got this error, too.  Once I deleted doc/output, things worked for me.
 archive/issue_comments_053708.json:
 ```json
 {
-    "body": "The upgraded Sphinx SPKG can't handle binary encodings in the file:\n\n```\nsage/combinat/partition.py\n```\n\nIn particular, the following sections from that source file:\n\n\nline:2233\n\n```\nsage: p = loads('x\\x9c\\x85\\x8e\\xbd\\xaa\\xc2@\\x10\\x85\\x89\\xff.>\\xc4\\x94\\xda\\x04\\x15|\\x04\\xb1\\xb1\\x90\\x0b[\\x87I\\x18\\x935\\xc9\\xae\\xb33\\xda\\t\\xd7\\xc2\\xf76\"biw\\x0e\\x9c\\x9f\\xef\\xbfW\\x08\\x96\\x94\\x16\\xa1\\xcd\\x9dGM\\xcf\\x18\\xd5\\xa9\\x0b\\xde\\x1c>Jv\\x91PIt\\xbf\\xcd|m8Y\\xdc\\xb9w\\xe3\\xfe\\xdc&\\xf5\\xbb\\x1d\\x9d/%u^\\xa9\\xa4hZ\\xac)\\xfb\\x18\\x1e\\xd8d\\xfd\\xf8\\xe3\\xa1\\x1df\\x1e[\\xe2\\x91\\xdd|\\x97!\\x1ca\\xb5\\x84\\n\\xaf\\xdd\\x02\\xbc\\xbe\\x05\\x1a\\x12\\x01\\xad\\xd0C\\x88@|\\xc1\\x064\\xc0\\x9a\\xc7v\\x16\\xf2\\x13\\x15\\x9a\\x15\\r\\x8a\\xf0\\xe47\\xf9;ixj\\x13_u \\xd8\\x81\\x98K\\x9e>\\x01\\x13iVH')\n```\n\n\n\nline:2294\n\n```\nsage: p = loads('x\\x9c\\x85\\x8e\\xbd\\x0e\\x820\\x14\\x85\\x03\\x8a?\\x8d\\x0f\\xd1Q\\x97\\x06y\\x07\\xe3\\xaa&\\x9d\\xc9\\xa5\\xb9\\x96\\n\\xb4^Z\\xdcLt\\xf0\\xbd\\xc5 qt;\\'9?\\xdf#V\\x1e4\\n\\xe5\\x9a\\xc2X\\x08\\xe2\\nm0\\xc18\\xcb\\x0e\\xa3\\xf2\\xfb\\x16!\\xa0\\x0f\\xbbcn+F\\xd1\\xe6I\\xf1\\x9d&k\\x19UC\\xbb5V{al@\\x8d-k\\xa0\\xc2|44\\x95Q\\xf6:Q\"\\x93\\xdcB\\x834\\x93\\xe9o\\x99\\xbb3\\xdf\\xa6\\xbc\\x84[\\xbf\\xc0\\xf5\\xf7\\x87\\x7f 8R\\x075\\x0f\\x8eg4\\x97+W\\\\P\\x85\\\\\\xd5\\xe0=-\\xfeC\\x0fIFK\\x19\\xd9\\xb2g\\x80\\x9e\\x81u\\x85x\\x03w\\x0eT\\xb1')\n```\n\n\n\nline:2839\n\n```\nsage: dmp = 'x\\x9ck`J.NLO\\xd5K\\xce\\xcfM\\xca\\xccK,\\xd1+H,*\\xc9,\\xc9\\xcc\\xcf\\xe3\\n\\x80\\xb1\\x8a\\xe3\\x93\\x81DIQbf^I1W!\\xa3fc!Sm!\\xb3F(7\\x92x!Km!k(GnbE<\\xc8\\x88B6\\x88\\xb9E\\x99y\\xe9\\xc5z@\\x05\\xa9\\xe9\\xa9E\\\\\\xb9\\x89\\xd9\\xa9\\xf10N!{(\\xa3QkP!Gq(c^\\x06\\x90c\\x0c\\xe4p\\x96&\\xe9\\x01\\x00\\xc2\\xe53\\xfd'\n```\n\nWhen these lines are removed, the HTML version of the reference manual builds OK. So a possible fix for line 2233 is to replace everything in the TEST block starting from that line by:\n\n```\nsage: p = PartitionsGreatestLE(10,2)\nsage: p == loads(dumps(p))\nTrue\n```\n\nWe can do something similar for line 2294; replace everything in the TEST block starting from line 2294 by:\n\n```\nsage: p = PartitionsGreatestEQ(10,2)\nsage: p == loads(dumps(p))\nTrue\n```\n\nAs for the TEST block starting from line 2839, I have no idea how to fix it so that the reference manual would successfully builds. Someone on the sage-combinat team to the rescue?",
+    "body": "The upgraded Sphinx SPKG can't handle binary encodings in the file:\n\n```\nsage/combinat/partition.py\n```\nIn particular, the following sections from that source file:\n\n\nline:2233\n\n```\nsage: p = loads('x\\x9c\\x85\\x8e\\xbd\\xaa\\xc2@\\x10\\x85\\x89\\xff.>\\xc4\\x94\\xda\\x04\\x15|\\x04\\xb1\\xb1\\x90\\x0b[\\x87I\\x18\\x935\\xc9\\xae\\xb33\\xda\\t\\xd7\\xc2\\xf76\"biw\\x0e\\x9c\\x9f\\xef\\xbfW\\x08\\x96\\x94\\x16\\xa1\\xcd\\x9dGM\\xcf\\x18\\xd5\\xa9\\x0b\\xde\\x1c>Jv\\x91PIt\\xbf\\xcd|m8Y\\xdc\\xb9w\\xe3\\xfe\\xdc&\\xf5\\xbb\\x1d\\x9d/%u^\\xa9\\xa4hZ\\xac)\\xfb\\x18\\x1e\\xd8d\\xfd\\xf8\\xe3\\xa1\\x1df\\x1e[\\xe2\\x91\\xdd|\\x97!\\x1ca\\xb5\\x84\\n\\xaf\\xdd\\x02\\xbc\\xbe\\x05\\x1a\\x12\\x01\\xad\\xd0C\\x88@|\\xc1\\x064\\xc0\\x9a\\xc7v\\x16\\xf2\\x13\\x15\\x9a\\x15\\r\\x8a\\xf0\\xe47\\xf9;ixj\\x13_u \\xd8\\x81\\x98K\\x9e>\\x01\\x13iVH')\n```\n\n\nline:2294\n\n```\nsage: p = loads('x\\x9c\\x85\\x8e\\xbd\\x0e\\x820\\x14\\x85\\x03\\x8a?\\x8d\\x0f\\xd1Q\\x97\\x06y\\x07\\xe3\\xaa&\\x9d\\xc9\\xa5\\xb9\\x96\\n\\xb4^Z\\xdcLt\\xf0\\xbd\\xc5 qt;\\'9?\\xdf#V\\x1e4\\n\\xe5\\x9a\\xc2X\\x08\\xe2\\nm0\\xc18\\xcb\\x0e\\xa3\\xf2\\xfb\\x16!\\xa0\\x0f\\xbbcn+F\\xd1\\xe6I\\xf1\\x9d&k\\x19UC\\xbb5V{al@\\x8d-k\\xa0\\xc2|44\\x95Q\\xf6:Q\"\\x93\\xdcB\\x834\\x93\\xe9o\\x99\\xbb3\\xdf\\xa6\\xbc\\x84[\\xbf\\xc0\\xf5\\xf7\\x87\\x7f 8R\\x075\\x0f\\x8eg4\\x97+W\\\\P\\x85\\\\\\xd5\\xe0=-\\xfeC\\x0fIFK\\x19\\xd9\\xb2g\\x80\\x9e\\x81u\\x85x\\x03w\\x0eT\\xb1')\n```\n\n\nline:2839\n\n```\nsage: dmp = 'x\\x9ck`J.NLO\\xd5K\\xce\\xcfM\\xca\\xccK,\\xd1+H,*\\xc9,\\xc9\\xcc\\xcf\\xe3\\n\\x80\\xb1\\x8a\\xe3\\x93\\x81DIQbf^I1W!\\xa3fc!Sm!\\xb3F(7\\x92x!Km!k(GnbE<\\xc8\\x88B6\\x88\\xb9E\\x99y\\xe9\\xc5z@\\x05\\xa9\\xe9\\xa9E\\\\\\xb9\\x89\\xd9\\xa9\\xf10N!{(\\xa3QkP!Gq(c^\\x06\\x90c\\x0c\\xe4p\\x96&\\xe9\\x01\\x00\\xc2\\xe53\\xfd'\n```\nWhen these lines are removed, the HTML version of the reference manual builds OK. So a possible fix for line 2233 is to replace everything in the TEST block starting from that line by:\n\n```\nsage: p = PartitionsGreatestLE(10,2)\nsage: p == loads(dumps(p))\nTrue\n```\nWe can do something similar for line 2294; replace everything in the TEST block starting from line 2294 by:\n\n```\nsage: p = PartitionsGreatestEQ(10,2)\nsage: p == loads(dumps(p))\nTrue\n```\nAs for the TEST block starting from line 2839, I have no idea how to fix it so that the reference manual would successfully builds. Someone on the sage-combinat team to the rescue?",
     "created_at": "2009-07-24T10:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -131,7 +128,6 @@ The upgraded Sphinx SPKG can't handle binary encodings in the file:
 ```
 sage/combinat/partition.py
 ```
-
 In particular, the following sections from that source file:
 
 
@@ -142,7 +138,6 @@ sage: p = loads('x\x9c\x85\x8e\xbd\xaa\xc2@\x10\x85\x89\xff.>\xc4\x94\xda\x04\x1
 ```
 
 
-
 line:2294
 
 ```
@@ -150,13 +145,11 @@ sage: p = loads('x\x9c\x85\x8e\xbd\x0e\x820\x14\x85\x03\x8a?\x8d\x0f\xd1Q\x97\x0
 ```
 
 
-
 line:2839
 
 ```
 sage: dmp = 'x\x9ck`J.NLO\xd5K\xce\xcfM\xca\xccK,\xd1+H,*\xc9,\xc9\xcc\xcf\xe3\n\x80\xb1\x8a\xe3\x93\x81DIQbf^I1W!\xa3fc!Sm!\xb3F(7\x92x!Km!k(GnbE<\xc8\x88B6\x88\xb9E\x99y\xe9\xc5z@\x05\xa9\xe9\xa9E\\\xb9\x89\xd9\xa9\xf10N!{(\xa3QkP!Gq(c^\x06\x90c\x0c\xe4p\x96&\xe9\x01\x00\xc2\xe53\xfd'
 ```
-
 When these lines are removed, the HTML version of the reference manual builds OK. So a possible fix for line 2233 is to replace everything in the TEST block starting from that line by:
 
 ```
@@ -164,7 +157,6 @@ sage: p = PartitionsGreatestLE(10,2)
 sage: p == loads(dumps(p))
 True
 ```
-
 We can do something similar for line 2294; replace everything in the TEST block starting from line 2294 by:
 
 ```
@@ -172,7 +164,6 @@ sage: p = PartitionsGreatestEQ(10,2)
 sage: p == loads(dumps(p))
 True
 ```
-
 As for the TEST block starting from line 2839, I have no idea how to fix it so that the reference manual would successfully builds. Someone on the sage-combinat team to the rescue?
 
 
@@ -182,7 +173,7 @@ As for the TEST block starting from line 2839, I have no idea how to fix it so t
 archive/issue_comments_053709.json:
 ```json
 {
-    "body": "Replying to [comment:1 jhpalmieri]:\n> Oh, I forgot: you need to apply the patch at #6585 for the reference manual to build.  This version of Sphinx also prints a lot of new warnings, too.\n\nI think that this patch fixes the issue with binary encodings; at least it did for me.",
+    "body": "Replying to [comment:1 jhpalmieri]:\n> Oh, I forgot: you need to apply the patch at #6585 for the reference manual to build.  This version of Sphinx also prints a lot of new warnings, too.\n\n\nI think that this patch fixes the issue with binary encodings; at least it did for me.",
     "created_at": "2009-07-24T14:45:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -193,6 +184,7 @@ archive/issue_comments_053709.json:
 
 Replying to [comment:1 jhpalmieri]:
 > Oh, I forgot: you need to apply the patch at #6585 for the reference manual to build.  This version of Sphinx also prints a lot of new warnings, too.
+
 
 I think that this patch fixes the issue with binary encodings; at least it did for me.
 
@@ -221,7 +213,7 @@ With the patch at #6585 and the SPKG, building the reference manual on sage.math
 archive/issue_comments_053711.json:
 ```json
 {
-    "body": "Replying to [comment:7 mvngu]:\n> With the patch at #6585 and the SPKG, building the reference manual on sage.math takes much longer than previously. \n\nI agree: on my mac, it took 28 minutes to build the html version with the old one, and 43 minutes with the new one.  With the --jsmath option on, the old one took 6 minutes and the new one took 15 minutes.  I was getting similar comparisons on sage.math.  (This is with me deleting devel/sage/doc/output between each build, to level the playing field.) \n\nIt's strange: for the tutorial and developer's guide, building is about the same or slightly faster with the new version. I also made a modified version of the developer's guide by duplicating some sections (so that the resulting PDF file was 559 pages); the new version was slightly faster there, too.  Maybe it's all of the math in the reference manual?  Maybe it's the large number of files?  Maybe it's the autogeneration of files?",
+    "body": "Replying to [comment:7 mvngu]:\n> With the patch at #6585 and the SPKG, building the reference manual on sage.math takes much longer than previously. \n\n\nI agree: on my mac, it took 28 minutes to build the html version with the old one, and 43 minutes with the new one.  With the --jsmath option on, the old one took 6 minutes and the new one took 15 minutes.  I was getting similar comparisons on sage.math.  (This is with me deleting devel/sage/doc/output between each build, to level the playing field.) \n\nIt's strange: for the tutorial and developer's guide, building is about the same or slightly faster with the new version. I also made a modified version of the developer's guide by duplicating some sections (so that the resulting PDF file was 559 pages); the new version was slightly faster there, too.  Maybe it's all of the math in the reference manual?  Maybe it's the large number of files?  Maybe it's the autogeneration of files?",
     "created_at": "2009-07-26T22:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -232,6 +224,7 @@ archive/issue_comments_053711.json:
 
 Replying to [comment:7 mvngu]:
 > With the patch at #6585 and the SPKG, building the reference manual on sage.math takes much longer than previously. 
+
 
 I agree: on my mac, it took 28 minutes to build the html version with the old one, and 43 minutes with the new one.  With the --jsmath option on, the old one took 6 minutes and the new one took 15 minutes.  I was getting similar comparisons on sage.math.  (This is with me deleting devel/sage/doc/output between each build, to level the playing field.) 
 
@@ -264,7 +257,7 @@ Perhaps there's a more efficient, parallelizable representation.  Can we subclas
 archive/issue_comments_053713.json:
 ```json
 {
-    "body": "Minor progress:  It seems that a custom [autodoc-skip-member](http://sphinx.pocoo.org/ext/autodoc.html?highlight=inherited%20members#skipping-members) method now *overrides* Sphinx's default behavior, which is to skip private methods (`__init__`, etc.).  To keep these out of the reference manual, we might use, e.g.,\n\n```\ndef skip_NestedClass(app, what, name, obj, skip, options):\n    \"\"\"docstring\"\"\"\n    skip_nested = str(obj).find(\"sage.misc.misc\") != -1 and name.find(\"MainClass.NestedClass\") != -1\n    return skip or skip_nested\n```\n\nin `conf.py`.  Unfortunately, this does not significantly reduce the build time or memory usage.",
+    "body": "Minor progress:  It seems that a custom [autodoc-skip-member](http://sphinx.pocoo.org/ext/autodoc.html?highlight=inherited%20members#skipping-members) method now *overrides* Sphinx's default behavior, which is to skip private methods (`__init__`, etc.).  To keep these out of the reference manual, we might use, e.g.,\n\n```\ndef skip_NestedClass(app, what, name, obj, skip, options):\n    \"\"\"docstring\"\"\"\n    skip_nested = str(obj).find(\"sage.misc.misc\") != -1 and name.find(\"MainClass.NestedClass\") != -1\n    return skip or skip_nested\n```\nin `conf.py`.  Unfortunately, this does not significantly reduce the build time or memory usage.",
     "created_at": "2009-08-01T15:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -281,7 +274,6 @@ def skip_NestedClass(app, what, name, obj, skip, options):
     skip_nested = str(obj).find("sage.misc.misc") != -1 and name.find("MainClass.NestedClass") != -1
     return skip or skip_nested
 ```
-
 in `conf.py`.  Unfortunately, this does not significantly reduce the build time or memory usage.
 
 
@@ -291,7 +283,7 @@ in `conf.py`.  Unfortunately, this does not significantly reduce the build time 
 archive/issue_comments_053714.json:
 ```json
 {
-    "body": "Apparently, the culprit is `sphinx.pycode`'s Python source analyzer, which `sphinx.ext.autodoc` uses to extract *attribute* docstrings.  From `Sphinx-0.6.2-py2.6.egg/sphinx/pycode/__init__.py`:\n\n```\n    The docstrings can either be in special '#:' comments before the assignment\n    or in a docstring after it.\n```\n\nAccording to the analyzer, there are just two places to find such docstrings in the Sage library:\n* `combinat/designs/block_design.py`\n* `schemes/elliptic_curves/ell_field.py`\nStill, resource use is high, because there is a **lot** of caching going on.  We can reduce it with [weak references](http://docs.python.org/library/weakref.html):\n\n```\n--- __init__.py.orig    2009-08-01 09:58:27.303927239 -0700\n+++ __init__.py 2009-08-01 11:35:17.477865562 -0700\n@@ -120,10 +120,11 @@ class PycodeError(Exception):\n             res += ' (exception was: %r)' % self.args[1]\n         return res\n \n-\n+import weakref\n class ModuleAnalyzer(object):\n     # cache for analyzer objects -- caches both by module and file name\n-    cache = {}\n+#    cache = {}\n+    cache = weakref.WeakValueDictionary()\n \n     @classmethod\n     def for_string(cls, string, modname, srcname='<string>'):\n```\n\nThis does reduce build time and memory usage, but I don't know if the output is identical.",
+    "body": "Apparently, the culprit is `sphinx.pycode`'s Python source analyzer, which `sphinx.ext.autodoc` uses to extract *attribute* docstrings.  From `Sphinx-0.6.2-py2.6.egg/sphinx/pycode/__init__.py`:\n\n```\n    The docstrings can either be in special '#:' comments before the assignment\n    or in a docstring after it.\n```\nAccording to the analyzer, there are just two places to find such docstrings in the Sage library:\n* `combinat/designs/block_design.py`\n* `schemes/elliptic_curves/ell_field.py`\nStill, resource use is high, because there is a **lot** of caching going on.  We can reduce it with [weak references](http://docs.python.org/library/weakref.html):\n\n```\n--- __init__.py.orig    2009-08-01 09:58:27.303927239 -0700\n+++ __init__.py 2009-08-01 11:35:17.477865562 -0700\n@@ -120,10 +120,11 @@ class PycodeError(Exception):\n             res += ' (exception was: %r)' % self.args[1]\n         return res\n \n-\n+import weakref\n class ModuleAnalyzer(object):\n     # cache for analyzer objects -- caches both by module and file name\n-    cache = {}\n+#    cache = {}\n+    cache = weakref.WeakValueDictionary()\n \n     @classmethod\n     def for_string(cls, string, modname, srcname='<string>'):\n```\nThis does reduce build time and memory usage, but I don't know if the output is identical.",
     "created_at": "2009-08-01T19:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -306,7 +298,6 @@ Apparently, the culprit is `sphinx.pycode`'s Python source analyzer, which `sphi
     The docstrings can either be in special '#:' comments before the assignment
     or in a docstring after it.
 ```
-
 According to the analyzer, there are just two places to find such docstrings in the Sage library:
 * `combinat/designs/block_design.py`
 * `schemes/elliptic_curves/ell_field.py`
@@ -330,7 +321,6 @@ Still, resource use is high, because there is a **lot** of caching going on.  We
      @classmethod
      def for_string(cls, string, modname, srcname='<string>'):
 ```
-
 This does reduce build time and memory usage, but I don't know if the output is identical.
 
 
@@ -340,7 +330,7 @@ This does reduce build time and memory usage, but I don't know if the output is 
 archive/issue_comments_053715.json:
 ```json
 {
-    "body": "For `sage -docbuild reference html --jsmath`, at least, the results are close:\n\n```\n$ du -s output_v0*\n95550   output_v051\n97392   output_v062\n97388   output_v062_mod\n```\n\nThe differences are in `environmental.pickle` or stem from using a function as a default argument in\n* `combinat/words/word_content.py`\n* `rings/polynomial/groebner_fan.py`",
+    "body": "For `sage -docbuild reference html --jsmath`, at least, the results are close:\n\n```\n$ du -s output_v0*\n95550   output_v051\n97392   output_v062\n97388   output_v062_mod\n```\nThe differences are in `environmental.pickle` or stem from using a function as a default argument in\n* `combinat/words/word_content.py`\n* `rings/polynomial/groebner_fan.py`",
     "created_at": "2009-08-01T20:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -357,7 +347,6 @@ $ du -s output_v0*
 97392   output_v062
 97388   output_v062_mod
 ```
-
 The differences are in `environmental.pickle` or stem from using a function as a default argument in
 * `combinat/words/word_content.py`
 * `rings/polynomial/groebner_fan.py`
@@ -387,7 +376,7 @@ Clearly, it's time for a break.
 archive/issue_comments_053717.json:
 ```json
 {
-    "body": "Nice observation.  Making the change with weak_references does indeed speed things up: \n\n```\n0.5.1     28 minutes\n0.6.2     43 minutes\n0.6.2     33 minutes   (version using weakref)\n```\n\nWith no other changes, it includes all of the private methods, as already pointed out (and I assume it did before using weakref -- this may account for some of the increased time, since it's producing more output), but it also includes (for some classes, anyway), an entry for `__weakref)_`.  See the documentation for sage/algebras/steenrod_algebra.py, for instance: it lists as an attribute of SteenrodAlgebraFactory\n\n```\n__weakref__\n   list of weak references to the object (if defined)\n```\n",
+    "body": "Nice observation.  Making the change with weak_references does indeed speed things up: \n\n```\n0.5.1     28 minutes\n0.6.2     43 minutes\n0.6.2     33 minutes   (version using weakref)\n```\nWith no other changes, it includes all of the private methods, as already pointed out (and I assume it did before using weakref -- this may account for some of the increased time, since it's producing more output), but it also includes (for some classes, anyway), an entry for `__weakref)_`.  See the documentation for sage/algebras/steenrod_algebra.py, for instance: it lists as an attribute of SteenrodAlgebraFactory\n\n```\n__weakref__\n   list of weak references to the object (if defined)\n```",
     "created_at": "2009-08-02T00:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -403,14 +392,12 @@ Nice observation.  Making the change with weak_references does indeed speed thin
 0.6.2     43 minutes
 0.6.2     33 minutes   (version using weakref)
 ```
-
 With no other changes, it includes all of the private methods, as already pointed out (and I assume it did before using weakref -- this may account for some of the increased time, since it's producing more output), but it also includes (for some classes, anyway), an entry for `__weakref)_`.  See the documentation for sage/algebras/steenrod_algebra.py, for instance: it lists as an attribute of SteenrodAlgebraFactory
 
 ```
 __weakref__
    list of weak references to the object (if defined)
 ```
-
 
 
 
@@ -531,7 +518,7 @@ I should add that this requires a local installation of [GraphViz](http://www.gr
 archive/issue_comments_053724.json:
 ```json
 {
-    "body": "Replying to [comment:17 mpatel]:\n> Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  \nThe [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.",
+    "body": "Replying to [comment:17 mpatel]:\n> Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  \n\nThe [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.",
     "created_at": "2009-08-05T08:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -542,6 +529,7 @@ archive/issue_comments_053724.json:
 
 Replying to [comment:17 mpatel]:
 > Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  
+
 The [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.
 
 
@@ -551,7 +539,7 @@ The [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_
 archive/issue_comments_053725.json:
 ```json
 {
-    "body": "Replying to [comment:20 mpatel]:\n> Replying to [comment:17 mpatel]:\n> > Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  \n> The [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.  \n[Here](http://groups.google.com/group/sphinx-dev/browse_thread/thread/db7752d5316f699c), actually.",
+    "body": "Replying to [comment:20 mpatel]:\n> Replying to [comment:17 mpatel]:\n> > Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  \n\n> The [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.  \n[Here](http://groups.google.com/group/sphinx-dev/browse_thread/thread/db7752d5316f699c), actually.",
     "created_at": "2009-08-05T08:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -563,6 +551,7 @@ archive/issue_comments_053725.json:
 Replying to [comment:20 mpatel]:
 > Replying to [comment:17 mpatel]:
 > > Also, I've asked about the merits of the `weakref` workaround on [sphinx-dev](http://groups.google.com/group/sphinx-dev).  
+
 > The [thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6187/trac_6187_testreference.patch).  Preliminary tests indicate that the proposed alternative does not reduce memory use significantly.  
 [Here](http://groups.google.com/group/sphinx-dev/browse_thread/thread/db7752d5316f699c), actually.
 
@@ -611,7 +600,7 @@ Hmm... could you make an spkg with that workaround?
 archive/issue_comments_053728.json:
 ```json
 {
-    "body": "Replying to [comment:23 mvngu]:\n> Replying to [comment:22 mpatel]:\n> > There's been no further activity about the workaround on sphinx-dev.  Since weakrefs appear to work for us, should we add a patch to the spkg?\n> Hmm... could you make an spkg with that workaround?\n\nI can certainly do it, but not until Monday.",
+    "body": "Replying to [comment:23 mvngu]:\n> Replying to [comment:22 mpatel]:\n> > There's been no further activity about the workaround on sphinx-dev.  Since weakrefs appear to work for us, should we add a patch to the spkg?\n\n> Hmm... could you make an spkg with that workaround?\n\nI can certainly do it, but not until Monday.",
     "created_at": "2009-08-14T15:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -623,6 +612,7 @@ archive/issue_comments_053728.json:
 Replying to [comment:23 mvngu]:
 > Replying to [comment:22 mpatel]:
 > > There's been no further activity about the workaround on sphinx-dev.  Since weakrefs appear to work for us, should we add a patch to the spkg?
+
 > Hmm... could you make an spkg with that workaround?
 
 I can certainly do it, but not until Monday.
@@ -710,7 +700,7 @@ Does #6664 suppress the private methods?
 archive/issue_comments_053733.json:
 ```json
 {
-    "body": "> Does #6664 suppress the private methods?\n\nYes, but do we *want* to suppress the private methods?  I actually prefer that they be included in the reference manual.",
+    "body": "> Does #6664 suppress the private methods?\n\n\nYes, but do we *want* to suppress the private methods?  I actually prefer that they be included in the reference manual.",
     "created_at": "2009-08-23T18:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -720,6 +710,7 @@ archive/issue_comments_053733.json:
 ```
 
 > Does #6664 suppress the private methods?
+
 
 Yes, but do we *want* to suppress the private methods?  I actually prefer that they be included in the reference manual.
 
@@ -825,7 +816,7 @@ I've replaced the old one with the new one, so the link is the same: [http://sag
 archive/issue_comments_053739.json:
 ```json
 {
-    "body": "Okay, here's another one.  Sphinx was just updated to version 0.6.3, and this is supposed to fix our problems.  In my testing, it doesn't have the Cython problem that the original version of 0.6.2 had; it incorporates the patch in the most recent 0.6.2 spkg.  The 0.6.3 spkg is a bit slower than 0.5.1 and also than our version of 0.6.2 with the unauthorized weakref patch.  It's not nearly as slow and doesn't seem to use nearly as much memory as the unpatched 0.6.2.  Here's the spkg: [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p0.spkg).\n\nSome timings in minutes for \"sage -docbuild reference html --jsmath\", with the patch at #6664 applied:\n\n```\n                    Mac      sage.math  ubuntu\nSphinx 0.5.1         6           5        10\nSphinx 0.6.2.p2      6           6        10\nSphinx 0.6.3         8           9        11\n```\n\n\"Mac\" is my Intel iMac running OS X 10.5; \"sage.math\" is sage.math, and \"ubuntu\" is an old ubuntu box I have access to.\n\nAs I said above, the memory usage seems to stay within reason for all of these, but I'm not using anything sophisticated to test this: with the terrible version, my computer would become very sluggish, and with the versions tested here, that doesn't happen.",
+    "body": "Okay, here's another one.  Sphinx was just updated to version 0.6.3, and this is supposed to fix our problems.  In my testing, it doesn't have the Cython problem that the original version of 0.6.2 had; it incorporates the patch in the most recent 0.6.2 spkg.  The 0.6.3 spkg is a bit slower than 0.5.1 and also than our version of 0.6.2 with the unauthorized weakref patch.  It's not nearly as slow and doesn't seem to use nearly as much memory as the unpatched 0.6.2.  Here's the spkg: [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p0.spkg).\n\nSome timings in minutes for \"sage -docbuild reference html --jsmath\", with the patch at #6664 applied:\n\n```\n                    Mac      sage.math  ubuntu\nSphinx 0.5.1         6           5        10\nSphinx 0.6.2.p2      6           6        10\nSphinx 0.6.3         8           9        11\n```\n\"Mac\" is my Intel iMac running OS X 10.5; \"sage.math\" is sage.math, and \"ubuntu\" is an old ubuntu box I have access to.\n\nAs I said above, the memory usage seems to stay within reason for all of these, but I'm not using anything sophisticated to test this: with the terrible version, my computer would become very sluggish, and with the versions tested here, that doesn't happen.",
     "created_at": "2009-09-04T02:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -844,7 +835,6 @@ Sphinx 0.5.1         6           5        10
 Sphinx 0.6.2.p2      6           6        10
 Sphinx 0.6.3         8           9        11
 ```
-
 "Mac" is my Intel iMac running OS X 10.5; "sage.math" is sage.math, and "ubuntu" is an old ubuntu box I have access to.
 
 As I said above, the memory usage seems to stay within reason for all of these, but I'm not using anything sophisticated to test this: with the terrible version, my computer would become very sluggish, and with the versions tested here, that doesn't happen.
@@ -856,7 +846,7 @@ As I said above, the memory usage seems to stay within reason for all of these, 
 archive/issue_comments_053740.json:
 ```json
 {
-    "body": "For Sage 4.1.2.alpha0's HTML reference manual, at least, the new spkg seems to work just as Georg indicated.  I'll try to do more testing soon.\n\nBy the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,\n\n```/usr/bin/env bash\n\nif [ -z \"$SAGE_LOCAL\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\nsuccess() {\n    if [ $? -ne 0 ]; then\n        echo \"Error building Sphinx: '$1'\"\n        exit 1\n    fi\n}\n\nset -e\n\necho \"Removing old version...\"\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/Sphinx-*\nsuccess 'deleting previous version'\n\n[...]\n```\n",
+    "body": "For Sage 4.1.2.alpha0's HTML reference manual, at least, the new spkg seems to work just as Georg indicated.  I'll try to do more testing soon.\n\nBy the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,\n\n```/usr/bin/env bash\n\nif [ -z \"$SAGE_LOCAL\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n\nsuccess() {\n    if [ $? -ne 0 ]; then\n        echo \"Error building Sphinx: '$1'\"\n        exit 1\n    fi\n}\n\nset -e\n\necho \"Removing old version...\"\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/Sphinx-*\nsuccess 'deleting previous version'\n\n[...]\n```",
     "created_at": "2009-09-04T07:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -895,13 +885,12 @@ success 'deleting previous version'
 
 
 
-
 ---
 
 archive/issue_comments_053741.json:
 ```json
 {
-    "body": "Replying to [comment:36 mpatel]:\n> By the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,\n\nOkay, try this one: [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg).  (Putting \"set -e\" in other places made the script exit without printing the custom error message.  With this one, if, for example, I make the directory `\"$SAGE_LOCAL\"/lib/python/site-packages/Sphinx-*` undeletable, I get the appropriate message.)",
+    "body": "Replying to [comment:36 mpatel]:\n> By the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,\n\n\nOkay, try this one: [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg).  (Putting \"set -e\" in other places made the script exit without printing the custom error message.  With this one, if, for example, I make the directory `\"$SAGE_LOCAL\"/lib/python/site-packages/Sphinx-*` undeletable, I get the appropriate message.)",
     "created_at": "2009-09-04T21:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -912,6 +901,7 @@ archive/issue_comments_053741.json:
 
 Replying to [comment:36 mpatel]:
 > By the way, it might be useful to update spkg-install along the lines of #6598 and [this example](http://wiki.sagemath.org/DavidKirkby).  For example,
+
 
 Okay, try this one: [http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.3.p1.spkg).  (Putting "set -e" in other places made the script exit without printing the custom error message.  With this one, if, for example, I make the directory `"$SAGE_LOCAL"/lib/python/site-packages/Sphinx-*` undeletable, I get the appropriate message.)
 
@@ -1006,7 +996,7 @@ The PDF reference manual's table of contents is missing.  This may stem from #68
 archive/issue_comments_053746.json:
 ```json
 {
-    "body": "Replying to [comment:40 mpatel]:\n> Yes.  I think `site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg`, say, is installed automatically (via network) by `python setup.py install` in `spkg-install`.\n> \n> Should we make it a separate spkg, to supplement or replace `jinja-1.2.p0.spkg`?\n\nI think it would probably best to make a separate spkg so that installation will not require network access. I've made an spkg that I can post if you want.\n\nAlso, the spkg for this states that it depends on Jinja>=``1.1``, which is no longer the case.",
+    "body": "Replying to [comment:40 mpatel]:\n> Yes.  I think `site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg`, say, is installed automatically (via network) by `python setup.py install` in `spkg-install`.\n> \n> Should we make it a separate spkg, to supplement or replace `jinja-1.2.p0.spkg`?\n\n\nI think it would probably best to make a separate spkg so that installation will not require network access. I've made an spkg that I can post if you want.\n\nAlso, the spkg for this states that it depends on Jinja>=``1.1``, which is no longer the case.",
     "created_at": "2009-09-06T01:29:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1019,6 +1009,7 @@ Replying to [comment:40 mpatel]:
 > Yes.  I think `site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg`, say, is installed automatically (via network) by `python setup.py install` in `spkg-install`.
 > 
 > Should we make it a separate spkg, to supplement or replace `jinja-1.2.p0.spkg`?
+
 
 I think it would probably best to make a separate spkg so that installation will not require network access. I've made an spkg that I can post if you want.
 
@@ -1109,7 +1100,7 @@ Jinja and Jinja2 are totally different, and so it shouldn't affect any current t
 archive/issue_comments_053751.json:
 ```json
 {
-    "body": "I'm not at all sure what you people are doing here, so perhaps I should have kept away, but (in trying to help with #6820) I tried installing the new sphinx spkg using\n\n```\n./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg\n```\n\nand now \n\n```\njohn@ubuntu%sage -docbuild reference html\nTraceback (most recent call last):\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 412, in get_modified_modules\n    env = self.get_sphinx_environment()\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 403, in get_sphinx_environment\n    return BuildEnvironment.frompickle(config, env_pickle)\n  File \"/home/john/sage-4.1.1/local/lib/python2.6/site-packages/Sphinx-0.6.2-py2.6.egg/sphinx/environment.py\", line 210, in frompickle\n    env = pickle.load(picklefile)\nAttributeError: 'module' object has no attribute 'RedirStream'\n```\n\n\nThis is in the main branch, so a vanilla 4.1.1 build.  Should that be 4.1.2.alpha0?",
+    "body": "I'm not at all sure what you people are doing here, so perhaps I should have kept away, but (in trying to help with #6820) I tried installing the new sphinx spkg using\n\n```\n./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg\n```\nand now \n\n```\njohn@ubuntu%sage -docbuild reference html\nTraceback (most recent call last):\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 412, in get_modified_modules\n    env = self.get_sphinx_environment()\n  File \"/home/john/sage-4.1.1/devel/sage/doc/common/builder.py\", line 403, in get_sphinx_environment\n    return BuildEnvironment.frompickle(config, env_pickle)\n  File \"/home/john/sage-4.1.1/local/lib/python2.6/site-packages/Sphinx-0.6.2-py2.6.egg/sphinx/environment.py\", line 210, in frompickle\n    env = pickle.load(picklefile)\nAttributeError: 'module' object has no attribute 'RedirStream'\n```\n\nThis is in the main branch, so a vanilla 4.1.1 build.  Should that be 4.1.2.alpha0?",
     "created_at": "2009-09-06T16:58:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1123,7 +1114,6 @@ I'm not at all sure what you people are doing here, so perhaps I should have kep
 ```
 ./sage -f http://sage.math.washington.edu/home/palmieri/SPKG/sphinx-0.6.2.p0.spkg
 ```
-
 and now 
 
 ```
@@ -1141,7 +1131,6 @@ Traceback (most recent call last):
     env = pickle.load(picklefile)
 AttributeError: 'module' object has no attribute 'RedirStream'
 ```
-
 
 This is in the main branch, so a vanilla 4.1.1 build.  Should that be 4.1.2.alpha0?
 
@@ -1192,7 +1181,7 @@ To timdumol: I see, jinja and jinja2 can coexist on the same system, so for now 
 archive/issue_comments_053754.json:
 ```json
 {
-    "body": "Thanks -- that worked!  (Except that I cannot read and deleted all SAGE_ROOT/devel/sage/doc and not just the output directory, so had to copy the rest from another clone...)\n\nI like the percentage meter and the fact that the output overwrites one line rather than running off the screen.  Minor point here:  it does not overwrite long lines when they are followed by short ones so you see strange garbage characters on the end of te line like this:\n\n```\nreading sources... [ 49%] sage/misc/explain_pickle      _densensephismsmpecies\n```\n\nOf course this is a triviality.\n\nOtherwise all went well and (from the point of view of an ordinary user/developer) I'm happy with this spkg.  (There are lots of warnings and at least one error in the docstrings, but that is another matter).  I have no objection to this getting a positive review, assuming tha the other issues discussed above have been dealt with.",
+    "body": "Thanks -- that worked!  (Except that I cannot read and deleted all SAGE_ROOT/devel/sage/doc and not just the output directory, so had to copy the rest from another clone...)\n\nI like the percentage meter and the fact that the output overwrites one line rather than running off the screen.  Minor point here:  it does not overwrite long lines when they are followed by short ones so you see strange garbage characters on the end of te line like this:\n\n```\nreading sources... [ 49%] sage/misc/explain_pickle      _densensephismsmpecies\n```\nOf course this is a triviality.\n\nOtherwise all went well and (from the point of view of an ordinary user/developer) I'm happy with this spkg.  (There are lots of warnings and at least one error in the docstrings, but that is another matter).  I have no objection to this getting a positive review, assuming tha the other issues discussed above have been dealt with.",
     "created_at": "2009-09-06T19:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1208,7 +1197,6 @@ I like the percentage meter and the fact that the output overwrites one line rat
 ```
 reading sources... [ 49%] sage/misc/explain_pickle      _densensephismsmpecies
 ```
-
 Of course this is a triviality.
 
 Otherwise all went well and (from the point of view of an ordinary user/developer) I'm happy with this spkg.  (There are lots of warnings and at least one error in the docstrings, but that is another matter).  I have no objection to this getting a positive review, assuming tha the other issues discussed above have been dealt with.
@@ -1338,7 +1326,7 @@ Haven't done a complete install yet, but I'll do so once I finish downloading th
 archive/issue_comments_053761.json:
 ```json
 {
-    "body": "I updated `spkg/install` and `spkg/standard/deps`, replaced the old Sphinx spkg with the new one in `spkg/standard`, and copied the Jinja2 package to `spkg/standard`.  With these changes, `sage -bdist 100` generates the expected binary distributions on sage.math from both binary and compiled source distributions.  Moreover, `sage -sdist 200` makes a source distribution that compiles as expected.\n\nThere's a failed test:\n\n```python\nmpatel@sage sage-200$ ./sage -t devel/sage/sage/misc/trace.py \nsage -t  \"devel/sage/sage/misc/trace.py\"                    \n**********************************************************************\nFile \"/scratch/mpatel/source/sage-200/devel/sage/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    --Call--\n    > /scratch/mpatel/source/sage-200/local/lib/python2.6/site-packages/sage/rings/arith.py(1944)factor()\n       1943 \n    -> 1944 def factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds):\n       1945     \"\"\"\n    \n    ipdb> c\n    2 * 5\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mpatel/source/sage-200/tmp/.doctest_trace.py\n         [3.7 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/trace.py\"\nTotal time for all tests: 3.7 seconds\n```\n\nI *think* it's not related to this ticket.",
+    "body": "I updated `spkg/install` and `spkg/standard/deps`, replaced the old Sphinx spkg with the new one in `spkg/standard`, and copied the Jinja2 package to `spkg/standard`.  With these changes, `sage -bdist 100` generates the expected binary distributions on sage.math from both binary and compiled source distributions.  Moreover, `sage -sdist 200` makes a source distribution that compiles as expected.\n\nThere's a failed test:\n\n```python\nmpatel@sage sage-200$ ./sage -t devel/sage/sage/misc/trace.py \nsage -t  \"devel/sage/sage/misc/trace.py\"                    \n**********************************************************************\nFile \"/scratch/mpatel/source/sage-200/devel/sage/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    --Call--\n    > /scratch/mpatel/source/sage-200/local/lib/python2.6/site-packages/sage/rings/arith.py(1944)factor()\n       1943 \n    -> 1944 def factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds):\n       1945     \"\"\"\n    \n    ipdb> c\n    2 * 5\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mpatel/source/sage-200/tmp/.doctest_trace.py\n         [3.7 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/trace.py\"\nTotal time for all tests: 3.7 seconds\n```\nI *think* it's not related to this ticket.",
     "created_at": "2009-09-25T12:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1386,7 +1374,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/misc/trace.py"
 Total time for all tests: 3.7 seconds
 ```
-
 I *think* it's not related to this ticket.
 
 
@@ -1396,7 +1383,7 @@ I *think* it's not related to this ticket.
 archive/issue_comments_053762.json:
 ```json
 {
-    "body": "Problem: Somehow, Sphinx 0.6.3 breaks the sidebar toggle (cf. #6507) in the *live* docs.  In Firebug's console:\n\n```js\nunexpected end of XML source\n<span class=\"math\">('#searchbox').show(0);\n```\n",
+    "body": "Problem: Somehow, Sphinx 0.6.3 breaks the sidebar toggle (cf. #6507) in the *live* docs.  In Firebug's console:\n\n```js\nunexpected end of XML source\n<span class=\"math\">('#searchbox').show(0);\n```",
     "created_at": "2009-10-04T14:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1414,13 +1401,12 @@ unexpected end of XML source
 
 
 
-
 ---
 
 archive/issue_comments_053763.json:
 ```json
 {
-    "body": "Patching Sphinx 0.6.3 should fix this and perhaps also a similar problem reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bb2d0d7f43efefc9/796d42841bd79c5c?#796d42841bd79c5c): \n\n```diff\n--- sphinx/themes/basic/layout.html.orig        2009-10-04 17:07:16.000000000 -0700\n+++ sphinx/themes/basic/layout.html     2009-10-04 17:07:28.000000000 -0700\n@@ -81,7 +81,7 @@\n               {{ _('Enter search terms or a module, class or function name.') }}\n               </p>\n           </div>\n-          <script type=\"text/javascript\">$('#searchbox').show(0);</script>\n+          <script type=\"text/javascript\">jQuery('#searchbox').show(0);</script>\n           {%- endif %}\n           {%- endblock %}\n         </div>\n```\n",
+    "body": "Patching Sphinx 0.6.3 should fix this and perhaps also a similar problem reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bb2d0d7f43efefc9/796d42841bd79c5c?#796d42841bd79c5c): \n\n```diff\n--- sphinx/themes/basic/layout.html.orig        2009-10-04 17:07:16.000000000 -0700\n+++ sphinx/themes/basic/layout.html     2009-10-04 17:07:28.000000000 -0700\n@@ -81,7 +81,7 @@\n               {{ _('Enter search terms or a module, class or function name.') }}\n               </p>\n           </div>\n-          <script type=\"text/javascript\">$('#searchbox').show(0);</script>\n+          <script type=\"text/javascript\">jQuery('#searchbox').show(0);</script>\n           {%- endif %}\n           {%- endblock %}\n         </div>\n```",
     "created_at": "2009-10-05T00:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1444,7 +1430,6 @@ Patching Sphinx 0.6.3 should fix this and perhaps also a similar problem reporte
            {%- endblock %}
          </div>
 ```
-
 
 
 
@@ -1525,7 +1510,7 @@ If [comment:ticket:7126:2 this comment] at #7126 is correct, we should still pat
 archive/issue_comments_053768.json:
 ```json
 {
-    "body": "Replying to [comment:55 mpatel]:\n> Problem: Somehow, Sphinx 0.6.3 breaks the sidebar toggle (cf. #6507) in the *live* docs.  In Firebug's console:\n> {{{\n> #!js\n> unexpected end of XML source\n> <span class=\"math\">('#searchbox').show(0);\n> }}}\n\n#7141 adds a patch that fixes this.",
+    "body": "Replying to [comment:55 mpatel]:\n> Problem: Somehow, Sphinx 0.6.3 breaks the sidebar toggle (cf. #6507) in the *live* docs.  In Firebug's console:\n> \n> ```\n> #!js\n> unexpected end of XML source\n> <span class=\"math\">('#searchbox').show(0);\n> ```\n\n\n#7141 adds a patch that fixes this.",
     "created_at": "2009-10-06T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6586",
     "type": "issue_comment",
@@ -1536,11 +1521,13 @@ archive/issue_comments_053768.json:
 
 Replying to [comment:55 mpatel]:
 > Problem: Somehow, Sphinx 0.6.3 breaks the sidebar toggle (cf. #6507) in the *live* docs.  In Firebug's console:
-> {{{
+> 
+> ```
 > #!js
 > unexpected end of XML source
 > <span class="math">('#searchbox').show(0);
-> }}}
+> ```
+
 
 #7141 adds a patch that fixes this.
 

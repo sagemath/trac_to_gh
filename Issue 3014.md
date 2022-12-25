@@ -3,7 +3,7 @@
 archive/issues_003014.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nsage: ZZ.random_element?\n...    \n            Return a random integer.\n    \n                ZZ.random_element() -- return an integer using the default \n                  distribution described below\n                ZZ.random_element(n) -- return an integer uniformly \n                  distributed between 0 and n-1, inclusive.\n                ZZ.random_element(min, max) -- return an integer uniformly \n                  destributed between min and max-1, inclusive.\n    \n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) =\n            2/(5|n|(|n|+1)) for n \n    eq 0.  Most of the samples will be\n            small; -1, 0, and 1 occur with probability 1/5 each.  But we\n}}\n\nNotice the messed up second t the last line!\n\nThis hit me during my demo today. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3014\n\n",
+    "body": "Assignee: tba\n\n```\nsage: ZZ.random_element?\n...    \n            Return a random integer.\n    \n                ZZ.random_element() -- return an integer using the default \n                  distribution described below\n                ZZ.random_element(n) -- return an integer uniformly \n                  distributed between 0 and n-1, inclusive.\n                ZZ.random_element(min, max) -- return an integer uniformly \n                  destributed between min and max-1, inclusive.\n    \n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) =\n            2/(5|n|(|n|+1)) for n \n    eq 0.  Most of the samples will be\n            small; -1, 0, and 1 occur with probability 1/5 each.  But we\n}}\n\nNotice the messed up second t the last line!\n\nThis hit me during my demo today. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3014\n\n",
     "created_at": "2008-04-24T02:42:40Z",
     "labels": [
         "component: documentation",
@@ -17,7 +17,6 @@ archive/issues_003014.json:
 }
 ```
 Assignee: tba
-
 
 ```
 sage: ZZ.random_element?
@@ -55,7 +54,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3014
 archive/issue_comments_020672.json:
 ```json
 {
-    "body": "With the patch applied we get:\n\n```\n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) = 2/(5|n|(|n|+1)) for n neq 0.\n            Most of the samples will be small; -1, 0, and 1 occur with\n            probability 1/5 each.  But we also have a small but\n            non-negligible proportion of ``outliers''; Pr(|X| >= n) = 4/(5n),\n            so for instance, we expect that |X| >= 1000 on one in\n            1250 samples.\n```\n",
+    "body": "With the patch applied we get:\n\n```\n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) = 2/(5|n|(|n|+1)) for n neq 0.\n            Most of the samples will be small; -1, 0, and 1 occur with\n            probability 1/5 each.  But we also have a small but\n            non-negligible proportion of ``outliers''; Pr(|X| >= n) = 4/(5n),\n            so for instance, we expect that |X| >= 1000 on one in\n            1250 samples.\n```",
     "created_at": "2008-04-25T06:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3014",
     "type": "issue_comment",
@@ -77,7 +76,6 @@ With the patch applied we get:
             so for instance, we expect that |X| >= 1000 on one in
             1250 samples.
 ```
-
 
 
 

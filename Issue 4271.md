@@ -3,7 +3,7 @@
 archive/issues_004271.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nbash-3.00$ sage -t ell_generic.py\nsage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n         [74.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 74.0 seconds\nbash-3.00$ sage -coverage ell_generic.py\n----------------------------------------------------------------------\nell_generic.py\nSCORE ell_generic.py: 100% (60 of 60)\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4271\n\n",
+    "body": "Assignee: mabshoff\n\n```\nbash-3.00$ sage -t ell_generic.py\nsage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n         [74.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 74.0 seconds\nbash-3.00$ sage -coverage ell_generic.py\n----------------------------------------------------------------------\nell_generic.py\nSCORE ell_generic.py: 100% (60 of 60)\n----------------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4271\n\n",
     "created_at": "2008-10-12T20:07:22Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_004271.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 bash-3.00$ sage -t ell_generic.py
@@ -33,7 +32,6 @@ ell_generic.py
 SCORE ell_generic.py: 100% (60 of 60)
 ----------------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4271
 
@@ -86,7 +84,7 @@ Michael: this only affects docstrings so should have no effect outside this one 
 archive/issue_comments_031121.json:
 ```json
 {
-    "body": "Replying to [comment:1 cremona]:\n> Michael: this only affects docstrings so should have no effect outside this one file.\n\nHi John,\n\nyou actually beat me to a review and I was also convinced that this patch has 0% risk, so I will merge it into 3.1.3.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 cremona]:\n> Michael: this only affects docstrings so should have no effect outside this one file.\n\n\nHi John,\n\nyou actually beat me to a review and I was also convinced that this patch has 0% risk, so I will merge it into 3.1.3.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-13T12:40:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4271",
     "type": "issue_comment",
@@ -97,6 +95,7 @@ archive/issue_comments_031121.json:
 
 Replying to [comment:1 cremona]:
 > Michael: this only affects docstrings so should have no effect outside this one file.
+
 
 Hi John,
 

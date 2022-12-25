@@ -282,7 +282,7 @@ If you're patching ell_rational_field, can you fix the doc string for mwrank?  I
 archive/issue_comments_037373.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...\n\nIt looks pretty clear to me, except perhaps where it explains the format of the options string.  Perhaps we should just include the output of \"sage -mwrank -h\":\n\n```\nmwrank command line options (can be in any order):\n\n-h      help            prints this info and quits\n-q      quiet           turns OFF banner display\n-v n    verbosity       sets verbosity to n (default=1)\n-o      PARI/GP output  turns ON extra PARI/GP short output (default is OFF)\n-p n    precision       sets precision to n decimals (default=15)\n                        (irrelevant unless compiled with multiprecision option)\n-b n    quartic bound   bound on quartic point search (default=10)\n-x n    n aux           number of aux primes used for sieving (default=6)\n-l      list            turns ON listing of points (default ON unless v=0)\n-t      trace           turns ON trace of quartic equivalence testing (debugging only)\n-s      selmer_only     if set, computes Selmer rank only (default: not set)\n-d      skip_2nd_descent        if set, skips the second descent for curves with 2-torsion (default: not set)\n-S n    sat_bd          upper bound on saturation primes (default=100, -1 for automatic)\n```\n",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...\n\n\nIt looks pretty clear to me, except perhaps where it explains the format of the options string.  Perhaps we should just include the output of \"sage -mwrank -h\":\n\n```\nmwrank command line options (can be in any order):\n\n-h      help            prints this info and quits\n-q      quiet           turns OFF banner display\n-v n    verbosity       sets verbosity to n (default=1)\n-o      PARI/GP output  turns ON extra PARI/GP short output (default is OFF)\n-p n    precision       sets precision to n decimals (default=15)\n                        (irrelevant unless compiled with multiprecision option)\n-b n    quartic bound   bound on quartic point search (default=10)\n-x n    n aux           number of aux primes used for sieving (default=6)\n-l      list            turns ON listing of points (default ON unless v=0)\n-t      trace           turns ON trace of quartic equivalence testing (debugging only)\n-s      selmer_only     if set, computes Selmer rank only (default: not set)\n-d      skip_2nd_descent        if set, skips the second descent for curves with 2-torsion (default: not set)\n-S n    sat_bd          upper bound on saturation primes (default=100, -1 for automatic)\n```",
     "created_at": "2009-04-17T14:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -293,6 +293,7 @@ archive/issue_comments_037373.json:
 
 Replying to [comment:7 jhpalmieri]:
 > If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...
+
 
 It looks pretty clear to me, except perhaps where it explains the format of the options string.  Perhaps we should just include the output of "sage -mwrank -h":
 
@@ -316,13 +317,12 @@ mwrank command line options (can be in any order):
 
 
 
-
 ---
 
 archive/issue_comments_037374.json:
 ```json
 {
-    "body": ">It looks pretty clear to me, except perhaps where it explains the format of the options string. \n\nDo you mean this part?\n\n``` \n        -  ``options`` - string; passed when starting mwrank.\n           The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n           s d]\n```\n",
+    "body": ">It looks pretty clear to me, except perhaps where it explains the format of the options string. \n\n\nDo you mean this part?\n\n``` \n        -  ``options`` - string; passed when starting mwrank.\n           The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n           s d]\n```",
     "created_at": "2009-04-17T15:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -332,6 +332,7 @@ archive/issue_comments_037374.json:
 ```
 
 >It looks pretty clear to me, except perhaps where it explains the format of the options string. 
+
 
 Do you mean this part?
 
@@ -343,13 +344,12 @@ Do you mean this part?
 
 
 
-
 ---
 
 archive/issue_comments_037375.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> >It looks pretty clear to me, except perhaps where it explains the format of the options string. \n> \n> Do you mean this part?\n> {{{ \n>         -  ``options`` - string; passed when starting mwrank.\n>            The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n>            s d]\n> }}}\nYes!",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> >It looks pretty clear to me, except perhaps where it explains the format of the options string. \n\n> \n> Do you mean this part?\n> \n> ``` \n>         -  ``options`` - string; passed when starting mwrank.\n>            The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n>            s d]\n> ```\n\nYes!",
     "created_at": "2009-04-17T15:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -360,13 +360,16 @@ archive/issue_comments_037375.json:
 
 Replying to [comment:9 jhpalmieri]:
 > >It looks pretty clear to me, except perhaps where it explains the format of the options string. 
+
 > 
 > Do you mean this part?
-> {{{ 
+> 
+> ``` 
 >         -  ``options`` - string; passed when starting mwrank.
 >            The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o
 >            s d]
-> }}}
+> ```
+
 Yes!
 
 
@@ -452,7 +455,7 @@ apply on top of the other patch
 archive/issue_comments_037380.json:
 ```json
 {
-    "body": "Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by @JohnCremona created at 2009-04-17 22:17:00\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
+    "body": "Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by @JohnCremona created at 2009-04-17 22:17:00\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\n\nThanks John -- I am quite happy with your adjustments.",
     "created_at": "2009-04-17T22:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
@@ -465,6 +468,7 @@ Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933
 
 Replying to [comment:12 jhpalmieri]:
 > Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.
+
 
 Thanks John -- I am quite happy with your adjustments.
 

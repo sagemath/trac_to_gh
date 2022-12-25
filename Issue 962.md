@@ -3,7 +3,7 @@
 archive/issues_000962.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nLong decimal literals become floating-point numbers whose precision depends on the length of the input literal *in characters*.  See this script for some of the confusing (and, in my opinion, wrong) behavior that results.\n\n```\nsage: (1.10000000000000000000).prec()\n73\nsage: (1.10000000000000000000e0).prec()\n79\nsage: (1e-25).prec()\n53\nsage: (0.0000000000000000000000001).prec()\n89\nsage: (00000000.0000000000000000000000001).prec()\n112\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/962\n\n",
+    "body": "Assignee: somebody\n\nLong decimal literals become floating-point numbers whose precision depends on the length of the input literal *in characters*.  See this script for some of the confusing (and, in my opinion, wrong) behavior that results.\n\n```\nsage: (1.10000000000000000000).prec()\n73\nsage: (1.10000000000000000000e0).prec()\n79\nsage: (1e-25).prec()\n53\nsage: (0.0000000000000000000000001).prec()\n89\nsage: (00000000.0000000000000000000000001).prec()\n112\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/962\n\n",
     "created_at": "2007-10-21T15:09:21Z",
     "labels": [
         "component: basic arithmetic",
@@ -32,7 +32,6 @@ sage: (0.0000000000000000000000001).prec()
 sage: (00000000.0000000000000000000000001).prec()
 112
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/962
@@ -189,7 +188,7 @@ I posted an initial patch which fixes some of the major issues.  I would like ot
 archive/issue_comments_005845.json:
 ```json
 {
-    "body": "Here is the behavior of the above examples after the patch:\n\n```\nsage: sage: (1.10000000000000000000).prec()\n74\nsage: sage: (1.10000000000000000000e0).prec()\n74\nsage: sage: (1e-25).prec()\n87\nsage: sage: (0.0000000000000000000000001).prec()\n87\nsage: sage: (00000000.0000000000000000000000001).prec()\n87\n```\n",
+    "body": "Here is the behavior of the above examples after the patch:\n\n```\nsage: sage: (1.10000000000000000000).prec()\n74\nsage: sage: (1.10000000000000000000e0).prec()\n74\nsage: sage: (1e-25).prec()\n87\nsage: sage: (0.0000000000000000000000001).prec()\n87\nsage: sage: (00000000.0000000000000000000000001).prec()\n87\n```",
     "created_at": "2007-11-13T03:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -212,7 +211,6 @@ sage: sage: (0.0000000000000000000000001).prec()
 sage: sage: (00000000.0000000000000000000000001).prec()
 87
 ```
-
 
 
 
@@ -293,7 +291,7 @@ I also think I agree with Carl witty's remark above about significant figures.
 archive/issue_comments_005848.json:
 ```json
 {
-    "body": "Patch updated that now gives the following results:\n\n```\nsage: sage: sage: (1.10000000000000000000).prec()\n74\nsage: sage: sage: (1.10000000000000000000e0).prec()\n74\nsage: sage: sage: (1e-25).prec()\n53\nsage: sage: sage: (0.0000000000000000000000001).prec()\n53\nsage: sage: sage: (00000000.0000000000000000000000001).prec()\n53\n```\n",
+    "body": "Patch updated that now gives the following results:\n\n```\nsage: sage: sage: (1.10000000000000000000).prec()\n74\nsage: sage: sage: (1.10000000000000000000e0).prec()\n74\nsage: sage: sage: (1e-25).prec()\n53\nsage: sage: sage: (0.0000000000000000000000001).prec()\n53\nsage: sage: sage: (00000000.0000000000000000000000001).prec()\n53\n```",
     "created_at": "2007-12-01T18:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -316,7 +314,6 @@ sage: sage: sage: (0.0000000000000000000000001).prec()
 sage: sage: sage: (00000000.0000000000000000000000001).prec()
 53
 ```
-
 
 
 
@@ -345,7 +342,7 @@ Looks good to me!  Thank you for making so many changes at my request.
 archive/issue_comments_005850.json:
 ```json
 {
-    "body": "This causes the following doctest failures:\n\n\n```\n        sage -t  devel/sage-main/sage/modular/dirichlet.py\n        sage -t  devel/sage-main/sage/gsl/dft.py\n        sage -t  devel/sage-main/sage/functions/constants.py\n        sage -t  devel/sage-main/sage/calculus/calculus.py\n        sage -t  devel/sage-main/sage/calculus/wester.py\n        sage -t  devel/sage-main/sage/interfaces/gp.py\n        sage -t  devel/sage-main/sage/misc/functional.py\n        sage -t  devel/sage-main/sage/rings/real_mpfr.pyx\n        sage -t  devel/sage-main/sage/rings/fraction_field_element.py\n        sage -t  devel/sage-main/sage/rings/rational.pyx\n        sage -t  devel/sage-main/sage/rings/arith.py\n        sage -t  devel/sage-main/sage/rings/integer.pyx\n        sage -t  devel/sage-main/sage/rings/contfrac.py\n        sage -t  devel/sage-main/sage/rings/qqbar.py\n        sage -t  devel/sage-main/sage/rings/number_field/number_field.py\n        sage -t  devel/sage-main/sage/rings/complex_number.pyx\n        sage -t  devel/sage-main/sage/rings/complex_interval.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/real_roots.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py\n        sage -t  devel/sage-main/sage/rings/real_mpfi.pyx\n```\n\n\nI will post a patch in a bit fixing this.",
+    "body": "This causes the following doctest failures:\n\n```\n        sage -t  devel/sage-main/sage/modular/dirichlet.py\n        sage -t  devel/sage-main/sage/gsl/dft.py\n        sage -t  devel/sage-main/sage/functions/constants.py\n        sage -t  devel/sage-main/sage/calculus/calculus.py\n        sage -t  devel/sage-main/sage/calculus/wester.py\n        sage -t  devel/sage-main/sage/interfaces/gp.py\n        sage -t  devel/sage-main/sage/misc/functional.py\n        sage -t  devel/sage-main/sage/rings/real_mpfr.pyx\n        sage -t  devel/sage-main/sage/rings/fraction_field_element.py\n        sage -t  devel/sage-main/sage/rings/rational.pyx\n        sage -t  devel/sage-main/sage/rings/arith.py\n        sage -t  devel/sage-main/sage/rings/integer.pyx\n        sage -t  devel/sage-main/sage/rings/contfrac.py\n        sage -t  devel/sage-main/sage/rings/qqbar.py\n        sage -t  devel/sage-main/sage/rings/number_field/number_field.py\n        sage -t  devel/sage-main/sage/rings/complex_number.pyx\n        sage -t  devel/sage-main/sage/rings/complex_interval.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/real_roots.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py\n        sage -t  devel/sage-main/sage/rings/real_mpfi.pyx\n```\n\nI will post a patch in a bit fixing this.",
     "created_at": "2007-12-02T01:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -355,7 +352,6 @@ archive/issue_comments_005850.json:
 ```
 
 This causes the following doctest failures:
-
 
 ```
         sage -t  devel/sage-main/sage/modular/dirichlet.py
@@ -381,7 +377,6 @@ This causes the following doctest failures:
         sage -t  devel/sage-main/sage/rings/real_mpfi.pyx
 ```
 
-
 I will post a patch in a bit fixing this.
 
 
@@ -391,7 +386,7 @@ I will post a patch in a bit fixing this.
 archive/issue_comments_005851.json:
 ```json
 {
-    "body": "Excellent!  I read through 962-doctests.patch (yes, I really did), and I only saw one issue: on real_mpfr.pyx line 21, we will need to change:\n\n```\n    2147483647.00000         # 32-bit\n```\n\nto\n\n```\n    2.14748364700000e9       # 32-bit\n```\n",
+    "body": "Excellent!  I read through 962-doctests.patch (yes, I really did), and I only saw one issue: on real_mpfr.pyx line 21, we will need to change:\n\n```\n    2147483647.00000         # 32-bit\n```\nto\n\n```\n    2.14748364700000e9       # 32-bit\n```",
     "created_at": "2007-12-02T02:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/962",
     "type": "issue_comment",
@@ -405,13 +400,11 @@ Excellent!  I read through 962-doctests.patch (yes, I really did), and I only sa
 ```
     2147483647.00000         # 32-bit
 ```
-
 to
 
 ```
     2.14748364700000e9       # 32-bit
 ```
-
 
 
 

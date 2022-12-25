@@ -3,7 +3,7 @@
 archive/issues_008628.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\n(sage 4.3.1)\n\nabsolute or relative is the default?\n\n\n```\nsage: R = Zp(5)\nsage: R\n5-adic Ring with capped relative precision 20\nsage: R.<a> = Zq(25)\nsage: R\nUnramified Extension of 5-adic Ring with capped absolute precision 20 in a defined by (1 + O(5^20))*x^2 + (4 + O(5^20))*x + (2 + O(5^20))\nsage: R = Zq(5)\nsage: R\n5-adic Ring with capped absolute precision 20\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8628\n\n",
+    "body": "Assignee: @roed314\n\n(sage 4.3.1)\n\nabsolute or relative is the default?\n\n```\nsage: R = Zp(5)\nsage: R\n5-adic Ring with capped relative precision 20\nsage: R.<a> = Zq(25)\nsage: R\nUnramified Extension of 5-adic Ring with capped absolute precision 20 in a defined by (1 + O(5^20))*x^2 + (4 + O(5^20))*x + (2 + O(5^20))\nsage: R = Zq(5)\nsage: R\n5-adic Ring with capped absolute precision 20\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8628\n\n",
     "created_at": "2010-03-30T00:50:51Z",
     "labels": [
         "component: padics",
@@ -22,7 +22,6 @@ Assignee: @roed314
 
 absolute or relative is the default?
 
-
 ```
 sage: R = Zp(5)
 sage: R
@@ -34,7 +33,6 @@ sage: R = Zq(5)
 sage: R
 5-adic Ring with capped absolute precision 20
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8628
@@ -191,7 +189,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078102.json:
 ```json
 {
-    "body": "This now merges.  \n----\nNew commits:",
+    "body": "This now merges.  \n\n---\nNew commits:",
     "created_at": "2016-11-17T23:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8628",
     "type": "issue_comment",
@@ -201,7 +199,8 @@ archive/issue_comments_078102.json:
 ```
 
 This now merges.  
-----
+
+---
 New commits:
 
 

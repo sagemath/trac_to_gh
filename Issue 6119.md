@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6119
 archive/issue_comments_048805.json:
 ```json
 {
-    "body": "From comment:6:ticket:9555:\n\n> The taylor() method is cruft left over from pre-pynac symbolics. We should deprecate it in favor of the series() method. It's perfectly acceptable to give Puiseux series as a result of a call to .series(). I expect this to be done in #6119, where we add an algorithm= option to .series(). The default behavior can be to call pynac and fall back to maxima if that returns an error.\n\nIn short, we should change this ticket to cover this transition. Series expansions in Pynac need more work to match what maxima does. That should be tracked on the pynac issue tracker:\n\nhttps://bitbucket.org/burcin/pynac/issues",
+    "body": "From comment:6:ticket:9555:\n\n> The taylor() method is cruft left over from pre-pynac symbolics. We should deprecate it in favor of the series() method. It's perfectly acceptable to give Puiseux series as a result of a call to .series(). I expect this to be done in #6119, where we add an algorithm= option to .series(). The default behavior can be to call pynac and fall back to maxima if that returns an error.\n\n\nIn short, we should change this ticket to cover this transition. Series expansions in Pynac need more work to match what maxima does. That should be tracked on the pynac issue tracker:\n\nhttps://bitbucket.org/burcin/pynac/issues",
     "created_at": "2011-06-29T13:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
@@ -44,6 +44,7 @@ archive/issue_comments_048805.json:
 From comment:6:ticket:9555:
 
 > The taylor() method is cruft left over from pre-pynac symbolics. We should deprecate it in favor of the series() method. It's perfectly acceptable to give Puiseux series as a result of a call to .series(). I expect this to be done in #6119, where we add an algorithm= option to .series(). The default behavior can be to call pynac and fall back to maxima if that returns an error.
+
 
 In short, we should change this ticket to cover this transition. Series expansions in Pynac need more work to match what maxima does. That should be tracked on the pynac issue tracker:
 
@@ -245,7 +246,7 @@ See also http://sourceforge.net/p/maxima/bugs/2850/ where this comes up again.
 archive/issue_comments_048808.json:
 ```json
 {
-    "body": "> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\nAnd I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/non-integral-exponent-for-taylor-expansion-using-sage/27297471) though I still have to think more about how we should solve this.",
+    "body": "> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\n\nAnd I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/non-integral-exponent-for-taylor-expansion-using-sage/27297471) though I still have to think more about how we should solve this.",
     "created_at": "2014-12-08T14:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
@@ -255,6 +256,7 @@ archive/issue_comments_048808.json:
 ```
 
 > As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
+
 And I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/non-integral-exponent-for-taylor-expansion-using-sage/27297471) though I still have to think more about how we should solve this.
 
 
@@ -264,7 +266,7 @@ And I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/
 archive/issue_comments_048809.json:
 ```json
 {
-    "body": "Is this deprecating or simply replacing?  Sorry for being confused.\n----\nNew commits:",
+    "body": "Is this deprecating or simply replacing?  Sorry for being confused.\n\n---\nNew commits:",
     "created_at": "2017-01-18T14:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
@@ -274,7 +276,8 @@ archive/issue_comments_048809.json:
 ```
 
 Is this deprecating or simply replacing?  Sorry for being confused.
-----
+
+---
 New commits:
 
 
@@ -302,7 +305,7 @@ Too fast. The deprecation part is upcoming. The Maxima replacement depends on a 
 archive/issue_comments_048811.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\n\nJust rereading. So maybe we already have finished the ticket? If so, please review.",
+    "body": "Replying to [comment:3 kcrisman]:\n> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\n\n\nJust rereading. So maybe we already have finished the ticket? If so, please review.",
     "created_at": "2017-01-18T14:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
@@ -313,6 +316,7 @@ archive/issue_comments_048811.json:
 
 Replying to [comment:3 kcrisman]:
 > As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
+
 
 Just rereading. So maybe we already have finished the ticket? If so, please review.
 

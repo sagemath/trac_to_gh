@@ -88,7 +88,7 @@ Rob
 archive/issue_comments_041955.json:
 ```json
 {
-    "body": "Replying to [comment:2 rbeezer]:\n\nHi Rob,\n\nThanks for your comments. I'm attaching a new patch (to be applied on top of the other one) addressing them, plus a bit more:\n\nI've expanded the docstring for `_latex_file` considerably, including comments about sep, and I've removed a bunch of the `\\pagestyle` (etc.) commands.\n\nI also changed the default spacing in the LaTeX file: it used to be \n\n```\ntitle (centered)\n\\vfill\nobject\n\\vfill\n```\n\nand I've changed it to\n\n```\ntitle (centered)\n\\vspace{40mm}\nobject\n```\n\nI think this looks better, but we can change it back if you disagree.\n\nIt used to be that if `tiny=False`, then the file contained \"\\\\small\", and I've deleted this.\n\nFinally, `view` and `_latex_file` had options to pass on to xdvi: 'expert' and 'zoom'.  These were not used anywhere in the code, and in fact I don't see how you even could pass them as arguments to xdvi, given the changes in #3137.  So I've deleted those options.\n\n  John",
+    "body": "Replying to [comment:2 rbeezer]:\n\nHi Rob,\n\nThanks for your comments. I'm attaching a new patch (to be applied on top of the other one) addressing them, plus a bit more:\n\nI've expanded the docstring for `_latex_file` considerably, including comments about sep, and I've removed a bunch of the `\\pagestyle` (etc.) commands.\n\nI also changed the default spacing in the LaTeX file: it used to be \n\n```\ntitle (centered)\n\\vfill\nobject\n\\vfill\n```\nand I've changed it to\n\n```\ntitle (centered)\n\\vspace{40mm}\nobject\n```\nI think this looks better, but we can change it back if you disagree.\n\nIt used to be that if `tiny=False`, then the file contained \"\\\\small\", and I've deleted this.\n\nFinally, `view` and `_latex_file` had options to pass on to xdvi: 'expert' and 'zoom'.  These were not used anywhere in the code, and in fact I don't see how you even could pass them as arguments to xdvi, given the changes in #3137.  So I've deleted those options.\n\n  John",
     "created_at": "2009-03-16T17:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
@@ -113,7 +113,6 @@ title (centered)
 object
 \vfill
 ```
-
 and I've changed it to
 
 ```
@@ -121,7 +120,6 @@ title (centered)
 \vspace{40mm}
 object
 ```
-
 I think this looks better, but we can change it back if you disagree.
 
 It used to be that if `tiny=False`, then the file contained "\\small", and I've deleted this.

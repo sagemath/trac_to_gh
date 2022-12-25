@@ -193,7 +193,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095491.json:
 ```json
 {
-    "body": "As burcin said, the idea was to have this as a replacement for the current units module, without removing the old one. (Another idea was to call it units2, but that looked kind of ugly)\n\nMaking `Units` derive from `SageObject` might be a good idea; however I didn't know much about Sage (nor do I now, actually) so I didn't consider this possibility. Maybe a Units ring could be made too.\n\nThe `U()` function was called this way so one could create units conveniently, like\n\n```python\nfrom metrology import U\nlength = U(\"1 m\")\n```\n\nHowever, it's not necessary to have this function on the top level namespace, and Python guidelines usually suggest something like\n\n```python\nimport metrology\nlength = metrology.U(\"1 m\")\n```\n\n\nAs for advantages/disadvantages, well, I don't remember them all, but here's a rough list:\n\n### Pros\n\n* Create units from a text string, including multiples and fractions.\n* LaTeX representation of units.\n* Abstraction of units, as (value, unit !SI value, unit dimmensions), which allows to know the mass-length-time decomposition of the magnitude.\n* `0 * 1m = 0 m`, not just `0`. Also, it's possible to convert from 0 degrees Celsius to Fahrenheit, which is impossible with the current `units` module.\n\n### Cons\n\n* `Units` is a class written from scratch, with all operations (`__add__()`, `__mul__()`...) coded explicitly.\n* Interoperability with other data types (for example, a matrix of units) might be messy.\n* The `units` module has a pretty nice documentation for each unit, not present in this module.\n* It's very incomplete, missing a lot of units.",
+    "body": "As burcin said, the idea was to have this as a replacement for the current units module, without removing the old one. (Another idea was to call it units2, but that looked kind of ugly)\n\nMaking `Units` derive from `SageObject` might be a good idea; however I didn't know much about Sage (nor do I now, actually) so I didn't consider this possibility. Maybe a Units ring could be made too.\n\nThe `U()` function was called this way so one could create units conveniently, like\n\n```python\nfrom metrology import U\nlength = U(\"1 m\")\n```\nHowever, it's not necessary to have this function on the top level namespace, and Python guidelines usually suggest something like\n\n```python\nimport metrology\nlength = metrology.U(\"1 m\")\n```\n\nAs for advantages/disadvantages, well, I don't remember them all, but here's a rough list:\n\n### Pros\n\n* Create units from a text string, including multiples and fractions.\n* LaTeX representation of units.\n* Abstraction of units, as (value, unit !SI value, unit dimmensions), which allows to know the mass-length-time decomposition of the magnitude.\n* `0 * 1m = 0 m`, not just `0`. Also, it's possible to convert from 0 degrees Celsius to Fahrenheit, which is impossible with the current `units` module.\n\n### Cons\n\n* `Units` is a class written from scratch, with all operations (`__add__()`, `__mul__()`...) coded explicitly.\n* Interoperability with other data types (for example, a matrix of units) might be messy.\n* The `units` module has a pretty nice documentation for each unit, not present in this module.\n* It's very incomplete, missing a lot of units.",
     "created_at": "2011-05-10T21:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
@@ -212,14 +212,12 @@ The `U()` function was called this way so one could create units conveniently, l
 from metrology import U
 length = U("1 m")
 ```
-
 However, it's not necessary to have this function on the top level namespace, and Python guidelines usually suggest something like
 
 ```python
 import metrology
 length = metrology.U("1 m")
 ```
-
 
 As for advantages/disadvantages, well, I don't remember them all, but here's a rough list:
 

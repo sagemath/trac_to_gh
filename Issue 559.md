@@ -3,7 +3,7 @@
 archive/issues_000559.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\ncauses (among other things) the following:\n\n```\n==5107== 1,056 bytes in 132 blocks are definitely lost in loss record 2,208 of 2,944\n==5107==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==5107==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x1F4BD6EF: __pyx_tp_new_13multi_modular_MultiModularBasis_base (multi_modular.c:2324)\n==5107==    by 0x1F4B92A0: __pyx_tp_new_13multi_modular_MultiModularBasis (multi_modular.c:5836)\n==5107==    by 0x45A272: type_call (typeobject.c:422)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x2041FF67: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__multiply_multi_modular (matrix_integer_den\nse.c:7503)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x204237E0: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__matrix_times_matrix_c_impl (matrix_integer\n_dense.c:5487)\n==5107==    by 0xDFD6878: __pyx_f_7element_6Matrix__matrix_times_matrix_c (element.c:11483)\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/559\n\n",
+    "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\ncauses (among other things) the following:\n\n```\n==5107== 1,056 bytes in 132 blocks are definitely lost in loss record 2,208 of 2,944\n==5107==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==5107==    by 0x94A2697: __gmpz_init (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libgmp.so.3.4.1)\n==5107==    by 0x1F4BD6EF: __pyx_tp_new_13multi_modular_MultiModularBasis_base (multi_modular.c:2324)\n==5107==    by 0x1F4B92A0: __pyx_tp_new_13multi_modular_MultiModularBasis (multi_modular.c:5836)\n==5107==    by 0x45A272: type_call (typeobject.c:422)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x2041FF67: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__multiply_multi_modular (matrix_integer_den\nse.c:7503)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==5107==    by 0x204237E0: __pyx_f_20matrix_integer_dense_20Matrix_integer_dense__matrix_times_matrix_c_impl (matrix_integer\n_dense.c:5487)\n==5107==    by 0xDFD6878: __pyx_f_7element_6Matrix__matrix_times_matrix_c (element.c:11483)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/559\n\n",
     "created_at": "2007-09-02T00:14:35Z",
     "labels": [
         "component: memleak",
@@ -23,7 +23,6 @@ Hello folks,
 ```
 for n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()
 ```
-
 causes (among other things) the following:
 
 ```
@@ -43,7 +42,6 @@ se.c:7503)
 _dense.c:5487)
 ==5107==    by 0xDFD6878: __pyx_f_7element_6Matrix__matrix_times_matrix_c (element.c:11483)
 ```
-
 
 Cheers,
 
@@ -113,7 +111,7 @@ Attachment [multi_modular_memleak.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_002882.json:
 ```json
 {
-    "body": "The following code causes similar errors:\n\n\n```\nA = random_matrix(ZZ, 100, 200, density=.001)\nB = random_matrix(ZZ, 200, 100, density=.001)\nC = A*B\ndel A, B, C\n```\n\n\nThe first chunk of the attached fixes these. The second chunk is useful for #561.\n\nUnfortunately, this isn't enough to reduce all the noise MultiModularBasis makes while running\n\n\n```\nm = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache();\n```\n",
+    "body": "The following code causes similar errors:\n\n```\nA = random_matrix(ZZ, 100, 200, density=.001)\nB = random_matrix(ZZ, 200, 100, density=.001)\nC = A*B\ndel A, B, C\n```\n\nThe first chunk of the attached fixes these. The second chunk is useful for #561.\n\nUnfortunately, this isn't enough to reduce all the noise MultiModularBasis makes while running\n\n```\nm = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache();\n```",
     "created_at": "2007-09-21T01:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/559",
     "type": "issue_comment",
@@ -124,7 +122,6 @@ archive/issue_comments_002882.json:
 
 The following code causes similar errors:
 
-
 ```
 A = random_matrix(ZZ, 100, 200, density=.001)
 B = random_matrix(ZZ, 200, 100, density=.001)
@@ -132,16 +129,13 @@ C = A*B
 del A, B, C
 ```
 
-
 The first chunk of the attached fixes these. The second chunk is useful for #561.
 
 Unfortunately, this isn't enough to reduce all the noise MultiModularBasis makes while running
 
-
 ```
 m = ModularSymbols(501,2).decomposition(3); del m; ModularSymbols_clear_cache();
 ```
-
 
 
 

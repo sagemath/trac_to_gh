@@ -3,7 +3,7 @@
 archive/issues_008550.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\n\n```\nsage: H=SL(2,QQ)\nsage: H.is_finite()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/sage/dev/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in is_finite(self)\n    343         if self.base_ring().is_finite():\n    344             return True\n--> 345         return self._gap_().IsFinite().bool()\n    346\n    347     def cardinality(self):\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _gap_(self, G)\n    217             return SageObject._gap_(self, G)\n    218         except TypeError:\n--> 219             raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    220\n    221     def __cmp__(self, H):\n\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\n\nGL fails similarly.  Other rings (ZZ, finite fields) seem to work OK, so perhaps this is restricted to something peculiar to the rationals?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8550\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\n```\nsage: H=SL(2,QQ)\nsage: H.is_finite()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/sage/dev/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in is_finite(self)\n    343         if self.base_ring().is_finite():\n    344             return True\n--> 345         return self._gap_().IsFinite().bool()\n    346\n    347     def cardinality(self):\n\n/sage/dev/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _gap_(self, G)\n    217             return SageObject._gap_(self, G)\n    218         except TypeError:\n--> 219             raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    220\n    221     def __cmp__(self, H):\n\nNotImplementedError: Matrix group over Rational Field not implemented.\n```\n\nGL fails similarly.  Other rings (ZZ, finite fields) seem to work OK, so perhaps this is restricted to something peculiar to the rationals?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8550\n\n",
     "created_at": "2010-03-17T05:17:38Z",
     "labels": [
         "component: algebra",
@@ -20,7 +20,6 @@ archive/issues_008550.json:
 Assignee: @aghitza
 
 CC:  @videlec
-
 
 ```
 sage: H=SL(2,QQ)
@@ -46,7 +45,6 @@ NotImplementedError                       Traceback (most recent call last)
 
 NotImplementedError: Matrix group over Rational Field not implemented.
 ```
-
 
 GL fails similarly.  Other rings (ZZ, finite fields) seem to work OK, so perhaps this is restricted to something peculiar to the rationals?
 

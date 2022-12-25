@@ -3,7 +3,7 @@
 archive/issues_008311.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @haraldschilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\n\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\n\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @haraldschilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
     "created_at": "2010-02-20T12:06:17Z",
     "labels": [
         "component: elliptic curves",
@@ -28,14 +28,12 @@ As reported:
 E = EllipticCurve(GF(3), [0,0,0,2,2])
 E.random_element()
 ```
-
 Hangs since
 
 ```
 sage: E.rational_points()
 [(0 : 1 : 0)]
 ```
-
 so unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.
 
 This can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.
@@ -166,7 +164,7 @@ I changed a few tabulators to spaces. Other than that the patch is fine. And I s
 archive/issue_comments_073595.json:
 ```json
 {
-    "body": "Replying to [comment:4 wuthrich]:\n> I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.\nThanks, sorry about the tabs.",
+    "body": "Replying to [comment:4 wuthrich]:\n> I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.\n\nThanks, sorry about the tabs.",
     "created_at": "2010-03-08T21:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
@@ -177,6 +175,7 @@ archive/issue_comments_073595.json:
 
 Replying to [comment:4 wuthrich]:
 > I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.
+
 Thanks, sorry about the tabs.
 
 

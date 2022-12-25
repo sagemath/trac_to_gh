@@ -285,7 +285,7 @@ See #2113 if you're worried about how much stuff is sent to the browser.  That p
 archive/issue_comments_031068.json:
 ```json
 {
-    "body": "I tried this again on a brand-new 3.1.4, and the extcode patch fails to apply, with man y statements like:\n\n```\nunable to find 'notebook/javascript/jqueryui/datepicker/i18n/ui.datepicker-hu.js' for patching\nunable to find 'notebook/javascript/jsmath/extensions/bbox.js' for patching\n```\n",
+    "body": "I tried this again on a brand-new 3.1.4, and the extcode patch fails to apply, with man y statements like:\n\n```\nunable to find 'notebook/javascript/jqueryui/datepicker/i18n/ui.datepicker-hu.js' for patching\nunable to find 'notebook/javascript/jsmath/extensions/bbox.js' for patching\n```",
     "created_at": "2008-10-19T13:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -303,13 +303,12 @@ unable to find 'notebook/javascript/jsmath/extensions/bbox.js' for patching
 
 
 
-
 ---
 
 archive/issue_comments_031069.json:
 ```json
 {
-    "body": "OK, I applied using hg in extcode and it worked.  When I show() something, it tells me to download the jsmath fonts with a hyperlink, and when I click on the link I get:\n\n```\nNot Found\n\nThe requested URL /sage//jsmath was not found on this server. \n```\n\n\nI did install the spkgs provided on this ticket.",
+    "body": "OK, I applied using hg in extcode and it worked.  When I show() something, it tells me to download the jsmath fonts with a hyperlink, and when I click on the link I get:\n\n```\nNot Found\n\nThe requested URL /sage//jsmath was not found on this server. \n```\n\nI did install the spkgs provided on this ticket.",
     "created_at": "2008-10-19T13:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -325,7 +324,6 @@ Not Found
 
 The requested URL /sage//jsmath was not found on this server. 
 ```
-
 
 I did install the spkgs provided on this ticket.
 
@@ -354,7 +352,7 @@ The shift-click for making a new text cell does not appear to work, although I d
 archive/issue_comments_031071.json:
 ```json
 {
-    "body": "I have a brand-new 3.1.4 install as well.  The extcode patch applies perfectly for me when I do the following, so something seems odd.  The patch just deletes a bunch of directories for cleanup purposes; applying the extcode patch should not change any functionality.\n\n\n```\ncd sage/data/extcode\nwget http://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch\nhg qinit\nhg qimport extcode-remove-javascript-packages.patch\nhg qpush\n```\n\n\nI then also applied the edit-in-place-and-javascript-spkgs.patch patch from above to the main sage repository.\n\nI then installed all the packages (except the jsmath-image-fonts one) from http://sage.math.washington.edu/home/jason/notebook/.  I used \"sage -f <package>.spkg\" to install these to make sure to overwrite the current package.\n\nI then did sage -br\n\nThen I started the notebook and everything seemed to work great (including the shift-click).  What browser are you using?  I'm using FF 3.0.1 on Ubuntu 8.04.",
+    "body": "I have a brand-new 3.1.4 install as well.  The extcode patch applies perfectly for me when I do the following, so something seems odd.  The patch just deletes a bunch of directories for cleanup purposes; applying the extcode patch should not change any functionality.\n\n```\ncd sage/data/extcode\nwget http://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch\nhg qinit\nhg qimport extcode-remove-javascript-packages.patch\nhg qpush\n```\n\nI then also applied the edit-in-place-and-javascript-spkgs.patch patch from above to the main sage repository.\n\nI then installed all the packages (except the jsmath-image-fonts one) from http://sage.math.washington.edu/home/jason/notebook/.  I used \"sage -f <package>.spkg\" to install these to make sure to overwrite the current package.\n\nI then did sage -br\n\nThen I started the notebook and everything seemed to work great (including the shift-click).  What browser are you using?  I'm using FF 3.0.1 on Ubuntu 8.04.",
     "created_at": "2008-10-20T19:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -365,7 +363,6 @@ archive/issue_comments_031071.json:
 
 I have a brand-new 3.1.4 install as well.  The extcode patch applies perfectly for me when I do the following, so something seems odd.  The patch just deletes a bunch of directories for cleanup purposes; applying the extcode patch should not change any functionality.
 
-
 ```
 cd sage/data/extcode
 wget http://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch
@@ -373,7 +370,6 @@ hg qinit
 hg qimport extcode-remove-javascript-packages.patch
 hg qpush
 ```
-
 
 I then also applied the edit-in-place-and-javascript-spkgs.patch patch from above to the main sage repository.
 
@@ -650,7 +646,7 @@ I think it might be easier to fix the bugs in the current code than to separate 
 archive/issue_comments_031085.json:
 ```json
 {
-    "body": "> I think it might be easier to fix the bugs in the current code than to separate it out > into several tickets again.\n\nIt might be easier for you to fix the known bugs, but it won't be easier for Tom to review the result, especially the lack of a good testing framework for the notebook.  Patch bombs are bad, especially wrt the notebook.   I thus hope you can separate things out some more.  Maybe just do one easy thing now?\n\nWilliam",
+    "body": "> I think it might be easier to fix the bugs in the current code than to separate it out > into several tickets again.\n\n\nIt might be easier for you to fix the known bugs, but it won't be easier for Tom to review the result, especially the lack of a good testing framework for the notebook.  Patch bombs are bad, especially wrt the notebook.   I thus hope you can separate things out some more.  Maybe just do one easy thing now?\n\nWilliam",
     "created_at": "2008-11-04T23:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
@@ -660,6 +656,7 @@ archive/issue_comments_031085.json:
 ```
 
 > I think it might be easier to fix the bugs in the current code than to separate it out > into several tickets again.
+
 
 It might be easier for you to fix the known bugs, but it won't be easier for Tom to review the result, especially the lack of a good testing framework for the notebook.  Patch bombs are bad, especially wrt the notebook.   I thus hope you can separate things out some more.  Maybe just do one easy thing now?
 

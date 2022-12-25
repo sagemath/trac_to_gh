@@ -51,7 +51,7 @@ The last patch fixes some documentation.
 archive/issue_comments_031293.json:
 ```json
 {
-    "body": "Using 3.1.3.alpha3, I got this:\n\n\n```\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.2.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.2.patch\"\napplying /home/wdj/sagefiles/4285-desolver.2.patch\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.3.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.3.patch\"\napplying /home/wdj/sagefiles/4285-desolver.3.patch\npatching file sage/calculus/desolvers.py\nHunk #1 FAILED at 20\nHunk #2 FAILED at 33\nHunk #3 FAILED at 151\nHunk #4 FAILED at 161\nHunk #5 FAILED at 172\n5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej\nabort: patch failed to apply\n```\n",
+    "body": "Using 3.1.3.alpha3, I got this:\n\n```\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.2.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.2.patch\"\napplying /home/wdj/sagefiles/4285-desolver.2.patch\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.3.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.alpha3/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.3.patch\"\napplying /home/wdj/sagefiles/4285-desolver.3.patch\npatching file sage/calculus/desolvers.py\nHunk #1 FAILED at 20\nHunk #2 FAILED at 33\nHunk #3 FAILED at 151\nHunk #4 FAILED at 161\nHunk #5 FAILED at 172\n5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej\nabort: patch failed to apply\n```",
     "created_at": "2008-10-14T20:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -61,7 +61,6 @@ archive/issue_comments_031293.json:
 ```
 
 Using 3.1.3.alpha3, I got this:
-
 
 ```
 sage: hg_sage.apply("/home/wdj/sagefiles/4285-desolver.2.patch")
@@ -83,7 +82,6 @@ Hunk #5 FAILED at 172
 5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej
 abort: patch failed to apply
 ```
-
 
 
 
@@ -110,7 +108,7 @@ Hm.... it's based on 3.1.3.rc0.
 archive/issue_comments_031295.json:
 ```json
 {
-    "body": "Okay, I'll have to rebuild 3.1.3.rc0, which will take awhile.\nBut this:\n\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de = lambda y: diff(y,t) + y - 1\nsage: desolve(de(x(t)),[x,t])\ne^(-t)*(e^t + c)\nsage: f = desolve(diff(x,t) + x - 1, x, ics=[10,2]); f\ne^(-t)*(e^t + e^10)\nsage: plot(f)\n```\n\n\nis absolutely fantastic. So far, this is great! Thanks very much Robert. \n\nI'll do more testing in a few hours...",
+    "body": "Okay, I'll have to rebuild 3.1.3.rc0, which will take awhile.\nBut this:\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de = lambda y: diff(y,t) + y - 1\nsage: desolve(de(x(t)),[x,t])\ne^(-t)*(e^t + c)\nsage: f = desolve(diff(x,t) + x - 1, x, ics=[10,2]); f\ne^(-t)*(e^t + e^10)\nsage: plot(f)\n```\n\nis absolutely fantastic. So far, this is great! Thanks very much Robert. \n\nI'll do more testing in a few hours...",
     "created_at": "2008-10-14T21:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ archive/issue_comments_031295.json:
 
 Okay, I'll have to rebuild 3.1.3.rc0, which will take awhile.
 But this:
-
 
 ```
 sage: t = var('t')
@@ -134,7 +131,6 @@ e^(-t)*(e^t + e^10)
 sage: plot(f)
 ```
 
-
 is absolutely fantastic. So far, this is great! Thanks very much Robert. 
 
 I'll do more testing in a few hours...
@@ -146,7 +142,7 @@ I'll do more testing in a few hours...
 archive/issue_comments_031296.json:
 ```json
 {
-    "body": "This is a newly built clone of 3.1.3.rc0:\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.3.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: desolve\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.2.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.2.patch\"\napplying /home/wdj/sagefiles/4285-desolver.2.patch\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.3.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.3.patch\"\napplying /home/wdj/sagefiles/4285-desolver.3.patch\npatching file sage/calculus/desolvers.py\nHunk #1 FAILED at 20\nHunk #2 FAILED at 33\nHunk #3 FAILED at 151\nHunk #4 FAILED at 161\nHunk #5 FAILED at 172\n5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej\nabort: patch failed to apply\n```\n\n| SAGE Version 3.1.3.rc0, Release Date: 2008-10-12                   |\n| Type notebook() for the GUI, and license() for information.        |\nJust to be clear, I am to apply patch 2 then patch 3?",
+    "body": "This is a newly built clone of 3.1.3.rc0:\n\n```\nwdj@hera:~/sagefiles/sage-3.1.3.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: desolve\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.2.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.2.patch\"\napplying /home/wdj/sagefiles/4285-desolver.2.patch\nsage: hg_sage.apply(\"/home/wdj/sagefiles/4285-desolver.3.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.3.rc0/devel/sage\" && hg import   \"/home/wdj/sagefiles/4285-desolver.3.patch\"\napplying /home/wdj/sagefiles/4285-desolver.3.patch\npatching file sage/calculus/desolvers.py\nHunk #1 FAILED at 20\nHunk #2 FAILED at 33\nHunk #3 FAILED at 151\nHunk #4 FAILED at 161\nHunk #5 FAILED at 172\n5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej\nabort: patch failed to apply\n```\n| SAGE Version 3.1.3.rc0, Release Date: 2008-10-12                   |\n| Type notebook() for the GUI, and license() for information.        |\nJust to be clear, I am to apply patch 2 then patch 3?",
     "created_at": "2008-10-15T01:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -156,7 +152,6 @@ archive/issue_comments_031296.json:
 ```
 
 This is a newly built clone of 3.1.3.rc0:
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.1.3.rc0$ ./sage
@@ -182,7 +177,6 @@ Hunk #5 FAILED at 172
 5 out of 5 hunks FAILED -- saving rejects to file sage/calculus/desolvers.py.rej
 abort: patch failed to apply
 ```
-
 | SAGE Version 3.1.3.rc0, Release Date: 2008-10-12                   |
 | Type notebook() for the GUI, and license() for information.        |
 Just to be clear, I am to apply patch 2 then patch 3?
@@ -194,7 +188,7 @@ Just to be clear, I am to apply patch 2 then patch 3?
 archive/issue_comments_031297.json:
 ```json
 {
-    "body": "> Just to be clear, I am to apply patch 2 then patch 3?\n\nI guess no. The two patches are of the same size. Just apply one of them.",
+    "body": "> Just to be clear, I am to apply patch 2 then patch 3?\n\n\nI guess no. The two patches are of the same size. Just apply one of them.",
     "created_at": "2008-10-15T07:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -204,6 +198,7 @@ archive/issue_comments_031297.json:
 ```
 
 > Just to be clear, I am to apply patch 2 then patch 3?
+
 
 I guess no. The two patches are of the same size. Just apply one of them.
 
@@ -266,7 +261,7 @@ apply only this last patch
 archive/issue_comments_031300.json:
 ```json
 {
-    "body": "Typos fixed. \n\nI imagine we'll be using maxima for differential equations for a while yet, but this interface will almost certainly be affected by the move to PyNaC all the same. \n\nwdj: there is no need to use a lambda function, you can directly write \n\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de = diff(x,t) + x - 1\nsage: desolve(de,[x,t])\ne^(-t)*(e^t + c)\nsage: f = desolve(diff(x,t) + x - 1, x, ics=[10,2]); f\ne^(-t)*(e^t + e^10)\nsage: plot(f)\n```\n",
+    "body": "Typos fixed. \n\nI imagine we'll be using maxima for differential equations for a while yet, but this interface will almost certainly be affected by the move to PyNaC all the same. \n\nwdj: there is no need to use a lambda function, you can directly write \n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de = diff(x,t) + x - 1\nsage: desolve(de,[x,t])\ne^(-t)*(e^t + c)\nsage: f = desolve(diff(x,t) + x - 1, x, ics=[10,2]); f\ne^(-t)*(e^t + e^10)\nsage: plot(f)\n```",
     "created_at": "2008-10-15T10:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -281,7 +276,6 @@ I imagine we'll be using maxima for differential equations for a while yet, but 
 
 wdj: there is no need to use a lambda function, you can directly write 
 
-
 ```
 sage: t = var('t')
 sage: x = function('x', t)
@@ -295,13 +289,12 @@ sage: plot(f)
 
 
 
-
 ---
 
 archive/issue_comments_031301.json:
 ```json
 {
-    "body": "There is one more trivial fix required for tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/tut.py\", line 830:\n    : desolve(DE(x(t)), [x,t])\nExpected:\n    '%e^-t*(%e^t+%c)'\nGot:\n    e^(-t)*(e^t + c)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "There is one more trivial fix required for tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha0/tmp/tut.py\", line 830:\n    : desolve(DE(x(t)), [x,t])\nExpected:\n    '%e^-t*(%e^t+%c)'\nGot:\n    e^(-t)*(e^t + c)\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T11:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -323,7 +316,6 @@ Got:
     e^(-t)*(e^t + c)
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -374,7 +366,7 @@ I added a patch which literally changes exactly this one line in tut.tex. Hope t
 archive/issue_comments_031304.json:
 ```json
 {
-    "body": "Replying to [comment:10 wdj]:\n> I added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!\n\nPretty much, thanks for the patch and a positive review for the last one.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 wdj]:\n> I added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!\n\n\nPretty much, thanks for the patch and a positive review for the last one.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T12:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -385,6 +377,7 @@ archive/issue_comments_031304.json:
 
 Replying to [comment:10 wdj]:
 > I added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!
+
 
 Pretty much, thanks for the patch and a positive review for the last one.
 
@@ -453,7 +446,7 @@ archive/issue_events_009679.json:
 archive/issue_comments_031307.json:
 ```json
 {
-    "body": "> Mike: Note that the patch by David touches tut.tex\n\nas a consequence, it should be ported back to the translations of the tutorial\n(in particular the french one, which is in progress, see the SD10 coding sprint page).",
+    "body": "> Mike: Note that the patch by David touches tut.tex\n\n\nas a consequence, it should be ported back to the translations of the tutorial\n(in particular the french one, which is in progress, see the SD10 coding sprint page).",
     "created_at": "2008-10-18T12:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -463,6 +456,7 @@ archive/issue_comments_031307.json:
 ```
 
 > Mike: Note that the patch by David touches tut.tex
+
 
 as a consequence, it should be ported back to the translations of the tutorial
 (in particular the french one, which is in progress, see the SD10 coding sprint page).
@@ -474,7 +468,7 @@ as a consequence, it should be ported back to the translations of the tutorial
 archive/issue_comments_031308.json:
 ```json
 {
-    "body": "Replying to [comment:13 zimmerma]:\n> > Mike: Note that the patch by David touches tut.tex\n> \n> as a consequence, it should be ported back to the translations of the tutorial\n> (in particular the french one, which is in progress, see the SD10 coding sprint page).\n\nI agree. The translation is already based on the ReST sources. One thing I just thought about was that all the documentation in the various languages ought to be doctested. This discussion should probably move to [sage-devel] so we can start designing a protocol how to deal with the new translation projects. Either way we will make the switch to the new ReST documentation for all bug the reference manual and depending on how things go we might even switch the reference manual for 3.2.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:13 zimmerma]:\n> > Mike: Note that the patch by David touches tut.tex\n\n> \n> as a consequence, it should be ported back to the translations of the tutorial\n> (in particular the french one, which is in progress, see the SD10 coding sprint page).\n\n\nI agree. The translation is already based on the ReST sources. One thing I just thought about was that all the documentation in the various languages ought to be doctested. This discussion should probably move to [sage-devel] so we can start designing a protocol how to deal with the new translation projects. Either way we will make the switch to the new ReST documentation for all bug the reference manual and depending on how things go we might even switch the reference manual for 3.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T12:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
@@ -485,9 +479,11 @@ archive/issue_comments_031308.json:
 
 Replying to [comment:13 zimmerma]:
 > > Mike: Note that the patch by David touches tut.tex
+
 > 
 > as a consequence, it should be ported back to the translations of the tutorial
 > (in particular the french one, which is in progress, see the SD10 coding sprint page).
+
 
 I agree. The translation is already based on the ReST sources. One thing I just thought about was that all the documentation in the various languages ought to be doctested. This discussion should probably move to [sage-devel] so we can start designing a protocol how to deal with the new translation projects. Either way we will make the switch to the new ReST documentation for all bug the reference manual and depending on how things go we might even switch the reference manual for 3.2.
 

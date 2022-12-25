@@ -3,7 +3,7 @@
 archive/issues_000376.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThe following should work and define a homomorphism.\nI don't remember actually implementing finite field homomorphisms, so it's\nno surprise they don't just magically work.  This is very useful though, so\nit needs to get done. \n\n```\nk = GF(73^2,'a')\nf = k.modulus()\nr = f.change_ring(k).roots()\nk.hom([r[0][0]])\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/was/edu/2007/bsd/sage_notebook/worksheets/_scratch_/code/15.py\", line 4, in <module>\n    exec compile(ur'k.hom([r[Integer(0)][Integer(0)]])' + '\\n', '', 'single')\n  File \"/home/was/edu/2007/bsd/\", line 1, in <module>\n    \n  File \"parent_gens.pyx\", line 505, in parent_gens.ParentWithGens.hom\n  File \"/home/was/s/local/lib/python2.5/site-packages/sage/rings/homset.py\", line 80, in __call__\n    raise TypeError, \"images do not define a valid homomorphism\"\nTypeError: images do not define a valid homomorphism\n```\n\n\n\n```\nk.hom([r[1][0]])\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/was/edu/2007/bsd/sage_notebook/worksheets/_scratch_/code/16.py\", line 4, in <module>\n    exec compile(ur'k.hom([r[Integer(1)][Integer(0)]])' + '\\n', '', 'single')\n  File \"/home/was/edu/2007/bsd/\", line 1, in <module>\n    \n  File \"parent_gens.pyx\", line 505, in parent_gens.ParentWithGens.hom\n  File \"/home/was/s/local/lib/python2.5/site-packages/sage/rings/homset.py\", line 80, in __call__\n    raise TypeError, \"images do not define a valid homomorphism\"\nTypeError: images do not define a valid homomorphism\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/376\n\n",
+    "body": "Assignee: somebody\n\nThe following should work and define a homomorphism.\nI don't remember actually implementing finite field homomorphisms, so it's\nno surprise they don't just magically work.  This is very useful though, so\nit needs to get done. \n\n```\nk = GF(73^2,'a')\nf = k.modulus()\nr = f.change_ring(k).roots()\nk.hom([r[0][0]])\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/was/edu/2007/bsd/sage_notebook/worksheets/_scratch_/code/15.py\", line 4, in <module>\n    exec compile(ur'k.hom([r[Integer(0)][Integer(0)]])' + '\\n', '', 'single')\n  File \"/home/was/edu/2007/bsd/\", line 1, in <module>\n    \n  File \"parent_gens.pyx\", line 505, in parent_gens.ParentWithGens.hom\n  File \"/home/was/s/local/lib/python2.5/site-packages/sage/rings/homset.py\", line 80, in __call__\n    raise TypeError, \"images do not define a valid homomorphism\"\nTypeError: images do not define a valid homomorphism\n```\n\n```\nk.hom([r[1][0]])\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/was/edu/2007/bsd/sage_notebook/worksheets/_scratch_/code/16.py\", line 4, in <module>\n    exec compile(ur'k.hom([r[Integer(1)][Integer(0)]])' + '\\n', '', 'single')\n  File \"/home/was/edu/2007/bsd/\", line 1, in <module>\n    \n  File \"parent_gens.pyx\", line 505, in parent_gens.ParentWithGens.hom\n  File \"/home/was/s/local/lib/python2.5/site-packages/sage/rings/homset.py\", line 80, in __call__\n    raise TypeError, \"images do not define a valid homomorphism\"\nTypeError: images do not define a valid homomorphism\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/376\n\n",
     "created_at": "2007-05-23T17:04:26Z",
     "labels": [
         "component: basic arithmetic",
@@ -41,8 +41,6 @@ Traceback (most recent call last):
 TypeError: images do not define a valid homomorphism
 ```
 
-
-
 ```
 k.hom([r[1][0]])
 ///
@@ -57,7 +55,6 @@ Traceback (most recent call last):
     raise TypeError, "images do not define a valid homomorphism"
 TypeError: images do not define a valid homomorphism
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/376
 

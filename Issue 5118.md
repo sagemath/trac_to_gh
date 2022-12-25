@@ -3,7 +3,7 @@
 archive/issues_005118.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
     "created_at": "2009-01-28T19:05:22Z",
     "labels": [
         "component: number theory",
@@ -26,13 +26,11 @@ Before:
 Elliptic Curve defined by y^2  = x^3 + x +1 ...
 ```
 
-
 After:
 
 ```
 Elliptic Curve defined by y^2 = x^3 + x + 1 ...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5118
 

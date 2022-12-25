@@ -3,7 +3,7 @@
 archive/issues_002315.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nThe union function of graphs doesn't do what its docstring says.\n\nDocstring:\n\n\"union(self, other)\n\nReturns the union of self and other.\nIf there are common vertices to both, they will be renamed.\"\n\nExecuting the example from the docstring shows that the description is wrong. Here are the graphs:\n\n```\nsage: D = graphs.DodecahedralGraph();D\nDodecahedron: Graph on 20 vertices\nsage: P = graphs.PetersenGraph();P\nPetersen graph: Graph on 10 vertices\n```\n\nBut the union returns a graph on 20 vertices\n\n```\nsage: D.union(P)\nGraph on 20 vertices\n```\n\nbut i expect it should return a graph on 30 vertices.\n\nSo either the function or the dostring is wrong.\n\nThere are two possible ways to deal with this problem:\n\n1.) Keep this one but rename it to \"nondisjoint_union\" (and correct the docstring of course),\nand code the right \"union\" function.\n\n2.) Correct the docstring of this one, and code a \"disjoint_union\".\n\nIn #sage-devel mhansen and i agreed that this union function is supposed to do a disjoint union, so 1.) should be the way. But that's maybe up to discussion.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2315\n\n",
+    "body": "Assignee: @rlmill\n\nThe union function of graphs doesn't do what its docstring says.\n\nDocstring:\n\n\"union(self, other)\n\nReturns the union of self and other.\nIf there are common vertices to both, they will be renamed.\"\n\nExecuting the example from the docstring shows that the description is wrong. Here are the graphs:\n\n```\nsage: D = graphs.DodecahedralGraph();D\nDodecahedron: Graph on 20 vertices\nsage: P = graphs.PetersenGraph();P\nPetersen graph: Graph on 10 vertices\n```\nBut the union returns a graph on 20 vertices\n\n```\nsage: D.union(P)\nGraph on 20 vertices\n```\nbut i expect it should return a graph on 30 vertices.\n\nSo either the function or the dostring is wrong.\n\nThere are two possible ways to deal with this problem:\n\n1.) Keep this one but rename it to \"nondisjoint_union\" (and correct the docstring of course),\nand code the right \"union\" function.\n\n2.) Correct the docstring of this one, and code a \"disjoint_union\".\n\nIn #sage-devel mhansen and i agreed that this union function is supposed to do a disjoint union, so 1.) should be the way. But that's maybe up to discussion.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2315\n\n",
     "created_at": "2008-02-26T12:34:23Z",
     "labels": [
         "component: graph theory",
@@ -35,14 +35,12 @@ Dodecahedron: Graph on 20 vertices
 sage: P = graphs.PetersenGraph();P
 Petersen graph: Graph on 10 vertices
 ```
-
 But the union returns a graph on 20 vertices
 
 ```
 sage: D.union(P)
 Graph on 20 vertices
 ```
-
 but i expect it should return a graph on 30 vertices.
 
 So either the function or the dostring is wrong.
@@ -145,7 +143,7 @@ Recommendations:
 archive/issue_comments_015376.json:
 ```json
 {
-    "body": "implementing __rmul__ makes it so that:\n\n\n```\nsage: G=graphs.CycleGraph(3)\nsage: int(3)*G\n```\n\n\nworks, but the following still doesn't.  I think it's because 3*G means Integer(3)*G in Sage, but the coercion model blows up instead of seeing if G has an __rmul__ method that can handle Integers.\n\n\n```\nsage: G=graphs.CycleGraph(3)\nsage: int(3)*G              \ndisjoint_union( disjoint_union( disjoint_union( , Cycle graph ), Cycle graph ), Cycle graph ): Graph on 9 vertices\nsage: 3*G     \n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jason/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/jason/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/home/jason/sage/devel/sage-main/sage/graphs/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.graphs.graph.Graph'>'\n```\n",
+    "body": "implementing __rmul__ makes it so that:\n\n```\nsage: G=graphs.CycleGraph(3)\nsage: int(3)*G\n```\n\nworks, but the following still doesn't.  I think it's because 3*G means Integer(3)*G in Sage, but the coercion model blows up instead of seeing if G has an __rmul__ method that can handle Integers.\n\n```\nsage: G=graphs.CycleGraph(3)\nsage: int(3)*G              \ndisjoint_union( disjoint_union( disjoint_union( , Cycle graph ), Cycle graph ), Cycle graph ): Graph on 9 vertices\nsage: 3*G     \n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jason/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/jason/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/home/jason/sage/devel/sage-main/sage/graphs/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.graphs.graph.Graph'>'\n```",
     "created_at": "2008-02-27T20:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
@@ -156,15 +154,12 @@ archive/issue_comments_015376.json:
 
 implementing __rmul__ makes it so that:
 
-
 ```
 sage: G=graphs.CycleGraph(3)
 sage: int(3)*G
 ```
 
-
 works, but the following still doesn't.  I think it's because 3*G means Integer(3)*G in Sage, but the coercion model blows up instead of seeing if G has an __rmul__ method that can handle Integers.
-
 
 ```
 sage: G=graphs.CycleGraph(3)
@@ -182,7 +177,6 @@ sage: 3*G
 
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.graphs.graph.Graph'>'
 ```
-
 
 
 

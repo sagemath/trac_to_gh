@@ -619,7 +619,7 @@ Dave, do you object if we give this ticket a positive review?
 archive/issue_comments_071856.json:
 ```json
 {
-    "body": "Replying to [comment:23 malb]:\n> Dave, do you object if we give this ticket a positive review?\n\nSince it is optional, I think this can go without it building on Solaris. But I would draw Nathann's attention to the developers guide, in particular:\n\nhttp://www.sagemath.org/doc/developer/inclusion.html?highlight=solaris\n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nHowever, since this is not a standard package, then I think it can go. \n\nIt was not clear to me on the #8171 whether that was intended to be experimental or optional. I believe the requirements for optional are more stringent than experimental, but I don't know exactly that they are. I believe Building on Solaris and OS X might be a requirement for optional, but are certainly not for experimental. I think that point needs clarification at some point in the future. \n\nI'm feel unable to review this, as it is outside my area, so if Micheal feels it deserves a positive review, then go ahead, but do not put my name on it. \n\nNote also the \"Author\" field is not completed.\n\nDave",
+    "body": "Replying to [comment:23 malb]:\n> Dave, do you object if we give this ticket a positive review?\n\n\nSince it is optional, I think this can go without it building on Solaris. But I would draw Nathann's attention to the developers guide, in particular:\n\nhttp://www.sagemath.org/doc/developer/inclusion.html?highlight=solaris\n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nHowever, since this is not a standard package, then I think it can go. \n\nIt was not clear to me on the #8171 whether that was intended to be experimental or optional. I believe the requirements for optional are more stringent than experimental, but I don't know exactly that they are. I believe Building on Solaris and OS X might be a requirement for optional, but are certainly not for experimental. I think that point needs clarification at some point in the future. \n\nI'm feel unable to review this, as it is outside my area, so if Micheal feels it deserves a positive review, then go ahead, but do not put my name on it. \n\nNote also the \"Author\" field is not completed.\n\nDave",
     "created_at": "2010-03-10T23:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -630,6 +630,7 @@ archive/issue_comments_071856.json:
 
 Replying to [comment:23 malb]:
 > Dave, do you object if we give this ticket a positive review?
+
 
 Since it is optional, I think this can go without it building on Solaris. But I would draw Nathann's attention to the developers guide, in particular:
 
@@ -700,7 +701,7 @@ Nathann
 archive/issue_comments_071859.json:
 ```json
 {
-    "body": "Replying to [comment:26 ncohen]:\n> Hello !!\n> \n> As Martin mentionned it on #8171, the Cbc package is to be optional, exactly as it currently is. After all, #8171 is just an update. The .p2 is present precisely because it is an update. I hesitated before writing it, though, as the version of Cbc also changed. Do we increase the p# when the version of the source is fixed, and change it otherwise ? As the source changed (I updated it), do I need to \"go back\" to p0 ?\n\nNeither. See:\n\nhttp://www.sagemath.org/doc/developer/patching_spkgs.html\n\nIf the version is changed from the upstream source code, then the new package should be called by that version number, and nothing else - not even p0. Once the first patch to that is made, it becomes p0. \n\n> \n> To be frank, I have in the end no idea of what exactly Solaris is. I know I can check it on the internet very quickly, and this is exactly what I intend to do, but in the end this is where my knowledge of it will stop. I have absolutely no idea how to deal with it...\n> \n> Nathann\n\nSolaris is a Unix operating system. Unlike Linux, which is a Unix-like operating system, Solaris is officially classified as a POSIX compliant Unix operating system. It was created by Sun, who were recently bought by Oracle for $7 billion. Sage builds on Solaris 10 and soon will be an officially supported operating system, just as some linux distributions are. \n\n't2', which people refer to is a Sun T5240 machine with two SPARC processors. (The SPARC processor is similar to the Intel/AMD processors, though not identical). Each processor has 64-threads (128 in total). \n\nFor any package to become a standard part of Sage, then it will need to build on Solaris 10 on SPARC. I'm unsure of the situation with optional packages. I don't mind helping if you have specific problems, but I am not going to do all the testing for you. \n\nWhen I checked the IBM web site, the library was available for Solaris. \n\ndave",
+    "body": "Replying to [comment:26 ncohen]:\n> Hello !!\n> \n> As Martin mentionned it on #8171, the Cbc package is to be optional, exactly as it currently is. After all, #8171 is just an update. The .p2 is present precisely because it is an update. I hesitated before writing it, though, as the version of Cbc also changed. Do we increase the p# when the version of the source is fixed, and change it otherwise ? As the source changed (I updated it), do I need to \"go back\" to p0 ?\n\n\nNeither. See:\n\nhttp://www.sagemath.org/doc/developer/patching_spkgs.html\n\nIf the version is changed from the upstream source code, then the new package should be called by that version number, and nothing else - not even p0. Once the first patch to that is made, it becomes p0. \n\n> \n> To be frank, I have in the end no idea of what exactly Solaris is. I know I can check it on the internet very quickly, and this is exactly what I intend to do, but in the end this is where my knowledge of it will stop. I have absolutely no idea how to deal with it...\n> \n> Nathann\n\n\nSolaris is a Unix operating system. Unlike Linux, which is a Unix-like operating system, Solaris is officially classified as a POSIX compliant Unix operating system. It was created by Sun, who were recently bought by Oracle for $7 billion. Sage builds on Solaris 10 and soon will be an officially supported operating system, just as some linux distributions are. \n\n't2', which people refer to is a Sun T5240 machine with two SPARC processors. (The SPARC processor is similar to the Intel/AMD processors, though not identical). Each processor has 64-threads (128 in total). \n\nFor any package to become a standard part of Sage, then it will need to build on Solaris 10 on SPARC. I'm unsure of the situation with optional packages. I don't mind helping if you have specific problems, but I am not going to do all the testing for you. \n\nWhen I checked the IBM web site, the library was available for Solaris. \n\ndave",
     "created_at": "2010-03-11T14:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -714,6 +715,7 @@ Replying to [comment:26 ncohen]:
 > 
 > As Martin mentionned it on #8171, the Cbc package is to be optional, exactly as it currently is. After all, #8171 is just an update. The .p2 is present precisely because it is an update. I hesitated before writing it, though, as the version of Cbc also changed. Do we increase the p# when the version of the source is fixed, and change it otherwise ? As the source changed (I updated it), do I need to "go back" to p0 ?
 
+
 Neither. See:
 
 http://www.sagemath.org/doc/developer/patching_spkgs.html
@@ -724,6 +726,7 @@ If the version is changed from the upstream source code, then the new package sh
 > To be frank, I have in the end no idea of what exactly Solaris is. I know I can check it on the internet very quickly, and this is exactly what I intend to do, but in the end this is where my knowledge of it will stop. I have absolutely no idea how to deal with it...
 > 
 > Nathann
+
 
 Solaris is a Unix operating system. Unlike Linux, which is a Unix-like operating system, Solaris is officially classified as a POSIX compliant Unix operating system. It was created by Sun, who were recently bought by Oracle for $7 billion. Sage builds on Solaris 10 and soon will be an officially supported operating system, just as some linux distributions are. 
 
@@ -806,7 +809,7 @@ Dima
 archive/issue_comments_071863.json:
 ```json
 {
-    "body": "Replying to [comment:30 dimpase]:\n> Hi,\n> do you understand how to request an \"academic\" license for CPLEX?\n\nOK, I figured it out:\nhere are the details:\n\n[http://download.boulder.ibm.com/ibmdl/pub/software/dw/university/support/ILOGQuickStart.pdf](http://download.boulder.ibm.com/ibmdl/pub/software/dw/university/support/ILOGQuickStart.pdf)\n\nFirst, one has to register here:\n[https://www.ibm.com/developerworks/university/software/get_software.html](https://www.ibm.com/developerworks/university/software/get_software.html)\n\nand after somewhat tedious registration get to download a zip archive, that\ncontains tarballs of several Linux, MacOS, and Solaris binary installations.\nInstall the right tarball somewhere.\n\nLicence can be requested here:\n[https://www.ibm.com/developerworks/university/support/ilog.html](https://www.ibm.com/developerworks/university/support/ilog.html)\n\nyou will get a file named access.ilm that you e.g. can place into /usr/ilog/ilm/\n(or you can go for a custom location and an environment variable to hold it (see the quickstart pdf linked above)\n\nDima",
+    "body": "Replying to [comment:30 dimpase]:\n> Hi,\n> do you understand how to request an \"academic\" license for CPLEX?\n\n\nOK, I figured it out:\nhere are the details:\n\n[http://download.boulder.ibm.com/ibmdl/pub/software/dw/university/support/ILOGQuickStart.pdf](http://download.boulder.ibm.com/ibmdl/pub/software/dw/university/support/ILOGQuickStart.pdf)\n\nFirst, one has to register here:\n[https://www.ibm.com/developerworks/university/software/get_software.html](https://www.ibm.com/developerworks/university/software/get_software.html)\n\nand after somewhat tedious registration get to download a zip archive, that\ncontains tarballs of several Linux, MacOS, and Solaris binary installations.\nInstall the right tarball somewhere.\n\nLicence can be requested here:\n[https://www.ibm.com/developerworks/university/support/ilog.html](https://www.ibm.com/developerworks/university/support/ilog.html)\n\nyou will get a file named access.ilm that you e.g. can place into /usr/ilog/ilm/\n(or you can go for a custom location and an environment variable to hold it (see the quickstart pdf linked above)\n\nDima",
     "created_at": "2010-03-20T05:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -818,6 +821,7 @@ archive/issue_comments_071863.json:
 Replying to [comment:30 dimpase]:
 > Hi,
 > do you understand how to request an "academic" license for CPLEX?
+
 
 OK, I figured it out:
 here are the details:
@@ -866,7 +870,7 @@ Nathann
 archive/issue_comments_071865.json:
 ```json
 {
-    "body": "Replying to [comment:32 ncohen]:\n> From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> \n> Nathann\n\nworks for me with the free academic CPLEX license on Linux x86_64 Debian!",
+    "body": "Replying to [comment:32 ncohen]:\n> From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> \n> Nathann\n\n\nworks for me with the free academic CPLEX license on Linux x86_64 Debian!",
     "created_at": "2010-04-09T05:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -879,6 +883,7 @@ Replying to [comment:32 ncohen]:
 > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.
 > 
 > Nathann
+
 
 works for me with the free academic CPLEX license on Linux x86_64 Debian!
 
@@ -907,7 +912,7 @@ fixed few places where "Mixed Integer" was omitted
 archive/issue_comments_071867.json:
 ```json
 {
-    "body": "Attachment [trac_8172-updated.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172-updated.patch) by @dimpase created at 2010-04-09 06:38:28\n\nReplying to [comment:33 dimpase]:\n> Replying to [comment:32 ncohen]:\n> > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> > \n> > Nathann\n> \n> works for me with the free academic CPLEX license on Linux x86_64 Debian!\n\nGood work!\nI am giving it a positive review, subject to the patch being updated to the one I just uploaded (that adds Mixed Integer here and there, to avoid a confusion stemming from the fact that Sage does have an LP solver, from cvxopt)\n\nDima",
+    "body": "Attachment [trac_8172-updated.patch](tarball://root/attachments/some-uuid/ticket8172/trac_8172-updated.patch) by @dimpase created at 2010-04-09 06:38:28\n\nReplying to [comment:33 dimpase]:\n> Replying to [comment:32 ncohen]:\n> > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.\n> > \n> > Nathann\n\n> \n> works for me with the free academic CPLEX license on Linux x86_64 Debian!\n\n\nGood work!\nI am giving it a positive review, subject to the patch being updated to the one I just uploaded (that adds Mixed Integer here and there, to avoid a confusion stemming from the fact that Sage does have an LP solver, from cvxopt)\n\nDima",
     "created_at": "2010-04-09T06:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8172",
     "type": "issue_comment",
@@ -923,8 +928,10 @@ Replying to [comment:33 dimpase]:
 > > From the tests done in my lab since we are using this new license ( we were using CPLEX 10 before ), this one is *much* faster, especially for integer multiflows.
 > > 
 > > Nathann
+
 > 
 > works for me with the free academic CPLEX license on Linux x86_64 Debian!
+
 
 Good work!
 I am giving it a positive review, subject to the patch being updated to the one I just uploaded (that adds Mixed Integer here and there, to avoid a confusion stemming from the fact that Sage does have an LP solver, from cvxopt)

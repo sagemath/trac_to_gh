@@ -3,7 +3,7 @@
 archive/issues_002583.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\n\nAs a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2583\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\nAs a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2583\n\n",
     "created_at": "2008-03-18T11:27:43Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_002583.json:
 }
 ```
 Assignee: @rlmill
-
 
 ```
 sage -t -long devel/sage/sage/plot/plot.py
@@ -44,7 +43,6 @@ For whitespace errors, see the file .doctest_plot.py
          [68.5 s]
 exit code: 256
 ```
-
 
 As a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.
 
@@ -207,7 +205,7 @@ archive/issue_events_006038.json:
 archive/issue_comments_017642.json:
 ```json
 {
-    "body": "But it causes a new doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             File \"plot.py\", line 3513:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 99 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   2 of  28 in __main__.example_111\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [70.3 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\nso I am reopening it.\n\nCheers,\n\nMichael",
+    "body": "But it causes a new doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             File \"plot.py\", line 3513:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 99 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   2 of  28 in __main__.example_111\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [70.3 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n```\nso I am reopening it.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-19T10:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
@@ -239,7 +237,6 @@ exit code: 256
 The following tests failed:
 
 ```
-
 so I am reopening it.
 
 Cheers,

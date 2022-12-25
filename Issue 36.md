@@ -3,7 +3,7 @@
 archive/issues_000036.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\n   sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nw = %e^-x*(3*sin(x) + cos(x))\nsage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\n(output looks funny)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/36\n\n",
+    "body": "Assignee: somebody\n\n```\n   sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nw = %e^-x*(3*sin(x) + cos(x))\nsage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\n(output looks funny)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/36\n\n",
     "created_at": "2006-09-12T23:29:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,14 +18,12 @@ archive/issues_000036.json:
 ```
 Assignee: somebody
 
-
 ```
    sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])
 w = %e^-x*(3*sin(x) + cos(x))
 sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()
 (output looks funny)
 ```
-
 
 
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/36
 archive/issue_comments_000231.json:
 ```json
 {
-    "body": "Works fine now.\n\n```\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\nw = %e^-x*(3*sin(x) + cos(x))\n\t\t\t       - x\n       \t\t\t w = %e\t   (3 sin(x) + cos(x))\n\n```\n",
+    "body": "Works fine now.\n\n```\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\nw = %e^-x*(3*sin(x) + cos(x))\n\t\t\t       - x\n       \t\t\t w = %e\t   (3 sin(x) + cos(x))\n\n```",
     "created_at": "2007-01-13T02:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_comment",
@@ -59,7 +57,6 @@ w = %e^-x*(3*sin(x) + cos(x))
        			 w = %e	   (3 sin(x) + cos(x))
 
 ```
-
 
 
 

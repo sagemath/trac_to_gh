@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060628.json:
 ```json
 {
-    "body": "The end of my install for libtheora looks like this:\n\n```\n/bin/sh ./mkinstalldirs /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig\n /usr/bin/install -c -m 644 theora.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theora.pc\n /usr/bin/install -c -m 644 theoradec.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theoradec.pc\n /usr/bin/install -c -m 644 theoraenc.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theoraenc.pc\ncp: examples/.libs/png2theora: No such file or directory\n\nreal\t0m32.161s\nuser\t0m19.908s\nsys\t0m8.520s\nsage: An error occurred while installing libtheora-1.1.1\n```\n\n\nSeems like things compiled OK though.  This is on an intel mac, 10.5.\n\n-Marshall",
+    "body": "The end of my install for libtheora looks like this:\n\n```\n/bin/sh ./mkinstalldirs /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig\n /usr/bin/install -c -m 644 theora.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theora.pc\n /usr/bin/install -c -m 644 theoradec.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theoradec.pc\n /usr/bin/install -c -m 644 theoraenc.pc /Users/mh/sagestuff/sage-4.2/local/lib/pkgconfig/theoraenc.pc\ncp: examples/.libs/png2theora: No such file or directory\n\nreal\t0m32.161s\nuser\t0m19.908s\nsys\t0m8.520s\nsage: An error occurred while installing libtheora-1.1.1\n```\n\nSeems like things compiled OK though.  This is on an intel mac, 10.5.\n\n-Marshall",
     "created_at": "2009-10-26T18:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7297",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ user	0m19.908s
 sys	0m8.520s
 sage: An error occurred while installing libtheora-1.1.1
 ```
-
 
 Seems like things compiled OK though.  This is on an intel mac, 10.5.
 
@@ -112,7 +111,7 @@ As far as I can tell, there is no attempt to actually build png2theora, its not 
 archive/issue_comments_060630.json:
 ```json
 {
-    "body": "Is there the line\n\n\n```\nBuild example code: ......... yes\n```\n\n\nat the end of configure?\n\nDid it find libpng?\n\nThe option --enable-examples for configure should force the building of the examples.",
+    "body": "Is there the line\n\n```\nBuild example code: ......... yes\n```\n\nat the end of configure?\n\nDid it find libpng?\n\nThe option --enable-examples for configure should force the building of the examples.",
     "created_at": "2009-10-27T08:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7297",
     "type": "issue_comment",
@@ -123,11 +122,9 @@ archive/issue_comments_060630.json:
 
 Is there the line
 
-
 ```
 Build example code: ......... yes
 ```
-
 
 at the end of configure?
 
@@ -207,7 +204,7 @@ checking for Ogg... no
 archive/issue_comments_060634.json:
 ```json
 {
-    "body": "Whats the point of \n\n\n```\nunset RM\n```\n\nin the spkg-install of libogg-1.1.4 ? \n\nI'd either remove the line, or add a comment why it is needed.",
+    "body": "Whats the point of \n\n```\nunset RM\n```\nin the spkg-install of libogg-1.1.4 ? \n\nI'd either remove the line, or add a comment why it is needed.",
     "created_at": "2009-12-24T00:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7297",
     "type": "issue_comment",
@@ -218,11 +215,9 @@ archive/issue_comments_060634.json:
 
 Whats the point of 
 
-
 ```
 unset RM
 ```
-
 in the spkg-install of libogg-1.1.4 ? 
 
 I'd either remove the line, or add a comment why it is needed.
@@ -234,7 +229,7 @@ I'd either remove the line, or add a comment why it is needed.
 archive/issue_comments_060635.json:
 ```json
 {
-    "body": "I would add 'set -e' before the 'cp' command in the spkg-install of libtheora-1.1.1. Then, if the copy fails, the spkg-install script will exit with a code of 1. Otherwise, this will appear to have installed correctly, even if the copy fails. \n\n\n```\nset -e \ncp examples/.libs/png2theora $SAGE_LOCAL/bin\n```\n",
+    "body": "I would add 'set -e' before the 'cp' command in the spkg-install of libtheora-1.1.1. Then, if the copy fails, the spkg-install script will exit with a code of 1. Otherwise, this will appear to have installed correctly, even if the copy fails. \n\n```\nset -e \ncp examples/.libs/png2theora $SAGE_LOCAL/bin\n```",
     "created_at": "2009-12-24T00:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7297",
     "type": "issue_comment",
@@ -245,12 +240,10 @@ archive/issue_comments_060635.json:
 
 I would add 'set -e' before the 'cp' command in the spkg-install of libtheora-1.1.1. Then, if the copy fails, the spkg-install script will exit with a code of 1. Otherwise, this will appear to have installed correctly, even if the copy fails. 
 
-
 ```
 set -e 
 cp examples/.libs/png2theora $SAGE_LOCAL/bin
 ```
-
 
 
 

@@ -113,7 +113,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_060025.json:
 ```json
 {
-    "body": "I think the\n\n\n```\n\n#!/usr/bin/env bash\n```\n\n\n(from memory, so might not be right)\n\nis better, as bash is not always installed in /bin\n\n\n```\nbash-2.04$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\nbash-2.04$ ls /bin/bash\n/bin/bash not found\nbash-2.04$ which bash\n/opt/OpenSource/bin/bash\nbash-2.04$ which env\n/usr/bin/env\nbash-2.04$\n```\n",
+    "body": "I think the\n\n```\n\n#!/usr/bin/env bash\n```\n\n(from memory, so might not be right)\n\nis better, as bash is not always installed in /bin\n\n```\nbash-2.04$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\nbash-2.04$ ls /bin/bash\n/bin/bash not found\nbash-2.04$ which bash\n/opt/OpenSource/bin/bash\nbash-2.04$ which env\n/usr/bin/env\nbash-2.04$\n```",
     "created_at": "2009-12-03T05:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
@@ -124,17 +124,14 @@ archive/issue_comments_060025.json:
 
 I think the
 
-
 ```
 
 #!/usr/bin/env bash
 ```
 
-
 (from memory, so might not be right)
 
 is better, as bash is not always installed in /bin
-
 
 ```
 bash-2.04$ uname -a
@@ -147,7 +144,6 @@ bash-2.04$ which env
 /usr/bin/env
 bash-2.04$
 ```
-
 
 
 

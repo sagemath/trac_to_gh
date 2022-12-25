@@ -3,7 +3,7 @@
 archive/issues_005591.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nIf I want to insert a \n> calculation cell before an html cell, I can't just press Alt-Enter in \n> the foregoing calculation cell, because this creates a new calculation \n> cell AFTER the html cell. Is there another way?. \n```\n\n\nalt-enter should put a new input cell directly after the current input cell (i.e., before any text cell following the current input cell).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5591\n\n",
+    "body": "Assignee: boothby\n\n```\nIf I want to insert a \n> calculation cell before an html cell, I can't just press Alt-Enter in \n> the foregoing calculation cell, because this creates a new calculation \n> cell AFTER the html cell. Is there another way?. \n```\n\nalt-enter should put a new input cell directly after the current input cell (i.e., before any text cell following the current input cell).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5591\n\n",
     "created_at": "2009-03-23T14:43:45Z",
     "labels": [
         "component: notebook",
@@ -18,14 +18,12 @@ archive/issues_005591.json:
 ```
 Assignee: boothby
 
-
 ```
 If I want to insert a 
 > calculation cell before an html cell, I can't just press Alt-Enter in 
 > the foregoing calculation cell, because this creates a new calculation 
 > cell AFTER the html cell. Is there another way?. 
 ```
-
 
 alt-enter should put a new input cell directly after the current input cell (i.e., before any text cell following the current input cell).
 

@@ -3,7 +3,7 @@
 archive/issues_003277.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nCC:  @mezzarobba @EmmanuelCharpentier\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mezzarobba @EmmanuelCharpentier\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
     "created_at": "2008-05-23T08:15:57Z",
     "labels": [
         "component: calculus"
@@ -25,7 +25,6 @@ one should be able to do something like
 with assumptions(x<0):
     ...
 ```
-
 
 where assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. 
 
@@ -201,7 +200,7 @@ NO WAY!  Thanks to Emmanuel for that!
 archive/issue_comments_022629.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> NO WAY!  Thanks to Emmanuel for that!\n\nI may be dense but ... What do you mean by \"NO WAY!\" ? Do you think that this ticket should be treated separately from #24119 ?",
+    "body": "Replying to [comment:7 kcrisman]:\n> NO WAY!  Thanks to Emmanuel for that!\n\n\nI may be dense but ... What do you mean by \"NO WAY!\" ? Do you think that this ticket should be treated separately from #24119 ?",
     "created_at": "2020-07-06T11:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
@@ -213,6 +212,7 @@ archive/issue_comments_022629.json:
 Replying to [comment:7 kcrisman]:
 > NO WAY!  Thanks to Emmanuel for that!
 
+
 I may be dense but ... What do you mean by "NO WAY!" ? Do you think that this ticket should be treated separately from #24119 ?
 
 
@@ -222,7 +222,7 @@ I may be dense but ... What do you mean by "NO WAY!" ? Do you think that this ti
 archive/issue_comments_022630.json:
 ```json
 {
-    "body": "> > NO WAY!  Thanks to Emmanuel for that!\n> \n> I may be dense but ... What do you mean by \"NO WAY!\" ? Do you think that this ticket should be treated separately from #24119 ?\n\nSorry, an Americanism - it means, \"I don't believe this amazing thing that has happened!\"  Purely a phrase of thankfulness and surprise.",
+    "body": "> > NO WAY!  Thanks to Emmanuel for that!\n\n> \n> I may be dense but ... What do you mean by \"NO WAY!\" ? Do you think that this ticket should be treated separately from #24119 ?\n\n\nSorry, an Americanism - it means, \"I don't believe this amazing thing that has happened!\"  Purely a phrase of thankfulness and surprise.",
     "created_at": "2020-07-10T14:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
@@ -232,8 +232,10 @@ archive/issue_comments_022630.json:
 ```
 
 > > NO WAY!  Thanks to Emmanuel for that!
+
 > 
 > I may be dense but ... What do you mean by "NO WAY!" ? Do you think that this ticket should be treated separately from #24119 ?
+
 
 Sorry, an Americanism - it means, "I don't believe this amazing thing that has happened!"  Purely a phrase of thankfulness and surprise.
 

@@ -3,7 +3,7 @@
 archive/issues_007719.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: complex agm\n\nThis is related to #6021 but also of independent interest.\n\nAs of 4.3 we use pari to compute the complex agm (i.e. a.agm(b) where a, b are complex).  Now the complex agm is multi-valued, and for the application to periods of elliptic curves it does matter which value is used (see upcoming paper by John Cremona and Thotsaphon Thongjunthug).  The pari-computed value is not this \"optimal\" value.  So I have implemented a native Sage version, replacing the existing code in sage/rings/complex_number.pyx.\n\nMuch to my surprise, the new code is in some cases 50 times faster than calling the pari library -- despite the fact that I have not yet cython-optimised the code!\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747)                \nsage: %timeit t = a.agm(b, algorithm=\"pari\")\n100 loops, best of 3: 7.04 ms per loop\nsage:  %timeit t = a.agm(b, algorithm=\"principal\")\n10000 loops, best of 3: 136 mus per loop\nsage:  %timeit t = a.agm(b, algorithm=\"optimal\")  \n10000 loops, best of 3: 146 mus per loop\n```\n\nHere \"mus\" means microseconds (this was run on a computer for which displaying greek \"mu\" causes an error).  \"pari\" is the old way calling the pari library function;  \"principal\" is a native implementation of essentially the same; \"optimal\" is the native implementation returning the so-called optimal value.\n\nSome details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the \"principal\" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.\n\nI have a patch, but before posting it I'll ask for some help optimising it cythonically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7719\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: complex agm\n\nThis is related to #6021 but also of independent interest.\n\nAs of 4.3 we use pari to compute the complex agm (i.e. a.agm(b) where a, b are complex).  Now the complex agm is multi-valued, and for the application to periods of elliptic curves it does matter which value is used (see upcoming paper by John Cremona and Thotsaphon Thongjunthug).  The pari-computed value is not this \"optimal\" value.  So I have implemented a native Sage version, replacing the existing code in sage/rings/complex_number.pyx.\n\nMuch to my surprise, the new code is in some cases 50 times faster than calling the pari library -- despite the fact that I have not yet cython-optimised the code!\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747)                \nsage: %timeit t = a.agm(b, algorithm=\"pari\")\n100 loops, best of 3: 7.04 ms per loop\nsage:  %timeit t = a.agm(b, algorithm=\"principal\")\n10000 loops, best of 3: 136 mus per loop\nsage:  %timeit t = a.agm(b, algorithm=\"optimal\")  \n10000 loops, best of 3: 146 mus per loop\n```\nHere \"mus\" means microseconds (this was run on a computer for which displaying greek \"mu\" causes an error).  \"pari\" is the old way calling the pari library function;  \"principal\" is a native implementation of essentially the same; \"optimal\" is the native implementation returning the so-called optimal value.\n\nSome details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the \"principal\" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.\n\nI have a patch, but before posting it I'll ask for some help optimising it cythonically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7719\n\n",
     "created_at": "2009-12-17T10:29:09Z",
     "labels": [
         "component: basic arithmetic"
@@ -38,7 +38,6 @@ sage:  %timeit t = a.agm(b, algorithm="principal")
 sage:  %timeit t = a.agm(b, algorithm="optimal")  
 10000 loops, best of 3: 146 mus per loop
 ```
-
 Here "mus" means microseconds (this was run on a computer for which displaying greek "mu" causes an error).  "pari" is the old way calling the pari library function;  "principal" is a native implementation of essentially the same; "optimal" is the native implementation returning the so-called optimal value.
 
 Some details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the "principal" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.
@@ -94,7 +93,7 @@ The first patch is not yet ready for review (there are some doctest failures in 
 archive/issue_comments_066177.json:
 ```json
 {
-    "body": "Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n\n```\nsage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n625 loops, best of 3: 33.2 \u00b5s per loop\n```\n\nversus\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747) \nsage: z = pari(a)\nsage: timeit('z.agm(b)')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nTo avoid overhead from caching:\n\n```\nsage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\nCPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\nWall time: 2.49 s\n```\n\nwhich is about 25 microseconds. \n\nConclusions:\n\n  (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\n  (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\nHere's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n\n\n```\nage: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\nCPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.07 s\nsage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n'Time: 0.170'\nsage: 2.07/0.170\n12.1764705882353\n```\n",
+    "body": "Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n\n```\nsage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n625 loops, best of 3: 33.2 \u00b5s per loop\n```\nversus\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747) \nsage: z = pari(a)\nsage: timeit('z.agm(b)')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\nTo avoid overhead from caching:\n\n```\nsage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\nCPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\nWall time: 2.49 s\n```\nwhich is about 25 microseconds. \n\nConclusions:\n\n  (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\n  (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\nHere's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n\n```\nage: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\nCPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.07 s\nsage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n'Time: 0.170'\nsage: 2.07/0.170\n12.1764705882353\n```",
     "created_at": "2009-12-18T05:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -109,7 +108,6 @@ Watch out.  The following is a much more accurate reflection of how fast PARI is
 sage: timeit('pari("agm(-0.95-0.65*I,0.683+0.747*I)")')
 625 loops, best of 3: 33.2 µs per loop
 ```
-
 versus
 
 ```
@@ -121,7 +119,6 @@ sage: timeit('z.agm(b)')
 625 loops, best of 3: 309 µs per loop
 ```
 
-
 To avoid overhead from caching:
 
 ```
@@ -129,7 +126,6 @@ sage: time z = pari("for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))")
 CPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s
 Wall time: 2.49 s
 ```
-
 which is about 25 microseconds. 
 
 Conclusions:
@@ -139,7 +135,6 @@ Conclusions:
   (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. 
 
 Here's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:
-
 
 ```
 age: time z = pari("for(i=1,10^5,agm(-0.95,0.683))")
@@ -153,13 +148,12 @@ sage: 2.07/0.170
 
 
 
-
 ---
 
 archive/issue_comments_066178.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n> {{{\n> sage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n> 625 loops, best of 3: 33.2 \u00b5s per loop\n> }}}\n> versus\n> {{{\n> sage: CC = ComplexField(200)\n> sage: a = CC(-0.95,-0.65)                \n> sage: b = CC(0.683,0.747) \n> sage: z = pari(a)\n> sage: timeit('z.agm(b)')\n> 625 loops, best of 3: 309 \u00b5s per loop\n> }}}\n\nIf you instead do timeit('a.agm(b)') you'll see a vast slow-down.   So the difference in speed is mainly coming from conversion to pari.  That is still worth avoiding if we can write a fast native version.\n\n> \n> To avoid overhead from caching:\n> {{{\n> sage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\n> CPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\n> Wall time: 2.49 s\n> }}}\n> which is about 25 microseconds. \n> \n> Conclusions:\n> \n>   (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\nI didn't come up with anything!  That code just calls the version of agm we have in Sage already which is two lines, calling pari after conversion.\n\n> \n>   (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\nAgreed.  But as I said on sage-devel, what's very important for me is to get the correct (\"optimal\") value of the function.  I hope that will not mean having two versions of the function, one very fast but producing a value which is useless for me (as with the existing pari function) and a slower one I actually use.\n\nBy the way, this is not likely to be a function which is called many times over and over.\n\n> \n> Here's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n> \n> {{{\n> age: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\n> CPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\n> Wall time: 2.07 s\n> sage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n> 'Time: 0.170'\n> sage: 2.07/0.170\n> 12.1764705882353\n> }}}\n> \n\nGood point -- that's what we have to try to beat/match!",
+    "body": "Replying to [comment:2 was]:\n> Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n> \n> ```\n> sage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n> 625 loops, best of 3: 33.2 \u00b5s per loop\n> ```\n> versus\n> \n> ```\n> sage: CC = ComplexField(200)\n> sage: a = CC(-0.95,-0.65)                \n> sage: b = CC(0.683,0.747) \n> sage: z = pari(a)\n> sage: timeit('z.agm(b)')\n> 625 loops, best of 3: 309 \u00b5s per loop\n> ```\n\n\nIf you instead do timeit('a.agm(b)') you'll see a vast slow-down.   So the difference in speed is mainly coming from conversion to pari.  That is still worth avoiding if we can write a fast native version.\n\n> \n> To avoid overhead from caching:\n> \n> ```\n> sage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\n> CPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\n> Wall time: 2.49 s\n> ```\n> which is about 25 microseconds. \n> \n> Conclusions:\n> \n>   (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\n\nI didn't come up with anything!  That code just calls the version of agm we have in Sage already which is two lines, calling pari after conversion.\n\n> \n>   (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\n\nAgreed.  But as I said on sage-devel, what's very important for me is to get the correct (\"optimal\") value of the function.  I hope that will not mean having two versions of the function, one very fast but producing a value which is useless for me (as with the existing pari function) and a slower one I actually use.\n\nBy the way, this is not likely to be a function which is called many times over and over.\n\n> \n> Here's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n> \n> \n> ```\n> age: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\n> CPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\n> Wall time: 2.07 s\n> sage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n> 'Time: 0.170'\n> sage: 2.07/0.170\n> 12.1764705882353\n> ```\n> \n\n\nGood point -- that's what we have to try to beat/match!",
     "created_at": "2009-12-18T09:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -170,39 +164,45 @@ archive/issue_comments_066178.json:
 
 Replying to [comment:2 was]:
 > Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):
-> {{{
+> 
+> ```
 > sage: timeit('pari("agm(-0.95-0.65*I,0.683+0.747*I)")')
 > 625 loops, best of 3: 33.2 µs per loop
-> }}}
+> ```
 > versus
-> {{{
+> 
+> ```
 > sage: CC = ComplexField(200)
 > sage: a = CC(-0.95,-0.65)                
 > sage: b = CC(0.683,0.747) 
 > sage: z = pari(a)
 > sage: timeit('z.agm(b)')
 > 625 loops, best of 3: 309 µs per loop
-> }}}
+> ```
+
 
 If you instead do timeit('a.agm(b)') you'll see a vast slow-down.   So the difference in speed is mainly coming from conversion to pari.  That is still worth avoiding if we can write a fast native version.
 
 > 
 > To avoid overhead from caching:
-> {{{
+> 
+> ```
 > sage: time z = pari("for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))")
 > CPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s
 > Wall time: 2.49 s
-> }}}
+> ```
 > which is about 25 microseconds. 
 > 
 > Conclusions:
 > 
 >   (1) How did you come up with an algorithm="pari" that takes 7ms?  That's really long.
 
+
 I didn't come up with anything!  That code just calls the version of agm we have in Sage already which is two lines, calling pari after conversion.
 
 > 
 >   (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. 
+
 
 Agreed.  But as I said on sage-devel, what's very important for me is to get the correct ("optimal") value of the function.  I hope that will not mean having two versions of the function, one very fast but producing a value which is useless for me (as with the existing pari function) and a slower one I actually use.
 
@@ -211,7 +211,8 @@ By the way, this is not likely to be a function which is called many times over 
 > 
 > Here's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:
 > 
-> {{{
+> 
+> ```
 > age: time z = pari("for(i=1,10^5,agm(-0.95,0.683))")
 > CPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s
 > Wall time: 2.07 s
@@ -219,8 +220,9 @@ By the way, this is not likely to be a function which is called many times over 
 > 'Time: 0.170'
 > sage: 2.07/0.170
 > 12.1764705882353
-> }}}
+> ```
 > 
+
 
 Good point -- that's what we have to try to beat/match!
 
@@ -307,7 +309,7 @@ Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_066183.json:
 ```json
 {
-    "body": "The speed disparity between AGM over CC and over CDF was bugging me, so I decided to code the arbitrary-precision case directly against mpfr tonight. Made me wish we had mpc ;), or even better if sage/cython could unroll CC arithmetic like this already (though there are several other optimizations)\n\nIn any case, now we have\n\n\n```\nsage: a = CC(-0.95,-0.65)\nsage: b = CC(0.683,0.747)\nsage: %timeit a.agm(b, algorithm=\"optimal\")\n10000 loops, best of 3: 37.9 \u00b5s per loop\nsage: %timeit aa.agm(bb)\n10000 loops, best of 3: 35.2 \u00b5s per loop\n```\n\n\nThe difference may be due to pari's stack-based rather than heap-based memory management. Note, we're getting closer to optimal with this algorithm as good chunk of the time is due to just taking the square roots:\n\n\n```\nsage: %timeit [a.sqrt() for k in range(6)]\n10000 loops, best of 3: 25.9 \u00b5s per loop\n```\n",
+    "body": "The speed disparity between AGM over CC and over CDF was bugging me, so I decided to code the arbitrary-precision case directly against mpfr tonight. Made me wish we had mpc ;), or even better if sage/cython could unroll CC arithmetic like this already (though there are several other optimizations)\n\nIn any case, now we have\n\n```\nsage: a = CC(-0.95,-0.65)\nsage: b = CC(0.683,0.747)\nsage: %timeit a.agm(b, algorithm=\"optimal\")\n10000 loops, best of 3: 37.9 \u00b5s per loop\nsage: %timeit aa.agm(bb)\n10000 loops, best of 3: 35.2 \u00b5s per loop\n```\n\nThe difference may be due to pari's stack-based rather than heap-based memory management. Note, we're getting closer to optimal with this algorithm as good chunk of the time is due to just taking the square roots:\n\n```\nsage: %timeit [a.sqrt() for k in range(6)]\n10000 loops, best of 3: 25.9 \u00b5s per loop\n```",
     "created_at": "2009-12-19T09:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -320,7 +322,6 @@ The speed disparity between AGM over CC and over CDF was bugging me, so I decide
 
 In any case, now we have
 
-
 ```
 sage: a = CC(-0.95,-0.65)
 sage: b = CC(0.683,0.747)
@@ -330,15 +331,12 @@ sage: %timeit aa.agm(bb)
 10000 loops, best of 3: 35.2 µs per loop
 ```
 
-
 The difference may be due to pari's stack-based rather than heap-based memory management. Note, we're getting closer to optimal with this algorithm as good chunk of the time is due to just taking the square roots:
-
 
 ```
 sage: %timeit [a.sqrt() for k in range(6)]
 10000 loops, best of 3: 25.9 µs per loop
 ```
-
 
 
 
@@ -383,7 +381,7 @@ Changing status from new to needs_work.
 archive/issue_comments_066186.json:
 ```json
 {
-    "body": "Robert: in line 1508 you set required_prec to self.prec -2.  In my code I used the precision-2 when testing relative error based on nothing more than trial and error (this way it converged while with the same precision it did not), since I am hopeless at working this kind of thing out properly.\n\nBefore merging this, I'll need to fix some doctests in the elliptic curve code -- but before that there's some more work to be done, since the new cmp_abs() does not work on my 32-bit machine (and my 64-bit machine has crashed...):\n\n```\nsage -t  \"devel/sage-cagm/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2190:\n    sage: cmp_abs(CC(5), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2192:\n    sage: cmp_abs(CC(5), CC(4))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2194:\n    sage: cmp_abs(CC(5), CC(5))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2200:\n    sage: cmp_abs(CC(-100), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2202:\n    sage: cmp_abs(CC(-100), CC(100))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2206:\n    sage: cmp_abs(CC(1,1), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n1 items had failures:\n   6 of  19 in __main__.example_79\n***Test Failed*** 6 failures.\n```\n",
+    "body": "Robert: in line 1508 you set required_prec to self.prec -2.  In my code I used the precision-2 when testing relative error based on nothing more than trial and error (this way it converged while with the same precision it did not), since I am hopeless at working this kind of thing out properly.\n\nBefore merging this, I'll need to fix some doctests in the elliptic curve code -- but before that there's some more work to be done, since the new cmp_abs() does not work on my 32-bit machine (and my 64-bit machine has crashed...):\n\n```\nsage -t  \"devel/sage-cagm/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2190:\n    sage: cmp_abs(CC(5), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2192:\n    sage: cmp_abs(CC(5), CC(4))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2194:\n    sage: cmp_abs(CC(5), CC(5))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2200:\n    sage: cmp_abs(CC(-100), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2202:\n    sage: cmp_abs(CC(-100), CC(100))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2206:\n    sage: cmp_abs(CC(1,1), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n1 items had failures:\n   6 of  19 in __main__.example_79\n***Test Failed*** 6 failures.\n```",
     "created_at": "2009-12-19T12:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -445,7 +443,6 @@ Got:
    6 of  19 in __main__.example_79
 ***Test Failed*** 6 failures.
 ```
-
 
 
 
@@ -574,7 +571,7 @@ Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should h
 archive/issue_comments_066193.json:
 ```json
 {
-    "body": "Replying to [comment:14 robertwb]:\n> Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again. \n\nNo apology needed.  This way I read it a lot more carefully than I might have done if everything had worked!",
+    "body": "Replying to [comment:14 robertwb]:\n> Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again. \n\n\nNo apology needed.  This way I read it a lot more carefully than I might have done if everything had worked!",
     "created_at": "2009-12-19T21:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -585,6 +582,7 @@ archive/issue_comments_066193.json:
 
 Replying to [comment:14 robertwb]:
 > Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again. 
+
 
 No apology needed.  This way I read it a lot more carefully than I might have done if everything had worked!
 
@@ -838,7 +836,7 @@ That's why I avoid the fold command for tickets with multiple authors... (BTW, I
 archive/issue_comments_066206.json:
 ```json
 {
-    "body": "Replying to [comment:23 robertwb]:\n> That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)\nVery sorry -- I seem to have made things worse with my first apology!  I do know which of you is which, honest.",
+    "body": "Replying to [comment:23 robertwb]:\n> That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)\n\nVery sorry -- I seem to have made things worse with my first apology!  I do know which of you is which, honest.",
     "created_at": "2010-01-07T10:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
@@ -849,6 +847,7 @@ archive/issue_comments_066206.json:
 
 Replying to [comment:23 robertwb]:
 > That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)
+
 Very sorry -- I seem to have made things worse with my first apology!  I do know which of you is which, honest.
 
 

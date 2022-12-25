@@ -67,7 +67,7 @@ Changing status from new to assigned.
 archive/issue_comments_035462.json:
 ```json
 {
-    "body": "You could also do this in the first example:\n\n```\nsage: m = vector(ZZ, 9, range(9)) \nsage: k.<a> = GF(9) \nsage: m.apply_map(k)\n(0, 1, 2, 0, 1, 2, 0, 1, 2)\n```\n\n\nI think it would be nice to have a really simple first example, that requires much less knowledge of \"abstract algebra\".  Maybe the first example could be for engineers or something?\n\n```\nsage: m = vector([1,x,sin(x+1)])\nsage: m.apply_map(x^2)\n(1, x^2, sin(x + 1)^2)\nsage: m.apply_map(sin)\n(sin(1), sin(x), sin(sin(x + 1)))\n```\n",
+    "body": "You could also do this in the first example:\n\n```\nsage: m = vector(ZZ, 9, range(9)) \nsage: k.<a> = GF(9) \nsage: m.apply_map(k)\n(0, 1, 2, 0, 1, 2, 0, 1, 2)\n```\n\nI think it would be nice to have a really simple first example, that requires much less knowledge of \"abstract algebra\".  Maybe the first example could be for engineers or something?\n\n```\nsage: m = vector([1,x,sin(x+1)])\nsage: m.apply_map(x^2)\n(1, x^2, sin(x + 1)^2)\nsage: m.apply_map(sin)\n(sin(1), sin(x), sin(sin(x + 1)))\n```",
     "created_at": "2008-12-06T23:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ sage: m.apply_map(k)
 (0, 1, 2, 0, 1, 2, 0, 1, 2)
 ```
 
-
 I think it would be nice to have a really simple first example, that requires much less knowledge of "abstract algebra".  Maybe the first example could be for engineers or something?
 
 ```
@@ -95,7 +94,6 @@ sage: m.apply_map(x^2)
 sage: m.apply_map(sin)
 (sin(1), sin(x), sin(sin(x + 1)))
 ```
-
 
 
 

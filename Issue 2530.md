@@ -3,7 +3,7 @@
 archive/issues_002530.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n@interact\ndef _(f = (33,[1..100])):\n    pass\n```\n\n\nThe drop down should be set to 33 but isn't. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2530\n\n",
+    "body": "Assignee: boothby\n\n```\n@interact\ndef _(f = (33,[1..100])):\n    pass\n```\n\nThe drop down should be set to 33 but isn't. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2530\n\n",
     "created_at": "2008-03-15T06:28:46Z",
     "labels": [
         "component: notebook",
@@ -18,13 +18,11 @@ archive/issues_002530.json:
 ```
 Assignee: boothby
 
-
 ```
 @interact
 def _(f = (33,[1..100])):
     pass
 ```
-
 
 The drop down should be set to 33 but isn't. 
 
@@ -153,7 +151,7 @@ archive/issue_events_005932.json:
 archive/issue_comments_017221.json:
 ```json
 {
-    "body": "Replying to [comment:2 TimothyClemans]:\n> I tested this, and it looks good to me.\n\nTimothy,\n\nfor the record: Please doctest patches you review and clearly indicate what you doctested, i.e. all of Sage, some subdirectory and so on. Applying this patch causes a doctest failure, see #2538.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 TimothyClemans]:\n> I tested this, and it looks good to me.\n\n\nTimothy,\n\nfor the record: Please doctest patches you review and clearly indicate what you doctested, i.e. all of Sage, some subdirectory and so on. Applying this patch causes a doctest failure, see #2538.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T02:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2530",
     "type": "issue_comment",
@@ -164,6 +162,7 @@ archive/issue_comments_017221.json:
 
 Replying to [comment:2 TimothyClemans]:
 > I tested this, and it looks good to me.
+
 
 Timothy,
 

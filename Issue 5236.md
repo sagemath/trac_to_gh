@@ -3,7 +3,7 @@
 archive/issues_005236.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nThis is probably a problem with some of the shifting code in pow_computer_ext, since it only occurs when raising an element to a power that's a negative multiple of p.  pow_computer_ext needs cleaning up and doctesting anyway.\n\n```\nsage: W.<w> = Qp(5,6).ext(x^2+5)\nsage: (5+w)^-4\nw^-4 + 4*w^-3 + 3 + 2*w + 3*w^2 + 3*w^5 + w^6 + O(w^8)\nsage: (5+w)^-5\nRuntimeError: ZZ_p: division by non-invertible element\nsage: W(5)^-5\n4*w^-10 + w^-8 + O(w^2)\nsage: w^-5\nw^-5 + O(w^7)\nsage: (1+w)^-5\nRuntimeError: ZZ_p: division by non-invertible element\nsage: (1+w)^5\n1 + 4*w^3 + 3*w^4 + O(w^12)\nsage: (1+w)^-7\n1 + 3*w + 3*w^2 + 3*w^3 + 3*w^6 + 3*w^7 + 2*w^8 + w^9 + 3*w^10 + O(w^12)\nsage: (1+w)^-10\nRuntimeError: ZZ_p: division by non-invertible element\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5236\n\n",
+    "body": "Assignee: @roed314\n\nThis is probably a problem with some of the shifting code in pow_computer_ext, since it only occurs when raising an element to a power that's a negative multiple of p.  pow_computer_ext needs cleaning up and doctesting anyway.\n\n```\nsage: W.<w> = Qp(5,6).ext(x^2+5)\nsage: (5+w)^-4\nw^-4 + 4*w^-3 + 3 + 2*w + 3*w^2 + 3*w^5 + w^6 + O(w^8)\nsage: (5+w)^-5\nRuntimeError: ZZ_p: division by non-invertible element\nsage: W(5)^-5\n4*w^-10 + w^-8 + O(w^2)\nsage: w^-5\nw^-5 + O(w^7)\nsage: (1+w)^-5\nRuntimeError: ZZ_p: division by non-invertible element\nsage: (1+w)^5\n1 + 4*w^3 + 3*w^4 + O(w^12)\nsage: (1+w)^-7\n1 + 3*w + 3*w^2 + 3*w^3 + 3*w^6 + 3*w^7 + 2*w^8 + w^9 + 3*w^10 + O(w^12)\nsage: (1+w)^-10\nRuntimeError: ZZ_p: division by non-invertible element\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5236\n\n",
     "created_at": "2009-02-11T21:46:13Z",
     "labels": [
         "component: basic arithmetic",
@@ -39,7 +39,6 @@ sage: (1+w)^-7
 sage: (1+w)^-10
 RuntimeError: ZZ_p: division by non-invertible element
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5236
 

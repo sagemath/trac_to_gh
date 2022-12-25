@@ -3,7 +3,7 @@
 archive/issues_008027.json:
 ```json
 {
-    "body": "Assignee: @haraldschilly\n\nReplying to [comment:5 mpatel]:\n> Replying to [comment:2 kcrisman]:\n> > Also, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?\n> \n> I'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It makes sense to use a default directory under `DOT_SAGE`, but I think upgrading existing MoinMoin wikis can be problematic.\n\n\nWhen I wrote the wiki and trac command, there was no .sage/* folder, and the SAge notebook was stored in sage_notebook in the current directory.   The notebook has moved over to be in .sage, but nobody moved the wiki and trac yet.   It would be reasonable to do so.  HOWEVER, note that this would break all my wiki's, since a typical situation is:\n\n\n```\nsage@sagemath:~/wiki/sage$ ls\nnohup.err  nohup.out  sage_wiki  start\nsage@sagemath:~/wiki/sage$ more start\nulimit -v 2000000; nohup echo \"wiki(port=9001, address='')\" | sage-new  > nohup.out 2>nohup.err &\nsage@sagemath:~/wiki/sage$\n```\n\n\nIf you change the wiki to be in $HOME/.sage by default, then suddenly all my wiki's will get started on top of each other (hence all but one will fail to start). \n\nSo it might be worth checking if there is a wiki directory \"sage_wiki\" in the current directory, and only if there isn't then default to $HOME/.sage/moinmoin. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8027\n\n",
+    "body": "Assignee: @haraldschilly\n\nReplying to [comment:5 mpatel]:\n> Replying to [comment:2 kcrisman]:\n> > Also, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?\n\n> \n> I'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It makes sense to use a default directory under `DOT_SAGE`, but I think upgrading existing MoinMoin wikis can be problematic.\n\n\n\nWhen I wrote the wiki and trac command, there was no .sage/* folder, and the SAge notebook was stored in sage_notebook in the current directory.   The notebook has moved over to be in .sage, but nobody moved the wiki and trac yet.   It would be reasonable to do so.  HOWEVER, note that this would break all my wiki's, since a typical situation is:\n\n```\nsage@sagemath:~/wiki/sage$ ls\nnohup.err  nohup.out  sage_wiki  start\nsage@sagemath:~/wiki/sage$ more start\nulimit -v 2000000; nohup echo \"wiki(port=9001, address='')\" | sage-new  > nohup.out 2>nohup.err &\nsage@sagemath:~/wiki/sage$\n```\n\nIf you change the wiki to be in $HOME/.sage by default, then suddenly all my wiki's will get started on top of each other (hence all but one will fail to start). \n\nSo it might be worth checking if there is a wiki directory \"sage_wiki\" in the current directory, and only if there isn't then default to $HOME/.sage/moinmoin. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8027\n\n",
     "created_at": "2010-01-21T16:58:19Z",
     "labels": [
         "component: website/wiki",
@@ -21,12 +21,13 @@ Assignee: @haraldschilly
 Replying to [comment:5 mpatel]:
 > Replying to [comment:2 kcrisman]:
 > > Also, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?
+
 > 
 > I'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It makes sense to use a default directory under `DOT_SAGE`, but I think upgrading existing MoinMoin wikis can be problematic.
 
 
-When I wrote the wiki and trac command, there was no .sage/* folder, and the SAge notebook was stored in sage_notebook in the current directory.   The notebook has moved over to be in .sage, but nobody moved the wiki and trac yet.   It would be reasonable to do so.  HOWEVER, note that this would break all my wiki's, since a typical situation is:
 
+When I wrote the wiki and trac command, there was no .sage/* folder, and the SAge notebook was stored in sage_notebook in the current directory.   The notebook has moved over to be in .sage, but nobody moved the wiki and trac yet.   It would be reasonable to do so.  HOWEVER, note that this would break all my wiki's, since a typical situation is:
 
 ```
 sage@sagemath:~/wiki/sage$ ls
@@ -35,7 +36,6 @@ sage@sagemath:~/wiki/sage$ more start
 ulimit -v 2000000; nohup echo "wiki(port=9001, address='')" | sage-new  > nohup.out 2>nohup.err &
 sage@sagemath:~/wiki/sage$
 ```
-
 
 If you change the wiki to be in $HOME/.sage by default, then suddenly all my wiki's will get started on top of each other (hence all but one will fail to start). 
 

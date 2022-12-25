@@ -3,7 +3,7 @@
 archive/issues_002016.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/examples-2.10.1.rc3/gsl/examples/math.o\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2016\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/examples-2.10.1.rc3/gsl/examples/math.o\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2016\n\n",
     "created_at": "2008-01-31T23:27:28Z",
     "labels": [
         "component: packages: standard",
@@ -18,11 +18,9 @@ archive/issues_002016.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/examples-2.10.1.rc3/gsl/examples/math.o
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2016
 

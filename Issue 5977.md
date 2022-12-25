@@ -154,7 +154,7 @@ archive/issue_events_014026.json:
 archive/issue_comments_047378.json:
 ```json
 {
-    "body": "> This is quite important to get fixed since the new symbolics code will break the Sage startup otherwise. \n\nCraig is going to do this later.  If it isn't done in time for sage-4.0, we can include a single *1-line* fix to spkg-install that completely deals with the problem for symbolics.  Note that I have *already* included that fix in our branch, just in case.",
+    "body": "> This is quite important to get fixed since the new symbolics code will break the Sage startup otherwise. \n\n\nCraig is going to do this later.  If it isn't done in time for sage-4.0, we can include a single *1-line* fix to spkg-install that completely deals with the problem for symbolics.  Note that I have *already* included that fix in our branch, just in case.",
     "created_at": "2009-05-16T14:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
@@ -164,6 +164,7 @@ archive/issue_comments_047378.json:
 ```
 
 > This is quite important to get fixed since the new symbolics code will break the Sage startup otherwise. 
+
 
 Craig is going to do this later.  If it isn't done in time for sage-4.0, we can include a single *1-line* fix to spkg-install that completely deals with the problem for symbolics.  Note that I have *already* included that fix in our branch, just in case.
 

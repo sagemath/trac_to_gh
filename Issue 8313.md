@@ -68,7 +68,7 @@ What is the exact path of the file(s) you are referring to? Which chapter/sectio
 archive/issue_comments_073602.json:
 ```json
 {
-    "body": "Replying to [comment:1 mvngu]:\n> What is the exact path of the file(s) you are referring to? Which chapter/section in the Constructions document?\n\nIt's about 10-15 lines from the top of \nhttp://www.sagemath.org/doc/reference/sage/coding/code_constructions.html",
+    "body": "Replying to [comment:1 mvngu]:\n> What is the exact path of the file(s) you are referring to? Which chapter/section in the Constructions document?\n\n\nIt's about 10-15 lines from the top of \nhttp://www.sagemath.org/doc/reference/sage/coding/code_constructions.html",
     "created_at": "2010-02-20T15:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
@@ -79,6 +79,7 @@ archive/issue_comments_073602.json:
 
 Replying to [comment:1 mvngu]:
 > What is the exact path of the file(s) you are referring to? Which chapter/section in the Constructions document?
+
 
 It's about 10-15 lines from the top of 
 http://www.sagemath.org/doc/reference/sage/coding/code_constructions.html

@@ -3,7 +3,7 @@
 archive/issues_005649.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
     "created_at": "2009-03-31T15:48:08Z",
     "labels": [
         "component: graphics",
@@ -17,7 +17,6 @@ archive/issues_005649.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 How about:
@@ -33,7 +32,6 @@ This doesn't look too good...
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5649
 
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5649
 archive/issue_comments_044022.json:
 ```json
 {
-    "body": "See [http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db](http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db) for a y-axis variant on this, namely\n\n\n```\nplot(2^(-20*x),(x,1,10)) \n```\n",
+    "body": "See [http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db](http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db) for a y-axis variant on this, namely\n\n```\nplot(2^(-20*x),(x,1,10)) \n```",
     "created_at": "2009-06-26T18:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
@@ -56,11 +54,9 @@ archive/issue_comments_044022.json:
 
 See [http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db](http://groups.google.com/group/sage-devel/browse_thread/thread/ddd9584a4bf457db) for a y-axis variant on this, namely
 
-
 ```
 plot(2^(-20*x),(x,1,10)) 
 ```
-
 
 
 
@@ -145,7 +141,7 @@ I would like to review this patch, but I don't understand how to reproduce the b
 archive/issue_comments_044027.json:
 ```json
 {
-    "body": "It was from a sage-devel discussion the reporter didn't include (http://groups.google.com/group/sage-devel/browse_thread/thread/0e9c7b897851e5de).    Anway, \n\n```\nP(x)=5*x^2 - 205 \n```\n\nin that case. But you can replicate it by making sure you have a small enough range (e.g. somewhat less than <10**-6) on any plot.   There's a small chance this will have to be rebased, but I hope that no one has been messing with axes much recently.",
+    "body": "It was from a sage-devel discussion the reporter didn't include (http://groups.google.com/group/sage-devel/browse_thread/thread/0e9c7b897851e5de).    Anway, \n\n```\nP(x)=5*x^2 - 205 \n```\nin that case. But you can replicate it by making sure you have a small enough range (e.g. somewhat less than <10**-6) on any plot.   There's a small chance this will have to be rebased, but I hope that no one has been messing with axes much recently.",
     "created_at": "2009-07-16T18:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
@@ -159,7 +155,6 @@ It was from a sage-devel discussion the reporter didn't include (http://groups.g
 ```
 P(x)=5*x^2 - 205 
 ```
-
 in that case. But you can replicate it by making sure you have a small enough range (e.g. somewhat less than <10**-6) on any plot.   There's a small chance this will have to be rebased, but I hope that no one has been messing with axes much recently.
 
 
@@ -263,7 +258,7 @@ Resolution: fixed
 archive/issue_comments_044032.json:
 ```json
 {
-    "body": "> I feel like the readability of _tasteful_ticks() could be improved. Better variable names would help (\"d0\", \"d1\", and \"p\" were hard to decipher). It also looks like there is some duplicated code that could be factored out into a separate method like maybe \"extract_two_digits_and_place_value\". We can leave the refactor for another ticket perhaps :).\n\nSee #6548.  In general there is a lot of work that could be done in axes.py when it comes to documentation and functionality.  There are several other open tickets that have partial code to either significantly rewrite it or to use matplotlib axes - but so far both these solutions have proved more difficult than just slowly improving what already exists.",
+    "body": "> I feel like the readability of _tasteful_ticks() could be improved. Better variable names would help (\"d0\", \"d1\", and \"p\" were hard to decipher). It also looks like there is some duplicated code that could be factored out into a separate method like maybe \"extract_two_digits_and_place_value\". We can leave the refactor for another ticket perhaps :).\n\n\nSee #6548.  In general there is a lot of work that could be done in axes.py when it comes to documentation and functionality.  There are several other open tickets that have partial code to either significantly rewrite it or to use matplotlib axes - but so far both these solutions have proved more difficult than just slowly improving what already exists.",
     "created_at": "2009-07-17T13:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
@@ -273,5 +268,6 @@ archive/issue_comments_044032.json:
 ```
 
 > I feel like the readability of _tasteful_ticks() could be improved. Better variable names would help ("d0", "d1", and "p" were hard to decipher). It also looks like there is some duplicated code that could be factored out into a separate method like maybe "extract_two_digits_and_place_value". We can leave the refactor for another ticket perhaps :).
+
 
 See #6548.  In general there is a lot of work that could be done in axes.py when it comes to documentation and functionality.  There are several other open tickets that have partial code to either significantly rewrite it or to use matplotlib axes - but so far both these solutions have proved more difficult than just slowly improving what already exists.

@@ -72,7 +72,7 @@ archive/issue_events_002629.json:
 archive/issue_comments_005791.json:
 ```json
 {
-    "body": "At least for gcc we can probably use\n\n```\ngcc -dumpversion\n```\n\n\nCheers,\n\nMichael",
+    "body": "At least for gcc we can probably use\n\n```\ngcc -dumpversion\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-10-28T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/954",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ At least for gcc we can probably use
 ```
 gcc -dumpversion
 ```
-
 
 Cheers,
 
@@ -160,7 +159,7 @@ take appropriate action. I didn't know what the desired behavior was so I didn't
 archive/issue_comments_005795.json:
 ```json
 {
-    "body": "More specifically adding this to the top of the flint spkg-install should be enough\n\n\n```\n./test_gcc_version.pl\nif [ $? -ne 0 ]; then\n   echo \"GCC version less than 3.4.0\"\n   echo \"Flint will not be able to compile successfully\"\n   exit 1\nfi\n```\n",
+    "body": "More specifically adding this to the top of the flint spkg-install should be enough\n\n```\n./test_gcc_version.pl\nif [ $? -ne 0 ]; then\n   echo \"GCC version less than 3.4.0\"\n   echo \"Flint will not be able to compile successfully\"\n   exit 1\nfi\n```",
     "created_at": "2007-11-04T01:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/954",
     "type": "issue_comment",
@@ -171,7 +170,6 @@ archive/issue_comments_005795.json:
 
 More specifically adding this to the top of the flint spkg-install should be enough
 
-
 ```
 ./test_gcc_version.pl
 if [ $? -ne 0 ]; then
@@ -180,7 +178,6 @@ if [ $? -ne 0 ]; then
    exit 1
 fi
 ```
-
 
 
 

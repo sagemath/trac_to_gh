@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9061
 archive/issue_comments_083925.json:
 ```json
 {
-    "body": "Can you try `sage.misc.misc.balanced_sum`?  It seems to get about the same speedup for me as you indicate.\n\n\n```\np = MixedIntegerLinearProgram()\nv = p.new_variable()\n%timeit sage.misc.misc.balanced_sum([v[i] for i in xrange(900)])\n```\n",
+    "body": "Can you try `sage.misc.misc.balanced_sum`?  It seems to get about the same speedup for me as you indicate.\n\n```\np = MixedIntegerLinearProgram()\nv = p.new_variable()\n%timeit sage.misc.misc.balanced_sum([v[i] for i in xrange(900)])\n```",
     "created_at": "2010-05-28T00:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ archive/issue_comments_083925.json:
 
 Can you try `sage.misc.misc.balanced_sum`?  It seems to get about the same speedup for me as you indicate.
 
-
 ```
 p = MixedIntegerLinearProgram()
 v = p.new_variable()
@@ -55,13 +54,12 @@ v = p.new_variable()
 
 
 
-
 ---
 
 archive/issue_comments_083926.json:
 ```json
 {
-    "body": "For me, the balanced_sum function gives these timings:\n\n\n```\nsage: p = MixedIntegerLinearProgram()\nsage: v = p.new_variable()\nsage: sage: %timeit sum([v[i] for i in xrange(900)])\n5 loops, best of 3: 1.48 s per loop\nsage: p = MixedIntegerLinearProgram()\nsage: v = p.new_variable()\nsage: %timeit sage.misc.misc.balanced_sum([v[i] for i in xrange(900)])\n25 loops, best of 3: 28.2 ms per loop\n```\n\n\nSo I guess your function still wins (which isn't much of a surprise).",
+    "body": "For me, the balanced_sum function gives these timings:\n\n```\nsage: p = MixedIntegerLinearProgram()\nsage: v = p.new_variable()\nsage: sage: %timeit sum([v[i] for i in xrange(900)])\n5 loops, best of 3: 1.48 s per loop\nsage: p = MixedIntegerLinearProgram()\nsage: v = p.new_variable()\nsage: %timeit sage.misc.misc.balanced_sum([v[i] for i in xrange(900)])\n25 loops, best of 3: 28.2 ms per loop\n```\n\nSo I guess your function still wins (which isn't much of a surprise).",
     "created_at": "2010-05-28T02:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
@@ -71,7 +69,6 @@ archive/issue_comments_083926.json:
 ```
 
 For me, the balanced_sum function gives these timings:
-
 
 ```
 sage: p = MixedIntegerLinearProgram()
@@ -83,7 +80,6 @@ sage: v = p.new_variable()
 sage: %timeit sage.misc.misc.balanced_sum([v[i] for i in xrange(900)])
 25 loops, best of 3: 28.2 ms per loop
 ```
-
 
 So I guess your function still wins (which isn't much of a surprise).
 

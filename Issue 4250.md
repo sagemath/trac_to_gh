@@ -3,7 +3,7 @@
 archive/issues_004250.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: crash, polynomial ring, rationals\n\nOf course, doing\n\n```\nsage: R.<t>=QQ[]\nsage: 2**t\n```\n\nshould result in a traceback. In fact it does so for `R.<t>=ZZ[]`. But over `QQ`, it crashes with a segmentation fault.\n\nRunning `sage -gdb` yields a very long output, too long to reproduce it here, and sorry that I don't know how to save the output of `bt`.\n\nI use Sage version 3.1.2, and it occurs on two different Linux machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4250\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: crash, polynomial ring, rationals\n\nOf course, doing\n\n```\nsage: R.<t>=QQ[]\nsage: 2**t\n```\nshould result in a traceback. In fact it does so for `R.<t>=ZZ[]`. But over `QQ`, it crashes with a segmentation fault.\n\nRunning `sage -gdb` yields a very long output, too long to reproduce it here, and sorry that I don't know how to save the output of `bt`.\n\nI use Sage version 3.1.2, and it occurs on two different Linux machines.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4250\n\n",
     "created_at": "2008-10-07T17:34:12Z",
     "labels": [
         "component: commutative algebra",
@@ -28,7 +28,6 @@ Of course, doing
 sage: R.<t>=QQ[]
 sage: 2**t
 ```
-
 should result in a traceback. In fact it does so for `R.<t>=ZZ[]`. But over `QQ`, it crashes with a segmentation fault.
 
 Running `sage -gdb` yields a very long output, too long to reproduce it here, and sorry that I don't know how to save the output of `bt`.

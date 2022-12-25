@@ -3,7 +3,7 @@
 archive/issues_004782.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\n\nSame behavior with Proof false:\n\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
+    "body": "Assignee: @williamstein\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\nSame behavior with Proof false:\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
     "created_at": "2008-12-13T03:48:49Z",
     "labels": [
         "component: number theory",
@@ -24,13 +24,11 @@ Try this carefully with your finger on kill -9:
 sage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')
 ```
 
-
 On sage.math top shows pretty quickly over 6.9GB memory usage!
 
 ```
 15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    
 ```
-
 
 The discriminants aren't very big:
 
@@ -42,16 +40,13 @@ sage: disc(x^2 - 69*x + 38)
 4609
 ```
 
-
 Same behavior with Proof false:
-
 
 ```
 sage: proof.all(False)
 sage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')
 ...hell....
 ```
-
 
 Giving both polys at once (which maybe use polcompositum) works:
 
@@ -61,7 +56,6 @@ sage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')
   ***   Warning: insufficient precision for fundamental units, not given.
 Number Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field
 ```
-
 
 Basically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). 
 
@@ -94,7 +88,7 @@ Verify this is a PARI bug and submit it.  I've been amazed at how fast the PARI 
 archive/issue_comments_036177.json:
 ```json
 {
-    "body": "I just tried this on sage.math with sage-3.3.alpha0:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+ \n5160 wstein    20   0 61.7g  43g  21m R  102 34.4   2:48.35 sage-ipython\n```\n\n\nOh my frickin' god?!  That's nuts.",
+    "body": "I just tried this on sage.math with sage-3.3.alpha0:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+ \n5160 wstein    20   0 61.7g  43g  21m R  102 34.4   2:48.35 sage-ipython\n```\n\nOh my frickin' god?!  That's nuts.",
     "created_at": "2009-01-22T00:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -110,7 +104,6 @@ I just tried this on sage.math with sage-3.3.alpha0:
 5160 wstein    20   0 61.7g  43g  21m R  102 34.4   2:48.35 sage-ipython
 ```
 
-
 Oh my frickin' god?!  That's nuts.
 
 
@@ -120,7 +113,7 @@ Oh my frickin' god?!  That's nuts.
 archive/issue_comments_036178.json:
 ```json
 {
-    "body": "This is a pari bug, fixed in svn already:\n\n\n```\nmero:pari-svn ncalexan$ ./gp\n                                          GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n                                              i386 running darwin (ix86 kernel) 32-bit version\n                                          compiled: Jan 22 2009, gcc-4.0.1 (Apple Inc. build 5484)\n                                             (readline not compiled in, extended help enabled)\n\n                                                   Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 4000000, primelimit = 500000\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 = \n[x^2 - 69*x + 38 1]\n```\n",
+    "body": "This is a pari bug, fixed in svn already:\n\n```\nmero:pari-svn ncalexan$ ./gp\n                                          GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n                                              i386 running darwin (ix86 kernel) 32-bit version\n                                          compiled: Jan 22 2009, gcc-4.0.1 (Apple Inc. build 5484)\n                                             (readline not compiled in, extended help enabled)\n\n                                                   Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 4000000, primelimit = 500000\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 = \n[x^2 - 69*x + 38 1]\n```",
     "created_at": "2009-01-22T18:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -130,7 +123,6 @@ archive/issue_comments_036178.json:
 ```
 
 This is a pari bug, fixed in svn already:
-
 
 ```
 mero:pari-svn ncalexan$ ./gp
@@ -154,13 +146,12 @@ parisize = 4000000, primelimit = 500000
 
 
 
-
 ---
 
 archive/issue_comments_036179.json:
 ```json
 {
-    "body": "And here is gp svn running on sage.math:\n\n\n```\n/scratch/nca/pari-svn $ ./gp\n            GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n               amd64 running linux (x86-64 kernel) 64-bit version\n            compiled: Jan 22 2009, gcc-4.2.4 (Ubuntu 4.2.4-1ubuntu3)\n                 (readline v5.2 enabled, extended help enabled)\n\n                     Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes\nWITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500000\n\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 =\n[x^2 - 69*x + 38 1]\n```\n",
+    "body": "And here is gp svn running on sage.math:\n\n```\n/scratch/nca/pari-svn $ ./gp\n            GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n               amd64 running linux (x86-64 kernel) 64-bit version\n            compiled: Jan 22 2009, gcc-4.2.4 (Ubuntu 4.2.4-1ubuntu3)\n                 (readline v5.2 enabled, extended help enabled)\n\n                     Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes\nWITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500000\n\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 =\n[x^2 - 69*x + 38 1]\n```",
     "created_at": "2009-01-22T18:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -170,7 +161,6 @@ archive/issue_comments_036179.json:
 ```
 
 And here is gp svn running on sage.math:
-
 
 ```
 /scratch/nca/pari-svn $ ./gp
@@ -193,7 +183,6 @@ parisize = 8000000, primelimit = 500000
 %1 =
 [x^2 - 69*x + 38 1]
 ```
-
 
 
 
@@ -220,7 +209,7 @@ After discussion at SD12, mabs, craigcitro, and ncalexan are going to try to upd
 archive/issue_comments_036181.json:
 ```json
 {
-    "body": "I just checked and the stated problem (for this ticket) is gone in 3.3.rc2 some I'm closing this.  (I tested on both sage.math and OS X)\n\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nNumber Field in b with defining polynomial x^2 - 69*x + 38 over its base field\n```\n",
+    "body": "I just checked and the stated problem (for this ticket) is gone in 3.3.rc2 some I'm closing this.  (I tested on both sage.math and OS X)\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nNumber Field in b with defining polynomial x^2 - 69*x + 38 over its base field\n```",
     "created_at": "2009-02-20T05:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -231,12 +220,10 @@ archive/issue_comments_036181.json:
 
 I just checked and the stated problem (for this ticket) is gone in 3.3.rc2 some I'm closing this.  (I tested on both sage.math and OS X)
 
-
 ```
 sage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')
 Number Field in b with defining polynomial x^2 - 69*x + 38 over its base field
 ```
-
 
 
 
@@ -297,7 +284,7 @@ The problem is **not** gone, it's just hidden by #5231.  Creation is lazy now: i
 archive/issue_comments_036184.json:
 ```json
 {
-    "body": "Nick -- post an example that illustrates things not working.  Because I can't find one. \n\n\n```\nsage: K = NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nsage: K._pari[try every possible function even class groups]\n<works fine>\n```\n",
+    "body": "Nick -- post an example that illustrates things not working.  Because I can't find one. \n\n```\nsage: K = NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nsage: K._pari[try every possible function even class groups]\n<works fine>\n```",
     "created_at": "2009-02-20T05:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -308,7 +295,6 @@ archive/issue_comments_036184.json:
 
 Nick -- post an example that illustrates things not working.  Because I can't find one. 
 
-
 ```
 sage: K = NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')
 sage: K._pari[try every possible function even class groups]
@@ -317,13 +303,12 @@ sage: K._pari[try every possible function even class groups]
 
 
 
-
 ---
 
 archive/issue_comments_036185.json:
 ```json
 {
-    "body": "I just ran into Sage eating *122 GB* in the random ring test:\n\n```\nsage -t -long devel/sage/sage/rings/tests.py\n```\n\nSpecifically\n\n```\n18203 mabshoff  25  5  122g 2.0g  23m R  100  1.6  4:00.82 /scratch/mabshoff/sage-3.3.rc3/local/bin/python /\n```\n\nSo this is a problem, hence I will reopen it :)\n\nCheers,\n\nMichael",
+    "body": "I just ran into Sage eating *122 GB* in the random ring test:\n\n```\nsage -t -long devel/sage/sage/rings/tests.py\n```\nSpecifically\n\n```\n18203 mabshoff  25  5  122g 2.0g  23m R  100  1.6  4:00.82 /scratch/mabshoff/sage-3.3.rc3/local/bin/python /\n```\nSo this is a problem, hence I will reopen it :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T07:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -337,13 +322,11 @@ I just ran into Sage eating *122 GB* in the random ring test:
 ```
 sage -t -long devel/sage/sage/rings/tests.py
 ```
-
 Specifically
 
 ```
 18203 mabshoff  25  5  122g 2.0g  23m R  100  1.6  4:00.82 /scratch/mabshoff/sage-3.3.rc3/local/bin/python /
 ```
-
 So this is a problem, hence I will reopen it :)
 
 Cheers,
@@ -409,7 +392,7 @@ Resolution changed from fixed to
 archive/issue_comments_036188.json:
 ```json
 {
-    "body": "Ok, I also just hit this, which might be completely unrelated:\n\n```\nsage -t -long \"devel/sage/sage/rings/tests.py\"              \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/rings/tests.py\", line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[3]>\", line 1, in <module>\n        sage.rings.tests.test_random_arith(trials=Integer(1000))   # long time (5 seconds?)###line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 255, in test_random_arith\n        for x in random_rings(level):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 209, in random_rings\n        yield random.choice(v)[0]()\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 131, in relative_number_field\n        K = K.extension(f,var)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 2616, in extension\n        return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_rel.py\", line 276, in __init__\n        raise ValueError, \"defining polynomial (%s) must be irreducible\"%polynomial\n    ValueError: defining polynomial (x^2 + 3*x - 20) must be irreducible\n**********************************************************************\n```\n\nBut the ring random test seems to flush out issues :)\n\nCheers,\n\nMichael",
+    "body": "Ok, I also just hit this, which might be completely unrelated:\n\n```\nsage -t -long \"devel/sage/sage/rings/tests.py\"              \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/rings/tests.py\", line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[3]>\", line 1, in <module>\n        sage.rings.tests.test_random_arith(trials=Integer(1000))   # long time (5 seconds?)###line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 255, in test_random_arith\n        for x in random_rings(level):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 209, in random_rings\n        yield random.choice(v)[0]()\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 131, in relative_number_field\n        K = K.extension(f,var)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 2616, in extension\n        return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_rel.py\", line 276, in __init__\n        raise ValueError, \"defining polynomial (%s) must be irreducible\"%polynomial\n    ValueError: defining polynomial (x^2 + 3*x - 20) must be irreducible\n**********************************************************************\n```\nBut the ring random test seems to flush out issues :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T07:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
@@ -449,7 +432,6 @@ Exception raised:
     ValueError: defining polynomial (x^2 + 3*x - 20) must be irreducible
 **********************************************************************
 ```
-
 But the ring random test seems to flush out issues :)
 
 Cheers,

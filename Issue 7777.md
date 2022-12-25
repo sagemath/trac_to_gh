@@ -161,7 +161,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_066942.json:
 ```json
 {
-    "body": "\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/combinat/sf/sf.py # 10 doctests failed\n```\n",
+    "body": "```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/combinat/sf/sf.py # 10 doctests failed\n```",
     "created_at": "2010-01-13T09:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
@@ -169,7 +169,6 @@ archive/issue_comments_066942.json:
     "user": "https://github.com/rlmill"
 }
 ```
-
 
 ```
 The following tests failed:
@@ -179,13 +178,12 @@ The following tests failed:
 
 
 
-
 ---
 
 archive/issue_comments_066943.json:
 ```json
 {
-    "body": "Replying to [comment:4 rlm]:\n> {{{\n> The following tests failed:\n> \n>         sage -t -long devel/sage-main/sage/combinat/sf/sf.py # 10 doctests failed\n> }}}\n\nThanks for the report. I did not manage yet to reproduce yet (I am downloading 4.3.1.alpha).\nCould you send me a copy of the log? Was 7776 applied?\n\nCheers",
+    "body": "Replying to [comment:4 rlm]:\n> {{{\n> The following tests failed:\n> \n>         sage -t -long devel/sage-main/sage/combinat/sf/sf.py # 10 doctests failed\n> }}}\n\n\nThanks for the report. I did not manage yet to reproduce yet (I am downloading 4.3.1.alpha).\nCould you send me a copy of the log? Was 7776 applied?\n\nCheers",
     "created_at": "2010-01-13T11:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
@@ -200,6 +198,7 @@ Replying to [comment:4 rlm]:
 > 
 >         sage -t -long devel/sage-main/sage/combinat/sf/sf.py # 10 doctests failed
 > }}}
+
 
 Thanks for the report. I did not manage yet to reproduce yet (I am downloading 4.3.1.alpha).
 Could you send me a copy of the log? Was 7776 applied?
@@ -267,7 +266,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066947.json:
 ```json
 {
-    "body": "Replying to [comment:6 rlm]:\n> I had gotten too sleepy! Sorry, I didn't notice the dependency (it is 4am here now)...\n\n:-)\n\nWe really should be using a ticket dependency plugin like:\nhttp://trac-hacks.org/wiki/MasterTicketsPlugin.\n\nHave a good night!",
+    "body": "Replying to [comment:6 rlm]:\n> I had gotten too sleepy! Sorry, I didn't notice the dependency (it is 4am here now)...\n\n\n:-)\n\nWe really should be using a ticket dependency plugin like:\nhttp://trac-hacks.org/wiki/MasterTicketsPlugin.\n\nHave a good night!",
     "created_at": "2010-01-13T12:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
@@ -278,6 +277,7 @@ archive/issue_comments_066947.json:
 
 Replying to [comment:6 rlm]:
 > I had gotten too sleepy! Sorry, I didn't notice the dependency (it is 4am here now)...
+
 
 :-)
 

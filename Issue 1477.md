@@ -3,7 +3,7 @@
 archive/issues_001477.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n\n\nOn Dec 12, 2007 7:48 AM, greg2k4@mail.ru <greg2k4@mail.ru> wrote:\n> \n> Hi all,\n> \n> I need to use non-english characters (in comments) in Notebook\n> worksheet.\n> While working, they're shown w/o problem, but if I save (\"download to\n> file\") worksheet, then close\n> SAGE, then open again and load .sws file, sometimes (!) I see just\n> unicode codes (like %u4041)\n> instead of my chars.\n> Strange, but sometimes they're loaded correctly...\n> I'm using Sage v 2.8.13 (VMware) under winXP Pro.\n> \n> Am I missing something?\n\nNo, more likely I'm missing something in how that functionality\nwas implemened.  You're probably one of the first ever Russian uses of \nSage, and we have had very little testing of Unicode in Sage. \nHopefully fixing the above is for developers just a \nmatter of changing a few lines in \n\n  SAGE_ROOT/devel/sage/sage/server/noteboook\n\nthat relate to loading and saving the file worksheet.txt. \n   \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1477\n\n",
+    "body": "Assignee: boothby\n\n```\n\n\nOn Dec 12, 2007 7:48 AM, greg2k4@mail.ru <greg2k4@mail.ru> wrote:\n> \n> Hi all,\n> \n> I need to use non-english characters (in comments) in Notebook\n> worksheet.\n> While working, they're shown w/o problem, but if I save (\"download to\n> file\") worksheet, then close\n> SAGE, then open again and load .sws file, sometimes (!) I see just\n> unicode codes (like %u4041)\n> instead of my chars.\n> Strange, but sometimes they're loaded correctly...\n> I'm using Sage v 2.8.13 (VMware) under winXP Pro.\n> \n> Am I missing something?\n\nNo, more likely I'm missing something in how that functionality\nwas implemened.  You're probably one of the first ever Russian uses of \nSage, and we have had very little testing of Unicode in Sage. \nHopefully fixing the above is for developers just a \nmatter of changing a few lines in \n\n  SAGE_ROOT/devel/sage/sage/server/noteboook\n\nthat relate to loading and saving the file worksheet.txt. \n   \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1477\n\n",
     "created_at": "2007-12-12T16:37:05Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_001477.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 
@@ -50,7 +49,6 @@ that relate to loading and saving the file worksheet.txt.
    
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1477
 
 
@@ -79,7 +77,7 @@ archive/issue_events_003757.json:
 archive/issue_comments_009478.json:
 ```json
 {
-    "body": "\n```\n> Could you summarize the situation with rendering problems?  Is it as follows:\n> (1) When you try to put them in input cells, they get corrupted on load/save.\n\nTo be correct, they're replaced by \"non-browser\"  unicode codes (like\n%u0440 instead of &#x0440; )\n\n> (2) Using edit mode, unicode not in ``'s gets saved just fine.\n\nYes, as they are NOT processed (as I understand) and get saved \"as\nis\".\n\n\n> Oh, by the way, when you're entering html in edit mode, you can just do,\n> e.g., consider $y^2 = x^3 + \\sqrt{x}$ and the formula will get typeset\n> using jsmath.\n\nThanks, can be helpful when writing my materials.\n```\n",
+    "body": "```\n> Could you summarize the situation with rendering problems?  Is it as follows:\n> (1) When you try to put them in input cells, they get corrupted on load/save.\n\nTo be correct, they're replaced by \"non-browser\"  unicode codes (like\n%u0440 instead of &#x0440; )\n\n> (2) Using edit mode, unicode not in ``'s gets saved just fine.\n\nYes, as they are NOT processed (as I understand) and get saved \"as\nis\".\n\n\n> Oh, by the way, when you're entering html in edit mode, you can just do,\n> e.g., consider $y^2 = x^3 + \\sqrt{x}$ and the formula will get typeset\n> using jsmath.\n\nThanks, can be helpful when writing my materials.\n```",
     "created_at": "2007-12-13T18:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1477",
     "type": "issue_comment",
@@ -87,7 +85,6 @@ archive/issue_comments_009478.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 > Could you summarize the situation with rendering problems?  Is it as follows:
@@ -108,7 +105,6 @@ is".
 
 Thanks, can be helpful when writing my materials.
 ```
-
 
 
 

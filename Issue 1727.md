@@ -3,7 +3,7 @@
 archive/issues_001727.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAs reported by ncalexan on IRC:\n\n\n```\nsage: bool(x == x)\nTrue\nsage: bool(x != x)\nTrue\nsage: bool(x > x)\nTrue\n```\n\n\nThis appears to be caused by `SymbolicEquation.__nonzero__()` assuming in various places that the operator of the equation is ==.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1727\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by ncalexan on IRC:\n\n```\nsage: bool(x == x)\nTrue\nsage: bool(x != x)\nTrue\nsage: bool(x > x)\nTrue\n```\n\nThis appears to be caused by `SymbolicEquation.__nonzero__()` assuming in various places that the operator of the equation is ==.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1727\n\n",
     "created_at": "2008-01-09T00:47:29Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 As reported by ncalexan on IRC:
 
-
 ```
 sage: bool(x == x)
 True
@@ -29,7 +28,6 @@ True
 sage: bool(x > x)
 True
 ```
-
 
 This appears to be caused by `SymbolicEquation.__nonzero__()` assuming in various places that the operator of the equation is ==.
 

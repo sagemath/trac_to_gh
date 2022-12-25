@@ -3,7 +3,7 @@
 archive/issues_005648.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
+    "body": "Assignee: @loefflerd\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
     "created_at": "2009-03-31T12:25:20Z",
     "labels": [
         "component: modular forms",
@@ -25,7 +25,6 @@ sage: M = ModularForms(DirichletGroup(3).0, 5)
 sage: f = M.0
 sage: f * f
 ```
-
 
 and get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).
 
@@ -89,7 +88,7 @@ Changing status from new to assigned.
 archive/issue_comments_044017.json:
 ```json
 {
-    "body": "Quick comment: I'm concerned the Sturm bound isn't enough when they are Eisenstein series (it's definitely enough for cusp forms):\n\n```\n\t889\t        m = newparent.sturm_bound() \n \t890\t        newqexp = self.qexp(m) * other.qexp(m) \n \t891\t         \n \t892\t        return newparent.base_extend(newqexp.base_ring())(newqexp) \n```\n\nMaybe I'm just being dense at the moment.\n\nYou could remedy this by increasing m if a given value doesn't work.   There might (should) be a method on newparent that returns the actual precision needed to determine a q-expansion. \n\nI am happy with all the API changes you list in the ticket summary, including changing the meaning of equals for Dirichlet characters.",
+    "body": "Quick comment: I'm concerned the Sturm bound isn't enough when they are Eisenstein series (it's definitely enough for cusp forms):\n\n```\n\t889\t        m = newparent.sturm_bound() \n \t890\t        newqexp = self.qexp(m) * other.qexp(m) \n \t891\t         \n \t892\t        return newparent.base_extend(newqexp.base_ring())(newqexp) \n```\nMaybe I'm just being dense at the moment.\n\nYou could remedy this by increasing m if a given value doesn't work.   There might (should) be a method on newparent that returns the actual precision needed to determine a q-expansion. \n\nI am happy with all the API changes you list in the ticket summary, including changing the meaning of equals for Dirichlet characters.",
     "created_at": "2009-03-31T14:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5648",
     "type": "issue_comment",
@@ -106,7 +105,6 @@ Quick comment: I'm concerned the Sturm bound isn't enough when they are Eisenste
  	891	         
  	892	        return newparent.base_extend(newqexp.base_ring())(newqexp) 
 ```
-
 Maybe I'm just being dense at the moment.
 
 You could remedy this by increasing m if a given value doesn't work.   There might (should) be a method on newparent that returns the actual precision needed to determine a q-expansion. 

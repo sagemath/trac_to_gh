@@ -3,7 +3,7 @@
 archive/issues_008879.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @orlitzky\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n\t    sage: P = HK(0,3)\n\t    sage: HK.is_in_weierstrass_disc(P)\n\t    False\n\t    sage: Q = HK(0,1,0)\n\t    sage: HK.is_in_weierstrass_disc(Q)\n\t    True\n\t    sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n\t    sage: T = HK.lift_x(1+3*5^2); T\n\t    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n\t    sage: HK.is_in_weierstrass_disc(T)\n\t    True\n\n\tAUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\n\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @orlitzky\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n\t    sage: P = HK(0,3)\n\t    sage: HK.is_in_weierstrass_disc(P)\n\t    False\n\t    sage: Q = HK(0,1,0)\n\t    sage: HK.is_in_weierstrass_disc(Q)\n\t    True\n\t    sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n\t    sage: T = HK.lift_x(1+3*5^2); T\n\t    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n\t    sage: HK.is_in_weierstrass_disc(T)\n\t    True\n\n\tAUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
     "created_at": "2010-05-05T00:01:01Z",
     "labels": [
         "component: elliptic curves",
@@ -51,7 +51,6 @@ As of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperel
             - Jennifer Balakrishnan (2010-02)
         """
 ```
-
 I don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8879
@@ -65,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8879
 archive/issue_comments_081452.json:
 ```json
 {
-    "body": "There is also a tab in the following doctest which causes Mac OS X 10.4 to have problems while doctesting, I think.\n\n```\n    def residue_disc(self,P):\n        \"\"\"\n        Gives the residue disc of $P$\n        \n        EXAMPLES:\n\t    sage: R.<x> = QQ['x']\t\n```\n\nNote that tab character (not visible, but there!) in the last line.",
+    "body": "There is also a tab in the following doctest which causes Mac OS X 10.4 to have problems while doctesting, I think.\n\n```\n    def residue_disc(self,P):\n        \"\"\"\n        Gives the residue disc of $P$\n        \n        EXAMPLES:\n\t    sage: R.<x> = QQ['x']\t\n```\nNote that tab character (not visible, but there!) in the last line.",
     "created_at": "2010-05-05T00:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
@@ -84,7 +83,6 @@ There is also a tab in the following doctest which causes Mac OS X 10.4 to have 
         EXAMPLES:
 	    sage: R.<x> = QQ['x']	
 ```
-
 Note that tab character (not visible, but there!) in the last line.
 
 
@@ -94,7 +92,7 @@ Note that tab character (not visible, but there!) in the last line.
 archive/issue_comments_081453.json:
 ```json
 {
-    "body": "Also, the tests at lines 465 ff. take 12-15 seconds EACH on a pretty new computer.  Shouldn't these be marked # long time?  In general quite a few of the doctests take very long, and there are so many that it seems reasonable that some don't have to be run in a normal make check.\n\nThere is a further tab character in line 752:\n\n```\n            sage: T = HK(0,1,0)\t\n```\n\nand line 757\n\n```\n            sage: HK.coleman_integral(w*x^3,T,S)\t\n```\n",
+    "body": "Also, the tests at lines 465 ff. take 12-15 seconds EACH on a pretty new computer.  Shouldn't these be marked # long time?  In general quite a few of the doctests take very long, and there are so many that it seems reasonable that some don't have to be run in a normal make check.\n\nThere is a further tab character in line 752:\n\n```\n            sage: T = HK(0,1,0)\t\n```\nand line 757\n\n```\n            sage: HK.coleman_integral(w*x^3,T,S)\t\n```",
     "created_at": "2010-05-05T00:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
@@ -110,13 +108,11 @@ There is a further tab character in line 752:
 ```
             sage: T = HK(0,1,0)	
 ```
-
 and line 757
 
 ```
             sage: HK.coleman_integral(w*x^3,T,S)	
 ```
-
 
 
 
@@ -203,7 +199,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081458.json:
 ```json
 {
-    "body": "Replying to [comment:3 mjo]:\n>  * All tabs were fixed in #8680.\n>  * The coleman_integral stuff was marked long time in #10712.\n>  * The bad indentation was fixed somewhere along the line.\n> \n> I've cleaned up some trailing whitespace, so that there isn't nothing to do here.\nNot much to review either.  You could have just positively reviewed this as a duplicate too, you know!  But I suppose someone has to remove trailing whitespace!",
+    "body": "Replying to [comment:3 mjo]:\n>  * All tabs were fixed in #8680.\n>  * The coleman_integral stuff was marked long time in #10712.\n>  * The bad indentation was fixed somewhere along the line.\n \n> \n> I've cleaned up some trailing whitespace, so that there isn't nothing to do here.\n\nNot much to review either.  You could have just positively reviewed this as a duplicate too, you know!  But I suppose someone has to remove trailing whitespace!",
     "created_at": "2012-02-03T03:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
@@ -216,8 +212,10 @@ Replying to [comment:3 mjo]:
 >  * All tabs were fixed in #8680.
 >  * The coleman_integral stuff was marked long time in #10712.
 >  * The bad indentation was fixed somewhere along the line.
+ 
 > 
 > I've cleaned up some trailing whitespace, so that there isn't nothing to do here.
+
 Not much to review either.  You could have just positively reviewed this as a duplicate too, you know!  But I suppose someone has to remove trailing whitespace!
 
 

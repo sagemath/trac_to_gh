@@ -3,7 +3,7 @@
 archive/issues_004392.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\n\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
     "created_at": "2008-10-30T13:10:27Z",
     "labels": [
         "component: number theory",
@@ -55,7 +55,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'sage.rings.integer.Integer' object is not callable
 ```
-
 First: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!
 
 Second:  the answer is wrong (as the example shows).
@@ -338,7 +337,7 @@ archive/issue_events_009915.json:
 archive/issue_comments_032270.json:
 ```json
 {
-    "body": "Replying to [comment:6 mabshoff]:\n> Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> \n> John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\nSorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:6 mabshoff]:\n> Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> \n> John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\n\nSorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2008-11-14T10:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -351,6 +350,7 @@ Replying to [comment:6 mabshoff]:
 > Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.
 > 
 > John: The folded(?) patch was a diff a not a "proper" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.
+
 
 Sorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John
 
@@ -366,7 +366,7 @@ Sorry about that.  I had tried to make it easier, by using mercurial queues to m
 archive/issue_comments_032271.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:6 mabshoff]:\n> > Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> > \n> > John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n> \n> Sorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\nWell, I am more concerned about me getting credit for a patch I did not write. The solution to your problem is to export the que patch.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:6 mabshoff]:\n> > Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> > \n> > John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\n> \n> Sorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\n\nWell, I am more concerned about me getting credit for a patch I did not write. The solution to your problem is to export the que patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T14:47:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
@@ -380,8 +380,10 @@ Replying to [comment:8 cremona]:
 > > Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.
 > > 
 > > John: The folded(?) patch was a diff a not a "proper" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.
+
 > 
 > Sorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John
+
 
 Well, I am more concerned about me getting credit for a patch I did not write. The solution to your problem is to export the que patch.
 

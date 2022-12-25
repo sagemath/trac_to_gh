@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5092
 archive/issue_comments_038728.json:
 ```json
 {
-    "body": "You don't need the first two lines below in __cmp__ anymore.\n\n```\n        if isinstance(right, Primes_class):\n            return 0\n        return cmp(type(self), type(right))\n```\n\n\nOtherwise, it's a positive review.",
+    "body": "You don't need the first two lines below in __cmp__ anymore.\n\n```\n        if isinstance(right, Primes_class):\n            return 0\n        return cmp(type(self), type(right))\n```\n\nOtherwise, it's a positive review.",
     "created_at": "2009-01-25T02:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ You don't need the first two lines below in __cmp__ anymore.
         return cmp(type(self), type(right))
 ```
 
-
 Otherwise, it's a positive review.
 
 
@@ -58,7 +57,7 @@ Otherwise, it's a positive review.
 archive/issue_comments_038729.json:
 ```json
 {
-    "body": "This patch causes one doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/sets/set.py\"                 \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/sets/set.py\", line 278:\n    sage: Primes() < Set(QQ)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes one doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/sets/set.py\"                 \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/sets/set.py\", line 278:\n    sage: Primes() < Set(QQ)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T18:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
@@ -81,7 +80,6 @@ Got:
 **********************************************************************
 ```
 
-
 Cheers,
 
 Michael
@@ -93,7 +91,7 @@ Michael
 archive/issue_comments_038730.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> This patch causes one doctest failure:\n\nThis is a weird test. I'm not even sure that it says anything meaningful. In fact, according to the documentation of __cmp__ for Set, it doesn't:\n\n```\n        \\note{If $X < Y$ is true this does \\emph{not} necessarily mean\n        that $X$ is a subset of $Y$.  Also, any two sets can be\n        compared, which is a general Python philosophy.}\n```\n",
+    "body": "Replying to [comment:5 mabshoff]:\n> This patch causes one doctest failure:\n\n\nThis is a weird test. I'm not even sure that it says anything meaningful. In fact, according to the documentation of __cmp__ for Set, it doesn't:\n\n```\n        \\note{If $X < Y$ is true this does \\emph{not} necessarily mean\n        that $X$ is a subset of $Y$.  Also, any two sets can be\n        compared, which is a general Python philosophy.}\n```",
     "created_at": "2009-02-02T21:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5092",
     "type": "issue_comment",
@@ -105,6 +103,7 @@ archive/issue_comments_038730.json:
 Replying to [comment:5 mabshoff]:
 > This patch causes one doctest failure:
 
+
 This is a weird test. I'm not even sure that it says anything meaningful. In fact, according to the documentation of __cmp__ for Set, it doesn't:
 
 ```
@@ -112,7 +111,6 @@ This is a weird test. I'm not even sure that it says anything meaningful. In fac
         that $X$ is a subset of $Y$.  Also, any two sets can be
         compared, which is a general Python philosophy.}
 ```
-
 
 
 

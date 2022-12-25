@@ -58,7 +58,7 @@ Attachment [zn_poly-0.9.p2.patch](tarball://root/attachments/some-uuid/ticket817
 archive/issue_comments_071941.json:
 ```json
 {
-    "body": "The spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libzn_poly*\nlocal/lib/libzn_poly-0.9.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libzn_poly.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libzn_poly.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\n\nJaap",
+    "body": "The spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg)\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libzn_poly*\nlocal/lib/libzn_poly-0.9.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libzn_poly.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libzn_poly.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
     "created_at": "2010-02-03T19:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ The spkg can be found here:
 [http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/zn_poly-0.9.p2.spkg)
 
 
-
 ```
 jaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ file local/lib/libzn_poly*
 local/lib/libzn_poly-0.9.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
@@ -80,7 +79,6 @@ local/lib/libzn_poly.a:	current ar archive, not a dynamic executable or shared o
 local/lib/libzn_poly.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 
 ```
-
 
 
 Jaap
@@ -164,7 +162,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071946.json:
 ```json
 {
-    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:55:16\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
+    "body": "Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket8178/libpng-1.2.35.p0+.patch) by @jaapspies created at 2010-02-04 18:55:16\n\nReplying to [comment:3 drkirkby]:\n> To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. \n\n\n\nI think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)\n\nJaap",
     "created_at": "2010-02-04T18:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -177,6 +175,7 @@ Attachment [libpng-1.2.35.p0+.patch](tarball://root/attachments/some-uuid/ticket
 
 Replying to [comment:3 drkirkby]:
 > To avoid the risk of messing something up for everyone, I would make the chances in patches/makemakefile.py to specific to Solaris on 64-bit. 
+
 
 
 I think it is pritty harmless to add $LDFLAGS here. If you don't agree I leave this one to you. I've enough of -m64 :)
@@ -267,7 +266,7 @@ Unless this has been checked on several systems, I would prefer not to commit it
 archive/issue_comments_071951.json:
 ```json
 {
-    "body": "One more comment. Look at this from the spkg-install file:\n\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"64 bit build\"\n   CFLAGS=\"-O3 -g -m64 -fPIC -L.\"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\n   cp patches/makemakefile.py src/makemakefile.py\nelif [ `uname` = \"SunOS\" -a \"`ld  --version  2>&1  | grep GNU`\" = \"\"  ]; then\n   # Change -soname to -h if the Sun linker is used. \n   sed 's/-soname/-h/g' src/makemakefile.py > /tmp/makemakefile.py.$$\n   mv /tmp/makemakefile.py.$$ src/makemakefile.py\n   CFLAGS=\"-fPIC -O3 -L.\"; export CFLAGS\n   LDFLAGS=\"\"; export LDFLAGS\nelse\n   CFLAGS=\"-fPIC -O3 -L.\"; export CFLAGS\n   LDFLAGS=\"\"; export LDFLAGS\nfi\n\n```\n\n\nYou see LDFAGS is empty except when SAGE64=yes. For now Darwin and SunOS x64 64 bit.\n\nOnly in this case the patches/makemakefile.py is copied. The darwin case is resolved first (even without using the LDFLAGS :) ), see the makefile.\n\nRemains the building of the .so file in our case and that definitely needs the\nLDFLAGS set to -m64.\n\nIf you don't accept this reasoning, I rest my case.\n\n\nCheers,\n\nJaap",
+    "body": "One more comment. Look at this from the spkg-install file:\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"64 bit build\"\n   CFLAGS=\"-O3 -g -m64 -fPIC -L.\"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\n   cp patches/makemakefile.py src/makemakefile.py\nelif [ `uname` = \"SunOS\" -a \"`ld  --version  2>&1  | grep GNU`\" = \"\"  ]; then\n   # Change -soname to -h if the Sun linker is used. \n   sed 's/-soname/-h/g' src/makemakefile.py > /tmp/makemakefile.py.$$\n   mv /tmp/makemakefile.py.$$ src/makemakefile.py\n   CFLAGS=\"-fPIC -O3 -L.\"; export CFLAGS\n   LDFLAGS=\"\"; export LDFLAGS\nelse\n   CFLAGS=\"-fPIC -O3 -L.\"; export CFLAGS\n   LDFLAGS=\"\"; export LDFLAGS\nfi\n\n```\n\nYou see LDFAGS is empty except when SAGE64=yes. For now Darwin and SunOS x64 64 bit.\n\nOnly in this case the patches/makemakefile.py is copied. The darwin case is resolved first (even without using the LDFLAGS :) ), see the makefile.\n\nRemains the building of the .so file in our case and that definitely needs the\nLDFLAGS set to -m64.\n\nIf you don't accept this reasoning, I rest my case.\n\n\nCheers,\n\nJaap",
     "created_at": "2010-02-04T20:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8178",
     "type": "issue_comment",
@@ -277,7 +276,6 @@ archive/issue_comments_071951.json:
 ```
 
 One more comment. Look at this from the spkg-install file:
-
 
 
 ```
@@ -298,7 +296,6 @@ else
 fi
 
 ```
-
 
 You see LDFAGS is empty except when SAGE64=yes. For now Darwin and SunOS x64 64 bit.
 

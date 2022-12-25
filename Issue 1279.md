@@ -3,7 +3,7 @@
 archive/issues_001279.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
+    "body": "Assignee: @williamstein\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
     "created_at": "2007-11-26T08:38:20Z",
     "labels": [
         "component: linear algebra",
@@ -21,14 +21,12 @@ Assignee: @williamstein
 If you create an n x m matrix over ZZ in sage with n > m, then 
 run the LLL algorithm on it (fplll), Sage completely terminates.
 
-
 ```
 sage: A = random_matrix(ZZ, 15, 10)
 sage: A.LLL()
 Ill-formed matrix  : d>n
 bsd:~ was$ 
 ```
-
 
 Possible Solutions:
 1. trap bad conditions somewhere and raise an exception.
@@ -142,7 +140,7 @@ Looks good ready to include.
 archive/issue_comments_007997.json:
 ```json
 {
-    "body": "Do not apply this patch as is:\n\nDamien Stehle wrote via e-mail:\n\n\n```\nI did not apply your patch for d>n, which is not invalid\n(though it was said to be in proved.cpp). If there are linear\ndependencies, LLL will just find them and output zero vectors before a\nLLL-reduced basis of the input lattice.\n```\n\n\nthe new fplll is available at\n\nhttp://sage.math.washington.edu/home/malb/pkgs/fplll-2.1.5.tgz",
+    "body": "Do not apply this patch as is:\n\nDamien Stehle wrote via e-mail:\n\n```\nI did not apply your patch for d>n, which is not invalid\n(though it was said to be in proved.cpp). If there are linear\ndependencies, LLL will just find them and output zero vectors before a\nLLL-reduced basis of the input lattice.\n```\n\nthe new fplll is available at\n\nhttp://sage.math.washington.edu/home/malb/pkgs/fplll-2.1.5.tgz",
     "created_at": "2007-11-28T10:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
@@ -155,14 +153,12 @@ Do not apply this patch as is:
 
 Damien Stehle wrote via e-mail:
 
-
 ```
 I did not apply your patch for d>n, which is not invalid
 (though it was said to be in proved.cpp). If there are linear
 dependencies, LLL will just find them and output zero vectors before a
 LLL-reduced basis of the input lattice.
 ```
-
 
 the new fplll is available at
 

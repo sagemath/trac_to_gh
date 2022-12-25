@@ -3,7 +3,7 @@
 archive/issues_001478.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom Joel Mohler:\n\n\n```\n> In any case, mpolynomial factorization, gcd, and division algorithms in singular\n> pretty much entirely stop me cold computing in a fraction field of mpolynomials.\n> My solution for the moment is to hack in calls to mathematica or magma from the\n> libsingular code in sage.  I had a version of that hackage with M2, but the\n> pexpect sage wrapper for M2 choked up on my polynomials (about 1/4 mb in string\n> form.)  This \"choked up\" might merit more precise diagnosis investigation\n> itself.\n\nThere are ways to get around that by writing large input to a file and telling\nM2 to read in that file.   This is something this interface should do automatically,\nbut doesn't yet (for M2 -- it does it for most of the interfaces).    \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1478\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Joel Mohler:\n\n```\n> In any case, mpolynomial factorization, gcd, and division algorithms in singular\n> pretty much entirely stop me cold computing in a fraction field of mpolynomials.\n> My solution for the moment is to hack in calls to mathematica or magma from the\n> libsingular code in sage.  I had a version of that hackage with M2, but the\n> pexpect sage wrapper for M2 choked up on my polynomials (about 1/4 mb in string\n> form.)  This \"choked up\" might merit more precise diagnosis investigation\n> itself.\n\nThere are ways to get around that by writing large input to a file and telling\nM2 to read in that file.   This is something this interface should do automatically,\nbut doesn't yet (for M2 -- it does it for most of the interfaces).    \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1478\n\n",
     "created_at": "2007-12-12T16:56:19Z",
     "labels": [
         "component: interfaces"
@@ -19,7 +19,6 @@ Assignee: @williamstein
 
 From Joel Mohler:
 
-
 ```
 > In any case, mpolynomial factorization, gcd, and division algorithms in singular
 > pretty much entirely stop me cold computing in a fraction field of mpolynomials.
@@ -34,7 +33,6 @@ M2 to read in that file.   This is something this interface should do automatica
 but doesn't yet (for M2 -- it does it for most of the interfaces).    
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1478
 

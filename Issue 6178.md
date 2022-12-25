@@ -138,7 +138,7 @@ On the last point it is not much use trying to create random matrices over a num
 archive/issue_comments_049234.json:
 ```json
 {
-    "body": "> On the last point it is not much use trying to create \n> random matrices over a number field order OK, since OK.random_element() \n> returns a random integer! I think that should be changed. \n\nThat's the second complaint I've heard about this missing functionality just this week!\nDefinitely this should get implemented.",
+    "body": "> On the last point it is not much use trying to create \n> random matrices over a number field order OK, since OK.random_element() \n> returns a random integer! I think that should be changed. \n\n\nThat's the second complaint I've heard about this missing functionality just this week!\nDefinitely this should get implemented.",
     "created_at": "2009-06-13T09:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
@@ -150,6 +150,7 @@ archive/issue_comments_049234.json:
 > On the last point it is not much use trying to create 
 > random matrices over a number field order OK, since OK.random_element() 
 > returns a random integer! I think that should be changed. 
+
 
 That's the second complaint I've heard about this missing functionality just this week!
 Definitely this should get implemented.

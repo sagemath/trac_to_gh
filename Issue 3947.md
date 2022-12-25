@@ -3,7 +3,7 @@
 archive/issues_003947.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen built with --enable-framework, python doesn't produce a file \n` local/lib/python2.5/lib-dynload/readline.so `\nbecause it doesn't find libreadline.dylib.\n\nThe reason for that is that with enable-framework, python doesn't look in the SAGE_LOCAL/include and SAGE_LOCAL/lib directories.  mabshoff reckons this is a generic issue.\n\nspkg-install requires the following:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3947\n\n",
+    "body": "Assignee: tbd\n\nWhen built with --enable-framework, python doesn't produce a file \n` local/lib/python2.5/lib-dynload/readline.so `\nbecause it doesn't find libreadline.dylib.\n\nThe reason for that is that with enable-framework, python doesn't look in the SAGE_LOCAL/include and SAGE_LOCAL/lib directories.  mabshoff reckons this is a generic issue.\n\nspkg-install requires the following:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3947\n\n",
     "created_at": "2008-08-25T07:04:19Z",
     "labels": [
         "component: algebra",
@@ -33,7 +33,6 @@ export LDFLAGS
 CPPFLAGS="-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS"
 export CPPFLAGS
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3947
 

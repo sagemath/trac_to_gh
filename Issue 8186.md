@@ -3,7 +3,7 @@
 archive/issues_008186.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\n\n```\nLe 5 f\u00e9vrier 2010 00:33, Alexandre Blondin Mass\u00e9 a \u00e9crit :\n> Salut, Seb !\n> C'est bizarre, j'obtiens ceci dans Sage:\n>\n> sage: w = Word('abaabababababab')\n> sage: u = w.iterated_right_palindromic_closure()\n> sage: print u.length()\n> None\n> sage: len(u)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n>\n> /Users/alexandre/<ipython console> in <module>()\n>\n> TypeError: an integer is required\n> sage:\n>\n> J'imagine que c'est d\u00fb au fait que c'est un mot impl\u00e9ment\u00e9 par un it\u00e9rateur\n> avec cache, mais ce n'est pas tr\u00e8s pratique, on devrait pouvoir savoir la\n> longueur d'un tel mot. Y a-t-il moyen de le faire ? Peut-on forcer\n> l'\u00e9valuation ? Merci !\n> Alex\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8186\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\n```\nLe 5 f\u00e9vrier 2010 00:33, Alexandre Blondin Mass\u00e9 a \u00e9crit :\n> Salut, Seb !\n> C'est bizarre, j'obtiens ceci dans Sage:\n>\n> sage: w = Word('abaabababababab')\n> sage: u = w.iterated_right_palindromic_closure()\n> sage: print u.length()\n> None\n> sage: len(u)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n>\n> /Users/alexandre/<ipython console> in <module>()\n>\n> TypeError: an integer is required\n> sage:\n>\n> J'imagine que c'est d\u00fb au fait que c'est un mot impl\u00e9ment\u00e9 par un it\u00e9rateur\n> avec cache, mais ce n'est pas tr\u00e8s pratique, on devrait pouvoir savoir la\n> longueur d'un tel mot. Y a-t-il moyen de le faire ? Peut-on forcer\n> l'\u00e9valuation ? Merci !\n> Alex\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8186\n\n",
     "created_at": "2010-02-05T01:06:23Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +19,6 @@ archive/issues_008186.json:
 Assignee: sage-combinat
 
 CC:  abmasse
-
 
 ```
 Le 5 février 2010 00:33, Alexandre Blondin Massé a écrit :
@@ -45,7 +44,6 @@ Le 5 février 2010 00:33, Alexandre Blondin Massé a écrit :
 > l'évaluation ? Merci !
 > Alex
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8186
@@ -207,7 +205,7 @@ Thanks for the doc fixes. I agree with them.
 archive/issue_comments_072029.json:
 ```json
 {
-    "body": "For the record, the \"length handling\" patch applies to 4.3.2 with\n\n\n```\napplying trac_8186_length_handling-sl.patch\npatching file sage/combinat/words/word.py\nHunk #2 succeeded at 1109 with fuzz 2 (offset 0 lines).\n```\n\nin the queue\n\n\n```\ntrac_8219.patch\ntrac_3683-upgrade_moinmoin.patch\ntrac_8183-French_pdf.patch\ntrac_8190-docbuild.patch\ntrac_8184-eclib.patch\ntrac_8184-indentation.patch\ntrac_8155.patch\ntrac_8124-selmer-nf.review.patch\ntrac_7575.patch\ntrac_7575-followup.patch\ntrac_8189-hg.patch\ntrac_7935.patch\ntrac_7935b.2.patch\ntrac_6296.patch\ntrac_6296-part2.patch\ntrac6942_jordan.patch\ntrac6942_jordan_tests.patch\ntrac_6942-reviewer.patch\ntrac_8128-latex_cell_unicode.patch\ntrac_7313-multiline.patch\ntrac_8203-doc.patch\ntrac_8206_developer-doc.patch\ntrac_7944-dev-guide.patch\ntrac-8211.patch\ntrac_8044-categories_finite_groups-nt.patch\ntrac_8215_empty_word-sl.patch\ntrac_8186_length_handling-sl.patch               # You are here!\ntrac_8186_minor_doc_changes-abm.patch\ntrac_8140-sturmian-sl.patch\ntrac_8140-doc_fixes-abm.patch\ntrac_8140_cf-arg-sl.patch\ntrac_8093_palindromes_prefixes-abm.patch\ntrac_8093_doc_fixes-sl.patch\ntrac_7978_crystal_cleanup-as.2.patch\ntrac_6775-disjoint_set-sl.patch\n7580_fixes_and_extensions_total.patch\ntrac_8120-uniquerep_hash-fh.patch\ntrac_8212-minimal_weight_poly_defining_GF2n.patch\n6199-fast-int-mul-all.patch\ntrac_8188.patch\ntrac_8138-one_column_index-v2.patch\ntrac_8209-mathtt.3.patch\ntrac_8199-dev-guide.patch\ntrac_7947.patch\ntrac_7793-zorder-disk.patch\ntrac_4838-vd.patch\ntrac_8082.patch\ntrac-8004-region_plot.patch\ntrac_6878_exclude.patch\n8185-numerical-noise.patch\ntrac_8180-kpsewhich.patch\n6515-solve-assume.patch\ntrac_6515-referee.patch\ntrac-7334-logcontract-5.patch\ntrac-7334-logcontract-5-bugfix.patch\ntrac_7334-logcontract-5-reviewer.patch\n```\n",
+    "body": "For the record, the \"length handling\" patch applies to 4.3.2 with\n\n```\napplying trac_8186_length_handling-sl.patch\npatching file sage/combinat/words/word.py\nHunk #2 succeeded at 1109 with fuzz 2 (offset 0 lines).\n```\nin the queue\n\n```\ntrac_8219.patch\ntrac_3683-upgrade_moinmoin.patch\ntrac_8183-French_pdf.patch\ntrac_8190-docbuild.patch\ntrac_8184-eclib.patch\ntrac_8184-indentation.patch\ntrac_8155.patch\ntrac_8124-selmer-nf.review.patch\ntrac_7575.patch\ntrac_7575-followup.patch\ntrac_8189-hg.patch\ntrac_7935.patch\ntrac_7935b.2.patch\ntrac_6296.patch\ntrac_6296-part2.patch\ntrac6942_jordan.patch\ntrac6942_jordan_tests.patch\ntrac_6942-reviewer.patch\ntrac_8128-latex_cell_unicode.patch\ntrac_7313-multiline.patch\ntrac_8203-doc.patch\ntrac_8206_developer-doc.patch\ntrac_7944-dev-guide.patch\ntrac-8211.patch\ntrac_8044-categories_finite_groups-nt.patch\ntrac_8215_empty_word-sl.patch\ntrac_8186_length_handling-sl.patch               # You are here!\ntrac_8186_minor_doc_changes-abm.patch\ntrac_8140-sturmian-sl.patch\ntrac_8140-doc_fixes-abm.patch\ntrac_8140_cf-arg-sl.patch\ntrac_8093_palindromes_prefixes-abm.patch\ntrac_8093_doc_fixes-sl.patch\ntrac_7978_crystal_cleanup-as.2.patch\ntrac_6775-disjoint_set-sl.patch\n7580_fixes_and_extensions_total.patch\ntrac_8120-uniquerep_hash-fh.patch\ntrac_8212-minimal_weight_poly_defining_GF2n.patch\n6199-fast-int-mul-all.patch\ntrac_8188.patch\ntrac_8138-one_column_index-v2.patch\ntrac_8209-mathtt.3.patch\ntrac_8199-dev-guide.patch\ntrac_7947.patch\ntrac_7793-zorder-disk.patch\ntrac_4838-vd.patch\ntrac_8082.patch\ntrac-8004-region_plot.patch\ntrac_6878_exclude.patch\n8185-numerical-noise.patch\ntrac_8180-kpsewhich.patch\n6515-solve-assume.patch\ntrac_6515-referee.patch\ntrac-7334-logcontract-5.patch\ntrac-7334-logcontract-5-bugfix.patch\ntrac_7334-logcontract-5-reviewer.patch\n```",
     "created_at": "2010-02-10T15:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
@@ -218,15 +216,12 @@ archive/issue_comments_072029.json:
 
 For the record, the "length handling" patch applies to 4.3.2 with
 
-
 ```
 applying trac_8186_length_handling-sl.patch
 patching file sage/combinat/words/word.py
 Hunk #2 succeeded at 1109 with fuzz 2 (offset 0 lines).
 ```
-
 in the queue
-
 
 ```
 trac_8219.patch
@@ -289,7 +284,6 @@ trac_7334-logcontract-5-reviewer.patch
 
 
 
-
 ---
 
 archive/issue_comments_072030.json:
@@ -313,7 +307,7 @@ Never mind. I switched the order of #8186 and #8093.
 archive/issue_comments_072031.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> Never mind. I switched the order of\u00a0#8186\u00a0and\u00a0#8093.\u00a0\n\nHere is the ordering of the current positive review patches in the sage-combinat tree, if it may help your job, I just tested them and they all apply without warning fuzz message :\n\n\n```\nsage-4.3.3.patch\ntrac_8223-fix_dir-nt.patch\ntrac_8044-categories_finite_groups-nt.patch\ntrac_8093_palindromes_prefixes-abm.patch\ntrac_8093_doc_fixes-sl.patch\ntrac_8140-sturmian-sl.patch\ntrac_8140-doc_fixes-abm.patch\ntrac_8140_cf-arg-sl.patch\ntrac_6775-disjoint_set-sl.patch\ntrac_8186_length_handling-sl.patch\ntrac_8186_minor_doc_changes-abm.patch\ntrac_8120-uniquerep_hash-fh.patch\ntrac_7978_crystal_cleanup-as.patch\ntrac_8215_empty_word-sl.patch\ntrac_8127-word_str_features-vd.patch\ntrac_8127-review-sl.patch\ntrac_8232_word_cmp_bug-sl.patch\n```\n",
+    "body": "Replying to [comment:7 mpatel]:\n> Never mind. I switched the order of\u00a0#8186\u00a0and\u00a0#8093.\u00a0\n\n\nHere is the ordering of the current positive review patches in the sage-combinat tree, if it may help your job, I just tested them and they all apply without warning fuzz message :\n\n```\nsage-4.3.3.patch\ntrac_8223-fix_dir-nt.patch\ntrac_8044-categories_finite_groups-nt.patch\ntrac_8093_palindromes_prefixes-abm.patch\ntrac_8093_doc_fixes-sl.patch\ntrac_8140-sturmian-sl.patch\ntrac_8140-doc_fixes-abm.patch\ntrac_8140_cf-arg-sl.patch\ntrac_6775-disjoint_set-sl.patch\ntrac_8186_length_handling-sl.patch\ntrac_8186_minor_doc_changes-abm.patch\ntrac_8120-uniquerep_hash-fh.patch\ntrac_7978_crystal_cleanup-as.patch\ntrac_8215_empty_word-sl.patch\ntrac_8127-word_str_features-vd.patch\ntrac_8127-review-sl.patch\ntrac_8232_word_cmp_bug-sl.patch\n```",
     "created_at": "2010-02-10T17:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
@@ -325,8 +319,8 @@ archive/issue_comments_072031.json:
 Replying to [comment:7 mpatel]:
 > Never mind. I switched the order of #8186 and #8093. 
 
-Here is the ordering of the current positive review patches in the sage-combinat tree, if it may help your job, I just tested them and they all apply without warning fuzz message :
 
+Here is the ordering of the current positive review patches in the sage-combinat tree, if it may help your job, I just tested them and they all apply without warning fuzz message :
 
 ```
 sage-4.3.3.patch
@@ -350,13 +344,12 @@ trac_8232_word_cmp_bug-sl.patch
 
 
 
-
 ---
 
 archive/issue_comments_072032.json:
 ```json
 {
-    "body": "the patch\n\n\n```\ntrac_8127-word_str_features-vd.patch\n```\n\n\ncorrespond to `trac_8127.patch` on the trac server.",
+    "body": "the patch\n\n```\ntrac_8127-word_str_features-vd.patch\n```\n\ncorrespond to `trac_8127.patch` on the trac server.",
     "created_at": "2010-02-10T17:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8186",
     "type": "issue_comment",
@@ -367,11 +360,9 @@ archive/issue_comments_072032.json:
 
 the patch
 
-
 ```
 trac_8127-word_str_features-vd.patch
 ```
-
 
 correspond to `trac_8127.patch` on the trac server.
 

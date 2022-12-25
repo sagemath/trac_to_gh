@@ -136,7 +136,7 @@ Oopsn, I mean in rare cases, -m64 might need to be replaced by $CFLAG64.
 archive/issue_comments_067523.json:
 ```json
 {
-    "body": "Should line 87 be changed from\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE value_of_environment_variable\"\n```\n\nto\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE=value_of_environment_variable\"\n```\n\n(adding an equals sign)?\n\nIn line 380:\n\n```\n# often. I think ECL might need it, to just the option, not\n```\n\nchange \"to\" to \"so\", I think.\n\nAs far as a careful review goes, I'm not enough of an expert in the Sage build process to do that.  An expert should take a good look at this.",
+    "body": "Should line 87 be changed from\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE value_of_environment_variable\"\n```\nto\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE=value_of_environment_variable\"\n```\n(adding an equals sign)?\n\nIn line 380:\n\n```\n# often. I think ECL might need it, to just the option, not\n```\nchange \"to\" to \"so\", I think.\n\nAs far as a careful review goes, I'm not enough of an expert in the Sage build process to do that.  An expert should take a good look at this.",
     "created_at": "2010-01-05T22:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -150,13 +150,11 @@ Should line 87 be changed from
 ```
 echo "NAME_OF_ENVIROMENT_VARIABLE value_of_environment_variable"
 ```
-
 to
 
 ```
 echo "NAME_OF_ENVIROMENT_VARIABLE=value_of_environment_variable"
 ```
-
 (adding an equals sign)?
 
 In line 380:
@@ -164,7 +162,6 @@ In line 380:
 ```
 # often. I think ECL might need it, to just the option, not
 ```
-
 change "to" to "so", I think.
 
 As far as a careful review goes, I'm not enough of an expert in the Sage build process to do that.  An expert should take a good look at this.
@@ -200,7 +197,7 @@ Dave
 archive/issue_comments_067525.json:
 ```json
 {
-    "body": "Replying to [comment:6 drkirkby]:\n> Thank you for the feedback. I'll make the couple o changes you suggest. I take your point about needing an expert of the build process. William and I wrote this many years ago, but its changed a lot since then. \n\nOne more question: should this also be included in sage-scripts?  That is, should the file `SAGE_ROOT/spkg/base/sage-env` be the same as `SAGE_ROOT/local/bin/sage-env`?  If so, please produce a patch for the scripts repository.\n \n> If you have some spare time, (and I know building Sage can take some time), could you try a build with the sage-env script? First unpack the sources, then exchange spkg/base/sage-env for this one before trying a build. The build should proceed as normal. You might notice an extra -Wall or -g flag here or there, but there should be no huge changes. \n\nSure, I'll start that right now.",
+    "body": "Replying to [comment:6 drkirkby]:\n> Thank you for the feedback. I'll make the couple o changes you suggest. I take your point about needing an expert of the build process. William and I wrote this many years ago, but its changed a lot since then. \n\n\nOne more question: should this also be included in sage-scripts?  That is, should the file `SAGE_ROOT/spkg/base/sage-env` be the same as `SAGE_ROOT/local/bin/sage-env`?  If so, please produce a patch for the scripts repository.\n \n> If you have some spare time, (and I know building Sage can take some time), could you try a build with the sage-env script? First unpack the sources, then exchange spkg/base/sage-env for this one before trying a build. The build should proceed as normal. You might notice an extra -Wall or -g flag here or there, but there should be no huge changes. \n\n\nSure, I'll start that right now.",
     "created_at": "2010-01-05T23:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -212,9 +209,11 @@ archive/issue_comments_067525.json:
 Replying to [comment:6 drkirkby]:
 > Thank you for the feedback. I'll make the couple o changes you suggest. I take your point about needing an expert of the build process. William and I wrote this many years ago, but its changed a lot since then. 
 
+
 One more question: should this also be included in sage-scripts?  That is, should the file `SAGE_ROOT/spkg/base/sage-env` be the same as `SAGE_ROOT/local/bin/sage-env`?  If so, please produce a patch for the scripts repository.
  
 > If you have some spare time, (and I know building Sage can take some time), could you try a build with the sage-env script? First unpack the sources, then exchange spkg/base/sage-env for this one before trying a build. The build should proceed as normal. You might notice an extra -Wall or -g flag here or there, but there should be no huge changes. 
+
 
 Sure, I'll start that right now.
 
@@ -287,7 +286,7 @@ Building with the new sage-env works just fine on sage.math, by the way.
 archive/issue_comments_067529.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> The patch applies cleanly to the scripts repository and produces the correct file (that is, SAGE_LOCAL/bin/sage-env and spkg/base/sage-env are the same).  For some reason, the one in local/bin wasn't executable, so I had to fix that manually.\n> \n> Building with the new sage-env works just fine on sage.math, by the way.\n\nIt's good to hear it builds fine. I don't envisage anything that it does should screw up the build. It will mean in some packages there will be two -m64's on the command line, but they are harmless. Then hopefully we can remove all the SAGE64 stuff from the files. \n\nI just re-checked the permissions on the file when I created the ticket and they were executable. I don't know if there was anything I should have done which I did not. \n\n```\ndrkirkby@hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env\n-rwxr-xr-x   1 drkirkby staff      20018 Jan  6 18:53 sage-env\n```\n\n\nDave",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> The patch applies cleanly to the scripts repository and produces the correct file (that is, SAGE_LOCAL/bin/sage-env and spkg/base/sage-env are the same).  For some reason, the one in local/bin wasn't executable, so I had to fix that manually.\n> \n> Building with the new sage-env works just fine on sage.math, by the way.\n\n\nIt's good to hear it builds fine. I don't envisage anything that it does should screw up the build. It will mean in some packages there will be two -m64's on the command line, but they are harmless. Then hopefully we can remove all the SAGE64 stuff from the files. \n\nI just re-checked the permissions on the file when I created the ticket and they were executable. I don't know if there was anything I should have done which I did not. \n\n```\ndrkirkby@hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env\n-rwxr-xr-x   1 drkirkby staff      20018 Jan  6 18:53 sage-env\n```\n\nDave",
     "created_at": "2010-01-06T22:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -301,6 +300,7 @@ Replying to [comment:12 jhpalmieri]:
 > 
 > Building with the new sage-env works just fine on sage.math, by the way.
 
+
 It's good to hear it builds fine. I don't envisage anything that it does should screw up the build. It will mean in some packages there will be two -m64's on the command line, but they are harmless. Then hopefully we can remove all the SAGE64 stuff from the files. 
 
 I just re-checked the permissions on the file when I created the ticket and they were executable. I don't know if there was anything I should have done which I did not. 
@@ -309,7 +309,6 @@ I just re-checked the permissions on the file when I created the ticket and they
 drkirkby@hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env
 -rwxr-xr-x   1 drkirkby staff      20018 Jan  6 18:53 sage-env
 ```
-
 
 Dave
 
@@ -320,7 +319,7 @@ Dave
 archive/issue_comments_067530.json:
 ```json
 {
-    "body": "For historical reasons I suggest you keep the 2005 date in the file!\n\nAnd maybe stupid where can I find the file testcc.sh?\n\n\n\n```\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 253: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 267: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 289: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 306: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 319: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 332: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n\n\n\n```\n\n\n\nJaap",
+    "body": "For historical reasons I suggest you keep the 2005 date in the file!\n\nAnd maybe stupid where can I find the file testcc.sh?\n\n\n```\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 253: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 267: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 289: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 306: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 319: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 332: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n\n\n\n```\n\n\nJaap",
     "created_at": "2010-01-07T14:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -332,7 +331,6 @@ archive/issue_comments_067530.json:
 For historical reasons I suggest you keep the 2005 date in the file!
 
 And maybe stupid where can I find the file testcc.sh?
-
 
 
 ```
@@ -353,7 +351,6 @@ Building Sage on Solaris in 64-bit mode
 ```
 
 
-
 Jaap
 
 
@@ -363,7 +360,7 @@ Jaap
 archive/issue_comments_067531.json:
 ```json
 {
-    "body": "Ok, found the testcc.sh and testcxx.sh\n\nThis new sage-env does a great job. On my Open Solaris in VirtualBox I could add \nto the spkg/installed after a make -k\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3$ ls -lt spkg/installed/\ntotal 61\n-rw-r--r-- 1 jaap staff 219 2010-01-07 15:59 pil-1.1.6.p2\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:58 flintqs-20070817.p4\n-rw-r--r-- 1 jaap staff 218 2010-01-07 15:57 cddlib-094f\n-rw-r--r-- 1 jaap staff 229 2010-01-07 15:56 genus2reduction-0.3.p5\n-rw-r--r-- 1 jaap staff 222 2010-01-07 15:55 boehm_gc-7.1.p2\n-rw-r--r-- 1 jaap staff 227 2010-01-07 15:55 pyprocessing-0.52.p0\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:54 ratpoints-2.1.2.p3\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 libm4ri-20091120.p0\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 rubiks-20070912.p10\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:53 libfplll-3.0.12.p0\n-rw-r--r-- 1 jaap staff 221 2010-01-07 15:51 zodb3-3.7.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-07 15:50 pycrypto-2.0.1.p4\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:50 mpfr-2.4.1.p0\n-rw-r--r-- 1 jaap staff 223 2010-01-07 15:49 givaro-3.2.13rc2\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:48 iml-1.0.1.p11\n-rw-r--r-- 1 jaap staff   0 2010-01-07 15:46 eclib-20080310.p7\n-rw-r--r-- 1 jaap staff 223 2010-01-04 17:38 twisted-8.2.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-03 21:51 eclib-20080310.p8\n\n```\n\n\nI would give it a positive review, but will wait for the other testers.\n\nJaap",
+    "body": "Ok, found the testcc.sh and testcxx.sh\n\nThis new sage-env does a great job. On my Open Solaris in VirtualBox I could add \nto the spkg/installed after a make -k\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3$ ls -lt spkg/installed/\ntotal 61\n-rw-r--r-- 1 jaap staff 219 2010-01-07 15:59 pil-1.1.6.p2\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:58 flintqs-20070817.p4\n-rw-r--r-- 1 jaap staff 218 2010-01-07 15:57 cddlib-094f\n-rw-r--r-- 1 jaap staff 229 2010-01-07 15:56 genus2reduction-0.3.p5\n-rw-r--r-- 1 jaap staff 222 2010-01-07 15:55 boehm_gc-7.1.p2\n-rw-r--r-- 1 jaap staff 227 2010-01-07 15:55 pyprocessing-0.52.p0\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:54 ratpoints-2.1.2.p3\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 libm4ri-20091120.p0\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 rubiks-20070912.p10\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:53 libfplll-3.0.12.p0\n-rw-r--r-- 1 jaap staff 221 2010-01-07 15:51 zodb3-3.7.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-07 15:50 pycrypto-2.0.1.p4\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:50 mpfr-2.4.1.p0\n-rw-r--r-- 1 jaap staff 223 2010-01-07 15:49 givaro-3.2.13rc2\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:48 iml-1.0.1.p11\n-rw-r--r-- 1 jaap staff   0 2010-01-07 15:46 eclib-20080310.p7\n-rw-r--r-- 1 jaap staff 223 2010-01-04 17:38 twisted-8.2.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-03 21:51 eclib-20080310.p8\n\n```\n\nI would give it a positive review, but will wait for the other testers.\n\nJaap",
     "created_at": "2010-01-07T15:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -376,7 +373,6 @@ Ok, found the testcc.sh and testcxx.sh
 
 This new sage-env does a great job. On my Open Solaris in VirtualBox I could add 
 to the spkg/installed after a make -k
-
 
 
 ```
@@ -402,7 +398,6 @@ total 61
 -rw-r--r-- 1 jaap staff 224 2010-01-03 21:51 eclib-20080310.p8
 
 ```
-
 
 I would give it a positive review, but will wait for the other testers.
 
@@ -471,7 +466,7 @@ Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by
 archive/issue_comments_067535.json:
 ```json
 {
-    "body": "Replying to [comment:18 jhpalmieri]:\n> Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by the gap spkg, so I can't figure out why that package installs correctly with this version of sage-env.\nI'm not sure if Or $RM, $LN or $MKDIR are defined elsewhere, or if the bits in gap don't work, but it is not apparent they are not working. But there does seem to be no point in having variables for such basic commands, as agreed here. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\nI left 'cp', as potentially the GNU version of CP has some extra options over some other implementations of CP which might make it useful in some cases, though I'd much prefer any GNUisms were avoided. But there really is no point in having variable for 'ln' or 'mkdir' \n\nThey are all part of POSIX, the 2008 edition of which can be found here\n\nhttp://www.opengroup.org/onlinepubs/9699919799/\n\nI'm not a great fan of GNU standards and I don't agree with some of it here, but even they agree one can rely on rm, ln and mkdir. \n\nhttp://www.gnu.org/prep/standards/standards.html#Utilities-in-Makefiles\n\nI've created a ticket for their removal from 'gap' - see #7873 . I'll fix that very shortly. \n\nDave",
+    "body": "Replying to [comment:18 jhpalmieri]:\n> Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by the gap spkg, so I can't figure out why that package installs correctly with this version of sage-env.\n\nI'm not sure if Or $RM, $LN or $MKDIR are defined elsewhere, or if the bits in gap don't work, but it is not apparent they are not working. But there does seem to be no point in having variables for such basic commands, as agreed here. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\nI left 'cp', as potentially the GNU version of CP has some extra options over some other implementations of CP which might make it useful in some cases, though I'd much prefer any GNUisms were avoided. But there really is no point in having variable for 'ln' or 'mkdir' \n\nThey are all part of POSIX, the 2008 edition of which can be found here\n\nhttp://www.opengroup.org/onlinepubs/9699919799/\n\nI'm not a great fan of GNU standards and I don't agree with some of it here, but even they agree one can rely on rm, ln and mkdir. \n\nhttp://www.gnu.org/prep/standards/standards.html#Utilities-in-Makefiles\n\nI've created a ticket for their removal from 'gap' - see #7873 . I'll fix that very shortly. \n\nDave",
     "created_at": "2010-01-08T18:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -482,6 +477,7 @@ archive/issue_comments_067535.json:
 
 Replying to [comment:18 jhpalmieri]:
 > Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by the gap spkg, so I can't figure out why that package installs correctly with this version of sage-env.
+
 I'm not sure if Or $RM, $LN or $MKDIR are defined elsewhere, or if the bits in gap don't work, but it is not apparent they are not working. But there does seem to be no point in having variables for such basic commands, as agreed here. 
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot
@@ -545,7 +541,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_067538.json:
 ```json
 {
-    "body": "I'm sticking this to needs work, why I put back definitions such as \n\n\n```\nif [ \"$LN\" = \"\" ]; then\n    LN=\"ln\"  && export LN\nfi\n \nif [ \"$MKDIR\" = \"\" ]; then\n    MKDIR=\"mkdir\"  && export MKDIR\nfi\n```\n\n\njust in case they unsetting these causes any problems in any package. I believe all packages are covered by patches, but if one is not, then this could cause problems. \n\nDave",
+    "body": "I'm sticking this to needs work, why I put back definitions such as \n\n```\nif [ \"$LN\" = \"\" ]; then\n    LN=\"ln\"  && export LN\nfi\n \nif [ \"$MKDIR\" = \"\" ]; then\n    MKDIR=\"mkdir\"  && export MKDIR\nfi\n```\n\njust in case they unsetting these causes any problems in any package. I believe all packages are covered by patches, but if one is not, then this could cause problems. \n\nDave",
     "created_at": "2010-01-12T19:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -556,7 +552,6 @@ archive/issue_comments_067538.json:
 
 I'm sticking this to needs work, why I put back definitions such as 
 
-
 ```
 if [ "$LN" = "" ]; then
     LN="ln"  && export LN
@@ -566,7 +561,6 @@ if [ "$MKDIR" = "" ]; then
     MKDIR="mkdir"  && export MKDIR
 fi
 ```
-
 
 just in case they unsetting these causes any problems in any package. I believe all packages are covered by patches, but if one is not, then this could cause problems. 
 
@@ -635,7 +629,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_067542.json:
 ```json
 {
-    "body": "This changes make sense.\n\n\n\n```\n[jaap@vrede sage-4.3.1.alpha1]$ diff local/bin/sage-env ../sage-env\n452a453,456\n> if [ \"$MV\" = \"\" ]; then\n>     MV=\"mv\"  && export MV\n> fi\n> \n456a461,464\n> if [ \"$RM\" = \"\" ]; then\n>     RM=\"rm\"  && export RM\n> fi\n>  \n460a469,484\n> if [ \"$LN\" = \"\" ]; then\n>     LN=\"ln\"  && export LN\n> fi\n>  \n> if [ \"$MKDIR\" = \"\" ]; then\n>     MKDIR=\"mkdir\"  && export MKDIR\n> fi\n>  \n> if [ \"$CHMOD\" = \"\" ]; then\n>     CHMOD=\"chmod\"  && export CHMOD\n> fi\n>  \n> if [ \"$TOUCH\" = \"\" ]; then\n>     TOUCH=\"touch\"  && export TOUCH\n> fi\n> \n[jaap@vrede sage-4.3.1.alpha1]$ \n\n```\n\n\nThis will not break any code. I'll test this with reinstalling the affected spkgs mercurial, singular, ntl, gap and pari. \n\nOk so far. Positive review.",
+    "body": "This changes make sense.\n\n\n```\n[jaap@vrede sage-4.3.1.alpha1]$ diff local/bin/sage-env ../sage-env\n452a453,456\n> if [ \"$MV\" = \"\" ]; then\n>     MV=\"mv\"  && export MV\n> fi\n> \n456a461,464\n> if [ \"$RM\" = \"\" ]; then\n>     RM=\"rm\"  && export RM\n> fi\n>  \n460a469,484\n> if [ \"$LN\" = \"\" ]; then\n>     LN=\"ln\"  && export LN\n> fi\n>  \n> if [ \"$MKDIR\" = \"\" ]; then\n>     MKDIR=\"mkdir\"  && export MKDIR\n> fi\n>  \n> if [ \"$CHMOD\" = \"\" ]; then\n>     CHMOD=\"chmod\"  && export CHMOD\n> fi\n>  \n> if [ \"$TOUCH\" = \"\" ]; then\n>     TOUCH=\"touch\"  && export TOUCH\n> fi\n> \n[jaap@vrede sage-4.3.1.alpha1]$ \n\n```\n\nThis will not break any code. I'll test this with reinstalling the affected spkgs mercurial, singular, ntl, gap and pari. \n\nOk so far. Positive review.",
     "created_at": "2010-01-13T11:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -645,7 +639,6 @@ archive/issue_comments_067542.json:
 ```
 
 This changes make sense.
-
 
 
 ```
@@ -680,7 +673,6 @@ This changes make sense.
 [jaap@vrede sage-4.3.1.alpha1]$ 
 
 ```
-
 
 This will not break any code. I'll test this with reinstalling the affected spkgs mercurial, singular, ntl, gap and pari. 
 
@@ -855,7 +847,7 @@ Jaap
 archive/issue_comments_067550.json:
 ```json
 {
-    "body": "Setting RM=\"rm\" breaks newer libtools, namely the ones in Fedora 12 (libtool 2.2.6, autoconf 2.63, automake 1.11.1). They assume that $RM is either unset or RM=\"rm -f\".\n\nOne of the symptoms of this breakage is that configure ends with\n\n```\nrm: cannot remove `libtoolT': No such file or directory\n```\n\nCompile will break later on...",
+    "body": "Setting RM=\"rm\" breaks newer libtools, namely the ones in Fedora 12 (libtool 2.2.6, autoconf 2.63, automake 1.11.1). They assume that $RM is either unset or RM=\"rm -f\".\n\nOne of the symptoms of this breakage is that configure ends with\n\n```\nrm: cannot remove `libtoolT': No such file or directory\n```\nCompile will break later on...",
     "created_at": "2010-01-25T21:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -871,7 +863,6 @@ One of the symptoms of this breakage is that configure ends with
 ```
 rm: cannot remove `libtoolT': No such file or directory
 ```
-
 Compile will break later on...
 
 
@@ -919,7 +910,7 @@ Also, is there any other issue except the `-fno-strict-aliasing `? We could fix 
 archive/issue_comments_067553.json:
 ```json
 {
-    "body": "Replying to [comment:29 drkirkby]:\n> I think this can be closed as \"wontfix\" as the issues resolved in this ticket are very complex and I think for the foreseeable future, this will not be resolved. \n\nIt is also a typical \"fix everything\" ticket, which is almost impossible to get merged.",
+    "body": "Replying to [comment:29 drkirkby]:\n> I think this can be closed as \"wontfix\" as the issues resolved in this ticket are very complex and I think for the foreseeable future, this will not be resolved. \n\n\nIt is also a typical \"fix everything\" ticket, which is almost impossible to get merged.",
     "created_at": "2013-02-05T19:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
@@ -930,6 +921,7 @@ archive/issue_comments_067553.json:
 
 Replying to [comment:29 drkirkby]:
 > I think this can be closed as "wontfix" as the issues resolved in this ticket are very complex and I think for the foreseeable future, this will not be resolved. 
+
 
 It is also a typical "fix everything" ticket, which is almost impossible to get merged.
 

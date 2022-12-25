@@ -3,7 +3,7 @@
 archive/issues_008269.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nTrying to build the maxima-5.20.1.spkg fails on Cygwin.  The error is\n\n\n```\n;;; Loading \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\"\n;  - Providing system maxima\nAn error occurred during initialization:\nC::BUILDER does not accept a file \"binary-ecl/init-cl.fas\" of kind :FASL.\n```\n\n\nSee this possibly very relevant thread for a discussion about this: http://groups.google.com/group/sage-devel/browse_thread/thread/cecd40138ed552b9\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8269\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nTrying to build the maxima-5.20.1.spkg fails on Cygwin.  The error is\n\n```\n;;; Loading \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\"\n;  - Providing system maxima\nAn error occurred during initialization:\nC::BUILDER does not accept a file \"binary-ecl/init-cl.fas\" of kind :FASL.\n```\n\nSee this possibly very relevant thread for a discussion about this: http://groups.google.com/group/sage-devel/browse_thread/thread/cecd40138ed552b9\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8269\n\n",
     "created_at": "2010-02-15T06:56:48Z",
     "labels": [
         "component: porting: cygwin",
@@ -22,14 +22,12 @@ CC:  @jdemeyer
 
 Trying to build the maxima-5.20.1.spkg fails on Cygwin.  The error is
 
-
 ```
 ;;; Loading "/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas"
 ;  - Providing system maxima
 An error occurred during initialization:
 C::BUILDER does not accept a file "binary-ecl/init-cl.fas" of kind :FASL.
 ```
-
 
 See this possibly very relevant thread for a discussion about this: http://groups.google.com/group/sage-devel/browse_thread/thread/cecd40138ed552b9
 
@@ -46,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8269
 archive/issue_comments_073075.json:
 ```json
 {
-    "body": "Even after upgrading to the latested released ECL (10.2.1), \n\n      http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg\n\nwe still have:\n\n```\n;;;   gcc -o \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\" -L\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\" \"/cygdrive/c/WINDOWS/TEMP/ECLINITzVlCF0.o\" \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.o\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm\n;      - Loading binary file \"binary-ecl/init-cl.fas\"\n;;; Loading \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\"\n;  - Providing system maxima\nAn error occurred during initialization:\nC::BUILDER does not accept a file \"binary-ecl/init-cl.fas\" of kind :FASL.\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src'\nmake: *** [all-recursive] Error 1\n```\n",
+    "body": "Even after upgrading to the latested released ECL (10.2.1), \n\n      http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg\n\nwe still have:\n\n```\n;;;   gcc -o \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\" -L\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\" \"/cygdrive/c/WINDOWS/TEMP/ECLINITzVlCF0.o\" \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.o\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm\n;      - Loading binary file \"binary-ecl/init-cl.fas\"\n;;; Loading \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src/binary-ecl/init-cl.fas\"\n;  - Providing system maxima\nAn error occurred during initialization:\nC::BUILDER does not accept a file \"binary-ecl/init-cl.fas\" of kind :FASL.\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1/src/src'\nmake: *** [all-recursive] Error 1\n```",
     "created_at": "2010-02-15T18:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",
     "type": "issue_comment",
@@ -75,13 +73,12 @@ make: *** [all-recursive] Error 1
 
 
 
-
 ---
 
 archive/issue_comments_073076.json:
 ```json
 {
-    "body": "Juan-Jose had the following suggestion:\n\n```\nIt is no wonder Maxima does not build in Cygwin. Someone had introduced, who knows why, different build commands for that platform in maxima.system. The offending function looks as follows (maxima/src/maxima.system)\n\n#+ecl\n(defun build-maxima-lib ()\n  (labels ((list-all-objects (module)\n             (if (eql (mk::component-type module) :file)\n         (list (mk::component-full-pathname module :binary))\n         (apply #'append (mapcar #'list-all-objects (mk::component-components module))))))\n    (let* ((files (list-all-objects (mk:find-system 'maxima))))\n      #+msvc\n      (progn\n         (c::build-static-library \"binary-ecl/maxima-lib\" :lisp-files (print files))\n         (let ((c::*ld-format* (concatenate 'string c::*ld-format* \" /LIBPATH:binary-ecl\")))\n           (c::build-fasl \"binary-ecl/maxima\" :lisp-files '(maxima-lib))))\n      #+cygwin\n      (c::build-fasl \"binary-ecl/maxima\" :lisp-files files)\n      #-(or cygwin msvc)\n      (let ((obj (mapcar #'(lambda (p)\n                 ;; Convert dir/foo.fas to dir/foo.o\n                 (make-pathname :type \"o\" :defaults p))\n             files)))\n   [.... ]\n\nIt is immediately obvious that the code for cygwin is too short to do anything useful. A possible fix is to remove the line #+cygwin and the following line and change #-(or cygwin msvc) to #-msvc However I can not guarantee that there are no other problems left.\n\nPlease note that this is not directly related to ECL.\n\nJuanjo\n```\n\n\nI tried this with the following new spkg:\n\n   http://wstein.org/home/wstein/ports/cygwin/maxima-5.20.1.p1.spkg\nand it now fails as follows:\n\n```\n;;; Note: Invoking external command:\n;;;   gcc \"-I/home/wstein/build/sage-4.3.3.alpha0/local/include/\"  -I/home/wstein/build/sage-4.3.3.alpha0/local/include  -O2  -g  -Wall    -Dcygwin -O -w -c \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.c\" -o \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\"\ngcc: /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o: No such file or directory\nAn error occurred during initialization:\n(SYSTEM \"gcc -o \\\"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.fas\\\" -L\\\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\\\" \\\"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\\\" \\\"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.o\\\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm \") returned non-zero value 1.\n;;; Note: Invoking external command:\n;;;   gcc -o \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.fas\" -L\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\" \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\" \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.o\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm make[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src'\nmake: *** [all-recursive] Error 1\n```\n\n\nThe failure happens during the \"make\" step.",
+    "body": "Juan-Jose had the following suggestion:\n\n```\nIt is no wonder Maxima does not build in Cygwin. Someone had introduced, who knows why, different build commands for that platform in maxima.system. The offending function looks as follows (maxima/src/maxima.system)\n\n#+ecl\n(defun build-maxima-lib ()\n  (labels ((list-all-objects (module)\n             (if (eql (mk::component-type module) :file)\n         (list (mk::component-full-pathname module :binary))\n         (apply #'append (mapcar #'list-all-objects (mk::component-components module))))))\n    (let* ((files (list-all-objects (mk:find-system 'maxima))))\n      #+msvc\n      (progn\n         (c::build-static-library \"binary-ecl/maxima-lib\" :lisp-files (print files))\n         (let ((c::*ld-format* (concatenate 'string c::*ld-format* \" /LIBPATH:binary-ecl\")))\n           (c::build-fasl \"binary-ecl/maxima\" :lisp-files '(maxima-lib))))\n      #+cygwin\n      (c::build-fasl \"binary-ecl/maxima\" :lisp-files files)\n      #-(or cygwin msvc)\n      (let ((obj (mapcar #'(lambda (p)\n                 ;; Convert dir/foo.fas to dir/foo.o\n                 (make-pathname :type \"o\" :defaults p))\n             files)))\n   [.... ]\n\nIt is immediately obvious that the code for cygwin is too short to do anything useful. A possible fix is to remove the line #+cygwin and the following line and change #-(or cygwin msvc) to #-msvc However I can not guarantee that there are no other problems left.\n\nPlease note that this is not directly related to ECL.\n\nJuanjo\n```\n\nI tried this with the following new spkg:\n\n   http://wstein.org/home/wstein/ports/cygwin/maxima-5.20.1.p1.spkg\nand it now fails as follows:\n\n```\n;;; Note: Invoking external command:\n;;;   gcc \"-I/home/wstein/build/sage-4.3.3.alpha0/local/include/\"  -I/home/wstein/build/sage-4.3.3.alpha0/local/include  -O2  -g  -Wall    -Dcygwin -O -w -c \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.c\" -o \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\"\ngcc: /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o: No such file or directory\nAn error occurred during initialization:\n(SYSTEM \"gcc -o \\\"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.fas\\\" -L\\\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\\\" \\\"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\\\" \\\"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.o\\\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm \") returned non-zero value 1.\n;;; Note: Invoking external command:\n;;;   gcc -o \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.fas\" -L\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/\" \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\" \"/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src/binary-ecl/numerical/slatec/dbesj0.o\"   -shared  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib  -lecl  -lgmp -lgc   -lm make[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxima-5.20.1.p1/src/src'\nmake: *** [all-recursive] Error 1\n```\n\nThe failure happens during the \"make\" step.",
     "created_at": "2010-02-20T23:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",
     "type": "issue_comment",
@@ -123,7 +120,6 @@ Please note that this is not directly related to ECL.
 Juanjo
 ```
 
-
 I tried this with the following new spkg:
 
    http://wstein.org/home/wstein/ports/cygwin/maxima-5.20.1.p1.spkg
@@ -141,7 +137,6 @@ make[1]: Leaving directory `/home/wstein/build/sage-4.3.3.alpha0/spkg/build/maxi
 make: *** [all-recursive] Error 1
 ```
 
-
 The failure happens during the "make" step.
 
 
@@ -151,7 +146,7 @@ The failure happens during the "make" step.
 archive/issue_comments_073077.json:
 ```json
 {
-    "body": "continuing...\n\n```\n\nI tried typing the above gcc line in directly and it seems to work fine:\n\nsage subshell$  gcc \"-I/home/wstein/build/sage-4.3.3.alpha0/local/include/\"  -I/home/wstein/build/sage-4.3.3.alpha0/local/include  -O2  -g  -Wall    -Dcygwin -O -w -c \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.c\" -o \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\"\n/home/wstein/build/sage-4.3.3.alpha0\nsage subshell$ ls -lh /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\n-rw-r--r--+ 1 wstein None 15K 2010-02-20 15:29 /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\n/home/wstein/build/sage-4.3.3.alpha0\n\nThen I typed \"make\" again, and *amazingly*, Maxima builds.  That was a surprise. \n\nsage subshell$ binary-ecl/maxima.exe\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/DEFSYSTEM.fas\"\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(sin(x^2),x)\n;\n                                             (sqrt(2) %i + sqrt(2)) x\n(%o1) (sqrt(%pi) ((sqrt(2) %i + sqrt(2)) erf(------------------------)\n                                                        2\n                                                  (sqrt(2) %i - sqrt(2)) x\n                     + (sqrt(2) %i - sqrt(2)) erf(------------------------)))/8\n                                                             2\n\n\n----------\n\nSo any ideas about this?  I'm just curious if this happens for other people too.\n```\n",
+    "body": "continuing...\n\n```\n\nI tried typing the above gcc line in directly and it seems to work fine:\n\nsage subshell$  gcc \"-I/home/wstein/build/sage-4.3.3.alpha0/local/include/\"  -I/home/wstein/build/sage-4.3.3.alpha0/local/include  -O2  -g  -Wall    -Dcygwin -O -w -c \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.c\" -o \"/cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\"\n/home/wstein/build/sage-4.3.3.alpha0\nsage subshell$ ls -lh /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\n-rw-r--r--+ 1 wstein None 15K 2010-02-20 15:29 /cygdrive/c/WINDOWS/TEMP/ECLINIT5NW89S.o\n/home/wstein/build/sage-4.3.3.alpha0\n\nThen I typed \"make\" again, and *amazingly*, Maxima builds.  That was a surprise. \n\nsage subshell$ binary-ecl/maxima.exe\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/DEFSYSTEM.fas\"\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/wstein/build/sage-4.3.3.alpha0/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(sin(x^2),x)\n;\n                                             (sqrt(2) %i + sqrt(2)) x\n(%o1) (sqrt(%pi) ((sqrt(2) %i + sqrt(2)) erf(------------------------)\n                                                        2\n                                                  (sqrt(2) %i - sqrt(2)) x\n                     + (sqrt(2) %i - sqrt(2)) erf(------------------------)))/8\n                                                             2\n\n\n----------\n\nSo any ideas about this?  I'm just curious if this happens for other people too.\n```",
     "created_at": "2010-02-20T23:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",
     "type": "issue_comment",
@@ -200,13 +195,12 @@ So any ideas about this?  I'm just curious if this happens for other people too.
 
 
 
-
 ---
 
 archive/issue_comments_073078.json:
 ```json
 {
-    "body": "I was able to get Maxima to build in Cygwin with ECL 10.3.1 and the spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/maxima-5.20.1.p0.spkg . Everything builds correctly except building maxima as a library at the end:\n\n\n```\ncd src\necho \"building Maxima as an ecl library\"\necl -eval \"(require 'asdf)\" -eval '(load \"maxima-build.lisp\")' -eval  '(asdf:make-build :maxima :type :fasl)' -eval \"(quit)\"\nECLLIB=`ecl -eval \"(princ (SI:GET-LIBRARY-PATHNAME))\" -eval \"(quit)\"`\necho\necho \"installing Maxima library as $ECLLIB/maxima.fas\"\ncp maxima.fasb $ECLLIB/maxima.fas\ncd ..\n```\n\n\nAll of the building commands run correctly, but there is no \"maxima.fasb\" file produced.",
+    "body": "I was able to get Maxima to build in Cygwin with ECL 10.3.1 and the spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/maxima-5.20.1.p0.spkg . Everything builds correctly except building maxima as a library at the end:\n\n```\ncd src\necho \"building Maxima as an ecl library\"\necl -eval \"(require 'asdf)\" -eval '(load \"maxima-build.lisp\")' -eval  '(asdf:make-build :maxima :type :fasl)' -eval \"(quit)\"\nECLLIB=`ecl -eval \"(princ (SI:GET-LIBRARY-PATHNAME))\" -eval \"(quit)\"`\necho\necho \"installing Maxima library as $ECLLIB/maxima.fas\"\ncp maxima.fasb $ECLLIB/maxima.fas\ncd ..\n```\n\nAll of the building commands run correctly, but there is no \"maxima.fasb\" file produced.",
     "created_at": "2010-03-13T07:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8269",
     "type": "issue_comment",
@@ -216,7 +210,6 @@ archive/issue_comments_073078.json:
 ```
 
 I was able to get Maxima to build in Cygwin with ECL 10.3.1 and the spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/maxima-5.20.1.p0.spkg . Everything builds correctly except building maxima as a library at the end:
-
 
 ```
 cd src
@@ -228,7 +221,6 @@ echo "installing Maxima library as $ECLLIB/maxima.fas"
 cp maxima.fasb $ECLLIB/maxima.fas
 cd ..
 ```
-
 
 All of the building commands run correctly, but there is no "maxima.fasb" file produced.
 

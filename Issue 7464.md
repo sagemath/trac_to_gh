@@ -3,7 +3,7 @@
 archive/issues_007464.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @williamstein drkirkby\n\nKeywords: optional GNUism\n\nThe use of a non-POSIX option '-v' to the 'cp' command prevents this package installing on Solaris. The option, which can also be written as --verbose, is only to show what is actually being copied, so removing it should have no impact. \nTherefore\n\n```\ncp -rv cremona $SAGE_DATA/\n```\n\nwas changed to \n\n```\ncp -r cremona $SAGE_DATA/\n```\n\nin spkg-install. \n\nI also renamed 'SAGE.txt' to SPKG.txt, and added a slightly better description, and upstream contact information, to make it more consistent with other packages. \n\nThis is an optional Sage package. \n\nIt is unusual in that the .spkg file, was a tar file, and not a compressed tar file as they usually are. \n\nThe updated files can be found at: \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/database_cremona_ellcurve/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7464\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein drkirkby\n\nKeywords: optional GNUism\n\nThe use of a non-POSIX option '-v' to the 'cp' command prevents this package installing on Solaris. The option, which can also be written as --verbose, is only to show what is actually being copied, so removing it should have no impact. \nTherefore\n\n```\ncp -rv cremona $SAGE_DATA/\n```\nwas changed to \n\n```\ncp -r cremona $SAGE_DATA/\n```\nin spkg-install. \n\nI also renamed 'SAGE.txt' to SPKG.txt, and added a slightly better description, and upstream contact information, to make it more consistent with other packages. \n\nThis is an optional Sage package. \n\nIt is unusual in that the .spkg file, was a tar file, and not a compressed tar file as they usually are. \n\nThe updated files can be found at: \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/database_cremona_ellcurve/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7464\n\n",
     "created_at": "2009-11-14T20:33:48Z",
     "labels": [
         "component: porting: solaris",
@@ -28,13 +28,11 @@ Therefore
 ```
 cp -rv cremona $SAGE_DATA/
 ```
-
 was changed to 
 
 ```
 cp -r cremona $SAGE_DATA/
 ```
-
 in spkg-install. 
 
 I also renamed 'SAGE.txt' to SPKG.txt, and added a slightly better description, and upstream contact information, to make it more consistent with other packages. 
@@ -78,7 +76,7 @@ Changing status from new to needs_review.
 archive/issue_comments_062751.json:
 ```json
 {
-    "body": "> It is unusual in that the .spkg file, was a tar file, and \n> not a compressed tar file as they usually are. \n\nThis is the case for all databases of compressed files.  One makes a non-compressed spkg by doing\n\n```\n   sage -pkg_nc directory_name\n```\n",
+    "body": "> It is unusual in that the .spkg file, was a tar file, and \n> not a compressed tar file as they usually are. \n\n\nThis is the case for all databases of compressed files.  One makes a non-compressed spkg by doing\n\n```\n   sage -pkg_nc directory_name\n```",
     "created_at": "2009-11-17T06:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
@@ -90,12 +88,12 @@ archive/issue_comments_062751.json:
 > It is unusual in that the .spkg file, was a tar file, and 
 > not a compressed tar file as they usually are. 
 
+
 This is the case for all databases of compressed files.  One makes a non-compressed spkg by doing
 
 ```
    sage -pkg_nc directory_name
 ```
-
 
 
 
@@ -158,7 +156,7 @@ This looks fine to me. I read the changed files and also successfully installed 
 archive/issue_comments_062755.json:
 ```json
 {
-    "body": ">  I do not even know the format of the main data file \"cremona\" in there! \n> So in practice William is the maintainer. I will ask him to give me instructions.... \n\nIt's just a Python pickle.\n\nWilliam",
+    "body": ">  I do not even know the format of the main data file \"cremona\" in there! \n\n> So in practice William is the maintainer. I will ask him to give me instructions.... \n\nIt's just a Python pickle.\n\nWilliam",
     "created_at": "2009-11-22T21:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
@@ -168,6 +166,7 @@ archive/issue_comments_062755.json:
 ```
 
 >  I do not even know the format of the main data file "cremona" in there! 
+
 > So in practice William is the maintainer. I will ask him to give me instructions.... 
 
 It's just a Python pickle.

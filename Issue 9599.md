@@ -130,7 +130,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092731.json:
 ```json
 {
-    "body": "The patch applies fine to 4.6.1.rc1 and doctests pass on t2, except:\n\n\n```\nsage -t  -long -force_lib devel/sage/sage/tests/cmdline.py # 19 doctests failed, timeouts\nsage -t  -long -force_lib devel/sage/sage/parallel/decorate.py # 1 doctests failed, OSError: [Errno 12] Not enough space\nsage -t  -long -force_lib devel/sage/sage/misc/trace.py # 2 doctests failed, \n```\n\n\nThese don't seem related to this patch.\n\nThe patch did have a positive review before and the only issue was a SIGSEGV on startup on t2. I'll thus set this patch to a positive review.",
+    "body": "The patch applies fine to 4.6.1.rc1 and doctests pass on t2, except:\n\n```\nsage -t  -long -force_lib devel/sage/sage/tests/cmdline.py # 19 doctests failed, timeouts\nsage -t  -long -force_lib devel/sage/sage/parallel/decorate.py # 1 doctests failed, OSError: [Errno 12] Not enough space\nsage -t  -long -force_lib devel/sage/sage/misc/trace.py # 2 doctests failed, \n```\n\nThese don't seem related to this patch.\n\nThe patch did have a positive review before and the only issue was a SIGSEGV on startup on t2. I'll thus set this patch to a positive review.",
     "created_at": "2011-01-13T09:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
@@ -141,13 +141,11 @@ archive/issue_comments_092731.json:
 
 The patch applies fine to 4.6.1.rc1 and doctests pass on t2, except:
 
-
 ```
 sage -t  -long -force_lib devel/sage/sage/tests/cmdline.py # 19 doctests failed, timeouts
 sage -t  -long -force_lib devel/sage/sage/parallel/decorate.py # 1 doctests failed, OSError: [Errno 12] Not enough space
 sage -t  -long -force_lib devel/sage/sage/misc/trace.py # 2 doctests failed, 
 ```
-
 
 These don't seem related to this patch.
 

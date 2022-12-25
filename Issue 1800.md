@@ -3,7 +3,7 @@
 archive/issues_001800.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\n\n```\nsage: a = factorial(100)/exp(2)\nsage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n7.9228162514264337593543950336000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e28\nsage: bits = 428; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1800\n\n",
+    "body": "Assignee: jkantor\n\n```\nsage: a = factorial(100)/exp(2)\nsage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n7.9228162514264337593543950336000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e28\nsage: bits = 428; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()\n0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1800\n\n",
     "created_at": "2008-01-17T06:08:25Z",
     "labels": [
         "component: numerical",
@@ -19,7 +19,6 @@ archive/issues_001800.json:
 ```
 Assignee: jkantor
 
-
 ```
 sage: a = factorial(100)/exp(2)
 sage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()
@@ -27,7 +26,6 @@ sage: bits = 427; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a
 sage: bits = 428; RealIntervalField(bits)(a).upper() - RealIntervalField(bits)(a).lower()
 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1800
 

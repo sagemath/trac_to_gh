@@ -3,7 +3,7 @@
 archive/issues_002325.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: p-adic extension crash segfault ntl\n\n\n```\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2325\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: p-adic extension crash segfault ntl\n\n```\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nfatal error:\n   internal error: can't grow this _ntl_gbigint\nexit...\n/Users/ncalexan/sage-2.10.2.alpha0/local/bin/sage-sage: line 220: 21707 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2325\n\n",
     "created_at": "2008-02-26T23:05:17Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  @ncalexan
 
 Keywords: p-adic extension crash segfault ntl
 
-
 ```
 sage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]
 sage: L = Qp(19).extension(F, names='a')
@@ -33,7 +32,6 @@ exit...
 
 Process SAGE exited abnormally with code 134
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2325
 
@@ -141,7 +139,7 @@ Still crashes for me, 2.10.4.alpha0 (I think).
 archive/issue_comments_015436.json:
 ```json
 {
-    "body": "This now works. I assume it was fixed by #2843:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha3, Release Date: 2008-04-09                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nsage: L\nUnramified Extension of 19-adic Field with capped relative precision 20 in a defined \nby (1 + O(19^20))*x^2 + (5 + 2*19 + 10*19^2 + 14*19^3 + 7*19^4 + 13*19^5 + 5*19^6 + \n12*19^7 + 8*19^8 + 4*19^9 + 14*19^10 + 6*19^11 + 5*19^12 + 13*19^13 + 16*19^14 + \n4*19^15 + 17*19^16 + 8*19^18 + 4*19^19 + O(19^20))*x + (1 + O(19^20))\nsage:\n```\n\n\nCan anybody confirm?\n\nCheers,\n\nMichael",
+    "body": "This now works. I assume it was fixed by #2843:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha3, Release Date: 2008-04-09                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F = list(Qp(19)['x'](cyclotomic_polynomial(5)).factor())[0][0]\nsage: L = Qp(19).extension(F, names='a')\nsage: L\nUnramified Extension of 19-adic Field with capped relative precision 20 in a defined \nby (1 + O(19^20))*x^2 + (5 + 2*19 + 10*19^2 + 14*19^3 + 7*19^4 + 13*19^5 + 5*19^6 + \n12*19^7 + 8*19^8 + 4*19^9 + 14*19^10 + 6*19^11 + 5*19^12 + 13*19^13 + 16*19^14 + \n4*19^15 + 17*19^16 + 8*19^18 + 4*19^19 + O(19^20))*x + (1 + O(19^20))\nsage:\n```\n\nCan anybody confirm?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-11T20:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2325",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ by (1 + O(19^20))*x^2 + (5 + 2*19 + 10*19^2 + 14*19^3 + 7*19^4 + 13*19^5 + 5*19^
 4*19^15 + 17*19^16 + 8*19^18 + 4*19^19 + O(19^20))*x + (1 + O(19^20))
 sage:
 ```
-
 
 Can anybody confirm?
 

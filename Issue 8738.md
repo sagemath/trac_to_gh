@@ -3,7 +3,7 @@
 archive/issues_008738.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nTry this interact:\n\n```\n@interact\ndef f(M = (\"matrix \", random_matrix(QQ,3,4)), n=(\"an int\", 5)):\n    print \"The echelon form of the above matrix is:\"\n    print M.echelon_form()\n```\n\n\nThe first input control should be labeled \"matrix\", but it isn't.  Whoever added the matrix control for `@`interact, somehow did it in a way that breaks control labels. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8738\n\n",
+    "body": "Assignee: jason, was\n\nTry this interact:\n\n```\n@interact\ndef f(M = (\"matrix \", random_matrix(QQ,3,4)), n=(\"an int\", 5)):\n    print \"The echelon form of the above matrix is:\"\n    print M.echelon_form()\n```\n\nThe first input control should be labeled \"matrix\", but it isn't.  Whoever added the matrix control for `@`interact, somehow did it in a way that breaks control labels. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8738\n\n",
     "created_at": "2010-04-21T17:05:43Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ def f(M = ("matrix ", random_matrix(QQ,3,4)), n=("an int", 5)):
     print "The echelon form of the above matrix is:"
     print M.echelon_form()
 ```
-
 
 The first input control should be labeled "matrix", but it isn't.  Whoever added the matrix control for `@`interact, somehow did it in a way that breaks control labels. 
 
@@ -59,7 +58,7 @@ I added the matrix control.  I had no idea that you could pass a tuple of ("labe
 archive/issue_comments_079794.json:
 ```json
 {
-    "body": "I don't have a development copy of sagenb right now (it'd be nice of the local/lib/python2.6/site-packages/sagenb.../sagenb/notebook directory contained the mercurial repository so we could easily just change things and make a patch, without having to go get the spkg, extract it, install it with the develop option, etc.)\n\nHowever, to fix this, just change line 3750 of interact.py from:\n\n```\n        C = input_grid(default.nrows(), default.ncols(), default=default.list(), to_value=default.parent())\n\n```\n\n\n\nto\n\n\n```\n        C = input_grid(default.nrows(), default.ncols(), default=default.list(), to_value=default.parent(), label=label)\n\n```\n\n\nI have a comment about the design feature.  I notice from the code that this sets a default value *sometimes* (depending on the control):\n\n\n```\n@interact\ndef f(n=(2,[1,2,3,4,5])):\n    print n\n```\n\n\nHowever, this does *not set the default, because the first spot is overloaded to mean \"label\" and \"default value\", and \"label\" takes precedence:\n\n\n```\n@interact\ndef f(n=(\"b\",[\"a\",\"b\",\"c\"])):\n    print n\n```\n\n\nI think this interplay and double-meaning of the first argument confuses things too much.",
+    "body": "I don't have a development copy of sagenb right now (it'd be nice of the local/lib/python2.6/site-packages/sagenb.../sagenb/notebook directory contained the mercurial repository so we could easily just change things and make a patch, without having to go get the spkg, extract it, install it with the develop option, etc.)\n\nHowever, to fix this, just change line 3750 of interact.py from:\n\n```\n        C = input_grid(default.nrows(), default.ncols(), default=default.list(), to_value=default.parent())\n\n```\n\n\nto\n\n```\n        C = input_grid(default.nrows(), default.ncols(), default=default.list(), to_value=default.parent(), label=label)\n\n```\n\nI have a comment about the design feature.  I notice from the code that this sets a default value *sometimes* (depending on the control):\n\n```\n@interact\ndef f(n=(2,[1,2,3,4,5])):\n    print n\n```\n\nHowever, this does *not set the default, because the first spot is overloaded to mean \"label\" and \"default value\", and \"label\" takes precedence:\n\n```\n@interact\ndef f(n=(\"b\",[\"a\",\"b\",\"c\"])):\n    print n\n```\n\nI think this interplay and double-meaning of the first argument confuses things too much.",
     "created_at": "2010-04-21T19:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8738",
     "type": "issue_comment",
@@ -78,18 +77,14 @@ However, to fix this, just change line 3750 of interact.py from:
 ```
 
 
-
 to
-
 
 ```
         C = input_grid(default.nrows(), default.ncols(), default=default.list(), to_value=default.parent(), label=label)
 
 ```
 
-
 I have a comment about the design feature.  I notice from the code that this sets a default value *sometimes* (depending on the control):
-
 
 ```
 @interact
@@ -97,16 +92,13 @@ def f(n=(2,[1,2,3,4,5])):
     print n
 ```
 
-
 However, this does *not set the default, because the first spot is overloaded to mean "label" and "default value", and "label" takes precedence:
-
 
 ```
 @interact
 def f(n=("b",["a","b","c"])):
     print n
 ```
-
 
 I think this interplay and double-meaning of the first argument confuses things too much.
 

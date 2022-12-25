@@ -49,7 +49,7 @@ An updated README.txt is attached with this ticket. That file is not under revis
 archive/issue_comments_056850.json:
 ```json
 {
-    "body": "1. This is redundant:\n\n```\nSage builds with GCC >= 4.x and GCC >= 4.1.x.\n```\n\nhow about just\n\n```\nSage requires GCC >= 4.x.\n```\n",
+    "body": "1. This is redundant:\n\n```\nSage builds with GCC >= 4.x and GCC >= 4.1.x.\n```\nhow about just\n\n```\nSage requires GCC >= 4.x.\n```",
     "created_at": "2009-09-06T04:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
@@ -63,13 +63,11 @@ archive/issue_comments_056850.json:
 ```
 Sage builds with GCC >= 4.x and GCC >= 4.1.x.
 ```
-
 how about just
 
 ```
 Sage requires GCC >= 4.x.
 ```
-
 
 
 

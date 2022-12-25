@@ -118,7 +118,7 @@ stand-alone version 2 patch, same patch with one revision
 archive/issue_comments_094705.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> Applies fine to 4.5.2.rc0.\n> \n> Two extremely minor comments off the top of my head:\n> \n> 1. \"Generate a matrix of a desired size and rank, over a desired field,\n>        whose reduced row-echelon form has only whole values.\"\n> IMHO, \"integral\" sounds better than \"whole\".\n\nI agree completely and have made the change in the v2 patch.\n\n> 2. It seems to me that, from the point of view of the functionality,\n> using base_ring = ZZ returns the same result as base_ring = QQ.\n> (I understand that over QQ the rref algorithm might be different than over\n> ZZ, but it seems to me that for the matrices you compute in the \n> random_echelonizable_matrix function, the rref algorithm(s) yield\n> the same result either way. Correct?\n> \n\nYes, the rref algorithm yields the same result with base_ring as ZZ or QQ.  However, as these matrices are going to be used primarily as student example problems I think it would be better to keep the default as QQ.  Although there should be a series of row operations without introducing fractions that achieves rref, a student will likely want to use fractions as they row-reduce an output matrix, and the rescale_row or add_multiple_of_row functions will complain if fractions are introduced working with a matrix over ZZ.  \n> \n>",
+    "body": "Replying to [comment:2 wdj]:\n> Applies fine to 4.5.2.rc0.\n> \n> Two extremely minor comments off the top of my head:\n> \n> 1. \"Generate a matrix of a desired size and rank, over a desired field,\n>        whose reduced row-echelon form has only whole values.\"\n> IMHO, \"integral\" sounds better than \"whole\".\n\n\nI agree completely and have made the change in the v2 patch.\n\n> 2. It seems to me that, from the point of view of the functionality,\n> using base_ring = ZZ returns the same result as base_ring = QQ.\n> (I understand that over QQ the rref algorithm might be different than over\n> ZZ, but it seems to me that for the matrices you compute in the \n> random_echelonizable_matrix function, the rref algorithm(s) yield\n> the same result either way. Correct?\n> \n\n\nYes, the rref algorithm yields the same result with base_ring as ZZ or QQ.  However, as these matrices are going to be used primarily as student example problems I think it would be better to keep the default as QQ.  Although there should be a series of row operations without introducing fractions that achieves rref, a student will likely want to use fractions as they row-reduce an output matrix, and the rescale_row or add_multiple_of_row functions will complain if fractions are introduced working with a matrix over ZZ.  \n> \n\n>",
     "created_at": "2010-08-11T23:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -136,6 +136,7 @@ Replying to [comment:2 wdj]:
 >        whose reduced row-echelon form has only whole values."
 > IMHO, "integral" sounds better than "whole".
 
+
 I agree completely and have made the change in the v2 patch.
 
 > 2. It seems to me that, from the point of view of the functionality,
@@ -146,8 +147,10 @@ I agree completely and have made the change in the v2 patch.
 > the same result either way. Correct?
 > 
 
+
 Yes, the rref algorithm yields the same result with base_ring as ZZ or QQ.  However, as these matrices are going to be used primarily as student example problems I think it would be better to keep the default as QQ.  Although there should be a series of row operations without introducing fractions that achieves rref, a student will likely want to use fractions as they row-reduce an output matrix, and the rescale_row or add_multiple_of_row functions will complain if fractions are introduced working with a matrix over ZZ.  
 > 
+
 >
 
 
@@ -157,7 +160,7 @@ Yes, the rref algorithm yields the same result with base_ring as ZZ or QQ.  Howe
 archive/issue_comments_094706.json:
 ```json
 {
-    "body": "I am ready to give this patch a positive review. However, although it aplies fine to 4.5.2.rc0, it does not pass sage -testall on a 10.6.4 mac pro. The problems seem to be in some mysterious (to me) failures in \n\n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"./sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n-bash: sage: command not found\nhera:sage-4.5.2.rc0 davidjoyner$ ./sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/Volumes/Bay2/sagefiles2/sage-4.5.2.rc0/local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 951:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    34\nGot:\n    35\n```\n\nand a similar failure in\n\n\n```\nsage -t  \"devel/sage/sage/misc/sageinspect.py\"\n```\n\nI'll try investigating this using an ubuntu machine, but this seems to possibly be an issue.",
+    "body": "I am ready to give this patch a positive review. However, although it aplies fine to 4.5.2.rc0, it does not pass sage -testall on a 10.6.4 mac pro. The problems seem to be in some mysterious (to me) failures in \n\n```\nsage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"./sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n-bash: sage: command not found\nhera:sage-4.5.2.rc0 davidjoyner$ ./sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"sage -t  \"local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\"\n**********************************************************************\nFile \"/Volumes/Bay2/sagefiles2/sage-4.5.2.rc0/local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 951:\n    sage: sage_getsourcelines(matrix, True)[1]\nExpected:\n    34\nGot:\n    35\n```\nand a similar failure in\n\n```\nsage -t  \"devel/sage/sage/misc/sageinspect.py\"\n```\nI'll try investigating this using an ubuntu machine, but this seems to possibly be an issue.",
     "created_at": "2010-08-11T23:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -167,7 +170,6 @@ archive/issue_comments_094706.json:
 ```
 
 I am ready to give this patch a positive review. However, although it aplies fine to 4.5.2.rc0, it does not pass sage -testall on a 10.6.4 mac pro. The problems seem to be in some mysterious (to me) failures in 
-
 
 ```
 sage -t  "local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py"./sage -t  "local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py"
@@ -181,14 +183,11 @@ Expected:
 Got:
     35
 ```
-
 and a similar failure in
-
 
 ```
 sage -t  "devel/sage/sage/misc/sageinspect.py"
 ```
-
 I'll try investigating this using an ubuntu machine, but this seems to possibly be an issue.
 
 
@@ -238,7 +237,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_094709.json:
 ```json
 {
-    "body": "Billy,\n\nMake a v3 patch and replace the two import statements for ZZ and QQ by the statement\n\n\n```\nfrom sage.rings.all import ZZ, QQ\n```\n\n\nand subsequent line numbers will return to \"normal\" and this very technical test should pass.  Do the very complete tests\n\n\n```\n./sage -testall\n```\n\n\novernight and then post the patch.\n\nI've tested this change on matrix/constructor.py and the two files David has failing.\n\nDavid - nice catch!\n\nRob",
+    "body": "Billy,\n\nMake a v3 patch and replace the two import statements for ZZ and QQ by the statement\n\n```\nfrom sage.rings.all import ZZ, QQ\n```\n\nand subsequent line numbers will return to \"normal\" and this very technical test should pass.  Do the very complete tests\n\n```\n./sage -testall\n```\n\novernight and then post the patch.\n\nI've tested this change on matrix/constructor.py and the two files David has failing.\n\nDavid - nice catch!\n\nRob",
     "created_at": "2010-08-12T00:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -251,19 +250,15 @@ Billy,
 
 Make a v3 patch and replace the two import statements for ZZ and QQ by the statement
 
-
 ```
 from sage.rings.all import ZZ, QQ
 ```
 
-
 and subsequent line numbers will return to "normal" and this very technical test should pass.  Do the very complete tests
-
 
 ```
 ./sage -testall
 ```
-
 
 overnight and then post the patch.
 
@@ -320,7 +315,7 @@ stand-alone version 3 of the same patch, with import statement change  and docum
 archive/issue_comments_094712.json:
 ```json
 {
-    "body": "Attachment [trac_9720-random-echelonizable-matrices-v3.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v3.patch) by bwonderly created at 2010-08-12 07:16:38\n\nReplying to [comment:7 jason]:\n> In the first line of the docstring for the second function, you say:\n> \n> Generate a matrix of a desired size and rank, over a desired field,\n> \n> Should that say \"desired ring\"?\n\nAbsolutely, I've made that change and the import statement change, and all tests passed.",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices-v3.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v3.patch) by bwonderly created at 2010-08-12 07:16:38\n\nReplying to [comment:7 jason]:\n> In the first line of the docstring for the second function, you say:\n> \n> Generate a matrix of a desired size and rank, over a desired field,\n> \n> Should that say \"desired ring\"?\n\n\nAbsolutely, I've made that change and the import statement change, and all tests passed.",
     "created_at": "2010-08-12T07:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -337,6 +332,7 @@ Replying to [comment:7 jason]:
 > Generate a matrix of a desired size and rank, over a desired field,
 > 
 > Should that say "desired ring"?
+
 
 Absolutely, I've made that change and the import statement change, and all tests passed.
 
@@ -477,7 +473,7 @@ I think that these should really just be options to the random_matrix function s
 archive/issue_comments_094720.json:
 ```json
 {
-    "body": "Replying to [comment:13 mhansen]:\n> I think that these should really just be options to the random_matrix function so that we don't have a \n> ton of `random_*_matrix` commands floating around in the global namespace.\n\nThough this is logical, I personally vote -1 as it will be somewhat harder\nto use for those who need it (teachers not necessarily expert in Sage\nbut needing it for a quick computation for an example or 2 in a lecture note).\n\nIn any case, I hope this will be approved as I am teaching this *right now*:-)",
+    "body": "Replying to [comment:13 mhansen]:\n> I think that these should really just be options to the random_matrix function so that we don't have a \n> ton of `random_*_matrix` commands floating around in the global namespace.\n\n\nThough this is logical, I personally vote -1 as it will be somewhat harder\nto use for those who need it (teachers not necessarily expert in Sage\nbut needing it for a quick computation for an example or 2 in a lecture note).\n\nIn any case, I hope this will be approved as I am teaching this *right now*:-)",
     "created_at": "2010-08-25T20:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -489,6 +485,7 @@ archive/issue_comments_094720.json:
 Replying to [comment:13 mhansen]:
 > I think that these should really just be options to the random_matrix function so that we don't have a 
 > ton of `random_*_matrix` commands floating around in the global namespace.
+
 
 Though this is logical, I personally vote -1 as it will be somewhat harder
 to use for those who need it (teachers not necessarily expert in Sage
@@ -547,7 +544,7 @@ I agree with David's comments about documentation - maybe we can make that happe
 archive/issue_comments_094723.json:
 ```json
 {
-    "body": "Replying to [comment:15 rbeezer]:\n> Would you pass some sort of selector in `*args`, then make these methods of some class of matrices?  How would the documentation be immediately or easily accessible?  Is there a model we can follow someplace else in Sage?\n\nYou can leave the functions as they are -- just don't import them into the global namespace.  Then, if you do,\n\n\n```\nsage: a = random_matrix(QQ, 3, 3, rref=True)\nsage: b = random_matrix(QQ, 3, 3, echelonizable=True)\n```\n\n\nwhich just delegate to the appropriate function.  You can add a reference to those functions in the docstring of `random_matrix`.\n \nAlso, the documentation is not clear on why there is special casing for ZZ and QQ, and that these methods don't work for inexact rings.  Although, you could argue that if you have one of these matrices over `ZZ` you could just convert all the entries to `RR` and things \"should\" be fine.",
+    "body": "Replying to [comment:15 rbeezer]:\n> Would you pass some sort of selector in `*args`, then make these methods of some class of matrices?  How would the documentation be immediately or easily accessible?  Is there a model we can follow someplace else in Sage?\n\n\nYou can leave the functions as they are -- just don't import them into the global namespace.  Then, if you do,\n\n```\nsage: a = random_matrix(QQ, 3, 3, rref=True)\nsage: b = random_matrix(QQ, 3, 3, echelonizable=True)\n```\n\nwhich just delegate to the appropriate function.  You can add a reference to those functions in the docstring of `random_matrix`.\n \nAlso, the documentation is not clear on why there is special casing for ZZ and QQ, and that these methods don't work for inexact rings.  Although, you could argue that if you have one of these matrices over `ZZ` you could just convert all the entries to `RR` and things \"should\" be fine.",
     "created_at": "2010-08-25T20:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -559,14 +556,13 @@ archive/issue_comments_094723.json:
 Replying to [comment:15 rbeezer]:
 > Would you pass some sort of selector in `*args`, then make these methods of some class of matrices?  How would the documentation be immediately or easily accessible?  Is there a model we can follow someplace else in Sage?
 
-You can leave the functions as they are -- just don't import them into the global namespace.  Then, if you do,
 
+You can leave the functions as they are -- just don't import them into the global namespace.  Then, if you do,
 
 ```
 sage: a = random_matrix(QQ, 3, 3, rref=True)
 sage: b = random_matrix(QQ, 3, 3, echelonizable=True)
 ```
-
 
 which just delegate to the appropriate function.  You can add a reference to those functions in the docstring of `random_matrix`.
  
@@ -609,7 +605,7 @@ Rob
 archive/issue_comments_094725.json:
 ```json
 {
-    "body": "Replying to [comment:18 rbeezer]:\n> Mike -\n> \n\n...\n\n> \n> David - I think I can make the HTML docs work well, and can include the necessary import/qualified \n> statement in the tab-completion documentation to make the notebook/command-line docs relatively \n> easy to access.  We'd include at least one full example in the docs for random_matrix() so it could be \n> discovered that way.  Does that sound OK?\n\n\nSounds good - thanks Rob (and Mike)!!\n\n\n> \n> Rob",
+    "body": "Replying to [comment:18 rbeezer]:\n> Mike -\n> \n\n\n...\n\n> \n> David - I think I can make the HTML docs work well, and can include the necessary import/qualified \n> statement in the tab-completion documentation to make the notebook/command-line docs relatively \n> easy to access.  We'd include at least one full example in the docs for random_matrix() so it could be \n> discovered that way.  Does that sound OK?\n\n\n\nSounds good - thanks Rob (and Mike)!!\n\n\n> \n> Rob",
     "created_at": "2010-08-25T20:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -622,6 +618,7 @@ Replying to [comment:18 rbeezer]:
 > Mike -
 > 
 
+
 ...
 
 > 
@@ -629,6 +626,7 @@ Replying to [comment:18 rbeezer]:
 > statement in the tab-completion documentation to make the notebook/command-line docs relatively 
 > easy to access.  We'd include at least one full example in the docs for random_matrix() so it could be 
 > discovered that way.  Does that sound OK?
+
 
 
 Sounds good - thanks Rob (and Mike)!!
@@ -726,7 +724,7 @@ Rob
 archive/issue_comments_094730.json:
 ```json
 {
-    "body": "Replying to [comment:21 jason]:\n> To take care of the namespace issue, what about making it work like graphs does? In other words, \"random_matrix\" behaves like it always has, and \"random_matrix.echelonizable(...)\", \"random_matrix.unimodular()\", etc., do the specialized functions?\n> \n> I'm a slight -1 on making random_matrix take a ton of options, a lot of which may be mutually exclusive.  For example, if I ask for a random echelonizable matrix over ZZ, with a specific range of entries, will it work?\n\nRight now I'm thinking:\n\n\n```\nrandom_matrix(RR, 6, 4, algorithm='randomize')\n\nrandom_matrix(ZZ, 6, 4, algorithm='echelon_form')\n\nrandom_matrix(ZZ, 3, 4, algorithm='echelonizable')\n\nrandom_matrix(ZZ, 8, 8, algorithm='diagonalizable')\n```\n\n\netc.  `random_matrix()` would be a big switch on the value of `algorithm`.  Default would be 'randomize' and preserve current behavior.  `random_matrix()` would throw errors for \"wrong\" rings, or \"wrong\" shapes.\n\n`random_matrix()` would have one good example of each type, with link to actual routine's documentation for PDF & HTL version.  For notebook or CL docs, the documentation would say \"use sage.constructor.random_echelonizable_matrix?\" for more detailed documentation right after the example (not tested).\n\n`random_matrix()` already takes lots of options - anything the randomize function of the entry type accepts.  I think the new functions only accept `upper_bound` as an option, as a type of what Billy calls \"size control\".  Currently, the possibilities for arguments is not handled very well:\n\n\n```\nsage: random_matrix(QQ, 3, 4, num_bound = 4, den_bound = 10)\n[-3/8 -3/5    1 -4/7]\n[ 3/2  2/3   -2 -1/2]\n[-1/8  1/2  1/8 -3/8]\nsage: random_matrix(ZZ, 3, 4, num_bound = 4, den_bound = 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/dev/devel/sage-main/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(R, nrows, ncols, sparse, density, *args, **kwds)\n    829         A.randomize(density=float(1), nonzero=False, *args, **kwds)\n    830     else:\n--> 831         A.randomize(density=density, nonzero=True, *args, **kwds)\n    832     return A\n    833\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense.Matrix_integer_dense.randomize (sage/matrix/matrix_integer_dense.c:23941)()\n\nTypeError: randomize() got an unexpected keyword argument 'num_bound'\n```\n\n\nI'm -1 to implementing the whole graphs-dot infrastructure for just five or six functions right as Billy is trying to wrap this up.  (And possibly having to deprecate any current behavior.)  I do want to (but have not found the time yet) to implement the dot-syntax for groups.\n\nJust a thought - we could implement a whole random-dot hierarchy: matrices, primes, graphs,....",
+    "body": "Replying to [comment:21 jason]:\n> To take care of the namespace issue, what about making it work like graphs does? In other words, \"random_matrix\" behaves like it always has, and \"random_matrix.echelonizable(...)\", \"random_matrix.unimodular()\", etc., do the specialized functions?\n> \n> I'm a slight -1 on making random_matrix take a ton of options, a lot of which may be mutually exclusive.  For example, if I ask for a random echelonizable matrix over ZZ, with a specific range of entries, will it work?\n\n\nRight now I'm thinking:\n\n```\nrandom_matrix(RR, 6, 4, algorithm='randomize')\n\nrandom_matrix(ZZ, 6, 4, algorithm='echelon_form')\n\nrandom_matrix(ZZ, 3, 4, algorithm='echelonizable')\n\nrandom_matrix(ZZ, 8, 8, algorithm='diagonalizable')\n```\n\netc.  `random_matrix()` would be a big switch on the value of `algorithm`.  Default would be 'randomize' and preserve current behavior.  `random_matrix()` would throw errors for \"wrong\" rings, or \"wrong\" shapes.\n\n`random_matrix()` would have one good example of each type, with link to actual routine's documentation for PDF & HTL version.  For notebook or CL docs, the documentation would say \"use sage.constructor.random_echelonizable_matrix?\" for more detailed documentation right after the example (not tested).\n\n`random_matrix()` already takes lots of options - anything the randomize function of the entry type accepts.  I think the new functions only accept `upper_bound` as an option, as a type of what Billy calls \"size control\".  Currently, the possibilities for arguments is not handled very well:\n\n```\nsage: random_matrix(QQ, 3, 4, num_bound = 4, den_bound = 10)\n[-3/8 -3/5    1 -4/7]\n[ 3/2  2/3   -2 -1/2]\n[-1/8  1/2  1/8 -3/8]\nsage: random_matrix(ZZ, 3, 4, num_bound = 4, den_bound = 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/dev/devel/sage-main/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(R, nrows, ncols, sparse, density, *args, **kwds)\n    829         A.randomize(density=float(1), nonzero=False, *args, **kwds)\n    830     else:\n--> 831         A.randomize(density=density, nonzero=True, *args, **kwds)\n    832     return A\n    833\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense.Matrix_integer_dense.randomize (sage/matrix/matrix_integer_dense.c:23941)()\n\nTypeError: randomize() got an unexpected keyword argument 'num_bound'\n```\n\nI'm -1 to implementing the whole graphs-dot infrastructure for just five or six functions right as Billy is trying to wrap this up.  (And possibly having to deprecate any current behavior.)  I do want to (but have not found the time yet) to implement the dot-syntax for groups.\n\nJust a thought - we could implement a whole random-dot hierarchy: matrices, primes, graphs,....",
     "created_at": "2010-08-25T22:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -740,8 +738,8 @@ Replying to [comment:21 jason]:
 > 
 > I'm a slight -1 on making random_matrix take a ton of options, a lot of which may be mutually exclusive.  For example, if I ask for a random echelonizable matrix over ZZ, with a specific range of entries, will it work?
 
-Right now I'm thinking:
 
+Right now I'm thinking:
 
 ```
 random_matrix(RR, 6, 4, algorithm='randomize')
@@ -753,13 +751,11 @@ random_matrix(ZZ, 3, 4, algorithm='echelonizable')
 random_matrix(ZZ, 8, 8, algorithm='diagonalizable')
 ```
 
-
 etc.  `random_matrix()` would be a big switch on the value of `algorithm`.  Default would be 'randomize' and preserve current behavior.  `random_matrix()` would throw errors for "wrong" rings, or "wrong" shapes.
 
 `random_matrix()` would have one good example of each type, with link to actual routine's documentation for PDF & HTL version.  For notebook or CL docs, the documentation would say "use sage.constructor.random_echelonizable_matrix?" for more detailed documentation right after the example (not tested).
 
 `random_matrix()` already takes lots of options - anything the randomize function of the entry type accepts.  I think the new functions only accept `upper_bound` as an option, as a type of what Billy calls "size control".  Currently, the possibilities for arguments is not handled very well:
-
 
 ```
 sage: random_matrix(QQ, 3, 4, num_bound = 4, den_bound = 10)
@@ -783,7 +779,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: randomize() got an unexpected keyword argument 'num_bound'
 ```
-
 
 I'm -1 to implementing the whole graphs-dot infrastructure for just five or six functions right as Billy is trying to wrap this up.  (And possibly having to deprecate any current behavior.)  I do want to (but have not found the time yet) to implement the dot-syntax for groups.
 
@@ -814,7 +809,7 @@ The algorithm keyword seems natural enough for me.  What I was opposed to was 5 
 archive/issue_comments_094732.json:
 ```json
 {
-    "body": "Replying to [comment:24 jason]:\n> The algorithm keyword seems natural enough for me.  What I was opposed to was 5 different True/False keyword options, each mutually exclusive for the others.\n\nGood - I didn't want that either.  I'm going to start on the above shortly.",
+    "body": "Replying to [comment:24 jason]:\n> The algorithm keyword seems natural enough for me.  What I was opposed to was 5 different True/False keyword options, each mutually exclusive for the others.\n\n\nGood - I didn't want that either.  I'm going to start on the above shortly.",
     "created_at": "2010-08-25T22:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -825,6 +820,7 @@ archive/issue_comments_094732.json:
 
 Replying to [comment:24 jason]:
 > The algorithm keyword seems natural enough for me.  What I was opposed to was 5 different True/False keyword options, each mutually exclusive for the others.
+
 
 Good - I didn't want that either.  I'm going to start on the above shortly.
 
@@ -877,7 +873,7 @@ This also allows Billy to be sole author on this.
 archive/issue_comments_094735.json:
 ```json
 {
-    "body": "Replying to [comment:26 rbeezer]:\n\n...\n\n> \n> So if Billy or David want to check-off on my changes from v3 to v4 (undid changes in all.py and added two imports to doctests) then this can go to positive review.  I'll add interested parties to #9803 once I have a patch up, so no need to add yourself yet unless you have more comments.\n> \n\n\nThis looks good to me (I even tested it again for safety's sake:-).\n\n> This also allows Billy to be sole author on this.",
+    "body": "Replying to [comment:26 rbeezer]:\n\n...\n\n> \n> So if Billy or David want to check-off on my changes from v3 to v4 (undid changes in all.py and added two imports to doctests) then this can go to positive review.  I'll add interested parties to #9803 once I have a patch up, so no need to add yourself yet unless you have more comments.\n> \n\n\n\nThis looks good to me (I even tested it again for safety's sake:-).\n\n> This also allows Billy to be sole author on this.",
     "created_at": "2010-08-26T12:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
@@ -893,6 +889,7 @@ Replying to [comment:26 rbeezer]:
 > 
 > So if Billy or David want to check-off on my changes from v3 to v4 (undid changes in all.py and added two imports to doctests) then this can go to positive review.  I'll add interested parties to #9803 once I have a patch up, so no need to add yourself yet unless you have more comments.
 > 
+
 
 
 This looks good to me (I even tested it again for safety's sake:-).

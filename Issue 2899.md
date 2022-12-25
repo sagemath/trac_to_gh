@@ -3,7 +3,7 @@
 archive/issues_002899.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
+    "body": "Assignee: @robertwb\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
     "created_at": "2008-04-12T16:09:26Z",
     "labels": [
         "component: coercion",
@@ -18,7 +18,6 @@ archive/issues_002899.json:
 ```
 Assignee: @robertwb
 
-
 ```
 > Also, round(RR(3.0)) returns an Integer...should RDF behave the same
 > > way? (currently round(RDF(3.0)) returns an RDF).
@@ -29,7 +28,6 @@ well.
 
 Carl
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2899
@@ -133,7 +131,7 @@ archive/issue_events_006632.json:
 archive/issue_comments_019932.json:
 ```json
 {
-    "body": "This appears to have already been fixed. \n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a = RDF(3.4)\n\nsage: a.round(), a.floor(), a.ceil()\n (3, 3, 4)\n\n```\n",
+    "body": "This appears to have already been fixed. \n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a = RDF(3.4)\n\nsage: a.round(), a.floor(), a.ceil()\n (3, 3, 4)\n\n```",
     "created_at": "2009-05-18T21:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
@@ -143,7 +141,6 @@ archive/issue_comments_019932.json:
 ```
 
 This appears to have already been fixed. 
-
 
 ```
 ----------------------------------------------------------------------
@@ -156,7 +153,6 @@ sage: a.round(), a.floor(), a.ceil()
  (3, 3, 4)
 
 ```
-
 
 
 
@@ -261,7 +257,7 @@ archive/issue_events_006633.json:
 archive/issue_comments_019937.json:
 ```json
 {
-    "body": "There are doctests for RDF for sure:\n\n\n```\n\n    def round(self):\n        \"\"\"\n        Given real number x, rounds up if fractional part is greater than\n        .5, rounds down if fractional part is less than .5.\n\n        EXAMPLES::\n        \n            sage: RDF(0.49).round()\n            0\n            sage: a=RDF(0.51).round(); a\n            1\n        \"\"\"\n        return Integer(round(self._value))\n\n    def floor(self):\n        \"\"\"\n        Returns the floor of this number\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).floor()\n            2\n            sage: RDF(2.00).floor()\n            2\n            sage: RDF(-5/2).floor()\n            -3\n        \"\"\"\n        return Integer(math.floor(self._value))\n\n    def ceil(self):\n        \"\"\"\n        Returns the ceiling of this number\n        \n        OUTPUT: integer\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).ceil()\n            3\n            sage: RDF(2.00).ceil()\n            2\n            sage: RDF(-5/2).ceil()\n            -2\n        \"\"\"\n        return Integer(math.ceil(self._value))\n```\n",
+    "body": "There are doctests for RDF for sure:\n\n```\n\n    def round(self):\n        \"\"\"\n        Given real number x, rounds up if fractional part is greater than\n        .5, rounds down if fractional part is less than .5.\n\n        EXAMPLES::\n        \n            sage: RDF(0.49).round()\n            0\n            sage: a=RDF(0.51).round(); a\n            1\n        \"\"\"\n        return Integer(round(self._value))\n\n    def floor(self):\n        \"\"\"\n        Returns the floor of this number\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).floor()\n            2\n            sage: RDF(2.00).floor()\n            2\n            sage: RDF(-5/2).floor()\n            -3\n        \"\"\"\n        return Integer(math.floor(self._value))\n\n    def ceil(self):\n        \"\"\"\n        Returns the ceiling of this number\n        \n        OUTPUT: integer\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).ceil()\n            3\n            sage: RDF(2.00).ceil()\n            2\n            sage: RDF(-5/2).ceil()\n            -2\n        \"\"\"\n        return Integer(math.ceil(self._value))\n```",
     "created_at": "2009-05-19T16:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2899",
     "type": "issue_comment",
@@ -271,7 +267,6 @@ archive/issue_comments_019937.json:
 ```
 
 There are doctests for RDF for sure:
-
 
 ```
 
@@ -321,7 +316,6 @@ There are doctests for RDF for sure:
         """
         return Integer(math.ceil(self._value))
 ```
-
 
 
 

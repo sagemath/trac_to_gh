@@ -124,7 +124,7 @@ This looks right, though I haven't applied it yet.
 archive/issue_comments_096861.json:
 ```json
 {
-    "body": "Looks fine.  Testing with W3C validator still gives an error though:\n\n\n```\nLine 29, Column 79: The align attribute on the img element is obsolete. Use CSS instead.\n```\n\n\nBut I suppose this is for backwards compatibility?",
+    "body": "Looks fine.  Testing with W3C validator still gives an error though:\n\n```\nLine 29, Column 79: The align attribute on the img element is obsolete. Use CSS instead.\n```\n\nBut I suppose this is for backwards compatibility?",
     "created_at": "2010-10-12T12:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
@@ -135,11 +135,9 @@ archive/issue_comments_096861.json:
 
 Looks fine.  Testing with W3C validator still gives an error though:
 
-
 ```
 Line 29, Column 79: The align attribute on the img element is obsolete. Use CSS instead.
 ```
-
 
 But I suppose this is for backwards compatibility?
 

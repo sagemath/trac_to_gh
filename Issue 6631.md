@@ -3,7 +3,7 @@
 archive/issues_006631.json:
 ```json
 {
-    "body": "Assignee: Franco Saliola\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current implementation of the method `is_lyndon` is too slow\n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: c\nLower Christoffel word of slope 380447/34369 over Ordered Alphabet [0, 1]\nsage: c.length()\n414816\nsage: time c.is_lyndon()\nCPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s\nWall time: 84.52 s\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6631\n\n",
+    "body": "Assignee: Franco Saliola\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current implementation of the method `is_lyndon` is too slow\n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: c\nLower Christoffel word of slope 380447/34369 over Ordered Alphabet [0, 1]\nsage: c.length()\n414816\nsage: time c.is_lyndon()\nCPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s\nWall time: 84.52 s\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6631\n\n",
     "created_at": "2009-07-26T22:04:26Z",
     "labels": [
         "component: combinatorics",
@@ -35,7 +35,6 @@ CPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s
 Wall time: 84.52 s
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6631
 
@@ -86,7 +85,7 @@ Don't apply `trac_6631-is_lyndon.2.patch`, it is a copy of the other, and should
 archive/issue_comments_054241.json:
 ```json
 {
-    "body": "Here is the new timing: \n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: time c.is_lyndon()\nCPU times: user 1.15 s, sys: 0.00 s, total: 1.15 s\nWall time: 1.15 s\nTrue\n```\n\nThat's much better.",
+    "body": "Here is the new timing: \n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: time c.is_lyndon()\nCPU times: user 1.15 s, sys: 0.00 s, total: 1.15 s\nWall time: 1.15 s\nTrue\n```\nThat's much better.",
     "created_at": "2009-07-26T22:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -104,7 +103,6 @@ CPU times: user 1.15 s, sys: 0.00 s, total: 1.15 s
 Wall time: 1.15 s
 True
 ```
-
 That's much better.
 
 
@@ -114,7 +112,7 @@ That's much better.
 archive/issue_comments_054242.json:
 ```json
 {
-    "body": "The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).\n\n\n```\nwhile j < n:\n    [...]\nelse:\n    return j - i == n\n```\n\n\ncould become:\n\n\n```\nwhile j < n:\n    [...]\nreturn i == 0\n```\n",
+    "body": "The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).\n\n```\nwhile j < n:\n    [...]\nelse:\n    return j - i == n\n```\n\ncould become:\n\n```\nwhile j < n:\n    [...]\nreturn i == 0\n```",
     "created_at": "2009-07-27T09:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -125,7 +123,6 @@ archive/issue_comments_054242.json:
 
 The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).
 
-
 ```
 while j < n:
     [...]
@@ -133,16 +130,13 @@ else:
     return j - i == n
 ```
 
-
 could become:
-
 
 ```
 while j < n:
     [...]
 return i == 0
 ```
-
 
 
 
@@ -171,7 +165,7 @@ depends on #6627;
 archive/issue_comments_054244.json:
 ```json
 {
-    "body": "Replying to [comment:4 vdelecroix]:\n> The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).\n> \n> {{{\n> while j < n:\n>     [...]\n> else:\n>     return j - i == n\n> }}}\n> \n> could become:\n> \n> {{{\n> while j < n:\n>     [...]\n> return i == 0\n> }}}\n\nDone in the new patch. (If you give this new patch a positive review, then change 'needs review' to 'positive review'.)",
+    "body": "Replying to [comment:4 vdelecroix]:\n> The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).\n> \n> \n> ```\n> while j < n:\n>     [...]\n> else:\n>     return j - i == n\n> ```\n> \n> could become:\n> \n> \n> ```\n> while j < n:\n>     [...]\n> return i == 0\n> ```\n\n\nDone in the new patch. (If you give this new patch a positive review, then change 'needs review' to 'positive review'.)",
     "created_at": "2009-07-27T10:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
@@ -183,20 +177,23 @@ archive/issue_comments_054244.json:
 Replying to [comment:4 vdelecroix]:
 > The end of the loop can be simplified (there is no break statement in the loop, and we know that j==n at the end).
 > 
-> {{{
+> 
+> ```
 > while j < n:
 >     [...]
 > else:
 >     return j - i == n
-> }}}
+> ```
 > 
 > could become:
 > 
-> {{{
+> 
+> ```
 > while j < n:
 >     [...]
 > return i == 0
-> }}}
+> ```
+
 
 Done in the new patch. (If you give this new patch a positive review, then change 'needs review' to 'positive review'.)
 

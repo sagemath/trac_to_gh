@@ -3,7 +3,7 @@
 archive/issues_007264.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\n\nI can reproduce this:\n\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
+    "body": "Assignee: @burcin\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\nI can reproduce this:\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
     "created_at": "2009-10-22T08:25:50Z",
     "labels": [
         "component: symbolics",
@@ -18,7 +18,6 @@ archive/issues_007264.json:
 }
 ```
 Assignee: @burcin
-
 
 ```
 On Wed, 21 Oct 2009 19:49:58 -0700 (PDT)
@@ -39,9 +38,7 @@ Ichnich <warmbau@web.de> wrote:
 > it to 1.0 it's o.k.
 ```
 
-
 I can reproduce this:
-
 
 ```
 sage: var('a,b,c,I')
@@ -52,7 +49,6 @@ sage: model_exp.subs(sol1_l)
 /home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916
 Segmentation fault      sage-ipython "$@" -i
 ```
-
 
 The cause might be #6948.
 
@@ -67,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7264
 archive/issue_comments_060230.json:
 ```json
 {
-    "body": "In 4.2:\n\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp=exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/grout/sage/local/bin/sage-sage: line 203: 23853 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\nSince 4.2 has #6948 merged in, I guess that was not the cause.",
+    "body": "In 4.2:\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp=exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/grout/sage/local/bin/sage-sage: line 203: 23853 Segmentation fault      sage-ipython \"$@\" -i\n```\n\nSince 4.2 has #6948 merged in, I guess that was not the cause.",
     "created_at": "2009-11-04T17:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -78,7 +74,6 @@ archive/issue_comments_060230.json:
 
 In 4.2:
 
-
 ```
 sage: var('a,b,c,I')
 (a, b, c, I)
@@ -87,7 +82,6 @@ sage: sol1_l={b: 5.0, a: 1.1}
 sage: model_exp.subs(sol1_l)
 /home/grout/sage/local/bin/sage-sage: line 203: 23853 Segmentation fault      sage-ipython "$@" -i
 ```
-
 
 Since 4.2 has #6948 merged in, I guess that was not the cause.
 
@@ -187,7 +181,7 @@ add doctests
 archive/issue_comments_060235.json:
 ```json
 {
-    "body": "I would like to review this, but installing Pynac 0.1.10 caused an error (not in sage -i, but with sage -br after that):\n\n```\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\nWhat is the base version of Sage for this ticket (e.g., 4.3)?",
+    "body": "I would like to review this, but installing Pynac 0.1.10 caused an error (not in sage -i, but with sage -br after that):\n\n```\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\nWhat is the base version of Sage for this ticket (e.g., 4.3)?",
     "created_at": "2009-12-04T17:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -202,7 +196,6 @@ I would like to review this, but installing Pynac 0.1.10 caused an error (not in
 error: command 'gcc' failed with exit status 1
 sage: There was an error installing modified sage library code.
 ```
-
 What is the base version of Sage for this ticket (e.g., 4.3)?
 
 
@@ -236,7 +229,7 @@ Thank you for your time.
 archive/issue_comments_060237.json:
 ```json
 {
-    "body": "This needs work, because somehow the following test with the new spkg causes a segfault (Mac OSX 10.5, Intel):\n\n```\nsage: exp(x)^I*exp(z)^(2.5)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nHowever, everything else behaves properly, so if this can be fixed, all three tickets will have positive review.  These are important fixes, so thanks for the work!",
+    "body": "This needs work, because somehow the following test with the new spkg causes a segfault (Mac OSX 10.5, Intel):\n\n```\nsage: exp(x)^I*exp(z)^(2.5)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nHowever, everything else behaves properly, so if this can be fixed, all three tickets will have positive review.  These are important fixes, so thanks for the work!",
     "created_at": "2009-12-05T13:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -260,7 +253,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 However, everything else behaves properly, so if this can be fixed, all three tickets will have positive review.  These are important fixes, so thanks for the work!
 
 
@@ -310,7 +302,7 @@ Starting from a clean install, and making sure there is nothing else to effect t
 archive/issue_comments_060240.json:
 ```json
 {
-    "body": "This was a fresh build of 4.3.alpha1.  Only issue was that I had to hg -add several files to be able to add patches, and revert the two png files Minh has mentioned on sage-devel.  But I don't see how that would have affected things.\n\n```\nsage: exp(x)^I*exp(z)^(2.5)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0xc23d006b\n0x0658315e in GiNaC::Number_T::operator/ ()\n(gdb) bt\n#0  0x0658315e in GiNaC::Number_T::operator/ ()\n#1  0x065837bb in GiNaC::numeric::div ()\n#2  0x06549c14 in GiNaC::mul::eval ()\n#3  0x06499fa7 in GiNaC::ex::construct_from_basic ()\n#4  0x065875f7 in GiNaC::operator* ()\n#5  0x0678bbe9 in GiNaC::ptr<GiNaC::basic>::operator= () at sage/symbolic/expression.cpp:10325\n#6  0x0678bbe9 in operator= [inlined] () at ptr.h:75\n#7  0x0678bbe9 in __pyx_f_4sage_8symbolic_10expression_10Expression__mul_ (__pyx_v_left=0x103c710, __pyx_v_right=0x103a418, __pyx_skip_dispatch=0) at sage/symbolic/expression.cpp:10325\n#8  0x01a6cc6f in __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (__pyx_v_self=0x103c710, __pyx_v_right=0x103a418) at sage/structure/element.c:10134\n#9  0x00007bc2 in binary_op1 ()\n#10 0x0000c109 in PyNumber_Multiply ()\n#11 0x000b7833 in PyEval_EvalFrameEx ()\n#12 0x000bb71d in PyEval_EvalCodeEx ()\n#13 0x000ba07e in PyEval_EvalFrameEx ()\n#14 0x000bb71d in PyEval_EvalCodeEx ()\n#15 0x000b99c6 in PyEval_EvalFrameEx ()\n#16 0x000bb71d in PyEval_EvalCodeEx ()\n#17 0x000b99c6 in PyEval_EvalFrameEx ()\n#18 0x000ba5c9 in PyEval_EvalFrameEx ()\n#19 0x000bb71d in PyEval_EvalCodeEx ()\n#20 0x000b99c6 in PyEval_EvalFrameEx ()\n#21 0x000bb71d in PyEval_EvalCodeEx ()\n#22 0x000b99c6 in PyEval_EvalFrameEx ()\n#23 0x000bb71d in PyEval_EvalCodeEx ()\n#24 0x000b99c6 in PyEval_EvalFrameEx ()\n#25 0x000bb71d in PyEval_EvalCodeEx ()\n#26 0x000bb837 in PyEval_EvalCode ()\n#27 0x000e0108 in PyRun_FileExFlags ()\n#28 0x000e0ff3 in PyRun_SimpleFileExFlags ()\n#29 0x000efb7e in Py_Main ()\n#30 0x00001c7b in _start ()\n#31 0x00001ba9 in start ()\n```\n\nBy the way, I get tons of errors when running sage -gdb \"could not find object file \"....o\" - no debug information available for \"....c\" though I assume that is normal.\n\nThe same type of error happens if I just do \n\n```\nsage: exp(blah)^I*exp(z)\n```\n\nwhere blah can be anything.  So perhaps something is parsing weird with the I* business.\n\nAlso notice that currently I seem to have both pynac-0.1.10 and pynac-0.1.10.a0 installed, but fixing this and reinstalling pynac 0.1.10 didn't hep.  Interestingly, it has to be two different things in the exps, as exp(x)^I*exp(x) works fine, but even exp(2)^I*exp(3) doesn't.",
+    "body": "This was a fresh build of 4.3.alpha1.  Only issue was that I had to hg -add several files to be able to add patches, and revert the two png files Minh has mentioned on sage-devel.  But I don't see how that would have affected things.\n\n```\nsage: exp(x)^I*exp(z)^(2.5)\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0xc23d006b\n0x0658315e in GiNaC::Number_T::operator/ ()\n(gdb) bt\n#0  0x0658315e in GiNaC::Number_T::operator/ ()\n#1  0x065837bb in GiNaC::numeric::div ()\n#2  0x06549c14 in GiNaC::mul::eval ()\n#3  0x06499fa7 in GiNaC::ex::construct_from_basic ()\n#4  0x065875f7 in GiNaC::operator* ()\n#5  0x0678bbe9 in GiNaC::ptr<GiNaC::basic>::operator= () at sage/symbolic/expression.cpp:10325\n#6  0x0678bbe9 in operator= [inlined] () at ptr.h:75\n#7  0x0678bbe9 in __pyx_f_4sage_8symbolic_10expression_10Expression__mul_ (__pyx_v_left=0x103c710, __pyx_v_right=0x103a418, __pyx_skip_dispatch=0) at sage/symbolic/expression.cpp:10325\n#8  0x01a6cc6f in __pyx_pf_4sage_9structure_7element_11RingElement___mul__ (__pyx_v_self=0x103c710, __pyx_v_right=0x103a418) at sage/structure/element.c:10134\n#9  0x00007bc2 in binary_op1 ()\n#10 0x0000c109 in PyNumber_Multiply ()\n#11 0x000b7833 in PyEval_EvalFrameEx ()\n#12 0x000bb71d in PyEval_EvalCodeEx ()\n#13 0x000ba07e in PyEval_EvalFrameEx ()\n#14 0x000bb71d in PyEval_EvalCodeEx ()\n#15 0x000b99c6 in PyEval_EvalFrameEx ()\n#16 0x000bb71d in PyEval_EvalCodeEx ()\n#17 0x000b99c6 in PyEval_EvalFrameEx ()\n#18 0x000ba5c9 in PyEval_EvalFrameEx ()\n#19 0x000bb71d in PyEval_EvalCodeEx ()\n#20 0x000b99c6 in PyEval_EvalFrameEx ()\n#21 0x000bb71d in PyEval_EvalCodeEx ()\n#22 0x000b99c6 in PyEval_EvalFrameEx ()\n#23 0x000bb71d in PyEval_EvalCodeEx ()\n#24 0x000b99c6 in PyEval_EvalFrameEx ()\n#25 0x000bb71d in PyEval_EvalCodeEx ()\n#26 0x000bb837 in PyEval_EvalCode ()\n#27 0x000e0108 in PyRun_FileExFlags ()\n#28 0x000e0ff3 in PyRun_SimpleFileExFlags ()\n#29 0x000efb7e in Py_Main ()\n#30 0x00001c7b in _start ()\n#31 0x00001ba9 in start ()\n```\nBy the way, I get tons of errors when running sage -gdb \"could not find object file \"....o\" - no debug information available for \"....c\" though I assume that is normal.\n\nThe same type of error happens if I just do \n\n```\nsage: exp(blah)^I*exp(z)\n```\nwhere blah can be anything.  So perhaps something is parsing weird with the I* business.\n\nAlso notice that currently I seem to have both pynac-0.1.10 and pynac-0.1.10.a0 installed, but fixing this and reinstalling pynac 0.1.10 didn't hep.  Interestingly, it has to be two different things in the exps, as exp(x)^I*exp(x) works fine, but even exp(2)^I*exp(3) doesn't.",
     "created_at": "2009-12-06T02:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
@@ -361,7 +353,6 @@ Reason: KERN_INVALID_ADDRESS at address: 0xc23d006b
 #30 0x00001c7b in _start ()
 #31 0x00001ba9 in start ()
 ```
-
 By the way, I get tons of errors when running sage -gdb "could not find object file "....o" - no debug information available for "....c" though I assume that is normal.
 
 The same type of error happens if I just do 
@@ -369,7 +360,6 @@ The same type of error happens if I just do
 ```
 sage: exp(blah)^I*exp(z)
 ```
-
 where blah can be anything.  So perhaps something is parsing weird with the I* business.
 
 Also notice that currently I seem to have both pynac-0.1.10 and pynac-0.1.10.a0 installed, but fixing this and reinstalling pynac 0.1.10 didn't hep.  Interestingly, it has to be two different things in the exps, as exp(x)^I*exp(x) works fine, but even exp(2)^I*exp(3) doesn't.

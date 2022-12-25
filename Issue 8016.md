@@ -3,7 +3,7 @@
 archive/issues_008016.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @saliola rkirov @qed777\n\nObviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:\n\n\n```\nFile \"sage/graphs/graph_editor.py\", line 111, in graph_editor\n    if not isinstance(graph.get_pos(), dict):\nAttributeError: 'FinitePoset' object has no attribute 'get_pos'\n```\n\n\nWhile wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8016\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @saliola rkirov @qed777\n\nObviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:\n\n```\nFile \"sage/graphs/graph_editor.py\", line 111, in graph_editor\n    if not isinstance(graph.get_pos(), dict):\nAttributeError: 'FinitePoset' object has no attribute 'get_pos'\n```\n\nWhile wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8016\n\n",
     "created_at": "2010-01-20T20:21:57Z",
     "labels": [
         "component: combinatorics"
@@ -21,13 +21,11 @@ CC:  @saliola rkirov @qed777
 
 Obviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:
 
-
 ```
 File "sage/graphs/graph_editor.py", line 111, in graph_editor
     if not isinstance(graph.get_pos(), dict):
 AttributeError: 'FinitePoset' object has no attribute 'get_pos'
 ```
-
 
 While wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.
 
@@ -42,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8016
 archive/issue_comments_069923.json:
 ```json
 {
-    "body": "If the name of variable to save the (undirected) graph is `P`, then it is easy to just say\n\n\n```\nd = DiGraph()\nd.add_vertices(P.vertices())\npos = P.get_pos()\nfor e in P.edges(labels=False):\n    if pos[e[0]][1] < pos[e[1]][1]:\n        d.add_edge(e)\n    else:\n        d.add_edge([e[1], e[0]])\nP = Poset(d).canonical_label()\n```\n\n\nto convert it to poset. But really somebody should expand the code to handle digraphs.",
+    "body": "If the name of variable to save the (undirected) graph is `P`, then it is easy to just say\n\n```\nd = DiGraph()\nd.add_vertices(P.vertices())\npos = P.get_pos()\nfor e in P.edges(labels=False):\n    if pos[e[0]][1] < pos[e[1]][1]:\n        d.add_edge(e)\n    else:\n        d.add_edge([e[1], e[0]])\nP = Poset(d).canonical_label()\n```\n\nto convert it to poset. But really somebody should expand the code to handle digraphs.",
     "created_at": "2015-10-21T07:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8016",
     "type": "issue_comment",
@@ -52,7 +50,6 @@ archive/issue_comments_069923.json:
 ```
 
 If the name of variable to save the (undirected) graph is `P`, then it is easy to just say
-
 
 ```
 d = DiGraph()
@@ -65,7 +62,6 @@ for e in P.edges(labels=False):
         d.add_edge([e[1], e[0]])
 P = Poset(d).canonical_label()
 ```
-
 
 to convert it to poset. But really somebody should expand the code to handle digraphs.
 

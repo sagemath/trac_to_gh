@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3296
 archive/issue_comments_022751.json:
 ```json
 {
-    "body": "Instead of patching polymake each time cddlib changes you should use the following construct:\n\n```\nspkg/standard$ ./newest_version cddlib\ncddlib-094b.p2\n```\n\nThat way it keeps working ;)\n\nCheers,\n\nMichael",
+    "body": "Instead of patching polymake each time cddlib changes you should use the following construct:\n\n```\nspkg/standard$ ./newest_version cddlib\ncddlib-094b.p2\n```\nThat way it keeps working ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-05-25T02:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3296",
     "type": "issue_comment",
@@ -49,7 +49,6 @@ Instead of patching polymake each time cddlib changes you should use the followi
 spkg/standard$ ./newest_version cddlib
 cddlib-094b.p2
 ```
-
 That way it keeps working ;)
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_006303.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nBuilt fine, 2 test failyres on 32-bit Suse:  the singular.pyx issue\nalready reported, and\n\n**********************************************************************\nFile \"/local/jec/sage-4.0.2.rc0/devel/sage/sage/rings/number_field/number_field_element.pyx\",\nline 2092:\n   sage: [L(6).valuation(P) for P in L.primes_above(6)]\nExpected:\n   [2, 2, 4]\nGot:\n   [4, 2, 2]\n**********************************************************************\n\nThat is on old issue: L.primes_above(6) tries to sort the primes but\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6303\n\n",
+    "body": "Assignee: tbd\n\n```\nBuilt fine, 2 test failyres on 32-bit Suse:  the singular.pyx issue\nalready reported, and\n\n**********************************************************************\nFile \"/local/jec/sage-4.0.2.rc0/devel/sage/sage/rings/number_field/number_field_element.pyx\",\nline 2092:\n   sage: [L(6).valuation(P) for P in L.primes_above(6)]\nExpected:\n   [2, 2, 4]\nGot:\n   [4, 2, 2]\n**********************************************************************\n\nThat is on old issue: L.primes_above(6) tries to sort the primes but\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6303\n\n",
     "created_at": "2009-06-15T17:04:45Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_006303.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 Built fine, 2 test failyres on 32-bit Suse:  the singular.pyx issue
@@ -36,7 +35,6 @@ Got:
 
 That is on old issue: L.primes_above(6) tries to sort the primes but
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6303
 
@@ -125,7 +123,7 @@ Good for me on sage.math and OS X 10.5.
 archive/issue_comments_050193.json:
 ```json
 {
-    "body": "Note that this failure was reported on 32 bit linux. So I don't see it is any good to report it good for sage.math or OS X 10.5.\n\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n\t [24.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nOn Fedora 9, 32 bit.\n\nSo also a positive review from here.\n\nJaap",
+    "body": "Note that this failure was reported on 32 bit linux. So I don't see it is any good to report it good for sage.math or OS X 10.5.\n\n```\nsage -t  \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n\t [24.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nOn Fedora 9, 32 bit.\n\nSo also a positive review from here.\n\nJaap",
     "created_at": "2009-06-15T19:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
@@ -136,7 +134,6 @@ archive/issue_comments_050193.json:
 
 Note that this failure was reported on 32 bit linux. So I don't see it is any good to report it good for sage.math or OS X 10.5.
 
-
 ```
 sage -t  "devel/sage/sage/rings/number_field/number_field_element.pyx"
 	 [24.4 s]
@@ -144,7 +141,6 @@ sage -t  "devel/sage/sage/rings/number_field/number_field_element.pyx"
 ----------------------------------------------------------------------
 All tests passed!
 ```
-
 
 On Fedora 9, 32 bit.
 

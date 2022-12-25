@@ -129,7 +129,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095556.json:
 ```json
 {
-    "body": "> A somewhat related issue (feel free to ignore): It seems scons doesn't touch for example polybori.h if that didn't change. It would thus be nice to touch this file at the end of spkg-install to inform the Sage build system that it needs to rebuild the extensions. If you agree I can provide a patch.\n\nFeel free to provide such a patch (even tough it's a little bit against the philosopy that a build system should take care of the remaining dependencies automatically).",
+    "body": "> A somewhat related issue (feel free to ignore): It seems scons doesn't touch for example polybori.h if that didn't change. It would thus be nice to touch this file at the end of spkg-install to inform the Sage build system that it needs to rebuild the extensions. If you agree I can provide a patch.\n\n\nFeel free to provide such a patch (even tough it's a little bit against the philosopy that a build system should take care of the remaining dependencies automatically).",
     "created_at": "2010-08-22T21:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9767",
     "type": "issue_comment",
@@ -139,6 +139,7 @@ archive/issue_comments_095556.json:
 ```
 
 > A somewhat related issue (feel free to ignore): It seems scons doesn't touch for example polybori.h if that didn't change. It would thus be nice to touch this file at the end of spkg-install to inform the Sage build system that it needs to rebuild the extensions. If you agree I can provide a patch.
+
 
 Feel free to provide such a patch (even tough it's a little bit against the philosopy that a build system should take care of the remaining dependencies automatically).
 

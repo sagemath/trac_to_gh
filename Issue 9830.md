@@ -3,7 +3,7 @@
 archive/issues_009830.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  brunellus\n\n\n```\n~$ ulimit -v 1048576 \n~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Permutation([1]).signature()\n1\nsage: Permutation([0]).signature()\n-1\nsage: Permutation([1,0]).signature()\n-1\nsage: Permutation([0,1]).signature()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)\n    739             -1\n    740         \"\"\"\n--> 741         return (-1)**(len(p)-len(p.to_cycles()))\n    742     \n    743 \n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)\n    556             l[i], next = False, l[i]\n    557             while next != cycleFirst:\n--> 558                 cycle.append( next )\n    559                 l[next - 1], next  = False, l[next - 1]\n    560             #Add the cycle to the list of cycles\n\nMemoryError:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9831\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  brunellus\n\n```\n~$ ulimit -v 1048576 \n~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Permutation([1]).signature()\n1\nsage: Permutation([0]).signature()\n-1\nsage: Permutation([1,0]).signature()\n-1\nsage: Permutation([0,1]).signature()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n| Sage Version 4.5.1, Release Date: 2010-07-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in signature(p)\n    739             -1\n    740         \"\"\"\n--> 741         return (-1)**(len(p)-len(p.to_cycles()))\n    742     \n    743 \n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/combinat/permutation.pyc in to_cycles(self, singletons)\n    556             l[i], next = False, l[i]\n    557             while next != cycleFirst:\n--> 558                 cycle.append( next )\n    559                 l[next - 1], next  = False, l[next - 1]\n    560             #Add the cycle to the list of cycles\n\nMemoryError:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9831\n\n",
     "created_at": "2010-08-28T08:13:00Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +19,6 @@ archive/issues_009830.json:
 Assignee: sage-combinat
 
 CC:  brunellus
-
 
 ```
 ~$ ulimit -v 1048576 
@@ -56,7 +55,6 @@ MemoryError                               Traceback (most recent call last)
 MemoryError:
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9831
 
 
@@ -68,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9831
 archive/issue_comments_096847.json:
 ```json
 {
-    "body": "Yes, Permutation should check the input. Moreover, it should be better documented.\n\n\nIn cycle notation:\n\n\n```\nsage: Permutation([(1,2),(3,4),(1,3)])\n[3, 1, 1, 3]\n```\n\n\nwhich is not a permutation.",
+    "body": "Yes, Permutation should check the input. Moreover, it should be better documented.\n\n\nIn cycle notation:\n\n```\nsage: Permutation([(1,2),(3,4),(1,3)])\n[3, 1, 1, 3]\n```\n\nwhich is not a permutation.",
     "created_at": "2010-09-08T13:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
@@ -82,12 +80,10 @@ Yes, Permutation should check the input. Moreover, it should be better documente
 
 In cycle notation:
 
-
 ```
 sage: Permutation([(1,2),(3,4),(1,3)])
 [3, 1, 1, 3]
 ```
-
 
 which is not a permutation.
 
@@ -134,7 +130,7 @@ Changing status from new to needs_work.
 archive/issue_comments_096850.json:
 ```json
 {
-    "body": "I've uploaded a patch which takes care of this issue.  (It also allows Permutation to take a list of non-disjoint tuples.)  There's still some work to be done, as the patch breaks several doctests:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t -long devel/sage-test/doc/en/bordeaux_2008/generators_for_rings.rst # 4 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/integer_vector_weighted.py # 7 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/posets/hasse_diagram.py # 1 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/posets/poset_examples.py # 6 doctests failed\n\tsage -t -long devel/sage-test/sage/misc/sagedoc.py # 3 doctests failed\n\tsage -t -long devel/sage-test/sage/modular/modform/find_generators.py # 18 doctests failed\n\tsage -t -long devel/sage-test/sage/plot/plot3d/base.pyx # 4 doctests failed\n\tsage -t -long devel/sage-test/sage/modular/ssmod/ssmod.py # Time out\n----------------------------------------------------------------------\n```\n",
+    "body": "I've uploaded a patch which takes care of this issue.  (It also allows Permutation to take a list of non-disjoint tuples.)  There's still some work to be done, as the patch breaks several doctests:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t -long devel/sage-test/doc/en/bordeaux_2008/generators_for_rings.rst # 4 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/integer_vector_weighted.py # 7 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/posets/hasse_diagram.py # 1 doctests failed\n\tsage -t -long devel/sage-test/sage/combinat/posets/poset_examples.py # 6 doctests failed\n\tsage -t -long devel/sage-test/sage/misc/sagedoc.py # 3 doctests failed\n\tsage -t -long devel/sage-test/sage/modular/modform/find_generators.py # 18 doctests failed\n\tsage -t -long devel/sage-test/sage/plot/plot3d/base.pyx # 4 doctests failed\n\tsage -t -long devel/sage-test/sage/modular/ssmod/ssmod.py # Time out\n----------------------------------------------------------------------\n```",
     "created_at": "2010-11-07T04:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9830",
     "type": "issue_comment",
@@ -144,7 +140,6 @@ archive/issue_comments_096850.json:
 ```
 
 I've uploaded a patch which takes care of this issue.  (It also allows Permutation to take a list of non-disjoint tuples.)  There's still some work to be done, as the patch breaks several doctests:
-
 
 ```
 ----------------------------------------------------------------------
@@ -161,7 +156,6 @@ The following tests failed:
 	sage -t -long devel/sage-test/sage/modular/ssmod/ssmod.py # Time out
 ----------------------------------------------------------------------
 ```
-
 
 
 

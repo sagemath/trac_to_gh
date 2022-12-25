@@ -3,7 +3,7 @@
 archive/issues_006286.json:
 ```json
 {
-    "body": "In sage-4.0.1, most of the primitive functions suffer from\ninconsistence typsettings. For example:\n\n\n```\nf = arcsin\nlatex( f ); latex( f(x) ); latex( f(x,1) )\n\n\\sin^{-1}\n\\arcsin\\left(x\\right)\n\\mbox{\\sin^{-1}}\\left(x\\right)\n```\n\n\nNote that the same function is being typeset differently. The additional \"\\mbox\" in third case (which has been reported in\n#6268) will get resolved by #5711. \n\nHowever, second case seems weird to me, given \"class Function_arcsin\" (sage.functions.trig) clearly defines its \nlatex expression to be \"\\sin^{-1}\". So it seems to be a pynac issue.\n\nOne can try following to see the issues for other functions\n\n\n```\n# Trigonometric functions\nlst = [sin, cos, tan, cot, sec, csc, arcsin, arccos, arctan, arccot, arcsec, arccsc]  \n\n# view\nfor fn in lst:\n    view( fn ); view( fn(x) ); view( fn(x,1) )\n    \n# latex\nfor fn in lst:\n    latex( fn ); latex( fn(x) ); latex( fn(x,1) )\n```\n\n \nand\n\n\n```\n# Hyperbolic functions\nlst = [sinh, cosh, tanh, coth, sech, csch, arcsinh, arccosh, arctanh, arccoth, arcsech, arccsch ] \n\n# view\nfor fn in lst:\n    view( fn ); view( fn(x) ); view( fn(x,1) )\n    \n# latex\nfor fn in lst:\n    latex( fn ); latex( fn(x) ); latex( fn(x,1) )\n```\n\n\nIt seems, out of these 24 functions, 18 functions suffer from inconsistence typesetting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6286\n\n",
+    "body": "In sage-4.0.1, most of the primitive functions suffer from\ninconsistence typsettings. For example:\n\n```\nf = arcsin\nlatex( f ); latex( f(x) ); latex( f(x,1) )\n\n\\sin^{-1}\n\\arcsin\\left(x\\right)\n\\mbox{\\sin^{-1}}\\left(x\\right)\n```\n\nNote that the same function is being typeset differently. The additional \"\\mbox\" in third case (which has been reported in\n#6268) will get resolved by #5711. \n\nHowever, second case seems weird to me, given \"class Function_arcsin\" (sage.functions.trig) clearly defines its \nlatex expression to be \"\\sin^{-1}\". So it seems to be a pynac issue.\n\nOne can try following to see the issues for other functions\n\n```\n# Trigonometric functions\nlst = [sin, cos, tan, cot, sec, csc, arcsin, arccos, arctan, arccot, arcsec, arccsc]  \n\n# view\nfor fn in lst:\n    view( fn ); view( fn(x) ); view( fn(x,1) )\n    \n# latex\nfor fn in lst:\n    latex( fn ); latex( fn(x) ); latex( fn(x,1) )\n```\n \nand\n\n```\n# Hyperbolic functions\nlst = [sinh, cosh, tanh, coth, sech, csch, arcsinh, arccosh, arctanh, arccoth, arcsech, arccsch ] \n\n# view\nfor fn in lst:\n    view( fn ); view( fn(x) ); view( fn(x,1) )\n    \n# latex\nfor fn in lst:\n    latex( fn ); latex( fn(x) ); latex( fn(x,1) )\n```\n\nIt seems, out of these 24 functions, 18 functions suffer from inconsistence typesetting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6286\n\n",
     "created_at": "2009-06-14T14:29:47Z",
     "labels": [
         "component: symbolics",
@@ -19,7 +19,6 @@ archive/issues_006286.json:
 In sage-4.0.1, most of the primitive functions suffer from
 inconsistence typsettings. For example:
 
-
 ```
 f = arcsin
 latex( f ); latex( f(x) ); latex( f(x,1) )
@@ -29,7 +28,6 @@ latex( f ); latex( f(x) ); latex( f(x,1) )
 \mbox{\sin^{-1}}\left(x\right)
 ```
 
-
 Note that the same function is being typeset differently. The additional "\mbox" in third case (which has been reported in
 #6268) will get resolved by #5711. 
 
@@ -37,7 +35,6 @@ However, second case seems weird to me, given "class Function_arcsin" (sage.func
 latex expression to be "\sin^{-1}". So it seems to be a pynac issue.
 
 One can try following to see the issues for other functions
-
 
 ```
 # Trigonometric functions
@@ -51,10 +48,8 @@ for fn in lst:
 for fn in lst:
     latex( fn ); latex( fn(x) ); latex( fn(x,1) )
 ```
-
  
 and
-
 
 ```
 # Hyperbolic functions
@@ -68,7 +63,6 @@ for fn in lst:
 for fn in lst:
     latex( fn ); latex( fn(x) ); latex( fn(x,1) )
 ```
-
 
 It seems, out of these 24 functions, 18 functions suffer from inconsistence typesetting.
 

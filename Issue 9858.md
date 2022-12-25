@@ -3,7 +3,7 @@
 archive/issues_009858.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nKeywords: DeprecationWarning failure integer.pyx rational.pyx beginner\n\n\n```\n$ ./sage -t  -long devel/sage/sage/rings/integer.pyx\nsage -t -long \"devel/sage/sage/rings/integer.pyx\"           \n**********************************************************************\nFile \"devel/sage/sage/rings/integer.pyx\", line 4618:\n    sage: 5.sqrt_approx(prec=200)\nExpected:\n    doctest:1172: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    2.2360679774997896964091736687312762354406183596115257242709\nGot:\n    doctest:1176: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    2.2360679774997896964091736687312762354406183596115257242709\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_integer.py\n\t [16.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/integer.pyx\"\nTotal time for all tests: 16.4 seconds\n$ ./sage -t  -long devel/sage/sage/rings/rational.pyx \nsage -t -long \"devel/sage/sage/rings/rational.pyx\"          \n**********************************************************************\nFile \"devel/sage/sage/rings/rational.pyx\", line 1339:\n    sage: (5/3).sqrt_approx()\nExpected:\n    doctest:1172: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    1.29099444873581\nGot:\n    doctest:1176: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    1.29099444873581\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_31\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_rational.py\n\t [4.5 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/rational.pyx\"\nTotal time for all tests: 4.6 seconds\n```\n\n\nThese failures occurred just because some line numbers in `$SAGE_LOCAL/bin/ncadoctest.py` changed (when I added some flush statements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9859\n\n",
+    "body": "Assignee: mvngu\n\nKeywords: DeprecationWarning failure integer.pyx rational.pyx beginner\n\n```\n$ ./sage -t  -long devel/sage/sage/rings/integer.pyx\nsage -t -long \"devel/sage/sage/rings/integer.pyx\"           \n**********************************************************************\nFile \"devel/sage/sage/rings/integer.pyx\", line 4618:\n    sage: 5.sqrt_approx(prec=200)\nExpected:\n    doctest:1172: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    2.2360679774997896964091736687312762354406183596115257242709\nGot:\n    doctest:1176: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    2.2360679774997896964091736687312762354406183596115257242709\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_integer.py\n\t [16.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/integer.pyx\"\nTotal time for all tests: 16.4 seconds\n$ ./sage -t  -long devel/sage/sage/rings/rational.pyx \nsage -t -long \"devel/sage/sage/rings/rational.pyx\"          \n**********************************************************************\nFile \"devel/sage/sage/rings/rational.pyx\", line 1339:\n    sage: (5/3).sqrt_approx()\nExpected:\n    doctest:1172: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    1.29099444873581\nGot:\n    doctest:1176: DeprecationWarning: This function is deprecated.  Use sqrt with a given number of bits of precision instead.\n    1.29099444873581\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_31\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_rational.py\n\t [4.5 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/sage/rings/rational.pyx\"\nTotal time for all tests: 4.6 seconds\n```\n\nThese failures occurred just because some line numbers in `$SAGE_LOCAL/bin/ncadoctest.py` changed (when I added some flush statements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9859\n\n",
     "created_at": "2010-09-06T04:32:10Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ archive/issues_009858.json:
 Assignee: mvngu
 
 Keywords: DeprecationWarning failure integer.pyx rational.pyx beginner
-
 
 ```
 $ ./sage -t  -long devel/sage/sage/rings/integer.pyx
@@ -72,7 +71,6 @@ The following tests failed:
 	sage -t -long "devel/sage/sage/rings/rational.pyx"
 Total time for all tests: 4.6 seconds
 ```
-
 
 These failures occurred just because some line numbers in `$SAGE_LOCAL/bin/ncadoctest.py` changed (when I added some flush statements).
 
@@ -199,7 +197,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_097177.json:
 ```json
 {
-    "body": "Replying to [comment:3 mvngu]:\n> Those hard-coded line numbers that leif fixed shouldn't have been there in the first place.\n\nYes. According to Mercurial, Michael Abshoff introduced that in Jan 2009(!)... :-)\n(There's no ticket number in the commit message. I'm not sure when it really got merged, but obviously long time ago.)\n\nI wonder why I never ran into this before, since I frequently doctest with modified versions of `ncadoctest` (but perhaps incidentally not the whole Sage library, or `sage/rings`).\n\nThanks for reviewing this.",
+    "body": "Replying to [comment:3 mvngu]:\n> Those hard-coded line numbers that leif fixed shouldn't have been there in the first place.\n\n\nYes. According to Mercurial, Michael Abshoff introduced that in Jan 2009(!)... :-)\n(There's no ticket number in the commit message. I'm not sure when it really got merged, but obviously long time ago.)\n\nI wonder why I never ran into this before, since I frequently doctest with modified versions of `ncadoctest` (but perhaps incidentally not the whole Sage library, or `sage/rings`).\n\nThanks for reviewing this.",
     "created_at": "2010-09-07T19:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
@@ -210,6 +208,7 @@ archive/issue_comments_097177.json:
 
 Replying to [comment:3 mvngu]:
 > Those hard-coded line numbers that leif fixed shouldn't have been there in the first place.
+
 
 Yes. According to Mercurial, Michael Abshoff introduced that in Jan 2009(!)... :-)
 (There's no ticket number in the commit message. I'm not sure when it really got merged, but obviously long time ago.)

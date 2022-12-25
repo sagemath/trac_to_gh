@@ -391,7 +391,7 @@ Please close this ticket as a "duplicate" when #9873 is merged.
 archive/issue_comments_040681.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> == Release manager ==\n> \n> Please close this ticket as a \"duplicate\" when #9873 is merged.\n\nOr, 'merge' this one first and then #9873 (as noted in that ticket's comments).",
+    "body": "Replying to [comment:12 mpatel]:\n> == Release manager ==\n> \n> Please close this ticket as a \"duplicate\" when #9873 is merged.\n\n\nOr, 'merge' this one first and then #9873 (as noted in that ticket's comments).",
     "created_at": "2010-09-29T18:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
@@ -405,6 +405,7 @@ Replying to [comment:12 mpatel]:
 > 
 > Please close this ticket as a "duplicate" when #9873 is merged.
 
+
 Or, 'merge' this one first and then #9873 (as noted in that ticket's comments).
 
 
@@ -414,7 +415,7 @@ Or, 'merge' this one first and then #9873 (as noted in that ticket's comments).
 archive/issue_comments_040682.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> Replying to [comment:12 mpatel]:\n> > == Release manager ==\n> > \n> > Please close this ticket as a \"duplicate\" when #9873 is merged.\n> \n> Or, 'merge' this one first and then #9873 (as noted in that ticket's comments).\nSorry for the noise - jhpalmieri is right in his comments in #9873.  Treat as previously mentioned.",
+    "body": "Replying to [comment:13 kcrisman]:\n> Replying to [comment:12 mpatel]:\n> > == Release manager ==\n> > \n> > Please close this ticket as a \"duplicate\" when #9873 is merged.\n\n> \n> Or, 'merge' this one first and then #9873 (as noted in that ticket's comments).\n\nSorry for the noise - jhpalmieri is right in his comments in #9873.  Treat as previously mentioned.",
     "created_at": "2010-09-29T20:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
@@ -428,8 +429,10 @@ Replying to [comment:13 kcrisman]:
 > > == Release manager ==
 > > 
 > > Please close this ticket as a "duplicate" when #9873 is merged.
+
 > 
 > Or, 'merge' this one first and then #9873 (as noted in that ticket's comments).
+
 Sorry for the noise - jhpalmieri is right in his comments in #9873.  Treat as previously mentioned.
 
 

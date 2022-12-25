@@ -259,7 +259,7 @@ Apply only 5790.2.patch and this patch (in this order)
 archive/issue_comments_045257.json:
 ```json
 {
-    "body": "Andrew's changes made `from_exp` and `from_core_and_quotient`\nmethods of a partition, but they shouldn't be since they don't depend on\nthe partition at all. It's strange, to me, to have the constructor work\nthis way:\n\n\n```\nsage: p = Partition([])\nsage: p.from_exp([3,2,1])\n[3, 2, 2, 1, 1, 1]\n\nsage: q = Partition([3,2,2,1,1,1])\nsage: q.from_exp([3,2,1])\n[3, 2, 2, 1, 1, 1]\n```\n\n\nI've reverted those changes in my review patch, otherwise it looks good. \n\nTo be clear: I do not object to gathering all the code for constructing\npartitions into one class. Perhaps a new `PartitionConstructor` class\nwould be better? Either way, this is not the point of this ticket.\n\nSomeone needs to look over my changes, of course.\n\nApply only 5790.2.patch and trac_5790-review.patch.",
+    "body": "Andrew's changes made `from_exp` and `from_core_and_quotient`\nmethods of a partition, but they shouldn't be since they don't depend on\nthe partition at all. It's strange, to me, to have the constructor work\nthis way:\n\n```\nsage: p = Partition([])\nsage: p.from_exp([3,2,1])\n[3, 2, 2, 1, 1, 1]\n\nsage: q = Partition([3,2,2,1,1,1])\nsage: q.from_exp([3,2,1])\n[3, 2, 2, 1, 1, 1]\n```\n\nI've reverted those changes in my review patch, otherwise it looks good. \n\nTo be clear: I do not object to gathering all the code for constructing\npartitions into one class. Perhaps a new `PartitionConstructor` class\nwould be better? Either way, this is not the point of this ticket.\n\nSomeone needs to look over my changes, of course.\n\nApply only 5790.2.patch and trac_5790-review.patch.",
     "created_at": "2009-06-21T19:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5790",
     "type": "issue_comment",
@@ -273,7 +273,6 @@ methods of a partition, but they shouldn't be since they don't depend on
 the partition at all. It's strange, to me, to have the constructor work
 this way:
 
-
 ```
 sage: p = Partition([])
 sage: p.from_exp([3,2,1])
@@ -283,7 +282,6 @@ sage: q = Partition([3,2,2,1,1,1])
 sage: q.from_exp([3,2,1])
 [3, 2, 2, 1, 1, 1]
 ```
-
 
 I've reverted those changes in my review patch, otherwise it looks good. 
 

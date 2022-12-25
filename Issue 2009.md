@@ -3,7 +3,7 @@
 archive/issues_002009.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/scripts/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/data/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/NEP/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/examples/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/.svn\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2009\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/scripts/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/data/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/tests/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/readwrite/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/generators/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/drawing/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/networkx/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/NEP/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/examples/.svn\nsage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/.svn\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2009\n\n",
     "created_at": "2008-01-31T23:20:41Z",
     "labels": [
         "component: packages: standard",
@@ -17,7 +17,6 @@ archive/issues_002009.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/scripts/.svn
@@ -34,7 +33,6 @@ sage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/NEP/.svn
 sage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/examples/.svn
 sage-2.10.1.rc3/spkg/standard/networkx-0.36.p0/src/doc/.svn
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2009
 

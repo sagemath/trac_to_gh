@@ -288,7 +288,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060811.json:
 ```json
 {
-    "body": "Replying to [comment:2 AJonsson]:\n> Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.\nAnders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.",
+    "body": "Replying to [comment:2 AJonsson]:\n> Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.\n\nAnders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.",
     "created_at": "2009-10-28T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -299,6 +299,7 @@ archive/issue_comments_060811.json:
 
 Replying to [comment:2 AJonsson]:
 > Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.
+
 Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.
 
 
@@ -308,7 +309,7 @@ Anders, please don't close tickets. That's the job of the release manager. See [
 archive/issue_comments_060812.json:
 ```json
 {
-    "body": "Replying to [comment:6 mvngu]:\n> Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.\n\nWhoops. Hadn't seen that section. Won't happen again.",
+    "body": "Replying to [comment:6 mvngu]:\n> Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.\n\n\nWhoops. Hadn't seen that section. Won't happen again.",
     "created_at": "2009-10-28T19:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -319,6 +320,7 @@ archive/issue_comments_060812.json:
 
 Replying to [comment:6 mvngu]:
 > Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.
+
 
 Whoops. Hadn't seen that section. Won't happen again.
 
@@ -367,7 +369,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_060815.json:
 ```json
 {
-    "body": "Replying to [comment:8 ncohen]:\n> I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...\n> \n> Nathann\n\nI don't feel too strongly about it. As long as full functionality exists, it matters little to me if it is in one or two functions.",
+    "body": "Replying to [comment:8 ncohen]:\n> I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...\n> \n> Nathann\n\n\nI don't feel too strongly about it. As long as full functionality exists, it matters little to me if it is in one or two functions.",
     "created_at": "2009-11-01T09:52:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -380,6 +382,7 @@ Replying to [comment:8 ncohen]:
 > I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...
 > 
 > Nathann
+
 
 I don't feel too strongly about it. As long as full functionality exists, it matters little to me if it is in one or two functions.
 
@@ -466,7 +469,7 @@ should we keep this ticket open, or close it and open a new one with your modifi
 archive/issue_comments_060820.json:
 ```json
 {
-    "body": "Replying to [comment:13 ncohen]:\n> should we keep this ticket open, or close it and open a new one with your modification of #7159 ?\n\nLet's keep it open, otherwise we would just open an almost identical ticket. I will see if I get the time to finish the function sometime next week.",
+    "body": "Replying to [comment:13 ncohen]:\n> should we keep this ticket open, or close it and open a new one with your modification of #7159 ?\n\n\nLet's keep it open, otherwise we would just open an almost identical ticket. I will see if I get the time to finish the function sometime next week.",
     "created_at": "2009-12-07T00:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -477,6 +480,7 @@ archive/issue_comments_060820.json:
 
 Replying to [comment:13 ncohen]:
 > should we keep this ticket open, or close it and open a new one with your modification of #7159 ?
+
 
 Let's keep it open, otherwise we would just open an almost identical ticket. I will see if I get the time to finish the function sometime next week.
 
@@ -575,7 +579,7 @@ Real use case: the other day I was wondering about maximal planar subgraphs of a
 archive/issue_comments_060825.json:
 ```json
 {
-    "body": "> Anyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.\n\nWould you be interested in mixing the two ? Like sometimes calling a delete_edge function which returns a graph, and some other times a method which modifies the graph ?\n\nThe current behaviour is necessary for many functions, and replacing it would mean a huge loss in efficiency. It is possible to add a keyword to all those methods so that a graph will be returned instead of modifying the current graph. I don't quite like this, as it would mean some additional tests for each of all those very fundamental functions, but then again...\nOn the other hand, if you are not interested in mixing the two type of operations, perhaps the best is to work on an immutable graph class. Many people have asked this already, and when working on an immutable graph class having a default behaviour of \"returning an immutable copy of the graph modified as requested\" does not seem too unnatural. What about this then ? `:-)`\n\nNathann",
+    "body": "> Anyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.\n\n\nWould you be interested in mixing the two ? Like sometimes calling a delete_edge function which returns a graph, and some other times a method which modifies the graph ?\n\nThe current behaviour is necessary for many functions, and replacing it would mean a huge loss in efficiency. It is possible to add a keyword to all those methods so that a graph will be returned instead of modifying the current graph. I don't quite like this, as it would mean some additional tests for each of all those very fundamental functions, but then again...\nOn the other hand, if you are not interested in mixing the two type of operations, perhaps the best is to work on an immutable graph class. Many people have asked this already, and when working on an immutable graph class having a default behaviour of \"returning an immutable copy of the graph modified as requested\" does not seem too unnatural. What about this then ? `:-)`\n\nNathann",
     "created_at": "2011-04-12T19:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -585,6 +589,7 @@ archive/issue_comments_060825.json:
 ```
 
 > Anyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.
+
 
 Would you be interested in mixing the two ? Like sometimes calling a delete_edge function which returns a graph, and some other times a method which modifies the graph ?
 
@@ -618,7 +623,7 @@ I'm not at all in favor of having two different behaviors encoded in one functio
 archive/issue_comments_060827.json:
 ```json
 {
-    "body": "> I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.\n\nGot it !\n\nThis being said, I understand that's how matroid theory is written \"on the paper\", but do you think it would be possible to write useful code using only those symbols when any of them means copying the whole structure ? But perhaps I do not know how you intend to code it, and how much such operations could cost in memory and time ...\n\nNathann",
+    "body": "> I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.\n\n\nGot it !\n\nThis being said, I understand that's how matroid theory is written \"on the paper\", but do you think it would be possible to write useful code using only those symbols when any of them means copying the whole structure ? But perhaps I do not know how you intend to code it, and how much such operations could cost in memory and time ...\n\nNathann",
     "created_at": "2011-04-19T15:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -628,6 +633,7 @@ archive/issue_comments_060827.json:
 ```
 
 > I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.
+
 
 Got it !
 
@@ -642,7 +648,7 @@ Nathann
 archive/issue_comments_060828.json:
 ```json
 {
-    "body": "Replying to [comment:20 Stefan]:\n> I'm not at all in favor of having two different behaviors encoded in one function.\n\nThis is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.",
+    "body": "Replying to [comment:20 Stefan]:\n> I'm not at all in favor of having two different behaviors encoded in one function.\n\n\nThis is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.",
     "created_at": "2011-04-19T18:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -654,6 +660,7 @@ archive/issue_comments_060828.json:
 Replying to [comment:20 Stefan]:
 > I'm not at all in favor of having two different behaviors encoded in one function.
 
+
 This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.
 
 
@@ -663,7 +670,7 @@ This is often the case. For example many graph functions in Sage have an `inplac
 archive/issue_comments_060829.json:
 ```json
 {
-    "body": "Replying to [comment:22 rlm]:\n> Replying to [comment:20 Stefan]:\n> > I'm not at all in favor of having two different behaviors encoded in one function.\n> \n> This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.\n\nIndeed it does! I'm not sure that this happens often, but so far I found subgraph() and relabel(). The former defaults to inplace=False; the latter defaults to inplace=True.\n\nIn that case it would be preferable not to have extra methods (the list is quite long enough as it stands). Defining the forward and backslashes might still be a neat addition.\n\nNathann, typical work with matroids is on relatively small ground sets. I don't expect intensive calculations on graphs with more than, say, a few dozen edges. We would wrap the graph in a GraphicMatroid object anyway, so it's easy to compensate for any functionality in the graph code that is not entirely fit for our purpose. So you need not worry about our needs for the time being.\n\nWhat remains is the question of contracting one edge from a parallel pair (see above).",
+    "body": "Replying to [comment:22 rlm]:\n> Replying to [comment:20 Stefan]:\n> > I'm not at all in favor of having two different behaviors encoded in one function.\n\n> \n> This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.\n\n\nIndeed it does! I'm not sure that this happens often, but so far I found subgraph() and relabel(). The former defaults to inplace=False; the latter defaults to inplace=True.\n\nIn that case it would be preferable not to have extra methods (the list is quite long enough as it stands). Defining the forward and backslashes might still be a neat addition.\n\nNathann, typical work with matroids is on relatively small ground sets. I don't expect intensive calculations on graphs with more than, say, a few dozen edges. We would wrap the graph in a GraphicMatroid object anyway, so it's easy to compensate for any functionality in the graph code that is not entirely fit for our purpose. So you need not worry about our needs for the time being.\n\nWhat remains is the question of contracting one edge from a parallel pair (see above).",
     "created_at": "2011-04-20T07:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -675,8 +682,10 @@ archive/issue_comments_060829.json:
 Replying to [comment:22 rlm]:
 > Replying to [comment:20 Stefan]:
 > > I'm not at all in favor of having two different behaviors encoded in one function.
+
 > 
 > This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.
+
 
 Indeed it does! I'm not sure that this happens often, but so far I found subgraph() and relabel(). The former defaults to inplace=False; the latter defaults to inplace=True.
 
@@ -753,7 +762,7 @@ Apply trac_7304_contract_edge.patch
 archive/issue_comments_060833.json:
 ```json
 {
-    "body": "Brunellus,\n\nThis isn't quite there, and you haven't tested everything.\n\nGraphs have a copy method -- `g = g.copy()` is faster than `g=copy(g)`.  There are two problems with the block\n\n\n```\n        if vertices and vertices[0] is None: \n\t    vertices[0] = g.add_vertex()\n```\n\n\nfirst off, this assumes that `g.add_vertex()` returns the label of the added vertex.  It does not.  Second, it modifies `vertices` for no good reason (what if the users passes in a tuple, set, or generator?)",
+    "body": "Brunellus,\n\nThis isn't quite there, and you haven't tested everything.\n\nGraphs have a copy method -- `g = g.copy()` is faster than `g=copy(g)`.  There are two problems with the block\n\n```\n        if vertices and vertices[0] is None: \n\t    vertices[0] = g.add_vertex()\n```\n\nfirst off, this assumes that `g.add_vertex()` returns the label of the added vertex.  It does not.  Second, it modifies `vertices` for no good reason (what if the users passes in a tuple, set, or generator?)",
     "created_at": "2012-03-21T20:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -768,12 +777,10 @@ This isn't quite there, and you haven't tested everything.
 
 Graphs have a copy method -- `g = g.copy()` is faster than `g=copy(g)`.  There are two problems with the block
 
-
 ```
         if vertices and vertices[0] is None: 
 	    vertices[0] = g.add_vertex()
 ```
-
 
 first off, this assumes that `g.add_vertex()` returns the label of the added vertex.  It does not.  Second, it modifies `vertices` for no good reason (what if the users passes in a tuple, set, or generator?)
 
@@ -802,7 +809,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_060835.json:
 ```json
 {
-    "body": "Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 5.0.  Please update this to not modify the users's input with\n\n\n```\n    vertices = list(vertices)\n```\n\n\nand use `g.copy()` instead of copy, and I'll give this a positive review.",
+    "body": "Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 5.0.  Please update this to not modify the users's input with\n\n```\n    vertices = list(vertices)\n```\n\nand use `g.copy()` instead of copy, and I'll give this a positive review.",
     "created_at": "2012-03-21T22:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -813,11 +820,9 @@ archive/issue_comments_060835.json:
 
 Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 5.0.  Please update this to not modify the users's input with
 
-
 ```
     vertices = list(vertices)
 ```
-
 
 and use `g.copy()` instead of copy, and I'll give this a positive review.
 
@@ -1112,7 +1117,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_060844.json:
 ```json
 {
-    "body": "I ended up writing some new methods for edge contraction. I didn't use either patch here. The first one didn't seem to respect edge labels, and `allow_loops_multiedges` seems redundant since these are intrinsic to the graph, and the second one seemed too complicated to disentangle from `merge_vertices`. I also didn't include an `inplace` option for consistency with `delete_edge`.\n\nThe `contract_edges()` method was tough because if the user inputs a list of edges, the vertices need to be updated dynamically as the contractions occur and vertices are lost. I ended up using nested while loops to accomplish this. Maybe there's a faster way?\n----\nNew commits:",
+    "body": "I ended up writing some new methods for edge contraction. I didn't use either patch here. The first one didn't seem to respect edge labels, and `allow_loops_multiedges` seems redundant since these are intrinsic to the graph, and the second one seemed too complicated to disentangle from `merge_vertices`. I also didn't include an `inplace` option for consistency with `delete_edge`.\n\nThe `contract_edges()` method was tough because if the user inputs a list of edges, the vertices need to be updated dynamically as the contractions occur and vertices are lost. I ended up using nested while loops to accomplish this. Maybe there's a faster way?\n\n---\nNew commits:",
     "created_at": "2017-06-22T00:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1124,7 +1129,8 @@ archive/issue_comments_060844.json:
 I ended up writing some new methods for edge contraction. I didn't use either patch here. The first one didn't seem to respect edge labels, and `allow_loops_multiedges` seems redundant since these are intrinsic to the graph, and the second one seemed too complicated to disentangle from `merge_vertices`. I also didn't include an `inplace` option for consistency with `delete_edge`.
 
 The `contract_edges()` method was tough because if the user inputs a list of edges, the vertices need to be updated dynamically as the contractions occur and vertices are lost. I ended up using nested while loops to accomplish this. Maybe there's a faster way?
-----
+
+---
 New commits:
 
 
@@ -1354,7 +1360,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_060857.json:
 ```json
 {
-    "body": "Replying to [comment:52 dcoudert]:\n> Some comments for `contract_edges`:\n> * instead of dropping non-edges, it is better to not add such edge to the list\n> * construct the list of vertices at the same time to add edges to the list\nDone.\n> * Instead of implementing your own disjoint set methods, you can use `DisjointSet`\n> * If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`\nIt's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.",
+    "body": "Replying to [comment:52 dcoudert]:\n> Some comments for `contract_edges`:\n> * instead of dropping non-edges, it is better to not add such edge to the list\n> * construct the list of vertices at the same time to add edges to the list\n \nDone.\n> * Instead of implementing your own disjoint set methods, you can use `DisjointSet`\n> * If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`\n \nIt's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.",
     "created_at": "2017-06-25T18:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1367,9 +1373,11 @@ Replying to [comment:52 dcoudert]:
 > Some comments for `contract_edges`:
 > * instead of dropping non-edges, it is better to not add such edge to the list
 > * construct the list of vertices at the same time to add edges to the list
+ 
 Done.
 > * Instead of implementing your own disjoint set methods, you can use `DisjointSet`
 > * If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`
+ 
 It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.
 
 
@@ -1397,7 +1405,7 @@ There's another issue I've been considering: if a user has loops on but multiedg
 archive/issue_comments_060859.json:
 ```json
 {
-    "body": "> It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.\n\n`vertices = [v for v in vertices if v != DS.find(v)]` should give you non-roots, no?",
+    "body": "> It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.\n\n\n`vertices = [v for v in vertices if v != DS.find(v)]` should give you non-roots, no?",
     "created_at": "2017-06-25T19:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1407,6 +1415,7 @@ archive/issue_comments_060859.json:
 ```
 
 > It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.
+
 
 `vertices = [v for v in vertices if v != DS.find(v)]` should give you non-roots, no?
 
@@ -1453,7 +1462,7 @@ Ah, right. I misread the description of that method.
 archive/issue_comments_060862.json:
 ```json
 {
-    "body": "Replying to [comment:55 zgershkoff]:\n> There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.\n\nThis is the main difficulty with such method: what's the good answer? what is the user expected ? It is really application dependent. For instance, in some cases you want to contract an edge unless it creates a loop.\\\\\nI would say that as long as the behavior is clearly documented, it's fine. If the user wants something else, he can code his own method.\n\n \n\nOne remark. You could use `edges_incident.extend( self.outgoing_edges(v) )` instead of `out_edges=self.edge_boundary([v])`. You can also use `self.incoming_edges(v)`.",
+    "body": "Replying to [comment:55 zgershkoff]:\n> There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.\n\n\nThis is the main difficulty with such method: what's the good answer? what is the user expected ? It is really application dependent. For instance, in some cases you want to contract an edge unless it creates a loop.\\\\\nI would say that as long as the behavior is clearly documented, it's fine. If the user wants something else, he can code his own method.\n\n \n\nOne remark. You could use `edges_incident.extend( self.outgoing_edges(v) )` instead of `out_edges=self.edge_boundary([v])`. You can also use `self.incoming_edges(v)`.",
     "created_at": "2017-06-26T06:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1464,6 +1473,7 @@ archive/issue_comments_060862.json:
 
 Replying to [comment:55 zgershkoff]:
 > There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.
+
 
 This is the main difficulty with such method: what's the good answer? what is the user expected ? It is really application dependent. For instance, in some cases you want to contract an edge unless it creates a loop.\\
 I would say that as long as the behavior is clearly documented, it's fine. If the user wants something else, he can code his own method.
@@ -1567,7 +1577,7 @@ In method `contract_edges`:
 archive/issue_comments_060867.json:
 ```json
 {
-    "body": "Replying to [comment:63 dcoudert]:\n> Another round of comments. \n> \n> In method `contract_edge`\n> - in the `INPUT` block, some lines are for `contract_edges` and so should be removed from here.\n> - remove the `OUTPUT` block. It is useless here\n> - If I call `G.contract_edge( (u, v) )` and that the graph has edge `(u, v, 'label')`, then the method will do nothing. Is this the behavior you expect? If so, it should be documented.\n\nI can't reproduce this. `self.has_edge(u,v)` works the same as `self.has_edge(u,v,None)`. It seems though the last edge it has in memory between `u` and `v` gets contracted.\n\n```\nsage: edgelist = [(0,1,0), (0,1,9), (0,1,2), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 9), (0, 2, 2), (0, 2, 3)]\nsage: edgelist = [(0,1,0), (0,1,2), (0,1,9), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 2), (0, 2, 2), (0, 2, 3)]\n```\n\n\n> - you may replace `for e in self.edges_incident(v):` with `for x,y,l in self.edges_incident(v):`. I don't know which option is the best.\n\nI changed it to `x,y,l` for consistency.\n\nWhy is `x,y,l` preferred over `(x,y,l)`? I don't see anything about this in PEP8, but I've been using the parentheses around the tuple a lot because I think it's easier to read that way.",
+    "body": "Replying to [comment:63 dcoudert]:\n> Another round of comments. \n> \n> In method `contract_edge`\n> - in the `INPUT` block, some lines are for `contract_edges` and so should be removed from here.\n> - remove the `OUTPUT` block. It is useless here\n> - If I call `G.contract_edge( (u, v) )` and that the graph has edge `(u, v, 'label')`, then the method will do nothing. Is this the behavior you expect? If so, it should be documented.\n\n\nI can't reproduce this. `self.has_edge(u,v)` works the same as `self.has_edge(u,v,None)`. It seems though the last edge it has in memory between `u` and `v` gets contracted.\n\n```\nsage: edgelist = [(0,1,0), (0,1,9), (0,1,2), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 9), (0, 2, 2), (0, 2, 3)]\nsage: edgelist = [(0,1,0), (0,1,2), (0,1,9), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 2), (0, 2, 2), (0, 2, 3)]\n```\n\n> - you may replace `for e in self.edges_incident(v):` with `for x,y,l in self.edges_incident(v):`. I don't know which option is the best.\n\n\nI changed it to `x,y,l` for consistency.\n\nWhy is `x,y,l` preferred over `(x,y,l)`? I don't see anything about this in PEP8, but I've been using the parentheses around the tuple a lot because I think it's easier to read that way.",
     "created_at": "2017-06-27T20:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1584,6 +1594,7 @@ Replying to [comment:63 dcoudert]:
 > - remove the `OUTPUT` block. It is useless here
 > - If I call `G.contract_edge( (u, v) )` and that the graph has edge `(u, v, 'label')`, then the method will do nothing. Is this the behavior you expect? If so, it should be documented.
 
+
 I can't reproduce this. `self.has_edge(u,v)` works the same as `self.has_edge(u,v,None)`. It seems though the last edge it has in memory between `u` and `v` gets contracted.
 
 ```
@@ -1597,8 +1608,8 @@ sage: G.contract_edge(0,1); G.edges()
 [(0, 0, 0), (0, 0, 2), (0, 2, 2), (0, 2, 3)]
 ```
 
-
 > - you may replace `for e in self.edges_incident(v):` with `for x,y,l in self.edges_incident(v):`. I don't know which option is the best.
+
 
 I changed it to `x,y,l` for consistency.
 
@@ -1629,7 +1640,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_060869.json:
 ```json
 {
-    "body": "I have a few more questions.\n\n- Is `return` preferred over `return None`? I've changed them to just `return`.\n- Where is the indentation error in `contract_edges()`? Is it the space in front of some of the edges in the output? That matches the output, and it makes the html display correctly.\n- I've noticed that there are problems for `contract_edges()` if the input is a mix of 2-tuples and 3-tuples as the example below shows, but this is kind of a GIGO situation and I don't know if I should bother addressing it.\n\n\n```\nsage: edgelist = [(0,1,0), (0,1,1), (0,1,2)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1,2), (0,1)]); G.edges()\n[(0, 0, 0)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1), (0,1,2)]); G.edges()\n[(0, 0, 0), (0, 0, 1)]\n```\n",
+    "body": "I have a few more questions.\n\n- Is `return` preferred over `return None`? I've changed them to just `return`.\n- Where is the indentation error in `contract_edges()`? Is it the space in front of some of the edges in the output? That matches the output, and it makes the html display correctly.\n- I've noticed that there are problems for `contract_edges()` if the input is a mix of 2-tuples and 3-tuples as the example below shows, but this is kind of a GIGO situation and I don't know if I should bother addressing it.\n\n```\nsage: edgelist = [(0,1,0), (0,1,1), (0,1,2)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1,2), (0,1)]); G.edges()\n[(0, 0, 0)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1), (0,1,2)]); G.edges()\n[(0, 0, 0), (0, 0, 1)]\n```",
     "created_at": "2017-06-27T20:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1644,7 +1655,6 @@ I have a few more questions.
 - Where is the indentation error in `contract_edges()`? Is it the space in front of some of the edges in the output? That matches the output, and it makes the html display correctly.
 - I've noticed that there are problems for `contract_edges()` if the input is a mix of 2-tuples and 3-tuples as the example below shows, but this is kind of a GIGO situation and I don't know if I should bother addressing it.
 
-
 ```
 sage: edgelist = [(0,1,0), (0,1,1), (0,1,2)]
 sage: G = Graph(edgelist, loops=True, multiedges=True)
@@ -1654,7 +1664,6 @@ sage: G = Graph(edgelist, loops=True, multiedges=True)
 sage: G.contract_edges([(0,1), (0,1,2)]); G.edges()
 [(0, 0, 0), (0, 0, 1)]
 ```
-
 
 
 
@@ -1681,7 +1690,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_060871.json:
 ```json
 {
-    "body": "Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\n```\nsage: edgelist = [(0,0,'a'), (0,1,'b'), (1,1,'c')]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1,'b'); G.edges()\n[(0, 0, 'a')]\nsage: D = DiGraph(edgelist, loops=True, multiedges=True)\nsage: D.contract_edge(0,1,'b'); D.edges()\n[(0, 0, 'a')]\n```\n\n\nIn `contract_edges`:\n*`if not edges:` -> `if not edge_list:`\n* indentation of tests `With loops in a digraph::`",
+    "body": "Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\n```\nsage: edgelist = [(0,0,'a'), (0,1,'b'), (1,1,'c')]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1,'b'); G.edges()\n[(0, 0, 'a')]\nsage: D = DiGraph(edgelist, loops=True, multiedges=True)\nsage: D.contract_edge(0,1,'b'); D.edges()\n[(0, 0, 'a')]\n```\n\nIn `contract_edges`:\n*`if not edges:` -> `if not edge_list:`\n* indentation of tests `With loops in a digraph::`",
     "created_at": "2017-06-28T07:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1702,7 +1711,6 @@ sage: D.contract_edge(0,1,'b'); D.edges()
 [(0, 0, 'a')]
 ```
 
-
 In `contract_edges`:
 *`if not edges:` -> `if not edge_list:`
 * indentation of tests `With loops in a digraph::`
@@ -1714,7 +1722,7 @@ In `contract_edges`:
 archive/issue_comments_060872.json:
 ```json
 {
-    "body": "Replying to [comment:68 dcoudert]:\n> Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\nI think I put those tests in before I rewrote `contract_edge` to use `merge_vertices`. Maybe it's irrelevant to have those tests there now. Now that uses `merge_vertices`, it's dependent on #23290 to keep the loops. I should have been clearer about that, sorry.\n\n> In `contract_edges`:\n> *`if not edges:` -> `if not edge_list:`\n> * indentation of tests `With loops in a digraph::`\n\nYes, I see it now. I'll fix those shortly.",
+    "body": "Replying to [comment:68 dcoudert]:\n> Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\n\nI think I put those tests in before I rewrote `contract_edge` to use `merge_vertices`. Maybe it's irrelevant to have those tests there now. Now that uses `merge_vertices`, it's dependent on #23290 to keep the loops. I should have been clearer about that, sorry.\n\n> In `contract_edges`:\n> *`if not edges:` -> `if not edge_list:`\n> * indentation of tests `With loops in a digraph::`\n\n\nYes, I see it now. I'll fix those shortly.",
     "created_at": "2017-06-28T07:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1726,11 +1734,13 @@ archive/issue_comments_060872.json:
 Replying to [comment:68 dcoudert]:
 > Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why
 
+
 I think I put those tests in before I rewrote `contract_edge` to use `merge_vertices`. Maybe it's irrelevant to have those tests there now. Now that uses `merge_vertices`, it's dependent on #23290 to keep the loops. I should have been clearer about that, sorry.
 
 > In `contract_edges`:
 > *`if not edges:` -> `if not edge_list:`
 > * indentation of tests `With loops in a digraph::`
+
 
 Yes, I see it now. I'll fix those shortly.
 
@@ -1777,7 +1787,7 @@ I took the liberty of moving #23290 into this since it's closed. All tests pass 
 archive/issue_comments_060875.json:
 ```json
 {
-    "body": "Right, better to rebase on top of #23290.\n\nIn method `contract_edge`, I suggest the following change. Do you agree ?\n\n```\n       if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n           # add loops\n           for (x, y, l) in self.edges_incident(v):\n               if set([x, y]) == set([u, v]):\n                   self.add_edge(u, u, l)\n```\n\n\nIn method `contract_edges`\n- the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n- `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.",
+    "body": "Right, better to rebase on top of #23290.\n\nIn method `contract_edge`, I suggest the following change. Do you agree ?\n\n```\n       if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n           # add loops\n           for (x, y, l) in self.edges_incident(v):\n               if set([x, y]) == set([u, v]):\n                   self.add_edge(u, u, l)\n```\n\nIn method `contract_edges`\n- the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n- `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.",
     "created_at": "2017-06-28T20:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1798,7 +1808,6 @@ In method `contract_edge`, I suggest the following change. Do you agree ?
                    self.add_edge(u, u, l)
 ```
 
-
 In method `contract_edges`
 - the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)
 - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.
@@ -1810,7 +1819,7 @@ In method `contract_edges`
 archive/issue_comments_060876.json:
 ```json
 {
-    "body": "Replying to [comment:72 dcoudert]:\n> Right, better to rebase on top of #23290.\n> \n> In method `contract_edge`, I suggest the following change. Do you agree ?\n> {{{\n>        if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n>            # add loops\n>            for (x, y, l) in self.edges_incident(v):\n>                if set([x, y]) == set([u, v]):\n>                    self.add_edge(u, u, l)\n> }}}\nI think sage will fail silently if multiedges are off, but it makes sense in principle to check first. I changed the order of the tests because I figured checking a boolean with `self.allows_multiple_edges()` is probably faster than looking for an edge.\n> In method `contract_edges`\n> - the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n> - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.\nThat also makes sense.",
+    "body": "Replying to [comment:72 dcoudert]:\n> Right, better to rebase on top of #23290.\n> \n> In method `contract_edge`, I suggest the following change. Do you agree ?\n> \n> ```\n>        if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n>            # add loops\n>            for (x, y, l) in self.edges_incident(v):\n>                if set([x, y]) == set([u, v]):\n>                    self.add_edge(u, u, l)\n> ```\n\nI think sage will fail silently if multiedges are off, but it makes sense in principle to check first. I changed the order of the tests because I figured checking a boolean with `self.allows_multiple_edges()` is probably faster than looking for an edge.\n> In method `contract_edges`\n> - the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n> - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.\n \nThat also makes sense.",
     "created_at": "2017-06-28T20:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7304",
     "type": "issue_comment",
@@ -1823,17 +1832,20 @@ Replying to [comment:72 dcoudert]:
 > Right, better to rebase on top of #23290.
 > 
 > In method `contract_edge`, I suggest the following change. Do you agree ?
-> {{{
+> 
+> ```
 >        if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):
 >            # add loops
 >            for (x, y, l) in self.edges_incident(v):
 >                if set([x, y]) == set([u, v]):
 >                    self.add_edge(u, u, l)
-> }}}
+> ```
+
 I think sage will fail silently if multiedges are off, but it makes sense in principle to check first. I changed the order of the tests because I figured checking a boolean with `self.allows_multiple_edges()` is probably faster than looking for an edge.
 > In method `contract_edges`
 > - the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)
 > - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.
+ 
 That also makes sense.
 
 

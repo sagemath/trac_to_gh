@@ -3,7 +3,7 @@
 archive/issues_003892.json:
 ```json
 {
-    "body": "Assignee: @malb\n\n\n```\nsage: P.<x> = PowerSeriesRing(GF(3^3, 'a'))\nsage: P.random_element(7)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/malb/<ipython console> in <module>()\n\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py in random_element(self, prec, bound)\n    544             1/15 + 19/17*t + 10/3*t^2 + 5/2*t^3 + 1/2*t^4 + O(t^5)\n    545         \"\"\"\n--> 546         return self(self.__poly_ring.random_element(prec, bound), prec)\n    547\n    548     def __cmp__(self, other):\n\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in random_element(self, degree, *args, **kwds)\n    785         \"\"\"\n    786         R = self.base_ring()\n--> 787         return self([R.random_element(*args, **kwds) for _ in xrange(degree+1)])\n    788\n    789     def _monics_degree( self, of_degree ):\n\nTypeError: random_element() takes no arguments (1 given)\n```\n\n\nThe proposed fix by Hamish Ivey-Law is to add (dummy) `*args` and `**kwds` to `GivaroGFq.random_element`. His patch\n\n\n```\ndiff -r 717c10d9cd4a sage/rings/finite_field_givaro.pyx\n--- a/sage/rings/finite_field_givaro.pyx        Fri Jul 11 11:46:02 2008\n-0700\n+++ b/sage/rings/finite_field_givaro.pyx        Mon Aug 18 16:10:50 2008\n+0200\n@@ -358,7 +358,7 @@ cdef class FiniteField_givaro(FiniteFiel\n         else:\n             return True\n\n-    def random_element(FiniteField_givaro self):\n+    def random_element(FiniteField_givaro self, *args, **kwds):\n         \"\"\"\n         Return a random element of self.\n```\n\n\nSince I agree with that fix:\n* this needs to be wrapped in an HG patch\n* a doctest needs to be added testing the new behavior \n\nIssue created by migration from https://trac.sagemath.org/ticket/3892\n\n",
+    "body": "Assignee: @malb\n\n```\nsage: P.<x> = PowerSeriesRing(GF(3^3, 'a'))\nsage: P.random_element(7)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/malb/<ipython console> in <module>()\n\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py in random_element(self, prec, bound)\n    544             1/15 + 19/17*t + 10/3*t^2 + 5/2*t^3 + 1/2*t^4 + O(t^5)\n    545         \"\"\"\n--> 546         return self(self.__poly_ring.random_element(prec, bound), prec)\n    547\n    548     def __cmp__(self, other):\n\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in random_element(self, degree, *args, **kwds)\n    785         \"\"\"\n    786         R = self.base_ring()\n--> 787         return self([R.random_element(*args, **kwds) for _ in xrange(degree+1)])\n    788\n    789     def _monics_degree( self, of_degree ):\n\nTypeError: random_element() takes no arguments (1 given)\n```\n\nThe proposed fix by Hamish Ivey-Law is to add (dummy) `*args` and `**kwds` to `GivaroGFq.random_element`. His patch\n\n```\ndiff -r 717c10d9cd4a sage/rings/finite_field_givaro.pyx\n--- a/sage/rings/finite_field_givaro.pyx        Fri Jul 11 11:46:02 2008\n-0700\n+++ b/sage/rings/finite_field_givaro.pyx        Mon Aug 18 16:10:50 2008\n+0200\n@@ -358,7 +358,7 @@ cdef class FiniteField_givaro(FiniteFiel\n         else:\n             return True\n\n-    def random_element(FiniteField_givaro self):\n+    def random_element(FiniteField_givaro self, *args, **kwds):\n         \"\"\"\n         Return a random element of self.\n```\n\nSince I agree with that fix:\n* this needs to be wrapped in an HG patch\n* a doctest needs to be added testing the new behavior \n\nIssue created by migration from https://trac.sagemath.org/ticket/3892\n\n",
     "created_at": "2008-08-18T15:35:03Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_003892.json:
 }
 ```
 Assignee: @malb
-
 
 ```
 sage: P.<x> = PowerSeriesRing(GF(3^3, 'a'))
@@ -44,9 +43,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: random_element() takes no arguments (1 given)
 ```
 
-
 The proposed fix by Hamish Ivey-Law is to add (dummy) `*args` and `**kwds` to `GivaroGFq.random_element`. His patch
-
 
 ```
 diff -r 717c10d9cd4a sage/rings/finite_field_givaro.pyx
@@ -63,7 +60,6 @@ diff -r 717c10d9cd4a sage/rings/finite_field_givaro.pyx
          """
          Return a random element of self.
 ```
-
 
 Since I agree with that fix:
 * this needs to be wrapped in an HG patch

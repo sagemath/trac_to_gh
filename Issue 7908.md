@@ -96,7 +96,7 @@ One more task:
 archive/issue_comments_068638.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n>  * Avoid creating a new cookie (MD5 sum, etc.) for *every* public request.\nI'm not sure about how to set *globally* just one cookie for anonymous visitors.  Setting it `twist.AnonymousToplevel.render` works only for those who visit the login page.  `twist.PublicWorksheet.render` could be a good place.  But it seems we don't actually *use* anonymous cookies, so we could just not generate them at all (see `guard.MySessionWrapper.requestAnonymousAuthentication`).  The sessions do eventually expire; I don't know how much they affect memory use and performance.",
+    "body": "Replying to [comment:2 mpatel]:\n>  * Avoid creating a new cookie (MD5 sum, etc.) for *every* public request.\n \nI'm not sure about how to set *globally* just one cookie for anonymous visitors.  Setting it `twist.AnonymousToplevel.render` works only for those who visit the login page.  `twist.PublicWorksheet.render` could be a good place.  But it seems we don't actually *use* anonymous cookies, so we could just not generate them at all (see `guard.MySessionWrapper.requestAnonymousAuthentication`).  The sessions do eventually expire; I don't know how much they affect memory use and performance.",
     "created_at": "2010-01-15T01:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -107,6 +107,7 @@ archive/issue_comments_068638.json:
 
 Replying to [comment:2 mpatel]:
 >  * Avoid creating a new cookie (MD5 sum, etc.) for *every* public request.
+ 
 I'm not sure about how to set *globally* just one cookie for anonymous visitors.  Setting it `twist.AnonymousToplevel.render` works only for those who visit the login page.  `twist.PublicWorksheet.render` could be a good place.  But it seems we don't actually *use* anonymous cookies, so we could just not generate them at all (see `guard.MySessionWrapper.requestAnonymousAuthentication`).  The sessions do eventually expire; I don't know how much they affect memory use and performance.
 
 
@@ -152,7 +153,7 @@ V11 includes an attempt to reduce flicker and jumping during `interact` updates.
 archive/issue_comments_068641.json:
 ```json
 {
-    "body": "By the way, I've also run a few files through the [pep8 checker](http://pypi.python.org/pypi/pep8/0.4.2) with\n\n```sh\npep8 --repeat --show-source --ignore=E251,E301,E302,E501 foo.py\n```\n",
+    "body": "By the way, I've also run a few files through the [pep8 checker](http://pypi.python.org/pypi/pep8/0.4.2) with\n\n```sh\npep8 --repeat --show-source --ignore=E251,E301,E302,E501 foo.py\n```",
     "created_at": "2010-01-15T03:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -169,13 +170,12 @@ pep8 --repeat --show-source --ignore=E251,E301,E302,E501 foo.py
 
 
 
-
 ---
 
 archive/issue_comments_068642.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> V11 includes an attempt to reduce flicker and jumping during `interact` updates.\nIn particular, we may need to adjust the timing or make it an option.  A `div`'s 'ready' event fires too early.  `DIV`s don't have 'load' events, unfortunately.",
+    "body": "Replying to [comment:5 mpatel]:\n> V11 includes an attempt to reduce flicker and jumping during `interact` updates.\n\nIn particular, we may need to adjust the timing or make it an option.  A `div`'s 'ready' event fires too early.  `DIV`s don't have 'load' events, unfortunately.",
     "created_at": "2010-01-15T21:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -186,6 +186,7 @@ archive/issue_comments_068642.json:
 
 Replying to [comment:5 mpatel]:
 > V11 includes an attempt to reduce flicker and jumping during `interact` updates.
+
 In particular, we may need to adjust the timing or make it an option.  A `div`'s 'ready' event fires too early.  `DIV`s don't have 'load' events, unfortunately.
 
 
@@ -215,7 +216,7 @@ Rebase on a new patch set.
 archive/issue_comments_068644.json:
 ```json
 {
-    "body": "This is the patch set this was rebased on,\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\ntrac_7908-pub_interact_c11.patch\n```\n\n\nPlease check if the rebase went wrong: I can't seem to access worksheet pages.",
+    "body": "This is the patch set this was rebased on,\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\ntrac_2779-sagenb-error-message.patch\n2779_2_banner.patch\ntrac_3154-spurious-u0027-output.patch\ntrac_7969-escaped-backslash.patch\ntrac_7937-sass_manifest.patch\ntrac_4217-html-system-formatting.patch\ntrac_3083-print-documentation.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_5177-delete-cell-dirs.patch\ntrac_7908-pub_interact_c11.patch\n```\n\nPlease check if the rebase went wrong: I can't seem to access worksheet pages.",
     "created_at": "2010-01-17T23:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -225,7 +226,6 @@ archive/issue_comments_068644.json:
 ```
 
 This is the patch set this was rebased on,
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -252,7 +252,6 @@ trac_7962-link-worksheets-zip-file.patch
 trac_5177-delete-cell-dirs.patch
 trac_7908-pub_interact_c11.patch
 ```
-
 
 Please check if the rebase went wrong: I can't seem to access worksheet pages.
 
@@ -299,7 +298,7 @@ Hi Tim, Thanks for piling it on --- in a great way!  I'll try to work through th
 archive/issue_comments_068647.json:
 ```json
 {
-    "body": "Replying to [comment:9 timdumol]:\n> This is the patch set this was rebased on,\n> [...]\n> Please check if the rebase went wrong: I can't seem to access worksheet pages.\n\nIt probably did, given the changes to the queue --- last time I checked, what I posted did work, at least for me.  I would really like this reviewed, given that it's large, I don't want to keep rebasing it (this was transplanted from #6855), implements some potentially useful changes (e.g., JSON-encoding for server-to-client data), and because it's important for #6855.  I'll try to rebase this later this week, after some dust has settled.  Given the many other (and quite welcome) changes afoot right now and the fact that I'm not in Seattle, it doesn't seem practical to this now.",
+    "body": "Replying to [comment:9 timdumol]:\n> This is the patch set this was rebased on,\n> [...]\n> Please check if the rebase went wrong: I can't seem to access worksheet pages.\n\n\nIt probably did, given the changes to the queue --- last time I checked, what I posted did work, at least for me.  I would really like this reviewed, given that it's large, I don't want to keep rebasing it (this was transplanted from #6855), implements some potentially useful changes (e.g., JSON-encoding for server-to-client data), and because it's important for #6855.  I'll try to rebase this later this week, after some dust has settled.  Given the many other (and quite welcome) changes afoot right now and the fact that I'm not in Seattle, it doesn't seem practical to this now.",
     "created_at": "2010-01-19T13:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -312,6 +311,7 @@ Replying to [comment:9 timdumol]:
 > This is the patch set this was rebased on,
 > [...]
 > Please check if the rebase went wrong: I can't seem to access worksheet pages.
+
 
 It probably did, given the changes to the queue --- last time I checked, what I posted did work, at least for me.  I would really like this reviewed, given that it's large, I don't want to keep rebasing it (this was transplanted from #6855), implements some potentially useful changes (e.g., JSON-encoding for server-to-client data), and because it's important for #6855.  I'll try to rebase this later this week, after some dust has settled.  Given the many other (and quite welcome) changes afoot right now and the fact that I'm not in Seattle, it doesn't seem practical to this now.
 
@@ -416,7 +416,7 @@ Rebase of patch to patch set given in comment.
 archive/issue_comments_068653.json:
 ```json
 {
-    "body": "This is the patch set I rebased this on:\n\nsagenb-0.7.5.3 + \n\n\n```\ntrac_5712-interrupt-notification.6.patch\ntrac_7501-codemirror_partB.patch\ntrac_7501-codemirror_partA.patch\ntrac_6069-missing_pub_ws.3.patch\n3154_escaping_quotes.5.patch\ntrac_8249-notebook_cookies.2.patch\ntrac_8436-no_jsmath_for_wrapped.patch\ntrac_8092-init_sage.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_7997-ast-display-hook.patch\ntrac_7633-nb_settings_buttons.patch\ntrac_7633-nb_settings_buttons-reviewer.patch\ntrac_7908-pub_interact_c11.patch\n```\n\n\nI reverted some of the improvements on twist.py (the part with Toplevel's) because it was causing cookie problems. I also renamed cell.py's private variables to use single underscores instead, because that was causing AttributeError's.\n\nI may have made a mistake in the rebasing, because I could not get interacts to work on published worksheets. The controls showed and seemed to work, but the graphics did not display.",
+    "body": "This is the patch set I rebased this on:\n\nsagenb-0.7.5.3 + \n\n```\ntrac_5712-interrupt-notification.6.patch\ntrac_7501-codemirror_partB.patch\ntrac_7501-codemirror_partA.patch\ntrac_6069-missing_pub_ws.3.patch\n3154_escaping_quotes.5.patch\ntrac_8249-notebook_cookies.2.patch\ntrac_8436-no_jsmath_for_wrapped.patch\ntrac_8092-init_sage.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_7997-ast-display-hook.patch\ntrac_7633-nb_settings_buttons.patch\ntrac_7633-nb_settings_buttons-reviewer.patch\ntrac_7908-pub_interact_c11.patch\n```\n\nI reverted some of the improvements on twist.py (the part with Toplevel's) because it was causing cookie problems. I also renamed cell.py's private variables to use single underscores instead, because that was causing AttributeError's.\n\nI may have made a mistake in the rebasing, because I could not get interacts to work on published worksheets. The controls showed and seemed to work, but the graphics did not display.",
     "created_at": "2010-04-09T12:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7908",
     "type": "issue_comment",
@@ -428,7 +428,6 @@ archive/issue_comments_068653.json:
 This is the patch set I rebased this on:
 
 sagenb-0.7.5.3 + 
-
 
 ```
 trac_5712-interrupt-notification.6.patch
@@ -446,7 +445,6 @@ trac_7633-nb_settings_buttons.patch
 trac_7633-nb_settings_buttons-reviewer.patch
 trac_7908-pub_interact_c11.patch
 ```
-
 
 I reverted some of the improvements on twist.py (the part with Toplevel's) because it was causing cookie problems. I also renamed cell.py's private variables to use single underscores instead, because that was causing AttributeError's.
 

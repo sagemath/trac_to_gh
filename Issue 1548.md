@@ -3,7 +3,7 @@
 archive/issues_001548.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2460:\n    sage: v.find_root(0, 0.002)\nExpected:\n    0.0015403270679114178\nGot:\n    0.0015403270679114176\n**********************************************************************\nFile \"calculus.py\", line 2473:\n    sage: a.find_root(0,0.002)\nExpected:\n    0.00041105140493493411\nGot:\n    0.00041105140493493417\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1548\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2460:\n    sage: v.find_root(0, 0.002)\nExpected:\n    0.0015403270679114178\nGot:\n    0.0015403270679114176\n**********************************************************************\nFile \"calculus.py\", line 2473:\n    sage: a.find_root(0,0.002)\nExpected:\n    0.00041105140493493411\nGot:\n    0.00041105140493493417\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1548\n\n",
     "created_at": "2007-12-17T13:32:31Z",
     "labels": [
         "component: doctest coverage",
@@ -17,7 +17,6 @@ archive/issues_001548.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage -t  devel/sage-main/sage/calculus/calculus.py
@@ -37,7 +36,6 @@ Got:
     0.00041105140493493417
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1548
 

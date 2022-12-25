@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9543
 archive/issue_comments_091801.json:
 ```json
 {
-    "body": "I made an spkg at http://sage.math.washington.edu/home/mhansen/cephes-2.8.p0.spkg , but I get the following build error on Cygwin:\n\n\n```\n\n /usr/lib/gcc/i686-pc-cygwin/4.3.4/collect2.exe -tsaware --wrap _Znwj --wrap _Znaj --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwjRKSt9nothrow_t --wrap _ZnajRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg -u ___register_frame_info -u ___deregister_frame_info -o mtst.exe /usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../crt0.o /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtbegin.o -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../.. mtst.o cmplx.o clog.o cgamma.o stubs.o -lm -lgcc_s -lgcc -lgcc_eh -lcygwin -luser32 -lkernel32 -ladvapi32 -lshell32 -lgcc_s -lgcc -lgcc_eh /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtend.o\ngcc  -I. -g -O2 -Wall   -c -o cvect.o cvect.c\ncvect.c: In function \u2018main\u2019:\ncvect.c:130: warning: implicit declaration of function \u2018memcmp\u2019\ncvect.c:223: warning: implicit declaration of function \u2018exit\u2019\ncvect.c:223: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -o cvect cvect.o clog.o cmplx.o stubs.o -lm\ngcc  -I. -g -O2 -Wall -c dccalc.c\ngcc -o dccalc dccalc.o libmc.a stubs.o -lm\ngcc  -I. -g -O2 -Wall   -c -o mtstf.o mtstf.c\ngcc -o mtstf mtstf.o cmplxf.o clogf.o cgammaf.o stubs.o -lm\nmake: *** No rule to make target `whitebxf.c', needed by `whitebxf.o'.  Stop.\n```\n",
+    "body": "I made an spkg at http://sage.math.washington.edu/home/mhansen/cephes-2.8.p0.spkg , but I get the following build error on Cygwin:\n\n```\n\n /usr/lib/gcc/i686-pc-cygwin/4.3.4/collect2.exe -tsaware --wrap _Znwj --wrap _Znaj --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwjRKSt9nothrow_t --wrap _ZnajRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg -u ___register_frame_info -u ___deregister_frame_info -o mtst.exe /usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../crt0.o /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtbegin.o -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../.. mtst.o cmplx.o clog.o cgamma.o stubs.o -lm -lgcc_s -lgcc -lgcc_eh -lcygwin -luser32 -lkernel32 -ladvapi32 -lshell32 -lgcc_s -lgcc -lgcc_eh /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtend.o\ngcc  -I. -g -O2 -Wall   -c -o cvect.o cvect.c\ncvect.c: In function \u2018main\u2019:\ncvect.c:130: warning: implicit declaration of function \u2018memcmp\u2019\ncvect.c:223: warning: implicit declaration of function \u2018exit\u2019\ncvect.c:223: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -o cvect cvect.o clog.o cmplx.o stubs.o -lm\ngcc  -I. -g -O2 -Wall -c dccalc.c\ngcc -o dccalc dccalc.o libmc.a stubs.o -lm\ngcc  -I. -g -O2 -Wall   -c -o mtstf.o mtstf.c\ngcc -o mtstf mtstf.o cmplxf.o clogf.o cgammaf.o stubs.o -lm\nmake: *** No rule to make target `whitebxf.c', needed by `whitebxf.o'.  Stop.\n```",
     "created_at": "2010-10-12T01:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -43,7 +43,6 @@ archive/issue_comments_091801.json:
 ```
 
 I made an spkg at http://sage.math.washington.edu/home/mhansen/cephes-2.8.p0.spkg , but I get the following build error on Cygwin:
-
 
 ```
 
@@ -60,7 +59,6 @@ gcc  -I. -g -O2 -Wall   -c -o mtstf.o mtstf.c
 gcc -o mtstf mtstf.o cmplxf.o clogf.o cgammaf.o stubs.o -lm
 make: *** No rule to make target `whitebxf.c', needed by `whitebxf.o'.  Stop.
 ```
-
 
 
 
@@ -107,7 +105,7 @@ Also, it would be really nice to make it more uniform: when possible, use the sa
 archive/issue_comments_091804.json:
 ```json
 {
-    "body": "Replying to [comment:4 jdemeyer]:\n> Note that patches should now be applied by using `patch` instead of `cp`.\n> \n> Also, it would be really nice to make it more uniform: when possible, use the same patches both for Cygwin and for FreeBSD.\nOf course, though with Cygwin development halted for a bit that may not be as crucial.",
+    "body": "Replying to [comment:4 jdemeyer]:\n> Note that patches should now be applied by using `patch` instead of `cp`.\n> \n> Also, it would be really nice to make it more uniform: when possible, use the same patches both for Cygwin and for FreeBSD.\n\nOf course, though with Cygwin development halted for a bit that may not be as crucial.",
     "created_at": "2012-01-24T14:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -120,6 +118,7 @@ Replying to [comment:4 jdemeyer]:
 > Note that patches should now be applied by using `patch` instead of `cp`.
 > 
 > Also, it would be really nice to make it more uniform: when possible, use the same patches both for Cygwin and for FreeBSD.
+
 Of course, though with Cygwin development halted for a bit that may not be as crucial.
 
 
@@ -165,7 +164,7 @@ See [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_th
 archive/issue_comments_091807.json:
 ```json
 {
-    "body": "I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.  Once a dynamic library has been created, apparently there is no mechanism for merging it with other dynamic libraries.\n\nMy solution was to slightly modify pjeremy's patch so that it creates a library libm_complex.so.  The following patch should be applied to pjeremy's patch:\n\n\n```\n--- cephes-2.8\t2012-04-14 01:39:13.000000000 +0000\n+++ cephes-2.8\t2012-04-14 01:38:51.000000000 +0000\n@@ -1273,11 +1273,11 @@\n +# Intermediate (ar) libraries\n +LIBS=c9x-complex/libmc.a double/libmd.a ldouble/libml.a single/libmf.a\n +\n-+all: libm.so\n++all: libm_complex.so\n +\n-+install: libm.so complex.h math.h\n++install: libm_complex.so complex.h math.h\n +\t${INSTALL} -C -m 644 complex.h math.h \"${SAGE_LOCAL}/include\"\n-+\t${INSTALL} -C -m 755 libm.so \"${SAGE_LOCAL}/lib\"\n++\t${INSTALL} -C -m 755 libm_complex.so \"${SAGE_LOCAL}/lib\"\n +\n +check:\n +\tcd c9x-complex && ${MAKE} \"CC=${CC}\" check\n@@ -1291,7 +1291,7 @@\n +#\tTBD\n +\n +clean:\n-+\trm -f libm.so syms.c99 syms.libm syms.wanted\n++\trm -f libm_complex.so syms.c99 syms.libm syms.wanted\n +\tcd c9x-complex && ${MAKE} clean\n +\tcd double && ${MAKE} clean\n +\tcd ldouble && ${MAKE} clean\n@@ -1300,8 +1300,8 @@\n +# FreeBSD includes some but not all of the C99 maths functions.  Build\n +# a \"new\" libm.so that uses cephes functions to replace the missing ones\n +# (listed in syms.wanted) and then fallback to the base libm.so\n-+libm.so: ${LIBS} syms.wanted\n-+\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib -lc -lm \\\n++libm_complex.so: ${LIBS} syms.wanted\n++\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib \\\n +\t   ${LIBS} -lgcc\n +\n +# List of symbols defined in the FreeBSD base libc.so and libm.so\n```\n\n\nThen I put a script in $SAGE_ROOT/local/bin called \"cc\" which is a wrapper around the cc I really want to use:\n\n\n```/usr/local/bin/bash\n\n# Intersperse a \"-lm_complex\" before \"-lm\".\n\nn=0\nfor i in \"$@\"; do\n  if [ \"x$i\" = \"x-lm\" ]; then\n    arg[$n]=\"-lm_complex\"\n    n=$((n+1))\n    arg[$n]=\"-lm\"\n  else\n    arg[$n]=\"$i\"\n  fi\n  n=$((n+1))\ndone\n\n# Some configure scripts invoke the compiler with the argument \"-v\", and if\n# LDFLAGS are added to the arguments, this results in an error which\n# ultimately stops the relevant package being built.\n\n# Otherwise LDFLAGS needs to be added so that the linker knows where to find\n# the dynamic libraries.\n\nif [ $n = 1 -a \"x${arg[0]}\" = \"x-v\" ]; then\n  exec /usr/local/bin/gcc46 \"${arg[@]}\"\nelse\n  exec /usr/local/bin/gcc46 -Wl,-rpath=$SAGE_ROOT/local/lib  -Wl,-rpath=/usr/local/lib/gcc46 \"${arg[@]}\"\nfi\n```\n",
+    "body": "I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.  Once a dynamic library has been created, apparently there is no mechanism for merging it with other dynamic libraries.\n\nMy solution was to slightly modify pjeremy's patch so that it creates a library libm_complex.so.  The following patch should be applied to pjeremy's patch:\n\n```\n--- cephes-2.8\t2012-04-14 01:39:13.000000000 +0000\n+++ cephes-2.8\t2012-04-14 01:38:51.000000000 +0000\n@@ -1273,11 +1273,11 @@\n +# Intermediate (ar) libraries\n +LIBS=c9x-complex/libmc.a double/libmd.a ldouble/libml.a single/libmf.a\n +\n-+all: libm.so\n++all: libm_complex.so\n +\n-+install: libm.so complex.h math.h\n++install: libm_complex.so complex.h math.h\n +\t${INSTALL} -C -m 644 complex.h math.h \"${SAGE_LOCAL}/include\"\n-+\t${INSTALL} -C -m 755 libm.so \"${SAGE_LOCAL}/lib\"\n++\t${INSTALL} -C -m 755 libm_complex.so \"${SAGE_LOCAL}/lib\"\n +\n +check:\n +\tcd c9x-complex && ${MAKE} \"CC=${CC}\" check\n@@ -1291,7 +1291,7 @@\n +#\tTBD\n +\n +clean:\n-+\trm -f libm.so syms.c99 syms.libm syms.wanted\n++\trm -f libm_complex.so syms.c99 syms.libm syms.wanted\n +\tcd c9x-complex && ${MAKE} clean\n +\tcd double && ${MAKE} clean\n +\tcd ldouble && ${MAKE} clean\n@@ -1300,8 +1300,8 @@\n +# FreeBSD includes some but not all of the C99 maths functions.  Build\n +# a \"new\" libm.so that uses cephes functions to replace the missing ones\n +# (listed in syms.wanted) and then fallback to the base libm.so\n-+libm.so: ${LIBS} syms.wanted\n-+\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib -lc -lm \\\n++libm_complex.so: ${LIBS} syms.wanted\n++\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib \\\n +\t   ${LIBS} -lgcc\n +\n +# List of symbols defined in the FreeBSD base libc.so and libm.so\n```\n\nThen I put a script in $SAGE_ROOT/local/bin called \"cc\" which is a wrapper around the cc I really want to use:\n\n```/usr/local/bin/bash\n\n# Intersperse a \"-lm_complex\" before \"-lm\".\n\nn=0\nfor i in \"$@\"; do\n  if [ \"x$i\" = \"x-lm\" ]; then\n    arg[$n]=\"-lm_complex\"\n    n=$((n+1))\n    arg[$n]=\"-lm\"\n  else\n    arg[$n]=\"$i\"\n  fi\n  n=$((n+1))\ndone\n\n# Some configure scripts invoke the compiler with the argument \"-v\", and if\n# LDFLAGS are added to the arguments, this results in an error which\n# ultimately stops the relevant package being built.\n\n# Otherwise LDFLAGS needs to be added so that the linker knows where to find\n# the dynamic libraries.\n\nif [ $n = 1 -a \"x${arg[0]}\" = \"x-v\" ]; then\n  exec /usr/local/bin/gcc46 \"${arg[@]}\"\nelse\n  exec /usr/local/bin/gcc46 -Wl,-rpath=$SAGE_ROOT/local/lib  -Wl,-rpath=/usr/local/lib/gcc46 \"${arg[@]}\"\nfi\n```",
     "created_at": "2012-04-14T03:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -177,7 +176,6 @@ archive/issue_comments_091807.json:
 I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.  Once a dynamic library has been created, apparently there is no mechanism for merging it with other dynamic libraries.
 
 My solution was to slightly modify pjeremy's patch so that it creates a library libm_complex.so.  The following patch should be applied to pjeremy's patch:
-
 
 ```
 --- cephes-2.8	2012-04-14 01:39:13.000000000 +0000
@@ -219,9 +217,7 @@ My solution was to slightly modify pjeremy's patch so that it creates a library 
  +# List of symbols defined in the FreeBSD base libc.so and libm.so
 ```
 
-
 Then I put a script in $SAGE_ROOT/local/bin called "cc" which is a wrapper around the cc I really want to use:
-
 
 ```/usr/local/bin/bash
 
@@ -255,13 +251,12 @@ fi
 
 
 
-
 ---
 
 archive/issue_comments_091808.json:
 ```json
 {
-    "body": "Replying to [comment:8 stephen]:\n> I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\nAre you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n\nI'm willing to experiment with this if somebody could give me access to a FreeBSD box.",
+    "body": "Replying to [comment:8 stephen]:\n> I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\n\nAre you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n\nI'm willing to experiment with this if somebody could give me access to a FreeBSD box.",
     "created_at": "2012-04-14T09:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -272,6 +267,7 @@ archive/issue_comments_091808.json:
 
 Replying to [comment:8 stephen]:
 > I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.
+
 Are you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).
 
 I'm willing to experiment with this if somebody could give me access to a FreeBSD box.
@@ -283,7 +279,7 @@ I'm willing to experiment with this if somebody could give me access to a FreeBS
 archive/issue_comments_091809.json:
 ```json
 {
-    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 stephen]:\n> > I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\n> Are you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n> \n> I'm willing to experiment with this if somebody could give me access to a FreeBSD box.\n\nNo I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n\nLet me think some more about this.",
+    "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 stephen]:\n> > I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\n\n> Are you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n> \n> I'm willing to experiment with this if somebody could give me access to a FreeBSD box.\n\n\nNo I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n\nLet me think some more about this.",
     "created_at": "2012-04-14T12:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -295,9 +291,11 @@ archive/issue_comments_091809.json:
 Replying to [comment:9 jdemeyer]:
 > Replying to [comment:8 stephen]:
 > > I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.
+
 > Are you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).
 > 
 > I'm willing to experiment with this if somebody could give me access to a FreeBSD box.
+
 
 No I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.
 
@@ -310,7 +308,7 @@ Let me think some more about this.
 archive/issue_comments_091810.json:
 ```json
 {
-    "body": "Replying to [comment:10 stephen]:\n\n> No I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n> \n> Let me think some more about this.\n\nIt looks like I found the problem.  I was building under a chroot'ed environment.  I have discovered that after I perform the \n\n```\nchroot /usr/jail\n```\n\nI need to do\n\n```\nsh /etc/rc.d/ldconfig start\n```\n\nIt looks like I only need to do this one time.\n\nThanks for sticking with me on this guys.  It looks like pjeremy's patch works, as is, with no changes.",
+    "body": "Replying to [comment:10 stephen]:\n\n> No I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n> \n> Let me think some more about this.\n\n\nIt looks like I found the problem.  I was building under a chroot'ed environment.  I have discovered that after I perform the \n\n```\nchroot /usr/jail\n```\nI need to do\n\n```\nsh /etc/rc.d/ldconfig start\n```\nIt looks like I only need to do this one time.\n\nThanks for sticking with me on this guys.  It looks like pjeremy's patch works, as is, with no changes.",
     "created_at": "2012-04-14T17:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -325,18 +323,17 @@ Replying to [comment:10 stephen]:
 > 
 > Let me think some more about this.
 
+
 It looks like I found the problem.  I was building under a chroot'ed environment.  I have discovered that after I perform the 
 
 ```
 chroot /usr/jail
 ```
-
 I need to do
 
 ```
 sh /etc/rc.d/ldconfig start
 ```
-
 It looks like I only need to do this one time.
 
 Thanks for sticking with me on this guys.  It looks like pjeremy's patch works, as is, with no changes.
@@ -403,7 +400,7 @@ http://boxen.math.washington.edu/home/jpflori/cephes-2.8.p0.spkg
 archive/issue_comments_091814.json:
 ```json
 {
-    "body": "Trivial error\n\n```\nif [ \"$UNAME\" != \"FreeBSD\" ]; then \n    echo \"We only install the cephes library on Cygwin and FreeBSD.\" \n    exit 0 \nfi\n```\n\nAnyway, I'm trying this on Cygwin now.",
+    "body": "Trivial error\n\n```\nif [ \"$UNAME\" != \"FreeBSD\" ]; then \n    echo \"We only install the cephes library on Cygwin and FreeBSD.\" \n    exit 0 \nfi\n```\nAnyway, I'm trying this on Cygwin now.",
     "created_at": "2013-01-04T15:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -420,7 +417,6 @@ if [ "$UNAME" != "FreeBSD" ]; then
     exit 0 
 fi
 ```
-
 Anyway, I'm trying this on Cygwin now.
 
 
@@ -480,7 +476,7 @@ rather that the answers should be particularly accurate.
 archive/issue_comments_091816.json:
 ```json
 {
-    "body": "Replying to [comment:17 stephen]:\n> Regarding testing the cephes library - I don't think it is fair to\n> expect them to give super accurate answers.  I believe that the linux\n> library functions will fail in the same way.  Same with OpenBSD.\nI'm not sure anyone was suggesting doing this, just to at least *provide* such functions on Cygwin.\n> Anyway, all this is to say that you shouldn't hold the cephes libraries\n> up to any kind of high standard.  Treat them as work arounds so that\n> ccosh and such like will actually be compiled into sage on FreeBSD,\n> rather that the answers should be particularly accurate.\nHopefully that is all we are asking for!  I'm going to change the description to point out that we really just want this.\n\n----\n\nSo... would you mind checking (at your convenience) whether this spkg indeed does the same thing as the patches from before and at [your port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-cephes_-_big-patch)?  Then if it works on Cygwin (i.e., if Cygwin doesn't need it) we can merge this and simplify things slightly.",
+    "body": "Replying to [comment:17 stephen]:\n> Regarding testing the cephes library - I don't think it is fair to\n> expect them to give super accurate answers.  I believe that the linux\n> library functions will fail in the same way.  Same with OpenBSD.\n\nI'm not sure anyone was suggesting doing this, just to at least *provide* such functions on Cygwin.\n> Anyway, all this is to say that you shouldn't hold the cephes libraries\n> up to any kind of high standard.  Treat them as work arounds so that\n> ccosh and such like will actually be compiled into sage on FreeBSD,\n> rather that the answers should be particularly accurate.\n\nHopefully that is all we are asking for!  I'm going to change the description to point out that we really just want this.\n\n---\n\nSo... would you mind checking (at your convenience) whether this spkg indeed does the same thing as the patches from before and at [your port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-cephes_-_big-patch)?  Then if it works on Cygwin (i.e., if Cygwin doesn't need it) we can merge this and simplify things slightly.",
     "created_at": "2013-01-04T17:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -493,14 +489,16 @@ Replying to [comment:17 stephen]:
 > Regarding testing the cephes library - I don't think it is fair to
 > expect them to give super accurate answers.  I believe that the linux
 > library functions will fail in the same way.  Same with OpenBSD.
+
 I'm not sure anyone was suggesting doing this, just to at least *provide* such functions on Cygwin.
 > Anyway, all this is to say that you shouldn't hold the cephes libraries
 > up to any kind of high standard.  Treat them as work arounds so that
 > ccosh and such like will actually be compiled into sage on FreeBSD,
 > rather that the answers should be particularly accurate.
+
 Hopefully that is all we are asking for!  I'm going to change the description to point out that we really just want this.
 
-----
+---
 
 So... would you mind checking (at your convenience) whether this spkg indeed does the same thing as the patches from before and at [your port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-cephes_-_big-patch)?  Then if it works on Cygwin (i.e., if Cygwin doesn't need it) we can merge this and simplify things slightly.
 
@@ -529,7 +527,7 @@ Changing status from new to needs_review.
 archive/issue_comments_091818.json:
 ```json
 {
-    "body": "This new spkg failed to build rather early in the process:\n\n\n\n```\nFound package cephes-2.8.p0 in spkg/standard/cephes-2.8.p0.spkg\ncephes-2.8.p0\n====================================================\nExtracting package /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\n-rw-r--r--  1 stephen  staff  2514467 Jan  4 20:36 /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\nFinished extraction\n****************************************************\nHost system:\nFreeBSD wilberforce 8.3-STABLE FreeBSD 8.3-STABLE #0: Wed Jan  2 15:53:46 CST 2013     root@wilberforce:/usr/obj/usr/src/sys/GENERIC  amd64\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/usr/local/bin/gcc46\nCOLLECT_LTO_WRAPPER=/usr/local/libexec/gcc46/gcc/x86_64-portbld-freebsd8.3/4.6.3/lto-wrapper\nTarget: x86_64-portbld-freebsd8.3\nConfigured with: ./../gcc-4.6.3/configure --disable-bootstrap --disable-nls --libdir=/usr/local/lib/gcc46 --libexecdir=/usr/local/libexec/gcc46 --program-suffix=46 --with-as=/usr/local/bin/as --with-gmp=/usr/local --with-gxx-include-dir=/usr/local/lib/gcc46/include/c++/ --with-ld=/usr/local/bin/ld --with-libiconv-prefix=/usr/local --with-pkgversion='FreeBSD Ports Collection' --with-system-zlib --enable-languages=c,c++,objc,fortran,java --prefix=/usr/local --mandir=/usr/local/man --infodir=/usr/local/info/gcc46 --build=x86_64-portbld-freebsd8.3\nThread model: posix\ngcc version 4.6.3 (FreeBSD Ports Collection)\n****************************************************\nApplying patches (if any)...\npatching file c9x-complex/cgamma.c\npatching file c9x-complex/cgammaf.c\npatching file c9x-complex/cgammal.c\npatching file c9x-complex/makefile\npatching file double/makefile\npatching file ldouble/gammal.c\npatching file ldouble/makefile\npatching file Makefile\n./spkg-install: line 21: check_error: command not found\nBuilding Cephes...\nmake[3]: Entering directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nmake[3]: *** No rule to make target `../patches/complex_bsd.h', needed by `c9x-complex/complex.h'.  Stop.\nmake[3]: Leaving directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nError - Failed to build Cephes ... exiting\n\nreal    0m0.025s\nuser    0m0.002s\nsys     0m0.013s\n************************************************************************\nError installing package cephes-2.8.p0\n************************************************************************\n```\n",
+    "body": "This new spkg failed to build rather early in the process:\n\n\n```\nFound package cephes-2.8.p0 in spkg/standard/cephes-2.8.p0.spkg\ncephes-2.8.p0\n====================================================\nExtracting package /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\n-rw-r--r--  1 stephen  staff  2514467 Jan  4 20:36 /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\nFinished extraction\n****************************************************\nHost system:\nFreeBSD wilberforce 8.3-STABLE FreeBSD 8.3-STABLE #0: Wed Jan  2 15:53:46 CST 2013     root@wilberforce:/usr/obj/usr/src/sys/GENERIC  amd64\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/usr/local/bin/gcc46\nCOLLECT_LTO_WRAPPER=/usr/local/libexec/gcc46/gcc/x86_64-portbld-freebsd8.3/4.6.3/lto-wrapper\nTarget: x86_64-portbld-freebsd8.3\nConfigured with: ./../gcc-4.6.3/configure --disable-bootstrap --disable-nls --libdir=/usr/local/lib/gcc46 --libexecdir=/usr/local/libexec/gcc46 --program-suffix=46 --with-as=/usr/local/bin/as --with-gmp=/usr/local --with-gxx-include-dir=/usr/local/lib/gcc46/include/c++/ --with-ld=/usr/local/bin/ld --with-libiconv-prefix=/usr/local --with-pkgversion='FreeBSD Ports Collection' --with-system-zlib --enable-languages=c,c++,objc,fortran,java --prefix=/usr/local --mandir=/usr/local/man --infodir=/usr/local/info/gcc46 --build=x86_64-portbld-freebsd8.3\nThread model: posix\ngcc version 4.6.3 (FreeBSD Ports Collection)\n****************************************************\nApplying patches (if any)...\npatching file c9x-complex/cgamma.c\npatching file c9x-complex/cgammaf.c\npatching file c9x-complex/cgammal.c\npatching file c9x-complex/makefile\npatching file double/makefile\npatching file ldouble/gammal.c\npatching file ldouble/makefile\npatching file Makefile\n./spkg-install: line 21: check_error: command not found\nBuilding Cephes...\nmake[3]: Entering directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nmake[3]: *** No rule to make target `../patches/complex_bsd.h', needed by `c9x-complex/complex.h'.  Stop.\nmake[3]: Leaving directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nError - Failed to build Cephes ... exiting\n\nreal    0m0.025s\nuser    0m0.002s\nsys     0m0.013s\n************************************************************************\nError installing package cephes-2.8.p0\n************************************************************************\n```",
     "created_at": "2013-01-04T20:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -539,7 +537,6 @@ archive/issue_comments_091818.json:
 ```
 
 This new spkg failed to build rather early in the process:
-
 
 
 ```
@@ -589,7 +586,6 @@ Error installing package cephes-2.8.p0
 
 
 
-
 ---
 
 archive/issue_comments_091819.json:
@@ -613,7 +609,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_091820.json:
 ```json
 {
-    "body": "\n```\n./spkg-install: line 21: check_error: command not found\n```\n\nJP, I think you might have used that command from a different spkg we've been working on.  So that's two things... and then the third is that the `complex_bsd.h` is completely missing from pjeremy's patch to yours.\n----\nStill waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CHECK`.",
+    "body": "```\n./spkg-install: line 21: check_error: command not found\n```\nJP, I think you might have used that command from a different spkg we've been working on.  So that's two things... and then the third is that the `complex_bsd.h` is completely missing from pjeremy's patch to yours.\n\n---\nStill waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CHECK`.",
     "created_at": "2013-01-04T20:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -622,13 +618,12 @@ archive/issue_comments_091820.json:
 }
 ```
 
-
 ```
 ./spkg-install: line 21: check_error: command not found
 ```
-
 JP, I think you might have used that command from a different spkg we've been working on.  So that's two things... and then the third is that the `complex_bsd.h` is completely missing from pjeremy's patch to yours.
-----
+
+---
 Still waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CHECK`.
 
 
@@ -638,7 +633,7 @@ Still waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CH
 archive/issue_comments_091821.json:
 ```json
 {
-    "body": "Cygwin is fine, unsurprisingly, though of course the message is a little funny\n\n```\n...\ngcc version 4.5.3 (GCC)\nWe only install the cephes library on Cygwin and FreeBSD.\n\nreal ...\nuser ...\nsys ...\nSuccessfully installed cephes-2.8.p0\n...\n```\n",
+    "body": "Cygwin is fine, unsurprisingly, though of course the message is a little funny\n\n```\n...\ngcc version 4.5.3 (GCC)\nWe only install the cephes library on Cygwin and FreeBSD.\n\nreal ...\nuser ...\nsys ...\nSuccessfully installed cephes-2.8.p0\n...\n```",
     "created_at": "2013-01-07T14:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -660,7 +655,6 @@ sys ...
 Successfully installed cephes-2.8.p0
 ...
 ```
-
 
 
 
@@ -744,7 +738,7 @@ This is fine from my point of view.  If Stephen can check whether it performs as
 archive/issue_comments_091826.json:
 ```json
 {
-    "body": "Replying to [comment:23 kcrisman]:\n> This is fine from my point of view.  If Stephen can check whether it performs as promised then we'll be set.\nAgreed!\n\nQuite strangely, I don't have access to a FreeBSD box :) (although I vaguely remember trying to setup one once)",
+    "body": "Replying to [comment:23 kcrisman]:\n> This is fine from my point of view.  If Stephen can check whether it performs as promised then we'll be set.\n\nAgreed!\n\nQuite strangely, I don't have access to a FreeBSD box :) (although I vaguely remember trying to setup one once)",
     "created_at": "2013-01-07T15:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -755,6 +749,7 @@ archive/issue_comments_091826.json:
 
 Replying to [comment:23 kcrisman]:
 > This is fine from my point of view.  If Stephen can check whether it performs as promised then we'll be set.
+
 Agreed!
 
 Quite strangely, I don't have access to a FreeBSD box :) (although I vaguely remember trying to setup one once)
@@ -766,7 +761,7 @@ Quite strangely, I don't have access to a FreeBSD box :) (although I vaguely rem
 archive/issue_comments_091827.json:
 ```json
 {
-    "body": "It still fails with the \"complex_bsd.h\" no rule message.\n\nI looked at Jeremy's patch, and it seemed to me that it did create math_bsd.h and complex_bsd.h.  For example, it has lines like this:\n\n\n```\n--- cephes-2.8/patches/complex_bsd.h.orig       2010-07-26 08:25:54.654310990 +1000\n+++ cephes-2.8/patches/complex_bsd.h    2010-07-26 08:25:54.658310309 +1000\n```\n\n\nThis is a diff against a non-existent file, using the \"-N\" option to diff.  The patch program creates a new file.\n\nMakefile then copies this from cephes-2.8/patches to where-ever it is needed.  I would probably change the patch so that it is created directly in the directory where it is needed.",
+    "body": "It still fails with the \"complex_bsd.h\" no rule message.\n\nI looked at Jeremy's patch, and it seemed to me that it did create math_bsd.h and complex_bsd.h.  For example, it has lines like this:\n\n```\n--- cephes-2.8/patches/complex_bsd.h.orig       2010-07-26 08:25:54.654310990 +1000\n+++ cephes-2.8/patches/complex_bsd.h    2010-07-26 08:25:54.658310309 +1000\n```\n\nThis is a diff against a non-existent file, using the \"-N\" option to diff.  The patch program creates a new file.\n\nMakefile then copies this from cephes-2.8/patches to where-ever it is needed.  I would probably change the patch so that it is created directly in the directory where it is needed.",
     "created_at": "2013-01-07T20:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -779,12 +774,10 @@ It still fails with the "complex_bsd.h" no rule message.
 
 I looked at Jeremy's patch, and it seemed to me that it did create math_bsd.h and complex_bsd.h.  For example, it has lines like this:
 
-
 ```
 --- cephes-2.8/patches/complex_bsd.h.orig       2010-07-26 08:25:54.654310990 +1000
 +++ cephes-2.8/patches/complex_bsd.h    2010-07-26 08:25:54.658310309 +1000
 ```
-
 
 This is a diff against a non-existent file, using the "-N" option to diff.  The patch program creates a new file.
 
@@ -815,7 +808,7 @@ Oh, and the reason it worked so well with cygwin is because it didn't do anythin
 archive/issue_comments_091829.json:
 ```json
 {
-    "body": "> Oh, and the reason it worked so well with cygwin is because it didn't do anything.\nYes, understood.",
+    "body": "> Oh, and the reason it worked so well with cygwin is because it didn't do anything.\n\nYes, understood.",
     "created_at": "2013-01-07T21:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -825,6 +818,7 @@ archive/issue_comments_091829.json:
 ```
 
 > Oh, and the reason it worked so well with cygwin is because it didn't do anything.
+
 Yes, understood.
 
 
@@ -950,7 +944,7 @@ And the spkg-install looks good to me.  Assuming that you formed it correctly, t
 archive/issue_comments_091836.json:
 ```json
 {
-    "body": "Sorry to be annoying but could you please document *why* we need cephes on FreeBSD? Preferably something should be mentioned in `SPKG.txt`. In the ticket description I only see\n> FreeBSD does not currently have a full C99 libm and therefore also needs cephes\nwhich is very vague.",
+    "body": "Sorry to be annoying but could you please document *why* we need cephes on FreeBSD? Preferably something should be mentioned in `SPKG.txt`. In the ticket description I only see\n> FreeBSD does not currently have a full C99 libm and therefore also needs cephes\n\nwhich is very vague.",
     "created_at": "2013-01-09T09:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -961,6 +955,7 @@ archive/issue_comments_091836.json:
 
 Sorry to be annoying but could you please document *why* we need cephes on FreeBSD? Preferably something should be mentioned in `SPKG.txt`. In the ticket description I only see
 > FreeBSD does not currently have a full C99 libm and therefore also needs cephes
+
 which is very vague.
 
 
@@ -970,7 +965,7 @@ which is very vague.
 archive/issue_comments_091837.json:
 ```json
 {
-    "body": "FreeBSD's math library does not have all the mathematics functions described in Sections 7.3 and 7.12 of the C99 standard:\n\n```\nhttp://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf\n```\n\nSpecifically many of the complex and long double functions are missing in FreeBSD.\n\nCephes provides those functions that are missing from FreeBSD.  The Makefiles have been modified so that it only adds those functions missing from the version of FreeBSD in which compilation is taking place.",
+    "body": "FreeBSD's math library does not have all the mathematics functions described in Sections 7.3 and 7.12 of the C99 standard:\n\n```\nhttp://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf\n```\nSpecifically many of the complex and long double functions are missing in FreeBSD.\n\nCephes provides those functions that are missing from FreeBSD.  The Makefiles have been modified so that it only adds those functions missing from the version of FreeBSD in which compilation is taking place.",
     "created_at": "2013-01-09T13:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
@@ -984,7 +979,6 @@ FreeBSD's math library does not have all the mathematics functions described in 
 ```
 http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf
 ```
-
 Specifically many of the complex and long double functions are missing in FreeBSD.
 
 Cephes provides those functions that are missing from FreeBSD.  The Makefiles have been modified so that it only adds those functions missing from the version of FreeBSD in which compilation is taking place.

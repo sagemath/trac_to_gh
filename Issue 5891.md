@@ -164,7 +164,7 @@ Where is categories-nt.patch itself?
 archive/issue_comments_046492.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> Where is categories-nt.patch itself? \n\nOn the sage-combinat patch server. It changes too often to keep it updated on trac.\nI highlighted the link on top of the description (and improved the ReSTing)",
+    "body": "Replying to [comment:8 robertwb]:\n> Where is categories-nt.patch itself? \n\n\nOn the sage-combinat patch server. It changes too often to keep it updated on trac.\nI highlighted the link on top of the description (and improved the ReSTing)",
     "created_at": "2009-05-14T23:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -175,6 +175,7 @@ archive/issue_comments_046492.json:
 
 Replying to [comment:8 robertwb]:
 > Where is categories-nt.patch itself? 
+
 
 On the sage-combinat patch server. It changes too often to keep it updated on trac.
 I highlighted the link on top of the description (and improved the ReSTing)
@@ -348,7 +349,7 @@ Changing status from new to needs_work.
 archive/issue_comments_046502.json:
 ```json
 {
-    "body": "NOTES:\n\n  (1) Post the latest version here -- I don't want to mess with the patch server.\n\n  (2) It says \"Experts: please redefine this properly and/or put CC/RR/... in NumberFields()\".  I number field is by definition a finite extension of QQ, but CC and RR are infinite extensions of QQ.  So we can't put them in that category.   Having a function is_NumberFieldHomsetCodomain does seem like a good workaround for now.\n\n  (3) The function is_NumberFieldHomsetCodomain in the patch posted here doesn't have any documentation or doctests. Please add them. \n\n  (4) I would change these two lines:\n\n```\n        143\t        if is_Field(codomain): \n \t144\t            return True \n```\n\nto the single line \n\n```\n        143\t        return is_Field(codomain)\n```\n\nwhich should be functionally the same, and clearer to read. \n\n   (5) in a similar spirit, I would change\n\n```\n        145\t    except: \n \t146\t        pass     \n \t147\t    return False \n```\n\nto just\n\n```\n        145\t    except: \n \t146\t        return False\n```\n\nwhich is again clearer and equivalent. \n\n    (6) I'm puzzled by this in your number_field_rel.py patch:\n\n```\n\t543\t            return NotImplemented \n```\n\n\nWhat is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.",
+    "body": "NOTES:\n\n  (1) Post the latest version here -- I don't want to mess with the patch server.\n\n  (2) It says \"Experts: please redefine this properly and/or put CC/RR/... in NumberFields()\".  I number field is by definition a finite extension of QQ, but CC and RR are infinite extensions of QQ.  So we can't put them in that category.   Having a function is_NumberFieldHomsetCodomain does seem like a good workaround for now.\n\n  (3) The function is_NumberFieldHomsetCodomain in the patch posted here doesn't have any documentation or doctests. Please add them. \n\n  (4) I would change these two lines:\n\n```\n        143\t        if is_Field(codomain): \n \t144\t            return True \n```\nto the single line \n\n```\n        143\t        return is_Field(codomain)\n```\nwhich should be functionally the same, and clearer to read. \n\n   (5) in a similar spirit, I would change\n\n```\n        145\t    except: \n \t146\t        pass     \n \t147\t    return False \n```\nto just\n\n```\n        145\t    except: \n \t146\t        return False\n```\nwhich is again clearer and equivalent. \n\n    (6) I'm puzzled by this in your number_field_rel.py patch:\n\n```\n\t543\t            return NotImplemented \n```\n\nWhat is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.",
     "created_at": "2009-11-10T06:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -371,13 +372,11 @@ NOTES:
         143	        if is_Field(codomain): 
  	144	            return True 
 ```
-
 to the single line 
 
 ```
         143	        return is_Field(codomain)
 ```
-
 which should be functionally the same, and clearer to read. 
 
    (5) in a similar spirit, I would change
@@ -387,14 +386,12 @@ which should be functionally the same, and clearer to read.
  	146	        pass     
  	147	    return False 
 ```
-
 to just
 
 ```
         145	    except: 
  	146	        return False
 ```
-
 which is again clearer and equivalent. 
 
     (6) I'm puzzled by this in your number_field_rel.py patch:
@@ -402,7 +399,6 @@ which is again clearer and equivalent.
 ```
 	543	            return NotImplemented 
 ```
-
 
 What is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.
 
@@ -413,7 +409,7 @@ What is NotImplemented? It's not defined in the number_field_rel.py file in sage
 archive/issue_comments_046503.json:
 ```json
 {
-    "body": "Replying to [comment:17 was]:\n> NOTES:\n> \n>   (1) Post the latest version here -- I don't want to mess with the patch server.\n\nI just added direct links in the description. I will post the patches shortly when they will be final.\n\n> \n>   (2) It says \"Experts: please redefine this properly and/or put CC/RR/... in NumberFields()\".  I number field is by definition a finite extension of QQ, but CC and RR are infinite extensions of QQ.  So we can't put them in that category.   Having a function is_NumberFieldHomsetCodomain does seem like a good workaround for now.\n\nOk.\n\n>   (3) The function is_NumberFieldHomsetCodomain in the patch posted here doesn't have any documentation or doctests. Please add them.\n\nOops. Will do.\n\n>   (4) (5) (6)\n\nYes better. Will do.\n\n>     (6) I'm puzzled by this in your number_field_rel.py patch:\n> {{{\n> \t543\t            return NotImplemented \n> }}}\n> \n> What is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.\n\nIt's a builtin python object. Anyway, the function now raises a TypeError, per the latest _Hom_ protocol.",
+    "body": "Replying to [comment:17 was]:\n> NOTES:\n> \n>   (1) Post the latest version here -- I don't want to mess with the patch server.\n\n\nI just added direct links in the description. I will post the patches shortly when they will be final.\n\n> \n>   (2) It says \"Experts: please redefine this properly and/or put CC/RR/... in NumberFields()\".  I number field is by definition a finite extension of QQ, but CC and RR are infinite extensions of QQ.  So we can't put them in that category.   Having a function is_NumberFieldHomsetCodomain does seem like a good workaround for now.\n\n\nOk.\n\n>   (3) The function is_NumberFieldHomsetCodomain in the patch posted here doesn't have any documentation or doctests. Please add them.\n\n\nOops. Will do.\n\n>   (4) (5) (6)\n\n\nYes better. Will do.\n\n>     (6) I'm puzzled by this in your number_field_rel.py patch:\n\n> {{{\n> \t543\t            return NotImplemented \n\n> }}}\n> \n> What is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.\n\n\nIt's a builtin python object. Anyway, the function now raises a TypeError, per the latest _Hom_ protocol.",
     "created_at": "2009-11-10T10:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -427,27 +423,34 @@ Replying to [comment:17 was]:
 > 
 >   (1) Post the latest version here -- I don't want to mess with the patch server.
 
+
 I just added direct links in the description. I will post the patches shortly when they will be final.
 
 > 
 >   (2) It says "Experts: please redefine this properly and/or put CC/RR/... in NumberFields()".  I number field is by definition a finite extension of QQ, but CC and RR are infinite extensions of QQ.  So we can't put them in that category.   Having a function is_NumberFieldHomsetCodomain does seem like a good workaround for now.
 
+
 Ok.
 
 >   (3) The function is_NumberFieldHomsetCodomain in the patch posted here doesn't have any documentation or doctests. Please add them.
+
 
 Oops. Will do.
 
 >   (4) (5) (6)
 
+
 Yes better. Will do.
 
 >     (6) I'm puzzled by this in your number_field_rel.py patch:
+
 > {{{
 > 	543	            return NotImplemented 
+
 > }}}
 > 
 > What is NotImplemented? It's not defined in the number_field_rel.py file in sage-4.2.
+
 
 It's a builtin python object. Anyway, the function now raises a TypeError, per the latest _Hom_ protocol.
 
@@ -530,7 +533,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_046508.json:
 ```json
 {
-    "body": "Replying to [comment:19 nthiery]:\n> Replying to [comment:17 was]:\n> ...\nDone! See the linked to patch.\n\nI used the occasion to move the field containment logic into Fields where it belongs.",
+    "body": "Replying to [comment:19 nthiery]:\n> Replying to [comment:17 was]:\n> ...\n\nDone! See the linked to patch.\n\nI used the occasion to move the field containment logic into Fields where it belongs.",
     "created_at": "2009-11-10T12:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -542,6 +545,7 @@ archive/issue_comments_046508.json:
 Replying to [comment:19 nthiery]:
 > Replying to [comment:17 was]:
 > ...
+
 Done! See the linked to patch.
 
 I used the occasion to move the field containment logic into Fields where it belongs.
@@ -640,7 +644,7 @@ archive/issue_events_013837.json:
 archive/issue_comments_046512.json:
 ```json
 {
-    "body": "Does anybody here remember the reason for the `is_extension_type()` condition in\n\n```python\n    def __make_element_class__(self, cls, name = None, inherit = None):\n        \"\"\"\n        A utility to construct classes for the elements of this\n        parent, with appropriate inheritance from the element class of\n        the category (only for pure python types so far).\n        \"\"\"\n        if name is None:\n            name = \"%s_with_category\"%cls.__name__\n        # By default, don't fiddle with extension types yet; inheritance from\n        # categories will probably be achieved in a different way\n        if inherit is None:\n            inherit = not is_extension_type(cls)\n        if inherit:\n            return dynamic_class(name, (cls, self.category().element_class))\n        else:\n            return cls\n```\n\nI just tried replacing `inherit = not is_extension_type(cls)` by `inherit = True` and there is almost nothing which breaks.",
+    "body": "Does anybody here remember the reason for the `is_extension_type()` condition in\n\n```python\n    def __make_element_class__(self, cls, name = None, inherit = None):\n        \"\"\"\n        A utility to construct classes for the elements of this\n        parent, with appropriate inheritance from the element class of\n        the category (only for pure python types so far).\n        \"\"\"\n        if name is None:\n            name = \"%s_with_category\"%cls.__name__\n        # By default, don't fiddle with extension types yet; inheritance from\n        # categories will probably be achieved in a different way\n        if inherit is None:\n            inherit = not is_extension_type(cls)\n        if inherit:\n            return dynamic_class(name, (cls, self.category().element_class))\n        else:\n            return cls\n```\nI just tried replacing `inherit = not is_extension_type(cls)` by `inherit = True` and there is almost nothing which breaks.",
     "created_at": "2017-07-14T09:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5891",
     "type": "issue_comment",
@@ -669,5 +673,4 @@ Does anybody here remember the reason for the `is_extension_type()` condition in
         else:
             return cls
 ```
-
 I just tried replacing `inherit = not is_extension_type(cls)` by `inherit = True` and there is almost nothing which breaks.

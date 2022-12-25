@@ -3,7 +3,7 @@
 archive/issues_005824.json:
 ```json
 {
-    "body": "Assignee: @yqiang\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. \n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\n\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
+    "body": "Assignee: @yqiang\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. \n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
     "created_at": "2009-04-19T07:46:30Z",
     "labels": [
         "component: dsage",
@@ -32,7 +32,6 @@ We need  401 more function to get to 70% coverage.
 We need 1549 more function to get to 75% coverage.
 We need 2696 more function to get to 80% coverage.
 ```
-
 After:
 
 ```
@@ -42,7 +41,6 @@ We need   45 more function to get to 70% coverage.
 We need 1166 more function to get to 75% coverage.
 We need 2288 more function to get to 80% coverage.
 ```
-
 
 Cheers,
 
@@ -59,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5824
 archive/issue_comments_045687.json:
 ```json
 {
-    "body": "> To do the move one must also pay careful attention to the unit tests, -sdist, -bdist and setup.py.\n\n\nAlternatively it could be removed, but have its setup.py configured so it installs into exactly the same place as now.  Then all testing code would work exactly the same as before.  The main difference is that one would no longer see this when starting Sage:\n\n```\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_setup.py to 755\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/spkg-debian-maybe to 755\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_worker.py to 755\n```\n",
+    "body": "> To do the move one must also pay careful attention to the unit tests, -sdist, -bdist and setup.py.\n\n\n\nAlternatively it could be removed, but have its setup.py configured so it installs into exactly the same place as now.  Then all testing code would work exactly the same as before.  The main difference is that one would no longer see this when starting Sage:\n\n```\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_setup.py to 755\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/spkg-debian-maybe to 755\nchanging mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_worker.py to 755\n```",
     "created_at": "2009-04-19T19:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -71,6 +69,7 @@ archive/issue_comments_045687.json:
 > To do the move one must also pay careful attention to the unit tests, -sdist, -bdist and setup.py.
 
 
+
 Alternatively it could be removed, but have its setup.py configured so it installs into exactly the same place as now.  Then all testing code would work exactly the same as before.  The main difference is that one would no longer see this when starting Sage:
 
 ```
@@ -78,7 +77,6 @@ changing mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_setup.py t
 changing mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/spkg-debian-maybe to 755
 changing mode of /scratch/wstein/build/sage-3.4.1.rc2/local/bin/dsage_worker.py to 755
 ```
-
 
 
 
@@ -211,7 +209,7 @@ Michael
 archive/issue_comments_045694.json:
 ```json
 {
-    "body": ">    * As is it still counts against our coverage.\n\nNo it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.\n\n>    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.\n\nI strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.",
+    "body": ">    * As is it still counts against our coverage.\n\n\nNo it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.\n\n>    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.\n\n\nI strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.",
     "created_at": "2009-04-19T23:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -222,9 +220,11 @@ archive/issue_comments_045694.json:
 
 >    * As is it still counts against our coverage.
 
+
 No it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.
 
 >    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.
+
 
 I strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.
 
@@ -235,7 +235,7 @@ I strongly disagree. They can still do development, though a repo would be neede
 archive/issue_comments_045695.json:
 ```json
 {
-    "body": "Michael did have one interesting point in chat, which is that if you do\n\n```\nrm -rf devel/sage/build\n```\n\nthen dsage is gone too, so it has to be reinstalled.\n\nNote that `sage -ba` does not do `rm -rf devel/sage/build`, but instead just touches all cython files.",
+    "body": "Michael did have one interesting point in chat, which is that if you do\n\n```\nrm -rf devel/sage/build\n```\nthen dsage is gone too, so it has to be reinstalled.\n\nNote that `sage -ba` does not do `rm -rf devel/sage/build`, but instead just touches all cython files.",
     "created_at": "2009-04-19T23:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -249,7 +249,6 @@ Michael did have one interesting point in chat, which is that if you do
 ```
 rm -rf devel/sage/build
 ```
-
 then dsage is gone too, so it has to be reinstalled.
 
 Note that `sage -ba` does not do `rm -rf devel/sage/build`, but instead just touches all cython files.
@@ -261,7 +260,7 @@ Note that `sage -ba` does not do `rm -rf devel/sage/build`, but instead just tou
 archive/issue_comments_045696.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> >    * As is it still counts against our coverage.\n> \n> No it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.\n\nYes, I am wrong on that point.\n\n> >    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.\n> \n> I strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.\n> \n\nI had assumed wrongly as above that the DSage code would end up in devel/sage which it clearly doesn't, so I am wrong again. \n\nWhat I do not like is subpackages installing into a tree in site-packages, i.e. the latest twisted does that with web2 I believe. \n\nThe main question whether we do this or not is:\n\n* Are we going to fix/rewrite DSage? In that case it should stay in the tree.\n* If we are going to deprecate it we should move it to its own spkg and add deprecation warnings. The question then is what is going to happen after DSage and I don't think there is a clear answer to that question yet.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 was]:\n> >    * As is it still counts against our coverage.\n \n> \n> No it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.\n\n\nYes, I am wrong on that point.\n\n> >    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.\n \n> \n> I strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.\n> \n\n\nI had assumed wrongly as above that the DSage code would end up in devel/sage which it clearly doesn't, so I am wrong again. \n\nWhat I do not like is subpackages installing into a tree in site-packages, i.e. the latest twisted does that with web2 I believe. \n\nThe main question whether we do this or not is:\n\n* Are we going to fix/rewrite DSage? In that case it should stay in the tree.\n* If we are going to deprecate it we should move it to its own spkg and add deprecation warnings. The question then is what is going to happen after DSage and I don't think there is a clear answer to that question yet.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-20T00:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
@@ -272,15 +271,19 @@ archive/issue_comments_045696.json:
 
 Replying to [comment:6 was]:
 > >    * As is it still counts against our coverage.
+ 
 > 
 > No it doesn't.  It's *not* installed in devel/sage/sage, so it does not count against our coverage.
+
 
 Yes, I am wrong on that point.
 
 > >    * Now you cannot commit patches against DSage any more since it isn't in the repo. If someone wants to do development they should do so in a different python package.
+ 
 > 
 > I strongly disagree. They can still do development, though a repo would be needed if one wanted to trade patches.  This is totally orthogonal to anything I just did.
 > 
+
 
 I had assumed wrongly as above that the DSage code would end up in devel/sage which it clearly doesn't, so I am wrong again. 
 

@@ -219,7 +219,7 @@ Michael
 archive/issue_comments_039979.json:
 ```json
 {
-    "body": "Replying to [comment:3 zimmerma]:\n> to my best knowledge, the location of Guillaume Moroz is wrong: instead of being in the middle\n> of France, it should be in Paris (LIP6 is in Paris). The best is to check with him of course.\n\nthe location is feed into maps.google.com. if you go there, enter the location string 1:1 and hit search and the first hit is wrong, it will be also wrong on the devmap! from my experience, changing a word or some details is enough to get it right.\n\nbehind the scenes, offline: all location strings are extrcted and a script creates a mapping from each uniqe string to the lat/long coordinates that are then used online by the map-javascript when loading the page and placing the markers.",
+    "body": "Replying to [comment:3 zimmerma]:\n> to my best knowledge, the location of Guillaume Moroz is wrong: instead of being in the middle\n> of France, it should be in Paris (LIP6 is in Paris). The best is to check with him of course.\n\n\nthe location is feed into maps.google.com. if you go there, enter the location string 1:1 and hit search and the first hit is wrong, it will be also wrong on the devmap! from my experience, changing a word or some details is enough to get it right.\n\nbehind the scenes, offline: all location strings are extrcted and a script creates a mapping from each uniqe string to the lat/long coordinates that are then used online by the map-javascript when loading the page and placing the markers.",
     "created_at": "2009-02-12T11:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -231,6 +231,7 @@ archive/issue_comments_039979.json:
 Replying to [comment:3 zimmerma]:
 > to my best knowledge, the location of Guillaume Moroz is wrong: instead of being in the middle
 > of France, it should be in Paris (LIP6 is in Paris). The best is to check with him of course.
+
 
 the location is feed into maps.google.com. if you go there, enter the location string 1:1 and hit search and the first hit is wrong, it will be also wrong on the devmap! from my experience, changing a word or some details is enough to get it right.
 
@@ -262,7 +263,7 @@ However I don't know how to give that hint to the devmap.
 archive/issue_comments_039981.json:
 ```json
 {
-    "body": "Replying to [comment:7 zimmerma]:\n> \"Guillaume Moroz LIP6\" on maps.google.com finds only one location...\n\nwell, i wasn't honest, google maps already narrows down the possible hits, if you have zoomed into a location. for this location, i think \"Guillaume Moroz LIP6, Paris, Fr\" is ok.",
+    "body": "Replying to [comment:7 zimmerma]:\n> \"Guillaume Moroz LIP6\" on maps.google.com finds only one location...\n\n\nwell, i wasn't honest, google maps already narrows down the possible hits, if you have zoomed into a location. for this location, i think \"Guillaume Moroz LIP6, Paris, Fr\" is ok.",
     "created_at": "2009-02-12T12:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -273,6 +274,7 @@ archive/issue_comments_039981.json:
 
 Replying to [comment:7 zimmerma]:
 > "Guillaume Moroz LIP6" on maps.google.com finds only one location...
+
 
 well, i wasn't honest, google maps already narrows down the possible hits, if you have zoomed into a location. for this location, i think "Guillaume Moroz LIP6, Paris, Fr" is ok.
 
@@ -319,7 +321,7 @@ Yep, it's now (and only now) visible under "http://trac.sagemath.org/sage_trac/r
 archive/issue_comments_039984.json:
 ```json
 {
-    "body": "Hi Minh,\n\ncould you please change line 148 (my own personal entry) to:\n\n```\n<contributor name=\"Georg S. Weber\" location=\"N\u00c3\u0152rnberg, Germany\" description=\"reviews, bug fixing, documentation\"/>\n```\n\nsince I would like to ask first at my institute before it is published here (more a formality than anything else, but nevertheless); I updated also the description.\n\nThanks for your work!!\n\nCheers, gsw",
+    "body": "Hi Minh,\n\ncould you please change line 148 (my own personal entry) to:\n\n```\n<contributor name=\"Georg S. Weber\" location=\"N\u00c3\u0152rnberg, Germany\" description=\"reviews, bug fixing, documentation\"/>\n```\nsince I would like to ask first at my institute before it is published here (more a formality than anything else, but nevertheless); I updated also the description.\n\nThanks for your work!!\n\nCheers, gsw",
     "created_at": "2009-02-15T20:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
@@ -335,7 +337,6 @@ could you please change line 148 (my own personal entry) to:
 ```
 <contributor name="Georg S. Weber" location="NÃŒrnberg, Germany" description="reviews, bug fixing, documentation"/>
 ```
-
 since I would like to ask first at my institute before it is published here (more a formality than anything else, but nevertheless); I updated also the description.
 
 Thanks for your work!!

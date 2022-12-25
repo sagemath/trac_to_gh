@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6553
 archive/issue_comments_053340.json:
 ```json
 {
-    "body": "Before, I waited for several minutes before giving up.\n\nAFTER:\n\n\n```\nsage: A=random_matrix(ZZ,100000,density=.00005,sparse=True)                  \nsage: %time A[50000:,:50000]                                                 \nCPU times: user 0.43 s, sys: 0.01 s, total: 0.44 s\nWall time: 0.47 s\n50000 x 50000 sparse matrix over Integer Ring\n```\n\n\n\nAlso:\n\nBEFORE:\n\n\n```\nsage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)     \nsage: %time A[5000:,:5000]                                     \nCPU times: user 8.32 s, sys: 0.02 s, total: 8.34 s\nWall time: 8.69 s\n5000 x 5000 sparse matrix over Integer Ring\n```\n\n\nAFTER:\n\n\n```\nsage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)\nsage: %time A[5000:,:5000]                                \nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.08 s\n5000 x 5000 sparse matrix over Integer Ring\n```\n",
+    "body": "Before, I waited for several minutes before giving up.\n\nAFTER:\n\n```\nsage: A=random_matrix(ZZ,100000,density=.00005,sparse=True)                  \nsage: %time A[50000:,:50000]                                                 \nCPU times: user 0.43 s, sys: 0.01 s, total: 0.44 s\nWall time: 0.47 s\n50000 x 50000 sparse matrix over Integer Ring\n```\n\n\nAlso:\n\nBEFORE:\n\n```\nsage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)     \nsage: %time A[5000:,:5000]                                     \nCPU times: user 8.32 s, sys: 0.02 s, total: 8.34 s\nWall time: 8.69 s\n5000 x 5000 sparse matrix over Integer Ring\n```\n\nAFTER:\n\n```\nsage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)\nsage: %time A[5000:,:5000]                                \nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.08 s\n5000 x 5000 sparse matrix over Integer Ring\n```",
     "created_at": "2009-07-18T13:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
@@ -46,7 +46,6 @@ Before, I waited for several minutes before giving up.
 
 AFTER:
 
-
 ```
 sage: A=random_matrix(ZZ,100000,density=.00005,sparse=True)                  
 sage: %time A[50000:,:50000]                                                 
@@ -56,11 +55,9 @@ Wall time: 0.47 s
 ```
 
 
-
 Also:
 
 BEFORE:
-
 
 ```
 sage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)     
@@ -70,9 +67,7 @@ Wall time: 8.69 s
 5000 x 5000 sparse matrix over Integer Ring
 ```
 
-
 AFTER:
-
 
 ```
 sage: A=random_matrix(ZZ,10000,density=.00005,sparse=True)
@@ -84,13 +79,12 @@ Wall time: 0.08 s
 
 
 
-
 ---
 
 archive/issue_comments_053341.json:
 ```json
 {
-    "body": "Nicely done.  Three comments before giving this a positive review.\n\n1.  The last test behaves differently for me, and the result seems \"more correct\" according to the density specified.  This is on 4.1.rc1 (which is the newest upgrade I could muster).\n\n\n```\n    sage: len(B.nonzero_positions())\nExpected:\n    14047\nGot:\n    100550\n```\n\n\n2.  Lists of non-integers (admittedly silly) fails silently and incorrectly.  It would appear that no entry of the new matrix gets set properly, so the result is the zero matrix of the correct size.\n\n\n```\nsage: A = random_matrix(ZZ, 20, 20, x=10, sparse=True)\nsage: len(A.nonzero_positions())\n353\nsage: A.matrix_from_rows_and_columns([1.1, 2.1, 3.1, 4.1], [5.1, 6.1, 7.1, 8.1])\n\n[0 0 0 0]\n[0 0 0 0]\n[0 0 0 0]\n[0 0 0 0]\n```\n\n\n3.  I'd think the doctests would be improved if there were tests for \n\n(a) the condition in (2)\n\n(b) the case of non-list input (raising the `TypeError` as implemented)",
+    "body": "Nicely done.  Three comments before giving this a positive review.\n\n1.  The last test behaves differently for me, and the result seems \"more correct\" according to the density specified.  This is on 4.1.rc1 (which is the newest upgrade I could muster).\n\n```\n    sage: len(B.nonzero_positions())\nExpected:\n    14047\nGot:\n    100550\n```\n\n2.  Lists of non-integers (admittedly silly) fails silently and incorrectly.  It would appear that no entry of the new matrix gets set properly, so the result is the zero matrix of the correct size.\n\n```\nsage: A = random_matrix(ZZ, 20, 20, x=10, sparse=True)\nsage: len(A.nonzero_positions())\n353\nsage: A.matrix_from_rows_and_columns([1.1, 2.1, 3.1, 4.1], [5.1, 6.1, 7.1, 8.1])\n\n[0 0 0 0]\n[0 0 0 0]\n[0 0 0 0]\n[0 0 0 0]\n```\n\n3.  I'd think the doctests would be improved if there were tests for \n\n(a) the condition in (2)\n\n(b) the case of non-list input (raising the `TypeError` as implemented)",
     "created_at": "2009-07-20T02:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
@@ -103,7 +97,6 @@ Nicely done.  Three comments before giving this a positive review.
 
 1.  The last test behaves differently for me, and the result seems "more correct" according to the density specified.  This is on 4.1.rc1 (which is the newest upgrade I could muster).
 
-
 ```
     sage: len(B.nonzero_positions())
 Expected:
@@ -112,9 +105,7 @@ Got:
     100550
 ```
 
-
 2.  Lists of non-integers (admittedly silly) fails silently and incorrectly.  It would appear that no entry of the new matrix gets set properly, so the result is the zero matrix of the correct size.
-
 
 ```
 sage: A = random_matrix(ZZ, 20, 20, x=10, sparse=True)
@@ -127,7 +118,6 @@ sage: A.matrix_from_rows_and_columns([1.1, 2.1, 3.1, 4.1], [5.1, 6.1, 7.1, 8.1])
 [0 0 0 0]
 [0 0 0 0]
 ```
-
 
 3.  I'd think the doctests would be improved if there were tests for 
 

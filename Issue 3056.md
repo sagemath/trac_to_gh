@@ -3,7 +3,7 @@
 archive/issues_003056.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nThe first computation of z^2 is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\nThe first computation of z^2 is incorrect, whereas the second is correct:\n\n```\nsage: C.<t> = PowerSeriesRing(ZZ)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z^2\n t^2*s^4 + 1 + O(t)\nsage: z._mul_generic(z)\n t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3056\n\n",
     "created_at": "2008-04-29T21:04:34Z",
     "labels": [
         "component: cygwin",
@@ -31,7 +31,6 @@ sage: z^2
 sage: z._mul_generic(z)
  t^2*s^4 + (2*t + O(t^2))*s^2 + 1 + O(t)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3056
 
@@ -169,7 +168,7 @@ Changing assignee from dmharvey to @roed314.
 archive/issue_comments_021060.json:
 ```json
 {
-    "body": "In my previous example:\n\n```\nsage: (z^2).list()\n [1 + O(t), O(t^1), O(t^1), 0, t^2]\n```\n\nso the output is not actually incorrect, just less precise than it should be. So maybe we should not use Karatsuba for polynomials over an inexact ring? (We already don't for polynomials over a p-adic ring.)",
+    "body": "In my previous example:\n\n```\nsage: (z^2).list()\n [1 + O(t), O(t^1), O(t^1), 0, t^2]\n```\nso the output is not actually incorrect, just less precise than it should be. So maybe we should not use Karatsuba for polynomials over an inexact ring? (We already don't for polynomials over a p-adic ring.)",
     "created_at": "2008-04-29T21:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3056",
     "type": "issue_comment",
@@ -184,7 +183,6 @@ In my previous example:
 sage: (z^2).list()
  [1 + O(t), O(t^1), O(t^1), 0, t^2]
 ```
-
 so the output is not actually incorrect, just less precise than it should be. So maybe we should not use Karatsuba for polynomials over an inexact ring? (We already don't for polynomials over a p-adic ring.)
 
 

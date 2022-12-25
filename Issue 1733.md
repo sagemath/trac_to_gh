@@ -49,7 +49,7 @@ Attachment [sage-1733.patch](tarball://root/attachments/some-uuid/ticket1733/sag
 archive/issue_comments_010945.json:
 ```json
 {
-    "body": "The attached patch:\n\n1. Fixed the problem where %foobar with no input in the cell didn't give an error -- now it does, about\nfoobar not being defined.\n\n2. While I was at it I improved how %foo modes in the notebook work, so that they can have everything on one line, e.g., \n\n```\n   %magma Factorization(9038049823)\n```\n\non a single line works in the notebook.\n\n3. NOTE that the actual patch replaces a bunch of crappy hard to understand code with like 3 simple\n    lines that fix all of the above.",
+    "body": "The attached patch:\n\n1. Fixed the problem where %foobar with no input in the cell didn't give an error -- now it does, about\nfoobar not being defined.\n\n2. While I was at it I improved how %foo modes in the notebook work, so that they can have everything on one line, e.g., \n\n```\n   %magma Factorization(9038049823)\n```\non a single line works in the notebook.\n\n3. NOTE that the actual patch replaces a bunch of crappy hard to understand code with like 3 simple\n    lines that fix all of the above.",
     "created_at": "2008-05-10T22:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1733",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ foobar not being defined.
 ```
    %magma Factorization(9038049823)
 ```
-
 on a single line works in the notebook.
 
 3. NOTE that the actual patch replaces a bunch of crappy hard to understand code with like 3 simple

@@ -3,7 +3,7 @@
 archive/issues_008751.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona jpflori @defeo @pjbruin\n\nI noticed the following with Sage 4.3.5:\n\n```\nsage: R = GF(9,name='x')\nsage: Q.<x> = PolynomialRing(GF(3))\nsage: R2 = GF(9,name='x',modulus=x^2+1)\nsage: a=R(x+1)\nsage: R2(a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nThis is ok since indeed a=x+1 is not in the prime subfield.\nBut:\n\n```\nsage: b=R(1)\nsage: R2(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\n\nIn this case b=1 ***is*** in the prime subfield!!!\n\nSide question: is there a (simple) way to get the isomorphism between R and R2?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8751\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona jpflori @defeo @pjbruin\n\nI noticed the following with Sage 4.3.5:\n\n```\nsage: R = GF(9,name='x')\nsage: Q.<x> = PolynomialRing(GF(3))\nsage: R2 = GF(9,name='x',modulus=x^2+1)\nsage: a=R(x+1)\nsage: R2(a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\nThis is ok since indeed a=x+1 is not in the prime subfield.\nBut:\n\n```\nsage: b=R(1)\nsage: R2(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/svn/sagebook/tex/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/finite_field_givaro.so in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:4754)()\n\nTypeError: unable to coerce from a finite field other than the prime subfield\n```\nIn this case b=1 ***is*** in the prime subfield!!!\n\nSide question: is there a (simple) way to get the isomorphism between R and R2?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8751\n\n",
     "created_at": "2010-04-23T09:28:49Z",
     "labels": [
         "component: basic arithmetic",
@@ -37,7 +37,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unable to coerce from a finite field other than the prime subfield
 ```
-
 This is ok since indeed a=x+1 is not in the prime subfield.
 But:
 
@@ -53,7 +52,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: unable to coerce from a finite field other than the prime subfield
 ```
-
 In this case b=1 ***is*** in the prime subfield!!!
 
 Side question: is there a (simple) way to get the isomorphism between R and R2?
@@ -89,7 +87,7 @@ Paul
 archive/issue_comments_079931.json:
 ```json
 {
-    "body": "Replying to [comment:1 zimmerma]:\n> any progress on the isomorphism between finite fields?\n> \n> Paul\n\nSee #8335",
+    "body": "Replying to [comment:1 zimmerma]:\n> any progress on the isomorphism between finite fields?\n> \n> Paul\n\n\nSee #8335",
     "created_at": "2013-03-19T13:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
@@ -102,6 +100,7 @@ Replying to [comment:1 zimmerma]:
 > any progress on the isomorphism between finite fields?
 > 
 > Paul
+
 
 See #8335
 
@@ -179,7 +178,7 @@ So I guess I now have all that is needed to begin coding.
 archive/issue_comments_079935.json:
 ```json
 {
-    "body": "Replying to [comment:5 jpflori]:\n> Link to Allombert paper:\n> * http://www.sciencedirect.com/science/article/pii/S1071579701903442\n> \n\nSince he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?\n\n\n> Rains communicated me its work.\n> \n> So I guess I now have all that is needed to begin coding.",
+    "body": "Replying to [comment:5 jpflori]:\n> Link to Allombert paper:\n> * http://www.sciencedirect.com/science/article/pii/S1071579701903442\n> \n\n\nSince he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?\n\n\n> Rains communicated me its work.\n> \n> So I guess I now have all that is needed to begin coding.",
     "created_at": "2013-06-25T19:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
@@ -192,6 +191,7 @@ Replying to [comment:5 jpflori]:
 > Link to Allombert paper:
 > * http://www.sciencedirect.com/science/article/pii/S1071579701903442
 > 
+
 
 Since he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?
 
@@ -207,7 +207,7 @@ Since he is a lead developer of pari and says in the paper that he has implement
 archive/issue_comments_079936.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Replying to [comment:5 jpflori]:\n> > Link to Allombert paper:\n> > * http://www.sciencedirect.com/science/article/pii/S1071579701903442\n> > \n> \n> Since he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?\nOf course, but that will not give us \"lattices of compatible finite fields\".\n\nThe way I see it, we should get the following tickets merged in that order:\n* #8335 David Roe's for lattices using (pseudo) Conway polynomials, this only goes up and is obviously inefficient for large fields,\n* #11938 which implements going down for finite field using Givaro, \n* maybe extend it to all fields using pseudo-Conway polynomials in a follow-up ticket,\n* #13214 by Xavier Caruso, not sure how useful that will be, but that can give a nice code basis to start upon,\n* this ticket to implement general lattices of compatible finite fields.\n> \n> \n> > Rains communicated me its work.\n> > \n> > So I guess I now have all that is needed to begin coding.",
+    "body": "Replying to [comment:6 cremona]:\n> Replying to [comment:5 jpflori]:\n> > Link to Allombert paper:\n> > * http://www.sciencedirect.com/science/article/pii/S1071579701903442\n> > \n \n> \n> Since he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?\n\nOf course, but that will not give us \"lattices of compatible finite fields\".\n\nThe way I see it, we should get the following tickets merged in that order:\n* #8335 David Roe's for lattices using (pseudo) Conway polynomials, this only goes up and is obviously inefficient for large fields,\n* #11938 which implements going down for finite field using Givaro, \n* maybe extend it to all fields using pseudo-Conway polynomials in a follow-up ticket,\n* #13214 by Xavier Caruso, not sure how useful that will be, but that can give a nice code basis to start upon,\n* this ticket to implement general lattices of compatible finite fields.\n> \n> \n> > Rains communicated me its work.\n> > \n> > So I guess I now have all that is needed to begin coding.",
     "created_at": "2013-06-25T20:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8751",
     "type": "issue_comment",
@@ -221,8 +221,10 @@ Replying to [comment:6 cremona]:
 > > Link to Allombert paper:
 > > * http://www.sciencedirect.com/science/article/pii/S1071579701903442
 > > 
+ 
 > 
 > Since he is a lead developer of pari and says in the paper that he has implemented his algorithm in pari, can we not just use that implementation by wrapping it?
+
 Of course, but that will not give us "lattices of compatible finite fields".
 
 The way I see it, we should get the following tickets merged in that order:

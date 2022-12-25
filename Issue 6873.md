@@ -3,7 +3,7 @@
 archive/issues_006873.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nObserve:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n3*y\nsage: var('x,y')\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n2*x + y\n```\n\n\nThis is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6873\n\n",
+    "body": "Assignee: @malb\n\nObserve:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n3*y\nsage: var('x,y')\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n2*x + y\n```\n\nThis is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6873\n\n",
     "created_at": "2009-09-03T06:12:27Z",
     "labels": [
         "component: commutative algebra",
@@ -31,7 +31,6 @@ sage: f = x + 2*y
 sage: f.subs(x=y,y=x)
 2*x + y
 ```
-
 
 This is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.
 

@@ -72,7 +72,7 @@ Changing assignee from @aghitza to @roed314.
 archive/issue_comments_072362.json:
 ```json
 {
-    "body": "The files that are moved into sage.rings.finite_rings are:\n\n\n```\ninteger_mod.pyx -> finite_rings/integer_mod.pyx\ninteger_mod.pxd -> finite_rings/integer_mod.pxd\ninteger_mod_ring.py -> finite_rings/integer_mod_ring.py\nfinite_field.py -> finite_rings/constructor.py\nfinite_field_prime_modn.py -> finite_rings/finite_field_prime_modn.py\nfinite_field_element.py -> finite_rings/element_ext_pari.py\nfinite_field_ext_pari.py -> finite_rings/finite_field_ext_pari.py\nfinite_field_givaro.pyx -> finite_rings/element_givaro.pyx\nfinite_field_givaro.pxd -> finite_rings/element_givaro.pxd\nfinite_field_ntl_gf2e.pyx -> finite_rings/finite_field_ntl_gf2e.pyx\nfinite_field_ntl_gf2e.pxd -> finite_rings/finite_field_ntl_gf2e.pxd\nfinite_field_morphism.py -> finite_rings/homset.py\npart of ring.pyx -> finite_rings/finite_field_base.pyx\npart of ring.pxd -> finite_rings/finite_field_base.pxd\npart of sage/structure/element.pyx -> sage/rings/finite_rings/element_base.pyx\npart of sage/structure/element.pxd -> sage/rings/finite_rings/element_base.pxd\n```\n",
+    "body": "The files that are moved into sage.rings.finite_rings are:\n\n```\ninteger_mod.pyx -> finite_rings/integer_mod.pyx\ninteger_mod.pxd -> finite_rings/integer_mod.pxd\ninteger_mod_ring.py -> finite_rings/integer_mod_ring.py\nfinite_field.py -> finite_rings/constructor.py\nfinite_field_prime_modn.py -> finite_rings/finite_field_prime_modn.py\nfinite_field_element.py -> finite_rings/element_ext_pari.py\nfinite_field_ext_pari.py -> finite_rings/finite_field_ext_pari.py\nfinite_field_givaro.pyx -> finite_rings/element_givaro.pyx\nfinite_field_givaro.pxd -> finite_rings/element_givaro.pxd\nfinite_field_ntl_gf2e.pyx -> finite_rings/finite_field_ntl_gf2e.pyx\nfinite_field_ntl_gf2e.pxd -> finite_rings/finite_field_ntl_gf2e.pxd\nfinite_field_morphism.py -> finite_rings/homset.py\npart of ring.pyx -> finite_rings/finite_field_base.pyx\npart of ring.pxd -> finite_rings/finite_field_base.pxd\npart of sage/structure/element.pyx -> sage/rings/finite_rings/element_base.pyx\npart of sage/structure/element.pxd -> sage/rings/finite_rings/element_base.pxd\n```",
     "created_at": "2010-02-09T04:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ archive/issue_comments_072362.json:
 ```
 
 The files that are moved into sage.rings.finite_rings are:
-
 
 ```
 integer_mod.pyx -> finite_rings/integer_mod.pyx
@@ -102,7 +101,6 @@ part of ring.pxd -> finite_rings/finite_field_base.pxd
 part of sage/structure/element.pyx -> sage/rings/finite_rings/element_base.pyx
 part of sage/structure/element.pxd -> sage/rings/finite_rings/element_base.pxd
 ```
-
 
 
 
@@ -165,7 +163,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072366.json:
 ```json
 {
-    "body": "Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by @roed314 created at 2010-02-09 20:09:08\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\n\nI believe this is right, but it's been a while since I used bundles.",
+    "body": "Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by @roed314 created at 2010-02-09 20:09:08\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\nI believe this is right, but it's been a while since I used bundles.",
     "created_at": "2010-02-09T20:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -181,7 +179,6 @@ I created the bundle with
 ```
 sage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle
 ```
-
 I believe this is right, but it's been a while since I used bundles.
 
 
@@ -446,7 +443,7 @@ How do I apply a bundle?  Can it be done in queues?
 archive/issue_comments_072380.json:
 ```json
 {
-    "body": "Within the deve/sage directory,\n\n```\nsage -hg unbundle trac_8218_move_433.bundle\n```\n",
+    "body": "Within the deve/sage directory,\n\n```\nsage -hg unbundle trac_8218_move_433.bundle\n```",
     "created_at": "2010-03-02T17:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -460,7 +457,6 @@ Within the deve/sage directory,
 ```
 sage -hg unbundle trac_8218_move_433.bundle
 ```
-
 
 
 
@@ -507,7 +503,7 @@ If you could post the exact sequence of commands needs to go from a fresh 4.3.3,
 archive/issue_comments_072383.json:
 ```json
 {
-    "body": "Try the following (and let me know if it doesn't work):\n\n```\ncd $SAGE-ROOT\nsage -clone 8218\ncd devel/sage-8218/\nsage -hg unbundle trac_8218_move.bundle\nsage -hg merge\nsage -hg commit -m \"Merge\"\nsage -hg qinit\nsage -hg qimport trac_8218_fixes_433.patch\nsage -hg qpush\nsage -br\n```\n",
+    "body": "Try the following (and let me know if it doesn't work):\n\n```\ncd $SAGE-ROOT\nsage -clone 8218\ncd devel/sage-8218/\nsage -hg unbundle trac_8218_move.bundle\nsage -hg merge\nsage -hg commit -m \"Merge\"\nsage -hg qinit\nsage -hg qimport trac_8218_fixes_433.patch\nsage -hg qpush\nsage -br\n```",
     "created_at": "2010-03-05T20:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -533,13 +529,12 @@ sage -br
 
 
 
-
 ---
 
 archive/issue_comments_072384.json:
 ```json
 {
-    "body": "OK, I did that (except with the bundle trac_8218_move_433.bundle),  applying it all to 4.3.4.alpha0.  The merge is ok (one piece of fuzz).  The rebuild took a long time.  But sage -br ended up not running properly:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/home/john/sage-current/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/home/john/sage-4.3.4.alpha0/local/bin/ipy_profile_sage.py in <module>()\n      5     preparser(True)\n      6 \n----> 7     import sage.all_cmdline\n      8     sage.all_cmdline._init_cmdline(globals())\n      9 \n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/all.py in <module>()\n     70 get_sigs()\n     71 \n---> 72 from sage.rings.all      import *\n     73 from sage.matrix.all     import *\n     74 \n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/all.py in <module>()\n     88 \n     89 # Algebraic numbers\n\n---> 90 from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n     91                    AlgebraicReal, is_AlgebraicReal,\n     92                    AlgebraicField, is_AlgebraicField, QQbar,\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/qqbar.py in <module>()\n   1410 \n   1411 # Cache some commonly-used polynomial rings\n\n-> 1412 QQx = QQ['x']\n   1413 QQx_x = QQx.gen()\n   1414 QQy = QQ['y']\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2551)()\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    421 \n    422         elif base_ring.is_field(proof = False):\n--> 423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n    425         elif base_ring.is_integral_domain(proof = False):\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in __init__(self, base_ring, name, sparse, element_class, implementation)\n   1194         if implementation is None: implementation=\"NTL\"\n   1195         if implementation == \"NTL\" and \\\n-> 1196                 sage.rings.finite_field.is_FiniteField(base_ring):\n   1197             p=base_ring.characteristic()\n   1198             from sage.libs.ntl.ntl_ZZ_pEContext import ntl_ZZ_pEContext\n\nAttributeError: 'module' object has no attribute 'finite_field'\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n",
+    "body": "OK, I did that (except with the bundle trac_8218_move_433.bundle),  applying it all to 4.3.4.alpha0.  The merge is ok (one piece of fuzz).  The rebuild took a long time.  But sage -br ended up not running properly:\n\n```\nAttributeError                            Traceback (most recent call last)\n\n/home/john/sage-current/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/home/john/sage-4.3.4.alpha0/local/bin/ipy_profile_sage.py in <module>()\n      5     preparser(True)\n      6 \n----> 7     import sage.all_cmdline\n      8     sage.all_cmdline._init_cmdline(globals())\n      9 \n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/all.py in <module>()\n     70 get_sigs()\n     71 \n---> 72 from sage.rings.all      import *\n     73 from sage.matrix.all     import *\n     74 \n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/all.py in <module>()\n     88 \n     89 # Algebraic numbers\n\n---> 90 from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n     91                    AlgebraicReal, is_AlgebraicReal,\n     92                    AlgebraicField, is_AlgebraicField, QQbar,\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/qqbar.py in <module>()\n   1410 \n   1411 # Cache some commonly-used polynomial rings\n\n-> 1412 QQx = QQ['x']\n   1413 QQx_x = QQx.gen()\n   1414 QQy = QQ['y']\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2551)()\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    421 \n    422         elif base_ring.is_field(proof = False):\n--> 423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n    425         elif base_ring.is_integral_domain(proof = False):\n\n/home/john/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in __init__(self, base_ring, name, sparse, element_class, implementation)\n   1194         if implementation is None: implementation=\"NTL\"\n   1195         if implementation == \"NTL\" and \\\n-> 1196                 sage.rings.finite_field.is_FiniteField(base_ring):\n   1197             p=base_ring.characteristic()\n   1198             from sage.libs.ntl.ntl_ZZ_pEContext import ntl_ZZ_pEContext\n\nAttributeError: 'module' object has no attribute 'finite_field'\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```",
     "created_at": "2010-03-06T22:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -625,7 +620,6 @@ AttributeError: 'module' object has no attribute 'finite_field'
 Error importing ipy_profile_sage - perhaps you should run %upgrade?
 WARNING: Loading of ipy_profile_sage failed.
 ```
-
 
 
 
@@ -728,7 +722,7 @@ You may need to clear out old files in the $SAGE_ROOT/devel/sage-8218/build dire
 archive/issue_comments_072390.json:
 ```json
 {
-    "body": "Sorry about this.  I made a new clone of 4.3.4.alpha1 and followed the instructions to the letter, but the final qpush gave this:\n\n```\napplying trac_8218_fixes_433.patch\npatching file sage/crypto/util.py\nHunk #1 FAILED at 31\n1 out of 1 hunks FAILED -- saving rejects to file sage/crypto/util.py.rej\npatching file sage/homology/chain_complex.py\nHunk #1 succeeded at 382 with fuzz 1 (offset 3 lines).\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8218_fixes_433.patch\n```\n\n\nIt might be better if someone who had any idea what they were doing took over this review -- I am clearly not competent!  For a start, if I depart in the slightest way from the list of commands then it does not work at all, but I don't understand why.\n\nMeanwhile I'll keep this clone in case sending any of the files will help (but despite the message here, there is nothing left in the \"working directory\").",
+    "body": "Sorry about this.  I made a new clone of 4.3.4.alpha1 and followed the instructions to the letter, but the final qpush gave this:\n\n```\napplying trac_8218_fixes_433.patch\npatching file sage/crypto/util.py\nHunk #1 FAILED at 31\n1 out of 1 hunks FAILED -- saving rejects to file sage/crypto/util.py.rej\npatching file sage/homology/chain_complex.py\nHunk #1 succeeded at 382 with fuzz 1 (offset 3 lines).\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8218_fixes_433.patch\n```\n\nIt might be better if someone who had any idea what they were doing took over this review -- I am clearly not competent!  For a start, if I depart in the slightest way from the list of commands then it does not work at all, but I don't understand why.\n\nMeanwhile I'll keep this clone in case sending any of the files will help (but despite the message here, there is nothing left in the \"working directory\").",
     "created_at": "2010-03-13T14:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -750,7 +744,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8218_fixes_433.patch
 ```
-
 
 It might be better if someone who had any idea what they were doing took over this review -- I am clearly not competent!  For a start, if I depart in the slightest way from the list of commands then it does not work at all, but I don't understand why.
 
@@ -857,7 +850,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072396.json:
 ```json
 {
-    "body": "Replying to [comment:20 davidloeffler]:\n> As for drkirkby's comment above: naturally it doesn't have a chance of building on 4.3.0.1 on T2. (I checked, just to make sure). I don't think it's reasonable to expect new patches to apply identically on two increasingly different forks of the Sage code base. (Isn't this what Mercurial's branching and merging tools are supposed to be for?)\n\nThere are not two different forks of the code base.  There are no Mercurial branches. \n\nBe aware, given 4.3.4.alpha1 builds on Solaris, and passes all the doc tests, so I suspect if this breaks the build it will not be merged. \n\nDave",
+    "body": "Replying to [comment:20 davidloeffler]:\n> As for drkirkby's comment above: naturally it doesn't have a chance of building on 4.3.0.1 on T2. (I checked, just to make sure). I don't think it's reasonable to expect new patches to apply identically on two increasingly different forks of the Sage code base. (Isn't this what Mercurial's branching and merging tools are supposed to be for?)\n\n\nThere are not two different forks of the code base.  There are no Mercurial branches. \n\nBe aware, given 4.3.4.alpha1 builds on Solaris, and passes all the doc tests, so I suspect if this breaks the build it will not be merged. \n\nDave",
     "created_at": "2010-03-16T15:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -868,6 +861,7 @@ archive/issue_comments_072396.json:
 
 Replying to [comment:20 davidloeffler]:
 > As for drkirkby's comment above: naturally it doesn't have a chance of building on 4.3.0.1 on T2. (I checked, just to make sure). I don't think it's reasonable to expect new patches to apply identically on two increasingly different forks of the Sage code base. (Isn't this what Mercurial's branching and merging tools are supposed to be for?)
+
 
 There are not two different forks of the code base.  There are no Mercurial branches. 
 
@@ -882,7 +876,7 @@ Dave
 archive/issue_comments_072397.json:
 ```json
 {
-    "body": "Replying to [comment:21 drkirkby]:\n> There are not two different forks of the code base.  There are no Mercurial branches. \n> \n> Be aware, given 4.3.4.alpha1 builds on Solaris, and passes all the doc tests, so I suspect if this breaks the build it will not be merged. \n\nAh! That's a totally different story then. Somehow I had got the incorrect impression that 4.3.0.1 was the latest Solaris version. I will run some tests on T2 and see what happens. Perhaps I had better do the same for the other tickets I have reviewed lately. My apologies!\n\nDavid",
+    "body": "Replying to [comment:21 drkirkby]:\n> There are not two different forks of the code base.  There are no Mercurial branches. \n> \n> Be aware, given 4.3.4.alpha1 builds on Solaris, and passes all the doc tests, so I suspect if this breaks the build it will not be merged. \n\n\nAh! That's a totally different story then. Somehow I had got the incorrect impression that 4.3.0.1 was the latest Solaris version. I will run some tests on T2 and see what happens. Perhaps I had better do the same for the other tickets I have reviewed lately. My apologies!\n\nDavid",
     "created_at": "2010-03-16T16:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -895,6 +889,7 @@ Replying to [comment:21 drkirkby]:
 > There are not two different forks of the code base.  There are no Mercurial branches. 
 > 
 > Be aware, given 4.3.4.alpha1 builds on Solaris, and passes all the doc tests, so I suspect if this breaks the build it will not be merged. 
+
 
 Ah! That's a totally different story then. Somehow I had got the incorrect impression that 4.3.0.1 was the latest Solaris version. I will run some tests on T2 and see what happens. Perhaps I had better do the same for the other tickets I have reviewed lately. My apologies!
 
@@ -1055,7 +1050,7 @@ All seems to be well.
 archive/issue_comments_072406.json:
 ```json
 {
-    "body": "Replying to [comment:26 davidloeffler]:\n> All seems to be well.\n\nDavid,\n\nCan you list here exactly what needs to be applied (and how)?  I want to start looking at the derivative patches for finite fields, so I have to get a clone with this one installed first -- and as you can see from earlier comments, I have not had much success so far.",
+    "body": "Replying to [comment:26 davidloeffler]:\n> All seems to be well.\n\n\nDavid,\n\nCan you list here exactly what needs to be applied (and how)?  I want to start looking at the derivative patches for finite fields, so I have to get a clone with this one installed first -- and as you can see from earlier comments, I have not had much success so far.",
     "created_at": "2010-04-03T14:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -1066,6 +1061,7 @@ archive/issue_comments_072406.json:
 
 Replying to [comment:26 davidloeffler]:
 > All seems to be well.
+
 
 David,
 
@@ -1078,7 +1074,7 @@ Can you list here exactly what needs to be applied (and how)?  I want to start l
 archive/issue_comments_072407.json:
 ```json
 {
-    "body": "Hi John,\n\nFirst apply the bundle trac_8218_move_433.bundle, using the commands:\n\n```\nhg unbundle http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8218/trac_8218_move_433.bundle\nhg merge\nhg ci -m \"merged finite field bundle\"\n```\n\nThen use queues in the normal way to import the patches `trac_8218_fixes_434alpha1.patch` and `trac_8218_doc.patch` (in that order). This does work on 4.3.5, I just checked.\n\nBut the ball is in David Roe's court as far as the finite field patches are concerned. The sequence is #8218 --> #8332 -> #7880 -> #7883 -> #8333 -> #8334 -> #8335. So far\n\n- #8218 has a positive review\n- #7880 has a positive review\n- #7883 has been looked at by both me and Rob Bradshaw and we both agree that it needs more work.\n\nFurther downstream, #8333 builds independently of #7883, but many things in #8333 are horribly broken unless you also apply #8334, which does *not* build independently of #7883.\n\nDavid",
+    "body": "Hi John,\n\nFirst apply the bundle trac_8218_move_433.bundle, using the commands:\n\n```\nhg unbundle http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8218/trac_8218_move_433.bundle\nhg merge\nhg ci -m \"merged finite field bundle\"\n```\nThen use queues in the normal way to import the patches `trac_8218_fixes_434alpha1.patch` and `trac_8218_doc.patch` (in that order). This does work on 4.3.5, I just checked.\n\nBut the ball is in David Roe's court as far as the finite field patches are concerned. The sequence is #8218 --> #8332 -> #7880 -> #7883 -> #8333 -> #8334 -> #8335. So far\n\n- #8218 has a positive review\n- #7880 has a positive review\n- #7883 has been looked at by both me and Rob Bradshaw and we both agree that it needs more work.\n\nFurther downstream, #8333 builds independently of #7883, but many things in #8333 are horribly broken unless you also apply #8334, which does *not* build independently of #7883.\n\nDavid",
     "created_at": "2010-04-04T09:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -1096,7 +1092,6 @@ hg unbundle http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8218/trac_8
 hg merge
 hg ci -m "merged finite field bundle"
 ```
-
 Then use queues in the normal way to import the patches `trac_8218_fixes_434alpha1.patch` and `trac_8218_doc.patch` (in that order). This does work on 4.3.5, I just checked.
 
 But the ball is in David Roe's court as far as the finite field patches are concerned. The sequence is #8218 --> #8332 -> #7880 -> #7883 -> #8333 -> #8334 -> #8335. So far
@@ -1116,7 +1111,7 @@ David
 archive/issue_comments_072408.json:
 ```json
 {
-    "body": "Replying to [comment:28 davidloeffler]:\n> Hi John,\n> \n...\n> \n> David\n> \n\nThanks!  I saw that some of the later patches had had positive reviews too, so maybe it's a bit late for me to join in.  But I thought that for a complicated interrelated set of patches like this, which non-trivial mathematical content, it would be good to have a small set of people looking at it rather than individuals.",
+    "body": "Replying to [comment:28 davidloeffler]:\n> Hi John,\n> \n\n...\n> \n> David\n> \n\n\nThanks!  I saw that some of the later patches had had positive reviews too, so maybe it's a bit late for me to join in.  But I thought that for a complicated interrelated set of patches like this, which non-trivial mathematical content, it would be good to have a small set of people looking at it rather than individuals.",
     "created_at": "2010-04-04T09:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -1128,10 +1123,12 @@ archive/issue_comments_072408.json:
 Replying to [comment:28 davidloeffler]:
 > Hi John,
 > 
+
 ...
 > 
 > David
 > 
+
 
 Thanks!  I saw that some of the later patches had had positive reviews too, so maybe it's a bit late for me to join in.  But I thought that for a complicated interrelated set of patches like this, which non-trivial mathematical content, it would be good to have a small set of people looking at it rather than individuals.
 
@@ -1142,7 +1139,7 @@ Thanks!  I saw that some of the later patches had had positive reviews too, so m
 archive/issue_comments_072409.json:
 ```json
 {
-    "body": "I built this fine (following David L's instructions above).  Rebuilding the docs produced this:\n\n```\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/finite_field.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/finite_field_element.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod_ring.rst:: WARNING: document isn't included in any toctree\n```\n\nIs this fixed later in the series?  If not, it should be fixed here.  So I am putting this back to \"needs work\".",
+    "body": "I built this fine (following David L's instructions above).  Rebuilding the docs produced this:\n\n```\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/finite_field.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/finite_field_element.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod.rst:: WARNING: document isn't included in any toctree\n/home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod_ring.rst:: WARNING: document isn't included in any toctree\n```\nIs this fixed later in the series?  If not, it should be fixed here.  So I am putting this back to \"needs work\".",
     "created_at": "2010-04-04T11:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -1159,7 +1156,6 @@ I built this fine (following David L's instructions above).  Rebuilding the docs
 /home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod.rst:: WARNING: document isn't included in any toctree
 /home/john/sage-current/devel/sage/doc/en/reference/sage/rings/integer_mod_ring.rst:: WARNING: document isn't included in any toctree
 ```
-
 Is this fixed later in the series?  If not, it should be fixed here.  So I am putting this back to "needs work".
 
 

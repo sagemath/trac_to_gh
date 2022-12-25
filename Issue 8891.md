@@ -105,7 +105,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081611.json:
 ```json
 {
-    "body": "Without the patch, I get, e.g.,\n\n```sh\nmpatel@sage monoids$ sage -t .\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\nmpatel@sage monoids$ \n```\n\nWith the patch, I get\n\n```sh\nmpatel@sage monoids$ sage -t .\nsage -t  \"./string_monoid_element.py\"                       \n         [2.1 s]\n[...]\n```\n",
+    "body": "Without the patch, I get, e.g.,\n\n```sh\nmpatel@sage monoids$ sage -t .\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\nmpatel@sage monoids$ \n```\nWith the patch, I get\n\n```sh\nmpatel@sage monoids$ sage -t .\nsage -t  \"./string_monoid_element.py\"                       \n         [2.1 s]\n[...]\n```",
     "created_at": "2010-06-12T08:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8891",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ All tests passed!
 Total time for all tests: 0.0 seconds
 mpatel@sage monoids$ 
 ```
-
 With the patch, I get
 
 ```sh
@@ -133,7 +132,6 @@ sage -t  "./string_monoid_element.py"
          [2.1 s]
 [...]
 ```
-
 
 
 

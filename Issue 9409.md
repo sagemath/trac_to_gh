@@ -141,7 +141,7 @@ Test script
 archive/issue_comments_089530.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> This should be tested after #9315 is in as that may well fix it.\n\nUnfortunately not.  After loading the attached script, running either testE() or testF() in a fresh Sage (so no cached fields) works fine, but then running the other one fails (at p=59).",
+    "body": "Replying to [comment:4 cremona]:\n> This should be tested after #9315 is in as that may well fix it.\n\n\nUnfortunately not.  After loading the attached script, running either testE() or testF() in a fresh Sage (so no cached fields) works fine, but then running the other one fails (at p=59).",
     "created_at": "2010-08-14T17:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9409",
     "type": "issue_comment",
@@ -152,6 +152,7 @@ archive/issue_comments_089530.json:
 
 Replying to [comment:4 cremona]:
 > This should be tested after #9315 is in as that may well fix it.
+
 
 Unfortunately not.  After loading the attached script, running either testE() or testF() in a fresh Sage (so no cached fields) works fine, but then running the other one fails (at p=59).
 

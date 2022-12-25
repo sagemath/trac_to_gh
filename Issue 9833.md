@@ -3,7 +3,7 @@
 archive/issues_009833.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nKeywords: latex, fraction, pynac\n\nSimilarly as in #9314\n\n\n```\nsage: latex(-(x+1)/(x+2))\n\\frac{-x + 1}{x + 2}\n```\n\n\nnote the minus sign :(\n\nIssue created by migration from https://trac.sagemath.org/ticket/9834\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nKeywords: latex, fraction, pynac\n\nSimilarly as in #9314\n\n```\nsage: latex(-(x+1)/(x+2))\n\\frac{-x + 1}{x + 2}\n```\n\nnote the minus sign :(\n\nIssue created by migration from https://trac.sagemath.org/ticket/9834\n\n",
     "created_at": "2010-08-28T20:21:05Z",
     "labels": [
         "component: symbolics",
@@ -25,12 +25,10 @@ Keywords: latex, fraction, pynac
 
 Similarly as in #9314
 
-
 ```
 sage: latex(-(x+1)/(x+2))
 \frac{-x + 1}{x + 2}
 ```
-
 
 note the minus sign :(
 

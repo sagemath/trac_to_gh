@@ -3,7 +3,7 @@
 archive/issues_000100.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nExample:\n\n```\nFile \"element.py\", line 507:\n    sage: f.mod( (x - y, y - z) )\nException raised:\n    Traceback (most recent call last):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/100\n\n",
+    "body": "Assignee: @williamstein\n\nExample:\n\n```\nFile \"element.py\", line 507:\n    sage: f.mod( (x - y, y - z) )\nException raised:\n    Traceback (most recent call last):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/100\n\n",
     "created_at": "2006-09-30T21:47:46Z",
     "labels": [
         "component: user interface",
@@ -26,7 +26,6 @@ File "element.py", line 507:
 Exception raised:
     Traceback (most recent call last):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/100
 

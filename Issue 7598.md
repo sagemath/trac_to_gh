@@ -3,7 +3,7 @@
 archive/issues_007598.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @burcin\n\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nIt should give `1j` instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7598\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @burcin\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\nIt should give `1j` instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7598\n\n",
     "created_at": "2009-12-04T05:35:08Z",
     "labels": [
         "component: number fields",
@@ -20,13 +20,11 @@ Assignee: @loefflerd
 
 CC:  @burcin
 
-
 ```
 sage: Q.<i> = NumberField(x^2+1)
 sage: complex(i)
 0.99999999999999967j
 ```
-
 
 It should give `1j` instead.
 
@@ -58,7 +56,7 @@ archive/issue_events_018051.json:
 archive/issue_comments_064692.json:
 ```json
 {
-    "body": "This is probably caused by the roots method using NumPy which uses Fortran which is a little off.  If you specify algorithm='pari' to the roots command when computing them, things should be fine.\n\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: Q.defining_polynomial().change_ring(CC).roots()[1][0].imag().exact_rational()\n9007199254740989/9007199254740992\nsage: Q.defining_polynomial().change_ring(ComplexField(100)).roots()[1][0].imag().exact_rational()\n1\n```\n\n\nNote that NumPy is not used for the second example.",
+    "body": "This is probably caused by the roots method using NumPy which uses Fortran which is a little off.  If you specify algorithm='pari' to the roots command when computing them, things should be fine.\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: Q.defining_polynomial().change_ring(CC).roots()[1][0].imag().exact_rational()\n9007199254740989/9007199254740992\nsage: Q.defining_polynomial().change_ring(ComplexField(100)).roots()[1][0].imag().exact_rational()\n1\n```\n\nNote that NumPy is not used for the second example.",
     "created_at": "2009-12-14T06:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ archive/issue_comments_064692.json:
 
 This is probably caused by the roots method using NumPy which uses Fortran which is a little off.  If you specify algorithm='pari' to the roots command when computing them, things should be fine.
 
-
 ```
 sage: Q.<i> = NumberField(x^2+1)
 sage: Q.defining_polynomial().change_ring(CC).roots()[1][0].imag().exact_rational()
@@ -77,7 +74,6 @@ sage: Q.defining_polynomial().change_ring(CC).roots()[1][0].imag().exact_rationa
 sage: Q.defining_polynomial().change_ring(ComplexField(100)).roots()[1][0].imag().exact_rational()
 1
 ```
-
 
 Note that NumPy is not used for the second example.
 
@@ -88,7 +84,7 @@ Note that NumPy is not used for the second example.
 archive/issue_comments_064693.json:
 ```json
 {
-    "body": "Attachment [trac_7598-more_serious_version.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-more_serious_version.patch) by @williamstein created at 2009-12-14 10:33:39\n\ntrac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:\n\n```\n\tsage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed\n```\n\nand I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...\n\nThe design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.\n\nHere is an example from sage-4.2.1 that illustrates just how horrendously bad the previous design was (with using CDF when prec=53 but ComplexField(prec) otherwise):\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: i.complex_em\ni.complex_embedding   i.complex_embeddings  \nsage: i.complex_embedding()\n1.0*I\nsage: i.complex_embedding(100)\n-1.0000000000000000000000000000*I\n```\n",
+    "body": "Attachment [trac_7598-more_serious_version.patch](tarball://root/attachments/some-uuid/ticket7598/trac_7598-more_serious_version.patch) by @williamstein created at 2009-12-14 10:33:39\n\ntrac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:\n\n```\n\tsage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed\n```\nand I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...\n\nThe design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.\n\nHere is an example from sage-4.2.1 that illustrates just how horrendously bad the previous design was (with using CDF when prec=53 but ComplexField(prec) otherwise):\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: i.complex_em\ni.complex_embedding   i.complex_embeddings  \nsage: i.complex_embedding()\n1.0*I\nsage: i.complex_embedding(100)\n-1.0000000000000000000000000000*I\n```",
     "created_at": "2009-12-14T10:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -104,7 +100,6 @@ trac_7598-more_serious_version.patch  -- this deals with the problems more at th
 ```
 	sage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed
 ```
-
 and I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...
 
 The design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.
@@ -123,13 +118,12 @@ sage: i.complex_embedding(100)
 
 
 
-
 ---
 
 archive/issue_comments_064694.json:
 ```json
 {
-    "body": "I think the errors in dirichlet.py comes from the following:\n\n\n```\nsage: a = mod(1,3)\nsage: CDF.zeta(3)^a\n-0.5 + 0.866025403784*I\nsage: CC.zeta(3)^a\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.rings.complex_number.ComplexNumber'> to an integer\n```\n\n\nIt'd be nice if the {{{__pow__}} methods were standardized.",
+    "body": "I think the errors in dirichlet.py comes from the following:\n\n```\nsage: a = mod(1,3)\nsage: CDF.zeta(3)^a\n-0.5 + 0.866025403784*I\nsage: CC.zeta(3)^a\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.rings.complex_number.ComplexNumber'> to an integer\n```\n\nIt'd be nice if the {{{__pow__}} methods were standardized.",
     "created_at": "2009-12-14T13:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -139,7 +133,6 @@ archive/issue_comments_064694.json:
 ```
 
 I think the errors in dirichlet.py comes from the following:
-
 
 ```
 sage: a = mod(1,3)
@@ -151,7 +144,6 @@ Traceback (most recent call last)
 ...
 TypeError: unable to coerce <type 'sage.rings.complex_number.ComplexNumber'> to an integer
 ```
-
 
 It'd be nice if the {{{__pow__}} methods were standardized.
 
@@ -274,7 +266,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064701.json:
 ```json
 {
-    "body": "Running long doctests on a 32-bit Arch Linux machine gives one doctest failure related to this ticket:\n\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 109:\n    sage: K.complex_embeddings()\nExpected:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 - 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 + 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> 1.25992104989\n    ]\nGot:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> 1.25992104989487\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_nf_galois_groups.py\n\t [5.9 s]\nexit code: 1024\n```\n \n\nApart from this small issue, everything looks good.",
+    "body": "Running long doctests on a 32-bit Arch Linux machine gives one doctest failure related to this ticket:\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 109:\n    sage: K.complex_embeddings()\nExpected:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 - 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 + 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> 1.25992104989\n    ]\nGot:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> 1.25992104989487\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_nf_galois_groups.py\n\t [5.9 s]\nexit code: 1024\n``` \n\nApart from this small issue, everything looks good.",
     "created_at": "2009-12-15T11:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7598",
     "type": "issue_comment",
@@ -284,7 +276,6 @@ archive/issue_comments_064701.json:
 ```
 
 Running long doctests on a 32-bit Arch Linux machine gives one doctest failure related to this ticket:
-
 
 ```
 sage -t -long "devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst"
@@ -328,8 +319,7 @@ Got:
 For whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_nf_galois_groups.py
 	 [5.9 s]
 exit code: 1024
-```
- 
+``` 
 
 Apart from this small issue, everything looks good.
 

@@ -3,7 +3,7 @@
 archive/issues_005907.json:
 ```json
 {
-    "body": "Assignee: @tornaria\n\nKeywords: fast_float\n\nA constant polynomial `a` is incorrectly `_fast_float_`- evaluated as `a*x`:\n\n```\nsage: R.<t> = QQ[]\nsage: f = t + 2 - t\nsage: ff = f._fast_float_()\nsage: ff(3)\n6.0\nsage: list(ff)\n['load 0', 'push 2.0', 'mul']\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5907\n\n",
+    "body": "Assignee: @tornaria\n\nKeywords: fast_float\n\nA constant polynomial `a` is incorrectly `_fast_float_`- evaluated as `a*x`:\n\n```\nsage: R.<t> = QQ[]\nsage: f = t + 2 - t\nsage: ff = f._fast_float_()\nsage: ff(3)\n6.0\nsage: list(ff)\n['load 0', 'push 2.0', 'mul']\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5907\n\n",
     "created_at": "2009-04-27T01:10:19Z",
     "labels": [
         "component: basic arithmetic",
@@ -31,7 +31,6 @@ sage: ff(3)
 sage: list(ff)
 ['load 0', 'push 2.0', 'mul']
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5907
 

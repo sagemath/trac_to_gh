@@ -3,7 +3,7 @@
 archive/issues_005474.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\n\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
     "created_at": "2009-03-10T21:23:00Z",
     "labels": [
         "component: linear algebra",
@@ -30,7 +30,6 @@ would set them.  That's minimally intrusive.  Later on somebody could
 come up with some grand scheme for customizing latex output, but
 please don't until there are a few more use cases. 
 ```
-
 The attached patch implements "set_matrix_latex_delimiters". (I changed the name slightly.)
 
 
@@ -190,7 +189,7 @@ Thank you!  This has been a minor annoyance when using Sage in class, since we u
 archive/issue_comments_042389.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> Thank you!  This has been a minor annoyance when using Sage in class, since we use different delimiters than Sage...\n\nYou're welcome! I hope it works well for you.",
+    "body": "Replying to [comment:4 jason]:\n> Thank you!  This has been a minor annoyance when using Sage in class, since we use different delimiters than Sage...\n\n\nYou're welcome! I hope it works well for you.",
     "created_at": "2009-03-11T01:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
@@ -201,5 +200,6 @@ archive/issue_comments_042389.json:
 
 Replying to [comment:4 jason]:
 > Thank you!  This has been a minor annoyance when using Sage in class, since we use different delimiters than Sage...
+
 
 You're welcome! I hope it works well for you.

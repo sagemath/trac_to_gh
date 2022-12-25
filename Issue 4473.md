@@ -52,7 +52,7 @@ Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sag
 archive/issue_comments_032975.json:
 ```json
 {
-    "body": "To test this, make a file foo.sage with\n\n```\nload a.py\n```\n\nin it, and make a.py an empty file.   Then try\n\n\n```\nsage: load foo.sage\n```\n\n\nand see that you don't get a big nasty printout.",
+    "body": "To test this, make a file foo.sage with\n\n```\nload a.py\n```\nin it, and make a.py an empty file.   Then try\n\n```\nsage: load foo.sage\n```\n\nand see that you don't get a big nasty printout.",
     "created_at": "2008-11-09T03:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
@@ -66,14 +66,11 @@ To test this, make a file foo.sage with
 ```
 load a.py
 ```
-
 in it, and make a.py an empty file.   Then try
-
 
 ```
 sage: load foo.sage
 ```
-
 
 and see that you don't get a big nasty printout.
 

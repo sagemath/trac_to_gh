@@ -64,7 +64,7 @@ Is this ready for review?
 archive/issue_comments_092207.json:
 ```json
 {
-    "body": "Three files with doctest failures, most look pretty harmless, different number of arguments, etc.:\n\nThe failures were\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t --long devel/sage-main/sage/graphs/graph_generators.py # 1 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/generic_graph.py # 8 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/graph.py # 19 doctests failed\n----------------------------------------------------------------------\n```\n\n\n\nhttp://sage.pastebin.com/bTMLkp1H",
+    "body": "Three files with doctest failures, most look pretty harmless, different number of arguments, etc.:\n\nThe failures were\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t --long devel/sage-main/sage/graphs/graph_generators.py # 1 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/generic_graph.py # 8 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/graph.py # 19 doctests failed\n----------------------------------------------------------------------\n```\n\n\nhttp://sage.pastebin.com/bTMLkp1H",
     "created_at": "2010-07-21T21:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ The following tests failed:
 ```
 
 
-
 http://sage.pastebin.com/bTMLkp1H
 
 
@@ -99,7 +98,7 @@ http://sage.pastebin.com/bTMLkp1H
 archive/issue_comments_092208.json:
 ```json
 {
-    "body": "The `graph_generators.py` failure looks like a new NX bug:\n\n```\nsage: networkx.random_powerlaw_tree(10, 2)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/<ipython console> in <module>()\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/generators/random_graphs.pyc in random_powerlaw_tree(n, gamma, create_using, seed, tries)\n    930 \n    931     \"\"\"\n--> 932     from nx.generators.degree_seq import degree_sequence_tree\n    933     try:\n    934         s=random_powerlaw_tree_sequence(n,\n\nImportError: No module named nx.generators.degree_seq\n```\n",
+    "body": "The `graph_generators.py` failure looks like a new NX bug:\n\n```\nsage: networkx.random_powerlaw_tree(10, 2)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/<ipython console> in <module>()\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/generators/random_graphs.pyc in random_powerlaw_tree(n, gamma, create_using, seed, tries)\n    930 \n    931     \"\"\"\n--> 932     from nx.generators.degree_seq import degree_sequence_tree\n    933     try:\n    934         s=random_powerlaw_tree_sequence(n,\n\nImportError: No module named nx.generators.degree_seq\n```",
     "created_at": "2010-07-21T23:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -129,7 +128,6 @@ ImportError: No module named nx.generators.degree_seq
 
 
 
-
 ---
 
 archive/issue_events_023822.json:
@@ -152,7 +150,7 @@ archive/issue_events_023822.json:
 archive/issue_comments_092209.json:
 ```json
 {
-    "body": "Several API changes:\n\n```\nsage: networkx.triangles?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function triangles at 0x4899b18>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.triangles(G, nbunch=None)\nDocstring:\n    <no docstring>\n```\n\n(triangles used to take another argument) -- `cluster_triangles()` in Sage will need to be updated to reflect this.\n\n\n```\nsage: networkx.clustering?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function clustering at 0x4899c80>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.clustering(G, nbunch=None, weights=False)\nDocstring:\n    <no docstring>\n```\n\nthis is Sage's `clustering_coeff()`\n\nThese are both coming from the argument `with_weights` disappearing in NX.",
+    "body": "Several API changes:\n\n```\nsage: networkx.triangles?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function triangles at 0x4899b18>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.triangles(G, nbunch=None)\nDocstring:\n    <no docstring>\n```\n(triangles used to take another argument) -- `cluster_triangles()` in Sage will need to be updated to reflect this.\n\n```\nsage: networkx.clustering?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function clustering at 0x4899c80>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.clustering(G, nbunch=None, weights=False)\nDocstring:\n    <no docstring>\n```\nthis is Sage's `clustering_coeff()`\n\nThese are both coming from the argument `with_weights` disappearing in NX.",
     "created_at": "2010-07-21T23:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -174,9 +172,7 @@ Definition:	networkx.triangles(G, nbunch=None)
 Docstring:
     <no docstring>
 ```
-
 (triangles used to take another argument) -- `cluster_triangles()` in Sage will need to be updated to reflect this.
-
 
 ```
 sage: networkx.clustering?
@@ -189,7 +185,6 @@ Definition:	networkx.clustering(G, nbunch=None, weights=False)
 Docstring:
     <no docstring>
 ```
-
 this is Sage's `clustering_coeff()`
 
 These are both coming from the argument `with_weights` disappearing in NX.
@@ -201,7 +196,7 @@ These are both coming from the argument `with_weights` disappearing in NX.
 archive/issue_comments_092210.json:
 ```json
 {
-    "body": "No idea here:\n\n```\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/devel/sage-main/sage/graphs/graph.py\", line 2411:\n    sage: (graphs.ChvatalGraph()).centrality_betweenness(normalized=False)\nExpected:\n    {0: 7.6666666666666661, 1: 7.6666666666666661, 2: 6.6666666666666661, 3: 6.6666666666666661, 4: 7.6666666666666661, 5: 7.6666666666666661, 6: 6.6666666666666661, 7: 6.6666666666666661, 8: 6.6666666666666661, 9: 6.6666666666666661, 10: 6.6666666666666661, 11: 6.6666666666666661}\nGot:\n    {0: 3.833333333333333, 1: 3.833333333333333, 2: 3.333333333333333, 3: 3.333333333333333, 4: 3.833333333333333, 5: 3.833333333333333, 6: 3.333333333333333, 7: 3.333333333333333, 8: 3.333333333333333, 9: 3.333333333333333, 10: 3.333333333333333, 11: 3.333333333333333}\n**********************************************************************\n```\n",
+    "body": "No idea here:\n\n```\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/devel/sage-main/sage/graphs/graph.py\", line 2411:\n    sage: (graphs.ChvatalGraph()).centrality_betweenness(normalized=False)\nExpected:\n    {0: 7.6666666666666661, 1: 7.6666666666666661, 2: 6.6666666666666661, 3: 6.6666666666666661, 4: 7.6666666666666661, 5: 7.6666666666666661, 6: 6.6666666666666661, 7: 6.6666666666666661, 8: 6.6666666666666661, 9: 6.6666666666666661, 10: 6.6666666666666661, 11: 6.6666666666666661}\nGot:\n    {0: 3.833333333333333, 1: 3.833333333333333, 2: 3.333333333333333, 3: 3.333333333333333, 4: 3.833333333333333, 5: 3.833333333333333, 6: 3.333333333333333, 7: 3.333333333333333, 8: 3.333333333333333, 9: 3.333333333333333, 10: 3.333333333333333, 11: 3.333333333333333}\n**********************************************************************\n```",
     "created_at": "2010-07-21T23:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -225,13 +220,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_092211.json:
 ```json
 {
-    "body": "This function no longer takes a vertex as input:\n\n```\n\nsage: networkx.degree_centrality?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function degree_centrality at 0x87e9b0>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/centrality/degree.py\nDefinition:\tnetworkx.degree_centrality(G)\nDocstring:\n    <no docstring>\n```\n",
+    "body": "This function no longer takes a vertex as input:\n\n```\n\nsage: networkx.degree_centrality?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function degree_centrality at 0x87e9b0>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/centrality/degree.py\nDefinition:\tnetworkx.degree_centrality(G)\nDocstring:\n    <no docstring>\n```",
     "created_at": "2010-07-21T23:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -254,7 +248,6 @@ Definition:	networkx.degree_centrality(G)
 Docstring:
     <no docstring>
 ```
-
 
 
 
@@ -361,7 +354,7 @@ Nathann
 archive/issue_comments_092217.json:
 ```json
 {
-    "body": "Replying to [comment:8 bedwards]:\n> The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.\n\nWe should change everything to support the new syntax, especially since it is so easy. If the pickle jar were having problems, it might mean we would have more work to do, but it seems that 1.0->1.1 involves very minimal changes.",
+    "body": "Replying to [comment:8 bedwards]:\n> The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.\n\n\nWe should change everything to support the new syntax, especially since it is so easy. If the pickle jar were having problems, it might mean we would have more work to do, but it seems that 1.0->1.1 involves very minimal changes.",
     "created_at": "2010-07-22T08:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9567",
     "type": "issue_comment",
@@ -372,6 +365,7 @@ archive/issue_comments_092217.json:
 
 Replying to [comment:8 bedwards]:
 > The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.
+
 
 We should change everything to support the new syntax, especially since it is so easy. If the pickle jar were having problems, it might mean we would have more work to do, but it seems that 1.0->1.1 involves very minimal changes.
 

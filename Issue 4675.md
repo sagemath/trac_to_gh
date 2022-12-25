@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4675
 archive/issue_comments_035154.json:
 ```json
 {
-    "body": "Just for the record, this document is already technically \"in the Sage Documentation\", since it has shipped with Sage for months here:\n\n\n```\nSAGE_ROOT/devel/doc/overviews/numerical_sage\n```\n\n\nnot that anybody would notice... and of course it needs to be sphinxed.",
+    "body": "Just for the record, this document is already technically \"in the Sage Documentation\", since it has shipped with Sage for months here:\n\n```\nSAGE_ROOT/devel/doc/overviews/numerical_sage\n```\n\nnot that anybody would notice... and of course it needs to be sphinxed.",
     "created_at": "2008-12-02T17:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4675",
     "type": "issue_comment",
@@ -46,11 +46,9 @@ archive/issue_comments_035154.json:
 
 Just for the record, this document is already technically "in the Sage Documentation", since it has shipped with Sage for months here:
 
-
 ```
 SAGE_ROOT/devel/doc/overviews/numerical_sage
 ```
-
 
 not that anybody would notice... and of course it needs to be sphinxed.
 

@@ -3,7 +3,7 @@
 archive/issues_009322.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @categorie jeremywest\n\n[NB This is a different bug from the one on #5153]\n\nChris Wuthrich reports:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent(verbose=2)\nbooom.\n```\n\n\nThe same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9322\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @categorie jeremywest\n\n[NB This is a different bug from the one on #5153]\n\nChris Wuthrich reports:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent(verbose=2)\nbooom.\n```\n\nThe same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9322\n\n",
     "created_at": "2010-06-24T03:00:39Z",
     "labels": [
         "component: algebra",
@@ -33,7 +33,6 @@ sage: E.simon_two_descent(verbose=2)
 booom.
 ```
 
-
 The same example runs fine in gp using the same version of the script ell.gp that Sage has (in version 4.4.4) and the same version of gp.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9322
@@ -47,7 +46,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9322
 archive/issue_comments_087748.json:
 ```json
 {
-    "body": "\n```\n\njohn@ubuntu%sage -gp\n                  GP/PARI CALCULATOR Version 2.3.5 (released)\n...\n\n? bnf=bnfinit(y^2-y-232);\n? w=Mod(y,y^2-y-232)\n%8 = Mod(y, y^2 - y - 232)\n? e=ellinit([2-w,18+3*w,209+9*w,2581+175*w,852-55*w]);\n? bnfellrank(bnf,e)\ncourbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)\npoints triviaux sur la courbe = [[1, 1, 0]]\n#S(E/K)[2]    = 4\n#E(K)/2E(K)  >= 1\n#III(E/K)[2] <= 4\nrang(E/K)    >= 0\nlistpointsmwr = []\n%10 = [0, 2, []]\n```\n",
+    "body": "```\n\njohn@ubuntu%sage -gp\n                  GP/PARI CALCULATOR Version 2.3.5 (released)\n...\n\n? bnf=bnfinit(y^2-y-232);\n? w=Mod(y,y^2-y-232)\n%8 = Mod(y, y^2 - y - 232)\n? e=ellinit([2-w,18+3*w,209+9*w,2581+175*w,852-55*w]);\n? bnfellrank(bnf,e)\ncourbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)\npoints triviaux sur la courbe = [[1, 1, 0]]\n#S(E/K)[2]    = 4\n#E(K)/2E(K)  >= 1\n#III(E/K)[2] <= 4\nrang(E/K)    >= 0\nlistpointsmwr = []\n%10 = [0, 2, []]\n```",
     "created_at": "2010-06-24T03:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -55,7 +54,6 @@ archive/issue_comments_087748.json:
     "user": "https://github.com/JohnCremona"
 }
 ```
-
 
 ```
 
@@ -77,7 +75,6 @@ rang(E/K)    >= 0
 listpointsmwr = []
 %10 = [0, 2, []]
 ```
-
 
 
 
@@ -159,7 +156,7 @@ Changing component from algebra to elliptic curves.
 archive/issue_comments_087752.json:
 ```json
 {
-    "body": "With 4.7.alpha1 this works fine:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)                                   \nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])      \nsage: E.local_data()                                                   \n[]\nsage: E.simon_two_descent()                                      \n(0, 2, [])\n```\n\nbut after #11005 (which updates to a newer version of Simon's GP scripts) we run into an infinite loop:\n\n```\n **** Warning: doubling the real precision in nfsign_s **** 76\n **** Warning: doubling the real precision in nfsign_s **** 152\n **** Warning: doubling the real precision in nfsign_s **** 76\n **** Warning: doubling the real precision in nfsign_s **** 152\n **** Warning: doubling the real precision in nfsign_s **** 76\n```\n\nwhich I will test on a stand-alone gp and report upstream.",
+    "body": "With 4.7.alpha1 this works fine:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)                                   \nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])      \nsage: E.local_data()                                                   \n[]\nsage: E.simon_two_descent()                                      \n(0, 2, [])\n```\nbut after #11005 (which updates to a newer version of Simon's GP scripts) we run into an infinite loop:\n\n```\n **** Warning: doubling the real precision in nfsign_s **** 76\n **** Warning: doubling the real precision in nfsign_s **** 152\n **** Warning: doubling the real precision in nfsign_s **** 76\n **** Warning: doubling the real precision in nfsign_s **** 152\n **** Warning: doubling the real precision in nfsign_s **** 76\n```\nwhich I will test on a stand-alone gp and report upstream.",
     "created_at": "2011-03-25T04:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -178,7 +175,6 @@ sage: E.local_data()
 sage: E.simon_two_descent()                                      
 (0, 2, [])
 ```
-
 but after #11005 (which updates to a newer version of Simon's GP scripts) we run into an infinite loop:
 
 ```
@@ -188,7 +184,6 @@ but after #11005 (which updates to a newer version of Simon's GP scripts) we run
  **** Warning: doubling the real precision in nfsign_s **** 152
  **** Warning: doubling the real precision in nfsign_s **** 76
 ```
-
 which I will test on a stand-alone gp and report upstream.
 
 
@@ -252,7 +247,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_087756.json:
 ```json
 {
-    "body": "Running under gp directly:\n\n```\n? K = bnfinit(y^2 - y - 232);\n? a = Mod(y,K.pol);\n? bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852])\ncourbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)\npoints triviaux sur la courbe = [[1, 1, 0]]\n#S(E/K)[2]    = 4\n#E(K)/2E(K)  >= 2\n#III(E/K)[2] <= 2\nrang(E/K)    >= 1\n III devrait etre un carre, donc \n#E(K)/2E(K)  = 4\n#III(E/K)[2] = 1\nrang(E/K)    = 2\nlistpointsmwr = [[Mod(-35/4*y - 186, y^2 - y - 232), Mod(-21/8*y - 37, y^2 - y - 232)]]\n%71 = [2, 2, [[Mod(-35/16*y - 93/2, y^2 - y - 232), Mod(-1727/64*y - 2531/8, y^2 - y - 232)]]]\n```\n\nwe get instant success.  Also with the gp2c-compiled version.  So it is *not* an upstream problem,and one which should be solvable within Sage.",
+    "body": "Running under gp directly:\n\n```\n? K = bnfinit(y^2 - y - 232);\n? a = Mod(y,K.pol);\n? bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852])\ncourbe elliptique : Y^2 = x^3 + Mod(9*y + 308, y^2 - y - 232)*x^2 + Mod(1200*y + 27936, y^2 - y - 232)*x + Mod(57968*y + 1054096, y^2 - y - 232)\npoints triviaux sur la courbe = [[1, 1, 0]]\n#S(E/K)[2]    = 4\n#E(K)/2E(K)  >= 2\n#III(E/K)[2] <= 2\nrang(E/K)    >= 1\n III devrait etre un carre, donc \n#E(K)/2E(K)  = 4\n#III(E/K)[2] = 1\nrang(E/K)    = 2\nlistpointsmwr = [[Mod(-35/4*y - 186, y^2 - y - 232), Mod(-21/8*y - 37, y^2 - y - 232)]]\n%71 = [2, 2, [[Mod(-35/16*y - 93/2, y^2 - y - 232), Mod(-1727/64*y - 2531/8, y^2 - y - 232)]]]\n```\nwe get instant success.  Also with the gp2c-compiled version.  So it is *not* an upstream problem,and one which should be solvable within Sage.",
     "created_at": "2011-03-25T04:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -280,7 +275,6 @@ rang(E/K)    = 2
 listpointsmwr = [[Mod(-35/4*y - 186, y^2 - y - 232), Mod(-21/8*y - 37, y^2 - y - 232)]]
 %71 = [2, 2, [[Mod(-35/16*y - 93/2, y^2 - y - 232), Mod(-1727/64*y - 2531/8, y^2 - y - 232)]]]
 ```
-
 we get instant success.  Also with the gp2c-compiled version.  So it is *not* an upstream problem,and one which should be solvable within Sage.
 
 
@@ -339,7 +333,7 @@ Paul
 archive/issue_comments_087759.json:
 ```json
 {
-    "body": "Replying to [comment:6 zimmerma]:\n> is there a way to get the output of the print commands from the ell.gp script\n> when it is called from within Sage? Even with a large value of DEBUGLEVEL_ell, the output\n> of those print statements does not appear in the Sage session, thus it is difficult to debug.\n> \n> Paul\n\nYou can get a whole gp session logged to a file by setting gp=Gp(logfile=foobar.txt').  But the code in gp-simon.py creates its own gp instance without using the logfile option.  In the short term, edit line 38 of sage/sage/schemes/elliptic_curves/gp-simon.py to add the logfile option.  A better long-term solution would be to have a logfile parameter to the two-descent function itself and pass that on.\n\nBy the way, there are new version of Simon's scripts which in Sage Days in March (6 months ago!) I got working in a better way, using gp2c to convert to C code.  There was some reason which I now cannot remember why there was a delay in getting this merged, and after 6 months I fear that the patches we made then would no longer work.  Damn.  Anyway, I strongly suggest if you have problem cases that you run the curves directly through ell.gp (outside Sage) using the newest version of ell.gp from Simon's web page, since you may be seeing a problem which has already been fixed.",
+    "body": "Replying to [comment:6 zimmerma]:\n> is there a way to get the output of the print commands from the ell.gp script\n> when it is called from within Sage? Even with a large value of DEBUGLEVEL_ell, the output\n> of those print statements does not appear in the Sage session, thus it is difficult to debug.\n> \n> Paul\n\n\nYou can get a whole gp session logged to a file by setting gp=Gp(logfile=foobar.txt').  But the code in gp-simon.py creates its own gp instance without using the logfile option.  In the short term, edit line 38 of sage/sage/schemes/elliptic_curves/gp-simon.py to add the logfile option.  A better long-term solution would be to have a logfile parameter to the two-descent function itself and pass that on.\n\nBy the way, there are new version of Simon's scripts which in Sage Days in March (6 months ago!) I got working in a better way, using gp2c to convert to C code.  There was some reason which I now cannot remember why there was a delay in getting this merged, and after 6 months I fear that the patches we made then would no longer work.  Damn.  Anyway, I strongly suggest if you have problem cases that you run the curves directly through ell.gp (outside Sage) using the newest version of ell.gp from Simon's web page, since you may be seeing a problem which has already been fixed.",
     "created_at": "2011-09-15T15:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -355,6 +349,7 @@ Replying to [comment:6 zimmerma]:
 > 
 > Paul
 
+
 You can get a whole gp session logged to a file by setting gp=Gp(logfile=foobar.txt').  But the code in gp-simon.py creates its own gp instance without using the logfile option.  In the short term, edit line 38 of sage/sage/schemes/elliptic_curves/gp-simon.py to add the logfile option.  A better long-term solution would be to have a logfile parameter to the two-descent function itself and pass that on.
 
 By the way, there are new version of Simon's scripts which in Sage Days in March (6 months ago!) I got working in a better way, using gp2c to convert to C code.  There was some reason which I now cannot remember why there was a delay in getting this merged, and after 6 months I fear that the patches we made then would no longer work.  Damn.  Anyway, I strongly suggest if you have problem cases that you run the curves directly through ell.gp (outside Sage) using the newest version of ell.gp from Simon's web page, since you may be seeing a problem which has already been fixed.
@@ -366,7 +361,7 @@ By the way, there are new version of Simon's scripts which in Sage Days in March
 archive/issue_comments_087760.json:
 ```json
 {
-    "body": "thank you John for your advice. After trying it, I figured out that with Sage 4.7.1 on my laptop\nin fact the example in the description actually works, but takes about 2.5 minutes, during which\ntop reports that the gp process takes 100% of the cpu time, while evaluating the command\n\n```\nans=bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852]);;\n```\n\nCan someone else confirm? Maybe a problem in the Sage-gp interface?\nWhat should we do with that ticket?\n\nPaul",
+    "body": "thank you John for your advice. After trying it, I figured out that with Sage 4.7.1 on my laptop\nin fact the example in the description actually works, but takes about 2.5 minutes, during which\ntop reports that the gp process takes 100% of the cpu time, while evaluating the command\n\n```\nans=bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852]);;\n```\nCan someone else confirm? Maybe a problem in the Sage-gp interface?\nWhat should we do with that ticket?\n\nPaul",
     "created_at": "2011-09-16T10:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -382,7 +377,6 @@ top reports that the gp process takes 100% of the cpu time, while evaluating the
 ```
 ans=bnfellrank(K, [-a + 2,3*a + 18,9*a + 209,175*a + 2581,-55*a + 852]);;
 ```
-
 Can someone else confirm? Maybe a problem in the Sage-gp interface?
 What should we do with that ticket?
 
@@ -573,7 +567,7 @@ archive/issue_events_022971.json:
 archive/issue_comments_087766.json:
 ```json
 {
-    "body": "After applying #11005 (upgrade Simon's script to the latest version), rather than running for a long time, this example now gives an error similar to #15483:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent()\nTraceback (most recent call last):\n...\nRuntimeError: \n  ***   at top-level: ans=bnfellrank(K,[-a+2,3\n  ***                     ^--------------------\n  ***   in function bnfellrank: ...eqtheta,rnfeq,bbnf];rang=\n  ***   bnfell2descent_gen(b\n  ***   ^--------------------\n  ***   in function bnfell2descent_gen: ...und,r=nfsqrt(nf,norm(zc))\n  ***   [1];if(DEBUGLEVEL_el\n  ***   ^--------------------\n  ***   array index (1) out of allowed range [none].\nAn error occurred while running Simon's 2-descent program\n```\n\nWith the fix I just made at #15483, it again gives the correct result, but after a long time.",
+    "body": "After applying #11005 (upgrade Simon's script to the latest version), rather than running for a long time, this example now gives an error similar to #15483:\n\n```\nsage: K.<w> = NumberField(x^2-x-232)\nsage: E = EllipticCurve([2-w,18+3*w,209+9*w,2581+175*w,852-55*w])\nsage: E.local_data()\n[]\nsage: E.simon_two_descent()\nTraceback (most recent call last):\n...\nRuntimeError: \n  ***   at top-level: ans=bnfellrank(K,[-a+2,3\n  ***                     ^--------------------\n  ***   in function bnfellrank: ...eqtheta,rnfeq,bbnf];rang=\n  ***   bnfell2descent_gen(b\n  ***   ^--------------------\n  ***   in function bnfell2descent_gen: ...und,r=nfsqrt(nf,norm(zc))\n  ***   [1];if(DEBUGLEVEL_el\n  ***   ^--------------------\n  ***   array index (1) out of allowed range [none].\nAn error occurred while running Simon's 2-descent program\n```\nWith the fix I just made at #15483, it again gives the correct result, but after a long time.",
     "created_at": "2014-02-11T20:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -604,7 +598,6 @@ RuntimeError:
   ***   array index (1) out of allowed range [none].
 An error occurred while running Simon's 2-descent program
 ```
-
 With the fix I just made at #15483, it again gives the correct result, but after a long time.
 
 
@@ -652,7 +645,7 @@ One exception to this: the parameter `limbigprime` should be set to 0, to avoid 
 archive/issue_comments_087769.json:
 ```json
 {
-    "body": "Replying to [comment:17 mmasdeu]:\n> So I would put the defaults to None, and then pass different defaults when the curve is over QQ or over a number field (according to DS's scripts).\n> \n> One exception to this: the parameter `limbigprime` should be set to 0, to avoid the use of probabilistic (and thus not provably true) prime testing.\nAgree with all of this.",
+    "body": "Replying to [comment:17 mmasdeu]:\n> So I would put the defaults to None, and then pass different defaults when the curve is over QQ or over a number field (according to DS's scripts).\n> \n> One exception to this: the parameter `limbigprime` should be set to 0, to avoid the use of probabilistic (and thus not provably true) prime testing.\n\nAgree with all of this.",
     "created_at": "2014-03-25T19:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -665,6 +658,7 @@ Replying to [comment:17 mmasdeu]:
 > So I would put the defaults to None, and then pass different defaults when the curve is over QQ or over a number field (according to DS's scripts).
 > 
 > One exception to this: the parameter `limbigprime` should be set to 0, to avoid the use of probabilistic (and thus not provably true) prime testing.
+
 Agree with all of this.
 
 
@@ -674,7 +668,7 @@ Agree with all of this.
 archive/issue_comments_087770.json:
 ```json
 {
-    "body": "I have implemented the above suggestions. However, it seems that the using limbigprime=0 raises errors (I found them when using gp directly) and so I have currently set it to 30 (DS's default).\n\nWhen simon_two_descent() is called with default arguments, the infinite-order points change (this is expected). I have checked that the answer is still correct (in particular, the rank bounds are the same), and changed the doctests (which affected four files in total).\n\nNow the doctests pass for everything in the schemes/elliptic_curves folder, but I haven't run all the others.\n----\nNew commits:",
+    "body": "I have implemented the above suggestions. However, it seems that the using limbigprime=0 raises errors (I found them when using gp directly) and so I have currently set it to 30 (DS's default).\n\nWhen simon_two_descent() is called with default arguments, the infinite-order points change (this is expected). I have checked that the answer is still correct (in particular, the rank bounds are the same), and changed the doctests (which affected four files in total).\n\nNow the doctests pass for everything in the schemes/elliptic_curves folder, but I haven't run all the others.\n\n---\nNew commits:",
     "created_at": "2014-03-26T13:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -688,7 +682,8 @@ I have implemented the above suggestions. However, it seems that the using limbi
 When simon_two_descent() is called with default arguments, the infinite-order points change (this is expected). I have checked that the answer is still correct (in particular, the rank bounds are the same), and changed the doctests (which affected four files in total).
 
 Now the doctests pass for everything in the schemes/elliptic_curves folder, but I haven't run all the others.
-----
+
+---
 New commits:
 
 
@@ -752,7 +747,7 @@ Merged with development branch.  There are some doctest failures, one of which s
 archive/issue_comments_087774.json:
 ```json
 {
-    "body": "The failing example is the new doctest from #16009 in `gp_simon.py`; it now returns `(0, 0, [])`.\n\n```\nsage: F.<a> = QuadraticField(29)\nsage: x = QQ['x'].gen()\nsage: K.<b> = F.extension(x^2-1/2*a+1/2)\nsage: E = EllipticCurve(K,[1, 0, 5/2*a + 27/2, 0, 0])\nsage: E.simon_two_descent(lim1=2, limtriv=3)\n(1, 1, [((-369/50*a - 1987/50)*b + 539/50*a + 2897/50 : (-27193/250*a - 146439/250)*b + 39683/250*a + 213709/250 : 1)])\n```\n\nThis is reproducible inside `gp` (2.5.x) with the current version of Simon's script (as included in Sage since #11005):\n\n```\nK = bnfinit(y^4 + y^2 - 7);\na = Mod(y, K.pol);\nE = [1, 0, 5*a^2 + 16, 0, 0];\nLIM1 = 2;\nLIMTRIV = 3;\nbnfellrank(K, E)\n```\n\nThis returns `[0, 0, []]`.",
+    "body": "The failing example is the new doctest from #16009 in `gp_simon.py`; it now returns `(0, 0, [])`.\n\n```\nsage: F.<a> = QuadraticField(29)\nsage: x = QQ['x'].gen()\nsage: K.<b> = F.extension(x^2-1/2*a+1/2)\nsage: E = EllipticCurve(K,[1, 0, 5/2*a + 27/2, 0, 0])\nsage: E.simon_two_descent(lim1=2, limtriv=3)\n(1, 1, [((-369/50*a - 1987/50)*b + 539/50*a + 2897/50 : (-27193/250*a - 146439/250)*b + 39683/250*a + 213709/250 : 1)])\n```\nThis is reproducible inside `gp` (2.5.x) with the current version of Simon's script (as included in Sage since #11005):\n\n```\nK = bnfinit(y^4 + y^2 - 7);\na = Mod(y, K.pol);\nE = [1, 0, 5*a^2 + 16, 0, 0];\nLIM1 = 2;\nLIMTRIV = 3;\nbnfellrank(K, E)\n```\nThis returns `[0, 0, []]`.",
     "created_at": "2014-03-26T14:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9322",
     "type": "issue_comment",
@@ -771,7 +766,6 @@ sage: E = EllipticCurve(K,[1, 0, 5/2*a + 27/2, 0, 0])
 sage: E.simon_two_descent(lim1=2, limtriv=3)
 (1, 1, [((-369/50*a - 1987/50)*b + 539/50*a + 2897/50 : (-27193/250*a - 146439/250)*b + 39683/250*a + 213709/250 : 1)])
 ```
-
 This is reproducible inside `gp` (2.5.x) with the current version of Simon's script (as included in Sage since #11005):
 
 ```
@@ -782,7 +776,6 @@ LIM1 = 2;
 LIMTRIV = 3;
 bnfellrank(K, E)
 ```
-
 This returns `[0, 0, []]`.
 
 

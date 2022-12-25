@@ -71,7 +71,7 @@ Michael
 archive/issue_comments_011008.json:
 ```json
 {
-    "body": "malb commented on the performance issue in IRC:\n\n```\n[16:46] <mabshoff> Did you run benchmarks? I.e. does it make a difference?\n[16:46] <malb> a LOT\n[16:46] <malb> from unfeasible to < 1s\n[16:46] <malb> the preparser is slow slow slow\n```\n",
+    "body": "malb commented on the performance issue in IRC:\n\n```\n[16:46] <mabshoff> Did you run benchmarks? I.e. does it make a difference?\n[16:46] <malb> a LOT\n[16:46] <malb> from unfeasible to < 1s\n[16:46] <malb> the preparser is slow slow slow\n```",
     "created_at": "2008-01-16T15:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1747",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ malb commented on the performance issue in IRC:
 [16:46] <malb> from unfeasible to < 1s
 [16:46] <malb> the preparser is slow slow slow
 ```
-
 
 
 

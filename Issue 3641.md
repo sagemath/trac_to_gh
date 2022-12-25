@@ -3,7 +3,7 @@
 archive/issues_003641.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: singular\n\n\n```\nTue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1\nChanges with respect to 3-0-4\n- dmod.lib: fixes wrt. nc_algebra and documentation\n- allow assignments like: def l=1,2,3;\n```\n\n\nThe new version also has a memleak we reported eliminated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3641\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: singular\n\n```\nTue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1\nChanges with respect to 3-0-4\n- dmod.lib: fixes wrt. nc_algebra and documentation\n- allow assignments like: def l=1,2,3;\n```\n\nThe new version also has a memleak we reported eliminated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3641\n\n",
     "created_at": "2008-07-11T15:30:33Z",
     "labels": [
         "component: packages: standard",
@@ -20,14 +20,12 @@ Assignee: mabshoff
 
 Keywords: singular
 
-
 ```
 Tue Nov 27 12:16:36 CET 2007 Singular-3-0-4-1
 Changes with respect to 3-0-4
 - dmod.lib: fixes wrt. nc_algebra and documentation
 - allow assignments like: def l=1,2,3;
 ```
-
 
 The new version also has a memleak we reported eliminated.
 
@@ -62,7 +60,7 @@ The new spkg is here:
 archive/issue_comments_025695.json:
 ```json
 {
-    "body": "Installs fine on my Debian/Linux 64-bit, Core2Duo\n\n\n```\nsage -tp 2 devel/sage/sage/rings\n...\nAll tests passed!\n```\n\n\nSorry, don't have time right now to run the whole test suite.",
+    "body": "Installs fine on my Debian/Linux 64-bit, Core2Duo\n\n```\nsage -tp 2 devel/sage/sage/rings\n...\nAll tests passed!\n```\n\nSorry, don't have time right now to run the whole test suite.",
     "created_at": "2008-07-11T15:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3641",
     "type": "issue_comment",
@@ -73,13 +71,11 @@ archive/issue_comments_025695.json:
 
 Installs fine on my Debian/Linux 64-bit, Core2Duo
 
-
 ```
 sage -tp 2 devel/sage/sage/rings
 ...
 All tests passed!
 ```
-
 
 Sorry, don't have time right now to run the whole test suite.
 

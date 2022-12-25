@@ -107,7 +107,7 @@ There may also be a problem with publishing worksheets.
 archive/issue_comments_067823.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> There may also be a problem with publishing worksheets.\nSee #7844, I think.",
+    "body": "Replying to [comment:2 mpatel]:\n> There may also be a problem with publishing worksheets.\n\nSee #7844, I think.",
     "created_at": "2010-01-05T02:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7843",
     "type": "issue_comment",
@@ -118,6 +118,7 @@ archive/issue_comments_067823.json:
 
 Replying to [comment:2 mpatel]:
 > There may also be a problem with publishing worksheets.
+
 See #7844, I think.
 
 

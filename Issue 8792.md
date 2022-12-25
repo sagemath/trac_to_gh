@@ -130,7 +130,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080388.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> If I'm not mistaken, this patch does not apply against the brand new 4.4.2 with #8796 ^^;\n\nCould you try again? Here is how I applied the relevant patches:\n\n\n```sh\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sandbox/sage-4.4.2-8792-booleval/devel/sage-main\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush \nadding trac_8796-propcalc-clean-ups.patch to series file\napplying trac_8796-propcalc-clean-ups.patch\nnow at: trac_8796-propcalc-clean-ups.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush \nadding trac_8792-booleval-clean-ups.patch to series file\napplying trac_8792-booleval-clean-ups.patch\nnow at: trac_8792-booleval-clean-ups.patch\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14323:a91966275ff3\ntag:         qtip\ntag:         trac_8792-booleval-clean-ups.patch\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun May 02 20:59:37 2010 -0700\nsummary:     #8792: clean up documentation of logic/booleval.py\n```\n",
+    "body": "Replying to [comment:3 ncohen]:\n> If I'm not mistaken, this patch does not apply against the brand new 4.4.2 with #8796 ^^;\n\n\nCould you try again? Here is how I applied the relevant patches:\n\n```sh\n[mvngu@sage sage-main]$ pwd\n/dev/shm/mvngu/sandbox/sage-4.4.2-8792-booleval/devel/sage-main\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush \nadding trac_8796-propcalc-clean-ups.patch to series file\napplying trac_8796-propcalc-clean-ups.patch\nnow at: trac_8796-propcalc-clean-ups.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush \nadding trac_8792-booleval-clean-ups.patch to series file\napplying trac_8792-booleval-clean-ups.patch\nnow at: trac_8792-booleval-clean-ups.patch\n[mvngu@sage sage-main]$ hg tip\nchangeset:   14323:a91966275ff3\ntag:         qtip\ntag:         trac_8792-booleval-clean-ups.patch\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun May 02 20:59:37 2010 -0700\nsummary:     #8792: clean up documentation of logic/booleval.py\n```",
     "created_at": "2010-05-20T08:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -142,8 +142,8 @@ archive/issue_comments_080388.json:
 Replying to [comment:3 ncohen]:
 > If I'm not mistaken, this patch does not apply against the brand new 4.4.2 with #8796 ^^;
 
-Could you try again? Here is how I applied the relevant patches:
 
+Could you try again? Here is how I applied the relevant patches:
 
 ```sh
 [mvngu@sage sage-main]$ pwd
@@ -175,13 +175,12 @@ summary:     #8792: clean up documentation of logic/booleval.py
 
 
 
-
 ---
 
 archive/issue_comments_080389.json:
 ```json
 {
-    "body": "Hmmmm... I'm really sorry but ... \n\n```\n~/.Sage/devel/sage-doc$ pwd\n/home/ncohen/.Sage/devel/sage-doc\n~/.Sage/devel/sage-doc$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n~/.Sage/devel/sage-doc$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush\nadding trac_8796-propcalc-clean-ups.patch to series file\napplying trac_8796-propcalc-clean-ups.patch\nnow at: trac_8796-propcalc-clean-ups.patch\n~/.Sage/devel/sage-doc$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush\nadding trac_8792-booleval-clean-ups.patch to series file\napplying trac_8792-booleval-clean-ups.patch\npatching file sage/logic/booleval.py\nHunk #6 FAILED at 111\n1 out of 6 hunks FAILED -- saving rejects to file sage/logic/booleval.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8792-booleval-clean-ups.patch\n~/.Sage/devel/sage-doc$ hg tip\nchangeset:   14323:fd8399a20ce0\ntag:         qtip\ntag:         trac_8792-booleval-clean-ups.patch\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun May 02 20:59:37 2010 -0700\nsummary:     #8792: clean up documentation of logic/booleval.py\n```\n\n\nis there anything I am doing wrong ? O_o",
+    "body": "Hmmmm... I'm really sorry but ... \n\n```\n~/.Sage/devel/sage-doc$ pwd\n/home/ncohen/.Sage/devel/sage-doc\n~/.Sage/devel/sage-doc$ hg tip\nchangeset:   14321:1451c00a8d44\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Wed May 19 00:55:29 2010 -0700\nsummary:     4.4.2\n\n~/.Sage/devel/sage-doc$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8796/trac_8796-propcalc-clean-ups.patch && hg qpush\nadding trac_8796-propcalc-clean-ups.patch to series file\napplying trac_8796-propcalc-clean-ups.patch\nnow at: trac_8796-propcalc-clean-ups.patch\n~/.Sage/devel/sage-doc$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch && hg qpush\nadding trac_8792-booleval-clean-ups.patch to series file\napplying trac_8792-booleval-clean-ups.patch\npatching file sage/logic/booleval.py\nHunk #6 FAILED at 111\n1 out of 6 hunks FAILED -- saving rejects to file sage/logic/booleval.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8792-booleval-clean-ups.patch\n~/.Sage/devel/sage-doc$ hg tip\nchangeset:   14323:fd8399a20ce0\ntag:         qtip\ntag:         trac_8792-booleval-clean-ups.patch\ntag:         tip\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun May 02 20:59:37 2010 -0700\nsummary:     #8792: clean up documentation of logic/booleval.py\n```\n\nis there anything I am doing wrong ? O_o",
     "created_at": "2010-05-20T18:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -225,7 +224,6 @@ date:        Sun May 02 20:59:37 2010 -0700
 summary:     #8792: clean up documentation of logic/booleval.py
 ```
 
-
 is there anything I am doing wrong ? O_o
 
 
@@ -255,7 +253,7 @@ Nathann
 archive/issue_comments_080391.json:
 ```json
 {
-    "body": "Replying to [comment:6 ncohen]:\n> The rejects are all the fixes (a==b) => a == b at the end of your patch O_o\n> \n> Nathann\n\n\nHi,\n\nI'm new to development and thought this patch looked like a good place to start. I got the same error message as Nathann. Is this patch still receiving attention?\n\nJohn",
+    "body": "Replying to [comment:6 ncohen]:\n> The rejects are all the fixes (a==b) => a == b at the end of your patch O_o\n> \n> Nathann\n\n\n\nHi,\n\nI'm new to development and thought this patch looked like a good place to start. I got the same error message as Nathann. Is this patch still receiving attention?\n\nJohn",
     "created_at": "2010-11-03T04:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -268,6 +266,7 @@ Replying to [comment:6 ncohen]:
 > The rejects are all the fixes (a==b) => a == b at the end of your patch O_o
 > 
 > Nathann
+
 
 
 Hi,
@@ -283,7 +282,7 @@ John
 archive/issue_comments_080392.json:
 ```json
 {
-    "body": "Replying to [comment:8 jthurber]:\n> I'm new to development and thought this patch looked like a good place to start. I got the same error message as Nathann. Is this patch still receiving attention?\n\nBy commenting on the ticket, it does. ;-)\n\nThough I personally currently have no time for it. Feel free to review it / upload a reviewer patch and we'll see...\n\nP.S.: If the current patch doesn't apply cleanly, the ticket's status should be set to \"needs work\" until the patch has been rebased.",
+    "body": "Replying to [comment:8 jthurber]:\n> I'm new to development and thought this patch looked like a good place to start. I got the same error message as Nathann. Is this patch still receiving attention?\n\n\nBy commenting on the ticket, it does. ;-)\n\nThough I personally currently have no time for it. Feel free to review it / upload a reviewer patch and we'll see...\n\nP.S.: If the current patch doesn't apply cleanly, the ticket's status should be set to \"needs work\" until the patch has been rebased.",
     "created_at": "2010-11-03T05:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -294,6 +293,7 @@ archive/issue_comments_080392.json:
 
 Replying to [comment:8 jthurber]:
 > I'm new to development and thought this patch looked like a good place to start. I got the same error message as Nathann. Is this patch still receiving attention?
+
 
 By commenting on the ticket, it does. ;-)
 
@@ -308,7 +308,7 @@ P.S.: If the current patch doesn't apply cleanly, the ticket's status should be 
 archive/issue_comments_080393.json:
 ```json
 {
-    "body": "\n```sh\n$ hg import -v ~/Sage/patches/trac_8792-booleval-clean-ups.patch \napplying /home/leif/Sage/patches/trac_8792-booleval-clean-ups.patch\npatching file doc/en/reference/logic.rst\npatching file sage/logic/booleval.py\ndoc/en/reference/logic.rst\nsage/logic/booleval.py\n```\n\n\n(This is with Sage 4.6. Documentation apparently builds ok, too, doctests pass.)",
+    "body": "```sh\n$ hg import -v ~/Sage/patches/trac_8792-booleval-clean-ups.patch \napplying /home/leif/Sage/patches/trac_8792-booleval-clean-ups.patch\npatching file doc/en/reference/logic.rst\npatching file sage/logic/booleval.py\ndoc/en/reference/logic.rst\nsage/logic/booleval.py\n```\n\n(This is with Sage 4.6. Documentation apparently builds ok, too, doctests pass.)",
     "created_at": "2010-11-03T05:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -316,7 +316,6 @@ archive/issue_comments_080393.json:
     "user": "https://github.com/nexttime"
 }
 ```
-
 
 ```sh
 $ hg import -v ~/Sage/patches/trac_8792-booleval-clean-ups.patch 
@@ -326,7 +325,6 @@ patching file sage/logic/booleval.py
 doc/en/reference/logic.rst
 sage/logic/booleval.py
 ```
-
 
 (This is with Sage 4.6. Documentation apparently builds ok, too, doctests pass.)
 
@@ -355,7 +353,7 @@ It also works for me with sage-4.6.
 archive/issue_comments_080395.json:
 ```json
 {
-    "body": "\n```\n07:26:25johnthurber~/sage/sage-4.6/devel/sage-test$ hg qimport ~/sage/patches/trac_8792-booleval-clean-ups-2.patch \nadding trac_8792-booleval-clean-ups-2.patch to series file\n07:34:56johnthurber~/sage/sage-4.6/devel/sage-test$ hg qpush\napplying trac_8792-booleval-clean-ups-2.patch\npatching file sage/logic/booleval.py\nHunk #6 FAILED at 111\n1 out of 6 hunks FAILED -- saving rejects to file sage/logic/booleval.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8792-booleval-clean-ups-2.patch\n```\n\n\nI wondered if it was my download technique, but I've tried it a couple of ways, including \n\n\n```\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch\n```\n\n\nso, unless someone has another suggestion, I will go ahead and suggest this needs to be rebased.",
+    "body": "```\n07:26:25johnthurber~/sage/sage-4.6/devel/sage-test$ hg qimport ~/sage/patches/trac_8792-booleval-clean-ups-2.patch \nadding trac_8792-booleval-clean-ups-2.patch to series file\n07:34:56johnthurber~/sage/sage-4.6/devel/sage-test$ hg qpush\napplying trac_8792-booleval-clean-ups-2.patch\npatching file sage/logic/booleval.py\nHunk #6 FAILED at 111\n1 out of 6 hunks FAILED -- saving rejects to file sage/logic/booleval.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8792-booleval-clean-ups-2.patch\n```\n\nI wondered if it was my download technique, but I've tried it a couple of ways, including \n\n```\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch\n```\n\nso, unless someone has another suggestion, I will go ahead and suggest this needs to be rebased.",
     "created_at": "2010-11-05T14:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -363,7 +361,6 @@ archive/issue_comments_080395.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/jthurber"
 }
 ```
-
 
 ```
 07:26:25johnthurber~/sage/sage-4.6/devel/sage-test$ hg qimport ~/sage/patches/trac_8792-booleval-clean-ups-2.patch 
@@ -378,14 +375,11 @@ patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_8792-booleval-clean-ups-2.patch
 ```
 
-
 I wondered if it was my download technique, but I've tried it a couple of ways, including 
-
 
 ```
 hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8792/trac_8792-booleval-clean-ups.patch
 ```
-
 
 so, unless someone has another suggestion, I will go ahead and suggest this needs to be rebased.
 
@@ -434,7 +428,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080398.json:
 ```json
 {
-    "body": "Positive review, though there was one test timeout failure which passed when isolated from --testall.\n\n--testall --long led to \n\n\n```\nsage -t  --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n```\n\n\nI isolated this test, it passed:\n\n\n```\n07:36:53johnthurber~/sage/sage-4.6$ sage -t  --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\nsage -t --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\n\t [276.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 276.0 seconds\n}}",
+    "body": "Positive review, though there was one test timeout failure which passed when isolated from --testall.\n\n--testall --long led to \n\n```\nsage -t  --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n```\n\nI isolated this test, it passed:\n\n```\n07:36:53johnthurber~/sage/sage-4.6$ sage -t  --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\nsage -t --long -force_lib \"devel/sage/sage/modular/ssmod/ssmod.py\"\n\t [276.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 276.0 seconds\n}}",
     "created_at": "2010-11-10T18:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8792",
     "type": "issue_comment",
@@ -447,15 +441,12 @@ Positive review, though there was one test timeout failure which passed when iso
 
 --testall --long led to 
 
-
 ```
 sage -t  --long -force_lib "devel/sage/sage/modular/ssmod/ssmod.py"
 *** *** Error: TIMED OUT! PROCESS KILLED! *** ***
 ```
 
-
 I isolated this test, it passed:
-
 
 ```
 07:36:53johnthurber~/sage/sage-4.6$ sage -t  --long -force_lib "devel/sage/sage/modular/ssmod/ssmod.py"

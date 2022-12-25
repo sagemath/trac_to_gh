@@ -333,7 +333,7 @@ I can try to help in the beginning. However, I've forgotten how to add a new dir
 archive/issue_comments_010797.json:
 ```json
 {
-    "body": "Replying to [comment:7 wdj]:\n> I can try to help in the beginning. However, I've forgotten how to add a new directory to the devel tree. Do you use hg_sage.add as well?\n\nTo the Sage repo? Just add it and add the new file to the repo. Somebody should add this to the development manual in case it isn't in there yet, i.e. \"How do I add my code to the tree in case it is all new\".\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:7 wdj]:\n> I can try to help in the beginning. However, I've forgotten how to add a new directory to the devel tree. Do you use hg_sage.add as well?\n\n\nTo the Sage repo? Just add it and add the new file to the repo. Somebody should add this to the development manual in case it isn't in there yet, i.e. \"How do I add my code to the tree in case it is all new\".\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T12:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
@@ -344,6 +344,7 @@ archive/issue_comments_010797.json:
 
 Replying to [comment:7 wdj]:
 > I can try to help in the beginning. However, I've forgotten how to add a new directory to the devel tree. Do you use hg_sage.add as well?
+
 
 To the Sage repo? Just add it and add the new file to the repo. Somebody should add this to the development manual in case it isn't in there yet, i.e. "How do I add my code to the tree in case it is all new".
 

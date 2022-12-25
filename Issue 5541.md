@@ -52,7 +52,7 @@ Make quaternion_algebra.py more prettier
 archive/issue_comments_043021.json:
 ```json
 {
-    "body": "Attachment [trac_5541-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5541/trac_5541-docstring-fixes.patch) by mvngu created at 2009-03-17 04:46:39\n\nThe patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n\nwhich I received after applying the patch for ticket #5531 and building the reference manual.",
+    "body": "Attachment [trac_5541-docstring-fixes.patch](tarball://root/attachments/some-uuid/ticket5541/trac_5541-docstring-fixes.patch) by mvngu created at 2009-03-17 04:46:39\n\nThe patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\n```\nwhich I received after applying the patch for ticket #5531 and building the reference manual.",
     "created_at": "2009-03-17T04:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ The patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatti
 ```
 WARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.
 ```
-
 which I received after applying the patch for ticket #5531 and building the reference manual.
 
 
@@ -134,7 +133,7 @@ Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/
 archive/issue_comments_043025.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> Looks good to me except for two very minor issues, which are taken care of in the referee's patch.\n\n\nYep, looks good to me. Thanks for pointing that out.",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Looks good to me except for two very minor issues, which are taken care of in the referee's patch.\n\n\n\nYep, looks good to me. Thanks for pointing that out.",
     "created_at": "2009-03-30T06:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -147,6 +146,7 @@ Replying to [comment:3 jhpalmieri]:
 > Looks good to me except for two very minor issues, which are taken care of in the referee's patch.
 
 
+
 Yep, looks good to me. Thanks for pointing that out.
 
 
@@ -156,7 +156,7 @@ Yep, looks good to me. Thanks for pointing that out.
 archive/issue_comments_043026.json:
 ```json
 {
-    "body": "This patch needs to be rebased due to #5520:\n\n```\nsage-3.4.1.rc0/devel/sage$ patch -p1 --dry-run < trac_5541-docstring-fixes.patch \npatching file sage/algebras/quatalg/quaternion_algebra.py\nHunk #1 FAILED at 58.\nHunk #2 succeeded at 101 (offset 6 lines).\nHunk #3 FAILED at 125.\nHunk #4 succeeded at 152 (offset 6 lines).\nHunk #5 succeeded at 183 (offset 6 lines).\nHunk #6 succeeded at 195 (offset 6 lines).\nHunk #7 FAILED at 203.\nHunk #8 succeeded at 228 (offset 6 lines).\nHunk #9 succeeded at 242 (offset 6 lines).\nHunk #10 succeeded at 255 (offset 6 lines).\nHunk #11 succeeded at 268 (offset 6 lines).\nHunk #12 succeeded at 296 (offset 6 lines).\nHunk #13 succeeded at 305 (offset 6 lines).\nHunk #14 succeeded at 326 (offset 6 lines).\nHunk #15 succeeded at 348 (offset 6 lines).\nHunk #16 succeeded at 366 (offset 6 lines).\nHunk #17 succeeded at 379 (offset 6 lines).\nHunk #18 succeeded at 397 (offset 6 lines).\nHunk #19 succeeded at 424 (offset 6 lines).\nHunk #20 succeeded at 436 (offset 6 lines).\nHunk #21 succeeded at 454 (offset 6 lines).\nHunk #22 succeeded at 463 (offset 6 lines).\nHunk #23 succeeded at 476 (offset 6 lines).\nHunk #24 succeeded at 486 (offset 5 lines).\nHunk #25 succeeded at 518 (offset 5 lines).\nHunk #26 succeeded at 569 (offset 25 lines).\nHunk #27 succeeded at 606 (offset 43 lines).\nHunk #28 succeeded at 623 (offset 43 lines).\nHunk #29 succeeded at 640 with fuzz 1 (offset 43 lines).\nHunk #30 succeeded at 657 (offset 43 lines).\nHunk #31 succeeded at 683 (offset 43 lines).\nHunk #32 succeeded at 694 (offset 43 lines).\nHunk #33 FAILED at 742.\n4 out of 33 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra.py.rej\n```\n\nNote that the file has moved from sage/algebras to sage/algebras/quatalg\n\nCheers,\n\nMichael",
+    "body": "This patch needs to be rebased due to #5520:\n\n```\nsage-3.4.1.rc0/devel/sage$ patch -p1 --dry-run < trac_5541-docstring-fixes.patch \npatching file sage/algebras/quatalg/quaternion_algebra.py\nHunk #1 FAILED at 58.\nHunk #2 succeeded at 101 (offset 6 lines).\nHunk #3 FAILED at 125.\nHunk #4 succeeded at 152 (offset 6 lines).\nHunk #5 succeeded at 183 (offset 6 lines).\nHunk #6 succeeded at 195 (offset 6 lines).\nHunk #7 FAILED at 203.\nHunk #8 succeeded at 228 (offset 6 lines).\nHunk #9 succeeded at 242 (offset 6 lines).\nHunk #10 succeeded at 255 (offset 6 lines).\nHunk #11 succeeded at 268 (offset 6 lines).\nHunk #12 succeeded at 296 (offset 6 lines).\nHunk #13 succeeded at 305 (offset 6 lines).\nHunk #14 succeeded at 326 (offset 6 lines).\nHunk #15 succeeded at 348 (offset 6 lines).\nHunk #16 succeeded at 366 (offset 6 lines).\nHunk #17 succeeded at 379 (offset 6 lines).\nHunk #18 succeeded at 397 (offset 6 lines).\nHunk #19 succeeded at 424 (offset 6 lines).\nHunk #20 succeeded at 436 (offset 6 lines).\nHunk #21 succeeded at 454 (offset 6 lines).\nHunk #22 succeeded at 463 (offset 6 lines).\nHunk #23 succeeded at 476 (offset 6 lines).\nHunk #24 succeeded at 486 (offset 5 lines).\nHunk #25 succeeded at 518 (offset 5 lines).\nHunk #26 succeeded at 569 (offset 25 lines).\nHunk #27 succeeded at 606 (offset 43 lines).\nHunk #28 succeeded at 623 (offset 43 lines).\nHunk #29 succeeded at 640 with fuzz 1 (offset 43 lines).\nHunk #30 succeeded at 657 (offset 43 lines).\nHunk #31 succeeded at 683 (offset 43 lines).\nHunk #32 succeeded at 694 (offset 43 lines).\nHunk #33 FAILED at 742.\n4 out of 33 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra.py.rej\n```\nNote that the file has moved from sage/algebras to sage/algebras/quatalg\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T07:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -205,7 +205,6 @@ Hunk #32 succeeded at 694 (offset 43 lines).
 Hunk #33 FAILED at 742.
 4 out of 33 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra.py.rej
 ```
-
 Note that the file has moved from sage/algebras to sage/algebras/quatalg
 
 Cheers,
@@ -293,7 +292,7 @@ mvngu: the first half of my patch is just a rebased version of yours, and it alr
 archive/issue_comments_043031.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.\n\n\njhpalmieri: I've read through the rebased patch. But I also want to (re)build at least the HTML version of the reference to make sure that the rebased patch fixes the problems it claims to fix. I'll give this patch a formal review sometime today.",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.\n\n\n\njhpalmieri: I've read through the rebased patch. But I also want to (re)build at least the HTML version of the reference to make sure that the rebased patch fixes the problems it claims to fix. I'll give this patch a formal review sometime today.",
     "created_at": "2009-04-05T23:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -306,6 +305,7 @@ Replying to [comment:8 jhpalmieri]:
 > mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.
 
 
+
 jhpalmieri: I've read through the rebased patch. But I also want to (re)build at least the HTML version of the reference to make sure that the rebased patch fixes the problems it claims to fix. I'll give this patch a formal review sometime today.
 
 
@@ -315,7 +315,7 @@ jhpalmieri: I've read through the rebased patch. But I also want to (re)build at
 archive/issue_comments_043032.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n\n\nThe following lines result in something weird when viewing the HTML version of the reference manual:\n\n```\n486\tclass QuaternionAlgebra_ab(QuaternionAlgebra_abstract): \n487\t    \"\"\" \n488\t    The quaternion algebra of the form `(a, b/K)`, where `i^2=a`, `j^2 = b`, \n489\t    and `j*i = -i*j`.  ``K`` is a field not of characteristic 2 and ``a``, \n490\t    ``b`` are nonzero elements of ``K``. \n491\t \n492\t    EXAMPLES:: \n493\t \n494\t    \"\"\" \n495\t    def __init__(self, base_ring, a, b, names='i,j,k'):\n```\n\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab) I've generated after applying the rebased patch. I think the problem is that there's a \"EXAMPLES::\" tag, which is not followed by any examples at all. Now by alphabetic order, the method `sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab.QuaternionAlgebra_ab.discriminant()` is thus formatted in a weird way as\n\n```\n.. method:: QuaternionAlgebra_ab.discriminant()\n```\n\nin the HTML version.\n\n\n\nHow about some documentation for \n\n```\n627\t    def gen(self, i=0):\n```\n\nto explain what it does. At the moment, there are examples, but no explanation of what this method is supposed to do.\n\n\n\nI think the maths expression in the following lines are typeset in a weird way:\n\n```\n1069\t    def discriminant(self): \n1070\t        r\"\"\" \n1071\t        Return the discriminant of this order, which we define as \n1046\t \t        $\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )$, where $\\{e_i\\}$ is the \n1072\t        `\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )`, where `\\{e_i\\}` is the \n1073\n```\n\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.discriminant) of the reference manual for a visual.\n\n\n\nThe maths expression in these lines\n\n```\n1481\t        The normalized theta series is by definition \n1442\t1482\t \n1443\t1483\t        .. math: \n1444\t1484\t \n1445\t \t        \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}} \n1446\t \t         \n \t1485\t            \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}}\n```\n\ndoesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionFractionalIdeal_rational.theta_series).",
+    "body": "REFEREE REPORT:\n\n\n\nThe following lines result in something weird when viewing the HTML version of the reference manual:\n\n```\n486\tclass QuaternionAlgebra_ab(QuaternionAlgebra_abstract): \n487\t    \"\"\" \n488\t    The quaternion algebra of the form `(a, b/K)`, where `i^2=a`, `j^2 = b`, \n489\t    and `j*i = -i*j`.  ``K`` is a field not of characteristic 2 and ``a``, \n490\t    ``b`` are nonzero elements of ``K``. \n491\t \n492\t    EXAMPLES:: \n493\t \n494\t    \"\"\" \n495\t    def __init__(self, base_ring, a, b, names='i,j,k'):\n```\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab) I've generated after applying the rebased patch. I think the problem is that there's a \"EXAMPLES::\" tag, which is not followed by any examples at all. Now by alphabetic order, the method `sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab.QuaternionAlgebra_ab.discriminant()` is thus formatted in a weird way as\n\n```\n.. method:: QuaternionAlgebra_ab.discriminant()\n```\nin the HTML version.\n\n\n\nHow about some documentation for \n\n```\n627\t    def gen(self, i=0):\n```\nto explain what it does. At the moment, there are examples, but no explanation of what this method is supposed to do.\n\n\n\nI think the maths expression in the following lines are typeset in a weird way:\n\n```\n1069\t    def discriminant(self): \n1070\t        r\"\"\" \n1071\t        Return the discriminant of this order, which we define as \n1046\t \t        $\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )$, where $\\{e_i\\}$ is the \n1072\t        `\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )`, where `\\{e_i\\}` is the \n1073\n```\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.discriminant) of the reference manual for a visual.\n\n\n\nThe maths expression in these lines\n\n```\n1481\t        The normalized theta series is by definition \n1442\t1482\t \n1443\t1483\t        .. math: \n1444\t1484\t \n1445\t \t        \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}} \n1446\t \t         \n \t1485\t            \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}}\n```\ndoesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionFractionalIdeal_rational.theta_series).",
     "created_at": "2009-04-17T02:18:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
@@ -342,13 +342,11 @@ The following lines result in something weird when viewing the HTML version of t
 494	    """ 
 495	    def __init__(self, base_ring, a, b, names='i,j,k'):
 ```
-
 See the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab) I've generated after applying the rebased patch. I think the problem is that there's a "EXAMPLES::" tag, which is not followed by any examples at all. Now by alphabetic order, the method `sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab.QuaternionAlgebra_ab.discriminant()` is thus formatted in a weird way as
 
 ```
 .. method:: QuaternionAlgebra_ab.discriminant()
 ```
-
 in the HTML version.
 
 
@@ -358,7 +356,6 @@ How about some documentation for
 ```
 627	    def gen(self, i=0):
 ```
-
 to explain what it does. At the moment, there are examples, but no explanation of what this method is supposed to do.
 
 
@@ -373,7 +370,6 @@ I think the maths expression in the following lines are typeset in a weird way:
 1072	        `\sqrt( det ( Tr(e_i \bar(e_j) ) ) )`, where `\{e_i\}` is the 
 1073
 ```
-
 See the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.discriminant) of the reference manual for a visual.
 
 
@@ -389,7 +385,6 @@ The maths expression in these lines
 1446	 	         
  	1485	            \theta_I(q)=\sum_{x \in I} q^{\frac{N(x)}{N(I)}}
 ```
-
 doesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionFractionalIdeal_rational.theta_series).
 
 

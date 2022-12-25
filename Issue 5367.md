@@ -3,7 +3,7 @@
 archive/issues_005367.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: power series composition\n\nThe following returns an incorrect answer:\n\n\n```\nsage: S.<z> = QQ[[]]\nsage: p = 1 + O(z)\nsage: q = 1 + z\nsage: p(q)          # should return O(z^0)\n1\n```\n\n\nThis was reported via \"report a problem\" from the notebook.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5367\n\n",
+    "body": "Assignee: tbd\n\nKeywords: power series composition\n\nThe following returns an incorrect answer:\n\n```\nsage: S.<z> = QQ[[]]\nsage: p = 1 + O(z)\nsage: q = 1 + z\nsage: p(q)          # should return O(z^0)\n1\n```\n\nThis was reported via \"report a problem\" from the notebook.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5367\n\n",
     "created_at": "2009-02-25T01:26:30Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ Keywords: power series composition
 
 The following returns an incorrect answer:
 
-
 ```
 sage: S.<z> = QQ[[]]
 sage: p = 1 + O(z)
@@ -30,7 +29,6 @@ sage: q = 1 + z
 sage: p(q)          # should return O(z^0)
 1
 ```
-
 
 This was reported via "report a problem" from the notebook.
 
@@ -64,7 +62,7 @@ As pointed out by Ralf Hemmecke on sage-devel, the correct behaviour is not to r
 archive/issue_comments_041259.json:
 ```json
 {
-    "body": "I just came across this, which is presumably related:\n\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1 + 24*x^11 + 24*x^22 + O(x^33)\nsage: f(x^2)\n1 + 24*x^22 + 24*x^44 + O(x^86)\n```\n\n\nThe answer should clearly be 1 + 24*x^22 + 24*x^44 + O(x^66). (This is causing some headaches in trying to sort out degeneracy maps for modular forms.)",
+    "body": "I just came across this, which is presumably related:\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1 + 24*x^11 + 24*x^22 + O(x^33)\nsage: f(x^2)\n1 + 24*x^22 + 24*x^44 + O(x^86)\n```\n\nThe answer should clearly be 1 + 24*x^22 + 24*x^44 + O(x^66). (This is causing some headaches in trying to sort out degeneracy maps for modular forms.)",
     "created_at": "2009-04-30T11:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
@@ -75,14 +73,12 @@ archive/issue_comments_041259.json:
 
 I just came across this, which is presumably related:
 
-
 ```
 sage: R.<x> = QQ[[]]
 sage: f = 1 + 24*x^11 + 24*x^22 + O(x^33)
 sage: f(x^2)
 1 + 24*x^22 + 24*x^44 + O(x^86)
 ```
-
 
 The answer should clearly be 1 + 24*x^22 + 24*x^44 + O(x^66). (This is causing some headaches in trying to sort out degeneracy maps for modular forms.)
 
@@ -129,7 +125,7 @@ Since this is a duplicate of #3979, I think this ticket should be closed.
 archive/issue_comments_041262.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> See also #3979.\n\nWhich now has a patch.",
+    "body": "Replying to [comment:3 robertwb]:\n> See also #3979.\n\n\nWhich now has a patch.",
     "created_at": "2011-07-18T12:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
@@ -140,6 +136,7 @@ archive/issue_comments_041262.json:
 
 Replying to [comment:3 robertwb]:
 > See also #3979.
+
 
 Which now has a patch.
 

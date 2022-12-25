@@ -75,7 +75,7 @@ archive/issue_events_014921.json:
 archive/issue_comments_050606.json:
 ```json
 {
-    "body": "Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by @burcin created at 2009-06-24 21:49:13\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```\n",
+    "body": "Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by @burcin created at 2009-06-24 21:49:13\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```",
     "created_at": "2009-06-24T21:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -90,7 +90,6 @@ attachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA 
 
 It doesn't look good in text only mode:
 
-
 ```
 sage: f = function('f')
 sage: f(x).derivative(x,3)
@@ -99,13 +98,12 @@ f^{(3)}(x)
 
 
 
-
 ---
 
 archive/issue_comments_050607.json:
 ```json
 {
-    "body": "I uploaded a new patch at attachment:trac_6344-symbolic_derivative_print.patch.\n\nThe new patch keeps the text mode printing similar to the old one, but changes the printed parameters to indicate how many times each argument is differentiated. E.g., old output:\n\n\n```\nsage: var('x,y')\nsage: f = function('f')\nsage: f(x).derivative(x)\nD[0](f)(x)\nsage: f(x,x).derivative(x,2)\nD[0, 0](f)(x, x) + 2*D[0, 1](f)(x, x) + D[1, 1](f)(x, x)\n```\n\n\nNew output:\n\n\n```\nsage: f(x).derivative(x)\nD[1](f)(x)\nsage: f(x,x).derivative(x,2)\nD[2, 0](f)(x, x) + 2*D[1, 1](f)(x, x) + D[0, 2](f)(x, x)\n```\n\n\nNew latex output:\n\n\n```\nsage: latex(f(x).derivative(x))\nf'\\left(x\\right)\nsage: latex(f(x,x).derivative(x,2))\nf^{(2,0)}\\left(x, x\\right) + 2 \\, f^{(1,1)}\\left(x, x\\right) + f^{(0,2)}\\left(x, x\\right)\n```\n\n\nIt would be better to add more documentation to explain the output, provide conversions to \"textbook style\" and fix other problems that pop up when printing derivatives:\n\n\n```\nsage: binomial(x,y).derivative(x)\n<boom>\nsage: latex(floor(x).derivative(x))\nD[0]\\left \\lfloor x \\right \\rfloor\nsage: latex(ceil(x).derivative(x))\nD[0]\\left \\lceil x \\right \\rceil\n```\n\n\nHowever, I think we should settle on an output style ASAP, without letting too many releases go by.\n\nJason, Minh, can one (or both) of you review this?",
+    "body": "I uploaded a new patch at attachment:trac_6344-symbolic_derivative_print.patch.\n\nThe new patch keeps the text mode printing similar to the old one, but changes the printed parameters to indicate how many times each argument is differentiated. E.g., old output:\n\n```\nsage: var('x,y')\nsage: f = function('f')\nsage: f(x).derivative(x)\nD[0](f)(x)\nsage: f(x,x).derivative(x,2)\nD[0, 0](f)(x, x) + 2*D[0, 1](f)(x, x) + D[1, 1](f)(x, x)\n```\n\nNew output:\n\n```\nsage: f(x).derivative(x)\nD[1](f)(x)\nsage: f(x,x).derivative(x,2)\nD[2, 0](f)(x, x) + 2*D[1, 1](f)(x, x) + D[0, 2](f)(x, x)\n```\n\nNew latex output:\n\n```\nsage: latex(f(x).derivative(x))\nf'\\left(x\\right)\nsage: latex(f(x,x).derivative(x,2))\nf^{(2,0)}\\left(x, x\\right) + 2 \\, f^{(1,1)}\\left(x, x\\right) + f^{(0,2)}\\left(x, x\\right)\n```\n\nIt would be better to add more documentation to explain the output, provide conversions to \"textbook style\" and fix other problems that pop up when printing derivatives:\n\n```\nsage: binomial(x,y).derivative(x)\n<boom>\nsage: latex(floor(x).derivative(x))\nD[0]\\left \\lfloor x \\right \\rfloor\nsage: latex(ceil(x).derivative(x))\nD[0]\\left \\lceil x \\right \\rceil\n```\n\nHowever, I think we should settle on an output style ASAP, without letting too many releases go by.\n\nJason, Minh, can one (or both) of you review this?",
     "created_at": "2009-07-14T21:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -118,7 +116,6 @@ I uploaded a new patch at attachment:trac_6344-symbolic_derivative_print.patch.
 
 The new patch keeps the text mode printing similar to the old one, but changes the printed parameters to indicate how many times each argument is differentiated. E.g., old output:
 
-
 ```
 sage: var('x,y')
 sage: f = function('f')
@@ -128,9 +125,7 @@ sage: f(x,x).derivative(x,2)
 D[0, 0](f)(x, x) + 2*D[0, 1](f)(x, x) + D[1, 1](f)(x, x)
 ```
 
-
 New output:
-
 
 ```
 sage: f(x).derivative(x)
@@ -139,9 +134,7 @@ sage: f(x,x).derivative(x,2)
 D[2, 0](f)(x, x) + 2*D[1, 1](f)(x, x) + D[0, 2](f)(x, x)
 ```
 
-
 New latex output:
-
 
 ```
 sage: latex(f(x).derivative(x))
@@ -150,9 +143,7 @@ sage: latex(f(x,x).derivative(x,2))
 f^{(2,0)}\left(x, x\right) + 2 \, f^{(1,1)}\left(x, x\right) + f^{(0,2)}\left(x, x\right)
 ```
 
-
 It would be better to add more documentation to explain the output, provide conversions to "textbook style" and fix other problems that pop up when printing derivatives:
-
 
 ```
 sage: binomial(x,y).derivative(x)
@@ -162,7 +153,6 @@ D[0]\left \lfloor x \right \rfloor
 sage: latex(ceil(x).derivative(x))
 D[0]\left \lceil x \right \rceil
 ```
-
 
 However, I think we should settle on an output style ASAP, without letting too many releases go by.
 
@@ -421,7 +411,7 @@ archive/issue_events_014929.json:
 archive/issue_comments_050614.json:
 ```json
 {
-    "body": "I tried to apply the most recent patch, but did not succeed. It is just too old and when looking at the diff I couldn't make any sense of it. I tried to implement differential notation myself, but got stuck, perhaps someone can help?\n\nAll I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:\n\n\n\n```\ndef _latex_(self):\n        \"\"\"\n            Return the LaTeX representation of X.\n\n            EXAMPLES::\n\n            sage: from sage.symbolic.operators import FDerivativeOperator\n            sage: var('x z')\n            sage: f = function('f', x, z)\n            sage: op = FDerivativeOperator(f, [0,1]); latex(op)\n            \\frac{\\partial \\frac{\\partial f }{\\partial x } }{\\partial z }\n        \"\"\"\n        fname = self._f.operator()\n        vars = self._f.operands()\n        difvars = self._parameter_set\n        str1 = str(fname)\n        for difvar in difvars:\n            str1 = '\\\\frac{\\partial '+str1+'}{\\partial '+str(vars[difvar])+'}'\n        return str1\n```\n\nUnfortunately, this does not have any effect on the latex representation of f.diff:\n\n\n```\nsage: f = function('f', x, z)\nsage: g = diff(f, x,z)\nsage: latex(g)\nD[0, 1]\\left(f\\right)\\left(x, z\\right)\n```\n\n\nDoes anyone have an idea what else I need to modify? Thanks in advance!",
+    "body": "I tried to apply the most recent patch, but did not succeed. It is just too old and when looking at the diff I couldn't make any sense of it. I tried to implement differential notation myself, but got stuck, perhaps someone can help?\n\nAll I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:\n\n\n```\ndef _latex_(self):\n        \"\"\"\n            Return the LaTeX representation of X.\n\n            EXAMPLES::\n\n            sage: from sage.symbolic.operators import FDerivativeOperator\n            sage: var('x z')\n            sage: f = function('f', x, z)\n            sage: op = FDerivativeOperator(f, [0,1]); latex(op)\n            \\frac{\\partial \\frac{\\partial f }{\\partial x } }{\\partial z }\n        \"\"\"\n        fname = self._f.operator()\n        vars = self._f.operands()\n        difvars = self._parameter_set\n        str1 = str(fname)\n        for difvar in difvars:\n            str1 = '\\\\frac{\\partial '+str1+'}{\\partial '+str(vars[difvar])+'}'\n        return str1\n```\nUnfortunately, this does not have any effect on the latex representation of f.diff:\n\n```\nsage: f = function('f', x, z)\nsage: g = diff(f, x,z)\nsage: latex(g)\nD[0, 1]\\left(f\\right)\\left(x, z\\right)\n```\n\nDoes anyone have an idea what else I need to modify? Thanks in advance!",
     "created_at": "2014-12-03T21:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -433,7 +423,6 @@ archive/issue_comments_050614.json:
 I tried to apply the most recent patch, but did not succeed. It is just too old and when looking at the diff I couldn't make any sense of it. I tried to implement differential notation myself, but got stuck, perhaps someone can help?
 
 All I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:
-
 
 
 ```
@@ -457,9 +446,7 @@ def _latex_(self):
             str1 = '\\frac{\partial '+str1+'}{\partial '+str(vars[difvar])+'}'
         return str1
 ```
-
 Unfortunately, this does not have any effect on the latex representation of f.diff:
-
 
 ```
 sage: f = function('f', x, z)
@@ -467,7 +454,6 @@ sage: g = diff(f, x,z)
 sage: latex(g)
 D[0, 1]\left(f\right)\left(x, z\right)
 ```
-
 
 Does anyone have an idea what else I need to modify? Thanks in advance!
 
@@ -478,7 +464,7 @@ Does anyone have an idea what else I need to modify? Thanks in advance!
 archive/issue_comments_050615.json:
 ```json
 {
-    "body": "Replying to [comment:13 schymans]:\n> All I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:\n\nLooks like the wrong place to hook into this. For symbolic expressions. `self._latex_` invokes `SR._latex_element_` which calls straight into Pynac via ` GEx_to_str_latex(&x._gobj)`. Your experiment shows that this doesn't dispatch to `_latex_` methods on operators. Perhaps there's another hook?\n\nIncidentally, your code wouldn't work, because that's not how FDerivateOperators occur in code:\n\n\n```\nsage: var(\"x,y\")\n(x, y)\nsage: function('f',x,y)\nf(x, y)\nsage: g=diff(f(x,y),x,y)\nsage: g\nD[0, 1](f)(x, y)\nsage: g.operator()\nD[0, 1](f)\nsage: type(g.operator())\n<class 'sage.symbolic.operators.FDerivativeOperator'>\nsage: g.operator()._f\nf\n```\n\nAs you can see, there are no variable names to refer to. That's why this ticket has stalled: if you want to do this, you need to recognize on the level of `g` that the operator is an `FDerivativeOperator` and hence that, if the operands of `g` are distinct, simple symbolic variables, that the derivative could be written in Leibnitz notation.\n\nClearly, people haven't found the effort required worth the payoff.",
+    "body": "Replying to [comment:13 schymans]:\n> All I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:\n\n\nLooks like the wrong place to hook into this. For symbolic expressions. `self._latex_` invokes `SR._latex_element_` which calls straight into Pynac via ` GEx_to_str_latex(&x._gobj)`. Your experiment shows that this doesn't dispatch to `_latex_` methods on operators. Perhaps there's another hook?\n\nIncidentally, your code wouldn't work, because that's not how FDerivateOperators occur in code:\n\n```\nsage: var(\"x,y\")\n(x, y)\nsage: function('f',x,y)\nf(x, y)\nsage: g=diff(f(x,y),x,y)\nsage: g\nD[0, 1](f)(x, y)\nsage: g.operator()\nD[0, 1](f)\nsage: type(g.operator())\n<class 'sage.symbolic.operators.FDerivativeOperator'>\nsage: g.operator()._f\nf\n```\nAs you can see, there are no variable names to refer to. That's why this ticket has stalled: if you want to do this, you need to recognize on the level of `g` that the operator is an `FDerivativeOperator` and hence that, if the operands of `g` are distinct, simple symbolic variables, that the derivative could be written in Leibnitz notation.\n\nClearly, people haven't found the effort required worth the payoff.",
     "created_at": "2014-12-03T22:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -490,10 +476,10 @@ archive/issue_comments_050615.json:
 Replying to [comment:13 schymans]:
 > All I wanted to do is to change the _latex_ representation of the FDerivativeOperator and added the following lines to src/sage/symbolic/operators.py:
 
+
 Looks like the wrong place to hook into this. For symbolic expressions. `self._latex_` invokes `SR._latex_element_` which calls straight into Pynac via ` GEx_to_str_latex(&x._gobj)`. Your experiment shows that this doesn't dispatch to `_latex_` methods on operators. Perhaps there's another hook?
 
 Incidentally, your code wouldn't work, because that's not how FDerivateOperators occur in code:
-
 
 ```
 sage: var("x,y")
@@ -510,7 +496,6 @@ sage: type(g.operator())
 sage: g.operator()._f
 f
 ```
-
 As you can see, there are no variable names to refer to. That's why this ticket has stalled: if you want to do this, you need to recognize on the level of `g` that the operator is an `FDerivativeOperator` and hence that, if the operands of `g` are distinct, simple symbolic variables, that the derivative could be written in Leibnitz notation.
 
 Clearly, people haven't found the effort required worth the payoff.
@@ -542,7 +527,7 @@ Wouldn't it be possible to write some parsing code to convert something like D[0
 archive/issue_comments_050617.json:
 ```json
 {
-    "body": "Replying to [comment:16 schymans]:\n> Wouldn't it be possible to write some parsing code to convert something like D[0,1](f)(x,y) to any kind of notation? It should even be possible to convert it back to diff(f(x,y),x,y), as requested here: http://comments.gmane.org/gmane.comp.mathematics.sage.devel/58040\n\nIt's really much easier to do on the expression tree than on a string. We do it for conversions already. See e.g. [https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564](https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564). The approach is straightforward. The hard work is that you need to reach into Pynac to make the change. So it takes someone conversant with Pynac who cares enough to do it. Doing it on strings afterwards is going to be horrible.\n\nIncidentally, watch out that an expression like\n\n```\nD[0,1](f)(x,x+1)\n```\n\nis almost impossible to write in Leibnitz notation unless you introduce auxiliary variables (which is what happens in the maxima_lib code). So you should probably just stick with operator notation for those cases (maple does).",
+    "body": "Replying to [comment:16 schymans]:\n> Wouldn't it be possible to write some parsing code to convert something like D[0,1](f)(x,y) to any kind of notation? It should even be possible to convert it back to diff(f(x,y),x,y), as requested here: http://comments.gmane.org/gmane.comp.mathematics.sage.devel/58040\n\n\nIt's really much easier to do on the expression tree than on a string. We do it for conversions already. See e.g. [https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564](https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564). The approach is straightforward. The hard work is that you need to reach into Pynac to make the change. So it takes someone conversant with Pynac who cares enough to do it. Doing it on strings afterwards is going to be horrible.\n\nIncidentally, watch out that an expression like\n\n```\nD[0,1](f)(x,x+1)\n```\nis almost impossible to write in Leibnitz notation unless you introduce auxiliary variables (which is what happens in the maxima_lib code). So you should probably just stick with operator notation for those cases (maple does).",
     "created_at": "2014-12-04T01:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -554,6 +539,7 @@ archive/issue_comments_050617.json:
 Replying to [comment:16 schymans]:
 > Wouldn't it be possible to write some parsing code to convert something like D[0,1](f)(x,y) to any kind of notation? It should even be possible to convert it back to diff(f(x,y),x,y), as requested here: http://comments.gmane.org/gmane.comp.mathematics.sage.devel/58040
 
+
 It's really much easier to do on the expression tree than on a string. We do it for conversions already. See e.g. [https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564](https://github.com/sagemath/sage/blob/master/src/sage/interfaces/maxima_lib.py#L1564). The approach is straightforward. The hard work is that you need to reach into Pynac to make the change. So it takes someone conversant with Pynac who cares enough to do it. Doing it on strings afterwards is going to be horrible.
 
 Incidentally, watch out that an expression like
@@ -561,7 +547,6 @@ Incidentally, watch out that an expression like
 ```
 D[0,1](f)(x,x+1)
 ```
-
 is almost impossible to write in Leibnitz notation unless you introduce auxiliary variables (which is what happens in the maxima_lib code). So you should probably just stick with operator notation for those cases (maple does).
 
 
@@ -591,7 +576,7 @@ By the way, it took me a quite some time of digging in the code to understand th
 archive/issue_comments_050619.json:
 ```json
 {
-    "body": "> By the way, it took me a quite some time of digging in the code to understand the meaning of e.g. D[0,1](f)(x,z). Now that I have understood it, I see its use. I was expecting a description in the documentation of the diff() or differential() command, but I didn't find it there. Where is the right place to look?\n\nIf anyone should know, I should, but I don't.  It would be *wonderful* to have some better documentation of that where it belongs - want to take a stab?  If so, open a ticket and cc: me.",
+    "body": "> By the way, it took me a quite some time of digging in the code to understand the meaning of e.g. D[0,1](f)(x,z). Now that I have understood it, I see its use. I was expecting a description in the documentation of the diff() or differential() command, but I didn't find it there. Where is the right place to look?\n\n\nIf anyone should know, I should, but I don't.  It would be *wonderful* to have some better documentation of that where it belongs - want to take a stab?  If so, open a ticket and cc: me.",
     "created_at": "2014-12-04T14:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -601,6 +586,7 @@ archive/issue_comments_050619.json:
 ```
 
 > By the way, it took me a quite some time of digging in the code to understand the meaning of e.g. D[0,1](f)(x,z). Now that I have understood it, I see its use. I was expecting a description in the documentation of the diff() or differential() command, but I didn't find it there. Where is the right place to look?
+
 
 If anyone should know, I should, but I don't.  It would be *wonderful* to have some better documentation of that where it belongs - want to take a stab?  If so, open a ticket and cc: me.
 
@@ -630,7 +616,7 @@ There, I mentioned some other, related tickets, which made me realise that I do 
 archive/issue_comments_050621.json:
 ```json
 {
-    "body": "Wow, after reading the threads in question I see that at this point Sage has existed about as long with this new format as it did with the previous one.  I'm reluctant to make this wontfix, at least the *option* as indicated there\n\n```\npsi(x) = function('psi',x)\ng = diff(psi(x),x)\nlatex(g)\n\\frac{d \\psi\\left(x\\right)}{d x}\n\n# Switch to D format\nsage.symbolic.pynac.typeset_d_as_diff=False\n\nlatex(g)\nD[0]\\psi\\left(x\\right)\n```\n\nshould exist, except of course the other way around for the default nowadays, I guess.  Maybe that piece of attachment:enhanced-symbolic-typesetting-rebased_to_4.0.1.patch:ticket:5711 should be implemented here instead?",
+    "body": "Wow, after reading the threads in question I see that at this point Sage has existed about as long with this new format as it did with the previous one.  I'm reluctant to make this wontfix, at least the *option* as indicated there\n\n```\npsi(x) = function('psi',x)\ng = diff(psi(x),x)\nlatex(g)\n\\frac{d \\psi\\left(x\\right)}{d x}\n\n# Switch to D format\nsage.symbolic.pynac.typeset_d_as_diff=False\n\nlatex(g)\nD[0]\\psi\\left(x\\right)\n```\nshould exist, except of course the other way around for the default nowadays, I guess.  Maybe that piece of attachment:enhanced-symbolic-typesetting-rebased_to_4.0.1.patch:ticket:5711 should be implemented here instead?",
     "created_at": "2014-12-05T04:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -653,7 +639,6 @@ sage.symbolic.pynac.typeset_d_as_diff=False
 latex(g)
 D[0]\psi\left(x\right)
 ```
-
 should exist, except of course the other way around for the default nowadays, I guess.  Maybe that piece of attachment:enhanced-symbolic-typesetting-rebased_to_4.0.1.patch:ticket:5711 should be implemented here instead?
 
 
@@ -681,7 +666,7 @@ archive/issue_comments_050622.json:
 archive/issue_comments_050623.json:
 ```json
 {
-    "body": "Nils and/or Peter, would you have objections to the following, based on code from #5711 (if possible)?\n\n```\npsi(x) = function('psi',x)\ng = diff(psi(x),x)\nlatex(g)\nD[0]\\psi\\left(x\\right)\n\n# Switch to D format\nsage.symbolic.pynac.typeset_d_as_diff=True\n\nlatex(g)\n\\frac{d \\psi\\left(x\\right)}{d x}\n```\n",
+    "body": "Nils and/or Peter, would you have objections to the following, based on code from #5711 (if possible)?\n\n```\npsi(x) = function('psi',x)\ng = diff(psi(x),x)\nlatex(g)\nD[0]\\psi\\left(x\\right)\n\n# Switch to D format\nsage.symbolic.pynac.typeset_d_as_diff=True\n\nlatex(g)\n\\frac{d \\psi\\left(x\\right)}{d x}\n```",
     "created_at": "2014-12-05T14:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -707,13 +692,12 @@ latex(g)
 
 
 
-
 ---
 
 archive/issue_comments_050624.json:
 ```json
 {
-    "body": "Replying to [comment:23 kcrisman]:\n> Nils and/or Peter, would you have objections to the following, based on code from #5711 (if possible)?\n> {{{\n> ...\n> sage.symbolic.pynac.typeset_d_as_diff=True\n> \n> latex(g)\n> \\frac{d \\psi\\left(x\\right)}{d x}\n> }}}\nOnly do that when the argument list consists only of distinct symbolic variables. Then you can even print \"diff\" for the normal rep. See links above for code that makes this distinction already. This is what Maple does too, by the way.",
+    "body": "Replying to [comment:23 kcrisman]:\n> Nils and/or Peter, would you have objections to the following, based on code from #5711 (if possible)?\n> \n> ```\n> ...\n> sage.symbolic.pynac.typeset_d_as_diff=True\n> \n> latex(g)\n> \\frac{d \\psi\\left(x\\right)}{d x}\n> ```\n\nOnly do that when the argument list consists only of distinct symbolic variables. Then you can even print \"diff\" for the normal rep. See links above for code that makes this distinction already. This is what Maple does too, by the way.",
     "created_at": "2014-12-05T17:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -724,13 +708,15 @@ archive/issue_comments_050624.json:
 
 Replying to [comment:23 kcrisman]:
 > Nils and/or Peter, would you have objections to the following, based on code from #5711 (if possible)?
-> {{{
+> 
+> ```
 > ...
 > sage.symbolic.pynac.typeset_d_as_diff=True
 > 
 > latex(g)
 > \frac{d \psi\left(x\right)}{d x}
-> }}}
+> ```
+
 Only do that when the argument list consists only of distinct symbolic variables. Then you can even print "diff" for the normal rep. See links above for code that makes this distinction already. This is what Maple does too, by the way.
 
 
@@ -758,7 +744,7 @@ Oh, so that's where the `t0` and friends come from.  Funny thing... what if thos
 archive/issue_comments_050626.json:
 ```json
 {
-    "body": "Replying to [comment:25 kcrisman]:\n> Oh, so that's where the `t0` and friends come from.  Funny thing... what if those variables are already taken?\nThought about that, no problem. They get substituted right away.",
+    "body": "Replying to [comment:25 kcrisman]:\n> Oh, so that's where the `t0` and friends come from.  Funny thing... what if those variables are already taken?\n\nThought about that, no problem. They get substituted right away.",
     "created_at": "2014-12-05T17:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
@@ -769,6 +755,7 @@ archive/issue_comments_050626.json:
 
 Replying to [comment:25 kcrisman]:
 > Oh, so that's where the `t0` and friends come from.  Funny thing... what if those variables are already taken?
+
 Thought about that, no problem. They get substituted right away.
 
 

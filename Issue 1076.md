@@ -3,7 +3,7 @@
 archive/issues_001076.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nOn 11/2/07, Nick Alexander <ncalexander@gmail.com> wrote:\n>\n> In the notebook, if you click at left for a traceback, the whole\n> traceback disappears.  Repeating brings it back, then a third click\n> gives you the whole traceback.\n>\n> Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.8) Gecko/\n> 20071008 Firefox/2.0.0.8\n> 'SAGE Version 2.8.9, Release Date: 2007-10-25'\n>\n\nReport it to trac. I've noticed the same problem and it really\nbugs me.  In fact, just toggling the output on and off doesn't\nbehave correctly anymore, e.g., clicking on the left makes the output\ntotally disappear instead of showing a little horizontal bar.  Etc.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1076\n\n",
+    "body": "Assignee: boothby\n\n```\nOn 11/2/07, Nick Alexander <ncalexander@gmail.com> wrote:\n>\n> In the notebook, if you click at left for a traceback, the whole\n> traceback disappears.  Repeating brings it back, then a third click\n> gives you the whole traceback.\n>\n> Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.8) Gecko/\n> 20071008 Firefox/2.0.0.8\n> 'SAGE Version 2.8.9, Release Date: 2007-10-25'\n>\n\nReport it to trac. I've noticed the same problem and it really\nbugs me.  In fact, just toggling the output on and off doesn't\nbehave correctly anymore, e.g., clicking on the left makes the output\ntotally disappear instead of showing a little horizontal bar.  Etc.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1076\n\n",
     "created_at": "2007-11-03T14:33:00Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_001076.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 On 11/2/07, Nick Alexander <ncalexander@gmail.com> wrote:
@@ -38,7 +37,6 @@ totally disappear instead of showing a little horizontal bar.  Etc.
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1076
 

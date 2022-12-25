@@ -3,7 +3,7 @@
 archive/issues_004017.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage -t  devel/sage/sage/stats/hmm/chmm.pyx                \n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 579:\n    sage: m.log_likelihood([ ([1,0,1,1], 10),  ([1,0,1,20], 0.1)  ])\nExpected:\n    -72.225116741468781\nGot:\n    -72.225116741468767\n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 701:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.946539535984342, 0.70508296299241024), (2.0208156913293394, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782109, 0.71975270889217891]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.9465395359843427, 0.70508296299241024), (2.0208156913293389, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782093, 0.71975270889217924]\n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 713:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779879, 0.57264580740105153), (1.5945035666064733, 0.57928632238916189)]\n    Initial probabilities: [0.38546857052811945, 0.61453142947188055]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779883, 0.57264580740105153), (1.5945035666064731, 0.57928632238916189)]\n    Initial probabilities: [0.38546857052811928, 0.61453142947188077]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4017\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage -t  devel/sage/sage/stats/hmm/chmm.pyx                \n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 579:\n    sage: m.log_likelihood([ ([1,0,1,1], 10),  ([1,0,1,20], 0.1)  ])\nExpected:\n    -72.225116741468781\nGot:\n    -72.225116741468767\n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 701:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.946539535984342, 0.70508296299241024), (2.0208156913293394, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782109, 0.71975270889217891]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.9465395359843427, 0.70508296299241024), (2.0208156913293389, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782093, 0.71975270889217924]\n**********************************************************************\nFile \"/Users/sagedevel/Desktop/sage-3.1.2.alpha1/tmp/chmm.py\", line 713:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779879, 0.57264580740105153), (1.5945035666064733, 0.57928632238916189)]\n    Initial probabilities: [0.38546857052811945, 0.61453142947188055]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779883, 0.57264580740105153), (1.5945035666064731, 0.57928632238916189)]\n    Initial probabilities: [0.38546857052811928, 0.61453142947188077]\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4017\n\n",
     "created_at": "2008-08-31T08:22:58Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_004017.json:
 }
 ```
 Assignee: mabshoff
-
 
 ```
 sage -t  devel/sage/sage/stats/hmm/chmm.pyx                
@@ -69,7 +68,6 @@ Got:
     Initial probabilities: [0.38546857052811928, 0.61453142947188077]
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4017
 

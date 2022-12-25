@@ -71,7 +71,7 @@ Changing status from new to assigned.
 archive/issue_comments_017141.json:
 ```json
 {
-    "body": "The issue here is likely that we use\n\n```\nos.kill(int(pid),0)\n```\n\nIt is likely that using \"kill -9 $PID\" via os.system() ought to fix the issue.\n\nCheers,\n\nMichael",
+    "body": "The issue here is likely that we use\n\n```\nos.kill(int(pid),0)\n```\nIt is likely that using \"kill -9 $PID\" via os.system() ought to fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-29T17:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ The issue here is likely that we use
 ```
 os.kill(int(pid),0)
 ```
-
 It is likely that using "kill -9 $PID" via os.system() ought to fix the issue.
 
 Cheers,

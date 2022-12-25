@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5413
 archive/issue_comments_041769.json:
 ```json
 {
-    "body": "Two trivial doctest failures:\n\n```\nsage -t -long devel/sage/doc/en/constructions/calculus.rst # 1 doctests failed\nsage -t -long devel/sage/doc/fr/tutorial/tour_algebra.rst # 1 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "Two trivial doctest failures:\n\n```\nsage -t -long devel/sage/doc/en/constructions/calculus.rst # 1 doctests failed\nsage -t -long devel/sage/doc/fr/tutorial/tour_algebra.rst # 1 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-02T06:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -52,7 +52,6 @@ Two trivial doctest failures:
 sage -t -long devel/sage/doc/en/constructions/calculus.rst # 1 doctests failed
 sage -t -long devel/sage/doc/fr/tutorial/tour_algebra.rst # 1 doctests failed
 ```
-
 
 Cheers,
 
@@ -121,7 +120,7 @@ This ticket probably also affects #5093.
 archive/issue_comments_041773.json:
 ```json
 {
-    "body": "Thanks for working on this Carl.\n\nI only read the patch, didn't test it yet. Explicitly having to use .function() in two places bothers me:\n\n* for each component of Piecewise\n* in the call to generate_plot_points\n\nPerhaps we should modify these to handle non function arguments more gracefully after this change. \n\nI understand that this might require a new syntax to construct Piecewise objects. One option is to add a new parameter, which includes an ordered list of variables. E.g.,\n\n\n```\n    sage: Piecewise([[(0,1),x^2],[(1,2),5-x^2]] ,[x])\n```\n\nor\n\n```\n    sage: f = Piecewise([[(-1,1),1/2+x-x^3 + y]],[x,y])\n```\n\n\nComments?",
+    "body": "Thanks for working on this Carl.\n\nI only read the patch, didn't test it yet. Explicitly having to use .function() in two places bothers me:\n\n* for each component of Piecewise\n* in the call to generate_plot_points\n\nPerhaps we should modify these to handle non function arguments more gracefully after this change. \n\nI understand that this might require a new syntax to construct Piecewise objects. One option is to add a new parameter, which includes an ordered list of variables. E.g.,\n\n```\n    sage: Piecewise([[(0,1),x^2],[(1,2),5-x^2]] ,[x])\n```\nor\n\n```\n    sage: f = Piecewise([[(-1,1),1/2+x-x^3 + y]],[x,y])\n```\n\nComments?",
     "created_at": "2009-03-14T12:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -141,17 +140,14 @@ Perhaps we should modify these to handle non function arguments more gracefully 
 
 I understand that this might require a new syntax to construct Piecewise objects. One option is to add a new parameter, which includes an ordered list of variables. E.g.,
 
-
 ```
     sage: Piecewise([[(0,1),x^2],[(1,2),5-x^2]] ,[x])
 ```
-
 or
 
 ```
     sage: f = Piecewise([[(-1,1),1/2+x-x^3 + y]],[x,y])
 ```
-
 
 Comments?
 
@@ -258,7 +254,7 @@ Apply only the second patch.
 archive/issue_comments_041779.json:
 ```json
 {
-    "body": "This is really odd:\n\n\n```\n[19:53] <jason> sage: g(x)=sin\n[19:53] <jason> sage: g(3)\n[19:53] <jason> sin(3)\n[19:53] <jason> sage: g(x)=sin+x\n[19:53] <jason> sage: g(3)\n[19:53] <jason> sin + 3\n[19:54] <jason> but\n[19:54] <jason> sage: g(x)=sin+cos; g(3)\n[19:54] <jason> sin + cos\n```\n",
+    "body": "This is really odd:\n\n```\n[19:53] <jason> sage: g(x)=sin\n[19:53] <jason> sage: g(3)\n[19:53] <jason> sin(3)\n[19:53] <jason> sage: g(x)=sin+x\n[19:53] <jason> sage: g(3)\n[19:53] <jason> sin + 3\n[19:54] <jason> but\n[19:54] <jason> sage: g(x)=sin+cos; g(3)\n[19:54] <jason> sin + cos\n```",
     "created_at": "2009-03-25T01:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -268,7 +264,6 @@ archive/issue_comments_041779.json:
 ```
 
 This is really odd:
-
 
 ```
 [19:53] <jason> sage: g(x)=sin
@@ -281,7 +276,6 @@ This is really odd:
 [19:54] <jason> sage: g(x)=sin+cos; g(3)
 [19:54] <jason> sin + cos
 ```
-
 
 
 
@@ -349,7 +343,7 @@ I agree that we should get this into the alpha so it gets wider exposure.  (prov
 archive/issue_comments_041783.json:
 ```json
 {
-    "body": "There is one tiny doctest issue left - at least in my merge tree :)\n\n```\nsage -t -long \"devel/sage/doc/en/constructions/calculus.rst\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/doc/en/constructions/calculus.rst\", line 222:\n    sage: f.integral()\nExpected:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x |--> x^3/3], [(1, 2), x |--> (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.alpha0/tmp/.doctest_calculus.py\n\t [4.3 s]\nexit code: 1024\n```\n\n\nI am fixing this with a reviewer patch.\n\nCheers,\n\nMichael",
+    "body": "There is one tiny doctest issue left - at least in my merge tree :)\n\n```\nsage -t -long \"devel/sage/doc/en/constructions/calculus.rst\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/doc/en/constructions/calculus.rst\", line 222:\n    sage: f.integral()\nExpected:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x |--> x^3/3], [(1, 2), x |--> (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.alpha0/tmp/.doctest_calculus.py\n\t [4.3 s]\nexit code: 1024\n```\n\nI am fixing this with a reviewer patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T23:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
@@ -377,7 +371,6 @@ For whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.alpha0/tmp/.doc
 	 [4.3 s]
 exit code: 1024
 ```
-
 
 I am fixing this with a reviewer patch.
 

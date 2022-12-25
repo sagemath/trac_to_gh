@@ -3,7 +3,7 @@
 archive/issues_009273.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
     "created_at": "2010-06-19T16:01:10Z",
     "labels": [
         "component: elliptic curves",
@@ -49,7 +49,6 @@ The following tests failed:
 Total time for all tests: 33947.4 seconds
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9273
 
 
@@ -81,7 +80,7 @@ Did you try running the tests again?
 archive/issue_comments_087194.json:
 ```json
 {
-    "body": "Replying to [comment:2 rlm]:\n> This has nothing to do with the file `BSD.py`. It is a bug in the doctesting code, which is triggered (as William tells me) by lag times on file systems and the like. It starts testing before the doctesting file is created.\n> \n> Did you try running the tests again?\n\nI run that test more than once and it failed more than once. \n\nNote although the machine is rather old (900 MHz CPUs), the disks are local, with a 2 Gbit/s fibre channel interface and 15,000 rpm, so the disk performance is probably better than most modern PCs. If the disks were on a NFS file system, I could perhaps understand that, but it seems unlikely with local disks like this. \n\nI managed to mess up my build (started a 64-bit build in the same directory as the 32-bit one!), so are rebuilding now. I'll try again once complete. \n\nDave",
+    "body": "Replying to [comment:2 rlm]:\n> This has nothing to do with the file `BSD.py`. It is a bug in the doctesting code, which is triggered (as William tells me) by lag times on file systems and the like. It starts testing before the doctesting file is created.\n> \n> Did you try running the tests again?\n\n\nI run that test more than once and it failed more than once. \n\nNote although the machine is rather old (900 MHz CPUs), the disks are local, with a 2 Gbit/s fibre channel interface and 15,000 rpm, so the disk performance is probably better than most modern PCs. If the disks were on a NFS file system, I could perhaps understand that, but it seems unlikely with local disks like this. \n\nI managed to mess up my build (started a 64-bit build in the same directory as the 32-bit one!), so are rebuilding now. I'll try again once complete. \n\nDave",
     "created_at": "2010-06-22T16:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
@@ -94,6 +93,7 @@ Replying to [comment:2 rlm]:
 > This has nothing to do with the file `BSD.py`. It is a bug in the doctesting code, which is triggered (as William tells me) by lag times on file systems and the like. It starts testing before the doctesting file is created.
 > 
 > Did you try running the tests again?
+
 
 I run that test more than once and it failed more than once. 
 

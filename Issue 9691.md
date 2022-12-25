@@ -278,7 +278,7 @@ it's not easy to find it back from the Sage Trac home page.
 archive/issue_comments_094045.json:
 ```json
 {
-    "body": "Currently, when visiting Sage's Trac, one sees the following at the top:\n\n- first a line with the search box and search button\n\n```\n[ search box ] Search\n```\n\n- then a line like one of the following, depending whether one is logged in:\n\n```\nLogin, GitHub Login, Preferences, Help/Guide, About Trac, API\n```\n\n\n```\nlogged in as <username>, Logout, Preferences, Help/Guide, About Trac, API\n```\n\n- then a line like one of the following, depending whether one is logged in:\n\n```\nWiki, Timeline, Roadmap, View Tickets, Search\n```\n\n\n```\nWiki, Timeline, Roadmap, View Tickets, New Ticket, Search\n```\n\nOne of these lines arguably should point to the Trac Query page.",
+    "body": "Currently, when visiting Sage's Trac, one sees the following at the top:\n\n- first a line with the search box and search button\n\n```\n[ search box ] Search\n```\n- then a line like one of the following, depending whether one is logged in:\n\n```\nLogin, GitHub Login, Preferences, Help/Guide, About Trac, API\n```\n\n```\nlogged in as <username>, Logout, Preferences, Help/Guide, About Trac, API\n```\n- then a line like one of the following, depending whether one is logged in:\n\n```\nWiki, Timeline, Roadmap, View Tickets, Search\n```\n\n```\nWiki, Timeline, Roadmap, View Tickets, New Ticket, Search\n```\nOne of these lines arguably should point to the Trac Query page.",
     "created_at": "2018-08-06T11:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9691",
     "type": "issue_comment",
@@ -294,29 +294,24 @@ Currently, when visiting Sage's Trac, one sees the following at the top:
 ```
 [ search box ] Search
 ```
-
 - then a line like one of the following, depending whether one is logged in:
 
 ```
 Login, GitHub Login, Preferences, Help/Guide, About Trac, API
 ```
 
-
 ```
 logged in as <username>, Logout, Preferences, Help/Guide, About Trac, API
 ```
-
 - then a line like one of the following, depending whether one is logged in:
 
 ```
 Wiki, Timeline, Roadmap, View Tickets, Search
 ```
 
-
 ```
 Wiki, Timeline, Roadmap, View Tickets, New Ticket, Search
 ```
-
 One of these lines arguably should point to the Trac Query page.
 
 

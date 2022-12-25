@@ -148,7 +148,7 @@ I assume the "scripts" patch should be applied to the $SAGE_ROOT/local/bin repos
 archive/issue_comments_097419.json:
 ```json
 {
-    "body": "Replying to [comment:6 jason]:\n> I assume the \"scripts\" patch should be applied to the $SAGE_ROOT/local/bin repository?\n\nYes.  I think that's what hg_scripts points to, so that's why I called it \"scripts\".",
+    "body": "Replying to [comment:6 jason]:\n> I assume the \"scripts\" patch should be applied to the $SAGE_ROOT/local/bin repository?\n\n\nYes.  I think that's what hg_scripts points to, so that's why I called it \"scripts\".",
     "created_at": "2010-09-08T14:28:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -159,6 +159,7 @@ archive/issue_comments_097419.json:
 
 Replying to [comment:6 jason]:
 > I assume the "scripts" patch should be applied to the $SAGE_ROOT/local/bin repository?
+
 
 Yes.  I think that's what hg_scripts points to, so that's why I called it "scripts".
 
@@ -195,7 +196,7 @@ Also, there's a typo in the comment on line 101 of the script patch.
 archive/issue_comments_097421.json:
 ```json
 {
-    "body": "Here is what appears when I do the bdist:\n\n\n```\nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nIf you wish to create a Mac Application please set\nSAGE_APP_BUNDLE=yes\nCreating dmg\n(If you don't wish to create a disk image please set SAGE_APP_DMG=no)\n............................................................\ncreated: /Users/grout/sage-4.5.2/tmp/sage-4.4.2-i386-Darwin.dmg\nMoving final distribution file to /Users/grout/sage/dist\n```\n\n\n1. The note about setting SAGE_APP_BUNDLE=yes should probably be deleted now, since it is done by default?\n\n2. It'd be nice if the two other errors about moving/copying were taken care of, but they might be from other things in bdist and not be applicable to this ticket.",
+    "body": "Here is what appears when I do the bdist:\n\n```\nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nIf you wish to create a Mac Application please set\nSAGE_APP_BUNDLE=yes\nCreating dmg\n(If you don't wish to create a disk image please set SAGE_APP_DMG=no)\n............................................................\ncreated: /Users/grout/sage-4.5.2/tmp/sage-4.4.2-i386-Darwin.dmg\nMoving final distribution file to /Users/grout/sage/dist\n```\n\n1. The note about setting SAGE_APP_BUNDLE=yes should probably be deleted now, since it is done by default?\n\n2. It'd be nice if the two other errors about moving/copying were taken care of, but they might be from other things in bdist and not be applicable to this ticket.",
     "created_at": "2010-09-08T14:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -205,7 +206,6 @@ archive/issue_comments_097421.json:
 ```
 
 Here is what appears when I do the bdist:
-
 
 ```
 Sage works!
@@ -223,7 +223,6 @@ Creating dmg
 created: /Users/grout/sage-4.5.2/tmp/sage-4.4.2-i386-Darwin.dmg
 Moving final distribution file to /Users/grout/sage/dist
 ```
-
 
 1. The note about setting SAGE_APP_BUNDLE=yes should probably be deleted now, since it is done by default?
 
@@ -310,7 +309,7 @@ Something must have gotten messed up here.  Ivan, I think the idea was that the 
 archive/issue_comments_097426.json:
 ```json
 {
-    "body": "Replying to [comment:13 kcrisman]:\n> Something must have gotten messed up here.  Ivan, I think the idea was that the app bundle would be the default once we could do both Terminal and Notebook in the same app, right?  At least, that was my strongly encouraged idea :)  One should be able to NOT do the bundle, but the default should be the bundle (same with dmg versus tar.gz).  So maybe the scripts patch needs a change.\n\nThe reason that I didn't make building the app default is that last time I did that I got in trouble :-)  Well I just had to back out that portion.  I'm happy to make it the default though if people think it should be.  We should probably ask on sage-devel first though since it may catch people off guard (the message doesn't come until near the end of a long process).",
+    "body": "Replying to [comment:13 kcrisman]:\n> Something must have gotten messed up here.  Ivan, I think the idea was that the app bundle would be the default once we could do both Terminal and Notebook in the same app, right?  At least, that was my strongly encouraged idea :)  One should be able to NOT do the bundle, but the default should be the bundle (same with dmg versus tar.gz).  So maybe the scripts patch needs a change.\n\n\nThe reason that I didn't make building the app default is that last time I did that I got in trouble :-)  Well I just had to back out that portion.  I'm happy to make it the default though if people think it should be.  We should probably ask on sage-devel first though since it may catch people off guard (the message doesn't come until near the end of a long process).",
     "created_at": "2010-09-08T15:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -322,6 +321,7 @@ archive/issue_comments_097426.json:
 Replying to [comment:13 kcrisman]:
 > Something must have gotten messed up here.  Ivan, I think the idea was that the app bundle would be the default once we could do both Terminal and Notebook in the same app, right?  At least, that was my strongly encouraged idea :)  One should be able to NOT do the bundle, but the default should be the bundle (same with dmg versus tar.gz).  So maybe the scripts patch needs a change.
 
+
 The reason that I didn't make building the app default is that last time I did that I got in trouble :-)  Well I just had to back out that portion.  I'm happy to make it the default though if people think it should be.  We should probably ask on sage-devel first though since it may catch people off guard (the message doesn't come until near the end of a long process).
 
 
@@ -331,7 +331,7 @@ The reason that I didn't make building the app default is that last time I did t
 archive/issue_comments_097427.json:
 ```json
 {
-    "body": "I just applied both patches and tried building with the SAGE_APP_BUNDLE=yes, and got errors:\n\n\n```\ngrout@tiny:~/sage/dist% export SAGE_APP_BUNDLE=yes\ngrout@tiny:~/sage/dist% sage -bdist 4.4.2-app     \nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nBuilding the Mac Application\nBuild settings from command line:\n    ARCHES = ppc ppc64 i386 x86_64\n\n\n### BUILD NATIVE TARGET Sage OF PROJECT Sage WITH CONFIGURATION Debug\nCheck dependencies\nProcessInfoPlistFile build/Debug/Sage.app/Contents/Info.plist Sage-Info.plist\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    builtin-infoPlistUtility Sage-Info.plist -genpkginfo /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Info.plist\n\nerror: The file \u201cSage-Info.plist\u201d couldn\u2019t be opened because there is no such file.\nThe file \u201cSage-Info.plist\u201d couldn\u2019t be opened because there is no such file.\nCpResource build/Debug/Sage.app/Contents/Resources/English.lproj/Credits.html English.lproj/Credits.html\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/Credits.html /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n\nCompileXIB English.lproj/MainMenu.xib\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj/MainMenu.nib /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib\n\n/* com.apple.ibtool.document.notices */\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:551: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:547: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1268: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1252: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1320: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:549: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1315: note: This view is clipping its content.\nThis view is clipping its content.\nCpResource build/Debug/Sage.app/Contents/Resources/appl.icns appl.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/appl.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: appl.icns: No such file or directory\npbxcp: appl.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/Defaults.plist /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: Defaults.plist: No such file or directory\npbxcp: Defaults.plist: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-py.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-py.icns: No such file or directory\npbxcp: sage-document-py.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-spkg.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-spkg.icns: No such file or directory\npbxcp: sage-document-spkg.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-sage.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-sage.icns: No such file or directory\npbxcp: sage-document-sage.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-sws.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-sws.icns: No such file or directory\npbxcp: sage-document-sws.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-blue.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-blue.png: No such file or directory\npbxcp: sage-small-blue.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-grey.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-grey.png: No such file or directory\npbxcp: sage-small-grey.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-green.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-green.png: No such file or directory\npbxcp: sage-small-green.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-red.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-red.png: No such file or directory\npbxcp: sage-small-red.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/start-sage.sh start-sage.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/start-sage.sh /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCpResource build/Debug/Sage.app/Contents/Resources/open-location.sh open-location.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/open-location.sh /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCpResource build/Debug/Sage.app/Contents/Resources/loading-page.html loading-page.html\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/loading-page.html /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCopyStringsFile build/Debug/Sage.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv ICONV /usr/bin/iconv\n    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n\nCompileXIB English.lproj/MyDocument.xib\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj/MyDocument.nib /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.xib\n\n/* com.apple.ibtool.document.notices */\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.xib:100025: note: This view is clipping its content.\nThis view is clipping its content.\nProcessPCH /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch.gch Sage_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/Sage_Prefix.pch -o /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch.gch\n\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/MyDocument.o MyDocument.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/MyDocument.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument connectURL:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument webView:createWebViewWithRequest:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:110: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument browseURL:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:127: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument webView:didStartProvisionalLoadForFrame:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:133: warning: no '-provisionalDataSource' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument openPanelDidEnd:returnCode:contextInfo:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:156: warning: no '-chooseFilename:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/main.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/main.o\n\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/PreferencePanelController.o PreferencePanelController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/PreferencePanelController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m: In function '-[PreferencePanelController apply:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: no '-setupPaths' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: '...' as arguments.)\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppDelegate.o AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppDelegate.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m: In function '-[AppDelegate application:openFile:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:90: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m: In function '-[AppDelegate getUrl:withReplyEvent:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:125: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:125: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:126: warning: no '-loadRequest:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppController.o AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController sageBrowse:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:262: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController terminalSessionPromptForInput:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:321: warning: no '-runCommand:withPrompt:withArguments:editingCommand:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController sageTerminalRun:withArguments:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:384: warning: no '-runCommand:withPrompt:withArguments:editingCommand:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/InputPanelController.o InputPanelController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/InputPanelController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m: In function '-[InputPanelController accept:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: no '-terminalRun:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: '...' as arguments.)\nLd build/Debug/Sage.app/Contents/MacOS/Sage normal x86_64\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv MACOSX_DEPLOYMENT_TARGET 10.5\n    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -filelist /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/Sage.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework WebKit -framework Carbon -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/MacOS/Sage\n\nPhaseScriptExecution \"Run Script\" build/Sage.build/Debug/Sage.build/Script-1967A8B911D6696A00ABC39D.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /bin/sh -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Script-1967A8B911D6696A00ABC39D.sh\n\n** BUILD FAILED **\n\n\nThe following build commands failed:\nSage:\n\tProcessInfoPlistFile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Info.plist Sage-Info.plist\n\tCpResource build/Debug/Sage.app/Contents/Resources/appl.icns appl.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n(11 failures)\n\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```\n",
+    "body": "I just applied both patches and tried building with the SAGE_APP_BUNDLE=yes, and got errors:\n\n```\ngrout@tiny:~/sage/dist% export SAGE_APP_BUNDLE=yes\ngrout@tiny:~/sage/dist% sage -bdist 4.4.2-app     \nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nBuilding the Mac Application\nBuild settings from command line:\n    ARCHES = ppc ppc64 i386 x86_64\n\n\n### BUILD NATIVE TARGET Sage OF PROJECT Sage WITH CONFIGURATION Debug\nCheck dependencies\nProcessInfoPlistFile build/Debug/Sage.app/Contents/Info.plist Sage-Info.plist\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    builtin-infoPlistUtility Sage-Info.plist -genpkginfo /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Info.plist\n\nerror: The file \u201cSage-Info.plist\u201d couldn\u2019t be opened because there is no such file.\nThe file \u201cSage-Info.plist\u201d couldn\u2019t be opened because there is no such file.\nCpResource build/Debug/Sage.app/Contents/Resources/English.lproj/Credits.html English.lproj/Credits.html\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/Credits.html /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n\nCompileXIB English.lproj/MainMenu.xib\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj/MainMenu.nib /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib\n\n/* com.apple.ibtool.document.notices */\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:551: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:547: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1268: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1252: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1320: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:549: note: This view is clipping its content.\nThis view is clipping its content.\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MainMenu.xib:1315: note: This view is clipping its content.\nThis view is clipping its content.\nCpResource build/Debug/Sage.app/Contents/Resources/appl.icns appl.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/appl.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: appl.icns: No such file or directory\npbxcp: appl.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/Defaults.plist /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: Defaults.plist: No such file or directory\npbxcp: Defaults.plist: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-py.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-py.icns: No such file or directory\npbxcp: sage-document-py.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-spkg.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-spkg.icns: No such file or directory\npbxcp: sage-document-spkg.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-sage.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-sage.icns: No such file or directory\npbxcp: sage-document-sage.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-document-sws.icns /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-document-sws.icns: No such file or directory\npbxcp: sage-document-sws.icns: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-blue.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-blue.png: No such file or directory\npbxcp: sage-small-blue.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-grey.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-grey.png: No such file or directory\npbxcp: sage-small-grey.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-green.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-green.png: No such file or directory\npbxcp: sage-small-green.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/sage-small-red.png /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\npbxcp: sage-small-red.png: No such file or directory\npbxcp: sage-small-red.png: No such file or directory\nCpResource build/Debug/Sage.app/Contents/Resources/start-sage.sh start-sage.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/start-sage.sh /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCpResource build/Debug/Sage.app/Contents/Resources/open-location.sh open-location.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/open-location.sh /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCpResource build/Debug/Sage.app/Contents/Resources/loading-page.html loading-page.html\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/loading-page.html /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\n\nCopyStringsFile build/Debug/Sage.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv ICONV /usr/bin/iconv\n    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n\nCompileXIB English.lproj/MyDocument.xib\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj/MyDocument.nib /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.xib\n\n/* com.apple.ibtool.document.notices */\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.xib:100025: note: This view is clipping its content.\nThis view is clipping its content.\nProcessPCH /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch.gch Sage_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/Sage_Prefix.pch -o /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch.gch\n\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/MyDocument.o MyDocument.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/MyDocument.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument connectURL:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:99: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument webView:createWebViewWithRequest:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:110: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument browseURL:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:127: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument webView:didStartProvisionalLoadForFrame:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:133: warning: no '-provisionalDataSource' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m: In function '-[MyDocument openPanelDidEnd:returnCode:contextInfo:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/MyDocument.m:156: warning: no '-chooseFilename:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/main.o main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/main.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/main.o\n\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/PreferencePanelController.o PreferencePanelController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/PreferencePanelController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m: In function '-[PreferencePanelController apply:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: no '-setupPaths' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/PreferencePanelController.m:41: warning: '...' as arguments.)\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppDelegate.o AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppDelegate.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m: In function '-[AppDelegate application:openFile:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:86: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:90: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m: In function '-[AppDelegate getUrl:withReplyEvent:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:125: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:125: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppDelegate.m:126: warning: no '-loadRequest:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppController.o AppController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/AppController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController sageBrowse:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: no '-webView' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: '...' as arguments.)\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:261: warning: no '-mainFrame' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:262: warning: no '-loadRequest:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController terminalSessionPromptForInput:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:321: warning: no '-runCommand:withPrompt:withArguments:editingCommand:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m: In function '-[AppController sageTerminalRun:withArguments:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/AppController.m:384: warning: no '-runCommand:withPrompt:withArguments:editingCommand:' method found\nCompileC build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/InputPanelController.o InputPanelController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv LANG en_US.US-ASCII\n    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-generated-files.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-own-target-headers.hmap -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-all-target-headers.hmap -iquote /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Sage-project-headers.hmap -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/include -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources/x86_64 -I/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/DerivedSources -include /var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-cgjcfjqijsdnkvcdpwtgjctwsaxz/Sage_Prefix.pch -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/InputPanelController.o\n\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m: In function '-[InputPanelController accept:]':\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: no '-terminalRun:' method found\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: (Messages without a matching method signature\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: will be assumed to return 'id' and accept\n/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/InputPanelController.m:33: warning: '...' as arguments.)\nLd build/Debug/Sage.app/Contents/MacOS/Sage normal x86_64\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    setenv MACOSX_DEPLOYMENT_TARGET 10.5\n    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -F/Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug -filelist /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Objects-normal/x86_64/Sage.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework WebKit -framework Carbon -o /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/MacOS/Sage\n\nPhaseScriptExecution \"Run Script\" build/Sage.build/Debug/Sage.build/Script-1967A8B911D6696A00ABC39D.sh\n    cd /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app\n    /bin/sh -c /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Sage.build/Debug/Sage.build/Script-1967A8B911D6696A00ABC39D.sh\n\n** BUILD FAILED **\n\n\nThe following build commands failed:\nSage:\n\tProcessInfoPlistFile /Users/grout/sage-4.5.2/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Info.plist Sage-Info.plist\n\tCpResource build/Debug/Sage.app/Contents/Resources/appl.icns appl.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n\tCpResource build/Debug/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n(11 failures)\n\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```",
     "created_at": "2010-09-08T15:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -341,7 +341,6 @@ archive/issue_comments_097427.json:
 ```
 
 I just applied both patches and tried building with the SAGE_APP_BUNDLE=yes, and got errors:
-
 
 ```
 grout@tiny:~/sage/dist% export SAGE_APP_BUNDLE=yes
@@ -586,7 +585,6 @@ If you don't wish to build Sage.app set SAGE_APP_BUNDLE=no
 
 
 
-
 ---
 
 archive/issue_comments_097428.json:
@@ -610,7 +608,7 @@ I should say that I'm running OSX 10.6.4 and XCode 3.2.2
 archive/issue_comments_097429.json:
 ```json
 {
-    "body": "In downloading and looking at the posted patch, I see things like:\n\n\n```\ndiff -r 406cb5e053a5 -r 9af17582a1cb sage/ext/mac-app/Sage-Info.plist\nBinary file sage/ext/mac-app/Sage-Info.plist has changed\n```\n\n\nApparently mercurial doesn't include the binary files when exporting a patch?",
+    "body": "In downloading and looking at the posted patch, I see things like:\n\n```\ndiff -r 406cb5e053a5 -r 9af17582a1cb sage/ext/mac-app/Sage-Info.plist\nBinary file sage/ext/mac-app/Sage-Info.plist has changed\n```\n\nApparently mercurial doesn't include the binary files when exporting a patch?",
     "created_at": "2010-09-08T16:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -621,12 +619,10 @@ archive/issue_comments_097429.json:
 
 In downloading and looking at the posted patch, I see things like:
 
-
 ```
 diff -r 406cb5e053a5 -r 9af17582a1cb sage/ext/mac-app/Sage-Info.plist
 Binary file sage/ext/mac-app/Sage-Info.plist has changed
 ```
-
 
 Apparently mercurial doesn't include the binary files when exporting a patch?
 
@@ -655,7 +651,7 @@ If all the changes are in the mac-app directory, it may be easiest just to make 
 archive/issue_comments_097431.json:
 ```json
 {
-    "body": "Replying to [comment:18 jason]:\n> If all the changes are in the mac-app directory, it may be easiest just to make a tarball of the directory and post it.  To include binary changes, you can also use hg bundle (I don't know how) or use the --text option to hg export.\n\nI created new diffs with --git which I think works.  It's good to know about the --text option too.  The scripts diff simply fixes the typo.",
+    "body": "Replying to [comment:18 jason]:\n> If all the changes are in the mac-app directory, it may be easiest just to make a tarball of the directory and post it.  To include binary changes, you can also use hg bundle (I don't know how) or use the --text option to hg export.\n\n\nI created new diffs with --git which I think works.  It's good to know about the --text option too.  The scripts diff simply fixes the typo.",
     "created_at": "2010-09-08T16:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -666,6 +662,7 @@ archive/issue_comments_097431.json:
 
 Replying to [comment:18 jason]:
 > If all the changes are in the mac-app directory, it may be easiest just to make a tarball of the directory and post it.  To include binary changes, you can also use hg bundle (I don't know how) or use the --text option to hg export.
+
 
 I created new diffs with --git which I think works.  It's good to know about the --text option too.  The scripts diff simply fixes the typo.
 
@@ -752,7 +749,7 @@ After playing with it a bit, I think it's great.  It also seems to have too many
 archive/issue_comments_097436.json:
 ```json
 {
-    "body": "Replying to [comment:23 jason]:\n> After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> \n> 1. It defaulted to the system browser\n+1\n> 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\nBut the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n\nThe crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n\nI'm not ready to test yet - still have a lot of stuff to do - but tonight I should be able to do something rigorous, also hopefully try PPC tonight or tomorrow to see if it performs as advertised.  I won't be able to test bdisting on PPC in the immediate future, though; maybe Georg can?  I'll cc: him.",
+    "body": "Replying to [comment:23 jason]:\n> After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> \n> 1. It defaulted to the system browser\n  \n+1\n> 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\n  \nBut the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n\nThe crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n\nI'm not ready to test yet - still have a lot of stuff to do - but tonight I should be able to do something rigorous, also hopefully try PPC tonight or tomorrow to see if it performs as advertised.  I won't be able to test bdisting on PPC in the immediate future, though; maybe Georg can?  I'll cc: him.",
     "created_at": "2010-09-08T17:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -765,8 +762,10 @@ Replying to [comment:23 jason]:
 > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:
 > 
 > 1. It defaulted to the system browser
+  
 +1
 > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.
+  
 But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.
 
 The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an "advanced" menu.
@@ -780,7 +779,7 @@ I'm not ready to test yet - still have a lot of stuff to do - but tonight I shou
 archive/issue_comments_097437.json:
 ```json
 {
-    "body": "Replying to [comment:24 kcrisman]:\n> Replying to [comment:23 jason]:\n> > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> > \n> > 1. It defaulted to the system browser\n> +1\n> > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\n> But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n\nI view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an \"Edit\" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.\n\n\n\n\n> \n> The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n\nI would definitely rename it in the menu then.  It looks very unprofessional.  Maybe \"binary-test\" or even just delete it.",
+    "body": "Replying to [comment:24 kcrisman]:\n> Replying to [comment:23 jason]:\n> > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> > \n> > 1. It defaulted to the system browser\n  \n> +1\n> > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\n  \n> But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n\nI view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an \"Edit\" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.\n\n\n\n\n> \n> The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n\n\nI would definitely rename it in the menu then.  It looks very unprofessional.  Maybe \"binary-test\" or even just delete it.",
     "created_at": "2010-09-08T17:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -794,8 +793,10 @@ Replying to [comment:24 kcrisman]:
 > > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:
 > > 
 > > 1. It defaulted to the system browser
+  
 > +1
 > > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.
+  
 > But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.
 
 I view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an "Edit" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.
@@ -806,6 +807,7 @@ I view these two as going hand-in-hand.  It is pretty confusing to have the full
 > 
 > The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an "advanced" menu.
 
+
 I would definitely rename it in the menu then.  It looks very unprofessional.  Maybe "binary-test" or even just delete it.
 
 
@@ -815,7 +817,7 @@ I would definitely rename it in the menu then.  It looks very unprofessional.  M
 archive/issue_comments_097438.json:
 ```json
 {
-    "body": "Replying to [comment:25 jason]:\n> Replying to [comment:24 kcrisman]:\n> > Replying to [comment:23 jason]:\n> > > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> > > \n> > > 1. It defaulted to the system browser\n> > +1\n> > > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\n> > But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n> \n> I view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an \"Edit\" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.\n\nI can't comment more on this; I feel like that would be more for a future ticket, but maybe Ivan has some comments.  It's good to have more than two people trying this out, that's for sure!\n\n> > \n> > The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n> \n> I would definitely rename it in the menu then.  It looks very unprofessional.  Maybe \"binary-test\" or even just delete it.\n\nPresumably most users wouldn't need it.  Perhaps you should raise renaming this script on sage-devel as well; I agree it looks somewhat unprofessional, but it probably dates back to when William was the only person using Sage and that wasn't an issue.",
+    "body": "Replying to [comment:25 jason]:\n> Replying to [comment:24 kcrisman]:\n> > Replying to [comment:23 jason]:\n> > > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:\n> > > \n> > > 1. It defaulted to the system browser\n  \n> > +1\n> > > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.\n  \n> > But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.\n> \n> I view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an \"Edit\" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.\n\n\nI can't comment more on this; I feel like that would be more for a future ticket, but maybe Ivan has some comments.  It's good to have more than two people trying this out, that's for sure!\n\n> > \n> > The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an \"advanced\" menu.\n\n> \n> I would definitely rename it in the menu then.  It looks very unprofessional.  Maybe \"binary-test\" or even just delete it.\n\n\nPresumably most users wouldn't need it.  Perhaps you should raise renaming this script on sage-devel as well; I agree it looks somewhat unprofessional, but it probably dates back to when William was the only person using Sage and that wasn't an issue.",
     "created_at": "2010-09-08T17:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -830,18 +832,23 @@ Replying to [comment:25 jason]:
 > > > After playing with it a bit, I think it's great.  It also seems to have too many options---it is confusing.  Personally, I would be happy if:
 > > > 
 > > > 1. It defaulted to the system browser
+  
 > > +1
 > > > 2. It defaulted to only showing the MenuExtras item, which I think has the right simplicity.
+  
 > > But the problem with that is that many people are probably not familiar with how these work, especially those new to computing in general.  Having a regular application is better.
 > 
 > I view these two as going hand-in-hand.  It is pretty confusing to have the full Sage app menu (like an "Edit" menu) and then have everything work through the browser.  If we're using the system browser (which I think we should do by default), the user should have a super-simple interface.  The Edit menu, the Format menu, and most of the File menu are completely unnecessary and confusing.
+
 
 I can't comment more on this; I feel like that would be more for a future ticket, but maybe Ivan has some comments.  It's good to have more than two people trying this out, that's for sure!
 
 > > 
 > > The crap menu item is a legitimate sage script - see `sage-crap`, which apparently tests for random binary stuff or other things in a given folder.  But like many other things, it could be in an "advanced" menu.
+
 > 
 > I would definitely rename it in the menu then.  It looks very unprofessional.  Maybe "binary-test" or even just delete it.
+
 
 Presumably most users wouldn't need it.  Perhaps you should raise renaming this script on sage-devel as well; I agree it looks somewhat unprofessional, but it probably dates back to when William was the only person using Sage and that wasn't an issue.
 
@@ -928,7 +935,7 @@ How will I know if the consensus is to strip the menus to Jason's suggestion (wh
 archive/issue_comments_097441.json:
 ```json
 {
-    "body": "Replying to [comment:28 iandrus]:\n\n\n> How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?\n\nWell, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.",
+    "body": "Replying to [comment:28 iandrus]:\n\n\n> How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?\n\n\nWell, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.",
     "created_at": "2010-09-08T19:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -942,6 +949,7 @@ Replying to [comment:28 iandrus]:
 
 > How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?
 
+
 Well, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.
 
 
@@ -951,7 +959,7 @@ Well, we've already posted to sage-devel, and the only replies seem to be kcrism
 archive/issue_comments_097442.json:
 ```json
 {
-    "body": "> > How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?\n> \n> Well, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.\n\nCorrect.  After all, none of these things are removing functionality that existed before; it's still a vast improvement.  You might want to make some notes in the source as to how to (re)enable some of the more heavy functionality.",
+    "body": "> > How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?\n\n> \n> Well, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.\n\n\nCorrect.  After all, none of these things are removing functionality that existed before; it's still a vast improvement.  You might want to make some notes in the source as to how to (re)enable some of the more heavy functionality.",
     "created_at": "2010-09-08T19:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -961,8 +969,10 @@ archive/issue_comments_097442.json:
 ```
 
 > > How will I know if the consensus is to strip the menus to Jason's suggestion (which I think is sensible), defaulting to system browser, and building the app by default?
+
 > 
 > Well, we've already posted to sage-devel, and the only replies seem to be kcrisman and me.  So I guess the three of us form a consensus.  Then when people start using it, I'm sure we'll hear more opinions.
+
 
 Correct.  After all, none of these things are removing functionality that existed before; it's still a vast improvement.  You might want to make some notes in the source as to how to (re)enable some of the more heavy functionality.
 
@@ -993,7 +1003,7 @@ Then we can work on ironing out things with the Sage.app browser.  For example, 
 archive/issue_comments_097444.json:
 ```json
 {
-    "body": "One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  Here is the log:\n\n\n```\nStarting Notebook\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the Sage Notebook server starts...\nSetting permissions of DOT_SAGE directory so only you can read and write it.\n/tmp/sage-mac-app/local/lib/python/getpass.py:79: GetPassWarning: Can not control echo on the terminal.\n  passwd = fallback_getpass(prompt, stream)\nWarning: Password input may be echoed.\nEnter new password: ...\nThe notebook files are stored in: sage_notebook.sagenb\n\n\n\nPlease choose a new password for the Sage Notebook 'admin' user.\nDo _not_ choose a stupid password, since anybody who could guess your password\nand connect to your machine could access or delete your files.\nNOTE: Only the md5 hash of the password you type is stored by Sage.\nYou can change your password by typing notebook(reset=True).\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/sage-mac-app/local/bin/sage-notebook\", line 36, in <module>\n    notebook(port=8000)\n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/notebook_object.py\", line 217, in __call__\n    return self.notebook(*args, **kwds)\n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/run_notebook.py\", line 194, in notebook_twisted\n    passwd = get_admin_passwd()                \n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/run_notebook.py\", line 424, in get_admin_passwd\n    passwd = getpass.getpass(\"Enter new password: \")\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 79, in unix_getpass\n    passwd = fallback_getpass(prompt, stream)\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 114, in fallback_getpass\n    return _raw_input(prompt, stream)\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 130, in _raw_input\n    raise EOFError\nEOFError\n```\n\n\nThe same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n\nThe first problem is definitely a problem, since every new user will have it happen to them.",
+    "body": "One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  Here is the log:\n\n```\nStarting Notebook\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 4.5.2, Release Date: 2010-08-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nPlease wait while the Sage Notebook server starts...\nSetting permissions of DOT_SAGE directory so only you can read and write it.\n/tmp/sage-mac-app/local/lib/python/getpass.py:79: GetPassWarning: Can not control echo on the terminal.\n  passwd = fallback_getpass(prompt, stream)\nWarning: Password input may be echoed.\nEnter new password: ...\nThe notebook files are stored in: sage_notebook.sagenb\n\n\n\nPlease choose a new password for the Sage Notebook 'admin' user.\nDo _not_ choose a stupid password, since anybody who could guess your password\nand connect to your machine could access or delete your files.\nNOTE: Only the md5 hash of the password you type is stored by Sage.\nYou can change your password by typing notebook(reset=True).\n\n\n\nTraceback (most recent call last):\n  File \"/tmp/sage-mac-app/local/bin/sage-notebook\", line 36, in <module>\n    notebook(port=8000)\n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/notebook_object.py\", line 217, in __call__\n    return self.notebook(*args, **kwds)\n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/run_notebook.py\", line 194, in notebook_twisted\n    passwd = get_admin_passwd()                \n  File \"/Users/grout/projects/sagenb-0.8.2/src/sagenb/sagenb/notebook/run_notebook.py\", line 424, in get_admin_passwd\n    passwd = getpass.getpass(\"Enter new password: \")\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 79, in unix_getpass\n    passwd = fallback_getpass(prompt, stream)\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 114, in fallback_getpass\n    return _raw_input(prompt, stream)\n  File \"/tmp/sage-mac-app/local/lib/python/getpass.py\", line 130, in _raw_input\n    raise EOFError\nEOFError\n```\n\nThe same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n\nThe first problem is definitely a problem, since every new user will have it happen to them.",
     "created_at": "2010-09-08T20:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1003,7 +1013,6 @@ archive/issue_comments_097444.json:
 ```
 
 One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  Here is the log:
-
 
 ```
 Starting Notebook
@@ -1047,7 +1056,6 @@ Traceback (most recent call last):
 EOFError
 ```
 
-
 The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.
 
 The first problem is definitely a problem, since every new user will have it happen to them.
@@ -1059,7 +1067,7 @@ The first problem is definitely a problem, since every new user will have it hap
 archive/issue_comments_097445.json:
 ```json
 {
-    "body": "Replying to [comment:33 jason]:\n> One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n\nIs there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n\n> The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n\n> The first problem is definitely a problem, since every new user will have it happen to them.\n\nHow often do you think the second will be a problem?",
+    "body": "Replying to [comment:33 jason]:\n> One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n\n\nIs there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n\n> The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n\n\n> The first problem is definitely a problem, since every new user will have it happen to them.\n\n\nHow often do you think the second will be a problem?",
     "created_at": "2010-09-08T20:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1071,11 +1079,14 @@ archive/issue_comments_097445.json:
 Replying to [comment:33 jason]:
 > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  
 
+
 Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?
 
 > The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.
 
+
 > The first problem is definitely a problem, since every new user will have it happen to them.
+
 
 How often do you think the second will be a problem?
 
@@ -1086,7 +1097,7 @@ How often do you think the second will be a problem?
 archive/issue_comments_097446.json:
 ```json
 {
-    "body": "Replying to [comment:34 iandrus]:\n> Replying to [comment:33 jason]:\n> > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n> \n> Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n\nWe could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.\n\n> \n> > The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n> \n> > The first problem is definitely a problem, since every new user will have it happen to them.\n> \n> How often do you think the second will be a problem?\n\nNot very often any more, though it bit my postdoc mentor over the weekend.  My guess is that there will be a lot of people right off that never upgraded an old Sage version that will download the app and run into it.  But after that initial rush, I don't see this happening at all.\n\nMaybe there ought to be a separate notebook_intialized() command that checks to see if the notebook is initialized.",
+    "body": "Replying to [comment:34 iandrus]:\n> Replying to [comment:33 jason]:\n> > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n\n> \n> Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n\n\nWe could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.\n\n> \n> > The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.\n\n> \n> > The first problem is definitely a problem, since every new user will have it happen to them.\n\n> \n> How often do you think the second will be a problem?\n\n\nNot very often any more, though it bit my postdoc mentor over the weekend.  My guess is that there will be a lot of people right off that never upgraded an old Sage version that will download the app and run into it.  But after that initial rush, I don't see this happening at all.\n\nMaybe there ought to be a separate notebook_intialized() command that checks to see if the notebook is initialized.",
     "created_at": "2010-09-08T21:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1098,17 +1109,22 @@ archive/issue_comments_097446.json:
 Replying to [comment:34 iandrus]:
 > Replying to [comment:33 jason]:
 > > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  
+
 > 
 > Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?
+
 
 We could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.
 
 > 
 > > The same sort of thing happens if the notebook tries to upgrade an old notebook (pre-2009 or so).  The user is prompted to enter Y/N to whether they want to upgrade.
+
 > 
 > > The first problem is definitely a problem, since every new user will have it happen to them.
+
 > 
 > How often do you think the second will be a problem?
+
 
 Not very often any more, though it bit my postdoc mentor over the weekend.  My guess is that there will be a lot of people right off that never upgraded an old Sage version that will download the app and run into it.  But after that initial rush, I don't see this happening at all.
 
@@ -1139,7 +1155,7 @@ I've posted to sage-notebook about this.
 archive/issue_comments_097448.json:
 ```json
 {
-    "body": "First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\nAs far as the menu items go, I have to disagree with kcrisman's comment\n\n> After all, none of these things are removing functionality that existed before\n\nHow do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\nIf I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\nI unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right?",
+    "body": "First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\nAs far as the menu items go, I have to disagree with kcrisman's comment\n\n> After all, none of these things are removing functionality that existed before\n\n\nHow do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\nIf I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\nI unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right?",
     "created_at": "2010-09-08T21:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1154,6 +1170,7 @@ As far as the menu items go, I have to disagree with kcrisman's comment
 
 > After all, none of these things are removing functionality that existed before
 
+
 How do I get the output from "sage --help" or "sage --advanced"?  If you remove menu items (like "crap"), then how do I execute "sage -crap"?  Could we have a menu item (like the current "Calculate" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate "crap" but people can still use it if they want to.
 
 If I select "Also Show Menu Extra", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show "Extra" menu` instead?)
@@ -1167,7 +1184,7 @@ I unfortunately have my terminal program set to close the window when the shell 
 archive/issue_comments_097449.json:
 ```json
 {
-    "body": "Replying to [comment:37 jhpalmieri]:\n> First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\nThat sounds good.  Again, I see most people downloading a pre-built app.\n\n> \n> As far as the menu items go, I have to disagree with kcrisman's comment\n> \n> > After all, none of these things are removing functionality that existed before\n> \n> How do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\n+1 to having \"Sage (advanced)\" pop up a dialog box asking for command-line switches.\n\n\n> \n> If I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\nI guess because people don't know what a MenuExtra is.  Maybe changing the option to \"Menu Bar Control\" would be clearer?\n\n\n> \n> I unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? \n\n\nI think we ought to delete the Calculate option.  I don't see a valuable purpose for it.",
+    "body": "Replying to [comment:37 jhpalmieri]:\n> First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\n\nThat sounds good.  Again, I see most people downloading a pre-built app.\n\n> \n> As far as the menu items go, I have to disagree with kcrisman's comment\n> \n> > After all, none of these things are removing functionality that existed before\n\n> \n> How do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\n\n+1 to having \"Sage (advanced)\" pop up a dialog box asking for command-line switches.\n\n\n> \n> If I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\n\nI guess because people don't know what a MenuExtra is.  Maybe changing the option to \"Menu Bar Control\" would be clearer?\n\n\n> \n> I unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? \n\n\n\nI think we ought to delete the Calculate option.  I don't see a valuable purpose for it.",
     "created_at": "2010-09-08T21:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1179,14 +1196,17 @@ archive/issue_comments_097449.json:
 Replying to [comment:37 jhpalmieri]:
 > First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.
 
+
 That sounds good.  Again, I see most people downloading a pre-built app.
 
 > 
 > As far as the menu items go, I have to disagree with kcrisman's comment
 > 
 > > After all, none of these things are removing functionality that existed before
+
 > 
 > How do I get the output from "sage --help" or "sage --advanced"?  If you remove menu items (like "crap"), then how do I execute "sage -crap"?  Could we have a menu item (like the current "Calculate" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate "crap" but people can still use it if they want to.
+
 
 +1 to having "Sage (advanced)" pop up a dialog box asking for command-line switches.
 
@@ -1194,11 +1214,13 @@ That sounds good.  Again, I see most people downloading a pre-built app.
 > 
 > If I select "Also Show Menu Extra", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show "Extra" menu` instead?)
 
+
 I guess because people don't know what a MenuExtra is.  Maybe changing the option to "Menu Bar Control" would be clearer?
 
 
 > 
 > I unfortunately have my terminal program set to close the window when the shell exits, so using the "Calculate" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? 
+
 
 
 I think we ought to delete the Calculate option.  I don't see a valuable purpose for it.
@@ -1210,7 +1232,7 @@ I think we ought to delete the Calculate option.  I don't see a valuable purpose
 archive/issue_comments_097450.json:
 ```json
 {
-    "body": "Replying to [comment:35 jason]:\n> Replying to [comment:34 iandrus]:\n> > Replying to [comment:33 jason]:\n> > > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n> > \n> > Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n> \n> We could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.\n\n\nActually, this check would take care of the upgrade issue as well.  In the upgrade case, it sees that .sage/sage_notebook.sagenb is not available, so it tries to upgrade the old sage notebook.\n\nSo: check to see if ~/.sage/sage_notebook.sagenb directory exists.  If it doesn't, start a terminal session with the notebook (or have some way for the user to interact with Sage).  If it does exist, assume that there will be no interaction and just start up normally.",
+    "body": "Replying to [comment:35 jason]:\n> Replying to [comment:34 iandrus]:\n> > Replying to [comment:33 jason]:\n> > > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  \n\n> > \n> > Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?\n\n> \n> We could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.\n\n\n\nActually, this check would take care of the upgrade issue as well.  In the upgrade case, it sees that .sage/sage_notebook.sagenb is not available, so it tries to upgrade the old sage notebook.\n\nSo: check to see if ~/.sage/sage_notebook.sagenb directory exists.  If it doesn't, start a terminal session with the notebook (or have some way for the user to interact with Sage).  If it does exist, assume that there will be no interaction and just start up normally.",
     "created_at": "2010-09-09T00:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1223,10 +1245,13 @@ Replying to [comment:35 jason]:
 > Replying to [comment:34 iandrus]:
 > > Replying to [comment:33 jason]:
 > > > One more problem I found.  If you delete (or move) your .sage directory, then there is a problem starting up the server since it requests an admin password.  
+
 > > 
 > > Is there a way to know ahead of time (some file we can check) if this is going to happen, and then send them to an interactive shell or ask for a password or something?
+
 > 
 > We could check for existence of the .sage/sage_notebook.sagenb directory, which is where the sage notebook is stored by default.  If it's not there, then the notebook will be created and the password will be solicited.
+
 
 
 Actually, this check would take care of the upgrade issue as well.  In the upgrade case, it sees that .sage/sage_notebook.sagenb is not available, so it tries to upgrade the old sage notebook.
@@ -1240,7 +1265,7 @@ So: check to see if ~/.sage/sage_notebook.sagenb directory exists.  If it doesn'
 archive/issue_comments_097451.json:
 ```json
 {
-    "body": "Replying to [comment:37 jhpalmieri]:\n> First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\nThis seems like a good progression.\n\n> As far as the menu items go, I have to disagree with kcrisman's comment\n> \n> > After all, none of these things are removing functionality that existed before\n> \n> How do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\nI think I was saying that all these things are in the Terminal option still; you can run the terminal.   As it was I think I actually was for additional menu options before I was against them ;) but really I think that for the menu, it's not as crucial, since we didn't have that before.  I also think there was a way in Preferences to execute any old command you wanted, or?  Maybe not - that should be a high priority.  \n\n(The Calculate was also based on a request of mine, but if we're shrinking the # of options, then that should go away too for now.)\n\n> If I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\nI think you have to restart for ALL the things in Preferences to work, not just the ones it says; at least, that's the only way I could get them to work.  I agree with Jason's comment about the Menu Extra, as I mentioned above.  However, now that I've tried it a bit, it seems that it functions in such a way that you can have Sage not running, but then almost immediately turn it on with just a mouse flick along the top, even with the various options - is that right?  \n\nRelated to that is that I did finally get the other binary to work, by dragging and selecting; the key is that you have to actually get the ./sage file, and that's probably not obvious to those who might think the folder is the 'binary', since ./sage isn't actually a compiled binary file... anyway.  I don't know whether this comment is important.  This also seems to require a restart.\n\n> I unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? \n\nYou can set this in Preferences; in fact, Ivan's first default behavior was not to exit.\n\nRelated to this, hooray - there is only ONE window opening now!  Thanks for fixing that.  You were right that I had to delete the TerminalEmulatorList - weirdly, since I never created any new ones.\n\nRandom: when you click on an sws file it starts the browser, but doesn't *do* anything to suggest that it can't actually open them.  That seems problematic, and I don't remember that behavior in earlier versions.\n\nI also finally looked at some of the code (some of which I even understood), and I'm really impressed that you found all those hacks and basically learned Objective-C for this project.  Really great work, even with all the minor things we are talking about.\n\nI'm going to test this on PPC in the next few minutes.  But after that I'll probably bow out, because actual discussion is happening, and that should soon lead to a positively reviewed final version :)",
+    "body": "Replying to [comment:37 jhpalmieri]:\n> First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.\n\n\nThis seems like a good progression.\n\n> As far as the menu items go, I have to disagree with kcrisman's comment\n> \n> > After all, none of these things are removing functionality that existed before\n\n> \n> How do I get the output from \"sage --help\" or \"sage --advanced\"?  If you remove menu items (like \"crap\"), then how do I execute \"sage -crap\"?  Could we have a menu item (like the current \"Calculate\" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate \"crap\" but people can still use it if they want to.\n\n\nI think I was saying that all these things are in the Terminal option still; you can run the terminal.   As it was I think I actually was for additional menu options before I was against them ;) but really I think that for the menu, it's not as crucial, since we didn't have that before.  I also think there was a way in Preferences to execute any old command you wanted, or?  Maybe not - that should be a high priority.  \n\n(The Calculate was also based on a request of mine, but if we're shrinking the # of options, then that should go away too for now.)\n\n> If I select \"Also Show Menu Extra\", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show \"Extra\" menu` instead?)\n\n\nI think you have to restart for ALL the things in Preferences to work, not just the ones it says; at least, that's the only way I could get them to work.  I agree with Jason's comment about the Menu Extra, as I mentioned above.  However, now that I've tried it a bit, it seems that it functions in such a way that you can have Sage not running, but then almost immediately turn it on with just a mouse flick along the top, even with the various options - is that right?  \n\nRelated to that is that I did finally get the other binary to work, by dragging and selecting; the key is that you have to actually get the ./sage file, and that's probably not obvious to those who might think the folder is the 'binary', since ./sage isn't actually a compiled binary file... anyway.  I don't know whether this comment is important.  This also seems to require a restart.\n\n> I unfortunately have my terminal program set to close the window when the shell exits, so using the \"Calculate\" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? \n\n\nYou can set this in Preferences; in fact, Ivan's first default behavior was not to exit.\n\nRelated to this, hooray - there is only ONE window opening now!  Thanks for fixing that.  You were right that I had to delete the TerminalEmulatorList - weirdly, since I never created any new ones.\n\nRandom: when you click on an sws file it starts the browser, but doesn't *do* anything to suggest that it can't actually open them.  That seems problematic, and I don't remember that behavior in earlier versions.\n\nI also finally looked at some of the code (some of which I even understood), and I'm really impressed that you found all those hacks and basically learned Objective-C for this project.  Really great work, even with all the minor things we are talking about.\n\nI'm going to test this on PPC in the next few minutes.  But after that I'll probably bow out, because actual discussion is happening, and that should soon lead to a positively reviewed final version :)",
     "created_at": "2010-09-09T01:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1252,13 +1277,16 @@ archive/issue_comments_097451.json:
 Replying to [comment:37 jhpalmieri]:
 > First, the app looks great.  I think that if you build the app by default, people will be a little surprised.  I would suggest not building it by default but strongly encourage people to try it out (on sage-devel, for example), with the goal of distributing it by default with Sage 5.0.
 
+
 This seems like a good progression.
 
 > As far as the menu items go, I have to disagree with kcrisman's comment
 > 
 > > After all, none of these things are removing functionality that existed before
+
 > 
 > How do I get the output from "sage --help" or "sage --advanced"?  If you remove menu items (like "crap"), then how do I execute "sage -crap"?  Could we have a menu item (like the current "Calculate" one) which just lets you type in any command line options you want?  Or it could be fancier and have a menu to choose a command-line option from the ones not already included.  Then you can eliminate "crap" but people can still use it if they want to.
+
 
 I think I was saying that all these things are in the Terminal option still; you can run the terminal.   As it was I think I actually was for additional menu options before I was against them ;) but really I think that for the menu, it's not as crucial, since we didn't have that before.  I also think there was a way in Preferences to execute any old command you wanted, or?  Maybe not - that should be a high priority.  
 
@@ -1266,11 +1294,13 @@ I think I was saying that all these things are in the Terminal option still; you
 
 > If I select "Also Show Menu Extra", I don't see any difference.  (It's also not completely clear what it's supposed to do; could it say `Also show "Extra" menu` instead?)
 
+
 I think you have to restart for ALL the things in Preferences to work, not just the ones it says; at least, that's the only way I could get them to work.  I agree with Jason's comment about the Menu Extra, as I mentioned above.  However, now that I've tried it a bit, it seems that it functions in such a way that you can have Sage not running, but then almost immediately turn it on with just a mouse flick along the top, even with the various options - is that right?  
 
 Related to that is that I did finally get the other binary to work, by dragging and selecting; the key is that you have to actually get the ./sage file, and that's probably not obvious to those who might think the folder is the 'binary', since ./sage isn't actually a compiled binary file... anyway.  I don't know whether this comment is important.  This also seems to require a restart.
 
 > I unfortunately have my terminal program set to close the window when the shell exits, so using the "Calculate" option is not ideal: it closes the window as soon as it is done executing, so I can't see it.  My only options seem to be to change this for all of my Terminal windows, or to not exit after running Sage.  Is that right? 
+
 
 You can set this in Preferences; in fact, Ivan's first default behavior was not to exit.
 
@@ -1311,7 +1341,7 @@ Next step; try to get the extcode thing in and see whether a bdist on this machi
 archive/issue_comments_097453.json:
 ```json
 {
-    "body": "Replying to [comment:40 kcrisman]:\n\n\n> I also finally looked at some of the code (some of which I even understood), and I'm really impressed that you found all those hacks and basically learned Objective-C for this project.  Really great work, even with all the minor things we are talking about.\n\n\n+1. Ivan, you are doing a tremendous job here that lots of people have wanted for a long time.  Thanks!",
+    "body": "Replying to [comment:40 kcrisman]:\n\n\n> I also finally looked at some of the code (some of which I even understood), and I'm really impressed that you found all those hacks and basically learned Objective-C for this project.  Really great work, even with all the minor things we are talking about.\n\n\n\n+1. Ivan, you are doing a tremendous job here that lots of people have wanted for a long time.  Thanks!",
     "created_at": "2010-09-09T02:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1326,6 +1356,7 @@ Replying to [comment:40 kcrisman]:
 > I also finally looked at some of the code (some of which I even understood), and I'm really impressed that you found all those hacks and basically learned Objective-C for this project.  Really great work, even with all the minor things we are talking about.
 
 
+
 +1. Ivan, you are doing a tremendous job here that lots of people have wanted for a long time.  Thanks!
 
 
@@ -1335,7 +1366,7 @@ Replying to [comment:40 kcrisman]:
 archive/issue_comments_097454.json:
 ```json
 {
-    "body": "I see what the \"Menu Extra\" option does, and it looks nice.  I think it should be on by default.  Can we figure out what to call it so that people will understand the option in the Preferences dialogue?\n\n> I think I was saying that all these things are in the Terminal option still; you can run the terminal.\n\nMaybe I don't understand you. When I run the \"Terminal Session\" option, it runs Sage in a terminal window, as I would expect.  Executing \"sage -crap\" doesn't actually run sage: it runs some script in SAGE_ROOT/local/bin and then quits.  It's not something you run within sage.  Same with other advanced options like \"bdist\" or \"coverage\".\n\n> You can set this [whether the Terminal exits] in Preferences.\n\nI see that I can set Sage so that the terminal doesn't exit after running Sage, or I can set Terminal so it doesn't close windows when the shell exits, but in the first case I have a terminal window running the shell, and in the second I have to manually close all of my terminal windows.  Is there some way to call Terminal and override the global preference to \"close the window\" or \"close if the shell exited cleanly\" for that particular Terminal session? \n\nBy the way, if I delete the \"exit\" part of the terminal script in Sage, it would be nice if there were a button to hit to restore the default script.  Plenty of people using this won't necessarily know the appropriate shell syntax.\n\nIt would also be nice (but it's way beyond the scope of this particular ticket) to have a \"calculate\" option which just displays the result (if there is anything to display) in a window which you can close when you're done, or from which you can copy, etc.  If we could run a Sage server in the background so that the \"calculate\" option could just send queries to it, that would be nice.  I think I've heard of a possibility like this, but I can't remember where...",
+    "body": "I see what the \"Menu Extra\" option does, and it looks nice.  I think it should be on by default.  Can we figure out what to call it so that people will understand the option in the Preferences dialogue?\n\n> I think I was saying that all these things are in the Terminal option still; you can run the terminal.\n\n\nMaybe I don't understand you. When I run the \"Terminal Session\" option, it runs Sage in a terminal window, as I would expect.  Executing \"sage -crap\" doesn't actually run sage: it runs some script in SAGE_ROOT/local/bin and then quits.  It's not something you run within sage.  Same with other advanced options like \"bdist\" or \"coverage\".\n\n> You can set this [whether the Terminal exits] in Preferences.\n\n\nI see that I can set Sage so that the terminal doesn't exit after running Sage, or I can set Terminal so it doesn't close windows when the shell exits, but in the first case I have a terminal window running the shell, and in the second I have to manually close all of my terminal windows.  Is there some way to call Terminal and override the global preference to \"close the window\" or \"close if the shell exited cleanly\" for that particular Terminal session? \n\nBy the way, if I delete the \"exit\" part of the terminal script in Sage, it would be nice if there were a button to hit to restore the default script.  Plenty of people using this won't necessarily know the appropriate shell syntax.\n\nIt would also be nice (but it's way beyond the scope of this particular ticket) to have a \"calculate\" option which just displays the result (if there is anything to display) in a window which you can close when you're done, or from which you can copy, etc.  If we could run a Sage server in the background so that the \"calculate\" option could just send queries to it, that would be nice.  I think I've heard of a possibility like this, but I can't remember where...",
     "created_at": "2010-09-09T02:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1348,9 +1379,11 @@ I see what the "Menu Extra" option does, and it looks nice.  I think it should b
 
 > I think I was saying that all these things are in the Terminal option still; you can run the terminal.
 
+
 Maybe I don't understand you. When I run the "Terminal Session" option, it runs Sage in a terminal window, as I would expect.  Executing "sage -crap" doesn't actually run sage: it runs some script in SAGE_ROOT/local/bin and then quits.  It's not something you run within sage.  Same with other advanced options like "bdist" or "coverage".
 
 > You can set this [whether the Terminal exits] in Preferences.
+
 
 I see that I can set Sage so that the terminal doesn't exit after running Sage, or I can set Terminal so it doesn't close windows when the shell exits, but in the first case I have a terminal window running the shell, and in the second I have to manually close all of my terminal windows.  Is there some way to call Terminal and override the global preference to "close the window" or "close if the shell exited cleanly" for that particular Terminal session? 
 
@@ -1365,7 +1398,7 @@ It would also be nice (but it's way beyond the scope of this particular ticket) 
 archive/issue_comments_097455.json:
 ```json
 {
-    "body": "> It would also be nice (but it's way beyond the scope of this particular ticket) to have a \"calculate\" option which just displays the result (if there is anything to display) in a window which you can close when you're done, or from which you can copy, etc.  If we could run a Sage server in the background so that the \"calculate\" option could just send queries to it, that would be nice.  I think I've heard of a possibility like this, but I can't remember where...\n\nFunny - this is something I requested earlier, Ivan put in, but then we nixed.  `./sage -c`, that is.  Unfortunately it doesn't quite calculate, see a recent sage-support/ask.sagemath.org thread.  Something like you are talking about (with server running) sounds like a great idea as well.",
+    "body": "> It would also be nice (but it's way beyond the scope of this particular ticket) to have a \"calculate\" option which just displays the result (if there is anything to display) in a window which you can close when you're done, or from which you can copy, etc.  If we could run a Sage server in the background so that the \"calculate\" option could just send queries to it, that would be nice.  I think I've heard of a possibility like this, but I can't remember where...\n\n\nFunny - this is something I requested earlier, Ivan put in, but then we nixed.  `./sage -c`, that is.  Unfortunately it doesn't quite calculate, see a recent sage-support/ask.sagemath.org thread.  Something like you are talking about (with server running) sounds like a great idea as well.",
     "created_at": "2010-09-09T02:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1376,6 +1409,7 @@ archive/issue_comments_097455.json:
 
 > It would also be nice (but it's way beyond the scope of this particular ticket) to have a "calculate" option which just displays the result (if there is anything to display) in a window which you can close when you're done, or from which you can copy, etc.  If we could run a Sage server in the background so that the "calculate" option could just send queries to it, that would be nice.  I think I've heard of a possibility like this, but I can't remember where...
 
+
 Funny - this is something I requested earlier, Ivan put in, but then we nixed.  `./sage -c`, that is.  Unfortunately it doesn't quite calculate, see a recent sage-support/ask.sagemath.org thread.  Something like you are talking about (with server running) sounds like a great idea as well.
 
 
@@ -1385,7 +1419,7 @@ Funny - this is something I requested earlier, Ivan put in, but then we nixed.  
 archive/issue_comments_097456.json:
 ```json
 {
-    "body": "Bad news on OS X 10.4 front...\n\n```\n\nCrismans-Computer:~/Desktop/sage-4.5.3 crisman$ ./sage -bdist Test\nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nBuilding the Mac Application\n(NOTE: project Sage was written by a newer version of Xcode (45) -- temporarily downgrading it to version 42 (without modifying project file))\n\n### BUILDING NATIVE TARGET Sage WITH CONFIGURATION Debug\n\nChecking Dependencies...\nSDK package /Users/crisman/Desktop/sage-4.5.3/data/extcode/sage/ext/mac-app/macosx10.5 does not exist\n** BUILD FAILED **\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```\n\nSo we will have to deal with this somehow, or deal with not having it available for Tiger (a mistake, in my opinion, since the people most likely to use this are least likely to have $ to upgrade).  A quick and uninformed internet search for help on this issue didn't do much for me, but then again I don't have a lot of expertise with Xcode.",
+    "body": "Bad news on OS X 10.4 front...\n\n```\n\nCrismans-Computer:~/Desktop/sage-4.5.3 crisman$ ./sage -bdist Test\nSage works!\nCopying files over to tmp directory\ncp: *.sage: No such file or directory\nCopying Sage library over\nMaking empty spkg's\nThere will be an error about x below that you can safely ignore.\nmv: rename x to x/x: Invalid argument\nBuilding the Mac Application\n(NOTE: project Sage was written by a newer version of Xcode (45) -- temporarily downgrading it to version 42 (without modifying project file))\n\n### BUILDING NATIVE TARGET Sage WITH CONFIGURATION Debug\n\nChecking Dependencies...\nSDK package /Users/crisman/Desktop/sage-4.5.3/data/extcode/sage/ext/mac-app/macosx10.5 does not exist\n** BUILD FAILED **\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```\nSo we will have to deal with this somehow, or deal with not having it available for Tiger (a mistake, in my opinion, since the people most likely to use this are least likely to have $ to upgrade).  A quick and uninformed internet search for help on this issue didn't do much for me, but then again I don't have a lot of expertise with Xcode.",
     "created_at": "2010-09-09T02:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1417,7 +1451,6 @@ SDK package /Users/crisman/Desktop/sage-4.5.3/data/extcode/sage/ext/mac-app/maco
 Failed to build Sage.app.
 If you don't wish to build Sage.app set SAGE_APP_BUNDLE=no
 ```
-
 So we will have to deal with this somehow, or deal with not having it available for Tiger (a mistake, in my opinion, since the people most likely to use this are least likely to have $ to upgrade).  A quick and uninformed internet search for help on this issue didn't do much for me, but then again I don't have a lot of expertise with Xcode.
 
 
@@ -1461,7 +1494,7 @@ Can you build a binary on 10.5 or 10.6 which works on 10.4 by setting appropriat
 archive/issue_comments_097458.json:
 ```json
 {
-    "body": "> Regarding the 10.4 issue: it shouldn't be too hard to test whether running 10.4, and then refuse to make the binary.  I think that we could release it soon just for 10.5 and 10.6, and Sage 5.0 could be the target for getting it to work on 10.4.  Does anyone know whether this is possible (working on 10.4) or likely?\n> \n> Can you build a binary on 10.5 or 10.6 which works on 10.4 by setting appropriate flags?\n \nIn general, yes, with that nasty [deployment](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html) target thing you tracked down (?) which caused the Snow Leopard problems.  It could be as simple as setting that.\n\nOn the other hand, since this uses Xcode in a much tighter way than other spkgs, perhaps not; the error is also a little mystifying, because I don't know what Xcode 45 is supposed to be.  \n\nOkay, I finally found ONE thing that might help.  In Xcode, go to Info once you've (Ivan?) opened the project, and click on \"General\"..   Make the \"Project Format\" Xcode 2.4 compatible\" and make the Base SDK for all configurations Mac OS X 10.4 (the first one for sure, I suspect, the second one I'm less sure on but I figure you might as well take a whirl).  There isn't anything really cool you used from Xcode 3.x, is there?  Presumably not, if this is a fairly basic Cocoa application.\n\nI hope this works!",
+    "body": "> Regarding the 10.4 issue: it shouldn't be too hard to test whether running 10.4, and then refuse to make the binary.  I think that we could release it soon just for 10.5 and 10.6, and Sage 5.0 could be the target for getting it to work on 10.4.  Does anyone know whether this is possible (working on 10.4) or likely?\n> \n> Can you build a binary on 10.5 or 10.6 which works on 10.4 by setting appropriate flags?\n\n \nIn general, yes, with that nasty [deployment](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html) target thing you tracked down (?) which caused the Snow Leopard problems.  It could be as simple as setting that.\n\nOn the other hand, since this uses Xcode in a much tighter way than other spkgs, perhaps not; the error is also a little mystifying, because I don't know what Xcode 45 is supposed to be.  \n\nOkay, I finally found ONE thing that might help.  In Xcode, go to Info once you've (Ivan?) opened the project, and click on \"General\"..   Make the \"Project Format\" Xcode 2.4 compatible\" and make the Base SDK for all configurations Mac OS X 10.4 (the first one for sure, I suspect, the second one I'm less sure on but I figure you might as well take a whirl).  There isn't anything really cool you used from Xcode 3.x, is there?  Presumably not, if this is a fairly basic Cocoa application.\n\nI hope this works!",
     "created_at": "2010-09-09T03:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1473,6 +1506,7 @@ archive/issue_comments_097458.json:
 > Regarding the 10.4 issue: it shouldn't be too hard to test whether running 10.4, and then refuse to make the binary.  I think that we could release it soon just for 10.5 and 10.6, and Sage 5.0 could be the target for getting it to work on 10.4.  Does anyone know whether this is possible (working on 10.4) or likely?
 > 
 > Can you build a binary on 10.5 or 10.6 which works on 10.4 by setting appropriate flags?
+
  
 In general, yes, with that nasty [deployment](http://developer.apple.com/library/mac/#documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html) target thing you tracked down (?) which caused the Snow Leopard problems.  It could be as simple as setting that.
 
@@ -1531,7 +1565,7 @@ Once you get the 10.4 compatibility, give me a holler and I'll try it out again 
 archive/issue_comments_097461.json:
 ```json
 {
-    "body": "Replying to [comment:48 iandrus]:\n\n> I haven't redone the menus because I'm not sure if jhpalmieri was disagreeing with the idea of a minimal set.  I did add a Sage (advanced) which will prompt for any args you wish to give it.\n\nI would be very happy with a smaller set of menu options.",
+    "body": "Replying to [comment:48 iandrus]:\n\n> I haven't redone the menus because I'm not sure if jhpalmieri was disagreeing with the idea of a minimal set.  I did add a Sage (advanced) which will prompt for any args you wish to give it.\n\n\nI would be very happy with a smaller set of menu options.",
     "created_at": "2010-09-09T21:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1543,6 +1577,7 @@ archive/issue_comments_097461.json:
 Replying to [comment:48 iandrus]:
 
 > I haven't redone the menus because I'm not sure if jhpalmieri was disagreeing with the idea of a minimal set.  I did add a Sage (advanced) which will prompt for any args you wish to give it.
+
 
 I would be very happy with a smaller set of menu options.
 
@@ -1598,7 +1633,7 @@ Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket9873/README
 archive/issue_comments_097464.json:
 ```json
 {
-    "body": "Replying to [comment:51 iandrus]:\n> I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  \n\nGreat, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n\n>  * the \"loading\" page still appears when using the system browser (I think this is best--perhaps there should be an option)\nThis seems reasonable to leave in place for now.  All your other stuff would be better to improve on in another ticket, esp. if it isn't default build behavior yet, you are right.",
+    "body": "Replying to [comment:51 iandrus]:\n> I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  \n\n\nGreat, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n\n>  * the \"loading\" page still appears when using the system browser (I think this is best--perhaps there should be an option)\n \nThis seems reasonable to leave in place for now.  All your other stuff would be better to improve on in another ticket, esp. if it isn't default build behavior yet, you are right.",
     "created_at": "2010-09-10T14:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1610,9 +1645,11 @@ archive/issue_comments_097464.json:
 Replying to [comment:51 iandrus]:
 > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  
 
+
 Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).
 
 >  * the "loading" page still appears when using the system browser (I think this is best--perhaps there should be an option)
+ 
 This seems reasonable to leave in place for now.  All your other stuff would be better to improve on in another ticket, esp. if it isn't default build behavior yet, you are right.
 
 
@@ -1622,7 +1659,7 @@ This seems reasonable to leave in place for now.  All your other stuff would be 
 archive/issue_comments_097465.json:
 ```json
 {
-    "body": "Replying to [comment:52 kcrisman]:\n> Replying to [comment:51 iandrus]:\n> > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  \n> \n> Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n\nI'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...\n\nOne thing on the internet suggested \"The only snag I've hit is that the new IB defaults to a format that's not compatible with the old IB, so it's easy to create a NIB that can't be edited with the 2.4 version of tools.\" If that's relevant?  Also, \"You can specifiy a \"2.4 compatible\" project in XCode 3.x, but the accompanying Interface Builder part is not set to that level: therefore, all your developed applescripts don't run any longer on 10.4 (be it intel or ppc)\".  And \"However, it is not possible to create new objects on existing 1.2 version NIB objects as new Interface Builder objects are set to a higher incompatible version.\"  This seems problematic.  One person said that xib objects seemed to work fine, but that's all you have, as far as I can tell...",
+    "body": "Replying to [comment:52 kcrisman]:\n> Replying to [comment:51 iandrus]:\n> > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  \n\n> \n> Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n\n\nI'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...\n\nOne thing on the internet suggested \"The only snag I've hit is that the new IB defaults to a format that's not compatible with the old IB, so it's easy to create a NIB that can't be edited with the 2.4 version of tools.\" If that's relevant?  Also, \"You can specifiy a \"2.4 compatible\" project in XCode 3.x, but the accompanying Interface Builder part is not set to that level: therefore, all your developed applescripts don't run any longer on 10.4 (be it intel or ppc)\".  And \"However, it is not possible to create new objects on existing 1.2 version NIB objects as new Interface Builder objects are set to a higher incompatible version.\"  This seems problematic.  One person said that xib objects seemed to work fine, but that's all you have, as far as I can tell...",
     "created_at": "2010-09-10T17:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1634,8 +1671,10 @@ archive/issue_comments_097465.json:
 Replying to [comment:52 kcrisman]:
 > Replying to [comment:51 iandrus]:
 > > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.  
+
 > 
 > Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).
+
 
 I'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...
 
@@ -1648,7 +1687,7 @@ One thing on the internet suggested "The only snag I've hit is that the new IB d
 archive/issue_comments_097466.json:
 ```json
 {
-    "body": "Replying to [comment:53 kcrisman]:\n\n> Replying to [comment:52 kcrisman]:\n> > Replying to [comment:51 iandrus]:\n> > > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.\n> > Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n> I'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...\n\nI changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?\n\n> One thing on the internet suggested \"The only snag I've hit is that the new IB defaults to a format that's not compatible with the old IB, so it's easy to create a NIB that can't be edited with the 2.4 version of tools.\" If that's relevant?  Also, \"You can specifiy a \"2.4 compatible\" project in XCode 3.x, but the accompanying Interface Builder part is not set to that level: therefore, all your developed applescripts don't run any longer on 10.4 (be it intel or ppc)\".  And \"However, it is not possible to create new objects on existing 1.2 version NIB objects as new Interface Builder objects are set to a higher incompatible version.\"  This seems problematic.  One person said that xib objects seemed to work fine, but that's all you have, as far as I can tell...\n\nCan you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\nActually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.",
+    "body": "Replying to [comment:53 kcrisman]:\n\n> Replying to [comment:52 kcrisman]:\n> > Replying to [comment:51 iandrus]:\n> > > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.\n\n> > Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).\n> I'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...\n\n\nI changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?\n\n> One thing on the internet suggested \"The only snag I've hit is that the new IB defaults to a format that's not compatible with the old IB, so it's easy to create a NIB that can't be edited with the 2.4 version of tools.\" If that's relevant?  Also, \"You can specifiy a \"2.4 compatible\" project in XCode 3.x, but the accompanying Interface Builder part is not set to that level: therefore, all your developed applescripts don't run any longer on 10.4 (be it intel or ppc)\".  And \"However, it is not possible to create new objects on existing 1.2 version NIB objects as new Interface Builder objects are set to a higher incompatible version.\"  This seems problematic.  One person said that xib objects seemed to work fine, but that's all you have, as far as I can tell...\n\n\nCan you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\nActually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.",
     "created_at": "2010-09-10T19:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1662,12 +1701,15 @@ Replying to [comment:53 kcrisman]:
 > Replying to [comment:52 kcrisman]:
 > > Replying to [comment:51 iandrus]:
 > > > I have 10.4 support (I think), as well as paring down the menus.  I also rearranged the Preferences window.
+
 > > Great, I'll try this out on PPC 10.4 as soon as I get a chance (should be within 2-3 hours).
 > I'm still getting the same error message about not being able to use the application with this version of Mac OS X.  Probably removing 10.5 specific things isn't enough, but one would have to do all the preference stuff for 10.4 I mentioned above in the project file.  Or did you do those things too?  In which case I'm stumped.  Except...
+
 
 I changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?
 
 > One thing on the internet suggested "The only snag I've hit is that the new IB defaults to a format that's not compatible with the old IB, so it's easy to create a NIB that can't be edited with the 2.4 version of tools." If that's relevant?  Also, "You can specifiy a "2.4 compatible" project in XCode 3.x, but the accompanying Interface Builder part is not set to that level: therefore, all your developed applescripts don't run any longer on 10.4 (be it intel or ppc)".  And "However, it is not possible to create new objects on existing 1.2 version NIB objects as new Interface Builder objects are set to a higher incompatible version."  This seems problematic.  One person said that xib objects seemed to work fine, but that's all you have, as far as I can tell...
+
 
 Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?
 
@@ -1680,7 +1722,7 @@ Actually I think it may be [due to the compiler I'm using](http://lists.apple.co
 archive/issue_comments_097467.json:
 ```json
 {
-    "body": "> jhpalmieri, did you want a version that would exit only on success -- you could use \"%`@` && exit\"\n\nFor me the only issue is when using the \"Calculate\" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running \"sage -c ...\" until manually closed.\n\nWith the new version, I can't run it successfully on my Intel iMac running 10.6: I see\n\n```\nBuilding the Mac Application\nBuild settings from command line:\n    ARCHES = ppc ppc64 i386 x86_64\n\n\n### BUILD NATIVE TARGET Sage OF PROJECT Sage WITH CONFIGURATION Debug\nCheck dependencies\nerror: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n** BUILD FAILED **\n\nFailed to build Sage.app.\n```\n",
+    "body": "> jhpalmieri, did you want a version that would exit only on success -- you could use \"%`@` && exit\"\n\n\nFor me the only issue is when using the \"Calculate\" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running \"sage -c ...\" until manually closed.\n\nWith the new version, I can't run it successfully on my Intel iMac running 10.6: I see\n\n```\nBuilding the Mac Application\nBuild settings from command line:\n    ARCHES = ppc ppc64 i386 x86_64\n\n\n### BUILD NATIVE TARGET Sage OF PROJECT Sage WITH CONFIGURATION Debug\nCheck dependencies\nerror: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n** BUILD FAILED **\n\nFailed to build Sage.app.\n```",
     "created_at": "2010-09-10T20:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1690,6 +1732,7 @@ archive/issue_comments_097467.json:
 ```
 
 > jhpalmieri, did you want a version that would exit only on success -- you could use "%`@` && exit"
+
 
 For me the only issue is when using the "Calculate" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running "sage -c ..." until manually closed.
 
@@ -1709,7 +1752,6 @@ error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'
 
 Failed to build Sage.app.
 ```
-
 
 
 
@@ -1736,7 +1778,7 @@ Hmm, that's weird.  I'll have to check this out on my computer as well.  Obvious
 archive/issue_comments_097469.json:
 ```json
 {
-    "body": "> I changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?\n\nRight, a warning - that it might crash :)  I used the prebuilt version, though; doing it myself would have taken many moons on the work computer.  I'll try this in a bit at home, hopefully.\n\n> Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\nI haven't tried this on an older computer yet.  Sadly, that may be the case.\n\n> Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.\n\nI can try this, though not immediately.  Thanks for looking into this so much.",
+    "body": "> I changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?\n\n\nRight, a warning - that it might crash :)  I used the prebuilt version, though; doing it myself would have taken many moons on the work computer.  I'll try this in a bit at home, hopefully.\n\n> Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\n\nI haven't tried this on an older computer yet.  Sadly, that may be the case.\n\n> Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.\n\n\nI can try this, though not immediately.  Thanks for looking into this so much.",
     "created_at": "2010-09-10T20:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1747,13 +1789,16 @@ archive/issue_comments_097469.json:
 
 > I changed the base SDK to 10.4 and made the project Xcode 2.4 compatible.  In interface builder it warns me that image scaling on a few elements isn't supported before 10.5, but I don't think that should cause this problem--it's a warning not an error.  Did you build this yourself, or use the prebuilt version?
 
+
 Right, a warning - that it might crash :)  I used the prebuilt version, though; doing it myself would have taken many moons on the work computer.  I'll try this in a bit at home, hopefully.
 
 > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?
 
+
 I haven't tried this on an older computer yet.  Sadly, that may be the case.
 
 > Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.
+
 
 I can try this, though not immediately.  Thanks for looking into this so much.
 
@@ -1764,7 +1809,7 @@ I can try this, though not immediately.  Thanks for looking into this so much.
 archive/issue_comments_097470.json:
 ```json
 {
-    "body": "> > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\nWell, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n\n> > Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.\n\nThis isn't an option in my version of Xcode (on the 10.4 system).\n\nI wonder why jhpalmieri wasn't able to compile this, though.  You'd think Mac would be smart enough to look for a *newer* SDK if that one wasn't available.  Hmm.",
+    "body": "> > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\n\nWell, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n\n> > Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.\n\n\nThis isn't an option in my version of Xcode (on the 10.4 system).\n\nI wonder why jhpalmieri wasn't able to compile this, though.  You'd think Mac would be smart enough to look for a *newer* SDK if that one wasn't available.  Hmm.",
     "created_at": "2010-09-10T20:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1775,9 +1820,11 @@ archive/issue_comments_097470.json:
 
 > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?
 
+
 Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).
 
 > > Actually I think it may be [due to the compiler I'm using](http://lists.apple.com/archives/cocoa-dev/2009/Aug/msg01631.html).  Can you try setting the compiler to 4.0 and building again?  Go to Project > Edit Project Settings (near the bottom) > Build tab > Compiler Version (5th section)  and then choose 4.0 (that's the oldest I have).  Then try building.
+
 
 This isn't an option in my version of Xcode (on the 10.4 system).
 
@@ -1790,7 +1837,7 @@ I wonder why jhpalmieri wasn't able to compile this, though.  You'd think Mac wo
 archive/issue_comments_097471.json:
 ```json
 {
-    "body": "Replying to [comment:55 jhpalmieri]:\n> > jhpalmieri, did you want a version that would exit only on success -- you could use \"%`@` && exit\"\n> \n> For me the only issue is when using the \"Calculate\" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running \"sage -c ...\" until manually closed.\n\nCool, I won't worry about it then.\n\n> With the new version, I can't run it successfully on my Intel iMac running 10.6: I see\n> {{{\n> error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n> [BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n> }}}\n\nNow that I think of it, I think I had to choose to install the 10.4 SDK.  Clearly, not everyone who wants to build it will have it though, so I'll have to figure out a way to use 10.4 if they have it, but 10.5 (or 10.6) if they don't.  In the mean time you can open up the Project Settings and change the Base SDK (at the bottom of the General tab) to build it that way.",
+    "body": "Replying to [comment:55 jhpalmieri]:\n> > jhpalmieri, did you want a version that would exit only on success -- you could use \"%`@` && exit\"\n\n> \n> For me the only issue is when using the \"Calculate\" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running \"sage -c ...\" until manually closed.\n\n\nCool, I won't worry about it then.\n\n> With the new version, I can't run it successfully on my Intel iMac running 10.6: I see\n> \n> ```\n> error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n> [BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'\n> ```\n\n\nNow that I think of it, I think I had to choose to install the 10.4 SDK.  Clearly, not everyone who wants to build it will have it though, so I'll have to figure out a way to use 10.4 if they have it, but 10.5 (or 10.6) if they don't.  In the mean time you can open up the Project Settings and change the Base SDK (at the bottom of the General tab) to build it that way.",
     "created_at": "2010-09-10T20:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1801,16 +1848,20 @@ archive/issue_comments_097471.json:
 
 Replying to [comment:55 jhpalmieri]:
 > > jhpalmieri, did you want a version that would exit only on success -- you could use "%`@` && exit"
+
 > 
 > For me the only issue is when using the "Calculate" menu option, and I don't even know if that's still there.  When using this option, if the Terminal automatically closes windows when their process is done, you don't see any output from the command, which makes it pretty pointless.  So it would be nice to be able to keep the window open after running "sage -c ..." until manually closed.
+
 
 Cool, I won't worry about it then.
 
 > With the new version, I can't run it successfully on my Intel iMac running 10.6: I see
-> {{{
+> 
+> ```
 > error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'
 > [BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'
-> }}}
+> ```
+
 
 Now that I think of it, I think I had to choose to install the 10.4 SDK.  Clearly, not everyone who wants to build it will have it though, so I'll have to figure out a way to use 10.4 if they have it, but 10.5 (or 10.6) if they don't.  In the mean time you can open up the Project Settings and change the Base SDK (at the bottom of the General tab) to build it that way.
 
@@ -1821,7 +1872,7 @@ Now that I think of it, I think I had to choose to install the 10.4 SDK.  Clearl
 archive/issue_comments_097472.json:
 ```json
 {
-    "body": "Replying to [comment:58 kcrisman]:\n> > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n> \n> Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n\nWhat error do you get?",
+    "body": "Replying to [comment:58 kcrisman]:\n> > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\n> \n> Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n\n\nWhat error do you get?",
     "created_at": "2010-09-10T20:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1832,8 +1883,10 @@ archive/issue_comments_097472.json:
 
 Replying to [comment:58 kcrisman]:
 > > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?
+
 > 
 > Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).
+
 
 What error do you get?
 
@@ -1844,7 +1897,7 @@ What error do you get?
 archive/issue_comments_097473.json:
 ```json
 {
-    "body": "> > > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n> > \n> > Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n> \n> What error do you get?\n\nSame thing (sadly) happens on the home computer.  Looks like all `.m` files compiled (they have a check in the build column), and nearly everything with a checkbox in the target column is checked.  Several Frameworks aren't, and of course `Sage.app` and `Sage-info.plist` aren't.  Here's the full report - the build stopped while going through `Sage_Prefix.pch`, whatever that is.\n\n```\n\nBuilding target \u201cSage\u201d of project \u201cSage\u201d with configuration \u201cRelease\u201d\n\n\nChecking Dependencies\nProcessing /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Info.plist Sage-Info.plist\n    mkdir /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents\n    cd /Users/crisman/Desktop/SageSrc\n    com.apple.tools.info-plist-utility Sage-Info.plist -genpkginfo /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/PkgInfo -expandbuildsettings -o /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Info.plist\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/Credits.html English.lproj/Credits.html\n    mkdir /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/Credits.html /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/InfoPlist.strings /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/MyDocument.xib English.lproj/MyDocument.xib\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/MyDocument.xib /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/MainMenu.xib English.lproj/MainMenu.xib\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/MainMenu.xib /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/appl.icns appl.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/appl.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/Defaults.plist /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-py.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-sage.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-spkg.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-sws.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-blue.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-green.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-grey.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-red.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/start-sage.sh start-sage.sh\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/start-sage.sh /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/open-location.sh open-location.sh\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/open-location.sh /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/loading-page.html loading-page.html\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/loading-page.html /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nProcessPCH /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-eznqjueptjnfnofhfaeeuuyiiihc/Sage_Prefix.pch.gch Sage_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_0\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/usr/bin/gcc-4.0 -x objective-c-header -arch x86_64 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -fmessage-length=0 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-generated-files.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-own-target-headers.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-all-target-headers.hmap -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-project-headers.hmap -mdynamic-no-pic -F/Users/crisman/Desktop/SageSrc/build/Release -I/Users/crisman/Desktop/SageSrc/build/Release/include -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/DerivedSources -isysroot /Developer/SDKs/MacOSX10.4u.sdk -c /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch -o /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-eznqjueptjnfnofhfaeeuuyiiihc/Sage_Prefix.pch.gch\nIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:21,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,\n                 from /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch:6:\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:286: error: parse error before '*' token\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:320: error: parse error before '*' token\nIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:161,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:21,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,\n                 from /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch:6:\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1338: error: 'SIGDIGLEN' undeclared here (not in a function)\n```\n",
+    "body": "> > > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?\n\n> > \n> > Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).\n\n> \n> What error do you get?\n\n\nSame thing (sadly) happens on the home computer.  Looks like all `.m` files compiled (they have a check in the build column), and nearly everything with a checkbox in the target column is checked.  Several Frameworks aren't, and of course `Sage.app` and `Sage-info.plist` aren't.  Here's the full report - the build stopped while going through `Sage_Prefix.pch`, whatever that is.\n\n```\n\nBuilding target \u201cSage\u201d of project \u201cSage\u201d with configuration \u201cRelease\u201d\n\n\nChecking Dependencies\nProcessing /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Info.plist Sage-Info.plist\n    mkdir /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents\n    cd /Users/crisman/Desktop/SageSrc\n    com.apple.tools.info-plist-utility Sage-Info.plist -genpkginfo /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/PkgInfo -expandbuildsettings -o /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Info.plist\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/Credits.html English.lproj/Credits.html\n    mkdir /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/Credits.html /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/InfoPlist.strings /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/MyDocument.xib English.lproj/MyDocument.xib\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/MyDocument.xib /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/English.lproj/MainMenu.xib English.lproj/MainMenu.xib\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/English.lproj/MainMenu.xib /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources/English.lproj\n\nCpResource build/Release/Sage.app/Contents/Resources/appl.icns appl.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/appl.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/Defaults.plist Defaults.plist\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/Defaults.plist /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-py.icns sage-document-py.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-py.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-sage.icns sage-document-sage.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-sage.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-spkg.icns sage-document-spkg.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-spkg.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-document-sws.icns sage-document-sws.icns\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-document-sws.icns /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-blue.png sage-small-blue.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-blue.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-green.png sage-small-green.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-green.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-grey.png sage-small-grey.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-grey.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/sage-small-red.png sage-small-red.png\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/sage-small-red.png /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/start-sage.sh start-sage.sh\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/start-sage.sh /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/open-location.sh open-location.sh\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/open-location.sh /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nCpResource build/Release/Sage.app/Contents/Resources/loading-page.html loading-page.html\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/crisman/Desktop/SageSrc/loading-page.html /Users/crisman/Desktop/SageSrc/build/Release/Sage.app/Contents/Resources\n\nProcessPCH /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-eznqjueptjnfnofhfaeeuuyiiihc/Sage_Prefix.pch.gch Sage_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_0\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/usr/bin/gcc-4.0 -x objective-c-header -arch x86_64 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -fmessage-length=0 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-generated-files.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-own-target-headers.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-all-target-headers.hmap -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-project-headers.hmap -mdynamic-no-pic -F/Users/crisman/Desktop/SageSrc/build/Release -I/Users/crisman/Desktop/SageSrc/build/Release/include -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/DerivedSources -isysroot /Developer/SDKs/MacOSX10.4u.sdk -c /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch -o /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-eznqjueptjnfnofhfaeeuuyiiihc/Sage_Prefix.pch.gch\nIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:21,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,\n                 from /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch:6:\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:286: error: parse error before '*' token\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:320: error: parse error before '*' token\nIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:161,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:21,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,\n                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,\n                 from /Users/crisman/Desktop/SageSrc/Sage_Prefix.pch:6:\n/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1338: error: 'SIGDIGLEN' undeclared here (not in a function)\n```",
     "created_at": "2010-09-10T23:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1854,10 +1907,13 @@ archive/issue_comments_097473.json:
 ```
 
 > > > > Can you open the xib files?  If you double click them what happens?  The xibs have a deployment target of 10.4 and a development target of 3.0 which is the oldest I can choose.  Perhaps I have to recreate them for an older version?
+
 > > 
 > > Well, they open on the older computer fine.  The build fails, though (using the Xcode GUI).
+
 > 
 > What error do you get?
+
 
 Same thing (sadly) happens on the home computer.  Looks like all `.m` files compiled (they have a check in the build column), and nearly everything with a checkbox in the target column is checked.  Several Frameworks aren't, and of course `Sage.app` and `Sage-info.plist` aren't.  Here's the full report - the build stopped while going through `Sage_Prefix.pch`, whatever that is.
 
@@ -1966,13 +2022,12 @@ In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/
 
 
 
-
 ---
 
 archive/issue_comments_097474.json:
 ```json
 {
-    "body": "Also, I get the big red X next to \n\n```\n    #import <Cocoa/Cocoa.h>\n```\n\nin that file, which apparently is where things stopped.",
+    "body": "Also, I get the big red X next to \n\n```\n    #import <Cocoa/Cocoa.h>\n```\nin that file, which apparently is where things stopped.",
     "created_at": "2010-09-10T23:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -1986,7 +2041,6 @@ Also, I get the big red X next to
 ```
     #import <Cocoa/Cocoa.h>
 ```
-
 in that file, which apparently is where things stopped.
 
 
@@ -2034,7 +2088,7 @@ One other minor suggestion: perhaps change the "Sagemath" menu item in the Help 
 archive/issue_comments_097477.json:
 ```json
 {
-    "body": "Replying to [comment:63 iandrus]:\n> I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.\nThanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.",
+    "body": "Replying to [comment:63 iandrus]:\n> I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.\n\nThanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.",
     "created_at": "2010-09-13T18:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2045,6 +2099,7 @@ archive/issue_comments_097477.json:
 
 Replying to [comment:63 iandrus]:
 > I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.
+
 Thanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.
 
 
@@ -2054,7 +2109,7 @@ Thanks, Ivan.  So close... now it attempts to open.  Apparently the selector is 
 archive/issue_comments_097478.json:
 ```json
 {
-    "body": "As you can see, I tried several times :)  \n\n```\n2010-09-13 13:56:01.391 Sage[251] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:01.414 Sage[251] An uncaught exception was raised\n2010-09-13 13:56:01.420 Sage[251] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:01.421 Sage[251] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:56:09 Dasher-03 crashdump[252]: Sage crashed\nSep 13 13:56:11 Dasher-03 crashdump[252]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n2010-09-13 13:56:46.859 Sage[255] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:46.859 Sage[255] An uncaught exception was raised\n2010-09-13 13:56:46.860 Sage[255] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:46.860 Sage[255] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:56:59 Dasher-03 crashdump[256]: Sage crashed\nSep 13 13:57:02 Dasher-03 crashdump[256]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n2010-09-13 13:58:00.238 Sage[258] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:58:00.238 Sage[258] An uncaught exception was raised\n2010-09-13 13:58:00.239 Sage[258] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:58:00.239 Sage[258] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:58:11 Dasher-03 crashdump[259]: Sage crashed\nSep 13 13:58:18 Dasher-03 crashdump[259]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n```\n",
+    "body": "As you can see, I tried several times :)  \n\n```\n2010-09-13 13:56:01.391 Sage[251] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:01.414 Sage[251] An uncaught exception was raised\n2010-09-13 13:56:01.420 Sage[251] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:01.421 Sage[251] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:56:09 Dasher-03 crashdump[252]: Sage crashed\nSep 13 13:56:11 Dasher-03 crashdump[252]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n2010-09-13 13:56:46.859 Sage[255] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:46.859 Sage[255] An uncaught exception was raised\n2010-09-13 13:56:46.860 Sage[255] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:56:46.860 Sage[255] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:56:59 Dasher-03 crashdump[256]: Sage crashed\nSep 13 13:57:02 Dasher-03 crashdump[256]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n2010-09-13 13:58:00.238 Sage[258] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:58:00.238 Sage[258] An uncaught exception was raised\n2010-09-13 13:58:00.239 Sage[258] *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\n2010-09-13 13:58:00.239 Sage[258] *** Uncaught exception: <NSInvalidArgumentException> *** -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]: selector not recognized [self = 0x230af40]\nSep 13 13:58:11 Dasher-03 crashdump[259]: Sage crashed\nSep 13 13:58:18 Dasher-03 crashdump[259]: crash report written to: /Users/student/Library/Logs/CrashReporter/Sage.crash.log\n```",
     "created_at": "2010-09-13T18:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2088,13 +2143,12 @@ Sep 13 13:58:18 Dasher-03 crashdump[259]: crash report written to: /Users/studen
 
 
 
-
 ---
 
 archive/issue_comments_097479.json:
 ```json
 {
-    "body": "Another issue - if you start it without a binary inside, and then click to choose a starting binary, it turns out that if you choose the folder and not the \"executable\" (which I think means the script `$SAGE_ROOT/sage`), you never get a warning message, except in the Console.  Here is some pertinent information:\n\n```\n\n9/13/10 4:28:17 PM\tSage[9812]\tsageBinary:(null)\n9/13/10 4:28:30 PM\tSage[9812]\tNot showing in Dock\n9/13/10 4:30:02 PM\tSage[9812]\tstarting sage\n9/13/10 4:30:02 PM\tSage[9812]\tRunning command: /Users/.../sage\n```\n\nAnd when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably \"correct\" behavior):\n\n```\nLast login: Mon Sep 13 16:30:05 on ttys000\n/Users/.../sage; exit\n$ /Users/.../sage; exit\n-bash: /Users/.../sage: is a directory\nlogout\n\n[Process completed]\n```\n\nBut there is no check that first time that the executable actually is one if you don't have the Sage server starting automatically.  I realize this would be unusual - someone that started with some prefs - but anyway it seems like it should be checked for.",
+    "body": "Another issue - if you start it without a binary inside, and then click to choose a starting binary, it turns out that if you choose the folder and not the \"executable\" (which I think means the script `$SAGE_ROOT/sage`), you never get a warning message, except in the Console.  Here is some pertinent information:\n\n```\n\n9/13/10 4:28:17 PM\tSage[9812]\tsageBinary:(null)\n9/13/10 4:28:30 PM\tSage[9812]\tNot showing in Dock\n9/13/10 4:30:02 PM\tSage[9812]\tstarting sage\n9/13/10 4:30:02 PM\tSage[9812]\tRunning command: /Users/.../sage\n```\nAnd when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably \"correct\" behavior):\n\n```\nLast login: Mon Sep 13 16:30:05 on ttys000\n/Users/.../sage; exit\n$ /Users/.../sage; exit\n-bash: /Users/.../sage: is a directory\nlogout\n\n[Process completed]\n```\nBut there is no check that first time that the executable actually is one if you don't have the Sage server starting automatically.  I realize this would be unusual - someone that started with some prefs - but anyway it seems like it should be checked for.",
     "created_at": "2010-09-13T21:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2112,7 +2166,6 @@ Another issue - if you start it without a binary inside, and then click to choos
 9/13/10 4:30:02 PM	Sage[9812]	starting sage
 9/13/10 4:30:02 PM	Sage[9812]	Running command: /Users/.../sage
 ```
-
 And when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably "correct" behavior):
 
 ```
@@ -2124,7 +2177,6 @@ logout
 
 [Process completed]
 ```
-
 But there is no check that first time that the executable actually is one if you don't have the Sage server starting automatically.  I realize this would be unusual - someone that started with some prefs - but anyway it seems like it should be checked for.
 
 
@@ -2134,7 +2186,7 @@ But there is no check that first time that the executable actually is one if you
 archive/issue_comments_097480.json:
 ```json
 {
-    "body": "Replying to [comment:64 jhpalmieri]:\n> On 10.6, this builds successfully for me.  (There are a few warnings, but no errors.) It looks good to me; I like the new menus.  My comment about Terminal windows closing when the shell exits now applies to the option \"Reveal in shell\": if I'm lucky, I see a Terminal window flash open and then close, but sometimes I don't see anything at all.  I'm not sure this option is worth keeping; other opinions?\n\nI changed it to run `cd ... && $SHELL` which makes more sense anyway.  So that particular problem should be fixed.  I guess you can tell that I tested with a version that doesn't exit :-)\n\n> One other minor suggestion: perhaps change the \"Sagemath\" menu item in the Help menu to \"www.sagemath.org\" or \"Visit www.sagemath.org\"?\n\nGood idea.\n\nReplying to [comment:65 kcrisman]:\n> Replying to [comment:63 iandrus]:\n> > I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.\n> Thanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.\n\nI see that that is indeed 10.5+ only.  Unfortunately, I can't find how to get Xcode to warn me of such things.  I swear I had it doing that before...  Anyway, if you could try compiling again and send me any warnings that are produced when building.  I made sure to fix all the warnings on my machine.  In particular what we are looking for is \"may not respond to\" warnings.\n\nThanks both of you for your patience.",
+    "body": "Replying to [comment:64 jhpalmieri]:\n> On 10.6, this builds successfully for me.  (There are a few warnings, but no errors.) It looks good to me; I like the new menus.  My comment about Terminal windows closing when the shell exits now applies to the option \"Reveal in shell\": if I'm lucky, I see a Terminal window flash open and then close, but sometimes I don't see anything at all.  I'm not sure this option is worth keeping; other opinions?\n\n\nI changed it to run `cd ... && $SHELL` which makes more sense anyway.  So that particular problem should be fixed.  I guess you can tell that I tested with a version that doesn't exit :-)\n\n> One other minor suggestion: perhaps change the \"Sagemath\" menu item in the Help menu to \"www.sagemath.org\" or \"Visit www.sagemath.org\"?\n\n\nGood idea.\n\nReplying to [comment:65 kcrisman]:\n> Replying to [comment:63 iandrus]:\n> > I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.\n\n> Thanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.\n\nI see that that is indeed 10.5+ only.  Unfortunately, I can't find how to get Xcode to warn me of such things.  I swear I had it doing that before...  Anyway, if you could try compiling again and send me any warnings that are produced when building.  I made sure to fix all the warnings on my machine.  In particular what we are looking for is \"may not respond to\" warnings.\n\nThanks both of you for your patience.",
     "created_at": "2010-09-13T21:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2146,15 +2198,18 @@ archive/issue_comments_097480.json:
 Replying to [comment:64 jhpalmieri]:
 > On 10.6, this builds successfully for me.  (There are a few warnings, but no errors.) It looks good to me; I like the new menus.  My comment about Terminal windows closing when the shell exits now applies to the option "Reveal in shell": if I'm lucky, I see a Terminal window flash open and then close, but sometimes I don't see anything at all.  I'm not sure this option is worth keeping; other opinions?
 
+
 I changed it to run `cd ... && $SHELL` which makes more sense anyway.  So that particular problem should be fixed.  I guess you can tell that I tested with a version that doesn't exit :-)
 
 > One other minor suggestion: perhaps change the "Sagemath" menu item in the Help menu to "www.sagemath.org" or "Visit www.sagemath.org"?
+
 
 Good idea.
 
 Replying to [comment:65 kcrisman]:
 > Replying to [comment:63 iandrus]:
 > > I finally got the MACOSX_DEPLOYMENT_TARGET set in the Xcode interface by changing it 10.1, and then back.  For some reason changing between 10.5 and 10.4 didn't actually cause it to be set in the project file correctly, even though it showed up in the interface.  It finally builds an app with Minimum System Version set to 10.4 instead of 10.5.  I also deleted the SDK so it should default to what the machine has for default.  Hopefully this will allow it to be built on both 10.4 and on 10.6 without the 10.4 SDK.
+
 > Thanks, Ivan.  So close... now it attempts to open.  Apparently the selector is causing trouble, though, and it doesn't actually open.  Bug report coming up.
 
 I see that that is indeed 10.5+ only.  Unfortunately, I can't find how to get Xcode to warn me of such things.  I swear I had it doing that before...  Anyway, if you could try compiling again and send me any warnings that are produced when building.  I made sure to fix all the warnings on my machine.  In particular what we are looking for is "may not respond to" warnings.
@@ -2168,7 +2223,7 @@ Thanks both of you for your patience.
 archive/issue_comments_097481.json:
 ```json
 {
-    "body": "> Thanks both of you for your patience.\n\nNo, thank you for your work here.\n\nThis might be more appropriate for a further ticket, but to what extent does the app depend on a Sage installation?  It seems like it shouldn't have to depend on it at all, because of the option to select another executable.  So it might be nice to a smaller app (the current one takes over 1 1/2 gigabytes on my machine) which is just the front end: it relies on having a separate Sage installation.  On my machine, I always create a link /Applications/sage/ pointing to SAGE_ROOT for my most recent Sage installation, so if I had a small app, I would just point it at /Applications/sage/sage, and I would never have to rebuild the app.\n\nOr maybe there is an easy way to modify the current app to make it smaller so it does what I want: can I just delete the directory Contents/Resources/sage, as long as I use an external executable?  If something like this works, we might want to document it and separately distribute a smaller app, built this way, as a front end.",
+    "body": "> Thanks both of you for your patience.\n\n\nNo, thank you for your work here.\n\nThis might be more appropriate for a further ticket, but to what extent does the app depend on a Sage installation?  It seems like it shouldn't have to depend on it at all, because of the option to select another executable.  So it might be nice to a smaller app (the current one takes over 1 1/2 gigabytes on my machine) which is just the front end: it relies on having a separate Sage installation.  On my machine, I always create a link /Applications/sage/ pointing to SAGE_ROOT for my most recent Sage installation, so if I had a small app, I would just point it at /Applications/sage/sage, and I would never have to rebuild the app.\n\nOr maybe there is an easy way to modify the current app to make it smaller so it does what I want: can I just delete the directory Contents/Resources/sage, as long as I use an external executable?  If something like this works, we might want to document it and separately distribute a smaller app, built this way, as a front end.",
     "created_at": "2010-09-13T21:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2178,6 +2233,7 @@ archive/issue_comments_097481.json:
 ```
 
 > Thanks both of you for your patience.
+
 
 No, thank you for your work here.
 
@@ -2192,7 +2248,7 @@ Or maybe there is an easy way to modify the current app to make it smaller so it
 archive/issue_comments_097482.json:
 ```json
 {
-    "body": "Replying to [comment:67 kcrisman]:\n> Another issue - if you start it without a binary inside, and then click to choose a starting binary, it turns out that if you choose the folder and not the \"executable\" (which I think means the script `$SAGE_ROOT/sage`), you never get a warning message, except in the Console.  Here is some pertinent information:\n\nI have changed it so that you can choose SAGE_ROOT (since I think that makes sense), but also that it will keep prompting you for a sage executable (which is $SAGE_ROOT/sage) until you choose one \n\n> And when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably \"correct\" behavior):\n\nIt's certainly standard.  It's just that you don't usually reinstall the same application so many times :-)\n\nReplying to [comment:69 jhpalmieri]:\n> This might be more appropriate for a further ticket, but to what extent does the app depend on a Sage installation?  It seems like it shouldn't have to depend on it at all, because of the option to select another executable.  So it might be nice to a smaller app (the current one takes over 1 1/2 gigabytes on my machine) which is just the front end: it relies on having a separate Sage installation.  On my machine, I always create a link /Applications/sage/ pointing to SAGE_ROOT for my most recent Sage installation, so if I had a small app, I would just point it at /Applications/sage/sage, and I would never have to rebuild the app.\n\nYou are right.  It doesn't really depend on Sage at all (except of course to be useful).\n\n> Or maybe there is an easy way to modify the current app to make it smaller so it does what I want: can I just delete the directory Contents/Resources/sage, as long as I use an external executable?  If something like this works, we might want to document it and separately distribute a smaller app, built this way, as a front end.\n\nYou can just delete that directory, or instead just build from the xcode project instead of through `sage --bdist`.  Yes we probably ought to document this.  Perhaps we could have a `sage --app-bundle` command or something that would build it?  Or yet another option to `sage --bdist`.",
+    "body": "Replying to [comment:67 kcrisman]:\n> Another issue - if you start it without a binary inside, and then click to choose a starting binary, it turns out that if you choose the folder and not the \"executable\" (which I think means the script `$SAGE_ROOT/sage`), you never get a warning message, except in the Console.  Here is some pertinent information:\n\n\nI have changed it so that you can choose SAGE_ROOT (since I think that makes sense), but also that it will keep prompting you for a sage executable (which is $SAGE_ROOT/sage) until you choose one \n\n> And when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably \"correct\" behavior):\n\n\nIt's certainly standard.  It's just that you don't usually reinstall the same application so many times :-)\n\nReplying to [comment:69 jhpalmieri]:\n> This might be more appropriate for a further ticket, but to what extent does the app depend on a Sage installation?  It seems like it shouldn't have to depend on it at all, because of the option to select another executable.  So it might be nice to a smaller app (the current one takes over 1 1/2 gigabytes on my machine) which is just the front end: it relies on having a separate Sage installation.  On my machine, I always create a link /Applications/sage/ pointing to SAGE_ROOT for my most recent Sage installation, so if I had a small app, I would just point it at /Applications/sage/sage, and I would never have to rebuild the app.\n\n\nYou are right.  It doesn't really depend on Sage at all (except of course to be useful).\n\n> Or maybe there is an easy way to modify the current app to make it smaller so it does what I want: can I just delete the directory Contents/Resources/sage, as long as I use an external executable?  If something like this works, we might want to document it and separately distribute a smaller app, built this way, as a front end.\n\n\nYou can just delete that directory, or instead just build from the xcode project instead of through `sage --bdist`.  Yes we probably ought to document this.  Perhaps we could have a `sage --app-bundle` command or something that would build it?  Or yet another option to `sage --bdist`.",
     "created_at": "2010-09-13T21:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2204,18 +2260,22 @@ archive/issue_comments_097482.json:
 Replying to [comment:67 kcrisman]:
 > Another issue - if you start it without a binary inside, and then click to choose a starting binary, it turns out that if you choose the folder and not the "executable" (which I think means the script `$SAGE_ROOT/sage`), you never get a warning message, except in the Console.  Here is some pertinent information:
 
+
 I have changed it so that you can choose SAGE_ROOT (since I think that makes sense), but also that it will keep prompting you for a sage executable (which is $SAGE_ROOT/sage) until you choose one 
 
 > And when I try to get a terminal (in this case, the preference was already for only menu bar item - really confusing to me that it remembers prefs, but I think that's probably "correct" behavior):
+
 
 It's certainly standard.  It's just that you don't usually reinstall the same application so many times :-)
 
 Replying to [comment:69 jhpalmieri]:
 > This might be more appropriate for a further ticket, but to what extent does the app depend on a Sage installation?  It seems like it shouldn't have to depend on it at all, because of the option to select another executable.  So it might be nice to a smaller app (the current one takes over 1 1/2 gigabytes on my machine) which is just the front end: it relies on having a separate Sage installation.  On my machine, I always create a link /Applications/sage/ pointing to SAGE_ROOT for my most recent Sage installation, so if I had a small app, I would just point it at /Applications/sage/sage, and I would never have to rebuild the app.
 
+
 You are right.  It doesn't really depend on Sage at all (except of course to be useful).
 
 > Or maybe there is an easy way to modify the current app to make it smaller so it does what I want: can I just delete the directory Contents/Resources/sage, as long as I use an external executable?  If something like this works, we might want to document it and separately distribute a smaller app, built this way, as a front end.
+
 
 You can just delete that directory, or instead just build from the xcode project instead of through `sage --bdist`.  Yes we probably ought to document this.  Perhaps we could have a `sage --app-bundle` command or something that would build it?  Or yet another option to `sage --bdist`.
 
@@ -2226,7 +2286,7 @@ You can just delete that directory, or instead just build from the xcode project
 archive/issue_comments_097483.json:
 ```json
 {
-    "body": "It seems to work!  But doesn't (?) ... although this may have to do with the fact that I'm installing a large spkg at the same time.  I'll try again in a second.  More relevantly...\n\n```\nIf you think you have waited long enough, then try View Log under the Development menu which may give you some clues as to why it has not started.\n```\n\nThere is no such option in the Development menu of the menu bar thing.\n\nI also just want to echo jhpalmieri's comment.  It's not our patience, but yours - it will be so awesome to have something that has actually been tested by more than two people, look at all the (inevitable) bugs/user improvements already found.",
+    "body": "It seems to work!  But doesn't (?) ... although this may have to do with the fact that I'm installing a large spkg at the same time.  I'll try again in a second.  More relevantly...\n\n```\nIf you think you have waited long enough, then try View Log under the Development menu which may give you some clues as to why it has not started.\n```\nThere is no such option in the Development menu of the menu bar thing.\n\nI also just want to echo jhpalmieri's comment.  It's not our patience, but yours - it will be so awesome to have something that has actually been tested by more than two people, look at all the (inevitable) bugs/user improvements already found.",
     "created_at": "2010-09-14T01:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2240,7 +2300,6 @@ It seems to work!  But doesn't (?) ... although this may have to do with the fac
 ```
 If you think you have waited long enough, then try View Log under the Development menu which may give you some clues as to why it has not started.
 ```
-
 There is no such option in the Development menu of the menu bar thing.
 
 I also just want to echo jhpalmieri's comment.  It's not our patience, but yours - it will be so awesome to have something that has actually been tested by more than two people, look at all the (inevitable) bugs/user improvements already found.
@@ -2252,7 +2311,7 @@ I also just want to echo jhpalmieri's comment.  It's not our patience, but yours
 archive/issue_comments_097484.json:
 ```json
 {
-    "body": "> There is no such option in the Development menu of the menu bar thing.\nWhat I meant is of course that it is in the main menu.\n\nSadly, there seems to be yet ANOTHER problem.  I will try building it in a second.\n\n```\n2010-09-13 22:12:40.728 Sage[6297] sageBinary:/Users/crisman/Desktop/sage-4.5.3/sage\n2010-09-13 22:12:40.776 Sage[6297] Starting server\n2010-09-13 22:12:40.786 Sage[6297] Sage Browsing: /Users/crisman/Desktop/Sage-ppc.app/Contents/Resources/loading-page.html\nusage: /Users/crisman/Desktop/Sage-ppc.app/Contents/Resources/start-sage.sh SAGE_EXECUTABLE LOG\n2010-09-13 22:13:53.681 Sage[6297] starting sage\n2010-09-13 22:13:53.692 Sage[6297] Running command: /Users/crisman/Desktop/sage-4.5.3/sage\n2010-09-13 22:13:53.693 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]\n2010-09-13 22:13:53.698 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]\n```\n\nAnyway, so nothing works.  Weirdly, the server shows up ending in the Console, but it never starts - localhost cannot be found, in fact.\n\n> I see that that is indeed 10.5+ only. Unfortunately, I can't find how to get Xcode to warn me of such things. I swear I had it doing that before... Anyway, if you could try compiling again and send me any warnings that are produced when building. I made sure to fix all the warnings on my machine. In particular what we are looking for is \"may not respond to\" warnings.\nI don't get any warnings, just failures.  Currently it makes it through the files, then (good!) finishes one of the two predefined headers or whatever (maybe both?), but fails at\n\n```\nBuilding target \u201cSage\u201d of project \u201cSage\u201d with configuration \u201cRelease\u201d\n\n\nChecking Dependencies\nCompileC build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o /Users/crisman/Desktop/SageSrc/MyDocument.m normal ppc objective-c com.apple.compilers.gcc.4_0\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/usr/bin/gcc-4.0 -x objective-c -arch ppc -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -fmessage-length=0 -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-generated-files.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-own-target-headers.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-all-target-headers.hmap -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-project-headers.hmap -mdynamic-no-pic -F/Users/crisman/Desktop/SageSrc/build/Release -I/Users/crisman/Desktop/SageSrc/build/Release/include -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/DerivedSources -include /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-fkbwhauskrjhrpepyujyksrnuqml/Sage_Prefix.pch -c /Users/crisman/Desktop/SageSrc/MyDocument.m -o /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o\n/Users/crisman/Desktop/SageSrc/MyDocument.m:162: error: parse error before 'NSInteger'\n```\n\nwhich is \n\n```\n- (void)openPanelDidEnd:(NSSavePanel *)openPanel returnCode:(NSInteger)code contextInfo:(id <WebOpenPanelResultListener>)listener {\n```\n \nI agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!",
+    "body": "> There is no such option in the Development menu of the menu bar thing.\n\nWhat I meant is of course that it is in the main menu.\n\nSadly, there seems to be yet ANOTHER problem.  I will try building it in a second.\n\n```\n2010-09-13 22:12:40.728 Sage[6297] sageBinary:/Users/crisman/Desktop/sage-4.5.3/sage\n2010-09-13 22:12:40.776 Sage[6297] Starting server\n2010-09-13 22:12:40.786 Sage[6297] Sage Browsing: /Users/crisman/Desktop/Sage-ppc.app/Contents/Resources/loading-page.html\nusage: /Users/crisman/Desktop/Sage-ppc.app/Contents/Resources/start-sage.sh SAGE_EXECUTABLE LOG\n2010-09-13 22:13:53.681 Sage[6297] starting sage\n2010-09-13 22:13:53.692 Sage[6297] Running command: /Users/crisman/Desktop/sage-4.5.3/sage\n2010-09-13 22:13:53.693 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]\n2010-09-13 22:13:53.698 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]\n```\nAnyway, so nothing works.  Weirdly, the server shows up ending in the Console, but it never starts - localhost cannot be found, in fact.\n\n> I see that that is indeed 10.5+ only. Unfortunately, I can't find how to get Xcode to warn me of such things. I swear I had it doing that before... Anyway, if you could try compiling again and send me any warnings that are produced when building. I made sure to fix all the warnings on my machine. In particular what we are looking for is \"may not respond to\" warnings.\n\nI don't get any warnings, just failures.  Currently it makes it through the files, then (good!) finishes one of the two predefined headers or whatever (maybe both?), but fails at\n\n```\nBuilding target \u201cSage\u201d of project \u201cSage\u201d with configuration \u201cRelease\u201d\n\n\nChecking Dependencies\nCompileC build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o /Users/crisman/Desktop/SageSrc/MyDocument.m normal ppc objective-c com.apple.compilers.gcc.4_0\n    cd /Users/crisman/Desktop/SageSrc\n    /Developer/usr/bin/gcc-4.0 -x objective-c -arch ppc -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -fmessage-length=0 -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-generated-files.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-own-target-headers.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-all-target-headers.hmap -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-project-headers.hmap -mdynamic-no-pic -F/Users/crisman/Desktop/SageSrc/build/Release -I/Users/crisman/Desktop/SageSrc/build/Release/include -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/DerivedSources -include /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-fkbwhauskrjhrpepyujyksrnuqml/Sage_Prefix.pch -c /Users/crisman/Desktop/SageSrc/MyDocument.m -o /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o\n/Users/crisman/Desktop/SageSrc/MyDocument.m:162: error: parse error before 'NSInteger'\n```\nwhich is \n\n```\n- (void)openPanelDidEnd:(NSSavePanel *)openPanel returnCode:(NSInteger)code contextInfo:(id <WebOpenPanelResultListener>)listener {\n``` \nI agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!",
     "created_at": "2010-09-14T02:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2262,6 +2321,7 @@ archive/issue_comments_097484.json:
 ```
 
 > There is no such option in the Development menu of the menu bar thing.
+
 What I meant is of course that it is in the main menu.
 
 Sadly, there seems to be yet ANOTHER problem.  I will try building it in a second.
@@ -2276,10 +2336,10 @@ usage: /Users/crisman/Desktop/Sage-ppc.app/Contents/Resources/start-sage.sh SAGE
 2010-09-13 22:13:53.693 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]
 2010-09-13 22:13:53.698 Sage[6297] *** -[NSCFString stringByReplacingOccurrencesOfString:withString:]: selector not recognized [self = 0x230cd70]
 ```
-
 Anyway, so nothing works.  Weirdly, the server shows up ending in the Console, but it never starts - localhost cannot be found, in fact.
 
 > I see that that is indeed 10.5+ only. Unfortunately, I can't find how to get Xcode to warn me of such things. I swear I had it doing that before... Anyway, if you could try compiling again and send me any warnings that are produced when building. I made sure to fix all the warnings on my machine. In particular what we are looking for is "may not respond to" warnings.
+
 I don't get any warnings, just failures.  Currently it makes it through the files, then (good!) finishes one of the two predefined headers or whatever (maybe both?), but fails at
 
 ```
@@ -2292,13 +2352,11 @@ CompileC build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o /Us
     /Developer/usr/bin/gcc-4.0 -x objective-c -arch ppc -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -fmessage-length=0 -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-generated-files.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-own-target-headers.hmap -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-all-target-headers.hmap -iquote /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Sage-project-headers.hmap -mdynamic-no-pic -F/Users/crisman/Desktop/SageSrc/build/Release -I/Users/crisman/Desktop/SageSrc/build/Release/include -I/Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/DerivedSources -include /Library/Caches/com.apple.Xcode.501/SharedPrecompiledHeaders/Sage_Prefix-fkbwhauskrjhrpepyujyksrnuqml/Sage_Prefix.pch -c /Users/crisman/Desktop/SageSrc/MyDocument.m -o /Users/crisman/Desktop/SageSrc/build/Sage.build/Release/Sage.build/Objects-normal/ppc/MyDocument.o
 /Users/crisman/Desktop/SageSrc/MyDocument.m:162: error: parse error before 'NSInteger'
 ```
-
 which is 
 
 ```
 - (void)openPanelDidEnd:(NSSavePanel *)openPanel returnCode:(NSInteger)code contextInfo:(id <WebOpenPanelResultListener>)listener {
-```
- 
+``` 
 I agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!
 
 
@@ -2308,7 +2366,7 @@ I agree that it must be annoying that so many things were added.  I truly hope t
 archive/issue_comments_097485.json:
 ```json
 {
-    "body": "> I agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!\nI mean in Xcode for 10.5, of course, not in the Mac app!  There the extras are great :)",
+    "body": "> I agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!\n\nI mean in Xcode for 10.5, of course, not in the Mac app!  There the extras are great :)",
     "created_at": "2010-09-14T02:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2318,6 +2376,7 @@ archive/issue_comments_097485.json:
 ```
 
 > I agree that it must be annoying that so many things were added.  I truly hope the effort will be worth it!
+
 I mean in Xcode for 10.5, of course, not in the Mac app!  There the extras are great :)
 
 
@@ -2365,7 +2424,7 @@ I fixed some things relating to building on 10.4.  This includes modifying sage 
 archive/issue_comments_097488.json:
 ```json
 {
-    "body": "Replying to [comment:74 iandrus]:\n> I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.\nI'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a \"Gnuism\" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...",
+    "body": "Replying to [comment:74 iandrus]:\n> I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.\n\nI'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a \"Gnuism\" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...",
     "created_at": "2010-09-16T14:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2376,6 +2435,7 @@ archive/issue_comments_097488.json:
 
 Replying to [comment:74 iandrus]:
 > I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.
+
 I'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a "Gnuism" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...
 
 
@@ -2385,7 +2445,7 @@ I'm going to try using this later, but right now I want to ask whether `-a -e` i
 archive/issue_comments_097489.json:
 ```json
 {
-    "body": "Replying to [comment:74 iandrus]:\n> I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.\n\nOkay, bdist works correctly on 10.4, both with and without `SAGE_APP_BUNDLE` set (that is, it works as it is supposed to). \n\nJason or John, can you comment on whether you want anything else done to give this positive review?  Since this won't be the default bdist to start out, I think that it's okay to give this positive review so that people who aren't looking at this ticket can begin testing it for a while before it becomes default.  \n\nAlso, one very minor thing - should there be an \"about\" section in the menu extra?",
+    "body": "Replying to [comment:74 iandrus]:\n> I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.\n\n\nOkay, bdist works correctly on 10.4, both with and without `SAGE_APP_BUNDLE` set (that is, it works as it is supposed to). \n\nJason or John, can you comment on whether you want anything else done to give this positive review?  Since this won't be the default bdist to start out, I think that it's okay to give this positive review so that people who aren't looking at this ticket can begin testing it for a while before it becomes default.  \n\nAlso, one very minor thing - should there be an \"about\" section in the menu extra?",
     "created_at": "2010-09-17T14:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2396,6 +2456,7 @@ archive/issue_comments_097489.json:
 
 Replying to [comment:74 iandrus]:
 > I fixed some things relating to building on 10.4.  This includes modifying sage -bdist, so if people could re-test that portion it would be great, particularly on 10.4 and 10.5.
+
 
 Okay, bdist works correctly on 10.4, both with and without `SAGE_APP_BUNDLE` set (that is, it works as it is supposed to). 
 
@@ -2410,7 +2471,7 @@ Also, one very minor thing - should there be an "about" section in the menu extr
 archive/issue_comments_097490.json:
 ```json
 {
-    "body": "I added a safeguard so that the MenuExtra always shows up on 10.4 since I can't figure out how to make it optionally be a regular application (in a clean way).  It's definitely not perfect, but at least you should never be left without a UI now (as could happen before).\n\nI also added support for determining when the server is running in the case of using the system browser and added an option to not respect `SAGE_BROWSER` since that can be quite slow as it requires running `sage -c`.\n\nReplying to [comment:76 kcrisman]:\n\n> Also, one very minor thing - should there be an \"about\" section in the menu extra?\n\nI don't think so because I don't think it would ever get used.\n\nReplying to [comment:75 kcrisman]:\n> I'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a \"Gnuism\" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...\n\nFrom discussion on sage-devel, I think we're okay here since we're already using bash instead of sh.",
+    "body": "I added a safeguard so that the MenuExtra always shows up on 10.4 since I can't figure out how to make it optionally be a regular application (in a clean way).  It's definitely not perfect, but at least you should never be left without a UI now (as could happen before).\n\nI also added support for determining when the server is running in the case of using the system browser and added an option to not respect `SAGE_BROWSER` since that can be quite slow as it requires running `sage -c`.\n\nReplying to [comment:76 kcrisman]:\n\n> Also, one very minor thing - should there be an \"about\" section in the menu extra?\n\n\nI don't think so because I don't think it would ever get used.\n\nReplying to [comment:75 kcrisman]:\n> I'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a \"Gnuism\" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...\n\n\nFrom discussion on sage-devel, I think we're okay here since we're already using bash instead of sh.",
     "created_at": "2010-09-20T19:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2427,10 +2488,12 @@ Replying to [comment:76 kcrisman]:
 
 > Also, one very minor thing - should there be an "about" section in the menu extra?
 
+
 I don't think so because I don't think it would ever get used.
 
 Replying to [comment:75 kcrisman]:
 > I'm going to try using this later, but right now I want to ask whether `-a -e` is portable enough to satisfy drkirkby.  I know that one way of doing those is a "Gnuism" and the other one isn't.  It probably doesn't matter here, since we only do it on OS X, but still...
+
 
 From discussion on sage-devel, I think we're okay here since we're already using bash instead of sh.
 
@@ -2441,7 +2504,7 @@ From discussion on sage-devel, I think we're okay here since we're already using
 archive/issue_comments_097491.json:
 ```json
 {
-    "body": "Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\n```\nCpResource build/Debug/Sage.app/Contents/Resources/sage-is-running-on-port.sh sage-is-running-on-port.sh\n    cd /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/sage-is-running-on-port.sh /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\npbxcp: sage-is-running-on-port.sh: No such file or directory\n\nCpResource build/Debug/Sage.app/Contents/Resources/English.lproj/MyDocument.nib English.lproj/MyDocument.nib\n    cd /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.nib /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n** BUILD FAILED **\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```\n",
+    "body": "Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\n```\nCpResource build/Debug/Sage.app/Contents/Resources/sage-is-running-on-port.sh sage-is-running-on-port.sh\n    cd /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/sage-is-running-on-port.sh /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources\npbxcp: sage-is-running-on-port.sh: No such file or directory\n\nCpResource build/Debug/Sage.app/Contents/Resources/English.lproj/MyDocument.nib English.lproj/MyDocument.nib\n    cd /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app\n    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/English.lproj/MyDocument.nib /Users/crisman/Desktop/sage-4.6.alpha1/data/extcode/sage/ext/mac-app/build/Debug/Sage.app/Contents/Resources/English.lproj\n** BUILD FAILED **\nFailed to build Sage.app.\nIf you don't wish to build Sage.app set SAGE_APP_BUNDLE=no\n```",
     "created_at": "2010-09-21T02:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2468,7 +2531,6 @@ If you don't wish to build Sage.app set SAGE_APP_BUNDLE=no
 
 
 
-
 ---
 
 archive/issue_comments_097492.json:
@@ -2492,7 +2554,7 @@ Patch for the extcode repository
 archive/issue_comments_097493.json:
 ```json
 {
-    "body": "Attachment [trac_9873_extcode_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_extcode_sage_deluxe.patch) by @gvol created at 2010-09-21 06:23:44\n\nReplying to [comment:78 kcrisman]:\n> Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\nYep, I forgot to add the script to the repository.  Fixed now.  Sorry.",
+    "body": "Attachment [trac_9873_extcode_sage_deluxe.patch](tarball://root/attachments/some-uuid/ticket9873/trac_9873_extcode_sage_deluxe.patch) by @gvol created at 2010-09-21 06:23:44\n\nReplying to [comment:78 kcrisman]:\n> Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.\n\n\nYep, I forgot to add the script to the repository.  Fixed now.  Sorry.",
     "created_at": "2010-09-21T06:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2505,6 +2567,7 @@ Attachment [trac_9873_extcode_sage_deluxe.patch](tarball://root/attachments/some
 
 Replying to [comment:78 kcrisman]:
 > Did you add something in one place but not another, related to checking whether Sage is running?  It didn't build the bundle on one of my 10.4 boxes this time.  This is based off of 4.6.alpha1.
+
 
 Yep, I forgot to add the script to the repository.  Fixed now.  Sorry.
 
@@ -2559,7 +2622,7 @@ But these are all relatively small issues, of course.
 archive/issue_comments_097496.json:
 ```json
 {
-    "body": "> This will supersede #5296 if it gets in first.\nJust bumping this in anticipation of things working out.  So perhaps for this ticket we add a non-default script, then if it's default #5296 can be closed.",
+    "body": "> This will supersede #5296 if it gets in first.\n\nJust bumping this in anticipation of things working out.  So perhaps for this ticket we add a non-default script, then if it's default #5296 can be closed.",
     "created_at": "2010-09-21T16:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2569,6 +2632,7 @@ archive/issue_comments_097496.json:
 ```
 
 > This will supersede #5296 if it gets in first.
+
 Just bumping this in anticipation of things working out.  So perhaps for this ticket we add a non-default script, then if it's default #5296 can be closed.
 
 
@@ -2601,7 +2665,7 @@ Otherwise this is at the point where it's time to let people try it, not just si
 archive/issue_comments_097498.json:
 ```json
 {
-    "body": "Replying to [comment:81 kcrisman]:\n> Good, this seems to have fixed it on 10.4.  I'll check it out on higher one later.\n\nExcellent.\n\n> I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.\n\nIt would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.\n\n> Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?\n\nIf the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.\n\nReplying to [comment:83 kcrisman]:\n> Ok, I've tested many version of this on OS X 10.4 PPC and 10.6 Intel, and I think that the following needs to be done for positive review:\n\n>  * Do something about the README issue.  This is necessary.\n\nCan we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n\n>  * Find someone with an OS X 10.5 machine to test whether the bdisting works there too.  I think Marshall has one...",
+    "body": "Replying to [comment:81 kcrisman]:\n> Good, this seems to have fixed it on 10.4.  I'll check it out on higher one later.\n\n\nExcellent.\n\n> I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.\n\n\nIt would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.\n\n> Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?\n\n\nIf the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.\n\nReplying to [comment:83 kcrisman]:\n> Ok, I've tested many version of this on OS X 10.4 PPC and 10.6 Intel, and I think that the following needs to be done for positive review:\n\n\n>  * Do something about the README issue.  This is necessary.\n\n\nCan we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n\n>  * Find someone with an OS X 10.5 machine to test whether the bdisting works there too.  I think Marshall has one...",
     "created_at": "2010-09-21T20:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2613,20 +2677,25 @@ archive/issue_comments_097498.json:
 Replying to [comment:81 kcrisman]:
 > Good, this seems to have fixed it on 10.4.  I'll check it out on higher one later.
 
+
 Excellent.
 
 > I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.
 
+
 It would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.
 
 > Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?
+
 
 If the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.
 
 Replying to [comment:83 kcrisman]:
 > Ok, I've tested many version of this on OS X 10.4 PPC and 10.6 Intel, and I think that the following needs to be done for positive review:
 
+
 >  * Do something about the README issue.  This is necessary.
+
 
 Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?
 
@@ -2639,7 +2708,7 @@ Can we just change the OS X README to have a section about Sage.app and a sectio
 archive/issue_comments_097499.json:
 ```json
 {
-    "body": "> > I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.\n> \n> It would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.\n\nI think that the 'live' documentation only needs the local browser and the ability to connect that way.   No actual network connection is needed, just on the person's computer.\n\n> > Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?\n> \n> If the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.\n\nThanks for clarifying that.\n> Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n\nThat sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)\n\nGreat, really close now!  I think the relevant file can be checked in using `hg_scripts`, so you'd probably want to just make it depend on the already existing `hg_scripts` change for `bdist`.",
+    "body": "> > I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.\n\n> \n> It would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.\n\n\nI think that the 'live' documentation only needs the local browser and the ability to connect that way.   No actual network connection is needed, just on the person's computer.\n\n> > Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?\n\n> \n> If the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.\n\n\nThanks for clarifying that.\n> Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n\n\nThat sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)\n\nGreat, really close now!  I think the relevant file can be checked in using `hg_scripts`, so you'd probably want to just make it depend on the already existing `hg_scripts` change for `bdist`.",
     "created_at": "2010-09-21T20:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2649,17 +2718,22 @@ archive/issue_comments_097499.json:
 ```
 
 > > I noticed that if you bdist from a Sage that doesn't have its documentation built, the first half of help pages don't exist.  (This could happen if, for instance, LaTeX wasn't in the path of the build.)  I don't know if this means they should be the live ones after all, which build (just not as nicely) without TeX... not sure about this.
+
 > 
 > It would be good to always have the documentation.  Perhaps someone who knows more about the documentation could give some insight into what would be preferred.  The only thing that I want is that it be offline, i.e. doesn't need network access.
+
 
 I think that the 'live' documentation only needs the local browser and the ability to connect that way.   No actual network connection is needed, just on the person's computer.
 
 > > Also, it's not possible to use a browser other than the system browser on 10.4 now.  What is the connection between this and the Dock - that is, why does it show up as a sub-preference?
+
 > 
 > If the application doesn't show up in the dock then the windows don't belong to any application (like the Preferences window now).  I think this would be extremely confusing and nearly impossible to work with.  It's okay for Preferences because it's a single window.
 
+
 Thanks for clarifying that.
 > Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?
+
 
 That sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)
 
@@ -2672,7 +2746,7 @@ Great, really close now!  I think the relevant file can be checked in using `hg_
 archive/issue_comments_097500.json:
 ```json
 {
-    "body": "Replying to [comment:85 kcrisman]:\n> > Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n> \n> That sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)\n> \n> Great, really close now!  I think the relevant file can be checked in using `hg_scripts`, so you'd probably want to just make it depend on the already existing `hg_scripts` change for `bdist`.\n\nIt looks like sage-README-osx.txt is in .hgignore and is not checked into mercurial.  It is in the sage_scripts spkg though, so I'm confused about that.  I'm just going to put the file here i.e. not as a patch.",
+    "body": "Replying to [comment:85 kcrisman]:\n> > Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?\n\n> \n> That sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)\n> \n> Great, really close now!  I think the relevant file can be checked in using `hg_scripts`, so you'd probably want to just make it depend on the already existing `hg_scripts` change for `bdist`.\n\n\nIt looks like sage-README-osx.txt is in .hgignore and is not checked into mercurial.  It is in the sage_scripts spkg though, so I'm confused about that.  I'm just going to put the file here i.e. not as a patch.",
     "created_at": "2010-09-21T20:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2683,10 +2757,12 @@ archive/issue_comments_097500.json:
 
 Replying to [comment:85 kcrisman]:
 > > Can we just change the OS X README to have a section about Sage.app and a section for the case that it's not created since it will still be possible to create a binary distribution without Sage.app?
+
 > 
 > That sounds like a great solution.  You can finally remove that part about OS X gurus - because you are one now :)
 > 
 > Great, really close now!  I think the relevant file can be checked in using `hg_scripts`, so you'd probably want to just make it depend on the already existing `hg_scripts` change for `bdist`.
+
 
 It looks like sage-README-osx.txt is in .hgignore and is not checked into mercurial.  It is in the sage_scripts spkg though, so I'm confused about that.  I'm just going to put the file here i.e. not as a patch.
 
@@ -2719,7 +2795,7 @@ To edit the file sage-README-osx.txt, you should edit the one in local/bin (the 
 archive/issue_comments_097502.json:
 ```json
 {
-    "body": "A few comments on sage-README.osx.txt: \n\n- overall, I like the changes.\n\n- when I create the app and open up the dmg, I see two \"files\": README.txt and \"Sage-VERSION\".  I don't see anything called \"Sage-VERSION.app\".  When I don't create the app, I see README.txt and a **folder** called \"sage\". So maybe we could change\n\n```\nOne is as a\n\"regular\" OS X application named something like Sage-VERSION.app.  If\nyou see such an application skip to the section about Sage.app.\n```\n\n to\n\n```\nOne is as a\n\"regular\" OS X application named something like Sage-VERSION.  If\nyou see such an application, skip to the section about Sage.app.  \nIf you instead see a folder called \"sage\", proceed as follows.\n```\n\n\n- on line 56, \"holding the option\" should either be \"holding option\" or \"holding the option key\".  I have a slight preference for the second of these, in which case \"holding command\" should be changed correspondingly.\n\n- I don't understand the instructions\n\n```\nTherefore please use something like\n\nSAGE_BROWSER=${SAGE_BROWSER-YOUR_VALUE}\n```\n\n Maybe add an explicit example?\n\n- would it be worth adding a section on how to build the app if you don't have it?  This could be combined with, or referenced from, the section on Tiger and the comment on running \"sage -bdist\".",
+    "body": "A few comments on sage-README.osx.txt: \n\n- overall, I like the changes.\n\n- when I create the app and open up the dmg, I see two \"files\": README.txt and \"Sage-VERSION\".  I don't see anything called \"Sage-VERSION.app\".  When I don't create the app, I see README.txt and a **folder** called \"sage\". So maybe we could change\n\n```\nOne is as a\n\"regular\" OS X application named something like Sage-VERSION.app.  If\nyou see such an application skip to the section about Sage.app.\n```\n to\n\n```\nOne is as a\n\"regular\" OS X application named something like Sage-VERSION.  If\nyou see such an application, skip to the section about Sage.app.  \nIf you instead see a folder called \"sage\", proceed as follows.\n```\n\n- on line 56, \"holding the option\" should either be \"holding option\" or \"holding the option key\".  I have a slight preference for the second of these, in which case \"holding command\" should be changed correspondingly.\n\n- I don't understand the instructions\n\n```\nTherefore please use something like\n\nSAGE_BROWSER=${SAGE_BROWSER-YOUR_VALUE}\n```\n Maybe add an explicit example?\n\n- would it be worth adding a section on how to build the app if you don't have it?  This could be combined with, or referenced from, the section on Tiger and the comment on running \"sage -bdist\".",
     "created_at": "2010-09-21T23:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2739,7 +2815,6 @@ One is as a
 "regular" OS X application named something like Sage-VERSION.app.  If
 you see such an application skip to the section about Sage.app.
 ```
-
  to
 
 ```
@@ -2748,7 +2823,6 @@ One is as a
 you see such an application, skip to the section about Sage.app.  
 If you instead see a folder called "sage", proceed as follows.
 ```
-
 
 - on line 56, "holding the option" should either be "holding option" or "holding the option key".  I have a slight preference for the second of these, in which case "holding command" should be changed correspondingly.
 
@@ -2759,7 +2833,6 @@ Therefore please use something like
 
 SAGE_BROWSER=${SAGE_BROWSER-YOUR_VALUE}
 ```
-
  Maybe add an explicit example?
 
 - would it be worth adding a section on how to build the app if you don't have it?  This could be combined with, or referenced from, the section on Tiger and the comment on running "sage -bdist".
@@ -2837,7 +2910,7 @@ Marshall
 archive/issue_comments_097506.json:
 ```json
 {
-    "body": "Replying to [comment:91 mhampton]:\n> I'm confused about how to apply the patch.  Can someone summarize what to do?\n\nFrom within Sage, for example:\n\n```\nsage: hg_extcode.import_patch('trac_9873_extcode_sage_deluxe.patch')\nsage: hg_scripts.import_patch('trac_9873_scripts_sage_deluxe.patch')\n```\n\nThen quit Sage and do\n\n```\n$ export SAGE_APP_BUNDLE=yes\n$ sage -bdist 4.6.beta0\n```\n\n(I just made up \"4.6.beta0\"; I don't think it matters what version you type in.)\n\nThen after a while, you'll end up with a folder called something like `SAGE_ROOT/dist/sage-4.6.beta0-i386-Darwin/Sage-4.6.alpha2.app`.  Move this to /Applications or to ~/Desktop or someplace, then double-click on it.",
+    "body": "Replying to [comment:91 mhampton]:\n> I'm confused about how to apply the patch.  Can someone summarize what to do?\n\n\nFrom within Sage, for example:\n\n```\nsage: hg_extcode.import_patch('trac_9873_extcode_sage_deluxe.patch')\nsage: hg_scripts.import_patch('trac_9873_scripts_sage_deluxe.patch')\n```\nThen quit Sage and do\n\n```\n$ export SAGE_APP_BUNDLE=yes\n$ sage -bdist 4.6.beta0\n```\n(I just made up \"4.6.beta0\"; I don't think it matters what version you type in.)\n\nThen after a while, you'll end up with a folder called something like `SAGE_ROOT/dist/sage-4.6.beta0-i386-Darwin/Sage-4.6.alpha2.app`.  Move this to /Applications or to ~/Desktop or someplace, then double-click on it.",
     "created_at": "2010-09-22T02:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2849,20 +2922,19 @@ archive/issue_comments_097506.json:
 Replying to [comment:91 mhampton]:
 > I'm confused about how to apply the patch.  Can someone summarize what to do?
 
+
 From within Sage, for example:
 
 ```
 sage: hg_extcode.import_patch('trac_9873_extcode_sage_deluxe.patch')
 sage: hg_scripts.import_patch('trac_9873_scripts_sage_deluxe.patch')
 ```
-
 Then quit Sage and do
 
 ```
 $ export SAGE_APP_BUNDLE=yes
 $ sage -bdist 4.6.beta0
 ```
-
 (I just made up "4.6.beta0"; I don't think it matters what version you type in.)
 
 Then after a while, you'll end up with a folder called something like `SAGE_ROOT/dist/sage-4.6.beta0-i386-Darwin/Sage-4.6.alpha2.app`.  Move this to /Applications or to ~/Desktop or someplace, then double-click on it.
@@ -2934,7 +3006,7 @@ So the two patches needed are `trac_9873_extcode_sage_deluxe.patch` and `trac_98
 archive/issue_comments_097510.json:
 ```json
 {
-    "body": "Assuming the new patch applies properly (I can't test this now) it should be fine, with the exception that John's comment for an example for `SAGE_BROWSER` leaves me even more confused now that there IS an example.  What is\n\n```\nSAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh\n```\n\n?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?",
+    "body": "Assuming the new patch applies properly (I can't test this now) it should be fine, with the exception that John's comment for an example for `SAGE_BROWSER` leaves me even more confused now that there IS an example.  What is\n\n```\nSAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh\n```\n?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?",
     "created_at": "2010-09-23T00:29:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2948,7 +3020,6 @@ Assuming the new patch applies properly (I can't test this now) it should be fin
 ```
 SAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh
 ```
-
 ?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?
 
 
@@ -2958,7 +3029,7 @@ SAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open
 archive/issue_comments_097511.json:
 ```json
 {
-    "body": "Replying to [comment:94 iandrus]:\n> I created another patch trac_9873_scripts_sage_deluxe_plus_readme.patch which includes the changes to sage -bdist as well as adding the README to the repository.  It supersedes the old scripts patch and all the READMEs.  I'm not sure if it will apply cleanly since sage-README-osx.txt is already in the directory, but not tracked.\n\nNo, it doesn't apply cleanly.  So the release manager would have to do the following upon positive review:\n\n* Remove `sage-README-osx.txt` from the scripts repository\n\n* Apply the patches here to the extcode and scripts repositories.\n\n* Close #5296 and this ticket\n\n* Rejoice!\n\nI'm ready to give this positive review once Ivan explains the `SAGE_BROWSER` comment above :)",
+    "body": "Replying to [comment:94 iandrus]:\n> I created another patch trac_9873_scripts_sage_deluxe_plus_readme.patch which includes the changes to sage -bdist as well as adding the README to the repository.  It supersedes the old scripts patch and all the READMEs.  I'm not sure if it will apply cleanly since sage-README-osx.txt is already in the directory, but not tracked.\n\n\nNo, it doesn't apply cleanly.  So the release manager would have to do the following upon positive review:\n\n* Remove `sage-README-osx.txt` from the scripts repository\n\n* Apply the patches here to the extcode and scripts repositories.\n\n* Close #5296 and this ticket\n\n* Rejoice!\n\nI'm ready to give this positive review once Ivan explains the `SAGE_BROWSER` comment above :)",
     "created_at": "2010-09-23T17:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -2969,6 +3040,7 @@ archive/issue_comments_097511.json:
 
 Replying to [comment:94 iandrus]:
 > I created another patch trac_9873_scripts_sage_deluxe_plus_readme.patch which includes the changes to sage -bdist as well as adding the README to the repository.  It supersedes the old scripts patch and all the READMEs.  I'm not sure if it will apply cleanly since sage-README-osx.txt is already in the directory, but not tracked.
+
 
 No, it doesn't apply cleanly.  So the release manager would have to do the following upon positive review:
 
@@ -2989,7 +3061,7 @@ I'm ready to give this positive review once Ivan explains the `SAGE_BROWSER` com
 archive/issue_comments_097512.json:
 ```json
 {
-    "body": "Replying to [comment:95 kcrisman]:\n> Assuming the new patch applies properly (I can't test this now) it should be fine, with the exception that John's comment for an example for `SAGE_BROWSER` leaves me even more confused now that there IS an example.  What is\n> {{{\n> SAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh\n> }}}\n> ?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?\n\nI just put what I had it set to--I used an instance of Fluid which comes with a script to open things from the command line.  I have changed it to\n\n```\nSAGE_BROWSER=${SAGE_BROWSER-/path/to/script/to/open/your/browser}\n```\n\nHopefully that is more understandable.",
+    "body": "Replying to [comment:95 kcrisman]:\n> Assuming the new patch applies properly (I can't test this now) it should be fine, with the exception that John's comment for an example for `SAGE_BROWSER` leaves me even more confused now that there IS an example.  What is\n> \n> ```\n> SAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh\n> ```\n> ?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?\n\n\nI just put what I had it set to--I used an instance of Fluid which comes with a script to open things from the command line.  I have changed it to\n\n```\nSAGE_BROWSER=${SAGE_BROWSER-/path/to/script/to/open/your/browser}\n```\nHopefully that is more understandable.",
     "created_at": "2010-09-23T17:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3000,17 +3072,18 @@ archive/issue_comments_097512.json:
 
 Replying to [comment:95 kcrisman]:
 > Assuming the new patch applies properly (I can't test this now) it should be fine, with the exception that John's comment for an example for `SAGE_BROWSER` leaves me even more confused now that there IS an example.  What is
-> {{{
+> 
+> ```
 > SAGE_BROWSER=${SAGE_BROWSER-/Applications/Sage-Fluid.app/Contents/Resources/open-location.sh
-> }}}
+> ```
 > ?  Fluid?  what does `open-location.sh` have to do with things?  Is this an option to a command?
+
 
 I just put what I had it set to--I used an instance of Fluid which comes with a script to open things from the command line.  I have changed it to
 
 ```
 SAGE_BROWSER=${SAGE_BROWSER-/path/to/script/to/open/your/browser}
 ```
-
 Hopefully that is more understandable.
 
 
@@ -3095,7 +3168,7 @@ archive/issue_events_024869.json:
 archive/issue_comments_097516.json:
 ```json
 {
-    "body": "Replying to [comment:99 mpatel]:\n> Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?\n\nThat's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.\n\nThanks,\nIvan",
+    "body": "Replying to [comment:99 mpatel]:\n> Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?\n\n\nThat's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.\n\nThanks,\nIvan",
     "created_at": "2010-09-28T12:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3106,6 +3179,7 @@ archive/issue_comments_097516.json:
 
 Replying to [comment:99 mpatel]:
 > Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?
+
 
 That's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.
 
@@ -3119,7 +3193,7 @@ Ivan
 archive/issue_comments_097517.json:
 ```json
 {
-    "body": "Replying to [comment:101 iandrus]:\n> Replying to [comment:99 mpatel]:\n> > Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?\nLike Ivan says, yes.\n> That's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.\nYeah, it's really annoying that one can't even delete one's OWN patches, though I understand that for archiving one might want to have several versions... yet if one just gives it the same name and clicks on \"replace\", it goes away.  Is this a bug?\n\nBy the way, congrats on reaching 100 comments, Ivan!  There should be an award for such tickets...",
+    "body": "Replying to [comment:101 iandrus]:\n> Replying to [comment:99 mpatel]:\n> > Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?\n\nLike Ivan says, yes.\n> That's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.\n\nYeah, it's really annoying that one can't even delete one's OWN patches, though I understand that for archiving one might want to have several versions... yet if one just gives it the same name and clicks on \"replace\", it goes away.  Is this a bug?\n\nBy the way, congrats on reaching 100 comments, Ivan!  There should be an award for such tickets...",
     "created_at": "2010-09-28T13:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3131,8 +3205,10 @@ archive/issue_comments_097517.json:
 Replying to [comment:101 iandrus]:
 > Replying to [comment:99 mpatel]:
 > > Just to check: Should I follow the steps in [comment:96 comment 96], except use [attachment:trac_9873_scripts_sage_deluxe_plus_readme.patch] as the only scripts repository patch?
+
 Like Ivan says, yes.
 > That's correct.  I wish I could delete all but the 2 relevant patches, but there you have it.
+
 Yeah, it's really annoying that one can't even delete one's OWN patches, though I understand that for archiving one might want to have several versions... yet if one just gives it the same name and clicks on "replace", it goes away.  Is this a bug?
 
 By the way, congrats on reaching 100 comments, Ivan!  There should be an award for such tickets...
@@ -3234,7 +3310,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097523.json:
 ```json
 {
-    "body": "Replying to mpatel:\n\n> It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?\n\nHmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes\n\n```\nsage-bdist~\nsage-clone~   \n```\n\nWhatever that means, since without the ~ those are obviously under revision control.\n\nAnd running hg on that file gives me\n\n```\nchangeset:   992:e83ef403be0d\nuser:        mabshoff@sage.math.washington.edu\ndate:        Fri Oct 31 14:25:18 2008 -0700\nsummary:     Update README\n\nchangeset:   837:ee5ea120914a\ntag:         3.0.2.alpha0\nuser:        William Stein <wstein@gmail.com>\ndate:        Sat May 10 16:21:08 2008 -0700\nsummary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()\n```\n\nand so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.",
+    "body": "Replying to mpatel:\n\n> It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?\n\n\nHmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes\n\n```\nsage-bdist~\nsage-clone~   \n```\nWhatever that means, since without the ~ those are obviously under revision control.\n\nAnd running hg on that file gives me\n\n```\nchangeset:   992:e83ef403be0d\nuser:        mabshoff@sage.math.washington.edu\ndate:        Fri Oct 31 14:25:18 2008 -0700\nsummary:     Update README\n\nchangeset:   837:ee5ea120914a\ntag:         3.0.2.alpha0\nuser:        William Stein <wstein@gmail.com>\ndate:        Sat May 10 16:21:08 2008 -0700\nsummary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()\n```\nand so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.",
     "created_at": "2010-09-29T12:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3247,13 +3323,13 @@ Replying to mpatel:
 
 > It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?
 
+
 Hmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes
 
 ```
 sage-bdist~
 sage-clone~   
 ```
-
 Whatever that means, since without the ~ those are obviously under revision control.
 
 And running hg on that file gives me
@@ -3270,7 +3346,6 @@ user:        William Stein <wstein@gmail.com>
 date:        Sat May 10 16:21:08 2008 -0700
 summary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()
 ```
-
 and so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.
 
 
@@ -3280,7 +3355,7 @@ and so on. So apparently this will have to be done. I am not sure if I will have
 archive/issue_comments_097524.json:
 ```json
 {
-    "body": "Replying to [comment:106 mpatel]:\n> It seems that `sage-README-osx.txt` is under revision control in the scripts repository.  Can someone post an update of the scripts repo patch that doesn't first require deleting the file?  Or am I mistaken?\n\nI think you're mistaken.  It's included in the scripts spkg (I'm not sure how it gets there and I don't have time to look at it now), but it's not under revision control.  If you cd to the local/bin directory and type \"hg manifest\", that file is not listed.\n\nThis may still \"need work\": if we add file to the repo but then it also gets copied there manually, that's not good.",
+    "body": "Replying to [comment:106 mpatel]:\n> It seems that `sage-README-osx.txt` is under revision control in the scripts repository.  Can someone post an update of the scripts repo patch that doesn't first require deleting the file?  Or am I mistaken?\n\n\nI think you're mistaken.  It's included in the scripts spkg (I'm not sure how it gets there and I don't have time to look at it now), but it's not under revision control.  If you cd to the local/bin directory and type \"hg manifest\", that file is not listed.\n\nThis may still \"need work\": if we add file to the repo but then it also gets copied there manually, that's not good.",
     "created_at": "2010-09-29T14:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3291,6 +3366,7 @@ archive/issue_comments_097524.json:
 
 Replying to [comment:106 mpatel]:
 > It seems that `sage-README-osx.txt` is under revision control in the scripts repository.  Can someone post an update of the scripts repo patch that doesn't first require deleting the file?  Or am I mistaken?
+
 
 I think you're mistaken.  It's included in the scripts spkg (I'm not sure how it gets there and I don't have time to look at it now), but it's not under revision control.  If you cd to the local/bin directory and type "hg manifest", that file is not listed.
 
@@ -3321,7 +3397,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_097526.json:
 ```json
 {
-    "body": "I think this is okay as is.  In the script sage-make_devel_packages, the line\n\n```\ncp -p $SAGE_ROOT/*.txt $SCRIPTS/\n```\n\ncopies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.",
+    "body": "I think this is okay as is.  In the script sage-make_devel_packages, the line\n\n```\ncp -p $SAGE_ROOT/*.txt $SCRIPTS/\n```\ncopies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.",
     "created_at": "2010-09-29T14:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3335,7 +3411,6 @@ I think this is okay as is.  In the script sage-make_devel_packages, the line
 ```
 cp -p $SAGE_ROOT/*.txt $SCRIPTS/
 ```
-
 copies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.
 
 
@@ -3345,7 +3420,7 @@ copies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets 
 archive/issue_comments_097527.json:
 ```json
 {
-    "body": "Replying to [comment:110 jhpalmieri]:\n> I think this is okay as is.  In the script sage-make_devel_packages, the line\n> {{{\n> cp -p $SAGE_ROOT/*.txt $SCRIPTS/\n> }}}\n> copies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.\n\nThen the release manager should first close #5296, then do the stuff on this one.  In that sense this ticket now 'depends' on #5296.",
+    "body": "Replying to [comment:110 jhpalmieri]:\n> I think this is okay as is.  In the script sage-make_devel_packages, the line\n> \n> ```\n> cp -p $SAGE_ROOT/*.txt $SCRIPTS/\n> ```\n> copies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.\n\n\nThen the release manager should first close #5296, then do the stuff on this one.  In that sense this ticket now 'depends' on #5296.",
     "created_at": "2010-09-29T18:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3356,10 +3431,12 @@ archive/issue_comments_097527.json:
 
 Replying to [comment:110 jhpalmieri]:
 > I think this is okay as is.  In the script sage-make_devel_packages, the line
-> {{{
+> 
+> ```
 > cp -p $SAGE_ROOT/*.txt $SCRIPTS/
-> }}}
+> ```
 > copies SAGE_ROOT/sage-README-osx.txt to the scripts repo, but if that file gets deleted from SAGE_ROOT (it's still there in 4.6.alpha1), then it shouldn't appear again in the scripts repo.
+
 
 Then the release manager should first close #5296, then do the stuff on this one.  In that sense this ticket now 'depends' on #5296.
 
@@ -3388,7 +3465,7 @@ I thought that the file was deleted from SAGE_ROOT because of #6938 (merged in 4
 archive/issue_comments_097529.json:
 ```json
 {
-    "body": "Replying to [comment:112 jhpalmieri]:\n> I thought that the file was deleted from SAGE_ROOT because of #6938 (merged in 4.6.alpha1).  So I'm not sure in what sense this depends on #5296.  But I think I'm getting confused...\nYou're right that it SHOULD have been.  I got confused, too, though; it's #6938 that should have taken care of this.",
+    "body": "Replying to [comment:112 jhpalmieri]:\n> I thought that the file was deleted from SAGE_ROOT because of #6938 (merged in 4.6.alpha1).  So I'm not sure in what sense this depends on #5296.  But I think I'm getting confused...\n\nYou're right that it SHOULD have been.  I got confused, too, though; it's #6938 that should have taken care of this.",
     "created_at": "2010-09-29T20:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3399,6 +3476,7 @@ archive/issue_comments_097529.json:
 
 Replying to [comment:112 jhpalmieri]:
 > I thought that the file was deleted from SAGE_ROOT because of #6938 (merged in 4.6.alpha1).  So I'm not sure in what sense this depends on #5296.  But I think I'm getting confused...
+
 You're right that it SHOULD have been.  I got confused, too, though; it's #6938 that should have taken care of this.
 
 
@@ -3408,7 +3486,7 @@ You're right that it SHOULD have been.  I got confused, too, though; it's #6938 
 archive/issue_comments_097530.json:
 ```json
 {
-    "body": "Replying to [comment:108 kcrisman]:\n> Replying to mpatel:\n> \n> > It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?\n> \n> Hmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes\n\n```\nsage-bdist~\nsage-clone~   \n```\n\n> Whatever that means, since without the ~ those are obviously under revision control.\n\nThe tilde is a common means of indicating a backup file.  It should be something like `*~` though to ignore all backup files.  But that's another patch for another day :-)\n\n> And running hg on that file gives me\n\n```\nchangeset:   992:e83ef403be0d\nuser:        mabshoff@sage.math.washington.edu\ndate:        Fri Oct 31 14:25:18 2008 -0700\nsummary:     Update README\n\nchangeset:   837:ee5ea120914a\ntag:         3.0.2.alpha0\nuser:        William Stein <wstein@gmail.com>\ndate:        Sat May 10 16:21:08 2008 -0700\nsummary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()\n```\n\n> and so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.\n\nI was very confused by this for a long time, but I finally tracked it down to \n\n```\n$ hg log -r 1370\nchangeset:   1370:80bc1e909378\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Thu Nov 12 20:55:24 2009 -0800\nsummary:     Remove the sage-README-osx.txt file from the scripts repo.\n```\n\n\nPersonally I think it's a bug in mercurial to not show removal of a file in `hg log`.",
+    "body": "Replying to [comment:108 kcrisman]:\n> Replying to mpatel:\n> \n> > It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?\n\n> \n> Hmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes\n\n{{{\nsage-bdist~\nsage-clone~   \n}}}\n> Whatever that means, since without the ~ those are obviously under revision control.\n\n\nThe tilde is a common means of indicating a backup file.  It should be something like `*~` though to ignore all backup files.  But that's another patch for another day :-)\n\n> And running hg on that file gives me\n\n{{{\nchangeset:   992:e83ef403be0d\nuser:        mabshoff`@`sage.math.washington.edu\ndate:        Fri Oct 31 14:25:18 2008 -0700\nsummary:     Update README\n\nchangeset:   837:ee5ea120914a\ntag:         3.0.2.alpha0\nuser:        William Stein <wstein`@`gmail.com>\ndate:        Sat May 10 16:21:08 2008 -0700\nsummary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()\n}}}\n> and so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.\n\n\nI was very confused by this for a long time, but I finally tracked it down to \n\n```\n$ hg log -r 1370\nchangeset:   1370:80bc1e909378\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Thu Nov 12 20:55:24 2009 -0800\nsummary:     Remove the sage-README-osx.txt file from the scripts repo.\n```\n\nPersonally I think it's a bug in mercurial to not show removal of a file in `hg log`.",
     "created_at": "2010-09-29T21:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9872",
     "type": "issue_comment",
@@ -3421,34 +3499,35 @@ Replying to [comment:108 kcrisman]:
 > Replying to mpatel:
 > 
 > > It seems that sage-README-osx.txt is under revision control in the scripts repository. Can someone post an update of the scripts repo patch that doesn't first require deleting the file? Or am I mistaken?
+
 > 
 > Hmm, maybe that's new? You're right that the file isn't in .hgignore. Of course, that file includes
 
-```
+{{{
 sage-bdist~
 sage-clone~   
-```
-
+}}}
 > Whatever that means, since without the ~ those are obviously under revision control.
+
 
 The tilde is a common means of indicating a backup file.  It should be something like `*~` though to ignore all backup files.  But that's another patch for another day :-)
 
 > And running hg on that file gives me
 
-```
+{{{
 changeset:   992:e83ef403be0d
-user:        mabshoff@sage.math.washington.edu
+user:        mabshoff`@`sage.math.washington.edu
 date:        Fri Oct 31 14:25:18 2008 -0700
 summary:     Update README
 
 changeset:   837:ee5ea120914a
 tag:         3.0.2.alpha0
-user:        William Stein <wstein@gmail.com>
+user:        William Stein <wstein`@`gmail.com>
 date:        Sat May 10 16:21:08 2008 -0700
 summary:     trac #3136 -- the readme for osx should be changed to delete the line about inotebook()
-```
-
+}}}
 > and so on. So apparently this will have to be done. I am not sure if I will have time right now, but I'll try my best.
+
 
 I was very confused by this for a long time, but I finally tracked it down to 
 
@@ -3459,7 +3538,6 @@ user:        Mike Hansen <mhansen@gmail.com>
 date:        Thu Nov 12 20:55:24 2009 -0800
 summary:     Remove the sage-README-osx.txt file from the scripts repo.
 ```
-
 
 Personally I think it's a bug in mercurial to not show removal of a file in `hg log`.
 

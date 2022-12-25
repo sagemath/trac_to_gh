@@ -216,7 +216,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_062439.json:
 ```json
 {
-    "body": "V3 is also rebased for\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\ntrac_8000-utf-8-coding-directive.2.patch\ntrac_4450-cursor-wrap-last-cell.patch\ntrac_7848-misleading_HTML_cells.patch\ntrac_7963-download-multiple-worksheets.patch\ntrac_7752-delete-worksheet-quit.patch\ntrac_7996-invisible_text.patch\ntrac_6475-error-delete-data-file.patch\ntrac_5675-address-launch.patch\ntrac_7435-dir-var.patch\ntrac_3844-DATA_in_sys_path.2.patch\ntrac_6368-shift_tab_unindents.patch\ntrac_7434-jmol_modal_dialogs_test.patch\ntrac_7434-jmol_modal_dialogs.patch\n```\n",
+    "body": "V3 is also rebased for\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\ntrac_8000-utf-8-coding-directive.2.patch\ntrac_4450-cursor-wrap-last-cell.patch\ntrac_7848-misleading_HTML_cells.patch\ntrac_7963-download-multiple-worksheets.patch\ntrac_7752-delete-worksheet-quit.patch\ntrac_7996-invisible_text.patch\ntrac_6475-error-delete-data-file.patch\ntrac_5675-address-launch.patch\ntrac_7435-dir-var.patch\ntrac_3844-DATA_in_sys_path.2.patch\ntrac_6368-shift_tab_unindents.patch\ntrac_7434-jmol_modal_dialogs_test.patch\ntrac_7434-jmol_modal_dialogs.patch\n```",
     "created_at": "2010-01-25T02:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
@@ -253,7 +253,6 @@ trac_6368-shift_tab_unindents.patch
 trac_7434-jmol_modal_dialogs_test.patch
 trac_7434-jmol_modal_dialogs.patch
 ```
-
 
 
 

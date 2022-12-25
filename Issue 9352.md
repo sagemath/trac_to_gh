@@ -178,7 +178,7 @@ archive/issue_events_023080.json:
 archive/issue_comments_088646.json:
 ```json
 {
-    "body": "Could it be that the version number really should have been\n\n```\ngivaro-3.2.13rc1.p2.spkg\n```\n\ninstead of\n\n```\ngivaro-3.2.13rc2.p2.spkg\n}}}?",
+    "body": "Could it be that the version number really should have been\n\n```\ngivaro-3.2.13rc1.p2.spkg\n```\ninstead of\n\n```\ngivaro-3.2.13rc2.p2.spkg\n}}}?",
     "created_at": "2011-12-12T09:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
@@ -192,7 +192,6 @@ Could it be that the version number really should have been
 ```
 givaro-3.2.13rc1.p2.spkg
 ```
-
 instead of
 
 ```

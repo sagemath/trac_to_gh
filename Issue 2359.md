@@ -3,7 +3,7 @@
 archive/issues_002359.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nKill signal does this\n\n```\n2008/03/01 01:10 -0500 [-] Received SIGTERM, shutting down.\n2008/03/01 01:10 -0500 [-] (Port 8000 Closed)\n2008/03/01 01:10 -0500 [-] Stopping factory <twisted.web2.channel.http.HTTPFactory instance at 0x2a41530>\n2008/03/01 01:10 -0500 [-] Main loop terminated.\n2008/03/01 01:10 -0500 [-] Server Shut Down.\n```\n\n\nControl C does this\n\n```\n2008/03/01 01:12 -0500 [-] (Notebook cleanly saved. Press control-C again to exit.)\n```\n\n\nWe should change the notebook so it catches the kill and saves the notebook cleanly.   I have no idea how to do this.  Maybe some sort of \"hook\" into Twisted.  If anybody knows twisted or reads the docs and figures this out, post here!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2359\n\n",
+    "body": "Assignee: boothby\n\nKill signal does this\n\n```\n2008/03/01 01:10 -0500 [-] Received SIGTERM, shutting down.\n2008/03/01 01:10 -0500 [-] (Port 8000 Closed)\n2008/03/01 01:10 -0500 [-] Stopping factory <twisted.web2.channel.http.HTTPFactory instance at 0x2a41530>\n2008/03/01 01:10 -0500 [-] Main loop terminated.\n2008/03/01 01:10 -0500 [-] Server Shut Down.\n```\n\nControl C does this\n\n```\n2008/03/01 01:12 -0500 [-] (Notebook cleanly saved. Press control-C again to exit.)\n```\n\nWe should change the notebook so it catches the kill and saves the notebook cleanly.   I have no idea how to do this.  Maybe some sort of \"hook\" into Twisted.  If anybody knows twisted or reads the docs and figures this out, post here!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2359\n\n",
     "created_at": "2008-03-01T06:18:26Z",
     "labels": [
         "component: notebook"
@@ -27,13 +27,11 @@ Kill signal does this
 2008/03/01 01:10 -0500 [-] Server Shut Down.
 ```
 
-
 Control C does this
 
 ```
 2008/03/01 01:12 -0500 [-] (Notebook cleanly saved. Press control-C again to exit.)
 ```
-
 
 We should change the notebook so it catches the kill and saves the notebook cleanly.   I have no idea how to do this.  Maybe some sort of "hook" into Twisted.  If anybody knows twisted or reads the docs and figures this out, post here!
 
@@ -97,7 +95,7 @@ http://yiqiang.org
 archive/issue_comments_015869.json:
 ```json
 {
-    "body": "The attached patch fixes the issues:\n\n\n``` \n   1. I followed Yi's suggestion which worked like a charm.\n   2. As a bonus I also fixed the \"have to hit control-c twice to stop the notebook server\" crap. Now\n      it stops just fine with one single control-c.\n   3. I changed twistd.pd to twistd.pid  -- it's a typo since it's supposed to be a pin id.\n```\n",
+    "body": "The attached patch fixes the issues:\n\n``` \n   1. I followed Yi's suggestion which worked like a charm.\n   2. As a bonus I also fixed the \"have to hit control-c twice to stop the notebook server\" crap. Now\n      it stops just fine with one single control-c.\n   3. I changed twistd.pd to twistd.pid  -- it's a typo since it's supposed to be a pin id.\n```",
     "created_at": "2008-05-11T07:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
@@ -108,14 +106,12 @@ archive/issue_comments_015869.json:
 
 The attached patch fixes the issues:
 
-
 ``` 
    1. I followed Yi's suggestion which worked like a charm.
    2. As a bonus I also fixed the "have to hit control-c twice to stop the notebook server" crap. Now
       it stops just fine with one single control-c.
    3. I changed twistd.pd to twistd.pid  -- it's a typo since it's supposed to be a pin id.
 ```
-
 
 
 

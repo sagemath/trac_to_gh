@@ -49,7 +49,7 @@ Changing status from new to assigned.
 archive/issue_comments_010347.json:
 ```json
 {
-    "body": "\n```\nFrom the bottom of http://wiki.sagemath.org/BadContent:\n\n##\n===========================================================================================\n## Please keep this comment at the end. Please note:\n## MoinMoin 1.6 has TextCHAs for spam prevention and they are currently\nvery effective (no\n## spam any more since switching to 1.6). So if you still suffer from\nspam, consider 1.6.\n##\n===========================================================================================\n\n```\n",
+    "body": "```\nFrom the bottom of http://wiki.sagemath.org/BadContent:\n\n##\n===========================================================================================\n## Please keep this comment at the end. Please note:\n## MoinMoin 1.6 has TextCHAs for spam prevention and they are currently\nvery effective (no\n## spam any more since switching to 1.6). So if you still suffer from\nspam, consider 1.6.\n##\n===========================================================================================\n\n```",
     "created_at": "2008-06-17T04:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1628",
     "type": "issue_comment",
@@ -57,7 +57,6 @@ archive/issue_comments_010347.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 From the bottom of http://wiki.sagemath.org/BadContent:
@@ -73,7 +72,6 @@ spam, consider 1.6.
 ===========================================================================================
 
 ```
-
 
 
 

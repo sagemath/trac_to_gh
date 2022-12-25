@@ -3,7 +3,7 @@
 archive/issues_005262.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nThis is wrong:\n\n\n```\n\nThe following computation should produce identical values in the last\nline:\n\nE=EllipticCurve('37b2')\nh=E.modular_form()\nLh = h.cuspform_lseries()\nLE=E.lseries()\nh.elliptic_curve()==E, Lh(1), LE(1)\n\nThe output is:\n\n(True, 0, 0.725681061936153)\n```\n\n\nThis is because the Atkin-Lehner sign is computed wrong in sage/modular/modform/element.py.  In fact, there one finds the code:\n\n```\n            m = ModularSymbols(N,l,sign=1)\n            n = m.cuspidal_subspace().new_subspace()\n            e = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]\n```\n\n\nNotice that m has absolutely nothing to do with the modular form! \n\nThe right fix is to implement an atkin_lehner_eigenvalue(...) function for modularforms, and that should in turn be implemented correctly, and should be called from the cuspform_lseries command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5262\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is wrong:\n\n```\n\nThe following computation should produce identical values in the last\nline:\n\nE=EllipticCurve('37b2')\nh=E.modular_form()\nLh = h.cuspform_lseries()\nLE=E.lseries()\nh.elliptic_curve()==E, Lh(1), LE(1)\n\nThe output is:\n\n(True, 0, 0.725681061936153)\n```\n\nThis is because the Atkin-Lehner sign is computed wrong in sage/modular/modform/element.py.  In fact, there one finds the code:\n\n```\n            m = ModularSymbols(N,l,sign=1)\n            n = m.cuspidal_subspace().new_subspace()\n            e = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]\n```\n\nNotice that m has absolutely nothing to do with the modular form! \n\nThe right fix is to implement an atkin_lehner_eigenvalue(...) function for modularforms, and that should in turn be implemented correctly, and should be called from the cuspform_lseries command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5262\n\n",
     "created_at": "2009-02-14T00:47:10Z",
     "labels": [
         "component: modular forms",
@@ -19,7 +19,6 @@ archive/issues_005262.json:
 Assignee: @craigcitro
 
 This is wrong:
-
 
 ```
 
@@ -37,7 +36,6 @@ The output is:
 (True, 0, 0.725681061936153)
 ```
 
-
 This is because the Atkin-Lehner sign is computed wrong in sage/modular/modform/element.py.  In fact, there one finds the code:
 
 ```
@@ -45,7 +43,6 @@ This is because the Atkin-Lehner sign is computed wrong in sage/modular/modform/
             n = m.cuspidal_subspace().new_subspace()
             e = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]
 ```
-
 
 Notice that m has absolutely nothing to do with the modular form! 
 

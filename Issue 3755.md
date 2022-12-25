@@ -51,7 +51,7 @@ Attachment [sage-3755.patch](tarball://root/attachments/some-uuid/ticket3755/sag
 archive/issue_comments_026620.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n* Patch installs and passes doctests.\n\n\n```\nsage -t --optional devel/sage-review-finance/sage/finance/time_series.pyx\n         [15.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 15.7 seconds\n```\n\n\n* I found no coding errors or bugs while testing the modified functions in the notebook.",
+    "body": "REFEREE REPORT\n\n* Patch installs and passes doctests.\n\n```\nsage -t --optional devel/sage-review-finance/sage/finance/time_series.pyx\n         [15.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 15.7 seconds\n```\n\n* I found no coding errors or bugs while testing the modified functions in the notebook.",
     "created_at": "2008-08-02T01:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3755",
     "type": "issue_comment",
@@ -64,7 +64,6 @@ REFEREE REPORT
 
 * Patch installs and passes doctests.
 
-
 ```
 sage -t --optional devel/sage-review-finance/sage/finance/time_series.pyx
          [15.7 s]
@@ -73,7 +72,6 @@ sage -t --optional devel/sage-review-finance/sage/finance/time_series.pyx
 All tests passed!
 Total time for all tests: 15.7 seconds
 ```
-
 
 * I found no coding errors or bugs while testing the modified functions in the notebook.
 

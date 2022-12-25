@@ -99,7 +99,7 @@ archive/issue_events_009835.json:
 archive/issue_comments_031898.json:
 ```json
 {
-    "body": "REVIEW:\n\npatch applies and passes test.  Code raises major red flag!!\n\n```\n\t        ans = eval(ans.replace('{','').replace('}','').replace('\\n','')) \n```\n\n\nIf the output -- which you make into vectors over QQ ever actually has any rational numbers, then eval will do very bad things to them, e.g., \n\n```\nsage: eval('2/3')\n0\n```\n\nOops!\n\nUse sage_eval instead:\n\n```\nsage: sage_eval('2/3')\n2/3\n```\n",
+    "body": "REVIEW:\n\npatch applies and passes test.  Code raises major red flag!!\n\n```\n\t        ans = eval(ans.replace('{','').replace('}','').replace('\\n','')) \n```\n\nIf the output -- which you make into vectors over QQ ever actually has any rational numbers, then eval will do very bad things to them, e.g., \n\n```\nsage: eval('2/3')\n0\n```\nOops!\n\nUse sage_eval instead:\n\n```\nsage: sage_eval('2/3')\n2/3\n```",
     "created_at": "2008-11-29T02:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
@@ -116,14 +116,12 @@ patch applies and passes test.  Code raises major red flag!!
 	        ans = eval(ans.replace('{','').replace('}','').replace('\n','')) 
 ```
 
-
 If the output -- which you make into vectors over QQ ever actually has any rational numbers, then eval will do very bad things to them, e.g., 
 
 ```
 sage: eval('2/3')
 0
 ```
-
 Oops!
 
 Use sage_eval instead:
@@ -132,7 +130,6 @@ Use sage_eval instead:
 sage: sage_eval('2/3')
 2/3
 ```
-
 
 
 
@@ -161,7 +158,7 @@ supercedes previous patch, addresses review
 archive/issue_comments_031900.json:
 ```json
 {
-    "body": "This patch no longer applies cleanly to my 3.2.1.rc1 merge tree:\n\n```\nsage-3.2.1.rc1/devel/sage$ patch -p1 --dry-run < trac_4352_2.patch \npatching file sage/rings/polynomial/groebner_fan.py\nHunk #2 FAILED at 76.\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/groebner_fan.py.rej\n```\n\nI gather from the patch description that only trac_4352_2.patch should be applied. So unless I am mistaken please rebase this. If there are unknown dependencies for this ticket please list them.\n\nCheers,\n\nMichael",
+    "body": "This patch no longer applies cleanly to my 3.2.1.rc1 merge tree:\n\n```\nsage-3.2.1.rc1/devel/sage$ patch -p1 --dry-run < trac_4352_2.patch \npatching file sage/rings/polynomial/groebner_fan.py\nHunk #2 FAILED at 76.\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/groebner_fan.py.rej\n```\nI gather from the patch description that only trac_4352_2.patch should be applied. So unless I am mistaken please rebase this. If there are unknown dependencies for this ticket please list them.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T06:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
@@ -178,7 +175,6 @@ patching file sage/rings/polynomial/groebner_fan.py
 Hunk #2 FAILED at 76.
 1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/groebner_fan.py.rej
 ```
-
 I gather from the patch description that only trac_4352_2.patch should be applied. So unless I am mistaken please rebase this. If there are unknown dependencies for this ticket please list them.
 
 Cheers,

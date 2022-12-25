@@ -35,7 +35,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3694
 archive/issue_comments_026154.json:
 ```json
 {
-    "body": "The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/flint-1.0.13.spkg\n\nMake sure to rebuild the following extension by running\n\n```\ntouch devel/sage/sage/rings/polynomial/polynomial_integer_dense_flint.pyx\n./sage -b\n```\n\nOtherwise Sage will complain about an import error. The fix is non-trivial and needs to be coordinated with the packaging teams for Debian and Gentoo, so it is post 3.0.6 material.\n\nCheers,\n\nMichael",
+    "body": "The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/flint-1.0.13.spkg\n\nMake sure to rebuild the following extension by running\n\n```\ntouch devel/sage/sage/rings/polynomial/polynomial_integer_dense_flint.pyx\n./sage -b\n```\nOtherwise Sage will complain about an import error. The fix is non-trivial and needs to be coordinated with the packaging teams for Debian and Gentoo, so it is post 3.0.6 material.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T18:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3694",
     "type": "issue_comment",
@@ -54,7 +54,6 @@ Make sure to rebuild the following extension by running
 touch devel/sage/sage/rings/polynomial/polynomial_integer_dense_flint.pyx
 ./sage -b
 ```
-
 Otherwise Sage will complain about an import error. The fix is non-trivial and needs to be coordinated with the packaging teams for Debian and Gentoo, so it is post 3.0.6 material.
 
 Cheers,
@@ -139,7 +138,7 @@ archive/issue_events_008467.json:
 archive/issue_comments_026158.json:
 ```json
 {
-    "body": "Also make sure to \n\n```\ntouch devel/sage/sage/libs/flint/fmpz_poly.pyx\n./sage -b\n```\n\nI knew there were *two* of those suckers to rebuild.\n\nCheers,\n\nMichael",
+    "body": "Also make sure to \n\n```\ntouch devel/sage/sage/libs/flint/fmpz_poly.pyx\n./sage -b\n```\nI knew there were *two* of those suckers to rebuild.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T18:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3694",
     "type": "issue_comment",
@@ -154,7 +153,6 @@ Also make sure to
 touch devel/sage/sage/libs/flint/fmpz_poly.pyx
 ./sage -b
 ```
-
 I knew there were *two* of those suckers to rebuild.
 
 Cheers,

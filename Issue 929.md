@@ -67,7 +67,7 @@ archive/issue_events_002554.json:
 archive/issue_comments_005664.json:
 ```json
 {
-    "body": "The mandatory benchmarks of Stehle vs. Stehle :-)\n\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.LLL()\nCPU times: user 1.90 s, sys: 0.02 s, total: 1.92 s\nWall time: 1.94\nsage: m = magma(a)\nsage: time c=m.LLL()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 1.53\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.LLL()\nCPU times: user 18.77 s, sys: 0.11 s, total: 18.88 s\nWall time: 19.08\nsage: time c=magma(a)\nCPU times: user 0.31 s, sys: 0.04 s, total: 0.34 s\nWall time: 0.54\nsage: time d=c.LLL()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 19.48\n```\n\n\nAlso, the `sage.libs.fplll.fplll` module contains several generators for random matrices with interesting shapes.",
+    "body": "The mandatory benchmarks of Stehle vs. Stehle :-)\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.LLL()\nCPU times: user 1.90 s, sys: 0.02 s, total: 1.92 s\nWall time: 1.94\nsage: m = magma(a)\nsage: time c=m.LLL()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 1.53\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.LLL()\nCPU times: user 18.77 s, sys: 0.11 s, total: 18.88 s\nWall time: 19.08\nsage: time c=magma(a)\nCPU times: user 0.31 s, sys: 0.04 s, total: 0.34 s\nWall time: 0.54\nsage: time d=c.LLL()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 19.48\n```\n\nAlso, the `sage.libs.fplll.fplll` module contains several generators for random matrices with interesting shapes.",
     "created_at": "2007-10-21T16:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ archive/issue_comments_005664.json:
 ```
 
 The mandatory benchmarks of Stehle vs. Stehle :-)
-
 
 ```
 sage: a = random_matrix(ZZ,200)
@@ -100,7 +99,6 @@ sage: time d=c.LLL()
 CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 19.48
 ```
-
 
 Also, the `sage.libs.fplll.fplll` module contains several generators for random matrices with interesting shapes.
 

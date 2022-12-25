@@ -3,7 +3,7 @@
 archive/issues_005254.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFrom \n\nWhen starting Sage right after copying it over from the dmg Maxima as well as clisp do not work. After quitting a manual start triggers the rewrite:\n\n```\nSprocketer:sage michaelabshoff$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\n```\n\nThen Maxima as well as clisp work:\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) 2+2;\n(%o1)                                  4\n(%i2) \nsage: !clisp\n  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo\n  I I I I I I I      8     8   8           8     8     o  8    8\n  I  \\ `+' /  I      8         8           8     8        8    8\n   \\  `-+-'  /       8         8           8      ooooo   8oooo\n    `-__|__-'        8         8           8           8  8\n        |            8     o   8           8     o     8  8\n  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8\n| Sage Version 3.3.rc0, Release Date: 2009-02-11                     |\n| Type notebook() for the GUI, and license() for information.        |\nWelcome to GNU CLISP 2.46 (2008-07-02) <http://clisp.cons.org/>\n\nCopyright (c) Bruno Haible, Michael Stoll 1992, 1993\nCopyright (c) Bruno Haible, Marcus Daniels 1994-1997\nCopyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998\nCopyright (c) Bruno Haible, Sam Steingold 1999-2000\nCopyright (c) Sam Steingold, Bruno Haible 2001-2008\n\nType :h and hit Enter for context help.\n\n[1]> \nBye.\nsage: \nExiting SAGE (CPU time 0m0.12s, Wall time 0m21.46s).\nSprocketer:sage michaelabshoff$ \n```\n\n\nChange the logic of the Sage startup script to trigger the relocation script in case Sage has moved. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5254\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFrom \n\nWhen starting Sage right after copying it over from the dmg Maxima as well as clisp do not work. After quitting a manual start triggers the rewrite:\n\n```\nSprocketer:sage michaelabshoff$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\n```\nThen Maxima as well as clisp work:\n| Sage Version 3.3.rc0, Release Date: 2009-02-11                     |\n| Type notebook() for the GUI, and license() for information.        |\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) 2+2;\n(%o1)                                  4\n(%i2) \nsage: !clisp\n  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo\n  I I I I I I I      8     8   8           8     8     o  8    8\n  I  \\ `+' /  I      8         8           8     8        8    8\n   \\  `-+-'  /       8         8           8      ooooo   8oooo\n    `-__|__-'        8         8           8           8  8\n        |            8     o   8           8     o     8  8\n  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8\n\nWelcome to GNU CLISP 2.46 (2008-07-02) <http://clisp.cons.org/>\n\nCopyright (c) Bruno Haible, Michael Stoll 1992, 1993\nCopyright (c) Bruno Haible, Marcus Daniels 1994-1997\nCopyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998\nCopyright (c) Bruno Haible, Sam Steingold 1999-2000\nCopyright (c) Sam Steingold, Bruno Haible 2001-2008\n\nType :h and hit Enter for context help.\n\n[1]> \nBye.\nsage: \nExiting SAGE (CPU time 0m0.12s, Wall time 0m21.46s).\nSprocketer:sage michaelabshoff$ \n```\n\nChange the logic of the Sage startup script to trigger the relocation script in case Sage has moved. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5254\n\n",
     "created_at": "2009-02-13T10:32:41Z",
     "labels": [
         "component: distribution",
@@ -34,9 +34,9 @@ Regenerating Python.pyo and .pyc files that hardcode the install PATH (please wa
 most a few minutes)...
 Do not interrupt this.
 ```
-
 Then Maxima as well as clisp work:
-
+| Sage Version 3.3.rc0, Release Date: 2009-02-11                     |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 sage: !maxima
 Maxima 5.16.3 http://maxima.sourceforge.net
@@ -55,8 +55,7 @@ sage: !clisp
     `-__|__-'        8         8           8           8  8
         |            8     o   8           8     o     8  8
   ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
-| Sage Version 3.3.rc0, Release Date: 2009-02-11                     |
-| Type notebook() for the GUI, and license() for information.        |
+
 Welcome to GNU CLISP 2.46 (2008-07-02) <http://clisp.cons.org/>
 
 Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
@@ -73,7 +72,6 @@ sage:
 Exiting SAGE (CPU time 0m0.12s, Wall time 0m21.46s).
 Sprocketer:sage michaelabshoff$ 
 ```
-
 
 Change the logic of the Sage startup script to trigger the relocation script in case Sage has moved. 
 
@@ -142,7 +140,7 @@ Cheers, gsw
 archive/issue_comments_040237.json:
 ```json
 {
-    "body": "Replying to [comment:1 GeorgSWeber]:\n> Hi Michael,\n\nHi Georg,\n\n> I couldn't trigger the Maxima failure (don't know why),\n\nThe original poster in that thread had some other issues, too, but I could certainly hit it when I used a dmg build on another box where my home directory was different. If the original Sage build is still in place it should \"just work\" since the old install is being picked up.\n\n> but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\nCool.\n\n> You said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\nThe fix isn't up yet and it is mostly in the \"I think I know how to fix this stage\", so no tested code yet. Notice that at #5261 there are all the other issues I would like to sort out.\n\n> One important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\nOk, please open a critical ticket against 3.3 to update the OSX readme. \n\n> One other thing:\n> \n> +1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\nYep, please add that as a comment to #5261 so it doesn't get lost. We don't do universal since there are issues with the build all over the place, i.e. gmp doesn't support it. MPIR might at some point in the future, but that leaves other issues to be fixed. \n\nI can imagine to fix this in three ways: \n\n* Make everything build universal by adjusting and fixing all build systems in Sage's spkg (giant amount of work)\n* use lipo to join all binaries and libraries after building them locally (I have played with this)\n* add a wrapper script that starts the appropriate sage since we could have sage-x86, sage-x86-64, sage-ppc and sage-ppc64 sitting inside the DMG all in parallel. This causes its own set of issues (how do you upgrade something like that? Will people download the 1.2GB?), but if there is interest given that we now have the DMG + App bundle in place this would be the quickest way to get a universal binary going (Once we have fixed the last couple pesky bugs for 64 bit OSX support :)\n \nAnyway, if you feel this point warrants discussion and/or interest please open a new thread on sage-devel.\n\n> Cheers, gsw\n\nThanks for fixing this, I am *swamped* :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 GeorgSWeber]:\n> Hi Michael,\n\n\nHi Georg,\n\n> I couldn't trigger the Maxima failure (don't know why),\n\n\nThe original poster in that thread had some other issues, too, but I could certainly hit it when I used a dmg build on another box where my home directory was different. If the original Sage build is still in place it should \"just work\" since the old install is being picked up.\n\n> but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\n\nCool.\n\n> You said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\n\nThe fix isn't up yet and it is mostly in the \"I think I know how to fix this stage\", so no tested code yet. Notice that at #5261 there are all the other issues I would like to sort out.\n\n> One important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\n\nOk, please open a critical ticket against 3.3 to update the OSX readme. \n\n> One other thing:\n> \n> +1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\n\nYep, please add that as a comment to #5261 so it doesn't get lost. We don't do universal since there are issues with the build all over the place, i.e. gmp doesn't support it. MPIR might at some point in the future, but that leaves other issues to be fixed. \n\nI can imagine to fix this in three ways: \n\n* Make everything build universal by adjusting and fixing all build systems in Sage's spkg (giant amount of work)\n* use lipo to join all binaries and libraries after building them locally (I have played with this)\n* add a wrapper script that starts the appropriate sage since we could have sage-x86, sage-x86-64, sage-ppc and sage-ppc64 sitting inside the DMG all in parallel. This causes its own set of issues (how do you upgrade something like that? Will people download the 1.2GB?), but if there is interest given that we now have the DMG + App bundle in place this would be the quickest way to get a universal binary going (Once we have fixed the last couple pesky bugs for 64 bit OSX support :)\n \nAnyway, if you feel this point warrants discussion and/or interest please open a new thread on sage-devel.\n\n> Cheers, gsw\n\n\nThanks for fixing this, I am *swamped* :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
@@ -154,27 +152,33 @@ archive/issue_comments_040237.json:
 Replying to [comment:1 GeorgSWeber]:
 > Hi Michael,
 
+
 Hi Georg,
 
 > I couldn't trigger the Maxima failure (don't know why),
+
 
 The original poster in that thread had some other issues, too, but I could certainly hit it when I used a dmg build on another box where my home directory was different. If the original Sage build is still in place it should "just work" since the old install is being picked up.
 
 > but I could see that the Sage app bundle's "/local/lib/sage-current-location.txt" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some "tar.gz"), so I uploaded it plain as-is.
 
+
 Cool.
 
 > You said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.
 
+
 The fix isn't up yet and it is mostly in the "I think I know how to fix this stage", so no tested code yet. Notice that at #5261 there are all the other issues I would like to sort out.
 
 > One important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. "$SAGE_ROOT/sage-README-osx.txt") from lurking around.
+
 
 Ok, please open a critical ticket against 3.3 to update the OSX readme. 
 
 > One other thing:
 > 
 > +1 to your idea to name the app bundle "Sage.x.y.z" instead of "Sage". What do you think of putting in the name also the dependency "Intel vs. PPC" resp. "32Bit vs. 64Bit"? (It's not a "universal binary" we deliver, do we?)
+
 
 Yep, please add that as a comment to #5261 so it doesn't get lost. We don't do universal since there are issues with the build all over the place, i.e. gmp doesn't support it. MPIR might at some point in the future, but that leaves other issues to be fixed. 
 
@@ -187,6 +191,7 @@ I can imagine to fix this in three ways:
 Anyway, if you feel this point warrants discussion and/or interest please open a new thread on sage-devel.
 
 > Cheers, gsw
+
 
 Thanks for fixing this, I am *swamped* :)
 

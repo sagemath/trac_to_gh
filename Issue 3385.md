@@ -86,7 +86,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_comments_023644.json:
 ```json
 {
-    "body": "From the quiver documentation:\n\n```\n    In all cases the arrow aspect ratio is 1, so that if *U*==*V* the\n    angle of the arrow on the plot is 45 degrees CCW from the *x*-axis.\n```\n\n\nBasically, if you want the arrows to match up with the axes in the plot, you *must* have aspect_ratio=1. (that is, unless the arrows are horizontal or vertical :).",
+    "body": "From the quiver documentation:\n\n```\n    In all cases the arrow aspect ratio is 1, so that if *U*==*V* the\n    angle of the arrow on the plot is 45 degrees CCW from the *x*-axis.\n```\n\nBasically, if you want the arrows to match up with the axes in the plot, you *must* have aspect_ratio=1. (that is, unless the arrows are horizontal or vertical :).",
     "created_at": "2008-09-12T05:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ From the quiver documentation:
     angle of the arrow on the plot is 45 degrees CCW from the *x*-axis.
 ```
 
-
 Basically, if you want the arrows to match up with the axes in the plot, you *must* have aspect_ratio=1. (that is, unless the arrows are horizontal or vertical :).
 
 
@@ -112,7 +111,7 @@ Basically, if you want the arrows to match up with the axes in the plot, you *mu
 archive/issue_comments_023645.json:
 ```json
 {
-    "body": "\n```\n[23:03] <jason> okay, so basically vector plots are junk unless you plot it with aspect_ratio=1\n[23:03] <jason> This is *very* good to know.\n[23:05] <mhansen> If I get bored, I may change it to use actual arrows.\n[23:06] <jason> You could use my new arrow class :)\n[23:06] <mhansen> Yep\n[23:06] <jason> well, you've probably got enough on your plate to not get bored for a while\n[23:06] <jason> for now, I think we ought to change the plot_vector_field and plot_slope_field documentation\n[23:06] <jason> to put a huge warning in there that these plots must be plotted with aspect_ratio=1 to make any sense\n[23:07] <jason> And maybe also to issue a warning when actually drawing a plot if it's not aspect_ratio=1\n```\n",
+    "body": "```\n[23:03] <jason> okay, so basically vector plots are junk unless you plot it with aspect_ratio=1\n[23:03] <jason> This is *very* good to know.\n[23:05] <mhansen> If I get bored, I may change it to use actual arrows.\n[23:06] <jason> You could use my new arrow class :)\n[23:06] <mhansen> Yep\n[23:06] <jason> well, you've probably got enough on your plate to not get bored for a while\n[23:06] <jason> for now, I think we ought to change the plot_vector_field and plot_slope_field documentation\n[23:06] <jason> to put a huge warning in there that these plots must be plotted with aspect_ratio=1 to make any sense\n[23:07] <jason> And maybe also to issue a warning when actually drawing a plot if it's not aspect_ratio=1\n```",
     "created_at": "2008-09-12T05:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
@@ -120,7 +119,6 @@ archive/issue_comments_023645.json:
     "user": "https://github.com/jasongrout"
 }
 ```
-
 
 ```
 [23:03] <jason> okay, so basically vector plots are junk unless you plot it with aspect_ratio=1
@@ -133,7 +131,6 @@ archive/issue_comments_023645.json:
 [23:06] <jason> to put a huge warning in there that these plots must be plotted with aspect_ratio=1 to make any sense
 [23:07] <jason> And maybe also to issue a warning when actually drawing a plot if it's not aspect_ratio=1
 ```
-
 
 
 

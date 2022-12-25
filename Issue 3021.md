@@ -52,7 +52,7 @@ A short term solution would be to write a vector field class.
 archive/issue_comments_020723.json:
 ```json
 {
-    "body": "\n```\n# a possible implementation of div, for irc user hedgehog\n\nvar('x, y, z')\n(x, y, z)\nf1 = x^2 + 2*y; f2 = x^3 + sin(z); f3 = y*z + 2\nF = vector([f1, f2, f3])\n\nprint F(x=0, y=2, z=3)\n\ndef _variables(F):\n    # this is a little funky -- we're finding all the variables that occur\n    # in the components of F, and somehow choosing an ordering.  There are\n    # other (better ways) but I'm not sure what the correct interface is.\n    # For now, the user can specify the variables if they choose, just\n    # like the gradient method.\n    variables = list(set(flatten([ list(f.variables()) for f in F ])))\n    variables.sort()\n    return variables\n\ndef div(F, variables=None):\n    assert len(F) == 3\n    if variables is None:\n        variables = _variables(F)\n\n    s = 0\n    for i in range(len(F)):\n        s += F[i].derivative(variables[i])\n    return s\n\nprint F\nprint div(F)\nprint div(F, variables=(y, x, z))\n\ndef curl(F, variables=None):\n    assert len(F) == 3\n    if variables is None:\n        variables = _variables(F)\n    assert len(variables) == 3\n    x, y, z = variables\n    Fx, Fy, Fz = F\n    i = Fz.derivative(y) - Fy.derivative(z)\n    j = Fz.derivative(z) - Fx.derivative(x)\n    k = Fy.derivative(x) - Fz.derivative(y)\n    return vector([i, j, k])\n    \nprint curl(F)\nprint curl(F, variables=(y, x, z))\n\n# let's assert that div(curl) == 0\n# we need the variables because the ordering is suspect otherwise: for me,\n# sage: _variables(F)\n# [x, y, z]\n# sage: _variables(curl(F))\n# [z, x, y]\nassert div(curl(F, variables=(x, y, z)), variables=(x, y, z)) == 0\n```\n",
+    "body": "```\n# a possible implementation of div, for irc user hedgehog\n\nvar('x, y, z')\n(x, y, z)\nf1 = x^2 + 2*y; f2 = x^3 + sin(z); f3 = y*z + 2\nF = vector([f1, f2, f3])\n\nprint F(x=0, y=2, z=3)\n\ndef _variables(F):\n    # this is a little funky -- we're finding all the variables that occur\n    # in the components of F, and somehow choosing an ordering.  There are\n    # other (better ways) but I'm not sure what the correct interface is.\n    # For now, the user can specify the variables if they choose, just\n    # like the gradient method.\n    variables = list(set(flatten([ list(f.variables()) for f in F ])))\n    variables.sort()\n    return variables\n\ndef div(F, variables=None):\n    assert len(F) == 3\n    if variables is None:\n        variables = _variables(F)\n\n    s = 0\n    for i in range(len(F)):\n        s += F[i].derivative(variables[i])\n    return s\n\nprint F\nprint div(F)\nprint div(F, variables=(y, x, z))\n\ndef curl(F, variables=None):\n    assert len(F) == 3\n    if variables is None:\n        variables = _variables(F)\n    assert len(variables) == 3\n    x, y, z = variables\n    Fx, Fy, Fz = F\n    i = Fz.derivative(y) - Fy.derivative(z)\n    j = Fz.derivative(z) - Fx.derivative(x)\n    k = Fy.derivative(x) - Fz.derivative(y)\n    return vector([i, j, k])\n    \nprint curl(F)\nprint curl(F, variables=(y, x, z))\n\n# let's assert that div(curl) == 0\n# we need the variables because the ordering is suspect otherwise: for me,\n# sage: _variables(F)\n# [x, y, z]\n# sage: _variables(curl(F))\n# [z, x, y]\nassert div(curl(F, variables=(x, y, z)), variables=(x, y, z)) == 0\n```",
     "created_at": "2009-06-14T21:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_020723.json:
     "user": "https://github.com/ncalexan"
 }
 ```
-
 
 ```
 # a possible implementation of div, for irc user hedgehog
@@ -119,7 +118,6 @@ print curl(F, variables=(y, x, z))
 # [z, x, y]
 assert div(curl(F, variables=(x, y, z)), variables=(x, y, z)) == 0
 ```
-
 
 
 
@@ -182,7 +180,7 @@ What generic curl (I don't think it's in Sage right now)?  Or are you saying we 
 archive/issue_comments_020727.json:
 ```json
 {
-    "body": "Note that in the code above, it should be:\n\n```\nk = Fy.derivative(x) - Fx.derivative(y)\n```\n\n\nThe \"`Fz`\" should be \"`Fx`\".",
+    "body": "Note that in the code above, it should be:\n\n```\nk = Fy.derivative(x) - Fx.derivative(y)\n```\n\nThe \"`Fz`\" should be \"`Fx`\".",
     "created_at": "2011-07-28T20:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -197,7 +195,6 @@ Note that in the code above, it should be:
 k = Fy.derivative(x) - Fx.derivative(y)
 ```
 
-
 The "`Fz`" should be "`Fx`".
 
 
@@ -207,7 +204,7 @@ The "`Fz`" should be "`Fx`".
 archive/issue_comments_020728.json:
 ```json
 {
-    "body": "Also\n\n```\n j = Fx.derivative(z) - Fz.derivative(x)\n```\n",
+    "body": "Also\n\n```\n j = Fx.derivative(z) - Fz.derivative(x)\n```",
     "created_at": "2012-02-19T14:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -221,7 +218,6 @@ Also
 ```
  j = Fx.derivative(z) - Fz.derivative(x)
 ```
-
 
 
 
@@ -410,7 +406,7 @@ The extracting of variables from each element and then sorting by name looks sca
 archive/issue_comments_020735.json:
 ```json
 {
-    "body": "If your vectors are callable symbolic vectors, you should be able to get the list of arguments from the base ring (since you've already explicitly given an order to the variables):\n\n\n```\nsage: f(x,y,z)=(x*y,y*z,z^2)\nsage: f\n(x, y, z) |--> (x*y, y*z, z^2)\nsage: type(f)\n<class 'sage.modules.vector_callable_symbolic_dense.Vector_callable_symbolic_dense'>\nsage: f.base_ring().arguments()\n(x, y, z)\n```\n",
+    "body": "If your vectors are callable symbolic vectors, you should be able to get the list of arguments from the base ring (since you've already explicitly given an order to the variables):\n\n```\nsage: f(x,y,z)=(x*y,y*z,z^2)\nsage: f\n(x, y, z) |--> (x*y, y*z, z^2)\nsage: type(f)\n<class 'sage.modules.vector_callable_symbolic_dense.Vector_callable_symbolic_dense'>\nsage: f.base_ring().arguments()\n(x, y, z)\n```",
     "created_at": "2014-05-02T02:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -421,7 +417,6 @@ archive/issue_comments_020735.json:
 
 If your vectors are callable symbolic vectors, you should be able to get the list of arguments from the base ring (since you've already explicitly given an order to the variables):
 
-
 ```
 sage: f(x,y,z)=(x*y,y*z,z^2)
 sage: f
@@ -431,7 +426,6 @@ sage: type(f)
 sage: f.base_ring().arguments()
 (x, y, z)
 ```
-
 
 
 
@@ -600,7 +594,7 @@ I was going to look at this, but looks like Eviatar and Samuel are on top, so ju
 archive/issue_comments_020741.json:
 ```json
 {
-    "body": "Replying to [comment:24 kcrisman]:\n> I was going to look at this, but looks like Eviatar and Samuel are on top, so just think of this as a ping :)\n\nFeel free to look at this yourself :)",
+    "body": "Replying to [comment:24 kcrisman]:\n> I was going to look at this, but looks like Eviatar and Samuel are on top, so just think of this as a ping :)\n\n\nFeel free to look at this yourself :)",
     "created_at": "2014-10-22T06:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -611,6 +605,7 @@ archive/issue_comments_020741.json:
 
 Replying to [comment:24 kcrisman]:
 > I was going to look at this, but looks like Eviatar and Samuel are on top, so just think of this as a ping :)
+
 
 Feel free to look at this yourself :)
 
@@ -659,7 +654,7 @@ Are there any enhancements to this with-patch, 7-year-old ticket that simply can
 archive/issue_comments_020744.json:
 ```json
 {
-    "body": "I added the 2-dim input. If you're happy with my changes, then I think we can set this to a positive review.\n----\nNew commits:",
+    "body": "I added the 2-dim input. If you're happy with my changes, then I think we can set this to a positive review.\n\n---\nNew commits:",
     "created_at": "2015-02-11T15:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3021",
     "type": "issue_comment",
@@ -669,7 +664,8 @@ archive/issue_comments_020744.json:
 ```
 
 I added the 2-dim input. If you're happy with my changes, then I think we can set this to a positive review.
-----
+
+---
 New commits:
 
 

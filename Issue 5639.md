@@ -3,7 +3,7 @@
 archive/issues_005639.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
     "created_at": "2009-03-30T03:03:04Z",
     "labels": [
         "component: calculus",
@@ -20,12 +20,10 @@ Assignee: @burcin
 
 CC:  @kcrisman
 
-
 ```
 sage: m = matrix(2,[1,sqrt(2), 3, -5/2])
 sage: m.minpoly()
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5639
 
@@ -164,7 +162,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_043951.json:
 ```json
 {
-    "body": "I think this patch broke charpoly.  See the doctest around line 280 of matrix_symbolic_dense.pyx:\n\n\n```\nsage: M = matrix(SR, 2, 2, var('a,b,c,d'))\nsage: M.charpoly('t')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (288, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/.sage/temp/sage.math.washington.edu/17572/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/matrix/matrix_symbolic_dense.so in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.charpoly (sage/matrix/matrix_symbolic_dense.c:2620)()\n    289         # correct for the discrepancy.\n    290         cp = self._maxima_(maxima).charpoly(var)._sage_()\n--> 291         cp = cp.expand().polynomial(None, ring=SR[var])\n    292         if self.nrows() % 2 == 1:\n    293             cp = -cp\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17292)()\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in polynomial(ex, base_ring, ring)\n    985          1.87813065119873*x^2 + 20.0855369231877\n    986     \"\"\"\n--> 987     converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n    988     res = converter()\n    989     return converter.ring(res)\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __init__(self, ex, base_ring, ring)\n    843             G = ring.variable_names_recursive()\n    844             if any([repr(v) not in G for v in ex.variables()]):\n--> 845                 raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n    846             self.ring = ring\n    847             self.base_ring = ring.base_ring()\n\nTypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic Ring\n```\n",
+    "body": "I think this patch broke charpoly.  See the doctest around line 280 of matrix_symbolic_dense.pyx:\n\n```\nsage: M = matrix(SR, 2, 2, var('a,b,c,d'))\nsage: M.charpoly('t')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (288, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/.sage/temp/sage.math.washington.edu/17572/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/matrix/matrix_symbolic_dense.so in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.charpoly (sage/matrix/matrix_symbolic_dense.c:2620)()\n    289         # correct for the discrepancy.\n    290         cp = self._maxima_(maxima).charpoly(var)._sage_()\n--> 291         cp = cp.expand().polynomial(None, ring=SR[var])\n    292         if self.nrows() % 2 == 1:\n    293             cp = -cp\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17292)()\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in polynomial(ex, base_ring, ring)\n    985          1.87813065119873*x^2 + 20.0855369231877\n    986     \"\"\"\n--> 987     converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n    988     res = converter()\n    989     return converter.ring(res)\n\n/home/jason/sage-4.1.2.rc0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __init__(self, ex, base_ring, ring)\n    843             G = ring.variable_names_recursive()\n    844             if any([repr(v) not in G for v in ex.variables()]):\n--> 845                 raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n    846             self.ring = ring\n    847             self.base_ring = ring.base_ring()\n\nTypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic Ring\n```",
     "created_at": "2009-10-06T21:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -174,7 +172,6 @@ archive/issue_comments_043951.json:
 ```
 
 I think this patch broke charpoly.  See the doctest around line 280 of matrix_symbolic_dense.pyx:
-
 
 ```
 sage: M = matrix(SR, 2, 2, var('a,b,c,d'))
@@ -216,7 +213,6 @@ TypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic 
 
 
 
-
 ---
 
 archive/issue_comments_043952.json:
@@ -240,7 +236,7 @@ Hey, might that last error be related to the ticket which implements getting var
 archive/issue_comments_043953.json:
 ```json
 {
-    "body": "Replying to [comment:10 kcrisman]:\n> Hey, might that last error be related to the ticket which implements getting variables out of polynomial rings (e.g. 1.00*t was a variable but t wasn't)?\n\nThat doesn't seem likely to me.  I'm wondering if the error has to do with the variable in the symbolic expression coming from maxima being a different variable than what is requested in SR[var] (i.e., the \"t\"s in the TypeError are not the same object).  This is just a guess, though.",
+    "body": "Replying to [comment:10 kcrisman]:\n> Hey, might that last error be related to the ticket which implements getting variables out of polynomial rings (e.g. 1.00*t was a variable but t wasn't)?\n\n\nThat doesn't seem likely to me.  I'm wondering if the error has to do with the variable in the symbolic expression coming from maxima being a different variable than what is requested in SR[var] (i.e., the \"t\"s in the TypeError are not the same object).  This is just a guess, though.",
     "created_at": "2009-10-07T02:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -252,6 +248,7 @@ archive/issue_comments_043953.json:
 Replying to [comment:10 kcrisman]:
 > Hey, might that last error be related to the ticket which implements getting variables out of polynomial rings (e.g. 1.00*t was a variable but t wasn't)?
 
+
 That doesn't seem likely to me.  I'm wondering if the error has to do with the variable in the symbolic expression coming from maxima being a different variable than what is requested in SR[var] (i.e., the "t"s in the TypeError are not the same object).  This is just a guess, though.
 
 
@@ -261,7 +258,7 @@ That doesn't seem likely to me.  I'm wondering if the error has to do with the v
 archive/issue_comments_043954.json:
 ```json
 {
-    "body": "I believe this shows the error more clearly, maybe:\n\n\n```\nsage: var('s,t')\n(s, t)\nsage: expr=t^2-2*s*t+1\nsage: expr.expand()\n-2*s*t + t^2 + 1\nsage: expr.polynomial(None,ring=SR['t'])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/25931/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17284)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in polynomial(ex, base_ring, ring)\n    985          1.87813065119873*x^2 + 20.0855369231877\n    986     \"\"\"\n--> 987     converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n    988     res = converter()\n    989     return converter.ring(res)\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __init__(self, ex, base_ring, ring)\n    843             G = map(repr, ring.gens())\n    844             if any([repr(v) not in G for v in ex.variables()]):\n--> 845                 raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n    846             self.ring = ring\n    847             self.base_ring = ring.base_ring()\n\nTypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic Ring\n\n```\n",
+    "body": "I believe this shows the error more clearly, maybe:\n\n```\nsage: var('s,t')\n(s, t)\nsage: expr=t^2-2*s*t+1\nsage: expr.expand()\n-2*s*t + t^2 + 1\nsage: expr.polynomial(None,ring=SR['t'])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/25931/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17284)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in polynomial(ex, base_ring, ring)\n    985          1.87813065119873*x^2 + 20.0855369231877\n    986     \"\"\"\n--> 987     converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n    988     res = converter()\n    989     return converter.ring(res)\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __init__(self, ex, base_ring, ring)\n    843             G = map(repr, ring.gens())\n    844             if any([repr(v) not in G for v in ex.variables()]):\n--> 845                 raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n    846             self.ring = ring\n    847             self.base_ring = ring.base_ring()\n\nTypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic Ring\n\n```",
     "created_at": "2009-10-07T03:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -271,7 +268,6 @@ archive/issue_comments_043954.json:
 ```
 
 I believe this shows the error more clearly, maybe:
-
 
 ```
 sage: var('s,t')
@@ -307,13 +303,12 @@ TypeError: t is not a variable of Univariate Polynomial Ring in t over Symbolic 
 
 
 
-
 ---
 
 archive/issue_comments_043955.json:
 ```json
 {
-    "body": "Yep, the problem is in this code in `PolynomialConverter` in `sage/symbolic/expression_conversions.py`:\n\n\n```\n        if ring is not None:\n            G = map(repr, ring.gens())\n            if any([repr(v) not in G for v in ex.variables()]):\n                raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n            self.ring = ring\n            self.base_ring = ring.base_ring()\n```\n\n\nNote that this does not allow for coefficients to have variables, but coefficients may have variables if the base ring is the symbolic ring!\n\nNote that the error message in the last comment is misleading: it should say that \"s is not a variable of ...\", but since the test uses \"any\", it doesn't know which variable is bad.",
+    "body": "Yep, the problem is in this code in `PolynomialConverter` in `sage/symbolic/expression_conversions.py`:\n\n```\n        if ring is not None:\n            G = map(repr, ring.gens())\n            if any([repr(v) not in G for v in ex.variables()]):\n                raise TypeError, \"%s is not a variable of %s\" %(v, ring)\n            self.ring = ring\n            self.base_ring = ring.base_ring()\n```\n\nNote that this does not allow for coefficients to have variables, but coefficients may have variables if the base ring is the symbolic ring!\n\nNote that the error message in the last comment is misleading: it should say that \"s is not a variable of ...\", but since the test uses \"any\", it doesn't know which variable is bad.",
     "created_at": "2009-10-07T03:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
@@ -324,7 +319,6 @@ archive/issue_comments_043955.json:
 
 Yep, the problem is in this code in `PolynomialConverter` in `sage/symbolic/expression_conversions.py`:
 
-
 ```
         if ring is not None:
             G = map(repr, ring.gens())
@@ -333,7 +327,6 @@ Yep, the problem is in this code in `PolynomialConverter` in `sage/symbolic/expr
             self.ring = ring
             self.base_ring = ring.base_ring()
 ```
-
 
 Note that this does not allow for coefficients to have variables, but coefficients may have variables if the base ring is the symbolic ring!
 

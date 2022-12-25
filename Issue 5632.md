@@ -122,7 +122,7 @@ Looks good, applies OK against Sage 3.4.1.alpha0, all doctests passed. Positive 
 archive/issue_comments_043904.json:
 ```json
 {
-    "body": "Due to #5520 this patch needs to be rebased:\n\n```\nsage-3.4.1.rc0/devel/sage$ patch -p1 --dry-run < trac_5632_quaternion.patch \npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\nHunk #1 succeeded at 171 (offset 4 lines).\nHunk #2 succeeded at 354 (offset 140 lines).\nHunk #3 succeeded at 398 (offset 140 lines).\nHunk #4 succeeded at 410 (offset 140 lines).\nHunk #5 succeeded at 422 (offset 140 lines).\nHunk #6 succeeded at 437 (offset 140 lines).\nHunk #7 succeeded at 496 (offset 140 lines).\nHunk #8 succeeded at 537 (offset 167 lines).\nHunk #9 succeeded at 685 (offset 167 lines).\nHunk #10 succeeded at 712 (offset 167 lines).\nHunk #11 succeeded at 797 (offset 224 lines).\nHunk #12 succeeded at 1149 (offset 261 lines).\nHunk #13 succeeded at 1219 (offset 260 lines).\nHunk #14 succeeded at 1244 (offset 260 lines).\nHunk #15 succeeded at 1494 (offset 441 lines).\nHunk #16 succeeded at 1854 (offset 441 lines).\nHunk #17 FAILED at 1912.\n1 out of 17 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra_element.pyx.rej\n```\n\n\nCheers,\n\nMichael",
+    "body": "Due to #5520 this patch needs to be rebased:\n\n```\nsage-3.4.1.rc0/devel/sage$ patch -p1 --dry-run < trac_5632_quaternion.patch \npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\nHunk #1 succeeded at 171 (offset 4 lines).\nHunk #2 succeeded at 354 (offset 140 lines).\nHunk #3 succeeded at 398 (offset 140 lines).\nHunk #4 succeeded at 410 (offset 140 lines).\nHunk #5 succeeded at 422 (offset 140 lines).\nHunk #6 succeeded at 437 (offset 140 lines).\nHunk #7 succeeded at 496 (offset 140 lines).\nHunk #8 succeeded at 537 (offset 167 lines).\nHunk #9 succeeded at 685 (offset 167 lines).\nHunk #10 succeeded at 712 (offset 167 lines).\nHunk #11 succeeded at 797 (offset 224 lines).\nHunk #12 succeeded at 1149 (offset 261 lines).\nHunk #13 succeeded at 1219 (offset 260 lines).\nHunk #14 succeeded at 1244 (offset 260 lines).\nHunk #15 succeeded at 1494 (offset 441 lines).\nHunk #16 succeeded at 1854 (offset 441 lines).\nHunk #17 FAILED at 1912.\n1 out of 17 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra_element.pyx.rej\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T07:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ Hunk #17 FAILED at 1912.
 1 out of 17 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra_element.pyx.rej
 ```
 
-
 Cheers,
 
 Michael
@@ -168,7 +167,7 @@ Michael
 archive/issue_comments_043905.json:
 ```json
 {
-    "body": "Here's a rebased version.  Since the previous one had a positive review, I assume this one does, too.\n\nHowever, I think we also need something like the attached 'quatalg-reference.patch' to process the moved files for inclusion into the reference manual, but when I apply it and try to build the docs, I get error messages like\n\n```\nTraceback (most recent call last):\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 668, in <module>\n    getattr(get_builder(name), type)()\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 415, in get_modified_modules\n    added, changed, removed = env.get_outdated_files(False)\n  File \"/Applications/sage_builds/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx/environment.py\", line 400, in get_outdated_files\n    newmtime = path.getmtime(self.doc2path(docname))\n  File \"/Applications/sage_builds/sage-3.4.1.alpha0/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/Applications/sage_builds/sage-3.4.1.alpha0/devel/sage-main/doc/en/reference/sage/algebras/quaternion_algebra.rst'\n```\n\n(This fix should have been part of #5520, I think.)",
+    "body": "Here's a rebased version.  Since the previous one had a positive review, I assume this one does, too.\n\nHowever, I think we also need something like the attached 'quatalg-reference.patch' to process the moved files for inclusion into the reference manual, but when I apply it and try to build the docs, I get error messages like\n\n```\nTraceback (most recent call last):\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 668, in <module>\n    getattr(get_builder(name), type)()\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/Applications/sage/devel/sage/doc/common/builder.py\", line 415, in get_modified_modules\n    added, changed, removed = env.get_outdated_files(False)\n  File \"/Applications/sage_builds/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx/environment.py\", line 400, in get_outdated_files\n    newmtime = path.getmtime(self.doc2path(docname))\n  File \"/Applications/sage_builds/sage-3.4.1.alpha0/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/Applications/sage_builds/sage-3.4.1.alpha0/devel/sage-main/doc/en/reference/sage/algebras/quaternion_algebra.rst'\n```\n(This fix should have been part of #5520, I think.)",
     "created_at": "2009-03-31T15:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5632",
     "type": "issue_comment",
@@ -195,7 +194,6 @@ Traceback (most recent call last):
     return os.stat(filename).st_mtime
 OSError: [Errno 2] No such file or directory: '/Applications/sage_builds/sage-3.4.1.alpha0/devel/sage-main/doc/en/reference/sage/algebras/quaternion_algebra.rst'
 ```
-
 (This fix should have been part of #5520, I think.)
 
 

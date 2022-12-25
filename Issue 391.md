@@ -108,7 +108,7 @@ corner cases.
 archive/issue_comments_001908.json:
 ```json
 {
-    "body": "Hi Nick,\n\n(1) I applied the patch and when I do \n\n   conductor**?\n\nI get a segfault that results from an infinite loop; at least\nfor me, this happens in the function given below, which recursively calls\nitself and gets in an infinite loop.   This happens for me on \n32-bit Linux on both SAGE-2.6 vanilla and my latest SAGE-2.7\ndevel tree. \n\n\n\n```\n  cdef propos_name(object obj, object hist, object names, object matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if PyDict_Contains(names, objid):\n         return <object>PyDict_GetItem(names, objid)\n     hist_record = <object>PyDict_GetItem(hist, objid)\n     parent_name = apropos_name(<object>PyTuple_GetItem(hist_record, 1), hist, names, matches)\n     name = parent_name + '.' + <object>PyTuple_GetItem(hist_record, 2)\n     PyList_Append(matches, (name, obj))\n     PyDict_SetItem(names, objid, name)\n     return name\n```\n\n\n\n2. The style of the above code surprises me.  The whole point of \nPyrex (and me choosing Pyrex for SAGE) is so that one never ever has\nto write code like that.  Do you really think it is actually \nsignificantly more readable or faster?   I personally find the \nfollowing, which is equivalent, more readable:\n\n  cdef propos_name(obj, hist, names, matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if objid in names:\n         return names[objid]\n     hist_record = hist[objid]\n     parent_name = apropos_name(hist_record[1], hist, names, matches)\n     name = parent_name + '.' + hist_record[2]\n     matches.append((name, obj))\n     names[objid] = name\n     return name\n\n\n -- William",
+    "body": "Hi Nick,\n\n(1) I applied the patch and when I do \n\n   conductor**?\n\nI get a segfault that results from an infinite loop; at least\nfor me, this happens in the function given below, which recursively calls\nitself and gets in an infinite loop.   This happens for me on \n32-bit Linux on both SAGE-2.6 vanilla and my latest SAGE-2.7\ndevel tree. \n\n\n```\n  cdef propos_name(object obj, object hist, object names, object matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if PyDict_Contains(names, objid):\n         return <object>PyDict_GetItem(names, objid)\n     hist_record = <object>PyDict_GetItem(hist, objid)\n     parent_name = apropos_name(<object>PyTuple_GetItem(hist_record, 1), hist, names, matches)\n     name = parent_name + '.' + <object>PyTuple_GetItem(hist_record, 2)\n     PyList_Append(matches, (name, obj))\n     PyDict_SetItem(names, objid, name)\n     return name\n```\n\n\n2. The style of the above code surprises me.  The whole point of \nPyrex (and me choosing Pyrex for SAGE) is so that one never ever has\nto write code like that.  Do you really think it is actually \nsignificantly more readable or faster?   I personally find the \nfollowing, which is equivalent, more readable:\n\n  cdef propos_name(obj, hist, names, matches):\n     objid = <int>(<void*> obj) # id(obj)\n     if objid in names:\n         return names[objid]\n     hist_record = hist[objid]\n     parent_name = apropos_name(hist_record[1], hist, names, matches)\n     name = parent_name + '.' + hist_record[2]\n     matches.append((name, obj))\n     names[objid] = name\n     return name\n\n\n -- William",
     "created_at": "2007-06-30T04:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
@@ -130,7 +130,6 @@ itself and gets in an infinite loop.   This happens for me on
 devel tree. 
 
 
-
 ```
   cdef propos_name(object obj, object hist, object names, object matches):
      objid = <int>(<void*> obj) # id(obj)
@@ -143,7 +142,6 @@ devel tree.
      PyDict_SetItem(names, objid, name)
      return name
 ```
-
 
 
 2. The style of the above code surprises me.  The whole point of 
@@ -208,7 +206,7 @@ NOT ready -- Nick never addressed my comments from "06/29/2007 09:52:03 PM".  Th
 archive/issue_comments_001910.json:
 ```json
 {
-    "body": "Nick said:\n\n```\nAt some point I will resubmit -- I'm just too busy right now.  I  \ndon't know what invalidate means but I'd appreciate it if the ticket  \n(and the patch!) stayed in TRAC. \n```\n\n\nCheers,\n\nMichael",
+    "body": "Nick said:\n\n```\nAt some point I will resubmit -- I'm just too busy right now.  I  \ndon't know what invalidate means but I'd appreciate it if the ticket  \n(and the patch!) stayed in TRAC. \n```\n\nCheers,\n\nMichael",
     "created_at": "2007-11-19T23:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
@@ -224,7 +222,6 @@ At some point I will resubmit -- I'm just too busy right now.  I
 don't know what invalidate means but I'd appreciate it if the ticket  
 (and the patch!) stayed in TRAC. 
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_008955.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nReported by Roberto N\u00f3brega on [sage-devel]:\n\n```\nHello, all!\n\nAfter running\n\nrandom_matrix(GF(2), 2, 1)\n\nI always get the same matrix, [[1][1]].\n\nAlso, the following code\n\nfreq = {}\nfor _ in range(1000):\n    M = random_matrix(GF(2), 2, 2)\n    M.set_immutable()\n    if M not in freq:\n        freq[M] = 1\n    else:\n        freq[M] += 1\nshow(freq)\n\ngives a very different result from the uniform distribution that I was\nexpecting. For example, the all-ones 2x2 matrix is the more probable,\nand matrices with a full-zero-row does not appear, although matrices\nwith a full-zero-column does. In general, I noticed that the more\n\"1's\" the matrix has, the more probable it is.\n\nAm I missing something?\n\nRegards,\nRoberto.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8955\n\n",
+    "body": "Assignee: jason, was\n\nReported by Roberto N\u00f3brega on [sage-devel]:\n\n```\nHello, all!\n\nAfter running\n\nrandom_matrix(GF(2), 2, 1)\n\nI always get the same matrix, [[1][1]].\n\nAlso, the following code\n\nfreq = {}\nfor _ in range(1000):\n    M = random_matrix(GF(2), 2, 2)\n    M.set_immutable()\n    if M not in freq:\n        freq[M] = 1\n    else:\n        freq[M] += 1\nshow(freq)\n\ngives a very different result from the uniform distribution that I was\nexpecting. For example, the all-ones 2x2 matrix is the more probable,\nand matrices with a full-zero-row does not appear, although matrices\nwith a full-zero-column does. In general, I noticed that the more\n\"1's\" the matrix has, the more probable it is.\n\nAm I missing something?\n\nRegards,\nRoberto.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8955\n\n",
     "created_at": "2010-05-12T10:44:22Z",
     "labels": [
         "component: linear algebra",
@@ -53,7 +53,6 @@ Am I missing something?
 Regards,
 Roberto.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8955
 
@@ -120,7 +119,7 @@ I always forget to toggle the right status.
 archive/issue_comments_082400.json:
 ```json
 {
-    "body": "I agree with the proposed solution, but I think there should be some explanations in the docstring about what `density` means exactly.\nSeeing \n\n```\ndef random_matrix(R, nrows, ncols=None, sparse=False, density=None, *args, **kwds):\n    ...\n    - ``density``: Integer (default: 1)\n    ...\n```\n\nseems strange to me.",
+    "body": "I agree with the proposed solution, but I think there should be some explanations in the docstring about what `density` means exactly.\nSeeing \n\n```\ndef random_matrix(R, nrows, ncols=None, sparse=False, density=None, *args, **kwds):\n    ...\n    - ``density``: Integer (default: 1)\n    ...\n```\nseems strange to me.",
     "created_at": "2010-08-15T20:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8955",
     "type": "issue_comment",
@@ -138,7 +137,6 @@ def random_matrix(R, nrows, ncols=None, sparse=False, density=None, *args, **kwd
     - ``density``: Integer (default: 1)
     ...
 ```
-
 seems strange to me.
 
 

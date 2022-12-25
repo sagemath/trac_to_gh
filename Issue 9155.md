@@ -3,7 +3,7 @@
 archive/issues_009155.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @rbeezer @fchapoton\n\ncached_method should not be used with mutable return values\n\n\n```\nsage: G = SymmetricGroup(2)\nsage: elements = G.list()\nsage: elements.remove(G(\"()\"))\nsage: G.list()\n[(1,2)]\nsage: K = SymmetricGroup(2)\nsage: K.list()\n[(1,2)]\n```\n\n\nas reported at http://groups.google.com/group/sage-devel/browse_thread/thread/265e134a585cf2bf\n\nIssue created by migration from https://trac.sagemath.org/ticket/9155\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @rbeezer @fchapoton\n\ncached_method should not be used with mutable return values\n\n```\nsage: G = SymmetricGroup(2)\nsage: elements = G.list()\nsage: elements.remove(G(\"()\"))\nsage: G.list()\n[(1,2)]\nsage: K = SymmetricGroup(2)\nsage: K.list()\n[(1,2)]\n```\n\nas reported at http://groups.google.com/group/sage-devel/browse_thread/thread/265e134a585cf2bf\n\nIssue created by migration from https://trac.sagemath.org/ticket/9155\n\n",
     "created_at": "2010-06-06T04:35:30Z",
     "labels": [
         "component: algebra",
@@ -22,7 +22,6 @@ CC:  @rbeezer @fchapoton
 
 cached_method should not be used with mutable return values
 
-
 ```
 sage: G = SymmetricGroup(2)
 sage: elements = G.list()
@@ -33,7 +32,6 @@ sage: K = SymmetricGroup(2)
 sage: K.list()
 [(1,2)]
 ```
-
 
 as reported at http://groups.google.com/group/sage-devel/browse_thread/thread/265e134a585cf2bf
 
@@ -119,7 +117,7 @@ archive/issue_events_022516.json:
 archive/issue_comments_085340.json:
 ```json
 {
-    "body": "Test added as suggested in email.\n----\nNew commits:",
+    "body": "Test added as suggested in email.\n\n---\nNew commits:",
     "created_at": "2016-04-29T08:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9155",
     "type": "issue_comment",
@@ -129,7 +127,8 @@ archive/issue_comments_085340.json:
 ```
 
 Test added as suggested in email.
-----
+
+---
 New commits:
 
 

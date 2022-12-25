@@ -3,7 +3,7 @@
 archive/issues_003362.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\n\n```\nInteger(5)._lmul_(Integer(3))\n```\n\n should produce 15, but instead throws\n\n```\nNotImplementedError: parents Integer Ring Integer Ring True\n```\n\nThis makes it hard to write general code that works with noncomutative multiplication.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3362\n\n",
+    "body": "Assignee: @robertwb\n\n```\nInteger(5)._lmul_(Integer(3))\n```\n should produce 15, but instead throws\n\n```\nNotImplementedError: parents Integer Ring Integer Ring True\n```\nThis makes it hard to write general code that works with noncomutative multiplication.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3362\n\n",
     "created_at": "2008-06-04T16:19:22Z",
     "labels": [
         "component: coercion",
@@ -18,17 +18,14 @@ archive/issues_003362.json:
 ```
 Assignee: @robertwb
 
-
 ```
 Integer(5)._lmul_(Integer(3))
 ```
-
  should produce 15, but instead throws
 
 ```
 NotImplementedError: parents Integer Ring Integer Ring True
 ```
-
 This makes it hard to write general code that works with noncomutative multiplication.  
 
 Issue created by migration from https://trac.sagemath.org/ticket/3362
@@ -62,7 +59,7 @@ The raising of a NotImplementedError in _lmul_ signifies that _lmul_ is not impl
 archive/issue_comments_023479.json:
 ```json
 {
-    "body": "Robert, any idea what is going on here? \n\nThis is still broken with \"new\" coercion:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: Integer(5)._lmul_(Integer(3))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement._lmul_ (sage/structure/element.c:8032)()\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement._lmul_ (sage/structure/element.c:8002)()\n\nNotImplementedError: parents Integer Ring Integer Ring True\nsage: \n```\n\n\nCheers,\n\nMichael",
+    "body": "Robert, any idea what is going on here? \n\nThis is still broken with \"new\" coercion:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: Integer(5)._lmul_(Integer(3))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement._lmul_ (sage/structure/element.c:8032)()\n\n/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement._lmul_ (sage/structure/element.c:8002)()\n\nNotImplementedError: parents Integer Ring Integer Ring True\nsage: \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T16:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3362",
     "type": "issue_comment",
@@ -93,7 +90,6 @@ NotImplementedError                       Traceback (most recent call last)
 NotImplementedError: parents Integer Ring Integer Ring True
 sage: 
 ```
-
 
 Cheers,
 

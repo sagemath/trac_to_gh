@@ -3,7 +3,7 @@
 archive/issues_001172.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nChange the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.\n\n\n```\nThe SYMPOW COPYING file says:\n\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n * Redistribution of source code must retain the above copyright notice,\n this list of conditions and the following disclaimer.\n * Redistribution in binary form must reproduce the above copyright\n notice, this list of conditions and the following disclaimer in the\n documentation and/or other materials provided with the distribution.\n * If redistribution is done as a part of a compilation that has a more\n restrictive license (such as the GPL), then the fact that SYMPOW has\n a less restrictive license must be made clear to the recipient.\n For example, a line like (include bracketed text if SYMPOW is modified):\n \"This compilation includes [a modification of] SYMPOW whose [original]\n  code has a less-restrictive license than the entire compilation.\"\n should appear in a suitable place in the COPYING and/or LICENSE file.\n\n[followed by the BSD disclaimer]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1172\n\n",
+    "body": "Assignee: @williamstein\n\nChange the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.\n\n```\nThe SYMPOW COPYING file says:\n\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n * Redistribution of source code must retain the above copyright notice,\n this list of conditions and the following disclaimer.\n * Redistribution in binary form must reproduce the above copyright\n notice, this list of conditions and the following disclaimer in the\n documentation and/or other materials provided with the distribution.\n * If redistribution is done as a part of a compilation that has a more\n restrictive license (such as the GPL), then the fact that SYMPOW has\n a less restrictive license must be made clear to the recipient.\n For example, a line like (include bracketed text if SYMPOW is modified):\n \"This compilation includes [a modification of] SYMPOW whose [original]\n  code has a less-restrictive license than the entire compilation.\"\n should appear in a suitable place in the COPYING and/or LICENSE file.\n\n[followed by the BSD disclaimer]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1172\n\n",
     "created_at": "2007-11-14T23:25:20Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ archive/issues_001172.json:
 Assignee: @williamstein
 
 Change the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.
-
 
 ```
 The SYMPOW COPYING file says:
@@ -43,7 +42,6 @@ modification, are permitted provided that the following conditions are met:
 
 [followed by the BSD disclaimer]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1172
 
@@ -218,7 +216,7 @@ Jeroen: should this be merged if your question remains unanswered?
 archive/issue_comments_007172.json:
 ```json
 {
-    "body": "Replying to [comment:5 kini]:\n> Jeroen: should this be merged if your question remains unanswered?\nI guess so.  This patch doesn't change the license, it changes the documentation of the license.  Whether or not this patch gets merged, my question stands.",
+    "body": "Replying to [comment:5 kini]:\n> Jeroen: should this be merged if your question remains unanswered?\n\nI guess so.  This patch doesn't change the license, it changes the documentation of the license.  Whether or not this patch gets merged, my question stands.",
     "created_at": "2012-06-28T08:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
@@ -229,6 +227,7 @@ archive/issue_comments_007172.json:
 
 Replying to [comment:5 kini]:
 > Jeroen: should this be merged if your question remains unanswered?
+
 I guess so.  This patch doesn't change the license, it changes the documentation of the license.  Whether or not this patch gets merged, my question stands.
 
 

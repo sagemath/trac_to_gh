@@ -3,7 +3,7 @@
 archive/issues_000834.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI'm not sure if this ticket should stay.  IT's suspicious...\n\n\nSee this example, where changing from Linbox's echelon to use Sage's Strassen with a wise choice of cuttoff improves performance by a factor of 3:\n\n\n```\nsage: time c=a._echelon_strassen(1000)   # uses linbox\nCPU times: user 1.47 s, sys: 0.02 s, total: 1.50 s\nWall time: 1.49\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form()\nCPU times: user 1.48 s, sys: 0.01 s, total: 1.48 s\nWall time: 1.48\nsage: time c = a._echelon_strassen(8)\nCPU times: user 1.15 s, sys: 0.00 s, total: 1.15 s\nWall time: 1.15\nsage: time c = a._echelon_strassen(32)\nCPU times: user 0.90 s, sys: 0.00 s, total: 0.90 s\nWall time: 0.91\nsage: time c = a._echelon_strassen(128)\nCPU times: user 0.82 s, sys: 0.00 s, total: 0.82 s\nWall time: 0.82\nsage: time c = a._echelon_strassen(256)\nCPU times: user 0.76 s, sys: 0.00 s, total: 0.76 s\nWall time: 0.76\nsage: time c = a._echelon_strassen(512)\nCPU times: user 0.67 s, sys: 0.00 s, total: 0.67 s\nWall time: 0.67\n\nLinbox isn't so good:\n\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 1.49 s, sys: 0.02 s, total: 1.51 s\nWall time: 1.53\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 1.53 s, sys: 0.07 s, total: 1.60 s\nWall time: 2.01\n```\n\n\nOn my machine, Magma takes 0.39 seconds to do that strassen, so 0.67 is a reasonable time. \nBut 1.57 is not.\n\nsage: magma.eval('A:=Random(MatrixAlgebra(GF(17),1000)); time E := EchelonForm(A);')\n'Time: 0.390'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/834\n\n",
+    "body": "Assignee: @williamstein\n\nI'm not sure if this ticket should stay.  IT's suspicious...\n\n\nSee this example, where changing from Linbox's echelon to use Sage's Strassen with a wise choice of cuttoff improves performance by a factor of 3:\n\n```\nsage: time c=a._echelon_strassen(1000)   # uses linbox\nCPU times: user 1.47 s, sys: 0.02 s, total: 1.50 s\nWall time: 1.49\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form()\nCPU times: user 1.48 s, sys: 0.01 s, total: 1.48 s\nWall time: 1.48\nsage: time c = a._echelon_strassen(8)\nCPU times: user 1.15 s, sys: 0.00 s, total: 1.15 s\nWall time: 1.15\nsage: time c = a._echelon_strassen(32)\nCPU times: user 0.90 s, sys: 0.00 s, total: 0.90 s\nWall time: 0.91\nsage: time c = a._echelon_strassen(128)\nCPU times: user 0.82 s, sys: 0.00 s, total: 0.82 s\nWall time: 0.82\nsage: time c = a._echelon_strassen(256)\nCPU times: user 0.76 s, sys: 0.00 s, total: 0.76 s\nWall time: 0.76\nsage: time c = a._echelon_strassen(512)\nCPU times: user 0.67 s, sys: 0.00 s, total: 0.67 s\nWall time: 0.67\n\nLinbox isn't so good:\n\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 1.49 s, sys: 0.02 s, total: 1.51 s\nWall time: 1.53\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: a = random_matrix(GF(17),1000)\nsage: time b = a.echelon_form(algorithm='linbox')\nCPU times: user 1.53 s, sys: 0.07 s, total: 1.60 s\nWall time: 2.01\n```\n\nOn my machine, Magma takes 0.39 seconds to do that strassen, so 0.67 is a reasonable time. \nBut 1.57 is not.\n\nsage: magma.eval('A:=Random(MatrixAlgebra(GF(17),1000)); time E := EchelonForm(A);')\n'Time: 0.390'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/834\n\n",
     "created_at": "2007-10-06T04:52:42Z",
     "labels": [
         "component: linear algebra"
@@ -21,7 +21,6 @@ I'm not sure if this ticket should stay.  IT's suspicious...
 
 
 See this example, where changing from Linbox's echelon to use Sage's Strassen with a wise choice of cuttoff improves performance by a factor of 3:
-
 
 ```
 sage: time c=a._echelon_strassen(1000)   # uses linbox
@@ -61,7 +60,6 @@ sage: time b = a.echelon_form(algorithm='linbox')
 CPU times: user 1.53 s, sys: 0.07 s, total: 1.60 s
 Wall time: 2.01
 ```
-
 
 On my machine, Magma takes 0.39 seconds to do that strassen, so 0.67 is a reasonable time. 
 But 1.57 is not.
@@ -121,7 +119,7 @@ Is this still a valid ticket?
 archive/issue_comments_005147.json:
 ```json
 {
-    "body": "I think this is no longer valid since we use ATLAS by default now.\n\nSome timings:\n\n\nON OS X:\n\n```\nsage: a = random_matrix(GF(17),1000)\nsage: time b=a.echelon_form(algorithm='gauss')\nCPU times: user 2.33 s, sys: 0.01 s, total: 2.34 s\nWall time: 2.34\nsage: a._clear_cache()\nsage: time b=a.echelon_form(algorithm='linbox')\nCPU times: user 0.72 s, sys: 0.06 s, total: 0.78 s\nWall time: 0.74\nsage: a._clear_cache()\nsage: time c=a._echelon_strassen(1000) \nCPU times: user 0.87 s, sys: 0.07 s, total: 0.93 s\nWall time: 0.89\n```\n\n\nwhen repeated timings are about the same as above.\n\nOn Linux:\n\n```\nsage: a = random_matrix(GF(17),1000)\nsage: time a._clear_cache(); a.echelon_form(algorithm='linbox')\nCPU times: user 1.24 s, sys: 0.06 s, total: 1.30 s\nWall time: 1.30\nsage: time a._clear_cache(); a._echelon_strassen(1000)\nCPU times: user 1.25 s, sys: 0.07 s, total: 1.32 s\nWall time: 1.32\nsage: time a._clear_cache(); a._echelon_strassen(128)\nCPU times: user 1.56 s, sys: 0.10 s, total: 1.66 s\nWall time: 1.66\nsage: time a._clear_cache(); a._echelon_strassen(512)\nCPU times: user 1.30 s, sys: 0.10 s, total: 1.40 s\nWall time: 1.40\n```\n\n\nConclusion: Linbox always wins, at least by a tiny amount.\nAnyway, with Clement around full time, Linbox is only going\nto improve rapidly, IMHO.",
+    "body": "I think this is no longer valid since we use ATLAS by default now.\n\nSome timings:\n\n\nON OS X:\n\n```\nsage: a = random_matrix(GF(17),1000)\nsage: time b=a.echelon_form(algorithm='gauss')\nCPU times: user 2.33 s, sys: 0.01 s, total: 2.34 s\nWall time: 2.34\nsage: a._clear_cache()\nsage: time b=a.echelon_form(algorithm='linbox')\nCPU times: user 0.72 s, sys: 0.06 s, total: 0.78 s\nWall time: 0.74\nsage: a._clear_cache()\nsage: time c=a._echelon_strassen(1000) \nCPU times: user 0.87 s, sys: 0.07 s, total: 0.93 s\nWall time: 0.89\n```\n\nwhen repeated timings are about the same as above.\n\nOn Linux:\n\n```\nsage: a = random_matrix(GF(17),1000)\nsage: time a._clear_cache(); a.echelon_form(algorithm='linbox')\nCPU times: user 1.24 s, sys: 0.06 s, total: 1.30 s\nWall time: 1.30\nsage: time a._clear_cache(); a._echelon_strassen(1000)\nCPU times: user 1.25 s, sys: 0.07 s, total: 1.32 s\nWall time: 1.32\nsage: time a._clear_cache(); a._echelon_strassen(128)\nCPU times: user 1.56 s, sys: 0.10 s, total: 1.66 s\nWall time: 1.66\nsage: time a._clear_cache(); a._echelon_strassen(512)\nCPU times: user 1.30 s, sys: 0.10 s, total: 1.40 s\nWall time: 1.40\n```\n\nConclusion: Linbox always wins, at least by a tiny amount.\nAnyway, with Clement around full time, Linbox is only going\nto improve rapidly, IMHO.",
     "created_at": "2008-02-27T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/834",
     "type": "issue_comment",
@@ -152,7 +150,6 @@ CPU times: user 0.87 s, sys: 0.07 s, total: 0.93 s
 Wall time: 0.89
 ```
 
-
 when repeated timings are about the same as above.
 
 On Linux:
@@ -172,7 +169,6 @@ sage: time a._clear_cache(); a._echelon_strassen(512)
 CPU times: user 1.30 s, sys: 0.10 s, total: 1.40 s
 Wall time: 1.40
 ```
-
 
 Conclusion: Linbox always wins, at least by a tiny amount.
 Anyway, with Clement around full time, Linbox is only going

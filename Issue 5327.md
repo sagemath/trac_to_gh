@@ -3,7 +3,7 @@
 archive/issues_005327.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: S = SupersingularModule(389)\nsage: H = S.hecke_matrix(2)\nsage: D = DiGraph(H)\nsage: P = D.plot()\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n\n\nMaxima is absolutely not the thing to use here: I see in `graph_plot.py` the use of\n\n```\nx = SymbolicVariable('x')\nd = SymbolicVariable('d')\n```\n\netc.\n\nProbably my bad for letting that past review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5327\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: S = SupersingularModule(389)\nsage: H = S.hecke_matrix(2)\nsage: D = DiGraph(H)\nsage: P = D.plot()\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n\nMaxima is absolutely not the thing to use here: I see in `graph_plot.py` the use of\n\n```\nx = SymbolicVariable('x')\nd = SymbolicVariable('d')\n```\netc.\n\nProbably my bad for letting that past review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5327\n\n",
     "created_at": "2009-02-21T02:35:37Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_005327.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: S = SupersingularModule(389)
 sage: H = S.hecke_matrix(2)
@@ -27,14 +26,12 @@ sage: P = D.plot()
 ^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...
 ```
 
-
 Maxima is absolutely not the thing to use here: I see in `graph_plot.py` the use of
 
 ```
 x = SymbolicVariable('x')
 d = SymbolicVariable('d')
 ```
-
 etc.
 
 Probably my bad for letting that past review.

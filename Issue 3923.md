@@ -140,7 +140,7 @@ I think that this is not ready for review until Jinja is in Sage, if it ever get
 archive/issue_comments_028012.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> I think that this is not ready for review until Jinja is in Sage, if it ever gets into Sage.\n\nJinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 malb]:\n> I think that this is not ready for review until Jinja is in Sage, if it ever gets into Sage.\n\n\nJinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T11:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -151,6 +151,7 @@ archive/issue_comments_028012.json:
 
 Replying to [comment:2 malb]:
 > I think that this is not ready for review until Jinja is in Sage, if it ever gets into Sage.
+
 
 Jinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))
 
@@ -165,7 +166,7 @@ Michael
 archive/issue_comments_028013.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> Jinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))\n\nDon't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?",
+    "body": "Replying to [comment:3 mabshoff]:\n> Jinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))\n\n\nDon't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?",
     "created_at": "2008-09-24T11:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -177,6 +178,7 @@ archive/issue_comments_028013.json:
 Replying to [comment:3 mabshoff]:
 > Jinja is required for the ReST transition of the documentation, so I am very bullish that it will get in. In total the ReST tool chain in 4 spkg weights in at 2MB compressed total and since it is a large improvement over the current situation with latex2html I think it will happen soon. Mike Hansen is pretty much ready to go here and it seems likely that those changes will be in 3.2.x if not 3.2 (assuming the spkgs get voted in obviously :))
 
+
 Don't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?
 
 
@@ -186,7 +188,7 @@ Don't get me wrong, I'm all in favor of Jinja getting in, but this still needs f
 archive/issue_comments_028014.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n\n> Don't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?\n\nSure, I agree. Mike has figured out IIRC that both Jinja and ReST and this code plays well together with Jinja v2. Timothy should have actually checked with [sage-devel] formally before going off into the sunset and code up loads of features that the code in question would actually be merged. But this story is likely to have a happy end :). Hopefully everyone involved here will learn a lesson from this.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 malb]:\n\n> Don't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?\n\n\nSure, I agree. Mike has figured out IIRC that both Jinja and ReST and this code plays well together with Jinja v2. Timothy should have actually checked with [sage-devel] formally before going off into the sunset and code up loads of features that the code in question would actually be merged. But this story is likely to have a happy end :). Hopefully everyone involved here will learn a lesson from this.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T11:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3923",
     "type": "issue_comment",
@@ -198,6 +200,7 @@ archive/issue_comments_028014.json:
 Replying to [comment:4 malb]:
 
 > Don't get me wrong, I'm all in favor of Jinja getting in, but this still needs formal verification. Also, IIRC there is the issue of Jinja v1 (ReST) vs. v2 (this patch)?
+
 
 Sure, I agree. Mike has figured out IIRC that both Jinja and ReST and this code plays well together with Jinja v2. Timothy should have actually checked with [sage-devel] formally before going off into the sunset and code up loads of features that the code in question would actually be merged. But this story is likely to have a happy end :). Hopefully everyone involved here will learn a lesson from this.
 

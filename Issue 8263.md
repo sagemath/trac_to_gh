@@ -117,7 +117,7 @@ There is also a `SAGE_PATH` variable, see #3784.
 archive/issue_comments_073009.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Should \"DOT_SAGE\" be included?\nYes, I think so.",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Should \"DOT_SAGE\" be included?\n\nYes, I think so.",
     "created_at": "2010-06-04T08:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -128,6 +128,7 @@ archive/issue_comments_073009.json:
 
 Replying to [comment:5 jhpalmieri]:
 > Should "DOT_SAGE" be included?
+
 Yes, I think so.
 
 
@@ -137,7 +138,7 @@ Yes, I think so.
 archive/issue_comments_073010.json:
 ```json
 {
-    "body": "I stumbled across this 'SAGE_MATPLOTLIB_GUI' in one of the patches for matplotlib.\n\n\n```\n#####################################################################\n# Sage code -- all this code just sets the graphical_backend variable.\n# If True, that means we try to build GUI's; otherwise, we definitely\n# will not even try, even if we could.  See trac #5301.\n#####################################################################\nif os.environ.has_key('SAGE_MATPLOTLIB_GUI'):\n    if os.environ['SAGE_MATPLOTLIB_GUI'].lower() == 'no':\n        graphical_backend = False\n    else:\n        graphical_backend = True\nelse:\n    graphical_backend = False\n\nprint \"NOTE: Set SAGE_MATPLOTLIB_GUI to anything but 'no' to try to build the Matplotlib GUI.\"\nif graphical_backend:\n    print \"Building graphical backends.  WARNING: This may causing some annoying and confusing behavior\"\n    print \"when using Sage + pylab, at least on OS X.\"\nelse:\n    print \"Not building any matplotlib graphical backends.\"\n #####################################################################\n\n```\n",
+    "body": "I stumbled across this 'SAGE_MATPLOTLIB_GUI' in one of the patches for matplotlib.\n\n```\n#####################################################################\n# Sage code -- all this code just sets the graphical_backend variable.\n# If True, that means we try to build GUI's; otherwise, we definitely\n# will not even try, even if we could.  See trac #5301.\n#####################################################################\nif os.environ.has_key('SAGE_MATPLOTLIB_GUI'):\n    if os.environ['SAGE_MATPLOTLIB_GUI'].lower() == 'no':\n        graphical_backend = False\n    else:\n        graphical_backend = True\nelse:\n    graphical_backend = False\n\nprint \"NOTE: Set SAGE_MATPLOTLIB_GUI to anything but 'no' to try to build the Matplotlib GUI.\"\nif graphical_backend:\n    print \"Building graphical backends.  WARNING: This may causing some annoying and confusing behavior\"\n    print \"when using Sage + pylab, at least on OS X.\"\nelse:\n    print \"Not building any matplotlib graphical backends.\"\n #####################################################################\n\n```",
     "created_at": "2010-06-04T08:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -147,7 +148,6 @@ archive/issue_comments_073010.json:
 ```
 
 I stumbled across this 'SAGE_MATPLOTLIB_GUI' in one of the patches for matplotlib.
-
 
 ```
 #####################################################################
@@ -172,7 +172,6 @@ else:
  #####################################################################
 
 ```
-
 
 
 
@@ -281,7 +280,7 @@ Also, is this the right place to put this information?  I also tried it in just 
 archive/issue_comments_073016.json:
 ```json
 {
-    "body": "I don't know the format of the .rst file, so there is not a lot of point me trying to edit it, but I can make some comments based on the the text of it. \n\n* I would say that \"SAGE_PARALLEL_SPKG_BUILD\" is experimental and has not been fully tested, so if the Sage build fails, one should unset it. (Robert raised an interesting question about how this may work with programs which do tuning.) \n* I think to say setting CC and CXX **may** be unreliable is an understatement. I can guarantee 100% it will fail to work. I'd be more clear about that, saying it is only for experimental purposes. \n* CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. \n* The meaning of the SAGE64 variable is not correctly described. SAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where the default was to build 32-bit. So that is why most of the packages had the following rather stupid bit of code. \n\n\n```\nif [ $SAGE64 = yes -a `uname` = Darwin ] ; \n  CFLAGS=$CFLAGS=m64\n  etc etc\nfi\n```\n\n\nI've basically changed all those to \n\n\n```\nif [ \"x$SAGE64\" = xyes ] ; \n  CFLAGS=$CFLAGS=m64\n  etc etc\nfi\n```\n\n\nIn other words, the variable is now platform independent. So I think something like this would be better:\n\n\"SAGE64 - Set this variable to \"yes\" on any system where you wish to build a 64-bit version of Sage, but the default for the platform it to build 32-bit binaries. This will add the compiler flag -m64 when building binaries. The SAGE64 variable is mainly of use is on OS X, Solaris and OpenSolaris, though it will add the -m64 on any operating system. Some versions of OS X default to 64-bit binaries, in which case this does not need setting. (It would be nice to find out exactly what versions of OS X support both 32 and 64-bit binaries and so remove references to \"some versions\". But I don't know the facts on this. William will I expect)\n\n* SAGE_USE_OLD_GCC. I would add the fact Sage will not build with versions of gcc older than 4.0.1, so this is only of use if you intend changing the Sage source code to allow it to build with older versions of GCC. I think we need to stop people wasting their time thinking it might work, because it most certainly will not. \n \n* CFLAG64. I would add that it is unnecessary to set this on any mainstream operating system, and the only use would be if attempting to port Sage to a platform like AIX or HP-UX using a non-GNU compiler. \n\n* INCLUDE_MPFR_PATCH. There is a space missing between at this point \"sun4v machines.If\" \n* SAGE_MATPLOTLIB_GUI. There is a 't' missing from the word 'attempt'. \n* SAGE_PORT. I would add that any attempt to build Sage with a compiler other than GCC will need this set, and furthermore than Sage has never been successfully built with any compiler other than GCC. (This variable is sort of self-documenting, as it explains exactly what to do, so perhaps we don't need to spell it out too much.) \n* SAGE_TIMEOUT & SAGE_TIMEOUT_LONG are not described. \n* SAGE_CHECK. I would add that only a small subset of Sage packages support this, but this is being expanded. A reasonably upto date list of packages supporting this may be found at http://trac.sagemath.org/sage_trac/ticket/9281 \n* Should these variables be listed alphabetically? In categories? At the moment, the order seems a bit random. I would think put them in categories, but then sort them alphabetically in there. \n\nDave",
+    "body": "I don't know the format of the .rst file, so there is not a lot of point me trying to edit it, but I can make some comments based on the the text of it. \n\n* I would say that \"SAGE_PARALLEL_SPKG_BUILD\" is experimental and has not been fully tested, so if the Sage build fails, one should unset it. (Robert raised an interesting question about how this may work with programs which do tuning.) \n* I think to say setting CC and CXX **may** be unreliable is an understatement. I can guarantee 100% it will fail to work. I'd be more clear about that, saying it is only for experimental purposes. \n* CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. \n* The meaning of the SAGE64 variable is not correctly described. SAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where the default was to build 32-bit. So that is why most of the packages had the following rather stupid bit of code. \n\n```\nif [ $SAGE64 = yes -a `uname` = Darwin ] ; \n  CFLAGS=$CFLAGS=m64\n  etc etc\nfi\n```\n\nI've basically changed all those to \n\n```\nif [ \"x$SAGE64\" = xyes ] ; \n  CFLAGS=$CFLAGS=m64\n  etc etc\nfi\n```\n\nIn other words, the variable is now platform independent. So I think something like this would be better:\n\n\"SAGE64 - Set this variable to \"yes\" on any system where you wish to build a 64-bit version of Sage, but the default for the platform it to build 32-bit binaries. This will add the compiler flag -m64 when building binaries. The SAGE64 variable is mainly of use is on OS X, Solaris and OpenSolaris, though it will add the -m64 on any operating system. Some versions of OS X default to 64-bit binaries, in which case this does not need setting. (It would be nice to find out exactly what versions of OS X support both 32 and 64-bit binaries and so remove references to \"some versions\". But I don't know the facts on this. William will I expect)\n\n* SAGE_USE_OLD_GCC. I would add the fact Sage will not build with versions of gcc older than 4.0.1, so this is only of use if you intend changing the Sage source code to allow it to build with older versions of GCC. I think we need to stop people wasting their time thinking it might work, because it most certainly will not. \n \n* CFLAG64. I would add that it is unnecessary to set this on any mainstream operating system, and the only use would be if attempting to port Sage to a platform like AIX or HP-UX using a non-GNU compiler. \n\n* INCLUDE_MPFR_PATCH. There is a space missing between at this point \"sun4v machines.If\" \n* SAGE_MATPLOTLIB_GUI. There is a 't' missing from the word 'attempt'. \n* SAGE_PORT. I would add that any attempt to build Sage with a compiler other than GCC will need this set, and furthermore than Sage has never been successfully built with any compiler other than GCC. (This variable is sort of self-documenting, as it explains exactly what to do, so perhaps we don't need to spell it out too much.) \n* SAGE_TIMEOUT & SAGE_TIMEOUT_LONG are not described. \n* SAGE_CHECK. I would add that only a small subset of Sage packages support this, but this is being expanded. A reasonably upto date list of packages supporting this may be found at http://trac.sagemath.org/sage_trac/ticket/9281 \n* Should these variables be listed alphabetically? In categories? At the moment, the order seems a bit random. I would think put them in categories, but then sort them alphabetically in there. \n\nDave",
     "created_at": "2010-06-25T23:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -297,7 +296,6 @@ I don't know the format of the .rst file, so there is not a lot of point me tryi
 * CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. 
 * The meaning of the SAGE64 variable is not correctly described. SAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where the default was to build 32-bit. So that is why most of the packages had the following rather stupid bit of code. 
 
-
 ```
 if [ $SAGE64 = yes -a `uname` = Darwin ] ; 
   CFLAGS=$CFLAGS=m64
@@ -305,9 +303,7 @@ if [ $SAGE64 = yes -a `uname` = Darwin ] ;
 fi
 ```
 
-
 I've basically changed all those to 
-
 
 ```
 if [ "x$SAGE64" = xyes ] ; 
@@ -315,7 +311,6 @@ if [ "x$SAGE64" = xyes ] ;
   etc etc
 fi
 ```
-
 
 In other words, the variable is now platform independent. So I think something like this would be better:
 
@@ -359,7 +354,7 @@ Changing assignee from mvngu to drkirkby.
 archive/issue_comments_073018.json:
 ```json
 {
-    "body": "Here's a new patch which deals with some of these comments.  This is still \"needs work\"; for example, I don't suggest we keep the text surrounding \"SAGE_FAT_BINARY\".\n\nReplying to [comment:13 drkirkby]:\n\n>  * I would say that \"SAGE_PARALLEL_SPKG_BUILD\" is experimental \n\nOkay.\n\n>  * I think to say setting CC and CXX **may** be unreliable is an understatement.\n\nOkay.\n\n>  * CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. \n\nOkay.\n\n>  * The meaning of the SAGE64 variable is not correctly described. \n\nSorry, I got this straight out of the sage-env script.\nSAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where \n\n> Some versions of OS X default to 64-bit binaries\n\nThis is either OS X 10.6, or maybe just 64-bit machines on OS X 10.6.  Must be the latter.  But we should check with William or sage-devel.\n\n>  * SAGE_USE_OLD_GCC. I would add the fact Sage will not build with versions of gcc older than 4.0.1, so this is only of use if you intend changing the Sage source code to allow it to build with older versions of GCC. I think we need to stop people wasting their time thinking it might work, because it most certainly will not. \n\nI've changed this part a bit, but maybe it should be more strongly worded.\n\n>  * CFLAG64. I would add that it is unnecessary to set this on any mainstream operating system, and the only use would be if attempting to port Sage to a platform like AIX or HP-UX using a non-GNU compiler. \n\nOkay.\n\n>  * INCLUDE_MPFR_PATCH. There is a space missing between at this point \"sun4v machines.If\" \n\nOkay\n\n>  * SAGE_MATPLOTLIB_GUI. There is a 't' missing from the word 'attempt'. \n\nOkay\n\n>  * SAGE_PORT. I would add that any attempt to build Sage with a compiler other than GCC will need this set, and furthermore than Sage has never been successfully built with any compiler other than GCC. (This variable is sort of self-documenting, as it explains exactly what to do, so perhaps we don't need to spell it out too much.) \n\nOkay.\n\n>  * SAGE_TIMEOUT & SAGE_TIMEOUT_LONG are not described. \n\nThey deal with doctesting, not the build process, so I'm not sure they belong here.  I've added them now.\n\n>  * SAGE_CHECK. I would add that only a small subset of Sage packages support this, but this is being expanded. A reasonably upto date list of packages supporting this may be found at http://trac.sagemath.org/sage_trac/ticket/9281 \n\nI don't know if we should mention this or just work hard at #9281.  This particular piece of documentation doesn't seem to get updated very much -- see the statements at the top of the page I'm editing about Sage not working on Solaris, for example -- so I don't want to post information which is too time-sensitive.\n\n>  * Should these variables be listed alphabetically? In categories? At the moment, the order seems a bit random. I would think put them in categories, but then sort them alphabetically in there. \n\nI've put them in categories, and then within each category I've started the ones that seem most useful.",
+    "body": "Here's a new patch which deals with some of these comments.  This is still \"needs work\"; for example, I don't suggest we keep the text surrounding \"SAGE_FAT_BINARY\".\n\nReplying to [comment:13 drkirkby]:\n\n>  * I would say that \"SAGE_PARALLEL_SPKG_BUILD\" is experimental \n\n\nOkay.\n\n>  * I think to say setting CC and CXX **may** be unreliable is an understatement.\n\n\nOkay.\n\n>  * CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. \n\n\nOkay.\n\n>  * The meaning of the SAGE64 variable is not correctly described. \n\n\nSorry, I got this straight out of the sage-env script.\nSAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where \n\n> Some versions of OS X default to 64-bit binaries\n\n\nThis is either OS X 10.6, or maybe just 64-bit machines on OS X 10.6.  Must be the latter.  But we should check with William or sage-devel.\n\n>  * SAGE_USE_OLD_GCC. I would add the fact Sage will not build with versions of gcc older than 4.0.1, so this is only of use if you intend changing the Sage source code to allow it to build with older versions of GCC. I think we need to stop people wasting their time thinking it might work, because it most certainly will not. \n\n\nI've changed this part a bit, but maybe it should be more strongly worded.\n\n>  * CFLAG64. I would add that it is unnecessary to set this on any mainstream operating system, and the only use would be if attempting to port Sage to a platform like AIX or HP-UX using a non-GNU compiler. \n\n\nOkay.\n\n>  * INCLUDE_MPFR_PATCH. There is a space missing between at this point \"sun4v machines.If\" \n\n\nOkay\n\n>  * SAGE_MATPLOTLIB_GUI. There is a 't' missing from the word 'attempt'. \n\n\nOkay\n\n>  * SAGE_PORT. I would add that any attempt to build Sage with a compiler other than GCC will need this set, and furthermore than Sage has never been successfully built with any compiler other than GCC. (This variable is sort of self-documenting, as it explains exactly what to do, so perhaps we don't need to spell it out too much.) \n\n\nOkay.\n\n>  * SAGE_TIMEOUT & SAGE_TIMEOUT_LONG are not described. \n\n\nThey deal with doctesting, not the build process, so I'm not sure they belong here.  I've added them now.\n\n>  * SAGE_CHECK. I would add that only a small subset of Sage packages support this, but this is being expanded. A reasonably upto date list of packages supporting this may be found at http://trac.sagemath.org/sage_trac/ticket/9281 \n\n\nI don't know if we should mention this or just work hard at #9281.  This particular piece of documentation doesn't seem to get updated very much -- see the statements at the top of the page I'm editing about Sage not working on Solaris, for example -- so I don't want to post information which is too time-sensitive.\n\n>  * Should these variables be listed alphabetically? In categories? At the moment, the order seems a bit random. I would think put them in categories, but then sort them alphabetically in there. \n\n\nI've put them in categories, and then within each category I've started the ones that seem most useful.",
     "created_at": "2010-06-26T05:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -374,54 +369,67 @@ Replying to [comment:13 drkirkby]:
 
 >  * I would say that "SAGE_PARALLEL_SPKG_BUILD" is experimental 
 
+
 Okay.
 
 >  * I think to say setting CC and CXX **may** be unreliable is an understatement.
+
 
 Okay.
 
 >  * CFLAGS/CXXFLAGS - I'd make the point that these do not work for all packages, so are of limited use and setting them may cause build problems. 
 
+
 Okay.
 
 >  * The meaning of the SAGE64 variable is not correctly described. 
+
 
 Sorry, I got this straight out of the sage-env script.
 SAGE64 does not work on only on Solaris. The original aim of SAGE64 was to force a 64-bit build on **OS X** systems where 
 
 > Some versions of OS X default to 64-bit binaries
 
+
 This is either OS X 10.6, or maybe just 64-bit machines on OS X 10.6.  Must be the latter.  But we should check with William or sage-devel.
 
 >  * SAGE_USE_OLD_GCC. I would add the fact Sage will not build with versions of gcc older than 4.0.1, so this is only of use if you intend changing the Sage source code to allow it to build with older versions of GCC. I think we need to stop people wasting their time thinking it might work, because it most certainly will not. 
+
 
 I've changed this part a bit, but maybe it should be more strongly worded.
 
 >  * CFLAG64. I would add that it is unnecessary to set this on any mainstream operating system, and the only use would be if attempting to port Sage to a platform like AIX or HP-UX using a non-GNU compiler. 
 
+
 Okay.
 
 >  * INCLUDE_MPFR_PATCH. There is a space missing between at this point "sun4v machines.If" 
+
 
 Okay
 
 >  * SAGE_MATPLOTLIB_GUI. There is a 't' missing from the word 'attempt'. 
 
+
 Okay
 
 >  * SAGE_PORT. I would add that any attempt to build Sage with a compiler other than GCC will need this set, and furthermore than Sage has never been successfully built with any compiler other than GCC. (This variable is sort of self-documenting, as it explains exactly what to do, so perhaps we don't need to spell it out too much.) 
+
 
 Okay.
 
 >  * SAGE_TIMEOUT & SAGE_TIMEOUT_LONG are not described. 
 
+
 They deal with doctesting, not the build process, so I'm not sure they belong here.  I've added them now.
 
 >  * SAGE_CHECK. I would add that only a small subset of Sage packages support this, but this is being expanded. A reasonably upto date list of packages supporting this may be found at http://trac.sagemath.org/sage_trac/ticket/9281 
 
+
 I don't know if we should mention this or just work hard at #9281.  This particular piece of documentation doesn't seem to get updated very much -- see the statements at the top of the page I'm editing about Sage not working on Solaris, for example -- so I don't want to post information which is too time-sensitive.
 
 >  * Should these variables be listed alphabetically? In categories? At the moment, the order seems a bit random. I would think put them in categories, but then sort them alphabetically in there. 
+
 
 I've put them in categories, and then within each category I've started the ones that seem most useful.
 
@@ -535,7 +543,7 @@ From your shell prompt, type "sage -docbuild installation html" or "sage -docbui
 archive/issue_comments_073024.json:
 ```json
 {
-    "body": "Thanks John. A couple of minor changes I would suggest. I don't have an install of Sage handy, so are not going to apply a review patch. \n\n* Line 202. The comment \"you need to check this\" can be removed. What you have is correct. \n* Line 495 - commmonly -> commonly \n* Line 500 - invididual -> individual \n* Line 576 says \"SAGE_ATLAS_LIB - if you have an installation of ATLAS on your system and you want Sage to use it instead of buliding and installing its own version of Sage, set this variable to be the parent directory of your ATLAS installation:\"\n  * 'buliding' needs changing to 'building'\n  * I believe you mean for Sage to install its own version of ATLAS rather than its own version of Sage. \n* Line 591. This bug fix was integrated into Solaris 10 update 8 (10/09), so only affects Solaris 10 update 7 (5/09) or earlier. So I think it might be better to change it to. \n\n\n```\n`INCLUDE_MPFR_PATCH` - This is used to add a patch to MPFR to bypass a bug in the  memset function affecting sun4v machines with versions of Solaris earlier than than Solaris 10 update 8 (10/09). Earlier versions of Solaris 10 can be patched by applying Sun patch 142542-01.\n\nRecognized values are:\n\nINCLUDE_MPFR_PATCH=0 - never include the patch - useful if you know all sun4v machines Sage will be used on are running Solaris 10 update 8 or later, or have been patched with Sun patch 142542-01.\n```\n\n* Line 644. It would be useful to state what directory packages are expected to be in. The default server is http://www.sagemath.org/ but the packages do not sit in the top level. They seem to be in sub-directories below http://www.sagemath.org/packages/ So I suspect if someone sets up their own server they will need to create a directory 'packages'. What happens beyond that I'm not 100% sure - it looks like http://www.sagemath.org/packages/optional/ http://www.sagemath.org/packages/experimental/ and http://www.sagemath.org/packages/spkg/standard/ are all searched for. One would need to check the source code to find out exactly what happens here. (Unless you know the details, it might be easier to put a comment like \"please ask for advice on sage-devel if wishing to set up your own server\"). \n\nApart from those very minor things, that looks a huge improvement. \n\nDave",
+    "body": "Thanks John. A couple of minor changes I would suggest. I don't have an install of Sage handy, so are not going to apply a review patch. \n\n* Line 202. The comment \"you need to check this\" can be removed. What you have is correct. \n* Line 495 - commmonly -> commonly \n* Line 500 - invididual -> individual \n* Line 576 says \"SAGE_ATLAS_LIB - if you have an installation of ATLAS on your system and you want Sage to use it instead of buliding and installing its own version of Sage, set this variable to be the parent directory of your ATLAS installation:\"\n  * 'buliding' needs changing to 'building'\n  * I believe you mean for Sage to install its own version of ATLAS rather than its own version of Sage. \n* Line 591. This bug fix was integrated into Solaris 10 update 8 (10/09), so only affects Solaris 10 update 7 (5/09) or earlier. So I think it might be better to change it to. \n\n```\n`INCLUDE_MPFR_PATCH` - This is used to add a patch to MPFR to bypass a bug in the  memset function affecting sun4v machines with versions of Solaris earlier than than Solaris 10 update 8 (10/09). Earlier versions of Solaris 10 can be patched by applying Sun patch 142542-01.\n\nRecognized values are:\n\nINCLUDE_MPFR_PATCH=0 - never include the patch - useful if you know all sun4v machines Sage will be used on are running Solaris 10 update 8 or later, or have been patched with Sun patch 142542-01.\n```\n* Line 644. It would be useful to state what directory packages are expected to be in. The default server is http://www.sagemath.org/ but the packages do not sit in the top level. They seem to be in sub-directories below http://www.sagemath.org/packages/ So I suspect if someone sets up their own server they will need to create a directory 'packages'. What happens beyond that I'm not 100% sure - it looks like http://www.sagemath.org/packages/optional/ http://www.sagemath.org/packages/experimental/ and http://www.sagemath.org/packages/spkg/standard/ are all searched for. One would need to check the source code to find out exactly what happens here. (Unless you know the details, it might be easier to put a comment like \"please ask for advice on sage-devel if wishing to set up your own server\"). \n\nApart from those very minor things, that looks a huge improvement. \n\nDave",
     "created_at": "2010-06-27T22:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -554,7 +562,6 @@ Thanks John. A couple of minor changes I would suggest. I don't have an install 
   * I believe you mean for Sage to install its own version of ATLAS rather than its own version of Sage. 
 * Line 591. This bug fix was integrated into Solaris 10 update 8 (10/09), so only affects Solaris 10 update 7 (5/09) or earlier. So I think it might be better to change it to. 
 
-
 ```
 `INCLUDE_MPFR_PATCH` - This is used to add a patch to MPFR to bypass a bug in the  memset function affecting sun4v machines with versions of Solaris earlier than than Solaris 10 update 8 (10/09). Earlier versions of Solaris 10 can be patched by applying Sun patch 142542-01.
 
@@ -562,7 +569,6 @@ Recognized values are:
 
 INCLUDE_MPFR_PATCH=0 - never include the patch - useful if you know all sun4v machines Sage will be used on are running Solaris 10 update 8 or later, or have been patched with Sun patch 142542-01.
 ```
-
 * Line 644. It would be useful to state what directory packages are expected to be in. The default server is http://www.sagemath.org/ but the packages do not sit in the top level. They seem to be in sub-directories below http://www.sagemath.org/packages/ So I suspect if someone sets up their own server they will need to create a directory 'packages'. What happens beyond that I'm not 100% sure - it looks like http://www.sagemath.org/packages/optional/ http://www.sagemath.org/packages/experimental/ and http://www.sagemath.org/packages/spkg/standard/ are all searched for. One would need to check the source code to find out exactly what happens here. (Unless you know the details, it might be easier to put a comment like "please ask for advice on sage-devel if wishing to set up your own server"). 
 
 Apart from those very minor things, that looks a huge improvement. 
@@ -576,7 +582,7 @@ Dave
 archive/issue_comments_073025.json:
 ```json
 {
-    "body": "Here's a new patch, and I've also updated the web page.\n\nReplying to [comment:19 drkirkby]:\n>  * Line 202. The comment \"you need to check this\" can be removed. What you have is correct. \n\n(It was there before, it wasn't me.  But I changed it anyway.)\n\n>  * Line 495 - commmonly -> commonly \n>  * Line 500 - invididual -> individual \n\nSorry for all of the typos.  My editor is really sluggish when editing rst files -- several seconds delay between when I type things and when they appear, I don't know why.  So I don't get the usual instant feedback, and so I miss things I shouldn't.\n\nI've fixed all of the other comments, and done a bit more rewording.\n\n>  * Line 644. It would be useful to state what directory packages are expected to be in. \n\nI looked this up and documented it.",
+    "body": "Here's a new patch, and I've also updated the web page.\n\nReplying to [comment:19 drkirkby]:\n>  * Line 202. The comment \"you need to check this\" can be removed. What you have is correct. \n\n\n(It was there before, it wasn't me.  But I changed it anyway.)\n\n>  * Line 495 - commmonly -> commonly \n>  * Line 500 - invididual -> individual \n\n\nSorry for all of the typos.  My editor is really sluggish when editing rst files -- several seconds delay between when I type things and when they appear, I don't know why.  So I don't get the usual instant feedback, and so I miss things I shouldn't.\n\nI've fixed all of the other comments, and done a bit more rewording.\n\n>  * Line 644. It would be useful to state what directory packages are expected to be in. \n\n\nI looked this up and documented it.",
     "created_at": "2010-06-27T23:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
@@ -590,16 +596,19 @@ Here's a new patch, and I've also updated the web page.
 Replying to [comment:19 drkirkby]:
 >  * Line 202. The comment "you need to check this" can be removed. What you have is correct. 
 
+
 (It was there before, it wasn't me.  But I changed it anyway.)
 
 >  * Line 495 - commmonly -> commonly 
 >  * Line 500 - invididual -> individual 
+
 
 Sorry for all of the typos.  My editor is really sluggish when editing rst files -- several seconds delay between when I type things and when they appear, I don't know why.  So I don't get the usual instant feedback, and so I miss things I shouldn't.
 
 I've fixed all of the other comments, and done a bit more rewording.
 
 >  * Line 644. It would be useful to state what directory packages are expected to be in. 
+
 
 I looked this up and documented it.
 

@@ -3,7 +3,7 @@
 archive/issues_002145.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nI was looking in the SAGE Tutorial and the SAGE Reference\nManual.  Perhaps something could be put there also?\n\nKate\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2145\n\n",
+    "body": "Assignee: tba\n\n```\nI was looking in the SAGE Tutorial and the SAGE Reference\nManual.  Perhaps something could be put there also?\n\nKate\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2145\n\n",
     "created_at": "2008-02-12T17:02:26Z",
     "labels": [
         "component: documentation",
@@ -18,14 +18,12 @@ archive/issues_002145.json:
 ```
 Assignee: tba
 
-
 ```
 I was looking in the SAGE Tutorial and the SAGE Reference
 Manual.  Perhaps something could be put there also?
 
 Kate
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2145
 

@@ -3,7 +3,7 @@
 archive/issues_005060.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nusing sage 3.2.3, I'm trying to build a new module with a .pxd file containing this line\n\n```\n #include \"gmp.h\"\n```\n\nnote that the line is commented. The build fails with the following traceback\n\n```\n sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 503, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 463, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 378, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 361, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 359, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 341, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 331, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency gmp.h included in sage/geometry/cdd.pxd.\nsage: There was an error installing modified sage library code.\n```\n\n\nThere is probably a problem with the regexp on line 228 of [setup.py](http://www.sagemath.org/hg/sage-main/file/b0aa7ef45b3c/setup.py). One can reprouce the bug with this snipet\n\n```\ndep_regex = re.compile(r'^ *(?:cimport +(\\S+))|(?:from +(\\S+) *cimport)|(?:include *[\\'\"]([^\\'\"]+)[\\'\"])', re.M)\nm.groups()for m in dep_regex.finditer('#include \"gmp.h\"'):                      \n    m.groups()                                                        \n```\n\nwhich results in\n\n```\n(None, None, 'gmp.h')\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5060\n\n",
+    "body": "Assignee: mabshoff\n\nusing sage 3.2.3, I'm trying to build a new module with a .pxd file containing this line\n\n```\n #include \"gmp.h\"\n```\nnote that the line is commented. The build fails with the following traceback\n\n```\n sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 503, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 463, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 378, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 361, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 359, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 341, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 331, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency gmp.h included in sage/geometry/cdd.pxd.\nsage: There was an error installing modified sage library code.\n```\n\nThere is probably a problem with the regexp on line 228 of [setup.py](http://www.sagemath.org/hg/sage-main/file/b0aa7ef45b3c/setup.py). One can reprouce the bug with this snipet\n\n```\ndep_regex = re.compile(r'^ *(?:cimport +(\\S+))|(?:from +(\\S+) *cimport)|(?:include *[\\'\"]([^\\'\"]+)[\\'\"])', re.M)\nm.groups()for m in dep_regex.finditer('#include \"gmp.h\"'):                      \n    m.groups()                                                        \n```\nwhich results in\n\n```\n(None, None, 'gmp.h')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5060\n\n",
     "created_at": "2009-01-23T00:26:01Z",
     "labels": [
         "component: build",
@@ -23,7 +23,6 @@ using sage 3.2.3, I'm trying to build a new module with a .pxd file containing t
 ```
  #include "gmp.h"
 ```
-
 note that the line is commented. The build fails with the following traceback
 
 ```
@@ -55,7 +54,6 @@ IOError: could not find dependency gmp.h included in sage/geometry/cdd.pxd.
 sage: There was an error installing modified sage library code.
 ```
 
-
 There is probably a problem with the regexp on line 228 of [setup.py](http://www.sagemath.org/hg/sage-main/file/b0aa7ef45b3c/setup.py). One can reprouce the bug with this snipet
 
 ```
@@ -63,13 +61,11 @@ dep_regex = re.compile(r'^ *(?:cimport +(\S+))|(?:from +(\S+) *cimport)|(?:inclu
 m.groups()for m in dep_regex.finditer('#include "gmp.h"'):                      
     m.groups()                                                        
 ```
-
 which results in
 
 ```
 (None, None, 'gmp.h')
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5060
@@ -83,7 +79,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5060
 archive/issue_comments_038467.json:
 ```json
 {
-    "body": "I think that modifying the regex like this (adding two `'^'` characters) will fix the problem.  (It fixes the above test case, but I don't have time to do a real test, or submit a real patch, right now.)\n\n```\nr'^ *(?:cimport +(\\S+))|^(?:from +(\\S+) *cimport)|^(?:include *[\\'\"]([^\\'\"]+)[\\'\"])'\n```\n",
+    "body": "I think that modifying the regex like this (adding two `'^'` characters) will fix the problem.  (It fixes the above test case, but I don't have time to do a real test, or submit a real patch, right now.)\n\n```\nr'^ *(?:cimport +(\\S+))|^(?:from +(\\S+) *cimport)|^(?:include *[\\'\"]([^\\'\"]+)[\\'\"])'\n```",
     "created_at": "2009-01-23T00:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
@@ -100,13 +96,12 @@ r'^ *(?:cimport +(\S+))|^(?:from +(\S+) *cimport)|^(?:include *[\'"]([^\'"]+)[\'
 
 
 
-
 ---
 
 archive/issue_comments_038468.json:
 ```json
 {
-    "body": "some more thoughts\n\n1. the include keyword is deprecated [cython doc](http://docs.cython.org/docs/language_basics.html?highlight=include#the-include-statement), \n\n2. the current regexp misses other cython patterns that involve dependancies:\n\n```\ncimport mod1, mod2\n```\n\nand\n\n```\ncdef extern from \"toto.h\":\n    ....\n```\n\nHere is a first attempt to fix this, \n\n```\nimport re\ndep_regex = re.compile(r'^ *(?:(?:(?:(?:include)|(?:cdef +extern + from)) +[\\'\"]([^\\'\"]+)[\\'\"])|(?:from +(\\w+) *cimport)|(?:cimport +([^ \\t\\n\\r\\f\\v,]+)(?: *, *([^ \\t\\n\\r\\f\\v,]+))*))',  re.MULTILINE)\n\nteststr = \"\"\"include \"yes1.h\"\ninclude \"yes2.h\" \n include \"yes3.h\"\n include 'yes4.h'\n#include \"no5.h\"\n # include \"no6.h\"\ncimport yes7\n cimport yes8 \n#cimport no9\n# cimport no10\nfrom yes11 cimport toto\nfrom yes12 cimport toto as tata\n#from no13 cimport toto as tata\ncdef extern from \"yes14.h\"\ncimport yes15 , yes15b\ncimport yes16, yes16b\ncimport yes17, yes17b , yes17c\n\n\"\"\"\n\nprint 'toto'\nfor m in dep_regex.finditer(teststr):\n    print m.groups()\n```\n\n\nHowever, for some reason, it doesn't catch yes14.h nor yes17b. So this is not yet functional (nor elegant). Any suggestion is welcome.",
+    "body": "some more thoughts\n\n1. the include keyword is deprecated [cython doc](http://docs.cython.org/docs/language_basics.html?highlight=include#the-include-statement), \n\n2. the current regexp misses other cython patterns that involve dependancies:\n\n```\ncimport mod1, mod2\n```\nand\n\n```\ncdef extern from \"toto.h\":\n    ....\n```\nHere is a first attempt to fix this, \n\n```\nimport re\ndep_regex = re.compile(r'^ *(?:(?:(?:(?:include)|(?:cdef +extern + from)) +[\\'\"]([^\\'\"]+)[\\'\"])|(?:from +(\\w+) *cimport)|(?:cimport +([^ \\t\\n\\r\\f\\v,]+)(?: *, *([^ \\t\\n\\r\\f\\v,]+))*))',  re.MULTILINE)\n\nteststr = \"\"\"include \"yes1.h\"\ninclude \"yes2.h\" \n include \"yes3.h\"\n include 'yes4.h'\n#include \"no5.h\"\n # include \"no6.h\"\ncimport yes7\n cimport yes8 \n#cimport no9\n# cimport no10\nfrom yes11 cimport toto\nfrom yes12 cimport toto as tata\n#from no13 cimport toto as tata\ncdef extern from \"yes14.h\"\ncimport yes15 , yes15b\ncimport yes16, yes16b\ncimport yes17, yes17b , yes17c\n\n\"\"\"\n\nprint 'toto'\nfor m in dep_regex.finditer(teststr):\n    print m.groups()\n```\n\nHowever, for some reason, it doesn't catch yes14.h nor yes17b. So this is not yet functional (nor elegant). Any suggestion is welcome.",
     "created_at": "2009-01-23T03:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
@@ -124,14 +119,12 @@ some more thoughts
 ```
 cimport mod1, mod2
 ```
-
 and
 
 ```
 cdef extern from "toto.h":
     ....
 ```
-
 Here is a first attempt to fix this, 
 
 ```
@@ -162,7 +155,6 @@ print 'toto'
 for m in dep_regex.finditer(teststr):
     print m.groups()
 ```
-
 
 However, for some reason, it doesn't catch yes14.h nor yes17b. So this is not yet functional (nor elegant). Any suggestion is welcome.
 
@@ -320,7 +312,7 @@ archive/issue_events_011663.json:
 archive/issue_comments_038474.json:
 ```json
 {
-    "body": "Hello, \n\nreading the code, I see another problem if ones has the following line in its .pyx:\n\n```\ncimport mod#mycomment\n```\n\nI such a case, we'll look for a dependency mod#mycomment.pxd instead of mod.pxd.\n\nOtherwise, the patch solves the aforementioned problems.\n\nCheers",
+    "body": "Hello, \n\nreading the code, I see another problem if ones has the following line in its .pyx:\n\n```\ncimport mod#mycomment\n```\nI such a case, we'll look for a dependency mod#mycomment.pxd instead of mod.pxd.\n\nOtherwise, the patch solves the aforementioned problems.\n\nCheers",
     "created_at": "2009-01-26T13:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5060",
     "type": "issue_comment",
@@ -336,7 +328,6 @@ reading the code, I see another problem if ones has the following line in its .p
 ```
 cimport mod#mycomment
 ```
-
 I such a case, we'll look for a dependency mod#mycomment.pxd instead of mod.pxd.
 
 Otherwise, the patch solves the aforementioned problems.

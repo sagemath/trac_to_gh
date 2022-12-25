@@ -3,7 +3,7 @@
 archive/issues_002463.json:
 ```json
 {
-    "body": "Assignee: @ClementPernet\n\nKeywords: commentator static linbox\n\nOn Power PC, runing OS X, sage crashes at the start up, throwing a SIGBUS error.\n\n\n```\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x057e3090\n0x91219bb0 in std::ios_base::ios_base ()\n(gdb) bt\n#0  0x91219bb0 in std::ios_base::ios_base ()\n#1  0x91226114 in std::basic_ios<char, std::char_traits<char> >::basic_ios ()\n#2  0x91224490 in std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream ()\n#3  0x05ad4220 in LinBox::Commentator::Commentator ()\n#4  0x05ad4458 in LinBox::Commentator::Commentator ()\n#5  0x0576bfa4 in __static_initialization_and_destruction_0 ()\n#6  0x0576c104 in global constructors keyed to _Z5powerI7IntegerlET_S1_T0_ ()\n#7  0x8fe1376c in __dyld__ZN16ImageLoaderMachO18doModInitFunctionsERKN11ImageLoader11LinkContextE ()\n#8  0x8fe0f180 in __dyld__ZN11ImageLoader23recursiveInitializationERKNS_11LinkContextEj ()\n#9  0x8fe0f0d0 in __dyld__ZN11ImageLoader23recursiveInitializationERKNS_11LinkContextEj ()\n#10 0x8fe0f2a4 in __dyld__ZN11ImageLoader15runInitializersERKNS_11LinkContextE ()\n#11 0x8fe0c12c in __dyld_dlopen ()\n#12 0x934d75a8 in dlopen ()\n#13 0x000e0cac in _PyImport_GetDynLoadFunc ()\n#14 0x000cda5c in _PyImport_LoadDynamicModule ()\n#15 0x000cb7a8 in import_submodule ()\n#16 0x000cba50 in load_next ()\n#17 0x000cc1b8 in import_module_level ()\n#18 0x000cc548 in PyImport_ImportModuleLevel ()\n#19 0x000a3038 in builtin___import__ ()\n#20 0x00009500 in PyObject_CallFunctionObjArgs ()\n#21 0x000cc80c in PyImport_Import ()\n#22 0x05529804 in __Pyx_ImportType (module_name=0x5541e8c \"sage.libs.linbox.linbox\", class_name=0x5541ea4 \"Linbox_modn_dense\", size=28) at sage/matrix/matrix_modn_dense.c:9435\n#23 0x0553e5cc in initmatrix_modn_dense () at sage/matrix/matrix_modn_dense.c:8878\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2463\n\n",
+    "body": "Assignee: @ClementPernet\n\nKeywords: commentator static linbox\n\nOn Power PC, runing OS X, sage crashes at the start up, throwing a SIGBUS error.\n\n```\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x057e3090\n0x91219bb0 in std::ios_base::ios_base ()\n(gdb) bt\n#0  0x91219bb0 in std::ios_base::ios_base ()\n#1  0x91226114 in std::basic_ios<char, std::char_traits<char> >::basic_ios ()\n#2  0x91224490 in std::basic_ofstream<char, std::char_traits<char> >::basic_ofstream ()\n#3  0x05ad4220 in LinBox::Commentator::Commentator ()\n#4  0x05ad4458 in LinBox::Commentator::Commentator ()\n#5  0x0576bfa4 in __static_initialization_and_destruction_0 ()\n#6  0x0576c104 in global constructors keyed to _Z5powerI7IntegerlET_S1_T0_ ()\n#7  0x8fe1376c in __dyld__ZN16ImageLoaderMachO18doModInitFunctionsERKN11ImageLoader11LinkContextE ()\n#8  0x8fe0f180 in __dyld__ZN11ImageLoader23recursiveInitializationERKNS_11LinkContextEj ()\n#9  0x8fe0f0d0 in __dyld__ZN11ImageLoader23recursiveInitializationERKNS_11LinkContextEj ()\n#10 0x8fe0f2a4 in __dyld__ZN11ImageLoader15runInitializersERKNS_11LinkContextE ()\n#11 0x8fe0c12c in __dyld_dlopen ()\n#12 0x934d75a8 in dlopen ()\n#13 0x000e0cac in _PyImport_GetDynLoadFunc ()\n#14 0x000cda5c in _PyImport_LoadDynamicModule ()\n#15 0x000cb7a8 in import_submodule ()\n#16 0x000cba50 in load_next ()\n#17 0x000cc1b8 in import_module_level ()\n#18 0x000cc548 in PyImport_ImportModuleLevel ()\n#19 0x000a3038 in builtin___import__ ()\n#20 0x00009500 in PyObject_CallFunctionObjArgs ()\n#21 0x000cc80c in PyImport_Import ()\n#22 0x05529804 in __Pyx_ImportType (module_name=0x5541e8c \"sage.libs.linbox.linbox\", class_name=0x5541ea4 \"Linbox_modn_dense\", size=28) at sage/matrix/matrix_modn_dense.c:9435\n#23 0x0553e5cc in initmatrix_modn_dense () at sage/matrix/matrix_modn_dense.c:8878\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2463\n\n",
     "created_at": "2008-03-10T22:09:33Z",
     "labels": [
         "component: linbox",
@@ -22,7 +22,6 @@ Assignee: @ClementPernet
 Keywords: commentator static linbox
 
 On Power PC, runing OS X, sage crashes at the start up, throwing a SIGBUS error.
-
 
 ```
 Program received signal EXC_BAD_ACCESS, Could not access memory.
@@ -54,7 +53,6 @@ Reason: KERN_PROTECTION_FAILURE at address: 0x057e3090
 #22 0x05529804 in __Pyx_ImportType (module_name=0x5541e8c "sage.libs.linbox.linbox", class_name=0x5541ea4 "Linbox_modn_dense", size=28) at sage/matrix/matrix_modn_dense.c:9435
 #23 0x0553e5cc in initmatrix_modn_dense () at sage/matrix/matrix_modn_dense.c:8878
 ```
-
 
 
 

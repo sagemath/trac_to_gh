@@ -3,7 +3,7 @@
 archive/issues_007580.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @mwhansen @nathanncohen @nthiery\n\n1. Here's one, from a fresh session in sage-4.3.alpha0:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\n\nWhy do we get a TypeError doing x[100] after the overflow error?\n\n\n2. Here's another bug, probably the result of using string parsing (?), but I'm not sure:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na100\nsage: a[2/3]\n1/3*a2\n```\n\nthen the following weird error. \n\n```\nsage: a[Mod(2,3)]\nTraceback (most recent ...)\n...\nTypeError: reduce() of empty sequence with no initial value\n```\n\nwhich is made weirder because the same input again suddenly works!\n\n```\nsage: a[Mod(2,3)]\na2\n```\n\n\nHere's one that is weird, due to not validating input before passing it off to the libsingular coercion function:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na0\nsage: a['0+5']\na0 + 5\nsage: a['0+5^2']\na0 + 25\n```\n\n\n\nIt's also really weird that the variable names have to be a single letter and that the base ring has to be a field.  Why?:\n\n```\n\nsage: X.<alpha,beta>= InfinitePolynomialRing(QQ)\nTraceback (most recent call last):\nValueError: variable names must be of length 1\n\nsage: X.<x,y> = InfinitePolynomialRing(ZZ)\nTraceback (most recent call last):\nTypeError: The base ring (= Integer Ring) must be a field\n\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7580\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mwhansen @nathanncohen @nthiery\n\n1. Here's one, from a fresh session in sage-4.3.alpha0:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\nWhy do we get a TypeError doing x[100] after the overflow error?\n\n\n2. Here's another bug, probably the result of using string parsing (?), but I'm not sure:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na100\nsage: a[2/3]\n1/3*a2\n```\nthen the following weird error. \n\n```\nsage: a[Mod(2,3)]\nTraceback (most recent ...)\n...\nTypeError: reduce() of empty sequence with no initial value\n```\nwhich is made weirder because the same input again suddenly works!\n\n```\nsage: a[Mod(2,3)]\na2\n```\n\nHere's one that is weird, due to not validating input before passing it off to the libsingular coercion function:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na0\nsage: a['0+5']\na0 + 5\nsage: a['0+5^2']\na0 + 25\n```\n\n\nIt's also really weird that the variable names have to be a single letter and that the base ring has to be a field.  Why?:\n\n```\n\nsage: X.<alpha,beta>= InfinitePolynomialRing(QQ)\nTraceback (most recent call last):\nValueError: variable names must be of length 1\n\nsage: X.<x,y> = InfinitePolynomialRing(ZZ)\nTraceback (most recent call last):\nTypeError: The base ring (= Integer Ring) must be a field\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7580\n\n",
     "created_at": "2009-12-02T06:38:12Z",
     "labels": [
         "component: algebra",
@@ -32,7 +32,6 @@ sage: x[100]
 TypeError: ...
 ```
 
-
 Why do we get a TypeError doing x[100] after the overflow error?
 
 
@@ -45,7 +44,6 @@ a100
 sage: a[2/3]
 1/3*a2
 ```
-
 then the following weird error. 
 
 ```
@@ -54,14 +52,12 @@ Traceback (most recent ...)
 ...
 TypeError: reduce() of empty sequence with no initial value
 ```
-
 which is made weirder because the same input again suddenly works!
 
 ```
 sage: a[Mod(2,3)]
 a2
 ```
-
 
 Here's one that is weird, due to not validating input before passing it off to the libsingular coercion function:
 
@@ -74,7 +70,6 @@ a0 + 5
 sage: a['0+5^2']
 a0 + 25
 ```
-
 
 
 It's also really weird that the variable names have to be a single letter and that the base ring has to be a field.  Why?:
@@ -90,7 +85,6 @@ Traceback (most recent call last):
 TypeError: The base ring (= Integer Ring) must be a field
 
 ```
-
 
 
 
@@ -150,7 +144,7 @@ Changing assignee from @aghitza to @simon-king-jena.
 archive/issue_comments_064441.json:
 ```json
 {
-    "body": "Here some words on the requirement that variable names must be single letters.\n\nThe generators x,y,... of an Infinite Polynomial Ring R are, mathematically, generators of R as a free module over the group algebra of the symmetric group G of the natural numbers (starting with 1, while 0 is fixed).\n\nA variable in R can be thought of as a pair (x,n), where x is a generator of R and n is a natural number. G acts on the pair by acting on n. In a text book, one would write it x_n. In the implementation, such variable x_n is returned by x[n]. We refer to n as the \"index\" of x[n].\n\nIt has an underlying \"classical\" polynomial x[n]._p. The question is: To what classical polynomial ring should x[n]._p belong?\n\n* The dense implementation (due to Mike Hansen) is: x[n]._p belongs to the ring with variables x0,x1,...,x{n},y0,y1,...,y{n}.\n\n* The sparse implementation (my starting point) is: x[n]._p belongs to the ring with variable x{n}.\n\nOf course, when doing algebraic operations in the sparse implementation, the underlying polynomial ring must be extended. In the dense implementation, this is only needed when G acts, or if one does a conversion, say, of a string 'x10000+2*y100001' into R.\n\nBut that's the point: How can I find the maximal index of Infinite Polynomials when doing arithmetic, G-action or conversion? Note that by arithmetic operations the terms of maximal index may cancel, so, it is not easily possible to infer the maximal index of a sum, given the maximal indices of a summand. And how should one find out the maximal index in a given string?\n\nI thought that an easy solution is to infer the maximal index from a string representation of the underlying classical polynomial q._p, if q is an Infinite Polynomial. This is one place where regular expressions occur. In order to simplify the regular expressions, generator names should be as simple as possible. \n\nThere is another point. I wanted to implement Aschenbrenner's and Hillar's algorithm for finding Symmetric Groebner Bases. This requires a monomial ordering on R. Of course, I am using monomial orderings of the underlying classical polynomial rings. \n\nBut this means: If I construct the parent of q._p (again, q an Infinite Polynomial) then I must order the occurring variables. Usually, the variable names have to be sorted, first, by the name of the generator and, secondly, by the index. Again, I sought to do this operation as quick and easy as possible.\n\nAnd these are the reasons why I imposed the name restriction:\n\n1. The name of the variable name should allow (for a human) to infer the name of the generator and the index. So, it should be something like var_name = str(generator_name)+str(index) or var_name = str(generator_name)+'_'+str(index).\n\n2. For the computer, it should be easy and *fast* to determine generator name and index from the variable name. This is why I ask to have a single letter for the generator name, so that one has `generator_name, index = var_name[0], int(var_name[1:]`. \n\nBut what about just requiring that generator_name must not contain \"_\". Then, one could say var_name = str(generator_name)+'_'+str(index), and process var_name by `split('_')`. How much slower would this be? Apparently 50%:\n\n```\nsage: f = lambda x,y: (x,int(y))\nsage: s = 'x_1234'\nsage: timeit(\"a,b = f(*s.split('_',1))\")\n625 loops, best of 3: 1.73 \u00b5s per loop\nsage: timeit(\"a,b = s[0],int(s[2:])\")\n625 loops, best of 3: 1.11 \u00b5s per loop\n```\n\n\nActually the approach using \"_\" has one benefit: Suppose one is given the string representation of the underlying polynomial and wants to determine the maximal index. This can be found using a simple regular expression, since a sequence of digits defines an index if and only if it is preceded by \"_\". Thus:\n\n```\nsage: import re\nsage: P = re.compile('_[0123456789]+')  # this will be done only once\nsage: s = '1000000*alpha_1234*beta_4321^1223923923+gamma_234*delta_1'\nsage: max([int(x[1:]) for x in P.findall(s)])\n4321\n```\n\n\nSo, in the end of the day, using \"_\" could be faster.\n\nWould it be OK to say \"generator names must be alphanumeric and must not contain underscore\"?",
+    "body": "Here some words on the requirement that variable names must be single letters.\n\nThe generators x,y,... of an Infinite Polynomial Ring R are, mathematically, generators of R as a free module over the group algebra of the symmetric group G of the natural numbers (starting with 1, while 0 is fixed).\n\nA variable in R can be thought of as a pair (x,n), where x is a generator of R and n is a natural number. G acts on the pair by acting on n. In a text book, one would write it x_n. In the implementation, such variable x_n is returned by x[n]. We refer to n as the \"index\" of x[n].\n\nIt has an underlying \"classical\" polynomial x[n]._p. The question is: To what classical polynomial ring should x[n]._p belong?\n\n* The dense implementation (due to Mike Hansen) is: x[n]._p belongs to the ring with variables x0,x1,...,x{n},y0,y1,...,y{n}.\n\n* The sparse implementation (my starting point) is: x[n]._p belongs to the ring with variable x{n}.\n\nOf course, when doing algebraic operations in the sparse implementation, the underlying polynomial ring must be extended. In the dense implementation, this is only needed when G acts, or if one does a conversion, say, of a string 'x10000+2*y100001' into R.\n\nBut that's the point: How can I find the maximal index of Infinite Polynomials when doing arithmetic, G-action or conversion? Note that by arithmetic operations the terms of maximal index may cancel, so, it is not easily possible to infer the maximal index of a sum, given the maximal indices of a summand. And how should one find out the maximal index in a given string?\n\nI thought that an easy solution is to infer the maximal index from a string representation of the underlying classical polynomial q._p, if q is an Infinite Polynomial. This is one place where regular expressions occur. In order to simplify the regular expressions, generator names should be as simple as possible. \n\nThere is another point. I wanted to implement Aschenbrenner's and Hillar's algorithm for finding Symmetric Groebner Bases. This requires a monomial ordering on R. Of course, I am using monomial orderings of the underlying classical polynomial rings. \n\nBut this means: If I construct the parent of q._p (again, q an Infinite Polynomial) then I must order the occurring variables. Usually, the variable names have to be sorted, first, by the name of the generator and, secondly, by the index. Again, I sought to do this operation as quick and easy as possible.\n\nAnd these are the reasons why I imposed the name restriction:\n\n1. The name of the variable name should allow (for a human) to infer the name of the generator and the index. So, it should be something like var_name = str(generator_name)+str(index) or var_name = str(generator_name)+'_'+str(index).\n\n2. For the computer, it should be easy and *fast* to determine generator name and index from the variable name. This is why I ask to have a single letter for the generator name, so that one has `generator_name, index = var_name[0], int(var_name[1:]`. \n\nBut what about just requiring that generator_name must not contain \"_\". Then, one could say var_name = str(generator_name)+'_'+str(index), and process var_name by `split('_')`. How much slower would this be? Apparently 50%:\n\n```\nsage: f = lambda x,y: (x,int(y))\nsage: s = 'x_1234'\nsage: timeit(\"a,b = f(*s.split('_',1))\")\n625 loops, best of 3: 1.73 \u00b5s per loop\nsage: timeit(\"a,b = s[0],int(s[2:])\")\n625 loops, best of 3: 1.11 \u00b5s per loop\n```\n\nActually the approach using \"_\" has one benefit: Suppose one is given the string representation of the underlying polynomial and wants to determine the maximal index. This can be found using a simple regular expression, since a sequence of digits defines an index if and only if it is preceded by \"_\". Thus:\n\n```\nsage: import re\nsage: P = re.compile('_[0123456789]+')  # this will be done only once\nsage: s = '1000000*alpha_1234*beta_4321^1223923923+gamma_234*delta_1'\nsage: max([int(x[1:]) for x in P.findall(s)])\n4321\n```\n\nSo, in the end of the day, using \"_\" could be faster.\n\nWould it be OK to say \"generator names must be alphanumeric and must not contain underscore\"?",
     "created_at": "2009-12-02T11:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -198,7 +192,6 @@ sage: timeit("a,b = s[0],int(s[2:])")
 625 loops, best of 3: 1.11 µs per loop
 ```
 
-
 Actually the approach using "_" has one benefit: Suppose one is given the string representation of the underlying polynomial and wants to determine the maximal index. This can be found using a simple regular expression, since a sequence of digits defines an index if and only if it is preceded by "_". Thus:
 
 ```
@@ -208,7 +201,6 @@ sage: s = '1000000*alpha_1234*beta_4321^1223923923+gamma_234*delta_1'
 sage: max([int(x[1:]) for x in P.findall(s)])
 4321
 ```
-
 
 So, in the end of the day, using "_" could be faster.
 
@@ -221,7 +213,7 @@ Would it be OK to say "generator names must be alphanumeric and must not contain
 archive/issue_comments_064442.json:
 ```json
 {
-    "body": "Here is one example why I chose to use regular expressions.\n\nOften I have to find out what variables (i.e., generator and shift) occur in what power in the leading monomial of a polynomial. So:\n\n```\n# Create a polynomial ring\n# (the typical underlying finite polynomial ring of a densely\n#  implemented InfinitePolynomialRing)\nsage: Vars = ['x_'+str(n) for n in range(50)]+['y'+str(n) for n in range(50)]\nsage: R = PolynomialRing(QQ,Vars)\n# Create a big random element\nsage: p = R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element() \n```\n\n\nThe generic approach to get the exponents of the variables in the leading monomial is, of course, the method `exponents()`. We need to associate the exponent with the variable, so, let's zip two lists:\n\n```\nsage: zip(Vars,p.lm().exponents()[0])\n[('x_0', 0),\n ('x_1', 2),\n ('x_2', 0),\n ('x_3', 0),\n ('x_4', 0),\n ('x_5', 0),\n ('x_6', 0),\n... \n```\n\nIt is a long list, and we still did not separate the generator name from the shift.\n\nNow, do essentially the same with regular expressions:\n\n```\nsage: import re\nsage: RE = re.compile('([a-zA-Z0-9]+)_([0-9]+)\\^?([0-9]*)')\nsage: RE.findall(str(p.lm()))\n[('x', '1', '2'),\n ('x', '13', '2'),\n ('x', '16', ''),\n ('x', '23', ''),\n ('x', '45', '')] \n```\n\n\nThe list is much shorter, and moreover generator names and shifts are already told apart. This is actually the typical situation for elements of Infinite Polynomial Rings in dense implementation: Only few variables from the underlying finite polynomial ring appear in the leading monomial.\n\nAnd I guess this is why the regular expression is faster:\n\n```\nsage: timeit('L = RE.findall(str(p.lm()))')\n625 loops, best of 3: 23.8 \u00b5s per loop\nsage: timeit('L = zip(Vars,p.lm().exponents()[0])')\n625 loops, best of 3: 40.5 \u00b5s per loop \n```\n\n\nIIRC, in a very early stage of my implementation, I did use `exponents()`. But it soon turned out that it was too slow for Gr\u00f6bner basis computations.",
+    "body": "Here is one example why I chose to use regular expressions.\n\nOften I have to find out what variables (i.e., generator and shift) occur in what power in the leading monomial of a polynomial. So:\n\n```\n# Create a polynomial ring\n# (the typical underlying finite polynomial ring of a densely\n#  implemented InfinitePolynomialRing)\nsage: Vars = ['x_'+str(n) for n in range(50)]+['y'+str(n) for n in range(50)]\nsage: R = PolynomialRing(QQ,Vars)\n# Create a big random element\nsage: p = R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element()\nsage: p *= R.random_element() \n```\n\nThe generic approach to get the exponents of the variables in the leading monomial is, of course, the method `exponents()`. We need to associate the exponent with the variable, so, let's zip two lists:\n\n```\nsage: zip(Vars,p.lm().exponents()[0])\n[('x_0', 0),\n ('x_1', 2),\n ('x_2', 0),\n ('x_3', 0),\n ('x_4', 0),\n ('x_5', 0),\n ('x_6', 0),\n... \n```\nIt is a long list, and we still did not separate the generator name from the shift.\n\nNow, do essentially the same with regular expressions:\n\n```\nsage: import re\nsage: RE = re.compile('([a-zA-Z0-9]+)_([0-9]+)\\^?([0-9]*)')\nsage: RE.findall(str(p.lm()))\n[('x', '1', '2'),\n ('x', '13', '2'),\n ('x', '16', ''),\n ('x', '23', ''),\n ('x', '45', '')] \n```\n\nThe list is much shorter, and moreover generator names and shifts are already told apart. This is actually the typical situation for elements of Infinite Polynomial Rings in dense implementation: Only few variables from the underlying finite polynomial ring appear in the leading monomial.\n\nAnd I guess this is why the regular expression is faster:\n\n```\nsage: timeit('L = RE.findall(str(p.lm()))')\n625 loops, best of 3: 23.8 \u00b5s per loop\nsage: timeit('L = zip(Vars,p.lm().exponents()[0])')\n625 loops, best of 3: 40.5 \u00b5s per loop \n```\n\nIIRC, in a very early stage of my implementation, I did use `exponents()`. But it soon turned out that it was too slow for Gr\u00f6bner basis computations.",
     "created_at": "2009-12-02T18:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -248,7 +240,6 @@ sage: p *= R.random_element()
 sage: p *= R.random_element() 
 ```
 
-
 The generic approach to get the exponents of the variables in the leading monomial is, of course, the method `exponents()`. We need to associate the exponent with the variable, so, let's zip two lists:
 
 ```
@@ -262,7 +253,6 @@ sage: zip(Vars,p.lm().exponents()[0])
  ('x_6', 0),
 ... 
 ```
-
 It is a long list, and we still did not separate the generator name from the shift.
 
 Now, do essentially the same with regular expressions:
@@ -278,7 +268,6 @@ sage: RE.findall(str(p.lm()))
  ('x', '45', '')] 
 ```
 
-
 The list is much shorter, and moreover generator names and shifts are already told apart. This is actually the typical situation for elements of Infinite Polynomial Rings in dense implementation: Only few variables from the underlying finite polynomial ring appear in the leading monomial.
 
 And I guess this is why the regular expression is faster:
@@ -290,7 +279,6 @@ sage: timeit('L = zip(Vars,p.lm().exponents()[0])')
 625 loops, best of 3: 40.5 µs per loop 
 ```
 
-
 IIRC, in a very early stage of my implementation, I did use `exponents()`. But it soon turned out that it was too slow for Gröbner basis computations.
 
 
@@ -300,7 +288,7 @@ IIRC, in a very early stage of my implementation, I did use `exponents()`. But i
 archive/issue_comments_064443.json:
 ```json
 {
-    "body": "I am now going through the bugs that you reported:\n\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\n\nI found the reason: There is one attribute of `X` that is changed even when `x[2^31]` fails. When subsequently calling `x[100]`, that attribute makes the sytem believe that the underlying polyomial ring is big enough to fit `x100` --- which is not the case.\n\nMy plan is to go through the whole code before posting a patch. I hope that's fine.",
+    "body": "I am now going through the bugs that you reported:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\nI found the reason: There is one attribute of `X` that is changed even when `x[2^31]` fails. When subsequently calling `x[100]`, that attribute makes the sytem believe that the underlying polyomial ring is big enough to fit `x100` --- which is not the case.\n\nMy plan is to go through the whole code before posting a patch. I hope that's fine.",
     "created_at": "2009-12-02T20:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -311,7 +299,6 @@ archive/issue_comments_064443.json:
 
 I am now going through the bugs that you reported:
 
-
 ```
 sage: X.<x,y> = InfinitePolynomialRing(QQ)
 sage: x[2^31]
@@ -321,7 +308,6 @@ OverflowError: range() result has too many items
 sage: x[100]
 TypeError: ...
 ```
-
 
 I found the reason: There is one attribute of `X` that is changed even when `x[2^31]` fails. When subsequently calling `x[100]`, that attribute makes the sytem believe that the underlying polyomial ring is big enough to fit `x100` --- which is not the case.
 
@@ -443,7 +429,7 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_064449.json:
 ```json
 {
-    "body": "Replying to [comment:7 ncohen]:\n> Here it is !! Perhaps you do not need fixing the docstrings in class mip as they should be changed by this patch soon :\n> \n> http://trac.sagemath.org/sage_trac/ticket/7561\n> \n> I'm mainly waiting for a answer from Martin and this ticket should be settled :-)\n\nThanks for the info!\n\nI hope I will be able to post a patch today, without changing the mip.pyx doc tests.",
+    "body": "Replying to [comment:7 ncohen]:\n> Here it is !! Perhaps you do not need fixing the docstrings in class mip as they should be changed by this patch soon :\n> \n> http://trac.sagemath.org/sage_trac/ticket/7561\n> \n> I'm mainly waiting for a answer from Martin and this ticket should be settled :-)\n\n\nThanks for the info!\n\nI hope I will be able to post a patch today, without changing the mip.pyx doc tests.",
     "created_at": "2009-12-04T08:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -458,6 +444,7 @@ Replying to [comment:7 ncohen]:
 > http://trac.sagemath.org/sage_trac/ticket/7561
 > 
 > I'm mainly waiting for a answer from Martin and this ticket should be settled :-)
+
 
 Thanks for the info!
 
@@ -510,7 +497,7 @@ Changing keywords from "" to "infinite polynomial ring coercion".
 archive/issue_comments_064452.json:
 ```json
 {
-    "body": "Hi!\n\nCc to Nicolas, since it partially concerns categories/functors.\n\nWe proudly present a major revision of Infinite Polynomial Rings; the patch bomb is relative to sage-4.3.alpha1.\n\nFirst of all, it fixes the bugs that William stated in the ticket description.\n\nSecond, it is now possible to use *any* commutative base ring; the restriction of using fields is now moved to the `groebner_basis()` method.\n\nThird, and that's the biggest change: It now uses the strength of Sage's coercion machinery in pushout.py. I hope I did not overdo my use of it...\n\n**__Bug fixes__**\n\nAnswer to William's failing examples:\n\n1.\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n...\nIndexError: Variable index is too big - consider using the sparse implementation\n```\n\nI think that error message is clearer, and it gives a good advice...\n\n```\nsage: x[100]\nx_100\n```\n\nSo, that bug is gone.\n\n2.\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na_100\nsage: a[2/3]\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: The index (= 2/3) must be an integer\nsage: a[Mod(2,3)]\na_2\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na_0\nsage: a['0+5']\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: invalid literal for int() with base 10: '0+5'\n```\n\n\n\n**__Extensions__**\n\n1.\nThe variable names can be any alphanumeric string. The base ring can be any commutative ring. Note the rhyme...\n\n```\nsage: A.<t> = ZZ[]\nsage: X.<alpha,beta>= InfinitePolynomialRing(A)\nsage: X\nInfinite polynomial ring in alpha, beta over Univariate Polynomial Ring in t over Integer Ring\nsage: 1/2*alpha[2]*t^3+alpha[1]*beta[4]^2\n1/2*t^3*alpha_2 + alpha_1*beta_4^2\nsage: latex(_)\n(\\frac{1}{2} t^{3}) \\alpha_{2} + \\alpha_{1}\\beta_{4}^{2}\n```\n\n\n1.1.\nSome words on the implementation for arbitrary base rings: Working on it, I discovered some bugs in `MPolynomialRing_polydict`, as I reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b69ba8e631bd3bf7/bc6ee7bdccf26ee1?lnk=gst&q=FakeRing#bc6ee7bdccf26ee1). However, there was no answer (so, apparently no interest). \n\nTherefore I decided to just work around these bugs. One issue is to evaluate a string 'x_2*t', if 'x_2' is a variable in an infinite polynomial ring and 't' is a variable in the base ring. gens_dict() would at most know about 'x_2' --- but with the additional complication that there is no fixed finite list of variables for the infinite polynomial ring.\n\n__Solution__\n\nI introduced a dictionary-like class `InfiniteGenDict`, that returns a variable of an infinite polynomial ring, given its name. \n\nAnd I introduced a class `GenDictWithBasering` that returns a variable of the ring or its base-ring or the base-ring of its base-ring or... The first answer wins.\n\nI think that this class might be of general use, e.g., for fixing issues in `MPolynomialRing_polydict`.\n\nExamples:\n\n```\nsage: R.<a,b> = InfinitePolynomialRing(QQ['t'])\nsage: R('a_0*t')\nt*a_0\nsage: _.parent()\nInfinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\nsage: R._P\nMultivariate Polynomial Ring in a_1, a_0, b_1, b_0 over Univariate Polynomial Ring in t over Rational Field\nsage: type(_)\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\nsage: R._P('a_0*t')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to convert string\n```\n\n\nThis is what I mean by \"bug in `MPolynomialRing_polydict`\"! And this is why I use string evaluation as a last resort, since this works much better:\n\n```\nsage: R.gens_dict()\nGenDict of Infinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\nsage: _._D\n[InfiniteGenDict defined by ['a', 'b'], {'t': t}, {'1': 1}]\nsage: sage_eval('a_0*t',R.gens_dict())\nt*a_0\nsage: R.gens_dict()['t'].parent()\nUnivariate Polynomial Ring in t over Rational Field\nsage: R.gens_dict()['a_4'].parent()\nInfinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\n```\n\n\nI think that `GenDictWithBasering` can provide a solution for the trouble with `MPolynomialRing_polydict`. As I showed, direct string conversion was flawed. But the following works:\n\n```\nsage: from sage.rings.polynomial.infinite_polynomial_ring import GenDictWithBasering\nsage: D = GenDictWithBasering(R._P, R._P.gens_dict())\nsage: sage_eval('a_0*t',D)\nt*a_0\nsage: _.parent()\nMultivariate Polynomial Ring in a_1, a_0, b_1, b_0 over Univariate Polynomial Ring in t over Rational Field\n```\n\n\n2.\nIt is now possible to construct quotient rings of infinite polynomial rings by symmetric ideals. Here, of course, it is required to have a field as base ring (for Groebner bases)\n\n\n```\nsage: R.<x> = InfinitePolynomialRing(QQ)\nsage: I = R.ideal([x[1]*x[2] + x[3]])\n```\n\n\nNote that ``I`` is not a symmetric Groebner basis (the symmetric Groebner basis of a principal symmetric ideal is generally not formed by a single polynomial!):\n\n```\nsage: G = R*I.groebner_basis()\nsage: G\nSymmetric Ideal (x_1^2 + x_1, x_2 - x_1) of Infinite polynomial ring in x over Rational Field\nsage: Q = R.quotient(G)\nsage: p = x[3]*x[1]+x[2]^2+3\nsage: Q(p)\n-2*x_1 + 3\n```\n\n\nBy the second generator of G, variable x_n is equal to x_1 for any positive integer n.\nBy the first generator of G, x_1<sup>3</sup> is equal to x_1 in Q. Indeed, we have\n\n```\nsage: Q(p)*x[2] == Q(p)*x[1]*x[3]*x[5]\nTrue\n```\n\n\nNote that the one doc test in `quotient_ring.py` has a doc test involving symmetric ideals. I don't know who wrote it, but (s)he forgot to use a symmetric Groebner basis for the ideal.\n\n**__Coercion__**\n\nI discovered construction functors and pushout, and now I really appreciate Sage's coercion system. By consequence, I make extensive use of it --- hopefully not too much...\n\n1.\nI introduced a construction functor for infinite polynomial rings. This functor, together with a ring, is used as the unique key of an infinite polynomial ring (as unique parent structure. I don't know if the use of construction functors for providing unique parents is common --- but I can recommend it!\n\n\n```\nsage: InfinitePolynomialRing.create_key(QQ, ('y1',))\n(InfPoly{[y1], \"lex\", \"dense\"}(FractionField(...)), Integer Ring)\nsage: InfinitePolynomialRing.create_key(QQ, names=['beta'], order='deglex', implementation='sparse')\n(InfPoly{[beta], \"deglex\", \"sparse\"}(FractionField(...)), Integer Ring)\nsage: InfinitePolynomialRing.create_key(QQ, names=['x','y'], implementation='dense')\n(InfPoly{[x,y], \"lex\", \"dense\"}(FractionField(...)), Integer Ring)\n```\n\n\nAs you can see, the given base ring is generally not used in the unique key. The reason is explained in the next paragraph. \n\n2.\nIn a way, an infinite polynomial ring X is just an upgrade of a usual polynomial ring P: The former has finitely many generators x, y and infinitely many variables x_0, x_1,..., y_0,y_1,..., while the latter may have finitely many variables x_0,x_1,x_2. \n\nNow, imagine what happens if you define `X = InfinitePolynomialRing(P,['x','y'])`? We can't simply take P as the base ring of X, since there is a name conflict. But since P can be considered a sub-structure of X: Why shouldn't one merge it into X?\n\nIn fact, this is what I do, still with unique parent structures:\n\n```\nsage: P.<a,b,x_2,x_0,y_3,y_2> = QQ[]\nsage: X.<x,y> = InfinitePolynomialRing(P, order='degrevlex')\nsage: X\nInfinite polynomial ring in x, y over Multivariate Polynomial Ring in a, b over Rational Field\nsage: P2.<a,b> = QQ[]\nsage: X2.<x,y> = InfinitePolynomialRing(P2, order='degrevlex')\nsage: X2 is X\nTrue\n```\n\n\nHowever, one has to be cautious: Infinite Polynomial Rings are *ordered* rings. Therefore, we only merge P into X if it is not only isomorphic to a sub-ring of X, but isomorphic to an *ordered* sub-ring of X. If this is not the case, an error will be raised:\n\n```\nsage: X3.<x,y> = InfinitePolynomialRing(P) # the standard order is lex\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Incompatible term orders lex, degrevlex\nsage: X3.<y,x> = InfinitePolynomialRing(P, order='degrevlex')\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Overlapping variables (('y', 'x'),['x_2', 'x_0', 'y_3', 'y_2']) are incompatible\n```\n\nNote: We attempted to make y_* greater than x_* in X, but x_* is greater than y_* in P.\n\n\n```\nsage: P.<a,b,x_0,x_2,y_3,y_2> = QQ[]\nsage: X3.<x,y> = InfinitePolynomialRing(P, order='degrevlex')\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Overlapping variables (('x', 'y'),['x_0', 'x_2', 'y_3', 'y_2']) are incompatible\n```\n\nNote: In any infinite polynomial ring holds x_2>x_0, but the order in P is opposite.\n\nThe 'magical merging' is based on the multiplication of construction functors, combined with the fact that functors are used as unique keys for parent structures.\n\n__Remark__\n\nWhat I do here could also be a model for polynomial rings. After all, I think it is a bug that the following does not raise an error:\n\n```\nsage: QQ['t']['t']\nUnivariate Polynomial Ring in t over Univariate Polynomial Ring in t over Rational Field\n```\n\n\n3. \nThe original purpose of the coercion machinery is probably to allow for flexible use of arithmetic with elements of different rings. There you are:\n\n```\nsage: 1/2*x_2+z[3]-a/((3*z[2]+2*z[1]+3)^2).lc()\nz_3 - 1/9*a + 1/2*x_2\nsage: _.parent()\nInfinite polynomial ring in z over Multivariate Polynomial Ring in a, b, x_2, x_0, y_3, y_2 over Rational Field\n```\n\nor\n\n```\nsage: P.<a,b,x_2,x_0,y_3,y_2> = ZZ[]\nsage: X.<y,z> = InfinitePolynomialRing(ZZ,order='degrevlex')\nsage: 1/2*x_2+z[3]-a/((3*z[2]+2*z[1]+3)^2).lc()\nz_3 - 1/9*a + 1/2*x_2\nsage: _.parent()\nInfinite polynomial ring in y, z over Multivariate Polynomial Ring in a, b, x_2, x_0 over Rational Field\n```\n\n\nNote that the last example only works since P and X both have order 'degrevlex'; otherwise we couldn't fit both P and X into a common ring.\n\n**__Self-critical comments__**\n\n* The closed ticket #6854 provides tab completion for elements of infinite polynomial rings. Here I provide a slightly simpler implementation. But I wouldn't mind if the implementation from #6854 would be used instead.\n* The patch contains the changes that I suggested on #7620. It is essential that these changes are done. So, #7620 may be considered a duplicate (or sub-ticket).\n* The new `InfinitePolynomialFunctor` has rank 9.5; this is since `PolynomialFunctor` has rank 9 and should be applied *before* `InfinitePolynomialFunctor` --- but rank 10 is taken by `MatrixFunctor`. I hope that fine tuning is ok.\n* The doc tests of devel/sage/sage/numerical/mip.pyx will break, since the name scheme for variables of infinite polynomial rings has changed. However, #7561 suggests to remove infinite polynomial rings from mip.pyx. So, I can live with these broken doc tests...\n\n**__Question to the Reviewer__**\n\nCan you please test on a 32 bit machine as well? I know that the hash code on 64 bit has changed, but I have no access to 32 bit and don't know what hash value to expect.\n\nI hope that you enjoy that patch bomb...\n\nCheers,\n\nSimon",
+    "body": "Hi!\n\nCc to Nicolas, since it partially concerns categories/functors.\n\nWe proudly present a major revision of Infinite Polynomial Rings; the patch bomb is relative to sage-4.3.alpha1.\n\nFirst of all, it fixes the bugs that William stated in the ticket description.\n\nSecond, it is now possible to use *any* commutative base ring; the restriction of using fields is now moved to the `groebner_basis()` method.\n\nThird, and that's the biggest change: It now uses the strength of Sage's coercion machinery in pushout.py. I hope I did not overdo my use of it...\n\n**__Bug fixes__**\n\nAnswer to William's failing examples:\n\n1.\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n...\nIndexError: Variable index is too big - consider using the sparse implementation\n```\nI think that error message is clearer, and it gives a good advice...\n\n```\nsage: x[100]\nx_100\n```\nSo, that bug is gone.\n\n2.\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na_100\nsage: a[2/3]\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: The index (= 2/3) must be an integer\nsage: a[Mod(2,3)]\na_2\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na_0\nsage: a['0+5']\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: invalid literal for int() with base 10: '0+5'\n```\n\n\n**__Extensions__**\n\n1.\nThe variable names can be any alphanumeric string. The base ring can be any commutative ring. Note the rhyme...\n\n```\nsage: A.<t> = ZZ[]\nsage: X.<alpha,beta>= InfinitePolynomialRing(A)\nsage: X\nInfinite polynomial ring in alpha, beta over Univariate Polynomial Ring in t over Integer Ring\nsage: 1/2*alpha[2]*t^3+alpha[1]*beta[4]^2\n1/2*t^3*alpha_2 + alpha_1*beta_4^2\nsage: latex(_)\n(\\frac{1}{2} t^{3}) \\alpha_{2} + \\alpha_{1}\\beta_{4}^{2}\n```\n\n1.1.\nSome words on the implementation for arbitrary base rings: Working on it, I discovered some bugs in `MPolynomialRing_polydict`, as I reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b69ba8e631bd3bf7/bc6ee7bdccf26ee1?lnk=gst&q=FakeRing#bc6ee7bdccf26ee1). However, there was no answer (so, apparently no interest). \n\nTherefore I decided to just work around these bugs. One issue is to evaluate a string 'x_2*t', if 'x_2' is a variable in an infinite polynomial ring and 't' is a variable in the base ring. gens_dict() would at most know about 'x_2' --- but with the additional complication that there is no fixed finite list of variables for the infinite polynomial ring.\n\n__Solution__\n\nI introduced a dictionary-like class `InfiniteGenDict`, that returns a variable of an infinite polynomial ring, given its name. \n\nAnd I introduced a class `GenDictWithBasering` that returns a variable of the ring or its base-ring or the base-ring of its base-ring or... The first answer wins.\n\nI think that this class might be of general use, e.g., for fixing issues in `MPolynomialRing_polydict`.\n\nExamples:\n\n```\nsage: R.<a,b> = InfinitePolynomialRing(QQ['t'])\nsage: R('a_0*t')\nt*a_0\nsage: _.parent()\nInfinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\nsage: R._P\nMultivariate Polynomial Ring in a_1, a_0, b_1, b_0 over Univariate Polynomial Ring in t over Rational Field\nsage: type(_)\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\nsage: R._P('a_0*t')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to convert string\n```\n\nThis is what I mean by \"bug in `MPolynomialRing_polydict`\"! And this is why I use string evaluation as a last resort, since this works much better:\n\n```\nsage: R.gens_dict()\nGenDict of Infinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\nsage: _._D\n[InfiniteGenDict defined by ['a', 'b'], {'t': t}, {'1': 1}]\nsage: sage_eval('a_0*t',R.gens_dict())\nt*a_0\nsage: R.gens_dict()['t'].parent()\nUnivariate Polynomial Ring in t over Rational Field\nsage: R.gens_dict()['a_4'].parent()\nInfinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field\n```\n\nI think that `GenDictWithBasering` can provide a solution for the trouble with `MPolynomialRing_polydict`. As I showed, direct string conversion was flawed. But the following works:\n\n```\nsage: from sage.rings.polynomial.infinite_polynomial_ring import GenDictWithBasering\nsage: D = GenDictWithBasering(R._P, R._P.gens_dict())\nsage: sage_eval('a_0*t',D)\nt*a_0\nsage: _.parent()\nMultivariate Polynomial Ring in a_1, a_0, b_1, b_0 over Univariate Polynomial Ring in t over Rational Field\n```\n\n2.\nIt is now possible to construct quotient rings of infinite polynomial rings by symmetric ideals. Here, of course, it is required to have a field as base ring (for Groebner bases)\n\n```\nsage: R.<x> = InfinitePolynomialRing(QQ)\nsage: I = R.ideal([x[1]*x[2] + x[3]])\n```\n\nNote that ``I`` is not a symmetric Groebner basis (the symmetric Groebner basis of a principal symmetric ideal is generally not formed by a single polynomial!):\n\n```\nsage: G = R*I.groebner_basis()\nsage: G\nSymmetric Ideal (x_1^2 + x_1, x_2 - x_1) of Infinite polynomial ring in x over Rational Field\nsage: Q = R.quotient(G)\nsage: p = x[3]*x[1]+x[2]^2+3\nsage: Q(p)\n-2*x_1 + 3\n```\n\nBy the second generator of G, variable x_n is equal to x_1 for any positive integer n.\nBy the first generator of G, x_1<sup>3</sup> is equal to x_1 in Q. Indeed, we have\n\n```\nsage: Q(p)*x[2] == Q(p)*x[1]*x[3]*x[5]\nTrue\n```\n\nNote that the one doc test in `quotient_ring.py` has a doc test involving symmetric ideals. I don't know who wrote it, but (s)he forgot to use a symmetric Groebner basis for the ideal.\n\n**__Coercion__**\n\nI discovered construction functors and pushout, and now I really appreciate Sage's coercion system. By consequence, I make extensive use of it --- hopefully not too much...\n\n1.\nI introduced a construction functor for infinite polynomial rings. This functor, together with a ring, is used as the unique key of an infinite polynomial ring (as unique parent structure. I don't know if the use of construction functors for providing unique parents is common --- but I can recommend it!\n\n```\nsage: InfinitePolynomialRing.create_key(QQ, ('y1',))\n(InfPoly{[y1], \"lex\", \"dense\"}(FractionField(...)), Integer Ring)\nsage: InfinitePolynomialRing.create_key(QQ, names=['beta'], order='deglex', implementation='sparse')\n(InfPoly{[beta], \"deglex\", \"sparse\"}(FractionField(...)), Integer Ring)\nsage: InfinitePolynomialRing.create_key(QQ, names=['x','y'], implementation='dense')\n(InfPoly{[x,y], \"lex\", \"dense\"}(FractionField(...)), Integer Ring)\n```\n\nAs you can see, the given base ring is generally not used in the unique key. The reason is explained in the next paragraph. \n\n2.\nIn a way, an infinite polynomial ring X is just an upgrade of a usual polynomial ring P: The former has finitely many generators x, y and infinitely many variables x_0, x_1,..., y_0,y_1,..., while the latter may have finitely many variables x_0,x_1,x_2. \n\nNow, imagine what happens if you define `X = InfinitePolynomialRing(P,['x','y'])`? We can't simply take P as the base ring of X, since there is a name conflict. But since P can be considered a sub-structure of X: Why shouldn't one merge it into X?\n\nIn fact, this is what I do, still with unique parent structures:\n\n```\nsage: P.<a,b,x_2,x_0,y_3,y_2> = QQ[]\nsage: X.<x,y> = InfinitePolynomialRing(P, order='degrevlex')\nsage: X\nInfinite polynomial ring in x, y over Multivariate Polynomial Ring in a, b over Rational Field\nsage: P2.<a,b> = QQ[]\nsage: X2.<x,y> = InfinitePolynomialRing(P2, order='degrevlex')\nsage: X2 is X\nTrue\n```\n\nHowever, one has to be cautious: Infinite Polynomial Rings are *ordered* rings. Therefore, we only merge P into X if it is not only isomorphic to a sub-ring of X, but isomorphic to an *ordered* sub-ring of X. If this is not the case, an error will be raised:\n\n```\nsage: X3.<x,y> = InfinitePolynomialRing(P) # the standard order is lex\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Incompatible term orders lex, degrevlex\nsage: X3.<y,x> = InfinitePolynomialRing(P, order='degrevlex')\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Overlapping variables (('y', 'x'),['x_2', 'x_0', 'y_3', 'y_2']) are incompatible\n```\nNote: We attempted to make y_* greater than x_* in X, but x_* is greater than y_* in P.\n\n```\nsage: P.<a,b,x_0,x_2,y_3,y_2> = QQ[]\nsage: X3.<x,y> = InfinitePolynomialRing(P, order='degrevlex')\n---------------------------------------------------------------------------\nCoercionException                         Traceback (most recent call last)\n...\nCoercionException: Overlapping variables (('x', 'y'),['x_0', 'x_2', 'y_3', 'y_2']) are incompatible\n```\nNote: In any infinite polynomial ring holds x_2>x_0, but the order in P is opposite.\n\nThe 'magical merging' is based on the multiplication of construction functors, combined with the fact that functors are used as unique keys for parent structures.\n\n__Remark__\n\nWhat I do here could also be a model for polynomial rings. After all, I think it is a bug that the following does not raise an error:\n\n```\nsage: QQ['t']['t']\nUnivariate Polynomial Ring in t over Univariate Polynomial Ring in t over Rational Field\n```\n\n3. \nThe original purpose of the coercion machinery is probably to allow for flexible use of arithmetic with elements of different rings. There you are:\n\n```\nsage: 1/2*x_2+z[3]-a/((3*z[2]+2*z[1]+3)^2).lc()\nz_3 - 1/9*a + 1/2*x_2\nsage: _.parent()\nInfinite polynomial ring in z over Multivariate Polynomial Ring in a, b, x_2, x_0, y_3, y_2 over Rational Field\n```\nor\n\n```\nsage: P.<a,b,x_2,x_0,y_3,y_2> = ZZ[]\nsage: X.<y,z> = InfinitePolynomialRing(ZZ,order='degrevlex')\nsage: 1/2*x_2+z[3]-a/((3*z[2]+2*z[1]+3)^2).lc()\nz_3 - 1/9*a + 1/2*x_2\nsage: _.parent()\nInfinite polynomial ring in y, z over Multivariate Polynomial Ring in a, b, x_2, x_0 over Rational Field\n```\n\nNote that the last example only works since P and X both have order 'degrevlex'; otherwise we couldn't fit both P and X into a common ring.\n\n**__Self-critical comments__**\n\n* The closed ticket #6854 provides tab completion for elements of infinite polynomial rings. Here I provide a slightly simpler implementation. But I wouldn't mind if the implementation from #6854 would be used instead.\n* The patch contains the changes that I suggested on #7620. It is essential that these changes are done. So, #7620 may be considered a duplicate (or sub-ticket).\n* The new `InfinitePolynomialFunctor` has rank 9.5; this is since `PolynomialFunctor` has rank 9 and should be applied *before* `InfinitePolynomialFunctor` --- but rank 10 is taken by `MatrixFunctor`. I hope that fine tuning is ok.\n* The doc tests of devel/sage/sage/numerical/mip.pyx will break, since the name scheme for variables of infinite polynomial rings has changed. However, #7561 suggests to remove infinite polynomial rings from mip.pyx. So, I can live with these broken doc tests...\n\n**__Question to the Reviewer__**\n\nCan you please test on a 32 bit machine as well? I know that the hash code on 64 bit has changed, but I have no access to 32 bit and don't know what hash value to expect.\n\nI hope that you enjoy that patch bomb...\n\nCheers,\n\nSimon",
     "created_at": "2009-12-10T17:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -545,14 +532,12 @@ IndexError                                Traceback (most recent call last)
 ...
 IndexError: Variable index is too big - consider using the sparse implementation
 ```
-
 I think that error message is clearer, and it gives a good advice...
 
 ```
 sage: x[100]
 x_100
 ```
-
 So, that bug is gone.
 
 2.
@@ -579,7 +564,6 @@ ValueError: invalid literal for int() with base 10: '0+5'
 ```
 
 
-
 **__Extensions__**
 
 1.
@@ -595,7 +579,6 @@ sage: 1/2*alpha[2]*t^3+alpha[1]*beta[4]^2
 sage: latex(_)
 (\frac{1}{2} t^{3}) \alpha_{2} + \alpha_{1}\beta_{4}^{2}
 ```
-
 
 1.1.
 Some words on the implementation for arbitrary base rings: Working on it, I discovered some bugs in `MPolynomialRing_polydict`, as I reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b69ba8e631bd3bf7/bc6ee7bdccf26ee1?lnk=gst&q=FakeRing#bc6ee7bdccf26ee1). However, there was no answer (so, apparently no interest). 
@@ -629,7 +612,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unable to convert string
 ```
 
-
 This is what I mean by "bug in `MPolynomialRing_polydict`"! And this is why I use string evaluation as a last resort, since this works much better:
 
 ```
@@ -645,7 +627,6 @@ sage: R.gens_dict()['a_4'].parent()
 Infinite polynomial ring in a, b over Univariate Polynomial Ring in t over Rational Field
 ```
 
-
 I think that `GenDictWithBasering` can provide a solution for the trouble with `MPolynomialRing_polydict`. As I showed, direct string conversion was flawed. But the following works:
 
 ```
@@ -657,16 +638,13 @@ sage: _.parent()
 Multivariate Polynomial Ring in a_1, a_0, b_1, b_0 over Univariate Polynomial Ring in t over Rational Field
 ```
 
-
 2.
 It is now possible to construct quotient rings of infinite polynomial rings by symmetric ideals. Here, of course, it is required to have a field as base ring (for Groebner bases)
-
 
 ```
 sage: R.<x> = InfinitePolynomialRing(QQ)
 sage: I = R.ideal([x[1]*x[2] + x[3]])
 ```
-
 
 Note that ``I`` is not a symmetric Groebner basis (the symmetric Groebner basis of a principal symmetric ideal is generally not formed by a single polynomial!):
 
@@ -680,7 +658,6 @@ sage: Q(p)
 -2*x_1 + 3
 ```
 
-
 By the second generator of G, variable x_n is equal to x_1 for any positive integer n.
 By the first generator of G, x_1<sup>3</sup> is equal to x_1 in Q. Indeed, we have
 
@@ -688,7 +665,6 @@ By the first generator of G, x_1<sup>3</sup> is equal to x_1 in Q. Indeed, we ha
 sage: Q(p)*x[2] == Q(p)*x[1]*x[3]*x[5]
 True
 ```
-
 
 Note that the one doc test in `quotient_ring.py` has a doc test involving symmetric ideals. I don't know who wrote it, but (s)he forgot to use a symmetric Groebner basis for the ideal.
 
@@ -699,7 +675,6 @@ I discovered construction functors and pushout, and now I really appreciate Sage
 1.
 I introduced a construction functor for infinite polynomial rings. This functor, together with a ring, is used as the unique key of an infinite polynomial ring (as unique parent structure. I don't know if the use of construction functors for providing unique parents is common --- but I can recommend it!
 
-
 ```
 sage: InfinitePolynomialRing.create_key(QQ, ('y1',))
 (InfPoly{[y1], "lex", "dense"}(FractionField(...)), Integer Ring)
@@ -708,7 +683,6 @@ sage: InfinitePolynomialRing.create_key(QQ, names=['beta'], order='deglex', impl
 sage: InfinitePolynomialRing.create_key(QQ, names=['x','y'], implementation='dense')
 (InfPoly{[x,y], "lex", "dense"}(FractionField(...)), Integer Ring)
 ```
-
 
 As you can see, the given base ring is generally not used in the unique key. The reason is explained in the next paragraph. 
 
@@ -730,7 +704,6 @@ sage: X2 is X
 True
 ```
 
-
 However, one has to be cautious: Infinite Polynomial Rings are *ordered* rings. Therefore, we only merge P into X if it is not only isomorphic to a sub-ring of X, but isomorphic to an *ordered* sub-ring of X. If this is not the case, an error will be raised:
 
 ```
@@ -745,9 +718,7 @@ CoercionException                         Traceback (most recent call last)
 ...
 CoercionException: Overlapping variables (('y', 'x'),['x_2', 'x_0', 'y_3', 'y_2']) are incompatible
 ```
-
 Note: We attempted to make y_* greater than x_* in X, but x_* is greater than y_* in P.
-
 
 ```
 sage: P.<a,b,x_0,x_2,y_3,y_2> = QQ[]
@@ -757,7 +728,6 @@ CoercionException                         Traceback (most recent call last)
 ...
 CoercionException: Overlapping variables (('x', 'y'),['x_0', 'x_2', 'y_3', 'y_2']) are incompatible
 ```
-
 Note: In any infinite polynomial ring holds x_2>x_0, but the order in P is opposite.
 
 The 'magical merging' is based on the multiplication of construction functors, combined with the fact that functors are used as unique keys for parent structures.
@@ -771,7 +741,6 @@ sage: QQ['t']['t']
 Univariate Polynomial Ring in t over Univariate Polynomial Ring in t over Rational Field
 ```
 
-
 3. 
 The original purpose of the coercion machinery is probably to allow for flexible use of arithmetic with elements of different rings. There you are:
 
@@ -781,7 +750,6 @@ z_3 - 1/9*a + 1/2*x_2
 sage: _.parent()
 Infinite polynomial ring in z over Multivariate Polynomial Ring in a, b, x_2, x_0, y_3, y_2 over Rational Field
 ```
-
 or
 
 ```
@@ -792,7 +760,6 @@ z_3 - 1/9*a + 1/2*x_2
 sage: _.parent()
 Infinite polynomial ring in y, z over Multivariate Polynomial Ring in a, b, x_2, x_0 over Rational Field
 ```
-
 
 Note that the last example only works since P and X both have order 'degrevlex'; otherwise we couldn't fit both P and X into a common ring.
 
@@ -838,7 +805,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064454.json:
 ```json
 {
-    "body": "\"The variable names can be any alphanumeric string. The base ring can be any commutative ring. Note the rhyme...\"\n\n\n```\nThe bugs in your code can really sting.\nBut the speed will really zing!\n```\n",
+    "body": "\"The variable names can be any alphanumeric string. The base ring can be any commutative ring. Note the rhyme...\"\n\n```\nThe bugs in your code can really sting.\nBut the speed will really zing!\n```",
     "created_at": "2009-12-10T19:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -849,12 +816,10 @@ archive/issue_comments_064454.json:
 
 "The variable names can be any alphanumeric string. The base ring can be any commutative ring. Note the rhyme..."
 
-
 ```
 The bugs in your code can really sting.
 But the speed will really zing!
 ```
-
 
 
 
@@ -863,7 +828,7 @@ But the speed will really zing!
 archive/issue_comments_064455.json:
 ```json
 {
-    "body": "Replying to [comment:11 was]:\n> {{{\n> The bugs in your code can really sting.\n> But the speed will really zing!\n> }}}\n\n:)\n\nIf there is a speed improvement then it is very likely due to the recent improvements of conversions in `MPolynomialRing_libsingular` (in that case I don't use sage_eval) and in `MPolynomial_libsingular.exponent()` (I use regular expressions to determine the exponents only if `MPolynomial_polydict` occurs).\n\nAnd if there are bugs -- well, of course there are (as in any non-trivial program), but I did my best to hide them.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:11 was]:\n> {{{\n> The bugs in your code can really sting.\n> But the speed will really zing!\n> }}}\n\n\n:)\n\nIf there is a speed improvement then it is very likely due to the recent improvements of conversions in `MPolynomialRing_libsingular` (in that case I don't use sage_eval) and in `MPolynomial_libsingular.exponent()` (I use regular expressions to determine the exponents only if `MPolynomial_polydict` occurs).\n\nAnd if there are bugs -- well, of course there are (as in any non-trivial program), but I did my best to hide them.\n\nCheers,\nSimon",
     "created_at": "2009-12-10T19:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -877,6 +842,7 @@ Replying to [comment:11 was]:
 > The bugs in your code can really sting.
 > But the speed will really zing!
 > }}}
+
 
 :)
 
@@ -894,7 +860,7 @@ Simon
 archive/issue_comments_064456.json:
 ```json
 {
-    "body": "Here are the doctest failures on 32-bit Ubuntu:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 177:\n    sage: InfinitePolynomial(X,alpha_2)\nExpected:\n    alpha_0\nGot:\n    alpha_1\n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 264:\n    sage: hash(a)\nExpected:\n    233743571\nGot:\n    -957478897\n**********************************************************************\n2 items had failures:\n   1 of  23 in __main__.example_1\n   1 of   5 in __main__.example_5\n***Test Failed*** 2 failures.\n```\n",
+    "body": "Here are the doctest failures on 32-bit Ubuntu:\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 177:\n    sage: InfinitePolynomial(X,alpha_2)\nExpected:\n    alpha_0\nGot:\n    alpha_1\n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 264:\n    sage: hash(a)\nExpected:\n    233743571\nGot:\n    -957478897\n**********************************************************************\n2 items had failures:\n   1 of  23 in __main__.example_1\n   1 of   5 in __main__.example_5\n***Test Failed*** 2 failures.\n```",
     "created_at": "2009-12-10T20:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -930,7 +896,6 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_064457.json:
@@ -954,7 +919,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064458.json:
 ```json
 {
-    "body": "Thank you, William!\n\nReplying to [comment:13 was]:\n> Here are the doctest failures on 32-bit Ubuntu:\n[...\n>     sage: InfinitePolynomial(X,alpha_2)\n> Expected:\n>     alpha_0\n> Got:\n>     alpha_1\n\nInteresting! The point of that doc test was to show that something does not work: One would hope to get `alpha_2`, but due to a wrong usage one gets `alpha_0` on my machine or `alpha_1` on 32-bit Ubuntu. \n\nI'll try to find a better way to demonstrate \"how not to use `InfinitePolynomial`\". \n\n> **********************************************************************\n> File \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 264:\n>     sage: hash(a)\n> Expected:\n>     233743571\n> Got:\n>     -957478897\n\nThanks, I actually expected that the hash value has changed.\n\nSo, soon there will be a second patch that fixes the first.",
+    "body": "Thank you, William!\n\nReplying to [comment:13 was]:\n> Here are the doctest failures on 32-bit Ubuntu:\n\n[...\n>     sage: InfinitePolynomial(X,alpha_2)\n\n> Expected:\n>     alpha_0\n\n> Got:\n>     alpha_1\n\n\nInteresting! The point of that doc test was to show that something does not work: One would hope to get `alpha_2`, but due to a wrong usage one gets `alpha_0` on my machine or `alpha_1` on 32-bit Ubuntu. \n\nI'll try to find a better way to demonstrate \"how not to use `InfinitePolynomial`\". \n\n> **********************************************************************\n> File \"/tmp/wstein/farm/sage-4.3.alpha1/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 264:\n>     sage: hash(a)\n> Expected:\n>     233743571\n> Got:\n>     -957478897\n\n\nThanks, I actually expected that the hash value has changed.\n\nSo, soon there will be a second patch that fixes the first.",
     "created_at": "2009-12-10T20:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -967,12 +932,16 @@ Thank you, William!
 
 Replying to [comment:13 was]:
 > Here are the doctest failures on 32-bit Ubuntu:
+
 [...
 >     sage: InfinitePolynomial(X,alpha_2)
+
 > Expected:
 >     alpha_0
+
 > Got:
 >     alpha_1
+
 
 Interesting! The point of that doc test was to show that something does not work: One would hope to get `alpha_2`, but due to a wrong usage one gets `alpha_0` on my machine or `alpha_1` on 32-bit Ubuntu. 
 
@@ -986,6 +955,7 @@ I'll try to find a better way to demonstrate "how not to use `InfinitePolynomial
 > Got:
 >     -957478897
 
+
 Thanks, I actually expected that the hash value has changed.
 
 So, soon there will be a second patch that fixes the first.
@@ -997,7 +967,7 @@ So, soon there will be a second patch that fixes the first.
 archive/issue_comments_064459.json:
 ```json
 {
-    "body": "Replying to [comment:13 was]:\n>     sage: InfinitePolynomial(X,alpha_2)\n> Expected:\n>     alpha_0\n> Got:\n>     alpha_1\n\nAs I said, this test was supposed to demonstrate wrong usage, that occurs due to an inconsistency in polynomial conversion. Both on my machine and on sage.math, one gets\n\n```\nsage: A = ZZ['alpha_2','alpha_1','alpha_0']\nsage: B.<alpha_3,alpha_1,alpha_2> = ZZ[]\nsage: A(alpha_2)\nalpha_0\nsage: A(alpha_1)\nalpha_1\nsage: A(alpha_3)\nalpha_2\n```\n\n\nSo, the conversion is done by position of the variables. But when one has one variable more, conversion is based on name:\n\n```\nsage: A2 = ZZ['alpha_2','alpha_1','alpha_0','foo']\nsage: A2(alpha_2)\nalpha_2\nsage: A2(alpha_1)\nalpha_1\nsage: A2(alpha_3)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError:\n```\n\n\nI think this is documented somewhere. What happens on 32 bit Ubuntu?\n\nAnyway. The purpose of this test was\n   1. make the user alert that a *direct* construction of elements of infinite polynomial rings is not good -- one should use arithmetic on the generators, or conversion.\n   2. Demonstrate that, in spite of the oddity of polynomial conversion, *infinite* polynomial conversion works fine.\n\nBut if the oddity of polynomial conversion is different on different platforms (which I would then call a bug) then it might be better to just drop that test. What do you think?\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:13 was]:\n>     sage: InfinitePolynomial(X,alpha_2)\n\n> Expected:\n>     alpha_0\n\n> Got:\n>     alpha_1\n\n\nAs I said, this test was supposed to demonstrate wrong usage, that occurs due to an inconsistency in polynomial conversion. Both on my machine and on sage.math, one gets\n\n```\nsage: A = ZZ['alpha_2','alpha_1','alpha_0']\nsage: B.<alpha_3,alpha_1,alpha_2> = ZZ[]\nsage: A(alpha_2)\nalpha_0\nsage: A(alpha_1)\nalpha_1\nsage: A(alpha_3)\nalpha_2\n```\n\nSo, the conversion is done by position of the variables. But when one has one variable more, conversion is based on name:\n\n```\nsage: A2 = ZZ['alpha_2','alpha_1','alpha_0','foo']\nsage: A2(alpha_2)\nalpha_2\nsage: A2(alpha_1)\nalpha_1\nsage: A2(alpha_3)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError:\n```\n\nI think this is documented somewhere. What happens on 32 bit Ubuntu?\n\nAnyway. The purpose of this test was\n   1. make the user alert that a *direct* construction of elements of infinite polynomial rings is not good -- one should use arithmetic on the generators, or conversion.\n   2. Demonstrate that, in spite of the oddity of polynomial conversion, *infinite* polynomial conversion works fine.\n\nBut if the oddity of polynomial conversion is different on different platforms (which I would then call a bug) then it might be better to just drop that test. What do you think?\n\nCheers,\n\nSimon",
     "created_at": "2009-12-10T21:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1008,10 +978,13 @@ archive/issue_comments_064459.json:
 
 Replying to [comment:13 was]:
 >     sage: InfinitePolynomial(X,alpha_2)
+
 > Expected:
 >     alpha_0
+
 > Got:
 >     alpha_1
+
 
 As I said, this test was supposed to demonstrate wrong usage, that occurs due to an inconsistency in polynomial conversion. Both on my machine and on sage.math, one gets
 
@@ -1025,7 +998,6 @@ alpha_1
 sage: A(alpha_3)
 alpha_2
 ```
-
 
 So, the conversion is done by position of the variables. But when one has one variable more, conversion is based on name:
 
@@ -1041,7 +1013,6 @@ TypeError                                 Traceback (most recent call last)
 ...
 TypeError:
 ```
-
 
 I think this is documented somewhere. What happens on 32 bit Ubuntu?
 
@@ -1110,7 +1081,7 @@ Simon
 archive/issue_comments_064462.json:
 ```json
 {
-    "body": "By doing some more random tests, I revealed another bug in the computation of symmetric Gr\u00f6bner bases.\n\nTry\n\n```\nsage: X.<y,z> = InfinitePolynomialRing(GF(3),implementation='sparse')\nsage: I = ['-y_9*z_8^2 + y_8*y_3*z_3 + y_5*z_8*z_2']*X\nsage: I.groebner_basis(report=True)\n```\n\n\nIn the report, you will soon get the impression that there is a loop. Indeed there is, but that's easy enough to fix. \n\nHowever, after fixing it, I was running into the bug in polynomial conversion in libsingular that I reported at #7654.\n\nCurrently I try to find a work around. As a last resort, it might again be conversion from strings...\n\nI am collecting these in the \"work issues\" field.",
+    "body": "By doing some more random tests, I revealed another bug in the computation of symmetric Gr\u00f6bner bases.\n\nTry\n\n```\nsage: X.<y,z> = InfinitePolynomialRing(GF(3),implementation='sparse')\nsage: I = ['-y_9*z_8^2 + y_8*y_3*z_3 + y_5*z_8*z_2']*X\nsage: I.groebner_basis(report=True)\n```\n\nIn the report, you will soon get the impression that there is a loop. Indeed there is, but that's easy enough to fix. \n\nHowever, after fixing it, I was running into the bug in polynomial conversion in libsingular that I reported at #7654.\n\nCurrently I try to find a work around. As a last resort, it might again be conversion from strings...\n\nI am collecting these in the \"work issues\" field.",
     "created_at": "2009-12-11T00:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1128,7 +1099,6 @@ sage: X.<y,z> = InfinitePolynomialRing(GF(3),implementation='sparse')
 sage: I = ['-y_9*z_8^2 + y_8*y_3*z_3 + y_5*z_8*z_2']*X
 sage: I.groebner_basis(report=True)
 ```
-
 
 In the report, you will soon get the impression that there is a loop. Indeed there is, but that's easy enough to fix. 
 
@@ -1187,7 +1157,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064465.json:
 ```json
 {
-    "body": "I provided a new patch under the old namee 7580_fixes_and_extensions.patch. It is relative to sage-4.3.rc0, and it is self-contained (i.e., the \"follow-up\" patch is not needed).\n\n**__Remarks__**\n\n1.\nNew compared to the previous patch (see description above): I am now using a `WeakKeyDictionary` to cache whether there is a coercion map from another ring. Reason: Otherwise, many finite polynomial ring might be stored in a dictionary with *strong* references, and would thus be prevented from garbage collection (compare #5970).\n\n2. \nNote that I slightly modified the code for the tab completion (compare #6854): if p is an infinite polynomial, `p.__methods__` now returns the methods (and only methods) of the underlying finite polynomial.\n\n3.\nI changed the 32 bit hash in the doc test as provided by William, but I had problems to connect with Ubuntu32. So, I'd appreciate if a reviewer could test it.\n\n4. \nI tried to make the code as robust against bugs in `MPolynomialRing_libsingular` and `..._polydict` as possible. For example, before calling for conversion into a libsingular-ring, I first test if the number of variables coincides; if it does, there is no guarantee that the conversion is name preserving. Then I test whether there is a coercion; if there isn't then conversion is very likely to *not* work even when it should. In both situations, I construct a name-preserving map explicitely, and use it for conversion. And should this fail as well (it didn't happen, yet), then I fall back to string evaluation.\n\nIn particular, the one doc test that was supposed to demonstrate wrong usage (but had different results on 64 and 32 bit) could now be removed -- the formerly wrong usage is now OK.\n\nDoc tests of all changed files pass for me. I guess that mip.pyx is now fine (I didn't test), as it doesn't rely on infinite polynomial rings anymore.\n\nAs a result of my random tests, I think it is now working consistently. The random test was as follows: \n* Create a dense and a sparse infinite polynomial ring with two generators, over GF(3).\n* Choose a random element with two up to four summands, degree at most three, variable indices at most four, and consider the ideal generated by it.\n* Compute the symmetric Gr\u00f6bner basis of that ideal, both in the sparse and the dense approach; interrupt if this takes more than 10 minutes (recall: even for  principal ideals, symmetric Gr\u00f6bner bases aren't easy).\n* Apart from timeouts, there should be no error. And if both the dense and the sparse approach had no timeout, the results should coincide.\n\nWith the new patch, the tests (about 50 runs) did not reveal a wrong computation. \n\nHowever, one problem exists:\n\n**__Known issue__**\n\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex')\nsage: Y.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex', implementation='sparse')\nsage: while(1):\n....:     I = ['x_1*y_3^2 + y_2*y_1*y_0']*X\n....:     G = I.groebner_basis()\n....:     print get_memory_usage()\n....:\n827.81640625\n832.32421875\n836.91015625\n841.03515625\n845.70703125\n849.81640625\n854.5546875\n858.4375\n# hitting Ctrl-C at that point\nsage: while(1):\n....:     I = ['x_1*y_3^2 + y_2*y_1*y_0']*Y\n....:     G = I.groebner_basis()\n....:     print get_memory_usage()\n....:\n878.2109375\n882.1171875\n886.08203125\n889.93359375\n893.91796875\n897.76953125\n901.84765625\n905.58203125\n```\n\n\nSo, there is a memory leak.\n\n**__Suggestion__**\n\nI think that my patch does provide a considerable progress. For example, the old version raised an error on the above Gr\u00f6bner basis computation (so, I can't even tell whether the memory leak is new). And of course it is nice to have general base rings.\n\nSo, would it be acceptable (unless a reviewer finds further issues) to accept the patch as is, and to fix the memory leak later on a different ticket?\n\nCheers,\n\nSimon",
+    "body": "I provided a new patch under the old namee 7580_fixes_and_extensions.patch. It is relative to sage-4.3.rc0, and it is self-contained (i.e., the \"follow-up\" patch is not needed).\n\n**__Remarks__**\n\n1.\nNew compared to the previous patch (see description above): I am now using a `WeakKeyDictionary` to cache whether there is a coercion map from another ring. Reason: Otherwise, many finite polynomial ring might be stored in a dictionary with *strong* references, and would thus be prevented from garbage collection (compare #5970).\n\n2. \nNote that I slightly modified the code for the tab completion (compare #6854): if p is an infinite polynomial, `p.__methods__` now returns the methods (and only methods) of the underlying finite polynomial.\n\n3.\nI changed the 32 bit hash in the doc test as provided by William, but I had problems to connect with Ubuntu32. So, I'd appreciate if a reviewer could test it.\n\n4. \nI tried to make the code as robust against bugs in `MPolynomialRing_libsingular` and `..._polydict` as possible. For example, before calling for conversion into a libsingular-ring, I first test if the number of variables coincides; if it does, there is no guarantee that the conversion is name preserving. Then I test whether there is a coercion; if there isn't then conversion is very likely to *not* work even when it should. In both situations, I construct a name-preserving map explicitely, and use it for conversion. And should this fail as well (it didn't happen, yet), then I fall back to string evaluation.\n\nIn particular, the one doc test that was supposed to demonstrate wrong usage (but had different results on 64 and 32 bit) could now be removed -- the formerly wrong usage is now OK.\n\nDoc tests of all changed files pass for me. I guess that mip.pyx is now fine (I didn't test), as it doesn't rely on infinite polynomial rings anymore.\n\nAs a result of my random tests, I think it is now working consistently. The random test was as follows: \n* Create a dense and a sparse infinite polynomial ring with two generators, over GF(3).\n* Choose a random element with two up to four summands, degree at most three, variable indices at most four, and consider the ideal generated by it.\n* Compute the symmetric Gr\u00f6bner basis of that ideal, both in the sparse and the dense approach; interrupt if this takes more than 10 minutes (recall: even for  principal ideals, symmetric Gr\u00f6bner bases aren't easy).\n* Apart from timeouts, there should be no error. And if both the dense and the sparse approach had no timeout, the results should coincide.\n\nWith the new patch, the tests (about 50 runs) did not reveal a wrong computation. \n\nHowever, one problem exists:\n\n**__Known issue__**\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex')\nsage: Y.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex', implementation='sparse')\nsage: while(1):\n....:     I = ['x_1*y_3^2 + y_2*y_1*y_0']*X\n....:     G = I.groebner_basis()\n....:     print get_memory_usage()\n....:\n827.81640625\n832.32421875\n836.91015625\n841.03515625\n845.70703125\n849.81640625\n854.5546875\n858.4375\n# hitting Ctrl-C at that point\nsage: while(1):\n....:     I = ['x_1*y_3^2 + y_2*y_1*y_0']*Y\n....:     G = I.groebner_basis()\n....:     print get_memory_usage()\n....:\n878.2109375\n882.1171875\n886.08203125\n889.93359375\n893.91796875\n897.76953125\n901.84765625\n905.58203125\n```\n\nSo, there is a memory leak.\n\n**__Suggestion__**\n\nI think that my patch does provide a considerable progress. For example, the old version raised an error on the above Gr\u00f6bner basis computation (so, I can't even tell whether the memory leak is new). And of course it is nice to have general base rings.\n\nSo, would it be acceptable (unless a reviewer finds further issues) to accept the patch as is, and to fix the memory leak later on a different ticket?\n\nCheers,\n\nSimon",
     "created_at": "2009-12-14T12:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1228,7 +1198,6 @@ However, one problem exists:
 
 **__Known issue__**
 
-
 ```
 sage: X.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex')
 sage: Y.<x,y> = InfinitePolynomialRing(GF(3), order='degrevlex', implementation='sparse')
@@ -1261,7 +1230,6 @@ sage: while(1):
 905.58203125
 ```
 
-
 So, there is a memory leak.
 
 **__Suggestion__**
@@ -1281,7 +1249,7 @@ Simon
 archive/issue_comments_064466.json:
 ```json
 {
-    "body": "I don't want to join in the reviewing of this in any serious way since I'm a late arrival to the scene, but I have one minor request:  the is_proof() function for infinite polynomial rings returns False always -- fine, but the functions needs to have a (redundant) proof parameter since it is overriding a similar function in a base class.  I came across this in trying something out which involved constructing a univariate polynomial ring over an infinite poly ring, and some function wanted to know if the base ring for that was a field, so called is_field() like this:\n\n```\nelif base_ring.is_field(proof = False):\n```\n\n(line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!",
+    "body": "I don't want to join in the reviewing of this in any serious way since I'm a late arrival to the scene, but I have one minor request:  the is_proof() function for infinite polynomial rings returns False always -- fine, but the functions needs to have a (redundant) proof parameter since it is overriding a similar function in a base class.  I came across this in trying something out which involved constructing a univariate polynomial ring over an infinite poly ring, and some function wanted to know if the base ring for that was a field, so called is_field() like this:\n\n```\nelif base_ring.is_field(proof = False):\n```\n(line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!",
     "created_at": "2009-12-30T17:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1295,7 +1263,6 @@ I don't want to join in the reviewing of this in any serious way since I'm a lat
 ```
 elif base_ring.is_field(proof = False):
 ```
-
 (line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!
 
 
@@ -1305,7 +1272,7 @@ elif base_ring.is_field(proof = False):
 archive/issue_comments_064467.json:
 ```json
 {
-    "body": "Hi John!\n\nReplying to [comment:22 cremona]:\n> I don't want to join in the reviewing of this in any serious way since I'm a late arrival to the scene, \n\nWelcome! You are not late at all, I think...\n\n> but I have one minor request:  the is_proof() function for infinite polynomial rings returns False always -- fine, but the functions needs to have a (redundant) proof parameter since it is overriding a similar function in a base class. \n\nI am not sure I understand what you mean. There are two \"is_*\" methods that I overwrote: is_noetherian and is_field. In the first case, no optional parameters are accepted. Should they be? Anyway, since infinite polynomial rings aren't noetherian rings, False is always the right answer (although they are noetherian modules over the group ring of the infinite symmetric group).\n\nIn the second case, keyword arguments are accepted, but ignored (since an infinite polynomial rings can never be a field, False is returned). \n\n> I came across this in trying something out which involved constructing a univariate polynomial ring over an infinite poly ring, and some function wanted to know if the base ring for that was a field, so called is_field() like this:\n> {{{\n> elif base_ring.is_field(proof = False):\n> }}}\n> (line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!\n\nCan you give me an example? The following works fine:\n\n```\nsage: IP.<x,y> = InfinitePolynomialRing(QQ)\nsage: R.<a> = IP[]\nsage: R.base_ring().is_field(proof=False)\nFalse\n```\n\n\nCheers,\n\nSimon",
+    "body": "Hi John!\n\nReplying to [comment:22 cremona]:\n> I don't want to join in the reviewing of this in any serious way since I'm a late arrival to the scene, \n\n\nWelcome! You are not late at all, I think...\n\n> but I have one minor request:  the is_proof() function for infinite polynomial rings returns False always -- fine, but the functions needs to have a (redundant) proof parameter since it is overriding a similar function in a base class. \n\n\nI am not sure I understand what you mean. There are two \"is_*\" methods that I overwrote: is_noetherian and is_field. In the first case, no optional parameters are accepted. Should they be? Anyway, since infinite polynomial rings aren't noetherian rings, False is always the right answer (although they are noetherian modules over the group ring of the infinite symmetric group).\n\nIn the second case, keyword arguments are accepted, but ignored (since an infinite polynomial rings can never be a field, False is returned). \n\n> I came across this in trying something out which involved constructing a univariate polynomial ring over an infinite poly ring, and some function wanted to know if the base ring for that was a field, so called is_field() like this:\n> \n> ```\n> elif base_ring.is_field(proof = False):\n> ```\n> (line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!\n\n\nCan you give me an example? The following works fine:\n\n```\nsage: IP.<x,y> = InfinitePolynomialRing(QQ)\nsage: R.<a> = IP[]\nsage: R.base_ring().is_field(proof=False)\nFalse\n```\n\nCheers,\n\nSimon",
     "created_at": "2009-12-30T20:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1319,19 +1286,23 @@ Hi John!
 Replying to [comment:22 cremona]:
 > I don't want to join in the reviewing of this in any serious way since I'm a late arrival to the scene, 
 
+
 Welcome! You are not late at all, I think...
 
 > but I have one minor request:  the is_proof() function for infinite polynomial rings returns False always -- fine, but the functions needs to have a (redundant) proof parameter since it is overriding a similar function in a base class. 
+
 
 I am not sure I understand what you mean. There are two "is_*" methods that I overwrote: is_noetherian and is_field. In the first case, no optional parameters are accepted. Should they be? Anyway, since infinite polynomial rings aren't noetherian rings, False is always the right answer (although they are noetherian modules over the group ring of the infinite symmetric group).
 
 In the second case, keyword arguments are accepted, but ignored (since an infinite polynomial rings can never be a field, False is returned). 
 
 > I came across this in trying something out which involved constructing a univariate polynomial ring over an infinite poly ring, and some function wanted to know if the base ring for that was a field, so called is_field() like this:
-> {{{
+> 
+> ```
 > elif base_ring.is_field(proof = False):
-> }}}
+> ```
 > (line 422 of sage/rings/polynomial/polynomial_ring_constructor.pyc) which caused a run time error.  Thanks!
+
 
 Can you give me an example? The following works fine:
 
@@ -1341,7 +1312,6 @@ sage: R.<a> = IP[]
 sage: R.base_ring().is_field(proof=False)
 False
 ```
-
 
 Cheers,
 
@@ -1354,7 +1324,7 @@ Simon
 archive/issue_comments_064468.json:
 ```json
 {
-    "body": "Here is an example (in unpatched 4.3.1.alpha1) which fails\n\n```\nsage: R.<a> = InfinitePolynomialRing(QQ)\nsage: S.<x> = R[]\n(boom)\nor\nsage: PolynomialRing(R,'x')\n(boom)\n```\n\nBasically, the PolynomialRing constructor gets called with base_ring==R, and in that it tries to check if base_ring.is_field(proof = False).",
+    "body": "Here is an example (in unpatched 4.3.1.alpha1) which fails\n\n```\nsage: R.<a> = InfinitePolynomialRing(QQ)\nsage: S.<x> = R[]\n(boom)\nor\nsage: PolynomialRing(R,'x')\n(boom)\n```\nBasically, the PolynomialRing constructor gets called with base_ring==R, and in that it tries to check if base_ring.is_field(proof = False).",
     "created_at": "2010-01-09T15:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1373,7 +1343,6 @@ or
 sage: PolynomialRing(R,'x')
 (boom)
 ```
-
 Basically, the PolynomialRing constructor gets called with base_ring==R, and in that it tries to check if base_ring.is_field(proof = False).
 
 
@@ -1383,7 +1352,7 @@ Basically, the PolynomialRing constructor gets called with base_ring==R, and in 
 archive/issue_comments_064469.json:
 ```json
 {
-    "body": "Hi John!\n\nReplying to [comment:24 cremona]:\n> Here is an example (in unpatched 4.3.1.alpha1) which fails\n> {{{\n> sage: R.<a> = InfinitePolynomialRing(QQ)\n> sage: S.<x> = R[]\n> (boom)\n> or\n> sage: PolynomialRing(R,'x')\n> (boom)\n> }}}\n\nWell, as you say, this is unpatched. *With* the patch, it works fine -- see my previous post. In other words, you found a bug, but it is already addressed in the patch.\n\nCheers,\n\nSimon",
+    "body": "Hi John!\n\nReplying to [comment:24 cremona]:\n> Here is an example (in unpatched 4.3.1.alpha1) which fails\n> \n> ```\n> sage: R.<a> = InfinitePolynomialRing(QQ)\n> sage: S.<x> = R[]\n> (boom)\n> or\n> sage: PolynomialRing(R,'x')\n> (boom)\n> ```\n\n\nWell, as you say, this is unpatched. *With* the patch, it works fine -- see my previous post. In other words, you found a bug, but it is already addressed in the patch.\n\nCheers,\n\nSimon",
     "created_at": "2010-01-09T16:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1396,14 +1365,16 @@ Hi John!
 
 Replying to [comment:24 cremona]:
 > Here is an example (in unpatched 4.3.1.alpha1) which fails
-> {{{
+> 
+> ```
 > sage: R.<a> = InfinitePolynomialRing(QQ)
 > sage: S.<x> = R[]
 > (boom)
 > or
 > sage: PolynomialRing(R,'x')
 > (boom)
-> }}}
+> ```
+
 
 Well, as you say, this is unpatched. *With* the patch, it works fine -- see my previous post. In other words, you found a bug, but it is already addressed in the patch.
 
@@ -1465,7 +1436,7 @@ Simon
 archive/issue_comments_064472.json:
 ```json
 {
-    "body": "Replying to [comment:27 SimonKing]:\n> Hi John,\n> \n> I rebased the patch relative to sage-4.3.1.alpha1. \n> \n> Whoever is refereeing the patch: Apply 7580_fixes_and_extensions.patch, disregard the other patch, and then I hope it'll work.\n\nMaybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!",
+    "body": "Replying to [comment:27 SimonKing]:\n> Hi John,\n> \n> I rebased the patch relative to sage-4.3.1.alpha1. \n> \n> Whoever is refereeing the patch: Apply 7580_fixes_and_extensions.patch, disregard the other patch, and then I hope it'll work.\n\n\nMaybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!",
     "created_at": "2010-01-10T13:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1481,6 +1452,7 @@ Replying to [comment:27 SimonKing]:
 > 
 > Whoever is refereeing the patch: Apply 7580_fixes_and_extensions.patch, disregard the other patch, and then I hope it'll work.
 
+
 Maybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!
 
 
@@ -1490,7 +1462,7 @@ Maybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for 
 archive/issue_comments_064473.json:
 ```json
 {
-    "body": "Replying to [comment:28 cremona]:\n> Maybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!\n\nWhat???? \n\nEven parts of the old patch would apply to sage-4.3.1.alpha1. \n\nAnyway. What I did to produce the patch was: \n   * Build sage-4.3.1.alpha1 on sage.math\n   * Copy the relevant files to my laptop\n   * Merge them with my changes\n   * Put them back to sage.math\n   * Commit and produce a patch\n\nSo, I am really puzzled. Can other people confirm that it fails to apply?\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:28 cremona]:\n> Maybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!\n\n\nWhat???? \n\nEven parts of the old patch would apply to sage-4.3.1.alpha1. \n\nAnyway. What I did to produce the patch was: \n   * Build sage-4.3.1.alpha1 on sage.math\n   * Copy the relevant files to my laptop\n   * Merge them with my changes\n   * Put them back to sage.math\n   * Commit and produce a patch\n\nSo, I am really puzzled. Can other people confirm that it fails to apply?\n\nCheers,\n\nSimon",
     "created_at": "2010-01-10T13:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1501,6 +1473,7 @@ archive/issue_comments_064473.json:
 
 Replying to [comment:28 cremona]:
 > Maybe my 4.3.1.alpha1 build is messed up, but the new patch would not apply for me!Essentiall every hunk failed, which made me suspicious that I have messed up.  But I tried it on two different machines, so maybe I did not!
+
 
 What???? 
 
@@ -1562,7 +1535,7 @@ I'm building a new 4.3.1.alpha1 (for another reason) and when that's finished I'
 archive/issue_comments_064476.json:
 ```json
 {
-    "body": "The patch has DOS/Windows endlines, so maybe doing a\n\n\n```\ndos2unix 7580_fixes_and_extensions.patch\n```\n\n\nwill make it apply cleanly.",
+    "body": "The patch has DOS/Windows endlines, so maybe doing a\n\n```\ndos2unix 7580_fixes_and_extensions.patch\n```\n\nwill make it apply cleanly.",
     "created_at": "2010-01-20T22:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1573,11 +1546,9 @@ archive/issue_comments_064476.json:
 
 The patch has DOS/Windows endlines, so maybe doing a
 
-
 ```
 dos2unix 7580_fixes_and_extensions.patch
 ```
-
 
 will make it apply cleanly.
 
@@ -1608,7 +1579,7 @@ Major bug fixes and extensions for infinite polynomial rings
 archive/issue_comments_064478.json:
 ```json
 {
-    "body": "Replying to [comment:32 wjp]:\n> The patch has DOS/Windows endlines, so maybe doing a\n> \n> {{{\n> dos2unix 7580_fixes_and_extensions.patch\n> }}}\n> \n> will make it apply cleanly.\n\nThank you for your hint! I changed the attachment accordingly.\n\nThe problem is that at home I only have a tiny little Eee PC that came with Windows. I thought that xemacs on Windows would be good enough, but apparently it isn't. The patch was made on sage.math, though.\n\nSo, let us hope that it now works!\n\nBest regards,\nSimon",
+    "body": "Replying to [comment:32 wjp]:\n> The patch has DOS/Windows endlines, so maybe doing a\n> \n> \n> ```\n> dos2unix 7580_fixes_and_extensions.patch\n> ```\n> \n> will make it apply cleanly.\n\n\nThank you for your hint! I changed the attachment accordingly.\n\nThe problem is that at home I only have a tiny little Eee PC that came with Windows. I thought that xemacs on Windows would be good enough, but apparently it isn't. The patch was made on sage.math, though.\n\nSo, let us hope that it now works!\n\nBest regards,\nSimon",
     "created_at": "2010-01-20T22:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1620,11 +1591,13 @@ archive/issue_comments_064478.json:
 Replying to [comment:32 wjp]:
 > The patch has DOS/Windows endlines, so maybe doing a
 > 
-> {{{
+> 
+> ```
 > dos2unix 7580_fixes_and_extensions.patch
-> }}}
+> ```
 > 
 > will make it apply cleanly.
+
 
 Thank you for your hint! I changed the attachment accordingly.
 
@@ -1660,7 +1633,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064480.json:
 ```json
 {
-    "body": "The new patch applies fine to 4.3.1, and *almost* all tests pass.  (I tested the whole Sage library):\n\n```\nsage -t  sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/home/john/sage-4.3.1/devel/sage-tests/sage/structure/sage_object.pyx\", line 986:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_element_InfinitePolynomial_dense__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialGen__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_dense__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_sparse__.sobj\n    ** failed:  _class__sage_rings_polynomial_symmetric_ideal_SymmetricIdeal__.sobj\n    ** failed:  _type__sage_rings_polynomial_symmetric_reduction_SymmetricReductionStrategy__.sobj\n    Failed:\n    _class__sage_rings_polynomial_infinite_polynomial_element_InfinitePolynomial_dense__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialGen__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_dense__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_sparse__.sobj\n    _class__sage_rings_polynomial_symmetric_ideal_SymmetricIdeal__.sobj\n    _type__sage_rings_polynomial_symmetric_reduction_SymmetricReductionStrategy__.sobj\n    Successfully unpickled 565 objects.\n    Failed to unpickle 6 objects.\n**********************************************************************\n```\n\n\nIf this pickling problem can be sorted out, this can pass!",
+    "body": "The new patch applies fine to 4.3.1, and *almost* all tests pass.  (I tested the whole Sage library):\n\n```\nsage -t  sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/home/john/sage-4.3.1/devel/sage-tests/sage/structure/sage_object.pyx\", line 986:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_element_InfinitePolynomial_dense__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialGen__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_dense__.sobj\n    ** failed:  _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_sparse__.sobj\n    ** failed:  _class__sage_rings_polynomial_symmetric_ideal_SymmetricIdeal__.sobj\n    ** failed:  _type__sage_rings_polynomial_symmetric_reduction_SymmetricReductionStrategy__.sobj\n    Failed:\n    _class__sage_rings_polynomial_infinite_polynomial_element_InfinitePolynomial_dense__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialGen__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_dense__.sobj\n    _class__sage_rings_polynomial_infinite_polynomial_ring_InfinitePolynomialRing_sparse__.sobj\n    _class__sage_rings_polynomial_symmetric_ideal_SymmetricIdeal__.sobj\n    _type__sage_rings_polynomial_symmetric_reduction_SymmetricReductionStrategy__.sobj\n    Successfully unpickled 565 objects.\n    Failed to unpickle 6 objects.\n**********************************************************************\n```\n\nIf this pickling problem can be sorted out, this can pass!",
     "created_at": "2010-01-24T22:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1705,7 +1678,6 @@ Got:
 **********************************************************************
 ```
 
-
 If this pickling problem can be sorted out, this can pass!
 
 
@@ -1715,7 +1687,7 @@ If this pickling problem can be sorted out, this can pass!
 archive/issue_comments_064481.json:
 ```json
 {
-    "body": "Replying to [comment:34 cremona]:\n> The new patch applies fine to 4.3.1, and *almost* all tests pass.  (I tested the whole Sage library):\n\nAs I explained above, the \"unique key\" in the ring constructor has completely changed: It used to be a base ring plus the list of variable names plus a descriptor of the monomial order and of the implementation (dense vs. sparse); now, it is a ring plus a construction functor. I guess this explains the error.\n\nBut there is a version number passed to the construction factory, in addition to the unique key. Probably that allows to transform old pickles into shiny new rings.\n\nI did not know that there existed old pickles. Thank you for pointing it out!\n\nBest regards,\n\nSimon",
+    "body": "Replying to [comment:34 cremona]:\n> The new patch applies fine to 4.3.1, and *almost* all tests pass.  (I tested the whole Sage library):\n\n\nAs I explained above, the \"unique key\" in the ring constructor has completely changed: It used to be a base ring plus the list of variable names plus a descriptor of the monomial order and of the implementation (dense vs. sparse); now, it is a ring plus a construction functor. I guess this explains the error.\n\nBut there is a version number passed to the construction factory, in addition to the unique key. Probably that allows to transform old pickles into shiny new rings.\n\nI did not know that there existed old pickles. Thank you for pointing it out!\n\nBest regards,\n\nSimon",
     "created_at": "2010-01-24T22:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1726,6 +1698,7 @@ archive/issue_comments_064481.json:
 
 Replying to [comment:34 cremona]:
 > The new patch applies fine to 4.3.1, and *almost* all tests pass.  (I tested the whole Sage library):
+
 
 As I explained above, the "unique key" in the ring constructor has completely changed: It used to be a base ring plus the list of variable names plus a descriptor of the monomial order and of the implementation (dense vs. sparse); now, it is a ring plus a construction functor. I guess this explains the error.
 
@@ -1744,7 +1717,7 @@ Simon
 archive/issue_comments_064482.json:
 ```json
 {
-    "body": "Replying to [comment:35 SimonKing]:\n> But there is a version number passed to the construction factory, in addition to the unique key. Probably that allows to transform old pickles into shiny new rings.\n\nThere is a very clear difference between new and old \"unique keys\" (which are used for pickling): New keys are pairs, old keys are longer tuples. I guess it is robuster to discriminate by the length of the key rather than by version number.\n\nI am now running `sage -testall` and (if it works) will provide another patch later.\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:35 SimonKing]:\n> But there is a version number passed to the construction factory, in addition to the unique key. Probably that allows to transform old pickles into shiny new rings.\n\n\nThere is a very clear difference between new and old \"unique keys\" (which are used for pickling): New keys are pairs, old keys are longer tuples. I guess it is robuster to discriminate by the length of the key rather than by version number.\n\nI am now running `sage -testall` and (if it works) will provide another patch later.\n\nCheers,\n\nSimon",
     "created_at": "2010-01-26T10:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1755,6 +1728,7 @@ archive/issue_comments_064482.json:
 
 Replying to [comment:35 SimonKing]:
 > But there is a version number passed to the construction factory, in addition to the unique key. Probably that allows to transform old pickles into shiny new rings.
+
 
 There is a very clear difference between new and old "unique keys" (which are used for pickling): New keys are pairs, old keys are longer tuples. I guess it is robuster to discriminate by the length of the key rather than by version number.
 
@@ -1849,7 +1823,7 @@ Could you list by name which of the three patches should be applied and in which
 archive/issue_comments_064487.json:
 ```json
 {
-    "body": "Replying to [comment:38 cremona]:\n\n> Patch problem:  I tried applying 7580_fixes_and_extensions.patch to both 4.3.1 and 4.3.2.alpha0 and in both cases there were many hunks which failed. Could you list by name which of the three patches should be applied and in which order?  I seem to have this confused...\n\nVery strange. It should at least apply to 4.3.1, since this is what I started with. And according to your comment 34, you had been able to apply it once. Perhaps you did not revert it?\n\nAnyway. One should first apply 7580_fixes_and_extensions.patch, then 7580_unpickling.patch, and that's all.\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:38 cremona]:\n\n> Patch problem:  I tried applying 7580_fixes_and_extensions.patch to both 4.3.1 and 4.3.2.alpha0 and in both cases there were many hunks which failed. Could you list by name which of the three patches should be applied and in which order?  I seem to have this confused...\n\n\nVery strange. It should at least apply to 4.3.1, since this is what I started with. And according to your comment 34, you had been able to apply it once. Perhaps you did not revert it?\n\nAnyway. One should first apply 7580_fixes_and_extensions.patch, then 7580_unpickling.patch, and that's all.\n\nCheers,\n\nSimon",
     "created_at": "2010-02-01T10:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1861,6 +1835,7 @@ archive/issue_comments_064487.json:
 Replying to [comment:38 cremona]:
 
 > Patch problem:  I tried applying 7580_fixes_and_extensions.patch to both 4.3.1 and 4.3.2.alpha0 and in both cases there were many hunks which failed. Could you list by name which of the three patches should be applied and in which order?  I seem to have this confused...
+
 
 Very strange. It should at least apply to 4.3.1, since this is what I started with. And according to your comment 34, you had been able to apply it once. Perhaps you did not revert it?
 
@@ -1917,7 +1892,7 @@ I think someone else had better try!
 archive/issue_comments_064490.json:
 ```json
 {
-    "body": "Replying to [comment:41 cremona]:\n\n> On a new clone of a  new build of 4.3.2.alpha1,  I cannot apply the first patch (i.e. 7580_fixes_and_extensions.patch). I think someone else had better try!\n\nOK, then I'll rebase it and post a single patch that unifies the two old patches.\n\nHowever, it'll take a few hours until 4.3.2.alpha1 will be available.",
+    "body": "Replying to [comment:41 cremona]:\n\n> On a new clone of a  new build of 4.3.2.alpha1,  I cannot apply the first patch (i.e. 7580_fixes_and_extensions.patch). I think someone else had better try!\n\n\nOK, then I'll rebase it and post a single patch that unifies the two old patches.\n\nHowever, it'll take a few hours until 4.3.2.alpha1 will be available.",
     "created_at": "2010-02-01T15:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1930,6 +1905,7 @@ Replying to [comment:41 cremona]:
 
 > On a new clone of a  new build of 4.3.2.alpha1,  I cannot apply the first patch (i.e. 7580_fixes_and_extensions.patch). I think someone else had better try!
 
+
 OK, then I'll rebase it and post a single patch that unifies the two old patches.
 
 However, it'll take a few hours until 4.3.2.alpha1 will be available.
@@ -1941,7 +1917,7 @@ However, it'll take a few hours until 4.3.2.alpha1 will be available.
 archive/issue_comments_064491.json:
 ```json
 {
-    "body": "OK, so this is partly my fault:  I had not realized that the patch named 7580_fixes_and_extensions.patch had been updated (the old one was 172079 bytes, the new one is 168016 bytes -- something about line-ends).\n\nI had been applying the older one.  So I tried the new one and got this (fresh clone of 4.3.1.alpha1):\n\n```\nsage: hg_sage.apply(\"/home/jec/patches/7580_fixes_and_extensions.patch\")\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg status\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg status\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg import   \"/home/jec/patches/7580_fixes_and_extensions.patch\"\napplying /home/jec/patches/7580_fixes_and_extensions.patch\npatching file sage/rings/polynomial/infinite_polynomial_element.py\nHunk #10 succeeded at 333 with fuzz 2 (offset 0 lines).\nHunk #11 FAILED at 353\n1 out of 41 hunks FAILED -- saving rejects to file sage/rings/polynomial/infinite_polynomial_element.py.rej\nabort: patch failed to apply\n```\n\nwhich still needs a little attention, but only a little!",
+    "body": "OK, so this is partly my fault:  I had not realized that the patch named 7580_fixes_and_extensions.patch had been updated (the old one was 172079 bytes, the new one is 168016 bytes -- something about line-ends).\n\nI had been applying the older one.  So I tried the new one and got this (fresh clone of 4.3.1.alpha1):\n\n```\nsage: hg_sage.apply(\"/home/jec/patches/7580_fixes_and_extensions.patch\")\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg status\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg status\ncd \"/home/jec/sage-4.3.2.alpha1/devel/sage\" && hg import   \"/home/jec/patches/7580_fixes_and_extensions.patch\"\napplying /home/jec/patches/7580_fixes_and_extensions.patch\npatching file sage/rings/polynomial/infinite_polynomial_element.py\nHunk #10 succeeded at 333 with fuzz 2 (offset 0 lines).\nHunk #11 FAILED at 353\n1 out of 41 hunks FAILED -- saving rejects to file sage/rings/polynomial/infinite_polynomial_element.py.rej\nabort: patch failed to apply\n```\nwhich still needs a little attention, but only a little!",
     "created_at": "2010-02-02T09:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
@@ -1966,7 +1942,6 @@ Hunk #11 FAILED at 353
 1 out of 41 hunks FAILED -- saving rejects to file sage/rings/polynomial/infinite_polynomial_element.py.rej
 abort: patch failed to apply
 ```
-
 which still needs a little attention, but only a little!
 
 

@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7534
 archive/issue_comments_063774.json:
 ```json
 {
-    "body": "How about\n\n```\nThis file is part of the OLD Sage notebook and is NOT actively developed,\nmaintained, or supported.  As of Sage v4.1.2, all notebook development has\nmoved to the separate Sage Notebook project:\n\nhttp://nb.sagemath.org/\n\nThe new notebook is installed in Sage as a spkg (e.g., sagenb-0.3.spkg).\n\nPlease visit the project's home page for more information, including directions on\nobtaining the latest source code.  For notebook-related development and support,\nplease consult the sage-notebook discussion group:\n\nhttp://groups.google.com/group/sage-notebook\n```\n\n?",
+    "body": "How about\n\n```\nThis file is part of the OLD Sage notebook and is NOT actively developed,\nmaintained, or supported.  As of Sage v4.1.2, all notebook development has\nmoved to the separate Sage Notebook project:\n\nhttp://nb.sagemath.org/\n\nThe new notebook is installed in Sage as a spkg (e.g., sagenb-0.3.spkg).\n\nPlease visit the project's home page for more information, including directions on\nobtaining the latest source code.  For notebook-related development and support,\nplease consult the sage-notebook discussion group:\n\nhttp://groups.google.com/group/sage-notebook\n```\n?",
     "created_at": "2009-11-26T07:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ please consult the sage-notebook discussion group:
 
 http://groups.google.com/group/sage-notebook
 ```
-
 ?
 
 
@@ -182,7 +181,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063781.json:
 ```json
 {
-    "body": "\n```\n        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed\n```\n",
+    "body": "```\n        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed\n```",
     "created_at": "2009-12-02T19:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
@@ -191,11 +190,9 @@ archive/issue_comments_063781.json:
 }
 ```
 
-
 ```
         sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed
 ```
-
 
 
 
@@ -204,7 +201,7 @@ archive/issue_comments_063781.json:
 archive/issue_comments_063782.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> {{{        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed\n> }}}\n\nSince the code isn't being run and is officially \"deprecated\", one option is to put a nodoctest.py file in the directory (or #nodoctest at the top of the file) so that the code isn't tested.",
+    "body": "Replying to [comment:5 mhansen]:\n> {{{        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed\n> }}}\n\n\nSince the code isn't being run and is officially \"deprecated\", one option is to put a nodoctest.py file in the directory (or #nodoctest at the top of the file) so that the code isn't tested.",
     "created_at": "2009-12-10T01:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7534",
     "type": "issue_comment",
@@ -216,6 +213,7 @@ archive/issue_comments_063782.json:
 Replying to [comment:5 mhansen]:
 > {{{        sage -t  devel/sage-main/sage/server/notebook/notebook_object.py # 4 doctests failed
 > }}}
+
 
 Since the code isn't being run and is officially "deprecated", one option is to put a nodoctest.py file in the directory (or #nodoctest at the top of the file) so that the code isn't tested.
 

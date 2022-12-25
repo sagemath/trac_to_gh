@@ -3,7 +3,7 @@
 archive/issues_006966.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
     "created_at": "2009-09-20T03:51:08Z",
     "labels": [
         "component: modular forms"
@@ -21,14 +21,12 @@ Keywords: shimura subgroup
 
 small patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.
 
-
 ```
 J=J0(11)
 J.shimura_subgroup()
 
 Finite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6966

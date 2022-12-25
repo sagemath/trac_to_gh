@@ -3,7 +3,7 @@
 archive/issues_008588.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: Special linear group, TestSuite\n\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nFailure in _test_enumerated_set_iter_list:\nTraceback (most recent call last):\n...\nAssertionError: [1 1]\n[0 1] != [1 0]\n[0 1]\n------------------------------------------------------------\nThe following tests failed: _test_enumerated_set_iter_list\n\nsage: list(G)[2]\n[1 1]\n[0 1]\nsage: G.list()[2]\n[1 0]\n[0 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8588\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: Special linear group, TestSuite\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nFailure in _test_enumerated_set_iter_list:\nTraceback (most recent call last):\n...\nAssertionError: [1 1]\n[0 1] != [1 0]\n[0 1]\n------------------------------------------------------------\nThe following tests failed: _test_enumerated_set_iter_list\n\nsage: list(G)[2]\n[1 1]\n[0 1]\nsage: G.list()[2]\n[1 0]\n[0 1]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8588\n\n",
     "created_at": "2010-03-23T16:29:31Z",
     "labels": [
         "component: algebra",
@@ -21,7 +21,6 @@ Assignee: @aghitza
 CC:  sage-combinat
 
 Keywords: Special linear group, TestSuite
-
 
 ```
 sage: G = SL(2,2)
@@ -42,7 +41,6 @@ sage: G.list()[2]
 [1 0]
 [0 1]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8588
 
@@ -170,7 +168,7 @@ archive/issue_events_020747.json:
 archive/issue_comments_077652.json:
 ```json
 {
-    "body": "Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by @a-andre created at 2014-08-18 21:50:01\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```\n",
+    "body": "Attachment [trac-8588-3](tarball://root/attachments/some-uuid/ticket8588/trac-8588-3) by @a-andre created at 2014-08-18 21:50:01\n\nI got\n\n```\nsage: G = SL(2,2)\nsage: TestSuite(G).run()\nsage: list(G)[2]\n[0 1]\n[1 1]\nsage: G.list()[2]\n[0 1]\n[1 1]\n\n```",
     "created_at": "2014-08-18T21:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8588",
     "type": "issue_comment",
@@ -194,7 +192,6 @@ sage: G.list()[2]
 [1 1]
 
 ```
-
 
 
 

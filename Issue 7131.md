@@ -74,7 +74,7 @@ Resolution: fixed
 archive/issue_comments_059033.json:
 ```json
 {
-    "body": "At some point this must have been fixed:\n\n\n```\ndrkirkby@hawk:~/sage-4.4.4.alpha0$ find . -name 'libcl*'\n./local/lib/libcliquer.so\ndrkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so\n./local/lib/libcliquer.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
+    "body": "At some point this must have been fixed:\n\n```\ndrkirkby@hawk:~/sage-4.4.4.alpha0$ find . -name 'libcl*'\n./local/lib/libcliquer.so\ndrkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so\n./local/lib/libcliquer.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```",
     "created_at": "2010-06-17T07:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7131",
     "type": "issue_comment",
@@ -85,14 +85,12 @@ archive/issue_comments_059033.json:
 
 At some point this must have been fixed:
 
-
 ```
 drkirkby@hawk:~/sage-4.4.4.alpha0$ find . -name 'libcl*'
 ./local/lib/libcliquer.so
 drkirkby@hawk:~/sage-4.4.4.alpha0$ file ./local/lib/libcliquer.so
 ./local/lib/libcliquer.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped
 ```
-
 
 
 

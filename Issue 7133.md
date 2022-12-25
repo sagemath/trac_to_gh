@@ -3,7 +3,7 @@
 archive/issues_007133.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nUsing\n\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\" \n\nWe can see that *pari* is building 32-bit libraries, despite the fact SAGE64 was set to \"yes\"\n\n\n\n```\ndrkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *pari*\nlibpari-gmp.so.2:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\nlibpari-gmp.so.2.3.3:   ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\nlibpari.a:      current ar archive, not a dynamic executable or shared object\nlibpari.so:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\n```\n\n\n\nOther packages building 32-bit libraries, even when SAGE64 is set to \"yes\" include, but are probably not limited to:\n\n* zlib #7128\n* libgpg_error #7129\n* libpng #7130 \n* libcliquer #7131\n\nmpir currently mixes 32 and 64-bit objects, so do not build at all #7132. \n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7133\n\n",
+    "body": "Assignee: tbd\n\nUsing\n\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\" \n\nWe can see that *pari* is building 32-bit libraries, despite the fact SAGE64 was set to \"yes\"\n\n\n```\ndrkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *pari*\nlibpari-gmp.so.2:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\nlibpari-gmp.so.2.3.3:   ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\nlibpari.a:      current ar archive, not a dynamic executable or shared object\nlibpari.so:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available\n```\n\n\nOther packages building 32-bit libraries, even when SAGE64 is set to \"yes\" include, but are probably not limited to:\n\n* zlib #7128\n* libgpg_error #7129\n* libpng #7130 \n* libcliquer #7131\n\nmpir currently mixes 32 and 64-bit objects, so do not build at all #7132. \n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7133\n\n",
     "created_at": "2009-10-06T00:28:10Z",
     "labels": [
         "component: porting: solaris",
@@ -28,7 +28,6 @@ Using
 We can see that *pari* is building 32-bit libraries, despite the fact SAGE64 was set to "yes"
 
 
-
 ```
 drkirkby@swan:[~/sage/gcc64-sage-4.1.2.rc0/local/lib] $ file *pari*
 libpari-gmp.so.2:       ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
@@ -36,7 +35,6 @@ libpari-gmp.so.2.3.3:   ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Re
 libpari.a:      current ar archive, not a dynamic executable or shared object
 libpari.so:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped, no debugging information available
 ```
-
 
 
 Other packages building 32-bit libraries, even when SAGE64 is set to "yes" include, but are probably not limited to:

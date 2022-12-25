@@ -144,7 +144,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_067644.json:
 ```json
 {
-    "body": "An updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/atlas/atlas-3.8.3.p11.spkg\n\nI committed the patch [7827.atlas.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7827/7827.atlas.patch) in pjeremy's name. The patched version of `SpewMakeInc.c` is available under `patches/`. I also patched the installation script `spkg-install-script` to copy pjeremy's patched `patches/SpewMakeInc.c` over to `src/CONFIG/src/SpewMakeInc.c`. The relevant modification is:\n\n```\ndiff -r cffdd7ee34e2 spkg-install-script\n--- a/spkg-install-script\n+++ b/spkg-install-script\n@@ -120,6 +120,10 @@\n \n CUR=`pwd`\n echo $CUR\n+if [ `uname` = \"FreeBSD\" ]; then\n+    echo Patching SpewMakeInc.c for FreeBSD-specific build\n+    cp patches/SpewMakeInc.c src/CONFIG/src/SpewMakeInc.c\n+fi\n # add PPC4 7447 CPU and better Itanium2 detection:\n echo Deal with PPC4 7447 model and Itanium 2\n cp patches/archinfo_linux.c src/CONFIG/src/backend/archinfo_linux.c\n```\n\nThe updated spkg needs another pair of eyes (anyone's, other than mine) to comb through it. If my change to `spkg-install-script` gets the green light, then the updated spkg can be merged.",
+    "body": "An updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/atlas/atlas-3.8.3.p11.spkg\n\nI committed the patch [7827.atlas.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7827/7827.atlas.patch) in pjeremy's name. The patched version of `SpewMakeInc.c` is available under `patches/`. I also patched the installation script `spkg-install-script` to copy pjeremy's patched `patches/SpewMakeInc.c` over to `src/CONFIG/src/SpewMakeInc.c`. The relevant modification is:\n\n```\ndiff -r cffdd7ee34e2 spkg-install-script\n--- a/spkg-install-script\n+++ b/spkg-install-script\n@@ -120,6 +120,10 @@\n \n CUR=`pwd`\n echo $CUR\n+if [ `uname` = \"FreeBSD\" ]; then\n+    echo Patching SpewMakeInc.c for FreeBSD-specific build\n+    cp patches/SpewMakeInc.c src/CONFIG/src/SpewMakeInc.c\n+fi\n # add PPC4 7447 CPU and better Itanium2 detection:\n echo Deal with PPC4 7447 model and Itanium 2\n cp patches/archinfo_linux.c src/CONFIG/src/backend/archinfo_linux.c\n```\nThe updated spkg needs another pair of eyes (anyone's, other than mine) to comb through it. If my change to `spkg-install-script` gets the green light, then the updated spkg can be merged.",
     "created_at": "2010-01-24T16:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7827",
     "type": "issue_comment",
@@ -175,7 +175,6 @@ diff -r cffdd7ee34e2 spkg-install-script
  echo Deal with PPC4 7447 model and Itanium 2
  cp patches/archinfo_linux.c src/CONFIG/src/backend/archinfo_linux.c
 ```
-
 The updated spkg needs another pair of eyes (anyone's, other than mine) to comb through it. If my change to `spkg-install-script` gets the green light, then the updated spkg can be merged.
 
 

@@ -3,7 +3,7 @@
 archive/issues_007895.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  goodwillhart@googlemail.com @dimpase\n\n\n```\nning.o -c zn_poly/src/tuning.c\nzn_poly/src/tuning.c:42: error: 'SIZE_MAX' undeclared here (not in a function)\nmake[2]: *** [tuning.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/flint-1.5.0.p2/src'\nError building flint shared library.\n\nreal    0m7.207s\nuser    0m6.680s\nsys     0m0.350s\nsage: An error occurred while installing flint-1.5.0.p2\n```\n\n\nIt is actually defined in the file\n\n\n```\n/usr/include/limits.h\n```\n\n\nat least on this Solaris 8 installation. \n\n\n```\nbash-2.03$ uname -a\nSunOS solaris8 5.8 Generic_108528-11 sun4u sparc SUNW,Sun-Blade-1000\nbash-2.03$ cat /etc/release\n                       Solaris 8 10/01 s28s_u6wos_08a SPARC\n           Copyright 2001 Sun Microsystems, Inc.  All Rights Reserved.\n                           Assembled 12 September 2001\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7895\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  goodwillhart@googlemail.com @dimpase\n\n```\nning.o -c zn_poly/src/tuning.c\nzn_poly/src/tuning.c:42: error: 'SIZE_MAX' undeclared here (not in a function)\nmake[2]: *** [tuning.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/flint-1.5.0.p2/src'\nError building flint shared library.\n\nreal    0m7.207s\nuser    0m6.680s\nsys     0m0.350s\nsage: An error occurred while installing flint-1.5.0.p2\n```\n\nIt is actually defined in the file\n\n```\n/usr/include/limits.h\n```\n\nat least on this Solaris 8 installation. \n\n```\nbash-2.03$ uname -a\nSunOS solaris8 5.8 Generic_108528-11 sun4u sparc SUNW,Sun-Blade-1000\nbash-2.03$ cat /etc/release\n                       Solaris 8 10/01 s28s_u6wos_08a SPARC\n           Copyright 2001 Sun Microsystems, Inc.  All Rights Reserved.\n                           Assembled 12 September 2001\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7895\n\n",
     "created_at": "2010-01-11T06:21:37Z",
     "labels": [
         "component: porting: solaris",
@@ -21,7 +21,6 @@ Assignee: drkirkby
 
 CC:  goodwillhart@googlemail.com @dimpase
 
-
 ```
 ning.o -c zn_poly/src/tuning.c
 zn_poly/src/tuning.c:42: error: 'SIZE_MAX' undeclared here (not in a function)
@@ -35,17 +34,13 @@ sys     0m0.350s
 sage: An error occurred while installing flint-1.5.0.p2
 ```
 
-
 It is actually defined in the file
-
 
 ```
 /usr/include/limits.h
 ```
 
-
 at least on this Solaris 8 installation. 
-
 
 ```
 bash-2.03$ uname -a
@@ -55,7 +50,6 @@ bash-2.03$ cat /etc/release
            Copyright 2001 Sun Microsystems, Inc.  All Rights Reserved.
                            Assembled 12 September 2001
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7895

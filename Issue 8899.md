@@ -305,7 +305,7 @@ i.e. a double dash after the variable to be explained [and a space after the ini
 archive/issue_comments_081731.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by @saliola created at 2012-08-13 20:46:41\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
+    "body": "Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by @saliola created at 2012-08-13 20:46:41\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
     "created_at": "2012-08-13T20:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -323,7 +323,6 @@ Two new small patches.
 ```
 F([2,1]).skew_by([1])
 ```
-
 
 2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).
 
@@ -356,7 +355,7 @@ Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://roo
 archive/issue_comments_081733.json:
 ```json
 {
-    "body": "Replying to [comment:13 saliola]:\n> Two new small patches.\n> \n> 1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n> {{{\n> F([2,1]).skew_by([1])\n> }}}\n> \n> 2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n> \n> **Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\n> a. raise an error if the element is not homogeneous; or\n> b. return the maximum of the degrees of the homogeneous summands?\n\nBased on the [discussion on sage-combinat-devel](https://groups.google.com/d/topic/sage-combinat-devel/pTjdBFeePWg/discussion), I updated [attachment:trac_11929_8899-add_degree_to_elementmethods-fs.patch]:\n- add methods `maximal_degree` and `homogeneous_degree` in `GradedAlgebrasWithBasis`\n- as a default in `GradedAlgebrasWithBasis`, set `degree = homogeneous_degree`\n- for NCSF/QSym, `degree` is redefined to be `maximal_degree`",
+    "body": "Replying to [comment:13 saliola]:\n> Two new small patches.\n> \n> 1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n> \n> ```\n> F([2,1]).skew_by([1])\n> ```\n> \n> 2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n> \n> **Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\n> a. raise an error if the element is not homogeneous; or\n> b. return the maximum of the degrees of the homogeneous summands?\n\n\nBased on the [discussion on sage-combinat-devel](https://groups.google.com/d/topic/sage-combinat-devel/pTjdBFeePWg/discussion), I updated [attachment:trac_11929_8899-add_degree_to_elementmethods-fs.patch]:\n- add methods `maximal_degree` and `homogeneous_degree` in `GradedAlgebrasWithBasis`\n- as a default in `GradedAlgebrasWithBasis`, set `degree = homogeneous_degree`\n- for NCSF/QSym, `degree` is redefined to be `maximal_degree`",
     "created_at": "2012-08-14T15:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -369,15 +368,17 @@ Replying to [comment:13 saliola]:
 > Two new small patches.
 > 
 > 1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:
-> {{{
+> 
+> ```
 > F([2,1]).skew_by([1])
-> }}}
+> ```
 > 
 > 2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).
 > 
 > **Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:
 > a. raise an error if the element is not homogeneous; or
 > b. return the maximum of the degrees of the homogeneous summands?
+
 
 Based on the [discussion on sage-combinat-devel](https://groups.google.com/d/topic/sage-combinat-devel/pTjdBFeePWg/discussion), I updated [attachment:trac_11929_8899-add_degree_to_elementmethods-fs.patch]:
 - add methods `maximal_degree` and `homogeneous_degree` in `GradedAlgebrasWithBasis`
@@ -448,7 +449,7 @@ Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://
 archive/issue_comments_081737.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by @saliola created at 2012-08-15 15:35:25\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n\n- `dual_pairing` became `duality_pairing`",
+    "body": "Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by @saliola created at 2012-08-15 15:35:25\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n- `dual_pairing` became `duality_pairing`",
     "created_at": "2012-08-15T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -471,7 +472,6 @@ Quasisymmetric functions over the Rational Field on the Monomial basis
 sage: R.dual()
 Quasisymmetric functions over the Rational Field on the Fundamental basis
 ```
-
 
 - `dual_pairing` became `duality_pairing`
 
@@ -874,7 +874,7 @@ My guess is #9107 (and related #11791).
 archive/issue_comments_081758.json:
 ```json
 {
-    "body": "Replying to [comment:30 mhansen]:\n> My guess is #9107 (and related #11791).\nThanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.  I will post a few more corrections to the documentation shortly (e.g. coproduct_on_generators() in ncsf.py is weird and that probably was one of the missing methods before).",
+    "body": "Replying to [comment:30 mhansen]:\n> My guess is #9107 (and related #11791).\n\nThanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.  I will post a few more corrections to the documentation shortly (e.g. coproduct_on_generators() in ncsf.py is weird and that probably was one of the missing methods before).",
     "created_at": "2012-08-22T22:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -885,6 +885,7 @@ archive/issue_comments_081758.json:
 
 Replying to [comment:30 mhansen]:
 > My guess is #9107 (and related #11791).
+
 Thanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.  I will post a few more corrections to the documentation shortly (e.g. coproduct_on_generators() in ncsf.py is weird and that probably was one of the missing methods before).
 
 
@@ -948,7 +949,7 @@ added a patch which inserts two colons in ncsf.py to clean up the documentation 
 archive/issue_comments_081762.json:
 ```json
 {
-    "body": "Replying to [comment:31 zabrocki]:\n> Replying to [comment:30 mhansen]:\n> > My guess is #9107 (and related #11791).\n> Thanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.\n\nDoes that mean #9107 should be a dependency?",
+    "body": "Replying to [comment:31 zabrocki]:\n> Replying to [comment:30 mhansen]:\n> > My guess is #9107 (and related #11791).\n\n> Thanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.\n\nDoes that mean #9107 should be a dependency?",
     "created_at": "2012-08-23T07:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -960,6 +961,7 @@ archive/issue_comments_081762.json:
 Replying to [comment:31 zabrocki]:
 > Replying to [comment:30 mhansen]:
 > > My guess is #9107 (and related #11791).
+
 > Thanks Mike! I just tested and confirm that when I apply the patch that is attached to #9107 and then recompile, the missing documentation for methods appears.
 
 Does that mean #9107 should be a dependency?
@@ -971,7 +973,7 @@ Does that mean #9107 should be a dependency?
 archive/issue_comments_081763.json:
 ```json
 {
-    "body": "Replying to [comment:33 SimonKing]:\n> Does that mean #9107 should be a dependency?\n\nI would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.\n\nCheers,\n               Nicolas",
+    "body": "Replying to [comment:33 SimonKing]:\n> Does that mean #9107 should be a dependency?\n\n\nI would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.\n\nCheers,\n               Nicolas",
     "created_at": "2012-08-23T08:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -982,6 +984,7 @@ archive/issue_comments_081763.json:
 
 Replying to [comment:33 SimonKing]:
 > Does that mean #9107 should be a dependency?
+
 
 I would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.
 
@@ -1038,7 +1041,7 @@ Apply: [attachment:trac_11929_8899-ncsf-qsym-final.patch]
 archive/issue_comments_081766.json:
 ```json
 {
-    "body": "Replying to [comment:34 nthiery]:\n> Replying to [comment:33 SimonKing]:\n> > Does that mean #9107 should be a dependency?\n> \n> I would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.\n\nAnother reason not to: the docstrings for QSym / NCSF are detailed and most of the functionality is demonstrated in the examples there.",
+    "body": "Replying to [comment:34 nthiery]:\n> Replying to [comment:33 SimonKing]:\n> > Does that mean #9107 should be a dependency?\n\n> \n> I would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.\n\n\nAnother reason not to: the docstrings for QSym / NCSF are detailed and most of the functionality is demonstrated in the examples there.",
     "created_at": "2012-08-23T14:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1050,8 +1053,10 @@ archive/issue_comments_081766.json:
 Replying to [comment:34 nthiery]:
 > Replying to [comment:33 SimonKing]:
 > > Does that mean #9107 should be a dependency?
+
 > 
 > I would not bother. There are already plenty of spots in Sage where the documentation does not build properly because of improper support for nested classes; this just adds another occurence. And everything will be fixed at once when #9107 will be merged, with no action to be taken on those spots.
+
 
 Another reason not to: the docstrings for QSym / NCSF are detailed and most of the functionality is demonstrated in the examples there.
 
@@ -1323,7 +1328,7 @@ archive/issue_events_021718.json:
 archive/issue_comments_081777.json:
 ```json
 {
-    "body": "With the new version, but I'm seeing failures which didn't happen with earlier versions:\n\n```\nsage -t  -force_lib devel/sage/sage/combinat/ncsf_qsym/ncsf.py\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta1/devel/sage-main/sage/combinat/ncsf_qsym/ncsf.py\", line 493:\n    sage: R.to_symmetric_function\nExpected:\n    Generic morphism:\n      From: Non-Commutative Symmetric Functions over the Rational Field in the Ribbon basis\n      To:   Symmetric Function Algebra over Rational Field, Schur symmetric functions as basis\nGot:\n    Generic morphism:\n      From: Non-Commutative Symmetric Functions over the Rational Field in the Ribbon basis\n      To:   Symmetric Functions over Rational Field in the Schur basis\n**********************************************************************\n```\n",
+    "body": "With the new version, but I'm seeing failures which didn't happen with earlier versions:\n\n```\nsage -t  -force_lib devel/sage/sage/combinat/ncsf_qsym/ncsf.py\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta1/devel/sage-main/sage/combinat/ncsf_qsym/ncsf.py\", line 493:\n    sage: R.to_symmetric_function\nExpected:\n    Generic morphism:\n      From: Non-Commutative Symmetric Functions over the Rational Field in the Ribbon basis\n      To:   Symmetric Function Algebra over Rational Field, Schur symmetric functions as basis\nGot:\n    Generic morphism:\n      From: Non-Commutative Symmetric Functions over the Rational Field in the Ribbon basis\n      To:   Symmetric Functions over Rational Field in the Schur basis\n**********************************************************************\n```",
     "created_at": "2012-09-07T18:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1349,7 +1354,6 @@ Got:
       To:   Symmetric Functions over Rational Field in the Schur basis
 **********************************************************************
 ```
-
 
 
 
@@ -1430,7 +1434,7 @@ I know that #13404 claims not to have been merged yet, but did you happen to mer
 archive/issue_comments_081781.json:
 ```json
 {
-    "body": "Replying to [comment:48 saliola]:\n> \n> I double-checked, and the phrase \"in the Schur basis\" does not appear in the patches on this ticket.\n> \n> I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.\n\nFranco is right. I will fix this in 13404 and put a dependency on 8899 there.\n\nBest,\n\nAnne",
+    "body": "Replying to [comment:48 saliola]:\n> \n> I double-checked, and the phrase \"in the Schur basis\" does not appear in the patches on this ticket.\n> \n> I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.\n\n\nFranco is right. I will fix this in 13404 and put a dependency on 8899 there.\n\nBest,\n\nAnne",
     "created_at": "2012-09-08T05:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1445,6 +1449,7 @@ Replying to [comment:48 saliola]:
 > 
 > I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.
 
+
 Franco is right. I will fix this in 13404 and put a dependency on 8899 there.
 
 Best,
@@ -1458,7 +1463,7 @@ Anne
 archive/issue_comments_081782.json:
 ```json
 {
-    "body": "Replying to [comment:48 saliola]:\n> \n> I double-checked, and the phrase \"in the Schur basis\" does not appear in the patches on this ticket.\n> \n> I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.\nI always test a bunch of tickets together, and in this case I included indeed #13404.  So I will remove #13404 for now.",
+    "body": "Replying to [comment:48 saliola]:\n> \n> I double-checked, and the phrase \"in the Schur basis\" does not appear in the patches on this ticket.\n> \n> I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.\n\nI always test a bunch of tickets together, and in this case I included indeed #13404.  So I will remove #13404 for now.",
     "created_at": "2012-09-08T08:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1472,6 +1477,7 @@ Replying to [comment:48 saliola]:
 > I double-checked, and the phrase "in the Schur basis" does not appear in the patches on this ticket.
 > 
 > I know that #13404 claims not to have been merged yet, but did you happen to merge it in sage-5.4.beta1? I think that ticket would have caused this change in the `_repr_`.
+
 I always test a bunch of tickets together, and in this case I included indeed #13404.  So I will remove #13404 for now.
 
 
@@ -1515,7 +1521,7 @@ archive/issue_events_021720.json:
 archive/issue_comments_081784.json:
 ```json
 {
-    "body": "This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n                sage: R = NonCommutativeSymmetricFunctions(QQ).R()\n                sage: R.skew([2,1], [1])\n                Traceback (most recent call last):\n                ...\n                AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field\n```\n\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
+    "body": "This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n                sage: R = NonCommutativeSymmetricFunctions(QQ).R()\n                sage: R.skew([2,1], [1])\n                Traceback (most recent call last):\n                ...\n                AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field\n```\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
     "created_at": "2012-09-24T07:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1535,7 +1541,6 @@ For example:
                 ...
                 AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field
 ```
-
 This is a simple user mistake, for which `assert` is not right.
 
 I think this must be fixed.
@@ -1547,7 +1552,7 @@ I think this must be fixed.
 archive/issue_comments_081785.json:
 ```json
 {
-    "body": "Replying to [comment:51 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> {{{\n>                 sage: R = NonCommutativeSymmetricFunctions(QQ).R()\n>                 sage: R.skew([2,1], [1])\n>                 Traceback (most recent call last):\n>                 ...\n>                 AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field\n> }}}\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\nI guess that's ok after all. See the same comment on  #5457.",
+    "body": "Replying to [comment:51 jdemeyer]:\n> This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> \n> ```\n>                 sage: R = NonCommutativeSymmetricFunctions(QQ).R()\n>                 sage: R.skew([2,1], [1])\n>                 Traceback (most recent call last):\n>                 ...\n>                 AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field\n> ```\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\n\nI guess that's ok after all. See the same comment on  #5457.",
     "created_at": "2012-09-24T09:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1560,16 +1565,18 @@ Replying to [comment:51 jdemeyer]:
 > This patch abuses `assert` and `AssertionError`. `assert` should not be used for control flow. An `assert` checks something which should always be true, a failed assertion is always a bug in the program.
 > 
 > For example:
-> {{{
+> 
+> ```
 >                 sage: R = NonCommutativeSymmetricFunctions(QQ).R()
 >                 sage: R.skew([2,1], [1])
 >                 Traceback (most recent call last):
 >                 ...
 >                 AssertionError: x must be an element of Non-Commutative Symmetric Functions over the Rational Field
-> }}}
+> ```
 > This is a simple user mistake, for which `assert` is not right.
 > 
 > I think this must be fixed.
+
 
 I guess that's ok after all. See the same comment on  #5457.
 
@@ -1580,7 +1587,7 @@ I guess that's ok after all. See the same comment on  #5457.
 archive/issue_comments_081786.json:
 ```json
 {
-    "body": "This is a better example from this patch on how *not* to use assert:\n\n```\n            try:\n                assert self.is_homogeneous()\n                return self.parent().degree_on_basis(self.leading_support())\n            except AssertionError:\n                raise ValueError(\"Element is not homogeneous.\")\n```\n\n\nAnd this is an easily made mistake, it should give a `TypeError`:\n\n```\ndef from_polynomial(self, f, check=True):\n    ...\n    assert self.base_ring() == f.base_ring()\n```\n\nYou could even do:\n\n```\nif check and self.base_ring() != f.base_ring():\n    raise TypeError(...)\n```\n",
+    "body": "This is a better example from this patch on how *not* to use assert:\n\n```\n            try:\n                assert self.is_homogeneous()\n                return self.parent().degree_on_basis(self.leading_support())\n            except AssertionError:\n                raise ValueError(\"Element is not homogeneous.\")\n```\n\nAnd this is an easily made mistake, it should give a `TypeError`:\n\n```\ndef from_polynomial(self, f, check=True):\n    ...\n    assert self.base_ring() == f.base_ring()\n```\nYou could even do:\n\n```\nif check and self.base_ring() != f.base_ring():\n    raise TypeError(...)\n```",
     "created_at": "2012-09-24T10:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
@@ -1599,7 +1606,6 @@ This is a better example from this patch on how *not* to use assert:
                 raise ValueError("Element is not homogeneous.")
 ```
 
-
 And this is an easily made mistake, it should give a `TypeError`:
 
 ```
@@ -1607,14 +1613,12 @@ def from_polynomial(self, f, check=True):
     ...
     assert self.base_ring() == f.base_ring()
 ```
-
 You could even do:
 
 ```
 if check and self.base_ring() != f.base_ring():
     raise TypeError(...)
 ```
-
 
 
 

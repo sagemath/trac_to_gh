@@ -281,7 +281,7 @@ ah, right.  Okay, then, positive review.
 archive/issue_comments_056468.json:
 ```json
 {
-    "body": "The patch `trac_6859-ascii-chars.patch` uses only ASCII characters for quotation marks and long dashes. Without it, merging `trac_6859.patch` and building the reference manual would result in the following error:\n\n```\nreading sources... sage/graphs/graph_generators /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/Sphinx-0.5.1-py2.6.egg/sphinx/environment.py:543: DeprecationWarning: BaseException.message has been deprecated as of Python 2.6\n  raise SphinxError(err.message)\nSphinx error:\n```\n",
+    "body": "The patch `trac_6859-ascii-chars.patch` uses only ASCII characters for quotation marks and long dashes. Without it, merging `trac_6859.patch` and building the reference manual would result in the following error:\n\n```\nreading sources... sage/graphs/graph_generators /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/Sphinx-0.5.1-py2.6.egg/sphinx/environment.py:543: DeprecationWarning: BaseException.message has been deprecated as of Python 2.6\n  raise SphinxError(err.message)\nSphinx error:\n```",
     "created_at": "2009-09-24T10:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -297,7 +297,6 @@ reading sources... sage/graphs/graph_generators /scratch/mvngu/release/sage-4.1.
   raise SphinxError(err.message)
 Sphinx error:
 ```
-
 
 
 
@@ -344,7 +343,7 @@ proper formatting of lists
 archive/issue_comments_056471.json:
 ```json
 {
-    "body": "The patch `trac_6859-formatting-issues.patch` fixes formatting of lists. Without it, I get the following warnings when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.HyperStarGraph:22: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NKStarGraph:25: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NStarGraph:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```\n",
+    "body": "The patch `trac_6859-formatting-issues.patch` fixes formatting of lists. Without it, I get the following warnings when building the reference manual:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.HyperStarGraph:22: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NKStarGraph:25: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NStarGraph:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n```",
     "created_at": "2009-09-24T10:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
@@ -360,7 +359,6 @@ WARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packa
 WARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NKStarGraph:25: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 WARNING: /scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python2.6/site-packages/sage/graphs/graph_generators.py:docstring of sage.graphs.graph_generators.GraphGenerators.NStarGraph:19: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.
 ```
-
 
 
 

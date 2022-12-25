@@ -3,7 +3,7 @@
 archive/issues_007670.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nHi,\n\nThere is a password issue with sage notebook account. Please read below:\n\nSameer\n\nOn Fri, Dec 11, 2009 at 1:22 PM, Sameer Regmi <> wrote:\n> On Fri, Dec 11, 2009 at 1:16 PM, Ondrej Certik <> wrote:\n>> On Fri, Dec 11, 2009 at 1:12 PM, Sameer <> wrote:\n>>> Hi I have found a weird issue with FEMhub online lab account. Let's\n>>> say my password is \"nevada\". Then whenever I enter any text (in\n>>> password field) with nevada as the prefix it will login. That means if\n>>> I enter nevada123 (or whatever as the suffix) it will\n>>> login.\n>>\n>> Seems like a bug in the Sage notebook. Could you please try to verify\n>> this against sagenb.org and if the problem is in there as well,\n>> could you please report it to the sage notebook list?\n>\n> Exactly! Its the bug in Sage notebook. The issue is there in sagenb.org too.\n> I even can login with \"nevad\" if the password is of nevada. I am\n> reporting to sage notebook list\n>\n> Sameer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7670\n\n",
+    "body": "Assignee: @williamstein\n\n```\nHi,\n\nThere is a password issue with sage notebook account. Please read below:\n\nSameer\n\nOn Fri, Dec 11, 2009 at 1:22 PM, Sameer Regmi <> wrote:\n> On Fri, Dec 11, 2009 at 1:16 PM, Ondrej Certik <> wrote:\n>> On Fri, Dec 11, 2009 at 1:12 PM, Sameer <> wrote:\n>>> Hi I have found a weird issue with FEMhub online lab account. Let's\n>>> say my password is \"nevada\". Then whenever I enter any text (in\n>>> password field) with nevada as the prefix it will login. That means if\n>>> I enter nevada123 (or whatever as the suffix) it will\n>>> login.\n>>\n>> Seems like a bug in the Sage notebook. Could you please try to verify\n>> this against sagenb.org and if the problem is in there as well,\n>> could you please report it to the sage notebook list?\n>\n> Exactly! Its the bug in Sage notebook. The issue is there in sagenb.org too.\n> I even can login with \"nevad\" if the password is of nevada. I am\n> reporting to sage notebook list\n>\n> Sameer\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7670\n\n",
     "created_at": "2009-12-12T00:22:38Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_007670.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 Hi,
@@ -46,7 +45,6 @@ On Fri, Dec 11, 2009 at 1:22 PM, Sameer Regmi <> wrote:
 > Sameer
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7670
 
 
@@ -58,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7670
 archive/issue_comments_065626.json:
 ```json
 {
-    "body": "Could the problem be `sagenb.notebook.user.User`'s use of [crypt](http://docs.python.org/library/crypt.html):\n\n```python\n>>> import crypt\n>>> crypt.crypt('abcdefgh', 'aa')\n'aaHHlPHAM4sjs'\n>>> crypt.crypt('abcdefghi', 'aa')\n'aaHHlPHAM4sjs'\n```\n\n?",
+    "body": "Could the problem be `sagenb.notebook.user.User`'s use of [crypt](http://docs.python.org/library/crypt.html):\n\n```python\n>>> import crypt\n>>> crypt.crypt('abcdefgh', 'aa')\n'aaHHlPHAM4sjs'\n>>> crypt.crypt('abcdefghi', 'aa')\n'aaHHlPHAM4sjs'\n```\n?",
     "created_at": "2009-12-12T17:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7670",
     "type": "issue_comment",
@@ -76,7 +74,6 @@ Could the problem be `sagenb.notebook.user.User`'s use of [crypt](http://docs.py
 >>> crypt.crypt('abcdefghi', 'aa')
 'aaHHlPHAM4sjs'
 ```
-
 ?
 
 
@@ -86,7 +83,7 @@ Could the problem be `sagenb.notebook.user.User`'s use of [crypt](http://docs.py
 archive/issue_comments_065627.json:
 ```json
 {
-    "body": "But [crypt](http://docs.python.org/library/crypt.html) supports whatever the OS's underlying [crypt(3)](http://www.kernel.org/doc/man-pages/online/pages/man3/crypt.3.html) supports.  We could instead do, e.g.,\n\n```python\nimport crypt as c, random as r\nsalt = repr(r.random())[2:]\n'77551456940940877'\nc.crypt('abcdefgh', '$6$' + salt + '$')\n'$6$7755145694094087$uW0RGjvJG3I.BDFKIAieUTPZkD4IGI6b8RtLt1fZ9czR0TefjriLwRGPItgPyZogDFsy.YorN24v2GM4YrBwK0'\nc.crypt('abcdefghi', '$6$' + salt + '$')\n'$6$7755145694094087$txEQuYAJlZ.042gqmPTeLSczXBv1sI6kSjzpbmU7o89rh.Tk7qUGHhLHtL1GIrVXmUdFrQBuIefktTTptuEq31'\n```\n\nIf Linux and Mac OS X, at least, both support SHA-512, I suggest we use it by default.  Should we generate each user's pseudo-random \"salt\" --- [used to avoid clustering](http://stackoverflow.com/questions/536584/non-random-salt-for-password-hashes) --- differently than above?",
+    "body": "But [crypt](http://docs.python.org/library/crypt.html) supports whatever the OS's underlying [crypt(3)](http://www.kernel.org/doc/man-pages/online/pages/man3/crypt.3.html) supports.  We could instead do, e.g.,\n\n```python\nimport crypt as c, random as r\nsalt = repr(r.random())[2:]\n'77551456940940877'\nc.crypt('abcdefgh', '$6$' + salt + '$')\n'$6$7755145694094087$uW0RGjvJG3I.BDFKIAieUTPZkD4IGI6b8RtLt1fZ9czR0TefjriLwRGPItgPyZogDFsy.YorN24v2GM4YrBwK0'\nc.crypt('abcdefghi', '$6$' + salt + '$')\n'$6$7755145694094087$txEQuYAJlZ.042gqmPTeLSczXBv1sI6kSjzpbmU7o89rh.Tk7qUGHhLHtL1GIrVXmUdFrQBuIefktTTptuEq31'\n```\nIf Linux and Mac OS X, at least, both support SHA-512, I suggest we use it by default.  Should we generate each user's pseudo-random \"salt\" --- [used to avoid clustering](http://stackoverflow.com/questions/536584/non-random-salt-for-password-hashes) --- differently than above?",
     "created_at": "2009-12-12T19:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7670",
     "type": "issue_comment",
@@ -106,7 +103,6 @@ c.crypt('abcdefgh', '$6$' + salt + '$')
 c.crypt('abcdefghi', '$6$' + salt + '$')
 '$6$7755145694094087$txEQuYAJlZ.042gqmPTeLSczXBv1sI6kSjzpbmU7o89rh.Tk7qUGHhLHtL1GIrVXmUdFrQBuIefktTTptuEq31'
 ```
-
 If Linux and Mac OS X, at least, both support SHA-512, I suggest we use it by default.  Should we generate each user's pseudo-random "salt" --- [used to avoid clustering](http://stackoverflow.com/questions/536584/non-random-salt-for-password-hashes) --- differently than above?
 
 

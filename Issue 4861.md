@@ -130,7 +130,7 @@ I know, we just need to stick a reminder somewhere, don't we? If you disagree, j
 archive/issue_comments_036776.json:
 ```json
 {
-    "body": "Replying to [comment:4 malb]:\n\nHi Martin,\n\n> I know, we just need to stick a reminder somewhere, don't we? If you disagree, just change it to positive review since the worst thing that can happen is an extra couple of minutes of build time.\n\n#4870 is now a blocker for 3.2.3 to turn it off before release. I would imagine this is a solution we can both live with.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 malb]:\n\nHi Martin,\n\n> I know, we just need to stick a reminder somewhere, don't we? If you disagree, just change it to positive review since the worst thing that can happen is an extra couple of minutes of build time.\n\n\n#4870 is now a blocker for 3.2.3 to turn it off before release. I would imagine this is a solution we can both live with.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T14:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4861",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ Replying to [comment:4 malb]:
 Hi Martin,
 
 > I know, we just need to stick a reminder somewhere, don't we? If you disagree, just change it to positive review since the worst thing that can happen is an extra couple of minutes of build time.
+
 
 #4870 is now a blocker for 3.2.3 to turn it off before release. I would imagine this is a solution we can both live with.
 

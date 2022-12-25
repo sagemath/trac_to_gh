@@ -3,7 +3,7 @@
 archive/issues_008249.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  acleone @qed777 mhampton\n\nThis is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  \n\n\n```\nOn Thu, Feb 11, 2010 at 7:21 PM, Marshall Hampton <> wrote:\n> Just for the record, this has happened to me quite a bit recently.\n>\n> I use a lot of different sage servers, often running different\n> versions, so I don't usually report this kind of stuff since I think I\n> am something of an extreme case.  But most of the servers I use are\n> now running 4.3.2 and I am pretty sure I have seen the cookie message\n> more than before.\n>\n\nHere's the relevant ticket I was remembering:\n\n     http://trac.sagemath.org/sage_trac/ticket/6353\n\nIt is definitely in sage-4.3.2 (since it is merged into sagenb-0.7.4).   \n\nLooking at that patch show that:\n\n  (1) it addresses a related issue,\n\n  (2) it might not solve the issue we're discussing, since it merely includes the *port* in the cookie name -- some unique id for the notebook (e.g., the URL or something else) is maybe also needed to fix the problem we're discussing.\n\nSo somebody should look at ticket 6353, see if a small modification of it would give a real fix, and make said modification.      Alex Leone: this would be a good project for you, if you're looking for something to do on the notebook. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8249\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  acleone @qed777 mhampton\n\nThis is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  \n\n```\nOn Thu, Feb 11, 2010 at 7:21 PM, Marshall Hampton <> wrote:\n> Just for the record, this has happened to me quite a bit recently.\n>\n> I use a lot of different sage servers, often running different\n> versions, so I don't usually report this kind of stuff since I think I\n> am something of an extreme case.  But most of the servers I use are\n> now running 4.3.2 and I am pretty sure I have seen the cookie message\n> more than before.\n>\n\nHere's the relevant ticket I was remembering:\n\n     http://trac.sagemath.org/sage_trac/ticket/6353\n\nIt is definitely in sage-4.3.2 (since it is merged into sagenb-0.7.4).   \n\nLooking at that patch show that:\n\n  (1) it addresses a related issue,\n\n  (2) it might not solve the issue we're discussing, since it merely includes the *port* in the cookie name -- some unique id for the notebook (e.g., the URL or something else) is maybe also needed to fix the problem we're discussing.\n\nSo somebody should look at ticket 6353, see if a small modification of it would give a real fix, and make said modification.      Alex Leone: this would be a good project for you, if you're looking for something to do on the notebook. \n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8249\n\n",
     "created_at": "2010-02-12T12:12:00Z",
     "labels": [
         "component: notebook",
@@ -22,7 +22,6 @@ Assignee: @williamstein
 CC:  acleone @qed777 mhampton
 
 This is a followup to #6353.   That ticket improved cookie naming a bit.  However, it appears to be not enough.  
-
 
 ```
 On Thu, Feb 11, 2010 at 7:21 PM, Marshall Hampton <> wrote:
@@ -51,7 +50,6 @@ So somebody should look at ticket 6353, see if a small modification of it would 
 
  -- William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8249
 
@@ -232,7 +230,7 @@ Selenium errors with patch.  Same errors when the patch for #6069 -missing_pub_w
 archive/issue_comments_072843.json:
 ```json
 {
-    "body": "Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by @qed777 created at 2010-02-14 06:55:39\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\n\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
+    "body": "Attachment [trac_8249-notebook_cookies-selenium_errors.log](tarball://root/attachments/some-uuid/ticket8249/trac_8249-notebook_cookies-selenium_errors.log) by @qed777 created at 2010-02-14 06:55:39\n\nThanks for catching the Se test errors.  I should have checked.\n\nThe patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:\n\n```\nThis webpage has a redirect loop.\n\nThe webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.\n```\nBut with the patch, clicking on \"Sign Out\" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.",
     "created_at": "2010-02-14T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
@@ -247,13 +245,11 @@ Thanks for catching the Se test errors.  I should have checked.
 
 The patch fixes for me the one cookie-related problem I could reproduce reliably:  Logging out in Chrom* displays a browser error page:
 
-
 ```
 This webpage has a redirect loop.
 
 The webpage at http://localhost:8000/home/admin/ has resulted in too many redirects. Clearing your cookies for this site or allowing third-party cookies may fix the problem. If not, it is possibly a server configuration issue and not a problem with your computer.
 ```
-
 But with the patch, clicking on "Sign Out" just returns me to the login page.  I'm not sure if it helps with the reported problems, but making the cookies expire on logout seems logical.
 
 
@@ -263,7 +259,7 @@ But with the patch, clicking on "Sign Out" just returns me to the login page.  I
 archive/issue_comments_072844.json:
 ```json
 {
-    "body": "For some reason Selenium doesn't like HTTP redirect responses.  I keep getting this 'Problem loading page' error (in firefox):\n\n```\nThe page isn't redirecting properly\n      \nFirefox has detected that the server is redirecting the request for this address in a way that will never complete.\n\n    *   This problem can sometimes be caused by disabling or refusing to accept\n          cookies.\n```\n\n\nThis always happens when the selenium gets the redirect HTTP response.  Perhaps we should change it back to a dedicated logout page, but add a `<meta http-equiv=\"Refresh\"` tag so the page redirects after a second.",
+    "body": "For some reason Selenium doesn't like HTTP redirect responses.  I keep getting this 'Problem loading page' error (in firefox):\n\n```\nThe page isn't redirecting properly\n      \nFirefox has detected that the server is redirecting the request for this address in a way that will never complete.\n\n    *   This problem can sometimes be caused by disabling or refusing to accept\n          cookies.\n```\n\nThis always happens when the selenium gets the redirect HTTP response.  Perhaps we should change it back to a dedicated logout page, but add a `<meta http-equiv=\"Refresh\"` tag so the page redirects after a second.",
     "created_at": "2010-02-15T04:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8249",
     "type": "issue_comment",
@@ -282,7 +278,6 @@ Firefox has detected that the server is redirecting the request for this address
     *   This problem can sometimes be caused by disabling or refusing to accept
           cookies.
 ```
-
 
 This always happens when the selenium gets the redirect HTTP response.  Perhaps we should change it back to a dedicated logout page, but add a `<meta http-equiv="Refresh"` tag so the page redirects after a second.
 

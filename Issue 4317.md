@@ -62,7 +62,7 @@ archive/issue_events_009753.json:
 archive/issue_comments_031531.json:
 ```json
 {
-    "body": "\n```\n[11:04pm] mabshoff: craigcitro: so the problem happens when we deal with changed py files - not pyx?\n[11:04pm] craigcitro: i haven't tested pyx\n[11:04pm] mabshoff: ok\n[11:04pm] craigcitro: got it.\n[11:04pm] craigcitro: well, got halfway there, anyway\n[11:04pm] mabshoff: Paul hits the same problem with pyx files, too.\n[11:05pm] mabshoff: Excellent \n[11:05pm] craigcitro: there's a file called $SAGE_ROOT/local/lib/python-2.5/site-packages/easy-install.pth\n[11:05pm] craigcitro: that file has your directory in it.\n[11:05pm] craigcitro: kill the line with your directory, everything works.\n[11:05pm] mabshoff: ah\n[11:06pm] mabshoff: So that file needs to be updated when a moved Sage install is detected.\n```\n",
+    "body": "```\n[11:04pm] mabshoff: craigcitro: so the problem happens when we deal with changed py files - not pyx?\n[11:04pm] craigcitro: i haven't tested pyx\n[11:04pm] mabshoff: ok\n[11:04pm] craigcitro: got it.\n[11:04pm] craigcitro: well, got halfway there, anyway\n[11:04pm] mabshoff: Paul hits the same problem with pyx files, too.\n[11:05pm] mabshoff: Excellent \n[11:05pm] craigcitro: there's a file called $SAGE_ROOT/local/lib/python-2.5/site-packages/easy-install.pth\n[11:05pm] craigcitro: that file has your directory in it.\n[11:05pm] craigcitro: kill the line with your directory, everything works.\n[11:05pm] mabshoff: ah\n[11:06pm] mabshoff: So that file needs to be updated when a moved Sage install is detected.\n```",
     "created_at": "2008-10-30T06:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4317",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ archive/issue_comments_031531.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 [11:04pm] mabshoff: craigcitro: so the problem happens when we deal with changed py files - not pyx?
@@ -89,13 +88,12 @@ archive/issue_comments_031531.json:
 
 
 
-
 ---
 
 archive/issue_comments_031532.json:
 ```json
 {
-    "body": "Check out http://www.mail-archive.com/distutils-sig`@`python.org/msg05817.html\n\nAlso note that easy-install.pth is used in a bunch of places\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ grep -r \"easy-install.pth\" *\ninstall.log:Adding setuptools 0.6c8 to easy-install.pth file\ninstall.log:Adding SQLAlchemy 0.4.6 to easy-install.pth file\ninstall.log:Adding Jinja 1.2 to easy-install.pth file\ninstall.log:Adding Pygments 0.11.1 to easy-install.pth file\ninstall.log:Adding Sphinx 0.5dev-20081027 to easy-install.pth file\ninstall.log:Adding docutils 0.5 to easy-install.pth file\ninstall.log:Jinja 1.2 is already the active version in easy-install.pth\ninstall.log:Pygments 0.11.1 is already the active version in easy-install.pth\n```\n",
+    "body": "Check out http://www.mail-archive.com/distutils-sig`@`python.org/msg05817.html\n\nAlso note that easy-install.pth is used in a bunch of places\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ grep -r \"easy-install.pth\" *\ninstall.log:Adding setuptools 0.6c8 to easy-install.pth file\ninstall.log:Adding SQLAlchemy 0.4.6 to easy-install.pth file\ninstall.log:Adding Jinja 1.2 to easy-install.pth file\ninstall.log:Adding Pygments 0.11.1 to easy-install.pth file\ninstall.log:Adding Sphinx 0.5dev-20081027 to easy-install.pth file\ninstall.log:Adding docutils 0.5 to easy-install.pth file\ninstall.log:Jinja 1.2 is already the active version in easy-install.pth\ninstall.log:Pygments 0.11.1 is already the active version in easy-install.pth\n```",
     "created_at": "2008-10-30T06:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4317",
     "type": "issue_comment",
@@ -119,7 +117,6 @@ install.log:Adding docutils 0.5 to easy-install.pth file
 install.log:Jinja 1.2 is already the active version in easy-install.pth
 install.log:Pygments 0.11.1 is already the active version in easy-install.pth
 ```
-
 
 
 

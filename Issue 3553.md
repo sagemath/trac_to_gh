@@ -57,7 +57,7 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_025082.json:
 ```json
 {
-    "body": "The spkg was based on eclib-20080310.p3.spkg without my fixes to SPKG.txt and the current spkg also did not have a changelog in SPKG.txt. I added back the changes for p3 and also wrote a new entry for p4. In addition the hg repo in src had uncommitted changes:\n\n```\neclib-20080310.p4/src$ hg status\nM procs/gf.h\nM procs/interface.h\nM procs/marith.cc\nM procs/marith.h\nM procs/mptest.cc\nM procs/mptest.out\n```\n\nI checked those in in John's name. Builds fine for me.\n\nJohn: the updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.4/alpha2/eclib-20080310.p4.spkg\n\nCheers,\n\nMichael",
+    "body": "The spkg was based on eclib-20080310.p3.spkg without my fixes to SPKG.txt and the current spkg also did not have a changelog in SPKG.txt. I added back the changes for p3 and also wrote a new entry for p4. In addition the hg repo in src had uncommitted changes:\n\n```\neclib-20080310.p4/src$ hg status\nM procs/gf.h\nM procs/interface.h\nM procs/marith.cc\nM procs/marith.h\nM procs/mptest.cc\nM procs/mptest.out\n```\nI checked those in in John's name. Builds fine for me.\n\nJohn: the updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.4/alpha2/eclib-20080310.p4.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-07-05T22:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3553",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ M procs/marith.h
 M procs/mptest.cc
 M procs/mptest.out
 ```
-
 I checked those in in John's name. Builds fine for me.
 
 John: the updated spkg is at

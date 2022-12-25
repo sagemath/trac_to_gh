@@ -3,7 +3,7 @@
 archive/issues_001378.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nno, there was no ssh-keygen installed, after installation (on Debian\nEtch ssh-keygen is provided by the package ssh-client) it works\nperfectly now without options, just notebook(),\n\nthis should be annotated in the installation manual in the list of\nrequired packages,\nand the possibility notebook(secure=false) if it's not installed\n\nthank you very much....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1378\n\n",
+    "body": "Assignee: tba\n\n```\nno, there was no ssh-keygen installed, after installation (on Debian\nEtch ssh-keygen is provided by the package ssh-client) it works\nperfectly now without options, just notebook(),\n\nthis should be annotated in the installation manual in the list of\nrequired packages,\nand the possibility notebook(secure=false) if it's not installed\n\nthank you very much....\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1378\n\n",
     "created_at": "2007-12-03T06:25:02Z",
     "labels": [
         "component: documentation",
@@ -18,7 +18,6 @@ archive/issues_001378.json:
 ```
 Assignee: tba
 
-
 ```
 no, there was no ssh-keygen installed, after installation (on Debian
 Etch ssh-keygen is provided by the package ssh-client) it works
@@ -30,7 +29,6 @@ and the possibility notebook(secure=false) if it's not installed
 
 thank you very much....
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1378
 

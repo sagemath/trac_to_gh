@@ -3,7 +3,7 @@
 archive/issues_002019.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThere is a serious problem with gap_packages-4.4.10_3.\n\nIf this package is not installed then\n\nsage: C = RandomLinearCode(10, 3,GF(2))\nsage: Cd = C.dual_code()\n\nworks fine. Otherwise, you get the following error (which is not\nfixed by gap_reset_workspace() and has been verified on \nan ubuntu machine and an intel macbook):\n\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/wdj/sagefiles/sage-2.9/<ipython console> in <module>()\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/coding/linear_code.py in dual_code(self)\n    745         #return LinearCode(A)       ## This does not work when k = n-1 for a mysterious reason.\n    746         ##  less pythonic way :\n--> 747         C = gap(\"DualCode(GeneratorMatCode(\"+Gstr+\",GF(\"+str(q)+\")))\")\n    748         G = C.GeneratorMat()\n    749         Gs = G._matrix_(F)\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    736             return x\n    737         if isinstance(x, basestring):\n--> 738             return cls(self, x)\n    739         try:\n    740             return self._coerce_from_special_method(x)\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    987             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    988                 self._session_number = -1\n--> 989                 raise TypeError, x\n    990         self._session_number = parent._session_number\n    991 \n\n<type 'exceptions.TypeError'>: Gap produced error output\nList Element: <list>[2] must have an assigned value\n\n   executing Read(\"/Users/wdj/.sage//temp/david_joyners_computer.local/16049//interface//tmp\");\n\nMy fault, since created the package, but I have no idea how to fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2019\n\n",
+    "body": "Assignee: mabshoff\n\nThere is a serious problem with gap_packages-4.4.10_3.\n\nIf this package is not installed then\n\nsage: C = RandomLinearCode(10, 3,GF(2))\nsage: Cd = C.dual_code()\n\nworks fine. Otherwise, you get the following error (which is not\nfixed by gap_reset_workspace() and has been verified on \nan ubuntu machine and an intel macbook):\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/wdj/sagefiles/sage-2.9/<ipython console> in <module>()\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/coding/linear_code.py in dual_code(self)\n    745         #return LinearCode(A)       ## This does not work when k = n-1 for a mysterious reason.\n    746         ##  less pythonic way :\n--> 747         C = gap(\"DualCode(GeneratorMatCode(\"+Gstr+\",GF(\"+str(q)+\")))\")\n    748         G = C.GeneratorMat()\n    749         Gs = G._matrix_(F)\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    736             return x\n    737         if isinstance(x, basestring):\n--> 738             return cls(self, x)\n    739         try:\n    740             return self._coerce_from_special_method(x)\n\n/Users/wdj/sagefiles/sage-2.9/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n    987             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n    988                 self._session_number = -1\n--> 989                 raise TypeError, x\n    990         self._session_number = parent._session_number\n    991 \n\n<type 'exceptions.TypeError'>: Gap produced error output\nList Element: <list>[2] must have an assigned value\n\n   executing Read(\"/Users/wdj/.sage//temp/david_joyners_computer.local/16049//interface//tmp\");\n\nMy fault, since created the package, but I have no idea how to fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2019\n\n",
     "created_at": "2008-01-31T23:31:49Z",
     "labels": [
         "component: packages: standard",
@@ -29,7 +29,7 @@ works fine. Otherwise, you get the following error (which is not
 fixed by gap_reset_workspace() and has been verified on 
 an ubuntu machine and an intel macbook):
 
----------------------------------------------------------------------------
+---
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /Users/wdj/sagefiles/sage-2.9/<ipython console> in <module>()
@@ -131,7 +131,7 @@ Python as much as possible.
 archive/issue_comments_013000.json:
 ```json
 {
-    "body": "Fortunately there is now a simple solution to this problem.\n\nFrom spkg-install do\n\n```\ntouch \"$SAGE_LOCAL\"/bin/gap_stamp\n```\n\n\nThen any user who starts sage will automatically have their gap workspace reset.\nAny time any spkg install gap stuff, it is supposed to touch the above file.\n\n -- William",
+    "body": "Fortunately there is now a simple solution to this problem.\n\nFrom spkg-install do\n\n```\ntouch \"$SAGE_LOCAL\"/bin/gap_stamp\n```\n\nThen any user who starts sage will automatically have their gap workspace reset.\nAny time any spkg install gap stuff, it is supposed to touch the above file.\n\n -- William",
     "created_at": "2008-02-01T05:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2019",
     "type": "issue_comment",
@@ -147,7 +147,6 @@ From spkg-install do
 ```
 touch "$SAGE_LOCAL"/bin/gap_stamp
 ```
-
 
 Then any user who starts sage will automatically have their gap workspace reset.
 Any time any spkg install gap stuff, it is supposed to touch the above file.

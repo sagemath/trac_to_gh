@@ -86,7 +86,7 @@ First version: patch against sage 3.1.1
 archive/issue_comments_028126.json:
 ```json
 {
-    "body": "Patch applies fine to 3.1.1.  Doctests for the new file pass.\n\nProblem:  doctesting all in sage/modular, some strange errors appear in modular/abvar to do with latex.  They went away when I deleted the line \"... import latex\" in the new file, which is not actually used anyway.\n\nIn the constructor, in checking Ligozat, you loop over divisors of N.  Would it not be faster to loop over the keys in the dict?  There is then no need to factor N, or to look at (however briefly) the divisors which are not in the dict.\n\nThere is something similar at line 146.  Instead of \n\n```\n eta_n = max([ (n/d).floor() for d in divisors(self.level()) if self.r(d) != 0])\n```\n\nyou could write \n\n```\n eta_n = max([ (n/d).floor() for d in self.r().keys()]) \n```\n\n\nIf you really wanted to have the full list of divisors of the level around, you could compute it and cache the result in the constructor.\n\nIn the function r(d) you can just say\n\n```\n   return self._rdict.get(d,0)\n```\n\nsince the get function on a dict returns the value if the key is there or a default value (here 0) if not.\n\nThat's all I have time for now: I got as far as line 235 (def basis_eta_products).",
+    "body": "Patch applies fine to 3.1.1.  Doctests for the new file pass.\n\nProblem:  doctesting all in sage/modular, some strange errors appear in modular/abvar to do with latex.  They went away when I deleted the line \"... import latex\" in the new file, which is not actually used anyway.\n\nIn the constructor, in checking Ligozat, you loop over divisors of N.  Would it not be faster to loop over the keys in the dict?  There is then no need to factor N, or to look at (however briefly) the divisors which are not in the dict.\n\nThere is something similar at line 146.  Instead of \n\n```\n eta_n = max([ (n/d).floor() for d in divisors(self.level()) if self.r(d) != 0])\n```\nyou could write \n\n```\n eta_n = max([ (n/d).floor() for d in self.r().keys()]) \n```\n\nIf you really wanted to have the full list of divisors of the level around, you could compute it and cache the result in the constructor.\n\nIn the function r(d) you can just say\n\n```\n   return self._rdict.get(d,0)\n```\nsince the get function on a dict returns the value if the key is there or a default value (here 0) if not.\n\nThat's all I have time for now: I got as far as line 235 (def basis_eta_products).",
     "created_at": "2008-08-24T17:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -106,13 +106,11 @@ There is something similar at line 146.  Instead of
 ```
  eta_n = max([ (n/d).floor() for d in divisors(self.level()) if self.r(d) != 0])
 ```
-
 you could write 
 
 ```
  eta_n = max([ (n/d).floor() for d in self.r().keys()]) 
 ```
-
 
 If you really wanted to have the full list of divisors of the level around, you could compute it and cache the result in the constructor.
 
@@ -121,7 +119,6 @@ In the function r(d) you can just say
 ```
    return self._rdict.get(d,0)
 ```
-
 since the get function on a dict returns the value if the key is there or a default value (here 0) if not.
 
 That's all I have time for now: I got as far as line 235 (def basis_eta_products).
@@ -187,7 +184,7 @@ OK, here's a second attempt (patch to be installed on top of the first attempt).
 archive/issue_comments_028130.json:
 ```json
 {
-    "body": "Replying to [comment:5 davidloeffler]:\n> OK, here's a second attempt (patch to be installed on top of the first attempt). I've refactored it extensively, creating a new class EtaGroup which is the parent of eta product objects; changed it so it doesn't use divisors() unless it really has to; and added a new module-level function eta_poly_relations which finds polynomial relations between two eta products.\n\nExcellent -- I will review this right away.  John",
+    "body": "Replying to [comment:5 davidloeffler]:\n> OK, here's a second attempt (patch to be installed on top of the first attempt). I've refactored it extensively, creating a new class EtaGroup which is the parent of eta product objects; changed it so it doesn't use divisors() unless it really has to; and added a new module-level function eta_poly_relations which finds polynomial relations between two eta products.\n\n\nExcellent -- I will review this right away.  John",
     "created_at": "2008-08-27T14:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -198,6 +195,7 @@ archive/issue_comments_028130.json:
 
 Replying to [comment:5 davidloeffler]:
 > OK, here's a second attempt (patch to be installed on top of the first attempt). I've refactored it extensively, creating a new class EtaGroup which is the parent of eta product objects; changed it so it doesn't use divisors() unless it really has to; and added a new module-level function eta_poly_relations which finds polynomial relations between two eta products.
+
 
 Excellent -- I will review this right away.  John
 
@@ -226,7 +224,7 @@ Apply after the previous two patches
 archive/issue_comments_028132.json:
 ```json
 {
-    "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by @JohnCremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
+    "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by @JohnCremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
     "created_at": "2008-08-27T15:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
@@ -275,7 +273,6 @@ Possibly wrong (function name doesn't occur in doctests):
 	 * _repr_(self)
 	 * _repr_(self)
 ```
-
 I have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.
 
 

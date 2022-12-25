@@ -3,7 +3,7 @@
 archive/issues_002370.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nsage: ZZ(True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\nsage: ZZ(False)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n\n--------------------------------------------\nAble to coerce bool types to Python integers\n--------------------------------------------\n\nsage: int(True)\n1\nsage: int(False)\n0\n\nIssue created by migration from https://trac.sagemath.org/ticket/2370\n\n",
+    "body": "Assignee: somebody\n\nsage: ZZ(True)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\nsage: ZZ(False)\n\n---\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/tclemans/<ipython console> in <module>()\n\n/home/tclemans/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n\n---\nAble to coerce bool types to Python integers\n\n---\n\nsage: int(True)\n1\nsage: int(False)\n0\n\nIssue created by migration from https://trac.sagemath.org/ticket/2370\n\n",
     "created_at": "2008-03-02T20:13:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,8 @@ archive/issues_002370.json:
 Assignee: somebody
 
 sage: ZZ(True)
----------------------------------------------------------------------------
+
+---
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /home/tclemans/<ipython console> in <module>()
@@ -29,7 +30,8 @@ sage: ZZ(True)
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 sage: ZZ(False)
----------------------------------------------------------------------------
+
+---
 <type 'exceptions.TypeError'>             Traceback (most recent call last)
 
 /home/tclemans/<ipython console> in <module>()
@@ -38,9 +40,10 @@ sage: ZZ(False)
 
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 
---------------------------------------------
+---
 Able to coerce bool types to Python integers
---------------------------------------------
+
+---
 
 sage: int(True)
 1
@@ -116,7 +119,7 @@ Michael
 archive/issue_comments_015959.json:
 ```json
 {
-    "body": "Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by @dfdeshom created at 2008-03-05 06:19:17\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\nDone.",
+    "body": "Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by @dfdeshom created at 2008-03-05 06:19:17\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\n\nDone.",
     "created_at": "2008-03-05T06:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2370",
     "type": "issue_comment",
@@ -129,6 +132,7 @@ Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.pat
 
 Replying to [comment:2 mabshoff]:
 > The patch looks correct, but integer.pyx could certainly use some doctests.  
+
 
 Done.
 

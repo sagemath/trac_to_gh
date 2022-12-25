@@ -242,7 +242,7 @@ archive/issue_events_016267.json:
 archive/issue_comments_057063.json:
 ```json
 {
-    "body": "The problem being that\n\n```\nreturn self.change_ring(sage.rings.real_mpfr.RealField(prec))\n```\n\ndoesn't raise an error since it can coerce the motivating matrix to Real. should we avoid coercion, maybe using type checking ?",
+    "body": "The problem being that\n\n```\nreturn self.change_ring(sage.rings.real_mpfr.RealField(prec))\n```\ndoesn't raise an error since it can coerce the motivating matrix to Real. should we avoid coercion, maybe using type checking ?",
     "created_at": "2016-05-30T10:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6923",
     "type": "issue_comment",
@@ -256,5 +256,4 @@ The problem being that
 ```
 return self.change_ring(sage.rings.real_mpfr.RealField(prec))
 ```
-
 doesn't raise an error since it can coerce the motivating matrix to Real. should we avoid coercion, maybe using type checking ?

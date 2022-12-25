@@ -3,7 +3,7 @@
 archive/issues_007965.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\n\n```\nsage: 5.quo_rem(2/3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.quo_rem (sage/rings/integer.c:16710)()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:15715)()\n\nAttributeError: 'sage.rings.rational.Rational' object has no attribute '_parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7965\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\n```\nsage: 5.quo_rem(2/3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.quo_rem (sage/rings/integer.c:16710)()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:15715)()\n\nAttributeError: 'sage.rings.rational.Rational' object has no attribute '_parent'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7965\n\n",
     "created_at": "2010-01-17T10:37:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: @aghitza
 
 CC:  @orlitzky
 
-
 ```
 sage: 5.quo_rem(2/3)
 ---------------------------------------------------------------------------
@@ -34,7 +33,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.rational.Rational' object has no attribute '_parent'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7965
 

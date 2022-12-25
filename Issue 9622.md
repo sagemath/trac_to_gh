@@ -3,7 +3,7 @@
 archive/issues_009622.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen we build new or updated Sage packages (spkgs), `SAGE_LOCAL/bin/sage-pkg` runs a few checks for common problems.  For example,\n\n\n```sh\n$ sage -pkg foo/\nCreating Sage package foo/\nWarning: no version number detected\n\nCreated package foo.spkg.\n\n    NAME: foo\n VERSION:\n    SIZE: 17.8M\n HG REPO: Good\nSPKG.txt: Good\n\nPlease test this package using\n[...]\n```\n\n\nBut we could add several new, more detailed tests for `spkg-install`, etc.  Or put them in a `sage-spkg-{check,checker,lint}` script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9622\n\n",
+    "body": "Assignee: tbd\n\nWhen we build new or updated Sage packages (spkgs), `SAGE_LOCAL/bin/sage-pkg` runs a few checks for common problems.  For example,\n\n```sh\n$ sage -pkg foo/\nCreating Sage package foo/\nWarning: no version number detected\n\nCreated package foo.spkg.\n\n    NAME: foo\n VERSION:\n    SIZE: 17.8M\n HG REPO: Good\nSPKG.txt: Good\n\nPlease test this package using\n[...]\n```\n\nBut we could add several new, more detailed tests for `spkg-install`, etc.  Or put them in a `sage-spkg-{check,checker,lint}` script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9622\n\n",
     "created_at": "2010-07-28T08:42:37Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_009622.json:
 Assignee: tbd
 
 When we build new or updated Sage packages (spkgs), `SAGE_LOCAL/bin/sage-pkg` runs a few checks for common problems.  For example,
-
 
 ```sh
 $ sage -pkg foo/
@@ -37,7 +36,6 @@ SPKG.txt: Good
 Please test this package using
 [...]
 ```
-
 
 But we could add several new, more detailed tests for `spkg-install`, etc.  Or put them in a `sage-spkg-{check,checker,lint}` script.
 
@@ -167,7 +165,7 @@ The application of patches to the upstream source tree (i.e. currently *copying 
 archive/issue_comments_093056.json:
 ```json
 {
-    "body": "Replying to [comment:2 leif]:\n>  * I wonder how many people actually use `sage-pkg` to create spkgs (rather than just use `tar`).\n\nGood question.  I usually use `sage -spkg`, an alias of `sage -pkg`.\n\n>  * In a perfect world, the reviewer(s) would do this job (i.e. look at the code e.g., too, not just try to install a new package and then give positive review, or sometimes the other way around).\n\nJust a quick thought:  We could also run the spkg checks, or a subset of them, during installation.",
+    "body": "Replying to [comment:2 leif]:\n>  * I wonder how many people actually use `sage-pkg` to create spkgs (rather than just use `tar`).\n\n\nGood question.  I usually use `sage -spkg`, an alias of `sage -pkg`.\n\n>  * In a perfect world, the reviewer(s) would do this job (i.e. look at the code e.g., too, not just try to install a new package and then give positive review, or sometimes the other way around).\n\n\nJust a quick thought:  We could also run the spkg checks, or a subset of them, during installation.",
     "created_at": "2010-07-29T07:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9622",
     "type": "issue_comment",
@@ -179,9 +177,11 @@ archive/issue_comments_093056.json:
 Replying to [comment:2 leif]:
 >  * I wonder how many people actually use `sage-pkg` to create spkgs (rather than just use `tar`).
 
+
 Good question.  I usually use `sage -spkg`, an alias of `sage -pkg`.
 
 >  * In a perfect world, the reviewer(s) would do this job (i.e. look at the code e.g., too, not just try to install a new package and then give positive review, or sometimes the other way around).
+
 
 Just a quick thought:  We could also run the spkg checks, or a subset of them, during installation.
 
@@ -192,7 +192,7 @@ Just a quick thought:  We could also run the spkg checks, or a subset of them, d
 archive/issue_comments_093057.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> Possibilities, some of which could simply give warnings or reminders:\n> \n>  * Check for `spkg-check` and `spkg-install` and that they're executable.\n\nGood idea\n\n>  * Check the first line of scripts for `#!/usr/bin/env` (cf. #9597).\n\nYes. \n\n>  * Check for an unfinished Mercurial patch queue.\n\nYes \n\n>  * Check for the presence of `set -e`.\n\nWilliam will not have that. He is very against the use of set -e. \n\n>  * Check for the presence of $MAKE and other important variables.\n\nWhat's important in one package is not in another. That might be difficult to do. \n\n>  * Check for Python scripts and whether Python is a dependency in `spkg/standard/deps` (cf. #9435, #9507).\n> \n> I'm sure there are others!\n\nIf the package is called foobar-x.y.z, then SPKG.txt should have the string foobar.x.y.z somewhere in it. Many times commits get made, with no entry in SPKG.txt\n\nDave",
+    "body": "Replying to [comment:1 mpatel]:\n> Possibilities, some of which could simply give warnings or reminders:\n> \n> * Check for `spkg-check` and `spkg-install` and that they're executable.\n\n\nGood idea\n\n>  * Check the first line of scripts for `#!/usr/bin/env` (cf. #9597).\n\n\nYes. \n\n>  * Check for an unfinished Mercurial patch queue.\n\n\nYes \n\n>  * Check for the presence of `set -e`.\n\n\nWilliam will not have that. He is very against the use of set -e. \n\n>  * Check for the presence of $MAKE and other important variables.\n\n\nWhat's important in one package is not in another. That might be difficult to do. \n\n>  * Check for Python scripts and whether Python is a dependency in `spkg/standard/deps` (cf. #9435, #9507).\n \n> \n> I'm sure there are others!\n\n\nIf the package is called foobar-x.y.z, then SPKG.txt should have the string foobar.x.y.z somewhere in it. Many times commits get made, with no entry in SPKG.txt\n\nDave",
     "created_at": "2010-07-29T10:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9622",
     "type": "issue_comment",
@@ -204,29 +204,36 @@ archive/issue_comments_093057.json:
 Replying to [comment:1 mpatel]:
 > Possibilities, some of which could simply give warnings or reminders:
 > 
->  * Check for `spkg-check` and `spkg-install` and that they're executable.
+> * Check for `spkg-check` and `spkg-install` and that they're executable.
+
 
 Good idea
 
 >  * Check the first line of scripts for `#!/usr/bin/env` (cf. #9597).
 
+
 Yes. 
 
 >  * Check for an unfinished Mercurial patch queue.
+
 
 Yes 
 
 >  * Check for the presence of `set -e`.
 
+
 William will not have that. He is very against the use of set -e. 
 
 >  * Check for the presence of $MAKE and other important variables.
 
+
 What's important in one package is not in another. That might be difficult to do. 
 
 >  * Check for Python scripts and whether Python is a dependency in `spkg/standard/deps` (cf. #9435, #9507).
+ 
 > 
 > I'm sure there are others!
+
 
 If the package is called foobar-x.y.z, then SPKG.txt should have the string foobar.x.y.z somewhere in it. Many times commits get made, with no entry in SPKG.txt
 

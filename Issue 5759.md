@@ -3,7 +3,7 @@
 archive/issues_005759.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: Zmod(2)(0).divides(Zmod(2)(1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/50691/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12423)()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__mod__ (sage/rings/integer_mod.c:17834)()\n   1867     def __mod__(IntegerMod_int self, right):\n   1868         right = int(right)\n-> 1869         if self.__modulus.int32 % right != 0:\n   1870             raise ZeroDivisionError, \"reduction modulo right not defined.\"\n   1871         return integer_mod_ring.IntegerModRing(right)(self)\n\nZeroDivisionError: integer division or modulo by zero\n\nFound by  kilian__ on irc.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5759\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: Zmod(2)(0).divides(Zmod(2)(1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/50691/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12423)()\n\n/Users/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__mod__ (sage/rings/integer_mod.c:17834)()\n   1867     def __mod__(IntegerMod_int self, right):\n   1868         right = int(right)\n-> 1869         if self.__modulus.int32 % right != 0:\n   1870             raise ZeroDivisionError, \"reduction modulo right not defined.\"\n   1871         return integer_mod_ring.IntegerModRing(right)(self)\n\nZeroDivisionError: integer division or modulo by zero\n\nFound by  kilian__ on irc.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5759\n\n",
     "created_at": "2009-04-11T18:37:49Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,7 +18,6 @@ archive/issues_005759.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 sage: Zmod(2)(0).divides(Zmod(2)(1))
@@ -40,7 +39,6 @@ ZeroDivisionError: integer division or modulo by zero
 
 Found by  kilian__ on irc.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5759
 
@@ -107,7 +105,7 @@ Attachment [5759-doctests.patch](tarball://root/attachments/some-uuid/ticket5759
 archive/issue_comments_044925.json:
 ```json
 {
-    "body": "This breaks a doctest somewhere else:\n\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t  devel/sage/sage/coding/code_constructions.py\nsage -t  \"devel/sage/sage/coding/code_constructions.py\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/coding/code_constructions.py\", line 530:\n    sage: g.divides(f)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[6]>\", line 1, in <module>\n        g.divides(f)###line 530:\n    sage: g.divides(f)\n      File \"element.pyx\", line 1380, in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12436)\n      File \"parent_old.pyx\", line 334, in sage.structure.parent_old.Parent._coerce_c (sage/structure/parent_old.c:5417)\n      File \"parent_old.pyx\", line 336, in sage.structure.parent_old.Parent._coerce_c (sage/structure/parent_old.c:5186)\n      File \"parent.pyx\", line 374, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4994)\n    TypeError: no canonical coercion from Univariate Polynomial Ring in x over Finite Field in a of size 3^2 to Univariate Polynomial Ring in x over Finite Field of size 3\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2/tmp/.doctest_code_constructions.py\n         [4.2 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/coding/code_constructions.py\"\nTotal time for all tests: 4.2 seconds\n```\n",
+    "body": "This breaks a doctest somewhere else:\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t  devel/sage/sage/coding/code_constructions.py\nsage -t  \"devel/sage/sage/coding/code_constructions.py\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/coding/code_constructions.py\", line 530:\n    sage: g.divides(f)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[6]>\", line 1, in <module>\n        g.divides(f)###line 530:\n    sage: g.divides(f)\n      File \"element.pyx\", line 1380, in sage.structure.element.CommutativeRingElement.divides (sage/structure/element.c:12436)\n      File \"parent_old.pyx\", line 334, in sage.structure.parent_old.Parent._coerce_c (sage/structure/parent_old.c:5417)\n      File \"parent_old.pyx\", line 336, in sage.structure.parent_old.Parent._coerce_c (sage/structure/parent_old.c:5186)\n      File \"parent.pyx\", line 374, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4994)\n    TypeError: no canonical coercion from Univariate Polynomial Ring in x over Finite Field in a of size 3^2 to Univariate Polynomial Ring in x over Finite Field of size 3\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2/tmp/.doctest_code_constructions.py\n         [4.2 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/coding/code_constructions.py\"\nTotal time for all tests: 4.2 seconds\n```",
     "created_at": "2009-04-12T04:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5759",
     "type": "issue_comment",
@@ -117,7 +115,6 @@ archive/issue_comments_044925.json:
 ```
 
 This breaks a doctest somewhere else:
-
 
 ```
 wstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t  devel/sage/sage/coding/code_constructions.py
@@ -156,7 +153,6 @@ The following tests failed:
         sage -t  "devel/sage/sage/coding/code_constructions.py"
 Total time for all tests: 4.2 seconds
 ```
-
 
 
 
@@ -224,7 +220,7 @@ If there is any support for this I'm willing to try to do it.
 archive/issue_comments_044928.json:
 ```json
 {
-    "body": "Note that #5347 (merged in 4.1.2.alpha2) fixes the easy cases I listed above.  We still have\n\n```\nsage: Zmod(5)(1).divides(Zmod(2)(1))\nTrue\n```\n\nbut this looks fine to me:\n\n```\n\nsage: Zmod(2).zero_ideal() == Zmod(2).zero_ideal()\nTrue\nsage: Zmod(2).zero_ideal() == Zmod(2).unit_ideal()\nFalse\n```\n\n\nHence the patches here need to be rebased and simplified to cater for the first one.",
+    "body": "Note that #5347 (merged in 4.1.2.alpha2) fixes the easy cases I listed above.  We still have\n\n```\nsage: Zmod(5)(1).divides(Zmod(2)(1))\nTrue\n```\nbut this looks fine to me:\n\n```\n\nsage: Zmod(2).zero_ideal() == Zmod(2).zero_ideal()\nTrue\nsage: Zmod(2).zero_ideal() == Zmod(2).unit_ideal()\nFalse\n```\n\nHence the patches here need to be rebased and simplified to cater for the first one.",
     "created_at": "2009-10-05T13:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5759",
     "type": "issue_comment",
@@ -239,7 +235,6 @@ Note that #5347 (merged in 4.1.2.alpha2) fixes the easy cases I listed above.  W
 sage: Zmod(5)(1).divides(Zmod(2)(1))
 True
 ```
-
 but this looks fine to me:
 
 ```
@@ -249,7 +244,6 @@ True
 sage: Zmod(2).zero_ideal() == Zmod(2).unit_ideal()
 False
 ```
-
 
 Hence the patches here need to be rebased and simplified to cater for the first one.
 

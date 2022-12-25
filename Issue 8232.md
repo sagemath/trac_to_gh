@@ -3,7 +3,7 @@
 archive/issues_008232.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nAs discussed on [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/9e90bbeb0328034c), cmp is broken for words. \n\n\n\n```\nAmusant: this boils down to:\n\nsage: W = Words(['a','b','c'])\nsage: W('a') == W([])\nTrue\nsage: W([]) == W('a')\nFalse\n```\n\n\nit causes problem else where :\n\n\n```\nsage: A = AlgebrasWithBasis(QQ).example(); A\nAn example of an algebra with basis: the free algebra on the\ngenerators ('a', 'b', 'c') over Rational Field\nsage: [a,b,c] = A.algebra_generators()\nsage: a.is_one()\nTrue\nsage: b.is_one()\nTrue\nsage: c.is_one()\nTrue\nsage: A.one().is_one()\nTrue\nsage: (a+b).is_one()\nFalse\nsage: (a+A.one()).is_one()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8232\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nAs discussed on [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/9e90bbeb0328034c), cmp is broken for words. \n\n\n```\nAmusant: this boils down to:\n\nsage: W = Words(['a','b','c'])\nsage: W('a') == W([])\nTrue\nsage: W([]) == W('a')\nFalse\n```\n\nit causes problem else where :\n\n```\nsage: A = AlgebrasWithBasis(QQ).example(); A\nAn example of an algebra with basis: the free algebra on the\ngenerators ('a', 'b', 'c') over Rational Field\nsage: [a,b,c] = A.algebra_generators()\nsage: a.is_one()\nTrue\nsage: b.is_one()\nTrue\nsage: c.is_one()\nTrue\nsage: A.one().is_one()\nTrue\nsage: (a+b).is_one()\nFalse\nsage: (a+A.one()).is_one()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8232\n\n",
     "created_at": "2010-02-10T16:03:32Z",
     "labels": [
         "component: combinatorics",
@@ -23,7 +23,6 @@ CC:  abmasse
 As discussed on [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/9e90bbeb0328034c), cmp is broken for words. 
 
 
-
 ```
 Amusant: this boils down to:
 
@@ -34,9 +33,7 @@ sage: W([]) == W('a')
 False
 ```
 
-
 it causes problem else where :
-
 
 ```
 sage: A = AlgebrasWithBasis(QQ).example(); A
@@ -58,7 +55,6 @@ False
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/8232
 
 
@@ -70,7 +66,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8232
 archive/issue_comments_072596.json:
 ```json
 {
-    "body": "I just applied a patch which does the following things.\n\n1. Fixed `__cmp__` for `Word_class` which was broken.\n\n2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :\n\n\n```\nBEFORE:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.79 ms per loop\n    sage: %timeit w.__cmp__(z)\n    25 loops, best of 3: 13.3 ms per loop\n    sage: %timeit z.__cmp__(w)\n    5 loops, best of 3: 50.1 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n\n\nAFTER:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.89 ms per loop\n    sage: %timeit w.__cmp__(z)\n    125 loops, best of 3: 5.4 ms per loop\n    sage: %timeit z.__cmp__(w)\n    25 loops, best of 3: 35.9 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n```\n\n\nNOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by its parent (here 0 < 1 but one could also say 1 < 0) which is slower.\n\n3. The broken `__cmp__` was hidding one bug in `longest_common_prefix`. Indeed a doctest was passing while it wasn't supposed to:\n\n\n```\nBEFORE:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: 1\n\nAFTER:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: \n\n```\n",
+    "body": "I just applied a patch which does the following things.\n\n1. Fixed `__cmp__` for `Word_class` which was broken.\n\n2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :\n\n```\nBEFORE:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.79 ms per loop\n    sage: %timeit w.__cmp__(z)\n    25 loops, best of 3: 13.3 ms per loop\n    sage: %timeit z.__cmp__(w)\n    5 loops, best of 3: 50.1 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n\n\nAFTER:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.89 ms per loop\n    sage: %timeit w.__cmp__(z)\n    125 loops, best of 3: 5.4 ms per loop\n    sage: %timeit z.__cmp__(w)\n    25 loops, best of 3: 35.9 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n```\n\nNOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by its parent (here 0 < 1 but one could also say 1 < 0) which is slower.\n\n3. The broken `__cmp__` was hidding one bug in `longest_common_prefix`. Indeed a doctest was passing while it wasn't supposed to:\n\n```\nBEFORE:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: 1\n\nAFTER:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: \n\n```",
     "created_at": "2010-02-10T17:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
@@ -84,7 +80,6 @@ I just applied a patch which does the following things.
 1. Fixed `__cmp__` for `Word_class` which was broken.
 
 2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :
-
 
 ```
 BEFORE:
@@ -123,11 +118,9 @@ AFTER:
     25 loops, best of 3: 35.7 ms per loop
 ```
 
-
 NOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by its parent (here 0 < 1 but one could also say 1 < 0) which is slower.
 
 3. The broken `__cmp__` was hidding one bug in `longest_common_prefix`. Indeed a doctest was passing while it wasn't supposed to:
-
 
 ```
 BEFORE:
@@ -143,7 +136,6 @@ AFTER:
     word: 
 
 ```
-
 
 
 

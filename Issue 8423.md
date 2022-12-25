@@ -110,7 +110,7 @@ archive/issue_comments_075372.json:
 archive/issue_comments_075373.json:
 ```json
 {
-    "body": "Here's an iterated function system example (the fern):\n\n```\ndef fern(x,y):\n    \"\"\"\n    An iterated function system whose orbit traces out\n    a fern shape.\n    \n    INPUT:\n        x,y - numerical scalars\n    \n    OUTPUT:\n        a 2-component list of new x and y values.\n    \"\"\"\n    r = random()\n    if r<.01:\n        return [0,.16*y]\n    elif r < .08:\n        return [.2*x-.26*y, .23*x+.22*y+1.6]\n    elif r < .15:\n        return [-.15*x+.28*y, .26*x+.24*y+.44]\n    else: \n        return [.85*x+.04*y,-.04*x+.85*y+1.6]\ndef fern_orbit(n):\n    \"\"\"\n    Returns a trajectory of length n of the fern\n    iterated function system.\n    \n    INPUT:\n        n - an integer, the length of the trajectory\n        \n    OUTPUT:\n        a list of 2-component lists\n        \n    EXAMPLE:\n       sage: show(points(fern_orbit(10000),pointsize=1),axes=False)\n    \"\"\"\n    traj = [[0,0]]\n    for i in range(n):\n        nt = fern(traj[-1][0],traj[-1][1])\n        traj.append(nt)\n    return traj\n```\n",
+    "body": "Here's an iterated function system example (the fern):\n\n```\ndef fern(x,y):\n    \"\"\"\n    An iterated function system whose orbit traces out\n    a fern shape.\n    \n    INPUT:\n        x,y - numerical scalars\n    \n    OUTPUT:\n        a 2-component list of new x and y values.\n    \"\"\"\n    r = random()\n    if r<.01:\n        return [0,.16*y]\n    elif r < .08:\n        return [.2*x-.26*y, .23*x+.22*y+1.6]\n    elif r < .15:\n        return [-.15*x+.28*y, .26*x+.24*y+.44]\n    else: \n        return [.85*x+.04*y,-.04*x+.85*y+1.6]\ndef fern_orbit(n):\n    \"\"\"\n    Returns a trajectory of length n of the fern\n    iterated function system.\n    \n    INPUT:\n        n - an integer, the length of the trajectory\n        \n    OUTPUT:\n        a list of 2-component lists\n        \n    EXAMPLE:\n       sage: show(points(fern_orbit(10000),pointsize=1),axes=False)\n    \"\"\"\n    traj = [[0,0]]\n    for i in range(n):\n        nt = fern(traj[-1][0],traj[-1][1])\n        traj.append(nt)\n    return traj\n```",
     "created_at": "2010-03-02T21:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8423",
     "type": "issue_comment",
@@ -162,7 +162,6 @@ def fern_orbit(n):
         traj.append(nt)
     return traj
 ```
-
 
 
 
@@ -452,7 +451,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075381.json:
 ```json
 {
-    "body": "I have only minor issues with this\n\n- I see that when you pass in a period you are giving a random root of the dynatomic. I'm not opposed to this, but it should definitely be documented. Especially since some of the roots are actually lower period points when the tail is not 0, for example `julia_plot(period=[1,1])` returns a c value of a fixed point sometimes.\n\n- return_points - This seems to return the c value associated to a particular period. If I've understood this correctly, it is not needed.\n\n- In several places you say you are iterating `c` for the Julia set. You are not, you are iterating the complex point corresponding to that pixel for the fixed c value defining the map.\n----\nLast 10 new commits:",
+    "body": "I have only minor issues with this\n\n- I see that when you pass in a period you are giving a random root of the dynatomic. I'm not opposed to this, but it should definitely be documented. Especially since some of the roots are actually lower period points when the tail is not 0, for example `julia_plot(period=[1,1])` returns a c value of a fixed point sometimes.\n\n- return_points - This seems to return the c value associated to a particular period. If I've understood this correctly, it is not needed.\n\n- In several places you say you are iterating `c` for the Julia set. You are not, you are iterating the complex point corresponding to that pixel for the fixed c value defining the map.\n \n---\nLast 10 new commits:",
     "created_at": "2017-08-02T18:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8423",
     "type": "issue_comment",
@@ -468,7 +467,8 @@ I have only minor issues with this
 - return_points - This seems to return the c value associated to a particular period. If I've understood this correctly, it is not needed.
 
 - In several places you say you are iterating `c` for the Julia set. You are not, you are iterating the complex point corresponding to that pixel for the fixed c value defining the map.
-----
+ 
+---
 Last 10 new commits:
 
 
@@ -478,7 +478,7 @@ Last 10 new commits:
 archive/issue_comments_075382.json:
 ```json
 {
-    "body": "The idea behind `return_points` was to provide a way for the user to find all of the Julia sets of a certain cycle structure instead of just getting a random one. For example, if I wanted to find all of Julia sets with cycle structure (2,3) I can run the following code:\n\n\n```python\nc_values = julia_plot(period=[2,3], return_points=True)\nfor c in c_values:\n    julia_plot(c)\n```\n\n\nI wasn't sure if this would be useful or not so if it isn't practical, I can remove it.",
+    "body": "The idea behind `return_points` was to provide a way for the user to find all of the Julia sets of a certain cycle structure instead of just getting a random one. For example, if I wanted to find all of Julia sets with cycle structure (2,3) I can run the following code:\n\n```python\nc_values = julia_plot(period=[2,3], return_points=True)\nfor c in c_values:\n    julia_plot(c)\n```\n\nI wasn't sure if this would be useful or not so if it isn't practical, I can remove it.",
     "created_at": "2017-08-02T22:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8423",
     "type": "issue_comment",
@@ -489,13 +489,11 @@ archive/issue_comments_075382.json:
 
 The idea behind `return_points` was to provide a way for the user to find all of the Julia sets of a certain cycle structure instead of just getting a random one. For example, if I wanted to find all of Julia sets with cycle structure (2,3) I can run the following code:
 
-
 ```python
 c_values = julia_plot(period=[2,3], return_points=True)
 for c in c_values:
     julia_plot(c)
 ```
-
 
 I wasn't sure if this would be useful or not so if it isn't practical, I can remove it.
 
@@ -584,7 +582,7 @@ I'm still inclined to remove that function entirely and have an example that dem
 archive/issue_comments_075387.json:
 ```json
 {
-    "body": "That sounds like a good idea. I'll remove the extra function and add the following example to the `julia_plot` documentation:\n\n\n```python\nsage: period = [2,3] # not tested\n....: R.<c> = QQ[]\n....: P.<x,y> = ProjectiveSpace(R,1)\n....: R = P.coordinate_ring()\n....: H = End(P)\n....: f = H([x^2+c*y^2,y^2])\n....: L = f.dynatomic_polynomial(period).subs({x:0,y:1}).roots(ring=CC)\n....: c_values = [k[0] for k in L]\n....: for c in c_values:\n....:     julia_plot(c)\n```\n\n\nIs that what you had in mind?",
+    "body": "That sounds like a good idea. I'll remove the extra function and add the following example to the `julia_plot` documentation:\n\n```python\nsage: period = [2,3] # not tested\n....: R.<c> = QQ[]\n....: P.<x,y> = ProjectiveSpace(R,1)\n....: R = P.coordinate_ring()\n....: H = End(P)\n....: f = H([x^2+c*y^2,y^2])\n....: L = f.dynatomic_polynomial(period).subs({x:0,y:1}).roots(ring=CC)\n....: c_values = [k[0] for k in L]\n....: for c in c_values:\n....:     julia_plot(c)\n```\n\nIs that what you had in mind?",
     "created_at": "2017-08-04T17:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8423",
     "type": "issue_comment",
@@ -594,7 +592,6 @@ archive/issue_comments_075387.json:
 ```
 
 That sounds like a good idea. I'll remove the extra function and add the following example to the `julia_plot` documentation:
-
 
 ```python
 sage: period = [2,3] # not tested
@@ -608,7 +605,6 @@ sage: period = [2,3] # not tested
 ....: for c in c_values:
 ....:     julia_plot(c)
 ```
-
 
 Is that what you had in mind?
 

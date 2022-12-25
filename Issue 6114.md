@@ -3,7 +3,7 @@
 archive/issues_006114.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
+    "body": "Assignee: @burcin\n\n```\nUpgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so\nby hand.\n\n$ rm devel/sage/build/sage/symbolic/constants.so\n\nNow testing.\n\nOn Fedora 9 I'll do a fresh install.\n\n```\n\nI (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6114\n\n",
     "created_at": "2009-05-21T18:38:31Z",
     "labels": [
         "component: calculus",
@@ -19,7 +19,6 @@ archive/issues_006114.json:
 ```
 Assignee: @burcin
 
-
 ```
 Upgrading from alpha0 on Fedora 10 failed somehow. I had to remove constants.so
 by hand.
@@ -31,7 +30,6 @@ Now testing.
 On Fedora 9 I'll do a fresh install.
 
 ```
-
 
 I (=william) did remove enough constants.* files, which resulted in the above.  I will attach a patch to fix this.
 

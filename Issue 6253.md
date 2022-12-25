@@ -72,7 +72,7 @@ How is this intended to be used?  What are your typical constants? Are there ins
 archive/issue_comments_049849.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> How is this intended to be used?  \n\nOne of my use case looks like:\n\ndef my_objects(<some parameters>, predicate = ConstantFunction(True)):\n    \"\"\"\n    Returns all the objects blah blah blah (as an EnumeratedSet)\n    Optionally, a predicate can be specified to select only those objects satisfying the predicate\n\nAnother one looks like:\n\ndef generating_series(..., weight = ConstantFunction(1)):\n    ...\n\n> What are your typical constants? \n\nSo far, True, 1, Integer(1)\n\nBtw: with UniqueRepresentation, the two first yield the same constant function with the current implementation, thanks to this horror:\n\n    sage: { 1: 'a', True: 'b' }\n    {1: 'b'}\n\nFixed patch in a couple minutes.\n\n> Are there instances where you'd want a non-constant function to be used in the same place? \n\nYes. Actually, that's the case in all the situations I encountered so far",
+    "body": "Replying to [comment:2 mhansen]:\n> How is this intended to be used?  \n\n\nOne of my use case looks like:\n\ndef my_objects(<some parameters>, predicate = ConstantFunction(True)):\n    \"\"\"\n    Returns all the objects blah blah blah (as an EnumeratedSet)\n    Optionally, a predicate can be specified to select only those objects satisfying the predicate\n\nAnother one looks like:\n\ndef generating_series(..., weight = ConstantFunction(1)):\n    ...\n\n> What are your typical constants? \n\n\nSo far, True, 1, Integer(1)\n\nBtw: with UniqueRepresentation, the two first yield the same constant function with the current implementation, thanks to this horror:\n\n    sage: { 1: 'a', True: 'b' }\n    {1: 'b'}\n\nFixed patch in a couple minutes.\n\n> Are there instances where you'd want a non-constant function to be used in the same place? \n\n\nYes. Actually, that's the case in all the situations I encountered so far",
     "created_at": "2009-06-10T07:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_049849.json:
 
 Replying to [comment:2 mhansen]:
 > How is this intended to be used?  
+
 
 One of my use case looks like:
 
@@ -98,6 +99,7 @@ def generating_series(..., weight = ConstantFunction(1)):
 
 > What are your typical constants? 
 
+
 So far, True, 1, Integer(1)
 
 Btw: with UniqueRepresentation, the two first yield the same constant function with the current implementation, thanks to this horror:
@@ -108,6 +110,7 @@ Btw: with UniqueRepresentation, the two first yield the same constant function w
 Fixed patch in a couple minutes.
 
 > Are there instances where you'd want a non-constant function to be used in the same place? 
+
 
 Yes. Actually, that's the case in all the situations I encountered so far
 
@@ -233,7 +236,7 @@ This is great stuff! So let's put it in the reference manual. The reviewer patch
 archive/issue_comments_049856.json:
 ```json
 {
-    "body": "Replying to [comment:7 mvngu]:\n> This is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:\n> \n>  1. `trac_6253-constant_function-nt.patch`\n>  1. `trac_6253-reviewer.patch`\n\nThanks Minh! (again)\n\nPositive review on your reviewer patch.",
+    "body": "Replying to [comment:7 mvngu]:\n> This is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:\n> \n> 1. `trac_6253-constant_function-nt.patch`\n> 2. `trac_6253-reviewer.patch`\n\n\nThanks Minh! (again)\n\nPositive review on your reviewer patch.",
     "created_at": "2009-08-23T08:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6253",
     "type": "issue_comment",
@@ -245,8 +248,9 @@ archive/issue_comments_049856.json:
 Replying to [comment:7 mvngu]:
 > This is great stuff! So let's put it in the reference manual. The reviewer patch `trac_6253-reviewer.patch` adds the module `sage/misc/constant_function.py` to the reference manual. It also fixes some typos so that the reference manual builds without any warnings. If people are happy with my changes, then patches should be merged in this order:
 > 
->  1. `trac_6253-constant_function-nt.patch`
->  1. `trac_6253-reviewer.patch`
+> 1. `trac_6253-constant_function-nt.patch`
+> 2. `trac_6253-reviewer.patch`
+
 
 Thanks Minh! (again)
 

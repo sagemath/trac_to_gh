@@ -3,7 +3,7 @@
 archive/issues_005684.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTaking negative powers of a Laurent polynomial doesn't currently work due to a typo in LaurentPolynomial_mpair.__pow__(). The attached patch fixes this.\n\n\n```\nsage: F.<t> = LaurentPolynomialRing(GF(3))\nsage: (1+t)^(-1)\nTypeError: fraction_field() takes no arguments (1 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5684\n\n",
+    "body": "Assignee: tbd\n\nTaking negative powers of a Laurent polynomial doesn't currently work due to a typo in LaurentPolynomial_mpair.__pow__(). The attached patch fixes this.\n\n```\nsage: F.<t> = LaurentPolynomialRing(GF(3))\nsage: (1+t)^(-1)\nTypeError: fraction_field() takes no arguments (1 given)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5684\n\n",
     "created_at": "2009-04-04T20:40:48Z",
     "labels": [
         "component: algebra",
@@ -20,13 +20,11 @@ Assignee: tbd
 
 Taking negative powers of a Laurent polynomial doesn't currently work due to a typo in LaurentPolynomial_mpair.__pow__(). The attached patch fixes this.
 
-
 ```
 sage: F.<t> = LaurentPolynomialRing(GF(3))
 sage: (1+t)^(-1)
 TypeError: fraction_field() takes no arguments (1 given)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5684
 

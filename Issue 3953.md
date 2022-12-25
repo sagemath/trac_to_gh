@@ -3,7 +3,7 @@
 archive/issues_003953.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nHere's some relevant code by Gabriel Gellner -- a diff to server/support.py -- to this problem:\n\n```\nteragon-2:Downloads was$ diff ~/d/sage/sage/server/support.py support.py \n23a24,29\n> from pygments import highlight\n> from pygments.lexers import PythonLexer\n> from pygments.formatters import HtmlFormatter\n> \n> \n> \n218,220c224,228\n<         src = sagedoc.format_src(src)\n<         if not lineno is None:\n<             src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n---\n>         #Slicing of the first 95 characters is a kluge to get rid of the doctype,\n>         # really we should write our oun HtmlFormatter\n>         src = highlight(src, PythonLexer(), HtmlFormatter(full=True))[94:]\n>         #if not lineno is None:\n>         #    src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n```\n\n\nThis requires the pygments library to be installed. Also, the notebook will have to be\nchanged to not escape <'s etc. in the output of the source code window.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3953\n\n",
+    "body": "Assignee: boothby\n\nHere's some relevant code by Gabriel Gellner -- a diff to server/support.py -- to this problem:\n\n```\nteragon-2:Downloads was$ diff ~/d/sage/sage/server/support.py support.py \n23a24,29\n> from pygments import highlight\n> from pygments.lexers import PythonLexer\n> from pygments.formatters import HtmlFormatter\n> \n> \n> \n218,220c224,228\n<         src = sagedoc.format_src(src)\n<         if not lineno is None:\n<             src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n---\n>         #Slicing of the first 95 characters is a kluge to get rid of the doctype,\n>         # really we should write our oun HtmlFormatter\n>         src = highlight(src, PythonLexer(), HtmlFormatter(full=True))[94:]\n>         #if not lineno is None:\n>         #    src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n```\n\nThis requires the pygments library to be installed. Also, the notebook will have to be\nchanged to not escape <'s etc. in the output of the source code window.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3953\n\n",
     "created_at": "2008-08-26T08:20:30Z",
     "labels": [
         "component: notebook"
@@ -39,7 +39,6 @@ teragon-2:Downloads was$ diff ~/d/sage/sage/server/support.py support.py
 >         #if not lineno is None:
 >         #    src = "File: %s\nSource Code (starting at line %s):\n%s"%(filename, lineno, src)
 ```
-
 
 This requires the pygments library to be installed. Also, the notebook will have to be
 changed to not escape <'s etc. in the output of the source code window.  

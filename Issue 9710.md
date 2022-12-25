@@ -3,7 +3,7 @@
 archive/issues_009710.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman @jdemeyer\n\nKeywords: differential equations, assumptions\n\nThe assume function doesn't seem to work with the differential equation solver, despite what the documentation for desolve suggests. This returns an error:\n\n```\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_25.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"eCA9IHZhcigneCcpCmsgPSB2YXIoJ2snKQp5ID0gZnVuY3Rpb24oJ3knLHgpCmFzc3VtZShrPjApCnByaW50IGRlc29sdmUoZGlmZih5LHgseCkrayp5LWV4cCgtayp4KSxbeSx4XSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpyNFGr0/___code___.py\", line 7, in <module>\n    exec compile(u'print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\n  File \"\", line 1, in <module>\n    \n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/calculus/desolvers.py\", line 340, in desolve\n    soln = maxima(cmd)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\nFound by Praveen N. and Aashita during Sage Days 25 coding sprint.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9710\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman @jdemeyer\n\nKeywords: differential equations, assumptions\n\nThe assume function doesn't seem to work with the differential equation solver, despite what the documentation for desolve suggests. This returns an error:\n\n```\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_25.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"eCA9IHZhcigneCcpCmsgPSB2YXIoJ2snKQp5ID0gZnVuY3Rpb24oJ3knLHgpCmFzc3VtZShrPjApCnByaW50IGRlc29sdmUoZGlmZih5LHgseCkrayp5LWV4cCgtayp4KSxbeSx4XSk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpyNFGr0/___code___.py\", line 7, in <module>\n    exec compile(u'print desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\n  File \"\", line 1, in <module>\n    \n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/calculus/desolvers.py\", line 340, in desolve\n    soln = maxima(cmd)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n    return cls(self, x, name=name)\n  File \"/home/kedlaya/sage-complete/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 1451, in __init__\n    raise TypeError, x\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\nFound by Praveen N. and Aashita during Sage Days 25 coding sprint.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9710\n\n",
     "created_at": "2010-08-09T14:27:20Z",
     "labels": [
         "component: calculus",
@@ -49,7 +49,6 @@ Traceback (most recent call last):
 TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):
 Is  k  positive, negative, or zero?
 ```
-
 Found by Praveen N. and Aashita during Sage Days 25 coding sprint.
 
 
@@ -64,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9710
 archive/issue_comments_094477.json:
 ```json
 {
-    "body": "Observed later: ticket #8931 is similar, possibly enough so for this to be considered a duplicate. Also, I misread the documentation:\n\n```\n       This equation can be solved within Maxima but not within Sage. It\n       needs assumptions assume(x>0,y>0) and works in Maxima, but not in\n       Sage:\n    \n          sage: assume(x>0) # not tested\n          sage: assume(y>0) # not tested\n          sage: desolve(x*diff(y,x)-x*sqrt(y^2+x^2)-y,y,show_method=True) # not tested\n```\n\nSo no promise is being made, but nonetheless I think this needs to be fixed.",
+    "body": "Observed later: ticket #8931 is similar, possibly enough so for this to be considered a duplicate. Also, I misread the documentation:\n\n```\n       This equation can be solved within Maxima but not within Sage. It\n       needs assumptions assume(x>0,y>0) and works in Maxima, but not in\n       Sage:\n    \n          sage: assume(x>0) # not tested\n          sage: assume(y>0) # not tested\n          sage: desolve(x*diff(y,x)-x*sqrt(y^2+x^2)-y,y,show_method=True) # not tested\n```\nSo no promise is being made, but nonetheless I think this needs to be fixed.",
     "created_at": "2010-08-10T02:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
@@ -84,7 +83,6 @@ Observed later: ticket #8931 is similar, possibly enough so for this to be consi
           sage: assume(y>0) # not tested
           sage: desolve(x*diff(y,x)-x*sqrt(y^2+x^2)-y,y,show_method=True) # not tested
 ```
-
 So no promise is being made, but nonetheless I think this needs to be fixed.
 
 
@@ -94,7 +92,7 @@ So no promise is being made, but nonetheless I think this needs to be fixed.
 archive/issue_comments_094478.json:
 ```json
 {
-    "body": "with #9961:\n\n\n```\nmarik@um-bc107:/opt/sage$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x=var('x'); f=function('f',x); k=var('k'); assume(k>0)\nsage: desolve(diff(f,x,2)/f==k,f,ivar=x)\nk1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)\n```\n",
+    "body": "with #9961:\n\n```\nmarik@um-bc107:/opt/sage$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x=var('x'); f=function('f',x); k=var('k'); assume(k>0)\nsage: desolve(diff(f,x,2)/f==k,f,ivar=x)\nk1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)\n```",
     "created_at": "2010-09-21T20:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
@@ -104,7 +102,6 @@ archive/issue_comments_094478.json:
 ```
 
 with #9961:
-
 
 ```
 marik@um-bc107:/opt/sage$ ./sage
@@ -117,13 +114,12 @@ k1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)
 
 
 
-
 ---
 
 archive/issue_comments_094479.json:
 ```json
 {
-    "body": "In fact, #9835 is sufficient to solve this problem. The patch #9961 which is on the top of #9835 is not necessary. For the problem from the description we have with #9835:\n\n```\nmarik@um-bc107:/opt/sage$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nk1*sin(sqrt(k)*x) + k2*cos(sqrt(k)*x) + e^(-k*x)/(k^2 + k)\nsage:\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "body": "In fact, #9835 is sufficient to solve this problem. The patch #9961 which is on the top of #9835 is not necessary. For the problem from the description we have with #9835:\n\n```\nmarik@um-bc107:/opt/sage$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x = var('x')\nsage: k = var('k')\nsage: y = function('y',x)\nsage: assume(k>0)\nsage: desolve(diff(y,x,x)+k*y-exp(-k*x),[y,x])\nk1*sin(sqrt(k)*x) + k2*cos(sqrt(k)*x) + e^(-k*x)/(k^2 + k)\nsage:\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n```",
     "created_at": "2010-09-21T20:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
@@ -148,7 +144,6 @@ sage:
 | Sage Version 4.5.3, Release Date: 2010-09-04                       |
 | Type notebook() for the GUI, and license() for information.        |
 ```
-
 
 
 
@@ -214,7 +209,7 @@ To release manager: please close this ticket.
 archive/issue_comments_094482.json:
 ```json
 {
-    "body": "> We could add yet another doctest, but in this case there are already so many tests of it, with another one coming at #8931, that it seems appropriate to simply say this is a dup.  \n\nThe other tests being from #9961 and #9835.",
+    "body": "> We could add yet another doctest, but in this case there are already so many tests of it, with another one coming at #8931, that it seems appropriate to simply say this is a dup.  \n\n\nThe other tests being from #9961 and #9835.",
     "created_at": "2011-03-14T20:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9710",
     "type": "issue_comment",
@@ -224,6 +219,7 @@ archive/issue_comments_094482.json:
 ```
 
 > We could add yet another doctest, but in this case there are already so many tests of it, with another one coming at #8931, that it seems appropriate to simply say this is a dup.  
+
 
 The other tests being from #9961 and #9835.
 

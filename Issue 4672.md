@@ -3,7 +3,7 @@
 archive/issues_004672.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
     "created_at": "2008-12-02T05:43:05Z",
     "labels": [
         "component: graphics",
@@ -17,7 +17,6 @@ archive/issues_004672.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: bar_chart??
@@ -36,7 +35,6 @@ Source:
             options.update(kwds)
             return func(*args, **options)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4672
 
@@ -121,7 +119,7 @@ Code looks reasonable, applies (with fuzz) to my Sage 3.2, and fixes the issue p
 archive/issue_comments_035129.json:
 ```json
 {
-    "body": "I also tried the code, etc., and it looks good, so another positive review from me. \n\nWhen I was reviewing though I noticed that, which has nothing a priori to do with this ticket but is worrisome. \n\n```\nsage: a = plot(sin)\nsage: a == loads(dumps(a))\nFalse\n```\n",
+    "body": "I also tried the code, etc., and it looks good, so another positive review from me. \n\nWhen I was reviewing though I noticed that, which has nothing a priori to do with this ticket but is worrisome. \n\n```\nsage: a = plot(sin)\nsage: a == loads(dumps(a))\nFalse\n```",
     "created_at": "2008-12-02T17:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
@@ -142,13 +140,12 @@ False
 
 
 
-
 ---
 
 archive/issue_comments_035130.json:
 ```json
 {
-    "body": "This patch breaks one doctest:\n\n```\nsage -t -long \"devel/sage/sage/combinat/sloane_functions.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/combinat/sloane_functions.py\", line 156:\n    sage: sloane.A000045._sage_src_()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[2]>\", line 1, in <module>\n        sloane.A000045._sage_src_()###line 156:\n    sage: sloane.A000045._sage_src_()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/combinat/sloane_functions.py\", line 160, in _sage_src_\n        return sage_getsource(self.__class__)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 367, in sage_getsource\n        return obj._sage_src_()\n    TypeError: unbound method _sage_src_() must be called with A000045 instance as first argument (got nothing instead)\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/tmp/.doctest_sloane_functions.py\n\t [6.6 s]\nexit code: 1024\n```\n",
+    "body": "This patch breaks one doctest:\n\n```\nsage -t -long \"devel/sage/sage/combinat/sloane_functions.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/combinat/sloane_functions.py\", line 156:\n    sage: sloane.A000045._sage_src_()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[2]>\", line 1, in <module>\n        sloane.A000045._sage_src_()###line 156:\n    sage: sloane.A000045._sage_src_()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/combinat/sloane_functions.py\", line 160, in _sage_src_\n        return sage_getsource(self.__class__)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 367, in sage_getsource\n        return obj._sage_src_()\n    TypeError: unbound method _sage_src_() must be called with A000045 instance as first argument (got nothing instead)\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/tmp/.doctest_sloane_functions.py\n\t [6.6 s]\nexit code: 1024\n```",
     "created_at": "2008-12-03T10:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
@@ -188,7 +185,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.a
 	 [6.6 s]
 exit code: 1024
 ```
-
 
 
 

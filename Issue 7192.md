@@ -171,7 +171,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7192
 archive/issue_comments_059473.json:
 ```json
 {
-    "body": "Replying to [ticket:7192 Loufer]:\n> Folder:  .../en/a_tour_of_sage\n\nShould this say \".../es/a_tour_of_sage\"?",
+    "body": "Replying to [ticket:7192 Loufer]:\n> Folder:  .../en/a_tour_of_sage\n\n\nShould this say \".../es/a_tour_of_sage\"?",
     "created_at": "2009-10-12T04:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -183,6 +183,7 @@ archive/issue_comments_059473.json:
 Replying to [ticket:7192 Loufer]:
 > Folder:  .../en/a_tour_of_sage
 
+
 Should this say ".../es/a_tour_of_sage"?
 
 
@@ -192,7 +193,7 @@ Should this say ".../es/a_tour_of_sage"?
 archive/issue_comments_059474.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> Should this say \".../es/a_tour_of_sage\"?\n\nThe attachment `index.rst` is a translation of \"A Tour of Sage\" to Spanish. Based upon this attachment, one needs to create a patch under the directory `SAGE_ROOT/devel/sage-main/doc/es`.",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Should this say \".../es/a_tour_of_sage\"?\n\n\nThe attachment `index.rst` is a translation of \"A Tour of Sage\" to Spanish. Based upon this attachment, one needs to create a patch under the directory `SAGE_ROOT/devel/sage-main/doc/es`.",
     "created_at": "2009-10-12T04:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -204,6 +205,7 @@ archive/issue_comments_059474.json:
 Replying to [comment:2 jhpalmieri]:
 > Should this say ".../es/a_tour_of_sage"?
 
+
 The attachment `index.rst` is a translation of "A Tour of Sage" to Spanish. Based upon this attachment, one needs to create a patch under the directory `SAGE_ROOT/devel/sage-main/doc/es`.
 
 
@@ -213,7 +215,7 @@ The attachment `index.rst` is a translation of "A Tour of Sage" to Spanish. Base
 archive/issue_comments_059475.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> Replying to [ticket:7192 Loufer]:\n> > Folder:  .../en/a_tour_of_sage\n> \n> Should this say \".../es/a_tour_of_sage\"?\n> \n\nWell, that's the folder where I grabbed the file from and then transformed it.\nIf it's in your plans to create a new folder \".../es/...\", that would be great.\n\nSorry for the omission.",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Replying to [ticket:7192 Loufer]:\n> > Folder:  .../en/a_tour_of_sage\n\n> \n> Should this say \".../es/a_tour_of_sage\"?\n> \n\n\nWell, that's the folder where I grabbed the file from and then transformed it.\nIf it's in your plans to create a new folder \".../es/...\", that would be great.\n\nSorry for the omission.",
     "created_at": "2009-10-13T01:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -225,9 +227,11 @@ archive/issue_comments_059475.json:
 Replying to [comment:2 jhpalmieri]:
 > Replying to [ticket:7192 Loufer]:
 > > Folder:  .../en/a_tour_of_sage
+
 > 
 > Should this say ".../es/a_tour_of_sage"?
 > 
+
 
 Well, that's the folder where I grabbed the file from and then transformed it.
 If it's in your plans to create a new folder ".../es/...", that would be great.
@@ -260,7 +264,7 @@ with you.
 archive/issue_comments_059477.json:
 ```json
 {
-    "body": "Replying to [comment:5 Loufer]:\n> Also, let me know if my capitalization of the word Sage to SAGE is fine\n> with you.\n\nThe Sage computer algebra system used to be called \"SAGE\", which is an acronym for Software for Algebra and Geometry Experimentation. That acronym has been abandoned. You should only use \"Sage\" to refer to the Sage mathematics software at \n\nhttp://www.sagemath.org\n\nUsing the capitalization \"SAGE\" would only confuse people.",
+    "body": "Replying to [comment:5 Loufer]:\n> Also, let me know if my capitalization of the word Sage to SAGE is fine\n> with you.\n\n\nThe Sage computer algebra system used to be called \"SAGE\", which is an acronym for Software for Algebra and Geometry Experimentation. That acronym has been abandoned. You should only use \"Sage\" to refer to the Sage mathematics software at \n\nhttp://www.sagemath.org\n\nUsing the capitalization \"SAGE\" would only confuse people.",
     "created_at": "2009-10-13T01:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -272,6 +276,7 @@ archive/issue_comments_059477.json:
 Replying to [comment:5 Loufer]:
 > Also, let me know if my capitalization of the word Sage to SAGE is fine
 > with you.
+
 
 The Sage computer algebra system used to be called "SAGE", which is an acronym for Software for Algebra and Geometry Experimentation. That acronym has been abandoned. You should only use "Sage" to refer to the Sage mathematics software at 
 
@@ -447,7 +452,7 @@ Changing status from new to needs_info.
 archive/issue_comments_059482.json:
 ```json
 {
-    "body": "Here is a git branch. There are some problems with the accents.\n----\nNew commits:",
+    "body": "Here is a git branch. There are some problems with the accents.\n\n---\nNew commits:",
     "created_at": "2014-07-18T12:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -457,7 +462,8 @@ archive/issue_comments_059482.json:
 ```
 
 Here is a git branch. There are some problems with the accents.
-----
+
+---
 New commits:
 
 
@@ -557,7 +563,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059488.json:
 ```json
 {
-    "body": "I made some changes to sentences that didn't sound right to me at all. It is still not perfect, but i think now is much better.\n----\nNew commits:",
+    "body": "I made some changes to sentences that didn't sound right to me at all. It is still not perfect, but i think now is much better.\n\n---\nNew commits:",
     "created_at": "2014-07-22T20:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -567,7 +573,8 @@ archive/issue_comments_059488.json:
 ```
 
 I made some changes to sentences that didn't sound right to me at all. It is still not perfect, but i think now is much better.
-----
+
+---
 New commits:
 
 
@@ -595,7 +602,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_059490.json:
 ```json
 {
-    "body": "Replying to [comment:18 mmarco]:\n> I made some changes to sentences that didn't sound right to me at all.\n> New commits:\n> ||[89d5285](http://git.sagemath.org/sage.git/commit/?id=89d52850de7945af570070719f8500c097762ae3)||`Corrected some errors, made some changes to unusual expressions.`||\n\nTypo: one of the changes has 'Acceciendo' for 'Accediendo'.",
+    "body": "Replying to [comment:18 mmarco]:\n> I made some changes to sentences that didn't sound right to me at all.\n> New commits:\n> |                                                                                                                                          |                                                                  |\n> |------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|\n> |[89d5285](http://git.sagemath.org/sage.git/commit/?id=89d52850de7945af570070719f8500c097762ae3)|`Corrected some errors, made some changes to unusual expressions.`|\n\n\nTypo: one of the changes has 'Acceciendo' for 'Accediendo'.",
     "created_at": "2014-07-23T04:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -607,7 +614,10 @@ archive/issue_comments_059490.json:
 Replying to [comment:18 mmarco]:
 > I made some changes to sentences that didn't sound right to me at all.
 > New commits:
-> ||[89d5285](http://git.sagemath.org/sage.git/commit/?id=89d52850de7945af570070719f8500c097762ae3)||`Corrected some errors, made some changes to unusual expressions.`||
+> |                                                                                                                                          |                                                                  |
+> |------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+> |[89d5285](http://git.sagemath.org/sage.git/commit/?id=89d52850de7945af570070719f8500c097762ae3)|`Corrected some errors, made some changes to unusual expressions.`|
+
 
 Typo: one of the changes has 'Acceciendo' for 'Accediendo'.
 
@@ -692,7 +702,7 @@ archive/issue_events_017036.json:
 archive/issue_comments_059493.json:
 ```json
 {
-    "body": "> It contains several errors \"matr\u00edz\", \"gr\u00e1cias\". \nYes, I agree with chapoton - please do even just put a list of typos etc. here!  Thanks.",
+    "body": "> It contains several errors \"matr\u00edz\", \"gr\u00e1cias\". \n\nYes, I agree with chapoton - please do even just put a list of typos etc. here!  Thanks.",
     "created_at": "2014-11-13T14:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -702,6 +712,7 @@ archive/issue_comments_059493.json:
 ```
 
 > It contains several errors "matríz", "grácias". 
+
 Yes, I agree with chapoton - please do even just put a list of typos etc. here!  Thanks.
 
 
@@ -785,7 +796,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_059498.json:
 ```json
 {
-    "body": "Replying to [comment:28 kcrisman]:\n> Info needed on this issue.\n\ni'd like to review/wrap-up this ticket. notice there are still typos in the branch u/mmarco/ticket/7192\n\nhow to proceed? may i change needs_info -> needs_work and commit the changes? thanks",
+    "body": "Replying to [comment:28 kcrisman]:\n> Info needed on this issue.\n\n\ni'd like to review/wrap-up this ticket. notice there are still typos in the branch u/mmarco/ticket/7192\n\nhow to proceed? may i change needs_info -> needs_work and commit the changes? thanks",
     "created_at": "2017-04-01T10:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -796,6 +807,7 @@ archive/issue_comments_059498.json:
 
 Replying to [comment:28 kcrisman]:
 > Info needed on this issue.
+
 
 i'd like to review/wrap-up this ticket. notice there are still typos in the branch u/mmarco/ticket/7192
 
@@ -880,7 +892,7 @@ I don't see what the issue with comment:26 is. It is just currently what we have
 archive/issue_comments_059501.json:
 ```json
 {
-    "body": "Some Spanish reader should correct any remaining typos.\n----\nNew commits:",
+    "body": "Some Spanish reader should correct any remaining typos.\n\n---\nNew commits:",
     "created_at": "2017-08-26T14:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -890,7 +902,8 @@ archive/issue_comments_059501.json:
 ```
 
 Some Spanish reader should correct any remaining typos.
-----
+
+---
 New commits:
 
 
@@ -988,7 +1001,7 @@ I'm not a native Spanish speaker, but I do not see any obvious typos. However, p
 archive/issue_comments_059505.json:
 ```json
 {
-    "body": "hi, thanks for the efforts! yes, there are some typos:\n\n\n```\nde el Libro -> del Libro\n\nmatr\u00edz -> matriz\n\nmilliones -> millones\n\nalrededor de 4.5 seconds -> alrededor de 4.5 segundos\n\nAcceciendo a Distintos -> Accediendo a Distintos\n\nestas accediendo -> est\u00e1s accediendo \n```\n",
+    "body": "hi, thanks for the efforts! yes, there are some typos:\n\n```\nde el Libro -> del Libro\n\nmatr\u00edz -> matriz\n\nmilliones -> millones\n\nalrededor de 4.5 seconds -> alrededor de 4.5 segundos\n\nAcceciendo a Distintos -> Accediendo a Distintos\n\nestas accediendo -> est\u00e1s accediendo \n```",
     "created_at": "2017-08-27T19:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -998,7 +1011,6 @@ archive/issue_comments_059505.json:
 ```
 
 hi, thanks for the efforts! yes, there are some typos:
-
 
 ```
 de el Libro -> del Libro
@@ -1013,7 +1025,6 @@ Acceciendo a Distintos -> Accediendo a Distintos
 
 estas accediendo -> estás accediendo 
 ```
-
 
 
 
@@ -1112,7 +1123,7 @@ I am afraid that this now needs technical work, as the patchbot complains.
 archive/issue_comments_059511.json:
 ```json
 {
-    "body": "Probably needs this change in `conf.py`:\n\n```diff\n-sys.path.append(os.environ['SAGE_DOC'])\n+sys.path.append(os.environ['SAGE_DOC_SRC'])\n```\n",
+    "body": "Probably needs this change in `conf.py`:\n\n```diff\n-sys.path.append(os.environ['SAGE_DOC'])\n+sys.path.append(os.environ['SAGE_DOC_SRC'])\n```",
     "created_at": "2017-08-28T15:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7192",
     "type": "issue_comment",
@@ -1127,7 +1138,6 @@ Probably needs this change in `conf.py`:
 -sys.path.append(os.environ['SAGE_DOC'])
 +sys.path.append(os.environ['SAGE_DOC_SRC'])
 ```
-
 
 
 

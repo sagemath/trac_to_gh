@@ -3,7 +3,7 @@
 archive/issues_007146.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI set MAKE to \"make -j10\" on solaris x86 (disk.math) and while building sqlite got quite a surprise:\n\n```\nwstein@disk:~$ ps -u wstein  |grep make|wc -l\n    5915\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7146\n\n",
+    "body": "Assignee: tbd\n\nI set MAKE to \"make -j10\" on solaris x86 (disk.math) and while building sqlite got quite a surprise:\n\n```\nwstein@disk:~$ ps -u wstein  |grep make|wc -l\n    5915\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7146\n\n",
     "created_at": "2009-10-07T15:33:27Z",
     "labels": [
         "component: build",
@@ -25,7 +25,6 @@ I set MAKE to "make -j10" on solaris x86 (disk.math) and while building sqlite g
 wstein@disk:~$ ps -u wstein  |grep make|wc -l
     5915
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7146
 

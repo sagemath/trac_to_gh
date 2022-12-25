@@ -3,7 +3,7 @@
 archive/issues_003609.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nA slightly updated spkg is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p5.spkg\n\nAccording to John:\n\n```\nThere's a new version with that file deleted (and the mercurial logs\nup to date) in the same place as before, called eclib-20080310.p5.spkg\n\nJohn\n```\n\n\nJohn is talking about src/procs/ressol.c which is copyrighted by \"Copyright (c) 1994, 1995 by the LiDIA Group\". LiDIA is now GPL, but since the file is no longer used it was completely deleted.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3609\n\n",
+    "body": "Assignee: @JohnCremona\n\nA slightly updated spkg is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p5.spkg\n\nAccording to John:\n\n```\nThere's a new version with that file deleted (and the mercurial logs\nup to date) in the same place as before, called eclib-20080310.p5.spkg\n\nJohn\n```\n\nJohn is talking about src/procs/ressol.c which is copyrighted by \"Copyright (c) 1994, 1995 by the LiDIA Group\". LiDIA is now GPL, but since the file is no longer used it was completely deleted.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3609\n\n",
     "created_at": "2008-07-08T11:56:38Z",
     "labels": [
         "component: build",
@@ -31,7 +31,6 @@ up to date) in the same place as before, called eclib-20080310.p5.spkg
 
 John
 ```
-
 
 John is talking about src/procs/ressol.c which is copyrighted by "Copyright (c) 1994, 1995 by the LiDIA Group". LiDIA is now GPL, but since the file is no longer used it was completely deleted.
 

@@ -3,7 +3,7 @@
 archive/issues_005883.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nKeywords: rational points projective line finite\n\nThere is optimised code in p1list.pyx for creating the list of points on P1 over Z/NZ.  It would be nice to also have this available as, for instance:\n\n\n```\nsage: P1 = ProjectiveSpace(1, Integers(N))\nsage: P1.rational_points()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5883\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: rational points projective line finite\n\nThere is optimised code in p1list.pyx for creating the list of points on P1 over Z/NZ.  It would be nice to also have this available as, for instance:\n\n```\nsage: P1 = ProjectiveSpace(1, Integers(N))\nsage: P1.rational_points()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5883\n\n",
     "created_at": "2009-04-24T00:23:07Z",
     "labels": [
         "component: algebraic geometry",
@@ -22,12 +22,10 @@ Keywords: rational points projective line finite
 
 There is optimised code in p1list.pyx for creating the list of points on P1 over Z/NZ.  It would be nice to also have this available as, for instance:
 
-
 ```
 sage: P1 = ProjectiveSpace(1, Integers(N))
 sage: P1.rational_points()
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5883

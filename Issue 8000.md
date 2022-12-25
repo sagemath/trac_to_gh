@@ -3,7 +3,7 @@
 archive/issues_008000.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @TimDumol mvngu\n\nAdding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors \n\n```\nreading sources... [ 99%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\n\nraised when we build the reference manual.\n\nThis is partly a followup to #7249, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol mvngu\n\nAdding the pragma now to all Python files in SageNB should prevent the increasingly common docbuild errors \n\n```\nreading sources... [ 99%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\nraised when we build the reference manual.\n\nThis is partly a followup to #7249, I think.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8000\n\n",
     "created_at": "2010-01-19T16:26:52Z",
     "labels": [
         "component: notebook",
@@ -27,7 +27,6 @@ reading sources... [ 99%] sagenb/notebook/worksheet
 Sphinx error:
 'utf8' codec can't decode bytes in position 420-422: invalid data
 ```
-
 raised when we build the reference manual.
 
 This is partly a followup to #7249, I think.
@@ -61,7 +60,7 @@ Minh -- Is this OK?  Shall we make another ticket to update the whole Sage libra
 archive/issue_comments_069784.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?\nIn particular, post-#7249, we've got non-ASCII Unicode characters in *doctests.*",
+    "body": "Replying to [comment:1 mpatel]:\n> Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?\n\nIn particular, post-#7249, we've got non-ASCII Unicode characters in *doctests.*",
     "created_at": "2010-01-19T16:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -72,6 +71,7 @@ archive/issue_comments_069784.json:
 
 Replying to [comment:1 mpatel]:
 > Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?
+
 In particular, post-#7249, we've got non-ASCII Unicode characters in *doctests.*
 
 
@@ -81,7 +81,7 @@ In particular, post-#7249, we've got non-ASCII Unicode characters in *doctests.*
 archive/issue_comments_069785.json:
 ```json
 {
-    "body": "Replying to [comment:1 mpatel]:\n> Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?\nI'm not sure about this, although I can clearly see the benefit of it. On the one hand, this could be further discouragement to people who want to start with Sage development. Could you send an email to sage-devel polling people about this issue? I mean something along the line of, \"Should each source file have the character encoding preamble # -*- coding: utf-8 -*- ?\". Also see #7999 relating to one file in the Sage library.",
+    "body": "Replying to [comment:1 mpatel]:\n> Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?\n\nI'm not sure about this, although I can clearly see the benefit of it. On the one hand, this could be further discouragement to people who want to start with Sage development. Could you send an email to sage-devel polling people about this issue? I mean something along the line of, \"Should each source file have the character encoding preamble # -*- coding: utf-8 -*- ?\". Also see #7999 relating to one file in the Sage library.",
     "created_at": "2010-01-19T16:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -92,6 +92,7 @@ archive/issue_comments_069785.json:
 
 Replying to [comment:1 mpatel]:
 > Minh -- Is this OK?  Shall we make another ticket to update the whole Sage library?
+
 I'm not sure about this, although I can clearly see the benefit of it. On the one hand, this could be further discouragement to people who want to start with Sage development. Could you send an email to sage-devel polling people about this issue? I mean something along the line of, "Should each source file have the character encoding preamble # -*- coding: utf-8 -*- ?". Also see #7999 relating to one file in the Sage library.
 
 
@@ -137,7 +138,7 @@ Perhaps a different coding slipped in?
 archive/issue_comments_069788.json:
 ```json
 {
-    "body": "Replying to [comment:5 mpatel]:\n> Perhaps a different coding slipped in?\nIt turns out that we could fix this problem (cf. #7249) by making the docstring a unicode or raw string (e.g., `\"\"\"` --> u`\"\"\"` or r`\"\"\"`).",
+    "body": "Replying to [comment:5 mpatel]:\n> Perhaps a different coding slipped in?\n\nIt turns out that we could fix this problem (cf. #7249) by making the docstring a unicode or raw string (e.g., `\"\"\"` --> u`\"\"\"` or r`\"\"\"`).",
     "created_at": "2010-01-19T19:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -148,6 +149,7 @@ archive/issue_comments_069788.json:
 
 Replying to [comment:5 mpatel]:
 > Perhaps a different coding slipped in?
+
 It turns out that we could fix this problem (cf. #7249) by making the docstring a unicode or raw string (e.g., `"""` --> u`"""` or r`"""`).
 
 
@@ -213,7 +215,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069792.json:
 ```json
 {
-    "body": "Replying to [comment:7 timdumol]:\n> This patch should do the trick.\nIt does, indeed.  V2 also fixes a failed doctest in `sagenb.misc.sageinspect.`",
+    "body": "Replying to [comment:7 timdumol]:\n> This patch should do the trick.\n\nIt does, indeed.  V2 also fixes a failed doctest in `sagenb.misc.sageinspect.`",
     "created_at": "2010-01-20T03:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -224,6 +226,7 @@ archive/issue_comments_069792.json:
 
 Replying to [comment:7 timdumol]:
 > This patch should do the trick.
+
 It does, indeed.  V2 also fixes a failed doctest in `sagenb.misc.sageinspect.`
 
 
@@ -289,7 +292,7 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 archive/issue_comments_069796.json:
 ```json
 {
-    "body": "V3 is rebased for this queue (patch version numbers may be off by one):\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\ntrac_8000-utf-8-coding-directive.2.patch\n```\n",
+    "body": "V3 is rebased for this queue (patch version numbers may be off by one):\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\ntrac_8000-utf-8-coding-directive.2.patch\n```",
     "created_at": "2010-01-25T00:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8000",
     "type": "issue_comment",
@@ -314,7 +317,6 @@ trac_6353-cookies-diff-ports.patch
 trac_7207-sagenb-future-import.3.patch
 trac_8000-utf-8-coding-directive.2.patch
 ```
-
 
 
 

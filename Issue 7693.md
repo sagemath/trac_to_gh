@@ -3,7 +3,7 @@
 archive/issues_007693.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein\n\nThe lrs SPKG.txt is just:\n\n```\nwstein@boxen:/tmp/wstein/lrs-4.2b.p0$ more SPKG.txt\n* 2008-05-15 (Marshall Hampton)\n*initial build\n1. Deleted McGill-specific build stuff from makefile\n2. Added SAGE_LOCAL gmp build locations\n```\n\nFix this.  I was trying to figure out what the heck lrs is, and this wasn't helfpul. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7693\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein\n\nThe lrs SPKG.txt is just:\n\n```\nwstein@boxen:/tmp/wstein/lrs-4.2b.p0$ more SPKG.txt\n* 2008-05-15 (Marshall Hampton)\n*initial build\n1. Deleted McGill-specific build stuff from makefile\n2. Added SAGE_LOCAL gmp build locations\n```\nFix this.  I was trying to figure out what the heck lrs is, and this wasn't helfpul. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7693\n\n",
     "created_at": "2009-12-15T23:07:40Z",
     "labels": [
         "component: packages: optional",
@@ -29,7 +29,6 @@ wstein@boxen:/tmp/wstein/lrs-4.2b.p0$ more SPKG.txt
 1. Deleted McGill-specific build stuff from makefile
 2. Added SAGE_LOCAL gmp build locations
 ```
-
 Fix this.  I was trying to figure out what the heck lrs is, and this wasn't helfpul. 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7693

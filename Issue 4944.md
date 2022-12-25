@@ -3,7 +3,7 @@
 archive/issues_004944.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  robertwb was\n\nKeywords: roots number field embedding\n\n\n```\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n```\n\n\nDoesn't terminate in reasonable time on sage.math or my Mac OS X box.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4944\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  robertwb was\n\nKeywords: roots number field embedding\n\n```\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n```\n\nDoesn't terminate in reasonable time on sage.math or my Mac OS X box.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4944\n\n",
     "created_at": "2009-01-06T00:48:32Z",
     "labels": [
         "component: number theory",
@@ -23,11 +23,9 @@ CC:  robertwb was
 
 Keywords: roots number field embedding
 
-
 ```
 sage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))
 ```
-
 
 Doesn't terminate in reasonable time on sage.math or my Mac OS X box.
 
@@ -42,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4944
 archive/issue_comments_037458.json:
 ```json
 {
-    "body": "Nick,\n\nthis looks similar to #4723 and there is a patch from Carl. The patch over there (which isn't merged yet) fixes the problem for me. Before I killed it after 10 seconds CPU time, with the patch applied:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: time x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.03 s\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n[]\n```\n\nIronically the other issue was also reported by you :)\n| Sage Version 3.2.3.final, Release Date: 2009-01-02                 |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
+    "body": "Nick,\n\nthis looks similar to #4723 and there is a patch from Carl. The patch over there (which isn't merged yet) fixes the problem for me. Before I killed it after 10 seconds CPU time, with the patch applied:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: time x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.03 s\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n[]\n```\nIronically the other issue was also reported by you :)\n| Sage Version 3.2.3.final, Release Date: 2009-01-02                 |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael",
     "created_at": "2009-01-06T01:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4944",
     "type": "issue_comment",
@@ -64,7 +62,6 @@ Wall time: 0.03 s
 sage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))
 []
 ```
-
 Ironically the other issue was also reported by you :)
 | Sage Version 3.2.3.final, Release Date: 2009-01-02                 |
 | Type notebook() for the GUI, and license() for information.        |

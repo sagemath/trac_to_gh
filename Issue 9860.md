@@ -92,7 +92,7 @@ Changing status from new to needs_review.
 archive/issue_comments_097200.json:
 ```json
 {
-    "body": "I got these warnings after applying ncohen's patch to Sage 4.5.3.rc0:\n\n\n```\n/dev/shm/mvngu/sage-4.5.3/devel/sage/doc/en/reference/graphs.rst:36: (WARNING/2)\n Title underline too short.\n\nLibraries of algorithms\n--------------------\n/dev/shm/mvngu/sage-4.5.3/devel/sage/doc/en/reference/graphs.rst:36: (WARNING/2)\n Title underline too short.\n\nLibraries of algorithms\n--------------------\n```\n\n\nThese are fixed in my reviewer patch. The reviewer patch also adds some consistency to how module headings are named, and consistency on how to space headings in the index file graph.rst. Capitalized titles are more difficult to read than a title only whose first letter is capitalized. I have avoided capitalized titles. \n\n\n\nI like ncohen's re-organized table of content for graph theory. Now it's just a matter of someone checking my reviewer patch. If it gets a positive review, then the whole ticket is good to go.",
+    "body": "I got these warnings after applying ncohen's patch to Sage 4.5.3.rc0:\n\n```\n/dev/shm/mvngu/sage-4.5.3/devel/sage/doc/en/reference/graphs.rst:36: (WARNING/2)\n Title underline too short.\n\nLibraries of algorithms\n--------------------\n/dev/shm/mvngu/sage-4.5.3/devel/sage/doc/en/reference/graphs.rst:36: (WARNING/2)\n Title underline too short.\n\nLibraries of algorithms\n--------------------\n```\n\nThese are fixed in my reviewer patch. The reviewer patch also adds some consistency to how module headings are named, and consistency on how to space headings in the index file graph.rst. Capitalized titles are more difficult to read than a title only whose first letter is capitalized. I have avoided capitalized titles. \n\n\n\nI like ncohen's re-organized table of content for graph theory. Now it's just a matter of someone checking my reviewer patch. If it gets a positive review, then the whole ticket is good to go.",
     "created_at": "2010-09-07T09:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9860",
     "type": "issue_comment",
@@ -103,7 +103,6 @@ archive/issue_comments_097200.json:
 
 I got these warnings after applying ncohen's patch to Sage 4.5.3.rc0:
 
-
 ```
 /dev/shm/mvngu/sage-4.5.3/devel/sage/doc/en/reference/graphs.rst:36: (WARNING/2)
  Title underline too short.
@@ -116,7 +115,6 @@ Libraries of algorithms
 Libraries of algorithms
 --------------------
 ```
-
 
 These are fixed in my reviewer patch. The reviewer patch also adds some consistency to how module headings are named, and consistency on how to space headings in the index file graph.rst. Capitalized titles are more difficult to read than a title only whose first letter is capitalized. I have avoided capitalized titles. 
 

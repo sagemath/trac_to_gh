@@ -37,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/92
 archive/issue_comments_000446.json:
 ```json
 {
-    "body": "It works fine now:\n\n```\n\nsage: k = NumberField(x^3 + 2,'a')\nsage: k.complex_embeddings()\n[Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> -1.25992104989487, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 + 1.09112363597172*I, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 - 1.09112363597172*I]\n```\n",
+    "body": "It works fine now:\n\n```\n\nsage: k = NumberField(x^3 + 2,'a')\nsage: k.complex_embeddings()\n[Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> -1.25992104989487, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 + 1.09112363597172*I, Ring morphism:\n  From: Number Field in a with defining polynomial x^3 + 2\n  To:   Complex Field with 53 bits of precision\n  Defn: a |--> 0.629960524947436 - 1.09112363597172*I]\n```",
     "created_at": "2007-01-13T02:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/92",
     "type": "issue_comment",
@@ -63,7 +63,6 @@ sage: k.complex_embeddings()
   To:   Complex Field with 53 bits of precision
   Defn: a |--> 0.629960524947436 - 1.09112363597172*I]
 ```
-
 
 
 

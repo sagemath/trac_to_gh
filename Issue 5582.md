@@ -3,7 +3,7 @@
 archive/issues_005582.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @jbandlow\n\n\n```\n\tsage: a = float(1.0)\n \tsage: QQ(a)\n \tTypeError: Unable to coerce 1.0 (<type 'float'>) to Rational\n```\n\nNote that the following works:\n\n```\n \tsage: a = float(1.0)\n \tsage: QQ(RR(a))\n \t1\n```\n\n\n> Yes, this conversion is missing. It should be easy to implement.\n> \n> - Robert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5582\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @jbandlow\n\n```\n\tsage: a = float(1.0)\n \tsage: QQ(a)\n \tTypeError: Unable to coerce 1.0 (<type 'float'>) to Rational\n```\nNote that the following works:\n\n```\n \tsage: a = float(1.0)\n \tsage: QQ(RR(a))\n \t1\n```\n\n> Yes, this conversion is missing. It should be easy to implement.\n> \n> - Robert\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5582\n\n",
     "created_at": "2009-03-21T20:00:18Z",
     "labels": [
         "component: coercion",
@@ -20,13 +20,11 @@ Assignee: @robertwb
 
 CC:  @jbandlow
 
-
 ```
 	sage: a = float(1.0)
  	sage: QQ(a)
  	TypeError: Unable to coerce 1.0 (<type 'float'>) to Rational
 ```
-
 Note that the following works:
 
 ```
@@ -35,10 +33,10 @@ Note that the following works:
  	1
 ```
 
-
 > Yes, this conversion is missing. It should be easy to implement.
 > 
 > - Robert
+
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/5582
@@ -88,7 +86,7 @@ Applies cleanly to my sage 3.4, solves the problem and has a doctest.  Positive 
 archive/issue_comments_043429.json:
 ```json
 {
-    "body": "This patch causes the following failure for me:\n\n```\nsage -t -long \"devel/sage/sage/rings/rational.pyx\"          \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/rational.pyx\", line 1510:\n    sage: float(1.2)**(1/2)\nExpected:\n    1.0954451150103321\nGot:\n    sqrt(6)/sqrt(5)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes the following failure for me:\n\n```\nsage -t -long \"devel/sage/sage/rings/rational.pyx\"          \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/rational.pyx\", line 1510:\n    sage: float(1.2)**(1/2)\nExpected:\n    1.0954451150103321\nGot:\n    sqrt(6)/sqrt(5)\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T21:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
@@ -110,7 +108,6 @@ Got:
     sqrt(6)/sqrt(5)
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -159,7 +156,7 @@ Looks good to me.  Apply both patches.
 archive/issue_comments_043432.json:
 ```json
 {
-    "body": "These apply with quite some offset, so let's hope for the best:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-float-QQ.patch\npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 65 (offset 4 lines).\nHunk #2 succeeded at 298 (offset 135 lines).\nHunk #3 succeeded at 492 (offset 151 lines).\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-QQfloat2.patch \npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 1816 (offset 191 lines).\n```\n\n\nCheers,\n\nMichael",
+    "body": "These apply with quite some offset, so let's hope for the best:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-float-QQ.patch\npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 65 (offset 4 lines).\nHunk #2 succeeded at 298 (offset 135 lines).\nHunk #3 succeeded at 492 (offset 151 lines).\nmabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-QQfloat2.patch \npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 1816 (offset 191 lines).\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-05-21T01:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
@@ -180,7 +177,6 @@ mabshoff@sage:/scratch/mabshoff/sage-4.0.rc0/devel/sage$ patch -p1 < trac_5582-Q
 patching file sage/rings/rational.pyx
 Hunk #1 succeeded at 1816 (offset 191 lines).
 ```
-
 
 Cheers,
 

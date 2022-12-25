@@ -69,7 +69,7 @@ archive/issue_events_008764.json:
 archive/issue_comments_027118.json:
 ```json
 {
-    "body": "The patch seems to go in the right direction, but gcc 4.3.1 is still unhappy with bern_modp_util.cpp while two other files are fine:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -I/tmp/foo/sage-3.1.alpha1/local//include -I/tmp/foo/sage-3.1.alpha1/local//include/csage -I/tmp/foo/sage-3.1.alpha1/devel//sage/sage/ext -I/tmp/foo/sage-3.1.alpha1/local/include/python2.5 -c sage/rings/bernmm/bern_modp_util.cpp -o build/temp.linux-x86_64-2.5/sage/rings/bernmm/bern_modp_util.o -w -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from sage/rings/bernmm/bern_modp_util.cpp:24:\nsage/rings/bernmm/bern_modp_util.h:32:2: error: #error Oops! Unsigned long is neither 32 nor 64 bits.\nsage/rings/bernmm/bern_modp_util.h:33:2: error: #error You need to update bern_modp_util.h.\nIn file included from sage/rings/bernmm/bern_modp_util.cpp:24:\nsage/rings/bernmm/bern_modp_util.h: In member function \u2018bool bernmm::PrimeTable::get(long int) const\u2019:\nsage/rings/bernmm/bern_modp_util.h:91: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nsage/rings/bernmm/bern_modp_util.h: In member function \u2018void bernmm::PrimeTable::set(long int)\u2019:\nsage/rings/bernmm/bern_modp_util.h:97: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nsage/rings/bernmm/bern_modp_util.cpp: In constructor \u2018bernmm::PrimeTable::PrimeTable(long int)\u2019:\nsage/rings/bernmm/bern_modp_util.cpp:92: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\n\nI am looking into this.",
+    "body": "The patch seems to go in the right direction, but gcc 4.3.1 is still unhappy with bern_modp_util.cpp while two other files are fine:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DUSE_THREADS=1 -I/tmp/foo/sage-3.1.alpha1/local//include -I/tmp/foo/sage-3.1.alpha1/local//include/csage -I/tmp/foo/sage-3.1.alpha1/devel//sage/sage/ext -I/tmp/foo/sage-3.1.alpha1/local/include/python2.5 -c sage/rings/bernmm/bern_modp_util.cpp -o build/temp.linux-x86_64-2.5/sage/rings/bernmm/bern_modp_util.o -w -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from sage/rings/bernmm/bern_modp_util.cpp:24:\nsage/rings/bernmm/bern_modp_util.h:32:2: error: #error Oops! Unsigned long is neither 32 nor 64 bits.\nsage/rings/bernmm/bern_modp_util.h:33:2: error: #error You need to update bern_modp_util.h.\nIn file included from sage/rings/bernmm/bern_modp_util.cpp:24:\nsage/rings/bernmm/bern_modp_util.h: In member function \u2018bool bernmm::PrimeTable::get(long int) const\u2019:\nsage/rings/bernmm/bern_modp_util.h:91: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nsage/rings/bernmm/bern_modp_util.h: In member function \u2018void bernmm::PrimeTable::set(long int)\u2019:\nsage/rings/bernmm/bern_modp_util.h:97: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nsage/rings/bernmm/bern_modp_util.cpp: In constructor \u2018bernmm::PrimeTable::PrimeTable(long int)\u2019:\nsage/rings/bernmm/bern_modp_util.cpp:92: error: \u2018ULONG_BITS\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\nI am looking into this.",
     "created_at": "2008-08-12T16:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3821",
     "type": "issue_comment",
@@ -97,7 +97,6 @@ error: command 'gcc' failed with exit status 1
 sage: There was an error installing modified sage library code.
 ```
 
-
 I am looking into this.
 
 
@@ -107,7 +106,7 @@ I am looking into this.
 archive/issue_comments_027119.json:
 ```json
 {
-    "body": "Moving the climits include before the macro\n\n```\n#if ULONG_MAX == 4294967295U\n#define ULONG_BITS 32\n#elif ULONG_MAX == 18446744073709551615U\n#define ULONG_BITS 64\n#else\n#error Oops! Unsigned long is neither 32 nor 64 bits.\n#error You need to update bern_modp_util.h.\n#endif\n```\n\nin devel/sage/sage/rings/bernmm/bern_modp_util.h fixes the issue for me. Now doctesting the install.\n\nCheers,\n\nMichael",
+    "body": "Moving the climits include before the macro\n\n```\n#if ULONG_MAX == 4294967295U\n#define ULONG_BITS 32\n#elif ULONG_MAX == 18446744073709551615U\n#define ULONG_BITS 64\n#else\n#error Oops! Unsigned long is neither 32 nor 64 bits.\n#error You need to update bern_modp_util.h.\n#endif\n```\nin devel/sage/sage/rings/bernmm/bern_modp_util.h fixes the issue for me. Now doctesting the install.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-12T16:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3821",
     "type": "issue_comment",
@@ -128,7 +127,6 @@ Moving the climits include before the macro
 #error You need to update bern_modp_util.h.
 #endif
 ```
-
 in devel/sage/sage/rings/bernmm/bern_modp_util.h fixes the issue for me. Now doctesting the install.
 
 Cheers,
@@ -160,7 +158,7 @@ Arggh, I'm sorry, I'm an idiot. Of course the #include needs to go before the ma
 archive/issue_comments_027121.json:
 ```json
 {
-    "body": "Hi David,\n\nReplying to [comment:4 dmharvey]:\n> Arggh, I'm sorry, I'm an idiot. Of course the #include needs to go before the macro.\n\n:) - I do the same thing on a pretty regular basis. Do you want to update the patch or should I post a follow up patch?\n\nCheers,\n\nMichael",
+    "body": "Hi David,\n\nReplying to [comment:4 dmharvey]:\n> Arggh, I'm sorry, I'm an idiot. Of course the #include needs to go before the macro.\n\n\n:) - I do the same thing on a pretty regular basis. Do you want to update the patch or should I post a follow up patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-12T17:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3821",
     "type": "issue_comment",
@@ -173,6 +171,7 @@ Hi David,
 
 Replying to [comment:4 dmharvey]:
 > Arggh, I'm sorry, I'm an idiot. Of course the #include needs to go before the macro.
+
 
 :) - I do the same thing on a pretty regular basis. Do you want to update the patch or should I post a follow up patch?
 

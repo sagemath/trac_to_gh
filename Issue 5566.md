@@ -3,7 +3,7 @@
 archive/issues_005566.json:
 ```json
 {
-    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen @malb\n\nThis ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\n```\n\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nIdeal (0, 0) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: G=J.gens()\nsage: P=Permutation([1, 4, 3, 2])\nsage: G[2]\nx2^2 - x1^2\nsage: G[2]^P\nx4^2 - x1^2\nsage: G.__contains__(G[2]^P)\nFalse\n```\n\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [(p^P).reduce(J) for p in G]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in G]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nNote that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\nIdeal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gr\u00f6bner basis:\n\n```\nsage: J.reduce(J2)\nIdeal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nProbably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.\nAlso, it may be that there should be no coercion between X and Y in the above situation.\n\nTherefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @mwhansen @malb\n\nThis ticket is related with [#5453], but the patch should apply to a clean `sage-3.4`.\n\n**Symmetric Ideals** were introduced by [Aschenbrenner and Hillar](http://de.arxiv.org/abs/math/0502078/), meaning \"ideals in polynomial rings with countably many variables that are set-wise invariant under all variable permutations\"; it was shown that they are finitely generated. \n\nLater on, Aschenbrenner and Hillar also presented a [Buchberger algorithm](http://de.arxiv.org/abs/0801.4439/) for Symmetric Ideals. \n\nMy aim is to implement this into Sage. The patch provides classes for the Symmetric Polynomial Rings, their elements and their ideals. The methods implement basic polynomial arithmetic, the permutation action, the *Symmetric Cancellation Order* (a notion that is central in the work of Aschenbrenner and Hillar), symmetric reduction, and the computation of Gr\u00f6bner bases.\n\nHere are some examples showing the main features\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\n```\n\nNow, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.\n\nWe can do polynomial arithmetic in X, and we can create ideals in the usual way:\n\n```\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\n```\n\nNow, we can compute a Gr\u00f6bner basis; the default monomial order is lexicographic (see below).\n\n```\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nWe can do ideal membership test by computing normal forms (symmetric reduction):\n\n```\nsage: I.reduce(J)\nIdeal (0, 0) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nNote that J is not point-wise symmetric. E.g., we have\n\n```\nsage: G=J.gens()\nsage: P=Permutation([1, 4, 3, 2])\nsage: G[2]\nx2^2 - x1^2\nsage: G[2]^P\nx4^2 - x1^2\nsage: G.__contains__(G[2]^P)\nFalse\n```\n\nBut it is set-wise symmetric, e.g.:\n\n```\nsage: [(p^P).reduce(J) for p in G]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\nAs usual, it is a special feature of Gr\u00f6bner bases that they produce unique normal forms. I is not a Gr\u00f6bner basis, and thus ideal membership test wouldn't work:\n\n```\nsage: [p.reduce(I) for p in G]\n\n[x1^4 + x1^3,\n x2*x1^2 - x1^3,\n x2^2 - x1^2,\n y1*x1^3 + y1*x1^2,\n y1*x2 + y1*x1^2,\n y1^2 + x1^2,\n y2*x1 + y1*x1^2]\n```\n\nNote that various monomial orders are supported: lex (default), deglex, and degrevlex. \n\nNote that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gr\u00f6bner basis depends on the ordering:\n\n```\nsage: Y.<x,y> = SymmetricPolynomialRing(QQ,order='degrevlex')\nsage: I2=Y*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J2=I2.groebner_basis()\nsage: J2\nIdeal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nNote that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gr\u00f6bner basis:\n\n```\nsage: J.reduce(J2)\nIdeal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field\n```\n\nIn any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).\n\nProbably the doc tests should be improved, and I think it would also be nice to overload the `__pow__` and `__mul__` methods for Symmetric Ideals, since the default methods do not give the correct result: We should have `(X*(x[1]))^2 == X*(x[1]^2,x[1]*x[2])`.\nAlso, it may be that there should be no coercion between X and Y in the above situation.\n\nTherefore I am uncertain whether it is 'needs review' or 'needs work'. I think I leave it as 'with patch'...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5566\n\n",
     "created_at": "2009-03-19T15:25:02Z",
     "labels": [
         "component: commutative algebra"
@@ -33,7 +33,6 @@ Here are some examples showing the main features
 sage: X.<x,y> = SymmetricPolynomialRing(QQ)
 ```
 
-
 Now, x and y are generators of X, meaning that we have two infinite sequences of variables, one obtained by `x[n]` and the other by `y[m]` for integers m, n.
 
 We can do polynomial arithmetic in X, and we can create ideals in the usual way:
@@ -41,7 +40,6 @@ We can do polynomial arithmetic in X, and we can create ideals in the usual way:
 ```
 sage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])
 ```
-
 
 Now, we can compute a Gröbner basis; the default monomial order is lexicographic (see below).
 
@@ -51,14 +49,12 @@ sage: J
 Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field
 ```
 
-
 We can do ideal membership test by computing normal forms (symmetric reduction):
 
 ```
 sage: I.reduce(J)
 Ideal (0, 0) of Symmetric polynomial ring in x, y over Rational Field
 ```
-
 
 Note that J is not point-wise symmetric. E.g., we have
 
@@ -73,14 +69,12 @@ sage: G.__contains__(G[2]^P)
 False
 ```
 
-
 But it is set-wise symmetric, e.g.:
 
 ```
 sage: [(p^P).reduce(J) for p in G]
 [0, 0, 0, 0, 0, 0, 0]
 ```
-
 
 As usual, it is a special feature of Gröbner bases that they produce unique normal forms. I is not a Gröbner basis, and thus ideal membership test wouldn't work:
 
@@ -96,7 +90,6 @@ sage: [p.reduce(I) for p in G]
  y2*x1 + y1*x1^2]
 ```
 
-
 Note that various monomial orders are supported: lex (default), deglex, and degrevlex. 
 
 Note that Aschenbrenner and Hillar restrict their attention to the lexicographic order, and it is not entirely clear whether the Buchberger algorithm would terminate in the other orders, too. But here, it does. As usual, the Gröbner basis depends on the ordering:
@@ -109,14 +102,12 @@ sage: J2
 Ideal (y3*x1 - y2*x1, x2^2 - x1^2, y1*x2 - y2*x1, y1^2 + x1^2, x2*x1^2 - x1^3, y1*x1^2 + y2*x1, y2*x1^2 + y2*x1, y2*x2*x1 + y2*x1, y2*y1*x1 + x1^3, x1^4 + x1^3) of Symmetric polynomial ring in x, y over Rational Field
 ```
 
-
 Note that we assume an automatic (name-preserving) conversion between X and Y. Hence, we can do the following and see that J2 is not a *lexicographic* Gröbner basis:
 
 ```
 sage: J.reduce(J2)
 Ideal (0, 0, 0, y2*x1 + y1*x1^2, y2*x1 + y1*x1^2, 0, y2*x1 + y1*x1^2) of Symmetric polynomial ring in x, y over Rational Field
 ```
-
 
 In any order, we insist to have `X.gen(i)[m]<X.gen(j)[n]` if and only if i<j or (i==j and m<n).
 
@@ -190,7 +181,7 @@ Sorry, please disregard the second attachment (SymmetricIdeals2.patch). It was a
 archive/issue_comments_043251.json:
 ```json
 {
-    "body": "I think that my patch is already useful for computing symmetric Gr\u00f6bner bases. However, I think I need to work on one corner case: Variable shift zero.\n\nOne problem is: The argument of a permutation must be positive. Hence,\n\n```\nsage: X.<x> = SymmetricPolynomialRing(QQ)\nsage: P=Permutation([2,1])\nsage: x[0]^P\nTraceback (most recent call last):\n...\nTypeError: i (= 0) must be between 1 and 2\n```\n\n\nSince I want to have a permutation action, it follows that I must disallow variable shift zero. This is what I tried in the patch SymmetricIdeals2.patch, which yields an error when calling x[0].\n\nHowever, with the second patch, one still has \n\n```\nsage: X.<x> = SymmetricPolynomialRing(QQ)\nsage: R=PolynomialRing(ZZ,['x0'])\nsage: X('x0')\nx0\nsage: X(R('x0'))\nx0\n```\n\n\nI see two ways to proceed:\n1. Allow x[0], but make it *inert* against permutations, i.e., x[0]**P==x[0] for any permutation P. This also means that (x[1]).reduce([x[0]]) is x[1], not 0.\n2. Strictly forbid x[0]. Then the coercion would be slightly slower, due to additional tests.\n\nI prefer option 1, but if you care you may try to convince me of 2.",
+    "body": "I think that my patch is already useful for computing symmetric Gr\u00f6bner bases. However, I think I need to work on one corner case: Variable shift zero.\n\nOne problem is: The argument of a permutation must be positive. Hence,\n\n```\nsage: X.<x> = SymmetricPolynomialRing(QQ)\nsage: P=Permutation([2,1])\nsage: x[0]^P\nTraceback (most recent call last):\n...\nTypeError: i (= 0) must be between 1 and 2\n```\n\nSince I want to have a permutation action, it follows that I must disallow variable shift zero. This is what I tried in the patch SymmetricIdeals2.patch, which yields an error when calling x[0].\n\nHowever, with the second patch, one still has \n\n```\nsage: X.<x> = SymmetricPolynomialRing(QQ)\nsage: R=PolynomialRing(ZZ,['x0'])\nsage: X('x0')\nx0\nsage: X(R('x0'))\nx0\n```\n\nI see two ways to proceed:\n1. Allow x[0], but make it *inert* against permutations, i.e., x[0]**P==x[0] for any permutation P. This also means that (x[1]).reduce([x[0]]) is x[1], not 0.\n2. Strictly forbid x[0]. Then the coercion would be slightly slower, due to additional tests.\n\nI prefer option 1, but if you care you may try to convince me of 2.",
     "created_at": "2009-03-21T08:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -212,7 +203,6 @@ Traceback (most recent call last):
 TypeError: i (= 0) must be between 1 and 2
 ```
 
-
 Since I want to have a permutation action, it follows that I must disallow variable shift zero. This is what I tried in the patch SymmetricIdeals2.patch, which yields an error when calling x[0].
 
 However, with the second patch, one still has 
@@ -225,7 +215,6 @@ x0
 sage: X(R('x0'))
 x0
 ```
-
 
 I see two ways to proceed:
 1. Allow x[0], but make it *inert* against permutations, i.e., x[0]**P==x[0] for any permutation P. This also means that (x[1]).reduce([x[0]]) is x[1], not 0.
@@ -240,7 +229,7 @@ I prefer option 1, but if you care you may try to convince me of 2.
 archive/issue_comments_043252.json:
 ```json
 {
-    "body": "I think that now my implementation is in a shape that allows for applications. In fact, i already computed a Symmetric Groebner Basis that should provide a topological invariant for knots and links.\n\nAs i announced above, i made variables of index zero *inert* against permutations / permutation group elements. So, we have\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\nsage: P = SymmetricGroup(5).random_element()\nsage: x[0]^P\nx0\n```\n\n\nCompared with my first implementation, reduction is now a lot faster. This is since i now use the usual libsingular-reduction as much as possible. \n\nAnother trick is that i try to find a compromise between the requirement of small parents versus the feature of having a common parent for all underlying finite polynomials: While computing with symmetric ideals, in some cases a common parent is found for the underlying polynomials of all generators of the ideal.\n\nExample: if we start with an ideal \n\n```\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\n```\n\nthen we will have\n\n```\nsage: [p._p.parent() for p in I.gens()] # start with different rings\n\n[Multivariate Polynomial Ring in x1, y1 over Rational Field,\n Multivariate Polynomial Ring in x50, y1000 over Rational Field]\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\nsage: [p._p.parent() for p in J.gens()] # end with common rings\n\n[Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field,\n Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field,\n Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field]\n```\n\n\nIn that way, we make arithmetic fast (<= common ring) and slim at the same time.",
+    "body": "I think that now my implementation is in a shape that allows for applications. In fact, i already computed a Symmetric Groebner Basis that should provide a topological invariant for knots and links.\n\nAs i announced above, i made variables of index zero *inert* against permutations / permutation group elements. So, we have\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\nsage: P = SymmetricGroup(5).random_element()\nsage: x[0]^P\nx0\n```\n\nCompared with my first implementation, reduction is now a lot faster. This is since i now use the usual libsingular-reduction as much as possible. \n\nAnother trick is that i try to find a compromise between the requirement of small parents versus the feature of having a common parent for all underlying finite polynomials: While computing with symmetric ideals, in some cases a common parent is found for the underlying polynomials of all generators of the ideal.\n\nExample: if we start with an ideal \n\n```\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\n```\nthen we will have\n\n```\nsage: [p._p.parent() for p in I.gens()] # start with different rings\n\n[Multivariate Polynomial Ring in x1, y1 over Rational Field,\n Multivariate Polynomial Ring in x50, y1000 over Rational Field]\nsage: J=I.groebner_basis()\nsage: J\nIdeal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\nsage: [p._p.parent() for p in J.gens()] # end with common rings\n\n[Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field,\n Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field,\n Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field]\n```\n\nIn that way, we make arithmetic fast (<= common ring) and slim at the same time.",
     "created_at": "2009-03-27T10:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -260,7 +249,6 @@ sage: x[0]^P
 x0
 ```
 
-
 Compared with my first implementation, reduction is now a lot faster. This is since i now use the usual libsingular-reduction as much as possible. 
 
 Another trick is that i try to find a compromise between the requirement of small parents versus the feature of having a common parent for all underlying finite polynomials: While computing with symmetric ideals, in some cases a common parent is found for the underlying polynomials of all generators of the ideal.
@@ -270,7 +258,6 @@ Example: if we start with an ideal
 ```
 sage: I = X*(x[1]*y[1],x[50]*y[1000])
 ```
-
 then we will have
 
 ```
@@ -288,7 +275,6 @@ sage: [p._p.parent() for p in J.gens()] # end with common rings
  Multivariate Polynomial Ring in x51, x50, x1, y1000, y1 over Rational Field]
 ```
 
-
 In that way, we make arithmetic fast (<= common ring) and slim at the same time.
 
 
@@ -298,7 +284,7 @@ In that way, we make arithmetic fast (<= common ring) and slim at the same time.
 archive/issue_comments_043253.json:
 ```json
 {
-    "body": "Replying to [comment:6 SimonKing]:\n> Example: if we start with an ideal \n> {{{\n> sage: I = X*(x[1]*y[1],x[50]*y[1000])\n> sage: J=I.groebner_basis()\n> sage: J\n> Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\n> }}}\n\nARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry",
+    "body": "Replying to [comment:6 SimonKing]:\n> Example: if we start with an ideal \n> \n> ```\n> sage: I = X*(x[1]*y[1],x[50]*y[1000])\n> sage: J=I.groebner_basis()\n> sage: J\n> Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\n> ```\n\n\nARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry",
     "created_at": "2009-03-27T16:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -309,12 +295,14 @@ archive/issue_comments_043253.json:
 
 Replying to [comment:6 SimonKing]:
 > Example: if we start with an ideal 
-> {{{
+> 
+> ```
 > sage: I = X*(x[1]*y[1],x[50]*y[1000])
 > sage: J=I.groebner_basis()
 > sage: J
 > Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field
-> }}}
+> ```
+
 
 ARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry
 
@@ -325,7 +313,7 @@ ARRGH! This result is complete nonsense. I need to find out what happened. Needs
 archive/issue_comments_043254.json:
 ```json
 {
-    "body": "Replying to [comment:7 SimonKing]:\n> Replying to [comment:6 SimonKing]:\n> > Example: if we start with an ideal \n> > {{{\n> > sage: I = X*(x[1]*y[1],x[50]*y[1000])\n> > sage: J=I.groebner_basis()\n> > sage: J\n> > Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\n> > }}}\n> \n> ARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry\n\nGot it! The new version of ``SymmetricIdeals.patch`` should still apply to sage-3.4 (tell me if I messed it up), and fixes the bug.\n\nLet N be the maximal variable index occuring in the generators of a symmetric ideal I. According to Aschenbrenner, one has to apply all elements of Sym(N) to the generators, form all S-polynomials, interreduce, then apply Sym(N+1), and so on, until it stabilizes.\n\nSym(N) can be rather huge, so i tried to be clever: Apply the *generators* of Sym(N) to the generators of J, interreduce, and repeat until it stabilizes; i thought this is the same as applying *all* elements of Sym(N), but i was mistaken.\n\nNow i proceed more carefully. I introduced a method 'squeezed', that makes the variable indices as small as possible, without to change the ideal. So, the N above is decreased. Next i apply *all* elements of Sym(N) to the generators of `I.squeezed()`. Compute the S-polynomials and interreduce (which i do using libsingular's groebner method). \n\nThe result takes care of symmetry out to level N. In order to make it symmetric out to N+1, it then suffices to apply coset representatives of Sym(N+1)/Sym(N), namely (1,N+1), (2,N+1), ..., (N,N+1). The rest is, again, computation of S-polynomials and interreduction, and iteration. \n\nDo you agree that this is a correct improvement of the algorithm of Aschenbrenner and Hillar?\n\nAnyway. \nThe critical example from above is now\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\nsage: [p._p.parent() for p in I.gens()] # start with different rings\n\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1000, x50 over Rational Field]\nsage: sage: J=I.groebner_basis()\nsage: sage: J\nIdeal (y1*x1, y1*x2, y2*x1) of Symmetric polynomial ring in x, y over Rational Field\nsage: sage: [p._p.parent() for p in J.gens()] # end with common rings\n\n[Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field,\n Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field,\n Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field]\n```\n\n\nAnd this is indeed the symmetric Groebner basis.",
+    "body": "Replying to [comment:7 SimonKing]:\n> Replying to [comment:6 SimonKing]:\n> > Example: if we start with an ideal \n> > \n> > ```\n> > sage: I = X*(x[1]*y[1],x[50]*y[1000])\n> > sage: J=I.groebner_basis()\n> > sage: J\n> > Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field\n> > ```\n\n> \n> ARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry\n\n\nGot it! The new version of ``SymmetricIdeals.patch`` should still apply to sage-3.4 (tell me if I messed it up), and fixes the bug.\n\nLet N be the maximal variable index occuring in the generators of a symmetric ideal I. According to Aschenbrenner, one has to apply all elements of Sym(N) to the generators, form all S-polynomials, interreduce, then apply Sym(N+1), and so on, until it stabilizes.\n\nSym(N) can be rather huge, so i tried to be clever: Apply the *generators* of Sym(N) to the generators of J, interreduce, and repeat until it stabilizes; i thought this is the same as applying *all* elements of Sym(N), but i was mistaken.\n\nNow i proceed more carefully. I introduced a method 'squeezed', that makes the variable indices as small as possible, without to change the ideal. So, the N above is decreased. Next i apply *all* elements of Sym(N) to the generators of `I.squeezed()`. Compute the S-polynomials and interreduce (which i do using libsingular's groebner method). \n\nThe result takes care of symmetry out to level N. In order to make it symmetric out to N+1, it then suffices to apply coset representatives of Sym(N+1)/Sym(N), namely (1,N+1), (2,N+1), ..., (N,N+1). The rest is, again, computation of S-polynomials and interreduction, and iteration. \n\nDo you agree that this is a correct improvement of the algorithm of Aschenbrenner and Hillar?\n\nAnyway. \nThe critical example from above is now\n\n```\nsage: X.<x,y> = SymmetricPolynomialRing(QQ)\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\nsage: [p._p.parent() for p in I.gens()] # start with different rings\n\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1000, x50 over Rational Field]\nsage: sage: J=I.groebner_basis()\nsage: sage: J\nIdeal (y1*x1, y1*x2, y2*x1) of Symmetric polynomial ring in x, y over Rational Field\nsage: sage: [p._p.parent() for p in J.gens()] # end with common rings\n\n[Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field,\n Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field,\n Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field]\n```\n\nAnd this is indeed the symmetric Groebner basis.",
     "created_at": "2009-03-27T19:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -337,14 +325,17 @@ archive/issue_comments_043254.json:
 Replying to [comment:7 SimonKing]:
 > Replying to [comment:6 SimonKing]:
 > > Example: if we start with an ideal 
-> > {{{
+> > 
+> > ```
 > > sage: I = X*(x[1]*y[1],x[50]*y[1000])
 > > sage: J=I.groebner_basis()
 > > sage: J
 > > Ideal (x1*y1, x50*y1000, x51*y1) of Symmetric polynomial ring in y, x over Rational Field
-> > }}}
+> > ```
+
 > 
 > ARRGH! This result is complete nonsense. I need to find out what happened. Needs work. Sorry
+
 
 Got it! The new version of ``SymmetricIdeals.patch`` should still apply to sage-3.4 (tell me if I messed it up), and fixes the bug.
 
@@ -378,7 +369,6 @@ sage: sage: [p._p.parent() for p in J.gens()] # end with common rings
  Multivariate Polynomial Ring in y2, y1, x2, x1 over Rational Field]
 ```
 
-
 And this is indeed the symmetric Groebner basis.
 
 
@@ -388,7 +378,7 @@ And this is indeed the symmetric Groebner basis.
 archive/issue_comments_043255.json:
 ```json
 {
-    "body": "Herewith i try to unify the dense and the sparse approach towards infinite polynomial rings of ticket #5453. Also, when computing symmetric Groebner bases, i strictly do as suggested by Aschenbrenner and Hillar, without the attempt to be clever.\n\nHere i repeat the main examples from above, with the new syntax, and partially with corrected results:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\nsage: I.reduce(J)\nSymmetric Ideal (0, 0) of Infinite polynomial ring in x, y over Rational Field\n```\n\n\nNote that indeed the result is a symmetric Gr\u00f6bner basis (which was not the case in the original example that i gave):\n\n```\nsage: for P in Permutations(4):\n....:     print [(p^P).reduce(J) for p in J.gens()]\n....:\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\n\nThe same example in 'deglex' or 'degrevlex' works, too, but it takes longer.\n\nNote that the implementation is now *dense*:\n\n```\nsage: x[7]; X.polynomial_ring()\nsage: x[7]; X.polynomial_ring()\nx7\nMultivariate Polynomial Ring in y7, y6, y5, y4, y3, y2, y1, y0, x7, x6, x5, x4, x3, x2, x1, x0 over Rational Field\n```\n\n\nI just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. \n\nIt really sucks that uni- and multivariate polynomials have a different interface!\n\nContinuing with the examples:\nIf high variable indices occur, the dense implementation is not good. But the following works in the sparse implementation.\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: P = SymmetricGroup(5).random_element()\nsage: x[0]^P\nx0\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\nsage: [p._p.parent() for p in I.gens()]\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1000, x50 over Rational Field]\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (y1*x1, y1*x2, y2*x1) of Infinite polynomial ring in x, y over Rational Field\nsage: [p._p.parent() for p in J.gens()]\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1, x2 over Rational Field,\n Multivariate Polynomial Ring in y2, x1 over Rational Field]\n```\n\n\nOK. \n\nSummary: It is a common interface for both implementations, but i need to work on the reduce method.",
+    "body": "Herewith i try to unify the dense and the sparse approach towards infinite polynomial rings of ticket #5453. Also, when computing symmetric Groebner bases, i strictly do as suggested by Aschenbrenner and Hillar, without the attempt to be clever.\n\nHere i repeat the main examples from above, with the new syntax, and partially with corrected results:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\nsage: I.reduce(J)\nSymmetric Ideal (0, 0) of Infinite polynomial ring in x, y over Rational Field\n```\n\nNote that indeed the result is a symmetric Gr\u00f6bner basis (which was not the case in the original example that i gave):\n\n```\nsage: for P in Permutations(4):\n....:     print [(p^P).reduce(J) for p in J.gens()]\n....:\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n[0, 0, 0, 0, 0, 0, 0]\n```\n\nThe same example in 'deglex' or 'degrevlex' works, too, but it takes longer.\n\nNote that the implementation is now *dense*:\n\n```\nsage: x[7]; X.polynomial_ring()\nsage: x[7]; X.polynomial_ring()\nx7\nMultivariate Polynomial Ring in y7, y6, y5, y4, y3, y2, y1, y0, x7, x6, x5, x4, x3, x2, x1, x0 over Rational Field\n```\n\nI just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. \n\nIt really sucks that uni- and multivariate polynomials have a different interface!\n\nContinuing with the examples:\nIf high variable indices occur, the dense implementation is not good. But the following works in the sparse implementation.\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: P = SymmetricGroup(5).random_element()\nsage: x[0]^P\nx0\nsage: I = X*(x[1]*y[1],x[50]*y[1000])\nsage: [p._p.parent() for p in I.gens()]\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1000, x50 over Rational Field]\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (y1*x1, y1*x2, y2*x1) of Infinite polynomial ring in x, y over Rational Field\nsage: [p._p.parent() for p in J.gens()]\n[Multivariate Polynomial Ring in y1, x1 over Rational Field,\n Multivariate Polynomial Ring in y1, x2 over Rational Field,\n Multivariate Polynomial Ring in y2, x1 over Rational Field]\n```\n\nOK. \n\nSummary: It is a common interface for both implementations, but i need to work on the reduce method.",
     "created_at": "2009-03-30T11:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -409,7 +399,6 @@ Symmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1
 sage: I.reduce(J)
 Symmetric Ideal (0, 0) of Infinite polynomial ring in x, y over Rational Field
 ```
-
 
 Note that indeed the result is a symmetric Gröbner basis (which was not the case in the original example that i gave):
 
@@ -443,7 +432,6 @@ sage: for P in Permutations(4):
 [0, 0, 0, 0, 0, 0, 0]
 ```
 
-
 The same example in 'deglex' or 'degrevlex' works, too, but it takes longer.
 
 Note that the implementation is now *dense*:
@@ -454,7 +442,6 @@ sage: x[7]; X.polynomial_ring()
 x7
 Multivariate Polynomial Ring in y7, y6, y5, y4, y3, y2, y1, y0, x7, x6, x5, x4, x3, x2, x1, x0 over Rational Field
 ```
-
 
 I just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. 
 
@@ -480,7 +467,6 @@ sage: [p._p.parent() for p in J.gens()]
  Multivariate Polynomial Ring in y2, x1 over Rational Field]
 ```
 
-
 OK. 
 
 Summary: It is a common interface for both implementations, but i need to work on the reduce method.
@@ -492,7 +478,7 @@ Summary: It is a common interface for both implementations, but i need to work o
 archive/issue_comments_043256.json:
 ```json
 {
-    "body": "Replying to [comment:11 SimonKing]:\n...\n> sage: X.<x,y> = InfinitePolynomialRing(QQ)\n> sage: I=X*(x[1]<sup>2+y[2]</sup>2,x[1]*x[2]*y[3]+x[1]*y[4])\n> sage: J=I.groebner_basis(); J\n> Symmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\n...\n> I just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. \n\nIt is fixed in reduce_bugfix.patch. Now, we have in the sparse implementation:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\n```\n\nwhich coincides with the result in the dense implementation.\n\nSo, hope it is ready for review...",
+    "body": "Replying to [comment:11 SimonKing]:\n...\n> sage: X.<x,y> = InfinitePolynomialRing(QQ)\n> sage: I=X*(x[1]<sup>2+y[2]</sup>2,x[1]*x[2]*y[3]+x[1]*y[4])\n> sage: J=I.groebner_basis(); J\n> Symmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\n\n...\n> I just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. \n\n\nIt is fixed in reduce_bugfix.patch. Now, we have in the sparse implementation:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])\nsage: J=I.groebner_basis(); J\nSymmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field\n```\nwhich coincides with the result in the dense implementation.\n\nSo, hope it is ready for review...",
     "created_at": "2009-03-30T12:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -507,8 +493,10 @@ Replying to [comment:11 SimonKing]:
 > sage: I=X*(x[1]<sup>2+y[2]</sup>2,x[1]*x[2]*y[3]+x[1]*y[4])
 > sage: J=I.groebner_basis(); J
 > Symmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field
+
 ...
 > I just stumbled over another error: When trying to compute this example in the sparse implementation, it fails, since at some place a univariate polynomial occurs, which has no reduce method. 
+
 
 It is fixed in reduce_bugfix.patch. Now, we have in the sparse implementation:
 
@@ -518,7 +506,6 @@ sage: I=X*(x[1]^2+y[2]^2,x[1]*x[2]*y[3]+x[1]*y[4])
 sage: J=I.groebner_basis(); J
 Symmetric Ideal (x1^4 + x1^3, x2*x1^2 - x1^3, x2^2 - x1^2, y1*x1^3 + y1*x1^2, y1*x2 + y1*x1^2, y1^2 + x1^2, y2*x1 + y1*x1^2) of Infinite polynomial ring in x, y over Rational Field
 ```
-
 which coincides with the result in the dense implementation.
 
 So, hope it is ready for review...
@@ -548,7 +535,7 @@ Hi Simon, quick question: Why does `groebner_basis()` return an ideal instead of
 archive/issue_comments_043258.json:
 ```json
 {
-    "body": "Hi Martin,\n\nReplying to [comment:14 malb]:\n> Hi Simon, quick question: Why does `groebner_basis()` return an ideal instead of a `Sequence`? Sage's default is to return a `Sequence`.\n\nVery easy answer: I was not aware that it is the default.\n\nIn the last two weeks I tried various improvements (performance-wise). Currently I am more or less in vacancy. If I'll be back at work, my plan is to change groebner so that it returns `Sequence`s, to update the doc tests, and to post the most recent version perhaps end of next week. And I will also not forget to create a ticket about `GroebnerStrategy` for libsingular.",
+    "body": "Hi Martin,\n\nReplying to [comment:14 malb]:\n> Hi Simon, quick question: Why does `groebner_basis()` return an ideal instead of a `Sequence`? Sage's default is to return a `Sequence`.\n\n\nVery easy answer: I was not aware that it is the default.\n\nIn the last two weeks I tried various improvements (performance-wise). Currently I am more or less in vacancy. If I'll be back at work, my plan is to change groebner so that it returns `Sequence`s, to update the doc tests, and to post the most recent version perhaps end of next week. And I will also not forget to create a ticket about `GroebnerStrategy` for libsingular.",
     "created_at": "2009-04-12T14:24:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -561,6 +548,7 @@ Hi Martin,
 
 Replying to [comment:14 malb]:
 > Hi Simon, quick question: Why does `groebner_basis()` return an ideal instead of a `Sequence`? Sage's default is to return a `Sequence`.
+
 
 Very easy answer: I was not aware that it is the default.
 
@@ -614,7 +602,7 @@ Hi Simon,
 archive/issue_comments_043261.json:
 ```json
 {
-    "body": "Replying to [comment:18 malb]:\n> Hi Simon,\n>  * I've deleted the redundant attachments, (you need special rights to do that)\n\nWhy hasn't the owner all rights for his/her tickets?\n\n>  * Can you confirm that Mike is happy with the infinite polynomial ring interface?\nI can only hope (I haven't heard of Mike for a long time).\n\nAt least I would expect that he likes it, because it is his original terminology ('InfinitePolynomialRing', not 'SymmetricPolynomialRing')... \n\nBtw., I would insist on the name 'SymmetricIdeal' and 'SymmetricReduction' since this is the terminology of Aschenbrenner and Hillar.\n\n>  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.\nOk, but I think I wouldn't rewrite the code for that reason...",
+    "body": "Replying to [comment:18 malb]:\n> Hi Simon,\n> * I've deleted the redundant attachments, (you need special rights to do that)\n\n\nWhy hasn't the owner all rights for his/her tickets?\n\n>  * Can you confirm that Mike is happy with the infinite polynomial ring interface?\n \nI can only hope (I haven't heard of Mike for a long time).\n\nAt least I would expect that he likes it, because it is his original terminology ('InfinitePolynomialRing', not 'SymmetricPolynomialRing')... \n\nBtw., I would insist on the name 'SymmetricIdeal' and 'SymmetricReduction' since this is the terminology of Aschenbrenner and Hillar.\n\n>  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.\n \nOk, but I think I wouldn't rewrite the code for that reason...",
     "created_at": "2009-04-16T14:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -625,11 +613,13 @@ archive/issue_comments_043261.json:
 
 Replying to [comment:18 malb]:
 > Hi Simon,
->  * I've deleted the redundant attachments, (you need special rights to do that)
+> * I've deleted the redundant attachments, (you need special rights to do that)
+
 
 Why hasn't the owner all rights for his/her tickets?
 
 >  * Can you confirm that Mike is happy with the infinite polynomial ring interface?
+ 
 I can only hope (I haven't heard of Mike for a long time).
 
 At least I would expect that he likes it, because it is his original terminology ('InfinitePolynomialRing', not 'SymmetricPolynomialRing')... 
@@ -637,6 +627,7 @@ At least I would expect that he likes it, because it is his original terminology
 Btw., I would insist on the name 'SymmetricIdeal' and 'SymmetricReduction' since this is the terminology of Aschenbrenner and Hillar.
 
 >  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.
+ 
 Ok, but I think I wouldn't rewrite the code for that reason...
 
 
@@ -698,7 +689,7 @@ I am sorry to do mathematics here. With that trick, I can do serious examples (2
 archive/issue_comments_043263.json:
 ```json
 {
-    "body": "Replying to [comment:19 SimonKing]:\n> Why hasn't the owner all rights for his/her tickets?\n\nI don't know, I didn't design trac. I guess our workflow is unusal.\n \n> >  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.\n> Ok, but I think I wouldn't rewrite the code for that reason...\n\nIt was only a suggestion.",
+    "body": "Replying to [comment:19 SimonKing]:\n> Why hasn't the owner all rights for his/her tickets?\n\n\nI don't know, I didn't design trac. I guess our workflow is unusal.\n \n> >  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.\n \n> Ok, but I think I wouldn't rewrite the code for that reason...\n\nIt was only a suggestion.",
     "created_at": "2009-04-16T15:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -710,9 +701,11 @@ archive/issue_comments_043263.json:
 Replying to [comment:19 SimonKing]:
 > Why hasn't the owner all rights for his/her tickets?
 
+
 I don't know, I didn't design trac. I guess our workflow is unusal.
  
 > >  * btw. you can simply write (`foo in bar` instead of `bar.__contains__(foo)`.
+ 
 > Ok, but I think I wouldn't rewrite the code for that reason...
 
 It was only a suggestion.
@@ -724,7 +717,7 @@ It was only a suggestion.
 archive/issue_comments_043264.json:
 ```json
 {
-    "body": "Replying to [comment:21 malb]:\n> Replying to [comment:19 SimonKing]:\n> > Why hasn't the owner all rights for his/her tickets?\n> \n> I don't know, I didn't design trac. I guess our workflow is unusal.\n\nThe permission model does not allow it since it isn't that fine grained.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:21 malb]:\n> Replying to [comment:19 SimonKing]:\n> > Why hasn't the owner all rights for his/her tickets?\n\n> \n> I don't know, I didn't design trac. I guess our workflow is unusal.\n\n\nThe permission model does not allow it since it isn't that fine grained.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T21:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -736,8 +729,10 @@ archive/issue_comments_043264.json:
 Replying to [comment:21 malb]:
 > Replying to [comment:19 SimonKing]:
 > > Why hasn't the owner all rights for his/her tickets?
+
 > 
 > I don't know, I didn't design trac. I guess our workflow is unusal.
+
 
 The permission model does not allow it since it isn't that fine grained.
 
@@ -782,7 +777,7 @@ archive/issue_comments_043265.json:
 archive/issue_comments_043266.json:
 ```json
 {
-    "body": "Hi Simon,\n\nthe missing 32 bit has values are\n\n```\nsage -t -long \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 133:\n    sage: hash(a)\n                      \nExpected nothing\nGot:\n    233743571\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 136:\n    sage: hash(a._p)\n                      \nExpected nothing\nGot:\n    233743571\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Hi Simon,\n\nthe missing 32 bit has values are\n\n```\nsage -t -long \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 133:\n    sage: hash(a)\n                      \nExpected nothing\nGot:\n    233743571\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 136:\n    sage: hash(a._p)\n                      \nExpected nothing\nGot:\n    233743571\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-17T12:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -813,7 +808,6 @@ Got:
     233743571
 **********************************************************************
 ```
-
 
 Cheers,
 
@@ -848,7 +842,7 @@ Michael
 archive/issue_comments_043268.json:
 ```json
 {
-    "body": "Hi Martin,\n\nReplying to [comment:23 malb]:\n>  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`\n\nCould you elaborate? I don't understand what that means.\n\n>  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?\n\nYou mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.\n\nBut now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n\n>  * most of the code is beautifully documented! Well done.\n\nThank you!\n\n>  * you should add an `AUTHORS` block and add your name to each file\n\nSo, the copyright information is not enough?\n\nConncerning copyright: Although most of the code is original, I would like to include mhanson in the copyright, because his code was the starting point for me, and his 'dense' approach towards infinite polynomial rings is now the standard implementation (since it is faster). Is it ok to name him, although he did not explicitly state that he agrees with being named?\n\n>  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`\n\nOk, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.\n\nAt this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n\n>  * Did you generate and check the docs?\n\nI checked the doc tests, but I don't know how to generate the docs.\n\nBest regards,\n   Simon",
+    "body": "Hi Martin,\n\nReplying to [comment:23 malb]:\n>  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`\n\n\nCould you elaborate? I don't understand what that means.\n\n>  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?\n\n\nYou mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.\n\nBut now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n\n>  * most of the code is beautifully documented! Well done.\n\n\nThank you!\n\n>  * you should add an `AUTHORS` block and add your name to each file\n\n\nSo, the copyright information is not enough?\n\nConncerning copyright: Although most of the code is original, I would like to include mhanson in the copyright, because his code was the starting point for me, and his 'dense' approach towards infinite polynomial rings is now the standard implementation (since it is faster). Is it ok to name him, although he did not explicitly state that he agrees with being named?\n\n>  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`\n\n\nOk, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.\n\nAt this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n\n>  * Did you generate and check the docs?\n\n\nI checked the doc tests, but I don't know how to generate the docs.\n\nBest regards,\n   Simon",
     "created_at": "2009-04-17T21:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -862,9 +856,11 @@ Hi Martin,
 Replying to [comment:23 malb]:
 >  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`
 
+
 Could you elaborate? I don't understand what that means.
 
 >  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?
+
 
 You mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.
 
@@ -872,9 +868,11 @@ But now, as you mention it: The dense ring class inherits from the sparse ring c
 
 >  * most of the code is beautifully documented! Well done.
 
+
 Thank you!
 
 >  * you should add an `AUTHORS` block and add your name to each file
+
 
 So, the copyright information is not enough?
 
@@ -882,11 +880,13 @@ Conncerning copyright: Although most of the code is original, I would like to in
 
 >  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`
 
+
 Ok, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.
 
 At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?
 
 >  * Did you generate and check the docs?
+
 
 I checked the doc tests, but I don't know how to generate the docs.
 
@@ -900,7 +900,7 @@ Best regards,
 archive/issue_comments_043269.json:
 ```json
 {
-    "body": "Replying to [comment:25 mabshoff]:\n> One last thing: You used _P in your code and `_[A-Z` are reserved numerical constants on some BSDs as well as Solaris. \n\nO my goodness!\n\n> The way your code is written does not trigger any compilation failures (I tested on Solaris 10), but I would generally discourage the use. \n\nThe `_P` is one detail that I took from Mike's code. But you say *compilation* failures -- so wouldn't this problem only be relevant for cython, not python?\n\nAnyway. In `symmetric_reduction.pyx` I have `_R` as an attribute name of a cdef'd class. Perhaps I better channge it.\n\nCheers,\n   Simon",
+    "body": "Replying to [comment:25 mabshoff]:\n> One last thing: You used _P in your code and `_[A-Z` are reserved numerical constants on some BSDs as well as Solaris. \n\n\nO my goodness!\n\n> The way your code is written does not trigger any compilation failures (I tested on Solaris 10), but I would generally discourage the use. \n\n\nThe `_P` is one detail that I took from Mike's code. But you say *compilation* failures -- so wouldn't this problem only be relevant for cython, not python?\n\nAnyway. In `symmetric_reduction.pyx` I have `_R` as an attribute name of a cdef'd class. Perhaps I better channge it.\n\nCheers,\n   Simon",
     "created_at": "2009-04-17T21:37:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -912,9 +912,11 @@ archive/issue_comments_043269.json:
 Replying to [comment:25 mabshoff]:
 > One last thing: You used _P in your code and `_[A-Z` are reserved numerical constants on some BSDs as well as Solaris. 
 
+
 O my goodness!
 
 > The way your code is written does not trigger any compilation failures (I tested on Solaris 10), but I would generally discourage the use. 
+
 
 The `_P` is one detail that I took from Mike's code. But you say *compilation* failures -- so wouldn't this problem only be relevant for cython, not python?
 
@@ -930,7 +932,7 @@ Cheers,
 archive/issue_comments_043270.json:
 ```json
 {
-    "body": "Replying to [comment:24 mabshoff]:\n> Hi Simon,\n> \n> the missing 32 bit has values are\n...\n>     233743571\n\nThank you!",
+    "body": "Replying to [comment:24 mabshoff]:\n> Hi Simon,\n> \n> the missing 32 bit has values are\n\n...\n>     233743571\n\n\nThank you!",
     "created_at": "2009-04-17T21:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -943,8 +945,10 @@ Replying to [comment:24 mabshoff]:
 > Hi Simon,
 > 
 > the missing 32 bit has values are
+
 ...
 >     233743571
+
 
 Thank you!
 
@@ -955,7 +959,7 @@ Thank you!
 archive/issue_comments_043271.json:
 ```json
 {
-    "body": "Replying to [comment:26 SimonKing]:\n> Replying to [comment:23 malb]:\n> >  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`\n> \n> Could you elaborate? I don't understand what that means.\n\nYou have lines like `foo.__repr__()` in your `EXAMPLES`. It should be `str(foo)` instead, i.e. double underscore functions shouldn't be called directly (but indirectly by Python).\n \n> >  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?\n> \n> You mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.\n> \n> But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n\nIt probably would be cleaner and faster.\n\n> >  * you should add an `AUTHORS` block and add your name to each file\n> \n> So, the copyright information is not enough?\n\nIt is \"enough\" for legal purposes but someone reading the docs won't see your name which would be a shame.\n \n> Conncerning copyright: Although most of the code is original, I would like to include mhanson in the copyright, because his code was the starting point for me, and his 'dense' approach towards infinite polynomial rings is now the standard implementation (since it is faster). Is it ok to name him, although he did not explicitly state that he agrees with being named?\n\nThat is probably alright.\n\n> >  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`\n> \n> Ok, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.\n\nNote that they changed that in PolyBoRi 0.6 to be consistent with Python's convention.\n\n> At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n\nIf `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.\n\n> >  * Did you generate and check the docs?\n> \n> I checked the doc tests, but I don't know how to generate the docs.\n\nrun `sage -docbuild  reference html` and check for warnings + inspect the result.",
+    "body": "Replying to [comment:26 SimonKing]:\n> Replying to [comment:23 malb]:\n> >  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`\n \n> \n> Could you elaborate? I don't understand what that means.\n\n\nYou have lines like `foo.__repr__()` in your `EXAMPLES`. It should be `str(foo)` instead, i.e. double underscore functions shouldn't be called directly (but indirectly by Python).\n \n> >  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?\n \n> \n> You mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.\n> \n> But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n\n\nIt probably would be cleaner and faster.\n\n> >  * you should add an `AUTHORS` block and add your name to each file\n \n> \n> So, the copyright information is not enough?\n\n\nIt is \"enough\" for legal purposes but someone reading the docs won't see your name which would be a shame.\n \n> Conncerning copyright: Although most of the code is original, I would like to include mhanson in the copyright, because his code was the starting point for me, and his 'dense' approach towards infinite polynomial rings is now the standard implementation (since it is faster). Is it ok to name him, although he did not explicitly state that he agrees with being named?\n\n\nThat is probably alright.\n\n> >  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`\n \n> \n> Ok, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.\n\n\nNote that they changed that in PolyBoRi 0.6 to be consistent with Python's convention.\n\n> At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n\n\nIf `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.\n\n> >  * Did you generate and check the docs?\n \n> \n> I checked the doc tests, but I don't know how to generate the docs.\n\n\nrun `sage -docbuild  reference html` and check for warnings + inspect the result.",
     "created_at": "2009-04-19T13:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -967,42 +971,54 @@ archive/issue_comments_043271.json:
 Replying to [comment:26 SimonKing]:
 > Replying to [comment:23 malb]:
 > >  * please don't use `__repr__` and friends in doctests but use examples that are natural Python and mark them `#indirect doctest`
+ 
 > 
 > Could you elaborate? I don't understand what that means.
+
 
 You have lines like `foo.__repr__()` in your `EXAMPLES`. It should be `str(foo)` instead, i.e. double underscore functions shouldn't be called directly (but indirectly by Python).
  
 > >  * why do you ask coercion questions in `_add_` and friends, at this point coercion should be done. What am I missing?
+ 
 > 
 > You mean `hasattr(self.parent(),'_P')`? This is since I have a dense and a sparse implementation of infinite polynomial rings, but I only have a *single* class of infinite polynomials, in order to avoid code duplication. So, I have to check whether the parent of an infinite polynomial is dense or sparse.
 > 
 > But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?
 
+
 It probably would be cleaner and faster.
 
 > >  * you should add an `AUTHORS` block and add your name to each file
+ 
 > 
 > So, the copyright information is not enough?
+
 
 It is "enough" for legal purposes but someone reading the docs won't see your name which would be a shame.
  
 > Conncerning copyright: Although most of the code is original, I would like to include mhanson in the copyright, because his code was the starting point for me, and his 'dense' approach towards infinite polynomial rings is now the standard implementation (since it is faster). Is it ok to name him, although he did not explicitly state that he agrees with being named?
 
+
 That is probably alright.
 
 > >  * at the risk of being obnoxious: the Python convention is to use `add_generator` over `AddGenerator`
+ 
 > 
 > Ok, will change it. Note, however, that `addGenerator` without underscore  is the name of the corresponding method in polybory's `GroebnerStrategy`.
+
 
 Note that they changed that in PolyBoRi 0.6 to be consistent with Python's convention.
 
 > At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?
 
+
 If `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.
 
 > >  * Did you generate and check the docs?
+ 
 > 
 > I checked the doc tests, but I don't know how to generate the docs.
+
 
 run `sage -docbuild  reference html` and check for warnings + inspect the result.
 
@@ -1013,7 +1029,7 @@ run `sage -docbuild  reference html` and check for warnings + inspect the result
 archive/issue_comments_043272.json:
 ```json
 {
-    "body": "Hi Martin,\n\nReplying to [comment:29 malb]:\n> Replying to [comment:26 SimonKing]:\n...\n> > But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n> \n> It probably would be cleaner and faster.\n\nOK, I'll try and do it (which needs more time). I guess, as for the rings, the dense class should inherit from the sparse class, and overload the arithmetic methods.\n\n> > At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n> \n> If `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.\n\nOK, my impression is that *explicit* names are preferred.\n\n> > I checked the doc tests, but I don't know how to generate the docs.\n> \n> run `sage -docbuild  reference html` and check for warnings + inspect the result.\n\nThank you. It complains:\n* WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element\n* reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.\n\n  THEORY:\n\n  -------\n\nSo, how can I add a title? And what's wrong with the section title?",
+    "body": "Hi Martin,\n\nReplying to [comment:29 malb]:\n> Replying to [comment:26 SimonKing]:\n\n...\n> > But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?\n\n> \n> It probably would be cleaner and faster.\n\n\nOK, I'll try and do it (which needs more time). I guess, as for the rings, the dense class should inherit from the sparse class, and overload the arithmetic methods.\n\n> > At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?\n\n> \n> If `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.\n\n\nOK, my impression is that *explicit* names are preferred.\n\n> > I checked the doc tests, but I don't know how to generate the docs.\n\n> \n> run `sage -docbuild  reference html` and check for warnings + inspect the result.\n\n\nThank you. It complains:\n* WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element\n* reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.\n\n  THEORY:\n\n  -------\n\nSo, how can I add a title? And what's wrong with the section title?",
     "created_at": "2009-04-21T08:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1026,22 +1042,29 @@ Hi Martin,
 
 Replying to [comment:29 malb]:
 > Replying to [comment:26 SimonKing]:
+
 ...
 > > But now, as you mention it: The dense ring class inherits from the sparse ring class; perhaps there should also be dense and a sparse element class, with separate `_add_`?
+
 > 
 > It probably would be cleaner and faster.
+
 
 OK, I'll try and do it (which needs more time). I guess, as for the rings, the dense class should inherit from the sparse class, and overload the arithmetic methods.
 
 > > At this occasion: Would you prefer the method name 'symmetric_cancellation_order' over 'sco'?
+
 > 
 > If `sco` is not the word used in papers, I'd prefer `symmetric_cancelation_order`. I have no hard feelings either way though.
+
 
 OK, my impression is that *explicit* names are preferred.
 
 > > I checked the doc tests, but I don't know how to generate the docs.
+
 > 
 > run `sage -docbuild  reference html` and check for warnings + inspect the result.
+
 
 Thank you. It complains:
 * WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element
@@ -1082,7 +1105,7 @@ Michael
 archive/issue_comments_043274.json:
 ```json
 {
-    "body": "Replying to [comment:30 SimonKing]:\n> Thank you. It complains:\n>  * WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element\n>  * reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.\n\n>    THEORY:\n\n>    -------\n> \n> So, how can I add a title? And what's wrong with the section title?\n\nYou'd add a docstring to the beginning of the file and its first line would be the title.\n\nI think the `Theory` block needs a different underline, these encode section level in ReST IIRC.",
+    "body": "Replying to [comment:30 SimonKing]:\n> Thank you. It complains:\n> * WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element\n> * reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.\n\n\n>    THEORY:\n\n\n>    ---\n\n> \n> So, how can I add a title? And what's wrong with the section title?\n\n\nYou'd add a docstring to the beginning of the file and its first line would be the title.\n\nI think the `Theory` block needs a different underline, these encode section level in ReST IIRC.",
     "created_at": "2009-04-21T09:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1093,14 +1116,18 @@ archive/issue_comments_043274.json:
 
 Replying to [comment:30 SimonKing]:
 > Thank you. It complains:
->  * WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element
->  * reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.
+> * WARNING: Missing title for sage.rings.polynomial.infinite_polynomial_element
+> * reST markup error: /home/king/SAGE/devel/sage-3.2.3/local/lib/python2.5/site-packages/sage/rings/polynomial/symmetric_ideal.py:docstring of sage.rings.polynomial.symmetric_ideal.SymmetricIdeal:4: (SEVERE/4) Unexpected section title.
+
 
 >    THEORY:
 
->    -------
+
+>    ---
+
 > 
 > So, how can I add a title? And what's wrong with the section title?
+
 
 You'd add a docstring to the beginning of the file and its first line would be the title.
 
@@ -1113,7 +1140,7 @@ I think the `Theory` block needs a different underline, these encode section lev
 archive/issue_comments_043275.json:
 ```json
 {
-    "body": "The new patch (still self-contained) should apply to sage-3.4.1.rc3\n\nLet me address your comments:\n\n* I built the documentation, and it looks OK to me.\n\n* Now, I have separate dense and sparse implementations for `InfinitePolynomial`s.\n\n* I changed `sco` into `symmetric_cancellation_order` and `AddGenerator` into `add_generator`.\n\n**__New Feature__**\n* I added a `__getattr__` method to `InfinitePolynomial`s that forwards to the underlying finite polynomials. Consequence: Any attribute of the underlying finite polynomial is directly available to the Infinite Polynomial, unless that method is overwritten. In that way, I automatically have latex typeset for the Infinite Polynomials.\n* A propos latex: I also added latex methods for Infinite Polynomial Rings and Symmetric Ideals. \n\nLatex looks like this:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: latex(x)\nx_{\\ast}\n```\n\nI think this makes sense. After all, `x` generates a series of variables, indexed by natural numbers, and in this situation it is common to use a star as index. Similarly:\n\n```\nsage: latex(X)\n\\mathbf{Q}[x_{\\ast}, y_{\\ast}]\nsage: latex(x[2]*y[0]+3*x[4]+1)\ny_{0} x_{2} + 3 x_{4} + 1\nsage: latex(X*(x[1]*y[2]))\n\\left(y_{2} x_{1}\\right)\\mathbf{Q}[x_{\\ast}, y_{\\ast}][\\mathfrak{S}_{\\infty}]\n```\n\nPerhaps the last line requires some explanation. \n1. G=S_infinity shall denote the symmetric group over the natural numbers. I hope this is understandable.\n2. R=Q[x_*,y_*] is the infinite polynomial ring.\n3. R[G] is the group ring of G with coefficients in R.\n4. A symmetric ideal is nothing but a R[G] module. Since G acts from the right, we thus have the above notation.\n\nRather huge patch, sorry...",
+    "body": "The new patch (still self-contained) should apply to sage-3.4.1.rc3\n\nLet me address your comments:\n\n* I built the documentation, and it looks OK to me.\n\n* Now, I have separate dense and sparse implementations for `InfinitePolynomial`s.\n\n* I changed `sco` into `symmetric_cancellation_order` and `AddGenerator` into `add_generator`.\n\n**__New Feature__**\n* I added a `__getattr__` method to `InfinitePolynomial`s that forwards to the underlying finite polynomials. Consequence: Any attribute of the underlying finite polynomial is directly available to the Infinite Polynomial, unless that method is overwritten. In that way, I automatically have latex typeset for the Infinite Polynomials.\n* A propos latex: I also added latex methods for Infinite Polynomial Rings and Symmetric Ideals. \n\nLatex looks like this:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: latex(x)\nx_{\\ast}\n```\nI think this makes sense. After all, `x` generates a series of variables, indexed by natural numbers, and in this situation it is common to use a star as index. Similarly:\n\n```\nsage: latex(X)\n\\mathbf{Q}[x_{\\ast}, y_{\\ast}]\nsage: latex(x[2]*y[0]+3*x[4]+1)\ny_{0} x_{2} + 3 x_{4} + 1\nsage: latex(X*(x[1]*y[2]))\n\\left(y_{2} x_{1}\\right)\\mathbf{Q}[x_{\\ast}, y_{\\ast}][\\mathfrak{S}_{\\infty}]\n```\nPerhaps the last line requires some explanation. \n1. G=S_infinity shall denote the symmetric group over the natural numbers. I hope this is understandable.\n2. R=Q[x_*,y_*] is the infinite polynomial ring.\n3. R[G] is the group ring of G with coefficients in R.\n4. A symmetric ideal is nothing but a R[G] module. Since G acts from the right, we thus have the above notation.\n\nRather huge patch, sorry...",
     "created_at": "2009-04-22T15:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1143,7 +1170,6 @@ sage: X.<x,y> = InfinitePolynomialRing(QQ)
 sage: latex(x)
 x_{\ast}
 ```
-
 I think this makes sense. After all, `x` generates a series of variables, indexed by natural numbers, and in this situation it is common to use a star as index. Similarly:
 
 ```
@@ -1154,7 +1180,6 @@ y_{0} x_{2} + 3 x_{4} + 1
 sage: latex(X*(x[1]*y[2]))
 \left(y_{2} x_{1}\right)\mathbf{Q}[x_{\ast}, y_{\ast}][\mathfrak{S}_{\infty}]
 ```
-
 Perhaps the last line requires some explanation. 
 1. G=S_infinity shall denote the symmetric group over the natural numbers. I hope this is understandable.
 2. R=Q[x_*,y_*] is the infinite polynomial ring.
@@ -1223,7 +1248,7 @@ Best regards,
 archive/issue_comments_043278.json:
 ```json
 {
-    "body": "Replying to [comment:35 SimonKing]:\n> First, some general questions:\n> \n>  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n\nI don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\n>  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?\n\nIt depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.\n\n> Anyway. This time I created a new patch `SymmetricIdeals.2.patch`, that should be applied first (e.g., to sage-3.4.1.rc3). After that, please apply `SymmetricIdealsCorrection.patch`, that corrects some doc tests.\n> \n> Changes with respect to previous versions:\n>  - Major improvement of the documentation. I did `sage -docbuild reference html`, and it looks good in the browser.\n>  - Now any class has a `X==loads(dumps(X))` doc test. In particular, the Cython class `SymmetricReductionStrategy` is provided with pickling.\n>  - The performance is further improved: With `prune`, I found that a considerable amount of time was spent with `deepcopy`. Since I know that the object to be copied is a dict whose values are lists of integers, it is cheaper to do the copy manually. I am surprised that it makes such a big difference!\n> \n> After applying `SymmetricIdealsCorrection.patch`, the doc tests of my files pass for me.\n> \n> One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n\nYes, that should be pointed out clearly.\n\nLet me know what the 'final' version of your patch is and then I'll review it.",
+    "body": "Replying to [comment:35 SimonKing]:\n> First, some general questions:\n> \n> 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n\n\nI don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\n>  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?\n\n\nIt depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.\n\n> Anyway. This time I created a new patch `SymmetricIdeals.2.patch`, that should be applied first (e.g., to sage-3.4.1.rc3). After that, please apply `SymmetricIdealsCorrection.patch`, that corrects some doc tests.\n> \n> Changes with respect to previous versions:\n> - Major improvement of the documentation. I did `sage -docbuild reference html`, and it looks good in the browser.\n> - Now any class has a `X==loads(dumps(X))` doc test. In particular, the Cython class `SymmetricReductionStrategy` is provided with pickling.\n> - The performance is further improved: With `prune`, I found that a considerable amount of time was spent with `deepcopy`. Since I know that the object to be copied is a dict whose values are lists of integers, it is cheaper to do the copy manually. I am surprised that it makes such a big difference!\n> \n> After applying `SymmetricIdealsCorrection.patch`, the doc tests of my files pass for me.\n> \n> One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n\n\nYes, that should be pointed out clearly.\n\nLet me know what the 'final' version of your patch is and then I'll review it.",
     "created_at": "2009-04-27T09:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1235,24 +1260,27 @@ archive/issue_comments_043278.json:
 Replying to [comment:35 SimonKing]:
 > First, some general questions:
 > 
->  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+> 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+
 
 I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.
 
 >  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?
+
 
 It depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.
 
 > Anyway. This time I created a new patch `SymmetricIdeals.2.patch`, that should be applied first (e.g., to sage-3.4.1.rc3). After that, please apply `SymmetricIdealsCorrection.patch`, that corrects some doc tests.
 > 
 > Changes with respect to previous versions:
->  - Major improvement of the documentation. I did `sage -docbuild reference html`, and it looks good in the browser.
->  - Now any class has a `X==loads(dumps(X))` doc test. In particular, the Cython class `SymmetricReductionStrategy` is provided with pickling.
->  - The performance is further improved: With `prune`, I found that a considerable amount of time was spent with `deepcopy`. Since I know that the object to be copied is a dict whose values are lists of integers, it is cheaper to do the copy manually. I am surprised that it makes such a big difference!
+> - Major improvement of the documentation. I did `sage -docbuild reference html`, and it looks good in the browser.
+> - Now any class has a `X==loads(dumps(X))` doc test. In particular, the Cython class `SymmetricReductionStrategy` is provided with pickling.
+> - The performance is further improved: With `prune`, I found that a considerable amount of time was spent with `deepcopy`. Since I know that the object to be copied is a dict whose values are lists of integers, it is cheaper to do the copy manually. I am surprised that it makes such a big difference!
 > 
 > After applying `SymmetricIdealsCorrection.patch`, the doc tests of my files pass for me.
 > 
 > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation
+
 
 Yes, that should be pointed out clearly.
 
@@ -1265,7 +1293,7 @@ Let me know what the 'final' version of your patch is and then I'll review it.
 archive/issue_comments_043279.json:
 ```json
 {
-    "body": "Replying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nYes, especially if it is all work by one person (maybe integrating someone else's patch) one patch is best. \n\n> >  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?\n> \n> It depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.\n\nI agree with Martin that this ticket and its patches is already large enough. Followup patches are the way to go. Just imagine someone reading this ticket from top to bottom - I don't think any additional work should be done here.\n\nIn the end it is also important to make clear which patches to apply in which order and who gets credit for authorship.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> > 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n\n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\n\nYes, especially if it is all work by one person (maybe integrating someone else's patch) one patch is best. \n\n> >  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?\n  \n> \n> It depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.\n\n\nI agree with Martin that this ticket and its patches is already large enough. Followup patches are the way to go. Just imagine someone reading this ticket from top to bottom - I don't think any additional work should be done here.\n\nIn the end it is also important to make clear which patches to apply in which order and who gets credit for authorship.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-27T10:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1278,15 +1306,19 @@ Replying to [comment:36 malb]:
 > Replying to [comment:35 SimonKing]:
 > > First, some general questions:
 > > 
-> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+> > 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+
 > 
 > I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.
+
 
 Yes, especially if it is all work by one person (maybe integrating someone else's patch) one patch is best. 
 
 > >  2. Should there only be *one* patch, or should there be one starter patch, and all other patches only define the change with respect to the previous patch (hence, one has to apply a sequence of one big and perhaps 10 small patches)?
+  
 > 
 > It depends. I would say: This ticket should be closed soon. The patch is way too big already. So in this case new patches (in different tickets) should be created.
+
 
 I agree with Martin that this ticket and its patches is already large enough. Followup patches are the way to go. Just imagine someone reading this ticket from top to bottom - I don't think any additional work should be done here.
 
@@ -1321,7 +1353,7 @@ Final version (currently...) of Infinite Polynomial Rings and Symmetric Gröbner
 archive/issue_comments_043281.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by @simon-king-jena created at 2009-04-27 11:13:39\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n> \n> Yes, that should be pointed out clearly.\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsFinal.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsFinal.patch) by @simon-king-jena created at 2009-04-27 11:13:39\n\nDear Martin and Michael,\n\nReplying to [comment:36 malb]:\n> Replying to [comment:35 SimonKing]:\n> > First, some general questions:\n> > \n> > 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? \n\n> \n> I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.\n\n\nOK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).\n\n\n> > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation\n\n> \n> Yes, that should be pointed out clearly.\n\n\nOK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.\n\nMoreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.\n \n> Let me know what the 'final' version of your patch is and then I'll review it.\n\n\nI think this version is final, in the following sense:\n- doc tests pass\n- I am already doing serious computations with that version, and it seems to work well\n- I looked intensely at the html documentation, and I found it alright.\n\nCheers,\n    Simon",
     "created_at": "2009-04-27T11:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1338,22 +1370,27 @@ Replying to [comment:36 malb]:
 > Replying to [comment:35 SimonKing]:
 > > First, some general questions:
 > > 
-> >  1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+> > 1. Should previous versions of a patch be preserved, or is it better to overwrite the old patch with the new version? 
+
 > 
 > I don't think we established a good practice here yet. But it is certainly easier for the release manager if there is only one patch or a clear description what to apply when.
+
 
 OK, so I produced a stand-alone patch `SymmetricIdealsFinal.patch` relative to sage-3.4.1.rc3 that I consider final (see below).
 
 
 > > One question to the referee: As mentioned in a comment above, I try to be clever, i.e., in `SymmetricIdeal.symmetrisation()` I only apply elementary transpositions rather than the full symmetric group. I believe it works, but it is a difference to what Aschenbrenner and Hillar suggested. Shall I point it out in the documentation
+
 > 
 > Yes, that should be pointed out clearly.
+
 
 OK, I did so in the documentation of `SymmetricIdeal.symmetrisation()` and `SymmetricIdeal.groebner_basis()`: I give no evidence *why* I believe that my algorithm is correct, but I state in what respect it differs from the work of Aschenbrenner and Hillar.
 
 Moreover, I made it optional to chose the *original* algorithm of Aschenbrenner and Hillar -- if some users don't trust me.
  
 > Let me know what the 'final' version of your patch is and then I'll review it.
+
 
 I think this version is final, in the following sense:
 - doc tests pass
@@ -1370,7 +1407,7 @@ Cheers,
 archive/issue_comments_043282.json:
 ```json
 {
-    "body": "Doctests fail:\n\n\n```\nfrom sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\nImportError: No module named symmetric_reduction\n```\n\n\nMaybe you didn't add the module to `module_list.py`?",
+    "body": "Doctests fail:\n\n```\nfrom sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\nImportError: No module named symmetric_reduction\n```\n\nMaybe you didn't add the module to `module_list.py`?",
     "created_at": "2009-04-27T13:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1381,12 +1418,10 @@ archive/issue_comments_043282.json:
 
 Doctests fail:
 
-
 ```
 from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy
 ImportError: No module named symmetric_reduction
 ```
-
 
 Maybe you didn't add the module to `module_list.py`?
 
@@ -1415,7 +1450,7 @@ To be applied after SymmetricIdealsFinal.patch
 archive/issue_comments_043284.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by @simon-king-jena created at 2009-04-27 14:30:15\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> {{{\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> }}}\n> \n> Maybe you didn't add the module to `module_list.py`?\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
+    "body": "Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsForgotten.patch) by @simon-king-jena created at 2009-04-27 14:30:15\n\nReplying to [comment:39 malb]:\n> Doctests fail:\n> \n> \n> ```\n> from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy\n> ImportError: No module named symmetric_reduction\n> ```\n> \n> Maybe you didn't add the module to `module_list.py`?\n\n\nYes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.\n\nAnd I think it worked for me since I had built the extension in a different branch, so, it was somehow present.\n\nSorry,\n    Simon",
     "created_at": "2009-04-27T14:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1429,12 +1464,14 @@ Attachment [SymmetricIdealsForgotten.patch](tarball://root/attachments/some-uuid
 Replying to [comment:39 malb]:
 > Doctests fail:
 > 
-> {{{
+> 
+> ```
 > from sage.rings.polynomial.symmetric_reduction import SymmetricReductionStrategy
 > ImportError: No module named symmetric_reduction
-> }}}
+> ```
 > 
 > Maybe you didn't add the module to `module_list.py`?
+
 
 Yes. So, `SymmetricIdealsFinal.patch` is not the final word. Please also apply `SymmetricIdealsForgotten.patch`.
 
@@ -1468,7 +1505,7 @@ It seems all my concerns were addressed, doctests pass, positive review
 archive/issue_comments_043286.json:
 ```json
 {
-    "body": "Dear Martin,\n\nI am very sorry, but I found one bug. Since the ticket is not yet closed, I allowed myself to add yet another patch.\n\nThe bug was:\n\n```\nsage: X.<x,y>=InfinitePolynomialRing(QQ)\nsage: p=x[2]-x[1]\nsage: q=x[1]-x[2]\nsage: p.reduce([q])\n0\nsage: q.reduce([p])\n-x2 + x1\n```\n\n\nReason: In `SymmetricReductionStrategy.[tail]reduce()`, I compared polynomials rather than leading monomials: I was not aware that `-x<x`. This is now fixed\n\nAt this occasion, there also is an enhancement: It is now possible to use fraction fields as base ring. In the previous version, this was impossible, since the duck typing in `_coerce_map_from_` was not appropriate, and since in `_div_` I have to work around the bug that I reported at #5917.\n\nNow, one can do:\n\n```\nsage: F = FractionField(PolynomialRing(QQ,['a','b']))\nsage: X.<x,y>=InfinitePolynomialRing(F)\nsage: I=(F('a')*x[1]*y[2]+F('b')*x[2])*X\nsage: G=I.groebner_basis()\nsage: G\n[y1*x2 + b/a*x1, y2*x1 + b/a*x2]\nsage: for p in Permutations(4):\n....:     print [(x^p).reduce(G) for x in G]\n....:\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n```\n\n\n**__How to apply the patches__**\n1. `SymmetricIdealsFinal`\n2. `SymmetricIdealsForgotten`\n3. `SymmetricIdealsBugfix`",
+    "body": "Dear Martin,\n\nI am very sorry, but I found one bug. Since the ticket is not yet closed, I allowed myself to add yet another patch.\n\nThe bug was:\n\n```\nsage: X.<x,y>=InfinitePolynomialRing(QQ)\nsage: p=x[2]-x[1]\nsage: q=x[1]-x[2]\nsage: p.reduce([q])\n0\nsage: q.reduce([p])\n-x2 + x1\n```\n\nReason: In `SymmetricReductionStrategy.[tail]reduce()`, I compared polynomials rather than leading monomials: I was not aware that `-x<x`. This is now fixed\n\nAt this occasion, there also is an enhancement: It is now possible to use fraction fields as base ring. In the previous version, this was impossible, since the duck typing in `_coerce_map_from_` was not appropriate, and since in `_div_` I have to work around the bug that I reported at #5917.\n\nNow, one can do:\n\n```\nsage: F = FractionField(PolynomialRing(QQ,['a','b']))\nsage: X.<x,y>=InfinitePolynomialRing(F)\nsage: I=(F('a')*x[1]*y[2]+F('b')*x[2])*X\nsage: G=I.groebner_basis()\nsage: G\n[y1*x2 + b/a*x1, y2*x1 + b/a*x2]\nsage: for p in Permutations(4):\n....:     print [(x^p).reduce(G) for x in G]\n....:\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n[0, 0]\n```\n\n**__How to apply the patches__**\n1. `SymmetricIdealsFinal`\n2. `SymmetricIdealsForgotten`\n3. `SymmetricIdealsBugfix`",
     "created_at": "2009-04-29T10:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1492,7 +1529,6 @@ sage: p.reduce([q])
 sage: q.reduce([p])
 -x2 + x1
 ```
-
 
 Reason: In `SymmetricReductionStrategy.[tail]reduce()`, I compared polynomials rather than leading monomials: I was not aware that `-x<x`. This is now fixed
 
@@ -1536,7 +1572,6 @@ sage: for p in Permutations(4):
 [0, 0]
 ```
 
-
 **__How to apply the patches__**
 1. `SymmetricIdealsFinal`
 2. `SymmetricIdealsForgotten`
@@ -1569,7 +1604,7 @@ I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomi
 archive/issue_comments_043288.json:
 ```json
 {
-    "body": "Replying to [comment:43 malb]:\n> I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.\n\nThis is very interesting, because I do not get any doctest failure for `infinite_polynomial_ring.py` with sage-3.4.2 on my computer. I'll try and see what happens on sage.math.",
+    "body": "Replying to [comment:43 malb]:\n> I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.\n\n\nThis is very interesting, because I do not get any doctest failure for `infinite_polynomial_ring.py` with sage-3.4.2 on my computer. I'll try and see what happens on sage.math.",
     "created_at": "2009-05-15T06:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1580,6 +1615,7 @@ archive/issue_comments_043288.json:
 
 Replying to [comment:43 malb]:
 > I've fixed a few doctest failures in `symmetric_ideal.py` and `infinite_polynomial_ring.py`. Simon, there is still a doctest failure on sage.math with 3.4.2 in `symmetric_ideal.py`. It is the protocol output of the calculation which is somehow different now. Please fix it, then we can merge this big patch.
+
 
 This is very interesting, because I do not get any doctest failure for `infinite_polynomial_ring.py` with sage-3.4.2 on my computer. I'll try and see what happens on sage.math.
 
@@ -1608,7 +1644,7 @@ One trivial doc test fix
 archive/issue_comments_043290.json:
 ```json
 {
-    "body": "Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by @simon-king-jena created at 2009-05-15 06:57:49\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
+    "body": "Attachment [SymmetricIdealsLastWords.patch](tarball://root/attachments/some-uuid/ticket5566/SymmetricIdealsLastWords.patch) by @simon-king-jena created at 2009-05-15 06:57:49\n\nHi Martin, hi Michael,\n\nit turned out that the doc test failure was not in `infinite_polynomial_ring.py` but in `symmetric_ideal.py`. The fix is trivial, it is just insertion of one ':'.\n\nAfter applying all four patches in order, all doc test for infinite polynomial rings and symmetric ideals pass both on sage.math and at home:\n\n```\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_ideal.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_ideal.py\"\n         [12.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 12.4 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long symmetric_reduction.pyx\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/symmetric_reduction.pyx\"\n         [4.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.3 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_element.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_element.py\"\n         [6.0 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.0 seconds\nSimonKing@sage:~/SAGE/sage-3.4.2/devel/sage-symmdevel/sage/rings/polynomial$ ~/SAGE/sage-3.4.2/sage -t -optional -long infinite_polynomial_ring.py\nsage -t -optional -long \"devel/sage-symmdevel/sage/rings/polynomial/infinite_polynomial_ring.py\"\n         [2.6 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.6 seconds\n```\n\nI tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...\n\nCheers,\n    Simon",
     "created_at": "2009-05-15T06:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1655,7 +1691,6 @@ sage -t -optional -long "devel/sage-symmdevel/sage/rings/polynomial/infinite_pol
 All tests passed!
 Total time for all tests: 2.6 seconds
 ```
-
 
 I tag the ticket as [needs review], but I hope that Martin's comment can be taken as a positive review already...
 
@@ -1766,7 +1801,7 @@ Michael
 archive/issue_comments_043294.json:
 ```json
 {
-    "body": "Replying to [comment:46 mabshoff]:\n> What is the credit situation? I.e. did Mike Hansen write some of this?\n\nI credited Mike Hansen both in `infinite_polynomial_ring.py` and in `infinite_polynomial_element.py`, since the *dense* implementations are based on the code that he posted at #5453.\n\nRecall the history of these patches: \n* At sage-devel, I sometimes expressed my interest in having Aschenbrenner's and Hillar's algorithms in Sage. \n* Mike Hanse opened #5453, but his main interest seemed to be working with the polynomials rather than with symmetric ideals. \n* First, I contributed to #5453 by providing an alternative (sparse) implementation to Mike Hansen's approach. \n* But when I realised that the purpose of the ticket was different from my own intent, I opened #5566 and implemented Symmetric Gr\u00f6bner Bases, using Mike Hansen's *dense* approach as default implementation and my *sparse* approach as another option for the user. \n* Unfortunately, since then, I didn't hear a single word of Mike Hansen.\n\n__Conclusion__\n1. Mike Hansen deserves to be credited, since I started with his code.\n2. He is credited\n3. `symmetric_ideal.py` and `symmetric_reduction.pyx` is my own code, hence, only one author.\n4. Merging these patches should also result in closing #5453.\n\nCheers,\n    Simon",
+    "body": "Replying to [comment:46 mabshoff]:\n> What is the credit situation? I.e. did Mike Hansen write some of this?\n\n\nI credited Mike Hansen both in `infinite_polynomial_ring.py` and in `infinite_polynomial_element.py`, since the *dense* implementations are based on the code that he posted at #5453.\n\nRecall the history of these patches: \n* At sage-devel, I sometimes expressed my interest in having Aschenbrenner's and Hillar's algorithms in Sage. \n* Mike Hanse opened #5453, but his main interest seemed to be working with the polynomials rather than with symmetric ideals. \n* First, I contributed to #5453 by providing an alternative (sparse) implementation to Mike Hansen's approach. \n* But when I realised that the purpose of the ticket was different from my own intent, I opened #5566 and implemented Symmetric Gr\u00f6bner Bases, using Mike Hansen's *dense* approach as default implementation and my *sparse* approach as another option for the user. \n* Unfortunately, since then, I didn't hear a single word of Mike Hansen.\n\n__Conclusion__\n1. Mike Hansen deserves to be credited, since I started with his code.\n2. He is credited\n3. `symmetric_ideal.py` and `symmetric_reduction.pyx` is my own code, hence, only one author.\n4. Merging these patches should also result in closing #5453.\n\nCheers,\n    Simon",
     "created_at": "2009-05-15T07:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5566",
     "type": "issue_comment",
@@ -1777,6 +1812,7 @@ archive/issue_comments_043294.json:
 
 Replying to [comment:46 mabshoff]:
 > What is the credit situation? I.e. did Mike Hansen write some of this?
+
 
 I credited Mike Hansen both in `infinite_polynomial_ring.py` and in `infinite_polynomial_element.py`, since the *dense* implementations are based on the code that he posted at #5453.
 

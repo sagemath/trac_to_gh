@@ -50,7 +50,7 @@ Apparently Nick is distributing this as an spkg now.  See http://wiki.sagemath.o
 archive/issue_comments_018303.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> Apparently Nick is distributing this as an spkg now.  See http://wiki.sagemath.org/sage-mode  Should this ticket be closed, then?  Is that spkg in at least the optional repository, if not the standard repository?\n\nThere is still the plan to make this part of standard Sage, just like SageTeX, so I am changing the summary to reflect this even though this was not the original motivation for this ticket.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 jason]:\n> Apparently Nick is distributing this as an spkg now.  See http://wiki.sagemath.org/sage-mode  Should this ticket be closed, then?  Is that spkg in at least the optional repository, if not the standard repository?\n\n\nThere is still the plan to make this part of standard Sage, just like SageTeX, so I am changing the summary to reflect this even though this was not the original motivation for this ticket.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-12T00:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2666",
     "type": "issue_comment",
@@ -61,6 +61,7 @@ archive/issue_comments_018303.json:
 
 Replying to [comment:1 jason]:
 > Apparently Nick is distributing this as an spkg now.  See http://wiki.sagemath.org/sage-mode  Should this ticket be closed, then?  Is that spkg in at least the optional repository, if not the standard repository?
+
 
 There is still the plan to make this part of standard Sage, just like SageTeX, so I am changing the summary to reflect this even though this was not the original motivation for this ticket.
 

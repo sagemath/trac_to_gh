@@ -3,7 +3,7 @@
 archive/issues_008481.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
     "created_at": "2010-03-07T22:49:07Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_008481.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 sage: V = QQ**2
@@ -39,7 +38,6 @@ AttributeError                            Traceback (most recent call last)
 
 ...
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8481
 
@@ -106,7 +104,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_076311.json:
 ```json
 {
-    "body": "1. Can you change this to only do check=True when the base ring is *not* a field:\n\n```\n        5408\t \t                    check=False, copy=False, coerce=False) \n \t5408\t                    check=True, copy=False, coerce=False) \n```\n\nOr, better yet, always do check=False unless the components of v are not all in the base ring.   The problem is that check=True could be *massively* expensive -- you could add hours to the runtimes of real-world computations with this one little change.  \n\n2. I'm happy with all the other code.  \n\nI'm running tests and will report in a moment.",
+    "body": "1. Can you change this to only do check=True when the base ring is *not* a field:\n\n```\n        5408\t \t                    check=False, copy=False, coerce=False) \n \t5408\t                    check=True, copy=False, coerce=False) \n```\nOr, better yet, always do check=False unless the components of v are not all in the base ring.   The problem is that check=True could be *massively* expensive -- you could add hours to the runtimes of real-world computations with this one little change.  \n\n2. I'm happy with all the other code.  \n\nI'm running tests and will report in a moment.",
     "created_at": "2010-04-05T02:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ archive/issue_comments_076311.json:
         5408	 	                    check=False, copy=False, coerce=False) 
  	5408	                    check=True, copy=False, coerce=False) 
 ```
-
 Or, better yet, always do check=False unless the components of v are not all in the base ring.   The problem is that check=True could be *massively* expensive -- you could add hours to the runtimes of real-world computations with this one little change.  
 
 2. I'm happy with all the other code.  

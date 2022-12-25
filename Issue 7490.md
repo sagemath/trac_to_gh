@@ -3,7 +3,7 @@
 archive/issues_007490.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen @jasongrout\n\nKeywords: pynac\n\nAttached patch refactors the symbolic function code in `sage/symbolic/function.pyx`.\n\n* `evalf()` now accepts a parent argument instead of a precision\n  This allows us to use the numeric evaluation framework in ginac for\n  evaluating things with `RIF`, `CIF` as well, not just `RealField`, or `ComplexField` with the given precision.\n\n* python arguments passed to custom methods of sfunctions are not\n  wrapped in `Expression` objects any more. No need to call `.pyobject()`\n  to unwrap these.\n\n* custom methods support calling methods on `self`.\n  This would be useful if you need access to other function of the\n  defining class, or store tables of data calculated on demand.\n\n* `__call__` method supports hold parameter\n  This works:\n\n```\n\tsage: exp(log(x))\n        x\n        sage: exp(log(x), hold=True)\n        e^log(x)\n```\n\n\n* Custom methods for symbolic functions (`_eval_`, `_evalf_`, `_conjugate_`,\n  `_derivative_`, etc.) can be\n  written in Cython for builtin functions (that are provided by the\n  Sage library)\n\n* New class hiearchy:\n\n```\nFunction\n  GinacFunction\n  CustomizableFunction\n    BuiltinFunction\n    SymbolicFunction\n```\n\n We have 4 different types of functions, those defined by\n* ginac (sin, cos, ...),\n* the Sage library (cot)\n* the user (in a python file, subclassing the new\n  SymbolicFunction)\n* the command line function_factory (by calling function('f') )\n \n Things we need to do for these functions different for each of these,\n perhaps similar for the last two. Normally initializing a function\n means checking if it's already defined, if not, initializing a\n structure from ginac called function_options, and registering this in\n a table. There are also issues with pickling.\n \n For ginac functions, we don't need any of this, since we can't change\n it at python level. We only need to look up the serial number (the\n indicator in the table) of the function. We don't need to do anything\n to pickle or unpickle these either.\n \n Pickling and unpickling library functions only needs an identifier\n for the class to initialize it again if necessary. \n \n User defined functions need to lookup if there is an existing\n function in the table, since we should try to keep the table small.\n \n There is also a new `function_factory()` function in `sage.symbolic.function_factory`\n (it needs to be in a python file) that creates `NewSymbolicFunction`\n classes on the fly for the function() calls from the command line.\n\n\nThe pynac package here is required for this patch:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.a0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7490\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen @jasongrout\n\nKeywords: pynac\n\nAttached patch refactors the symbolic function code in `sage/symbolic/function.pyx`.\n\n* `evalf()` now accepts a parent argument instead of a precision\n  This allows us to use the numeric evaluation framework in ginac for\n  evaluating things with `RIF`, `CIF` as well, not just `RealField`, or `ComplexField` with the given precision.\n\n* python arguments passed to custom methods of sfunctions are not\n  wrapped in `Expression` objects any more. No need to call `.pyobject()`\n  to unwrap these.\n\n* custom methods support calling methods on `self`.\n  This would be useful if you need access to other function of the\n  defining class, or store tables of data calculated on demand.\n\n* `__call__` method supports hold parameter\n  This works:\n\n```\n\tsage: exp(log(x))\n        x\n        sage: exp(log(x), hold=True)\n        e^log(x)\n```\n\n* Custom methods for symbolic functions (`_eval_`, `_evalf_`, `_conjugate_`,\n  `_derivative_`, etc.) can be\n  written in Cython for builtin functions (that are provided by the\n  Sage library)\n\n* New class hiearchy:\n\n```\nFunction\n  GinacFunction\n  CustomizableFunction\n    BuiltinFunction\n    SymbolicFunction\n```\n We have 4 different types of functions, those defined by\n* ginac (sin, cos, ...),\n* the Sage library (cot)\n* the user (in a python file, subclassing the new\n  SymbolicFunction)\n* the command line function_factory (by calling function('f') )\n \n Things we need to do for these functions different for each of these,\n perhaps similar for the last two. Normally initializing a function\n means checking if it's already defined, if not, initializing a\n structure from ginac called function_options, and registering this in\n a table. There are also issues with pickling.\n \n For ginac functions, we don't need any of this, since we can't change\n it at python level. We only need to look up the serial number (the\n indicator in the table) of the function. We don't need to do anything\n to pickle or unpickle these either.\n \n Pickling and unpickling library functions only needs an identifier\n for the class to initialize it again if necessary. \n \n User defined functions need to lookup if there is an existing\n function in the table, since we should try to keep the table small.\n \n There is also a new `function_factory()` function in `sage.symbolic.function_factory`\n (it needs to be in a python file) that creates `NewSymbolicFunction`\n classes on the fly for the function() calls from the command line.\n\n\nThe pynac package here is required for this patch:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.a0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7490\n\n",
     "created_at": "2009-11-19T00:31:45Z",
     "labels": [
         "component: symbolics",
@@ -46,7 +46,6 @@ Attached patch refactors the symbolic function code in `sage/symbolic/function.p
         e^log(x)
 ```
 
-
 * Custom methods for symbolic functions (`_eval_`, `_evalf_`, `_conjugate_`,
   `_derivative_`, etc.) can be
   written in Cython for builtin functions (that are provided by the
@@ -61,7 +60,6 @@ Function
     BuiltinFunction
     SymbolicFunction
 ```
-
  We have 4 different types of functions, those defined by
 * ginac (sin, cos, ...),
 * the Sage library (cot)
@@ -106,7 +104,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7490
 archive/issue_comments_063141.json:
 ```json
 {
-    "body": "After applying:\n\n\n```\nsage: integrate(e^x,(x,0,2),hold=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/good/20605/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in integral(x, *args, **kwds)\n    566     \"\"\"\n    567     if hasattr(x, 'integral'):\n--> 568         return x.integral(*args, **kwds)\n    569     else:\n    570         from sage.symbolic.ring import SR\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.integral (sage/symbolic/expression.cpp:25362)()\n\nTypeError: integral() got an unexpected keyword argument 'hold'\n```\n",
+    "body": "After applying:\n\n```\nsage: integrate(e^x,(x,0,2),hold=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/good/20605/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in integral(x, *args, **kwds)\n    566     \"\"\"\n    567     if hasattr(x, 'integral'):\n--> 568         return x.integral(*args, **kwds)\n    569     else:\n    570         from sage.symbolic.ring import SR\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.integral (sage/symbolic/expression.cpp:25362)()\n\nTypeError: integral() got an unexpected keyword argument 'hold'\n```",
     "created_at": "2009-11-19T04:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ archive/issue_comments_063141.json:
 ```
 
 After applying:
-
 
 ```
 sage: integrate(e^x,(x,0,2),hold=True)
@@ -136,7 +133,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: integral() got an unexpected keyword argument 'hold'
 ```
-
 
 
 
@@ -307,7 +303,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063150.json:
 ```json
 {
-    "body": "Here's my review.\n\nThere are a number of things which break old code -- they should be deprecated first.\n\n\n```\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n\n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n```\n\n\nConversion of polylog to maxima is broken:\n\n```\nsage: polylog(2, x)._maxima_init_()\n'polylog(2,x)'\n```\n\ninstead of `'li[2](x)'`.\n\nSome doctests are missing:\n\n```\nsage/interfaces/maxima.py: _symbolic_\nsage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n```\n\n\nWhy do you have to use\n\n```\nf = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n```\n\ninstead of\n\n```\nf = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n```\n\n, which is more natural?\n\nIn expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nFinally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.",
+    "body": "Here's my review.\n\nThere are a number of things which break old code -- they should be deprecated first.\n\n```\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n\n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n```\n\nConversion of polylog to maxima is broken:\n\n```\nsage: polylog(2, x)._maxima_init_()\n'polylog(2,x)'\n```\ninstead of `'li[2](x)'`.\n\nSome doctests are missing:\n\n```\nsage/interfaces/maxima.py: _symbolic_\nsage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n```\n\nWhy do you have to use\n\n```\nf = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n```\ninstead of\n\n```\nf = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n```\n, which is more natural?\n\nIn expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nFinally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.",
     "created_at": "2009-11-29T07:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -320,7 +316,6 @@ Here's my review.
 
 There are a number of things which break old code -- they should be deprecated first.
 
-
 ```
 - exp(2,prec=100), gamma(pi,prec=100), etc.
 
@@ -329,14 +324,12 @@ There are a number of things which break old code -- they should be deprecated f
   sage: gamma(QQbar(I))
 ```
 
-
 Conversion of polylog to maxima is broken:
 
 ```
 sage: polylog(2, x)._maxima_init_()
 'polylog(2,x)'
 ```
-
 instead of `'li[2](x)'`.
 
 Some doctests are missing:
@@ -346,19 +339,16 @@ sage/interfaces/maxima.py: _symbolic_
 sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__
 ```
 
-
 Why do you have to use
 
 ```
 f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) 
 ```
-
 instead of
 
 ```
 f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) 
 ```
-
 , which is more natural?
 
 In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?
@@ -390,7 +380,7 @@ revised patch based on 4.3.alpha0
 archive/issue_comments_063152.json:
 ```json
 {
-    "body": "Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by @burcin created at 2009-12-03 14:27:23\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n\n> Conversion of polylog to maxima is broken:\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n\n \n> Some doctests are missing:\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by @burcin created at 2009-12-03 14:27:23\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n> Conversion of polylog to maxima is broken:\n\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n \n> Some doctests are missing:\n\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
     "created_at": "2009-12-03T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
@@ -407,6 +397,7 @@ Replying to [comment:7 mhansen]:
 > Here's my review.
 > 
 > There are a number of things which break old code -- they should be deprecated first.
+
 >
  {{{
 - exp(2,prec=100), gamma(pi,prec=100), etc.
@@ -417,7 +408,6 @@ Replying to [comment:7 mhansen]:
  }}}
 
 Done:
-
 
 ```
 sage: exp(2,prec=100)
@@ -440,16 +430,16 @@ sage: gamma(i)
 -0.154949828301811 - 0.498015668118356*I
 ```
 
-
 > Conversion of polylog to maxima is broken:
+
  {{{
  sage: polylog(2, x)._maxima_init_()
  'polylog(2,x)'
  }}}
 > instead of `'li[2](x)'`.
 
-I don't know why I left `_maxima_init_evaled_()` commented. It works now:
 
+I don't know why I left `_maxima_init_evaled_()` commented. It works now:
 
 ```
 sage: polylog(2, x)._maxima_()
@@ -457,9 +447,9 @@ li[2](x)
 sage: polylog(4, x)._maxima_()
 polylog(4,x)
 ```
-
  
 > Some doctests are missing:
+
  {{{
  sage/interfaces/maxima.py: _symbolic_
  sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__
@@ -468,25 +458,29 @@ polylog(4,x)
 Done.
 
 > Why do you have to use
+
  {{{
  f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) 
  }}}
 > instead of
+
  {{{
  f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) 
  }}}
 > , which is more natural?
 
+
 I converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.
 
 > In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?
+
 
 I wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.
 
 > Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.
 
-This seems to be an issue with complex embeddings of number field elements:
 
+This seems to be an issue with complex embeddings of number field elements:
 
 ```
 sage: complex(CDF.0)
@@ -499,7 +493,6 @@ sage: Q.<i> = NumberField(x^2+1)
 sage: complex(i)
 0.99999999999999967j
 ```
-
 
 Of course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. 
 

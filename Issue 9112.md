@@ -77,7 +77,7 @@ I'm not sure if printing the maximum entry is the best way to do it.  Once Combi
 archive/issue_comments_084632.json:
 ```json
 {
-    "body": "Replying to [comment:2 mhansen]:\n> I'm not sure if printing the maximum entry is the best way to do it.  Once CombinatorialClasses are Parents, then that information will be accessible from the parent.\n\nI didn't understand that..wouldn't it be convenient to have the maximum entry printed?\nI have a patch for this which I was just about to attach, but does change the repr.",
+    "body": "Replying to [comment:2 mhansen]:\n> I'm not sure if printing the maximum entry is the best way to do it.  Once CombinatorialClasses are Parents, then that information will be accessible from the parent.\n\n\nI didn't understand that..wouldn't it be convenient to have the maximum entry printed?\nI have a patch for this which I was just about to attach, but does change the repr.",
     "created_at": "2010-06-01T23:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -89,6 +89,7 @@ archive/issue_comments_084632.json:
 Replying to [comment:2 mhansen]:
 > I'm not sure if printing the maximum entry is the best way to do it.  Once CombinatorialClasses are Parents, then that information will be accessible from the parent.
 
+
 I didn't understand that..wouldn't it be convenient to have the maximum entry printed?
 I have a patch for this which I was just about to attach, but does change the repr.
 
@@ -99,7 +100,7 @@ I have a patch for this which I was just about to attach, but does change the re
 archive/issue_comments_084633.json:
 ```json
 {
-    "body": "Attachment [combinat-tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/combinat-tableau_py.patch) by @mwhansen created at 2010-06-01 23:24:59\n\nAfter #8910, you'll be able to do something like\n\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\n```\n\n\nIf you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n\nI see this as similar to the following example\n\n\n```\n\nsage: R = Integers(6)\nsage: f = R(1); f\n1\nsage: f.parent().order()\n6\n```\n\n\nHere, the element `f` does not print out that it is 1 mod 6.  It just prints out 1.",
+    "body": "Attachment [combinat-tableau_py.patch](tarball://root/attachments/some-uuid/ticket9112/combinat-tableau_py.patch) by @mwhansen created at 2010-06-01 23:24:59\n\nAfter #8910, you'll be able to do something like\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\n```\n\nIf you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n\nI see this as similar to the following example\n\n```\n\nsage: R = Integers(6)\nsage: f = R(1); f\n1\nsage: f.parent().order()\n6\n```\n\nHere, the element `f` does not print out that it is 1 mod 6.  It just prints out 1.",
     "created_at": "2010-06-01T23:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -112,7 +113,6 @@ Attachment [combinat-tableau_py.patch](tarball://root/attachments/some-uuid/tick
 
 After #8910, you'll be able to do something like
 
-
 ```
 sage: S = SemistandardTableaux([3,2,1])
 sage: s = S.random_element()
@@ -122,11 +122,9 @@ sage: s.parent() # after #8910
 Semistandard tableaux of shape [3, 2, 1]
 ```
 
-
 If you had a different parent such as "Semistandard tableaux of shape [3, 2, 1] with maximum entry 8" then you could get at the 8 from the parent method of the tableaux.
 
 I see this as similar to the following example
-
 
 ```
 
@@ -137,7 +135,6 @@ sage: f.parent().order()
 6
 ```
 
-
 Here, the element `f` does not print out that it is 1 mod 6.  It just prints out 1.
 
 
@@ -147,7 +144,7 @@ Here, the element `f` does not print out that it is 1 mod 6.  It just prints out
 archive/issue_comments_084634.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> After #8910, you'll be able to do something like\n> \n> {{{\n> sage: S = SemistandardTableaux([3,2,1])\n> sage: s = S.random_element()\n> sage: s\n> [[2, 2, 2], [3, 5], [4]]\n> sage: s.parent() # after #8910\n> Semistandard tableaux of shape [3, 2, 1]\n> }}}\n> \n> If you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n> \n> I see this as similar to the following example\n> \n> {{{\n> \n> sage: R = Integers(6)\n> sage: f = R(1); f\n> 1\n> sage: f.parent().order()\n> 6\n> }}}\n> \n> Here, the element `f` does not print out that it is 1 mod 6.  It just prints out 1. \n\n\nOk, I still don't really see what is wrong with printing the maximum element. In your example, the patch would change it to:\n\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1] and maximum entry 6 # after #9112\n```\n\n\nBut you think there should be a method which returns the maximum entry? Like:\n\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\nsage: s.parent().max_entry()\n6\n```\n",
+    "body": "Replying to [comment:4 mhansen]:\n> After #8910, you'll be able to do something like\n> \n> \n> ```\n> sage: S = SemistandardTableaux([3,2,1])\n> sage: s = S.random_element()\n> sage: s\n> [[2, 2, 2], [3, 5], [4]]\n> sage: s.parent() # after #8910\n> Semistandard tableaux of shape [3, 2, 1]\n> ```\n> \n> If you had a different parent such as \"Semistandard tableaux of shape [3, 2, 1] with maximum entry 8\" then you could get at the 8 from the parent method of the tableaux.\n> \n> I see this as similar to the following example\n> \n> \n> ```\n> \n> sage: R = Integers(6)\n> sage: f = R(1); f\n> 1\n> sage: f.parent().order()\n> 6\n> ```\n> \n> Here, the element `f` does not print out that it is 1 mod 6.  It just prints out 1. \n\n\n\nOk, I still don't really see what is wrong with printing the maximum element. In your example, the patch would change it to:\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1] and maximum entry 6 # after #9112\n```\n\nBut you think there should be a method which returns the maximum entry? Like:\n\n```\nsage: S = SemistandardTableaux([3,2,1])\nsage: s = S.random_element()\nsage: s\n[[2, 2, 2], [3, 5], [4]]\nsage: s.parent() # after #8910\nSemistandard tableaux of shape [3, 2, 1]\nsage: s.parent().max_entry()\n6\n```",
     "created_at": "2010-06-01T23:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -159,33 +156,35 @@ archive/issue_comments_084634.json:
 Replying to [comment:4 mhansen]:
 > After #8910, you'll be able to do something like
 > 
-> {{{
+> 
+> ```
 > sage: S = SemistandardTableaux([3,2,1])
 > sage: s = S.random_element()
 > sage: s
 > [[2, 2, 2], [3, 5], [4]]
 > sage: s.parent() # after #8910
 > Semistandard tableaux of shape [3, 2, 1]
-> }}}
+> ```
 > 
 > If you had a different parent such as "Semistandard tableaux of shape [3, 2, 1] with maximum entry 8" then you could get at the 8 from the parent method of the tableaux.
 > 
 > I see this as similar to the following example
 > 
-> {{{
+> 
+> ```
 > 
 > sage: R = Integers(6)
 > sage: f = R(1); f
 > 1
 > sage: f.parent().order()
 > 6
-> }}}
+> ```
 > 
 > Here, the element `f` does not print out that it is 1 mod 6.  It just prints out 1. 
 
 
-Ok, I still don't really see what is wrong with printing the maximum element. In your example, the patch would change it to:
 
+Ok, I still don't really see what is wrong with printing the maximum element. In your example, the patch would change it to:
 
 ```
 sage: S = SemistandardTableaux([3,2,1])
@@ -196,9 +195,7 @@ sage: s.parent() # after #8910
 Semistandard tableaux of shape [3, 2, 1] and maximum entry 6 # after #9112
 ```
 
-
 But you think there should be a method which returns the maximum entry? Like:
-
 
 ```
 sage: S = SemistandardTableaux([3,2,1])
@@ -210,7 +207,6 @@ Semistandard tableaux of shape [3, 2, 1]
 sage: s.parent().max_entry()
 6
 ```
-
 
 
 
@@ -255,7 +251,7 @@ By the way, how do you remove an attached file? I didn't put the trac number in 
 archive/issue_comments_084637.json:
 ```json
 {
-    "body": "I'm sorry -- I was confused. I thought you were suggesting printing the maximum entry with each individual tableau rather than with the parent class.  So, ignore my comments regarding that :-)\n\nRegarding the patch, a couple of questions:\n\n1.  Why is corners() being changed?  It seems unrelated to the ticket.\n\n2.  4 spaces should always be used as the indentation.\n\n3.  Any comparisons with None should be used using `is` instead of `==`.  For example, `if mu is None` or `if max_entry is not None`.  Also, tests like `not i == 1` should be `i != 1`.\n\n4.  Instead of having -1 represent a max_entry of infinity, I think we should just use Sage's object for infinity instead.  \n\n\n```\nsage: type(oo)\n<class 'sage.rings.infinity.PlusInfinity'>\nsage: SST = SemistandardTableaux(3, max_entry=oo); SST \nSemistandard tableaux of size 3 and no maximum entry \n```\n\n\n5. `raise TypeError, \"mu must be of size p (= %s)\"%p ` might be better as a `ValueError`.\n\nOther than that, I'm pretty happy with the changes.\n\nYou need certain privileges to remove files.  If you just post the new one, I can delete any ones that need to be deleted.",
+    "body": "I'm sorry -- I was confused. I thought you were suggesting printing the maximum entry with each individual tableau rather than with the parent class.  So, ignore my comments regarding that :-)\n\nRegarding the patch, a couple of questions:\n\n1.  Why is corners() being changed?  It seems unrelated to the ticket.\n\n2.  4 spaces should always be used as the indentation.\n\n3.  Any comparisons with None should be used using `is` instead of `==`.  For example, `if mu is None` or `if max_entry is not None`.  Also, tests like `not i == 1` should be `i != 1`.\n\n4.  Instead of having -1 represent a max_entry of infinity, I think we should just use Sage's object for infinity instead.  \n\n```\nsage: type(oo)\n<class 'sage.rings.infinity.PlusInfinity'>\nsage: SST = SemistandardTableaux(3, max_entry=oo); SST \nSemistandard tableaux of size 3 and no maximum entry \n```\n\n5. `raise TypeError, \"mu must be of size p (= %s)\"%p ` might be better as a `ValueError`.\n\nOther than that, I'm pretty happy with the changes.\n\nYou need certain privileges to remove files.  If you just post the new one, I can delete any ones that need to be deleted.",
     "created_at": "2010-06-01T23:59:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -276,14 +272,12 @@ Regarding the patch, a couple of questions:
 
 4.  Instead of having -1 represent a max_entry of infinity, I think we should just use Sage's object for infinity instead.  
 
-
 ```
 sage: type(oo)
 <class 'sage.rings.infinity.PlusInfinity'>
 sage: SST = SemistandardTableaux(3, max_entry=oo); SST 
 Semistandard tableaux of size 3 and no maximum entry 
 ```
-
 
 5. `raise TypeError, "mu must be of size p (= %s)"%p ` might be better as a `ValueError`.
 
@@ -449,7 +443,7 @@ Eric
 archive/issue_comments_084645.json:
 ```json
 {
-    "body": "Replying to [comment:14 QuantumKing]:\n\n> I've allowed for the user to give `PlusInfinity` as well as anything that has type `PlusInfinity`\n> as an infinite max_entry.\n\nJust curious, do you know of anything that has type `PlusInfinity` other than `PlusInfinity`?  This check looks redundant to me...",
+    "body": "Replying to [comment:14 QuantumKing]:\n\n> I've allowed for the user to give `PlusInfinity` as well as anything that has type `PlusInfinity`\n> as an infinite max_entry.\n\n\nJust curious, do you know of anything that has type `PlusInfinity` other than `PlusInfinity`?  This check looks redundant to me...",
     "created_at": "2010-06-18T16:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9112",
     "type": "issue_comment",
@@ -462,6 +456,7 @@ Replying to [comment:14 QuantumKing]:
 
 > I've allowed for the user to give `PlusInfinity` as well as anything that has type `PlusInfinity`
 > as an infinite max_entry.
+
 
 Just curious, do you know of anything that has type `PlusInfinity` other than `PlusInfinity`?  This check looks redundant to me...
 

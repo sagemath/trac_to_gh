@@ -3,7 +3,7 @@
 archive/issues_000549.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn the notebook, the following code:\n\n\n```\nprint \"abc\"\nprint\nprint \"def\"\n```\n\n\ndisplays\n\n\n```\nabc\ndef\n```\n\n\ninstead of\n\n\n```\nabc\n\ndef\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/549\n\n",
+    "body": "Assignee: boothby\n\nIn the notebook, the following code:\n\n```\nprint \"abc\"\nprint\nprint \"def\"\n```\n\ndisplays\n\n```\nabc\ndef\n```\n\ninstead of\n\n```\nabc\n\ndef\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/549\n\n",
     "created_at": "2007-09-01T02:18:33Z",
     "labels": [
         "component: notebook",
@@ -21,32 +21,26 @@ Assignee: boothby
 
 In the notebook, the following code:
 
-
 ```
 print "abc"
 print
 print "def"
 ```
 
-
 displays
-
 
 ```
 abc
 def
 ```
-
 
 instead of
 
-
 ```
 abc
 
 def
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/549

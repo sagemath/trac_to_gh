@@ -3,7 +3,7 @@
 archive/issues_006487.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:\nsage: sage: s = SFASchur(QQ)\nsage: sage: s([2]).plethysm(s.zero_element())\nsage.bin:\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nThis problem also exists with sage-4.0.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6487\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:\nsage: sage: s = SFASchur(QQ)\nsage: sage: s([2]).plethysm(s.zero_element())\nsage.bin:\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\nThis problem also exists with sage-4.0.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6487\n\n",
     "created_at": "2009-07-08T19:17:28Z",
     "labels": [
         "component: combinatorics",
@@ -20,7 +20,6 @@ archive/issues_006487.json:
 Assignee: @mwhansen
 
 CC:  @mwhansen
-
 
 ```
 ----------------------------------------------------------------------
@@ -40,7 +39,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ------------------------------------------------------------
 ```
-
 This problem also exists with sage-4.0.2.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6487
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6487
 archive/issue_comments_052362.json:
 ```json
 {
-    "body": "This appears to be fixed in sage-4.4.\n\n```\nsage: sage: sage: s = SFASchur(QQ)\nsage: sage: sage: s([2]).plethysm(s.zero_element())\n0\n```\n",
+    "body": "This appears to be fixed in sage-4.4.\n\n```\nsage: sage: sage: s = SFASchur(QQ)\nsage: sage: sage: s([2]).plethysm(s.zero_element())\n0\n```",
     "created_at": "2010-05-06T15:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6487",
     "type": "issue_comment",
@@ -70,7 +68,6 @@ sage: sage: sage: s = SFASchur(QQ)
 sage: sage: sage: s([2]).plethysm(s.zero_element())
 0
 ```
-
 
 
 

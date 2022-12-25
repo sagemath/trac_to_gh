@@ -3,7 +3,7 @@
 archive/issues_008323.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTry the following:\n\n```\nsage: name\n'KodairaSymbol'\nsage: type(name)\n<type 'str'>\n```\n\n\nI'm not sure where this gets imported, but it seems wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8323\n\n",
+    "body": "Assignee: tbd\n\nTry the following:\n\n```\nsage: name\n'KodairaSymbol'\nsage: type(name)\n<type 'str'>\n```\n\nI'm not sure where this gets imported, but it seems wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8323\n\n",
     "created_at": "2010-02-22T02:33:45Z",
     "labels": [
         "component: misc",
@@ -27,7 +27,6 @@ sage: name
 sage: type(name)
 <type 'str'>
 ```
-
 
 I'm not sure where this gets imported, but it seems wrong.
 
@@ -60,7 +59,7 @@ Changing status from new to needs_review.
 archive/issue_comments_073742.json:
 ```json
 {
-    "body": "It's coming from near line 150 in `sage/all.py`: \n\n\n```\n#Deprecate the is_* functions from the top level\n#All of these functions should be removed from the top level\n#after a few releases, and this code should be removed.\n#--Mike Hansen 9/25/2008\nglobs = globals()\nfrom functools import wraps, partial\nfor name,func in globs.items():\n```\n\n\n... but then `name` and `func` are never deleted. (Ahh, scoping in Python.) Sure enough, `func` is defined, too:\n\n\n```\nsage: func\n<function KodairaSymbol at 0x10940daa0>\n```\n\n\nSo I'm attaching an obvious patch -- there might be something classier, but this works. (And yes, this is still necessary in Py3.)",
+    "body": "It's coming from near line 150 in `sage/all.py`: \n\n```\n#Deprecate the is_* functions from the top level\n#All of these functions should be removed from the top level\n#after a few releases, and this code should be removed.\n#--Mike Hansen 9/25/2008\nglobs = globals()\nfrom functools import wraps, partial\nfor name,func in globs.items():\n```\n\n... but then `name` and `func` are never deleted. (Ahh, scoping in Python.) Sure enough, `func` is defined, too:\n\n```\nsage: func\n<function KodairaSymbol at 0x10940daa0>\n```\n\nSo I'm attaching an obvious patch -- there might be something classier, but this works. (And yes, this is still necessary in Py3.)",
     "created_at": "2010-02-22T05:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
@@ -70,7 +69,6 @@ archive/issue_comments_073742.json:
 ```
 
 It's coming from near line 150 in `sage/all.py`: 
-
 
 ```
 #Deprecate the is_* functions from the top level
@@ -82,15 +80,12 @@ from functools import wraps, partial
 for name,func in globs.items():
 ```
 
-
 ... but then `name` and `func` are never deleted. (Ahh, scoping in Python.) Sure enough, `func` is defined, too:
-
 
 ```
 sage: func
 <function KodairaSymbol at 0x10940daa0>
 ```
-
 
 So I'm attaching an obvious patch -- there might be something classier, but this works. (And yes, this is still necessary in Py3.)
 
@@ -213,7 +208,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073749.json:
 ```json
 {
-    "body": "> I've added a test and a new version of the patch. \n\ngreat: positive review for me.",
+    "body": "> I've added a test and a new version of the patch. \n\n\ngreat: positive review for me.",
     "created_at": "2010-02-25T18:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
@@ -223,6 +218,7 @@ archive/issue_comments_073749.json:
 ```
 
 > I've added a test and a new version of the patch. 
+
 
 great: positive review for me.
 

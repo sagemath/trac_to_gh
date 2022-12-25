@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6270
 archive/issue_comments_049997.json:
 ```json
 {
-    "body": "Attachment [trac_6270.patch](tarball://root/attachments/some-uuid/ticket6270/trac_6270.patch) by mvngu created at 2009-06-12 19:35:26\n\nWhen applying the patch, I got the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6270\nsage: hg_sage.apply(\"../patch/6270/trac_6270.patch\")\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg import   \"/scratch/mvngu/patch/6270/trac_6270.patch\"\napplying /scratch/mvngu/patch/6270/trac_6270.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 1865\n2 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\n\nThe patch was applied on a fresh clone of Sage 4.0.1. Should there be a rebase?",
+    "body": "Attachment [trac_6270.patch](tarball://root/attachments/some-uuid/ticket6270/trac_6270.patch) by mvngu created at 2009-06-12 19:35:26\n\nWhen applying the patch, I got the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 6270\nsage: hg_sage.apply(\"../patch/6270/trac_6270.patch\")\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.1/devel/sage\" && hg import   \"/scratch/mvngu/patch/6270/trac_6270.patch\"\napplying /scratch/mvngu/patch/6270/trac_6270.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\nHunk #2 FAILED at 1865\n2 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\nabort: patch failed to apply\n```\nThe patch was applied on a fresh clone of Sage 4.0.1. Should there be a rebase?",
     "created_at": "2009-06-12T19:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ Hunk #2 FAILED at 1865
 2 out of 2 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej
 abort: patch failed to apply
 ```
-
 The patch was applied on a fresh clone of Sage 4.0.1. Should there be a rebase?
 
 
@@ -106,7 +105,7 @@ You might want to look at # 6269 as well regarding the rgbcolor thing; I have po
 archive/issue_comments_050000.json:
 ```json
 {
-    "body": "After applying the patch, the following modules are in the reference manual, but the ReST formatting need some polishing:\n\n```\nsage/plot/circle\nsage/plot/disk\n```\n\nThe following are referred to in the reference manual, but are not yet in the manual. So there's no hyperlink to any of them even if one is defined.\n\n```\nline()\nimplicit_plot()\nregion_plot()\nscatter_plot()\nbar_chart()\ncontour_plot()\ndensity_plot()\nplot_vector_field()\nplot_slope_field()\nmatrix_plot()\ncomplex_plot()\n```\n\nI can give the patch a positive review for adding files under the `sage/plot` directory to the reference manual. The formatting and referencing issues I mentioned above are **not** introduced by the patch, and should be addressed in another ticket. So patches should be applied in the following order:\n1. apply the patch at #6257\n2. then apply the patch on this ticket.",
+    "body": "After applying the patch, the following modules are in the reference manual, but the ReST formatting need some polishing:\n\n```\nsage/plot/circle\nsage/plot/disk\n```\nThe following are referred to in the reference manual, but are not yet in the manual. So there's no hyperlink to any of them even if one is defined.\n\n```\nline()\nimplicit_plot()\nregion_plot()\nscatter_plot()\nbar_chart()\ncontour_plot()\ndensity_plot()\nplot_vector_field()\nplot_slope_field()\nmatrix_plot()\ncomplex_plot()\n```\nI can give the patch a positive review for adding files under the `sage/plot` directory to the reference manual. The formatting and referencing issues I mentioned above are **not** introduced by the patch, and should be addressed in another ticket. So patches should be applied in the following order:\n1. apply the patch at #6257\n2. then apply the patch on this ticket.",
     "created_at": "2009-06-13T11:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6270",
     "type": "issue_comment",
@@ -121,7 +120,6 @@ After applying the patch, the following modules are in the reference manual, but
 sage/plot/circle
 sage/plot/disk
 ```
-
 The following are referred to in the reference manual, but are not yet in the manual. So there's no hyperlink to any of them even if one is defined.
 
 ```
@@ -137,7 +135,6 @@ plot_slope_field()
 matrix_plot()
 complex_plot()
 ```
-
 I can give the patch a positive review for adding files under the `sage/plot` directory to the reference manual. The formatting and referencing issues I mentioned above are **not** introduced by the patch, and should be addressed in another ticket. So patches should be applied in the following order:
 1. apply the patch at #6257
 2. then apply the patch on this ticket.

@@ -3,7 +3,7 @@
 archive/issues_004257.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  singular\n\nThis now works:\n\n\n```\nsage: A = random_matrix(ZZ,3,3); A\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\nsage: As = singular(A); As\n-8     2     0\n 0     1    -1\n 2     1   -95\nsage: As._sage_()\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4257\n\n",
+    "body": "Assignee: @malb\n\nCC:  singular\n\nThis now works:\n\n```\nsage: A = random_matrix(ZZ,3,3); A\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\nsage: As = singular(A); As\n-8     2     0\n 0     1    -1\n 2     1   -95\nsage: As._sage_()\n[ -8   2   0]\n[  0   1  -1]\n[  2   1 -95]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4257\n\n",
     "created_at": "2008-10-09T21:54:29Z",
     "labels": [
         "component: interfaces",
@@ -22,7 +22,6 @@ CC:  singular
 
 This now works:
 
-
 ```
 sage: A = random_matrix(ZZ,3,3); A
 [ -8   2   0]
@@ -37,7 +36,6 @@ sage: As._sage_()
 [  0   1  -1]
 [  2   1 -95]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4257
 

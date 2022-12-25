@@ -84,7 +84,7 @@ Changing status from new to assigned.
 archive/issue_comments_009119.json:
 ```json
 {
-    "body": "Build time has increased. On neron, i.e an Ultra III Sparc:\n\n```\nreal    61m13.083s\nuser    60m26.070s\nsys     0m35.080s\nSuccessfully installed symmetrica-2.0\n```\n\n\nCheers,\n\nMichael",
+    "body": "Build time has increased. On neron, i.e an Ultra III Sparc:\n\n```\nreal    61m13.083s\nuser    60m26.070s\nsys     0m35.080s\nSuccessfully installed symmetrica-2.0\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-07T10:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ sys     0m35.080s
 Successfully installed symmetrica-2.0
 ```
 
-
 Cheers,
 
 Michael
@@ -114,7 +113,7 @@ Michael
 archive/issue_comments_009120.json:
 ```json
 {
-    "body": "Mike Hansen and I did some more testing and all the following figures are from sage.math:\n\n```\n0.3.3:\n\nreal    0m51.192s\nuser    0m46.991s\nsys     0m3.044s\n\n2.0 vanilla, i.e. \"-O2\":\n\nreal    31m30.192s\nuser    30m48.360s\nsys     0m35.214s\n\n2.0 \"-O0\" +pch:\n\nreal    4m6.438s\nuser    3m45.962s\nsys     0m15.149s\n\n2.0 \"-O0\":\n\nreal    4m14.650s\nuser    3m56.743s\nsys     0m16.057s\n\n2.0 \"-O1\":\n\nabout 13 minutes\n```\n\nMike Hanson did some benchmarking:  \"It looks like O1 is just as fast (and in some cases faster) than O2.\"\n\nSo, \"-O1\" it ought to be.\n\nCheers,\n\nMichael",
+    "body": "Mike Hansen and I did some more testing and all the following figures are from sage.math:\n\n```\n0.3.3:\n\nreal    0m51.192s\nuser    0m46.991s\nsys     0m3.044s\n\n2.0 vanilla, i.e. \"-O2\":\n\nreal    31m30.192s\nuser    30m48.360s\nsys     0m35.214s\n\n2.0 \"-O0\" +pch:\n\nreal    4m6.438s\nuser    3m45.962s\nsys     0m15.149s\n\n2.0 \"-O0\":\n\nreal    4m14.650s\nuser    3m56.743s\nsys     0m16.057s\n\n2.0 \"-O1\":\n\nabout 13 minutes\n```\nMike Hanson did some benchmarking:  \"It looks like O1 is just as fast (and in some cases faster) than O2.\"\n\nSo, \"-O1\" it ought to be.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-08T04:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
@@ -154,7 +153,6 @@ sys     0m16.057s
 
 about 13 minutes
 ```
-
 Mike Hanson did some benchmarking:  "It looks like O1 is just as fast (and in some cases faster) than O2."
 
 So, "-O1" it ought to be.

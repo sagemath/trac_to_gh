@@ -3,7 +3,7 @@
 archive/issues_001223.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn my trusty OSX 10.4 PPC 1.4GHz iBook I get the following timeout:\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/plot/plot.py\nsage -t  devel/sage-main/sage/plot/plot.py                  *** ***\nError: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [269.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/plot/plot.py\nTotal time for all tests: 269.9 seconds\n```\n\nI have seen similar issues on slower Linux boxen, so maybe we should raise the timeout value.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1223\n\n",
+    "body": "Assignee: mabshoff\n\nOn my trusty OSX 10.4 PPC 1.4GHz iBook I get the following timeout:\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/plot/plot.py\nsage -t  devel/sage-main/sage/plot/plot.py                  *** ***\nError: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [269.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n        sage -t  devel/sage-main/sage/plot/plot.py\nTotal time for all tests: 269.9 seconds\n```\nI have seen similar issues on slower Linux boxen, so maybe we should raise the timeout value.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1223\n\n",
     "created_at": "2007-11-20T22:53:11Z",
     "labels": [
         "component: doctest coverage",
@@ -35,7 +35,6 @@ The following tests failed:
         sage -t  devel/sage-main/sage/plot/plot.py
 Total time for all tests: 269.9 seconds
 ```
-
 I have seen similar issues on slower Linux boxen, so maybe we should raise the timeout value.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_008644.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nI released a new pynac version after applying a few upstream patches from `GiNaC`, the most important being a fix for #8565.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.12.spkg\n\nSince these are minor changes, I don't expect any build problems. I've tested the package on \n* an up-to-date 64-bit Gentoo system (my laptop) with \n\n```\ngcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4\n```\n\n* 32-bit Debian GNU/Linux 5.0.4 (lenny)\n\n```\ngcc (Debian 4.3.2-1.1) 4.3.2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8644\n\n",
+    "body": "Assignee: tbd\n\nI released a new pynac version after applying a few upstream patches from `GiNaC`, the most important being a fix for #8565.\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.12.spkg\n\nSince these are minor changes, I don't expect any build problems. I've tested the package on \n* an up-to-date 64-bit Gentoo system (my laptop) with \n\n```\ngcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4\n```\n* 32-bit Debian GNU/Linux 5.0.4 (lenny)\n\n```\ngcc (Debian 4.3.2-1.1) 4.3.2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8644\n\n",
     "created_at": "2010-04-02T14:47:11Z",
     "labels": [
         "component: packages: standard",
@@ -28,13 +28,11 @@ Since these are minor changes, I don't expect any build problems. I've tested th
 ```
 gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4
 ```
-
 * 32-bit Debian GNU/Linux 5.0.4 (lenny)
 
 ```
 gcc (Debian 4.3.2-1.1) 4.3.2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8644
 

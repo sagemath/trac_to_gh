@@ -3,7 +3,7 @@
 archive/issues_003265.json:
 ```json
 {
-    "body": "Assignee: failure\n\nSome doctests [likely notebook related] leave files in $SAGE_ROOT/devel/sage:\n\n```\nhg status\n? sage/server/docs-0.html\n? sage/server/docs-1.html\n? sage/server/docs-2.html\n? sage/server/notebook/a.txt\n```\n\nThis is problematic for two reasons:\n* temp files should be written to SAGE_TESTDIR since that is guaranteed to be writable, i.e. when you run doctests on an install that is not owned by the current user\n* it leaves crap in the default tree ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3265\n\n",
+    "body": "Assignee: failure\n\nSome doctests [likely notebook related] leave files in $SAGE_ROOT/devel/sage:\n\n```\nhg status\n? sage/server/docs-0.html\n? sage/server/docs-1.html\n? sage/server/docs-2.html\n? sage/server/notebook/a.txt\n```\nThis is problematic for two reasons:\n* temp files should be written to SAGE_TESTDIR since that is guaranteed to be writable, i.e. when you run doctests on an install that is not owned by the current user\n* it leaves crap in the default tree ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3265\n\n",
     "created_at": "2008-05-21T13:35:15Z",
     "labels": [
         "component: doctest coverage",
@@ -28,7 +28,6 @@ hg status
 ? sage/server/docs-2.html
 ? sage/server/notebook/a.txt
 ```
-
 This is problematic for two reasons:
 * temp files should be written to SAGE_TESTDIR since that is guaranteed to be writable, i.e. when you run doctests on an install that is not owned by the current user
 * it leaves crap in the default tree ;)

@@ -3,7 +3,7 @@
 archive/issues_001100.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nAccording to the documentation, .roots() is only supposed to return values from the base ring, so this is a bug:\n\n\n```\nsage: x = polygen(ZZ)\nsage: f = 2*x-3\nsage: f.roots()\n[(3/2, 1)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1100\n\n",
+    "body": "Assignee: cwitty\n\nAccording to the documentation, .roots() is only supposed to return values from the base ring, so this is a bug:\n\n```\nsage: x = polygen(ZZ)\nsage: f = 2*x-3\nsage: f.roots()\n[(3/2, 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1100\n\n",
     "created_at": "2007-11-04T04:28:28Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,14 +20,12 @@ Assignee: cwitty
 
 According to the documentation, .roots() is only supposed to return values from the base ring, so this is a bug:
 
-
 ```
 sage: x = polygen(ZZ)
 sage: f = 2*x-3
 sage: f.roots()
 [(3/2, 1)]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/1100

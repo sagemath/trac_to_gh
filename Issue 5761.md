@@ -178,7 +178,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_044947.json:
 ```json
 {
-    "body": "There are some `True, False` and `None` not surrounded by ````.\n\nAfter\n\n```\n\"\\\\ZZ[x]\n```\n\nin\n\n```\nEXAMPLES::\n\n    # sage: latex.eval(\"\\\\ZZ[x], locals(), filename=\"test\") # This would generate a file named \"test.png\"\n    # ''\n    # sage: latex.eval(\"\\\\ZZ[x], locals(), filename=\"/path/to/test\") # This would generate a file named \"/path/to/test.png\"\n    # ''\n```\n\na \" is missing, otherwise the command will fail. You can use *# not tested* at the end of the line instead of commenting out the examples.\n\nEverything else looks good to me.",
+    "body": "There are some `True, False` and `None` not surrounded by ````.\n\nAfter\n\n```\n\"\\\\ZZ[x]\n```\nin\n\n```\nEXAMPLES::\n\n    # sage: latex.eval(\"\\\\ZZ[x], locals(), filename=\"test\") # This would generate a file named \"test.png\"\n    # ''\n    # sage: latex.eval(\"\\\\ZZ[x], locals(), filename=\"/path/to/test\") # This would generate a file named \"/path/to/test.png\"\n    # ''\n```\na \" is missing, otherwise the command will fail. You can use *# not tested* at the end of the line instead of commenting out the examples.\n\nEverything else looks good to me.",
     "created_at": "2013-02-02T16:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
@@ -194,7 +194,6 @@ After
 ```
 "\\ZZ[x]
 ```
-
 in
 
 ```
@@ -205,7 +204,6 @@ EXAMPLES::
     # sage: latex.eval("\\ZZ[x], locals(), filename="/path/to/test") # This would generate a file named "/path/to/test.png"
     # ''
 ```
-
 a " is missing, otherwise the command will fail. You can use *# not tested* at the end of the line instead of commenting out the examples.
 
 Everything else looks good to me.
@@ -257,7 +255,7 @@ Travis
 archive/issue_comments_044950.json:
 ```json
 {
-    "body": "Could you add an additional patch to fix the trac reference in `repr_lincomb()`:\n\n```\nVerify that a certain corner case works (see trac 5707 and 5766)::\n```\n\nand in `latex_varify()`:\n\n```\nif \"is_fname\" flag is True or False.\n```\n",
+    "body": "Could you add an additional patch to fix the trac reference in `repr_lincomb()`:\n\n```\nVerify that a certain corner case works (see trac 5707 and 5766)::\n```\nand in `latex_varify()`:\n\n```\nif \"is_fname\" flag is True or False.\n```",
     "created_at": "2013-02-05T22:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
@@ -271,7 +269,6 @@ Could you add an additional patch to fix the trac reference in `repr_lincomb()`:
 ```
 Verify that a certain corner case works (see trac 5707 and 5766)::
 ```
-
 and in `latex_varify()`:
 
 ```
@@ -280,13 +277,12 @@ if "is_fname" flag is True or False.
 
 
 
-
 ---
 
 archive/issue_comments_044951.json:
 ```json
 {
-    "body": "Fixed. I've also made the patchbot offending test optional.\n\n-----\n\nFor patchbot:\n\nApply only: trac_5791-latex_docstrings-ts.patch",
+    "body": "Fixed. I've also made the patchbot offending test optional.\n\n---\n\nFor patchbot:\n\nApply only: trac_5791-latex_docstrings-ts.patch",
     "created_at": "2013-02-05T23:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
@@ -297,7 +293,7 @@ archive/issue_comments_044951.json:
 
 Fixed. I've also made the patchbot offending test optional.
 
------
+---
 
 For patchbot:
 
@@ -310,7 +306,7 @@ Apply only: trac_5791-latex_docstrings-ts.patch
 archive/issue_comments_044952.json:
 ```json
 {
-    "body": "You added one trailing whitespace after \"An error\"\n\n```\nsage: latex.eval(\"\\ThisIsAnInvalidCommand\", {}) # optional - requires 'convert'\nAn error\n```\n\nBut I think it's no problem. So I'm giving this a positive review. Let's hope the release manager does not complain about the wrong number in the filename. ;)",
+    "body": "You added one trailing whitespace after \"An error\"\n\n```\nsage: latex.eval(\"\\ThisIsAnInvalidCommand\", {}) # optional - requires 'convert'\nAn error\n```\nBut I think it's no problem. So I'm giving this a positive review. Let's hope the release manager does not complain about the wrong number in the filename. ;)",
     "created_at": "2013-02-06T18:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5761",
     "type": "issue_comment",
@@ -325,7 +321,6 @@ You added one trailing whitespace after "An error"
 sage: latex.eval("\ThisIsAnInvalidCommand", {}) # optional - requires 'convert'
 An error
 ```
-
 But I think it's no problem. So I'm giving this a positive review. Let's hope the release manager does not complain about the wrong number in the filename. ;)
 
 

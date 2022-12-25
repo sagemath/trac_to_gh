@@ -216,7 +216,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061426.json:
 ```json
 {
-    "body": "Updated version found here: http://sage.math.washington.edu/home/timdumol/libtiff-3.9.4.spkg\n\nThis should fix the OS X 10.6 problems (c.f. #7344).\n\n\n```\nsage: import Image\nsage: im = Image.open(\"<your-tiff-file-here>\")\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: im.save(\"wherever.tiff\")\n```\n",
+    "body": "Updated version found here: http://sage.math.washington.edu/home/timdumol/libtiff-3.9.4.spkg\n\nThis should fix the OS X 10.6 problems (c.f. #7344).\n\n```\nsage: import Image\nsage: im = Image.open(\"<your-tiff-file-here>\")\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: im.save(\"wherever.tiff\")\n```",
     "created_at": "2010-08-17T18:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7345",
     "type": "issue_comment",
@@ -229,7 +229,6 @@ Updated version found here: http://sage.math.washington.edu/home/timdumol/libtif
 
 This should fix the OS X 10.6 problems (c.f. #7344).
 
-
 ```
 sage: import Image
 sage: im = Image.open("<your-tiff-file-here>")
@@ -239,7 +238,6 @@ TIFF (455, 495) 1
 sage: im.show()
 sage: im.save("wherever.tiff")
 ```
-
 
 
 
@@ -375,7 +373,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061434.json:
 ```json
 {
-    "body": "There are some problems on OS X:\n\n```\nsage: im = Image.open('/Users/palmieri/Desktop/P1000717.tiff')\nsage: im.show()\n---------------------------------------------------------------------------\nIOError                                   Traceback (most recent call last)\n...\nIOError: encoder jpeg not available\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format\nNone\n```\n\n\nBy the way, according to ImageMagick's \"identify\" program:\n\n```\n$ identify P1000717.tiff \nP1000717.tiff TIFF 3648x2736 3648x2736+0+0 DirectClass 8-bit 28.5613mb \n```\n\nSo I think it's the right format to be opened by this library.  Is there anything else I should check?",
+    "body": "There are some problems on OS X:\n\n```\nsage: im = Image.open('/Users/palmieri/Desktop/P1000717.tiff')\nsage: im.show()\n---------------------------------------------------------------------------\nIOError                                   Traceback (most recent call last)\n...\nIOError: encoder jpeg not available\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format\nNone\n```\n\nBy the way, according to ImageMagick's \"identify\" program:\n\n```\n$ identify P1000717.tiff \nP1000717.tiff TIFF 3648x2736 3648x2736+0+0 DirectClass 8-bit 28.5613mb \n```\nSo I think it's the right format to be opened by this library.  Is there anything else I should check?",
     "created_at": "2011-08-03T00:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7345",
     "type": "issue_comment",
@@ -398,14 +396,12 @@ sage: print im.format
 None
 ```
 
-
 By the way, according to ImageMagick's "identify" program:
 
 ```
 $ identify P1000717.tiff 
 P1000717.tiff TIFF 3648x2736 3648x2736+0+0 DirectClass 8-bit 28.5613mb 
 ```
-
 So I think it's the right format to be opened by this library.  Is there anything else I should check?
 
 
@@ -469,7 +465,7 @@ In the notebook, `im.show()` saves a JPEG into the worksheet directory, which is
 archive/issue_comments_061438.json:
 ```json
 {
-    "body": "I was actually working from the command line, but anyway, what about this part:\n\n```\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format\nNone\n```\n\nAccording to the earlier example, this should have said \"TIFF\".",
+    "body": "I was actually working from the command line, but anyway, what about this part:\n\n```\nsage: im = im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format\nNone\n```\nAccording to the earlier example, this should have said \"TIFF\".",
     "created_at": "2011-08-03T15:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7345",
     "type": "issue_comment",
@@ -485,7 +481,6 @@ sage: im = im.resize((im.size[0]/2,im.size[1]/2))
 sage: print im.format
 None
 ```
-
 According to the earlier example, this should have said "TIFF".
 
 
@@ -549,7 +544,7 @@ Two things: since this package installs files into `SAGE_ROOT/local/bin`, you sh
 archive/issue_comments_061442.json:
 ```json
 {
-    "body": "Replying to [comment:13 timdumol]:\n> In the notebook, `im.show()` saves a JPEG into the worksheet directory, which is then automatically displayed by the SageNB.\n\nMay I ask why? Does it make any sense to convert a \"lossless image\" into a lossy format, i.e., why not convert it to e.g. PNG which any (GUI) browser should be able to display?\n\n(I know TIFF is also a \"meta format\", i.e. you can encapsulate JPEGs in a TIFF file, but John's example file doesn't look like it was such.)\n\nThe only reason I can imagine is that it's easier to scale JPEG images than bitmaps, but unless we include the batteries by default, a simple `show()` of a bitmap image shouldn't require `libjpeg`.",
+    "body": "Replying to [comment:13 timdumol]:\n> In the notebook, `im.show()` saves a JPEG into the worksheet directory, which is then automatically displayed by the SageNB.\n\n\nMay I ask why? Does it make any sense to convert a \"lossless image\" into a lossy format, i.e., why not convert it to e.g. PNG which any (GUI) browser should be able to display?\n\n(I know TIFF is also a \"meta format\", i.e. you can encapsulate JPEGs in a TIFF file, but John's example file doesn't look like it was such.)\n\nThe only reason I can imagine is that it's easier to scale JPEG images than bitmaps, but unless we include the batteries by default, a simple `show()` of a bitmap image shouldn't require `libjpeg`.",
     "created_at": "2011-08-04T12:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7345",
     "type": "issue_comment",
@@ -560,6 +555,7 @@ archive/issue_comments_061442.json:
 
 Replying to [comment:13 timdumol]:
 > In the notebook, `im.show()` saves a JPEG into the worksheet directory, which is then automatically displayed by the SageNB.
+
 
 May I ask why? Does it make any sense to convert a "lossless image" into a lossy format, i.e., why not convert it to e.g. PNG which any (GUI) browser should be able to display?
 

@@ -126,7 +126,7 @@ archive/issue_events_009952.json:
 archive/issue_comments_032336.json:
 ```json
 {
-    "body": "This patch causes the following doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/power_series_ring_element.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/rings/power_series_poly.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/theta.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/crypto/lfsr.py # 5 doctests failed\n```\n\nThe error seems to always be\n\n```\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_11[3]>\", line 8, in <module>\n        g = Rx(g, len(g))\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py\", line 326, in __call__\n        return self.__power_series_class(self, f, prec, check=check)\n      File \"power_series_poly.pyx\", line 47, in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2073)\n      File \"polynomial_element.pyx\", line 3928, in sage.rings.polynomial.polynomial_element.Polynomial.truncate (sage/rings/polynomial/polynomial_element.c:25338)\n      File \"polynomial_gf2x.pyx\", line 43, in sage.rings.polynomial.polynomial_gf2x.Polynomial_GF2X.__getitem__ (sage/rings/polynomial/polynomial_gf2x.cpp:6652)\n    TypeError: an integer is required\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch causes the following doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/power_series_ring_element.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/rings/power_series_poly.pyx # 2 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/theta.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/crypto/lfsr.py # 5 doctests failed\n```\nThe error seems to always be\n\n```\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_11[3]>\", line 8, in <module>\n        g = Rx(g, len(g))\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/rings/power_series_ring.py\", line 326, in __call__\n        return self.__power_series_class(self, f, prec, check=check)\n      File \"power_series_poly.pyx\", line 47, in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2073)\n      File \"polynomial_element.pyx\", line 3928, in sage.rings.polynomial.polynomial_element.Polynomial.truncate (sage/rings/polynomial/polynomial_element.c:25338)\n      File \"polynomial_gf2x.pyx\", line 43, in sage.rings.polynomial.polynomial_gf2x.Polynomial_GF2X.__getitem__ (sage/rings/polynomial/polynomial_gf2x.cpp:6652)\n    TypeError: an integer is required\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T02:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ This patch causes the following doctest failures:
 	sage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed
 	sage -t -long devel/sage/sage/crypto/lfsr.py # 5 doctests failed
 ```
-
 The error seems to always be
 
 ```
@@ -162,7 +161,6 @@ Exception raised:
       File "polynomial_gf2x.pyx", line 43, in sage.rings.polynomial.polynomial_gf2x.Polynomial_GF2X.__getitem__ (sage/rings/polynomial/polynomial_gf2x.cpp:6652)
     TypeError: an integer is required
 ```
-
 
 Cheers,
 
@@ -193,7 +191,7 @@ Are you sure this is with my patch? I just tried these and they work fine in my 
 archive/issue_comments_032338.json:
 ```json
 {
-    "body": "Replying to [comment:4 robertwb]:\n> Are you sure this is with my patch? I just tried these and they work fine in my branch. Or maybe it's some incompatibility with your alpha. \n\nYes, I tried with this and the patch at #2462 and initially suspected #2462, but it turns out to be this patch. Reverting this patch only fixed the issue for me. 3.2.alpha2 is coming today, so there should be a binary for sage.math shortly.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 robertwb]:\n> Are you sure this is with my patch? I just tried these and they work fine in my branch. Or maybe it's some incompatibility with your alpha. \n\n\nYes, I tried with this and the patch at #2462 and initially suspected #2462, but it turns out to be this patch. Reverting this patch only fixed the issue for me. 3.2.alpha2 is coming today, so there should be a binary for sage.math shortly.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T18:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
@@ -204,6 +202,7 @@ archive/issue_comments_032338.json:
 
 Replying to [comment:4 robertwb]:
 > Are you sure this is with my patch? I just tried these and they work fine in my branch. Or maybe it's some incompatibility with your alpha. 
+
 
 Yes, I tried with this and the patch at #2462 and initially suspected #2462, but it turns out to be this patch. Reverting this patch only fixed the issue for me. 3.2.alpha2 is coming today, so there should be a binary for sage.math shortly.
 
@@ -236,7 +235,7 @@ OK, I'll look at it there.
 archive/issue_comments_032340.json:
 ```json
 {
-    "body": "I tried fixing this on sage.math, but I'm having issues with the unpacked tar. I copied over sage-3.2.alpha2-sage.math-only-x86_64-Linux and extracted it, but when I run ./sage I get\n\n\n```\nsage: sage.all.__file__\n '/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/all.pyc'\n```\n\n\nand I can't figure out how test my changes. However, I'm pretty sure the error is because line 467 of sage/rings/polynomial/polynomial_template.pxi is still def (rather than cpdef). I'm attaching a patch that should fix the problem.",
+    "body": "I tried fixing this on sage.math, but I'm having issues with the unpacked tar. I copied over sage-3.2.alpha2-sage.math-only-x86_64-Linux and extracted it, but when I run ./sage I get\n\n```\nsage: sage.all.__file__\n '/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/all.pyc'\n```\n\nand I can't figure out how test my changes. However, I'm pretty sure the error is because line 467 of sage/rings/polynomial/polynomial_template.pxi is still def (rather than cpdef). I'm attaching a patch that should fix the problem.",
     "created_at": "2008-11-01T23:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
@@ -247,12 +246,10 @@ archive/issue_comments_032340.json:
 
 I tried fixing this on sage.math, but I'm having issues with the unpacked tar. I copied over sage-3.2.alpha2-sage.math-only-x86_64-Linux and extracted it, but when I run ./sage I get
 
-
 ```
 sage: sage.all.__file__
  '/scratch/mabshoff/release-cycle/sage-3.2.alpha2/local/lib/python2.5/site-packages/sage/all.pyc'
 ```
-
 
 and I can't figure out how test my changes. However, I'm pretty sure the error is because line 467 of sage/rings/polynomial/polynomial_template.pxi is still def (rather than cpdef). I'm attaching a patch that should fix the problem.
 

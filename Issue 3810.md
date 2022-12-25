@@ -3,7 +3,7 @@
 archive/issues_003810.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal\t0m1.610s\nuser\t0m0.958s\nsys\t0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n\t [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n\t [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n\t [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n\t [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n\t [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n\t [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\n\nand\n\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal\t0m1.672s\nuser\t0m0.959s\nsys\t0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n\t [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n\t [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n\t [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n\t [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n\t [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n\t [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n\t [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n\t [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n\t [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n\t [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n\t [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n\t [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
+    "body": "Assignee: @williamstein\n\nlist/iter on abelian groups does not agree with .list().\n\nAlso, list on classgroups returned abstract group elements -- essentially useless:\n\n```\nsage: x = QQ['x'].0\nsage: K.<a> = NumberField(x^4 + 23)\nsage: G = K.class_group()\nsage: G\nClass group of order 3 with structure C3 of Number Field in a with defining polynomial x^4 + 23\nsage: list(G)\n[1, c, c^2]\n```\n\nThis actually lists representatives in the class group.\n\nApply abelian group patch before classgroup patch.\n\nPasses relevant tests:\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/groups/abelian_gps/*\n\nreal\t0m1.610s\nuser\t0m0.958s\nsys\t0m0.623s\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group.py\n\t [5.3 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_element.py\n\t [3.6 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/abelian_group_morphism.py\n\t [3.0 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/all.py      \n\t [2.2 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group.py\n\t [3.9 s]\nsage -t  devel/sage-nca/sage/groups/abelian_gps/dual_abelian_group_element.py\n\t [3.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 20.9 seconds\n```\n\nand\n\n```\n/Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*\n\nreal\t0m1.672s\nuser\t0m0.959s\nsys\t0m0.618s\nsage -t  devel/sage-nca/sage/rings/number_field/all.py      \n\t [2.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/class_group.py\n\t [4.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/galois_group.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/maps.py     \n\t [2.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/morphism.py \n\t [4.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [28.9 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_base.pyx\n\t [3.7 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element.pyx\n\t [9.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_element_quadratic.pyx\n\t [4.0 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal.py\n\t [6.6 s]\nsage -t  devel/sage-nca/sage/rings/number_field/number_field_ideal_rel.py\n\t [3.4 s]\nsage -t  devel/sage-nca/sage/rings/number_field/order.py    \n\t [10.2 s]\nsage -t  devel/sage-nca/sage/rings/number_field/small_primes_of_degree_one.py\n\t [3.5 s]\nsage -t  devel/sage-nca/sage/rings/number_field/todo.py     \n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal.py\n\t [3.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_data.pyx\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_phc.py\n\t [2.1 s]\nsage -t  devel/sage-nca/sage/rings/number_field/totallyreal_rel.py\n\t [4.3 s]\nsage -t  devel/sage-nca/sage/rings/number_field/unit_group.py\n\t [2.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 102.5 seconds\n\nsage-test finished (all test passed) at Mon Aug 11 21:53:13\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3810\n\n",
     "created_at": "2008-08-12T04:56:23Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ list/iter on abelian groups does not agree with .list().
 
 Also, list on classgroups returned abstract group elements -- essentially useless:
 
-
 ```
 sage: x = QQ['x'].0
 sage: K.<a> = NumberField(x^4 + 23)
@@ -32,7 +31,6 @@ Class group of order 3 with structure C3 of Number Field in a with defining poly
 sage: list(G)
 [1, c, c^2]
 ```
-
 
 This actually lists representatives in the class group.
 
@@ -64,9 +62,7 @@ All tests passed!
 Total time for all tests: 20.9 seconds
 ```
 
-
 and
-
 
 ```
 /Users/ncalexan/sage-3.0.6/sage -b >/dev/null && /Users/ncalexan/sage-3.0.6/sage -t /Users/ncalexan/sage-3.0.6/devel/sage-nca/sage/rings/number_field/*
@@ -123,7 +119,6 @@ Total time for all tests: 102.5 seconds
 sage-test finished (all test passed) at Mon Aug 11 21:53:13
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3810
 
 
@@ -170,7 +165,7 @@ archive/issue_events_008743.json:
 archive/issue_comments_027011.json:
 ```json
 {
-    "body": "Needs work.  Your fix patch introduces a bug:\n\n```\nsage: G = AbelianGroup([2,3], names = \"ab\") sage: v = G.list()\nsage: v\n[1, b, b^2, a, a*b, a*b^2]\nsage: v[0] = \"hi nick!\"\nsage: G.list()\n['hi nick!', b, b^2, a, a*b, a*b^2]\n```\n",
+    "body": "Needs work.  Your fix patch introduces a bug:\n\n```\nsage: G = AbelianGroup([2,3], names = \"ab\") sage: v = G.list()\nsage: v\n[1, b, b^2, a, a*b, a*b^2]\nsage: v[0] = \"hi nick!\"\nsage: G.list()\n['hi nick!', b, b^2, a, a*b, a*b^2]\n```",
     "created_at": "2008-08-13T02:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -189,7 +184,6 @@ sage: v[0] = "hi nick!"
 sage: G.list()
 ['hi nick!', b, b^2, a, a*b, a*b^2]
 ```
-
 
 
 
@@ -258,7 +252,7 @@ Here's an enhancement I would like:  If I create an ideal class from some random
 archive/issue_comments_027015.json:
 ```json
 {
-    "body": "With the two patches John mentioned I get the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/class_group.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/class_group.py\", line 117:\n    sage: list(G)\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/class_group.py\", line 119:\n    sage: G.list()\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\n```\n\nThe reason that trac_3810-ncalexan-class-group-list.patch popped up a window is that it is a straight diff instead of a patch. Nick: Can you post a unified patch and delete the old ones?\n\nCheers,\n\nMichael",
+    "body": "With the two patches John mentioned I get the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/class_group.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/class_group.py\", line 117:\n    sage: list(G)\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/class_group.py\", line 119:\n    sage: G.list()\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\n```\nThe reason that trac_3810-ncalexan-class-group-list.patch popped up a window is that it is a straight diff instead of a patch. Nick: Can you post a unified patch and delete the old ones?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T02:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -287,7 +281,6 @@ Got:
     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]
 **********************************************************************
 ```
-
 The reason that trac_3810-ncalexan-class-group-list.patch popped up a window is that it is a straight diff instead of a patch. Nick: Can you post a unified patch and delete the old ones?
 
 Cheers,
@@ -357,7 +350,7 @@ I think these should be applied.  The doctest output should be updated, but I do
 archive/issue_comments_027019.json:
 ```json
 {
-    "body": "Just one thing is stopping me giving this the ok:\n\n```\nsage: G=AbelianGroup([])\nsage: G.list()\n[]\nsage: list(G)\n[]\nsage: G.order()\n1\n```\n\nTrivial groups do have one element!  This special case is handled ok in the class groups patch, and a similar special case is needed for abelian groups.  (It happens because mrange() delivers nothing at all for an empty list of lists, that is one valid way of defining a trivial abelian group.)\n\nWhat's bugging me is that I discovered that same issue with listing trivial groups myself a few days ago, and somewhere else in trac there's a patch which does what is needed here -- but I cannot remember which one!  So this might cause some merge problems when my patch goes in.\n\nApart from this, the second and third patches apply fine to 3.2.1 and tests pass.  *Ignore the first patch which is replaced by the third!*",
+    "body": "Just one thing is stopping me giving this the ok:\n\n```\nsage: G=AbelianGroup([])\nsage: G.list()\n[]\nsage: list(G)\n[]\nsage: G.order()\n1\n```\nTrivial groups do have one element!  This special case is handled ok in the class groups patch, and a similar special case is needed for abelian groups.  (It happens because mrange() delivers nothing at all for an empty list of lists, that is one valid way of defining a trivial abelian group.)\n\nWhat's bugging me is that I discovered that same issue with listing trivial groups myself a few days ago, and somewhere else in trac there's a patch which does what is needed here -- but I cannot remember which one!  So this might cause some merge problems when my patch goes in.\n\nApart from this, the second and third patches apply fine to 3.2.1 and tests pass.  *Ignore the first patch which is replaced by the third!*",
     "created_at": "2008-12-06T23:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -377,7 +370,6 @@ sage: list(G)
 sage: G.order()
 1
 ```
-
 Trivial groups do have one element!  This special case is handled ok in the class groups patch, and a similar special case is needed for abelian groups.  (It happens because mrange() delivers nothing at all for an empty list of lists, that is one valid way of defining a trivial abelian group.)
 
 What's bugging me is that I discovered that same issue with listing trivial groups myself a few days ago, and somewhere else in trac there's a patch which does what is needed here -- but I cannot remember which one!  So this might cause some merge problems when my patch goes in.
@@ -449,7 +441,7 @@ If this makes sense to Michael, and works for him, I hope this will finish off t
 archive/issue_comments_027023.json:
 ```json
 {
-    "body": "I am seeing one doctest failure with this patch applied on a 64 bit Linux box:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/class_group.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 148, in __main__.example_8\nFailed example:\n    list(G)###line 117:_sage_    >>> list(G)\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 150, in __main__.example_8\nFailed example:\n    G.list()###line 119:_sage_    >>> G.list()\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\n```\n",
+    "body": "I am seeing one doctest failure with this patch applied on a 64 bit Linux box:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/class_group.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 148, in __main__.example_8\nFailed example:\n    list(G)###line 117:_sage_    >>> list(G)\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 150, in __main__.example_8\nFailed example:\n    G.list()###line 119:_sage_    >>> G.list()\nExpected:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\nGot:\n    [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n**********************************************************************\n```",
     "created_at": "2008-12-08T04:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -483,13 +475,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_027024.json:
 ```json
 {
-    "body": "Replying to [comment:13 mabshoff]:\n> I am seeing one doctest failure with this patch applied on a 64 bit Linux box:\n> {{{\n> sage -t -long \"devel/sage/sage/rings/number_field/class_group.py\"\n> **********************************************************************\n> File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 148, in __main__.example_8\n> Failed example:\n>     list(G)###line 117:_sage_    >>> list(G)\n> Expected:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> Got:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> **********************************************************************\n> File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 150, in __main__.example_8\n> Failed example:\n>     G.list()###line 119:_sage_    >>> G.list()\n> Expected:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> Got:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> **********************************************************************\n> }}}\n\nWhat a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n\nWould it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?",
+    "body": "Replying to [comment:13 mabshoff]:\n> I am seeing one doctest failure with this patch applied on a 64 bit Linux box:\n> \n> ```\n> sage -t -long \"devel/sage/sage/rings/number_field/class_group.py\"\n> **********************************************************************\n> File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 148, in __main__.example_8\n> Failed example:\n>     list(G)###line 117:_sage_    >>> list(G)\n> Expected:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> Got:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> **********************************************************************\n> File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py\", line 150, in __main__.example_8\n> Failed example:\n>     G.list()###line 119:_sage_    >>> G.list()\n> Expected:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 + a - 1/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> Got:\n>     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]\n> **********************************************************************\n> ```\n\n\nWhat a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n\nWould it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?",
     "created_at": "2008-12-08T09:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -500,7 +491,8 @@ archive/issue_comments_027024.json:
 
 Replying to [comment:13 mabshoff]:
 > I am seeing one doctest failure with this patch applied on a 64 bit Linux box:
-> {{{
+> 
+> ```
 > sage -t -long "devel/sage/sage/rings/number_field/class_group.py"
 > **********************************************************************
 > File "/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/class_group.py", line 148, in __main__.example_8
@@ -519,7 +511,8 @@ Replying to [comment:13 mabshoff]:
 > Got:
 >     [Trivial principal fractional ideal class, Fractional ideal class (2, 1/2*a^2 - a + 3/2), Fractional ideal class (2, 1/2*a^2 + 1/2)]
 > **********************************************************************
-> }}}
+> ```
+
 
 What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.
 
@@ -532,7 +525,7 @@ Would it be dishonest to look for an example for the doctest where the output wa
 archive/issue_comments_027025.json:
 ```json
 {
-    "body": "Replying to [comment:14 cremona]:\n\nHi John,\n\n> What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n\nYes, Nick said the same thing in IRC, but I was asleep at that point.\n \n> Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?\n\nI am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a \"prettier\" doctest that can be addressed via a followup patch.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:14 cremona]:\n\nHi John,\n\n> What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n\n\nYes, Nick said the same thing in IRC, but I was asleep at that point.\n \n> Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?\n\n\nI am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a \"prettier\" doctest that can be addressed via a followup patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-08T09:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -547,9 +540,11 @@ Hi John,
 
 > What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.
 
+
 Yes, Nick said the same thing in IRC, but I was asleep at that point.
  
 > Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?
+
 
 I am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a "prettier" doctest that can be addressed via a followup patch.
 
@@ -564,7 +559,7 @@ Michael
 archive/issue_comments_027026.json:
 ```json
 {
-    "body": "Replying to [comment:15 mabshoff]:\n> Replying to [comment:14 cremona]:\n> \n> Hi John,\n> \n> > What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n> \n> Yes, Nick said the same thing in IRC, but I was asleep at that point.\n>  \n> > Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?\n> \n> I am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a \"prettier\" doctest that can be addressed via a followup patch.\n\nSounds good to me.  If it is more random than that it will be picked up by the merry horde of alpha testers....\n\nJohn\n\n> \n> Cheers,\n> \n> Michael\n>",
+    "body": "Replying to [comment:15 mabshoff]:\n> Replying to [comment:14 cremona]:\n> \n> Hi John,\n> \n> > What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.\n\n> \n> Yes, Nick said the same thing in IRC, but I was asleep at that point.\n>  \n> > Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?\n\n> \n> I am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a \"prettier\" doctest that can be addressed via a followup patch.\n\n\nSounds good to me.  If it is more random than that it will be picked up by the merry horde of alpha testers....\n\nJohn\n\n> \n> Cheers,\n> \n> Michael\n\n>",
     "created_at": "2008-12-08T09:43:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3810",
     "type": "issue_comment",
@@ -579,12 +574,15 @@ Replying to [comment:15 mabshoff]:
 > Hi John,
 > 
 > > What a nuisance;  sorry, I only did a 32-bit test at the weekend.   The got/expected are equally valid mathematically, and my guess is that the difference comes from the pari library.
+
 > 
 > Yes, Nick said the same thing in IRC, but I was asleep at that point.
 >  
 > > Would it be dishonest to look for an example for the doctest where the output was identical on 32- and 64-bit machines?
+
 > 
 > I am fine marking those two doctests with #32 bit and #64 bit output and to get the patch in. If anybody wants to have a "prettier" doctest that can be addressed via a followup patch.
+
 
 Sounds good to me.  If it is more random than that it will be picked up by the merry horde of alpha testers....
 
@@ -594,6 +592,7 @@ John
 > Cheers,
 > 
 > Michael
+
 >
 
 

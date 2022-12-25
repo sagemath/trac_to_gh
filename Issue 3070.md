@@ -3,7 +3,7 @@
 archive/issues_003070.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIn https://groups.google.com/group/sage-support/browse_thread/thread/443ce49730b43396 M. Fix reported:\n\n```\nHello-\nI input the following:\n\nsage: s1 = SymmetricGroup(1)\nsage: s = s1.cayley_graph()\nsage: s.vertices()\n[]\n\nShouldn't the set of vertices have one element in it for the\nidentity?  s1 reports this element, but as shown the graph does not.\nI suppose this is trivial, but it seems like it should be fixed at\nsome point.  I am, however, still fairly new to SAGE, and could easily\nbe missing something.  Any thoughts on this? \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3070\n\n",
+    "body": "Assignee: boothby\n\nIn https://groups.google.com/group/sage-support/browse_thread/thread/443ce49730b43396 M. Fix reported:\n\n```\nHello-\nI input the following:\n\nsage: s1 = SymmetricGroup(1)\nsage: s = s1.cayley_graph()\nsage: s.vertices()\n[]\n\nShouldn't the set of vertices have one element in it for the\nidentity?  s1 reports this element, but as shown the graph does not.\nI suppose this is trivial, but it seems like it should be fixed at\nsome point.  I am, however, still fairly new to SAGE, and could easily\nbe missing something.  Any thoughts on this? \n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3070\n\n",
     "created_at": "2008-05-01T05:20:47Z",
     "labels": [
         "component: graph theory",
@@ -35,7 +35,6 @@ I suppose this is trivial, but it seems like it should be fixed at
 some point.  I am, however, still fairly new to SAGE, and could easily
 be missing something.  Any thoughts on this? 
 ```
-
 
 Cheers,
 
@@ -70,7 +69,7 @@ Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/
 archive/issue_comments_021148.json:
 ```json
 {
-    "body": "Applied to sage-3.0 on my macbook:\n\n\n```\n$ ./sage -t devel/sage/sage/groups/\n... \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 178.3 seconds\n$ ./sage -t devel/sage/sage/graphs\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 217.6 seconds\n```\n",
+    "body": "Applied to sage-3.0 on my macbook:\n\n```\n$ ./sage -t devel/sage/sage/groups/\n... \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 178.3 seconds\n$ ./sage -t devel/sage/sage/graphs\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 217.6 seconds\n```",
     "created_at": "2008-05-01T18:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
@@ -80,7 +79,6 @@ archive/issue_comments_021148.json:
 ```
 
 Applied to sage-3.0 on my macbook:
-
 
 ```
 $ ./sage -t devel/sage/sage/groups/
@@ -94,7 +92,6 @@ $ ./sage -t devel/sage/sage/graphs
 All tests passed!
 Total time for all tests: 217.6 seconds
 ```
-
 
 
 

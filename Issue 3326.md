@@ -3,7 +3,7 @@
 archive/issues_003326.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: %html\n\nIn the notebook:\n\n\n```\nsage: %html  How are you?\n```\n\nreturns\n\n```\nNo object 'you' currently defined.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3326\n\n",
+    "body": "Assignee: somebody\n\nKeywords: %html\n\nIn the notebook:\n\n```\nsage: %html  How are you?\n```\nreturns\n\n```\nNo object 'you' currently defined.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3326\n\n",
     "created_at": "2008-05-28T20:01:47Z",
     "labels": [
         "component: notebook",
@@ -23,17 +23,14 @@ Keywords: %html
 
 In the notebook:
 
-
 ```
 sage: %html  How are you?
 ```
-
 returns
 
 ```
 No object 'you' currently defined.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3326
@@ -121,7 +118,7 @@ Note that this depends on #5050.
 archive/issue_comments_023021.json:
 ```json
 {
-    "body": "The patch fails to apply cleanly to 3.3.alpha1:\n\n```\npatching file sage/server/notebook/worksheet.py\nHunk #4 FAILED at 2575\n1 out of 4 hunks FAILED -- saving rejects to file sage/server/notebook/worksheet.py.rej\n```\n\nand I can't figure how to fix it by hand to test it out.",
+    "body": "The patch fails to apply cleanly to 3.3.alpha1:\n\n```\npatching file sage/server/notebook/worksheet.py\nHunk #4 FAILED at 2575\n1 out of 4 hunks FAILED -- saving rejects to file sage/server/notebook/worksheet.py.rej\n```\nand I can't figure how to fix it by hand to test it out.",
     "created_at": "2009-01-24T16:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3326",
     "type": "issue_comment",
@@ -137,7 +134,6 @@ patching file sage/server/notebook/worksheet.py
 Hunk #4 FAILED at 2575
 1 out of 4 hunks FAILED -- saving rejects to file sage/server/notebook/worksheet.py.rej
 ```
-
 and I can't figure how to fix it by hand to test it out.
 
 

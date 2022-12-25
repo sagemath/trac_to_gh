@@ -71,7 +71,7 @@ Ah, that sounds like a much nicer way to detect it.
 archive/issue_comments_030298.json:
 ```json
 {
-    "body": "Used other approach, above with type equal class is true for too much, for example:\n\n\n```\nsage: type(arg)\n<type 'function'>\nsage: arg.__class__\n<type 'function'>\n```\n\n\nCheck like:\n\n`obj.__class__.__module__ not in ('__builtin__', 'exceptions')`\n\nseems to work both old and new style classes, the problem seems to be that everything is object, so best we can do is check if something is object of non built-in class",
+    "body": "Used other approach, above with type equal class is true for too much, for example:\n\n```\nsage: type(arg)\n<type 'function'>\nsage: arg.__class__\n<type 'function'>\n```\n\nCheck like:\n\n`obj.__class__.__module__ not in ('__builtin__', 'exceptions')`\n\nseems to work both old and new style classes, the problem seems to be that everything is object, so best we can do is check if something is object of non built-in class",
     "created_at": "2008-09-24T22:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4183",
     "type": "issue_comment",
@@ -82,14 +82,12 @@ archive/issue_comments_030298.json:
 
 Used other approach, above with type equal class is true for too much, for example:
 
-
 ```
 sage: type(arg)
 <type 'function'>
 sage: arg.__class__
 <type 'function'>
 ```
-
 
 Check like:
 

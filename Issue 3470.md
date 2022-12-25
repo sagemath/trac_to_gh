@@ -86,7 +86,7 @@ Looks good to me, pretty straightforward spkg. Also I'm not worried too much abo
 archive/issue_comments_024419.json:
 ```json
 {
-    "body": "\n```\nAnyway, since every single person voted +1 and nobody voted -1 or\nhad issues, I declare this package officially accepted.\n\n -- William\n```\n",
+    "body": "```\nAnyway, since every single person voted +1 and nobody voted -1 or\nhad issues, I declare this package officially accepted.\n\n -- William\n```",
     "created_at": "2008-06-24T17:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3470",
     "type": "issue_comment",
@@ -95,14 +95,12 @@ archive/issue_comments_024419.json:
 }
 ```
 
-
 ```
 Anyway, since every single person voted +1 and nobody voted -1 or
 had issues, I declare this package officially accepted.
 
  -- William
 ```
-
 
 
 

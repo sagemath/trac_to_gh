@@ -3,7 +3,7 @@
 archive/issues_000896.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nAround line 923:\n\n```\n    # TODO: TEMPORARILY DISABLED due to bug on 64-bit sage.math:\n    #  A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n    # *** glibc detected *** free(): invalid next size (fast): 0x0000000000fb15e0 ***\n    # due to error in set_to memcpy on 64-bit\n    cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,\n                        Py_ssize_t nrows, Py_ssize_t ncols):\n```\n\nI ran \n\n```\nA = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n```\n\nunder valgrind on sage.math and nothing turned up. So I believe this comment should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/896\n\n",
+    "body": "Assignee: @williamstein\n\nAround line 923:\n\n```\n    # TODO: TEMPORARILY DISABLED due to bug on 64-bit sage.math:\n    #  A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n    # *** glibc detected *** free(): invalid next size (fast): 0x0000000000fb15e0 ***\n    # due to error in set_to memcpy on 64-bit\n    cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,\n                        Py_ssize_t nrows, Py_ssize_t ncols):\n```\nI ran \n\n```\nA = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n```\nunder valgrind on sage.math and nothing turned up. So I believe this comment should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/896\n\n",
     "created_at": "2007-10-14T14:15:59Z",
     "labels": [
         "component: modular forms",
@@ -29,13 +29,11 @@ Around line 923:
     cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,
                         Py_ssize_t nrows, Py_ssize_t ncols):
 ```
-
 I ran 
 
 ```
 A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)
 ```
-
 under valgrind on sage.math and nothing turned up. So I believe this comment should be removed.
 
 Cheers,

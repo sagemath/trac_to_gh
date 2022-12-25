@@ -3,7 +3,7 @@
 archive/issues_005006.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nThe script currently is:\n\n```/bin/sh\nsage -hg $*\n```\n\nBut this is broken when running something like\n\n```\nhg ci -u \"User Foo\"\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5006\n\n",
+    "body": "Assignee: cwitty\n\nThe script currently is:\n\n```/bin/sh\nsage -hg $*\n```\nBut this is broken when running something like\n\n```\nhg ci -u \"User Foo\"\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5006\n\n",
     "created_at": "2009-01-18T05:10:24Z",
     "labels": [
         "component: misc",
@@ -23,13 +23,11 @@ The script currently is:
 ```/bin/sh
 sage -hg $*
 ```
-
 But this is broken when running something like
 
 ```
 hg ci -u "User Foo"
 ```
-
 
 Cheers,
 

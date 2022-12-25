@@ -105,7 +105,7 @@ There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.a
 archive/issue_comments_095285.json:
 ```json
 {
-    "body": "Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by @jasongrout created at 2010-09-28 16:01:41\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
+    "body": "Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/some-uuid/ticket9746/trac-9746-plot-doc-improvements.patch) by @jasongrout created at 2010-09-28 16:01:41\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
     "created_at": "2010-09-28T16:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -118,6 +118,7 @@ Attachment [trac-9746-plot-doc-improvements.patch](tarball://root/attachments/so
 
 Replying to [comment:4 kcrisman]:
 > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  
+
 
 Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?
 
@@ -146,7 +147,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095287.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 kcrisman]:\n> > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n> \n> Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?\nNot totally at this time, though I see some of the things it is trying to fix.  I did take a look at some things while checking out the new matplotlib, and noticed that the example with `plot(1.5/(1+e^(-x))` is not correctly formatted in the documentation, and doesn't become a live cell.  I'm sorry to make this a long process.",
+    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 kcrisman]:\n> > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\n> \n> Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?\n  \nNot totally at this time, though I see some of the things it is trying to fix.  I did take a look at some things while checking out the new matplotlib, and noticed that the example with `plot(1.5/(1+e^(-x))` is not correctly formatted in the documentation, and doesn't become a live cell.  I'm sorry to make this a long process.",
     "created_at": "2010-09-28T16:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -158,8 +159,10 @@ archive/issue_comments_095287.json:
 Replying to [comment:5 jason]:
 > Replying to [comment:4 kcrisman]:
 > > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  
+
 > 
 > Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?
+  
 Not totally at this time, though I see some of the things it is trying to fix.  I did take a look at some things while checking out the new matplotlib, and noticed that the example with `plot(1.5/(1+e^(-x))` is not correctly formatted in the documentation, and doesn't become a live cell.  I'm sorry to make this a long process.
 
 
@@ -169,7 +172,7 @@ Not totally at this time, though I see some of the things it is trying to fix.  
 archive/issue_comments_095288.json:
 ```json
 {
-    "body": "(Also, there are lots of places where there are many specific examples all together, such as in `point?`\n\n```\npoint((1,2))\npoint((1,2,3))\npoint([(0,0), (1,1)])\npoint([(0,0,1), (1,1,1)]\n```\n\nbut that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)",
+    "body": "(Also, there are lots of places where there are many specific examples all together, such as in `point?`\n\n```\npoint((1,2))\npoint((1,2,3))\npoint([(0,0), (1,1)])\npoint([(0,0,1), (1,1,1)]\n```\nbut that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)",
     "created_at": "2010-09-28T16:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -186,7 +189,6 @@ point((1,2,3))
 point([(0,0), (1,1)])
 point([(0,0,1), (1,1,1)]
 ```
-
 but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)
 
 
@@ -196,7 +198,7 @@ but that should be a separate ticket.  I may be responsible for some of those, n
 archive/issue_comments_095289.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> (Also, there are lots of places where there are many specific examples all together, such as in `point?`\n> {{{\n> point((1,2))\n> point((1,2,3))\n> point([(0,0), (1,1)])\n> point([(0,0,1), (1,1,1)]\n> }}}\n> but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)\n\nThose are fixed in my version (after #9740, #9746, and #4342).",
+    "body": "Replying to [comment:7 kcrisman]:\n> (Also, there are lots of places where there are many specific examples all together, such as in `point?`\n> \n> ```\n> point((1,2))\n> point((1,2,3))\n> point([(0,0), (1,1)])\n> point([(0,0,1), (1,1,1)]\n> ```\n> but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)\n\n\nThose are fixed in my version (after #9740, #9746, and #4342).",
     "created_at": "2010-09-28T16:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -207,13 +209,15 @@ archive/issue_comments_095289.json:
 
 Replying to [comment:7 kcrisman]:
 > (Also, there are lots of places where there are many specific examples all together, such as in `point?`
-> {{{
+> 
+> ```
 > point((1,2))
 > point((1,2,3))
 > point([(0,0), (1,1)])
 > point([(0,0,1), (1,1,1)]
-> }}}
+> ```
 > but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)
+
 
 Those are fixed in my version (after #9740, #9746, and #4342).
 
@@ -446,7 +450,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095301.json:
 ```json
 {
-    "body": "Replying to [comment:15 kcrisman]:\n> Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n\n\nI knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\n\nMy purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.",
+    "body": "Replying to [comment:15 kcrisman]:\n> Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n\n\n\nI knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\n\nMy purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.",
     "created_at": "2010-09-29T18:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -457,6 +461,7 @@ archive/issue_comments_095301.json:
 
 Replying to [comment:15 kcrisman]:
 > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.
+
 
 
 I knew it was in the stack of patches I had applied, and other patches depended on it.  How about "an important patch that has been waiting a very long time depends on this"? :)
@@ -470,7 +475,7 @@ My purpose is to just narrow the scope of this ticket to exactly the improvement
 archive/issue_comments_095302.json:
 ```json
 {
-    "body": "Replying to [comment:16 jason]:\n> Replying to [comment:15 kcrisman]:\n> > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n> \n> \n> I knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\nI agree with that!\n> My purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.\nNo problem - although not using queues made this a little harder for me to test.",
+    "body": "Replying to [comment:16 jason]:\n> Replying to [comment:15 kcrisman]:\n> > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n\n> \n> \n> I knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\n\nI agree with that!\n> My purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.\n\nNo problem - although not using queues made this a little harder for me to test.",
     "created_at": "2010-09-29T18:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -482,11 +487,14 @@ archive/issue_comments_095302.json:
 Replying to [comment:16 jason]:
 > Replying to [comment:15 kcrisman]:
 > > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.
+
 > 
 > 
 > I knew it was in the stack of patches I had applied, and other patches depended on it.  How about "an important patch that has been waiting a very long time depends on this"? :)
+
 I agree with that!
 > My purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.
+
 No problem - although not using queues made this a little harder for me to test.
 
 
@@ -496,7 +504,7 @@ No problem - although not using queues made this a little harder for me to test.
 archive/issue_comments_095303.json:
 ```json
 {
-    "body": "This one\n\n```\n I also still get an error 'ellipsis object not callable' or something in 'add grid lines at specific positions (using lists/tuples)'. There's an ellipsis that got stuck in there still somehow - I think you got a different one of these.\n```\n\nin particular is aggravating, and should be fixed quickly, if possible.",
+    "body": "This one\n\n```\n I also still get an error 'ellipsis object not callable' or something in 'add grid lines at specific positions (using lists/tuples)'. There's an ellipsis that got stuck in there still somehow - I think you got a different one of these.\n```\nin particular is aggravating, and should be fixed quickly, if possible.",
     "created_at": "2010-09-29T18:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9746",
     "type": "issue_comment",
@@ -510,7 +518,6 @@ This one
 ```
  I also still get an error 'ellipsis object not callable' or something in 'add grid lines at specific positions (using lists/tuples)'. There's an ellipsis that got stuck in there still somehow - I think you got a different one of these.
 ```
-
 in particular is aggravating, and should be fixed quickly, if possible.
 
 

@@ -3,7 +3,7 @@
 archive/issues_005944.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n```\nsage: t = var('t', ns=1)\nsage: a = (-2*t).exp(); a\ne^(-2*t)\nsage: b = (-t).exp(); b\ne^(-t)\nsage: a - b\n0\nsage: a\ne^(-t)\nsage: b\ne^(-t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5944\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n```\nsage: t = var('t', ns=1)\nsage: a = (-2*t).exp(); a\ne^(-2*t)\nsage: b = (-t).exp(); b\ne^(-t)\nsage: a - b\n0\nsage: a\ne^(-t)\nsage: b\ne^(-t)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5944\n\n",
     "created_at": "2009-04-29T22:59:30Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 CC:  @mwhansen
 
-
 ```
 sage: t = var('t', ns=1)
 sage: a = (-2*t).exp(); a
@@ -34,7 +33,6 @@ e^(-t)
 sage: b
 e^(-t)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5944
 

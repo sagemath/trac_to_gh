@@ -3,7 +3,7 @@
 archive/issues_007032.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used  (#7021)\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler. It's apparent that singular is ignoring CC and using gcc instead. \n\n```\nsymmetrica-2.0.p4/src/zyk.c\nsymmetrica-2.0.p4/src/zyk.doc\nsymmetrica-2.0.p4/src/zykelind.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/symmetrica-2.0.p4/src'\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bar.c\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bi.c\n```\n\n\nIt does build ok with gcc, even though CC is set to the Sun compiler. There is no C++ code, so I can't immediately tell whether CXX is ignored too, but I suspect it is. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7032\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used  (#7021)\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler. It's apparent that singular is ignoring CC and using gcc instead. \n\n```\nsymmetrica-2.0.p4/src/zyk.c\nsymmetrica-2.0.p4/src/zyk.doc\nsymmetrica-2.0.p4/src/zykelind.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/symmetrica-2.0.p4/src'\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bar.c\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bi.c\n```\n\nIt does build ok with gcc, even though CC is set to the Sun compiler. There is no C++ code, so I can't immediately tell whether CXX is ignored too, but I suspect it is. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7032\n\n",
     "created_at": "2009-09-27T14:44:54Z",
     "labels": [
         "component: build",
@@ -48,7 +48,6 @@ make[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/
 gcc -c -O1 -fPIC -g -DFAST -DALLTRUE bar.c
 gcc -c -O1 -fPIC -g -DFAST -DALLTRUE bi.c
 ```
-
 
 It does build ok with gcc, even though CC is set to the Sun compiler. There is no C++ code, so I can't immediately tell whether CXX is ignored too, but I suspect it is. 
 

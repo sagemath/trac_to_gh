@@ -3,7 +3,7 @@
 archive/issues_004568.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe doc test of `save_session` does the following:\n\n```\n        EXAMPLES:\n            sage: a = 5\n            sage: save_session('session')\n        \n        ...\n        Clean up the session file we just wrote to disk.\n            sage: os.unlink('session.sobj')\n```\n\n\nHence, if the user happens to have a file `session.sobj` in the current directory then running the doc test would destroy it.\n\nAccording to a suggestion of Robert Bradshow, using the `tempfile` Python module might help.\n\nUnfortunately I have no idea in what file `save_session` is defined - so, no patch at that point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4568\n\n",
+    "body": "Assignee: mabshoff\n\nThe doc test of `save_session` does the following:\n\n```\n        EXAMPLES:\n            sage: a = 5\n            sage: save_session('session')\n        \n        ...\n        Clean up the session file we just wrote to disk.\n            sage: os.unlink('session.sobj')\n```\n\nHence, if the user happens to have a file `session.sobj` in the current directory then running the doc test would destroy it.\n\nAccording to a suggestion of Robert Bradshow, using the `tempfile` Python module might help.\n\nUnfortunately I have no idea in what file `save_session` is defined - so, no patch at that point...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4568\n\n",
     "created_at": "2008-11-20T20:21:21Z",
     "labels": [
         "component: doctest coverage",
@@ -29,7 +29,6 @@ The doc test of `save_session` does the following:
         Clean up the session file we just wrote to disk.
             sage: os.unlink('session.sobj')
 ```
-
 
 Hence, if the user happens to have a file `session.sobj` in the current directory then running the doc test would destroy it.
 
@@ -165,7 +164,7 @@ Fixing dangerous doc test behaviour in session.pyx (2nd version)
 archive/issue_comments_034159.json:
 ```json
 {
-    "body": "Attachment [save_session.patch](tarball://root/attachments/some-uuid/ticket4568/save_session.patch) by @simon-king-jena created at 2008-11-22 11:15:41\n\nReplying to [comment:3 mhansen]:\n> My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.\n\nHi Mike, \n\nGood point! I changed my patch accordingly - in the new patch I clearly say that for permanent saving SAGE_TMP would be a bad idea.\n\nCheers\n    Simon",
+    "body": "Attachment [save_session.patch](tarball://root/attachments/some-uuid/ticket4568/save_session.patch) by @simon-king-jena created at 2008-11-22 11:15:41\n\nReplying to [comment:3 mhansen]:\n> My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.\n\n\nHi Mike, \n\nGood point! I changed my patch accordingly - in the new patch I clearly say that for permanent saving SAGE_TMP would be a bad idea.\n\nCheers\n    Simon",
     "created_at": "2008-11-22T11:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4568",
     "type": "issue_comment",
@@ -178,6 +177,7 @@ Attachment [save_session.patch](tarball://root/attachments/some-uuid/ticket4568/
 
 Replying to [comment:3 mhansen]:
 > My concern with the current wording is that it's not entirely clear that the user should NOT save the session to a file in SAGE_TMP.  We only do that for doctesting purposes.
+
 
 Hi Mike, 
 

@@ -140,7 +140,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_064064.json:
 ```json
 {
-    "body": "1. Typing \"hg status\" gives:\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status\n! patches/keys.py\n! patches/sob.py\n```\n\nThis is because you just deleted those files instead of doing \"hg rm\".  To fix, put them back, then do \"hg rm\". \n\n2. You forgot to remove patches/filepath.py, but aren't using it anymore:\n\n```\n-cp patches/filepath.py src/twisted/python/\n```\n",
+    "body": "1. Typing \"hg status\" gives:\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status\n! patches/keys.py\n! patches/sob.py\n```\nThis is because you just deleted those files instead of doing \"hg rm\".  To fix, put them back, then do \"hg rm\". \n\n2. You forgot to remove patches/filepath.py, but aren't using it anymore:\n\n```\n-cp patches/filepath.py src/twisted/python/\n```",
     "created_at": "2009-12-21T22:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
@@ -156,7 +156,6 @@ wstein@sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status
 ! patches/keys.py
 ! patches/sob.py
 ```
-
 This is because you just deleted those files instead of doing "hg rm".  To fix, put them back, then do "hg rm". 
 
 2. You forgot to remove patches/filepath.py, but aren't using it anymore:
@@ -164,7 +163,6 @@ This is because you just deleted those files instead of doing "hg rm".  To fix, 
 ```
 -cp patches/filepath.py src/twisted/python/
 ```
-
 
 
 
@@ -209,7 +207,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064067.json:
 ```json
 {
-    "body": "Should we add\n\n```sh\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/twisted\n```\n\nto\n\n```sh\n# Deleting the old version is *very* important with this package.\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/Twisted*\n```\n\nin `spkg-install`?",
+    "body": "Should we add\n\n```sh\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/twisted\n```\nto\n\n```sh\n# Deleting the old version is *very* important with this package.\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/Twisted*\n```\nin `spkg-install`?",
     "created_at": "2010-01-15T20:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
@@ -223,14 +221,12 @@ Should we add
 ```sh
 rm -rf "$SAGE_LOCAL"/lib/python/site-packages/twisted
 ```
-
 to
 
 ```sh
 # Deleting the old version is *very* important with this package.
 rm -rf "$SAGE_LOCAL"/lib/python/site-packages/Twisted*
 ```
-
 in `spkg-install`?
 
 
@@ -258,7 +254,7 @@ Also, `hg ci`.
 archive/issue_comments_064069.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> Also, `hg ci`.\nOops.  I mean that `hg stat` gives\n\n```\n! patches/filepath.py\n! patches/filepath.py.patch\n! patches/keys.py\n! patches/keys.py.patch\n! patches/sob.py\n! patches/sob.py.patch\n```\n",
+    "body": "Replying to [comment:8 mpatel]:\n> Also, `hg ci`.\nOops.  I mean that `hg stat` gives\n\n```\n! patches/filepath.py\n! patches/filepath.py.patch\n! patches/keys.py\n! patches/keys.py.patch\n! patches/sob.py\n! patches/sob.py.patch\n```",
     "created_at": "2010-01-15T20:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
@@ -279,7 +275,6 @@ Oops.  I mean that `hg stat` gives
 ! patches/sob.py
 ! patches/sob.py.patch
 ```
-
 
 
 
@@ -350,7 +345,7 @@ Requesting an assist, whenever it's convenient.
 archive/issue_comments_064073.json:
 ```json
 {
-    "body": "Also see #8352, which makes a very small change to twisted's spkg-install file, so the previous version of twisted builds on any platform as 64-bit, not just OS X. \n\nBasically changing \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n\n```\n\n\nto\n\n\n```\nif [\"x$SAGE64\" = xyes ]; then\n   echo \"64 bit build\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\n\nI'm happy to give the other ticket positive review, but are not going to just now, until I find the best way of handling this. \n\n\nDave",
+    "body": "Also see #8352, which makes a very small change to twisted's spkg-install file, so the previous version of twisted builds on any platform as 64-bit, not just OS X. \n\nBasically changing \n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n\n```\n\nto\n\n```\nif [\"x$SAGE64\" = xyes ]; then\n   echo \"64 bit build\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\nI'm happy to give the other ticket positive review, but are not going to just now, until I find the best way of handling this. \n\n\nDave",
     "created_at": "2010-02-24T21:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
@@ -363,7 +358,6 @@ Also see #8352, which makes a very small change to twisted's spkg-install file, 
 
 Basically changing 
 
-
 ```
 if [ `uname` = "Darwin" -a "$SAGE64" = "yes" ]; then
    echo "64 bit MacIntel"
@@ -373,9 +367,7 @@ fi
 
 ```
 
-
 to
-
 
 ```
 if ["x$SAGE64" = xyes ]; then
@@ -384,7 +376,6 @@ if ["x$SAGE64" = xyes ]; then
    LDFLAGS="-m64 "; export LDFLAGS
 fi
 ```
-
 
 I'm happy to give the other ticket positive review, but are not going to just now, until I find the best way of handling this. 
 

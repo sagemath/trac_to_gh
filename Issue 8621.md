@@ -53,7 +53,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_077992.json:
 ```json
 {
-    "body": "Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by @rishikesha created at 2010-03-29 00:44:13\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
+    "body": "Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by @rishikesha created at 2010-03-29 00:44:13\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
     "created_at": "2010-03-29T00:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -82,7 +82,6 @@ sage: L2.hardy_z_function(.5+6*I)
 sage: L2.hardy_z_function(-.5+6*I)
 4.17981266933977 + 36.9688966864015*I
 ```
-
 
 Although for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function
 
@@ -185,7 +184,7 @@ Jonathan, you can add yourself to [http://trac.sagemath.org/sage_trac/wiki#Accou
 archive/issue_comments_077998.json:
 ```json
 {
-    "body": "I do get doctest errors due to numerical noise.\n\nThis is on a Core2 Penryn (Ubuntu 10.04.3 x86_64):\n\n```\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 181:\n    sage: L.hardy_z_function(.2+.4*I)\nExpected:\n    0.2166144222685... - 0.004081871278504...*I\nGot:\n    0.216614422268554 - 0.00408187127850235*I\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 191:\n    sage: L.hardy_z_function(.5+2.1*I)\nExpected:\n    -0.0064317917686980...\nGot:\n    -0.00643179176869426 - 3.93820653320273e-19*I\n**********************************************************************\n1 items had failures:\n   2 of  17 in __main__.example_4\n***Test Failed*** 2 failures.\n```\n\n\nI've seen almost the same on redhawk, an Opteron 8439 SE:\n\n```\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 181:\n    sage: L.hardy_z_function(.2+.4*I)\nExpected:\n    0.2166144222685... - 0.004081871278504...*I\nGot:\n    0.216614422268554 - 0.00408187127850235*I\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 191:\n    sage: L.hardy_z_function(.5+2.1*I)\nExpected:\n    -0.0064317917686980...\nGot:\n    -0.00643179176869423 - 3.93820653320271e-19*I\n**********************************************************************\n1 items had failures:\n   2 of  17 in __main__.example_4\n***Test Failed*** 2 failures.\n```\n",
+    "body": "I do get doctest errors due to numerical noise.\n\nThis is on a Core2 Penryn (Ubuntu 10.04.3 x86_64):\n\n```\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 181:\n    sage: L.hardy_z_function(.2+.4*I)\nExpected:\n    0.2166144222685... - 0.004081871278504...*I\nGot:\n    0.216614422268554 - 0.00408187127850235*I\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 191:\n    sage: L.hardy_z_function(.5+2.1*I)\nExpected:\n    -0.0064317917686980...\nGot:\n    -0.00643179176869426 - 3.93820653320273e-19*I\n**********************************************************************\n1 items had failures:\n   2 of  17 in __main__.example_4\n***Test Failed*** 2 failures.\n```\n\nI've seen almost the same on redhawk, an Opteron 8439 SE:\n\n```\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 181:\n    sage: L.hardy_z_function(.2+.4*I)\nExpected:\n    0.2166144222685... - 0.004081871278504...*I\nGot:\n    0.216614422268554 - 0.00408187127850235*I\n**********************************************************************\nFile \".../sage/libs/lcalc/lcalc_Lfunction.pyx\", line 191:\n    sage: L.hardy_z_function(.5+2.1*I)\nExpected:\n    -0.0064317917686980...\nGot:\n    -0.00643179176869423 - 3.93820653320271e-19*I\n**********************************************************************\n1 items had failures:\n   2 of  17 in __main__.example_4\n***Test Failed*** 2 failures.\n```",
     "created_at": "2011-09-15T12:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -219,7 +218,6 @@ Got:
 ***Test Failed*** 2 failures.
 ```
 
-
 I've seen almost the same on redhawk, an Opteron 8439 SE:
 
 ```
@@ -242,7 +240,6 @@ Got:
    2 of  17 in __main__.example_4
 ***Test Failed*** 2 failures.
 ```
-
 
 
 
@@ -499,7 +496,7 @@ Please fill in your real name as Author.
 archive/issue_comments_078012.json:
 ```json
 {
-    "body": "Replying to [comment:16 jdemeyer]:\n> Please fill in your real name as Author.\n\nIs that for me or Jonathan? My real name is indeed \"Rishikesh\". Jonathan should also be added as an author since he really improved the documentation more than I did.",
+    "body": "Replying to [comment:16 jdemeyer]:\n> Please fill in your real name as Author.\n\n\nIs that for me or Jonathan? My real name is indeed \"Rishikesh\". Jonathan should also be added as an author since he really improved the documentation more than I did.",
     "created_at": "2012-07-27T21:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -511,6 +508,7 @@ archive/issue_comments_078012.json:
 Replying to [comment:16 jdemeyer]:
 > Please fill in your real name as Author.
 
+
 Is that for me or Jonathan? My real name is indeed "Rishikesh". Jonathan should also be added as an author since he really improved the documentation more than I did.
 
 
@@ -520,7 +518,7 @@ Is that for me or Jonathan? My real name is indeed "Rishikesh". Jonathan should 
 archive/issue_comments_078013.json:
 ```json
 {
-    "body": "Replying to [comment:17 rishi]:\n> Is that for me or Jonathan? My real name is indeed \"Rishikesh\".\nReally?  So it seems that I am \"culturally challenged\" in thinking that names should always consist of at least two parts: first name and last name.  Just for curiosity: where do you come from?",
+    "body": "Replying to [comment:17 rishi]:\n> Is that for me or Jonathan? My real name is indeed \"Rishikesh\".\n\nReally?  So it seems that I am \"culturally challenged\" in thinking that names should always consist of at least two parts: first name and last name.  Just for curiosity: where do you come from?",
     "created_at": "2012-10-05T19:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -531,6 +529,7 @@ archive/issue_comments_078013.json:
 
 Replying to [comment:17 rishi]:
 > Is that for me or Jonathan? My real name is indeed "Rishikesh".
+
 Really?  So it seems that I am "culturally challenged" in thinking that names should always consist of at least two parts: first name and last name.  Just for curiosity: where do you come from?
 
 
@@ -667,7 +666,7 @@ Hello ! What about this one ?
 archive/issue_comments_078020.json:
 ```json
 {
-    "body": "Replying to [comment:24 chapoton]:\n> Hello ! What about this one ? \n\nI will have a look at it again and get back by Thursday.",
+    "body": "Replying to [comment:24 chapoton]:\n> Hello ! What about this one ? \n\n\nI will have a look at it again and get back by Thursday.",
     "created_at": "2013-11-26T06:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -678,6 +677,7 @@ archive/issue_comments_078020.json:
 
 Replying to [comment:24 chapoton]:
 > Hello ! What about this one ? 
+
 
 I will have a look at it again and get back by Thursday.
 
@@ -724,7 +724,7 @@ Changing keywords from "" to "lcalc".
 archive/issue_comments_078023.json:
 ```json
 {
-    "body": "I have made a git branch. Needs review.\n----\nNew commits:",
+    "body": "I have made a git branch. Needs review.\n\n---\nNew commits:",
     "created_at": "2014-01-12T20:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
@@ -734,7 +734,8 @@ archive/issue_comments_078023.json:
 ```
 
 I have made a git branch. Needs review.
-----
+
+---
 New commits:
 
 

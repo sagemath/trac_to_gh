@@ -62,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3687
 archive/issue_comments_026082.json:
 ```json
 {
-    "body": "Let's try that again with proper formatting:\n\n# Scripts missing #!/bin/sh lines in sage_scripts-3.0.5.spkg:\n\n```\nsage-pull\nsage-push\nsage-mirror\nsage-mirror-darcs-scripts\nsage-osx-open\n```\n\n\n# Scripts missing #!/usr/bin/python lines in sage_scripts-3.0.5.dpkg:\n\n```\nsage-startuptime.py\nsage-gdb-pythonstartup\ndsage_setup.py\n```\n\n\n# Files unnecessarily marked as executable in sage_scripts-3.0.5.spkg\n\n```\nsage-banner\nsage-gdb-commands\nsage-maxima.lisp\n```\n\n\n# Scripts that use #!sage or #!sage.bin as their interpreter in sage_scripts-3.0.5.spkg\n# You want to use #!/usr/bin/env sage\n\n```\nsage-ipython \nsage-location\nsage-preparse\nsage-run \nsage-run2\n```\n\n\n# Weird files in sage_scripts-3.0.5.spkg marked executable\n\n```\nsage-README-osx.txt (duplicate of file of the same name in the root of the sage distribution)\nsage-verify-pyc (this one is just weird)\n```\n",
+    "body": "Let's try that again with proper formatting:\n\n# Scripts missing #!/bin/sh lines in sage_scripts-3.0.5.spkg:\n\n```\nsage-pull\nsage-push\nsage-mirror\nsage-mirror-darcs-scripts\nsage-osx-open\n```\n\n# Scripts missing #!/usr/bin/python lines in sage_scripts-3.0.5.dpkg:\n\n```\nsage-startuptime.py\nsage-gdb-pythonstartup\ndsage_setup.py\n```\n\n# Files unnecessarily marked as executable in sage_scripts-3.0.5.spkg\n\n```\nsage-banner\nsage-gdb-commands\nsage-maxima.lisp\n```\n\n# Scripts that use #!sage or #!sage.bin as their interpreter in sage_scripts-3.0.5.spkg\n# You want to use #!/usr/bin/env sage\n\n```\nsage-ipython \nsage-location\nsage-preparse\nsage-run \nsage-run2\n```\n\n# Weird files in sage_scripts-3.0.5.spkg marked executable\n\n```\nsage-README-osx.txt (duplicate of file of the same name in the root of the sage distribution)\nsage-verify-pyc (this one is just weird)\n```",
     "created_at": "2008-07-21T05:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
@@ -83,7 +83,6 @@ sage-mirror-darcs-scripts
 sage-osx-open
 ```
 
-
 # Scripts missing #!/usr/bin/python lines in sage_scripts-3.0.5.dpkg:
 
 ```
@@ -92,7 +91,6 @@ sage-gdb-pythonstartup
 dsage_setup.py
 ```
 
-
 # Files unnecessarily marked as executable in sage_scripts-3.0.5.spkg
 
 ```
@@ -100,7 +98,6 @@ sage-banner
 sage-gdb-commands
 sage-maxima.lisp
 ```
-
 
 # Scripts that use #!sage or #!sage.bin as their interpreter in sage_scripts-3.0.5.spkg
 # You want to use #!/usr/bin/env sage
@@ -113,14 +110,12 @@ sage-run
 sage-run2
 ```
 
-
 # Weird files in sage_scripts-3.0.5.spkg marked executable
 
 ```
 sage-README-osx.txt (duplicate of file of the same name in the root of the sage distribution)
 sage-verify-pyc (this one is just weird)
 ```
-
 
 
 
@@ -147,7 +142,7 @@ Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_026084.json:
 ```json
 {
-    "body": "Along with applying the attached patch, one should run\n\n```\nchmod -x sage-banner sage-gdb-commands sage-maxima.lisp sage-README-osx.txt sage-verify-pyc\n```\n",
+    "body": "Along with applying the attached patch, one should run\n\n```\nchmod -x sage-banner sage-gdb-commands sage-maxima.lisp sage-README-osx.txt sage-verify-pyc\n```",
     "created_at": "2009-04-26T05:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
@@ -161,7 +156,6 @@ Along with applying the attached patch, one should run
 ```
 chmod -x sage-banner sage-gdb-commands sage-maxima.lisp sage-README-osx.txt sage-verify-pyc
 ```
-
 
 
 

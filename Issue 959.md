@@ -3,7 +3,7 @@
 archive/issues_000959.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
+    "body": "Assignee: @williamstein\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
     "created_at": "2007-10-21T12:41:12Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_000959.json:
 ```
 Assignee: @williamstein
 
-
 ```
 > It looks like maybe there is an issue with the system-wide boost
 > you have installed.
@@ -27,7 +26,6 @@ Thanks William. Moving /usr/include/boost to /usr/include/boost.old and
 typing again make in SAGE_ROOT did it. You can recommend it to users who
 encounter the same problem.
 ```
-
 
 So, can we turn off Singular using boost at all, by default?
 
@@ -169,7 +167,7 @@ archive/issue_events_002648.json:
 archive/issue_comments_005828.json:
 ```json
 {
-    "body": "I reported this upstream and a fix will be available in the next point release of Singular. In the meantime Hans recommends to comment out this code\n\n\n```\n#ifdef HAVE_BOOST_DYNAMIC_BITSET_HPP\n#define  HAVE_BOOST 1\n#endif\n```\n\n\nin `kernel/tgb_internal.h`.",
+    "body": "I reported this upstream and a fix will be available in the next point release of Singular. In the meantime Hans recommends to comment out this code\n\n```\n#ifdef HAVE_BOOST_DYNAMIC_BITSET_HPP\n#define  HAVE_BOOST 1\n#endif\n```\n\nin `kernel/tgb_internal.h`.",
     "created_at": "2007-10-30T14:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
@@ -180,13 +178,11 @@ archive/issue_comments_005828.json:
 
 I reported this upstream and a fix will be available in the next point release of Singular. In the meantime Hans recommends to comment out this code
 
-
 ```
 #ifdef HAVE_BOOST_DYNAMIC_BITSET_HPP
 #define  HAVE_BOOST 1
 #endif
 ```
-
 
 in `kernel/tgb_internal.h`.
 

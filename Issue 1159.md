@@ -40,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1159
 archive/issue_comments_007061.json:
 ```json
 {
-    "body": "\n```\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n```\n",
+    "body": "```\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n```",
     "created_at": "2007-11-12T22:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
@@ -48,7 +48,6 @@ archive/issue_comments_007061.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
 %python
@@ -62,7 +61,6 @@ print range(MyInt(2**3), MyInt(2**3+10))
 print "here"
 print range(MyInt(2**34), MyInt(2**34+10))
 ```
-
 
 
 
@@ -106,7 +104,7 @@ I can't find any issue with this.  It works correctly for me in both the Python 
 archive/issue_comments_007063.json:
 ```json
 {
-    "body": "I get \n\n\n```\nTraceback (most recent call last):    print range(MyInt(2**34), MyInt(2**34+10))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/server/support.py\", line 260, in syseval\n    return system.eval(cmd)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/python.py\", line 21, in eval\n    eval(z, globals, locals)\n  File \"/Users/robert/sage/sage-2.8.11/data/extcode/sage/\", line 1, in <module>\n    \nTypeError: range() integer start argument expected, got instance.\n```\n\n\nOn a 64-bit machine, try \n\n```\nprint range(2**64, 2**64+10)\nprint range(MyInt(2**64), MyInt(2**64+10))\n```\n\n\nI believe this is a bug in Python, and have reported it here: http://bugs.python.org/issue1533",
+    "body": "I get \n\n```\nTraceback (most recent call last):    print range(MyInt(2**34), MyInt(2**34+10))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/server/support.py\", line 260, in syseval\n    return system.eval(cmd)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/python.py\", line 21, in eval\n    eval(z, globals, locals)\n  File \"/Users/robert/sage/sage-2.8.11/data/extcode/sage/\", line 1, in <module>\n    \nTypeError: range() integer start argument expected, got instance.\n```\n\nOn a 64-bit machine, try \n\n```\nprint range(2**64, 2**64+10)\nprint range(MyInt(2**64), MyInt(2**64+10))\n```\n\nI believe this is a bug in Python, and have reported it here: http://bugs.python.org/issue1533",
     "created_at": "2007-12-01T00:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ archive/issue_comments_007063.json:
 ```
 
 I get 
-
 
 ```
 Traceback (most recent call last):    print range(MyInt(2**34), MyInt(2**34+10))
@@ -129,14 +126,12 @@ Traceback (most recent call last):    print range(MyInt(2**34), MyInt(2**34+10))
 TypeError: range() integer start argument expected, got instance.
 ```
 
-
 On a 64-bit machine, try 
 
 ```
 print range(2**64, 2**64+10)
 print range(MyInt(2**64), MyInt(2**64+10))
 ```
-
 
 I believe this is a bug in Python, and have reported it here: http://bugs.python.org/issue1533
 

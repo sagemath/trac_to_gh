@@ -3,7 +3,7 @@
 archive/issues_007510.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: Primes, is_finite\n\nPrimes has no methods `is_finite`. This breaks several thing including: \n\n```\nsage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()\n\nAttributeError: 'Primes_with_category' object has no attribute 'is_finite'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Primes, is_finite\n\nPrimes has no methods `is_finite`. This breaks several thing including: \n\n```\nsage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()\n\nAttributeError: 'Primes_with_category' object has no attribute 'is_finite'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
     "created_at": "2009-11-21T15:20:15Z",
     "labels": [
         "component: number theory",
@@ -34,7 +34,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'Primes_with_category' object has no attribute 'is_finite'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7510
 
@@ -137,7 +136,7 @@ Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/som
 archive/issue_comments_063459.json:
 ```json
 {
-    "body": "Replying to [comment:4 mhansen]:\n> For the second example, don't you want an EnumeratedSet and not a FiniteEnumeratedSet?\n\nSure ! The example didn't even pass the test... I forgot to re-export before uploading the patch... Thank for pointing this out and sorry for the trouble...",
+    "body": "Replying to [comment:4 mhansen]:\n> For the second example, don't you want an EnumeratedSet and not a FiniteEnumeratedSet?\n\n\nSure ! The example didn't even pass the test... I forgot to re-export before uploading the patch... Thank for pointing this out and sorry for the trouble...",
     "created_at": "2009-11-21T22:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
@@ -148,6 +147,7 @@ archive/issue_comments_063459.json:
 
 Replying to [comment:4 mhansen]:
 > For the second example, don't you want an EnumeratedSet and not a FiniteEnumeratedSet?
+
 
 Sure ! The example didn't even pass the test... I forgot to re-export before uploading the patch... Thank for pointing this out and sorry for the trouble...
 

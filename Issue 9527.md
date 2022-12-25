@@ -89,7 +89,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_091498.json:
 ```json
 {
-    "body": "The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n\n\n```\nthis_is_my_prompt$ sage -sh\nSAGE_ROOT=/usr/local/sage-4.3\n(sage subshell) this_is_my_prompt$\n\n\n```\n\nBut it seems this just doesn't work (I tried). This new one is definitely an improvement thus I'll give it a positive review.",
+    "body": "The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n\n```\nthis_is_my_prompt$ sage -sh\nSAGE_ROOT=/usr/local/sage-4.3\n(sage subshell) this_is_my_prompt$\n\n\n```\nBut it seems this just doesn't work (I tried). This new one is definitely an improvement thus I'll give it a positive review.",
     "created_at": "2010-07-17T13:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
@@ -100,7 +100,6 @@ archive/issue_comments_091498.json:
 
 The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:
 
-
 ```
 this_is_my_prompt$ sage -sh
 SAGE_ROOT=/usr/local/sage-4.3
@@ -108,7 +107,6 @@ SAGE_ROOT=/usr/local/sage-4.3
 
 
 ```
-
 But it seems this just doesn't work (I tried). This new one is definitely an improvement thus I'll give it a positive review.
 
 
@@ -118,7 +116,7 @@ But it seems this just doesn't work (I tried). This new one is definitely an imp
 archive/issue_comments_091499.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n> \n> {{{\n> this_is_my_prompt$ sage -sh\n> SAGE_ROOT=/usr/local/sage-4.3\n> (sage subshell) this_is_my_prompt$\n> \n> \n> }}}\n> But it seems this just doesn't work (I tried). \n\nI tried too, but couldn't figure it out. This patch is meant to be a big improvement, that's all.",
+    "body": "Replying to [comment:2 malb]:\n> The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n> \n> \n> ```\n> this_is_my_prompt$ sage -sh\n> SAGE_ROOT=/usr/local/sage-4.3\n> (sage subshell) this_is_my_prompt$\n> \n> \n> ```\n> But it seems this just doesn't work (I tried). \n\n\nI tried too, but couldn't figure it out. This patch is meant to be a big improvement, that's all.",
     "created_at": "2010-07-17T13:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
@@ -130,14 +128,16 @@ archive/issue_comments_091499.json:
 Replying to [comment:2 malb]:
 > The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:
 > 
-> {{{
+> 
+> ```
 > this_is_my_prompt$ sage -sh
 > SAGE_ROOT=/usr/local/sage-4.3
 > (sage subshell) this_is_my_prompt$
 > 
 > 
-> }}}
+> ```
 > But it seems this just doesn't work (I tried). 
+
 
 I tried too, but couldn't figure it out. This patch is meant to be a big improvement, that's all.
 

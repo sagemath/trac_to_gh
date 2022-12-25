@@ -3,7 +3,7 @@
 archive/issues_000335.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFrom Kate Minola:\n\n\n```\nAfter building sage-2.4 on my pentium4-pc-linux machine,\nwhen I do 'make test', I get\n\n[stuff deleted]\nsage -t devel/sage-main/sage/geometry/lattice_polytope.py\nsage -t  devel/sage-main/sage/geometry/lattice_polytope.py  [Errno 39]\nDirectory not empty: '/home/kate/.sage//tmp/31372/'\n\n        [3.2 s]\n[stuff deleted]\n\nThe code in the function 'all_cached_data(polytopes)' in lattice_polytope.py\nseems to be causing this.\n\nEven though at the end, 'make test' says all the tests passed, this\nlooks like a problem.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/335\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Kate Minola:\n\n```\nAfter building sage-2.4 on my pentium4-pc-linux machine,\nwhen I do 'make test', I get\n\n[stuff deleted]\nsage -t devel/sage-main/sage/geometry/lattice_polytope.py\nsage -t  devel/sage-main/sage/geometry/lattice_polytope.py  [Errno 39]\nDirectory not empty: '/home/kate/.sage//tmp/31372/'\n\n        [3.2 s]\n[stuff deleted]\n\nThe code in the function 'all_cached_data(polytopes)' in lattice_polytope.py\nseems to be causing this.\n\nEven though at the end, 'make test' says all the tests passed, this\nlooks like a problem.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/335\n\n",
     "created_at": "2007-03-27T14:28:48Z",
     "labels": [
         "component: packages: standard",
@@ -20,7 +20,6 @@ archive/issues_000335.json:
 Assignee: @williamstein
 
 From Kate Minola:
-
 
 ```
 After building sage-2.4 on my pentium4-pc-linux machine,
@@ -40,7 +39,6 @@ seems to be causing this.
 Even though at the end, 'make test' says all the tests passed, this
 looks like a problem.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/335
 

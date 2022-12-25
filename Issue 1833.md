@@ -3,7 +3,7 @@
 archive/issues_001833.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (x,-1,1), (y,-1,1))\n```\n\nis fast, but \n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (-1,1), (-1,1))\n```\n\nis shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. \n\nThis also fixes trac #1737.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1833\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (x,-1,1), (y,-1,1))\n```\nis fast, but \n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (-1,1), (-1,1))\n```\nis shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. \n\nThis also fixes trac #1737.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1833\n\n",
     "created_at": "2008-01-18T16:22:22Z",
     "labels": [
         "component: algebraic geometry",
@@ -18,19 +18,16 @@ archive/issues_001833.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: x,y = var('x,y')
 sage: plot3d(x*y, (x,-1,1), (y,-1,1))
 ```
-
 is fast, but 
 
 ```
 sage: x,y = var('x,y')
 sage: plot3d(x*y, (-1,1), (-1,1))
 ```
-
 is shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. 
 
 This also fixes trac #1737.

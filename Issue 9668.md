@@ -3,7 +3,7 @@
 archive/issues_009668.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri\n\nSee [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.\n\n\n```\nHere is how I got the optional package automap to install into a \nbinary sage R. \nGo into the sage directory and edit the following files: \nlocal/bin/R and local/lib/R/bin/R \nand change all the hard-set user variables \"/scratch/....\" to the true \nlocations of R_HOME_DIR, R_HOME, R_INCLUDE_DIR, R_SHARE_DIR and for \ngood measure, R_DOC_DIR. Replace the default string EVERYWHERE in the \nfile. \nI then exported SAGE_HOME as well (Not sure that this is needed.), and \nrun local/bin/R \nInside R, install.packages(\"automap\") \nNo more build errors, and when I restart R, automap loads using \nlibrary. Just have to try it out from sage now. \nAny chance there's a script to find all of these hard-set strings and \nchange them to correct values? \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9668\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri\n\nSee [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.\n\n```\nHere is how I got the optional package automap to install into a \nbinary sage R. \nGo into the sage directory and edit the following files: \nlocal/bin/R and local/lib/R/bin/R \nand change all the hard-set user variables \"/scratch/....\" to the true \nlocations of R_HOME_DIR, R_HOME, R_INCLUDE_DIR, R_SHARE_DIR and for \ngood measure, R_DOC_DIR. Replace the default string EVERYWHERE in the \nfile. \nI then exported SAGE_HOME as well (Not sure that this is needed.), and \nrun local/bin/R \nInside R, install.packages(\"automap\") \nNo more build errors, and when I restart R, automap loads using \nlibrary. Just have to try it out from sage now. \nAny chance there's a script to find all of these hard-set strings and \nchange them to correct values? \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9668\n\n",
     "created_at": "2010-08-02T14:33:47Z",
     "labels": [
         "component: packages: standard",
@@ -22,7 +22,6 @@ CC:  @nexttime @jhpalmieri
 
 See [this](http://groups.google.com/group/sage-devel/browse_thread/thread/b35848f099c763a9) thread on sage-support.
 
-
 ```
 Here is how I got the optional package automap to install into a 
 binary sage R. 
@@ -40,7 +39,6 @@ library. Just have to try it out from sage now.
 Any chance there's a script to find all of these hard-set strings and 
 change them to correct values? 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9668
 
@@ -91,7 +89,7 @@ But what about #9668 (this ticket) itself?  Does the stuff that is "almost" read
 archive/issue_comments_093708.json:
 ```json
 {
-    "body": "Replying to [comment:3 kcrisman]:\n> But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n\nNot yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].",
+    "body": "Replying to [comment:3 kcrisman]:\n> But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n\n\nNot yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].",
     "created_at": "2011-08-05T11:27:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -103,6 +101,7 @@ archive/issue_comments_093708.json:
 Replying to [comment:3 kcrisman]:
 > But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
 
+
 Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
 
 
@@ -112,7 +111,7 @@ Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
 archive/issue_comments_093709.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> Replying to [comment:3 kcrisman]:\n> > But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n> \n> Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].\n\nOk, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).\n\n----\n\nThere was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a \"complicated\" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.",
+    "body": "Replying to [comment:4 leif]:\n> Replying to [comment:3 kcrisman]:\n> > But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n\n> \n> Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].\n\n\nOk, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).\n\n---\n\nThere was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a \"complicated\" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.",
     "created_at": "2011-08-05T16:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -124,12 +123,14 @@ archive/issue_comments_093709.json:
 Replying to [comment:4 leif]:
 > Replying to [comment:3 kcrisman]:
 > > But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+
 > 
 > Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
 
+
 Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).
 
-----
+---
 
 There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a "complicated" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.
 
@@ -140,7 +141,7 @@ There was another issue with R [someone reported on sage-devel](http://groups.go
 archive/issue_comments_093710.json:
 ```json
 {
-    "body": "Replying to [comment:5 leif]:\n> Replying to [comment:4 leif]:\n> > Replying to [comment:3 kcrisman]:\n> > > But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n> > \n> > Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].\n> Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).\nOkay, I'll watch this space.\n> There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a \"complicated\" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.\nAgreed.",
+    "body": "Replying to [comment:5 leif]:\n> Replying to [comment:4 leif]:\n> > Replying to [comment:3 kcrisman]:\n> > > But what about #9668 (this ticket) itself?  Does the stuff that is \"almost\" ready at #9906 address that?\n\n> > \n> > Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].\n\n> Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).\nOkay, I'll watch this space.\n> There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a \"complicated\" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.\n\nAgreed.",
     "created_at": "2011-08-05T16:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -153,11 +154,14 @@ Replying to [comment:5 leif]:
 > Replying to [comment:4 leif]:
 > > Replying to [comment:3 kcrisman]:
 > > > But what about #9668 (this ticket) itself?  Does the stuff that is "almost" ready at #9906 address that?
+
 > > 
 > > Not yet, i.e. not all of it. See [comment:ticket:9906:14 this comment there].
+
 > Ok, a bit more subtle than I expected (R is quite weird, failed to build inbetween), but I now have a p6 that fixes both the `R` scripts and the `pkg-config` file (`libR.pc`).
 Okay, I'll watch this space.
 > There was another issue with R [someone reported on sage-devel](http://groups.google.com/group/sage-devel/msg/ebb50bd73aba7d53?dmode=source) which was caused by a "complicated" setting of an environment variable, in this case `PAGER`, but that's certainly an upstream problem and rather exotic.
+
 Agreed.
 
 
@@ -185,7 +189,7 @@ See also #10967.  We should probably either incorporate that here, or make a fol
 archive/issue_comments_093712.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> See also #10967.  We should probably either incorporate that here, or make a followup spkg there.  \n\nAlmost certainly the former.\n\n[Note to myself:]\n\nThe problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being \"automatically\" relocated in the first place.\n\nI'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.",
+    "body": "Replying to [comment:7 kcrisman]:\n> See also #10967.  We should probably either incorporate that here, or make a followup spkg there.  \n\n\nAlmost certainly the former.\n\n[Note to myself:]\n\nThe problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being \"automatically\" relocated in the first place.\n\nI'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.",
     "created_at": "2011-08-19T14:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -196,6 +200,7 @@ archive/issue_comments_093712.json:
 
 Replying to [comment:7 kcrisman]:
 > See also #10967.  We should probably either incorporate that here, or make a followup spkg there.  
+
 
 Almost certainly the former.
 
@@ -248,7 +253,7 @@ Changing assignee from tbd to @nexttime.
 archive/issue_comments_093715.json:
 ```json
 {
-    "body": "Replying to [comment:8 leif]:\n> [Note to myself:] \n\n> \n> The problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being \"automatically\" relocated in the first place.\n> \n> I'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.\n\nGuessing `SAGE_ROOT` there is simply bullshit. Simply add a sanity check, pointing to `sage --R`, `install_scripts()` and perhaps `sage --sh` in case `SAGE_LOCAL` isn't defined.\n\nFurthermore:\n\n* Address / check the following (copied from [comment:ticket:10967:14]):\n\n```\nThe problem was with hard-coded paths, not the \npermissions.  Anyway, the fix was easy.  I opened all the files listed \nabove by George: \nsage/local/lib/R/bin/R \nsage/local/lib/R/bin/libtool \nsage/local/lib/R/etc/Makeconf \nsage/local/lib/R/etc/ldpath \nsage/local/lib/R/etc/Renviron \nsage/local/bin/R \nand edited obvious lines containing hardcoded paths (using find- \nreplace-all at once). \n```\n\n\n* Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)",
+    "body": "Replying to [comment:8 leif]:\n> [Note to myself:] \n\n\n> \n> The problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being \"automatically\" relocated in the first place.\n> \n> I'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.\n\n\nGuessing `SAGE_ROOT` there is simply bullshit. Simply add a sanity check, pointing to `sage --R`, `install_scripts()` and perhaps `sage --sh` in case `SAGE_LOCAL` isn't defined.\n\nFurthermore:\n\n* Address / check the following (copied from [comment:ticket:10967:14]):\n\n```\nThe problem was with hard-coded paths, not the \npermissions.  Anyway, the fix was easy.  I opened all the files listed \nabove by George: \nsage/local/lib/R/bin/R \nsage/local/lib/R/bin/libtool \nsage/local/lib/R/etc/Makeconf \nsage/local/lib/R/etc/ldpath \nsage/local/lib/R/etc/Renviron \nsage/local/bin/R \nand edited obvious lines containing hardcoded paths (using find- \nreplace-all at once). \n```\n\n* Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)",
     "created_at": "2011-08-21T00:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -260,10 +265,12 @@ archive/issue_comments_093715.json:
 Replying to [comment:8 leif]:
 > [Note to myself:] 
 
+
 > 
 > The problem is that removing any reference to `SAGE_ROOT` and `SAGE_LOCAL` disables the script being "automatically" relocated in the first place.
 > 
 > I'll then have to guess `SAGE_ROOT` if none of Sage's variables are defined. We also have two copies of the R script, one in `local/bin/`, and one in `local/lib/R/bin/`.
+
 
 Guessing `SAGE_ROOT` there is simply bullshit. Simply add a sanity check, pointing to `sage --R`, `install_scripts()` and perhaps `sage --sh` in case `SAGE_LOCAL` isn't defined.
 
@@ -285,7 +292,6 @@ and edited obvious lines containing hardcoded paths (using find-
 replace-all at once). 
 ```
 
-
 * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)
 
 
@@ -295,7 +301,7 @@ replace-all at once).
 archive/issue_comments_093716.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n>  * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)\n\nShould read:\n\n* Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, set `PKG_CONFIG_TOP_BUILD_DIR` to `$SAGE_ROOT` unless it is already, perhaps issuing a warning in case it isn't, or especially if its setting differs.) \n\n  Also prepend `$SAGE_ROOT/local/lib/pkgconfig` to `PKG_CONFIG_PATH`, unless it is already contained. Warn if `PKG_CONFIG_PATH` is empty, then set it to `$SAGE_ROOT/local/lib/pkgconfig`.",
+    "body": "Replying to [comment:9 leif]:\n>  * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)\n\n\nShould read:\n\n* Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, set `PKG_CONFIG_TOP_BUILD_DIR` to `$SAGE_ROOT` unless it is already, perhaps issuing a warning in case it isn't, or especially if its setting differs.) \n\n  Also prepend `$SAGE_ROOT/local/lib/pkgconfig` to `PKG_CONFIG_PATH`, unless it is already contained. Warn if `PKG_CONFIG_PATH` is empty, then set it to `$SAGE_ROOT/local/lib/pkgconfig`.",
     "created_at": "2011-08-21T02:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -306,6 +312,7 @@ archive/issue_comments_093716.json:
 
 Replying to [comment:9 leif]:
 >  * Change `libR.pc` to use either `${pc_top_builddir}` or `$${SAGE_ROOT}`. (In the former case, perhaps also set `PC_TOP_BUILD_DIR` to `$SAGE_ROOT`, or prepend `$SAGE_ROOT:`, unless it is already contained.)
+
 
 Should read:
 
@@ -356,7 +363,7 @@ Changing keywords from "R spkg R.sh.in libR.pc pkg-config hard-coded package ins
 archive/issue_comments_093719.json:
 ```json
 {
-    "body": "This problem prevents Sage from being relocatable on Solaris, or at least on the skynet machines mark and mark2: if I build Sage, then move the entire Sage directory, then run `sage` so the relocation scripts get executed, and then run `sage -R`, I get an error:\n\n```\n$ ./sage -R\nld.so.1: R: fatal: libgcc_s.so.1: version `GCC_4.3.0' not found (required by file /usr/local/gcc-4.7.0/sparc-SunOS-ultrasparc3/lib/libgomp.so.1)\nld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\n/home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  \"$SAGE_LOCAL/bin/R\" \"$@\"\n```\n\nI tried just modifying local/bin/R and local/lib/R/bin/R, replacing the hard-coded paths with `$SAGE_ROOT`, but I still got an error.",
+    "body": "This problem prevents Sage from being relocatable on Solaris, or at least on the skynet machines mark and mark2: if I build Sage, then move the entire Sage directory, then run `sage` so the relocation scripts get executed, and then run `sage -R`, I get an error:\n\n```\n$ ./sage -R\nld.so.1: R: fatal: libgcc_s.so.1: version `GCC_4.3.0' not found (required by file /usr/local/gcc-4.7.0/sparc-SunOS-ultrasparc3/lib/libgomp.so.1)\nld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\n/home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  \"$SAGE_LOCAL/bin/R\" \"$@\"\n```\nI tried just modifying local/bin/R and local/lib/R/bin/R, replacing the hard-coded paths with `$SAGE_ROOT`, but I still got an error.",
     "created_at": "2012-10-26T16:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -373,7 +380,6 @@ ld.so.1: R: fatal: libgcc_s.so.1: version `GCC_4.3.0' not found (required by fil
 ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory
 /home/palmieri/mark2/sage-5.4.rc2-7797/spkg/bin/sage: line 457: 28710 Killed                  "$SAGE_LOCAL/bin/R" "$@"
 ```
-
 I tried just modifying local/bin/R and local/lib/R/bin/R, replacing the hard-coded paths with `$SAGE_ROOT`, but I still got an error.
 
 
@@ -405,7 +411,7 @@ Sorry for not being of much help here, at least right now... ;-)
 archive/issue_comments_093721.json:
 ```json
 {
-    "body": "Well, if the problems on mark are not related, then for this ticket, we could just add some lines at the end of spkg-install:\n\n```\n# Make R relocatable by using \"$SAGE_ROOT\" instead of the hardcoded path.\nsed -e \"s|$SAGE_ROOT|\\$SAGE_ROOT/|\" \"$SAGE_LOCAL/bin/R\" > \"$SAGE_LOCAL/bin/R.tmp\" && mv \"$SAGE_LOCAL/bin/R.tmp\" \"$SAGE_LOCAL/bin/R\" && chmod a+x \"$SAGE_LOCAL/bin/R\"\nsed -e \"s|$SAGE_ROOT|\\$SAGE_ROOT/|\" \"$SAGE_LOCAL/lib/R/bin/R\" > \"$SAGE_LOCAL/lib/R/bin/R.tmp\" && mv \"$SAGE_LOCAL/lib/R/bin/R.tmp\" \"$SAGE_LOCAL/lib/R/bin/R\" && chmod a+x \"$SAGE_LOCAL/lib/R/bin/R\"\n```\n\n(It's too bad that the `-i` flag for sed is not portable.) `libR.pc` already uses SAGE_ROOT. What else needs to be done?",
+    "body": "Well, if the problems on mark are not related, then for this ticket, we could just add some lines at the end of spkg-install:\n\n```\n# Make R relocatable by using \"$SAGE_ROOT\" instead of the hardcoded path.\nsed -e \"s|$SAGE_ROOT|\\$SAGE_ROOT/|\" \"$SAGE_LOCAL/bin/R\" > \"$SAGE_LOCAL/bin/R.tmp\" && mv \"$SAGE_LOCAL/bin/R.tmp\" \"$SAGE_LOCAL/bin/R\" && chmod a+x \"$SAGE_LOCAL/bin/R\"\nsed -e \"s|$SAGE_ROOT|\\$SAGE_ROOT/|\" \"$SAGE_LOCAL/lib/R/bin/R\" > \"$SAGE_LOCAL/lib/R/bin/R.tmp\" && mv \"$SAGE_LOCAL/lib/R/bin/R.tmp\" \"$SAGE_LOCAL/lib/R/bin/R\" && chmod a+x \"$SAGE_LOCAL/lib/R/bin/R\"\n```\n(It's too bad that the `-i` flag for sed is not portable.) `libR.pc` already uses SAGE_ROOT. What else needs to be done?",
     "created_at": "2012-10-26T19:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -421,7 +427,6 @@ Well, if the problems on mark are not related, then for this ticket, we could ju
 sed -e "s|$SAGE_ROOT|\$SAGE_ROOT/|" "$SAGE_LOCAL/bin/R" > "$SAGE_LOCAL/bin/R.tmp" && mv "$SAGE_LOCAL/bin/R.tmp" "$SAGE_LOCAL/bin/R" && chmod a+x "$SAGE_LOCAL/bin/R"
 sed -e "s|$SAGE_ROOT|\$SAGE_ROOT/|" "$SAGE_LOCAL/lib/R/bin/R" > "$SAGE_LOCAL/lib/R/bin/R.tmp" && mv "$SAGE_LOCAL/lib/R/bin/R.tmp" "$SAGE_LOCAL/lib/R/bin/R" && chmod a+x "$SAGE_LOCAL/lib/R/bin/R"
 ```
-
 (It's too bad that the `-i` flag for sed is not portable.) `libR.pc` already uses SAGE_ROOT. What else needs to be done?
 
 
@@ -467,7 +472,7 @@ I've posted a new spkg, along with the corresponding patch.
 archive/issue_comments_093724.json:
 ```json
 {
-    "body": "Replying to [comment:9 leif]:\n>  * Address / check the following (copied from [comment:ticket:10967:14]):\n> {{{\n> The problem was with hard-coded paths, not the \n> permissions.  Anyway, the fix was easy.  I opened all the files listed \n> above by George: \n> sage/local/lib/R/bin/R \n> sage/local/lib/R/bin/libtool \n> sage/local/lib/R/etc/Makeconf \n> sage/local/lib/R/etc/ldpath \n> sage/local/lib/R/etc/Renviron \n> sage/local/bin/R \n> and edited obvious lines containing hardcoded paths (using find- \n> replace-all at once). \n> }}}\nIt's easy enough to add these to the \"for\" loop that I added to spkg-install, so I might as well do that. For what it's worth, the binary files `Rscript` in both local/bin and local/lib/R/bin also have the path hard-coded in them, but I don't know how to fix this, or whether it's important. When are those files used?",
+    "body": "Replying to [comment:9 leif]:\n>  * Address / check the following (copied from [comment:ticket:10967:14]):\n \n> {{{\n> The problem was with hard-coded paths, not the \n> permissions.  Anyway, the fix was easy.  I opened all the files listed \n> above by George: \n> sage/local/lib/R/bin/R \n> sage/local/lib/R/bin/libtool \n> sage/local/lib/R/etc/Makeconf \n> sage/local/lib/R/etc/ldpath \n> sage/local/lib/R/etc/Renviron \n> sage/local/bin/R \n> and edited obvious lines containing hardcoded paths (using find- \n> replace-all at once). \n> }}}\n\nIt's easy enough to add these to the \"for\" loop that I added to spkg-install, so I might as well do that. For what it's worth, the binary files `Rscript` in both local/bin and local/lib/R/bin also have the path hard-coded in them, but I don't know how to fix this, or whether it's important. When are those files used?",
     "created_at": "2012-10-26T20:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -478,6 +483,7 @@ archive/issue_comments_093724.json:
 
 Replying to [comment:9 leif]:
 >  * Address / check the following (copied from [comment:ticket:10967:14]):
+ 
 > {{{
 > The problem was with hard-coded paths, not the 
 > permissions.  Anyway, the fix was easy.  I opened all the files listed 
@@ -491,6 +497,7 @@ Replying to [comment:9 leif]:
 > and edited obvious lines containing hardcoded paths (using find- 
 > replace-all at once). 
 > }}}
+
 It's easy enough to add these to the "for" loop that I added to spkg-install, so I might as well do that. For what it's worth, the binary files `Rscript` in both local/bin and local/lib/R/bin also have the path hard-coded in them, but I don't know how to fix this, or whether it's important. When are those files used?
 
 
@@ -666,7 +673,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_093734.json:
 ```json
 {
-    "body": "Replying to [comment:25 jdemeyer]:\n> I think using `sed` for this is very fragile, as any special characters in `$SAGE_ROOT` might cause this script to malfunction. A better \nOut of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?  I feel like we already don't allow whitespace, though that might be an old memory.  Does Sage work in non-ASCII paths as well, say with Cyrillic characters?",
+    "body": "Replying to [comment:25 jdemeyer]:\n> I think using `sed` for this is very fragile, as any special characters in `$SAGE_ROOT` might cause this script to malfunction. A better \n\nOut of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?  I feel like we already don't allow whitespace, though that might be an old memory.  Does Sage work in non-ASCII paths as well, say with Cyrillic characters?",
     "created_at": "2013-01-04T14:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -677,6 +684,7 @@ archive/issue_comments_093734.json:
 
 Replying to [comment:25 jdemeyer]:
 > I think using `sed` for this is very fragile, as any special characters in `$SAGE_ROOT` might cause this script to malfunction. A better 
+
 Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?  I feel like we already don't allow whitespace, though that might be an old memory.  Does Sage work in non-ASCII paths as well, say with Cyrillic characters?
 
 
@@ -686,7 +694,7 @@ Out of curiosity, do we have any current restrictions on the characters in `$SAG
 archive/issue_comments_093735.json:
 ```json
 {
-    "body": "Replying to [comment:26 kcrisman]:\n> Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?\nWe certainly do, although only \"no spaces\" is documented.\n\nBut I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|\"+*=`@`$'` (which is a valid UNIX filename)",
+    "body": "Replying to [comment:26 kcrisman]:\n> Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?\n\nWe certainly do, although only \"no spaces\" is documented.\n\nBut I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|\"+*=`@`$'` (which is a valid UNIX filename)",
     "created_at": "2013-01-04T15:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -697,6 +705,7 @@ archive/issue_comments_093735.json:
 
 Replying to [comment:26 kcrisman]:
 > Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?
+
 We certainly do, although only "no spaces" is documented.
 
 But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|"+*=`@`$'` (which is a valid UNIX filename)
@@ -708,7 +717,7 @@ But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|"+
 archive/issue_comments_093736.json:
 ```json
 {
-    "body": "> > Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?\n> We certainly do, although only \"no spaces\" is documented.\n> \n> But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|\"+*=`@`$'` (which is a valid UNIX filename)\nYou sound like you're arguing that we might as well use `sed` :-)  If I wasn't lazy I'd try to grep through other spkgs to see if it's used elsewhere - I'm almost sure I've seen it in use before...",
+    "body": "> > Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?\n\n> We certainly do, although only \"no spaces\" is documented.\n> \n> But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|\"+*=`@`$'` (which is a valid UNIX filename)\n\nYou sound like you're arguing that we might as well use `sed` :-)  If I wasn't lazy I'd try to grep through other spkgs to see if it's used elsewhere - I'm almost sure I've seen it in use before...",
     "created_at": "2013-01-04T15:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -718,9 +727,11 @@ archive/issue_comments_093736.json:
 ```
 
 > > Out of curiosity, do we have any current restrictions on the characters in `$SAGE_ROOT`?
+
 > We certainly do, although only "no spaces" is documented.
 > 
 > But I doubt Sage will work correctly with a directory like `/home/jdemeyer/.#|"+*=`@`$'` (which is a valid UNIX filename)
+
 You sound like you're arguing that we might as well use `sed` :-)  If I wasn't lazy I'd try to grep through other spkgs to see if it's used elsewhere - I'm almost sure I've seen it in use before...
 
 
@@ -842,7 +853,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093743.json:
 ```json
 {
-    "body": "I don't like this at all:\n\n```\n./configure --prefix=\"\\$SAGE_LOCAL\"\n```\n\nIf it works, you're probably relying on a bug. Why is it needed?\n\nAlso, the first hunk in `Makefile.in.patch` is not needed.\n\nIn any case, this needs to be rebased as R has been upgraded.",
+    "body": "I don't like this at all:\n\n```\n./configure --prefix=\"\\$SAGE_LOCAL\"\n```\nIf it works, you're probably relying on a bug. Why is it needed?\n\nAlso, the first hunk in `Makefile.in.patch` is not needed.\n\nIn any case, this needs to be rebased as R has been upgraded.",
     "created_at": "2013-03-16T22:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -856,7 +867,6 @@ I don't like this at all:
 ```
 ./configure --prefix="\$SAGE_LOCAL"
 ```
-
 If it works, you're probably relying on a bug. Why is it needed?
 
 Also, the first hunk in `Makefile.in.patch` is not needed.
@@ -870,7 +880,7 @@ In any case, this needs to be rebased as R has been upgraded.
 archive/issue_comments_093744.json:
 ```json
 {
-    "body": "Replying to [comment:32 jdemeyer]:\n> I don't like this at all:\n> {{{\n> ./configure --prefix=\"\\$SAGE_LOCAL\"\n> }}}\n> If it works, you're probably relying on a bug. Why is it needed?\n\nIf I remember correctly, the prefix directory gets written into various of the files in `SAGE_LOCAL/lib/R/bin/`, so using `\\$SAGE_LOCAL` instead of `$SAGE_LOCAL` means that \"$SAGE_LOCAL\" gets written verbatim to the file, instead of expanded first and then written. This makes those files relocatable.\n\nWhy don't you like it?",
+    "body": "Replying to [comment:32 jdemeyer]:\n> I don't like this at all:\n> \n> ```\n> ./configure --prefix=\"\\$SAGE_LOCAL\"\n> ```\n> If it works, you're probably relying on a bug. Why is it needed?\n\n\nIf I remember correctly, the prefix directory gets written into various of the files in `SAGE_LOCAL/lib/R/bin/`, so using `\\$SAGE_LOCAL` instead of `$SAGE_LOCAL` means that \"$SAGE_LOCAL\" gets written verbatim to the file, instead of expanded first and then written. This makes those files relocatable.\n\nWhy don't you like it?",
     "created_at": "2013-03-16T23:55:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -881,10 +891,12 @@ archive/issue_comments_093744.json:
 
 Replying to [comment:32 jdemeyer]:
 > I don't like this at all:
-> {{{
+> 
+> ```
 > ./configure --prefix="\$SAGE_LOCAL"
-> }}}
+> ```
 > If it works, you're probably relying on a bug. Why is it needed?
+
 
 If I remember correctly, the prefix directory gets written into various of the files in `SAGE_LOCAL/lib/R/bin/`, so using `\$SAGE_LOCAL` instead of `$SAGE_LOCAL` means that "$SAGE_LOCAL" gets written verbatim to the file, instead of expanded first and then written. This makes those files relocatable.
 
@@ -897,7 +909,7 @@ Why don't you like it?
 archive/issue_comments_093745.json:
 ```json
 {
-    "body": "Replying to [comment:33 jhpalmieri]:\n> Why don't you like it?\nBecause the fact that it works looks like a bug rather than a feature.",
+    "body": "Replying to [comment:33 jhpalmieri]:\n> Why don't you like it?\n\nBecause the fact that it works looks like a bug rather than a feature.",
     "created_at": "2013-03-17T10:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -908,6 +920,7 @@ archive/issue_comments_093745.json:
 
 Replying to [comment:33 jhpalmieri]:
 > Why don't you like it?
+
 Because the fact that it works looks like a bug rather than a feature.
 
 
@@ -917,7 +930,7 @@ Because the fact that it works looks like a bug rather than a feature.
 archive/issue_comments_093746.json:
 ```json
 {
-    "body": "If you look at `src/scripts/R.sh.in`, it has lines like\n\n```\n        R_HOME_DIR=\"@prefix@/${libnn}/R\"\n```\n\nMy understanding is that `prefix` gets set by the configure script, stored in `Makefile.conf`, and then read by `src/scripts/Makefile` so this variable's value can get used when making the R script. In particular, the R people are deliberately using the `prefix` variable here. So it looks like their design decision, not a bug. But I'm not sure I understand your point.",
+    "body": "If you look at `src/scripts/R.sh.in`, it has lines like\n\n```\n        R_HOME_DIR=\"@prefix@/${libnn}/R\"\n```\nMy understanding is that `prefix` gets set by the configure script, stored in `Makefile.conf`, and then read by `src/scripts/Makefile` so this variable's value can get used when making the R script. In particular, the R people are deliberately using the `prefix` variable here. So it looks like their design decision, not a bug. But I'm not sure I understand your point.",
     "created_at": "2013-03-17T15:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -931,7 +944,6 @@ If you look at `src/scripts/R.sh.in`, it has lines like
 ```
         R_HOME_DIR="@prefix@/${libnn}/R"
 ```
-
 My understanding is that `prefix` gets set by the configure script, stored in `Makefile.conf`, and then read by `src/scripts/Makefile` so this variable's value can get used when making the R script. In particular, the R people are deliberately using the `prefix` variable here. So it looks like their design decision, not a bug. But I'm not sure I understand your point.
 
 
@@ -941,7 +953,7 @@ My understanding is that `prefix` gets set by the configure script, stored in `M
 archive/issue_comments_093747.json:
 ```json
 {
-    "body": "Replying to [comment:35 jhpalmieri]:\n> If you look at `src/scripts/R.sh.in`, it has lines like\n> {{{\n>         R_HOME_DIR=\"`@`prefix`@`/${libnn}/R\"\n> }}}\nThis line is completely irrelevant, as we already patch `R.sh.in` to overwrite `R_HOME_DIR`.",
+    "body": "Replying to [comment:35 jhpalmieri]:\n> If you look at `src/scripts/R.sh.in`, it has lines like\n> \n> ```\n>         R_HOME_DIR=\"@prefix@/${libnn}/R\"\n> ```\n\nThis line is completely irrelevant, as we already patch `R.sh.in` to overwrite `R_HOME_DIR`.",
     "created_at": "2013-03-17T15:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -952,9 +964,11 @@ archive/issue_comments_093747.json:
 
 Replying to [comment:35 jhpalmieri]:
 > If you look at `src/scripts/R.sh.in`, it has lines like
-> {{{
->         R_HOME_DIR="`@`prefix`@`/${libnn}/R"
-> }}}
+> 
+> ```
+>         R_HOME_DIR="@prefix@/${libnn}/R"
+> ```
+
 This line is completely irrelevant, as we already patch `R.sh.in` to overwrite `R_HOME_DIR`.
 
 
@@ -982,7 +996,7 @@ Attachment [trac_9668-r.v3.patch](tarball://root/attachments/some-uuid/ticket966
 archive/issue_comments_093749.json:
 ```json
 {
-    "body": "I'll post a new version of the spkg when sage.math is back up. I've attached the patch. This has the effect of changing lines in `local/bin/R` (and the corresponding file `local/lib/R/bin/R`) from\n\n```\nR_SHARE_DIR=.../sage-5.8.beta4/local/lib/R/share\nexport R_SHARE_DIR\nR_INCLUDE_DIR=.../sage-5.8.beta4/local/lib/R/include\nexport R_INCLUDE_DIR\nR_DOC_DIR=.../sage-5.8.beta4/local/lib/R/doc\nexport R_DOC_DIR\n```\n\nto\n\n```\nR_SHARE_DIR=\"${R_HOME_DIR}/share\"\nexport R_SHARE_DIR\nR_INCLUDE_DIR=\"${R_HOME_DIR}/include\"\nexport R_INCLUDE_DIR\nR_DOC_DIR=\"${R_HOME_DIR}/doc\"\nexport R_DOC_DIR\n```\n\nWith this change, running `sage -R` and then `install.packages(\"automap\")` seems to work.",
+    "body": "I'll post a new version of the spkg when sage.math is back up. I've attached the patch. This has the effect of changing lines in `local/bin/R` (and the corresponding file `local/lib/R/bin/R`) from\n\n```\nR_SHARE_DIR=.../sage-5.8.beta4/local/lib/R/share\nexport R_SHARE_DIR\nR_INCLUDE_DIR=.../sage-5.8.beta4/local/lib/R/include\nexport R_INCLUDE_DIR\nR_DOC_DIR=.../sage-5.8.beta4/local/lib/R/doc\nexport R_DOC_DIR\n```\nto\n\n```\nR_SHARE_DIR=\"${R_HOME_DIR}/share\"\nexport R_SHARE_DIR\nR_INCLUDE_DIR=\"${R_HOME_DIR}/include\"\nexport R_INCLUDE_DIR\nR_DOC_DIR=\"${R_HOME_DIR}/doc\"\nexport R_DOC_DIR\n```\nWith this change, running `sage -R` and then `install.packages(\"automap\")` seems to work.",
     "created_at": "2013-03-18T01:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1001,7 +1015,6 @@ export R_INCLUDE_DIR
 R_DOC_DIR=.../sage-5.8.beta4/local/lib/R/doc
 export R_DOC_DIR
 ```
-
 to
 
 ```
@@ -1012,7 +1025,6 @@ export R_INCLUDE_DIR
 R_DOC_DIR="${R_HOME_DIR}/doc"
 export R_DOC_DIR
 ```
-
 With this change, running `sage -R` and then `install.packages("automap")` seems to work.
 
 
@@ -1040,7 +1052,7 @@ New spkg posted.
 archive/issue_comments_093751.json:
 ```json
 {
-    "body": "Replying to [comment:37 jhpalmieri]:\n> I'll post a new version of the spkg when sage.math is back up.\n\nReplying to [comment:38 jhpalmieri]:\n> New spkg posted.\n\nI still cannot log into sage.math... ;-)",
+    "body": "Replying to [comment:37 jhpalmieri]:\n> I'll post a new version of the spkg when sage.math is back up.\n\n\nReplying to [comment:38 jhpalmieri]:\n> New spkg posted.\n\n\nI still cannot log into sage.math... ;-)",
     "created_at": "2013-03-18T18:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1052,8 +1064,10 @@ archive/issue_comments_093751.json:
 Replying to [comment:37 jhpalmieri]:
 > I'll post a new version of the spkg when sage.math is back up.
 
+
 Replying to [comment:38 jhpalmieri]:
 > New spkg posted.
+
 
 I still cannot log into sage.math... ;-)
 
@@ -1064,7 +1078,7 @@ I still cannot log into sage.math... ;-)
 archive/issue_comments_093752.json:
 ```json
 {
-    "body": "Replying to [comment:39 leif]:\n> Replying to [comment:37 jhpalmieri]:\n> > I'll post a new version of the spkg when sage.math is back up.\n> \n> Replying to [comment:38 jhpalmieri]:\n> > New spkg posted.\n> \n> I still cannot log into sage.math... ;-)\n\nI did an `scp` to boxen. If you want, I can try to keep my promise by posting the new version (again) when sage.math comes back up...",
+    "body": "Replying to [comment:39 leif]:\n> Replying to [comment:37 jhpalmieri]:\n> > I'll post a new version of the spkg when sage.math is back up.\n\n> \n> Replying to [comment:38 jhpalmieri]:\n> > New spkg posted.\n\n> \n> I still cannot log into sage.math... ;-)\n\n\nI did an `scp` to boxen. If you want, I can try to keep my promise by posting the new version (again) when sage.math comes back up...",
     "created_at": "2013-03-18T18:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1076,11 +1090,14 @@ archive/issue_comments_093752.json:
 Replying to [comment:39 leif]:
 > Replying to [comment:37 jhpalmieri]:
 > > I'll post a new version of the spkg when sage.math is back up.
+
 > 
 > Replying to [comment:38 jhpalmieri]:
 > > New spkg posted.
+
 > 
 > I still cannot log into sage.math... ;-)
+
 
 I did an `scp` to boxen. If you want, I can try to keep my promise by posting the new version (again) when sage.math comes back up...
 
@@ -1145,7 +1162,7 @@ I think that someone should confirm that with the new spkg, in the script `local
 archive/issue_comments_093756.json:
 ```json
 {
-    "body": "> I think that someone should confirm that with the new spkg, in the script `local/bin/R`, the variables `R_SHARE_DIR`, `R_INCLUDE_DIR`, and `R_DOC_DIR` are now defined in terms of `R_HOME_DIR` rather than being hard-coded paths as they are with the current spkg.\nI can do this.",
+    "body": "> I think that someone should confirm that with the new spkg, in the script `local/bin/R`, the variables `R_SHARE_DIR`, `R_INCLUDE_DIR`, and `R_DOC_DIR` are now defined in terms of `R_HOME_DIR` rather than being hard-coded paths as they are with the current spkg.\n\nI can do this.",
     "created_at": "2013-04-16T19:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1155,6 +1172,7 @@ archive/issue_comments_093756.json:
 ```
 
 > I think that someone should confirm that with the new spkg, in the script `local/bin/R`, the variables `R_SHARE_DIR`, `R_INCLUDE_DIR`, and `R_DOC_DIR` are now defined in terms of `R_HOME_DIR` rather than being hard-coded paths as they are with the current spkg.
+
 I can do this.
 
 
@@ -1182,7 +1200,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_093758.json:
 ```json
 {
-    "body": "I confirmed that moving a Sage install (not just binary) caused installing an R package to fail with precisely the problems one would expect if these were incorrectly defined (e.g. \n\n```\nWarning: R include directory is empty -- perhaps need to install R-devel.rpm or similar\n```\n\nwith appropriate nonexistent directory referenced).  The script `local/bin/R` had the (now incorrect) paths.  \n\nThen installing this spkg and retrying caused success, and `local/bin/R` looks right now too.  Nice work!",
+    "body": "I confirmed that moving a Sage install (not just binary) caused installing an R package to fail with precisely the problems one would expect if these were incorrectly defined (e.g. \n\n```\nWarning: R include directory is empty -- perhaps need to install R-devel.rpm or similar\n```\nwith appropriate nonexistent directory referenced).  The script `local/bin/R` had the (now incorrect) paths.  \n\nThen installing this spkg and retrying caused success, and `local/bin/R` looks right now too.  Nice work!",
     "created_at": "2013-04-16T19:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1196,7 +1214,6 @@ I confirmed that moving a Sage install (not just binary) caused installing an R 
 ```
 Warning: R include directory is empty -- perhaps need to install R-devel.rpm or similar
 ```
-
 with appropriate nonexistent directory referenced).  The script `local/bin/R` had the (now incorrect) paths.  
 
 Then installing this spkg and retrying caused success, and `local/bin/R` looks right now too.  Nice work!
@@ -1208,7 +1225,7 @@ Then installing this spkg and retrying caused success, and `local/bin/R` looks r
 archive/issue_comments_093759.json:
 ```json
 {
-    "body": "One question, though... when I move Sage back and run Sage, it doesn't change `R_HOME_DIR` back.\n\n```\nR_HOME_DIR=/Users/.../Downloads/tempR/sage-5.9.beta5/local/lib/R\n```\n\nwhen it should be\n\n```\nR_HOME_DIR=/Users/.../Downloads/sage-5.9.beta5/local/lib/R\n```\n\nSo this was changed, presumably, when I reinstalled the spkg.  It doesn't impact installing new R packages, by the way, nor functionality of R.\n\nIn particular, moving a *different* Sage installation and starting Sage changes some things, but doesn't change the location of `R_HOME_DIR` in `local/bin/R`.    I'm not sure why that doesn't affect functionality, but presumably this should somehow be taken care of.  On this ticket?",
+    "body": "One question, though... when I move Sage back and run Sage, it doesn't change `R_HOME_DIR` back.\n\n```\nR_HOME_DIR=/Users/.../Downloads/tempR/sage-5.9.beta5/local/lib/R\n```\nwhen it should be\n\n```\nR_HOME_DIR=/Users/.../Downloads/sage-5.9.beta5/local/lib/R\n```\nSo this was changed, presumably, when I reinstalled the spkg.  It doesn't impact installing new R packages, by the way, nor functionality of R.\n\nIn particular, moving a *different* Sage installation and starting Sage changes some things, but doesn't change the location of `R_HOME_DIR` in `local/bin/R`.    I'm not sure why that doesn't affect functionality, but presumably this should somehow be taken care of.  On this ticket?",
     "created_at": "2013-04-16T20:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1222,13 +1239,11 @@ One question, though... when I move Sage back and run Sage, it doesn't change `R
 ```
 R_HOME_DIR=/Users/.../Downloads/tempR/sage-5.9.beta5/local/lib/R
 ```
-
 when it should be
 
 ```
 R_HOME_DIR=/Users/.../Downloads/sage-5.9.beta5/local/lib/R
 ```
-
 So this was changed, presumably, when I reinstalled the spkg.  It doesn't impact installing new R packages, by the way, nor functionality of R.
 
 In particular, moving a *different* Sage installation and starting Sage changes some things, but doesn't change the location of `R_HOME_DIR` in `local/bin/R`.    I'm not sure why that doesn't affect functionality, but presumably this should somehow be taken care of.  On this ticket?
@@ -1258,7 +1273,7 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_093761.json:
 ```json
 {
-    "body": "It took me a little while to understand this, too. Right before the lines defining `R_SHARE_DIR`, etc., there are lines\n\n```sh\nif test x$SAGE_BUILDING_R = x; then\n    R_HOME_DIR=\"$SAGE_LOCAL/lib/R/\"\nfi\n```\n\nIf you're not *building* the R spkg, then this will be executed, overriding the hard-coded path earlier in the script, and setting `R_HOME_DIR` to the desired portable setting. I don't know R, so I don't know how to test this: if you run `sage -R`, can you execute some R command to tell you the current setting of `R_HOME_DIR`?",
+    "body": "It took me a little while to understand this, too. Right before the lines defining `R_SHARE_DIR`, etc., there are lines\n\n```sh\nif test x$SAGE_BUILDING_R = x; then\n    R_HOME_DIR=\"$SAGE_LOCAL/lib/R/\"\nfi\n```\nIf you're not *building* the R spkg, then this will be executed, overriding the hard-coded path earlier in the script, and setting `R_HOME_DIR` to the desired portable setting. I don't know R, so I don't know how to test this: if you run `sage -R`, can you execute some R command to tell you the current setting of `R_HOME_DIR`?",
     "created_at": "2013-04-16T22:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1274,7 +1289,6 @@ if test x$SAGE_BUILDING_R = x; then
     R_HOME_DIR="$SAGE_LOCAL/lib/R/"
 fi
 ```
-
 If you're not *building* the R spkg, then this will be executed, overriding the hard-coded path earlier in the script, and setting `R_HOME_DIR` to the desired portable setting. I don't know R, so I don't know how to test this: if you run `sage -R`, can you execute some R command to tell you the current setting of `R_HOME_DIR`?
 
 
@@ -1302,7 +1316,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_093763.json:
 ```json
 {
-    "body": "Well, that is a Sage-specific thing, I think, but we have\n\n```\nR_HOME=\"${R_HOME_DIR}\"\n```\n\nlater on and also\n\n```\n$ ./sage -R RHOME\n/Users/.../Downloads/sage-5.9.beta5/local/lib/R/\n```\n\nSo all is well, I think.",
+    "body": "Well, that is a Sage-specific thing, I think, but we have\n\n```\nR_HOME=\"${R_HOME_DIR}\"\n```\nlater on and also\n\n```\n$ ./sage -R RHOME\n/Users/.../Downloads/sage-5.9.beta5/local/lib/R/\n```\nSo all is well, I think.",
     "created_at": "2013-04-17T01:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9668",
     "type": "issue_comment",
@@ -1316,14 +1330,12 @@ Well, that is a Sage-specific thing, I think, but we have
 ```
 R_HOME="${R_HOME_DIR}"
 ```
-
 later on and also
 
 ```
 $ ./sage -R RHOME
 /Users/.../Downloads/sage-5.9.beta5/local/lib/R/
 ```
-
 So all is well, I think.
 
 

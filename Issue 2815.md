@@ -104,7 +104,7 @@ doc patch based on sage-3.0.alpha0 which adds sections to ref.tex
 archive/issue_comments_019287.json:
 ```json
 {
-    "body": "Looks good.\n\nI wonder if this could be an issue though, but I doubt it.\n\n\n``` \n- \\setshortversion{2.11} \n+ \\setshortversion{3.0.alpha0} \n```\n",
+    "body": "Looks good.\n\nI wonder if this could be an issue though, but I doubt it.\n\n``` \n- \\setshortversion{2.11} \n+ \\setshortversion{3.0.alpha0} \n```",
     "created_at": "2008-04-05T21:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
@@ -117,12 +117,10 @@ Looks good.
 
 I wonder if this could be an issue though, but I doubt it.
 
-
 ``` 
 - \setshortversion{2.11} 
 + \setshortversion{3.0.alpha0} 
 ```
-
 
 
 
@@ -131,7 +129,7 @@ I wonder if this could be an issue though, but I doubt it.
 archive/issue_comments_019288.json:
 ```json
 {
-    "body": "Replying to [comment:2 malb]:\n> Looks good.\n> \n> I wonder if this could be an issue though, but I doubt it.\n> \n> {{{ \n> - \\setshortversion{2.11} \n> + \\setshortversion{3.0.alpha0} \n> }}}\n\nI will delete that bit from the patch. Thanks for the review.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 malb]:\n> Looks good.\n> \n> I wonder if this could be an issue though, but I doubt it.\n> \n> \n> ``` \n> - \\setshortversion{2.11} \n> + \\setshortversion{3.0.alpha0} \n> ```\n\n\nI will delete that bit from the patch. Thanks for the review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-05T21:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
@@ -145,10 +143,12 @@ Replying to [comment:2 malb]:
 > 
 > I wonder if this could be an issue though, but I doubt it.
 > 
-> {{{ 
+> 
+> ``` 
 > - \setshortversion{2.11} 
 > + \setshortversion{3.0.alpha0} 
-> }}}
+> ```
+
 
 I will delete that bit from the patch. Thanks for the review.
 
@@ -185,7 +185,7 @@ Michael
 archive/issue_comments_019290.json:
 ```json
 {
-    "body": "mmmh, the crystals patch does not apply at all:\n\n```\npatch -p1 --dry-run < trac_2815_9217.patch\npatching file sage/combinat/crystals/letters.py\nHunk #1 FAILED at 197.\nHunk #2 FAILED at 213.\nHunk #3 FAILED at 234.\nHunk #4 FAILED at 243.\nHunk #5 FAILED at 267.\n```\n\n\nI changed the summary to \"dd more coding theory to the reference manual\" since that patch does apply. Please open another ticket for any new patches.\n\nThoughts?",
+    "body": "mmmh, the crystals patch does not apply at all:\n\n```\npatch -p1 --dry-run < trac_2815_9217.patch\npatching file sage/combinat/crystals/letters.py\nHunk #1 FAILED at 197.\nHunk #2 FAILED at 213.\nHunk #3 FAILED at 234.\nHunk #4 FAILED at 243.\nHunk #5 FAILED at 267.\n```\n\nI changed the summary to \"dd more coding theory to the reference manual\" since that patch does apply. Please open another ticket for any new patches.\n\nThoughts?",
     "created_at": "2008-04-05T22:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2815",
     "type": "issue_comment",
@@ -205,7 +205,6 @@ Hunk #3 FAILED at 234.
 Hunk #4 FAILED at 243.
 Hunk #5 FAILED at 267.
 ```
-
 
 I changed the summary to "dd more coding theory to the reference manual" since that patch does apply. Please open another ticket for any new patches.
 

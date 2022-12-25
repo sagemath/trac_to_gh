@@ -3,7 +3,7 @@
 archive/issues_002233.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: K = Qp(19, 5, 'capped-rel','series')\nsage: K(5,3)^19\n<type 'exceptions.ValueError'>: Valuation too large\n```\n\n\nThis is caused by an int constant 1 being left-shifted by 62 and overflowing. Changing this constant to a long constant seems to fix it. See attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2233\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: K = Qp(19, 5, 'capped-rel','series')\nsage: K(5,3)^19\n<type 'exceptions.ValueError'>: Valuation too large\n```\n\nThis is caused by an int constant 1 being left-shifted by 62 and overflowing. Changing this constant to a long constant seems to fix it. See attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2233\n\n",
     "created_at": "2008-02-20T15:00:48Z",
     "labels": [
         "component: number theory",
@@ -19,13 +19,11 @@ archive/issues_002233.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: K = Qp(19, 5, 'capped-rel','series')
 sage: K(5,3)^19
 <type 'exceptions.ValueError'>: Valuation too large
 ```
-
 
 This is caused by an int constant 1 being left-shifted by 62 and overflowing. Changing this constant to a long constant seems to fix it. See attached patch.
 

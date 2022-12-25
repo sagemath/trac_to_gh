@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4932
 archive/issue_comments_037341.json:
 ```json
 {
-    "body": "Yep, it looks like this might have happened in the transition to numpy and probably was my fault.  Here are errors:\n\n\n```\nsage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n\n[ 1.0  2.0  5.0]\n[ 7.6  2.3  1.0]\n[ 1.0  2.0 -1.0]\nsage: b = vector(RDF,[1,2,3])\nsage: A.solve_left(b)       \n(-0.113695090439, 1.39018087855, -0.333333333333)\nsage: A.solve_left_LU(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_double_dense.so in sage.matrix.matrix_double_dense.Matrix_double_dense.solve_left_LU (sage/matrix/matrix_double_dense.c:4930)()\n\nTypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'\nsage: A.LU()\n\n([0.0 1.0 0.0]\n[1.0 0.0 0.0]\n[0.0 0.0 1.0],\n [           1.0            0.0            0.0]\n[0.131578947368            1.0            0.0]\n[0.131578947368            1.0            1.0],\n [          7.6           2.3           1.0]\n[          0.0 1.69736842105 4.86842105263]\n[          0.0           0.0          -6.0])\nsage: A.solve_left_LU(b)\ntoo many axes: 2 (effrank=2), expected rank=1\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (981, 0))\n\n---------------------------------------------------------------------------\nerror                                     Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_double_dense.so in sage.matrix.matrix_double_dense.Matrix_double_dense.solve_left_LU (sage/matrix/matrix_double_dense.c:4995)()\n\n/home/grout/sage/local/lib/python2.5/site-packages/scipy/linalg/basic.pyc in lu_solve((lu, piv), b, trans, overwrite_b)\n     48         raise ValueError, \"incompatible dimensions.\"\n     49     getrs, = get_lapack_funcs(('getrs',),(lu,b1))\n---> 50     x,info = getrs(lu,piv,b1,trans=trans,overwrite_b=overwrite_b)\n     51     if info==0:\n     52         return x\n\nerror: failed in converting 2nd argument `piv' of clapack.dgetrs to C/Fortran array\n```\n\n\nThe first error comes from the code not computing LU before using the cached LU decomposition.  The second error apparently comes from a mistake in calling scipy.",
+    "body": "Yep, it looks like this might have happened in the transition to numpy and probably was my fault.  Here are errors:\n\n```\nsage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n\n[ 1.0  2.0  5.0]\n[ 7.6  2.3  1.0]\n[ 1.0  2.0 -1.0]\nsage: b = vector(RDF,[1,2,3])\nsage: A.solve_left(b)       \n(-0.113695090439, 1.39018087855, -0.333333333333)\nsage: A.solve_left_LU(b)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_double_dense.so in sage.matrix.matrix_double_dense.Matrix_double_dense.solve_left_LU (sage/matrix/matrix_double_dense.c:4930)()\n\nTypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'\nsage: A.LU()\n\n([0.0 1.0 0.0]\n[1.0 0.0 0.0]\n[0.0 0.0 1.0],\n [           1.0            0.0            0.0]\n[0.131578947368            1.0            0.0]\n[0.131578947368            1.0            1.0],\n [          7.6           2.3           1.0]\n[          0.0 1.69736842105 4.86842105263]\n[          0.0           0.0          -6.0])\nsage: A.solve_left_LU(b)\ntoo many axes: 2 (effrank=2), expected rank=1\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (981, 0))\n\n---------------------------------------------------------------------------\nerror                                     Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/matrix/matrix_double_dense.so in sage.matrix.matrix_double_dense.Matrix_double_dense.solve_left_LU (sage/matrix/matrix_double_dense.c:4995)()\n\n/home/grout/sage/local/lib/python2.5/site-packages/scipy/linalg/basic.pyc in lu_solve((lu, piv), b, trans, overwrite_b)\n     48         raise ValueError, \"incompatible dimensions.\"\n     49     getrs, = get_lapack_funcs(('getrs',),(lu,b1))\n---> 50     x,info = getrs(lu,piv,b1,trans=trans,overwrite_b=overwrite_b)\n     51     if info==0:\n     52         return x\n\nerror: failed in converting 2nd argument `piv' of clapack.dgetrs to C/Fortran array\n```\n\nThe first error comes from the code not computing LU before using the cached LU decomposition.  The second error apparently comes from a mistake in calling scipy.",
     "created_at": "2009-01-03T08:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
@@ -41,7 +41,6 @@ archive/issue_comments_037341.json:
 ```
 
 Yep, it looks like this might have happened in the transition to numpy and probably was my fault.  Here are errors:
-
 
 ```
 sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A
@@ -95,7 +94,6 @@ error                                     Traceback (most recent call last)
 error: failed in converting 2nd argument `piv' of clapack.dgetrs to C/Fortran array
 ```
 
-
 The first error comes from the code not computing LU before using the cached LU decomposition.  The second error apparently comes from a mistake in calling scipy.
 
 
@@ -141,7 +139,7 @@ Changing assignee from @williamstein to @jasongrout.
 archive/issue_comments_037344.json:
 ```json
 {
-    "body": "Okay, apparently lu_factor and lu in the scipy library return two completely different things.\n\nSome notes from some experimentation:\n\n1. scipy.linalg.lu is usually significantly slower than scipy.linalg.lu_factor\n\n2. scipy.linalg.lu_factor returns a much more compact answer\n\n3. scipy.linalg.lu_factor returns an answer directly suitable for lu_solve, etc.\n\nI say we cache the lu_factor results and then build the P,L,U from these results if needed.\n\nThe strictly lower triangular part of the returned matrix is the L, the upper triangular part is the U, so that the returned matrix is (L-identity)+U.\n\nThe pivot array gives the row swaps needed.  For example, the following code constructs the new order of rows based on the pivot array piv:\n\n\n```\narr=range(size)\nfor i in range(size):\n    arr[i],arr[piv[i]] = arr[piv[i]],arr[i]\n```\n\n\nThe P matrix will then have a 1 in the (i,arr[i]) position (or the (arr[i],i) position...).\n\nTHE LU MATRIX RETURNED FROM lu_factor MIGHT BE TRANSPOSED!  It was in my case, for some reason.",
+    "body": "Okay, apparently lu_factor and lu in the scipy library return two completely different things.\n\nSome notes from some experimentation:\n\n1. scipy.linalg.lu is usually significantly slower than scipy.linalg.lu_factor\n\n2. scipy.linalg.lu_factor returns a much more compact answer\n\n3. scipy.linalg.lu_factor returns an answer directly suitable for lu_solve, etc.\n\nI say we cache the lu_factor results and then build the P,L,U from these results if needed.\n\nThe strictly lower triangular part of the returned matrix is the L, the upper triangular part is the U, so that the returned matrix is (L-identity)+U.\n\nThe pivot array gives the row swaps needed.  For example, the following code constructs the new order of rows based on the pivot array piv:\n\n```\narr=range(size)\nfor i in range(size):\n    arr[i],arr[piv[i]] = arr[piv[i]],arr[i]\n```\n\nThe P matrix will then have a 1 in the (i,arr[i]) position (or the (arr[i],i) position...).\n\nTHE LU MATRIX RETURNED FROM lu_factor MIGHT BE TRANSPOSED!  It was in my case, for some reason.",
     "created_at": "2009-01-03T10:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
@@ -166,13 +164,11 @@ The strictly lower triangular part of the returned matrix is the L, the upper tr
 
 The pivot array gives the row swaps needed.  For example, the following code constructs the new order of rows based on the pivot array piv:
 
-
 ```
 arr=range(size)
 for i in range(size):
     arr[i],arr[piv[i]] = arr[piv[i]],arr[i]
 ```
-
 
 The P matrix will then have a 1 in the (i,arr[i]) position (or the (arr[i],i) position...).
 
@@ -203,7 +199,7 @@ However, the results from lu_factor also appear to give spurious answers, while 
 archive/issue_comments_037346.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> However, the results from lu_factor also appear to give spurious answers, while the results from lu seem more correct numerically...\n\nnever mind; it seems like that comment is not true; I get the same spurious answers from lu()",
+    "body": "Replying to [comment:4 jason]:\n> However, the results from lu_factor also appear to give spurious answers, while the results from lu seem more correct numerically...\n\n\nnever mind; it seems like that comment is not true; I get the same spurious answers from lu()",
     "created_at": "2009-01-03T10:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
@@ -214,6 +210,7 @@ archive/issue_comments_037346.json:
 
 Replying to [comment:4 jason]:
 > However, the results from lu_factor also appear to give spurious answers, while the results from lu seem more correct numerically...
+
 
 never mind; it seems like that comment is not true; I get the same spurious answers from lu()
 
@@ -463,7 +460,7 @@ This routine needs lots of work, has been "Not Implemented" for a long time, and
 archive/issue_comments_037356.json:
 ```json
 {
-    "body": "Replying to [comment:10 rbeezer]:\n> According to:\n> \n> http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.solve.html#numpy.linalg.solve\n> \n> The generic \"solve\" from `NumPy` uses LU decomposition anyway, via an LAPACK routine.\n> \n> So it does not appear to me that `solve_left_LU` adds anything to `solve_left`?\n\nThe point behind this patch is that the LU decomposition is cached in the matrix so that multiple solves using this matrix are much faster because you don't have to compute the LU decomposition each time.",
+    "body": "Replying to [comment:10 rbeezer]:\n> According to:\n> \n> http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.solve.html#numpy.linalg.solve\n> \n> The generic \"solve\" from `NumPy` uses LU decomposition anyway, via an LAPACK routine.\n> \n> So it does not appear to me that `solve_left_LU` adds anything to `solve_left`?\n\n\nThe point behind this patch is that the LU decomposition is cached in the matrix so that multiple solves using this matrix are much faster because you don't have to compute the LU decomposition each time.",
     "created_at": "2011-02-24T23:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
@@ -480,6 +477,7 @@ Replying to [comment:10 rbeezer]:
 > The generic "solve" from `NumPy` uses LU decomposition anyway, via an LAPACK routine.
 > 
 > So it does not appear to me that `solve_left_LU` adds anything to `solve_left`?
+
 
 The point behind this patch is that the LU decomposition is cached in the matrix so that multiple solves using this matrix are much faster because you don't have to compute the LU decomposition each time.
 

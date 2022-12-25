@@ -3,7 +3,7 @@
 archive/issues_002849.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
+    "body": "Assignee: @JohnCremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
     "created_at": "2008-04-07T20:35:32Z",
     "labels": [
         "component: number theory",
@@ -40,7 +40,6 @@ around it.
 
  Somehow, doing .cardinality_exhaustive() fixes the bug.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/2849
@@ -184,7 +183,7 @@ archive/issue_events_006529.json:
 archive/issue_comments_019515.json:
 ```json
 {
-    "body": "Replying to [comment:2 AlexGhitza]:\n> Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n> \n\nThanks, Alex -- I should have done that but only remembered after uploading the patch.\n\n> Apply both patches.",
+    "body": "Replying to [comment:2 AlexGhitza]:\n> Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n> \n\n\nThanks, Alex -- I should have done that but only remembered after uploading the patch.\n\n> Apply both patches.",
     "created_at": "2008-04-08T07:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
@@ -196,6 +195,7 @@ archive/issue_comments_019515.json:
 Replying to [comment:2 AlexGhitza]:
 > Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.
 > 
+
 
 Thanks, Alex -- I should have done that but only remembered after uploading the patch.
 

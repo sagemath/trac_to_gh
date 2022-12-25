@@ -3,7 +3,7 @@
 archive/issues_003808.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nReported by Nick Alexander:\n\n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: a\na\nsage: a^7\n6*a + 1\nsage: K.Hom([a^7])\nSet of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]\nsage: list(K.Hom([a^7]))\n------------------------------------------------------------------------\n---\nAttributeError                            Traceback (most recent call\nlast)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in\n<module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in __getitem__(self, n)\n    169               Defn: a |--> b^9 + b^7 + b^6 + b^5 + b^4]\n    170         \"\"\"\n--> 171         return self.list()[n]\n    172\n    173     def index(self, item):\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in list(self)\n    139         D = self.domain()\n    140         C = self.codomain()\n--> 141         if D.characteristic() == C.characteristic() and\nInteger(D.degree()).divides(Integer(C.degree())):\n    142             f = D.modulus()\n    143             g = C['x'](f)\n\nAttributeError: 'list' object has no attribute 'characteristic'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3808\n\n",
+    "body": "Assignee: somebody\n\nReported by Nick Alexander:\n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: a\na\nsage: a^7\n6*a + 1\nsage: K.Hom([a^7])\nSet of field embeddings from Finite Field in a of size 7^2 to [6*a + 1]\nsage: list(K.Hom([a^7]))\n------------------------------------------------------------------------\n---\nAttributeError                            Traceback (most recent call\nlast)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in\n<module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in __getitem__(self, n)\n    169               Defn: a |--> b^9 + b^7 + b^6 + b^5 + b^4]\n    170         \"\"\"\n--> 171         return self.list()[n]\n    172\n    173     def index(self, item):\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/\nrings/finite_field_morphism.py in list(self)\n    139         D = self.domain()\n    140         C = self.codomain()\n--> 141         if D.characteristic() == C.characteristic() and\nInteger(D.degree()).divides(Integer(C.degree())):\n    142             f = D.modulus()\n    143             g = C['x'](f)\n\nAttributeError: 'list' object has no attribute 'characteristic'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3808\n\n",
     "created_at": "2008-08-12T02:03:57Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_003808.json:
 Assignee: somebody
 
 Reported by Nick Alexander:
-
 
 ```
 sage: K.<a> = FiniteField(7^2)
@@ -57,7 +56,6 @@ Integer(D.degree()).divides(Integer(C.degree())):
 
 AttributeError: 'list' object has no attribute 'characteristic'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3808
 
@@ -122,7 +120,7 @@ Resolution: invalid
 archive/issue_comments_027003.json:
 ```json
 {
-    "body": "I guess what was meant here was\n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: K.hom([a^7])\n\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> 6*a + 1\n```\n\nWith 'hom' rather than 'Hom' it works fine.  As does\n\n```\nsage: K.Hom(K)\nAutomorphism group of Finite Field in a of size 7^2\nsage: K.Hom(K).list()\n\n[\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> 6*a + 1,\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> a\n]\n```\n\n\nThe reported behaviour with `K.Hom([a^7])` is much more general; it is the default for creating Homsets: if no specific method exists to construct the Homset, just name it (however meaningless that may be!).  Thus\n\n```\nsage: QQ.Hom(5)\nSet of Morphisms from Rational Field to 5 in Category of objects\n```\n\nAttempting to list such sets of morphisms leads to an error.\n\nI think this has to be regarded as a feature rather than a bug.",
+    "body": "I guess what was meant here was\n\n```\nsage: K.<a> = FiniteField(7^2)\nsage: K.hom([a^7])\n\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> 6*a + 1\n```\nWith 'hom' rather than 'Hom' it works fine.  As does\n\n```\nsage: K.Hom(K)\nAutomorphism group of Finite Field in a of size 7^2\nsage: K.Hom(K).list()\n\n[\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> 6*a + 1,\nRing endomorphism of Finite Field in a of size 7^2\n  Defn: a |--> a\n]\n```\n\nThe reported behaviour with `K.Hom([a^7])` is much more general; it is the default for creating Homsets: if no specific method exists to construct the Homset, just name it (however meaningless that may be!).  Thus\n\n```\nsage: QQ.Hom(5)\nSet of Morphisms from Rational Field to 5 in Category of objects\n```\nAttempting to list such sets of morphisms leads to an error.\n\nI think this has to be regarded as a feature rather than a bug.",
     "created_at": "2008-09-02T13:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3808",
     "type": "issue_comment",
@@ -140,7 +138,6 @@ sage: K.hom([a^7])
 Ring endomorphism of Finite Field in a of size 7^2
   Defn: a |--> 6*a + 1
 ```
-
 With 'hom' rather than 'Hom' it works fine.  As does
 
 ```
@@ -156,14 +153,12 @@ Ring endomorphism of Finite Field in a of size 7^2
 ]
 ```
 
-
 The reported behaviour with `K.Hom([a^7])` is much more general; it is the default for creating Homsets: if no specific method exists to construct the Homset, just name it (however meaningless that may be!).  Thus
 
 ```
 sage: QQ.Hom(5)
 Set of Morphisms from Rational Field to 5 in Category of objects
 ```
-
 Attempting to list such sets of morphisms leads to an error.
 
 I think this has to be regarded as a feature rather than a bug.

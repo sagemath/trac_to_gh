@@ -139,7 +139,7 @@ Resolution: fixed
 archive/issue_comments_055390.json:
 ```json
 {
-    "body": "Although this is marked as fixed, it should be noted that it makes use of a non-portable option to the `date` command so fails on some systems. See \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/date.html\n\nfor a list of portable options. \n\nSince the file created is not actually used by anything it's not a big problem, but if anyone tried using it on a Unix system, it would likely fail. A better method is:\n\n\n```\n# Compute seconds since the Epoch.\n\n# Call 'date'. Note that\n# %Y = year including century\n# %j = day number (1-365)\n# %H = hour (0-23)\n# %M = minute (0-59)\n# %S = seconds (0-59)\n\nif type env >/dev/null 2>&1 ; then\n    set -- `env LC_ALL=C LC_TIME=C LANG=C date -u '+%Y %j %H %M %S'`\nelse\n    set -- `date -u '+%Y %j %H %M %S'`\nfi\n\n# $1 = year including century\n# $2 = day number (1-365)\n# $3 = hour (0-23)\n# $4 = minute (0-59)\n# $5 = seconds (0-59)\n\nif [ $? -ne 0 ] || [ $# -lt 5 ] ; then\n  TIME=\"Error computing seconds since the Epoch\"\nfi\n\nDAYS=`expr 365 \\* \\( $1 - 1970 \\) + \\( $1 - 1969 \\) / 4 + $2 - 1`\nTIME=`expr $5 + 60 \\* \\( $4 + 60 \\* \\( $3 + 24 \\* $DAYS \\) \\)`\necho $TIME\n```\n",
+    "body": "Although this is marked as fixed, it should be noted that it makes use of a non-portable option to the `date` command so fails on some systems. See \n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/date.html\n\nfor a list of portable options. \n\nSince the file created is not actually used by anything it's not a big problem, but if anyone tried using it on a Unix system, it would likely fail. A better method is:\n\n```\n# Compute seconds since the Epoch.\n\n# Call 'date'. Note that\n# %Y = year including century\n# %j = day number (1-365)\n# %H = hour (0-23)\n# %M = minute (0-59)\n# %S = seconds (0-59)\n\nif type env >/dev/null 2>&1 ; then\n    set -- `env LC_ALL=C LC_TIME=C LANG=C date -u '+%Y %j %H %M %S'`\nelse\n    set -- `date -u '+%Y %j %H %M %S'`\nfi\n\n# $1 = year including century\n# $2 = day number (1-365)\n# $3 = hour (0-23)\n# $4 = minute (0-59)\n# $5 = seconds (0-59)\n\nif [ $? -ne 0 ] || [ $# -lt 5 ] ; then\n  TIME=\"Error computing seconds since the Epoch\"\nfi\n\nDAYS=`expr 365 \\* \\( $1 - 1970 \\) + \\( $1 - 1969 \\) / 4 + $2 - 1`\nTIME=`expr $5 + 60 \\* \\( $4 + 60 \\* \\( $3 + 24 \\* $DAYS \\) \\)`\necho $TIME\n```",
     "created_at": "2010-09-30T06:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6744",
     "type": "issue_comment",
@@ -155,7 +155,6 @@ http://www.opengroup.org/onlinepubs/009695399/utilities/date.html
 for a list of portable options. 
 
 Since the file created is not actually used by anything it's not a big problem, but if anyone tried using it on a Unix system, it would likely fail. A better method is:
-
 
 ```
 # Compute seconds since the Epoch.
@@ -187,4 +186,3 @@ DAYS=`expr 365 \* \( $1 - 1970 \) + \( $1 - 1969 \) / 4 + $2 - 1`
 TIME=`expr $5 + 60 \* \( $4 + 60 \* \( $3 + 24 \* $DAYS \) \)`
 echo $TIME
 ```
-

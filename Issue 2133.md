@@ -3,7 +3,7 @@
 archive/issues_002133.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nIt should say 1, but now says\n\n\n```\nsage: dimension_modular_forms(1, 0)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/ghitza/sage/eigensystems/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/dims.py in dimension_modular_forms(X, k)\n   1004     if congroup.is_GammaH(X):\n   1005         return dimension_modular_forms_H(X, k)\n-> 1006     return dimension_cusp_forms(X, k) + dimension_eis(X, k)\n   1007 \n   1008 def sturm_bound(level, weight):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/dims.py in dimension_eis(X, k)\n    939     if k <= 1:\n    940         # TODO\n--> 941         raise NotImplementedError, \"Dimension of weight <= 1 Eisenstein series not yet implemented.\"\n    942     if isinstance(X, (int,long,Integer)):\n    943         if k%2 == 1: return 0\n\n<type 'exceptions.NotImplementedError'>: Dimension of weight <= 1 Eisenstein series not yet implemented.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2133\n\n",
+    "body": "Assignee: @aghitza\n\nIt should say 1, but now says\n\n```\nsage: dimension_modular_forms(1, 0)\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/ghitza/sage/eigensystems/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/dims.py in dimension_modular_forms(X, k)\n   1004     if congroup.is_GammaH(X):\n   1005         return dimension_modular_forms_H(X, k)\n-> 1006     return dimension_cusp_forms(X, k) + dimension_eis(X, k)\n   1007 \n   1008 def sturm_bound(level, weight):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/dims.py in dimension_eis(X, k)\n    939     if k <= 1:\n    940         # TODO\n--> 941         raise NotImplementedError, \"Dimension of weight <= 1 Eisenstein series not yet implemented.\"\n    942     if isinstance(X, (int,long,Integer)):\n    943         if k%2 == 1: return 0\n\n<type 'exceptions.NotImplementedError'>: Dimension of weight <= 1 Eisenstein series not yet implemented.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2133\n\n",
     "created_at": "2008-02-09T22:44:29Z",
     "labels": [
         "component: modular forms",
@@ -20,7 +20,6 @@ archive/issues_002133.json:
 Assignee: @aghitza
 
 It should say 1, but now says
-
 
 ```
 sage: dimension_modular_forms(1, 0)
@@ -45,7 +44,6 @@ sage: dimension_modular_forms(1, 0)
 
 <type 'exceptions.NotImplementedError'>: Dimension of weight <= 1 Eisenstein series not yet implemented.
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009954.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis is inconsistent\n\n\n```\nsage: Rational(3)%Rational(-1)\nZeroDivisionError: Inverse does not exist.\n```\n\n\nbut\n\n\n```\nsage: 3%(-1)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9955\n\n",
+    "body": "Assignee: @aghitza\n\nThis is inconsistent\n\n```\nsage: Rational(3)%Rational(-1)\nZeroDivisionError: Inverse does not exist.\n```\n\nbut\n\n```\nsage: 3%(-1)\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9955\n\n",
     "created_at": "2010-09-20T18:20:29Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,21 +20,17 @@ Assignee: @aghitza
 
 This is inconsistent
 
-
 ```
 sage: Rational(3)%Rational(-1)
 ZeroDivisionError: Inverse does not exist.
 ```
 
-
 but
-
 
 ```
 sage: 3%(-1)
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9955
 
@@ -47,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9955
 archive/issue_comments_099131.json:
 ```json
 {
-    "body": "This is caused by the following simpler bug:\n\n```\n\nsage: a=Integer(3)\nsage: b=Integer(-1)\nsage: a.inverse_mod(b)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n...\n\nZeroDivisionError: Inverse does not exist.\n```\n\nwhich is easy to fix.  In `sage.rings.integer.Integer.inverse_mod` there is special case for modulus n=1 but not for -1.  Either ass this special case, or replace n by abs(n).",
+    "body": "This is caused by the following simpler bug:\n\n```\n\nsage: a=Integer(3)\nsage: b=Integer(-1)\nsage: a.inverse_mod(b)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n...\n\nZeroDivisionError: Inverse does not exist.\n```\nwhich is easy to fix.  In `sage.rings.integer.Integer.inverse_mod` there is special case for modulus n=1 but not for -1.  Either ass this special case, or replace n by abs(n).",
     "created_at": "2010-12-21T23:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
@@ -69,7 +65,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Inverse does not exist.
 ```
-
 which is easy to fix.  In `sage.rings.integer.Integer.inverse_mod` there is special case for modulus n=1 but not for -1.  Either ass this special case, or replace n by abs(n).
 
 
@@ -191,7 +186,7 @@ doctest added
 archive/issue_comments_099138.json:
 ```json
 {
-    "body": "Replying to [comment:4 aapitzsch]:\n> doctest added\n\nThanks!  Positive review.",
+    "body": "Replying to [comment:4 aapitzsch]:\n> doctest added\n\n\nThanks!  Positive review.",
     "created_at": "2011-01-28T20:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
@@ -202,6 +197,7 @@ archive/issue_comments_099138.json:
 
 Replying to [comment:4 aapitzsch]:
 > doctest added
+
 
 Thanks!  Positive review.
 

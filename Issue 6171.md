@@ -3,7 +3,7 @@
 archive/issues_006171.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nBefore this patch:\n\n```\nsage: sqrt(10.1, prec=100)\n...\nTypeError: sqrt() got an unexpected keyword argument 'prec'\n```\n\nThis is despite the fact that the docstring for sqrt lists as one of its inputs\n\n```\n            -  ``prec`` - integer (default: None): if None, returns\n               an exact square root; otherwise returns a numerical square root if\n               necessary, to the given bits of precision.\n```\n\nAfter this patch:\n\n```\nsage: sqrt(10.1, prec=100)\n3.1780497164141406804582045589\nsage: sqrt(10.1, prec=200)\n3.1780497164141406804582045589354800553656236461562686475080\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6171\n\n",
+    "body": "Assignee: @jhpalmieri\n\nBefore this patch:\n\n```\nsage: sqrt(10.1, prec=100)\n...\nTypeError: sqrt() got an unexpected keyword argument 'prec'\n```\nThis is despite the fact that the docstring for sqrt lists as one of its inputs\n\n```\n            -  ``prec`` - integer (default: None): if None, returns\n               an exact square root; otherwise returns a numerical square root if\n               necessary, to the given bits of precision.\n```\nAfter this patch:\n\n```\nsage: sqrt(10.1, prec=100)\n3.1780497164141406804582045589\nsage: sqrt(10.1, prec=200)\n3.1780497164141406804582045589354800553656236461562686475080\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6171\n\n",
     "created_at": "2009-05-31T21:40:16Z",
     "labels": [
         "component: algebra",
@@ -26,7 +26,6 @@ sage: sqrt(10.1, prec=100)
 ...
 TypeError: sqrt() got an unexpected keyword argument 'prec'
 ```
-
 This is despite the fact that the docstring for sqrt lists as one of its inputs
 
 ```
@@ -34,7 +33,6 @@ This is despite the fact that the docstring for sqrt lists as one of its inputs
                an exact square root; otherwise returns a numerical square root if
                necessary, to the given bits of precision.
 ```
-
 After this patch:
 
 ```
@@ -43,7 +41,6 @@ sage: sqrt(10.1, prec=100)
 sage: sqrt(10.1, prec=200)
 3.1780497164141406804582045589354800553656236461562686475080
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6171
 
@@ -74,7 +71,7 @@ Please add doctests to the patch illustrating that it fixes the bug.
 archive/issue_comments_049129.json:
 ```json
 {
-    "body": "> Please add doctests to the patch illustrating that it fixes the bug.\n\nYes, sorry about that.  I was just sitting down to produce a new patch when I saw this comment.  Here's a new patch.",
+    "body": "> Please add doctests to the patch illustrating that it fixes the bug.\n\n\nYes, sorry about that.  I was just sitting down to produce a new patch when I saw this comment.  Here's a new patch.",
     "created_at": "2009-05-31T22:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6171",
     "type": "issue_comment",
@@ -84,6 +81,7 @@ archive/issue_comments_049129.json:
 ```
 
 > Please add doctests to the patch illustrating that it fixes the bug.
+
 
 Yes, sorry about that.  I was just sitting down to produce a new patch when I saw this comment.  Here's a new patch.
 

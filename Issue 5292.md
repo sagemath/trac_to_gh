@@ -3,7 +3,7 @@
 archive/issues_005292.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nOn Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:\n\n\n```\nsage: R.<x> = QQ[]; S.<q,t> = QQ[]; F = FractionField(S);\nsage: x in S   # this is ok\nFalse\nsage: x in F   # this is not\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (857, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (862, 0))\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n...\n/home/jason/<string> in <module>()\n\nNameError: name 'x' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5292\n\n",
+    "body": "Assignee: tbd\n\nOn Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:\n\n```\nsage: R.<x> = QQ[]; S.<q,t> = QQ[]; F = FractionField(S);\nsage: x in S   # this is ok\nFalse\nsage: x in F   # this is not\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (857, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (862, 0))\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n...\n/home/jason/<string> in <module>()\n\nNameError: name 'x' is not defined\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5292\n\n",
     "created_at": "2009-02-17T08:01:35Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_005292.json:
 Assignee: tbd
 
 On Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:
-
 
 ```
 sage: R.<x> = QQ[]; S.<q,t> = QQ[]; F = FractionField(S);
@@ -42,7 +41,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'x' is not defined
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5292
 
@@ -156,7 +154,7 @@ Michael
 archive/issue_comments_040593.json:
 ```json
 {
-    "body": "BAD\n\n```\n15:38 < wstein2> Ouch.\n15:38 < wstein2> It has:\n15:38 < wstein2> \" except SyntaxError, NameError:\"\n15:38 < wstein2> As a new addition.\n15:38 < wstein2> That is a major annoying python gotcha.\n15:38 < wstein2> That assigns the exception to NameError.\n15:38 < wstein2> It should be\n15:38 < wstein2> except (SyntaxError, NameError):\n15:38 < wstein2> Ooops!\n15:39 < mabs> mk\n15:39 < wstein2> I don't know why that would do any good either...\n15:40 < wstein2> also, the patch should have a doctest\n15:40 < mabs> Hmm, that might be difficult to do.\n15:41 < wstein2> in fac the patch does *not* fix the problem.\n15:41 < wstein2> You only wrote \"all tests pass\".\n15:41 < wstein2> But that is because there are no new tests.\n15:41 < wstein2> That ticket is a mess.\n15:41 < mhansen> Patch up for #5298.\n15:41 < wstein2> So you wrote: \"With the patch applied to my 3.3.rc2 merge tree all doctests pass. \"\n15:41 < mabs> I did not write that about #5291.\n15:41 < wstein2> But there was nothing to test that the problem was fixed.\n15:42 < mabs> I wrote that about #5287\n15:42 < wstein2> I'm talking about #5292.\n15:42 < wstein2> Sorry.\n15:42 -!- You're now known as wstein-5292\n15:42 < mabs> Yes.\n```\n",
+    "body": "BAD\n\n```\n15:38 < wstein2> Ouch.\n15:38 < wstein2> It has:\n15:38 < wstein2> \" except SyntaxError, NameError:\"\n15:38 < wstein2> As a new addition.\n15:38 < wstein2> That is a major annoying python gotcha.\n15:38 < wstein2> That assigns the exception to NameError.\n15:38 < wstein2> It should be\n15:38 < wstein2> except (SyntaxError, NameError):\n15:38 < wstein2> Ooops!\n15:39 < mabs> mk\n15:39 < wstein2> I don't know why that would do any good either...\n15:40 < wstein2> also, the patch should have a doctest\n15:40 < mabs> Hmm, that might be difficult to do.\n15:41 < wstein2> in fac the patch does *not* fix the problem.\n15:41 < wstein2> You only wrote \"all tests pass\".\n15:41 < wstein2> But that is because there are no new tests.\n15:41 < wstein2> That ticket is a mess.\n15:41 < mhansen> Patch up for #5298.\n15:41 < wstein2> So you wrote: \"With the patch applied to my 3.3.rc2 merge tree all doctests pass. \"\n15:41 < mabs> I did not write that about #5291.\n15:41 < wstein2> But there was nothing to test that the problem was fixed.\n15:42 < mabs> I wrote that about #5287\n15:42 < wstein2> I'm talking about #5292.\n15:42 < wstein2> Sorry.\n15:42 -!- You're now known as wstein-5292\n15:42 < mabs> Yes.\n```",
     "created_at": "2009-02-17T23:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
@@ -195,7 +193,6 @@ BAD
 15:42 -!- You're now known as wstein-5292
 15:42 < mabs> Yes.
 ```
-
 
 
 

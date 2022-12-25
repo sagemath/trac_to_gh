@@ -48,7 +48,7 @@ Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_003669.json:
 ```json
 {
-    "body": "The above patches are one such proposal. NOTE: it has not been decided whether or not to include this feature. However, I like it. \n\n\n```\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: n = 5\nsage: [1..n]\n[1, 2, 3, 4, 5]\nsage: [0,2,..,10]\n[0, 2, 4, 6, 8, 10]\nsage: [0,2,..,10,20..30]\n[0, 2, 4, 6, 8, 10, 20, 22, 24, 26, 28, 30]\n\nsage: (0,2,..,10)       \n<generator object at 0xc57cd78>\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(20)]\n[5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]\n\n```\n\n\nAnd a non-trivial example\n\n\n```\nsage: L = [1..5]\nsage: [L[4], .., next_prime(10), 3, 2, 1]\n[5, 6, 7, 8, 9, 10, 11, 3, 2, 1]\n```\n",
+    "body": "The above patches are one such proposal. NOTE: it has not been decided whether or not to include this feature. However, I like it. \n\n```\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: n = 5\nsage: [1..n]\n[1, 2, 3, 4, 5]\nsage: [0,2,..,10]\n[0, 2, 4, 6, 8, 10]\nsage: [0,2,..,10,20..30]\n[0, 2, 4, 6, 8, 10, 20, 22, 24, 26, 28, 30]\n\nsage: (0,2,..,10)       \n<generator object at 0xc57cd78>\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(20)]\n[5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]\n\n```\n\nAnd a non-trivial example\n\n```\nsage: L = [1..5]\nsage: [L[4], .., next_prime(10), 3, 2, 1]\n[5, 6, 7, 8, 9, 10, 11, 3, 2, 1]\n```",
     "created_at": "2007-09-20T11:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -58,7 +58,6 @@ archive/issue_comments_003669.json:
 ```
 
 The above patches are one such proposal. NOTE: it has not been decided whether or not to include this feature. However, I like it. 
-
 
 ```
 sage: [1..10]
@@ -79,16 +78,13 @@ sage: [A.next() for _ in range(20)]
 
 ```
 
-
 And a non-trivial example
-
 
 ```
 sage: L = [1..5]
 sage: [L[4], .., next_prime(10), 3, 2, 1]
 [5, 6, 7, 8, 9, 10, 11, 3, 2, 1]
 ```
-
 
 
 
@@ -151,7 +147,7 @@ Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_003673.json:
 ```json
 {
-    "body": "Fixed:\n\n\n```\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(10)]\n[5, 7, 9, 11, 13, 15, 17, 19, 21, 23]\n```\n",
+    "body": "Fixed:\n\n```\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(10)]\n[5, 7, 9, 11, 13, 15, 17, 19, 21, 23]\n```",
     "created_at": "2007-09-20T11:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -162,13 +158,11 @@ archive/issue_comments_003673.json:
 
 Fixed:
 
-
 ```
 sage: A = (5,7,..)
 sage: [A.next() for _ in range(10)]
 [5, 7, 9, 11, 13, 15, 17, 19, 21, 23]
 ```
-
 
 
 
@@ -195,7 +189,7 @@ Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_003675.json:
 ```json
 {
-    "body": "Fixed an issue with double quotes, and now this works as well \n\n\n```\nsage: list(1..5)\n[1, 2, 3, 4, 5]\n```\n",
+    "body": "Fixed an issue with double quotes, and now this works as well \n\n```\nsage: list(1..5)\n[1, 2, 3, 4, 5]\n```",
     "created_at": "2007-09-20T19:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -206,12 +200,10 @@ archive/issue_comments_003675.json:
 
 Fixed an issue with double quotes, and now this works as well 
 
-
 ```
 sage: list(1..5)
 [1, 2, 3, 4, 5]
 ```
-
 
 
 
@@ -379,7 +371,7 @@ Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_003682.json:
 ```json
 {
-    "body": "Fixed. \n\n\n```\nsage: [1,2..-1]\n[]\nsage: [10..1]\n[]\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: [1..10,step=2] # no extra preparsing needed\n[1, 3, 5, 7, 9]\n```\n",
+    "body": "Fixed. \n\n```\nsage: [1,2..-1]\n[]\nsage: [10..1]\n[]\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: [1..10,step=2] # no extra preparsing needed\n[1, 3, 5, 7, 9]\n```",
     "created_at": "2007-09-21T23:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -389,7 +381,6 @@ archive/issue_comments_003682.json:
 ```
 
 Fixed. 
-
 
 ```
 sage: [1,2..-1]
@@ -401,7 +392,6 @@ sage: [1..10]
 sage: [1..10,step=2] # no extra preparsing needed
 [1, 3, 5, 7, 9]
 ```
-
 
 
 
@@ -428,7 +418,7 @@ Why doesn't [10..1] return [10,9,8,7,6,5,4,3,2,1]?
 archive/issue_comments_003684.json:
 ```json
 {
-    "body": "I don't think this should be an error:\n\n\n```\nsage: [1..5, step=0.5]\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\ni.e., the universe stuff should take into account the step if given.",
+    "body": "I don't think this should be an error:\n\n```\nsage: [1..5, step=0.5]\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\ni.e., the universe stuff should take into account the step if given.",
     "created_at": "2007-09-23T21:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
@@ -439,12 +429,10 @@ archive/issue_comments_003684.json:
 
 I don't think this should be an error:
 
-
 ```
 sage: [1..5, step=0.5]
 <type 'exceptions.TypeError'>: unable to coerce element to an integer
 ```
-
 
 i.e., the universe stuff should take into account the step if given.
 

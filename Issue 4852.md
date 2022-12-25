@@ -128,7 +128,7 @@ Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`
 archive/issue_comments_036718.json:
 ```json
 {
-    "body": "> Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`\n\nOr at least see `sage.graphs.generic_graph.py`, in particular (in Sage 5.0) [http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907](http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907)\n\n> \n> ...invalid?\n\nProbably it could be improved somehow, but we'd want a more specific ticket for this.  Jason, I'm recommending closing this - speak now!",
+    "body": "> Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`\n\n\nOr at least see `sage.graphs.generic_graph.py`, in particular (in Sage 5.0) [http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907](http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907)\n\n> \n> ...invalid?\n\n\nProbably it could be improved somehow, but we'd want a more specific ticket for this.  Jason, I'm recommending closing this - speak now!",
     "created_at": "2012-06-01T18:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
@@ -139,10 +139,12 @@ archive/issue_comments_036718.json:
 
 > Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`
 
+
 Or at least see `sage.graphs.generic_graph.py`, in particular (in Sage 5.0) [http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907](http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907)
 
 > 
 > ...invalid?
+
 
 Probably it could be improved somehow, but we'd want a more specific ticket for this.  Jason, I'm recommending closing this - speak now!
 

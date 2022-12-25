@@ -3,7 +3,7 @@
 archive/issues_005297.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\n\n```\nsage: v = vector({1: 1, 3: -2})  \nsage: w = vector({3: 3})       \nsage: v\n(0, 1, 0, -2)\nsage: w\n(0, 0, 0, 3)\nsage: v.pairwise_product(w)\n(0, 1, 0, -6)\nsage: v.dense_vector().pairwise_product(w)\n(0, 0, 0, -6)\n```\n\n(The last line illustrates that dense vectors seem to work okay.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5297\n\n",
+    "body": "Assignee: @jhpalmieri\n\n```\nsage: v = vector({1: 1, 3: -2})  \nsage: w = vector({3: 3})       \nsage: v\n(0, 1, 0, -2)\nsage: w\n(0, 0, 0, 3)\nsage: v.pairwise_product(w)\n(0, 1, 0, -6)\nsage: v.dense_vector().pairwise_product(w)\n(0, 0, 0, -6)\n```\n(The last line illustrates that dense vectors seem to work okay.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5297\n\n",
     "created_at": "2009-02-17T20:55:05Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +19,6 @@ archive/issues_005297.json:
 ```
 Assignee: @jhpalmieri
 
-
 ```
 sage: v = vector({1: 1, 3: -2})  
 sage: w = vector({3: 3})       
@@ -32,7 +31,6 @@ sage: v.pairwise_product(w)
 sage: v.dense_vector().pairwise_product(w)
 (0, 0, 0, -6)
 ```
-
 (The last line illustrates that dense vectors seem to work okay.)
 
 

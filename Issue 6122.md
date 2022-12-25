@@ -3,7 +3,7 @@
 archive/issues_006122.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nIt bothers me that when you ask for a docstring with a 'nodetex' directive, that directive is printed as part of the docstring.  This patch strips it out.\n\nBefore (note the line after \"Docstring:\"):\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102a230>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, **kwds)\nDocstring:\n    nodetex\n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nAfter:\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102b770>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, pdflatex=None, **kwds)\nDocstring:\n    \n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6122\n\n",
+    "body": "Assignee: @jhpalmieri\n\nIt bothers me that when you ask for a docstring with a 'nodetex' directive, that directive is printed as part of the docstring.  This patch strips it out.\n\nBefore (note the line after \"Docstring:\"):\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102a230>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, **kwds)\nDocstring:\n    nodetex\n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\nAfter:\n\n```\nsage: view?\nBase Class:       <type 'function'>\nString Form:   <function view at 0x102b770>\nNamespace:        Interactive\nFile:             /Applications/sage/local/lib/python2.5/site-packages/sage/misc/latex.py\nDefinition:       view(objects, title='SAGE', debug=False, sep='', tiny=False, pdflatex=None, **kwds)\nDocstring:\n    \n        Compute a latex representation of each object in objects, compile,\n        and display typeset. If used from the command line, this requires\n        that latex be installed.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6122\n\n",
     "created_at": "2009-05-23T20:00:22Z",
     "labels": [
         "component: misc",
@@ -36,7 +36,6 @@ Docstring:
         that latex be installed.
 ```
 
-
 After:
 
 ```
@@ -52,7 +51,6 @@ Docstring:
         and display typeset. If used from the command line, this requires
         that latex be installed.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6122
 
@@ -91,7 +89,7 @@ Positive review.
 archive/issue_comments_048828.json:
 ```json
 {
-    "body": "> It would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.\n\nSee #6166.",
+    "body": "> It would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.\n\n\nSee #6166.",
     "created_at": "2009-05-31T04:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6122",
     "type": "issue_comment",
@@ -101,6 +99,7 @@ archive/issue_comments_048828.json:
 ```
 
 > It would be nice if these directives were cleaned out prior to building the PDF and HTML versions of the documentation.
+
 
 See #6166.
 

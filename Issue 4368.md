@@ -3,7 +3,7 @@
 archive/issues_004368.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nExample:\n\n\n```\nsage: f = attrcall('r_core', 3); f\n*.r_core(3)\nsage: [f(p) for p in Partitions(5)]\n[[2], [1, 1], [1, 1], [3, 1, 1], [2], [2], [1, 1]]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4368\n\n",
+    "body": "Assignee: cwitty\n\nExample:\n\n```\nsage: f = attrcall('r_core', 3); f\n*.r_core(3)\nsage: [f(p) for p in Partitions(5)]\n[[2], [1, 1], [1, 1], [3, 1, 1], [2], [2], [1, 1]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4368\n\n",
     "created_at": "2008-10-25T21:33:46Z",
     "labels": [
         "component: misc",
@@ -20,14 +20,12 @@ Assignee: cwitty
 
 Example:
 
-
 ```
 sage: f = attrcall('r_core', 3); f
 *.r_core(3)
 sage: [f(p) for p in Partitions(5)]
 [[2], [1, 1], [1, 1], [3, 1, 1], [2], [2], [1, 1]]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4368
@@ -77,7 +75,7 @@ Changing status from new to assigned.
 archive/issue_comments_032035.json:
 ```json
 {
-    "body": "Reply to [comment:2 mhansen]\n\n\n\nThe following snippet is from the attached patch **trac_4368.patch**:\n\n```\n+def attrcall(name, *args, **kwds):\n+    \"\"\"\n+    Returns a callable which takes in an object, gets the method\n+    named name from that objects, and calls it with the specified\n+    arguments and keywords.\n```\n\nWhy \"named name from that _objects_\"? (my emphasis) My understanding is that I can pass in an object (not more than one) to the proposed class `AttrCallObject`. If you mean that I can pass in only one object in order to get a returned callable, then you might want to consider the following documentation change:\n\n```\n-named name from that objects, and calls it with the specified\n+named name from that object, and calls it with the specified\n```\n",
+    "body": "Reply to [comment:2 mhansen]\n\n\n\nThe following snippet is from the attached patch **trac_4368.patch**:\n\n```\n+def attrcall(name, *args, **kwds):\n+    \"\"\"\n+    Returns a callable which takes in an object, gets the method\n+    named name from that objects, and calls it with the specified\n+    arguments and keywords.\n```\nWhy \"named name from that _objects_\"? (my emphasis) My understanding is that I can pass in an object (not more than one) to the proposed class `AttrCallObject`. If you mean that I can pass in only one object in order to get a returned callable, then you might want to consider the following documentation change:\n\n```\n-named name from that objects, and calls it with the specified\n+named name from that object, and calls it with the specified\n```",
     "created_at": "2008-10-26T11:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4368",
     "type": "issue_comment",
@@ -99,14 +97,12 @@ The following snippet is from the attached patch **trac_4368.patch**:
 +    named name from that objects, and calls it with the specified
 +    arguments and keywords.
 ```
-
 Why "named name from that _objects_"? (my emphasis) My understanding is that I can pass in an object (not more than one) to the proposed class `AttrCallObject`. If you mean that I can pass in only one object in order to get a returned callable, then you might want to consider the following documentation change:
 
 ```
 -named name from that objects, and calls it with the specified
 +named name from that object, and calls it with the specified
 ```
-
 
 
 

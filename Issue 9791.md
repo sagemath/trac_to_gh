@@ -3,7 +3,7 @@
 archive/issues_009791.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @dimpase\n\nIt would be nice if kernels and inverse images of ring maps were implemented:\n\n```\nsage: R.<s,t>=PolynomialRing(QQ);R\nMultivariate Polynomial Ring in s, t over Rational Field\nsage: S.<x,y,z,w>=PolynomialRing(QQ);S\nMultivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field\n  To:   Multivariate Polynomial Ring in s, t over Rational Field\n  Defn: x |--> s^4\n        y |--> s^3*t\n        z |--> s*t^3\n        w |--> t^4\nsage: f.inverse_image(0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()\n\nNotImplementedError: \nsage: kernel(f)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)\n    907         ]\n    908     \"\"\"\n--> 909     return x.kernel()\n    910 \n    911 def krull_dimension(x):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'\n```\n\nHere is the corresponding Singular computation:\n\n```\nsage: sage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: sage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: sage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @dimpase\n\nIt would be nice if kernels and inverse images of ring maps were implemented:\n\n```\nsage: R.<s,t>=PolynomialRing(QQ);R\nMultivariate Polynomial Ring in s, t over Rational Field\nsage: S.<x,y,z,w>=PolynomialRing(QQ);S\nMultivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field\n  To:   Multivariate Polynomial Ring in s, t over Rational Field\n  Defn: x |--> s^4\n        y |--> s^3*t\n        z |--> s*t^3\n        w |--> t^4\nsage: f.inverse_image(0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()\n\nNotImplementedError: \nsage: kernel(f)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)\n    907         ]\n    908     \"\"\"\n--> 909     return x.kernel()\n    910 \n    911 def krull_dimension(x):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'\n```\nHere is the corresponding Singular computation:\n\n```\nsage: sage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: sage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: sage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
     "created_at": "2010-08-24T12:04:19Z",
     "labels": [
         "component: algebra"
@@ -64,7 +64,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'
 ```
-
 Here is the corresponding Singular computation:
 
 ```
@@ -84,7 +83,6 @@ z3-yw2,
 xz2-y2w,
 y3-x2z
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9792
 
@@ -242,7 +240,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095995.json:
 ```json
 {
-    "body": "Replying to [comment:5 tscrim]:\n> Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?\n\nIt would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.\n\nPossibly this means that this branch can be refactored such that it only wraps Singular functions, instead of constructing the graph ideal in Sage, unless we want to keep it for more control over the Gr\u00f6bner basis computations.\n\nHere is Singular code for the example from the description:\n\n```\n> LIB \"algebra.lib\";\n> ring S = 0, (s,t), dp;\n> ideal A = ideal(s^4, s^3*t, s*t^3, t^4);\n> poly p = s^3*t^4*(s+t);\n> list L = algebra_containment(p, A, 1);\n> L[1];\n1\n> def T = L[2]; setring T; check;\ny(1)*y(4)+y(2)*y(4)\n```\n",
+    "body": "Replying to [comment:5 tscrim]:\n> Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?\n\n\nIt would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.\n\nPossibly this means that this branch can be refactored such that it only wraps Singular functions, instead of constructing the graph ideal in Sage, unless we want to keep it for more control over the Gr\u00f6bner basis computations.\n\nHere is Singular code for the example from the description:\n\n```\n> LIB \"algebra.lib\";\n> ring S = 0, (s,t), dp;\n> ideal A = ideal(s^4, s^3*t, s*t^3, t^4);\n> poly p = s^3*t^4*(s+t);\n> list L = algebra_containment(p, A, 1);\n> L[1];\n1\n> def T = L[2]; setring T; check;\ny(1)*y(4)+y(2)*y(4)\n```",
     "created_at": "2020-06-02T19:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
@@ -253,6 +251,7 @@ archive/issue_comments_095995.json:
 
 Replying to [comment:5 tscrim]:
 > Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?
+
 
 It would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.
 
@@ -274,13 +273,12 @@ y(1)*y(4)+y(2)*y(4)
 
 
 
-
 ---
 
 archive/issue_comments_095996.json:
 ```json
 {
-    "body": "Replying to [comment:7 gh-mwageringel]:\n> Replying to [comment:5 tscrim]:\n> > Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?\n> \n> It would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.\n> \n> Possibly this means that this branch can be refactored such that it only wraps Singular functions, instead of constructing the graph ideal in Sage, unless we want to keep it for more control over the Gr\u00f6bner basis computations.\n\nWe will probably want to have both so we can have it for both generic polynomials (over more exotic base fields (integral domains?)) and specialized code for those implemented using Singular (and less back-and-forth between Singular and Sage).",
+    "body": "Replying to [comment:7 gh-mwageringel]:\n> Replying to [comment:5 tscrim]:\n> > Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?\n\n> \n> It would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.\n> \n> Possibly this means that this branch can be refactored such that it only wraps Singular functions, instead of constructing the graph ideal in Sage, unless we want to keep it for more control over the Gr\u00f6bner basis computations.\n\n\nWe will probably want to have both so we can have it for both generic polynomials (over more exotic base fields (integral domains?)) and specialized code for those implemented using Singular (and less back-and-forth between Singular and Sage).",
     "created_at": "2020-06-03T04:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
@@ -292,10 +290,12 @@ archive/issue_comments_095996.json:
 Replying to [comment:7 gh-mwageringel]:
 > Replying to [comment:5 tscrim]:
 > > Should we also implement a (lib)singular version of the kernel for ideals? Or did you do this already and saw that it was slower?
+
 > 
 > It would probably be good to wrap the Singular functions `kernel` and `preimage`, yes. I have not compared it in terms of speed yet, mainly because I thought that I needed to implement the graph ideal in Sage anyway in order to compute inverses of elements. However, I have just noticed that the Singular function [algebra_containment](https://www.singular.uni-kl.de/Manual/4-1-3/sing_1215.htm#SEC1296) can be used for that, which I had overlooked before. I will try to figure out how to call it from Sage and then report back.
 > 
 > Possibly this means that this branch can be refactored such that it only wraps Singular functions, instead of constructing the graph ideal in Sage, unless we want to keep it for more control over the Gröbner basis computations.
+
 
 We will probably want to have both so we can have it for both generic polynomials (over more exotic base fields (integral domains?)) and specialized code for those implemented using Singular (and less back-and-forth between Singular and Sage).
 

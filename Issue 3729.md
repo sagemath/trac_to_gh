@@ -116,7 +116,7 @@ This I think should be pretty unlikely to bring those issues back, but still giv
 archive/issue_comments_026422.json:
 ```json
 {
-    "body": "Hi Tim,\n\nReplying to [comment:2 tabbott]:\n> How about we change it to test whether an environment variable with a different name is set, e.g.\n> \n> if [ -z \"$SAGE_USE_SYSTEM_RHOME\" ];\n>      RHOME=\"SAGE_LOCAL\"/local/lib/R && export RHOME\n> fi\n> \n> This I think should be pretty unlikely to bring those issues back, but still gives packagers a hook to set RHOME themselves.\n\nWell, the problem I see here is that this way we have to set it in Sage somewhere before sourcing sage-env. We could do it in the sage script itself, but that is meant to do only the minimal number of things to get running and then sage-env deals with the environment. What I would prefer is something the other way around, i.e. distributions wishing to use the installed \"system\" set something in env that sage-env tests for and if SAGE_USE_SYSTEM_RHOME equaled \"no\" we would not set RHOME.\n\nThoughts\"\n\nCheers,\n\nMichael",
+    "body": "Hi Tim,\n\nReplying to [comment:2 tabbott]:\n> How about we change it to test whether an environment variable with a different name is set, e.g.\n> \n> if [ -z \"$SAGE_USE_SYSTEM_RHOME\" ];\n>      RHOME=\"SAGE_LOCAL\"/local/lib/R && export RHOME\n> fi\n> \n> This I think should be pretty unlikely to bring those issues back, but still gives packagers a hook to set RHOME themselves.\n\n\nWell, the problem I see here is that this way we have to set it in Sage somewhere before sourcing sage-env. We could do it in the sage script itself, but that is meant to do only the minimal number of things to get running and then sage-env deals with the environment. What I would prefer is something the other way around, i.e. distributions wishing to use the installed \"system\" set something in env that sage-env tests for and if SAGE_USE_SYSTEM_RHOME equaled \"no\" we would not set RHOME.\n\nThoughts\"\n\nCheers,\n\nMichael",
     "created_at": "2008-07-27T11:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3729",
     "type": "issue_comment",
@@ -135,6 +135,7 @@ Replying to [comment:2 tabbott]:
 > fi
 > 
 > This I think should be pretty unlikely to bring those issues back, but still gives packagers a hook to set RHOME themselves.
+
 
 Well, the problem I see here is that this way we have to set it in Sage somewhere before sourcing sage-env. We could do it in the sage script itself, but that is meant to do only the minimal number of things to get running and then sage-env deals with the environment. What I would prefer is something the other way around, i.e. distributions wishing to use the installed "system" set something in env that sage-env tests for and if SAGE_USE_SYSTEM_RHOME equaled "no" we would not set RHOME.
 

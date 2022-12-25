@@ -3,7 +3,7 @@
 archive/issues_003941.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\n\nand the results:\n\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
+    "body": "Assignee: @garyfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\nand the results:\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
     "created_at": "2008-08-24T05:13:27Z",
     "labels": [
         "component: calculus",
@@ -20,7 +20,6 @@ Assignee: @garyfurnish
 
 In MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  
 
-
 ```
 def diff(f,*args):
     if isinstance(f, (list, tuple)):
@@ -32,16 +31,13 @@ def diff(f,*args):
             return sage.all.diff(f,*args)
 ```
 
-
 and the results:
-
 
 ```
 sage: var('a,b,c,d,x,y')
 sage: diff((a*x+b*y,c*x+d*y),(x,y))
 [[a, b], [c, d]]
 ```
-
 
 well, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.
 
@@ -169,7 +165,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_028204.json:
 ```json
 {
-    "body": "What about functions with codomain R<sup>n</sup> where n>1?  If these are represented via a list, tuple, or vector, the code works from above (well, let's add handling of vectors with the following:\n\n\n```\ndef diff(f, *args):\n    if isinstance(f, (list, tuple)) or sage.structure.element.is_Vector(f):\n        return [diff(component, *args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)) or is_Vector(args[0]):\n            return [diff(f, variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f, *args)\n```\n\n\nThis wouldn't work with a `.jacobian` method---where would we put the method?",
+    "body": "What about functions with codomain R<sup>n</sup> where n>1?  If these are represented via a list, tuple, or vector, the code works from above (well, let's add handling of vectors with the following:\n\n```\ndef diff(f, *args):\n    if isinstance(f, (list, tuple)) or sage.structure.element.is_Vector(f):\n        return [diff(component, *args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)) or is_Vector(args[0]):\n            return [diff(f, variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f, *args)\n```\n\nThis wouldn't work with a `.jacobian` method---where would we put the method?",
     "created_at": "2009-02-12T22:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
@@ -179,7 +175,6 @@ archive/issue_comments_028204.json:
 ```
 
 What about functions with codomain R<sup>n</sup> where n>1?  If these are represented via a list, tuple, or vector, the code works from above (well, let's add handling of vectors with the following:
-
 
 ```
 def diff(f, *args):
@@ -191,7 +186,6 @@ def diff(f, *args):
         else:
             return sage.all.diff(f, *args)
 ```
-
 
 This wouldn't work with a `.jacobian` method---where would we put the method?
 
@@ -220,7 +214,7 @@ archive/issue_comments_028205.json:
 archive/issue_comments_028206.json:
 ```json
 {
-    "body": "Does the new functionality that\n\n```\nf(x,y)=3*sin(x)-2*cos(y)-x*y\nf.diff(2)\n```\n\nworks change anything on this ticket?  Just throwing it out there, it may be irrelevant.",
+    "body": "Does the new functionality that\n\n```\nf(x,y)=3*sin(x)-2*cos(y)-x*y\nf.diff(2)\n```\nworks change anything on this ticket?  Just throwing it out there, it may be irrelevant.",
     "created_at": "2010-05-26T20:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
@@ -235,7 +229,6 @@ Does the new functionality that
 f(x,y)=3*sin(x)-2*cos(y)-x*y
 f.diff(2)
 ```
-
 works change anything on this ticket?  Just throwing it out there, it may be irrelevant.
 
 

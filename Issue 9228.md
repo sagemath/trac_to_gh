@@ -3,7 +3,7 @@
 archive/issues_009228.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\n\n```\n\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: mwrank\n\n```\n\ndevel/sage-main/sage/interfaces/mwrank.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/interfaces/mwrank.py: 20% (2 of 10)\n\nMissing documentation:\n* __getattr__(self, attrname):\n* __reduce__(self):\n* __call__(self, cmd):\n* console(self):\n* _reduce_load_mwrank():\n* mwrank_console():\n\n\nMissing doctests:\n* Mwrank(options=\"\", server=None, server_tmpdir=None):\n* __init__(self, options=\"\", server=None,server_tmpdir=None):\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9228\n\n",
     "created_at": "2010-06-12T13:42:01Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_009228.json:
 Assignee: @JohnCremona
 
 Keywords: mwrank
-
 
 ```
 
@@ -40,7 +39,6 @@ Missing doctests:
 * Mwrank(options="", server=None, server_tmpdir=None):
 * __init__(self, options="", server=None,server_tmpdir=None):
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9228
 
@@ -71,7 +69,7 @@ Changing priority from major to minor.
 archive/issue_comments_086456.json:
 ```json
 {
-    "body": "After the patch:\n\n```\n%sage -coverage sage/interfaces/mwrank.py \n----------------------------------------------------------------------\nsage/interfaces/mwrank.py\nSCORE sage/interfaces/mwrank.py: 100% (10 of 10)\n----------------------------------------------------------------------\n```\n\nand the reference manual markup has also been corrected.",
+    "body": "After the patch:\n\n```\n%sage -coverage sage/interfaces/mwrank.py \n----------------------------------------------------------------------\nsage/interfaces/mwrank.py\nSCORE sage/interfaces/mwrank.py: 100% (10 of 10)\n----------------------------------------------------------------------\n```\nand the reference manual markup has also been corrected.",
     "created_at": "2010-12-21T17:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -89,7 +87,6 @@ sage/interfaces/mwrank.py
 SCORE sage/interfaces/mwrank.py: 100% (10 of 10)
 ----------------------------------------------------------------------
 ```
-
 and the reference manual markup has also been corrected.
 
 
@@ -204,7 +201,7 @@ Resolution changed from fixed to
 archive/issue_comments_086461.json:
 ```json
 {
-    "body": "For some reason, the '\\t' (tab) is replaced by a series of spaces on Solaris, giving doctest errors:\n\n```\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.6.2.alpha1/devel/sage-main/sage/interfaces/mwrank.py\", line 107:\n    sage: M('0 -1 1 0 0')\nExpected:\n    'Curve [0,-1,1,0,0] :\\tRank = 0\\n\\n\\nRegulator = 1\\n'\nGot:\n    'Curve [0,-1,1,0,0] :    Rank = 0\\n\\n\\nRegulator = 1\\n'\n**********************************************************************\n```\n",
+    "body": "For some reason, the '\\t' (tab) is replaced by a series of spaces on Solaris, giving doctest errors:\n\n```\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.6.2.alpha1/devel/sage-main/sage/interfaces/mwrank.py\", line 107:\n    sage: M('0 -1 1 0 0')\nExpected:\n    'Curve [0,-1,1,0,0] :\\tRank = 0\\n\\n\\nRegulator = 1\\n'\nGot:\n    'Curve [0,-1,1,0,0] :    Rank = 0\\n\\n\\nRegulator = 1\\n'\n**********************************************************************\n```",
     "created_at": "2011-01-20T09:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -225,7 +222,6 @@ Got:
     'Curve [0,-1,1,0,0] :    Rank = 0\n\n\nRegulator = 1\n'
 **********************************************************************
 ```
-
 
 
 
@@ -386,7 +382,7 @@ I can't help noticing that you've replaced tabs with 3 spaces, but Solaris seems
 archive/issue_comments_086469.json:
 ```json
 {
-    "body": "Replying to [comment:9 davidloeffler]:\n> I can't help noticing that you've replaced tabs with 3 spaces, but Solaris seems to replace them with 4 spaces -- so I suspect that it still won't work (groan).\n\nThink again.  I have removed the tabs so Solaris will not need to do anything!",
+    "body": "Replying to [comment:9 davidloeffler]:\n> I can't help noticing that you've replaced tabs with 3 spaces, but Solaris seems to replace them with 4 spaces -- so I suspect that it still won't work (groan).\n\n\nThink again.  I have removed the tabs so Solaris will not need to do anything!",
     "created_at": "2011-01-20T12:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -397,6 +393,7 @@ archive/issue_comments_086469.json:
 
 Replying to [comment:9 davidloeffler]:
 > I can't help noticing that you've replaced tabs with 3 spaces, but Solaris seems to replace them with 4 spaces -- so I suspect that it still won't work (groan).
+
 
 Think again.  I have removed the tabs so Solaris will not need to do anything!
 
@@ -425,7 +422,7 @@ The question is: why is the output on Solaris different in the first place?  Is 
 archive/issue_comments_086471.json:
 ```json
 {
-    "body": "Replying to [comment:11 jdemeyer]:\n> The question is: why is the output on Solaris different in the first place?  Is it the `mwrank` program itself?  Is it pexpect?  Is it Python?\n\nHere's a test:  on the solaris machine, do\n\n```\necho 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l > t\n```\n\nand see if the file t contains any tab characters.  If it does, then mwrank is behaving normally and the tab conversion is happening further downstream.",
+    "body": "Replying to [comment:11 jdemeyer]:\n> The question is: why is the output on Solaris different in the first place?  Is it the `mwrank` program itself?  Is it pexpect?  Is it Python?\n\n\nHere's a test:  on the solaris machine, do\n\n```\necho 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l > t\n```\nand see if the file t contains any tab characters.  If it does, then mwrank is behaving normally and the tab conversion is happening further downstream.",
     "created_at": "2011-01-20T13:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -437,12 +434,12 @@ archive/issue_comments_086471.json:
 Replying to [comment:11 jdemeyer]:
 > The question is: why is the output on Solaris different in the first place?  Is it the `mwrank` program itself?  Is it pexpect?  Is it Python?
 
+
 Here's a test:  on the solaris machine, do
 
 ```
 echo 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l > t
 ```
-
 and see if the file t contains any tab characters.  If it does, then mwrank is behaving normally and the tab conversion is happening further downstream.
 
 
@@ -452,7 +449,7 @@ and see if the file t contains any tab characters.  If it does, then mwrank is b
 archive/issue_comments_086472.json:
 ```json
 {
-    "body": "Replying to [comment:12 cremona]:\n> Here's a test:  on the solaris machine, do\n> {{{\n> echo 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l\n> }}}\n\nThis is producing an actual tab character.",
+    "body": "Replying to [comment:12 cremona]:\n> Here's a test:  on the solaris machine, do\n> \n> ```\n> echo 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l\n> ```\n\n\nThis is producing an actual tab character.",
     "created_at": "2011-01-20T20:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9228",
     "type": "issue_comment",
@@ -463,9 +460,11 @@ archive/issue_comments_086472.json:
 
 Replying to [comment:12 cremona]:
 > Here's a test:  on the solaris machine, do
-> {{{
+> 
+> ```
 > echo 0 -1 1 0 0 0 0 0 0 0 | sage -mwrank -v 0 -q -l
-> }}}
+> ```
+
 
 This is producing an actual tab character.
 

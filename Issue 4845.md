@@ -166,7 +166,7 @@ Merged in Sage 3.2.3.alpha0
 archive/issue_comments_036671.json:
 ```json
 {
-    "body": "for future reference:\n\n```\n17:35 < wstein> I don't like the patch at 4845.\n17:35 < wstein> better would be\n17:35 < wstein> if stripped_line.startswith('#'):\n17:35 < wstein> instead of \n17:36 < wstein> if stripped_line and stripped_line[0] == '#':\n```\n",
+    "body": "for future reference:\n\n```\n17:35 < wstein> I don't like the patch at 4845.\n17:35 < wstein> better would be\n17:35 < wstein> if stripped_line.startswith('#'):\n17:35 < wstein> instead of \n17:36 < wstein> if stripped_line and stripped_line[0] == '#':\n```",
     "created_at": "2008-12-24T01:39:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
@@ -184,7 +184,6 @@ for future reference:
 17:35 < wstein> instead of 
 17:36 < wstein> if stripped_line and stripped_line[0] == '#':
 ```
-
 
 
 
@@ -217,7 +216,7 @@ Michael
 archive/issue_comments_036673.json:
 ```json
 {
-    "body": "I definitely prefer the v2 patch for the sake of readability. For the sake of it, though, should anyone look at this ticket, I want to note that the original patch seems (at a quick glance, anyway) to be faster:\n\n\n```\nsage: s = \"\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 350 ns per loop\nsage: %timeit s and s[0] == '3'\n10000000 loops, best of 3: 72.2 ns per loop\n\nsage: s = \"345\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 353 ns per loop\nsage: %timeit s and s[0] == '3'\n1000000 loops, best of 3: 208 ns per loop\n\nsage: s = \"678\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 351 ns per loop\nsage: %timeit s and s[0] == '3'\n1000000 loops, best of 3: 212 ns per loop\n```\n",
+    "body": "I definitely prefer the v2 patch for the sake of readability. For the sake of it, though, should anyone look at this ticket, I want to note that the original patch seems (at a quick glance, anyway) to be faster:\n\n```\nsage: s = \"\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 350 ns per loop\nsage: %timeit s and s[0] == '3'\n10000000 loops, best of 3: 72.2 ns per loop\n\nsage: s = \"345\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 353 ns per loop\nsage: %timeit s and s[0] == '3'\n1000000 loops, best of 3: 208 ns per loop\n\nsage: s = \"678\"\nsage: %timeit s.startswith('3')\n1000000 loops, best of 3: 351 ns per loop\nsage: %timeit s and s[0] == '3'\n1000000 loops, best of 3: 212 ns per loop\n```",
     "created_at": "2008-12-24T04:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
@@ -227,7 +226,6 @@ archive/issue_comments_036673.json:
 ```
 
 I definitely prefer the v2 patch for the sake of readability. For the sake of it, though, should anyone look at this ticket, I want to note that the original patch seems (at a quick glance, anyway) to be faster:
-
 
 ```
 sage: s = ""
@@ -248,4 +246,3 @@ sage: %timeit s.startswith('3')
 sage: %timeit s and s[0] == '3'
 1000000 loops, best of 3: 212 ns per loop
 ```
-

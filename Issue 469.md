@@ -85,7 +85,7 @@ archive/issue_events_001176.json:
 archive/issue_comments_002324.json:
 ```json
 {
-    "body": "Alexander Dreyer did comment on the build time of PolyBoRi:\n\n```\nThe essential part of PolyBoRi (using the built-ininterface) can be\nbuilt in about 3 minutes on a Intel(R) Xeon(R) CPU5148  @ 2.33GHz\n(using one cpu only). I'll try to find the corresponding scons\ncommands for the spkg and the Sage-wrapper and give to to Burcin.\n\nBest regards,\n  Alexander\n```\n\n\nCheers,\n\nMichael",
+    "body": "Alexander Dreyer did comment on the build time of PolyBoRi:\n\n```\nThe essential part of PolyBoRi (using the built-ininterface) can be\nbuilt in about 3 minutes on a Intel(R) Xeon(R) CPU5148  @ 2.33GHz\n(using one cpu only). I'll try to find the corresponding scons\ncommands for the spkg and the Sage-wrapper and give to to Burcin.\n\nBest regards,\n  Alexander\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-04T14:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
@@ -106,7 +106,6 @@ Best regards,
   Alexander
 ```
 
-
 Cheers,
 
 Michael
@@ -118,7 +117,7 @@ Michael
 archive/issue_comments_002325.json:
 ```json
 {
-    "body": "\n```\nThere is a new PolyBoRi package available at:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori-0.1-r3.spkg\n\nChanges are:\n        - Alexander's changes to speed up the build process\n        - Update to the latest CVS version\n        - pass on MAKEOPTS to scons to allow parallel builds\n\nBuilding the package takes 4 mins 20 seconds on a single Intel(R)\nPentium (R) D CPU 3.40GHz. Parallel make options (-jn) speed up the\nbuild as expected.\n\nBurcin \n```\n",
+    "body": "```\nThere is a new PolyBoRi package available at:\n\nhttp://www.risc.uni-linz.ac.at/people/berocal/sage/polybori-0.1-r3.spkg\n\nChanges are:\n        - Alexander's changes to speed up the build process\n        - Update to the latest CVS version\n        - pass on MAKEOPTS to scons to allow parallel builds\n\nBuilding the package takes 4 mins 20 seconds on a single Intel(R)\nPentium (R) D CPU 3.40GHz. Parallel make options (-jn) speed up the\nbuild as expected.\n\nBurcin \n```",
     "created_at": "2007-12-04T14:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/469",
     "type": "issue_comment",
@@ -126,7 +125,6 @@ archive/issue_comments_002325.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 There is a new PolyBoRi package available at:
@@ -144,7 +142,6 @@ build as expected.
 
 Burcin 
 ```
-
 
 
 

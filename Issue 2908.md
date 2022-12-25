@@ -3,7 +3,7 @@
 archive/issues_002908.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nWith 3.0.alpha2 I get the following:\n\n\n```\nsage: R.<x> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\nsage: R.<x> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x,y> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2908\n\n",
+    "body": "Assignee: somebody\n\nWith 3.0.alpha2 I get the following:\n\n```\nsage: R.<x> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\nsage: R.<x> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x,y> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2908\n\n",
     "created_at": "2008-04-13T17:47:25Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_002908.json:
 Assignee: somebody
 
 With 3.0.alpha2 I get the following:
-
 
 ```
 sage: R.<x> = QQ[]
@@ -54,7 +53,6 @@ x
 
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2908
 
 
@@ -66,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2908
 archive/issue_comments_020000.json:
 ```json
 {
-    "body": "I think that GCDs for polynomials over a field should return monic polynomials (which seems to be the current behavior); that is, I think this bug is invalid.\n\n(According to *Algorithms for Computer Algebra*, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)\n\nWhat do you think this should return?\n\n```\nsage: R.<x> = QQ[]\nsage: p = (5*x + 7) * (3*x + 1)\nsage: q = (x/7 + 1/5) * (2*x + 2)\nsage: p.gcd(q)\nx + 7/5\n```\n",
+    "body": "I think that GCDs for polynomials over a field should return monic polynomials (which seems to be the current behavior); that is, I think this bug is invalid.\n\n(According to *Algorithms for Computer Algebra*, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)\n\nWhat do you think this should return?\n\n```\nsage: R.<x> = QQ[]\nsage: p = (5*x + 7) * (3*x + 1)\nsage: q = (x/7 + 1/5) * (2*x + 2)\nsage: p.gcd(q)\nx + 7/5\n```",
     "created_at": "2008-04-13T18:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
@@ -88,7 +86,6 @@ sage: q = (x/7 + 1/5) * (2*x + 2)
 sage: p.gcd(q)
 x + 7/5
 ```
-
 
 
 

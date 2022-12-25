@@ -55,7 +55,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087517.json:
 ```json
 {
-    "body": "After this is added, we can see the results - in this case all 15 tests pass, on a Sony laptop running OpenSolaris 06/2009. \n\n\n```\nPASS: resume\n===================\nAll 15 tests passed\n===================\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nMaking check in po\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/po'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/po'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gnutls-2.2.1.p6.spkg\n```\n\n\nThe revised package may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/gnutls-2.2.1.p6.spkg",
+    "body": "After this is added, we can see the results - in this case all 15 tests pass, on a Sony laptop running OpenSolaris 06/2009. \n\n```\nPASS: resume\n===================\nAll 15 tests passed\n===================\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/tests'\nMaking check in po\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/po'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src/po'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/gnutls-2.2.1.p6\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gnutls-2.2.1.p6.spkg\n```\n\nThe revised package may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/gnutls-2.2.1.p6.spkg",
     "created_at": "2010-06-22T14:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9308",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ archive/issue_comments_087517.json:
 ```
 
 After this is added, we can see the results - in this case all 15 tests pass, on a Sony laptop running OpenSolaris 06/2009. 
-
 
 ```
 PASS: resume
@@ -87,7 +86,6 @@ Making Sage/Python scripts relocatable...
 Making script relocatable
 Finished installing gnutls-2.2.1.p6.spkg
 ```
-
 
 The revised package may be found at 
 

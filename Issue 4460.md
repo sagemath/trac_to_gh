@@ -3,7 +3,7 @@
 archive/issues_004460.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAdding a link to the PDF versions of the manuals from the /html/index.html page. Both, useful locally and on the website. But I don't know how this page is generated (i get errors or nothing happens) and it isn't even under revision control. Here my improvised patch:\n\n\n```\nadd in /sage/devel/doc-main/html/index.html.in at line 88:\n------------\n <ul>\n\t    <li> <font size=+2><a href=\"../paper-$(PAPER)/\" class=\"title\">PDF Versions</a></font>\n\t      <br>\n\t  </ul>\n-------------\n```\n\n\nAn enhancement would be to link to each .pdf file directly, something like \"link to html (PDF)\" for each link.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4460\n\n",
+    "body": "Assignee: tba\n\nAdding a link to the PDF versions of the manuals from the /html/index.html page. Both, useful locally and on the website. But I don't know how this page is generated (i get errors or nothing happens) and it isn't even under revision control. Here my improvised patch:\n\n```\nadd in /sage/devel/doc-main/html/index.html.in at line 88:\n------------\n <ul>\n\t    <li> <font size=+2><a href=\"../paper-$(PAPER)/\" class=\"title\">PDF Versions</a></font>\n\t      <br>\n\t  </ul>\n-------------\n```\n\nAn enhancement would be to link to each .pdf file directly, something like \"link to html (PDF)\" for each link.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4460\n\n",
     "created_at": "2008-11-07T10:09:25Z",
     "labels": [
         "component: documentation",
@@ -20,7 +20,6 @@ Assignee: tba
 
 Adding a link to the PDF versions of the manuals from the /html/index.html page. Both, useful locally and on the website. But I don't know how this page is generated (i get errors or nothing happens) and it isn't even under revision control. Here my improvised patch:
 
-
 ```
 add in /sage/devel/doc-main/html/index.html.in at line 88:
 ------------
@@ -30,7 +29,6 @@ add in /sage/devel/doc-main/html/index.html.in at line 88:
 	  </ul>
 -------------
 ```
-
 
 An enhancement would be to link to each .pdf file directly, something like "link to html (PDF)" for each link.
 
@@ -66,7 +64,7 @@ Includes pdf.png
 archive/issue_comments_032845.json:
 ```json
 {
-    "body": "To generate the icon I used ImageMagick:\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/doc/en/website/static/pdf.png\n```\n",
+    "body": "To generate the icon I used ImageMagick:\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/doc/en/website/static/pdf.png\n```",
     "created_at": "2009-07-08T19:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -80,7 +78,6 @@ To generate the icon I used ImageMagick:
 ```
 convert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/doc/en/website/static/pdf.png
 ```
-
 
 
 
@@ -183,7 +180,7 @@ Apply only this patch.
 archive/issue_comments_032851.json:
 ```json
 {
-    "body": "Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by @qed777 created at 2009-07-22 23:19:41\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```\n",
+    "body": "Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by @qed777 created at 2009-07-22 23:19:41\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\n\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```",
     "created_at": "2009-07-22T23:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -196,6 +193,7 @@ Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:6 jhpalmieri]:
 > On the other hand, if I click on the "Help" button from the notebook, then click on "Fast static versions of the Documentation", then the I see pdf links but they don't work: I get messages like "The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found."
+
 Thanks very much for catching this.  I think v2 covers both the static and offline docs.
 
 Aside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.
@@ -208,13 +206,12 @@ convert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/
 
 
 
-
 ---
 
 archive/issue_comments_032852.json:
 ```json
 {
-    "body": "Looks good to me.\n\n> Aside: In the drive for internationalization, perhaps we should instead map doc/common/output to, e.g., http://localhost:8000/doc/static and serve index.html as http://localhost:8000/doc/static/html/ + LANG + /index.html.\n\nI have no opinion about this, but if you want to do something about it, let's move it to another ticket.",
+    "body": "Looks good to me.\n\n> Aside: In the drive for internationalization, perhaps we should instead map doc/common/output to, e.g., http://localhost:8000/doc/static and serve index.html as http://localhost:8000/doc/static/html/ + LANG + /index.html.\n\n\nI have no opinion about this, but if you want to do something about it, let's move it to another ticket.",
     "created_at": "2009-07-22T23:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -226,6 +223,7 @@ archive/issue_comments_032852.json:
 Looks good to me.
 
 > Aside: In the drive for internationalization, perhaps we should instead map doc/common/output to, e.g., http://localhost:8000/doc/static and serve index.html as http://localhost:8000/doc/static/html/ + LANG + /index.html.
+
 
 I have no opinion about this, but if you want to do something about it, let's move it to another ticket.
 
@@ -371,7 +369,7 @@ The new patch `trac_4460-pdf_links_v3.patch` will need to be moved to another en
 archive/issue_comments_032859.json:
 ```json
 {
-    "body": "Replying to [comment:13 mvngu]:\n> The new patch `trac_4460-pdf_links_v3.patch` will need to be moved to another enhancement ticket.\nNo problem.  I'll wait until there's more feedback on #6187.",
+    "body": "Replying to [comment:13 mvngu]:\n> The new patch `trac_4460-pdf_links_v3.patch` will need to be moved to another enhancement ticket.\n\nNo problem.  I'll wait until there's more feedback on #6187.",
     "created_at": "2009-07-27T07:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
@@ -382,6 +380,7 @@ archive/issue_comments_032859.json:
 
 Replying to [comment:13 mvngu]:
 > The new patch `trac_4460-pdf_links_v3.patch` will need to be moved to another enhancement ticket.
+
 No problem.  I'll wait until there's more feedback on #6187.
 
 

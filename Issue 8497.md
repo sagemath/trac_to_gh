@@ -3,7 +3,7 @@
 archive/issues_008497.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin @jasongrout @mwhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\n\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\n\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin @jasongrout @mwhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
     "created_at": "2010-03-11T10:33:15Z",
     "labels": [
         "component: calculus",
@@ -32,7 +32,6 @@ sage: x.simplify_radical?
        canonical over a large class of expressions and a given ordering of
        variables
 ```
-
 however if indeed it is able to recognize zero:
 
 ```
@@ -40,7 +39,6 @@ sage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3
 sage: a.simplify_radical()
 0
 ```
-
 it does *not* return a canonical expression:
 
 ```
@@ -53,7 +51,6 @@ sage: a2.simplify_radical()
 sage: (a1-a2).simplify_radical()
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8497
 
@@ -85,7 +82,7 @@ conjugate expression?
 archive/issue_comments_076557.json:
 ```json
 {
-    "body": "This is the full docstring from Maxima:\n\n\n```\nSimplifies expr, which can contain logs, exponentials, and radicals, by converting it into a form which is canonical over a large class of expressions and a given ordering of variables; that is, all functionally equivalent forms are mapped into a unique form. For a somewhat larger class of expressions, radcan produces a regular form. Two equivalent expressions in this class do not necessarily have the same appearance, but their difference can be simplified by radcan to zero.\n\n    For some expressions radcan is quite time consuming. This is the cost of exploring certain relationships among the components of the expression for simplifications based on factoring and partial-fraction expansions of exponents. \n```\n\n\nPerhaps we should include this",
+    "body": "This is the full docstring from Maxima:\n\n```\nSimplifies expr, which can contain logs, exponentials, and radicals, by converting it into a form which is canonical over a large class of expressions and a given ordering of variables; that is, all functionally equivalent forms are mapped into a unique form. For a somewhat larger class of expressions, radcan produces a regular form. Two equivalent expressions in this class do not necessarily have the same appearance, but their difference can be simplified by radcan to zero.\n\n    For some expressions radcan is quite time consuming. This is the cost of exploring certain relationships among the components of the expression for simplifications based on factoring and partial-fraction expansions of exponents. \n```\n\nPerhaps we should include this",
     "created_at": "2010-03-11T17:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -96,13 +93,11 @@ archive/issue_comments_076557.json:
 
 This is the full docstring from Maxima:
 
-
 ```
 Simplifies expr, which can contain logs, exponentials, and radicals, by converting it into a form which is canonical over a large class of expressions and a given ordering of variables; that is, all functionally equivalent forms are mapped into a unique form. For a somewhat larger class of expressions, radcan produces a regular form. Two equivalent expressions in this class do not necessarily have the same appearance, but their difference can be simplified by radcan to zero.
 
     For some expressions radcan is quite time consuming. This is the cost of exploring certain relationships among the components of the expression for simplifications based on factoring and partial-fraction expansions of exponents. 
 ```
-
 
 Perhaps we should include this
 
@@ -113,7 +108,7 @@ Perhaps we should include this
 archive/issue_comments_076558.json:
 ```json
 {
-    "body": "> Perhaps we should include this \n\nyes (unless of course upstream finds a way to get a real canonical form).\nAnd maybe adding an example showing the difference when checking for 0.",
+    "body": "> Perhaps we should include this \n\n\nyes (unless of course upstream finds a way to get a real canonical form).\nAnd maybe adding an example showing the difference when checking for 0.",
     "created_at": "2010-03-11T19:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -123,6 +118,7 @@ archive/issue_comments_076558.json:
 ```
 
 > Perhaps we should include this 
+
 
 yes (unless of course upstream finds a way to get a real canonical form).
 And maybe adding an example showing the difference when checking for 0.
@@ -535,7 +531,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_076580.json:
 ```json
 {
-    "body": "Replying to [comment:18 zimmerma]:\n> this should not delay this ticket.\n\nI agree but somebody needs to review my reformatting of the documentation.",
+    "body": "Replying to [comment:18 zimmerma]:\n> this should not delay this ticket.\n\n\nI agree but somebody needs to review my reformatting of the documentation.",
     "created_at": "2011-10-08T09:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -546,6 +542,7 @@ archive/issue_comments_076580.json:
 
 Replying to [comment:18 zimmerma]:
 > this should not delay this ticket.
+
 
 I agree but somebody needs to review my reformatting of the documentation.
 
@@ -574,7 +571,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076582.json:
 ```json
 {
-    "body": "I am not well versed in ReST, but AFAICT, Jeroen's changes make sense.\n\nMaxima documentation on `radcan()` (below) is rather vague. Based on this text, we shouldn't make bold claims about canonical results in the Sage documentation. I am switching this back to positive review.\n\n\n```\nSimplifies expr, which can contain logs, exponentials, and radicals, by\nconverting it into a form which is canonical over a large class of expressions\nand a given ordering of variables; that is, all functionally equivalent forms\nare mapped into a unique form. For a somewhat larger class of expressions,\nradcan produces a regular form. Two equivalent expressions in this class do\nnot necessarily have the same appearance, but their difference can be\nsimplified by radcan to zero.\n\nFor some expressions radcan is quite time consuming. This is the cost of\nexploring certain relationships among the components of the expression for\nsimplifications based on factoring and partial-fraction expansions of\nexponents. \n```\n\n\nWe can open an enhancement ticket to clarify what \n* * a large class of expressions*\n* *functionally equivalent*\n* * regular form*\nmean in the text above, and how the ordering of the variables effect the final result. Ideally, we should have references to a description of the underlying algorithm as well.",
+    "body": "I am not well versed in ReST, but AFAICT, Jeroen's changes make sense.\n\nMaxima documentation on `radcan()` (below) is rather vague. Based on this text, we shouldn't make bold claims about canonical results in the Sage documentation. I am switching this back to positive review.\n\n```\nSimplifies expr, which can contain logs, exponentials, and radicals, by\nconverting it into a form which is canonical over a large class of expressions\nand a given ordering of variables; that is, all functionally equivalent forms\nare mapped into a unique form. For a somewhat larger class of expressions,\nradcan produces a regular form. Two equivalent expressions in this class do\nnot necessarily have the same appearance, but their difference can be\nsimplified by radcan to zero.\n\nFor some expressions radcan is quite time consuming. This is the cost of\nexploring certain relationships among the components of the expression for\nsimplifications based on factoring and partial-fraction expansions of\nexponents. \n```\n\nWe can open an enhancement ticket to clarify what \n* * a large class of expressions*\n* *functionally equivalent*\n* * regular form*\nmean in the text above, and how the ordering of the variables effect the final result. Ideally, we should have references to a description of the underlying algorithm as well.",
     "created_at": "2011-10-10T08:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
@@ -586,7 +583,6 @@ archive/issue_comments_076582.json:
 I am not well versed in ReST, but AFAICT, Jeroen's changes make sense.
 
 Maxima documentation on `radcan()` (below) is rather vague. Based on this text, we shouldn't make bold claims about canonical results in the Sage documentation. I am switching this back to positive review.
-
 
 ```
 Simplifies expr, which can contain logs, exponentials, and radicals, by
@@ -602,7 +598,6 @@ exploring certain relationships among the components of the expression for
 simplifications based on factoring and partial-fraction expansions of
 exponents. 
 ```
-
 
 We can open an enhancement ticket to clarify what 
 * * a large class of expressions*

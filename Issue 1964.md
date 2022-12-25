@@ -3,7 +3,7 @@
 archive/issues_001964.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
     "created_at": "2008-01-29T02:38:26Z",
     "labels": [
         "component: user interface",
@@ -22,7 +22,6 @@ CC:  ncalexander@gmail.com
 
 This illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). 
 
-
 ```
 teragon:tmp was$ touch a.sage b.sage
 teragon:tmp was$ sage
@@ -40,7 +39,6 @@ sage: attach a.sage b.sage
 --> 395             M = d
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1964
 
 
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1964
 archive/issue_comments_012676.json:
 ```json
 {
-    "body": "Loading multiple files also doesn't work.\n\n```\nsage: load a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = do_prefilter_paste(L, continuation or (not first))\n    396             first = Fals\n```\n",
+    "body": "Loading multiple files also doesn't work.\n\n```\nsage: load a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = do_prefilter_paste(L, continuation or (not first))\n    396             first = Fals\n```",
     "created_at": "2008-01-29T02:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -74,7 +72,6 @@ sage: load a.sage b.sage
 --> 395             M = do_prefilter_paste(L, continuation or (not first))
     396             first = Fals
 ```
-
 
 
 
@@ -178,7 +175,7 @@ I would love to review this.  I'll read over the code in a moment at least.
 archive/issue_comments_012682.json:
 ```json
 {
-    "body": "REVIEW without trying the code:\n\n1. I just noticed this comment (by me) in the diffs (since you reformated it maybe): \" It does not convert indexes into 1-d arrays, since those have to be ints. \"\nI think we actually do now:\n\n```\nsage: preparse('v[7]')\n'v[Integer(7)]'\n```\n\n\n2. Wow, the doctests in interpreter.py are a disaster.  Thanks for fixing them in your patch!!!\n\n3. Your refactoring of the big function into little functions is superb.\n\nIf I could actually try the code and see it working, I would give it an enthusiastic positive review.   I did also just try applying the bundle to stock 2.10.1, and it also has lots of conflicts.",
+    "body": "REVIEW without trying the code:\n\n1. I just noticed this comment (by me) in the diffs (since you reformated it maybe): \" It does not convert indexes into 1-d arrays, since those have to be ints. \"\nI think we actually do now:\n\n```\nsage: preparse('v[7]')\n'v[Integer(7)]'\n```\n\n2. Wow, the doctests in interpreter.py are a disaster.  Thanks for fixing them in your patch!!!\n\n3. Your refactoring of the big function into little functions is superb.\n\nIf I could actually try the code and see it working, I would give it an enthusiastic positive review.   I did also just try applying the bundle to stock 2.10.1, and it also has lots of conflicts.",
     "created_at": "2008-02-19T06:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -196,7 +193,6 @@ I think we actually do now:
 sage: preparse('v[7]')
 'v[Integer(7)]'
 ```
-
 
 2. Wow, the doctests in interpreter.py are a disaster.  Thanks for fixing them in your patch!!!
 
@@ -251,7 +247,7 @@ Hopefully the patch attached applies to 2.10.alpha1.
 archive/issue_comments_012685.json:
 ```json
 {
-    "body": "I get reject against 2.10.2.alpha1:\n\n```\nsage$ hg import ~/1964-ncalexan-load-and-attach-multiple-files-2.patch\n\napplying /home/mabshoff/1964-ncalexan-load-and-attach-multiple-files-2.patch\npatching file sage/misc/interpreter.py\nHunk #5 FAILED at 318\nHunk #6 FAILED at 358\nHunk #7 FAILED at 506\nHunk #8 FAILED at 520\nHunk #10 FAILED at 579\n5 out of 11 hunks FAILED -- saving rejects to file sage/misc/interpreter.py.rej\npatching file sage/misc/cython.py\nHunk #1 FAILED at 147\n1 out of 1 hunk FAILED -- saving rejects to file sage/misc/cython.py.rej\npatching file sage/misc/interpreter.py\nHunk #1 FAILED at 0\nHunk #2 FAILED at 17\nHunk #3 FAILED at 106\nHunk #4 FAILED at 140\nHunk #9 FAILED at 316\nHunk #10 FAILED at 348\nHunk #11 succeeded at 518 with fuzz 2 (offset 134 lines).\n6 out of 11 hunks FAILED -- saving rejects to file sage/misc/interpreter.py.rej\npatching file sage/misc/preparser.py\nHunk #1 FAILED at 197\nHunk #2 FAILED at 230\n2 out of 2 hunks FAILED -- saving rejects to file sage/misc/preparser.py.rej\nabort: patch failed to apply\n```\n\n\nCheers,\n\nMichael",
+    "body": "I get reject against 2.10.2.alpha1:\n\n```\nsage$ hg import ~/1964-ncalexan-load-and-attach-multiple-files-2.patch\n\napplying /home/mabshoff/1964-ncalexan-load-and-attach-multiple-files-2.patch\npatching file sage/misc/interpreter.py\nHunk #5 FAILED at 318\nHunk #6 FAILED at 358\nHunk #7 FAILED at 506\nHunk #8 FAILED at 520\nHunk #10 FAILED at 579\n5 out of 11 hunks FAILED -- saving rejects to file sage/misc/interpreter.py.rej\npatching file sage/misc/cython.py\nHunk #1 FAILED at 147\n1 out of 1 hunk FAILED -- saving rejects to file sage/misc/cython.py.rej\npatching file sage/misc/interpreter.py\nHunk #1 FAILED at 0\nHunk #2 FAILED at 17\nHunk #3 FAILED at 106\nHunk #4 FAILED at 140\nHunk #9 FAILED at 316\nHunk #10 FAILED at 348\nHunk #11 succeeded at 518 with fuzz 2 (offset 134 lines).\n6 out of 11 hunks FAILED -- saving rejects to file sage/misc/interpreter.py.rej\npatching file sage/misc/preparser.py\nHunk #1 FAILED at 197\nHunk #2 FAILED at 230\n2 out of 2 hunks FAILED -- saving rejects to file sage/misc/preparser.py.rej\nabort: patch failed to apply\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T23:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -292,7 +288,6 @@ Hunk #2 FAILED at 230
 abort: patch failed to apply
 ```
 
-
 Cheers,
 
 Michael
@@ -304,7 +299,7 @@ Michael
 archive/issue_comments_012686.json:
 ```json
 {
-    "body": "Ok, you need to apply only 1964-version-2-patch-3.patch via GNU patch. hg import won't work. The rejects are the following, and they seem harmless:\n\n```\n*************** def preparser(on=True):\n*** 447,471 ****\n          sage: 2/3\n          2/3\n          sage: preparser(False)\n-         sage: 2/3\n          0\n          sage: preparser(True)\n          sage: 2^3\n          8\n      \"\"\"\n      if embedded():\n-         print \"To turn off preparsing in the notebook, swith to Python mode.\"\n      if on:\n          InteractiveShell.prefilter = sage_prefilter\n      else:\n          InteractiveShell.prefilter = ipython_prefilter\n\n-\n  import sagedoc\n  import IPython.OInspect\n  IPython.OInspect.getdoc = sagedoc.my_getdoc\n  IPython.OInspect.getsource = sagedoc.my_getsource\n-\n\n  import __builtin__\n  _prompt = 'sage'\n--- 495,517 ----\n          sage: 2/3\n          2/3\n          sage: preparser(False)\n+         sage: 2/3 # known bug -- the preparser is always on in doctests\n          0\n          sage: preparser(True)\n          sage: 2^3\n          8\n      \"\"\"\n      if embedded():\n+         print \"To turn off preparsing in the notebook, switch to Python mode.\"\n      if on:\n          InteractiveShell.prefilter = sage_prefilter\n      else:\n          InteractiveShell.prefilter = ipython_prefilter\n\n  import sagedoc\n  import IPython.OInspect\n  IPython.OInspect.getdoc = sagedoc.my_getdoc\n  IPython.OInspect.getsource = sagedoc.my_getsource\n\n  import __builtin__\n  _prompt = 'sage'\n```\n\n\nCheers,\n\nMichael",
+    "body": "Ok, you need to apply only 1964-version-2-patch-3.patch via GNU patch. hg import won't work. The rejects are the following, and they seem harmless:\n\n```\n*************** def preparser(on=True):\n*** 447,471 ****\n          sage: 2/3\n          2/3\n          sage: preparser(False)\n-         sage: 2/3\n          0\n          sage: preparser(True)\n          sage: 2^3\n          8\n      \"\"\"\n      if embedded():\n-         print \"To turn off preparsing in the notebook, swith to Python mode.\"\n      if on:\n          InteractiveShell.prefilter = sage_prefilter\n      else:\n          InteractiveShell.prefilter = ipython_prefilter\n\n-\n  import sagedoc\n  import IPython.OInspect\n  IPython.OInspect.getdoc = sagedoc.my_getdoc\n  IPython.OInspect.getsource = sagedoc.my_getsource\n-\n\n  import __builtin__\n  _prompt = 'sage'\n--- 495,517 ----\n          sage: 2/3\n          2/3\n          sage: preparser(False)\n+         sage: 2/3 # known bug -- the preparser is always on in doctests\n          0\n          sage: preparser(True)\n          sage: 2^3\n          8\n      \"\"\"\n      if embedded():\n+         print \"To turn off preparsing in the notebook, switch to Python mode.\"\n      if on:\n          InteractiveShell.prefilter = sage_prefilter\n      else:\n          InteractiveShell.prefilter = ipython_prefilter\n\n  import sagedoc\n  import IPython.OInspect\n  IPython.OInspect.getdoc = sagedoc.my_getdoc\n  IPython.OInspect.getsource = sagedoc.my_getsource\n\n  import __builtin__\n  _prompt = 'sage'\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T00:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -369,7 +364,6 @@ Ok, you need to apply only 1964-version-2-patch-3.patch via GNU patch. hg import
   _prompt = 'sage'
 ```
 
-
 Cheers,
 
 Michael
@@ -381,7 +375,7 @@ Michael
 archive/issue_comments_012687.json:
 ```json
 {
-    "body": "Related to the reject the only doctest failure in misc that I get is:\n\n```\nsage -t  devel/sage-main/sage/misc/interpreter.py\n**********************************************************************\nFile \"interpreter.py\", line 499:\n    sage: 2/3\nExpected:\n    0\nGot:\n    2/3\n**********************************************************************\n```\n\nIt does look like the doctest failure above is somehow related to the reject.\n\nCheers,\n\nMichael",
+    "body": "Related to the reject the only doctest failure in misc that I get is:\n\n```\nsage -t  devel/sage-main/sage/misc/interpreter.py\n**********************************************************************\nFile \"interpreter.py\", line 499:\n    sage: 2/3\nExpected:\n    0\nGot:\n    2/3\n**********************************************************************\n```\nIt does look like the doctest failure above is somehow related to the reject.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T00:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -403,7 +397,6 @@ Got:
     2/3
 **********************************************************************
 ```
-
 It does look like the doctest failure above is somehow related to the reject.
 
 Cheers,
@@ -459,7 +452,7 @@ Michael
 archive/issue_comments_012690.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* I found a bug when testing this patch.  To replicate, create files a.sage and b.sage and put in a.sage\n\n```\nattach b.sage\n```\n\nin it.  This fails, but {{{attach \"b.sage\"} works.  This was a problem before this patch, so it is NOT the fault of this patch.   It's now trac #2310, which I've fixed. \n\n* I found a second bug when testing this patch.  Make a file a.sage, b.sage, and c.sage and put in a.sage\n\n```\nattach b.sage c.sage\n```\n\n\nThen attach a.sage.  Boom!  Attaching multiple files from within a file doesn't work.  This is in fact the main point of this ticket -- the user who showed me the bug was showing me it in that particular situation.  This point needs to be addressed.\nFrom the command line attaching multiple files does work fine. \n\n* This patch reformats this comment in interpreter.py: \"It does not convert indexes into 1-d arrays, since those have to be ints.\"  That comment is completely wrong.  Indexes *do* get converted to Sage ints.  I think I made this comment already somewhere above a few days ago.\n\n* This reformatted comment in interpreter.py is also wrong: \"Whenever you enter a blank line in the SAGE interpreter, *all* attached files that have changed are automatically reloaded.\"  It is NO LONGER necessary to enter a blank line to update attached files.  It used to be necessary, say 3 years ago.\n\n* I think these two lines in interpreter.py that are added by this patch should be removed:\n\n```\n \t165\t            #raise ImportError, \"Loading of '%s' not implemented (load .py, .pyx, and .sage files)\"%name \n \t166\t            #line = '' \n```\n\n\n* Regarding \n\n```\n \t186\t    \\Sage does NOT guarantee that files are reloaded in the order that they \n \t187\t    are attached!\n```\n\nI think it's dumb that we don't.  It wouldn't be hard to do.  If you agree, please open a separate trac ticket for that. If you disagree, please explain why, since then I disagree with you.\n\n* This statement in the docs is wrong since attached is a dict instead of a list:\n\n```\n \t191\t    Internally, an attached file name is put in the list \\code{attached}\n```\n\nThis isn't your fault -- I'm the one that made attached a dict...  But your patch would be a good place to fix this.\n\n\n-\n\nNick, please address each of the above points.  In some cases the appropriate response should just be to make another trac ticket. \n\n -- William",
+    "body": "REFEREE REPORT:\n\n* I found a bug when testing this patch.  To replicate, create files a.sage and b.sage and put in a.sage\n\n```\nattach b.sage\n```\nin it.  This fails, but {{{attach \"b.sage\"} works.  This was a problem before this patch, so it is NOT the fault of this patch.   It's now trac #2310, which I've fixed. \n\n* I found a second bug when testing this patch.  Make a file a.sage, b.sage, and c.sage and put in a.sage\n\n```\nattach b.sage c.sage\n```\n\nThen attach a.sage.  Boom!  Attaching multiple files from within a file doesn't work.  This is in fact the main point of this ticket -- the user who showed me the bug was showing me it in that particular situation.  This point needs to be addressed.\nFrom the command line attaching multiple files does work fine. \n\n* This patch reformats this comment in interpreter.py: \"It does not convert indexes into 1-d arrays, since those have to be ints.\"  That comment is completely wrong.  Indexes *do* get converted to Sage ints.  I think I made this comment already somewhere above a few days ago.\n\n* This reformatted comment in interpreter.py is also wrong: \"Whenever you enter a blank line in the SAGE interpreter, *all* attached files that have changed are automatically reloaded.\"  It is NO LONGER necessary to enter a blank line to update attached files.  It used to be necessary, say 3 years ago.\n\n* I think these two lines in interpreter.py that are added by this patch should be removed:\n\n```\n \t165\t            #raise ImportError, \"Loading of '%s' not implemented (load .py, .pyx, and .sage files)\"%name \n \t166\t            #line = '' \n```\n\n* Regarding \n\n```\n \t186\t    \\Sage does NOT guarantee that files are reloaded in the order that they \n \t187\t    are attached!\n```\nI think it's dumb that we don't.  It wouldn't be hard to do.  If you agree, please open a separate trac ticket for that. If you disagree, please explain why, since then I disagree with you.\n\n* This statement in the docs is wrong since attached is a dict instead of a list:\n\n```\n \t191\t    Internally, an attached file name is put in the list \\code{attached}\n```\nThis isn't your fault -- I'm the one that made attached a dict...  But your patch would be a good place to fix this.\n\n\n-\n\nNick, please address each of the above points.  In some cases the appropriate response should just be to make another trac ticket. \n\n -- William",
     "created_at": "2008-02-26T04:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -475,7 +468,6 @@ REFEREE REPORT:
 ```
 attach b.sage
 ```
-
 in it.  This fails, but {{{attach "b.sage"} works.  This was a problem before this patch, so it is NOT the fault of this patch.   It's now trac #2310, which I've fixed. 
 
 * I found a second bug when testing this patch.  Make a file a.sage, b.sage, and c.sage and put in a.sage
@@ -483,7 +475,6 @@ in it.  This fails, but {{{attach "b.sage"} works.  This was a problem before th
 ```
 attach b.sage c.sage
 ```
-
 
 Then attach a.sage.  Boom!  Attaching multiple files from within a file doesn't work.  This is in fact the main point of this ticket -- the user who showed me the bug was showing me it in that particular situation.  This point needs to be addressed.
 From the command line attaching multiple files does work fine. 
@@ -499,14 +490,12 @@ From the command line attaching multiple files does work fine.
  	166	            #line = '' 
 ```
 
-
 * Regarding 
 
 ```
  	186	    \Sage does NOT guarantee that files are reloaded in the order that they 
  	187	    are attached!
 ```
-
 I think it's dumb that we don't.  It wouldn't be hard to do.  If you agree, please open a separate trac ticket for that. If you disagree, please explain why, since then I disagree with you.
 
 * This statement in the docs is wrong since attached is a dict instead of a list:
@@ -514,7 +503,6 @@ I think it's dumb that we don't.  It wouldn't be hard to do.  If you agree, plea
 ```
  	191	    Internally, an attached file name is put in the list \code{attached}
 ```
-
 This isn't your fault -- I'm the one that made attached a dict...  But your patch would be a good place to fix this.
 
 
@@ -666,7 +654,7 @@ The second patch should allow attaching and loading multiple files from within .
 archive/issue_comments_012697.json:
 ```json
 {
-    "body": "There is an error as written.  Change the line\n\n\n```\n    return '\\n'.join(lines_done) % literal_dict\n```\n\nto\n\n```\n    return '\\n'.join(lines_done)\n```\n\n\nI will post a new patch with this fixed and doctested shortly.",
+    "body": "There is an error as written.  Change the line\n\n```\n    return '\\n'.join(lines_done) % literal_dict\n```\nto\n\n```\n    return '\\n'.join(lines_done)\n```\n\nI will post a new patch with this fixed and doctested shortly.",
     "created_at": "2008-05-20T23:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -677,17 +665,14 @@ archive/issue_comments_012697.json:
 
 There is an error as written.  Change the line
 
-
 ```
     return '\n'.join(lines_done) % literal_dict
 ```
-
 to
 
 ```
     return '\n'.join(lines_done)
 ```
-
 
 I will post a new patch with this fixed and doctested shortly.
 
@@ -768,7 +753,7 @@ Changing priority from blocker to minor.
 archive/issue_comments_012700.json:
 ```json
 {
-    "body": "#7514 now allows, e.g.,\n\n```\nsage: attach('foo.py', 'bar.sage', 'hello.spyx')\n```\n\nShould we change or close this ticket?",
+    "body": "#7514 now allows, e.g.,\n\n```\nsage: attach('foo.py', 'bar.sage', 'hello.spyx')\n```\nShould we change or close this ticket?",
     "created_at": "2010-01-16T20:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
@@ -782,7 +767,6 @@ archive/issue_comments_012700.json:
 ```
 sage: attach('foo.py', 'bar.sage', 'hello.spyx')
 ```
-
 Should we change or close this ticket?
 
 

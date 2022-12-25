@@ -95,7 +95,7 @@ Best regards,
 archive/issue_comments_022656.json:
 ```json
 {
-    "body": "The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n\n\n```\nif self.iter.equal(self.obj.variableEnd()):\n    raise StopIteration\n```\n\n\nThe objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\n\nActually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \n\nAnother problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\n\nComments?",
+    "body": "The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n\n```\nif self.iter.equal(self.obj.variableEnd()):\n    raise StopIteration\n```\n\nThe objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\n\nActually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \n\nAnother problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\n\nComments?",
     "created_at": "2008-05-24T09:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -106,12 +106,10 @@ archive/issue_comments_022656.json:
 
 The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):
 
-
 ```
 if self.iter.equal(self.obj.variableEnd()):
     raise StopIteration
 ```
-
 
 The objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.
 
@@ -128,7 +126,7 @@ Comments?
 archive/issue_comments_022657.json:
 ```json
 {
-    "body": "> The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n> \n> {{{\n> if self.iter.equal(self.obj.variableEnd()):\n>     raise StopIteration\n> }}}\nIf that's the only reason for the object, we could add some kind of isEnd() and skip the reference. If fact, the PolyBoRi-Iterators have the member function isZero(), which is equivalent to this. \n\n> The objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\nDo I understand you right: the patch is not correct, because the destructor of the PolyBoRi monomial must not be called at that place? But, since there is a memleak, the destructor not called correctly. So why, does the destruction of the \n\n> Actually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \nThe iterators (upstream at C++) carry all references, which are need by them. For iterators in lexicographical rings, this is very much like - for instance -  std::vector-iterators, which do not have knowledge of the vector they belong to. (The degree-lexicographical have internal references to the polynomial structure.)\nBut using \"isZero()\" avoid the problem anyway.\n\n> Another problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\nGood question, the iterators, which obey the ring ordering, like the iterators of polynomials, are wrapped by a shread-pointer construction, which is not the case for BooleSet iterators. Does that make any difference? \nWhat actually happens, if you use code like the one from new_BPI_from_PBPolyIter for\nnew_BSI_from_PBSetIter (including the function arguments)?\n\nI still have few experience in pyx code, but any kind of differences between the iterator types should not make any problems, because in both cases constructors, copy-constructors and destructors care for the memory management on c++-side. \n\nBest regards,\n  Alexander",
+    "body": "> The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n> \n> \n> ```\n> if self.iter.equal(self.obj.variableEnd()):\n>     raise StopIteration\n> ```\n\nIf that's the only reason for the object, we could add some kind of isEnd() and skip the reference. If fact, the PolyBoRi-Iterators have the member function isZero(), which is equivalent to this. \n\n> The objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\n\nDo I understand you right: the patch is not correct, because the destructor of the PolyBoRi monomial must not be called at that place? But, since there is a memleak, the destructor not called correctly. So why, does the destruction of the \n\n> Actually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \n\nThe iterators (upstream at C++) carry all references, which are need by them. For iterators in lexicographical rings, this is very much like - for instance -  std::vector-iterators, which do not have knowledge of the vector they belong to. (The degree-lexicographical have internal references to the polynomial structure.)\nBut using \"isZero()\" avoid the problem anyway.\n\n> Another problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\n\nGood question, the iterators, which obey the ring ordering, like the iterators of polynomials, are wrapped by a shread-pointer construction, which is not the case for BooleSet iterators. Does that make any difference? \nWhat actually happens, if you use code like the one from new_BPI_from_PBPolyIter for\nnew_BSI_from_PBSetIter (including the function arguments)?\n\nI still have few experience in pyx code, but any kind of differences between the iterator types should not make any problems, because in both cases constructors, copy-constructors and destructors care for the memory management on c++-side. \n\nBest regards,\n  Alexander",
     "created_at": "2008-05-24T22:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -139,20 +137,25 @@ archive/issue_comments_022657.json:
 
 > The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):
 > 
-> {{{
+> 
+> ```
 > if self.iter.equal(self.obj.variableEnd()):
 >     raise StopIteration
-> }}}
+> ```
+
 If that's the only reason for the object, we could add some kind of isEnd() and skip the reference. If fact, the PolyBoRi-Iterators have the member function isZero(), which is equivalent to this. 
 
 > The objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.
+
 Do I understand you right: the patch is not correct, because the destructor of the PolyBoRi monomial must not be called at that place? But, since there is a memleak, the destructor not called correctly. So why, does the destruction of the 
 
 > Actually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. 
+
 The iterators (upstream at C++) carry all references, which are need by them. For iterators in lexicographical rings, this is very much like - for instance -  std::vector-iterators, which do not have knowledge of the vector they belong to. (The degree-lexicographical have internal references to the polynomial structure.)
 But using "isZero()" avoid the problem anyway.
 
 > Another problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?
+
 Good question, the iterators, which obey the ring ordering, like the iterators of polynomials, are wrapped by a shread-pointer construction, which is not the case for BooleSet iterators. Does that make any difference? 
 What actually happens, if you use code like the one from new_BPI_from_PBPolyIter for
 new_BSI_from_PBSetIter (including the function arguments)?
@@ -169,7 +172,7 @@ Best regards,
 archive/issue_comments_022658.json:
 ```json
 {
-    "body": "Sorry, to late:\n\n\n>  So why, does the destruction of the \n-> So why, is the destruction of the not called by the object itself?\n\n\n>  shread-pointer\n-> shared pointer \n \nBest regards,\n  Alexander",
+    "body": "Sorry, to late:\n\n\n>  So why, does the destruction of the \n\n-> So why, is the destruction of the not called by the object itself?\n\n\n>  shread-pointer\n\n-> shared pointer \n \nBest regards,\n  Alexander",
     "created_at": "2008-05-24T22:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -182,10 +185,12 @@ Sorry, to late:
 
 
 >  So why, does the destruction of the 
+
 -> So why, is the destruction of the not called by the object itself?
 
 
 >  shread-pointer
+
 -> shared pointer 
  
 Best regards,
@@ -336,7 +341,7 @@ So we remove the `_end` members and add a Python level reference to the original
 archive/issue_comments_022666.json:
 ```json
 {
-    "body": "Replying to [comment:9 PolyBoRi]:\n> Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)\n\nWhich iterators have an `isZero()` function? I tried using that for `BooleanMonomialIterator` and `BooleanMonomialVariableIterator` while I was reviewing Martin's patch. (The `PolyBoRi` equivalent of) `BooleanMonomialIterator` had an isEmpty() method, because of it's base class CCuddNavigator. However, the variable iterator didn't. I didn't test to see if `BooleanMonomialIterator` worked as intended with the `isEmpty()` method.",
+    "body": "Replying to [comment:9 PolyBoRi]:\n> Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)\n\n\nWhich iterators have an `isZero()` function? I tried using that for `BooleanMonomialIterator` and `BooleanMonomialVariableIterator` while I was reviewing Martin's patch. (The `PolyBoRi` equivalent of) `BooleanMonomialIterator` had an isEmpty() method, because of it's base class CCuddNavigator. However, the variable iterator didn't. I didn't test to see if `BooleanMonomialIterator` worked as intended with the `isEmpty()` method.",
     "created_at": "2008-05-25T20:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3283",
     "type": "issue_comment",
@@ -347,6 +352,7 @@ archive/issue_comments_022666.json:
 
 Replying to [comment:9 PolyBoRi]:
 > Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)
+
 
 Which iterators have an `isZero()` function? I tried using that for `BooleanMonomialIterator` and `BooleanMonomialVariableIterator` while I was reviewing Martin's patch. (The `PolyBoRi` equivalent of) `BooleanMonomialIterator` had an isEmpty() method, because of it's base class CCuddNavigator. However, the variable iterator didn't. I didn't test to see if `BooleanMonomialIterator` worked as intended with the `isEmpty()` method.
 

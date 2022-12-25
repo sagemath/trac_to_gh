@@ -3,7 +3,7 @@
 archive/issues_004130.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nIt looks like OS X 10.4.11's version of `which` doesn't behave very well...\n\n\n```\nhamptonio: nomad66-214:~ mh$ echo $PORTS_PATH\n[1:03pm] hamptonio: no port in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ echo $FINK_PATH\n[1:03pm] hamptonio: no fink in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ if [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ]; then echo \"*\"; fi\n[1:03pm] hamptonio: *\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4130\n\n",
+    "body": "Assignee: mabshoff\n\nIt looks like OS X 10.4.11's version of `which` doesn't behave very well...\n\n```\nhamptonio: nomad66-214:~ mh$ echo $PORTS_PATH\n[1:03pm] hamptonio: no port in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ echo $FINK_PATH\n[1:03pm] hamptonio: no fink in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ if [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ]; then echo \"*\"; fi\n[1:03pm] hamptonio: *\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4130\n\n",
     "created_at": "2008-09-15T20:11:56Z",
     "labels": [
         "component: build",
@@ -21,7 +21,6 @@ Assignee: mabshoff
 
 It looks like OS X 10.4.11's version of `which` doesn't behave very well...
 
-
 ```
 hamptonio: nomad66-214:~ mh$ echo $PORTS_PATH
 [1:03pm] hamptonio: no port in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current
@@ -30,7 +29,6 @@ hamptonio: nomad66-214:~ mh$ echo $PORTS_PATH
 [1:03pm] hamptonio: nomad66-214:~ mh$ if [ "$PORTS_PATH" -o "$FINK_PATH" ]; then echo "*"; fi
 [1:03pm] hamptonio: *
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4130
 
@@ -174,7 +172,7 @@ I assume that the prereq script doesn't get called every time make is run?  Mayb
 archive/issue_comments_029893.json:
 ```json
 {
-    "body": "Replying to [comment:4 dphilp]:\n> hmmm... this is still not foolproof.  If you type 'make', the first time, it dies with the proper message.  But despite not                 setting any environment vairable, the second time you run 'make', there is no error, no warning, nothing.\n> \n> \n> I assume that the prereq script doesn't get called every time make is run?  Maybe the fink/ports detection should go at the start.\n\nThat issue is pretty much covered by #3140. This ticket was about fixing the OSX 10.4 issues, so closing it is valid. But thanks for being persistent :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 dphilp]:\n> hmmm... this is still not foolproof.  If you type 'make', the first time, it dies with the proper message.  But despite not                 setting any environment vairable, the second time you run 'make', there is no error, no warning, nothing.\n> \n> \n> I assume that the prereq script doesn't get called every time make is run?  Maybe the fink/ports detection should go at the start.\n\n\nThat issue is pretty much covered by #3140. This ticket was about fixing the OSX 10.4 issues, so closing it is valid. But thanks for being persistent :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-17T11:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
@@ -188,6 +186,7 @@ Replying to [comment:4 dphilp]:
 > 
 > 
 > I assume that the prereq script doesn't get called every time make is run?  Maybe the fink/ports detection should go at the start.
+
 
 That issue is pretty much covered by #3140. This ticket was about fixing the OSX 10.4 issues, so closing it is valid. But thanks for being persistent :)
 

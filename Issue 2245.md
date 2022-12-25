@@ -3,7 +3,7 @@
 archive/issues_002245.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
+    "body": "Assignee: @williamstein\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
     "created_at": "2008-02-21T07:31:34Z",
     "labels": [
         "component: number theory"
@@ -40,7 +40,6 @@ Overall weighted coverage score:  39.4%
 Total number of functions:  141
 ```
 
-
 The goal of this ticket is to change that to 100%.
 
 This is in preparation for substantial work to move
@@ -58,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2245
 archive/issue_comments_014850.json:
 ```json
 {
-    "body": "After:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 100% (38 of 38)\nabvar_ambient_jacobian.py: 100% (8 of 8)\nabvar_modsym_factor.py: 100% (7 of 7)\nabvar_newform.py: 100% (3 of 3)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 100% (6 of 6)\nfinite_subgroup.py: 100% (33 of 33)\nhecke_operator.py: 100% (6 of 6)\nhomology.py: 100% (30 of 30)\nhomspace.py: 100% (2 of 2)\nlseries.py: 100% (11 of 11)\nmorphism.py: 100% (1 of 1)\ntorsion_subgroup.py: 100% (8 of 8)\n\nOverall weighted coverage score:  100.0%\nTotal number of functions:  156\n```\n",
+    "body": "After:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 100% (38 of 38)\nabvar_ambient_jacobian.py: 100% (8 of 8)\nabvar_modsym_factor.py: 100% (7 of 7)\nabvar_newform.py: 100% (3 of 3)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 100% (6 of 6)\nfinite_subgroup.py: 100% (33 of 33)\nhecke_operator.py: 100% (6 of 6)\nhomology.py: 100% (30 of 30)\nhomspace.py: 100% (2 of 2)\nlseries.py: 100% (11 of 11)\nmorphism.py: 100% (1 of 1)\ntorsion_subgroup.py: 100% (8 of 8)\n\nOverall weighted coverage score:  100.0%\nTotal number of functions:  156\n```",
     "created_at": "2008-02-25T05:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2245",
     "type": "issue_comment",
@@ -88,7 +87,6 @@ torsion_subgroup.py: 100% (8 of 8)
 Overall weighted coverage score:  100.0%
 Total number of functions:  156
 ```
-
 
 
 

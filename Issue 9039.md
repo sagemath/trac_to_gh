@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9039
 archive/issue_comments_083537.json:
 ```json
 {
-    "body": "I haven't yet fixed the documentation results, since the returned lists are different, mainly to highlight the differences... Also I'm not entirely sure I have the code exactly right, maybe you can verify this. I also think that the references need updating/completing.\n\nInput is welcome! Here are the doc differences:\n\n\n```\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 876:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3, 5]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 879:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3, 5]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 882:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 888:\n    sage: E.sha().bound_kato()                 # long time (about 1 second)\nExpected:\n    [2, 3, 5]\nGot:\n    [2, 5, 23]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 896:\n    sage: E.sha().bound_kato()                 # long time (< 10 seconds)\nExpected:\n    [2, 3, 7]\nGot:\n    [2, 7, 29]\n**********************************************************************\n1 items had failures:\n   5 of  15 in __main__.example_8\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /Users/rlmill/.sage//tmp/.doctest_sha_tate.py\n\t [154.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\nTotal time for all tests: 154.4 seconds\n```\n",
+    "body": "I haven't yet fixed the documentation results, since the returned lists are different, mainly to highlight the differences... Also I'm not entirely sure I have the code exactly right, maybe you can verify this. I also think that the references need updating/completing.\n\nInput is welcome! Here are the doc differences:\n\n```\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 876:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3, 5]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 879:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3, 5]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 882:\n    sage: E.sha().bound_kato()\nExpected:\n    [2, 3]\nGot:\n    [2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 888:\n    sage: E.sha().bound_kato()                 # long time (about 1 second)\nExpected:\n    [2, 3, 5]\nGot:\n    [2, 5, 23]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.1/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 896:\n    sage: E.sha().bound_kato()                 # long time (< 10 seconds)\nExpected:\n    [2, 3, 7]\nGot:\n    [2, 7, 29]\n**********************************************************************\n1 items had failures:\n   5 of  15 in __main__.example_8\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /Users/rlmill/.sage//tmp/.doctest_sha_tate.py\n\t [154.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\"\nTotal time for all tests: 154.4 seconds\n```",
     "created_at": "2010-05-25T01:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_083537.json:
 I haven't yet fixed the documentation results, since the returned lists are different, mainly to highlight the differences... Also I'm not entirely sure I have the code exactly right, maybe you can verify this. I also think that the references need updating/completing.
 
 Input is welcome! Here are the doc differences:
-
 
 ```
 sage -t -long "devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py"
@@ -106,7 +105,6 @@ Total time for all tests: 154.4 seconds
 
 
 
-
 ---
 
 archive/issue_comments_083538.json:
@@ -136,7 +134,7 @@ Chris.
 archive/issue_comments_083539.json:
 ```json
 {
-    "body": "Chris,\n\nReplying to [comment:2 wuthrich]:\n> Do you want to wait ? Or do you want to fix the issue with the additive first and open another ticket when/if the corrections are accepted ?\n\nI am not in favor of waiting. Let's get the patch up to speed with what is currently known and verified, and update the function once we're ready to.\n\nIn order to get an acceptable patch for now, are you saying that the only change should be to add in the additive primes? If so I can modify my patch to do only that.",
+    "body": "Chris,\n\nReplying to [comment:2 wuthrich]:\n> Do you want to wait ? Or do you want to fix the issue with the additive first and open another ticket when/if the corrections are accepted ?\n\n\nI am not in favor of waiting. Let's get the patch up to speed with what is currently known and verified, and update the function once we're ready to.\n\nIn order to get an acceptable patch for now, are you saying that the only change should be to add in the additive primes? If so I can modify my patch to do only that.",
     "created_at": "2010-05-25T16:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
@@ -149,6 +147,7 @@ Chris,
 
 Replying to [comment:2 wuthrich]:
 > Do you want to wait ? Or do you want to fix the issue with the additive first and open another ticket when/if the corrections are accepted ?
+
 
 I am not in favor of waiting. Let's get the patch up to speed with what is currently known and verified, and update the function once we're ready to.
 

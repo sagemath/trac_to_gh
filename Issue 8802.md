@@ -3,7 +3,7 @@
 archive/issues_008802.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @robertwb @loefflerd @JohnCremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\n\n\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\n\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @loefflerd @JohnCremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\n\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
     "created_at": "2010-04-28T14:41:11Z",
     "labels": [
         "component: algebra",
@@ -28,7 +28,6 @@ sage: QQbar(2).sqrt()
 sage: QQbar(2).sqrt(all=True)
 ```
 
-
 In addition, there should be a parameter "extend" to handle this:
 
 ```
@@ -37,7 +36,6 @@ sage: AA(2).sqrt()
 sage: AA(-2).sqrt()
 1.414213562373095?*I
 ```
-
 In the second example, we should not return a root in QQbar unless extend=True.
 
 Issue created by migration from https://trac.sagemath.org/ticket/8802
@@ -89,7 +87,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080619.json:
 ```json
 {
-    "body": "Patch based on 4.4.2 and works fine on 4.4.3. The two problems identified by cremona have been resolved:\n\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n[1.414213562373095?, -1.414213562373095?]\n```\n\n\nThe following command \n\n\n```\nsage: AA(-2).sqrt(extend=False)\n```\n \n\nreturns an error, like it should.",
+    "body": "Patch based on 4.4.2 and works fine on 4.4.3. The two problems identified by cremona have been resolved:\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n[1.414213562373095?, -1.414213562373095?]\n```\n\nThe following command \n\n```\nsage: AA(-2).sqrt(extend=False)\n``` \n\nreturns an error, like it should.",
     "created_at": "2010-06-07T15:35:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
@@ -100,7 +98,6 @@ archive/issue_comments_080619.json:
 
 Patch based on 4.4.2 and works fine on 4.4.3. The two problems identified by cremona have been resolved:
 
-
 ```
 sage: QQbar(2).sqrt()
 1.414213562373095?
@@ -108,14 +105,11 @@ sage: QQbar(2).sqrt(all=True)
 [1.414213562373095?, -1.414213562373095?]
 ```
 
-
 The following command 
-
 
 ```
 sage: AA(-2).sqrt(extend=False)
-```
- 
+``` 
 
 returns an error, like it should.
 

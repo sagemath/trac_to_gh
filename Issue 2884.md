@@ -49,7 +49,7 @@ Attachment [sage-2884.patch](tarball://root/attachments/some-uuid/ticket2884/sag
 archive/issue_comments_019797.json:
 ```json
 {
-    "body": "The following is now broken:\n\n\n```\nplot(sin,0,1).show()\n@interact\ndef foo(a=\"1\"):\n    a\n```\n",
+    "body": "The following is now broken:\n\n```\nplot(sin,0,1).show()\n@interact\ndef foo(a=\"1\"):\n    a\n```",
     "created_at": "2008-05-12T05:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2884",
     "type": "issue_comment",
@@ -60,7 +60,6 @@ archive/issue_comments_019797.json:
 
 The following is now broken:
 
-
 ```
 plot(sin,0,1).show()
 @interact
@@ -70,13 +69,12 @@ def foo(a="1"):
 
 
 
-
 ---
 
 archive/issue_comments_019798.json:
 ```json
 {
-    "body": "Hi,\n\nYour only reason for giving a negative review was a claim that\n\n```\nplot(sin,0,1).show()\n@interact\ndef foo(a=\"1\"):\n    a\n```\n\nis now \"broken\".  However, this never did what you thought it\ndid.  The behavior in fact hasn't changed at all from how it was\nbefore, except to remove the bug where old graphics from\nthe previous version of the cell remained. \n\n`@`interact *by design* is only supposed to work when it is\nthe only thing in a cell. \n\nHaving multiple interacts in a cell, having additional graphics in\na cell, having nested interacts -- none of that should work at present,\nsince none of it has been implemented. \nThey're all things that would possibly be very nice to implement,\nbut they were not part of the design goals for the first version\nof interact.",
+    "body": "Hi,\n\nYour only reason for giving a negative review was a claim that\n\n```\nplot(sin,0,1).show()\n@interact\ndef foo(a=\"1\"):\n    a\n```\nis now \"broken\".  However, this never did what you thought it\ndid.  The behavior in fact hasn't changed at all from how it was\nbefore, except to remove the bug where old graphics from\nthe previous version of the cell remained. \n\n`@`interact *by design* is only supposed to work when it is\nthe only thing in a cell. \n\nHaving multiple interacts in a cell, having additional graphics in\na cell, having nested interacts -- none of that should work at present,\nsince none of it has been implemented. \nThey're all things that would possibly be very nice to implement,\nbut they were not part of the design goals for the first version\nof interact.",
     "created_at": "2008-05-15T05:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2884",
     "type": "issue_comment",
@@ -95,7 +93,6 @@ plot(sin,0,1).show()
 def foo(a="1"):
     a
 ```
-
 is now "broken".  However, this never did what you thought it
 did.  The behavior in fact hasn't changed at all from how it was
 before, except to remove the bug where old graphics from

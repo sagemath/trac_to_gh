@@ -3,7 +3,7 @@
 archive/issues_007389.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThe default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.\n\nSmall nonsensical example to trigger it in sage 4.2:\n\n\n```\nsage: S = Spec(ZZ)\nsage: f = S.identity_morphism()\nsage: from sage.schemes.generic.glue import GluedScheme\nsage: T = GluedScheme(f,f)\nsage: S.hom([1],T)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\n\nThe attached patch should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7389\n\n",
+    "body": "Assignee: @aghitza\n\nThe default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.\n\nSmall nonsensical example to trigger it in sage 4.2:\n\n```\nsage: S = Spec(ZZ)\nsage: f = S.identity_morphism()\nsage: from sage.schemes.generic.glue import GluedScheme\nsage: T = GluedScheme(f,f)\nsage: S.hom([1],T)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\nThe attached patch should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7389\n\n",
     "created_at": "2009-11-04T19:45:30Z",
     "labels": [
         "component: algebraic geometry",
@@ -23,7 +23,6 @@ The default `Scheme._point_morphism_class()` has a different signature than the 
 
 Small nonsensical example to trigger it in sage 4.2:
 
-
 ```
 sage: S = Spec(ZZ)
 sage: f = S.identity_morphism()
@@ -32,7 +31,6 @@ sage: T = GluedScheme(f,f)
 sage: S.hom([1],T)
 TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)
 ```
-
 
 The attached patch should fix it.
 

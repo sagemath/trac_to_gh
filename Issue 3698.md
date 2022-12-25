@@ -3,7 +3,7 @@
 archive/issues_003698.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nPearu Peterson (sympycore guy) wrote some really fast pure python code for computing multinomial coefficients, e.g.,\n\n```\n14:20 < wstein> sage: R.<x,y,z> = QQ[]\n14:20 < wstein> sage: timeit('(x+y+z)^50')\n14:20 < wstein> 25 loops, best of 3: 20.8 ms per loop\n14:20 < wstein> sage: timeit('w = multinomial_coefficients(3r,50r)')\n14:20 < wstein> 25 loops, best of 3: 10.3 ms per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3698\n\n",
+    "body": "Assignee: somebody\n\nPearu Peterson (sympycore guy) wrote some really fast pure python code for computing multinomial coefficients, e.g.,\n\n```\n14:20 < wstein> sage: R.<x,y,z> = QQ[]\n14:20 < wstein> sage: timeit('(x+y+z)^50')\n14:20 < wstein> 25 loops, best of 3: 20.8 ms per loop\n14:20 < wstein> sage: timeit('w = multinomial_coefficients(3r,50r)')\n14:20 < wstein> 25 loops, best of 3: 10.3 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3698\n\n",
     "created_at": "2008-07-21T21:28:22Z",
     "labels": [
         "component: basic arithmetic"
@@ -26,7 +26,6 @@ Pearu Peterson (sympycore guy) wrote some really fast pure python code for compu
 14:20 < wstein> sage: timeit('w = multinomial_coefficients(3r,50r)')
 14:20 < wstein> 25 loops, best of 3: 10.3 ms per loop
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3698
@@ -94,7 +93,7 @@ Attachment [sage-3698-part2.patch](tarball://root/attachments/some-uuid/ticket36
 archive/issue_comments_026186.json:
 ```json
 {
-    "body": "\n```\n14:56 < wstein> pearu -- ar eyou giving 3698 a positive review?\n14:57 < pearu> wstein, yes, it looks good, I presume you have tested that the code works:)\n14:57 < wstein> yes\n```\n",
+    "body": "```\n14:56 < wstein> pearu -- ar eyou giving 3698 a positive review?\n14:57 < pearu> wstein, yes, it looks good, I presume you have tested that the code works:)\n14:57 < wstein> yes\n```",
     "created_at": "2008-07-21T22:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3698",
     "type": "issue_comment",
@@ -103,13 +102,11 @@ archive/issue_comments_026186.json:
 }
 ```
 
-
 ```
 14:56 < wstein> pearu -- ar eyou giving 3698 a positive review?
 14:57 < pearu> wstein, yes, it looks good, I presume you have tested that the code works:)
 14:57 < wstein> yes
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005430.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nThe coercion seems to be fine, but the Coleman integral fails:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)            #this is ok\nsage: HK.coleman_integral(b,P,Q)              #this is not\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5430\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nThe coercion seems to be fine, but the Coleman integral fails:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)            #this is ok\nsage: HK.coleman_integral(b,P,Q)              #this is not\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5430\n\n",
     "created_at": "2009-03-03T18:10:24Z",
     "labels": [
         "component: algebraic geometry",
@@ -39,7 +39,6 @@ sage: b = x*w*w._coeff.parent()(f)            #this is ok
 sage: HK.coleman_integral(b,P,Q)              #this is not
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5430
 
 
@@ -51,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5430
 archive/issue_comments_041931.json:
 ```json
 {
-    "body": "The end of the traceback is \n\n\n```\n  File \"parent.pyx\", line 276, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3653)\n  File \"coerce_maps.pyx\", line 76, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2793)\n  File \"coerce_maps.pyx\", line 71, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2700)\n  File \"rational.pyx\", line 189, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:4233)\n  File \"rational.pyx\", line 312, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:5261)\n  File \"padic_generic_element.pyx\", line 748, in sage.rings.padics.padic_generic_element.pAdicGenericElement.rational_reconstruction (sage/rings/padics/padic_generic_element.c:7584)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/arith.py\", line 1516, in rational_reconstruction\n    return ZZ(a).rational_reconstruction(m)\n  File \"integer.pyx\", line 1981, in sage.rings.integer.Integer.rational_reconstruction (sage/rings/integer.c:13544)\n  File \"rational.pyx\", line 2345, in sage.rings.rational.pyrex_rational_reconstruction (sage/rings/rational.c:15562)\n  File \"gmp.pxi\", line 144, in sage.rings.rational.mpq_rational_reconstruction (sage/rings/rational.c:3032)\nValueError: Rational reconstruction of 253015590 (mod 282475249) does not exist.\n```\n\n\nThe question is, should this be an error, or just work? \n\n\n```\nsage: K = Qp(5, 10)\nsage: a = K(1/250037); a\n3 + 4*5 + 3*5^2 + 3*5^3 + 5^4 + 5^5 + 5^6 + 5^7 + 4*5^8 + 4*5^9 + O(5^10)\nsage: ZZ(a)\n9472973\nsage: QQ(a)\nTraceback (most recent call last):\n...\nValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.\n```\n",
+    "body": "The end of the traceback is \n\n```\n  File \"parent.pyx\", line 276, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3653)\n  File \"coerce_maps.pyx\", line 76, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2793)\n  File \"coerce_maps.pyx\", line 71, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2700)\n  File \"rational.pyx\", line 189, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:4233)\n  File \"rational.pyx\", line 312, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:5261)\n  File \"padic_generic_element.pyx\", line 748, in sage.rings.padics.padic_generic_element.pAdicGenericElement.rational_reconstruction (sage/rings/padics/padic_generic_element.c:7584)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/arith.py\", line 1516, in rational_reconstruction\n    return ZZ(a).rational_reconstruction(m)\n  File \"integer.pyx\", line 1981, in sage.rings.integer.Integer.rational_reconstruction (sage/rings/integer.c:13544)\n  File \"rational.pyx\", line 2345, in sage.rings.rational.pyrex_rational_reconstruction (sage/rings/rational.c:15562)\n  File \"gmp.pxi\", line 144, in sage.rings.rational.mpq_rational_reconstruction (sage/rings/rational.c:3032)\nValueError: Rational reconstruction of 253015590 (mod 282475249) does not exist.\n```\n\nThe question is, should this be an error, or just work? \n\n```\nsage: K = Qp(5, 10)\nsage: a = K(1/250037); a\n3 + 4*5 + 3*5^2 + 3*5^3 + 5^4 + 5^5 + 5^6 + 5^7 + 4*5^8 + 4*5^9 + O(5^10)\nsage: ZZ(a)\n9472973\nsage: QQ(a)\nTraceback (most recent call last):\n...\nValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.\n```",
     "created_at": "2009-03-03T22:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -61,7 +60,6 @@ archive/issue_comments_041931.json:
 ```
 
 The end of the traceback is 
-
 
 ```
   File "parent.pyx", line 276, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:3653)
@@ -78,9 +76,7 @@ The end of the traceback is
 ValueError: Rational reconstruction of 253015590 (mod 282475249) does not exist.
 ```
 
-
 The question is, should this be an error, or just work? 
-
 
 ```
 sage: K = Qp(5, 10)
@@ -93,7 +89,6 @@ Traceback (most recent call last):
 ...
 ValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.
 ```
-
 
 
 
@@ -141,7 +136,7 @@ archive/issue_events_012674.json:
 archive/issue_comments_041933.json:
 ```json
 {
-    "body": "> The question is, should this be an error, or just work? \n> \n> {{{\n> sage: K = Qp(5, 10)\n> sage: a = K(1/250037); a\n> 3 + 4*5 + 3*5^2 + 3*5^3 + 5^4 + 5^5 + 5^6 + 5^7 + 4*5^8 + 4*5^9 + O(5^10)\n> sage: ZZ(a)\n> 9472973\n> sage: QQ(a)\n> Traceback (most recent call last):\n> ...\n> ValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.\n> }}}\n\nIt seems like a valid error: 250037 is too large compared to 5^10.",
+    "body": "> The question is, should this be an error, or just work? \n> \n> \n> ```\n> sage: K = Qp(5, 10)\n> sage: a = K(1/250037); a\n> 3 + 4*5 + 3*5^2 + 3*5^3 + 5^4 + 5^5 + 5^6 + 5^7 + 4*5^8 + 4*5^9 + O(5^10)\n> sage: ZZ(a)\n> 9472973\n> sage: QQ(a)\n> Traceback (most recent call last):\n> ...\n> ValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.\n> ```\n\n\nIt seems like a valid error: 250037 is too large compared to 5^10.",
     "created_at": "2009-03-17T05:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -152,7 +147,8 @@ archive/issue_comments_041933.json:
 
 > The question is, should this be an error, or just work? 
 > 
-> {{{
+> 
+> ```
 > sage: K = Qp(5, 10)
 > sage: a = K(1/250037); a
 > 3 + 4*5 + 3*5^2 + 3*5^3 + 5^4 + 5^5 + 5^6 + 5^7 + 4*5^8 + 4*5^9 + O(5^10)
@@ -162,7 +158,8 @@ archive/issue_comments_041933.json:
 > Traceback (most recent call last):
 > ...
 > ValueError: Rational reconstruction of 9472973 (mod 9765625) does not exist.
-> }}}
+> ```
+
 
 It seems like a valid error: 250037 is too large compared to 5^10.
 
@@ -229,7 +226,7 @@ Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.pat
 archive/issue_comments_041937.json:
 ```json
 {
-    "body": "Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by @kedlaya created at 2009-05-21 06:24:04\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```\n",
+    "body": "Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by @kedlaya created at 2009-05-21 06:24:04\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```",
     "created_at": "2009-05-21T06:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
@@ -259,7 +256,6 @@ sage: b = x*w*w._coeff.parent()(f)
 sage: HK.coleman_integral(b,P,Q)
 7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)
 ```
-
 
 
 

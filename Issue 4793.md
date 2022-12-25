@@ -167,7 +167,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_036262.json:
 ```json
 {
-    "body": "Also has issues on OS X \n\n\n```\ndyld: lazy symbol binding failed: Symbol not found: ___gmpn_lshift\n  Referenced from: /Users/robertwb/sage/sage-4.0/local/lib//libpari-gmp.dylib\n  Expected in: flat namespace\n```\n\n\nwhen running tests in sage/lfunctions/lcalc.py",
+    "body": "Also has issues on OS X \n\n```\ndyld: lazy symbol binding failed: Symbol not found: ___gmpn_lshift\n  Referenced from: /Users/robertwb/sage/sage-4.0/local/lib//libpari-gmp.dylib\n  Expected in: flat namespace\n```\n\nwhen running tests in sage/lfunctions/lcalc.py",
     "created_at": "2010-03-24T18:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4793",
     "type": "issue_comment",
@@ -178,13 +178,11 @@ archive/issue_comments_036262.json:
 
 Also has issues on OS X 
 
-
 ```
 dyld: lazy symbol binding failed: Symbol not found: ___gmpn_lshift
   Referenced from: /Users/robertwb/sage/sage-4.0/local/lib//libpari-gmp.dylib
   Expected in: flat namespace
 ```
-
 
 when running tests in sage/lfunctions/lcalc.py
 
@@ -304,7 +302,7 @@ Dave
 archive/issue_comments_036267.json:
 ```json
 {
-    "body": "Replying to [comment:12 drkirkby]:\n> Hi,\n> there are a few problems with spkg-install, which don't reflect how Sage is currently being built. \n> \n>  * You said on #5396 \"One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.\" Did you notice that your Makefile is being overwritten, by the following line:\n>   {{{\n>   cp ../../patches/Makefile.sage Makefile\n>   }}}\n>   Are those changes appropriate? But looking at your own Makefile, I see still see options to  suppress warnings messages. \n>     * -Wa,-W is designed to suppress warnings from the assembler, which fails if the Sun assembler is used. (That's why I had to re-write part of your makefile before). \n>     * -Wno-deprecate is designed to suppress warnings about depreciated headers. \n\n\nPlease see what the package does. I have not made any changes to original Makefile, only to Makefile.sage\n\n> \n> A few more things. \n> \n\nI took the old spkg-install and added what I needed. I did not change what ever happened else where, so the person who changed those should have changed this prereq in lcalc spkg. This includes everything below. I am changing status to needs review.\n\n>  * Don't bother checking for SAGE_FORTRAN_LIB, as it is tested in the 'prereq' script. \n>  * Don't bother checking for SAGE_FORTRAN, as again prereq takes care of that. \n>  * Don't bother checking if the GNU and Sun compilers are mixed - that is taken care of elsewhere. \n>  * The line:\n>   {{{\n>    echo \"Building a 32-bit version of lcalc\"\n>   }}}\n> \n>    is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build. \n>  * The line:\n>   {{{\n>   if [ \"x$SAGE64\" = \"xyes\" ] || [ \"x$SAGE64\" = \"x1\" ]  ; then\n>   }}}\n> can be simplified to \n>   {{{\n>   if [ \"x$SAGE64\" = xyes ] ; then\n>   }}}\n> \n> as SAGE64 can only be unset, set to 'yes' or set to 'no' - any other combination is not permitted. \n>  \n> Are there any self-tests of this package? If so, it should have a spkg-check too, but of course, if there are no self-tests, then that is inappropriate. \n> \n> Dave \n> \n>",
+    "body": "Replying to [comment:12 drkirkby]:\n> Hi,\n> there are a few problems with spkg-install, which don't reflect how Sage is currently being built. \n> \n> * You said on #5396 \"One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.\" Did you notice that your Makefile is being overwritten, by the following line:\n>   {{{\n>   cp ../../patches/Makefile.sage Makefile\n>   }}}\n>   Are those changes appropriate? But looking at your own Makefile, I see still see options to  suppress warnings messages. \n>    * -Wa,-W is designed to suppress warnings from the assembler, which fails if the Sun assembler is used. (That's why I had to re-write part of your makefile before). \n>    * -Wno-deprecate is designed to suppress warnings about depreciated headers. \n\n\n\nPlease see what the package does. I have not made any changes to original Makefile, only to Makefile.sage\n\n> \n> A few more things. \n> \n\n\nI took the old spkg-install and added what I needed. I did not change what ever happened else where, so the person who changed those should have changed this prereq in lcalc spkg. This includes everything below. I am changing status to needs review.\n\n>  * Don't bother checking for SAGE_FORTRAN_LIB, as it is tested in the 'prereq' script. \n>  * Don't bother checking for SAGE_FORTRAN, as again prereq takes care of that. \n>  * Don't bother checking if the GNU and Sun compilers are mixed - that is taken care of elsewhere. \n>  * The line:\n>    {{{\n>    echo \"Building a 32-bit version of lcalc\"\n>    }}}\n \n> \n>    is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build. \n\n>  * The line:\n>   {{{\n>   if [ \"x$SAGE64\" = \"xyes\" ] || [ \"x$SAGE64\" = \"x1\" ]  ; then\n>   }}}\n\n> can be simplified to \n>   {{{\n>   if [ \"x$SAGE64\" = xyes ] ; then\n>   }}}\n\n> \n> as SAGE64 can only be unset, set to 'yes' or set to 'no' - any other combination is not permitted. \n>  \n> Are there any self-tests of this package? If so, it should have a spkg-check too, but of course, if there are no self-tests, then that is inappropriate. \n> \n> Dave \n> \n\n>",
     "created_at": "2010-03-26T15:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4793",
     "type": "issue_comment",
@@ -317,13 +315,14 @@ Replying to [comment:12 drkirkby]:
 > Hi,
 > there are a few problems with spkg-install, which don't reflect how Sage is currently being built. 
 > 
->  * You said on #5396 "One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables." Did you notice that your Makefile is being overwritten, by the following line:
+> * You said on #5396 "One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables." Did you notice that your Makefile is being overwritten, by the following line:
 >   {{{
 >   cp ../../patches/Makefile.sage Makefile
 >   }}}
 >   Are those changes appropriate? But looking at your own Makefile, I see still see options to  suppress warnings messages. 
->     * -Wa,-W is designed to suppress warnings from the assembler, which fails if the Sun assembler is used. (That's why I had to re-write part of your makefile before). 
->     * -Wno-deprecate is designed to suppress warnings about depreciated headers. 
+>    * -Wa,-W is designed to suppress warnings from the assembler, which fails if the Sun assembler is used. (That's why I had to re-write part of your makefile before). 
+>    * -Wno-deprecate is designed to suppress warnings about depreciated headers. 
+
 
 
 Please see what the package does. I have not made any changes to original Makefile, only to Makefile.sage
@@ -332,25 +331,30 @@ Please see what the package does. I have not made any changes to original Makefi
 > A few more things. 
 > 
 
+
 I took the old spkg-install and added what I needed. I did not change what ever happened else where, so the person who changed those should have changed this prereq in lcalc spkg. This includes everything below. I am changing status to needs review.
 
 >  * Don't bother checking for SAGE_FORTRAN_LIB, as it is tested in the 'prereq' script. 
 >  * Don't bother checking for SAGE_FORTRAN, as again prereq takes care of that. 
 >  * Don't bother checking if the GNU and Sun compilers are mixed - that is taken care of elsewhere. 
 >  * The line:
->   {{{
+>    {{{
 >    echo "Building a 32-bit version of lcalc"
->   }}}
+>    }}}
+ 
 > 
 >    is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build. 
+
 >  * The line:
 >   {{{
 >   if [ "x$SAGE64" = "xyes" ] || [ "x$SAGE64" = "x1" ]  ; then
 >   }}}
+
 > can be simplified to 
 >   {{{
 >   if [ "x$SAGE64" = xyes ] ; then
 >   }}}
+
 > 
 > as SAGE64 can only be unset, set to 'yes' or set to 'no' - any other combination is not permitted. 
 >  
@@ -358,6 +362,7 @@ I took the old spkg-install and added what I needed. I did not change what ever 
 > 
 > Dave 
 > 
+
 >
 
 
@@ -385,7 +390,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_036269.json:
 ```json
 {
-    "body": "Hi David,\n\nThe command \"hg annotate\" is helpful in clarifying the above issues.   Let me give you a tutorial about how that command works. Doing \n\n```\nhg annotate spkg-install |grep FORTRAN\n```\n\nyields that changeset 22 added all the FORTRAN stuff you're complaining about:\n\n```\nchangeset:   22:c7e7606b574d\nuser:        David Kirkby <david.kirkby@onetel.net>\ndate:        Tue Sep 15 07:41:31 2009 -0700\nsummary:     trac #6609: don't pass GNU flags directly to the Sun assembler\n```\n\n\nYou also state you added this in the SPKG.txt:\n\n```\n### lcalc-20080205.p3 (David kirkby, 15th September, 2009)\n * A general tidy-up/improvement in many ways, including:\n...\n * Check that the C, C++ and Fortran compilers are not a mix of Sun and GNU\n```\n\n\nYour comment about\n\n```\n    * The line:\n\n         echo \"Building a 32-bit version of lcalc\"\n\n        is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build.\n\n```\n\nis also a complaint about code that you added in patch 22.\n\nSo you are currently complaining about and rejecting Rishi's spkg based entirely on problems that you introduced in the spkg. \n\nThus I don't think all (any?) of your complaints are valid. \n\nI'll work with Rishi and Mike Hansen today to get this spkg in.  Since you clearly don't like many of the changes you introduced in changeset 22, I encourage you to create a new trac ticket to remove those changes from say the next version of lcalc.  Then Rishi (who should be the official package maintainer -- Rishi: you may add yourself as such in SPKG.txt) can make those changes.\n\n -- William",
+    "body": "Hi David,\n\nThe command \"hg annotate\" is helpful in clarifying the above issues.   Let me give you a tutorial about how that command works. Doing \n\n```\nhg annotate spkg-install |grep FORTRAN\n```\nyields that changeset 22 added all the FORTRAN stuff you're complaining about:\n\n```\nchangeset:   22:c7e7606b574d\nuser:        David Kirkby <david.kirkby@onetel.net>\ndate:        Tue Sep 15 07:41:31 2009 -0700\nsummary:     trac #6609: don't pass GNU flags directly to the Sun assembler\n```\n\nYou also state you added this in the SPKG.txt:\n\n```\n### lcalc-20080205.p3 (David kirkby, 15th September, 2009)\n * A general tidy-up/improvement in many ways, including:\n...\n * Check that the C, C++ and Fortran compilers are not a mix of Sun and GNU\n```\n\nYour comment about\n\n```\n    * The line:\n\n         echo \"Building a 32-bit version of lcalc\"\n\n        is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build.\n\n```\nis also a complaint about code that you added in patch 22.\n\nSo you are currently complaining about and rejecting Rishi's spkg based entirely on problems that you introduced in the spkg. \n\nThus I don't think all (any?) of your complaints are valid. \n\nI'll work with Rishi and Mike Hansen today to get this spkg in.  Since you clearly don't like many of the changes you introduced in changeset 22, I encourage you to create a new trac ticket to remove those changes from say the next version of lcalc.  Then Rishi (who should be the official package maintainer -- Rishi: you may add yourself as such in SPKG.txt) can make those changes.\n\n -- William",
     "created_at": "2010-03-26T16:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4793",
     "type": "issue_comment",
@@ -401,7 +406,6 @@ The command "hg annotate" is helpful in clarifying the above issues.   Let me gi
 ```
 hg annotate spkg-install |grep FORTRAN
 ```
-
 yields that changeset 22 added all the FORTRAN stuff you're complaining about:
 
 ```
@@ -411,7 +415,6 @@ date:        Tue Sep 15 07:41:31 2009 -0700
 summary:     trac #6609: don't pass GNU flags directly to the Sun assembler
 ```
 
-
 You also state you added this in the SPKG.txt:
 
 ```
@@ -420,7 +423,6 @@ You also state you added this in the SPKG.txt:
 ...
  * Check that the C, C++ and Fortran compilers are not a mix of Sun and GNU
 ```
-
 
 Your comment about
 
@@ -432,7 +434,6 @@ Your comment about
         is incorrect, as some systems build 64-bit by default, and so the lack of a -m64 flag does not imply a 32-bit build.
 
 ```
-
 is also a complaint about code that you added in patch 22.
 
 So you are currently complaining about and rejecting Rishi's spkg based entirely on problems that you introduced in the spkg. 

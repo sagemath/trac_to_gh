@@ -125,7 +125,7 @@ Please see #4714's description about the jsMath macro problem.
 archive/issue_comments_060488.json:
 ```json
 {
-    "body": "> Please see #4714's description about the jsMath macro problem. \n\nDone.  See \n\n   http://wstein.org/home/wstein/patches/sagenb/sagenb-0.3.9.spkg",
+    "body": "> Please see #4714's description about the jsMath macro problem. \n\n\nDone.  See \n\n   http://wstein.org/home/wstein/patches/sagenb/sagenb-0.3.9.spkg",
     "created_at": "2009-10-25T02:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7280",
     "type": "issue_comment",
@@ -135,6 +135,7 @@ archive/issue_comments_060488.json:
 ```
 
 > Please see #4714's description about the jsMath macro problem. 
+
 
 Done.  See 
 

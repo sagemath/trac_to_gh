@@ -88,7 +88,7 @@ Changing status from new to assigned.
 archive/issue_comments_043407.json:
 ```json
 {
-    "body": "REFEREE REPORT\n\n\n\nThe patch **tut-typo.patch** applies against Sage 3.4, but with some fuzz:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5577/tut-typo.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5577/tut-typo.patch\"\napplying /home/mvngu/patch/5577/tut-typo.patch\npatching file doc/en/tutorial/tour_help.rst\nHunk #1 succeeded at 120 with fuzz 1 (offset -1 lines).\n```\n\nThat didn't prevent me from (re)building the tutorial in HTML format. Viewing the updated section \"Getting Help\" in the tutorial, I see that the patch fixes the problem it meant to fix. I don't know how significant the above fuzz is, but probably it doesn't matter at all, in which case I'd give a positive review to the patch.",
+    "body": "REFEREE REPORT\n\n\n\nThe patch **tut-typo.patch** applies against Sage 3.4, but with some fuzz:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5577/tut-typo.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5577/tut-typo.patch\"\napplying /home/mvngu/patch/5577/tut-typo.patch\npatching file doc/en/tutorial/tour_help.rst\nHunk #1 succeeded at 120 with fuzz 1 (offset -1 lines).\n```\nThat didn't prevent me from (re)building the tutorial in HTML format. Viewing the updated section \"Getting Help\" in the tutorial, I see that the patch fixes the problem it meant to fix. I don't know how significant the above fuzz is, but probably it doesn't matter at all, in which case I'd give a positive review to the patch.",
     "created_at": "2009-03-23T02:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5577",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ applying /home/mvngu/patch/5577/tut-typo.patch
 patching file doc/en/tutorial/tour_help.rst
 Hunk #1 succeeded at 120 with fuzz 1 (offset -1 lines).
 ```
-
 That didn't prevent me from (re)building the tutorial in HTML format. Viewing the updated section "Getting Help" in the tutorial, I see that the patch fixes the problem it meant to fix. I don't know how significant the above fuzz is, but probably it doesn't matter at all, in which case I'd give a positive review to the patch.
 
 

@@ -3,7 +3,7 @@
 archive/issues_004836.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\n\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\n\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the\ngp parser).\n\nWe could instead implement the getattr function with a dictionary like\nthis for an nf:\n\n```\n{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),\n```\n\netc   (where the numbers are indices into the array so should actually have 1 subtracted\nfrom them).\n\nThe only disadvantage I can see for this is that new versions of pari\nmight change the indices -- though I doubt that happens often, as you\ncan see from the existence of unused fields which are just there to\npad arrays to the expected length.  And in any case doctests would\nfind these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the\ngp parser).\n\nWe could instead implement the getattr function with a dictionary like\nthis for an nf:\n\n```\n{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),\n```\netc   (where the numbers are indices into the array so should actually have 1 subtracted\nfrom them).\n\nThe only disadvantage I can see for this is that new versions of pari\nmight change the indices -- though I doubt that happens often, as you\ncan see from the existence of unused fields which are just there to\npad arrays to the expected length.  And in any case doctests would\nfind these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
     "created_at": "2008-12-20T12:08:49Z",
     "labels": [
         "component: algebra"
@@ -24,7 +24,6 @@ the pari interface relies on the function getattr(), e.g. as in
 ```
 zk_basis = K.pari_nf().getattr('zk')
 ```
-
 but I *really* don't like this function!  Each of these dot-attributes
 in pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are
 easier when running gp than remembering which field is which in the
@@ -38,7 +37,6 @@ Sage:
        _sig_on
        return self.new_gen(t0)
 ```
-
 So it converts the nf into a string (in my examples, that's a string
 of length 59604), adds ".zk" to it, and reparses the input (using the
 gp parser).
@@ -49,7 +47,6 @@ this for an nf:
 ```
 {('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),
 ```
-
 etc   (where the numbers are indices into the array so should actually have 1 subtracted
 from them).
 
@@ -175,7 +172,7 @@ This can be dealt with after #9343 has been merged.  PARI 2.4 has functions like
 archive/issue_comments_036579.json:
 ```json
 {
-    "body": "As a reference, I grepped such occurances:\n\n\n```\nsage/rings/number_field/number_field_element.pyx:296:                Zbasis = self.number_field().pari_nf().getattr('zk')\nsage/rings/number_field/number_field_ideal_rel.py:118:            self.__pari_rhnf = rnf.rnfidealabstorel(nf.getattr('zk')*L_hnf)\nsage/rings/number_field/number_field.py:2614:        cycle_structure = eval(str(k.getattr('clgp.cyc')))\nsage/rings/number_field/number_field.py:2617:        gens = k.getattr('clgp.gen')\nsage/rings/number_field/number_field.py:3207:            diff = self.pari_nf().getattr('diff')\nsage/rings/number_field/number_field.py:3208:            zk_basis = self.pari_nf().getattr('zk')\nsage/rings/number_field/number_field.py:4190:            s = str(k.getattr('reg'))\nsage/rings/number_field/number_field.py:4274:        r1, r2 = self.pari_nf().getattr('sign')\nsage/rings/number_field/number_field_ideal.py:92:    return field.pari_nf().getattr('zk') * hnf\nsage/rings/number_field/number_field_ideal.py:119:    alpha = field( field.pari_nf().getattr('zk') * ideal[2] )\nsage/rings/number_field/number_field_ideal.py:643:            gens = [ K(a), K(nf.getattr('zk')*alpha) ]\nsage/rings/number_field/number_field_ideal.py:842:                g = K(bnf.getattr('zk') * v[1])\nsage/rings/number_field/number_field_ideal.py:1024:            self.__smallest_integer = ZZ(self._pari_prime.getattr('p'))\nsage/rings/number_field/number_field_ideal.py:1335:            zk_basis = K.pari_nf().getattr('zk')\nsage/rings/number_field/number_field_ideal.py:1337:                prime, alpha = p.getattr('gen')\nsage/rings/number_field/number_field_ideal.py:1478:            return ZZ(self._pari_prime.getattr('e'))\nsage/rings/number_field/number_field_ideal.py:2008:            sage: bid.getattr('clgp')\nsage/rings/number_field/number_field_ideal.py:2013:            if flag==2 and len(bid.getattr('clgp'))<3:\nsage/rings/number_field/number_field_ideal.py:2069:        inv = eval(str(G.getattr('cyc')))\nsage/rings/number_field/number_field_ideal.py:2074:            g = G.getattr('gen')\nsage/rings/number_field/number_field_ideal.py:2188:        return K(bnf.getattr('zk')*r)\nsage/rings/number_field/number_field_ideal.py:2529:            return ZZ(self._pari_prime.getattr('f'))\n```\n",
+    "body": "As a reference, I grepped such occurances:\n\n```\nsage/rings/number_field/number_field_element.pyx:296:                Zbasis = self.number_field().pari_nf().getattr('zk')\nsage/rings/number_field/number_field_ideal_rel.py:118:            self.__pari_rhnf = rnf.rnfidealabstorel(nf.getattr('zk')*L_hnf)\nsage/rings/number_field/number_field.py:2614:        cycle_structure = eval(str(k.getattr('clgp.cyc')))\nsage/rings/number_field/number_field.py:2617:        gens = k.getattr('clgp.gen')\nsage/rings/number_field/number_field.py:3207:            diff = self.pari_nf().getattr('diff')\nsage/rings/number_field/number_field.py:3208:            zk_basis = self.pari_nf().getattr('zk')\nsage/rings/number_field/number_field.py:4190:            s = str(k.getattr('reg'))\nsage/rings/number_field/number_field.py:4274:        r1, r2 = self.pari_nf().getattr('sign')\nsage/rings/number_field/number_field_ideal.py:92:    return field.pari_nf().getattr('zk') * hnf\nsage/rings/number_field/number_field_ideal.py:119:    alpha = field( field.pari_nf().getattr('zk') * ideal[2] )\nsage/rings/number_field/number_field_ideal.py:643:            gens = [ K(a), K(nf.getattr('zk')*alpha) ]\nsage/rings/number_field/number_field_ideal.py:842:                g = K(bnf.getattr('zk') * v[1])\nsage/rings/number_field/number_field_ideal.py:1024:            self.__smallest_integer = ZZ(self._pari_prime.getattr('p'))\nsage/rings/number_field/number_field_ideal.py:1335:            zk_basis = K.pari_nf().getattr('zk')\nsage/rings/number_field/number_field_ideal.py:1337:                prime, alpha = p.getattr('gen')\nsage/rings/number_field/number_field_ideal.py:1478:            return ZZ(self._pari_prime.getattr('e'))\nsage/rings/number_field/number_field_ideal.py:2008:            sage: bid.getattr('clgp')\nsage/rings/number_field/number_field_ideal.py:2013:            if flag==2 and len(bid.getattr('clgp'))<3:\nsage/rings/number_field/number_field_ideal.py:2069:        inv = eval(str(G.getattr('cyc')))\nsage/rings/number_field/number_field_ideal.py:2074:            g = G.getattr('gen')\nsage/rings/number_field/number_field_ideal.py:2188:        return K(bnf.getattr('zk')*r)\nsage/rings/number_field/number_field_ideal.py:2529:            return ZZ(self._pari_prime.getattr('f'))\n```",
     "created_at": "2010-08-15T12:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
@@ -185,7 +182,6 @@ archive/issue_comments_036579.json:
 ```
 
 As a reference, I grepped such occurances:
-
 
 ```
 sage/rings/number_field/number_field_element.pyx:296:                Zbasis = self.number_field().pari_nf().getattr('zk')
@@ -211,7 +207,6 @@ sage/rings/number_field/number_field_ideal.py:2074:            g = G.getattr('ge
 sage/rings/number_field/number_field_ideal.py:2188:        return K(bnf.getattr('zk')*r)
 sage/rings/number_field/number_field_ideal.py:2529:            return ZZ(self._pari_prime.getattr('f'))
 ```
-
 
 
 
@@ -376,7 +371,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_036588.json:
 ```json
 {
-    "body": "Replying to [comment:14 cremona]:\n> Patch applies fine to 4.6.alpha1 +  #9898 + #9753.\n> \n> Tests all pass on a 32-bit machine.\n> \n> In the patch:  \n> \n>     1. Is the first line of docstring of ideallist() a typo:   \"Vector of vectors `L` of all idealstar of all ideals of `norm <= bound`. \" ?  Or are you using \"idealstar\" in a PARI-technical sense of \"ideal structure with extra data?\nYes, it is meant in that sense.  That help is copied from the PARI help.\n\n>     2. Can you explain the quotes in the patch to maps.py (e.g. \"'x\")\nIt means the actual *variables* `x` and `y`, even if `x` and `y` have been assigned to something.  For example, try the following in `gp`:\n\n```\ngp> x = 10\n%1 = 10\ngp> x\n%2 = 10\ngp> 'x\n%3 = x\n```\n\n\n>     3. I would not have minded if you had removed my old smallest_integer code instead of commenting it out!\nWell, it doesn't hurt to leave to code for now, in case something breaks.",
+    "body": "Replying to [comment:14 cremona]:\n> Patch applies fine to 4.6.alpha1 +  #9898 + #9753.\n> \n> Tests all pass on a 32-bit machine.\n> \n> In the patch:  \n> \n> 1. Is the first line of docstring of ideallist() a typo:   \"Vector of vectors `L` of all idealstar of all ideals of `norm <= bound`. \" ?  Or are you using \"idealstar\" in a PARI-technical sense of \"ideal structure with extra data?\n\nYes, it is meant in that sense.  That help is copied from the PARI help.\n\n>     2. Can you explain the quotes in the patch to maps.py (e.g. \"'x\")\n  \nIt means the actual *variables* `x` and `y`, even if `x` and `y` have been assigned to something.  For example, try the following in `gp`:\n\n```\ngp> x = 10\n%1 = 10\ngp> x\n%2 = 10\ngp> 'x\n%3 = x\n```\n\n>     3. I would not have minded if you had removed my old smallest_integer code instead of commenting it out!\n  \nWell, it doesn't hurt to leave to code for now, in case something breaks.",
     "created_at": "2010-09-27T10:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
@@ -392,10 +387,12 @@ Replying to [comment:14 cremona]:
 > 
 > In the patch:  
 > 
->     1. Is the first line of docstring of ideallist() a typo:   "Vector of vectors `L` of all idealstar of all ideals of `norm <= bound`. " ?  Or are you using "idealstar" in a PARI-technical sense of "ideal structure with extra data?
+> 1. Is the first line of docstring of ideallist() a typo:   "Vector of vectors `L` of all idealstar of all ideals of `norm <= bound`. " ?  Or are you using "idealstar" in a PARI-technical sense of "ideal structure with extra data?
+
 Yes, it is meant in that sense.  That help is copied from the PARI help.
 
 >     2. Can you explain the quotes in the patch to maps.py (e.g. "'x")
+  
 It means the actual *variables* `x` and `y`, even if `x` and `y` have been assigned to something.  For example, try the following in `gp`:
 
 ```
@@ -407,8 +404,8 @@ gp> 'x
 %3 = x
 ```
 
-
 >     3. I would not have minded if you had removed my old smallest_integer code instead of commenting it out!
+  
 Well, it doesn't hurt to leave to code for now, in case something breaks.
 
 
@@ -436,7 +433,7 @@ OK -- good to have these explanations on the ticket, even though they do not aff
 archive/issue_comments_036590.json:
 ```json
 {
-    "body": "Could someone fix this docbuild warning\n\n```\ndocstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\\\ntart-string without end-string.\n```\n\n?",
+    "body": "Could someone fix this docbuild warning\n\n```\ndocstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\\\ntart-string without end-string.\n```\n?",
     "created_at": "2010-09-28T10:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
@@ -451,7 +448,6 @@ Could someone fix this docbuild warning
 docstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\
 tart-string without end-string.
 ```
-
 ?
 
 
@@ -515,7 +511,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_036594.json:
 ```json
 {
-    "body": "Replying to [comment:17 mpatel]:\n> Could someone fix this docbuild warning\n> {{{\n> docstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\\\n> tart-string without end-string.\n> }}}\n> ?\n\nDone.",
+    "body": "Replying to [comment:17 mpatel]:\n> Could someone fix this docbuild warning\n> \n> ```\n> docstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\\\n> tart-string without end-string.\n> ```\n> ?\n\n\nDone.",
     "created_at": "2010-09-28T10:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
@@ -526,11 +522,13 @@ archive/issue_comments_036594.json:
 
 Replying to [comment:17 mpatel]:
 > Could someone fix this docbuild warning
-> {{{
+> 
+> ```
 > docstring of sage.libs.pari.gen.gen.nf_get_sign:1: (WARNING/2) Inline literal s\
 > tart-string without end-string.
-> }}}
+> ```
 > ?
+
 
 Done.
 

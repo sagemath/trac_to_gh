@@ -3,7 +3,7 @@
 archive/issues_000587.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nThis was found by Markus Fraczek:\n\n```\nsage: 1e8\n100000000.000000\nsage: 1e8*I\nboom -- typeerror\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/587\n\n",
+    "body": "Assignee: somebody\n\nThis was found by Markus Fraczek:\n\n```\nsage: 1e8\n100000000.000000\nsage: 1e8*I\nboom -- typeerror\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/587\n\n",
     "created_at": "2007-09-04T15:16:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -26,7 +26,6 @@ sage: 1e8
 sage: 1e8*I
 boom -- typeerror
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/587
 

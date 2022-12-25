@@ -389,7 +389,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068436.json:
 ```json
 {
-    "body": "This has been lingering on trac for a while; thought I could review it. I tried to apply these patches to 5.5 in the given order.\n\nThe second one gives\n\n```\napplying http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7886/trac_7886_conjugacy_classes.patch\npatching file sage/groups/perm_gps/permgroup.py\nHunk #1 succeeded at 95 with fuzz 2 (offset 3 lines).\nHunk #2 FAILED at 132\n1 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej\nabort: patch failed to apply\n```\n\n\nIs it possible to rebase them? I'll set this ticket to 'needs work' in the mean time.",
+    "body": "This has been lingering on trac for a while; thought I could review it. I tried to apply these patches to 5.5 in the given order.\n\nThe second one gives\n\n```\napplying http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7886/trac_7886_conjugacy_classes.patch\npatching file sage/groups/perm_gps/permgroup.py\nHunk #1 succeeded at 95 with fuzz 2 (offset 3 lines).\nHunk #2 FAILED at 132\n1 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej\nabort: patch failed to apply\n```\n\nIs it possible to rebase them? I'll set this ticket to 'needs work' in the mean time.",
     "created_at": "2013-01-03T20:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -410,7 +410,6 @@ Hunk #2 FAILED at 132
 1 out of 3 hunks FAILED -- saving rejects to file sage/groups/perm_gps/permgroup.py.rej
 abort: patch failed to apply
 ```
-
 
 Is it possible to rebase them? I'll set this ticket to 'needs work' in the mean time.
 
@@ -493,7 +492,7 @@ patchbot: apply trac_7886_conjugacy_classes_combined.patch
 archive/issue_comments_068441.json:
 ```json
 {
-    "body": "Hey,\n\nThank you for working on this. However there are multiple docstring issues you will need to address. More specifically, you will need to change (for example)\n\n```\nEXAMPLES:\n    sage: H = MatrixGroup([matrix(GF(5),2,[1,2, -1, 1]), matrix(GF(5),2, [1,1, 0,1])])\n    sage: h = H(matrix(GF(5),2,[1,2, -1, 1]))\n    sage: H.conjugacy_class(h)\n    ...\n\n#####\n\nTODO:\n    - Implement a non-naive fallback method for computing all the elements of\n    the conjugacy class when the group is not defined in GAP, as the one in\n    Butler's paper.\n    - Define a sage method for gap matrices so that groups of matrices can\n    use the quicker GAP algorithm rather than the naive one.\n\nEXAMPLES::\n\n- Conjugacy classes for groups of permutations \n\n    sage: G = SymmetricGroup(4) \n    ...\n```\n\nto\n\n```\nEXAMPLES::\n\n    sage: H = MatrixGroup([matrix(GF(5),2,[1,2, -1, 1]), matrix(GF(5),2, [1,1, 0,1])])\n    sage: h = H(matrix(GF(5),2,[1,2, -1, 1]))\n    sage: H.conjugacy_class(h)\n    ...\n\n####\n\n\n.. TODO::\n\n    - Implement a non-naive fallback method for computing all the elements of\n      the conjugacy class when the group is not defined in GAP, as the one in\n      Butler's paper.\n    - Define a sage method for gap matrices so that groups of matrices can\n      use the quicker GAP algorithm rather than the naive one.\n\nEXAMPLES:\n\nConjugacy classes for groups of permutations::\n\n    sage: G = SymmetricGroup(4) \n    ...\n```\n\notherwise the formatting will be incorrect (the convention is not to use bullet points for different examples). For a full description, see [the conventions page](http://www.sagemath.org/doc/developer/conventions.html:).\n\nAlso you will need to cleanup the patch's header message.\n\nThanks,\n\nTravis",
+    "body": "Hey,\n\nThank you for working on this. However there are multiple docstring issues you will need to address. More specifically, you will need to change (for example)\n\n```\nEXAMPLES:\n    sage: H = MatrixGroup([matrix(GF(5),2,[1,2, -1, 1]), matrix(GF(5),2, [1,1, 0,1])])\n    sage: h = H(matrix(GF(5),2,[1,2, -1, 1]))\n    sage: H.conjugacy_class(h)\n    ...\n\n#####\n\nTODO:\n    - Implement a non-naive fallback method for computing all the elements of\n    the conjugacy class when the group is not defined in GAP, as the one in\n    Butler's paper.\n    - Define a sage method for gap matrices so that groups of matrices can\n    use the quicker GAP algorithm rather than the naive one.\n\nEXAMPLES::\n\n- Conjugacy classes for groups of permutations \n\n    sage: G = SymmetricGroup(4) \n    ...\n```\nto\n\n```\nEXAMPLES::\n\n    sage: H = MatrixGroup([matrix(GF(5),2,[1,2, -1, 1]), matrix(GF(5),2, [1,1, 0,1])])\n    sage: h = H(matrix(GF(5),2,[1,2, -1, 1]))\n    sage: H.conjugacy_class(h)\n    ...\n\n####\n\n\n.. TODO::\n\n    - Implement a non-naive fallback method for computing all the elements of\n      the conjugacy class when the group is not defined in GAP, as the one in\n      Butler's paper.\n    - Define a sage method for gap matrices so that groups of matrices can\n      use the quicker GAP algorithm rather than the naive one.\n\nEXAMPLES:\n\nConjugacy classes for groups of permutations::\n\n    sage: G = SymmetricGroup(4) \n    ...\n```\notherwise the formatting will be incorrect (the convention is not to use bullet points for different examples). For a full description, see [the conventions page](http://www.sagemath.org/doc/developer/conventions.html:).\n\nAlso you will need to cleanup the patch's header message.\n\nThanks,\n\nTravis",
     "created_at": "2013-02-19T20:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -529,7 +528,6 @@ EXAMPLES::
     sage: G = SymmetricGroup(4) 
     ...
 ```
-
 to
 
 ```
@@ -558,7 +556,6 @@ Conjugacy classes for groups of permutations::
     sage: G = SymmetricGroup(4) 
     ...
 ```
-
 otherwise the formatting will be incorrect (the convention is not to use bullet points for different examples). For a full description, see [the conventions page](http://www.sagemath.org/doc/developer/conventions.html:).
 
 Also you will need to cleanup the patch's header message.
@@ -633,7 +630,7 @@ J
 archive/issue_comments_068445.json:
 ```json
 {
-    "body": "Hey Javier,\n\nReplying to [comment:20 jlopez]:\n> Thanks for looking at my patch! I have a complicated work situation during the week, but will fix the docstring style and rebase again over sage 5.7 on Friday or Saturday.\n\nThank you! There's not a huge rush, just ping back when it's done and I'll give it a look-over.\n\n> Not sure what you mean about the patch header message. Do you mean the Spanish characters in my name? That is automatically added by my hg configuration, but it seems that trac does not support UTF-8; I added the appropriate encoding to the python files, but don't know how to do it for the patch (and don't feel inclined to change my name either). If it is about the cruft that came from patch folding, I will take care of that as well.\n\nIf you look at the beginning of the patch, you have the following:\n\n```\n# HG changeset patch\n# User Javier L\u00c3\u00b3pez Pe\u00c3\u00b1a <vengoroso@gmail.com>\n# Date 1360004753 0\n# Node ID 2782ba59f14a8dafdb44e05a67972e5a9d4db0cf\n# Parent  fa8decac55338225dc33568ad600c261fc777b4c\n* * *\nTrac 7886: Conjugacy classes\n* * *\nTrac 7886: Created module for conjugacy classes of finite groups.\nAdded wrappers for GAP functions and naive fallback method.\n* * *\nTrac 7886: Conjugacy classes\n```\n\nIn particular, the line right after the `# Parent ...` should be a one line summary of the patch with the ticket number (such as `Trac 7886: Conjugacy classes` which is probably what you originally had). This can get mangled when folding patches. You can change this by doing a `qrefresh -e`. I don't think the encoding for your name in the header is important.\n\nGracias por tu trabajo,\n\nTravis",
+    "body": "Hey Javier,\n\nReplying to [comment:20 jlopez]:\n> Thanks for looking at my patch! I have a complicated work situation during the week, but will fix the docstring style and rebase again over sage 5.7 on Friday or Saturday.\n\n\nThank you! There's not a huge rush, just ping back when it's done and I'll give it a look-over.\n\n> Not sure what you mean about the patch header message. Do you mean the Spanish characters in my name? That is automatically added by my hg configuration, but it seems that trac does not support UTF-8; I added the appropriate encoding to the python files, but don't know how to do it for the patch (and don't feel inclined to change my name either). If it is about the cruft that came from patch folding, I will take care of that as well.\n\n\nIf you look at the beginning of the patch, you have the following:\n\n```\n# HG changeset patch\n# User Javier L\u00c3\u00b3pez Pe\u00c3\u00b1a <vengoroso@gmail.com>\n# Date 1360004753 0\n# Node ID 2782ba59f14a8dafdb44e05a67972e5a9d4db0cf\n# Parent  fa8decac55338225dc33568ad600c261fc777b4c\n* * *\nTrac 7886: Conjugacy classes\n* * *\nTrac 7886: Created module for conjugacy classes of finite groups.\nAdded wrappers for GAP functions and naive fallback method.\n* * *\nTrac 7886: Conjugacy classes\n```\nIn particular, the line right after the `# Parent ...` should be a one line summary of the patch with the ticket number (such as `Trac 7886: Conjugacy classes` which is probably what you originally had). This can get mangled when folding patches. You can change this by doing a `qrefresh -e`. I don't think the encoding for your name in the header is important.\n\nGracias por tu trabajo,\n\nTravis",
     "created_at": "2013-02-21T15:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -647,9 +644,11 @@ Hey Javier,
 Replying to [comment:20 jlopez]:
 > Thanks for looking at my patch! I have a complicated work situation during the week, but will fix the docstring style and rebase again over sage 5.7 on Friday or Saturday.
 
+
 Thank you! There's not a huge rush, just ping back when it's done and I'll give it a look-over.
 
 > Not sure what you mean about the patch header message. Do you mean the Spanish characters in my name? That is automatically added by my hg configuration, but it seems that trac does not support UTF-8; I added the appropriate encoding to the python files, but don't know how to do it for the patch (and don't feel inclined to change my name either). If it is about the cruft that came from patch folding, I will take care of that as well.
+
 
 If you look at the beginning of the patch, you have the following:
 
@@ -667,7 +666,6 @@ Added wrappers for GAP functions and naive fallback method.
 * * *
 Trac 7886: Conjugacy classes
 ```
-
 In particular, the line right after the `# Parent ...` should be a one line summary of the patch with the ticket number (such as `Trac 7886: Conjugacy classes` which is probably what you originally had). This can get mangled when folding patches. You can change this by doing a `qrefresh -e`. I don't think the encoding for your name in the header is important.
 
 Gracias por tu trabajo,
@@ -743,7 +741,7 @@ Travis
 archive/issue_comments_068449.json:
 ```json
 {
-    "body": "Hi Travis,\n\nrefreshed, fixed the itemized examples. My docbuild refuses to work due to the presence of UTF8 characters in the docstring:\n\n```\n    reading sources... [ 75%] sage/groups/perm_gps/permgroup                        \n    Sphinx error:\n    'ascii' codec can't decode byte 0xc3 in position 3438: ordinal not in range(128)\n```\n\n\nIs there any way to tell sphinx to use the utf8 codec instead? I already included the \n\n```\n# coding = utf-8\n```\n\nin the python file, but the docbuild seems to ignore that.",
+    "body": "Hi Travis,\n\nrefreshed, fixed the itemized examples. My docbuild refuses to work due to the presence of UTF8 characters in the docstring:\n\n```\n    reading sources... [ 75%] sage/groups/perm_gps/permgroup                        \n    Sphinx error:\n    'ascii' codec can't decode byte 0xc3 in position 3438: ordinal not in range(128)\n```\n\nIs there any way to tell sphinx to use the utf8 codec instead? I already included the \n\n```\n# coding = utf-8\n```\nin the python file, but the docbuild seems to ignore that.",
     "created_at": "2013-02-22T15:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -762,13 +760,11 @@ refreshed, fixed the itemized examples. My docbuild refuses to work due to the p
     'ascii' codec can't decode byte 0xc3 in position 3438: ordinal not in range(128)
 ```
 
-
 Is there any way to tell sphinx to use the utf8 codec instead? I already included the 
 
 ```
 # coding = utf-8
 ```
-
 in the python file, but the docbuild seems to ignore that.
 
 
@@ -844,7 +840,7 @@ Apply: trac_7886_conjugacy_classes_combined.patch, trac_7886-conjugacy_classes-r
 archive/issue_comments_068453.json:
 ```json
 {
-    "body": "Hi Travis,\n\nyour reviewer patch fails to apply for me:\n\n\n```\napplying trac_7886-conjugacy_classes-review-ts.patch\nunable to find 'doc/en/reference/categories/index.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/categories/index.rst.rej\nunable to find 'doc/en/reference/groups/index.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/groups/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7886-conjugacy_classes-review-ts.patch\n```\n\n\nAre we working over the same version of sage (I'm on 5.7), or did you apply any previous patches that changed documentation files?",
+    "body": "Hi Travis,\n\nyour reviewer patch fails to apply for me:\n\n```\napplying trac_7886-conjugacy_classes-review-ts.patch\nunable to find 'doc/en/reference/categories/index.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/categories/index.rst.rej\nunable to find 'doc/en/reference/groups/index.rst' for patching\n1 out of 1 hunks FAILED -- saving rejects to file doc/en/reference/groups/index.rst.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7886-conjugacy_classes-review-ts.patch\n```\n\nAre we working over the same version of sage (I'm on 5.7), or did you apply any previous patches that changed documentation files?",
     "created_at": "2013-02-23T12:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
@@ -857,7 +853,6 @@ Hi Travis,
 
 your reviewer patch fails to apply for me:
 
-
 ```
 applying trac_7886-conjugacy_classes-review-ts.patch
 unable to find 'doc/en/reference/categories/index.rst' for patching
@@ -868,7 +863,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac_7886-conjugacy_classes-review-ts.patch
 ```
-
 
 Are we working over the same version of sage (I'm on 5.7), or did you apply any previous patches that changed documentation files?
 

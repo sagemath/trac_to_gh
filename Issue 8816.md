@@ -3,7 +3,7 @@
 archive/issues_008816.json:
 ```json
 {
-    "body": "Assignee: @JohnCremona\n\nThe documentation states that \n\n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\n\nBut\n\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe documentation states that \n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\nBut\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
     "created_at": "2010-04-29T05:59:24Z",
     "labels": [
         "component: elliptic curves",
@@ -20,7 +20,6 @@ Assignee: @JohnCremona
 
 The documentation states that 
 
-
 ```
         Return the Cremona-Prickett-Siksek height bound. This is a
         floating point number B such that if P is a rational point on
@@ -28,16 +27,13 @@ The documentation states that
         canonical height.
 ```
 
-
 But
-
 
 ```
             sage: E = EllipticCurve("5077a")
             sage: E.CPS_height_bound()
             0.0
 ```
-
 
 Clearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)
 
@@ -134,7 +130,7 @@ Changing status from new to needs_review.
 archive/issue_comments_080789.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> Ah, OK, that makes more sense. I suspected rank, as the first example I tried (and was surprised by) was 389a (which also has integral generators). \n> \n> I have implemented some of this (e.g. the computation of alpha) in my min-height stuff, and am hoping to get a ticket up for that soon. \n\nGood!  I'll be waiting...",
+    "body": "Replying to [comment:2 robertwb]:\n> Ah, OK, that makes more sense. I suspected rank, as the first example I tried (and was surprised by) was 389a (which also has integral generators). \n> \n> I have implemented some of this (e.g. the computation of alpha) in my min-height stuff, and am hoping to get a ticket up for that soon. \n\n\nGood!  I'll be waiting...",
     "created_at": "2010-04-29T19:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
@@ -147,6 +143,7 @@ Replying to [comment:2 robertwb]:
 > Ah, OK, that makes more sense. I suspected rank, as the first example I tried (and was surprised by) was 389a (which also has integral generators). 
 > 
 > I have implemented some of this (e.g. the computation of alpha) in my min-height stuff, and am hoping to get a ticket up for that soon. 
+
 
 Good!  I'll be waiting...
 

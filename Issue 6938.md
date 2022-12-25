@@ -58,7 +58,7 @@ By the way, I see two copies of the file "sage-README-osx.txt":
 archive/issue_comments_057241.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> See also #5296.\n> \n> By the way, I see two copies of the file \"sage-README-osx.txt\": \n> \n>  - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.\n>  - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.\n> \n\nHmm.  But if both of these are not present in a source distribution, then where will it come from when sage -bdist is run?  It has to be somewhere, right?",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> See also #5296.\n> \n> By the way, I see two copies of the file \"sage-README-osx.txt\": \n> \n> - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.\n> - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.\n> \n\n\nHmm.  But if both of these are not present in a source distribution, then where will it come from when sage -bdist is run?  It has to be somewhere, right?",
     "created_at": "2010-04-22T01:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -72,9 +72,10 @@ Replying to [comment:2 jhpalmieri]:
 > 
 > By the way, I see two copies of the file "sage-README-osx.txt": 
 > 
->  - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.
->  - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.
+> - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.
+> - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.
 > 
+
 
 Hmm.  But if both of these are not present in a source distribution, then where will it come from when sage -bdist is run?  It has to be somewhere, right?
 
@@ -85,7 +86,7 @@ Hmm.  But if both of these are not present in a source distribution, then where 
 archive/issue_comments_057242.json:
 ```json
 {
-    "body": "Replying to [comment:2 jhpalmieri]:\n> See also #5296.\n> \n> By the way, I see two copies of the file \"sage-README-osx.txt\": \n> \n>  - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.\n>  - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.\n> \n\nOh yeah, this one is needed for sage-bdist - see line 92:\n\n```\n    cp sage/local/bin/sage-README-osx.txt README.txt\n```\n\nBut the one on the top level should be able to be safely removed, given that line in sage-bdist, methinks.  Whether the one in /local/bin should overwrite the usual README.txt is another question.  \n\nIncidentally, the usual README.txt maybe should be updated - for instance, Mac OS X is essentially fully supported now, correct?  And Fortran is now only included for OS X, not Linux, I believe. \n\nAnyway, the correct course of action for this ticket is to remove the (untracked?) top-level OSX README file, as far as I can tell.  How does one review this?",
+    "body": "Replying to [comment:2 jhpalmieri]:\n> See also #5296.\n> \n> By the way, I see two copies of the file \"sage-README-osx.txt\": \n> \n> - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.\n> - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.\n> \n\n\nOh yeah, this one is needed for sage-bdist - see line 92:\n\n```\n    cp sage/local/bin/sage-README-osx.txt README.txt\n```\nBut the one on the top level should be able to be safely removed, given that line in sage-bdist, methinks.  Whether the one in /local/bin should overwrite the usual README.txt is another question.  \n\nIncidentally, the usual README.txt maybe should be updated - for instance, Mac OS X is essentially fully supported now, correct?  And Fortran is now only included for OS X, not Linux, I believe. \n\nAnyway, the correct course of action for this ticket is to remove the (untracked?) top-level OSX README file, as far as I can tell.  How does one review this?",
     "created_at": "2010-04-22T02:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -99,16 +100,16 @@ Replying to [comment:2 jhpalmieri]:
 > 
 > By the way, I see two copies of the file "sage-README-osx.txt": 
 > 
->  - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.
->  - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.
+> - in the top-level directory: this one should be present in a binary distribution on OS X, not otherwise.
+> - in SAGE_ROOT/local/bin.  This one should be deleted.  It doesn't seem to be tracked by Mercurial, so it needs to be removed by hand.
 > 
+
 
 Oh yeah, this one is needed for sage-bdist - see line 92:
 
 ```
     cp sage/local/bin/sage-README-osx.txt README.txt
 ```
-
 But the one on the top level should be able to be safely removed, given that line in sage-bdist, methinks.  Whether the one in /local/bin should overwrite the usual README.txt is another question.  
 
 Incidentally, the usual README.txt maybe should be updated - for instance, Mac OS X is essentially fully supported now, correct?  And Fortran is now only included for OS X, not Linux, I believe. 
@@ -197,7 +198,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057246.json:
 ```json
 {
-    "body": "Replying to [comment:5 drkirkby]:\n> One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> \n\nExcept for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n\n> The fact the file starts with a dot, would tend to make it less obvious. Or perhaps have one file, but make it a bit clearer what is relevant to those using a binary distribution, and what is relevant to those using a source distribution. \n> \n\nThat is also a good solution.  I'll try to work on this over the next week - isn't hard, just have to find time to do it.",
+    "body": "Replying to [comment:5 drkirkby]:\n> One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> \n\n\nExcept for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n\n> The fact the file starts with a dot, would tend to make it less obvious. Or perhaps have one file, but make it a bit clearer what is relevant to those using a binary distribution, and what is relevant to those using a source distribution. \n> \n\n\nThat is also a good solution.  I'll try to work on this over the next week - isn't hard, just have to find time to do it.",
     "created_at": "2010-04-22T13:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -210,10 +211,12 @@ Replying to [comment:5 drkirkby]:
 > One option might be to have a file ".README-OSX-binary.txt" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt
 > 
 
+
 Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). 
 
 > The fact the file starts with a dot, would tend to make it less obvious. Or perhaps have one file, but make it a bit clearer what is relevant to those using a binary distribution, and what is relevant to those using a source distribution. 
 > 
+
 
 That is also a good solution.  I'll try to work on this over the next week - isn't hard, just have to find time to do it.
 
@@ -224,7 +227,7 @@ That is also a good solution.  I'll try to work on this over the next week - isn
 archive/issue_comments_057247.json:
 ```json
 {
-    "body": "Replying to [comment:6 kcrisman]:\n> Replying to [comment:5 drkirkby]:\n> > One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> > \n> \n> Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n\nThat was my whole point about using a dot - it would not be found easily. \n\nIf the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n\nIt would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n\nDave",
+    "body": "Replying to [comment:6 kcrisman]:\n> Replying to [comment:5 drkirkby]:\n> > One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> > \n\n> \n> Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n\n\nThat was my whole point about using a dot - it would not be found easily. \n\nIf the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n\nIt would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n\nDave",
     "created_at": "2010-04-22T15:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -237,8 +240,10 @@ Replying to [comment:6 kcrisman]:
 > Replying to [comment:5 drkirkby]:
 > > One option might be to have a file ".README-OSX-binary.txt" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt
 > > 
+
 > 
 > Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). 
+
 
 That was my whole point about using a dot - it would not be found easily. 
 
@@ -255,7 +260,7 @@ Dave
 archive/issue_comments_057248.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> Replying to [comment:6 kcrisman]:\n> > Replying to [comment:5 drkirkby]:\n> > > One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> > > \n> > \n> > Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n> \n> That was my whole point about using a dot - it would not be found easily. \n> \n> If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n> \n> It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n\nI understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.",
+    "body": "Replying to [comment:7 drkirkby]:\n> Replying to [comment:6 kcrisman]:\n> > Replying to [comment:5 drkirkby]:\n> > > One option might be to have a file \".README-OSX-binary.txt\" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt\n> > > \n\n> > \n> > Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). \n\n> \n> That was my whole point about using a dot - it would not be found easily. \n> \n> If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n> \n> It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n\n\nI understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.",
     "created_at": "2010-04-22T17:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -269,14 +274,17 @@ Replying to [comment:7 drkirkby]:
 > > Replying to [comment:5 drkirkby]:
 > > > One option might be to have a file ".README-OSX-binary.txt" for information about binaries, and README-OSX.txt for information about source. Then if one runs sage -bdist, it replace README-OSX.txt with .README-OSX-binary.txt
 > > > 
+
 > > 
 > > Except for the dot, that is a good idea, and maybe a not hard way to fix this.  Unfortunately, Macs automatically hide dot files in the Finder, and so most people would then have no README to see (unless they though to use ls -a in command line, which is not automatic for many). 
+
 > 
 > That was my whole point about using a dot - it would not be found easily. 
 > 
 > If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. 
 > 
 > It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. 
+
 
 I understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.
 
@@ -287,7 +295,7 @@ I understand now - I got confused by all the files and dots, sort of Dr. Seuss-e
 archive/issue_comments_057249.json:
 ```json
 {
-    "body": "Replying to [comment:8 kcrisman]:\n> Replying to [comment:7 drkirkby]:\n> > That was my whole point about using a dot - it would not be found easily. \n> > \n> > If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n> > \n> > It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n> \n> I understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.\n\nIt's one option, but I suspect a simpler one is to just have the one file be a bit more explicit about what is relevant to a source distribution, and what is relevant to a binary distribution. \n\nI'm not overly concerned whether it is done in one file, two files, or whether any files are semi-hidden by the use of a dot in front of their name. But the current version is rather confusing.",
+    "body": "Replying to [comment:8 kcrisman]:\n> Replying to [comment:7 drkirkby]:\n> > That was my whole point about using a dot - it would not be found easily. \n> > \n> > If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. \n> > \n> > It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. \n\n> \n> I understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.\n\n\nIt's one option, but I suspect a simpler one is to just have the one file be a bit more explicit about what is relevant to a source distribution, and what is relevant to a binary distribution. \n\nI'm not overly concerned whether it is done in one file, two files, or whether any files are semi-hidden by the use of a dot in front of their name. But the current version is rather confusing.",
     "created_at": "2010-04-22T18:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6938",
     "type": "issue_comment",
@@ -303,8 +311,10 @@ Replying to [comment:8 kcrisman]:
 > > If the information only relevant to those using a binary distribution was in a file starting with dot in the sources, then it would not be too obvious to those looking at the sources. 
 > > 
 > > It would only become apparent on a binary distribution, because the act of running 'sage -bdist' would have removed the dot. 
+
 > 
 > I understand now - I got confused by all the files and dots, sort of Dr. Seuss-esque.  I'll definitely look into this soon.
+
 
 It's one option, but I suspect a simpler one is to just have the one file be a bit more explicit about what is relevant to a source distribution, and what is relevant to a binary distribution. 
 

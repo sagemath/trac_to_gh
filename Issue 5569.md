@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5569
 archive/issue_comments_043308.json:
 ```json
 {
-    "body": "\n```\n15:43 < wstein> The patch looks good, except why not define the Weil restriction of scalars\n15:43 < wstein> functor.\n15:43 < wstein> You don't define it, but giving a complete valid mathematical definition only\n15:43 < wstein> takes about 2-3 sentences.\n15:43 < wstein> I can't see why not to do that.\n15:43 < malb> okay\n15:44 < wstein> Serge Lang first taught me about that construction using equations\n15:44 < wstein> when I was having lunch with him once in grad school.\n15:44 < wstein> Then I personally realized it is a functor and used that to prove that\n15:44 < malb> I knew about this for a while but learned the proper name just now\n15:44 < wstein> it is unique up to whatever...\n15:44 < wstein> It was just an exercise for me, of course, since it is all well known.\n15:45 < wstein> Also, could you add an example that involves an elliptic curve (affine patch \n                of one, at least)\n15:45 < wstein> over a quadratic field?\n15:45 < wstein> That would be cool.\n```\n",
+    "body": "```\n15:43 < wstein> The patch looks good, except why not define the Weil restriction of scalars\n15:43 < wstein> functor.\n15:43 < wstein> You don't define it, but giving a complete valid mathematical definition only\n15:43 < wstein> takes about 2-3 sentences.\n15:43 < wstein> I can't see why not to do that.\n15:43 < malb> okay\n15:44 < wstein> Serge Lang first taught me about that construction using equations\n15:44 < wstein> when I was having lunch with him once in grad school.\n15:44 < wstein> Then I personally realized it is a functor and used that to prove that\n15:44 < malb> I knew about this for a while but learned the proper name just now\n15:44 < wstein> it is unique up to whatever...\n15:44 < wstein> It was just an exercise for me, of course, since it is all well known.\n15:45 < wstein> Also, could you add an example that involves an elliptic curve (affine patch \n                of one, at least)\n15:45 < wstein> over a quadratic field?\n15:45 < wstein> That would be cool.\n```",
     "created_at": "2009-03-19T22:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
@@ -40,7 +40,6 @@ archive/issue_comments_043308.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 15:43 < wstein> The patch looks good, except why not define the Weil restriction of scalars
@@ -60,7 +59,6 @@ archive/issue_comments_043308.json:
 15:45 < wstein> over a quadratic field?
 15:45 < wstein> That would be cool.
 ```
-
 
 
 
@@ -87,7 +85,7 @@ Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5
 archive/issue_comments_043310.json:
 ```json
 {
-    "body": "I give this a positive review.  Great work on the docstring!  \n\nOne comment.  It is sad that we have to write code like this to do a coercion:\n\n```\n l = [helper(str(f))  for f in self.gens()] \n```\n\n\nAs a challenge to Martin -- can you improve Sage so this decimal string conversion (which could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one can use a homomorphism?",
+    "body": "I give this a positive review.  Great work on the docstring!  \n\nOne comment.  It is sad that we have to write code like this to do a coercion:\n\n```\n l = [helper(str(f))  for f in self.gens()] \n```\n\nAs a challenge to Martin -- can you improve Sage so this decimal string conversion (which could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one can use a homomorphism?",
     "created_at": "2009-03-22T00:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
@@ -104,7 +102,6 @@ One comment.  It is sad that we have to write code like this to do a coercion:
  l = [helper(str(f))  for f in self.gens()] 
 ```
 
-
 As a challenge to Martin -- can you improve Sage so this decimal string conversion (which could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one can use a homomorphism?
 
 
@@ -114,7 +111,7 @@ As a challenge to Martin -- can you improve Sage so this decimal string conversi
 archive/issue_comments_043311.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> As a challenge to Martin -- can you improve Sage so this decimal string conversion (which \n> could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one \n> can use a homomorphism?\n\nThis is now #5590",
+    "body": "Replying to [comment:4 was]:\n> As a challenge to Martin -- can you improve Sage so this decimal string conversion (which \n> could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one \n> can use a homomorphism?\n\n\nThis is now #5590",
     "created_at": "2009-03-23T12:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
@@ -127,6 +124,7 @@ Replying to [comment:4 was]:
 > As a challenge to Martin -- can you improve Sage so this decimal string conversion (which 
 > could be a killer show stopper if the ideal had huge elements) isn't needed, and instead one 
 > can use a homomorphism?
+
 
 This is now #5590
 

@@ -3,7 +3,7 @@
 archive/issues_001425.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\n\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
+    "body": "Assignee: @williamstein\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
     "created_at": "2007-12-08T10:07:59Z",
     "labels": [
         "component: calculus",
@@ -25,7 +25,6 @@ The following simplification is wrong in my opinion:
 sage: pow(pow(z,2),1/3)
 z^(2/3)
 ```
-
 For example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I
 (it gives currently 1 in sage, which is another bug in my opinion):
 
@@ -33,7 +32,6 @@ For example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give 
 sage: pow(-1,2/3)
 1
 ```
-
 
 Indeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the
 principal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification
@@ -47,7 +45,6 @@ sage: pow(pow(z,3),1/3)
 z
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1425
 
 
@@ -59,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1425
 archive/issue_comments_009156.json:
 ```json
 {
-    "body": "This is likely deep in the core of Maxima, so a serious pain (= basically impossible) etc to fix in a way that would really work.  It could be reported to maxima, but could we even convince them that it is a bug?  (Hopefully).\n\n\n```\n(%i3) ((-1)^2)^(1/3);\n(%o3)                                  1\n(%i4) (-1)^(2/3);\n(%o4)                                  1\n```\n",
+    "body": "This is likely deep in the core of Maxima, so a serious pain (= basically impossible) etc to fix in a way that would really work.  It could be reported to maxima, but could we even convince them that it is a bug?  (Hopefully).\n\n```\n(%i3) ((-1)^2)^(1/3);\n(%o3)                                  1\n(%i4) (-1)^(2/3);\n(%o4)                                  1\n```",
     "created_at": "2007-12-10T05:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -70,14 +67,12 @@ archive/issue_comments_009156.json:
 
 This is likely deep in the core of Maxima, so a serious pain (= basically impossible) etc to fix in a way that would really work.  It could be reported to maxima, but could we even convince them that it is a bug?  (Hopefully).
 
-
 ```
 (%i3) ((-1)^2)^(1/3);
 (%o3)                                  1
 (%i4) (-1)^(2/3);
 (%o4)                                  1
 ```
-
 
 
 
@@ -122,7 +117,7 @@ Changing assignee from @williamstein to @mwhansen.
 archive/issue_comments_009159.json:
 ```json
 {
-    "body": "\n```\n (%i1) domain : complex$\n\n (%i2) (x^2)^(1/3);\n (%o2) (x^2)^(1/3)\n\n (%i3) ((-1)^2)^(1/3);\n (%o3) 1\n\n (%i4) (-1)^(2/3);\n (%o4) (-1)^(2/3)\n\n (%i5) rectform(%);\n (%o5) (sqrt(3)*%i)/2-1/2\n```\n",
+    "body": "```\n (%i1) domain : complex$\n\n (%i2) (x^2)^(1/3);\n (%o2) (x^2)^(1/3)\n\n (%i3) ((-1)^2)^(1/3);\n (%o3) 1\n\n (%i4) (-1)^(2/3);\n (%o4) (-1)^(2/3)\n\n (%i5) rectform(%);\n (%o5) (sqrt(3)*%i)/2-1/2\n```",
     "created_at": "2007-12-11T02:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -130,7 +125,6 @@ archive/issue_comments_009159.json:
     "user": "https://github.com/mwhansen"
 }
 ```
-
 
 ```
  (%i1) domain : complex$
@@ -147,7 +141,6 @@ archive/issue_comments_009159.json:
  (%i5) rectform(%);
  (%o5) (sqrt(3)*%i)/2-1/2
 ```
-
 
 
 
@@ -174,7 +167,7 @@ Changing status from new to assigned.
 archive/issue_comments_009161.json:
 ```json
 {
-    "body": "Unfortunately, this causes another major problem:\n\n\n```\n(%i13) domain: complex$\n(%i14) radcan( sqrt(x^2) - x );\n(%o14)                                 0\n(%i15) domain: real$\n(%i16) radcan( sqrt(x^2) - x );\n(%o16)                            abs(x) - x\n```\n\n\nwhich causes\n\n```\nsage: bool(sqrt(x^2) == x)\nTrue\n```\n",
+    "body": "Unfortunately, this causes another major problem:\n\n```\n(%i13) domain: complex$\n(%i14) radcan( sqrt(x^2) - x );\n(%o14)                                 0\n(%i15) domain: real$\n(%i16) radcan( sqrt(x^2) - x );\n(%o16)                            abs(x) - x\n```\n\nwhich causes\n\n```\nsage: bool(sqrt(x^2) == x)\nTrue\n```",
     "created_at": "2007-12-11T03:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
@@ -185,7 +178,6 @@ archive/issue_comments_009161.json:
 
 Unfortunately, this causes another major problem:
 
-
 ```
 (%i13) domain: complex$
 (%i14) radcan( sqrt(x^2) - x );
@@ -195,14 +187,12 @@ Unfortunately, this causes another major problem:
 (%o16)                            abs(x) - x
 ```
 
-
 which causes
 
 ```
 sage: bool(sqrt(x^2) == x)
 True
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009582.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake @jhpalmieri @burcin\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\na 64 bit Mac OS X 10.6.4 box: one failure:\n\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.5.2.alpha0/devel/sage/sage/\nsymbolic/random_tests.py\", line 236:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) + cos((-0.708874026302 - 0.954135400334*I)*v3) -\nzetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I)))^(-arccoth(-abs(((-0.804514286089 -\n0.0293247734576*I)*v1 + (-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\nGot:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) - zetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I) + cos((-0.708874026302 - 0.954135400334*I)*v3)))^(-\narccoth(-abs(((-0.804514286089 - 0.0293247734576*I)*v1 +\n(-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\n**********************************************************************\n\nLooks like a discrepancy in the order terms are printed.\n```\n\n\nAcccording to Dan Drake:\n\n```\nI'm seeing that on bsd.math too. This is related to #9514, which was\nsupposed to fix this, but evidently doesn't, on OS X at least.\n```\n\n\nRelated: #9514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9582\n\n",
+    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake @jhpalmieri @burcin\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\na 64 bit Mac OS X 10.6.4 box: one failure:\n\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.5.2.alpha0/devel/sage/sage/\nsymbolic/random_tests.py\", line 236:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) + cos((-0.708874026302 - 0.954135400334*I)*v3) -\nzetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I)))^(-arccoth(-abs(((-0.804514286089 -\n0.0293247734576*I)*v1 + (-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\nGot:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) - zetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I) + cos((-0.708874026302 - 0.954135400334*I)*v3)))^(-\narccoth(-abs(((-0.804514286089 - 0.0293247734576*I)*v1 +\n(-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\n**********************************************************************\n\nLooks like a discrepancy in the order terms are printed.\n```\n\nAcccording to Dan Drake:\n\n```\nI'm seeing that on bsd.math too. This is related to #9514, which was\nsupposed to fix this, but evidently doesn't, on OS X at least.\n```\n\nRelated: #9514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9582\n\n",
     "created_at": "2010-07-23T07:47:16Z",
     "labels": [
         "component: doctest coverage",
@@ -52,14 +52,12 @@ arccoth(-abs(((-0.804514286089 - 0.0293247734576*I)*v1 +
 Looks like a discrepancy in the order terms are printed.
 ```
 
-
 Acccording to Dan Drake:
 
 ```
 I'm seeing that on bsd.math too. This is related to #9514, which was
 supposed to fix this, but evidently doesn't, on OS X at least.
 ```
-
 
 Related: #9514.
 
@@ -135,7 +133,7 @@ I compiled [GiNaC](http://www.ginac.de/Download.html) (and [CLN](http://www.gina
 archive/issue_comments_092401.json:
 ```json
 {
-    "body": "On Sage 4.4.4 on OS X 10.6:\n\n```\nsage: cos(x)+zeta(x)\ncos(x) + zeta(x)\nsage: zeta(x)+cos(x)\ncos(x) + zeta(x)\nsage: version()\n'Sage Version 4.4.4, Release Date: 2010-06-23'\n```\n\nSo this may have been a problem for a while?",
+    "body": "On Sage 4.4.4 on OS X 10.6:\n\n```\nsage: cos(x)+zeta(x)\ncos(x) + zeta(x)\nsage: zeta(x)+cos(x)\ncos(x) + zeta(x)\nsage: version()\n'Sage Version 4.4.4, Release Date: 2010-06-23'\n```\nSo this may have been a problem for a while?",
     "created_at": "2010-07-28T16:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
@@ -154,7 +152,6 @@ cos(x) + zeta(x)
 sage: version()
 'Sage Version 4.4.4, Release Date: 2010-06-23'
 ```
-
 So this may have been a problem for a while?
 
 
@@ -256,7 +253,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092407.json:
 ```json
 {
-    "body": "Replying to [comment:6 cwitty]:\n> If we decide that the actual problem (different printing across platforms) is not a regression, and doesn't have to be fixed in this release, then I've attached a patch that works around the problem (by modifying the doctest to produce an output that prints the same on my Linux box and on bsd.math).\n\nThis seems reasonable.  Are there any objections?  The workaround patch works for me on bsd, sage, and t2.math. \n\n> If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.\n\nI'll give this ticket a positive review, merge it in 4.5.2.rc0, close it, and open a new one for the printing order problem.",
+    "body": "Replying to [comment:6 cwitty]:\n> If we decide that the actual problem (different printing across platforms) is not a regression, and doesn't have to be fixed in this release, then I've attached a patch that works around the problem (by modifying the doctest to produce an output that prints the same on my Linux box and on bsd.math).\n\n\nThis seems reasonable.  Are there any objections?  The workaround patch works for me on bsd, sage, and t2.math. \n\n> If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.\n\n\nI'll give this ticket a positive review, merge it in 4.5.2.rc0, close it, and open a new one for the printing order problem.",
     "created_at": "2010-07-29T06:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
@@ -268,9 +265,11 @@ archive/issue_comments_092407.json:
 Replying to [comment:6 cwitty]:
 > If we decide that the actual problem (different printing across platforms) is not a regression, and doesn't have to be fixed in this release, then I've attached a patch that works around the problem (by modifying the doctest to produce an output that prints the same on my Linux box and on bsd.math).
 
+
 This seems reasonable.  Are there any objections?  The workaround patch works for me on bsd, sage, and t2.math. 
 
 > If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.
+
 
 I'll give this ticket a positive review, merge it in 4.5.2.rc0, close it, and open a new one for the printing order problem.
 
@@ -315,7 +314,7 @@ archive/issue_events_023863.json:
 archive/issue_comments_092409.json:
 ```json
 {
-    "body": "Replying to [comment:6 cwitty]:\n\n> If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.\n\nI've opened #9632.",
+    "body": "Replying to [comment:6 cwitty]:\n\n> If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.\n\n\nI've opened #9632.",
     "created_at": "2010-07-29T06:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
@@ -327,6 +326,7 @@ archive/issue_comments_092409.json:
 Replying to [comment:6 cwitty]:
 
 > If you do apply my patch, then either this ticket should not be closed, or another one should be opened about the printing order issue.
+
 
 I've opened #9632.
 

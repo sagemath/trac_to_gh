@@ -3,7 +3,7 @@
 archive/issues_007299.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rlmill @rbeezer\n\nIn sage 4.1.2 and later, the show() function shows graphs so cropped that their vertices are partially missing.\n\nThis is a regression in 4.1.2 and later, Sage 4.1.1 is fine.\n\nAttaching the figures from\n\n```\nG=graphs.CycleGraph(3);G.show()\n```\n\nto show the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7299\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rlmill @rbeezer\n\nIn sage 4.1.2 and later, the show() function shows graphs so cropped that their vertices are partially missing.\n\nThis is a regression in 4.1.2 and later, Sage 4.1.1 is fine.\n\nAttaching the figures from\n\n```\nG=graphs.CycleGraph(3);G.show()\n```\nto show the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7299\n\n",
     "created_at": "2009-10-25T18:26:25Z",
     "labels": [
         "component: graphics",
@@ -29,7 +29,6 @@ Attaching the figures from
 ```
 G=graphs.CycleGraph(3);G.show()
 ```
-
 to show the issue.
 
 Issue created by migration from https://trac.sagemath.org/ticket/7299

@@ -3,7 +3,7 @@
 archive/issues_008428.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nThe newly \"improved\" rational_points function for plane curves (#8193) has a bug; if for some (Y,Z) the polynomial defining the curve becomes identically 0, it returns a ValueError caused by the function trying to factorise 0 as a polynomial.\n\nHere is an example\n\n\n```\nsage: F = GF(2)\nsage: P2.<X,Y,Z> = ProjectiveSpace(F,2)\nsage: C = Curve(X*Y)\nsage: a = C.rational_points_iterator()\nsage: a.next()\n(1 : 0 : 0)\nsage: a.next()\n(0 : 1 : 0)\nsage: a.next()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/charlie/<ipython console> in <module>()\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/schemes/plane_curves/projective_curve.pyc\nin rational_points_iterator(self)\n   353         # points with Z = 1\n   354         for y in K:\n--> 355             for x in R(g(X,y,one)).roots(multiplicities=False):\n   356                 yield(self.point([x,y,one]))\n   357\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so\nin sage.rings.polynomial.polynomial_element.Polynomial.roots\n(sage/rings/polynomial/polynomial_element.c:30111)()\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so\nin sage.rings.polynomial.polynomial_element.Polynomial.factor\n(sage/rings/polynomial/polynomial_element.c:18463)()\nValueError: factorization of 0 not defined\n```\n\n\nA patch to improve this is on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8428\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nThe newly \"improved\" rational_points function for plane curves (#8193) has a bug; if for some (Y,Z) the polynomial defining the curve becomes identically 0, it returns a ValueError caused by the function trying to factorise 0 as a polynomial.\n\nHere is an example\n\n```\nsage: F = GF(2)\nsage: P2.<X,Y,Z> = ProjectiveSpace(F,2)\nsage: C = Curve(X*Y)\nsage: a = C.rational_points_iterator()\nsage: a.next()\n(1 : 0 : 0)\nsage: a.next()\n(0 : 1 : 0)\nsage: a.next()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/charlie/<ipython console> in <module>()\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/schemes/plane_curves/projective_curve.pyc\nin rational_points_iterator(self)\n   353         # points with Z = 1\n   354         for y in K:\n--> 355             for x in R(g(X,y,one)).roots(multiplicities=False):\n   356                 yield(self.point([x,y,one]))\n   357\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so\nin sage.rings.polynomial.polynomial_element.Polynomial.roots\n(sage/rings/polynomial/polynomial_element.c:30111)()\n\n/home/charlie/sage-current/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so\nin sage.rings.polynomial.polynomial_element.Polynomial.factor\n(sage/rings/polynomial/polynomial_element.c:18463)()\nValueError: factorization of 0 not defined\n```\n\nA patch to improve this is on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8428\n\n",
     "created_at": "2010-03-03T10:51:06Z",
     "labels": [
         "component: algebraic geometry",
@@ -23,7 +23,6 @@ CC:  @JohnCremona
 The newly "improved" rational_points function for plane curves (#8193) has a bug; if for some (Y,Z) the polynomial defining the curve becomes identically 0, it returns a ValueError caused by the function trying to factorise 0 as a polynomial.
 
 Here is an example
-
 
 ```
 sage: F = GF(2)
@@ -57,7 +56,6 @@ in sage.rings.polynomial.polynomial_element.Polynomial.factor
 (sage/rings/polynomial/polynomial_element.c:18463)()
 ValueError: factorization of 0 not defined
 ```
-
 
 A patch to improve this is on its way.
 

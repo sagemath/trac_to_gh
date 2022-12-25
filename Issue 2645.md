@@ -50,7 +50,7 @@ Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645
 archive/issue_comments_018145.json:
 ```json
 {
-    "body": "In https://groups.google.com/group/sage-devel/browse_thread/thread/d88bc7503638af0c Robert Bradshaw commented:\n\n```\nThe line3d command will produce much faster arrows:\n\nline3d([(0,0,0), (1,2,3)], thickness=2, arrow_head=True)\n\nThe ds parameter is supposed to relate the size of the overall scene  \nto the number of pixels in the final render. I agree there needs to  \nbe a better way to set it. \n```\n\n\nCheers,\n\nMichael",
+    "body": "In https://groups.google.com/group/sage-devel/browse_thread/thread/d88bc7503638af0c Robert Bradshaw commented:\n\n```\nThe line3d command will produce much faster arrows:\n\nline3d([(0,0,0), (1,2,3)], thickness=2, arrow_head=True)\n\nThe ds parameter is supposed to relate the size of the overall scene  \nto the number of pixels in the final render. I agree there needs to  \nbe a better way to set it. \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-03-22T21:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
@@ -70,7 +70,6 @@ The ds parameter is supposed to relate the size of the overall scene
 to the number of pixels in the final render. I agree there needs to  
 be a better way to set it. 
 ```
-
 
 Cheers,
 
@@ -101,7 +100,7 @@ The comment about line3d does not change the bug and does not change the patch. 
 archive/issue_comments_018147.json:
 ```json
 {
-    "body": "Works great for me. A good example of this is\n\n\n```\nsage: sum([arrow3d((cos(t),sin(t),0),(cos(t),sin(t),t/10)) for t in [0,0.3,..,2*pi]])\n```\n",
+    "body": "Works great for me. A good example of this is\n\n```\nsage: sum([arrow3d((cos(t),sin(t),0),(cos(t),sin(t),t/10)) for t in [0,0.3,..,2*pi]])\n```",
     "created_at": "2008-03-27T06:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
@@ -112,11 +111,9 @@ archive/issue_comments_018147.json:
 
 Works great for me. A good example of this is
 
-
 ```
 sage: sum([arrow3d((cos(t),sin(t),0),(cos(t),sin(t),t/10)) for t in [0,0.3,..,2*pi]])
 ```
-
 
 
 

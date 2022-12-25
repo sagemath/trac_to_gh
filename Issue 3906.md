@@ -3,7 +3,7 @@
 archive/issues_003906.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
+    "body": "Assignee: @garyfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
     "created_at": "2008-08-20T01:16:20Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +20,6 @@ Assignee: @garyfurnish
 
 No response on sage-support, so I deem this a bug, not a feature:
 
-
 ```
 sage: plot(sin,0,pi)
 <plots fine>
@@ -35,7 +34,6 @@ sage: plot(2*sin(x),0,pi)
 - for consistency's (and ease of use's) sake both of the above should
 work. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3906
 

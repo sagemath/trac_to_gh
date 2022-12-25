@@ -93,7 +93,7 @@ This will be useful to have in sage... thanks!
 archive/issue_comments_082392.json:
 ```json
 {
-    "body": "Hi Jason,\n\nThank you for your comments! I have uploaded a revised patch addressing the issues you raised:\n\n>   1. It looks like your implementation assumes ZZ as a base ring.  Any reason not to allow any ring?\n\nDone.\n\n>   2. I would prefer the elements print as `a[0] a[1]` instead of `a0 a1` so that copy-paste can work.  Do you have a preference one way or the other?\n\nThere is now an option in \n\n    def _repr_term(self, t, display = \"short\"):\n\nwhich allows to display the output in the long or short notation.\n\n>   3. In the documentation for the class, you should mention that the relations should be understood mod n.\n\nDone.\n\n>   4. In the _element_constructor, I would expect the presence of a braid relation trigger to return 0.  Is there a reason that you raise an error instead?\n\nDone now. As we discussed by e-mail in private, it might make more sense to eventually construct this algebra as a quotient algebra. This would depend on the 'functorial constructions' patch of Nicolas and Florent. I left a note about this in the code.\n\nOne slight warning: I now inserted a line\n\n        assert(self(w) != self.zero())\n\nin product_on_basis, which might slow down calculations, but is safer.\n\nCheers,\n\nAnne",
+    "body": "Hi Jason,\n\nThank you for your comments! I have uploaded a revised patch addressing the issues you raised:\n\n>   1. It looks like your implementation assumes ZZ as a base ring.  Any reason not to allow any ring?\n\n\nDone.\n\n>   2. I would prefer the elements print as `a[0] a[1]` instead of `a0 a1` so that copy-paste can work.  Do you have a preference one way or the other?\n\n\nThere is now an option in \n\n    def _repr_term(self, t, display = \"short\"):\n\nwhich allows to display the output in the long or short notation.\n\n>   3. In the documentation for the class, you should mention that the relations should be understood mod n.\n\n\nDone.\n\n>   4. In the _element_constructor, I would expect the presence of a braid relation trigger to return 0.  Is there a reason that you raise an error instead?\n\n\nDone now. As we discussed by e-mail in private, it might make more sense to eventually construct this algebra as a quotient algebra. This would depend on the 'functorial constructions' patch of Nicolas and Florent. I left a note about this in the code.\n\nOne slight warning: I now inserted a line\n\n        assert(self(w) != self.zero())\n\nin product_on_basis, which might slow down calculations, but is safer.\n\nCheers,\n\nAnne",
     "created_at": "2010-05-14T17:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
@@ -108,9 +108,11 @@ Thank you for your comments! I have uploaded a revised patch addressing the issu
 
 >   1. It looks like your implementation assumes ZZ as a base ring.  Any reason not to allow any ring?
 
+
 Done.
 
 >   2. I would prefer the elements print as `a[0] a[1]` instead of `a0 a1` so that copy-paste can work.  Do you have a preference one way or the other?
+
 
 There is now an option in 
 
@@ -120,9 +122,11 @@ which allows to display the output in the long or short notation.
 
 >   3. In the documentation for the class, you should mention that the relations should be understood mod n.
 
+
 Done.
 
 >   4. In the _element_constructor, I would expect the presence of a braid relation trigger to return 0.  Is there a reason that you raise an error instead?
+
 
 Done now. As we discussed by e-mail in private, it might make more sense to eventually construct this algebra as a quotient algebra. This would depend on the 'functorial constructions' patch of Nicolas and Florent. I left a note about this in the code.
 

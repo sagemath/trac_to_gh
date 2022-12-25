@@ -56,7 +56,7 @@ This is a duplicate of #5438.
 archive/issue_comments_048438.json:
 ```json
 {
-    "body": "Replying to [comment:1 whuss]:\n> This is a duplicate of #5438.\n\nHmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:1 whuss]:\n> This is a duplicate of #5438.\n\n\nHmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?\n\nCheers,\n\nMichael",
     "created_at": "2009-05-20T11:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6090",
     "type": "issue_comment",
@@ -67,6 +67,7 @@ archive/issue_comments_048438.json:
 
 Replying to [comment:1 whuss]:
 > This is a duplicate of #5438.
+
 
 Hmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?
 
@@ -105,7 +106,7 @@ Michael
 archive/issue_comments_048440.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> Replying to [comment:1 whuss]:\n> > This is a duplicate of #5438.\n> \n> Hmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?\n\n#5438 says it went into 4.0.alpha0 not 3.4.2.\n\nCheers,\n\nWilfried",
+    "body": "Replying to [comment:2 mabshoff]:\n> Replying to [comment:1 whuss]:\n> > This is a duplicate of #5438.\n\n> \n> Hmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?\n\n\n#5438 says it went into 4.0.alpha0 not 3.4.2.\n\nCheers,\n\nWilfried",
     "created_at": "2009-05-20T11:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6090",
     "type": "issue_comment",
@@ -117,8 +118,10 @@ archive/issue_comments_048440.json:
 Replying to [comment:2 mabshoff]:
 > Replying to [comment:1 whuss]:
 > > This is a duplicate of #5438.
+
 > 
 > Hmm, given that this went into 3.4.2 I wonder why Jason did hit this problem?
+
 
 #5438 says it went into 4.0.alpha0 not 3.4.2.
 
@@ -184,7 +187,7 @@ archive/issue_events_014306.json:
 archive/issue_comments_048442.json:
 ```json
 {
-    "body": "Replying to [comment:4 whuss]:\n\n> #5438 says it went into 4.0.alpha0 not 3.4.2.\n\nOops, I must have looked at some permutation of \"5438\" then. Sorry for the screwup.\n \n> Cheers,\n\n> Wilfried\n\nClosed as dupe. Jason: If you disagree let us know.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 whuss]:\n\n> #5438 says it went into 4.0.alpha0 not 3.4.2.\n\n\nOops, I must have looked at some permutation of \"5438\" then. Sorry for the screwup.\n \n> Cheers,\n\n\n> Wilfried\n\n\nClosed as dupe. Jason: If you disagree let us know.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-20T11:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6090",
     "type": "issue_comment",
@@ -197,11 +200,14 @@ Replying to [comment:4 whuss]:
 
 > #5438 says it went into 4.0.alpha0 not 3.4.2.
 
+
 Oops, I must have looked at some permutation of "5438" then. Sorry for the screwup.
  
 > Cheers,
 
+
 > Wilfried
+
 
 Closed as dupe. Jason: If you disagree let us know.
 

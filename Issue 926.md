@@ -3,7 +3,7 @@
 archive/issues_000926.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nSAGE should support iterating over sparse multivariate polynomials like this:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3)\nsage: f= 3*x^3*y + 16*x + 7\nsage: for c,m in f:\n....:     print c,m\n....:\n3, x^3*y\n16, x\n7,1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/926\n\n",
+    "body": "Assignee: @malb\n\nSAGE should support iterating over sparse multivariate polynomials like this:\n\n```\nsage: P.<x,y,z> = PolynomialRing(QQ,3)\nsage: f= 3*x^3*y + 16*x + 7\nsage: for c,m in f:\n....:     print c,m\n....:\n3, x^3*y\n16, x\n7,1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/926\n\n",
     "created_at": "2007-10-19T09:59:18Z",
     "labels": [
         "component: commutative algebra",
@@ -30,7 +30,6 @@ sage: for c,m in f:
 16, x
 7,1
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/926
 

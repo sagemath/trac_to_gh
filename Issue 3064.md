@@ -3,7 +3,7 @@
 archive/issues_003064.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix([])\n\nsage: a.density()\n---------------------------------------------------------------------------\n\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3064\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: a = matrix([])\n\nsage: a.density()\n---------------------------------------------------------------------------\n\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3064\n\n",
     "created_at": "2008-04-30T15:12:48Z",
     "labels": [
         "component: linear algebra",
@@ -18,7 +18,6 @@ archive/issues_003064.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: a = matrix([])
 
@@ -28,7 +27,6 @@ sage: a.density()
 
 <type 'exceptions.ZeroDivisionError'>: Rational division by zero
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3064
 

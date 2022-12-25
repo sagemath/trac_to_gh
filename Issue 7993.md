@@ -3,7 +3,7 @@
 archive/issues_007993.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nWhen doctesting a file `a.sage` containing\n\n\n```\ndef foo():\n    \"\"\"\n    sage: 1+1\n   2\n    \"\"\"\n    pass\n```\n\n\n(note the missing space before the 2), you get:\n\n\n```\n[wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage\nsage -t  \"a.sage\"                                           \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [2.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\"\nTotal time for all tests: 2.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7993\n\n",
+    "body": "Assignee: tbd\n\nWhen doctesting a file `a.sage` containing\n\n```\ndef foo():\n    \"\"\"\n    sage: 1+1\n   2\n    \"\"\"\n    pass\n```\n\n(note the missing space before the 2), you get:\n\n```\n[wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage\nsage -t  \"a.sage\"                                           \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [2.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\"\nTotal time for all tests: 2.4 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7993\n\n",
     "created_at": "2010-01-19T06:06:55Z",
     "labels": [
         "component: doctest coverage",
@@ -20,7 +20,6 @@ Assignee: tbd
 
 When doctesting a file `a.sage` containing
 
-
 ```
 def foo():
     """
@@ -30,9 +29,7 @@ def foo():
     pass
 ```
 
-
 (note the missing space before the 2), you get:
-
 
 ```
 [wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage
@@ -48,7 +45,6 @@ The following tests failed:
         sage -t  "a.sage"
 Total time for all tests: 2.4 seconds
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7993
 
@@ -124,7 +120,7 @@ I can try to review this, but I'd rather have a testing framework expert to it.
 archive/issue_comments_069692.json:
 ```json
 {
-    "body": "Attachment [scripts_7993_doctest_error_handling.patch](tarball://root/attachments/some-uuid/ticket7993/scripts_7993_doctest_error_handling.patch) by @qed777 created at 2010-01-31 05:05:14\n\nI noticed an existing, unrelated problem.  Let `foo.py` contain\n\n\n```python\ndef g():\n    \"\"\"\n    sage: 1 + 1\n    11\n    \"\"\"\n    return\n```\n\nThen `sage -tp 1 foo.py` ends with\n\n\n```python\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/.sage//tmp/.doctest_foo.py\n         [2.0 s]\n \n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/apps/sage/local/bin/sage-ptest\", line 361, in <module>\n    failed_files[F.split('#')[0].split()[2]] = None\nIndexError: list index out of range\n```\n",
+    "body": "Attachment [scripts_7993_doctest_error_handling.patch](tarball://root/attachments/some-uuid/ticket7993/scripts_7993_doctest_error_handling.patch) by @qed777 created at 2010-01-31 05:05:14\n\nI noticed an existing, unrelated problem.  Let `foo.py` contain\n\n```python\ndef g():\n    \"\"\"\n    sage: 1 + 1\n    11\n    \"\"\"\n    return\n```\nThen `sage -tp 1 foo.py` ends with\n\n```python\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/.sage//tmp/.doctest_foo.py\n         [2.0 s]\n \n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/apps/sage/local/bin/sage-ptest\", line 361, in <module>\n    failed_files[F.split('#')[0].split()[2]] = None\nIndexError: list index out of range\n```",
     "created_at": "2010-01-31T05:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -137,7 +133,6 @@ Attachment [scripts_7993_doctest_error_handling.patch](tarball://root/attachment
 
 I noticed an existing, unrelated problem.  Let `foo.py` contain
 
-
 ```python
 def g():
     """
@@ -146,9 +141,7 @@ def g():
     """
     return
 ```
-
 Then `sage -tp 1 foo.py` ends with
-
 
 ```python
 1 items had failures:
@@ -163,7 +156,6 @@ Traceback (most recent call last):
     failed_files[F.split('#')[0].split()[2]] = None
 IndexError: list index out of range
 ```
-
 
 
 
@@ -228,7 +220,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069696.json:
 ```json
 {
-    "body": "I wanted to try this patch to see if it would by chance solve #7773, but apparently it needs a rebase\nfor 4.3.3:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_sage.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\nunable to find 'sage-doctest' for patching\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\nunable to find 'sage-ptest' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\nunable to find 'sage-test' for patching\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "body": "I wanted to try this patch to see if it would by chance solve #7773, but apparently it needs a rebase\nfor 4.3.3:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_sage.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\nunable to find 'sage-doctest' for patching\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\nunable to find 'sage-ptest' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\nunable to find 'sage-test' for patching\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
     "created_at": "2010-03-01T17:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -257,7 +249,6 @@ unable to find 'sage-test' for patching
 2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej
 abort: patch failed to apply
 ```
-
 | Sage Version 4.3.3, Release Date: 2010-02-21                       |
 | Type notebook() for the GUI, and license() for information.        |
 Paul
@@ -305,7 +296,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_069699.json:
 ```json
 {
-    "body": "sorry, I still cannot apply this patch on 4.3.3, even with `hg_scripts`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_scripts.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\npatching file sage-doctest\nHunk #1 FAILED at 4\nHunk #2 FAILED at 151\nHunk #3 FAILED at 170\nHunk #4 FAILED at 655\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\npatching file sage-ptest\nHunk #1 FAILED at 163\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\npatching file sage-test\nHunk #1 FAILED at 84\nHunk #2 FAILED at 109\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\n\nDid I something wrong?",
+    "body": "sorry, I still cannot apply this patch on 4.3.3, even with `hg_scripts`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_scripts.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\npatching file sage-doctest\nHunk #1 FAILED at 4\nHunk #2 FAILED at 151\nHunk #3 FAILED at 170\nHunk #4 FAILED at 655\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\npatching file sage-ptest\nHunk #1 FAILED at 163\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\npatching file sage-test\nHunk #1 FAILED at 84\nHunk #2 FAILED at 109\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\nDid I something wrong?",
     "created_at": "2010-03-05T20:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -340,7 +331,6 @@ Hunk #2 FAILED at 109
 2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej
 abort: patch failed to apply
 ```
-
 Did I something wrong?
 
 
@@ -371,7 +361,7 @@ Also, since all hunks are failing, could it be a line ending problem? (mac vs. u
 archive/issue_comments_069701.json:
 ```json
 {
-    "body": "I get:\n\n```\nsage: hg_scripts.status()\nGetting status of modified or unknown files:\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\n? cbc\n? clp\n\n---\n\n```\n\nand:\n\n```\nsage: hg_scripts.log()\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg log  | less\nchangeset:   1449:0893591acc56\ntag:         tip\nuser:        Willem Jan Palenstijn <wjp@usecode.org>\ndate:        Wed Jan 20 10:52:15 2010 -0800\nsummary:     #7993: clean up error handling in sage-doctest\n\nchangeset:   1448:77ae8a697bba\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun Feb 21 17:22:49 2010 -0800\nsummary:     4.3.3\n...\n```\n\nI thought that `sage -clone 7993` would create a fresh clone of 4.3.3, where I could apply\nand test your patch. Do you mean that I've already applied your patch?",
+    "body": "I get:\n\n```\nsage: hg_scripts.status()\nGetting status of modified or unknown files:\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\n? cbc\n? clp\n\n---\n\n```\nand:\n\n```\nsage: hg_scripts.log()\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg log  | less\nchangeset:   1449:0893591acc56\ntag:         tip\nuser:        Willem Jan Palenstijn <wjp@usecode.org>\ndate:        Wed Jan 20 10:52:15 2010 -0800\nsummary:     #7993: clean up error handling in sage-doctest\n\nchangeset:   1448:77ae8a697bba\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun Feb 21 17:22:49 2010 -0800\nsummary:     4.3.3\n...\n```\nI thought that `sage -clone 7993` would create a fresh clone of 4.3.3, where I could apply\nand test your patch. Do you mean that I've already applied your patch?",
     "created_at": "2010-03-05T21:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -392,7 +382,6 @@ cd "/usr/local/sage-4.3.3/sage/local/bin" && hg status
 ---
 
 ```
-
 and:
 
 ```
@@ -410,7 +399,6 @@ date:        Sun Feb 21 17:22:49 2010 -0800
 summary:     4.3.3
 ...
 ```
-
 I thought that `sage -clone 7993` would create a fresh clone of 4.3.3, where I could apply
 and test your patch. Do you mean that I've already applied your patch?
 
@@ -439,7 +427,7 @@ Yes, it does look like it. I don't think `sage -clone` touches the scripts repos
 archive/issue_comments_069703.json:
 ```json
 {
-    "body": "with the patch, we now get with the initial example:\n\n```\ntarte% sage -t a.sage\nsage -t  \"a.sage\"                                           \nException raised by doctesting framework. Use -verbose for details.\n         [1.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\" # Exception from doctest framework\nTotal time for all tests: 1.4 seconds\n```\n\nand the whole doctest still produces 22 Segfaults (see #7773). However, instead of say:\n\n```\nsage -t  tests/benchmark.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed d\\\noctest.\n         [62.3 s]\n```\n\nwe now get:\n\n```\nsage -t  tests/benchmark.py\nThe doctested process was killed by signal 14\n         [62.5 s]\n```\n\nwhich is more informative. I thus give a positive review.",
+    "body": "with the patch, we now get with the initial example:\n\n```\ntarte% sage -t a.sage\nsage -t  \"a.sage\"                                           \nException raised by doctesting framework. Use -verbose for details.\n         [1.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\" # Exception from doctest framework\nTotal time for all tests: 1.4 seconds\n```\nand the whole doctest still produces 22 Segfaults (see #7773). However, instead of say:\n\n```\nsage -t  tests/benchmark.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed d\\\noctest.\n         [62.3 s]\n```\nwe now get:\n\n```\nsage -t  tests/benchmark.py\nThe doctested process was killed by signal 14\n         [62.5 s]\n```\nwhich is more informative. I thus give a positive review.",
     "created_at": "2010-03-08T15:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7993",
     "type": "issue_comment",
@@ -463,7 +451,6 @@ The following tests failed:
         sage -t  "a.sage" # Exception from doctest framework
 Total time for all tests: 1.4 seconds
 ```
-
 and the whole doctest still produces 22 Segfaults (see #7773). However, instead of say:
 
 ```
@@ -472,7 +459,6 @@ A mysterious error (perhaps a memory error?) occurred, which may have crashed d\
 octest.
          [62.3 s]
 ```
-
 we now get:
 
 ```
@@ -480,7 +466,6 @@ sage -t  tests/benchmark.py
 The doctested process was killed by signal 14
          [62.5 s]
 ```
-
 which is more informative. I thus give a positive review.
 
 

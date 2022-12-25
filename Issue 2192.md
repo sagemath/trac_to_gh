@@ -196,7 +196,7 @@ ncalexan -- that's a good point, and I asked William exactly the same thing when
 archive/issue_comments_014359.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\nVery good patch.  A few minor points:\n\n1. There is at least one more \"pyrex\"'s that should be Cython appearing in the patch(ed) files.\n\n2. The doctests of {_lift_cyclotomic_element(self, new_parent)} in `number_field_element_quadratic.pyx` are NOT testing quadratic elements.  Change the doctests to test the right thing.\n\n3. This appears twice in the code now:\n\n```\n        # Right now, I'm a little confused why quadratic extension\n        # fields have a zeta_order function. I would rather they not\n        # have this function, since I don't want to do this isinstance\n        # check here.\n```\n\nMaybe we could delete it?  Or?\n\n4. A comment says:\n\n```\n\t        if new_parent.degree() == 2: \n\t            ## we can only get here if self.parent() and \n\t            ## new_parent are exactly the two fields \n\t            ## CyclotomicField(3) and CyclotomicField(6) \n```\n\nWhy?\n\n5. Regarding the `integral_value` point, the current implementation\n(in this patch) is wrong.  The right solution should be to make it \nso this works:\n\n```\nsage: G = DirichletGroup(60, CyclotomicField(4).ring_of_integers())\n<boom right now>\n```\n\n\nRight now this fails because `is_field` isn't defined for rings \nof integers (see trac #2208). However that should get fixed.  The\nidea with the DirichletGroup command is that `DirichletGroup(N,R)`\ngives Dirichlet characters with values in R.  One shouldn't use an option to `__call__` to determine the values of the character.  Code like this\n\n```\n            if not integral_value:\n                return result\n            else:\n                return self.base_ring().ring_of_integers()(result)\n```\n\nin the patch will actually break if one makes `DirichletGroup(N,R)`\nand R doesn't have a `ring_of_integer()` function, and the user asks for `integral_value`. \n\nSUMMARY: Improve the comments a little, get rid of the `integral_value` option, and make a new trac ticket for fixing `DirichletGroup(N,R)` so it works when R is the ring of integers.  Also possibly make `DirichletGroup(N, integral=True)` return the group with values in the ring of integers of the best cyclotomic field. \n\nWilliam",
+    "body": "REFEREE REPORT:\n\nVery good patch.  A few minor points:\n\n1. There is at least one more \"pyrex\"'s that should be Cython appearing in the patch(ed) files.\n\n2. The doctests of {_lift_cyclotomic_element(self, new_parent)} in `number_field_element_quadratic.pyx` are NOT testing quadratic elements.  Change the doctests to test the right thing.\n\n3. This appears twice in the code now:\n\n```\n        # Right now, I'm a little confused why quadratic extension\n        # fields have a zeta_order function. I would rather they not\n        # have this function, since I don't want to do this isinstance\n        # check here.\n```\nMaybe we could delete it?  Or?\n\n4. A comment says:\n\n```\n\t        if new_parent.degree() == 2: \n\t            ## we can only get here if self.parent() and \n\t            ## new_parent are exactly the two fields \n\t            ## CyclotomicField(3) and CyclotomicField(6) \n```\nWhy?\n\n5. Regarding the `integral_value` point, the current implementation\n(in this patch) is wrong.  The right solution should be to make it \nso this works:\n\n```\nsage: G = DirichletGroup(60, CyclotomicField(4).ring_of_integers())\n<boom right now>\n```\n\nRight now this fails because `is_field` isn't defined for rings \nof integers (see trac #2208). However that should get fixed.  The\nidea with the DirichletGroup command is that `DirichletGroup(N,R)`\ngives Dirichlet characters with values in R.  One shouldn't use an option to `__call__` to determine the values of the character.  Code like this\n\n```\n            if not integral_value:\n                return result\n            else:\n                return self.base_ring().ring_of_integers()(result)\n```\nin the patch will actually break if one makes `DirichletGroup(N,R)`\nand R doesn't have a `ring_of_integer()` function, and the user asks for `integral_value`. \n\nSUMMARY: Improve the comments a little, get rid of the `integral_value` option, and make a new trac ticket for fixing `DirichletGroup(N,R)` so it works when R is the ring of integers.  Also possibly make `DirichletGroup(N, integral=True)` return the group with values in the ring of integers of the best cyclotomic field. \n\nWilliam",
     "created_at": "2008-02-19T02:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
@@ -221,7 +221,6 @@ Very good patch.  A few minor points:
         # have this function, since I don't want to do this isinstance
         # check here.
 ```
-
 Maybe we could delete it?  Or?
 
 4. A comment says:
@@ -232,7 +231,6 @@ Maybe we could delete it?  Or?
 	            ## new_parent are exactly the two fields 
 	            ## CyclotomicField(3) and CyclotomicField(6) 
 ```
-
 Why?
 
 5. Regarding the `integral_value` point, the current implementation
@@ -243,7 +241,6 @@ so this works:
 sage: G = DirichletGroup(60, CyclotomicField(4).ring_of_integers())
 <boom right now>
 ```
-
 
 Right now this fails because `is_field` isn't defined for rings 
 of integers (see trac #2208). However that should get fixed.  The
@@ -256,7 +253,6 @@ gives Dirichlet characters with values in R.  One shouldn't use an option to `__
             else:
                 return self.base_ring().ring_of_integers()(result)
 ```
-
 in the patch will actually break if one makes `DirichletGroup(N,R)`
 and R doesn't have a `ring_of_integer()` function, and the user asks for `integral_value`. 
 

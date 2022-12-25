@@ -67,7 +67,7 @@ Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sag
 archive/issue_comments_019360.json:
 ```json
 {
-    "body": "Patch looks good to me. One minor spelling issue:\n\n```\n Discard the curretn worksheet and quit the currently\n```\n\nI am fixing that in the patch I am applying.\n\nCheers,\n\nMichaeel",
+    "body": "Patch looks good to me. One minor spelling issue:\n\n```\n Discard the curretn worksheet and quit the currently\n```\nI am fixing that in the patch I am applying.\n\nCheers,\n\nMichaeel",
     "created_at": "2008-04-06T14:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ Patch looks good to me. One minor spelling issue:
 ```
  Discard the curretn worksheet and quit the currently
 ```
-
 I am fixing that in the patch I am applying.
 
 Cheers,

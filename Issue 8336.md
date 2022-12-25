@@ -3,7 +3,7 @@
 archive/issues_008336.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\n\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein @jasongrout @robertwb @ncalexan @craigcitro mabshoff\n\nThis is related to #188 and #2899.\n\n```\nsage: R=RealField(150)\nsage: x=R(3493274823748475345934875398475345349.9343498375)\nsage: y=round(x)\nsage: y, type(y)\n(3.49327482375e+36, <type 'sage.rings.real_double.RealDoubleElement'>)\nsage: z=x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\nIf one performs `ZZ(y)` to convert `y` to an integer, one\nhas a huge loss of accuracy.\n\nI see no point of forcing coercion to RDF, which has limited precision and exponent range.\n\nI would expect `round(x)` to return the same value as `z`,\neither as Integer or RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8336\n\n",
     "created_at": "2010-02-23T18:00:50Z",
     "labels": [
         "component: basic arithmetic",
@@ -33,7 +33,6 @@ sage: z=x.round()
 sage: z, type(z)
 (3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)
 ```
-
 If one performs `ZZ(y)` to convert `y` to an integer, one
 has a huge loss of accuracy.
 
@@ -166,7 +165,7 @@ is just fine for elements of RR.
 archive/issue_comments_074301.json:
 ```json
 {
-    "body": "Correction: \n\n\n```\nsage: round(2.5)\n3\nsage: round(2.5, ndigits=1)\n2.500000000000\n```\n",
+    "body": "Correction: \n\n```\nsage: round(2.5)\n3\nsage: round(2.5, ndigits=1)\n2.500000000000\n```",
     "created_at": "2010-11-09T07:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -177,7 +176,6 @@ archive/issue_comments_074301.json:
 
 Correction: 
 
-
 ```
 sage: round(2.5)
 3
@@ -187,13 +185,12 @@ sage: round(2.5, ndigits=1)
 
 
 
-
 ---
 
 archive/issue_comments_074302.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n> Correction: \n> \n> {{{\n> sage: round(2.5)\n> 3\n> sage: round(2.5, ndigits=1)\n> 2.500000000000\n> }}}\n\nit is fine for me that `round(x)` returns a float, however I don't understand why it returns\na float of fixed precision (RDF). It should then be called `RDF_round`. It would be more\nnatural to return a float with the same precision as the input.\n\nPaul",
+    "body": "Replying to [comment:5 robertwb]:\n> Correction: \n> \n> \n> ```\n> sage: round(2.5)\n> 3\n> sage: round(2.5, ndigits=1)\n> 2.500000000000\n> ```\n\n\nit is fine for me that `round(x)` returns a float, however I don't understand why it returns\na float of fixed precision (RDF). It should then be called `RDF_round`. It would be more\nnatural to return a float with the same precision as the input.\n\nPaul",
     "created_at": "2010-11-09T09:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -205,12 +202,14 @@ archive/issue_comments_074302.json:
 Replying to [comment:5 robertwb]:
 > Correction: 
 > 
-> {{{
+> 
+> ```
 > sage: round(2.5)
 > 3
 > sage: round(2.5, ndigits=1)
 > 2.500000000000
-> }}}
+> ```
+
 
 it is fine for me that `round(x)` returns a float, however I don't understand why it returns
 a float of fixed precision (RDF). It should then be called `RDF_round`. It would be more
@@ -225,7 +224,7 @@ Paul
 archive/issue_comments_074303.json:
 ```json
 {
-    "body": "I don't think it should return a float of fixed precision, it just so happened that the input was 53 bits. \n\nWhat I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. Thus\n\n\n```\nsage: L = [RDF(pi), RealField(100)(pi), float(pi)]\nsage: [x.round() for x in L if hasattr(x, 'round')]\n[3, 3]\nsage: [round(x) for x in L]\n[3, 3, 3]\n\nsage: [x.round(ndigits=2) for x in L if hasattr(x, 'round')]\n[3.14, 3.1400000000000000000000000000]\nsage: [round(x, ndigits=2) for x in L]\n[3.14, 3.1400000000000000000000000000, 3.1400000000000001]\nsage: [parent(round(x, ndigits=2)) is parent(x) for x in L]\n[True, True, True]\n```\n\n\nSometimes it seems it'd be quicker to just code this up than keep talking about it :).",
+    "body": "I don't think it should return a float of fixed precision, it just so happened that the input was 53 bits. \n\nWhat I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. Thus\n\n```\nsage: L = [RDF(pi), RealField(100)(pi), float(pi)]\nsage: [x.round() for x in L if hasattr(x, 'round')]\n[3, 3]\nsage: [round(x) for x in L]\n[3, 3, 3]\n\nsage: [x.round(ndigits=2) for x in L if hasattr(x, 'round')]\n[3.14, 3.1400000000000000000000000000]\nsage: [round(x, ndigits=2) for x in L]\n[3.14, 3.1400000000000000000000000000, 3.1400000000000001]\nsage: [parent(round(x, ndigits=2)) is parent(x) for x in L]\n[True, True, True]\n```\n\nSometimes it seems it'd be quicker to just code this up than keep talking about it :).",
     "created_at": "2010-11-09T21:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -237,7 +236,6 @@ archive/issue_comments_074303.json:
 I don't think it should return a float of fixed precision, it just so happened that the input was 53 bits. 
 
 What I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. Thus
-
 
 ```
 sage: L = [RDF(pi), RealField(100)(pi), float(pi)]
@@ -253,7 +251,6 @@ sage: [round(x, ndigits=2) for x in L]
 sage: [parent(round(x, ndigits=2)) is parent(x) for x in L]
 [True, True, True]
 ```
-
 
 Sometimes it seems it'd be quicker to just code this up than keep talking about it :).
 
@@ -320,7 +317,7 @@ Whoops, I didn't realize uploading the patch would end my comments.  I wanted t
 archive/issue_comments_074307.json:
 ```json
 {
-    "body": "> What I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. \n\nthis would be ok for me.\n\nPaul\n\nPS: donmorrison, your patch is missing some examples checking the new behaviour.",
+    "body": "> What I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. \n\n\nthis would be ok for me.\n\nPaul\n\nPS: donmorrison, your patch is missing some examples checking the new behaviour.",
     "created_at": "2010-11-10T08:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -330,6 +327,7 @@ archive/issue_comments_074307.json:
 ```
 
 > What I want is round(x) to call x.round() and possibly x.round(ndigits=ndigits), if available. 
+
 
 this would be ok for me.
 
@@ -402,7 +400,7 @@ Resolution: invalid
 archive/issue_comments_074310.json:
 ```json
 {
-    "body": "I'm going to close this as invalid now since we have the following behavior:\n\n\n```\nsage: R = RealField(150)\nsage: x = R(3493274823748475345934875398475345349.9343498375)\nsage: y = round(x)\nsage: y, type(y)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\nsage: z = x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```\n",
+    "body": "I'm going to close this as invalid now since we have the following behavior:\n\n```\nsage: R = RealField(150)\nsage: x = R(3493274823748475345934875398475345349.9343498375)\nsage: y = round(x)\nsage: y, type(y)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\nsage: z = x.round()\nsage: z, type(z)\n(3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)\n```",
     "created_at": "2011-12-18T15:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8336",
     "type": "issue_comment",
@@ -412,7 +410,6 @@ archive/issue_comments_074310.json:
 ```
 
 I'm going to close this as invalid now since we have the following behavior:
-
 
 ```
 sage: R = RealField(150)
@@ -424,7 +421,6 @@ sage: z = x.round()
 sage: z, type(z)
 (3493274823748475345934875398475345350, <type 'sage.rings.integer.Integer'>)
 ```
-
 
 
 

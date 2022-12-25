@@ -57,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7956
 archive/issue_comments_069302.json:
 ```json
 {
-    "body": "A cleaner version of the code to reproduce it:\n\n\n```\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n",
+    "body": "A cleaner version of the code to reproduce it:\n\n```\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```",
     "created_at": "2010-01-16T18:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
@@ -68,7 +68,6 @@ archive/issue_comments_069302.json:
 
 A cleaner version of the code to reproduce it:
 
-
 ```
 sage: S.<p,q> = QQ[]
 sage: A1.<r> = AffineSpace(QQ,1)
@@ -78,7 +77,6 @@ sage: type(A1_emb)
 sage: g = A1.hom([2,r],A1_emb)
 TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)
 ```
-
 
 
 
@@ -161,7 +159,7 @@ Changing status from new to needs_review.
 archive/issue_comments_069307.json:
 ```json
 {
-    "body": "Replying to [comment:3 mjo]:\n> It looks like this is working, here's a doctest for it.\n\nYou mean that the bug is fixed in current Sage already, not that wjp's patch is working.\n\nApply sage-trac_7956.patch only.",
+    "body": "Replying to [comment:3 mjo]:\n> It looks like this is working, here's a doctest for it.\n\n\nYou mean that the bug is fixed in current Sage already, not that wjp's patch is working.\n\nApply sage-trac_7956.patch only.",
     "created_at": "2012-01-16T16:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
@@ -172,6 +170,7 @@ archive/issue_comments_069307.json:
 
 Replying to [comment:3 mjo]:
 > It looks like this is working, here's a doctest for it.
+
 
 You mean that the bug is fixed in current Sage already, not that wjp's patch is working.
 
@@ -202,7 +201,7 @@ Why not just have the ticket closed, instead of adding a doctest?
 archive/issue_comments_069309.json:
 ```json
 {
-    "body": "Replying to [comment:5 mstreng]:\n> Why not just have the ticket closed, instead of adding a doctest?\n\nPrimarily to prevent someone from breaking it again in the future (by accident, anyway).",
+    "body": "Replying to [comment:5 mstreng]:\n> Why not just have the ticket closed, instead of adding a doctest?\n\n\nPrimarily to prevent someone from breaking it again in the future (by accident, anyway).",
     "created_at": "2012-01-16T19:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
@@ -213,6 +212,7 @@ archive/issue_comments_069309.json:
 
 Replying to [comment:5 mstreng]:
 > Why not just have the ticket closed, instead of adding a doctest?
+
 
 Primarily to prevent someone from breaking it again in the future (by accident, anyway).
 

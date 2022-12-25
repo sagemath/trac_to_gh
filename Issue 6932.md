@@ -3,7 +3,7 @@
 archive/issues_006932.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: jordan_form\n\nThe following code fails:\n\n```\nM=Matrix(1,1,[1])\nM.jordan_form(transformation=True)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6932\n\n",
+    "body": "Assignee: tbd\n\nKeywords: jordan_form\n\nThe following code fails:\n\n```\nM=Matrix(1,1,[1])\nM.jordan_form(transformation=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6932\n\n",
     "created_at": "2009-09-15T05:54:37Z",
     "labels": [
         "component: algebra",
@@ -26,7 +26,6 @@ The following code fails:
 M=Matrix(1,1,[1])
 M.jordan_form(transformation=True)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/6932
@@ -111,7 +110,7 @@ This is fixed by the patch at ticket #6942.  Once that ticket receives a positiv
 archive/issue_comments_057179.json:
 ```json
 {
-    "body": "I checked with sage-4.3.3, and we indeed get the correct rank (7) for #6942, thus I guess we can\nindeed close that ticket:\n\n```\nsage: M=Matrix(1,1,[1])\nsage: M.jordan_form(transformation=True)\n([1], [1])\n```\n",
+    "body": "I checked with sage-4.3.3, and we indeed get the correct rank (7) for #6942, thus I guess we can\nindeed close that ticket:\n\n```\nsage: M=Matrix(1,1,[1])\nsage: M.jordan_form(transformation=True)\n([1], [1])\n```",
     "created_at": "2010-02-25T22:13:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6932",
     "type": "issue_comment",
@@ -128,7 +127,6 @@ sage: M=Matrix(1,1,[1])
 sage: M.jordan_form(transformation=True)
 ([1], [1])
 ```
-
 
 
 

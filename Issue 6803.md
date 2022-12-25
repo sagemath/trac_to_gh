@@ -3,7 +3,7 @@
 archive/issues_006803.json:
 ```json
 {
-    "body": "We should have a symbolic Kronecker delta in Sage.\n\nAlso, current implementation of signum (sgn) function \nreturns wrong answer for symbolic input.\n\n```\nsage: sgn(x)\n1\nsage: sgn(-x)\n1\n```\n\n\nSo we should make sgn() symbolic aware. Given, implementation of \nthese functions in new symbolics should be very similar to the existing generalized function **Dirac delta** and **Heaviside**, I am putting them together here. \n\nAlso, ticket #777 should be closed down as Sign is already in Sage\nand this ticket will further enhance it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6803\n\n",
+    "body": "We should have a symbolic Kronecker delta in Sage.\n\nAlso, current implementation of signum (sgn) function \nreturns wrong answer for symbolic input.\n\n```\nsage: sgn(x)\n1\nsage: sgn(-x)\n1\n```\n\nSo we should make sgn() symbolic aware. Given, implementation of \nthese functions in new symbolics should be very similar to the existing generalized function **Dirac delta** and **Heaviside**, I am putting them together here. \n\nAlso, ticket #777 should be closed down as Sign is already in Sage\nand this ticket will further enhance it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6803\n\n",
     "created_at": "2009-08-22T11:34:45Z",
     "labels": [
         "component: symbolics"
@@ -26,7 +26,6 @@ sage: sgn(x)
 sage: sgn(-x)
 1
 ```
-
 
 So we should make sgn() symbolic aware. Given, implementation of 
 these functions in new symbolics should be very similar to the existing generalized function **Dirac delta** and **Heaviside**, I am putting them together here. 
@@ -240,7 +239,7 @@ Resolution: fixed
 archive/issue_comments_055920.json:
 ```json
 {
-    "body": "Replying to [comment:5 mhansen]:\n> I had to add a small patch to the doctest for sage.quadratic_forms.extras.sgn to make sure that the doctest was actually doctesting that function.\n\nCan you post that here, or at least the code in braces - just for posterity?",
+    "body": "Replying to [comment:5 mhansen]:\n> I had to add a small patch to the doctest for sage.quadratic_forms.extras.sgn to make sure that the doctest was actually doctesting that function.\n\n\nCan you post that here, or at least the code in braces - just for posterity?",
     "created_at": "2009-11-17T14:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
@@ -251,6 +250,7 @@ archive/issue_comments_055920.json:
 
 Replying to [comment:5 mhansen]:
 > I had to add a small patch to the doctest for sage.quadratic_forms.extras.sgn to make sure that the doctest was actually doctesting that function.
+
 
 Can you post that here, or at least the code in braces - just for posterity?
 
@@ -279,7 +279,7 @@ apply after previous
 archive/issue_comments_055922.json:
 ```json
 {
-    "body": "Attachment [trac_6803-sgn.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-sgn.patch) by mvngu created at 2009-12-09 03:35:36\n\nReplying to [comment:6 kcrisman]:\n> Can you post that here, or at least the code in braces - just for posterity?  \n\nmhansen's patch is contained in `trac_6803-sgn.patch`",
+    "body": "Attachment [trac_6803-sgn.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-sgn.patch) by mvngu created at 2009-12-09 03:35:36\n\nReplying to [comment:6 kcrisman]:\n> Can you post that here, or at least the code in braces - just for posterity?  \n\n\nmhansen's patch is contained in `trac_6803-sgn.patch`",
     "created_at": "2009-12-09T03:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
@@ -292,5 +292,6 @@ Attachment [trac_6803-sgn.patch](tarball://root/attachments/some-uuid/ticket6803
 
 Replying to [comment:6 kcrisman]:
 > Can you post that here, or at least the code in braces - just for posterity?  
+
 
 mhansen's patch is contained in `trac_6803-sgn.patch`

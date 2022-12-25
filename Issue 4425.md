@@ -3,7 +3,7 @@
 archive/issues_004425.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nIn Sage-3.1.4 we have this, which I consider wrong:\n\n\n```\nsage: n = 4\nsage: type(sqrt(n))\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: type(n.sqrt())\n<type 'sage.rings.integer.Integer'>\n```\n\n\nI think sqrt(foo) should first check if foo has a sqrt method, and\nif so call it.    I realize there is a subtle problem here, because\nthe integer sqrt function calls the symbolic calculus one!  So we\nneed some sort of architecture to fix this right.   This isn't trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4425\n\n",
+    "body": "Assignee: somebody\n\nIn Sage-3.1.4 we have this, which I consider wrong:\n\n```\nsage: n = 4\nsage: type(sqrt(n))\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: type(n.sqrt())\n<type 'sage.rings.integer.Integer'>\n```\n\nI think sqrt(foo) should first check if foo has a sqrt method, and\nif so call it.    I realize there is a subtle problem here, because\nthe integer sqrt function calls the symbolic calculus one!  So we\nneed some sort of architecture to fix this right.   This isn't trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4425\n\n",
     "created_at": "2008-11-02T17:34:58Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,7 +20,6 @@ Assignee: somebody
 
 In Sage-3.1.4 we have this, which I consider wrong:
 
-
 ```
 sage: n = 4
 sage: type(sqrt(n))
@@ -28,7 +27,6 @@ sage: type(sqrt(n))
 sage: type(n.sqrt())
 <type 'sage.rings.integer.Integer'>
 ```
-
 
 I think sqrt(foo) should first check if foo has a sqrt method, and
 if so call it.    I realize there is a subtle problem here, because
@@ -102,7 +100,7 @@ Based on 3.2.alpha0
 archive/issue_comments_032469.json:
 ```json
 {
-    "body": "Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by @mwhansen created at 2008-11-05 07:31:34\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```\n",
+    "body": "Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4425/sqrt-nonsymbolic.patch) by @mwhansen created at 2008-11-05 07:31:34\n\nI think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see\n\n```\nsage: sqrt._do_sqrt(4)\n2\nsage: type(_)\n<class 'sage.calculus.calculus.SymbolicComposition'>\nsage: sqrt._do_sqrt(5)\nsqrt(5)\nsage: sqrt._do_sqrt(5, all=True)\n[sqrt(5), -sqrt(5)]\n```",
     "created_at": "2008-11-05T07:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -115,7 +113,6 @@ Attachment [sqrt-nonsymbolic.patch](tarball://root/attachments/some-uuid/ticket4
 
 I think that the .sqrt() method in Integer and Rational should call sqrt._do_sqrt instead of creating the SymbolicComposition themselves.  For example, see
 
-
 ```
 sage: sqrt._do_sqrt(4)
 2
@@ -126,7 +123,6 @@ sqrt(5)
 sage: sqrt._do_sqrt(5, all=True)
 [sqrt(5), -sqrt(5)]
 ```
-
 
 
 
@@ -235,7 +231,7 @@ mabshoff -- apply this and sqrt-nonsymbolic-1.patch; don't apply anything else
 archive/issue_comments_032475.json:
 ```json
 {
-    "body": "Replying to [comment:5 was]:\n> I attached a trivial followup patch to sqrt-nonsymbolic-1.patch which adds a docstring for the _do_sqrt function (which had no docstring) and some doctests to that function.  The new docstring also clarifies that the extend option to _do_sqrt is completely ignored, and why that is the right behavior. \n\nThis seems okay; I didn't have time to merge it but the new tests behave correctly.  So this means that the following is the desired behavior for when to extend and when not to extend?\n\n```\nsage: sqrt._do_sqrt(Integer(3),extend=False)\nsqrt(3)\nsage: a=3; type(a)\n<type 'sage.rings.integer.Integer'>\nsage: a.sqrt(extend=False)\n---------------------------------------------------------------------------\nValueError: square root of 3 not an integer\n```\n\nIf so, then let's finally let the square root of 4 be 2!",
+    "body": "Replying to [comment:5 was]:\n> I attached a trivial followup patch to sqrt-nonsymbolic-1.patch which adds a docstring for the _do_sqrt function (which had no docstring) and some doctests to that function.  The new docstring also clarifies that the extend option to _do_sqrt is completely ignored, and why that is the right behavior. \n\n\nThis seems okay; I didn't have time to merge it but the new tests behave correctly.  So this means that the following is the desired behavior for when to extend and when not to extend?\n\n```\nsage: sqrt._do_sqrt(Integer(3),extend=False)\nsqrt(3)\nsage: a=3; type(a)\n<type 'sage.rings.integer.Integer'>\nsage: a.sqrt(extend=False)\n---------------------------------------------------------------------------\nValueError: square root of 3 not an integer\n```\nIf so, then let's finally let the square root of 4 be 2!",
     "created_at": "2008-11-06T21:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4425",
     "type": "issue_comment",
@@ -246,6 +242,7 @@ archive/issue_comments_032475.json:
 
 Replying to [comment:5 was]:
 > I attached a trivial followup patch to sqrt-nonsymbolic-1.patch which adds a docstring for the _do_sqrt function (which had no docstring) and some doctests to that function.  The new docstring also clarifies that the extend option to _do_sqrt is completely ignored, and why that is the right behavior. 
+
 
 This seems okay; I didn't have time to merge it but the new tests behave correctly.  So this means that the following is the desired behavior for when to extend and when not to extend?
 
@@ -258,7 +255,6 @@ sage: a.sqrt(extend=False)
 ---------------------------------------------------------------------------
 ValueError: square root of 3 not an integer
 ```
-
 If so, then let's finally let the square root of 4 be 2!
 
 

@@ -3,7 +3,7 @@
 archive/issues_003422.json:
 ```json
 {
-    "body": "Assignee: tba\n\nMichael Yurko reported in http://groups.google.com/group/sage-devel/t/9300a4480eafd679\n\n```\nIn the reference manual (13.7 Tables of zeros of the Riemann-Zeta\nfunction) it states that zeta_zeros() gives a list of the \"first 10000\nimaginary parts.\" However, it should say \"first 100000 imaginary\nparts\" (add a zero to read 100,000). Also, it might serve to mention\nthat this is an optional package that doesn't come by default.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3422\n\n",
+    "body": "Assignee: tba\n\nMichael Yurko reported in http://groups.google.com/group/sage-devel/t/9300a4480eafd679\n\n```\nIn the reference manual (13.7 Tables of zeros of the Riemann-Zeta\nfunction) it states that zeta_zeros() gives a list of the \"first 10000\nimaginary parts.\" However, it should say \"first 100000 imaginary\nparts\" (add a zero to read 100,000). Also, it might serve to mention\nthat this is an optional package that doesn't come by default.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3422\n\n",
     "created_at": "2008-06-13T23:40:55Z",
     "labels": [
         "component: documentation",
@@ -27,7 +27,6 @@ imaginary parts." However, it should say "first 100000 imaginary
 parts" (add a zero to read 100,000). Also, it might serve to mention
 that this is an optional package that doesn't come by default.
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3422

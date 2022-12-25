@@ -3,7 +3,7 @@
 archive/issues_008367.json:
 ```json
 {
-    "body": "Assignee: giraudo\n\nKeywords: Subsets element_class\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\n\nNote: this should be caught by setting good categories \n\n```\nsage: s.category()\nCategory of objects\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8367\n\n",
+    "body": "Assignee: giraudo\n\nKeywords: Subsets element_class\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\nNote: this should be caught by setting good categories \n\n```\nsage: s.category()\nCategory of objects\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8367\n\n",
     "created_at": "2010-02-25T17:39:41Z",
     "labels": [
         "component: combinatorics",
@@ -29,14 +29,12 @@ sage: isinstance(e, s.element_class)
 False
 ```
 
-
 Note: this should be caught by setting good categories 
 
 ```
 sage: s.category()
 Category of objects
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8367
 

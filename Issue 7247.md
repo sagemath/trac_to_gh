@@ -3,7 +3,7 @@
 archive/issues_007247.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\ncreating locale\ncreating locale/da\ncreating locale/da/LC_MESSAGES\ngenerating locale/da/LC_MESSAGES/hg.mo from i18n/da.po\nmsgfmt -v -o locale/da/LC_MESSAGES/hg.mo i18n/da.po -c\ndyld: Library not loaded: /usr/local/lib/libgettextsrc-0.14.5.dylib\n  Referenced from: /usr/local/bin/msgfmt\n  Reason: image not found\nerror: command 'msgfmt' terminated by signal 5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7247\n\n",
+    "body": "Assignee: mabshoff\n\n```\ncreating locale\ncreating locale/da\ncreating locale/da/LC_MESSAGES\ngenerating locale/da/LC_MESSAGES/hg.mo from i18n/da.po\nmsgfmt -v -o locale/da/LC_MESSAGES/hg.mo i18n/da.po -c\ndyld: Library not loaded: /usr/local/lib/libgettextsrc-0.14.5.dylib\n  Referenced from: /usr/local/bin/msgfmt\n  Reason: image not found\nerror: command 'msgfmt' terminated by signal 5\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7247\n\n",
     "created_at": "2009-10-19T07:17:28Z",
     "labels": [
         "component: packages: standard",
@@ -19,7 +19,6 @@ archive/issues_007247.json:
 ```
 Assignee: mabshoff
 
-
 ```
 creating locale
 creating locale/da
@@ -31,7 +30,6 @@ dyld: Library not loaded: /usr/local/lib/libgettextsrc-0.14.5.dylib
   Reason: image not found
 error: command 'msgfmt' terminated by signal 5
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7247
 
@@ -62,7 +60,7 @@ I think this is because gettext isn't installed.  We either need to include gett
 archive/issue_comments_060056.json:
 ```json
 {
-    "body": "Hmm.  Mercurial built fine on OS X 10.6 on my machine.  At various points in install.log, it says\n\n```\nchecking for xgettext... no\n...\nchecking for GNU gettext in libc... no\n...\nchecking for GNU gettext in libintl... no\n```\n\nso I don't seem to have gettext installed.",
+    "body": "Hmm.  Mercurial built fine on OS X 10.6 on my machine.  At various points in install.log, it says\n\n```\nchecking for xgettext... no\n...\nchecking for GNU gettext in libc... no\n...\nchecking for GNU gettext in libintl... no\n```\nso I don't seem to have gettext installed.",
     "created_at": "2009-10-19T18:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7247",
     "type": "issue_comment",
@@ -80,7 +78,6 @@ checking for GNU gettext in libc... no
 ...
 checking for GNU gettext in libintl... no
 ```
-
 so I don't seem to have gettext installed.
 
 

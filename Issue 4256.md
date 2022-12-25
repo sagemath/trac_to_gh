@@ -129,7 +129,7 @@ The trac_4256_v3.patch also incorporates the changes in #4164.  Polyhedra can no
 archive/issue_comments_030913.json:
 ```json
 {
-    "body": "The ambient_dim function overwrites the content self._dim thus making dim() return a wrong answer:\n\n\n```\nsage: p = Polyhedron(vertices = [[0,0,1]])\nsage: p.dim()\n0\nsage: p.ambiant_dim()\n3\nsage: p.dim()\n3\n```\n\n\nIn the vertex_adjacency_matrix() docstring, maybe you should use 'binary' rather than '0/1'\n\nIn render_solid(), since you now have ambient_dim(), why not use it?  It could replace the ugly test I put there.\n\nAlso for the 'special' polyhedron creation methods, it could be good to reuse the approach taken for graphs, where you have the Graph class and an instance of a special class called graphs where you have building methods for most interesting types of graphs.\n\nThe first item is a must-fix, the other three would be nice, but are not stricly essential.",
+    "body": "The ambient_dim function overwrites the content self._dim thus making dim() return a wrong answer:\n\n```\nsage: p = Polyhedron(vertices = [[0,0,1]])\nsage: p.dim()\n0\nsage: p.ambiant_dim()\n3\nsage: p.dim()\n3\n```\n\nIn the vertex_adjacency_matrix() docstring, maybe you should use 'binary' rather than '0/1'\n\nIn render_solid(), since you now have ambient_dim(), why not use it?  It could replace the ugly test I put there.\n\nAlso for the 'special' polyhedron creation methods, it could be good to reuse the approach taken for graphs, where you have the Graph class and an instance of a special class called graphs where you have building methods for most interesting types of graphs.\n\nThe first item is a must-fix, the other three would be nice, but are not stricly essential.",
     "created_at": "2008-10-23T02:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4256",
     "type": "issue_comment",
@@ -140,7 +140,6 @@ archive/issue_comments_030913.json:
 
 The ambient_dim function overwrites the content self._dim thus making dim() return a wrong answer:
 
-
 ```
 sage: p = Polyhedron(vertices = [[0,0,1]])
 sage: p.dim()
@@ -150,7 +149,6 @@ sage: p.ambiant_dim()
 sage: p.dim()
 3
 ```
-
 
 In the vertex_adjacency_matrix() docstring, maybe you should use 'binary' rather than '0/1'
 

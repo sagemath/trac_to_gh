@@ -90,7 +90,7 @@ Simon, can you review my patch?
 archive/issue_comments_026358.json:
 ```json
 {
-    "body": "The patch applies to sage-3.1.1\n\nConsider a little test:\n\n```\nsage: M=MatrixSpace(GF(2),10000,10000).random_element()\nsage: M.set_immutable()\nsage: time M.__hash__()\n```\n\nWithout the patch, i had to interrupt sage after few *__minutes__* since it ate pretty much of my computer's memory. \n\nWith the patch, we get\n\n```\nsage: time M.__hash__()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n-2570088162955604276\n```\n\n\nWell done, Martin! I give a positive review.\n\nThe patch contains a doc-test. One problem for me: Typing `M.__hash__?`, i don't see them. What is the user supposed to do in order to see the doc-string of the respective hash method?\n\nI know that the following should be another ticket. But here are two items on my wish list:\n1. Can similar things be done with the hash of matrices over GF(p), p>2?\n2. Please also improve pickling of matrices! Example:\n {{{\nsage: M=MatrixSpace(GF(2),1000,1000).random_element()\nsage: timeit('x=loads(dumps(M))')\n5 loops, best of 3: 2.33 s per loop\n }}}\n which is somehow slowish.",
+    "body": "The patch applies to sage-3.1.1\n\nConsider a little test:\n\n```\nsage: M=MatrixSpace(GF(2),10000,10000).random_element()\nsage: M.set_immutable()\nsage: time M.__hash__()\n```\nWithout the patch, i had to interrupt sage after few *__minutes__* since it ate pretty much of my computer's memory. \n\nWith the patch, we get\n\n```\nsage: time M.__hash__()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n-2570088162955604276\n```\n\nWell done, Martin! I give a positive review.\n\nThe patch contains a doc-test. One problem for me: Typing `M.__hash__?`, i don't see them. What is the user supposed to do in order to see the doc-string of the respective hash method?\n\nI know that the following should be another ticket. But here are two items on my wish list:\n1. Can similar things be done with the hash of matrices over GF(p), p>2?\n2. Please also improve pickling of matrices! Example:\n {{{\nsage: M=MatrixSpace(GF(2),1000,1000).random_element()\nsage: timeit('x=loads(dumps(M))')\n5 loops, best of 3: 2.33 s per loop\n }}}\n which is somehow slowish.",
     "created_at": "2008-08-26T09:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
@@ -108,7 +108,6 @@ sage: M=MatrixSpace(GF(2),10000,10000).random_element()
 sage: M.set_immutable()
 sage: time M.__hash__()
 ```
-
 Without the patch, i had to interrupt sage after few *__minutes__* since it ate pretty much of my computer's memory. 
 
 With the patch, we get
@@ -119,7 +118,6 @@ CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 Wall time: 0.00 s
 -2570088162955604276
 ```
-
 
 Well done, Martin! I give a positive review.
 
@@ -218,7 +216,7 @@ archive/issue_events_008520.json:
 archive/issue_comments_026362.json:
 ```json
 {
-    "body": "Replying to [comment:3 SimonKing]:\n\n\n> The patch contains a doc-test. One problem for me: Typing `M.__hash__?`, i don't see them. What is the user supposed to do in order to see the doc-string of the respective hash method?\n\nThat could be a bug for introspection (or however that thingy is called). Could you open a ticket?\n \n>  1. Can similar things be done with the hash of matrices over GF(p), p>2?\n\nYes it can, please open a Trac ticket and I'll do it as soon as I find some time. \n\n>  2. Please also improve pickling of matrices! Example:\n>  {{{\n> sage: M=MatrixSpace(GF(2),1000,1000).random_element()\n> sage: timeit('x=loads(dumps(M))')\n> 5 loops, best of 3: 2.33 s per loop\n>  }}}\n>  which is somehow slowish.\n\nThat is #3324 which is blocked by a problem on OSX 10.4 and libpng.",
+    "body": "Replying to [comment:3 SimonKing]:\n\n\n> The patch contains a doc-test. One problem for me: Typing `M.__hash__?`, i don't see them. What is the user supposed to do in order to see the doc-string of the respective hash method?\n\n\nThat could be a bug for introspection (or however that thingy is called). Could you open a ticket?\n \n>  1. Can similar things be done with the hash of matrices over GF(p), p>2?\n\n\nYes it can, please open a Trac ticket and I'll do it as soon as I find some time. \n\n>  2. Please also improve pickling of matrices! Example:\n>  \n>  ```\n\n> sage: M=MatrixSpace(GF(2),1000,1000).random_element()\n> sage: timeit('x=loads(dumps(M))')\n> 5 loops, best of 3: 2.33 s per loop\n>  }}}\n>  which is somehow slowish.\n\nThat is #3324 which is blocked by a problem on OSX 10.4 and libpng.",
     "created_at": "2008-08-26T10:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
@@ -232,14 +230,18 @@ Replying to [comment:3 SimonKing]:
 
 > The patch contains a doc-test. One problem for me: Typing `M.__hash__?`, i don't see them. What is the user supposed to do in order to see the doc-string of the respective hash method?
 
+
 That could be a bug for introspection (or however that thingy is called). Could you open a ticket?
  
 >  1. Can similar things be done with the hash of matrices over GF(p), p>2?
 
+
 Yes it can, please open a Trac ticket and I'll do it as soon as I find some time. 
 
 >  2. Please also improve pickling of matrices! Example:
->  {{{
+>  
+>  ```
+
 > sage: M=MatrixSpace(GF(2),1000,1000).random_element()
 > sage: timeit('x=loads(dumps(M))')
 > 5 loops, best of 3: 2.33 s per loop
@@ -307,7 +309,7 @@ Resolution changed from fixed to
 archive/issue_comments_026365.json:
 ```json
 {
-    "body": "Sorry, but i think i should re-open the ticket:\n\n```\nsage: M = MatrixSpace(GF(2),10000,10000).random_element()\nsage: M.is_mutable()\nTrue\nsage: M.__hash__()\n354973654957594997\n```\n\n\nA mutable object is not allowed to have a hash, AFAIK. \nOn the other hand, the hash-value seems not to be cached:\n\n```\nsage: M[0,0]\n1\nsage: M[0,0]=0\nsage: M.__hash__()\n-8868398381897180811\n```\n\n\nSo, the hash value has changed (i.e., was re-computed) by changing the matrix...\n\n```\nsage: N=copy(M)\nsage: N.__hash__()\n-8868398381897180811\n```\n\n... and has not changed by copying the matrix.\n\nBy consequence, it may be that everything is alright.\n\nHowever, I re-open the ticket, because I think this should be addressed -- either by a new patch raising an exception when `M` is mutable, or by the assertion that \"mutable objects have no hash\" is a rule but no law, and that it is fine since the hash is not cached.\n\nCheers\n     Simon",
+    "body": "Sorry, but i think i should re-open the ticket:\n\n```\nsage: M = MatrixSpace(GF(2),10000,10000).random_element()\nsage: M.is_mutable()\nTrue\nsage: M.__hash__()\n354973654957594997\n```\n\nA mutable object is not allowed to have a hash, AFAIK. \nOn the other hand, the hash-value seems not to be cached:\n\n```\nsage: M[0,0]\n1\nsage: M[0,0]=0\nsage: M.__hash__()\n-8868398381897180811\n```\n\nSo, the hash value has changed (i.e., was re-computed) by changing the matrix...\n\n```\nsage: N=copy(M)\nsage: N.__hash__()\n-8868398381897180811\n```\n... and has not changed by copying the matrix.\n\nBy consequence, it may be that everything is alright.\n\nHowever, I re-open the ticket, because I think this should be addressed -- either by a new patch raising an exception when `M` is mutable, or by the assertion that \"mutable objects have no hash\" is a rule but no law, and that it is fine since the hash is not cached.\n\nCheers\n     Simon",
     "created_at": "2008-08-26T13:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
@@ -326,7 +328,6 @@ sage: M.__hash__()
 354973654957594997
 ```
 
-
 A mutable object is not allowed to have a hash, AFAIK. 
 On the other hand, the hash-value seems not to be cached:
 
@@ -338,7 +339,6 @@ sage: M.__hash__()
 -8868398381897180811
 ```
 
-
 So, the hash value has changed (i.e., was re-computed) by changing the matrix...
 
 ```
@@ -346,7 +346,6 @@ sage: N=copy(M)
 sage: N.__hash__()
 -8868398381897180811
 ```
-
 ... and has not changed by copying the matrix.
 
 By consequence, it may be that everything is alright.

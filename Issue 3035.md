@@ -4,7 +4,7 @@ segfault with new cython & -ba
 archive/issues_003035.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
+    "body": "Assignee: @williamstein\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
     "created_at": "2008-04-26T23:48:15Z",
     "labels": [
         "component: calculus",
@@ -28,7 +28,6 @@ The test in question is
     sage: loads(dumps(eqn)) == eqn 
     True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3035
 
@@ -131,7 +130,7 @@ Specifically this is caused by sage-2419-refactor.patch
 archive/issue_comments_020848.json:
 ```json
 {
-    "body": "Everything in that patch except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\n\ncause segfaults.",
+    "body": "Everything in that patch except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\ncause segfaults.",
     "created_at": "2008-04-27T03:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
@@ -146,7 +145,6 @@ Everything in that patch except the functions
     def _crash_msg(self):
     def _interrupt(self):
 ```
-
 cause segfaults.
 
 
@@ -156,7 +154,7 @@ cause segfaults.
 archive/issue_comments_020849.json:
 ```json
 {
-    "body": "Correction:\nEverything in that patch that alters expect.py except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\n\ncause segfaults",
+    "body": "Correction:\nEverything in that patch that alters expect.py except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\ncause segfaults",
     "created_at": "2008-04-27T03:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3035",
     "type": "issue_comment",
@@ -172,7 +170,6 @@ Everything in that patch that alters expect.py except the functions
     def _crash_msg(self):
     def _interrupt(self):
 ```
-
 cause segfaults
 
 

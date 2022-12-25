@@ -3,7 +3,7 @@
 archive/issues_008918.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow\n\nSee these examples:\n\n\n```\nsage: Permutation([1,2,3])\n[1, 2, 3]\nsage: Permutation([1,2,3,1])\n[1, 2, 3, 1]\nsage: [1,2,3] in Permutations()\nTrue\nsage: [1,2,3,1] in Permutations()\nFalse\nsage: Permutation([1,2,3,1]) in Permutations()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8918\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow\n\nSee these examples:\n\n```\nsage: Permutation([1,2,3])\n[1, 2, 3]\nsage: Permutation([1,2,3,1])\n[1, 2, 3, 1]\nsage: [1,2,3] in Permutations()\nTrue\nsage: [1,2,3,1] in Permutations()\nFalse\nsage: Permutation([1,2,3,1]) in Permutations()\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8918\n\n",
     "created_at": "2010-05-07T16:48:02Z",
     "labels": [
         "component: combinatorics",
@@ -23,7 +23,6 @@ CC:  @jbandlow
 
 See these examples:
 
-
 ```
 sage: Permutation([1,2,3])
 [1, 2, 3]
@@ -36,7 +35,6 @@ False
 sage: Permutation([1,2,3,1]) in Permutations()
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8918
 

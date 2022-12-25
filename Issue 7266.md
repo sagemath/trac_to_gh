@@ -126,7 +126,7 @@ We're looking at using this for provable computations of Heegner points, where t
 archive/issue_comments_060261.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> Looks good to me. It's a simple enough formula that I'd say the redundant implementation is worth it if just for the ease of introspection. \n> \n> We're looking at using this for provable computations of Heegner points, where the field of definition is not a priori known. \n\nFair point(s).  One reason for getting better (usually) bounds for *rational* points via the CPS method is precisely due to this restriction.  I have no objection!",
+    "body": "Replying to [comment:3 robertwb]:\n> Looks good to me. It's a simple enough formula that I'd say the redundant implementation is worth it if just for the ease of introspection. \n> \n> We're looking at using this for provable computations of Heegner points, where the field of definition is not a priori known. \n\n\nFair point(s).  One reason for getting better (usually) bounds for *rational* points via the CPS method is precisely due to this restriction.  I have no objection!",
     "created_at": "2009-10-25T14:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7266",
     "type": "issue_comment",
@@ -139,6 +139,7 @@ Replying to [comment:3 robertwb]:
 > Looks good to me. It's a simple enough formula that I'd say the redundant implementation is worth it if just for the ease of introspection. 
 > 
 > We're looking at using this for provable computations of Heegner points, where the field of definition is not a priori known. 
+
 
 Fair point(s).  One reason for getting better (usually) bounds for *rational* points via the CPS method is precisely due to this restriction.  I have no objection!
 

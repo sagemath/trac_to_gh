@@ -3,7 +3,7 @@
 archive/issues_003881.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCurrently we have:\n\n```\nsage -t -long devel/sage/sage/rings/fraction_field_element.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_fraction_field_element.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n\n\nsage -t -long devel/sage/sage/modules/free_quadratic_module.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n```\n\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3881\n\n",
+    "body": "Assignee: mabshoff\n\nCurrently we have:\n\n```\nsage -t -long devel/sage/sage/rings/fraction_field_element.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_fraction_field_element.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n\n\nsage -t -long devel/sage/sage/modules/free_quadratic_module.py\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n/scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!\n  # -*- coding: utf-8 -*-\n```\nThe attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3881\n\n",
     "created_at": "2008-08-16T21:20:17Z",
     "labels": [
         "component: doctest coverage",
@@ -32,7 +32,6 @@ sage -t -long devel/sage/sage/modules/free_quadratic_module.py
 /scratch/mabshoff/release-cycle/sage-3.1.rc0/tmp/.doctest_free_quadratic_module.py:1: DeprecationWarning: MPolynomialRing is deprecated, use PolynomialRing instead!
   # -*- coding: utf-8 -*-
 ```
-
 The attached patch fixes that.
 
 Cheers,

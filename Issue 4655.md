@@ -3,7 +3,7 @@
 archive/issues_004655.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: plot\n\nThis test fails in 3.2.1.rc0:\n\n```\njec@host-57-89%./sage -t  \"devel/sage/sage/plot/plot.py\"\nsage -t  \"devel/sage/sage/plot/plot.py\"                     \n**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage/sage/plot/plot.py\", line 2283:\n    sage: adaptive_refinement(sin, (0,0), (pi,0), adaptive_tolerance=0.01)\nExpected:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.831469612302545...), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.3826834323650898...)]\nGot:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.83146961230254524), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.38268343236508989)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_47\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.2.1.rc0/tmp/.doctest_plot.py\n\t [38.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/plot/plot.py\"\nTotal time for all tests: 38.8 seconds\n```\n\non this machine:\n\n```\njec@host-57-89%cat /proc/version \nLinux version 2.6.18.8-0.3-default (geeko@buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007\n```\n\nwith this cpu (*4):\n\n```\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 15\nmodel\t\t: 65\nmodel name\t: Dual-Core AMD Opteron(tm) Processor 2220\nstepping\t: 3\ncpu MHz\t\t: 2800.168\ncache size\t: 1024 KB\nphysical id\t: 1\nsiblings\t: 2\ncore id\t\t: 1\ncpu cores\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 1\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm 3dnowext 3dnow pni cx16 lahf_lm cmp_legacy svm cr8_legacy\nbogomips\t: 5600.76\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management: ts fid vid ttp tm stc\n```\n\n\nStrange: to me the \"...\" processing should have dealt with that!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4655\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot\n\nThis test fails in 3.2.1.rc0:\n\n```\njec@host-57-89%./sage -t  \"devel/sage/sage/plot/plot.py\"\nsage -t  \"devel/sage/sage/plot/plot.py\"                     \n**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage/sage/plot/plot.py\", line 2283:\n    sage: adaptive_refinement(sin, (0,0), (pi,0), adaptive_tolerance=0.01)\nExpected:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.831469612302545...), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.3826834323650898...)]\nGot:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.83146961230254524), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.38268343236508989)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_47\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.2.1.rc0/tmp/.doctest_plot.py\n\t [38.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/plot/plot.py\"\nTotal time for all tests: 38.8 seconds\n```\non this machine:\n\n```\njec@host-57-89%cat /proc/version \nLinux version 2.6.18.8-0.3-default (geeko@buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007\n```\nwith this cpu (*4):\n\n```\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 15\nmodel\t\t: 65\nmodel name\t: Dual-Core AMD Opteron(tm) Processor 2220\nstepping\t: 3\ncpu MHz\t\t: 2800.168\ncache size\t: 1024 KB\nphysical id\t: 1\nsiblings\t: 2\ncore id\t\t: 1\ncpu cores\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 1\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm 3dnowext 3dnow pni cx16 lahf_lm cmp_legacy svm cr8_legacy\nbogomips\t: 5600.76\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management: ts fid vid ttp tm stc\n```\n\nStrange: to me the \"...\" processing should have dealt with that!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4655\n\n",
     "created_at": "2008-11-29T18:36:05Z",
     "labels": [
         "component: graphics",
@@ -47,14 +47,12 @@ The following tests failed:
 	sage -t  "devel/sage/sage/plot/plot.py"
 Total time for all tests: 38.8 seconds
 ```
-
 on this machine:
 
 ```
 jec@host-57-89%cat /proc/version 
 Linux version 2.6.18.8-0.3-default (geeko@buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007
 ```
-
 with this cpu (*4):
 
 ```
@@ -82,7 +80,6 @@ cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
 power management: ts fid vid ttp tm stc
 ```
-
 
 Strange: to me the "..." processing should have dealt with that!
 
@@ -169,7 +166,7 @@ Changing status from new to assigned.
 archive/issue_comments_034992.json:
 ```json
 {
-    "body": "John's problem is caused by\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), \n```\n\n\nCheers,\n\nMichael",
+    "body": "John's problem is caused by\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T07:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
@@ -184,7 +181,6 @@ John's problem is caused by
 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), 
 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), 
 ```
-
 
 Cheers,
 
@@ -257,7 +253,7 @@ Michael
 archive/issue_comments_034996.json:
 ```json
 {
-    "body": "I am seeing the same failure as John on menas:\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, \n```\n\nOn varro we have a slightly different problem:\n\n```\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654757), (0.3125*pi, \n```\n\n\nCheers,\n\nMichael",
+    "body": "I am seeing the same failure as John on menas:\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, \n```\nOn varro we have a slightly different problem:\n\n```\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654757), (0.3125*pi, \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T23:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
@@ -272,14 +268,12 @@ I am seeing the same failure as John on menas:
 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 
 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 
 ```
-
 On varro we have a slightly different problem:
 
 ```
 [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,
 [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654757), (0.3125*pi, 
 ```
-
 
 Cheers,
 

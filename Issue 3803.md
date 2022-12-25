@@ -3,7 +3,7 @@
 archive/issues_003803.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nd142-058-050-205:src was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: review2\nsage: timeit('prime_range(10^6)')\n5 loops, best of 3: 214 ms per loop\nsage: timeit('prime_range(10^6,leave_pari=True)')\n125 loops, best of 3: 4.29 ms per loop\nsage: 214/4.29\n49.8834498834499\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3803\n\n",
+    "body": "Assignee: @williamstein\n\n```\nd142-058-050-205:src was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: review2\nsage: timeit('prime_range(10^6)')\n5 loops, best of 3: 214 ms per loop\nsage: timeit('prime_range(10^6,leave_pari=True)')\n125 loops, best of 3: 4.29 ms per loop\nsage: 214/4.29\n49.8834498834499\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3803\n\n",
     "created_at": "2008-08-11T04:03:23Z",
     "labels": [
         "component: number theory",
@@ -18,7 +18,6 @@ archive/issues_003803.json:
 ```
 Assignee: @williamstein
 
-
 ```
 d142-058-050-205:src was$ sage
 ----------------------------------------------------------------------
@@ -31,7 +30,6 @@ sage: timeit('prime_range(10^6,leave_pari=True)')
 sage: 214/4.29
 49.8834498834499
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3803
 

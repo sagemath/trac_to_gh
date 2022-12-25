@@ -3,7 +3,7 @@
 archive/issues_000104.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:\n\n\n```\n....\nSuccessfully installed moin-1.5.4.p0\n<justin@zippo-w:sage-1.4> sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4, Build Date: 2006-10-01             |\n| Distributed under the GNU General Public License V2. |\n\nsage: wiki() \nServing on localhost:9000\nlocalhost - - [01/Oct/2006 23:14:42] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:42 2006] UnboundLocalError: local variable 'File' referenced before assignment\n\nlocalhost - - [01/Oct/2006 23:14:43] \"GET /favicon.ico HTTP/1.1\" 200 -\nlocalhost - - [01/Oct/2006 23:14:53] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment\n```\n\nThe first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).\n\nThe first time I contact the wiki, I get a blank page (it's blank when I \"view source\" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.\n\nOnce I use this the first time, all subsequent attempts, even with a fresh copy of SAGE, give me the crud I'm going to try to attach here.  It's only the very first attempt where I see a totally blank page.\n\nThis is with SAGE 1.4, but this same behavior has been with me since the MSRI workshop.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/104\n\n",
+    "body": "Assignee: @williamstein\n\nI've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:\n\n```\n....\nSuccessfully installed moin-1.5.4.p0\n<justin@zippo-w:sage-1.4> sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4, Build Date: 2006-10-01             |\n| Distributed under the GNU General Public License V2. |\n\nsage: wiki() \nServing on localhost:9000\nlocalhost - - [01/Oct/2006 23:14:42] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:42 2006] UnboundLocalError: local variable 'File' referenced before assignment\n\nlocalhost - - [01/Oct/2006 23:14:43] \"GET /favicon.ico HTTP/1.1\" 200 -\nlocalhost - - [01/Oct/2006 23:14:53] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment\n```\nThe first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).\n\nThe first time I contact the wiki, I get a blank page (it's blank when I \"view source\" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.\n\nOnce I use this the first time, all subsequent attempts, even with a fresh copy of SAGE, give me the crud I'm going to try to attach here.  It's only the very first attempt where I see a totally blank page.\n\nThis is with SAGE 1.4, but this same behavior has been with me since the MSRI workshop.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/104\n\n",
     "created_at": "2006-10-02T06:34:20Z",
     "labels": [
         "component: algebraic geometry",
@@ -18,7 +18,6 @@ archive/issues_000104.json:
 Assignee: @williamstein
 
 I've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:
-
 
 ```
 ....
@@ -38,7 +37,6 @@ localhost - - [01/Oct/2006 23:14:43] "GET /favicon.ico HTTP/1.1" 200 -
 localhost - - [01/Oct/2006 23:14:53] "GET / HTTP/1.1" 500 -
 [Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment
 ```
-
 The first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).
 
 The first time I contact the wiki, I get a blank page (it's blank when I "view source" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.
@@ -190,7 +188,7 @@ archive/issue_events_000208.json:
 archive/issue_comments_000490.json:
 ```json
 {
-    "body": "OK, now I actually fixed it and am really closing it:\n\n\n```\nK, this was enough for me to track it down.  Thanks for your detailed\nreport and patience.\n \nThe file local/lib/python/site-packages/MoinMoin/util/filesys.py has this\nconstruction:\n \n        try:\n            from Carbon import File\n            return File.FSRef(path).as_pathname()\n        except (ImportError, File.Error):\n            return None\n \nThis is just wrong, since if an error occurs in the import,\nthen the tuple in the exception can't be constructed!  Maybe nobody\never tested it, since they didn't have just the right system where\nthat fails.  Anyway, it should be\n \n        try:\n            from Carbon import File\n        except ImportError:\n            return None\n        try:\n            return File.FSRef(path).as_pathname()\n        except File.Error:\n            return None\n \nWith that change the moin-moin wiki works on your computer.  I'll post a new\nversion of the spkg hopefully today (called moin-1.5.4.p1), or you can make\nthe change yourself and see it work.  Here's the udiff:\n \n--- ../MoinMoin/util/filesys.py 2006-05-11 09:24:00.000000000 -0700\n+++ filesys.py  2006-10-16 08:42:18.000000000 -0700\n@@ -159,10 +159,12 @@\n         \"\"\"\n         try:\n             from Carbon import File\n+        except ImportError:\n+            return None\n+        try:\n             return File.FSRef(path).as_pathname()\n-        except (ImportError, File.Error):\n+        except File.Error:\n             return None\n-\n else:\n \n     def realPathCase(path):\n }}}",
+    "body": "OK, now I actually fixed it and am really closing it:\n\n```\nK, this was enough for me to track it down.  Thanks for your detailed\nreport and patience.\n \nThe file local/lib/python/site-packages/MoinMoin/util/filesys.py has this\nconstruction:\n \n        try:\n            from Carbon import File\n            return File.FSRef(path).as_pathname()\n        except (ImportError, File.Error):\n            return None\n \nThis is just wrong, since if an error occurs in the import,\nthen the tuple in the exception can't be constructed!  Maybe nobody\never tested it, since they didn't have just the right system where\nthat fails.  Anyway, it should be\n \n        try:\n            from Carbon import File\n        except ImportError:\n            return None\n        try:\n            return File.FSRef(path).as_pathname()\n        except File.Error:\n            return None\n \nWith that change the moin-moin wiki works on your computer.  I'll post a new\nversion of the spkg hopefully today (called moin-1.5.4.p1), or you can make\nthe change yourself and see it work.  Here's the udiff:\n \n--- ../MoinMoin/util/filesys.py 2006-05-11 09:24:00.000000000 -0700\n+++ filesys.py  2006-10-16 08:42:18.000000000 -0700\n@@ -159,10 +159,12 @@\n         \"\"\"\n         try:\n             from Carbon import File\n+        except ImportError:\n+            return None\n+        try:\n             return File.FSRef(path).as_pathname()\n-        except (ImportError, File.Error):\n+        except File.Error:\n             return None\n-\n else:\n \n     def realPathCase(path):\n }}}",
     "created_at": "2006-10-16T16:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
@@ -200,7 +198,6 @@ archive/issue_comments_000490.json:
 ```
 
 OK, now I actually fixed it and am really closing it:
-
 
 ```
 K, this was enough for me to track it down.  Thanks for your detailed

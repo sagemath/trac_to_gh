@@ -52,7 +52,7 @@ archive/issue_events_022945.json:
 archive/issue_comments_087555.json:
 ```json
 {
-    "body": "This is not quite as simple as one would like on Solaris, as the test suite makes use of a non-POSIX '-u' option to diff\n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/diff.html\n\nso generates this as an output:\n\n\n```\nSuccessfully installed ratpoints-2.1.3.p2\nRunning the test suite.\nTesting a 64-bit version of ratpoints\ngcc rptest.c -o rptest -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME= -DUSE_SSE -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -lgmp -lm -L. -lratpoints -m64 \ntime ./rptest > rptest.out\n\nreal\t0m0.05s\nuser\t0m0.00s\nsys\t0m0.00s\ndiff -q testbase rptest.out\ndiff: illegal option -- q\nusage: diff [-bitw] [-c | -e | -f | -h | -n | -u] file1 file2\n       diff [-bitw] [-C number | -U number] file1 file2\n       diff [-bitw] [-D string] file1 file2\n       diff [-bitw] [-c | -e | -f | -h | -n | -u] [-l] [-r] [-s] [-S name] directory1 directory2\nmake: *** [test] Error 2\nAn error occurred while testing ratpoints\n```\n",
+    "body": "This is not quite as simple as one would like on Solaris, as the test suite makes use of a non-POSIX '-u' option to diff\n\nhttp://www.opengroup.org/onlinepubs/009695399/utilities/diff.html\n\nso generates this as an output:\n\n```\nSuccessfully installed ratpoints-2.1.3.p2\nRunning the test suite.\nTesting a 64-bit version of ratpoints\ngcc rptest.c -o rptest -I/export/home/drkirkby/sage-4.4.4.alpha1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME= -DUSE_SSE -L/export/home/drkirkby/sage-4.4.4.alpha1/local/lib -lgmp -lm -L. -lratpoints -m64 \ntime ./rptest > rptest.out\n\nreal\t0m0.05s\nuser\t0m0.00s\nsys\t0m0.00s\ndiff -q testbase rptest.out\ndiff: illegal option -- q\nusage: diff [-bitw] [-c | -e | -f | -h | -n | -u] file1 file2\n       diff [-bitw] [-C number | -U number] file1 file2\n       diff [-bitw] [-D string] file1 file2\n       diff [-bitw] [-c | -e | -f | -h | -n | -u] [-l] [-r] [-s] [-S name] directory1 directory2\nmake: *** [test] Error 2\nAn error occurred while testing ratpoints\n```",
     "created_at": "2010-06-22T15:32:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9311",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ This is not quite as simple as one would like on Solaris, as the test suite make
 http://www.opengroup.org/onlinepubs/009695399/utilities/diff.html
 
 so generates this as an output:
-
 
 ```
 Successfully installed ratpoints-2.1.3.p2
@@ -87,7 +86,6 @@ usage: diff [-bitw] [-c | -e | -f | -h | -n | -u] file1 file2
 make: *** [test] Error 2
 An error occurred while testing ratpoints
 ```
-
 
 
 

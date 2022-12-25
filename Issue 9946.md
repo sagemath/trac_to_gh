@@ -3,7 +3,7 @@
 archive/issues_009946.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nsage: a.imag()\nsin(1/2*arctan2(0, -88* + 1))*sqrt(abs(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 1))\n```\n\nSee the output of the second argument of `arctan2`.\nSee also #9913.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9947\n\n",
+    "body": "Assignee: @burcin\n\n```\nsage: a.imag()\nsin(1/2*arctan2(0, -88* + 1))*sqrt(abs(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 1))\n```\nSee the output of the second argument of `arctan2`.\nSee also #9913.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9947\n\n",
     "created_at": "2010-09-19T08:26:08Z",
     "labels": [
         "component: calculus",
@@ -18,12 +18,10 @@ archive/issues_009946.json:
 ```
 Assignee: @burcin
 
-
 ```
 sage: a.imag()
 sin(1/2*arctan2(0, -88* + 1))*sqrt(abs(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 1))
 ```
-
 See the output of the second argument of `arctan2`.
 See also #9913.
 

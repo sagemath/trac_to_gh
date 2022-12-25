@@ -3,7 +3,7 @@
 archive/issues_000151.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nOn Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:\n> On Oct 25, 2006, at 12:50 PM, Kate Minola wrote:\n>> Running sage-1.4.1.2 on my x86_64-Linux system,\n>> if I run the following command:\n>>\n>> maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n>>\n>> and then quit, I find that there is a process\n>> 'lisp.run' unexpectedly still running on my system\n>> (and using up CPU resources).\n>>\n>> Does this happen on anyone else's system?\n>\n> I've tried this specific sequence (run the above; exit) several\n> times, and it doesn't happen for me (Mac OS X, 32-bit, Intellimac).\n>\n> When you quit, do you recall whether you saw this:\n>\n> Exiting SAGE (CPU time 0m0.11s, Wall time 0m10.64s).\n> Exiting spawned Maxima process.\n\nI just observed the problem on sage.math.  (64-bit amd linux).\nIt doesn't happen on OS X.  The code's identical, so I guess \nthings like killpg work better on OS X...  In any case, I consider\nthis a very serious bug, and *will* add extra code to deal with it\nbetter on Linux 64-bit. \n\nI've posted this to trac.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/151\n\n",
+    "body": "Assignee: @williamstein\n\n```\nOn Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:\n> On Oct 25, 2006, at 12:50 PM, Kate Minola wrote:\n>> Running sage-1.4.1.2 on my x86_64-Linux system,\n>> if I run the following command:\n>>\n>> maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n>>\n>> and then quit, I find that there is a process\n>> 'lisp.run' unexpectedly still running on my system\n>> (and using up CPU resources).\n>>\n>> Does this happen on anyone else's system?\n>\n> I've tried this specific sequence (run the above; exit) several\n> times, and it doesn't happen for me (Mac OS X, 32-bit, Intellimac).\n>\n> When you quit, do you recall whether you saw this:\n>\n> Exiting SAGE (CPU time 0m0.11s, Wall time 0m10.64s).\n> Exiting spawned Maxima process.\n\nI just observed the problem on sage.math.  (64-bit amd linux).\nIt doesn't happen on OS X.  The code's identical, so I guess \nthings like killpg work better on OS X...  In any case, I consider\nthis a very serious bug, and *will* add extra code to deal with it\nbetter on Linux 64-bit. \n\nI've posted this to trac.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/151\n\n",
     "created_at": "2006-10-25T21:07:01Z",
     "labels": [
         "component: interfaces",
@@ -17,7 +17,6 @@ archive/issues_000151.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 On Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:
@@ -52,7 +51,6 @@ I've posted this to trac.
 William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/151
 
 
@@ -64,7 +62,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/151
 archive/issue_comments_000684.json:
 ```json
 {
-    "body": "\n```\nHere is a reproducible way to trigger this bug on my system (enter an\nincorrect maxima command):\n \nmaxima('2e^15')\n \nThe lisp process is not terminated after exiting sage.\n \nGreg\n \nPS: there is another bug that I have to report too,\nfloat(maxima('1.e12')) (but not float(maxima('1.e-12'))\n```\n",
+    "body": "```\nHere is a reproducible way to trigger this bug on my system (enter an\nincorrect maxima command):\n \nmaxima('2e^15')\n \nThe lisp process is not terminated after exiting sage.\n \nGreg\n \nPS: there is another bug that I have to report too,\nfloat(maxima('1.e12')) (but not float(maxima('1.e-12'))\n```",
     "created_at": "2006-10-25T21:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -72,7 +70,6 @@ archive/issue_comments_000684.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 Here is a reproducible way to trigger this bug on my system (enter an
@@ -90,13 +87,12 @@ float(maxima('1.e12')) (but not float(maxima('1.e-12'))
 
 
 
-
 ---
 
 archive/issue_comments_000685.json:
 ```json
 {
-    "body": "\n```\nOn Tue, 31 Oct 2006 05:35:30 -0800, David Harvey <dmharvey@math.harvard.edu> wrote:\n \n \nThis is getting out of control.\n \nmoretti is running 15 of those zombie lisp.run processes and probably\ndoesn't even realise. (It's not your fault Bobby!)\n \nIt's chewing up a very large proportion of CPU cycles on sage.math.\n \nWe've got to track down this bug.\n \nI've killed them.\n \nIt may be impossible to completely deal with this problem just using the\ntechniques I currently use.   The master SAGE process that spawns though's\nlisp.run (etc) processes can be kill -9'd at any time, and then it has absolutely\nno chance to clean up after itself.\n \nThus probably, in *addition* to anything we do to deal with this, I should\nmake it so that by default when SAGE starts up it cleans up any messes\nleft around from previous runs (this is the sort of thing Firefox does):\n \n     1. deletes any directories in $HOME/.sage/tmp\n     2. kill -9 any processes that got left running -- this could be done by\n         saving pid's of processes that in a file in $HOME/.sage/tmp/\n \nThere are of course potential problems with 2, especially if working on\na cluster or with a home directory over NSF.  So the hostname of the machine\nwhere the processes were started and the name of the program could be stored\nas well.  Also, there would be a flag to turn off such startup behavior.\n \nThoughts?  At least then if Bobby starts one copy of SAGE all that cruft\nwould be gone.\n \nI don't think the above would be difficult to implement.  The main question\nis if it is stupid and/or dangerous in any way.  E.g., we don't want SAGE to\naccidently kill your week-long running super important SAGE computation!\n \n \nWilliam\n```\n",
+    "body": "```\nOn Tue, 31 Oct 2006 05:35:30 -0800, David Harvey <dmharvey@math.harvard.edu> wrote:\n \n \nThis is getting out of control.\n \nmoretti is running 15 of those zombie lisp.run processes and probably\ndoesn't even realise. (It's not your fault Bobby!)\n \nIt's chewing up a very large proportion of CPU cycles on sage.math.\n \nWe've got to track down this bug.\n \nI've killed them.\n \nIt may be impossible to completely deal with this problem just using the\ntechniques I currently use.   The master SAGE process that spawns though's\nlisp.run (etc) processes can be kill -9'd at any time, and then it has absolutely\nno chance to clean up after itself.\n \nThus probably, in *addition* to anything we do to deal with this, I should\nmake it so that by default when SAGE starts up it cleans up any messes\nleft around from previous runs (this is the sort of thing Firefox does):\n \n     1. deletes any directories in $HOME/.sage/tmp\n     2. kill -9 any processes that got left running -- this could be done by\n         saving pid's of processes that in a file in $HOME/.sage/tmp/\n \nThere are of course potential problems with 2, especially if working on\na cluster or with a home directory over NSF.  So the hostname of the machine\nwhere the processes were started and the name of the program could be stored\nas well.  Also, there would be a flag to turn off such startup behavior.\n \nThoughts?  At least then if Bobby starts one copy of SAGE all that cruft\nwould be gone.\n \nI don't think the above would be difficult to implement.  The main question\nis if it is stupid and/or dangerous in any way.  E.g., we don't want SAGE to\naccidently kill your week-long running super important SAGE computation!\n \n \nWilliam\n```",
     "created_at": "2006-10-31T16:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -104,7 +100,6 @@ archive/issue_comments_000685.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 On Tue, 31 Oct 2006 05:35:30 -0800, David Harvey <dmharvey@math.harvard.edu> wrote:
@@ -152,13 +147,12 @@ William
 
 
 
-
 ---
 
 archive/issue_comments_000686.json:
 ```json
 {
-    "body": "I just tested this:\n\n```\nsawas@sage:~$ sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4.1.3, Build Date: 2006-10-20         |\n| Distributed under the GNU General Public License V2. |\n\nsage: maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n'-1/2 + x^2 + x^4 + 2*x^6 + 5*x^8 + 14*x^10 + 42*x^12 + 132*x^14'\nsage: quit\nExiting SAGE (CPU time 0m0.07s, Wall time 0m8.26s).\nExiting spawned Maxima process.\n```\n\n\nwith several versions of sage and in no cases were clisp.run's left\nrunning.  So the example in the error report isn't good.\n\nThat said, having some sort of cleanup system like I describe above \nwould maybe be good.",
+    "body": "I just tested this:\n\n```\nsawas@sage:~$ sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4.1.3, Build Date: 2006-10-20         |\n| Distributed under the GNU General Public License V2. |\n\nsage: maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n'-1/2 + x^2 + x^4 + 2*x^6 + 5*x^8 + 14*x^10 + 42*x^12 + 132*x^14'\nsage: quit\nExiting SAGE (CPU time 0m0.07s, Wall time 0m8.26s).\nExiting spawned Maxima process.\n```\n\nwith several versions of sage and in no cases were clisp.run's left\nrunning.  So the example in the error report isn't good.\n\nThat said, having some sort of cleanup system like I describe above \nwould maybe be good.",
     "created_at": "2006-11-06T08:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -183,7 +177,6 @@ Exiting SAGE (CPU time 0m0.07s, Wall time 0m8.26s).
 Exiting spawned Maxima process.
 ```
 
-
 with several versions of sage and in no cases were clisp.run's left
 running.  So the example in the error report isn't good.
 
@@ -197,7 +190,7 @@ would maybe be good.
 archive/issue_comments_000687.json:
 ```json
 {
-    "body": "\n```\n \nOn Wed, Nov 08, 2006 at 02:23:18AM -0800, William Stein wrote:\n> Good question.  Longterm there are a couple of issues:\n>  \n>   (1) How do you tell the monitor about new processes that get spawned?\n>       You could put that info in a temp file, but that feels a little\n>       clunky.\n \nYou can read from a pipe or some other form of IPC (e.g. unix socket)\n \n>   (3) I want to continue to support the spawned processes running on other\n>       computers (or as different users) via ssh.  With a separate monitor\n>       for each spawned process this is possible (though two ssh sessions\n>       would be needed).  This isn't possible if there is only one monitor,\n>       since it can only run on one computer.\n \nJust run one monitor for each host.\n \n>   (4) For reasons I don't understand, the slave process doesn't really die\n>       until the monitor exits.  If in the monitor script instead of doing\n>       a sys.exit(0) after the kill, I continue the monitor running, then the\n>       process the monitor is watching doesn't terminate as it should.  This\n>       is on OS X Intel, and is rather odd, but isn't an issue with the  \n> 1-monitor\n>       per process model.\n \nSee wait(2) and waitpid(2) (and also wait3 and wait4 for resource\ninformation).\n \nEssentially, when a process dies, it stays in \"zombie\" state so that\none can (a) get exit status (b) get resource usage information (c)\ndump core IIRC, etc.\n \nThe usual trick to spawn e.g. a daemon is to fork / setsid(2) / fork,\nrun the process in question as a grandchild, and let the child die;\nbecause of the setsid(2) call, the process is not adopted by its\ngrandparent, but by the init process, which is supposed to clean up on\nexit of any process.  [ See also setsid(8) ]\n \nSince we are talking about a monitor, the sensible thing is that the\nmonitor waits for all its subprocesses.\n \nIn addition, the monitor can get information about resource usage,\nwhich could be interesting.\n \n>   (5) The overhead is minimal -- it really is only 2MB to run a minimal\n>       Python process.\n \nHowever small, it's still O(n).\n \nBTW, isn't it better to kill -15 first, wait some time, then kill -9\n(give a chance to cleanup in case there is a SIGTERM handler)\n \nBest,\nGonzalo\n }}}",
+    "body": "```\n \nOn Wed, Nov 08, 2006 at 02:23:18AM -0800, William Stein wrote:\n> Good question.  Longterm there are a couple of issues:\n>  \n>   (1) How do you tell the monitor about new processes that get spawned?\n>       You could put that info in a temp file, but that feels a little\n>       clunky.\n \nYou can read from a pipe or some other form of IPC (e.g. unix socket)\n \n>   (3) I want to continue to support the spawned processes running on other\n>       computers (or as different users) via ssh.  With a separate monitor\n>       for each spawned process this is possible (though two ssh sessions\n>       would be needed).  This isn't possible if there is only one monitor,\n>       since it can only run on one computer.\n \nJust run one monitor for each host.\n \n>   (4) For reasons I don't understand, the slave process doesn't really die\n>       until the monitor exits.  If in the monitor script instead of doing\n>       a sys.exit(0) after the kill, I continue the monitor running, then the\n>       process the monitor is watching doesn't terminate as it should.  This\n>       is on OS X Intel, and is rather odd, but isn't an issue with the  \n> 1-monitor\n>       per process model.\n \nSee wait(2) and waitpid(2) (and also wait3 and wait4 for resource\ninformation).\n \nEssentially, when a process dies, it stays in \"zombie\" state so that\none can (a) get exit status (b) get resource usage information (c)\ndump core IIRC, etc.\n \nThe usual trick to spawn e.g. a daemon is to fork / setsid(2) / fork,\nrun the process in question as a grandchild, and let the child die;\nbecause of the setsid(2) call, the process is not adopted by its\ngrandparent, but by the init process, which is supposed to clean up on\nexit of any process.  [ See also setsid(8) ]\n \nSince we are talking about a monitor, the sensible thing is that the\nmonitor waits for all its subprocesses.\n \nIn addition, the monitor can get information about resource usage,\nwhich could be interesting.\n \n>   (5) The overhead is minimal -- it really is only 2MB to run a minimal\n>       Python process.\n \nHowever small, it's still O(n).\n \nBTW, isn't it better to kill -15 first, wait some time, then kill -9\n(give a chance to cleanup in case there is a SIGTERM handler)\n \nBest,\nGonzalo\n }}}",
     "created_at": "2006-11-08T17:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -205,7 +198,6 @@ archive/issue_comments_000687.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
  
@@ -272,7 +264,7 @@ Gonzalo
 archive/issue_comments_000688.json:
 ```json
 {
-    "body": "\n```\nOn Wed, 08 Nov 2006 07:27:39 -0800, Gonzalo Tornaria wrote:\n \n \nOn Wed, Nov 08, 2006 at 02:23:18AM -0800, William Stein wrote:\nGood question.  Longterm there are a couple of issues:\n \n  (1) How do you tell the monitor about new processes that get spawned?\n      You could put that info in a temp file, but that feels a little\n      clunky.\n \nYou can read from a pipe or some other form of IPC (e.g. unix socket)\n \nYes, that could work.\n \n  (3) I want to continue to support the spawned processes running on other\n      computers (or as different users) via ssh.  With a separate monitor\n      for each spawned process this is possible (though two ssh sessions\n      would be needed).  This isn't possible if there is only one monitor,\n      since it can only run on one computer.\n \nJust run one monitor for each host.\n \nOK, but then what about question 1 again?  In particular, telling a monitor\nover the network about new processes would be complicated.\n \n  (4) For reasons I don't understand, the slave process doesn't really die\n      until the monitor exits.  If in the monitor script instead of doing\n      a sys.exit(0) after the kill, I continue the monitor running, then the\n      process the monitor is watching doesn't terminate as it should.  This\n      is on OS X Intel, and is rather odd, but isn't an issue with the\n1-monitor\n      per process model.\n \nSee wait(2) and waitpid(2) (and also wait3 and wait4 for resource\ninformation).\n \nEssentially, when a process dies, it stays in \"zombie\" state so that\none can (a) get exit status (b) get resource usage information (c)\ndump core IIRC, etc.\n \nThe usual trick to spawn e.g. a daemon is to fork / setsid(2) / fork,\nrun the process in question as a grandchild, and let the child die;\nbecause of the setsid(2) call, the process is not adopted by its\ngrandparent, but by the init process, which is supposed to clean up on\nexit of any process.  [ See also setsid(8) ]\n \nSince we are talking about a monitor, the sensible thing is that the\nmonitor waits for all its subprocesses.\n \nOne point that might not have been clear from my previous posting\nis that the monitor does not have any subprocesses.  The gap/gp/magma,\netc., process that it monitors is a sibling rather than a subprocess.\n \nIn addition, the monitor can get information about resource usage,\nwhich could be interesting.\n \nYes.\n \n  (5) The overhead is minimal -- it really is only 2MB to run a minimal\n      Python process.\n \nHowever small, it's still O(n).\n \nYes but for a typically running SAGE program n is about 3-4, at most.\nThere's no reason in SAGE to launch numerous subprocesses.\n \nBTW, isn't it better to kill -15 first, wait some time, then kill -9\n(give a chance to cleanup in case there is a SIGTERM handler)\n \nYes.  Good point.\n \nMany thanks for your email.\n \nAnyway, this process monitor thing is a completely general purpose\nunix tool.  It really a priori has nothing to do with SAGE.  Most\nof the suggestions on the list are to turn it from what I wrote\ninto a generic daemon.  I wonder -- has such a generic daemon for\nprocess monitoring *already* been written and I just don't know\nabout it?\n \nWilliam\n```\n",
+    "body": "```\nOn Wed, 08 Nov 2006 07:27:39 -0800, Gonzalo Tornaria wrote:\n \n \nOn Wed, Nov 08, 2006 at 02:23:18AM -0800, William Stein wrote:\nGood question.  Longterm there are a couple of issues:\n \n  (1) How do you tell the monitor about new processes that get spawned?\n      You could put that info in a temp file, but that feels a little\n      clunky.\n \nYou can read from a pipe or some other form of IPC (e.g. unix socket)\n \nYes, that could work.\n \n  (3) I want to continue to support the spawned processes running on other\n      computers (or as different users) via ssh.  With a separate monitor\n      for each spawned process this is possible (though two ssh sessions\n      would be needed).  This isn't possible if there is only one monitor,\n      since it can only run on one computer.\n \nJust run one monitor for each host.\n \nOK, but then what about question 1 again?  In particular, telling a monitor\nover the network about new processes would be complicated.\n \n  (4) For reasons I don't understand, the slave process doesn't really die\n      until the monitor exits.  If in the monitor script instead of doing\n      a sys.exit(0) after the kill, I continue the monitor running, then the\n      process the monitor is watching doesn't terminate as it should.  This\n      is on OS X Intel, and is rather odd, but isn't an issue with the\n1-monitor\n      per process model.\n \nSee wait(2) and waitpid(2) (and also wait3 and wait4 for resource\ninformation).\n \nEssentially, when a process dies, it stays in \"zombie\" state so that\none can (a) get exit status (b) get resource usage information (c)\ndump core IIRC, etc.\n \nThe usual trick to spawn e.g. a daemon is to fork / setsid(2) / fork,\nrun the process in question as a grandchild, and let the child die;\nbecause of the setsid(2) call, the process is not adopted by its\ngrandparent, but by the init process, which is supposed to clean up on\nexit of any process.  [ See also setsid(8) ]\n \nSince we are talking about a monitor, the sensible thing is that the\nmonitor waits for all its subprocesses.\n \nOne point that might not have been clear from my previous posting\nis that the monitor does not have any subprocesses.  The gap/gp/magma,\netc., process that it monitors is a sibling rather than a subprocess.\n \nIn addition, the monitor can get information about resource usage,\nwhich could be interesting.\n \nYes.\n \n  (5) The overhead is minimal -- it really is only 2MB to run a minimal\n      Python process.\n \nHowever small, it's still O(n).\n \nYes but for a typically running SAGE program n is about 3-4, at most.\nThere's no reason in SAGE to launch numerous subprocesses.\n \nBTW, isn't it better to kill -15 first, wait some time, then kill -9\n(give a chance to cleanup in case there is a SIGTERM handler)\n \nYes.  Good point.\n \nMany thanks for your email.\n \nAnyway, this process monitor thing is a completely general purpose\nunix tool.  It really a priori has nothing to do with SAGE.  Most\nof the suggestions on the list are to turn it from what I wrote\ninto a generic daemon.  I wonder -- has such a generic daemon for\nprocess monitoring *already* been written and I just don't know\nabout it?\n \nWilliam\n```",
     "created_at": "2006-11-08T17:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -280,7 +272,6 @@ archive/issue_comments_000688.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 On Wed, 08 Nov 2006 07:27:39 -0800, Gonzalo Tornaria wrote:
@@ -368,13 +359,12 @@ William
 
 
 
-
 ---
 
 archive/issue_comments_000689.json:
 ```json
 {
-    "body": "The example\n\n```\nmaxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n```\n\n\nno longer causes problems.  But other things do.\n\nWilliam",
+    "body": "The example\n\n```\nmaxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n```\n\nno longer causes problems.  But other things do.\n\nWilliam",
     "created_at": "2007-01-12T23:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
@@ -388,7 +378,6 @@ The example
 ```
 maxima.eval("-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)")
 ```
-
 
 no longer causes problems.  But other things do.
 

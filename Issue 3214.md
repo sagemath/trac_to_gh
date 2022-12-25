@@ -3,7 +3,7 @@
 archive/issues_003214.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro @JohnCremona @burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro @JohnCremona @burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
     "created_at": "2008-05-16T02:25:48Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ CC:  @robertwb @craigcitro @JohnCremona @burcin
 
 I got very confused by the first line since I used to use gcd for clearing denominators:
 
-
 ```
 sage: gcd((1, 2/3, 1/6, 1/6))
 1
@@ -36,7 +35,6 @@ TypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rat
 sage: gcd((2/3, 2/2, 1/6, 1/6))
 1/6
 ```
-
 
 I'd expect all calls above to return 1/6.
 
@@ -102,7 +100,7 @@ archive/issue_events_007230.json:
 archive/issue_comments_022196.json:
 ```json
 {
-    "body": "This works now:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: gcd((2/3, 1, 1/6, 1/6))\n1/6\n```\n\n\nCheers,\n\nMichael",
+    "body": "This works now:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: gcd((2/3, 1, 1/6, 1/6))\n1/6\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-10-27T06:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
@@ -121,7 +119,6 @@ This works now:
 sage: gcd((2/3, 1, 1/6, 1/6))
 1/6
 ```
-
 
 Cheers,
 
@@ -479,7 +476,7 @@ archive/issue_events_007235.json:
 archive/issue_comments_022210.json:
 ```json
 {
-    "body": "I applied the patch successfully to 3.2.3.   Alex has done a good job of testing -- I did not do a testall, just tested all in sage/rings.\n\nIt took me a few seconds (well, minutes) to see that gcd(nums)/lcm(denoms) was the right answer.  nice!\n\nI found it hard to use the content function though.  None of these work if L is a list of integers or rationals:  L.content(), content(L), QQ.content(L), ZZ.content(L).  Can we not have these?  Also if v is an element of `ZZ^n` then v.content() would also be useful.  I could perhaps be persuaded to put these enhancements into a different ticket.\n\nI don't know what to do about the ginac failure:\n\n```\nsage: var('x,y',ns=1)\n(x, y)\nsage: f = -289*x*y - 17*x^2*y + 3/7*x^5*y + x^7 + 17*x^6 + 2/3*x^2 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: g = -289*x*y + 3/7*x^5*y - 17*x^13*y + x^18 + 2/3*x^13 + 17*x^6 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: f.gcd(g)\n<boom>\n```\n\nIt fails trying to convert a non-integral rational to an integer.  Simpler polys in place of f anf g work fine.  As I don't even know what ginac is or does I'm stuck!",
+    "body": "I applied the patch successfully to 3.2.3.   Alex has done a good job of testing -- I did not do a testall, just tested all in sage/rings.\n\nIt took me a few seconds (well, minutes) to see that gcd(nums)/lcm(denoms) was the right answer.  nice!\n\nI found it hard to use the content function though.  None of these work if L is a list of integers or rationals:  L.content(), content(L), QQ.content(L), ZZ.content(L).  Can we not have these?  Also if v is an element of `ZZ^n` then v.content() would also be useful.  I could perhaps be persuaded to put these enhancements into a different ticket.\n\nI don't know what to do about the ginac failure:\n\n```\nsage: var('x,y',ns=1)\n(x, y)\nsage: f = -289*x*y - 17*x^2*y + 3/7*x^5*y + x^7 + 17*x^6 + 2/3*x^2 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: g = -289*x*y + 3/7*x^5*y - 17*x^13*y + x^18 + 2/3*x^13 + 17*x^6 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: f.gcd(g)\n<boom>\n```\nIt fails trying to convert a non-integral rational to an integer.  Simpler polys in place of f anf g work fine.  As I don't even know what ginac is or does I'm stuck!",
     "created_at": "2009-01-13T21:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
@@ -504,7 +501,6 @@ sage: g = -289*x*y + 3/7*x^5*y - 17*x^13*y + x^18 + 2/3*x^13 + 17*x^6 - 51/7*y^2
 sage: f.gcd(g)
 <boom>
 ```
-
 It fails trying to convert a non-integral rational to an integer.  Simpler polys in place of f anf g work fine.  As I don't even know what ginac is or does I'm stuck!
 
 

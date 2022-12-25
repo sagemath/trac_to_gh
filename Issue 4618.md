@@ -3,7 +3,7 @@
 archive/issues_004618.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @mezzarobba @videlec @dkrenn\n\nIn MAGMA, one can have fractional exponents for power series (which it calls Puiseux series), but SAGE does not seem to support this:\n\n```\nsage: PSR.<q>=PowerSeriesRing(QQ)\nsage: q^(1/5)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/ljpk/.sage/temp/sage/2339/_home_ljpk_Eisenstein_sage_9.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:8866)()\n   1131\n   1132\n-> 1133\n   1134\n   1135\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:17789)()\n   2601\n   2602\n-> 2603\n   2604\n   2605\n\nNotImplementedError: non-integral exponents not supported\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4618\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mezzarobba @videlec @dkrenn\n\nIn MAGMA, one can have fractional exponents for power series (which it calls Puiseux series), but SAGE does not seem to support this:\n\n```\nsage: PSR.<q>=PowerSeriesRing(QQ)\nsage: q^(1/5)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/ljpk/.sage/temp/sage/2339/_home_ljpk_Eisenstein_sage_9.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:8866)()\n   1131\n   1132\n-> 1133\n   1134\n   1135\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:17789)()\n   2601\n   2602\n-> 2603\n   2604\n   2605\n\nNotImplementedError: non-integral exponents not supported\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4618\n\n",
     "created_at": "2008-11-25T17:04:14Z",
     "labels": [
         "component: linear algebra",
@@ -52,7 +52,6 @@ NotImplementedError                       Traceback (most recent call last)
 
 NotImplementedError: non-integral exponents not supported
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4618
 
@@ -392,7 +391,7 @@ On a side note, I also have some code for computing Puiseux series representatio
 archive/issue_comments_034602.json:
 ```json
 {
-    "body": "just made a git branch, not tested at all\n----\nNew commits:",
+    "body": "just made a git branch, not tested at all\n\n---\nNew commits:",
     "created_at": "2016-03-28T15:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -402,7 +401,8 @@ archive/issue_comments_034602.json:
 ```
 
 just made a git branch, not tested at all
-----
+
+---
 New commits:
 
 
@@ -583,7 +583,7 @@ This is needed to allow `extend=True` for the `nth_root` method in #10720 (see a
 archive/issue_comments_034612.json:
 ```json
 {
-    "body": "An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n\n```\nsage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\nsage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n```\n\nThe above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.",
+    "body": "An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n\n```\nsage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\nsage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n```\nThe above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.",
     "created_at": "2017-12-21T11:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -598,7 +598,6 @@ An innocent operation like the following will multiply the memory footprint by 2
 sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size
 sage: q^(1/24) * p   # bad: 100 * 24 * coeff size
 ```
-
 The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.
 
 
@@ -660,7 +659,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034614.json:
 ```json
 {
-    "body": "I do the following changes:\n\n1. Adaptation to current version 8.8.beta3 in order to have the code compile again.\n2. I replace the method `_cmp_` of `PuiseuxSeries` by `_richcmp_` and let it completely rely on the corresponding method of class `LaurentSeries`. The reason for this is not only modernisation, but also that the former method doesn't work correctly (for example comparison with zero returns wrong results).\n3. I add a specification of the representative of the Puiseux series inside the constructor of `PuiseuxSeries` in such a way that the ramification index is minimized. This improves the methods `laurent_series` and `power_series` (the examples given there would not work else-wise).\n4. I add more doctests.\n\nThere is still work to do, for example:\n\n1. There are several workarounds on other bugs in Sage. In general I think, these workarounds should be removed and the corresponding bugs should be treated in separate tickets. Examples:\n   a. In the methods `_repr_`, `exponents` and `coefficients` there is the following comment: *NOTE: `self.__l.coefficients()` is bugged when the coefficients are in QQbar but coerced into SR ...*. I have no idea how far it makes sense to consider Puiseux series (Laurent series, polynomial rings, ...) over the `SymbolicRing`. But since these constructions are possible, they should work (or should be blocked). There are simple examples where this is not the case:\n\n```\nsage: PS = PolynomialRing(SR,'x')\nsage: P = PolynomialRing(QQ,'x')\nsage: q = P((1,1,5)); q\n5*x^2 + x + 1\nsage: p = PS(q)\nsage: p.coefficients()\n[5*x^2 + x + 1]\nsage: p in SR\nTrue\n```\n \n    Is this a known bug? Concerning the methods in question, I think that they should rely more directly on the according methods of `LaurentSeries`.\nb. In the method `add_bigoh` the following error is caught:\n\n```\nsage: L.<x> = LaurentSeriesRing(QQ)\nsage: q = x^2 + x^3\nsage: q.add_bigoh(-1)\nTraceback (most recent call last):\n...\nValueError: prec (= -3) must be non-negative\n```\n\n    This should be fixed in `LaurentSeries`.\n\n2. I think we should clarify the following behavior of the method `add_bigoh`:\n\n```\nsage: R.<x> = PuiseuxSeriesRing(ZZ)\nsage: p = x**(-1/3) + 2*x**(1/5)\nsage: p.add_bigoh(1/2)\nx^(-1/3) + 2*x^(1/5) + O(x^(7/15))\n```\n\n   is this acceptable?\n\n3. The method `_repr_` needs work:\n\n```\nsage: R.<x> = PuiseuxSeriesRing(Zp(5))\nsage: x**(1/2) + 5 * x^(1/3)\n5 + O(5^21)*x^(1/3) + (1 + O(5^20))*x^(1/2)\n```\n\n\n4. Further doctests are needed.\n5. Integration into documentation.\n\nI will continue to work on this ticket according to feedback!",
+    "body": "I do the following changes:\n\n1. Adaptation to current version 8.8.beta3 in order to have the code compile again.\n2. I replace the method `_cmp_` of `PuiseuxSeries` by `_richcmp_` and let it completely rely on the corresponding method of class `LaurentSeries`. The reason for this is not only modernisation, but also that the former method doesn't work correctly (for example comparison with zero returns wrong results).\n3. I add a specification of the representative of the Puiseux series inside the constructor of `PuiseuxSeries` in such a way that the ramification index is minimized. This improves the methods `laurent_series` and `power_series` (the examples given there would not work else-wise).\n4. I add more doctests.\n\nThere is still work to do, for example:\n\n1. There are several workarounds on other bugs in Sage. In general I think, these workarounds should be removed and the corresponding bugs should be treated in separate tickets. Examples:\n   a. In the methods `_repr_`, `exponents` and `coefficients` there is the following comment: *NOTE: `self.__l.coefficients()` is bugged when the coefficients are in QQbar but coerced into SR ...*. I have no idea how far it makes sense to consider Puiseux series (Laurent series, polynomial rings, ...) over the `SymbolicRing`. But since these constructions are possible, they should work (or should be blocked). There are simple examples where this is not the case:\n\n```\nsage: PS = PolynomialRing(SR,'x')\nsage: P = PolynomialRing(QQ,'x')\nsage: q = P((1,1,5)); q\n5*x^2 + x + 1\nsage: p = PS(q)\nsage: p.coefficients()\n[5*x^2 + x + 1]\nsage: p in SR\nTrue\n``` \n    Is this a known bug? Concerning the methods in question, I think that they should rely more directly on the according methods of `LaurentSeries`.\nb. In the method `add_bigoh` the following error is caught:\n\n```\nsage: L.<x> = LaurentSeriesRing(QQ)\nsage: q = x^2 + x^3\nsage: q.add_bigoh(-1)\nTraceback (most recent call last):\n...\nValueError: prec (= -3) must be non-negative\n```\n    This should be fixed in `LaurentSeries`.\n\n2. I think we should clarify the following behavior of the method `add_bigoh`:\n\n```\nsage: R.<x> = PuiseuxSeriesRing(ZZ)\nsage: p = x**(-1/3) + 2*x**(1/5)\nsage: p.add_bigoh(1/2)\nx^(-1/3) + 2*x^(1/5) + O(x^(7/15))\n```\n   is this acceptable?\n\n3. The method `_repr_` needs work:\n\n```\nsage: R.<x> = PuiseuxSeriesRing(Zp(5))\nsage: x**(1/2) + 5 * x^(1/3)\n5 + O(5^21)*x^(1/3) + (1 + O(5^20))*x^(1/2)\n```\n\n4. Further doctests are needed.\n5. Integration into documentation.\n\nI will continue to work on this ticket according to feedback!",
     "created_at": "2019-04-24T20:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -691,8 +690,7 @@ sage: p.coefficients()
 [5*x^2 + x + 1]
 sage: p in SR
 True
-```
- 
+``` 
     Is this a known bug? Concerning the methods in question, I think that they should rely more directly on the according methods of `LaurentSeries`.
 b. In the method `add_bigoh` the following error is caught:
 
@@ -704,7 +702,6 @@ Traceback (most recent call last):
 ...
 ValueError: prec (= -3) must be non-negative
 ```
-
     This should be fixed in `LaurentSeries`.
 
 2. I think we should clarify the following behavior of the method `add_bigoh`:
@@ -715,7 +712,6 @@ sage: p = x**(-1/3) + 2*x**(1/5)
 sage: p.add_bigoh(1/2)
 x^(-1/3) + 2*x^(1/5) + O(x^(7/15))
 ```
-
    is this acceptable?
 
 3. The method `_repr_` needs work:
@@ -725,7 +721,6 @@ sage: R.<x> = PuiseuxSeriesRing(Zp(5))
 sage: x**(1/2) + 5 * x^(1/3)
 5 + O(5^21)*x^(1/3) + (1 + O(5^20))*x^(1/2)
 ```
-
 
 4. Further doctests are needed.
 5. Integration into documentation.
@@ -791,7 +786,7 @@ archive/issue_events_010511.json:
 archive/issue_comments_034616.json:
 ```json
 {
-    "body": "There is a hash doctest failure with python3:\n\n```\nsage -t --long src/sage/rings/puiseux_series_ring_element.pyx\n**********************************************************************\nFile \"src/sage/rings/puiseux_series_ring_element.pyx\", line 549, in sage.rings.puiseux_series_ring_element.PuiseuxSeries.__hash__\nFailed example:\n    hash(p)  # indirect doctest\nExpected:\n    -15360174648385722\nGot:\n    8039939419124139326\n```\n",
+    "body": "There is a hash doctest failure with python3:\n\n```\nsage -t --long src/sage/rings/puiseux_series_ring_element.pyx\n**********************************************************************\nFile \"src/sage/rings/puiseux_series_ring_element.pyx\", line 549, in sage.rings.puiseux_series_ring_element.PuiseuxSeries.__hash__\nFailed example:\n    hash(p)  # indirect doctest\nExpected:\n    -15360174648385722\nGot:\n    8039939419124139326\n```",
     "created_at": "2019-07-23T07:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -813,7 +808,6 @@ Expected:
 Got:
     8039939419124139326
 ```
-
 
 
 
@@ -840,7 +834,7 @@ In agreement with Frédéric I have created the tickets #28238 and #28239 to tre
 archive/issue_comments_034618.json:
 ```json
 {
-    "body": "Replying to [comment:36 chapoton]:\n> There is a hash doctest failure with python3:\n> {{{\n> sage -t --long src/sage/rings/puiseux_series_ring_element.pyx\n> **********************************************************************\n> File \"src/sage/rings/puiseux_series_ring_element.pyx\", line 549, in sage.rings.puiseux_series_ring_element.PuiseuxSeries.__hash__\n> Failed example:\n>     hash(p)  # indirect doctest\n> Expected:\n>     -15360174648385722\n> Got:\n>     8039939419124139326\n> }}}\n\nI will look at that at home (since I have no sage with python3 on the computer I am carrying with me)!",
+    "body": "Replying to [comment:36 chapoton]:\n> There is a hash doctest failure with python3:\n> \n> ```\n> sage -t --long src/sage/rings/puiseux_series_ring_element.pyx\n> **********************************************************************\n> File \"src/sage/rings/puiseux_series_ring_element.pyx\", line 549, in sage.rings.puiseux_series_ring_element.PuiseuxSeries.__hash__\n> Failed example:\n>     hash(p)  # indirect doctest\n> Expected:\n>     -15360174648385722\n> Got:\n>     8039939419124139326\n> ```\n\n\nI will look at that at home (since I have no sage with python3 on the computer I am carrying with me)!",
     "created_at": "2019-07-23T15:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -851,7 +845,8 @@ archive/issue_comments_034618.json:
 
 Replying to [comment:36 chapoton]:
 > There is a hash doctest failure with python3:
-> {{{
+> 
+> ```
 > sage -t --long src/sage/rings/puiseux_series_ring_element.pyx
 > **********************************************************************
 > File "src/sage/rings/puiseux_series_ring_element.pyx", line 549, in sage.rings.puiseux_series_ring_element.PuiseuxSeries.__hash__
@@ -861,7 +856,8 @@ Replying to [comment:36 chapoton]:
 >     -15360174648385722
 > Got:
 >     8039939419124139326
-> }}}
+> ```
+
 
 I will look at that at home (since I have no sage with python3 on the computer I am carrying with me)!
 
@@ -890,7 +886,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034620.json:
 ```json
 {
-    "body": "Replying to [comment:28 vdelecroix]:\n> An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> {{{\n> sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> }}}\n> The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n\nConcerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/",
+    "body": "Replying to [comment:28 vdelecroix]:\n> An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> \n> ```\n> sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> ```\n> The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n\n\nConcerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/",
     "created_at": "2019-07-24T14:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -901,11 +897,13 @@ archive/issue_comments_034620.json:
 
 Replying to [comment:28 vdelecroix]:
 > An innocent operation like the following will multiply the memory footprint by 24 with no change in information
-> {{{
+> 
+> ```
 > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size
 > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size
-> }}}
+> ```
 > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.
+
 
 Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/
 
@@ -934,7 +932,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034622.json:
 ```json
 {
-    "body": "Replying to [comment:40 vdelecroix]:\n> Replying to [comment:28 vdelecroix]:\n> > An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> > {{{\n> > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> > }}}\n> > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n> \n> Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/\n\n\n\nThe multiplication of memory-size is caused by the call of the `V`-method (implemented for  Puiseux series) in the Laurent series class but it happens in the polynomial attached to the power series of the attached Laurent series.\n\n\n```\nsage: P.<q> = PuiseuxSeriesRing(QQ)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: s = t.laurent_part().valuation_zero_part().polynomial()\nsage: len(s.list())\n2209\nsage: len(p.laurent_part().valuation_zero_part().polynomial().list())\n93\n```\n\n\nSo the most generic option would be to implement a data-compression in the corresponding polynomial class. But this may involve external software as in the case of the example:\n\n\n```\nsage: type(s)\n<type 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint'>\n```\n\n\nThe same thing is true concerening the level of power series (for exmaple choosing `implementation='pari'`). So I think, the best place for implementing a smarter data structure would be the Laurent series class and could be done there by a //scale factor// as it is mentined in the article concerning the implementation in OSCAR: \"Laurent series themselves are also stored with a valuation, precision and a scale factor\".\n\nMy suggestion is, to open a new ticket on that task concerning such an implementation for the Laurent series. The method `V` should than just change the scale factor (instead of stretching the data volume). The implementaion of the Puiseux series could stay as it is. In opposite to `ramifications_index` to new scale factor could be named `covering_index`, for instance.\n\nBTW: what does this `V` stand for?",
+    "body": "Replying to [comment:40 vdelecroix]:\n> Replying to [comment:28 vdelecroix]:\n> > An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> > \n> > ```\n> > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> > ```\n> > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n\n> \n> Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/\n\n\n\n\nThe multiplication of memory-size is caused by the call of the `V`-method (implemented for  Puiseux series) in the Laurent series class but it happens in the polynomial attached to the power series of the attached Laurent series.\n\n```\nsage: P.<q> = PuiseuxSeriesRing(QQ)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: s = t.laurent_part().valuation_zero_part().polynomial()\nsage: len(s.list())\n2209\nsage: len(p.laurent_part().valuation_zero_part().polynomial().list())\n93\n```\n\nSo the most generic option would be to implement a data-compression in the corresponding polynomial class. But this may involve external software as in the case of the example:\n\n```\nsage: type(s)\n<type 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint'>\n```\n\nThe same thing is true concerening the level of power series (for exmaple choosing `implementation='pari'`). So I think, the best place for implementing a smarter data structure would be the Laurent series class and could be done there by a //scale factor// as it is mentined in the article concerning the implementation in OSCAR: \"Laurent series themselves are also stored with a valuation, precision and a scale factor\".\n\nMy suggestion is, to open a new ticket on that task concerning such an implementation for the Laurent series. The method `V` should than just change the scale factor (instead of stretching the data volume). The implementaion of the Puiseux series could stay as it is. In opposite to `ramifications_index` to new scale factor could be named `covering_index`, for instance.\n\nBTW: what does this `V` stand for?",
     "created_at": "2019-07-26T09:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -946,18 +944,20 @@ archive/issue_comments_034622.json:
 Replying to [comment:40 vdelecroix]:
 > Replying to [comment:28 vdelecroix]:
 > > An innocent operation like the following will multiply the memory footprint by 24 with no change in information
-> > {{{
+> > 
+> > ```
 > > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size
 > > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size
-> > }}}
+> > ```
 > > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.
+
 > 
 > Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/
 
 
 
-The multiplication of memory-size is caused by the call of the `V`-method (implemented for  Puiseux series) in the Laurent series class but it happens in the polynomial attached to the power series of the attached Laurent series.
 
+The multiplication of memory-size is caused by the call of the `V`-method (implemented for  Puiseux series) in the Laurent series class but it happens in the polynomial attached to the power series of the attached Laurent series.
 
 ```
 sage: P.<q> = PuiseuxSeriesRing(QQ)
@@ -970,15 +970,12 @@ sage: len(p.laurent_part().valuation_zero_part().polynomial().list())
 93
 ```
 
-
 So the most generic option would be to implement a data-compression in the corresponding polynomial class. But this may involve external software as in the case of the example:
-
 
 ```
 sage: type(s)
 <type 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint'>
 ```
-
 
 The same thing is true concerening the level of power series (for exmaple choosing `implementation='pari'`). So I think, the best place for implementing a smarter data structure would be the Laurent series class and could be done there by a //scale factor// as it is mentined in the article concerning the implementation in OSCAR: "Laurent series themselves are also stored with a valuation, precision and a scale factor".
 
@@ -1011,7 +1008,7 @@ I think that V stand for Verschiebung.
 archive/issue_comments_034624.json:
 ```json
 {
-    "body": "Replying to [comment:43 chapoton]:\n> I think that V stand for Verschiebung.\n\nThat sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\nWhat about to replace `V` by `power_inflation`?",
+    "body": "Replying to [comment:43 chapoton]:\n> I think that V stand for Verschiebung.\n\n\nThat sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\nWhat about to replace `V` by `power_inflation`?",
     "created_at": "2019-07-28T11:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1023,6 +1020,7 @@ archive/issue_comments_034624.json:
 Replying to [comment:43 chapoton]:
 > I think that V stand for Verschiebung.
 
+
 That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.
 What about to replace `V` by `power_inflation`?
 
@@ -1033,7 +1031,7 @@ What about to replace `V` by `power_inflation`?
 archive/issue_comments_034625.json:
 ```json
 {
-    "body": "Replying to [comment:44 soehms]:\n> Replying to [comment:43 chapoton]:\n> > I think that V stand for Verschiebung.\n> \n> That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\n\nIt is probably from Witt vector terminology, where that is a standard term?",
+    "body": "Replying to [comment:44 soehms]:\n> Replying to [comment:43 chapoton]:\n> > I think that V stand for Verschiebung.\n\n> \n> That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\n\n\nIt is probably from Witt vector terminology, where that is a standard term?",
     "created_at": "2019-08-12T15:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1045,8 +1043,10 @@ archive/issue_comments_034625.json:
 Replying to [comment:44 soehms]:
 > Replying to [comment:43 chapoton]:
 > > I think that V stand for Verschiebung.
+
 > 
 > That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.
+
 
 It is probably from Witt vector terminology, where that is a standard term?
 
@@ -1075,7 +1075,7 @@ Changing status from new to needs_info.
 archive/issue_comments_034627.json:
 ```json
 {
-    "body": "Replying to [comment:45 kcrisman]:\n> Replying to [comment:44 soehms]:\n> > Replying to [comment:43 chapoton]:\n> > > I think that V stand for Verschiebung.\n> > \n> > That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\n> \n> It is probably from Witt vector terminology, where that is a standard term?\n\nThanks for the explanation! Indeed, that meaning of *Verschiebung* hasn't been present in my mind. But anyway, I would prefer a method name that doesn't dependent on any special context (and has more than just one letter). The `V` could by kept as an alias (together with an appropriate explanation). Opinions?",
+    "body": "Replying to [comment:45 kcrisman]:\n> Replying to [comment:44 soehms]:\n> > Replying to [comment:43 chapoton]:\n> > > I think that V stand for Verschiebung.\n\n> > \n> > That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.\n\n> \n> It is probably from Witt vector terminology, where that is a standard term?\n\n\nThanks for the explanation! Indeed, that meaning of *Verschiebung* hasn't been present in my mind. But anyway, I would prefer a method name that doesn't dependent on any special context (and has more than just one letter). The `V` could by kept as an alias (together with an appropriate explanation). Opinions?",
     "created_at": "2019-08-16T11:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1088,10 +1088,13 @@ Replying to [comment:45 kcrisman]:
 > Replying to [comment:44 soehms]:
 > > Replying to [comment:43 chapoton]:
 > > > I think that V stand for Verschiebung.
+
 > > 
 > > That sounds as if we should look for a better name! I even don't see a connection. The only mathematical meaning of *Verschiebung* I know is that of a *translation* in euclidean geometry.
+
 > 
 > It is probably from Witt vector terminology, where that is a standard term?
+
 
 Thanks for the explanation! Indeed, that meaning of *Verschiebung* hasn't been present in my mind. But anyway, I would prefer a method name that doesn't dependent on any special context (and has more than just one letter). The `V` could by kept as an alias (together with an appropriate explanation). Opinions?
 
@@ -1176,7 +1179,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_034632.json:
 ```json
 {
-    "body": "Thanks for bringing this ahead that much, Travis!\n\nThe only tasks being left from my comment #33 are 3) and 5). With respect to the former item I rewrite `_repr_` such that it just transforms the representation string of the corresponding Laurent series. Concerning the latter I include the docs. They look well formatted.\n\nFurthermore I add some more doctests and fix the bugs I've detected along that. The `verschiebung` method did allow negative input on finite precision. I fixed that, as well. I've just realized that the `V` method in the `PowerSeries`-class is previous code. So, the naming has been overtaken from there. Shall we introduce the alias there, as well?\n\nFurthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n\n\n\n> Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).\n\n\nDo you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?",
+    "body": "Thanks for bringing this ahead that much, Travis!\n\nThe only tasks being left from my comment #33 are 3) and 5). With respect to the former item I rewrite `_repr_` such that it just transforms the representation string of the corresponding Laurent series. Concerning the latter I include the docs. They look well formatted.\n\nFurthermore I add some more doctests and fix the bugs I've detected along that. The `verschiebung` method did allow negative input on finite precision. I fixed that, as well. I've just realized that the `V` method in the `PowerSeries`-class is previous code. So, the naming has been overtaken from there. Shall we introduce the alias there, as well?\n\nFurthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n\n\n\n> Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).\n\n\n\nDo you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?",
     "created_at": "2019-12-21T19:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1198,6 +1201,7 @@ Furthermore, I think we could speed up these methods (in `LaurentSeries` and `Po
 > Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).
 
 
+
 Do you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?
 
 
@@ -1207,7 +1211,7 @@ Do you mean to make the Laurent series be Puiseux series with ramification index
 archive/issue_comments_034633.json:
 ```json
 {
-    "body": "Replying to [comment:40 vdelecroix]:\n> Replying to [comment:28 vdelecroix]:\n> > An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> > {{{\n> > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> > }}}\n> > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n> \n> Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/\n\n\nVincent, I had a look at that problem, again. Did you declare a sparse `PuiseuxSeriesRing`? How did you measure the consumption of memory? Declaring a sparse ring at least produces a 9 times smaller dump string:\n\n\n```\nsage: P.<q> = PuiseuxSeriesRing(ZZ)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: len(p.dumps())\n826\nsage: len(t.dumps())\n8688\n\nsage: P.<q> = PuiseuxSeriesRing(ZZ, sparse=True)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: len(p.dumps())\n903\nsage: len(t.dumps())\n923\n```\n\n\nI think, it would make sense to have the default on `sparse` to be `True` in the case of Puiseux series, since for non trivial ramification index its attached Laurent series is sparse by construction.\n\nBtw, in the blog you have linked to the ticket William Bruce Hart seems to have worked out his 'SageMath example' using a dense representation (see for example `R.<q> = PowerSeriesRing(ZZ, default_prec=9001)` and this citation \"Because of the dense representation in Sage, this would kill performance\"). A reason for this choice is not given. I guess that Sage would have produced better scores with a sparse representation.",
+    "body": "Replying to [comment:40 vdelecroix]:\n> Replying to [comment:28 vdelecroix]:\n> > An innocent operation like the following will multiply the memory footprint by 24 with no change in information\n> > \n> > ```\n> > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size\n> > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size\n> > ```\n> > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.\n\n> \n> Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/\n\n\n\nVincent, I had a look at that problem, again. Did you declare a sparse `PuiseuxSeriesRing`? How did you measure the consumption of memory? Declaring a sparse ring at least produces a 9 times smaller dump string:\n\n```\nsage: P.<q> = PuiseuxSeriesRing(ZZ)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: len(p.dumps())\n826\nsage: len(t.dumps())\n8688\n\nsage: P.<q> = PuiseuxSeriesRing(ZZ, sparse=True)\nsage: p = prod((1 - q^n).add_bigoh(100) for n in range(1,100))\nsage: t = q^(1/24) * p\nsage: len(p.dumps())\n903\nsage: len(t.dumps())\n923\n```\n\nI think, it would make sense to have the default on `sparse` to be `True` in the case of Puiseux series, since for non trivial ramification index its attached Laurent series is sparse by construction.\n\nBtw, in the blog you have linked to the ticket William Bruce Hart seems to have worked out his 'SageMath example' using a dense representation (see for example `R.<q> = PowerSeriesRing(ZZ, default_prec=9001)` and this citation \"Because of the dense representation in Sage, this would kill performance\"). A reason for this choice is not given. I guess that Sage would have produced better scores with a sparse representation.",
     "created_at": "2019-12-21T19:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1219,17 +1223,19 @@ archive/issue_comments_034633.json:
 Replying to [comment:40 vdelecroix]:
 > Replying to [comment:28 vdelecroix]:
 > > An innocent operation like the following will multiply the memory footprint by 24 with no change in information
-> > {{{
+> > 
+> > ```
 > > sage: p = prod(1 - q^n + O(q^100) for n in range(1,100))   # fine: 100 * coeff size
 > > sage: q^(1/24) * p   # bad: 100 * 24 * coeff size
-> > }}}
+> > ```
 > > The above example is the q-series expansion of the [Dedekind eta function](https://en.wikipedia.org/wiki/Dedekind_eta_function). There might be a more clever data structure to use as this kind of series is frequently encountered when dealing with modular forms.
+
 > 
 > Concerning this example, you might want to read https://oscar.computeralgebra.de/blogs/2018/08/03/PuiseuxSeries/
 
 
-Vincent, I had a look at that problem, again. Did you declare a sparse `PuiseuxSeriesRing`? How did you measure the consumption of memory? Declaring a sparse ring at least produces a 9 times smaller dump string:
 
+Vincent, I had a look at that problem, again. Did you declare a sparse `PuiseuxSeriesRing`? How did you measure the consumption of memory? Declaring a sparse ring at least produces a 9 times smaller dump string:
 
 ```
 sage: P.<q> = PuiseuxSeriesRing(ZZ)
@@ -1249,7 +1255,6 @@ sage: len(t.dumps())
 923
 ```
 
-
 I think, it would make sense to have the default on `sparse` to be `True` in the case of Puiseux series, since for non trivial ramification index its attached Laurent series is sparse by construction.
 
 Btw, in the blog you have linked to the ticket William Bruce Hart seems to have worked out his 'SageMath example' using a dense representation (see for example `R.<q> = PowerSeriesRing(ZZ, default_prec=9001)` and this citation "Because of the dense representation in Sage, this would kill performance"). A reason for this choice is not given. I guess that Sage would have produced better scores with a sparse representation.
@@ -1261,7 +1266,7 @@ Btw, in the blog you have linked to the ticket William Bruce Hart seems to have 
 archive/issue_comments_034634.json:
 ```json
 {
-    "body": "Replying to [comment:50 soehms]:\n> The only tasks being left from my comment:33 are 3) and 5). With respect to the former item I rewrite `_repr_` such that it just transforms the representation string of the corresponding Laurent series. Concerning the latter I include the docs. They look well formatted.\n\nI didn't see your comment when I was making my changes. Thank you for taking care of it.\n\n> Furthermore I add some more doctests and fix the bugs I've detected along that. The `verschiebung` method did allow negative input on finite precision. I fixed that, as well. I've just realized that the `V` method in the `PowerSeries`-class is previous code. So, the naming has been overtaken from there. Shall we introduce the alias there, as well?\n\nThat would be something for a separate ticket (well, ideally adding such methods to the Laurent series should be done on another ticket as well, but it was already included here so, I continued to be lazy about it).\n\n> Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n\nPlease do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.\n\n> > Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).\n> \n> \n> Do you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?\n\nYes, that is correct. It shouldn't require many changes I would think as it should be a matter of just (re)moving methods from the Laurent series and setting the Laurent series as a subclass. However, I haven't looked too closely at it.",
+    "body": "Replying to [comment:50 soehms]:\n> The only tasks being left from my comment:33 are 3) and 5). With respect to the former item I rewrite `_repr_` such that it just transforms the representation string of the corresponding Laurent series. Concerning the latter I include the docs. They look well formatted.\n\n\nI didn't see your comment when I was making my changes. Thank you for taking care of it.\n\n> Furthermore I add some more doctests and fix the bugs I've detected along that. The `verschiebung` method did allow negative input on finite precision. I fixed that, as well. I've just realized that the `V` method in the `PowerSeries`-class is previous code. So, the naming has been overtaken from there. Shall we introduce the alias there, as well?\n\n\nThat would be something for a separate ticket (well, ideally adding such methods to the Laurent series should be done on another ticket as well, but it was already included here so, I continued to be lazy about it).\n\n> Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n\n\nPlease do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.\n\n> > Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).\n\n> \n> \n> Do you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?\n\n\nYes, that is correct. It shouldn't require many changes I would think as it should be a matter of just (re)moving methods from the Laurent series and setting the Laurent series as a subclass. However, I haven't looked too closely at it.",
     "created_at": "2019-12-23T16:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1273,20 +1278,25 @@ archive/issue_comments_034634.json:
 Replying to [comment:50 soehms]:
 > The only tasks being left from my comment:33 are 3) and 5). With respect to the former item I rewrite `_repr_` such that it just transforms the representation string of the corresponding Laurent series. Concerning the latter I include the docs. They look well formatted.
 
+
 I didn't see your comment when I was making my changes. Thank you for taking care of it.
 
 > Furthermore I add some more doctests and fix the bugs I've detected along that. The `verschiebung` method did allow negative input on finite precision. I fixed that, as well. I've just realized that the `V` method in the `PowerSeries`-class is previous code. So, the naming has been overtaken from there. Shall we introduce the alias there, as well?
+
 
 That would be something for a separate ticket (well, ideally adding such methods to the Laurent series should be done on another ticket as well, but it was already included here so, I continued to be lazy about it).
 
 > Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?
 
+
 Please do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.
 
 > > Although there is a substantial overlap with the code for Laurent series. I almost feel like we should just extend the Laurent series class with the necessary features with _e to avoid duplication (that one extra little bit of information shouldn't change the speed or have a real affect on memory).
+
 > 
 > 
 > Do you mean to make the Laurent series be Puiseux series with ramification index 1? I like this idea, but wouldn't this lead to larger changes in the Laurent series classes? Shall we deal with that in this ticket?
+
 
 Yes, that is correct. It shouldn't require many changes I would think as it should be a matter of just (re)moving methods from the Laurent series and setting the Laurent series as a subclass. However, I haven't looked too closely at it.
 
@@ -1297,7 +1307,7 @@ Yes, that is correct. It shouldn't require many changes I would think as it shou
 archive/issue_comments_034635.json:
 ```json
 {
-    "body": "Replying to [comment:52 tscrim]:\n> Replying to [comment:50 soehms]:\n> > Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n> \n> Please do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.\n\nIn the meantime I've realized, that it isn't a good idea to have `sparse=True` as the default, since inversion (explicitly the method `inverse_series_trunc`) becomes very slow for this setting. Probably that's the reason why William Bruce Hurt worked with the dense representation.",
+    "body": "Replying to [comment:52 tscrim]:\n> Replying to [comment:50 soehms]:\n> > Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?\n\n> \n> Please do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.\n\n\nIn the meantime I've realized, that it isn't a good idea to have `sparse=True` as the default, since inversion (explicitly the method `inverse_series_trunc`) becomes very slow for this setting. Probably that's the reason why William Bruce Hurt worked with the dense representation.",
     "created_at": "2019-12-24T07:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1309,8 +1319,10 @@ archive/issue_comments_034635.json:
 Replying to [comment:52 tscrim]:
 > Replying to [comment:50 soehms]:
 > > Furthermore, I think we could speed up these methods (in `LaurentSeries` and `PowerSeries`) replacing the operations on the coefficient list by operations on the corresponding dictionaries. I made some tests and observed improvements up to 250 times faster. Shall I work that out?
+
 > 
 > Please do, although that might depend on the sparsity too. However, I leave it to people who are more expert in the area to determine whether or not the default should be sparse or not.
+
 
 In the meantime I've realized, that it isn't a good idea to have `sparse=True` as the default, since inversion (explicitly the method `inverse_series_trunc`) becomes very slow for this setting. Probably that's the reason why William Bruce Hurt worked with the dense representation.
 
@@ -1477,7 +1489,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034642.json:
 ```json
 {
-    "body": "Replying to [comment:58 tscrim]:\n\n\n> We can include this implementation in since it is mostly in good shape without #28992 and then make the relevant changes here in that ticket. It would be good to at least have some implementation of Puiseux series, which we can then improve upon later.\n\nI agree! Shall we switch to positive review, now?",
+    "body": "Replying to [comment:58 tscrim]:\n\n\n> We can include this implementation in since it is mostly in good shape without #28992 and then make the relevant changes here in that ticket. It would be good to at least have some implementation of Puiseux series, which we can then improve upon later.\n\n\nI agree! Shall we switch to positive review, now?",
     "created_at": "2020-01-19T20:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1491,6 +1503,7 @@ Replying to [comment:58 tscrim]:
 
 > We can include this implementation in since it is mostly in good shape without #28992 and then make the relevant changes here in that ticket. It would be good to at least have some implementation of Puiseux series, which we can then improve upon later.
 
+
 I agree! Shall we switch to positive review, now?
 
 
@@ -1500,7 +1513,7 @@ I agree! Shall we switch to positive review, now?
 archive/issue_comments_034643.json:
 ```json
 {
-    "body": "Unfortunately I have some more comments that I think should be addressed before a positive review:\n\nIn `_coerce_map_from_`:\n\n```diff\n         EXAMPLES::\n+\n             sage: R.<x> = PuiseuxSeriesRing(ZZ)\n```\n\n\nAlso, some small doc tweaks:\n\n```diff\n cdef class PuiseuxSeries(AlgebraElement):\n     r\"\"\"\n+    A Puiseux series.\n+\n     We store a Puiseux series\n```\n\nCommon practice is to have the `__init__` be the first method, and all of its doc should be moved to the class-level doc (with some formatting improvements done) with a `TestSuite(foo).run()` being in the `__init__`'s docstring.\n\nIIRC `long` is going away in Python3, and better overall I think would be a `size_t` for the `_e` attribute. Also, since `_l` is a Laurent series, shouldn't it also be a `LaurentSeries` object.\n\nWhy also is `laurent_part` a ``@`property` and not just a normal method? (I think `p.laurent_part()` is actually wrong because of this and should be `p.laurent_part`, but that is moot if that changes.)\n\nProbably good idea to break encapsulation and not have the function call here: `return self._l.laurent_polynomial()(t)` (i.e., just access the underlying polynomial).\n\nFor the `_richcmp_`, I think it would be a good idea to not call `V` on the underlying Laurent polynomials and instead implement a proper comparison as this will be significantly faster.\n\nI think we should change the MIT license to our standard license. I believe this is compatible.",
+    "body": "Unfortunately I have some more comments that I think should be addressed before a positive review:\n\nIn `_coerce_map_from_`:\n\n```diff\n         EXAMPLES::\n+\n             sage: R.<x> = PuiseuxSeriesRing(ZZ)\n```\n\nAlso, some small doc tweaks:\n\n```diff\n cdef class PuiseuxSeries(AlgebraElement):\n     r\"\"\"\n+    A Puiseux series.\n+\n     We store a Puiseux series\n```\nCommon practice is to have the `__init__` be the first method, and all of its doc should be moved to the class-level doc (with some formatting improvements done) with a `TestSuite(foo).run()` being in the `__init__`'s docstring.\n\nIIRC `long` is going away in Python3, and better overall I think would be a `size_t` for the `_e` attribute. Also, since `_l` is a Laurent series, shouldn't it also be a `LaurentSeries` object.\n\nWhy also is `laurent_part` a ``@`property` and not just a normal method? (I think `p.laurent_part()` is actually wrong because of this and should be `p.laurent_part`, but that is moot if that changes.)\n\nProbably good idea to break encapsulation and not have the function call here: `return self._l.laurent_polynomial()(t)` (i.e., just access the underlying polynomial).\n\nFor the `_richcmp_`, I think it would be a good idea to not call `V` on the underlying Laurent polynomials and instead implement a proper comparison as this will be significantly faster.\n\nI think we should change the MIT license to our standard license. I believe this is compatible.",
     "created_at": "2020-01-20T03:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1519,7 +1532,6 @@ In `_coerce_map_from_`:
              sage: R.<x> = PuiseuxSeriesRing(ZZ)
 ```
 
-
 Also, some small doc tweaks:
 
 ```diff
@@ -1529,7 +1541,6 @@ Also, some small doc tweaks:
 +
      We store a Puiseux series
 ```
-
 Common practice is to have the `__init__` be the first method, and all of its doc should be moved to the class-level doc (with some formatting improvements done) with a `TestSuite(foo).run()` being in the `__init__`'s docstring.
 
 IIRC `long` is going away in Python3, and better overall I think would be a `size_t` for the `_e` attribute. Also, since `_l` is a Laurent series, shouldn't it also be a `LaurentSeries` object.
@@ -1585,7 +1596,7 @@ All your suggestions seem to be reasonable to me.
 archive/issue_comments_034646.json:
 ```json
 {
-    "body": "Thank you. Some last little things: all `INPUT:` blocks should not end in a period/full-stop (unless it is really long). Also these specific changes:\n\n```diff\n         - ``prec`` -- (default: ``infinity``) the precision of the series\n-            as a rational number.\n+          as a rational number\n```\n\n\n```diff\n-    - ``parent`` -- Ring, the target parent.\n+    - ``parent`` -- the parent ring\n \n     - ``f``  -- one of the following types of inputs:\n-        - instance of :class:`PuiseuxSeries`\n-        - instance that can be coerced into the Laurent sersies ring of the parent.\n+\n+      * instance of :class:`PuiseuxSeries`\n+      * instance that can be coerced into the Laurent series ring of the parent\n \n-    - ``e`` -- integer (optional, default 1) for setting the ramification index.\n+    - ``e`` -- integer (default: 1); the ramification index\n```\n\n\n```diff\n     def __init__(self, parent, f, e=1):\n         r\"\"\"\n+        Initialize ``self``.\n+\n-        TESTS:\n+        TESTS::\n```\n\n\n```diff\n-Applies :meth:`shift` using the operator `<<`\n+Apply :meth:`shift` using the operator `<<`.\n```\n",
+    "body": "Thank you. Some last little things: all `INPUT:` blocks should not end in a period/full-stop (unless it is really long). Also these specific changes:\n\n```diff\n         - ``prec`` -- (default: ``infinity``) the precision of the series\n-            as a rational number.\n+          as a rational number\n```\n\n```diff\n-    - ``parent`` -- Ring, the target parent.\n+    - ``parent`` -- the parent ring\n \n     - ``f``  -- one of the following types of inputs:\n-        - instance of :class:`PuiseuxSeries`\n-        - instance that can be coerced into the Laurent sersies ring of the parent.\n+\n+      * instance of :class:`PuiseuxSeries`\n+      * instance that can be coerced into the Laurent series ring of the parent\n \n-    - ``e`` -- integer (optional, default 1) for setting the ramification index.\n+    - ``e`` -- integer (default: 1); the ramification index\n```\n\n```diff\n     def __init__(self, parent, f, e=1):\n         r\"\"\"\n+        Initialize ``self``.\n+\n-        TESTS:\n+        TESTS::\n```\n\n```diff\n-Applies :meth:`shift` using the operator `<<`\n+Apply :meth:`shift` using the operator `<<`.\n```",
     "created_at": "2020-01-21T18:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1602,7 +1613,6 @@ Thank you. Some last little things: all `INPUT:` blocks should not end in a peri
 +          as a rational number
 ```
 
-
 ```diff
 -    - ``parent`` -- Ring, the target parent.
 +    - ``parent`` -- the parent ring
@@ -1618,7 +1628,6 @@ Thank you. Some last little things: all `INPUT:` blocks should not end in a peri
 +    - ``e`` -- integer (default: 1); the ramification index
 ```
 
-
 ```diff
      def __init__(self, parent, f, e=1):
          r"""
@@ -1628,12 +1637,10 @@ Thank you. Some last little things: all `INPUT:` blocks should not end in a peri
 +        TESTS::
 ```
 
-
 ```diff
 -Applies :meth:`shift` using the operator `<<`
 +Apply :meth:`shift` using the operator `<<`.
 ```
-
 
 
 
@@ -1660,7 +1667,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_034648.json:
 ```json
 {
-    "body": "Replying to [comment:64 tscrim]:\n> Thank you. Some last little things: \n\nDone!",
+    "body": "Replying to [comment:64 tscrim]:\n> Thank you. Some last little things: \n\n\nDone!",
     "created_at": "2020-01-22T08:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1671,6 +1678,7 @@ archive/issue_comments_034648.json:
 
 Replying to [comment:64 tscrim]:
 > Thank you. Some last little things: 
+
 
 Done!
 
@@ -1787,7 +1795,7 @@ Did this also solve #9289 (Implement Puiseux polynomials)?
 archive/issue_comments_034654.json:
 ```json
 {
-    "body": "Replying to [comment:70 slelievre]:\n> Did this also solve #9289 (Implement Puiseux polynomials)?\n\nImplicitly, but not really since we should have a dedicated parent and element for the polynomials.",
+    "body": "Replying to [comment:70 slelievre]:\n> Did this also solve #9289 (Implement Puiseux polynomials)?\n\n\nImplicitly, but not really since we should have a dedicated parent and element for the polynomials.",
     "created_at": "2020-07-15T02:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1799,6 +1807,7 @@ archive/issue_comments_034654.json:
 Replying to [comment:70 slelievre]:
 > Did this also solve #9289 (Implement Puiseux polynomials)?
 
+
 Implicitly, but not really since we should have a dedicated parent and element for the polynomials.
 
 
@@ -1808,7 +1817,7 @@ Implicitly, but not really since we should have a dedicated parent and element f
 archive/issue_comments_034655.json:
 ```json
 {
-    "body": "Replying to [comment:71 tscrim]:\n> Replying to [comment:70 slelievre]:\n> > Did this also solve #9289 (Implement Puiseux polynomials)?\n> \n> Implicitly, but not really since we should have a dedicated parent and element for the polynomials.\n\nBut maybe it's a good idea to have the implementation of the Puiseux polynomial rely as much as possible on the Puiseux series. That would avoid having a lot of duplicated code. At the moment the code attached to ticket #9289 is not far away from being copy pasted from the corresponding classes for Laurent polynomials with some name refactoring done. So we would not loose that much if we decide to implement the Puiseux polynomials as \"restricted Puiseux series\".\n\nWhat is standing against that?",
+    "body": "Replying to [comment:71 tscrim]:\n> Replying to [comment:70 slelievre]:\n> > Did this also solve #9289 (Implement Puiseux polynomials)?\n\n> \n> Implicitly, but not really since we should have a dedicated parent and element for the polynomials.\n\n\nBut maybe it's a good idea to have the implementation of the Puiseux polynomial rely as much as possible on the Puiseux series. That would avoid having a lot of duplicated code. At the moment the code attached to ticket #9289 is not far away from being copy pasted from the corresponding classes for Laurent polynomials with some name refactoring done. So we would not loose that much if we decide to implement the Puiseux polynomials as \"restricted Puiseux series\".\n\nWhat is standing against that?",
     "created_at": "2020-07-15T21:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1820,8 +1829,10 @@ archive/issue_comments_034655.json:
 Replying to [comment:71 tscrim]:
 > Replying to [comment:70 slelievre]:
 > > Did this also solve #9289 (Implement Puiseux polynomials)?
+
 > 
 > Implicitly, but not really since we should have a dedicated parent and element for the polynomials.
+
 
 But maybe it's a good idea to have the implementation of the Puiseux polynomial rely as much as possible on the Puiseux series. That would avoid having a lot of duplicated code. At the moment the code attached to ticket #9289 is not far away from being copy pasted from the corresponding classes for Laurent polynomials with some name refactoring done. So we would not loose that much if we decide to implement the Puiseux polynomials as "restricted Puiseux series".
 
@@ -1852,7 +1863,7 @@ That would work, but it would likely be slow. I think the thing to do is follow 
 archive/issue_comments_034657.json:
 ```json
 {
-    "body": "Replying to [comment:73 tscrim]:\n> That would work, but it would likely be slow. \n\nTravis, I don't see the point of what would make that noticeable slower. I think all calculation that could harm performance will be executed inside polynomial classes independent on how we translate it to them. A little bit more time used for the translation because there is one step more cannot amount that much.\n\nWhat I have in mind is similar to how I did the embedding of the localization into the fraction field (via a value attribute). In the meantime I've seen that there is a special class `ElementWrapper` for such constructions (I hadn't been aware of it when implementing the localization).",
+    "body": "Replying to [comment:73 tscrim]:\n> That would work, but it would likely be slow. \n\n\nTravis, I don't see the point of what would make that noticeable slower. I think all calculation that could harm performance will be executed inside polynomial classes independent on how we translate it to them. A little bit more time used for the translation because there is one step more cannot amount that much.\n\nWhat I have in mind is similar to how I did the embedding of the localization into the fraction field (via a value attribute). In the meantime I've seen that there is a special class `ElementWrapper` for such constructions (I hadn't been aware of it when implementing the localization).",
     "created_at": "2020-07-17T22:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4618",
     "type": "issue_comment",
@@ -1863,6 +1874,7 @@ archive/issue_comments_034657.json:
 
 Replying to [comment:73 tscrim]:
 > That would work, but it would likely be slow. 
+
 
 Travis, I don't see the point of what would make that noticeable slower. I think all calculation that could harm performance will be executed inside polynomial classes independent on how we translate it to them. A little bit more time used for the translation because there is one step more cannot amount that much.
 

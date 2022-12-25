@@ -3,7 +3,7 @@
 archive/issues_009121.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThis test now fails, since it really just compares types and as sage grows types get loaded into different places in memory:\n\n```\n            sage: Primes() < Set(QQ)\n            True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9121\n\n",
+    "body": "Assignee: tbd\n\nThis test now fails, since it really just compares types and as sage grows types get loaded into different places in memory:\n\n```\n            sage: Primes() < Set(QQ)\n            True\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9121\n\n",
     "created_at": "2010-06-03T03:23:06Z",
     "labels": [
         "component: doctest coverage",
@@ -26,7 +26,6 @@ This test now fails, since it really just compares types and as sage grows types
             True
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9121
 
 
@@ -38,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9121
 archive/issue_comments_084694.json:
 ```json
 {
-    "body": "I noticed a bug while looking at the relevant code in __cmp__:\n\n```\n        if not isinstance(right, Set_object):\n            return cmp(type(right), type(Set_object))\n        return cmp(self.__object, right.__object)\n```\n\nNotice that the first compare is totally backwards!   Interestingly, fixing this does fix the above bug.  Patch attached.",
+    "body": "I noticed a bug while looking at the relevant code in __cmp__:\n\n```\n        if not isinstance(right, Set_object):\n            return cmp(type(right), type(Set_object))\n        return cmp(self.__object, right.__object)\n```\nNotice that the first compare is totally backwards!   Interestingly, fixing this does fix the above bug.  Patch attached.",
     "created_at": "2010-06-03T03:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9121",
     "type": "issue_comment",
@@ -54,7 +53,6 @@ I noticed a bug while looking at the relevant code in __cmp__:
             return cmp(type(right), type(Set_object))
         return cmp(self.__object, right.__object)
 ```
-
 Notice that the first compare is totally backwards!   Interestingly, fixing this does fix the above bug.  Patch attached.
 
 
@@ -177,7 +175,7 @@ Note that I'm marking this test random, since it is a comparison of types, which
 archive/issue_comments_084700.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> fbissey -- you're right.  Both of our patches are wrong, but together they are right.  \n> \n> Note that I'm marking this test random, since it is a comparison of types, which is architecture and sage-version dependent. \n\nNote : trac_9121.patch was already merged in sage-4.4.3.alpha1 only trac_9121-part2.patch needs to be merged... The patch looks good to me I'm waiting for the tests to finish.",
+    "body": "Replying to [comment:4 was]:\n> fbissey -- you're right.  Both of our patches are wrong, but together they are right.  \n> \n> Note that I'm marking this test random, since it is a comparison of types, which is architecture and sage-version dependent. \n\n\nNote : trac_9121.patch was already merged in sage-4.4.3.alpha1 only trac_9121-part2.patch needs to be merged... The patch looks good to me I'm waiting for the tests to finish.",
     "created_at": "2010-06-03T16:46:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9121",
     "type": "issue_comment",
@@ -190,6 +188,7 @@ Replying to [comment:4 was]:
 > fbissey -- you're right.  Both of our patches are wrong, but together they are right.  
 > 
 > Note that I'm marking this test random, since it is a comparison of types, which is architecture and sage-version dependent. 
+
 
 Note : trac_9121.patch was already merged in sage-4.4.3.alpha1 only trac_9121-part2.patch needs to be merged... The patch looks good to me I'm waiting for the tests to finish.
 

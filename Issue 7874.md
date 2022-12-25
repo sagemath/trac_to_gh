@@ -3,7 +3,7 @@
 archive/issues_007874.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nCan we typeset the labels of interact controls\n\n```python\n@interact\ndef test(x=slider(-2,2,1, label='$x^2$')):\n    print \"Doing nothing in an interact\"\n```\n\n?\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7874\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nCan we typeset the labels of interact controls\n\n```python\n@interact\ndef test(x=slider(-2,2,1, label='$x^2$')):\n    print \"Doing nothing in an interact\"\n```\n?\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7874\n\n",
     "created_at": "2010-01-08T21:34:57Z",
     "labels": [
         "component: notebook",
@@ -28,7 +28,6 @@ Can we typeset the labels of interact controls
 def test(x=slider(-2,2,1, label='$x^2$')):
     print "Doing nothing in an interact"
 ```
-
 ?
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/312cab9514bece7c).
@@ -143,7 +142,7 @@ Rob
 archive/issue_comments_068282.json:
 ```json
 {
-    "body": "Please see [SageNB's home](http://nb.sagemath.org/) for brief directions.  In particular,\n\n```sh\nmkdir tmp; cd tmp\nwget http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.4.9.spkg\ntar jxvf sagenb-0.4.9.spkg\ncd sagenb-0.4.9/src/sagenb\nsage -hg pull http://boxen.math.washington.edu:8100\nsage -hg update\n```\n\nThen apply the patch, do\n\n```sh\nsage -python setup.py develop\n```\n\nand run the notebook.  (The \"develop\" command, unlike the \"install\" command, just tells `setuptools` to use the current directory as the installation.)  To revert to original version, you can `hg qpop` the patch (if you're using [queues](http://wiki.sagemath.org/MercurialQueues)) or do\n\n```sh\nsage -f sagenb-0.4.9.spkg\n```\n\nPlease let me know, if you have questions.",
+    "body": "Please see [SageNB's home](http://nb.sagemath.org/) for brief directions.  In particular,\n\n```sh\nmkdir tmp; cd tmp\nwget http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.4.9.spkg\ntar jxvf sagenb-0.4.9.spkg\ncd sagenb-0.4.9/src/sagenb\nsage -hg pull http://boxen.math.washington.edu:8100\nsage -hg update\n```\nThen apply the patch, do\n\n```sh\nsage -python setup.py develop\n```\nand run the notebook.  (The \"develop\" command, unlike the \"install\" command, just tells `setuptools` to use the current directory as the installation.)  To revert to original version, you can `hg qpop` the patch (if you're using [queues](http://wiki.sagemath.org/MercurialQueues)) or do\n\n```sh\nsage -f sagenb-0.4.9.spkg\n```\nPlease let me know, if you have questions.",
     "created_at": "2010-01-08T22:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -162,19 +161,16 @@ cd sagenb-0.4.9/src/sagenb
 sage -hg pull http://boxen.math.washington.edu:8100
 sage -hg update
 ```
-
 Then apply the patch, do
 
 ```sh
 sage -python setup.py develop
 ```
-
 and run the notebook.  (The "develop" command, unlike the "install" command, just tells `setuptools` to use the current directory as the installation.)  To revert to original version, you can `hg qpop` the patch (if you're using [queues](http://wiki.sagemath.org/MercurialQueues)) or do
 
 ```sh
 sage -f sagenb-0.4.9.spkg
 ```
-
 Please let me know, if you have questions.
 
 
@@ -262,7 +258,7 @@ Rob
 archive/issue_comments_068287.json:
 ```json
 {
-    "body": "Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by @rbeezer created at 2010-01-09 00:52:04\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
+    "body": "Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uuid/ticket7874/interact-controls-formatted.png) by @rbeezer created at 2010-01-09 00:52:04\n\nReplying to [comment:7 mpatel]:\n> Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.\n\n\nYes, to adventurous, no to spare time.  But I think adventure wins.  \n\nBut (this is embarrassing) I've never installed an spkg.  How should I do this so I can back it out again without having a mess on my hands?  ;-)  I don't have anything important to lose, so it won't be a crisis if I screw up.  Can you give me another short primer?\n\nShould have said above: I don't think I know enough to give a review.  But I'm going to go right now and advertise how good the patch is and see if we can get one.\n\nRob",
     "created_at": "2010-01-09T00:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -275,6 +271,7 @@ Attachment [interact-controls-formatted.png](tarball://root/attachments/some-uui
 
 Replying to [comment:7 mpatel]:
 > Hi Rob -- If you're feeling adventurous and have some spare time, please try testing the spkg at #7666.
+
 
 Yes, to adventurous, no to spare time.  But I think adventure wins.  
 
@@ -291,7 +288,7 @@ Rob
 archive/issue_comments_068288.json:
 ```json
 {
-    "body": "To install any spkg, local or remote, just do, e.g.,\n\n```\nsage -f http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.spkg\n```\n\nTo revert to the \"default\" spkg (or another version), just do, e.g.,\n\n```\nsage -f $SAGE_ROOT/spkg/standard/sagenb-0.4.9.spkg\n```\n\n(The default should already be part of the source distribution.)  Actually, `sage -advanced` also gives `sage -i thepackage.spkg` as a way to install an spkg.  The `-f` option forces a reinstall, even if the package is already installed.\n\nAs always, please let me know, if there are questions and/or problems.",
+    "body": "To install any spkg, local or remote, just do, e.g.,\n\n```\nsage -f http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.spkg\n```\nTo revert to the \"default\" spkg (or another version), just do, e.g.,\n\n```\nsage -f $SAGE_ROOT/spkg/standard/sagenb-0.4.9.spkg\n```\n(The default should already be part of the source distribution.)  Actually, `sage -advanced` also gives `sage -i thepackage.spkg` as a way to install an spkg.  The `-f` option forces a reinstall, even if the package is already installed.\n\nAs always, please let me know, if there are questions and/or problems.",
     "created_at": "2010-01-09T01:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -305,13 +302,11 @@ To install any spkg, local or remote, just do, e.g.,
 ```
 sage -f http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.spkg
 ```
-
 To revert to the "default" spkg (or another version), just do, e.g.,
 
 ```
 sage -f $SAGE_ROOT/spkg/standard/sagenb-0.4.9.spkg
 ```
-
 (The default should already be part of the source distribution.)  Actually, `sage -advanced` also gives `sage -i thepackage.spkg` as a way to install an spkg.  The `-f` option forces a reinstall, even if the package is already installed.
 
 As always, please let me know, if there are questions and/or problems.
@@ -323,7 +318,7 @@ As always, please let me know, if there are questions and/or problems.
 archive/issue_comments_068289.json:
 ```json
 {
-    "body": "Hmmm... I just tried the first line, but I got an error.  It may be better to download the spkg first and rename it:\n\n```\nwget http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.spkg\nmv sagenb-0.5-7666b2.spkg sagenb-0.5.spkg\nsage -f sagenb-0.5.spkg\n```\n\nI apologize for this.",
+    "body": "Hmmm... I just tried the first line, but I got an error.  It may be better to download the spkg first and rename it:\n\n```\nwget http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.spkg\nmv sagenb-0.5-7666b2.spkg sagenb-0.5.spkg\nsage -f sagenb-0.5.spkg\n```\nI apologize for this.",
     "created_at": "2010-01-09T01:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -339,7 +334,6 @@ wget http://boxen.math.washington.edu/home/mpatel/trac/7666/sagenb-0.5-7666b2.sp
 mv sagenb-0.5-7666b2.spkg sagenb-0.5.spkg
 sage -f sagenb-0.5.spkg
 ```
-
 I apologize for this.
 
 
@@ -386,7 +380,7 @@ The one-liner should now work.  Another lesson learned.  (I didn't rename the in
 archive/issue_comments_068292.json:
 ```json
 {
-    "body": "Replying to [comment:13 mpatel]:\n> The one-liner should now work.  Another lesson learned.  (I didn't rename the internal directory to `sagenb-0.5-7666b2`.)\n\nLooks like the package has been fixed, so no renaming is needed.",
+    "body": "Replying to [comment:13 mpatel]:\n> The one-liner should now work.  Another lesson learned.  (I didn't rename the internal directory to `sagenb-0.5-7666b2`.)\n\n\nLooks like the package has been fixed, so no renaming is needed.",
     "created_at": "2010-01-10T06:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7874",
     "type": "issue_comment",
@@ -397,6 +391,7 @@ archive/issue_comments_068292.json:
 
 Replying to [comment:13 mpatel]:
 > The one-liner should now work.  Another lesson learned.  (I didn't rename the internal directory to `sagenb-0.5-7666b2`.)
+
 
 Looks like the package has been fixed, so no renaming is needed.
 

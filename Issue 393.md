@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/393
 archive/issue_comments_001920.json:
 ```json
 {
-    "body": "Attachment [sage_errors__matrix_test.py](tarball://root/attachments/some-uuid/ticket393/sage_errors__matrix_test.py) by @jonhanke created at 2007-06-28 15:28:21\n\nHere is the output of the attached routine, which essentially does the same thing 3 times and gets 3 different answers!\n\n\n```\njonhanke@[~/Documents/sage-2.6/devel/sage-qfdevel/sage/quadratic_forms]: sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\nrunning install\nrunning build\nrunning build_py\ncopying sage/quadratic_forms/sage_errors__matrix_test.py -> build/lib.macosx-10.3-i386-2.5/sage/quadratic_forms\nrunning build_ext\nrunning build_scripts\nrunning install_lib\ncopying build/lib.macosx-10.3-i386-2.5/sage/quadratic_forms/sage_errors__matrix_test.py -> /Users/jonhanke/Documents/sage-2.6/local/lib/python2.5/site-packag\n\nsage: MatrixTest()\nFalse\n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\n\nm1 is \n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\n\nm2 is \n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\nFalse\n\n\nm1 is \n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\n\nm2 is \n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\nFalse\n```\n",
+    "body": "Attachment [sage_errors__matrix_test.py](tarball://root/attachments/some-uuid/ticket393/sage_errors__matrix_test.py) by @jonhanke created at 2007-06-28 15:28:21\n\nHere is the output of the attached routine, which essentially does the same thing 3 times and gets 3 different answers!\n\n```\njonhanke@[~/Documents/sage-2.6/devel/sage-qfdevel/sage/quadratic_forms]: sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\nrunning install\nrunning build\nrunning build_py\ncopying sage/quadratic_forms/sage_errors__matrix_test.py -> build/lib.macosx-10.3-i386-2.5/sage/quadratic_forms\nrunning build_ext\nrunning build_scripts\nrunning install_lib\ncopying build/lib.macosx-10.3-i386-2.5/sage/quadratic_forms/sage_errors__matrix_test.py -> /Users/jonhanke/Documents/sage-2.6/local/lib/python2.5/site-packag\n\nsage: MatrixTest()\nFalse\n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\n\nm1 is \n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\n\nm2 is \n[0.000000000000000 0.000000000000000]\n[0.000000000000000 0.000000000000000]\nFalse\n\n\nm1 is \n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\n\nm2 is \n[0.500000000000000 0.000000000000000]\n[0.000000000000000 0.500000000000000]\nFalse\n```",
     "created_at": "2007-06-28T15:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/393",
     "type": "issue_comment",
@@ -45,7 +45,6 @@ archive/issue_comments_001920.json:
 Attachment [sage_errors__matrix_test.py](tarball://root/attachments/some-uuid/ticket393/sage_errors__matrix_test.py) by @jonhanke created at 2007-06-28 15:28:21
 
 Here is the output of the attached routine, which essentially does the same thing 3 times and gets 3 different answers!
-
 
 ```
 jonhanke@[~/Documents/sage-2.6/devel/sage-qfdevel/sage/quadratic_forms]: sage -br
@@ -88,7 +87,6 @@ m2 is
 [0.000000000000000 0.500000000000000]
 False
 ```
-
 
 
 

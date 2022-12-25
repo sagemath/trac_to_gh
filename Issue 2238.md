@@ -56,7 +56,7 @@ Attachment [const_fails.patch](tarball://root/attachments/some-uuid/ticket2238/c
 archive/issue_comments_014786.json:
 ```json
 {
-    "body": "1. The right solution is to always *SORT* the output if possible (which it is), so there is nothing random involved.\n\n2. And 2, my red flag went off when I saw list. Check out this bug!\n\n```\nsage: E = EllipticCurve(GF(5),[0, -1, 1, -10, -20]) \nsage: w = E.points(); w\n[(0 : 1 : 0), (0 : 0 : 1), (1 : 4 : 1), (1 : 0 : 1), (0 : 4 : 1)]\nsage: w[0] = 15\nsage: E.points()\n[15, (0 : 0 : 1), (1 : 4 : 1), (1 : 0 : 1), (0 : 4 : 1)]\n```\n\n\nI'll post a patch to fix both issues.",
+    "body": "1. The right solution is to always *SORT* the output if possible (which it is), so there is nothing random involved.\n\n2. And 2, my red flag went off when I saw list. Check out this bug!\n\n```\nsage: E = EllipticCurve(GF(5),[0, -1, 1, -10, -20]) \nsage: w = E.points(); w\n[(0 : 1 : 0), (0 : 0 : 1), (1 : 4 : 1), (1 : 0 : 1), (0 : 4 : 1)]\nsage: w[0] = 15\nsage: E.points()\n[15, (0 : 0 : 1), (1 : 4 : 1), (1 : 0 : 1), (0 : 4 : 1)]\n```\n\nI'll post a patch to fix both issues.",
     "created_at": "2008-02-20T23:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -77,7 +77,6 @@ sage: w[0] = 15
 sage: E.points()
 [15, (0 : 0 : 1), (1 : 4 : 1), (1 : 0 : 1), (0 : 4 : 1)]
 ```
-
 
 I'll post a patch to fix both issues.
 
@@ -287,7 +286,7 @@ I'm not sure what the correct milestone is for this, certainly not 2.10.2, and i
 archive/issue_comments_014796.json:
 ```json
 {
-    "body": "Replying to [comment:6 cremona]:\n> Thanks to Alex and William for fixing these things which were caused by me:  as a relative novice to Python I am not aware as I should be of the critical differences between lists and tuples!  And the need to sort things to be canonical.\n> \n> I'm not sure what the correct milestone is for this, certainly not 2.10.2, and it's not in 2.10.3.rc0 either, but not for lack of positive reviews.\n> \n\nI check my 2.10.3.rc1 and:\n\n* sage-2238-new.patch is \"changeset: 8647:97976cb27ad3\" in the sage repo (this is in the 2.10.2 release time frame)\n* doc-2238.patch is \"changeset: 429:3a30bbba6c29\" in the doc repo (this is in the 2.10.2 release time frame)\n\nSo, I am sure both patches have been applied. \n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 cremona]:\n> Thanks to Alex and William for fixing these things which were caused by me:  as a relative novice to Python I am not aware as I should be of the critical differences between lists and tuples!  And the need to sort things to be canonical.\n> \n> I'm not sure what the correct milestone is for this, certainly not 2.10.2, and it's not in 2.10.3.rc0 either, but not for lack of positive reviews.\n> \n\n\nI check my 2.10.3.rc1 and:\n\n* sage-2238-new.patch is \"changeset: 8647:97976cb27ad3\" in the sage repo (this is in the 2.10.2 release time frame)\n* doc-2238.patch is \"changeset: 429:3a30bbba6c29\" in the doc repo (this is in the 2.10.2 release time frame)\n\nSo, I am sure both patches have been applied. \n\nCheers,\n\nMichael",
     "created_at": "2008-03-02T17:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2238",
     "type": "issue_comment",
@@ -301,6 +300,7 @@ Replying to [comment:6 cremona]:
 > 
 > I'm not sure what the correct milestone is for this, certainly not 2.10.2, and it's not in 2.10.3.rc0 either, but not for lack of positive reviews.
 > 
+
 
 I check my 2.10.3.rc1 and:
 

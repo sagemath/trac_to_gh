@@ -3,7 +3,7 @@
 archive/issues_001116.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status\n? sage-cleaner.orig\n? sage-clone.orig\n? sage-lo\n? sage-make\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1116\n\n",
+    "body": "Assignee: mabshoff\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status\n? sage-cleaner.orig\n? sage-clone.orig\n? sage-lo\n? sage-make\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1116\n\n",
     "created_at": "2007-11-06T22:26:03Z",
     "labels": [
         "component: distribution",
@@ -18,7 +18,6 @@ archive/issues_001116.json:
 ```
 Assignee: mabshoff
 
-
 ```
 mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status
 ? sage-cleaner.orig
@@ -26,7 +25,6 @@ mabshoff@sage:/tmp/Work-mabshoff/sage-2.8.12.alpha1/local/bin$ hg status
 ? sage-lo
 ? sage-make
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1116
 

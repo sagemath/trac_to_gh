@@ -3,7 +3,7 @@
 archive/issues_002503.json:
 ```json
 {
-    "body": "Assignee: failure\n\nThe following doctest failure in sage/misc/functional.py happends due to #2421:\n\n```\nsage -t -long devel/sage-main/sage/misc/functional.py\n**********************************************************************\nFile \"functional.py\", line 848:\n    sage: round(b)\nExpected:\n    5.0000000000000000\nGot:\n    5\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_52\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_functional.py\n         [5.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\nThe fix is obvious - patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2503\n\n",
+    "body": "Assignee: failure\n\nThe following doctest failure in sage/misc/functional.py happends due to #2421:\n\n```\nsage -t -long devel/sage-main/sage/misc/functional.py\n**********************************************************************\nFile \"functional.py\", line 848:\n    sage: round(b)\nExpected:\n    5.0000000000000000\nGot:\n    5\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_52\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_functional.py\n         [5.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\nThe fix is obvious - patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2503\n\n",
     "created_at": "2008-03-12T21:19:49Z",
     "labels": [
         "component: doctest coverage",
@@ -39,7 +39,6 @@ exit code: 256
 
 ----------------------------------------------------------------------
 ```
-
 The fix is obvious - patch coming up.
 
 Cheers,

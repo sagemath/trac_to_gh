@@ -3,7 +3,7 @@
 archive/issues_000769.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
+    "body": "Assignee: @williamstein\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
     "created_at": "2007-10-01T04:21:25Z",
     "labels": [
         "component: algebraic geometry",
@@ -40,8 +40,6 @@ True
 False
 ```
 
-
-
 ```
 sage: for i in range(10): 
 ....:   A = random_matrix(GF(7),20,20);
@@ -60,7 +58,6 @@ True
 True
 True
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/769
 

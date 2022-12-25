@@ -3,7 +3,7 @@
 archive/issues_007566.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bernhard.esslinger@db.com\n\nFrom Bernhard Esslinger:\n\n```\nI also would like to have a verbose mode for brute_force(), which also prints the statistical values like chi square (to check and make comparisons easy) \n```\n\nPossibilities for the keyword `verbose` include:\n\n1. print the rank number of a candidate decipherment\n2. print the statistical value of a candidate decipherment\n\nIssue created by migration from https://trac.sagemath.org/ticket/7566\n\n",
+    "body": "Assignee: mvngu\n\nCC:  bernhard.esslinger@db.com\n\nFrom Bernhard Esslinger:\n\n```\nI also would like to have a verbose mode for brute_force(), which also prints the statistical values like chi square (to check and make comparisons easy) \n```\nPossibilities for the keyword `verbose` include:\n\n1. print the rank number of a candidate decipherment\n2. print the statistical value of a candidate decipherment\n\nIssue created by migration from https://trac.sagemath.org/ticket/7566\n\n",
     "created_at": "2009-12-01T03:20:29Z",
     "labels": [
         "component: cryptography",
@@ -25,7 +25,6 @@ From Bernhard Esslinger:
 ```
 I also would like to have a verbose mode for brute_force(), which also prints the statistical values like chi square (to check and make comparisons easy) 
 ```
-
 Possibilities for the keyword `verbose` include:
 
 1. print the rank number of a candidate decipherment

@@ -3,7 +3,7 @@
 archive/issues_005535.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb @JohnCremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\n\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb @JohnCremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
     "created_at": "2009-03-16T21:04:31Z",
     "labels": [
         "component: algebra"
@@ -32,7 +32,6 @@ The current (generic) code for is_primitive in rings/polynomial/polynomial_eleme
                 return False
         return True
 ```
-
 Note that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.
 
 The proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.
@@ -142,7 +141,7 @@ I added some verbiage to the is_primitive docstring to indicate that it's only u
 archive/issue_comments_042952.json:
 ```json
 {
-    "body": "This looks ok to me, though I think you could delete the second paragraph of the docstring (it's a bit too detailed).\n\nFor the code itself one could also use the (generic) order_from_multiple() function like this:\n\n```\nreturn order_from_multiple(y,n,n_prime_divs,operation='*')==n\n```\n\nsince the order_from_multiple() function (which I wrote) already takes the list of prime divisors of n as a parameter, computing it if it is not given.  I just tried that on a poly of degree 257 over GF(2) and it worked fine (I was impressed at Sage's ability to factor the 78-digit number `2^257-1`!).  It does do a little more work though as it finds the exact order.\n\nThere seems to be quite a large literature on finding primitive polynomials which may include better tests of primitivity.  I'll take a look at some of those when I'm back at work.",
+    "body": "This looks ok to me, though I think you could delete the second paragraph of the docstring (it's a bit too detailed).\n\nFor the code itself one could also use the (generic) order_from_multiple() function like this:\n\n```\nreturn order_from_multiple(y,n,n_prime_divs,operation='*')==n\n```\nsince the order_from_multiple() function (which I wrote) already takes the list of prime divisors of n as a parameter, computing it if it is not given.  I just tried that on a poly of degree 257 over GF(2) and it worked fine (I was impressed at Sage's ability to factor the 78-digit number `2^257-1`!).  It does do a little more work though as it finds the exact order.\n\nThere seems to be quite a large literature on finding primitive polynomials which may include better tests of primitivity.  I'll take a look at some of those when I'm back at work.",
     "created_at": "2009-03-18T20:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -158,7 +157,6 @@ For the code itself one could also use the (generic) order_from_multiple() funct
 ```
 return order_from_multiple(y,n,n_prime_divs,operation='*')==n
 ```
-
 since the order_from_multiple() function (which I wrote) already takes the list of prime divisors of n as a parameter, computing it if it is not given.  I just tried that on a poly of degree 257 over GF(2) and it worked fine (I was impressed at Sage's ability to factor the 78-digit number `2^257-1`!).  It does do a little more work though as it finds the exact order.
 
 There seems to be quite a large literature on finding primitive polynomials which may include better tests of primitivity.  I'll take a look at some of those when I'm back at work.
@@ -188,7 +186,7 @@ One more comment:  NTL has efficient routines for modular exponentiation modulo 
 archive/issue_comments_042954.json:
 ```json
 {
-    "body": "I'll give this a positive review if two things are changed: (1) replace n = p ** self.degree() - 1 by n = q ** self.degree() - 1 where q = self.base_ring().order(), which is the same as at present for polynomials defined over prime fields, but now gives a correct answer for polynomials defined over non-prime finite fields; (2) put in tests for k=self.base_ring() that k.is_field() and k.is_finite(), perhaps raising a NotImplementedError, since otherwise the result is rather random:\n\n```\nsage: x=polygen(ZZ)\nsage: f=x^2+1\nsage: f.is_primitive()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/24798/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.is_primitive (sage/rings/polynomial/polynomial_element.c:19782)()\n\nAttributeError: 'int' object has no attribute 'prime_divisors'\n```\n",
+    "body": "I'll give this a positive review if two things are changed: (1) replace n = p ** self.degree() - 1 by n = q ** self.degree() - 1 where q = self.base_ring().order(), which is the same as at present for polynomials defined over prime fields, but now gives a correct answer for polynomials defined over non-prime finite fields; (2) put in tests for k=self.base_ring() that k.is_field() and k.is_finite(), perhaps raising a NotImplementedError, since otherwise the result is rather random:\n\n```\nsage: x=polygen(ZZ)\nsage: f=x^2+1\nsage: f.is_primitive()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/24798/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.is_primitive (sage/rings/polynomial/polynomial_element.c:19782)()\n\nAttributeError: 'int' object has no attribute 'prime_divisors'\n```",
     "created_at": "2009-03-21T19:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -212,7 +210,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'int' object has no attribute 'prime_divisors'
 ```
-
 
 
 
@@ -370,7 +367,7 @@ archive/issue_events_012992.json:
 archive/issue_comments_042961.json:
 ```json
 {
-    "body": "Replying to [comment:9 rhinton]:\n> Thanks for the excellent suggestions.  I replaced most of the existing code with `order_with_multiple`.  A quick timing test (primitive degree 128 polynomial over GF(2)) showed a slight improvement with the change (603 ms per loop instead of 740 ms per loop).\n\n\nIs it possible for you to give some system/architecture information of the machine you used to obtain the above timing statistics? It would also be good to include the actual code that produces those timing improvements. What I'm looking for are a \"before\" and an \"after\" sections to clearly show the timing improvements in your patch.",
+    "body": "Replying to [comment:9 rhinton]:\n> Thanks for the excellent suggestions.  I replaced most of the existing code with `order_with_multiple`.  A quick timing test (primitive degree 128 polynomial over GF(2)) showed a slight improvement with the change (603 ms per loop instead of 740 ms per loop).\n\n\n\nIs it possible for you to give some system/architecture information of the machine you used to obtain the above timing statistics? It would also be good to include the actual code that produces those timing improvements. What I'm looking for are a \"before\" and an \"after\" sections to clearly show the timing improvements in your patch.",
     "created_at": "2009-03-24T01:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -383,6 +380,7 @@ Replying to [comment:9 rhinton]:
 > Thanks for the excellent suggestions.  I replaced most of the existing code with `order_with_multiple`.  A quick timing test (primitive degree 128 polynomial over GF(2)) showed a slight improvement with the change (603 ms per loop instead of 740 ms per loop).
 
 
+
 Is it possible for you to give some system/architecture information of the machine you used to obtain the above timing statistics? It would also be good to include the actual code that produces those timing improvements. What I'm looking for are a "before" and an "after" sections to clearly show the timing improvements in your patch.
 
 
@@ -392,7 +390,7 @@ Is it possible for you to give some system/architecture information of the machi
 archive/issue_comments_042962.json:
 ```json
 {
-    "body": "For future reference, I am running a Pentium 4, 2.4 GHz with 2 GB of RAM.  Here is some sample code I used to measure the performance difference on my system.\n\n```\n  R.<x> = PolynomialRing(GF(2), 'x')\n\n  # degree 128\n  nn = 128\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')\n  # 25 loops, best of 3: 20.9 ms per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 1 s per loop\n  timeit('poly.is_primitive()')\n  # 5 loops, best of 3: 1.03 s per loop\n\n  # degree 256\n  nn = 256\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')  # this takes a long time\n  # 5 loops, best of 3: 9.3 s per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 2.67 s per loop\n  timeit('poly.is_primitive()')  # this takes a longer time\n  # 5 loops, best of 3: 11.5 s per loop\n```\n\nThe actual speedup, of course, depends on how many times you're calling is_primitive for the same degree (if you have to call prime_divisors() for each degree) and the actual degrees.  Typically speedups will be greater for higher degrees.",
+    "body": "For future reference, I am running a Pentium 4, 2.4 GHz with 2 GB of RAM.  Here is some sample code I used to measure the performance difference on my system.\n\n```\n  R.<x> = PolynomialRing(GF(2), 'x')\n\n  # degree 128\n  nn = 128\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')\n  # 25 loops, best of 3: 20.9 ms per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 1 s per loop\n  timeit('poly.is_primitive()')\n  # 5 loops, best of 3: 1.03 s per loop\n\n  # degree 256\n  nn = 256\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')  # this takes a long time\n  # 5 loops, best of 3: 9.3 s per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 2.67 s per loop\n  timeit('poly.is_primitive()')  # this takes a longer time\n  # 5 loops, best of 3: 11.5 s per loop\n```\nThe actual speedup, of course, depends on how many times you're calling is_primitive for the same degree (if you have to call prime_divisors() for each degree) and the actual degrees.  Typically speedups will be greater for higher degrees.",
     "created_at": "2009-03-24T02:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
@@ -442,5 +440,4 @@ For future reference, I am running a Pentium 4, 2.4 GHz with 2 GB of RAM.  Here 
   timeit('poly.is_primitive()')  # this takes a longer time
   # 5 loops, best of 3: 11.5 s per loop
 ```
-
 The actual speedup, of course, depends on how many times you're calling is_primitive for the same degree (if you have to call prime_divisors() for each degree) and the actual degrees.  Typically speedups will be greater for higher degrees.

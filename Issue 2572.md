@@ -3,7 +3,7 @@
 archive/issues_002572.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: imag algebraic reals\n\nThis makes it hard to write generic code:\n\n\n```\nsage: L, (_, a), L_into_A = number_field_elements_from_algebraics([sqrt(2), sqrt(-2 + sqrt(2))*I], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 2\n  To:   Algebraic Real Field\n  Defn: a |--> [-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a)\n[-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a).imag()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'AlgebraicReal' object has no attribute 'imag'\nsage: L, (z, ), L_into_A = number_field_elements_from_algebraics([QQbar.zeta(5)], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Cyclotomic Field of order 5 and degree 4\n  To:   Algebraic Field\n  Defn: zeta5 |--> [0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z)\n[0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z).imag()\n[0.95105651629515353 .. 0.95105651629515365]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2572\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: imag algebraic reals\n\nThis makes it hard to write generic code:\n\n```\nsage: L, (_, a), L_into_A = number_field_elements_from_algebraics([sqrt(2), sqrt(-2 + sqrt(2))*I], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 2\n  To:   Algebraic Real Field\n  Defn: a |--> [-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a)\n[-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a).imag()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'AlgebraicReal' object has no attribute 'imag'\nsage: L, (z, ), L_into_A = number_field_elements_from_algebraics([QQbar.zeta(5)], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Cyclotomic Field of order 5 and degree 4\n  To:   Algebraic Field\n  Defn: zeta5 |--> [0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z)\n[0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z).imag()\n[0.95105651629515353 .. 0.95105651629515365]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2572\n\n",
     "created_at": "2008-03-17T17:29:07Z",
     "labels": [
         "component: commutative algebra",
@@ -24,7 +24,6 @@ CC:  @ncalexan
 Keywords: imag algebraic reals
 
 This makes it hard to write generic code:
-
 
 ```
 sage: L, (_, a), L_into_A = number_field_elements_from_algebraics([sqrt(2), sqrt(-2 + sqrt(2))*I], minimal=True)
@@ -55,7 +54,6 @@ sage: L_into_A(z)
 sage: L_into_A(z).imag()
 [0.95105651629515353 .. 0.95105651629515365]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2572
 

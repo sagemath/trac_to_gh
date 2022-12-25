@@ -3,7 +3,7 @@
 archive/issues_007381.json:
 ```json
 {
-    "body": "Assignee: @roed314\n\nCC:  @jbalakrishnan\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HK = H.change_ring(K)\nsage: HJ = HK.change_ring(J)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (8, 0))\n\n[snip]\n\nValueError: variable names must be alphanumeric, but one is '(1 + O(3^5))*x' which is not.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7381\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @jbalakrishnan\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HK = H.change_ring(K)\nsage: HJ = HK.change_ring(J)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (8, 0))\n\n[snip]\n\nValueError: variable names must be alphanumeric, but one is '(1 + O(3^5))*x' which is not.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7381\n\n",
     "created_at": "2009-11-03T17:54:12Z",
     "labels": [
         "component: number theory",
@@ -20,7 +20,6 @@ Assignee: @roed314
 
 CC:  @jbalakrishnan
 
-
 ```
 sage: R.<x> = QQ['x']
 sage: H = HyperellipticCurve(x^3-10*x+9)
@@ -36,7 +35,6 @@ The error message is: ('EOF in multi-line statement', (8, 0))
 
 ValueError: variable names must be alphanumeric, but one is '(1 + O(3^5))*x' which is not.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7381
 

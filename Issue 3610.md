@@ -3,7 +3,7 @@
 archive/issues_003610.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: (R(2.1) + R(2.2))^2 in R\nFalse\nsage: R = RealIntervalField(32)\nsage: a = (R(2.1) + R(2.2))^2 \nsage: a\n[18.489999987 .. 18.490000010]\nsage: a in R\nFalse\nsage: a.parent()\nReal Interval Field with 32 bits of precision\nsage: a == a\nFalse\n```\n\n\nThis is caused by the following code in which gets inherited from parent.pyx:\n\n```\n        try:\n            x2 = self(x)\n            return bool(x2 == x)\n        except TypeError:\n            return False\n```\n\n\nSince equality is not reflexive for RealIntervals, this doesn't work as intended.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3610\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: (R(2.1) + R(2.2))^2 in R\nFalse\nsage: R = RealIntervalField(32)\nsage: a = (R(2.1) + R(2.2))^2 \nsage: a\n[18.489999987 .. 18.490000010]\nsage: a in R\nFalse\nsage: a.parent()\nReal Interval Field with 32 bits of precision\nsage: a == a\nFalse\n```\n\nThis is caused by the following code in which gets inherited from parent.pyx:\n\n```\n        try:\n            x2 = self(x)\n            return bool(x2 == x)\n        except TypeError:\n            return False\n```\n\nSince equality is not reflexive for RealIntervals, this doesn't work as intended.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3610\n\n",
     "created_at": "2008-07-08T17:41:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_003610.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 sage: (R(2.1) + R(2.2))^2 in R
@@ -34,7 +33,6 @@ sage: a == a
 False
 ```
 
-
 This is caused by the following code in which gets inherited from parent.pyx:
 
 ```
@@ -44,7 +42,6 @@ This is caused by the following code in which gets inherited from parent.pyx:
         except TypeError:
             return False
 ```
-
 
 Since equality is not reflexive for RealIntervals, this doesn't work as intended.
 

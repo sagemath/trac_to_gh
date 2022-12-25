@@ -3,7 +3,7 @@
 archive/issues_002672.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe latest OSX 10.5.2 identifies itself as \n\n```\n$ uname -a\nDarwin zippo 9.2.2 Darwin Kernel Version 9.2.2: Tue Mar  4 21:17:34\nPST 2008; root:xnu-1228.4.31~1/RELEASE_I386 i386\n```\n\nThis makes the following detection code fail:\n\n```\n$ uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/\n9.2.2\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2672\n\n",
+    "body": "Assignee: mabshoff\n\nThe latest OSX 10.5.2 identifies itself as \n\n```\n$ uname -a\nDarwin zippo 9.2.2 Darwin Kernel Version 9.2.2: Tue Mar  4 21:17:34\nPST 2008; root:xnu-1228.4.31~1/RELEASE_I386 i386\n```\nThis makes the following detection code fail:\n\n```\n$ uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/\n9.2.2\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2672\n\n",
     "created_at": "2008-03-26T07:31:30Z",
     "labels": [
         "component: build",
@@ -26,14 +26,12 @@ $ uname -a
 Darwin zippo 9.2.2 Darwin Kernel Version 9.2.2: Tue Mar  4 21:17:34
 PST 2008; root:xnu-1228.4.31~1/RELEASE_I386 i386
 ```
-
 This makes the following detection code fail:
 
 ```
 $ uname -r | sed s/9\.[0-9]\.0/9\.0\.0/
 9.2.2
 ```
-
 
 Cheers,
 
@@ -68,7 +66,7 @@ Changing status from new to assigned.
 archive/issue_comments_018351.json:
 ```json
 {
-    "body": "We currently use the following code:\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\n\nIt needs to be\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.[0-9]/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\n\nThis will break once OSX 10.5.10 rolls around, so we might want to do something more clever.\n\nCheers,\n\nMichael",
+    "body": "We currently use the following code:\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\nIt needs to be\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.[0-9]/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\nThis will break once OSX 10.5.10 rolls around, so we might want to do something more clever.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-26T11:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2672",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ if [ `uname` = "Darwin" -a `uname -r | sed s/9\.[0-9]\.0/9\.0\.0/` = "9.0.0" ]; 
     echo "OSX 10.5."
 fi
 ```
-
 It needs to be
 
 ```
@@ -92,7 +89,6 @@ if [ `uname` = "Darwin" -a `uname -r | sed s/9\.[0-9]\.[0-9]/9\.0\.0/` = "9.0.0"
     echo "OSX 10.5."
 fi
 ```
-
 This will break once OSX 10.5.10 rolls around, so we might want to do something more clever.
 
 Cheers,

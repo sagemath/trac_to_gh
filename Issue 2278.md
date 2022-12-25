@@ -3,7 +3,7 @@
 archive/issues_002278.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nHello William,\n\nI spoke too soon ... I stated on the forum that it was fixed.\nHowever, I just uploaded another worksheet called Graphing, and I'm\nreceiving the Permission Denied error again.\n\nRegards,\nAndy\n\n\nOn Feb 22, 9:45 am, \"William Stein\" <wst...@gmail.com> wrote:\n- Hide quoted text -\n> On Thu, Feb 21, 2008 at 9:09 PM, Apr\u00e8sTech <andyunr...@gmail.com> wrote:\n>\n> >  Hello,\n>\n> >  After uploading a worksheet from my PC to the sagenb.org server, I\n> >  can't edit or evaluate cells within it.  I'm receiving the error\n> >  message\n>\n> >  Traceback (most recent call last):\n> >   File \"<stdin>\", line 1, in <module>\n> >  IOError: [Errno 13] Permission denied: '/home/server2/sage_notebook/\n> >  worksheets/aprestech/4/code/3.py'\n>\n> >  Did I do something wrong, or is this a bug?\n>\n> This is *definitely* a bug on my part.  I'll look into it immediately.\n> If you still have this problem after you get this email, please\n> respond and let me know.\n>\n> Also, can you get the bug to occur again by uploading another worksheet?\n> This problem is caused by the too-strict in this case security model.  It can\n> be fixed once for all if it is easily repeatable.\n>\n> William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2278\n\n",
+    "body": "Assignee: boothby\n\n```\nHello William,\n\nI spoke too soon ... I stated on the forum that it was fixed.\nHowever, I just uploaded another worksheet called Graphing, and I'm\nreceiving the Permission Denied error again.\n\nRegards,\nAndy\n\n\nOn Feb 22, 9:45 am, \"William Stein\" <wst...@gmail.com> wrote:\n- Hide quoted text -\n> On Thu, Feb 21, 2008 at 9:09 PM, Apr\u00e8sTech <andyunr...@gmail.com> wrote:\n>\n> >  Hello,\n>\n> >  After uploading a worksheet from my PC to the sagenb.org server, I\n> >  can't edit or evaluate cells within it.  I'm receiving the error\n> >  message\n>\n> >  Traceback (most recent call last):\n> >   File \"<stdin>\", line 1, in <module>\n> >  IOError: [Errno 13] Permission denied: '/home/server2/sage_notebook/\n> >  worksheets/aprestech/4/code/3.py'\n>\n> >  Did I do something wrong, or is this a bug?\n>\n> This is *definitely* a bug on my part.  I'll look into it immediately.\n> If you still have this problem after you get this email, please\n> respond and let me know.\n>\n> Also, can you get the bug to occur again by uploading another worksheet?\n> This problem is caused by the too-strict in this case security model.  It can\n> be fixed once for all if it is easily repeatable.\n>\n> William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2278\n\n",
     "created_at": "2008-02-23T16:35:05Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_002278.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 Hello William,
@@ -58,7 +57,6 @@ On Feb 22, 9:45 am, "William Stein" <wst...@gmail.com> wrote:
 > William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/2278
 
 
@@ -70,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2278
 archive/issue_comments_015079.json:
 ```json
 {
-    "body": "In sage-3.0.1 already this line is around line 1370 of worksheet.py:\n\n```\n        os.system('chmod -R a+rw \"%s\"'%absD)\n```\n\nThat must do enough to set permissions as needed.  I suspect this problem\nis either completely solved or was very special to some unix setup I had.  Also, the user reporting the problem has been using the public notebook even recently (two months later) with no further complaints.",
+    "body": "In sage-3.0.1 already this line is around line 1370 of worksheet.py:\n\n```\n        os.system('chmod -R a+rw \"%s\"'%absD)\n```\nThat must do enough to set permissions as needed.  I suspect this problem\nis either completely solved or was very special to some unix setup I had.  Also, the user reporting the problem has been using the public notebook even recently (two months later) with no further complaints.",
     "created_at": "2008-05-11T06:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2278",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ In sage-3.0.1 already this line is around line 1370 of worksheet.py:
 ```
         os.system('chmod -R a+rw "%s"'%absD)
 ```
-
 That must do enough to set permissions as needed.  I suspect this problem
 is either completely solved or was very special to some unix setup I had.  Also, the user reporting the problem has been using the public notebook even recently (two months later) with no further complaints.
 

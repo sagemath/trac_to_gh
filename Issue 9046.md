@@ -3,7 +3,7 @@
 archive/issues_009046.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nthe documentation from `collect` does not say what this function\ndoes. It should be documented.\n\nAlso, if it does what its name suggests, i.e., collect terms with\nsame exponent in 's', the following example shows that it seems that\nthe user should call `expand` before, since terms in `x^3`\nare not properly collected:\n\n```\nsage: (x^2+(y-x^2)*(y+x)).collect(x)\n-(x + y - 1)*x^2 + x^3 - (x^2 - y)*x + y^2\nsage: (x^2+(y-x^2)*(y+x)).expand().collect(x)\n-(y - 1)*x^2 - x^3 + x*y + y^2\n```\n\n\nFinally this seems a bug (note the instances of `-x^2` and\n`x^2`):\n\n```\nvar('a b x y z')\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 - x^2 - (a*y^2 - a)*x + x^2 + 2*y^3 + y^2*z + y^2\n\nIssue created by migration from https://trac.sagemath.org/ticket/9046\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nthe documentation from `collect` does not say what this function\ndoes. It should be documented.\n\nAlso, if it does what its name suggests, i.e., collect terms with\nsame exponent in 's', the following example shows that it seems that\nthe user should call `expand` before, since terms in `x^3`\nare not properly collected:\n\n```\nsage: (x^2+(y-x^2)*(y+x)).collect(x)\n-(x + y - 1)*x^2 + x^3 - (x^2 - y)*x + y^2\nsage: (x^2+(y-x^2)*(y+x)).expand().collect(x)\n-(y - 1)*x^2 - x^3 + x*y + y^2\n```\n\nFinally this seems a bug (note the instances of `-x^2` and\n`x^2`):\n\n```\nvar('a b x y z')\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 - x^2 - (a*y^2 - a)*x + x^2 + 2*y^3 + y^2*z + y^2\n\nIssue created by migration from https://trac.sagemath.org/ticket/9046\n\n",
     "created_at": "2010-05-25T12:02:04Z",
     "labels": [
         "component: calculus",
@@ -36,7 +36,6 @@ sage: (x^2+(y-x^2)*(y+x)).expand().collect(x)
 -(y - 1)*x^2 - x^3 + x*y + y^2
 ```
 
-
 Finally this seems a bug (note the instances of `-x^2` and
 `x^2`):
 
@@ -57,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9046
 archive/issue_comments_083608.json:
 ```json
 {
-    "body": "Here is the same session using GiNaC directly via `ginsh`:\n\n\n```\n> t= -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x;\nx^2+2*y*b*x^2+y^2+y^2*z+a*x+2*y^3-a*x^3-y^2*a*x+z*x^2\n> t;\nx^2+2*y*b*x^2+y^2+y^2*z+a*x+2*y^3-a*x^3-y^2*a*x+z*x^2\n> collect(t, x);\n(1+2*y*b+z)*x^2+y^2+y^2*z+2*y^3-a*x^3-(y^2*a-a)*x\n> u = (x^2+(y-x^2)*(y+x));\nx^2-(y+x)*(x^2-y)\n> collect(u, x);\nx^3-(x^2-y)*x+y^2-(-1+y+x)*x^2\n```\n\n\nIt seems that one needs to call `expand()` explicitly before calling `collect()`. I think this should just be documented in the docstring.\n\nThe problem with `-x^2 + x^2` appearing in the output is probably a bug I introduced while playing with the ordering of the terms. I will take a look at it when I find a chance. It's likely to be later than a week though.",
+    "body": "Here is the same session using GiNaC directly via `ginsh`:\n\n```\n> t= -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x;\nx^2+2*y*b*x^2+y^2+y^2*z+a*x+2*y^3-a*x^3-y^2*a*x+z*x^2\n> t;\nx^2+2*y*b*x^2+y^2+y^2*z+a*x+2*y^3-a*x^3-y^2*a*x+z*x^2\n> collect(t, x);\n(1+2*y*b+z)*x^2+y^2+y^2*z+2*y^3-a*x^3-(y^2*a-a)*x\n> u = (x^2+(y-x^2)*(y+x));\nx^2-(y+x)*(x^2-y)\n> collect(u, x);\nx^3-(x^2-y)*x+y^2-(-1+y+x)*x^2\n```\n\nIt seems that one needs to call `expand()` explicitly before calling `collect()`. I think this should just be documented in the docstring.\n\nThe problem with `-x^2 + x^2` appearing in the output is probably a bug I introduced while playing with the ordering of the terms. I will take a look at it when I find a chance. It's likely to be later than a week though.",
     "created_at": "2010-05-26T11:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9046",
     "type": "issue_comment",
@@ -67,7 +66,6 @@ archive/issue_comments_083608.json:
 ```
 
 Here is the same session using GiNaC directly via `ginsh`:
-
 
 ```
 > t= -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a*x;
@@ -81,7 +79,6 @@ x^2-(y+x)*(x^2-y)
 > collect(u, x);
 x^3-(x^2-y)*x+y^2-(-1+y+x)*x^2
 ```
-
 
 It seems that one needs to call `expand()` explicitly before calling `collect()`. I think this should just be documented in the docstring.
 
@@ -224,7 +221,7 @@ Paul
 archive/issue_comments_083616.json:
 ```json
 {
-    "body": "This is a duplicate of #9880. With [the Pynac patch queue](https://bitbucket.org/burcin/pynac-patches/src) and patches listed on #9880, I get:\n\n\n```\nsage: var('a b x y z')\n(a, b, x, y, z)\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a>\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 + 2*y^3 + y^2*z - (a*y^2 - a)*x + y^2\n```\n\n\nWe should close this after adding it as a doctest to #9880.",
+    "body": "This is a duplicate of #9880. With [the Pynac patch queue](https://bitbucket.org/burcin/pynac-patches/src) and patches listed on #9880, I get:\n\n```\nsage: var('a b x y z')\n(a, b, x, y, z)\nsage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a>\nsage: p.collect(x)\n-a*x^3 + (2*b*y + z + 1)*x^2 + 2*y^3 + y^2*z - (a*y^2 - a)*x + y^2\n```\n\nWe should close this after adding it as a doctest to #9880.",
     "created_at": "2012-07-10T09:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9046",
     "type": "issue_comment",
@@ -235,7 +232,6 @@ archive/issue_comments_083616.json:
 
 This is a duplicate of #9880. With [the Pynac patch queue](https://bitbucket.org/burcin/pynac-patches/src) and patches listed on #9880, I get:
 
-
 ```
 sage: var('a b x y z')
 (a, b, x, y, z)
@@ -243,7 +239,6 @@ sage: p = -a*x^3 - a*x*y^2 + 2*b*x^2*y + 2*y^3 + x^2*z + y^2*z + x^2 + y^2 + a>
 sage: p.collect(x)
 -a*x^3 + (2*b*y + z + 1)*x^2 + 2*y^3 + y^2*z - (a*y^2 - a)*x + y^2
 ```
-
 
 We should close this after adding it as a doctest to #9880.
 

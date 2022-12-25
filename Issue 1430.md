@@ -3,7 +3,7 @@
 archive/issues_001430.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nscipy has a sandbox directory with experimental or code in development.\nOne of the packages is an arpack wrapper which computes eigenvalues of sparse matrices.\nmatlab uses this in its eigs command. Although the arpack wrapper is not completely finished, it\nhas useful functionality, and since this has been requested multiple times I think including it is good, it will also maybe spur some people to take the wrapper the last mile (me probably).\n\nAlso included is a wrapper of fitpack which has some spline functions (bivariate spline, etc).\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox.spkg\n\n\nThe following shows how to compute the smallest five eigenvalues \n(in magnitude) of a 2000x2000 matrix\n\n\n```\nimport arpack\nfrom scipy import sparse\nm=sparse.csc_matrix(random_matrix(RDF,2000,2000,density=.02).numpy())\ne,v=arpack.eigen(m,5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1430\n\n",
+    "body": "Assignee: @williamstein\n\nscipy has a sandbox directory with experimental or code in development.\nOne of the packages is an arpack wrapper which computes eigenvalues of sparse matrices.\nmatlab uses this in its eigs command. Although the arpack wrapper is not completely finished, it\nhas useful functionality, and since this has been requested multiple times I think including it is good, it will also maybe spur some people to take the wrapper the last mile (me probably).\n\nAlso included is a wrapper of fitpack which has some spline functions (bivariate spline, etc).\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox.spkg\n\n\nThe following shows how to compute the smallest five eigenvalues \n(in magnitude) of a 2000x2000 matrix\n\n```\nimport arpack\nfrom scipy import sparse\nm=sparse.csc_matrix(random_matrix(RDF,2000,2000,density=.02).numpy())\ne,v=arpack.eigen(m,5)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1430\n\n",
     "created_at": "2007-12-08T22:57:19Z",
     "labels": [
         "component: packages: standard",
@@ -31,14 +31,12 @@ http://sage.math.washington.edu/home/jkantor/spkgs/scipy_sandbox.spkg
 The following shows how to compute the smallest five eigenvalues 
 (in magnitude) of a 2000x2000 matrix
 
-
 ```
 import arpack
 from scipy import sparse
 m=sparse.csc_matrix(random_matrix(RDF,2000,2000,density=.02).numpy())
 e,v=arpack.eigen(m,5)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1430
 

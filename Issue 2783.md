@@ -3,7 +3,7 @@
 archive/issues_002783.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nHi,\n\nI was very embarrassed while teaching today since maybe 15 times I got\ncrap like this in the output from the notebook:\n\n```\nprint \"\\x01r\\x01e580\"\n```\n\n\nThis is from the synchronization code that *I* wrote.  It \"should\" never happen.  Anyways it does -- but of course only when 40 people are watching you :-(.  Anyways, to solve this ticket should mean to simply look at that synchro code again, think about it, and rewrite it in a way that is _more_ robust. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2783\n\n",
+    "body": "Assignee: boothby\n\nHi,\n\nI was very embarrassed while teaching today since maybe 15 times I got\ncrap like this in the output from the notebook:\n\n```\nprint \"\\x01r\\x01e580\"\n```\n\nThis is from the synchronization code that *I* wrote.  It \"should\" never happen.  Anyways it does -- but of course only when 40 people are watching you :-(.  Anyways, to solve this ticket should mean to simply look at that synchro code again, think about it, and rewrite it in a way that is _more_ robust. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/2783\n\n",
     "created_at": "2008-04-02T22:17:45Z",
     "labels": [
         "component: notebook",
@@ -26,7 +26,6 @@ crap like this in the output from the notebook:
 ```
 print "\x01r\x01e580"
 ```
-
 
 This is from the synchronization code that *I* wrote.  It "should" never happen.  Anyways it does -- but of course only when 40 people are watching you :-(.  Anyways, to solve this ticket should mean to simply look at that synchro code again, think about it, and rewrite it in a way that is _more_ robust. 
 
@@ -193,7 +192,7 @@ print "\x01r\x01e96"
 archive/issue_comments_019072.json:
 ```json
 {
-    "body": "\n```\n{{ \nimport rpy rpy.std([1..1000]) \n/// \nprint \"\\x01r\\x01e96\" 288.67499025720952 \n}}\n```\n",
+    "body": "```\n{{ \nimport rpy rpy.std([1..1000]) \n/// \nprint \"\\x01r\\x01e96\" 288.67499025720952 \n}}\n```",
     "created_at": "2008-09-09T01:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
@@ -202,7 +201,6 @@ archive/issue_comments_019072.json:
 }
 ```
 
-
 ```
 {{ 
 import rpy rpy.std([1..1000]) 
@@ -210,7 +208,6 @@ import rpy rpy.std([1..1000])
 print "\x01r\x01e96" 288.67499025720952 
 }}
 ```
-
 
 
 
@@ -280,7 +277,7 @@ Michael
 archive/issue_comments_019075.json:
 ```json
 {
-    "body": "> Isn't this likely some issue with escape character sequences from colored output being printed?\n\nI doubt it.  rpy is a C-library interface to R.\n\nThose special looking \\x01r characters are synchronization control characters that Sage itself (in the file worksheet.py) puts in the output stream. \n\nWilliam",
+    "body": "> Isn't this likely some issue with escape character sequences from colored output being printed?\n\n\nI doubt it.  rpy is a C-library interface to R.\n\nThose special looking \\x01r characters are synchronization control characters that Sage itself (in the file worksheet.py) puts in the output stream. \n\nWilliam",
     "created_at": "2008-09-22T00:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
@@ -290,6 +287,7 @@ archive/issue_comments_019075.json:
 ```
 
 > Isn't this likely some issue with escape character sequences from colored output being printed?
+
 
 I doubt it.  rpy is a C-library interface to R.
 

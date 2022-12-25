@@ -3,7 +3,7 @@
 archive/issues_007832.json:
 ```json
 {
-    "body": "Assignee: @peterjeremy\n\nBy default, you get the following, which is corrected by the patch to singuname.sh:\n\n```\nmake[2]: Entering directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nmake[2]: *** No rule to make target `distclean'.  Stop.\nmake[2]: Leaving directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nrm: /home/peter/sage/sage-4.3/local/bin/Singular*: No such file or directory\ncreating cache ./config.cache\nchecking uname for singular... unknown\nconfigure: error: Unknown architecture: Check singuname.sh\nUnable to configure Singular.\n```\n\n\nCorrect configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.\n\nSeveral other trivial fixes to support dynamic linking on FreeBSD/amd64.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7832\n\n",
+    "body": "Assignee: @peterjeremy\n\nBy default, you get the following, which is corrected by the patch to singuname.sh:\n\n```\nmake[2]: Entering directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nmake[2]: *** No rule to make target `distclean'.  Stop.\nmake[2]: Leaving directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nrm: /home/peter/sage/sage-4.3/local/bin/Singular*: No such file or directory\ncreating cache ./config.cache\nchecking uname for singular... unknown\nconfigure: error: Unknown architecture: Check singuname.sh\nUnable to configure Singular.\n```\n\nCorrect configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.\n\nSeveral other trivial fixes to support dynamic linking on FreeBSD/amd64.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7832\n\n",
     "created_at": "2010-01-03T10:10:09Z",
     "labels": [
         "component: porting: bsd",
@@ -30,7 +30,6 @@ checking uname for singular... unknown
 configure: error: Unknown architecture: Check singuname.sh
 Unable to configure Singular.
 ```
-
 
 Correct configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.
 
@@ -84,7 +83,7 @@ Attachment [7832.singular.patch](tarball://root/attachments/some-uuid/ticket7832
 archive/issue_comments_067727.json:
 ```json
 {
-    "body": "Unless I am mistaken, you have modified the singular sources directly, which is not permitted. Instead, you should create new versions of the files, put them in the 'patches' directory, and have something in spkg-install like\n\n```\ncp patch/mod_raw.cc src/kernel/mod_raw.cc\n```\n\nLikewise, you should not change the configure script, or configure.ac, but instead have \n\n```\ncp patches/configure src/\n```\n\nand created a diff file between the old configure.ac and the new configure.ac and put that in the patches directory. \n\nOnce that is done, it would need testing on Solaris, OS X and Linux in addition to FreeBSD. \n\nDave",
+    "body": "Unless I am mistaken, you have modified the singular sources directly, which is not permitted. Instead, you should create new versions of the files, put them in the 'patches' directory, and have something in spkg-install like\n\n```\ncp patch/mod_raw.cc src/kernel/mod_raw.cc\n```\nLikewise, you should not change the configure script, or configure.ac, but instead have \n\n```\ncp patches/configure src/\n```\nand created a diff file between the old configure.ac and the new configure.ac and put that in the patches directory. \n\nOnce that is done, it would need testing on Solaris, OS X and Linux in addition to FreeBSD. \n\nDave",
     "created_at": "2010-02-22T00:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
@@ -98,13 +97,11 @@ Unless I am mistaken, you have modified the singular sources directly, which is 
 ```
 cp patch/mod_raw.cc src/kernel/mod_raw.cc
 ```
-
 Likewise, you should not change the configure script, or configure.ac, but instead have 
 
 ```
 cp patches/configure src/
 ```
-
 and created a diff file between the old configure.ac and the new configure.ac and put that in the patches directory. 
 
 Once that is done, it would need testing on Solaris, OS X and Linux in addition to FreeBSD. 
@@ -136,7 +133,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067729.json:
 ```json
 {
-    "body": "Apparently the following attached patch was all that was needed for now by Stephen Montgomery-Smith.    This could be due to the fairly major upgrades in Singular.\n\n```\n\n--- singular-3-1-3-3.p3/src/omalloc/configure-orig\t2012-01-21 19:51:08.000000000 +0000\n+++ singular-3-1-3-3.p3/src/omalloc/configure\t2012-01-21 19:51:32.000000000 +0000\n@@ -1293,9 +1293,6 @@\n   echo \"$ac_t\"\"no\" 1>&6\n fi\n \n-if test \"$ac_cv_prog_AR\" != ar; then\n-  { echo \"configure: error: *** ar program not found\" 1>&2; exit 1; }\n-fi\n for ac_prog in perl\n do\n # Extract the first word of \"$ac_prog\", so it can be a program name with args.\n```\n",
+    "body": "Apparently the following attached patch was all that was needed for now by Stephen Montgomery-Smith.    This could be due to the fairly major upgrades in Singular.\n\n```\n\n--- singular-3-1-3-3.p3/src/omalloc/configure-orig\t2012-01-21 19:51:08.000000000 +0000\n+++ singular-3-1-3-3.p3/src/omalloc/configure\t2012-01-21 19:51:32.000000000 +0000\n@@ -1293,9 +1293,6 @@\n   echo \"$ac_t\"\"no\" 1>&6\n fi\n \n-if test \"$ac_cv_prog_AR\" != ar; then\n-  { echo \"configure: error: *** ar program not found\" 1>&2; exit 1; }\n-fi\n for ac_prog in perl\n do\n # Extract the first word of \"$ac_prog\", so it can be a program name with args.\n```",
     "created_at": "2012-01-31T01:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
@@ -162,7 +159,6 @@ Apparently the following attached patch was all that was needed for now by Steph
  do
  # Extract the first word of "$ac_prog", so it can be a program name with args.
 ```
-
 
 
 
@@ -209,7 +205,7 @@ I've reported this upstream at [this Singular ticket](http://www.singular.uni-kl
 archive/issue_comments_067732.json:
 ```json
 {
-    "body": "I quote from the ticket:\n\n```\n\nfixed: do not abort configure, if ar is not found\n\nThis allows to define a different ar program\nbut if none is found, you are on your own.\nWill be changed with the new version anyway.\n```\n\n\nThis is pretty enigmatic.\n\nAnyway, this patch and the following diff for spkg-install are doing it for the [FreeBSD port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/).\n\n\n```diff\n--- singular-3-1-3-3.p6/spkg-install-orig\t2012-04-08 01:57:01.000000000 +0000\n+++ singular-3-1-3-3.p6/spkg-install\t2012-04-08 01:58:19.000000000 +0000\n@@ -108,7 +108,7 @@\n \n     patches=\"assert.h.diff sing_win.cc.diff Minor.h.patch os_x_ppc.patch \\\n \tSingular.configure.patch make_parallel.patch Singular.Makefile.in.shared.patch \\\n-\tfactory.GNUmakefile.in.patch\"\n+\tfactory.GNUmakefile.in.patch omalloc.configure.patch\"\n \n     if [ \"$UNAME\" = \"CYGWIN\" ]; then\n         patches=\"$patches IntegerProgramming-Makefile.in.diff\"\n```\n\n\nThis would have to be made into an spkg, of course.",
+    "body": "I quote from the ticket:\n\n```\n\nfixed: do not abort configure, if ar is not found\n\nThis allows to define a different ar program\nbut if none is found, you are on your own.\nWill be changed with the new version anyway.\n```\n\nThis is pretty enigmatic.\n\nAnyway, this patch and the following diff for spkg-install are doing it for the [FreeBSD port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/).\n\n```diff\n--- singular-3-1-3-3.p6/spkg-install-orig\t2012-04-08 01:57:01.000000000 +0000\n+++ singular-3-1-3-3.p6/spkg-install\t2012-04-08 01:58:19.000000000 +0000\n@@ -108,7 +108,7 @@\n \n     patches=\"assert.h.diff sing_win.cc.diff Minor.h.patch os_x_ppc.patch \\\n \tSingular.configure.patch make_parallel.patch Singular.Makefile.in.shared.patch \\\n-\tfactory.GNUmakefile.in.patch\"\n+\tfactory.GNUmakefile.in.patch omalloc.configure.patch\"\n \n     if [ \"$UNAME\" = \"CYGWIN\" ]; then\n         patches=\"$patches IntegerProgramming-Makefile.in.diff\"\n```\n\nThis would have to be made into an spkg, of course.",
     "created_at": "2012-06-20T19:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
@@ -229,11 +225,9 @@ but if none is found, you are on your own.
 Will be changed with the new version anyway.
 ```
 
-
 This is pretty enigmatic.
 
 Anyway, this patch and the following diff for spkg-install are doing it for the [FreeBSD port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/).
-
 
 ```diff
 --- singular-3-1-3-3.p6/spkg-install-orig	2012-04-08 01:57:01.000000000 +0000
@@ -248,7 +242,6 @@ Anyway, this patch and the following diff for spkg-install are doing it for the 
      if [ "$UNAME" = "CYGWIN" ]; then
          patches="$patches IntegerProgramming-Makefile.in.diff"
 ```
-
 
 This would have to be made into an spkg, of course.
 

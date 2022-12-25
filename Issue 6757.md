@@ -74,7 +74,7 @@ I don't see 1.4.3 there.
 archive/issue_comments_055526.json:
 ```json
 {
-    "body": "The name of the .spkg file in Sage 4.1.1 is libgcrypt-1.4.3.p1.spkg I've made a libgcrypt-1.4.3.p2.spkg\n\n\n```\n\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ ls -ld libgcrypt* \n-rw-r--r--   1 drkirkby other    2036701 Jul 31 22:45 libgcrypt-1.4.3.p1.spkg\n-rw-r--r--   1 drkirkby other    2115840 Aug 16 12:34 libgcrypt-1.4.3.p2.spkg\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ pwd\n/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/standard\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $\n\n\n```\n",
+    "body": "The name of the .spkg file in Sage 4.1.1 is libgcrypt-1.4.3.p1.spkg I've made a libgcrypt-1.4.3.p2.spkg\n\n```\n\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ ls -ld libgcrypt* \n-rw-r--r--   1 drkirkby other    2036701 Jul 31 22:45 libgcrypt-1.4.3.p1.spkg\n-rw-r--r--   1 drkirkby other    2115840 Aug 16 12:34 libgcrypt-1.4.3.p2.spkg\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $ pwd\n/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/standard\ndrkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $\n\n\n```",
     "created_at": "2009-08-16T12:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6757",
     "type": "issue_comment",
@@ -84,7 +84,6 @@ archive/issue_comments_055526.json:
 ```
 
 The name of the .spkg file in Sage 4.1.1 is libgcrypt-1.4.3.p1.spkg I've made a libgcrypt-1.4.3.p2.spkg
-
 
 ```
 
@@ -97,7 +96,6 @@ drkirkby@smudge:[~/sage/suncc/sage-4.1.1/spkg/standard] $
 
 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009964.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  cschwan @kiwifb @lftabera\n\nSYMPOW-related doctests can in\n\n```\nsage/lfunctions/sympow.py\nsage/modular/abvar/abvar.py\nsage/modular/hecke/submodule.py\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\n\ncan fail if users who do not have write access under `SAGE_ROOT` runs these tests before a user who does have this access.\n\nSee [comment:ticket:9703:8 comments 8 and 9] at #9703 for background and a suggested solution.\n\nThis is the likely cause of the non-qepcad failures [reported by Luis Felipe Tabera on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a56d4fbaad2dcce3).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9965\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  cschwan @kiwifb @lftabera\n\nSYMPOW-related doctests can in\n\n```\nsage/lfunctions/sympow.py\nsage/modular/abvar/abvar.py\nsage/modular/hecke/submodule.py\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\ncan fail if users who do not have write access under `SAGE_ROOT` runs these tests before a user who does have this access.\n\nSee [comment:ticket:9703:8 comments 8 and 9] at #9703 for background and a suggested solution.\n\nThis is the likely cause of the non-qepcad failures [reported by Luis Felipe Tabera on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/a56d4fbaad2dcce3).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9965\n\n",
     "created_at": "2010-09-21T22:23:39Z",
     "labels": [
         "component: build",
@@ -28,7 +28,6 @@ sage/modular/abvar/abvar.py
 sage/modular/hecke/submodule.py
 sage/schemes/elliptic_curves/ell_rational_field.py
 ```
-
 can fail if users who do not have write access under `SAGE_ROOT` runs these tests before a user who does have this access.
 
 See [comment:ticket:9703:8 comments 8 and 9] at #9703 for background and a suggested solution.

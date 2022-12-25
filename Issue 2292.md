@@ -3,7 +3,7 @@
 archive/issues_002292.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$`@`\"\n\nOn the other hand, this seems to be okay in perm_groups_named:\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2292\n\n",
+    "body": "Assignee: joyner\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n\n---\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$`@`\"\n\nOn the other hand, this seems to be okay in perm_groups_named:\n\nwdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage\n\n---\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\n---\n\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2292\n\n",
     "created_at": "2008-02-24T15:16:16Z",
     "labels": [
         "component: group theory",
@@ -20,10 +20,12 @@ archive/issues_002292.json:
 Assignee: joyner
 
 wdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+
+---
 | SAGE Version 2.10.2, Release Date: 2008-02-22                      |
 | Type notebook() for the GUI, and license() for information.        |
+---
+
 sage: G.<a,b> = AbelianGroup(2)
 sage: a/b
 /home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$`@`"
@@ -31,10 +33,12 @@ sage: a/b
 On the other hand, this seems to be okay in perm_groups_named:
 
 wdj`@`wooster:~/wdj/sagefiles/sage-2.10.2.rc0$ ./sage
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+
+---
 | SAGE Version 2.10.2, Release Date: 2008-02-22                      |
 | Type notebook() for the GUI, and license() for information.        |
+---
+
 sage: G = SymmetricGroup(5)
 sage: G.gens()
 ((1,2,3,4,5), (1,2))
@@ -53,7 +57,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2292
 archive/issue_comments_015171.json:
 ```json
 {
-    "body": "This is a more readable version:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipyt on -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\nsage:\n```\n",
+    "body": "This is a more readable version:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G.<a,b> = AbelianGroup(2)\nsage: a/b\n/home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipyt on -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n```\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2, Release Date: 2008-02-22                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: G = SymmetricGroup(5)\nsage: G.gens()\n((1,2,3,4,5), (1,2))\nsage: a,b = G.gens()\nsage: a/b\n(2,3,4,5)\nsage:\n```",
     "created_at": "2008-02-24T15:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
@@ -64,7 +68,6 @@ archive/issue_comments_015171.json:
 
 This is a more readable version:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -74,8 +77,6 @@ sage: G.<a,b> = AbelianGroup(2)
 sage: a/b
 /home/wdj/wdj/sagefiles/sage-2.10.2.rc0/local/bin/sage-sage: line 212: 31402 Segmentation fault      (core dumped) sage-ipyt on -c "$SAGE_STARTUP_COMMAND;" "$@"
 ```
-
-
 
 ```
 ----------------------------------------------------------------------
@@ -90,7 +91,6 @@ sage: a/b
 (2,3,4,5)
 sage:
 ```
-
 
 
 

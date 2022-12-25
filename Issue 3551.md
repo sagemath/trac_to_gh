@@ -54,7 +54,7 @@ That being said, lots of functions in sage/interfaces/ need to be documented.
 archive/issue_comments_025068.json:
 ```json
 {
-    "body": "> It also actually calls magma (to ask it its version number, I think). Would it be worth storing the \n> version information in a file somewhere to aviod having to start a magma session? \n\nAlso, it would suddenly give a wrong answer as soon as one changes their magma version, which presumably happens a lot. \n\nWilliam",
+    "body": "> It also actually calls magma (to ask it its version number, I think). Would it be worth storing the \n> version information in a file somewhere to aviod having to start a magma session? \n\n\nAlso, it would suddenly give a wrong answer as soon as one changes their magma version, which presumably happens a lot. \n\nWilliam",
     "created_at": "2008-07-07T00:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3551",
     "type": "issue_comment",
@@ -65,6 +65,7 @@ archive/issue_comments_025068.json:
 
 > It also actually calls magma (to ask it its version number, I think). Would it be worth storing the 
 > version information in a file somewhere to aviod having to start a magma session? 
+
 
 Also, it would suddenly give a wrong answer as soon as one changes their magma version, which presumably happens a lot. 
 

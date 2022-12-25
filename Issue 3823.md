@@ -88,7 +88,7 @@ Looks good to me.  Positive review.
 archive/issue_comments_027139.json:
 ```json
 {
-    "body": "This does not apply cleanly any more, but should be trivial to rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3823_sage.patch \npatching file sage/server/notebook/interact.py\nHunk #1 FAILED at 1397.\n1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej\n```\n\n\nIgor: In the future please name the patches you post trac_XXXX_description.patch.\n\nCheers,\n\nMichael",
+    "body": "This does not apply cleanly any more, but should be trivial to rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3823_sage.patch \npatching file sage/server/notebook/interact.py\nHunk #1 FAILED at 1397.\n1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej\n```\n\nIgor: In the future please name the patches you post trac_XXXX_description.patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T21:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3823",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ patching file sage/server/notebook/interact.py
 Hunk #1 FAILED at 1397.
 1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej
 ```
-
 
 Igor: In the future please name the patches you post trac_XXXX_description.patch.
 

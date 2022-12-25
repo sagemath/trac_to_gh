@@ -3,7 +3,7 @@
 archive/issues_002251.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\n\n```\nsage -t -long devel/sage-main/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"number_field.py\", line 2619:\n    sage: [Plist[i]==K.ideal(pilist[i]) for i in range(len(Plist))]\nExpected:\n    [True, False, False]\nGot:\n    [True, False, True]\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_78\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [20.4 s]\nexit code: 256\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2251\n\n",
+    "body": "Assignee: @craigcitro\n\n```\nsage -t -long devel/sage-main/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"number_field.py\", line 2619:\n    sage: [Plist[i]==K.ideal(pilist[i]) for i in range(len(Plist))]\nExpected:\n    [True, False, False]\nGot:\n    [True, False, True]\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_78\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [20.4 s]\nexit code: 256\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2251\n\n",
     "created_at": "2008-02-21T19:32:46Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002251.json:
 }
 ```
 Assignee: @craigcitro
-
 
 ```
 sage -t -long devel/sage-main/sage/rings/number_field/number_field.py
@@ -37,7 +36,6 @@ For whitespace errors, see the file .doctest_number_field.py
          [20.4 s]
 exit code: 256
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2251
 

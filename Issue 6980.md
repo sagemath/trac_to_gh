@@ -3,7 +3,7 @@
 archive/issues_006980.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nwe still use the dense version:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 5.12 s, sys: 0.01 s, total: 5.14 s\nWall time: 5.19 s\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6980\n\n",
+    "body": "Assignee: @williamstein\n\nwe still use the dense version:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 5.12 s, sys: 0.01 s, total: 5.14 s\nWall time: 5.19 s\n[]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6980\n\n",
     "created_at": "2009-09-21T22:20:34Z",
     "labels": [
         "component: linear algebra",
@@ -27,7 +27,6 @@ Wall time: 5.19 s
 []
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6980
 
 
@@ -39,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6980
 archive/issue_comments_057621.json:
 ```json
 {
-    "body": "Attachment [trac6980_nonzero_positions_by_column.patch](tarball://root/attachments/some-uuid/ticket6980/trac6980_nonzero_positions_by_column.patch) by ylchapuy created at 2009-09-21 22:24:32\n\nAfter patching, we obtain what is expected:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n[]\n```\n",
+    "body": "Attachment [trac6980_nonzero_positions_by_column.patch](tarball://root/attachments/some-uuid/ticket6980/trac6980_nonzero_positions_by_column.patch) by ylchapuy created at 2009-09-21 22:24:32\n\nAfter patching, we obtain what is expected:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n[]\n```",
     "created_at": "2009-09-21T22:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6980",
     "type": "issue_comment",
@@ -58,7 +57,6 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 Wall time: 0.01 s
 []
 ```
-
 
 
 

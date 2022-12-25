@@ -3,7 +3,7 @@
 archive/issues_000303.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
+    "body": "Assignee: @williamstein\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
     "created_at": "2007-03-01T17:58:02Z",
     "labels": [
         "component: modular forms",
@@ -18,7 +18,6 @@ archive/issues_000303.json:
 ```
 Assignee: @williamstein
 
-
 ```
 sage: m = CuspForms(64,2)
 sage: m.integral_basis()
@@ -26,7 +25,6 @@ Traceback (most recent call last):
 ...
 ArithmeticError: basis vectors must be linearly independent.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/303
 

@@ -3,7 +3,7 @@
 archive/issues_007870.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
+    "body": "Assignee: @williamstein\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
     "created_at": "2010-01-07T20:51:18Z",
     "labels": [
         "component: interfaces",
@@ -24,7 +24,6 @@ I ran the magma optional test suite on skynet (eno):
 ./sage -t --only_optional=magma devel/sage/sage > magma.out&
 ```
 
-
 And the failures are:
 
 ```
@@ -37,7 +36,6 @@ And the failures are:
         sage -t --only_optional=magma "devel/sage/sage/symbolic/expression.pyx"
 Total time for all tests: 364.0 seconds
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7870
 
@@ -68,7 +66,7 @@ this is the output of running the test suite, showing the actual failures.
 archive/issue_comments_068155.json:
 ```json
 {
-    "body": "Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by @williamstein created at 2010-04-06 15:15:56\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\n\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```\n",
+    "body": "Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by @williamstein created at 2010-04-06 15:15:56\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```",
     "created_at": "2010-04-06T15:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -86,13 +84,11 @@ I tested again using the new magma V2.16-7 with sage-4.3.5.
 Magma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]
 Type ? for help.  Type <Ctrl>-D to quit.
 ```
-
 There are now even more failures.  I've attached a new test log created using the following on eno:
 
 ```
 ./sage -tp 10 -only_optional=magma devel/sage/sage
 ```
-
 
 
 
@@ -175,7 +171,7 @@ Changing assignee from @williamstein to @JohnCremona.
 archive/issue_comments_068160.json:
 ```json
 {
-    "body": "I am testing this now with magma V2.16-1 and will report back.  It will not be a clean result, since I already saw\n\n```\n\n**********************************************************************\nFile \"/storage/jec/sage-4.3.5/devel/sage-tests/sage/symbolic/expression.pyx\", line 499:\n    sage: magma(f)                         # optional - magma\nExpected:\n    sin(cos(x^2) + log(x))\nGot:\n    sin(log(x) + cos(x^2))\n```\n",
+    "body": "I am testing this now with magma V2.16-1 and will report back.  It will not be a clean result, since I already saw\n\n```\n\n**********************************************************************\nFile \"/storage/jec/sage-4.3.5/devel/sage-tests/sage/symbolic/expression.pyx\", line 499:\n    sage: magma(f)                         # optional - magma\nExpected:\n    sin(cos(x^2) + log(x))\nGot:\n    sin(log(x) + cos(x^2))\n```",
     "created_at": "2010-04-06T16:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -196,7 +192,6 @@ Expected:
 Got:
     sin(log(x) + cos(x^2))
 ```
-
 
 
 
@@ -241,7 +236,7 @@ Full log is at http://www.warwick.ac.uk/staff/J.E.Cremona/magma_test.log .
 archive/issue_comments_068163.json:
 ```json
 {
-    "body": "Replying to [comment:4 cremona]:\n> Full log is at http://www.warwick.ac.uk/staff/J.E.Cremona/magma_test.log .\n\nApologies -- it looks as if I did not apply the patch since the differences look exactly like the ones you fixed!  I will try again.",
+    "body": "Replying to [comment:4 cremona]:\n> Full log is at http://www.warwick.ac.uk/staff/J.E.Cremona/magma_test.log .\n\n\nApologies -- it looks as if I did not apply the patch since the differences look exactly like the ones you fixed!  I will try again.",
     "created_at": "2010-04-06T17:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -252,6 +247,7 @@ archive/issue_comments_068163.json:
 
 Replying to [comment:4 cremona]:
 > Full log is at http://www.warwick.ac.uk/staff/J.E.Cremona/magma_test.log .
+
 
 Apologies -- it looks as if I did not apply the patch since the differences look exactly like the ones you fixed!  I will try again.
 
@@ -298,7 +294,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068166.json:
 ```json
 {
-    "body": "OK, so after actually applying the patch (I had forgotten to do hg qpush) I get exactly one failure.  This is on 64-bit ubuntu, Sage 4.3.5 and Magma V2.16-1:\n\n```\nsage -t --only_optional=magma \"./sage/interfaces/magma.py\"  \n**********************************************************************\nFile \"/storage/jec/sage-4.3.5/devel/sage-tests/sage/interfaces/magma.py\", line 187:\n    sage: y * 1.0                                                         # optional - magma\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[46]>\", line 1, in <module>\n        y * RealNumber('1.0')                                                         # optional - magma###line 187:\n    sage: y * 1.0                                                         # optional - magma\n      File \"element.pyx\", line 1398, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11337)\n        return coercion_model.bin_op(left, right, mul)\n      File \"coerce.pyx\", line 717, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6212)\n        raise\n      File \"coerce.pyx\", line 713, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6151)\n        return PyObject_CallObject(op, xy)\n      File \"element.pyx\", line 1393, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11265)\n        return (<RingElement>left)._mul_(<RingElement>right)\n      File \"element.pyx\", line 1400, in sage.structure.element.RingElement._mul_ (sage/structure/element.c:11385)\n        cpdef RingElement _mul_(self, RingElement right):\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1909, in _mul_\n        return self._operation('*', right)\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1866, in _operation\n        raise TypeError, msg\n    TypeError: Error evaluating Magma code.\n    IN:\n[27]:=_sage_[19] * _sage_[25];\n    OUT:\n    >> _sage_[27]:=_sage_[19] * _sage_[25];\n                              ^\n    Runtime error in '*': Bad argument types\n    Argument types given: RngUPolElt[RngInt], FldReElt\n\n```\n\nand this looks like some error in parsing the expected output (are you allowed two different \"...\"?) since it looks fine to me.  The only other things I can think of is that there may be different numbers of spaces in the expected and actual magma output!",
+    "body": "OK, so after actually applying the patch (I had forgotten to do hg qpush) I get exactly one failure.  This is on 64-bit ubuntu, Sage 4.3.5 and Magma V2.16-1:\n\n```\nsage -t --only_optional=magma \"./sage/interfaces/magma.py\"  \n**********************************************************************\nFile \"/storage/jec/sage-4.3.5/devel/sage-tests/sage/interfaces/magma.py\", line 187:\n    sage: y * 1.0                                                         # optional - magma\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[46]>\", line 1, in <module>\n        y * RealNumber('1.0')                                                         # optional - magma###line 187:\n    sage: y * 1.0                                                         # optional - magma\n      File \"element.pyx\", line 1398, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11337)\n        return coercion_model.bin_op(left, right, mul)\n      File \"coerce.pyx\", line 717, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6212)\n        raise\n      File \"coerce.pyx\", line 713, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6151)\n        return PyObject_CallObject(op, xy)\n      File \"element.pyx\", line 1393, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11265)\n        return (<RingElement>left)._mul_(<RingElement>right)\n      File \"element.pyx\", line 1400, in sage.structure.element.RingElement._mul_ (sage/structure/element.c:11385)\n        cpdef RingElement _mul_(self, RingElement right):\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1909, in _mul_\n        return self._operation('*', right)\n      File \"/home/jec/sage-current/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1866, in _operation\n        raise TypeError, msg\n    TypeError: Error evaluating Magma code.\n    IN:\n[27]:=_sage_[19] * _sage_[25];\n    OUT:\n    >> _sage_[27]:=_sage_[19] * _sage_[25];\n                              ^\n    Runtime error in '*': Bad argument types\n    Argument types given: RngUPolElt[RngInt], FldReElt\n\n```\nand this looks like some error in parsing the expected output (are you allowed two different \"...\"?) since it looks fine to me.  The only other things I can think of is that there may be different numbers of spaces in the expected and actual magma output!",
     "created_at": "2010-04-06T17:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -349,7 +345,6 @@ Exception raised:
     Argument types given: RngUPolElt[RngInt], FldReElt
 
 ```
-
 and this looks like some error in parsing the expected output (are you allowed two different "..."?) since it looks fine to me.  The only other things I can think of is that there may be different numbers of spaces in the expected and actual magma output!
 
 
@@ -377,7 +372,7 @@ Changing keywords from "" to "Magma".
 archive/issue_comments_068168.json:
 ```json
 {
-    "body": "John,\n\nI think you should give my patch a positive review anyways.  The problem above is that in Magma V2.16-7, this works fine:\n\n```\n[wstein@eno ~]$ magma\nMagma V2.16-7     Mon Apr 26 2010 22:51:34 on eno      [Seed = 294390646]\nType ? for help.  Type <Ctrl>-D to quit.\n> R<x> := PolynomialRing(Integers());\n> x*1.0;\n$.1\n> \n```\n\nHowever, in older versions of Magma, it doesn't:\n\n```\nflat:~ wstein$ magma\nMagma V2.15-11    Mon Apr 26 2010 19:53:21 on flat     [Seed = 4201111680]\nType ? for help.  Type <Ctrl>-D to quit.\n> R<x> := PolynomialRing(Integers());\n> x*1.0;\n\n>> x*1.0;\n    ^\nRuntime error in '*': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldReElt\n```\n\n\nSince Magma's capabilities, etc., change a *lot* -- even from minor version to version -- I think the Sage optional doctests should be targeted at the latest released version of Magma.   \n\nNote that the computation is multiplying a polynomial over ZZ[x] by a floating point numbers.  In Sage, there is a beautiful coercion model that makes most such things \"just work\".  In Magma, one implements the '*' function for every conceivable choice of pairs of types... and I guess somebody got around to eventually implementing this one. \n\nJust to emphasize how totally arbitrary (and sad) Magma's system still is after all these years, notice that even in Magma V2.16-7, the same computation with polynomials over ZZ and rational numbers doesn't work!\n\n```\n> x + 1/2;        \n\n>> x + 1/2;\n     ^\nRuntime error in '+': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldRatElt\n\n> x*(1/2);\n\n>> x*(1/2);\n    ^\nRuntime error in '*': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldRatElt\n\n> \n```\n\n\nSage had the same sort of silly anomalies until people like David Harvey, Craig Citro, David Roe, and *Robert Bradshaw* and others stepped in and greatly improved the situation. \n\n\n```\nsage: R.<x> = ZZ[]\nsage: x * 1.0\nx\nsage: parent(x * 1.0)\nUnivariate Polynomial Ring in x over Real Field with 53 bits of precision\nsage: x + 1/2\nx + 1/2\nsage: (1/2)*x\n1/2*x\n```\n\n\nSage coercion is still of course far from perfect.  But it's also far from sucking. \n\n -- William",
+    "body": "John,\n\nI think you should give my patch a positive review anyways.  The problem above is that in Magma V2.16-7, this works fine:\n\n```\n[wstein@eno ~]$ magma\nMagma V2.16-7     Mon Apr 26 2010 22:51:34 on eno      [Seed = 294390646]\nType ? for help.  Type <Ctrl>-D to quit.\n> R<x> := PolynomialRing(Integers());\n> x*1.0;\n$.1\n> \n```\nHowever, in older versions of Magma, it doesn't:\n\n```\nflat:~ wstein$ magma\nMagma V2.15-11    Mon Apr 26 2010 19:53:21 on flat     [Seed = 4201111680]\nType ? for help.  Type <Ctrl>-D to quit.\n> R<x> := PolynomialRing(Integers());\n> x*1.0;\n\n>> x*1.0;\n    ^\nRuntime error in '*': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldReElt\n```\n\nSince Magma's capabilities, etc., change a *lot* -- even from minor version to version -- I think the Sage optional doctests should be targeted at the latest released version of Magma.   \n\nNote that the computation is multiplying a polynomial over ZZ[x] by a floating point numbers.  In Sage, there is a beautiful coercion model that makes most such things \"just work\".  In Magma, one implements the '*' function for every conceivable choice of pairs of types... and I guess somebody got around to eventually implementing this one. \n\nJust to emphasize how totally arbitrary (and sad) Magma's system still is after all these years, notice that even in Magma V2.16-7, the same computation with polynomials over ZZ and rational numbers doesn't work!\n\n```\n> x + 1/2;        \n\n>> x + 1/2;\n     ^\nRuntime error in '+': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldRatElt\n\n> x*(1/2);\n\n>> x*(1/2);\n    ^\nRuntime error in '*': Bad argument types\nArgument types given: RngUPolElt[RngInt], FldRatElt\n\n> \n```\n\nSage had the same sort of silly anomalies until people like David Harvey, Craig Citro, David Roe, and *Robert Bradshaw* and others stepped in and greatly improved the situation. \n\n```\nsage: R.<x> = ZZ[]\nsage: x * 1.0\nx\nsage: parent(x * 1.0)\nUnivariate Polynomial Ring in x over Real Field with 53 bits of precision\nsage: x + 1/2\nx + 1/2\nsage: (1/2)*x\n1/2*x\n```\n\nSage coercion is still of course far from perfect.  But it's also far from sucking. \n\n -- William",
     "created_at": "2010-04-27T02:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -399,7 +394,6 @@ Type ? for help.  Type <Ctrl>-D to quit.
 $.1
 > 
 ```
-
 However, in older versions of Magma, it doesn't:
 
 ```
@@ -414,7 +408,6 @@ Type ? for help.  Type <Ctrl>-D to quit.
 Runtime error in '*': Bad argument types
 Argument types given: RngUPolElt[RngInt], FldReElt
 ```
-
 
 Since Magma's capabilities, etc., change a *lot* -- even from minor version to version -- I think the Sage optional doctests should be targeted at the latest released version of Magma.   
 
@@ -440,9 +433,7 @@ Argument types given: RngUPolElt[RngInt], FldRatElt
 > 
 ```
 
-
 Sage had the same sort of silly anomalies until people like David Harvey, Craig Citro, David Roe, and *Robert Bradshaw* and others stepped in and greatly improved the situation. 
-
 
 ```
 sage: R.<x> = ZZ[]
@@ -455,7 +446,6 @@ x + 1/2
 sage: (1/2)*x
 1/2*x
 ```
-
 
 Sage coercion is still of course far from perfect.  But it's also far from sucking. 
 
@@ -508,7 +498,7 @@ Is it anywhere documented which version of Magma Sage relies on for positive tes
 archive/issue_comments_068171.json:
 ```json
 {
-    "body": "With Sage 4.4 and a newly installed magma V1.16-7 I still get falures in these files:\n\n```\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/finite_rings/element_givaro.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/polynomial_ring.py\"\n\tsage -t --only_optional=magma \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\"\n\tsage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\"\n```\n\nSee http://www.warwick.ac.uk/staff/J.E.Cremona/magma.out for the full log.",
+    "body": "With Sage 4.4 and a newly installed magma V1.16-7 I still get falures in these files:\n\n```\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/finite_rings/element_givaro.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n\tsage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/polynomial_ring.py\"\n\tsage -t --only_optional=magma \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\"\n\tsage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\"\n```\nSee http://www.warwick.ac.uk/staff/J.E.Cremona/magma.out for the full log.",
     "created_at": "2010-04-28T09:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -527,7 +517,6 @@ With Sage 4.4 and a newly installed magma V1.16-7 I still get falures in these f
 	sage -t --only_optional=magma "devel/sage/sage/schemes/elliptic_curves/ell_generic.py"
 	sage -t --only_optional=magma "devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py"
 ```
-
 See http://www.warwick.ac.uk/staff/J.E.Cremona/magma.out for the full log.
 
 
@@ -625,7 +614,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068176.json:
 ```json
 {
-    "body": "Replying to [comment:12 was]:\n> Oh boy, it looks like sage-4.4 changed (from when I made the patch) and introduced a *bunch* of new issues :-(.   Sigh, I'll have to rewrite a bunch of the interface, evidently. Well at least I know now.\n\nBased on this, I'm changing this to needs_work. Not volunteering to review, just trying to clean up trac a bit!",
+    "body": "Replying to [comment:12 was]:\n> Oh boy, it looks like sage-4.4 changed (from when I made the patch) and introduced a *bunch* of new issues :-(.   Sigh, I'll have to rewrite a bunch of the interface, evidently. Well at least I know now.\n\n\nBased on this, I'm changing this to needs_work. Not volunteering to review, just trying to clean up trac a bit!",
     "created_at": "2010-06-22T17:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -636,6 +625,7 @@ archive/issue_comments_068176.json:
 
 Replying to [comment:12 was]:
 > Oh boy, it looks like sage-4.4 changed (from when I made the patch) and introduced a *bunch* of new issues :-(.   Sigh, I'll have to rewrite a bunch of the interface, evidently. Well at least I know now.
+
 
 Based on this, I'm changing this to needs_work. Not volunteering to review, just trying to clean up trac a bit!
 
@@ -779,7 +769,7 @@ I'm happy with the reviewer's patch, and note that this ticket is still marked "
 archive/issue_comments_068184.json:
 ```json
 {
-    "body": "\n```\ntrac_7870-magma-doctest.patch and trac-7870-magma-doctest-review.patch\nwhen applied to 4.6.2 pass all optional doctests\n(-only-optional=magma) on skynet/eno with Magma-2.17-5.\n```\n",
+    "body": "```\ntrac_7870-magma-doctest.patch and trac-7870-magma-doctest-review.patch\nwhen applied to 4.6.2 pass all optional doctests\n(-only-optional=magma) on skynet/eno with Magma-2.17-5.\n```",
     "created_at": "2011-03-04T16:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -787,7 +777,6 @@ archive/issue_comments_068184.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
-
 
 ```
 trac_7870-magma-doctest.patch and trac-7870-magma-doctest-review.patch
@@ -797,13 +786,12 @@ when applied to 4.6.2 pass all optional doctests
 
 
 
-
 ---
 
 archive/issue_comments_068185.json:
 ```json
 {
-    "body": "Replying to [comment:16 mraum]:\n> For the record, the patchbot and the release manager:\n> \n> Apply trac_7870-magma-doctest.patch\n> Apply trac-7870-magma-doctest-review.patch\n\n**Please** in the future write this in the ticket **description**.  Thanks!",
+    "body": "Replying to [comment:16 mraum]:\n> For the record, the patchbot and the release manager:\n> \n> Apply trac_7870-magma-doctest.patch\n> Apply trac-7870-magma-doctest-review.patch\n\n\n**Please** in the future write this in the ticket **description**.  Thanks!",
     "created_at": "2011-03-08T09:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -818,6 +806,7 @@ Replying to [comment:16 mraum]:
 > Apply trac_7870-magma-doctest.patch
 > Apply trac-7870-magma-doctest-review.patch
 
+
 **Please** in the future write this in the ticket **description**.  Thanks!
 
 
@@ -827,7 +816,7 @@ Replying to [comment:16 mraum]:
 archive/issue_comments_068186.json:
 ```json
 {
-    "body": "Replying to [comment:19 jdemeyer]:\n> Replying to [comment:16 mraum]:\n> > For the record, the patchbot and the release manager:\n> > \n> > Apply trac_7870-magma-doctest.patch\n> > Apply trac-7870-magma-doctest-review.patch\n> \n> **Please** in the future write this in the ticket **description**.  Thanks!\n\nThat makes a lot of sence and should probably be put in some sort of guide to using trac. Is there one specifically for Sage? \n\nI know I came unstuck recently when I put a link to an spkg in the description, but that spkg needed tekinfo (or whatever it was), so Francois posted one which did not need it. But mine was in the description, his one was less prominently placed in the notes, so you used mine and found it did not work. \n\nAt the very least, specifying the locations of .spkgs and what patches needed to be applied, should be mentioned on sage-devel, but ideally we need it documented on the trac server. \n\nDave",
+    "body": "Replying to [comment:19 jdemeyer]:\n> Replying to [comment:16 mraum]:\n> > For the record, the patchbot and the release manager:\n> > \n> > Apply trac_7870-magma-doctest.patch\n> > Apply trac-7870-magma-doctest-review.patch\n\n> \n> **Please** in the future write this in the ticket **description**.  Thanks!\n\n\nThat makes a lot of sence and should probably be put in some sort of guide to using trac. Is there one specifically for Sage? \n\nI know I came unstuck recently when I put a link to an spkg in the description, but that spkg needed tekinfo (or whatever it was), so Francois posted one which did not need it. But mine was in the description, his one was less prominently placed in the notes, so you used mine and found it did not work. \n\nAt the very least, specifying the locations of .spkgs and what patches needed to be applied, should be mentioned on sage-devel, but ideally we need it documented on the trac server. \n\nDave",
     "created_at": "2011-03-08T09:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -842,8 +831,10 @@ Replying to [comment:19 jdemeyer]:
 > > 
 > > Apply trac_7870-magma-doctest.patch
 > > Apply trac-7870-magma-doctest-review.patch
+
 > 
 > **Please** in the future write this in the ticket **description**.  Thanks!
+
 
 That makes a lot of sence and should probably be put in some sort of guide to using trac. Is there one specifically for Sage? 
 
@@ -896,7 +887,7 @@ All doctests involving magma should be marked `# optional - magma`.  I get vario
 archive/issue_comments_068189.json:
 ```json
 {
-    "body": "Replying to [comment:21 jdemeyer]:\n> All doctests involving magma should be marked `# optional - magma`.  I get various failures in `sage/rings/number_field/number_field.py`.\n\nApologies, this refers to the new function I put in (_magma_polynomial_) where I did not tag the doctests as optional.  It's my fault (though William was sitting next to me at the time, so I blame him too!)",
+    "body": "Replying to [comment:21 jdemeyer]:\n> All doctests involving magma should be marked `# optional - magma`.  I get various failures in `sage/rings/number_field/number_field.py`.\n\n\nApologies, this refers to the new function I put in (_magma_polynomial_) where I did not tag the doctests as optional.  It's my fault (though William was sitting next to me at the time, so I blame him too!)",
     "created_at": "2011-03-08T17:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -907,6 +898,7 @@ archive/issue_comments_068189.json:
 
 Replying to [comment:21 jdemeyer]:
 > All doctests involving magma should be marked `# optional - magma`.  I get various failures in `sage/rings/number_field/number_field.py`.
+
 
 Apologies, this refers to the new function I put in (_magma_polynomial_) where I did not tag the doctests as optional.  It's my fault (though William was sitting next to me at the time, so I blame him too!)
 
@@ -994,7 +986,7 @@ This seems right. So, if everything is ok for you, also, give it a positive revi
 archive/issue_comments_068194.json:
 ```json
 {
-    "body": "According to the `sage -h`, the option should be `-only-optional=magma` and **not** `--only-optional=magma`\n\n\nI don't have Magma, but do have Mathematica, so I thought I'd try\n\n\n```\ndrkirkby@hawk:~/sage-4.6.2.rc1$ ./sage -t -only_optional=mathematica devel/sage/sage\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/all.py\"\n\t [0.1 s]\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/__init__.py\"\n\t [0.1 s]\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/random_variable.py\"\n```\n\n\nbut it seems to run every doctest, not just the Mathematica ones, which fail anyway, as noted at #8495. \n\n\nDave",
+    "body": "According to the `sage -h`, the option should be `-only-optional=magma` and **not** `--only-optional=magma`\n\n\nI don't have Magma, but do have Mathematica, so I thought I'd try\n\n```\ndrkirkby@hawk:~/sage-4.6.2.rc1$ ./sage -t -only_optional=mathematica devel/sage/sage\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/all.py\"\n\t [0.1 s]\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/__init__.py\"\n\t [0.1 s]\nsage -t -only_optional=mathematica \"devel/sage/sage/probability/random_variable.py\"\n```\n\nbut it seems to run every doctest, not just the Mathematica ones, which fail anyway, as noted at #8495. \n\n\nDave",
     "created_at": "2011-03-09T06:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -1008,7 +1000,6 @@ According to the `sage -h`, the option should be `-only-optional=magma` and **no
 
 I don't have Magma, but do have Mathematica, so I thought I'd try
 
-
 ```
 drkirkby@hawk:~/sage-4.6.2.rc1$ ./sage -t -only_optional=mathematica devel/sage/sage
 sage -t -only_optional=mathematica "devel/sage/sage/probability/all.py"
@@ -1017,7 +1008,6 @@ sage -t -only_optional=mathematica "devel/sage/sage/probability/__init__.py"
 	 [0.1 s]
 sage -t -only_optional=mathematica "devel/sage/sage/probability/random_variable.py"
 ```
-
 
 but it seems to run every doctest, not just the Mathematica ones, which fail anyway, as noted at #8495. 
 
@@ -1123,7 +1113,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068200.json:
 ```json
 {
-    "body": "Replying to [comment:29 mraum]:\n> I rebased the patch to 4.7alpha1. Please only apply the last one: review3.\n\nThanks.\n\n> \n> Could anyone (John?) check this soon, so that we won't need to rebase it again?\n\nOK, I'll try that soon.  (I have just been away for the weekend or I would have done it already.)",
+    "body": "Replying to [comment:29 mraum]:\n> I rebased the patch to 4.7alpha1. Please only apply the last one: review3.\n\n\nThanks.\n\n> \n> Could anyone (John?) check this soon, so that we won't need to rebase it again?\n\n\nOK, I'll try that soon.  (I have just been away for the weekend or I would have done it already.)",
     "created_at": "2011-03-14T01:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
@@ -1135,10 +1125,12 @@ archive/issue_comments_068200.json:
 Replying to [comment:29 mraum]:
 > I rebased the patch to 4.7alpha1. Please only apply the last one: review3.
 
+
 Thanks.
 
 > 
 > Could anyone (John?) check this soon, so that we won't need to rebase it again?
+
 
 OK, I'll try that soon.  (I have just been away for the weekend or I would have done it already.)
 

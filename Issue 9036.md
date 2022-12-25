@@ -3,7 +3,7 @@
 archive/issues_009036.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nKeywords: labelled graph isomorphism\n\nThe method canonical_label() for Graph and DiGraph does not take the parameters 'certify=True' and 'edge_labels=True' at the same time:\n\n\n```\nsage: g = Graph()                                      \nsage: g.canonical_label()\nGraph on 0 vertices\nsage: g.canonical_label(certify=True)\n(Graph on 0 vertices, {})\nsage: g.canonical_label(edge_labels=True)\nGraph on 0 vertices\nsage: g.canonical_label(certify=True, edge_labels=True)\n\n...\n\nNameError: global name 'relabeling' is not defined\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9036\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nKeywords: labelled graph isomorphism\n\nThe method canonical_label() for Graph and DiGraph does not take the parameters 'certify=True' and 'edge_labels=True' at the same time:\n\n```\nsage: g = Graph()                                      \nsage: g.canonical_label()\nGraph on 0 vertices\nsage: g.canonical_label(certify=True)\n(Graph on 0 vertices, {})\nsage: g.canonical_label(edge_labels=True)\nGraph on 0 vertices\nsage: g.canonical_label(certify=True, edge_labels=True)\n\n...\n\nNameError: global name 'relabeling' is not defined\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9036\n\n",
     "created_at": "2010-05-24T14:29:39Z",
     "labels": [
         "component: graph theory",
@@ -22,7 +22,6 @@ Assignee: jason, ncohen, rlm
 Keywords: labelled graph isomorphism
 
 The method canonical_label() for Graph and DiGraph does not take the parameters 'certify=True' and 'edge_labels=True' at the same time:
-
 
 ```
 sage: g = Graph()                                      

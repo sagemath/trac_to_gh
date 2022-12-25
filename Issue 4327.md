@@ -214,7 +214,7 @@ So, the test pass, but the startup module complains about the new module that is
 archive/issue_comments_031658.json:
 ```json
 {
-    "body": "Replying to [comment:8 nthiery]:\n> So, the test pass, but the startup module complains about the new module that is imported on startup. I'll try with a lazy import tomorrow. I leave it as needs review, as the review of all the rest can continue!\n\nHmm, I just had a look, but am not sure how to handle this. Lazy importing works just fine for the code, but then:\n\n```\n    sage: sage.combinat.root_system.plot?\n```\n\n\nfails, whereas I think we want to support this natural way to access\nthis tutorial.\n\nThe seemingly natural solution would be to lazy import the full module. However:\n\n```\nsage: sage.misc.lazy_import.lazy_import('sage.combinat.root_system', 'plot')\nsage: type(plot)\nsage.misc.lazy_import.LazyImport\nsage: plot\n/opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) \"$SAGE_ROOT/spkg/bin/sage\" \"$@\"\nProcess SAGE exited abnormally with code 139\n```\n\n\nI'll post on Sage-devel on this topic. In the mean time the rest of\nthe review can continue!\n\nIf we can't get a good solution shortly, I am at this point in favor\nof sticking to a non lazy import in order to allow for accessing the\ntutorial as above, even if the price is to import (yet another) new\nmodule in Sage.\n\nCheers,\n                         Nicolas",
+    "body": "Replying to [comment:8 nthiery]:\n> So, the test pass, but the startup module complains about the new module that is imported on startup. I'll try with a lazy import tomorrow. I leave it as needs review, as the review of all the rest can continue!\n\n\nHmm, I just had a look, but am not sure how to handle this. Lazy importing works just fine for the code, but then:\n\n```\n    sage: sage.combinat.root_system.plot?\n```\n\nfails, whereas I think we want to support this natural way to access\nthis tutorial.\n\nThe seemingly natural solution would be to lazy import the full module. However:\n\n```\nsage: sage.misc.lazy_import.lazy_import('sage.combinat.root_system', 'plot')\nsage: type(plot)\nsage.misc.lazy_import.LazyImport\nsage: plot\n/opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) \"$SAGE_ROOT/spkg/bin/sage\" \"$@\"\nProcess SAGE exited abnormally with code 139\n```\n\nI'll post on Sage-devel on this topic. In the mean time the rest of\nthe review can continue!\n\nIf we can't get a good solution shortly, I am at this point in favor\nof sticking to a non lazy import in order to allow for accessing the\ntutorial as above, even if the price is to import (yet another) new\nmodule in Sage.\n\nCheers,\n                         Nicolas",
     "created_at": "2013-03-06T03:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -226,12 +226,12 @@ archive/issue_comments_031658.json:
 Replying to [comment:8 nthiery]:
 > So, the test pass, but the startup module complains about the new module that is imported on startup. I'll try with a lazy import tomorrow. I leave it as needs review, as the review of all the rest can continue!
 
+
 Hmm, I just had a look, but am not sure how to handle this. Lazy importing works just fine for the code, but then:
 
 ```
     sage: sage.combinat.root_system.plot?
 ```
-
 
 fails, whereas I think we want to support this natural way to access
 this tutorial.
@@ -246,7 +246,6 @@ sage: plot
 /opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) "$SAGE_ROOT/spkg/bin/sage" "$@"
 Process SAGE exited abnormally with code 139
 ```
-
 
 I'll post on Sage-devel on this topic. In the mean time the rest of
 the review can continue!
@@ -398,7 +397,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_031666.json:
 ```json
 {
-    "body": "Uploaded a new version (double checked by Travis) fixing one of the long doctest failure on 5.10. It was caused by the new matplotlib that emits a warning for arrows of length 0:\n\n```\nsage: arrow([1,1],[1,1])\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3039: RuntimeWarning: invalid value encountered in double_scalars\n  ddx = pad_projected * dx / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3040: RuntimeWarning: invalid value encountered in double_scalars\n  ddy = pad_projected * dy / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3043: RuntimeWarning: invalid value encountered in double_scalars\n  dx = dx / cp_distance * head_dist\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3044: RuntimeWarning: invalid value encountered in double_scalars\n  dy = dy / cp_distance * head_dist\n```\n\n\nThe other failure is due to some doctests being ignored. See:\n\n https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/4m1ydGdiGf8",
+    "body": "Uploaded a new version (double checked by Travis) fixing one of the long doctest failure on 5.10. It was caused by the new matplotlib that emits a warning for arrows of length 0:\n\n```\nsage: arrow([1,1],[1,1])\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3039: RuntimeWarning: invalid value encountered in double_scalars\n  ddx = pad_projected * dx / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3040: RuntimeWarning: invalid value encountered in double_scalars\n  ddy = pad_projected * dy / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3043: RuntimeWarning: invalid value encountered in double_scalars\n  dx = dx / cp_distance * head_dist\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3044: RuntimeWarning: invalid value encountered in double_scalars\n  dy = dy / cp_distance * head_dist\n```\n\nThe other failure is due to some doctests being ignored. See:\n\n https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/4m1ydGdiGf8",
     "created_at": "2013-05-08T19:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -420,7 +419,6 @@ sage: arrow([1,1],[1,1])
 /home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3044: RuntimeWarning: invalid value encountered in double_scalars
   dy = dy / cp_distance * head_dist
 ```
-
 
 The other failure is due to some doctests being ignored. See:
 
@@ -451,7 +449,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_031668.json:
 ```json
 {
-    "body": "Hi Travis,\n\nThe updated patch fixes the doc so that later on doctests won't be\nignored, and update the number of ignored doctests in the mean time.\n\nAll long tests passed.\n\nHere is the metadiff:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent aa718acb2dbac8faab463c994aa7f4052a546363\n+# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -2569,7 +2569,7 @@ diff --git a/sage/combinat/root_system/t\n  import ambient_space\n  \n  class AmbientSpace(ambient_space.AmbientSpace):\n-@@ -135,13 +136,38 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -135,13 +136,36 @@ class AmbientSpace(ambient_space.Ambient\n          given, returns (k, ... ,k), the k-th power of the\n          determinant.\n  \n@@ -2582,14 +2582,8 @@ diff --git a/sage/combinat/root_system/t\n          \"\"\"\n          return self.sum(self.monomial(j)*k for j in range(self.n))\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"A\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2604,6 +2598,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n  \n@@ -2621,18 +2619,12 @@ diff --git a/sage/combinat/root_system/t\n  class AmbientSpace(ambient_space.AmbientSpace):\n      \"\"\"\n      EXAMPLES::\n-@@ -82,6 +82,32 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -82,6 +82,30 @@ class AmbientSpace(ambient_space.Ambient\n          return Family({ 1: self([1,0,-1]),\n                          2: self([2,-1,-1])})\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"G\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2647,6 +2639,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n +\n@@ -3011,3 +3007,15 @@ diff --git a/sage/combinat/root_system/w\n -            G.axes(False)\n -            return G\n -\n+diff --git a/sage/doctest/sources.py b/sage/doctest/sources.py\n+--- a/sage/doctest/sources.py\n++++ b/sage/doctest/sources.py\n+@@ -675,6 +675,8 @@ class FileDocTestSource(DocTestSource):\n+             There are 18 tests in sage/combinat/partition.py that are not being run\n+             There are 12 tests in sage/combinat/tableau.py that are not being run\n+             There are 15 tests in sage/combinat/root_system/cartan_type.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_A.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_G.py that are not being run\n+             There are 3 unexpected tests being run in sage/doctest/parsing.py\n+             There are 1 unexpected tests being run in sage/doctest/reporting.py\n+             There are 9 tests in sage/graphs/graph_plot.py that are not being run\n```\n",
+    "body": "Hi Travis,\n\nThe updated patch fixes the doc so that later on doctests won't be\nignored, and update the number of ignored doctests in the mean time.\n\nAll long tests passed.\n\nHere is the metadiff:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent aa718acb2dbac8faab463c994aa7f4052a546363\n+# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -2569,7 +2569,7 @@ diff --git a/sage/combinat/root_system/t\n  import ambient_space\n  \n  class AmbientSpace(ambient_space.AmbientSpace):\n-@@ -135,13 +136,38 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -135,13 +136,36 @@ class AmbientSpace(ambient_space.Ambient\n          given, returns (k, ... ,k), the k-th power of the\n          determinant.\n  \n@@ -2582,14 +2582,8 @@ diff --git a/sage/combinat/root_system/t\n          \"\"\"\n          return self.sum(self.monomial(j)*k for j in range(self.n))\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"A\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2604,6 +2598,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n  \n@@ -2621,18 +2619,12 @@ diff --git a/sage/combinat/root_system/t\n  class AmbientSpace(ambient_space.AmbientSpace):\n      \"\"\"\n      EXAMPLES::\n-@@ -82,6 +82,32 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -82,6 +82,30 @@ class AmbientSpace(ambient_space.Ambient\n          return Family({ 1: self([1,0,-1]),\n                          2: self([2,-1,-1])})\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"G\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2647,6 +2639,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n +\n@@ -3011,3 +3007,15 @@ diff --git a/sage/combinat/root_system/w\n -            G.axes(False)\n -            return G\n -\n+diff --git a/sage/doctest/sources.py b/sage/doctest/sources.py\n+--- a/sage/doctest/sources.py\n++++ b/sage/doctest/sources.py\n+@@ -675,6 +675,8 @@ class FileDocTestSource(DocTestSource):\n+             There are 18 tests in sage/combinat/partition.py that are not being run\n+             There are 12 tests in sage/combinat/tableau.py that are not being run\n+             There are 15 tests in sage/combinat/root_system/cartan_type.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_A.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_G.py that are not being run\n+             There are 3 unexpected tests being run in sage/doctest/parsing.py\n+             There are 1 unexpected tests being run in sage/doctest/reporting.py\n+             There are 9 tests in sage/graphs/graph_plot.py that are not being run\n```",
     "created_at": "2013-05-09T01:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -570,7 +568,6 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
 
 
 
-
 ---
 
 archive/issue_comments_031669.json:
@@ -630,7 +627,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_031672.json:
 ```json
 {
-    "body": "The PDF documentation doesn't build:\n\n```\n! Package inputenc Error: Keyboard character used is undefined\n(inputenc)                in inputencoding `utf8x'.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n?  [54]\n! Emergency stop.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on combinat.log.\n```\n",
+    "body": "The PDF documentation doesn't build:\n\n```\n! Package inputenc Error: Keyboard character used is undefined\n(inputenc)                in inputencoding `utf8x'.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n?  [54]\n! Emergency stop.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on combinat.log.\n```",
     "created_at": "2013-05-13T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -663,7 +660,6 @@ Transcript written on combinat.log.
 
 
 
-
 ---
 
 archive/issue_comments_031673.json:
@@ -687,7 +683,7 @@ Attachment [trac_4327-root_system_plot_refactor-nt.patch](tarball://root/attachm
 archive/issue_comments_031674.json:
 ```json
 {
-    "body": "Replying to [comment:23 jdemeyer]:\n> The PDF documentation doesn't build:\n> {{{\n> ! Package inputenc Error: Keyboard character used is undefined\n> (inputenc)                in inputencoding `utf8x'.\n> ...\n> }}}\n\nAh shoot, sorry about that. The docstrings for this method was missing its starting 'r', and which caused a `\\a` in it to be misinterpreted as a non UTF-8 character.\n\nThe newly updated patch fixes this. While I was at it, it fixes half a dozen other missing 'r' in other methods introduced by this patch.\n\nSince the change is trivial, I am allowing myself to put it back to positive review.\n\nFor the record, here is the diff between the two patches:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n+# Parent 75e26170e32bcbb5f78e1784a1df985ecb71e1db\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -631,7 +631,7 @@ new file mode 100644\n +lazy_import(\"sage.combinat.root_system.root_lattice_realizations\", \"RootLatticeRealizations\")\n +\n +class PlotOptions:\n-+    \"\"\"\n++    r\"\"\"\n +    A class for plotting options for root lattice realizations.\n +\n +    .. SEEALSO::\n@@ -740,7 +740,7 @@ new file mode 100644\n +\n +    @cached_method\n +    def in_bounding_box(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return whether ``x`` is in the bounding box.\n +\n +        INPUT:\n@@ -763,7 +763,7 @@ new file mode 100644\n +        return self.bounding_box.contains(self.projection(x))\n +\n +    def text(self, label, position):\n-+        \"\"\"\n++        r\"\"\"\n +        Return text widget with label ``label`` at position ``position``\n +\n +        INPUT:\n@@ -851,7 +851,7 @@ new file mode 100644\n +                return self._color(\"other\")\n +\n +    def projection(self, v):\n-+        \"\"\"\n++        r\"\"\"\n +        Return the projection of ``v``.\n +\n +        INPUT:\n@@ -880,7 +880,7 @@ new file mode 100644\n +        return v\n +\n +    def intersection_at_level_1(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return ``x`` scaled at the appropriate level, if level is set;\n +        otherwise return ``x``.\n +\n@@ -912,7 +912,7 @@ new file mode 100644\n +            return x\n +\n +    def empty(self, *args):\n-+        \"\"\"\n++        r\"\"\"\n +        Return an empty plot.\n +\n +        EXAMPLES::\n@@ -1255,7 +1255,7 @@ new file mode 100644\n +\n +@cached_function\n +def barycentric_projection_matrix(n, angle=0):\n-+    \"\"\"\n++    r\"\"\"\n +    Returns a family of `n+1` vectors evenly spaced in a real vector space of dimension `n`\n +\n +    Those vectors are of norm `1`, the scalar product between any two\n@@ -2339,7 +2339,7 @@ diff --git a/sage/combinat/root_system/r\n +\n +\n +        def plot_bounding_box(self, **options):\n-+            \"\"\"\n++            r\"\"\"\n +            Plot the bounding box.\n +\n +            INPUT:\n\n```\n",
+    "body": "Replying to [comment:23 jdemeyer]:\n> The PDF documentation doesn't build:\n> \n> ```\n> ! Package inputenc Error: Keyboard character used is undefined\n> (inputenc)                in inputencoding `utf8x'.\n> ...\n> ```\n\n\nAh shoot, sorry about that. The docstrings for this method was missing its starting 'r', and which caused a `\\a` in it to be misinterpreted as a non UTF-8 character.\n\nThe newly updated patch fixes this. While I was at it, it fixes half a dozen other missing 'r' in other methods introduced by this patch.\n\nSince the change is trivial, I am allowing myself to put it back to positive review.\n\nFor the record, here is the diff between the two patches:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n+# Parent 75e26170e32bcbb5f78e1784a1df985ecb71e1db\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -631,7 +631,7 @@ new file mode 100644\n +lazy_import(\"sage.combinat.root_system.root_lattice_realizations\", \"RootLatticeRealizations\")\n +\n +class PlotOptions:\n-+    \"\"\"\n++    r\"\"\"\n +    A class for plotting options for root lattice realizations.\n +\n +    .. SEEALSO::\n@@ -740,7 +740,7 @@ new file mode 100644\n +\n +    @cached_method\n +    def in_bounding_box(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return whether ``x`` is in the bounding box.\n +\n +        INPUT:\n@@ -763,7 +763,7 @@ new file mode 100644\n +        return self.bounding_box.contains(self.projection(x))\n +\n +    def text(self, label, position):\n-+        \"\"\"\n++        r\"\"\"\n +        Return text widget with label ``label`` at position ``position``\n +\n +        INPUT:\n@@ -851,7 +851,7 @@ new file mode 100644\n +                return self._color(\"other\")\n +\n +    def projection(self, v):\n-+        \"\"\"\n++        r\"\"\"\n +        Return the projection of ``v``.\n +\n +        INPUT:\n@@ -880,7 +880,7 @@ new file mode 100644\n +        return v\n +\n +    def intersection_at_level_1(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return ``x`` scaled at the appropriate level, if level is set;\n +        otherwise return ``x``.\n +\n@@ -912,7 +912,7 @@ new file mode 100644\n +            return x\n +\n +    def empty(self, *args):\n-+        \"\"\"\n++        r\"\"\"\n +        Return an empty plot.\n +\n +        EXAMPLES::\n@@ -1255,7 +1255,7 @@ new file mode 100644\n +\n +@cached_function\n +def barycentric_projection_matrix(n, angle=0):\n-+    \"\"\"\n++    r\"\"\"\n +    Returns a family of `n+1` vectors evenly spaced in a real vector space of dimension `n`\n +\n +    Those vectors are of norm `1`, the scalar product between any two\n@@ -2339,7 +2339,7 @@ diff --git a/sage/combinat/root_system/r\n +\n +\n +        def plot_bounding_box(self, **options):\n-+            \"\"\"\n++            r\"\"\"\n +            Plot the bounding box.\n +\n +            INPUT:\n\n```",
     "created_at": "2013-05-13T20:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -698,11 +694,13 @@ archive/issue_comments_031674.json:
 
 Replying to [comment:23 jdemeyer]:
 > The PDF documentation doesn't build:
-> {{{
+> 
+> ```
 > ! Package inputenc Error: Keyboard character used is undefined
 > (inputenc)                in inputencoding `utf8x'.
 > ...
-> }}}
+> ```
+
 
 Ah shoot, sorry about that. The docstrings for this method was missing its starting 'r', and which caused a `\a` in it to be misinterpreted as a non UTF-8 character.
 
@@ -800,7 +798,6 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
 
 
 
-
 ---
 
 archive/issue_comments_031675.json:
@@ -824,7 +821,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_031676.json:
 ```json
 {
-    "body": "Replying to [comment:24 nthiery]:\n> Since the change is trivial, I am allowing myself to put it back to positive review.\n\nAssuming that you checked that the PDF documentation does build, that's okay.",
+    "body": "Replying to [comment:24 nthiery]:\n> Since the change is trivial, I am allowing myself to put it back to positive review.\n\n\nAssuming that you checked that the PDF documentation does build, that's okay.",
     "created_at": "2013-05-13T20:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -836,6 +833,7 @@ archive/issue_comments_031676.json:
 Replying to [comment:24 nthiery]:
 > Since the change is trivial, I am allowing myself to put it back to positive review.
 
+
 Assuming that you checked that the PDF documentation does build, that's okay.
 
 
@@ -845,7 +843,7 @@ Assuming that you checked that the PDF documentation does build, that's okay.
 archive/issue_comments_031677.json:
 ```json
 {
-    "body": "Replying to [comment:26 jdemeyer]:\n> Assuming that you checked that the PDF documentation does build, that's okay.\n\nYup, I did. Well at least for reference/combinat.",
+    "body": "Replying to [comment:26 jdemeyer]:\n> Assuming that you checked that the PDF documentation does build, that's okay.\n\n\nYup, I did. Well at least for reference/combinat.",
     "created_at": "2013-05-13T21:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -856,6 +854,7 @@ archive/issue_comments_031677.json:
 
 Replying to [comment:26 jdemeyer]:
 > Assuming that you checked that the PDF documentation does build, that's okay.
+
 
 Yup, I did. Well at least for reference/combinat.
 
@@ -884,7 +883,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_031679.json:
 ```json
 {
-    "body": "\n```\nsage -t devel/sage/sage/combinat/root_system/root_lattice_realizations.py\n**********************************************************************\nFile \"devel/sage/sage/combinat/root_system/root_lattice_realizations.py\", line 1840, in sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.Pare\nntMethods.plot_roots\nFailed example:\n    list(RootSystem([\"A\",2]).root_lattice().plot_roots(\"all\"))\nExpected:\n    [Arrow from (0.0,0.0) to (1.0,0.0),\n     Text '$\\alpha_{1}$' at the point (1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,1.0),\n     Text '$\\alpha_{2}$' at the point (0.0,1.05),\n     Arrow from (0.0,0.0) to (1.0,1.0),\n     Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05),\n     Arrow from (0.0,0.0) to (-1.0,0.0),\n     Text '$\\left(-1\\right)\\alpha_{1}$' at the point (-1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{2}$' at the point (0.0,-1.05),\n     Arrow from (0.0,0.0) to (-1.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{1} + \\left(-1\\right)\\alpha_{2}$' at the point (-1.05,-1.05)]\nGot:\n    [Arrow from (0.0,0.0) to (1.0,0.0), Text '$\\alpha_{1}$' at the point (1.05,0.0), Arrow from (0.0,0.0) to (0.0,1.0), Text '$\\alpha_{2}$' at the point (0.0,1.05), Arr\now from (0.0,0.0) to (1.0,1.0), Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05), Arrow from (0.0,0.0) to (-1.0,0.0), Text '$-\\alpha_{1}$' at the point (-1.05,\n0.0), Arrow from (0.0,0.0) to (0.0,-1.0), Text '$-\\alpha_{2}$' at the point (0.0,-1.05), Arrow from (0.0,0.0) to (-1.0,-1.0), Text '$-\\alpha_{1} - \\alpha_{2}$' at the p\noint (-1.05,-1.05)]\n**********************************************************************\n```\n",
+    "body": "```\nsage -t devel/sage/sage/combinat/root_system/root_lattice_realizations.py\n**********************************************************************\nFile \"devel/sage/sage/combinat/root_system/root_lattice_realizations.py\", line 1840, in sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.Pare\nntMethods.plot_roots\nFailed example:\n    list(RootSystem([\"A\",2]).root_lattice().plot_roots(\"all\"))\nExpected:\n    [Arrow from (0.0,0.0) to (1.0,0.0),\n     Text '$\\alpha_{1}$' at the point (1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,1.0),\n     Text '$\\alpha_{2}$' at the point (0.0,1.05),\n     Arrow from (0.0,0.0) to (1.0,1.0),\n     Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05),\n     Arrow from (0.0,0.0) to (-1.0,0.0),\n     Text '$\\left(-1\\right)\\alpha_{1}$' at the point (-1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{2}$' at the point (0.0,-1.05),\n     Arrow from (0.0,0.0) to (-1.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{1} + \\left(-1\\right)\\alpha_{2}$' at the point (-1.05,-1.05)]\nGot:\n    [Arrow from (0.0,0.0) to (1.0,0.0), Text '$\\alpha_{1}$' at the point (1.05,0.0), Arrow from (0.0,0.0) to (0.0,1.0), Text '$\\alpha_{2}$' at the point (0.0,1.05), Arr\now from (0.0,0.0) to (1.0,1.0), Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05), Arrow from (0.0,0.0) to (-1.0,0.0), Text '$-\\alpha_{1}$' at the point (-1.05,\n0.0), Arrow from (0.0,0.0) to (0.0,-1.0), Text '$-\\alpha_{2}$' at the point (0.0,-1.05), Arrow from (0.0,0.0) to (-1.0,-1.0), Text '$-\\alpha_{1} - \\alpha_{2}$' at the p\noint (-1.05,-1.05)]\n**********************************************************************\n```",
     "created_at": "2013-05-16T06:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
@@ -892,7 +891,6 @@ archive/issue_comments_031679.json:
     "user": "https://github.com/jdemeyer"
 }
 ```
-
 
 ```
 sage -t devel/sage/sage/combinat/root_system/root_lattice_realizations.py
@@ -921,7 +919,6 @@ ow from (0.0,0.0) to (1.0,1.0), Text '$\alpha_{1} + \alpha_{2}$' at the point (1
 oint (-1.05,-1.05)]
 **********************************************************************
 ```
-
 
 
 

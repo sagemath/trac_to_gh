@@ -3,7 +3,7 @@
 archive/issues_002058.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nWith the attached patches `8314.patch` (by burcin) and `8315.patch` (by malb) the following now works:\n\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: x.subs({x:y})\ny\nsage: x.subs({'x':y})\ny\nsage: x.subs(x=y)\ny\n```\n\n\nThe implementation is far from being perfect but at least the functionality is there now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2058\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nWith the attached patches `8314.patch` (by burcin) and `8315.patch` (by malb) the following now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: x.subs({x:y})\ny\nsage: x.subs({'x':y})\ny\nsage: x.subs(x=y)\ny\n```\n\nThe implementation is far from being perfect but at least the functionality is there now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2058\n\n",
     "created_at": "2008-02-05T17:05:33Z",
     "labels": [
         "component: commutative algebra",
@@ -24,7 +24,6 @@ Keywords: polybori
 
 With the attached patches `8314.patch` (by burcin) and `8315.patch` (by malb) the following now works:
 
-
 ```
 sage: B.<x,y,z> = BooleanPolynomialRing(3)
 sage: x.subs({x:y})
@@ -34,7 +33,6 @@ y
 sage: x.subs(x=y)
 y
 ```
-
 
 The implementation is far from being perfect but at least the functionality is there now.
 

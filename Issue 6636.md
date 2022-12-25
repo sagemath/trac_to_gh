@@ -3,7 +3,7 @@
 archive/issues_006636.json:
 ```json
 {
-    "body": "CC:  @jbandlow @burcin @mwhansen\n\nKeywords: symbolics, factorials, binomial coefficients\n\nMaple can simplify all but the first of the following examples:\n\n\n```\n%maple\nprint(simplify(binomial(n,2)+binomial(n+1,2)));\nprint(simplify(factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n-1)/2));\nprint(simplify(factorial(n+1)/factorial(n)));\nprint(simplify(binomial(n,k)*factorial(k)*factorial(n-k)));\n```\n\n\nreturns\n\n```\nbinomial(n,2)+binomial(n+1,2)\nn^2\nn+1\nn!\n```\n\n\nSage can simplify only the first:\n\n```\nvar('n,k')\nprint (binomial(n,2) + binomial(n+1,2)).simplify_full()\nprint (factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n)/2).simplify_full()\nprint (factorial(n+1)/factorial(n)).simplify_full()\nprint (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()\n```\n\n\nreturns\n\n```\nn^2\n1/2*(factorial(n - 2)*factorial(n + 1) + factorial(n)^2)/(factorial(n - 2)*factorial(n))\nfactorial(n + 1)/factorial(n)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jason/.sage/sage_notebook/worksheets/admin/10/code/49.py\", line 11, in <module>\n    exec compile(ur'print (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()' + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"expression.pyx\", line 4837, in sage.symbolic.expression.Expression.simplify_full (sage/symbolic/expression.cpp:19979)\n  File \"expression.pyx\", line 4864, in sage.symbolic.expression.Expression.simplify_trig (sage/symbolic/expression.cpp:20076)\n  File \"expression.pyx\", line 418, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3415)\n  File \"sage_object.pyx\", line 364, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3384)\n  File \"sage_object.pyx\", line 451, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5065)\n  File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3544)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n    return self.arithmetic(ex, operator)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 497, in arithmetic\n    args = [\"(%s)\"%self(op) for op in ex.operands()]\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 206, in __call__\n    operator = ex.operator()\n  File \"expression.pyx\", line 3088, in sage.symbolic.expression.Expression.operator (sage/symbolic/expression.cpp:15127)\nRuntimeError: cannot find SFunction in table\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6636\n\n",
+    "body": "CC:  @jbandlow @burcin @mwhansen\n\nKeywords: symbolics, factorials, binomial coefficients\n\nMaple can simplify all but the first of the following examples:\n\n```\n%maple\nprint(simplify(binomial(n,2)+binomial(n+1,2)));\nprint(simplify(factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n-1)/2));\nprint(simplify(factorial(n+1)/factorial(n)));\nprint(simplify(binomial(n,k)*factorial(k)*factorial(n-k)));\n```\n\nreturns\n\n```\nbinomial(n,2)+binomial(n+1,2)\nn^2\nn+1\nn!\n```\n\nSage can simplify only the first:\n\n```\nvar('n,k')\nprint (binomial(n,2) + binomial(n+1,2)).simplify_full()\nprint (factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n)/2).simplify_full()\nprint (factorial(n+1)/factorial(n)).simplify_full()\nprint (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()\n```\n\nreturns\n\n```\nn^2\n1/2*(factorial(n - 2)*factorial(n + 1) + factorial(n)^2)/(factorial(n - 2)*factorial(n))\nfactorial(n + 1)/factorial(n)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jason/.sage/sage_notebook/worksheets/admin/10/code/49.py\", line 11, in <module>\n    exec compile(ur'print (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()' + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"expression.pyx\", line 4837, in sage.symbolic.expression.Expression.simplify_full (sage/symbolic/expression.cpp:19979)\n  File \"expression.pyx\", line 4864, in sage.symbolic.expression.Expression.simplify_trig (sage/symbolic/expression.cpp:20076)\n  File \"expression.pyx\", line 418, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3415)\n  File \"sage_object.pyx\", line 364, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3384)\n  File \"sage_object.pyx\", line 451, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5065)\n  File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3544)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n    return self.arithmetic(ex, operator)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 497, in arithmetic\n    args = [\"(%s)\"%self(op) for op in ex.operands()]\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 206, in __call__\n    operator = ex.operator()\n  File \"expression.pyx\", line 3088, in sage.symbolic.expression.Expression.operator (sage/symbolic/expression.cpp:15127)\nRuntimeError: cannot find SFunction in table\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6636\n\n",
     "created_at": "2009-07-27T11:34:50Z",
     "labels": [
         "component: symbolics"
@@ -21,7 +21,6 @@ Keywords: symbolics, factorials, binomial coefficients
 
 Maple can simplify all but the first of the following examples:
 
-
 ```
 %maple
 print(simplify(binomial(n,2)+binomial(n+1,2)));
@@ -29,7 +28,6 @@ print(simplify(factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n-1)/2))
 print(simplify(factorial(n+1)/factorial(n)));
 print(simplify(binomial(n,k)*factorial(k)*factorial(n-k)));
 ```
-
 
 returns
 
@@ -40,7 +38,6 @@ n+1
 n!
 ```
 
-
 Sage can simplify only the first:
 
 ```
@@ -50,7 +47,6 @@ print (factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n)/2).simplify_f
 print (factorial(n+1)/factorial(n)).simplify_full()
 print (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()
 ```
-
 
 returns
 
@@ -82,7 +78,6 @@ RuntimeError: cannot find SFunction in table
 
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/6636
 
 
@@ -94,7 +89,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6636
 archive/issue_comments_054267.json:
 ```json
 {
-    "body": "A related discussion on sage-devel is [http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5](http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5).\n\nThe lack of simplification is a bug, or at least very poorly exposed functionality, in Maxima.  One would think that simplify would include this... but instead one needs to expose Maxima's *minfactorial*:\n\n```\n(%i1) fullratsimp(factorial(n)/factorial(n-1));\n                                      n!\n(%o1)                              --------\n                                   (n - 1)!\n(%i2) minfactorial(factorial(n)/factorial(n-1));\n(%o2)                                  n\n```\n\nThis should not be hard to add to simplify_full, though.\n\nAlso note that the last issue is addressed by #6197.",
+    "body": "A related discussion on sage-devel is [http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5](http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5).\n\nThe lack of simplification is a bug, or at least very poorly exposed functionality, in Maxima.  One would think that simplify would include this... but instead one needs to expose Maxima's *minfactorial*:\n\n```\n(%i1) fullratsimp(factorial(n)/factorial(n-1));\n                                      n!\n(%o1)                              --------\n                                   (n - 1)!\n(%i2) minfactorial(factorial(n)/factorial(n-1));\n(%o2)                                  n\n```\nThis should not be hard to add to simplify_full, though.\n\nAlso note that the last issue is addressed by #6197.",
     "created_at": "2009-09-02T14:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
@@ -115,7 +110,6 @@ The lack of simplification is a bug, or at least very poorly exposed functionali
 (%i2) minfactorial(factorial(n)/factorial(n-1));
 (%o2)                                  n
 ```
-
 This should not be hard to add to simplify_full, though.
 
 Also note that the last issue is addressed by #6197.
@@ -203,7 +197,7 @@ We might want to improve simplify_full so that we don't have 4 round trips to Ma
 archive/issue_comments_054272.json:
 ```json
 {
-    "body": "> We might want to improve simplify_full so that we don't have 4 round trips to Maxima (convert to maxima, run all of the simplification commands on the MaximaElement, and then finally convert back to an Expression.)\n\nThat makes a lot of sense.  Once this is merged, do you mind opening a ticket on that?",
+    "body": "> We might want to improve simplify_full so that we don't have 4 round trips to Maxima (convert to maxima, run all of the simplification commands on the MaximaElement, and then finally convert back to an Expression.)\n\n\nThat makes a lot of sense.  Once this is merged, do you mind opening a ticket on that?",
     "created_at": "2009-09-08T19:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
@@ -213,6 +207,7 @@ archive/issue_comments_054272.json:
 ```
 
 > We might want to improve simplify_full so that we don't have 4 round trips to Maxima (convert to maxima, run all of the simplification commands on the MaximaElement, and then finally convert back to an Expression.)
+
 
 That makes a lot of sense.  Once this is merged, do you mind opening a ticket on that?
 

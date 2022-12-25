@@ -74,7 +74,7 @@ See the patch at #5601.
 archive/issue_comments_043650.json:
 ```json
 {
-    "body": "This works now:\n\n\n```\nsage: sage.plot.colors.red.lighter()\nRGB color (1.0, 0.33333333333333331, 0.33333333333333331)\nsage: sage.plot.colors.red.darker()\nRGB color (0.66666666666666674, 0.0, 0.0)\n```\n\n\nSo this ticket should be closed.",
+    "body": "This works now:\n\n```\nsage: sage.plot.colors.red.lighter()\nRGB color (1.0, 0.33333333333333331, 0.33333333333333331)\nsage: sage.plot.colors.red.darker()\nRGB color (0.66666666666666674, 0.0, 0.0)\n```\n\nSo this ticket should be closed.",
     "created_at": "2010-05-11T20:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5602",
     "type": "issue_comment",
@@ -85,14 +85,12 @@ archive/issue_comments_043650.json:
 
 This works now:
 
-
 ```
 sage: sage.plot.colors.red.lighter()
 RGB color (1.0, 0.33333333333333331, 0.33333333333333331)
 sage: sage.plot.colors.red.darker()
 RGB color (0.66666666666666674, 0.0, 0.0)
 ```
-
 
 So this ticket should be closed.
 
@@ -137,7 +135,7 @@ archive/issue_events_013193.json:
 archive/issue_comments_043652.json:
 ```json
 {
-    "body": "Close as fixed:\n\n\n```sh\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r = sage.plot.colors.red\nsage: r\nRGB color (1.0, 0.0, 0.0)\nsage: r.darker()\nRGB color (0.66666666666666674, 0.0, 0.0)\nsage: r.lighter()\nRGB color (1.0, 0.33333333333333331, 0.33333333333333331)\n```\n",
+    "body": "Close as fixed:\n\n```sh\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r = sage.plot.colors.red\nsage: r\nRGB color (1.0, 0.0, 0.0)\nsage: r.darker()\nRGB color (0.66666666666666674, 0.0, 0.0)\nsage: r.lighter()\nRGB color (1.0, 0.33333333333333331, 0.33333333333333331)\n```",
     "created_at": "2010-05-11T20:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5602",
     "type": "issue_comment",
@@ -147,7 +145,6 @@ archive/issue_comments_043652.json:
 ```
 
 Close as fixed:
-
 
 ```sh
 [mvngu@sage ~]$ sage
@@ -161,4 +158,3 @@ RGB color (0.66666666666666674, 0.0, 0.0)
 sage: r.lighter()
 RGB color (1.0, 0.33333333333333331, 0.33333333333333331)
 ```
-

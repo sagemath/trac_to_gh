@@ -3,7 +3,7 @@
 archive/issues_001883.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nMy Sage installation includes 5 Windows executables: \n\n```\n./local/lib/gap-4.4.10/bin/gapw95.exe\n./local/lib/gap-4.4.10/bin/regtool.exe\n./local/lib/gap-4.4.10/bin/._regtool.exe\n./local/lib/gap-4.4.10/bin/rxvt.exe\n./local/lib/gap-4.4.10/bin/._rxvt.exe\n./local/lib/gap-4.4.10/bin/._gapw95.exe\n./local/lib/python2.5/distutils/command/wininst-6.exe\n./local/lib/python2.5/distutils/command/wininst-7.1.exe\n```\n\n(as well as three Macintosh resource forks for the corresponding Windows executable -- those files are doubly useless).\n\nThese files should be deleted from the corresponding spkgs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1883\n\n",
+    "body": "Assignee: mabshoff\n\nMy Sage installation includes 5 Windows executables: \n\n```\n./local/lib/gap-4.4.10/bin/gapw95.exe\n./local/lib/gap-4.4.10/bin/regtool.exe\n./local/lib/gap-4.4.10/bin/._regtool.exe\n./local/lib/gap-4.4.10/bin/rxvt.exe\n./local/lib/gap-4.4.10/bin/._rxvt.exe\n./local/lib/gap-4.4.10/bin/._gapw95.exe\n./local/lib/python2.5/distutils/command/wininst-6.exe\n./local/lib/python2.5/distutils/command/wininst-7.1.exe\n```\n(as well as three Macintosh resource forks for the corresponding Windows executable -- those files are doubly useless).\n\nThese files should be deleted from the corresponding spkgs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1883\n\n",
     "created_at": "2008-01-22T01:45:25Z",
     "labels": [
         "component: distribution",
@@ -30,7 +30,6 @@ My Sage installation includes 5 Windows executables:
 ./local/lib/python2.5/distutils/command/wininst-6.exe
 ./local/lib/python2.5/distutils/command/wininst-7.1.exe
 ```
-
 (as well as three Macintosh resource forks for the corresponding Windows executable -- those files are doubly useless).
 
 These files should be deleted from the corresponding spkgs.

@@ -3,7 +3,7 @@
 archive/issues_004145.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nBefore:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 16.24 s, sys: 0.32 s, total: 16.57 s\nWall time: 17.14 s\n```\n\n\nAfter:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 3.65 s, sys: 0.04 s, total: 3.68 s\nWall time: 3.71 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4145\n\n",
+    "body": "Assignee: tbd\n\nBefore:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 16.24 s, sys: 0.32 s, total: 16.57 s\nWall time: 17.14 s\n```\n\nAfter:\n\n```\nsage: G = ExtendedBinaryGolayCode()\nsage: time L = G.list()\nCPU times: user 3.65 s, sys: 0.04 s, total: 3.68 s\nWall time: 3.71 s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4145\n\n",
     "created_at": "2008-09-18T15:05:53Z",
     "labels": [
         "component: algebra",
@@ -27,7 +27,6 @@ CPU times: user 16.24 s, sys: 0.32 s, total: 16.57 s
 Wall time: 17.14 s
 ```
 
-
 After:
 
 ```
@@ -36,7 +35,6 @@ sage: time L = G.list()
 CPU times: user 3.65 s, sys: 0.04 s, total: 3.68 s
 Wall time: 3.71 s
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4145
 

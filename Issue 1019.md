@@ -3,7 +3,7 @@
 archive/issues_001019.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nThe following was reported by David Galant:\n\n```\nIn the notebook, starting a block with '%octave' does not produce a\nresult.\nThis has been consistent throughout all releases of sage 2.*\nThe behavior is consistent on MacOS and Ubuntu Linux.\nA sample session showing this is:\n \nsage: from math import *\nsage: sin(1)\n0.8414709848078965\nsage: gp.sin(1)\n0.8414709848078965066525023216\nsage: octave.sin(1)\n0.841471\nsage: %gp\nsage: sin(1)\n0.8414709848078965066525023216\nsage: %octave\nsage: sin(1)\n \nsage: 3+2\n5\nsage: quit\nExited sage process\n```\n\n\nSee\n\nIssue created by migration from https://trac.sagemath.org/ticket/1019\n\n",
+    "body": "Assignee: boothby\n\nThe following was reported by David Galant:\n\n```\nIn the notebook, starting a block with '%octave' does not produce a\nresult.\nThis has been consistent throughout all releases of sage 2.*\nThe behavior is consistent on MacOS and Ubuntu Linux.\nA sample session showing this is:\n \nsage: from math import *\nsage: sin(1)\n0.8414709848078965\nsage: gp.sin(1)\n0.8414709848078965066525023216\nsage: octave.sin(1)\n0.841471\nsage: %gp\nsage: sin(1)\n0.8414709848078965066525023216\nsage: %octave\nsage: sin(1)\n \nsage: 3+2\n5\nsage: quit\nExited sage process\n```\n\nSee\n\nIssue created by migration from https://trac.sagemath.org/ticket/1019\n\n",
     "created_at": "2007-10-28T09:41:32Z",
     "labels": [
         "component: notebook",
@@ -45,7 +45,6 @@ sage: 3+2
 sage: quit
 Exited sage process
 ```
-
 
 See
 

@@ -3,7 +3,7 @@
 archive/issues_008528.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nhere it is\n\n```\nsage: x.n()\nTraceback (most recent call last)\n...\nTypeError: cannot evaluate symbolic expresssion numerically\n                                         ^^^\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8528\n\n",
+    "body": "Assignee: @burcin\n\nhere it is\n\n```\nsage: x.n()\nTraceback (most recent call last)\n...\nTypeError: cannot evaluate symbolic expresssion numerically\n                                         ^^^\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8528\n\n",
     "created_at": "2010-03-13T21:53:53Z",
     "labels": [
         "component: symbolics",
@@ -28,7 +28,6 @@ Traceback (most recent call last)
 TypeError: cannot evaluate symbolic expresssion numerically
                                          ^^^
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8528
 

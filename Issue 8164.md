@@ -74,7 +74,7 @@ We can just extend `plot([x,x^2,log(x)], (x,0,1), color=<list of colors>)` to do
 archive/issue_comments_071703.json:
 ```json
 {
-    "body": "From [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/797289bc476b089a):\n\n```\n\n> >> Try something like:\n> \n> >> colors=rainbow(len([0,1,..3]))\n> >> sum(plot(derivative((f(x), a) , (x,0,2*pi), color =\n> >> colors[i],label=\"Plot %d\"%i) for i,a in enumerate([0,1,..3]))\n> \n> >> Make each curve an individual plot, and then sum them together.\n> \n> > Though for years I've wanted to do\n> \n> > plot([f,g,h],(x,0,1),color=['red','blue','green'])\n> \n> > Don't know how hard it would be to send color to list and check if it\n> > had the right length... \u00a0probably not?\n> \n> Almost surely it's not hard. \u00a0My guess is that it would involve maybe\n> one or two lines of code change, right at the start where it detects if\n> you have multiple functions and calls plot for each function.\n> \n> That's around line 3216 of plot/plot.py, right after this comment:\n> \n> \u00a0 \u00a0 \u00a0#check to see if funcs is a list of functions that will\n> \u00a0 \u00a0 \u00a0#be all plotted together.\n> \n```\n",
+    "body": "From [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/797289bc476b089a):\n\n```\n\n> >> Try something like:\n> \n> >> colors=rainbow(len([0,1,..3]))\n> >> sum(plot(derivative((f(x), a) , (x,0,2*pi), color =\n> >> colors[i],label=\"Plot %d\"%i) for i,a in enumerate([0,1,..3]))\n> \n> >> Make each curve an individual plot, and then sum them together.\n> \n> > Though for years I've wanted to do\n> \n> > plot([f,g,h],(x,0,1),color=['red','blue','green'])\n> \n> > Don't know how hard it would be to send color to list and check if it\n> > had the right length... \u00a0probably not?\n> \n> Almost surely it's not hard. \u00a0My guess is that it would involve maybe\n> one or two lines of code change, right at the start where it detects if\n> you have multiple functions and calls plot for each function.\n> \n> That's around line 3216 of plot/plot.py, right after this comment:\n> \n> \u00a0 \u00a0 \u00a0#check to see if funcs is a list of functions that will\n> \u00a0 \u00a0 \u00a0#be all plotted together.\n> \n```",
     "created_at": "2011-10-28T17:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8164",
     "type": "issue_comment",
@@ -115,13 +115,12 @@ From [this sage-support thread](http://groups.google.com/group/sage-support/brow
 
 
 
-
 ---
 
 archive/issue_comments_071704.json:
 ```json
 {
-    "body": "Also, #6894 turned out to be a dup.\n\n```\nExample: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.\n```\n",
+    "body": "Also, #6894 turned out to be a dup.\n\n```\nExample: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.\n```",
     "created_at": "2011-10-28T17:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8164",
     "type": "issue_comment",
@@ -135,7 +134,6 @@ Also, #6894 turned out to be a dup.
 ```
 Example: plot([lambda x: x,lambda x: -x], (-5,5)) should plot x->x and x->-x in two different colors.
 ```
-
 
 
 
@@ -339,7 +337,7 @@ It may turn out that this is part of #12962 but it would be nice to have some di
 archive/issue_comments_071709.json:
 ```json
 {
-    "body": "My two cents, regarding making multi-color curves the default...\n\nPerhaps, \"Mathematica and Maple do it,\" is not a convincing enough argument for most (though I think it is), but what about, \"because that's what a novice user needs\"? Anyhow, this was the impetus for creating #12962, as I was not getting what I expected. I certainly wouldn't expect my (pre-)calculus student to figure out dictionaries and plot-addition to help them distinguish one function from the next.\n\nRegarding B&W readability, yes, this could be a problem with `rainbow()`... and I notice that Mathematica chooses very dark shades for their default colors. However, there is an additional problem with `rainbow()`: sometimes your second function would be plotted with cyan, sometimes your fourth function would be (depending on how many are plotted, in total). For a novice trying to learn the different behavior of assorted functions, this hardly seems like a good idea. \n\nRegarding alternatives to `rainbow()`, I really like the golden-ratio idea (and it solves my 'additional problem' above). We should start from 'blue' as this is Sage's preferred plot color. Try: \n\n```\nh = golden_ratio_conjugate = 0.618033988749895\ngraphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45,space='hsl'),fill=True,edgecolor='white') for i in range(10)]).show(axes=False,figsize=7)\n```\n\nand notice that the first ten entries are identical to those here:\n\n```\nh = golden_ratio_conjugate = 0.618033988749895\ngraphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45, space='hsl'),fill=True,edgecolor='white') for i in range(15)]).show(axes=False,figsize=10)\n```\n\n\nI've implemented the following function in #12962, in case anybody wants to pull that branch and have a look.\n\n```\ndef rainbow_color(i):\n    # note: 'blue' has hue-saturation-lightness values (2/3, 1, 1/2).\n    h = golden_ratio_conjugate = 0.618033988749895\n    return Color((0.666666666666+i*h) % 1, 1, 0.4, space='hsl')\n```\n",
+    "body": "My two cents, regarding making multi-color curves the default...\n\nPerhaps, \"Mathematica and Maple do it,\" is not a convincing enough argument for most (though I think it is), but what about, \"because that's what a novice user needs\"? Anyhow, this was the impetus for creating #12962, as I was not getting what I expected. I certainly wouldn't expect my (pre-)calculus student to figure out dictionaries and plot-addition to help them distinguish one function from the next.\n\nRegarding B&W readability, yes, this could be a problem with `rainbow()`... and I notice that Mathematica chooses very dark shades for their default colors. However, there is an additional problem with `rainbow()`: sometimes your second function would be plotted with cyan, sometimes your fourth function would be (depending on how many are plotted, in total). For a novice trying to learn the different behavior of assorted functions, this hardly seems like a good idea. \n\nRegarding alternatives to `rainbow()`, I really like the golden-ratio idea (and it solves my 'additional problem' above). We should start from 'blue' as this is Sage's preferred plot color. Try: \n\n```\nh = golden_ratio_conjugate = 0.618033988749895\ngraphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45,space='hsl'),fill=True,edgecolor='white') for i in range(10)]).show(axes=False,figsize=7)\n```\nand notice that the first ten entries are identical to those here:\n\n```\nh = golden_ratio_conjugate = 0.618033988749895\ngraphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45, space='hsl'),fill=True,edgecolor='white') for i in range(15)]).show(axes=False,figsize=10)\n```\n\nI've implemented the following function in #12962, in case anybody wants to pull that branch and have a look.\n\n```\ndef rainbow_color(i):\n    # note: 'blue' has hue-saturation-lightness values (2/3, 1, 1/2).\n    h = golden_ratio_conjugate = 0.618033988749895\n    return Color((0.666666666666+i*h) % 1, 1, 0.4, space='hsl')\n```",
     "created_at": "2015-07-25T04:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8164",
     "type": "issue_comment",
@@ -360,14 +358,12 @@ Regarding alternatives to `rainbow()`, I really like the golden-ratio idea (and 
 h = golden_ratio_conjugate = 0.618033988749895
 graphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45,space='hsl'),fill=True,edgecolor='white') for i in range(10)]).show(axes=False,figsize=7)
 ```
-
 and notice that the first ten entries are identical to those here:
 
 ```
 h = golden_ratio_conjugate = 0.618033988749895
 graphics_array([circle((.2,.2),.5,facecolor=Color((.666666+i*h)%1,1,.45, space='hsl'),fill=True,edgecolor='white') for i in range(15)]).show(axes=False,figsize=10)
 ```
-
 
 I've implemented the following function in #12962, in case anybody wants to pull that branch and have a look.
 
@@ -377,7 +373,6 @@ def rainbow_color(i):
     h = golden_ratio_conjugate = 0.618033988749895
     return Color((0.666666666666+i*h) % 1, 1, 0.4, space='hsl')
 ```
-
 
 
 
@@ -404,7 +399,7 @@ This website for [seaborn](http://stanford.edu/~mwaskom/software/seaborn/tutoria
 archive/issue_comments_071711.json:
 ```json
 {
-    "body": "The website [seaborn](http://stanford.edu/~mwaskom/software/seaborn/tutorial/color_palettes.html) suggests we use a \"qualitative\" color palette, so the [Preiss/Ankerl](http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/) idea of using the *golden ratio* is fine. (I actually prefer it to what seaborn does, as the latter would result in the first plot in a list of seven being colored differently than the first plot in a list of six.)\n\nDo we have access to seaborn in Sage? Its attempt to adjust for human perception of hue seems like a good idea. It draws \"hue polygons\" as a function of brightness, then intersects a given hue's ray with the polygon ([HUSL](http://www.husl-colors.org/)). (If not, one could port over Boronine's [python code](https://github.com/husl-colors/husl-python), on which seaborn is based.)\n\n**Proposed algorithm:**\n\n```\nstep 1: pick a hue using golden_ratio()\nstep 2: adjust hue using husl()\n```\n\n\nNote that brightness-level isn't mentioned in the algorithm. We should agree on a level to use, independent of hue. If I understand Boronine's discussion (and [HSL sliders demo](http://www.husl-colors.org/)) correctly, there is only one hue-polygon that contains the color 'blue' (brightness = 32.3).\n* We might choose brightness = 32.3, to respect Sage's default plot color. However, the hues along the boundary of the polygon are quite a bit darker than I'd like to see, e.g., \"960000\" for red, \"005900\" for green, and \"005555\" for cyan. \n* Setting brightness = 40.0 gives a pretty good approximation to 'blue' (\"3b3bff\") with more vibrant colors along the boundary of the polygon, e.g., \"c00000\" for red, \"006e00\" for green, and \"006a6a\" for cyan.",
+    "body": "The website [seaborn](http://stanford.edu/~mwaskom/software/seaborn/tutorial/color_palettes.html) suggests we use a \"qualitative\" color palette, so the [Preiss/Ankerl](http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/) idea of using the *golden ratio* is fine. (I actually prefer it to what seaborn does, as the latter would result in the first plot in a list of seven being colored differently than the first plot in a list of six.)\n\nDo we have access to seaborn in Sage? Its attempt to adjust for human perception of hue seems like a good idea. It draws \"hue polygons\" as a function of brightness, then intersects a given hue's ray with the polygon ([HUSL](http://www.husl-colors.org/)). (If not, one could port over Boronine's [python code](https://github.com/husl-colors/husl-python), on which seaborn is based.)\n\n**Proposed algorithm:**\n\n```\nstep 1: pick a hue using golden_ratio()\nstep 2: adjust hue using husl()\n```\n\nNote that brightness-level isn't mentioned in the algorithm. We should agree on a level to use, independent of hue. If I understand Boronine's discussion (and [HSL sliders demo](http://www.husl-colors.org/)) correctly, there is only one hue-polygon that contains the color 'blue' (brightness = 32.3).\n* We might choose brightness = 32.3, to respect Sage's default plot color. However, the hues along the boundary of the polygon are quite a bit darker than I'd like to see, e.g., \"960000\" for red, \"005900\" for green, and \"005555\" for cyan. \n* Setting brightness = 40.0 gives a pretty good approximation to 'blue' (\"3b3bff\") with more vibrant colors along the boundary of the polygon, e.g., \"c00000\" for red, \"006e00\" for green, and \"006a6a\" for cyan.",
     "created_at": "2015-07-27T19:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8164",
     "type": "issue_comment",
@@ -423,7 +418,6 @@ Do we have access to seaborn in Sage? Its attempt to adjust for human perception
 step 1: pick a hue using golden_ratio()
 step 2: adjust hue using husl()
 ```
-
 
 Note that brightness-level isn't mentioned in the algorithm. We should agree on a level to use, independent of hue. If I understand Boronine's discussion (and [HSL sliders demo](http://www.husl-colors.org/)) correctly, there is only one hue-polygon that contains the color 'blue' (brightness = 32.3).
 * We might choose brightness = 32.3, to respect Sage's default plot color. However, the hues along the boundary of the polygon are quite a bit darker than I'd like to see, e.g., "960000" for red, "005900" for green, and "005555" for cyan. 

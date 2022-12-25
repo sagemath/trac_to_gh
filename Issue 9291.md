@@ -3,7 +3,7 @@
 archive/issues_009291.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nConstructing root systems / coxeter groups / ... from a pair of\nmatrices describing the coordinates of the roots and coroots in\ntheir respective basis. Interface:\n\n\n```\n    sage: T = CartanType(roots_as_matrix, coroots_as_matrix)\n    sage: T.root_space()\n    sage: T.root_space().simple_roots()\n    sage: T.coroot_space()\n    sage: WeylGroup(T.root_space())\n    sage: WeylGroup(T)\n    sage: ReflectionGroup(T)\n```\n\n\nThe root system code is designed to support such features. Attached: a\none page proof of feasibility (not following the above interface).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9291\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nConstructing root systems / coxeter groups / ... from a pair of\nmatrices describing the coordinates of the roots and coroots in\ntheir respective basis. Interface:\n\n```\n    sage: T = CartanType(roots_as_matrix, coroots_as_matrix)\n    sage: T.root_space()\n    sage: T.root_space().simple_roots()\n    sage: T.coroot_space()\n    sage: WeylGroup(T.root_space())\n    sage: WeylGroup(T)\n    sage: ReflectionGroup(T)\n```\n\nThe root system code is designed to support such features. Attached: a\none page proof of feasibility (not following the above interface).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9291\n\n",
     "created_at": "2010-06-21T08:22:28Z",
     "labels": [
         "component: combinatorics"
@@ -23,7 +23,6 @@ Constructing root systems / coxeter groups / ... from a pair of
 matrices describing the coordinates of the roots and coroots in
 their respective basis. Interface:
 
-
 ```
     sage: T = CartanType(roots_as_matrix, coroots_as_matrix)
     sage: T.root_space()
@@ -33,7 +32,6 @@ their respective basis. Interface:
     sage: WeylGroup(T)
     sage: ReflectionGroup(T)
 ```
-
 
 The root system code is designed to support such features. Attached: a
 one page proof of feasibility (not following the above interface).

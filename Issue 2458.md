@@ -3,7 +3,7 @@
 archive/issues_002458.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrancois noted in http://groups.google.com/group/sage-devel/browse_thread/thread/4a902c07ebb7c45d that\n\n```\nIn linbox in the spkg-install file on line 41 we have an interesting\nreference to ${SAGE_LCOAL}. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2458\n\n",
+    "body": "Assignee: mabshoff\n\nFrancois noted in http://groups.google.com/group/sage-devel/browse_thread/thread/4a902c07ebb7c45d that\n\n```\nIn linbox in the spkg-install file on line 41 we have an interesting\nreference to ${SAGE_LCOAL}. \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2458\n\n",
     "created_at": "2008-03-10T14:47:59Z",
     "labels": [
         "component: linbox",
@@ -24,7 +24,6 @@ Francois noted in http://groups.google.com/group/sage-devel/browse_thread/thread
 In linbox in the spkg-install file on line 41 we have an interesting
 reference to ${SAGE_LCOAL}. 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2458
 

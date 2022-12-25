@@ -3,7 +3,7 @@
 archive/issues_008388.json:
 ```json
 {
-    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: pickle of a nested class\n\nThere is a pickle error with the nested class RauzyDiagram.Path in sage.combinat.iet.template\n\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: r = p.rauzy_diagram()\nsage: g = r.path(p, 't', 'b')\nsage: dumps(g)\nPicklingError Traceback(most recent call last)\n...\nPicklingError: Can't pickle <class 'sage.combinat.iet.labelled.Path'>: attribute lookup sage.combinat.iet.labelled.Path failed\n```\n\n\nA __metaclass__ must be defined for RauzyDiagram.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8388\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: pickle of a nested class\n\nThere is a pickle error with the nested class RauzyDiagram.Path in sage.combinat.iet.template\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: r = p.rauzy_diagram()\nsage: g = r.path(p, 't', 'b')\nsage: dumps(g)\nPicklingError Traceback(most recent call last)\n...\nPicklingError: Can't pickle <class 'sage.combinat.iet.labelled.Path'>: attribute lookup sage.combinat.iet.labelled.Path failed\n```\n\nA __metaclass__ must be defined for RauzyDiagram.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8388\n\n",
     "created_at": "2010-02-27T16:55:51Z",
     "labels": [
         "component: algebra",
@@ -24,7 +24,6 @@ Keywords: pickle of a nested class
 
 There is a pickle error with the nested class RauzyDiagram.Path in sage.combinat.iet.template
 
-
 ```
 sage: p = iet.Permutation('a b c','c b a')
 sage: r = p.rauzy_diagram()
@@ -34,7 +33,6 @@ PicklingError Traceback(most recent call last)
 ...
 PicklingError: Can't pickle <class 'sage.combinat.iet.labelled.Path'>: attribute lookup sage.combinat.iet.labelled.Path failed
 ```
-
 
 A __metaclass__ must be defined for RauzyDiagram.
 

@@ -3,7 +3,7 @@
 archive/issues_003184.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @craigcitro\n\n(This ticket was split off from #2943)\n\nThis is okay:\n\n\n```\nsage: K = Qp(13,7)\nsage: R.<t> = K[]       \nsage: a = 13^7*t^3 + K(169,4)*t - 13^4\nsage: a[1:2]\n(13^2 + O(13^4))*t\n```\n\n\nThis dies:\n\n\n```\nsage: t[0:1]\n[boom]\n```\n\n\nThe original context for this bug was along the lines of (see #2943 for more examples):\n\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3184\n\n",
+    "body": "Assignee: somebody\n\nCC:  @craigcitro\n\n(This ticket was split off from #2943)\n\nThis is okay:\n\n```\nsage: K = Qp(13,7)\nsage: R.<t> = K[]       \nsage: a = 13^7*t^3 + K(169,4)*t - 13^4\nsage: a[1:2]\n(13^2 + O(13^4))*t\n```\n\nThis dies:\n\n```\nsage: t[0:1]\n[boom]\n```\n\nThe original context for this bug was along the lines of (see #2943 for more examples):\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3184\n\n",
     "created_at": "2008-05-13T13:00:20Z",
     "labels": [
         "component: basic arithmetic",
@@ -24,7 +24,6 @@ CC:  @craigcitro
 
 This is okay:
 
-
 ```
 sage: K = Qp(13,7)
 sage: R.<t> = K[]       
@@ -33,18 +32,14 @@ sage: a[1:2]
 (13^2 + O(13^4))*t
 ```
 
-
 This dies:
-
 
 ```
 sage: t[0:1]
 [boom]
 ```
 
-
 The original context for this bug was along the lines of (see #2943 for more examples):
-
 
 ```
 sage: K = Qp(p,10)
@@ -54,7 +49,6 @@ sage: z = (1 + O(t)) + t*s^2
 sage: z * z
 [boom]
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/3184

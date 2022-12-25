@@ -69,7 +69,7 @@ Really, parametric_plot should take functions returning any of the allowed types
 archive/issue_comments_022918.json:
 ```json
 {
-    "body": "Replying to [comment:1 jason]:\n> See also #3313 for another input format parametric_plot should take: vectors.\n\n#3313 has nothing to do with vectors.  And now, parametric_plot takes vectors anyway:\n\n\n```\nsage: r(t)=[t,t+1]\nsage: parametric_plot(r, (t,0,1))\n\nsage: parametric_plot(r(t), (t,0,1))\n\n```\n",
+    "body": "Replying to [comment:1 jason]:\n> See also #3313 for another input format parametric_plot should take: vectors.\n\n\n#3313 has nothing to do with vectors.  And now, parametric_plot takes vectors anyway:\n\n```\nsage: r(t)=[t,t+1]\nsage: parametric_plot(r, (t,0,1))\n\nsage: parametric_plot(r(t), (t,0,1))\n\n```",
     "created_at": "2010-05-11T20:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3315",
     "type": "issue_comment",
@@ -81,8 +81,8 @@ archive/issue_comments_022918.json:
 Replying to [comment:1 jason]:
 > See also #3313 for another input format parametric_plot should take: vectors.
 
-#3313 has nothing to do with vectors.  And now, parametric_plot takes vectors anyway:
 
+#3313 has nothing to do with vectors.  And now, parametric_plot takes vectors anyway:
 
 ```
 sage: r(t)=[t,t+1]
@@ -91,4 +91,3 @@ sage: parametric_plot(r, (t,0,1))
 sage: parametric_plot(r(t), (t,0,1))
 
 ```
-

@@ -3,7 +3,7 @@
 archive/issues_007822.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAfter changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:\n\n\n```\nsage: from sage.functions.log import function_log\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/16530/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:5305)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3560)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_log (sage/symbolic/pynac.cpp:10778)()\n\nValueError: math domain error\n```\n\n\nAttached patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7822\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAfter changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:\n\n```\nsage: from sage.functions.log import function_log\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/16530/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:5305)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3560)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_log (sage/symbolic/pynac.cpp:10778)()\n\nValueError: math domain error\n```\n\nAttached patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7822\n\n",
     "created_at": "2010-01-03T01:10:54Z",
     "labels": [
         "component: symbolics",
@@ -22,7 +22,6 @@ CC:  @jasongrout
 
 After changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:
 
-
 ```
 sage: from sage.functions.log import function_log
 ---------------------------------------------------------------------------
@@ -38,7 +37,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: math domain error
 ```
-
 
 Attached patch fixes the problem.
 
@@ -91,7 +89,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067592.json:
 ```json
 {
-    "body": "This looks nice, but causes a serious speed regression:\n\nBEFORE:\n\n```\nsage: %timeit ln(complex(-1))\n10000 loops, best of 3: 29 \u00b5s per loop\nsage: %timeit log(complex(-1))\n10000 loops, best of 3: 43.2 \u00b5s per loop\n```\n\n\nAFTER:\n\n```\nsage: %timeit ln(complex(-1))\n1000 loops, best of 3: 1.47 ms per loop\nsage: %timeit log(complex(-1))\n100 loops, best of 3: 1.47 ms per loop\n```\n\n\nCan this be fixed easily?",
+    "body": "This looks nice, but causes a serious speed regression:\n\nBEFORE:\n\n```\nsage: %timeit ln(complex(-1))\n10000 loops, best of 3: 29 \u00b5s per loop\nsage: %timeit log(complex(-1))\n10000 loops, best of 3: 43.2 \u00b5s per loop\n```\n\nAFTER:\n\n```\nsage: %timeit ln(complex(-1))\n1000 loops, best of 3: 1.47 ms per loop\nsage: %timeit log(complex(-1))\n100 loops, best of 3: 1.47 ms per loop\n```\n\nCan this be fixed easily?",
     "created_at": "2010-01-03T05:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
@@ -111,7 +109,6 @@ sage: %timeit log(complex(-1))
 10000 loops, best of 3: 43.2 µs per loop
 ```
 
-
 AFTER:
 
 ```
@@ -120,7 +117,6 @@ sage: %timeit ln(complex(-1))
 sage: %timeit log(complex(-1))
 100 loops, best of 3: 1.47 ms per loop
 ```
-
 
 Can this be fixed easily?
 
@@ -205,7 +201,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067597.json:
 ```json
 {
-    "body": "attachment:trac_7822-py_log.take2.patch fixes the speed problems, although it is still not as fast as before. It depends on a very small patch to pynac. I will post a pynac package with the fix later this week.\n\nBefore:\n\n\n```\nsage: %timeit t = ln(float(-1))\n1000 loops, best of 3: 285 \u00b5s per loop\nsage: %timeit t = ln(float(1))\n100000 loops, best of 3: 17.5 \u00b5s per loop\nsage: %timeit t = ln(complex(1))\n100000 loops, best of 3: 6.25 \u00b5s per loop\nsage: %timeit t = ln(complex(1,1))\n100000 loops, best of 3: 6.4 \u00b5s per loop\nsage: %timeit t = ln(complex(1,-1))\n100000 loops, best of 3: 6.42 \u00b5s per loop\nsage: %timeit t = ln(complex(0))\n100000 loops, best of 3: 9.24 \u00b5s per loop\nsage: %timeit t = ln(complex(-1))\n100000 loops, best of 3: 6.21 \u00b5s per loop\n```\n\n\nAfter:\n\n\n```\nsage: %timeit t = ln(float(-1))\n100000 loops, best of 3: 15.2 \u00b5s per loop\nsage: %timeit t = ln(float(1))\n100000 loops, best of 3: 13.2 \u00b5s per loop\nsage: %timeit t = ln(complex(1))\n100000 loops, best of 3: 15 \u00b5s per loop\nsage: %timeit t = ln(complex(1,1))\n100000 loops, best of 3: 15.3 \u00b5s per loop\nsage: %timeit t = ln(complex(0))\n100000 loops, best of 3: 15.5 \u00b5s per loop\nsage: %timeit t = ln(complex(-1))\n100000 loops, best of 3: 15.1 \u00b5s per loop\n```\n\n\nRe comment:3:\n\nThe top level log function is a regular python function which handles precision, etc. Calling that in the doctest is not really testing the `Function_log` defined in `sage/functions/log.py`. If we want people to move away from using `ln`, we should deprecate it. Since the last discussion about this topic ended up by concluding we should even support printing `ln` instead of `log`, I don't see that happening soon.",
+    "body": "attachment:trac_7822-py_log.take2.patch fixes the speed problems, although it is still not as fast as before. It depends on a very small patch to pynac. I will post a pynac package with the fix later this week.\n\nBefore:\n\n```\nsage: %timeit t = ln(float(-1))\n1000 loops, best of 3: 285 \u00b5s per loop\nsage: %timeit t = ln(float(1))\n100000 loops, best of 3: 17.5 \u00b5s per loop\nsage: %timeit t = ln(complex(1))\n100000 loops, best of 3: 6.25 \u00b5s per loop\nsage: %timeit t = ln(complex(1,1))\n100000 loops, best of 3: 6.4 \u00b5s per loop\nsage: %timeit t = ln(complex(1,-1))\n100000 loops, best of 3: 6.42 \u00b5s per loop\nsage: %timeit t = ln(complex(0))\n100000 loops, best of 3: 9.24 \u00b5s per loop\nsage: %timeit t = ln(complex(-1))\n100000 loops, best of 3: 6.21 \u00b5s per loop\n```\n\nAfter:\n\n```\nsage: %timeit t = ln(float(-1))\n100000 loops, best of 3: 15.2 \u00b5s per loop\nsage: %timeit t = ln(float(1))\n100000 loops, best of 3: 13.2 \u00b5s per loop\nsage: %timeit t = ln(complex(1))\n100000 loops, best of 3: 15 \u00b5s per loop\nsage: %timeit t = ln(complex(1,1))\n100000 loops, best of 3: 15.3 \u00b5s per loop\nsage: %timeit t = ln(complex(0))\n100000 loops, best of 3: 15.5 \u00b5s per loop\nsage: %timeit t = ln(complex(-1))\n100000 loops, best of 3: 15.1 \u00b5s per loop\n```\n\nRe comment:3:\n\nThe top level log function is a regular python function which handles precision, etc. Calling that in the doctest is not really testing the `Function_log` defined in `sage/functions/log.py`. If we want people to move away from using `ln`, we should deprecate it. Since the last discussion about this topic ended up by concluding we should even support printing `ln` instead of `log`, I don't see that happening soon.",
     "created_at": "2010-01-17T01:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
@@ -217,7 +213,6 @@ archive/issue_comments_067597.json:
 attachment:trac_7822-py_log.take2.patch fixes the speed problems, although it is still not as fast as before. It depends on a very small patch to pynac. I will post a pynac package with the fix later this week.
 
 Before:
-
 
 ```
 sage: %timeit t = ln(float(-1))
@@ -236,9 +231,7 @@ sage: %timeit t = ln(complex(-1))
 100000 loops, best of 3: 6.21 µs per loop
 ```
 
-
 After:
-
 
 ```
 sage: %timeit t = ln(float(-1))
@@ -254,7 +247,6 @@ sage: %timeit t = ln(complex(0))
 sage: %timeit t = ln(complex(-1))
 100000 loops, best of 3: 15.1 µs per loop
 ```
-
 
 Re comment:3:
 

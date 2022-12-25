@@ -70,7 +70,7 @@ __cmp__ ultimateley ends up using enum() twice, and this is kind of too much, si
 archive/issue_comments_004412.json:
 ```json
 {
-    "body": "Note - the quick option in the relabel function was originally an optimization for the graph_isom code, and no longer applies, since it is never used. Other than that purpose, it doesn't make sense to have it as an option, so I'll just remove it.\n\nHere is another aspect:\n\n```\nsage: G._nxg.adj\n{0: {1: [None]}, 1: {0: [None]}}\nsage: H._nxg.adj\n{0: {1: [None, None]}, 1: {0: [None, None]}}\nsage: G == H\nTrue\n```\n",
+    "body": "Note - the quick option in the relabel function was originally an optimization for the graph_isom code, and no longer applies, since it is never used. Other than that purpose, it doesn't make sense to have it as an option, so I'll just remove it.\n\nHere is another aspect:\n\n```\nsage: G._nxg.adj\n{0: {1: [None]}, 1: {0: [None]}}\nsage: H._nxg.adj\n{0: {1: [None, None]}, 1: {0: [None, None]}}\nsage: G == H\nTrue\n```",
     "created_at": "2007-10-26T21:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/749",
     "type": "issue_comment",
@@ -91,7 +91,6 @@ sage: H._nxg.adj
 sage: G == H
 True
 ```
-
 
 
 

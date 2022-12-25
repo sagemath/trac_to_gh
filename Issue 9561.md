@@ -3,7 +3,7 @@
 archive/issues_009561.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
     "created_at": "2010-07-21T10:01:54Z",
     "labels": [
         "component: documentation",
@@ -30,7 +30,6 @@ docstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Lite
 docstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9561
 
 
@@ -42,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9561
 archive/issue_comments_092012.json:
 ```json
 {
-    "body": "This was caused by someone getting too excited about \n\n```\nEXAMPLES::\n```\n\nwhich does indeed often introduce actual examples, but now is more likely to have more text before the code itself.  Should be very easy review.",
+    "body": "This was caused by someone getting too excited about \n\n```\nEXAMPLES::\n```\nwhich does indeed often introduce actual examples, but now is more likely to have more text before the code itself.  Should be very easy review.",
     "created_at": "2010-07-22T14:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
@@ -56,7 +55,6 @@ This was caused by someone getting too excited about
 ```
 EXAMPLES::
 ```
-
 which does indeed often introduce actual examples, but now is more likely to have more text before the code itself.  Should be very easy review.
 
 

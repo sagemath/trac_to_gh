@@ -90,7 +90,7 @@ I realize the bundle has other patches from other tickets (e.g. #1533), but thes
 archive/issue_comments_009695.json:
 ```json
 {
-    "body": "Examples\n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: abs(zeta(x+y*i)), (-3,3), (-3,3), ['red','blue'])\nsage: S.show(viewer='jmol')\nsage: (S + axes3d(5)).show(viewer='jmol')\n```\n",
+    "body": "Examples\n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: abs(zeta(x+y*i)), (-3,3), (-3,3), ['red','blue'])\nsage: S.show(viewer='jmol')\nsage: (S + axes3d(5)).show(viewer='jmol')\n```",
     "created_at": "2007-12-16T10:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1516",
     "type": "issue_comment",
@@ -107,7 +107,6 @@ sage: S = plot3d(lambda x, y: abs(zeta(x+y*i)), (-3,3), (-3,3), ['red','blue'])
 sage: S.show(viewer='jmol')
 sage: (S + axes3d(5)).show(viewer='jmol')
 ```
-
 
 
 

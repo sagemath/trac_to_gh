@@ -3,7 +3,7 @@
 archive/issues_005171.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:\n\n```\nsage: a = matrix(2,2,[1,0,0,1])\nsage: Graph(a)\nGraph on 2 vertices\nsage: Graph(a).adjacency_matrix()  # I think Graph(a) should work or given an error\n[0 0]\n[0 0]\nsage: Graph(a, loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nAnother example -- this is WRONG, since multiple loops should not be ignored.\n\n```\nsage: a = matrix(2,2,[2,0,0,1])\nsage: Graph(a,loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nWhy not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. \n\n2. When the input matrix is non-square, the error message is wrong in multiple ways:\n\n```\nsage: a = matrix([1,0,0,1])\nsage: Graph(a)\nTraceback (most recent call last):\n...\nAttributeError: Incidence Matrix must have one 1 and one -1 per column.\n```\n\n\n* it should be \"adjacency matrix\". \n\n* The exception should be ValueError, not AttributeError\n\n* The Graph constructor doesn't take only 1's or -1's as input (but see above)\n\n* The Graph constructor is perfectly fine with having multiple 1's per column!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5171\n\n",
+    "body": "Assignee: @rlmill\n\n1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:\n\n```\nsage: a = matrix(2,2,[1,0,0,1])\nsage: Graph(a)\nGraph on 2 vertices\nsage: Graph(a).adjacency_matrix()  # I think Graph(a) should work or given an error\n[0 0]\n[0 0]\nsage: Graph(a, loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\nAnother example -- this is WRONG, since multiple loops should not be ignored.\n\n```\nsage: a = matrix(2,2,[2,0,0,1])\nsage: Graph(a,loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\nWhy not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. \n\n2. When the input matrix is non-square, the error message is wrong in multiple ways:\n\n```\nsage: a = matrix([1,0,0,1])\nsage: Graph(a)\nTraceback (most recent call last):\n...\nAttributeError: Incidence Matrix must have one 1 and one -1 per column.\n```\n\n* it should be \"adjacency matrix\". \n\n* The exception should be ValueError, not AttributeError\n\n* The Graph constructor doesn't take only 1's or -1's as input (but see above)\n\n* The Graph constructor is perfectly fine with having multiple 1's per column!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5171\n\n",
     "created_at": "2009-02-04T02:53:08Z",
     "labels": [
         "component: graph theory",
@@ -33,7 +33,6 @@ sage: Graph(a, loops=True).adjacency_matrix()
 [0 1]
 ```
 
-
 Another example -- this is WRONG, since multiple loops should not be ignored.
 
 ```
@@ -42,7 +41,6 @@ sage: Graph(a,loops=True).adjacency_matrix()
 [1 0]
 [0 1]
 ```
-
 
 Why not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. 
 
@@ -55,7 +53,6 @@ Traceback (most recent call last):
 ...
 AttributeError: Incidence Matrix must have one 1 and one -1 per column.
 ```
-
 
 * it should be "adjacency matrix". 
 
@@ -187,7 +184,7 @@ This will allow us to close #5046 as well.
 archive/issue_comments_039538.json:
 ```json
 {
-    "body": "With only the first patch some trouble:\n\n```\n\tsage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/crystals.py # 94 doctests failed\n\tsage -t -long devel/sage/sage/combinat/posets/posets.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/fast_crystals.py # 64 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 110 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # 68 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/spins.py # 64 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "body": "With only the first patch some trouble:\n\n```\n\tsage -t -long devel/sage/sage/graphs/graph.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/crystals.py # 94 doctests failed\n\tsage -t -long devel/sage/sage/combinat/posets/posets.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/fast_crystals.py # 64 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/tensor_product.py # 110 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/letters.py # 68 doctests failed\n\tsage -t -long devel/sage/sage/combinat/crystals/spins.py # 64 doctests failed\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T19:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
@@ -207,7 +204,6 @@ With only the first patch some trouble:
 	sage -t -long devel/sage/sage/combinat/crystals/letters.py # 68 doctests failed
 	sage -t -long devel/sage/sage/combinat/crystals/spins.py # 64 doctests failed
 ```
-
 
 Cheers,
 
@@ -323,7 +319,7 @@ This looks good. Excellent!
 archive/issue_comments_039544.json:
 ```json
 {
-    "body": "This latest patch requires one trivial doctest fix:\n\n```\nsage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc2/devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\", line 808:\n    sage: sage.groups.perm_gps.partn_ref.refinement_graphs.random_tests()\nExpected:\n    All passed: ... random tests on ... graphs.\nGot:\n    doctest:1: DeprecationWarning: The function loops is replaced by allow_loops and allows_loops.\n    All passed: 560 random tests on 28 graphs.\n**********************************************************************\n```\n\nI am posting a reviewer patch shortly.\n\nCheers,\n\nMichael",
+    "body": "This latest patch requires one trivial doctest fix:\n\n```\nsage -t -long devel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc2/devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\", line 808:\n    sage: sage.groups.perm_gps.partn_ref.refinement_graphs.random_tests()\nExpected:\n    All passed: ... random tests on ... graphs.\nGot:\n    doctest:1: DeprecationWarning: The function loops is replaced by allow_loops and allows_loops.\n    All passed: 560 random tests on 28 graphs.\n**********************************************************************\n```\nI am posting a reviewer patch shortly.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T23:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
@@ -346,7 +342,6 @@ Got:
     All passed: 560 random tests on 28 graphs.
 **********************************************************************
 ```
-
 I am posting a reviewer patch shortly.
 
 Cheers,
@@ -440,7 +435,7 @@ Resolution: fixed
 archive/issue_comments_039548.json:
 ```json
 {
-    "body": "Replying to [comment:12 mabshoff]:\n> Mike suggested the reviewer fix.\n\n+1",
+    "body": "Replying to [comment:12 mabshoff]:\n> Mike suggested the reviewer fix.\n\n\n+1",
     "created_at": "2009-02-18T00:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
@@ -451,5 +446,6 @@ archive/issue_comments_039548.json:
 
 Replying to [comment:12 mabshoff]:
 > Mike suggested the reviewer fix.
+
 
 +1

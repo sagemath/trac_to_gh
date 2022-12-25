@@ -3,7 +3,7 @@
 archive/issues_009164.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
     "created_at": "2010-06-07T04:02:22Z",
     "labels": [
         "component: porting: cygwin",
@@ -19,7 +19,6 @@ archive/issues_009164.json:
 Assignee: tbd
 
 CC:  jpflori @dimpase
-
 
 ```
 
@@ -42,7 +41,6 @@ NameError: name 'fail' is not defined
 sage: 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/9164
 
 
@@ -54,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9164
 archive/issue_comments_085420.json:
 ```json
 {
-    "body": "Hey, is this related to the mysterious comment\n\n```\nsage: v, t = qsieve(n, time=True)   # uses the sieve    (optional: time doesn't work on cygwin) \n```\n\nin sage/interfaces/qsieve.py?  And does `time` now work on Cygwin?",
+    "body": "Hey, is this related to the mysterious comment\n\n```\nsage: v, t = qsieve(n, time=True)   # uses the sieve    (optional: time doesn't work on cygwin) \n```\nin sage/interfaces/qsieve.py?  And does `time` now work on Cygwin?",
     "created_at": "2013-02-27T03:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
@@ -68,7 +66,6 @@ Hey, is this related to the mysterious comment
 ```
 sage: v, t = qsieve(n, time=True)   # uses the sieve    (optional: time doesn't work on cygwin) 
 ```
-
 in sage/interfaces/qsieve.py?  And does `time` now work on Cygwin?
 
 
@@ -121,7 +118,7 @@ Nonetheless the other qsieve examples do not work, this should be treated elsewh
 archive/issue_comments_085423.json:
 ```json
 {
-    "body": "Replying to [comment:2 jpflori]:\n> Nonetheless the other qsieve examples do not work, this should be treated elsewhere.\nOr not:\nhttp://comments.gmane.org/gmane.os.cygwin/106331\nAlthough the time bash builtin works, there is no time command under Cygwin (nor in any package), so either we should modify the qsieve code (what will have to be done anyway after #12173 gets in and we get rid of qsieve which will then be obsoleted), or live with such code being optional.",
+    "body": "Replying to [comment:2 jpflori]:\n> Nonetheless the other qsieve examples do not work, this should be treated elsewhere.\n\nOr not:\nhttp://comments.gmane.org/gmane.os.cygwin/106331\nAlthough the time bash builtin works, there is no time command under Cygwin (nor in any package), so either we should modify the qsieve code (what will have to be done anyway after #12173 gets in and we get rid of qsieve which will then be obsoleted), or live with such code being optional.",
     "created_at": "2013-02-27T22:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
@@ -132,6 +129,7 @@ archive/issue_comments_085423.json:
 
 Replying to [comment:2 jpflori]:
 > Nonetheless the other qsieve examples do not work, this should be treated elsewhere.
+
 Or not:
 http://comments.gmane.org/gmane.os.cygwin/106331
 Although the time bash builtin works, there is no time command under Cygwin (nor in any package), so either we should modify the qsieve code (what will have to be done anyway after #12173 gets in and we get rid of qsieve which will then be obsoleted), or live with such code being optional.
@@ -182,7 +180,7 @@ JP, see #14184.  What do you think?
 archive/issue_comments_085426.json:
 ```json
 {
-    "body": "Replying to [comment:3 jpflori]:\n> Although the time bash builtin works, there is no time command under Cygwin (nor in any package)\nThis has nothing to do with Cygwin. My Gentoo Linux system doesn't have a `time` command either, it does have the `time` keyword (to be pedantic: it's a keyword, not a builtin) in bash.\n\n> so [...] we should modify the qsieve code\nExactly, see #14202.",
+    "body": "Replying to [comment:3 jpflori]:\n> Although the time bash builtin works, there is no time command under Cygwin (nor in any package)\n\nThis has nothing to do with Cygwin. My Gentoo Linux system doesn't have a `time` command either, it does have the `time` keyword (to be pedantic: it's a keyword, not a builtin) in bash.\n\n> so [...] we should modify the qsieve code\n\nExactly, see #14202.",
     "created_at": "2013-02-28T07:43:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9164",
     "type": "issue_comment",
@@ -193,9 +191,11 @@ archive/issue_comments_085426.json:
 
 Replying to [comment:3 jpflori]:
 > Although the time bash builtin works, there is no time command under Cygwin (nor in any package)
+
 This has nothing to do with Cygwin. My Gentoo Linux system doesn't have a `time` command either, it does have the `time` keyword (to be pedantic: it's a keyword, not a builtin) in bash.
 
 > so [...] we should modify the qsieve code
+
 Exactly, see #14202.
 
 

@@ -3,7 +3,7 @@
 archive/issues_004232.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb alexghitza\n\nTry the following in a sage that contains the patch at #249\n\n\n```\na=[(i,randint(0,100)) for i in range(3000)]                  \nf=open(\"mytest.sage\",'w')                  \nf.write(\"a=[\\n\")                           \nf.writelines([\"%s,\\n\"%str(i) for i in a])  \nf.write(\"(0,0)]\")                          \nf.close()\nload mytest.sage            \n```\n\n\nWithout the patch at #249, the load completes in about a second.  With the patch, I get recursion errors, ending in:\n\n\n```\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    678 \n    679 \n--> 680 \n    681 \n    682 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in strip_string_literals(code)\n    267 \n    268 \n--> 269 \n    270 \n    271 \n\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\nOne solution is to revert the patch at #249.  Of course, the better is to find the bug and fix it :).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4232\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb alexghitza\n\nTry the following in a sage that contains the patch at #249\n\n```\na=[(i,randint(0,100)) for i in range(3000)]                  \nf=open(\"mytest.sage\",'w')                  \nf.write(\"a=[\\n\")                           \nf.writelines([\"%s,\\n\"%str(i) for i in a])  \nf.write(\"(0,0)]\")                          \nf.close()\nload mytest.sage            \n```\n\nWithout the patch at #249, the load completes in about a second.  With the patch, I get recursion errors, ending in:\n\n```\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    811 \n    812 \n--> 813 \n    814 \n    815 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)\n    678 \n    679 \n--> 680 \n    681 \n    682 \n\n/home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in strip_string_literals(code)\n    267 \n    268 \n--> 269 \n    270 \n    271 \n\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\nOne solution is to revert the patch at #249.  Of course, the better is to find the bug and fix it :).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4232\n\n",
     "created_at": "2008-10-01T20:02:22Z",
     "labels": [
         "component: basic arithmetic",
@@ -23,7 +23,6 @@ CC:  @robertwb alexghitza
 
 Try the following in a sage that contains the patch at #249
 
-
 ```
 a=[(i,randint(0,100)) for i in range(3000)]                  
 f=open("mytest.sage",'w')                  
@@ -34,9 +33,7 @@ f.close()
 load mytest.sage            
 ```
 
-
 Without the patch at #249, the load completes in about a second.  With the patch, I get recursion errors, ending in:
-
 
 ```
 /home/jason/download/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/misc/preparser.py in preparse(line, reset, do_time, ignore_prompts)
@@ -76,7 +73,6 @@ Without the patch at #249, the load completes in about a second.  With the patch
 
 RuntimeError: maximum recursion depth exceeded in cmp
 ```
-
 
 One solution is to revert the patch at #249.  Of course, the better is to find the bug and fix it :).
 

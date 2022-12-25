@@ -262,7 +262,7 @@ Fixes doctests for cython 0.9.6.13
 archive/issue_comments_018237.json:
 ```json
 {
-    "body": "Attachment [trac_2655_devel_1.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_devel_1.patch) by @garyfurnish created at 2008-04-04 19:35:09\n\n\n```\nThis has the new repository hierarchy, so you won't be able to pull\nfrom the online -devel ones. If no one reports any bugs in then I\nwill release tomorrow.\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\n- Robert\n```\n",
+    "body": "Attachment [trac_2655_devel_1.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_devel_1.patch) by @garyfurnish created at 2008-04-04 19:35:09\n\n```\nThis has the new repository hierarchy, so you won't be able to pull\nfrom the online -devel ones. If no one reports any bugs in then I\nwill release tomorrow.\n\nhttp://sage.math.washington.edu/home/robertwb/cython/\n\n- Robert\n```",
     "created_at": "2008-04-04T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -273,7 +273,6 @@ archive/issue_comments_018237.json:
 
 Attachment [trac_2655_devel_1.patch](tarball://root/attachments/some-uuid/ticket2655/trac_2655_devel_1.patch) by @garyfurnish created at 2008-04-04 19:35:09
 
-
 ```
 This has the new repository hierarchy, so you won't be able to pull
 from the online -devel ones. If no one reports any bugs in then I
@@ -283,7 +282,6 @@ http://sage.math.washington.edu/home/robertwb/cython/
 
 - Robert
 ```
-
 
 
 
@@ -406,7 +404,7 @@ Just to confirm, does this mean in the cython-0.9.6.13.spkg from above (minus th
 archive/issue_comments_018243.json:
 ```json
 {
-    "body": "Replying to [comment:15 robertwb]:\n> Just to confirm, does this mean in the cython-0.9.6.13.spkg from above (minus the build directory) so I needn't make a separate ticket for the new Cython? \n\nCorrect. The ticket's credit and description reflects this.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:15 robertwb]:\n> Just to confirm, does this mean in the cython-0.9.6.13.spkg from above (minus the build directory) so I needn't make a separate ticket for the new Cython? \n\n\nCorrect. The ticket's credit and description reflects this.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T22:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2655",
     "type": "issue_comment",
@@ -417,6 +415,7 @@ archive/issue_comments_018243.json:
 
 Replying to [comment:15 robertwb]:
 > Just to confirm, does this mean in the cython-0.9.6.13.spkg from above (minus the build directory) so I needn't make a separate ticket for the new Cython? 
+
 
 Correct. The ticket's credit and description reflects this.
 

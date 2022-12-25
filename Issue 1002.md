@@ -73,7 +73,7 @@ archive/issue_events_002755.json:
 archive/issue_comments_006080.json:
 ```json
 {
-    "body": "Bill Page writes:\n\n```\nWell, so far I can confirm only that the following modified spkg:\n\n  http://sage.math.washington.edu/home/page/clisp-2.43-alpha.spkg\n\nwhich is based on clisp-2.43 as distributed by the clisp project,\ninstalls in Sage running on sage.math and it can re-build (-f ...)\nmaxima-5.13.0.p1, axiom4sage-0.3.1 and the full version of FriCAS\n(rev: 134).\n\nI did only a fairly mimimal change to 'clisp-2.43-alpha.spkg' to\neliminate all patches and adapt to the slightly changed build process\n(no intermediate makemake step necessary). FFI is automatically\nincluded. It it quite possible that this version may not build on OSX\netc. however I know that the clisp developers have made some\nsignificant improvements in the build since 2.41. I would be glad in\nanyone can try this 'clisp-2.43-alpha.spkg' and let me know what works\nand what doesn't. Also please feel free to take the above and run with\nit. ;-)\n\n```\n\n\nI build tested on OSX 10.5 and clisp as well as maxima builds, doctesting at the moment. I will also test on OSX 10.4 PPC.\n\nThe spkg is about 3 MB larger than the 2.41 one? Can we shrink the spkg?\n\nCheers,\n\nMichael",
+    "body": "Bill Page writes:\n\n```\nWell, so far I can confirm only that the following modified spkg:\n\n  http://sage.math.washington.edu/home/page/clisp-2.43-alpha.spkg\n\nwhich is based on clisp-2.43 as distributed by the clisp project,\ninstalls in Sage running on sage.math and it can re-build (-f ...)\nmaxima-5.13.0.p1, axiom4sage-0.3.1 and the full version of FriCAS\n(rev: 134).\n\nI did only a fairly mimimal change to 'clisp-2.43-alpha.spkg' to\neliminate all patches and adapt to the slightly changed build process\n(no intermediate makemake step necessary). FFI is automatically\nincluded. It it quite possible that this version may not build on OSX\netc. however I know that the clisp developers have made some\nsignificant improvements in the build since 2.41. I would be glad in\nanyone can try this 'clisp-2.43-alpha.spkg' and let me know what works\nand what doesn't. Also please feel free to take the above and run with\nit. ;-)\n\n```\n\nI build tested on OSX 10.5 and clisp as well as maxima builds, doctesting at the moment. I will also test on OSX 10.4 PPC.\n\nThe spkg is about 3 MB larger than the 2.41 one? Can we shrink the spkg?\n\nCheers,\n\nMichael",
     "created_at": "2007-12-05T21:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1002",
     "type": "issue_comment",
@@ -105,7 +105,6 @@ and what doesn't. Also please feel free to take the above and run with
 it. ;-)
 
 ```
-
 
 I build tested on OSX 10.5 and clisp as well as maxima builds, doctesting at the moment. I will also test on OSX 10.4 PPC.
 
@@ -252,7 +251,7 @@ archive/issue_events_002757.json:
 archive/issue_comments_006086.json:
 ```json
 {
-    "body": "Carl Witty writes:\n\n```\nOn my Debian testing 32-bit x86 Linux laptop, the clisp build failed.\nThe last few lines of the build log were:\nrm -f dutch.lisp\nln -s /home/cwitty/sage-2.9.alpha0/spkg/build/clisp-2.43/src/src/\ndutch.lisp dutch.lisp\nrm -f deprecated.lisp\nln -s /home/cwitty/sage-2.9.alpha0/spkg/build/clisp-2.43/src/src/\ndeprecated.lisp deprecated.lisp\n./lisp.run -B . -N locale -E 1:1 -Efile UTF-8 -Eterminal UTF-8 -norc -\nm 1800KW -x \"(and (load \\\"init.lisp\\\") (sys::%saveinitmem)\n(ext::exit)) (ext::exit t)\"\nmake[2]: *** [interpreted.mem] Segmentation fault\nmake[2]: Leaving directory `/home/cwitty/sage-2.9.alpha0/spkg/build/\nclisp-2.43/build'\n\nRecompiling without optimization may have worked (the compiles of\nclisp and maxima have succeeded, but Sage as a whole isn't done\nbuilding yet, so I haven't tested).\n\nI did this by adding\n  export CFLAGS=-O0\nto spkg-install, before the call to configure; and editing src/src/\nmakemake.in to replace every instance of \"-O2\" with '-O0\".\n\n(I'm not sure if both of these changes were necessary.) \n```\n\n\nCheers,\n\nMichael",
+    "body": "Carl Witty writes:\n\n```\nOn my Debian testing 32-bit x86 Linux laptop, the clisp build failed.\nThe last few lines of the build log were:\nrm -f dutch.lisp\nln -s /home/cwitty/sage-2.9.alpha0/spkg/build/clisp-2.43/src/src/\ndutch.lisp dutch.lisp\nrm -f deprecated.lisp\nln -s /home/cwitty/sage-2.9.alpha0/spkg/build/clisp-2.43/src/src/\ndeprecated.lisp deprecated.lisp\n./lisp.run -B . -N locale -E 1:1 -Efile UTF-8 -Eterminal UTF-8 -norc -\nm 1800KW -x \"(and (load \\\"init.lisp\\\") (sys::%saveinitmem)\n(ext::exit)) (ext::exit t)\"\nmake[2]: *** [interpreted.mem] Segmentation fault\nmake[2]: Leaving directory `/home/cwitty/sage-2.9.alpha0/spkg/build/\nclisp-2.43/build'\n\nRecompiling without optimization may have worked (the compiles of\nclisp and maxima have succeeded, but Sage as a whole isn't done\nbuilding yet, so I haven't tested).\n\nI did this by adding\n  export CFLAGS=-O0\nto spkg-install, before the call to configure; and editing src/src/\nmakemake.in to replace every instance of \"-O2\" with '-O0\".\n\n(I'm not sure if both of these changes were necessary.) \n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-06T22:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1002",
     "type": "issue_comment",
@@ -290,7 +289,6 @@ makemake.in to replace every instance of "-O2" with '-O0".
 
 (I'm not sure if both of these changes were necessary.) 
 ```
-
 
 Cheers,
 

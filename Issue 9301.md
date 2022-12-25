@@ -185,7 +185,7 @@ Replaces previous patch - added trac # to commit message.
 archive/issue_comments_087479.json:
 ```json
 {
-    "body": "There is a fly in the ointment:\n\nDuring one of the last NetworkX upgrades, many common Sage graph constructors were modified to give empty dictionaries as labels instead of None. I have been intending to fix many of Sage's graph generators not to depend on NetworkX (since simply constructing a CGraph would be much quicker), and revert the edge situation back to having labels equal to `None`. But until that happens, this patch causes several failures:\n\n\n```\nsage -t -long \"devel/sage-main/sage/graphs/generic_graph.py\"\nsage -t -long \"devel/sage-main/sage/graphs/base/sparse_graph.pyx\"\nsage -t -long \"devel/sage-main/sage/graphs/graph.py\"\n```\n\n\nAlso, I've changed the \"Report Upstream\" since here we *are* the upstream.",
+    "body": "There is a fly in the ointment:\n\nDuring one of the last NetworkX upgrades, many common Sage graph constructors were modified to give empty dictionaries as labels instead of None. I have been intending to fix many of Sage's graph generators not to depend on NetworkX (since simply constructing a CGraph would be much quicker), and revert the edge situation back to having labels equal to `None`. But until that happens, this patch causes several failures:\n\n```\nsage -t -long \"devel/sage-main/sage/graphs/generic_graph.py\"\nsage -t -long \"devel/sage-main/sage/graphs/base/sparse_graph.pyx\"\nsage -t -long \"devel/sage-main/sage/graphs/graph.py\"\n```\n\nAlso, I've changed the \"Report Upstream\" since here we *are* the upstream.",
     "created_at": "2010-08-31T17:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9301",
     "type": "issue_comment",
@@ -198,13 +198,11 @@ There is a fly in the ointment:
 
 During one of the last NetworkX upgrades, many common Sage graph constructors were modified to give empty dictionaries as labels instead of None. I have been intending to fix many of Sage's graph generators not to depend on NetworkX (since simply constructing a CGraph would be much quicker), and revert the edge situation back to having labels equal to `None`. But until that happens, this patch causes several failures:
 
-
 ```
 sage -t -long "devel/sage-main/sage/graphs/generic_graph.py"
 sage -t -long "devel/sage-main/sage/graphs/base/sparse_graph.pyx"
 sage -t -long "devel/sage-main/sage/graphs/graph.py"
 ```
-
 
 Also, I've changed the "Report Upstream" since here we *are* the upstream.
 

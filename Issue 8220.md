@@ -146,7 +146,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072428.json:
 ```json
 {
-    "body": "There's one doctest that needs modifying after this patch is applied:\n\n```\nsage -t  \"devel/sage/sage/structure/factory.pyx\"            \n**********************************************************************\nFile \"/Users/mafwc/sage-4.3.2/devel/sage/sage/structure/factory.pyx\", line 234:\n    sage: key, _ = GF.create_key_and_extra_args(27, 'k'); key\nExpected:\n    (27, ('k',), None, None, '{}')\nGot:\n    (27, ('k',), 'conway', None, '{}')\n**********************************************************************\n```\n\nOtherwise it seems fine.",
+    "body": "There's one doctest that needs modifying after this patch is applied:\n\n```\nsage -t  \"devel/sage/sage/structure/factory.pyx\"            \n**********************************************************************\nFile \"/Users/mafwc/sage-4.3.2/devel/sage/sage/structure/factory.pyx\", line 234:\n    sage: key, _ = GF.create_key_and_extra_args(27, 'k'); key\nExpected:\n    (27, ('k',), None, None, '{}')\nGot:\n    (27, ('k',), 'conway', None, '{}')\n**********************************************************************\n```\nOtherwise it seems fine.",
     "created_at": "2010-02-11T08:08:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
@@ -168,7 +168,6 @@ Got:
     (27, ('k',), 'conway', None, '{}')
 **********************************************************************
 ```
-
 Otherwise it seems fine.
 
 
@@ -232,7 +231,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072432.json:
 ```json
 {
-    "body": "Replying to [comment:4 fwclarke]:\n> There's one doctest that needs modifying after this patch is applied\n\nOups, sorry, I don't knw how I missed that one...\nI made a tiny patch to correct this.",
+    "body": "Replying to [comment:4 fwclarke]:\n> There's one doctest that needs modifying after this patch is applied\n\n\nOups, sorry, I don't knw how I missed that one...\nI made a tiny patch to correct this.",
     "created_at": "2010-02-11T08:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
@@ -243,6 +242,7 @@ archive/issue_comments_072432.json:
 
 Replying to [comment:4 fwclarke]:
 > There's one doctest that needs modifying after this patch is applied
+
 
 Oups, sorry, I don't knw how I missed that one...
 I made a tiny patch to correct this.

@@ -3,7 +3,7 @@
 archive/issues_002859.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nTry the following:\n\n\n```\nplot(vector((0,0,-1)))\n```\n\n\nThe resulting vector points up, but should point down.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2859\n\n",
+    "body": "Assignee: @williamstein\n\nTry the following:\n\n```\nplot(vector((0,0,-1)))\n```\n\nThe resulting vector points up, but should point down.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2859\n\n",
     "created_at": "2008-04-08T21:10:09Z",
     "labels": [
         "component: graphics",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 Try the following:
 
-
 ```
 plot(vector((0,0,-1)))
 ```
-
 
 The resulting vector points up, but should point down.
 
@@ -39,7 +37,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2859
 archive/issue_comments_019574.json:
 ```json
 {
-    "body": "The problem is in arrow3d:\n\n\n```\nsage: arrow3d((0,0,0), (0,0,-1))\n*points up*\n```\n",
+    "body": "The problem is in arrow3d:\n\n```\nsage: arrow3d((0,0,0), (0,0,-1))\n*points up*\n```",
     "created_at": "2008-04-08T21:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
@@ -50,12 +48,10 @@ archive/issue_comments_019574.json:
 
 The problem is in arrow3d:
 
-
 ```
 sage: arrow3d((0,0,0), (0,0,-1))
 *points up*
 ```
-
 
 
 

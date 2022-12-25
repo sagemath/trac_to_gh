@@ -3,7 +3,7 @@
 archive/issues_000915.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nKeywords: LinBox gmp\n\nTo quote William from linbox-use:\n\n```\nI would also like to know the answer to this.  In SAGE were currently do this\nconversion by not using PID_Integer, and instead using an old header file\nfrom an old version of Linbox that defined a GMP Integer wrapper type.\nFast conversion to/from mpz_t is critical for what we're doing.\n```\n\nDave Saunders came up with the following suggestion:\n\n```\nPID_integer ZZ;\nSparseMatrix<PID_integer> A (ZZ,m,m);  //defines empty sparse matrix\n\nmpz_t x;\nmpz_init_set_ui(x, 5);\n\n\n// Assign x into A, avoiding conversions and double copy.\nmpz_set ( SpyInteger::get_mpz(A.refEntry(1,2)), x);\n\nZZ.write(std::cout, A.getEntry(1,2)) << std::endl;\n\n-dave\n\nPS.  A more direct function could be desirable.\n```\n\nThis ticket is related to #824. For details see http://groups.google.com/group/linbox-use/t/7a687e8e5a5f4a81\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/915\n\n",
+    "body": "Assignee: mabshoff\n\nKeywords: LinBox gmp\n\nTo quote William from linbox-use:\n\n```\nI would also like to know the answer to this.  In SAGE were currently do this\nconversion by not using PID_Integer, and instead using an old header file\nfrom an old version of Linbox that defined a GMP Integer wrapper type.\nFast conversion to/from mpz_t is critical for what we're doing.\n```\nDave Saunders came up with the following suggestion:\n\n```\nPID_integer ZZ;\nSparseMatrix<PID_integer> A (ZZ,m,m);  //defines empty sparse matrix\n\nmpz_t x;\nmpz_init_set_ui(x, 5);\n\n\n// Assign x into A, avoiding conversions and double copy.\nmpz_set ( SpyInteger::get_mpz(A.refEntry(1,2)), x);\n\nZZ.write(std::cout, A.getEntry(1,2)) << std::endl;\n\n-dave\n\nPS.  A more direct function could be desirable.\n```\nThis ticket is related to #824. For details see http://groups.google.com/group/linbox-use/t/7a687e8e5a5f4a81\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/915\n\n",
     "created_at": "2007-10-18T03:04:35Z",
     "labels": [
         "component: packages: standard",
@@ -28,7 +28,6 @@ conversion by not using PID_Integer, and instead using an old header file
 from an old version of Linbox that defined a GMP Integer wrapper type.
 Fast conversion to/from mpz_t is critical for what we're doing.
 ```
-
 Dave Saunders came up with the following suggestion:
 
 ```
@@ -48,7 +47,6 @@ ZZ.write(std::cout, A.getEntry(1,2)) << std::endl;
 
 PS.  A more direct function could be desirable.
 ```
-
 This ticket is related to #824. For details see http://groups.google.com/group/linbox-use/t/7a687e8e5a5f4a81
 
 Cheers,

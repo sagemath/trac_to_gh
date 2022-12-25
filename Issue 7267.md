@@ -58,7 +58,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060265.json:
 ```json
 {
-    "body": "There's a patch at\n\n* http://sage.math.washington.edu/home/mpatel/trac/7267/trac_7267_color_choosers.patch\n\nThe patch \n\n* Adds both [ColorPicker](http://www.eyecon.ro/colorpicker/) and [jPicker](http://www.digitalmagicpro.com/jPicker/).\n* Adds a dedicated `color_selector()` `interact` control.  The keyword option\n  * `widget` selects the widget to render.  The choices are `'farbtastic'` (the default), `'jpicker'`, and `'colorpicker'`.\n  * `hide_box` (default: `False`) sets whether the input box is visible.\n\nHere's a compact example:\n\n```python\n@interact\ndef _(color=color_selector((1,0,1), label='', widget='jpicker', hide_box=True)):\n    show(plot(x / (8/7 + sin(x)), (x, -50, 50), fill=True, fillcolor=color))\n```\n\n\nRemarks:\n\n* jPicker adds itself as a (grand)<sup>n</sup>-child of the output cell, so it's confined to that area.  This is a problem, e.g., when `auto_update=False` and a plot disappears.  The smarter ColorPicker appends itself to `document.body`, similarly to jQuery UI's dialogs.\n\n* Continuously or rapidly changing *any* of the widgets sends so many requests to the server that a rendered `interact`'s final color may not match the final selected color.  The server does receive the final color, according to a print statement in `twist.Worksheet_eval`.  I'm not sure what happens to the corresponding output.  Anyway, I think this is an important but separate problem.\n\n* In a future ticket, I'll set up one of the new choosers for user, worksheet, and notebook settings pages.  See `sagenb.notebook.conf.Configuration.html_table()` and `server_conf` for details.",
+    "body": "There's a patch at\n\n* http://sage.math.washington.edu/home/mpatel/trac/7267/trac_7267_color_choosers.patch\n\nThe patch \n\n* Adds both [ColorPicker](http://www.eyecon.ro/colorpicker/) and [jPicker](http://www.digitalmagicpro.com/jPicker/).\n* Adds a dedicated `color_selector()` `interact` control.  The keyword option\n  * `widget` selects the widget to render.  The choices are `'farbtastic'` (the default), `'jpicker'`, and `'colorpicker'`.\n  * `hide_box` (default: `False`) sets whether the input box is visible.\n\nHere's a compact example:\n\n```python\n@interact\ndef _(color=color_selector((1,0,1), label='', widget='jpicker', hide_box=True)):\n    show(plot(x / (8/7 + sin(x)), (x, -50, 50), fill=True, fillcolor=color))\n```\n\nRemarks:\n\n* jPicker adds itself as a (grand)<sup>n</sup>-child of the output cell, so it's confined to that area.  This is a problem, e.g., when `auto_update=False` and a plot disappears.  The smarter ColorPicker appends itself to `document.body`, similarly to jQuery UI's dialogs.\n\n* Continuously or rapidly changing *any* of the widgets sends so many requests to the server that a rendered `interact`'s final color may not match the final selected color.  The server does receive the final color, according to a print statement in `twist.Worksheet_eval`.  I'm not sure what happens to the corresponding output.  Anyway, I think this is an important but separate problem.\n\n* In a future ticket, I'll set up one of the new choosers for user, worksheet, and notebook settings pages.  See `sagenb.notebook.conf.Configuration.html_table()` and `server_conf` for details.",
     "created_at": "2009-11-08T05:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ def _(color=color_selector((1,0,1), label='', widget='jpicker', hide_box=True)):
     show(plot(x / (8/7 + sin(x)), (x, -50, 50), fill=True, fillcolor=color))
 ```
 
-
 Remarks:
 
 * jPicker adds itself as a (grand)<sup>n</sup>-child of the output cell, so it's confined to that area.  This is a problem, e.g., when `auto_update=False` and a plot disappears.  The smarter ColorPicker appends itself to `document.body`, similarly to jQuery UI's dialogs.
@@ -102,7 +101,7 @@ Remarks:
 archive/issue_comments_060266.json:
 ```json
 {
-    "body": "If it helps, this patch is\n\n```\ntrac_7316-sageinspect_defn.patch\ntrac_7318-sphinxify_confdir.patch\ntrac_7309-javascript-sage_v2.patch\ntrac_7310-modals.6.patch\ntrac_7332-css-escape.2.patch\ntrac_sagenb-7341.patch\ntrac_sagenb-7346.patch\ntrac_7339-sagenb_cell_bugs.patch\ntrac_7343-selenium-tests.4.patch\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7267_color_choosers.patch                   # HERE!\ntrac_7404-css_worksheet_title.patch\ntrac_7385-renaming-published-worksheets.patch\ntrac_7384-sphinxify-docstrings.patch\ntrac_7354-jsmath_undo_revision.patch\ntrac_7322-jsmath_upgrade.patch\ntrac_7106-paren_match_doc.patch\n```\n\nin my sagenb patch queue.  But I think the only potential conflict is in `sagenb/data/sage/html/notebook/head.tmpl`.",
+    "body": "If it helps, this patch is\n\n```\ntrac_7316-sageinspect_defn.patch\ntrac_7318-sphinxify_confdir.patch\ntrac_7309-javascript-sage_v2.patch\ntrac_7310-modals.6.patch\ntrac_7332-css-escape.2.patch\ntrac_sagenb-7341.patch\ntrac_sagenb-7346.patch\ntrac_7339-sagenb_cell_bugs.patch\ntrac_7343-selenium-tests.4.patch\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7267_color_choosers.patch                   # HERE!\ntrac_7404-css_worksheet_title.patch\ntrac_7385-renaming-published-worksheets.patch\ntrac_7384-sphinxify-docstrings.patch\ntrac_7354-jsmath_undo_revision.patch\ntrac_7322-jsmath_upgrade.patch\ntrac_7106-paren_match_doc.patch\n```\nin my sagenb patch queue.  But I think the only potential conflict is in `sagenb/data/sage/html/notebook/head.tmpl`.",
     "created_at": "2009-11-08T05:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_comment",
@@ -133,7 +132,6 @@ trac_7354-jsmath_undo_revision.patch
 trac_7322-jsmath_upgrade.patch
 trac_7106-paren_match_doc.patch
 ```
-
 in my sagenb patch queue.  But I think the only potential conflict is in `sagenb/data/sage/html/notebook/head.tmpl`.
 
 
@@ -256,7 +254,7 @@ For what it's worth, here's what I have in mind:
 archive/issue_comments_060272.json:
 ```json
 {
-    "body": "Here is a list of files modified by this patch:\n\n\n```\nM sagenb/data/sage/html/notebook/head.tmpl\nM sagenb/notebook/all.py\nM sagenb/notebook/interact.py\n? gosage\n? sagenb/data/jquery/plugins/colorpicker/css/colorpicker.css\n? sagenb/data/jquery/plugins/colorpicker/css/layout.css\n? sagenb/data/jquery/plugins/colorpicker/images/blank.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_background.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hex.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_h.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_s.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_indic.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_overlay.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_g.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_r.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_select.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_submit.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_background.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hex.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_h.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_s.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_indic.gif\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_g.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_r.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_submit.png\n? sagenb/data/jquery/plugins/colorpicker/images/select.png\n? sagenb/data/jquery/plugins/colorpicker/images/select2.png\n? sagenb/data/jquery/plugins/colorpicker/images/slider.png\n? sagenb/data/jquery/plugins/colorpicker/index.html\n? sagenb/data/jquery/plugins/colorpicker/js/colorpicker.js\n? sagenb/data/jquery/plugins/colorpicker/js/colorpicker.min.js\n? sagenb/data/jquery/plugins/colorpicker/js/eye.js\n? sagenb/data/jquery/plugins/colorpicker/js/jquery.js\n? sagenb/data/jquery/plugins/colorpicker/js/layout.js\n? sagenb/data/jquery/plugins/colorpicker/js/utils.js\n? sagenb/data/jquery/plugins/jpicker/css/jPicker-1.0.11.css\n? sagenb/data/jquery/plugins/jpicker/images/Bars.png\n? sagenb/data/jquery/plugins/jpicker/images/Maps.png\n? sagenb/data/jquery/plugins/jpicker/images/bar-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/map-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/mappoint.gif\n? sagenb/data/jquery/plugins/jpicker/images/picker.gif\n? sagenb/data/jquery/plugins/jpicker/images/preview-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/rangearrows.gif\n? sagenb/data/jquery/plugins/jpicker/images/rangearrows2.gif\n? sagenb/data/jquery/plugins/jpicker/jpicker-1.0.11.js\n? sagenb/data/jquery/plugins/jpicker/jpicker-1.0.11.min.js\n```\n",
+    "body": "Here is a list of files modified by this patch:\n\n```\nM sagenb/data/sage/html/notebook/head.tmpl\nM sagenb/notebook/all.py\nM sagenb/notebook/interact.py\n? gosage\n? sagenb/data/jquery/plugins/colorpicker/css/colorpicker.css\n? sagenb/data/jquery/plugins/colorpicker/css/layout.css\n? sagenb/data/jquery/plugins/colorpicker/images/blank.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_background.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hex.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_h.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_hsb_s.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_indic.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_overlay.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_g.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_rgb_r.png\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_select.gif\n? sagenb/data/jquery/plugins/colorpicker/images/colorpicker_submit.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_background.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hex.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_h.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_hsb_s.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_indic.gif\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_b.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_g.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_rgb_r.png\n? sagenb/data/jquery/plugins/colorpicker/images/custom_submit.png\n? sagenb/data/jquery/plugins/colorpicker/images/select.png\n? sagenb/data/jquery/plugins/colorpicker/images/select2.png\n? sagenb/data/jquery/plugins/colorpicker/images/slider.png\n? sagenb/data/jquery/plugins/colorpicker/index.html\n? sagenb/data/jquery/plugins/colorpicker/js/colorpicker.js\n? sagenb/data/jquery/plugins/colorpicker/js/colorpicker.min.js\n? sagenb/data/jquery/plugins/colorpicker/js/eye.js\n? sagenb/data/jquery/plugins/colorpicker/js/jquery.js\n? sagenb/data/jquery/plugins/colorpicker/js/layout.js\n? sagenb/data/jquery/plugins/colorpicker/js/utils.js\n? sagenb/data/jquery/plugins/jpicker/css/jPicker-1.0.11.css\n? sagenb/data/jquery/plugins/jpicker/images/Bars.png\n? sagenb/data/jquery/plugins/jpicker/images/Maps.png\n? sagenb/data/jquery/plugins/jpicker/images/bar-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/map-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/mappoint.gif\n? sagenb/data/jquery/plugins/jpicker/images/picker.gif\n? sagenb/data/jquery/plugins/jpicker/images/preview-opacity.png\n? sagenb/data/jquery/plugins/jpicker/images/rangearrows.gif\n? sagenb/data/jquery/plugins/jpicker/images/rangearrows2.gif\n? sagenb/data/jquery/plugins/jpicker/jpicker-1.0.11.js\n? sagenb/data/jquery/plugins/jpicker/jpicker-1.0.11.min.js\n```",
     "created_at": "2009-12-08T23:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_comment",
@@ -266,7 +264,6 @@ archive/issue_comments_060272.json:
 ```
 
 Here is a list of files modified by this patch:
-
 
 ```
 M sagenb/data/sage/html/notebook/head.tmpl
@@ -324,7 +321,6 @@ M sagenb/notebook/interact.py
 
 
 
-
 ---
 
 archive/issue_comments_060273.json:
@@ -348,7 +344,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_060274.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n1. General remark/question.  Is there any way we can get rid of stuff like this, where the exact version number is explicitly given:\n\n```\n+<link rel=\"stylesheet\" href=\"/javascript/jquery/plugins/jpicker/css/jPicker-1.0.11.css\" type=\"text/css\" />\n+<script type=\"text/javascript\" src=\"/javascript/jquery/plugins/jpicker/jpicker-1.0.11.min.js\"></script>\n```\n\nThis is I think happening more and more in the code, and I think it makes it difficult to upgrade the plugins.  Could we use symbolic links or something else that is clever (perhaps in twist.py) to get around this?\n\nI don't think this is specific to this ticket, so I'm not considering this in refereeing this patch. \n\n...\n\nActually, WOW this is a really nice patch!   It must have been quite a lot of work, and really gives the notebook some real added depth.  Thanks!\n\nEverything looks good.  It works fine. \n\nWilliam",
+    "body": "REFEREE REPORT:\n\n1. General remark/question.  Is there any way we can get rid of stuff like this, where the exact version number is explicitly given:\n\n```\n+<link rel=\"stylesheet\" href=\"/javascript/jquery/plugins/jpicker/css/jPicker-1.0.11.css\" type=\"text/css\" />\n+<script type=\"text/javascript\" src=\"/javascript/jquery/plugins/jpicker/jpicker-1.0.11.min.js\"></script>\n```\nThis is I think happening more and more in the code, and I think it makes it difficult to upgrade the plugins.  Could we use symbolic links or something else that is clever (perhaps in twist.py) to get around this?\n\nI don't think this is specific to this ticket, so I'm not considering this in refereeing this patch. \n\n...\n\nActually, WOW this is a really nice patch!   It must have been quite a lot of work, and really gives the notebook some real added depth.  Thanks!\n\nEverything looks good.  It works fine. \n\nWilliam",
     "created_at": "2009-12-08T23:57:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_comment",
@@ -365,7 +361,6 @@ REFEREE REPORT:
 +<link rel="stylesheet" href="/javascript/jquery/plugins/jpicker/css/jPicker-1.0.11.css" type="text/css" />
 +<script type="text/javascript" src="/javascript/jquery/plugins/jpicker/jpicker-1.0.11.min.js"></script>
 ```
-
 This is I think happening more and more in the code, and I think it makes it difficult to upgrade the plugins.  Could we use symbolic links or something else that is clever (perhaps in twist.py) to get around this?
 
 I don't think this is specific to this ticket, so I'm not considering this in refereeing this patch. 
@@ -455,7 +450,7 @@ Thanks!  On version numbers:  We could use symbolic links, but I don't think the
 archive/issue_comments_060278.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> Thanks!  On version numbers:  We could use symbolic links, but I don't \n> think they're available on Windows (cf. [os](http://docs.python.org/library/os.html), #6614).\n\nThe sage notebook doesn't work on Windows yet though....  However, another option is just to rename the installed library folder without the version numbers (so no symbolic link is needed).  As long as we include a README things should be clear.",
+    "body": "Replying to [comment:12 mpatel]:\n> Thanks!  On version numbers:  We could use symbolic links, but I don't \n> think they're available on Windows (cf. [os](http://docs.python.org/library/os.html), #6614).\n\n\nThe sage notebook doesn't work on Windows yet though....  However, another option is just to rename the installed library folder without the version numbers (so no symbolic link is needed).  As long as we include a README things should be clear.",
     "created_at": "2009-12-10T06:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7267",
     "type": "issue_comment",
@@ -467,5 +462,6 @@ archive/issue_comments_060278.json:
 Replying to [comment:12 mpatel]:
 > Thanks!  On version numbers:  We could use symbolic links, but I don't 
 > think they're available on Windows (cf. [os](http://docs.python.org/library/os.html), #6614).
+
 
 The sage notebook doesn't work on Windows yet though....  However, another option is just to rename the installed library folder without the version numbers (so no symbolic link is needed).  As long as we include a README things should be clear.

@@ -3,7 +3,7 @@
 archive/issues_005683.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: inverse\n\nWe get this: \n\n\n```\nsage: R=IntegerModRing(8)\nsage: m=matrix(R,2,[2,1,3,3]);\nsage: m.inverse()\nTraceback (most recent call last):\n...\nTypeError: self must be an integral domain.\n```\n\n\nThe inverse operation for matrices over non integral domain, in particular for over integer mod rings, is a missing feature. Somebody should *definitely* implement this.  A\nfirst reasonable thing would be \"lift to ZZ, invert, reduce\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5683\n\n",
+    "body": "Assignee: somebody\n\nKeywords: inverse\n\nWe get this: \n\n```\nsage: R=IntegerModRing(8)\nsage: m=matrix(R,2,[2,1,3,3]);\nsage: m.inverse()\nTraceback (most recent call last):\n...\nTypeError: self must be an integral domain.\n```\n\nThe inverse operation for matrices over non integral domain, in particular for over integer mod rings, is a missing feature. Somebody should *definitely* implement this.  A\nfirst reasonable thing would be \"lift to ZZ, invert, reduce\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5683\n\n",
     "created_at": "2009-04-04T20:33:09Z",
     "labels": [
         "component: linear algebra",
@@ -22,7 +22,6 @@ Keywords: inverse
 
 We get this: 
 
-
 ```
 sage: R=IntegerModRing(8)
 sage: m=matrix(R,2,[2,1,3,3]);
@@ -31,7 +30,6 @@ Traceback (most recent call last):
 ...
 TypeError: self must be an integral domain.
 ```
-
 
 The inverse operation for matrices over non integral domain, in particular for over integer mod rings, is a missing feature. Somebody should *definitely* implement this.  A
 first reasonable thing would be "lift to ZZ, invert, reduce".
@@ -127,7 +125,7 @@ You have a slightly misformatted docstring which the second patch fixes.
 archive/issue_comments_044360.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> You have a slightly misformatted docstring which the second patch fixes.\n> \n> (This is another use of the patches at #5653: you can view the Sphinx version of an individual docstring to see if it's formatted correctly.  This even works for docstrings which don't appear in the reference manual, such as for functions like `__invert__` which start with an underscore.)\n\nThat sounds very useful.  normally I never use the notebook interface, but with this I can see myself using it to test docstring formats if nothing else!",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> You have a slightly misformatted docstring which the second patch fixes.\n> \n> (This is another use of the patches at #5653: you can view the Sphinx version of an individual docstring to see if it's formatted correctly.  This even works for docstrings which don't appear in the reference manual, such as for functions like `__invert__` which start with an underscore.)\n\n\nThat sounds very useful.  normally I never use the notebook interface, but with this I can see myself using it to test docstring formats if nothing else!",
     "created_at": "2009-04-05T17:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5683",
     "type": "issue_comment",
@@ -140,6 +138,7 @@ Replying to [comment:3 jhpalmieri]:
 > You have a slightly misformatted docstring which the second patch fixes.
 > 
 > (This is another use of the patches at #5653: you can view the Sphinx version of an individual docstring to see if it's formatted correctly.  This even works for docstrings which don't appear in the reference manual, such as for functions like `__invert__` which start with an underscore.)
+
 
 That sounds very useful.  normally I never use the notebook interface, but with this I can see myself using it to test docstring formats if nothing else!
 

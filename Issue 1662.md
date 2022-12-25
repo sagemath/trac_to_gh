@@ -3,7 +3,7 @@
 archive/issues_001662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nBackground:\nFor the analysis of some experimental data I am using sage's notebook.\nseveral functions that I have written work together to turn the input\ndatafile from a silly propitiatory program into a nice simple text\nfile of x, y and z values separated by 1 space\ne.g.\n17 17 17\n17 17 18\n17 18 19\n18 19 16\n19 16 16\n16 16 18\n16 18 18\n18 18 20\nfor that particular dataset it goes on for 668 lines in the same vein.\n\nAfter coaxing these files into existence with their nice simple\ncoordinates, I want to plot them using gnuplot. Because I know this\nworks with both the version of gnuplot I have installed on my Ubuntu\n7.10 computer and the version contained in the optional sage package.\ngnuplot creates nice interactive 3D XYZ scatter graphs using these\nfiles that have been created through the sage notebook.\nthe command: splot '/home/user/dropexp/xyz_8.txt'\ntyped at the interactive gnuplot command line causes the nice\ninteractive graph to be displayed.\nNow I want to do this from the sage notebook and I can almost do it.\nby modifying ~/bin/sage-2.8.15/devel/sage-main/sage/interfaces/\ngnuplot.py\nhttp://max.randor.googlepages.com/gnuplot.py\nhttp://max.randor.googlepages.com/gnuplot.patch\nand replacing a %s with a '%s' (This stops it doing what it normally\ndoes and _should_ make it do what I want it to do (I hope))\nI can do:\n\"\ng = Gnuplot()\ng.plot3d('/home/user/dropexp/xyz_8.txt')\n\ngnuplot> splot '/home/user/dropexp/xyz_8.txt'\n                                              ^\n        \"/home/user/.sage//temp/computer/13838//gnuplot\", line 15:\nAll points z value undefined\n\"\nhowever as you can see from: http://max.randor.googlepages.com/xyz_8.txt\nthere are z values, and exactly the same command (splot '/home/user/\ndropexp/xyz_8.txt') works when used at the gnuplot command line.\nsomewhere along the line perhaps in the options that gnuplot uses the\nz values have been removed or ignored.\nbefore I modified gnuplot.py I got an error message telling me that my\nfile was not a function, my change fixed that error to give me another\none.\nSo it does not work.\nwhich is _annoying_\n\nI was wondering if anyone has any ideas that might help?\n\nThank You\n\n---\n\nShortly after posting I worked out how to fix it myself.\nSorry.\nAs a consequence of editing the wrong file I can no be sure that the\npatch file is for the same file as sear distributes, but it is close.\n```\n\n\nhttp://max.randor.googlepages.com/gnuplot1.py\n\nhttp://max.randor.googlepages.com/gnuplot1.patch\n\n\n```\nTo make it work I just had to do a few more modifications to the\ngnuplot.py file to make it capable of taking x,y and z values.\nHurray for open source.\n\nThank you.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1662\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nBackground:\nFor the analysis of some experimental data I am using sage's notebook.\nseveral functions that I have written work together to turn the input\ndatafile from a silly propitiatory program into a nice simple text\nfile of x, y and z values separated by 1 space\ne.g.\n17 17 17\n17 17 18\n17 18 19\n18 19 16\n19 16 16\n16 16 18\n16 18 18\n18 18 20\nfor that particular dataset it goes on for 668 lines in the same vein.\n\nAfter coaxing these files into existence with their nice simple\ncoordinates, I want to plot them using gnuplot. Because I know this\nworks with both the version of gnuplot I have installed on my Ubuntu\n7.10 computer and the version contained in the optional sage package.\ngnuplot creates nice interactive 3D XYZ scatter graphs using these\nfiles that have been created through the sage notebook.\nthe command: splot '/home/user/dropexp/xyz_8.txt'\ntyped at the interactive gnuplot command line causes the nice\ninteractive graph to be displayed.\nNow I want to do this from the sage notebook and I can almost do it.\nby modifying ~/bin/sage-2.8.15/devel/sage-main/sage/interfaces/\ngnuplot.py\nhttp://max.randor.googlepages.com/gnuplot.py\nhttp://max.randor.googlepages.com/gnuplot.patch\nand replacing a %s with a '%s' (This stops it doing what it normally\ndoes and _should_ make it do what I want it to do (I hope))\nI can do:\n\"\ng = Gnuplot()\ng.plot3d('/home/user/dropexp/xyz_8.txt')\n\ngnuplot> splot '/home/user/dropexp/xyz_8.txt'\n                                              ^\n        \"/home/user/.sage//temp/computer/13838//gnuplot\", line 15:\nAll points z value undefined\n\"\nhowever as you can see from: http://max.randor.googlepages.com/xyz_8.txt\nthere are z values, and exactly the same command (splot '/home/user/\ndropexp/xyz_8.txt') works when used at the gnuplot command line.\nsomewhere along the line perhaps in the options that gnuplot uses the\nz values have been removed or ignored.\nbefore I modified gnuplot.py I got an error message telling me that my\nfile was not a function, my change fixed that error to give me another\none.\nSo it does not work.\nwhich is _annoying_\n\nI was wondering if anyone has any ideas that might help?\n\nThank You\n\n---\n\nShortly after posting I worked out how to fix it myself.\nSorry.\nAs a consequence of editing the wrong file I can no be sure that the\npatch file is for the same file as sear distributes, but it is close.\n```\n\nhttp://max.randor.googlepages.com/gnuplot1.py\n\nhttp://max.randor.googlepages.com/gnuplot1.patch\n\n```\nTo make it work I just had to do a few more modifications to the\ngnuplot.py file to make it capable of taking x,y and z values.\nHurray for open source.\n\nThank you.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1662\n\n",
     "created_at": "2008-01-02T23:56:46Z",
     "labels": [
         "component: graphics",
@@ -17,7 +17,6 @@ archive/issues_001662.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -86,11 +85,9 @@ As a consequence of editing the wrong file I can no be sure that the
 patch file is for the same file as sear distributes, but it is close.
 ```
 
-
 http://max.randor.googlepages.com/gnuplot1.py
 
 http://max.randor.googlepages.com/gnuplot1.patch
-
 
 ```
 To make it work I just had to do a few more modifications to the
@@ -99,7 +96,6 @@ Hurray for open source.
 
 Thank you.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1662
 
@@ -189,7 +185,7 @@ archive/issue_events_004104.json:
 archive/issue_comments_010535.json:
 ```json
 {
-    "body": "\n```\n\nDon't use the changes I made, something much cleverer is needed to\nactually fix it, my changes break what worked to make what I wanted to\nwork work. So it plots 3D datafiles, but not 3D functions.\nThe function needs to decide whether it is a datafile or a function\n(or perhaps an array or something else) and do different things\ndepending on what it is passed.\n```\n",
+    "body": "```\n\nDon't use the changes I made, something much cleverer is needed to\nactually fix it, my changes break what worked to make what I wanted to\nwork work. So it plots 3D datafiles, but not 3D functions.\nThe function needs to decide whether it is a datafile or a function\n(or perhaps an array or something else) and do different things\ndepending on what it is passed.\n```",
     "created_at": "2008-01-04T09:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1662",
     "type": "issue_comment",
@@ -197,7 +193,6 @@ archive/issue_comments_010535.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 
@@ -208,7 +203,6 @@ The function needs to decide whether it is a datafile or a function
 (or perhaps an array or something else) and do different things
 depending on what it is passed.
 ```
-
 
 
 

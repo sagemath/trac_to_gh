@@ -72,7 +72,7 @@ Michael
 archive/issue_comments_041799.json:
 ```json
 {
-    "body": "I think the problem is that not enough factors are included.  Actually, there are two problems: in the base case, it should return n, not 1; that is, make this change:\n\n```\n         # base case\n         if 0 < n < k:\n-            return ONE\n+            return n\n```\n\nAfter making this change, I'm still getting the wrong answers for `a.multifactorial(3)` whenever a is congruent to 2 mod 3 (except for a=2), and for `a.multifactorial(4)` whenever a is congruent to 2 or 3 mod 4 (except for a=2,3).  It seems that not enough factors are used; for example, 10.multifactorial(4) should be 10 x 6 x 2 = 120, but Sage computes it as 10 x 6 = 60.\n\nIf we fix this, we can put in doctests like the following:\n\n```\nsage: L = sloane_sequence(6882)[2]  # optional - internet\nSearching Sloane's online database...\nsage: all([Integer(a).multifactorial(2) == L[a] for a in range(1,20)])    # optional - internet\nTrue\n```\n",
+    "body": "I think the problem is that not enough factors are included.  Actually, there are two problems: in the base case, it should return n, not 1; that is, make this change:\n\n```\n         # base case\n         if 0 < n < k:\n-            return ONE\n+            return n\n```\nAfter making this change, I'm still getting the wrong answers for `a.multifactorial(3)` whenever a is congruent to 2 mod 3 (except for a=2), and for `a.multifactorial(4)` whenever a is congruent to 2 or 3 mod 4 (except for a=2,3).  It seems that not enough factors are used; for example, 10.multifactorial(4) should be 10 x 6 x 2 = 120, but Sage computes it as 10 x 6 = 60.\n\nIf we fix this, we can put in doctests like the following:\n\n```\nsage: L = sloane_sequence(6882)[2]  # optional - internet\nSearching Sloane's online database...\nsage: all([Integer(a).multifactorial(2) == L[a] for a in range(1,20)])    # optional - internet\nTrue\n```",
     "created_at": "2009-07-22T02:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ I think the problem is that not enough factors are included.  Actually, there ar
 -            return ONE
 +            return n
 ```
-
 After making this change, I'm still getting the wrong answers for `a.multifactorial(3)` whenever a is congruent to 2 mod 3 (except for a=2), and for `a.multifactorial(4)` whenever a is congruent to 2 or 3 mod 4 (except for a=2,3).  It seems that not enough factors are used; for example, 10.multifactorial(4) should be 10 x 6 x 2 = 120, but Sage computes it as 10 x 6 = 60.
 
 If we fix this, we can put in doctests like the following:
@@ -100,7 +99,6 @@ Searching Sloane's online database...
 sage: all([Integer(a).multifactorial(2) == L[a] for a in range(1,20)])    # optional - internet
 True
 ```
-
 
 
 
@@ -203,7 +201,7 @@ I would certainly want (5).multifactorial(3) to be 10 and not 5.
 archive/issue_comments_041805.json:
 ```json
 {
-    "body": "Replying to [comment:5 robertwb]:\n> I needed the double factorial for something (I can't even remember what now) so I just wrote this. It sounds like there's several competing definitions, but wikipedia is not necessarily the most authoritative. \n(I think it was for making sure gamma(3/2) etc. were correct.)\n> \n> I would ask on sage-combinat what the \"right\" definition is, they're more likely to know. \n\nBut one should definitely document that there isn't a universally agreed-upon definition.\n\nCan you indicate what one would change in integer.pyx?   Changing things that seem right yield horrible allocation errors.",
+    "body": "Replying to [comment:5 robertwb]:\n> I needed the double factorial for something (I can't even remember what now) so I just wrote this. It sounds like there's several competing definitions, but wikipedia is not necessarily the most authoritative. \n\n(I think it was for making sure gamma(3/2) etc. were correct.)\n> \n> I would ask on sage-combinat what the \"right\" definition is, they're more likely to know. \n\n\nBut one should definitely document that there isn't a universally agreed-upon definition.\n\nCan you indicate what one would change in integer.pyx?   Changing things that seem right yield horrible allocation errors.",
     "created_at": "2009-09-30T17:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -214,9 +212,11 @@ archive/issue_comments_041805.json:
 
 Replying to [comment:5 robertwb]:
 > I needed the double factorial for something (I can't even remember what now) so I just wrote this. It sounds like there's several competing definitions, but wikipedia is not necessarily the most authoritative. 
+
 (I think it was for making sure gamma(3/2) etc. were correct.)
 > 
 > I would ask on sage-combinat what the "right" definition is, they're more likely to know. 
+
 
 But one should definitely document that there isn't a universally agreed-upon definition.
 
@@ -385,7 +385,7 @@ https://github.com/sagemath/sage/pull/52
 archive/issue_comments_041807.json:
 ```json
 {
-    "body": "Replying to [comment:14 prateek.cs14]:\n> I have tried to redefine multifactorial function.\n> Please review.\n> https://github.com/sagemath/sage/pull/52\n\nA few notes:\n- Python is notoriously (and if you believe some of Guido's commentary basicaly intentionally so) bad at recursion, so you should avoid it unless your really need it. Here you don't (and the current implementation carefully avoids deep recursion)\n- The current implementation does quite a bit of balancing of factors to ensure good multiplication performance. From what I see on your github branch, you've tacked on a new recursion case to what is called \"reflection\" there, essentially making the main body (everything below it) unreachable. That code looks like it's pretty carefully written. If you want to throw it out you should do so (and not just leave it in there as unreachable code) but then you should back up your proposal with some serious timings that show your code performs better under all circumstances.\n- Whenever you make a change like this you should adjust the documentation as well, ensuring that the new behaviour is reflected in the documentation and is properly tested (probably adding some new tests that differentiate between old and new behaviour.\n- Github presently really only is a mirror of the sage repository. It isn't really used for development. So before a change can be considered for inclusion, your change should be uploaded as a git branch here (using the `git-trac` command, probably).\n\nI suspect that the appropriate change to make is in line 3967:\n\n```diff\n-         for i from 1 <= i <= n//k:\n+         for i from 0 <= i <= n//k:\n```\n\nbut I didn't check in detail.",
+    "body": "Replying to [comment:14 prateek.cs14]:\n> I have tried to redefine multifactorial function.\n> Please review.\n> https://github.com/sagemath/sage/pull/52\n\n\nA few notes:\n- Python is notoriously (and if you believe some of Guido's commentary basicaly intentionally so) bad at recursion, so you should avoid it unless your really need it. Here you don't (and the current implementation carefully avoids deep recursion)\n- The current implementation does quite a bit of balancing of factors to ensure good multiplication performance. From what I see on your github branch, you've tacked on a new recursion case to what is called \"reflection\" there, essentially making the main body (everything below it) unreachable. That code looks like it's pretty carefully written. If you want to throw it out you should do so (and not just leave it in there as unreachable code) but then you should back up your proposal with some serious timings that show your code performs better under all circumstances.\n- Whenever you make a change like this you should adjust the documentation as well, ensuring that the new behaviour is reflected in the documentation and is properly tested (probably adding some new tests that differentiate between old and new behaviour.\n- Github presently really only is a mirror of the sage repository. It isn't really used for development. So before a change can be considered for inclusion, your change should be uploaded as a git branch here (using the `git-trac` command, probably).\n\nI suspect that the appropriate change to make is in line 3967:\n\n```diff\n-         for i from 1 <= i <= n//k:\n+         for i from 0 <= i <= n//k:\n```\nbut I didn't check in detail.",
     "created_at": "2015-11-02T16:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -399,6 +399,7 @@ Replying to [comment:14 prateek.cs14]:
 > Please review.
 > https://github.com/sagemath/sage/pull/52
 
+
 A few notes:
 - Python is notoriously (and if you believe some of Guido's commentary basicaly intentionally so) bad at recursion, so you should avoid it unless your really need it. Here you don't (and the current implementation carefully avoids deep recursion)
 - The current implementation does quite a bit of balancing of factors to ensure good multiplication performance. From what I see on your github branch, you've tacked on a new recursion case to what is called "reflection" there, essentially making the main body (everything below it) unreachable. That code looks like it's pretty carefully written. If you want to throw it out you should do so (and not just leave it in there as unreachable code) but then you should back up your proposal with some serious timings that show your code performs better under all circumstances.
@@ -411,7 +412,6 @@ I suspect that the appropriate change to make is in line 3967:
 -         for i from 1 <= i <= n//k:
 +         for i from 0 <= i <= n//k:
 ```
-
 but I didn't check in detail.
 
 
@@ -493,7 +493,7 @@ https://github.com/prateekcs14/sage/commit/2cb944378c97bdad76a053e37d579d492f68d
 archive/issue_comments_041810.json:
 ```json
 {
-    "body": "Replying to [comment:17 prateek.cs14]:\n> Thanks nbruin.\n> Please review the changes made.\n> https://github.com/prateekcs14/sage/commit/2cb944378c97bdad76a053e37d579d492f68d44c\n\nCurrently, the code is nicely interruptable with CTRL-C if a particularly long computation was being done. Does your code have that property? (you stripped out the `sig_on/sig_off`. On the other hand you revert to using (python?) integers instead of using gmp directly, so perhaps interrupts get enabled in that code)\n\nCurrently, the code is taking efforts to balance the size of the factors it was multiplying. This is a well-known technique to improve performance, because it reduces the number of multiplications where a particularly big number is involved (currently there is a 32/64 bit bug in that code, by the way) You strip that out. Do you have data to confirm this is not a problem?\n\nYou may want to try things like\n\n```\nsage: %timeit 10000001.multifactorial(2)\n1 loops, best of 3: 8.47 s per loop\n```\n\nand possibly with larger numbers too. You should compare the current implementation with the new one.",
+    "body": "Replying to [comment:17 prateek.cs14]:\n> Thanks nbruin.\n> Please review the changes made.\n> https://github.com/prateekcs14/sage/commit/2cb944378c97bdad76a053e37d579d492f68d44c\n\n\nCurrently, the code is nicely interruptable with CTRL-C if a particularly long computation was being done. Does your code have that property? (you stripped out the `sig_on/sig_off`. On the other hand you revert to using (python?) integers instead of using gmp directly, so perhaps interrupts get enabled in that code)\n\nCurrently, the code is taking efforts to balance the size of the factors it was multiplying. This is a well-known technique to improve performance, because it reduces the number of multiplications where a particularly big number is involved (currently there is a 32/64 bit bug in that code, by the way) You strip that out. Do you have data to confirm this is not a problem?\n\nYou may want to try things like\n\n```\nsage: %timeit 10000001.multifactorial(2)\n1 loops, best of 3: 8.47 s per loop\n```\nand possibly with larger numbers too. You should compare the current implementation with the new one.",
     "created_at": "2015-11-06T16:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -507,6 +507,7 @@ Replying to [comment:17 prateek.cs14]:
 > Please review the changes made.
 > https://github.com/prateekcs14/sage/commit/2cb944378c97bdad76a053e37d579d492f68d44c
 
+
 Currently, the code is nicely interruptable with CTRL-C if a particularly long computation was being done. Does your code have that property? (you stripped out the `sig_on/sig_off`. On the other hand you revert to using (python?) integers instead of using gmp directly, so perhaps interrupts get enabled in that code)
 
 Currently, the code is taking efforts to balance the size of the factors it was multiplying. This is a well-known technique to improve performance, because it reduces the number of multiplications where a particularly big number is involved (currently there is a 32/64 bit bug in that code, by the way) You strip that out. Do you have data to confirm this is not a problem?
@@ -517,7 +518,6 @@ You may want to try things like
 sage: %timeit 10000001.multifactorial(2)
 1 loops, best of 3: 8.47 s per loop
 ```
-
 and possibly with larger numbers too. You should compare the current implementation with the new one.
 
 
@@ -717,7 +717,7 @@ Is this look fine ?
 archive/issue_comments_041821.json:
 ```json
 {
-    "body": "Some people have complained about using \"self\" in the docstring, and they have a point: in the call\n`10.multifactorial(3)` there is never any mention of \"self\". I think it can be avoided here. Your description in words is pretty good, but requires careful reading to pry out the base cases. That might be difficult for non-native speakers. Perhaps\n\n```\nReturns the k-th multifactorial.\n\nThe k-th multifactorial n, denoted by n!^{(k)}, as implemented in Sage\n is defined by\n\nn!^{(k)} = n for 1 <= n < k and\nn!^{(k)} = n * ( (n-k)^{(k)} for n >= k\n\nThe recursive definition is used to extend this function to the negative\nintegers.\n```\n\n\nYou'd have to figure out how to ensure that the formulas are rendered acceptably in all output formats of the sage documentation, though.\n\nThat said, your proposal is in the style of the current docstring, so I don't think a positive review would be held back by it.\n\nNote that one of the doctests illustrates the behaviour:\n\n```\n      sage: 23.multifactorial(2)\n      316234143225\n      sage: prod([1..23, step=2])\n      316234143225\n```\n\nIt would be very instructive if you would change the parameters there to a case that distinguishes between the old and the new behaviour.",
+    "body": "Some people have complained about using \"self\" in the docstring, and they have a point: in the call\n`10.multifactorial(3)` there is never any mention of \"self\". I think it can be avoided here. Your description in words is pretty good, but requires careful reading to pry out the base cases. That might be difficult for non-native speakers. Perhaps\n\n```\nReturns the k-th multifactorial.\n\nThe k-th multifactorial n, denoted by n!^{(k)}, as implemented in Sage\n is defined by\n\nn!^{(k)} = n for 1 <= n < k and\nn!^{(k)} = n * ( (n-k)^{(k)} for n >= k\n\nThe recursive definition is used to extend this function to the negative\nintegers.\n```\n\nYou'd have to figure out how to ensure that the formulas are rendered acceptably in all output formats of the sage documentation, though.\n\nThat said, your proposal is in the style of the current docstring, so I don't think a positive review would be held back by it.\n\nNote that one of the doctests illustrates the behaviour:\n\n```\n      sage: 23.multifactorial(2)\n      316234143225\n      sage: prod([1..23, step=2])\n      316234143225\n```\nIt would be very instructive if you would change the parameters there to a case that distinguishes between the old and the new behaviour.",
     "created_at": "2015-12-17T18:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -742,7 +742,6 @@ The recursive definition is used to extend this function to the negative
 integers.
 ```
 
-
 You'd have to figure out how to ensure that the formulas are rendered acceptably in all output formats of the sage documentation, though.
 
 That said, your proposal is in the style of the current docstring, so I don't think a positive review would be held back by it.
@@ -755,7 +754,6 @@ Note that one of the doctests illustrates the behaviour:
       sage: prod([1..23, step=2])
       316234143225
 ```
-
 It would be very instructive if you would change the parameters there to a case that distinguishes between the old and the new behaviour.
 
 
@@ -933,7 +931,7 @@ Do you know why `residue` is not declared as `cdef int`?
 archive/issue_comments_041829.json:
 ```json
 {
-    "body": "Replying to [comment:38 vdelecroix]:\n> Do you know why `residue` is not declared as `cdef int`?\n\nNo, I didn't change that line. I'll change it to cdef int and test but for now I'd like to get this change reviewed and committed.",
+    "body": "Replying to [comment:38 vdelecroix]:\n> Do you know why `residue` is not declared as `cdef int`?\n\n\nNo, I didn't change that line. I'll change it to cdef int and test but for now I'd like to get this change reviewed and committed.",
     "created_at": "2016-09-20T00:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -944,6 +942,7 @@ archive/issue_comments_041829.json:
 
 Replying to [comment:38 vdelecroix]:
 > Do you know why `residue` is not declared as `cdef int`?
+
 
 No, I didn't change that line. I'll change it to cdef int and test but for now I'd like to get this change reviewed and committed.
 
@@ -972,7 +971,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_041831.json:
 ```json
 {
-    "body": "Your changes look good. Two small things\n\n1. add your name in the \"Authors\" field of the ticket\n\n2. Add the following doctest in a `TESTS` block\n\n```\nsage: for a in range(1,20):\n....:     for b in range(1,20):\n....:         assert ZZ(a).multifactorial(b) == prod(x for x in range(a,0,-b))\n```\n",
+    "body": "Your changes look good. Two small things\n\n1. add your name in the \"Authors\" field of the ticket\n\n2. Add the following doctest in a `TESTS` block\n\n```\nsage: for a in range(1,20):\n....:     for b in range(1,20):\n....:         assert ZZ(a).multifactorial(b) == prod(x for x in range(a,0,-b))\n```",
     "created_at": "2016-09-21T06:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5415",
     "type": "issue_comment",
@@ -992,7 +991,6 @@ sage: for a in range(1,20):
 ....:     for b in range(1,20):
 ....:         assert ZZ(a).multifactorial(b) == prod(x for x in range(a,0,-b))
 ```
-
 
 
 

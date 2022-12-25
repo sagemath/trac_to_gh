@@ -3,7 +3,7 @@
 archive/issues_001448.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
     "created_at": "2007-12-10T14:20:20Z",
     "labels": [
         "component: linear algebra",
@@ -25,7 +25,6 @@ sage: MS = MatrixSpace(GF(2),2)
 sage: for A in MS:
 ...     print A
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1448
 
@@ -92,7 +91,7 @@ Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.pat
 archive/issue_comments_009305.json:
 ```json
 {
-    "body": "Attachment [1448-2.patch](tarball://root/attachments/some-uuid/ticket1448/1448-2.patch) by dmharvey created at 2007-12-21 17:57:54\n\nI've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:\n\n* I'd like to see more (i.e. nonzero) documentation in the docstring, in particular giving the definition of what ordering is being produced, and explaining what's going on in the case of an infinite base ring\n\n* The doctests should show more than that just the number of generated matrices is correct; currently they only give the number of matrices and the first matrix (which is all zero)\n\n* I'm a bit puzzled by the order of iteration. It starts by incrementing in the bottom right and then moves upwards. To me the other direction seems more natural. Maybe I'm \"wrong\" about this though.\n\n* There are some corner cases to address:\n\n\n```\nsage: MS = MatrixSpace(ZZ, 2, 0)\nsage: i = iter(MS)\nsage: i.next()\n[]\nsage: i.next()\n(boom)\n```\n\n\n* The doctests should include examples for 0xN, Nx0, 0x0 matrices.",
+    "body": "Attachment [1448-2.patch](tarball://root/attachments/some-uuid/ticket1448/1448-2.patch) by dmharvey created at 2007-12-21 17:57:54\n\nI've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:\n\n* I'd like to see more (i.e. nonzero) documentation in the docstring, in particular giving the definition of what ordering is being produced, and explaining what's going on in the case of an infinite base ring\n\n* The doctests should show more than that just the number of generated matrices is correct; currently they only give the number of matrices and the first matrix (which is all zero)\n\n* I'm a bit puzzled by the order of iteration. It starts by incrementing in the bottom right and then moves upwards. To me the other direction seems more natural. Maybe I'm \"wrong\" about this though.\n\n* There are some corner cases to address:\n\n```\nsage: MS = MatrixSpace(ZZ, 2, 0)\nsage: i = iter(MS)\nsage: i.next()\n[]\nsage: i.next()\n(boom)\n```\n\n* The doctests should include examples for 0xN, Nx0, 0x0 matrices.",
     "created_at": "2007-12-21T17:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
@@ -113,7 +112,6 @@ I've been reviewing this patch. Generally pretty good (I like the implementation
 
 * There are some corner cases to address:
 
-
 ```
 sage: MS = MatrixSpace(ZZ, 2, 0)
 sage: i = iter(MS)
@@ -122,7 +120,6 @@ sage: i.next()
 sage: i.next()
 (boom)
 ```
-
 
 * The doctests should include examples for 0xN, Nx0, 0x0 matrices.
 

@@ -3,7 +3,7 @@
 archive/issues_007807.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis is inconsistent with other plotting functions.\n\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
+    "body": "Assignee: @williamstein\n\nThis is inconsistent with other plotting functions.\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
     "created_at": "2010-01-01T18:19:43Z",
     "labels": [
         "component: graphics",
@@ -19,7 +19,6 @@ archive/issues_007807.json:
 Assignee: @williamstein
 
 This is inconsistent with other plotting functions.
-
 
 ```
 sage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)
@@ -37,7 +36,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7807
 
@@ -104,7 +102,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_067422.json:
 ```json
 {
-    "body": "\n```\n# works as advertised\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)  \n\n# (Correctly) doesnt complain about a single function\nsage: region_plot([x^2+y^2<1], (x,-2,2), (y,-2,2),aspect_ratio=1) \n\n# using many functions is ok\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,-2,2), (y,-2,2),aspect_ratio=1)\n\n# displays a portion of the last example properly\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,0,2), (y,-2,2),aspect_ratio=1) \n\n# a little computer art - my picture of a whale ;-) \nsage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)\n```\n",
+    "body": "```\n# works as advertised\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)  \n\n# (Correctly) doesnt complain about a single function\nsage: region_plot([x^2+y^2<1], (x,-2,2), (y,-2,2),aspect_ratio=1) \n\n# using many functions is ok\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,-2,2), (y,-2,2),aspect_ratio=1)\n\n# displays a portion of the last example properly\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,0,2), (y,-2,2),aspect_ratio=1) \n\n# a little computer art - my picture of a whale ;-) \nsage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)\n```",
     "created_at": "2010-01-31T06:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
@@ -112,7 +110,6 @@ archive/issue_comments_067422.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
-
 
 ```
 # works as advertised
@@ -130,7 +127,6 @@ sage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,0,2), (y,-2,2),aspect_ratio=
 # a little computer art - my picture of a whale ;-) 
 sage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)
 ```
-
 
 
 

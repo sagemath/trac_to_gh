@@ -3,7 +3,7 @@
 archive/issues_009662.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
+    "body": "Assignee: @williamstein\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n```\ngp> kill(x)   /* No output */\n```\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
     "created_at": "2010-08-01T17:37:29Z",
     "labels": [
         "component: interfaces",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 When executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
 
-
 ```
 gp> kill(x)   /* No output */
 ```
-
 
 But in Sage:
 
@@ -32,7 +30,6 @@ But in Sage:
 sage: gp('kill(x)')
 0
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9662
 
@@ -45,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9662
 archive/issue_comments_093624.json:
 ```json
 {
-    "body": "This is not easily fixed, it is due to the way how Expect assigns variables.  In fact, one could argue that the observed behaviour is as expected, because in gp, we get\n\n```\ngp> a = kill(x)\n0\n```\n\nSo, assigning a nil value makes it into a zero.",
+    "body": "This is not easily fixed, it is due to the way how Expect assigns variables.  In fact, one could argue that the observed behaviour is as expected, because in gp, we get\n\n```\ngp> a = kill(x)\n0\n```\nSo, assigning a nil value makes it into a zero.",
     "created_at": "2010-08-01T17:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
@@ -60,7 +57,6 @@ This is not easily fixed, it is due to the way how Expect assigns variables.  In
 gp> a = kill(x)
 0
 ```
-
 So, assigning a nil value makes it into a zero.
 
 
@@ -106,7 +102,7 @@ Resolution: invalid
 archive/issue_comments_093627.json:
 ```json
 {
-    "body": "I agree that this is invalid.  Doing `gp('kill(x)')` means to create an object \"kill(x)\" in gp, assign it to a variable, and return a object pointing to that variable.\n\n\n```\nsage: type(gp('kill(x)'))\n<class 'sage.interfaces.gp.GpElement'>\n```\n\n\nThis is how it works for all the interfaces.  If you just want to evaluate a command, then you can do\n\n\n```\nsage: gp.eval('kill(x)')\n''\n```\n\n\nwhich appropriately returns an empty string.",
+    "body": "I agree that this is invalid.  Doing `gp('kill(x)')` means to create an object \"kill(x)\" in gp, assign it to a variable, and return a object pointing to that variable.\n\n```\nsage: type(gp('kill(x)'))\n<class 'sage.interfaces.gp.GpElement'>\n```\n\nThis is how it works for all the interfaces.  If you just want to evaluate a command, then you can do\n\n```\nsage: gp.eval('kill(x)')\n''\n```\n\nwhich appropriately returns an empty string.",
     "created_at": "2013-07-24T12:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
@@ -117,21 +113,17 @@ archive/issue_comments_093627.json:
 
 I agree that this is invalid.  Doing `gp('kill(x)')` means to create an object "kill(x)" in gp, assign it to a variable, and return a object pointing to that variable.
 
-
 ```
 sage: type(gp('kill(x)'))
 <class 'sage.interfaces.gp.GpElement'>
 ```
 
-
 This is how it works for all the interfaces.  If you just want to evaluate a command, then you can do
-
 
 ```
 sage: gp.eval('kill(x)')
 ''
 ```
-
 
 which appropriately returns an empty string.
 

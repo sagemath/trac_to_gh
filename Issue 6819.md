@@ -90,7 +90,7 @@ patch reviewed + some docstrings
 archive/issue_comments_056127.json:
 ```json
 {
-    "body": "Replying to [comment:2 ncohen]:\n> Seems ok to me ! I Applied it, used it, and did not understand why it was not possible already !\n> \n> By the way, I added some docstrings to the function, so if you think it is ok.. ;-)\n\nThanks for the docstrings.",
+    "body": "Replying to [comment:2 ncohen]:\n> Seems ok to me ! I Applied it, used it, and did not understand why it was not possible already !\n> \n> By the way, I added some docstrings to the function, so if you think it is ok.. ;-)\n\n\nThanks for the docstrings.",
     "created_at": "2009-08-25T13:59:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
@@ -103,6 +103,7 @@ Replying to [comment:2 ncohen]:
 > Seems ok to me ! I Applied it, used it, and did not understand why it was not possible already !
 > 
 > By the way, I added some docstrings to the function, so if you think it is ok.. ;-)
+
 
 Thanks for the docstrings.
 
@@ -167,7 +168,7 @@ archive/issue_events_016065.json:
 archive/issue_comments_056130.json:
 ```json
 {
-    "body": "The patch `multinomial_list.patch` contains some badly formatted docstrings. But those shouldn't prevent the patch from being merged. Better to fix those formatting issues in a separate ticket. See #6845 for a follow up to fix this docstring issue.\n\n\n\nncohen -- Your username should be in your patches; it makes it easier to credit you for your contributions. Please also remember to put in a sensible commit message for your patches.\n\n\n\nWhile merging and testing these patches:\n\n1. `12846.patch` -- rishi's contribution\n2. `trac_6819-reviewer.patch` -- ncohen's contribution\n \nI ran into a doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/misc/getusage.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/misc/getusage.py\", line 69:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\nExpected:\n    0.0\nGot:\n    0.34375\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_getusage.py\n\t [2.6 s]\n\n```\n\nThis has nothing to do with the above patches. Strangely, it crops up when I run the test on sage.math. But the test passes on mod.math and geom.math. Merged patches in this order:\n\n1. `12846.patch`\n2. `trac_6819-reviewer.patch`",
+    "body": "The patch `multinomial_list.patch` contains some badly formatted docstrings. But those shouldn't prevent the patch from being merged. Better to fix those formatting issues in a separate ticket. See #6845 for a follow up to fix this docstring issue.\n\n\n\nncohen -- Your username should be in your patches; it makes it easier to credit you for your contributions. Please also remember to put in a sensible commit message for your patches.\n\n\n\nWhile merging and testing these patches:\n\n1. `12846.patch` -- rishi's contribution\n2. `trac_6819-reviewer.patch` -- ncohen's contribution\n \nI ran into a doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/misc/getusage.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/misc/getusage.py\", line 69:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\nExpected:\n    0.0\nGot:\n    0.34375\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_getusage.py\n\t [2.6 s]\n\n```\nThis has nothing to do with the above patches. Strangely, it crops up when I run the test on sage.math. But the test passes on mod.math and geom.math. Merged patches in this order:\n\n1. `12846.patch`\n2. `trac_6819-reviewer.patch`",
     "created_at": "2009-08-30T08:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6819",
     "type": "issue_comment",
@@ -208,7 +209,6 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.docte
 	 [2.6 s]
 
 ```
-
 This has nothing to do with the above patches. Strangely, it crops up when I run the test on sage.math. But the test passes on mod.math and geom.math. Merged patches in this order:
 
 1. `12846.patch`

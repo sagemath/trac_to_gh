@@ -85,7 +85,7 @@ archive/issue_events_012505.json:
 archive/issue_comments_041246.json:
 ```json
 {
-    "body": "This was fixed by converting symbolic matrices to use Sage's generic dense matrix backend:\n\n\n```\nsage: m = MatrixSpace(SR, 1000, 1000)\nsage: %time a = m.identity_matrix()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04 s\nsage: %time b = a.transpose()\nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\nWall time: 0.06 s\n```\n",
+    "body": "This was fixed by converting symbolic matrices to use Sage's generic dense matrix backend:\n\n```\nsage: m = MatrixSpace(SR, 1000, 1000)\nsage: %time a = m.identity_matrix()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.04 s\nsage: %time b = a.transpose()\nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\nWall time: 0.06 s\n```",
     "created_at": "2009-06-05T01:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5364",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_041246.json:
 
 This was fixed by converting symbolic matrices to use Sage's generic dense matrix backend:
 
-
 ```
 sage: m = MatrixSpace(SR, 1000, 1000)
 sage: %time a = m.identity_matrix()
@@ -106,4 +105,3 @@ sage: %time b = a.transpose()
 CPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s
 Wall time: 0.06 s
 ```
-

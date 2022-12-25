@@ -220,7 +220,7 @@ archive/issue_events_019622.json:
 archive/issue_comments_072215.json:
 ```json
 {
-    "body": "Replying to [comment:3 mraum]:\n> SAGE_FORTRAN is ignored, if gfortran doesn't exist. \n\n> Namely, the script will abort. That's why I had to create a patch. Creating links for gfortran is a hack would most probably create new problems anywhere else at another time. \n\nWhat makes you think a symbolic link is a hack? It is very standard practice on Unix systems to create symbolic links for this very purpose. There are loads of them created in Sage. (Some people call them soft links). \n\nMany shell scripts start \n\n```/bin/sh\n```\n\n\nBut most linux distros do not have a program called /bin/sh. Rather /bin/sh is simply a link to bash, dash or some other shell. On sage.math\n\n\n```\nkirkby@sage:~$ ls -l /bin/sh\nlrwxrwxrwx 1 root root 4 2010-02-02 13:49 /bin/sh -> dash\nkirkby@sage:~$ ls -l /bin/dash\n-rwxr-xr-x 1 root root 100856 2009-03-09 06:18 /bin/dash\n```\n\n\nWhen you type 'sh' on sage.math you are really running 'dash'\n\n> Moreover, I don't have admin rights.\n\nYou don't need admin rights to create a symbolic link. Something like:\n\n\n```\n$ ln -s /usr/local/bin/gfortran-4.2 $HOME/bin/gfortran\n```\n\n\nwill do fine. Then make sure $HOME/bin is in your path before /usr/local/bin. Your will then have 'gfortran'. \n\n> I don't have access to Solaris; And I don't have experience with it. But if the GNU suit is installed it should work; if not it won't, but scipy has to blamed for this not fortran itself.\n\n\nDo you have an account on sage.math or similar? If so, you have an account on 't2' - or if not, one is easily created. For all practical purposes you will not find it significantly different from Linux. \n\n> If you can test this on Soloaris I would be happy to integrate any changes you suggest. \n\nUnfortunately, I simply do not have time to test everyones changes on Solaris - let alone generate patches if they do not work. \n\nhttp://www.sagemath.org/doc/developer/inclusion.html\n\nmakes it clear that for a package to be included in Sage, it must support Solaris. \n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nYour solution seems like a *sledgehammer to crack a walnut* if you know what I mean by that. A symbolic link has far greater chance of just working, without risking breaking things for everyone else. In stead you propose making changes that could impact anyone, without actually testing them. \n\n**I'm marking this as wontfix, as I believe the patch is unnecessary. You may find another reviewer see this differently, though I doubt you will find any experienced system administrator see it that way** \n\nDave",
+    "body": "Replying to [comment:3 mraum]:\n> SAGE_FORTRAN is ignored, if gfortran doesn't exist. \n\n\n> Namely, the script will abort. That's why I had to create a patch. Creating links for gfortran is a hack would most probably create new problems anywhere else at another time. \n\n\nWhat makes you think a symbolic link is a hack? It is very standard practice on Unix systems to create symbolic links for this very purpose. There are loads of them created in Sage. (Some people call them soft links). \n\nMany shell scripts start \n\n```/bin/sh\n```\n\nBut most linux distros do not have a program called /bin/sh. Rather /bin/sh is simply a link to bash, dash or some other shell. On sage.math\n\n```\nkirkby@sage:~$ ls -l /bin/sh\nlrwxrwxrwx 1 root root 4 2010-02-02 13:49 /bin/sh -> dash\nkirkby@sage:~$ ls -l /bin/dash\n-rwxr-xr-x 1 root root 100856 2009-03-09 06:18 /bin/dash\n```\n\nWhen you type 'sh' on sage.math you are really running 'dash'\n\n> Moreover, I don't have admin rights.\n\n\nYou don't need admin rights to create a symbolic link. Something like:\n\n```\n$ ln -s /usr/local/bin/gfortran-4.2 $HOME/bin/gfortran\n```\n\nwill do fine. Then make sure $HOME/bin is in your path before /usr/local/bin. Your will then have 'gfortran'. \n\n> I don't have access to Solaris; And I don't have experience with it. But if the GNU suit is installed it should work; if not it won't, but scipy has to blamed for this not fortran itself.\n\n\n\nDo you have an account on sage.math or similar? If so, you have an account on 't2' - or if not, one is easily created. For all practical purposes you will not find it significantly different from Linux. \n\n> If you can test this on Soloaris I would be happy to integrate any changes you suggest. \n\n\nUnfortunately, I simply do not have time to test everyones changes on Solaris - let alone generate patches if they do not work. \n\nhttp://www.sagemath.org/doc/developer/inclusion.html\n\nmakes it clear that for a package to be included in Sage, it must support Solaris. \n\n**Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.**\n\nYour solution seems like a *sledgehammer to crack a walnut* if you know what I mean by that. A symbolic link has far greater chance of just working, without risking breaking things for everyone else. In stead you propose making changes that could impact anyone, without actually testing them. \n\n**I'm marking this as wontfix, as I believe the patch is unnecessary. You may find another reviewer see this differently, though I doubt you will find any experienced system administrator see it that way** \n\nDave",
     "created_at": "2010-02-22T17:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
@@ -232,7 +232,9 @@ archive/issue_comments_072215.json:
 Replying to [comment:3 mraum]:
 > SAGE_FORTRAN is ignored, if gfortran doesn't exist. 
 
+
 > Namely, the script will abort. That's why I had to create a patch. Creating links for gfortran is a hack would most probably create new problems anywhere else at another time. 
+
 
 What makes you think a symbolic link is a hack? It is very standard practice on Unix systems to create symbolic links for this very purpose. There are loads of them created in Sage. (Some people call them soft links). 
 
@@ -241,9 +243,7 @@ Many shell scripts start
 ```/bin/sh
 ```
 
-
 But most linux distros do not have a program called /bin/sh. Rather /bin/sh is simply a link to bash, dash or some other shell. On sage.math
-
 
 ```
 kirkby@sage:~$ ls -l /bin/sh
@@ -252,27 +252,27 @@ kirkby@sage:~$ ls -l /bin/dash
 -rwxr-xr-x 1 root root 100856 2009-03-09 06:18 /bin/dash
 ```
 
-
 When you type 'sh' on sage.math you are really running 'dash'
 
 > Moreover, I don't have admin rights.
 
-You don't need admin rights to create a symbolic link. Something like:
 
+You don't need admin rights to create a symbolic link. Something like:
 
 ```
 $ ln -s /usr/local/bin/gfortran-4.2 $HOME/bin/gfortran
 ```
-
 
 will do fine. Then make sure $HOME/bin is in your path before /usr/local/bin. Your will then have 'gfortran'. 
 
 > I don't have access to Solaris; And I don't have experience with it. But if the GNU suit is installed it should work; if not it won't, but scipy has to blamed for this not fortran itself.
 
 
+
 Do you have an account on sage.math or similar? If so, you have an account on 't2' - or if not, one is easily created. For all practical purposes you will not find it significantly different from Linux. 
 
 > If you can test this on Soloaris I would be happy to integrate any changes you suggest. 
+
 
 Unfortunately, I simply do not have time to test everyones changes on Solaris - let alone generate patches if they do not work. 
 
@@ -416,7 +416,7 @@ archive/issue_events_019623.json:
 archive/issue_comments_072221.json:
 ```json
 {
-    "body": "Replying to [comment:7 drkirkby]:\n> Minh, I just realised I left this as closed. Perhaps you can open it and select what you feel is most appropriate - needs work/ need review/ wontfix etc. \n\nI'm leaving this as \"wontfix\". If there's a need in the future to address this issue again, open another ticket, but refrain from reopening tickets. A few months ago, only trac administrators had power to close tickets. After some changes to trac, in particular moving to the new process for working on tickets, every suddenly has the power to close tickets. This is the source of the \"every can close tickets\" problem we're seeing right now.",
+    "body": "Replying to [comment:7 drkirkby]:\n> Minh, I just realised I left this as closed. Perhaps you can open it and select what you feel is most appropriate - needs work/ need review/ wontfix etc. \n\n\nI'm leaving this as \"wontfix\". If there's a need in the future to address this issue again, open another ticket, but refrain from reopening tickets. A few months ago, only trac administrators had power to close tickets. After some changes to trac, in particular moving to the new process for working on tickets, every suddenly has the power to close tickets. This is the source of the \"every can close tickets\" problem we're seeing right now.",
     "created_at": "2010-02-23T02:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
@@ -428,6 +428,7 @@ archive/issue_comments_072221.json:
 Replying to [comment:7 drkirkby]:
 > Minh, I just realised I left this as closed. Perhaps you can open it and select what you feel is most appropriate - needs work/ need review/ wontfix etc. 
 
+
 I'm leaving this as "wontfix". If there's a need in the future to address this issue again, open another ticket, but refrain from reopening tickets. A few months ago, only trac administrators had power to close tickets. After some changes to trac, in particular moving to the new process for working on tickets, every suddenly has the power to close tickets. This is the source of the "every can close tickets" problem we're seeing right now.
 
 
@@ -437,7 +438,7 @@ I'm leaving this as "wontfix". If there's a need in the future to address this i
 archive/issue_comments_072222.json:
 ```json
 {
-    "body": "Replying to [comment:9 mvngu]:\n> \"every can close tickets\" problem we're seeing right now.\n\n\"everyone\", that is.",
+    "body": "Replying to [comment:9 mvngu]:\n> \"every can close tickets\" problem we're seeing right now.\n\n\n\"everyone\", that is.",
     "created_at": "2010-02-23T02:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
@@ -448,5 +449,6 @@ archive/issue_comments_072222.json:
 
 Replying to [comment:9 mvngu]:
 > "every can close tickets" problem we're seeing right now.
+
 
 "everyone", that is.

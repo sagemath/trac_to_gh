@@ -34,7 +34,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7571
 archive/issue_comments_064325.json:
 ```json
 {
-    "body": "for the record:\n\nBefore:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 8.19 s, sys: 0.02 s, total: 8.20 s\nWall time: 8.21 s\n33\nsage: time g.connected_components_number()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.09 s\n4474\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n1784\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.28 s, sys: 0.00 s, total: 0.28 s\nWall time: 0.28 s\n```\n\n\nAfter:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 5.00 s, sys: 0.00 s, total: 5.00 s\nWall time: 5.00 s\n33\nsage: time g.connected_components_number()\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.20 s\n4487\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n2509\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.16 s\n```\n\n\nAnd more importantly:\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.relabel(map(lambda i: 'x'+str(i),range(len(g))))\n```\n\n\nbefore:\n\n```\nsage: g.blocks_and_cut_vertices()\n([[9, 8], [8, 7], [7, 4, 6, 5, 2, 3, 1, 0]], [8, 7])\n```\n\n\nafter:\n\n```\nsage: g.blocks_and_cut_vertices()\n\n([['x9', 'x8'],\n  ['x5', 'x4', 'x1', 'x0', 'x2', 'x3', 'x6', 'x7'],\n  ['x7', 'x8']],\n ['x8', 'x7'])\n```\n",
+    "body": "for the record:\n\nBefore:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 8.19 s, sys: 0.02 s, total: 8.20 s\nWall time: 8.21 s\n33\nsage: time g.connected_components_number()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.09 s\n4474\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n1784\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.28 s, sys: 0.00 s, total: 0.28 s\nWall time: 0.28 s\n```\n\nAfter:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 5.00 s, sys: 0.00 s, total: 5.00 s\nWall time: 5.00 s\n33\nsage: time g.connected_components_number()\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.20 s\n4487\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n2509\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.16 s\n```\n\nAnd more importantly:\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.relabel(map(lambda i: 'x'+str(i),range(len(g))))\n```\n\nbefore:\n\n```\nsage: g.blocks_and_cut_vertices()\n([[9, 8], [8, 7], [7, 4, 6, 5, 2, 3, 1, 0]], [8, 7])\n```\n\nafter:\n\n```\nsage: g.blocks_and_cut_vertices()\n\n([['x9', 'x8'],\n  ['x5', 'x4', 'x1', 'x0', 'x2', 'x3', 'x6', 'x7'],\n  ['x7', 'x8']],\n ['x8', 'x7'])\n```",
     "created_at": "2009-12-01T15:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ CPU times: user 0.28 s, sys: 0.00 s, total: 0.28 s
 Wall time: 0.28 s
 ```
 
-
 After:
 
 ```
@@ -86,7 +85,6 @@ CPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s
 Wall time: 0.16 s
 ```
 
-
 And more importantly:
 
 ```
@@ -94,14 +92,12 @@ sage: g = graphs.KrackhardtKiteGraph()
 sage: g.relabel(map(lambda i: 'x'+str(i),range(len(g))))
 ```
 
-
 before:
 
 ```
 sage: g.blocks_and_cut_vertices()
 ([[9, 8], [8, 7], [7, 4, 6, 5, 2, 3, 1, 0]], [8, 7])
 ```
-
 
 after:
 
@@ -113,7 +109,6 @@ sage: g.blocks_and_cut_vertices()
   ['x7', 'x8']],
  ['x8', 'x7'])
 ```
-
 
 
 
@@ -214,7 +209,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_064331.json:
 ```json
 {
-    "body": "that's true, benchmarks are not very convincing. Here are new ones:\n\nbefore:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 17.55 s, sys: 0.07 s, total: 17.62 s\nWall time: 17.83 s\n16\nsage: time g.connected_components_number()\nCPU times: user 8.40 s, sys: 0.08 s, total: 8.48 s\nWall time: 8.72 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 17.19 s, sys: 0.44 s, total: 17.63 s\nWall time: 17.98 s\n```\n\n\nafter:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 2.15 s, sys: 0.00 s, total: 2.16 s\nWall time: 2.15 s\n16\nsage: time g.connected_components_number()\nCPU times: user 0.32 s, sys: 0.00 s, total: 0.32 s\nWall time: 0.32 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 10.22 s, sys: 0.04 s, total: 10.27 s\nWall time: 10.57 s\n```\n",
+    "body": "that's true, benchmarks are not very convincing. Here are new ones:\n\nbefore:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 17.55 s, sys: 0.07 s, total: 17.62 s\nWall time: 17.83 s\n16\nsage: time g.connected_components_number()\nCPU times: user 8.40 s, sys: 0.08 s, total: 8.48 s\nWall time: 8.72 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 17.19 s, sys: 0.44 s, total: 17.63 s\nWall time: 17.98 s\n```\n\nafter:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 2.15 s, sys: 0.00 s, total: 2.16 s\nWall time: 2.15 s\n16\nsage: time g.connected_components_number()\nCPU times: user 0.32 s, sys: 0.00 s, total: 0.32 s\nWall time: 0.32 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 10.22 s, sys: 0.04 s, total: 10.27 s\nWall time: 10.57 s\n```",
     "created_at": "2009-12-01T16:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
@@ -245,7 +240,6 @@ CPU times: user 17.19 s, sys: 0.44 s, total: 17.63 s
 Wall time: 17.98 s
 ```
 
-
 after:
 
 ```
@@ -265,7 +259,6 @@ sage: time b=g.blocks_and_cut_vertices()
 CPU times: user 10.22 s, sys: 0.04 s, total: 10.27 s
 Wall time: 10.57 s
 ```
-
 
 
 

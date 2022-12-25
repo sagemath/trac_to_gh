@@ -3,7 +3,7 @@
 archive/issues_009961.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ryan @kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
+    "body": "Assignee: jason, was\n\nCC:  ryan @kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
     "created_at": "2010-09-21T20:02:44Z",
     "labels": [
         "component: graphics"
@@ -23,13 +23,11 @@ Keywords: beginner
 
 It would be really nice if this plotted an arrow from (1,2) to (3,4):
 
-
 ```
 sage: v=vector([1,2])
 sage: u=vector([2,2])
 sage: plot(u,start=v)
 ```
-
 
 or maybe the option should be "base" or "origin"
 
@@ -138,7 +136,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_099604.json:
 ```json
 {
-    "body": "Replying to [comment:2 ryan]:\n> the patch gives the described output, but someone should double check my code for correctness.\n\nIt looks good to me.",
+    "body": "Replying to [comment:2 ryan]:\n> the patch gives the described output, but someone should double check my code for correctness.\n\n\nIt looks good to me.",
     "created_at": "2011-01-09T16:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -149,6 +147,7 @@ archive/issue_comments_099604.json:
 
 Replying to [comment:2 ryan]:
 > the patch gives the described output, but someone should double check my code for correctness.
+
 
 It looks good to me.
 
@@ -418,7 +417,7 @@ You may want to check whether this really does the same thing as `v.plot()` - se
 archive/issue_comments_099618.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> You may want to check whether this really does the same thing as `v.plot()` - see #10638.\n\nI am interpreting this comment as a needs_work (if it's not, then please set positive_review).",
+    "body": "Replying to [comment:11 kcrisman]:\n> You may want to check whether this really does the same thing as `v.plot()` - see #10638.\n\n\nI am interpreting this comment as a needs_work (if it's not, then please set positive_review).",
     "created_at": "2011-01-19T01:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -429,6 +428,7 @@ archive/issue_comments_099618.json:
 
 Replying to [comment:11 kcrisman]:
 > You may want to check whether this really does the same thing as `v.plot()` - see #10638.
+
 
 I am interpreting this comment as a needs_work (if it's not, then please set positive_review).
 
@@ -511,7 +511,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099623.json:
 ```json
 {
-    "body": "This patch causes an amusing error, which does not occur in the vanilla Sage:\n\n```\n\nsage: plot(vector([1]))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (2, 0))\n\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n<snip>\nArithmeticError: Cross product only defined for vectors of length three or seven, not (3 and 1)\n```\n\nI think I can fix this, so patch hopefully coming up.",
+    "body": "This patch causes an amusing error, which does not occur in the vanilla Sage:\n\n```\n\nsage: plot(vector([1]))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (2, 0))\n\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n<snip>\nArithmeticError: Cross product only defined for vectors of length three or seven, not (3 and 1)\n```\nI think I can fix this, so patch hopefully coming up.",
     "created_at": "2011-03-13T01:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -534,7 +534,6 @@ ArithmeticError                           Traceback (most recent call last)
 <snip>
 ArithmeticError: Cross product only defined for vectors of length three or seven, not (3 and 1)
 ```
-
 I think I can fix this, so patch hopefully coming up.
 
 
@@ -638,7 +637,7 @@ Ryan, you can totally review the reviewer patch.  Just check that it still does 
 archive/issue_comments_099629.json:
 ```json
 {
-    "body": "Replying to [comment:17 kcrisman]:\n> Ryan, you can totally review the reviewer patch.  Just check that it still does what you wanted, that the doctests are correct and pass, and that `./sage -docbuild reference html` looks nice in the documentation for free modules.\n\nI'll look at it this evening.",
+    "body": "Replying to [comment:17 kcrisman]:\n> Ryan, you can totally review the reviewer patch.  Just check that it still does what you wanted, that the doctests are correct and pass, and that `./sage -docbuild reference html` looks nice in the documentation for free modules.\n\n\nI'll look at it this evening.",
     "created_at": "2011-05-13T16:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
@@ -649,6 +648,7 @@ archive/issue_comments_099629.json:
 
 Replying to [comment:17 kcrisman]:
 > Ryan, you can totally review the reviewer patch.  Just check that it still does what you wanted, that the doctests are correct and pass, and that `./sage -docbuild reference html` looks nice in the documentation for free modules.
+
 
 I'll look at it this evening.
 

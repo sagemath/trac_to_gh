@@ -51,7 +51,7 @@ malb, is there a good way to handle the C++ overloading?  For example, in the pa
 archive/issue_comments_043187.json:
 ```json
 {
-    "body": "You'd have to define two functions:\n\n\n```\nvoid  (*put_G \"put\") (long i, GF2_c a)\nvoid  (*put_l \"put\") (long i, long a)\n```\n\n\nand tell it that they are pointing to the same thing ('put')",
+    "body": "You'd have to define two functions:\n\n```\nvoid  (*put_G \"put\") (long i, GF2_c a)\nvoid  (*put_l \"put\") (long i, long a)\n```\n\nand tell it that they are pointing to the same thing ('put')",
     "created_at": "2009-03-18T20:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
@@ -62,12 +62,10 @@ archive/issue_comments_043187.json:
 
 You'd have to define two functions:
 
-
 ```
 void  (*put_G "put") (long i, GF2_c a)
 void  (*put_l "put") (long i, long a)
 ```
-
 
 and tell it that they are pointing to the same thing ('put')
 

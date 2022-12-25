@@ -3,7 +3,7 @@
 archive/issues_007275.json:
 ```json
 {
-    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n********************************************************************** \nFile \"/home/jaap/downloads/sage-4.2.alpha0/devel/sage/doc/en/tutorial/tour_algeb ra.rst\", line 87: \n     sage: find_root(cos(phi)==sin(phi),0,pi/2) \nExpected: \n     0.78539816339744839 \nGot: \n     0.78539816339744828 \n********************************************************************** \n1 items had failures: \nSame as in alpha0! No ticket yet? \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7275\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n********************************************************************** \nFile \"/home/jaap/downloads/sage-4.2.alpha0/devel/sage/doc/en/tutorial/tour_algeb ra.rst\", line 87: \n     sage: find_root(cos(phi)==sin(phi),0,pi/2) \nExpected: \n     0.78539816339744839 \nGot: \n     0.78539816339744828 \n********************************************************************** \n1 items had failures: \nSame as in alpha0! No ticket yet? \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7275\n\n",
     "created_at": "2009-10-23T21:43:58Z",
     "labels": [
         "component: documentation",
@@ -34,7 +34,6 @@ Got:
 1 items had failures: 
 Same as in alpha0! No ticket yet? 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7275
 
@@ -83,7 +82,7 @@ Changing status from new to needs_review.
 archive/issue_comments_060430.json:
 ```json
 {
-    "body": "I could not have done this better!\n\n\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\"      \n\t [81.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\n```\n\n\nSo positive review.\n\nJaap",
+    "body": "I could not have done this better!\n\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\"      \n\t [81.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n\n```\n\nSo positive review.\n\nJaap",
     "created_at": "2009-10-23T21:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
@@ -95,7 +94,6 @@ archive/issue_comments_060430.json:
 I could not have done this better!
 
 
-
 ```
 sage -t  "devel/sage/doc/en/tutorial/tour_algebra.rst"      
 	 [81.2 s]
@@ -104,7 +102,6 @@ sage -t  "devel/sage/doc/en/tutorial/tour_algebra.rst"
 All tests passed!
 
 ```
-
 
 So positive review.
 

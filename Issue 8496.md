@@ -148,7 +148,7 @@ I'll have to get ahold of an alpha to try and rebase it (and document the normal
 archive/issue_comments_076535.json:
 ```json
 {
-    "body": "I noticed in the docstrings that you specify INPUT variables like this:\n\n```\n        1824         INPUT:: \n        1825\t            v - a non-archimedean place of the base field of the curve, \n \t1826\t                or None, in which case the total nonarchimedian contribution \n \t1827\t                is returned \n \t1828\t         \n \t1829\t            prec - working precision, or None in which case the height  \n \t1830\t                is returned symbolically \n```\n\n\nI don't think this is so nice in Sphinx, since it is just preformated.  The vast majority of docstrings are formatted like as a list:\n\n\n```\n        1824            INPUT:\n        1825\t            - ``v`` - a non-archimedean place of the base field of the curve, \n \t1826\t              or None, in which case the total nonarchimedian contribution \n \t1827\t              is returned \n \t1828\t         \n \t1829\t            - ``prec`` - working precision, or None in which case the height  \n \t1830\t              is returned symbolically \n```\n\n\nNote that:\n   \n* only one colon after \"INPUT\"\n* a dash at the start of each line\n* the indentation is two spaces after the dash.",
+    "body": "I noticed in the docstrings that you specify INPUT variables like this:\n\n```\n        1824         INPUT:: \n        1825\t            v - a non-archimedean place of the base field of the curve, \n \t1826\t                or None, in which case the total nonarchimedian contribution \n \t1827\t                is returned \n \t1828\t         \n \t1829\t            prec - working precision, or None in which case the height  \n \t1830\t                is returned symbolically \n```\n\nI don't think this is so nice in Sphinx, since it is just preformated.  The vast majority of docstrings are formatted like as a list:\n\n```\n        1824            INPUT:\n        1825\t            - ``v`` - a non-archimedean place of the base field of the curve, \n \t1826\t              or None, in which case the total nonarchimedian contribution \n \t1827\t              is returned \n \t1828\t         \n \t1829\t            - ``prec`` - working precision, or None in which case the height  \n \t1830\t              is returned symbolically \n```\n\nNote that:\n   \n* only one colon after \"INPUT\"\n* a dash at the start of each line\n* the indentation is two spaces after the dash.",
     "created_at": "2010-03-12T01:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -169,9 +169,7 @@ I noticed in the docstrings that you specify INPUT variables like this:
  	1830	                is returned symbolically 
 ```
 
-
 I don't think this is so nice in Sphinx, since it is just preformated.  The vast majority of docstrings are formatted like as a list:
-
 
 ```
         1824            INPUT:
@@ -182,7 +180,6 @@ I don't think this is so nice in Sphinx, since it is just preformated.  The vast
  	1829	            - ``prec`` - working precision, or None in which case the height  
  	1830	              is returned symbolically 
 ```
-
 
 Note that:
    
@@ -235,7 +232,7 @@ I will later modify this, because I will need the exp() of the local heights for
 archive/issue_comments_076538.json:
 ```json
 {
-    "body": "Replying to [comment:7 wuthrich]:\n> Is there a reason the 0 is returned in QQ ?\n\nFor consistency with the original code, and for speed (not that it should matter much). \n\n> I will later modify this, because I will need the exp() of the local heights for non-archimedean primes as an element in QQ, if I want to implement the p-adic heights over number fields.\n\nYou can do exp of an element of QQ just fine.",
+    "body": "Replying to [comment:7 wuthrich]:\n> Is there a reason the 0 is returned in QQ ?\n\n\nFor consistency with the original code, and for speed (not that it should matter much). \n\n> I will later modify this, because I will need the exp() of the local heights for non-archimedean primes as an element in QQ, if I want to implement the p-adic heights over number fields.\n\n\nYou can do exp of an element of QQ just fine.",
     "created_at": "2010-03-12T10:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -247,9 +244,11 @@ archive/issue_comments_076538.json:
 Replying to [comment:7 wuthrich]:
 > Is there a reason the 0 is returned in QQ ?
 
+
 For consistency with the original code, and for speed (not that it should matter much). 
 
 > I will later modify this, because I will need the exp() of the local heights for non-archimedean primes as an element in QQ, if I want to implement the p-adic heights over number fields.
+
 
 You can do exp of an element of QQ just fine.
 
@@ -260,7 +259,7 @@ You can do exp of an element of QQ just fine.
 archive/issue_comments_076539.json:
 ```json
 {
-    "body": "Replying to [comment:8 robertwb]:\n> You can do exp of an element of QQ just fine. \n\nSure, that is not what I meant. I will put all your code of `nonarchimedian_local_height` into a helper function that returns r and Nv and then the main function will only take log. So that in the p-adic case I can take p-adic logs of the rational Nv.\n\nBut don't worry I will do that when I will implement p-adic height. It was only to remind myself that I should do that.",
+    "body": "Replying to [comment:8 robertwb]:\n> You can do exp of an element of QQ just fine. \n\n\nSure, that is not what I meant. I will put all your code of `nonarchimedian_local_height` into a helper function that returns r and Nv and then the main function will only take log. So that in the p-adic case I can take p-adic logs of the rational Nv.\n\nBut don't worry I will do that when I will implement p-adic height. It was only to remind myself that I should do that.",
     "created_at": "2010-03-12T10:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -271,6 +270,7 @@ archive/issue_comments_076539.json:
 
 Replying to [comment:8 robertwb]:
 > You can do exp of an element of QQ just fine. 
+
 
 Sure, that is not what I meant. I will put all your code of `nonarchimedian_local_height` into a helper function that returns r and Nv and then the main function will only take log. So that in the p-adic case I can take p-adic logs of the rational Nv.
 
@@ -343,7 +343,7 @@ By the way the diff of our two patches comes mainly from converting tabs to spac
 archive/issue_comments_076543.json:
 ```json
 {
-    "body": "Replying to [comment:11 wuthrich]:\n> I have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\nOK, I have expanded the normalization section, borrowing heavily from the explanation found in John Cremona's book. \n\n> I deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\nYes, you are correct. (There are examples to this effect.) \n\n> By the way the diff of our two patches comes mainly from converting tabs to spaces.\n\nThey were not of my doing, but thanks for expunging them.",
+    "body": "Replying to [comment:11 wuthrich]:\n> I have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write \"THE BSD formula\", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?\n\n\nOK, I have expanded the normalization section, borrowing heavily from the explanation found in John Cremona's book. \n\n> I deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.\n\n\nYes, you are correct. (There are examples to this effect.) \n\n> By the way the diff of our two patches comes mainly from converting tabs to spaces.\n\n\nThey were not of my doing, but thanks for expunging them.",
     "created_at": "2010-03-15T19:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8496",
     "type": "issue_comment",
@@ -355,13 +355,16 @@ archive/issue_comments_076543.json:
 Replying to [comment:11 wuthrich]:
 > I have put up a rebased patch with a few minor changes. But I have not included yet the documentation on the normalization. You write "THE BSD formula", but there is not a unique standard way of stating the conjecture, I fear. Also the question is whether or not you divide the height pairing by two or not. Could you clarify this ?
 
+
 OK, I have expanded the normalization section, borrowing heavily from the explanation found in John Cremona's book. 
 
 > I deleted the assumption that E was defined over Q. I don't think you will need that. Maybe it is needed that the model is integral, but I do not see where you would require the curve to be defined over Q. Please correct me if I am wrong.
 
+
 Yes, you are correct. (There are examples to this effect.) 
 
 > By the way the diff of our two patches comes mainly from converting tabs to spaces.
+
 
 They were not of my doing, but thanks for expunging them.
 

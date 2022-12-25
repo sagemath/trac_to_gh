@@ -3,7 +3,7 @@
 archive/issues_005538.json:
 ```json
 {
-    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d)\nsage: f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d.\nsage: d[2] = 'DD'\nsage: d\n{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d)\nsage: f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d.\nsage: d[2] = 'DD'\nsage: d\n{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
     "created_at": "2009-03-16T23:43:12Z",
     "labels": [
         "component: combinatorics",
@@ -36,7 +36,6 @@ sage: d
 sage: f
 Finite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}
 ```
-
 
 Florent
 
@@ -157,7 +156,7 @@ Difference of family.py before and after the patch.
 archive/issue_comments_042991.json:
 ```json
 {
-    "body": "On irc, it was decided that we should take chance of this patch to finish the cleanup of the interface of family. I've taken care of this but several issues are still open:\n\n1. The former implementation of family accepted a parameter \"name\" which was never used and which was there to provide a functionality similar to `SageObject.rename`. Therefore it should be removed. Is it ok to keep it and raise a warning so that people in sage-combinat adapt their code according to ?\n\n2. On the other hand, for `LazyFamily` I can use the name of the function to generate a proper name for the family. Here are some examples:\n\n```\nsage: def fun(i): 2*i\nsage: f = LazyFamily([3,4,7], fun); f\nLazy family (fun(i))_{i in [3, 4, 7]}\n\nsage: f = Family(Permutations(3), attrcall(\"to_lehmer_code\"), lazy=True); f\nLazy family (i.to_lehmer_code())_{i in Standard permutations of 3}\n\nsage: f = LazyFamily([3,4,7], lambda i: 2*i); f\nLazy family (<lambda>(i))_{i in [3, 4, 7]}\n```\n\nIs this ok ? In particular the last one used to be printed\n\n```\nLazy family (f(i))_{i in [3, 4, 7]}\n```\n\nI find `<lambda>` more explicit.\n\n3. To have a single interface it was also decided to add a keyword parameter lazy which call's `LazyFamily`. The parameter is False by for now default. I think it depends on the input. In particular if `index` is a combinatorial class which is not a finite one, then the former implementation turned lazy by default. Should we do that ? \n\nCheers,\n\nFlorent",
+    "body": "On irc, it was decided that we should take chance of this patch to finish the cleanup of the interface of family. I've taken care of this but several issues are still open:\n\n1. The former implementation of family accepted a parameter \"name\" which was never used and which was there to provide a functionality similar to `SageObject.rename`. Therefore it should be removed. Is it ok to keep it and raise a warning so that people in sage-combinat adapt their code according to ?\n\n2. On the other hand, for `LazyFamily` I can use the name of the function to generate a proper name for the family. Here are some examples:\n\n```\nsage: def fun(i): 2*i\nsage: f = LazyFamily([3,4,7], fun); f\nLazy family (fun(i))_{i in [3, 4, 7]}\n\nsage: f = Family(Permutations(3), attrcall(\"to_lehmer_code\"), lazy=True); f\nLazy family (i.to_lehmer_code())_{i in Standard permutations of 3}\n\nsage: f = LazyFamily([3,4,7], lambda i: 2*i); f\nLazy family (<lambda>(i))_{i in [3, 4, 7]}\n```\nIs this ok ? In particular the last one used to be printed\n\n```\nLazy family (f(i))_{i in [3, 4, 7]}\n```\nI find `<lambda>` more explicit.\n\n3. To have a single interface it was also decided to add a keyword parameter lazy which call's `LazyFamily`. The parameter is False by for now default. I think it depends on the input. In particular if `index` is a combinatorial class which is not a finite one, then the former implementation turned lazy by default. Should we do that ? \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-10T17:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -183,13 +182,11 @@ Lazy family (i.to_lehmer_code())_{i in Standard permutations of 3}
 sage: f = LazyFamily([3,4,7], lambda i: 2*i); f
 Lazy family (<lambda>(i))_{i in [3, 4, 7]}
 ```
-
 Is this ok ? In particular the last one used to be printed
 
 ```
 Lazy family (f(i))_{i in [3, 4, 7]}
 ```
-
 I find `<lambda>` more explicit.
 
 3. To have a single interface it was also decided to add a keyword parameter lazy which call's `LazyFamily`. The parameter is False by for now default. I think it depends on the input. In particular if `index` is a combinatorial class which is not a finite one, then the former implementation turned lazy by default. Should we do that ? 
@@ -458,7 +455,7 @@ archive/issue_events_012998.json:
 archive/issue_comments_043001.json:
 ```json
 {
-    "body": "This patch breaks a lot of pickles:\n\n```\n    Failed:\n    _class__sage_combinat_family_FiniteFamilyWithHiddenKeys__.sobj\n    _class__sage_combinat_family_FiniteFamily__.sobj\n    _class__sage_combinat_family_LazyFamily__.sobj\n    _class__sage_combinat_finite_class_FiniteCombinatorialClass_l__.sobj\n    _class__sage_combinat_free_module_CombinatorialFreeModuleElement__.sobj\n    _class__sage_combinat_free_module_CombinatorialFreeModule__.sobj\n    _class__sage_combinat_root_system_root_space_RootSpace__.sobj\n    _class__sage_combinat_root_system_type_A_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_C_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_E_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_F_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_G_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_reducible_CartanType__.sobj\n    _class__sage_combinat_root_system_weight_space_WeightSpace__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeightRing__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeylCharacterRing_class__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeylCharacter__.sobj\n    _class__sage_combinat_root_system_weyl_group_WeylGroupElement__.sobj\n    _class__sage_combinat_root_system_weyl_group_WeylGroup_gens__.sobj\n    Successfully unpickled 464 objects.\n    Failed to unpickle 19 objects.\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch breaks a lot of pickles:\n\n```\n    Failed:\n    _class__sage_combinat_family_FiniteFamilyWithHiddenKeys__.sobj\n    _class__sage_combinat_family_FiniteFamily__.sobj\n    _class__sage_combinat_family_LazyFamily__.sobj\n    _class__sage_combinat_finite_class_FiniteCombinatorialClass_l__.sobj\n    _class__sage_combinat_free_module_CombinatorialFreeModuleElement__.sobj\n    _class__sage_combinat_free_module_CombinatorialFreeModule__.sobj\n    _class__sage_combinat_root_system_root_space_RootSpace__.sobj\n    _class__sage_combinat_root_system_type_A_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_C_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_E_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_F_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_G_ambient_space__.sobj\n    _class__sage_combinat_root_system_type_reducible_CartanType__.sobj\n    _class__sage_combinat_root_system_weight_space_WeightSpace__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeightRing__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeylCharacterRing_class__.sobj\n    _class__sage_combinat_root_system_weyl_characters_WeylCharacter__.sobj\n    _class__sage_combinat_root_system_weyl_group_WeylGroupElement__.sobj\n    _class__sage_combinat_root_system_weyl_group_WeylGroup_gens__.sobj\n    Successfully unpickled 464 objects.\n    Failed to unpickle 19 objects.\n```\n\nCheers,\n\nMichael",
     "created_at": "2009-04-14T23:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
@@ -493,7 +490,6 @@ This patch breaks a lot of pickles:
     Successfully unpickled 464 objects.
     Failed to unpickle 19 objects.
 ```
-
 
 Cheers,
 

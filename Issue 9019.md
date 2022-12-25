@@ -3,7 +3,7 @@
 archive/issues_009019.json:
 ```json
 {
-    "body": "Assignee: @nthiery\n\nKeywords: doctest map composition\n\nApart from full doctest coverage for sage.categories.map, the patch provides the following:\n\n1. Test for injectivity and surjectivity of `MatrixMorphism`:\n\n```\nsage: V1 = QQ^2\nsage: V2 = QQ^3\nsage: phi = V1.hom(Matrix([[1,2],[3,4],[5,6]]),V2)\nsage: phi.is_injective()\nTrue\nsage: phi.is_surjective()\nFalse\nsage: psi = V2.hom(Matrix([[1,2,3],[4,5,6]]),V1)\nsage: psi.is_injective()\nFalse\nsage: psi.is_surjective()\nTrue\n```\n\n\n2. Composition of a `RingHomomorphism_im_gens` with another ring homomorphism (this used to return a `FormalCompositeMap`, which is not very efficient):\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<a,b> = QQ[]\nsage: f = R.hom([a+b,a-b])\nsage: g = S.hom(Frac(S))\nsage: g*f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: x |--> a + b\n        y |--> a - b\nsage: h = S.hom([x+y,x-y])\nsage: h*f\nRing endomorphism of Multivariate Polynomial Ring in x, y over Rational Field\n  Defn: x |--> 2*x\n        y |--> 2*y\n```\n\n\n3. Comparison of `FormalCompositeMap`s:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<a,b> = QQ[]\nsage: f = R.hom([a+b,a-b])\nsage: g = S.hom([x+y,x-y])\nsage: from sage.categories.map import FormalCompositeMap\nsage: H = Hom(R,R,Rings())\nsage: m = FormalCompositeMap(H,f,g)\nsage: m == loads(dumps(m))  # this used to be False!\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9019\n\n",
+    "body": "Assignee: @nthiery\n\nKeywords: doctest map composition\n\nApart from full doctest coverage for sage.categories.map, the patch provides the following:\n\n1. Test for injectivity and surjectivity of `MatrixMorphism`:\n\n```\nsage: V1 = QQ^2\nsage: V2 = QQ^3\nsage: phi = V1.hom(Matrix([[1,2],[3,4],[5,6]]),V2)\nsage: phi.is_injective()\nTrue\nsage: phi.is_surjective()\nFalse\nsage: psi = V2.hom(Matrix([[1,2,3],[4,5,6]]),V1)\nsage: psi.is_injective()\nFalse\nsage: psi.is_surjective()\nTrue\n```\n\n2. Composition of a `RingHomomorphism_im_gens` with another ring homomorphism (this used to return a `FormalCompositeMap`, which is not very efficient):\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<a,b> = QQ[]\nsage: f = R.hom([a+b,a-b])\nsage: g = S.hom(Frac(S))\nsage: g*f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: x |--> a + b\n        y |--> a - b\nsage: h = S.hom([x+y,x-y])\nsage: h*f\nRing endomorphism of Multivariate Polynomial Ring in x, y over Rational Field\n  Defn: x |--> 2*x\n        y |--> 2*y\n```\n\n3. Comparison of `FormalCompositeMap`s:\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<a,b> = QQ[]\nsage: f = R.hom([a+b,a-b])\nsage: g = S.hom([x+y,x-y])\nsage: from sage.categories.map import FormalCompositeMap\nsage: H = Hom(R,R,Rings())\nsage: m = FormalCompositeMap(H,f,g)\nsage: m == loads(dumps(m))  # this used to be False!\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9019\n\n",
     "created_at": "2010-05-22T17:34:21Z",
     "labels": [
         "component: categories",
@@ -39,7 +39,6 @@ sage: psi.is_surjective()
 True
 ```
 
-
 2. Composition of a `RingHomomorphism_im_gens` with another ring homomorphism (this used to return a `FormalCompositeMap`, which is not very efficient):
 
 ```
@@ -60,7 +59,6 @@ Ring endomorphism of Multivariate Polynomial Ring in x, y over Rational Field
         y |--> 2*y
 ```
 
-
 3. Comparison of `FormalCompositeMap`s:
 
 ```
@@ -74,7 +72,6 @@ sage: m = FormalCompositeMap(H,f,g)
 sage: m == loads(dumps(m))  # this used to be False!
 True
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9019
@@ -164,7 +161,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083324.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> Looks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()\n\nDear Robert,\n\nThank you for the review and the example!\n\nI don't know if I am in the position to approve your example, but it works for me, so that I take this as a positive review.\n\nIf nobody opposes, I'll insert your name as a reviewer and mark the ticket accordingly.\n\nCheers,\n\nSimon",
+    "body": "Replying to [comment:2 robertwb]:\n> Looks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()\n\n\nDear Robert,\n\nThank you for the review and the example!\n\nI don't know if I am in the position to approve your example, but it works for me, so that I take this as a positive review.\n\nIf nobody opposes, I'll insert your name as a reviewer and mark the ticket accordingly.\n\nCheers,\n\nSimon",
     "created_at": "2010-05-25T07:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9019",
     "type": "issue_comment",
@@ -175,6 +172,7 @@ archive/issue_comments_083324.json:
 
 Replying to [comment:2 robertwb]:
 > Looks good, positive review, modulo approval of my tiny referee patch that adds an actual example for Map.section()
+
 
 Dear Robert,
 

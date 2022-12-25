@@ -3,7 +3,7 @@
 archive/issues_001951.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: P = [g[0] for g in K.factor_integer(5)]; P\n[Fractional ideal (-i - 2), Fractional ideal (2*i + 1)]\nsage: a = 1/(1+2*i)\nsage: K = [g.residue_field() for g in P]; K\n[Residue field of Fractional ideal (-i - 2), Residue field of Fractional ideal (2*i + 1)]\nsage: F = K[0]\nsage: a.valuation(P[0])\n0\nsage: F(i/7)\n4\nsage: F(a)\nTraceback (most recent call last):\n...\nZeroDivisionError: Inverse does not exist.\n```\n\nThe problem is that a in terms of a basis for the maximal order still has\nsome 5's in the denominator, even though a is P[0]-integral.  To fix this\nin general, one could:\n  \n1. Find an element b of the ring of integers that is 1 modulo P[0] and is 0 modulo all the other P[i] (using the not-implemented-right now CRT),\n\n2. Multiply a through by some power of b.\n\n3. Reduce.  \n\n4. Divide back through by the reduction of b.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1951\n\n",
     "created_at": "2008-01-27T20:40:44Z",
     "labels": [
         "component: number theory",
@@ -37,7 +37,6 @@ Traceback (most recent call last):
 ...
 ZeroDivisionError: Inverse does not exist.
 ```
-
 
 The problem is that a in terms of a basis for the maximal order still has
 some 5's in the denominator, even though a is P[0]-integral.  To fix this
@@ -142,7 +141,7 @@ Attachment [1951-residues-1.patch](tarball://root/attachments/some-uuid/ticket19
 archive/issue_comments_012389.json:
 ```json
 {
-    "body": "It's a small thing but I just noticed that the number field function residue_field() has this definition:\n\n```\n    def residue_field(self, prime, names = None, check = False):\n```\n\nwhere the \"check\" parameter claims to control whether  \"prime\" really is prime, but this is ignored.  It should be passed down through the call to  `sage.rings.residue_field.ResidueField(prime, names = names)`\nwhich does honour the check parameter.\n\nExample:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: Q = K.ideal(5)\nsage: Q.is_prime()\nFalse\nsage: K.residue_field(Q, check=False)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/john/sage-3.1.2.rc1/devel/<ipython console> in <module>()\n\n/home/john/sage-3.1.2.rc1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in residue_field(self, prime, names, check)\n   3000             raise ValueError, \"prime must be a prime ideal of self\"\n   3001         import sage.rings.residue_field\n-> 3002         return sage.rings.residue_field.ResidueField(prime, names = names)\n   3003 \n   3004     def signature(self):\n\n/home/john/sage-3.1.2.rc1/devel/residue_field.pyx in sage.rings.residue_field.ResidueField (sage/rings/residue_field.c:2778)()\n\nValueError: p must be prime\n```\n\n\nThe second patch fixes this.  Note that the default was \"check=False\", while the called function ResidueField() has its default as \"check=True\".  I thought it safer to change the deafult to \"check=True\" since this makes the new default behaviour like the old behaviour.  (If you use check=False and the ideal is not prime, the first error which arises is a bit obscure:\n\n```\n    AttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\n```\n\nsince smallest_integer() is defined only for prime ideals.  But something has to go wrong at some point in this situation, and at least now it will only happen when the user has deliberately turned off checking.",
+    "body": "It's a small thing but I just noticed that the number field function residue_field() has this definition:\n\n```\n    def residue_field(self, prime, names = None, check = False):\n```\nwhere the \"check\" parameter claims to control whether  \"prime\" really is prime, but this is ignored.  It should be passed down through the call to  `sage.rings.residue_field.ResidueField(prime, names = names)`\nwhich does honour the check parameter.\n\nExample:\n\n```\nsage: K.<i> = NumberField(x^2 + 1)\nsage: Q = K.ideal(5)\nsage: Q.is_prime()\nFalse\nsage: K.residue_field(Q, check=False)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/john/sage-3.1.2.rc1/devel/<ipython console> in <module>()\n\n/home/john/sage-3.1.2.rc1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in residue_field(self, prime, names, check)\n   3000             raise ValueError, \"prime must be a prime ideal of self\"\n   3001         import sage.rings.residue_field\n-> 3002         return sage.rings.residue_field.ResidueField(prime, names = names)\n   3003 \n   3004     def signature(self):\n\n/home/john/sage-3.1.2.rc1/devel/residue_field.pyx in sage.rings.residue_field.ResidueField (sage/rings/residue_field.c:2778)()\n\nValueError: p must be prime\n```\n\nThe second patch fixes this.  Note that the default was \"check=False\", while the called function ResidueField() has its default as \"check=True\".  I thought it safer to change the deafult to \"check=True\" since this makes the new default behaviour like the old behaviour.  (If you use check=False and the ideal is not prime, the first error which arises is a bit obscure:\n\n```\n    AttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\n```\nsince smallest_integer() is defined only for prime ideals.  But something has to go wrong at some point in this situation, and at least now it will only happen when the user has deliberately turned off checking.",
     "created_at": "2008-09-10T10:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1951",
     "type": "issue_comment",
@@ -156,7 +155,6 @@ It's a small thing but I just noticed that the number field function residue_fie
 ```
     def residue_field(self, prime, names = None, check = False):
 ```
-
 where the "check" parameter claims to control whether  "prime" really is prime, but this is ignored.  It should be passed down through the call to  `sage.rings.residue_field.ResidueField(prime, names = names)`
 which does honour the check parameter.
 
@@ -185,13 +183,11 @@ ValueError                                Traceback (most recent call last)
 ValueError: p must be prime
 ```
 
-
 The second patch fixes this.  Note that the default was "check=False", while the called function ResidueField() has its default as "check=True".  I thought it safer to change the deafult to "check=True" since this makes the new default behaviour like the old behaviour.  (If you use check=False and the ideal is not prime, the first error which arises is a bit obscure:
 
 ```
     AttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'
 ```
-
 since smallest_integer() is defined only for prime ideals.  But something has to go wrong at some point in this situation, and at least now it will only happen when the user has deliberately turned off checking.
 
 

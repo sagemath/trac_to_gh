@@ -3,7 +3,7 @@
 archive/issues_004687.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\n\n```\n\nsage: E=EllipticCurve(GF(2),[0, 0, 1, 1, 1])\nsage: E\nElliptic Curve defined by y^2 + y = x^3 + x +1 over Finite Field of size 2\nsage: E.points()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Volumes/Panther/sage/<ipython console> in <module>()\n\n/Volumes/Panther/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.pyc in points(self)\n    214         from sage.structure.sequence import Sequence\n    215         if self.base_ring().is_prime_field():\n--> 216             v = self._points_via_group_structure()\n    217         else:\n    218             v =self._points_fast_sqrt()\n\n/Volumes/Panther/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.pyc in _points_via_group_structure(self)\n    165 \n    166         H0=[self(0)]\n--> 167         for m in range(1,ni[0]): H0.append(H0[-1]+pts[0])\n    168         if len(ni)==1:   # cyclic case\n    169             return H0\n\nIndexError: list index out of range\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4687\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\n```\n\nsage: E=EllipticCurve(GF(2),[0, 0, 1, 1, 1])\nsage: E\nElliptic Curve defined by y^2 + y = x^3 + x +1 over Finite Field of size 2\nsage: E.points()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Volumes/Panther/sage/<ipython console> in <module>()\n\n/Volumes/Panther/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.pyc in points(self)\n    214         from sage.structure.sequence import Sequence\n    215         if self.base_ring().is_prime_field():\n--> 216             v = self._points_via_group_structure()\n    217         else:\n    218             v =self._points_fast_sqrt()\n\n/Volumes/Panther/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.pyc in _points_via_group_structure(self)\n    165 \n    166         H0=[self(0)]\n--> 167         for m in range(1,ni[0]): H0.append(H0[-1]+pts[0])\n    168         if len(ni)==1:   # cyclic case\n    169             return H0\n\nIndexError: list index out of range\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4687\n\n",
     "created_at": "2008-12-03T18:00:27Z",
     "labels": [
         "component: algebra",
@@ -19,7 +19,6 @@ archive/issues_004687.json:
 Assignee: tbd
 
 CC:  @JohnCremona
-
 
 ```
 
@@ -49,7 +48,6 @@ IndexError                                Traceback (most recent call last)
 IndexError: list index out of range
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4687
 

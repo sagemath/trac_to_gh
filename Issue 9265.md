@@ -294,7 +294,7 @@ Apply trac_9265_tableaux_categories_am.patch
 archive/issue_comments_087076.json:
 ```json
 {
-    "body": "Replying to [comment:15 andrew.mathas]:\n> It looks like the colon after the \"Apply\" above is confusing the patchbot. So let's try:\n> \n> Apply trac_9265_tableaux_categories_am.patch\n\nDear Andrew,\n\nI just tried to apply the above patch to a clean version of sage-5.3.beta0 and got a failure\n\napplying trac_9265_tableaux_categories_am.patch\npatching file sage/combinat/tableau.py\nHunk #5 FAILED at 260\nHunk #6 succeeded at 268 with fuzz 2 (offset -4 lines).\nHunk #40 FAILED at 4110\n2 out of 40 hunks FAILED -- saving rejects to file sage/combinat/tableau.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_9265_tableaux_categories_am.patch\n\nIf you do the same, you can look at sage/combinat/tableau.py.rej to see what the conflict is.\n\nAnne",
+    "body": "Replying to [comment:15 andrew.mathas]:\n> It looks like the colon after the \"Apply\" above is confusing the patchbot. So let's try:\n> \n> Apply trac_9265_tableaux_categories_am.patch\n\n\nDear Andrew,\n\nI just tried to apply the above patch to a clean version of sage-5.3.beta0 and got a failure\n\napplying trac_9265_tableaux_categories_am.patch\npatching file sage/combinat/tableau.py\nHunk #5 FAILED at 260\nHunk #6 succeeded at 268 with fuzz 2 (offset -4 lines).\nHunk #40 FAILED at 4110\n2 out of 40 hunks FAILED -- saving rejects to file sage/combinat/tableau.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_9265_tableaux_categories_am.patch\n\nIf you do the same, you can look at sage/combinat/tableau.py.rej to see what the conflict is.\n\nAnne",
     "created_at": "2012-08-12T22:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -307,6 +307,7 @@ Replying to [comment:15 andrew.mathas]:
 > It looks like the colon after the "Apply" above is confusing the patchbot. So let's try:
 > 
 > Apply trac_9265_tableaux_categories_am.patch
+
 
 Dear Andrew,
 
@@ -392,7 +393,7 @@ What is the accepted practise here?
 archive/issue_comments_087079.json:
 ```json
 {
-    "body": "Replying to [comment:18 andrew.mathas]:\n> As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? \n> \n> What is the accepted practise here?\n\nDear Andrew,\n\nDid you actually upload the new version of the patch to the sage-combinat queue? I could not see it there. Usually trailing white spaces should be removed. But please check that the whole queue still applies (by trying hg qpush -a) in case you will post the patch there. If it causes many conflicts, it might be better not to remove them at this point.\n\nThanks,\n\nAnne",
+    "body": "Replying to [comment:18 andrew.mathas]:\n> As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? \n> \n> What is the accepted practise here?\n\n\nDear Andrew,\n\nDid you actually upload the new version of the patch to the sage-combinat queue? I could not see it there. Usually trailing white spaces should be removed. But please check that the whole queue still applies (by trying hg qpush -a) in case you will post the patch there. If it causes many conflicts, it might be better not to remove them at this point.\n\nThanks,\n\nAnne",
     "created_at": "2012-08-13T21:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -405,6 +406,7 @@ Replying to [comment:18 andrew.mathas]:
 > As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? 
 > 
 > What is the accepted practise here?
+
 
 Dear Andrew,
 
@@ -490,7 +492,7 @@ Apply trac_9265_tableaux_categories_am.patch
 archive/issue_comments_087082.json:
 ```json
 {
-    "body": "Hi Andrew,\n\nThank you for your work on this. I ran sage -testall and got the following doctest failure:\n\n\n```\nsage -t  devel/sage-sf/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/Applications/sage-5.3.beta0/devel/sage-sf/sage/structure/sage_object.pyx\", line 1114:\n    sage: sage.structure.sage_object.unpickle_all()  # (4s on sage.math, 2011)\nExpected:\n    doctest:... DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\n    See http://trac.sagemath.org/4260 for details.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_affine_AffineCrystalFromClassicalAndPromotion_with_category_element_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_tensor_product_CrystalOfTableaux_with_category_element_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_tensor_product_TensorProductOfCrystalsWithGenerators_with_category__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_nmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_p__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_pmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_StandardSkewTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_nmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_p__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_pmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_StandardTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_StandardTableaux_partition__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_Tableau_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_Tableaux_n__.sobj')\n    doctest:1172: DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\n    See http://trac.sagemath.org/4260 for details.\n    Failed:\n    _class__sage_combinat_crystals_affine_AffineCrystalFromClassicalAndPromotion_with_category_element_class__.sobj\n    _class__sage_combinat_crystals_tensor_product_CrystalOfTableaux_with_category_element_class__.sobj\n    _class__sage_combinat_crystals_tensor_product_TensorProductOfCrystalsWithGenerators_with_category__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_n__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_nmu__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_p__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_pmu__.sobj\n    _class__sage_combinat_skew_tableau_StandardSkewTableaux_n__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_n__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_nmu__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_p__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_pmu__.sobj\n    _class__sage_combinat_tableau_StandardTableaux_n__.sobj\n    _class__sage_combinat_tableau_StandardTableaux_partition__.sobj\n    _class__sage_combinat_tableau_Tableau_class__.sobj\n    _class__sage_combinat_tableau_Tableaux_n__.sobj\n    Successfully unpickled 571 objects.\n    Failed to unpickle 16 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_25\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/anne/.sage/tmp/lolita_4.local-73054/sage_object_85063.py\n\t [14.0 s]\n```\n\n\nI suppose this is due to your renaming of the classes. Also, I am not sure, but you might have to put in deprecation warnings if certain parent classes suddenly disappear. The new deprecation syntax is available here http://trac.sagemath.org/sage_trac/ticket/13109.\n\nBest,\n\nAnne",
+    "body": "Hi Andrew,\n\nThank you for your work on this. I ran sage -testall and got the following doctest failure:\n\n```\nsage -t  devel/sage-sf/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/Applications/sage-5.3.beta0/devel/sage-sf/sage/structure/sage_object.pyx\", line 1114:\n    sage: sage.structure.sage_object.unpickle_all()  # (4s on sage.math, 2011)\nExpected:\n    doctest:... DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\n    See http://trac.sagemath.org/4260 for details.\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_affine_AffineCrystalFromClassicalAndPromotion_with_category_element_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_tensor_product_CrystalOfTableaux_with_category_element_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_crystals_tensor_product_TensorProductOfCrystalsWithGenerators_with_category__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_nmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_p__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_SemistandardSkewTableaux_pmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_skew_tableau_StandardSkewTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_nmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_p__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_SemistandardTableaux_pmu__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_StandardTableaux_n__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_StandardTableaux_partition__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_Tableau_class__.sobj')\n     * unpickle failure: load('/Users/anne/.sage/temp/lolita_4.local/85064/dir_2/pickle_jar/_class__sage_combinat_tableau_Tableaux_n__.sobj')\n    doctest:1172: DeprecationWarning: This class is replaced by Matrix_modn_dense_float/Matrix_modn_dense_double.\n    See http://trac.sagemath.org/4260 for details.\n    Failed:\n    _class__sage_combinat_crystals_affine_AffineCrystalFromClassicalAndPromotion_with_category_element_class__.sobj\n    _class__sage_combinat_crystals_tensor_product_CrystalOfTableaux_with_category_element_class__.sobj\n    _class__sage_combinat_crystals_tensor_product_TensorProductOfCrystalsWithGenerators_with_category__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_n__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_nmu__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_p__.sobj\n    _class__sage_combinat_skew_tableau_SemistandardSkewTableaux_pmu__.sobj\n    _class__sage_combinat_skew_tableau_StandardSkewTableaux_n__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_n__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_nmu__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_p__.sobj\n    _class__sage_combinat_tableau_SemistandardTableaux_pmu__.sobj\n    _class__sage_combinat_tableau_StandardTableaux_n__.sobj\n    _class__sage_combinat_tableau_StandardTableaux_partition__.sobj\n    _class__sage_combinat_tableau_Tableau_class__.sobj\n    _class__sage_combinat_tableau_Tableaux_n__.sobj\n    Successfully unpickled 571 objects.\n    Failed to unpickle 16 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_25\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/anne/.sage/tmp/lolita_4.local-73054/sage_object_85063.py\n\t [14.0 s]\n```\n\nI suppose this is due to your renaming of the classes. Also, I am not sure, but you might have to put in deprecation warnings if certain parent classes suddenly disappear. The new deprecation syntax is available here http://trac.sagemath.org/sage_trac/ticket/13109.\n\nBest,\n\nAnne",
     "created_at": "2012-08-15T05:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -502,7 +504,6 @@ archive/issue_comments_087082.json:
 Hi Andrew,
 
 Thank you for your work on this. I ran sage -testall and got the following doctest failure:
-
 
 ```
 sage -t  devel/sage-sf/sage/structure/sage_object.pyx
@@ -560,7 +561,6 @@ For whitespace errors, see the file /Users/anne/.sage/tmp/lolita_4.local-73054/s
 	 [14.0 s]
 ```
 
-
 I suppose this is due to your renaming of the classes. Also, I am not sure, but you might have to put in deprecation warnings if certain parent classes suddenly disappear. The new deprecation syntax is available here http://trac.sagemath.org/sage_trac/ticket/13109.
 
 Best,
@@ -574,7 +574,7 @@ Anne
 archive/issue_comments_087083.json:
 ```json
 {
-    "body": "Hi again,\n\nWhen building the docs using \n\n\n```\nsage -docbuild reference html\n```\n\n\nI got the following warning, which should most likely be fixed\n\n\n```\n/Applications/sage-5.3.beta0/local/lib/python2.7/site-packages/sage/combinat/tableau.py:docstring of sage.combinat.tableau.Tableau.lambda_katabolism:1: WARNING: Inline literal start-string without end-string.\n```\n\n\nBest,\n\nAnne",
+    "body": "Hi again,\n\nWhen building the docs using \n\n```\nsage -docbuild reference html\n```\n\nI got the following warning, which should most likely be fixed\n\n```\n/Applications/sage-5.3.beta0/local/lib/python2.7/site-packages/sage/combinat/tableau.py:docstring of sage.combinat.tableau.Tableau.lambda_katabolism:1: WARNING: Inline literal start-string without end-string.\n```\n\nBest,\n\nAnne",
     "created_at": "2012-08-15T05:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -587,19 +587,15 @@ Hi again,
 
 When building the docs using 
 
-
 ```
 sage -docbuild reference html
 ```
 
-
 I got the following warning, which should most likely be fixed
-
 
 ```
 /Applications/sage-5.3.beta0/local/lib/python2.7/site-packages/sage/combinat/tableau.py:docstring of sage.combinat.tableau.Tableau.lambda_katabolism:1: WARNING: Inline literal start-string without end-string.
 ```
-
 
 Best,
 
@@ -814,7 +810,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_087093.json:
 ```json
 {
-    "body": "Replying to [comment:18 andrew.mathas]:\n> As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? \n> \n> What is the accepted practise here?\n\nFor the record: removing all trailing white spaces is indeed likely to produce conflicts.\nSo I usually just make sure in my patch to not introduce new ones (sometimes, I edit the patch directly to remove those that I introduced accidently), and to remove those that are very close to the lines I change anyway.\n\nNow in the case at hand, you currently kind of own the tableau file, since everybody knows that you are working hard on it, and that it is thus not safe playing with it. Then, the potential conflicts are with yourself, so you are free to take whichever course of action which is practical for you. \n\nThanks for your work!\n                                  Nicolas",
+    "body": "Replying to [comment:18 andrew.mathas]:\n> As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? \n> \n> What is the accepted practise here?\n\n\nFor the record: removing all trailing white spaces is indeed likely to produce conflicts.\nSo I usually just make sure in my patch to not introduce new ones (sometimes, I edit the patch directly to remove those that I introduced accidently), and to remove those that are very close to the lines I change anyway.\n\nNow in the case at hand, you currently kind of own the tableau file, since everybody knows that you are working hard on it, and that it is thus not safe playing with it. Then, the potential conflicts are with yourself, so you are free to take whichever course of action which is practical for you. \n\nThanks for your work!\n                                  Nicolas",
     "created_at": "2012-08-19T18:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -827,6 +823,7 @@ Replying to [comment:18 andrew.mathas]:
 > As the patchbot was complaining, I just uploaded a new version of the patch which deletes all trailing white space. Probably this is unwise as previously I used to have my editor do this automatically but I found that it meant that I had to rebase my patch all of the time so this will probably cause havoc further down the queue? 
 > 
 > What is the accepted practise here?
+
 
 For the record: removing all trailing white spaces is indeed likely to produce conflicts.
 So I usually just make sure in my patch to not introduce new ones (sometimes, I edit the patch directly to remove those that I introduced accidently), and to remove those that are very close to the lines I change anyway.
@@ -949,7 +946,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_087098.json:
 ```json
 {
-    "body": "Doctest failure:\n\n```\nsage -t  -force_lib devel/sage/sage/combinat/tableau.py\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta0/devel/sage-main/sage/combinat/tableau.py\", line 4257:\n    sage: sage.combinat.tableau.StandardTableaux_partition([2,1])\nExpected:\n    doctest:1: DeprecationWarning: this class is deprecated. Use StandardTableaux_size instead\n    See http://trac.sagemath.org/9265 for details.\n    Standard tableaux of shape [2, 1]\nGot:\n    doctest:1: DeprecationWarning: this class is deprecated. Use StandardTableaux_shape instead\n    See http://trac.sagemath.org/9265 for details.\n    Standard tableaux of shape [2, 1]\n**********************************************************************\n```\n",
+    "body": "Doctest failure:\n\n```\nsage -t  -force_lib devel/sage/sage/combinat/tableau.py\n**********************************************************************\nFile \"/release/merger/sage-5.4.beta0/devel/sage-main/sage/combinat/tableau.py\", line 4257:\n    sage: sage.combinat.tableau.StandardTableaux_partition([2,1])\nExpected:\n    doctest:1: DeprecationWarning: this class is deprecated. Use StandardTableaux_size instead\n    See http://trac.sagemath.org/9265 for details.\n    Standard tableaux of shape [2, 1]\nGot:\n    doctest:1: DeprecationWarning: this class is deprecated. Use StandardTableaux_shape instead\n    See http://trac.sagemath.org/9265 for details.\n    Standard tableaux of shape [2, 1]\n**********************************************************************\n```",
     "created_at": "2012-08-29T11:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -975,7 +972,6 @@ Got:
     Standard tableaux of shape [2, 1]
 **********************************************************************
 ```
-
 
 
 
@@ -1074,7 +1070,7 @@ archive/issue_events_022829.json:
 archive/issue_comments_087103.json:
 ```json
 {
-    "body": "This patch badly abuses `assert` and `AssertionError`.  `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n        sage: Tableau([[1],[2,3]])\n        Traceback (most recent call last):\n        ...\n        AssertionError: A tableau must be a list of lists of weakly decreasing length.\n```\n\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
+    "body": "This patch badly abuses `assert` and `AssertionError`.  `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug in the program.\n\nFor example:\n\n```\n        sage: Tableau([[1],[2,3]])\n        Traceback (most recent call last):\n        ...\n        AssertionError: A tableau must be a list of lists of weakly decreasing length.\n```\nThis is a simple user mistake, for which `assert` is not right.\n\nI think this must be fixed.",
     "created_at": "2012-09-24T07:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1093,7 +1089,6 @@ For example:
         ...
         AssertionError: A tableau must be a list of lists of weakly decreasing length.
 ```
-
 This is a simple user mistake, for which `assert` is not right.
 
 I think this must be fixed.
@@ -1105,7 +1100,7 @@ I think this must be fixed.
 archive/issue_comments_087104.json:
 ```json
 {
-    "body": "Hi Jeroen,\n\nReplying to [comment:42 jdemeyer]:\n> This patch badly abuses `assert` and `AssertionError`.  `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> {{{\n>         sage: Tableau([[1],[2,3]])\n>         Traceback (most recent call last):\n>         ...\n>         AssertionError: A tableau must be a list of lists of weakly decreasing length.\n> }}}\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\nThere is no control flow involved. It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations. The error message is nice and explicit. Altogether, given the discussion on sage-devel, do we agree that it's ok as such?\n\nCheers,\n                                           Nicolas",
+    "body": "Hi Jeroen,\n\nReplying to [comment:42 jdemeyer]:\n> This patch badly abuses `assert` and `AssertionError`.  `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug in the program.\n> \n> For example:\n> \n> ```\n>         sage: Tableau([[1],[2,3]])\n>         Traceback (most recent call last):\n>         ...\n>         AssertionError: A tableau must be a list of lists of weakly decreasing length.\n> ```\n> This is a simple user mistake, for which `assert` is not right.\n> \n> I think this must be fixed.\n\n\nThere is no control flow involved. It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations. The error message is nice and explicit. Altogether, given the discussion on sage-devel, do we agree that it's ok as such?\n\nCheers,\n                                           Nicolas",
     "created_at": "2012-09-24T09:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1120,15 +1115,17 @@ Replying to [comment:42 jdemeyer]:
 > This patch badly abuses `assert` and `AssertionError`.  `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug in the program.
 > 
 > For example:
-> {{{
+> 
+> ```
 >         sage: Tableau([[1],[2,3]])
 >         Traceback (most recent call last):
 >         ...
 >         AssertionError: A tableau must be a list of lists of weakly decreasing length.
-> }}}
+> ```
 > This is a simple user mistake, for which `assert` is not right.
 > 
 > I think this must be fixed.
+
 
 There is no control flow involved. It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations. The error message is nice and explicit. Altogether, given the discussion on sage-devel, do we agree that it's ok as such?
 
@@ -1142,7 +1139,7 @@ Cheers,
 archive/issue_comments_087105.json:
 ```json
 {
-    "body": "Replying to [comment:43 nthiery]:\n> There is no control flow involved. \nI disagree.\n\n```\ntry:\n    ...\nexcept AssertionError:\n    ...\n```\n\nis certainly control flow.\n\n> It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.\nAre these *constructors* really that speed-critical?  Of the 3 patches (#9265, #8899, #5457), this one is certainly the worst offender.",
+    "body": "Replying to [comment:43 nthiery]:\n> There is no control flow involved. \n\nI disagree.\n\n```\ntry:\n    ...\nexcept AssertionError:\n    ...\n```\nis certainly control flow.\n\n> It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.\n\nAre these *constructors* really that speed-critical?  Of the 3 patches (#9265, #8899, #5457), this one is certainly the worst offender.",
     "created_at": "2012-09-24T10:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1153,6 +1150,7 @@ archive/issue_comments_087105.json:
 
 Replying to [comment:43 nthiery]:
 > There is no control flow involved. 
+
 I disagree.
 
 ```
@@ -1161,10 +1159,10 @@ try:
 except AssertionError:
     ...
 ```
-
 is certainly control flow.
 
 > It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.
+
 Are these *constructors* really that speed-critical?  Of the 3 patches (#9265, #8899, #5457), this one is certainly the worst offender.
 
 
@@ -1174,7 +1172,7 @@ Are these *constructors* really that speed-critical?  Of the 3 patches (#9265, #
 archive/issue_comments_087106.json:
 ```json
 {
-    "body": "Replying to [comment:43 nthiery]:\n> speed matters because it's used a lot at a low level in combinatorics calculations.\nIf speed matters that much, you could probably get a lot more speedup by using Cython as opposed to less argument checking.",
+    "body": "Replying to [comment:43 nthiery]:\n> speed matters because it's used a lot at a low level in combinatorics calculations.\n\nIf speed matters that much, you could probably get a lot more speedup by using Cython as opposed to less argument checking.",
     "created_at": "2012-09-24T10:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1185,6 +1183,7 @@ archive/issue_comments_087106.json:
 
 Replying to [comment:43 nthiery]:
 > speed matters because it's used a lot at a low level in combinatorics calculations.
+
 If speed matters that much, you could probably get a lot more speedup by using Cython as opposed to less argument checking.
 
 
@@ -1194,7 +1193,7 @@ If speed matters that much, you could probably get a lot more speedup by using C
 archive/issue_comments_087107.json:
 ```json
 {
-    "body": "Replying to [comment:44 jdemeyer]:\n> > There is no control flow involved. \n> I disagree.\n> {{{\n> try:\n>     ...\n> except AssertionError:\n>     ...\n> }}}\n> is certainly control flow.\n\nOuch, that piece? Yes certainly, it's bad and should be fixed, either by using a ValueError, or better by avoiding to feed Tableau with potential garbage.\n\nThere is a lot of action going on currently around Tableaux so, to keep things running, I recommend doing that in a later ticket to not delay other stuff.",
+    "body": "Replying to [comment:44 jdemeyer]:\n> > There is no control flow involved. \n\n> I disagree.\n> {{{\n> try:\n>     ...\n> except AssertionError:\n>     ...\n> }}}\n> is certainly control flow.\n\n\nOuch, that piece? Yes certainly, it's bad and should be fixed, either by using a ValueError, or better by avoiding to feed Tableau with potential garbage.\n\nThere is a lot of action going on currently around Tableaux so, to keep things running, I recommend doing that in a later ticket to not delay other stuff.",
     "created_at": "2012-09-24T11:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1205,6 +1204,7 @@ archive/issue_comments_087107.json:
 
 Replying to [comment:44 jdemeyer]:
 > > There is no control flow involved. 
+
 > I disagree.
 > {{{
 > try:
@@ -1213,6 +1213,7 @@ Replying to [comment:44 jdemeyer]:
 >     ...
 > }}}
 > is certainly control flow.
+
 
 Ouch, that piece? Yes certainly, it's bad and should be fixed, either by using a ValueError, or better by avoiding to feed Tableau with potential garbage.
 
@@ -1225,7 +1226,7 @@ There is a lot of action going on currently around Tableaux so, to keep things r
 archive/issue_comments_087108.json:
 ```json
 {
-    "body": "Replying to [comment:45 jdemeyer]:\n> > speed matters because it's used a lot at a low level in combinatorics calculations.\n> If speed matters that much, you could probably get a lot more speedup by using Cython\n\nCertainly, that's the planned next step in the cleanup of tableaux :-)\nAnd then having checks that can be disabled will really become relevant.",
+    "body": "Replying to [comment:45 jdemeyer]:\n> > speed matters because it's used a lot at a low level in combinatorics calculations.\n\n> If speed matters that much, you could probably get a lot more speedup by using Cython\n\nCertainly, that's the planned next step in the cleanup of tableaux :-)\nAnd then having checks that can be disabled will really become relevant.",
     "created_at": "2012-09-24T11:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1236,6 +1237,7 @@ archive/issue_comments_087108.json:
 
 Replying to [comment:45 jdemeyer]:
 > > speed matters because it's used a lot at a low level in combinatorics calculations.
+
 > If speed matters that much, you could probably get a lot more speedup by using Cython
 
 Certainly, that's the planned next step in the cleanup of tableaux :-)
@@ -1248,7 +1250,7 @@ And then having checks that can be disabled will really become relevant.
 archive/issue_comments_087109.json:
 ```json
 {
-    "body": "Replying to [comment:46 nthiery]:\n> There is a lot of action going on currently around Tableaux so, to keep things running, I recommend doing that in a later ticket to not delay other stuff.\nGood for me, it's just something to keep in mind.",
+    "body": "Replying to [comment:46 nthiery]:\n> There is a lot of action going on currently around Tableaux so, to keep things running, I recommend doing that in a later ticket to not delay other stuff.\n\nGood for me, it's just something to keep in mind.",
     "created_at": "2012-09-24T11:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1259,6 +1261,7 @@ archive/issue_comments_087109.json:
 
 Replying to [comment:46 nthiery]:
 > There is a lot of action going on currently around Tableaux so, to keep things running, I recommend doing that in a later ticket to not delay other stuff.
+
 Good for me, it's just something to keep in mind.
 
 
@@ -1268,7 +1271,7 @@ Good for me, it's just something to keep in mind.
 archive/issue_comments_087110.json:
 ```json
 {
-    "body": "Replying to [comment:43 nthiery]:\n> It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.\nThen I think the best solution is adding a \"check\" argument to the constructor defaulting to True and doing the expensive checks only when `check` is True.",
+    "body": "Replying to [comment:43 nthiery]:\n> It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.\n\nThen I think the best solution is adding a \"check\" argument to the constructor defaulting to True and doing the expensive checks only when `check` is True.",
     "created_at": "2012-09-24T11:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1279,6 +1282,7 @@ archive/issue_comments_087110.json:
 
 Replying to [comment:43 nthiery]:
 > It's quite a common public constructor, but speed matters because it's used a lot at a low level in combinatorics calculations.
+
 Then I think the best solution is adding a "check" argument to the constructor defaulting to True and doing the expensive checks only when `check` is True.
 
 
@@ -1386,7 +1390,7 @@ Anne
 archive/issue_comments_087116.json:
 ```json
 {
-    "body": "Replying to [comment:53 aschilling]:\n> The patch on the sage-combinat queue looks good to me (which I assume is the same as here).\n> \n> Anne\n\nThanks Anne! Yes, it's the same patch as the one on the queue.\nAndrew",
+    "body": "Replying to [comment:53 aschilling]:\n> The patch on the sage-combinat queue looks good to me (which I assume is the same as here).\n> \n> Anne\n\n\nThanks Anne! Yes, it's the same patch as the one on the queue.\nAndrew",
     "created_at": "2012-09-25T06:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1399,6 +1403,7 @@ Replying to [comment:53 aschilling]:
 > The patch on the sage-combinat queue looks good to me (which I assume is the same as here).
 > 
 > Anne
+
 
 Thanks Anne! Yes, it's the same patch as the one on the queue.
 Andrew
@@ -1677,7 +1682,7 @@ Thanks andrew for going the extra mile for backward compatibility!
 archive/issue_comments_087128.json:
 ```json
 {
-    "body": "Hi Anne,\n\nWould you mind reviewing the latest update to #9265 so that Jeroen can put in back in the merge queue. It is just a matter of testing that\n\n```\nsage -t  devel/sage-sf/sage/structure/sage_object.pyx\n```\n\nworks. The new patch trac_9265--tableaux_categories_pickles-am.patch is also in the sage-combinat queue and to test it you should use 5.3 as 5.4 has the wrong pickle_jar at present.\n\nCheers,\n\nAndrew",
+    "body": "Hi Anne,\n\nWould you mind reviewing the latest update to #9265 so that Jeroen can put in back in the merge queue. It is just a matter of testing that\n\n```\nsage -t  devel/sage-sf/sage/structure/sage_object.pyx\n```\nworks. The new patch trac_9265--tableaux_categories_pickles-am.patch is also in the sage-combinat queue and to test it you should use 5.3 as 5.4 has the wrong pickle_jar at present.\n\nCheers,\n\nAndrew",
     "created_at": "2012-10-17T22:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1693,7 +1698,6 @@ Would you mind reviewing the latest update to #9265 so that Jeroen can put in ba
 ```
 sage -t  devel/sage-sf/sage/structure/sage_object.pyx
 ```
-
 works. The new patch trac_9265--tableaux_categories_pickles-am.patch is also in the sage-combinat queue and to test it you should use 5.3 as 5.4 has the wrong pickle_jar at present.
 
 Cheers,
@@ -1707,7 +1711,7 @@ Andrew
 archive/issue_comments_087129.json:
 ```json
 {
-    "body": "Replying to [comment:64 nthiery]:\n> Thanks andrew for going the extra mile for backward compatibility!\n\nWell, I didn't have a lot of choice:) It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as \"old\" pre-releases will have the patch but one current ones won't.",
+    "body": "Replying to [comment:64 nthiery]:\n> Thanks andrew for going the extra mile for backward compatibility!\n\n\nWell, I didn't have a lot of choice:) It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as \"old\" pre-releases will have the patch but one current ones won't.",
     "created_at": "2012-10-18T10:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1719,6 +1723,7 @@ archive/issue_comments_087129.json:
 Replying to [comment:64 nthiery]:
 > Thanks andrew for going the extra mile for backward compatibility!
 
+
 Well, I didn't have a lot of choice:) It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as "old" pre-releases will have the patch but one current ones won't.
 
 
@@ -1728,7 +1733,7 @@ Well, I didn't have a lot of choice:) It's a pity (but understandable) that Jero
 archive/issue_comments_087130.json:
 ```json
 {
-    "body": "Hi Andrew,\n\nI ran all tests and looked at the new patch. It looks fine. All tests pass with sage-5.3, except, but this seems unrelated to your patch and more related to a file by Jeroen Demeyer. Hence I am setting a positive review.\n\nThanks!\n\nAnne\n\n------------------------------------\n\nsage -t sage/tests/cmdline.py \nsage -t  \"devel/sage-combinat/sage/tests/cmdline.py\"        \n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 99:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 109:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 119:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\n1 items had failures:\n   3 of 187 in __main__.example_1\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/anne/.sage//tmp/cmdline_49442.py\n\t [27.8 s]",
+    "body": "Hi Andrew,\n\nI ran all tests and looked at the new patch. It looks fine. All tests pass with sage-5.3, except, but this seems unrelated to your patch and more related to a file by Jeroen Demeyer. Hence I am setting a positive review.\n\nThanks!\n\nAnne\n\n---\n\nsage -t sage/tests/cmdline.py \nsage -t  \"devel/sage-combinat/sage/tests/cmdline.py\"        \n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 99:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 109:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\nFile \"/Applications/sage-5.3/devel/sage-combinat/sage/tests/cmdline.py\", line 119:\n    sage: err\nExpected:\n    ''\nGot:\n    '---------------------------------------------------------------------------\\nAttributeError                            Traceback (most recent call last)\\n\\n/Applications/sage-5.3/devel/sage-combinat/<ipython console> in <module>()\\n\\n/Applications/sage-5.3/local/lib/python/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\\n   1657         else:\\n   1658             # Preparse in memory only for speed.\\n-> 1659             exec(preparse_file(open(fpath).read()) + \"\\\\n\", globals)\\n   1660     elif fpath.endswith(\\'.spyx\\') or fpath.endswith(\\'.pyx\\'):\\n   1661         import interpreter\\n\\n/Applications/sage-5.3/devel/sage-combinat/<string> in <module>()\\n\\nAttributeError: Latex instance has no attribute \\'add_to_mathjax_avoid_list\\'\\n'\n**********************************************************************\n1 items had failures:\n   3 of 187 in __main__.example_1\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/anne/.sage//tmp/cmdline_49442.py\n\t [27.8 s]",
     "created_at": "2012-10-18T17:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1745,7 +1750,7 @@ Thanks!
 
 Anne
 
-------------------------------------
+---
 
 sage -t sage/tests/cmdline.py 
 sage -t  "devel/sage-combinat/sage/tests/cmdline.py"        
@@ -1802,7 +1807,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_087132.json:
 ```json
 {
-    "body": "Replying to [comment:66 andrew.mathas]:\n> It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as \"old\" pre-releases will have the patch but one current ones won't.\n\nWell, once 5.4 will be out, we will just state that we don't support anymore the beta/rc of 5.4. Only a few of us are using them anyway, so that's anoying but not critical.",
+    "body": "Replying to [comment:66 andrew.mathas]:\n> It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as \"old\" pre-releases will have the patch but one current ones won't.\n\n\nWell, once 5.4 will be out, we will just state that we don't support anymore the beta/rc of 5.4. Only a few of us are using them anyway, so that's anoying but not critical.",
     "created_at": "2012-10-19T07:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9265",
     "type": "issue_comment",
@@ -1813,6 +1818,7 @@ archive/issue_comments_087132.json:
 
 Replying to [comment:66 andrew.mathas]:
 > It's a pity (but understandable) that Jeroen bumped the patch out of the 5.4 release an hour before I uploaded the fix as I guess this will play havoc with the sage-combinat queue. I am sure sure how we can guard for different versions of 5.4.? in the queue as "old" pre-releases will have the patch but one current ones won't.
+
 
 Well, once 5.4 will be out, we will just state that we don't support anymore the beta/rc of 5.4. Only a few of us are using them anyway, so that's anoying but not critical.
 

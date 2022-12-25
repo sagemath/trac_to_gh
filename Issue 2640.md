@@ -3,7 +3,7 @@
 archive/issues_002640.json:
 ```json
 {
-    "body": "Assignee: tba\n\n\n```\nYou may also be interested in joining sage-edu, which is\nunfortunately not on http://www.sagemath.org/lists.html\nbut can be found here: http://groups.google.com/group/sage-edu\n```\n\n\n(to resolve this ticket one has to be sudo on sagemath.org, i.e.,\nme, mabshoff or robertwb)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2640\n\n",
+    "body": "Assignee: tba\n\n```\nYou may also be interested in joining sage-edu, which is\nunfortunately not on http://www.sagemath.org/lists.html\nbut can be found here: http://groups.google.com/group/sage-edu\n```\n\n(to resolve this ticket one has to be sudo on sagemath.org, i.e.,\nme, mabshoff or robertwb)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2640\n\n",
     "created_at": "2008-03-22T00:37:15Z",
     "labels": [
         "component: documentation",
@@ -18,13 +18,11 @@ archive/issues_002640.json:
 ```
 Assignee: tba
 
-
 ```
 You may also be interested in joining sage-edu, which is
 unfortunately not on http://www.sagemath.org/lists.html
 but can be found here: http://groups.google.com/group/sage-edu
 ```
-
 
 (to resolve this ticket one has to be sudo on sagemath.org, i.e.,
 me, mabshoff or robertwb)

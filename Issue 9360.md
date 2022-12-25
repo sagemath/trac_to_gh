@@ -3,7 +3,7 @@
 archive/issues_009360.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\n\n```\nHi folks,\n\nDoctesting Sage 4.4.4 on cicero.skynet, a 32-bit Pentium 4 machine, I\ngot the following numerical noise:\n\nsage -t -long \"devel/sage/sage/libs/mwrank/mwrank.pyx\"\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.4.4-9338-pycrypto/devel/sage/sage/libs/mwrank/mwrank.pyx\",\nline 340:\n   sage: E.silverman_bound()\nExpected:\n   6.5222617951910102\nGot:\n   6.5222617951910111\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.4.4-9338-pycrypto/devel/sage/sage/libs/mwrank/mwrank.pyx\",\nline 372:\n   sage: E.silverman_bound()\nExpected:\n   6.5222617951910102\nGot:\n   6.5222617951910111\n\n--\nRegards\nMinh Van Nguyen\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9360\n\n",
+    "body": "Assignee: jason, jkantor\n\n```\nHi folks,\n\nDoctesting Sage 4.4.4 on cicero.skynet, a 32-bit Pentium 4 machine, I\ngot the following numerical noise:\n\nsage -t -long \"devel/sage/sage/libs/mwrank/mwrank.pyx\"\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.4.4-9338-pycrypto/devel/sage/sage/libs/mwrank/mwrank.pyx\",\nline 340:\n   sage: E.silverman_bound()\nExpected:\n   6.5222617951910102\nGot:\n   6.5222617951910111\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.4.4-9338-pycrypto/devel/sage/sage/libs/mwrank/mwrank.pyx\",\nline 372:\n   sage: E.silverman_bound()\nExpected:\n   6.5222617951910102\nGot:\n   6.5222617951910111\n\n--\nRegards\nMinh Van Nguyen\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9360\n\n",
     "created_at": "2010-06-28T17:44:54Z",
     "labels": [
         "component: numerical",
@@ -17,7 +17,6 @@ archive/issues_009360.json:
 }
 ```
 Assignee: jason, jkantor
-
 
 ```
 Hi folks,
@@ -47,7 +46,6 @@ Got:
 Regards
 Minh Van Nguyen
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9360
 

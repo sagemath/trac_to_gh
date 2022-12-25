@@ -43,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5677
 archive/issue_comments_044326.json:
 ```json
 {
-    "body": "Is this still valid?  It looks more like `__tmp__` is used, not `_`, these days:\n\n\n\n```\nsage: preparse(\"f(x,y) = x^2+y^2\")\n'__tmp__=var(\"x,y\"); f = symbolic_expression(x**Integer(2)+y**Integer(2)).function(x,y)'\nsage: 5\n5\nsage: _\n5\nsage: f(x,y) = x^2+y^2\nsage: _\n5\nsage: 7\n7\nsage: _\n7\n```\n",
+    "body": "Is this still valid?  It looks more like `__tmp__` is used, not `_`, these days:\n\n\n```\nsage: preparse(\"f(x,y) = x^2+y^2\")\n'__tmp__=var(\"x,y\"); f = symbolic_expression(x**Integer(2)+y**Integer(2)).function(x,y)'\nsage: 5\n5\nsage: _\n5\nsage: f(x,y) = x^2+y^2\nsage: _\n5\nsage: 7\n7\nsage: _\n7\n```",
     "created_at": "2012-05-25T22:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5677",
     "type": "issue_comment",
@@ -53,7 +53,6 @@ archive/issue_comments_044326.json:
 ```
 
 Is this still valid?  It looks more like `__tmp__` is used, not `_`, these days:
-
 
 
 ```
@@ -71,7 +70,6 @@ sage: 7
 sage: _
 7
 ```
-
 
 
 

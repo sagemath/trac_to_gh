@@ -30,7 +30,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4206
 archive/issue_comments_030465.json:
 ```json
 {
-    "body": "This is needed after #4205:\n\n```\n[02:20am] mabshoff: mk\n[02:21am] jason-:         cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))\n[02:21am] jason-: #        temp = PyArray_SimpleNew(1, dims, NPY_DOUBLE)\n[02:21am] jason-: #        _n = temp\n[02:21am] jason-: #        for i from 0<=i<_V.v.size:\n[02:21am] jason-: #            _n[i] = float(_V.v.data[i])\n[02:21am] jason-: comment from that line down to the end of the function\n[02:21am] jason-: and replace it with the above numpy.array line.\n[02:21am] jason-: oh, and add import numpy above that.\n<SNIP>\n[02:24am] mabshoff: sage: sage: v = vector(RDF,4,range(4))\n[02:24am] mabshoff: sage: v.numpy()\n[02:24am] mabshoff: array([ 0.,  1.,  2.,  3.])\n[02:24am] mabshoff: sage: v\n[02:24am] mabshoff: (0.0, 1.0, 2.0, 3.0)\n[02:24am] mabshoff: so that works now\n[02:24am] jason-: can I just replace it?\n[02:24am] jason-: it's going to be really slow, but it works\n[02:25am] mabshoff: well, I guess for now we can live with that.\n[02:25am] jason-: well, I don't know how much slower\n[02:25am] jason-: can you do a timeit test?\n[02:25am] mabshoff: sure, in a minute\n```\n\n\nCheers,\n\nMichael",
+    "body": "This is needed after #4205:\n\n```\n[02:20am] mabshoff: mk\n[02:21am] jason-:         cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))\n[02:21am] jason-: #        temp = PyArray_SimpleNew(1, dims, NPY_DOUBLE)\n[02:21am] jason-: #        _n = temp\n[02:21am] jason-: #        for i from 0<=i<_V.v.size:\n[02:21am] jason-: #            _n[i] = float(_V.v.data[i])\n[02:21am] jason-: comment from that line down to the end of the function\n[02:21am] jason-: and replace it with the above numpy.array line.\n[02:21am] jason-: oh, and add import numpy above that.\n<SNIP>\n[02:24am] mabshoff: sage: sage: v = vector(RDF,4,range(4))\n[02:24am] mabshoff: sage: v.numpy()\n[02:24am] mabshoff: array([ 0.,  1.,  2.,  3.])\n[02:24am] mabshoff: sage: v\n[02:24am] mabshoff: (0.0, 1.0, 2.0, 3.0)\n[02:24am] mabshoff: so that works now\n[02:24am] jason-: can I just replace it?\n[02:24am] jason-: it's going to be really slow, but it works\n[02:25am] mabshoff: well, I guess for now we can live with that.\n[02:25am] jason-: well, I don't know how much slower\n[02:25am] jason-: can you do a timeit test?\n[02:25am] mabshoff: sure, in a minute\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T09:44:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ This is needed after #4205:
 [02:25am] mabshoff: sure, in a minute
 ```
 
-
 Cheers,
 
 Michael
@@ -78,7 +77,7 @@ Michael
 archive/issue_comments_030466.json:
 ```json
 {
-    "body": "And this is needed in \n* cdef class ComplexDoubleVectorSpaceElement(free_module_element.FreeModuleElement)\n* cdef class RealDoubleVectorSpaceElement(free_module_element.FreeModuleElement)\n\nLook for the two comments like:\n\n```\n        # We should be using the C API here.  When upgrading to 1.2.0,\n        # we didn't get the C API to work for some reason on sage.math\n        # (64-bit) even though it worked fine on a 32-bit box.\n        cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))\n```\n",
+    "body": "And this is needed in \n* cdef class ComplexDoubleVectorSpaceElement(free_module_element.FreeModuleElement)\n* cdef class RealDoubleVectorSpaceElement(free_module_element.FreeModuleElement)\n\nLook for the two comments like:\n\n```\n        # We should be using the C API here.  When upgrading to 1.2.0,\n        # we didn't get the C API to work for some reason on sage.math\n        # (64-bit) even though it worked fine on a 32-bit box.\n        cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))\n```",
     "created_at": "2008-09-27T09:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -99,7 +98,6 @@ Look for the two comments like:
         # (64-bit) even though it worked fine on a 32-bit box.
         cdef ndarray _n = numpy.array(list(self),dtype=numpy.dtype('float64'))
 ```
-
 
 
 
@@ -150,7 +148,7 @@ TODO:
 archive/issue_comments_030469.json:
 ```json
 {
-    "body": "> Make the real_roots and timeseries files use the Cython buffer interface \n\nIf you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is \"blazing speed\" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*).",
+    "body": "> Make the real_roots and timeseries files use the Cython buffer interface \n\n\nIf you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is \"blazing speed\" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*).",
     "created_at": "2008-11-11T20:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -161,6 +159,7 @@ archive/issue_comments_030469.json:
 
 > Make the real_roots and timeseries files use the Cython buffer interface 
 
+
 If you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is "blazing speed" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*).
 
 
@@ -170,7 +169,7 @@ If you do that to timeseries, please do not degrade performance at all.  The who
 archive/issue_comments_030470.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> > Make the real_roots and timeseries files use the Cython buffer interface \n> \n> If you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is \"blazing speed\" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*). \n\nIf I understand this patch correctly the buffer interface in Cython to numpy avoids copying data. Since the data are stored as double* there should be a small increase in performance and the use of the buffer interface does not imply that functionality gets moved from something else to numpy.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 was]:\n> > Make the real_roots and timeseries files use the Cython buffer interface \n\n> \n> If you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is \"blazing speed\" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*). \n\n\nIf I understand this patch correctly the buffer interface in Cython to numpy avoids copying data. Since the data are stored as double* there should be a small increase in performance and the use of the buffer interface does not imply that functionality gets moved from something else to numpy.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-11T20:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -181,8 +180,10 @@ archive/issue_comments_030470.json:
 
 Replying to [comment:6 was]:
 > > Make the real_roots and timeseries files use the Cython buffer interface 
+
 > 
 > If you do that to timeseries, please do not degrade performance at all.  The whole point of timeseries is "blazing speed" -- many of the functions are easily 10-15 times faster than the same functions in matlab/numpy, and part of this is because of using a simple data structure (double*). 
+
 
 If I understand this patch correctly the buffer interface in Cython to numpy avoids copying data. Since the data are stored as double* there should be a small increase in performance and the use of the buffer interface does not imply that functionality gets moved from something else to numpy.
 
@@ -237,7 +238,7 @@ I guess I should make clear that the only reason I am touching the time series a
 archive/issue_comments_030473.json:
 ```json
 {
-    "body": "This is pretty painful to see.  Basically your patch will make create a real_double_dense vector from a TimeSeries extremely slow.   (I.e., the function .vector() becomes way slower.) Fortunately, it appears I don't use that function anywhere else in the file.  It would be good for you to either fix this, or put\na large WARNING in the docstring for that function that it is slow and a pointer to a trac ticket about fixing that problem.  I say this because one of the design constraints (clearly stated I hope in the time_series.pyx file) is that every function in there be nearly \"optimal\". \n\n```\n220\t \t        cdef RealDoubleVectorSpaceElement x = RealDoubleVectorSpaceElement(V, 0) \n221\t \t        memcpy(x.v.data, self._values, sizeof(double)*self._length) \n \t222\t        cdef Vector_real_double_dense x = Vector_real_double_dense(V, 0) \n \t223\t        cdef int i \n \t224\t        for i from 0 <= i < self._length: \n \t225\t            x.set_unsafe(i, self._values[i]) \n \t226\t#        cdef int i \n \t227\t#        for i from 0<=i<self._length: \n \t228\t#            x.set_unsafe(i,self._values[i]) \n \t229\t \n \t230\t#        memcpy(x._matrix_numpy.data, self._values, sizeof(double)*self._length) \n```\n",
+    "body": "This is pretty painful to see.  Basically your patch will make create a real_double_dense vector from a TimeSeries extremely slow.   (I.e., the function .vector() becomes way slower.) Fortunately, it appears I don't use that function anywhere else in the file.  It would be good for you to either fix this, or put\na large WARNING in the docstring for that function that it is slow and a pointer to a trac ticket about fixing that problem.  I say this because one of the design constraints (clearly stated I hope in the time_series.pyx file) is that every function in there be nearly \"optimal\". \n\n```\n220\t \t        cdef RealDoubleVectorSpaceElement x = RealDoubleVectorSpaceElement(V, 0) \n221\t \t        memcpy(x.v.data, self._values, sizeof(double)*self._length) \n \t222\t        cdef Vector_real_double_dense x = Vector_real_double_dense(V, 0) \n \t223\t        cdef int i \n \t224\t        for i from 0 <= i < self._length: \n \t225\t            x.set_unsafe(i, self._values[i]) \n \t226\t#        cdef int i \n \t227\t#        for i from 0<=i<self._length: \n \t228\t#            x.set_unsafe(i,self._values[i]) \n \t229\t \n \t230\t#        memcpy(x._matrix_numpy.data, self._values, sizeof(double)*self._length) \n```",
     "created_at": "2008-11-12T03:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -262,7 +263,6 @@ a large WARNING in the docstring for that function that it is slow and a pointer
  	229	 
  	230	#        memcpy(x._matrix_numpy.data, self._values, sizeof(double)*self._length) 
 ```
-
 
 
 
@@ -291,7 +291,7 @@ That said, I really appreciate your comments.  I'll pay particular attention to 
 archive/issue_comments_030475.json:
 ```json
 {
-    "body": "Okay, after spending some time optimizing the time_series.pyx code, we are *faster* (for interesting big cases):\n\nbefore patch:\n\n\n```\nsage: v = finance.TimeSeries([1..1e3])\nsage: %timeit v.vector()\n10000 loops, best of 3: 132 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e4])\nsage: %timeit v.vector()\n1000 loops, best of 3: 198 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e5])\nsage: %timeit v.vector()\n100 loops, best of 3: 2.02 ms per loop\nsage: v = finance.TimeSeries([1..1e6])\n%timeit v.vector()\nsage: %timeit v.vector()\n10 loops, best of 3: 17.1 ms per loop\n```\n\n\nafter patch:\n\n\n```\nsage: v = finance.TimeSeries([1..1e3])\nsage: %timeit v.vector()\n10000 loops, best of 3: 148 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e4])\nsage: %timeit v.vector()\n1000 loops, best of 3: 222 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e5])\nsage: %timeit v.vector()\n1000 loops, best of 3: 1.26 ms per loop\nsage: v = finance.TimeSeries([1..1e6])\nsage: %timeit v.vector()\n100 loops, best of 3: 10.1 ms per loop\n```\n",
+    "body": "Okay, after spending some time optimizing the time_series.pyx code, we are *faster* (for interesting big cases):\n\nbefore patch:\n\n```\nsage: v = finance.TimeSeries([1..1e3])\nsage: %timeit v.vector()\n10000 loops, best of 3: 132 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e4])\nsage: %timeit v.vector()\n1000 loops, best of 3: 198 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e5])\nsage: %timeit v.vector()\n100 loops, best of 3: 2.02 ms per loop\nsage: v = finance.TimeSeries([1..1e6])\n%timeit v.vector()\nsage: %timeit v.vector()\n10 loops, best of 3: 17.1 ms per loop\n```\n\nafter patch:\n\n```\nsage: v = finance.TimeSeries([1..1e3])\nsage: %timeit v.vector()\n10000 loops, best of 3: 148 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e4])\nsage: %timeit v.vector()\n1000 loops, best of 3: 222 \u00b5s per loop\nsage: v = finance.TimeSeries([1..1e5])\nsage: %timeit v.vector()\n1000 loops, best of 3: 1.26 ms per loop\nsage: v = finance.TimeSeries([1..1e6])\nsage: %timeit v.vector()\n100 loops, best of 3: 10.1 ms per loop\n```",
     "created_at": "2008-11-22T22:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -303,7 +303,6 @@ archive/issue_comments_030475.json:
 Okay, after spending some time optimizing the time_series.pyx code, we are *faster* (for interesting big cases):
 
 before patch:
-
 
 ```
 sage: v = finance.TimeSeries([1..1e3])
@@ -321,9 +320,7 @@ sage: %timeit v.vector()
 10 loops, best of 3: 17.1 ms per loop
 ```
 
-
 after patch:
-
 
 ```
 sage: v = finance.TimeSeries([1..1e3])
@@ -339,7 +336,6 @@ sage: v = finance.TimeSeries([1..1e6])
 sage: %timeit v.vector()
 100 loops, best of 3: 10.1 ms per loop
 ```
-
 
 
 
@@ -388,7 +384,7 @@ This patch depends on #4570.
 archive/issue_comments_030478.json:
 ```json
 {
-    "body": "Regarding the max recursion error mentioned above:\n\n\n```\nDag Sverre Seljebotn wrote:\n> Seems like an issue with circular cimports? Which means those aren't tested in the test framework. Anyway I was unable to provoke the behaviour with a testcase myself, but \"coding in blind\" then I assume that the following patch should fix it.\n>\n> Jason: To answer the question in the wiki about what to do for SAGE, I assume that we can quite quickly release a Cython 0.10.2 that incorporates this patch. Though Robert would be the one to give a real answer.\n>\n> diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n> --- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n> +++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n> @@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n>\n>      # Search all types for __getbuffer__ overloads\n>      types = []\n> +    visited_scopes = set()\n>      def find_buffer_types(scope):\n> +        if scope in visited_scopes:\n> +            return\n> +        visited_scopes.add(scope)\n>          for m in scope.cimported_modules:\n>              find_buffer_types(m)\n>          for e in scope.type_entries:\n>\n\nThis patch made it compile and all the doctests pass.\n\nCan we get this patch (or an equivalent one) into Sage as soon as possible?\n\n\nThanks,\n\nJason\n```\n",
+    "body": "Regarding the max recursion error mentioned above:\n\n```\nDag Sverre Seljebotn wrote:\n> Seems like an issue with circular cimports? Which means those aren't tested in the test framework. Anyway I was unable to provoke the behaviour with a testcase myself, but \"coding in blind\" then I assume that the following patch should fix it.\n>\n> Jason: To answer the question in the wiki about what to do for SAGE, I assume that we can quite quickly release a Cython 0.10.2 that incorporates this patch. Though Robert would be the one to give a real answer.\n>\n> diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n> --- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n> +++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n> @@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n>\n>      # Search all types for __getbuffer__ overloads\n>      types = []\n> +    visited_scopes = set()\n>      def find_buffer_types(scope):\n> +        if scope in visited_scopes:\n> +            return\n> +        visited_scopes.add(scope)\n>          for m in scope.cimported_modules:\n>              find_buffer_types(m)\n>          for e in scope.type_entries:\n>\n\nThis patch made it compile and all the doctests pass.\n\nCan we get this patch (or an equivalent one) into Sage as soon as possible?\n\n\nThanks,\n\nJason\n```",
     "created_at": "2008-11-24T16:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -398,7 +394,6 @@ archive/issue_comments_030478.json:
 ```
 
 Regarding the max recursion error mentioned above:
-
 
 ```
 Dag Sverre Seljebotn wrote:
@@ -432,7 +427,6 @@ Thanks,
 
 Jason
 ```
-
 
 
 
@@ -477,7 +471,7 @@ Changing status from new to assigned.
 archive/issue_comments_030481.json:
 ```json
 {
-    "body": "Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by @jasongrout created at 2008-11-24 16:19:31\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n\n4. Of course, do sage -br",
+    "body": "Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by @jasongrout created at 2008-11-24 16:19:31\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n4. Of course, do sage -br",
     "created_at": "2008-11-24T16:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -493,7 +487,6 @@ To review this patch:
 1. Start with sage-3.2
 2. Apply the patch at #4570
 3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:
-
 
 ```
 diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py
@@ -511,7 +504,6 @@ diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py
              find_buffer_types(m)
          for e in scope.type_entries:
 ```
-
 4. Of course, do sage -br
 
 
@@ -691,7 +683,7 @@ With either sage version, you might have to delete the Cython cache by removing 
 archive/issue_comments_030491.json:
 ```json
 {
-    "body": "Needs work.  The top of the file that implements complex double vectors starts out like this (matrices not vectors, and deletes all the old Complex double vector stuff). \n\n```\n        1       \"\"\" \n \t2\tDense matrices over the Real Double Field. \n \t3\t \n \t4\tMatrix operations using numpy. \n \t5\t \n \t6\tEXAMPLES: \n \t7\t    sage: b=Mat(RDF,2,3).basis() \n \t8\t    sage: b[0] \n \t9\t    [1.0 0.0 0.0] \n \t10\t    [0.0 0.0 0.0] \n \t11\t \n \t12\t \n \t13\tWe deal with the case of zero rows or zero columns: \n \t14\t    sage: m = MatrixSpace(RDF,0,3) \n \t15\t    sage: m.zero_matrix() \n \t16\t    [] \n \t17\t \n \t18\tTESTS: \n \t19\t    sage: a = matrix(RDF,2,range(4), sparse=False) \n \t20\t    sage: loads(dumps(a)) == a \n \t21\t    True \n \t22\t \n \t23\tAUTHORS: \n \t24\t    -- Jason Grout, Sep 2008: switch to numpy backend \n \t25\t    -- Josh Kantor \n \t26\t    -- William Stein: many bug fixes and touch ups. \n \t27\t\"\"\" \n \t28\t \n \t29\t############################################################################## \n \t30\t#       Copyright (C) 2004,2005,2006 Joshua Kantor <kantor.jm@gmail.com> \n \t31\t#  Distributed under the terms of the GNU General Public License (GPL) \n \t32\t#  The full text of the GPL is available at: \n \t33\t#                  http://www.gnu.org/licenses/ \n \t34\t############################################################################## \n \t35\tfrom sage.rings.complex_double import CDF \n \t36\t \n \t37\tcimport sage.ext.numpy as cnumpy \n \t38\t \n \t39\tnumpy=None \n \t40\t \n \t41\tcdef class Vector_complex_double_dense(vector_double_dense.Vector_double_dense): \n```\n",
+    "body": "Needs work.  The top of the file that implements complex double vectors starts out like this (matrices not vectors, and deletes all the old Complex double vector stuff). \n\n```\n        1       \"\"\" \n \t2\tDense matrices over the Real Double Field. \n \t3\t \n \t4\tMatrix operations using numpy. \n \t5\t \n \t6\tEXAMPLES: \n \t7\t    sage: b=Mat(RDF,2,3).basis() \n \t8\t    sage: b[0] \n \t9\t    [1.0 0.0 0.0] \n \t10\t    [0.0 0.0 0.0] \n \t11\t \n \t12\t \n \t13\tWe deal with the case of zero rows or zero columns: \n \t14\t    sage: m = MatrixSpace(RDF,0,3) \n \t15\t    sage: m.zero_matrix() \n \t16\t    [] \n \t17\t \n \t18\tTESTS: \n \t19\t    sage: a = matrix(RDF,2,range(4), sparse=False) \n \t20\t    sage: loads(dumps(a)) == a \n \t21\t    True \n \t22\t \n \t23\tAUTHORS: \n \t24\t    -- Jason Grout, Sep 2008: switch to numpy backend \n \t25\t    -- Josh Kantor \n \t26\t    -- William Stein: many bug fixes and touch ups. \n \t27\t\"\"\" \n \t28\t \n \t29\t############################################################################## \n \t30\t#       Copyright (C) 2004,2005,2006 Joshua Kantor <kantor.jm@gmail.com> \n \t31\t#  Distributed under the terms of the GNU General Public License (GPL) \n \t32\t#  The full text of the GPL is available at: \n \t33\t#                  http://www.gnu.org/licenses/ \n \t34\t############################################################################## \n \t35\tfrom sage.rings.complex_double import CDF \n \t36\t \n \t37\tcimport sage.ext.numpy as cnumpy \n \t38\t \n \t39\tnumpy=None \n \t40\t \n \t41\tcdef class Vector_complex_double_dense(vector_double_dense.Vector_double_dense): \n```",
     "created_at": "2008-11-27T05:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -745,7 +737,6 @@ Needs work.  The top of the file that implements complex double vectors starts o
  	40	 
  	41	cdef class Vector_complex_double_dense(vector_double_dense.Vector_double_dense): 
 ```
-
 
 
 
@@ -808,7 +799,7 @@ The patch vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch has been rebased to sage-
 archive/issue_comments_030495.json:
 ```json
 {
-    "body": "It doesn't build for me:\n\n```\n\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhg_sage.revesage: hg_sage.revert('--all')\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg revert --all\nreverting module_list.py\nforgetting sage/groups/multiplicative_wrapper.pxd\nforgetting sage/groups/multiplicative_wrapper.pyx\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch?format=raw\nLoading: [...........]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15486/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/15486/tmp_0.patch\nsage: \nExiting SAGE (CPU time 0m0.12s, Wall time 0m19.72s).\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage -br\n| Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/modules/free_module_element.pyx.\nBuilding modified file sage/modules/vector_double_dense.pyx.\nBuilding modified file sage/modules/vector_complex_double_dense.pyx.\nBuilding modified file sage/modules/vector_real_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_double_dense.pyx.\nBuilding sage/matrix/matrix_real_double_dense.pyx because it depends on sage/ext/numpy.pxd.\nBuilding sage/matrix/change_ring.pyx because it depends on sage/ext/numpy.pxd.\nBuilding sage/matrix/matrix_complex_double_dense.pyx because it depends on sage/ext/numpy.pxd.\nTraceback (most recent call last):\n  File \"setup.py\", line 486, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 456, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 371, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 354, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 352, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 334, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 290, in parse_deps\n    f = open(filename)\nIOError: [Errno 2] No such file or directory: 'sage/modules/real_double_vector.pxd'\nsage: There was an error installing modified sage library code.\n\n```\n",
+    "body": "It doesn't build for me:\n\n```\n\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhg_sage.revesage: hg_sage.revert('--all')\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg revert --all\nreverting module_list.py\nforgetting sage/groups/multiplicative_wrapper.pxd\nforgetting sage/groups/multiplicative_wrapper.pyx\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch?format=raw\nLoading: [...........]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/15486/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/15486/tmp_0.patch\nsage: \nExiting SAGE (CPU time 0m0.12s, Wall time 0m19.72s).\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage -br\n| Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/modules/free_module_element.pyx.\nBuilding modified file sage/modules/vector_double_dense.pyx.\nBuilding modified file sage/modules/vector_complex_double_dense.pyx.\nBuilding modified file sage/modules/vector_real_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_double_dense.pyx.\nBuilding sage/matrix/matrix_real_double_dense.pyx because it depends on sage/ext/numpy.pxd.\nBuilding sage/matrix/change_ring.pyx because it depends on sage/ext/numpy.pxd.\nBuilding sage/matrix/matrix_complex_double_dense.pyx because it depends on sage/ext/numpy.pxd.\nTraceback (most recent call last):\n  File \"setup.py\", line 486, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 456, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 371, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 354, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 352, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 334, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 290, in parse_deps\n    f = open(filename)\nIOError: [Errno 2] No such file or directory: 'sage/modules/real_double_vector.pxd'\nsage: There was an error installing modified sage library code.\n\n```",
     "created_at": "2008-11-28T21:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -875,7 +866,6 @@ IOError: [Errno 2] No such file or directory: 'sage/modules/real_double_vector.p
 sage: There was an error installing modified sage library code.
 
 ```
-
 
 
 
@@ -1057,7 +1047,7 @@ A reminder that once this is closed, close #4491 as well.
 archive/issue_comments_030504.json:
 ```json
 {
-    "body": "I was unable to build this after applying it to sage-3.2.2.alpha0:\n\n```\nbuilding 'sage.rings.polynomial.real_roots' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/was/build/sage-3.2.2.alpha0/local//include -I/home/was/build/sage-3.2.2\n.alpha0/local//include/csage -I/home/was/build/sage-3.2.2.alpha0/devel//sage/sage/ext -I/home/was/build/sage-3.2.2.alpha0/local/include/python2.5 -c sage/rings/\npolynomial/real_roots.c -o build/temp.linux-x86_64-2.5/sage/rings/polynomial/real_roots.o -w\nsage/rings/polynomial/real_roots.c:119:31: error: numpy/arrayobject.h: No such file or directory\nsage/rings/polynomial/real_roots.c:388: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int8_t\u2019\nsage/rings/polynomial/real_roots.c:390: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int16_t\u2019\nsage/rings/polynomial/real_roots.c:392: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int32_t\u2019\nsage/rings/polynomial/real_roots.c:394: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int64_t\u2019\nsage/rings/polynomial/real_roots.c:396: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint8_t\u2019\nsage/rings/polynomial/real_roots.c:398: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint16_t\u2019\nsage/rings/polynomial/real_roots.c:400: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint32_t\u2019\nsage/rings/polynomial/real_roots.c:402: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint64_t\u2019\nsage/rings/polynomial/real_roots.c:404: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float32_t\u2019\nsage/rings/polynomial/real_roots.c:406: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float64_t\u2019\nsage/rings/polynomial/real_roots.c:408: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int_t\u2019\nsage/rings/polynomial/real_roots.c:410: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_long_t\u2019\nsage/rings/polynomial/real_roots.c:412: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint_t\u2019\nsage/rings/polynomial/real_roots.c:414: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_ulong_t\u2019\nsage/rings/polynomial/real_roots.c:416: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float_t\u2019\nsage/rings/polynomial/real_roots.c:418: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_double_t\u2019\nsage/rings/polynomial/real_roots.c:420: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_longdouble_t\u2019\nsage/rings/polynomial/real_roots.c:422: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_cfloat_t\u2019\nsage/rings/polynomial/real_roots.c:424: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_cdouble_t\u2019\nsage/rings/polynomial/real_roots.c:426: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_clongdouble_t\u2019\nsage/rings/polynomial/real_roots.c:998: error: field \u2018_numpy_dtypeint\u2019 has incomplete type\nsage/rings/polynomial/real_roots.c:1002: error: expected specifier-qualifier-list before \u2018PyArrayObject\u2019\nsage/rings/polynomial/real_roots.c:2274: error: expected declaration specifiers or \u2018...\u2019 before \u2018PyArrayObject\u2019\n```\n\n\nThis is on 64-bit sage.math.",
+    "body": "I was unable to build this after applying it to sage-3.2.2.alpha0:\n\n```\nbuilding 'sage.rings.polynomial.real_roots' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/was/build/sage-3.2.2.alpha0/local//include -I/home/was/build/sage-3.2.2\n.alpha0/local//include/csage -I/home/was/build/sage-3.2.2.alpha0/devel//sage/sage/ext -I/home/was/build/sage-3.2.2.alpha0/local/include/python2.5 -c sage/rings/\npolynomial/real_roots.c -o build/temp.linux-x86_64-2.5/sage/rings/polynomial/real_roots.o -w\nsage/rings/polynomial/real_roots.c:119:31: error: numpy/arrayobject.h: No such file or directory\nsage/rings/polynomial/real_roots.c:388: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int8_t\u2019\nsage/rings/polynomial/real_roots.c:390: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int16_t\u2019\nsage/rings/polynomial/real_roots.c:392: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int32_t\u2019\nsage/rings/polynomial/real_roots.c:394: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int64_t\u2019\nsage/rings/polynomial/real_roots.c:396: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint8_t\u2019\nsage/rings/polynomial/real_roots.c:398: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint16_t\u2019\nsage/rings/polynomial/real_roots.c:400: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint32_t\u2019\nsage/rings/polynomial/real_roots.c:402: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint64_t\u2019\nsage/rings/polynomial/real_roots.c:404: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float32_t\u2019\nsage/rings/polynomial/real_roots.c:406: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float64_t\u2019\nsage/rings/polynomial/real_roots.c:408: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_int_t\u2019\nsage/rings/polynomial/real_roots.c:410: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_long_t\u2019\nsage/rings/polynomial/real_roots.c:412: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_uint_t\u2019\nsage/rings/polynomial/real_roots.c:414: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_ulong_t\u2019\nsage/rings/polynomial/real_roots.c:416: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_float_t\u2019\nsage/rings/polynomial/real_roots.c:418: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_double_t\u2019\nsage/rings/polynomial/real_roots.c:420: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_longdouble_t\u2019\nsage/rings/polynomial/real_roots.c:422: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_cfloat_t\u2019\nsage/rings/polynomial/real_roots.c:424: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_cdouble_t\u2019\nsage/rings/polynomial/real_roots.c:426: error: expected \u2018=\u2019, \u2018,\u2019, \u2018;\u2019, \u2018asm\u2019 or \u2018__attribute__\u2019 before \u2018__pyx_t_5numpy_clongdouble_t\u2019\nsage/rings/polynomial/real_roots.c:998: error: field \u2018_numpy_dtypeint\u2019 has incomplete type\nsage/rings/polynomial/real_roots.c:1002: error: expected specifier-qualifier-list before \u2018PyArrayObject\u2019\nsage/rings/polynomial/real_roots.c:2274: error: expected declaration specifiers or \u2018...\u2019 before \u2018PyArrayObject\u2019\n```\n\nThis is on 64-bit sage.math.",
     "created_at": "2008-12-06T22:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1098,7 +1088,6 @@ sage/rings/polynomial/real_roots.c:998: error: field ‘_numpy_dtypeint’ has i
 sage/rings/polynomial/real_roots.c:1002: error: expected specifier-qualifier-list before ‘PyArrayObject’
 sage/rings/polynomial/real_roots.c:2274: error: expected declaration specifiers or ‘...’ before ‘PyArrayObject’
 ```
-
 
 This is on 64-bit sage.math.
 
@@ -1149,7 +1138,7 @@ Let me know if the problem still persists.
 archive/issue_comments_030507.json:
 ```json
 {
-    "body": "Overall the design looks good to me and the interface with numpy looks good. A few things I noticed. \n\n1. For large arrays around a million, object creation is ever so slightly slower than the old class it seems, I'm guessing thats numpy's falt, there is maybe nothing you can do about that.\n\n\n2. More seriously the fft function is quite a bit slower. \nFor example it takes about 15 seconds to do fft on a vector of lenth a million. Scipy only takes 0.72 to do the fft, and the old class also only took about a second. I'll look and see if I have any suggestions about the bottle neck, this probably should be fixed. It seemed most other operations were about the same speed but it might be good to double check this. \n\n3. One suggestion, I think it would cool if in vector_double_dense.pxd you make the _vector_numpy array public as in\n\n```\ncdef public cnumpy.ndarray _vector_numpy\n```\n\nthen it is possible to do something like\n\n```\nv=vector(RDF,[1,2,3])\nv._vector_numpy[0]=3\n```\n\nthis could be useful to pass something to scipy without having to copy. You could make it readonly instead of public if you don't want people to be able to modify through that mechanism.",
+    "body": "Overall the design looks good to me and the interface with numpy looks good. A few things I noticed. \n\n1. For large arrays around a million, object creation is ever so slightly slower than the old class it seems, I'm guessing thats numpy's falt, there is maybe nothing you can do about that.\n\n\n2. More seriously the fft function is quite a bit slower. \nFor example it takes about 15 seconds to do fft on a vector of lenth a million. Scipy only takes 0.72 to do the fft, and the old class also only took about a second. I'll look and see if I have any suggestions about the bottle neck, this probably should be fixed. It seemed most other operations were about the same speed but it might be good to double check this. \n\n3. One suggestion, I think it would cool if in vector_double_dense.pxd you make the _vector_numpy array public as in\n\n```\ncdef public cnumpy.ndarray _vector_numpy\n```\nthen it is possible to do something like\n\n```\nv=vector(RDF,[1,2,3])\nv._vector_numpy[0]=3\n```\nthis could be useful to pass something to scipy without having to copy. You could make it readonly instead of public if you don't want people to be able to modify through that mechanism.",
     "created_at": "2008-12-07T08:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1171,14 +1160,12 @@ For example it takes about 15 seconds to do fft on a vector of lenth a million. 
 ```
 cdef public cnumpy.ndarray _vector_numpy
 ```
-
 then it is possible to do something like
 
 ```
 v=vector(RDF,[1,2,3])
 v._vector_numpy[0]=3
 ```
-
 this could be useful to pass something to scipy without having to copy. You could make it readonly instead of public if you don't want people to be able to modify through that mechanism.
 
 
@@ -1188,7 +1175,7 @@ this could be useful to pass something to scipy without having to copy. You coul
 archive/issue_comments_030508.json:
 ```json
 {
-    "body": "> Scipy only takes 0.72 to do the fft,\n\nWhy don't we use scipy to do the fft, then?",
+    "body": "> Scipy only takes 0.72 to do the fft,\n\n\nWhy don't we use scipy to do the fft, then?",
     "created_at": "2008-12-07T19:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1199,6 +1186,7 @@ archive/issue_comments_030508.json:
 
 > Scipy only takes 0.72 to do the fft,
 
+
 Why don't we use scipy to do the fft, then?
 
 
@@ -1208,7 +1196,7 @@ Why don't we use scipy to do the fft, then?
 archive/issue_comments_030509.json:
 ```json
 {
-    "body": "This is a little puzzling since the code *does* use scipy to do fft.  Here is the relevant call:\n\n\n```\n            return v._new(scipy.fft(v._vector_numpy))\n```\n\n\nThe thing that I see is that above this, I do:\n\n\n```\n        cdef Vector_double_dense v = self.complex_vector()\n```\n\n\nI think the wasted time is in one of those two calls.  I can look at this later.",
+    "body": "This is a little puzzling since the code *does* use scipy to do fft.  Here is the relevant call:\n\n```\n            return v._new(scipy.fft(v._vector_numpy))\n```\n\nThe thing that I see is that above this, I do:\n\n```\n        cdef Vector_double_dense v = self.complex_vector()\n```\n\nI think the wasted time is in one of those two calls.  I can look at this later.",
     "created_at": "2008-12-08T13:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1219,19 +1207,15 @@ archive/issue_comments_030509.json:
 
 This is a little puzzling since the code *does* use scipy to do fft.  Here is the relevant call:
 
-
 ```
             return v._new(scipy.fft(v._vector_numpy))
 ```
 
-
 The thing that I see is that above this, I do:
-
 
 ```
         cdef Vector_double_dense v = self.complex_vector()
 ```
-
 
 I think the wasted time is in one of those two calls.  I can look at this later.
 
@@ -1242,7 +1226,7 @@ I think the wasted time is in one of those two calls.  I can look at this later.
 archive/issue_comments_030510.json:
 ```json
 {
-    "body": "I changed the behavior of the fft function in the vector_fft patch.  It now does a complex fft over a CDF vector, but a *real* fft over an RDF vector.  I also streamlined it, so now we get the following timings (after the patch):\n\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 96.8 ms per loop\nsage: timeit('b=scipy.fftpack.rfft(n)')\n5 loops, best of 3: 98.3 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 106 ms per loop\nsage: timeit('b=scipy.fftpack.irfft(n)')\n5 loops, best of 3: 106 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 182 ms per loop\nsage: timeit('b=scipy.fftpack.fft(n)')\n5 loops, best of 3: 181 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 207 ms per loop\nsage: timeit('b=scipy.fftpack.ifft(n)')\n5 loops, best of 3: 207 ms per loop\n```\n\n\nSince the behavior of the fft function is changed, I'm putting this as \"needs review\".  What I'm looking for is someone to pass off on the use of the real fft for RDF vectors.",
+    "body": "I changed the behavior of the fft function in the vector_fft patch.  It now does a complex fft over a CDF vector, but a *real* fft over an RDF vector.  I also streamlined it, so now we get the following timings (after the patch):\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 96.8 ms per loop\nsage: timeit('b=scipy.fftpack.rfft(n)')\n5 loops, best of 3: 98.3 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 106 ms per loop\nsage: timeit('b=scipy.fftpack.irfft(n)')\n5 loops, best of 3: 106 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 182 ms per loop\nsage: timeit('b=scipy.fftpack.fft(n)')\n5 loops, best of 3: 181 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 207 ms per loop\nsage: timeit('b=scipy.fftpack.ifft(n)')\n5 loops, best of 3: 207 ms per loop\n```\n\nSince the behavior of the fft function is changed, I'm putting this as \"needs review\".  What I'm looking for is someone to pass off on the use of the real fft for RDF vectors.",
     "created_at": "2008-12-08T18:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1252,7 +1236,6 @@ archive/issue_comments_030510.json:
 ```
 
 I changed the behavior of the fft function in the vector_fft patch.  It now does a complex fft over a CDF vector, but a *real* fft over an RDF vector.  I also streamlined it, so now we get the following timings (after the patch):
-
 
 
 ```
@@ -1278,7 +1261,6 @@ sage: timeit('a=v.inv_fft()')
 sage: timeit('b=scipy.fftpack.ifft(n)')
 5 loops, best of 3: 207 ms per loop
 ```
-
 
 Since the behavior of the fft function is changed, I'm putting this as "needs review".  What I'm looking for is someone to pass off on the use of the real fft for RDF vectors.
 
@@ -1327,7 +1309,7 @@ apply on top of previous patches
 archive/issue_comments_030513.json:
 ```json
 {
-    "body": "Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by @jasongrout created at 2008-12-09 06:49:36\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
+    "body": "Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by @jasongrout created at 2008-12-09 06:49:36\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
     "created_at": "2008-12-09T06:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1339,7 +1321,6 @@ archive/issue_comments_030513.json:
 Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by @jasongrout created at 2008-12-09 06:49:36
 
 Okay, updated the vector_fft.patch. The new timing comparison is:
-
 
 ```
 sage: v=vector(RDF, range(1000000r))
@@ -1365,7 +1346,6 @@ sage: timeit('a=v.inv_fft()')
 sage: timeit('b=scipy.ifft(n)')
 5 loops, best of 3: 419 ms per loop
 ```
-
 
 Since the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.
 
@@ -1394,7 +1374,7 @@ Positive review. I would like the making the internal numpy array cdef public as
 archive/issue_comments_030515.json:
 ```json
 {
-    "body": "There is some slight reject issue with the first patch:\n\n```\n***************\n*** 93,100 ****\n  import sage.rings.integer\n  from sage.rings.real_double import RDF\n  from sage.rings.complex_double import CDF\n- \n- #from sage.matrix.matrix cimport Matrix\n  \n  def is_FreeModuleElement(x):\n      return isinstance(x, FreeModuleElement)\n--- 93,98 ----\n  import sage.rings.integer\n  from sage.rings.real_double import RDF\n  from sage.rings.complex_double import CDF\n  \n  def is_FreeModuleElement(x):\n      return isinstance(x, FreeModuleElement)\n```\n\n\nCheers,\n\nMichael",
+    "body": "There is some slight reject issue with the first patch:\n\n```\n***************\n*** 93,100 ****\n  import sage.rings.integer\n  from sage.rings.real_double import RDF\n  from sage.rings.complex_double import CDF\n- \n- #from sage.matrix.matrix cimport Matrix\n  \n  def is_FreeModuleElement(x):\n      return isinstance(x, FreeModuleElement)\n--- 93,98 ----\n  import sage.rings.integer\n  from sage.rings.real_double import RDF\n  from sage.rings.complex_double import CDF\n  \n  def is_FreeModuleElement(x):\n      return isinstance(x, FreeModuleElement)\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-09T07:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1424,7 +1404,6 @@ There is some slight reject issue with the first patch:
   def is_FreeModuleElement(x):
       return isinstance(x, FreeModuleElement)
 ```
-
 
 Cheers,
 
@@ -1457,7 +1436,7 @@ deleted reject hunk from file; the three patches should work now.
 archive/issue_comments_030517.json:
 ```json
 {
-    "body": "This patch needs doctest fixes. This is on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/finance/fractal.pyx\"         \n\ndrfft:howmany=726335489\ndrfft:howmany=644245095\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/finance/fractal.pyx\", line 109, in __main__.example_1\nFailed example:\n    sim = finance.stationary_gaussian_simulation(s, N)[Integer(0)]###line 66:_sage_    >>> sim = finance.stationary_gaussian_simulation(s, N)[0]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        sim = finance.stationary_gaussian_simulation(s, N)[Integer(0)]###line 66:_sage_    >>> sim = finance.stationary_gaussian_simulation(s, N)[0]\n      File \"fractal.pyx\", line 111, in sage.finance.fractal.stationary_gaussian_simulation (sage/finance/fractal.c:642)\n      File \"time_series.pyx\", line 2172, in sage.finance.time_series.TimeSeries.fft (sage/finance/time_series.c:12114)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/scipy/fftpack/basic.py\", line 179, in rfft\n        return _raw_fft(tmp,n,axis,1,overwrite_x,work_function)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/scipy/fftpack/basic.py\", line 49, in _raw_fft\n        r = work_function(x,n,direction,overwrite_x=overwrite_x)\n    error: (n*howmany==size(x)) failed for hidden howmany\n**********************************************************************\n<SNIP>\n```\n\nAnd\n\n```\nsage -t -long \"devel/sage/sage/finance/time_series.pyx\"     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/finance/time_series.pyx\", line 427, in __main__.example_15\nFailed example:\n    F = v.autoregressive_fit(Integer(100))###line 532:_sage_    >>> F = v.autoregressive_fit(100)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[4]>\", line 1, in <module>\n        F = v.autoregressive_fit(Integer(100))###line 532:_sage_    >>> F = v.autoregressive_fit(100)\n      File \"time_series.pyx\", line 557, in sage.finance.time_series.TimeSeries.autoregressive_fit (sage/finance/time_series.c:4388)\n      File \"time_series.pyx\", line 2378, in sage.finance.time_series.autoregressive_fit (sage/finance/time_series.c:12648)\n      File \"time_series.pyx\", line 1865, in sage.finance.time_series.TimeSeries.numpy (sage/finance/time_series.c:10977)\n    MemoryError\n**********************************************************************\n<SNIP>\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch needs doctest fixes. This is on sage.math:\n\n```\nsage -t -long \"devel/sage/sage/finance/fractal.pyx\"         \n\ndrfft:howmany=726335489\ndrfft:howmany=644245095\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/finance/fractal.pyx\", line 109, in __main__.example_1\nFailed example:\n    sim = finance.stationary_gaussian_simulation(s, N)[Integer(0)]###line 66:_sage_    >>> sim = finance.stationary_gaussian_simulation(s, N)[0]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        sim = finance.stationary_gaussian_simulation(s, N)[Integer(0)]###line 66:_sage_    >>> sim = finance.stationary_gaussian_simulation(s, N)[0]\n      File \"fractal.pyx\", line 111, in sage.finance.fractal.stationary_gaussian_simulation (sage/finance/fractal.c:642)\n      File \"time_series.pyx\", line 2172, in sage.finance.time_series.TimeSeries.fft (sage/finance/time_series.c:12114)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/scipy/fftpack/basic.py\", line 179, in rfft\n        return _raw_fft(tmp,n,axis,1,overwrite_x,work_function)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/lib/python2.5/site-packages/scipy/fftpack/basic.py\", line 49, in _raw_fft\n        r = work_function(x,n,direction,overwrite_x=overwrite_x)\n    error: (n*howmany==size(x)) failed for hidden howmany\n**********************************************************************\n<SNIP>\n```\nAnd\n\n```\nsage -t -long \"devel/sage/sage/finance/time_series.pyx\"     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage/sage/finance/time_series.pyx\", line 427, in __main__.example_15\nFailed example:\n    F = v.autoregressive_fit(Integer(100))###line 532:_sage_    >>> F = v.autoregressive_fit(100)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[4]>\", line 1, in <module>\n        F = v.autoregressive_fit(Integer(100))###line 532:_sage_    >>> F = v.autoregressive_fit(100)\n      File \"time_series.pyx\", line 557, in sage.finance.time_series.TimeSeries.autoregressive_fit (sage/finance/time_series.c:4388)\n      File \"time_series.pyx\", line 2378, in sage.finance.time_series.autoregressive_fit (sage/finance/time_series.c:12648)\n      File \"time_series.pyx\", line 1865, in sage.finance.time_series.TimeSeries.numpy (sage/finance/time_series.c:10977)\n    MemoryError\n**********************************************************************\n<SNIP>\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-09T08:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
@@ -1497,7 +1476,6 @@ Exception raised:
 **********************************************************************
 <SNIP>
 ```
-
 And
 
 ```
@@ -1523,7 +1501,6 @@ Exception raised:
 **********************************************************************
 <SNIP>
 ```
-
 
 Cheers,
 

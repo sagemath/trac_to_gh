@@ -3,7 +3,7 @@
 archive/issues_009738.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @robertwb @williamstein @jdemeyer\n\nWith Sage 4.5.3.alpha0 on sage.math:\n\n```sh\n$ cd SAGE_ROOT\n$ find -name core -type f\n$ ulimit -c unlimited\n$ ./sage -t -long devel/sage/sage/interfaces/genus2reduction.py \nsage -t -long \"devel/sage/sage/interfaces/genus2reduction.py\"\n         [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.1 seconds\n$ find -name core -type f\n./data/extcode/genus2reduction/core\n$\n```\n\nFor background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9738\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb @williamstein @jdemeyer\n\nWith Sage 4.5.3.alpha0 on sage.math:\n\n```sh\n$ cd SAGE_ROOT\n$ find -name core -type f\n$ ulimit -c unlimited\n$ ./sage -t -long devel/sage/sage/interfaces/genus2reduction.py \nsage -t -long \"devel/sage/sage/interfaces/genus2reduction.py\"\n         [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.1 seconds\n$ find -name core -type f\n./data/extcode/genus2reduction/core\n$\n```\nFor background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9738\n\n",
     "created_at": "2010-08-12T22:58:35Z",
     "labels": [
         "component: doctest coverage",
@@ -38,7 +38,6 @@ $ find -name core -type f
 ./data/extcode/genus2reduction/core
 $
 ```
-
 For background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).
 
 Issue created by migration from https://trac.sagemath.org/ticket/9738
@@ -52,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9738
 archive/issue_comments_095049.json:
 ```json
 {
-    "body": "I interleaved `find -name core -type f` with executing the examples in `genus2reduction.py` in an interactive Sage session.  I see the core file only *after* I exit Sage, which ends with\n\n```\nExiting Sage (CPU time 0m0.17s, Wall time 2m6.89s).\nExiting spawned Genus2reduction process.\n```\n\nAlso, [here is the log](http://sage.math.washington.edu/home/mpatel/trac/9738/genus2reduction-21918-22537264-2.log) I  find in `DOT_SAGE/pexpect_logs/` after\n\n```sh\nenv SAGE_PEXPECT_LOG=\"yes\" ./sage -t devel/sage/sage/interfaces/genus2reduction.py\n```\n",
+    "body": "I interleaved `find -name core -type f` with executing the examples in `genus2reduction.py` in an interactive Sage session.  I see the core file only *after* I exit Sage, which ends with\n\n```\nExiting Sage (CPU time 0m0.17s, Wall time 2m6.89s).\nExiting spawned Genus2reduction process.\n```\nAlso, [here is the log](http://sage.math.washington.edu/home/mpatel/trac/9738/genus2reduction-21918-22537264-2.log) I  find in `DOT_SAGE/pexpect_logs/` after\n\n```sh\nenv SAGE_PEXPECT_LOG=\"yes\" ./sage -t devel/sage/sage/interfaces/genus2reduction.py\n```",
     "created_at": "2010-08-12T23:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
@@ -67,13 +66,11 @@ I interleaved `find -name core -type f` with executing the examples in `genus2re
 Exiting Sage (CPU time 0m0.17s, Wall time 2m6.89s).
 Exiting spawned Genus2reduction process.
 ```
-
 Also, [here is the log](http://sage.math.washington.edu/home/mpatel/trac/9738/genus2reduction-21918-22537264-2.log) I  find in `DOT_SAGE/pexpect_logs/` after
 
 ```sh
 env SAGE_PEXPECT_LOG="yes" ./sage -t devel/sage/sage/interfaces/genus2reduction.py
 ```
-
 
 
 
@@ -120,7 +117,7 @@ I've attached a possible solution.  If it looks good, I can make a new spkg.  We
 archive/issue_comments_095052.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> We may need to coordinate with #9591.\n\nI don't think there is a problem, this issue is independent of #9343 and #9591 (we just have to rename the spkg at #9591 if this gets merged first).",
+    "body": "Replying to [comment:2 mpatel]:\n> We may need to coordinate with #9591.\n\n\nI don't think there is a problem, this issue is independent of #9343 and #9591 (we just have to rename the spkg at #9591 if this gets merged first).",
     "created_at": "2010-08-13T22:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
@@ -131,6 +128,7 @@ archive/issue_comments_095052.json:
 
 Replying to [comment:2 mpatel]:
 > We may need to coordinate with #9591.
+
 
 I don't think there is a problem, this issue is independent of #9343 and #9591 (we just have to rename the spkg at #9591 if this gets merged first).
 
@@ -205,7 +203,7 @@ Are there any objections to making a new spkg here with Jeroen's patch?  If we d
 archive/issue_comments_095056.json:
 ```json
 {
-    "body": "Replying to [comment:6 mpatel]:\n> Are there any objections to making a new spkg here with Jeroen's patch?\nNo objections.  If you think this patch can make it into sage-4.5.3, go ahead and do it.  If we merge it in sage-4.6, it would be better suited in #9591.",
+    "body": "Replying to [comment:6 mpatel]:\n> Are there any objections to making a new spkg here with Jeroen's patch?\n\nNo objections.  If you think this patch can make it into sage-4.5.3, go ahead and do it.  If we merge it in sage-4.6, it would be better suited in #9591.",
     "created_at": "2010-08-14T09:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
@@ -216,6 +214,7 @@ archive/issue_comments_095056.json:
 
 Replying to [comment:6 mpatel]:
 > Are there any objections to making a new spkg here with Jeroen's patch?
+
 No objections.  If you think this patch can make it into sage-4.5.3, go ahead and do it.  If we merge it in sage-4.6, it would be better suited in #9591.
 
 

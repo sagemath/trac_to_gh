@@ -104,7 +104,7 @@ Resolution: fixed
 archive/issue_comments_026164.json:
 ```json
 {
-    "body": "I was not quick enough to catch this before it got merged.  I think that for integers it is a little misleading to describe the output as a sorted list of pairs (p,e): it is a more sophisticated structure:\n\n```\nsage: n=-100          \nsage: f=factor(n)     \nsage: type(f)\n<class 'sage.structure.factorization.Factorization'>\n```\n\nwhich has a number of associated methods:\n\n```\nsage: f.\nf.base_ring       f.dumps           f.prod            f.simplify        f.value\nf.category        f.expand          f.rename          f.sort            f.version\nf.db              f.is_commutative  f.reset_name      f.unit            \nf.dump            f.plot            f.save            f.unit_part     \n```\n\nIt is true that you can get a list of pairs (p,e):\n\n```\nsage: list(f)\n[(2, 2), (5, 2)]\n```\n\nbut that misses the unit part:\n\n```\nsage: f.unit()\n-1\n```\n\nas well as three different ways of recovering the factored integer (prod, expand, value).",
+    "body": "I was not quick enough to catch this before it got merged.  I think that for integers it is a little misleading to describe the output as a sorted list of pairs (p,e): it is a more sophisticated structure:\n\n```\nsage: n=-100          \nsage: f=factor(n)     \nsage: type(f)\n<class 'sage.structure.factorization.Factorization'>\n```\nwhich has a number of associated methods:\n\n```\nsage: f.\nf.base_ring       f.dumps           f.prod            f.simplify        f.value\nf.category        f.expand          f.rename          f.sort            f.version\nf.db              f.is_commutative  f.reset_name      f.unit            \nf.dump            f.plot            f.save            f.unit_part     \n```\nIt is true that you can get a list of pairs (p,e):\n\n```\nsage: list(f)\n[(2, 2), (5, 2)]\n```\nbut that misses the unit part:\n\n```\nsage: f.unit()\n-1\n```\nas well as three different ways of recovering the factored integer (prod, expand, value).",
     "created_at": "2008-07-21T19:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -121,7 +121,6 @@ sage: f=factor(n)
 sage: type(f)
 <class 'sage.structure.factorization.Factorization'>
 ```
-
 which has a number of associated methods:
 
 ```
@@ -131,21 +130,18 @@ f.category        f.expand          f.rename          f.sort            f.versio
 f.db              f.is_commutative  f.reset_name      f.unit            
 f.dump            f.plot            f.save            f.unit_part     
 ```
-
 It is true that you can get a list of pairs (p,e):
 
 ```
 sage: list(f)
 [(2, 2), (5, 2)]
 ```
-
 but that misses the unit part:
 
 ```
 sage: f.unit()
 -1
 ```
-
 as well as three different ways of recovering the factored integer (prod, expand, value).
 
 
@@ -173,7 +169,7 @@ Thanks John for noticing. I just copied the old docstring for integers, assuming
 archive/issue_comments_026166.json:
 ```json
 {
-    "body": "Replying to [comment:4 certik]:\n> Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.\n\nNo, I was not accusing you of breaking anything!\n\nAs factorization of integers is something which new users (e.g. in elementary number theory classes) will want to do -- and something which Sage does very well -- I think it is worth improving the docstring for integers. \n\nI'll add a new patch (to be applied after yours) in a few minutes.",
+    "body": "Replying to [comment:4 certik]:\n> Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.\n\n\nNo, I was not accusing you of breaking anything!\n\nAs factorization of integers is something which new users (e.g. in elementary number theory classes) will want to do -- and something which Sage does very well -- I think it is worth improving the docstring for integers. \n\nI'll add a new patch (to be applied after yours) in a few minutes.",
     "created_at": "2008-07-21T19:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -184,6 +180,7 @@ archive/issue_comments_026166.json:
 
 Replying to [comment:4 certik]:
 > Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.
+
 
 No, I was not accusing you of breaking anything!
 
@@ -218,7 +215,7 @@ I know this is not the first time I have edited this docstring;  sorry not to ha
 archive/issue_comments_026168.json:
 ```json
 {
-    "body": "There is a slight typo in John's patch:\n\n```\nA Factorization contains bothe the \n```\n\n\nCheers,\n\nMichael",
+    "body": "There is a slight typo in John's patch:\n\n```\nA Factorization contains bothe the \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T20:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -233,7 +230,6 @@ There is a slight typo in John's patch:
 A Factorization contains bothe the 
 ```
 
-
 Cheers,
 
 Michael
@@ -245,7 +241,7 @@ Michael
 archive/issue_comments_026169.json:
 ```json
 {
-    "body": "Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by @JohnCremona created at 2008-07-21 20:32:23\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
+    "body": "Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by @JohnCremona created at 2008-07-21 20:32:23\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> \n> ```\n> A Factorization contains bothe the \n> ```\n> \n> Cheers,\n> \n> Michael\n\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
     "created_at": "2008-07-21T20:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -258,13 +254,15 @@ Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/t
 
 Replying to [comment:7 mabshoff]:
 > There is a slight typo in John's patch:
-> {{{
+> 
+> ```
 > A Factorization contains bothe the 
-> }}}
+> ```
 > 
 > Cheers,
 > 
 > Michael
+
 
 
 I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....
@@ -294,7 +292,7 @@ I only looked ad John's patch and it looks good.
 archive/issue_comments_026171.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> \n> I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....\n\nHi John,\n\nthat is perfectly fine and the patch did apply as expected.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 cremona]:\n> \n> I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....\n\n\nHi John,\n\nthat is perfectly fine and the patch did apply as expected.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T20:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
@@ -306,6 +304,7 @@ archive/issue_comments_026171.json:
 Replying to [comment:8 cremona]:
 > 
 > I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....
+
 
 Hi John,
 

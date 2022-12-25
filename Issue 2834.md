@@ -58,7 +58,7 @@ All tests pass for me.  I'd give it a positive review, but I'd also like to hear
 archive/issue_comments_019407.json:
 ```json
 {
-    "body": "I like this patch. But after applying and doing a `sage -ba` I see the following failure with `-long`:\n\n```\nsage -t -long devel/sage/sage/coding/linear_code.py         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/linear_code.py\", line 724:\n    sage: C.chinen_polynomial()       # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        C.chinen_polynomial()       # long time###line 724:\n    sage: C.chinen_polynomial()       # long time\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 737, in chinen_polynomial\n        from sage.rings.polynomial.polynomial_ring import PolynomialRing, polygen\n    ImportError: cannot import name PolynomialRing\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "I like this patch. But after applying and doing a `sage -ba` I see the following failure with `-long`:\n\n```\nsage -t -long devel/sage/sage/coding/linear_code.py         \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/tmp/linear_code.py\", line 724:\n    sage: C.chinen_polynomial()       # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        C.chinen_polynomial()       # long time###line 724:\n    sage: C.chinen_polynomial()       # long time\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha2/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 737, in chinen_polynomial\n        from sage.rings.polynomial.polynomial_ring import PolynomialRing, polygen\n    ImportError: cannot import name PolynomialRing\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-04-07T00:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2834",
     "type": "issue_comment",
@@ -86,7 +86,6 @@ Exception raised:
     ImportError: cannot import name PolynomialRing
 **********************************************************************
 ```
-
 
 Cheers,
 

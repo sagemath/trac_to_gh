@@ -3,7 +3,7 @@
 archive/issues_009012.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nThe docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomposition`` says:\n\n```\n        This requires that the given basis is reduced w.r.t. to the\n        lexicographical monomial ordering. If the basis of self does\n        not have this property, the required Groebner basis is\n        computed implicitly.\n```\n\nhowever (Sage 4.4.1):\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = Ideal(x^2+y^2-2, y^2-1)\nsage: J.triangular_decomposition()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Singular error:\n// ** _ is no standard basis\n   ? The ideal sage22 has to be given by a reduced SB\n   ? error occurred in STDIN line 101: `def sage24=fglm(sage19,sage22);\n\nIssue created by migration from https://trac.sagemath.org/ticket/9012\n\n",
+    "body": "Assignee: @malb\n\nThe docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomposition`` says:\n\n```\n        This requires that the given basis is reduced w.r.t. to the\n        lexicographical monomial ordering. If the basis of self does\n        not have this property, the required Groebner basis is\n        computed implicitly.\n```\nhowever (Sage 4.4.1):\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = Ideal(x^2+y^2-2, y^2-1)\nsage: J.triangular_decomposition()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Singular error:\n// ** _ is no standard basis\n   ? The ideal sage22 has to be given by a reduced SB\n   ? error occurred in STDIN line 101: `def sage24=fglm(sage19,sage22);\n\nIssue created by migration from https://trac.sagemath.org/ticket/9012\n\n",
     "created_at": "2010-05-21T20:14:24Z",
     "labels": [
         "component: commutative algebra",
@@ -26,7 +26,6 @@ The docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomp
         not have this property, the required Groebner basis is
         computed implicitly.
 ```
-
 however (Sage 4.4.1):
 
 ```

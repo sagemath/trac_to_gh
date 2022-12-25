@@ -3,7 +3,7 @@
 archive/issues_005982.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @malb\n\n----------------------------------------------------------------------\nthe GUI, and license() for information.  |\n----------------------------------------------------------------------\n| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for\nsage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial\nRing in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:\nQ.fraction_field()\n---------------------------------------------------------------------------\nNotImplementedError Traceback (most recent call last)\n\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5982\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\n---\nthe GUI, and license() for information.  |\n| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for\n---\n\nsage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial\nRing in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:\nQ.fraction_field()\n\n---\nNotImplementedError Traceback (most recent call last)\n\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/5982\n\n",
     "created_at": "2009-05-04T23:19:45Z",
     "labels": [
         "component: algebra",
@@ -20,15 +20,17 @@ Assignee: tbd
 
 CC:  @malb
 
-----------------------------------------------------------------------
+---
 the GUI, and license() for information.  |
-----------------------------------------------------------------------
 | Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for
+---
+
 sage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R
 sage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial
 Ring in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:
 Q.fraction_field()
----------------------------------------------------------------------------
+
+---
 NotImplementedError Traceback (most recent call last)
 
 ...
@@ -64,7 +66,7 @@ Fix/workaround using Macaulay 2
 archive/issue_comments_047411.json:
 ```json
 {
-    "body": "[with patch, needs review]\n\n\n```\n----------------------------------------------------------------------\nthe GUI, and license() for information.  |\n----------------------------------------------------------------------\n| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for\nsage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial\nRing in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:\nQ.fraction_field()\n---------------------------------------------------------------------------\nNotImplementedError Traceback (most recent call last)\n\n...\n```\n",
+    "body": "[with patch, needs review]\n\n```\n----------------------------------------------------------------------\nthe GUI, and license() for information.  |\n----------------------------------------------------------------------\n| Sage Version 3.4, Release Date: 2009-03-11 | | Type notebook() for\nsage: R.<x, y> = PolynomialRing(QQ, 2) sage: I = (x^2 + y^2 - 1)*R\nsage: Q = R.quotient(I) sage: Q Quotient of Multivariate Polynomial\nRing in x, y over Rational Field by the ideal (x^2 + y^2 - 1) sage:\nQ.fraction_field()\n---------------------------------------------------------------------------\nNotImplementedError Traceback (most recent call last)\n\n...\n```",
     "created_at": "2009-05-04T23:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -74,7 +76,6 @@ archive/issue_comments_047411.json:
 ```
 
 [with patch, needs review]
-
 
 ```
 ----------------------------------------------------------------------
@@ -90,7 +91,6 @@ NotImplementedError Traceback (most recent call last)
 
 ...
 ```
-
 
 
 
@@ -267,7 +267,7 @@ Could you point me to the location of Singular's ideal primality testing algorit
 archive/issue_comments_047420.json:
 ```json
 {
-    "body": "Replying to [comment:11 jmbr]:\n> Hi Nick,\n> \n> Could you point me to the location of Singular's ideal primality testing algorithm?  Thanks\n\nAFAICT, Singular does not have a toplevel isprime() (or ismaximal()) function.  Reading some mailing list posts regarding Singular and Macaulay2, I believe both implement the same two algorithms for calculating the complete primary decomposition of an ideal.  I don't understand enough to say definitively and I may be misusing the complete primary decomposition for testing primality.  I was hoping that Martin Albrecht would review and clarify the situation.",
+    "body": "Replying to [comment:11 jmbr]:\n> Hi Nick,\n> \n> Could you point me to the location of Singular's ideal primality testing algorithm?  Thanks\n\n\nAFAICT, Singular does not have a toplevel isprime() (or ismaximal()) function.  Reading some mailing list posts regarding Singular and Macaulay2, I believe both implement the same two algorithms for calculating the complete primary decomposition of an ideal.  I don't understand enough to say definitively and I may be misusing the complete primary decomposition for testing primality.  I was hoping that Martin Albrecht would review and clarify the situation.",
     "created_at": "2009-06-21T18:39:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -280,6 +280,7 @@ Replying to [comment:11 jmbr]:
 > Hi Nick,
 > 
 > Could you point me to the location of Singular's ideal primality testing algorithm?  Thanks
+
 
 AFAICT, Singular does not have a toplevel isprime() (or ismaximal()) function.  Reading some mailing list posts regarding Singular and Macaulay2, I believe both implement the same two algorithms for calculating the complete primary decomposition of an ideal.  I don't understand enough to say definitively and I may be misusing the complete primary decomposition for testing primality.  I was hoping that Martin Albrecht would review and clarify the situation.
 
@@ -328,7 +329,7 @@ Best regards
 archive/issue_comments_047423.json:
 ```json
 {
-    "body": "Positive review modulo fixing this one trivial change to a doctest:\n\n```\nwstein@sage:~/build/sage-4.1$ ./sage -t  devel/sage/sage/rings/quotient_ring.py\nsage -t  \"devel/sage/sage/rings/quotient_ring.py\"           \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1/devel/sage/sage/rings/quotient_ring.py\", line 442:\n    sage: Q.is_integral_domain()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[7]>\", line 1, in <module>\n        Q.is_integral_domain()###line 442:\n    sage: Q.is_integral_domain()\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/quotient_ring.py\", line 447, in is_integral_domain\n        return self.defining_ideal().is_prime()\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 854, in is_prime\n        CPD = self.complete_primary_decomposition(**kwds)\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 401, in __call__\n        raise ValueError(\"Coefficient ring must be a field for function '%s'.\"%(self.f.__name__))\n    ValueError: Coefficient ring must be a field for function 'complete_primary_decomposition'.\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1/tmp/.doctest_quotient_ring.py\n         [1.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/quotient_ring.py\"\nTotal time for all tests: 1.8 seconds\nwstein@sage:~/build/sage-4.1$ \n```\n",
+    "body": "Positive review modulo fixing this one trivial change to a doctest:\n\n```\nwstein@sage:~/build/sage-4.1$ ./sage -t  devel/sage/sage/rings/quotient_ring.py\nsage -t  \"devel/sage/sage/rings/quotient_ring.py\"           \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1/devel/sage/sage/rings/quotient_ring.py\", line 442:\n    sage: Q.is_integral_domain()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[7]>\", line 1, in <module>\n        Q.is_integral_domain()###line 442:\n    sage: Q.is_integral_domain()\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/quotient_ring.py\", line 447, in is_integral_domain\n        return self.defining_ideal().is_prime()\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 854, in is_prime\n        CPD = self.complete_primary_decomposition(**kwds)\n      File \"/scratch/wstein/build/sage-4.1/local/lib/python/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 401, in __call__\n        raise ValueError(\"Coefficient ring must be a field for function '%s'.\"%(self.f.__name__))\n    ValueError: Coefficient ring must be a field for function 'complete_primary_decomposition'.\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1/tmp/.doctest_quotient_ring.py\n         [1.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/quotient_ring.py\"\nTotal time for all tests: 1.8 seconds\nwstein@sage:~/build/sage-4.1$ \n```",
     "created_at": "2009-07-21T04:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -386,7 +387,6 @@ wstein@sage:~/build/sage-4.1$
 
 
 
-
 ---
 
 archive/issue_comments_047424.json:
@@ -434,7 +434,7 @@ reviewer patch: fix ReST typos
 archive/issue_comments_047426.json:
 ```json
 {
-    "body": "The reviewer patch `trac_5982-reviewer.patch` fixes some ReST typos in `trac_5982-ncalexan-with-check.patch` so that the reference manual builds without warnings. After applying patches in this order:\n\n1. `trac_5982-ncalexan-with-check.patch`\n2. `trac_5982-reviewer.patch`\n \nI get the following doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/jacobian_morphism.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/hyperelliptic_curves/jacobian_morphism.py\", line 297:\n    sage: J = H.jacobian()(F); J\nExpected:\n    verbose 0 (919: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 1000000000000000000000000000057\nGot:\n    verbose 0 (964: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 1000000000000000000000000000057\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_4\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_jacobian_morphism.py\n\t [3.1 s]\n```\n",
+    "body": "The reviewer patch `trac_5982-reviewer.patch` fixes some ReST typos in `trac_5982-ncalexan-with-check.patch` so that the reference manual builds without warnings. After applying patches in this order:\n\n1. `trac_5982-ncalexan-with-check.patch`\n2. `trac_5982-reviewer.patch`\n \nI get the following doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/jacobian_morphism.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/schemes/hyperelliptic_curves/jacobian_morphism.py\", line 297:\n    sage: J = H.jacobian()(F); J\nExpected:\n    verbose 0 (919: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 1000000000000000000000000000057\nGot:\n    verbose 0 (964: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n    Set of points of Jacobian of Hyperelliptic Curve over Finite Field of size 1000000000000000000000000000057 defined by y^2 + 2*x*y = x^7 + x^2 + 1 defined over Finite Field of size 1000000000000000000000000000057\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_4\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_jacobian_morphism.py\n\t [3.1 s]\n```",
     "created_at": "2009-08-23T11:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -468,7 +468,6 @@ Got:
 For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_jacobian_morphism.py
 	 [3.1 s]
 ```
-
 
 
 
@@ -605,7 +604,7 @@ Patchbot seems to be happy with it, but a full ptestlong run on my 4.6.2.alpha1 
 archive/issue_comments_047434.json:
 ```json
 {
-    "body": "Attachment [trac_5982_review2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982_review2.patch) by @mstreng created at 2011-02-14 09:41:26\n\nWhy is this\n\n```\n        The following is Trac #5982.  Note that the quotient ring \n        is not recognized as being a field at this time, so the \n        fraction field is not the quotient ring itself:: \n \n            sage: Q = R.quotient(I); Q \n            Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n            sage: Q.fraction_field() \n            Fraction Field of Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n```\n\npart of the documentation of `is_prime` and not of `fraction_field`?\n\nAll tests pass with these patches on sage-4.6.2.alpha4. Patches fix the problem in the ticket description, and all changes look good.",
+    "body": "Attachment [trac_5982_review2.patch](tarball://root/attachments/some-uuid/ticket5982/trac_5982_review2.patch) by @mstreng created at 2011-02-14 09:41:26\n\nWhy is this\n\n```\n        The following is Trac #5982.  Note that the quotient ring \n        is not recognized as being a field at this time, so the \n        fraction field is not the quotient ring itself:: \n \n            sage: Q = R.quotient(I); Q \n            Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n            sage: Q.fraction_field() \n            Fraction Field of Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) \n```\npart of the documentation of `is_prime` and not of `fraction_field`?\n\nAll tests pass with these patches on sage-4.6.2.alpha4. Patches fix the problem in the ticket description, and all changes look good.",
     "created_at": "2011-02-14T09:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -628,7 +627,6 @@ Why is this
             sage: Q.fraction_field() 
             Fraction Field of Quotient of Multivariate Polynomial Ring in x, y over Rational Field by the ideal (x^2 - y^2 - 1) 
 ```
-
 part of the documentation of `is_prime` and not of `fraction_field`?
 
 All tests pass with these patches on sage-4.6.2.alpha4. Patches fix the problem in the ticket description, and all changes look good.
@@ -658,7 +656,7 @@ Marco, did you forget to mark this as "positive review"?
 archive/issue_comments_047436.json:
 ```json
 {
-    "body": "Replying to [comment:27 cremona]:\n> Marco, did you forget to mark this as \"positive review\"?\n\nActually, I was waiting for an answer to my question first, and then forgot all about the ticket.\n\nIf I recall correctly, the question was not that important.",
+    "body": "Replying to [comment:27 cremona]:\n> Marco, did you forget to mark this as \"positive review\"?\n\n\nActually, I was waiting for an answer to my question first, and then forgot all about the ticket.\n\nIf I recall correctly, the question was not that important.",
     "created_at": "2011-04-22T15:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5982",
     "type": "issue_comment",
@@ -669,6 +667,7 @@ archive/issue_comments_047436.json:
 
 Replying to [comment:27 cremona]:
 > Marco, did you forget to mark this as "positive review"?
+
 
 Actually, I was waiting for an answer to my question first, and then forgot all about the ticket.
 

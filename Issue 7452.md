@@ -160,7 +160,7 @@ based on Sage 4.3.alpha1
 archive/issue_comments_062651.json:
 ```json
 {
-    "body": "Replying to [comment:4 iandrus]:\n> If I am allowed to review the rebased patch, I give it a positive review. \n\nYes, I think you are allowed to review my rebased patch. Essentially, I'm happy with your original patch and I would give it a positive review. But I can't successfully apply your patch to Sage 4.3.alpha1 so I had to rebase your patch. What you are doing is reviewing the modification I made to your patch.\n\n\n\n\n\n> The only nit that I have it is uses tabs, but there are other tabs in this file as well.\n\nMy apology about introducing the tabs. I have attached a new patch which shouldn't have any tabs in it. Only that newer patch needs reviewing.",
+    "body": "Replying to [comment:4 iandrus]:\n> If I am allowed to review the rebased patch, I give it a positive review. \n\n\nYes, I think you are allowed to review my rebased patch. Essentially, I'm happy with your original patch and I would give it a positive review. But I can't successfully apply your patch to Sage 4.3.alpha1 so I had to rebase your patch. What you are doing is reviewing the modification I made to your patch.\n\n\n\n\n\n> The only nit that I have it is uses tabs, but there are other tabs in this file as well.\n\n\nMy apology about introducing the tabs. I have attached a new patch which shouldn't have any tabs in it. Only that newer patch needs reviewing.",
     "created_at": "2009-12-08T22:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
@@ -172,6 +172,7 @@ archive/issue_comments_062651.json:
 Replying to [comment:4 iandrus]:
 > If I am allowed to review the rebased patch, I give it a positive review. 
 
+
 Yes, I think you are allowed to review my rebased patch. Essentially, I'm happy with your original patch and I would give it a positive review. But I can't successfully apply your patch to Sage 4.3.alpha1 so I had to rebase your patch. What you are doing is reviewing the modification I made to your patch.
 
 
@@ -179,6 +180,7 @@ Yes, I think you are allowed to review my rebased patch. Essentially, I'm happy 
 
 
 > The only nit that I have it is uses tabs, but there are other tabs in this file as well.
+
 
 My apology about introducing the tabs. I have attached a new patch which shouldn't have any tabs in it. Only that newer patch needs reviewing.
 

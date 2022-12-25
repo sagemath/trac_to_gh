@@ -161,7 +161,7 @@ Mitesh, thank you very much for fixing this.
 archive/issue_comments_052959.json:
 ```json
 {
-    "body": "I agree that the change above looks like the correct one.  Another option was to have jsmath automatically typeset the stuff in the alt parameter of the img files.  Davide Cervone sent me a message with a way to do that:\n\n\n```\n\nJason:\n\nI've attached a javascript file that should do the preprocessing that you need.  It implements the suggestion I made to you about making span's with display:none so that the images show until jsMath reprocesses them.  You can load it just before jsMath/easy/load.js, or you could add it to the loadFiles list in easy/load.js.  Let me know if this doesn't do the trick for you.\n\nDavide\n\nOn Jul 13, 2009, at 11:34 PM, jason-sage@creativetrax.com wrote:\n\n> Davide P. Cervone wrote:\n>> Jason:\n>>\n>> Here's what's going on:  jsMath looks for DIV's and SPAN's that are marked by CLASS=\"math\" and treats their contents as TeX source code to process.  It replaces the original contents of the DIV or SPAN with the typeset version of the TeX code.  Because the image's are not DIV's or SPAN's jsMath ignores them (even though they are CLASS=\"math\"), but the <DIV CLASS=\"math\"> that contains an image is processed by jsMath.  It takes the text content of the DIV (empty in this case) and typesets it (the result is blank).  Thus the image disappears and is replaced by nothing.\n>\n> Thanks!  Your explanation and suggestions below are very appreciated!\n>\n> Jason \n\n```\n\n\nThe javascript code is:\n\n\n```\n\n(function () {\n  var PREPROCESS = function () {\n    var parent, span, i;\n    var img = document.getElementsByTagName(\"img\");\n    for (i = 0; i < img.length; i++) {\n      if (img[i].alt) {\n        parent = img[i].parentNode.parentNode;\n        if (img[i].className === \"math\") {\n          span = img[i].parentNode.insertBefore(document.createElement(\"span\"),img[i]);\n          span.className = \"math\";\n          span.appendChild(img[i]);\n          span = span.appendChild(document.createElement(\"span\"));\n          span.style.display = \"none\";\n          span.appendChild(document.createTextNode(img[i].alt));\n        } else if (parent && parent.tagName.toLowerCase() === \"div\" && parent.className === \"math\") {\n          span = img[i].parentNode.appendChild(document.createElement(\"span\"));\n          span.style.display = \"none\";\n          span.appendChild(document.createTextNode(img[i].alt));\n        }\n      }\n    }\n  };\n  \n  if (window.addEventListener) {window.addEventListener(\"load\",PREPROCESS,false)}\n  else if (window.attachEvent) {window.attachEvent(\"onload\",PREPROCESS)}\n  else {window.onload = PREPROCESS}\n})();\n\n\n```\n",
+    "body": "I agree that the change above looks like the correct one.  Another option was to have jsmath automatically typeset the stuff in the alt parameter of the img files.  Davide Cervone sent me a message with a way to do that:\n\n```\n\nJason:\n\nI've attached a javascript file that should do the preprocessing that you need.  It implements the suggestion I made to you about making span's with display:none so that the images show until jsMath reprocesses them.  You can load it just before jsMath/easy/load.js, or you could add it to the loadFiles list in easy/load.js.  Let me know if this doesn't do the trick for you.\n\nDavide\n\nOn Jul 13, 2009, at 11:34 PM, jason-sage@creativetrax.com wrote:\n\n> Davide P. Cervone wrote:\n>> Jason:\n>>\n>> Here's what's going on:  jsMath looks for DIV's and SPAN's that are marked by CLASS=\"math\" and treats their contents as TeX source code to process.  It replaces the original contents of the DIV or SPAN with the typeset version of the TeX code.  Because the image's are not DIV's or SPAN's jsMath ignores them (even though they are CLASS=\"math\"), but the <DIV CLASS=\"math\"> that contains an image is processed by jsMath.  It takes the text content of the DIV (empty in this case) and typesets it (the result is blank).  Thus the image disappears and is replaced by nothing.\n>\n> Thanks!  Your explanation and suggestions below are very appreciated!\n>\n> Jason \n\n```\n\nThe javascript code is:\n\n```\n\n(function () {\n  var PREPROCESS = function () {\n    var parent, span, i;\n    var img = document.getElementsByTagName(\"img\");\n    for (i = 0; i < img.length; i++) {\n      if (img[i].alt) {\n        parent = img[i].parentNode.parentNode;\n        if (img[i].className === \"math\") {\n          span = img[i].parentNode.insertBefore(document.createElement(\"span\"),img[i]);\n          span.className = \"math\";\n          span.appendChild(img[i]);\n          span = span.appendChild(document.createElement(\"span\"));\n          span.style.display = \"none\";\n          span.appendChild(document.createTextNode(img[i].alt));\n        } else if (parent && parent.tagName.toLowerCase() === \"div\" && parent.className === \"math\") {\n          span = img[i].parentNode.appendChild(document.createElement(\"span\"));\n          span.style.display = \"none\";\n          span.appendChild(document.createTextNode(img[i].alt));\n        }\n      }\n    }\n  };\n  \n  if (window.addEventListener) {window.addEventListener(\"load\",PREPROCESS,false)}\n  else if (window.attachEvent) {window.attachEvent(\"onload\",PREPROCESS)}\n  else {window.onload = PREPROCESS}\n})();\n\n\n```",
     "created_at": "2009-07-18T20:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
@@ -171,7 +171,6 @@ archive/issue_comments_052959.json:
 ```
 
 I agree that the change above looks like the correct one.  Another option was to have jsmath automatically typeset the stuff in the alt parameter of the img files.  Davide Cervone sent me a message with a way to do that:
-
 
 ```
 
@@ -194,9 +193,7 @@ On Jul 13, 2009, at 11:34 PM, jason-sage@creativetrax.com wrote:
 
 ```
 
-
 The javascript code is:
-
 
 ```
 
@@ -230,4 +227,3 @@ The javascript code is:
 
 
 ```
-

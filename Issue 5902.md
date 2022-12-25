@@ -3,7 +3,7 @@
 archive/issues_005902.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nRunning\n\n```\nsage -t devel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nseems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a \"cd\" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.\n\nThe attached patch caused the problems to go away for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5902\n\n",
+    "body": "Assignee: mabshoff\n\nRunning\n\n```\nsage -t devel/sage/sage/rings/polynomial/pbori.pyx\n```\nseems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a \"cd\" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.\n\nThe attached patch caused the problems to go away for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5902\n\n",
     "created_at": "2009-04-26T05:51:28Z",
     "labels": [
         "component: doctest coverage",
@@ -23,7 +23,6 @@ Running
 ```
 sage -t devel/sage/sage/rings/polynomial/pbori.pyx
 ```
-
 seems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a "cd" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.
 
 The attached patch caused the problems to go away for me.
@@ -95,7 +94,7 @@ Looks good to me!
 archive/issue_comments_046565.json:
 ```json
 {
-    "body": "> Running\n>\n> sage -t devel/sage/sage/rings/polynomial/pbori.pyx\n>\n> seems to not work for me sometimes when the current working directory is not SAGE_ROOT.\n\nIt should not work.  \"sage -t\" is supposed to take the path to a file.  If you're not in SAGE_ROOT, then devel/sage/sage/rings/polynomial/pbori.pyx is not a file.  It's like with any other unix command.  E.g., you wouldn't expect \n\n```\ncat devel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nto magically work if you're not in SAGE_ROOT.\n\nNote that Mike Hansen just gave this a positive review.  I strongly disagree.",
+    "body": "> Running\n\n>\n> sage -t devel/sage/sage/rings/polynomial/pbori.pyx\n\n>\n> seems to not work for me sometimes when the current working directory is not SAGE_ROOT.\n\n\nIt should not work.  \"sage -t\" is supposed to take the path to a file.  If you're not in SAGE_ROOT, then devel/sage/sage/rings/polynomial/pbori.pyx is not a file.  It's like with any other unix command.  E.g., you wouldn't expect \n\n```\ncat devel/sage/sage/rings/polynomial/pbori.pyx\n```\nto magically work if you're not in SAGE_ROOT.\n\nNote that Mike Hansen just gave this a positive review.  I strongly disagree.",
     "created_at": "2009-06-20T14:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
@@ -105,17 +104,19 @@ archive/issue_comments_046565.json:
 ```
 
 > Running
+
 >
 > sage -t devel/sage/sage/rings/polynomial/pbori.pyx
+
 >
 > seems to not work for me sometimes when the current working directory is not SAGE_ROOT.
+
 
 It should not work.  "sage -t" is supposed to take the path to a file.  If you're not in SAGE_ROOT, then devel/sage/sage/rings/polynomial/pbori.pyx is not a file.  It's like with any other unix command.  E.g., you wouldn't expect 
 
 ```
 cat devel/sage/sage/rings/polynomial/pbori.pyx
 ```
-
 to magically work if you're not in SAGE_ROOT.
 
 Note that Mike Hansen just gave this a positive review.  I strongly disagree.

@@ -3,7 +3,7 @@
 archive/issues_001686.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nThe file\n\n```\nSAGE_ROOT/devel/sage/sage/numerical/tests.py\n```\n\n\ncontains this doctest:\n\n\n```\nsage: from scipy import sparse\nsage: import arpack\n\n#Test arpack\n#This matrix is the finite difference approximation to\n# the eigenvalue problem\n#d^2f/dx^2=\\lambda f, on [0,\\pi], which boundary values 0\n# The lowest eigenvalue calulated should be close to 1\nsage: import scipy\nsage: n=scipy.zeros((3,500))\nsage: n[0,:]=-1\nsage: n[1,:]=2\nsage: n[2,:]=-1\nsage: A=sparse.spdiags(n,[-1,0,1],int(500),int(500))\nsage: e,v=arpack.speigs.ARPACK_eigs(A.matvec,500,6,which='SM')\nsage: e[0]*float(501/pi)**2\n0.999............\n```\n\n\nThe line \n\n```\nsage: e,v=arpack.speigs.ARPACK_eigs(A.matvec,500,6,which='SM')\n```\n\ncrashes on at least one Pentium 4 machine with Sage built using gfortran.\n\nIf any sage developers replicate this on their personal hardware, please\nemail sage-devel.  We have removed the above doctest until this gets fixed. \n(See attached patch.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1686\n\n",
+    "body": "Assignee: jkantor\n\nThe file\n\n```\nSAGE_ROOT/devel/sage/sage/numerical/tests.py\n```\n\ncontains this doctest:\n\n```\nsage: from scipy import sparse\nsage: import arpack\n\n#Test arpack\n#This matrix is the finite difference approximation to\n# the eigenvalue problem\n#d^2f/dx^2=\\lambda f, on [0,\\pi], which boundary values 0\n# The lowest eigenvalue calulated should be close to 1\nsage: import scipy\nsage: n=scipy.zeros((3,500))\nsage: n[0,:]=-1\nsage: n[1,:]=2\nsage: n[2,:]=-1\nsage: A=sparse.spdiags(n,[-1,0,1],int(500),int(500))\nsage: e,v=arpack.speigs.ARPACK_eigs(A.matvec,500,6,which='SM')\nsage: e[0]*float(501/pi)**2\n0.999............\n```\n\nThe line \n\n```\nsage: e,v=arpack.speigs.ARPACK_eigs(A.matvec,500,6,which='SM')\n```\ncrashes on at least one Pentium 4 machine with Sage built using gfortran.\n\nIf any sage developers replicate this on their personal hardware, please\nemail sage-devel.  We have removed the above doctest until this gets fixed. \n(See attached patch.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1686\n\n",
     "created_at": "2008-01-04T23:54:22Z",
     "labels": [
         "component: numerical",
@@ -25,9 +25,7 @@ The file
 SAGE_ROOT/devel/sage/sage/numerical/tests.py
 ```
 
-
 contains this doctest:
-
 
 ```
 sage: from scipy import sparse
@@ -49,13 +47,11 @@ sage: e[0]*float(501/pi)**2
 0.999............
 ```
 
-
 The line 
 
 ```
 sage: e,v=arpack.speigs.ARPACK_eigs(A.matvec,500,6,which='SM')
 ```
-
 crashes on at least one Pentium 4 machine with Sage built using gfortran.
 
 If any sage developers replicate this on their personal hardware, please

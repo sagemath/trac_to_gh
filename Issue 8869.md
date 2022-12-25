@@ -3,7 +3,7 @@
 archive/issues_008869.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nRight now, we have the following behavior:\n\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
+    "body": "Assignee: @aghitza\n\nRight now, we have the following behavior:\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
     "created_at": "2010-05-04T15:56:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_008869.json:
 Assignee: @aghitza
 
 Right now, we have the following behavior:
-
 
 ```
 sage: float(CC(1.0))
@@ -45,7 +44,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: can't convert complex to float 
 ```
-
 
 As robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.
 
@@ -217,7 +215,7 @@ Nevertheless, I'll test it as soon as the "normal" 4.4.3.alpha0 ptestlong finish
 archive/issue_comments_081399.json:
 ```json
 {
-    "body": "I don't think we are trying to be contentious here.  Yes, there are inconsistencies, but that is just to be expected (I would even say it follows from Arrow's Theorem).  The point is to make it as natural to mathematicians as possible, and float(CDF(1)) certainly smells like 1.0 to me.  int is a little different, but it seems to me that since Python isn't consistent anyways\n\n```\n>>> int(1.1)\n1\n>>> float(1+0j)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in ?\nTypeError: can't convert complex to float; use abs(z)\n```\n\nwe might as well make the best of it and let int be the \"round closest to zero\" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).",
+    "body": "I don't think we are trying to be contentious here.  Yes, there are inconsistencies, but that is just to be expected (I would even say it follows from Arrow's Theorem).  The point is to make it as natural to mathematicians as possible, and float(CDF(1)) certainly smells like 1.0 to me.  int is a little different, but it seems to me that since Python isn't consistent anyways\n\n```\n>>> int(1.1)\n1\n>>> float(1+0j)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in ?\nTypeError: can't convert complex to float; use abs(z)\n```\nwe might as well make the best of it and let int be the \"round closest to zero\" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).",
     "created_at": "2010-05-27T00:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
@@ -236,7 +234,6 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in ?
 TypeError: can't convert complex to float; use abs(z)
 ```
-
 we might as well make the best of it and let int be the "round closest to zero" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).
 
 
@@ -264,7 +261,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081401.json:
 ```json
 {
-    "body": "The Python behavior could be \"catched\" by the preparser. There have recently been long discussions about Sage's \"coercion model\"...\n\n----\n\nApplied Karl-Dieter's patch on 4.4.3.alpha0.\n\n`sage -t -long devel/sage/sage/rings` passed all tests.\n\nPositive review.",
+    "body": "The Python behavior could be \"catched\" by the preparser. There have recently been long discussions about Sage's \"coercion model\"...\n\n---\n\nApplied Karl-Dieter's patch on 4.4.3.alpha0.\n\n`sage -t -long devel/sage/sage/rings` passed all tests.\n\nPositive review.",
     "created_at": "2010-05-27T01:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
@@ -275,7 +272,7 @@ archive/issue_comments_081401.json:
 
 The Python behavior could be "catched" by the preparser. There have recently been long discussions about Sage's "coercion model"...
 
-----
+---
 
 Applied Karl-Dieter's patch on 4.4.3.alpha0.
 

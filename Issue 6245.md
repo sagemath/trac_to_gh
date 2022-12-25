@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6245
 archive/issue_comments_049775.json:
 ```json
 {
-    "body": "For reference, the code is:\n\n\n```\nclass infix_operator:\n    def __init__(self, function, left=None, right=None):\n        self.function = function\n        self.left = left\n        self.right = right\n\n    def __rmul__(self, left):\n        if self.right is None:\n            if self.left is None:\n                return infix_operator(self.function, left=left)\n            else:\n                raise SyntaxError, \"Infix operator already has its left argument\"\n        else:\n            return self.function(left, self.right)\n\n    def __mul__(self, right):\n        if self.left is None:\n            if self.right is None:\n                return infix_operator(self.function, right=right)\n            else:\n                raise SyntaxError, \"Infix operator already has its right argument\"\n        else:\n            return self.function(self.left, right) \n        \t\n```\n\n\nAnd several examples (doctests?) are:\n\n\n```\n# This emul operator returns the element-wise product of two lists...\n@infix_operator\ndef emul(a,b):\n    return [i*j for i,j in zip(a,b)] \n        \t\na=[1,2,3]\nb=[3,4,5]\n\n# Returns [3,8,15]\na *emul* b \n        \t\n@infix_operator\ndef hadamard_product(a, b):\n   if a.nrows()!=b.nrows() or a.ncols()!=b.ncols():\n       raise ValueError, \"Matrices must have the same dimensions in a Hadamard product\"\n   return matrix(a.nrows(), a.ncols(), [x*y for x, y in zip(a.list(), b.list())]) \n        \t\nA=random_matrix(ZZ,3)\nB=random_matrix(ZZ,3)\nA *hadamard_product* B \n```\n",
+    "body": "For reference, the code is:\n\n```\nclass infix_operator:\n    def __init__(self, function, left=None, right=None):\n        self.function = function\n        self.left = left\n        self.right = right\n\n    def __rmul__(self, left):\n        if self.right is None:\n            if self.left is None:\n                return infix_operator(self.function, left=left)\n            else:\n                raise SyntaxError, \"Infix operator already has its left argument\"\n        else:\n            return self.function(left, self.right)\n\n    def __mul__(self, right):\n        if self.left is None:\n            if self.right is None:\n                return infix_operator(self.function, right=right)\n            else:\n                raise SyntaxError, \"Infix operator already has its right argument\"\n        else:\n            return self.function(self.left, right) \n        \t\n```\n\nAnd several examples (doctests?) are:\n\n```\n# This emul operator returns the element-wise product of two lists...\n@infix_operator\ndef emul(a,b):\n    return [i*j for i,j in zip(a,b)] \n        \t\na=[1,2,3]\nb=[3,4,5]\n\n# Returns [3,8,15]\na *emul* b \n        \t\n@infix_operator\ndef hadamard_product(a, b):\n   if a.nrows()!=b.nrows() or a.ncols()!=b.ncols():\n       raise ValueError, \"Matrices must have the same dimensions in a Hadamard product\"\n   return matrix(a.nrows(), a.ncols(), [x*y for x, y in zip(a.list(), b.list())]) \n        \t\nA=random_matrix(ZZ,3)\nB=random_matrix(ZZ,3)\nA *hadamard_product* B \n```",
     "created_at": "2009-06-08T11:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -42,7 +42,6 @@ archive/issue_comments_049775.json:
 ```
 
 For reference, the code is:
-
 
 ```
 class infix_operator:
@@ -71,9 +70,7 @@ class infix_operator:
         	
 ```
 
-
 And several examples (doctests?) are:
-
 
 ```
 # This emul operator returns the element-wise product of two lists...
@@ -100,13 +97,12 @@ A *hadamard_product* B
 
 
 
-
 ---
 
 archive/issue_comments_049776.json:
 ```json
 {
-    "body": "The patch is an initial go at this.  The documentation for the function needs to change (it still is just the same docs as the code I followed in plot/misc.py).\n\nHere are some examples:\n\n\n```\nsage: from sage.misc.misc import infix_operator\nsage: # A post-fix operator\nsage: @infix_operator('or')\nsage: def pipe(a,b):\n...       return b(a)\n...\nsage: print (x |pipe| cos)\nsage: print pi |pipe| n\nsage: print pi |pipe| n |pipe| cos\ncos(x)\n3.14159265358979\n-1.00000000000000\nsage: # an infix dot product\nsage: @infix_operator('multiply')\nsage: def dot(a,b):\n...       return a.dot_product(b)\n...       \n...\nsage: vector([1,2]) *dot* vector([2,4])\n10\nsage: # an infix sum\nsage: @infix_operator('add')\nsage: def esum(a,b):\n...       return [i+j for i,j in zip(a,b)]\n...\nsage: [1,2,4] +esum+ [3,-1,2]\n[4, 1, 6]\n```\n",
+    "body": "The patch is an initial go at this.  The documentation for the function needs to change (it still is just the same docs as the code I followed in plot/misc.py).\n\nHere are some examples:\n\n```\nsage: from sage.misc.misc import infix_operator\nsage: # A post-fix operator\nsage: @infix_operator('or')\nsage: def pipe(a,b):\n...       return b(a)\n...\nsage: print (x |pipe| cos)\nsage: print pi |pipe| n\nsage: print pi |pipe| n |pipe| cos\ncos(x)\n3.14159265358979\n-1.00000000000000\nsage: # an infix dot product\nsage: @infix_operator('multiply')\nsage: def dot(a,b):\n...       return a.dot_product(b)\n...       \n...\nsage: vector([1,2]) *dot* vector([2,4])\n10\nsage: # an infix sum\nsage: @infix_operator('add')\nsage: def esum(a,b):\n...       return [i+j for i,j in zip(a,b)]\n...\nsage: [1,2,4] +esum+ [3,-1,2]\n[4, 1, 6]\n```",
     "created_at": "2009-09-16T06:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -118,7 +114,6 @@ archive/issue_comments_049776.json:
 The patch is an initial go at this.  The documentation for the function needs to change (it still is just the same docs as the code I followed in plot/misc.py).
 
 Here are some examples:
-
 
 ```
 sage: from sage.misc.misc import infix_operator
@@ -149,7 +144,6 @@ sage: def esum(a,b):
 sage: [1,2,4] +esum+ [3,-1,2]
 [4, 1, 6]
 ```
-
 
 
 
@@ -212,7 +206,7 @@ I have no comment on the technical side, but wonder - are you limiting "object" 
 archive/issue_comments_049780.json:
 ```json
 {
-    "body": "Replying to [comment:7 kcrisman]:\n> I have no comment on the technical side, but wonder - are you limiting \"object\" to be or, add, or multiply?  What if someone wanted to create an infix for, say, factorial - would they have to change this code?\n\n\nI only chose a few precedence levels (that's really the issue here).  There's no reason we couldn't put all of the special functions in (like subtract, for example).",
+    "body": "Replying to [comment:7 kcrisman]:\n> I have no comment on the technical side, but wonder - are you limiting \"object\" to be or, add, or multiply?  What if someone wanted to create an infix for, say, factorial - would they have to change this code?\n\n\n\nI only chose a few precedence levels (that's really the issue here).  There's no reason we couldn't put all of the special functions in (like subtract, for example).",
     "created_at": "2009-09-17T16:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -225,6 +219,7 @@ Replying to [comment:7 kcrisman]:
 > I have no comment on the technical side, but wonder - are you limiting "object" to be or, add, or multiply?  What if someone wanted to create an infix for, say, factorial - would they have to change this code?
 
 
+
 I only chose a few precedence levels (that's really the issue here).  There's no reason we couldn't put all of the special functions in (like subtract, for example).
 
 
@@ -234,7 +229,7 @@ I only chose a few precedence levels (that's really the issue here).  There's no
 archive/issue_comments_049781.json:
 ```json
 {
-    "body": "Applied patch to 4.3.2\n\n\n(Cool functionality - Can review quickly once this is addressed) \n\n```\napplying trac-6245-infix-decorator.patch\npatching file sage/misc/misc.py\nHunk #1 FAILED at 2219\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/misc.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-6245-infix-decorator.patch\n```\n",
+    "body": "Applied patch to 4.3.2\n\n\n(Cool functionality - Can review quickly once this is addressed) \n\n```\napplying trac-6245-infix-decorator.patch\npatching file sage/misc/misc.py\nHunk #1 FAILED at 2219\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/misc.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-6245-infix-decorator.patch\n```",
     "created_at": "2010-02-12T11:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -257,7 +252,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh trac-6245-infix-decorator.patch
 ```
-
 
 
 
@@ -304,7 +298,7 @@ I rebased the patch to Sage 4.3.4.  Can you look at it again?
 archive/issue_comments_049784.json:
 ```json
 {
-    "body": "Replying to [comment:10 jason]:\n> I rebased the patch to Sage 4.3.4.  Can you look at it again?\n\nWill aim to look at this later today",
+    "body": "Replying to [comment:10 jason]:\n> I rebased the patch to Sage 4.3.4.  Can you look at it again?\n\n\nWill aim to look at this later today",
     "created_at": "2010-04-15T23:07:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -316,6 +310,7 @@ archive/issue_comments_049784.json:
 Replying to [comment:10 jason]:
 > I rebased the patch to Sage 4.3.4.  Can you look at it again?
 
+
 Will aim to look at this later today
 
 
@@ -325,7 +320,7 @@ Will aim to look at this later today
 archive/issue_comments_049785.json:
 ```json
 {
-    "body": "Can confirm all examples work as indicated and all tests passed for me\n\n```\nsage: def dot(a,b):\nsage:     return a.dot_product(b)\nsage: dot=infix_operator('multiply')(dot)\nsage: u=vector([1,2,3])\nsage: v=vector([5,4,3])\nsage: u *dot* v\n\n22\n\n# Also these examples here show precedence works as \n#   expected (i.e. * before +)\n#\nsage: def eadd(a,b): \nsage:     return a.parent([i+j for i,j in zip(a,b)])\nsage: \nsage: eadd=infix_operator('add')(eadd)\nsage: u=vector([1,2,3])\nsage: v=vector([5,4,3])\nsage: print u +eadd+ v\nsage: print 2*u +eadd+ v\nsage: print v +eadd+ 2*u \nsage: print v +eadd+ u*2 \nsage: print (v +eadd+ u)*2  \t\n\n(6, 6, 6)\n(7, 8, 9)\n(7, 8, 9)\n(7, 8, 9)\n(12, 12, 12)\n\n# Last example: function composition not commutative as expected\nsage: def thendo(a,b): return b(a)\nsage: thendo=infix_operator('or')(thendo)\nsage: print x |thendo| cos |thendo| (lambda x: x^2)\nsage: print x |thendo| (lambda x: x^2) |thendo| cos \n\ncos(x)^2\ncos(x^2)\n```\n",
+    "body": "Can confirm all examples work as indicated and all tests passed for me\n\n```\nsage: def dot(a,b):\nsage:     return a.dot_product(b)\nsage: dot=infix_operator('multiply')(dot)\nsage: u=vector([1,2,3])\nsage: v=vector([5,4,3])\nsage: u *dot* v\n\n22\n\n# Also these examples here show precedence works as \n#   expected (i.e. * before +)\n#\nsage: def eadd(a,b): \nsage:     return a.parent([i+j for i,j in zip(a,b)])\nsage: \nsage: eadd=infix_operator('add')(eadd)\nsage: u=vector([1,2,3])\nsage: v=vector([5,4,3])\nsage: print u +eadd+ v\nsage: print 2*u +eadd+ v\nsage: print v +eadd+ 2*u \nsage: print v +eadd+ u*2 \nsage: print (v +eadd+ u)*2  \t\n\n(6, 6, 6)\n(7, 8, 9)\n(7, 8, 9)\n(7, 8, 9)\n(12, 12, 12)\n\n# Last example: function composition not commutative as expected\nsage: def thendo(a,b): return b(a)\nsage: thendo=infix_operator('or')(thendo)\nsage: print x |thendo| cos |thendo| (lambda x: x^2)\nsage: print x |thendo| (lambda x: x^2) |thendo| cos \n\ncos(x)^2\ncos(x^2)\n```",
     "created_at": "2010-04-18T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -379,13 +374,12 @@ cos(x^2)
 
 
 
-
 ---
 
 archive/issue_comments_049786.json:
 ```json
 {
-    "body": "Noticed references to `__rmul__` in the code so I thought I might try setting up a situation\n\n\nwhere `__mul__` fails so `__rmul__` would be exercised. In setting up the test code, I got an\n\n\nerror but cant see whats wrong (any thoughts?)\n\n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"%d/%d\" % (self.numerator, self.denominator)\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def zrmul(self, other):\n    return Fraction(other*self.numerator,\n                  self.denominator)\n  def __mul__(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __rmul__(self, other):\n    return Fraction(other*self.numerator,self.denominator)\n\n# multiplication operator using methods\nprint Fraction(2,3).zmul(Fraction(5,4))\n```\n\n10/12\n\n```\n# multiplication infix operator\ndef dot(a,b):\n  return a.zmul(b)\ndot = infix_operator('multiply')(dot)\nprint Fraction(2,3) *dot* Fraction(5,4)\n```\n\ncrashes with \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_59.py\", line 9, in <module>\n    open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Z...<abbreviated>...Y=\"),globals())+\"\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpIR_EGe/___code___.py\", line 8, in <module>\n    u *dot* v\n  File \"\", line 1, in <module>\n    \n  File \"\", line 13, in __mul__\n    \nAttributeError: dot instance has no attribute 'numerator'\n```\n",
+    "body": "Noticed references to `__rmul__` in the code so I thought I might try setting up a situation\n\n\nwhere `__mul__` fails so `__rmul__` would be exercised. In setting up the test code, I got an\n\n\nerror but cant see whats wrong (any thoughts?)\n\n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"%d/%d\" % (self.numerator, self.denominator)\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def zrmul(self, other):\n    return Fraction(other*self.numerator,\n                  self.denominator)\n  def __mul__(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __rmul__(self, other):\n    return Fraction(other*self.numerator,self.denominator)\n\n# multiplication operator using methods\nprint Fraction(2,3).zmul(Fraction(5,4))\n```\n10/12\n\n```\n# multiplication infix operator\ndef dot(a,b):\n  return a.zmul(b)\ndot = infix_operator('multiply')(dot)\nprint Fraction(2,3) *dot* Fraction(5,4)\n```\ncrashes with \n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_59.py\", line 9, in <module>\n    open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Z...<abbreviated>...Y=\"),globals())+\"\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpIR_EGe/___code___.py\", line 8, in <module>\n    u *dot* v\n  File \"\", line 1, in <module>\n    \n  File \"\", line 13, in __mul__\n    \nAttributeError: dot instance has no attribute 'numerator'\n```",
     "created_at": "2010-04-18T11:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -424,7 +418,6 @@ class Fraction:
 # multiplication operator using methods
 print Fraction(2,3).zmul(Fraction(5,4))
 ```
-
 10/12
 
 ```
@@ -434,7 +427,6 @@ def dot(a,b):
 dot = infix_operator('multiply')(dot)
 print Fraction(2,3) *dot* Fraction(5,4)
 ```
-
 crashes with 
 
 ```
@@ -455,13 +447,12 @@ AttributeError: dot instance has no attribute 'numerator'
 
 
 
-
 ---
 
 archive/issue_comments_049787.json:
 ```json
 {
-    "body": "Replying to [comment:14 rossk]:\n> Noticed references to `__rmul__` in the code so I thought I might try setting up a situation\n\n> \n> where `__mul__` fails so `__rmul__` would be exercised. In setting up the test code, I got an\n\n> \n> error but cant see whats wrong (any thoughts?)\n\n\nThe problem is that your __mul__ function does not check its arguments.  Note that:\n\n\n```\nsage: Fraction(2,3)*matrix(2,1,[1,2])\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'\nobject has no attribute 'numerator'\n```\n\n\nInstead, you should check your arguments in the __mul__ function before blindly calling the .numerator method, or at least you should catch the error, like this:\n\n\n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"Fraction(%d,%d)\" % (self.numerator, self.denominator)\n  __repr__=__str__\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __mul__(self, other):\n    try:\n        return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n    except:\n        return NotImplemented\n\n```\n",
+    "body": "Replying to [comment:14 rossk]:\n> Noticed references to `__rmul__` in the code so I thought I might try setting up a situation\n\n\n> \n> where `__mul__` fails so `__rmul__` would be exercised. In setting up the test code, I got an\n\n\n> \n> error but cant see whats wrong (any thoughts?)\n\n\n\nThe problem is that your __mul__ function does not check its arguments.  Note that:\n\n```\nsage: Fraction(2,3)*matrix(2,1,[1,2])\nTraceback (click to the left of this block for traceback)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'\nobject has no attribute 'numerator'\n```\n\nInstead, you should check your arguments in the __mul__ function before blindly calling the .numerator method, or at least you should catch the error, like this:\n\n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"Fraction(%d,%d)\" % (self.numerator, self.denominator)\n  __repr__=__str__\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __mul__(self, other):\n    try:\n        return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n    except:\n        return NotImplemented\n\n```",
     "created_at": "2010-04-20T04:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -473,15 +464,17 @@ archive/issue_comments_049787.json:
 Replying to [comment:14 rossk]:
 > Noticed references to `__rmul__` in the code so I thought I might try setting up a situation
 
+
 > 
 > where `__mul__` fails so `__rmul__` would be exercised. In setting up the test code, I got an
+
 
 > 
 > error but cant see whats wrong (any thoughts?)
 
 
-The problem is that your __mul__ function does not check its arguments.  Note that:
 
+The problem is that your __mul__ function does not check its arguments.  Note that:
 
 ```
 sage: Fraction(2,3)*matrix(2,1,[1,2])
@@ -491,9 +484,7 @@ AttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense'
 object has no attribute 'numerator'
 ```
 
-
 Instead, you should check your arguments in the __mul__ function before blindly calling the .numerator method, or at least you should catch the error, like this:
-
 
 ```
 class Fraction:
@@ -517,13 +508,12 @@ class Fraction:
 
 
 
-
 ---
 
 archive/issue_comments_049788.json:
 ```json
 {
-    "body": "Thanks Jason - I appreciate what your code is doing a bit more now and see where I erred - thanks for the explanation. I would think these are enough tests to update this to a positive review. \n \n\n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"Fraction(%d,%d)\" % (self.numerator, self.denominator)\n  __repr__=__str__\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __mul__(self, other):\n    try:\n        return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n    except:\n        return NotImplemented\n  def __rmul__(self, other):\n    try:\n      return Fraction(other*self.numerator,self.denominator)\n    except:\n        return NotImplemented\n    \ndef dot(a,b): \n    return a*b\ndot = infix_operator('multiply')(dot)\n\nu = Fraction(2,3)\nv = Fraction(5,4)\nprint u *dot* v\nprint 3 *dot* v\n```\n",
+    "body": "Thanks Jason - I appreciate what your code is doing a bit more now and see where I erred - thanks for the explanation. I would think these are enough tests to update this to a positive review. \n \n```\nclass Fraction:\n  def __init__(self, numerator, denominator=1):\n    self.numerator = numerator\n    self.denominator = denominator\n  def __str__(self):\n    return \"Fraction(%d,%d)\" % (self.numerator, self.denominator)\n  __repr__=__str__\n  def zmul(self, other):\n    return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n  def __mul__(self, other):\n    try:\n        return Fraction(self.numerator*other.numerator,\n                  self.denominator*other.denominator)\n    except:\n        return NotImplemented\n  def __rmul__(self, other):\n    try:\n      return Fraction(other*self.numerator,self.denominator)\n    except:\n        return NotImplemented\n    \ndef dot(a,b): \n    return a*b\ndot = infix_operator('multiply')(dot)\n\nu = Fraction(2,3)\nv = Fraction(5,4)\nprint u *dot* v\nprint 3 *dot* v\n```",
     "created_at": "2010-04-20T13:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6245",
     "type": "issue_comment",
@@ -534,7 +524,6 @@ archive/issue_comments_049788.json:
 
 Thanks Jason - I appreciate what your code is doing a bit more now and see where I erred - thanks for the explanation. I would think these are enough tests to update this to a positive review. 
  
-
 ```
 class Fraction:
   def __init__(self, numerator, denominator=1):
@@ -567,7 +556,6 @@ v = Fraction(5,4)
 print u *dot* v
 print 3 *dot* v
 ```
-
 
 
 

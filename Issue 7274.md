@@ -187,7 +187,7 @@ Patch applies cleanly and passes tests, and I'm ready to approve except for:
 archive/issue_comments_060423.json:
 ```json
 {
-    "body": "As #7592 and #7593 just got reviewed, this patch can not be directly added to sage : there are now functions Graph.flow and Graph.matching available in Sage ( well, in the next version.. )\n\nThe problem with these functions is that they still depend on GLPK or CBC, two optional packages that can not be made standard are their licenses are not compatible, so it would be good to have pure Python equivalent.\n\nSeveral remarks\n\n* In #7600 and in Graph.coloring, the user can chose which algorithm he would like to use to solve the problem. Maybe the best way is to copy this behaviour in the case of flows and matching to have the two algorithms available.\n* It could be very useful to know how these algorithms compare in terms of performances. This will be much easier to test when flow and matching will be natively in Sage\n* #7634 may not be ready, but time could come soon : with this update the efficiency of the shortest_path method will be improved, and the speed of this implementation too.\n* Somwhere in the code, I saw a call to \n\n```\npath = R.shortest_path(source, sink,by_weight=False, bidirectional=False)\n```\n\n      I wondered why you chosed not to use the bidirectional version of the algorithm, as it is expected to be faster.. :-)\n\nThank you for your work !!!",
+    "body": "As #7592 and #7593 just got reviewed, this patch can not be directly added to sage : there are now functions Graph.flow and Graph.matching available in Sage ( well, in the next version.. )\n\nThe problem with these functions is that they still depend on GLPK or CBC, two optional packages that can not be made standard are their licenses are not compatible, so it would be good to have pure Python equivalent.\n\nSeveral remarks\n\n* In #7600 and in Graph.coloring, the user can chose which algorithm he would like to use to solve the problem. Maybe the best way is to copy this behaviour in the case of flows and matching to have the two algorithms available.\n* It could be very useful to know how these algorithms compare in terms of performances. This will be much easier to test when flow and matching will be natively in Sage\n* #7634 may not be ready, but time could come soon : with this update the efficiency of the shortest_path method will be improved, and the speed of this implementation too.\n* Somwhere in the code, I saw a call to \n\n```\npath = R.shortest_path(source, sink,by_weight=False, bidirectional=False)\n```\n      I wondered why you chosed not to use the bidirectional version of the algorithm, as it is expected to be faster.. :-)\n\nThank you for your work !!!",
     "created_at": "2009-12-16T19:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
@@ -210,7 +210,6 @@ Several remarks
 ```
 path = R.shortest_path(source, sink,by_weight=False, bidirectional=False)
 ```
-
       I wondered why you chosed not to use the bidirectional version of the algorithm, as it is expected to be faster.. :-)
 
 Thank you for your work !!!

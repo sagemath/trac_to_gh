@@ -3,7 +3,7 @@
 archive/issues_003708.json:
 ```json
 {
-    "body": "Assignee: wdjoyner\n\n\n```\n39. Coding Theory\n\n    * 39.1 Linear Codes\n    * 39.2 AUTHOR: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3708\n\n",
+    "body": "Assignee: wdjoyner\n\n```\n39. Coding Theory\n\n    * 39.1 Linear Codes\n    * 39.2 AUTHOR: \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3708\n\n",
     "created_at": "2008-07-22T14:17:04Z",
     "labels": [
         "component: coding theory",
@@ -18,14 +18,12 @@ archive/issues_003708.json:
 ```
 Assignee: wdjoyner
 
-
 ```
 39. Coding Theory
 
     * 39.1 Linear Codes
     * 39.2 AUTHOR: 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3708
 

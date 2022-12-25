@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6389
 archive/issue_comments_051061.json:
 ```json
 {
-    "body": "This used to work, but no longer\n\n```\nsage -docbuild file=my_own_code.py html\n```\n",
+    "body": "This used to work, but no longer\n\n```\nsage -docbuild file=my_own_code.py html\n```",
     "created_at": "2016-07-15T11:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
@@ -56,13 +56,12 @@ sage -docbuild file=my_own_code.py html
 
 
 
-
 ---
 
 archive/issue_comments_051062.json:
 ```json
 {
-    "body": "The line\n\n```\n    assert app.outdir.startswith(SAGE_DOC)\n```\n\nin `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.",
+    "body": "The line\n\n```\n    assert app.outdir.startswith(SAGE_DOC)\n```\nin `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.",
     "created_at": "2016-08-01T02:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
@@ -76,7 +75,6 @@ The line
 ```
     assert app.outdir.startswith(SAGE_DOC)
 ```
-
 in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.
 
 
@@ -86,7 +84,7 @@ in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should
 archive/issue_comments_051063.json:
 ```json
 {
-    "body": "Replying to [comment:3 jhpalmieri]:\n> The line\n> {{{\n>     assert app.outdir.startswith(SAGE_DOC)\n> }}}\n> in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n\nThis assert is in `citation_dir`. \nHow should single-file docbuilds handle citations?",
+    "body": "Replying to [comment:3 jhpalmieri]:\n> The line\n> \n> ```\n>     assert app.outdir.startswith(SAGE_DOC)\n> ```\n> in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n\n\nThis assert is in `citation_dir`. \nHow should single-file docbuilds handle citations?",
     "created_at": "2016-08-03T19:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
@@ -97,10 +95,12 @@ archive/issue_comments_051063.json:
 
 Replying to [comment:3 jhpalmieri]:
 > The line
-> {{{
+> 
+> ```
 >     assert app.outdir.startswith(SAGE_DOC)
-> }}}
+> ```
 > in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.
+
 
 This assert is in `citation_dir`. 
 How should single-file docbuilds handle citations?
@@ -112,7 +112,7 @@ How should single-file docbuilds handle citations?
 archive/issue_comments_051064.json:
 ```json
 {
-    "body": "Replying to [comment:5 mkoeppe]:\n> Replying to [comment:3 jhpalmieri]:\n> > The line\n> > {{{\n> >     assert app.outdir.startswith(SAGE_DOC)\n> > }}}\n> > in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n> \n> This assert is in `citation_dir`. \n> How should single-file docbuilds handle citations?\n\nIgnore them? Or at least ignore references to citations in the Sage library: I think it should treat the single file as being unconnected to the Sage library.",
+    "body": "Replying to [comment:5 mkoeppe]:\n> Replying to [comment:3 jhpalmieri]:\n> > The line\n> > \n> > ```\n> >     assert app.outdir.startswith(SAGE_DOC)\n> > ```\n> > in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n\n> \n> This assert is in `citation_dir`. \n> How should single-file docbuilds handle citations?\n\n\nIgnore them? Or at least ignore references to citations in the Sage library: I think it should treat the single file as being unconnected to the Sage library.",
     "created_at": "2016-08-03T20:00:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
@@ -124,13 +124,16 @@ archive/issue_comments_051064.json:
 Replying to [comment:5 mkoeppe]:
 > Replying to [comment:3 jhpalmieri]:
 > > The line
-> > {{{
+> > 
+> > ```
 > >     assert app.outdir.startswith(SAGE_DOC)
-> > }}}
+> > ```
 > > in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.
+
 > 
 > This assert is in `citation_dir`. 
 > How should single-file docbuilds handle citations?
+
 
 Ignore them? Or at least ignore references to citations in the Sage library: I think it should treat the single file as being unconnected to the Sage library.
 

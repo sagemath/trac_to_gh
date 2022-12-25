@@ -109,7 +109,7 @@ Michael
 archive/issue_comments_039327.json:
 ```json
 {
-    "body": "Replying to [comment:3 mabshoff]:\n> Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n\noh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\nnote to myself: updated old and new website.",
+    "body": "Replying to [comment:3 mabshoff]:\n> Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n\n\noh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\nnote to myself: updated old and new website.",
     "created_at": "2009-02-02T18:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
@@ -120,6 +120,7 @@ archive/issue_comments_039327.json:
 
 Replying to [comment:3 mabshoff]:
 > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.
+
 
 oh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.
 
@@ -132,7 +133,7 @@ note to myself: updated old and new website.
 archive/issue_comments_039328.json:
 ```json
 {
-    "body": "Replying to [comment:4 schilly]:\n> Replying to [comment:3 mabshoff]:\n> > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n> \n> oh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\nCool. Let me know when you are done so I can close this ticket.\n\n> note to myself: updated old and new website.\n\nnew website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 schilly]:\n> Replying to [comment:3 mabshoff]:\n> > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n\n> \n> oh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\n\nCool. Let me know when you are done so I can close this ticket.\n\n> note to myself: updated old and new website.\n\n\nnew website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T18:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
@@ -144,12 +145,15 @@ archive/issue_comments_039328.json:
 Replying to [comment:4 schilly]:
 > Replying to [comment:3 mabshoff]:
 > > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.
+
 > 
 > oh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.
+
 
 Cool. Let me know when you are done so I can close this ticket.
 
 > note to myself: updated old and new website.
+
 
 new website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.
 
@@ -164,7 +168,7 @@ Michael
 archive/issue_comments_039329.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n> Cool. Let me know when you are done so I can close this ticket.\n\nyes, all done\n\n> \n> > note to myself: updated old and new website.\n> \n> new website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\nlrs? please don't overwrite the edited files! william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\ngreetings harald",
+    "body": "Replying to [comment:5 mabshoff]:\n> Cool. Let me know when you are done so I can close this ticket.\n\n\nyes, all done\n\n> \n> > note to myself: updated old and new website.\n\n> \n> new website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\n\nlrs? please don't overwrite the edited files! william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\ngreetings harald",
     "created_at": "2009-02-02T18:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
@@ -176,12 +180,15 @@ archive/issue_comments_039329.json:
 Replying to [comment:5 mabshoff]:
 > Cool. Let me know when you are done so I can close this ticket.
 
+
 yes, all done
 
 > 
 > > note to myself: updated old and new website.
+
 > 
 > new website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.
+
 
 lrs? please don't overwrite the edited files! william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)
 
@@ -194,7 +201,7 @@ greetings harald
 archive/issue_comments_039330.json:
 ```json
 {
-    "body": "Replying to [comment:6 schilly]:\n\n> lrs? please don't overwrite the edited files! \n\nlrs is an spkg, I just ran gen_html. If I am not supposed to do that I won't do it any more.\n\n> william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\n:)\n\n> greetings harald\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 schilly]:\n\n> lrs? please don't overwrite the edited files! \n\n\nlrs is an spkg, I just ran gen_html. If I am not supposed to do that I won't do it any more.\n\n> william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\n\n:)\n\n> greetings harald\n\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T18:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
@@ -207,13 +214,16 @@ Replying to [comment:6 schilly]:
 
 > lrs? please don't overwrite the edited files! 
 
+
 lrs is an spkg, I just ran gen_html. If I am not supposed to do that I won't do it any more.
 
 > william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)
 
+
 :)
 
 > greetings harald
+
 
 Cheers,
 

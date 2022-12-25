@@ -3,7 +3,7 @@
 archive/issues_004361.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nIn 3.1.4 we have:\n\n\n```\nsage: gamma(-1)\n+Infinity\nsage: gamma(-2)\n-Infinity\n```\n\n\nThe poles should return unsigned infinity.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4361\n\n",
+    "body": "Assignee: @burcin\n\nIn 3.1.4 we have:\n\n```\nsage: gamma(-1)\n+Infinity\nsage: gamma(-2)\n-Infinity\n```\n\nThe poles should return unsigned infinity.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4361\n\n",
     "created_at": "2008-10-24T09:50:25Z",
     "labels": [
         "component: misc",
@@ -20,14 +20,12 @@ Assignee: @burcin
 
 In 3.1.4 we have:
 
-
 ```
 sage: gamma(-1)
 +Infinity
 sage: gamma(-2)
 -Infinity
 ```
-
 
 The poles should return unsigned infinity.
 

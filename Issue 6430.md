@@ -3,7 +3,7 @@
 archive/issues_006430.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nKeywords: hash Laurent series\n\n\n```\nsage: hash(1/CDF[['t']].gen())\n-2\nsage: hash(1/CDF[['t']].gen()^2)\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/period_matrix/riemann_surface.py in <module>()\n\nSystemError: error return without exception set\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6430\n\n",
+    "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nKeywords: hash Laurent series\n\n```\nsage: hash(1/CDF[['t']].gen())\n-2\nsage: hash(1/CDF[['t']].gen()^2)\n---------------------------------------------------------------------------\nSystemError                               Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/period_matrix/riemann_surface.py in <module>()\n\nSystemError: error return without exception set\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6430\n\n",
     "created_at": "2009-06-27T04:37:25Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ CC:  @mwhansen
 
 Keywords: hash Laurent series
 
-
 ```
 sage: hash(1/CDF[['t']].gen())
 -2
@@ -34,7 +33,6 @@ SystemError                               Traceback (most recent call last)
 
 SystemError: error return without exception set
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6430
 

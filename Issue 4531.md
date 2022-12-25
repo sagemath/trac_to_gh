@@ -3,7 +3,7 @@
 archive/issues_004531.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
+    "body": "Assignee: @mwhansen\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
     "created_at": "2008-11-15T20:13:32Z",
     "labels": [
         "component: combinatorics",
@@ -19,7 +19,6 @@ archive/issues_004531.json:
 ```
 Assignee: @mwhansen
 
-
 ```
 sage -t  devel/sage/sage/combinat/species/library.py 
 ********************************************************************** 
@@ -33,7 +32,6 @@ Got:
 ********************************************************************** 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4531
 
 
@@ -45,7 +43,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4531
 archive/issue_comments_033682.json:
 ```json
 {
-    "body": "That seems to be a problem of how Sage displays/prints permutation groups. Internally, everything seems fine. I just produced such a group and I get:\n\n```\nsage: B = species.BinaryTreeSpecies()\nsage: a = B.structures([1,2,3,4,5]).random_element(); a\n(1*5)*((2*3)*4)\nsage: grp = a.automorphism_group()\nsage: grp\nPermutation Group with generators [(), ()]\nsage: grp.list()\n[()]\n```\n\nThe latter two lines are pretty inconsistent.",
+    "body": "That seems to be a problem of how Sage displays/prints permutation groups. Internally, everything seems fine. I just produced such a group and I get:\n\n```\nsage: B = species.BinaryTreeSpecies()\nsage: a = B.structures([1,2,3,4,5]).random_element(); a\n(1*5)*((2*3)*4)\nsage: grp = a.automorphism_group()\nsage: grp\nPermutation Group with generators [(), ()]\nsage: grp.list()\n[()]\n```\nThe latter two lines are pretty inconsistent.",
     "created_at": "2008-11-16T10:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
@@ -66,7 +64,6 @@ Permutation Group with generators [(), ()]
 sage: grp.list()
 [()]
 ```
-
 The latter two lines are pretty inconsistent.
 
 

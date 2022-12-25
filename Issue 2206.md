@@ -69,7 +69,7 @@ Apply.
 archive/issue_comments_014530.json:
 ```json
 {
-    "body": "> I assume a factorization with powers > maximum integer is \n> not supported? Because we're converting via int(...).\n\nWhat is \"maximum integer\"?   In pure python code int(...)\nis arbitrary precision. \n\nWilliam",
+    "body": "> I assume a factorization with powers > maximum integer is \n> not supported? Because we're converting via int(...).\n\n\nWhat is \"maximum integer\"?   In pure python code int(...)\nis arbitrary precision. \n\nWilliam",
     "created_at": "2008-02-19T00:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
@@ -80,6 +80,7 @@ archive/issue_comments_014530.json:
 
 > I assume a factorization with powers > maximum integer is 
 > not supported? Because we're converting via int(...).
+
 
 What is "maximum integer"?   In pure python code int(...)
 is arbitrary precision. 
@@ -93,7 +94,7 @@ William
 archive/issue_comments_014531.json:
 ```json
 {
-    "body": "\n```\nsage$ patch -p1 --dry-run < trac_2206_factorization.patch\npatching file sage/structure/factorization.py\nHunk #3 FAILED at 261.\nHunk #4 FAILED at 280.\nHunk #5 FAILED at 291.\n3 out of 5 hunks FAILED -- saving rejects to file sage/structure/factorization.py.rej\n```\n\n\nPlease rebase and resubmit the patch. It would also be good to change the subject line to something more descriptive.\n\nCheers,\n\nMichael",
+    "body": "```\nsage$ patch -p1 --dry-run < trac_2206_factorization.patch\npatching file sage/structure/factorization.py\nHunk #3 FAILED at 261.\nHunk #4 FAILED at 280.\nHunk #5 FAILED at 291.\n3 out of 5 hunks FAILED -- saving rejects to file sage/structure/factorization.py.rej\n```\n\nPlease rebase and resubmit the patch. It would also be good to change the subject line to something more descriptive.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-19T15:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2206",
     "type": "issue_comment",
@@ -101,7 +102,6 @@ archive/issue_comments_014531.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
-
 
 ```
 sage$ patch -p1 --dry-run < trac_2206_factorization.patch
@@ -111,7 +111,6 @@ Hunk #4 FAILED at 280.
 Hunk #5 FAILED at 291.
 3 out of 5 hunks FAILED -- saving rejects to file sage/structure/factorization.py.rej
 ```
-
 
 Please rebase and resubmit the patch. It would also be good to change the subject line to something more descriptive.
 

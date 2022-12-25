@@ -3,7 +3,7 @@
 archive/issues_008633.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nTry this in the notebook with the \"Typeset\" box checked:\n\n```\nrandom_matrix(ZZ, 5, 5).eigenvalues()\n```\n\nYou will see a box saying \"Unknown control sequence '\\texttt'\".  The attached patch fixes this by replacing \"\\texttt\" with \"\\hbox\" before processing the LaTeX string with jsMath.\n\nThis was reported on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/b35dc4f890f48677?tvc=2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8633\n\n",
+    "body": "Assignee: tbd\n\nTry this in the notebook with the \"Typeset\" box checked:\n\n```\nrandom_matrix(ZZ, 5, 5).eigenvalues()\n```\nYou will see a box saying \"Unknown control sequence '\\texttt'\".  The attached patch fixes this by replacing \"\\texttt\" with \"\\hbox\" before processing the LaTeX string with jsMath.\n\nThis was reported on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/b35dc4f890f48677?tvc=2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8633\n\n",
     "created_at": "2010-03-30T17:40:22Z",
     "labels": [
         "component: misc",
@@ -23,7 +23,6 @@ Try this in the notebook with the "Typeset" box checked:
 ```
 random_matrix(ZZ, 5, 5).eigenvalues()
 ```
-
 You will see a box saying "Unknown control sequence '\texttt'".  The attached patch fixes this by replacing "\texttt" with "\hbox" before processing the LaTeX string with jsMath.
 
 This was reported on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/b35dc4f890f48677?tvc=2).
@@ -167,7 +166,7 @@ archive/issue_events_020901.json:
 archive/issue_comments_078174.json:
 ```json
 {
-    "body": "I get the same problem on 4.4.2 with\n\n\n```\nhtml.table([random_matrix(ZZ, 5, 5).eigenvalues()])\n```\n\n\neven though the example in this ticket does work.",
+    "body": "I get the same problem on 4.4.2 with\n\n```\nhtml.table([random_matrix(ZZ, 5, 5).eigenvalues()])\n```\n\neven though the example in this ticket does work.",
     "created_at": "2010-09-22T02:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
@@ -178,11 +177,9 @@ archive/issue_comments_078174.json:
 
 I get the same problem on 4.4.2 with
 
-
 ```
 html.table([random_matrix(ZZ, 5, 5).eigenvalues()])
 ```
-
 
 even though the example in this ticket does work.
 
@@ -193,7 +190,7 @@ even though the example in this ticket does work.
 archive/issue_comments_078175.json:
 ```json
 {
-    "body": "I think that the two calls to `latex` in sage/misc/html.py need to be changed from\n\n```\nlatex(XXX)\n```\n\nto \n\n```\nlatex(XXX).replace('\\\\texttt','\\\\hbox')\n```\n\nOpen another ticket, cc me, and post a patch.",
+    "body": "I think that the two calls to `latex` in sage/misc/html.py need to be changed from\n\n```\nlatex(XXX)\n```\nto \n\n```\nlatex(XXX).replace('\\\\texttt','\\\\hbox')\n```\nOpen another ticket, cc me, and post a patch.",
     "created_at": "2010-09-22T03:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
@@ -207,13 +204,11 @@ I think that the two calls to `latex` in sage/misc/html.py need to be changed fr
 ```
 latex(XXX)
 ```
-
 to 
 
 ```
 latex(XXX).replace('\\texttt','\\hbox')
 ```
-
 Open another ticket, cc me, and post a patch.
 
 

@@ -3,7 +3,7 @@
 archive/issues_009663.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  @williamstein\n\nCurrently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.\n\nBy having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.\n\n\n```\nsage: %timeit stirling_number2(10,5)\n625 loops, best of 3: 2.33 \u00b5s per loop\nsage: %timeit stirling_number2(10,5,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(10,5,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\n625 loops, best of 3: 16.2 \u00b5s per loop\nsage: %timeit stirling_number2(100,50,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(100,50,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\nsage: %timeit stirling_number2(2000,1500)\n25 loops, best of 3: 35.9 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='gap')\n5 loops, best of 3: 348 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='maxima')\n5 loops, best of 3: 210 ms per loop\n\nsage: %timeit stirling_number2(4000,3000)\n5 loops, best of 3: 249 ms per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='gap')\n5 loops, best of 3: 2.96 s per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='maxima')\n5 loops, best of 3: 948 ms per loop\n\nsage: %time stirling_number2(20000,15000);\nCPU times: user 20.30 s, sys: 0.23 s, total: 20.53 s\nWall time: 21.82 s\nsage: %time stirling_number2(20000,15000,algorithm='maxima');\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 51.90 s\n```\n\n\nMathematica seems to be about as slow as GAP (warning: timed on a different system):\n\n```\nIn[1]:= Timing[StirlingS2[4000,3000];]\nOut[1]= {27.1809, Null}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9663\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @williamstein\n\nCurrently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.\n\nBy having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.\n\n```\nsage: %timeit stirling_number2(10,5)\n625 loops, best of 3: 2.33 \u00b5s per loop\nsage: %timeit stirling_number2(10,5,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(10,5,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\n625 loops, best of 3: 16.2 \u00b5s per loop\nsage: %timeit stirling_number2(100,50,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(100,50,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\nsage: %timeit stirling_number2(2000,1500)\n25 loops, best of 3: 35.9 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='gap')\n5 loops, best of 3: 348 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='maxima')\n5 loops, best of 3: 210 ms per loop\n\nsage: %timeit stirling_number2(4000,3000)\n5 loops, best of 3: 249 ms per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='gap')\n5 loops, best of 3: 2.96 s per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='maxima')\n5 loops, best of 3: 948 ms per loop\n\nsage: %time stirling_number2(20000,15000);\nCPU times: user 20.30 s, sys: 0.23 s, total: 20.53 s\nWall time: 21.82 s\nsage: %time stirling_number2(20000,15000,algorithm='maxima');\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 51.90 s\n```\n\nMathematica seems to be about as slow as GAP (warning: timed on a different system):\n\n```\nIn[1]:= Timing[StirlingS2[4000,3000];]\nOut[1]= {27.1809, Null}\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9663\n\n",
     "created_at": "2010-08-01T18:44:18Z",
     "labels": [
         "component: combinatorics"
@@ -22,7 +22,6 @@ CC:  @williamstein
 Currently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.
 
 By having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.
-
 
 ```
 sage: %timeit stirling_number2(10,5)
@@ -60,14 +59,12 @@ CPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s
 Wall time: 51.90 s
 ```
 
-
 Mathematica seems to be about as slow as GAP (warning: timed on a different system):
 
 ```
 In[1]:= Timing[StirlingS2[4000,3000];]
 Out[1]= {27.1809, Null}
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9663
 
@@ -98,7 +95,7 @@ Changing status from new to needs_review.
 archive/issue_comments_093629.json:
 ```json
 {
-    "body": "Please explain the *massive* number of changes to module_list.py of the form:\n\n```\n153\t \t                [[blank looking line]]\n \t153\t                [[another blank looking line]]\n```\n",
+    "body": "Please explain the *massive* number of changes to module_list.py of the form:\n\n```\n153\t \t                [[blank looking line]]\n \t153\t                [[another blank looking line]]\n```",
     "created_at": "2010-08-05T02:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -113,7 +110,6 @@ Please explain the *massive* number of changes to module_list.py of the form:
 153	 	                [[blank looking line]]
  	153	                [[another blank looking line]]
 ```
-
 
 
 
@@ -389,7 +385,7 @@ Also, **please** do not put spaces in patch filenames.
 archive/issue_comments_093641.json:
 ```json
 {
-    "body": "Replying to [comment:8 jdemeyer]:\n> I think you should add a patch with a test for \"unknown algorithm\".\n\nWhat do you mean ?\n\nNathann",
+    "body": "Replying to [comment:8 jdemeyer]:\n> I think you should add a patch with a test for \"unknown algorithm\".\n\n\nWhat do you mean ?\n\nNathann",
     "created_at": "2010-10-26T09:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -400,6 +396,7 @@ archive/issue_comments_093641.json:
 
 Replying to [comment:8 jdemeyer]:
 > I think you should add a patch with a test for "unknown algorithm".
+
 
 What do you mean ?
 
@@ -412,7 +409,7 @@ Nathann
 archive/issue_comments_093642.json:
 ```json
 {
-    "body": "Replying to [comment:11 ncohen]:\n> Replying to [comment:8 jdemeyer]:\n> > I think you should add a patch with a test for \"unknown algorithm\".\n> \n> What do you mean ?\n\nA test which does something like\n\n```\nsage: n = stirling_number2(20,11,algorithm='foobar')\n```\n\nto check the \"unknown algorithm\" code.",
+    "body": "Replying to [comment:11 ncohen]:\n> Replying to [comment:8 jdemeyer]:\n> > I think you should add a patch with a test for \"unknown algorithm\".\n\n> \n> What do you mean ?\n\n\nA test which does something like\n\n```\nsage: n = stirling_number2(20,11,algorithm='foobar')\n```\nto check the \"unknown algorithm\" code.",
     "created_at": "2010-10-26T09:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -424,15 +421,16 @@ archive/issue_comments_093642.json:
 Replying to [comment:11 ncohen]:
 > Replying to [comment:8 jdemeyer]:
 > > I think you should add a patch with a test for "unknown algorithm".
+
 > 
 > What do you mean ?
+
 
 A test which does something like
 
 ```
 sage: n = stirling_number2(20,11,algorithm='foobar')
 ```
-
 to check the "unknown algorithm" code.
 
 
@@ -480,7 +478,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093645.json:
 ```json
 {
-    "body": "Replying to [comment:13 ncohen]:\n> Here is a new version of my patch with the requested doctest.\n> \n> Nathann\n\nOn line 670, `TESTS::` should be `TESTS:` (the :: should precede a block of code, which is not the case here).",
+    "body": "Replying to [comment:13 ncohen]:\n> Here is a new version of my patch with the requested doctest.\n> \n> Nathann\n\n\nOn line 670, `TESTS::` should be `TESTS:` (the :: should precede a block of code, which is not the case here).",
     "created_at": "2010-10-26T11:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
@@ -493,6 +491,7 @@ Replying to [comment:13 ncohen]:
 > Here is a new version of my patch with the requested doctest.
 > 
 > Nathann
+
 
 On line 670, `TESTS::` should be `TESTS:` (the :: should precede a block of code, which is not the case here).
 

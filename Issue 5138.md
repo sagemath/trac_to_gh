@@ -50,7 +50,7 @@ Have you remembered 990h where the optimal curve is not #1?
 archive/issue_comments_039212.json:
 ```json
 {
-    "body": "> Have you remembered 990h where the optimal curve is not #1? \n\nNo, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). \n\n> Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. \n> Does it need alpha3? If so a proper review will have to wait \n>(at least until I get home). \n\nI did it against alpha0.  I'll rebase it for alpha3.",
+    "body": "> Have you remembered 990h where the optimal curve is not #1? \n\n\nNo, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). \n\n> Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. \n> Does it need alpha3? If so a proper review will have to wait \n\n>(at least until I get home). \n\nI did it against alpha0.  I'll rebase it for alpha3.",
     "created_at": "2009-01-30T17:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
@@ -61,10 +61,12 @@ archive/issue_comments_039212.json:
 
 > Have you remembered 990h where the optimal curve is not #1? 
 
+
 No, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). 
 
 > Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. 
 > Does it need alpha3? If so a proper review will have to wait 
+
 >(at least until I get home). 
 
 I did it against alpha0.  I'll rebase it for alpha3.
@@ -76,7 +78,7 @@ I did it against alpha0.  I'll rebase it for alpha3.
 archive/issue_comments_039213.json:
 ```json
 {
-    "body": "Replying to [comment:3 was]:\n> > Have you remembered 990h where the optimal curve is not #1? \n> \n> No, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). \n\nThat's the only example, luckily.\n\n> \n> > Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. \n> > Does it need alpha3? If so a proper review will have to wait \n> >(at least until I get home). \n> \n> I did it against alpha0.  I'll rebase it for alpha3. \n\nOK, I'll look at it again over the weekend.",
+    "body": "Replying to [comment:3 was]:\n> > Have you remembered 990h where the optimal curve is not #1? \n\n> \n> No, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). \n\n\nThat's the only example, luckily.\n\n> \n> > Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. \n> > Does it need alpha3? If so a proper review will have to wait \n\n> >(at least until I get home). \n> \n> I did it against alpha0.  I'll rebase it for alpha3. \n\n\nOK, I'll look at it again over the weekend.",
     "created_at": "2009-01-30T17:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
@@ -87,17 +89,21 @@ archive/issue_comments_039213.json:
 
 Replying to [comment:3 was]:
 > > Have you remembered 990h where the optimal curve is not #1? 
+
 > 
 > No, I forgot about that.  Is that the only example?  I will add a new command optimal_curve() that finds the optimal curve using your database and includes a workaround for 990h (and any other examples). 
+
 
 That's the only example, luckily.
 
 > 
 > > Logic looks ok, but patch does not apply to 3.3.alpha2 cleanly. 
 > > Does it need alpha3? If so a proper review will have to wait 
+
 > >(at least until I get home). 
 > 
 > I did it against alpha0.  I'll rebase it for alpha3. 
+
 
 OK, I'll look at it again over the weekend.
 
@@ -162,7 +168,7 @@ The attached patch implements computation of the Manin constant with some caveat
 archive/issue_comments_039217.json:
 ```json
 {
-    "body": "Patch applies cleanly to 3.3.alpha2 + #5139.  Tests pass BUT:\n\n```\nsage: Ellsage: EllipticCurve('990a1').optimal_curve()\n---------------------------------------------------------------------------\nRuntimeError          \n```\n\nsince on line 3099 you set the number to 3 when N=990 for all isogeny classes, not just class h.\n\nSomewhere in the database code I think we have utilities for splitting the label into its 3 components, by the way, which might be more transparent than (e.g.) stripping off the last character to get the number.",
+    "body": "Patch applies cleanly to 3.3.alpha2 + #5139.  Tests pass BUT:\n\n```\nsage: Ellsage: EllipticCurve('990a1').optimal_curve()\n---------------------------------------------------------------------------\nRuntimeError          \n```\nsince on line 3099 you set the number to 3 when N=990 for all isogeny classes, not just class h.\n\nSomewhere in the database code I think we have utilities for splitting the label into its 3 components, by the way, which might be more transparent than (e.g.) stripping off the last character to get the number.",
     "created_at": "2009-02-01T11:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
@@ -178,7 +184,6 @@ sage: Ellsage: EllipticCurve('990a1').optimal_curve()
 ---------------------------------------------------------------------------
 RuntimeError          
 ```
-
 since on line 3099 you set the number to 3 when N=990 for all isogeny classes, not just class h.
 
 Somewhere in the database code I think we have utilities for splitting the label into its 3 components, by the way, which might be more transparent than (e.g.) stripping off the last character to get the number.

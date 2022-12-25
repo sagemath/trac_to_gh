@@ -62,7 +62,7 @@ Changing status from new to needs_review.
 archive/issue_comments_083985.json:
 ```json
 {
-    "body": "Hi Nicolas, \n\nI started to review this. I currently have only the following interface\nremark: id there a reason why you need to pass a tuple for parameter\n`facade` whereas for `category` you can pass either a category or a\ntuple ? For example, why do you force the user to write \n\n```\nParent.__init__(self, facade = (IntegerRing(), ), category = Sets()) \n```\n\ninstead of\n\n```\nParent.__init__(self, facade = IntegerRing(), category = Sets()) \n```\n",
+    "body": "Hi Nicolas, \n\nI started to review this. I currently have only the following interface\nremark: id there a reason why you need to pass a tuple for parameter\n`facade` whereas for `category` you can pass either a category or a\ntuple ? For example, why do you force the user to write \n\n```\nParent.__init__(self, facade = (IntegerRing(), ), category = Sets()) \n```\ninstead of\n\n```\nParent.__init__(self, facade = IntegerRing(), category = Sets()) \n```",
     "created_at": "2011-04-04T20:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
@@ -81,7 +81,6 @@ tuple ? For example, why do you force the user to write
 ```
 Parent.__init__(self, facade = (IntegerRing(), ), category = Sets()) 
 ```
-
 instead of
 
 ```
@@ -90,13 +89,12 @@ Parent.__init__(self, facade = IntegerRing(), category = Sets())
 
 
 
-
 ---
 
 archive/issue_comments_083986.json:
 ```json
 {
-    "body": "Sorry for replying to myself...\n\n> I started to review this. I currently have only the following interface\n> remark: id there a reason why you need to pass a tuple for parameter\n> `facade` whereas for `category` you can pass either a category or a\n> tuple ?\n\nActually, it seems that the code in `Parent` allows for it. So I guess\nthat the example where the one parameter tuple occur could be simplified. I'm\nwriting a review patch on the sage-combinat queue.",
+    "body": "Sorry for replying to myself...\n\n> I started to review this. I currently have only the following interface\n> remark: id there a reason why you need to pass a tuple for parameter\n> `facade` whereas for `category` you can pass either a category or a\n> tuple ?\n\n\nActually, it seems that the code in `Parent` allows for it. So I guess\nthat the example where the one parameter tuple occur could be simplified. I'm\nwriting a review patch on the sage-combinat queue.",
     "created_at": "2011-04-04T20:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
@@ -112,6 +110,7 @@ Sorry for replying to myself...
 > `facade` whereas for `category` you can pass either a category or a
 > tuple ?
 
+
 Actually, it seems that the code in `Parent` allows for it. So I guess
 that the example where the one parameter tuple occur could be simplified. I'm
 writing a review patch on the sage-combinat queue.
@@ -123,7 +122,7 @@ writing a review patch on the sage-combinat queue.
 archive/issue_comments_083987.json:
 ```json
 {
-    "body": "Replying to [comment:6 hivert]:\n> \n> Actually, it seems that the code in `Parent` allows for it. So I guess\n> that the example where the one parameter tuple occur could be simplified. I'm\n> writing a review patch on the sage-combinat queue.\n\nGood point :-) +1 on that change.",
+    "body": "Replying to [comment:6 hivert]:\n> \n> Actually, it seems that the code in `Parent` allows for it. So I guess\n> that the example where the one parameter tuple occur could be simplified. I'm\n> writing a review patch on the sage-combinat queue.\n\n\nGood point :-) +1 on that change.",
     "created_at": "2011-04-05T11:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
@@ -137,6 +136,7 @@ Replying to [comment:6 hivert]:
 > Actually, it seems that the code in `Parent` allows for it. So I guess
 > that the example where the one parameter tuple occur could be simplified. I'm
 > writing a review patch on the sage-combinat queue.
+
 
 Good point :-) +1 on that change.
 
@@ -167,7 +167,7 @@ I folded in Florent's reviewer patch for the above issue, added facade option in
 archive/issue_comments_083989.json:
 ```json
 {
-    "body": "Replying to [comment:8 nthiery]:\n> I folded in Florent's reviewer patch for the above issue, added facade option in SearchForest, updated an example there as well as NN and Primes to be facades, and fixed some trivially failing tests reported by the patchbot. The patch should be good to go. Florent: can you confirm?\n\nUnfortunately not ! I spotted a few more wrong sphinx markup. Please have a look at my review patch on trac. Otherwise, it is ready to go.",
+    "body": "Replying to [comment:8 nthiery]:\n> I folded in Florent's reviewer patch for the above issue, added facade option in SearchForest, updated an example there as well as NN and Primes to be facades, and fixed some trivially failing tests reported by the patchbot. The patch should be good to go. Florent: can you confirm?\n\n\nUnfortunately not ! I spotted a few more wrong sphinx markup. Please have a look at my review patch on trac. Otherwise, it is ready to go.",
     "created_at": "2011-04-22T22:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
@@ -178,6 +178,7 @@ archive/issue_comments_083989.json:
 
 Replying to [comment:8 nthiery]:
 > I folded in Florent's reviewer patch for the above issue, added facade option in SearchForest, updated an example there as well as NN and Primes to be facades, and fixed some trivially failing tests reported by the patchbot. The patch should be good to go. Florent: can you confirm?
+
 
 Unfortunately not ! I spotted a few more wrong sphinx markup. Please have a look at my review patch on trac. Otherwise, it is ready to go.
 

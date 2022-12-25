@@ -3,7 +3,7 @@
 archive/issues_000606.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nFrom the notebook,\n\n\n```\n%sh\ncat > hello.pyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n\n```\nload \"hello.pyx\"\nLoading of file\n\"/opt/sage-2.8.3.rc3/sage_notebook/worksheets/admin/0/cells/0/hello.pyx\"\nhas type not implemented.\n```\n\n\nThere is a function that currently just checks to see if the filename extension is .py or .sage before it tries to load the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/606\n\n",
+    "body": "Assignee: boothby\n\nFrom the notebook,\n\n```\n%sh\ncat > hello.pyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n```\nload \"hello.pyx\"\nLoading of file\n\"/opt/sage-2.8.3.rc3/sage_notebook/worksheets/admin/0/cells/0/hello.pyx\"\nhas type not implemented.\n```\n\nThere is a function that currently just checks to see if the filename extension is .py or .sage before it tries to load the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/606\n\n",
     "created_at": "2007-09-07T00:02:17Z",
     "labels": [
         "component: notebook",
@@ -20,7 +20,6 @@ Assignee: boothby
 
 From the notebook,
 
-
 ```
 %sh
 cat > hello.pyx << EOF
@@ -32,14 +31,12 @@ def hello(name):
 EOF
 ```
 
-
 ```
 load "hello.pyx"
 Loading of file
 "/opt/sage-2.8.3.rc3/sage_notebook/worksheets/admin/0/cells/0/hello.pyx"
 has type not implemented.
 ```
-
 
 There is a function that currently just checks to see if the filename extension is .py or .sage before it tries to load the file.
 
@@ -126,7 +123,7 @@ This patch is completely bogus.
 archive/issue_comments_003106.json:
 ```json
 {
-    "body": "This is a good spyx file to test:\n\n\n```\nwas@ubuntu:~$ more a.spyx\ndef foo(int n):\n    return n*n\n```\n",
+    "body": "This is a good spyx file to test:\n\n```\nwas@ubuntu:~$ more a.spyx\ndef foo(int n):\n    return n*n\n```",
     "created_at": "2007-09-07T01:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
@@ -137,13 +134,11 @@ archive/issue_comments_003106.json:
 
 This is a good spyx file to test:
 
-
 ```
 was@ubuntu:~$ more a.spyx
 def foo(int n):
     return n*n
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009907.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @eviatarbach\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\n\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\n\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @eviatarbach\n\nThe parsing of Maxima's output is not good enough to handle this:\n\n```\nvar('n')\nsum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)\n```\ngives an exception\n\n```\nTypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage\n```\nwhich is - i think - a f_43 hypergeometric function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9908\n\n",
     "created_at": "2010-09-14T10:31:28Z",
     "labels": [
         "component: symbolics",
@@ -22,18 +22,15 @@ CC:  @eviatarbach
 
 The parsing of Maxima's output is not good enough to handle this:
 
-
 ```
 var('n')
 sum(((2*I)^n/(n^3+1)*(1/4)^n), n, 0, infinity)
 ```
-
 gives an exception
 
 ```
 TypeError: unable to make sense of Maxima expression 'f[4,3]([1,1,-(sqrt(3)*I+1)/2,(sqrt(3)*I-1)/2],[2,-(sqrt(3)*I-1)/2,(sqrt(3)*I+1)/2],I/2)' in Sage
 ```
-
 which is - i think - a f_43 hypergeometric function.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9908
@@ -47,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9908
 archive/issue_comments_098380.json:
 ```json
 {
-    "body": "one additional example by omologos on irc:\n\n```\nvar('x n')\nf=(-1)^n/((2*n+1)*factorial(2n+1))\nsum(f,n,0,oo)\n```\n\nbut i get this error:\n\n```\nTypeError: unable to make sense of Maxima expression 'f[1,2]([1/2],[3/2,3/2],-1/4)' in Sage\n```\n",
+    "body": "one additional example by omologos on irc:\n\n```\nvar('x n')\nf=(-1)^n/((2*n+1)*factorial(2n+1))\nsum(f,n,0,oo)\n```\nbut i get this error:\n\n```\nTypeError: unable to make sense of Maxima expression 'f[1,2]([1/2],[3/2,3/2],-1/4)' in Sage\n```",
     "created_at": "2010-09-18T11:47:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -63,7 +60,6 @@ var('x n')
 f=(-1)^n/((2*n+1)*factorial(2n+1))
 sum(f,n,0,oo)
 ```
-
 but i get this error:
 
 ```
@@ -72,13 +68,12 @@ TypeError: unable to make sense of Maxima expression 'f[1,2]([1/2],[3/2,3/2],-1/
 
 
 
-
 ---
 
 archive/issue_comments_098381.json:
 ```json
 {
-    "body": "This should be \n\n```\nvar('x n')\nf=(-1)^n/((2*n+1)*factorial(2*n+1))\nsum(f,n,0,oo)\n```\n\nIf I'm not mistaken, this might be related to #2516, in the sense that we should be parsing hypergeometric functions correctly and that would be part of that ticket.",
+    "body": "This should be \n\n```\nvar('x n')\nf=(-1)^n/((2*n+1)*factorial(2*n+1))\nsum(f,n,0,oo)\n```\nIf I'm not mistaken, this might be related to #2516, in the sense that we should be parsing hypergeometric functions correctly and that would be part of that ticket.",
     "created_at": "2011-02-17T01:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -94,7 +89,6 @@ var('x n')
 f=(-1)^n/((2*n+1)*factorial(2*n+1))
 sum(f,n,0,oo)
 ```
-
 If I'm not mistaken, this might be related to #2516, in the sense that we should be parsing hypergeometric functions correctly and that would be part of that ticket.
 
 
@@ -104,7 +98,7 @@ If I'm not mistaken, this might be related to #2516, in the sense that we should
 archive/issue_comments_098382.json:
 ```json
 {
-    "body": "This also causes a similar problem in #4102:\n\n\n```\nsage: f = bessel_J(2, x)\nsage: f.integrate(x)\nTraceback (most recent call last):\n...\nTypeError: cannot coerce arguments: no canonical coercion from <type 'list'> to Symbolic Ring\n```\n\n\nIn that case, Maxima is returning `hypergeometric([3/2],[5/2,3],-x^2/4)`.",
+    "body": "This also causes a similar problem in #4102:\n\n```\nsage: f = bessel_J(2, x)\nsage: f.integrate(x)\nTraceback (most recent call last):\n...\nTypeError: cannot coerce arguments: no canonical coercion from <type 'list'> to Symbolic Ring\n```\n\nIn that case, Maxima is returning `hypergeometric([3/2],[5/2,3],-x^2/4)`.",
     "created_at": "2013-06-17T21:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -115,7 +109,6 @@ archive/issue_comments_098382.json:
 
 This also causes a similar problem in #4102:
 
-
 ```
 sage: f = bessel_J(2, x)
 sage: f.integrate(x)
@@ -123,7 +116,6 @@ Traceback (most recent call last):
 ...
 TypeError: cannot coerce arguments: no canonical coercion from <type 'list'> to Symbolic Ring
 ```
-
 
 In that case, Maxima is returning `hypergeometric([3/2],[5/2,3],-x^2/4)`.
 
@@ -273,7 +265,7 @@ archive/issue_events_024970.json:
 archive/issue_comments_098386.json:
 ```json
 {
-    "body": "#2516 has all the examples above in it, with the exception of the ones mentioned in the comments.\n* One would want to be able to do\n\n```\nb=var('b')\nintegral(1/(x^b+1),x)\n```\n\n  without using W|A; apparently `1/(a^b+1)` would yield `2F1(1,1/a,1+1/a,-a^x)`.\n* Apparently \n\n```\nsum(x^(3*k)/factorial(2*k),k,0,oo)\n```\n\n  would also be doable with hypergeometrics.",
+    "body": "#2516 has all the examples above in it, with the exception of the ones mentioned in the comments.\n* One would want to be able to do\n\n```\nb=var('b')\nintegral(1/(x^b+1),x)\n```\n  without using W|A; apparently `1/(a^b+1)` would yield `2F1(1,1/a,1+1/a,-a^x)`.\n* Apparently \n\n```\nsum(x^(3*k)/factorial(2*k),k,0,oo)\n```\n  would also be doable with hypergeometrics.",
     "created_at": "2014-07-08T15:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -289,14 +281,12 @@ archive/issue_comments_098386.json:
 b=var('b')
 integral(1/(x^b+1),x)
 ```
-
   without using W|A; apparently `1/(a^b+1)` would yield `2F1(1,1/a,1+1/a,-a^x)`.
 * Apparently 
 
 ```
 sum(x^(3*k)/factorial(2*k),k,0,oo)
 ```
-
   would also be doable with hypergeometrics.
 
 
@@ -306,7 +296,7 @@ sum(x^(3*k)/factorial(2*k),k,0,oo)
 archive/issue_comments_098387.json:
 ```json
 {
-    "body": "Replying to [comment:11 kcrisman]:\n> #2516 has all the examples above in it, with the exception of the ones mentioned in the comments.\nWhat I get with #2516 is\n\n```\nsage: integral(1/(x^b+1),x)\nintegrate(1/(x^b + 1), x)\nsage: sum(x^(3*k)/factorial(2*k),k,0,oo)\nsqrt(pi)*x^(3/4)*sqrt(1/(pi*x^(3/2)))*cosh(x^(3/2))\n```\n",
+    "body": "Replying to [comment:11 kcrisman]:\n> #2516 has all the examples above in it, with the exception of the ones mentioned in the comments.\n\nWhat I get with #2516 is\n\n```\nsage: integral(1/(x^b+1),x)\nintegrate(1/(x^b + 1), x)\nsage: sum(x^(3*k)/factorial(2*k),k,0,oo)\nsqrt(pi)*x^(3/4)*sqrt(1/(pi*x^(3/2)))*cosh(x^(3/2))\n```",
     "created_at": "2014-07-08T15:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -317,6 +307,7 @@ archive/issue_comments_098387.json:
 
 Replying to [comment:11 kcrisman]:
 > #2516 has all the examples above in it, with the exception of the ones mentioned in the comments.
+
 What I get with #2516 is
 
 ```
@@ -328,13 +319,12 @@ sqrt(pi)*x^(3/4)*sqrt(1/(pi*x^(3/2)))*cosh(x^(3/2))
 
 
 
-
 ---
 
 archive/issue_comments_098388.json:
 ```json
 {
-    "body": "> What I get with #2516 is\n> {{{\n> sage: integral(1/(x^b+1),x)\n> integrate(1/(x^b + 1), x)\n> }}}\nNot really worth keeping open, as even Maxima does this.\n> {{{\n> sage: sum(x^(3*k)/factorial(2*k),k,0,oo)\n> sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))\n> }}}\nInterestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.\n\nSo I nominate to close this ticket.",
+    "body": "> What I get with #2516 is\n> \n> ```\n> sage: integral(1/(x^b+1),x)\n> integrate(1/(x^b + 1), x)\n> ```\n\nNot really worth keeping open, as even Maxima does this.\n> {{{\n> sage: sum(x^(3*k)/factorial(2*k),k,0,oo)\n> sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))\n> }}}\n\nInterestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.\n\nSo I nominate to close this ticket.",
     "created_at": "2014-07-08T16:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -344,15 +334,18 @@ archive/issue_comments_098388.json:
 ```
 
 > What I get with #2516 is
-> {{{
+> 
+> ```
 > sage: integral(1/(x^b+1),x)
 > integrate(1/(x^b + 1), x)
-> }}}
+> ```
+
 Not really worth keeping open, as even Maxima does this.
 > {{{
 > sage: sum(x^(3*k)/factorial(2*k),k,0,oo)
 > sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))
 > }}}
+
 Interestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.
 
 So I nominate to close this ticket.
@@ -400,7 +393,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098391.json:
 ```json
 {
-    "body": "> > {{{\n> > sage: sum(x^(3*k)/factorial(2*k),k,0,oo)\n> > sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))\n> > }}}\n> Interestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.\nEven more interestingly, this is not as simple as just `cosh(x^(3/2))` (which is correct) but I'm not going to repurpose this one for that.",
+    "body": "> > {{{\n> > sage: sum(x^(3*k)/factorial(2*k),k,0,oo)\n> > sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))\n> > }}}\n\n> Interestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.\nEven more interestingly, this is not as simple as just `cosh(x^(3/2))` (which is correct) but I'm not going to repurpose this one for that.",
     "created_at": "2014-07-08T16:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9907",
     "type": "issue_comment",
@@ -413,6 +406,7 @@ archive/issue_comments_098391.json:
 > > sage: sum(x^(3*k)/factorial(2*k),k,0,oo)
 > > sqrt(pi)*x<sup>(3/4)*sqrt(1/(pi*x</sup>(3/2)))*cosh(x^(3/2))
 > > }}}
+
 > Interestingly, this works in vanilla Sage as well.  Maybe there weren't any hg functions to begin with there.  I assume it was fixed with #16224 - earlier it gave yet another (wrong) answer.
 Even more interestingly, this is not as simple as just `cosh(x^(3/2))` (which is correct) but I'm not going to repurpose this one for that.
 

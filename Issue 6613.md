@@ -3,7 +3,7 @@
 archive/issues_006613.json:
 ```json
 {
-    "body": "Assignee: @craigcitro\n\nCC:  revans@ucsd.edu\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/84bdf37a75345bb5/2a86396377e1c81d) thread, Ron Evans provided a test case to demonstrate that the function `jacobi_sum()` in Sage 4.1 provided wrong answers:\n\n```\nsage: G=DirichletGroup(5); X=G.list(); Y=X[0]; Z=X[1];  #Y is trivial and Z is quartic\n\nsage: sum([Y(x)*Z(1-x) for x in IntegerModRing(5)])\n -1\nsage: # The value -1 above is the correct value of the Jacobi sum J(Y, Z).\n\nsage: Y.jacobi_sum(Z);    Z.jacobi_sum(Y)\n0\n0\nsage: #The 0 values above are incorrect values of J(Y, Z).\n```\n\nThe patch at #6393 fixed the reported bug, but left out the test case. The reported test case should be included to demonstrate that the bug has been fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6613\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  revans@ucsd.edu\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/84bdf37a75345bb5/2a86396377e1c81d) thread, Ron Evans provided a test case to demonstrate that the function `jacobi_sum()` in Sage 4.1 provided wrong answers:\n\n```\nsage: G=DirichletGroup(5); X=G.list(); Y=X[0]; Z=X[1];  #Y is trivial and Z is quartic\n\nsage: sum([Y(x)*Z(1-x) for x in IntegerModRing(5)])\n -1\nsage: # The value -1 above is the correct value of the Jacobi sum J(Y, Z).\n\nsage: Y.jacobi_sum(Z);    Z.jacobi_sum(Y)\n0\n0\nsage: #The 0 values above are incorrect values of J(Y, Z).\n```\nThe patch at #6393 fixed the reported bug, but left out the test case. The reported test case should be included to demonstrate that the bug has been fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6613\n\n",
     "created_at": "2009-07-24T14:33:13Z",
     "labels": [
         "component: modular forms"
@@ -33,7 +33,6 @@ sage: Y.jacobi_sum(Z);    Z.jacobi_sum(Y)
 0
 sage: #The 0 values above are incorrect values of J(Y, Z).
 ```
-
 The patch at #6393 fixed the reported bug, but left out the test case. The reported test case should be included to demonstrate that the bug has been fixed.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6613

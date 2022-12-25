@@ -3,7 +3,7 @@
 archive/issues_008477.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby mvngu\n\nPALP fails to build in parallel with GNU `make`.  Some output from `make -d` (debug):\n\n```\n    Must remake target `poly.o'.\nNeed a job token; we don't have children\nmake[2]: Entering directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\nPutting child 0x00651fb0 (poly.o) PID 7703 on the chain.\n    Commands of `poly.o' are being run.\n    Considering target file `Coord.o'.\n     File `Coord.o' does not exist.\n    Must remake target `Coord.o'.\nLive child 0x00651fb0 (poly.o) PID 7703 \nNeed a job token; we have children\nLive child 0x00651fb0 (poly.o) PID 7703 \nLive child 0x00651fb0 (poly.o) PID 7703 \nReaping winning child 0x00651fb0 PID 7703 \nRemoving child 0x00651fb0 PID 7703 from chain.\nmake[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\nError building PALP.\nsage: An error occurred while installing palp-1.1.p2\n```\n\n\nIt's not clear why this happens, but it breaks building spkgs in parallel (#8306).  As we've done with other packages, forcing a serial build helps.\n\nPALP has a `Makefile` and a `GNUmakefile`.  GNU `make` prefers the latter.  It seems that `export MAKE=\"make\"` in `spkg-install` is not enough to suppress a parallel build, but adding the special target [.NOTPARALLEL](http://www.gnu.org/software/automake/manual/make/Special-Targets.html#index-g_t_002eNOTPARALLEL-248) to `GNUmakefile` works.\n\nBuilding in parallel appears to work if I replace `GNUmakefile` with `Makefile`, but the compiler and compiler flags are different.  The package does not have an [obvious] test suite.\n\n#7071 is another PALP ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8477\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby mvngu\n\nPALP fails to build in parallel with GNU `make`.  Some output from `make -d` (debug):\n\n```\n    Must remake target `poly.o'.\nNeed a job token; we don't have children\nmake[2]: Entering directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\nPutting child 0x00651fb0 (poly.o) PID 7703 on the chain.\n    Commands of `poly.o' are being run.\n    Considering target file `Coord.o'.\n     File `Coord.o' does not exist.\n    Must remake target `Coord.o'.\nLive child 0x00651fb0 (poly.o) PID 7703 \nNeed a job token; we have children\nLive child 0x00651fb0 (poly.o) PID 7703 \nLive child 0x00651fb0 (poly.o) PID 7703 \nReaping winning child 0x00651fb0 PID 7703 \nRemoving child 0x00651fb0 PID 7703 from chain.\nmake[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\nError building PALP.\nsage: An error occurred while installing palp-1.1.p2\n```\n\nIt's not clear why this happens, but it breaks building spkgs in parallel (#8306).  As we've done with other packages, forcing a serial build helps.\n\nPALP has a `Makefile` and a `GNUmakefile`.  GNU `make` prefers the latter.  It seems that `export MAKE=\"make\"` in `spkg-install` is not enough to suppress a parallel build, but adding the special target [.NOTPARALLEL](http://www.gnu.org/software/automake/manual/make/Special-Targets.html#index-g_t_002eNOTPARALLEL-248) to `GNUmakefile` works.\n\nBuilding in parallel appears to work if I replace `GNUmakefile` with `Makefile`, but the compiler and compiler flags are different.  The package does not have an [obvious] test suite.\n\n#7071 is another PALP ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8477\n\n",
     "created_at": "2010-03-07T18:43:02Z",
     "labels": [
         "component: packages: standard",
@@ -43,7 +43,6 @@ make[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-p
 Error building PALP.
 sage: An error occurred while installing palp-1.1.p2
 ```
-
 
 It's not clear why this happens, but it breaks building spkgs in parallel (#8306).  As we've done with other packages, forcing a serial build helps.
 
@@ -204,7 +203,7 @@ archive/issue_comments_076276.json:
 archive/issue_comments_076277.json:
 ```json
 {
-    "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by @qed777 created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
+    "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by @qed777 created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
     "created_at": "2010-03-12T17:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
@@ -234,7 +233,6 @@ with your suggestions, except for removing `CC=gcc`.  See the attached the patch
  # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit
  # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit
 ```
-
 Looking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.
 
 
@@ -306,7 +304,7 @@ dave
 archive/issue_comments_076281.json:
 ```json
 {
-    "body": "Doesn't `-W` activate extra warnings?  From the manual page for gcc 4.4.1:\n\n```\n       -Wextra\n           This enables some extra warning flags that are not enabled by\n           -Wall. (This option used to be called -W.  The older name is still\n           supported, but the newer name is more descriptive.)\n```\n\nAnyway, whenever it's convenient is great.",
+    "body": "Doesn't `-W` activate extra warnings?  From the manual page for gcc 4.4.1:\n\n```\n       -Wextra\n           This enables some extra warning flags that are not enabled by\n           -Wall. (This option used to be called -W.  The older name is still\n           supported, but the newer name is more descriptive.)\n```\nAnyway, whenever it's convenient is great.",
     "created_at": "2010-03-12T18:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
@@ -323,7 +321,6 @@ Doesn't `-W` activate extra warnings?  From the manual page for gcc 4.4.1:
            -Wall. (This option used to be called -W.  The older name is still
            supported, but the newer name is more descriptive.)
 ```
-
 Anyway, whenever it's convenient is great.
 
 

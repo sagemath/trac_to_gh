@@ -121,7 +121,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066856.json:
 ```json
 {
-    "body": "This looks like an interesting patch but \n\n\n```\nsage -t  \"devel/sage/sage/graphs/graph_generators.py\"\n```\n\nseems to fail (sage 4.3, imac, 10.6.2).",
+    "body": "This looks like an interesting patch but \n\n```\nsage -t  \"devel/sage/sage/graphs/graph_generators.py\"\n```\nseems to fail (sage 4.3, imac, 10.6.2).",
     "created_at": "2009-12-30T02:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
@@ -132,11 +132,9 @@ archive/issue_comments_066856.json:
 
 This looks like an interesting patch but 
 
-
 ```
 sage -t  "devel/sage/sage/graphs/graph_generators.py"
 ```
-
 seems to fail (sage 4.3, imac, 10.6.2).
 
 
@@ -164,7 +162,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066858.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> This looks like an interesting patch but \n> \n> {{{\n> sage -t  \"devel/sage/sage/graphs/graph_generators.py\"\n> }}}\n> seems to fail (sage 4.3, imac, 10.6.2).\n\nArrgghh ... \n\nIgnore this. I'll keep refereeing it.",
+    "body": "Replying to [comment:2 wdj]:\n> This looks like an interesting patch but \n> \n> \n> ```\n> sage -t  \"devel/sage/sage/graphs/graph_generators.py\"\n> ```\n> seems to fail (sage 4.3, imac, 10.6.2).\n\n\nArrgghh ... \n\nIgnore this. I'll keep refereeing it.",
     "created_at": "2009-12-30T02:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7770",
     "type": "issue_comment",
@@ -176,10 +174,12 @@ archive/issue_comments_066858.json:
 Replying to [comment:2 wdj]:
 > This looks like an interesting patch but 
 > 
-> {{{
+> 
+> ```
 > sage -t  "devel/sage/sage/graphs/graph_generators.py"
-> }}}
+> ```
 > seems to fail (sage 4.3, imac, 10.6.2).
+
 
 Arrgghh ... 
 

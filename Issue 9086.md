@@ -3,7 +3,7 @@
 archive/issues_009086.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: symbolic fraction, sign, minus, latex\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n\n```\nsage: latex(-1/x)\n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: symbolic fraction, sign, minus, latex\n\nWhen the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):\n\n```\nsage: latex(-1/x)\n\\frac{1}{x}\nsage: latex(1/-x) \n\\frac{1}{x}\n```\n\nOrigin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9086\n\n",
     "created_at": "2010-05-29T18:44:54Z",
     "labels": [
         "component: symbolics",
@@ -23,14 +23,12 @@ Keywords: symbolic fraction, sign, minus, latex
 
 When the numerator of a (negative) symbolic expression happens to be `1` (and only then), the sign is dropped in its LaTeX representation (but not its string representation):
 
-
 ```
 sage: latex(-1/x)
 \frac{1}{x}
 sage: latex(1/-x) 
 \frac{1}{x}
 ```
-
 
 Origin of the new doctest failure in `sage/graphs/generic_graphy.py`, introduced with Sage 4.4.3.alpha0.
 
@@ -383,7 +381,7 @@ archive/issue_events_022284.json:
 archive/issue_comments_084246.json:
 ```json
 {
-    "body": "Replying to [comment:10 damm]:\nSorry, i've changed the description and couldn't revert the change.\n\nI think the fix didn't solve all problems:\n\n\n```\nsage: var('x y')\nsage: latex(-x/y) \n\\frac{x}{y}\n```\n",
+    "body": "Replying to [comment:10 damm]:\nSorry, i've changed the description and couldn't revert the change.\n\nI think the fix didn't solve all problems:\n\n```\nsage: var('x y')\nsage: latex(-x/y) \n\\frac{x}{y}\n```",
     "created_at": "2010-06-21T20:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
@@ -397,7 +395,6 @@ Sorry, i've changed the description and couldn't revert the change.
 
 I think the fix didn't solve all problems:
 
-
 ```
 sage: var('x y')
 sage: latex(-x/y) 
@@ -406,13 +403,12 @@ sage: latex(-x/y)
 
 
 
-
 ---
 
 archive/issue_comments_084247.json:
 ```json
 {
-    "body": "Replying to [comment:12 damm]:\n> I think the fix didn't solve all problems\n\nIndeed. Despite the ticket's name, I think this second case should be addressed on another ticket, since this one had already been merged.",
+    "body": "Replying to [comment:12 damm]:\n> I think the fix didn't solve all problems\n\n\nIndeed. Despite the ticket's name, I think this second case should be addressed on another ticket, since this one had already been merged.",
     "created_at": "2010-06-22T16:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9086",
     "type": "issue_comment",
@@ -423,6 +419,7 @@ archive/issue_comments_084247.json:
 
 Replying to [comment:12 damm]:
 > I think the fix didn't solve all problems
+
 
 Indeed. Despite the ticket's name, I think this second case should be addressed on another ticket, since this one had already been merged.
 

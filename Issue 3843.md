@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3843
 archive/issue_comments_027271.json:
 ```json
 {
-    "body": "\n```\nsage: G = graphs.PetersenGraph()\nsage: G.set_edge_label(0,1,'spam')\nsage: G.plot(edge_labels=True)\n```\n\n\nI don't see how to make it easier to figure out...",
+    "body": "```\nsage: G = graphs.PetersenGraph()\nsage: G.set_edge_label(0,1,'spam')\nsage: G.plot(edge_labels=True)\n```\n\nI don't see how to make it easier to figure out...",
     "created_at": "2008-08-13T21:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -42,13 +42,11 @@ archive/issue_comments_027271.json:
 }
 ```
 
-
 ```
 sage: G = graphs.PetersenGraph()
 sage: G.set_edge_label(0,1,'spam')
 sage: G.plot(edge_labels=True)
 ```
-
 
 I don't see how to make it easier to figure out...
 
@@ -231,7 +229,7 @@ Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_027281.json:
 ```json
 {
-    "body": "Against my current 3.1.2.alpha1 merge tree there is one doctest failure with all five patches applied:\n\n```\nsage -t -long devel/sage/sage/graphs/graph.py               \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/graph.py\", line 7632:\n    sage: ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[2,2], vertex_size=20, vertex_labels=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_161[3]>\", line 1, in <module>\n        ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[Integer(2),Integer(2)], vertex_size=Integer(20), vertex_labels=False)###line 7632:\n    sage: ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[2,2], vertex_size=20, vertex_labels=False)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 5439, in show\n        self.plot(**plot_kwds).show(**kwds)\n    TypeError: show() got an unexpected keyword argument 'vertex_size'\n**********************************************************************\n```\n",
+    "body": "Against my current 3.1.2.alpha1 merge tree there is one doctest failure with all five patches applied:\n\n```\nsage -t -long devel/sage/sage/graphs/graph.py               \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/graph.py\", line 7632:\n    sage: ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[2,2], vertex_size=20, vertex_labels=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_161[3]>\", line 1, in <module>\n        ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[Integer(2),Integer(2)], vertex_size=Integer(20), vertex_labels=False)###line 7632:\n    sage: ((graphs.ChvatalGraph()).cliques_get_clique_bipartite()).show(figsize=[2,2], vertex_size=20, vertex_labels=False)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 5439, in show\n        self.plot(**plot_kwds).show(**kwds)\n    TypeError: show() got an unexpected keyword argument 'vertex_size'\n**********************************************************************\n```",
     "created_at": "2008-08-27T02:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -262,13 +260,12 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_027282.json:
 ```json
 {
-    "body": "With the new flat patch:\n\n```\nrank4:sage-3843 rlmill$ ../../sage -tp 2 -long sage/graphs\n...\nAll tests passed!\nTotal time for all tests: 300.7 seconds\n```\n",
+    "body": "With the new flat patch:\n\n```\nrank4:sage-3843 rlmill$ ../../sage -tp 2 -long sage/graphs\n...\nAll tests passed!\nTotal time for all tests: 300.7 seconds\n```",
     "created_at": "2008-08-30T19:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
@@ -285,7 +282,6 @@ rank4:sage-3843 rlmill$ ../../sage -tp 2 -long sage/graphs
 All tests passed!
 Total time for all tests: 300.7 seconds
 ```
-
 
 
 

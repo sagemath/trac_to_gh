@@ -61,7 +61,7 @@ Passed long tests in `sage.graphs`, haven't yet tested elsewhere. Someone should
 archive/issue_comments_036765.json:
 ```json
 {
-    "body": "From http://groups.google.com/group/networkx-discuss/browse_thread/thread/28e898e144a5e282\n\nLooks like we need to wait for Scipy 0.7:\n\n```\n> > Thanks Cyril.  It looks like networkx-0.99 currently depends on \n> > python-scipy >= 0.7.0 (just out in beta).  I'll see if I can make it \n> > work correctly with 0.6.0. \n> Note that it's not really required on my end, I thought I would report \n> it in case that could be useful. I can live (and the package in \n> experimental too) with a failure in the test suite. Don't bother too \n> much. ;-) \n\n\nI took a look and it looks like the SciPy sparse matrix handling \nhas changed quite a bit between 0.6.0 and 0.7.0.  So I'll leave \nit as is and require 0.7.0 for that (small,optional) part of networkx. \nAric \n```\n\n\nCheers,\n\nMichael",
+    "body": "From http://groups.google.com/group/networkx-discuss/browse_thread/thread/28e898e144a5e282\n\nLooks like we need to wait for Scipy 0.7:\n\n```\n> > Thanks Cyril.  It looks like networkx-0.99 currently depends on \n> > python-scipy >= 0.7.0 (just out in beta).  I'll see if I can make it \n> > work correctly with 0.6.0. \n> Note that it's not really required on my end, I thought I would report \n> it in case that could be useful. I can live (and the package in \n> experimental too) with a failure in the test suite. Don't bother too \n> much. ;-) \n\n\nI took a look and it looks like the SciPy sparse matrix handling \nhas changed quite a bit between 0.6.0 and 0.7.0.  So I'll leave \nit as is and require 0.7.0 for that (small,optional) part of networkx. \nAric \n```\n\nCheers,\n\nMichael",
     "created_at": "2008-12-23T22:58:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4860",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ has changed quite a bit between 0.6.0 and 0.7.0.  So I'll leave
 it as is and require 0.7.0 for that (small,optional) part of networkx. 
 Aric 
 ```
-
 
 Cheers,
 
@@ -138,7 +137,7 @@ Changing keywords from "" to "networkx-0.99".
 archive/issue_comments_036768.json:
 ```json
 {
-    "body": "On i686 Debian 5.0 Lenny (testing) with kernel 2.6.24-1-686, and Sage 3.2.3, I downloaded the package at \n\n\n\n[http://8tb.us/home/rlmill/networkx-0.99.spkg](http://8tb.us/home/rlmill/networkx-0.99.spkg)\n\n\n\nto my machine and installed it with\n\n```\nsage -i networkx-0.99.spkg\n```\n\nand ran tests with\n\n```\nsage -t -long /path/to/SAGE_ROOT/devel/sage-main/sage/graphs\n```\n\nAll tests passed.",
+    "body": "On i686 Debian 5.0 Lenny (testing) with kernel 2.6.24-1-686, and Sage 3.2.3, I downloaded the package at \n\n\n\n[http://8tb.us/home/rlmill/networkx-0.99.spkg](http://8tb.us/home/rlmill/networkx-0.99.spkg)\n\n\n\nto my machine and installed it with\n\n```\nsage -i networkx-0.99.spkg\n```\nand ran tests with\n\n```\nsage -t -long /path/to/SAGE_ROOT/devel/sage-main/sage/graphs\n```\nAll tests passed.",
     "created_at": "2009-01-28T23:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4860",
     "type": "issue_comment",
@@ -160,13 +159,11 @@ to my machine and installed it with
 ```
 sage -i networkx-0.99.spkg
 ```
-
 and ran tests with
 
 ```
 sage -t -long /path/to/SAGE_ROOT/devel/sage-main/sage/graphs
 ```
-
 All tests passed.
 
 

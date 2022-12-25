@@ -3,7 +3,7 @@
 archive/issues_005241.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  joyner\n\nFrom sage-support:\n\n\n```\nsage: M1 = matrix(ZZ,2,[[-1,0],[0,1]]) \nsage: M2 = matrix(ZZ,2,[[1,0],[0,-1]]) \nsage: M3 = matrix(ZZ,2,[[-1,0],[0,-1]]) \nsage: MG = MatrixGroup([M1, M2, M3]) \nsage: MG.order() \n    4 \nsage: MG.list() \n    Traceback (click to the left for traceback) \n    ... \n    AttributeError: 'sage.rings.integer_ring.IntegerRing_class' object \nhas \n    no attribute 'prime_subfield' \n```\n\n\nThe offending code is in groups/matrix_gps/matrix_group.py where the problem is in the list method of MatrixGroup.\n\n\n```\n429        F = self.field_of_definition()\n430        n = F.degree()\n431        p = F.characteristic()\n432        a = F.prime_subfield().multiplicative_generator()\n433        b = F.multiplicative_generator()\n```\n\n\nIn the class definition of MatrixGroup, any base ring is allowed.  But at least this particular method (others?) assume that the base ring is in fact in a field.  \n\nSince a and b above are definitely used later in list(), as this all calls GAP, someone with a good knowledge of GAP should address this - and look for other places it's assumed that the base ring is a field and at least catch that exception with a better error message.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5241\n\n",
+    "body": "Assignee: joyner\n\nCC:  joyner\n\nFrom sage-support:\n\n```\nsage: M1 = matrix(ZZ,2,[[-1,0],[0,1]]) \nsage: M2 = matrix(ZZ,2,[[1,0],[0,-1]]) \nsage: M3 = matrix(ZZ,2,[[-1,0],[0,-1]]) \nsage: MG = MatrixGroup([M1, M2, M3]) \nsage: MG.order() \n    4 \nsage: MG.list() \n    Traceback (click to the left for traceback) \n    ... \n    AttributeError: 'sage.rings.integer_ring.IntegerRing_class' object \nhas \n    no attribute 'prime_subfield' \n```\n\nThe offending code is in groups/matrix_gps/matrix_group.py where the problem is in the list method of MatrixGroup.\n\n```\n429        F = self.field_of_definition()\n430        n = F.degree()\n431        p = F.characteristic()\n432        a = F.prime_subfield().multiplicative_generator()\n433        b = F.multiplicative_generator()\n```\n\nIn the class definition of MatrixGroup, any base ring is allowed.  But at least this particular method (others?) assume that the base ring is in fact in a field.  \n\nSince a and b above are definitely used later in list(), as this all calls GAP, someone with a good knowledge of GAP should address this - and look for other places it's assumed that the base ring is a field and at least catch that exception with a better error message.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5241\n\n",
     "created_at": "2009-02-12T01:40:40Z",
     "labels": [
         "component: group theory",
@@ -22,7 +22,6 @@ CC:  joyner
 
 From sage-support:
 
-
 ```
 sage: M1 = matrix(ZZ,2,[[-1,0],[0,1]]) 
 sage: M2 = matrix(ZZ,2,[[1,0],[0,-1]]) 
@@ -38,9 +37,7 @@ has
     no attribute 'prime_subfield' 
 ```
 
-
 The offending code is in groups/matrix_gps/matrix_group.py where the problem is in the list method of MatrixGroup.
-
 
 ```
 429        F = self.field_of_definition()
@@ -49,7 +46,6 @@ The offending code is in groups/matrix_gps/matrix_group.py where the problem is 
 432        a = F.prime_subfield().multiplicative_generator()
 433        b = F.multiplicative_generator()
 ```
-
 
 In the class definition of MatrixGroup, any base ring is allowed.  But at least this particular method (others?) assume that the base ring is in fact in a field.  
 

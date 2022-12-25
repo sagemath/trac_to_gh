@@ -93,7 +93,7 @@ Resolution: wontfix
 archive/issue_comments_083536.json:
 ```json
 {
-    "body": "Replying to [comment:2 jason]:\n> This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html\n> Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?\n\nYou were right. After removing ttf-jsmath and installing the downloaded fonts it works. Thank you.",
+    "body": "Replying to [comment:2 jason]:\n> This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html\n> Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?\n\n\nYou were right. After removing ttf-jsmath and installing the downloaded fonts it works. Thank you.",
     "created_at": "2010-05-28T22:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9038",
     "type": "issue_comment",
@@ -105,6 +105,7 @@ archive/issue_comments_083536.json:
 Replying to [comment:2 jason]:
 > This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
 > Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?
+
 
 You were right. After removing ttf-jsmath and installing the downloaded fonts it works. Thank you.
 

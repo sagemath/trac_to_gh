@@ -65,7 +65,7 @@ archive/issue_events_008190.json:
 archive/issue_comments_025203.json:
 ```json
 {
-    "body": "In my merge tree somebody else already beat you to it and deleted the random crap:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/devel/sage$ tail -n 10 sage/rings/complex_double.pyx\n        True    \n    \"\"\"\n    return _CDF   \n\nfrom sage.misc.parser import Parser\ncdef cdf_parser = Parser(float, float,  {\"I\" : _CDF.gen(), \"i\" : _CDF.gen()})\n\n\n\n#####\n```\n\n\nCheers,\n\nMichael",
+    "body": "In my merge tree somebody else already beat you to it and deleted the random crap:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/devel/sage$ tail -n 10 sage/rings/complex_double.pyx\n        True    \n    \"\"\"\n    return _CDF   \n\nfrom sage.misc.parser import Parser\ncdef cdf_parser = Parser(float, float,  {\"I\" : _CDF.gen(), \"i\" : _CDF.gen()})\n\n\n\n#####\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-07-07T01:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_comment",
@@ -89,7 +89,6 @@ cdef cdf_parser = Parser(float, float,  {"I" : _CDF.gen(), "i" : _CDF.gen()})
 
 #####
 ```
-
 
 Cheers,
 

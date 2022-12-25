@@ -3,7 +3,7 @@
 archive/issues_008389.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
     "created_at": "2010-02-27T17:22:15Z",
     "labels": [
         "component: algebra",
@@ -21,7 +21,6 @@ Assignee: @aghitza
 CC:  @orlitzky @nthiery
 
 This makes Sage eat all available memory until it gets interrupted:
-
 
 ```
 $ ./sage     
@@ -78,9 +77,7 @@ KeyboardInterrupt                         Traceback (most recent call last)
      11 def my_sigfpe(x, n):
 ```
 
-
 Note that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since
-
 
 ```
 Definition:     PolynomialRing [...]
@@ -90,7 +87,6 @@ Docstring:
 
        * ``base_ring`` -- a commutative ring
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8389
 
@@ -103,7 +99,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8389
 archive/issue_comments_074981.json:
 ```json
 {
-    "body": "The problem's not in the polynomial ring constructor per se:\n\n```\nsage: R = PolynomialRing(MatrixSpace(QQ, 2),'x'); R\nUnivariate Polynomial Ring in x over Full MatrixSpace of 2 by 2 dense matrices over Rational Field\n```\n\nAlmost nothing works with R because printing of elements is broken, but at least you can construct it! \n\nThe problem reported above lies in the `R['x']` syntax; for some reason, the \"list\" method of the matrix ring is getting called, and this (of course) never terminates. If you try this with a matrix space over a *finite* ring, the list call succeeds, and it tries to get the element of index 'x' -- which fails because the string 'x' isn't an integer:\n\n```\nsage: MatrixSpace(GF(3), 2)['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-4.6.2.alpha1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:8072)()\n\nTypeError: list indices must be integers, not str\n```\n",
+    "body": "The problem's not in the polynomial ring constructor per se:\n\n```\nsage: R = PolynomialRing(MatrixSpace(QQ, 2),'x'); R\nUnivariate Polynomial Ring in x over Full MatrixSpace of 2 by 2 dense matrices over Rational Field\n```\nAlmost nothing works with R because printing of elements is broken, but at least you can construct it! \n\nThe problem reported above lies in the `R['x']` syntax; for some reason, the \"list\" method of the matrix ring is getting called, and this (of course) never terminates. If you try this with a matrix space over a *finite* ring, the list call succeeds, and it tries to get the element of index 'x' -- which fails because the string 'x' isn't an integer:\n\n```\nsage: MatrixSpace(GF(3), 2)['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-4.6.2.alpha1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:8072)()\n\nTypeError: list indices must be integers, not str\n```",
     "created_at": "2011-01-23T11:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -118,7 +114,6 @@ The problem's not in the polynomial ring constructor per se:
 sage: R = PolynomialRing(MatrixSpace(QQ, 2),'x'); R
 Univariate Polynomial Ring in x over Full MatrixSpace of 2 by 2 dense matrices over Rational Field
 ```
-
 Almost nothing works with R because printing of elements is broken, but at least you can construct it! 
 
 The problem reported above lies in the `R['x']` syntax; for some reason, the "list" method of the matrix ring is getting called, and this (of course) never terminates. If you try this with a matrix space over a *finite* ring, the list call succeeds, and it tries to get the element of index 'x' -- which fails because the string 'x' isn't an integer:
@@ -134,7 +129,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: list indices must be integers, not str
 ```
-
 
 
 
@@ -217,7 +211,7 @@ I was about to give this positive review, but after reading comment:2 I wonder. 
 archive/issue_comments_074986.json:
 ```json
 {
-    "body": "Replying to [comment:4 kcrisman]:\n> I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.\n\nThis is \"easy\" to do for one variable by overriding `MatrixSpace_generic.__getitem__` to check for a string, and then calling `PolynomialRing()`.\n\nBut ideally, we would want to offer the same interface that we do when constructing polynomial rings from other rings or fields. Does constructing a polynomial ring over matrix spaces even make sense mathematically? All of the existing code to do this is in `ring.__getitem__`, which sounds right to me, but this is very much not a strong point of mine.",
+    "body": "Replying to [comment:4 kcrisman]:\n> I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.\n\n\nThis is \"easy\" to do for one variable by overriding `MatrixSpace_generic.__getitem__` to check for a string, and then calling `PolynomialRing()`.\n\nBut ideally, we would want to offer the same interface that we do when constructing polynomial rings from other rings or fields. Does constructing a polynomial ring over matrix spaces even make sense mathematically? All of the existing code to do this is in `ring.__getitem__`, which sounds right to me, but this is very much not a strong point of mine.",
     "created_at": "2012-03-16T14:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -228,6 +222,7 @@ archive/issue_comments_074986.json:
 
 Replying to [comment:4 kcrisman]:
 > I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.
+
 
 This is "easy" to do for one variable by overriding `MatrixSpace_generic.__getitem__` to check for a string, and then calling `PolynomialRing()`.
 
@@ -331,7 +326,7 @@ archive/issue_events_020118.json:
 archive/issue_comments_074991.json:
 ```json
 {
-    "body": "Replying to [comment:7 tscrim]:\n> However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?\n\nIn principle, I agree. Unfortunately, matrix spaces currently do not use the category framework by default (one needs to call `M.full_category_initialisation()` first) for efficiency reasons. So the change you are suggesting would not solve the problem with matrix spaces by itself.\n\nAnd I'm honestly at lost as to how to use the category framework with fundamental, widely used parents.\n\nIn our case, it would make sense (despite the issue with matrix rings) to move the definition of `__getitem__` that deals with polynomials rings and the like from `sage.structure.Rings` to `sage.category.rings.Rings.ParentMethods`. But many common rings do not descend from `Rings().parent_class`, so one would need a wrapper in one direction or the other. Since `Rings.ParentMethods` is supposedly the recommended place to add generic stuff for rings in the long run, it would be natural to move the implementation there and provide a compatibility wrapper in `Ring`. Except that `Ring` comes before `Rings.ParentMethods` in the MRO of (most?) rings that use both...\n\n(On the top of that, there is a hack in `Parent.__getitem__` that one needs to be careful not to break...)",
+    "body": "Replying to [comment:7 tscrim]:\n> However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?\n\n\nIn principle, I agree. Unfortunately, matrix spaces currently do not use the category framework by default (one needs to call `M.full_category_initialisation()` first) for efficiency reasons. So the change you are suggesting would not solve the problem with matrix spaces by itself.\n\nAnd I'm honestly at lost as to how to use the category framework with fundamental, widely used parents.\n\nIn our case, it would make sense (despite the issue with matrix rings) to move the definition of `__getitem__` that deals with polynomials rings and the like from `sage.structure.Rings` to `sage.category.rings.Rings.ParentMethods`. But many common rings do not descend from `Rings().parent_class`, so one would need a wrapper in one direction or the other. Since `Rings.ParentMethods` is supposedly the recommended place to add generic stuff for rings in the long run, it would be natural to move the implementation there and provide a compatibility wrapper in `Ring`. Except that `Ring` comes before `Rings.ParentMethods` in the MRO of (most?) rings that use both...\n\n(On the top of that, there is a hack in `Parent.__getitem__` that one needs to be careful not to break...)",
     "created_at": "2013-12-22T12:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -342,6 +337,7 @@ archive/issue_comments_074991.json:
 
 Replying to [comment:7 tscrim]:
 > However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?
+
 
 In principle, I agree. Unfortunately, matrix spaces currently do not use the category framework by default (one needs to call `M.full_category_initialisation()` first) for efficiency reasons. So the change you are suggesting would not solve the problem with matrix spaces by itself.
 
@@ -410,7 +406,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_074993.json:
 ```json
 {
-    "body": "Ok, after talking with Nicolas I think I understand better what is going on and what should be done. Here is an attempt to streamline the implementation of `__getitem__` for general rings.\n\nI *didn't* leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?\n----\nNew commits:",
+    "body": "Ok, after talking with Nicolas I think I understand better what is going on and what should be done. Here is an attempt to streamline the implementation of `__getitem__` for general rings.\n\nI *didn't* leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?\n\n---\nNew commits:",
     "created_at": "2014-01-31T20:33:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -422,7 +418,8 @@ archive/issue_comments_074993.json:
 Ok, after talking with Nicolas I think I understand better what is going on and what should be done. Here is an attempt to streamline the implementation of `__getitem__` for general rings.
 
 I *didn't* leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?
-----
+
+---
 New commits:
 
 
@@ -468,7 +465,7 @@ Cheers,
 archive/issue_comments_074995.json:
 ```json
 {
-    "body": "Thanks for your review!\n\nReplying to [comment:12 nthiery]:\n> - Doc of __getitem__\n>   - TODO -> .. TODO\n\nNo, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n\n>   - Is Frac nicer than .fraction_field()?\n\nNo idea, I didn't touch this part `:-)`.\nLet's mention both.\n\n> - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n\nSame thing here.\n\n> - getitem for a matrix space M: could `M[sqrt(5)]` be a meaningful notation to extend the base ring?\n>   If yes, I'd be in favor of completely deprecating `M[3]` in favor of `M.unrank(3)`, in order to eventually allow for the notation `M[sqrt(5)]` without ambiguity in the corner case `M[1]`.\n\nI believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\n> By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> \n> Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n\nWhat method are you talking about?\n\nThanks again,\n\nMarc",
+    "body": "Thanks for your review!\n\nReplying to [comment:12 nthiery]:\n> - Doc of __getitem__\n>   - TODO -> .. TODO\n\n\nNo, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n\n>   - Is Frac nicer than .fraction_field()?\n\n\nNo idea, I didn't touch this part `:-)`.\nLet's mention both.\n\n> - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n\n\nSame thing here.\n\n> - getitem for a matrix space M: could `M[sqrt(5)]` be a meaningful notation to extend the base ring?\n>   If yes, I'd be in favor of completely deprecating `M[3]` in favor of `M.unrank(3)`, in order to eventually allow for the notation `M[sqrt(5)]` without ambiguity in the corner case `M[1]`.\n\n\nI believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\n> By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> \n> Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n\n\nWhat method are you talking about?\n\nThanks again,\n\nMarc",
     "created_at": "2014-02-21T09:45:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -483,25 +480,30 @@ Replying to [comment:12 nthiery]:
 > - Doc of __getitem__
 >   - TODO -> .. TODO
 
+
 No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)
 
 >   - Is Frac nicer than .fraction_field()?
+
 
 No idea, I didn't touch this part `:-)`.
 Let's mention both.
 
 > - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?
 
+
 Same thing here.
 
 > - getitem for a matrix space M: could `M[sqrt(5)]` be a meaningful notation to extend the base ring?
 >   If yes, I'd be in favor of completely deprecating `M[3]` in favor of `M.unrank(3)`, in order to eventually allow for the notation `M[sqrt(5)]` without ambiguity in the corner case `M[1]`.
+
 
 I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.
 
 > By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?
 > 
 > Speaking of this method: its documentation says "Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope."; the latter statement is wrong, right?
+
 
 What method are you talking about?
 
@@ -552,7 +554,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_074998.json:
 ```json
 {
-    "body": "Replying to [comment:13 mmezzarobba]:\n> No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n> >   - Is Frac nicer than .fraction_field()?\n> \n> No idea, I didn't touch this part `:-)`.\n> Let's mention both.\n> \n> > - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n> \n> Same thing here.\n\nOk. I double checked your changes and am happy with them!\n\n> I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\nFair enough :-) Do you mind creating a ticket for this task?\n\n> > By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> > \n> > Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n> \n> What method are you talking about?\n\nSorry, I confused myself with Ring.__getitem__ from another branch ...\n\nBtw: what do you think we should do with IntegerRing.__getitem__ which\ncalls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\nit is?\n\nCheers,\n                           Nicolas",
+    "body": "Replying to [comment:13 mmezzarobba]:\n> No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n> >   - Is Frac nicer than .fraction_field()?\n \n> \n> No idea, I didn't touch this part `:-)`.\n> Let's mention both.\n> \n> > - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n \n> \n> Same thing here.\n\n\nOk. I double checked your changes and am happy with them!\n\n> I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\n\nFair enough :-) Do you mind creating a ticket for this task?\n\n> > By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> > \n> > Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n\n> \n> What method are you talking about?\n\n\nSorry, I confused myself with Ring.__getitem__ from another branch ...\n\nBtw: what do you think we should do with IntegerRing.__getitem__ which\ncalls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\nit is?\n\nCheers,\n                           Nicolas",
     "created_at": "2014-03-03T13:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -564,25 +566,31 @@ archive/issue_comments_074998.json:
 Replying to [comment:13 mmezzarobba]:
 > No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)
 > >   - Is Frac nicer than .fraction_field()?
+ 
 > 
 > No idea, I didn't touch this part `:-)`.
 > Let's mention both.
 > 
 > > - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?
+ 
 > 
 > Same thing here.
+
 
 Ok. I double checked your changes and am happy with them!
 
 > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.
+
 
 Fair enough :-) Do you mind creating a ticket for this task?
 
 > > By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?
 > > 
 > > Speaking of this method: its documentation says "Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope."; the latter statement is wrong, right?
+
 > 
 > What method are you talking about?
+
 
 Sorry, I confused myself with Ring.__getitem__ from another branch ...
 
@@ -600,7 +608,7 @@ Cheers,
 archive/issue_comments_074999.json:
 ```json
 {
-    "body": "Replying to [comment:16 nthiery]:\n> > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n> \n> Fair enough :-) Do you mind creating a ticket for this task?\n\nDone (#15885).\n\n> Btw: what do you think we should do with IntegerRing.__getitem__ which\n> calls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\n> it is?\n\nFor now yes.\n\nCan you please set the ticket to positive review if you are happy with it?",
+    "body": "Replying to [comment:16 nthiery]:\n> > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\n> \n> Fair enough :-) Do you mind creating a ticket for this task?\n\n\nDone (#15885).\n\n> Btw: what do you think we should do with IntegerRing.__getitem__ which\n> calls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\n> it is?\n\n\nFor now yes.\n\nCan you please set the ticket to positive review if you are happy with it?",
     "created_at": "2014-03-03T15:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -611,14 +619,17 @@ archive/issue_comments_074999.json:
 
 Replying to [comment:16 nthiery]:
 > > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.
+
 > 
 > Fair enough :-) Do you mind creating a ticket for this task?
+
 
 Done (#15885).
 
 > Btw: what do you think we should do with IntegerRing.__getitem__ which
 > calls explicitly PrincipalIdealDomains.__getitem__? Just leave it as
 > it is?
+
 
 For now yes.
 
@@ -631,7 +642,7 @@ Can you please set the ticket to positive review if you are happy with it?
 archive/issue_comments_075000.json:
 ```json
 {
-    "body": "Replying to [comment:17 mmezzarobba]:\n> Done (#15885).\n\nThanks!\n\n> For now yes.\n\nOk.\n\n> Can you please set the ticket to positive review if you are happy with it?\n\nDone!",
+    "body": "Replying to [comment:17 mmezzarobba]:\n> Done (#15885).\n\n\nThanks!\n\n> For now yes.\n\n\nOk.\n\n> Can you please set the ticket to positive review if you are happy with it?\n\n\nDone!",
     "created_at": "2014-03-03T16:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
@@ -643,13 +654,16 @@ archive/issue_comments_075000.json:
 Replying to [comment:17 mmezzarobba]:
 > Done (#15885).
 
+
 Thanks!
 
 > For now yes.
 
+
 Ok.
 
 > Can you please set the ticket to positive review if you are happy with it?
+
 
 Done!
 

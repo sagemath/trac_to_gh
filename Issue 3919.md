@@ -3,7 +3,7 @@
 archive/issues_003919.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nIf there is only one button in a selector, such as\n\n```\nr=[\"Reload\"]\n```\n\nit is not pressed in, as are selected buttons when there is more than one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3919\n\n",
+    "body": "Assignee: @itolkov\n\nIf there is only one button in a selector, such as\n\n```\nr=[\"Reload\"]\n```\nit is not pressed in, as are selected buttons when there is more than one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3919\n\n",
     "created_at": "2008-08-21T00:20:15Z",
     "labels": [
         "component: interact",
@@ -23,7 +23,6 @@ If there is only one button in a selector, such as
 ```
 r=["Reload"]
 ```
-
 it is not pressed in, as are selected buttons when there is more than one.
 
 Issue created by migration from https://trac.sagemath.org/ticket/3919

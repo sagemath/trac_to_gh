@@ -221,7 +221,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060780.json:
 ```json
 {
-    "body": "I propose a MIP formulation that answers this long standing request. I'm not aware of alternative/faster methods. It works for any bridgeless (di)graphs with loops or multiple edges.\n----\nNew commits:",
+    "body": "I propose a MIP formulation that answers this long standing request. I'm not aware of alternative/faster methods. It works for any bridgeless (di)graphs with loops or multiple edges.\n\n---\nNew commits:",
     "created_at": "2017-10-22T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7302",
     "type": "issue_comment",
@@ -231,7 +231,8 @@ archive/issue_comments_060780.json:
 ```
 
 I propose a MIP formulation that answers this long standing request. I'm not aware of alternative/faster methods. It works for any bridgeless (di)graphs with loops or multiple edges.
-----
+
+---
 New commits:
 
 
@@ -311,7 +312,7 @@ archive/issue_events_017296.json:
 archive/issue_comments_060783.json:
 ```json
 {
-    "body": "Overall it looks good. I made some documentation tweaks. However, I do have a question about graphs with a single vertex. Should the nowhere zero flow correspond to an empty digraph? If so, then positive review. Otherwise a fix will be needed.\n----\nNew commits:",
+    "body": "Overall it looks good. I made some documentation tweaks. However, I do have a question about graphs with a single vertex. Should the nowhere zero flow correspond to an empty digraph? If so, then positive review. Otherwise a fix will be needed.\n\n---\nNew commits:",
     "created_at": "2017-12-11T08:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7302",
     "type": "issue_comment",
@@ -321,7 +322,8 @@ archive/issue_comments_060783.json:
 ```
 
 Overall it looks good. I made some documentation tweaks. However, I do have a question about graphs with a single vertex. Should the nowhere zero flow correspond to an empty digraph? If so, then positive review. Otherwise a fix will be needed.
-----
+
+---
 New commits:
 
 
@@ -367,7 +369,7 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 archive/issue_comments_060786.json:
 ```json
 {
-    "body": "You are right, the returned digraph must be on the same vertex set.\nI have pushed required changes.\n\nHowever, the current solution does not pass test due to an issue in `orientations`:\n\n```\nsage: G = Graph(1)\nsage: next(G.orientations())\nDigraph on 0 vertices\n```\n\nI'm opening a ticket to fix that and put a dependency on ticket #24366. So we have to wait before finalizing this ticket.",
+    "body": "You are right, the returned digraph must be on the same vertex set.\nI have pushed required changes.\n\nHowever, the current solution does not pass test due to an issue in `orientations`:\n\n```\nsage: G = Graph(1)\nsage: next(G.orientations())\nDigraph on 0 vertices\n```\nI'm opening a ticket to fix that and put a dependency on ticket #24366. So we have to wait before finalizing this ticket.",
     "created_at": "2017-12-11T09:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7302",
     "type": "issue_comment",
@@ -386,7 +388,6 @@ sage: G = Graph(1)
 sage: next(G.orientations())
 Digraph on 0 vertices
 ```
-
 I'm opening a ticket to fix that and put a dependency on ticket #24366. So we have to wait before finalizing this ticket.
 
 
@@ -432,7 +433,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_060789.json:
 ```json
 {
-    "body": "Replying to [comment:14 dcoudert]:\n> So we have to wait before finalizing this ticket.\n\nWhy? I don't see the point of waiting for the beta with the dependency to be released. I just merge in the branch, and let us continue with the review here.\n\nI made a few more small tweaks. If my changes look good, then positive review.",
+    "body": "Replying to [comment:14 dcoudert]:\n> So we have to wait before finalizing this ticket.\n\n\nWhy? I don't see the point of waiting for the beta with the dependency to be released. I just merge in the branch, and let us continue with the review here.\n\nI made a few more small tweaks. If my changes look good, then positive review.",
     "created_at": "2017-12-16T01:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7302",
     "type": "issue_comment",
@@ -443,6 +444,7 @@ archive/issue_comments_060789.json:
 
 Replying to [comment:14 dcoudert]:
 > So we have to wait before finalizing this ticket.
+
 
 Why? I don't see the point of waiting for the beta with the dependency to be released. I just merge in the branch, and let us continue with the review here.
 

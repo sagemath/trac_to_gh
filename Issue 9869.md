@@ -99,7 +99,7 @@ Changing component from build to linear programming.
 archive/issue_comments_097333.json:
 ```json
 {
-    "body": "Hello !\n\n> There is one technical question you can however answer. Do we need the binary file \"cl\" so it can be executed from the command line, or is the library libcliquer.so sufficient?\n\nNo, the cl file is not used, and this is precisely what the Sage code included in cliquer is useful for : directly calling the library's functions with a Graph object using the Graph structure it expects to find, without having to create an ugly temporary file to call the executable on it `:-)`\n\nNathann",
+    "body": "Hello !\n\n> There is one technical question you can however answer. Do we need the binary file \"cl\" so it can be executed from the command line, or is the library libcliquer.so sufficient?\n\n\nNo, the cl file is not used, and this is precisely what the Sage code included in cliquer is useful for : directly calling the library's functions with a Graph object using the Graph structure it expects to find, without having to create an ugly temporary file to call the executable on it `:-)`\n\nNathann",
     "created_at": "2010-09-15T11:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
@@ -111,6 +111,7 @@ archive/issue_comments_097333.json:
 Hello !
 
 > There is one technical question you can however answer. Do we need the binary file "cl" so it can be executed from the command line, or is the library libcliquer.so sufficient?
+
 
 No, the cl file is not used, and this is precisely what the Sage code included in cliquer is useful for : directly calling the library's functions with a Graph object using the Graph structure it expects to find, without having to create an ugly temporary file to call the executable on it `:-)`
 
@@ -304,7 +305,7 @@ archive/issue_events_024863.json:
 archive/issue_comments_097341.json:
 ```json
 {
-    "body": "Don't know why trac was not able to merge the branch as I encountered no conflicts when merging it.\n\nI've made a few changes to make the script more like the \"new\" scripts as described in the dev guide, you may not be happy with them and are very welcome to change them back.\nOtherwise let's positively review this ticket.\n\nAnyway, I'm going to autotoolify cliquer, post it in a follow-up ticket and suggest it upstream.\nThe Makefile is just too awful right now.\n----\nNew commits:",
+    "body": "Don't know why trac was not able to merge the branch as I encountered no conflicts when merging it.\n\nI've made a few changes to make the script more like the \"new\" scripts as described in the dev guide, you may not be happy with them and are very welcome to change them back.\nOtherwise let's positively review this ticket.\n\nAnyway, I'm going to autotoolify cliquer, post it in a follow-up ticket and suggest it upstream.\nThe Makefile is just too awful right now.\n\n---\nNew commits:",
     "created_at": "2014-02-20T16:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
@@ -320,7 +321,8 @@ Otherwise let's positively review this ticket.
 
 Anyway, I'm going to autotoolify cliquer, post it in a follow-up ticket and suggest it upstream.
 The Makefile is just too awful right now.
-----
+
+---
 New commits:
 
 

@@ -3,7 +3,7 @@
 archive/issues_007085.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mhampton\n\n\n```\n> Ok, I am completely baffled by the following situation:\n>\n> sage: A.<z>=LaurentSeriesRing(QQ)\n> sage: B.<w>=LaurentSeriesRing(A)\n> sage: z/w\n>  1\n> Maybe you will agree this is a bug?\n\nThat's definitely a coercion bug.   You can workaround it like this:\n\n\nsage: sage: A.<z>=LaurentSeriesRing(QQ)\nsage: sage: B.<w>=LaurentSeriesRing(A)\nsage: z/w\n1\nsage: (1/w) * z\nz*w^-1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7085\n\n",
+    "body": "Assignee: somebody\n\nCC:  mhampton\n\n```\n> Ok, I am completely baffled by the following situation:\n>\n> sage: A.<z>=LaurentSeriesRing(QQ)\n> sage: B.<w>=LaurentSeriesRing(A)\n> sage: z/w\n>  1\n> Maybe you will agree this is a bug?\n\nThat's definitely a coercion bug.   You can workaround it like this:\n\n\nsage: sage: A.<z>=LaurentSeriesRing(QQ)\nsage: sage: B.<w>=LaurentSeriesRing(A)\nsage: z/w\n1\nsage: (1/w) * z\nz*w^-1\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7085\n\n",
     "created_at": "2009-09-30T23:10:18Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_007085.json:
 Assignee: somebody
 
 CC:  mhampton
-
 
 ```
 > Ok, I am completely baffled by the following situation:
@@ -41,7 +40,6 @@ sage: (1/w) * z
 z*w^-1
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7085
 
 
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7085
 archive/issue_comments_058449.json:
 ```json
 {
-    "body": "Before any division takes place, z is getting incorrectly coerced to w.  I think this is because in laurent_series_ring_element.pyx, in the LaurentSeries class __init__ method the represention (variable)^n*f is shifted by the code:\n\n```\n        else:\n            val = f.valuation()\n            if val == 0:\n                self.__n = n    # power of the variable\n                self.__u = f    # unit part\n            else:\n                self.__n = n + val\n                self.__u = f >> val\n```\n\n\nand I think that shifting is missing that different variables are involved.",
+    "body": "Before any division takes place, z is getting incorrectly coerced to w.  I think this is because in laurent_series_ring_element.pyx, in the LaurentSeries class __init__ method the represention (variable)^n*f is shifted by the code:\n\n```\n        else:\n            val = f.valuation()\n            if val == 0:\n                self.__n = n    # power of the variable\n                self.__u = f    # unit part\n            else:\n                self.__n = n + val\n                self.__u = f >> val\n```\n\nand I think that shifting is missing that different variables are involved.",
     "created_at": "2011-01-11T01:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
@@ -75,7 +73,6 @@ Before any division takes place, z is getting incorrectly coerced to w.  I think
                 self.__u = f >> val
 ```
 
-
 and I think that shifting is missing that different variables are involved.
 
 
@@ -85,7 +82,7 @@ and I think that shifting is missing that different variables are involved.
 archive/issue_comments_058450.json:
 ```json
 {
-    "body": "Now I'm not sure the above code is the critical place, but this shows that its a coercion rather than a division issue:\n\n```\nsage: A.<z>=LaurentSeriesRing(QQ)\nsage: B.<w>=LaurentSeriesRing(A)\nsage: B(z)\nw\n```\n",
+    "body": "Now I'm not sure the above code is the critical place, but this shows that its a coercion rather than a division issue:\n\n```\nsage: A.<z>=LaurentSeriesRing(QQ)\nsage: B.<w>=LaurentSeriesRing(A)\nsage: B(z)\nw\n```",
     "created_at": "2011-01-11T02:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
@@ -102,7 +99,6 @@ sage: B.<w>=LaurentSeriesRing(A)
 sage: B(z)
 w
 ```
-
 
 
 
@@ -384,7 +380,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_058463.json:
 ```json
 {
-    "body": "Very trivial change of removing a double colon `::`. LGTM otherwise.\n----\nNew commits:",
+    "body": "Very trivial change of removing a double colon `::`. LGTM otherwise.\n\n---\nNew commits:",
     "created_at": "2014-05-05T20:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
@@ -394,7 +390,8 @@ archive/issue_comments_058463.json:
 ```
 
 Very trivial change of removing a double colon `::`. LGTM otherwise.
-----
+
+---
 New commits:
 
 

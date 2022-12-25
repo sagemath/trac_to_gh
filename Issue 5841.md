@@ -109,7 +109,7 @@ If we've released for 2 months without fixing this, it doesn't make sense to kee
 archive/issue_comments_045838.json:
 ```json
 {
-    "body": "As far as I can tell, this is all no longer true.\n\n```\n./sage -t devel/sage/sage/interfaces/lisp.py\nsage -t  \"devel/sage/sage/interfaces/lisp.py\"               \n\t [5.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.7 seconds\n```\n\nRandom tests that seem to be working fine:\n\n```\nsage:  lisp._equality_symbol()\n---------------------------------------------------------------------------\n<snip>\nNotImplementedError: We should never reach here in the Lisp interface. Please report this as a bug.\nsage: lisp.function_call('sin', ['2'])\n0.90929741\nsage: lisp.sin(2)\n0.90929741\n```\n\nI figure this should be closed...",
+    "body": "As far as I can tell, this is all no longer true.\n\n```\n./sage -t devel/sage/sage/interfaces/lisp.py\nsage -t  \"devel/sage/sage/interfaces/lisp.py\"               \n\t [5.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.7 seconds\n```\nRandom tests that seem to be working fine:\n\n```\nsage:  lisp._equality_symbol()\n---------------------------------------------------------------------------\n<snip>\nNotImplementedError: We should never reach here in the Lisp interface. Please report this as a bug.\nsage: lisp.function_call('sin', ['2'])\n0.90929741\nsage: lisp.sin(2)\n0.90929741\n```\nI figure this should be closed...",
     "created_at": "2010-05-26T21:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
@@ -129,7 +129,6 @@ sage -t  "devel/sage/sage/interfaces/lisp.py"
 All tests passed!
 Total time for all tests: 5.7 seconds
 ```
-
 Random tests that seem to be working fine:
 
 ```
@@ -142,7 +141,6 @@ sage: lisp.function_call('sin', ['2'])
 sage: lisp.sin(2)
 0.90929741
 ```
-
 I figure this should be closed...
 
 

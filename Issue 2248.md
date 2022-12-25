@@ -3,7 +3,7 @@
 archive/issues_002248.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n**********************************************************************\nFile \"multi_polynomial.pyx\", line 256:\n    sage: R(S.0)\nExpected:\n    BROKEN -- FIX ME\nGot:\n    p\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2248\n\n",
+    "body": "Assignee: failure\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n**********************************************************************\nFile \"multi_polynomial.pyx\", line 256:\n    sage: R(S.0)\nExpected:\n    BROKEN -- FIX ME\nGot:\n    p\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2248\n\n",
     "created_at": "2008-02-21T19:01:42Z",
     "labels": [
         "component: doctest coverage",
@@ -19,7 +19,6 @@ archive/issues_002248.json:
 ```
 Assignee: failure
 
-
 ```
 sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx
 **********************************************************************
@@ -31,7 +30,6 @@ Got:
     p
 **********************************************************************
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2248
 

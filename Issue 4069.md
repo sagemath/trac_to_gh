@@ -174,7 +174,7 @@ Michael
 archive/issue_comments_029308.json:
 ```json
 {
-    "body": "Now that #3950 is in this one can go in, but we need a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4069_shortcut_sage.patch \npatching file sage/server/notebook/notebook.py\nHunk #2 FAILED at 1319.\nHunk #3 succeeded at 1324 (offset -44 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\n```\n\nOnce it is rebased it will go in.\n\nCheers,\n\nMichael",
+    "body": "Now that #3950 is in this one can go in, but we need a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4069_shortcut_sage.patch \npatching file sage/server/notebook/notebook.py\nHunk #2 FAILED at 1319.\nHunk #3 succeeded at 1324 (offset -44 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej\n```\nOnce it is rebased it will go in.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-07T11:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4069",
     "type": "issue_comment",
@@ -192,7 +192,6 @@ Hunk #2 FAILED at 1319.
 Hunk #3 succeeded at 1324 (offset -44 lines).
 1 out of 3 hunks FAILED -- saving rejects to file sage/server/notebook/notebook.py.rej
 ```
-
 Once it is rebased it will go in.
 
 Cheers,

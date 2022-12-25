@@ -3,7 +3,7 @@
 archive/issues_007199.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following was reported to me by David Monniaux.\n\n```\nsparseflag=True\n\ndef essai1():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=m\n    for i in xrange(count):\n        compound = compound.stack(m)\n\ndef essai2():\n    m_rows=identity_matrix(QQ,dimen,sparse=sparseflag).rows()\n    compound_l=[]\n    for i in xrange(count):\n        compound_l += m_rows\n    m=Matrix(QQ,compound_l,sparse=sparseflag)\n\ndef essai3():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=Matrix(QQ,m.nrows()*count,m.ncols(),sparse=sparseflag)\n    for i in xrange(count):\n        compound[m.nrows()*i:m.nrows()*(i+1),:] = m\n```\n\nI get with Sage 4.1.1 on a 2.83Ghz Core 2:\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()',number=1)\n1 loops, best of 3: 33.1 s per loop\nsage: timeit('essai2()',number=1)\n1 loops, best of 3: 25.4 s per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 820 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7199\n\n",
+    "body": "Assignee: @williamstein\n\nThe following was reported to me by David Monniaux.\n\n```\nsparseflag=True\n\ndef essai1():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=m\n    for i in xrange(count):\n        compound = compound.stack(m)\n\ndef essai2():\n    m_rows=identity_matrix(QQ,dimen,sparse=sparseflag).rows()\n    compound_l=[]\n    for i in xrange(count):\n        compound_l += m_rows\n    m=Matrix(QQ,compound_l,sparse=sparseflag)\n\ndef essai3():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=Matrix(QQ,m.nrows()*count,m.ncols(),sparse=sparseflag)\n    for i in xrange(count):\n        compound[m.nrows()*i:m.nrows()*(i+1),:] = m\n```\nI get with Sage 4.1.1 on a 2.83Ghz Core 2:\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()',number=1)\n1 loops, best of 3: 33.1 s per loop\nsage: timeit('essai2()',number=1)\n1 loops, best of 3: 25.4 s per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 820 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7199\n\n",
     "created_at": "2009-10-13T13:32:12Z",
     "labels": [
         "component: linear algebra"
@@ -41,7 +41,6 @@ def essai3():
     for i in xrange(count):
         compound[m.nrows()*i:m.nrows()*(i+1),:] = m
 ```
-
 I get with Sage 4.1.1 on a 2.83Ghz Core 2:
 
 ```
@@ -55,7 +54,6 @@ sage: timeit('essai3()')
 5 loops, best of 3: 820 ms per loop
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7199
 
 
@@ -67,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7199
 archive/issue_comments_059621.json:
 ```json
 {
-    "body": "Another example (still from David Monniaux):\n\n```\nsage: count2=1000\nsage: sparseflag=True\nsage: def vessai1():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, [v for i in xrange(count2)], sparse=sparseflag)\n....: \nsage: def vessai2():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, count2, dimen, sparse=sparseflag)\n....:     for i in xrange(count2):\n....:             compound[i,:] = v\nsage: dimen=30\nsage: timeit('vessai1()')\n5 loops, best of 3: 168 ms per loop\nsage: timeit('vessai2()')\n25 loops, best of 3: 14.8 ms per loop\n```\n",
+    "body": "Another example (still from David Monniaux):\n\n```\nsage: count2=1000\nsage: sparseflag=True\nsage: def vessai1():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, [v for i in xrange(count2)], sparse=sparseflag)\n....: \nsage: def vessai2():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, count2, dimen, sparse=sparseflag)\n....:     for i in xrange(count2):\n....:             compound[i,:] = v\nsage: dimen=30\nsage: timeit('vessai1()')\n5 loops, best of 3: 168 ms per loop\nsage: timeit('vessai2()')\n25 loops, best of 3: 14.8 ms per loop\n```",
     "created_at": "2009-10-13T17:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
@@ -98,7 +96,6 @@ sage: timeit('vessai1()')
 sage: timeit('vessai2()')
 25 loops, best of 3: 14.8 ms per loop
 ```
-
 
 
 
@@ -215,7 +212,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059628.json:
 ```json
 {
-    "body": "Replying to [comment:4 ylchapuy]:\n> With the provided patch, `essai1` becomes faster than `essai3`.\n\nI confirm, with Sage 4.4.4, still on a 2.83Ghz Core 2 (note however the regression in the timing for `essai3` between 4.1.1 and 4.4.4, which is independent from this patch):\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()')\n5 loops, best of 3: 431 ms per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 1.18 s per loop\n```\n\n\nGood work,Yann!\n\nPaul",
+    "body": "Replying to [comment:4 ylchapuy]:\n> With the provided patch, `essai1` becomes faster than `essai3`.\n\n\nI confirm, with Sage 4.4.4, still on a 2.83Ghz Core 2 (note however the regression in the timing for `essai3` between 4.1.1 and 4.4.4, which is independent from this patch):\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()')\n5 loops, best of 3: 431 ms per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 1.18 s per loop\n```\n\nGood work,Yann!\n\nPaul",
     "created_at": "2010-09-01T20:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
@@ -227,6 +224,7 @@ archive/issue_comments_059628.json:
 Replying to [comment:4 ylchapuy]:
 > With the provided patch, `essai1` becomes faster than `essai3`.
 
+
 I confirm, with Sage 4.4.4, still on a 2.83Ghz Core 2 (note however the regression in the timing for `essai3` between 4.1.1 and 4.4.4, which is independent from this patch):
 
 ```
@@ -237,7 +235,6 @@ sage: timeit('essai1()')
 sage: timeit('essai3()')
 5 loops, best of 3: 1.18 s per loop
 ```
-
 
 Good work,Yann!
 

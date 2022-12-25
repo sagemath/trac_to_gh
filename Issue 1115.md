@@ -3,7 +3,7 @@
 archive/issues_001115.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
+    "body": "Assignee: @williamstein\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
     "created_at": "2007-11-06T21:54:49Z",
     "labels": [
         "component: number theory",
@@ -34,7 +34,6 @@ sage: sha.an_numerical(200)
 sage: sha.an_numerical(300)
 0.999999999999998
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1115
 
@@ -186,7 +185,7 @@ archive/issue_comments_006714.json:
 archive/issue_comments_006715.json:
 ```json
 {
-    "body": "I'm in the process of looking at this.  Here are two things:\n\n1. I get a doctest failure in ell_point.py.  Not sure what's going on, but it's basically the following:\n\n```\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);\nsage: g = e.gens()                                                             \nsage: dumps(e);\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/<ipython console> in <module>()\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/sage_object.pyx in sage.structure.sage_object.dumps (sage/structure/sage_object.c:5132)()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\nSo somehow the new gens or regulator code breaks dumps(e).\n\n\n2. a few minor typos:\n- line 657 of ell_point.py: \"precision of None\" should be \"precision if None\"\n- line 1473 of ell_rational_field.py: \"int or Noene\" should be \"int or None\"\n- line 1588 of ell_rational_field.py: \"number of bit\" should be \"number of bits\"\n\nEverything else seems to work as advertised.",
+    "body": "I'm in the process of looking at this.  Here are two things:\n\n1. I get a doctest failure in ell_point.py.  Not sure what's going on, but it's basically the following:\n\n```\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);\nsage: g = e.gens()                                                             \nsage: dumps(e);\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/<ipython console> in <module>()\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/sage_object.pyx in sage.structure.sage_object.dumps (sage/structure/sage_object.c:5132)()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\nSo somehow the new gens or regulator code breaks dumps(e).\n\n\n2. a few minor typos:\n- line 657 of ell_point.py: \"precision of None\" should be \"precision if None\"\n- line 1473 of ell_rational_field.py: \"int or Noene\" should be \"int or None\"\n- line 1588 of ell_rational_field.py: \"number of bit\" should be \"number of bits\"\n\nEverything else seems to work as advertised.",
     "created_at": "2008-09-02T09:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -214,7 +213,6 @@ RuntimeError                              Traceback (most recent call last)
 RuntimeError: maximum recursion depth exceeded
 ```
 
-
 So somehow the new gens or regulator code breaks dumps(e).
 
 
@@ -232,7 +230,7 @@ Everything else seems to work as advertised.
 archive/issue_comments_006716.json:
 ```json
 {
-    "body": "Thanks -- I can easily fix the typos of course.  But I have no idea about the dumps() problem -- I don't think I have ever called the dumps function and I have no idea what it does.  Can you enlighten me a bit?\n\nThis works for me:\n\n```\njohn@ubuntu%./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: sha\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);                        \nsage: g = e.gens()                    \nsage: dumps(e);   \nsage: e == loads(dumps(e))\nTrue\n```\n",
+    "body": "Thanks -- I can easily fix the typos of course.  But I have no idea about the dumps() problem -- I don't think I have ever called the dumps function and I have no idea what it does.  Can you enlighten me a bit?\n\nThis works for me:\n\n```\njohn@ubuntu%./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: sha\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);                        \nsage: g = e.gens()                    \nsage: dumps(e);   \nsage: e == loads(dumps(e))\nTrue\n```",
     "created_at": "2008-09-02T09:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -257,7 +255,6 @@ sage: dumps(e);
 sage: e == loads(dumps(e))
 True
 ```
-
 
 
 
@@ -374,7 +371,7 @@ Credit goes of course to John Cremona.
 archive/issue_comments_006722.json:
 ```json
 {
-    "body": "Replying to [comment:11 AlexGhitza]:\n> There is nontrivial intersection with the patch at #3377, and trying to keep the two separate seems not fun.  Since #3377 has a positive review and will therefore be merged soon, I am posting a new patch here that depends on #3377.\n> \n> So: apply the patch 1115-sha_prec.patch instead of the others, and after merging #3377.\n> \n> Credit goes of course to John Cremona.\n\n -- including the credit for introducing the infinite recursion!\n\nThanks, Alex, for your work tracking this down.  I think that in the end it was not a 32/64-bit thing at all, but rather that my 32-bit system had the optional database which *does* include the gens for database curves, while the 64-bit test I did was with a Sage which did not have the large database and hence had no gens.\n\nI will need to change Alex's fix though:  it has the effect that even when the large database is installed so the database curve's gens are known, they are not used!  The trick will be to test if the database curve's field `__gens` is set and extract the gens from there directly instead of calling the gens() function again.\n\nI'll do this and test it after sorting out #3377.",
+    "body": "Replying to [comment:11 AlexGhitza]:\n> There is nontrivial intersection with the patch at #3377, and trying to keep the two separate seems not fun.  Since #3377 has a positive review and will therefore be merged soon, I am posting a new patch here that depends on #3377.\n> \n> So: apply the patch 1115-sha_prec.patch instead of the others, and after merging #3377.\n> \n> Credit goes of course to John Cremona.\n\n\n -- including the credit for introducing the infinite recursion!\n\nThanks, Alex, for your work tracking this down.  I think that in the end it was not a 32/64-bit thing at all, but rather that my 32-bit system had the optional database which *does* include the gens for database curves, while the 64-bit test I did was with a Sage which did not have the large database and hence had no gens.\n\nI will need to change Alex's fix though:  it has the effect that even when the large database is installed so the database curve's gens are known, they are not used!  The trick will be to test if the database curve's field `__gens` is set and extract the gens from there directly instead of calling the gens() function again.\n\nI'll do this and test it after sorting out #3377.",
     "created_at": "2008-09-03T08:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
@@ -389,6 +386,7 @@ Replying to [comment:11 AlexGhitza]:
 > So: apply the patch 1115-sha_prec.patch instead of the others, and after merging #3377.
 > 
 > Credit goes of course to John Cremona.
+
 
  -- including the credit for introducing the infinite recursion!
 

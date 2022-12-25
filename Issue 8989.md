@@ -203,7 +203,7 @@ Let me know what you think. After we decide on what to do I'd be happy to review
 archive/issue_comments_082951.json:
 ```json
 {
-    "body": "I switch to numbers for easier referencing:\n\n1) I agree that delta/nabla work better in ASCII, but I am also going to add support for complete intersections where it is customary to use delta/nabla pair to denote polytopes dual in the nef-partition sense. While these polytopes will not be accessible at the level of toric variety (but only at the level of appropriate subschemes), I would prefer to avoid using nabla here as well and stick with `\\Delta^\\circ`.\n\n2) Since I don't want to use nabla, I'd rather have delta to denote the polytope whose face fan we are subdividing. Since in general this polytope and its parts have more clear relation to the variety than its polar, I would prefer to use it as \"the main one\". This is not particularly customary but is quite natural when working with reflexive polytopes and that's what this module is about. As an example of similar notation in use I can give Nill's paper referenced in the module: arXiv:math/0405448v1 (both polytopes and fans live in the M lattice). Another reference is arXiv:0907.2701v1 [math.CO], but it does not help me to justify my taste ;-) I think I had plans to allow the user to switch from one style to another, but I don't see any clean way to do it, so probably it was not a very bright idea.\n\n3) Despite my opposition to other changes, I would like to replace `delta` with `Delta`. I was avoiding using capitalized methods in general, but it does make sense here and I agree that for Kaehler/Mori methods capital is better.\n\n4) `coordinate_indices` - will change and add tests.\n\n5) I see your point against `point_to_variable`, but `nabla_to_variable` seems to be even more confusing to me... How about just `coordinate`?\n\n\n```\nsage: X = toric variety\nsage: X.coordinate(9)\nz5\nsage: X.coordinate((1,-1,1))\nz5\n```\n\nWe can even expand it to\n\n```\nsage: X.coordinate(\"z5\")\nz5\nsage: X.inject_variables()\nsage: X.coordinate(z5)\nz5\n```\n\ni.e. this method will try to convert any input to the appropriate generator of the coordinate ring. The only subtle point will be that \"plain numbers\" will refer to points of Delta rather than generators of the ring, but that's what one usually wants and there is `X.gen(n)` method for those who want exactly the n-th variable.",
+    "body": "I switch to numbers for easier referencing:\n\n1) I agree that delta/nabla work better in ASCII, but I am also going to add support for complete intersections where it is customary to use delta/nabla pair to denote polytopes dual in the nef-partition sense. While these polytopes will not be accessible at the level of toric variety (but only at the level of appropriate subschemes), I would prefer to avoid using nabla here as well and stick with `\\Delta^\\circ`.\n\n2) Since I don't want to use nabla, I'd rather have delta to denote the polytope whose face fan we are subdividing. Since in general this polytope and its parts have more clear relation to the variety than its polar, I would prefer to use it as \"the main one\". This is not particularly customary but is quite natural when working with reflexive polytopes and that's what this module is about. As an example of similar notation in use I can give Nill's paper referenced in the module: arXiv:math/0405448v1 (both polytopes and fans live in the M lattice). Another reference is arXiv:0907.2701v1 [math.CO], but it does not help me to justify my taste ;-) I think I had plans to allow the user to switch from one style to another, but I don't see any clean way to do it, so probably it was not a very bright idea.\n\n3) Despite my opposition to other changes, I would like to replace `delta` with `Delta`. I was avoiding using capitalized methods in general, but it does make sense here and I agree that for Kaehler/Mori methods capital is better.\n\n4) `coordinate_indices` - will change and add tests.\n\n5) I see your point against `point_to_variable`, but `nabla_to_variable` seems to be even more confusing to me... How about just `coordinate`?\n\n```\nsage: X = toric variety\nsage: X.coordinate(9)\nz5\nsage: X.coordinate((1,-1,1))\nz5\n```\nWe can even expand it to\n\n```\nsage: X.coordinate(\"z5\")\nz5\nsage: X.inject_variables()\nsage: X.coordinate(z5)\nz5\n```\ni.e. this method will try to convert any input to the appropriate generator of the coordinate ring. The only subtle point will be that \"plain numbers\" will refer to points of Delta rather than generators of the ring, but that's what one usually wants and there is `X.gen(n)` method for those who want exactly the n-th variable.",
     "created_at": "2010-06-29T15:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -224,7 +224,6 @@ I switch to numbers for easier referencing:
 
 5) I see your point against `point_to_variable`, but `nabla_to_variable` seems to be even more confusing to me... How about just `coordinate`?
 
-
 ```
 sage: X = toric variety
 sage: X.coordinate(9)
@@ -232,7 +231,6 @@ z5
 sage: X.coordinate((1,-1,1))
 z5
 ```
-
 We can even expand it to
 
 ```
@@ -242,7 +240,6 @@ sage: X.inject_variables()
 sage: X.coordinate(z5)
 z5
 ```
-
 i.e. this method will try to convert any input to the appropriate generator of the coordinate ring. The only subtle point will be that "plain numbers" will refer to points of Delta rather than generators of the ring, but that's what one usually wants and there is `X.gen(n)` method for those who want exactly the n-th variable.
 
 
@@ -292,7 +289,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082954.json:
 ```json
 {
-    "body": "1-3) I am actually having second thoughts about all these names. I think this is basically the same issue as with `cone.N` vs. `cone.spanned_lattice` and to avoid imposing names on users and things like `Y = CPRFanoToricVariety(delta=X.nabla())` we should use some \"neutral but descriptive names\" and then indicate how it is related to the standard notation in documentation.\n\nIn this particular case I would prefer to replace `delta` with `polytope` everywhere in the code. Then one can write:\n\n```\nsage: Delta = some polytope\nsage: nabla = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(nabla)\nsage: X.polytope() is Delta\nTrue\nsage: Y.polytope() is nabla\nTrue\n```\n\nor, if one prefers other names, something like\n\n```\nsage: Delta = some polytope\nsage: Delta_circ = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(Delta_circ)\nsage: X.polytope() is Delta\nTrue\nsage: Y.polytope() is Delta_circ\nTrue\n```\n\nMoreover, it now will be possible to have some global switch to make `X` above correspond to the normal fan of `Delta`, rather than face one:\n\n```\nsage: Delta = some polytope\nsage: nabla = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(nabla)\nsage: X.polytope() is Delta.polar()\nTrue\nsage: Y.polytope() is nabla.polar()\nTrue\n```\n\n\nPersonally, I like Nill's paper, as well as his notation, and I certainly saw some other ones with notation different from Delta in M/nabla in N. I think our goal for Sage is to make as flexible and consistent package as possible, suitable both for beginners and \"advancers\". So I do agree that we should not enforce Nill's notation, but I also think that we should not hard-code any other (even though I have done it so far in this patch). Notation is always just notation, we should operate with more conceptual things...\n\n5) Agreed. Assuming `delta` is renamed to `polytope`, I would then prefer `polytope_point_to_coordinate` taking either an index or an actual point as an argument. Long, but should be quite clear.",
+    "body": "1-3) I am actually having second thoughts about all these names. I think this is basically the same issue as with `cone.N` vs. `cone.spanned_lattice` and to avoid imposing names on users and things like `Y = CPRFanoToricVariety(delta=X.nabla())` we should use some \"neutral but descriptive names\" and then indicate how it is related to the standard notation in documentation.\n\nIn this particular case I would prefer to replace `delta` with `polytope` everywhere in the code. Then one can write:\n\n```\nsage: Delta = some polytope\nsage: nabla = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(nabla)\nsage: X.polytope() is Delta\nTrue\nsage: Y.polytope() is nabla\nTrue\n```\nor, if one prefers other names, something like\n\n```\nsage: Delta = some polytope\nsage: Delta_circ = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(Delta_circ)\nsage: X.polytope() is Delta\nTrue\nsage: Y.polytope() is Delta_circ\nTrue\n```\nMoreover, it now will be possible to have some global switch to make `X` above correspond to the normal fan of `Delta`, rather than face one:\n\n```\nsage: Delta = some polytope\nsage: nabla = Delta.polar()\nsage: X = CPRFanoToricVariety(Delta)\nsage: Y = CPRFanoToricVariety(nabla)\nsage: X.polytope() is Delta.polar()\nTrue\nsage: Y.polytope() is nabla.polar()\nTrue\n```\n\nPersonally, I like Nill's paper, as well as his notation, and I certainly saw some other ones with notation different from Delta in M/nabla in N. I think our goal for Sage is to make as flexible and consistent package as possible, suitable both for beginners and \"advancers\". So I do agree that we should not enforce Nill's notation, but I also think that we should not hard-code any other (even though I have done it so far in this patch). Notation is always just notation, we should operate with more conceptual things...\n\n5) Agreed. Assuming `delta` is renamed to `polytope`, I would then prefer `polytope_point_to_coordinate` taking either an index or an actual point as an argument. Long, but should be quite clear.",
     "created_at": "2010-06-29T17:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -315,7 +312,6 @@ True
 sage: Y.polytope() is nabla
 True
 ```
-
 or, if one prefers other names, something like
 
 ```
@@ -328,7 +324,6 @@ True
 sage: Y.polytope() is Delta_circ
 True
 ```
-
 Moreover, it now will be possible to have some global switch to make `X` above correspond to the normal fan of `Delta`, rather than face one:
 
 ```
@@ -341,7 +336,6 @@ True
 sage: Y.polytope() is nabla.polar()
 True
 ```
-
 
 Personally, I like Nill's paper, as well as his notation, and I certainly saw some other ones with notation different from Delta in M/nabla in N. I think our goal for Sage is to make as flexible and consistent package as possible, suitable both for beginners and "advancers". So I do agree that we should not enforce Nill's notation, but I also think that we should not hard-code any other (even though I have done it so far in this patch). Notation is always just notation, we should operate with more conceptual things...
 
@@ -400,7 +394,7 @@ The polytope whose face fan is used has the advantage of being uniquely determin
 archive/issue_comments_082957.json:
 ```json
 {
-    "body": "That was precisely my point: Since you have a `CPRFanoToricVariety_field` object in front of you when calling any method, you cannot freely exchange polyhedron and dual polyhedron any more. There is no confusion in `my_toric_variety.nabla()`.\n\nI agree that comparisons with other variables might be confusing, but the problem is that the other variable is confusingly-named. I can always write `not_X = X; X == not_X` and will get `True`. But that is not `X`'s fault, nor can `X` do anything to prevent it. As soon as the user refrains from creating local variables named `nabla` or `delta` everything is fine. Mirror symmetry becomes\n\n```\nX.nabla() == Y.delta()\n```\n\n\nFurthermore:\n* `fan_polytope` still does not distinguish face/normal fan\n* `spanned_polytope` is spanned by what, the rays or the monomials?\n* `face_polytope` don't like it either ;-)\nIts hard to say \"the polytope whose face-fan is the fan of the toric variety\" in a python identifier without agreeing on some sort of code.",
+    "body": "That was precisely my point: Since you have a `CPRFanoToricVariety_field` object in front of you when calling any method, you cannot freely exchange polyhedron and dual polyhedron any more. There is no confusion in `my_toric_variety.nabla()`.\n\nI agree that comparisons with other variables might be confusing, but the problem is that the other variable is confusingly-named. I can always write `not_X = X; X == not_X` and will get `True`. But that is not `X`'s fault, nor can `X` do anything to prevent it. As soon as the user refrains from creating local variables named `nabla` or `delta` everything is fine. Mirror symmetry becomes\n\n```\nX.nabla() == Y.delta()\n```\n\nFurthermore:\n* `fan_polytope` still does not distinguish face/normal fan\n* `spanned_polytope` is spanned by what, the rays or the monomials?\n* `face_polytope` don't like it either ;-)\nIts hard to say \"the polytope whose face-fan is the fan of the toric variety\" in a python identifier without agreeing on some sort of code.",
     "created_at": "2010-06-29T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -417,7 +411,6 @@ I agree that comparisons with other variables might be confusing, but the proble
 X.nabla() == Y.delta()
 ```
 
-
 Furthermore:
 * `fan_polytope` still does not distinguish face/normal fan
 * `spanned_polytope` is spanned by what, the rays or the monomials?
@@ -431,7 +424,7 @@ Its hard to say "the polytope whose face-fan is the fan of the toric variety" in
 archive/issue_comments_082958.json:
 ```json
 {
-    "body": "Well, I guess I mostly agree, I probably went over the top in my struggle for the best and cleanest names ever ;-) So while I think that it is quite likely to have `nabla` and `delta` as local variables, it does make sense to use them for methods.\n\nHowever, I am still against assigning different names to polar polytopes. In the notation for nef-partitions that you have cited, `delta` and `nabla` are not polar, in fact, they are not dual in any sense by themselves, but their decompositions are dual and their polars are expressed as convex hulls of Minkowski summands. I envision for complete intersections methods like\n\n```\nsage: CI.Delta()\nsage: CI.Delta(i)\nsage: CI.nabla()\nsage: CI.nabla(j)\n```\n\nand while these are different objects from toric varieties, I would like same-named methods to return the same things.\n\nSo if you really don't want `Delta` to denote the polytope whose face fan is used for the toric variety, I propose `X.Delta()` to return the polytope whose normal fan is used. Indices of points used for coordinates will refer to `X.Delta().polar()`. If you would like to have a \"direct\" access to this polytope from `X`, then I think the method should be called `X.Delta_polar()`. While its implementation will be trivial, it is probably good to have it, since it will allow us to put appropriate documentation there related to toric varieties, rather than just taking polar polytopes. That gives us also `Delta_polar_point_to_coordinate` which is a bit lengthy, but I don't mind it and you think that it will not be used very often, so it should not be a problem.\n\nDoes it sound like a good compromise?",
+    "body": "Well, I guess I mostly agree, I probably went over the top in my struggle for the best and cleanest names ever ;-) So while I think that it is quite likely to have `nabla` and `delta` as local variables, it does make sense to use them for methods.\n\nHowever, I am still against assigning different names to polar polytopes. In the notation for nef-partitions that you have cited, `delta` and `nabla` are not polar, in fact, they are not dual in any sense by themselves, but their decompositions are dual and their polars are expressed as convex hulls of Minkowski summands. I envision for complete intersections methods like\n\n```\nsage: CI.Delta()\nsage: CI.Delta(i)\nsage: CI.nabla()\nsage: CI.nabla(j)\n```\nand while these are different objects from toric varieties, I would like same-named methods to return the same things.\n\nSo if you really don't want `Delta` to denote the polytope whose face fan is used for the toric variety, I propose `X.Delta()` to return the polytope whose normal fan is used. Indices of points used for coordinates will refer to `X.Delta().polar()`. If you would like to have a \"direct\" access to this polytope from `X`, then I think the method should be called `X.Delta_polar()`. While its implementation will be trivial, it is probably good to have it, since it will allow us to put appropriate documentation there related to toric varieties, rather than just taking polar polytopes. That gives us also `Delta_polar_point_to_coordinate` which is a bit lengthy, but I don't mind it and you think that it will not be used very often, so it should not be a problem.\n\nDoes it sound like a good compromise?",
     "created_at": "2010-06-29T21:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -450,7 +443,6 @@ sage: CI.Delta(i)
 sage: CI.nabla()
 sage: CI.nabla(j)
 ```
-
 and while these are different objects from toric varieties, I would like same-named methods to return the same things.
 
 So if you really don't want `Delta` to denote the polytope whose face fan is used for the toric variety, I propose `X.Delta()` to return the polytope whose normal fan is used. Indices of points used for coordinates will refer to `X.Delta().polar()`. If you would like to have a "direct" access to this polytope from `X`, then I think the method should be called `X.Delta_polar()`. While its implementation will be trivial, it is probably good to have it, since it will allow us to put appropriate documentation there related to toric varieties, rather than just taking polar polytopes. That gives us also `Delta_polar_point_to_coordinate` which is a bit lengthy, but I don't mind it and you think that it will not be used very often, so it should not be a problem.
@@ -464,7 +456,7 @@ Does it sound like a good compromise?
 archive/issue_comments_082959.json:
 ```json
 {
-    "body": "So just to get this straight, there will be a `CompleteIntersection` class (to be implemented in the future) analogous to the already-implemented `AnticanonicalHypersurface`. Only `CompleteIntersection` will know about the nef partition, but not the ambient `CPRFanoToricVariety_field`.\n\nThen, there will be methods (perhaps with `_star` instead of `_polar`)\n\n```\nCI.Delta(i), i=1..r\nCI.nabla(i), i=1..r\nCI.Delta() = convex hull( CI.Delta(i) )\nCI.Delta_polar() = Minkowski sum( CI.nabla(i) )\nCI.nabla() = convex hull( CI.nabla(i) )\nCI.nabla_polar(j) = Minkowski sum( CI.Delta(i) )\n```\n\nfor the usual polytopology of nef partitions. The only relations to the polytopes of the ambient toric variety are\n\n```\ncpr_fano.Delta() == CI.Delta()\ncpr_fano.Delta_polar() == CI.Delta_polar()\n```\n\n\nThat would be fine with me. A `Delta_polar_to_coordinate` method is ok, too.",
+    "body": "So just to get this straight, there will be a `CompleteIntersection` class (to be implemented in the future) analogous to the already-implemented `AnticanonicalHypersurface`. Only `CompleteIntersection` will know about the nef partition, but not the ambient `CPRFanoToricVariety_field`.\n\nThen, there will be methods (perhaps with `_star` instead of `_polar`)\n\n```\nCI.Delta(i), i=1..r\nCI.nabla(i), i=1..r\nCI.Delta() = convex hull( CI.Delta(i) )\nCI.Delta_polar() = Minkowski sum( CI.nabla(i) )\nCI.nabla() = convex hull( CI.nabla(i) )\nCI.nabla_polar(j) = Minkowski sum( CI.Delta(i) )\n```\nfor the usual polytopology of nef partitions. The only relations to the polytopes of the ambient toric variety are\n\n```\ncpr_fano.Delta() == CI.Delta()\ncpr_fano.Delta_polar() == CI.Delta_polar()\n```\n\nThat would be fine with me. A `Delta_polar_to_coordinate` method is ok, too.",
     "created_at": "2010-06-30T17:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -485,14 +477,12 @@ CI.Delta_polar() = Minkowski sum( CI.nabla(i) )
 CI.nabla() = convex hull( CI.nabla(i) )
 CI.nabla_polar(j) = Minkowski sum( CI.Delta(i) )
 ```
-
 for the usual polytopology of nef partitions. The only relations to the polytopes of the ambient toric variety are
 
 ```
 cpr_fano.Delta() == CI.Delta()
 cpr_fano.Delta_polar() == CI.Delta_polar()
 ```
-
 
 That would be fine with me. A `Delta_polar_to_coordinate` method is ok, too.
 
@@ -629,7 +619,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082966.json:
 ```json
 {
-    "body": "I just noticed that `CPRFanoToricVariety` does not construct a default `ToricLattice`:\n\n```\nsage: toric_varieties.Conifold().fan().lattice()\n3-d lattice N\nsage: toric_varieties.P2().fan().lattice()\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\n```\n\nIs there any particular reason why this is not done in the same way as `ToricVariety`?",
+    "body": "I just noticed that `CPRFanoToricVariety` does not construct a default `ToricLattice`:\n\n```\nsage: toric_varieties.Conifold().fan().lattice()\n3-d lattice N\nsage: toric_varieties.P2().fan().lattice()\nAmbient free module of rank 2 over the principal ideal domain Integer Ring\n```\nIs there any particular reason why this is not done in the same way as `ToricVariety`?",
     "created_at": "2010-07-02T11:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8989",
     "type": "issue_comment",
@@ -646,7 +636,6 @@ sage: toric_varieties.Conifold().fan().lattice()
 sage: toric_varieties.P2().fan().lattice()
 Ambient free module of rank 2 over the principal ideal domain Integer Ring
 ```
-
 Is there any particular reason why this is not done in the same way as `ToricVariety`?
 
 

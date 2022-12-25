@@ -3,7 +3,7 @@
 archive/issues_009714.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nWe have\n\n```\nsage: M = matrix(3, [1,2,0, 0,2,0, 0,0,1])\nsage: g = Graph(M, format='adjacency_matrix')\nsage: I = g.incidence_matrix(); I\n[-1 -1  0  0  0  1]\n[ 1  1  0  1  1  0]\n[ 0  0  1  0  0  0]\n```\n\nBut then:\n\n```\nsage: Graph(I, format='incidence_matrix').show(graph_border=True)\nkaboom!\n```\n\n\nEither the first .incidence_matrix() should fail, or the second Graph(...) should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9714\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nWe have\n\n```\nsage: M = matrix(3, [1,2,0, 0,2,0, 0,0,1])\nsage: g = Graph(M, format='adjacency_matrix')\nsage: I = g.incidence_matrix(); I\n[-1 -1  0  0  0  1]\n[ 1  1  0  1  1  0]\n[ 0  0  1  0  0  0]\n```\nBut then:\n\n```\nsage: Graph(I, format='incidence_matrix').show(graph_border=True)\nkaboom!\n```\n\nEither the first .incidence_matrix() should fail, or the second Graph(...) should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9714\n\n",
     "created_at": "2010-08-10T00:16:47Z",
     "labels": [
         "component: graph theory",
@@ -29,14 +29,12 @@ sage: I = g.incidence_matrix(); I
 [ 1  1  0  1  1  0]
 [ 0  0  1  0  0  0]
 ```
-
 But then:
 
 ```
 sage: Graph(I, format='incidence_matrix').show(graph_border=True)
 kaboom!
 ```
-
 
 Either the first .incidence_matrix() should fail, or the second Graph(...) should work.
 
@@ -51,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9714
 archive/issue_comments_094613.json:
 ```json
 {
-    "body": "Easy to fix, just replace (on line 944 of `graph.py`)\n\n```\nif len(NZ) != 2:\n    msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n    assert False\n```\n\nwith something like\n\n```\nif len(NZ) == 1:\n    if loops is None:\n        loops = True\n    elif not loops:\n        msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n        assert False\nelif len(NZ) != 2:\n    msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n    assert False\n```\n",
+    "body": "Easy to fix, just replace (on line 944 of `graph.py`)\n\n```\nif len(NZ) != 2:\n    msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n    assert False\n```\nwith something like\n\n```\nif len(NZ) == 1:\n    if loops is None:\n        loops = True\n    elif not loops:\n        msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n        assert False\nelif len(NZ) != 2:\n    msg += \"There must be two nonzero entries (-1 & 1) per column.\"\n    assert False\n```",
     "created_at": "2010-08-10T00:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
@@ -67,7 +65,6 @@ if len(NZ) != 2:
     msg += "There must be two nonzero entries (-1 & 1) per column."
     assert False
 ```
-
 with something like
 
 ```
@@ -81,7 +78,6 @@ elif len(NZ) != 2:
     msg += "There must be two nonzero entries (-1 & 1) per column."
     assert False
 ```
-
 
 
 
@@ -228,7 +224,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_094621.json:
 ```json
 {
-    "body": "> What do you say to this adjustment? :-)\n\n\"Stupid me\"\n\nOk, now it's good to go `:-)`\n\nNathann",
+    "body": "> What do you say to this adjustment? :-)\n\n\n\"Stupid me\"\n\nOk, now it's good to go `:-)`\n\nNathann",
     "created_at": "2012-01-31T17:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9714",
     "type": "issue_comment",
@@ -238,6 +234,7 @@ archive/issue_comments_094621.json:
 ```
 
 > What do you say to this adjustment? :-)
+
 
 "Stupid me"
 

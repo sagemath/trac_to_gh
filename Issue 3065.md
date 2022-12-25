@@ -3,7 +3,7 @@
 archive/issues_003065.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
     "created_at": "2008-04-30T15:16:35Z",
     "labels": [
         "component: linear algebra",
@@ -32,7 +32,6 @@ sage: m.frobenius(2,'x')
 <type 'exceptions.RuntimeError'>:
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3065
 
@@ -63,7 +62,7 @@ Changing keywords from "" to "pari".
 archive/issue_comments_021112.json:
 ```json
 {
-    "body": "PARI might be to blame here. The code below should return 0 everytime: \n\n```\nsage: pari('matrix(0,0)').ncols()\n 0\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n```\n",
+    "body": "PARI might be to blame here. The code below should return 0 everytime: \n\n```\nsage: pari('matrix(0,0)').ncols()\n 0\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n```",
     "created_at": "2008-04-30T21:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
@@ -84,7 +83,6 @@ sage: pari('matrix(0,0)').nrows()
 sage: pari('matrix(0,0)').nrows()
  47961608997888
 ```
-
 
 
 
@@ -111,7 +109,7 @@ Patch attached. I suspect the problem I pointed above is due to `<GEN>self.g[1]`
 archive/issue_comments_021114.json:
 ```json
 {
-    "body": "Opps, in case of `if self.ncols() == 0:` you never call `_sig_off`:\n\n```\n5391\t5391\t        _sig_on \n \t5392\t        # if this matrix has no columns \n \t5393\t        # then it has no rows.  \n \t5394\t        if self.ncols() == 0: \n \t5395\t            return 0 \n```\n\nOther than that the patch looks fine to me.\n\nCheers,\n\nMichael",
+    "body": "Opps, in case of `if self.ncols() == 0:` you never call `_sig_off`:\n\n```\n5391\t5391\t        _sig_on \n \t5392\t        # if this matrix has no columns \n \t5393\t        # then it has no rows.  \n \t5394\t        if self.ncols() == 0: \n \t5395\t            return 0 \n```\nOther than that the patch looks fine to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-02T17:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
@@ -129,7 +127,6 @@ Opps, in case of `if self.ncols() == 0:` you never call `_sig_off`:
  	5394	        if self.ncols() == 0: 
  	5395	            return 0 
 ```
-
 Other than that the patch looks fine to me.
 
 Cheers,
@@ -143,7 +140,7 @@ Michael
 archive/issue_comments_021115.json:
 ```json
 {
-    "body": "\n```\n10:23 < dfdeshom-away> mabshoff: re: #3065: self>ncols() itself includes sig_on/sig_off calls, does \n                       that matter?\n10:23 < jason|log> How would it make things worse?\n10:23 < mabshoff> dfdeshom-away: Yes. I think it does.\n10:23 < wstein> I don't know.  I'm just paranaoid about async calls, javascript, and putting in delays \n                that could lock the browser.\n10:24 < mabshoff> wstein knows more about the code, but I think the fix is easy enough.\n10:24 < wstein> Basically \"putting in a delay\" never quite works right robustly when\n10:24 < wstein> doing async programming, in my experience.\n10:24 < mabshoff> And since we are playing with the interrupt handler here I would consider the fix \n                  simple enough to actually do it.\n10:24 < wstein> dfdeshom-away -- that code is very very bad.\n10:24 < wstein> You will break things horribly by doing tat.\n10:25 < mabshoff> :)\n10:25 < wstein> It breaks two rules of _sig_*:\n10:25 < mabshoff> +1 for code review.\n10:25 < dfdeshom-away> feel free. I'll get to it this afternoon, but I don't know what your timeline is\n10:25 < wstein> (1) never put any Python code in there.\n10:25 < wstein> (2) always balance _sig_on with _sig_off.\n10:25 < wstein> The fix is easy.\n10:25 < wstein> Just put _sig_on *after* the if self.ncols() == 0: line\n10:25 < wstein> Very easy fix.\n```\n",
+    "body": "```\n10:23 < dfdeshom-away> mabshoff: re: #3065: self>ncols() itself includes sig_on/sig_off calls, does \n                       that matter?\n10:23 < jason|log> How would it make things worse?\n10:23 < mabshoff> dfdeshom-away: Yes. I think it does.\n10:23 < wstein> I don't know.  I'm just paranaoid about async calls, javascript, and putting in delays \n                that could lock the browser.\n10:24 < mabshoff> wstein knows more about the code, but I think the fix is easy enough.\n10:24 < wstein> Basically \"putting in a delay\" never quite works right robustly when\n10:24 < wstein> doing async programming, in my experience.\n10:24 < mabshoff> And since we are playing with the interrupt handler here I would consider the fix \n                  simple enough to actually do it.\n10:24 < wstein> dfdeshom-away -- that code is very very bad.\n10:24 < wstein> You will break things horribly by doing tat.\n10:25 < mabshoff> :)\n10:25 < wstein> It breaks two rules of _sig_*:\n10:25 < mabshoff> +1 for code review.\n10:25 < dfdeshom-away> feel free. I'll get to it this afternoon, but I don't know what your timeline is\n10:25 < wstein> (1) never put any Python code in there.\n10:25 < wstein> (2) always balance _sig_on with _sig_off.\n10:25 < wstein> The fix is easy.\n10:25 < wstein> Just put _sig_on *after* the if self.ncols() == 0: line\n10:25 < wstein> Very easy fix.\n```",
     "created_at": "2008-05-02T17:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3065",
     "type": "issue_comment",
@@ -151,7 +148,6 @@ archive/issue_comments_021115.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 10:23 < dfdeshom-away> mabshoff: re: #3065: self>ncols() itself includes sig_on/sig_off calls, does 
@@ -177,7 +173,6 @@ archive/issue_comments_021115.json:
 10:25 < wstein> Just put _sig_on *after* the if self.ncols() == 0: line
 10:25 < wstein> Very easy fix.
 ```
-
 
 
 

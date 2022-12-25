@@ -244,7 +244,7 @@ Replace previous one with this
 archive/issue_comments_047721.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n> The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)\n\nDone -- I have no idea how that got in there!  Soory\n\n> \n> Thanks for reopening - I think it is pretty clear in the trac guidelines not to close tickets, but it happens on occasion by new reviewers.\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:7 mabshoff]:\n> The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)\n\n\nDone -- I have no idea how that got in there!  Soory\n\n> \n> Thanks for reopening - I think it is pretty clear in the trac guidelines not to close tickets, but it happens on occasion by new reviewers.\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2009-05-10T08:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
@@ -255,6 +255,7 @@ archive/issue_comments_047721.json:
 
 Replying to [comment:7 mabshoff]:
 > The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)
+
 
 Done -- I have no idea how that got in there!  Soory
 

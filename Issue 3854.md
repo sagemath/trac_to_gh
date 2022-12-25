@@ -103,7 +103,7 @@ Sure, but it wouldn't test the feature that is in discussion, i.e. that notrunca
 archive/issue_comments_027393.json:
 ```json
 {
-    "body": "As is the patch does not apply:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_3854_sage.patch \npatching file sage/server/notebook/interact.py\nHunk #1 FAILED at 1397.\n1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej\n```\n\nIt should be trivial to rebase.\n\nCheers,\n\nMichael",
+    "body": "As is the patch does not apply:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_3854_sage.patch \npatching file sage/server/notebook/interact.py\nHunk #1 FAILED at 1397.\n1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej\n```\nIt should be trivial to rebase.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T02:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
@@ -120,7 +120,6 @@ patching file sage/server/notebook/interact.py
 Hunk #1 FAILED at 1397.
 1 out of 1 hunk FAILED -- saving rejects to file sage/server/notebook/interact.py.rej
 ```
-
 It should be trivial to rebase.
 
 Cheers,
@@ -266,7 +265,7 @@ Michael
 archive/issue_comments_027400.json:
 ```json
 {
-    "body": "Replying to [comment:8 mabshoff]:\n> Please also name the patches properly, i.e. trac_XXXX_description is that is expected.\n\nHi there, did we definitely agree on this? I hardly use it and feel stupid if I've missed the point where I was supposed to switch.",
+    "body": "Replying to [comment:8 mabshoff]:\n> Please also name the patches properly, i.e. trac_XXXX_description is that is expected.\n\n\nHi there, did we definitely agree on this? I hardly use it and feel stupid if I've missed the point where I was supposed to switch.",
     "created_at": "2008-08-29T10:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
@@ -277,5 +276,6 @@ archive/issue_comments_027400.json:
 
 Replying to [comment:8 mabshoff]:
 > Please also name the patches properly, i.e. trac_XXXX_description is that is expected.
+
 
 Hi there, did we definitely agree on this? I hardly use it and feel stupid if I've missed the point where I was supposed to switch.

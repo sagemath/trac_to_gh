@@ -3,7 +3,7 @@
 archive/issues_005911.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\nImagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):\n\n1. Two pages of parameters, which they can't possibly read through.\n\n2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.\n\n\n```\n  \n    EXAMPLES: We illustrate the first six input formats (the other two\n    involve packages that are currently not standard in Sage):\n    \n    #. A NetworkX XGraph::\n    \n          sage: import networkx\n          sage: g = networkx.XGraph({0:[1,2,3], 2:[4]})\n          sage: Graph(g)\n          Graph on 5 vertices\n....\n```\n\n\nI propose:\n \n1. Putting a few simple straightforward examples (which is all most users need) right *before* the INPUT: block.\n\n2. Moving any mention of networkx lower in the lists, e.g., when defining the data input, don't put networkx first, and when documenting things later with examples, don't put networkx first. \n\n3. That one can do \"graphs.<tab>\" and get constructors for any family of graphs should be noted clearly and prominently, also before the INPUT: block.  This is not even noted anywhere right now, though it is used in two examples.\n\nThe above are all easy changes, I think. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5911\n\n",
+    "body": "Assignee: @rlmill\n\nImagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):\n\n1. Two pages of parameters, which they can't possibly read through.\n\n2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.\n\n```\n  \n    EXAMPLES: We illustrate the first six input formats (the other two\n    involve packages that are currently not standard in Sage):\n    \n    #. A NetworkX XGraph::\n    \n          sage: import networkx\n          sage: g = networkx.XGraph({0:[1,2,3], 2:[4]})\n          sage: Graph(g)\n          Graph on 5 vertices\n....\n```\n\nI propose:\n \n1. Putting a few simple straightforward examples (which is all most users need) right *before* the INPUT: block.\n\n2. Moving any mention of networkx lower in the lists, e.g., when defining the data input, don't put networkx first, and when documenting things later with examples, don't put networkx first. \n\n3. That one can do \"graphs.<tab>\" and get constructors for any family of graphs should be noted clearly and prominently, also before the INPUT: block.  This is not even noted anywhere right now, though it is used in two examples.\n\nThe above are all easy changes, I think. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5911\n\n",
     "created_at": "2009-04-27T13:02:05Z",
     "labels": [
         "component: graph theory"
@@ -23,7 +23,6 @@ Imagine a new user who wants to create a graph.  They do `Graph?` and they get (
 
 2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.
 
-
 ```
   
     EXAMPLES: We illustrate the first six input formats (the other two
@@ -37,7 +36,6 @@ Imagine a new user who wants to create a graph.  They do `Graph?` and they get (
           Graph on 5 vertices
 ....
 ```
-
 
 I propose:
  
@@ -102,7 +100,7 @@ http://www-sop.inria.fr/members/Nathann.Cohen/infograph.py
 archive/issue_comments_046623.json:
 ```json
 {
-    "body": "Nathann,\n\nThis looks pretty good. Can you change the examples a bit, though? For example, a lot of the docstrings about creating graphs from graph6 strings include test cases where an error is triggered. As long as these failures are somewhere in the documentation, they're tested. Maybe the docs here should focus more on how to properly work with them. Also, you should get this into the appropriate place in `graph.py` and post it as an actual patch, so that e.g. we can post modifications and more people can pitch in to help. Finally, I believe that a few code blocks at the beginning need the `::` and indentation, e.g.:\n\n```\n    If you want to see what they look like, begin this way :\n   \n    sage: g=graphs.PetersenGraph()\n    sage: g.plot()\n\n    or\n\n    sage: g=graphs.ChvatalGraph()\n    sage: g.plot()\n```\n",
+    "body": "Nathann,\n\nThis looks pretty good. Can you change the examples a bit, though? For example, a lot of the docstrings about creating graphs from graph6 strings include test cases where an error is triggered. As long as these failures are somewhere in the documentation, they're tested. Maybe the docs here should focus more on how to properly work with them. Also, you should get this into the appropriate place in `graph.py` and post it as an actual patch, so that e.g. we can post modifications and more people can pitch in to help. Finally, I believe that a few code blocks at the beginning need the `::` and indentation, e.g.:\n\n```\n    If you want to see what they look like, begin this way :\n   \n    sage: g=graphs.PetersenGraph()\n    sage: g.plot()\n\n    or\n\n    sage: g=graphs.ChvatalGraph()\n    sage: g.plot()\n```",
     "created_at": "2009-08-05T16:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -126,7 +124,6 @@ This looks pretty good. Can you change the examples a bit, though? For example, 
     sage: g=graphs.ChvatalGraph()
     sage: g.plot()
 ```
-
 
 
 
@@ -275,7 +272,7 @@ Still around ? ;-)
 archive/issue_comments_046631.json:
 ```json
 {
-    "body": "Replying to [comment:10 ncohen]:\n> What about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n> \n> We could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?\n\nImagine you have never used Sage before, and you really really like DiGraphs. So one of the first things you do in Sage, aside from `2+2` or `factor(factorial(12))`, is type `DiGraph?`. I think there are such (potential) users out there, and the documentation there should be independently helpful. Certainly a reference to `Graph?` would be appropriate, but the docs you get from `DiGraph?` should also be self-contained and helpful.",
+    "body": "Replying to [comment:10 ncohen]:\n> What about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n> \n> We could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?\n\n\nImagine you have never used Sage before, and you really really like DiGraphs. So one of the first things you do in Sage, aside from `2+2` or `factor(factorial(12))`, is type `DiGraph?`. I think there are such (potential) users out there, and the documentation there should be independently helpful. Certainly a reference to `Graph?` would be appropriate, but the docs you get from `DiGraph?` should also be self-contained and helpful.",
     "created_at": "2009-10-08T16:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -288,6 +285,7 @@ Replying to [comment:10 ncohen]:
 > What about a good old  : "cf. Graph" (or a plain copy of Graph?), as it is exactly the same ? ^^;
 > 
 > We could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?
+
 
 Imagine you have never used Sage before, and you really really like DiGraphs. So one of the first things you do in Sage, aside from `2+2` or `factor(factorial(12))`, is type `DiGraph?`. I think there are such (potential) users out there, and the documentation there should be independently helpful. Certainly a reference to `Graph?` would be appropriate, but the docs you get from `DiGraph?` should also be self-contained and helpful.
 
@@ -316,7 +314,7 @@ Then a plain copy could do, couldn't it ? Plus some DiGraph-specific functions .
 archive/issue_comments_046633.json:
 ```json
 {
-    "body": "Replying to [comment:13 ncohen]:\n> Then a plain copy could do, couldn't it ?\n\nEssentially, yes, subject to `s/Graph/DiGraph`.\n\n> Plus some DiGraph-specific functions .. ;-)\n\nFor the DiGraph fans!",
+    "body": "Replying to [comment:13 ncohen]:\n> Then a plain copy could do, couldn't it ?\n\n\nEssentially, yes, subject to `s/Graph/DiGraph`.\n\n> Plus some DiGraph-specific functions .. ;-)\n\n\nFor the DiGraph fans!",
     "created_at": "2009-10-08T16:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
@@ -328,9 +326,11 @@ archive/issue_comments_046633.json:
 Replying to [comment:13 ncohen]:
 > Then a plain copy could do, couldn't it ?
 
+
 Essentially, yes, subject to `s/Graph/DiGraph`.
 
 > Plus some DiGraph-specific functions .. ;-)
+
 
 For the DiGraph fans!
 

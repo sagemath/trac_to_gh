@@ -111,7 +111,7 @@ Changing status from new to assigned.
 archive/issue_comments_029053.json:
 ```json
 {
-    "body": "Unfortunately this patch has bitrotted:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 < trac_4035_m2_optional_doctests.patch \npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 60.\nHunk #2 succeeded at 1659 (offset 58 lines).\nHunk #3 succeeded at 1883 (offset 64 lines).\nHunk #4 FAILED at 2031.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/rings/polynomial/multi_polynomial_ring.py\n```\n\n\nMike: Once it is rebased can you review it?\n\nCheers,\n\nMichael",
+    "body": "Unfortunately this patch has bitrotted:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 < trac_4035_m2_optional_doctests.patch \npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 60.\nHunk #2 succeeded at 1659 (offset 58 lines).\nHunk #3 succeeded at 1883 (offset 64 lines).\nHunk #4 FAILED at 2031.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/rings/polynomial/multi_polynomial_ring.py\n```\n\nMike: Once it is rebased can you review it?\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T21:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
@@ -133,7 +133,6 @@ Hunk #4 FAILED at 2031.
 2 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej
 patching file sage/rings/polynomial/multi_polynomial_ring.py
 ```
-
 
 Mike: Once it is rebased can you review it?
 

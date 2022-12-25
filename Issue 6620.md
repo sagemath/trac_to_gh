@@ -3,7 +3,7 @@
 archive/issues_006620.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  nborie @wdjoyner\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  nborie @wdjoyner\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
     "created_at": "2009-07-25T17:11:16Z",
     "labels": [
         "component: interfaces"
@@ -28,7 +28,6 @@ Accessing elements of GAP records should be easier.
             sage: gap.get_record_element(rec, 'b')
             2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6620
 

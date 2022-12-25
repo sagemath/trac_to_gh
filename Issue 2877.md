@@ -3,7 +3,7 @@
 archive/issues_002877.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  @tscrim @slel @kliem @kwankyu\n\nThere are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. \n\nIt is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary \n\n\n```\nsage: CC(\"os.getpid()\")\n10324.0000000000\nsage: CC(\"os.mkdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.rmdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.exec(...)\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2877\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @tscrim @slel @kliem @kwankyu\n\nThere are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. \n\nIt is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary \n\n```\nsage: CC(\"os.getpid()\")\n10324.0000000000\nsage: CC(\"os.mkdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.rmdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.exec(...)\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2877\n\n",
     "created_at": "2008-04-11T11:39:56Z",
     "labels": [
         "component: misc",
@@ -24,7 +24,6 @@ There are valid uses for eval() and sage_eval(), it makes it much easier to pars
 
 It is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary 
 
-
 ```
 sage: CC("os.getpid()")
 10324.0000000000
@@ -34,7 +33,6 @@ sage: CC("os.rmdir('a')")
 NaN - NaN*I
 sage: CC("os.exec(...)")
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2877
 
@@ -484,7 +482,7 @@ The reason for the eval in CC is of course that you want to allow expressions li
 archive/issue_comments_019729.json:
 ```json
 {
-    "body": "I fully agree with Erik.\n\nThe following does not work (as expected)\n\n```\nsage: ZZ('2**3 + 3*g - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3 + 3*g - 2' to an integer\nsage: RR('2**2 + 3*5 - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3+5*I-2' to a real number\n```\n\nSupporting the following with `CC` is a nonsense\n\n```\nsage: CC('2**2 + 3*5 - 2')\n17.0000000000000\nsage: CC('erf(2)')\n0.995322265018953\n```\n\nWe don't want the element constructor to evaluate a string in hope that it gives a complex number. There should be a clear definition of what is the input format. And the constructor should just stick to specifications. The element constructor of CC is trying to do much more than what it is supposed to.",
+    "body": "I fully agree with Erik.\n\nThe following does not work (as expected)\n\n```\nsage: ZZ('2**3 + 3*g - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3 + 3*g - 2' to an integer\nsage: RR('2**2 + 3*5 - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3+5*I-2' to a real number\n```\nSupporting the following with `CC` is a nonsense\n\n```\nsage: CC('2**2 + 3*5 - 2')\n17.0000000000000\nsage: CC('erf(2)')\n0.995322265018953\n```\nWe don't want the element constructor to evaluate a string in hope that it gives a complex number. There should be a clear definition of what is the input format. And the constructor should just stick to specifications. The element constructor of CC is trying to do much more than what it is supposed to.",
     "created_at": "2019-07-11T19:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -507,7 +505,6 @@ Traceback (most recent call last):
 ...
 TypeError: unable to convert '2**3+5*I-2' to a real number
 ```
-
 Supporting the following with `CC` is a nonsense
 
 ```
@@ -516,7 +513,6 @@ sage: CC('2**2 + 3*5 - 2')
 sage: CC('erf(2)')
 0.995322265018953
 ```
-
 We don't want the element constructor to evaluate a string in hope that it gives a complex number. There should be a clear definition of what is the input format. And the constructor should just stick to specifications. The element constructor of CC is trying to do much more than what it is supposed to.
 
 
@@ -562,7 +558,7 @@ It's not just CC.  It's all of them.  It's really flaky to allow a general eval 
 archive/issue_comments_019732.json:
 ```json
 {
-    "body": "Replying to [comment:12 vbraun]:\n> A simpler fix would be to use a limited eval, e.g. https://newville.github.io/asteval/\n> \n> The reason for the eval in CC is of course that you want to allow expressions like `2+3*I` that exceed python's `literal_eval` capabilities.\n\n+1",
+    "body": "Replying to [comment:12 vbraun]:\n> A simpler fix would be to use a limited eval, e.g. https://newville.github.io/asteval/\n> \n> The reason for the eval in CC is of course that you want to allow expressions like `2+3*I` that exceed python's `literal_eval` capabilities.\n\n\n+1",
     "created_at": "2019-07-12T08:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -575,6 +571,7 @@ Replying to [comment:12 vbraun]:
 > A simpler fix would be to use a limited eval, e.g. https://newville.github.io/asteval/
 > 
 > The reason for the eval in CC is of course that you want to allow expressions like `2+3*I` that exceed python's `literal_eval` capabilities.
+
 
 +1
 
@@ -809,7 +806,7 @@ archive/issue_events_006596.json:
 archive/issue_comments_019736.json:
 ```json
 {
-    "body": "here is a simple-minded patch. Unless somebody proposes something better, I think it makes sense to merge that now\n----\nNew commits:",
+    "body": "here is a simple-minded patch. Unless somebody proposes something better, I think it makes sense to merge that now\n\n---\nNew commits:",
     "created_at": "2021-10-19T15:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -819,7 +816,8 @@ archive/issue_comments_019736.json:
 ```
 
 here is a simple-minded patch. Unless somebody proposes something better, I think it makes sense to merge that now
-----
+
+---
 New commits:
 
 
@@ -901,7 +899,7 @@ bot is morally green, so please review
 archive/issue_comments_019741.json:
 ```json
 {
-    "body": "Do we also want to allow `j` to match Python's convention for complex numbers:\n\n```sage\nsage: complex('1+2j')\n(1+2j)\nsage: complex('1+2i')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-2-a2113f9c148b> in <module>\n----> 1 complex('1+2i')\n\nValueError: complex() arg is a malformed string\n```\n",
+    "body": "Do we also want to allow `j` to match Python's convention for complex numbers:\n\n```sage\nsage: complex('1+2j')\n(1+2j)\nsage: complex('1+2i')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-2-a2113f9c148b> in <module>\n----> 1 complex('1+2i')\n\nValueError: complex() arg is a malformed string\n```",
     "created_at": "2021-10-20T23:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -923,7 +921,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: complex() arg is a malformed string
 ```
-
 
 
 
@@ -1022,7 +1019,7 @@ bot is morally green now
 archive/issue_comments_019747.json:
 ```json
 {
-    "body": "Sorry for late comment, but how about this?\n\n```diff\n--- a/src/sage/rings/complex_mpfr.pyx\n+++ b/src/sage/rings/complex_mpfr.pyx\n@@ -504,7 +504,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n             sage: CC('hello')\n             Traceback (most recent call last):\n             ...\n-            ValueError: given string (hello) is not a complex number\n+            ValueError: given string 'hello' is not a complex number\n         \"\"\"\n         if not isinstance(x, (RealNumber, tuple)):\n             if isinstance(x, ComplexDoubleElement):\n@@ -516,7 +516,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n                 x = x.replace('E', 'e')\n                 allowed = '+-.*0123456789Ie'\n                 if not all(letter in allowed for letter in x):\n-                    raise ValueError(f'given string ({x}) is not a complex number')\n+                    raise ValueError(f'given string {x!r} is not a complex number')\n                 # This should rather use a proper parser to validate input.\n                 # TODO: this is probably not the best and most\n                 # efficient way to do this.  -- Martin Albrecht\n```\n\n\nand `does not express a complex number`.",
+    "body": "Sorry for late comment, but how about this?\n\n```diff\n--- a/src/sage/rings/complex_mpfr.pyx\n+++ b/src/sage/rings/complex_mpfr.pyx\n@@ -504,7 +504,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n             sage: CC('hello')\n             Traceback (most recent call last):\n             ...\n-            ValueError: given string (hello) is not a complex number\n+            ValueError: given string 'hello' is not a complex number\n         \"\"\"\n         if not isinstance(x, (RealNumber, tuple)):\n             if isinstance(x, ComplexDoubleElement):\n@@ -516,7 +516,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n                 x = x.replace('E', 'e')\n                 allowed = '+-.*0123456789Ie'\n                 if not all(letter in allowed for letter in x):\n-                    raise ValueError(f'given string ({x}) is not a complex number')\n+                    raise ValueError(f'given string {x!r} is not a complex number')\n                 # This should rather use a proper parser to validate input.\n                 # TODO: this is probably not the best and most\n                 # efficient way to do this.  -- Martin Albrecht\n```\n\nand `does not express a complex number`.",
     "created_at": "2021-10-22T04:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -1055,7 +1052,6 @@ Sorry for late comment, but how about this?
                  # TODO: this is probably not the best and most
                  # efficient way to do this.  -- Martin Albrecht
 ```
-
 
 and `does not express a complex number`.
 
@@ -1194,7 +1190,7 @@ Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the po
 archive/issue_comments_019755.json:
 ```json
 {
-    "body": "Replying to [comment:39 tscrim]:\n> Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the positive review.\n\nI fully agree. Thanks.",
+    "body": "Replying to [comment:39 tscrim]:\n> Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the positive review.\n\n\nI fully agree. Thanks.",
     "created_at": "2021-10-25T06:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
@@ -1205,6 +1201,7 @@ archive/issue_comments_019755.json:
 
 Replying to [comment:39 tscrim]:
 > Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the positive review.
+
 
 I fully agree. Thanks.
 

@@ -200,7 +200,7 @@ Michael
 archive/issue_comments_035252.json:
 ```json
 {
-    "body": "Replying to [comment:5 mabshoff]:\n>  Can you adjust the Australia link to include New Zealand since Francois is located there?\n> \n\nyes, done.",
+    "body": "Replying to [comment:5 mabshoff]:\n>  Can you adjust the Australia link to include New Zealand since Francois is located there?\n\n> \n\nyes, done.",
     "created_at": "2008-12-04T13:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4685",
     "type": "issue_comment",
@@ -211,6 +211,7 @@ archive/issue_comments_035252.json:
 
 Replying to [comment:5 mabshoff]:
 >  Can you adjust the Australia link to include New Zealand since Francois is located there?
+
 > 
 
 yes, done.

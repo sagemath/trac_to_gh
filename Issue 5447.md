@@ -209,7 +209,7 @@ Reminder: Apply tips from [this thread](http://groups.google.com/group/sage-deve
 archive/issue_comments_042034.json:
 ```json
 {
-    "body": "Replying to [comment:4 mpatel]:\n> Reminder: Apply tips from [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/d69332ec6ec92128/90edc4cc5cad2dd5?lnk=gst&q=improved+spkg+install#90edc4cc5cad2dd5) to the next revisions of `spkg-install`.\nIf necessary, rebase the patch against #6568.",
+    "body": "Replying to [comment:4 mpatel]:\n> Reminder: Apply tips from [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/d69332ec6ec92128/90edc4cc5cad2dd5?lnk=gst&q=improved+spkg+install#90edc4cc5cad2dd5) to the next revisions of `spkg-install`.\n\nIf necessary, rebase the patch against #6568.",
     "created_at": "2009-08-04T07:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -220,6 +220,7 @@ archive/issue_comments_042034.json:
 
 Replying to [comment:4 mpatel]:
 > Reminder: Apply tips from [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/d69332ec6ec92128/90edc4cc5cad2dd5?lnk=gst&q=improved+spkg+install#90edc4cc5cad2dd5) to the next revisions of `spkg-install`.
+
 If necessary, rebase the patch against #6568.
 
 
@@ -318,7 +319,7 @@ apply instead of previous patches
 archive/issue_comments_042039.json:
 ```json
 {
-    "body": "Great work!\n\nThere are still two places that the old location of jquery is referenced:\n\n\n```\n~/sage/devel/sage/sage/server/notebook$ grep -r jquery.js *\nnotebook.py:           <script type=\"text/javascript\" src=\"/javascript_local/jquery/jquery.js\"></script>\ntemplates/notebook/worksheet.html:<script type=\"text/javascript\" src=\"/javascript_local/jquery/jquery.js\"></script>\n```\n",
+    "body": "Great work!\n\nThere are still two places that the old location of jquery is referenced:\n\n```\n~/sage/devel/sage/sage/server/notebook$ grep -r jquery.js *\nnotebook.py:           <script type=\"text/javascript\" src=\"/javascript_local/jquery/jquery.js\"></script>\ntemplates/notebook/worksheet.html:<script type=\"text/javascript\" src=\"/javascript_local/jquery/jquery.js\"></script>\n```",
     "created_at": "2009-09-15T19:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5447",
     "type": "issue_comment",
@@ -331,13 +332,11 @@ Great work!
 
 There are still two places that the old location of jquery is referenced:
 
-
 ```
 ~/sage/devel/sage/sage/server/notebook$ grep -r jquery.js *
 notebook.py:           <script type="text/javascript" src="/javascript_local/jquery/jquery.js"></script>
 templates/notebook/worksheet.html:<script type="text/javascript" src="/javascript_local/jquery/jquery.js"></script>
 ```
-
 
 
 

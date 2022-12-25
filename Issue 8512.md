@@ -3,7 +3,7 @@
 archive/issues_008512.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
     "created_at": "2010-03-12T23:48:03Z",
     "labels": [
         "component: packages: optional",
@@ -26,12 +26,10 @@ http://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html
 
 Since the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:
 
-
 ```
        -v, --verbose
               explain what is being done
 ```
-
 
 The -v option can simply be removed.
 

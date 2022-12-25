@@ -3,7 +3,7 @@
 archive/issues_004315.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @zimmermann6\n\nComputing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:\n\n```\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time a = diff(x^(x^x), x, 10)\nCPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s\nWall time: 17.69 s\n```\n\nIn comparison with Mathemagix I get:\n\n```\nbash-3.2$ time ./mmxlight/build/mmx-light \n--------------------------------------------------------------\n--------------------------------------------------------------\n1] use \"symbolix\"\n2] a = derive (x^x^x, x^^10);\n3] quit\n|:*)          Welcome to Mathemagix-light 0.4             (*:|\n|  This software falls under the GNU General Public License  |\n|          It comes without any warranty whatsoever          |\n|------------------------------------------------------------|\n|                    (c) 2001--2008 by                       |\n|           Joris van der Hoeven, Gregoire Lecerf,           |\n|        Bernard Mourrain, Olivier Ruatta and others         |\nreal    0m10.021s\nuser    0m0.339s\nsys     0m0.052s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4315\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @zimmermann6\n\nComputing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:\n\n```\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time a = diff(x^(x^x), x, 10)\nCPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s\nWall time: 17.69 s\n```\nIn comparison with Mathemagix I get:\n\n```\nbash-3.2$ time ./mmxlight/build/mmx-light \n--------------------------------------------------------------\n--------------------------------------------------------------\n1] use \"symbolix\"\n2] a = derive (x^x^x, x^^10);\n3] quit\n|:*)          Welcome to Mathemagix-light 0.4             (*:|\n|  This software falls under the GNU General Public License  |\n|          It comes without any warranty whatsoever          |\n|------------------------------------------------------------|\n|                    (c) 2001--2008 by                       |\n|           Joris van der Hoeven, Gregoire Lecerf,           |\n|        Bernard Mourrain, Olivier Ruatta and others         |\nreal    0m10.021s\nuser    0m0.339s\nsys     0m0.052s\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4315\n\n",
     "created_at": "2008-10-17T19:13:23Z",
     "labels": [
         "component: calculus",
@@ -32,7 +32,6 @@ sage: time a = diff(x^(x^x), x, 10)
 CPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s
 Wall time: 17.69 s
 ```
-
 In comparison with Mathemagix I get:
 
 ```
@@ -54,7 +53,6 @@ user    0m0.339s
 sys     0m0.052s
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4315
 
 
@@ -66,7 +64,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4315
 archive/issue_comments_031524.json:
 ```json
 {
-    "body": "Hi Paul,\n\nThis is certainly much better with the use of Pynac which will (hopefully) be in 3.2:\n\n\n```\nsage: x = var('x',ns=1)\nsage: %time a = (x^(x^x)).diff(x,10)\nCPU times: user 0.68 s, sys: 0.00 s, total: 0.68 s\nWall time: 0.71 s\n```\n",
+    "body": "Hi Paul,\n\nThis is certainly much better with the use of Pynac which will (hopefully) be in 3.2:\n\n```\nsage: x = var('x',ns=1)\nsage: %time a = (x^(x^x)).diff(x,10)\nCPU times: user 0.68 s, sys: 0.00 s, total: 0.68 s\nWall time: 0.71 s\n```",
     "created_at": "2008-10-17T21:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4315",
     "type": "issue_comment",
@@ -79,7 +77,6 @@ Hi Paul,
 
 This is certainly much better with the use of Pynac which will (hopefully) be in 3.2:
 
-
 ```
 sage: x = var('x',ns=1)
 sage: %time a = (x^(x^x)).diff(x,10)
@@ -89,13 +86,12 @@ Wall time: 0.71 s
 
 
 
-
 ---
 
 archive/issue_comments_031525.json:
 ```json
 {
-    "body": "For comparison, on sage.math, mathematica gives:\n\n\n```\nIn[1]:= Timing[D[x^(x^x), {x, 10}];]\n\nOut[1]= {0.164011, Null}\n```\n\n\nwhile pynac gives:\n\n\n```\nsage: %timeit a=(x**(x**x)).diff(x,10)\n10 loops, best of 3: 609 ms per loop\n```\n",
+    "body": "For comparison, on sage.math, mathematica gives:\n\n```\nIn[1]:= Timing[D[x^(x^x), {x, 10}];]\n\nOut[1]= {0.164011, Null}\n```\n\nwhile pynac gives:\n\n```\nsage: %timeit a=(x**(x**x)).diff(x,10)\n10 loops, best of 3: 609 ms per loop\n```",
     "created_at": "2008-10-18T07:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4315",
     "type": "issue_comment",
@@ -106,22 +102,18 @@ archive/issue_comments_031525.json:
 
 For comparison, on sage.math, mathematica gives:
 
-
 ```
 In[1]:= Timing[D[x^(x^x), {x, 10}];]
 
 Out[1]= {0.164011, Null}
 ```
 
-
 while pynac gives:
-
 
 ```
 sage: %timeit a=(x**(x**x)).diff(x,10)
 10 loops, best of 3: 609 ms per loop
 ```
-
 
 
 

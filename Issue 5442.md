@@ -68,7 +68,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5442
 archive/issue_comments_042001.json:
 ```json
 {
-    "body": "> The problem is that either preparse_ipython or magma.eval is too \n> naive, inserting a ';' rather than waiting for the completion\n>  of the expression. \n\nFor the record, this was on purpose and is by design.   The magma\ninterpreter via magma.eval is a blocking call, and if you send it\na chunk of code without a semicolon it will block forever.   If one\nwere to do what you suggest above, then typing\n\nmagma.eval('2+2')\n\nwould lead to a total hang of Sage. \n\nI'm marking this ticket as invalid unless you see a good reason to totally change the design of the interface to be nonblocking, which I doubt you'll do unless you really understand how they work and what the many negatives of doing that are.",
+    "body": "> The problem is that either preparse_ipython or magma.eval is too \n> naive, inserting a ';' rather than waiting for the completion\n>  of the expression. \n\n\nFor the record, this was on purpose and is by design.   The magma\ninterpreter via magma.eval is a blocking call, and if you send it\na chunk of code without a semicolon it will block forever.   If one\nwere to do what you suggest above, then typing\n\nmagma.eval('2+2')\n\nwould lead to a total hang of Sage. \n\nI'm marking this ticket as invalid unless you see a good reason to totally change the design of the interface to be nonblocking, which I doubt you'll do unless you really understand how they work and what the many negatives of doing that are.",
     "created_at": "2009-03-06T15:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_comment",
@@ -80,6 +80,7 @@ archive/issue_comments_042001.json:
 > The problem is that either preparse_ipython or magma.eval is too 
 > naive, inserting a ';' rather than waiting for the completion
 >  of the expression. 
+
 
 For the record, this was on purpose and is by design.   The magma
 interpreter via magma.eval is a blocking call, and if you send it

@@ -3,7 +3,7 @@
 archive/issues_002787.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman ktkohl\n\nIt would be nice if the following worked, if f was a function:\n\n```\nsage: integrate(f, x)\n\nsage: # Double indefinite integral wrt x\nsage: integrate(f, x, x)\n\nsage: # limits and a double integral: x is the inner integral, y is the outer integral (note that this order is backwards from Mma...they think of nested integrals as int dx int dy function, so the first parameter is the outer integral in Mma.)\nsage: integrate(f, (x, 0, 1), (y, 1, 2))\nsage: integrate(f, (x, 0, y), (y, 1, 2))\n\nsage: # Double integral, x is the inner integral, y is the outer integral\nsage: integrate(f, x, y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2787\n\n",
     "created_at": "2008-04-03T02:38:39Z",
     "labels": [
         "component: calculus"
@@ -21,7 +21,6 @@ CC:  @kcrisman ktkohl
 
 It would be nice if the following worked, if f was a function:
 
-
 ```
 sage: integrate(f, x)
 
@@ -35,7 +34,6 @@ sage: integrate(f, (x, 0, y), (y, 1, 2))
 sage: # Double integral, x is the inner integral, y is the outer integral
 sage: integrate(f, x, y)
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2787
 
@@ -66,7 +64,7 @@ See also #1221.  It would be nice if the interface here was also consistent with
 archive/issue_comments_019105.json:
 ```json
 {
-    "body": "What do you propose to do about the following case:\n\n\n```\n# Current behavior, definite integral with x and y as bounds\nsage: var('x,y')\nsage: integrate(x^2,x,x,y)\ny^3/3 - x^3/3\n\n# Triple Integral, twice with respect to x, once with respect to y\nsage: integrate(x^2,x,x,y)\nx^4*y/12\n\n# i.e. same as\nsage: (x^2).integrate(x).integrate(x).integrate(y)\n```\n",
+    "body": "What do you propose to do about the following case:\n\n```\n# Current behavior, definite integral with x and y as bounds\nsage: var('x,y')\nsage: integrate(x^2,x,x,y)\ny^3/3 - x^3/3\n\n# Triple Integral, twice with respect to x, once with respect to y\nsage: integrate(x^2,x,x,y)\nx^4*y/12\n\n# i.e. same as\nsage: (x^2).integrate(x).integrate(x).integrate(y)\n```",
     "created_at": "2008-09-03T02:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2787",
     "type": "issue_comment",
@@ -76,7 +74,6 @@ archive/issue_comments_019105.json:
 ```
 
 What do you propose to do about the following case:
-
 
 ```
 # Current behavior, definite integral with x and y as bounds
@@ -91,7 +88,6 @@ x^4*y/12
 # i.e. same as
 sage: (x^2).integrate(x).integrate(x).integrate(y)
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007596.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\nCC:  @slel\n\nHere's an example:\n\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @slel\n\nHere's an example:\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
     "created_at": "2009-12-03T20:06:43Z",
     "labels": [
         "component: number fields",
@@ -22,7 +22,6 @@ CC:  @slel
 
 Here's an example:
 
-
 ```
 sage: K.<a> = NumberField(x)
 sage: K.ideal(5)
@@ -32,7 +31,6 @@ Principal ideal (1) of Rational Field
 sage: QQ.number_field().ideal(5)
 Principal ideal (1) of Rational Field
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7596
 
@@ -134,7 +132,7 @@ here is already a ticket for the easy part : a method "places" for QQ
 archive/issue_comments_064675.json:
 ```json
 {
-    "body": "I have imported a patch trying to have QQ and number fields in the same categories:\n\n```\nsage: K.<phi> = NumberField(x**2-x-1)\nsage: K.categories() == QQ.categories()\nTrue\n```\n\nbut this breaks the lcm and gcd in a bad way..",
+    "body": "I have imported a patch trying to have QQ and number fields in the same categories:\n\n```\nsage: K.<phi> = NumberField(x**2-x-1)\nsage: K.categories() == QQ.categories()\nTrue\n```\nbut this breaks the lcm and gcd in a bad way..",
     "created_at": "2013-07-26T12:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -150,7 +148,6 @@ sage: K.<phi> = NumberField(x**2-x-1)
 sage: K.categories() == QQ.categories()
 True
 ```
-
 but this breaks the lcm and gcd in a bad way..
 
 
@@ -386,7 +383,7 @@ Changing status from new to needs_review.
 archive/issue_comments_064679.json:
 ```json
 {
-    "body": "-1 for closing. I think comment:11 discloses a serious problem, though not exactly what is emphasized in the ticket description.  Number fields are rings:\n\n```\nsage: K.<a> = NumberField(x)\nsage: isinstance(K, Ring)\nTrue\n```\n\nThus, the `ideal` method of a number field needs to return an ideal of `self` (not an ideal of some subring of `self`), because that is what is expected by the `ideal` method of a `Ring`. Otherwise, well-written code involving rings will be buggy. \n\nI think that if number theorists are not willing to accept this, then `NumberField` should not inherit from `Ring`. But I think it would be better to introduce a new method (maybe `integer_ideal`) to the `NumberField` class, or add a keyword flag to the `ideal` method.",
+    "body": "-1 for closing. I think comment:11 discloses a serious problem, though not exactly what is emphasized in the ticket description.  Number fields are rings:\n\n```\nsage: K.<a> = NumberField(x)\nsage: isinstance(K, Ring)\nTrue\n```\nThus, the `ideal` method of a number field needs to return an ideal of `self` (not an ideal of some subring of `self`), because that is what is expected by the `ideal` method of a `Ring`. Otherwise, well-written code involving rings will be buggy. \n\nI think that if number theorists are not willing to accept this, then `NumberField` should not inherit from `Ring`. But I think it would be better to introduce a new method (maybe `integer_ideal`) to the `NumberField` class, or add a keyword flag to the `ideal` method.",
     "created_at": "2021-02-09T20:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -402,7 +399,6 @@ sage: K.<a> = NumberField(x)
 sage: isinstance(K, Ring)
 True
 ```
-
 Thus, the `ideal` method of a number field needs to return an ideal of `self` (not an ideal of some subring of `self`), because that is what is expected by the `ideal` method of a `Ring`. Otherwise, well-written code involving rings will be buggy. 
 
 I think that if number theorists are not willing to accept this, then `NumberField` should not inherit from `Ring`. But I think it would be better to introduce a new method (maybe `integer_ideal`) to the `NumberField` class, or add a keyword flag to the `ideal` method.
@@ -434,7 +430,7 @@ This ticket has been open for 11 years...
 archive/issue_comments_064681.json:
 ```json
 {
-    "body": "I think I can live with the practical effect of the implementation of `is_prime` on number field elements, but note that its documentation says:\n\n```\n        Is ``self`` a prime element?\n\n        A *prime* element is a non-zero, non-unit element `p` such that,\n        whenever `p` divides `ab` for some `a` and `b`, then `p`\n        divides `a` or `p` divides `b`.\n...\n        In fields, an element is never prime::\n...\n```\n\nso its documentation directly contradicts its behaviour. This is due to the fact that the method is inherited from `Ring`, but the `ideal` protocol is not compatibly implemented. That obviously needs fixing. In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.\n\nReassigning this ticket to a milestone, because having documentation directly contradict behaviour is obviously something that not just generic \"low priority\" or \"not a bug\".",
+    "body": "I think I can live with the practical effect of the implementation of `is_prime` on number field elements, but note that its documentation says:\n\n```\n        Is ``self`` a prime element?\n\n        A *prime* element is a non-zero, non-unit element `p` such that,\n        whenever `p` divides `ab` for some `a` and `b`, then `p`\n        divides `a` or `p` divides `b`.\n...\n        In fields, an element is never prime::\n...\n```\nso its documentation directly contradicts its behaviour. This is due to the fact that the method is inherited from `Ring`, but the `ideal` protocol is not compatibly implemented. That obviously needs fixing. In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.\n\nReassigning this ticket to a milestone, because having documentation directly contradict behaviour is obviously something that not just generic \"low priority\" or \"not a bug\".",
     "created_at": "2021-08-02T16:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -455,7 +451,6 @@ I think I can live with the practical effect of the implementation of `is_prime`
         In fields, an element is never prime::
 ...
 ```
-
 so its documentation directly contradicts its behaviour. This is due to the fact that the method is inherited from `Ring`, but the `ideal` protocol is not compatibly implemented. That obviously needs fixing. In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.
 
 Reassigning this ticket to a milestone, because having documentation directly contradict behaviour is obviously something that not just generic "low priority" or "not a bug".
@@ -501,7 +496,7 @@ archive/issue_events_018043.json:
 archive/issue_comments_064682.json:
 ```json
 {
-    "body": "Replying to [comment:15 nbruin]:\n> In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.\n\nI had a shot at this over at #32340.",
+    "body": "Replying to [comment:15 nbruin]:\n> In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.\n\n\nI had a shot at this over at #32340.",
     "created_at": "2021-08-12T05:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
@@ -512,6 +507,7 @@ archive/issue_comments_064682.json:
 
 Replying to [comment:15 nbruin]:
 > In this case, it probably means equipping number field elements with a fresh implementation of `is_prime` with appropriate doc.
+
 
 I had a shot at this over at #32340.
 

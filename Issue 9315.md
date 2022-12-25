@@ -3,7 +3,7 @@
 archive/issues_009315.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\n\n```\n\nwstein@redhawk:~/db/modsym-2010$ sage modp.sage \ndata/000000/gamma0-aplist-mod2-000002-0008-10000.sobj\ndata/000000/gamma0-aplist-mod2-000003-0004-10000.sobj\ndata/000000/gamma0-aplist-mod2-000077-0002-10000.sobj\nTraceback (most recent call last):\n  File \"modp.py\", line 57, in <module>\n    go()\n  File \"modp.py\", line 52, in go\n    all(Integer(0),Integer(2))\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py\", line 101, in g\n    return f(*args, **kwds)\n  File \"modp.py\", line 48, in all\n    modp(d + '/' + name, p)\n  File \"modp.py\", line 27, in modp\n    save(X, name)\n  File \"sage_object.pyx\", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)\n  File \"finite_field_base.pyx\", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)\nTypeError: 'NoneType' object is unsubscriptable\nwstein@redhawk:~/db/modsym-2010$ \n```\n\n\nMore details to come!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\n```\n\nwstein@redhawk:~/db/modsym-2010$ sage modp.sage \ndata/000000/gamma0-aplist-mod2-000002-0008-10000.sobj\ndata/000000/gamma0-aplist-mod2-000003-0004-10000.sobj\ndata/000000/gamma0-aplist-mod2-000077-0002-10000.sobj\nTraceback (most recent call last):\n  File \"modp.py\", line 57, in <module>\n    go()\n  File \"modp.py\", line 52, in go\n    all(Integer(0),Integer(2))\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/parallel/decorate.py\", line 101, in g\n    return f(*args, **kwds)\n  File \"modp.py\", line 48, in all\n    modp(d + '/' + name, p)\n  File \"modp.py\", line 27, in modp\n    save(X, name)\n  File \"sage_object.pyx\", line 763, in sage.structure.sage_object.save (sage/structure/sage_object.c:7999)\n  File \"finite_field_base.pyx\", line 674, in sage.rings.finite_rings.finite_field_base.FiniteField.__reduce__ (sage/rings/finite_rings/finite_field_base.c:4937)\nTypeError: 'NoneType' object is unsubscriptable\nwstein@redhawk:~/db/modsym-2010$ \n```\n\nMore details to come!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9315\n\n",
     "created_at": "2010-06-22T18:58:02Z",
     "labels": [
         "component: basic arithmetic",
@@ -19,7 +19,6 @@ archive/issues_009315.json:
 Assignee: @aghitza
 
 CC:  @JohnCremona
-
 
 ```
 
@@ -44,7 +43,6 @@ TypeError: 'NoneType' object is unsubscriptable
 wstein@redhawk:~/db/modsym-2010$ 
 ```
 
-
 More details to come!
 
 Issue created by migration from https://trac.sagemath.org/ticket/9315
@@ -58,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9315
 archive/issue_comments_087626.json:
 ```json
 {
-    "body": "There is a function in finite_field_base.pyx that tries to pickle.  It has doctests but clearly can *never* actually work if run, i.e., it is never actually tested.  Here's the function:\n\n```\n\n    def __reduce__(self):\n        \"\"\"\n        Used in pickling.\n\n        EXAMPLES::\n\n            sage: A = FiniteField(127)\n            sage: A == loads(dumps(A)) # indirect doctest\n            True\n            sage: B = FiniteField(3^3,'b')\n            sage: B == loads(dumps(B))\n            True\n            sage: C = FiniteField(2^16,'c')\n            sage: C == loads(dumps(C))\n            True\n            sage: D = FiniteField(3^20,'d')\n            sage: D == loads(dumps(D))\n            True\n        \"\"\"\n        return self._factory_data[0].reduce_data(self)\n```\n\n\nHowever, _factory_data is not defined anywhere else in the source code:\n\n```\nwstein@redhawk:~/build/sage-4.4.4.alpha1/devel/sage/sage/rings/finite_rings$ grep _factory_data *.pyx *.pxd\n *.py                                                                                                      \nfinite_field_base.pyx:        return self._factory_data[0].reduce_data(self)\n```\n",
+    "body": "There is a function in finite_field_base.pyx that tries to pickle.  It has doctests but clearly can *never* actually work if run, i.e., it is never actually tested.  Here's the function:\n\n```\n\n    def __reduce__(self):\n        \"\"\"\n        Used in pickling.\n\n        EXAMPLES::\n\n            sage: A = FiniteField(127)\n            sage: A == loads(dumps(A)) # indirect doctest\n            True\n            sage: B = FiniteField(3^3,'b')\n            sage: B == loads(dumps(B))\n            True\n            sage: C = FiniteField(2^16,'c')\n            sage: C == loads(dumps(C))\n            True\n            sage: D = FiniteField(3^20,'d')\n            sage: D == loads(dumps(D))\n            True\n        \"\"\"\n        return self._factory_data[0].reduce_data(self)\n```\n\nHowever, _factory_data is not defined anywhere else in the source code:\n\n```\nwstein@redhawk:~/build/sage-4.4.4.alpha1/devel/sage/sage/rings/finite_rings$ grep _factory_data *.pyx *.pxd\n *.py                                                                                                      \nfinite_field_base.pyx:        return self._factory_data[0].reduce_data(self)\n```",
     "created_at": "2010-06-22T20:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -93,7 +91,6 @@ There is a function in finite_field_base.pyx that tries to pickle.  It has docte
         return self._factory_data[0].reduce_data(self)
 ```
 
-
 However, _factory_data is not defined anywhere else in the source code:
 
 ```
@@ -101,7 +98,6 @@ wstein@redhawk:~/build/sage-4.4.4.alpha1/devel/sage/sage/rings/finite_rings$ gre
  *.py                                                                                                      
 finite_field_base.pyx:        return self._factory_data[0].reduce_data(self)
 ```
-
 
 
 
@@ -146,7 +142,7 @@ Changing status from new to needs_review.
 archive/issue_comments_087629.json:
 ```json
 {
-    "body": "I get this doctest failure (and no more in finite_rings):\n\n\n```\nsage -t  \"sage/rings/finite_rings/element_ntl_gf2e.pyx\"     \n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1092:\n    sage: f = loads(dumps(e))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[4]>\", line 1, in <module>\n        f = loads(dumps(e))###line 1092:\n    sage: f = loads(dumps(e))\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1093:\n    sage: e is f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[5]>\", line 1, in <module>\n        e is f###line 1093:\n    sage: e is f\n    NameError: name 'f' is not defined\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1095:\n    sage: e == f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[6]>\", line 1, in <module>\n        e == f###line 1095:\n    sage: e == f\n    NameError: name 'f' is not defined\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1449:\n    sage: loads(dumps(a)) == a\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_55[3]>\", line 1, in <module>\n        loads(dumps(a)) == a###line 1449:\n    sage: loads(dumps(a)) == a\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1499:\n    sage: f = loads(dumps(e)) # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_57[4]>\", line 1, in <module>\n        f = loads(dumps(e)) # indirect doctest###line 1499:\n    sage: f = loads(dumps(e)) # indirect doctest\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1500:\n    sage: e == f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_57[5]>\", line 1, in <module>\n        e == f###line 1500:\n    sage: e == f\n    NameError: name 'f' is not defined\n**********************************************************************\n3 items had failures:\n   3 of   8 in __main__.example_40\n   1 of   4 in __main__.example_55\n   2 of   6 in __main__.example_57\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_element_ntl_gf2e.py\n\t [2.6 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"sage/rings/finite_rings/element_ntl_gf2e.pyx\"\nTotal time for all tests: 2.6 seconds\n```\n",
+    "body": "I get this doctest failure (and no more in finite_rings):\n\n```\nsage -t  \"sage/rings/finite_rings/element_ntl_gf2e.pyx\"     \n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1092:\n    sage: f = loads(dumps(e))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[4]>\", line 1, in <module>\n        f = loads(dumps(e))###line 1092:\n    sage: f = loads(dumps(e))\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1093:\n    sage: e is f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[5]>\", line 1, in <module>\n        e is f###line 1093:\n    sage: e is f\n    NameError: name 'f' is not defined\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1095:\n    sage: e == f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[6]>\", line 1, in <module>\n        e == f###line 1095:\n    sage: e == f\n    NameError: name 'f' is not defined\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1449:\n    sage: loads(dumps(a)) == a\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_55[3]>\", line 1, in <module>\n        loads(dumps(a)) == a###line 1449:\n    sage: loads(dumps(a)) == a\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1499:\n    sage: f = loads(dumps(e)) # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_57[4]>\", line 1, in <module>\n        f = loads(dumps(e)) # indirect doctest###line 1499:\n    sage: f = loads(dumps(e)) # indirect doctest\n      File \"sage_object.pyx\", line 915, in sage.structure.sage_object.loads (sage/structure/sage_object.c:9175)\n      File \"element_ntl_gf2e.pyx\", line 200, in sage.rings.finite_rings.element_ntl_gf2e.FiniteField_ntl_gf2e.__cinit__ (sage/rings/finite_rings/element_ntl_gf2e.cpp:3159)\n    TypeError: __cinit__() takes at least 1 positional argument (0 given)\n**********************************************************************\nFile \"/home/john/sage-4.5.alpha4/devel/sage-tests/sage/rings/finite_rings/element_ntl_gf2e.pyx\", line 1500:\n    sage: e == f\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_57[5]>\", line 1, in <module>\n        e == f###line 1500:\n    sage: e == f\n    NameError: name 'f' is not defined\n**********************************************************************\n3 items had failures:\n   3 of   8 in __main__.example_40\n   1 of   4 in __main__.example_55\n   2 of   6 in __main__.example_57\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_element_ntl_gf2e.py\n\t [2.6 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"sage/rings/finite_rings/element_ntl_gf2e.pyx\"\nTotal time for all tests: 2.6 seconds\n```",
     "created_at": "2010-07-07T12:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -156,7 +152,6 @@ archive/issue_comments_087629.json:
 ```
 
 I get this doctest failure (and no more in finite_rings):
-
 
 ```
 sage -t  "sage/rings/finite_rings/element_ntl_gf2e.pyx"     
@@ -272,7 +267,6 @@ The following tests failed:
 	sage -t  "sage/rings/finite_rings/element_ntl_gf2e.pyx"
 Total time for all tests: 2.6 seconds
 ```
-
 
 
 
@@ -429,7 +423,7 @@ archive/issue_comments_087637.json:
 archive/issue_comments_087638.json:
 ```json
 {
-    "body": "Replying to [comment:8 cremona]:\n> I am reviewing this now.   Question: is it not possible to avoid the code duplication?  Could we not have a `__reduce()__` function in the base class that could somehow detect whether or not that is appropriate to use?  Perhaps all finite fields should on creation be given a tag to say whether or not they fall under the factory framework?\n> \n> I guess that you considered this already, and that it is harder than I am suggesting.\n> \n\nYes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.\n\n> On with the testing, anyway!",
+    "body": "Replying to [comment:8 cremona]:\n> I am reviewing this now.   Question: is it not possible to avoid the code duplication?  Could we not have a `__reduce()__` function in the base class that could somehow detect whether or not that is appropriate to use?  Perhaps all finite fields should on creation be given a tag to say whether or not they fall under the factory framework?\n> \n> I guess that you considered this already, and that it is harder than I am suggesting.\n> \n\n\nYes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.\n\n> On with the testing, anyway!",
     "created_at": "2010-08-14T16:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -444,6 +438,7 @@ Replying to [comment:8 cremona]:
 > I guess that you considered this already, and that it is harder than I am suggesting.
 > 
 
+
 Yes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.
 
 > On with the testing, anyway!
@@ -455,7 +450,7 @@ Yes, i tried for several hours to figure out how to do that and failed completel
 archive/issue_comments_087639.json:
 ```json
 {
-    "body": "Replying to [comment:10 was]:\n> Replying to [comment:8 cremona]:\n> > I am reviewing this now.   Question: is it not possible to avoid the code duplication?  Could we not have a `__reduce()__` function in the base class that could somehow detect whether or not that is appropriate to use?  Perhaps all finite fields should on creation be given a tag to say whether or not they fall under the factory framework?\n> > \n> > I guess that you considered this already, and that it is harder than I am suggesting.\n> > \n> \n> Yes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.\n> \n\nI guessed you would have tried.\n\n\n> > On with the testing, anyway!\n\nAll tests pass (sage -tp 10 -long).\n\nUnfortunately,  this does not fix #9409.  But as it is not certain that pickling of residue fields is the issue there (though I reckon it must be) I will not delay this one on that account.",
+    "body": "Replying to [comment:10 was]:\n> Replying to [comment:8 cremona]:\n> > I am reviewing this now.   Question: is it not possible to avoid the code duplication?  Could we not have a `__reduce()__` function in the base class that could somehow detect whether or not that is appropriate to use?  Perhaps all finite fields should on creation be given a tag to say whether or not they fall under the factory framework?\n> > \n> > I guess that you considered this already, and that it is harder than I am suggesting.\n> > \n\n> \n> Yes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.\n> \n\n\nI guessed you would have tried.\n\n\n> > On with the testing, anyway!\n\n\nAll tests pass (sage -tp 10 -long).\n\nUnfortunately,  this does not fix #9409.  But as it is not certain that pickling of residue fields is the issue there (though I reckon it must be) I will not delay this one on that account.",
     "created_at": "2010-08-14T17:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -470,14 +465,17 @@ Replying to [comment:10 was]:
 > > 
 > > I guess that you considered this already, and that it is harder than I am suggesting.
 > > 
+
 > 
 > Yes, i tried for several hours to figure out how to do that and failed completely.  Obviously, if somrbody can find a way to do whatvyou propose that might be good.  But the fact is the currrent patch fixes a major bug, and nobody has suggested a better fix.
 > 
+
 
 I guessed you would have tried.
 
 
 > > On with the testing, anyway!
+
 
 All tests pass (sage -tp 10 -long).
 
@@ -508,7 +506,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_087641.json:
 ```json
 {
-    "body": "> Unfortunately, this does not fix #9409. But as it is not certain\n>  that pickling of residue fields is the issue there (though \n> I reckon it must be) I will not delay this one on that account. \n\nBy \"pickling\" maybe you mean \"caching\"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., \"pickling doesn't work at all\").",
+    "body": "> Unfortunately, this does not fix #9409. But as it is not certain\n>  that pickling of residue fields is the issue there (though \n> I reckon it must be) I will not delay this one on that account. \n\n\nBy \"pickling\" maybe you mean \"caching\"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., \"pickling doesn't work at all\").",
     "created_at": "2010-08-15T17:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -521,6 +519,7 @@ archive/issue_comments_087641.json:
 >  that pickling of residue fields is the issue there (though 
 > I reckon it must be) I will not delay this one on that account. 
 
+
 By "pickling" maybe you mean "caching"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., "pickling doesn't work at all").
 
 
@@ -530,7 +529,7 @@ By "pickling" maybe you mean "caching"?   I didn't make any changes at all, what
 archive/issue_comments_087642.json:
 ```json
 {
-    "body": "Replying to [comment:12 was]:\n> > Unfortunately, this does not fix #9409. But as it is not certain\n> >  that pickling of residue fields is the issue there (though \n> > I reckon it must be) I will not delay this one on that account. \n> \n> By \"pickling\" maybe you mean \"caching\"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., \"pickling doesn't work at all\").\n\nOK, I just don't know what I am talking about.... \n>",
+    "body": "Replying to [comment:12 was]:\n> > Unfortunately, this does not fix #9409. But as it is not certain\n> >  that pickling of residue fields is the issue there (though \n> > I reckon it must be) I will not delay this one on that account. \n\n> \n> By \"pickling\" maybe you mean \"caching\"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., \"pickling doesn't work at all\").\n\n\nOK, I just don't know what I am talking about.... \n>",
     "created_at": "2010-08-15T19:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9315",
     "type": "issue_comment",
@@ -543,8 +542,10 @@ Replying to [comment:12 was]:
 > > Unfortunately, this does not fix #9409. But as it is not certain
 > >  that pickling of residue fields is the issue there (though 
 > > I reckon it must be) I will not delay this one on that account. 
+
 > 
 > By "pickling" maybe you mean "caching"?   I didn't make any changes at all, whatsoever to caching.  The only actual change my patch makes is that the default __reduce__ method is now used when explicitly pickling residue fields.   Before pickling residue fields just resulted in a big error.   So what I do can't possibly fix any bug that wasn't very explicit before (i.e., "pickling doesn't work at all").
+
 
 OK, I just don't know what I am talking about.... 
 >

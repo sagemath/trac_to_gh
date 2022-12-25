@@ -3,7 +3,7 @@
 archive/issues_002132.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nHere are two examples of two different types of errors. If you have lots of memory, I suppose that you might need to make figsize bigger.\n\n(The following takes place on a 32-bit Core Duo with 2 gigs of ram.)\n\n\n```\nsage: P = plot(sin(x))\nsage: P.show(figsize=[200,200])\nterminate called after throwing an instance of 'std::bad_alloc'\n  what():  std::bad_alloc\n/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\nbober@bober:~/sage/misc$ \n```\n\n\n\n```\nbober@bober:~/sage/misc$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: graph_embeddings\nsage: P = plot(sin(x))\nsage: P.show(figsize[1000,1000])\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n---------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2132\n\n",
+    "body": "Assignee: @williamstein\n\nHere are two examples of two different types of errors. If you have lots of memory, I suppose that you might need to make figsize bigger.\n\n(The following takes place on a 32-bit Core Duo with 2 gigs of ram.)\n\n```\nsage: P = plot(sin(x))\nsage: P.show(figsize=[200,200])\nterminate called after throwing an instance of 'std::bad_alloc'\n  what():  std::bad_alloc\n/home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\nbober@bober:~/sage/misc$ \n```\n\n```\nbober@bober:~/sage/misc$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: graph_embeddings\nsage: P = plot(sin(x))\nsage: P.show(figsize[1000,1000])\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n---------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2132\n\n",
     "created_at": "2008-02-09T21:46:04Z",
     "labels": [
         "component: graphics",
@@ -23,7 +23,6 @@ Here are two examples of two different types of errors. If you have lots of memo
 
 (The following takes place on a 32-bit Core Duo with 2 gigs of ram.)
 
-
 ```
 sage: P = plot(sin(x))
 sage: P.show(figsize=[200,200])
@@ -32,8 +31,6 @@ terminate called after throwing an instance of 'std::bad_alloc'
 /home/bober/sage/local/bin/sage-sage: line 210: 12131 Aborted                 (core dumped) sage-ipython -c "$SAGE_STARTUP_COMMAND;" "$@"
 bober@bober:~/sage/misc$ 
 ```
-
-
 
 ```
 bober@bober:~/sage/misc$ sage
@@ -51,7 +48,6 @@ You might want to run SAGE under gdb with 'sage -gdb' to debug this.
 SAGE will now terminate (sorry).
 ---------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2132
 
@@ -124,7 +120,7 @@ Resolution: worksforme
 archive/issue_comments_013953.json:
 ```json
 {
-    "body": "I get\n\n```\n/home/boothby/sage/local/lib/python2.5/site-packages/matplotlib/backends/backend_agg.py in __init__(self, width, height, dpi)\n     60         self.height = height\n     61         if __debug__: verbose.report('RendererAgg.__init__ width=%s, height=%s'%(width, height), 'debug-annoying')\n---> 62         self._renderer = _RendererAgg(int(width), int(height), dpi, debug=False)\n     63         if __debug__: verbose.report('RendererAgg.__init__ _RendererAgg done',\n     64                                      'debug-annoying')\n\nValueError: width and height must each be below 32768\nsage: \n```\n",
+    "body": "I get\n\n```\n/home/boothby/sage/local/lib/python2.5/site-packages/matplotlib/backends/backend_agg.py in __init__(self, width, height, dpi)\n     60         self.height = height\n     61         if __debug__: verbose.report('RendererAgg.__init__ width=%s, height=%s'%(width, height), 'debug-annoying')\n---> 62         self._renderer = _RendererAgg(int(width), int(height), dpi, debug=False)\n     63         if __debug__: verbose.report('RendererAgg.__init__ _RendererAgg done',\n     64                                      'debug-annoying')\n\nValueError: width and height must each be below 32768\nsage: \n```",
     "created_at": "2009-01-23T10:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2132",
     "type": "issue_comment",
@@ -146,7 +142,6 @@ I get
 ValueError: width and height must each be below 32768
 sage: 
 ```
-
 
 
 

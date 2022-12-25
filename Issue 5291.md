@@ -114,7 +114,7 @@ save calls save_snapshot which updates worksheet.txt
 archive/issue_comments_040584.json:
 ```json
 {
-    "body": "> save calls save_snapshot which updates worksheet.txt \n\nyep.  Snapshotting *only* ever writes a copy of worksheet.txt. \n\nREVIEW:\n\n* positive review -- but it is not an efficient approach.  \n\nSee Trac #5300 which will be about doing the same thing more efficiently.",
+    "body": "> save calls save_snapshot which updates worksheet.txt \n\n\nyep.  Snapshotting *only* ever writes a copy of worksheet.txt. \n\nREVIEW:\n\n* positive review -- but it is not an efficient approach.  \n\nSee Trac #5300 which will be about doing the same thing more efficiently.",
     "created_at": "2009-02-18T00:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5291",
     "type": "issue_comment",
@@ -124,6 +124,7 @@ archive/issue_comments_040584.json:
 ```
 
 > save calls save_snapshot which updates worksheet.txt 
+
 
 yep.  Snapshotting *only* ever writes a copy of worksheet.txt. 
 

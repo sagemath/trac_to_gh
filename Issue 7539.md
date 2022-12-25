@@ -66,7 +66,7 @@ Kevin Stueve
 archive/issue_comments_063832.json:
 ```json
 {
-    "body": "Leif Leonhardy sent some very useful contributions over the past days.  Following is our correspondence.\n----\n*Friday December 4, 2009:\nHi Kevin,\n\nI've made some changes to [your version of] TOS's prime_sieve.c, making\nit more portable and removing the 4-byte pointer constraint (i.e. fixing\nyour \"-m64\" problem).\n\nThe original version also contains an overflow bug on large intervals\n(>=2^36).\n(Another overflow still occurs [very] near to 2^64, because the sum of\n[the muted] main_base and numbers_per_segment might [or will] exceed 64\nbits.)\nFor use with Sage, the modulo-64* limitation on the intervals' bounds\nshould be removed, too (easy, but it didn't disturb me yet ;-) ).\nI also fixed your parameter handling and output of the result.\n\nIf you intend to build a library rather than a stand-alone program the\nmemory management should be rewritten (and globals removed). Running\nmany sieving threads on multi-core CPUs doesn't make much sense because\nmemory (consumption and traffic) is the bottleneck; the sieving primes\nlists (\"main_lists\") can't be shared among tasks (TOS's optimization\nis a \"sequential\" one in that sense).\n\nNote that TOS's implementation, as he stated, was created mainly for\nillustration purposes - \"simple but serious\" - and wasn't intended (and\ndoesn't claim) to be \"fully optimized\" or optimal in all aspects.\n\nThe default values for sieve (segment) and bucket size were appropriate\nin 2002; for contemporary hardware, both should be increased. I got best\nresults with the (currently) maximal bucket size of 64KB, and sieve\nsegment sizes of 256KB and 1MB on an Intel Pentium 4 Prescott (1MB L2\ncache) and Intel Core2 with 6MB L2 cache per core-pair (e.g. E8400,\nQ9x50), respectively. Also, native code (\"-m64\"**) runs faster on x86_64\nplatforms, even with u32 as the sieve basetype; using 64- rather than\n32-bit words for the sieve has probably greater effect on platforms like\nSPARC64, I guess. (Compile with \"-DSIEVE_BASETYPE_U64\" to get that.)\n\nI've attached your version of prime_sieve.c (\"Silva.c.orig\", 09/04/09),\ntoo, since I'm not sure I fetched the latest. The first diff contains a\n(working) subset of the changes I made, the second contains all changes.\nA ChangeLog (and adaption of TOS's \"#if 0\" test code) is in the\npipeline... :/\n\nHave fun,\n-Leif\n\n----\n\n*My reply, December 4th 2009\nSounds great\n[...]\n\nOn a Macbook pro, I have found that dualthreaded (simply calling TOS\ntwice for two adjacent intervals) is about 1.71 times faster.  I hope\nthat it might be possible to improve that.\n[...]\nKevin Stueve\n----\n*From Leif, December 4th 2009\nHi again,\n\nI've just found another little 64bit-pointer bug in get_memory(),\nthe attached diff contains only that patch.\n\n-Leif\n----\n*From Leif, December 5th, 2009\nHi Kevin,\n\nI've fixed the modulo-64 (or modulo-128 for 64-bit sieve words)\nrestriction on interval bounds (by enlarging the sieved interval and\nsubtracting the \"extra\" primes found if necessary);\nupper_bound==lower_bound is allowed now, too.\n[Adapting the Python code is up to you ;-)]\n\nThe majority of \"#ifdef SIEVE_BASETYPE_U64\"s has also been removed in\nfavour of conditional macros and constants defined at the beginning.\n\n-Leif\n\nP.S.: By \"many sieving threads\" (currently: processes) I meant more than\n2 or 4; but even with only few instances the processor's cache(s) might\nbegin thrashing and we might run out of physical RAM; the behaviour can\ndepend on not only the specific hardware but compile-time parameters\n(and does of course depend on the interval's lower bound), too.\n[Even small intervals above 4e18 require ~0.8GB (per process), intervals\nnear 2^64 approx. 1.6GB. In worst case the machine starts swapping and\nmultiple processes run slower, taking more time than a single would have\ntaken. If I could get rid of the megs of sieving primes, I'd use the\nhundreds of cores on modern GPUs. :-) ]",
+    "body": "Leif Leonhardy sent some very useful contributions over the past days.  Following is our correspondence.\n\n---\n*Friday December 4, 2009:\nHi Kevin,\n\nI've made some changes to [your version of] TOS's prime_sieve.c, making\nit more portable and removing the 4-byte pointer constraint (i.e. fixing\nyour \"-m64\" problem).\n\nThe original version also contains an overflow bug on large intervals\n(>=2^36).\n(Another overflow still occurs [very] near to 2^64, because the sum of\n[the muted] main_base and numbers_per_segment might [or will] exceed 64\nbits.)\nFor use with Sage, the modulo-64* limitation on the intervals' bounds\nshould be removed, too (easy, but it didn't disturb me yet ;-) ).\nI also fixed your parameter handling and output of the result.\n\nIf you intend to build a library rather than a stand-alone program the\nmemory management should be rewritten (and globals removed). Running\nmany sieving threads on multi-core CPUs doesn't make much sense because\nmemory (consumption and traffic) is the bottleneck; the sieving primes\nlists (\"main_lists\") can't be shared among tasks (TOS's optimization\nis a \"sequential\" one in that sense).\n\nNote that TOS's implementation, as he stated, was created mainly for\nillustration purposes - \"simple but serious\" - and wasn't intended (and\ndoesn't claim) to be \"fully optimized\" or optimal in all aspects.\n\nThe default values for sieve (segment) and bucket size were appropriate\nin 2002; for contemporary hardware, both should be increased. I got best\nresults with the (currently) maximal bucket size of 64KB, and sieve\nsegment sizes of 256KB and 1MB on an Intel Pentium 4 Prescott (1MB L2\ncache) and Intel Core2 with 6MB L2 cache per core-pair (e.g. E8400,\nQ9x50), respectively. Also, native code (\"-m64\"**) runs faster on x86_64\nplatforms, even with u32 as the sieve basetype; using 64- rather than\n32-bit words for the sieve has probably greater effect on platforms like\nSPARC64, I guess. (Compile with \"-DSIEVE_BASETYPE_U64\" to get that.)\n\nI've attached your version of prime_sieve.c (\"Silva.c.orig\", 09/04/09),\ntoo, since I'm not sure I fetched the latest. The first diff contains a\n(working) subset of the changes I made, the second contains all changes.\nA ChangeLog (and adaption of TOS's \"#if 0\" test code) is in the\npipeline... :/\n\nHave fun,\n-Leif\n\n---\n\n*My reply, December 4th 2009\nSounds great\n[...]\n\nOn a Macbook pro, I have found that dualthreaded (simply calling TOS\ntwice for two adjacent intervals) is about 1.71 times faster.  I hope\nthat it might be possible to improve that.\n[...]\nKevin Stueve\n\n---\n*From Leif, December 4th 2009\nHi again,\n\nI've just found another little 64bit-pointer bug in get_memory(),\nthe attached diff contains only that patch.\n\n-Leif\n\n---\n*From Leif, December 5th, 2009\nHi Kevin,\n\nI've fixed the modulo-64 (or modulo-128 for 64-bit sieve words)\nrestriction on interval bounds (by enlarging the sieved interval and\nsubtracting the \"extra\" primes found if necessary);\nupper_bound==lower_bound is allowed now, too.\n[Adapting the Python code is up to you ;-)]\n\nThe majority of \"#ifdef SIEVE_BASETYPE_U64\"s has also been removed in\nfavour of conditional macros and constants defined at the beginning.\n\n-Leif\n\nP.S.: By \"many sieving threads\" (currently: processes) I meant more than\n2 or 4; but even with only few instances the processor's cache(s) might\nbegin thrashing and we might run out of physical RAM; the behaviour can\ndepend on not only the specific hardware but compile-time parameters\n(and does of course depend on the interval's lower bound), too.\n[Even small intervals above 4e18 require ~0.8GB (per process), intervals\nnear 2^64 approx. 1.6GB. In worst case the machine starts swapping and\nmultiple processes run slower, taking more time than a single would have\ntaken. If I could get rid of the megs of sieving primes, I'd use the\nhundreds of cores on modern GPUs. :-) ]",
     "created_at": "2009-12-06T06:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -76,7 +76,8 @@ archive/issue_comments_063832.json:
 ```
 
 Leif Leonhardy sent some very useful contributions over the past days.  Following is our correspondence.
-----
+
+---
 *Friday December 4, 2009:
 Hi Kevin,
 
@@ -123,7 +124,7 @@ pipeline... :/
 Have fun,
 -Leif
 
-----
+---
 
 *My reply, December 4th 2009
 Sounds great
@@ -134,7 +135,8 @@ twice for two adjacent intervals) is about 1.71 times faster.  I hope
 that it might be possible to improve that.
 [...]
 Kevin Stueve
-----
+
+---
 *From Leif, December 4th 2009
 Hi again,
 
@@ -142,7 +144,8 @@ I've just found another little 64bit-pointer bug in get_memory(),
 the attached diff contains only that patch.
 
 -Leif
-----
+
+---
 *From Leif, December 5th, 2009
 Hi Kevin,
 
@@ -251,7 +254,7 @@ original version of Silva.c
 archive/issue_comments_063837.json:
 ```json
 {
-    "body": "From IRC:\n\n```\n06:44 < mvngu> The attachments look like a mess to me.\n06:45 < SageWWW> They are supposedly diffs\n06:45 < mvngu> I downloaded the first attachment, uncompressed it, and can't \n               work out which patches to apply in which order.\n06:49 < SageWWW> \"The first diff contains a (working) subset of the changes I \n                 made, the second contains all changes.\"Leif\n06:50 < SageWWW> That is in his first email.  And he also included the original\n06:51 < mvngu> So Silva.c.orig is the original version. And Silva.c is the \n               newer version with all changes in the diff's?\n06:51 < SageWWW> Perhaps.  It would be easier to tell if Leif added himself to \n                 the authors section of the updated code\n06:53 < mvngu> The diff's don't look like standard diff formats. At least when \n               I apply them with the command \"patch\", they failed to apply.\n06:56 < SageWWW> It is extra confusing that Andrew Ohana and Leif Leonhardy \n                 both made their own updated version of Kevin Stueve's updated \n                 version of Oliviera e Silva's code.\n06:56 < mvngu> I think if you diff Silva.c.orig against Silva.c, you get the \n               differences in the newer version (which is Silva.c).\n```\n\nThe attachments look confusing to me. So I have attached what I think is the sequence of patches to apply on top of the original C code version `Silva.c.orig`. Starting from `Silva.c.orig`, apply the three patches in this order:\n\n1. `01_Silva.patch`\n2. `02_Silva.patch`\n3. `03_Silva.patch`\n\nAfter applying the above three patches on top of `Silva.c.orig`, you get the file `Silva.c`. I hope my attachments would resolve some of the confusion.",
+    "body": "From IRC:\n\n```\n06:44 < mvngu> The attachments look like a mess to me.\n06:45 < SageWWW> They are supposedly diffs\n06:45 < mvngu> I downloaded the first attachment, uncompressed it, and can't \n               work out which patches to apply in which order.\n06:49 < SageWWW> \"The first diff contains a (working) subset of the changes I \n                 made, the second contains all changes.\"Leif\n06:50 < SageWWW> That is in his first email.  And he also included the original\n06:51 < mvngu> So Silva.c.orig is the original version. And Silva.c is the \n               newer version with all changes in the diff's?\n06:51 < SageWWW> Perhaps.  It would be easier to tell if Leif added himself to \n                 the authors section of the updated code\n06:53 < mvngu> The diff's don't look like standard diff formats. At least when \n               I apply them with the command \"patch\", they failed to apply.\n06:56 < SageWWW> It is extra confusing that Andrew Ohana and Leif Leonhardy \n                 both made their own updated version of Kevin Stueve's updated \n                 version of Oliviera e Silva's code.\n06:56 < mvngu> I think if you diff Silva.c.orig against Silva.c, you get the \n               differences in the newer version (which is Silva.c).\n```\nThe attachments look confusing to me. So I have attached what I think is the sequence of patches to apply on top of the original C code version `Silva.c.orig`. Starting from `Silva.c.orig`, apply the three patches in this order:\n\n1. `01_Silva.patch`\n2. `02_Silva.patch`\n3. `03_Silva.patch`\n\nAfter applying the above three patches on top of `Silva.c.orig`, you get the file `Silva.c`. I hope my attachments would resolve some of the confusion.",
     "created_at": "2009-12-24T15:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -282,7 +285,6 @@ From IRC:
 06:56 < mvngu> I think if you diff Silva.c.orig against Silva.c, you get the 
                differences in the newer version (which is Silva.c).
 ```
-
 The attachments look confusing to me. So I have attached what I think is the sequence of patches to apply on top of the original C code version `Silva.c.orig`. Starting from `Silva.c.orig`, apply the three patches in this order:
 
 1. `01_Silva.patch`
@@ -396,7 +398,7 @@ version of Silva.c after applying the previous 4 patches
 archive/issue_comments_063843.json:
 ```json
 {
-    "body": "From IRC:\n\n```\n07:57 < SageWWW> mvngu, what do you think Leif meant by a working subset of \n                 changes?\n08:02 < mvngu> SageWWW: I think it's removing the 4-byte pointer constraint. \n               The working changes in the first diff now also work for 8-byte \n               pointers.\n08:03 < SageWWW> It is still confusing.  Leif provided 4 patches total.\n08:03 < mvngu> I know. You could ask for clarification on the ticket. \n08:03 < mvngu> Do you have an account on the trac server?\n08:04 < SageWWW> I think you should modify your comment on the trac server to \n                 specifically state which of Leif's files corresponds to which \n                 of yours\n08:04 < SageWWW> kevin.stueve\n08:04 < mvngu> Let me modify the patches I have attached. Hang on...\n```\n\nI have deleted the previous 3 patches. In their place I attached 4 patches which correspond to the diff's contained in the attachments kevin.stueve. Starting from Silva.c.orig, apply the 4 patches in this order:\n\n1. `01_Silva.patch`\n2. `02_Silva.patch`\n3. `03_Silva.patch`\n4. `04_Silva.patch`\n \nAfter applying the above four patches on top of Silva.c.orig, you get the file Silva.c. I hope my attachments would resolve some of the confusion.",
+    "body": "From IRC:\n\n```\n07:57 < SageWWW> mvngu, what do you think Leif meant by a working subset of \n                 changes?\n08:02 < mvngu> SageWWW: I think it's removing the 4-byte pointer constraint. \n               The working changes in the first diff now also work for 8-byte \n               pointers.\n08:03 < SageWWW> It is still confusing.  Leif provided 4 patches total.\n08:03 < mvngu> I know. You could ask for clarification on the ticket. \n08:03 < mvngu> Do you have an account on the trac server?\n08:04 < SageWWW> I think you should modify your comment on the trac server to \n                 specifically state which of Leif's files corresponds to which \n                 of yours\n08:04 < SageWWW> kevin.stueve\n08:04 < mvngu> Let me modify the patches I have attached. Hang on...\n```\nI have deleted the previous 3 patches. In their place I attached 4 patches which correspond to the diff's contained in the attachments kevin.stueve. Starting from Silva.c.orig, apply the 4 patches in this order:\n\n1. `01_Silva.patch`\n2. `02_Silva.patch`\n3. `03_Silva.patch`\n4. `04_Silva.patch`\n \nAfter applying the above four patches on top of Silva.c.orig, you get the file Silva.c. I hope my attachments would resolve some of the confusion.",
     "created_at": "2009-12-24T16:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -422,7 +424,6 @@ From IRC:
 08:04 < SageWWW> kevin.stueve
 08:04 < mvngu> Let me modify the patches I have attached. Hang on...
 ```
-
 I have deleted the previous 3 patches. In their place I attached 4 patches which correspond to the diff's contained in the attachments kevin.stueve. Starting from Silva.c.orig, apply the 4 patches in this order:
 
 1. `01_Silva.patch`
@@ -439,7 +440,7 @@ After applying the above four patches on top of Silva.c.orig, you get the file S
 archive/issue_comments_063844.json:
 ```json
 {
-    "body": "\n```\n08:57 < mvngu> So starting from Silva.c.orig, I applied Silva.c.diff0 which is \n               the same as 01_Silva.patch.\n08:59 < mvngu> Call the file with 01_Silva.patch applied \"Silva.c\".\n08:59 < mvngu> I then do a diff of Silva.c against the version of Silva.c in \n               Leif_attachment1.zip.\n09:00 < mvngu> That produce the patch file 02_Silva.patch.\n```\n",
+    "body": "```\n08:57 < mvngu> So starting from Silva.c.orig, I applied Silva.c.diff0 which is \n               the same as 01_Silva.patch.\n08:59 < mvngu> Call the file with 01_Silva.patch applied \"Silva.c\".\n08:59 < mvngu> I then do a diff of Silva.c against the version of Silva.c in \n               Leif_attachment1.zip.\n09:00 < mvngu> That produce the patch file 02_Silva.patch.\n```",
     "created_at": "2009-12-24T17:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -447,7 +448,6 @@ archive/issue_comments_063844.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-
 
 ```
 08:57 < mvngu> So starting from Silva.c.orig, I applied Silva.c.diff0 which is 
@@ -457,7 +457,6 @@ archive/issue_comments_063844.json:
                Leif_attachment1.zip.
 09:00 < mvngu> That produce the patch file 02_Silva.patch.
 ```
-
 
 
 
@@ -598,7 +597,7 @@ Correction: 1e10 or better
 archive/issue_comments_063851.json:
 ```json
 {
-    "body": "Replying to [comment:12 kevin.stueve]:\n> So you really only need values between 2e16 and 2<sup>64</sup>.\n\nOnly? There was no decimal point missing in 1844... ;-)",
+    "body": "Replying to [comment:12 kevin.stueve]:\n> So you really only need values between 2e16 and 2<sup>64</sup>.\n\n\nOnly? There was no decimal point missing in 1844... ;-)",
     "created_at": "2010-01-11T00:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -609,6 +608,7 @@ archive/issue_comments_063851.json:
 
 Replying to [comment:12 kevin.stueve]:
 > So you really only need values between 2e16 and 2<sup>64</sup>.
+
 
 Only? There was no decimal point missing in 1844... ;-)
 
@@ -673,7 +673,7 @@ Kevin Stueve
 archive/issue_comments_063853.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> Now going to extend its domain further up to 2<sup>64</sup>-1...\n\n\n\n```\n\tpi(10000000000000000000)=234057667276344607\t# ok\n\tpi(10000100000000000000)=234059953037027338     # ok (sieved)\n\tpi(10001000000000000000)=234080524854508201\n\tpi(10002000000000000000)=234103382381000184\n\tpi(10003000000000000000)=234126239852389526\n\tpi(10004000000000000000)=234149097272730775\n\tpi(10005000000000000000)=234171954644081388\n\tpi(10006000000000000000)=234194811963658747\n\tpi(10007000000000000000)=234217669226973010\n\tpi(10008000000000000000)=234240526435037954\n\tpi(10009000000000000000)=234263383594121363\n\tpi(10010000000000000000)=234286240703110411\t# ok\n\tpi(18440000000000000000)=425504257754137607\t# ok\n\tpi(18441000000000000000)=425526800039801658\n\tpi(18442000000000000000)=425549342293840481\n\tpi(18443000000000000000)=425571884521908383\n\tpi(18444000000000000000)=425594426720237587\n\tpi(18445000000000000000)=425616968892901351\n\tpi(18446000000000000000)=425639511036514638\n\tpi(18446100000000000000)=425641765249620069\n\tpi(18446200000000000000)=425644019461402605\n\tpi(18446300000000000000)=425646273676018091\n\tpi(18446400000000000000)=425648527886817884\n\tpi(18446500000000000000)=425650782098479434\n\tpi(18446600000000000000)=425653036308859193\n\tpi(18446700000000000000)=425655290520421050\n\tpi(18446744073709551615)=425656284035217743\t# ok\n\n```\n\n\nHappy validating... ;-)\n\n*\"You just need a computer with a pentium or equivalent chip, turning on windows 95, 98 or NT. ...\"* [Xavier Gourdon about his \"fastpix11\"]\n\n(Still cleaning up the code.)\n\n-Leif",
+    "body": "Replying to [comment:11 leif]:\n> Now going to extend its domain further up to 2<sup>64</sup>-1...\n\n\n\n```\n\tpi(10000000000000000000)=234057667276344607\t# ok\n\tpi(10000100000000000000)=234059953037027338     # ok (sieved)\n\tpi(10001000000000000000)=234080524854508201\n\tpi(10002000000000000000)=234103382381000184\n\tpi(10003000000000000000)=234126239852389526\n\tpi(10004000000000000000)=234149097272730775\n\tpi(10005000000000000000)=234171954644081388\n\tpi(10006000000000000000)=234194811963658747\n\tpi(10007000000000000000)=234217669226973010\n\tpi(10008000000000000000)=234240526435037954\n\tpi(10009000000000000000)=234263383594121363\n\tpi(10010000000000000000)=234286240703110411\t# ok\n\tpi(18440000000000000000)=425504257754137607\t# ok\n\tpi(18441000000000000000)=425526800039801658\n\tpi(18442000000000000000)=425549342293840481\n\tpi(18443000000000000000)=425571884521908383\n\tpi(18444000000000000000)=425594426720237587\n\tpi(18445000000000000000)=425616968892901351\n\tpi(18446000000000000000)=425639511036514638\n\tpi(18446100000000000000)=425641765249620069\n\tpi(18446200000000000000)=425644019461402605\n\tpi(18446300000000000000)=425646273676018091\n\tpi(18446400000000000000)=425648527886817884\n\tpi(18446500000000000000)=425650782098479434\n\tpi(18446600000000000000)=425653036308859193\n\tpi(18446700000000000000)=425655290520421050\n\tpi(18446744073709551615)=425656284035217743\t# ok\n\n```\n\nHappy validating... ;-)\n\n*\"You just need a computer with a pentium or equivalent chip, turning on windows 95, 98 or NT. ...\"* [Xavier Gourdon about his \"fastpix11\"]\n\n(Still cleaning up the code.)\n\n-Leif",
     "created_at": "2010-01-15T04:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -717,7 +717,6 @@ Replying to [comment:11 leif]:
 	pi(18446744073709551615)=425656284035217743	# ok
 
 ```
-
 
 Happy validating... ;-)
 
@@ -955,7 +954,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_063864.json:
 ```json
 {
-    "body": "> 1. This patch adds two files which are marked as BSD licensed, is this ok? ...\n\n\nNo, it cannot be BSD licensed as primesieve.pyx includes Sage headers that are GPL licensed. I relicensed the primesieve.pyx and primesieve.pxd files to GPL. The corresponding patch is 03_primesieve-sage-main.patch.\n\n\n\n> 2. What is the current policy on adding new standard SPKGs? ...\n\n\nSlightly off topic: primesieve is highly portable, its Makefile is Posix compatible and primesieve builds without any issues on Linux, Mac OS X, BSD and Cygwin and runs on both little and big endian CPUs. Also primesieve has no dependencies on other libraries.\n\n\n\n> 3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\n\nYes, this makes sense. On the other hand the size of the compressed spkg package is only 120 kilobytes and removing this directory makes packaging new primesieve releases a little more difficult.",
+    "body": "> 1. This patch adds two files which are marked as BSD licensed, is this ok? ...\n\n\n\nNo, it cannot be BSD licensed as primesieve.pyx includes Sage headers that are GPL licensed. I relicensed the primesieve.pyx and primesieve.pxd files to GPL. The corresponding patch is 03_primesieve-sage-main.patch.\n\n\n\n> 2. What is the current policy on adding new standard SPKGs? ...\n\n\n\nSlightly off topic: primesieve is highly portable, its Makefile is Posix compatible and primesieve builds without any issues on Linux, Mac OS X, BSD and Cygwin and runs on both little and big endian CPUs. Also primesieve has no dependencies on other libraries.\n\n\n\n> 3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.\n\n\n\nYes, this makes sense. On the other hand the size of the compressed spkg package is only 120 kilobytes and removing this directory makes packaging new primesieve releases a little more difficult.",
     "created_at": "2013-09-10T08:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7539",
     "type": "issue_comment",
@@ -967,6 +966,7 @@ archive/issue_comments_063864.json:
 > 1. This patch adds two files which are marked as BSD licensed, is this ok? ...
 
 
+
 No, it cannot be BSD licensed as primesieve.pyx includes Sage headers that are GPL licensed. I relicensed the primesieve.pyx and primesieve.pxd files to GPL. The corresponding patch is 03_primesieve-sage-main.patch.
 
 
@@ -974,11 +974,13 @@ No, it cannot be BSD licensed as primesieve.pyx includes Sage headers that are G
 > 2. What is the current policy on adding new standard SPKGs? ...
 
 
+
 Slightly off topic: primesieve is highly portable, its Makefile is Posix compatible and primesieve builds without any issues on Linux, Mac OS X, BSD and Cygwin and runs on both little and big endian CPUs. Also primesieve has no dependencies on other libraries.
 
 
 
 > 3. Would it make sense stripping out the directory src/src/apps/gui? This would reduce the size of the spkg by over half.
+
 
 
 Yes, this makes sense. On the other hand the size of the compressed spkg package is only 120 kilobytes and removing this directory makes packaging new primesieve releases a little more difficult.

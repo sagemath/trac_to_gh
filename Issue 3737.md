@@ -3,7 +3,7 @@
 archive/issues_003737.json:
 ```json
 {
-    "body": "Assignee: failure\n\nKeywords: latex, verbatim, backslash\n\nI would like to include lines like these in tut.tex:\n\n```\n\\begin{verbatim}\nsage: A = Matrix([[1,2,3],[3,2,1],[1,1,1]])\nsage: Y = vector([0,-4,-1])\nsage: A \\ Y\n(-2, 1, 0)\n\\end{verbatim}\n```\n\nWhen I include these, doctesting fails on tut.tex, giving an error about something 500 lines away, and giving an error after half a second, whereas if these lines are removed, doctesting finishes successfully in about 30 seconds. \n\nI would guess that the problem is the backslash in the verbatim environment.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3737\n\n",
+    "body": "Assignee: failure\n\nKeywords: latex, verbatim, backslash\n\nI would like to include lines like these in tut.tex:\n\n```\n\\begin{verbatim}\nsage: A = Matrix([[1,2,3],[3,2,1],[1,1,1]])\nsage: Y = vector([0,-4,-1])\nsage: A \\ Y\n(-2, 1, 0)\n\\end{verbatim}\n```\nWhen I include these, doctesting fails on tut.tex, giving an error about something 500 lines away, and giving an error after half a second, whereas if these lines are removed, doctesting finishes successfully in about 30 seconds. \n\nI would guess that the problem is the backslash in the verbatim environment.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3737\n\n",
     "created_at": "2008-07-29T03:47:59Z",
     "labels": [
         "component: doctest coverage",
@@ -31,7 +31,6 @@ sage: A \ Y
 (-2, 1, 0)
 \end{verbatim}
 ```
-
 When I include these, doctesting fails on tut.tex, giving an error about something 500 lines away, and giving an error after half a second, whereas if these lines are removed, doctesting finishes successfully in about 30 seconds. 
 
 I would guess that the problem is the backslash in the verbatim environment.

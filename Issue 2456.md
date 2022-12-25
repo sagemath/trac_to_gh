@@ -3,7 +3,7 @@
 archive/issues_002456.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\n\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
+    "body": "Assignee: @williamstein\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
     "created_at": "2008-03-10T13:53:55Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +19,6 @@ archive/issues_002456.json:
 ```
 Assignee: @williamstein
 
-
 ```
 File "matrix_symbolic_dense.pyx", line 873:
     sage: list(a.fcp())
@@ -28,7 +27,6 @@ Expected:
 Got:
     [(x, 3), (x^2 - 65*x - 250, 1)]
 ```
-
 But inside sage:
 
 ```
@@ -38,7 +36,6 @@ sage: a.fcp()
 sage: list(a.fcp())
 [(x^2 - 65*x - 250, 1), (x, 3)]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2456
 

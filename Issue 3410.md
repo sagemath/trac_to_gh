@@ -131,7 +131,7 @@ Changing keywords from "" to "editor_craigcitro".
 archive/issue_comments_023873.json:
 ```json
 {
-    "body": "REVIEW:\n\nGreat!  However the function \n\n```\ndef _magma_gens(self): \n```\n\n\nneeds documentation and doctests. \n\nPending this big +1.",
+    "body": "REVIEW:\n\nGreat!  However the function \n\n```\ndef _magma_gens(self): \n```\n\nneeds documentation and doctests. \n\nPending this big +1.",
     "created_at": "2008-06-20T04:05:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
@@ -147,7 +147,6 @@ Great!  However the function
 ```
 def _magma_gens(self): 
 ```
-
 
 needs documentation and doctests. 
 

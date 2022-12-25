@@ -3,7 +3,7 @@
 archive/issues_009809.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nThe `faces` method of a cone in a fan manages to screw up subsequent `facet` output:\n\n```\nsage: cone = toric_varieties.dP8().fan().generating_cone(0)\nsage: cone\n2-d cone of Rational polyhedral fan in 2-d lattice N\nsage: cone.facets()\n(1-d cone of Rational polyhedral fan in 2-d lattice N, 1-d cone of Rational polyhedral fan in 2-d lattice N)\nsage: cone.faces()\n((0-d cone of Rational polyhedral fan in 2-d lattice N,), (1-d cone of Rational polyhedral fan in 2-d lattice N, 1-d cone of Rational polyhedral fan in 2-d lattice N), (2-d cone of Rational polyhedral fan in 2-d lattice N,))\nsage: cone.facets()\n(2-d cone of Rational polyhedral fan in 2-d lattice N,)\n```\n\nThis is on vanilla Sage 4.5.2 without any patches applied. Andrey, I think its somewhere in your code so you'll probably find it faster than I can.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9810\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nThe `faces` method of a cone in a fan manages to screw up subsequent `facet` output:\n\n```\nsage: cone = toric_varieties.dP8().fan().generating_cone(0)\nsage: cone\n2-d cone of Rational polyhedral fan in 2-d lattice N\nsage: cone.facets()\n(1-d cone of Rational polyhedral fan in 2-d lattice N, 1-d cone of Rational polyhedral fan in 2-d lattice N)\nsage: cone.faces()\n((0-d cone of Rational polyhedral fan in 2-d lattice N,), (1-d cone of Rational polyhedral fan in 2-d lattice N, 1-d cone of Rational polyhedral fan in 2-d lattice N), (2-d cone of Rational polyhedral fan in 2-d lattice N,))\nsage: cone.facets()\n(2-d cone of Rational polyhedral fan in 2-d lattice N,)\n```\nThis is on vanilla Sage 4.5.2 without any patches applied. Andrey, I think its somewhere in your code so you'll probably find it faster than I can.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9810\n\n",
     "created_at": "2010-08-26T21:12:05Z",
     "labels": [
         "component: geometry",
@@ -33,7 +33,6 @@ sage: cone.faces()
 sage: cone.facets()
 (2-d cone of Rational polyhedral fan in 2-d lattice N,)
 ```
-
 This is on vanilla Sage 4.5.2 without any patches applied. Andrey, I think its somewhere in your code so you'll probably find it faster than I can.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9810

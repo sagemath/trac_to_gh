@@ -3,7 +3,7 @@
 archive/issues_002361.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: substitution ambiguity\n\nI have just started reading the Sage reference manual (release 2008.02.22) and I noticed an example of substitution in section 4.1 that contradicted the description that preceded it:\n\n\n----\n*If there is no ambiguity of variable names, we don't have to specify them:*\n\n...\n\n*However if there is ambiguity, we must explicitly state what variables we're substituting for:*\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f(4)\nsin(8*pi/y)\n```\n\n----\n\nEither the documentation should be changed so that it accurately describes what happens in this example or the implementation should be changed so that an exception is raised in a case like this.\n\nI have a strong preference for the latter solution. I don't find the current substitution behavior in case of ambiguity useful (is it even clearly defined?), and I can think of many examples where this behavior could easily lead to subtle bugs.\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2361\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: substitution ambiguity\n\nI have just started reading the Sage reference manual (release 2008.02.22) and I noticed an example of substitution in section 4.1 that contradicted the description that preceded it:\n\n\n---\n*If there is no ambiguity of variable names, we don't have to specify them:*\n\n...\n\n*However if there is ambiguity, we must explicitly state what variables we're substituting for:*\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f(4)\nsin(8*pi/y)\n```\n\n---\n\nEither the documentation should be changed so that it accurately describes what happens in this example or the implementation should be changed so that an exception is raised in a case like this.\n\nI have a strong preference for the latter solution. I don't find the current substitution behavior in case of ambiguity useful (is it even clearly defined?), and I can think of many examples where this behavior could easily lead to subtle bugs.\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2361\n\n",
     "created_at": "2008-03-01T18:14:05Z",
     "labels": [
         "component: calculus",
@@ -23,7 +23,7 @@ Keywords: substitution ambiguity
 I have just started reading the Sage reference manual (release 2008.02.22) and I noticed an example of substitution in section 4.1 that contradicted the description that preceded it:
 
 
-----
+---
 *If there is no ambiguity of variable names, we don't have to specify them:*
 
 ...
@@ -36,7 +36,7 @@ sage: f(4)
 sin(8*pi/y)
 ```
 
-----
+---
 
 Either the documentation should be changed so that it accurately describes what happens in this example or the implementation should be changed so that an exception is raised in a case like this.
 
@@ -78,7 +78,7 @@ I have noticed that there is a number_of_arguments method, so if the substitutio
 archive/issue_comments_015886.json:
 ```json
 {
-    "body": "Currently, if you don't specify variables, then the implicit order is the one from f.variables()\n\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f.variables()\n(x, y)\nsage: f(2)\nsin(4*pi/y)\nsage: f(2,2)\n0\nsage: f(x,2)\nsin(pi*x)\n```\n",
+    "body": "Currently, if you don't specify variables, then the implicit order is the one from f.variables()\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f.variables()\n(x, y)\nsage: f(2)\nsin(4*pi/y)\nsage: f(2,2)\n0\nsage: f(x,2)\nsin(pi*x)\n```",
     "created_at": "2008-03-01T22:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
@@ -88,7 +88,6 @@ archive/issue_comments_015886.json:
 ```
 
 Currently, if you don't specify variables, then the implicit order is the one from f.variables()
-
 
 ```
 sage: f = sin(2*pi*x/y)
@@ -101,7 +100,6 @@ sage: f(2,2)
 sage: f(x,2)
 sin(pi*x)
 ```
-
 
 
 

@@ -123,7 +123,7 @@ Of course, the best thing for me to do here is fix #3735.
 archive/issue_comments_026000.json:
 ```json
 {
-    "body": "REFEREE REPORT:\n\n* Add documentation to interact? that illustrates how to use range_slider.\n\n* Doing range_slider? gives help on slider instead of range_slider. \n\n* I tried one example -- see http://sage.math.washington.edu/home/was/patches/3679.png and the displayed positions were different than the values of the variable when I first pressed shift enter.  Dragging the slider fixed this.\n\n```\n@interact\ndef _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):\n    print t1\n    show(plot(sin,t1[0], t1[1]),xmin=t1[0])\n```\n\n\n* In the above example, it seems like the order of the two sliders is reversed?",
+    "body": "REFEREE REPORT:\n\n* Add documentation to interact? that illustrates how to use range_slider.\n\n* Doing range_slider? gives help on slider instead of range_slider. \n\n* I tried one example -- see http://sage.math.washington.edu/home/was/patches/3679.png and the displayed positions were different than the values of the variable when I first pressed shift enter.  Dragging the slider fixed this.\n\n```\n@interact\ndef _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):\n    print t1\n    show(plot(sin,t1[0], t1[1]),xmin=t1[0])\n```\n\n* In the above example, it seems like the order of the two sliders is reversed?",
     "created_at": "2008-07-29T18:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
@@ -146,7 +146,6 @@ def _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):
     print t1
     show(plot(sin,t1[0], t1[1]),xmin=t1[0])
 ```
-
 
 * In the above example, it seems like the order of the two sliders is reversed?
 
@@ -197,7 +196,7 @@ Points 1 and 2 are addressed.
 archive/issue_comments_026003.json:
 ```json
 {
-    "body": "> 3 and 4 - did you apply the extcode patch? \n\nNo, I messed up and didn't apply it.  Now everything works perfectly and the improved docs are great!  Very positive review!",
+    "body": "> 3 and 4 - did you apply the extcode patch? \n\n\nNo, I messed up and didn't apply it.  Now everything works perfectly and the improved docs are great!  Very positive review!",
     "created_at": "2008-07-29T23:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
@@ -207,6 +206,7 @@ archive/issue_comments_026003.json:
 ```
 
 > 3 and 4 - did you apply the extcode patch? 
+
 
 No, I messed up and didn't apply it.  Now everything works perfectly and the improved docs are great!  Very positive review!
 

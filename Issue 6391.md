@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6391
 archive/issue_comments_051094.json:
 ```json
 {
-    "body": "To try out the first demo libgap.a use of GAP as a library:\n\n1. Install this spkg: http://sage.math.washington.edu/home/wstein/patches/gap-4.4.10.p13.spkg\n\n2. Apply the patch trac_6391.patch attached to this ticket and do \"sage -br\".\n\nThen\n\n```\nsage: sage.libs.gap.gap.command()\n...\n> NormalSubgroups(SymmetricGroup(4));\n[ Group(()), Group([ (1,4)(2,3), (1,3)(2,4) ]), Group([ (2,4,3), (1,4)(2,3), (1,3)(2,4) ]), Sym( [ 1 .. 4 ] ) ]\nsage: sage.libs.gap.gap.command()\n> a := 8383;\n8383\nsage: sage.libs.gap.gap.command()\n> a^20;\n2937577432790013740156622649268134038711666398939150844563902439935080138297601\n```\n",
+    "body": "To try out the first demo libgap.a use of GAP as a library:\n\n1. Install this spkg: http://sage.math.washington.edu/home/wstein/patches/gap-4.4.10.p13.spkg\n\n2. Apply the patch trac_6391.patch attached to this ticket and do \"sage -br\".\n\nThen\n\n```\nsage: sage.libs.gap.gap.command()\n...\n> NormalSubgroups(SymmetricGroup(4));\n[ Group(()), Group([ (1,4)(2,3), (1,3)(2,4) ]), Group([ (2,4,3), (1,4)(2,3), (1,3)(2,4) ]), Sym( [ 1 .. 4 ] ) ]\nsage: sage.libs.gap.gap.command()\n> a := 8383;\n8383\nsage: sage.libs.gap.gap.command()\n> a^20;\n2937577432790013740156622649268134038711666398939150844563902439935080138297601\n```",
     "created_at": "2009-06-23T22:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -65,13 +65,12 @@ sage: sage.libs.gap.gap.command()
 
 
 
-
 ---
 
 archive/issue_comments_051095.json:
 ```json
 {
-    "body": "Before the above, be sure to do \n\n```\nimport sage.libs.gap.gap\n```\n",
+    "body": "Before the above, be sure to do \n\n```\nimport sage.libs.gap.gap\n```",
     "created_at": "2009-06-23T22:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -85,7 +84,6 @@ Before the above, be sure to do
 ```
 import sage.libs.gap.gap
 ```
-
 
 
 
@@ -186,7 +184,7 @@ Attachment [trac_6391-part1.patch](tarball://root/attachments/some-uuid/ticket63
 archive/issue_comments_051101.json:
 ```json
 {
-    "body": "This log pretty much explains what/why/what next:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: a = g.libgap('10')\nsage: a\n10\nsage: type(a)\n<type 'sage.libs.gap.gap.GapElement'>\nsage: a*a\n100\nsage: timeit('a*a')\n625 loops, best of 3: 209 ns per loop\nsage: b = gap('10')\nsage: b\n10\nsage: b*b\n100\nsage: type(b)\n<class 'sage.interfaces.gap.GapElement'>\nsage: !ps ax |grep gap\n 5497 pts/110  Ss+    0:00 /home/bober/sage-4.1/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /home/bober/sage-4.\n19751 pts/84   SNs+   0:00 /home/SimonKing/SAGE/sage-4.1.alpha1/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /ho\n27563 pts/109  Ss+    0:00 /scratch/steinz/sage/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /scratch/steinz/sag\n27572 pts/98   S+     0:00 sh -c ps ax |grep gap\n27574 pts/98   S+     0:00 grep gap\nsage: b.name()\n'$sage1'\nsage: timeit('b*b')\n625 loops, best of 3: 292 \u00b5s per loop\nsage: a = g.libgap('0')\nsage: a\n0\nsage: b = g.libgap('10')\nsage: b/a\nhit stderr\n```\n",
+    "body": "This log pretty much explains what/why/what next:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: a = g.libgap('10')\nsage: a\n10\nsage: type(a)\n<type 'sage.libs.gap.gap.GapElement'>\nsage: a*a\n100\nsage: timeit('a*a')\n625 loops, best of 3: 209 ns per loop\nsage: b = gap('10')\nsage: b\n10\nsage: b*b\n100\nsage: type(b)\n<class 'sage.interfaces.gap.GapElement'>\nsage: !ps ax |grep gap\n 5497 pts/110  Ss+    0:00 /home/bober/sage-4.1/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /home/bober/sage-4.\n19751 pts/84   SNs+   0:00 /home/SimonKing/SAGE/sage-4.1.alpha1/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /ho\n27563 pts/109  Ss+    0:00 /scratch/steinz/sage/local/lib/gap-4.4.10/bin/x86_64-unknown-linux-gnu-gcc/gap -m 24m -l /scratch/steinz/sag\n27572 pts/98   S+     0:00 sh -c ps ax |grep gap\n27574 pts/98   S+     0:00 grep gap\nsage: b.name()\n'$sage1'\nsage: timeit('b*b')\n625 loops, best of 3: 292 \u00b5s per loop\nsage: a = g.libgap('0')\nsage: a\n0\nsage: b = g.libgap('10')\nsage: b/a\nhit stderr\n```",
     "created_at": "2009-09-28T21:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -235,13 +233,12 @@ hit stderr
 
 
 
-
 ---
 
 archive/issue_comments_051102.json:
 ```json
 {
-    "body": "Overview:\n\n* Modified version of GAP, which is built by doing\n\n```\nsage -f -m  http://sage.math.washington.edu/home/wstein/patches/gap/gap-4.4.10.p17.spkg\nwait...\ncd sage/spkg/build/gap-4.4.10.p17\n```\n\nTo rebuild:\n\n```\nsteinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src$ make\nsteinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src/bin/x86_64-unknown-linux-gnu-gcc$ gcc -shared *.o -o libgap.so\n```\n\n\n* Cython code to use the Gap library:\n\n```\nIn here:\n   sage/devel/sage/sage/libs/gap/gap.pyx\n```\n\n\nIf you change gap.pyx, do `sage -br` to build the changed version and start Sage.",
+    "body": "Overview:\n\n* Modified version of GAP, which is built by doing\n\n```\nsage -f -m  http://sage.math.washington.edu/home/wstein/patches/gap/gap-4.4.10.p17.spkg\nwait...\ncd sage/spkg/build/gap-4.4.10.p17\n```\nTo rebuild:\n\n```\nsteinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src$ make\nsteinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src/bin/x86_64-unknown-linux-gnu-gcc$ gcc -shared *.o -o libgap.so\n```\n\n* Cython code to use the Gap library:\n\n```\nIn here:\n   sage/devel/sage/sage/libs/gap/gap.pyx\n```\n\nIf you change gap.pyx, do `sage -br` to build the changed version and start Sage.",
     "created_at": "2009-09-28T21:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -259,7 +256,6 @@ sage -f -m  http://sage.math.washington.edu/home/wstein/patches/gap/gap-4.4.10.p
 wait...
 cd sage/spkg/build/gap-4.4.10.p17
 ```
-
 To rebuild:
 
 ```
@@ -267,14 +263,12 @@ steinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src$ make
 steinz@sage:~/scratch/sage/spkg/build/gap-4.4.10.p17/src/bin/x86_64-unknown-linux-gnu-gcc$ gcc -shared *.o -o libgap.so
 ```
 
-
 * Cython code to use the Gap library:
 
 ```
 In here:
    sage/devel/sage/sage/libs/gap/gap.pyx
 ```
-
 
 If you change gap.pyx, do `sage -br` to build the changed version and start Sage.
 
@@ -285,7 +279,7 @@ If you change gap.pyx, do `sage -br` to build the changed version and start Sage
 archive/issue_comments_051103.json:
 ```json
 {
-    "body": "I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n\n\n\n```\nsage: import sage.libs.gap.gap\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/ayeq/sage-devel/<ipython console> in <module>()\n\n/Users/ayeq/sage-devel/gap.pyx in init sage.libs.gap.gap (sage/libs/gap/gap.c:6286)()\n\n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __init__(self, f, classmethod)\n     54 \n     55         \"\"\"\n---> 56         self._common_init(f, ArgumentFixer(f,classmethod=classmethod))\n     57         self.cache = {}\n     58 \n\n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/function_mangling.pyc in __init__(self, f, classmethod)\n    107         \"\"\"        \n    108 \n--> 109         defaults = f.func_defaults\n    110         if defaults is None:\n    111             defaults = []\n\nAttributeError: 'builtin_function_or_method' object has no attribute 'func_defaults'\n```\n\n\nThe cached_function decorator works at the interpreter level so I really do not see what is happening. When the line is removed  the import works fine and from what I understand about cache_function this should be okay. \n\n\n```\n--- a/sage/libs/gap/gap.pyx\tSat Jun 27 05:49:14 2009 +0200\n+++ b/sage/libs/gap/gap.pyx\tSat Apr 10 16:30:27 2010 -0700\n@@ -71,8 +71,8 @@\n \n from sage.structure.element cimport ModuleElement, RingElement\n   \n-from sage.misc.cachefunc import cached_function\n-@cached_function\n+#from sage.misc.cachefunc import cached_function\n+#@cached_function\n def gap_root():\n     \"\"\"\n     Find the location of the GAP root install which is stored in the gap\n```\n",
+    "body": "I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n\n\n```\nsage: import sage.libs.gap.gap\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/ayeq/sage-devel/<ipython console> in <module>()\n\n/Users/ayeq/sage-devel/gap.pyx in init sage.libs.gap.gap (sage/libs/gap/gap.c:6286)()\n\n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __init__(self, f, classmethod)\n     54 \n     55         \"\"\"\n---> 56         self._common_init(f, ArgumentFixer(f,classmethod=classmethod))\n     57         self.cache = {}\n     58 \n\n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/function_mangling.pyc in __init__(self, f, classmethod)\n    107         \"\"\"        \n    108 \n--> 109         defaults = f.func_defaults\n    110         if defaults is None:\n    111             defaults = []\n\nAttributeError: 'builtin_function_or_method' object has no attribute 'func_defaults'\n```\n\nThe cached_function decorator works at the interpreter level so I really do not see what is happening. When the line is removed  the import works fine and from what I understand about cache_function this should be okay. \n\n```\n--- a/sage/libs/gap/gap.pyx\tSat Jun 27 05:49:14 2009 +0200\n+++ b/sage/libs/gap/gap.pyx\tSat Apr 10 16:30:27 2010 -0700\n@@ -71,8 +71,8 @@\n \n from sage.structure.element cimport ModuleElement, RingElement\n   \n-from sage.misc.cachefunc import cached_function\n-@cached_function\n+#from sage.misc.cachefunc import cached_function\n+#@cached_function\n def gap_root():\n     \"\"\"\n     Find the location of the GAP root install which is stored in the gap\n```",
     "created_at": "2010-04-10T23:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -295,7 +289,6 @@ archive/issue_comments_051103.json:
 ```
 
 I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: 
-
 
 
 ```
@@ -324,9 +317,7 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'builtin_function_or_method' object has no attribute 'func_defaults'
 ```
 
-
 The cached_function decorator works at the interpreter level so I really do not see what is happening. When the line is removed  the import works fine and from what I understand about cache_function this should be okay. 
-
 
 ```
 --- a/sage/libs/gap/gap.pyx	Sat Jun 27 05:49:14 2009 +0200
@@ -346,13 +337,12 @@ The cached_function decorator works at the interpreter level so I really do not 
 
 
 
-
 ---
 
 archive/issue_comments_051104.json:
 ```json
 {
-    "body": "Replying to [comment:14 davidm]:\n> I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> \n \n {{{\n sage: import sage.libs.gap.gap\n ---------------------------------------------------------------------------\n AttributeError                            Traceback (most recent call last)\n \n /Users/ayeq/sage-devel/<ipython console> in <module>()\n \n /Users/ayeq/sage-devel/gap.pyx in init sage.libs.gap.gap (sage/libs/gap/gap.c:6286)()\n \n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __init__(self, f, classmethod)\n      54 \n      55         \"\"\"\n ---> 56         self._common_init(f, ArgumentFixer(f,classmethod=classmethod))\n      57         self.cache = {}\n      58 \n \n /Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/function_mangling.pyc in __init__(self, f, classmethod)\n     107         \"\"\"        \n     108 \n --> 109         defaults = f.func_defaults\n     110         if defaults is None:\n     111             defaults = []\n \n AttributeError: 'builtin_function_or_method' object has no attribute 'func_defaults'\n }}}\n\n\nI see exactly the same with the new spkg on OSX 10.6. \nAnd the patch to gap.pyx you suggest works for me too.",
+    "body": "Replying to [comment:14 davidm]:\n> I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> \n\n \n {{{\n sage: import sage.libs.gap.gap\n ---------------------------------------------------------------------------\n AttributeError                            Traceback (most recent call last)\n \n /Users/ayeq/sage-devel/<ipython console> in <module>()\n \n /Users/ayeq/sage-devel/gap.pyx in init sage.libs.gap.gap (sage/libs/gap/gap.c:6286)()\n \n/Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __init__(self, f, classmethod)\n      54 \n      55         \"\"\"\n ---> 56         self._common_init(f, ArgumentFixer(f,classmethod=classmethod))\n      57         self.cache = {}\n      58 \n \n /Users/ayeq/sage-devel/local/lib/python2.6/site-packages/sage/misc/function_mangling.pyc in __init__(self, f, classmethod)\n     107         \"\"\"        \n     108 \n --> 109         defaults = f.func_defaults\n     110         if defaults is None:\n     111             defaults = []\n \n AttributeError: 'builtin_function_or_method' object has no attribute 'func_defaults'\n }}}\n\n\nI see exactly the same with the new spkg on OSX 10.6. \nAnd the patch to gap.pyx you suggest works for me too.",
     "created_at": "2011-01-14T18:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -364,6 +354,7 @@ archive/issue_comments_051104.json:
 Replying to [comment:14 davidm]:
 > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: 
 > 
+
  
  {{{
  sage: import sage.libs.gap.gap
@@ -402,7 +393,7 @@ And the patch to gap.pyx you suggest works for me too.
 archive/issue_comments_051105.json:
 ```json
 {
-    "body": "Replying to [comment:19 dimpase]:\n> Replying to [comment:14 davidm]:\n> > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> > \n> \n> I see exactly the same with the new spkg on OSX 10.6. \n> And the patch to gap.pyx you suggest works for me too.\n> \n\nmoreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.",
+    "body": "Replying to [comment:19 dimpase]:\n> Replying to [comment:14 davidm]:\n> > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> > \n\n> \n> I see exactly the same with the new spkg on OSX 10.6. \n> And the patch to gap.pyx you suggest works for me too.\n> \n\n\nmoreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.",
     "created_at": "2011-01-14T21:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -415,10 +406,12 @@ Replying to [comment:19 dimpase]:
 > Replying to [comment:14 davidm]:
 > > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: 
 > > 
+
 > 
 > I see exactly the same with the new spkg on OSX 10.6. 
 > And the patch to gap.pyx you suggest works for me too.
 > 
+
 
 moreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.
 
@@ -449,7 +442,7 @@ cumulative patch for sage 4.6.1
 archive/issue_comments_051107.json:
 ```json
 {
-    "body": "Replying to [comment:20 dimpase]:\n> Replying to [comment:19 dimpase]:\n> > Replying to [comment:14 davidm]:\n> > > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> > > \n> > \n> > I see exactly the same with the new spkg on OSX 10.6. \n> > And the patch to gap.pyx you suggest works for me too.\n> > \n> \n> moreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.\n\nit turns out that cached_function won't work in Cython at all, so indeed this needs to be changed.\nThe cumulative patch 6391.6.patch fixed this, as well, as it supersedes the previous 4 patches.\n\nTo install for Sage 4.6.1, install the updated spkg, and this patch.\n\n\nDima",
+    "body": "Replying to [comment:20 dimpase]:\n> Replying to [comment:19 dimpase]:\n> > Replying to [comment:14 davidm]:\n> > > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: \n> > > \n\n> > \n> > I see exactly the same with the new spkg on OSX 10.6. \n> > And the patch to gap.pyx you suggest works for me too.\n> > \n\n> \n> moreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.\n\n\nit turns out that cached_function won't work in Cython at all, so indeed this needs to be changed.\nThe cumulative patch 6391.6.patch fixed this, as well, as it supersedes the previous 4 patches.\n\nTo install for Sage 4.6.1, install the updated spkg, and this patch.\n\n\nDima",
     "created_at": "2011-01-17T14:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -463,12 +456,15 @@ Replying to [comment:20 dimpase]:
 > > Replying to [comment:14 davidm]:
 > > > I get an error when importing libgap on sage 4.3.5 on OSX 10.6.3: 
 > > > 
+
 > > 
 > > I see exactly the same with the new spkg on OSX 10.6. 
 > > And the patch to gap.pyx you suggest works for me too.
 > > 
+
 > 
 > moreover, I get the same problem (and solition(?)) on Linux (on boxen). So this is certainly not OSX-specific.
+
 
 it turns out that cached_function won't work in Cython at all, so indeed this needs to be changed.
 The cumulative patch 6391.6.patch fixed this, as well, as it supersedes the previous 4 patches.
@@ -509,7 +505,7 @@ What _dealloc_ in this class meant to do?
 archive/issue_comments_051109.json:
 ```json
 {
-    "body": "Replying to [comment:22 dimpase]:\n> class Gap(ParentWithBase) is instantiated only once, for base=ZZ. Is it meant that it should be instantiated for other bases, too? And if so, which ones? (I must say it's very puzzling to me piece of code...)\n> \n\nNo, only once for base=ZZ.  \n\n> in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment \"This log pretty much explains what/why/what next:...\" above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?\n> \n\nYes.  I don't know if GAP uses \"interrupts\" though.  You are basically above asking: \"Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?\"\n\n> What _dealloc_ in this class meant to do? \n\nSee {{__dealloc__}} at http://docs.cython.org/src/reference/extension_types.html for the definition of __dealloc__.  It is like __del__ in python.",
+    "body": "Replying to [comment:22 dimpase]:\n> class Gap(ParentWithBase) is instantiated only once, for base=ZZ. Is it meant that it should be instantiated for other bases, too? And if so, which ones? (I must say it's very puzzling to me piece of code...)\n> \n\n\nNo, only once for base=ZZ.  \n\n> in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment \"This log pretty much explains what/why/what next:...\" above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?\n> \n\n\nYes.  I don't know if GAP uses \"interrupts\" though.  You are basically above asking: \"Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?\"\n\n> What _dealloc_ in this class meant to do? \n\n\nSee {{__dealloc__}} at http://docs.cython.org/src/reference/extension_types.html for the definition of __dealloc__.  It is like __del__ in python.",
     "created_at": "2011-01-18T16:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -522,14 +518,17 @@ Replying to [comment:22 dimpase]:
 > class Gap(ParentWithBase) is instantiated only once, for base=ZZ. Is it meant that it should be instantiated for other bases, too? And if so, which ones? (I must say it's very puzzling to me piece of code...)
 > 
 
+
 No, only once for base=ZZ.  
 
 > in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment "This log pretty much explains what/why/what next:..." above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?
 > 
 
+
 Yes.  I don't know if GAP uses "interrupts" though.  You are basically above asking: "Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?"
 
 > What _dealloc_ in this class meant to do? 
+
 
 See {{__dealloc__}} at http://docs.cython.org/src/reference/extension_types.html for the definition of __dealloc__.  It is like __del__ in python.
 
@@ -540,7 +539,7 @@ See {{__dealloc__}} at http://docs.cython.org/src/reference/extension_types.html
 archive/issue_comments_051110.json:
 ```json
 {
-    "body": "Replying to [comment:23 was]:\n> Replying to [comment:22 dimpase]:\n\n> > in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment \"This log pretty much explains what/why/what next:...\" above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?\n> > \n> \n> Yes.  I don't know if GAP uses \"interrupts\" though.  You are basically above asking: \"Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?\"\n> \n\nFrom printing contents of the GAP interpreter output_buffer (introduced in the patch of GAP's scanner.c), I see that during the fatal a._div_(g.libgap('0'))_ it starts getting the contents of the usual GAP error message, like Entering break read-eval-print loop (i.e. it does a \"GAP interrupt\"). And then the crash happens in the Python interpreter. So I suppose more reverse engineering/understanding of the GAP interpreter is needed here, in order to avoid replicating it in Python...",
+    "body": "Replying to [comment:23 was]:\n> Replying to [comment:22 dimpase]:\n\n\n> > in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment \"This log pretty much explains what/why/what next:...\" above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?\n> > \n\n> \n> Yes.  I don't know if GAP uses \"interrupts\" though.  You are basically above asking: \"Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?\"\n> \n\n\nFrom printing contents of the GAP interpreter output_buffer (introduced in the patch of GAP's scanner.c), I see that during the fatal a._div_(g.libgap('0'))_ it starts getting the contents of the usual GAP error message, like Entering break read-eval-print loop (i.e. it does a \"GAP interrupt\"). And then the crash happens in the Python interpreter. So I suppose more reverse engineering/understanding of the GAP interpreter is needed here, in order to avoid replicating it in Python...",
     "created_at": "2011-01-18T22:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -552,11 +551,14 @@ archive/issue_comments_051110.json:
 Replying to [comment:23 was]:
 > Replying to [comment:22 dimpase]:
 
+
 > > in the class GapElement, _div_ and other member functions can potentially fail (as demonstrated in the comment "This log pretty much explains what/why/what next:..." above), e.g. due to division by 0. It is meant that the corresponding checks are to be implemented in these member functions? I guess not, it's rather a matter of properly catching the corresponding GAP interrupts, right?
 > > 
+
 > 
 > Yes.  I don't know if GAP uses "interrupts" though.  You are basically above asking: "Here is a problem nobody has solved yet, which is why libgap hasn't moved forward.  What is the solution?"
 > 
+
 
 From printing contents of the GAP interpreter output_buffer (introduced in the patch of GAP's scanner.c), I see that during the fatal a._div_(g.libgap('0'))_ it starts getting the contents of the usual GAP error message, like Entering break read-eval-print loop (i.e. it does a "GAP interrupt"). And then the crash happens in the Python interpreter. So I suppose more reverse engineering/understanding of the GAP interpreter is needed here, in order to avoid replicating it in Python...
 
@@ -605,7 +607,7 @@ I'll be doing some more work on libgap during Sage Days 29, so let me know if yo
 archive/issue_comments_051113.json:
 ```json
 {
-    "body": "Replying to [comment:25 vbraun]:\n> I updated the patch to work with Sage-4.7.alpha1. I also added a bunch of doctests while trying to understand what is going on and replaced the deprecated `ParentWithBase` with `Parent`.\n> \n> I'll be doing some more work on libgap during Sage Days 29, so let me know if you have any suggestions.\n> \n\nI am not so sure that we should invest a lot of time in libGAP based on the current GAP 4.4.12, as GAP 4.5 is almost ready,\n(as a GAP package developer, I'm expecting to get it pretty soon) and has a lot of internals reworked. I understand that the GC is replaced by the Bohm's GC, and the arbitrary precision arithmetic is done by GMP, not by the internal GAP code (I suggested that they should try MPIR instead of GMP).",
+    "body": "Replying to [comment:25 vbraun]:\n> I updated the patch to work with Sage-4.7.alpha1. I also added a bunch of doctests while trying to understand what is going on and replaced the deprecated `ParentWithBase` with `Parent`.\n> \n> I'll be doing some more work on libgap during Sage Days 29, so let me know if you have any suggestions.\n> \n\n\nI am not so sure that we should invest a lot of time in libGAP based on the current GAP 4.4.12, as GAP 4.5 is almost ready,\n(as a GAP package developer, I'm expecting to get it pretty soon) and has a lot of internals reworked. I understand that the GC is replaced by the Bohm's GC, and the arbitrary precision arithmetic is done by GMP, not by the internal GAP code (I suggested that they should try MPIR instead of GMP).",
     "created_at": "2011-03-22T01:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -619,6 +621,7 @@ Replying to [comment:25 vbraun]:
 > 
 > I'll be doing some more work on libgap during Sage Days 29, so let me know if you have any suggestions.
 > 
+
 
 I am not so sure that we should invest a lot of time in libGAP based on the current GAP 4.4.12, as GAP 4.5 is almost ready,
 (as a GAP package developer, I'm expecting to get it pretty soon) and has a lot of internals reworked. I understand that the GC is replaced by the Bohm's GC, and the arbitrary precision arithmetic is done by GMP, not by the internal GAP code (I suggested that they should try MPIR instead of GMP).
@@ -669,7 +672,7 @@ If upstream manages to rid themselves of their memory manager and arbitrary prec
 archive/issue_comments_051116.json:
 ```json
 {
-    "body": "Replying to [comment:28 vbraun]:\n> I think the big issues right now are\n>   * being able to get out of the break/debug loop after a gap error\n>   * use libtool to build the library\n> If upstream manages to rid themselves of their memory manager and arbitrary precision arithmetic then thats awesome!\n> \n\nHi Volker,\nplease see my current (Sage-4.6.1) snapshot, catching zero division etc.\n\n  http://sage.math.washington.edu/home/dima/packages/gap-4.4.12.p6.spkg\n\nIt gets rid of the zero division problem. I.e. I can divide by 0 in GAP and still retain Sage/GAP session.\nHere is an example (sorry for extra print statements producing noise below)\n\n\n```\nsage: import sage.libs.gap.gap as g\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, i686-apple-darwin10.6.0-gcc\nsage: a = g.libgap('0')\n> status in GapElement()= 0\nsage: b = g.libgap('10')\n> status in GapElement()= 0\nsage: a\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b\ncalling READ_ERR at ViewObjVar10\noutput_buffer=10\n\n10\nsage: a*b\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b/a\nRational operations: <divisor> must not be zero\nnot in any function\nEntering break read-eval-print loop ...\nyou can 'quit;' to quit to outer loop, or\nyou can replace <divisor> via 'return <divisor>;' to continue\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/src/sage/sage-4.6.1.rc0/spkg/standard/<ipython console> in <module>()\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11931)()\n\nRuntimeError: ReadEvalDebug called!\nsage: a*b\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b+b\ncalling READ_ERR at ViewObjVar20\noutput_buffer=20\n\n20\nsage: \n```\n\nDima",
+    "body": "Replying to [comment:28 vbraun]:\n> I think the big issues right now are\n> * being able to get out of the break/debug loop after a gap error\n> * use libtool to build the library\n> If upstream manages to rid themselves of their memory manager and arbitrary precision arithmetic then thats awesome!\n> \n\n\nHi Volker,\nplease see my current (Sage-4.6.1) snapshot, catching zero division etc.\n\n  http://sage.math.washington.edu/home/dima/packages/gap-4.4.12.p6.spkg\n\nIt gets rid of the zero division problem. I.e. I can divide by 0 in GAP and still retain Sage/GAP session.\nHere is an example (sorry for extra print statements producing noise below)\n\n```\nsage: import sage.libs.gap.gap as g\n    \n            #########           ######         ###########           ###  \n         #############          ######         ############         ####  \n        ##############         ########        #############       #####  \n       ###############         ########        #####   ######      #####  \n      ######         #         #########       #####    #####     ######  \n     ######                   ##########       #####    #####    #######  \n     #####                    ##### ####       #####   ######   ########  \n     ####                    #####  #####      #############   ###  ####  \n     #####     #######       ####    ####      ###########    ####  ####  \n     #####     #######      #####    #####     ######        ####   ####  \n     #####     #######      #####    #####     #####         #############\n      #####      #####     ################    #####         #############\n      ######     #####     ################    #####         #############\n      ################    ##################   #####                ####  \n       ###############    #####        #####   #####                ####  \n         #############    #####        #####   #####                ####  \n          #########      #####          #####  #####                ####  \n                                                                          \n     Information at:  http://www.gap-system.org\n     Try '?help' for help. See also  '?copyright' and  '?authors'\n    \n   Loading the library. Please be patient, this may take a while.\nGAP4, Version: 4.4.12 of 17-Dec-2008, i686-apple-darwin10.6.0-gcc\nsage: a = g.libgap('0')\n> status in GapElement()= 0\nsage: b = g.libgap('10')\n> status in GapElement()= 0\nsage: a\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b\ncalling READ_ERR at ViewObjVar10\noutput_buffer=10\n\n10\nsage: a*b\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b/a\nRational operations: <divisor> must not be zero\nnot in any function\nEntering break read-eval-print loop ...\nyou can 'quit;' to quit to outer loop, or\nyou can replace <divisor> via 'return <divisor>;' to continue\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/src/sage/sage-4.6.1.rc0/spkg/standard/<ipython console> in <module>()\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11931)()\n\nRuntimeError: ReadEvalDebug called!\nsage: a*b\ncalling READ_ERR at ViewObjVar0\noutput_buffer=0\n\n0\nsage: b+b\ncalling READ_ERR at ViewObjVar20\noutput_buffer=20\n\n20\nsage: \n```\nDima",
     "created_at": "2011-03-22T02:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -680,10 +683,11 @@ archive/issue_comments_051116.json:
 
 Replying to [comment:28 vbraun]:
 > I think the big issues right now are
->   * being able to get out of the break/debug loop after a gap error
->   * use libtool to build the library
+> * being able to get out of the break/debug loop after a gap error
+> * use libtool to build the library
 > If upstream manages to rid themselves of their memory manager and arbitrary precision arithmetic then thats awesome!
 > 
+
 
 Hi Volker,
 please see my current (Sage-4.6.1) snapshot, catching zero division etc.
@@ -692,7 +696,6 @@ please see my current (Sage-4.6.1) snapshot, catching zero division etc.
 
 It gets rid of the zero division problem. I.e. I can divide by 0 in GAP and still retain Sage/GAP session.
 Here is an example (sorry for extra print statements producing noise below)
-
 
 ```
 sage: import sage.libs.gap.gap as g
@@ -765,7 +768,6 @@ output_buffer=20
 20
 sage: 
 ```
-
 Dima
 
 
@@ -775,7 +777,7 @@ Dima
 archive/issue_comments_051117.json:
 ```json
 {
-    "body": "Replying to [comment:27 was]:\n> From my memory of libGAP the GC and the large integer arithmetic are totally orthogonal/irrelevant.    I think working on libGAP whenever somebody has the interest (!) is a good idea, since it really will be a major, major plus for Sage when it starts working. \n\nI'll try to get access to GAP 4.5 for Sage as soon as possible.\nAs I understood from GAP people, their current GC is a major headache making it hard to write a \"usual\" library interface, \nwhich might be much nicer to have...\nAFAIK, Bohm's GC is more manageable in this respect.  \n\nWell, perhaps indeed the changes in 4.5 aren't that big to warrant putting this on old.",
+    "body": "Replying to [comment:27 was]:\n> From my memory of libGAP the GC and the large integer arithmetic are totally orthogonal/irrelevant.    I think working on libGAP whenever somebody has the interest (!) is a good idea, since it really will be a major, major plus for Sage when it starts working. \n\n\nI'll try to get access to GAP 4.5 for Sage as soon as possible.\nAs I understood from GAP people, their current GC is a major headache making it hard to write a \"usual\" library interface, \nwhich might be much nicer to have...\nAFAIK, Bohm's GC is more manageable in this respect.  \n\nWell, perhaps indeed the changes in 4.5 aren't that big to warrant putting this on old.",
     "created_at": "2011-03-22T12:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -786,6 +788,7 @@ archive/issue_comments_051117.json:
 
 Replying to [comment:27 was]:
 > From my memory of libGAP the GC and the large integer arithmetic are totally orthogonal/irrelevant.    I think working on libGAP whenever somebody has the interest (!) is a good idea, since it really will be a major, major plus for Sage when it starts working. 
+
 
 I'll try to get access to GAP 4.5 for Sage as soon as possible.
 As I understood from GAP people, their current GC is a major headache making it hard to write a "usual" library interface, 
@@ -819,7 +822,7 @@ Updated patch
 archive/issue_comments_051119.json:
 ```json
 {
-    "body": "Attachment [trac_6391_libGAP.2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.2.patch) by @vbraun created at 2011-03-23 01:37:52\n\nChanges to the newest spkg:\n* removed dist directory\n* removed unsetting CC/CXX since \"sage -sh\" sets these to sane values\n* converted all copied files from patches/ into patches\n* using libtool to build libGAP\n* Code cleanups\n\nBasic functionality now works including trapping errors:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('1/0')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:4963)()\n    684         \"\"\"\n    685         initialize_libgap()\n--> 686         return self.element_class(self, x)\n    687 \n    688 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement.__init__ (sage/libs/gap/gap.c:3047)()\n    366         except RuntimeError, msg:\n    367             ClearError()\n--> 368             raise ValueError, 'Gap: '+str(msg)\n    369 \n    370         assert Symbol == S_SEMICOLON, 'Did not end with semicolon?'\n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```\n",
+    "body": "Attachment [trac_6391_libGAP.2.patch](tarball://root/attachments/some-uuid/ticket6391/trac_6391_libGAP.2.patch) by @vbraun created at 2011-03-23 01:37:52\n\nChanges to the newest spkg:\n* removed dist directory\n* removed unsetting CC/CXX since \"sage -sh\" sets these to sane values\n* converted all copied files from patches/ into patches\n* using libtool to build libGAP\n* Code cleanups\n\nBasic functionality now works including trapping errors:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('1/0')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:4963)()\n    684         \"\"\"\n    685         initialize_libgap()\n--> 686         return self.element_class(self, x)\n    687 \n    688 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement.__init__ (sage/libs/gap/gap.c:3047)()\n    366         except RuntimeError, msg:\n    367             ClearError()\n--> 368             raise ValueError, 'Gap: '+str(msg)\n    369 \n    370         assert Symbol == S_SEMICOLON, 'Did not end with semicolon?'\n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```",
     "created_at": "2011-03-23T01:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -876,7 +879,6 @@ ValueError: Gap: Rational operations: <divisor> must not be zero
 
 
 
-
 ---
 
 archive/issue_comments_051120.json:
@@ -900,7 +902,7 @@ See also: http://wiki.sagemath.org/days29/projects#libGAP
 archive/issue_comments_051121.json:
 ```json
 {
-    "body": "Replying to [comment:33 vbraun]:\n> Changes to the newest spkg:\n Volker,\nthe spkg does not buid on MacOSX.\nWhen building the library, I get\n\n```\n...\nchecking host system type... (cached) i686-apple-darwin10.6.0\nconfigure: creating ./config.status\nconfig.status: creating gac\nconfig.status: creating Makefile\nconfig.status: creating config.h\n( cd bin/i686-apple-darwin10.6.0-gcc ; make CC='gcc' )\nlibtool --mode=compile gcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o ariths.o -c ../../src/ariths.c\nlibtool: unknown option character `-' in: --mode=compile\nUsage: libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT]\nUsage: libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table <filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] [-noall_load]\nmake[1]: *** [ariths.o] Error 1\nmake: *** [compile] Error 2\nError building GAP.\n```\n",
+    "body": "Replying to [comment:33 vbraun]:\n> Changes to the newest spkg:\n\n Volker,\nthe spkg does not buid on MacOSX.\nWhen building the library, I get\n\n```\n...\nchecking host system type... (cached) i686-apple-darwin10.6.0\nconfigure: creating ./config.status\nconfig.status: creating gac\nconfig.status: creating Makefile\nconfig.status: creating config.h\n( cd bin/i686-apple-darwin10.6.0-gcc ; make CC='gcc' )\nlibtool --mode=compile gcc -I. -I../.. -DCONFIG_H -Wall -g -O2  -o ariths.o -c ../../src/ariths.c\nlibtool: unknown option character `-' in: --mode=compile\nUsage: libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT]\nUsage: libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table <filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] [-noall_load]\nmake[1]: *** [ariths.o] Error 1\nmake: *** [compile] Error 2\nError building GAP.\n```",
     "created_at": "2011-03-23T05:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -911,6 +913,7 @@ archive/issue_comments_051121.json:
 
 Replying to [comment:33 vbraun]:
 > Changes to the newest spkg:
+
  Volker,
 the spkg does not buid on MacOSX.
 When building the library, I get
@@ -931,7 +934,6 @@ make[1]: *** [ariths.o] Error 1
 make: *** [compile] Error 2
 Error building GAP.
 ```
-
 
 
 
@@ -958,7 +960,7 @@ Hi Dima, Ivan Andrus already told me about the OSX issue and I'm pretty sure he'
 archive/issue_comments_051123.json:
 ```json
 {
-    "body": "Replying to [comment:9 was]:\n> This log pretty much explains what/why/what next:\n\n\n```\nsage: import sage.libs.gap.gap as g\nsage: a = g.libgap('10')\nsage: a\n10\nsage: type(a)\n<type 'sage.libs.gap.gap.GapElement'>\nsage: a*a\n100\nsage: timeit('a*a')\n625 loops, best of 3: 898 ns per loop\nsage: b = gap('10')\nsage: timeit('b*b')\n125 loops, best of 3: 2.05 ms per loop\nsage: a = g.libgap('0')\nsage: a\n0\nsage: b = g.libgap('10')\nsage: b/a\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:12696)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement._div_ (sage/libs/gap/gap.c:4443)()\n    613         except RuntimeError, msg:\n    614             ClearError()\n--> 615             raise ValueError, 'Gap: '+str(msg)\n    616 \n    617 \n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```\n\n\nI'm currently adding code to access Gap containers, e.g.\n\n```\nsage: S4 = g.libgap('SymmetricGroup(4)')\nsage: S4.List()\n[ (), (1,4), (1,2,4), (1,3,4), (2,4), (1,4,2), (1,2), (1,3,4,2), (2,3,4), (1,4,2,3), (1,2,3), (1,3)(2,4), (3,4), (1,4,3), (1,2,4,3), (1,3), (2,4,3), (1,4,3,2), (1,2)(3,4), (1,3,2), (2,3), (1,4)(2,3), (1,2,3,4), (1,3,2,4) ]\nsage: S4_elements = _\nsage: type(S4_elements)\n<type 'sage.libs.gap.gap.GapElement_List'>\nsage: S4_elements[3]\n(1,3,4)\nsage: prod( g for g in S4_elements )\n(1,3)(2,4)\n```\n",
+    "body": "Replying to [comment:9 was]:\n> This log pretty much explains what/why/what next:\n\n\n```\nsage: import sage.libs.gap.gap as g\nsage: a = g.libgap('10')\nsage: a\n10\nsage: type(a)\n<type 'sage.libs.gap.gap.GapElement'>\nsage: a*a\n100\nsage: timeit('a*a')\n625 loops, best of 3: 898 ns per loop\nsage: b = gap('10')\nsage: timeit('b*b')\n125 loops, best of 3: 2.05 ms per loop\nsage: a = g.libgap('0')\nsage: a\n0\nsage: b = g.libgap('10')\nsage: b/a\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:12696)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.GapElement._div_ (sage/libs/gap/gap.c:4443)()\n    613         except RuntimeError, msg:\n    614             ClearError()\n--> 615             raise ValueError, 'Gap: '+str(msg)\n    616 \n    617 \n\nValueError: Gap: Rational operations: <divisor> must not be zero\n```\n\nI'm currently adding code to access Gap containers, e.g.\n\n```\nsage: S4 = g.libgap('SymmetricGroup(4)')\nsage: S4.List()\n[ (), (1,4), (1,2,4), (1,3,4), (2,4), (1,4,2), (1,2), (1,3,4,2), (2,3,4), (1,4,2,3), (1,2,3), (1,3)(2,4), (3,4), (1,4,3), (1,2,4,3), (1,3), (2,4,3), (1,4,3,2), (1,2)(3,4), (1,3,2), (2,3), (1,4)(2,3), (1,2,3,4), (1,3,2,4) ]\nsage: S4_elements = _\nsage: type(S4_elements)\n<type 'sage.libs.gap.gap.GapElement_List'>\nsage: S4_elements[3]\n(1,3,4)\nsage: prod( g for g in S4_elements )\n(1,3)(2,4)\n```",
     "created_at": "2011-03-23T05:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1007,7 +1009,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: Gap: Rational operations: <divisor> must not be zero
 ```
 
-
 I'm currently adding code to access Gap containers, e.g.
 
 ```
@@ -1025,13 +1026,12 @@ sage: prod( g for g in S4_elements )
 
 
 
-
 ---
 
 archive/issue_comments_051124.json:
 ```json
 {
-    "body": "I got it into a bad state:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('0')\n0\nsage: g.libgap('if 4>3 then\\nPrint(\"hi\");\\nfi')\nNULL\nsage: g.libgap('if 4>3 thenPrint(\"hi\");\\nfi')\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/gvol/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6866)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:2976)()\n\nAssertionError: The return status of ReadEvalCommand must be zero.\nsage: g.libgap('0')\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/gvol/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6866)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:2976)()\n\nAssertionError: The return status of ReadEvalCommand must be zero.\nsage: \n```\n",
+    "body": "I got it into a bad state:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('0')\n0\nsage: g.libgap('if 4>3 then\\nPrint(\"hi\");\\nfi')\nNULL\nsage: g.libgap('if 4>3 thenPrint(\"hi\");\\nfi')\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/gvol/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6866)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:2976)()\n\nAssertionError: The return status of ReadEvalCommand must be zero.\nsage: g.libgap('0')\n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/Users/gvol/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6866)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:2976)()\n\nAssertionError: The return status of ReadEvalCommand must be zero.\nsage: \n```",
     "created_at": "2011-03-23T19:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1087,13 +1087,12 @@ sage:
 
 
 
-
 ---
 
 archive/issue_comments_051125.json:
 ```json
 {
-    "body": "Replying to [comment:38 iandrus]:\n\nwell, it works as it should in p6, so that's something that got in p7.\nIndeed, with p6 I get\n\n```\nsage: gap('if 4>3 thenPrint(\"hi\");\\nfi')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/private/tmp/<ipython console> in <module>()\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1093             \n   1094         if isinstance(x, basestring):\n-> 1095             return cls(self, x, name=name)\n   1096         try:\n   1097             return self._coerce_from_special_method(x)\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1520             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1521                 self._session_number = -1\n-> 1522                 raise TypeError, x\n   1523         self._session_number = parent._session_number\n   1524 \n\nTypeError: Gap produced error output\nSyntax error: expression expected\n$sage3:=if 4>3 thenPrint(\"hi\");fi;;\n         ^\n\n   executing $sage3:=if 4>3 thenPrint(\"hi\");fi;;\n```\n\n\nwhich is basically how it should be: cf. sage: gap('if 4>3 then\\nPrint(\"hi\");\\nfi')",
+    "body": "Replying to [comment:38 iandrus]:\n\nwell, it works as it should in p6, so that's something that got in p7.\nIndeed, with p6 I get\n\n```\nsage: gap('if 4>3 thenPrint(\"hi\");\\nfi')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/private/tmp/<ipython console> in <module>()\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1093             \n   1094         if isinstance(x, basestring):\n-> 1095             return cls(self, x, name=name)\n   1096         try:\n   1097             return self._coerce_from_special_method(x)\n\n/usr/local/src/sage/current/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1520             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1521                 self._session_number = -1\n-> 1522                 raise TypeError, x\n   1523         self._session_number = parent._session_number\n   1524 \n\nTypeError: Gap produced error output\nSyntax error: expression expected\n$sage3:=if 4>3 thenPrint(\"hi\");fi;;\n         ^\n\n   executing $sage3:=if 4>3 thenPrint(\"hi\");fi;;\n```\n\nwhich is basically how it should be: cf. sage: gap('if 4>3 then\\nPrint(\"hi\");\\nfi')",
     "created_at": "2011-03-24T01:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1136,7 +1135,6 @@ $sage3:=if 4>3 thenPrint("hi");fi;;
    executing $sage3:=if 4>3 thenPrint("hi");fi;;
 ```
 
-
 which is basically how it should be: cf. sage: gap('if 4>3 then\nPrint("hi");\nfi')
 
 
@@ -1166,7 +1164,7 @@ oops, no, sorry, please disregard my last comment; with p6 I also get something 
 archive/issue_comments_051127.json:
 ```json
 {
-    "body": "Updated version (both spkg and library patch) fixes this issue:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('0')\n0\nsage: g.libgap('if 4>3 then\\nPrint(\"hi\");\\nfi')\nNULL\nsage: g.libgap('if 4>3 thenPrint(\"hi\");\\nfi')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6995)()\n   1125         if not isinstance(x, str):\n   1126             x = x._gap_init_()\n-> 1127         return make_GapElement(self, libgap_eval(x))\n   1128 \n   1129 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:3034)()\n    424     if status != STATUS_END:\n    425         ClearError()\n--> 426         raise ValueError, 'Not a normal statement.'\n    427         return NULL\n    428         \n\nValueError: Not a normal statement.\nsage: g.libgap('0')\n0\n```\n\nAlso, I changed the libGAP memory allocation to not use `sbrk()`, now it runs under valgrind ;-)",
+    "body": "Updated version (both spkg and library patch) fixes this issue:\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('0')\n0\nsage: g.libgap('if 4>3 then\\nPrint(\"hi\");\\nfi')\nNULL\nsage: g.libgap('if 4>3 thenPrint(\"hi\");\\nfi')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1312, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.7.alpha1/devel/sage-main/sage/libs/gap/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:6995)()\n   1125         if not isinstance(x, str):\n   1126             x = x._gap_init_()\n-> 1127         return make_GapElement(self, libgap_eval(x))\n   1128 \n   1129 \n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:3034)()\n    424     if status != STATUS_END:\n    425         ClearError()\n--> 426         raise ValueError, 'Not a normal statement.'\n    427         return NULL\n    428         \n\nValueError: Not a normal statement.\nsage: g.libgap('0')\n0\n```\nAlso, I changed the libGAP memory allocation to not use `sbrk()`, now it runs under valgrind ;-)",
     "created_at": "2011-03-24T01:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1217,7 +1215,6 @@ ValueError: Not a normal statement.
 sage: g.libgap('0')
 0
 ```
-
 Also, I changed the libGAP memory allocation to not use `sbrk()`, now it runs under valgrind ;-)
 
 
@@ -1247,7 +1244,7 @@ I feel this is now stable enough for wider testing. I can't crash it any more :-
 archive/issue_comments_051129.json:
 ```json
 {
-    "body": "Newest version can convert various GAP datatypes back to Sage, for example cyclotomic numbers\n\n```\nsage: libgap('5/3 + 7*E(3)').sage()\n7*zeta3 + 5/3\n```\n\nand permutations:\n\n```\nsage: generators = libgap.AlternatingGroup(4).GeneratorsOfGroup().sage()\nsage: generators   # a Sage list of Sage permutations!\n[(1,2,3), (2,3,4)]\nsage: PermutationGroup(generators).cardinality()   # computed in Sage\n12\nsage: libgap.AlternatingGroup(4).Size()            # computed in GAP\n12\n```\n",
+    "body": "Newest version can convert various GAP datatypes back to Sage, for example cyclotomic numbers\n\n```\nsage: libgap('5/3 + 7*E(3)').sage()\n7*zeta3 + 5/3\n```\nand permutations:\n\n```\nsage: generators = libgap.AlternatingGroup(4).GeneratorsOfGroup().sage()\nsage: generators   # a Sage list of Sage permutations!\n[(1,2,3), (2,3,4)]\nsage: PermutationGroup(generators).cardinality()   # computed in Sage\n12\nsage: libgap.AlternatingGroup(4).Size()            # computed in GAP\n12\n```",
     "created_at": "2011-03-25T04:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1262,7 +1259,6 @@ Newest version can convert various GAP datatypes back to Sage, for example cyclo
 sage: libgap('5/3 + 7*E(3)').sage()
 7*zeta3 + 5/3
 ```
-
 and permutations:
 
 ```
@@ -1277,13 +1273,12 @@ sage: libgap.AlternatingGroup(4).Size()            # computed in GAP
 
 
 
-
 ---
 
 archive/issue_comments_051130.json:
 ```json
 {
-    "body": "Replying to [comment:44 vbraun]:\n> Newest version can convert various GAP datatypes back to Sage, for example cyclotomic numbers\n> {{{\n> sage: libgap('5/3 + 7*E(3)').sage()\n> 7*zeta3 + 5/3\n> }}}\n> and permutations:\n> {{{\n> sage: generators = libgap.AlternatingGroup(4).GeneratorsOfGroup().sage()\n> sage: generators   # a Sage list of Sage permutations!\n> [(1,2,3), (2,3,4)]\n> sage: PermutationGroup(generators).cardinality()   # computed in Sage\n> 12\n> sage: libgap.AlternatingGroup(4).Size()            # computed in GAP\n> 12\n> }}}\n\nThis sounds  great! What about matrices? \n(it would be even better if there was a well-explained in docs implementation example of such a conversion).\nE.g. for my work I need to convert GAP matrices (or non-standard sparse GAP matrices) into CVXOPT matrices.",
+    "body": "Replying to [comment:44 vbraun]:\n> Newest version can convert various GAP datatypes back to Sage, for example cyclotomic numbers\n> \n> ```\n> sage: libgap('5/3 + 7*E(3)').sage()\n> 7*zeta3 + 5/3\n> ```\n> and permutations:\n> \n> ```\n> sage: generators = libgap.AlternatingGroup(4).GeneratorsOfGroup().sage()\n> sage: generators   # a Sage list of Sage permutations!\n> [(1,2,3), (2,3,4)]\n> sage: PermutationGroup(generators).cardinality()   # computed in Sage\n> 12\n> sage: libgap.AlternatingGroup(4).Size()            # computed in GAP\n> 12\n> ```\n\n\nThis sounds  great! What about matrices? \n(it would be even better if there was a well-explained in docs implementation example of such a conversion).\nE.g. for my work I need to convert GAP matrices (or non-standard sparse GAP matrices) into CVXOPT matrices.",
     "created_at": "2011-03-25T05:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1294,12 +1289,14 @@ archive/issue_comments_051130.json:
 
 Replying to [comment:44 vbraun]:
 > Newest version can convert various GAP datatypes back to Sage, for example cyclotomic numbers
-> {{{
+> 
+> ```
 > sage: libgap('5/3 + 7*E(3)').sage()
 > 7*zeta3 + 5/3
-> }}}
+> ```
 > and permutations:
-> {{{
+> 
+> ```
 > sage: generators = libgap.AlternatingGroup(4).GeneratorsOfGroup().sage()
 > sage: generators   # a Sage list of Sage permutations!
 > [(1,2,3), (2,3,4)]
@@ -1307,7 +1304,8 @@ Replying to [comment:44 vbraun]:
 > 12
 > sage: libgap.AlternatingGroup(4).Size()            # computed in GAP
 > 12
-> }}}
+> ```
+
 
 This sounds  great! What about matrices? 
 (it would be even better if there was a well-explained in docs implementation example of such a conversion).
@@ -1338,7 +1336,7 @@ Hi  -- vbraun, this is amazing!  You are a genius.  W00t.
 archive/issue_comments_051132.json:
 ```json
 {
-    "body": "Replying to [comment:45 dimpase]:\n> This sounds  great! What about matrices? \n\nIf a dense matrix is good enough for you then you can just convert it to a List of Lists in Gap and then use the `.sage()` method which recurses through the lists and can convert numbers:\n\n```\nsage: from sage.libs.gap.libgap import libgap\nsage: M = libgap('BlockMatrix([[1,1,[[1, 2],[ 3, 4]]], [1,2,[[9,10],[11,12]]], [2,2,[[5, 6],[ 7, 8]]]],2,2)')\nsage: M\n<block matrix of dimensions (2*2)x(2*2)>\nsage: M.List().sage()\n[[1, 2, 9, 10], [3, 4, 11, 12], [0, 0, 5, 6], [0, 0, 7, 8]]\nsage: matrix(ZZ,_)\n[ 1  2  9 10]\n[ 3  4 11 12]\n[ 0  0  5  6]\n[ 0  0  7  8]\n```\n",
+    "body": "Replying to [comment:45 dimpase]:\n> This sounds  great! What about matrices? \n\n\nIf a dense matrix is good enough for you then you can just convert it to a List of Lists in Gap and then use the `.sage()` method which recurses through the lists and can convert numbers:\n\n```\nsage: from sage.libs.gap.libgap import libgap\nsage: M = libgap('BlockMatrix([[1,1,[[1, 2],[ 3, 4]]], [1,2,[[9,10],[11,12]]], [2,2,[[5, 6],[ 7, 8]]]],2,2)')\nsage: M\n<block matrix of dimensions (2*2)x(2*2)>\nsage: M.List().sage()\n[[1, 2, 9, 10], [3, 4, 11, 12], [0, 0, 5, 6], [0, 0, 7, 8]]\nsage: matrix(ZZ,_)\n[ 1  2  9 10]\n[ 3  4 11 12]\n[ 0  0  5  6]\n[ 0  0  7  8]\n```",
     "created_at": "2011-03-25T05:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1349,6 +1347,7 @@ archive/issue_comments_051132.json:
 
 Replying to [comment:45 dimpase]:
 > This sounds  great! What about matrices? 
+
 
 If a dense matrix is good enough for you then you can just convert it to a List of Lists in Gap and then use the `.sage()` method which recurses through the lists and can convert numbers:
 
@@ -1368,13 +1367,12 @@ sage: matrix(ZZ,_)
 
 
 
-
 ---
 
 archive/issue_comments_051133.json:
 ```json
 {
-    "body": "When testing the sage/libs/gap/ directory, I get a number of errors in libgap.pyx only.   Most stuff passes, but it seems to handle errors differently.  See below for an example; every error is something analogous to this, though of course they look different depending on what error is raised instead of what is expected.\n\nThis is on Mac OS X 10.4 PPC.\n\n\n```\nFile \"/Users/student/Desktop/sage-4.6.2/devel/sage/sage/libs/gap/libgap.pyx\", line 670:\n    sage: libgap(1) / libgap('0')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Gap: Rational operations: <divisor> must not be zero\nGot:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[7]>\", line 1, in <module>\n        libgap(Integer(1)) / libgap('0')###line 670:\n    sage: libgap(1) / libgap('0')\n      File \"element.pyx\", line 1549, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11981)\n    RuntimeError: Rational operations: <divisor> must not be zero\n```\n\n\nBy the way, this needs some authors and reviewers in the list :)",
+    "body": "When testing the sage/libs/gap/ directory, I get a number of errors in libgap.pyx only.   Most stuff passes, but it seems to handle errors differently.  See below for an example; every error is something analogous to this, though of course they look different depending on what error is raised instead of what is expected.\n\nThis is on Mac OS X 10.4 PPC.\n\n```\nFile \"/Users/student/Desktop/sage-4.6.2/devel/sage/sage/libs/gap/libgap.pyx\", line 670:\n    sage: libgap(1) / libgap('0')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Gap: Rational operations: <divisor> must not be zero\nGot:\n    Traceback (most recent call last):\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/student/Desktop/sage-4.6.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[7]>\", line 1, in <module>\n        libgap(Integer(1)) / libgap('0')###line 670:\n    sage: libgap(1) / libgap('0')\n      File \"element.pyx\", line 1549, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11981)\n    RuntimeError: Rational operations: <divisor> must not be zero\n```\n\nBy the way, this needs some authors and reviewers in the list :)",
     "created_at": "2011-03-25T15:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1386,7 +1384,6 @@ archive/issue_comments_051133.json:
 When testing the sage/libs/gap/ directory, I get a number of errors in libgap.pyx only.   Most stuff passes, but it seems to handle errors differently.  See below for an example; every error is something analogous to this, though of course they look different depending on what error is raised instead of what is expected.
 
 This is on Mac OS X 10.4 PPC.
-
 
 ```
 File "/Users/student/Desktop/sage-4.6.2/devel/sage/sage/libs/gap/libgap.pyx", line 670:
@@ -1410,7 +1407,6 @@ Got:
     RuntimeError: Rational operations: <divisor> must not be zero
 ```
 
-
 By the way, this needs some authors and reviewers in the list :)
 
 
@@ -1420,7 +1416,7 @@ By the way, this needs some authors and reviewers in the list :)
 archive/issue_comments_051134.json:
 ```json
 {
-    "body": "Replying to [comment:48 kcrisman]:\n> When testing the sage/libs/gap/ directory, I get a number of errors in libgap.pyx only.   Most stuff passes, but it seems to handle errors differently.  See below for an example; every error is something analogous to this, though of course they look different depending on what error is raised instead of what is expected.\n> \n> This is on Mac OS X 10.4 PPC.\n> \n\n\n```\n File \"/Users/student/Desktop/sage-4.6.2/devel/sage/sage/libs/gap/libgap.pyx\", line 670:\n     sage: libgap(1) / libgap('0')\n```\n\n\nI expect that this is caught by Sage itself rather than by GAP (Sage recognizes that an illegal division is going to happen).\n\n[...]\n\n> By the way, this needs some authors and reviewers in the list :)\n\nI added some authors, in alphabetical order--\u2013don't know if this is a complete list.",
+    "body": "Replying to [comment:48 kcrisman]:\n> When testing the sage/libs/gap/ directory, I get a number of errors in libgap.pyx only.   Most stuff passes, but it seems to handle errors differently.  See below for an example; every error is something analogous to this, though of course they look different depending on what error is raised instead of what is expected.\n> \n> This is on Mac OS X 10.4 PPC.\n> \n\n\n```\n File \"/Users/student/Desktop/sage-4.6.2/devel/sage/sage/libs/gap/libgap.pyx\", line 670:\n     sage: libgap(1) / libgap('0')\n```\n\nI expect that this is caught by Sage itself rather than by GAP (Sage recognizes that an illegal division is going to happen).\n\n[...]\n\n> By the way, this needs some authors and reviewers in the list :)\n\n\nI added some authors, in alphabetical order--\u2013don't know if this is a complete list.",
     "created_at": "2011-03-25T16:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1441,12 +1437,12 @@ Replying to [comment:48 kcrisman]:
      sage: libgap(1) / libgap('0')
 ```
 
-
 I expect that this is caught by Sage itself rather than by GAP (Sage recognizes that an illegal division is going to happen).
 
 [...]
 
 > By the way, this needs some authors and reviewers in the list :)
+
 
 I added some authors, in alphabetical order--–don't know if this is a complete list.
 
@@ -1475,7 +1471,7 @@ No, `libgap(1) / libgap('0')` is evaluated in GAP and raises an error in GAP. We
 archive/issue_comments_051136.json:
 ```json
 {
-    "body": "Assuming you do not have the GAP small group database installed, then running\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('SmallGroup(12,3)')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/gvol/SageStuff/gap-4.4.12.p7/src/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:7237)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:3005)()\n\nValueError: Gap: Aborted\n```\n\n\nThe error message could be a bit more helpful, but  when runnning under `sage --valgrind` it leads to a segfault.",
+    "body": "Assuming you do not have the GAP small group database installed, then running\n\n```\nsage: import sage.libs.gap.gap as g\nsage: g.libgap('SmallGroup(12,3)')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/gvol/SageStuff/gap-4.4.12.p7/src/<ipython console> in <module>()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6816)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3254)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3157)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.Gap._element_constructor_ (sage/libs/gap/gap.c:7237)()\n\n/Users/gvol/vcs/cur-sage/local/lib/python2.6/site-packages/sage/libs/gap/gap.so in sage.libs.gap.gap.libgap_eval (sage/libs/gap/gap.c:3005)()\n\nValueError: Gap: Aborted\n```\n\nThe error message could be a bit more helpful, but  when runnning under `sage --valgrind` it leads to a segfault.",
     "created_at": "2011-03-25T17:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1507,7 +1503,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: Gap: Aborted
 ```
 
-
 The error message could be a bit more helpful, but  when runnning under `sage --valgrind` it leads to a segfault.
 
 
@@ -1517,7 +1512,7 @@ The error message could be a bit more helpful, but  when runnning under `sage --
 archive/issue_comments_051137.json:
 ```json
 {
-    "body": "Replying to [comment:50 vbraun]:\n> No, `libgap(1) / libgap('0')` is evaluated in GAP and raises an error in GAP. We injected an `abort()` in the GAP code, so the `sig_on()`/`sig_off()` block catches it as `RuntimeError`. The `GapElement._div_` method should catch the `RuntimeError` and re-raise it as `ValueError`. This works for me (all doctests pass on Fedora 14 x86_64). Are you using the newest version of `trac_6391_libGAP.patch`?\nI think so.\n\n```\nsage: hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6391/trac_6391_libGAP.patch')\n```\n\nis how I imported it, then `./sage -br`.  Like I said, it passes everything else in that directory.  (I haven't done other tests because it takes a loooong time.)\n\nThat part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?",
+    "body": "Replying to [comment:50 vbraun]:\n> No, `libgap(1) / libgap('0')` is evaluated in GAP and raises an error in GAP. We injected an `abort()` in the GAP code, so the `sig_on()`/`sig_off()` block catches it as `RuntimeError`. The `GapElement._div_` method should catch the `RuntimeError` and re-raise it as `ValueError`. This works for me (all doctests pass on Fedora 14 x86_64). Are you using the newest version of `trac_6391_libGAP.patch`?\n\nI think so.\n\n```\nsage: hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6391/trac_6391_libGAP.patch')\n```\nis how I imported it, then `./sage -br`.  Like I said, it passes everything else in that directory.  (I haven't done other tests because it takes a loooong time.)\n\nThat part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?",
     "created_at": "2011-03-25T18:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1528,12 +1523,12 @@ archive/issue_comments_051137.json:
 
 Replying to [comment:50 vbraun]:
 > No, `libgap(1) / libgap('0')` is evaluated in GAP and raises an error in GAP. We injected an `abort()` in the GAP code, so the `sig_on()`/`sig_off()` block catches it as `RuntimeError`. The `GapElement._div_` method should catch the `RuntimeError` and re-raise it as `ValueError`. This works for me (all doctests pass on Fedora 14 x86_64). Are you using the newest version of `trac_6391_libGAP.patch`?
+
 I think so.
 
 ```
 sage: hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6391/trac_6391_libGAP.patch')
 ```
-
 is how I imported it, then `./sage -br`.  Like I said, it passes everything else in that directory.  (I haven't done other tests because it takes a loooong time.)
 
 That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?
@@ -1545,7 +1540,7 @@ That part seems to have first shown in in the .2.patch.  It didn't get cancelled
 archive/issue_comments_051138.json:
 ```json
 {
-    "body": "Replying to [comment:52 kcrisman]:\n> That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  \n\nThe patches are not cummulative. You need to back out old versions before applying the newest one.",
+    "body": "Replying to [comment:52 kcrisman]:\n> That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  \n\n\nThe patches are not cummulative. You need to back out old versions before applying the newest one.",
     "created_at": "2011-03-25T19:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1557,6 +1552,7 @@ archive/issue_comments_051138.json:
 Replying to [comment:52 kcrisman]:
 > That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  
 
+
 The patches are not cummulative. You need to back out old versions before applying the newest one.
 
 
@@ -1566,7 +1562,7 @@ The patches are not cummulative. You need to back out old versions before applyi
 archive/issue_comments_051139.json:
 ```json
 {
-    "body": "Replying to [comment:53 vbraun]:\n> Replying to [comment:52 kcrisman]:\n> > That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  \n> \n> The patches are not cummulative. You need to back out old versions before applying the newest one.\n\nI only applied this most recent one.  I was just wondering whether somehow I should have applied the .2.patch.  But I don't think this is the issue.\n\nInterestingly, I get long hangs, so I think you may be right that I'm somehow missing the !sig_on stuff.  But\n\n```\n        try:            sig_on()            result = make_GapElement(self.parent(),                                     DIFF(self.value, (<GapElement>right).value))            sig_off()            return result        except RuntimeError, msg:            ClearError()            raise ValueError, 'Gap: '+str(msg)\n```\n\nis what I get for the code of `g1._sub_??`.\n\nBut I did get this scary thing:\n\n```\nsage: libgap(1)\n/Users/student/Desktop/sage-4.6.2/local/bin/sage-sage: line 308: 14591 Abort trap              sage-ipython \"$@\" -i\n```\n\nCould this is another example of using the wrong !MAC_OSX_DEPLOYMENT_TARGET or something, like it was for the initial problems with 10.6 not working... ?  Maybe that's impossible.",
+    "body": "Replying to [comment:53 vbraun]:\n> Replying to [comment:52 kcrisman]:\n> > That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  \n\n> \n> The patches are not cummulative. You need to back out old versions before applying the newest one.\n\n\nI only applied this most recent one.  I was just wondering whether somehow I should have applied the .2.patch.  But I don't think this is the issue.\n\nInterestingly, I get long hangs, so I think you may be right that I'm somehow missing the !sig_on stuff.  But\n\n```\n        try:            sig_on()            result = make_GapElement(self.parent(),                                     DIFF(self.value, (<GapElement>right).value))            sig_off()            return result        except RuntimeError, msg:            ClearError()            raise ValueError, 'Gap: '+str(msg)\n```\nis what I get for the code of `g1._sub_??`.\n\nBut I did get this scary thing:\n\n```\nsage: libgap(1)\n/Users/student/Desktop/sage-4.6.2/local/bin/sage-sage: line 308: 14591 Abort trap              sage-ipython \"$@\" -i\n```\nCould this is another example of using the wrong !MAC_OSX_DEPLOYMENT_TARGET or something, like it was for the initial problems with 10.6 not working... ?  Maybe that's impossible.",
     "created_at": "2011-03-25T19:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1578,8 +1574,10 @@ archive/issue_comments_051139.json:
 Replying to [comment:53 vbraun]:
 > Replying to [comment:52 kcrisman]:
 > > That part seems to have first shown in in the .2.patch.  It didn't get cancelled in the going back to just .patch, did it?  
+
 > 
 > The patches are not cummulative. You need to back out old versions before applying the newest one.
+
 
 I only applied this most recent one.  I was just wondering whether somehow I should have applied the .2.patch.  But I don't think this is the issue.
 
@@ -1588,7 +1586,6 @@ Interestingly, I get long hangs, so I think you may be right that I'm somehow mi
 ```
         try:            sig_on()            result = make_GapElement(self.parent(),                                     DIFF(self.value, (<GapElement>right).value))            sig_off()            return result        except RuntimeError, msg:            ClearError()            raise ValueError, 'Gap: '+str(msg)
 ```
-
 is what I get for the code of `g1._sub_??`.
 
 But I did get this scary thing:
@@ -1597,7 +1594,6 @@ But I did get this scary thing:
 sage: libgap(1)
 /Users/student/Desktop/sage-4.6.2/local/bin/sage-sage: line 308: 14591 Abort trap              sage-ipython "$@" -i
 ```
-
 Could this is another example of using the wrong !MAC_OSX_DEPLOYMENT_TARGET or something, like it was for the initial problems with 10.6 not working... ?  Maybe that's impossible.
 
 
@@ -1643,7 +1639,7 @@ The libGAP requires Sage-4.7.alpha1 or later because it uses the new signal hand
 archive/issue_comments_051142.json:
 ```json
 {
-    "body": "Replying to [comment:56 vbraun]:\n> The libGAP requires Sage-4.7.alpha1 or later because it uses the new signal handling stuff that Jeroen just merged. I saw you use 4.6.2, so that explains why the exceptions are not caught correctly. \nGreat, that clarifies that.\n>The spkg has the normal layout, not sure what you are doing wrong. It is not bzip2-compressed since that is faster to test, seems like you are not unpacking it correctly.\nThis is hilarious - my Macs interpret the file ending `.p7` as a cryptographic file.  Removing that makes all well.\n\nSounds like you are all well on the way to solving this - another nice addition!",
+    "body": "Replying to [comment:56 vbraun]:\n> The libGAP requires Sage-4.7.alpha1 or later because it uses the new signal handling stuff that Jeroen just merged. I saw you use 4.6.2, so that explains why the exceptions are not caught correctly. \n\nGreat, that clarifies that.\n>The spkg has the normal layout, not sure what you are doing wrong. It is not bzip2-compressed since that is faster to test, seems like you are not unpacking it correctly.\n\nThis is hilarious - my Macs interpret the file ending `.p7` as a cryptographic file.  Removing that makes all well.\n\nSounds like you are all well on the way to solving this - another nice addition!",
     "created_at": "2011-03-26T01:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1654,8 +1650,10 @@ archive/issue_comments_051142.json:
 
 Replying to [comment:56 vbraun]:
 > The libGAP requires Sage-4.7.alpha1 or later because it uses the new signal handling stuff that Jeroen just merged. I saw you use 4.6.2, so that explains why the exceptions are not caught correctly. 
+
 Great, that clarifies that.
 >The spkg has the normal layout, not sure what you are doing wrong. It is not bzip2-compressed since that is faster to test, seems like you are not unpacking it correctly.
+
 This is hilarious - my Macs interpret the file ending `.p7` as a cryptographic file.  Removing that makes all well.
 
 Sounds like you are all well on the way to solving this - another nice addition!
@@ -1743,7 +1741,7 @@ libgap interface header (for review purposes only)
 archive/issue_comments_051147.json:
 ```json
 {
-    "body": "Attachment [libgap.h](tarball://root/attachments/some-uuid/ticket6391/libgap.h) by @dimpase created at 2011-03-27 09:01:59\n\nReplying to [comment:59 vbraun]:\n> The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. \n> \n> While this layout is probably not the final word in how to build libgap, I think its good enough to test it on a wider audience. Once we are confident that it works well we should contact upstream and find out in how far they are willing to add shared library support. Ready for review!\n\nHi Volker, you mentioned adding doctests etc.\nDo you mean for the low-level stuff in gap.pyx ? \n\nDid you try completely replacing gap interface with libgap interface?\nIMHO it's about time to start doing this --- this would uncover more  things to do, I imagine.\n\nIt would be great is libgap/ contained at least one C example on building a C application that links against libGAP and does something, like computing the order of a permutation group. Would be good for stress-testing, and just understanding the\ninterface better.\nAnyone out there who has time for this now? (not me :-( ) I imagine it's more work on a makefile than on the C side.\n\nRegarding Sage-libGAP  interface, I would like to understand what happens in a scenario when a Python object P holds\na reference to a GAP object G, and then P gets GC'ed. This should result in G getting freed (eventually) by GAP's GC.\nIt would be good to see an evidence that this actually does happen.\n\nDid you check that things work with GAP workspaces (Saving/Loading workspaces, that is)?",
+    "body": "Attachment [libgap.h](tarball://root/attachments/some-uuid/ticket6391/libgap.h) by @dimpase created at 2011-03-27 09:01:59\n\nReplying to [comment:59 vbraun]:\n> The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. \n> \n> While this layout is probably not the final word in how to build libgap, I think its good enough to test it on a wider audience. Once we are confident that it works well we should contact upstream and find out in how far they are willing to add shared library support. Ready for review!\n\n\nHi Volker, you mentioned adding doctests etc.\nDo you mean for the low-level stuff in gap.pyx ? \n\nDid you try completely replacing gap interface with libgap interface?\nIMHO it's about time to start doing this --- this would uncover more  things to do, I imagine.\n\nIt would be great is libgap/ contained at least one C example on building a C application that links against libGAP and does something, like computing the order of a permutation group. Would be good for stress-testing, and just understanding the\ninterface better.\nAnyone out there who has time for this now? (not me :-( ) I imagine it's more work on a makefile than on the C side.\n\nRegarding Sage-libGAP  interface, I would like to understand what happens in a scenario when a Python object P holds\na reference to a GAP object G, and then P gets GC'ed. This should result in G getting freed (eventually) by GAP's GC.\nIt would be good to see an evidence that this actually does happen.\n\nDid you check that things work with GAP workspaces (Saving/Loading workspaces, that is)?",
     "created_at": "2011-03-27T09:01:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1758,6 +1756,7 @@ Replying to [comment:59 vbraun]:
 > The updated gap-4.4.12.p8 now contains a separate `libgap/` directory with a copy of the gap kernel sources and new autoconf scripts that can actually build a shared library on Solaris. 
 > 
 > While this layout is probably not the final word in how to build libgap, I think its good enough to test it on a wider audience. Once we are confident that it works well we should contact upstream and find out in how far they are willing to add shared library support. Ready for review!
+
 
 Hi Volker, you mentioned adding doctests etc.
 Do you mean for the low-level stuff in gap.pyx ? 
@@ -1812,7 +1811,7 @@ I haven't tried saving/loading Gap workspaces. But it doesn't make much sense in
 archive/issue_comments_051149.json:
 ```json
 {
-    "body": "Replying to [comment:61 vbraun]:\n\n\n> \n> I haven't tried saving/loading Gap workspaces. But it doesn't make much sense in libGAP since it would break the Python<->Gap object relations. If you need to load a huge pre-evaluated Gap script then you probably don't need libGAP, which is all about fast interaction with Gap.\n\nAt least the initialization of libGAP should probably use a prebuilt workspace, as is done by the current interface.\nThe reason is to speed it up. \n\nEven with Python<-> GAP relations lost, saving workspace might still make sense (if you know the GAP names of objects\ncreated, you can get them, right?).\nAnd I don't see why it is really lost, as is it recorded in Gap global variable libgap_owned_objects. \nWhich would make it possible to re-create the corresponding Python's `GapElement` data.",
+    "body": "Replying to [comment:61 vbraun]:\n\n\n> \n> I haven't tried saving/loading Gap workspaces. But it doesn't make much sense in libGAP since it would break the Python<->Gap object relations. If you need to load a huge pre-evaluated Gap script then you probably don't need libGAP, which is all about fast interaction with Gap.\n\n\nAt least the initialization of libGAP should probably use a prebuilt workspace, as is done by the current interface.\nThe reason is to speed it up. \n\nEven with Python<-> GAP relations lost, saving workspace might still make sense (if you know the GAP names of objects\ncreated, you can get them, right?).\nAnd I don't see why it is really lost, as is it recorded in Gap global variable libgap_owned_objects. \nWhich would make it possible to re-create the corresponding Python's `GapElement` data.",
     "created_at": "2011-03-27T15:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1826,6 +1825,7 @@ Replying to [comment:61 vbraun]:
 
 > 
 > I haven't tried saving/loading Gap workspaces. But it doesn't make much sense in libGAP since it would break the Python<->Gap object relations. If you need to load a huge pre-evaluated Gap script then you probably don't need libGAP, which is all about fast interaction with Gap.
+
 
 At least the initialization of libGAP should probably use a prebuilt workspace, as is done by the current interface.
 The reason is to speed it up. 
@@ -1862,7 +1862,7 @@ Its true that one could recreate the `GapElement`s from a saved/loaded workspace
 archive/issue_comments_051151.json:
 ```json
 {
-    "body": "Replying to [comment:63 vbraun]:\n> During the libgGAP initialization you can pass any command line arguments to GAP, so we can easily load a workspace. Note that Gap initialization happens the first time you use libGAP, so it does not add to the Sage startup time.  \n\nOK, but it does add to libGAP startup time.\n\n> \n> Its true that one could recreate the `GapElement`s from a saved/loaded workspace (though you lose the Python variable names), but it still doesn't seem to be the most pressing issue right now.\n\nI certainly agree with this.",
+    "body": "Replying to [comment:63 vbraun]:\n> During the libgGAP initialization you can pass any command line arguments to GAP, so we can easily load a workspace. Note that Gap initialization happens the first time you use libGAP, so it does not add to the Sage startup time.  \n\n\nOK, but it does add to libGAP startup time.\n\n> \n> Its true that one could recreate the `GapElement`s from a saved/loaded workspace (though you lose the Python variable names), but it still doesn't seem to be the most pressing issue right now.\n\n\nI certainly agree with this.",
     "created_at": "2011-03-27T16:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1874,10 +1874,12 @@ archive/issue_comments_051151.json:
 Replying to [comment:63 vbraun]:
 > During the libgGAP initialization you can pass any command line arguments to GAP, so we can easily load a workspace. Note that Gap initialization happens the first time you use libGAP, so it does not add to the Sage startup time.  
 
+
 OK, but it does add to libGAP startup time.
 
 > 
 > Its true that one could recreate the `GapElement`s from a saved/loaded workspace (though you lose the Python variable names), but it still doesn't seem to be the most pressing issue right now.
+
 
 I certainly agree with this.
 
@@ -1971,7 +1973,7 @@ Volker
 archive/issue_comments_051153.json:
 ```json
 {
-    "body": "Needs work?\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.gap.all\nsage: a = sage.libs.gap.all.libgap(2)\nsage: a + a\n4\nsage: timeit('a+a', number=10^6)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (27, 0))\n| Sage Version 4.7, Release Date: 2011-05-17                         |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/tmp/wstein/sage-4.7/devel/sage-main/<ipython console> in <module>()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit_class.so in sage.misc.sage_timeit_class.SageTimeit.__call__ (sage/misc/sage_timeit_class.c:744)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit_class.so in sage.misc.sage_timeit_class.SageTimeit.eval (sage/misc/sage_timeit_class.c:605)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit.pyc in sage_timeit(stmt, globals, preparse, number, repeat, precision)\n    182                     break\n    183 \n--> 184         best = min(timer.repeat(repeat, number)) / number\n    185 \n    186     finally:\n\n/tmp/wstein/sage-4.7/local/lib/python/timeit.pyc in repeat(self, repeat, number)\n    218         r = []\n    219         for i in range(repeat):\n--> 220             t = self.timeit(number)\n    221             r.append(t)\n    222         return r\n\n/tmp/wstein/sage-4.7/local/lib/python/timeit.pyc in timeit(self, number)\n    191         gcold = gc.isenabled()\n    192         gc.disable()\n--> 193         timing = self.inner(it, self.timer)\n    194         if gcold:\n    195             gc.enable()\n\n/tmp/wstein/sage-4.7/devel/sage-main/<magic-timeit> in inner(_it, _timer)\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11367)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement._add_ (sage/libs/gap/libgap.c:4381)()\n\nValueError: Gap: Exhausted the GAP memory pool.\n```\n",
+    "body": "Needs work?\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import sage.libs.gap.all\nsage: a = sage.libs.gap.all.libgap(2)\nsage: a + a\n4\nsage: timeit('a+a', number=10^6)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (27, 0))\n| Sage Version 4.7, Release Date: 2011-05-17                         |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/tmp/wstein/sage-4.7/devel/sage-main/<ipython console> in <module>()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit_class.so in sage.misc.sage_timeit_class.SageTimeit.__call__ (sage/misc/sage_timeit_class.c:744)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit_class.so in sage.misc.sage_timeit_class.SageTimeit.eval (sage/misc/sage_timeit_class.c:605)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/misc/sage_timeit.pyc in sage_timeit(stmt, globals, preparse, number, repeat, precision)\n    182                     break\n    183 \n--> 184         best = min(timer.repeat(repeat, number)) / number\n    185 \n    186     finally:\n\n/tmp/wstein/sage-4.7/local/lib/python/timeit.pyc in repeat(self, repeat, number)\n    218         r = []\n    219         for i in range(repeat):\n--> 220             t = self.timeit(number)\n    221             r.append(t)\n    222         return r\n\n/tmp/wstein/sage-4.7/local/lib/python/timeit.pyc in timeit(self, number)\n    191         gcold = gc.isenabled()\n    192         gc.disable()\n--> 193         timing = self.inner(it, self.timer)\n    194         if gcold:\n    195             gc.enable()\n\n/tmp/wstein/sage-4.7/devel/sage-main/<magic-timeit> in inner(_it, _timer)\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__add__ (sage/structure/element.c:11367)()\n\n/tmp/wstein/sage-4.7/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement._add_ (sage/libs/gap/libgap.c:4381)()\n\nValueError: Gap: Exhausted the GAP memory pool.\n```",
     "created_at": "2011-06-17T01:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -1981,7 +1983,6 @@ archive/issue_comments_051153.json:
 ```
 
 Needs work?
-
 
 ```
 ----------------------------------------------------------------------
@@ -2037,7 +2038,6 @@ ValueError: Gap: Exhausted the GAP memory pool.
 
 
 
-
 ---
 
 archive/issue_comments_051154.json:
@@ -2079,7 +2079,7 @@ PING:   Should we try to get a very experimental version of libGAP in that has m
 archive/issue_comments_051156.json:
 ```json
 {
-    "body": "I have been trying to make my free groups/finitely presented groups (see #12339) wraper with libgap, and in general it works fine (and an impressive speed, i must say). There are some random segfauls though. And i have run into a problem that can be traced down to:\n\n\n\n\n\n```\nsage: from sage.libs.gap.all import libgap\nsage: F=libgap('FreeGroup(2)')\nsage: lis=libgap('[]')\nsage: (a,b)=F.GeneratorsOfGroup()\nsage: lis.Add(a^2)\nsage: lis.Add(b^2)\nsage: lis.Add(a*b*a*b)\nsage: lis\n[ f1^2, f2^2, f1*f2*f1*f2 ]\nsage: H=F/lis\nsage: H\n<fp group on the generators [ f1, f2 ]>\nsage: H.IsomorphismSimplifiedFpGroup()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-4.7.2/<ipython console> in <module>()\n\n/home/mmarco/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:7643)()\n\n/home/mmarco/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:7259)()\n\nValueError: Gap: Aborted\n```\n",
+    "body": "I have been trying to make my free groups/finitely presented groups (see #12339) wraper with libgap, and in general it works fine (and an impressive speed, i must say). There are some random segfauls though. And i have run into a problem that can be traced down to:\n\n\n\n\n```\nsage: from sage.libs.gap.all import libgap\nsage: F=libgap('FreeGroup(2)')\nsage: lis=libgap('[]')\nsage: (a,b)=F.GeneratorsOfGroup()\nsage: lis.Add(a^2)\nsage: lis.Add(b^2)\nsage: lis.Add(a*b*a*b)\nsage: lis\n[ f1^2, f2^2, f1*f2*f1*f2 ]\nsage: H=F/lis\nsage: H\n<fp group on the generators [ f1, f2 ]>\nsage: H.IsomorphismSimplifiedFpGroup()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-4.7.2/<ipython console> in <module>()\n\n/home/mmarco/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:7643)()\n\n/home/mmarco/sage-4.7.2/local/lib/python2.6/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:7259)()\n\nValueError: Gap: Aborted\n```",
     "created_at": "2012-05-13T22:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2089,7 +2089,6 @@ archive/issue_comments_051156.json:
 ```
 
 I have been trying to make my free groups/finitely presented groups (see #12339) wraper with libgap, and in general it works fine (and an impressive speed, i must say). There are some random segfauls though. And i have run into a problem that can be traced down to:
-
 
 
 
@@ -2122,7 +2121,6 @@ ValueError: Gap: Aborted
 
 
 
-
 ---
 
 archive/issue_comments_051157.json:
@@ -2148,7 +2146,7 @@ Updated patch
 archive/issue_comments_051158.json:
 ```json
 {
-    "body": "The libgap doctests pass now. Also, mmarco's example works:\n\n```\nsage: F = libgap.FreeGroup(2)\nsage: a,b = F.GeneratorsOfGroup()\nsage: lis = libgap('[]')\nsage: lis.Add(a^2)\nsage: lis.Add(b^2)\nsage: lis.Add(a*b*a*b)\nsage: lis\n[ f1^2, f2^2, f1*f2*f1*f2 ]\nsage: H=F/lis\nsage: H\n<fp group on the generators [ f1, f2 ]>\nsage: H.IsomorphismSimplifiedFpGroup()\n[ f1, f2 ] -> [ f1, f2 ]\n```\n\nWilliam's `timeit('a+a', number=10^6)` also works. If you have any interest in libGAP please try it out **this week** and let me know if you find any bugs, then I can investigate them during the rest of this week...",
+    "body": "The libgap doctests pass now. Also, mmarco's example works:\n\n```\nsage: F = libgap.FreeGroup(2)\nsage: a,b = F.GeneratorsOfGroup()\nsage: lis = libgap('[]')\nsage: lis.Add(a^2)\nsage: lis.Add(b^2)\nsage: lis.Add(a*b*a*b)\nsage: lis\n[ f1^2, f2^2, f1*f2*f1*f2 ]\nsage: H=F/lis\nsage: H\n<fp group on the generators [ f1, f2 ]>\nsage: H.IsomorphismSimplifiedFpGroup()\n[ f1, f2 ] -> [ f1, f2 ]\n```\nWilliam's `timeit('a+a', number=10^6)` also works. If you have any interest in libGAP please try it out **this week** and let me know if you find any bugs, then I can investigate them during the rest of this week...",
     "created_at": "2012-08-30T11:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2174,7 +2172,6 @@ sage: H
 sage: H.IsomorphismSimplifiedFpGroup()
 [ f1, f2 ] -> [ f1, f2 ]
 ```
-
 William's `timeit('a+a', number=10^6)` also works. If you have any interest in libGAP please try it out **this week** and let me know if you find any bugs, then I can investigate them during the rest of this week...
 
 
@@ -2266,7 +2263,7 @@ If you have any random segfaults can you post your code? I can still debug it ev
 archive/issue_comments_051163.json:
 ```json
 {
-    "body": "I think it would be best if the memory limit would be set automatically deppending on the available RAM in the system.\n\nI just got a segfault playing with a modified version of my patch for finitely presented groups:\n\n\n```\nF=FreeGroup(3)\nF.inject_variables()\nDefining x0, x1, x2\nG=F.quotient([x0^2,x1^2,x2^2,(x0*x1)^3,(x1*x2)^3,(x0*x2)^2])\nG.inject_variables()\nDefining x0, x1, x2\nsage: g=G.gap()\nsage: g\n<fp group of size 24 on the generators [ x0, x1, x2 ]>\nsage: x=x0.gap()\nsage: x.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:8449)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:8037)()\n\nValueError: libGAP: Segmentation fault\n```\n\n\nI can send you the whole file with the definition of the classes for G and x0, but i don't think it would give any useful information here: g is just a finitely presented group object of the ligbap interface, and x is one of its generators.\n\nI couldn't reproduce the error.",
+    "body": "I think it would be best if the memory limit would be set automatically deppending on the available RAM in the system.\n\nI just got a segfault playing with a modified version of my patch for finitely presented groups:\n\n```\nF=FreeGroup(3)\nF.inject_variables()\nDefining x0, x1, x2\nG=F.quotient([x0^2,x1^2,x2^2,(x0*x1)^3,(x1*x2)^3,(x0*x2)^2])\nG.inject_variables()\nDefining x0, x1, x2\nsage: g=G.gap()\nsage: g\n<fp group of size 24 on the generators [ x0, x1, x2 ]>\nsage: x=x0.gap()\nsage: x.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:8449)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:8037)()\n\nValueError: libGAP: Segmentation fault\n```\n\nI can send you the whole file with the definition of the classes for G and x0, but i don't think it would give any useful information here: g is just a finitely presented group object of the ligbap interface, and x is one of its generators.\n\nI couldn't reproduce the error.",
     "created_at": "2012-08-30T23:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2278,7 +2275,6 @@ archive/issue_comments_051163.json:
 I think it would be best if the memory limit would be set automatically deppending on the available RAM in the system.
 
 I just got a segfault playing with a modified version of my patch for finitely presented groups:
-
 
 ```
 F=FreeGroup(3)
@@ -2303,7 +2299,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: libGAP: Segmentation fault
 ```
-
 
 I can send you the whole file with the definition of the classes for G and x0, but i don't think it would give any useful information here: g is just a finitely presented group object of the ligbap interface, and x is one of its generators.
 
@@ -2354,7 +2349,7 @@ If the error is not reproducible try to run it ~100 times to see if it crashes o
 archive/issue_comments_051166.json:
 ```json
 {
-    "body": "Ok, i have tried to isolate the issue and run it in a loop to reproduce it. It is not easy to catch, but every few thousand iterations it fails:\n\n\n```\nsage: g=libgap('FreeGroup(2)')\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: lis=libgap('[]')\nsage: lis.Add(a^2)    \nsage: lis.Add(b^2)    \nsage: lis.Add(b*a)                          \nsage: h=g/lis\nsage: c=h.GeneratorsOfGroup()[0]\nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:8449)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:8037)()\n\nValueError: libGAP: Error, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `CallFuncList' on 2 arguments\n```\n\n\nI am not sure if it is the same problem though. The error message is different.",
+    "body": "Ok, i have tried to isolate the issue and run it in a loop to reproduce it. It is not easy to catch, but every few thousand iterations it fails:\n\n```\nsage: g=libgap('FreeGroup(2)')\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: lis=libgap('[]')\nsage: lis.Add(a^2)    \nsage: lis.Add(b^2)    \nsage: lis.Add(b*a)                          \nsage: h=g/lis\nsage: c=h.GeneratorsOfGroup()[0]\nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \nsage: for i in range(3000):^J    n=c.Order()\n....:     \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_MethodProxy.__call__ (sage/libs/gap/libgap.c:8449)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/libgap.so in sage.libs.gap.libgap.GapElement_Function.__call__ (sage/libs/gap/libgap.c:8037)()\n\nValueError: libGAP: Error, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `CallFuncList' on 2 arguments\n```\n\nI am not sure if it is the same problem though. The error message is different.",
     "created_at": "2012-08-31T00:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2364,7 +2359,6 @@ archive/issue_comments_051166.json:
 ```
 
 Ok, i have tried to isolate the issue and run it in a loop to reproduce it. It is not easy to catch, but every few thousand iterations it fails:
-
 
 ```
 sage: g=libgap('FreeGroup(2)')
@@ -2395,7 +2389,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: libGAP: Error, no method found! For debugging hints type ?Recovery from NoMethodFound
 Error, no 1st choice method found for `CallFuncList' on 2 arguments
 ```
-
 
 I am not sure if it is the same problem though. The error message is different.
 
@@ -2478,7 +2471,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_051171.json:
 ```json
 {
-    "body": "Problem persists for me. Not in a 3000 iterations loop, but in longer loops:\n\n\n```\nsage: g=libgap('FreeGroup(2)')                    \nsage: (a,b)=g.GeneratorsOfGroup()\nsage: lis=libgap('[]')\nsage: lis.Add(a^2)    \nsage: lis.Add(b^2)    \nsage: lis.Add(b*a)    \nsage: h=g/lis                                                                                              \nsage: c=h.GeneratorsOfGroup()[0]\nsage: for i in range(300000):                 \n....:     n=c.Order()\n....:     \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:7860)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7433)()\n\nValueError: libGAP: Error, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `CallFuncList' on 2 arguments\n\nsage: i\n6862\n```\n",
+    "body": "Problem persists for me. Not in a 3000 iterations loop, but in longer loops:\n\n```\nsage: g=libgap('FreeGroup(2)')                    \nsage: (a,b)=g.GeneratorsOfGroup()\nsage: lis=libgap('[]')\nsage: lis.Add(a^2)    \nsage: lis.Add(b^2)    \nsage: lis.Add(b*a)    \nsage: h=g/lis                                                                                              \nsage: c=h.GeneratorsOfGroup()[0]\nsage: for i in range(300000):                 \n....:     n=c.Order()\n....:     \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:7860)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7433)()\n\nValueError: libGAP: Error, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `CallFuncList' on 2 arguments\n\nsage: i\n6862\n```",
     "created_at": "2012-09-03T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2488,7 +2481,6 @@ archive/issue_comments_051171.json:
 ```
 
 Problem persists for me. Not in a 3000 iterations loop, but in longer loops:
-
 
 ```
 sage: g=libgap('FreeGroup(2)')                    
@@ -2520,13 +2512,12 @@ sage: i
 
 
 
-
 ---
 
 archive/issue_comments_051172.json:
 ```json
 {
-    "body": "After considerable despair I finally realized that Python called the libgap initialization from a higher stack frame than where `c.Order()` was executing. One peculiarities of the GAP memory manager is that it trawls the stack for pointers into its memory pool and keeps these alive (so you can just work with local stack-allocated GAP objects and not worry). While its easy to figure out the highest stack frame (its you, the currently executing function) we must take care to inform GAP about the lowest stack frame that can hold a pointer to a memory bag!\n\nNow Miguel's example runs perfectly! For the record, you can use the following syntactic sugar to make the code look nicer:\n\n```\n    sage: G =libgap.FreeGroup(2)\n    sage: a,b = G.GeneratorsOfGroup()\n    sage: rel = libgap([a^2, b^2, a*b*a*b])\n    sage: H = G / rel\n    sage: c = H.GeneratorsOfGroup()[0]\n    sage: for i in range(300000):\n    ...       n = c.Order()\n```\n",
+    "body": "After considerable despair I finally realized that Python called the libgap initialization from a higher stack frame than where `c.Order()` was executing. One peculiarities of the GAP memory manager is that it trawls the stack for pointers into its memory pool and keeps these alive (so you can just work with local stack-allocated GAP objects and not worry). While its easy to figure out the highest stack frame (its you, the currently executing function) we must take care to inform GAP about the lowest stack frame that can hold a pointer to a memory bag!\n\nNow Miguel's example runs perfectly! For the record, you can use the following syntactic sugar to make the code look nicer:\n\n```\n    sage: G =libgap.FreeGroup(2)\n    sage: a,b = G.GeneratorsOfGroup()\n    sage: rel = libgap([a^2, b^2, a*b*a*b])\n    sage: H = G / rel\n    sage: c = H.GeneratorsOfGroup()[0]\n    sage: for i in range(300000):\n    ...       n = c.Order()\n```",
     "created_at": "2012-09-06T12:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2548,7 +2539,6 @@ Now Miguel's example runs perfectly! For the record, you can use the following s
     sage: for i in range(300000):
     ...       n = c.Order()
 ```
-
 
 
 
@@ -2593,7 +2583,7 @@ Yes, anything with an esp/ebp register (I'll add support for the rest later).
 archive/issue_comments_051175.json:
 ```json
 {
-    "body": "I guess i am missing something, but that's what i get with the new patch:\n\n\n```\nsage: g=libgap('FreeGroup(2)')\ngap: halfing pool size.\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: h=g/libgap([a^2,b^2,a*b])       \nsage: h\n<fp group on the generators [ f1, f2 ]>\nsage: x=h.GeneratorsOfGroup()[0]\nsage: x\nf1\nsage: x^2\nf1^2\nsage: x^3\nf1^3\nsage: x.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:8003)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7576)()\n\nValueError: libGAP: Segmentation fault\n\n```\n",
+    "body": "I guess i am missing something, but that's what i get with the new patch:\n\n```\nsage: g=libgap('FreeGroup(2)')\ngap: halfing pool size.\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: h=g/libgap([a^2,b^2,a*b])       \nsage: h\n<fp group on the generators [ f1, f2 ]>\nsage: x=h.GeneratorsOfGroup()[0]\nsage: x\nf1\nsage: x^2\nf1^2\nsage: x^3\nf1^3\nsage: x.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.2/<ipython console> in <module>()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:8003)()\n\n/home/mmarco/sage-5.2/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7576)()\n\nValueError: libGAP: Segmentation fault\n\n```",
     "created_at": "2012-09-06T16:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2603,7 +2593,6 @@ archive/issue_comments_051175.json:
 ```
 
 I guess i am missing something, but that's what i get with the new patch:
-
 
 ```
 sage: g=libgap('FreeGroup(2)')
@@ -2635,13 +2624,12 @@ ValueError: libGAP: Segmentation fault
 
 
 
-
 ---
 
 archive/issue_comments_051176.json:
 ```json
 {
-    "body": "Great work! I noticed one thing in keeping references in `owned_objects`. The way I read the code, it's a list that any new object gets appended to (and index is stored). Upon deletion of the sage wrapper of the object, the particular location in the `owned_objects` list is unbound. Doesn't that mean that the owned_object list can grow in an unbounded way even when only a bounded number of references to gap_objects is held? i.e., wouldn't something like\n\n```\ni = 0\na = GapElement(i)\nwhile True:\n    i+=1\n    b = a\n    a = GapElement(i)\n```\n\nlet memory balloon?\nFor ecllib I ended up keeping a doubly linked list, since insertions and deletions are O(1), at the cost of a largish constant in memory overhead.\n\nAlternatives include inserting in the first unbound spot of the list, which has the wrong complexity for object creation unless you keep a free list. You could keep a stack or a deque of free spots. I don't know if a FIFO or LIFO strategy would lead to better opportunities to shorten the reference list.",
+    "body": "Great work! I noticed one thing in keeping references in `owned_objects`. The way I read the code, it's a list that any new object gets appended to (and index is stored). Upon deletion of the sage wrapper of the object, the particular location in the `owned_objects` list is unbound. Doesn't that mean that the owned_object list can grow in an unbounded way even when only a bounded number of references to gap_objects is held? i.e., wouldn't something like\n\n```\ni = 0\na = GapElement(i)\nwhile True:\n    i+=1\n    b = a\n    a = GapElement(i)\n```\nlet memory balloon?\nFor ecllib I ended up keeping a doubly linked list, since insertions and deletions are O(1), at the cost of a largish constant in memory overhead.\n\nAlternatives include inserting in the first unbound spot of the list, which has the wrong complexity for object creation unless you keep a free list. You could keep a stack or a deque of free spots. I don't know if a FIFO or LIFO strategy would lead to better opportunities to shorten the reference list.",
     "created_at": "2012-09-06T17:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2660,7 +2648,6 @@ while True:
     b = a
     a = GapElement(i)
 ```
-
 let memory balloon?
 For ecllib I ended up keeping a doubly linked list, since insertions and deletions are O(1), at the cost of a largish constant in memory overhead.
 
@@ -2711,7 +2698,7 @@ It's strange, since i have plenty of RAM available.
 archive/issue_comments_051179.json:
 ```json
 {
-    "body": "I can manually force the \"halfing pool size\" message by limiting the virtual mem size (in the followng example to 5gb which is a bit more than half of what GAP wants to take on x86 --- note that this is purely virtual and not used unless you actually do a huge computation)\n\n```\n[vbraun@volker-desktop ~]$ ulimit -v 5000000\n[vbraun@volker-desktop ~]$ sage -c 'print libgap(1)'\ngap: halfing pool size.\n1\n```\n\nThough still all doctests pass and I don't see Miguel's segfault. Can you post a backtrace? (`sage -gdb` and type 'bt' at the gdb prompt after the segfault)",
+    "body": "I can manually force the \"halfing pool size\" message by limiting the virtual mem size (in the followng example to 5gb which is a bit more than half of what GAP wants to take on x86 --- note that this is purely virtual and not used unless you actually do a huge computation)\n\n```\n[vbraun@volker-desktop ~]$ ulimit -v 5000000\n[vbraun@volker-desktop ~]$ sage -c 'print libgap(1)'\ngap: halfing pool size.\n1\n```\nThough still all doctests pass and I don't see Miguel's segfault. Can you post a backtrace? (`sage -gdb` and type 'bt' at the gdb prompt after the segfault)",
     "created_at": "2012-09-07T21:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2728,7 +2715,6 @@ I can manually force the "halfing pool size" message by limiting the virtual mem
 gap: halfing pool size.
 1
 ```
-
 Though still all doctests pass and I don't see Miguel's segfault. Can you post a backtrace? (`sage -gdb` and type 'bt' at the gdb prompt after the segfault)
 
 
@@ -2738,7 +2724,7 @@ Though still all doctests pass and I don't see Miguel's segfault. Can you post a
 archive/issue_comments_051180.json:
 ```json
 {
-    "body": "\n```\nmmarco@neumann ~/sage-5.2 $ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/home/mmarco/sage-5.2/local/bin/sage-ipython\nGNU gdb (Gentoo 7.3.1 p2) 7.3.1\nCopyright (C) 2011 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-pc-linux-gnu\".\nFor bug reporting instructions, please see:\n<http://bugs.gentoo.org/>...\nReading symbols from /home/mmarco/sage-5.2/local/bin/python...done.\n[Thread debugging using libthread_db enabled]\nPython 2.7.3 (default, Aug 30 2012, 14:13:06) \n[GCC 4.5.4] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nLoading Sage library. Current Mercurial branch is: libgap4\nsage: \nsage: g=libgap('FreeGroup(2)')\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: h=g/libgap([a^2,b^2,a*b])\nsage: x=h.GeneratorsOfGroup()[0]\nsage: x.Order()\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffcb4d15c5 in libGAP_GenStackFuncBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n(gdb) bt\n#0  0x00007fffcb4d15c5 in libGAP_GenStackFuncBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#1  0x00007fffcb4d1c2f in libGAP_CollectBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#2  0x00007fffcb4d0fda in libGAP_NewBag () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#3  0x00007fffcb4412df in libGAP_SwitchToNewLvars () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#4  0x00007fffcb447ea9 in libGAP_DoExecFunc2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#5  0x00007fffcb445555 in libGAP_EvalFunccall2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#6  0x00007fffcb34c9c4 in libGAP_ExecAssLVar () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#7  0x00007fffcb45f8b1 in libGAP_ExecSeqStat4 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#8  0x00007fffcb460a61 in libGAP_ExecFor () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#9  0x00007fffcb46366d in libGAP_ExecRepeat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#10 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#11 0x00007fffcb460151 in libGAP_ExecIf () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#12 0x00007fffcb460a61 in libGAP_ExecFor () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#13 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#14 0x00007fffcb4634e8 in libGAP_ExecRepeat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#15 0x00007fffcb45fd27 in libGAP_ExecSeqStat6 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#16 0x00007fffcb460151 in libGAP_ExecIf () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#17 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#18 0x00007fffcb46006d in libGAP_ExecSeqStat7 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#19 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#20 0x00007fffcb359b16 in libGAP_DoWrap1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#21 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#22 0x00007fffcb34ccf8 in libGAP_ExecAssLVar02 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#23 0x00007fffcb460567 in libGAP_ExecIfElifElse () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#24 0x00007fffcb45fcbb in libGAP_ExecSeqStat6 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#25 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#26 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#27 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#28 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#29 0x00007fffcb3ec5cb in libGAP_EvalNe () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#30 0x00007fffcb46049d in libGAP_ExecIfElifElse () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#31 0x00007fffcb45f5eb in libGAP_ExecSeqStat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#32 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#33 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#34 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#35 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#36 0x00007fffcb4451e3 in libGAP_EvalFunccall2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#37 0x00007fffcb464adf in libGAP_ExecReturnObj () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#38 0x00007fffcb45f654 in libGAP_ExecSeqStat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#39 0x00007fffcb447f0b in libGAP_DoExecFunc2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#40 0x00007fffcb41afe0 in libGAP_DoOperation2Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#41 0x00007fffcb2e792c in libGAP_EqObject () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#42 0x00007fffcb3ec77b in libGAP_EvalNe () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#43 0x00007fffcb463257 in libGAP_ExecWhile2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#44 0x00007fffcb460004 in libGAP_ExecSeqStat7 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#45 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#46 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#47 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#48 0x00007fffcb074e7d in __pyx_pf_4sage_4libs_3gap_7element_19GapElement_Function_2__call__ (__pyx_v_self=0x49651b0, __pyx_v_args=0x7ffff7ed4f50) at sage/libs/gap/element.c:7201\n#49 0x00007fffcb0763a8 in __pyx_pw_4sage_4libs_3gap_7element_19GapElement_Function_3__call__ (__pyx_v_self=0x49651b0, __pyx_args=0x7ffff7ed4f50, __pyx_kwds=<optimized out>) at sage/libs/gap/element.c:6998\n#50 0x00007ffff7a41913 in PyObject_Call (func=0x494de90, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#51 0x00007ffff7ae7c57 in PyEval_CallObjectWithKeywords (func=0x494de90, arg=0x7ffff7ed4f50, kw=<optimized out>) at Python/ceval.c:3890\n#52 0x00007ffff7a5ce2b in wrapperdescr_call (descr=<optimized out>, args=0x7ffff7ed4f50, kwds=0x0) at Objects/descrobject.c:306\n#53 0x00007ffff7a41913 in PyObject_Call (func=0x3287b40, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#54 0x00007fffcb06af0d in __pyx_pf_4sage_4libs_3gap_7element_22GapElement_MethodProxy___call__ (__pyx_v_args=0x7ffff7f78050, __pyx_v_self=0x49651b0) at sage/libs/gap/element.c:8003\n#55 __pyx_pw_4sage_4libs_3gap_7element_22GapElement_MethodProxy_1__call__ (__pyx_v_self=0x49651b0, __pyx_args=0x7ffff7f78050, __pyx_kwds=<optimized out>) at sage/libs/gap/element.c:7895\n#56 0x00007ffff7a41913 in PyObject_Call (func=0x49651b0, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#57 0x00007ffff7aed0ee in do_call (nk=<optimized out>, na=<optimized out>, pp_stack=0x7fffffffbff0, func=0x49651b0) at Python/ceval.c:4239\n#58 call_function (oparg=<optimized out>, pp_stack=0x7fffffffbff0) at Python/ceval.c:4044\n#59 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#60 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x4953830, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#61 0x00007ffff7aef762 in PyEval_EvalCode (co=<optimized out>, globals=<optimized out>, locals=<optimized out>) at Python/ceval.c:667\n#62 0x00007ffff7aeeb83 in exec_statement (locals=0xbc3c80, globals=0xbc3c80, prog=<optimized out>, f=0x4438bd0) at Python/ceval.c:4718\n#63 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:1880\n#64 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed9b0, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0x4998780, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#65 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffc460, func=0xb7d7d0) at Python/ceval.c:4117\n#66 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc460) at Python/ceval.c:4042\n#67 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#68 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed930, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=3, kws=0x49a6560, kwcount=0, defs=0xb7b1d0, defcount=2, closure=0x0)\n    at Python/ceval.c:3253\n#69 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=3, n=<optimized out>, pp_stack=0x7fffffffc680, func=0xb7d758) at Python/ceval.c:4117\n#70 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc680) at Python/ceval.c:4042\n#71 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#72 0x00007ffff7aeed6a in fast_function (nk=<optimized out>, na=<optimized out>, n=<optimized out>, pp_stack=0x7fffffffc7f0, func=0xb7d848) at Python/ceval.c:4107\n#73 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc7f0) at Python/ceval.c:4042\n#74 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#75 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed4b0, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0xbe59e8, kwcount=0, defs=0xb72c28, defcount=1, closure=0x0)\n    at Python/ceval.c:3253\n#76 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffca10, func=0xb7d398) at Python/ceval.c:4117\n#77 call_function (oparg=<optimized out>, pp_stack=0x7fffffffca10) at Python/ceval.c:4042\n#78 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#79 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed030, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0xbef170, kwcount=0, defs=0xb72be8, defcount=1, closure=0x0)\n    at Python/ceval.c:3253\n#80 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffcc30, func=0xb7d0c8) at Python/ceval.c:4117\n#81 call_function (oparg=<optimized out>, pp_stack=0x7fffffffcc30) at Python/ceval.c:4042\n#82 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#83 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x7ffff7eeac30, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=1, kws=0x6f2200, kwcount=2, defs=0xa30578, defcount=2, \n    closure=0x0) at Python/ceval.c:3253\n#84 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=1, n=<optimized out>, pp_stack=0x7fffffffce50, func=0xb85a28) at Python/ceval.c:4117\n#85 call_function (oparg=<optimized out>, pp_stack=0x7fffffffce50) at Python/ceval.c:4042\n#86 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#87 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x7ffff7f2ab30, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#88 0x00007ffff7aef762 in PyEval_EvalCode (co=<optimized out>, globals=<optimized out>, locals=<optimized out>) at Python/ceval.c:667\n#89 0x00007ffff7b11750 in run_mod (arena=0x623430, flags=0x7fffffffd170, locals=0x641160, globals=0x641160, filename=<optimized out>, mod=0x6f1ba0) at Python/pythonrun.c:1353\n#90 PyRun_FileExFlags (fp=0x6d70a0, filename=<optimized out>, start=<optimized out>, globals=0x641160, locals=0x641160, closeit=0, flags=0x7fffffffd170) at Python/pythonrun.c:1339\n#91 0x00007ffff7b1225f in PyRun_SimpleFileExFlags (fp=0x6d70a0, filename=0x7fffffffe919 \"/home/mmarco/sage-5.2/local/bin/sage-ipython\", closeit=0, flags=0x7fffffffd170) at Python/pythonrun.c:943\n#92 0x00007ffff7b27976 in RunStartupFile (cf=0x7fffffffd170) at Modules/main.c:153\n#93 Py_Main (argc=<optimized out>, argv=0x7fffffffd298) at Modules/main.c:593\n#94 0x00007ffff6de222d in __libc_start_main () from /lib64/libc.so.6\n#95 0x00000000004006e9 in _start ()\n\n```\n",
+    "body": "```\nmmarco@neumann ~/sage-5.2 $ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/home/mmarco/sage-5.2/local/bin/sage-ipython\nGNU gdb (Gentoo 7.3.1 p2) 7.3.1\nCopyright (C) 2011 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-pc-linux-gnu\".\nFor bug reporting instructions, please see:\n<http://bugs.gentoo.org/>...\nReading symbols from /home/mmarco/sage-5.2/local/bin/python...done.\n[Thread debugging using libthread_db enabled]\nPython 2.7.3 (default, Aug 30 2012, 14:13:06) \n[GCC 4.5.4] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nLoading Sage library. Current Mercurial branch is: libgap4\nsage: \nsage: g=libgap('FreeGroup(2)')\nsage: (a,b)=g.GeneratorsOfGroup()\nsage: h=g/libgap([a^2,b^2,a*b])\nsage: x=h.GeneratorsOfGroup()[0]\nsage: x.Order()\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007fffcb4d15c5 in libGAP_GenStackFuncBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n(gdb) bt\n#0  0x00007fffcb4d15c5 in libGAP_GenStackFuncBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#1  0x00007fffcb4d1c2f in libGAP_CollectBags () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#2  0x00007fffcb4d0fda in libGAP_NewBag () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#3  0x00007fffcb4412df in libGAP_SwitchToNewLvars () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#4  0x00007fffcb447ea9 in libGAP_DoExecFunc2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#5  0x00007fffcb445555 in libGAP_EvalFunccall2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#6  0x00007fffcb34c9c4 in libGAP_ExecAssLVar () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#7  0x00007fffcb45f8b1 in libGAP_ExecSeqStat4 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#8  0x00007fffcb460a61 in libGAP_ExecFor () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#9  0x00007fffcb46366d in libGAP_ExecRepeat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#10 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#11 0x00007fffcb460151 in libGAP_ExecIf () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#12 0x00007fffcb460a61 in libGAP_ExecFor () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#13 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#14 0x00007fffcb4634e8 in libGAP_ExecRepeat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#15 0x00007fffcb45fd27 in libGAP_ExecSeqStat6 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#16 0x00007fffcb460151 in libGAP_ExecIf () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#17 0x00007fffcb45f56a in libGAP_ExecSeqStat () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#18 0x00007fffcb46006d in libGAP_ExecSeqStat7 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#19 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#20 0x00007fffcb359b16 in libGAP_DoWrap1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#21 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#22 0x00007fffcb34ccf8 in libGAP_ExecAssLVar02 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#23 0x00007fffcb460567 in libGAP_ExecIfElifElse () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#24 0x00007fffcb45fcbb in libGAP_ExecSeqStat6 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#25 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#26 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#27 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#28 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#29 0x00007fffcb3ec5cb in libGAP_EvalNe () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#30 0x00007fffcb46049d in libGAP_ExecIfElifElse () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#31 0x00007fffcb45f5eb in libGAP_ExecSeqStat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#32 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#33 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#34 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#35 0x00007fffcb445067 in libGAP_EvalFunccall1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#36 0x00007fffcb4451e3 in libGAP_EvalFunccall2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#37 0x00007fffcb464adf in libGAP_ExecReturnObj () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#38 0x00007fffcb45f654 in libGAP_ExecSeqStat2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#39 0x00007fffcb447f0b in libGAP_DoExecFunc2args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#40 0x00007fffcb41afe0 in libGAP_DoOperation2Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#41 0x00007fffcb2e792c in libGAP_EqObject () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#42 0x00007fffcb3ec77b in libGAP_EvalNe () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#43 0x00007fffcb463257 in libGAP_ExecWhile2 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#44 0x00007fffcb460004 in libGAP_ExecSeqStat7 () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#45 0x00007fffcb447e08 in libGAP_DoExecFunc1args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#46 0x00007fffcb41ac00 in libGAP_DoOperation1Args () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#47 0x00007fffcb422ad4 in libGAP_DoAttribute () from /home/mmarco/sage-5.2/local/lib/libgap.so.0\n#48 0x00007fffcb074e7d in __pyx_pf_4sage_4libs_3gap_7element_19GapElement_Function_2__call__ (__pyx_v_self=0x49651b0, __pyx_v_args=0x7ffff7ed4f50) at sage/libs/gap/element.c:7201\n#49 0x00007fffcb0763a8 in __pyx_pw_4sage_4libs_3gap_7element_19GapElement_Function_3__call__ (__pyx_v_self=0x49651b0, __pyx_args=0x7ffff7ed4f50, __pyx_kwds=<optimized out>) at sage/libs/gap/element.c:6998\n#50 0x00007ffff7a41913 in PyObject_Call (func=0x494de90, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#51 0x00007ffff7ae7c57 in PyEval_CallObjectWithKeywords (func=0x494de90, arg=0x7ffff7ed4f50, kw=<optimized out>) at Python/ceval.c:3890\n#52 0x00007ffff7a5ce2b in wrapperdescr_call (descr=<optimized out>, args=0x7ffff7ed4f50, kwds=0x0) at Objects/descrobject.c:306\n#53 0x00007ffff7a41913 in PyObject_Call (func=0x3287b40, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#54 0x00007fffcb06af0d in __pyx_pf_4sage_4libs_3gap_7element_22GapElement_MethodProxy___call__ (__pyx_v_args=0x7ffff7f78050, __pyx_v_self=0x49651b0) at sage/libs/gap/element.c:8003\n#55 __pyx_pw_4sage_4libs_3gap_7element_22GapElement_MethodProxy_1__call__ (__pyx_v_self=0x49651b0, __pyx_args=0x7ffff7f78050, __pyx_kwds=<optimized out>) at sage/libs/gap/element.c:7895\n#56 0x00007ffff7a41913 in PyObject_Call (func=0x49651b0, arg=<optimized out>, kw=<optimized out>) at Objects/abstract.c:2529\n#57 0x00007ffff7aed0ee in do_call (nk=<optimized out>, na=<optimized out>, pp_stack=0x7fffffffbff0, func=0x49651b0) at Python/ceval.c:4239\n#58 call_function (oparg=<optimized out>, pp_stack=0x7fffffffbff0) at Python/ceval.c:4044\n#59 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#60 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x4953830, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#61 0x00007ffff7aef762 in PyEval_EvalCode (co=<optimized out>, globals=<optimized out>, locals=<optimized out>) at Python/ceval.c:667\n#62 0x00007ffff7aeeb83 in exec_statement (locals=0xbc3c80, globals=0xbc3c80, prog=<optimized out>, f=0x4438bd0) at Python/ceval.c:4718\n#63 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:1880\n#64 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed9b0, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0x4998780, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#65 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffc460, func=0xb7d7d0) at Python/ceval.c:4117\n#66 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc460) at Python/ceval.c:4042\n#67 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#68 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed930, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=3, kws=0x49a6560, kwcount=0, defs=0xb7b1d0, defcount=2, closure=0x0)\n    at Python/ceval.c:3253\n#69 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=3, n=<optimized out>, pp_stack=0x7fffffffc680, func=0xb7d758) at Python/ceval.c:4117\n#70 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc680) at Python/ceval.c:4042\n#71 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#72 0x00007ffff7aeed6a in fast_function (nk=<optimized out>, na=<optimized out>, n=<optimized out>, pp_stack=0x7fffffffc7f0, func=0xb7d848) at Python/ceval.c:4107\n#73 call_function (oparg=<optimized out>, pp_stack=0x7fffffffc7f0) at Python/ceval.c:4042\n#74 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#75 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed4b0, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0xbe59e8, kwcount=0, defs=0xb72c28, defcount=1, closure=0x0)\n    at Python/ceval.c:3253\n#76 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffca10, func=0xb7d398) at Python/ceval.c:4117\n#77 call_function (oparg=<optimized out>, pp_stack=0x7fffffffca10) at Python/ceval.c:4042\n#78 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#79 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0xaed030, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=2, kws=0xbef170, kwcount=0, defs=0xb72be8, defcount=1, closure=0x0)\n    at Python/ceval.c:3253\n#80 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=2, n=<optimized out>, pp_stack=0x7fffffffcc30, func=0xb7d0c8) at Python/ceval.c:4117\n#81 call_function (oparg=<optimized out>, pp_stack=0x7fffffffcc30) at Python/ceval.c:4042\n#82 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#83 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x7ffff7eeac30, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=1, kws=0x6f2200, kwcount=2, defs=0xa30578, defcount=2, \n    closure=0x0) at Python/ceval.c:3253\n#84 0x00007ffff7aed777 in fast_function (nk=<optimized out>, na=1, n=<optimized out>, pp_stack=0x7fffffffce50, func=0xb85a28) at Python/ceval.c:4117\n#85 call_function (oparg=<optimized out>, pp_stack=0x7fffffffce50) at Python/ceval.c:4042\n#86 PyEval_EvalFrameEx (f=<optimized out>, throwflag=<optimized out>) at Python/ceval.c:2666\n#87 0x00007ffff7aef63d in PyEval_EvalCodeEx (co=0x7ffff7f2ab30, globals=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:3253\n#88 0x00007ffff7aef762 in PyEval_EvalCode (co=<optimized out>, globals=<optimized out>, locals=<optimized out>) at Python/ceval.c:667\n#89 0x00007ffff7b11750 in run_mod (arena=0x623430, flags=0x7fffffffd170, locals=0x641160, globals=0x641160, filename=<optimized out>, mod=0x6f1ba0) at Python/pythonrun.c:1353\n#90 PyRun_FileExFlags (fp=0x6d70a0, filename=<optimized out>, start=<optimized out>, globals=0x641160, locals=0x641160, closeit=0, flags=0x7fffffffd170) at Python/pythonrun.c:1339\n#91 0x00007ffff7b1225f in PyRun_SimpleFileExFlags (fp=0x6d70a0, filename=0x7fffffffe919 \"/home/mmarco/sage-5.2/local/bin/sage-ipython\", closeit=0, flags=0x7fffffffd170) at Python/pythonrun.c:943\n#92 0x00007ffff7b27976 in RunStartupFile (cf=0x7fffffffd170) at Modules/main.c:153\n#93 Py_Main (argc=<optimized out>, argv=0x7fffffffd298) at Modules/main.c:593\n#94 0x00007ffff6de222d in __libc_start_main () from /lib64/libc.so.6\n#95 0x00000000004006e9 in _start ()\n\n```",
     "created_at": "2012-09-08T01:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -2746,7 +2732,6 @@ archive/issue_comments_051180.json:
     "user": "https://github.com/miguelmarco"
 }
 ```
-
 
 ```
 mmarco@neumann ~/sage-5.2 $ ./sage -gdb
@@ -2889,7 +2874,6 @@ Program received signal SIGSEGV, Segmentation fault.
 
 
 
-
 ---
 
 archive/issue_comments_051181.json:
@@ -3004,7 +2988,7 @@ OK I'll try to update everything to gap-4.5.6 today and add comparison.
 archive/issue_comments_051186.json:
 ```json
 {
-    "body": "Ok, done. Comparison works now:\n\n```\nsage: libgap('test') == libgap.Concatenation(libgap('te'), libgap('st'))\nTrue\n```\n\n\nI made one incompatible change: since `libgap` is the parent to all gap elements, it should do element construction for strings:\n\n```\nsage: libgap('1+1')\n\"1+1\"\nsage: type(_)\n<type 'sage.libs.gap.element.GapElement_String'>\n```\n\nTo evaluate a GAP command in a string, you now have to use\n\n```\nsage: libgap.eval('1+1')\n2\n```\n\nSince we aim at wrapping more of GAP one expects that the `libgap.eval` method becomes less useful over time.",
+    "body": "Ok, done. Comparison works now:\n\n```\nsage: libgap('test') == libgap.Concatenation(libgap('te'), libgap('st'))\nTrue\n```\n\nI made one incompatible change: since `libgap` is the parent to all gap elements, it should do element construction for strings:\n\n```\nsage: libgap('1+1')\n\"1+1\"\nsage: type(_)\n<type 'sage.libs.gap.element.GapElement_String'>\n```\nTo evaluate a GAP command in a string, you now have to use\n\n```\nsage: libgap.eval('1+1')\n2\n```\nSince we aim at wrapping more of GAP one expects that the `libgap.eval` method becomes less useful over time.",
     "created_at": "2012-09-22T16:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3020,7 +3004,6 @@ sage: libgap('test') == libgap.Concatenation(libgap('te'), libgap('st'))
 True
 ```
 
-
 I made one incompatible change: since `libgap` is the parent to all gap elements, it should do element construction for strings:
 
 ```
@@ -3029,14 +3012,12 @@ sage: libgap('1+1')
 sage: type(_)
 <type 'sage.libs.gap.element.GapElement_String'>
 ```
-
 To evaluate a GAP command in a string, you now have to use
 
 ```
 sage: libgap.eval('1+1')
 2
 ```
-
 Since we aim at wrapping more of GAP one expects that the `libgap.eval` method becomes less useful over time.
 
 
@@ -3066,7 +3047,7 @@ I think we should get this into Sage for real, now. Dima, are you up to another 
 archive/issue_comments_051188.json:
 ```json
 {
-    "body": "Replying to [comment:98 vbraun]:\n> PS: I also changed the refcounting system, now its hooking directly into GASMAN to keep objects alive.\n> \n> I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)\n> \nWell, yes 8-/. \n\nWhat about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?\nIs it possible to test this, via a Cython wrapper, say? (It's also easier to test this in sage-check script).",
+    "body": "Replying to [comment:98 vbraun]:\n> PS: I also changed the refcounting system, now its hooking directly into GASMAN to keep objects alive.\n> \n> I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)\n> \n\nWell, yes 8-/. \n\nWhat about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?\nIs it possible to test this, via a Cython wrapper, say? (It's also easier to test this in sage-check script).",
     "created_at": "2012-09-23T09:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3080,6 +3061,7 @@ Replying to [comment:98 vbraun]:
 > 
 > I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)
 > 
+
 Well, yes 8-/. 
 
 What about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?
@@ -3111,7 +3093,7 @@ This looks like some debugging printout getting in the way.
 archive/issue_comments_051190.json:
 ```json
 {
-    "body": "Replying to [comment:99 dimpase]:\n> Replying to [comment:98 vbraun]:\n> > PS: I also changed the refcounting system, now its hooking directly into GASMAN to keep objects alive.\n> > \n> > I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)\n> > \n> Well, yes 8-/. \n> \n> What about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?\n\nI cannot guess the correct value of this relative to `$SAGE_LOCAL` or `$SAGE_ROOT`. In fact it should be easy to have this build and run from Sage shell prompt (i.e. `sage -sh`), then these hardcoded paths in Makefile and in main.c are not necessary. It would be great to have this fixed.\n\nThen hooking it up on sage-check becomes trivial, too.",
+    "body": "Replying to [comment:99 dimpase]:\n> Replying to [comment:98 vbraun]:\n> > PS: I also changed the refcounting system, now its hooking directly into GASMAN to keep objects alive.\n> > \n> > I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)\n> > \n\n> Well, yes 8-/. \n> \n> What about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?\n\n\nI cannot guess the correct value of this relative to `$SAGE_LOCAL` or `$SAGE_ROOT`. In fact it should be easy to have this build and run from Sage shell prompt (i.e. `sage -sh`), then these hardcoded paths in Makefile and in main.c are not necessary. It would be great to have this fixed.\n\nThen hooking it up on sage-check becomes trivial, too.",
     "created_at": "2012-09-23T10:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3126,9 +3108,11 @@ Replying to [comment:99 dimpase]:
 > > 
 > > I think we should get this into Sage for real, now. Dima, are you up to another reviewing challenge? :-)
 > > 
+
 > Well, yes 8-/. 
 > 
 > What about eliminating a hardcoded path in `sage/libs/gap/test/main.c` ?
+
 
 I cannot guess the correct value of this relative to `$SAGE_LOCAL` or `$SAGE_ROOT`. In fact it should be easy to have this build and run from Sage shell prompt (i.e. `sage -sh`), then these hardcoded paths in Makefile and in main.c are not necessary. It would be great to have this fixed.
 
@@ -3182,7 +3166,7 @@ I don't understand whether MPIR is used as the replacement of GMP here, or not.
 archive/issue_comments_051193.json:
 ```json
 {
-    "body": "The `sage/libs/gap/test/main.c` is only for instructional purposes, it demonstrates how to build a standalone binary so you can run libGAP under a debugger/valgrind without Sage. It doesn't exercise anything thats not already in doctests. \n\nOne could add a `spkg-check` to test `src/test` in the spkg, but they again don't exercise anything thats not covered by libGAP doctests.\n\nI've removed the upstream-gap-x.y.z directories from the spkg, the `make-spkg.sh` script copied them there accidentally.\n\nGap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:\n\n```\n(sage-sh) vbraun@volker-desktop:spkg$ ldd ~/Sage/sage/local/lib/libgap.so\n\tlinux-vdso.so.1 =>  (0x00007fff8ebff000)\n\tlibgmp.so.7 => /home/vbraun/opt/sage-5.4.beta1/local/lib/libgmp.so.7 (0x00007f8a82885000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f8a824a9000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00000036c4000000)\n```\n",
+    "body": "The `sage/libs/gap/test/main.c` is only for instructional purposes, it demonstrates how to build a standalone binary so you can run libGAP under a debugger/valgrind without Sage. It doesn't exercise anything thats not already in doctests. \n\nOne could add a `spkg-check` to test `src/test` in the spkg, but they again don't exercise anything thats not covered by libGAP doctests.\n\nI've removed the upstream-gap-x.y.z directories from the spkg, the `make-spkg.sh` script copied them there accidentally.\n\nGap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:\n\n```\n(sage-sh) vbraun@volker-desktop:spkg$ ldd ~/Sage/sage/local/lib/libgap.so\n\tlinux-vdso.so.1 =>  (0x00007fff8ebff000)\n\tlibgmp.so.7 => /home/vbraun/opt/sage-5.4.beta1/local/lib/libgmp.so.7 (0x00007f8a82885000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f8a824a9000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00000036c4000000)\n```",
     "created_at": "2012-09-23T13:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3206,7 +3190,6 @@ Gap links against MPIR just fine, the only issue is with a version check that I 
 	libc.so.6 => /lib64/libc.so.6 (0x00007f8a824a9000)
 	/lib64/ld-linux-x86-64.so.2 (0x00000036c4000000)
 ```
-
 
 
 
@@ -3269,7 +3252,7 @@ Can you explain how to set up the amount of memory available for the libgap sess
 archive/issue_comments_051197.json:
 ```json
 {
-    "body": "Nowadays GAP uses anonymous mmap to reserve a big chunk of addressing space (not physical RAM, mind you) and uses that as needed. This is the origin of the `halving pool size` message on stdout. The message is purely cosmetic, but I'll ask upstream to suppress it. It also appears on the GAP command line and has nothing to do with libGAP:\n\n```\n[vbraun@volker-desktop ~]$ sage -gap -o 16384G\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\n \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n \u2502  GAP  \u2502   http://www.gap-system.org\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Components: trans 1.0, prim 2.1, small* 1.0, id* 1.0\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1, TomLib 1.2.2\n Try '?help' for help. See also  '?copyright' and  '?authors'\n```\n\nBy default we try to acquire 16TB of addressing space, and then halving that until it succeeds:\n\n```\nTasks: 352 total,   3 running, 345 sleeping,   1 stopped,   3 zombie\nCpu(s): 13.5%us,  0.4%sy,  0.0%ni, 85.9%id,  0.0%wa,  0.2%hi,  0.0%si,  0.0%st\nMem:  32835628k total, 32140456k used,   695172k free,  1037012k buffers\nSwap: 62499996k total,   485252k used, 62014744k free, 13507248k cached\n\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                 \n11585 vbraun    20   0 78.2g  48m  992 S  0.0  0.2   0:00.72 gap                                                     \n```\n\nThe memory you can use in the gap session is limited to the pool size, but at least on 64-bit this should always be a lot.",
+    "body": "Nowadays GAP uses anonymous mmap to reserve a big chunk of addressing space (not physical RAM, mind you) and uses that as needed. This is the origin of the `halving pool size` message on stdout. The message is purely cosmetic, but I'll ask upstream to suppress it. It also appears on the GAP command line and has nothing to do with libGAP:\n\n```\n[vbraun@volker-desktop ~]$ sage -gap -o 16384G\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\n \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n \u2502  GAP  \u2502   http://www.gap-system.org\n \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Components: trans 1.0, prim 2.1, small* 1.0, id* 1.0\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1, TomLib 1.2.2\n Try '?help' for help. See also  '?copyright' and  '?authors'\n```\nBy default we try to acquire 16TB of addressing space, and then halving that until it succeeds:\n\n```\nTasks: 352 total,   3 running, 345 sleeping,   1 stopped,   3 zombie\nCpu(s): 13.5%us,  0.4%sy,  0.0%ni, 85.9%id,  0.0%wa,  0.2%hi,  0.0%si,  0.0%st\nMem:  32835628k total, 32140456k used,   695172k free,  1037012k buffers\nSwap: 62499996k total,   485252k used, 62014744k free, 13507248k cached\n\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                 \n11585 vbraun    20   0 78.2g  48m  992 S  0.0  0.2   0:00.72 gap                                                     \n```\nThe memory you can use in the gap session is limited to the pool size, but at least on 64-bit this should always be a lot.",
     "created_at": "2012-09-23T14:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3299,7 +3282,6 @@ gap: halving pool size.
  Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1, TomLib 1.2.2
  Try '?help' for help. See also  '?copyright' and  '?authors'
 ```
-
 By default we try to acquire 16TB of addressing space, and then halving that until it succeeds:
 
 ```
@@ -3311,7 +3293,6 @@ Swap: 62499996k total,   485252k used, 62014744k free, 13507248k cached
   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                 
 11585 vbraun    20   0 78.2g  48m  992 S  0.0  0.2   0:00.72 gap                                                     
 ```
-
 The memory you can use in the gap session is limited to the pool size, but at least on 64-bit this should always be a lot.
 
 
@@ -3321,7 +3302,7 @@ The memory you can use in the gap session is limited to the pool size, but at le
 archive/issue_comments_051198.json:
 ```json
 {
-    "body": "Replying to [comment:104 vbraun]:\n> Gap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:\n\nis there any reason for GAP being linked statically against GMP (i.e. MPIR)?\n\n```\n$sage-5.4.beta1/local/gap/latest$ ldd bin/x86_64-unknown-linux-gnu-gcc-default64/gap\n        linux-vdso.so.1 =>  (0x00007fff7c4c9000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fa3e0d26000)\n        libreadline.so.6 => /lib/libreadline.so.6 (0x00007fa3e0ae2000)\n        libncurses.so.5 => /usr/lib/libncurses.so.5 (0x00007fa3e089b000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fa3e0697000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fa3e0494000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fa3e0131000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fa3e0fc3000)\n$sage-5.4.beta1/local/gap/latest$ ../../../sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Components: trans 1.0, prim 2.1, small* 1.0, id* 1.0\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1, TomLib 1.2.2\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> \n```\n",
+    "body": "Replying to [comment:104 vbraun]:\n> Gap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:\n\n\nis there any reason for GAP being linked statically against GMP (i.e. MPIR)?\n\n```\n$sage-5.4.beta1/local/gap/latest$ ldd bin/x86_64-unknown-linux-gnu-gcc-default64/gap\n        linux-vdso.so.1 =>  (0x00007fff7c4c9000)\n        libm.so.6 => /lib/libm.so.6 (0x00007fa3e0d26000)\n        libreadline.so.6 => /lib/libreadline.so.6 (0x00007fa3e0ae2000)\n        libncurses.so.5 => /usr/lib/libncurses.so.5 (0x00007fa3e089b000)\n        libdl.so.2 => /lib/libdl.so.2 (0x00007fa3e0697000)\n        libutil.so.1 => /lib/libutil.so.1 (0x00007fa3e0494000)\n        libc.so.6 => /lib/libc.so.6 (0x00007fa3e0131000)\n        /lib64/ld-linux-x86-64.so.2 (0x00007fa3e0fc3000)\n$sage-5.4.beta1/local/gap/latest$ ../../../sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Components: trans 1.0, prim 2.1, small* 1.0, id* 1.0\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1, TomLib 1.2.2\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> \n```",
     "created_at": "2012-09-23T15:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3332,6 +3313,7 @@ archive/issue_comments_051198.json:
 
 Replying to [comment:104 vbraun]:
 > Gap links against MPIR just fine, the only issue is with a version check that I reported here: https://groups.google.com/d/topic/mpir-devel/X48SfwGkSd8/discussion. This is why the `spkg-install` adds `-D__GMP_MP_RELEASE=50002` to the `CFLAGS`:
+
 
 is there any reason for GAP being linked statically against GMP (i.e. MPIR)?
 
@@ -3359,13 +3341,12 @@ gap>
 
 
 
-
 ---
 
 archive/issue_comments_051199.json:
 ```json
 {
-    "body": "Replying to [comment:104 vbraun]:\n> The `sage/libs/gap/test/main.c` is only for instructional purposes, it demonstrates how to build a standalone binary so you can run libGAP under a debugger/valgrind without Sage. It doesn't exercise anything thats not already in doctests. \n\nI tried it on the system I am testing libgap now, and it doesn't work (I needed to do changes --- see the patch to be attached --- to the source to make it compile, but it seems to need more, as I get suspicious warnings during compilation, and then a segfault)\n\n```\n\n(sage-sh) dima@spms-banana:test$ make main\ngcc -std=gnu99 -I/usr/local/src/sage/sage-5.4.beta1/local/include -I/usr/local/src/sage/sage-5.4.beta1/local/include/python2.6 -c -g -DGAPLOCAL=/usr/local/src/sage/sage-5.4.beta1/local/gap/latest main.c\nIn file included from main.c:10:\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h: In function 'libGAP_SwitchToNewLvars':\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:163: warning: implicit declaration of function 'libGAP_BODY_FUNC'\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:163: warning: cast to pointer from integer of different size\nIn file included from main.c:10:\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h: In function 'libGAP_SwitchToOldLVars':\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:205: warning: cast to pointer from integer of different size\nmain.c: In function 'eval':\nmain.c:24: warning: implicit declaration of function 'libgap_set_error'\nmain.c:26: warning: implicit declaration of function 'libGAP_ViewObjHandler'\ngcc -L/usr/local/src/sage/sage-5.4.beta1/local/lib -o main main.o -lgap -lcsage -lntl -lstdc++ -lpari -lpython2.7 -lm -lgmp\n(sage-sh) dima@spms-banana:test$ ./main\nInitialized\nInput:\n1+2+3;\nOutput:\n6\nInput:\ng:=FreeGroup(2);\nSegmentation fault\n(sage-sh) dima@spms-banana:test$ \n```\n",
+    "body": "Replying to [comment:104 vbraun]:\n> The `sage/libs/gap/test/main.c` is only for instructional purposes, it demonstrates how to build a standalone binary so you can run libGAP under a debugger/valgrind without Sage. It doesn't exercise anything thats not already in doctests. \n\n\nI tried it on the system I am testing libgap now, and it doesn't work (I needed to do changes --- see the patch to be attached --- to the source to make it compile, but it seems to need more, as I get suspicious warnings during compilation, and then a segfault)\n\n```\n\n(sage-sh) dima@spms-banana:test$ make main\ngcc -std=gnu99 -I/usr/local/src/sage/sage-5.4.beta1/local/include -I/usr/local/src/sage/sage-5.4.beta1/local/include/python2.6 -c -g -DGAPLOCAL=/usr/local/src/sage/sage-5.4.beta1/local/gap/latest main.c\nIn file included from main.c:10:\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h: In function 'libGAP_SwitchToNewLvars':\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:163: warning: implicit declaration of function 'libGAP_BODY_FUNC'\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:163: warning: cast to pointer from integer of different size\nIn file included from main.c:10:\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h: In function 'libGAP_SwitchToOldLVars':\n/usr/local/src/sage/sage-5.4.beta1/local/include/gap/vars.h:205: warning: cast to pointer from integer of different size\nmain.c: In function 'eval':\nmain.c:24: warning: implicit declaration of function 'libgap_set_error'\nmain.c:26: warning: implicit declaration of function 'libGAP_ViewObjHandler'\ngcc -L/usr/local/src/sage/sage-5.4.beta1/local/lib -o main main.o -lgap -lcsage -lntl -lstdc++ -lpari -lpython2.7 -lm -lgmp\n(sage-sh) dima@spms-banana:test$ ./main\nInitialized\nInput:\n1+2+3;\nOutput:\n6\nInput:\ng:=FreeGroup(2);\nSegmentation fault\n(sage-sh) dima@spms-banana:test$ \n```",
     "created_at": "2012-09-23T15:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3376,6 +3357,7 @@ archive/issue_comments_051199.json:
 
 Replying to [comment:104 vbraun]:
 > The `sage/libs/gap/test/main.c` is only for instructional purposes, it demonstrates how to build a standalone binary so you can run libGAP under a debugger/valgrind without Sage. It doesn't exercise anything thats not already in doctests. 
+
 
 I tried it on the system I am testing libgap now, and it doesn't work (I needed to do changes --- see the patch to be attached --- to the source to make it compile, but it seems to need more, as I get suspicious warnings during compilation, and then a segfault)
 
@@ -3405,7 +3387,6 @@ g:=FreeGroup(2);
 Segmentation fault
 (sage-sh) dima@spms-banana:test$ 
 ```
-
 
 
 
@@ -3454,7 +3435,7 @@ The implicit declaration and pointer cast warnings are normal, GAP just predates
 archive/issue_comments_051202.json:
 ```json
 {
-    "body": "Replying to [comment:111 vbraun]:\n\n> The implicit declaration and pointer cast warnings are normal, GAP just predates ansi C :-)\n\nWell, anyhow... Could you confirm that my change of the code was OK, and this is a genuine issue?\ngdb tells me the following:\n\n```\n\ng:=FreeGroup(2);\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff75a8d0f in libGAP_RNamName ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n(gdb) bt\n#0  0x00007ffff75a8d0f in libGAP_RNamName ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#1  0x00007ffff76cb0e1 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#2  0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#3  0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#4  0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#5  0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#6  0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#7  0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#8  0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#9  0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#10 0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#11 0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#12 0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#13 0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#14 0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n.....\n```\n\nand it keeps repeating, ad nauseum...\nThe x86_64 system runs Debian, here are the compiler specs:\n\n```\n(sage-sh) dima@spms-banana:test$ gcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Debian 4.4.5-8' --with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.4 --enable-shared --enable-multiarch --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4 --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --with-arch-32=i586 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.4.5 (Debian 4.4.5-8) \n```\n",
+    "body": "Replying to [comment:111 vbraun]:\n\n> The implicit declaration and pointer cast warnings are normal, GAP just predates ansi C :-)\n\n\nWell, anyhow... Could you confirm that my change of the code was OK, and this is a genuine issue?\ngdb tells me the following:\n\n```\n\ng:=FreeGroup(2);\n\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff75a8d0f in libGAP_RNamName ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n(gdb) bt\n#0  0x00007ffff75a8d0f in libGAP_RNamName ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#1  0x00007ffff76cb0e1 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#2  0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#3  0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#4  0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#5  0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#6  0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#7  0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#8  0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#9  0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#10 0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#11 0x00007ffff757b8df in libGAP_ErrorMustHaveAssObjHandler ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#12 0x00007ffff75b7b70 in libGAP_DoWrap2args ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#13 0x00007ffff76cb299 in libGAP_CallErrorInner ()\n   from /usr/local/src/sage/sage-5.4.beta1/local/lib/libgap.so.0\n#14 0x00007ffff76cb2f4 in libGAP_ErrorQuit ()\n.....\n```\nand it keeps repeating, ad nauseum...\nThe x86_64 system runs Debian, here are the compiler specs:\n\n```\n(sage-sh) dima@spms-banana:test$ gcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Debian 4.4.5-8' --with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.4 --enable-shared --enable-multiarch --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4 --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --with-arch-32=i586 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.4.5 (Debian 4.4.5-8) \n```",
     "created_at": "2012-09-23T15:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3466,6 +3447,7 @@ archive/issue_comments_051202.json:
 Replying to [comment:111 vbraun]:
 
 > The implicit declaration and pointer cast warnings are normal, GAP just predates ansi C :-)
+
 
 Well, anyhow... Could you confirm that my change of the code was OK, and this is a genuine issue?
 gdb tells me the following:
@@ -3509,7 +3491,6 @@ Program received signal SIGSEGV, Segmentation fault.
 #14 0x00007ffff76cb2f4 in libGAP_ErrorQuit ()
 .....
 ```
-
 and it keeps repeating, ad nauseum...
 The x86_64 system runs Debian, here are the compiler specs:
 
@@ -3521,7 +3502,6 @@ Configured with: ../src/configure -v --with-pkgversion='Debian 4.4.5-8' --with-b
 Thread model: posix
 gcc version 4.4.5 (Debian 4.4.5-8) 
 ```
-
 
 
 
@@ -3548,7 +3528,7 @@ Your changes look fine. The `test/main.c` example doesn't do proper error handli
 archive/issue_comments_051204.json:
 ```json
 {
-    "body": "Upon squinting a bit harder, I noticed that\n\n```\nargv[2] = \"GAPLOCAL\" ;\n```\n\nin your patch does not use the preprocessor macro, it is just the string `\"GAPLOCAL\"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.",
+    "body": "Upon squinting a bit harder, I noticed that\n\n```\nargv[2] = \"GAPLOCAL\" ;\n```\nin your patch does not use the preprocessor macro, it is just the string `\"GAPLOCAL\"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.",
     "created_at": "2012-09-23T16:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3562,7 +3542,6 @@ Upon squinting a bit harder, I noticed that
 ```
 argv[2] = "GAPLOCAL" ;
 ```
-
 in your patch does not use the preprocessor macro, it is just the string `"GAPLOCAL"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.
 
 
@@ -3572,7 +3551,7 @@ in your patch does not use the preprocessor macro, it is just the string `"GAPLO
 archive/issue_comments_051205.json:
 ```json
 {
-    "body": "Replying to [comment:113 vbraun]:\n> Your changes look fine. The `test/main.c` example doesn't do proper error handling, so you shouldn't expect a useful error message. For a relevant stack backtrace you need to post what happens before you get into the error loop.\n\nWell, I rebuilt libgap with SAGE_DEBUG on, and I can see it starting the interpreter interaction, parsing the input, calling gasman, then something goes wrong, it tries to print the message `\"Variable: 'FreeGroup' must have a value\"`\n\n```\n\n(gdb) \nlibGAP_SPrTo (buffer=0x7fffffffd0d0 \"Variable: 'FreeGroup' must have a value\", maxlen=120, \n    format=0x7ffff7750098 \"Variable: '%s' must have a value\", arg1=140733014557528, arg2=0)\n    at scanner.c:3049\n```\n\nthen I see\n\n```\n(gdb) \nlibGAP_SyStrncat (dst=0x7fffffffcd20 \"justQuit\", src=0x7ffff775e32c \"justQuit\", len=1023)\n    at system.c:682\n\n(gdb) \nlibGAP_RNamName (name=0x7ffff775e32c \"justQuit\") at records.c:110\n```\n\nand it tries to go further. Eventually I see\n\n```\n(gdb) \nlibGAP_ErrorQuit (msg=0x7ffff77472a0 \"Variable: <<unknown>> must have an assigned value\", arg1=0, \n    arg2=0) at gap.c:1451\n(gdb) \nlibGAP_CallErrorInner (msg=0x7ffff77472a0 \"Variable: <<unknown>> must have an assigned value\", \n    arg1=0, arg2=0, justQuit=1, mayReturnVoid=0, mayReturnObj=0, lateMessage=0x7ffef510a678, \n    printThisStatement=1) at gap.c:1430\n\n```\n\n\nthis gets repeated many times (buffer corruption), and eventually a segfault.\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff75a8eef in libGAP_RNamName (name=Cannot access memory at address 0x7fffff7fefa8\n) at records.c:79\n```\n\n\nthe trouble starts of course much earlier, before it fails to recognize `FreeGroup` as a valid GAP function...\n\n\n\n\n.",
+    "body": "Replying to [comment:113 vbraun]:\n> Your changes look fine. The `test/main.c` example doesn't do proper error handling, so you shouldn't expect a useful error message. For a relevant stack backtrace you need to post what happens before you get into the error loop.\n\n\nWell, I rebuilt libgap with SAGE_DEBUG on, and I can see it starting the interpreter interaction, parsing the input, calling gasman, then something goes wrong, it tries to print the message `\"Variable: 'FreeGroup' must have a value\"`\n\n```\n\n(gdb) \nlibGAP_SPrTo (buffer=0x7fffffffd0d0 \"Variable: 'FreeGroup' must have a value\", maxlen=120, \n    format=0x7ffff7750098 \"Variable: '%s' must have a value\", arg1=140733014557528, arg2=0)\n    at scanner.c:3049\n```\nthen I see\n\n```\n(gdb) \nlibGAP_SyStrncat (dst=0x7fffffffcd20 \"justQuit\", src=0x7ffff775e32c \"justQuit\", len=1023)\n    at system.c:682\n\n(gdb) \nlibGAP_RNamName (name=0x7ffff775e32c \"justQuit\") at records.c:110\n```\nand it tries to go further. Eventually I see\n\n```\n(gdb) \nlibGAP_ErrorQuit (msg=0x7ffff77472a0 \"Variable: <<unknown>> must have an assigned value\", arg1=0, \n    arg2=0) at gap.c:1451\n(gdb) \nlibGAP_CallErrorInner (msg=0x7ffff77472a0 \"Variable: <<unknown>> must have an assigned value\", \n    arg1=0, arg2=0, justQuit=1, mayReturnVoid=0, mayReturnObj=0, lateMessage=0x7ffef510a678, \n    printThisStatement=1) at gap.c:1430\n\n```\n\nthis gets repeated many times (buffer corruption), and eventually a segfault.\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n0x00007ffff75a8eef in libGAP_RNamName (name=Cannot access memory at address 0x7fffff7fefa8\n) at records.c:79\n```\n\nthe trouble starts of course much earlier, before it fails to recognize `FreeGroup` as a valid GAP function...\n\n\n\n\n.",
     "created_at": "2012-09-23T17:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3584,6 +3563,7 @@ archive/issue_comments_051205.json:
 Replying to [comment:113 vbraun]:
 > Your changes look fine. The `test/main.c` example doesn't do proper error handling, so you shouldn't expect a useful error message. For a relevant stack backtrace you need to post what happens before you get into the error loop.
 
+
 Well, I rebuilt libgap with SAGE_DEBUG on, and I can see it starting the interpreter interaction, parsing the input, calling gasman, then something goes wrong, it tries to print the message `"Variable: 'FreeGroup' must have a value"`
 
 ```
@@ -3593,7 +3573,6 @@ libGAP_SPrTo (buffer=0x7fffffffd0d0 "Variable: 'FreeGroup' must have a value", m
     format=0x7ffff7750098 "Variable: '%s' must have a value", arg1=140733014557528, arg2=0)
     at scanner.c:3049
 ```
-
 then I see
 
 ```
@@ -3604,7 +3583,6 @@ libGAP_SyStrncat (dst=0x7fffffffcd20 "justQuit", src=0x7ffff775e32c "justQuit", 
 (gdb) 
 libGAP_RNamName (name=0x7ffff775e32c "justQuit") at records.c:110
 ```
-
 and it tries to go further. Eventually I see
 
 ```
@@ -3618,7 +3596,6 @@ libGAP_CallErrorInner (msg=0x7ffff77472a0 "Variable: <<unknown>> must have an as
 
 ```
 
-
 this gets repeated many times (buffer corruption), and eventually a segfault.
 
 ```
@@ -3626,7 +3603,6 @@ Program received signal SIGSEGV, Segmentation fault.
 0x00007ffff75a8eef in libGAP_RNamName (name=Cannot access memory at address 0x7fffff7fefa8
 ) at records.c:79
 ```
-
 
 the trouble starts of course much earlier, before it fails to recognize `FreeGroup` as a valid GAP function...
 
@@ -3642,7 +3618,7 @@ the trouble starts of course much earlier, before it fails to recognize `FreeGro
 archive/issue_comments_051206.json:
 ```json
 {
-    "body": "Replying to [comment:114 vbraun]:\n> Upon squinting a bit harder, I noticed that\n> {{{\n> argv[2] = \"GAPLOCAL\" ;\n> }}}\n> in your patch does not use the preprocessor macro, it is just the string `\"GAPLOCAL\"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.\n\n/me facepalm...\n\nOK, now, with the updated patch, it works.",
+    "body": "Replying to [comment:114 vbraun]:\n> Upon squinting a bit harder, I noticed that\n> \n> ```\n> argv[2] = \"GAPLOCAL\" ;\n> ```\n> in your patch does not use the preprocessor macro, it is just the string `\"GAPLOCAL\"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.\n\n\n/me facepalm...\n\nOK, now, with the updated patch, it works.",
     "created_at": "2012-09-23T17:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3653,10 +3629,12 @@ archive/issue_comments_051206.json:
 
 Replying to [comment:114 vbraun]:
 > Upon squinting a bit harder, I noticed that
-> {{{
+> 
+> ```
 > argv[2] = "GAPLOCAL" ;
-> }}}
+> ```
 > in your patch does not use the preprocessor macro, it is just the string `"GAPLOCAL"`. I've updated the patch to not hardcode the path and pass through the gap directory correctly.
+
 
 /me facepalm...
 
@@ -3687,7 +3665,7 @@ What was the reason that sage.interfaces.interface wasn't used?  It seems like w
 archive/issue_comments_051208.json:
 ```json
 {
-    "body": "Replying to [comment:117 mhansen]:\n> What was the reason that sage.interfaces.interface wasn't used?  It seems like we should at least have a GAP Interface that is compatible with the old pexpect one much like was done for the maxima pexpect / ecl interface.\n\nMy understanding is that at this point it's still very far to compatibility. On the other hand, it seems that replacing the `pexpect` interface using  libgap's `eval` should already be quite possible.",
+    "body": "Replying to [comment:117 mhansen]:\n> What was the reason that sage.interfaces.interface wasn't used?  It seems like we should at least have a GAP Interface that is compatible with the old pexpect one much like was done for the maxima pexpect / ecl interface.\n\n\nMy understanding is that at this point it's still very far to compatibility. On the other hand, it seems that replacing the `pexpect` interface using  libgap's `eval` should already be quite possible.",
     "created_at": "2012-09-24T04:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3699,6 +3677,7 @@ archive/issue_comments_051208.json:
 Replying to [comment:117 mhansen]:
 > What was the reason that sage.interfaces.interface wasn't used?  It seems like we should at least have a GAP Interface that is compatible with the old pexpect one much like was done for the maxima pexpect / ecl interface.
 
+
 My understanding is that at this point it's still very far to compatibility. On the other hand, it seems that replacing the `pexpect` interface using  libgap's `eval` should already be quite possible.
 
 
@@ -3708,7 +3687,7 @@ My understanding is that at this point it's still very far to compatibility. On 
 archive/issue_comments_051209.json:
 ```json
 {
-    "body": "Replying to [comment:111 vbraun]:\n> I don't think there is any reason for statically linking gmp other than their build system predating much of autotools...\n\nWould it be much work to libtoolize GAP itself, given that, as far as I understand, the work on this ticket can largely be re-used?",
+    "body": "Replying to [comment:111 vbraun]:\n> I don't think there is any reason for statically linking gmp other than their build system predating much of autotools...\n\n\nWould it be much work to libtoolize GAP itself, given that, as far as I understand, the work on this ticket can largely be re-used?",
     "created_at": "2012-09-24T06:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3719,6 +3698,7 @@ archive/issue_comments_051209.json:
 
 Replying to [comment:111 vbraun]:
 > I don't think there is any reason for statically linking gmp other than their build system predating much of autotools...
+
 
 Would it be much work to libtoolize GAP itself, given that, as far as I understand, the work on this ticket can largely be re-used?
 
@@ -3781,7 +3761,7 @@ archive/issue_events_015053.json:
 archive/issue_comments_051211.json:
 ```json
 {
-    "body": "As I said on a different ticket, `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug.  I consider the following to be bad usage of `assert`:\n\n```\n        try:\n            sig_on()\n            proxy = make_GapElement_MethodProxy(self.parent(), \n                                                gap_eval(name),\n                                                self)\n            sig_off()\n            assert proxy.is_function()\n        except RuntimeError, AssertionError:\n            raise AttributeError, 'Name \"'+str(name)+'\" does not define a GAP function.'\n\n        return proxy\n```\n",
+    "body": "As I said on a different ticket, `assert` should not be used for control flow.  An assert checks something which should always be true, a failed assertion is always a bug.  I consider the following to be bad usage of `assert`:\n\n```\n        try:\n            sig_on()\n            proxy = make_GapElement_MethodProxy(self.parent(), \n                                                gap_eval(name),\n                                                self)\n            sig_off()\n            assert proxy.is_function()\n        except RuntimeError, AssertionError:\n            raise AttributeError, 'Name \"'+str(name)+'\" does not define a GAP function.'\n\n        return proxy\n```",
     "created_at": "2012-09-24T06:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3805,7 +3785,6 @@ As I said on a different ticket, `assert` should not be used for control flow.  
 
         return proxy
 ```
-
 
 
 
@@ -3892,7 +3871,7 @@ I got rid of the assert abuse and added some more tests.
 archive/issue_comments_051216.json:
 ```json
 {
-    "body": "Replying to [comment:124 vbraun]:\n\n>  a GAP interpreter that communicates over zeromq\n\nThis is a great idea. Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?\n\nAlso based on conversations in St. Andrews, some upstream developers are interested in an autotools based build system. AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel. libGAP solves this problem. This can be fixed by changing GAP's compiler wrapper which adds the path of these object files to find your libGAP instead. Before trying this approach, a GAP interpreter that uses libGAP is needed. Otherwise we will have the GAP binary and libGAP in memory with the same code.\n\n\nVolker, many thanks for all the hard work on libGAP.",
+    "body": "Replying to [comment:124 vbraun]:\n\n>  a GAP interpreter that communicates over zeromq\n\n\nThis is a great idea. Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?\n\nAlso based on conversations in St. Andrews, some upstream developers are interested in an autotools based build system. AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel. libGAP solves this problem. This can be fixed by changing GAP's compiler wrapper which adds the path of these object files to find your libGAP instead. Before trying this approach, a GAP interpreter that uses libGAP is needed. Otherwise we will have the GAP binary and libGAP in memory with the same code.\n\n\nVolker, many thanks for all the hard work on libGAP.",
     "created_at": "2012-09-24T10:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3904,6 +3883,7 @@ archive/issue_comments_051216.json:
 Replying to [comment:124 vbraun]:
 
 >  a GAP interpreter that communicates over zeromq
+
 
 This is a great idea. Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?
 
@@ -3919,7 +3899,7 @@ Volker, many thanks for all the hard work on libGAP.
 archive/issue_comments_051217.json:
 ```json
 {
-    "body": "Replying to [comment:125 burcin]:\n> Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?\n\nzeromq is just a transport, you'd have to speak the IPython protocol to do this. Much harder than just tying stdin/stdout/stderr to sockets.\n\n> AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel. libGAP solves this problem. This can be fixed by changing GAP's compiler wrapper which adds the path of these object files to find your libGAP instead.\n\nYou also need to prefix the symbol names with `libGAP_` if you want to link against libGAP with legacy code. Doable but at least in the short term its much easier to have libGAP and standalone GAP separately. Much like libSingular and Singular.",
+    "body": "Replying to [comment:125 burcin]:\n> Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?\n\n\nzeromq is just a transport, you'd have to speak the IPython protocol to do this. Much harder than just tying stdin/stdout/stderr to sockets.\n\n> AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel. libGAP solves this problem. This can be fixed by changing GAP's compiler wrapper which adds the path of these object files to find your libGAP instead.\n\n\nYou also need to prefix the symbol names with `libGAP_` if you want to link against libGAP with legacy code. Doable but at least in the short term its much easier to have libGAP and standalone GAP separately. Much like libSingular and Singular.",
     "created_at": "2012-09-24T11:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3931,9 +3911,11 @@ archive/issue_comments_051217.json:
 Replying to [comment:125 burcin]:
 > Would we be able to use IPython as the GAP interpreter if we tied your libGAP to zeromq?
 
+
 zeromq is just a transport, you'd have to speak the IPython protocol to do this. Much harder than just tying stdin/stdout/stderr to sockets.
 
 > AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel. libGAP solves this problem. This can be fixed by changing GAP's compiler wrapper which adds the path of these object files to find your libGAP instead.
+
 
 You also need to prefix the symbol names with `libGAP_` if you want to link against libGAP with legacy code. Doable but at least in the short term its much easier to have libGAP and standalone GAP separately. Much like libSingular and Singular.
 
@@ -3944,7 +3926,7 @@ You also need to prefix the symbol names with `libGAP_` if you want to link agai
 archive/issue_comments_051218.json:
 ```json
 {
-    "body": "Replying to [comment:125 burcin]:\n> Replying to [comment:124 vbraun]:\n> \n> >  a GAP interpreter that communicates over zeromq\n> \n> Also based on conversations in St. Andrews, some upstream developers are interested in an autotools based build system. AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel.\n\nDo you mean GAP extension packages, things which are compiled using `gac` ?\n\"Normal\" GAP packages do not need any of this, AFAIK.\nThe extension packages are few and far apart. The only one I know is [EDIM](http://www.math.rwth-aachen.de/~Frank.Luebeck/EDIM/index.html).\nThe main use of `gac` seems to be\nto create faster loading GAP executables.",
+    "body": "Replying to [comment:125 burcin]:\n> Replying to [comment:124 vbraun]:\n> \n> >  a GAP interpreter that communicates over zeromq\n\n> \n> Also based on conversations in St. Andrews, some upstream developers are interested in an autotools based build system. AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel.\n\n\nDo you mean GAP extension packages, things which are compiled using `gac` ?\n\"Normal\" GAP packages do not need any of this, AFAIK.\nThe extension packages are few and far apart. The only one I know is [EDIM](http://www.math.rwth-aachen.de/~Frank.Luebeck/EDIM/index.html).\nThe main use of `gac` seems to be\nto create faster loading GAP executables.",
     "created_at": "2012-09-24T12:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -3957,8 +3939,10 @@ Replying to [comment:125 burcin]:
 > Replying to [comment:124 vbraun]:
 > 
 > >  a GAP interpreter that communicates over zeromq
+
 > 
 > Also based on conversations in St. Andrews, some upstream developers are interested in an autotools based build system. AFAICT, the main problem with compiled GAP packages is that they rely on the object files previously compiled for the GAP executable to find symbols they need from the GAP kernel.
+
 
 Do you mean GAP extension packages, things which are compiled using `gac` ?
 "Normal" GAP packages do not need any of this, AFAIK.
@@ -3973,7 +3957,7 @@ to create faster loading GAP executables.
 archive/issue_comments_051219.json:
 ```json
 {
-    "body": "OS X 10.4 PPC:\n\n```\nsage -t  \"devel/sage-main/sage/algebras/group_algebra_new.py\"\n**********************************************************************\nFile \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 592:\n    sage: GroupAlgebra(DihedralGroup(6), QQ).random_element()\nExpected:\n    -1/95*(2,6)(3,5) - 1/2*(1,3)(4,6)\nGot:\n    -1/95*(1,3)(4,6) - 1/2*(1,5,3)(2,6,4)\n**********************************************************************\nFile \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 594:\n    sage: GroupAlgebra(SU(2, 13), QQ).random_element(1)\nExpected:\n    1/2*[      1 9*a + 2]\n    [9*a + 2      12]\nGot:\n    1/2*[       4  9*a + 2]\n    [6*a + 10        1]\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_23\n***Test Failed*** 2 failures.\n```\n\nThere were other errors as well, which I'm rerunning.",
+    "body": "OS X 10.4 PPC:\n\n```\nsage -t  \"devel/sage-main/sage/algebras/group_algebra_new.py\"\n**********************************************************************\nFile \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 592:\n    sage: GroupAlgebra(DihedralGroup(6), QQ).random_element()\nExpected:\n    -1/95*(2,6)(3,5) - 1/2*(1,3)(4,6)\nGot:\n    -1/95*(1,3)(4,6) - 1/2*(1,5,3)(2,6,4)\n**********************************************************************\nFile \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 594:\n    sage: GroupAlgebra(SU(2, 13), QQ).random_element(1)\nExpected:\n    1/2*[      1 9*a + 2]\n    [9*a + 2      12]\nGot:\n    1/2*[       4  9*a + 2]\n    [6*a + 10        1]\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_23\n***Test Failed*** 2 failures.\n```\nThere were other errors as well, which I'm rerunning.",
     "created_at": "2012-09-24T12:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4007,7 +3991,6 @@ Got:
    2 of   5 in __main__.example_23
 ***Test Failed*** 2 failures.
 ```
-
 There were other errors as well, which I'm rerunning.
 
 
@@ -4036,7 +4019,7 @@ This has nothing to do with this ticket, this is new GAP, i.e. #13211. Just as a
 archive/issue_comments_051221.json:
 ```json
 {
-    "body": "Thanks, I'll comment there (I only ran tests after doing everything just to save time).\n\n```\nDasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries\ntrac_13211_fix_gap_doctests.patch\ntrac_6391_libGAP.patch\n```\n\nI think that's right?",
+    "body": "Thanks, I'll comment there (I only ran tests after doing everything just to save time).\n\n```\nDasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries\ntrac_13211_fix_gap_doctests.patch\ntrac_6391_libGAP.patch\n```\nI think that's right?",
     "created_at": "2012-09-24T15:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4052,7 +4035,6 @@ Dasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries
 trac_13211_fix_gap_doctests.patch
 trac_6391_libGAP.patch
 ```
-
 I think that's right?
 
 
@@ -4062,7 +4044,7 @@ I think that's right?
 archive/issue_comments_051222.json:
 ```json
 {
-    "body": "Replying to [comment:130 kcrisman]:\n> Thanks, I'll comment there (I only ran tests after doing everything just to save time).\n> {{{\n> Dasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries\n> trac_13211_fix_gap_doctests.patch\n> trac_6391_libGAP.patch\n> }}}\n> I think that's right?\nhopefully you also did `sage -b` before starting the tests? Just checking...",
+    "body": "Replying to [comment:130 kcrisman]:\n> Thanks, I'll comment there (I only ran tests after doing everything just to save time).\n> \n> ```\n> Dasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries\n> trac_13211_fix_gap_doctests.patch\n> trac_6391_libGAP.patch\n> ```\n> I think that's right?\n\nhopefully you also did `sage -b` before starting the tests? Just checking...",
     "created_at": "2012-09-24T15:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4073,12 +4055,14 @@ archive/issue_comments_051222.json:
 
 Replying to [comment:130 kcrisman]:
 > Thanks, I'll comment there (I only ran tests after doing everything just to save time).
-> {{{
+> 
+> ```
 > Dasher-03:~/Desktop/sage-5.4.beta1/devel/sage student$ ../../sage -hg qseries
 > trac_13211_fix_gap_doctests.patch
 > trac_6391_libGAP.patch
-> }}}
+> ```
 > I think that's right?
+
 hopefully you also did `sage -b` before starting the tests? Just checking...
 
 
@@ -4106,7 +4090,7 @@ Yes, and I just checked that this was the case.  But I hear you on that kind of 
 archive/issue_comments_051224.json:
 ```json
 {
-    "body": "Replying to [comment:128 kcrisman]:\n\n> {{{\n> sage -t  \"devel/sage-main/sage/algebras/group_algebra_new.py\"\n> **********************************************************************\n> File \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 592:\n>     sage: GroupAlgebra(DihedralGroup(6), QQ).random_element()\n> File \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 594:\n>     sage: GroupAlgebra(SU(2, 13), QQ).random_element(1)\n> }}}\nthese are calls to random stuff, or so it seems! No wonder different hardware gives different (pseudo?)random elements. If it were tests I'd say they'd be marked `# random`, like\n\n```\n         GroupAlgebra(DihedralGroup(6), QQ).random_element() # random\n```\n\nnot sure about examples in this case though. Or else, if these random elements are actually predictable, this could be a bug in the pseudorandom source.",
+    "body": "Replying to [comment:128 kcrisman]:\n\n> {{{\n> sage -t  \"devel/sage-main/sage/algebras/group_algebra_new.py\"\n> **********************************************************************\n> File \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 592:\n>     sage: GroupAlgebra(DihedralGroup(6), QQ).random_element()\n> File \"/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py\", line 594:\n>     sage: GroupAlgebra(SU(2, 13), QQ).random_element(1)\n> }}}\n\nthese are calls to random stuff, or so it seems! No wonder different hardware gives different (pseudo?)random elements. If it were tests I'd say they'd be marked `# random`, like\n\n```\n         GroupAlgebra(DihedralGroup(6), QQ).random_element() # random\n```\nnot sure about examples in this case though. Or else, if these random elements are actually predictable, this could be a bug in the pseudorandom source.",
     "created_at": "2012-09-24T17:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4125,12 +4109,12 @@ Replying to [comment:128 kcrisman]:
 > File "/Users/student/Desktop/sage-5.4.beta1/devel/sage-main/sage/algebras/group_algebra_new.py", line 594:
 >     sage: GroupAlgebra(SU(2, 13), QQ).random_element(1)
 > }}}
+
 these are calls to random stuff, or so it seems! No wonder different hardware gives different (pseudo?)random elements. If it were tests I'd say they'd be marked `# random`, like
 
 ```
          GroupAlgebra(DihedralGroup(6), QQ).random_element() # random
 ```
-
 not sure about examples in this case though. Or else, if these random elements are actually predictable, this could be a bug in the pseudorandom source.
 
 
@@ -4140,7 +4124,7 @@ not sure about examples in this case though. Or else, if these random elements a
 archive/issue_comments_051225.json:
 ```json
 {
-    "body": "I couldn't apply the root patch through normal hg_sage.apply(). Is it supposed to be applied  in some other way?.\n\nNow i get this message when i start the sage session:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\nAn error occurred, but libGAP has no handler set.\nError message: \nLoading Sage library. Current Mercurial branch is: libgap6\nsage: \n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\n```\n\n\nBut, regardless of the mysterious error, everything seems to work ok (at least my fpgroups code, which is what i am using for testing).",
+    "body": "I couldn't apply the root patch through normal hg_sage.apply(). Is it supposed to be applied  in some other way?.\n\nNow i get this message when i start the sage session:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\ngap: halving pool size.\nAn error occurred, but libGAP has no handler set.\nError message: \nLoading Sage library. Current Mercurial branch is: libgap6\nsage: \n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\n```\n\nBut, regardless of the mysterious error, everything seems to work ok (at least my fpgroups code, which is what i am using for testing).",
     "created_at": "2012-09-24T18:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4152,7 +4136,6 @@ archive/issue_comments_051225.json:
 I couldn't apply the root patch through normal hg_sage.apply(). Is it supposed to be applied  in some other way?.
 
 Now i get this message when i start the sage session:
-
 
 ```
 ----------------------------------------------------------------------
@@ -4176,7 +4159,6 @@ sage:
 | Type "notebook()" for the browser-based notebook interface.        |
 | Type "help()" for help.                                            |
 ```
-
 
 But, regardless of the mysterious error, everything seems to work ok (at least my fpgroups code, which is what i am using for testing).
 
@@ -4301,7 +4283,7 @@ all good.
 archive/issue_comments_051232.json:
 ```json
 {
-    "body": "I get a strange behaviour when i use tab completion with libgap objects:\n\n\n```\nsage: F=libgap.eval('FreeGroup(2)')\nsage: F.GeneratorsOfGroup()\n[ f1, f2 ]\nsage: F.GeneratorsOf\nF.GeneratorsOfField  F.GeneratorsOfGroup  F.GeneratorsOfIdeal  \nsage: F.GeneratorsOfGroup()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/mmarco/sage-5.4/<ipython console> in <module>()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement.__getattr__ (sage/libs/gap/element.c:3555)()\n\nAttributeError: Name \"GeneratorsOfGroup\" is not defined in GAP.\nsage: F\nException RuntimeError: 'Entered a critical block twice' in 'sage.libs.gap.util.error_handler' ignored\n<free group on the generators [ f1, f2 ]>\nsage: F.GeneratorsOfGroup()\n[ f1, f2 ]\n```\n\n(i hitted TAB in the line F.GeneratorsOf, so it showed the possible completions).",
+    "body": "I get a strange behaviour when i use tab completion with libgap objects:\n\n```\nsage: F=libgap.eval('FreeGroup(2)')\nsage: F.GeneratorsOfGroup()\n[ f1, f2 ]\nsage: F.GeneratorsOf\nF.GeneratorsOfField  F.GeneratorsOfGroup  F.GeneratorsOfIdeal  \nsage: F.GeneratorsOfGroup()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/mmarco/sage-5.4/<ipython console> in <module>()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement.__getattr__ (sage/libs/gap/element.c:3555)()\n\nAttributeError: Name \"GeneratorsOfGroup\" is not defined in GAP.\nsage: F\nException RuntimeError: 'Entered a critical block twice' in 'sage.libs.gap.util.error_handler' ignored\n<free group on the generators [ f1, f2 ]>\nsage: F.GeneratorsOfGroup()\n[ f1, f2 ]\n```\n(i hitted TAB in the line F.GeneratorsOf, so it showed the possible completions).",
     "created_at": "2012-10-12T13:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4311,7 +4293,6 @@ archive/issue_comments_051232.json:
 ```
 
 I get a strange behaviour when i use tab completion with libgap objects:
-
 
 ```
 sage: F=libgap.eval('FreeGroup(2)')
@@ -4334,7 +4315,6 @@ Exception RuntimeError: 'Entered a critical block twice' in 'sage.libs.gap.util.
 sage: F.GeneratorsOfGroup()
 [ f1, f2 ]
 ```
-
 (i hitted TAB in the line F.GeneratorsOf, so it showed the possible completions).
 
 
@@ -4344,7 +4324,7 @@ sage: F.GeneratorsOfGroup()
 archive/issue_comments_051233.json:
 ```json
 {
-    "body": "Another question: i can use much less memory in a gap computation through libgap that i can in a standard sage/gap session:\n\n\n```\n./sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Packages:   GAPDoc 1.5.1\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> F:=FreeGroup(2);\n<free group on the generators [ f1, f2 ]>\ngap> H:=F/[F.1^2,F.2^3];\n<fp group on the generators [ f1, f2 ]>\ngap> a:=GeneratorsOfGroup(H)[1];\nf1\ngap> a;\nf1\ngap> Order(a);\n2\ngap> quit;\n```\n\n\nBut:\n\n\n```\nsage: G=libgap.FreeGroup(2)\nsage: (a,b)=G.GeneratorsOfGroup()\nsage: H=G/libgap([a^2,b^3]) \nsage: (c,d)=H.GeneratorsOfGroup()\nsage: c.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.4/<ipython console> in <module>()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:8414)()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7947)()\n\nValueError: libGAP: Error, exceeded the permitted memory (`-o' command line option)\n```\n\n\nIt is the same computation, but in the gap session it has enough memory (it doesn't need much: even with -o 256M the computation succeeds), and through libgap it runs out of memory.\n\nI don't know if it is relevant, but i have no swap enabled in my system.",
+    "body": "Another question: i can use much less memory in a gap computation through libgap that i can in a standard sage/gap session:\n\n```\n./sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Packages:   GAPDoc 1.5.1\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> F:=FreeGroup(2);\n<free group on the generators [ f1, f2 ]>\ngap> H:=F/[F.1^2,F.2^3];\n<fp group on the generators [ f1, f2 ]>\ngap> a:=GeneratorsOfGroup(H)[1];\nf1\ngap> a;\nf1\ngap> Order(a);\n2\ngap> quit;\n```\n\nBut:\n\n```\nsage: G=libgap.FreeGroup(2)\nsage: (a,b)=G.GeneratorsOfGroup()\nsage: H=G/libgap([a^2,b^3]) \nsage: (c,d)=H.GeneratorsOfGroup()\nsage: c.Order()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/mmarco/sage-5.4/<ipython console> in <module>()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_MethodProxy.__call__ (sage/libs/gap/element.c:8414)()\n\n/home/mmarco/sage-5.4/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7947)()\n\nValueError: libGAP: Error, exceeded the permitted memory (`-o' command line option)\n```\n\nIt is the same computation, but in the gap session it has enough memory (it doesn't need much: even with -o 256M the computation succeeds), and through libgap it runs out of memory.\n\nI don't know if it is relevant, but i have no swap enabled in my system.",
     "created_at": "2012-10-12T16:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4354,7 +4334,6 @@ archive/issue_comments_051233.json:
 ```
 
 Another question: i can use much less memory in a gap computation through libgap that i can in a standard sage/gap session:
-
 
 ```
 ./sage -gap
@@ -4378,9 +4357,7 @@ gap> Order(a);
 gap> quit;
 ```
 
-
 But:
-
 
 ```
 sage: G=libgap.FreeGroup(2)
@@ -4399,7 +4376,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: libGAP: Error, exceeded the permitted memory (`-o' command line option)
 ```
-
 
 It is the same computation, but in the gap session it has enough memory (it doesn't need much: even with -o 256M the computation succeeds), and through libgap it runs out of memory.
 
@@ -4450,7 +4426,7 @@ Is it possible to use some memory balooning technique? Or are we forced to choos
 archive/issue_comments_051236.json:
 ```json
 {
-    "body": "Replying to [comment:142 mmarco]:\n> Is it possible to use some memory balooning technique?\n\nGap does that already. I've described some of the details here:\n\n```\ndef set_gap_memory_pool_size(size_in_bytes):\n    \"\"\"\n    Set the desired gap memory pool size.\n\n    Subsequently started GAP/libGAP instances will use this as\n    default. Currently running instances are unchanged.\n\n    GAP will only reserve ``size_in_bytes`` address space. Unless you\n    actually start a big GAP computation, the memory will not be\n    used. However, corresponding swap space will be reserved so that\n    GAP will always be able to use the reserved address space if\n    needed. While nothing is actually written to disc as long as you\n    don't run a big GAP computation, the reserved swap space will not\n    be available for other processes. \n    ...\n```\n",
+    "body": "Replying to [comment:142 mmarco]:\n> Is it possible to use some memory balooning technique?\n\n\nGap does that already. I've described some of the details here:\n\n```\ndef set_gap_memory_pool_size(size_in_bytes):\n    \"\"\"\n    Set the desired gap memory pool size.\n\n    Subsequently started GAP/libGAP instances will use this as\n    default. Currently running instances are unchanged.\n\n    GAP will only reserve ``size_in_bytes`` address space. Unless you\n    actually start a big GAP computation, the memory will not be\n    used. However, corresponding swap space will be reserved so that\n    GAP will always be able to use the reserved address space if\n    needed. While nothing is actually written to disc as long as you\n    don't run a big GAP computation, the reserved swap space will not\n    be available for other processes. \n    ...\n```",
     "created_at": "2012-10-12T18:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4461,6 +4437,7 @@ archive/issue_comments_051236.json:
 
 Replying to [comment:142 mmarco]:
 > Is it possible to use some memory balooning technique?
+
 
 Gap does that already. I've described some of the details here:
 
@@ -4481,7 +4458,6 @@ def set_gap_memory_pool_size(size_in_bytes):
     be available for other processes. 
     ...
 ```
-
 
 
 
@@ -4542,7 +4518,7 @@ archive/issue_events_015055.json:
 archive/issue_comments_051238.json:
 ```json
 {
-    "body": "I am starting to work on some project to allow computing reduced forms in some fp groups, and i found that i can't load gap packages via libgap:\n\n\n```\n./sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> LoadPackage(\"kbmag\")\n> ;\n---------------------------------------------------------------------------------------------------------------------------------------------------------\nLoading  kbmag 1.5 (Knuth-Bendix on Monoids and Automatic Groups)\nby Derek Holt (http://www.warwick.ac.uk/~mareg).\nHomepage: http://www.warwick.ac.uk/~mareg/kbmag\n---------------------------------------------------------------------------------------------------------------------------------------------------------\ntrue\ngap> LoadPackage(\"braid\");\n---------------------------------------------------------------------------------------------------------------------------------------------------------\nLoading  braid 1.2 (braid groups package)\nby Kay Magaard (http://www.math.wayne.edu/~kaym/),\n   Sergey Shpectorov (http://www-math.bgsu.edu/~sergey/), and\n   Helmut Voelklein (http://www.exp-math.uni-essen.de/algebra/people/voelklein.html).\nHomepage: http://www.math.wayne.edu/~kaym/research/braid/\n---------------------------------------------------------------------------------------------------------------------------------------------------------\ntrue\ngap> quit;\n```\n\n\nBut \n\n\n```\n./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: test\nsage: libgap.LoadPackage('\"kbmag\"')\nfail\nsage: libgap.LoadPackage('\"braid\"')\nfail\nsage: libgap.LoadPackage(\"braid\")  \ntrue\nsage: libgap.LoadPackage(\"kbmag\")  \nfail\n```\n\n| Sage Version 5.4.rc1, Release Date: 2012-10-05                     |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nAlso, i don't know if it is because of libgap overwriting something in the usual gap interface, but gap.LoadPackage() gives an error message.\n\nI installed the kbmag package with this .spkg i just made: \nhttps://docs.google.com/open?id=0B_B7eBQ-W5NGOFpIMmxiNXZVaGc\n\nIs there something i should take into account?",
+    "body": "I am starting to work on some project to allow computing reduced forms in some fp groups, and i found that i can't load gap packages via libgap:\n\n```\n./sage -gap\n *********   GAP, Version 4.5.6 of 16-Sep-2012 (free software, GPL)\n *  GAP  *   http://www.gap-system.org\n *********   Architecture: x86_64-unknown-linux-gnu-gcc-default64\n Libs used:  gmp, readline\n Loading the library and packages ...\n Packages:   CTblLib 1.2.1, FactInt 1.5.3, GAPDoc 1.5.1, LAGUNA 3.6.1\n Try '?help' for help. See also  '?copyright' and  '?authors'\ngap> LoadPackage(\"kbmag\")\n> ;\n---------------------------------------------------------------------------------------------------------------------------------------------------------\nLoading  kbmag 1.5 (Knuth-Bendix on Monoids and Automatic Groups)\nby Derek Holt (http://www.warwick.ac.uk/~mareg).\nHomepage: http://www.warwick.ac.uk/~mareg/kbmag\n---------------------------------------------------------------------------------------------------------------------------------------------------------\ntrue\ngap> LoadPackage(\"braid\");\n---------------------------------------------------------------------------------------------------------------------------------------------------------\nLoading  braid 1.2 (braid groups package)\nby Kay Magaard (http://www.math.wayne.edu/~kaym/),\n   Sergey Shpectorov (http://www-math.bgsu.edu/~sergey/), and\n   Helmut Voelklein (http://www.exp-math.uni-essen.de/algebra/people/voelklein.html).\nHomepage: http://www.math.wayne.edu/~kaym/research/braid/\n---------------------------------------------------------------------------------------------------------------------------------------------------------\ntrue\ngap> quit;\n```\n\nBut \n\n```\n./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: test\nsage: libgap.LoadPackage('\"kbmag\"')\nfail\nsage: libgap.LoadPackage('\"braid\"')\nfail\nsage: libgap.LoadPackage(\"braid\")  \ntrue\nsage: libgap.LoadPackage(\"kbmag\")  \nfail\n```\n| Sage Version 5.4.rc1, Release Date: 2012-10-05                     |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\nAlso, i don't know if it is because of libgap overwriting something in the usual gap interface, but gap.LoadPackage() gives an error message.\n\nI installed the kbmag package with this .spkg i just made: \nhttps://docs.google.com/open?id=0B_B7eBQ-W5NGOFpIMmxiNXZVaGc\n\nIs there something i should take into account?",
     "created_at": "2012-10-29T17:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4552,7 +4528,6 @@ archive/issue_comments_051238.json:
 ```
 
 I am starting to work on some project to allow computing reduced forms in some fp groups, and i found that i can't load gap packages via libgap:
-
 
 ```
 ./sage -gap
@@ -4583,9 +4558,7 @@ true
 gap> quit;
 ```
 
-
 But 
-
 
 ```
 ./sage     
@@ -4606,7 +4579,6 @@ true
 sage: libgap.LoadPackage("kbmag")  
 fail
 ```
-
 | Sage Version 5.4.rc1, Release Date: 2012-10-05                     |
 | Type "notebook()" for the browser-based notebook interface.        |
 | Type "help()" for help.                                            |
@@ -4624,7 +4596,7 @@ Is there something i should take into account?
 archive/issue_comments_051239.json:
 ```json
 {
-    "body": "The `kbmag` package has a binary compiled component, this won't work with libgap until kbmag learns about shared libraries. Packages that are pure Gap scripts do work, as you saw:\n\n```\nsage: libgap.LoadPackage(\"braid\")  \ntrue\n```\n",
+    "body": "The `kbmag` package has a binary compiled component, this won't work with libgap until kbmag learns about shared libraries. Packages that are pure Gap scripts do work, as you saw:\n\n```\nsage: libgap.LoadPackage(\"braid\")  \ntrue\n```",
     "created_at": "2012-10-29T18:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4639,7 +4611,6 @@ The `kbmag` package has a binary compiled component, this won't work with libgap
 sage: libgap.LoadPackage("braid")  
 true
 ```
-
 
 
 
@@ -4706,7 +4677,7 @@ How hard would it be to make Gap's Exec work through libgap?
 archive/issue_comments_051243.json:
 ```json
 {
-    "body": "If `kbmag` only uses stdin/out to communicate with its binary component then it should work. The `Exec` GAP function basically works when calling it via libGAP\n\n```\nsage: libgap_exec = libgap.eval(\"Exec\")\nsage: libgap_exec\n<Gap function \"Exec\">\nsage: libgap_exec('echo $HOME')\n/home/vbraun\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/<ipython console> in <module>()\n\n/home/vbraun/opt/sage-5.4.rc1/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7929)()\n\nValueError: libGAP: Segmentation fault\n```\n\nThere is a segfault when returning the result, I'll fix that in another ticket (maybe #13588).\n\nHow did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?",
+    "body": "If `kbmag` only uses stdin/out to communicate with its binary component then it should work. The `Exec` GAP function basically works when calling it via libGAP\n\n```\nsage: libgap_exec = libgap.eval(\"Exec\")\nsage: libgap_exec\n<Gap function \"Exec\">\nsage: libgap_exec('echo $HOME')\n/home/vbraun\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/<ipython console> in <module>()\n\n/home/vbraun/opt/sage-5.4.rc1/local/lib/python2.7/site-packages/sage/libs/gap/element.so in sage.libs.gap.element.GapElement_Function.__call__ (sage/libs/gap/element.c:7929)()\n\nValueError: libGAP: Segmentation fault\n```\nThere is a segfault when returning the result, I'll fix that in another ticket (maybe #13588).\n\nHow did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?",
     "created_at": "2012-10-30T11:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4732,7 +4703,6 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: libGAP: Segmentation fault
 ```
-
 There is a segfault when returning the result, I'll fix that in another ticket (maybe #13588).
 
 How did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?
@@ -4744,7 +4714,7 @@ How did you install `kbmag`, I don't think its one that we ship. Is there a spkg
 archive/issue_comments_051244.json:
 ```json
 {
-    "body": "Replying to [comment:151 vbraun]:\n \n> How did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?\n> \nthe googledocs link above will give you the spkg...\nThat's certainly not the best way to host files.\nThere is http://code.google.com/p/spkg-upload/\nwhich would make much more sense.\n\nOr, perhaps, even easier, a bitbucket or github account.",
+    "body": "Replying to [comment:151 vbraun]:\n \n> How did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?\n> \n\nthe googledocs link above will give you the spkg...\nThat's certainly not the best way to host files.\nThere is http://code.google.com/p/spkg-upload/\nwhich would make much more sense.\n\nOr, perhaps, even easier, a bitbucket or github account.",
     "created_at": "2012-10-30T13:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4757,6 +4727,7 @@ Replying to [comment:151 vbraun]:
  
 > How did you install `kbmag`, I don't think its one that we ship. Is there a spkg for it?
 > 
+
 the googledocs link above will give you the spkg...
 That's certainly not the best way to host files.
 There is http://code.google.com/p/spkg-upload/
@@ -4807,7 +4778,7 @@ I have opened #13673.
 archive/issue_comments_051247.json:
 ```json
 {
-    "body": "Thanks for this great contribution!\n\nI just want to mention a problem with the assertion `strlen(libGAP_stdin_buffer) < length' which \nleads to an unhandled SIGABRT. Could this be avoided? \n \n\n\n```\nsage: S = SymmetricGroup(10000)\nsage: s = S.random_element()\nsage: libgap(s)\n```\n",
+    "body": "Thanks for this great contribution!\n\nI just want to mention a problem with the assertion `strlen(libGAP_stdin_buffer) < length' which \nleads to an unhandled SIGABRT. Could this be avoided? \n \n\n```\nsage: S = SymmetricGroup(10000)\nsage: s = S.random_element()\nsage: libgap(s)\n```",
     "created_at": "2012-11-09T12:03:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4822,13 +4793,11 @@ I just want to mention a problem with the assertion `strlen(libGAP_stdin_buffer)
 leads to an unhandled SIGABRT. Could this be avoided? 
  
 
-
 ```
 sage: S = SymmetricGroup(10000)
 sage: s = S.random_element()
 sage: libgap(s)
 ```
-
 
 
 
@@ -4907,7 +4876,7 @@ Now that it seems that gap upgrading has moved to 4.5.7, will this need to chang
 archive/issue_comments_051250.json:
 ```json
 {
-    "body": "Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:\n\n\n```\n\nsage: libgap.FreeGroup(4)\nAn error occurred, but libGAP has no handler set.\nError message: \n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/mmarco/sage-5.5/<ipython console> in <module>()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__getattr__ (sage/misc/lazy_import.c:1877)()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport._get_object (sage/misc/lazy_import.c:1291)()\n\n/home/mmarco/sage-5.5/libgap.pyx in init sage.libs.gap.libgap (sage/libs/gap/libgap.c:4157)()\n\n/home/mmarco/sage-5.5/libgap.pyx in sage.libs.gap.libgap.Gap.__init__ (sage/libs/gap/libgap.c:2716)()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/libs/gap/util.so in sage.libs.gap.util.initialize (sage/libs/gap/util.c:3489)()\n\nRuntimeError: libGAP initialization failed\n\n\nYou are running a GAP kernel which does not fit with the library.\nProbably you forgot to apply the kernel part or the library part\nof a bugfix?\n\nIf you are using Windows, make sure you installed the file\nwbin4r5n7.zoo (or .zip),\nMacintosh users make sure the file\nbin4r5n7-PPC.sit (or -68k.sit) is installed,\nUnix users please recompile.\n\nError before error-handling is initialized: Update to correct kernel version!\n```\n",
+    "body": "Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:\n\n```\n\nsage: libgap.FreeGroup(4)\nAn error occurred, but libGAP has no handler set.\nError message: \n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/mmarco/sage-5.5/<ipython console> in <module>()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport.__getattr__ (sage/misc/lazy_import.c:1877)()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/misc/lazy_import.so in sage.misc.lazy_import.LazyImport._get_object (sage/misc/lazy_import.c:1291)()\n\n/home/mmarco/sage-5.5/libgap.pyx in init sage.libs.gap.libgap (sage/libs/gap/libgap.c:4157)()\n\n/home/mmarco/sage-5.5/libgap.pyx in sage.libs.gap.libgap.Gap.__init__ (sage/libs/gap/libgap.c:2716)()\n\n/home/mmarco/sage-5.5/local/lib/python2.7/site-packages/sage/libs/gap/util.so in sage.libs.gap.util.initialize (sage/libs/gap/util.c:3489)()\n\nRuntimeError: libGAP initialization failed\n\n\nYou are running a GAP kernel which does not fit with the library.\nProbably you forgot to apply the kernel part or the library part\nof a bugfix?\n\nIf you are using Windows, make sure you installed the file\nwbin4r5n7.zoo (or .zip),\nMacintosh users make sure the file\nbin4r5n7-PPC.sit (or -68k.sit) is installed,\nUnix users please recompile.\n\nError before error-handling is initialized: Update to correct kernel version!\n```",
     "created_at": "2012-12-26T11:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4917,7 +4886,6 @@ archive/issue_comments_051250.json:
 ```
 
 Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:
-
 
 ```
 
@@ -4957,13 +4925,12 @@ Error before error-handling is initialized: Update to correct kernel version!
 
 
 
-
 ---
 
 archive/issue_comments_051251.json:
 ```json
 {
-    "body": "Replying to [comment:159 mmarco]:\n> Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:\nSPKG.txt contains brief instructions about upgrading. You'll need to increase the version and rerun autotools to produce new spkg. I never tried this myself though.",
+    "body": "Replying to [comment:159 mmarco]:\n> Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:\n\nSPKG.txt contains brief instructions about upgrading. You'll need to increase the version and rerun autotools to produce new spkg. I never tried this myself though.",
     "created_at": "2012-12-26T12:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -4974,6 +4941,7 @@ archive/issue_comments_051251.json:
 
 Replying to [comment:159 mmarco]:
 > Indeed, the actual version of libgap is incompatible with the gap-4.5.7 spkg:
+
 SPKG.txt contains brief instructions about upgrading. You'll need to increase the version and rerun autotools to produce new spkg. I never tried this myself though.
 
 
@@ -5001,7 +4969,7 @@ I'm working on it.
 archive/issue_comments_051253.json:
 ```json
 {
-    "body": "Replying to [comment:161 vbraun]:\n> I'm working on it.\nI've built the new package from your bitbucket repo, and it at least installs OK.",
+    "body": "Replying to [comment:161 vbraun]:\n> I'm working on it.\n\nI've built the new package from your bitbucket repo, and it at least installs OK.",
     "created_at": "2012-12-26T12:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -5012,6 +4980,7 @@ archive/issue_comments_051253.json:
 
 Replying to [comment:161 vbraun]:
 > I'm working on it.
+
 I've built the new package from your bitbucket repo, and it at least installs OK.
 
 
@@ -5021,7 +4990,7 @@ I've built the new package from your bitbucket repo, and it at least installs OK
 archive/issue_comments_051254.json:
 ```json
 {
-    "body": "Replying to [comment:162 dimpase]:\n> Replying to [comment:161 vbraun]:\n> > I'm working on it.\n> I've built the new package from your bitbucket repo, and it at least installs OK.\nhttp://boxen.math.washington.edu/home/dima/packages/libgap-4.5.7.p1.spkg\n\nIt also passes the tests in `sage/libs/gap`\n\nTo create the package on MacOSX, I had to install `GNU findtools`, for the native `find` has different options.",
+    "body": "Replying to [comment:162 dimpase]:\n> Replying to [comment:161 vbraun]:\n> > I'm working on it.\n\n> I've built the new package from your bitbucket repo, and it at least installs OK.\nhttp://boxen.math.washington.edu/home/dima/packages/libgap-4.5.7.p1.spkg\n\nIt also passes the tests in `sage/libs/gap`\n\nTo create the package on MacOSX, I had to install `GNU findtools`, for the native `find` has different options.",
     "created_at": "2012-12-26T12:48:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6391",
     "type": "issue_comment",
@@ -5033,6 +5002,7 @@ archive/issue_comments_051254.json:
 Replying to [comment:162 dimpase]:
 > Replying to [comment:161 vbraun]:
 > > I'm working on it.
+
 > I've built the new package from your bitbucket repo, and it at least installs OK.
 http://boxen.math.washington.edu/home/dima/packages/libgap-4.5.7.p1.spkg
 

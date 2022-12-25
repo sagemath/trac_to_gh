@@ -3,7 +3,7 @@
 archive/issues_005221.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nExamine the output of \n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1], fill=False)\n```\n\n\n\nThe last contour line (level curve at z=1) is invisible because the default cmap makes it white.  Compare that to a different color map:\n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)\n```\n\n\nWe should make the default cmap something less confusing when fill=False.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5221\n\n",
+    "body": "Assignee: @williamstein\n\nExamine the output of \n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1], fill=False)\n```\n\n\nThe last contour line (level curve at z=1) is invisible because the default cmap makes it white.  Compare that to a different color map:\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)\n```\n\nWe should make the default cmap something less confusing when fill=False.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5221\n\n",
     "created_at": "2009-02-09T16:12:04Z",
     "labels": [
         "component: graphics",
@@ -20,22 +20,18 @@ Assignee: @williamstein
 
 Examine the output of 
 
-
 ```
 var('x,y')
 contour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1], fill=False)
 ```
 
 
-
 The last contour line (level curve at z=1) is invisible because the default cmap makes it white.  Compare that to a different color map:
-
 
 ```
 var('x,y')
 contour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)
 ```
-
 
 We should make the default cmap something less confusing when fill=False.
 

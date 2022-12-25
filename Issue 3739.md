@@ -3,7 +3,7 @@
 archive/issues_003739.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n> * There was I think a bit of initial confusion right after students\n> signed up for an account\n> and logged in about what they could do.  I had to point out the \"New\n> Worksheet\" link in\n> the upper left to numerous students who were just sitting thinking --\n> \"hmm, what now?\"\n> Maybe when there are no worksheets, there should be a big button\n> \"create your first\n> worksheet!\"\n\nIn GMail, when the Inbox is empty, a message is displayed in the\ncenter of the screen advertising Google Reader or Google News:\n\n   No new mail! Want to read updates from your favorite sites? Try\nGoogle Reader\n\n(See it here: http://sevennine.net/post-images/empty-inbox-gmail.png)\n\nI like it's simplicity and effectiveness. Perhaps the notebook can\ndisplay a similar message, something like: \"Welcome to Sage! You can\ncreate a [new worksheet], view some [published worksheets], or read\nsome [documentation].\" (I'm using [] to denote links.)\n\nFranco\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3739\n\n",
+    "body": "Assignee: boothby\n\n```\n> * There was I think a bit of initial confusion right after students\n> signed up for an account\n> and logged in about what they could do.  I had to point out the \"New\n> Worksheet\" link in\n> the upper left to numerous students who were just sitting thinking --\n> \"hmm, what now?\"\n> Maybe when there are no worksheets, there should be a big button\n> \"create your first\n> worksheet!\"\n\nIn GMail, when the Inbox is empty, a message is displayed in the\ncenter of the screen advertising Google Reader or Google News:\n\n   No new mail! Want to read updates from your favorite sites? Try\nGoogle Reader\n\n(See it here: http://sevennine.net/post-images/empty-inbox-gmail.png)\n\nI like it's simplicity and effectiveness. Perhaps the notebook can\ndisplay a similar message, something like: \"Welcome to Sage! You can\ncreate a [new worksheet], view some [published worksheets], or read\nsome [documentation].\" (I'm using [] to denote links.)\n\nFranco\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3739\n\n",
     "created_at": "2008-07-29T14:44:24Z",
     "labels": [
         "component: notebook"
@@ -16,7 +16,6 @@ archive/issues_003739.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 > * There was I think a bit of initial confusion right after students
@@ -44,7 +43,6 @@ some [documentation]." (I'm using [] to denote links.)
 
 Franco
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3739
 

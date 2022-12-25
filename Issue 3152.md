@@ -3,7 +3,7 @@
 archive/issues_003152.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> Some other minor issues about using GAP within the notebook, under\n> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at\n> the top.  The following things don't work correctly:\n> 0) If I type something that gives an error in GAP, the error\n> message is buried in a python exception/backtrace.\n> \n> 1) If I type \"?SymmetricGroup\" (which works within GAP), all I see\n> is\n> \n>    Help: Showing `Reference: SymmetricGroup'\n>    Page from 104\n> \n> It's similar with other \"?foo\" commands.\n> \n> 2) If I type \"SymmetricGroup?\" and hit tab, it shows me help about\n> sage's wrapped SymmetricGroup function.  I don't think this will\n> be helpful for functions not wrapped by sage.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3152\n\n",
+    "body": "Assignee: boothby\n\n```\nOn 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:\n> Some other minor issues about using GAP within the notebook, under\n> 2.7.1.  I've put my entire worksheet in GAP mode using the menu at\n> the top.  The following things don't work correctly:\n> 0) If I type something that gives an error in GAP, the error\n> message is buried in a python exception/backtrace.\n> \n> 1) If I type \"?SymmetricGroup\" (which works within GAP), all I see\n> is\n> \n>    Help: Showing `Reference: SymmetricGroup'\n>    Page from 104\n> \n> It's similar with other \"?foo\" commands.\n> \n> 2) If I type \"SymmetricGroup?\" and hit tab, it shows me help about\n> sage's wrapped SymmetricGroup function.  I don't think this will\n> be helpful for functions not wrapped by sage.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3152\n\n",
     "created_at": "2008-05-10T21:28:29Z",
     "labels": [
         "component: notebook"
@@ -16,7 +16,6 @@ archive/issues_003152.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
@@ -38,7 +37,6 @@ On 7/26/07, Dan Christensen <jdc@uwo.ca> wrote:
 > sage's wrapped SymmetricGroup function.  I don't think this will
 > be helpful for functions not wrapped by sage.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3152
 

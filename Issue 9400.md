@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9400
 archive/issue_comments_089387.json:
 ```json
 {
-    "body": "Example of what this makes possible:\n\n```\n~wstein/bin/sagedb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x> = QQ[]\nsage: f = (x^20 - 3*x^19 - 29*x^18 + 91*x^17 + 338*x^16 - 1130*x^15 -\n2023*x^14 +\n....: 7432*x^13 + 6558*x^12 - 28021*x^11 - 10909*x^10 + 61267*x^9 + 6954*x^8 -\n....: 74752*x^7 + 1407*x^6 + 46330*x^5 - 1087*x^4 - 12558*x^3 - 942*x^2 +\n....: 960*x + 148)\nsage: K.<a> = NumberField(f^2+2, maximize_at_primes=[2])\nsage: K.degree()\n40\nsage: time z = K.factor(2)\nCPU times: user 0.59 s, sys: 0.01 s, total: 0.60 s\nWall time: 0.60 s\nsage: time k = z[0][0].residue_field()\nCPU times: user 1.68 s, sys: 0.03 s, total: 1.71 s\nWall time: 1.98 s\nsage: time k(a^3+3)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nabar^3 + 1\n```\n",
+    "body": "Example of what this makes possible:\n\n```\n~wstein/bin/sagedb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x> = QQ[]\nsage: f = (x^20 - 3*x^19 - 29*x^18 + 91*x^17 + 338*x^16 - 1130*x^15 -\n2023*x^14 +\n....: 7432*x^13 + 6558*x^12 - 28021*x^11 - 10909*x^10 + 61267*x^9 + 6954*x^8 -\n....: 74752*x^7 + 1407*x^6 + 46330*x^5 - 1087*x^4 - 12558*x^3 - 942*x^2 +\n....: 960*x + 148)\nsage: K.<a> = NumberField(f^2+2, maximize_at_primes=[2])\nsage: K.degree()\n40\nsage: time z = K.factor(2)\nCPU times: user 0.59 s, sys: 0.01 s, total: 0.60 s\nWall time: 0.60 s\nsage: time k = z[0][0].residue_field()\nCPU times: user 1.68 s, sys: 0.03 s, total: 1.71 s\nWall time: 1.98 s\nsage: time k(a^3+3)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nabar^3 + 1\n```",
     "created_at": "2010-07-01T06:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -67,7 +67,6 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 Wall time: 0.01 s
 abar^3 + 1
 ```
-
 
 
 
@@ -118,7 +117,7 @@ and do them after #9343 is merged (I also want to change the hashing of PARI obj
 archive/issue_comments_089390.json:
 ```json
 {
-    "body": "> It is clear from a very first look at the patch that this will massively conflict with #9343 (why \n\nI'm sure this will be easy to merge with #9343.  It's probably best to get 9343 in first, since it is much more difficult, then rebase the current patch against it.\n\n> I would prefer to postpone:  hashing, printing\n\nThe current hashing and printing setup is complete and total crap, and needs to be removed ASAP.  It renders number fields completely useless for any nontrivial applications that involve prime ideals. \n\n> Also, I'm personally not completely convinced about the best way to print \n\nI saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be). Print in reduced form only in small trivial cases (by default), but allow the user to easily up the cutoff if they want, for some reason.",
+    "body": "> It is clear from a very first look at the patch that this will massively conflict with #9343 (why \n\n\nI'm sure this will be easy to merge with #9343.  It's probably best to get 9343 in first, since it is much more difficult, then rebase the current patch against it.\n\n> I would prefer to postpone:  hashing, printing\n\n\nThe current hashing and printing setup is complete and total crap, and needs to be removed ASAP.  It renders number fields completely useless for any nontrivial applications that involve prime ideals. \n\n> Also, I'm personally not completely convinced about the best way to print \n\n\nI saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be). Print in reduced form only in small trivial cases (by default), but allow the user to easily up the cutoff if they want, for some reason.",
     "created_at": "2010-08-12T11:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -129,13 +128,16 @@ archive/issue_comments_089390.json:
 
 > It is clear from a very first look at the patch that this will massively conflict with #9343 (why 
 
+
 I'm sure this will be easy to merge with #9343.  It's probably best to get 9343 in first, since it is much more difficult, then rebase the current patch against it.
 
 > I would prefer to postpone:  hashing, printing
 
+
 The current hashing and printing setup is complete and total crap, and needs to be removed ASAP.  It renders number fields completely useless for any nontrivial applications that involve prime ideals. 
 
 > Also, I'm personally not completely convinced about the best way to print 
+
 
 I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be). Print in reduced form only in small trivial cases (by default), but allow the user to easily up the cutoff if they want, for some reason.
 
@@ -146,7 +148,7 @@ I saw that.  I think the best solution is exactly what I implemented in the atta
 archive/issue_comments_089391.json:
 ```json
 {
-    "body": "Replying to [comment:6 was]:\n> I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).\n\nWhy not hash based on the HNF representation, as I propsed in #9666?  I think this is more canonical than gens() and it is the native PARI format.",
+    "body": "Replying to [comment:6 was]:\n> I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).\n\n\nWhy not hash based on the HNF representation, as I propsed in #9666?  I think this is more canonical than gens() and it is the native PARI format.",
     "created_at": "2010-08-12T17:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -158,6 +160,7 @@ archive/issue_comments_089391.json:
 Replying to [comment:6 was]:
 > I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).
 
+
 Why not hash based on the HNF representation, as I propsed in #9666?  I think this is more canonical than gens() and it is the native PARI format.
 
 
@@ -167,7 +170,7 @@ Why not hash based on the HNF representation, as I propsed in #9666?  I think th
 archive/issue_comments_089392.json:
 ```json
 {
-    "body": "Replying to [comment:7 jdemeyer]:\n> Replying to [comment:6 was]:\n> > I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).\n> \n> Why not hash based on the HNF representation, as I propsed in #9666?  \n> I think this is more canonical than gens() and it is the native PARI format.\n\nCONS:\nI think number fields will frequently be relative extensions, and we'll also consider ideals both in the maximal order and in suborders.  Pari will likely have almost nothing to do with our general relative extensions (it's only currently used for relative extensions as a miserable crutch), and HNF doesn't apply for ideals in orders.\n\nPROS:\nWhen it works, hashing based on the HNF has the property that if I==J then hash(I) == hash(J).  That's a very good property to have.   With hashing of gens that fails. \n\nThus taken together, I'm OK with your proposal with the caveat that at some future time it has to be revisited for *relative* extensions.",
+    "body": "Replying to [comment:7 jdemeyer]:\n> Replying to [comment:6 was]:\n> > I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).\n\n> \n> Why not hash based on the HNF representation, as I propsed in #9666?  \n> I think this is more canonical than gens() and it is the native PARI format.\n\n\nCONS:\nI think number fields will frequently be relative extensions, and we'll also consider ideals both in the maximal order and in suborders.  Pari will likely have almost nothing to do with our general relative extensions (it's only currently used for relative extensions as a miserable crutch), and HNF doesn't apply for ideals in orders.\n\nPROS:\nWhen it works, hashing based on the HNF has the property that if I==J then hash(I) == hash(J).  That's a very good property to have.   With hashing of gens that fails. \n\nThus taken together, I'm OK with your proposal with the caveat that at some future time it has to be revisited for *relative* extensions.",
     "created_at": "2010-08-14T00:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -179,9 +182,11 @@ archive/issue_comments_089392.json:
 Replying to [comment:7 jdemeyer]:
 > Replying to [comment:6 was]:
 > > I saw that.  I think the best solution is exactly what I implemented in the attached patch.  Hash based on gens (trivial, as a hash should be).
+
 > 
 > Why not hash based on the HNF representation, as I propsed in #9666?  
 > I think this is more canonical than gens() and it is the native PARI format.
+
 
 CONS:
 I think number fields will frequently be relative extensions, and we'll also consider ideals both in the maximal order and in suborders.  Pari will likely have almost nothing to do with our general relative extensions (it's only currently used for relative extensions as a miserable crutch), and HNF doesn't apply for ideals in orders.
@@ -236,7 +241,7 @@ OK, new patch up that changes __hash__.  It passes all doctests on sage.math.
 archive/issue_comments_089395.json:
 ```json
 {
-    "body": "The patch introduces an inconsistency:\n\n\n```\nsage: K.<a> = NumberField(x^3-7)\nsage: K.ideal(12*a + 5).factor()\n(Fractional ideal (101, a - 8)) * (Fractional ideal (11, a + 5))^2\n```\n\n\n\n```\nsage: K.<b> = NumberField(x^3-10001)\nsage: L.ideal(b+1).factor()\n(Fractional ideal (b + 1, 1667)) * (Fractional ideal (b + 1, 2)) * (Fractional ideal (b + 1, 3))\n```\n\n\nNote how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?",
+    "body": "The patch introduces an inconsistency:\n\n```\nsage: K.<a> = NumberField(x^3-7)\nsage: K.ideal(12*a + 5).factor()\n(Fractional ideal (101, a - 8)) * (Fractional ideal (11, a + 5))^2\n```\n\n```\nsage: K.<b> = NumberField(x^3-10001)\nsage: L.ideal(b+1).factor()\n(Fractional ideal (b + 1, 1667)) * (Fractional ideal (b + 1, 2)) * (Fractional ideal (b + 1, 3))\n```\n\nNote how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?",
     "created_at": "2010-08-14T22:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -247,21 +252,17 @@ archive/issue_comments_089395.json:
 
 The patch introduces an inconsistency:
 
-
 ```
 sage: K.<a> = NumberField(x^3-7)
 sage: K.ideal(12*a + 5).factor()
 (Fractional ideal (101, a - 8)) * (Fractional ideal (11, a + 5))^2
 ```
 
-
-
 ```
 sage: K.<b> = NumberField(x^3-10001)
 sage: L.ideal(b+1).factor()
 (Fractional ideal (b + 1, 1667)) * (Fractional ideal (b + 1, 2)) * (Fractional ideal (b + 1, 3))
 ```
-
 
 Note how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?
 
@@ -272,7 +273,7 @@ Note how the integer is printed first in the first case but last in the second c
 archive/issue_comments_089396.json:
 ```json
 {
-    "body": "> Note how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?\n\nWould that make any difference?  The difference above is that in one case the number field has a very small discriminant (-1323), and in the other it doesn't (-2700540027).   When the discriminant is small, then reduced generators are used for printing.   A solution could be to apply the sorting and \"uniquing\" in both cases before printing -- right now it is only applied in the case of large discriminant.",
+    "body": "> Note how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?\n\n\nWould that make any difference?  The difference above is that in one case the number field has a very small discriminant (-1323), and in the other it doesn't (-2700540027).   When the discriminant is small, then reduced generators are used for printing.   A solution could be to apply the sorting and \"uniquing\" in both cases before printing -- right now it is only applied in the case of large discriminant.",
     "created_at": "2010-08-15T17:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -283,6 +284,7 @@ archive/issue_comments_089396.json:
 
 > Note how the integer is printed first in the first case but last in the second case (and personally I find it clearer when the integer is put first).  Maybe the sorting and uniqueing should be done in the NumberFieldIdeal constructor instead of when the ideal is printed?
 
+
 Would that make any difference?  The difference above is that in one case the number field has a very small discriminant (-1323), and in the other it doesn't (-2700540027).   When the discriminant is small, then reduced generators are used for printing.   A solution could be to apply the sorting and "uniquing" in both cases before printing -- right now it is only applied in the case of large discriminant.
 
 
@@ -292,7 +294,7 @@ Would that make any difference?  The difference above is that in one case the nu
 archive/issue_comments_089397.json:
 ```json
 {
-    "body": "Hi,\n\nI retract my comment.  The issue may be that sorting of elements of number fields is now useless.  Observe:\n\n```\nsage: L.<b> = NumberField(x^3-10001)\nsage: b+1 < L(1667)\nFalse\nsage: L(1667) < b + 1\nFalse\n```\n\nThus it doesn't matter *what* you do with sorting and uniquing the gens before or after -- there's no sensible ordering that will come out of this, unless elements of number fields get a total (non-algebraic) ordering.  I thought they had one. \n\nOh, now I remember -- there is a *major bug* in the way elements of number fields are ordered.  You can see this by looking at the code (I think Joel Mohler) wrote in number_field_element.pyx.  I fixed this a few weeks ago as part of the patch bomb #9541.   \n\nSo my advice is to not worry about sorting issues as part of *this* patch, but keep in mind that it is has to be fixed later.  I've opened ticket #9752 to fix this.",
+    "body": "Hi,\n\nI retract my comment.  The issue may be that sorting of elements of number fields is now useless.  Observe:\n\n```\nsage: L.<b> = NumberField(x^3-10001)\nsage: b+1 < L(1667)\nFalse\nsage: L(1667) < b + 1\nFalse\n```\nThus it doesn't matter *what* you do with sorting and uniquing the gens before or after -- there's no sensible ordering that will come out of this, unless elements of number fields get a total (non-algebraic) ordering.  I thought they had one. \n\nOh, now I remember -- there is a *major bug* in the way elements of number fields are ordered.  You can see this by looking at the code (I think Joel Mohler) wrote in number_field_element.pyx.  I fixed this a few weeks ago as part of the patch bomb #9541.   \n\nSo my advice is to not worry about sorting issues as part of *this* patch, but keep in mind that it is has to be fixed later.  I've opened ticket #9752 to fix this.",
     "created_at": "2010-08-15T17:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -312,7 +314,6 @@ False
 sage: L(1667) < b + 1
 False
 ```
-
 Thus it doesn't matter *what* you do with sorting and uniquing the gens before or after -- there's no sensible ordering that will come out of this, unless elements of number fields get a total (non-algebraic) ordering.  I thought they had one. 
 
 Oh, now I remember -- there is a *major bug* in the way elements of number fields are ordered.  You can see this by looking at the code (I think Joel Mohler) wrote in number_field_element.pyx.  I fixed this a few weeks ago as part of the patch bomb #9541.   
@@ -326,7 +327,7 @@ So my advice is to not worry about sorting issues as part of *this* patch, but k
 archive/issue_comments_089398.json:
 ```json
 {
-    "body": "Always using `gens()` for printing is also silly, because for larger degrees you can get something like:\n\n\n```\nsage: x=polygen(QQ); K.<a> = NumberField(x^8+x-1);\nsage: J1 = K.ideal(a+1); J2 = K.ideal(a+2); J = J1.intersection(J2)\nsage: J\nFractional ideal (a^2 + 249, -a^7 + 125, a + 2, a^3 + 8, a^4 + 237, -a^7 - a^6 + 189, a^7 + a^6 + a^5 + 96, 253)\n```\n\n\nIn my opinion, the best way would be to use `idealtwoelt()` for large discriminants instead of simply printing all generators (or alternatively: reduce the generators using `idealtwoelt()` in `__init__`).",
+    "body": "Always using `gens()` for printing is also silly, because for larger degrees you can get something like:\n\n```\nsage: x=polygen(QQ); K.<a> = NumberField(x^8+x-1);\nsage: J1 = K.ideal(a+1); J2 = K.ideal(a+2); J = J1.intersection(J2)\nsage: J\nFractional ideal (a^2 + 249, -a^7 + 125, a + 2, a^3 + 8, a^4 + 237, -a^7 - a^6 + 189, a^7 + a^6 + a^5 + 96, 253)\n```\n\nIn my opinion, the best way would be to use `idealtwoelt()` for large discriminants instead of simply printing all generators (or alternatively: reduce the generators using `idealtwoelt()` in `__init__`).",
     "created_at": "2010-08-16T20:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -337,14 +338,12 @@ archive/issue_comments_089398.json:
 
 Always using `gens()` for printing is also silly, because for larger degrees you can get something like:
 
-
 ```
 sage: x=polygen(QQ); K.<a> = NumberField(x^8+x-1);
 sage: J1 = K.ideal(a+1); J2 = K.ideal(a+2); J = J1.intersection(J2)
 sage: J
 Fractional ideal (a^2 + 249, -a^7 + 125, a + 2, a^3 + 8, a^4 + 237, -a^7 - a^6 + 189, a^7 + a^6 + a^5 + 96, 253)
 ```
-
 
 In my opinion, the best way would be to use `idealtwoelt()` for large discriminants instead of simply printing all generators (or alternatively: reduce the generators using `idealtwoelt()` in `__init__`).
 
@@ -372,7 +371,7 @@ archive/issue_events_023182.json:
 archive/issue_comments_089399.json:
 ```json
 {
-    "body": "\n```\nOn Tue, Aug 17, 2010 at 5:03 PM, Chan-Ho Kim <chanho.math> wrote:\n> Dear William,\n> I think that there is a bug on trac 9400 patch.\n> My current SAGE is (SAGE 4.5.2 + trac 9400 patch only) in VM.\n> When I use `maximize_at_prime,'\n>\n> K.<a> = NumberField(x^6 + 9*x^5 - 8410*x^4 - 88580*x^3 + 18705368*x^2 +\n> 99820416*x - 12230355456, maximize_at_primes=[3]) ; K.primes_above(3)\n> this decomposition in K works as you mentioned.\n>\n> However, in this ``small'' number field\n>\n> F.<a> = NumberField(x^3 - x^2 - 24*x + 32, maximize_at_primes=[3]) ;\n> F.primes_above(3)\n> the low precision error occurs if I add `maximize_at_primes=[3].'\n\nThat's not a bug in maximize_at_primes or finding the primes above 3.   But it *is* an issue with *printing* the ideals out that it finds over 3.   Evidently, when printing is_principal is called on each ideal currently, and this leads to a problem.  This is not surprising, given that deciding whether or not an ideal is principal requires knowing the class group in general, and the equation order of F that you define above is not only deficient at 3.  You need to also maximize at 2.   See:\n\nsage: F.<a> = NumberField(x^3 - x^2 - 24*x + 32, maximize_at_primes=[2,3]) \nsage: F.primes_above(3)\n[Fractional ideal (-1/2*a^2 - 3/2*a + 5), Fractional ideal (-1/2*a^2 + 5/2*a - 1)]\n\nSo in short, this is not a bug.  If you try to compute with number fields and pass in the maximize_at_primes option, certain things can't possibly work.\n\nThat said, I'm not a big fan of how ideals print.  Maybe Jereon's suggestion -- just *always* print with the PARI 2-element representation -- is the way to go.  That might get around this problem. \n\n\n> BTW, I also have one more question:\n> Can I add `maximize_at_prime=[p]' in `hecke_eigenvalue_field()'?\n\nYou'll have to dive in and start hacking at the source code of Sage to do that....\n\n -- William\n```\n",
+    "body": "```\nOn Tue, Aug 17, 2010 at 5:03 PM, Chan-Ho Kim <chanho.math> wrote:\n> Dear William,\n> I think that there is a bug on trac 9400 patch.\n> My current SAGE is (SAGE 4.5.2 + trac 9400 patch only) in VM.\n> When I use `maximize_at_prime,'\n>\n> K.<a> = NumberField(x^6 + 9*x^5 - 8410*x^4 - 88580*x^3 + 18705368*x^2 +\n> 99820416*x - 12230355456, maximize_at_primes=[3]) ; K.primes_above(3)\n> this decomposition in K works as you mentioned.\n>\n> However, in this ``small'' number field\n>\n> F.<a> = NumberField(x^3 - x^2 - 24*x + 32, maximize_at_primes=[3]) ;\n> F.primes_above(3)\n> the low precision error occurs if I add `maximize_at_primes=[3].'\n\nThat's not a bug in maximize_at_primes or finding the primes above 3.   But it *is* an issue with *printing* the ideals out that it finds over 3.   Evidently, when printing is_principal is called on each ideal currently, and this leads to a problem.  This is not surprising, given that deciding whether or not an ideal is principal requires knowing the class group in general, and the equation order of F that you define above is not only deficient at 3.  You need to also maximize at 2.   See:\n\nsage: F.<a> = NumberField(x^3 - x^2 - 24*x + 32, maximize_at_primes=[2,3]) \nsage: F.primes_above(3)\n[Fractional ideal (-1/2*a^2 - 3/2*a + 5), Fractional ideal (-1/2*a^2 + 5/2*a - 1)]\n\nSo in short, this is not a bug.  If you try to compute with number fields and pass in the maximize_at_primes option, certain things can't possibly work.\n\nThat said, I'm not a big fan of how ideals print.  Maybe Jereon's suggestion -- just *always* print with the PARI 2-element representation -- is the way to go.  That might get around this problem. \n\n\n> BTW, I also have one more question:\n> Can I add `maximize_at_prime=[p]' in `hecke_eigenvalue_field()'?\n\nYou'll have to dive in and start hacking at the source code of Sage to do that....\n\n -- William\n```",
     "created_at": "2010-08-18T00:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -380,7 +379,6 @@ archive/issue_comments_089399.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 On Tue, Aug 17, 2010 at 5:03 PM, Chan-Ho Kim <chanho.math> wrote:
@@ -417,7 +415,6 @@ You'll have to dive in and start hacking at the source code of Sage to do that..
 
  -- William
 ```
-
 
 
 
@@ -594,7 +591,7 @@ Changing keywords from "" to "PARI number field".
 archive/issue_comments_089409.json:
 ```json
 {
-    "body": "Since this ismarked \"needs review\" could the authors clarify which patches are up for review?  I assume it is \n\n```\n9400_maximize_at_primes.patch \nPatch for the \"maximize at primes\" part, rebased to sage-4.6.prealpha1 (see #9343)\n```\n\nand\n\n```\n9400_jd_review.patch \nApply on top of 9400_maximize_at_primes.patch\n```\n\nand not the first one.\n\nSecondly, since these patches have been merged into 4.6.prealpha3 which I have successfully built and tested, I reckon that the only (!) remaining task as a reviewer is to look at the code in the patch, with the additional explanations on the ticket, and approve (or otherwise, maybe) of it?\n\nI will try to do this before I go away on Friday for a week.  No promises...",
+    "body": "Since this ismarked \"needs review\" could the authors clarify which patches are up for review?  I assume it is \n\n```\n9400_maximize_at_primes.patch \nPatch for the \"maximize at primes\" part, rebased to sage-4.6.prealpha1 (see #9343)\n```\nand\n\n```\n9400_jd_review.patch \nApply on top of 9400_maximize_at_primes.patch\n```\nand not the first one.\n\nSecondly, since these patches have been merged into 4.6.prealpha3 which I have successfully built and tested, I reckon that the only (!) remaining task as a reviewer is to look at the code in the patch, with the additional explanations on the ticket, and approve (or otherwise, maybe) of it?\n\nI will try to do this before I go away on Friday for a week.  No promises...",
     "created_at": "2010-08-30T16:09:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -609,14 +606,12 @@ Since this ismarked "needs review" could the authors clarify which patches are u
 9400_maximize_at_primes.patch 
 Patch for the "maximize at primes" part, rebased to sage-4.6.prealpha1 (see #9343)
 ```
-
 and
 
 ```
 9400_jd_review.patch 
 Apply on top of 9400_maximize_at_primes.patch
 ```
-
 and not the first one.
 
 Secondly, since these patches have been merged into 4.6.prealpha3 which I have successfully built and tested, I reckon that the only (!) remaining task as a reviewer is to look at the code in the patch, with the additional explanations on the ticket, and approve (or otherwise, maybe) of it?
@@ -648,7 +643,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089411.json:
 ```json
 {
-    "body": "Looking at the 2nd and 3rd patches (separately) it looks very good to me.  For the benefit of others reading this, the essence of these patches (apart from some ReSTification) is to expose some additional functionality from the pari library to Sage, so that some computations can be mande very much faster (a *lot* faster!).\n\nI spotted a few minor issues in docstrings (numbers refer to the ones I see in the third patch):\n\n\n6451: second 'it' --> 'the'\n\n6466: should have a preceding #, or replace \":\" by \"::\" and insert a blank line after and change the preceding \"TESTS::\" to \"TESTS:\"\n\n6592: change \"TESTS::\" to \"TESTS:\"\n\nand also when I rebuilt the docs after \"sage -ba\"  (using 4.6.prealpha3) I got these ReST warnings:\n\n\n```\ndocstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n```\n\n\n```\ndocstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\n\n```\ndocstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n```\n\n\nModulo these, a positive review is on offer.  Hence \"needs work\", but it is only trivial work.",
+    "body": "Looking at the 2nd and 3rd patches (separately) it looks very good to me.  For the benefit of others reading this, the essence of these patches (apart from some ReSTification) is to expose some additional functionality from the pari library to Sage, so that some computations can be mande very much faster (a *lot* faster!).\n\nI spotted a few minor issues in docstrings (numbers refer to the ones I see in the third patch):\n\n\n6451: second 'it' --> 'the'\n\n6466: should have a preceding #, or replace \":\" by \"::\" and insert a blank line after and change the preceding \"TESTS::\" to \"TESTS:\"\n\n6592: change \"TESTS::\" to \"TESTS:\"\n\nand also when I rebuilt the docs after \"sage -ba\"  (using 4.6.prealpha3) I got these ReST warnings:\n\n```\ndocstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n```\n\n```\ndocstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n```\n\n```\ndocstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.\n```\n\nModulo these, a positive review is on offer.  Hence \"needs work\", but it is only trivial work.",
     "created_at": "2010-08-30T16:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -670,21 +665,17 @@ I spotted a few minor issues in docstrings (numbers refer to the ones I see in t
 
 and also when I rebuilt the docs after "sage -ba"  (using 4.6.prealpha3) I got these ReST warnings:
 
-
 ```
 docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.
 ```
-
 
 ```
 docstring of sage.libs.pari.gen.gen.nfbasis:8: (WARNING/2) Definition list ends without a blank line; unexpected unindent.
 ```
 
-
 ```
 docstring of sage.libs.pari.gen.gen.nfinit:19: (WARNING/2) Literal block expected; none found.
 ```
-
 
 Modulo these, a positive review is on offer.  Hence "needs work", but it is only trivial work.
 
@@ -771,7 +762,7 @@ All 3 patches combined (apply only this patch)
 archive/issue_comments_089416.json:
 ```json
 {
-    "body": "I did all the changes requested by the reviewer.\n\nReplying to [comment:22 cremona]:\n> {{{\n> docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> }}}\nThis belongs to #9636 and is fixed there.  The other warnings are fixed here.",
+    "body": "I did all the changes requested by the reviewer.\n\nReplying to [comment:22 cremona]:\n> {{{\n> docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.\n> }}}\n\nThis belongs to #9636 and is fixed there.  The other warnings are fixed here.",
     "created_at": "2010-09-05T18:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -786,6 +777,7 @@ Replying to [comment:22 cremona]:
 > {{{
 > docstring of sage.libs.pari.gen:136: (WARNING/2) Literal block expected; none found.
 > }}}
+
 This belongs to #9636 and is fixed there.  The other warnings are fixed here.
 
 
@@ -795,7 +787,7 @@ This belongs to #9636 and is fixed there.  The other warnings are fixed here.
 archive/issue_comments_089417.json:
 ```json
 {
-    "body": "Hi,\n\nI tried to apply my patch to 4.5.2.rc0 and it works fine:\n\n\n```\nadding trac_9400.patch to series file\napplying trac_9400.patch\nnow at: trac_9400.patch\n```\n\n\nI tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:\n\n```\nadding 9400_combined.patch to series file\napplying 9400_combined.patch\npatching file sage/libs/pari/gen.pyx\nHunk #1 succeeded at 6408 with fuzz 2 (offset -32 lines).\nHunk #4 FAILED at 6964\nHunk #5 FAILED at 6991\n2 out of 7 hunks FAILED -- saving rejects to file sage/libs/pari/gen.pyx.rej\npatching file sage/rings/number_field/number_field.py\nHunk #13 FAILED at 2870\nHunk #16 FAILED at 3727\n2 out of 25 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\npatching file sage/rings/number_field/number_field_ideal_rel.py\nHunk #2 FAILED at 592\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field_ideal_rel.py.rej\npatching file sage/rings/polynomial/polynomial_quotient_ring.py\nHunk #1 FAILED at 688\nHunk #2 FAILED at 1068\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_quotient_ring.py.rej\npatching file sage/rings/residue_field.pyx\nHunk #17 succeeded at 427 with fuzz 2 (offset 0 lines).\nHunk #18 succeeded at 444 with fuzz 2 (offset 0 lines).\nHunk #19 FAILED at 463\nHunk #26 succeeded at 572 with fuzz 1 (offset -1 lines).\nHunk #27 FAILED at 589\n2 out of 48 hunks FAILED -- saving rejects to file sage/rings/residue_field.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9400_combined.patch\n```\n",
+    "body": "Hi,\n\nI tried to apply my patch to 4.5.2.rc0 and it works fine:\n\n```\nadding trac_9400.patch to series file\napplying trac_9400.patch\nnow at: trac_9400.patch\n```\n\nI tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:\n\n```\nadding 9400_combined.patch to series file\napplying 9400_combined.patch\npatching file sage/libs/pari/gen.pyx\nHunk #1 succeeded at 6408 with fuzz 2 (offset -32 lines).\nHunk #4 FAILED at 6964\nHunk #5 FAILED at 6991\n2 out of 7 hunks FAILED -- saving rejects to file sage/libs/pari/gen.pyx.rej\npatching file sage/rings/number_field/number_field.py\nHunk #13 FAILED at 2870\nHunk #16 FAILED at 3727\n2 out of 25 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\npatching file sage/rings/number_field/number_field_ideal_rel.py\nHunk #2 FAILED at 592\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field_ideal_rel.py.rej\npatching file sage/rings/polynomial/polynomial_quotient_ring.py\nHunk #1 FAILED at 688\nHunk #2 FAILED at 1068\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_quotient_ring.py.rej\npatching file sage/rings/residue_field.pyx\nHunk #17 succeeded at 427 with fuzz 2 (offset 0 lines).\nHunk #18 succeeded at 444 with fuzz 2 (offset 0 lines).\nHunk #19 FAILED at 463\nHunk #26 succeeded at 572 with fuzz 1 (offset -1 lines).\nHunk #27 FAILED at 589\n2 out of 48 hunks FAILED -- saving rejects to file sage/rings/residue_field.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9400_combined.patch\n```",
     "created_at": "2010-09-07T16:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -808,13 +800,11 @@ Hi,
 
 I tried to apply my patch to 4.5.2.rc0 and it works fine:
 
-
 ```
 adding trac_9400.patch to series file
 applying trac_9400.patch
 now at: trac_9400.patch
 ```
-
 
 I tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:
 
@@ -848,7 +838,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh 9400_combined.patch
 ```
-
 
 
 
@@ -893,7 +882,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089420.json:
 ```json
 {
-    "body": "Replying to [comment:28 was]:\n> I tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:\n\nIt is meant to be applied after #9343, then it works fine.",
+    "body": "Replying to [comment:28 was]:\n> I tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:\n\n\nIt is meant to be applied after #9343, then it works fine.",
     "created_at": "2010-09-07T16:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -904,6 +893,7 @@ archive/issue_comments_089420.json:
 
 Replying to [comment:28 was]:
 > I tried to apply your patch (9400_combined.patch) and there are a massive number of rejects:
+
 
 It is meant to be applied after #9343, then it works fine.
 
@@ -932,7 +922,7 @@ John, do Jeroen's most recent changes look good to you?
 archive/issue_comments_089422.json:
 ```json
 {
-    "body": "Replying to [comment:30 mpatel]:\n> John, do Jeroen's most recent changes look good to you?\n\nSorry for delay -- Jeroen has nudged me on this and I'll look at it as soon as I can, but I'm at a conference this week...",
+    "body": "Replying to [comment:30 mpatel]:\n> John, do Jeroen's most recent changes look good to you?\n\n\nSorry for delay -- Jeroen has nudged me on this and I'll look at it as soon as I can, but I'm at a conference this week...",
     "created_at": "2010-09-09T14:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -944,6 +934,7 @@ archive/issue_comments_089422.json:
 Replying to [comment:30 mpatel]:
 > John, do Jeroen's most recent changes look good to you?
 
+
 Sorry for delay -- Jeroen has nudged me on this and I'll look at it as soon as I can, but I'm at a conference this week...
 
 
@@ -953,7 +944,7 @@ Sorry for delay -- Jeroen has nudged me on this and I'll look at it as soon as I
 archive/issue_comments_089423.json:
 ```json
 {
-    "body": "Replying to [comment:30 mpatel]:\n> John, do Jeroen's most recent changes look good to you?\n\nThe new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.",
+    "body": "Replying to [comment:30 mpatel]:\n> John, do Jeroen's most recent changes look good to you?\n\n\nThe new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.",
     "created_at": "2010-09-11T16:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -964,6 +955,7 @@ archive/issue_comments_089423.json:
 
 Replying to [comment:30 mpatel]:
 > John, do Jeroen's most recent changes look good to you?
+
 
 The new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.
 
@@ -992,7 +984,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089425.json:
 ```json
 {
-    "body": "Replying to [comment:32 cremona]:\n> Replying to [comment:30 mpatel]:\n> > John, do Jeroen's most recent changes look good to you?\n> \n> The new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.\n\nAll (long) tests pass -- positive review.",
+    "body": "Replying to [comment:32 cremona]:\n> Replying to [comment:30 mpatel]:\n> > John, do Jeroen's most recent changes look good to you?\n\n> \n> The new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.\n\n\nAll (long) tests pass -- positive review.",
     "created_at": "2010-09-11T16:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
@@ -1004,8 +996,10 @@ archive/issue_comments_089425.json:
 Replying to [comment:32 cremona]:
 > Replying to [comment:30 mpatel]:
 > > John, do Jeroen's most recent changes look good to you?
+
 > 
 > The new combined patch does look good.  It applies smoothly to 4.6.alpha0, and the docs (re)build with no warnings.  I am currently doing a full test just to make sure.  Will report back shortly.
+
 
 All (long) tests pass -- positive review.
 

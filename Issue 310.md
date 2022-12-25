@@ -3,7 +3,7 @@
 archive/issues_000310.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: mercurial\n\nAt least the latest version of mercurial from Debian testing (version 0.9.3-2), and possibly earlier versions as well, have a line in /etc/mercurial/hgrc.d/hgext.rc that tries to load the extension hgext/churn.  Since SAGE mercurial does not include this extension, every mercurial operation gives the following warning:\n\n```\n*** failed to import extension hgext/churn: No module named hgext/churn\n```\n\n(However, mercurial seems to work fine even with the warning.)\n\nPerhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.\n\nOr, of course, Debian users can remove the line from hgext.rc, or just ignore the warning message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/310\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: mercurial\n\nAt least the latest version of mercurial from Debian testing (version 0.9.3-2), and possibly earlier versions as well, have a line in /etc/mercurial/hgrc.d/hgext.rc that tries to load the extension hgext/churn.  Since SAGE mercurial does not include this extension, every mercurial operation gives the following warning:\n\n```\n*** failed to import extension hgext/churn: No module named hgext/churn\n```\n(However, mercurial seems to work fine even with the warning.)\n\nPerhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.\n\nOr, of course, Debian users can remove the line from hgext.rc, or just ignore the warning message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/310\n\n",
     "created_at": "2007-03-06T06:18:40Z",
     "labels": [
         "component: packages: standard",
@@ -26,7 +26,6 @@ At least the latest version of mercurial from Debian testing (version 0.9.3-2), 
 ```
 *** failed to import extension hgext/churn: No module named hgext/churn
 ```
-
 (However, mercurial seems to work fine even with the warning.)
 
 Perhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.

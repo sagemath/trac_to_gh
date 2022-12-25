@@ -108,7 +108,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089037.json:
 ```json
 {
-    "body": "I get an error installing atlas with this patch:\n\n```\nHost system\nuname -a:\nLinux cicero 2.6.32.12-115.fc12.i686.PAE #1 SMP Fri Apr 30 20:14:08 UTC 2010 i686 i686 i386 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux\nThread model: posix\ngcc version 4.4.4 20100630 (Red Hat 4.4.4-10) (GCC) \n****************************************************\nPlatform detected to be 32 bits\nsystem_atlas.py:6: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  fortran = os.popen2(os.environ['SAGE_LOCAL']+'/bin/'+'which_fortran')[1].read()\n./spkg-install-script: line 119: syntax error near unexpected token `}'\n./spkg-install-script: line 119: `}'\nFailed to build ATLAS.\n\nreal    0m0.326s\nuser    0m0.129s\nsys     0m0.122s\nsage: An error occurred while installing atlas-3.8.3.p13\n```\n\n\nLooking at the patch, do I see a mismatched single quote?",
+    "body": "I get an error installing atlas with this patch:\n\n```\nHost system\nuname -a:\nLinux cicero 2.6.32.12-115.fc12.i686.PAE #1 SMP Fri Apr 30 20:14:08 UTC 2010 i686 i686 i386 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux\nThread model: posix\ngcc version 4.4.4 20100630 (Red Hat 4.4.4-10) (GCC) \n****************************************************\nPlatform detected to be 32 bits\nsystem_atlas.py:6: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  fortran = os.popen2(os.environ['SAGE_LOCAL']+'/bin/'+'which_fortran')[1].read()\n./spkg-install-script: line 119: syntax error near unexpected token `}'\n./spkg-install-script: line 119: `}'\nFailed to build ATLAS.\n\nreal    0m0.326s\nuser    0m0.129s\nsys     0m0.122s\nsage: An error occurred while installing atlas-3.8.3.p13\n```\n\nLooking at the patch, do I see a mismatched single quote?",
     "created_at": "2010-07-09T09:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -146,7 +146,6 @@ sys     0m0.122s
 sage: An error occurred while installing atlas-3.8.3.p13
 ```
 
-
 Looking at the patch, do I see a mismatched single quote?
 
 
@@ -156,7 +155,7 @@ Looking at the patch, do I see a mismatched single quote?
 archive/issue_comments_089038.json:
 ```json
 {
-    "body": "> Looking at the patch, do I see a mismatched single quote?\n\nThat's what it looks like to me.  What if you just delete the quote?  Replace\n\n```\nif [ \"`uname -p`\" = \"i386\" -o \"'`uname -p`\" = \"i686\" -o `uname -p`\" = \"x86_64\" ]; then \n```\n\nwith\n\n```\nif [ \"`uname -p`\" = \"i386\" -o \"`uname -p`\" = \"i686\" -o `uname -p`\" = \"x86_64\" ]; then \n```\n\n(no single quote before the second ``uname...``).",
+    "body": "> Looking at the patch, do I see a mismatched single quote?\n\n\nThat's what it looks like to me.  What if you just delete the quote?  Replace\n\n```\nif [ \"`uname -p`\" = \"i386\" -o \"'`uname -p`\" = \"i686\" -o `uname -p`\" = \"x86_64\" ]; then \n```\nwith\n\n```\nif [ \"`uname -p`\" = \"i386\" -o \"`uname -p`\" = \"i686\" -o `uname -p`\" = \"x86_64\" ]; then \n```\n(no single quote before the second ``uname...``).",
     "created_at": "2010-07-10T03:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -167,18 +166,17 @@ archive/issue_comments_089038.json:
 
 > Looking at the patch, do I see a mismatched single quote?
 
+
 That's what it looks like to me.  What if you just delete the quote?  Replace
 
 ```
 if [ "`uname -p`" = "i386" -o "'`uname -p`" = "i686" -o `uname -p`" = "x86_64" ]; then 
 ```
-
 with
 
 ```
 if [ "`uname -p`" = "i386" -o "`uname -p`" = "i686" -o `uname -p`" = "x86_64" ]; then 
 ```
-
 (no single quote before the second ``uname...``).
 
 
@@ -242,7 +240,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089042.json:
 ```json
 {
-    "body": "A similar problem has been noticed in Arch Linux: https://bugs.archlinux.org/task/21592\n\n\n```\n18:44 < td123> hello\n18:45 < td123> it seems that when building sage, it doesn't respect the \n               SAGE_FAT_BINARY='yes' option because I built sage with that \n               option on a corei7 for x86 and someone kept getting illegal \n               instruction on a pentium 3\n18:45 < td123> when I looked through the logs, it seemed that atlas (among \n               possibly others) were building with processort specific \n               optimizations\n18:48 < td123> I'm the packager for archlinux :) \nhttp://repos.archlinux.org/wsvn/community/sage-mathematics/trunk/PKGBUILD is \n               the package source\n```\n",
+    "body": "A similar problem has been noticed in Arch Linux: https://bugs.archlinux.org/task/21592\n\n```\n18:44 < td123> hello\n18:45 < td123> it seems that when building sage, it doesn't respect the \n               SAGE_FAT_BINARY='yes' option because I built sage with that \n               option on a corei7 for x86 and someone kept getting illegal \n               instruction on a pentium 3\n18:45 < td123> when I looked through the logs, it seemed that atlas (among \n               possibly others) were building with processort specific \n               optimizations\n18:48 < td123> I'm the packager for archlinux :) \nhttp://repos.archlinux.org/wsvn/community/sage-mathematics/trunk/PKGBUILD is \n               the package source\n```",
     "created_at": "2010-11-09T03:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -252,7 +250,6 @@ archive/issue_comments_089042.json:
 ```
 
 A similar problem has been noticed in Arch Linux: https://bugs.archlinux.org/task/21592
-
 
 ```
 18:44 < td123> hello
@@ -267,7 +264,6 @@ A similar problem has been noticed in Arch Linux: https://bugs.archlinux.org/tas
 http://repos.archlinux.org/wsvn/community/sage-mathematics/trunk/PKGBUILD is 
                the package source
 ```
-
 
 
 
@@ -376,7 +372,7 @@ Instead of hacking around the current atlas build script, I think it would be a 
 archive/issue_comments_089048.json:
 ```json
 {
-    "body": "Nearly every linux machine I've tried, with a few exceptions where `uname -m` and `uname -p` give the same output.\n\nExample (a 64 bit Gentoo machine):\n\n\n```\nmira: ~ > uname -m\nx86_64\nmira: ~ > uname -p\nIntel(R) Xeon(R) CPU X3220 @ 2.40GHz\n```\n",
+    "body": "Nearly every linux machine I've tried, with a few exceptions where `uname -m` and `uname -p` give the same output.\n\nExample (a 64 bit Gentoo machine):\n\n```\nmira: ~ > uname -m\nx86_64\nmira: ~ > uname -p\nIntel(R) Xeon(R) CPU X3220 @ 2.40GHz\n```",
     "created_at": "2011-01-09T17:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -389,14 +385,12 @@ Nearly every linux machine I've tried, with a few exceptions where `uname -m` an
 
 Example (a 64 bit Gentoo machine):
 
-
 ```
 mira: ~ > uname -m
 x86_64
 mira: ~ > uname -p
 Intel(R) Xeon(R) CPU X3220 @ 2.40GHz
 ```
-
 
 
 
@@ -423,7 +417,7 @@ updated version of previous patches
 archive/issue_comments_089050.json:
 ```json
 {
-    "body": "Attachment [9382.patch](tarball://root/attachments/some-uuid/ticket9382/9382.patch) by @dandrake created at 2011-01-11 02:16:57\n\nReplying to [comment:6 mariah]:\n> Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)\n\nThat patch has another tiny error: it has \"`uname-p`\" (no space between \"uname\" and \"-p\"). I just uploaded a patch to this ticket in which I fixed that problem. However, there are other problems: on Ubuntu, it seems that `uname -p` returns \"unknown\" and `uname -m` returns the architecture name that we want. I've tried this on several 32-bit and 64-bit (i.e., i686 and x86_64) computers, on Ubuntu 8.04, 10.04, and 10.10 and they all behave the same. So we will need to use \"-m\" to correctly detect this on Ubuntu.",
+    "body": "Attachment [9382.patch](tarball://root/attachments/some-uuid/ticket9382/9382.patch) by @dandrake created at 2011-01-11 02:16:57\n\nReplying to [comment:6 mariah]:\n> Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)\n\n\nThat patch has another tiny error: it has \"`uname-p`\" (no space between \"uname\" and \"-p\"). I just uploaded a patch to this ticket in which I fixed that problem. However, there are other problems: on Ubuntu, it seems that `uname -p` returns \"unknown\" and `uname -m` returns the architecture name that we want. I've tried this on several 32-bit and 64-bit (i.e., i686 and x86_64) computers, on Ubuntu 8.04, 10.04, and 10.10 and they all behave the same. So we will need to use \"-m\" to correctly detect this on Ubuntu.",
     "created_at": "2011-01-11T02:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -436,6 +430,7 @@ Attachment [9382.patch](tarball://root/attachments/some-uuid/ticket9382/9382.pat
 
 Replying to [comment:6 mariah]:
 > Apologies for my silly error.  Here is a revised patch [9382.patch](http://boxen.math.washington.edu/home/mariah/spkgs/9382.patch)
+
 
 That patch has another tiny error: it has "`uname-p`" (no space between "uname" and "-p"). I just uploaded a patch to this ticket in which I fixed that problem. However, there are other problems: on Ubuntu, it seems that `uname -p` returns "unknown" and `uname -m` returns the architecture name that we want. I've tried this on several 32-bit and 64-bit (i.e., i686 and x86_64) computers, on Ubuntu 8.04, 10.04, and 10.10 and they all behave the same. So we will need to use "-m" to correctly detect this on Ubuntu.
 
@@ -502,7 +497,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089054.json:
 ```json
 {
-    "body": "Replying to [comment:14 wjp]:\n> Also, #10226 (which also needs review) might supersede this patch.\n\nIt does, and I think we should work on that ticket and close this one when #10226 gets merged.",
+    "body": "Replying to [comment:14 wjp]:\n> Also, #10226 (which also needs review) might supersede this patch.\n\n\nIt does, and I think we should work on that ticket and close this one when #10226 gets merged.",
     "created_at": "2011-01-11T03:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -514,6 +509,7 @@ archive/issue_comments_089054.json:
 Replying to [comment:14 wjp]:
 > Also, #10226 (which also needs review) might supersede this patch.
 
+
 It does, and I think we should work on that ticket and close this one when #10226 gets merged.
 
 
@@ -523,7 +519,7 @@ It does, and I think we should work on that ticket and close this one when #1022
 archive/issue_comments_089055.json:
 ```json
 {
-    "body": "Replying to [comment:15 ddrake]:\n> Replying to [comment:14 wjp]:\n> > Also, #10226 (which also needs review) might supersede this patch.\n> \n> It does, and I think we should work on that ticket and close this one when #10226 gets merged.\n\nI currently don't know whether the new (*Python* install script) ATLAS spkg from #10226 supports `SAGE_FAT_BINARY` as desired, but for the record:\n\n* `uname -p` isn't portable (it may return \"`unknown`\" even on Linuces), one should use `uname -m` instead.\n\n* Rather than having (btw. incomplete)\n\n```sh\n    if [ ... -o ... -o ... -o ... ]; then ...\n```\n\n one should use\n\n```sh\n    case \"`uname -m`\" in\n      i[3456]86|i86pc)\n        ...\n        ;;\n      amd64|x86_64)\n        ...\n        ;;\n      ia64) # Itanium\n        ...\n        ;;\n      # etc.\n    esac\n```\n\n instead, which is not only more readable, but also more robust (and portable w.r.t. broken / buggy `test` commands).",
+    "body": "Replying to [comment:15 ddrake]:\n> Replying to [comment:14 wjp]:\n> > Also, #10226 (which also needs review) might supersede this patch.\n\n> \n> It does, and I think we should work on that ticket and close this one when #10226 gets merged.\n\n\nI currently don't know whether the new (*Python* install script) ATLAS spkg from #10226 supports `SAGE_FAT_BINARY` as desired, but for the record:\n\n* `uname -p` isn't portable (it may return \"`unknown`\" even on Linuces), one should use `uname -m` instead.\n\n* Rather than having (btw. incomplete)\n\n```sh\n    if [ ... -o ... -o ... -o ... ]; then ...\n```\n one should use\n\n```sh\n    case \"`uname -m`\" in\n      i[3456]86|i86pc)\n        ...\n        ;;\n      amd64|x86_64)\n        ...\n        ;;\n      ia64) # Itanium\n        ...\n        ;;\n      # etc.\n    esac\n```\n instead, which is not only more readable, but also more robust (and portable w.r.t. broken / buggy `test` commands).",
     "created_at": "2011-08-03T07:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -535,8 +531,10 @@ archive/issue_comments_089055.json:
 Replying to [comment:15 ddrake]:
 > Replying to [comment:14 wjp]:
 > > Also, #10226 (which also needs review) might supersede this patch.
+
 > 
 > It does, and I think we should work on that ticket and close this one when #10226 gets merged.
+
 
 I currently don't know whether the new (*Python* install script) ATLAS spkg from #10226 supports `SAGE_FAT_BINARY` as desired, but for the record:
 
@@ -547,7 +545,6 @@ I currently don't know whether the new (*Python* install script) ATLAS spkg from
 ```sh
     if [ ... -o ... -o ... -o ... ]; then ...
 ```
-
  one should use
 
 ```sh
@@ -564,7 +561,6 @@ I currently don't know whether the new (*Python* install script) ATLAS spkg from
       # etc.
     esac
 ```
-
  instead, which is not only more readable, but also more robust (and portable w.r.t. broken / buggy `test` commands).
 
 
@@ -574,7 +570,7 @@ I currently don't know whether the new (*Python* install script) ATLAS spkg from
 archive/issue_comments_089056.json:
 ```json
 {
-    "body": "For the record, the updated ATLAS spkg from #10226 uses the `$UNAME` environment variable (which Sage sets) if available, and python's portable `platform.system()` otherwise:\n\n\n```python\ntry:\n    conf['system'] = os.environ['UNAME']\nexcept KeyError:\n    conf['system'] = platform.system()\n```\n\nAlso there is some support for `SAGE_FAT_BINARY`:\n\n```python\n    if os.environ.get('SAGE_FAT_BINARY', 'no') == 'yes' and conf['Intel?']:\n        print 'Sage \"fat\" binary mode set: Building SSE2 only Hammer binary'\n        print 'NOTE: This can result in a Sage that is significantly slower at certain numerical'\n        print 'linear algebra since full FAT binary support has not been implemented yet.'\n        arch = 'HAMMER'\n        isa_ext = ('SSE2', 'SSE1')\n```\n\nThough I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.",
+    "body": "For the record, the updated ATLAS spkg from #10226 uses the `$UNAME` environment variable (which Sage sets) if available, and python's portable `platform.system()` otherwise:\n\n```python\ntry:\n    conf['system'] = os.environ['UNAME']\nexcept KeyError:\n    conf['system'] = platform.system()\n```\nAlso there is some support for `SAGE_FAT_BINARY`:\n\n```python\n    if os.environ.get('SAGE_FAT_BINARY', 'no') == 'yes' and conf['Intel?']:\n        print 'Sage \"fat\" binary mode set: Building SSE2 only Hammer binary'\n        print 'NOTE: This can result in a Sage that is significantly slower at certain numerical'\n        print 'linear algebra since full FAT binary support has not been implemented yet.'\n        arch = 'HAMMER'\n        isa_ext = ('SSE2', 'SSE1')\n```\nThough I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.",
     "created_at": "2011-08-03T09:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -585,14 +581,12 @@ archive/issue_comments_089056.json:
 
 For the record, the updated ATLAS spkg from #10226 uses the `$UNAME` environment variable (which Sage sets) if available, and python's portable `platform.system()` otherwise:
 
-
 ```python
 try:
     conf['system'] = os.environ['UNAME']
 except KeyError:
     conf['system'] = platform.system()
 ```
-
 Also there is some support for `SAGE_FAT_BINARY`:
 
 ```python
@@ -603,7 +597,6 @@ Also there is some support for `SAGE_FAT_BINARY`:
         arch = 'HAMMER'
         isa_ext = ('SSE2', 'SSE1')
 ```
-
 Though I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.
 
 
@@ -613,7 +606,7 @@ Though I'm not sure if anybody ever verified that ATLAS, with these settings, in
 archive/issue_comments_089057.json:
 ```json
 {
-    "body": "Oops we are talking about `uname -m`. For this, I'm using `platform.machine()`:\n\n```python\nconf['Intel?'] = (platform.machine() in ('i386', 'i486', 'i586', 'i686', 'x86_64', \n                                         'AMD64', 'i86pc'))\nconf['IA64?']   = (platform.processor() == 'ia64')\nconf['PPC?']   = (platform.processor() == 'powerpc')\nconf['SPARC?'] = (platform.processor() == 'sparc')\n```\n",
+    "body": "Oops we are talking about `uname -m`. For this, I'm using `platform.machine()`:\n\n```python\nconf['Intel?'] = (platform.machine() in ('i386', 'i486', 'i586', 'i686', 'x86_64', \n                                         'AMD64', 'i86pc'))\nconf['IA64?']   = (platform.processor() == 'ia64')\nconf['PPC?']   = (platform.processor() == 'powerpc')\nconf['SPARC?'] = (platform.processor() == 'sparc')\n```",
     "created_at": "2011-08-03T09:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -634,13 +627,12 @@ conf['SPARC?'] = (platform.processor() == 'sparc')
 
 
 
-
 ---
 
 archive/issue_comments_089058.json:
 ```json
 {
-    "body": "Replying to [comment:17 vbraun]:\n> Though I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.\n\nRegarding that a) the notion of \"fat\" binaries is misleading (because \"fat\" originally refers to **different** code for different [flavours of] processors in the **same** binary / executable), and b) there's neither a definition nor a consistent practice of what ISA subsets Sage uses if `SAGE_FAT_BINARY=yes`, I think we can then close this ticket.\n\nIf someone complains, we can always change the behaviour of the affected spkg(s); with the exception of AFAIK very rare `SIGILL` reports for binary distributions Mariah seems to be the only one who actually regularly tests this feature.\n\nWe could of course over time collect what different spkgs do, on a wiki page, though.\n\n(For most packages and binary distributions adding `-march=...` or `-mcpu=...` to `CFLAGS` -- or configuring GCC to default to these -- should be sufficient anyway; building binary Sage distributions on less advanced processors is another way.)",
+    "body": "Replying to [comment:17 vbraun]:\n> Though I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.\n\n\nRegarding that a) the notion of \"fat\" binaries is misleading (because \"fat\" originally refers to **different** code for different [flavours of] processors in the **same** binary / executable), and b) there's neither a definition nor a consistent practice of what ISA subsets Sage uses if `SAGE_FAT_BINARY=yes`, I think we can then close this ticket.\n\nIf someone complains, we can always change the behaviour of the affected spkg(s); with the exception of AFAIK very rare `SIGILL` reports for binary distributions Mariah seems to be the only one who actually regularly tests this feature.\n\nWe could of course over time collect what different spkgs do, on a wiki page, though.\n\n(For most packages and binary distributions adding `-march=...` or `-mcpu=...` to `CFLAGS` -- or configuring GCC to default to these -- should be sufficient anyway; building binary Sage distributions on less advanced processors is another way.)",
     "created_at": "2011-08-03T10:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -651,6 +643,7 @@ archive/issue_comments_089058.json:
 
 Replying to [comment:17 vbraun]:
 > Though I'm not sure if anybody ever verified that ATLAS, with these settings, indeed does not use any more advanced isa extensions.
+
 
 Regarding that a) the notion of "fat" binaries is misleading (because "fat" originally refers to **different** code for different [flavours of] processors in the **same** binary / executable), and b) there's neither a definition nor a consistent practice of what ISA subsets Sage uses if `SAGE_FAT_BINARY=yes`, I think we can then close this ticket.
 
@@ -709,7 +702,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089061.json:
 ```json
 {
-    "body": "Replying to [comment:20 vbraun]:\n> PS: `-mcpu` is a deprecated synonym for `-mtune`.\n\nNope, `-mcpu` selects the instruction set, while `-mtune` only affects timing-specific choices (selection or reordering of instructions of that subset); `-march=foo` is equivalent to `-mcpu=foo -mtune=foo`. (I don't think that's changed recently, though `configure` supports `--with-arch-NN=...` and `--with-tune-NN=...`, NN in {32, 64}.)\n\n----\n\nShould we cc Jeroen and delete the ticket from the wishlist wiki page?",
+    "body": "Replying to [comment:20 vbraun]:\n> PS: `-mcpu` is a deprecated synonym for `-mtune`.\n\n\nNope, `-mcpu` selects the instruction set, while `-mtune` only affects timing-specific choices (selection or reordering of instructions of that subset); `-march=foo` is equivalent to `-mcpu=foo -mtune=foo`. (I don't think that's changed recently, though `configure` supports `--with-arch-NN=...` and `--with-tune-NN=...`, NN in {32, 64}.)\n\n---\n\nShould we cc Jeroen and delete the ticket from the wishlist wiki page?",
     "created_at": "2011-08-03T11:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -721,9 +714,10 @@ archive/issue_comments_089061.json:
 Replying to [comment:20 vbraun]:
 > PS: `-mcpu` is a deprecated synonym for `-mtune`.
 
+
 Nope, `-mcpu` selects the instruction set, while `-mtune` only affects timing-specific choices (selection or reordering of instructions of that subset); `-march=foo` is equivalent to `-mcpu=foo -mtune=foo`. (I don't think that's changed recently, though `configure` supports `--with-arch-NN=...` and `--with-tune-NN=...`, NN in {32, 64}.)
 
-----
+---
 
 Should we cc Jeroen and delete the ticket from the wishlist wiki page?
 
@@ -734,7 +728,7 @@ Should we cc Jeroen and delete the ticket from the wishlist wiki page?
 archive/issue_comments_089062.json:
 ```json
 {
-    "body": "Well http://gcc.gnu.org/onlinedocs/gcc-4.6.1/gcc/i386-and-x86_002d64-Options.html#i386-and-x86_002d64-Options says:\n\n```\n-mcpu=cpu-type\n    A deprecated synonym for -mtune. \n```\n\nThe instruction set is selected with `-march`. \n\nWe should remove the ticket from the wishlist. Jeroen will close this ticket when he gets around to it, no need to contact him.",
+    "body": "Well http://gcc.gnu.org/onlinedocs/gcc-4.6.1/gcc/i386-and-x86_002d64-Options.html#i386-and-x86_002d64-Options says:\n\n```\n-mcpu=cpu-type\n    A deprecated synonym for -mtune. \n```\nThe instruction set is selected with `-march`. \n\nWe should remove the ticket from the wishlist. Jeroen will close this ticket when he gets around to it, no need to contact him.",
     "created_at": "2011-08-03T11:53:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -749,7 +743,6 @@ Well http://gcc.gnu.org/onlinedocs/gcc-4.6.1/gcc/i386-and-x86_002d64-Options.htm
 -mcpu=cpu-type
     A deprecated synonym for -mtune. 
 ```
-
 The instruction set is selected with `-march`. 
 
 We should remove the ticket from the wishlist. Jeroen will close this ticket when he gets around to it, no need to contact him.
@@ -761,7 +754,7 @@ We should remove the ticket from the wishlist. Jeroen will close this ticket whe
 archive/issue_comments_089063.json:
 ```json
 {
-    "body": "Replying to [comment:22 vbraun]:\n>\n\n```\n-mcpu=cpu-type\n    A deprecated synonym for -mtune. \n```\n\nMaybe a long-lasting typo (at least since GCC 4.3.3, to be reported upstream ;-) ). Sections on other architectures describe the [IMHO] correct meaning. Or it has been inconsistent for x86 from the beginning, and therefore been deprecated.",
+    "body": "Replying to [comment:22 vbraun]:\n>\n\n{{{\n-mcpu=cpu-type\n    A deprecated synonym for -mtune. \n}}}\nMaybe a long-lasting typo (at least since GCC 4.3.3, to be reported upstream ;-) ). Sections on other architectures describe the [IMHO] correct meaning. Or it has been inconsistent for x86 from the beginning, and therefore been deprecated.",
     "created_at": "2011-08-03T12:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9382",
     "type": "issue_comment",
@@ -773,11 +766,10 @@ archive/issue_comments_089063.json:
 Replying to [comment:22 vbraun]:
 >
 
-```
+{{{
 -mcpu=cpu-type
     A deprecated synonym for -mtune. 
-```
-
+}}}
 Maybe a long-lasting typo (at least since GCC 4.3.3, to be reported upstream ;-) ). Sections on other architectures describe the [IMHO] correct meaning. Or it has been inconsistent for x86 from the beginning, and therefore been deprecated.
 
 

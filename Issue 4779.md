@@ -110,7 +110,7 @@ Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/tra
 archive/issue_comments_036152.json:
 ```json
 {
-    "body": "Looks good to me. One tiny issue probably worth fixing: The docstring says:\n\n```\nCreate a random prime finite field with cardinality at most 10^20. \n```\n\nBut you create\n\n```\nGF(ZZ.random_element(x=2, y=10**20).next_prime())\n```\n\nSo it is likely, but extremely unlikely that this will happen:\n\n```\nsage: ZZ.random_element(x=10**20-1, y=10**20).next_prime()\n100000000000000000039\n```\n\nThere is an analog issue further down in another docstring IIRC.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "body": "Looks good to me. One tiny issue probably worth fixing: The docstring says:\n\n```\nCreate a random prime finite field with cardinality at most 10^20. \n```\nBut you create\n\n```\nGF(ZZ.random_element(x=2, y=10**20).next_prime())\n```\nSo it is likely, but extremely unlikely that this will happen:\n\n```\nsage: ZZ.random_element(x=10**20-1, y=10**20).next_prime()\n100000000000000000039\n```\nThere is an analog issue further down in another docstring IIRC.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-12-31T03:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
@@ -124,20 +124,17 @@ Looks good to me. One tiny issue probably worth fixing: The docstring says:
 ```
 Create a random prime finite field with cardinality at most 10^20. 
 ```
-
 But you create
 
 ```
 GF(ZZ.random_element(x=2, y=10**20).next_prime())
 ```
-
 So it is likely, but extremely unlikely that this will happen:
 
 ```
 sage: ZZ.random_element(x=10**20-1, y=10**20).next_prime()
 100000000000000000039
 ```
-
 There is an analog issue further down in another docstring IIRC.
 
 Thoughts?

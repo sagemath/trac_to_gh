@@ -149,7 +149,7 @@ I based my changes on the jmol spkg that was sitting in my 3.3alpha3 tree, so I'
 archive/issue_comments_040392.json:
 ```json
 {
-    "body": "Replying to [comment:4 jason]:\n> I based my changes on the jmol spkg that was sitting in my 3.3alpha3 tree, so I'm surprised it wasn't the latest.  Anyways, thanks for noticing this and taking care of it!\n\nWell, it was well worth the update of jmol, I was just not happy at that point that I had to resolve what had happened. Note that the faulty .hgignore that lead to many files being ignored by hg was my fault, but I still do not understand how that happened since I assumed that there was just one directory to be ignore. Anyway, this spkg is much cleaner, conforms with the standard packaging rules, i.e. bits in src. Note that I also blame the reviewed for not catching it, too, since I expect reviewers of spkgs to verify in the repo that the history is not partially truncated. But I do it with *every* spkg anyway :)\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 jason]:\n> I based my changes on the jmol spkg that was sitting in my 3.3alpha3 tree, so I'm surprised it wasn't the latest.  Anyways, thanks for noticing this and taking care of it!\n\n\nWell, it was well worth the update of jmol, I was just not happy at that point that I had to resolve what had happened. Note that the faulty .hgignore that lead to many files being ignored by hg was my fault, but I still do not understand how that happened since I assumed that there was just one directory to be ignore. Anyway, this spkg is much cleaner, conforms with the standard packaging rules, i.e. bits in src. Note that I also blame the reviewed for not catching it, too, since I expect reviewers of spkgs to verify in the repo that the history is not partially truncated. But I do it with *every* spkg anyway :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T06:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5271",
     "type": "issue_comment",
@@ -160,6 +160,7 @@ archive/issue_comments_040392.json:
 
 Replying to [comment:4 jason]:
 > I based my changes on the jmol spkg that was sitting in my 3.3alpha3 tree, so I'm surprised it wasn't the latest.  Anyways, thanks for noticing this and taking care of it!
+
 
 Well, it was well worth the update of jmol, I was just not happy at that point that I had to resolve what had happened. Note that the faulty .hgignore that lead to many files being ignored by hg was my fault, but I still do not understand how that happened since I assumed that there was just one directory to be ignore. Anyway, this spkg is much cleaner, conforms with the standard packaging rules, i.e. bits in src. Note that I also blame the reviewed for not catching it, too, since I expect reviewers of spkgs to verify in the repo that the history is not partially truncated. But I do it with *every* spkg anyway :)
 

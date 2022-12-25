@@ -3,7 +3,7 @@
 archive/issues_007683.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nSee\n\nhttp://sagemath.org/doc/reference/sage/rings/integer.html#sage.rings.integer.Integer.jacobi\n\nNotice that the input parameter b is simply totally omitted from the function signature. In sharp contrast, if you type\n\n```\nsage: a = 5\nsage: a.jacobi(<tab>\n```\n\nin the notebook, then you'll see the correct sphinx-rendered documentation *with* the other input argument.  This is very bad and confusing for some users who trust reference manuals, especially because evidently the use of INPUT/OUTPUT blocks to describe parameters of functions is not being used nearly as much as it should be (there will be another ticket about that).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7683\n\n",
+    "body": "Assignee: mvngu\n\nSee\n\nhttp://sagemath.org/doc/reference/sage/rings/integer.html#sage.rings.integer.Integer.jacobi\n\nNotice that the input parameter b is simply totally omitted from the function signature. In sharp contrast, if you type\n\n```\nsage: a = 5\nsage: a.jacobi(<tab>\n```\nin the notebook, then you'll see the correct sphinx-rendered documentation *with* the other input argument.  This is very bad and confusing for some users who trust reference manuals, especially because evidently the use of INPUT/OUTPUT blocks to describe parameters of functions is not being used nearly as much as it should be (there will be another ticket about that).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7683\n\n",
     "created_at": "2009-12-15T02:01:17Z",
     "labels": [
         "component: documentation",
@@ -29,7 +29,6 @@ Notice that the input parameter b is simply totally omitted from the function si
 sage: a = 5
 sage: a.jacobi(<tab>
 ```
-
 in the notebook, then you'll see the correct sphinx-rendered documentation *with* the other input argument.  This is very bad and confusing for some users who trust reference manuals, especially because evidently the use of INPUT/OUTPUT blocks to describe parameters of functions is not being used nearly as much as it should be (there will be another ticket about that).
 
 
@@ -191,7 +190,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065828.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)\n\n(Well, twice, not four times, but still.)",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)\n\n\n(Well, twice, not four times, but still.)",
     "created_at": "2009-12-15T17:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
@@ -202,6 +201,7 @@ archive/issue_comments_065828.json:
 
 Replying to [comment:5 jhpalmieri]:
 > It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)
+
 
 (Well, twice, not four times, but still.)
 

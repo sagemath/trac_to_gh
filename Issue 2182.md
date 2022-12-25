@@ -3,7 +3,7 @@
 archive/issues_002182.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nThe issue was reported in https://groups.google.com/group/sage-support/t/8f03a6f2f3d0aea8 by Matthias Hillenbrand:\n\n```\nHello,\n\nSince I have upgraded to SAGE 2.10.x I get the following error message\nwhen starting the notebook:\n\ngnome-www-browser: symbol lookup error: /usr/lib/libxml2.so.2:\nundefined symbol: gzopen64\n\nI get this error message on two different computers (one running\nUbuntu 7.10 the other Debian Testing, which I installed today) and\nwith any browser (e.g. Firefox as standard browser). If I open a\nsession of the browser before starting SAGE, the error won't occur.\n```\n\n\nJason Grout figured out that `SAGE_ORIG_LD_LIBRARY_PATH` is being overwritten improperly when the second Sage session starts (due to the launch of the notebook). He has proposed a fix and is working on a patch which will hopefully make it into 2.10.2.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2182\n\n",
+    "body": "Assignee: mabshoff\n\nThe issue was reported in https://groups.google.com/group/sage-support/t/8f03a6f2f3d0aea8 by Matthias Hillenbrand:\n\n```\nHello,\n\nSince I have upgraded to SAGE 2.10.x I get the following error message\nwhen starting the notebook:\n\ngnome-www-browser: symbol lookup error: /usr/lib/libxml2.so.2:\nundefined symbol: gzopen64\n\nI get this error message on two different computers (one running\nUbuntu 7.10 the other Debian Testing, which I installed today) and\nwith any browser (e.g. Firefox as standard browser). If I open a\nsession of the browser before starting SAGE, the error won't occur.\n```\n\nJason Grout figured out that `SAGE_ORIG_LD_LIBRARY_PATH` is being overwritten improperly when the second Sage session starts (due to the launch of the notebook). He has proposed a fix and is working on a patch which will hopefully make it into 2.10.2.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2182\n\n",
     "created_at": "2008-02-16T22:13:06Z",
     "labels": [
         "component: distribution",
@@ -34,7 +34,6 @@ Ubuntu 7.10 the other Debian Testing, which I installed today) and
 with any browser (e.g. Firefox as standard browser). If I open a
 session of the browser before starting SAGE, the error won't occur.
 ```
-
 
 Jason Grout figured out that `SAGE_ORIG_LD_LIBRARY_PATH` is being overwritten improperly when the second Sage session starts (due to the launch of the notebook). He has proposed a fix and is working on a patch which will hopefully make it into 2.10.2.
 

@@ -3,7 +3,7 @@
 archive/issues_006784.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nOn Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/doc/en/constructions/interface_issues.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 478:\n    sage: maxima.eval(\"f:bessel_y (v, w)\")\nExpected:\n    '?%bessel_y(v,w)'\nGot:\n    'bessel_y(v,w)'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 480:\n    sage: maxima.eval(\"diff(f,w)\")\nExpected:\n    '(?%bessel_y(v-1,w)-?%bessel_y(v+1,w))/2'\nGot:\n    '(bessel_y(v-1,w)-bessel_y(v+1,w))/2'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 482:\n    sage: maxima.eval(\"diff (jacobi_sn (u, m), u)\")\nExpected:\n    '?%jacobi_cn(u,m)*?%jacobi_dn(u,m)'\nGot:\n    'jacobi_cn(u,m)*jacobi_dn(u,m)'\n**********************************************************************\n1 items had failures:\n   3 of   9 in __main__.example_3\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_interface_issues.py\n         [19.8 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6784\n\n",
+    "body": "Assignee: @williamstein\n\nOn Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/doc/en/constructions/interface_issues.rst\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 478:\n    sage: maxima.eval(\"f:bessel_y (v, w)\")\nExpected:\n    '?%bessel_y(v,w)'\nGot:\n    'bessel_y(v,w)'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 480:\n    sage: maxima.eval(\"diff(f,w)\")\nExpected:\n    '(?%bessel_y(v-1,w)-?%bessel_y(v+1,w))/2'\nGot:\n    '(bessel_y(v-1,w)-bessel_y(v+1,w))/2'\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/interface_issues.rst\", line 482:\n    sage: maxima.eval(\"diff (jacobi_sn (u, m), u)\")\nExpected:\n    '?%jacobi_cn(u,m)*?%jacobi_dn(u,m)'\nGot:\n    'jacobi_cn(u,m)*jacobi_dn(u,m)'\n**********************************************************************\n1 items had failures:\n   3 of   9 in __main__.example_3\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_interface_issues.py\n         [19.8 s]\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6784\n\n",
     "created_at": "2009-08-20T21:43:53Z",
     "labels": [
         "component: interfaces",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 On Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1
 
-
 ```
 
 ----------------------------------------------------------------------
@@ -29,7 +28,6 @@ Thu Aug 20 20:02:37 BST 2009
 dsage-trial tmp directory doesn't exist - creating ...
 This script will run the unit tests for DSage
 ```
-
 | Sage Version 4.1.1, Release Date: 2009-08-14                       |
 | Type notebook() for the GUI, and license() for information.        |
 <SNIP>
@@ -65,7 +63,6 @@ For whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.d
          [19.8 s]
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6784
 

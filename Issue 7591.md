@@ -3,7 +3,7 @@
 archive/issues_007591.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis is really bad\n\n\n```\nsage: B.<a,b,c> = BooleanPolynomialRing(order='lex')\nsage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')\nsage: P(B('a')) # good\na\nsage: B(P('c')) # urgh!\na\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7591\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis is really bad\n\n```\nsage: B.<a,b,c> = BooleanPolynomialRing(order='lex')\nsage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')\nsage: P(B('a')) # good\na\nsage: B(P('c')) # urgh!\na\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7591\n\n",
     "created_at": "2009-12-03T12:53:02Z",
     "labels": [
         "component: commutative algebra",
@@ -22,7 +22,6 @@ CC:  @burcin
 
 This is really bad
 
-
 ```
 sage: B.<a,b,c> = BooleanPolynomialRing(order='lex')
 sage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')
@@ -31,7 +30,6 @@ a
 sage: B(P('c')) # urgh!
 a
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7591
 

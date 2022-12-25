@@ -131,7 +131,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069588.json:
 ```json
 {
-    "body": "Replying to [comment:2 jbandlow]:\n> Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n> \n> So I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)\n\nYes, I thought this would be an issue.  I actually made the patch a while ago but thought that precisely your objection would be raised.  Anyways, I decided to send it in and see what would happen.  It sounds like you have a good solution.\n\nAbout a new name:  is \"Major_Index\" a bad idea?  I don't know about sage's naming conventions.",
+    "body": "Replying to [comment:2 jbandlow]:\n> Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n> \n> So I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)\n\n\nYes, I thought this would be an issue.  I actually made the patch a while ago but thought that precisely your objection would be raised.  Anyways, I decided to send it in and see what would happen.  It sounds like you have a good solution.\n\nAbout a new name:  is \"Major_Index\" a bad idea?  I don't know about sage's naming conventions.",
     "created_at": "2010-11-16T14:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
@@ -144,6 +144,7 @@ Replying to [comment:2 jbandlow]:
 > Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.
 > 
 > So I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)
+
 
 Yes, I thought this would be an issue.  I actually made the patch a while ago but thought that precisely your objection would be raised.  Anyways, I decided to send it in and see what would happen.  It sounds like you have a good solution.
 
@@ -336,7 +337,7 @@ See you both this evening, dg
 archive/issue_comments_069596.json:
 ```json
 {
-    "body": "Hi Darij,\n\n> In other news, I've added documentation to `insert_word`, slightly improved that of `catabolism` and `lambda_catabolism`, and fixed a couple more typos. Since I don't know anything about catabolism, can you tell me if it's OK that `catabolism_sequence(Tableau([]))` does not terminate? I'm hesitating to call it a bug as long as I don't know if this should be defined at all for an empty tableau.\n\nYes, probably you want that catabolism_sequence on the empty tableau is the empty tableau. The code only checks if the tableau is of height 1, but catabolism on the empty tableau is itself and hence it goes into an infinite loop.\n\nBest,\n\nAnne",
+    "body": "Hi Darij,\n\n> In other news, I've added documentation to `insert_word`, slightly improved that of `catabolism` and `lambda_catabolism`, and fixed a couple more typos. Since I don't know anything about catabolism, can you tell me if it's OK that `catabolism_sequence(Tableau([]))` does not terminate? I'm hesitating to call it a bug as long as I don't know if this should be defined at all for an empty tableau.\n\n\nYes, probably you want that catabolism_sequence on the empty tableau is the empty tableau. The code only checks if the tableau is of height 1, but catabolism on the empty tableau is itself and hence it goes into an infinite loop.\n\nBest,\n\nAnne",
     "created_at": "2013-06-16T12:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
@@ -348,6 +349,7 @@ archive/issue_comments_069596.json:
 Hi Darij,
 
 > In other news, I've added documentation to `insert_word`, slightly improved that of `catabolism` and `lambda_catabolism`, and fixed a couple more typos. Since I don't know anything about catabolism, can you tell me if it's OK that `catabolism_sequence(Tableau([]))` does not terminate? I'm hesitating to call it a bug as long as I don't know if this should be defined at all for an empty tableau.
+
 
 Yes, probably you want that catabolism_sequence on the empty tableau is the empty tableau. The code only checks if the tableau is of height 1, but catabolism on the empty tableau is itself and hence it goes into an infinite loop.
 

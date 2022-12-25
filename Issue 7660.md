@@ -3,7 +3,7 @@
 archive/issues_007660.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f\n\n\nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:\n\n\n```\nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> sage: f = x + 3 < y - 2\n> sage: f*(-1)\n> -x - 3 < -y + 2\n```\n\n\nIt seems MMA doesn't apply any automatic simplification in this case:\n\n\n```\nOn Thu, 10 Dec 2009 09:54:36 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Mathematica does something weird and formal:\n> \n> In[1]:= f := x+3 < y-2;\n> In[3]:= f*(-1)\n> Out[3]= -(3 + x < -2 + y)\n```\n\n\nMaple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:\n\n\n```\nOn Thu, 10 Dec 2009 14:15:53 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Here is what Maple does:\n> \n> flat:release_notes wstein$ maple\n>     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX)\n> ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple\n> Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of\n>  <____ ____>  Waterloo Maple Inc.\n>       |       Type ? for help.\n> > f := x < y;  \n>                                   f := x < y\n> \n> > f*(-3);  \n>                                   -3 y < -3 x\n> \n> > f*z;  \n>                                   *(x < y, z)\n> \n> > f*a;  \n>                                   *(x < y, a)\n```\n\n\n\nWe should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.\n\nNote that GiNaC leaves everything formal, like MMA, by default:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.3)\n  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> f= x < y;\nx<y\n> f*-1;\n-(x<y)\n> f*-5;\n-5*(x<y)\n> f*-z;\n-z*(x<y)\n> f*z;\nz*(x<y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f\n\n\nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:\n\n```\nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> sage: f = x + 3 < y - 2\n> sage: f*(-1)\n> -x - 3 < -y + 2\n```\n\nIt seems MMA doesn't apply any automatic simplification in this case:\n\n```\nOn Thu, 10 Dec 2009 09:54:36 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Mathematica does something weird and formal:\n> \n> In[1]:= f := x+3 < y-2;\n> In[3]:= f*(-1)\n> Out[3]= -(3 + x < -2 + y)\n```\n\nMaple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:\n\n```\nOn Thu, 10 Dec 2009 14:15:53 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Here is what Maple does:\n> \n> flat:release_notes wstein$ maple\n>     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX)\n> ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple\n> Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of\n>  <____ ____>  Waterloo Maple Inc.\n>       |       Type ? for help.\n> > f := x < y;  \n>                                   f := x < y\n> \n> > f*(-3);  \n>                                   -3 y < -3 x\n> \n> > f*z;  \n>                                   *(x < y, z)\n> \n> > f*a;  \n>                                   *(x < y, a)\n```\n\n\nWe should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.\n\nNote that GiNaC leaves everything formal, like MMA, by default:\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.3)\n  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> f= x < y;\nx<y\n> f*-1;\n-(x<y)\n> f*-5;\n-5*(x<y)\n> f*-z;\n-z*(x<y)\n> f*z;\nz*(x<y)\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
     "created_at": "2009-12-11T13:55:02Z",
     "labels": [
         "component: symbolics",
@@ -27,7 +27,6 @@ http://groups.google.com/group/sage-devel/t/951d510c814f894f
 
 Arithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:
 
-
 ```
 On Thu, 10 Dec 2009 00:37:10 -0800 (PST)
 "marik@mendelu.cz" <marik@mendelu.cz> wrote:
@@ -37,9 +36,7 @@ On Thu, 10 Dec 2009 00:37:10 -0800 (PST)
 > -x - 3 < -y + 2
 ```
 
-
 It seems MMA doesn't apply any automatic simplification in this case:
-
 
 ```
 On Thu, 10 Dec 2009 09:54:36 -0800
@@ -52,9 +49,7 @@ William Stein <wstein@gmail.com> wrote:
 > Out[3]= -(3 + x < -2 + y)
 ```
 
-
 Maple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:
-
 
 ```
 On Thu, 10 Dec 2009 14:15:53 -0800
@@ -82,11 +77,9 @@ William Stein <wstein@gmail.com> wrote:
 ```
 
 
-
 We should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.
 
 Note that GiNaC leaves everything formal, like MMA, by default:
-
 
 ```
 ginsh - GiNaC Interactive Shell (ginac V1.5.3)
@@ -108,7 +101,6 @@ x<y
 z*(x<y)
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/7660
 
 
@@ -120,7 +112,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7660
 archive/issue_comments_065405.json:
 ```json
 {
-    "body": "\n```\nsage: -1*(x < y)\n-x < -y\n\n```\n\nthis is quite dangerous (I encountered it as a bug in a project).  Hopefully someone will try to fix this soon.  Could it be related to this  http://trac.sagemath.org/sage_trac/ticket/11309 ?",
+    "body": "```\nsage: -1*(x < y)\n-x < -y\n\n```\nthis is quite dangerous (I encountered it as a bug in a project).  Hopefully someone will try to fix this soon.  Could it be related to this  http://trac.sagemath.org/sage_trac/ticket/11309 ?",
     "created_at": "2011-06-16T23:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -129,13 +121,11 @@ archive/issue_comments_065405.json:
 }
 ```
 
-
 ```
 sage: -1*(x < y)
 -x < -y
 
 ```
-
 this is quite dangerous (I encountered it as a bug in a project).  Hopefully someone will try to fix this soon.  Could it be related to this  http://trac.sagemath.org/sage_trac/ticket/11309 ?
 
 
@@ -212,7 +202,7 @@ If the title of this ticket disagrees with that answer, I can make another ticke
 archive/issue_comments_065409.json:
 ```json
 {
-    "body": "Well, we could go to the !Ginac/Mathematica way too, instead of the Maple way.  But now that #11309 is on the way in, probably it's time to deal with this.  FWIW, Maxima seems to go that way as well.\n\n```\n(%i1) x<y;\n(%o1)                                x < y\n(%i2) a:x<y;\n(%o2)                                x < y\n(%i3) a;\n(%o3)                                x < y\n(%i4) -1*a;\n(%o4)                              - (x < y)\n(%i5) b*a;\n(%o5)                              b (x < y)\n```\n\nMaybe Burcin has a comment; I don't have that strong of feelings, though I'm partial to \n* `(x<y)+3 == x+3<y+3`\n* `0*(x<y) is False`\nbut those may just be sentimental, as you suggest.",
+    "body": "Well, we could go to the !Ginac/Mathematica way too, instead of the Maple way.  But now that #11309 is on the way in, probably it's time to deal with this.  FWIW, Maxima seems to go that way as well.\n\n```\n(%i1) x<y;\n(%o1)                                x < y\n(%i2) a:x<y;\n(%o2)                                x < y\n(%i3) a;\n(%o3)                                x < y\n(%i4) -1*a;\n(%o4)                              - (x < y)\n(%i5) b*a;\n(%o5)                              b (x < y)\n```\nMaybe Burcin has a comment; I don't have that strong of feelings, though I'm partial to \n* `(x<y)+3 == x+3<y+3`\n* `0*(x<y) is False`\nbut those may just be sentimental, as you suggest.",
     "created_at": "2012-06-02T02:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -235,7 +225,6 @@ Well, we could go to the !Ginac/Mathematica way too, instead of the Maple way.  
 (%i5) b*a;
 (%o5)                              b (x < y)
 ```
-
 Maybe Burcin has a comment; I don't have that strong of feelings, though I'm partial to 
 * `(x<y)+3 == x+3<y+3`
 * `0*(x<y) is False`
@@ -270,7 +259,7 @@ None of this makes any sense, IMHO. I think it would be best to go the Mathemati
 archive/issue_comments_065411.json:
 ```json
 {
-    "body": "For the record, Maxima has a share package which implements arithmetic on inequalities.\n\n```\n(%i1) load (ineq);\n(%o1) /home/robert/maxima/maxima-git/maxima-code/share/simplification/ineq.mac\n(%i2) e:a < b;\n(%o2)                                a < b\n(%i3) x*e;\nIs  x  positive, negative, or zero?\np;\n(%o3)                              a x < b x\n(%i4) x*e;\nIs  x  positive, negative, or zero?\nn;\n(%o4)                              a x > b x\n(%i5) x*e;\nIs  x  positive, negative, or zero?\nz;\n(%o5)                              (a < b) x\n```\n\nI gather that's similar to what Maple does.",
+    "body": "For the record, Maxima has a share package which implements arithmetic on inequalities.\n\n```\n(%i1) load (ineq);\n(%o1) /home/robert/maxima/maxima-git/maxima-code/share/simplification/ineq.mac\n(%i2) e:a < b;\n(%o2)                                a < b\n(%i3) x*e;\nIs  x  positive, negative, or zero?\np;\n(%o3)                              a x < b x\n(%i4) x*e;\nIs  x  positive, negative, or zero?\nn;\n(%o4)                              a x > b x\n(%i5) x*e;\nIs  x  positive, negative, or zero?\nz;\n(%o5)                              (a < b) x\n```\nI gather that's similar to what Maple does.",
     "created_at": "2013-01-08T02:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -299,7 +288,6 @@ Is  x  positive, negative, or zero?
 z;
 (%o5)                              (a < b) x
 ```
-
 I gather that's similar to what Maple does.
 
 
@@ -400,7 +388,7 @@ archive/issue_events_018240.json:
 archive/issue_comments_065414.json:
 ```json
 {
-    "body": "OK that patch applies cleanly with `patch -l`. It results in\n\n\n```\nsage: var('x')\nx\nsage: x>1\nx > 1\nsage: ie=_\nsage: ie*-1\n-(x > 1)\nsage: solve(_,x)\n...\nRuntimeError: ECL says: THROW: The catch MACSYMA-QUIT is undefined.\n```\n\nI refrained from starting any doctests.",
+    "body": "OK that patch applies cleanly with `patch -l`. It results in\n\n```\nsage: var('x')\nx\nsage: x>1\nx > 1\nsage: ie=_\nsage: ie*-1\n-(x > 1)\nsage: solve(_,x)\n...\nRuntimeError: ECL says: THROW: The catch MACSYMA-QUIT is undefined.\n```\nI refrained from starting any doctests.",
     "created_at": "2014-02-17T15:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -410,7 +398,6 @@ archive/issue_comments_065414.json:
 ```
 
 OK that patch applies cleanly with `patch -l`. It results in
-
 
 ```
 sage: var('x')
@@ -424,7 +411,6 @@ sage: solve(_,x)
 ...
 RuntimeError: ECL says: THROW: The catch MACSYMA-QUIT is undefined.
 ```
-
 I refrained from starting any doctests.
 
 
@@ -470,7 +456,7 @@ New commits:
 archive/issue_comments_065417.json:
 ```json
 {
-    "body": "Here are the statements sent via `maxima_eval(\"#$%s$\"%statement)`:\n\nBefore:\n\n```\nsage: solve(-(x > 1),x)\nsage0 : (x)*(-1) > -1\nsage1 : solve_rat_ineq(sage0)\n_tmp_ : sage1\nkill(sage1)\nkill(sage0)\n[[x < 1]]\n```\n\nAfter:\n\n```\nsage: solve(-(x > 1),x)\nsage12 : (x > 1)*(-1) = 0\nsage13 : x\nsage14 : solve(sage12,sage13)\nkill(sage13)\nkill(sage14)\n_tmp_ : [x>1=0]          <---------?\nkill(sage12)\n```\n\nApparently, Sage's last statement sent is the result itself (no idea why), and maxima then barfs because it can't digest its own output. In maxima:\n\n```\n(%i11) solve((x > 1)*(-1) = 0,x);\n(%o11)                            [x > 1 = 0]\n(%i12) [x>1=0];\nincorrect syntax: Found logical expression where algebraic expression expected\n[x>1=\n   ^\n```\n\nIn summary there are three problems:\n* 46 doctests fail in symbolic alone\n* maxima can't handle the formal expressions generated via this patch, and `solve()` will fail because it uses maxima solve() and not solve_rat_ineq() (probably because the expression looks like an algebraic). However:\n\n```\nsage: solve_ineq((x>1)*(-1),[x,y])\n#0: solve_rat_ineq(ineq=-(x > 1))\n...\nTypeError: ECL says: Error executing code in Maxima: solve_rat_ineq:  -(x > 1)  is not an inequality.\n```\n\nSo maxima refuses to handle the formal expression generated by this patch, and this means they cannot be solved, regardless of method called. So, in addition, `solve()` should be changed to do simplification of these expressions before handing them on. This special simplification avoids all issues raised in comment:10. It can be implemented after this ticket (#15906).\n* `calculus.py:symbolic_expression_from_maxima_string()` should catch maxima `RuntimeError`s from `ecl.c` and rethrow them with meaningful information. (#15902)\n`",
+    "body": "Here are the statements sent via `maxima_eval(\"#$%s$\"%statement)`:\n\nBefore:\n\n```\nsage: solve(-(x > 1),x)\nsage0 : (x)*(-1) > -1\nsage1 : solve_rat_ineq(sage0)\n_tmp_ : sage1\nkill(sage1)\nkill(sage0)\n[[x < 1]]\n```\nAfter:\n\n```\nsage: solve(-(x > 1),x)\nsage12 : (x > 1)*(-1) = 0\nsage13 : x\nsage14 : solve(sage12,sage13)\nkill(sage13)\nkill(sage14)\n_tmp_ : [x>1=0]          <---------?\nkill(sage12)\n```\nApparently, Sage's last statement sent is the result itself (no idea why), and maxima then barfs because it can't digest its own output. In maxima:\n\n```\n(%i11) solve((x > 1)*(-1) = 0,x);\n(%o11)                            [x > 1 = 0]\n(%i12) [x>1=0];\nincorrect syntax: Found logical expression where algebraic expression expected\n[x>1=\n   ^\n```\nIn summary there are three problems:\n* 46 doctests fail in symbolic alone\n* maxima can't handle the formal expressions generated via this patch, and `solve()` will fail because it uses maxima solve() and not solve_rat_ineq() (probably because the expression looks like an algebraic). However:\n\n```\nsage: solve_ineq((x>1)*(-1),[x,y])\n#0: solve_rat_ineq(ineq=-(x > 1))\n...\nTypeError: ECL says: Error executing code in Maxima: solve_rat_ineq:  -(x > 1)  is not an inequality.\n```\nSo maxima refuses to handle the formal expression generated by this patch, and this means they cannot be solved, regardless of method called. So, in addition, `solve()` should be changed to do simplification of these expressions before handing them on. This special simplification avoids all issues raised in comment:10. It can be implemented after this ticket (#15906).\n* `calculus.py:symbolic_expression_from_maxima_string()` should catch maxima `RuntimeError`s from `ecl.c` and rethrow them with meaningful information. (#15902)\n`",
     "created_at": "2014-03-06T16:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -492,7 +478,6 @@ kill(sage1)
 kill(sage0)
 [[x < 1]]
 ```
-
 After:
 
 ```
@@ -505,7 +490,6 @@ kill(sage14)
 _tmp_ : [x>1=0]          <---------?
 kill(sage12)
 ```
-
 Apparently, Sage's last statement sent is the result itself (no idea why), and maxima then barfs because it can't digest its own output. In maxima:
 
 ```
@@ -516,7 +500,6 @@ incorrect syntax: Found logical expression where algebraic expression expected
 [x>1=
    ^
 ```
-
 In summary there are three problems:
 * 46 doctests fail in symbolic alone
 * maxima can't handle the formal expressions generated via this patch, and `solve()` will fail because it uses maxima solve() and not solve_rat_ineq() (probably because the expression looks like an algebraic). However:
@@ -527,7 +510,6 @@ sage: solve_ineq((x>1)*(-1),[x,y])
 ...
 TypeError: ECL says: Error executing code in Maxima: solve_rat_ineq:  -(x > 1)  is not an inequality.
 ```
-
 So maxima refuses to handle the formal expression generated by this patch, and this means they cannot be solved, regardless of method called. So, in addition, `solve()` should be changed to do simplification of these expressions before handing them on. This special simplification avoids all issues raised in comment:10. It can be implemented after this ticket (#15906).
 * `calculus.py:symbolic_expression_from_maxima_string()` should catch maxima `RuntimeError`s from `ecl.c` and rethrow them with meaningful information. (#15902)
 `
@@ -850,7 +832,7 @@ A followup extension would be like Maxima's ineq package, i.e., ask before doing
 archive/issue_comments_065430.json:
 ```json
 {
-    "body": "Replying to [comment:31 rws]:\n>  * `f(a==b)` --> `f(a==b)`\nWhat does `f(a==b)` even mean? I would go for `f(a) == f(b)`.\n\n> relations:\n>  * `(a<b) */ c` same as:\n>    - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative\n>    - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive\n>    - `False` if `c=0`\n\nWhat if neither of the above conditions is true? `raise ArithmeticError` in that case?",
+    "body": "Replying to [comment:31 rws]:\n>  * `f(a==b)` --> `f(a==b)`\n \nWhat does `f(a==b)` even mean? I would go for `f(a) == f(b)`.\n\n> relations:\n> * `(a<b) */ c` same as:\n>   - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative\n>   - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive\n>   - `False` if `c=0`\n\n\nWhat if neither of the above conditions is true? `raise ArithmeticError` in that case?",
     "created_at": "2015-02-12T09:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -861,13 +843,15 @@ archive/issue_comments_065430.json:
 
 Replying to [comment:31 rws]:
 >  * `f(a==b)` --> `f(a==b)`
+ 
 What does `f(a==b)` even mean? I would go for `f(a) == f(b)`.
 
 > relations:
->  * `(a<b) */ c` same as:
->    - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative
->    - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive
->    - `False` if `c=0`
+> * `(a<b) */ c` same as:
+>   - `a*/c > b*/c` for `c` real and negative, or if `c` is assumed negative
+>   - `a*/c < b*/c` for `c` real and positive, or if `c` is assumed positive
+>   - `False` if `c=0`
+
 
 What if neither of the above conditions is true? `raise ArithmeticError` in that case?
 
@@ -878,7 +862,7 @@ What if neither of the above conditions is true? `raise ArithmeticError` in that
 archive/issue_comments_065431.json:
 ```json
 {
-    "body": "Replying to [comment:32 jdemeyer]:\n> >  * `(a<b) */ c`\n> What if neither of the above conditions is true? `raise ArithmeticError` in that case?\nNot if `c` contains variables. Is there even a way of determining this?",
+    "body": "Replying to [comment:32 jdemeyer]:\n> >  * `(a<b) */ c`\n \n> What if neither of the above conditions is true? `raise ArithmeticError` in that case?\nNot if `c` contains variables. Is there even a way of determining this?",
     "created_at": "2015-02-12T09:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -889,6 +873,7 @@ archive/issue_comments_065431.json:
 
 Replying to [comment:32 jdemeyer]:
 > >  * `(a<b) */ c`
+ 
 > What if neither of the above conditions is true? `raise ArithmeticError` in that case?
 Not if `c` contains variables. Is there even a way of determining this?
 
@@ -899,7 +884,7 @@ Not if `c` contains variables. Is there even a way of determining this?
 archive/issue_comments_065432.json:
 ```json
 {
-    "body": "Replying to [comment:33 rws]:\n> Not if `c` contains variables.\n\nWhat would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?",
+    "body": "Replying to [comment:33 rws]:\n> Not if `c` contains variables.\n\n\nWhat would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?",
     "created_at": "2015-02-12T09:26:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -911,6 +896,7 @@ archive/issue_comments_065432.json:
 Replying to [comment:33 rws]:
 > Not if `c` contains variables.
 
+
 What would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?
 
 
@@ -920,7 +906,7 @@ What would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` a
 archive/issue_comments_065433.json:
 ```json
 {
-    "body": "Replying to [comment:34 jdemeyer]:\n> What would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?\nSince this ticket will check for assumptions, if there is none we should raise an `ArithmeticError` demanding one.",
+    "body": "Replying to [comment:34 jdemeyer]:\n> What would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?\n\nSince this ticket will check for assumptions, if there is none we should raise an `ArithmeticError` demanding one.",
     "created_at": "2015-02-12T09:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -931,6 +917,7 @@ archive/issue_comments_065433.json:
 
 Replying to [comment:34 jdemeyer]:
 > What would you propose that `x * (y < z)` answers then (where `x`, `y` and `z` are variables)?
+
 Since this ticket will check for assumptions, if there is none we should raise an `ArithmeticError` demanding one.
 
 
@@ -958,7 +945,7 @@ So my statement to `raise ArithmeticError` if neither condition is true still re
 archive/issue_comments_065435.json:
 ```json
 {
-    "body": "Replying to [ticket:7660 burcin]:\n>    - if `c` contains variables (and no assumptions exist about it) raise `ArithmeticError: missing assumption: is ...>0?`\n>    - if `c` contains no variables `ArithmeticError: multiplication of inequality with irreal`\n\nI think it will be easier if these are just one case.",
+    "body": "Replying to [ticket:7660 burcin]:\n>    - if `c` contains variables (and no assumptions exist about it) raise `ArithmeticError: missing assumption: is ...>0?`\n>    - if `c` contains no variables `ArithmeticError: multiplication of inequality with irreal`\n\n\nI think it will be easier if these are just one case.",
     "created_at": "2015-02-12T09:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -970,6 +957,7 @@ archive/issue_comments_065435.json:
 Replying to [ticket:7660 burcin]:
 >    - if `c` contains variables (and no assumptions exist about it) raise `ArithmeticError: missing assumption: is ...>0?`
 >    - if `c` contains no variables `ArithmeticError: multiplication of inequality with irreal`
+
 
 I think it will be easier if these are just one case.
 
@@ -998,7 +986,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065437.json:
 ```json
 {
-    "body": "Since the `f()` stuff requires changes in function base classes, and assumptions are also an involvement, I'll leave both to followup tickets. Please review.\n----\nNew commits:",
+    "body": "Since the `f()` stuff requires changes in function base classes, and assumptions are also an involvement, I'll leave both to followup tickets. Please review.\n\n---\nNew commits:",
     "created_at": "2015-02-12T16:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -1008,7 +996,8 @@ archive/issue_comments_065437.json:
 ```
 
 Since the `f()` stuff requires changes in function base classes, and assumptions are also an involvement, I'll leave both to followup tickets. Please review.
-----
+
+---
 New commits:
 
 
@@ -1018,7 +1007,7 @@ New commits:
 archive/issue_comments_065438.json:
 ```json
 {
-    "body": "Why convert to `RR`? I would simply use\n\n```\nif right == 0:\n    ...\nelif right >= 0:\n    ...\nelif right <= 0:\n    ...\nelse:\n    raise ArithmeticError(...)\n```\n\nThis handles non-constant symbolic expressions also.",
+    "body": "Why convert to `RR`? I would simply use\n\n```\nif right == 0:\n    ...\nelif right >= 0:\n    ...\nelif right <= 0:\n    ...\nelse:\n    raise ArithmeticError(...)\n```\nThis handles non-constant symbolic expressions also.",
     "created_at": "2015-02-12T16:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -1039,7 +1028,6 @@ elif right <= 0:
 else:
     raise ArithmeticError(...)
 ```
-
 This handles non-constant symbolic expressions also.
 
 
@@ -1049,7 +1037,7 @@ This handles non-constant symbolic expressions also.
 archive/issue_comments_065439.json:
 ```json
 {
-    "body": "Replying to [comment:42 jdemeyer]:\n> Why convert to `RR`? I would simply use\n> {{{\n> if right == 0:\n>     ...\n> elif right >= 0:\n>     ...\n> elif right <= 0:\n>     ...\n> else:\n>     raise ArithmeticError(...)\n> }}}\n> This handles non-constant symbolic expressions also.\nSeems we have to open a ticket?\n\n```\nsage: def f(ex):\n    if ex==0:\n        print 'zero'\n    elif ex<0:\n        print 'minus'\n    else:\n        print 'else'\n....:         \nsage: ex=-I\nsage: f(ex)\nminus\nsage: bool(-I<0)\nTrue\nsage: bool(I>0)\nTrue\n```\n",
+    "body": "Replying to [comment:42 jdemeyer]:\n> Why convert to `RR`? I would simply use\n> \n> ```\n> if right == 0:\n>     ...\n> elif right >= 0:\n>     ...\n> elif right <= 0:\n>     ...\n> else:\n>     raise ArithmeticError(...)\n> ```\n> This handles non-constant symbolic expressions also.\n\nSeems we have to open a ticket?\n\n```\nsage: def f(ex):\n    if ex==0:\n        print 'zero'\n    elif ex<0:\n        print 'minus'\n    else:\n        print 'else'\n....:         \nsage: ex=-I\nsage: f(ex)\nminus\nsage: bool(-I<0)\nTrue\nsage: bool(I>0)\nTrue\n```",
     "created_at": "2015-02-13T14:19:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
@@ -1060,7 +1048,8 @@ archive/issue_comments_065439.json:
 
 Replying to [comment:42 jdemeyer]:
 > Why convert to `RR`? I would simply use
-> {{{
+> 
+> ```
 > if right == 0:
 >     ...
 > elif right >= 0:
@@ -1069,8 +1058,9 @@ Replying to [comment:42 jdemeyer]:
 >     ...
 > else:
 >     raise ArithmeticError(...)
-> }}}
+> ```
 > This handles non-constant symbolic expressions also.
+
 Seems we have to open a ticket?
 
 ```
@@ -1090,7 +1080,6 @@ True
 sage: bool(I>0)
 True
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_006331.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/mathematica.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 181:\n    sage: n.FactorInteger()                  # optional - mathematica\nExpected:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}       # optional - mathematica\nGot:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 236:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.592886175491196978 + 0.1804899720669620266*I\n**********************************************************************\n1 items had failures:\n   2 of  62 in __main__.example_0\n***Test Failed*** 2 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6331\n\n",
+    "body": "Assignee: tbd\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/mathematica.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 181:\n    sage: n.FactorInteger()                  # optional - mathematica\nExpected:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}       # optional - mathematica\nGot:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 236:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.592886175491196978 + 0.1804899720669620266*I\n**********************************************************************\n1 items had failures:\n   2 of  62 in __main__.example_0\n***Test Failed*** 2 failures.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6331\n\n",
     "created_at": "2009-06-16T15:08:39Z",
     "labels": [
         "component: packages: optional",
@@ -17,7 +17,6 @@ archive/issues_006331.json:
 }
 ```
 Assignee: tbd
-
 
 ```
 sage -t -long --optional devel/sage/sage/interfaces/mathematica.py
@@ -40,7 +39,6 @@ Got:
    2 of  62 in __main__.example_0
 ***Test Failed*** 2 failures.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6331
 

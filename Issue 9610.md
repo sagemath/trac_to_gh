@@ -3,7 +3,7 @@
 archive/issues_009610.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nThis was the real cause of #8406, and the fix there introduced the following bug:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n = 20\nsage: k = 3\nsage: g = DiGraph()\nsage: g.add_edges( (i,Mod(i+j,n)) for i in range(n) for j in range(1,k+1) )\nsage: g.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]\nsage: g.strongly_connected_components()\n[[0], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9610\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nThis was the real cause of #8406, and the fix there introduced the following bug:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n = 20\nsage: k = 3\nsage: g = DiGraph()\nsage: g.add_edges( (i,Mod(i+j,n)) for i in range(n) for j in range(1,k+1) )\nsage: g.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]\nsage: g.strongly_connected_components()\n[[0], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9610\n\n",
     "created_at": "2010-07-27T12:01:24Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  @malb
 
 This was the real cause of #8406, and the fix there introduced the following bug:
 
-
 ```
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
@@ -35,7 +34,6 @@ sage: g.vertices()
 sage: g.strongly_connected_components()
 [[0], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]]
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9610
 

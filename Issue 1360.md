@@ -160,7 +160,7 @@ After all of the patches that lead to the fix in #1961, this case no longer take
 archive/issue_comments_008692.json:
 ```json
 {
-    "body": "In fact:\n\n```\nsage: time GAut = G.automorphism_group(partition=Pi)\nCPU times: user 0.10 s, sys: 0.04 s, total: 0.14 s\nWall time: 0.15\n```\n",
+    "body": "In fact:\n\n```\nsage: time GAut = G.automorphism_group(partition=Pi)\nCPU times: user 0.10 s, sys: 0.04 s, total: 0.14 s\nWall time: 0.15\n```",
     "created_at": "2008-02-18T21:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
@@ -176,7 +176,6 @@ sage: time GAut = G.automorphism_group(partition=Pi)
 CPU times: user 0.10 s, sys: 0.04 s, total: 0.14 s
 Wall time: 0.15
 ```
-
 
 
 
@@ -219,7 +218,7 @@ Resolution: fixed
 archive/issue_comments_008694.json:
 ```json
 {
-    "body": "I ran the computation with #1961 applied and rlm confirms that the result is as expected:\n\n```\nsage: GAut = G.automorphism_group(partition=Pi)\nsage: GAut\nPermutation Group with generators [(1,6)(9,14)(18,28)(19,29)(34,44)(35,45)(50,60)(51,61)(66,76)(67,77), \n(6,7)(8,9)(28,30)(29,31)(32,34)(33,35)(60,62)(61,63)(64,66)(65,67), \n(5,8)(7,10)(26,32)(27,33)(30,36)(31,37)(58,64)(59,65)(62,68)(63,69), (4,5)(10,11)(24,26)(25,27)(36,38)(37,39)(56,58)(57,59)(68,70)(69,71), \n(3,4)(11,12)(22,24)(23,25)(38,40)(39,41)(54,56)(55,57)(70,72)(71,73),\n(2,3)(12,13)(20,22)(21,23)(40,42)(41,43)(52,54)(53,55)(72,74)(73,75)]\n```\n\n\nCheers,\n\nMichael",
+    "body": "I ran the computation with #1961 applied and rlm confirms that the result is as expected:\n\n```\nsage: GAut = G.automorphism_group(partition=Pi)\nsage: GAut\nPermutation Group with generators [(1,6)(9,14)(18,28)(19,29)(34,44)(35,45)(50,60)(51,61)(66,76)(67,77), \n(6,7)(8,9)(28,30)(29,31)(32,34)(33,35)(60,62)(61,63)(64,66)(65,67), \n(5,8)(7,10)(26,32)(27,33)(30,36)(31,37)(58,64)(59,65)(62,68)(63,69), (4,5)(10,11)(24,26)(25,27)(36,38)(37,39)(56,58)(57,59)(68,70)(69,71), \n(3,4)(11,12)(22,24)(23,25)(38,40)(39,41)(54,56)(55,57)(70,72)(71,73),\n(2,3)(12,13)(20,22)(21,23)(40,42)(41,43)(52,54)(53,55)(72,74)(73,75)]\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-19T22:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
@@ -239,7 +238,6 @@ Permutation Group with generators [(1,6)(9,14)(18,28)(19,29)(34,44)(35,45)(50,60
 (3,4)(11,12)(22,24)(23,25)(38,40)(39,41)(54,56)(55,57)(70,72)(71,73),
 (2,3)(12,13)(20,22)(21,23)(40,42)(41,43)(52,54)(53,55)(72,74)(73,75)]
 ```
-
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_001705.json:
 ```json
 {
-    "body": "Assignee: @malb\n\nCC:  mabshoff\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f)\nx*y+(-a)*x+(-a)*y+(a+1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: f = (x-2)*(y-1)\nsage: f.factor()\n(y - 1) * (x + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x+1\n   _[3]=y-1\n[2]:\n   1,1,1\n```\n\n\nIn Magma this works fine:\n\n```\nk<a> := GF(9);\nR<x,y> := PolynomialRing(k, 2);\nf := (x-a)*(y-a);\nprint Factorization(f);\n\n[\n<y + a^5, 1>,\n<x + a^5, 1>\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1705\n\n",
+    "body": "Assignee: @malb\n\nCC:  mabshoff\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f)\nx*y+(-a)*x+(-a)*y+(a+1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: f = (x-2)*(y-1)\nsage: f.factor()\n(y - 1) * (x + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x+1\n   _[3]=y-1\n[2]:\n   1,1,1\n```\n\nIn Magma this works fine:\n\n```\nk<a> := GF(9);\nR<x,y> := PolynomialRing(k, 2);\nf := (x-a)*(y-a);\nprint Factorization(f);\n\n[\n<y + a^5, 1>,\n<x + a^5, 1>\n]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1705\n\n",
     "created_at": "2008-01-07T04:01:49Z",
     "labels": [
         "component: commutative algebra",
@@ -20,7 +20,6 @@ archive/issues_001705.json:
 Assignee: @malb
 
 CC:  mabshoff
-
 
 ```
 sage: k.<a> = GF(9)
@@ -48,7 +47,6 @@ sage: singular(f).factorH()
    1,1,1
 ```
 
-
 In Magma this works fine:
 
 ```
@@ -63,7 +61,6 @@ print Factorization(f);
 ]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1705
 
 
@@ -75,7 +72,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1705
 archive/issue_comments_010771.json:
 ```json
 {
-    "body": "I can confirm this behaviour with official Singular binary:\n\n\n```\n> ring r = (3,a),(x,y),dp;\n> minpoly = a^2 + 2*a + 2;\n> poly f = (x-a)*(y-a);\n> factorize(f);\n[1]:\n   _[1]=1\n   _[2]=xy+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\n```\n\n\nMichael volunteered to report this upstream.",
+    "body": "I can confirm this behaviour with official Singular binary:\n\n```\n> ring r = (3,a),(x,y),dp;\n> minpoly = a^2 + 2*a + 2;\n> poly f = (x-a)*(y-a);\n> factorize(f);\n[1]:\n   _[1]=1\n   _[2]=xy+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\n```\n\nMichael volunteered to report this upstream.",
     "created_at": "2008-01-07T11:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1705",
     "type": "issue_comment",
@@ -85,7 +82,6 @@ archive/issue_comments_010771.json:
 ```
 
 I can confirm this behaviour with official Singular binary:
-
 
 ```
 > ring r = (3,a),(x,y),dp;
@@ -98,7 +94,6 @@ I can confirm this behaviour with official Singular binary:
 [2]:
    1,1
 ```
-
 
 Michael volunteered to report this upstream.
 

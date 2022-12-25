@@ -3,7 +3,7 @@
 archive/issues_002164.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nwhich only returns lists rather than Partition_class objects.\n\n\nThis is also useful where you don't necessarily need the Partition_class object, you just need the values.\n\n\nBefore the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 1.4 s per loop\n```\n\n\nAfter the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 280 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2164\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nwhich only returns lists rather than Partition_class objects.\n\n\nThis is also useful where you don't necessarily need the Partition_class object, you just need the values.\n\n\nBefore the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 1.4 s per loop\n```\n\nAfter the patch:\n\n```\nsage: timeit a = Partitions(40).list()\n10 loops, best of 3: 280 ms per loop\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2164\n\n",
     "created_at": "2008-02-14T23:15:56Z",
     "labels": [
         "component: combinatorics",
@@ -34,14 +34,12 @@ sage: timeit a = Partitions(40).list()
 10 loops, best of 3: 1.4 s per loop
 ```
 
-
 After the patch:
 
 ```
 sage: timeit a = Partitions(40).list()
 10 loops, best of 3: 280 ms per loop
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2164
 

@@ -107,7 +107,7 @@ Resolution: duplicate
 archive/issue_comments_004700.json:
 ```json
 {
-    "body": "\n```\nWhat? and ditch my 2 lines of haiku-like sage code?\n\nSeriously, though. The attached patch contains quite a bit more than\n\"quotient\", as you are probably woefully aware of. Easiest is probably\n\n - apply the patch\n - delete \"quotient\" from sage/modules/free_module.py\n\nCheers,\n```\n",
+    "body": "```\nWhat? and ditch my 2 lines of haiku-like sage code?\n\nSeriously, though. The attached patch contains quite a bit more than\n\"quotient\", as you are probably woefully aware of. Easiest is probably\n\n - apply the patch\n - delete \"quotient\" from sage/modules/free_module.py\n\nCheers,\n```",
     "created_at": "2007-10-05T07:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -115,7 +115,6 @@ archive/issue_comments_004700.json:
     "user": "https://github.com/williamstein"
 }
 ```
-
 
 ```
 What? and ditch my 2 lines of haiku-like sage code?
@@ -128,7 +127,6 @@ Seriously, though. The attached patch contains quite a bit more than
 
 Cheers,
 ```
-
 
 
 
@@ -456,7 +454,7 @@ Michael
 archive/issue_comments_004707.json:
 ```json
 {
-    "body": "Almost done:\n\n\n```\nwas_: sage: R = QQ^3; S = R.span([[1,2,3]])\n[10:14am] was_: sage: w = R.quotient(S)\n[10:14am] was_: sage: w = R / S\n[10:14am] was_: But the last goes boom.\n[10:14am] was_: It would be 3-4 lines of code to fix that.\n[10:14am] was_: Once that is fixed, then 787 is done\n```\n",
+    "body": "Almost done:\n\n```\nwas_: sage: R = QQ^3; S = R.span([[1,2,3]])\n[10:14am] was_: sage: w = R.quotient(S)\n[10:14am] was_: sage: w = R / S\n[10:14am] was_: But the last goes boom.\n[10:14am] was_: It would be 3-4 lines of code to fix that.\n[10:14am] was_: Once that is fixed, then 787 is done\n```",
     "created_at": "2007-11-25T18:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -467,7 +465,6 @@ archive/issue_comments_004707.json:
 
 Almost done:
 
-
 ```
 was_: sage: R = QQ^3; S = R.span([[1,2,3]])
 [10:14am] was_: sage: w = R.quotient(S)
@@ -476,7 +473,6 @@ was_: sage: R = QQ^3; S = R.span([[1,2,3]])
 [10:14am] was_: It would be 3-4 lines of code to fix that.
 [10:14am] was_: Once that is fixed, then 787 is done
 ```
-
 
 
 
@@ -521,7 +517,7 @@ Changing status from new to assigned.
 archive/issue_comments_004710.json:
 ```json
 {
-    "body": "A quick comment.  Even as is this is WRONG -- the algorithm used is buggy, evidently, or something, since\n\n\n```\nsage: A = QQ^3; V = A.span([[1,2,3], [4,5,6]])\nsage: Q = V.quotient( V.span([V.0 + V.1]) ); Q\nsage: Q[1](V.0 + V.1)\n(1)\n```\n\n\nBut Q[1] is the quotient map so should have `V.0 + V.1` in its kernel.",
+    "body": "A quick comment.  Even as is this is WRONG -- the algorithm used is buggy, evidently, or something, since\n\n```\nsage: A = QQ^3; V = A.span([[1,2,3], [4,5,6]])\nsage: Q = V.quotient( V.span([V.0 + V.1]) ); Q\nsage: Q[1](V.0 + V.1)\n(1)\n```\n\nBut Q[1] is the quotient map so should have `V.0 + V.1` in its kernel.",
     "created_at": "2007-12-01T20:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
@@ -532,14 +528,12 @@ archive/issue_comments_004710.json:
 
 A quick comment.  Even as is this is WRONG -- the algorithm used is buggy, evidently, or something, since
 
-
 ```
 sage: A = QQ^3; V = A.span([[1,2,3], [4,5,6]])
 sage: Q = V.quotient( V.span([V.0 + V.1]) ); Q
 sage: Q[1](V.0 + V.1)
 (1)
 ```
-
 
 But Q[1] is the quotient map so should have `V.0 + V.1` in its kernel.
 

@@ -3,7 +3,7 @@
 archive/issues_009478.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nKeywords: latex\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\n\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: latex\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
     "created_at": "2010-07-12T01:45:07Z",
     "labels": [
         "component: symbolics",
@@ -31,7 +31,6 @@ sage: R3.<xi, x> = R2[]
 sage: print latex(xi*x)
 \xix
 ```
-
 Notice no space between variables on the last line. Of course, this gives an error.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9478

@@ -171,7 +171,7 @@ I'll try again.  I'll make the default matrix field ZZ even for weighted graphs 
 archive/issue_comments_017738.json:
 ```json
 {
-    "body": "RE:\n\"Weighted graphs return a matrix over the field of the label of their first edge.\"\n\nThere are smarter ways to approach this. First, you might take a look at the weighted adjacency matrix constructor in `graph.py`, which finds a suitable common parent implicitly, through the matrix constructor. What this basically does is construct a sequence, and retrieve its universe:\n\n\n```\nsage: Sequence([4/5, 3]).universe()\nRational Field\nsage: i = CC(i)\nsage: Sequence([4/5, 3, i]).universe()\nComplex Field with 53 bits of precision\n```\n",
+    "body": "RE:\n\"Weighted graphs return a matrix over the field of the label of their first edge.\"\n\nThere are smarter ways to approach this. First, you might take a look at the weighted adjacency matrix constructor in `graph.py`, which finds a suitable common parent implicitly, through the matrix constructor. What this basically does is construct a sequence, and retrieve its universe:\n\n```\nsage: Sequence([4/5, 3]).universe()\nRational Field\nsage: i = CC(i)\nsage: Sequence([4/5, 3, i]).universe()\nComplex Field with 53 bits of precision\n```",
     "created_at": "2008-03-20T21:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
@@ -185,7 +185,6 @@ RE:
 
 There are smarter ways to approach this. First, you might take a look at the weighted adjacency matrix constructor in `graph.py`, which finds a suitable common parent implicitly, through the matrix constructor. What this basically does is construct a sequence, and retrieve its universe:
 
-
 ```
 sage: Sequence([4/5, 3]).universe()
 Rational Field
@@ -193,7 +192,6 @@ sage: i = CC(i)
 sage: Sequence([4/5, 3, i]).universe()
 Complex Field with 53 bits of precision
 ```
-
 
 
 

@@ -90,7 +90,7 @@ Nathann
 archive/issue_comments_064239.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> Oh yes, and... There are many missing doctests\n\nOuch.  That's a problem.  I don't think the ticket should go into Sage without doctests on each python function.\n\n(I haven't had time to look at the rest of the patch, though.)",
+    "body": "Replying to [comment:3 ncohen]:\n> Oh yes, and... There are many missing doctests\n\n\nOuch.  That's a problem.  I don't think the ticket should go into Sage without doctests on each python function.\n\n(I haven't had time to look at the rest of the patch, though.)",
     "created_at": "2010-06-12T17:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
@@ -101,6 +101,7 @@ archive/issue_comments_064239.json:
 
 Replying to [comment:3 ncohen]:
 > Oh yes, and... There are many missing doctests
+
 
 Ouch.  That's a problem.  I don't think the ticket should go into Sage without doctests on each python function.
 

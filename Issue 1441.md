@@ -3,7 +3,7 @@
 archive/issues_001441.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nConsider the following:\n\n```\nsage: var('x_1,x1');\nsage: x_1 - x1\nx_1 - x1\nsage: latex(x_1 - x1)\nx_{1} - x_{1}\n```\n\nThe automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as\nvariables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1441\n\n",
+    "body": "Assignee: @williamstein\n\nConsider the following:\n\n```\nsage: var('x_1,x1');\nsage: x_1 - x1\nx_1 - x1\nsage: latex(x_1 - x1)\nx_{1} - x_{1}\n```\nThe automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as\nvariables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1441\n\n",
     "created_at": "2007-12-09T21:32:14Z",
     "labels": [
         "component: calculus",
@@ -28,7 +28,6 @@ x_1 - x1
 sage: latex(x_1 - x1)
 x_{1} - x_{1}
 ```
-
 The automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as
 variables.
 
@@ -82,7 +81,7 @@ Invalid?
 archive/issue_comments_009275.json:
 ```json
 {
-    "body": "Here is what Maple does:\n\n```\n> latex(x1);\n{\\it x1}\n> latex(x_1);\n{\\it x\\_1}\n```\n\nThis seems a reasonable alternative to me.",
+    "body": "Here is what Maple does:\n\n```\n> latex(x1);\n{\\it x1}\n> latex(x_1);\n{\\it x\\_1}\n```\nThis seems a reasonable alternative to me.",
     "created_at": "2007-12-17T12:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
@@ -99,7 +98,6 @@ Here is what Maple does:
 > latex(x_1);
 {\it x\_1}
 ```
-
 This seems a reasonable alternative to me.
 
 

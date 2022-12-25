@@ -72,7 +72,7 @@ Changing status from new to needs_work.
 archive/issue_comments_062707.json:
 ```json
 {
-    "body": "Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by @lftabera created at 2010-11-06 12:06:38\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
+    "body": "Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by @lftabera created at 2010-11-06 12:06:38\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
     "created_at": "2010-11-06T12:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
@@ -93,13 +93,11 @@ I have some concerns that makes me mark the patch as needs work:
 
 - Corner cases must be well documented. 
 
-
 ```
 sage: K.<x>=QQ[]
 sage: K(1).sylvester_matrix(K(1))
 []
 ```
-
 
 In particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0
 Curretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.

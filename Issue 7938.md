@@ -174,7 +174,7 @@ The patch called 'trac_7938_...' is all that should be applied.  In response to 
 archive/issue_comments_069101.json:
 ```json
 {
-    "body": "Replying to [comment:4 jbandlow]:\n> ...\n\nThanks much!\n\n>   * Add description: done\n\nSorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\nCheers,",
+    "body": "Replying to [comment:4 jbandlow]:\n> ...\n\n\nThanks much!\n\n>   * Add description: done\n\n\nSorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\nCheers,",
     "created_at": "2010-01-18T21:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
@@ -186,9 +186,11 @@ archive/issue_comments_069101.json:
 Replying to [comment:4 jbandlow]:
 > ...
 
+
 Thanks much!
 
 >   * Add description: done
+
 
 Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).
 
@@ -221,7 +223,7 @@ Please update the queue accordingly (including the #7729 patch).
 archive/issue_comments_069103.json:
 ```json
 {
-    "body": "Replying to [comment:6 nthiery]:\n> It does need a rebase w.r.t. #7729 (iwahori hecke algebra) whose file was renamed.\n> \n> Please update the queue accordingly (including the #7729 patch).\n\nDone!",
+    "body": "Replying to [comment:6 nthiery]:\n> It does need a rebase w.r.t. #7729 (iwahori hecke algebra) whose file was renamed.\n> \n> Please update the queue accordingly (including the #7729 patch).\n\n\nDone!",
     "created_at": "2010-01-22T22:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
@@ -234,6 +236,7 @@ Replying to [comment:6 nthiery]:
 > It does need a rebase w.r.t. #7729 (iwahori hecke algebra) whose file was renamed.
 > 
 > Please update the queue accordingly (including the #7729 patch).
+
 
 Done!
 
@@ -280,7 +283,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069106.json:
 ```json
 {
-    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by @nthiery created at 2010-01-23 10:07:04\n\n> Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\nDone. Patch ready for merging into Sage.",
+    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by @nthiery created at 2010-01-23 10:07:04\n\n> Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\n\nDone. Patch ready for merging into Sage.",
     "created_at": "2010-01-23T10:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
@@ -292,6 +295,7 @@ archive/issue_comments_069106.json:
 Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by @nthiery created at 2010-01-23 10:07:04
 
 > Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).
+
 
 Done. Patch ready for merging into Sage.
 

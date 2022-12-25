@@ -145,7 +145,7 @@ Notice that #5819 is somewhat related to this. It would be nice to fix that issu
 archive/issue_comments_059722.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...\n\nSure. But right now our primary goal is to finish the category stuff ASAP...\nI'm sorry for this but we really have to take the straight line :-)\n\nCheers,\n\nFlorent",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...\n\n\nSure. But right now our primary goal is to finish the category stuff ASAP...\nI'm sorry for this but we really have to take the straight line :-)\n\nCheers,\n\nFlorent",
     "created_at": "2009-10-19T20:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_059722.json:
 
 Replying to [comment:5 jhpalmieri]:
 > Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...
+
 
 Sure. But right now our primary goal is to finish the category stuff ASAP...
 I'm sorry for this but we really have to take the straight line :-)

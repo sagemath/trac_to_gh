@@ -50,7 +50,7 @@ Bundled against 2.10
 archive/issue_comments_012647.json:
 ```json
 {
-    "body": "Attachment [giant_padics.hg](tarball://root/attachments/some-uuid/ticket1963/giant_padics.hg) by mabshoff created at 2008-01-28 23:05:19\n\nI got the following merge conflict against 2.10.1.rc2:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.1.rc3/devel/sage-main/sage/schemes/elliptic_curves/padics.py.orig.2461327829\n    ALGORITHM:\n        Proposition 9 of ``Efficient Computation of p-adic Heights'' (David Harvey,\n        to appear in LMS JCM).\n\n        Complexity is soft-$O(\\log L \\log m + \\log^2 m)$.\n    Complexity is soft $O(\\log R \\log^2 m)$.\n=======\n    Complexity is soft $O(\\log R \\log m)$.\n>>>>>>> /tmp/padics.py~other.K30f_Q\n```\n\nBut I also have a compilation failure:\n\n```\n/usr/include/features.h:150:1: warning: this is the location of the previous definition\nsrc/ntl_wrap.cpp: In function \u2018void ZZ_pX_InvMod_newton_unram(NTL::ZZ_pX&, const NTL::ZZ_pX&, const NTL::ZZ_pXModulus&, const NTL::ZZ_pContext&, const NTL::ZZ_pContext&)\u2019:\nsrc/ntl_wrap.cpp:1136: error: reference to \u2018negate\u2019 is ambiguous\n```\n\nI will poke around a little more and update this if I find anything useful.\n||||||| /tmp/padics.py~base.ns4Mgb\nCheers,\n\nMichael",
+    "body": "Attachment [giant_padics.hg](tarball://root/attachments/some-uuid/ticket1963/giant_padics.hg) by mabshoff created at 2008-01-28 23:05:19\n\nI got the following merge conflict against 2.10.1.rc2:\n\n```\n<<<<<<< /scratch/mabshoff/release-cycle/sage-2.10.1.rc3/devel/sage-main/sage/schemes/elliptic_curves/padics.py.orig.2461327829\n    ALGORITHM:\n        Proposition 9 of ``Efficient Computation of p-adic Heights'' (David Harvey,\n        to appear in LMS JCM).\n\n        Complexity is soft-$O(\\log L \\log m + \\log^2 m)$.\n    Complexity is soft $O(\\log R \\log^2 m)$.\n=======\n    Complexity is soft $O(\\log R \\log m)$.\n>>>>>>> /tmp/padics.py~other.K30f_Q\n```\nBut I also have a compilation failure:\n||||||| /tmp/padics.py~base.ns4Mgb\n```\n/usr/include/features.h:150:1: warning: this is the location of the previous definition\nsrc/ntl_wrap.cpp: In function \u2018void ZZ_pX_InvMod_newton_unram(NTL::ZZ_pX&, const NTL::ZZ_pX&, const NTL::ZZ_pXModulus&, const NTL::ZZ_pContext&, const NTL::ZZ_pContext&)\u2019:\nsrc/ntl_wrap.cpp:1136: error: reference to \u2018negate\u2019 is ambiguous\n```\nI will poke around a little more and update this if I find anything useful.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-28T23:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -75,17 +75,15 @@ I got the following merge conflict against 2.10.1.rc2:
     Complexity is soft $O(\log R \log m)$.
 >>>>>>> /tmp/padics.py~other.K30f_Q
 ```
-
 But I also have a compilation failure:
-
+||||||| /tmp/padics.py~base.ns4Mgb
 ```
 /usr/include/features.h:150:1: warning: this is the location of the previous definition
 src/ntl_wrap.cpp: In function ‘void ZZ_pX_InvMod_newton_unram(NTL::ZZ_pX&, const NTL::ZZ_pX&, const NTL::ZZ_pXModulus&, const NTL::ZZ_pContext&, const NTL::ZZ_pContext&)’:
 src/ntl_wrap.cpp:1136: error: reference to ‘negate’ is ambiguous
 ```
-
 I will poke around a little more and update this if I find anything useful.
-||||||| /tmp/padics.py~base.ns4Mgb
+
 Cheers,
 
 Michael
@@ -139,7 +137,7 @@ Fix the compilation issue with negate with gcc 4.1 (and others?)
 archive/issue_comments_012650.json:
 ```json
 {
-    "body": "I see doctest failures in \n\n```\n        sage -t  devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_generic.py\n        sage -t  devel/sage-main/sage/rings/padics/padic_generic_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/pow_computer_ext.pyx\n        sage -t  devel/sage-main/sage/rings/padics/tests.py\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_FM_element.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_point.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_tate_curve.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/padics.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t  devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n```\n\n\nCheers,\n\nMichael",
+    "body": "I see doctest failures in \n\n```\n        sage -t  devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_generic.py\n        sage -t  devel/sage-main/sage/rings/padics/padic_generic_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/pow_computer_ext.pyx\n        sage -t  devel/sage-main/sage/rings/padics/tests.py\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n        sage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_FM_element.pyx\n        sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_point.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/ell_tate_curve.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/padics.py\n        sage -t  devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t  devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-29T01:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -171,7 +169,6 @@ I see doctest failures in
         sage -t  devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py
 ```
 
-
 Cheers,
 
 Michael
@@ -201,7 +198,7 @@ Bundle vs 2.10.1 at http://sage.math.washington.edu/home/roed/giant_padics_vs_2_
 archive/issue_comments_012652.json:
 ```json
 {
-    "body": "With new patch, on Ubuntu 7.10, Intel Core Duo, four failures:\n\n```\nsage -t  devel/sage-padics_again/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nsage -t  devel/sage-padics_again/sage/rings/padics/factory.py\nsage -t  devel/sage-padics_again/sage/rings/padics/tutorial.py\nsage -t  devel/sage-padics_again/sage/rings/polynomial/multi_polynomial.\n```\n",
+    "body": "With new patch, on Ubuntu 7.10, Intel Core Duo, four failures:\n\n```\nsage -t  devel/sage-padics_again/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\nsage -t  devel/sage-padics_again/sage/rings/padics/factory.py\nsage -t  devel/sage-padics_again/sage/rings/padics/tutorial.py\nsage -t  devel/sage-padics_again/sage/rings/polynomial/multi_polynomial.\n```",
     "created_at": "2008-02-06T05:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -221,13 +218,12 @@ sage -t  devel/sage-padics_again/sage/rings/polynomial/multi_polynomial.
 
 
 
-
 ---
 
 archive/issue_comments_012653.json:
 ```json
 {
-    "body": "\n```\nsage: R = Zp(5,5)\nsage: S.<x> = R[]\nsage: f = x^5 + 75*x^3 - 15*x^2 +125*x - 5\nsage: W.<w> = R.ext(f); W\nsage: W.residue_system()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py\", line 274, in residue_system\n    return [self(i) for i in self.residue_class_field()]\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py\", line 84, in __call__\n    return self._element_class(self, x, absprec, relprec)\n  File \"padic_ZZ_pX_CR_element.pyx\", line 231, in sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.__init__\n<type 'exceptions.TypeError'>: cannot coerce from the given integer mod ring (not a power of the same prime)\n```\n",
+    "body": "```\nsage: R = Zp(5,5)\nsage: S.<x> = R[]\nsage: f = x^5 + 75*x^3 - 15*x^2 +125*x - 5\nsage: W.<w> = R.ext(f); W\nsage: W.residue_system()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py\", line 274, in residue_system\n    return [self(i) for i in self.residue_class_field()]\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py\", line 84, in __call__\n    return self._element_class(self, x, absprec, relprec)\n  File \"padic_ZZ_pX_CR_element.pyx\", line 231, in sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.__init__\n<type 'exceptions.TypeError'>: cannot coerce from the given integer mod ring (not a power of the same prime)\n```",
     "created_at": "2008-02-06T06:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -235,7 +231,6 @@ archive/issue_comments_012653.json:
     "user": "https://github.com/robertwb"
 }
 ```
-
 
 ```
 sage: R = Zp(5,5)
@@ -253,7 +248,6 @@ Traceback (most recent call last):
   File "padic_ZZ_pX_CR_element.pyx", line 231, in sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement.__init__
 <type 'exceptions.TypeError'>: cannot coerce from the given integer mod ring (not a power of the same prime)
 ```
-
 
 
 
@@ -550,7 +544,7 @@ Merged 1963-padics-bundle-sd7-final.hg and padic-sd7-fix.patch in Sage 2.10.2.al
 archive/issue_comments_012669.json:
 ```json
 {
-    "body": "Running `-long` doctests showed (still) a lot of failures:\n\n```\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/misc/functional.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_generic.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_generic_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/pow_computer_ext.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/tests.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_FM_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_element.pyx\n        sage -t -long devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_point.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_tate_curve.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n```\n\nAm I missing something?\n\nCheers,\n\nMichael",
+    "body": "Running `-long` doctests showed (still) a lot of failures:\n\n```\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/misc/functional.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_CR_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_generic.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_generic_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/pow_computer_ext.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/tests.py\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_FM_element.pyx\n        sage -t -long devel/sage-main/sage/rings/padics/padic_ZZ_pX_element.pyx\n        sage -t -long devel/sage-main/sage/rings/polynomial/multi_polynomial.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_generic.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_padic_field.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_point.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_tate_curve.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padic_lseries.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/padics.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n```\nAm I missing something?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-15T04:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -584,7 +578,6 @@ Running `-long` doctests showed (still) a lot of failures:
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py
         sage -t -long devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py
 ```
-
 Am I missing something?
 
 Cheers,
@@ -618,7 +611,7 @@ This patch fixes the import issue from 2.10.2.alpha0
 archive/issue_comments_012671.json:
 ```json
 {
-    "body": "Here are some of the doctest failures:\n\n```\nsage -t  const.tex\n**********************************************************************\nFile \"const.py\", line 2503:\n    : b^4\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_82[8]>\", line 1, in <module>\n        b**Integer(4)###line 2503:\n    : b^4\n      File \"padic_capped_relative_element.pyx\", line 747, in sage.rings.padics.padic_capped_relative_element.pAdicCappedRela\ntiveElement.__pow__\n    ValueError: Valuation too large\n**********************************************************************\n```\n\nand\n\n```\nsage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n**********************************************************************\nFile \"padic_ZZ_pX_CA_element.pyx\", line 48:\n    sage: (1/w)^12+w\nExpected:\n    w^-12 + w + O(w^12)\nGot:\n    0\n**********************************************************************\nFile \"padic_ZZ_pX_CA_element.pyx\", line 62:\n    sage: 1/a\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[17]>\", line 1, in <module>\n        Integer(1)/a###line 62:\n    sage: 1/a\n      File \"element.pyx\", line 1482, in sage.structure.element.RingElement.__div__\n      File \"coerce.pyx\", line 253, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\n      File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n      File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n      File \"padic_ZZ_pX_CA_element.pyx\", line 1303, in sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement._div_c_im\npl\n        return self.to_fraction_field() * (~right)\n      File \"element.pyx\", line 1372, in sage.structure.element.RingElement.__mul__\n      File \"coerce.pxi\", line 126, in sage.structure.element._mul_c\n      File \"padic_ZZ_pX_CR_element.pyx\", line 1789, in sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement._mul_c_im\npl\n        raise ValueError, \"valuation overflow\"\n    ValueError: valuation overflow\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "Here are some of the doctest failures:\n\n```\nsage -t  const.tex\n**********************************************************************\nFile \"const.py\", line 2503:\n    : b^4\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_82[8]>\", line 1, in <module>\n        b**Integer(4)###line 2503:\n    : b^4\n      File \"padic_capped_relative_element.pyx\", line 747, in sage.rings.padics.padic_capped_relative_element.pAdicCappedRela\ntiveElement.__pow__\n    ValueError: Valuation too large\n**********************************************************************\n```\nand\n\n```\nsage -t  devel/sage-main/sage/rings/padics/padic_ZZ_pX_CA_element.pyx\n**********************************************************************\nFile \"padic_ZZ_pX_CA_element.pyx\", line 48:\n    sage: (1/w)^12+w\nExpected:\n    w^-12 + w + O(w^12)\nGot:\n    0\n**********************************************************************\nFile \"padic_ZZ_pX_CA_element.pyx\", line 62:\n    sage: 1/a\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[17]>\", line 1, in <module>\n        Integer(1)/a###line 62:\n    sage: 1/a\n      File \"element.pyx\", line 1482, in sage.structure.element.RingElement.__div__\n      File \"coerce.pyx\", line 253, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\n      File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n      File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n      File \"padic_ZZ_pX_CA_element.pyx\", line 1303, in sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement._div_c_im\npl\n        return self.to_fraction_field() * (~right)\n      File \"element.pyx\", line 1372, in sage.structure.element.RingElement.__mul__\n      File \"coerce.pxi\", line 126, in sage.structure.element._mul_c\n      File \"padic_ZZ_pX_CR_element.pyx\", line 1789, in sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement._mul_c_im\npl\n        raise ValueError, \"valuation overflow\"\n    ValueError: valuation overflow\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T01:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1963",
     "type": "issue_comment",
@@ -646,7 +639,6 @@ tiveElement.__pow__
     ValueError: Valuation too large
 **********************************************************************
 ```
-
 and
 
 ```
@@ -683,7 +675,6 @@ pl
     ValueError: valuation overflow
 **********************************************************************
 ```
-
 
 Cheers,
 

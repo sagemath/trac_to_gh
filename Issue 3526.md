@@ -102,7 +102,7 @@ Changing priority from major to trivial.
 archive/issue_comments_024826.json:
 ```json
 {
-    "body": "This patch is basically empty since favicon.ico is binary and not in the patch:\n\n```\ncat trac_3526_extcode-3526.patch \n# HG changeset patch\n# User Timothy Clemans <timothy.clemans@gmail.com>\n# Date 1214643704 25200\n# Node ID c6d839efcf8a7730a04e74399930ffab23651a5f\n# Parent  c3d96fbf0f19bf8b2c0c1c5188943ba54829f947\n#3526\n\ndiff -r c3d96fbf0f19 -r c6d839efcf8a notebook/images/favicon.ico\nBinary file notebook/images/favicon.ico has changed\n```\n\n\nCheers,\n\nMichael",
+    "body": "This patch is basically empty since favicon.ico is binary and not in the patch:\n\n```\ncat trac_3526_extcode-3526.patch \n# HG changeset patch\n# User Timothy Clemans <timothy.clemans@gmail.com>\n# Date 1214643704 25200\n# Node ID c6d839efcf8a7730a04e74399930ffab23651a5f\n# Parent  c3d96fbf0f19bf8b2c0c1c5188943ba54829f947\n#3526\n\ndiff -r c3d96fbf0f19 -r c6d839efcf8a notebook/images/favicon.ico\nBinary file notebook/images/favicon.ico has changed\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T02:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3526",
     "type": "issue_comment",
@@ -125,7 +125,6 @@ cat trac_3526_extcode-3526.patch
 diff -r c3d96fbf0f19 -r c6d839efcf8a notebook/images/favicon.ico
 Binary file notebook/images/favicon.ico has changed
 ```
-
 
 Cheers,
 

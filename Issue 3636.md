@@ -3,7 +3,7 @@
 archive/issues_003636.json:
 ```json
 {
-    "body": "Assignee: @itolkov\n\nAllows adding text among the controls:\n\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
+    "body": "Assignee: @itolkov\n\nAllows adding text among the controls:\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
     "created_at": "2008-07-10T21:07:58Z",
     "labels": [
         "component: notebook",
@@ -20,13 +20,11 @@ Assignee: @itolkov
 
 Allows adding text among the controls:
 
-
 ```
 @interact
 def _(t1=text_control("Factors an integer."), n="1"):
     print factor(Integer(n))
 ```
-
 
 Additionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.
 

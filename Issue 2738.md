@@ -3,7 +3,7 @@
 archive/issues_002738.json:
 ```json
 {
-    "body": "Assignee: tba\n\nAdd support for:\n\n```\n\"\"\"\nComputes Foo using one of the following algorithms:\n\\begin{description}\n\\item[Bar] cool algorithm.\n\\end{description}\n\"\"\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2738\n\n",
+    "body": "Assignee: tba\n\nAdd support for:\n\n```\n\"\"\"\nComputes Foo using one of the following algorithms:\n\\begin{description}\n\\item[Bar] cool algorithm.\n\\end{description}\n\"\"\"\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2738\n\n",
     "created_at": "2008-03-31T14:34:25Z",
     "labels": [
         "component: documentation"
@@ -27,7 +27,6 @@ Computes Foo using one of the following algorithms:
 \end{description}
 """
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2738
 

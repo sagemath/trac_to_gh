@@ -144,7 +144,7 @@ Changing status from needs_work to needs_info.
 archive/issue_comments_059524.json:
 ```json
 {
-    "body": "if you use the python platform module, you can check specifically for 10.6:\n\n\n```\n>>> platform.mac_ver()\n('10.6.1', ('', '', ''), 'i386')\n```\n\n\nHowever, it might be nice to warn people on 10.5 that 10.6 will not work to prevent people from upgrading.  What do you think?",
+    "body": "if you use the python platform module, you can check specifically for 10.6:\n\n```\n>>> platform.mac_ver()\n('10.6.1', ('', '', ''), 'i386')\n```\n\nHowever, it might be nice to warn people on 10.5 that 10.6 will not work to prevent people from upgrading.  What do you think?",
     "created_at": "2009-10-13T03:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -155,12 +155,10 @@ archive/issue_comments_059524.json:
 
 if you use the python platform module, you can check specifically for 10.6:
 
-
 ```
 >>> platform.mac_ver()
 ('10.6.1', ('', '', ''), 'i386')
 ```
-
 
 However, it might be nice to warn people on 10.5 that 10.6 will not work to prevent people from upgrading.  What do you think?
 
@@ -171,7 +169,7 @@ However, it might be nice to warn people on 10.5 that 10.6 will not work to prev
 archive/issue_comments_059525.json:
 ```json
 {
-    "body": "Replying to [comment:5 jason]:\n> if you use the python platform module, you can check specifically for 10.6:\n\nI think the test `if os.uname()[2] == \"10.0.0\"` does check specifically for 10.6.  If you're running OS X 10.5, then os.uname()[2] returns \"9.8.0\" (at least on my machine.  (On the other hand, `platform.mac_ver()` doesn't return anything with 10.5: I get `(*, (*, *, *), '')` as output.)\n\nAs for the warning, in addition or instead, should we put a notice up on sagemath.org, on the Mac download page?",
+    "body": "Replying to [comment:5 jason]:\n> if you use the python platform module, you can check specifically for 10.6:\n\n\nI think the test `if os.uname()[2] == \"10.0.0\"` does check specifically for 10.6.  If you're running OS X 10.5, then os.uname()[2] returns \"9.8.0\" (at least on my machine.  (On the other hand, `platform.mac_ver()` doesn't return anything with 10.5: I get `(*, (*, *, *), '')` as output.)\n\nAs for the warning, in addition or instead, should we put a notice up on sagemath.org, on the Mac download page?",
     "created_at": "2009-10-13T04:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -182,6 +180,7 @@ archive/issue_comments_059525.json:
 
 Replying to [comment:5 jason]:
 > if you use the python platform module, you can check specifically for 10.6:
+
 
 I think the test `if os.uname()[2] == "10.0.0"` does check specifically for 10.6.  If you're running OS X 10.5, then os.uname()[2] returns "9.8.0" (at least on my machine.  (On the other hand, `platform.mac_ver()` doesn't return anything with 10.5: I get `(*, (*, *, *), '')` as output.)
 
@@ -283,7 +282,7 @@ archive/issue_events_017042.json:
 archive/issue_comments_059530.json:
 ```json
 {
-    "body": ">  In light of the recent message  here, has enough testing been done to close this?\n\nNo, that is orthogonal.",
+    "body": ">  In light of the recent message  here, has enough testing been done to close this?\n\n\nNo, that is orthogonal.",
     "created_at": "2009-11-11T19:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -293,6 +292,7 @@ archive/issue_comments_059530.json:
 ```
 
 >  In light of the recent message  here, has enough testing been done to close this?
+
 
 No, that is orthogonal.
 
@@ -321,7 +321,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059532.json:
 ```json
 {
-    "body": "The line\n`if os.uname()[2] == \"10.0.0\"`\nmust be changed, since in new versions of 10.6 we have\n\n```\nsage: os.uname()[2]\n'10.2.0'\n```\n",
+    "body": "The line\n`if os.uname()[2] == \"10.0.0\"`\nmust be changed, since in new versions of 10.6 we have\n\n```\nsage: os.uname()[2]\n'10.2.0'\n```",
     "created_at": "2009-11-11T19:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7193",
     "type": "issue_comment",
@@ -338,7 +338,6 @@ must be changed, since in new versions of 10.6 we have
 sage: os.uname()[2]
 '10.2.0'
 ```
-
 
 
 

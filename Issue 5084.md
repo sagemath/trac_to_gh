@@ -86,7 +86,7 @@ archive/issue_events_011732.json:
 archive/issue_comments_038674.json:
 ```json
 {
-    "body": "This is due to #3762. It might be nice to either (1) detect whether or not quaddouble is available (e.g. if it's on the system or an optional installed spkg) and turn on the macro to use it (2) make the mpfr version faster. Some timings\n\n\n```\n%cython\n#clang c++\n\nfrom sage.libs.mpfr cimport *\nfrom sage.rings.real_rqdf cimport *\n\ndef test_mpfr(N, bits=212):\n    cdef mpfr_t a, b\n    mpfr_init2(a, bits)\n    mpfr_init2(b, bits)\n    mpfr_random(a)\n    mpfr_random(b)\n    cdef int i\n    for i from 0 <= i < N:\n        mpfr_add(a, a, b, GMP_RNDN)\n        mpfr_mul(a, a, b, GMP_RNDN)\n    mpfr_clear(a)\n    mpfr_clear(b)\n\ndef test_qd(N):\n    cdef double a[4]\n    cdef double b[4]\n    cdef int i\n    c_qd_rand(a)\n    c_qd_rand(b)\n    for i from 0 <= i < N:\n        c_qd_add(a, a, b)\n        c_qd_mul(a, a, b)\n```\n\n\nand \n\n\n```\nsage: time test_mpfr(10^6, 212)\nCPU time: 0.34 s,  Wall time: 0.35 s\nsage: time test_mpfr(10^6, 150)\nCPU time: 0.22 s,  Wall time: 0.23 s\nsage: time test_qd(10^6)\nCPU time: 0.25 s,  Wall time: 0.26 s\n```\n\n\n(OS X 32-bit)\n\nSo there might be hope. Also, the constants calculated up front are used to full (1000s of bits) precision throughout, which can slow things down in some cases.",
+    "body": "This is due to #3762. It might be nice to either (1) detect whether or not quaddouble is available (e.g. if it's on the system or an optional installed spkg) and turn on the macro to use it (2) make the mpfr version faster. Some timings\n\n```\n%cython\n#clang c++\n\nfrom sage.libs.mpfr cimport *\nfrom sage.rings.real_rqdf cimport *\n\ndef test_mpfr(N, bits=212):\n    cdef mpfr_t a, b\n    mpfr_init2(a, bits)\n    mpfr_init2(b, bits)\n    mpfr_random(a)\n    mpfr_random(b)\n    cdef int i\n    for i from 0 <= i < N:\n        mpfr_add(a, a, b, GMP_RNDN)\n        mpfr_mul(a, a, b, GMP_RNDN)\n    mpfr_clear(a)\n    mpfr_clear(b)\n\ndef test_qd(N):\n    cdef double a[4]\n    cdef double b[4]\n    cdef int i\n    c_qd_rand(a)\n    c_qd_rand(b)\n    for i from 0 <= i < N:\n        c_qd_add(a, a, b)\n        c_qd_mul(a, a, b)\n```\n\nand \n\n```\nsage: time test_mpfr(10^6, 212)\nCPU time: 0.34 s,  Wall time: 0.35 s\nsage: time test_mpfr(10^6, 150)\nCPU time: 0.22 s,  Wall time: 0.23 s\nsage: time test_qd(10^6)\nCPU time: 0.25 s,  Wall time: 0.26 s\n```\n\n(OS X 32-bit)\n\nSo there might be hope. Also, the constants calculated up front are used to full (1000s of bits) precision throughout, which can slow things down in some cases.",
     "created_at": "2009-01-24T03:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5084",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_038674.json:
 ```
 
 This is due to #3762. It might be nice to either (1) detect whether or not quaddouble is available (e.g. if it's on the system or an optional installed spkg) and turn on the macro to use it (2) make the mpfr version faster. Some timings
-
 
 ```
 %cython
@@ -129,9 +128,7 @@ def test_qd(N):
         c_qd_mul(a, a, b)
 ```
 
-
 and 
-
 
 ```
 sage: time test_mpfr(10^6, 212)
@@ -141,7 +138,6 @@ CPU time: 0.22 s,  Wall time: 0.23 s
 sage: time test_qd(10^6)
 CPU time: 0.25 s,  Wall time: 0.26 s
 ```
-
 
 (OS X 32-bit)
 

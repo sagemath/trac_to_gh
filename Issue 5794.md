@@ -3,7 +3,7 @@
 archive/issues_005794.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nThis patch implements branching rules for the following inclusions\nof Lie groups: \n\n\n```\nA1 in G2 (along short root) \nA2 in G2\nG2 in B3\nG2 in D4\n```\n\n\nIt goes on top of the following patches:\n\n\n```\ntrac_5721-a.patch\ntrac_5721-b.patch\ntrac_5751.patch\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5794\n\n",
+    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nThis patch implements branching rules for the following inclusions\nof Lie groups: \n\n```\nA1 in G2 (along short root) \nA2 in G2\nG2 in B3\nG2 in D4\n```\n\nIt goes on top of the following patches:\n\n```\ntrac_5721-a.patch\ntrac_5721-b.patch\ntrac_5751.patch\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5794\n\n",
     "created_at": "2009-04-16T01:16:30Z",
     "labels": [
         "component: algebra"
@@ -22,7 +22,6 @@ CC:  sage-combinat
 This patch implements branching rules for the following inclusions
 of Lie groups: 
 
-
 ```
 A1 in G2 (along short root) 
 A2 in G2
@@ -30,16 +29,13 @@ G2 in B3
 G2 in D4
 ```
 
-
 It goes on top of the following patches:
-
 
 ```
 trac_5721-a.patch
 trac_5721-b.patch
 trac_5751.patch
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5794
 
@@ -328,7 +324,7 @@ Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_045339.json:
 ```json
 {
-    "body": "Is it possible to remove the first two patches:\n\n\n```\ntrac_5794.patch\ntrac_5794-f4.patch\n```\n\n\nThey are superceded by the other patches. I am going to be adding some\nmore patches to this series, and I think it would be less confusing if the\nfirst two patches are removed. I don't think I can do this without help\nfrom admin.\n\nDan",
+    "body": "Is it possible to remove the first two patches:\n\n```\ntrac_5794.patch\ntrac_5794-f4.patch\n```\n\nThey are superceded by the other patches. I am going to be adding some\nmore patches to this series, and I think it would be less confusing if the\nfirst two patches are removed. I don't think I can do this without help\nfrom admin.\n\nDan",
     "created_at": "2009-05-16T22:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -339,12 +335,10 @@ archive/issue_comments_045339.json:
 
 Is it possible to remove the first two patches:
 
-
 ```
 trac_5794.patch
 trac_5794-f4.patch
 ```
-
 
 They are superceded by the other patches. I am going to be adding some
 more patches to this series, and I think it would be less confusing if the
@@ -414,7 +408,7 @@ Since I don't know the order in which patches should be applied, let alone which
 archive/issue_comments_045343.json:
 ```json
 {
-    "body": "Apply all four patches in order.\n\n\n```\ntrac_5794-revised.patch\ntrac_5794-continued.patch\ntrac_5794-exceptional.patch\ntrac_5794-more-exceptional.patch\n```\n\n\n> Most docstrings adhere to the ReST format, but some don't.\n\nIf you find nonconforming docstrings, please cite them by line number.\nThere is a lot of doc in these patches.",
+    "body": "Apply all four patches in order.\n\n```\ntrac_5794-revised.patch\ntrac_5794-continued.patch\ntrac_5794-exceptional.patch\ntrac_5794-more-exceptional.patch\n```\n\n> Most docstrings adhere to the ReST format, but some don't.\n\n\nIf you find nonconforming docstrings, please cite them by line number.\nThere is a lot of doc in these patches.",
     "created_at": "2009-06-11T05:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -425,7 +419,6 @@ archive/issue_comments_045343.json:
 
 Apply all four patches in order.
 
-
 ```
 trac_5794-revised.patch
 trac_5794-continued.patch
@@ -433,8 +426,8 @@ trac_5794-exceptional.patch
 trac_5794-more-exceptional.patch
 ```
 
-
 > Most docstrings adhere to the ReST format, but some don't.
+
 
 If you find nonconforming docstrings, please cite them by line number.
 There is a lot of doc in these patches.
@@ -446,7 +439,7 @@ There is a lot of doc in these patches.
 archive/issue_comments_045344.json:
 ```json
 {
-    "body": "Replying to [comment:19 bump]:\n> Apply all four patches in order.\n> \n> {{{\n> trac_5794-revised.patch\n> trac_5794-continued.patch\n> trac_5794-exceptional.patch\n> trac_5794-more-exceptional.patch\n> }}}\n>\n> > Most docstrings adhere to the ReST format, but some don't.\n> \n> If you find nonconforming docstrings, please cite them by line number.\n> There is a lot of doc in these patches.\nNote that I'm not qualified to review the mathematical content of the patch. However, I would like to point out that the following patches and line numbers don't conform to ReST formatting:\n\n\n\nIn `trac_5794-revised.patch`:\n* Patching against the file `sage/combinat/root_system/type_A.py`, the examples section starting from line 117.\n* Patching against the file `sage/combinat/root_system/type_reducible.py`, the examples section starting from line 249.\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the examples section starting from line 458, the example starting from line 1202, the examples section starting from line 1211, the example starting from line 1227, the examples section starting from line 1235, the example starting from line 1280, the example section starting from line 1299.\nIn `trac_5794-continued.patch`:\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the example starting from line 1431, the example starting from line 1443, the example starting from line 1452, the example starting from line 1831, the example starting from line 1842.\nThe following files are not in the reference manual. You might want to consider exposing their features by adding them to the reference manual:\n1. `sage/combinat/root_system/type_A.py`\n2. `sage/combinat/root_system/type_reducible.py`",
+    "body": "Replying to [comment:19 bump]:\n> Apply all four patches in order.\n> \n> \n> ```\n> trac_5794-revised.patch\n> trac_5794-continued.patch\n> trac_5794-exceptional.patch\n> trac_5794-more-exceptional.patch\n> ```\n\n>\n> > Most docstrings adhere to the ReST format, but some don't.\n\n> \n> If you find nonconforming docstrings, please cite them by line number.\n> There is a lot of doc in these patches.\n\nNote that I'm not qualified to review the mathematical content of the patch. However, I would like to point out that the following patches and line numbers don't conform to ReST formatting:\n\n\n\nIn `trac_5794-revised.patch`:\n* Patching against the file `sage/combinat/root_system/type_A.py`, the examples section starting from line 117.\n* Patching against the file `sage/combinat/root_system/type_reducible.py`, the examples section starting from line 249.\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the examples section starting from line 458, the example starting from line 1202, the examples section starting from line 1211, the example starting from line 1227, the examples section starting from line 1235, the example starting from line 1280, the example section starting from line 1299.\nIn `trac_5794-continued.patch`:\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the example starting from line 1431, the example starting from line 1443, the example starting from line 1452, the example starting from line 1831, the example starting from line 1842.\nThe following files are not in the reference manual. You might want to consider exposing their features by adding them to the reference manual:\n1. `sage/combinat/root_system/type_A.py`\n2. `sage/combinat/root_system/type_reducible.py`",
     "created_at": "2009-06-19T21:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -458,17 +451,21 @@ archive/issue_comments_045344.json:
 Replying to [comment:19 bump]:
 > Apply all four patches in order.
 > 
-> {{{
+> 
+> ```
 > trac_5794-revised.patch
 > trac_5794-continued.patch
 > trac_5794-exceptional.patch
 > trac_5794-more-exceptional.patch
-> }}}
+> ```
+
 >
 > > Most docstrings adhere to the ReST format, but some don't.
+
 > 
 > If you find nonconforming docstrings, please cite them by line number.
 > There is a lot of doc in these patches.
+
 Note that I'm not qualified to review the mathematical content of the patch. However, I would like to point out that the following patches and line numbers don't conform to ReST formatting:
 
 
@@ -697,7 +694,7 @@ archive/issue_events_013597.json:
 archive/issue_comments_045354.json:
 ```json
 {
-    "body": "Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these changes in sage-4.3.rc0, and therefore running long doctests on weyl_characters.py still takes forever:\n\n\n```\n[ghitza@sage root_system]$ sd -t -long weyl_characters.py \nsage -t -long \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n         [242.2 s]\n```\n",
+    "body": "Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these changes in sage-4.3.rc0, and therefore running long doctests on weyl_characters.py still takes forever:\n\n```\n[ghitza@sage root_system]$ sd -t -long weyl_characters.py \nsage -t -long \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n         [242.2 s]\n```",
     "created_at": "2009-12-14T02:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
@@ -708,13 +705,11 @@ archive/issue_comments_045354.json:
 
 Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these changes in sage-4.3.rc0, and therefore running long doctests on weyl_characters.py still takes forever:
 
-
 ```
 [ghitza@sage root_system]$ sd -t -long weyl_characters.py 
 sage -t -long "devel/sage-main/sage/combinat/root_system/weyl_characters.py"
          [242.2 s]
 ```
-
 
 
 

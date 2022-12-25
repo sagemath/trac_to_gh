@@ -57,7 +57,7 @@ archive/issue_events_005685.json:
 archive/issue_comments_016240.json:
 ```json
 {
-    "body": "The tex file says:\n\n```\nNote that the \\sage kernel of a matrix $A$ is the ``left kernel'', i.e.\nthe space of vectors $w$ such that $wA=0$.\n```\n\nI assume that ```left kernel''` confuses tex2html, so changing that to emph might fix the issue.\n\nCheers,\n\nMichael",
+    "body": "The tex file says:\n\n```\nNote that the \\sage kernel of a matrix $A$ is the ``left kernel'', i.e.\nthe space of vectors $w$ such that $wA=0$.\n```\nI assume that ```left kernel''` confuses tex2html, so changing that to emph might fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-07T22:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
@@ -72,7 +72,6 @@ The tex file says:
 Note that the \sage kernel of a matrix $A$ is the ``left kernel'', i.e.
 the space of vectors $w$ such that $wA=0$.
 ```
-
 I assume that ```left kernel''` confuses tex2html, so changing that to emph might fix the issue.
 
 Cheers,

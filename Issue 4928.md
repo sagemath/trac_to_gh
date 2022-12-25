@@ -115,7 +115,7 @@ Is that number "71" to be updated? (If it should, but is not going to be updated
 archive/issue_comments_037319.json:
 ```json
 {
-    "body": "> The count of spkgs is beyond 90 (93 I think), but that is \n> not a one-to-one relation, of course.\n\nwstein`@`sage:~/sage/spkg/standard$ ls *.spkg |wc -l\n88\n\nBut I'm not convinced every spkg counts as an \"open source package\".  Are any of these spkg's \"open source packages\":\n\nelliptic_curves-0.1.spkg\nexamples-3.2.3.spkg\nextcode-3.2.3.spkg\n\nDefinitely 71 should increase though, e.g., since new spkg's like docutils-0.5.spkg have been added to sage since I computed that 71 number.",
+    "body": "> The count of spkgs is beyond 90 (93 I think), but that is \n> not a one-to-one relation, of course.\n\n\nwstein`@`sage:~/sage/spkg/standard$ ls *.spkg |wc -l\n88\n\nBut I'm not convinced every spkg counts as an \"open source package\".  Are any of these spkg's \"open source packages\":\n\nelliptic_curves-0.1.spkg\nexamples-3.2.3.spkg\nextcode-3.2.3.spkg\n\nDefinitely 71 should increase though, e.g., since new spkg's like docutils-0.5.spkg have been added to sage since I computed that 71 number.",
     "created_at": "2009-01-13T14:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4928",
     "type": "issue_comment",
@@ -126,6 +126,7 @@ archive/issue_comments_037319.json:
 
 > The count of spkgs is beyond 90 (93 I think), but that is 
 > not a one-to-one relation, of course.
+
 
 wstein`@`sage:~/sage/spkg/standard$ ls *.spkg |wc -l
 88
@@ -145,7 +146,7 @@ Definitely 71 should increase though, e.g., since new spkg's like docutils-0.5.s
 archive/issue_comments_037320.json:
 ```json
 {
-    "body": "I have checked and 3.2.3 has 89 spkgs. Of those six are not \n\n```\ndoc\nelliptic_curves\nexamples\nextcode\nscripts\npolytopes_db\n```\n\nOpen source projects IMHO. So let's use the number 83 for now.\n\nI am attaching a final version of the release notes shortly.\n\nCheers,\n\nMichael",
+    "body": "I have checked and 3.2.3 has 89 spkgs. Of those six are not \n\n```\ndoc\nelliptic_curves\nexamples\nextcode\nscripts\npolytopes_db\n```\nOpen source projects IMHO. So let's use the number 83 for now.\n\nI am attaching a final version of the release notes shortly.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-19T04:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4928",
     "type": "issue_comment",
@@ -164,7 +165,6 @@ extcode
 scripts
 polytopes_db
 ```
-
 Open source projects IMHO. So let's use the number 83 for now.
 
 I am attaching a final version of the release notes shortly.

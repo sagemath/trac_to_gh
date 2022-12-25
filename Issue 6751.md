@@ -90,7 +90,7 @@ There's one small typo ("had" for "has" in the docstring) which I put into a sec
 archive/issue_comments_055494.json:
 ```json
 {
-    "body": "Merged both patches. The patch `trac_6751.patch` applies OK, but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6751/trac_6751.patch && hg qpush\nadding trac_6751.patch to series file\napplying trac_6751.patch\npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\nHunk #1 succeeded at 537 with fuzz 2 (offset -76 lines).\nNow at: trac_6751.patch\n```\n",
+    "body": "Merged both patches. The patch `trac_6751.patch` applies OK, but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6751/trac_6751.patch && hg qpush\nadding trac_6751.patch to series file\napplying trac_6751.patch\npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\nHunk #1 succeeded at 537 with fuzz 2 (offset -76 lines).\nNow at: trac_6751.patch\n```",
     "created_at": "2009-08-30T09:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6751",
     "type": "issue_comment",
@@ -109,7 +109,6 @@ patching file sage/algebras/quatalg/quaternion_algebra_element.pyx
 Hunk #1 succeeded at 537 with fuzz 2 (offset -76 lines).
 Now at: trac_6751.patch
 ```
-
 
 
 

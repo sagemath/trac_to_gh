@@ -123,7 +123,7 @@ Resolution: fixed
 archive/issue_comments_010600.json:
 ```json
 {
-    "body": "Some statistics on running memcheck on `padic_capped_relative_element.py`:\nBefore:\n\n```\n==6186== LEAK SUMMARY:\n==6186==    definitely lost: 312 bytes in 30 blocks.\n==6186==      possibly lost: 261,425 bytes in 712 blocks.\n==6186==    still reachable: 39,070,789 bytes in 19,104 blocks.\n==6186==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\n6 blocks with 48 bytes, but those leaks should add up quickly.\n\nCheers,\n\nMichael",
+    "body": "Some statistics on running memcheck on `padic_capped_relative_element.py`:\nBefore:\n\n```\n==6186== LEAK SUMMARY:\n==6186==    definitely lost: 312 bytes in 30 blocks.\n==6186==      possibly lost: 261,425 bytes in 712 blocks.\n==6186==    still reachable: 39,070,789 bytes in 19,104 blocks.\n==6186==         suppressed: 0 bytes in 0 blocks.\n```\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n6 blocks with 48 bytes, but those leaks should add up quickly.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T21:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1674",
     "type": "issue_comment",
@@ -142,7 +142,6 @@ Before:
 ==6186==    still reachable: 39,070,789 bytes in 19,104 blocks.
 ==6186==         suppressed: 0 bytes in 0 blocks.
 ```
-
 After:
 
 ```
@@ -152,7 +151,6 @@ After:
 ==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.
 ==6600==         suppressed: 0 bytes in 0 blocks.
 ```
-
 6 blocks with 48 bytes, but those leaks should add up quickly.
 
 Cheers,

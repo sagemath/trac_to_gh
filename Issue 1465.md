@@ -3,7 +3,7 @@
 archive/issues_001465.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nG Edgar reported that on his mac the maple interface fails miserably to work at all.\nOn sage.math it works perfectly.  On my laptop (osx10.5.1 w/ maple 11) it does NOT work now. \n\nOn my laptop:\n\n```\nsage: maple.eval('2+2')\n'read \"/Users/was/.sage//temp/D_69_91_158_192.dhcp4.washington.edu/10242//i'\n```\n\n\nGerald Edgar:\n\n```\n13> sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15, Release Date: 2007-12-03                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple.eval('2+2')\nEnd Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0x9466378>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Applications/sage-2.8.15-osx10.4-ppc-PowerMacintosh-Darwin/\nlocal/bin/maple\nargs: ['/Applications/sage-2.8.15-osx10.4-ppc-PowerMacintosh-Darwin/\nlocal/bin/maple', '-t']\npatterns:\n   #-->\nbuffer (last 100 chars):\nbefore (last 100 chars):\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 16993\nchild_fd: 3\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 100\nsearchwindowsize: None\ndelaybeforesend: 0\n#-->quit;\nbytes used=487432, alloc=393144, time=0.03\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call\nlast)\n...\n   465         with gc_disabled():\n\n<type 'exceptions.RuntimeError'>: Unable to start maple\nsage: maple.eval('2+2')\n'read \"/Users/edgar/.sage//temp/dizzy.math.ohio_state.edu/16989//\ninterface/'\nsage: maple.eval('2+2')\n''\nsage: maple.eval('2+2')\n'4'\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1465\n\n",
+    "body": "Assignee: @williamstein\n\nG Edgar reported that on his mac the maple interface fails miserably to work at all.\nOn sage.math it works perfectly.  On my laptop (osx10.5.1 w/ maple 11) it does NOT work now. \n\nOn my laptop:\n\n```\nsage: maple.eval('2+2')\n'read \"/Users/was/.sage//temp/D_69_91_158_192.dhcp4.washington.edu/10242//i'\n```\n\nGerald Edgar:\n\n```\n13> sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15, Release Date: 2007-12-03                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple.eval('2+2')\nEnd Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0x9466378>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Applications/sage-2.8.15-osx10.4-ppc-PowerMacintosh-Darwin/\nlocal/bin/maple\nargs: ['/Applications/sage-2.8.15-osx10.4-ppc-PowerMacintosh-Darwin/\nlocal/bin/maple', '-t']\npatterns:\n   #-->\nbuffer (last 100 chars):\nbefore (last 100 chars):\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 16993\nchild_fd: 3\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 100\nsearchwindowsize: None\ndelaybeforesend: 0\n#-->quit;\nbytes used=487432, alloc=393144, time=0.03\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call\nlast)\n...\n   465         with gc_disabled():\n\n<type 'exceptions.RuntimeError'>: Unable to start maple\nsage: maple.eval('2+2')\n'read \"/Users/edgar/.sage//temp/dizzy.math.ohio_state.edu/16989//\ninterface/'\nsage: maple.eval('2+2')\n''\nsage: maple.eval('2+2')\n'4'\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1465\n\n",
     "created_at": "2007-12-12T01:02:13Z",
     "labels": [
         "component: interfaces",
@@ -28,7 +28,6 @@ On my laptop:
 sage: maple.eval('2+2')
 'read "/Users/was/.sage//temp/D_69_91_158_192.dhcp4.washington.edu/10242//i'
 ```
-
 
 Gerald Edgar:
 
@@ -82,7 +81,6 @@ sage: maple.eval('2+2')
 sage:
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1465
 
 
@@ -94,7 +92,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1465
 archive/issue_comments_009404.json:
 ```json
 {
-    "body": "I get the same error (OS X 10.5.5, Sage 3.2). I first noticed it when I tried to include Maple in my integration tests. Trying the same thing:\n\n```\nmaple.eval('2+2')\n'read \"/Users/tjlahey/.sage//temp/Cameron.local/61581//interface//tmp61581\"'\n```\n",
+    "body": "I get the same error (OS X 10.5.5, Sage 3.2). I first noticed it when I tried to include Maple in my integration tests. Trying the same thing:\n\n```\nmaple.eval('2+2')\n'read \"/Users/tjlahey/.sage//temp/Cameron.local/61581//interface//tmp61581\"'\n```",
     "created_at": "2008-11-27T02:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1465",
     "type": "issue_comment",
@@ -109,7 +107,6 @@ I get the same error (OS X 10.5.5, Sage 3.2). I first noticed it when I tried to
 maple.eval('2+2')
 'read "/Users/tjlahey/.sage//temp/Cameron.local/61581//interface//tmp61581"'
 ```
-
 
 
 

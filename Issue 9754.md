@@ -245,7 +245,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095368.json:
 ```json
 {
-    "body": "I was in the process of adding some doctests to be sure the row/column bug was fixed, and also homed in on:\n\n\n```\nif nullity>rows:\n    raise ValueError(\"nullity cannot exceed the number of rows or columns.\")\n```\n\n\nsince there should be two conditions to check:  rank < nrows,  rank < ncols.\n\nI got mightly confused since I forgot that `nullity()` is the *left* nullity.  Your other routines specify rank as an input, and for consistency I think this one should as well.  Maybe you think nullity as you design the matrix, and that is fine, but inputs and error messages would be clearer if you avoided the distinction between left and right kernels.  (This change in inputs also stopped me once.)\n\nCan you change the input to have `rank=` and adjust tests (doctests and actual error-checks in the code) accordingly?  You can keep your `nullity_generator` in the code, but lets label it as `left_nullity_generator` to make it clear that  rank + nullity  is the number of *rows* not the number of columns.\n\nSo there really isn't anything wrong here, but we have a chance to not add further to Sage's left/right, row/column dichotomy/confusion.  It'll be worth the effort.\n\nHere are the doctests I was adding for the `B` matrix of `random_subspaces_matrix()`:\n\n\n```\n        sage: (B.nrows(), B.ncols())\n        (6, 8)\n        sage: all([x in ZZ for x in A.list()])\n        True\n```\n\n\n\n```\n        sage: all([x in ZZ for x in B_expanded.list()])\n```\n\n\nRob",
+    "body": "I was in the process of adding some doctests to be sure the row/column bug was fixed, and also homed in on:\n\n```\nif nullity>rows:\n    raise ValueError(\"nullity cannot exceed the number of rows or columns.\")\n```\n\nsince there should be two conditions to check:  rank < nrows,  rank < ncols.\n\nI got mightly confused since I forgot that `nullity()` is the *left* nullity.  Your other routines specify rank as an input, and for consistency I think this one should as well.  Maybe you think nullity as you design the matrix, and that is fine, but inputs and error messages would be clearer if you avoided the distinction between left and right kernels.  (This change in inputs also stopped me once.)\n\nCan you change the input to have `rank=` and adjust tests (doctests and actual error-checks in the code) accordingly?  You can keep your `nullity_generator` in the code, but lets label it as `left_nullity_generator` to make it clear that  rank + nullity  is the number of *rows* not the number of columns.\n\nSo there really isn't anything wrong here, but we have a chance to not add further to Sage's left/right, row/column dichotomy/confusion.  It'll be worth the effort.\n\nHere are the doctests I was adding for the `B` matrix of `random_subspaces_matrix()`:\n\n```\n        sage: (B.nrows(), B.ncols())\n        (6, 8)\n        sage: all([x in ZZ for x in A.list()])\n        True\n```\n\n```\n        sage: all([x in ZZ for x in B_expanded.list()])\n```\n\nRob",
     "created_at": "2010-08-30T18:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
@@ -256,12 +256,10 @@ archive/issue_comments_095368.json:
 
 I was in the process of adding some doctests to be sure the row/column bug was fixed, and also homed in on:
 
-
 ```
 if nullity>rows:
     raise ValueError("nullity cannot exceed the number of rows or columns.")
 ```
-
 
 since there should be two conditions to check:  rank < nrows,  rank < ncols.
 
@@ -273,7 +271,6 @@ So there really isn't anything wrong here, but we have a chance to not add furth
 
 Here are the doctests I was adding for the `B` matrix of `random_subspaces_matrix()`:
 
-
 ```
         sage: (B.nrows(), B.ncols())
         (6, 8)
@@ -281,12 +278,9 @@ Here are the doctests I was adding for the `B` matrix of `random_subspaces_matri
         True
 ```
 
-
-
 ```
         sage: all([x in ZZ for x in B_expanded.list()])
 ```
-
 
 Rob
 
@@ -335,7 +329,7 @@ I made the suggested changes in the v5 patch (making rank the input, changing th
 archive/issue_comments_095371.json:
 ```json
 {
-    "body": "Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by @rbeezer created at 2010-08-31 05:17:31\n\n1.  With v5 patch:\n\n\n```\nsage: A=random_matrix(QQ, 5,9,algorithm='subspaces',rank=5)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(ring, nrows, ncols, algorithm, *args, **kwds)\n   1160         return A\n   1161     elif algorithm == 'echelon_form':\n-> 1162         return random_rref_matrix(parent, *args, **kwds)\n   1163     elif algorithm == 'echelonizable':\n   1164         return random_echelonizable_matrix(parent, *args, **kwds)\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_rref_matrix(parent, num_pivots)\n   1689         raise TypeError(\"the number of pivots must be an integer.\")\n   1690     if num_pivots<=0:\n-> 1691         raise ValueError(\"the number of pivots must be greater than zero.\")\n   1692     ring = parent.base_ring()\n   1693     if not ring.is_exact():\n\nValueError: the number of pivots must be greater than zero.\n```\n\n\nWith `rank=rows` the L matrix is empty (ie no rows), which is an interesting case (and often the source of student questions).  It seems to fail since your routines will not build a matrix in echelon form with no pivots.  Nor will it build an echelonizable matrix with zero rank.\n\nHowever, both are possible - a matrix with no pivots must be totally zeros.  A matrix of rank zero is totally zeros.  Since you have coded this carefully, I think everything works - if you just let it happen.\n\nPatch shows how to do this.  Apply it to experiment, and read the patch, then pop it off and make the necessary changes yourself if you believe it is OK.  I've only tested this a little bit, so don't presume it has my seal-of-approval.  Adjust error messages and tests.\n\n2.  In 'subspaces\" routine near the end.  Do you need to augment B to form N, and then strip out parts of M?  Seems you just produce the identity in the right \"half\" and then throw it away.  Will the following work?\n\n\n```\nJ=K.stack(L)\nreturn J.inverse()*B\n```\n\n\nWhat you have is clearer, but a comment or two in the source could replace the extra statements.",
+    "body": "Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by @rbeezer created at 2010-08-31 05:17:31\n\n1.  With v5 patch:\n\n```\nsage: A=random_matrix(QQ, 5,9,algorithm='subspaces',rank=5)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_matrix(ring, nrows, ncols, algorithm, *args, **kwds)\n   1160         return A\n   1161     elif algorithm == 'echelon_form':\n-> 1162         return random_rref_matrix(parent, *args, **kwds)\n   1163     elif algorithm == 'echelonizable':\n   1164         return random_echelonizable_matrix(parent, *args, **kwds)\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/constructor.pyc in random_rref_matrix(parent, num_pivots)\n   1689         raise TypeError(\"the number of pivots must be an integer.\")\n   1690     if num_pivots<=0:\n-> 1691         raise ValueError(\"the number of pivots must be greater than zero.\")\n   1692     ring = parent.base_ring()\n   1693     if not ring.is_exact():\n\nValueError: the number of pivots must be greater than zero.\n```\n\nWith `rank=rows` the L matrix is empty (ie no rows), which is an interesting case (and often the source of student questions).  It seems to fail since your routines will not build a matrix in echelon form with no pivots.  Nor will it build an echelonizable matrix with zero rank.\n\nHowever, both are possible - a matrix with no pivots must be totally zeros.  A matrix of rank zero is totally zeros.  Since you have coded this carefully, I think everything works - if you just let it happen.\n\nPatch shows how to do this.  Apply it to experiment, and read the patch, then pop it off and make the necessary changes yourself if you believe it is OK.  I've only tested this a little bit, so don't presume it has my seal-of-approval.  Adjust error messages and tests.\n\n2.  In 'subspaces\" routine near the end.  Do you need to augment B to form N, and then strip out parts of M?  Seems you just produce the identity in the right \"half\" and then throw it away.  Will the following work?\n\n```\nJ=K.stack(L)\nreturn J.inverse()*B\n```\n\nWhat you have is clearer, but a comment or two in the source could replace the extra statements.",
     "created_at": "2010-08-31T05:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
@@ -347,7 +341,6 @@ archive/issue_comments_095371.json:
 Attachment [trac_9754_allow_zero_rank.patch](tarball://root/attachments/some-uuid/ticket9754/trac_9754_allow_zero_rank.patch) by @rbeezer created at 2010-08-31 05:17:31
 
 1.  With v5 patch:
-
 
 ```
 sage: A=random_matrix(QQ, 5,9,algorithm='subspaces',rank=5)
@@ -372,7 +365,6 @@ ValueError                                Traceback (most recent call last)
 ValueError: the number of pivots must be greater than zero.
 ```
 
-
 With `rank=rows` the L matrix is empty (ie no rows), which is an interesting case (and often the source of student questions).  It seems to fail since your routines will not build a matrix in echelon form with no pivots.  Nor will it build an echelonizable matrix with zero rank.
 
 However, both are possible - a matrix with no pivots must be totally zeros.  A matrix of rank zero is totally zeros.  Since you have coded this carefully, I think everything works - if you just let it happen.
@@ -381,12 +373,10 @@ Patch shows how to do this.  Apply it to experiment, and read the patch, then po
 
 2.  In 'subspaces" routine near the end.  Do you need to augment B to form N, and then strip out parts of M?  Seems you just produce the identity in the right "half" and then throw it away.  Will the following work?
 
-
 ```
 J=K.stack(L)
 return J.inverse()*B
 ```
-
 
 What you have is clearer, but a comment or two in the source could replace the extra statements.
 
@@ -517,7 +507,7 @@ Does this only depend on #9720? There are some inconsistent statements with rega
 archive/issue_comments_095378.json:
 ```json
 {
-    "body": "Replying to [comment:13 wdj]:\n> Does this only depend on #9720? There are some inconsistent statements with regard to the dependencies in the comments above.\n\nHi David,\n\nNo, it needs all the prior patches.  The full chain is:\n\n#9720, #9803, #9802, #9754\n\neach one depends on the previous one in the list, so you'll have to apply three patches to test this one.  But this should be the end (ie you could use these to prepare for class, etc).\n\nThanks,\nRob",
+    "body": "Replying to [comment:13 wdj]:\n> Does this only depend on #9720? There are some inconsistent statements with regard to the dependencies in the comments above.\n\n\nHi David,\n\nNo, it needs all the prior patches.  The full chain is:\n\n#9720, #9803, #9802, #9754\n\neach one depends on the previous one in the list, so you'll have to apply three patches to test this one.  But this should be the end (ie you could use these to prepare for class, etc).\n\nThanks,\nRob",
     "created_at": "2010-09-04T00:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9754",
     "type": "issue_comment",
@@ -528,6 +518,7 @@ archive/issue_comments_095378.json:
 
 Replying to [comment:13 wdj]:
 > Does this only depend on #9720? There are some inconsistent statements with regard to the dependencies in the comments above.
+
 
 Hi David,
 

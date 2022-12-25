@@ -3,7 +3,7 @@
 archive/issues_007543.json:
 ```json
 {
-    "body": "Assignee: @mwhansen\n\nCC:  @videlec @saliola\n\nThe definition of S-adiques words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adiques to the word generator :\n\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adique word::\n\n    sage: words.s_adique(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adique word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adique(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adique words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n```\n\n\nSee the patch for more examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @videlec @saliola\n\nThe definition of S-adiques words is found here :\n\n[Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)\n\nThis patch adds S-adiques to the word generator :\n\n```\n    sage: tm = WordMorphism('a->ab,b->ba')\n    sage: fib = WordMorphism('a->ab,b->a')\n    sage: from itertools import repeat\n\nOne trivial example of infinite s-adique word::\n\n    sage: words.s_adique(repeat(tm),repeat('a'))\n    word: abbabaabbaababbabaababbaabbabaabbaababba...\n\nA less trivial infinite s-adique word::\n\n    sage: m = WordMorphism({0:tm,1:fib})\n    sage: tmword = words.ThueMorseWord()\n    sage: w = m(tmword)\n    sage: words.s_adique(w, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n\nRandom infinite s-adique words::\n\n    sage: from sage.misc.prandom import randint\n    sage: def it():\n    ...     while True: yield randint(0,1)\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n    word: abbaabababbaababbaabbaababbaabababbaabba...\n    sage: words.s_adique(it(), repeat('a'), [tm,fib])\n```\n\nSee the patch for more examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7543\n\n",
     "created_at": "2009-11-27T15:27:44Z",
     "labels": [
         "component: combinatorics"
@@ -24,7 +24,6 @@ The definition of S-adiques words is found here :
 [Pytheas S-adiques](https://www.lirmm.fr/arith/wiki/PytheasFogg/S-adiques)
 
 This patch adds S-adiques to the word generator :
-
 
 ```
     sage: tm = WordMorphism('a->ab,b->ba')
@@ -53,7 +52,6 @@ Random infinite s-adique words::
     word: abbaabababbaababbaabbaababbaabababbaabba...
     sage: words.s_adique(it(), repeat('a'), [tm,fib])
 ```
-
 
 See the patch for more examples.
 
@@ -104,7 +102,7 @@ Changing assignee from @mwhansen to @seblabbe.
 archive/issue_comments_063885.json:
 ```json
 {
-    "body": "I just updated the patch (doctest improvements) :\n\n\n```\n    sage: t = words.ThueMorseWord([tm,fib])\n    sage: words.s_adique(t, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n```\n\n\nI am wondering if I should add a `#random` where I use random examples. Sometimes, other computers gets different random sequence of numbers in the doctest routine...",
+    "body": "I just updated the patch (doctest improvements) :\n\n```\n    sage: t = words.ThueMorseWord([tm,fib])\n    sage: words.s_adique(t, repeat('a'))\n    word: abbaababbaabbaabbaababbaababbaabbaababba...\n```\n\nI am wondering if I should add a `#random` where I use random examples. Sometimes, other computers gets different random sequence of numbers in the doctest routine...",
     "created_at": "2009-12-08T12:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -115,13 +113,11 @@ archive/issue_comments_063885.json:
 
 I just updated the patch (doctest improvements) :
 
-
 ```
     sage: t = words.ThueMorseWord([tm,fib])
     sage: words.s_adique(t, repeat('a'))
     word: abbaababbaabbaabbaababbaababbaabbaababba...
 ```
-
 
 I am wondering if I should add a `#random` where I use random examples. Sometimes, other computers gets different random sequence of numbers in the doctest routine...
 
@@ -132,7 +128,7 @@ I am wondering if I should add a `#random` where I use random examples. Sometime
 archive/issue_comments_063886.json:
 ```json
 {
-    "body": "I just uploaded the patch. Some more examples. Better doc. The morphisms arguments can now be a callable so that the following works:\n\n\n```\n    sage: x = lambda h:WordMorphism({1:[2],2:[3]+[1]*(h+1),3:[3]+[1]*h})\n    sage: for h in [0,1,2,3]: print h, x(h)\n    0 WordMorphism: 1->2, 2->31, 3->3\n    1 WordMorphism: 1->2, 2->311, 3->31\n    2 WordMorphism: 1->2, 2->3111, 3->311\n    3 WordMorphism: 1->2, 2->31111, 3->3111\n    sage: w = Word(lambda n : valuation(n+1, 2) ); w\n    word: 0102010301020104010201030102010501020103...\n    sage: s = words.s_adique(w, repeat(3), x); s\n    word: 3232232232322322322323223223232232232232...\n    sage: prefixe = s[:10000]\n    sage: map(prefixe.number_of_factors, range(15))\n    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n    sage: [_[i+1] - _[i] for i in range(len(_)-1)]\n    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n```\n",
+    "body": "I just uploaded the patch. Some more examples. Better doc. The morphisms arguments can now be a callable so that the following works:\n\n```\n    sage: x = lambda h:WordMorphism({1:[2],2:[3]+[1]*(h+1),3:[3]+[1]*h})\n    sage: for h in [0,1,2,3]: print h, x(h)\n    0 WordMorphism: 1->2, 2->31, 3->3\n    1 WordMorphism: 1->2, 2->311, 3->31\n    2 WordMorphism: 1->2, 2->3111, 3->311\n    3 WordMorphism: 1->2, 2->31111, 3->3111\n    sage: w = Word(lambda n : valuation(n+1, 2) ); w\n    word: 0102010301020104010201030102010501020103...\n    sage: s = words.s_adique(w, repeat(3), x); s\n    word: 3232232232322322322323223223232232232232...\n    sage: prefixe = s[:10000]\n    sage: map(prefixe.number_of_factors, range(15))\n    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n    sage: [_[i+1] - _[i] for i in range(len(_)-1)]\n    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n```",
     "created_at": "2009-12-18T21:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -142,7 +138,6 @@ archive/issue_comments_063886.json:
 ```
 
 I just uploaded the patch. Some more examples. Better doc. The morphisms arguments can now be a callable so that the following works:
-
 
 ```
     sage: x = lambda h:WordMorphism({1:[2],2:[3]+[1]*(h+1),3:[3]+[1]*h})
@@ -161,7 +156,6 @@ I just uploaded the patch. Some more examples. Better doc. The morphisms argumen
     sage: [_[i+1] - _[i] for i in range(len(_)-1)]
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
-
 
 
 
@@ -382,7 +376,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063898.json:
 ```json
 {
-    "body": "Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by @videlec created at 2010-01-07 23:38:59\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\nThe doc is OK. positive review.",
+    "body": "Attachment [trac_7543_correction-sl.patch](tarball://root/attachments/some-uuid/ticket7543/trac_7543_correction-sl.patch) by @videlec created at 2010-01-07 23:38:59\n\nReplying to [comment:8 slabbe]:\n> I just uploaded the corrections patch because I did some doc and sphinx improvements.\n> \n> Vincent, can you review those small changes I did?\n\n\nThe doc is OK. positive review.",
     "created_at": "2010-01-07T23:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -397,6 +391,7 @@ Replying to [comment:8 slabbe]:
 > I just uploaded the corrections patch because I did some doc and sphinx improvements.
 > 
 > Vincent, can you review those small changes I did?
+
 
 The doc is OK. positive review.
 
@@ -425,7 +420,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_063900.json:
 ```json
 {
-    "body": "\n```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/combinat/words/word_generators.py # 23 doctests failed\n        sage -t -long devel/sage-main/sage/categories/hopf_algebras_with_basis.py # Segfault\n```\n",
+    "body": "```\nThe following tests failed:\n\n        sage -t -long devel/sage-main/sage/combinat/words/word_generators.py # 23 doctests failed\n        sage -t -long devel/sage-main/sage/categories/hopf_algebras_with_basis.py # Segfault\n```",
     "created_at": "2010-01-13T09:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -434,14 +429,12 @@ archive/issue_comments_063900.json:
 }
 ```
 
-
 ```
 The following tests failed:
 
         sage -t -long devel/sage-main/sage/combinat/words/word_generators.py # 23 doctests failed
         sage -t -long devel/sage-main/sage/categories/hopf_algebras_with_basis.py # Segfault
 ```
-
 
 
 
@@ -510,7 +503,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063904.json:
 ```json
 {
-    "body": "> I commented out the offending line and now it should be fine.\n\nVincent, to help you make the final review, here is what I changed in the patch to correct the failed doctests (the parameter check doesn't exist yet):\n\n```\n- kwds['check'] = False  \n+ #kwds['check'] = False \n```\n\n> Beware, I folded all patches in the same \"final\" one.\n> \n> Needs review again!",
+    "body": "> I commented out the offending line and now it should be fine.\n\n\nVincent, to help you make the final review, here is what I changed in the patch to correct the failed doctests (the parameter check doesn't exist yet):\n\n```\n- kwds['check'] = False  \n+ #kwds['check'] = False \n```\n> Beware, I folded all patches in the same \"final\" one.\n> \n> Needs review again!",
     "created_at": "2010-01-15T11:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -521,13 +514,13 @@ archive/issue_comments_063904.json:
 
 > I commented out the offending line and now it should be fine.
 
+
 Vincent, to help you make the final review, here is what I changed in the patch to correct the failed doctests (the parameter check doesn't exist yet):
 
 ```
 - kwds['check'] = False  
 + #kwds['check'] = False 
 ```
-
 > Beware, I folded all patches in the same "final" one.
 > 
 > Needs review again!
@@ -557,7 +550,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063906.json:
 ```json
 {
-    "body": "In the .identity_morphism() there a big problem with infinite alphabet ! The following will never finish\n\n\n```\nsage: W = Words(alphabet=Alphabet(name=\"NN\"))\nsage: W.identity_morphism()\n```\n\n\nAnyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying \"Not implemented for infinite alphabet\" or something like this ?\n\nThe rest is OK (I've got no doctesting error with the patch applied on a native 4.3 release)",
+    "body": "In the .identity_morphism() there a big problem with infinite alphabet ! The following will never finish\n\n```\nsage: W = Words(alphabet=Alphabet(name=\"NN\"))\nsage: W.identity_morphism()\n```\n\nAnyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying \"Not implemented for infinite alphabet\" or something like this ?\n\nThe rest is OK (I've got no doctesting error with the patch applied on a native 4.3 release)",
     "created_at": "2010-01-15T14:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -568,12 +561,10 @@ archive/issue_comments_063906.json:
 
 In the .identity_morphism() there a big problem with infinite alphabet ! The following will never finish
 
-
 ```
 sage: W = Words(alphabet=Alphabet(name="NN"))
 sage: W.identity_morphism()
 ```
-
 
 Anyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying "Not implemented for infinite alphabet" or something like this ?
 
@@ -624,7 +615,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063909.json:
 ```json
 {
-    "body": "> Anyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying \"Not implemented for infinite alphabet\" or something like this ?\n\nDone. Thanks for finding this problem. Needs review again!",
+    "body": "> Anyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying \"Not implemented for infinite alphabet\" or something like this ?\n\n\nDone. Thanks for finding this problem. Needs review again!",
     "created_at": "2010-01-15T17:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -634,6 +625,7 @@ archive/issue_comments_063909.json:
 ```
 
 > Anyway, it seems that WordMorphism is not implemented for infinite alphabet. Could you just raise an Error saying "Not implemented for infinite alphabet" or something like this ?
+
 
 Done. Thanks for finding this problem. Needs review again!
 
@@ -662,7 +654,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063911.json:
 ```json
 {
-    "body": "Knowing that\n\n```\nsage: timeit('W.size_of_alphabet() not in ZZ')\n625 loops, best of 3: 24 \u00b5s per loop\nsage: timeit('W.size_of_alphabet() is Infinity')\n625 loops, best of 3: 3.43 \u00b5s per loop\n```\n\n\nWe can win 21 micro seconds (at least on my computer) ! As it not important I switch to postive review... \n\nNice patch this sadic one !",
+    "body": "Knowing that\n\n```\nsage: timeit('W.size_of_alphabet() not in ZZ')\n625 loops, best of 3: 24 \u00b5s per loop\nsage: timeit('W.size_of_alphabet() is Infinity')\n625 loops, best of 3: 3.43 \u00b5s per loop\n```\n\nWe can win 21 micro seconds (at least on my computer) ! As it not important I switch to postive review... \n\nNice patch this sadic one !",
     "created_at": "2010-01-15T20:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7543",
     "type": "issue_comment",
@@ -679,7 +671,6 @@ sage: timeit('W.size_of_alphabet() not in ZZ')
 sage: timeit('W.size_of_alphabet() is Infinity')
 625 loops, best of 3: 3.43 µs per loop
 ```
-
 
 We can win 21 micro seconds (at least on my computer) ! As it not important I switch to postive review... 
 

@@ -85,7 +85,7 @@ Changing status from new to assigned.
 archive/issue_comments_037126.json:
 ```json
 {
-    "body": "* In minpoly (around line 1659)\n\n\n```\n+        ``self`` and use PARI's algdep to get a candidate\n+        minpoly `f`. If `f(``self``)`,\n+        evaluated to a higher precision, is close enough to 0 then evaluate\n+        `f(``self``)` symbolically, attempting to prove\n+        vanishing. If this fails, and ``epsilon`` is non-zero,\n+        return `f` if and only if\n+        `f(``self``) < ``epsilon```.\n```\n\nis not parsing correctly. See\n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.2.3-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/sage/calculus/calculus.html\n```\n\nI guess sphinx is having trouble with the nested quotes?\n\nAnother problem with the html conversion is that the footer (in ubuntu seamonkey) in that file is\nnot offset as blue. (Eg, the next link at the bottom of the page does not appear as it is overwritten by the white page background, but it is there if you mose over it.) It does render correctly in epiphany however. Does anyone but me even use seamonkey?",
+    "body": "* In minpoly (around line 1659)\n\n```\n+        ``self`` and use PARI's algdep to get a candidate\n+        minpoly `f`. If `f(``self``)`,\n+        evaluated to a higher precision, is close enough to 0 then evaluate\n+        `f(``self``)` symbolically, attempting to prove\n+        vanishing. If this fails, and ``epsilon`` is non-zero,\n+        return `f` if and only if\n+        `f(``self``) < ``epsilon```.\n```\nis not parsing correctly. See\n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.2.3-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/sage/calculus/calculus.html\n```\nI guess sphinx is having trouble with the nested quotes?\n\nAnother problem with the html conversion is that the footer (in ubuntu seamonkey) in that file is\nnot offset as blue. (Eg, the next link at the bottom of the page does not appear as it is overwritten by the white page background, but it is there if you mose over it.) It does render correctly in epiphany however. Does anyone but me even use seamonkey?",
     "created_at": "2009-01-02T12:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_037126.json:
 
 * In minpoly (around line 1659)
 
-
 ```
 +        ``self`` and use PARI's algdep to get a candidate
 +        minpoly `f`. If `f(``self``)`,
@@ -106,13 +105,11 @@ archive/issue_comments_037126.json:
 +        return `f` if and only if
 +        `f(``self``) < ``epsilon```.
 ```
-
 is not parsing correctly. See
 
 ```
 http://sage.math.washington.edu/home/mhansen/sage-3.2.3-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/sage/calculus/calculus.html
 ```
-
 I guess sphinx is having trouble with the nested quotes?
 
 Another problem with the html conversion is that the footer (in ubuntu seamonkey) in that file is
@@ -185,7 +182,7 @@ I've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxific
 archive/issue_comments_037130.json:
 ```json
 {
-    "body": "I looked through \n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/calculus.html\n```\n\nand this looks good to me.",
+    "body": "I looked through \n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/calculus.html\n```\nand this looks good to me.",
     "created_at": "2009-02-22T12:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
@@ -199,7 +196,6 @@ I looked through
 ```
 http://sage.math.washington.edu/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/calculus.html
 ```
-
 and this looks good to me.
 
 

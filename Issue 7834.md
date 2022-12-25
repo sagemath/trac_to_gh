@@ -3,7 +3,7 @@
 archive/issues_007834.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nThis appears inconsistent, and is an actual problem for me:\n\n```\nsage: ZZ(4).conjugate()\n4\nsage: RR(4).conjugate()\n4.00000000000000\nsage: RDF(4).conjugate()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/uio/arkimedes/s07/dagss/.sage/temp/corcaroli.uio.no/12687/_uio_arkimedes_s07_dagss__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.real_double.RealDoubleElement' object has no attribute 'conjugate'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7834\n\n",
+    "body": "Assignee: @aghitza\n\nThis appears inconsistent, and is an actual problem for me:\n\n```\nsage: ZZ(4).conjugate()\n4\nsage: RR(4).conjugate()\n4.00000000000000\nsage: RDF(4).conjugate()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/uio/arkimedes/s07/dagss/.sage/temp/corcaroli.uio.no/12687/_uio_arkimedes_s07_dagss__sage_init_sage_0.py in <module>()\n\nAttributeError: 'sage.rings.real_double.RealDoubleElement' object has no attribute 'conjugate'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7834\n\n",
     "created_at": "2010-01-03T18:53:11Z",
     "labels": [
         "component: basic arithmetic",
@@ -33,7 +33,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'sage.rings.real_double.RealDoubleElement' object has no attribute 'conjugate'
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/7834

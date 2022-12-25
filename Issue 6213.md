@@ -3,7 +3,7 @@
 archive/issues_006213.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
     "created_at": "2009-06-04T21:01:26Z",
     "labels": [
         "component: number theory",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 
 CC:  @loefflerd
 
-
 ```
     Hi David,
 
@@ -37,7 +36,6 @@ CC:  @loefflerd
 Agreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6213
 

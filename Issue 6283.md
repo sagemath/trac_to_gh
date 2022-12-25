@@ -3,7 +3,7 @@
 archive/issues_006283.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nThe top of SAGE_ROOT/makefile is\n\n```\n# How many threads should be used when doing parallel testing (and\n# sometime in the future, parallel building)?\nNUM_THREADS=20\n\n```\n\n\nI've many times accidently done \"make ptest\" and with extremely unpleasant results the next day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6283\n\n",
+    "body": "Assignee: tbd\n\nThe top of SAGE_ROOT/makefile is\n\n```\n# How many threads should be used when doing parallel testing (and\n# sometime in the future, parallel building)?\nNUM_THREADS=20\n\n```\n\nI've many times accidently done \"make ptest\" and with extremely unpleasant results the next day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6283\n\n",
     "created_at": "2009-06-14T09:57:54Z",
     "labels": [
         "component: doctest coverage",
@@ -26,7 +26,6 @@ The top of SAGE_ROOT/makefile is
 NUM_THREADS=20
 
 ```
-
 
 I've many times accidently done "make ptest" and with extremely unpleasant results the next day.
 
@@ -191,7 +190,7 @@ Hrm, I just checked on T2, and multiprocessing.cpu_count() returns 128 on that m
 archive/issue_comments_050074.json:
 ```json
 {
-    "body": "Replying to [comment:3 ddrake]:\n> Hrm, I just checked on T2, and multiprocessing.cpu_count() returns 128 on that machine, which perhaps is not ideal. The whole issue of cpus/cores/threads is really complicated -- see our own drkirkby. I think we can ignore this issue for the moment, since Sage doesn't even really build on T2.\n\nI'm happy to ignore this.  If it returns the \"wrong\" number, that seems like a bug in Python.\n\nI don't have access to many different kinds of machines.  Should we ask people on sage-devel to test `multiprocessing.cpu_count()`?",
+    "body": "Replying to [comment:3 ddrake]:\n> Hrm, I just checked on T2, and multiprocessing.cpu_count() returns 128 on that machine, which perhaps is not ideal. The whole issue of cpus/cores/threads is really complicated -- see our own drkirkby. I think we can ignore this issue for the moment, since Sage doesn't even really build on T2.\n\n\nI'm happy to ignore this.  If it returns the \"wrong\" number, that seems like a bug in Python.\n\nI don't have access to many different kinds of machines.  Should we ask people on sage-devel to test `multiprocessing.cpu_count()`?",
     "created_at": "2009-09-23T02:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -202,6 +201,7 @@ archive/issue_comments_050074.json:
 
 Replying to [comment:3 ddrake]:
 > Hrm, I just checked on T2, and multiprocessing.cpu_count() returns 128 on that machine, which perhaps is not ideal. The whole issue of cpus/cores/threads is really complicated -- see our own drkirkby. I think we can ignore this issue for the moment, since Sage doesn't even really build on T2.
+
 
 I'm happy to ignore this.  If it returns the "wrong" number, that seems like a bug in Python.
 
@@ -254,7 +254,7 @@ adds warning about setting the number of threads to 0
 archive/issue_comments_050077.json:
 ```json
 {
-    "body": "The file `SAGE_ROOT/makefile` has been manually patched to include the changes in `makefile.patch`. I have also included a warning about using the default value of zero, i.e. having `NUM_THREADS=0` which is the default:\n\n```\n# NUM_THREADS is the number of threads to use for parallel testing              \n# (and sometime in the future, parallel building).  If this is 0, then          \n# later it gets set to the number of processors -- see sage-ptest.              \n# The detection of number of processors might not be reliable on some           \n# platforms. On a Sun SPARC T5240 (t2.math), the reported number of processors  \n# might not correspond to the actual number of processors. See ticket #6283.    \n#                                                                               \n# WARNING: Unless you are certain that you want to use all the cores/processors\n# on your system for parallel doctesting, change the value of NUM_THREADS to    \n# a (sensible) positive integer. The default value is zero.                     \nNUM_THREADS=0  # default is zero\n```\n\nI think people should be made aware that having a value of zero means that all the cores/processors on their system would be devoted to parallel doctesting. On a personal machine, that's OK and any damage done would be localized to the person's own machine. But on a multi-user machine such as the machines making up the Sage cluster, bsd.math, etc., the default value of zero can be dangerous because on sage.math, say, this would use 24 cores for parallel doctesting. Most of the time, people are running very long jobs on sage.math, mod.math, and geom.math. Using all 24 cores on any of these machines can have unexpected consequences such as having doctest failures due to segfaults, out of memory error, and even bringing those machines offline. The patch `trac_6283-warning.patch` also adds a warning to this effect to the file `sage-ptest`. If you want to use the file `SAGE_ROOT/makefile` for parallel doctesting, be absolute sure that you have set a sensible positive integer for `NUM_THREADS`.",
+    "body": "The file `SAGE_ROOT/makefile` has been manually patched to include the changes in `makefile.patch`. I have also included a warning about using the default value of zero, i.e. having `NUM_THREADS=0` which is the default:\n\n```\n# NUM_THREADS is the number of threads to use for parallel testing              \n# (and sometime in the future, parallel building).  If this is 0, then          \n# later it gets set to the number of processors -- see sage-ptest.              \n# The detection of number of processors might not be reliable on some           \n# platforms. On a Sun SPARC T5240 (t2.math), the reported number of processors  \n# might not correspond to the actual number of processors. See ticket #6283.    \n#                                                                               \n# WARNING: Unless you are certain that you want to use all the cores/processors\n# on your system for parallel doctesting, change the value of NUM_THREADS to    \n# a (sensible) positive integer. The default value is zero.                     \nNUM_THREADS=0  # default is zero\n```\nI think people should be made aware that having a value of zero means that all the cores/processors on their system would be devoted to parallel doctesting. On a personal machine, that's OK and any damage done would be localized to the person's own machine. But on a multi-user machine such as the machines making up the Sage cluster, bsd.math, etc., the default value of zero can be dangerous because on sage.math, say, this would use 24 cores for parallel doctesting. Most of the time, people are running very long jobs on sage.math, mod.math, and geom.math. Using all 24 cores on any of these machines can have unexpected consequences such as having doctest failures due to segfaults, out of memory error, and even bringing those machines offline. The patch `trac_6283-warning.patch` also adds a warning to this effect to the file `sage-ptest`. If you want to use the file `SAGE_ROOT/makefile` for parallel doctesting, be absolute sure that you have set a sensible positive integer for `NUM_THREADS`.",
     "created_at": "2009-09-25T05:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -278,7 +278,6 @@ The file `SAGE_ROOT/makefile` has been manually patched to include the changes i
 # a (sensible) positive integer. The default value is zero.                     
 NUM_THREADS=0  # default is zero
 ```
-
 I think people should be made aware that having a value of zero means that all the cores/processors on their system would be devoted to parallel doctesting. On a personal machine, that's OK and any damage done would be localized to the person's own machine. But on a multi-user machine such as the machines making up the Sage cluster, bsd.math, etc., the default value of zero can be dangerous because on sage.math, say, this would use 24 cores for parallel doctesting. Most of the time, people are running very long jobs on sage.math, mod.math, and geom.math. Using all 24 cores on any of these machines can have unexpected consequences such as having doctest failures due to segfaults, out of memory error, and even bringing those machines offline. The patch `trac_6283-warning.patch` also adds a warning to this effect to the file `sage-ptest`. If you want to use the file `SAGE_ROOT/makefile` for parallel doctesting, be absolute sure that you have set a sensible positive integer for `NUM_THREADS`.
 
 
@@ -385,7 +384,7 @@ Dave
 archive/issue_comments_050082.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n> I realise this has got positive review, but I would have personally not given it that. I would have personally not allowed the default to exceed 8, since for 99% of machines with 8 or more 'CPUs/threads', they are mutli-user servers, not personal workstations. As such, people should not be exploiting them to the full. \nAgreed. \n\n\n\n\n\n> On 't2' currently this would not cause an issue, since it is not used a lot. But it would be an issue once there are many users. I doubt it would be sensible on sage.math to exploit it to the full. \nI think a value of 1 would be sensible. No matter if one runs doctest using `SAGE_ROOT/makefile` on a personal machine such as a Pentium 4, a dual core PC or sage.math, it would still use one thread as default. After manually merging changes to `SAGE_ROOT/makefile`, I did:\n\n```\nmake ptestlong\n```\n\nonly to realize that it spawned 24 cores on mod.math to parallel doctest. In panic mode, I hastily killed all of my threads. So how about opening another ticket to make `NUM_THREADS=1`?",
+    "body": "Replying to [comment:9 drkirkby]:\n> I realise this has got positive review, but I would have personally not given it that. I would have personally not allowed the default to exceed 8, since for 99% of machines with 8 or more 'CPUs/threads', they are mutli-user servers, not personal workstations. As such, people should not be exploiting them to the full. \nAgreed. \n\n\n\n\n\n> On 't2' currently this would not cause an issue, since it is not used a lot. But it would be an issue once there are many users. I doubt it would be sensible on sage.math to exploit it to the full. \n\nI think a value of 1 would be sensible. No matter if one runs doctest using `SAGE_ROOT/makefile` on a personal machine such as a Pentium 4, a dual core PC or sage.math, it would still use one thread as default. After manually merging changes to `SAGE_ROOT/makefile`, I did:\n\n```\nmake ptestlong\n```\nonly to realize that it spawned 24 cores on mod.math to parallel doctest. In panic mode, I hastily killed all of my threads. So how about opening another ticket to make `NUM_THREADS=1`?",
     "created_at": "2009-09-25T07:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -403,12 +402,12 @@ Agreed.
 
 
 > On 't2' currently this would not cause an issue, since it is not used a lot. But it would be an issue once there are many users. I doubt it would be sensible on sage.math to exploit it to the full. 
+
 I think a value of 1 would be sensible. No matter if one runs doctest using `SAGE_ROOT/makefile` on a personal machine such as a Pentium 4, a dual core PC or sage.math, it would still use one thread as default. After manually merging changes to `SAGE_ROOT/makefile`, I did:
 
 ```
 make ptestlong
 ```
-
 only to realize that it spawned 24 cores on mod.math to parallel doctest. In panic mode, I hastily killed all of my threads. So how about opening another ticket to make `NUM_THREADS=1`?
 
 
@@ -418,7 +417,7 @@ only to realize that it spawned 24 cores on mod.math to parallel doctest. In pan
 archive/issue_comments_050083.json:
 ```json
 {
-    "body": "Replying to [comment:10 mvngu]:\n> So how about opening another ticket to make `NUM_THREADS=1`?\n\nI have a different idea, which we'll discuss at #7011.",
+    "body": "Replying to [comment:10 mvngu]:\n> So how about opening another ticket to make `NUM_THREADS=1`?\n\n\nI have a different idea, which we'll discuss at #7011.",
     "created_at": "2009-09-25T07:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
@@ -429,6 +428,7 @@ archive/issue_comments_050083.json:
 
 Replying to [comment:10 mvngu]:
 > So how about opening another ticket to make `NUM_THREADS=1`?
+
 
 I have a different idea, which we'll discuss at #7011.
 

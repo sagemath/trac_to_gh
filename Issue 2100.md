@@ -358,7 +358,7 @@ Also todo: set barchart and scatterplot to have default aspect ratios of 'auto'.
 archive/issue_comments_013577.json:
 ```json
 {
-    "body": "Replying to [comment:14 jason]:\n\n> \n> Warning: this patch changes the definition of aspect_ratio.  Before, it was width/height, but now it is height/width.  The new meaning is consistent with matplotlib and Mathematica. Since the patch now changes a very fundamental thing about Sage (the meaning of aspect ratio), it probably should be put off until a major release.\n> \n\nApparently this statement isn't true.  The old aspect_ratio and new aspect_ratio mean the same thing.  I was basing the statement on reading the docs.  Either the current docs are backwards, or I was misreading them.\n\nSo, in short, things are good to go for finishing this patch and getting it into Sage as soon as possible.",
+    "body": "Replying to [comment:14 jason]:\n\n> \n> Warning: this patch changes the definition of aspect_ratio.  Before, it was width/height, but now it is height/width.  The new meaning is consistent with matplotlib and Mathematica. Since the patch now changes a very fundamental thing about Sage (the meaning of aspect ratio), it probably should be put off until a major release.\n> \n\n\nApparently this statement isn't true.  The old aspect_ratio and new aspect_ratio mean the same thing.  I was basing the statement on reading the docs.  Either the current docs are backwards, or I was misreading them.\n\nSo, in short, things are good to go for finishing this patch and getting it into Sage as soon as possible.",
     "created_at": "2010-10-02T02:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -372,6 +372,7 @@ Replying to [comment:14 jason]:
 > 
 > Warning: this patch changes the definition of aspect_ratio.  Before, it was width/height, but now it is height/width.  The new meaning is consistent with matplotlib and Mathematica. Since the patch now changes a very fundamental thing about Sage (the meaning of aspect ratio), it probably should be put off until a major release.
 > 
+
 
 Apparently this statement isn't true.  The old aspect_ratio and new aspect_ratio mean the same thing.  I was basing the statement on reading the docs.  Either the current docs are backwards, or I was misreading them.
 
@@ -552,7 +553,7 @@ This might be good bug-day fodder if people are already working on graphics code
 archive/issue_comments_013587.json:
 ```json
 {
-    "body": "I hope to take care of novoselt's comments - 'equal' and the documentation - today.  This will depend on #7981, #8632, #10244, and #10143.\n\n> Would it be possible to extend the functionality so that it is possible to specify either only width or only height of the final figure? I am thinking of using it in conjunction with SageTeX, where it would be natural to ask either for `width=\\textwidth` or `height=0.5\\texthight` and have the second dimension determined automatically based on the actual plot and aspect ratio.\n\nI think this is a good idea, but I don't think the people who might work on this will have time for it before bitrot sets in even further.  I have opened ticket #10633 for this.",
+    "body": "I hope to take care of novoselt's comments - 'equal' and the documentation - today.  This will depend on #7981, #8632, #10244, and #10143.\n\n> Would it be possible to extend the functionality so that it is possible to specify either only width or only height of the final figure? I am thinking of using it in conjunction with SageTeX, where it would be natural to ask either for `width=\\textwidth` or `height=0.5\\texthight` and have the second dimension determined automatically based on the actual plot and aspect ratio.\n\n\nI think this is a good idea, but I don't think the people who might work on this will have time for it before bitrot sets in even further.  I have opened ticket #10633 for this.",
     "created_at": "2011-01-14T13:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -564,6 +565,7 @@ archive/issue_comments_013587.json:
 I hope to take care of novoselt's comments - 'equal' and the documentation - today.  This will depend on #7981, #8632, #10244, and #10143.
 
 > Would it be possible to extend the functionality so that it is possible to specify either only width or only height of the final figure? I am thinking of using it in conjunction with SageTeX, where it would be natural to ask either for `width=\textwidth` or `height=0.5\texthight` and have the second dimension determined automatically based on the actual plot and aspect ratio.
+
 
 I think this is a good idea, but I don't think the people who might work on this will have time for it before bitrot sets in even further.  I have opened ticket #10633 for this.
 
@@ -610,7 +612,7 @@ Let's just take the 'equal' option out of the proposal.  I think it's there just
 archive/issue_comments_013590.json:
 ```json
 {
-    "body": "I had to change a few things based on the new save() but otherwise nearly all is the same. It also turned out that fig_tight was never used in .matplotlib(), and in fact only can be passed to matplotlib's savefig(), so I treated it basically the same as transparent in .save().\n\nI can also remove 'equal' if you want, that's fine.\n\nBefore I go ahead and update this, though, I have a question. The two functions not documented (`pad_for_tick_labels` and `adjust_figure_to_contain_bbox`) only are used in a commented-out line\n\n```\n            # this messes up the aspect ratio!\n            #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)\n```\n\nSo... should they even be included at this time?",
+    "body": "I had to change a few things based on the new save() but otherwise nearly all is the same. It also turned out that fig_tight was never used in .matplotlib(), and in fact only can be passed to matplotlib's savefig(), so I treated it basically the same as transparent in .save().\n\nI can also remove 'equal' if you want, that's fine.\n\nBefore I go ahead and update this, though, I have a question. The two functions not documented (`pad_for_tick_labels` and `adjust_figure_to_contain_bbox`) only are used in a commented-out line\n\n```\n            # this messes up the aspect ratio!\n            #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)\n```\nSo... should they even be included at this time?",
     "created_at": "2011-01-14T16:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -629,7 +631,6 @@ Before I go ahead and update this, though, I have a question. The two functions 
             # this messes up the aspect ratio!
             #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)
 ```
-
 So... should they even be included at this time?
 
 
@@ -639,7 +640,7 @@ So... should they even be included at this time?
 archive/issue_comments_013591.json:
 ```json
 {
-    "body": "Replying to [comment:26 kcrisman]:\n> I had to change a few things based on the new save() but otherwise nearly all is the same. It also turned out that fig_tight was never used in .matplotlib(), and in fact only can be passed to matplotlib's savefig(), so I treated it basically the same as transparent in .save().\n> \n> I can also remove 'equal' if you want, that's fine.\nDone as well.\n> Before I go ahead and update this, though, I have a question. The two functions not documented (`pad_for_tick_labels` and `adjust_figure_to_contain_bbox`) only are used in a commented-out line\n> {{{\n>             # this messes up the aspect ratio!\n>             #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)\n> }}}\n> So... should they even be included at this time?\nQuote from Jason: \"Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere).\"\n\nNew patch coming up relatively soon.",
+    "body": "Replying to [comment:26 kcrisman]:\n> I had to change a few things based on the new save() but otherwise nearly all is the same. It also turned out that fig_tight was never used in .matplotlib(), and in fact only can be passed to matplotlib's savefig(), so I treated it basically the same as transparent in .save().\n> \n> I can also remove 'equal' if you want, that's fine.\n\nDone as well.\n> Before I go ahead and update this, though, I have a question. The two functions not documented (`pad_for_tick_labels` and `adjust_figure_to_contain_bbox`) only are used in a commented-out line\n> \n> ```\n>             # this messes up the aspect ratio!\n>             #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)\n> ```\n> So... should they even be included at this time?\n  \nQuote from Jason: \"Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere).\"\n\nNew patch coming up relatively soon.",
     "created_at": "2011-01-17T17:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -652,13 +653,16 @@ Replying to [comment:26 kcrisman]:
 > I had to change a few things based on the new save() but otherwise nearly all is the same. It also turned out that fig_tight was never used in .matplotlib(), and in fact only can be passed to matplotlib's savefig(), so I treated it basically the same as transparent in .save().
 > 
 > I can also remove 'equal' if you want, that's fine.
+
 Done as well.
 > Before I go ahead and update this, though, I have a question. The two functions not documented (`pad_for_tick_labels` and `adjust_figure_to_contain_bbox`) only are used in a commented-out line
-> {{{
+> 
+> ```
 >             # this messes up the aspect ratio!
 >             #figure.canvas.mpl_connect('draw_event', pad_for_tick_labels)
-> }}}
+> ```
 > So... should they even be included at this time?
+  
 Quote from Jason: "Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere)."
 
 New patch coming up relatively soon.
@@ -670,7 +674,7 @@ New patch coming up relatively soon.
 archive/issue_comments_013592.json:
 ```json
 {
-    "body": "> > So... should they even be included at this time?\n> Quote from Jason: \"Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere).\"\nSince I didn't really know where these should be used, or what the context was, I decided to just leave them in but fully commented out, with an admonition to add documentation if they ever get used again.  (This would also make it easier for a future developer to use them, inter alia.)\n\nGetting some doctest failures, though, related to this:\n\n```\nsage -t  devel/sage/sage/plot/plot3d/plot_field3d.py # 6 doctests failed\n```\n\nI doubt this will be hard to resolve.  Anyway, just status updates...",
+    "body": "> > So... should they even be included at this time?\n  \n> Quote from Jason: \"Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere).\"\nSince I didn't really know where these should be used, or what the context was, I decided to just leave them in but fully commented out, with an admonition to add documentation if they ever get used again.  (This would also make it easier for a future developer to use them, inter alia.)\n\nGetting some doctest failures, though, related to this:\n\n```\nsage -t  devel/sage/sage/plot/plot3d/plot_field3d.py # 6 doctests failed\n```\nI doubt this will be hard to resolve.  Anyway, just status updates...",
     "created_at": "2011-01-17T19:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -680,6 +684,7 @@ archive/issue_comments_013592.json:
 ```
 
 > > So... should they even be included at this time?
+  
 > Quote from Jason: "Feel free to move those functions to another ticket if they are really not called from anywhere.  I think they are leftovers from experimentation, so probably not strictly needed (especially if they really aren't called or used from anywhere)."
 Since I didn't really know where these should be used, or what the context was, I decided to just leave them in but fully commented out, with an admonition to add documentation if they ever get used again.  (This would also make it easier for a future developer to use them, inter alia.)
 
@@ -688,7 +693,6 @@ Getting some doctest failures, though, related to this:
 ```
 sage -t  devel/sage/sage/plot/plot3d/plot_field3d.py # 6 doctests failed
 ```
-
 I doubt this will be hard to resolve.  Anyway, just status updates...
 
 
@@ -718,7 +722,7 @@ Rebase to 4.6.1/4.6.2.alpha0
 archive/issue_comments_013594.json:
 ```json
 {
-    "body": "The problem with the `plot_field3d` turns out to be the following very bad behavior of plotting vectors after this patch \n\n```\nsage: v = vector([1.,2.,3.])\nsage: v.plot() # all is well\nsage: plot(v) # passes in aspect_ratio to a 3d graphics, which already has such a thing, and get nasty traceback\n```\n\nThe culprit was telling `plot_vector_field3d` to do `plot(v)` for each vector instead of `v.plot()` as it should have.  However, this exposes something else really dumb - namely, that `plot.py` turns vectors into tuples before it plots them\n\n```\n    from sage.structure.element import is_Vector\n    if kwds.get('parametric',False) and is_Vector(funcs):\n        funcs = tuple(funcs)\n\n\n    if hasattr(funcs, 'plot'):\n        G = funcs.plot(*args, **original_opts)\n    # if we are using the generic plotting method\n    else:\n```\n\nthis presumably avoids the fact that\n\n```\nsage: w = vector([x^2,3,x^3])\nsage: plot(w,(x,0,1))\n---------------------------------------------------------------------------\nNotImplementedError                   \n```\n\nbut still this is a problem.  So after fixing this issue, I'm opening a ticket for making vector plotting more sensible. \n\nI think this change might need review (?) so I'm setting to 'needs review'.\n\nTo buildbot and reviewer: apply trac_2100-aspect-ratio-rebase.patch and trac_2100-3d-vector.patch.  Depends on #7981, #8632, #10244, and #10143.",
+    "body": "The problem with the `plot_field3d` turns out to be the following very bad behavior of plotting vectors after this patch \n\n```\nsage: v = vector([1.,2.,3.])\nsage: v.plot() # all is well\nsage: plot(v) # passes in aspect_ratio to a 3d graphics, which already has such a thing, and get nasty traceback\n```\nThe culprit was telling `plot_vector_field3d` to do `plot(v)` for each vector instead of `v.plot()` as it should have.  However, this exposes something else really dumb - namely, that `plot.py` turns vectors into tuples before it plots them\n\n```\n    from sage.structure.element import is_Vector\n    if kwds.get('parametric',False) and is_Vector(funcs):\n        funcs = tuple(funcs)\n\n\n    if hasattr(funcs, 'plot'):\n        G = funcs.plot(*args, **original_opts)\n    # if we are using the generic plotting method\n    else:\n```\nthis presumably avoids the fact that\n\n```\nsage: w = vector([x^2,3,x^3])\nsage: plot(w,(x,0,1))\n---------------------------------------------------------------------------\nNotImplementedError                   \n```\nbut still this is a problem.  So after fixing this issue, I'm opening a ticket for making vector plotting more sensible. \n\nI think this change might need review (?) so I'm setting to 'needs review'.\n\nTo buildbot and reviewer: apply trac_2100-aspect-ratio-rebase.patch and trac_2100-3d-vector.patch.  Depends on #7981, #8632, #10244, and #10143.",
     "created_at": "2011-01-17T20:17:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -734,7 +738,6 @@ sage: v = vector([1.,2.,3.])
 sage: v.plot() # all is well
 sage: plot(v) # passes in aspect_ratio to a 3d graphics, which already has such a thing, and get nasty traceback
 ```
-
 The culprit was telling `plot_vector_field3d` to do `plot(v)` for each vector instead of `v.plot()` as it should have.  However, this exposes something else really dumb - namely, that `plot.py` turns vectors into tuples before it plots them
 
 ```
@@ -748,7 +751,6 @@ The culprit was telling `plot_vector_field3d` to do `plot(v)` for each vector in
     # if we are using the generic plotting method
     else:
 ```
-
 this presumably avoids the fact that
 
 ```
@@ -757,7 +759,6 @@ sage: plot(w,(x,0,1))
 ---------------------------------------------------------------------------
 NotImplementedError                   
 ```
-
 but still this is a problem.  So after fixing this issue, I'm opening a ticket for making vector plotting more sensible. 
 
 I think this change might need review (?) so I'm setting to 'needs review'.
@@ -789,7 +790,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_013596.json:
 ```json
 {
-    "body": "> I think this change might need review (?) so I'm setting to 'needs review'.\n\nOh yeah, and I never actually looked at very many of the plots.  Definitely still needs review ;) of the pictures and the (small) reviewer patch.",
+    "body": "> I think this change might need review (?) so I'm setting to 'needs review'.\n\n\nOh yeah, and I never actually looked at very many of the plots.  Definitely still needs review ;) of the pictures and the (small) reviewer patch.",
     "created_at": "2011-01-18T15:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -799,6 +800,7 @@ archive/issue_comments_013596.json:
 ```
 
 > I think this change might need review (?) so I'm setting to 'needs review'.
+
 
 Oh yeah, and I never actually looked at very many of the plots.  Definitely still needs review ;) of the pictures and the (small) reviewer patch.
 
@@ -829,7 +831,7 @@ Depends on #10143
 archive/issue_comments_013598.json:
 ```json
 {
-    "body": "I'm setting this to positive review - it is a great improvement and it is a shame that it took us so long ;-)\n\nI am fine with the reviewer patch and I did take a look at a few (although definitely not all) plots in the documentation. Circles are finally circles!!!\n\nI have also discovered the following behaviour which may be a bug:\n\n```\nsage: x,y = var('x,y') \nsage: print x, y\nsage: f(x,y) = x^2 + y^2 - 2 \nsage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) \nsage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)\n```\n\nThe first line (with `fill=True`) completely fills the plot, not just the disk.",
+    "body": "I'm setting this to positive review - it is a great improvement and it is a shame that it took us so long ;-)\n\nI am fine with the reviewer patch and I did take a look at a few (although definitely not all) plots in the documentation. Circles are finally circles!!!\n\nI have also discovered the following behaviour which may be a bug:\n\n```\nsage: x,y = var('x,y') \nsage: print x, y\nsage: f(x,y) = x^2 + y^2 - 2 \nsage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) \nsage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)\n```\nThe first line (with `fill=True`) completely fills the plot, not just the disk.",
     "created_at": "2011-01-19T03:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -851,7 +853,6 @@ sage: f(x,y) = x^2 + y^2 - 2
 sage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) 
 sage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)
 ```
-
 The first line (with `fill=True`) completely fills the plot, not just the disk.
 
 
@@ -879,7 +880,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_013600.json:
 ```json
 {
-    "body": "Thanks!\n> I have also discovered the following behaviour which may be a bug:\n> {{{\n> sage: x,y = var('x,y') \n> sage: print x, y\n> sage: f(x,y) = x^2 + y^2 - 2 \n> sage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) \n> sage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)\n> }}}\n> The first line (with `fill=True`) completely fills the plot, not just the disk.\nThis also happens with e.g. 4.6.1.alpha3, so this is definitely not related.   It sounds a LOT like #9744.  It'd be great if you could confirm that.  I thought we'd already taken care of this... unfortunately not, it seems.",
+    "body": "Thanks!\n> I have also discovered the following behaviour which may be a bug:\n> \n> ```\n> sage: x,y = var('x,y') \n> sage: print x, y\n> sage: f(x,y) = x^2 + y^2 - 2 \n> sage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) \n> sage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)\n> ```\n> The first line (with `fill=True`) completely fills the plot, not just the disk.\n\nThis also happens with e.g. 4.6.1.alpha3, so this is definitely not related.   It sounds a LOT like #9744.  It'd be great if you could confirm that.  I thought we'd already taken care of this... unfortunately not, it seems.",
     "created_at": "2011-01-19T03:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -890,14 +891,16 @@ archive/issue_comments_013600.json:
 
 Thanks!
 > I have also discovered the following behaviour which may be a bug:
-> {{{
+> 
+> ```
 > sage: x,y = var('x,y') 
 > sage: print x, y
 > sage: f(x,y) = x^2 + y^2 - 2 
 > sage: implicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1) 
 > sage: implicit_plot(f, (-3, 3), (-3, 3),fill=False)
-> }}}
+> ```
 > The first line (with `fill=True`) completely fills the plot, not just the disk.
+
 This also happens with e.g. 4.6.1.alpha3, so this is definitely not related.   It sounds a LOT like #9744.  It'd be great if you could confirm that.  I thought we'd already taken care of this... unfortunately not, it seems.
 
 
@@ -925,7 +928,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_013602.json:
 ```json
 {
-    "body": "Actually, I was too hasty: \n\n```\nsage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1390:\n    sage: plot(v) # defaults to an arrow plot\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[9]>\", line 1, in <module>\n        plot(v) # defaults to an arrow plot###line 1390:\n    sage: plot(v) # defaults to an arrow plot\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1391:\n    sage: plot(v, plot_type='arrow')\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[10]>\", line 1, in <module>\n        plot(v, plot_type='arrow')###line 1391:\n    sage: plot(v, plot_type='arrow')\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1393:\n    sage: plot(v, plot_type='point')+frame3d((0,0,0), v.list())\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[12]>\", line 1, in <module>\n        plot(v, plot_type='point')+frame3d((Integer(0),Integer(0),Integer(0)), v.list())###line 1393:\n    sage: plot(v, plot_type='point')+frame3d((0,0,0), v.list())\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\n1 items had failures:\n   3 of  17 in __main__.example_45\n***Test Failed*** 3 failures.\n```\n\n\nThese are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..",
+    "body": "Actually, I was too hasty: \n\n```\nsage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1390:\n    sage: plot(v) # defaults to an arrow plot\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[9]>\", line 1, in <module>\n        plot(v) # defaults to an arrow plot###line 1390:\n    sage: plot(v) # defaults to an arrow plot\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1391:\n    sage: plot(v, plot_type='arrow')\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[10]>\", line 1, in <module>\n        plot(v, plot_type='arrow')###line 1391:\n    sage: plot(v, plot_type='arrow')\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\nFile \"/mnt/usb1/scratch/novoselt/sage/devel/sage-main/sage/modules/free_module_element.pyx\", line 1393:\n    sage: plot(v, plot_type='point')+frame3d((0,0,0), v.list())\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_45[12]>\", line 1, in <module>\n        plot(v, plot_type='point')+frame3d((Integer(0),Integer(0),Integer(0)), v.list())###line 1393:\n    sage: plot(v, plot_type='point')+frame3d((0,0,0), v.list())\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 174, in displayhook\n        print_obj(sys.stdout, obj)\n      File \"/mnt/usb1/scratch/novoselt/sage/local/lib/python/site-packages/sage/misc/displayhook.py\", line 142, in print_obj\n        print >>out_stream, `obj`\n      File \"base.pyx\", line 80, in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:2453)\n        self.show()\n      File \"base.pyx\", line 1048, in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:9375)\n        opts = self._process_viewing_options(kwds)\n      File \"base.pyx\", line 953, in sage.plot.plot3d.base.Graphics3d._process_viewing_options (sage/plot/plot3d/base.c:9174)\n        self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n      File \"base.pyx\", line 199, in sage.plot.plot3d.base.Graphics3d._determine_frame_aspect_ratio (sage/plot/plot3d/base.c:3397)\n        return [(a_max[i] - a_min[i])*aspect_ratio[i] for i in range(3)]\n    TypeError: can't multiply sequence by non-int of type 'float'\n**********************************************************************\n1 items had failures:\n   3 of  17 in __main__.example_45\n***Test Failed*** 3 failures.\n```\n\nThese are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..",
     "created_at": "2011-01-19T04:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1025,7 +1028,6 @@ Exception raised:
 ***Test Failed*** 3 failures.
 ```
 
-
 These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..
 
 
@@ -1053,7 +1055,7 @@ Yes, the problem I hit is exactly #9744 (which actually mentions the same exampl
 archive/issue_comments_013604.json:
 ```json
 {
-    "body": "Replying to [comment:36 novoselt]:\n> Actually, I was too hasty: \n> sage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\nAargh!  I'll try to fix this...\n> These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\nNo, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.",
+    "body": "Replying to [comment:36 novoselt]:\n> Actually, I was too hasty: \n> sage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\n\nAargh!  I'll try to fix this...\n> These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\n\nNo, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.",
     "created_at": "2011-01-19T13:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1065,8 +1067,10 @@ archive/issue_comments_013604.json:
 Replying to [comment:36 novoselt]:
 > Actually, I was too hasty: 
 > sage -t -long "devel/sage-main/sage/modules/free_module_element.pyx"
+
 Aargh!  I'll try to fix this...
 > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..
+
 No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.
 
 
@@ -1076,7 +1080,7 @@ No, that is the correct fix for now.   An overarching ticket is #10638, which I 
 archive/issue_comments_013605.json:
 ```json
 {
-    "body": "Replying to [comment:38 kcrisman]:\n> Replying to [comment:36 novoselt]:\n> > Actually, I was too hasty: \n> > sage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\n> Aargh!  I'll try to fix this...\n> > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\n> No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.\nThe correct fix is to remove that kwd from the plot when \n\n```\n\n        if plot_type == 'arrow' or plot_type == 'point':\n            dimension = len(coords)\n            if dimension == 3:\n                from sage.plot.plot3d.shapes2 import line3d, point3d\n                \n                if plot_type == 'arrow':\n                    return line3d([(0,0,0), coords], arrow_head=True, **kwds)\n                else:\n                    return point3d(coords, **kwds)\n```\n\nthat should do it.  I will try this later.",
+    "body": "Replying to [comment:38 kcrisman]:\n> Replying to [comment:36 novoselt]:\n> > Actually, I was too hasty: \n> > sage -t -long \"devel/sage-main/sage/modules/free_module_element.pyx\"\n\n> Aargh!  I'll try to fix this...\n> > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\n\n> No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.\nThe correct fix is to remove that kwd from the plot when \n\n```\n\n        if plot_type == 'arrow' or plot_type == 'point':\n            dimension = len(coords)\n            if dimension == 3:\n                from sage.plot.plot3d.shapes2 import line3d, point3d\n                \n                if plot_type == 'arrow':\n                    return line3d([(0,0,0), coords], arrow_head=True, **kwds)\n                else:\n                    return point3d(coords, **kwds)\n```\nthat should do it.  I will try this later.",
     "created_at": "2011-01-19T13:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1089,8 +1093,10 @@ Replying to [comment:38 kcrisman]:
 > Replying to [comment:36 novoselt]:
 > > Actually, I was too hasty: 
 > > sage -t -long "devel/sage-main/sage/modules/free_module_element.pyx"
+
 > Aargh!  I'll try to fix this...
 > > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..
+
 > No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.
 The correct fix is to remove that kwd from the plot when 
 
@@ -1106,7 +1112,6 @@ The correct fix is to remove that kwd from the plot when
                 else:
                     return point3d(coords, **kwds)
 ```
-
 that should do it.  I will try this later.
 
 
@@ -1116,7 +1121,7 @@ that should do it.  I will try this later.
 archive/issue_comments_013606.json:
 ```json
 {
-    "body": "> > > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\n> > No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.\nOkay, now I am not rushing out the door and can think straight.  The problem is that this was never doctesting the thing in question in the first place because of the issues raised in #10638.  \n\nI *think* the issue is that `_extract_kwds_for_show` keeps the ``@`options` value of `aspect_ratio='auto') in play; when this gets passed to the `show()` method of `Line` (which is what `line3d` creates in this case), it refers to the one in `base.PrimitiveObject`, which unfortunately then puts this value of `aspect_ratio` in:\n\n```\n        opts = {}\n        opts.update(SHOW_DEFAULTS)\n        if self._extra_kwds is not None:\n            opts.update(self._extra_kwds)\n        opts.update(kwds)\n```\n\nand then doesn't realize it's a problem in\n\n```\n        if opts['frame_aspect_ratio'] == 'automatic':\n            if opts['aspect_ratio'] != 'automatic':\n                # Set the aspect_ratio of the frame to be the same as that of\n                # the object we are rendering given the aspect_ratio we'll use\n                # for it.\n                opts['frame_aspect_ratio'] = \\\n                    self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n```\n\nWhich is where the problem happens.\n\nAlthough fixing this in the vector plotting didn't seem to work immediately.\n\nUnless we wanted to change all the 'auto' in this patch to 'automatic'.  I don't know if that is desirable either, though.  What do others think?",
+    "body": "> > > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..\n\n> > No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.\nOkay, now I am not rushing out the door and can think straight.  The problem is that this was never doctesting the thing in question in the first place because of the issues raised in #10638.  \n\nI *think* the issue is that `_extract_kwds_for_show` keeps the ``@`options` value of `aspect_ratio='auto') in play; when this gets passed to the `show()` method of `Line` (which is what `line3d` creates in this case), it refers to the one in `base.PrimitiveObject`, which unfortunately then puts this value of `aspect_ratio` in:\n\n```\n        opts = {}\n        opts.update(SHOW_DEFAULTS)\n        if self._extra_kwds is not None:\n            opts.update(self._extra_kwds)\n        opts.update(kwds)\n```\nand then doesn't realize it's a problem in\n\n```\n        if opts['frame_aspect_ratio'] == 'automatic':\n            if opts['aspect_ratio'] != 'automatic':\n                # Set the aspect_ratio of the frame to be the same as that of\n                # the object we are rendering given the aspect_ratio we'll use\n                # for it.\n                opts['frame_aspect_ratio'] = \\\n                    self._determine_frame_aspect_ratio(opts['aspect_ratio'])\n```\nWhich is where the problem happens.\n\nAlthough fixing this in the vector plotting didn't seem to work immediately.\n\nUnless we wanted to change all the 'auto' in this patch to 'automatic'.  I don't know if that is desirable either, though.  What do others think?",
     "created_at": "2011-01-19T19:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1126,6 +1131,7 @@ archive/issue_comments_013606.json:
 ```
 
 > > > These are the only errors on the whole library. I guess they should be fixed in the same way as in the reviewer patch. Or maybe there should be a better fix?..
+
 > > No, that is the correct fix for now.   An overarching ticket is #10638, which I forgot to mention before.
 Okay, now I am not rushing out the door and can think straight.  The problem is that this was never doctesting the thing in question in the first place because of the issues raised in #10638.  
 
@@ -1138,7 +1144,6 @@ I *think* the issue is that `_extract_kwds_for_show` keeps the ``@`options` valu
             opts.update(self._extra_kwds)
         opts.update(kwds)
 ```
-
 and then doesn't realize it's a problem in
 
 ```
@@ -1150,7 +1155,6 @@ and then doesn't realize it's a problem in
                 opts['frame_aspect_ratio'] = \
                     self._determine_frame_aspect_ratio(opts['aspect_ratio'])
 ```
-
 Which is where the problem happens.
 
 Although fixing this in the vector plotting didn't seem to work immediately.
@@ -1184,7 +1188,7 @@ Can we maybe change it the other way? Was `automatic` documented/used somewhere 
 archive/issue_comments_013608.json:
 ```json
 {
-    "body": "> I like `auto` more than `automatic`, so I don't want to change it.\nAgreed, but...\n> Can we maybe change it the other way? Was `automatic` documented/used somewhere before?\nYes, this is the standard 3D option.  See [this reference manual page](http://www.sagemath.org/doc/reference/sage/plot/plot3d/base.html#sage.plot.plot3d.base.Graphics3d.show) for plot/plot3d/base.pyx.\n\nOf course, it would be possible to change the plot3d case to also accept 'auto' easily enough - in fact, that's essentially what I've done in my latest patch - and one could change the documentation accordingly.  But we couldn't remove it without a deprecation period - and in my mind it's pointless to go to the trouble, given that it's mostly a default so we could change things without even needing to deprecate that option.",
+    "body": "> I like `auto` more than `automatic`, so I don't want to change it.\n\nAgreed, but...\n> Can we maybe change it the other way? Was `automatic` documented/used somewhere before?\n\nYes, this is the standard 3D option.  See [this reference manual page](http://www.sagemath.org/doc/reference/sage/plot/plot3d/base.html#sage.plot.plot3d.base.Graphics3d.show) for plot/plot3d/base.pyx.\n\nOf course, it would be possible to change the plot3d case to also accept 'auto' easily enough - in fact, that's essentially what I've done in my latest patch - and one could change the documentation accordingly.  But we couldn't remove it without a deprecation period - and in my mind it's pointless to go to the trouble, given that it's mostly a default so we could change things without even needing to deprecate that option.",
     "created_at": "2011-01-19T20:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1194,8 +1198,10 @@ archive/issue_comments_013608.json:
 ```
 
 > I like `auto` more than `automatic`, so I don't want to change it.
+
 Agreed, but...
 > Can we maybe change it the other way? Was `automatic` documented/used somewhere before?
+
 Yes, this is the standard 3D option.  See [this reference manual page](http://www.sagemath.org/doc/reference/sage/plot/plot3d/base.html#sage.plot.plot3d.base.Graphics3d.show) for plot/plot3d/base.pyx.
 
 Of course, it would be possible to change the plot3d case to also accept 'auto' easily enough - in fact, that's essentially what I've done in my latest patch - and one could change the documentation accordingly.  But we couldn't remove it without a deprecation period - and in my mind it's pointless to go to the trouble, given that it's mostly a default so we could change things without even needing to deprecate that option.
@@ -1227,7 +1233,7 @@ For consistency, it would be nice if the same variant was used throughout Sage, 
 archive/issue_comments_013610.json:
 ```json
 {
-    "body": "Replying to [comment:43 novoselt]:\n> I guess then changing to `automatic` is OK.\nI'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).\n> For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.",
+    "body": "Replying to [comment:43 novoselt]:\n> I guess then changing to `automatic` is OK.\n\nI'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).\n> For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.",
     "created_at": "2011-01-19T20:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1238,6 +1244,7 @@ archive/issue_comments_013610.json:
 
 Replying to [comment:43 novoselt]:
 > I guess then changing to `automatic` is OK.
+
 I'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).
 > For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.
 
@@ -1248,7 +1255,7 @@ I'd want to run that by Jason (the original author) first, though - after all, t
 archive/issue_comments_013611.json:
 ```json
 {
-    "body": "> > I guess then changing to `automatic` is OK.\n> I'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).\nOne reason being that matplotlib uses 'auto', and consistency with that is nice as well.\n> > For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.",
+    "body": "> > I guess then changing to `automatic` is OK.\n\n> I'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).\nOne reason being that matplotlib uses 'auto', and consistency with that is nice as well.\n> > For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.",
     "created_at": "2011-01-19T20:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1258,6 +1265,7 @@ archive/issue_comments_013611.json:
 ```
 
 > > I guess then changing to `automatic` is OK.
+
 > I'd want to run that by Jason (the original author) first, though - after all, the point below would suggest it doesn't matter (and it is a long process for me to rebase, sadly).
 One reason being that matplotlib uses 'auto', and consistency with that is nice as well.
 > > For consistency, it would be nice if the same variant was used throughout Sage, but then again the point is that this value should not be specified explicitly by the user.
@@ -1345,7 +1353,7 @@ Another data point: mma uses Automatic (not Auto): http://reference.wolfram.com/
 archive/issue_comments_013616.json:
 ```json
 {
-    "body": "Replying to [comment:48 jason]:\n> Wow, great job tracking down this subtle problem.  I personally slightly prefer `'auto'` over `'automatic'` because it's consistent with matplotlib and it's shorter.  However, I agree that users will probably not specify it too frequently, so `'automatic'` would probably be fine as well.  \nThanks.  I don't have any more time today to work on this, but I think then I vote for `'automatic'` for consistency, and having `'auto'` as one that secretly also works :) \n> If we do make the default `'automatic'`, then I think we'll have to convert it to `'auto'` before passing it to matplotlib.\nYes, I realize that.  I don't think that will be very difficult, since there seems to be only one place this is passed.",
+    "body": "Replying to [comment:48 jason]:\n> Wow, great job tracking down this subtle problem.  I personally slightly prefer `'auto'` over `'automatic'` because it's consistent with matplotlib and it's shorter.  However, I agree that users will probably not specify it too frequently, so `'automatic'` would probably be fine as well.  \nThanks.  I don't have any more time today to work on this, but I think then I vote for `'automatic'` for consistency, and having `'auto'` as one that secretly also works :) \n> If we do make the default `'automatic'`, then I think we'll have to convert it to `'auto'` before passing it to matplotlib.\n\nYes, I realize that.  I don't think that will be very difficult, since there seems to be only one place this is passed.",
     "created_at": "2011-01-19T21:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1358,6 +1366,7 @@ Replying to [comment:48 jason]:
 > Wow, great job tracking down this subtle problem.  I personally slightly prefer `'auto'` over `'automatic'` because it's consistent with matplotlib and it's shorter.  However, I agree that users will probably not specify it too frequently, so `'automatic'` would probably be fine as well.  
 Thanks.  I don't have any more time today to work on this, but I think then I vote for `'automatic'` for consistency, and having `'auto'` as one that secretly also works :) 
 > If we do make the default `'automatic'`, then I think we'll have to convert it to `'auto'` before passing it to matplotlib.
+
 Yes, I realize that.  I don't think that will be very difficult, since there seems to be only one place this is passed.
 
 
@@ -1475,7 +1484,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_013623.json:
 ```json
 {
-    "body": "Replying to [comment:53 kcrisman]:\n> This should all work fine now.  I do want to point out that the standard plots seem to have increased somewhat in size.\n\nYes, I reverted things to the matplotlib defaults.  Before, we made the ratio of height/width the golden ratio, but now it is the standard matplotlib default (which I believe is 4:3, which matches computer screens better anyway).",
+    "body": "Replying to [comment:53 kcrisman]:\n> This should all work fine now.  I do want to point out that the standard plots seem to have increased somewhat in size.\n\n\nYes, I reverted things to the matplotlib defaults.  Before, we made the ratio of height/width the golden ratio, but now it is the standard matplotlib default (which I believe is 4:3, which matches computer screens better anyway).",
     "created_at": "2011-02-15T03:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1486,6 +1495,7 @@ archive/issue_comments_013623.json:
 
 Replying to [comment:53 kcrisman]:
 > This should all work fine now.  I do want to point out that the standard plots seem to have increased somewhat in size.
+
 
 Yes, I reverted things to the matplotlib defaults.  Before, we made the ratio of height/width the golden ratio, but now it is the standard matplotlib default (which I believe is 4:3, which matches computer screens better anyway).
 
@@ -1624,7 +1634,7 @@ To patchbot/reviewers: Apply attachment:trac_2100-aspect-ratio-rebase.patch and 
 archive/issue_comments_013631.json:
 ```json
 {
-    "body": "Here is some code that looks less good with this patch than before.\n\n```\ndef my_eulers_method_plot(a_function,x0,y0,h,x1):\n    n=int((1.0)*(x1-x0)/h)\n    x00=x0; y00=y0\n    x01=x0; y01=y0\n    P=point((x00,y00),rgbcolor=hue(1)) # red    \n    Q=Graphics() # default is blue\n    f(x,y)=a_function(x,y) # Note that a_function should be a callable function of x, then y\n    for i in range(n+1):\n        y01 = y00+h*f(x00,y00)\n        x01 = x00+h\n        P=P+point((x01,y01),rgbcolor=hue(1))\n        Q=Q+line([(x00,y00),(x01,y01)])\n        x00=x01\n        y00=y01\n    return(P+Q)\n\nvar('x,y')\ndef euler_logistic_plot(parameter,y_start,end=15,step=1):\n    function(x,y)=parameter*y*(1-y)\n    my_eulers_method_plot(function,0,y_start,step,end).show(ymin=0)\n\neuler_logistic_plot(2,.7,97,.8)\n```\n\nI'll try to attach before and after.",
+    "body": "Here is some code that looks less good with this patch than before.\n\n```\ndef my_eulers_method_plot(a_function,x0,y0,h,x1):\n    n=int((1.0)*(x1-x0)/h)\n    x00=x0; y00=y0\n    x01=x0; y01=y0\n    P=point((x00,y00),rgbcolor=hue(1)) # red    \n    Q=Graphics() # default is blue\n    f(x,y)=a_function(x,y) # Note that a_function should be a callable function of x, then y\n    for i in range(n+1):\n        y01 = y00+h*f(x00,y00)\n        x01 = x00+h\n        P=P+point((x01,y01),rgbcolor=hue(1))\n        Q=Q+line([(x00,y00),(x01,y01)])\n        x00=x01\n        y00=y01\n    return(P+Q)\n\nvar('x,y')\ndef euler_logistic_plot(parameter,y_start,end=15,step=1):\n    function(x,y)=parameter*y*(1-y)\n    my_eulers_method_plot(function,0,y_start,step,end).show(ymin=0)\n\neuler_logistic_plot(2,.7,97,.8)\n```\nI'll try to attach before and after.",
     "created_at": "2011-02-19T04:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1659,7 +1669,6 @@ def euler_logistic_plot(parameter,y_start,end=15,step=1):
 
 euler_logistic_plot(2,.7,97,.8)
 ```
-
 I'll try to attach before and after.
 
 
@@ -1913,7 +1922,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_013645.json:
 ```json
 {
-    "body": "Replying to [comment:68 ryan]:\n> Note: I do get doctest failures on plot_field.py, but the failures are not caused by the patches to this ticket.\n\nWhat exactly do you mean by this? That a clean public release of Sage has doctest failures in `plot_field.py`?",
+    "body": "Replying to [comment:68 ryan]:\n> Note: I do get doctest failures on plot_field.py, but the failures are not caused by the patches to this ticket.\n\n\nWhat exactly do you mean by this? That a clean public release of Sage has doctest failures in `plot_field.py`?",
     "created_at": "2011-06-16T23:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -1924,6 +1933,7 @@ archive/issue_comments_013645.json:
 
 Replying to [comment:68 ryan]:
 > Note: I do get doctest failures on plot_field.py, but the failures are not caused by the patches to this ticket.
+
 
 What exactly do you mean by this? That a clean public release of Sage has doctest failures in `plot_field.py`?
 
@@ -2005,7 +2015,7 @@ Please rebase this patch to be applied on top of #11491.
 archive/issue_comments_013649.json:
 ```json
 {
-    "body": "Replying to [comment:72 jdemeyer]:\n> Please rebase this patch to be applied on top of #11491.\n\nThanks - another rebase where a major improvement takes second rank to a trivial adjustment.  Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.   Rebasing is not so trivial for the setups some of us have.\n\nBut no point crying over spilt milk.  Sigh... patches coming up.",
+    "body": "Replying to [comment:72 jdemeyer]:\n> Please rebase this patch to be applied on top of #11491.\n\n\nThanks - another rebase where a major improvement takes second rank to a trivial adjustment.  Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.   Rebasing is not so trivial for the setups some of us have.\n\nBut no point crying over spilt milk.  Sigh... patches coming up.",
     "created_at": "2011-06-20T14:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2016,6 +2026,7 @@ archive/issue_comments_013649.json:
 
 Replying to [comment:72 jdemeyer]:
 > Please rebase this patch to be applied on top of #11491.
+
 
 Thanks - another rebase where a major improvement takes second rank to a trivial adjustment.  Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.   Rebasing is not so trivial for the setups some of us have.
 
@@ -2084,7 +2095,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_013653.json:
 ```json
 {
-    "body": "Replying to [comment:73 kcrisman]:\n> Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.\n\nI have done that in the past and **people complained**: [http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5](http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5)",
+    "body": "Replying to [comment:73 kcrisman]:\n> Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.\n\n\nI have done that in the past and **people complained**: [http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5](http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5)",
     "created_at": "2011-06-20T15:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2095,6 +2106,7 @@ archive/issue_comments_013653.json:
 
 Replying to [comment:73 kcrisman]:
 > Especially since Ryan and I were involved on both tickets, it would have been nice to ask first.
+
 
 I have done that in the past and **people complained**: [http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5](http://groups.google.com/group/sage-devel/browse_frm/thread/abd5fb944769e052/8e4057172b97f2e5)
 
@@ -2127,7 +2139,7 @@ Anyway, it turned out I had time for fixing it - it was a very small overlap, lu
 archive/issue_comments_013655.json:
 ```json
 {
-    "body": "Replying to [comment:76 kcrisman]:\n> Right, and my point is that this sort of feels the same way.   I am **not** suggesting unmerging something positively reviewed - definitely not the direction I'm going.\n> \n> What I'm suggesting (and only suggesting, because I can only imagine how much work release management is) is that perhaps sending a ping via Trac on two closely related tickets which have some overlap would be good *before* deciding which one to merge first.  Especially since in this case #11491 is so clearly much more trivial than this one, and also much older.    I'm sure Ryan and I would have agreed that this one was higher priority.\n\nIt is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.\n\nSince the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.",
+    "body": "Replying to [comment:76 kcrisman]:\n> Right, and my point is that this sort of feels the same way.   I am **not** suggesting unmerging something positively reviewed - definitely not the direction I'm going.\n> \n> What I'm suggesting (and only suggesting, because I can only imagine how much work release management is) is that perhaps sending a ping via Trac on two closely related tickets which have some overlap would be good *before* deciding which one to merge first.  Especially since in this case #11491 is so clearly much more trivial than this one, and also much older.    I'm sure Ryan and I would have agreed that this one was higher priority.\n\n\nIt is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.\n\nSince the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.",
     "created_at": "2011-06-20T15:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2141,6 +2153,7 @@ Replying to [comment:76 kcrisman]:
 > 
 > What I'm suggesting (and only suggesting, because I can only imagine how much work release management is) is that perhaps sending a ping via Trac on two closely related tickets which have some overlap would be good *before* deciding which one to merge first.  Especially since in this case #11491 is so clearly much more trivial than this one, and also much older.    I'm sure Ryan and I would have agreed that this one was higher priority.
 
+
 It is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.
 
 Since the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.
@@ -2152,7 +2165,7 @@ Since the sage-devel discussion I mentioned, there is an agreement that once a p
 archive/issue_comments_013656.json:
 ```json
 {
-    "body": "Replying to [comment:76 kcrisman]:\n> Thanks for all the hard work; the final releases really are noticeably more polished nowadays, and it's a great thing.\nYou should really also thank Mitesh Patel for managing the [buildbot](http://build.sagemath.org/sage/waterfall).",
+    "body": "Replying to [comment:76 kcrisman]:\n> Thanks for all the hard work; the final releases really are noticeably more polished nowadays, and it's a great thing.\n\nYou should really also thank Mitesh Patel for managing the [buildbot](http://build.sagemath.org/sage/waterfall).",
     "created_at": "2011-06-20T15:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2163,6 +2176,7 @@ archive/issue_comments_013656.json:
 
 Replying to [comment:76 kcrisman]:
 > Thanks for all the hard work; the final releases really are noticeably more polished nowadays, and it's a great thing.
+
 You should really also thank Mitesh Patel for managing the [buildbot](http://build.sagemath.org/sage/waterfall).
 
 
@@ -2172,7 +2186,7 @@ You should really also thank Mitesh Patel for managing the [buildbot](http://bui
 archive/issue_comments_013657.json:
 ```json
 {
-    "body": "> It is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.\n\nUnderstood.\n\n> Since the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.\n\nYes, that definitely makes sense, as I hope I make clear above.  :)",
+    "body": "> It is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.\n\n\nUnderstood.\n\n> Since the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.\n\n\nYes, that definitely makes sense, as I hope I make clear above.  :)",
     "created_at": "2011-06-20T15:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2100",
     "type": "issue_comment",
@@ -2183,9 +2197,11 @@ archive/issue_comments_013657.json:
 
 > It is not easy for me to determine a priori which patches conflict with eachother, so what you propose isn't really possible.  It's not that I looked at both patches and decided which one to merge.  What happened is that I already decided to merge #11491 before I even considered the patch here.
 
+
 Understood.
 
 > Since the sage-devel discussion I mentioned, there is an agreement that once a patch is merged (even in a future alpha version), it should stay merged if possible.
+
 
 Yes, that definitely makes sense, as I hope I make clear above.  :)
 

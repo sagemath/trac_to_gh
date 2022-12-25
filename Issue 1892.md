@@ -3,7 +3,7 @@
 archive/issues_001892.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\n> The other option which some students tried was the upload a file\n> using Data.  It indeed uploads the file to a text cell, but we were\n> unable to find out how one accesses it. \n\nUpload it then access it by typing\n\nopen(DATA + 'chapitre.1.txt').read()\n\nThis DATA variable is documented in line three if you click on the Help button\nin the upper right of the worksheet.  It would also be good if it appeared any\ntime you upload a file in the confirmation message -- it doesn't right now.  I'll\nmake a ticket to add this (which will be very easy). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1892\n\n",
+    "body": "Assignee: boothby\n\n```\n> The other option which some students tried was the upload a file\n> using Data.  It indeed uploads the file to a text cell, but we were\n> unable to find out how one accesses it. \n\nUpload it then access it by typing\n\nopen(DATA + 'chapitre.1.txt').read()\n\nThis DATA variable is documented in line three if you click on the Help button\nin the upper right of the worksheet.  It would also be good if it appeared any\ntime you upload a file in the confirmation message -- it doesn't right now.  I'll\nmake a ticket to add this (which will be very easy). \n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1892\n\n",
     "created_at": "2008-01-23T14:02:10Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_001892.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 > The other option which some students tried was the upload a file
@@ -33,7 +32,6 @@ in the upper right of the worksheet.  It would also be good if it appeared any
 time you upload a file in the confirmation message -- it doesn't right now.  I'll
 make a ticket to add this (which will be very easy). 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/1892
 

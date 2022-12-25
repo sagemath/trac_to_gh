@@ -155,7 +155,7 @@ One comment: if you happen to have some toy (or serious) Sage code using biopyth
 archive/issue_comments_054261.json:
 ```json
 {
-    "body": "Is there a reason why biopython-1.51.spkg is not under revision control?\n\n```\n[mvngu@mod mvngu]$ tar -jxf biopython-1.51.spkg \n[mvngu@mod mvngu]$ cd biopython-1.51/\n[mvngu@mod biopython-1.51]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```\n",
+    "body": "Is there a reason why biopython-1.51.spkg is not under revision control?\n\n```\n[mvngu@mod mvngu]$ tar -jxf biopython-1.51.spkg \n[mvngu@mod mvngu]$ cd biopython-1.51/\n[mvngu@mod biopython-1.51]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```",
     "created_at": "2009-09-02T09:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6634",
     "type": "issue_comment",
@@ -172,7 +172,6 @@ Is there a reason why biopython-1.51.spkg is not under revision control?
 [mvngu@mod biopython-1.51]$ hg st
 abort: There is no Mercurial repository here (.hg not found)!
 ```
-
 
 
 

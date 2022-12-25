@@ -135,7 +135,7 @@ archive/issue_events_005372.json:
 archive/issue_comments_015008.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> I believe this can be marked as invalid given the new coercion model. \n\nRobertWB's wish is my command. Invalid.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 robertwb]:\n> I believe this can be marked as invalid given the new coercion model. \n\n\nRobertWB's wish is my command. Invalid.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-30T08:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2269",
     "type": "issue_comment",
@@ -146,6 +146,7 @@ archive/issue_comments_015008.json:
 
 Replying to [comment:2 robertwb]:
 > I believe this can be marked as invalid given the new coercion model. 
+
 
 RobertWB's wish is my command. Invalid.
 

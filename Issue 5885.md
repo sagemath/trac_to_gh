@@ -3,7 +3,7 @@
 archive/issues_005885.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n#5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\n\nSee #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5885\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n#5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\nSee #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5885\n\n",
     "created_at": "2009-04-24T01:20:37Z",
     "labels": [
         "component: calculus",
@@ -27,7 +27,6 @@ CC:  @jasongrout
 region_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)
 ```
 
-
 See #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5885
@@ -41,7 +40,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5885
 archive/issue_comments_046438.json:
 ```json
 {
-    "body": "What alternate syntax for a region of this kind would be appropriate, though?  Anything requiring a lambda construction or a previous function declaration seems awkward.\n\nPerhaps the fix is to require variable declaration (e.g.\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (x,-3, 3), (y,-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\nbut otherwise keep equify and friends.  In particular, the current doctest is too symmetric - better would be\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (x,-3, 4), (y,-4,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\nsince otherwise it isn't clear that the correct variables are associated with the correct input range otherwise.\n\nI'm also changing the milestone to 4.0, concurrent with the Pynac switch.    If anyone posts a patch they can change it back :)  I don't think it's a blocker either, but will accept Jason's categorization in those terms due to the switch.",
+    "body": "What alternate syntax for a region of this kind would be appropriate, though?  Anything requiring a lambda construction or a previous function declaration seems awkward.\n\nPerhaps the fix is to require variable declaration (e.g.\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (x,-3, 3), (y,-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\nbut otherwise keep equify and friends.  In particular, the current doctest is too symmetric - better would be\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (x,-3, 4), (y,-4,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\nsince otherwise it isn't clear that the correct variables are associated with the correct input range otherwise.\n\nI'm also changing the milestone to 4.0, concurrent with the Pynac switch.    If anyone posts a patch they can change it back :)  I don't think it's a blocker either, but will accept Jason's categorization in those terms due to the switch.",
     "created_at": "2009-04-30T01:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
@@ -57,13 +56,11 @@ Perhaps the fix is to require variable declaration (e.g.
 ```
 region_plot([y>0,x>0,x^2+y^2<3], (x,-3, 3), (y,-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)
 ```
-
 but otherwise keep equify and friends.  In particular, the current doctest is too symmetric - better would be
 
 ```
 region_plot([y>0,x>0,x^2+y^2<3], (x,-3, 4), (y,-4,3),plot_points=100,incol='gray').show(aspect_ratio=1)
 ```
-
 since otherwise it isn't clear that the correct variables are associated with the correct input range otherwise.
 
 I'm also changing the milestone to 4.0, concurrent with the Pynac switch.    If anyone posts a patch they can change it back :)  I don't think it's a blocker either, but will accept Jason's categorization in those terms due to the switch.
@@ -146,7 +143,7 @@ Given that #7809 has positive review and has changed this particular doctest, AN
 archive/issue_comments_046442.json:
 ```json
 {
-    "body": "I concur, but for a totally different reason.  The deprecation warning is now thrown (probably because of the changes in #7809?):\n\n\n```\nsage: var('y')\ny\nsage: region_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n/home/grout/sage/local/lib/python2.6/site-packages/sage/plot/contour_plot.py:565: DeprecationWarning: Unnamed ranges for more than one variable is deprecated and will be removed from a future release of Sage; you can used named ranges instead, like (x,0,2)\n  g, ranges = setup_for_eval_on_grid(f, [xrange, yrange], plot_points)\n\n\n```\n",
+    "body": "I concur, but for a totally different reason.  The deprecation warning is now thrown (probably because of the changes in #7809?):\n\n```\nsage: var('y')\ny\nsage: region_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n/home/grout/sage/local/lib/python2.6/site-packages/sage/plot/contour_plot.py:565: DeprecationWarning: Unnamed ranges for more than one variable is deprecated and will be removed from a future release of Sage; you can used named ranges instead, like (x,0,2)\n  g, ranges = setup_for_eval_on_grid(f, [xrange, yrange], plot_points)\n\n\n```",
     "created_at": "2010-01-09T05:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ archive/issue_comments_046442.json:
 
 I concur, but for a totally different reason.  The deprecation warning is now thrown (probably because of the changes in #7809?):
 
-
 ```
 sage: var('y')
 y
@@ -167,7 +163,6 @@ sage: region_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gr
 
 
 ```
-
 
 
 

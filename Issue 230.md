@@ -3,7 +3,7 @@
 archive/issues_000230.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nIf in a notebook I use:\n\n```\n%sh\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\nand then\n\n```\nload \"hello.spyx\"\n```\n\nthe notebook hangs. In the server log I get:\n\n```\n  ...\n  File \"/usr/local/sage/default/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 957, in _load_file\n    t = self.do_sage_extensions_preparsing(t,\nUnboundLocalError: local variable 't' referenced before assignment\n```\n\nThis is not due to the file not being found: If I try to load or attach a non-existent file, I get an appropriate error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/230\n\n",
+    "body": "Assignee: boothby\n\nIf in a notebook I use:\n\n```\n%sh\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\nand then\n\n```\nload \"hello.spyx\"\n```\nthe notebook hangs. In the server log I get:\n\n```\n  ...\n  File \"/usr/local/sage/default/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 957, in _load_file\n    t = self.do_sage_extensions_preparsing(t,\nUnboundLocalError: local variable 't' referenced before assignment\n```\nThis is not due to the file not being found: If I try to load or attach a non-existent file, I get an appropriate error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/230\n\n",
     "created_at": "2007-01-29T19:12:08Z",
     "labels": [
         "component: notebook",
@@ -30,13 +30,11 @@ def hello(name):
     print("Hello %s"%name)
 EOF
 ```
-
 and then
 
 ```
 load "hello.spyx"
 ```
-
 the notebook hangs. In the server log I get:
 
 ```
@@ -45,7 +43,6 @@ the notebook hangs. In the server log I get:
     t = self.do_sage_extensions_preparsing(t,
 UnboundLocalError: local variable 't' referenced before assignment
 ```
-
 This is not due to the file not being found: If I try to load or attach a non-existent file, I get an appropriate error message.
 
 Issue created by migration from https://trac.sagemath.org/ticket/230
@@ -59,7 +56,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/230
 archive/issue_comments_001018.json:
 ```json
 {
-    "body": "Now, instead of an error, one gets a not implemented error.  I've changed this from\ndefect to feature request. \n\nNote the correct input should be:\n\n\n```\n%sh\ncd\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n\n```\nload \"hello.spyx\"\n```\n",
+    "body": "Now, instead of an error, one gets a not implemented error.  I've changed this from\ndefect to feature request. \n\nNote the correct input should be:\n\n```\n%sh\ncd\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n```\nload \"hello.spyx\"\n```",
     "created_at": "2007-08-16T05:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
@@ -73,7 +70,6 @@ defect to feature request.
 
 Note the correct input should be:
 
-
 ```
 %sh
 cd
@@ -86,11 +82,9 @@ def hello(name):
 EOF
 ```
 
-
 ```
 load "hello.spyx"
 ```
-
 
 
 
@@ -117,7 +111,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_001020.json:
 ```json
 {
-    "body": "I can reproduce the problem, but the error message has changed:\n\n```\nload \"hello.spyx\"\nError loading /tmp/Work2/sage-2.8.1/sage-2.8.1/hello.spyx -- file not\nfound\n```\n\n\nThe spyx file can actually be found in $SAGE_ROOT/data/extcode/sage/hello.spyx\n\nThis bug also seems to be duplicate of #236.\n\nCheers,\n\nMichael",
+    "body": "I can reproduce the problem, but the error message has changed:\n\n```\nload \"hello.spyx\"\nError loading /tmp/Work2/sage-2.8.1/sage-2.8.1/hello.spyx -- file not\nfound\n```\n\nThe spyx file can actually be found in $SAGE_ROOT/data/extcode/sage/hello.spyx\n\nThis bug also seems to be duplicate of #236.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T12:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
@@ -133,7 +127,6 @@ load "hello.spyx"
 Error loading /tmp/Work2/sage-2.8.1/sage-2.8.1/hello.spyx -- file not
 found
 ```
-
 
 The spyx file can actually be found in $SAGE_ROOT/data/extcode/sage/hello.spyx
 

@@ -220,7 +220,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058973.json:
 ```json
 {
-    "body": "\n```\n18:13 < mvngu> rbeezer: The output of brute_force() is all the 312 possible\n               dicipherments.\n18:14 < mvngu> rbeezer: It uses a list of list for an indexing scheme that's\n               meant for readability.\n18:14 < rbeezer> but I'm not getting the keys that achieves them\n18:14 < rbeezer> the L list is a list of empty lists??\n18:14 < mvngu> rbeezer: Let me upload my recent patches....\n18:14 < rbeezer> aah, that'd help  ;-) ;-)\n18:18 < mvngu> rbeezer: Uploaded patches.\n18:18 < mvngu> rbeezer: Note the ticket dependency.\n18:19 < rbeezer> thanks - do they include whatever prompted you to take the \n                 ticket back to \"needs work\"\n18:19 < mvngu> rbeezer: yes\n18:19 < rbeezer> In other words, should I attempt a full review in the next 6 \n                 hours, or no?\n18:19 < mvngu> rbeezer: I fixed some documentation typos, add an example on the \n               decimation cipher.\n18:20 < mvngu> rbeezer: And yes, I think it's ready for a full review.\n18:20 < mvngu> rbeezer: Thank you very much for spending time on these crypto \n               stuff!\n```\n",
+    "body": "```\n18:13 < mvngu> rbeezer: The output of brute_force() is all the 312 possible\n               dicipherments.\n18:14 < mvngu> rbeezer: It uses a list of list for an indexing scheme that's\n               meant for readability.\n18:14 < rbeezer> but I'm not getting the keys that achieves them\n18:14 < rbeezer> the L list is a list of empty lists??\n18:14 < mvngu> rbeezer: Let me upload my recent patches....\n18:14 < rbeezer> aah, that'd help  ;-) ;-)\n18:18 < mvngu> rbeezer: Uploaded patches.\n18:18 < mvngu> rbeezer: Note the ticket dependency.\n18:19 < rbeezer> thanks - do they include whatever prompted you to take the \n                 ticket back to \"needs work\"\n18:19 < mvngu> rbeezer: yes\n18:19 < rbeezer> In other words, should I attempt a full review in the next 6 \n                 hours, or no?\n18:19 < mvngu> rbeezer: I fixed some documentation typos, add an example on the \n               decimation cipher.\n18:20 < mvngu> rbeezer: And yes, I think it's ready for a full review.\n18:20 < mvngu> rbeezer: Thank you very much for spending time on these crypto \n               stuff!\n```",
     "created_at": "2009-10-15T01:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -228,7 +228,6 @@ archive/issue_comments_058973.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
-
 
 ```
 18:13 < mvngu> rbeezer: The output of brute_force() is all the 312 possible
@@ -255,7 +254,6 @@ archive/issue_comments_058973.json:
 
 
 
-
 ---
 
 archive/issue_comments_058974.json:
@@ -279,7 +277,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058975.json:
 ```json
 {
-    "body": "At present, here's what happening with the method `brute_force()`: it returns a list of lists `L` that contains all the possible decipherments. And that's it, not even the key that results in a candidate decipherment. If you think the present behaviour is confusing, yes, I agree with that. Here's a sample session.\n\n```\nsage: A = AffineCryptosystem(AlphabeticStrings())\nsage: cipher = A(11, 4)\nsage: P = A.encoding(\"Have a nice day at the seashore.\")\nsage: C = cipher(P); C\nDEBWEROAWLEIEFFDWUWEUDCJW\nsage: candidates = A.brute_force(C)\nsage: candidates[1]\n\n[DEBWEROAWLEIEFFDWUWEUDCJW,\n CDAVDQNZVKDHDEECVTVDTCBIV,\n BCZUCPMYUJCGCDDBUSUCSBAHU,\n ABYTBOLXTIBFBCCATRTBRAZGT,\n ZAXSANKWSHAEABBZSQSAQZYFS,\n YZWRZMJVRGZDZAAYRPRZPYXER,\n XYVQYLIUQFYCYZZXQOQYOXWDQ,\n WXUPXKHTPEXBXYYWPNPXNWVCP,\n VWTOWJGSODWAWXXVOMOWMVUBO,\n UVSNVIFRNCVZVWWUNLNVLUTAN,\n TURMUHEQMBUYUVVTMKMUKTSZM,\n STQLTGDPLATXTUUSLJLTJSRYL,\n RSPKSFCOKZSWSTTRKIKSIRQXK,\n QROJREBNJYRVRSSQJHJRHQPWJ,\n PQNIQDAMIXQUQRRPIGIQGPOVI,\n OPMHPCZLHWPTPQQOHFHPFONUH,\n NOLGOBYKGVOSOPPNGEGOENMTG,\n MNKFNAXJFUNRNOOMFDFNDMLSF,\n LMJEMZWIETMQMNNLECEMCLKRE,\n KLIDLYVHDSLPLMMKDBDLBKJQD,\n JKHCKXUGCRKOKLLJCACKAJIPC,\n IJGBJWTFBQJNJKKIBZBJZIHOB,\n HIFAIVSEAPIMIJJHAYAIYHGNA,\n GHEZHURDZOHLHIIGZXZHXGFMZ,\n FGDYGTQCYNGKGHHFYWYGWFELY,\n EFCXFSPBXMFJFGGEXVXFVEDKX]\n```\n\nI think this is perhaps why you said the output of `brute_force()` is odd. In the method `brute_force()` of the shift cipher from #7123, it provides both the key together with the corresponding candidate decipherment. In the current affine cipher implementation, I forgot about the output of the brute force method in #7123. OK, move to \"needs work\" again.",
+    "body": "At present, here's what happening with the method `brute_force()`: it returns a list of lists `L` that contains all the possible decipherments. And that's it, not even the key that results in a candidate decipherment. If you think the present behaviour is confusing, yes, I agree with that. Here's a sample session.\n\n```\nsage: A = AffineCryptosystem(AlphabeticStrings())\nsage: cipher = A(11, 4)\nsage: P = A.encoding(\"Have a nice day at the seashore.\")\nsage: C = cipher(P); C\nDEBWEROAWLEIEFFDWUWEUDCJW\nsage: candidates = A.brute_force(C)\nsage: candidates[1]\n\n[DEBWEROAWLEIEFFDWUWEUDCJW,\n CDAVDQNZVKDHDEECVTVDTCBIV,\n BCZUCPMYUJCGCDDBUSUCSBAHU,\n ABYTBOLXTIBFBCCATRTBRAZGT,\n ZAXSANKWSHAEABBZSQSAQZYFS,\n YZWRZMJVRGZDZAAYRPRZPYXER,\n XYVQYLIUQFYCYZZXQOQYOXWDQ,\n WXUPXKHTPEXBXYYWPNPXNWVCP,\n VWTOWJGSODWAWXXVOMOWMVUBO,\n UVSNVIFRNCVZVWWUNLNVLUTAN,\n TURMUHEQMBUYUVVTMKMUKTSZM,\n STQLTGDPLATXTUUSLJLTJSRYL,\n RSPKSFCOKZSWSTTRKIKSIRQXK,\n QROJREBNJYRVRSSQJHJRHQPWJ,\n PQNIQDAMIXQUQRRPIGIQGPOVI,\n OPMHPCZLHWPTPQQOHFHPFONUH,\n NOLGOBYKGVOSOPPNGEGOENMTG,\n MNKFNAXJFUNRNOOMFDFNDMLSF,\n LMJEMZWIETMQMNNLECEMCLKRE,\n KLIDLYVHDSLPLMMKDBDLBKJQD,\n JKHCKXUGCRKOKLLJCACKAJIPC,\n IJGBJWTFBQJNJKKIBZBJZIHOB,\n HIFAIVSEAPIMIJJHAYAIYHGNA,\n GHEZHURDZOHLHIIGZXZHXGFMZ,\n FGDYGTQCYNGKGHHFYWYGWFELY,\n EFCXFSPBXMFJFGGEXVXFVEDKX]\n```\nI think this is perhaps why you said the output of `brute_force()` is odd. In the method `brute_force()` of the shift cipher from #7123, it provides both the key together with the corresponding candidate decipherment. In the current affine cipher implementation, I forgot about the output of the brute force method in #7123. OK, move to \"needs work\" again.",
     "created_at": "2009-10-15T01:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -326,7 +324,6 @@ sage: candidates[1]
  FGDYGTQCYNGKGHHFYWYGWFELY,
  EFCXFSPBXMFJFGGEXVXFVEDKX]
 ```
-
 I think this is perhaps why you said the output of `brute_force()` is odd. In the method `brute_force()` of the shift cipher from #7123, it provides both the key together with the corresponding candidate decipherment. In the current affine cipher implementation, I forgot about the output of the brute force method in #7123. OK, move to "needs work" again.
 
 
@@ -424,7 +421,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058980.json:
 ```json
 {
-    "body": "Replying to [comment:11 rbeezer]:\n> 1.  I think `inverse_key()` is broken.  The constant term is always identical, for example, run\n\n```\nx=S.random_key(); print x, S.inverse_key(*x)\n```\n\n> repeatedly. This shouldn't happen even for a=1 as is written in the doctests, since when a=1 it is a shift system.  For testing, the inverse of (a,b)=(5,7) should be (21,9).  You can test this by enchipering with one key and deciphering with the other, results should be the same (this might be good thing to do in the doctests).\n\nI may be misunderstanding your comment here, so please tell me if that's the case. Any key `(a,b) in ZZ/nZZ x ZZ/nZZ` of the affine cipher is such that `gcd(a,n) = 1`. So you're saying that the inverse key corresponding to `(a, b)` is `(a^{-1}, -b)` where `a^{-1}` is the multiplicative inverse of `a` modulo `n`? If that is the case, then the current implementation of `inverse_key()` is clearly broken:\n\n```\n        try:\n            from copy import copy\n            from sage.rings.arith import inverse_mod\n            n = self.alphabet_size()\n            return (inverse_mod(a, n), copy(b))\n        except:\n            raise ValueError(\"(a, b) = (%s, %s) is outside the range of acceptable values for a key of this affine cipher.\" % (a, b))\n```\n\n\nHow then would one use the above defined inverse key to decrypt a ciphertext? The current implementation of the method `deciphering()` follows this Wikipedia description of the encryption and decryption functions of the affine cipher:\n\nhttp://en.wikipedia.org/wiki/Affine_cipher\n\nThis agrees with the following text that I have access to:\n\n* Doug Stinson. \"Cryptography: Theory and Practice\" 3rd edition.\n* Wade Trappe and Lawrence C. Washington. \"Introduction to Cryptography with Coding Theory\"\n\n\n\n\n\n> Maybe you just need subtraction someplace where you have a addition, or...\n\nI don't quite understand this comment. Can you please explain it?\n\n\n\n\n\n> 2.  Would it make sense to build the list `A` of invertible linear coefficients in the `brute_force` method as part of `__init__` for the cryptosystem? \n\nYes it does make sense to do so, and I have implemented this in response to your suggestion. The resulting code of the affine crypto module looks less \"ugly\" from my point of view. Thank you, Rob. Please see the latest version of the patches.\n\n\n\n\n\n> Then you could skip some of the gcd-stuff.\n\nAnd I have skipped some of the GCD computation with the above implementation of a list of invertible elements in the multiplicative group of `ZZ/nZZ`.\n\n\n\n\n\n> For example when building a random key, you could just grab a linear coefficient, instead of repeatedly testing. \n\nDone according to your suggestion.\n\n\n\n\n\n> Or when checking validity for a new key, you could just test on the list. \n\nDone according to your suggestion.\n\n\n\n\n\n>  Done right, the generation of `A` could easily generalize to a new alphabet length for a new monoid as the alphabet.\n\nI can see in my mind how to implement this based on the implementation of generating invertible elements in the multiplicative group of `ZZ/nZZ`. I think this would entail changing the implementation of the class(es) that implement say, the hexadecimal monoid. Getting the affine cipher to support the hexadecimal and radix-64 monoids should be another ticket in itself.",
+    "body": "Replying to [comment:11 rbeezer]:\n> 1.  I think `inverse_key()` is broken.  The constant term is always identical, for example, run\n  \n{{{\nx=S.random_key(); print x, S.inverse_key(*x)\n}}}\n> repeatedly. This shouldn't happen even for a=1 as is written in the doctests, since when a=1 it is a shift system.  For testing, the inverse of (a,b)=(5,7) should be (21,9).  You can test this by enchipering with one key and deciphering with the other, results should be the same (this might be good thing to do in the doctests).\n\n\nI may be misunderstanding your comment here, so please tell me if that's the case. Any key `(a,b) in ZZ/nZZ x ZZ/nZZ` of the affine cipher is such that `gcd(a,n) = 1`. So you're saying that the inverse key corresponding to `(a, b)` is `(a^{-1}, -b)` where `a^{-1}` is the multiplicative inverse of `a` modulo `n`? If that is the case, then the current implementation of `inverse_key()` is clearly broken:\n\n```\n        try:\n            from copy import copy\n            from sage.rings.arith import inverse_mod\n            n = self.alphabet_size()\n            return (inverse_mod(a, n), copy(b))\n        except:\n            raise ValueError(\"(a, b) = (%s, %s) is outside the range of acceptable values for a key of this affine cipher.\" % (a, b))\n```\n\nHow then would one use the above defined inverse key to decrypt a ciphertext? The current implementation of the method `deciphering()` follows this Wikipedia description of the encryption and decryption functions of the affine cipher:\n\nhttp://en.wikipedia.org/wiki/Affine_cipher\n\nThis agrees with the following text that I have access to:\n\n* Doug Stinson. \"Cryptography: Theory and Practice\" 3rd edition.\n* Wade Trappe and Lawrence C. Washington. \"Introduction to Cryptography with Coding Theory\"\n\n\n\n\n\n> Maybe you just need subtraction someplace where you have a addition, or...\n\n\nI don't quite understand this comment. Can you please explain it?\n\n\n\n\n\n> 2.  Would it make sense to build the list `A` of invertible linear coefficients in the `brute_force` method as part of `__init__` for the cryptosystem? \n\n\nYes it does make sense to do so, and I have implemented this in response to your suggestion. The resulting code of the affine crypto module looks less \"ugly\" from my point of view. Thank you, Rob. Please see the latest version of the patches.\n\n\n\n\n\n> Then you could skip some of the gcd-stuff.\n\n\nAnd I have skipped some of the GCD computation with the above implementation of a list of invertible elements in the multiplicative group of `ZZ/nZZ`.\n\n\n\n\n\n> For example when building a random key, you could just grab a linear coefficient, instead of repeatedly testing. \n\n\nDone according to your suggestion.\n\n\n\n\n\n> Or when checking validity for a new key, you could just test on the list. \n\n\nDone according to your suggestion.\n\n\n\n\n\n>  Done right, the generation of `A` could easily generalize to a new alphabet length for a new monoid as the alphabet.\n\n\nI can see in my mind how to implement this based on the implementation of generating invertible elements in the multiplicative group of `ZZ/nZZ`. I think this would entail changing the implementation of the class(es) that implement say, the hexadecimal monoid. Getting the affine cipher to support the hexadecimal and radix-64 monoids should be another ticket in itself.",
     "created_at": "2009-10-16T20:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -435,12 +432,12 @@ archive/issue_comments_058980.json:
 
 Replying to [comment:11 rbeezer]:
 > 1.  I think `inverse_key()` is broken.  The constant term is always identical, for example, run
-
-```
+  
+{{{
 x=S.random_key(); print x, S.inverse_key(*x)
-```
-
+}}}
 > repeatedly. This shouldn't happen even for a=1 as is written in the doctests, since when a=1 it is a shift system.  For testing, the inverse of (a,b)=(5,7) should be (21,9).  You can test this by enchipering with one key and deciphering with the other, results should be the same (this might be good thing to do in the doctests).
+
 
 I may be misunderstanding your comment here, so please tell me if that's the case. Any key `(a,b) in ZZ/nZZ x ZZ/nZZ` of the affine cipher is such that `gcd(a,n) = 1`. So you're saying that the inverse key corresponding to `(a, b)` is `(a^{-1}, -b)` where `a^{-1}` is the multiplicative inverse of `a` modulo `n`? If that is the case, then the current implementation of `inverse_key()` is clearly broken:
 
@@ -453,7 +450,6 @@ I may be misunderstanding your comment here, so please tell me if that's the cas
         except:
             raise ValueError("(a, b) = (%s, %s) is outside the range of acceptable values for a key of this affine cipher." % (a, b))
 ```
-
 
 How then would one use the above defined inverse key to decrypt a ciphertext? The current implementation of the method `deciphering()` follows this Wikipedia description of the encryption and decryption functions of the affine cipher:
 
@@ -470,6 +466,7 @@ This agrees with the following text that I have access to:
 
 > Maybe you just need subtraction someplace where you have a addition, or...
 
+
 I don't quite understand this comment. Can you please explain it?
 
 
@@ -477,6 +474,7 @@ I don't quite understand this comment. Can you please explain it?
 
 
 > 2.  Would it make sense to build the list `A` of invertible linear coefficients in the `brute_force` method as part of `__init__` for the cryptosystem? 
+
 
 Yes it does make sense to do so, and I have implemented this in response to your suggestion. The resulting code of the affine crypto module looks less "ugly" from my point of view. Thank you, Rob. Please see the latest version of the patches.
 
@@ -486,6 +484,7 @@ Yes it does make sense to do so, and I have implemented this in response to your
 
 > Then you could skip some of the gcd-stuff.
 
+
 And I have skipped some of the GCD computation with the above implementation of a list of invertible elements in the multiplicative group of `ZZ/nZZ`.
 
 
@@ -493,6 +492,7 @@ And I have skipped some of the GCD computation with the above implementation of 
 
 
 > For example when building a random key, you could just grab a linear coefficient, instead of repeatedly testing. 
+
 
 Done according to your suggestion.
 
@@ -502,6 +502,7 @@ Done according to your suggestion.
 
 > Or when checking validity for a new key, you could just test on the list. 
 
+
 Done according to your suggestion.
 
 
@@ -509,6 +510,7 @@ Done according to your suggestion.
 
 
 >  Done right, the generation of `A` could easily generalize to a new alphabet length for a new monoid as the alphabet.
+
 
 I can see in my mind how to implement this based on the implementation of generating invertible elements in the multiplicative group of `ZZ/nZZ`. I think this would entail changing the implementation of the class(es) that implement say, the hexadecimal monoid. Getting the affine cipher to support the hexadecimal and radix-64 monoids should be another ticket in itself.
 
@@ -573,7 +575,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058983.json:
 ```json
 {
-    "body": "Replying to [comment:13 rbeezer]:\n> Try the following: start with plain text P, encipher with key (a,b) to get ciphertext C.  Now encipher C with the inverse key, and you should get P back.  This would be a good doctest someplace, maybe for `inverse_key()`, to demonstrate its intent.\n\nI have added this doctest.\n\n\n\n\n\n> 1.  Consider the `enciphering()` and `deciphering()` routines in `AffineCipher` - they could each call some helper function that does the linear function, but to decipher, you just pass the inverse key rather than the key.\n\nDone.\n\n\n\n\n\n> 2.  Its not clear to me why this won't all generalize easily to other alphabets?  You just need to know the size of the alphabet (n) and then construct the invertible elements in `A`}, and you need some kind of correspondence between the alphabet and the integers 0 through n-1.  But I haven't studied the monoid implementations to say for sure.\n\nIt can be generalized to other non-empty alphabets with more than 2 elements. An alphabet with 2 elements is not interesting enough to use for studying the affine cipher. In fact, I think that with the current implementation of the affine cipher, one can extend it to support alphabets such as the octal and hexadecimal number systems, radix-64 alphabet, and even the ASCII alphabet itself. It's just that doing so is tedious work for which I don't currently have time for. The same can be said for the shift cipher as well.",
+    "body": "Replying to [comment:13 rbeezer]:\n> Try the following: start with plain text P, encipher with key (a,b) to get ciphertext C.  Now encipher C with the inverse key, and you should get P back.  This would be a good doctest someplace, maybe for `inverse_key()`, to demonstrate its intent.\n\n\nI have added this doctest.\n\n\n\n\n\n> 1.  Consider the `enciphering()` and `deciphering()` routines in `AffineCipher` - they could each call some helper function that does the linear function, but to decipher, you just pass the inverse key rather than the key.\n\n\nDone.\n\n\n\n\n\n> 2.  Its not clear to me why this won't all generalize easily to other alphabets?  You just need to know the size of the alphabet (n) and then construct the invertible elements in `A`}, and you need some kind of correspondence between the alphabet and the integers 0 through n-1.  But I haven't studied the monoid implementations to say for sure.\n\n\nIt can be generalized to other non-empty alphabets with more than 2 elements. An alphabet with 2 elements is not interesting enough to use for studying the affine cipher. In fact, I think that with the current implementation of the affine cipher, one can extend it to support alphabets such as the octal and hexadecimal number systems, radix-64 alphabet, and even the ASCII alphabet itself. It's just that doing so is tedious work for which I don't currently have time for. The same can be said for the shift cipher as well.",
     "created_at": "2009-10-17T02:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -585,6 +587,7 @@ archive/issue_comments_058983.json:
 Replying to [comment:13 rbeezer]:
 > Try the following: start with plain text P, encipher with key (a,b) to get ciphertext C.  Now encipher C with the inverse key, and you should get P back.  This would be a good doctest someplace, maybe for `inverse_key()`, to demonstrate its intent.
 
+
 I have added this doctest.
 
 
@@ -593,6 +596,7 @@ I have added this doctest.
 
 > 1.  Consider the `enciphering()` and `deciphering()` routines in `AffineCipher` - they could each call some helper function that does the linear function, but to decipher, you just pass the inverse key rather than the key.
 
+
 Done.
 
 
@@ -600,6 +604,7 @@ Done.
 
 
 > 2.  Its not clear to me why this won't all generalize easily to other alphabets?  You just need to know the size of the alphabet (n) and then construct the invertible elements in `A`}, and you need some kind of correspondence between the alphabet and the integers 0 through n-1.  But I haven't studied the monoid implementations to say for sure.
+
 
 It can be generalized to other non-empty alphabets with more than 2 elements. An alphabet with 2 elements is not interesting enough to use for studying the affine cipher. In fact, I think that with the current implementation of the affine cipher, one can extend it to support alphabets such as the octal and hexadecimal number systems, radix-64 alphabet, and even the ASCII alphabet itself. It's just that doing so is tedious work for which I don't currently have time for. The same can be said for the shift cipher as well.
 
@@ -712,7 +717,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_058989.json:
 ```json
 {
-    "body": "Attachment [trac_7124-cryptanalysis.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-cryptanalysis.patch) by mvngu created at 2009-10-17 06:36:45\n\nReplying to [comment:15 rbeezer]:\n> 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.\n\nFixed.\n\n\n\n\n\n> 2.  In `__call__` the sanity check computes d and checks d == 1.  This could be removed if you trust your `_invertible` list.\n\nI have removed the test. In its place, I added some comments explaining why we don't need to test that each `a` is coprime to `n`, the alphabet size.\n\n\n\n\n\n> 3.  Docstring on `inverse_key` has an odd test about euler_phi=12, a list of invertibles is computed, etc.  Not sure this is really germane.\n\nThat doctest is meant to explain what sort of values that `a` can take on if `(a,b)` is to be a secret key. I have rewritten the doctest to explain this.",
+    "body": "Attachment [trac_7124-cryptanalysis.patch](tarball://root/attachments/some-uuid/ticket7124/trac_7124-cryptanalysis.patch) by mvngu created at 2009-10-17 06:36:45\n\nReplying to [comment:15 rbeezer]:\n> 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.\n\n\nFixed.\n\n\n\n\n\n> 2.  In `__call__` the sanity check computes d and checks d == 1.  This could be removed if you trust your `_invertible` list.\n\n\nI have removed the test. In its place, I added some comments explaining why we don't need to test that each `a` is coprime to `n`, the alphabet size.\n\n\n\n\n\n> 3.  Docstring on `inverse_key` has an odd test about euler_phi=12, a list of invertibles is computed, etc.  Not sure this is really germane.\n\n\nThat doctest is meant to explain what sort of values that `a` can take on if `(a,b)` is to be a secret key. I have rewritten the doctest to explain this.",
     "created_at": "2009-10-17T06:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -726,6 +731,7 @@ Attachment [trac_7124-cryptanalysis.patch](tarball://root/attachments/some-uuid/
 Replying to [comment:15 rbeezer]:
 > 1.  In `AffineCryptoSystem` there are comments about the list L which can probably be deleted.
 
+
 Fixed.
 
 
@@ -734,6 +740,7 @@ Fixed.
 
 > 2.  In `__call__` the sanity check computes d and checks d == 1.  This could be removed if you trust your `_invertible` list.
 
+
 I have removed the test. In its place, I added some comments explaining why we don't need to test that each `a` is coprime to `n`, the alphabet size.
 
 
@@ -741,6 +748,7 @@ I have removed the test. In its place, I added some comments explaining why we d
 
 
 > 3.  Docstring on `inverse_key` has an odd test about euler_phi=12, a list of invertibles is computed, etc.  Not sure this is really germane.
+
 
 That doctest is meant to explain what sort of values that `a` can take on if `(a,b)` is to be a secret key. I have rewritten the doctest to explain this.
 
@@ -793,7 +801,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_058992.json:
 ```json
 {
-    "body": "Replying to [comment:17 rbeezer]:\n> The error is\n> \n> `AttributeError: 'DiscreteProbabilitySpace' object has no attribute 'setdefault'`\n\nI took Sage 4.2 and successfully applied the attached two patches. The reference manual rebuilt successfully. Doctesting the whole Sage library didn't show up the error you reported. Can you please try using Sage 4.2? Please tell me if I've misunderstood your comments.",
+    "body": "Replying to [comment:17 rbeezer]:\n> The error is\n> \n> `AttributeError: 'DiscreteProbabilitySpace' object has no attribute 'setdefault'`\n\n\nI took Sage 4.2 and successfully applied the attached two patches. The reference manual rebuilt successfully. Doctesting the whole Sage library didn't show up the error you reported. Can you please try using Sage 4.2? Please tell me if I've misunderstood your comments.",
     "created_at": "2009-10-28T12:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7124",
     "type": "issue_comment",
@@ -806,6 +814,7 @@ Replying to [comment:17 rbeezer]:
 > The error is
 > 
 > `AttributeError: 'DiscreteProbabilitySpace' object has no attribute 'setdefault'`
+
 
 I took Sage 4.2 and successfully applied the attached two patches. The reference manual rebuilt successfully. Doctesting the whole Sage library didn't show up the error you reported. Can you please try using Sage 4.2? Please tell me if I've misunderstood your comments.
 

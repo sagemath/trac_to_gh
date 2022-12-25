@@ -101,7 +101,7 @@ from a freshly unpacked SAGE copy, which will build SAGE and upload it to a new 
 archive/issue_comments_014943.json:
 ```json
 {
-    "body": "> since the extcode repository isn't unpacked until late in the SAGE build process.\n\nThat is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this.",
+    "body": "> since the extcode repository isn't unpacked until late in the SAGE build process.\n\n\nThat is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this.",
     "created_at": "2008-02-24T20:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -112,6 +112,7 @@ archive/issue_comments_014943.json:
 
 > since the extcode repository isn't unpacked until late in the SAGE build process.
 
+
 That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this.
 
 
@@ -121,7 +122,7 @@ That is by accident.  It could be unpacked at any time.   It's all pure source c
 archive/issue_comments_014944.json:
 ```json
 {
-    "body": "Replying to [comment:4 was]:\n> > since the extcode repository isn't unpacked until late in the SAGE build process.\n> \n> That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this. \n\nChanging the dependencies would be easy, so I think that it will lead to a workable compromise. sage-lib (or whatever we call the deb) would depend on sage-ext, so we would have the needed files present at build time. The current solution (by adding it to setup.py certainly isn't elegant) and as we pick up other distributions it certainly will become very, very ugly. The dist directory in ext with debian as a subdirectory sounds like the perfect solution to me.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:4 was]:\n> > since the extcode repository isn't unpacked until late in the SAGE build process.\n\n> \n> That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this. \n\n\nChanging the dependencies would be easy, so I think that it will lead to a workable compromise. sage-lib (or whatever we call the deb) would depend on sage-ext, so we would have the needed files present at build time. The current solution (by adding it to setup.py certainly isn't elegant) and as we pick up other distributions it certainly will become very, very ugly. The dist directory in ext with debian as a subdirectory sounds like the perfect solution to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T20:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -132,8 +133,10 @@ archive/issue_comments_014944.json:
 
 Replying to [comment:4 was]:
 > > since the extcode repository isn't unpacked until late in the SAGE build process.
+
 > 
 > That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this. 
+
 
 Changing the dependencies would be easy, so I think that it will lead to a workable compromise. sage-lib (or whatever we call the deb) would depend on sage-ext, so we would have the needed files present at build time. The current solution (by adding it to setup.py certainly isn't elegant) and as we pick up other distributions it certainly will become very, very ugly. The dist directory in ext with debian as a subdirectory sounds like the perfect solution to me.
 
@@ -166,7 +169,7 @@ Oh, is this only for the SAGE spkg?
 archive/issue_comments_014946.json:
 ```json
 {
-    "body": "Replying to [comment:6 tabbott]:\n> Oh, is this only for the SAGE spkg?\n\nYes. All the Debian bits needed for all the other spkgs will stay where they are. Since I am doing work on the spkg audit I plan to merge the patches from #2199 as I do the audit.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 tabbott]:\n> Oh, is this only for the SAGE spkg?\n\n\nYes. All the Debian bits needed for all the other spkgs will stay where they are. Since I am doing work on the spkg audit I plan to merge the patches from #2199 as I do the audit.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T21:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -177,6 +180,7 @@ archive/issue_comments_014946.json:
 
 Replying to [comment:6 tabbott]:
 > Oh, is this only for the SAGE spkg?
+
 
 Yes. All the Debian bits needed for all the other spkgs will stay where they are. Since I am doing work on the spkg audit I plan to merge the patches from #2199 as I do the audit.
 
@@ -215,7 +219,7 @@ The main thing I guess that needs to be decided then is what to replace the Debi
 archive/issue_comments_014948.json:
 ```json
 {
-    "body": "Replying to [comment:8 tabbott]:\n> OK.  This makes much more sense now.\n> \n> The main thing I guess that needs to be decided then is what to replace the Debian-specific changes to setup.py with.  They include:\n> \n> 1) adding things to library_dirs and include_dirs.  This should be made into a generic environment variable that can be used for any distribution build system.\n\nYes, I agree.\n\n> \n> 2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?\n\nSure, but I plan to merge the slightly fixed version of #2173 tonight. Once we have additional distributions on board (or earlier at your convenience, i.e. you want to do the work) we should generalize the infrastructure. Right now there isn't really anybody but Debian (and indirectly Ubuntu) working on packaging within the Sage project, so I am willing to cross that bridge once we get to it.\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:8 tabbott]:\n> OK.  This makes much more sense now.\n> \n> The main thing I guess that needs to be decided then is what to replace the Debian-specific changes to setup.py with.  They include:\n> \n> 1) adding things to library_dirs and include_dirs.  This should be made into a generic environment variable that can be used for any distribution build system.\n\n\nYes, I agree.\n\n> \n> 2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?\n\n\nSure, but I plan to merge the slightly fixed version of #2173 tonight. Once we have additional distributions on board (or earlier at your convenience, i.e. you want to do the work) we should generalize the infrastructure. Right now there isn't really anybody but Debian (and indirectly Ubuntu) working on packaging within the Sage project, so I am willing to cross that bridge once we get to it.\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T21:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -231,10 +235,12 @@ Replying to [comment:8 tabbott]:
 > 
 > 1) adding things to library_dirs and include_dirs.  This should be made into a generic environment variable that can be used for any distribution build system.
 
+
 Yes, I agree.
 
 > 
 > 2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?
+
 
 Sure, but I plan to merge the slightly fixed version of #2173 tonight. Once we have additional distributions on board (or earlier at your convenience, i.e. you want to do the work) we should generalize the infrastructure. Right now there isn't really anybody but Debian (and indirectly Ubuntu) working on packaging within the Sage project, so I am willing to cross that bridge once we get to it.
 

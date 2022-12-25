@@ -3,7 +3,7 @@
 archive/issues_006497.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nWe want\n\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
+    "body": "Assignee: @burcin\n\nWe want\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
     "created_at": "2009-07-09T10:14:40Z",
     "labels": [
         "component: calculus",
@@ -20,13 +20,11 @@ Assignee: @burcin
 
 We want
 
-
 ```
 sage: import numpy
 sage: sin(numpy.arange(5))
 array([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6497
 
@@ -59,7 +57,7 @@ This depends on #5081.
 archive/issue_comments_052756.json:
 ```json
 {
-    "body": "With the patches at #5081 and #6506, and `6497-numpy-sin.patch` on this ticket, I got one doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_vector_double_dense.py\n\t [2.5 s]\n```\n",
+    "body": "With the patches at #5081 and #6506, and `6497-numpy-sin.patch` on this ticket, I got one doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_vector_double_dense.py\n\t [2.5 s]\n```",
     "created_at": "2009-07-30T01:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
@@ -90,7 +88,6 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp
 
 
 
-
 ---
 
 archive/issue_comments_052757.json:
@@ -114,7 +111,7 @@ I am unable to reproduce the error above on 4.1.1, so I am re-instating the posi
 archive/issue_comments_052758.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> I am unable to reproduce the error above on 4.1.1, so I am re-instating the positive review. (Also, the error itself seems totally unrelated to this patch.)\nThe above error is not due to the patch. Ticket #6825 contains steps to reproduce the errors.",
+    "body": "Replying to [comment:3 robertwb]:\n> I am unable to reproduce the error above on 4.1.1, so I am re-instating the positive review. (Also, the error itself seems totally unrelated to this patch.)\n\nThe above error is not due to the patch. Ticket #6825 contains steps to reproduce the errors.",
     "created_at": "2009-09-10T09:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
@@ -125,6 +122,7 @@ archive/issue_comments_052758.json:
 
 Replying to [comment:3 robertwb]:
 > I am unable to reproduce the error above on 4.1.1, so I am re-instating the positive review. (Also, the error itself seems totally unrelated to this patch.)
+
 The above error is not due to the patch. Ticket #6825 contains steps to reproduce the errors.
 
 

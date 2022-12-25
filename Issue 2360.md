@@ -3,7 +3,7 @@
 archive/issues_002360.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
+    "body": "Assignee: @williamstein\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
     "created_at": "2008-03-01T16:52:49Z",
     "labels": [
         "component: algebraic geometry",
@@ -19,7 +19,6 @@ archive/issues_002360.json:
 Assignee: @williamstein
 
 I made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:
-
 
 ```
 sage: R.<x,y,z,u,v,w>=ZZ[]
@@ -37,7 +36,6 @@ Exception exceptions.TypeError: "can't multiply sequence by non-int of type 'lis
 Exception exceptions.TypeError: "unsupported operand type(s) for *: 'NoneType' and 'NoneType'" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored
 Exception exceptions.TypeError: "unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored
 ```
-
 
 Notice that the plugging in the list seemed to ruin the polynomial good and proper.
 
@@ -105,7 +103,7 @@ archive/issue_events_005565.json:
 archive/issue_comments_015877.json:
 ```json
 {
-    "body": "Ah, it's even easier.  No second mpoly ring required!\n\n\n```\nsage: P.<a>=ZZ[]\nsage: f=6*a^4\nsage: f(1)\n6\nsage: f([1,2,3])\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(1)  #  WHAT HAPPENED -- this worked before.\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n",
+    "body": "Ah, it's even easier.  No second mpoly ring required!\n\n```\nsage: P.<a>=ZZ[]\nsage: f=6*a^4\nsage: f(1)\n6\nsage: f([1,2,3])\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(1)  #  WHAT HAPPENED -- this worked before.\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```",
     "created_at": "2008-03-01T16:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
@@ -115,7 +113,6 @@ archive/issue_comments_015877.json:
 ```
 
 Ah, it's even easier.  No second mpoly ring required!
-
 
 ```
 sage: P.<a>=ZZ[]
@@ -131,7 +128,6 @@ Exception exceptions.TypeError: "can't multiply sequence by non-int of type 'lis
 Exception exceptions.TypeError: "unsupported operand type(s) for *: 'NoneType' and 'NoneType'" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored
 Exception exceptions.TypeError: "unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored
 ```
-
 
 
 

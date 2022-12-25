@@ -231,7 +231,7 @@ Yes: apply only the patch, to 3.4.1.alpha0.
 archive/issue_comments_038014.json:
 ```json
 {
-    "body": "Looks good to me.  I tested it with the following script, and found a lot of curves with the correct endomorphism rings :)\n\n\n```\nK.<a> = QuadraticField(-34)\nf = K.hilbert_class_polynomial()\nassert K.class_number() == f.degree()\n\nfor P in K.primes_of_degree_one_list(20):\n    p = P.norm()\n    k = GF(p)\n    rts = f.roots(k, multiplicities=False)\n    for jj in rts:\n        assert P.is_principal()\n        E = EllipticCurve(jj)\n        print E\n        assert E.frobenius_order().number_field().is_isomorphic(K)\n    if not rts:\n        print \"XXX\", p\n        assert not P.is_principal()\n```\n",
+    "body": "Looks good to me.  I tested it with the following script, and found a lot of curves with the correct endomorphism rings :)\n\n```\nK.<a> = QuadraticField(-34)\nf = K.hilbert_class_polynomial()\nassert K.class_number() == f.degree()\n\nfor P in K.primes_of_degree_one_list(20):\n    p = P.norm()\n    k = GF(p)\n    rts = f.roots(k, multiplicities=False)\n    for jj in rts:\n        assert P.is_principal()\n        E = EllipticCurve(jj)\n        print E\n        assert E.frobenius_order().number_field().is_isomorphic(K)\n    if not rts:\n        print \"XXX\", p\n        assert not P.is_principal()\n```",
     "created_at": "2009-04-05T03:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
@@ -241,7 +241,6 @@ archive/issue_comments_038014.json:
 ```
 
 Looks good to me.  I tested it with the following script, and found a lot of curves with the correct endomorphism rings :)
-
 
 ```
 K.<a> = QuadraticField(-34)
@@ -261,7 +260,6 @@ for P in K.primes_of_degree_one_list(20):
         print "XXX", p
         assert not P.is_principal()
 ```
-
 
 
 

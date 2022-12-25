@@ -71,7 +71,7 @@ Nearly every instance of `-std=c99` is also paired with `-D_XPG6`. I'm honestly 
 archive/issue_comments_079782.json:
 ```json
 {
-    "body": "Replying to [comment:2 robertwb]:\n> Nearly every instance of `-std=c99` is also paired with `-D_XPG6`. I'm honestly unsure as to why, but if we don't we should justify it. \n\nIt looks like about half of them have `-D_XPG6`.  I can't really tell what this flag means (except something about \"issue 6 of the X/Open Portability Guide\"), so I have no idea if it's a good idea.  Without it for these two pyx files, the Sage library builds on t2, for what that's worth.",
+    "body": "Replying to [comment:2 robertwb]:\n> Nearly every instance of `-std=c99` is also paired with `-D_XPG6`. I'm honestly unsure as to why, but if we don't we should justify it. \n\n\nIt looks like about half of them have `-D_XPG6`.  I can't really tell what this flag means (except something about \"issue 6 of the X/Open Portability Guide\"), so I have no idea if it's a good idea.  Without it for these two pyx files, the Sage library builds on t2, for what that's worth.",
     "created_at": "2010-04-21T18:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
@@ -83,6 +83,7 @@ archive/issue_comments_079782.json:
 Replying to [comment:2 robertwb]:
 > Nearly every instance of `-std=c99` is also paired with `-D_XPG6`. I'm honestly unsure as to why, but if we don't we should justify it. 
 
+
 It looks like about half of them have `-D_XPG6`.  I can't really tell what this flag means (except something about "issue 6 of the X/Open Portability Guide"), so I have no idea if it's a good idea.  Without it for these two pyx files, the Sage library builds on t2, for what that's worth.
 
 
@@ -92,7 +93,7 @@ It looks like about half of them have `-D_XPG6`.  I can't really tell what this 
 archive/issue_comments_079783.json:
 ```json
 {
-    "body": "I would rephrase the question and ask why are people adding -D_XPG6? Can they justify it? \n\nWe can justify adding -std=c99, as we want to make use of a feature that was not defined until the C99 standard.  I don't know of any justification for adding -D_XPG6. (That is not to say there is not any, but I think the onus should be on someone who adds -D_XPG6 to justify why they add it.) \n\nThere are quite a few bits of code in Sage which appear to be added just because someone else did so before, without anyone understanding why they did it. One sees things like \n\n\n```\npath=\"$SAGE_LOCAL\"/bin\n```\n\n\nwhen it should be:\n\n```\npath=\"$SAGE_LOCAL/bin\"\n```\n\nI suspect people are just cutting/pasting without any understanding. \n\nI think it is better to just leave it as -std=c99, until such time as someone can justify why -D_XPG6 is best added. \n\nPlease note, I'm not saying -D_XPG6 might not be right, but only that I'd rather not add things we don't understand. \n\nDave",
+    "body": "I would rephrase the question and ask why are people adding -D_XPG6? Can they justify it? \n\nWe can justify adding -std=c99, as we want to make use of a feature that was not defined until the C99 standard.  I don't know of any justification for adding -D_XPG6. (That is not to say there is not any, but I think the onus should be on someone who adds -D_XPG6 to justify why they add it.) \n\nThere are quite a few bits of code in Sage which appear to be added just because someone else did so before, without anyone understanding why they did it. One sees things like \n\n```\npath=\"$SAGE_LOCAL\"/bin\n```\n\nwhen it should be:\n\n```\npath=\"$SAGE_LOCAL/bin\"\n```\nI suspect people are just cutting/pasting without any understanding. \n\nI think it is better to just leave it as -std=c99, until such time as someone can justify why -D_XPG6 is best added. \n\nPlease note, I'm not saying -D_XPG6 might not be right, but only that I'd rather not add things we don't understand. \n\nDave",
     "created_at": "2010-04-21T23:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
@@ -107,18 +108,15 @@ We can justify adding -std=c99, as we want to make use of a feature that was not
 
 There are quite a few bits of code in Sage which appear to be added just because someone else did so before, without anyone understanding why they did it. One sees things like 
 
-
 ```
 path="$SAGE_LOCAL"/bin
 ```
-
 
 when it should be:
 
 ```
 path="$SAGE_LOCAL/bin"
 ```
-
 I suspect people are just cutting/pasting without any understanding. 
 
 I think it is better to just leave it as -std=c99, until such time as someone can justify why -D_XPG6 is best added. 
@@ -226,7 +224,7 @@ I should say, it's not exactly the same problem with chmm.pyx: the Sage library 
 archive/issue_comments_079789.json:
 ```json
 {
-    "body": "Regarding chmm: That makes sense, because I use isfinite in chmm.pyx:\n\n```\ncdef extern from \"math.h\":\n    double log(double)\n    double sqrt(double)\n    double exp(double)\n    int isnormal(double)\n    int isfinite(double)\n```\n\n\nSo I'm fine with building it with c99.\n\nWilliam",
+    "body": "Regarding chmm: That makes sense, because I use isfinite in chmm.pyx:\n\n```\ncdef extern from \"math.h\":\n    double log(double)\n    double sqrt(double)\n    double exp(double)\n    int isnormal(double)\n    int isfinite(double)\n```\n\nSo I'm fine with building it with c99.\n\nWilliam",
     "created_at": "2010-04-22T02:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8737",
     "type": "issue_comment",
@@ -245,7 +243,6 @@ cdef extern from "math.h":
     int isnormal(double)
     int isfinite(double)
 ```
-
 
 So I'm fine with building it with c99.
 

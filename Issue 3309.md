@@ -3,7 +3,7 @@
 archive/issues_003309.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nHi Sage-Devel,\n\nThis email was to pari-devel, but is also directly relevant\nto sage.   See my comment on the bottom below.  (I didn't\nboth to respond to the pari list because all my emails \nthere bounce.)\n\nOn Mon, May 26, 2008 at 9:56 AM, Robert Gerbicz <robert.gerbicz@gmail.com> wrote:\n> I'm really surprised that computing binomial numbers for floating point\n> real/complex numbers so slow in Pari-Gp. For example:\n> binomial(1140000.78,420000) takes about 6 seconds and more than 22 MB Ram on\n> my computer.\n> A much faster way:\n> F(n,k)=gamma(n+1)/gamma(k+1)/gamma(n-k+1) gives binomial(n,k)\n\nGreat idea in the case when the first input to binomial is \nfloating point. \n\nIn Sage on my laptop:\n\nsage: time a = binomial(RR(1140000.78), 420000)\nCPU times: user 3.64 s, sys: 0.10 s, total: 3.73 s\nWall time: 3.76 s\n\nUsing your trick:\nsage: F = lambda n,k: gamma(n+1)/gamma(k+1)/gamma(n-k+1)\nsage: time b = F(RR(1140000.78),RR(420000))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\nMore precisely:\nsage: timeit('F(RR(1140000.78),RR(420000))')\n625 loops, best of 3: 422 \u00b5s per loop\nsage: timeit('binomial(RR(1140000.78), 420000)')\n5 loops, best of 3: 3.3 s per loop\n\nSo your suggestion is about 8000 times faster.\n\nNote though that due to rounding the answers are different:\n\nsage: a\n2.99132584452787e325824\nsage: b\n2.99132584452800e325824\nsage: a - b\n-1.27118374810324e325811\n\nWhich is closer?  Definitely your formula using Gamma\ngives a closer answer as i checked using interval\narithmetic to high precision:\n\nsage: time a = binomial(RealIntervalField(1000)(1140000.78), 420000)\nCPU times: user 6.33 s, sys: 0.26 s, total: 6.59 s\nWall time: 6.73 s\nsage: a\n[2.99132584452799583218670664806377915421591194817285057236221072979355793880728013777098522886127668070007188360739556123884662805319772820601950625710807401405804394169293082156154447701434820854783425949844303667313131986630753419142150368691407480323325019595168489899361691122207010886385330597605904e325824 .. 2.99132584452799583218670664806377915421591194817285057236221072979355793880728013777098522886127668070007188360739556123884662805319772820601950625710807401405804394169293082156154447701434820854783425949844303667313131986630753419142150368691407480323325019595168489899361691122207010886385330598928089e325824]\n\n\nDoing \nsage: binomial??\nshows that Sage's binomial function is not calling PARI\nin this case (since the first input isn't an int), but presumably\nSage and PARI are implementing the same algorithm.\n\n    if isinstance(x, (int, long, integer.Integer)):\n        return integer_ring.ZZ(pari(x).binomial(m))\n    try:\n        P = x.parent()\n    except AttributeError:\n        P = type(x)\n    if m < 0:\n        return P(0)\n    return misc.prod([x-i for i in xrange(m)]) / P(factorial(m))\n\nI think making the gamma optimization you suggest when\nthe first input is floating point real or complex is a great\nidea.  \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3309\n\n",
+    "body": "Assignee: somebody\n\n```\nHi Sage-Devel,\n\nThis email was to pari-devel, but is also directly relevant\nto sage.   See my comment on the bottom below.  (I didn't\nboth to respond to the pari list because all my emails \nthere bounce.)\n\nOn Mon, May 26, 2008 at 9:56 AM, Robert Gerbicz <robert.gerbicz@gmail.com> wrote:\n> I'm really surprised that computing binomial numbers for floating point\n> real/complex numbers so slow in Pari-Gp. For example:\n> binomial(1140000.78,420000) takes about 6 seconds and more than 22 MB Ram on\n> my computer.\n> A much faster way:\n> F(n,k)=gamma(n+1)/gamma(k+1)/gamma(n-k+1) gives binomial(n,k)\n\nGreat idea in the case when the first input to binomial is \nfloating point. \n\nIn Sage on my laptop:\n\nsage: time a = binomial(RR(1140000.78), 420000)\nCPU times: user 3.64 s, sys: 0.10 s, total: 3.73 s\nWall time: 3.76 s\n\nUsing your trick:\nsage: F = lambda n,k: gamma(n+1)/gamma(k+1)/gamma(n-k+1)\nsage: time b = F(RR(1140000.78),RR(420000))\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\nMore precisely:\nsage: timeit('F(RR(1140000.78),RR(420000))')\n625 loops, best of 3: 422 \u00b5s per loop\nsage: timeit('binomial(RR(1140000.78), 420000)')\n5 loops, best of 3: 3.3 s per loop\n\nSo your suggestion is about 8000 times faster.\n\nNote though that due to rounding the answers are different:\n\nsage: a\n2.99132584452787e325824\nsage: b\n2.99132584452800e325824\nsage: a - b\n-1.27118374810324e325811\n\nWhich is closer?  Definitely your formula using Gamma\ngives a closer answer as i checked using interval\narithmetic to high precision:\n\nsage: time a = binomial(RealIntervalField(1000)(1140000.78), 420000)\nCPU times: user 6.33 s, sys: 0.26 s, total: 6.59 s\nWall time: 6.73 s\nsage: a\n[2.99132584452799583218670664806377915421591194817285057236221072979355793880728013777098522886127668070007188360739556123884662805319772820601950625710807401405804394169293082156154447701434820854783425949844303667313131986630753419142150368691407480323325019595168489899361691122207010886385330597605904e325824 .. 2.99132584452799583218670664806377915421591194817285057236221072979355793880728013777098522886127668070007188360739556123884662805319772820601950625710807401405804394169293082156154447701434820854783425949844303667313131986630753419142150368691407480323325019595168489899361691122207010886385330598928089e325824]\n\n\nDoing \nsage: binomial??\nshows that Sage's binomial function is not calling PARI\nin this case (since the first input isn't an int), but presumably\nSage and PARI are implementing the same algorithm.\n\n    if isinstance(x, (int, long, integer.Integer)):\n        return integer_ring.ZZ(pari(x).binomial(m))\n    try:\n        P = x.parent()\n    except AttributeError:\n        P = type(x)\n    if m < 0:\n        return P(0)\n    return misc.prod([x-i for i in xrange(m)]) / P(factorial(m))\n\nI think making the gamma optimization you suggest when\nthe first input is floating point real or complex is a great\nidea.  \n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3309\n\n",
     "created_at": "2008-05-26T17:46:19Z",
     "labels": [
         "component: basic arithmetic"
@@ -16,7 +16,6 @@ archive/issues_003309.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 Hi Sage-Devel,
@@ -99,7 +98,6 @@ idea.
 
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/3309
 
 
@@ -111,7 +109,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3309
 archive/issue_comments_022837.json:
 ```json
 {
-    "body": "It looks like this will get fixed in an upcoming version of PARI:\n\n```\n* Robert Gerbicz [2008-05-26 19:02]:\n- Show quoted text -\n> I'm really surprised that computing binomial numbers for floating point\n> real/complex numbers so slow in Pari-Gp. For example:\n> binomial(1140000.78,420000) takes about 6 seconds and more than 22 MB Ram on\n> my computer.\n> A much faster way:\n> F(n,k)=gamma(n+1)/gamma(k+1)/gamma(n-k+1) gives binomial(n,k)\n\nNobody had really needed it, but it's indeed easy to improve...\n\nNot quite so simple as the above though, since gamma() becomes relatively more\ncostly as the precision increases:\n\n(00:36) gp > \\p1000\n  realprecision = 1001 significant digits (1000 digits displayed)\n(01:03) gp > for(i=1,10, F(1140000.78,100))\ntime = 709 ms.\n\n(01:03) gp > for(i=1,10, binomial(1140000.78,  100))\ntime = 56 ms.\n(01:05) gp > for(i=1,10, binomial(1140000.78, 1000))\ntime = 509 ms.\n\nAt this accuracy (\\p1000) the threshold in favour of the gamma quotient is\naround k ~ 1400, for binomial(n, k)  [ k <= n/2 ]\n\n\n\nI have committed an improved version to svn.\n\nThanks for pointing this out,\nKarim\n```\n",
+    "body": "It looks like this will get fixed in an upcoming version of PARI:\n\n```\n* Robert Gerbicz [2008-05-26 19:02]:\n- Show quoted text -\n> I'm really surprised that computing binomial numbers for floating point\n> real/complex numbers so slow in Pari-Gp. For example:\n> binomial(1140000.78,420000) takes about 6 seconds and more than 22 MB Ram on\n> my computer.\n> A much faster way:\n> F(n,k)=gamma(n+1)/gamma(k+1)/gamma(n-k+1) gives binomial(n,k)\n\nNobody had really needed it, but it's indeed easy to improve...\n\nNot quite so simple as the above though, since gamma() becomes relatively more\ncostly as the precision increases:\n\n(00:36) gp > \\p1000\n  realprecision = 1001 significant digits (1000 digits displayed)\n(01:03) gp > for(i=1,10, F(1140000.78,100))\ntime = 709 ms.\n\n(01:03) gp > for(i=1,10, binomial(1140000.78,  100))\ntime = 56 ms.\n(01:05) gp > for(i=1,10, binomial(1140000.78, 1000))\ntime = 509 ms.\n\nAt this accuracy (\\p1000) the threshold in favour of the gamma quotient is\naround k ~ 1400, for binomial(n, k)  [ k <= n/2 ]\n\n\n\nI have committed an improved version to svn.\n\nThanks for pointing this out,\nKarim\n```",
     "created_at": "2008-06-10T23:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
@@ -160,7 +158,6 @@ Karim
 
 
 
-
 ---
 
 archive/issue_comments_022838.json:
@@ -184,7 +181,7 @@ Has this improvement been implemented in Pari yet? With Sage 3.4, I still see th
 archive/issue_comments_022839.json:
 ```json
 {
-    "body": "I'm attaching a patch which uses gamma() when appropriate. We can use this until we get the fast Pari stuff in. Here are some timings:\n\n\n```\nBEFORE\nsage: x, y = 1140000.78, 420000\nsage: %timeit binomial(x, y)\n10 loops, best of 3: 1.03 s per loop\n\nsage: x, y = RR(pi^5), 10\nsage: %timeit binomial(x, y)      \n10000 loops, best of 3: 28.8 \u00b5s per loop\n\nsage: x, y = RR(pi^15), 500\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 864 \u00b5s per loop\n\nsage: x, y = RealField(500)(1729000*sqrt(2)), 17000\nsage: %timeit binomial(x, y)                        \n10 loops, best of 3: 35.8 ms per loop\n```\n\n\nWith the patch:\n\n\n```\nAFTER\nsage: x, y = 1140000.78, 420000\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 302 \u00b5s per loop\n\nsage: x, y = RR(pi^5), 10\nsage: %timeit binomial(x, y)\n10000 loops, best of 3: 188 \u00b5s per loop\n\nsage: x, y = RR(pi^15), 500\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 362 \u00b5s per loop\n\nsage: x, y = RealField(500)(1729000*sqrt(2)), 17000\nsage: %timeit binomial(x, y)                       \n1000 loops, best of 3: 743 \u00b5s per loop\n```\n",
+    "body": "I'm attaching a patch which uses gamma() when appropriate. We can use this until we get the fast Pari stuff in. Here are some timings:\n\n```\nBEFORE\nsage: x, y = 1140000.78, 420000\nsage: %timeit binomial(x, y)\n10 loops, best of 3: 1.03 s per loop\n\nsage: x, y = RR(pi^5), 10\nsage: %timeit binomial(x, y)      \n10000 loops, best of 3: 28.8 \u00b5s per loop\n\nsage: x, y = RR(pi^15), 500\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 864 \u00b5s per loop\n\nsage: x, y = RealField(500)(1729000*sqrt(2)), 17000\nsage: %timeit binomial(x, y)                        \n10 loops, best of 3: 35.8 ms per loop\n```\n\nWith the patch:\n\n```\nAFTER\nsage: x, y = 1140000.78, 420000\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 302 \u00b5s per loop\n\nsage: x, y = RR(pi^5), 10\nsage: %timeit binomial(x, y)\n10000 loops, best of 3: 188 \u00b5s per loop\n\nsage: x, y = RR(pi^15), 500\nsage: %timeit binomial(x, y)\n1000 loops, best of 3: 362 \u00b5s per loop\n\nsage: x, y = RealField(500)(1729000*sqrt(2)), 17000\nsage: %timeit binomial(x, y)                       \n1000 loops, best of 3: 743 \u00b5s per loop\n```",
     "created_at": "2009-03-24T06:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
@@ -194,7 +191,6 @@ archive/issue_comments_022839.json:
 ```
 
 I'm attaching a patch which uses gamma() when appropriate. We can use this until we get the fast Pari stuff in. Here are some timings:
-
 
 ```
 BEFORE
@@ -215,9 +211,7 @@ sage: %timeit binomial(x, y)
 10 loops, best of 3: 35.8 ms per loop
 ```
 
-
 With the patch:
-
 
 ```
 AFTER
@@ -237,7 +231,6 @@ sage: x, y = RealField(500)(1729000*sqrt(2)), 17000
 sage: %timeit binomial(x, y)                       
 1000 loops, best of 3: 743 µs per loop
 ```
-
 
 
 

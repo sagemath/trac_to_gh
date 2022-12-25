@@ -3,7 +3,7 @@
 archive/issues_004721.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIt would be nice to be able to do indefinite integration of piecewise functions in Sage.\n\nI've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.\n\n\n```\nsage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])\nsage: pw.integral()\nPiecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 - 5/2]]\nsage: pw.integral(definite=True)\n11/2\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4721\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIt would be nice to be able to do indefinite integration of piecewise functions in Sage.\n\nI've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.\n\n```\nsage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])\nsage: pw.integral()\nPiecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 - 5/2]]\nsage: pw.integral(definite=True)\n11/2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4721\n\n",
     "created_at": "2008-12-05T22:37:17Z",
     "labels": [
         "component: calculus",
@@ -24,7 +24,6 @@ It would be nice to be able to do indefinite integration of piecewise functions 
 
 I've created a patch which does this. I have made the default behavior of the integral() function of a piecewise function be to return the indefinite integral, and the definite integral is returned only when definite=True is supplied.
 
-
 ```
 sage: pw = Piecewise([[(0,1), x*2], [(1,2), x + 3]])
 sage: pw.integral()
@@ -32,7 +31,6 @@ Piecewise defined function with 2 parts, [[(0, 1), x^2], [(1, 2), (x^2 + 6*x)/2 
 sage: pw.integral(definite=True)
 11/2
 ```
-
 
 
 
@@ -83,7 +81,7 @@ Attachment [piecewise_integration.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_035543.json:
 ```json
 {
-    "body": "I made integration the default for consistency with other functions. For example,\n\n\n```\nsage: f(x)=3\nsage: f.integral()\nx |--> 3*x\nsage: (x*8).integral()\n4*x^2\nsage: sin(x).integral()\n-cos(x)\n```\n\n\nWhen integrating a piecewise function in Maple, the result is the indefinite integral. The only difference between the Maple result and the patched Sage code is that Maple defines the integral outside the bounds of the original piecewise function, which my code does not.",
+    "body": "I made integration the default for consistency with other functions. For example,\n\n```\nsage: f(x)=3\nsage: f.integral()\nx |--> 3*x\nsage: (x*8).integral()\n4*x^2\nsage: sin(x).integral()\n-cos(x)\n```\n\nWhen integrating a piecewise function in Maple, the result is the indefinite integral. The only difference between the Maple result and the patched Sage code is that Maple defines the integral outside the bounds of the original piecewise function, which my code does not.",
     "created_at": "2008-12-05T23:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -94,7 +92,6 @@ archive/issue_comments_035543.json:
 
 I made integration the default for consistency with other functions. For example,
 
-
 ```
 sage: f(x)=3
 sage: f.integral()
@@ -104,7 +101,6 @@ sage: (x*8).integral()
 sage: sin(x).integral()
 -cos(x)
 ```
-
 
 When integrating a piecewise function in Maple, the result is the indefinite integral. The only difference between the Maple result and the patched Sage code is that Maple defines the integral outside the bounds of the original piecewise function, which my code does not.
 
@@ -239,7 +235,7 @@ Works as advertised.  I don't care about any design / structure details of calcu
 archive/issue_comments_035550.json:
 ```json
 {
-    "body": "Sorry, I didn't see this earlier or I would've reviewed it.\n\nThis does not seem to work as advertised. There was a long thread in sage-devel which I though settled some design issues. One of them was that the FTC should be true for this indefinite integral. For example, the indef int F of the function f defined on (-4,3) \n\n\n```\n\n sage: f1(y) = -1\n sage: f2(y) = y + 3\n sage: f3(y) = -y - 1\n sage: f4(y) = y^2 - 1\n sage: f5(y) = 3\n sage: f = Piecewise([[(-4,-3),f1],[(-3,-2),f2],[(-2,0),f3],[(0,2),f4],[(2,3),f5]])\n sage: F = f.integral(y)\n\n```\n\n\nshould have the property that F(3)-F(-4) is the area under the curve.\nThis *is* true, as the following shows:\n\n\n```\nsage: f.integral(y,(-4,3))\n19/6\nsage: F(3)-F(-4)\n19/6\n```\n\n\nThis is not tested. In my option, this needs to be added to the docstring.\n\n*However*, what the docstring says is \"If definite=True is given, returns the definite integral.\"\nI don't know what the output\n\n\n```\nsage: f.integral(definite=True)\n2*(y^2 - 1) + y + 2*(-y - 1) + 5\n```\n\n\nmeans. I would expect it to be 19/6. Don't you assume the function is 0 outside \n(-4,3)? In any case, the definite integral seems incorrect, and is not consistenet\nwith the old behaviour, as you said it would be in the thread referred to above.",
+    "body": "Sorry, I didn't see this earlier or I would've reviewed it.\n\nThis does not seem to work as advertised. There was a long thread in sage-devel which I though settled some design issues. One of them was that the FTC should be true for this indefinite integral. For example, the indef int F of the function f defined on (-4,3) \n\n```\n\n sage: f1(y) = -1\n sage: f2(y) = y + 3\n sage: f3(y) = -y - 1\n sage: f4(y) = y^2 - 1\n sage: f5(y) = 3\n sage: f = Piecewise([[(-4,-3),f1],[(-3,-2),f2],[(-2,0),f3],[(0,2),f4],[(2,3),f5]])\n sage: F = f.integral(y)\n\n```\n\nshould have the property that F(3)-F(-4) is the area under the curve.\nThis *is* true, as the following shows:\n\n```\nsage: f.integral(y,(-4,3))\n19/6\nsage: F(3)-F(-4)\n19/6\n```\n\nThis is not tested. In my option, this needs to be added to the docstring.\n\n*However*, what the docstring says is \"If definite=True is given, returns the definite integral.\"\nI don't know what the output\n\n```\nsage: f.integral(definite=True)\n2*(y^2 - 1) + y + 2*(-y - 1) + 5\n```\n\nmeans. I would expect it to be 19/6. Don't you assume the function is 0 outside \n(-4,3)? In any case, the definite integral seems incorrect, and is not consistenet\nwith the old behaviour, as you said it would be in the thread referred to above.",
     "created_at": "2009-01-24T13:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -251,7 +247,6 @@ archive/issue_comments_035550.json:
 Sorry, I didn't see this earlier or I would've reviewed it.
 
 This does not seem to work as advertised. There was a long thread in sage-devel which I though settled some design issues. One of them was that the FTC should be true for this indefinite integral. For example, the indef int F of the function f defined on (-4,3) 
-
 
 ```
 
@@ -265,10 +260,8 @@ This does not seem to work as advertised. There was a long thread in sage-devel 
 
 ```
 
-
 should have the property that F(3)-F(-4) is the area under the curve.
 This *is* true, as the following shows:
-
 
 ```
 sage: f.integral(y,(-4,3))
@@ -277,18 +270,15 @@ sage: F(3)-F(-4)
 19/6
 ```
 
-
 This is not tested. In my option, this needs to be added to the docstring.
 
 *However*, what the docstring says is "If definite=True is given, returns the definite integral."
 I don't know what the output
 
-
 ```
 sage: f.integral(definite=True)
 2*(y^2 - 1) + y + 2*(-y - 1) + 5
 ```
-
 
 means. I would expect it to be 19/6. Don't you assume the function is 0 outside 
 (-4,3)? In any case, the definite integral seems incorrect, and is not consistenet
@@ -301,7 +291,7 @@ with the old behaviour, as you said it would be in the thread referred to above.
 archive/issue_comments_035551.json:
 ```json
 {
-    "body": "It works as expected if you specify the variable:\n\n\n```\nsage: f.integral(definite=True)\n2*(y^2 - 1) + y + 2*(-y - 1) + 5\nsage: f.integral(y,definite=True)\n19/6\n```\n\n\nI suppose in functions of one variable it would be more consistent (within Sage) to figure out the variable automatically, though?",
+    "body": "It works as expected if you specify the variable:\n\n```\nsage: f.integral(definite=True)\n2*(y^2 - 1) + y + 2*(-y - 1) + 5\nsage: f.integral(y,definite=True)\n19/6\n```\n\nI suppose in functions of one variable it would be more consistent (within Sage) to figure out the variable automatically, though?",
     "created_at": "2009-01-24T22:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -312,14 +302,12 @@ archive/issue_comments_035551.json:
 
 It works as expected if you specify the variable:
 
-
 ```
 sage: f.integral(definite=True)
 2*(y^2 - 1) + y + 2*(-y - 1) + 5
 sage: f.integral(y,definite=True)
 19/6
 ```
-
 
 I suppose in functions of one variable it would be more consistent (within Sage) to figure out the variable automatically, though?
 
@@ -444,7 +432,7 @@ For comparison, my (fairly modest) laptop finishes the tests in 126s. Looking th
 archive/issue_comments_035558.json:
 ```json
 {
-    "body": "The last two patches together (first patch #3 then the \"default\" patch) apply cleanly to 3.3.alpha2. They also pass sage -t.\n\nA few comments:\n\n1) You have \n\n\n```\n            sage: f1(y) = (x+3)^2\n            sage: f2(y) = x+3\n            sage: f3(y) = 3\n            sage: f = Piecewise([[(-infinity, -3), f1], [(-3, 0), f2], [(0, infinity), f3]])\n            sage: f.integral()\n            Piecewise defined function with 3 parts, [[(-Infinity, -3), (x^3 + 9*x^2 + 27*x)/3 + 9],\n            [(-3, 0), (x^2 + 6*x)/2 + 9/2], [(0, +Infinity), 3*x + 9/2]]\n```\n\nin the docstring. Is this mixing of x's and y's intended or a typo? If intended, why?\n\n2) I would have perferred that you add yourself to the AUTHR field at the top and add \n\n\n```\nAUTHOR:\n  P Butler\n```\n\nin the docstring of the function itself. Not crutial, but it will help others in the future know which part is whose.\n\n3) You have the comment:\n\n\n\n```\n            # if this piece starts at negative infinity, we won't\n            # try to compute the definite integral of the piece.\n```\n\nyet you have the definite integral\n\n```\n\n            sage: f1(x) = e^(-abs(x))\n            sage: f = Piecewise([[(-infinity, infinity), f1]])\n            sage: f.integral(definite=True)\n            2\n```\n\nCould you explain this please? I think maybe you meant to say \n\"...try to compute the indefinite...\":\n\n```\nsage: f.integral()\nPiecewise defined function with 1 parts, [[(-Infinity, +Infinity), -integrate(e^(-abs(x)), x, x, +Infinity)]]\n```\n\nIf so, could you add this example and comment to the docstring please?\n\n\nIf you agree to all this, could you just make a small patch to go on top of the previous 2 so I can just apply it in my clone, run sage -t, and give this a positive review?",
+    "body": "The last two patches together (first patch #3 then the \"default\" patch) apply cleanly to 3.3.alpha2. They also pass sage -t.\n\nA few comments:\n\n1) You have \n\n```\n            sage: f1(y) = (x+3)^2\n            sage: f2(y) = x+3\n            sage: f3(y) = 3\n            sage: f = Piecewise([[(-infinity, -3), f1], [(-3, 0), f2], [(0, infinity), f3]])\n            sage: f.integral()\n            Piecewise defined function with 3 parts, [[(-Infinity, -3), (x^3 + 9*x^2 + 27*x)/3 + 9],\n            [(-3, 0), (x^2 + 6*x)/2 + 9/2], [(0, +Infinity), 3*x + 9/2]]\n```\nin the docstring. Is this mixing of x's and y's intended or a typo? If intended, why?\n\n2) I would have perferred that you add yourself to the AUTHR field at the top and add \n\n```\nAUTHOR:\n  P Butler\n```\nin the docstring of the function itself. Not crutial, but it will help others in the future know which part is whose.\n\n3) You have the comment:\n\n\n```\n            # if this piece starts at negative infinity, we won't\n            # try to compute the definite integral of the piece.\n```\nyet you have the definite integral\n\n```\n\n            sage: f1(x) = e^(-abs(x))\n            sage: f = Piecewise([[(-infinity, infinity), f1]])\n            sage: f.integral(definite=True)\n            2\n```\nCould you explain this please? I think maybe you meant to say \n\"...try to compute the indefinite...\":\n\n```\nsage: f.integral()\nPiecewise defined function with 1 parts, [[(-Infinity, +Infinity), -integrate(e^(-abs(x)), x, x, +Infinity)]]\n```\nIf so, could you add this example and comment to the docstring please?\n\n\nIf you agree to all this, could you just make a small patch to go on top of the previous 2 so I can just apply it in my clone, run sage -t, and give this a positive review?",
     "created_at": "2009-01-25T15:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -459,7 +447,6 @@ A few comments:
 
 1) You have 
 
-
 ```
             sage: f1(y) = (x+3)^2
             sage: f2(y) = x+3
@@ -469,28 +456,23 @@ A few comments:
             Piecewise defined function with 3 parts, [[(-Infinity, -3), (x^3 + 9*x^2 + 27*x)/3 + 9],
             [(-3, 0), (x^2 + 6*x)/2 + 9/2], [(0, +Infinity), 3*x + 9/2]]
 ```
-
 in the docstring. Is this mixing of x's and y's intended or a typo? If intended, why?
 
 2) I would have perferred that you add yourself to the AUTHR field at the top and add 
-
 
 ```
 AUTHOR:
   P Butler
 ```
-
 in the docstring of the function itself. Not crutial, but it will help others in the future know which part is whose.
 
 3) You have the comment:
-
 
 
 ```
             # if this piece starts at negative infinity, we won't
             # try to compute the definite integral of the piece.
 ```
-
 yet you have the definite integral
 
 ```
@@ -500,7 +482,6 @@ yet you have the definite integral
             sage: f.integral(definite=True)
             2
 ```
-
 Could you explain this please? I think maybe you meant to say 
 "...try to compute the indefinite...":
 
@@ -508,7 +489,6 @@ Could you explain this please? I think maybe you meant to say
 sage: f.integral()
 Piecewise defined function with 1 parts, [[(-Infinity, +Infinity), -integrate(e^(-abs(x)), x, x, +Infinity)]]
 ```
-
 If so, could you add this example and comment to the docstring please?
 
 
@@ -561,7 +541,7 @@ I'm giving this a positive review, finally, Thanks Paul for making the changes.
 archive/issue_comments_035561.json:
 ```json
 {
-    "body": "I am seeing two doctests failure:\n\n```\nsage -t -long \"devel/doc/const/const.tex\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha3/devel/doc/const/const.tex\", line 525:\n    : f.integral()\nExpected:\n    3\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n```\n\nand\n\n```\nsage -t -long \"devel/sage/sage/calculus/wester.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha3/devel/sage/sage/calculus/wester.py\", line 454:\n    : f.integral()\nExpected:\n    100\nGot:\n    Piecewise defined function with 2 parts, [[(-10, 0), 50 - x^2/2], [(0, 10), x^2/2 + 50]]\n**********************************************************************\n```\n\n\nIf someone posts additional patches please also fold the patches together.\n\nCheers,\n\nMichael",
+    "body": "I am seeing two doctests failure:\n\n```\nsage -t -long \"devel/doc/const/const.tex\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha3/devel/doc/const/const.tex\", line 525:\n    : f.integral()\nExpected:\n    3\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n```\nand\n\n```\nsage -t -long \"devel/sage/sage/calculus/wester.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha3/devel/sage/sage/calculus/wester.py\", line 454:\n    : f.integral()\nExpected:\n    100\nGot:\n    Piecewise defined function with 2 parts, [[(-10, 0), 50 - x^2/2], [(0, 10), x^2/2 + 50]]\n**********************************************************************\n```\n\nIf someone posts additional patches please also fold the patches together.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-28T16:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -583,7 +563,6 @@ Got:
     Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]
 **********************************************************************
 ```
-
 and
 
 ```
@@ -597,7 +576,6 @@ Got:
     Piecewise defined function with 2 parts, [[(-10, 0), 50 - x^2/2], [(0, 10), x^2/2 + 50]]
 **********************************************************************
 ```
-
 
 If someone posts additional patches please also fold the patches together.
 
@@ -654,7 +632,7 @@ Ok, I've added the patches.
 archive/issue_comments_035564.json:
 ```json
 {
-    "body": "Two strange things:\n\n(1) For some reason, I cannot apply the const patch to 3.3.alpha2. However, the diff looks good to me.\n\n(2) I applied the \"all\" patch. This is what I got (intel macbook running 10.4):\n\n\n```\n...\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/interfaces/maple.py\"\n        sage -t  \"devel/sage/sage/interfaces/octave.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"\n```\n\n\n*However*, I know const.tex fails (see Michael's comment above), so I ran sage -testall and waited for the doctests to finish (which is near the beginning of the process). Sure enough,\n\n\n```\nTesting Sage constructions guide\nsage -t  \"devel/doc/const/const.tex\"                        \n**********************************************************************\nFile \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.3.alpha2/devel/doc/const/const.tex\", line 525:\n    : f.integral()\nExpected:\n    3\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n```\n\nSo I think sage -testall is not reporting all the failures on my machine for some reason.\n\nIn any case, I would gives this a positive review if I knew it would pass sage -testall. However, it isn't clear to me if the output of sage -testall after this patch is \"positive enough\" to make a \"positive review\" appropriate. Any suggestions Michael?",
+    "body": "Two strange things:\n\n(1) For some reason, I cannot apply the const patch to 3.3.alpha2. However, the diff looks good to me.\n\n(2) I applied the \"all\" patch. This is what I got (intel macbook running 10.4):\n\n```\n...\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/interfaces/maple.py\"\n        sage -t  \"devel/sage/sage/interfaces/octave.py\"\n        sage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"\n```\n\n*However*, I know const.tex fails (see Michael's comment above), so I ran sage -testall and waited for the doctests to finish (which is near the beginning of the process). Sure enough,\n\n```\nTesting Sage constructions guide\nsage -t  \"devel/doc/const/const.tex\"                        \n**********************************************************************\nFile \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.3.alpha2/devel/doc/const/const.tex\", line 525:\n    : f.integral()\nExpected:\n    3\nGot:\n    Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]\n**********************************************************************\n```\nSo I think sage -testall is not reporting all the failures on my machine for some reason.\n\nIn any case, I would gives this a positive review if I knew it would pass sage -testall. However, it isn't clear to me if the output of sage -testall after this patch is \"positive enough\" to make a \"positive review\" appropriate. Any suggestions Michael?",
     "created_at": "2009-01-29T21:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -669,7 +647,6 @@ Two strange things:
 
 (2) I applied the "all" patch. This is what I got (intel macbook running 10.4):
 
-
 ```
 ...
 The following tests failed:
@@ -680,9 +657,7 @@ The following tests failed:
         sage -t  "devel/sage/sage/rings/polynomial/toy_d_basis.py"
 ```
 
-
 *However*, I know const.tex fails (see Michael's comment above), so I ran sage -testall and waited for the doctests to finish (which is near the beginning of the process). Sure enough,
-
 
 ```
 Testing Sage constructions guide
@@ -696,7 +671,6 @@ Got:
     Piecewise defined function with 2 parts, [[(0, 1), x^3/3], [(1, 2), (15*x - x^3)/3 - 13/3]]
 **********************************************************************
 ```
-
 So I think sage -testall is not reporting all the failures on my machine for some reason.
 
 In any case, I would gives this a positive review if I knew it would pass sage -testall. However, it isn't clear to me if the output of sage -testall after this patch is "positive enough" to make a "positive review" appropriate. Any suggestions Michael?
@@ -748,7 +722,7 @@ I ran my tests on an old intel macbook, which might have it's own oddities.
 archive/issue_comments_035567.json:
 ```json
 {
-    "body": "This time, a different test failed. Same as last time, when I ran that test by itself it passed.\n\n\n```\n./sage -testall\n\n[snip]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/rings/qqbar.py\"\nTotal time for all tests: 5392.0 seconds\nPlease see /home/paul/sage/tmp/test.log for the complete log from this test.\npaul@wildcard:~/sage$ ./sage -t \"devel/sage/sage/rings/qqbar.py\"\nsage -t  \"devel/sage/sage/rings/qqbar.py\"                   \n\t [27.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 27.4 seconds\npaul@wildcard:~/sage$ \n```\n\n\nFrom the log:\n\n\n```\nsage -t  \"devel/sage/sage/rings/qqbar.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n     [360.4 s]\n```\n\n\nSo it was just a timeout, not a bad value. Is there a way to disable or extend timeouts?",
+    "body": "This time, a different test failed. Same as last time, when I ran that test by itself it passed.\n\n```\n./sage -testall\n\n[snip]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/rings/qqbar.py\"\nTotal time for all tests: 5392.0 seconds\nPlease see /home/paul/sage/tmp/test.log for the complete log from this test.\npaul@wildcard:~/sage$ ./sage -t \"devel/sage/sage/rings/qqbar.py\"\nsage -t  \"devel/sage/sage/rings/qqbar.py\"                   \n\t [27.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 27.4 seconds\npaul@wildcard:~/sage$ \n```\n\nFrom the log:\n\n```\nsage -t  \"devel/sage/sage/rings/qqbar.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n     [360.4 s]\n```\n\nSo it was just a timeout, not a bad value. Is there a way to disable or extend timeouts?",
     "created_at": "2009-02-01T04:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -758,7 +732,6 @@ archive/issue_comments_035567.json:
 ```
 
 This time, a different test failed. Same as last time, when I ran that test by itself it passed.
-
 
 ```
 ./sage -testall
@@ -782,9 +755,7 @@ Total time for all tests: 27.4 seconds
 paul@wildcard:~/sage$ 
 ```
 
-
 From the log:
-
 
 ```
 sage -t  "devel/sage/sage/rings/qqbar.py"
@@ -793,7 +764,6 @@ sage -t  "devel/sage/sage/rings/qqbar.py"
 *** *** Error: TIMED OUT! *** ***
      [360.4 s]
 ```
-
 
 So it was just a timeout, not a bad value. Is there a way to disable or extend timeouts?
 
@@ -851,7 +821,7 @@ Michael
 archive/issue_comments_035570.json:
 ```json
 {
-    "body": "The thread was\n\n\n```\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f6cb26796d39c67/c19f18e80a65164e?lnk=gst&q=Integral+of+piecewise+functions#c19f18e80a65164e\n```\n\n(or search \"Integral of piecewise functions\" Dec 6, 2008).\n\nI can try to install the patches on my work machine but it will take several days to even\ninstall the latest version of Sage. Recently, they significantly lowered the download speed for \neveryone for some reason.",
+    "body": "The thread was\n\n```\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f6cb26796d39c67/c19f18e80a65164e?lnk=gst&q=Integral+of+piecewise+functions#c19f18e80a65164e\n```\n(or search \"Integral of piecewise functions\" Dec 6, 2008).\n\nI can try to install the patches on my work machine but it will take several days to even\ninstall the latest version of Sage. Recently, they significantly lowered the download speed for \neveryone for some reason.",
     "created_at": "2009-02-02T12:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4721",
     "type": "issue_comment",
@@ -862,11 +832,9 @@ archive/issue_comments_035570.json:
 
 The thread was
 
-
 ```
 http://groups.google.com/group/sage-devel/browse_thread/thread/f6cb26796d39c67/c19f18e80a65164e?lnk=gst&q=Integral+of+piecewise+functions#c19f18e80a65164e
 ```
-
 (or search "Integral of piecewise functions" Dec 6, 2008).
 
 I can try to install the patches on my work machine but it will take several days to even

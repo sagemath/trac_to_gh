@@ -3,7 +3,7 @@
 archive/issues_005323.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nThe `./` should not be here:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nThe `./` should not be here:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
     "created_at": "2009-02-20T15:49:37Z",
     "labels": [
         "component: doctest coverage",
@@ -27,7 +27,6 @@ mabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3
 ERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing
 ```
 
-
 Cheers,
 
 Michael
@@ -43,7 +42,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5323
 archive/issue_comments_040900.json:
 ```json
 {
-    "body": "Fixed in 4.8.alpha6:\n\n\n```\n$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\t/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py # File not found\nTotal time for all tests: 0.0 seconds\n```\n",
+    "body": "Fixed in 4.8.alpha6:\n\n```\n$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\t/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py # File not found\nTotal time for all tests: 0.0 seconds\n```",
     "created_at": "2012-01-05T00:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5323",
     "type": "issue_comment",
@@ -53,7 +52,6 @@ archive/issue_comments_040900.json:
 ```
 
 Fixed in 4.8.alpha6:
-
 
 ```
 $ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py 
@@ -66,7 +64,6 @@ The following tests failed:
 	/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py # File not found
 Total time for all tests: 0.0 seconds
 ```
-
 
 
 

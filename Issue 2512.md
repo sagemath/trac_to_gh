@@ -3,7 +3,7 @@
 archive/issues_002512.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
+    "body": "Assignee: @williamstein\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
     "created_at": "2008-03-13T22:33:26Z",
     "labels": [
         "component: linear algebra"
@@ -25,7 +25,6 @@ something like:
 def condition(m,p=2):
     return norm(m.inverse(),p) * norm(m,p)
 ```
-
 
 depends on #1763
 
@@ -155,7 +154,7 @@ Suggestions/comments welcome. Written on sage 4.6.2.
 archive/issue_comments_017000.json:
 ```json
 {
-    "body": "wow, this still exists. The doctest looks fine, is it possible to indent the options for the argument? Apart from that I strongly suggest to use numpy for that. They solve the 2-norm special case via svd and all the others might be faster. They also have a -infinity case.\n\n\n```\nsage: from numpy.linalg.linalg import cond     \nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])    \nsage: cond(A)                              \n13.139632629120618\nsage: cond(A, 1)                           \n22.88636363636364\nsage: cond(A, 'fro')                       \n14.21690371493278\nsage: import numpy as np                   \nsage: cond(A, np.inf)                      \n19.090909090909093\nsage: cond(A, -np.inf)                     \n2.5454545454545454\n```\n\n\ncomplex also works\n\n\n```\nsage: A = matrix([[1+2j, 1+3j], [1+1j, 0.5-0.5j]])\nsage: cond(A, np.inf)                             \n4.2200687516284452\nsage: cond(A)        \n3.2255049266776936\n```\n",
+    "body": "wow, this still exists. The doctest looks fine, is it possible to indent the options for the argument? Apart from that I strongly suggest to use numpy for that. They solve the 2-norm special case via svd and all the others might be faster. They also have a -infinity case.\n\n```\nsage: from numpy.linalg.linalg import cond     \nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])    \nsage: cond(A)                              \n13.139632629120618\nsage: cond(A, 1)                           \n22.88636363636364\nsage: cond(A, 'fro')                       \n14.21690371493278\nsage: import numpy as np                   \nsage: cond(A, np.inf)                      \n19.090909090909093\nsage: cond(A, -np.inf)                     \n2.5454545454545454\n```\n\ncomplex also works\n\n```\nsage: A = matrix([[1+2j, 1+3j], [1+1j, 0.5-0.5j]])\nsage: cond(A, np.inf)                             \n4.2200687516284452\nsage: cond(A)        \n3.2255049266776936\n```",
     "created_at": "2011-03-23T00:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
@@ -165,7 +164,6 @@ archive/issue_comments_017000.json:
 ```
 
 wow, this still exists. The doctest looks fine, is it possible to indent the options for the argument? Apart from that I strongly suggest to use numpy for that. They solve the 2-norm special case via svd and all the others might be faster. They also have a -infinity case.
-
 
 ```
 sage: from numpy.linalg.linalg import cond     
@@ -183,9 +181,7 @@ sage: cond(A, -np.inf)
 2.5454545454545454
 ```
 
-
 complex also works
-
 
 ```
 sage: A = matrix([[1+2j, 1+3j], [1+1j, 0.5-0.5j]])
@@ -194,7 +190,6 @@ sage: cond(A, np.inf)
 sage: cond(A)        
 3.2255049266776936
 ```
-
 
 
 
@@ -225,7 +220,7 @@ Rob
 archive/issue_comments_017002.json:
 ```json
 {
-    "body": "Turns out Rob Beezer has implemented condition numbers by directly wrapping the NumPy cond() command in patch #10837.\n\nSome timings:\n\nPatch 2512:\n\n\n```\nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition_number(2)')\n125 loops, best of 3: 1.96 ms per loop\nsage: timeit('A.condition_number(Infinity)')\n625 loops, best of 3: 1.31 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n625 loops, best of 3: 949 \u00b5s per loop\n\nsage: A = MatrixSpace(CC,50).random_element()\nsage: timeit('A.condition_number(2)')\n5 loops, best of 3: 389 ms per loop\nsage: timeit('A.condition_number(1)')\n5 loops, best of 3: 380 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n5 loops, best of 3: 358 ms per loop\n```\n\n\nPatch 10837:\n\n\n```\nsage: A = matrix(RDF,[[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition(2)')\n625 loops, best of 3: 282 \u00b5s per loop\nsage: timeit('A.condition(Infinity)')\n625 loops, best of 3: 123 \u00b5s per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 203 \u00b5s per loop\n\nsage: A = MatrixSpace(CDF,50).random_element()\nsage: timeit('A.condition(1)')\n625 loops, best of 3: 968 \u00b5s per loop\nsage: timeit('A.condition(2)')\n125 loops, best of 3: 2.97 ms per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 942 \u00b5s per loop\n```\n\n\nI vote we go for Rob's patch.",
+    "body": "Turns out Rob Beezer has implemented condition numbers by directly wrapping the NumPy cond() command in patch #10837.\n\nSome timings:\n\nPatch 2512:\n\n```\nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition_number(2)')\n125 loops, best of 3: 1.96 ms per loop\nsage: timeit('A.condition_number(Infinity)')\n625 loops, best of 3: 1.31 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n625 loops, best of 3: 949 \u00b5s per loop\n\nsage: A = MatrixSpace(CC,50).random_element()\nsage: timeit('A.condition_number(2)')\n5 loops, best of 3: 389 ms per loop\nsage: timeit('A.condition_number(1)')\n5 loops, best of 3: 380 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n5 loops, best of 3: 358 ms per loop\n```\n\nPatch 10837:\n\n```\nsage: A = matrix(RDF,[[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition(2)')\n625 loops, best of 3: 282 \u00b5s per loop\nsage: timeit('A.condition(Infinity)')\n625 loops, best of 3: 123 \u00b5s per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 203 \u00b5s per loop\n\nsage: A = MatrixSpace(CDF,50).random_element()\nsage: timeit('A.condition(1)')\n625 loops, best of 3: 968 \u00b5s per loop\nsage: timeit('A.condition(2)')\n125 loops, best of 3: 2.97 ms per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 942 \u00b5s per loop\n```\n\nI vote we go for Rob's patch.",
     "created_at": "2011-03-23T00:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
@@ -239,7 +234,6 @@ Turns out Rob Beezer has implemented condition numbers by directly wrapping the 
 Some timings:
 
 Patch 2512:
-
 
 ```
 sage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])
@@ -259,9 +253,7 @@ sage: timeit('A.condition_number("frob")')
 5 loops, best of 3: 358 ms per loop
 ```
 
-
 Patch 10837:
-
 
 ```
 sage: A = matrix(RDF,[[1,2,4],[5,3,9],[7,8,6]])
@@ -280,7 +272,6 @@ sage: timeit('A.condition(2)')
 sage: timeit('A.condition("frob")')
 625 loops, best of 3: 942 µs per loop
 ```
-
 
 I vote we go for Rob's patch.
 
@@ -325,7 +316,7 @@ archive/issue_events_005900.json:
 archive/issue_comments_017004.json:
 ```json
 {
-    "body": "> I vote we go for Rob's patch.\n\nYep, looks like 3 to 10 times faster.  I might steal your code for a verification doctest on #10837.\n\nThanks for the timing tests.",
+    "body": "> I vote we go for Rob's patch.\n\n\nYep, looks like 3 to 10 times faster.  I might steal your code for a verification doctest on #10837.\n\nThanks for the timing tests.",
     "created_at": "2011-03-23T01:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
@@ -335,6 +326,7 @@ archive/issue_comments_017004.json:
 ```
 
 > I vote we go for Rob's patch.
+
 
 Yep, looks like 3 to 10 times faster.  I might steal your code for a verification doctest on #10837.
 

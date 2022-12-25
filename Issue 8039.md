@@ -94,7 +94,7 @@ PS, you should also report this failure upstream.
 archive/issue_comments_070124.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> What has been changed? I can't find the changed file? You should not change the ATLAS source code, but create a patch, which gets applied with spkg-install. \n> \n\nSee the patch.\n\nJaap",
+    "body": "Replying to [comment:2 drkirkby]:\n> What has been changed? I can't find the changed file? You should not change the ATLAS source code, but create a patch, which gets applied with spkg-install. \n> \n\n\nSee the patch.\n\nJaap",
     "created_at": "2010-01-26T18:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -106,6 +106,7 @@ archive/issue_comments_070124.json:
 Replying to [comment:2 drkirkby]:
 > What has been changed? I can't find the changed file? You should not change the ATLAS source code, but create a patch, which gets applied with spkg-install. 
 > 
+
 
 See the patch.
 
@@ -136,7 +137,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070126.json:
 ```json
 {
-    "body": "This will not work for me, as I believe there is a syntax error in your script.  This might be an example of things that work on one shell do not on another.\n\n\n```\nATLAS-build/lib/Makefile will be changed.\n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\n./spkg-install-script: line 94: [: yes: unary operator expected\nmake[2]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build/lib'\nrm -f libatlas.so liblapack.so\n```\n\n\nThis is line 94 of the script, which is causing the problem. \n\n\n```\n  if [ $SAGE64 =\"yes\" ]; then \n```\n\n\nI believe there should be a space after the '=' sign. \n\nI'd make a couple of other points tests in general, I've gleaned from studying the shell more, and from things from comp.unix.shell. \n\n* It is better to test for \"x$SAGE64\" = xyes, as some shells have problems if SAGE64 is not defined. Adding an 'x' or anything else you fancy, will avoid that possibility, though 'x' is commonly used, so I would stick to a lower case x. That problem is not true of modern versions of bash, but its a good habit to get into, as then your scripts will work on any shell. \n* It is desirable to quote \"x$SAGE64\" as potentially SAGE64 might be set to something with spaces in it. I know in this case, there unlikely to be spaces, but you don't know if someone has set it correctly or not. \n\nHence the following is the safest test sort of test, and does not contain any unnecessary quotes. Quoting xNO will not hurt, but it is unnecessary as you know xNO will have no spaces, but you don't know that about FOOBAR.\n\n\n``` \n             if [ \"x$FOOBAR\" = xNO ]; then\n```\n\n\nI leave you to convert it to what is needed here. Otherwise I become an author and can't review it!\n\nI would also \n* Report this upstream, and add to the trac ticket the URL of the ticket. Currently it is set to N/A which is clearly not true. \n* Stick a note in the spkg-install saying why the change is made. i.e. the original flag is not valid. -64 is needed to build 64-bit, or something like that. \n* I would echo a quick statement like I did before when changing flags, like I did before. \n\n\n``` \n'-shared' will be changed to '-G'\n```\n\n\n* You are using a temporary variable of 'makefile' while editing 'Make.inc' I think that is unwise, and I know I was guilty of it above, but 'makefile' has some significance, and you could overwrite such a file if it existed. \n\nBetter would be \n\n\n```\nsed 's/-melf_x86_64/-64/g' Make.inc > Make.inc.tmp\n```\n\n\nor perhaps uses Make.inc.$$, which will create a file with the PID appended. \n\nAlso, the description is inaccurate, as it says \"As a workaround I changed -melf_x86_64 in -64 in Make.inc\". I think you mean you changed it *'too* -64. \n\nSo with \n\n* The syntax error removed\n* Description updated. \n* Some other minor changes you might want to consider\n* Reported upstream, the URL posted. \n* Change to \"reported upstream\" from N/A \n* Revised patch attached. \n\nthen I think this should be ok. But now, there is a syntax error so it will not build at all for me. \n\nDave",
+    "body": "This will not work for me, as I believe there is a syntax error in your script.  This might be an example of things that work on one shell do not on another.\n\n```\nATLAS-build/lib/Makefile will be changed.\n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\n./spkg-install-script: line 94: [: yes: unary operator expected\nmake[2]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build/lib'\nrm -f libatlas.so liblapack.so\n```\n\nThis is line 94 of the script, which is causing the problem. \n\n```\n  if [ $SAGE64 =\"yes\" ]; then \n```\n\nI believe there should be a space after the '=' sign. \n\nI'd make a couple of other points tests in general, I've gleaned from studying the shell more, and from things from comp.unix.shell. \n\n* It is better to test for \"x$SAGE64\" = xyes, as some shells have problems if SAGE64 is not defined. Adding an 'x' or anything else you fancy, will avoid that possibility, though 'x' is commonly used, so I would stick to a lower case x. That problem is not true of modern versions of bash, but its a good habit to get into, as then your scripts will work on any shell. \n* It is desirable to quote \"x$SAGE64\" as potentially SAGE64 might be set to something with spaces in it. I know in this case, there unlikely to be spaces, but you don't know if someone has set it correctly or not. \n\nHence the following is the safest test sort of test, and does not contain any unnecessary quotes. Quoting xNO will not hurt, but it is unnecessary as you know xNO will have no spaces, but you don't know that about FOOBAR.\n\n``` \n             if [ \"x$FOOBAR\" = xNO ]; then\n```\n\nI leave you to convert it to what is needed here. Otherwise I become an author and can't review it!\n\nI would also \n* Report this upstream, and add to the trac ticket the URL of the ticket. Currently it is set to N/A which is clearly not true. \n* Stick a note in the spkg-install saying why the change is made. i.e. the original flag is not valid. -64 is needed to build 64-bit, or something like that. \n* I would echo a quick statement like I did before when changing flags, like I did before. \n\n``` \n'-shared' will be changed to '-G'\n```\n\n* You are using a temporary variable of 'makefile' while editing 'Make.inc' I think that is unwise, and I know I was guilty of it above, but 'makefile' has some significance, and you could overwrite such a file if it existed. \n\nBetter would be \n\n```\nsed 's/-melf_x86_64/-64/g' Make.inc > Make.inc.tmp\n```\n\nor perhaps uses Make.inc.$$, which will create a file with the PID appended. \n\nAlso, the description is inaccurate, as it says \"As a workaround I changed -melf_x86_64 in -64 in Make.inc\". I think you mean you changed it *'too* -64. \n\nSo with \n\n* The syntax error removed\n* Description updated. \n* Some other minor changes you might want to consider\n* Reported upstream, the URL posted. \n* Change to \"reported upstream\" from N/A \n* Revised patch attached. \n\nthen I think this should be ok. But now, there is a syntax error so it will not build at all for me. \n\nDave",
     "created_at": "2010-01-27T02:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -146,7 +147,6 @@ archive/issue_comments_070126.json:
 ```
 
 This will not work for me, as I believe there is a syntax error in your script.  This might be an example of things that work on one shell do not on another.
-
 
 ```
 ATLAS-build/lib/Makefile will be changed.
@@ -160,14 +160,11 @@ make[2]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3
 rm -f libatlas.so liblapack.so
 ```
 
-
 This is line 94 of the script, which is causing the problem. 
-
 
 ```
   if [ $SAGE64 ="yes" ]; then 
 ```
-
 
 I believe there should be a space after the '=' sign. 
 
@@ -178,11 +175,9 @@ I'd make a couple of other points tests in general, I've gleaned from studying t
 
 Hence the following is the safest test sort of test, and does not contain any unnecessary quotes. Quoting xNO will not hurt, but it is unnecessary as you know xNO will have no spaces, but you don't know that about FOOBAR.
 
-
 ``` 
              if [ "x$FOOBAR" = xNO ]; then
 ```
-
 
 I leave you to convert it to what is needed here. Otherwise I become an author and can't review it!
 
@@ -191,21 +186,17 @@ I would also
 * Stick a note in the spkg-install saying why the change is made. i.e. the original flag is not valid. -64 is needed to build 64-bit, or something like that. 
 * I would echo a quick statement like I did before when changing flags, like I did before. 
 
-
 ``` 
 '-shared' will be changed to '-G'
 ```
-
 
 * You are using a temporary variable of 'makefile' while editing 'Make.inc' I think that is unwise, and I know I was guilty of it above, but 'makefile' has some significance, and you could overwrite such a file if it existed. 
 
 Better would be 
 
-
 ```
 sed 's/-melf_x86_64/-64/g' Make.inc > Make.inc.tmp
 ```
-
 
 or perhaps uses Make.inc.$$, which will create a file with the PID appended. 
 
@@ -292,7 +283,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070130.json:
 ```json
 {
-    "body": "I'm a bit worried about this one:\n\n\n```\nPlatform detected to be 32 bits\n```\n\n\nDave",
+    "body": "I'm a bit worried about this one:\n\n```\nPlatform detected to be 32 bits\n```\n\nDave",
     "created_at": "2010-01-28T14:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -303,11 +294,9 @@ archive/issue_comments_070130.json:
 
 I'm a bit worried about this one:
 
-
 ```
 Platform detected to be 32 bits
 ```
-
 
 Dave
 
@@ -318,7 +307,7 @@ Dave
 archive/issue_comments_070131.json:
 ```json
 {
-    "body": "It also fails on my machine\n\n\n```\nmake[1]: *** [atlas_run] Error 7\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake: *** [IRun_comp] Error 2\nAssertion failed: !system(ln), file /export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build/../src//CONFIG/src/config.c, line 125\n\nOS configured as SunOS (2)\n\nAssembly configured as GAS_x8632 (1)\n\nVector ISA Extension configured as  SSE3 (2,28)\n\nArchitecture configured as  Corei7 (16)\n\nClock rate configured as 3325Mhz\nCannot detect CPU throttling.\n/bin/sh: line 1: 22300: Abort(coredump)\nxconfig exited with 6\nmake -f Make.top build\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake[1]: Make.top: No such file or directory\nmake[1]: *** No rule to make target `Make.top'.  Stop.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake: *** [build] Error 2\nFailed to build ATLAS.\nFailed to build ATLAS.\n\nreal\t0m3.065s\nuser\t0m1.150s\nsys\t0m1.074s\nsage: An error occurred while installing atlas-3.8.3.p11\n```\n",
+    "body": "It also fails on my machine\n\n```\nmake[1]: *** [atlas_run] Error 7\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake: *** [IRun_comp] Error 2\nAssertion failed: !system(ln), file /export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build/../src//CONFIG/src/config.c, line 125\n\nOS configured as SunOS (2)\n\nAssembly configured as GAS_x8632 (1)\n\nVector ISA Extension configured as  SSE3 (2,28)\n\nArchitecture configured as  Corei7 (16)\n\nClock rate configured as 3325Mhz\nCannot detect CPU throttling.\n/bin/sh: line 1: 22300: Abort(coredump)\nxconfig exited with 6\nmake -f Make.top build\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake[1]: Make.top: No such file or directory\nmake[1]: *** No rule to make target `Make.top'.  Stop.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nmake: *** [build] Error 2\nFailed to build ATLAS.\nFailed to build ATLAS.\n\nreal\t0m3.065s\nuser\t0m1.150s\nsys\t0m1.074s\nsage: An error occurred while installing atlas-3.8.3.p11\n```",
     "created_at": "2010-01-28T14:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -328,7 +317,6 @@ archive/issue_comments_070131.json:
 ```
 
 It also fails on my machine
-
 
 ```
 make[1]: *** [atlas_run] Error 7
@@ -365,13 +353,12 @@ sage: An error occurred while installing atlas-3.8.3.p11
 
 
 
-
 ---
 
 archive/issue_comments_070132.json:
 ```json
 {
-    "body": "This is on your machine too:\n\n\n\n```\nchmod: cannot access `/export/home/jaap/sage_port/sage-4.3.1/local/lib/libptf77blas.a': No such file or directory\nmake[1]: [install_lib] Error 1 (ignored)\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nDeleting liblapack.so on Solaris due to bug in numpy/scipy\n\nreal    8m49.450s\nuser    7m35.780s\nsys     1m0.353s\nSuccessfully installed atlas-3.8.3.p11\n\n```\n\n\n\nWhat's wrong?\n\nJaap",
+    "body": "This is on your machine too:\n\n\n```\nchmod: cannot access `/export/home/jaap/sage_port/sage-4.3.1/local/lib/libptf77blas.a': No such file or directory\nmake[1]: [install_lib] Error 1 (ignored)\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.1/spkg/build/atlas-3.8.3.p11/ATLAS-build'\nDeleting liblapack.so on Solaris due to bug in numpy/scipy\n\nreal    8m49.450s\nuser    7m35.780s\nsys     1m0.353s\nSuccessfully installed atlas-3.8.3.p11\n\n```\n\n\nWhat's wrong?\n\nJaap",
     "created_at": "2010-01-28T14:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -381,7 +368,6 @@ archive/issue_comments_070132.json:
 ```
 
 This is on your machine too:
-
 
 
 ```
@@ -396,7 +382,6 @@ sys     1m0.353s
 Successfully installed atlas-3.8.3.p11
 
 ```
-
 
 
 What's wrong?
@@ -524,7 +509,7 @@ Sage 4.3.2 includes `atlas-3.8.3.p11.spkg`.  Should the package here be `p12`?
 archive/issue_comments_070139.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> Sage 4.3.2 includes `atlas-3.8.3.p11.spkg`.  Should the package here be `p12`?\n\n\nMaybe now, but not on the moment I wrote the patch!\n\nThere is a real danger that tickets with positive review are not merged for a long time and bitrot.\n\nJaap",
+    "body": "Replying to [comment:12 mpatel]:\n> Sage 4.3.2 includes `atlas-3.8.3.p11.spkg`.  Should the package here be `p12`?\n\n\n\nMaybe now, but not on the moment I wrote the patch!\n\nThere is a real danger that tickets with positive review are not merged for a long time and bitrot.\n\nJaap",
     "created_at": "2010-02-10T19:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -535,6 +520,7 @@ archive/issue_comments_070139.json:
 
 Replying to [comment:12 mpatel]:
 > Sage 4.3.2 includes `atlas-3.8.3.p11.spkg`.  Should the package here be `p12`?
+
 
 
 Maybe now, but not on the moment I wrote the patch!
@@ -568,7 +554,7 @@ I think I've merged all the other Solaris-related tickets at {32} into a candi
 archive/issue_comments_070141.json:
 ```json
 {
-    "body": "Replying to [comment:14 mpatel]:\n> I think I've merged all the other Solaris-related tickets at\u00a0{32}\u00a0into a candidate 4.3.3.alpha0.\n\nLook at 'porting' to see some more!\n\nJaap",
+    "body": "Replying to [comment:14 mpatel]:\n> I think I've merged all the other Solaris-related tickets at\u00a0{32}\u00a0into a candidate 4.3.3.alpha0.\n\n\nLook at 'porting' to see some more!\n\nJaap",
     "created_at": "2010-02-10T20:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -579,6 +565,7 @@ archive/issue_comments_070141.json:
 
 Replying to [comment:14 mpatel]:
 > I think I've merged all the other Solaris-related tickets at {32} into a candidate 4.3.3.alpha0.
+
 
 Look at 'porting' to see some more!
 
@@ -647,7 +634,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070145.json:
 ```json
 {
-    "body": "Rebased and increased patch level. New spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg)\n\n\n\n```\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nDeleting liblapack.so on Solaris due to bug in numpy/scipy\n\nreal    9m5.693s\nuser    7m45.589s\nsys     1m3.860s\nSuccessfully installed atlas-3.8.3.p12\nYou can safely delete the temporary build directory\n/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/atlas-3.8.3.p12\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing atlas-3.8.3.p12.spkg\n-bash-3.2$ file local/lib/libatlas.*\nlocal/lib/libatlas.a:   current ar archive, not a dynamic executable or shared object\nlocal/lib/libatlas.so:  ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n\n```\n\n\nJaap",
+    "body": "Rebased and increased patch level. New spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg)\n\n\n```\nmake[1]: Leaving directory `/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/atlas-3.8.3.p12/ATLAS-build'\nDeleting liblapack.so on Solaris due to bug in numpy/scipy\n\nreal    9m5.693s\nuser    7m45.589s\nsys     1m3.860s\nSuccessfully installed atlas-3.8.3.p12\nYou can safely delete the temporary build directory\n/export/home/jaap/sage_port/sage-4.3.2.alpha1/spkg/build/atlas-3.8.3.p12\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing atlas-3.8.3.p12.spkg\n-bash-3.2$ file local/lib/libatlas.*\nlocal/lib/libatlas.a:   current ar archive, not a dynamic executable or shared object\nlocal/lib/libatlas.so:  ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n\n```\n\nJaap",
     "created_at": "2010-02-22T21:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
@@ -659,7 +646,6 @@ archive/issue_comments_070145.json:
 Rebased and increased patch level. New spkg:
 
 [http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/atlas-3.8.3.p12.spkg)
-
 
 
 ```
@@ -680,7 +666,6 @@ local/lib/libatlas.a:   current ar archive, not a dynamic executable or shared o
 local/lib/libatlas.so:  ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available
 
 ```
-
 
 Jaap
 

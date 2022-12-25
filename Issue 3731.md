@@ -3,7 +3,7 @@
 archive/issues_003731.json:
 ```json
 {
-    "body": "Assignee: @garyfurnish\n\nKeywords: wester, calculus\n\nThere is an example in sage.calculus.wester starting like this:\n\n```\nsage: # (YES) Expand (1+x)^20, take derivative and factorize. \n```\n\nThe ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.\n\nThe patch adds in some derivative calculations.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3731\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: wester, calculus\n\nThere is an example in sage.calculus.wester starting like this:\n\n```\nsage: # (YES) Expand (1+x)^20, take derivative and factorize. \n```\nThe ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.\n\nThe patch adds in some derivative calculations.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3731\n\n",
     "created_at": "2008-07-27T15:32:24Z",
     "labels": [
         "component: calculus",
@@ -26,7 +26,6 @@ There is an example in sage.calculus.wester starting like this:
 ```
 sage: # (YES) Expand (1+x)^20, take derivative and factorize. 
 ```
-
 The ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.
 
 The patch adds in some derivative calculations.

@@ -4,7 +4,7 @@ serious powering bug / overflow
 archive/issues_000602.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nsage: (1/2)^(2^100)\n1\n```\n\n\nOuch!\n\nIssue created by migration from https://trac.sagemath.org/ticket/602\n\n",
+    "body": "Assignee: boothby\n\n```\nsage: (1/2)^(2^100)\n1\n```\n\nOuch!\n\nIssue created by migration from https://trac.sagemath.org/ticket/602\n\n",
     "created_at": "2007-09-06T19:24:35Z",
     "labels": [
         "component: basic arithmetic",
@@ -20,12 +20,10 @@ archive/issues_000602.json:
 ```
 Assignee: boothby
 
-
 ```
 sage: (1/2)^(2^100)
 1
 ```
-
 
 Ouch!
 
@@ -40,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/602
 archive/issue_comments_003093.json:
 ```json
 {
-    "body": "The cutoff for the exponent looks to be 2^32.\n\n```\nsage: x = 2^(2^32-1)\nsage: x == 1\nFalse\nsage: x = 2^(2^32)\nsage: x == 1\nTrue\nsage: \n```\n",
+    "body": "The cutoff for the exponent looks to be 2^32.\n\n```\nsage: x = 2^(2^32-1)\nsage: x == 1\nFalse\nsage: x = 2^(2^32)\nsage: x == 1\nTrue\nsage: \n```",
     "created_at": "2007-09-06T21:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/602",
     "type": "issue_comment",
@@ -60,7 +58,6 @@ sage: x == 1
 True
 sage: 
 ```
-
 
 
 

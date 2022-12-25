@@ -121,7 +121,7 @@ gcc -bundle -undefined dynamic_lookup build/temp.macosx-10.3-i386-2.5/C/base.o b
 archive/issue_comments_028022.json:
 ```json
 {
-    "body": "Can crash tthrough the cvxopt errors by adding extern declarations in some of the source files.\n\nI think this is a complete list:\n\nin src/C/base.c, \n\n```\nPyTypeObject matrix_tp ;\nPyTypeObject spmatrix_tp ;\n```\n \nboth get an extern.\n\nIn dense.c, `PyTypeObject spmatrix_tp ;` gets an extern.\n\nIn dense.c and sparse.c, `PyObject *base_mod;` gets an extern.",
+    "body": "Can crash tthrough the cvxopt errors by adding extern declarations in some of the source files.\n\nI think this is a complete list:\n\nin src/C/base.c, \n\n```\nPyTypeObject matrix_tp ;\nPyTypeObject spmatrix_tp ;\n``` \nboth get an extern.\n\nIn dense.c, `PyTypeObject spmatrix_tp ;` gets an extern.\n\nIn dense.c and sparse.c, `PyObject *base_mod;` gets an extern.",
     "created_at": "2008-08-25T03:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -139,8 +139,7 @@ in src/C/base.c,
 ```
 PyTypeObject matrix_tp ;
 PyTypeObject spmatrix_tp ;
-```
- 
+``` 
 both get an extern.
 
 In dense.c, `PyTypeObject spmatrix_tp ;` gets an extern.
@@ -154,7 +153,7 @@ In dense.c and sparse.c, `PyObject *base_mod;` gets an extern.
 archive/issue_comments_028023.json:
 ```json
 {
-    "body": "It builds and sage works with two warnings and some dsage badness:\n\n```\nWARNING: Readline services not available on this platform.\nWARNING: The auto-indent feature requires the readline library\n```\n\n\nfailed doctests:\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py             \n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 14:\n    sage: a\nExpected:\n    5\nGot:\n    No output.\n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 33:\n    sage: j\nExpected:\n    10\nGot:\n    No output.\n**********************************************************************\n```\n",
+    "body": "It builds and sage works with two warnings and some dsage badness:\n\n```\nWARNING: Readline services not available on this platform.\nWARNING: The auto-indent feature requires the readline library\n```\n\nfailed doctests:\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py             \n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 14:\n    sage: a\nExpected:\n    5\nGot:\n    No output.\n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 33:\n    sage: j\nExpected:\n    10\nGot:\n    No output.\n**********************************************************************\n```",
     "created_at": "2008-08-25T04:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -169,7 +168,6 @@ It builds and sage works with two warnings and some dsage badness:
 WARNING: Readline services not available on this platform.
 WARNING: The auto-indent feature requires the readline library
 ```
-
 
 failed doctests:
 
@@ -194,13 +192,12 @@ Got:
 
 
 
-
 ---
 
 archive/issue_comments_028024.json:
 ```json
 {
-    "body": "Readline fix.  Python's spkg needs a couple of lines:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n",
+    "body": "Readline fix.  Python's spkg needs a couple of lines:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```",
     "created_at": "2008-08-25T06:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -218,7 +215,6 @@ export LDFLAGS
 CPPFLAGS="-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS"
 export CPPFLAGS
 ```
-
 
 
 
@@ -263,7 +259,7 @@ And that also fixes dsage's doctest trouble.
 archive/issue_comments_028027.json:
 ```json
 {
-    "body": "Patches required to get this working.  (Sorry I don't know how to do the pretty red/green bizzo.)\n## python.spkg/spkg-install:\n\n```\n49a50,56\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a $SAGE_PYTHON_FRAMEWORK ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n> \n> \n74c81,82\n<         --with-gcc=\"gcc -m64\" --disable-toolbox-glue\n---\n>         --with-gcc=\"gcc -m64\" --disable-toolbox-glue \\\n>         $FRAMEWORK_BUILD_OPTION\n80c88,89\n<         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4\n---\n>         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4 \\\n>         $FRAMEWORK_BUILD_OPTION\n109a119,132\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n> \n```\n\n\n## sage.spkg/sagebuild.py:\n\n```\n509c509,514\n<     safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n---\n>     if env.options['SAGE_PYTHON_FRAMEWORK'] != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```\n\n\nAnd a bunch of edits to cvxopt, which are apparently fixed in version 1.0.",
+    "body": "Patches required to get this working.  (Sorry I don't know how to do the pretty red/green bizzo.)\n## python.spkg/spkg-install:\n\n```\n49a50,56\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a $SAGE_PYTHON_FRAMEWORK ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n> \n> \n74c81,82\n<         --with-gcc=\"gcc -m64\" --disable-toolbox-glue\n---\n>         --with-gcc=\"gcc -m64\" --disable-toolbox-glue \\\n>         $FRAMEWORK_BUILD_OPTION\n80c88,89\n<         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4\n---\n>         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4 \\\n>         $FRAMEWORK_BUILD_OPTION\n109a119,132\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n> \n```\n\n## sage.spkg/sagebuild.py:\n\n```\n509c509,514\n<     safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n---\n>     if env.options['SAGE_PYTHON_FRAMEWORK'] != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```\n\nAnd a bunch of edits to cvxopt, which are apparently fixed in version 1.0.",
     "created_at": "2008-08-25T12:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -310,7 +306,6 @@ Patches required to get this working.  (Sorry I don't know how to do the pretty 
 > 
 ```
 
-
 ## sage.spkg/sagebuild.py:
 
 ```
@@ -325,7 +320,6 @@ Patches required to get this working.  (Sorry I don't know how to do the pretty 
 >             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')
 ```
 
-
 And a bunch of edits to cvxopt, which are apparently fixed in version 1.0.
 
 
@@ -335,7 +329,7 @@ And a bunch of edits to cvxopt, which are apparently fixed in version 1.0.
 archive/issue_comments_028028.json:
 ```json
 {
-    "body": "Slightly better in python.spkg/spkg-install:\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a \"$SAGE_PYTHON_FRAMEWORK\" = \"yes\" ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n```\n",
+    "body": "Slightly better in python.spkg/spkg-install:\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a \"$SAGE_PYTHON_FRAMEWORK\" = \"yes\" ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n```",
     "created_at": "2008-08-26T01:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -353,7 +347,6 @@ Slightly better in python.spkg/spkg-install:
 >     FRAMEWORK_BUILD_OPTION="--enable-framework=$SAGE_LOCAL/Frameworks"
 > fi
 ```
-
 
 
 
@@ -380,7 +373,7 @@ archive/issue_comments_028029.json:
 archive/issue_comments_028030.json:
 ```json
 {
-    "body": "correction to: ` sage.spkg/sagebuild.py `\n\n```\n>     if os.environ.get('SAGE_PYTHON_FRAMEWORK') != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```\n",
+    "body": "correction to: ` sage.spkg/sagebuild.py `\n\n```\n>     if os.environ.get('SAGE_PYTHON_FRAMEWORK') != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```",
     "created_at": "2008-08-26T04:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -402,13 +395,12 @@ correction to: ` sage.spkg/sagebuild.py `
 
 
 
-
 ---
 
 archive/issue_comments_028031.json:
 ```json
 {
-    "body": "I suck.  ` python.spkg/spkg-install `\n\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n```\n",
+    "body": "I suck.  ` python.spkg/spkg-install `\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n```",
     "created_at": "2008-08-26T05:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
@@ -418,7 +410,6 @@ archive/issue_comments_028031.json:
 ```
 
 I suck.  ` python.spkg/spkg-install `
-
 
 ```
 > # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling
@@ -434,7 +425,6 @@ I suck.  ` python.spkg/spkg-install `
 >     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5
 > fi
 ```
-
 
 
 

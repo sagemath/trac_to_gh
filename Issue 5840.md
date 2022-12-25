@@ -142,7 +142,7 @@ Do we include a sagetex spkg currently?
 archive/issue_comments_045832.json:
 ```json
 {
-    "body": "Replying to [comment:9 mhansen]:\n> Do we include a sagetex spkg currently?\n\nAFAIK it's supposed to be in the optional repository, but there were issues with spkgs there disappearing. In IRC, mabshoff has said that he wouldn't update or add new spkgs to the optional repo until someone figured out why spkgs were disappearing and fixed the problem.",
+    "body": "Replying to [comment:9 mhansen]:\n> Do we include a sagetex spkg currently?\n\n\nAFAIK it's supposed to be in the optional repository, but there were issues with spkgs there disappearing. In IRC, mabshoff has said that he wouldn't update or add new spkgs to the optional repo until someone figured out why spkgs were disappearing and fixed the problem.",
     "created_at": "2009-06-01T01:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
@@ -153,6 +153,7 @@ archive/issue_comments_045832.json:
 
 Replying to [comment:9 mhansen]:
 > Do we include a sagetex spkg currently?
+
 
 AFAIK it's supposed to be in the optional repository, but there were issues with spkgs there disappearing. In IRC, mabshoff has said that he wouldn't update or add new spkgs to the optional repo until someone figured out why spkgs were disappearing and fixed the problem.
 

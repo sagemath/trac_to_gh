@@ -85,7 +85,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_083513.json:
 ```json
 {
-    "body": "Patch applies fine to 4.4.3.alpha0, and looks good to me.\n\nTests pass (I tested all files in sage/rings/polynomial plus some other random tests).\n\nI am giving this a positive review, but wonder whether the following reverse functions should also be changed to be consistent:\n\n```\nlibs/ntl/ntl_GF2X.pyx:645:    def reverse(self, int hi = -2):\nlibs/ntl/ntl_ZZX.pyx:768:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pEX.pyx:850:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pX.pyx:947:    def reverse(self, hi=None):\n...\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1005:    def reverse(self):\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1548:    def reverse(self):\nrings/polynomial/polynomial_real_mpfr_dense.pyx:484:    def reverse(self):\n...\nrings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def reverse(self, n = None):\n```\n",
+    "body": "Patch applies fine to 4.4.3.alpha0, and looks good to me.\n\nTests pass (I tested all files in sage/rings/polynomial plus some other random tests).\n\nI am giving this a positive review, but wonder whether the following reverse functions should also be changed to be consistent:\n\n```\nlibs/ntl/ntl_GF2X.pyx:645:    def reverse(self, int hi = -2):\nlibs/ntl/ntl_ZZX.pyx:768:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pEX.pyx:850:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pX.pyx:947:    def reverse(self, hi=None):\n...\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1005:    def reverse(self):\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1548:    def reverse(self):\nrings/polynomial/polynomial_real_mpfr_dense.pyx:484:    def reverse(self):\n...\nrings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def reverse(self, n = None):\n```",
     "created_at": "2010-05-27T11:58:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9035",
     "type": "issue_comment",
@@ -112,7 +112,6 @@ rings/polynomial/polynomial_real_mpfr_dense.pyx:484:    def reverse(self):
 ...
 rings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def reverse(self, n = None):
 ```
-
 
 
 

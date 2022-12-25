@@ -142,7 +142,7 @@ dave
 archive/issue_comments_067629.json:
 ```json
 {
-    "body": "> It looks like this has been fixed, but the idea was to do exactly what was done on OS X. i.e. add the flag -m64 if the environment variable SAGE64 is set to \"yes\" \n\nDave, do you want to submit a patch, or should we close that ticket?\n\nPaul",
+    "body": "> It looks like this has been fixed, but the idea was to do exactly what was done on OS X. i.e. add the flag -m64 if the environment variable SAGE64 is set to \"yes\" \n\n\nDave, do you want to submit a patch, or should we close that ticket?\n\nPaul",
     "created_at": "2010-02-25T22:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
@@ -152,6 +152,7 @@ archive/issue_comments_067629.json:
 ```
 
 > It looks like this has been fixed, but the idea was to do exactly what was done on OS X. i.e. add the flag -m64 if the environment variable SAGE64 is set to "yes" 
+
 
 Dave, do you want to submit a patch, or should we close that ticket?
 
@@ -184,7 +185,7 @@ Dave
 archive/issue_comments_067631.json:
 ```json
 {
-    "body": "> so I believe this can be  closed\n\nHow to tell the release manager? (I've been told I am not allowed to close a ticket.)",
+    "body": "> so I believe this can be  closed\n\n\nHow to tell the release manager? (I've been told I am not allowed to close a ticket.)",
     "created_at": "2010-02-25T23:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
@@ -195,6 +196,7 @@ archive/issue_comments_067631.json:
 
 > so I believe this can be  closed
 
+
 How to tell the release manager? (I've been told I am not allowed to close a ticket.)
 
 
@@ -204,7 +206,7 @@ How to tell the release manager? (I've been told I am not allowed to close a tic
 archive/issue_comments_067632.json:
 ```json
 {
-    "body": "Replying to [comment:7 zimmerma]:\n> > so I believe this can be  closed\n> \n> How to tell the release manager? (I've been told I am not allowed to close a ticket.)\n\nMaybe the owner can? Dave?\n\nJaap",
+    "body": "Replying to [comment:7 zimmerma]:\n> > so I believe this can be  closed\n\n> \n> How to tell the release manager? (I've been told I am not allowed to close a ticket.)\n\n\nMaybe the owner can? Dave?\n\nJaap",
     "created_at": "2010-02-25T23:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
@@ -215,8 +217,10 @@ archive/issue_comments_067632.json:
 
 Replying to [comment:7 zimmerma]:
 > > so I believe this can be  closed
+
 > 
 > How to tell the release manager? (I've been told I am not allowed to close a ticket.)
+
 
 Maybe the owner can? Dave?
 
@@ -253,7 +257,7 @@ Dave
 archive/issue_comments_067634.json:
 ```json
 {
-    "body": "Replying to [comment:9 drkirkby]:\n> No, I am not allowed to close the ticket, despite the fact I opened it. But I can leave a note for the release manager to close it. \n> \n\nWhy not? I remember that I closed tickets some time ago.\n\nJaap",
+    "body": "Replying to [comment:9 drkirkby]:\n> No, I am not allowed to close the ticket, despite the fact I opened it. But I can leave a note for the release manager to close it. \n> \n\n\nWhy not? I remember that I closed tickets some time ago.\n\nJaap",
     "created_at": "2010-02-26T00:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
@@ -265,6 +269,7 @@ archive/issue_comments_067634.json:
 Replying to [comment:9 drkirkby]:
 > No, I am not allowed to close the ticket, despite the fact I opened it. But I can leave a note for the release manager to close it. 
 > 
+
 
 Why not? I remember that I closed tickets some time ago.
 

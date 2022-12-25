@@ -3,7 +3,7 @@
 archive/issues_009222.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu\n\nKeywords: conway polynomial database\n\nAs of sage-4.4.3:\n\n\n```\n----------------------------------------------------------------------\nconway.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 0% (0 of 7)\n\nMissing documentation:\n\t * _init(self):\n\t * __repr__(self):\n\t * polynomial(self, p, n):\n\t * has_polynomial(self, p, n):\n\t * primes(self):\n\t * degrees(self, p):\n\n\nMissing doctests:\n\t * __init__(self, read_only=True):\n\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9222\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nKeywords: conway polynomial database\n\nAs of sage-4.4.3:\n\n```\n----------------------------------------------------------------------\nconway.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 0% (0 of 7)\n\nMissing documentation:\n\t * _init(self):\n\t * __repr__(self):\n\t * polynomial(self, p, n):\n\t * has_polynomial(self, p, n):\n\t * primes(self):\n\t * degrees(self, p):\n\n\nMissing doctests:\n\t * __init__(self, read_only=True):\n\n----------------------------------------------------------------------\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9222\n\n",
     "created_at": "2010-06-12T07:09:15Z",
     "labels": [
         "component: doctest coverage",
@@ -23,7 +23,6 @@ CC:  mvngu
 Keywords: conway polynomial database
 
 As of sage-4.4.3:
-
 
 ```
 ----------------------------------------------------------------------
@@ -45,7 +44,6 @@ Missing doctests:
 
 ----------------------------------------------------------------------
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9222
 
@@ -76,7 +74,7 @@ Changing status from new to needs_review.
 archive/issue_comments_086375.json:
 ```json
 {
-    "body": "After the patch:\n\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 85% (6 of 7)\n\nMissing documentation:\n\t * _init(self):\n```\n\n\nI'm not convinced a `TestSuite` test makes sense here (and I have tried to put one in and got a pickling-related error).  Also, I'm not sure what `_init(self)` is meant to be doing, so I'm leaving it alone for now.",
+    "body": "After the patch:\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE conway.py: 85% (6 of 7)\n\nMissing documentation:\n\t * _init(self):\n```\n\nI'm not convinced a `TestSuite` test makes sense here (and I have tried to put one in and got a pickling-related error).  Also, I'm not sure what `_init(self)` is meant to be doing, so I'm leaving it alone for now.",
     "created_at": "2010-06-12T08:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
@@ -87,7 +85,6 @@ archive/issue_comments_086375.json:
 
 After the patch:
 
-
 ```
 ERROR: Please add a `TestSuite(s).run()` doctest.
 SCORE conway.py: 85% (6 of 7)
@@ -95,7 +92,6 @@ SCORE conway.py: 85% (6 of 7)
 Missing documentation:
 	 * _init(self):
 ```
-
 
 I'm not convinced a `TestSuite` test makes sense here (and I have tried to put one in and got a pickling-related error).  Also, I'm not sure what `_init(self)` is meant to be doing, so I'm leaving it alone for now.
 
@@ -234,7 +230,7 @@ Resolution: fixed
 archive/issue_comments_086383.json:
 ```json
 {
-    "body": "Replying to [comment:6 AlexGhitza]:\n> Done.\n\nThanks!",
+    "body": "Replying to [comment:6 AlexGhitza]:\n> Done.\n\n\nThanks!",
     "created_at": "2010-07-22T07:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
@@ -245,6 +241,7 @@ archive/issue_comments_086383.json:
 
 Replying to [comment:6 AlexGhitza]:
 > Done.
+
 
 Thanks!
 

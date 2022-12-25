@@ -187,7 +187,7 @@ http://wiki.sagemath.org/finance
 archive/issue_comments_023291.json:
 ```json
 {
-    "body": ">patches are dead: Long Live Branches\n> All future development for sage-finance lives on the finpatch branch. Instructions at: \n\nUmh, no.  All code that goes into Sage must appear as patches on this trac server first so\nit can be refereed etc.  What you do to obtain those patches -- use queues, branches, etc.,\nis up to you. \n\n -- William",
+    "body": ">patches are dead: Long Live Branches\n> All future development for sage-finance lives on the finpatch branch. Instructions at: \n\n\nUmh, no.  All code that goes into Sage must appear as patches on this trac server first so\nit can be refereed etc.  What you do to obtain those patches -- use queues, branches, etc.,\nis up to you. \n\n -- William",
     "created_at": "2008-06-21T23:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
@@ -198,6 +198,7 @@ archive/issue_comments_023291.json:
 
 >patches are dead: Long Live Branches
 > All future development for sage-finance lives on the finpatch branch. Instructions at: 
+
 
 Umh, no.  All code that goes into Sage must appear as patches on this trac server first so
 it can be refereed etc.  What you do to obtain those patches -- use queues, branches, etc.,
@@ -429,7 +430,7 @@ archive/issue_events_007533.json:
 archive/issue_comments_023300.json:
 ```json
 {
-    "body": "There are some doctest issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/finance/time_series.pyx # 3 doctests failed\nsage -t  devel/sage/sage/finance/time_series.pyx            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 525:\n    sage: v.linear_forecast(F)\nExpected:\n    86.017728504280015\nGot:\n    86.01772850427912\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 1428:\n    sage: fbm.hurst_exponent()\nExpected:\n    0.66787027921443409\nGot:\n    0.66787027921463038\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 1433:\n    sage: fbm.hurst_exponent()\nExpected:\n    0.30450273560706259\nGot:\n    0.30450273560706026\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_15\n   2 of   9 in __main__.example_46\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/.doctest_time_series.py\n\t [13.1 s]\nexit code: 1024\n```\n\nAnd\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/matrix/matrix_space.py # 1 doctests failed\nsage -t  devel/sage/sage/matrix/matrix_space.py  \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/matrix_space.py\", line 653:\n    sage: list( MatrixSpace(GF(2), 2, 0) )\nExpected:\n    [[]\n    []]\nGot:\n    [[]]\n**********************************************************************\n```\n\nand a segfault in devel/sage/sage/matrix/matrix2.pyx.\n\nChecking the merge before taking valgrind for a spin.\n\nCheers,\n\nMichael",
+    "body": "There are some doctest issues:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/finance/time_series.pyx # 3 doctests failed\nsage -t  devel/sage/sage/finance/time_series.pyx            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 525:\n    sage: v.linear_forecast(F)\nExpected:\n    86.017728504280015\nGot:\n    86.01772850427912\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 1428:\n    sage: fbm.hurst_exponent()\nExpected:\n    0.66787027921443409\nGot:\n    0.66787027921463038\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/time_series.py\", line 1433:\n    sage: fbm.hurst_exponent()\nExpected:\n    0.30450273560706259\nGot:\n    0.30450273560706026\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_15\n   2 of   9 in __main__.example_46\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/.doctest_time_series.py\n\t [13.1 s]\nexit code: 1024\n```\nAnd\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2$ sage -t  devel/sage/sage/matrix/matrix_space.py # 1 doctests failed\nsage -t  devel/sage/sage/matrix/matrix_space.py  \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/tmp/matrix_space.py\", line 653:\n    sage: list( MatrixSpace(GF(2), 2, 0) )\nExpected:\n    [[]\n    []]\nGot:\n    [[]]\n**********************************************************************\n```\nand a segfault in devel/sage/sage/matrix/matrix2.pyx.\n\nChecking the merge before taking valgrind for a spin.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T19:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
@@ -473,7 +474,6 @@ For whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.a
 	 [13.1 s]
 exit code: 1024
 ```
-
 And
 
 ```
@@ -489,7 +489,6 @@ Got:
     [[]]
 **********************************************************************
 ```
-
 and a segfault in devel/sage/sage/matrix/matrix2.pyx.
 
 Checking the merge before taking valgrind for a spin.

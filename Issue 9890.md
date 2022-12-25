@@ -3,7 +3,7 @@
 archive/issues_009890.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @RBKreckel\n\nKeywords: pynac\n\nReported by Kees on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/bfa34b077dd31b73\n\n\n```\nRunning the following few lines:\n\neq=5-e^x\nprint \"1:\",eq.substitute(x=3*x)\nprint \"2:\",eq.substitute(x=log(x))\n\nyields the output (Sage 4.5.2 with Ubuntu):\n\n1: -e^(3*x) + 5\n2: -log(x) + 5\n```\n\n\nThis is also present in GiNaC:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.7)\n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> subs(5-exp(x),x==log(x));\n5-log(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9891\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @RBKreckel\n\nKeywords: pynac\n\nReported by Kees on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/bfa34b077dd31b73\n\n```\nRunning the following few lines:\n\neq=5-e^x\nprint \"1:\",eq.substitute(x=3*x)\nprint \"2:\",eq.substitute(x=log(x))\n\nyields the output (Sage 4.5.2 with Ubuntu):\n\n1: -e^(3*x) + 5\n2: -log(x) + 5\n```\n\nThis is also present in GiNaC:\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.7)\n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> subs(5-exp(x),x==log(x));\n5-log(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9891\n\n",
     "created_at": "2010-09-10T19:53:23Z",
     "labels": [
         "component: symbolics",
@@ -27,7 +27,6 @@ Reported by Kees on sage-support:
 
 http://groups.google.com/group/sage-support/t/bfa34b077dd31b73
 
-
 ```
 Running the following few lines:
 
@@ -41,9 +40,7 @@ yields the output (Sage 4.5.2 with Ubuntu):
 2: -log(x) + 5
 ```
 
-
 This is also present in GiNaC:
-
 
 ```
 ginsh - GiNaC Interactive Shell (ginac V1.5.7)
@@ -56,7 +53,6 @@ Type ?? for a list of help topics.
 > subs(5-exp(x),x==log(x));
 5-log(x)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9891
@@ -130,7 +126,7 @@ add doctest
 archive/issue_comments_097870.json:
 ```json
 {
-    "body": "Burcin, I'm still getting\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: (5-e^x).substitute(x=log(x))\n-log(x) + 5\n```\n\nWhich version of Pynac is this in?",
+    "body": "Burcin, I'm still getting\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: (5-e^x).substitute(x=log(x))\n-log(x) + 5\n```\nWhich version of Pynac is this in?",
     "created_at": "2011-02-17T01:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
@@ -152,7 +148,6 @@ Burcin, I'm still getting
 sage: (5-e^x).substitute(x=log(x))
 -log(x) + 5
 ```
-
 Which version of Pynac is this in?
 
 
@@ -273,7 +268,7 @@ Burcin, I have to say I feel a little odd saying that I'm reviewing Kreckel's wo
 archive/issue_comments_097877.json:
 ```json
 {
-    "body": "Thanks for the review!\n\nReplying to [comment:7 kcrisman]:\n> Burcin, I have to say I feel a little odd saying that I'm reviewing Kreckel's work, when I'm really reviewing your merging his work and your doctest (though I looked at the actual patch, naturally).  Is there a different way to put the author in?  You are the author of the actual patch here, not the Ginac update; I don't think any other spkgs put upstream people who committed things in this way.\n\nI put Richard's name in the authors list since he should get the credit for fixing this in the Sage release notes. I think we should give more credit to upstream developers. Are you suggesting my name should be in the authors or the reviewers field? :)",
+    "body": "Thanks for the review!\n\nReplying to [comment:7 kcrisman]:\n> Burcin, I have to say I feel a little odd saying that I'm reviewing Kreckel's work, when I'm really reviewing your merging his work and your doctest (though I looked at the actual patch, naturally).  Is there a different way to put the author in?  You are the author of the actual patch here, not the Ginac update; I don't think any other spkgs put upstream people who committed things in this way.\n\n\nI put Richard's name in the authors list since he should get the credit for fixing this in the Sage release notes. I think we should give more credit to upstream developers. Are you suggesting my name should be in the authors or the reviewers field? :)",
     "created_at": "2011-05-09T19:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
@@ -286,6 +281,7 @@ Thanks for the review!
 
 Replying to [comment:7 kcrisman]:
 > Burcin, I have to say I feel a little odd saying that I'm reviewing Kreckel's work, when I'm really reviewing your merging his work and your doctest (though I looked at the actual patch, naturally).  Is there a different way to put the author in?  You are the author of the actual patch here, not the Ginac update; I don't think any other spkgs put upstream people who committed things in this way.
+
 
 I put Richard's name in the authors list since he should get the credit for fixing this in the Sage release notes. I think we should give more credit to upstream developers. Are you suggesting my name should be in the authors or the reviewers field? :)
 

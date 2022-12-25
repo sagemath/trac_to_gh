@@ -408,7 +408,7 @@ Viviane, when you get a chance, could you push the code that you currently have 
 archive/issue_comments_054221.json:
 ```json
 {
-    "body": "Just pushed my latest code. \nMostly everything is working but the tests and examples are all messed up (and, for some reason, I still cannot run any tests). \n\nI have simplified many things, removing useless classes and so on. Now, I consider the monomial basis to be a \"generator\", I call it x and write:\n\n \n\n```\nsage: A.<x> = MultivariatePolynomialAlgebra(QQ)\nsage: x[1,2,3] + x[2,3]\nx[2, 3, 0] + x[1, 2, 3]\n```\n\n\nI think it makes more sense and it is more natural to use. The goal is to hide the inner mechanics as much as possible. \"New example\" are written in this manner, old ones still use the m notation.\n\nAll basis are combinatorial free module using a common \"key wrapper\" class that handles lists and ambient space basis elements.\n\nIn terms of mathematical meaning, remember that all bases are indexed by **vectors**, for Grothendieck and Schubert, they correspond to the Lehmer code of the permutation.\n\nThe only part that is not working is the \"Double polynomial\" one, but it's quite independent from the rest. \n\nI let you have a look at it, it's not finished yet. Feel free to change it if you feel like it. I will be on holidays for the next 2 weeks.\n----\nNew commits:",
+    "body": "Just pushed my latest code. \nMostly everything is working but the tests and examples are all messed up (and, for some reason, I still cannot run any tests). \n\nI have simplified many things, removing useless classes and so on. Now, I consider the monomial basis to be a \"generator\", I call it x and write:\n\n \n```\nsage: A.<x> = MultivariatePolynomialAlgebra(QQ)\nsage: x[1,2,3] + x[2,3]\nx[2, 3, 0] + x[1, 2, 3]\n```\n\nI think it makes more sense and it is more natural to use. The goal is to hide the inner mechanics as much as possible. \"New example\" are written in this manner, old ones still use the m notation.\n\nAll basis are combinatorial free module using a common \"key wrapper\" class that handles lists and ambient space basis elements.\n\nIn terms of mathematical meaning, remember that all bases are indexed by **vectors**, for Grothendieck and Schubert, they correspond to the Lehmer code of the permutation.\n\nThe only part that is not working is the \"Double polynomial\" one, but it's quite independent from the rest. \n\nI let you have a look at it, it's not finished yet. Feel free to change it if you feel like it. I will be on holidays for the next 2 weeks.\n\n---\nNew commits:",
     "created_at": "2016-07-14T20:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
@@ -423,13 +423,11 @@ Mostly everything is working but the tests and examples are all messed up (and, 
 I have simplified many things, removing useless classes and so on. Now, I consider the monomial basis to be a "generator", I call it x and write:
 
  
-
 ```
 sage: A.<x> = MultivariatePolynomialAlgebra(QQ)
 sage: x[1,2,3] + x[2,3]
 x[2, 3, 0] + x[1, 2, 3]
 ```
-
 
 I think it makes more sense and it is more natural to use. The goal is to hide the inner mechanics as much as possible. "New example" are written in this manner, old ones still use the m notation.
 
@@ -440,7 +438,8 @@ In terms of mathematical meaning, remember that all bases are indexed by **vecto
 The only part that is not working is the "Double polynomial" one, but it's quite independent from the rest. 
 
 I let you have a look at it, it's not finished yet. Feel free to change it if you feel like it. I will be on holidays for the next 2 weeks.
-----
+
+---
 New commits:
 
 
@@ -558,7 +557,7 @@ Changing keywords from "multivariate polynomials, schubert polynomials, non symm
 archive/issue_comments_054228.json:
 ```json
 {
-    "body": "A version that works on Python3.\n----\nNew commits:",
+    "body": "A version that works on Python3.\n\n---\nNew commits:",
     "created_at": "2021-02-28T21:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6629",
     "type": "issue_comment",
@@ -568,5 +567,6 @@ archive/issue_comments_054228.json:
 ```
 
 A version that works on Python3.
-----
+
+---
 New commits:

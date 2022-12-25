@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2200
 archive/issue_comments_014444.json:
 ```json
 {
-    "body": "> - libm4ri: I can't find an upstream URL for this.  Is there one?\n\nThere is none. I basically maintain the code because Gregory Bard is too busy to do it. It definitely is GPLv2 or later, I got that from Gregory via e-mail.",
+    "body": "> - libm4ri: I can't find an upstream URL for this.  Is there one?\n\n\nThere is none. I basically maintain the code because Gregory Bard is too busy to do it. It definitely is GPLv2 or later, I got that from Gregory via e-mail.",
     "created_at": "2008-02-17T22:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
@@ -51,6 +51,7 @@ archive/issue_comments_014444.json:
 ```
 
 > - libm4ri: I can't find an upstream URL for this.  Is there one?
+
 
 There is none. I basically maintain the code because Gregory Bard is too busy to do it. It definitely is GPLv2 or later, I got that from Gregory via e-mail.
 
@@ -99,7 +100,7 @@ wiliam
 archive/issue_comments_014446.json:
 ```json
 {
-    "body": "Regarding genus2reduction, i should probably get a clear copyright license statement from Qing Liu, who said to me only\n\n```\nFrom Qing.Liu@math.u-bordeaux1.fr Sat Jul 16 23:33:18 2005\nReturn-path: <Qing.Liu@math.u-bordeaux1.fr>\n\nHi William,\n\nIt will be a pleasure for me that you include genus2reduction in SAGE.\nNote however that the program is not maintained anymore.  Please\nfeel free to make any technical modifications to make it compile\nin recent systems.\n\nBest regards,\n\nLiu\n\n```\n",
+    "body": "Regarding genus2reduction, i should probably get a clear copyright license statement from Qing Liu, who said to me only\n\n```\nFrom Qing.Liu@math.u-bordeaux1.fr Sat Jul 16 23:33:18 2005\nReturn-path: <Qing.Liu@math.u-bordeaux1.fr>\n\nHi William,\n\nIt will be a pleasure for me that you include genus2reduction in SAGE.\nNote however that the program is not maintained anymore.  Please\nfeel free to make any technical modifications to make it compile\nin recent systems.\n\nBest regards,\n\nLiu\n\n```",
     "created_at": "2008-02-17T22:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
@@ -129,13 +130,12 @@ Liu
 
 
 
-
 ---
 
 archive/issue_comments_014447.json:
 ```json
 {
-    "body": "Replying to [comment:2 was]:\n> So, the sympow section in Sage's COPYING.txt should be changed. \n\nThat is #1172 and an easy credit.\n \n> wiliam\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 was]:\n> So, the sympow section in Sage's COPYING.txt should be changed. \n\n\nThat is #1172 and an easy credit.\n \n> wiliam\n\n\nCheers,\n\nMichael",
     "created_at": "2008-02-17T22:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
@@ -147,9 +147,11 @@ archive/issue_comments_014447.json:
 Replying to [comment:2 was]:
 > So, the sympow section in Sage's COPYING.txt should be changed. 
 
+
 That is #1172 and an easy credit.
  
 > wiliam
+
 
 Cheers,
 

@@ -3,7 +3,7 @@
 archive/issues_004701.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nFix this:\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: magma(x)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4701\n\n",
+    "body": "Assignee: @williamstein\n\nFix this:\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: magma(x)\nboom\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4701\n\n",
     "created_at": "2008-12-05T00:32:30Z",
     "labels": [
         "component: interfaces",
@@ -25,7 +25,6 @@ sage: R.<x> = GF(9,'a')[]
 sage: magma(x)
 boom
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4701
 
@@ -74,7 +73,7 @@ Attachment [trac_4701.patch](tarball://root/attachments/some-uuid/ticket4701/tra
 archive/issue_comments_035347.json:
 ```json
 {
-    "body": "Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by @ncalexan created at 2008-12-05 08:02:16\n\nThere are problems.  My referee patch includes a few failing doctests.\n\n\n```\nsage: R = GF(3^5, 'a') # optional - magma\nsage: a = magma(R.gen()) # optional - magma\nsage: a^3 # optional - magma\na^3\nsage: a^3 + a # optional - magma\na^47\nsage: a.sage()\na\nsage: a.sage().parent()\nFinite Field in a of size 3^5\nsage: a.Eltseq()\n[ 0, 1, 0, 0, 0 ]\nsage: a.Sage()\nGF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))\n```\n",
+    "body": "Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by @ncalexan created at 2008-12-05 08:02:16\n\nThere are problems.  My referee patch includes a few failing doctests.\n\n```\nsage: R = GF(3^5, 'a') # optional - magma\nsage: a = magma(R.gen()) # optional - magma\nsage: a^3 # optional - magma\na^3\nsage: a^3 + a # optional - magma\na^47\nsage: a.sage()\na\nsage: a.sage().parent()\nFinite Field in a of size 3^5\nsage: a.Eltseq()\n[ 0, 1, 0, 0, 0 ]\nsage: a.Sage()\nGF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))\n```",
     "created_at": "2008-12-05T08:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4701",
     "type": "issue_comment",
@@ -86,7 +85,6 @@ archive/issue_comments_035347.json:
 Attachment [trac_4701_part2.patch](tarball://root/attachments/some-uuid/ticket4701/trac_4701_part2.patch) by @ncalexan created at 2008-12-05 08:02:16
 
 There are problems.  My referee patch includes a few failing doctests.
-
 
 ```
 sage: R = GF(3^5, 'a') # optional - magma
@@ -104,7 +102,6 @@ sage: a.Eltseq()
 sage: a.Sage()
 GF(243, 'a'.replace('$.', 'x').replace('.', ''), modulus=GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 1, 2, 0, 0, 0, 1 ]))(GF(3)['a'.replace('$.', 'x').replace('.', '')]([ 0, 1 ]))
 ```
-
 
 
 

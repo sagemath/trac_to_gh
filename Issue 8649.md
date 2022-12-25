@@ -144,7 +144,7 @@ Dan: what do you think? If that's fine with you, please set a positive review.
 archive/issue_comments_078345.json:
 ```json
 {
-    "body": "I wrote:\n\n> My conclusion is that the patch is correct and fixes a bad book. It should be merged.\n\nI meant a bad *bug*.\n\nReplying to Nicolas:\n\nIt was news to me that Type B tableaux (which were first invented I think by Kashiwara) do not have to be column strict when 0 is involved. That is, Type A tableaux are the classical ones and every column is strict. It looks to me as if there actually is something different about 0.\nI don't understand this as a mathematical point, but I did enough testing that I am sure\nthe patch is right.",
+    "body": "I wrote:\n\n> My conclusion is that the patch is correct and fixes a bad book. It should be merged.\n\n\nI meant a bad *bug*.\n\nReplying to Nicolas:\n\nIt was news to me that Type B tableaux (which were first invented I think by Kashiwara) do not have to be column strict when 0 is involved. That is, Type A tableaux are the classical ones and every column is strict. It looks to me as if there actually is something different about 0.\nI don't understand this as a mathematical point, but I did enough testing that I am sure\nthe patch is right.",
     "created_at": "2010-04-18T16:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -156,6 +156,7 @@ archive/issue_comments_078345.json:
 I wrote:
 
 > My conclusion is that the patch is correct and fixes a bad book. It should be merged.
+
 
 I meant a bad *bug*.
 
@@ -172,7 +173,7 @@ the patch is right.
 archive/issue_comments_078346.json:
 ```json
 {
-    "body": "Dear Dan and Nicolas,\n\nThank you for the review. The mathematical reason why in type B the 0 is special,\nis that it sits in a string of length 2:\n\n1 -> 2 -> 0 -> -2 -> -1\n\nHence a column of height 2 for example can become\n\n2      0      0      0\n1 -2-> 1 -1-> 2 -2-> 0\n\nsince in the tensor product always the rightmost unbracketed element is changed.\nFor similar reasons, in the row case there cannot be two 0s.\n\nSo this is really due to the string of length 2 which the other crystal of letters\ndo not have. Nicolas, how else should the code be written to detect this?\nThe paper by Kashiwara-Nakashima on tableaux for other types is also pretty\ncase specific.\n\nBest wishes,\n\nAnne  \n\nReplying to [comment:4 bump]:\n> I wrote:\n> \n> > My conclusion is that the patch is correct and fixes a bad book. It should be merged.\n> \n> I meant a bad *bug*.\n> \n> Replying to Nicolas:\n> \n> It was news to me that Type B tableaux (which were first invented I think by Kashiwara) do not have to be column strict when 0 is involved. That is, Type A tableaux are the classical ones and every column is strict. It looks to me as if there actually is something different about 0.\n> I don't understand this as a mathematical point, but I did enough testing that I am sure\n> the patch is right.\n>",
+    "body": "Dear Dan and Nicolas,\n\nThank you for the review. The mathematical reason why in type B the 0 is special,\nis that it sits in a string of length 2:\n\n1 -> 2 -> 0 -> -2 -> -1\n\nHence a column of height 2 for example can become\n\n2      0      0      0\n1 -2-> 1 -1-> 2 -2-> 0\n\nsince in the tensor product always the rightmost unbracketed element is changed.\nFor similar reasons, in the row case there cannot be two 0s.\n\nSo this is really due to the string of length 2 which the other crystal of letters\ndo not have. Nicolas, how else should the code be written to detect this?\nThe paper by Kashiwara-Nakashima on tableaux for other types is also pretty\ncase specific.\n\nBest wishes,\n\nAnne  \n\nReplying to [comment:4 bump]:\n> I wrote:\n> \n> > My conclusion is that the patch is correct and fixes a bad book. It should be merged.\n\n> \n> I meant a bad *bug*.\n> \n> Replying to Nicolas:\n> \n> It was news to me that Type B tableaux (which were first invented I think by Kashiwara) do not have to be column strict when 0 is involved. That is, Type A tableaux are the classical ones and every column is strict. It looks to me as if there actually is something different about 0.\n> I don't understand this as a mathematical point, but I did enough testing that I am sure\n> the patch is right.\n\n>",
     "created_at": "2010-04-18T16:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -209,6 +210,7 @@ Replying to [comment:4 bump]:
 > I wrote:
 > 
 > > My conclusion is that the patch is correct and fixes a bad book. It should be merged.
+
 > 
 > I meant a bad *bug*.
 > 
@@ -217,6 +219,7 @@ Replying to [comment:4 bump]:
 > It was news to me that Type B tableaux (which were first invented I think by Kashiwara) do not have to be column strict when 0 is involved. That is, Type A tableaux are the classical ones and every column is strict. It looks to me as if there actually is something different about 0.
 > I don't understand this as a mathematical point, but I did enough testing that I am sure
 > the patch is right.
+
 >
 
 
@@ -226,7 +229,7 @@ Replying to [comment:4 bump]:
 archive/issue_comments_078347.json:
 ```json
 {
-    "body": "Replying to [comment:5 aschilling]:\n> Thank you for the review. The mathematical reason why in type B the 0 is special,\n> is that it sits in a string of length 2:\n> \n> 1 -> 2 -> 0 -> -2 -> -1\n> \n> Hence a column of height 2 for example can become\n> \n> 2      0      0      0\n> 1 -2-> 1 -1-> 2 -2-> 0\n> \n> since in the tensor product always the rightmost unbracketed element is changed.\n> For similar reasons, in the row case there cannot be two 0s.\n> \n> So this is really due to the string of length 2 which the other crystal of letters\n> do not have. Nicolas, how else should the code be written to detect this?\n> The paper by Kashiwara-Nakashima on tableaux for other types is also pretty\n> case specific.\n\nIn a perfect world, a crystal of letter would have a method which\nwould take two letters a and b, and say whether b can be above a in a\ncolumn. There would be a default implementation (returning a<b in the\ncrystal of letters), and the type B crystal of letter would override\nthis default implementation appropriately.\n\nIf we are sure that no crystal of letter (or more generally crystal\nthat we want to use as letter in a tableau) will ever have a letter\ncalled `0`, except for type `B`, or if we are willing to take the\nrisk, then I guess we can be lazy, and just leave things as they are.",
+    "body": "Replying to [comment:5 aschilling]:\n> Thank you for the review. The mathematical reason why in type B the 0 is special,\n> is that it sits in a string of length 2:\n> \n> 1 -> 2 -> 0 -> -2 -> -1\n> \n> Hence a column of height 2 for example can become\n> \n> 2      0      0      0\n> 1 -2-> 1 -1-> 2 -2-> 0\n> \n> since in the tensor product always the rightmost unbracketed element is changed.\n> For similar reasons, in the row case there cannot be two 0s.\n> \n> So this is really due to the string of length 2 which the other crystal of letters\n> do not have. Nicolas, how else should the code be written to detect this?\n> The paper by Kashiwara-Nakashima on tableaux for other types is also pretty\n> case specific.\n\n\nIn a perfect world, a crystal of letter would have a method which\nwould take two letters a and b, and say whether b can be above a in a\ncolumn. There would be a default implementation (returning a<b in the\ncrystal of letters), and the type B crystal of letter would override\nthis default implementation appropriately.\n\nIf we are sure that no crystal of letter (or more generally crystal\nthat we want to use as letter in a tableau) will ever have a letter\ncalled `0`, except for type `B`, or if we are willing to take the\nrisk, then I guess we can be lazy, and just leave things as they are.",
     "created_at": "2010-04-18T17:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -254,6 +257,7 @@ Replying to [comment:5 aschilling]:
 > The paper by Kashiwara-Nakashima on tableaux for other types is also pretty
 > case specific.
 
+
 In a perfect world, a crystal of letter would have a method which
 would take two letters a and b, and say whether b can be above a in a
 column. There would be a default implementation (returning a<b in the
@@ -272,7 +276,7 @@ risk, then I guess we can be lazy, and just leave things as they are.
 archive/issue_comments_078348.json:
 ```json
 {
-    "body": "Replying to [comment:6 nthiery]:\n> Replying to [comment:5 aschilling]:\n> > Thank you for the review. The mathematical reason why in type B the 0 is special,\n> > is that it sits in a string of length 2:\n> > \n> > 1 -> 2 -> 0 -> -2 -> -1\n> > \n> > Hence a column of height 2 for example can become\n> > \n> > 2      0      0      0\n> > 1 -2-> 1 -1-> 2 -2-> 0\n> > \n> > since in the tensor product always the rightmost unbracketed element is changed.\n> > For similar reasons, in the row case there cannot be two 0s.\n> > \n> > So this is really due to the string of length 2 which the other crystal of letters\n> > do not have. Nicolas, how else should the code be written to detect this?\n> > The paper by Kashiwara-Nakashima on tableaux for other types is also pretty\n> > case specific.\n> \n> In a perfect world, a crystal of letter would have a method which\n> would take two letters a and b, and say whether b can be above a in a\n> column. There would be a default implementation (returning a<b in the\n> crystal of letters), and the type B crystal of letter would override\n> this default implementation appropriately.\n> \n> If we are sure that no crystal of letter (or more generally crystal\n> that we want to use as letter in a tableau) will ever have a letter\n> called `0`, except for type `B`, or if we are willing to take the\n> risk, then I guess we can be lazy, and just leave things as they are.\n\nFor the classical types ABCD, only type B has a 0. My plan was to implement the exceptional types in a generic way at some point using Littelmann paths or the alcove model and then possibly the HighestWeightCrystal environment. The tableaux method is rather type specific. \n\nFor type D, one can have columns of the form n-bar n n-bar n .... since they are not comparable, so I think a<b for columns might not be the right point of view.  Rather not(a>=b) with the exception of a=b=0. But in any case, one has to distinguish cases. Right now the tableaux method for crystals is only supposed to work for type ABCD.",
+    "body": "Replying to [comment:6 nthiery]:\n> Replying to [comment:5 aschilling]:\n> > Thank you for the review. The mathematical reason why in type B the 0 is special,\n> > is that it sits in a string of length 2:\n> > \n> > 1 -> 2 -> 0 -> -2 -> -1\n> > \n> > Hence a column of height 2 for example can become\n> > \n> > 2      0      0      0\n> > 1 -2-> 1 -1-> 2 -2-> 0\n> > \n> > since in the tensor product always the rightmost unbracketed element is changed.\n> > For similar reasons, in the row case there cannot be two 0s.\n> > \n> > So this is really due to the string of length 2 which the other crystal of letters\n> > do not have. Nicolas, how else should the code be written to detect this?\n> > The paper by Kashiwara-Nakashima on tableaux for other types is also pretty\n> > case specific.\n\n> \n> In a perfect world, a crystal of letter would have a method which\n> would take two letters a and b, and say whether b can be above a in a\n> column. There would be a default implementation (returning a<b in the\n> crystal of letters), and the type B crystal of letter would override\n> this default implementation appropriately.\n> \n> If we are sure that no crystal of letter (or more generally crystal\n> that we want to use as letter in a tableau) will ever have a letter\n> called `0`, except for type `B`, or if we are willing to take the\n> risk, then I guess we can be lazy, and just leave things as they are.\n\n\nFor the classical types ABCD, only type B has a 0. My plan was to implement the exceptional types in a generic way at some point using Littelmann paths or the alcove model and then possibly the HighestWeightCrystal environment. The tableaux method is rather type specific. \n\nFor type D, one can have columns of the form n-bar n n-bar n .... since they are not comparable, so I think a<b for columns might not be the right point of view.  Rather not(a>=b) with the exception of a=b=0. But in any case, one has to distinguish cases. Right now the tableaux method for crystals is only supposed to work for type ABCD.",
     "created_at": "2010-04-18T19:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -300,6 +304,7 @@ Replying to [comment:6 nthiery]:
 > > do not have. Nicolas, how else should the code be written to detect this?
 > > The paper by Kashiwara-Nakashima on tableaux for other types is also pretty
 > > case specific.
+
 > 
 > In a perfect world, a crystal of letter would have a method which
 > would take two letters a and b, and say whether b can be above a in a
@@ -312,6 +317,7 @@ Replying to [comment:6 nthiery]:
 > called `0`, except for type `B`, or if we are willing to take the
 > risk, then I guess we can be lazy, and just leave things as they are.
 
+
 For the classical types ABCD, only type B has a 0. My plan was to implement the exceptional types in a generic way at some point using Littelmann paths or the alcove model and then possibly the HighestWeightCrystal environment. The tableaux method is rather type specific. 
 
 For type D, one can have columns of the form n-bar n n-bar n .... since they are not comparable, so I think a<b for columns might not be the right point of view.  Rather not(a>=b) with the exception of a=b=0. But in any case, one has to distinguish cases. Right now the tableaux method for crystals is only supposed to work for type ABCD.
@@ -323,7 +329,7 @@ For type D, one can have columns of the form n-bar n n-bar n .... since they are
 archive/issue_comments_078349.json:
 ```json
 {
-    "body": "> Right now the tableaux method for crystals is only supposed to work for type ABCD.\n\nThe tableaux method does work with Sage for G2. This *may* be an accident\nin that this would not be a good approach for other exceptional groups. Or\nmaybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\npatch, crystals of tableaux for G2 produce correct tableaux output.\n\nI tend to think this is *not* an accident and take it as evidence that 0 is\nreally special. I guess the case where things might break in a worse way  is F4.\n\n> If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.\n\nI think the positive review should stand. It's not just a matter of laziness, unless\nwe have an alternative approach.",
+    "body": "> Right now the tableaux method for crystals is only supposed to work for type ABCD.\n\n\nThe tableaux method does work with Sage for G2. This *may* be an accident\nin that this would not be a good approach for other exceptional groups. Or\nmaybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\npatch, crystals of tableaux for G2 produce correct tableaux output.\n\nI tend to think this is *not* an accident and take it as evidence that 0 is\nreally special. I guess the case where things might break in a worse way  is F4.\n\n> If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.\n\n\nI think the positive review should stand. It's not just a matter of laziness, unless\nwe have an alternative approach.",
     "created_at": "2010-04-18T19:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -333,6 +339,7 @@ archive/issue_comments_078349.json:
 ```
 
 > Right now the tableaux method for crystals is only supposed to work for type ABCD.
+
 
 The tableaux method does work with Sage for G2. This *may* be an accident
 in that this would not be a good approach for other exceptional groups. Or
@@ -344,6 +351,7 @@ really special. I guess the case where things might break in a worse way  is F4.
 
 > If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.
 
+
 I think the positive review should stand. It's not just a matter of laziness, unless
 we have an alternative approach.
 
@@ -354,7 +362,7 @@ we have an alternative approach.
 archive/issue_comments_078350.json:
 ```json
 {
-    "body": "Replying to [comment:8 bump]:\n> The tableaux method does work with Sage for G2. This *may* be an accident\n> in that this would not be a good approach for other exceptional groups. Or\n> maybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\n> patch, crystals of tableaux for G2 produce correct tableaux output.\n> \n> I tend to think this is *not* an accident and take it as evidence that 0 is\n> really special. I guess the case where things might break in a worse way  is F4.\n\nThat's an interesting point!\n\n> > If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.\n> \n> I think the positive review should stand. It's not just a matter of laziness, unless\n> we have an alternative approach.\n\nI still think it is laziness until we have a proof that 0 is special in all types. But I agree that the positive review should stand.",
+    "body": "Replying to [comment:8 bump]:\n> The tableaux method does work with Sage for G2. This *may* be an accident\n> in that this would not be a good approach for other exceptional groups. Or\n> maybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\n> patch, crystals of tableaux for G2 produce correct tableaux output.\n> \n> I tend to think this is *not* an accident and take it as evidence that 0 is\n> really special. I guess the case where things might break in a worse way  is F4.\n\n\nThat's an interesting point!\n\n> > If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.\n\n> \n> I think the positive review should stand. It's not just a matter of laziness, unless\n> we have an alternative approach.\n\n\nI still think it is laziness until we have a proof that 0 is special in all types. But I agree that the positive review should stand.",
     "created_at": "2010-04-18T19:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -372,12 +380,15 @@ Replying to [comment:8 bump]:
 > I tend to think this is *not* an accident and take it as evidence that 0 is
 > really special. I guess the case where things might break in a worse way  is F4.
 
+
 That's an interesting point!
 
 > > If we are sure that no crystal of letter (or more generally crystal that we want to use as letter in a tableau) will ever have a letter called 0, except for type B, or if we are willing to take the risk, then I guess we can be lazy, and just leave things as they are.
+
 > 
 > I think the positive review should stand. It's not just a matter of laziness, unless
 > we have an alternative approach.
+
 
 I still think it is laziness until we have a proof that 0 is special in all types. But I agree that the positive review should stand.
 
@@ -388,7 +399,7 @@ I still think it is laziness until we have a proof that 0 is special in all type
 archive/issue_comments_078351.json:
 ```json
 {
-    "body": "Replying to [comment:8 bump]:\n> > Right now the tableaux method for crystals is only supposed to work for type ABCD.\n> \n> The tableaux method does work with Sage for G2. This *may* be an accident\n> in that this would not be a good approach for other exceptional groups. Or\n> maybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\n> patch, crystals of tableaux for G2 produce correct tableaux output.\n> \n> I tend to think this is *not* an accident and take it as evidence that 0 is\n> really special. I guess the case where things might break in a worse way  is F4.\n\nHi Dan,\n\nThank you for this comment! Yes, for G_2 0 is again the only letter that sits\nin a string of length 2. I suppose the letter 0 is chosen in crystal of letters since the weight is zero (and hence the element sits in the middle of a string).\nPerhaps Nicolas accepts this as \"proof\" that 0 is special?\n\nAnne",
+    "body": "Replying to [comment:8 bump]:\n> > Right now the tableaux method for crystals is only supposed to work for type ABCD.\n\n> \n> The tableaux method does work with Sage for G2. This *may* be an accident\n> in that this would not be a good approach for other exceptional groups. Or\n> maybe not. Anyway we have a crystal of letters for G2 and it has a 0. And after the\n> patch, crystals of tableaux for G2 produce correct tableaux output.\n> \n> I tend to think this is *not* an accident and take it as evidence that 0 is\n> really special. I guess the case where things might break in a worse way  is F4.\n\n\nHi Dan,\n\nThank you for this comment! Yes, for G_2 0 is again the only letter that sits\nin a string of length 2. I suppose the letter 0 is chosen in crystal of letters since the weight is zero (and hence the element sits in the middle of a string).\nPerhaps Nicolas accepts this as \"proof\" that 0 is special?\n\nAnne",
     "created_at": "2010-04-19T05:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8649",
     "type": "issue_comment",
@@ -399,6 +410,7 @@ archive/issue_comments_078351.json:
 
 Replying to [comment:8 bump]:
 > > Right now the tableaux method for crystals is only supposed to work for type ABCD.
+
 > 
 > The tableaux method does work with Sage for G2. This *may* be an accident
 > in that this would not be a good approach for other exceptional groups. Or
@@ -407,6 +419,7 @@ Replying to [comment:8 bump]:
 > 
 > I tend to think this is *not* an accident and take it as evidence that 0 is
 > really special. I guess the case where things might break in a worse way  is F4.
+
 
 Hi Dan,
 

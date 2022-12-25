@@ -3,7 +3,7 @@
 archive/issues_002001.json:
 ```json
 {
-    "body": "Assignee: failure\n\n\n```\n        sage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\n        sage -t -long devel/sage-main/sage/crypto/mq/sr.py\n        sage -t -long devel/sage-main/sage/libs/pari/gen.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\n\nI've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2001\n\n",
+    "body": "Assignee: failure\n\n```\n        sage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\n        sage -t -long devel/sage-main/sage/crypto/mq/sr.py\n        sage -t -long devel/sage-main/sage/libs/pari/gen.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\nI've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2001\n\n",
     "created_at": "2008-01-31T06:37:42Z",
     "labels": [
         "component: doctest coverage",
@@ -18,7 +18,6 @@ archive/issues_002001.json:
 ```
 Assignee: failure
 
-
 ```
         sage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py
         sage -t -long devel/sage-main/sage/groups/group.pyx
@@ -28,7 +27,6 @@ Assignee: failure
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py
         sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py
 ```
-
 
 I've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...
 
@@ -79,7 +77,7 @@ archive/issue_comments_012912.json:
 archive/issue_comments_012913.json:
 ```json
 {
-    "body": "From the above log:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\nsage -t -long devel/sage-main/sage/groups/group.pyx\nsage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\nsage -t -long devel/sage-main/sage/crypto/mq/sr.py\nsage -t -long devel/sage-main/sage/libs/pari/gen.pyx\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\n`devel/sage-main/sage/crypto/mq/sr.py` works fine, it just times out. I am working on patches for some of the other issues.\n\nCheers,\n\nMichael",
+    "body": "From the above log:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\nsage -t -long devel/sage-main/sage/groups/group.pyx\nsage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\nsage -t -long devel/sage-main/sage/crypto/mq/sr.py\nsage -t -long devel/sage-main/sage/libs/pari/gen.pyx\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n`devel/sage-main/sage/crypto/mq/sr.py` works fine, it just times out. I am working on patches for some of the other issues.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T08:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -99,7 +97,6 @@ sage -t -long devel/sage-main/sage/libs/pari/gen.pyx
 sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py
 sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py
 ```
-
 `devel/sage-main/sage/crypto/mq/sr.py` works fine, it just times out. I am working on patches for some of the other issues.
 
 Cheers,
@@ -175,7 +172,7 @@ Four down, three to go. I am wandering if we shouldn't remove the two remaining 
 archive/issue_comments_012917.json:
 ```json
 {
-    "body": "The remaining issues:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n**********************************************************************\nFile \"cubegroup.py\", line 918:\n    sage: C.solve(algorithm='gap')  # long time\nExpected:\n    'L*R'\nGot:\n    'L R'\n**********************************************************************\n```\n\nAnd:\n\n```\nsage -t -long devel/sage-main/sage/groups/group.pyx\n**********************************************************************\nFile \"group.pyx\", line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[6]>\", line 1, in <module>\n        G.show3d(vertex_size=RealNumber('0.03'), edge_size=RealNumber('0.01'), edge_size2=RealNumber('0.02'), vertex_colors={(Integer(1),Integer(1),Integer(1)):x.vertices()}, bgcolor=(Integer(0),Integer(0),Integer(0)), color_by_label=True, xres=Integer(700), yres=Integer(700), iterations=Integer(200)) # long time###line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\n    AttributeError: 'SymbolicVariable' object has no attribute 'vertices'\n**********************************************************************\n```\n\nFinally:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"ell_number_field.py\", line 137:\n    sage: v = E.simon_two_descent(); v  # long time\nExpected:\n    (1, -1, [])\nGot:\n    (1, 3, [(-4 : -3/2*a + 3/2 : 1), (8 : 18 : 1), (15/32*a - 59/32 : -75/128*a + 519/128 : 1), (-286/361 : -7215/13718*a - 75/722 : 1), (15/8*a + 19/8 : -105/16*a + 3/16 : 1), (-2 : 3 : 1)])\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "body": "The remaining issues:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n**********************************************************************\nFile \"cubegroup.py\", line 918:\n    sage: C.solve(algorithm='gap')  # long time\nExpected:\n    'L*R'\nGot:\n    'L R'\n**********************************************************************\n```\nAnd:\n\n```\nsage -t -long devel/sage-main/sage/groups/group.pyx\n**********************************************************************\nFile \"group.pyx\", line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[6]>\", line 1, in <module>\n        G.show3d(vertex_size=RealNumber('0.03'), edge_size=RealNumber('0.01'), edge_size2=RealNumber('0.02'), vertex_colors={(Integer(1),Integer(1),Integer(1)):x.vertices()}, bgcolor=(Integer(0),Integer(0),Integer(0)), color_by_label=True, xres=Integer(700), yres=Integer(700), iterations=Integer(200)) # long time###line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\n    AttributeError: 'SymbolicVariable' object has no attribute 'vertices'\n**********************************************************************\n```\nFinally:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"ell_number_field.py\", line 137:\n    sage: v = E.simon_two_descent(); v  # long time\nExpected:\n    (1, -1, [])\nGot:\n    (1, 3, [(-4 : -3/2*a + 3/2 : 1), (8 : 18 : 1), (15/32*a - 59/32 : -75/128*a + 519/128 : 1), (-286/361 : -7215/13718*a - 75/722 : 1), (15/8*a + 19/8 : -105/16*a + 3/16 : 1), (-2 : 3 : 1)])\n**********************************************************************\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T08:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
@@ -197,7 +194,6 @@ Got:
     'L R'
 **********************************************************************
 ```
-
 And:
 
 ```
@@ -215,7 +211,6 @@ Exception raised:
     AttributeError: 'SymbolicVariable' object has no attribute 'vertices'
 **********************************************************************
 ```
-
 Finally:
 
 ```
@@ -229,7 +224,6 @@ Got:
     (1, 3, [(-4 : -3/2*a + 3/2 : 1), (8 : 18 : 1), (15/32*a - 59/32 : -75/128*a + 519/128 : 1), (-286/361 : -7215/13718*a - 75/722 : 1), (15/8*a + 19/8 : -105/16*a + 3/16 : 1), (-2 : 3 : 1)])
 **********************************************************************
 ```
-
 
 Cheers,
 

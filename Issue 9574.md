@@ -3,7 +3,7 @@
 archive/issues_009574.json:
 ```json
 {
-    "body": "Assignee: @jasongrout\n\nIn the forthcoming 4.5.2.alpha0, I get\n\n```sh\n$ cd sage-4.5.2.alpha0/local/bin\n$ hg stat\n? zope-testrunner\n```\n\nin the scripts repository.\n\nShould we add `zope-testrunner` to `.hgignore`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9574\n\n",
+    "body": "Assignee: @jasongrout\n\nIn the forthcoming 4.5.2.alpha0, I get\n\n```sh\n$ cd sage-4.5.2.alpha0/local/bin\n$ hg stat\n? zope-testrunner\n```\nin the scripts repository.\n\nShould we add `zope-testrunner` to `.hgignore`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9574\n\n",
     "created_at": "2010-07-22T05:10:00Z",
     "labels": [
         "component: misc",
@@ -26,7 +26,6 @@ $ cd sage-4.5.2.alpha0/local/bin
 $ hg stat
 ? zope-testrunner
 ```
-
 in the scripts repository.
 
 Should we add `zope-testrunner` to `.hgignore`?
@@ -42,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9574
 archive/issue_comments_092312.json:
 ```json
 {
-    "body": "On OS X, I also see:\n\n```\ndrake@bsd:~/sage-4.5.2.alpha0/local/bin$ hg stat\n? gfortran\n? gfortran-4.0\n? gfortran-4.2\n? gfortran-64\n? gfortran-uninstall\n? i686-apple-darwin8-gfortran-4.2\n? powerpc-apple-darwin8-gfortran-4.2\n? zope-testrunner\n```\n",
+    "body": "On OS X, I also see:\n\n```\ndrake@bsd:~/sage-4.5.2.alpha0/local/bin$ hg stat\n? gfortran\n? gfortran-4.0\n? gfortran-4.2\n? gfortran-64\n? gfortran-uninstall\n? i686-apple-darwin8-gfortran-4.2\n? powerpc-apple-darwin8-gfortran-4.2\n? zope-testrunner\n```",
     "created_at": "2010-07-22T06:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
@@ -64,7 +63,6 @@ drake@bsd:~/sage-4.5.2.alpha0/local/bin$ hg stat
 ? powerpc-apple-darwin8-gfortran-4.2
 ? zope-testrunner
 ```
-
 
 
 

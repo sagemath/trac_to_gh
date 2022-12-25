@@ -3,7 +3,7 @@
 archive/issues_001509.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\nSince axes_label is broken in plot(), one must resort to adding your\nown custom labels to a plot().\n\nIt would be nice in this application, and others, if one could rotate\ntext objects.  For example, it\nwould be nice to be able to make a custom y-axis label that was\nparallel to the y-axis.  I guess,\nin general, the ability to rotate text would be a useful feature.\n\n```\n\n\nFor Sage, make sure to look up how Mathematica does text rotation, etc.,\nand use that interface instead of making something up at random. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1509\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\nSince axes_label is broken in plot(), one must resort to adding your\nown custom labels to a plot().\n\nIt would be nice in this application, and others, if one could rotate\ntext objects.  For example, it\nwould be nice to be able to make a custom y-axis label that was\nparallel to the y-axis.  I guess,\nin general, the ability to rotate text would be a useful feature.\n\n```\n\nFor Sage, make sure to look up how Mathematica does text rotation, etc.,\nand use that interface instead of making something up at random. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1509\n\n",
     "created_at": "2007-12-14T18:05:28Z",
     "labels": [
         "component: graphics"
@@ -17,7 +17,6 @@ archive/issues_001509.json:
 ```
 Assignee: @williamstein
 
-
 ```
 
 Since axes_label is broken in plot(), one must resort to adding your
@@ -30,7 +29,6 @@ parallel to the y-axis.  I guess,
 in general, the ability to rotate text would be a useful feature.
 
 ```
-
 
 For Sage, make sure to look up how Mathematica does text rotation, etc.,
 and use that interface instead of making something up at random. 
@@ -68,7 +66,7 @@ I think a solution like that would be pretty easy in sage.  For example, this mi
 archive/issue_comments_009637.json:
 ```json
 {
-    "body": "Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by @wdjoyner created at 2009-08-17 19:36:50\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
+    "body": "Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by @wdjoyner created at 2009-08-17 19:36:50\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
     "created_at": "2009-08-17T19:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -86,6 +84,7 @@ Replying to [comment:1 mrtrumbe]:
 > (it is a very minor change).  This seems to work quite well here.
 
 
+
 I tried to download it and got a strange method. I guess it is not an hg patch but a diff?
 
 Also, did you include an example in the docstring to illustrate your new feature?
@@ -97,7 +96,7 @@ Also, did you include an example in the docstring to illustrate your new feature
 archive/issue_comments_009638.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> I tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n> \n> Also, did you include an example in the docstring to illustrate your new feature?\n> \n\nSorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.\n\nI didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.",
+    "body": "Replying to [comment:2 wdj]:\n> I tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n> \n> Also, did you include an example in the docstring to illustrate your new feature?\n> \n\n\nSorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.\n\nI didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.",
     "created_at": "2009-08-18T21:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -112,6 +111,7 @@ Replying to [comment:2 wdj]:
 > Also, did you include an example in the docstring to illustrate your new feature?
 > 
 
+
 Sorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.
 
 I didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.
@@ -123,7 +123,7 @@ I didn't include an example usage in the docstrings, but did include explanation
 archive/issue_comments_009639.json:
 ```json
 {
-    "body": "Replying to [comment:3 mrtrumbe]:\n> Replying to [comment:2 wdj]:\n> > I tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n> > \n> > Also, did you include an example in the docstring to illustrate your new feature?\n> > \n> \n> Sorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.\n\nhttp://www.sagemath.org/doc/developer/conventions.html\nand\nhttp://www.sagemath.org/doc/developer/producing_patches.html\n\n> \n> I didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.\n\nThanks.",
+    "body": "Replying to [comment:3 mrtrumbe]:\n> Replying to [comment:2 wdj]:\n> > I tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n> > \n> > Also, did you include an example in the docstring to illustrate your new feature?\n> > \n\n> \n> Sorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.\n\n\nhttp://www.sagemath.org/doc/developer/conventions.html\nand\nhttp://www.sagemath.org/doc/developer/producing_patches.html\n\n> \n> I didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.\n\n\nThanks.",
     "created_at": "2009-08-18T21:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
@@ -138,8 +138,10 @@ Replying to [comment:3 mrtrumbe]:
 > > 
 > > Also, did you include an example in the docstring to illustrate your new feature?
 > > 
+
 > 
 > Sorry, I'm new to sage dev practices...is there documentation on generating a standard patch?  I used diff to generate the attached patch.
+
 
 http://www.sagemath.org/doc/developer/conventions.html
 and
@@ -147,6 +149,7 @@ http://www.sagemath.org/doc/developer/producing_patches.html
 
 > 
 > I didn't include an example usage in the docstrings, but did include explanation of the feature.  I'll update the docstring accordingly and update the patch.
+
 
 Thanks.
 

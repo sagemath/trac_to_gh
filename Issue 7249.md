@@ -142,7 +142,7 @@ Changes must be made to deal with unicode encoding/decoding before this can be r
 archive/issue_comments_060074.json:
 ```json
 {
-    "body": "Replying to [comment:3 timdumol]:\n> #7269 no longer includes these changes. Refer to comment:25:ticket:7269.\n> \n> Changes must be made to deal with unicode encoding/decoding before this can be reviewed.\n\nAt comment:24:ticket:7269 you say that we need Model-View-Presenter/Controller separation. How hard will that be? It sounds hard. :)  I've run into Unicode string problems while trying to internationalize the notebook, so I'd definitely like to do this if it's the right way to go about it.",
+    "body": "Replying to [comment:3 timdumol]:\n> #7269 no longer includes these changes. Refer to comment:25:ticket:7269.\n> \n> Changes must be made to deal with unicode encoding/decoding before this can be reviewed.\n\n\nAt comment:24:ticket:7269 you say that we need Model-View-Presenter/Controller separation. How hard will that be? It sounds hard. :)  I've run into Unicode string problems while trying to internationalize the notebook, so I'd definitely like to do this if it's the right way to go about it.",
     "created_at": "2009-12-22T04:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -155,6 +155,7 @@ Replying to [comment:3 timdumol]:
 > #7269 no longer includes these changes. Refer to comment:25:ticket:7269.
 > 
 > Changes must be made to deal with unicode encoding/decoding before this can be reviewed.
+
 
 At comment:24:ticket:7269 you say that we need Model-View-Presenter/Controller separation. How hard will that be? It sounds hard. :)  I've run into Unicode string problems while trying to internationalize the notebook, so I'd definitely like to do this if it's the right way to go about it.
 
@@ -373,7 +374,7 @@ According to the [Python Unicode HOWTO](http://docs.python.org/dev/howto/unicode
 archive/issue_comments_060085.json:
 ```json
 {
-    "body": "Replying to [comment:7 mpatel]:\n> V3:\n> \n>   * Fixes a number of doctests.\n>   * `iamges` --> `images` in `cell.py`.\n>   * `inpit_text = input_text.decode('utf-8', str)` --> `input_text = input_text.decode('utf-8', 'ignore')` in `cell.py`.\n> \n> I'm not sure about the choice of `encode` / `decode` in some places.  Should we always `decode` instances of `str` and `encode` instances of `unicode`?  Could you please double-check the patch?  Also, would it be better to write and use a helper function to do the conversions?\n> \n\nSure, and yes.\n\n> Should the changes to `cell.html` be at #7786?  Isn't `div_wrap` a `boolean`?\n\ndiv_wrap is a boolean. The div_wrap_ and wrap_ variables are workarounds to limitations present in Jinja2 but not in Jinja, so no, it's not for #7786.\n> \n> Does the change to `Worksheet.preparse` belong at #7835?\n\nSince this particular ticket is for Jinja2, which requires unicode, no. #7835 only replaces functionality that was previously present.\n\n> \n> If we're planning to use unicode \"everywhere\", even for the worksheet / cell *system*, should we also **consistently** cover the relevant methods (and examples for) in `worksheet.py` and elsewhere?\n\nYes, unicode functionality should be doctested.\n\n> \n> I apologize for my ignorance.",
+    "body": "Replying to [comment:7 mpatel]:\n> V3:\n> \n> * Fixes a number of doctests.\n> * `iamges` --> `images` in `cell.py`.\n> * `inpit_text = input_text.decode('utf-8', str)` --> `input_text = input_text.decode('utf-8', 'ignore')` in `cell.py`.\n> \n> I'm not sure about the choice of `encode` / `decode` in some places.  Should we always `decode` instances of `str` and `encode` instances of `unicode`?  Could you please double-check the patch?  Also, would it be better to write and use a helper function to do the conversions?\n> \n\n\nSure, and yes.\n\n> Should the changes to `cell.html` be at #7786?  Isn't `div_wrap` a `boolean`?\n\n\ndiv_wrap is a boolean. The div_wrap_ and wrap_ variables are workarounds to limitations present in Jinja2 but not in Jinja, so no, it's not for #7786.\n> \n> Does the change to `Worksheet.preparse` belong at #7835?\n\n\nSince this particular ticket is for Jinja2, which requires unicode, no. #7835 only replaces functionality that was previously present.\n\n> \n> If we're planning to use unicode \"everywhere\", even for the worksheet / cell *system*, should we also **consistently** cover the relevant methods (and examples for) in `worksheet.py` and elsewhere?\n\n\nYes, unicode functionality should be doctested.\n\n> \n> I apologize for my ignorance.",
     "created_at": "2010-01-10T06:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -385,25 +386,29 @@ archive/issue_comments_060085.json:
 Replying to [comment:7 mpatel]:
 > V3:
 > 
->   * Fixes a number of doctests.
->   * `iamges` --> `images` in `cell.py`.
->   * `inpit_text = input_text.decode('utf-8', str)` --> `input_text = input_text.decode('utf-8', 'ignore')` in `cell.py`.
+> * Fixes a number of doctests.
+> * `iamges` --> `images` in `cell.py`.
+> * `inpit_text = input_text.decode('utf-8', str)` --> `input_text = input_text.decode('utf-8', 'ignore')` in `cell.py`.
 > 
 > I'm not sure about the choice of `encode` / `decode` in some places.  Should we always `decode` instances of `str` and `encode` instances of `unicode`?  Could you please double-check the patch?  Also, would it be better to write and use a helper function to do the conversions?
 > 
+
 
 Sure, and yes.
 
 > Should the changes to `cell.html` be at #7786?  Isn't `div_wrap` a `boolean`?
 
+
 div_wrap is a boolean. The div_wrap_ and wrap_ variables are workarounds to limitations present in Jinja2 but not in Jinja, so no, it's not for #7786.
 > 
 > Does the change to `Worksheet.preparse` belong at #7835?
+
 
 Since this particular ticket is for Jinja2, which requires unicode, no. #7835 only replaces functionality that was previously present.
 
 > 
 > If we're planning to use unicode "everywhere", even for the worksheet / cell *system*, should we also **consistently** cover the relevant methods (and examples for) in `worksheet.py` and elsewhere?
+
 
 Yes, unicode functionality should be doctested.
 
@@ -491,7 +496,7 @@ Fixes the styling of the worksheet listing page.
 archive/issue_comments_060090.json:
 ```json
 {
-    "body": "This is the new patch queue:\n\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\n```\n",
+    "body": "This is the new patch queue:\n\n```\ntrac_7650-sagenb_doctesting_v6.patch\ntrac_7650-reviewer.patch\ntrac_7648-missing_indent.patch\ntrac_7663-rstrip_prompt.patch\ntrac_7847-empty-trash-no-referer.patch\ntrac_7786-template-jinja-idiomatic.patch\ntrac_7863-declare_vars_aux_js_v2.patch\ntrac_7874-typeset_interact_labels.patch\ntrac_7858-key_binding_vars_v2.patch\ntrac_7666-alphanumeric_cell_ids_B5.patch\ntrac_7666-reviewer.patch\ntrac_7835-preparsing-unicode_v2.patch\ntrac_7249_jinja2_v5.patch\n```",
     "created_at": "2010-01-17T21:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -501,7 +506,6 @@ archive/issue_comments_060090.json:
 ```
 
 This is the new patch queue:
-
 
 ```
 trac_7650-sagenb_doctesting_v6.patch
@@ -518,7 +522,6 @@ trac_7666-reviewer.patch
 trac_7835-preparsing-unicode_v2.patch
 trac_7249_jinja2_v5.patch
 ```
-
 
 
 
@@ -587,7 +590,7 @@ In `twist.py`, do we need to call `unicode_str` on the incoming input?  The cons
 archive/issue_comments_060094.json:
 ```json
 {
-    "body": "Also, evaluating `print '\u00e9'` raises\n\n```python\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/twist.py\", line 1281, in render\n            cell.set_input_text(input_text)\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/cell.py\", line 1270, in set_input_text\n            input = unicode_str(input)\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/misc/misc.py\", line 441, in unicode_str\n            return unicode(str(obj), encoding, 'ignore')\n        exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\\xe9' in position 7: ordinal not in range(128)\n\n```\n",
+    "body": "Also, evaluating `print '\u00e9'` raises\n\n```python\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/twist.py\", line 1281, in render\n            cell.set_input_text(input_text)\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/notebook/cell.py\", line 1270, in set_input_text\n            input = unicode_str(input)\n          File \"/home/tmp/sagenb-0.5/src/sagenb/sagenb/misc/misc.py\", line 441, in unicode_str\n            return unicode(str(obj), encoding, 'ignore')\n        exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\\xe9' in position 7: ordinal not in range(128)\n\n```",
     "created_at": "2010-01-18T07:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -608,7 +611,6 @@ Also, evaluating `print 'é'` raises
         exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\xe9' in position 7: ordinal not in range(128)
 
 ```
-
 
 
 
@@ -709,7 +711,7 @@ Woops! Sorry, accidentally put it to positive review. You should be the one, if 
 archive/issue_comments_060100.json:
 ```json
 {
-    "body": "Upon saving and quitting a worksheet that contains an evaluated `print `\u00e9`` cell, I see\n\n```python\nworksheet.py:1924: exceptions.UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal\n```\n\n\nWhat about the `unicode_str`s in `twist.py`?  I'm just wondering why we need them.\n\nMinor: It appears we can just call `encoded_str` in `sage_inspect.py`.\n\nAlso, can you slip some Unicode characters into the Se and/or doctests, so that we can detect potential regressions?",
+    "body": "Upon saving and quitting a worksheet that contains an evaluated `print `\u00e9`` cell, I see\n\n```python\nworksheet.py:1924: exceptions.UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal\n```\n\nWhat about the `unicode_str`s in `twist.py`?  I'm just wondering why we need them.\n\nMinor: It appears we can just call `encoded_str` in `sage_inspect.py`.\n\nAlso, can you slip some Unicode characters into the Se and/or doctests, so that we can detect potential regressions?",
     "created_at": "2010-01-18T08:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -723,7 +725,6 @@ Upon saving and quitting a worksheet that contains an evaluated `print `é`` cel
 ```python
 worksheet.py:1924: exceptions.UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
 ```
-
 
 What about the `unicode_str`s in `twist.py`?  I'm just wondering why we need them.
 
@@ -906,7 +907,7 @@ On the non-ASCII Unicode characters which may break docbuilds, please see #8000.
 archive/issue_comments_060110.json:
 ```json
 {
-    "body": "Sphinx raises\n\n```\nreading sources... [100%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\n\nThe \"invalid\" data appears to be `u'\\xe4'` in line 695 (or so) of `worksheet.py`:\n\n```python\n            u'\\u03ab\\xe4\\u013b\\u01be\\u1e40\\u0411'                               \n```\n\nV8 just makes the docstring raw (`\"\"\"` --> `r\"\"\"`).  I've added `'\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b'`, partly for fun.",
+    "body": "Sphinx raises\n\n```\nreading sources... [100%] sagenb/notebook/worksheet\nSphinx error:\n'utf8' codec can't decode bytes in position 420-422: invalid data\n```\nThe \"invalid\" data appears to be `u'\\xe4'` in line 695 (or so) of `worksheet.py`:\n\n```python\n            u'\\u03ab\\xe4\\u013b\\u01be\\u1e40\\u0411'                               \n```\nV8 just makes the docstring raw (`\"\"\"` --> `r\"\"\"`).  I've added `'\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b'`, partly for fun.",
     "created_at": "2010-01-19T19:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -922,13 +923,11 @@ reading sources... [100%] sagenb/notebook/worksheet
 Sphinx error:
 'utf8' codec can't decode bytes in position 420-422: invalid data
 ```
-
 The "invalid" data appears to be `u'\xe4'` in line 695 (or so) of `worksheet.py`:
 
 ```python
             u'\u03ab\xe4\u013b\u01be\u1e40\u0411'                               
 ```
-
 V8 just makes the docstring raw (`"""` --> `r"""`).  I've added `'Теория чисел'`, partly for fun.
 
 
@@ -958,7 +957,7 @@ Make `Worksheet.name`'s docstring raw, for Sphinx.  Replaces previous.
 archive/issue_comments_060112.json:
 ```json
 {
-    "body": "It may be better to make the docstrings unicode strings.  V9 does this, but I can't attach it right now:\n\n```\nTrac detected an internal error:\n    IOError: [Errno 28] No space left on device\n```\n",
+    "body": "It may be better to make the docstrings unicode strings.  V9 does this, but I can't attach it right now:\n\n```\nTrac detected an internal error:\n    IOError: [Errno 28] No space left on device\n```",
     "created_at": "2010-01-19T19:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7249",
     "type": "issue_comment",
@@ -973,7 +972,6 @@ It may be better to make the docstrings unicode strings.  V9 does this, but I ca
 Trac detected an internal error:
     IOError: [Errno 28] No space left on device
 ```
-
 
 
 

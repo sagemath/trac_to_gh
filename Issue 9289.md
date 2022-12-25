@@ -3,7 +3,7 @@
 archive/issues_009289.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nImplement the ring of Puiseux polynomials. Those are usual\npolynomials, except that exponents can be any rational number.\n\n\n```\n   sage: S = PolynomialRing(QQ, ['a','b','c']); S\n   Multivariate Puiseux Polynomial Ring in a, b, c over Rational Field\n```\n\n\n\nSee also: http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Puiseux, http://en.wikipedia.org/wiki/Puiseux_series\n\nIssue created by migration from https://trac.sagemath.org/ticket/9289\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nImplement the ring of Puiseux polynomials. Those are usual\npolynomials, except that exponents can be any rational number.\n\n```\n   sage: S = PolynomialRing(QQ, ['a','b','c']); S\n   Multivariate Puiseux Polynomial Ring in a, b, c over Rational Field\n```\n\n\nSee also: http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Puiseux, http://en.wikipedia.org/wiki/Puiseux_series\n\nIssue created by migration from https://trac.sagemath.org/ticket/9289\n\n",
     "created_at": "2010-06-21T07:34:53Z",
     "labels": [
         "component: algebra"
@@ -22,12 +22,10 @@ CC:  sage-combinat
 Implement the ring of Puiseux polynomials. Those are usual
 polynomials, except that exponents can be any rational number.
 
-
 ```
    sage: S = PolynomialRing(QQ, ['a','b','c']); S
    Multivariate Puiseux Polynomial Ring in a, b, c over Rational Field
 ```
-
 
 
 See also: http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Puiseux, http://en.wikipedia.org/wiki/Puiseux_series

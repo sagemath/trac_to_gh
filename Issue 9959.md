@@ -3,7 +3,7 @@
 archive/issues_009959.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  drkirkby @kcrisman @nexttime @qed777 @jdemeyer\n\nRight now, setting SAGE_CHECK to any nonempty string (e.g., \"no\") runs the test suite.  The documentation actually says that SAGE_CHECK should be \"yes\" for this to happen.  Fix this.\n\nWhile we're at it, fix something else: in the script SAGE_ROOT/local/bin/sage-env, SAGE64 is required to be \"yes\", \"no\", or unset:\n\n```\nif [ \"$SAGE64\" != \"yes\" -a \"$SAGE64\" != \"no\" ]; then\n    echo \"The environment variable SAGE64 (=$SAGE64) must be either unset, yes or no.\"\n    exit 1\nfi\n```\n\nThe problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:\n\n```\n$ export SAGE64='maybe'\n$ sage\n$\n```\n\nSage fails to run and is completely silent as to why.  Fix this, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9960\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  drkirkby @kcrisman @nexttime @qed777 @jdemeyer\n\nRight now, setting SAGE_CHECK to any nonempty string (e.g., \"no\") runs the test suite.  The documentation actually says that SAGE_CHECK should be \"yes\" for this to happen.  Fix this.\n\nWhile we're at it, fix something else: in the script SAGE_ROOT/local/bin/sage-env, SAGE64 is required to be \"yes\", \"no\", or unset:\n\n```\nif [ \"$SAGE64\" != \"yes\" -a \"$SAGE64\" != \"no\" ]; then\n    echo \"The environment variable SAGE64 (=$SAGE64) must be either unset, yes or no.\"\n    exit 1\nfi\n```\nThe problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:\n\n```\n$ export SAGE64='maybe'\n$ sage\n$\n```\nSage fails to run and is completely silent as to why.  Fix this, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9960\n\n",
     "created_at": "2010-09-21T16:39:37Z",
     "labels": [
         "component: user interface",
@@ -30,7 +30,6 @@ if [ "$SAGE64" != "yes" -a "$SAGE64" != "no" ]; then
     exit 1
 fi
 ```
-
 The problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:
 
 ```
@@ -38,7 +37,6 @@ $ export SAGE64='maybe'
 $ sage
 $
 ```
-
 Sage fails to run and is completely silent as to why.  Fix this, too.
 
 Issue created by migration from https://trac.sagemath.org/ticket/9960
@@ -70,7 +68,7 @@ Changing status from new to needs_review.
 archive/issue_comments_099512.json:
 ```json
 {
-    "body": "By the way, if you look at sage-env, it rarely produces any output, so I don't see any reason to redirect it to /dev/null.  The lines\n\n```\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n```\n\nfrom the sage-sage script don't actually seem to print the warning message; I'm not sure why.  But it's clearer if it says\n\n```\n$ export SAGE64=dlkjdf\n$ sage\nThe environment variable SAGE64 (=dlkjdf) must be either unset, yes or no.\n```\n",
+    "body": "By the way, if you look at sage-env, it rarely produces any output, so I don't see any reason to redirect it to /dev/null.  The lines\n\n```\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n```\nfrom the sage-sage script don't actually seem to print the warning message; I'm not sure why.  But it's clearer if it says\n\n```\n$ export SAGE64=dlkjdf\n$ sage\nThe environment variable SAGE64 (=dlkjdf) must be either unset, yes or no.\n```",
     "created_at": "2010-09-21T16:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -88,7 +86,6 @@ if [ $? -ne 0 ]; then
    echo "Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel)."
 fi
 ```
-
 from the sage-sage script don't actually seem to print the warning message; I'm not sure why.  But it's clearer if it says
 
 ```
@@ -96,7 +93,6 @@ $ export SAGE64=dlkjdf
 $ sage
 The environment variable SAGE64 (=dlkjdf) must be either unset, yes or no.
 ```
-
 
 
 
@@ -165,7 +161,7 @@ Any idea why `sage-build` doesn't **source** `sage-env`?!?
 archive/issue_comments_099516.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> I commented on this *somewhere* where I uploaded the \"first aid\" patch for spaces in `SAGE_ROOT`.\n\n#9644 (There' also a patch, including one to `sage-sage`.)",
+    "body": "Replying to [comment:4 leif]:\n> I commented on this *somewhere* where I uploaded the \"first aid\" patch for spaces in `SAGE_ROOT`.\n\n\n#9644 (There' also a patch, including one to `sage-sage`.)",
     "created_at": "2010-09-21T17:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -177,6 +173,7 @@ archive/issue_comments_099516.json:
 Replying to [comment:4 leif]:
 > I commented on this *somewhere* where I uploaded the "first aid" patch for spaces in `SAGE_ROOT`.
 
+
 #9644 (There' also a patch, including one to `sage-sage`.)
 
 
@@ -186,7 +183,7 @@ Replying to [comment:4 leif]:
 archive/issue_comments_099517.json:
 ```json
 {
-    "body": "Replying to [comment:4 leif]:\n> Redirecting the output of `sage-env` is really bad,\n\nI agree.\n\n> and the test of `$?` is almost useless, since `sage-env` is (and must be) sourced, so it must not `exit` [some value].\n\nOkay.\n\n> The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n\nI ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".  (In the case of cliquer, this is done in spkg-install, but there is no spkg-check.  So it does the right thing -- running the test suite once if SAGE_CHECK is \"yes\", just not in the right way.  In the case of mpir, if SAGE_CHECK is yes, then the test suite gets run twice, once because of the main sage-spkg script, and once more in mpir's spkg-install script.  I thought there was a ticket for this, but I can't find it right now.)\n\n> Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n\nWhen do you see Sage starting if sage-env fails?\n\nI'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.",
+    "body": "Replying to [comment:4 leif]:\n> Redirecting the output of `sage-env` is really bad,\n\n\nI agree.\n\n> and the test of `$?` is almost useless, since `sage-env` is (and must be) sourced, so it must not `exit` [some value].\n\n\nOkay.\n\n> The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n\n\nI ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".  (In the case of cliquer, this is done in spkg-install, but there is no spkg-check.  So it does the right thing -- running the test suite once if SAGE_CHECK is \"yes\", just not in the right way.  In the case of mpir, if SAGE_CHECK is yes, then the test suite gets run twice, once because of the main sage-spkg script, and once more in mpir's spkg-install script.  I thought there was a ticket for this, but I can't find it right now.)\n\n> Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n\n\nWhen do you see Sage starting if sage-env fails?\n\nI'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.",
     "created_at": "2010-09-21T19:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -198,17 +195,21 @@ archive/issue_comments_099517.json:
 Replying to [comment:4 leif]:
 > Redirecting the output of `sage-env` is really bad,
 
+
 I agree.
 
 > and the test of `$?` is almost useless, since `sage-env` is (and must be) sourced, so it must not `exit` [some value].
+
 
 Okay.
 
 > The `SAGE_CHECK` issue (interpreting everything except "no" as "yes") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but "no".
 
+
 I ran "grep" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's "yes".  (In the case of cliquer, this is done in spkg-install, but there is no spkg-check.  So it does the right thing -- running the test suite once if SAGE_CHECK is "yes", just not in the right way.  In the case of mpir, if SAGE_CHECK is yes, then the test suite gets run twice, once because of the main sage-spkg script, and once more in mpir's spkg-install script.  I thought there was a ticket for this, but I can't find it right now.)
 
 > Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)
+
 
 When do you see Sage starting if sage-env fails?
 
@@ -239,7 +240,7 @@ Ah, the mpir issue is covered by #9522 and #8664.
 archive/issue_comments_099519.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n> Replying to [comment:4 leif]:\n> > The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n> \n> I ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".\n\nOk. Maybe we already corrected the others.\n\n> > Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n> \n> When do you see Sage starting if sage-env fails?\n\nMy bad. I think this happened *after* I had replaced `exit` by `return` in `sage-env` (screen buffer):\n\n```\nError setting environment variables by running /home/leif/Sage/sage-4.6.alpha1-final/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:\n```\n\n| Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |\n| Type notebook() for the GUI, and license() for information.        |\n(But the same happens if `source` itself fails, e.g. because `sage-env` isn't found, likewise when `SAGE_ROOT` contains spaces.)\n\nBut if the error message ever gets printed, Sage shouldn't start. We currently have:\n\n```sh\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly cont\nact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n\n...\n\nsage() {\n    sage_setup\n    sage-ipython \"$@\" -i\n}\n\nif [ $# -eq 0 ]; then\n    sage\n    exit $?\nfi\n\n```\n\n\n\n> As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\nI guess that's just an old flaw; calling it is of little use (will only *check* some things, but doesn't change the environment at all).\n\nSo give it a try and see what happens... ;-)\n\n(It *shouldn't*<sup>TM</sup> break anything.)",
+    "body": "Replying to [comment:8 jhpalmieri]:\n> Replying to [comment:4 leif]:\n> > The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n\n> \n> I ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".\n\n\nOk. Maybe we already corrected the others.\n\n> > Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n\n> \n> When do you see Sage starting if sage-env fails?\n\n\nMy bad. I think this happened *after* I had replaced `exit` by `return` in `sage-env` (screen buffer):\n\n```\nError setting environment variables by running /home/leif/Sage/sage-4.6.alpha1-final/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:\n```\n| Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |\n| Type notebook() for the GUI, and license() for information.        |\n(But the same happens if `source` itself fails, e.g. because `sage-env` isn't found, likewise when `SAGE_ROOT` contains spaces.)\n\nBut if the error message ever gets printed, Sage shouldn't start. We currently have:\n\n```sh\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly cont\nact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n\n...\n\nsage() {\n    sage_setup\n    sage-ipython \"$@\" -i\n}\n\nif [ $# -eq 0 ]; then\n    sage\n    exit $?\nfi\n\n```\n\n\n> As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\n\nI guess that's just an old flaw; calling it is of little use (will only *check* some things, but doesn't change the environment at all).\n\nSo give it a try and see what happens... ;-)\n\n(It *shouldn't*<sup>TM</sup> break anything.)",
     "created_at": "2010-09-21T19:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -251,14 +252,18 @@ archive/issue_comments_099519.json:
 Replying to [comment:8 jhpalmieri]:
 > Replying to [comment:4 leif]:
 > > The `SAGE_CHECK` issue (interpreting everything except "no" as "yes") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but "no".
+
 > 
 > I ran "grep" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's "yes".
+
 
 Ok. Maybe we already corrected the others.
 
 > > Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)
+
 > 
 > When do you see Sage starting if sage-env fails?
+
 
 My bad. I think this happened *after* I had replaced `exit` by `return` in `sage-env` (screen buffer):
 
@@ -273,7 +278,6 @@ Error setting environment variables by running /home/leif/Sage/sage-4.6.alpha1-f
 **********************************************************************
 sage:
 ```
-
 | Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |
 | Type notebook() for the GUI, and license() for information.        |
 (But the same happens if `source` itself fails, e.g. because `sage-env` isn't found, likewise when `SAGE_ROOT` contains spaces.)
@@ -303,8 +307,8 @@ fi
 ```
 
 
-
 > As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.
+
 
 I guess that's just an old flaw; calling it is of little use (will only *check* some things, but doesn't change the environment at all).
 
@@ -337,7 +341,7 @@ Since `sage-build` is (or should be) called from `sage-sage`, we can either sour
 archive/issue_comments_099521.json:
 ```json
 {
-    "body": "Replying to [comment:11 leif]:\n> Since `sage-build` is (or should be) called from `sage-sage`, we can either source it again or completely omit the (second) call.\n\n*Sourcing it* / *calling it* referred to `sage-env`.",
+    "body": "Replying to [comment:11 leif]:\n> Since `sage-build` is (or should be) called from `sage-sage`, we can either source it again or completely omit the (second) call.\n\n\n*Sourcing it* / *calling it* referred to `sage-env`.",
     "created_at": "2010-09-21T19:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -349,6 +353,7 @@ archive/issue_comments_099521.json:
 Replying to [comment:11 leif]:
 > Since `sage-build` is (or should be) called from `sage-sage`, we can either source it again or completely omit the (second) call.
 
+
 *Sourcing it* / *calling it* referred to `sage-env`.
 
 
@@ -358,7 +363,7 @@ Replying to [comment:11 leif]:
 archive/issue_comments_099522.json:
 ```json
 {
-    "body": "Replying to [comment:8 jhpalmieri]:\n\n> I'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\nI agree. \n\nJohn's changes are safe - the others may be desirable, but introduce extra risk. It would be a shame if this change got bounced out because larger changes were added to the ticket. Leif can always create another ticket to fix the other issues. \n\nI'm keen we improve the code in Sage, but I don't think making lots of changes to a package every time someone wants to make a minor change, is a good idea. Leif knows I was pulling my hair out when all I wanted to do was get iconv to build on HP-UX on #9603. \n\nOne point John, if you do change this patch, there's no need to quote xyes. Since you are absolutely 100% sure that the string xyes has no spaces in it, there's no need to quote it. It's different for a variable like $FOOBAR, where you don't know if it might have a space or not. \n\nTo my knowledge there's nothing in Sage which checks if SAGE64 is \"no\". The only value actually tested for is \"yes\", so it's a bit pointless permitting \"no\". \n\nDave",
+    "body": "Replying to [comment:8 jhpalmieri]:\n\n> I'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\n\nI agree. \n\nJohn's changes are safe - the others may be desirable, but introduce extra risk. It would be a shame if this change got bounced out because larger changes were added to the ticket. Leif can always create another ticket to fix the other issues. \n\nI'm keen we improve the code in Sage, but I don't think making lots of changes to a package every time someone wants to make a minor change, is a good idea. Leif knows I was pulling my hair out when all I wanted to do was get iconv to build on HP-UX on #9603. \n\nOne point John, if you do change this patch, there's no need to quote xyes. Since you are absolutely 100% sure that the string xyes has no spaces in it, there's no need to quote it. It's different for a variable like $FOOBAR, where you don't know if it might have a space or not. \n\nTo my knowledge there's nothing in Sage which checks if SAGE64 is \"no\". The only value actually tested for is \"yes\", so it's a bit pointless permitting \"no\". \n\nDave",
     "created_at": "2010-09-21T20:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -370,6 +375,7 @@ archive/issue_comments_099522.json:
 Replying to [comment:8 jhpalmieri]:
 
 > I'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.
+
 
 I agree. 
 
@@ -414,7 +420,7 @@ Just my 2 cents.
 archive/issue_comments_099524.json:
 ```json
 {
-    "body": "Replying to [comment:14 leif]:\n> There are already other tickets around touching at least some of the patched files, too.\n> \n> I'd say adding the quotes around `SAGE_ROOT`, adding the `exit 1` if sourcing failed, and \n\nI won't argue with the `SAGE_ROOT`. I don't suppose John will. I've not looked at the exit, but that sounds sensible. \n\n> perhaps replacing `exit` by `return` in `sage-env` should be mandatory.\n\nIt adds extra risk. \n\n> If we always postpone fixes, we'll never get far (and if one opens a new ticket for every \"minor\" thing at all, we'll most probably just increase the number of open tickets, with lots of rebasing being necessary if some of them finally get merged).\n> \n> Just my 2 cents.\n\nYou will just frustrate people if you expect them to make many changes to fix a minor issue. Tickets will get left. John has kindly picked up on something that's not hurting his work, but he knows is wrong. Make it too difficult, and people will in general just give up and not bother with such tickets any more. \n\nThere's nothing wrong with having a cleanup ticket, where you can make all the changes you want - for example the Cliquer one #9870. \n\nDave",
+    "body": "Replying to [comment:14 leif]:\n> There are already other tickets around touching at least some of the patched files, too.\n> \n> I'd say adding the quotes around `SAGE_ROOT`, adding the `exit 1` if sourcing failed, and \n\n\nI won't argue with the `SAGE_ROOT`. I don't suppose John will. I've not looked at the exit, but that sounds sensible. \n\n> perhaps replacing `exit` by `return` in `sage-env` should be mandatory.\n\n\nIt adds extra risk. \n\n> If we always postpone fixes, we'll never get far (and if one opens a new ticket for every \"minor\" thing at all, we'll most probably just increase the number of open tickets, with lots of rebasing being necessary if some of them finally get merged).\n> \n> Just my 2 cents.\n\n\nYou will just frustrate people if you expect them to make many changes to fix a minor issue. Tickets will get left. John has kindly picked up on something that's not hurting his work, but he knows is wrong. Make it too difficult, and people will in general just give up and not bother with such tickets any more. \n\nThere's nothing wrong with having a cleanup ticket, where you can make all the changes you want - for example the Cliquer one #9870. \n\nDave",
     "created_at": "2010-09-21T20:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -428,15 +434,18 @@ Replying to [comment:14 leif]:
 > 
 > I'd say adding the quotes around `SAGE_ROOT`, adding the `exit 1` if sourcing failed, and 
 
+
 I won't argue with the `SAGE_ROOT`. I don't suppose John will. I've not looked at the exit, but that sounds sensible. 
 
 > perhaps replacing `exit` by `return` in `sage-env` should be mandatory.
+
 
 It adds extra risk. 
 
 > If we always postpone fixes, we'll never get far (and if one opens a new ticket for every "minor" thing at all, we'll most probably just increase the number of open tickets, with lots of rebasing being necessary if some of them finally get merged).
 > 
 > Just my 2 cents.
+
 
 You will just frustrate people if you expect them to make many changes to fix a minor issue. Tickets will get left. John has kindly picked up on something that's not hurting his work, but he knows is wrong. Make it too difficult, and people will in general just give up and not bother with such tickets any more. 
 
@@ -451,7 +460,7 @@ Dave
 archive/issue_comments_099525.json:
 ```json
 {
-    "body": "Replacing `exit` by `return` adds no risk if we **do** exit when `$? -ne 0`.\n\nNote that John's initial patch also did more than necessary for the ticket (or announced by its title).\n\nSo IMHO one should either do just what's necessary to address a specific issue (and not touch other files), or do \"the whole\", i.e. fix most of the open issues with the files you touch, at least the \"trivial\" ones that do not require extraordinary testing (e.g. on all platforms).\n\nThere's e.g. still\n\n```sh\n   cd \"$SAGE_ROOT/devel/sage/sage\"\n   echo \"*** TOUCHING ALL CYTHON (.pyx) FILES ***\"\n   touch */*.pyx */*/*.pyx */*/*/*.pyx */*/*/*/*.pyx */*/*/*/*/*.pyx */*/*/*/*/*.pyx  */*/*/*/*/*/*.\npyx 2> /dev/null\n```\n\nin `sage-build`, too. (Count the asterisks!)",
+    "body": "Replacing `exit` by `return` adds no risk if we **do** exit when `$? -ne 0`.\n\nNote that John's initial patch also did more than necessary for the ticket (or announced by its title).\n\nSo IMHO one should either do just what's necessary to address a specific issue (and not touch other files), or do \"the whole\", i.e. fix most of the open issues with the files you touch, at least the \"trivial\" ones that do not require extraordinary testing (e.g. on all platforms).\n\nThere's e.g. still\n\n```sh\n   cd \"$SAGE_ROOT/devel/sage/sage\"\n   echo \"*** TOUCHING ALL CYTHON (.pyx) FILES ***\"\n   touch */*.pyx */*/*.pyx */*/*/*.pyx */*/*/*/*.pyx */*/*/*/*/*.pyx */*/*/*/*/*.pyx  */*/*/*/*/*/*.\npyx 2> /dev/null\n```\nin `sage-build`, too. (Count the asterisks!)",
     "created_at": "2010-09-21T20:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -474,7 +483,6 @@ There's e.g. still
    touch */*.pyx */*/*.pyx */*/*/*.pyx */*/*/*/*.pyx */*/*/*/*/*.pyx */*/*/*/*/*.pyx  */*/*/*/*/*/*.
 pyx 2> /dev/null
 ```
-
 in `sage-build`, too. (Count the asterisks!)
 
 
@@ -484,7 +492,7 @@ in `sage-build`, too. (Count the asterisks!)
 archive/issue_comments_099526.json:
 ```json
 {
-    "body": "Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\nAs far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n```\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n```\n\nThis is confusing since nothing is actually being built.  It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.  Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\nI'm attaching a new patch.",
+    "body": "Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\nAs far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n```\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n```\nThis is confusing since nothing is actually being built.  It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.  Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\nI'm attaching a new patch.",
     "created_at": "2010-09-21T21:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -508,7 +516,6 @@ $ sage -pkg ...
 Building Sage on OS X in 64-bit mode
 ...
 ```
-
 This is confusing since nothing is actually being built.  It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.  Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?
 
 I'm attaching a new patch.
@@ -540,7 +547,7 @@ scripts repo: depends on #9644
 archive/issue_comments_099528.json:
 ```json
 {
-    "body": "> One point John, if you do change this patch, there's no need to quote xyes.\n\nOkay.  I think it's a little more readable if it's quoted, especially the way my editor colorizes things, so I'm leaving it quoted.",
+    "body": "> One point John, if you do change this patch, there's no need to quote xyes.\n\n\nOkay.  I think it's a little more readable if it's quoted, especially the way my editor colorizes things, so I'm leaving it quoted.",
     "created_at": "2010-09-21T21:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -551,6 +558,7 @@ archive/issue_comments_099528.json:
 
 > One point John, if you do change this patch, there's no need to quote xyes.
 
+
 Okay.  I think it's a little more readable if it's quoted, especially the way my editor colorizes things, so I'm leaving it quoted.
 
 
@@ -560,7 +568,7 @@ Okay.  I think it's a little more readable if it's quoted, especially the way my
 archive/issue_comments_099529.json:
 ```json
 {
-    "body": "Replying to [comment:17 jhpalmieri]:\n> Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\nYes, every. If you exit in a sourced file, the sourcing shell exits.\n\n(We should then test the return code when/whereever `sage-env` is sourced.)\n\n> As far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n```\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n```\n\n> This is confusing since nothing is actually being built.\n\nThe `sage-check-64` script is a bit funny...\n\n> It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.\n\nWe should echo *warning and error messages* in `sage-env` to `stderr`, then we can redirect `stdout` (\"informative\" messages) to `/dev/null` in the usual case.\n\n> Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\n`sage -b` doesn't call `sage-spkg`. We could call `sage-check-64` there, though its use isn't very clear. I either set `SAGE64` or leave it; I don't think there needs to be some extra file which sets it if it ever has been set before. Perhaps Dave can explain the use of that.",
+    "body": "Replying to [comment:17 jhpalmieri]:\n> Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\n\nYes, every. If you exit in a sourced file, the sourcing shell exits.\n\n(We should then test the return code when/whereever `sage-env` is sourced.)\n\n> As far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n{{{\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n}}}\n> This is confusing since nothing is actually being built.\n\n\nThe `sage-check-64` script is a bit funny...\n\n> It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.\n\n\nWe should echo *warning and error messages* in `sage-env` to `stderr`, then we can redirect `stdout` (\"informative\" messages) to `/dev/null` in the usual case.\n\n> Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\n\n`sage -b` doesn't call `sage-spkg`. We could call `sage-check-64` there, though its use isn't very clear. I either set `SAGE64` or leave it; I don't think there needs to be some extra file which sets it if it ever has been set before. Perhaps Dave can explain the use of that.",
     "created_at": "2010-09-21T21:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -572,13 +580,14 @@ archive/issue_comments_099529.json:
 Replying to [comment:17 jhpalmieri]:
 > Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?
 
+
 Yes, every. If you exit in a sourced file, the sourcing shell exits.
 
 (We should then test the return code when/whereever `sage-env` is sourced.)
 
 > As far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:
 
-```
+{{{
 $ sage -hg status
 Building Sage on OS X in 64-bit mode
 ...
@@ -588,17 +597,19 @@ Building Sage on OS X in 64-bit mode
 $ sage -pkg ...
 Building Sage on OS X in 64-bit mode
 ...
-```
-
+}}}
 > This is confusing since nothing is actually being built.
+
 
 The `sage-check-64` script is a bit funny...
 
 > It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.
 
+
 We should echo *warning and error messages* in `sage-env` to `stderr`, then we can redirect `stdout` ("informative" messages) to `/dev/null` in the usual case.
 
 > Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?
+
 
 `sage -b` doesn't call `sage-spkg`. We could call `sage-check-64` there, though its use isn't very clear. I either set `SAGE64` or leave it; I don't think there needs to be some extra file which sets it if it ever has been set before. Perhaps Dave can explain the use of that.
 
@@ -629,7 +640,7 @@ Btw, setting `SAGE64=no` should perhaps delete the "flag" file. But if one start
 archive/issue_comments_099531.json:
 ```json
 {
-    "body": "Replying to [comment:20 leif]:\n> What about removing `sage-check-64` from `sage-env` and directly sourcing it in the scripts that actually (attempt to) build something?\n> \n> Btw, setting `SAGE64=no` should perhaps delete the \"flag\" file. But if one started with one setting and switched to another, a `make clean` or whatever would be required anyway (interpreting `SAGE64` *not set* as \"use default / previous setting\", which seems to be the [undocumented?] current logic).\n\nWhat about creating another ticket for that?",
+    "body": "Replying to [comment:20 leif]:\n> What about removing `sage-check-64` from `sage-env` and directly sourcing it in the scripts that actually (attempt to) build something?\n> \n> Btw, setting `SAGE64=no` should perhaps delete the \"flag\" file. But if one started with one setting and switched to another, a `make clean` or whatever would be required anyway (interpreting `SAGE64` *not set* as \"use default / previous setting\", which seems to be the [undocumented?] current logic).\n\n\nWhat about creating another ticket for that?",
     "created_at": "2010-09-21T22:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -642,6 +653,7 @@ Replying to [comment:20 leif]:
 > What about removing `sage-check-64` from `sage-env` and directly sourcing it in the scripts that actually (attempt to) build something?
 > 
 > Btw, setting `SAGE64=no` should perhaps delete the "flag" file. But if one started with one setting and switched to another, a `make clean` or whatever would be required anyway (interpreting `SAGE64` *not set* as "use default / previous setting", which seems to be the [undocumented?] current logic).
+
 
 What about creating another ticket for that?
 
@@ -695,7 +707,7 @@ It seems to me that by replacing the exits by returns, you are now forcing anoth
 archive/issue_comments_099534.json:
 ```json
 {
-    "body": "As far as I understand it, the problem is the code in [an earlier comment](http://trac.sagemath.org/sage_trac/ticket/9960#comment:3): if you use \"exit\", then do\n\n```\n. sage-env\n\nif [ $? -ne 0 ]; then\n    ...\n```\n\nthe exit code for sage-env won't be available, so the code inside the \"if\" block is never executed.",
+    "body": "As far as I understand it, the problem is the code in [an earlier comment](http://trac.sagemath.org/sage_trac/ticket/9960#comment:3): if you use \"exit\", then do\n\n```\n. sage-env\n\nif [ $? -ne 0 ]; then\n    ...\n```\nthe exit code for sage-env won't be available, so the code inside the \"if\" block is never executed.",
     "created_at": "2010-09-21T23:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -712,7 +724,6 @@ As far as I understand it, the problem is the code in [an earlier comment](http:
 if [ $? -ne 0 ]; then
     ...
 ```
-
 the exit code for sage-env won't be available, so the code inside the "if" block is never executed.
 
 
@@ -809,7 +820,7 @@ Sorry, just noticed the patch's name is wrong (patches `sage-spkg`, not `sage-sa
 archive/issue_comments_099539.json:
 ```json
 {
-    "body": "The only side-effect of *sourcing* `sage-env` twice is that some variables (e.g. `LD_LIBRARY_PATH`) get redundant entries.\n\nWe *could* in principle prevent such by an \n\n```C\n#ifndef FOO\n#define FOO\n...\n#endif\n```\n\nanalogon. But IMHO a minor issue...",
+    "body": "The only side-effect of *sourcing* `sage-env` twice is that some variables (e.g. `LD_LIBRARY_PATH`) get redundant entries.\n\nWe *could* in principle prevent such by an \n\n```C\n#ifndef FOO\n#define FOO\n...\n#endif\n```\nanalogon. But IMHO a minor issue...",
     "created_at": "2010-09-22T05:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -828,7 +839,6 @@ We *could* in principle prevent such by an
 ...
 #endif
 ```
-
 analogon. But IMHO a minor issue...
 
 
@@ -862,7 +872,7 @@ Dave
 archive/issue_comments_099541.json:
 ```json
 {
-    "body": "Replying to [comment:30 drkirkby]:\n> Leif, it would be less confusing if you just deleted the patch, renamed it, then put it back\n\nI would have done so if only I could... :)\n\n> [...] I can delete it for you, as I have admin rights on trac, but I believe you should be able to delete your own patches.\n\nNo, there's not even a button to do so, so please delete it for me. (I've replaced the file with the wrong name by an almost empty file and re-uploaded the original with the correct name.)",
+    "body": "Replying to [comment:30 drkirkby]:\n> Leif, it would be less confusing if you just deleted the patch, renamed it, then put it back\n\n\nI would have done so if only I could... :)\n\n> [...] I can delete it for you, as I have admin rights on trac, but I believe you should be able to delete your own patches.\n\n\nNo, there's not even a button to do so, so please delete it for me. (I've replaced the file with the wrong name by an almost empty file and re-uploaded the original with the correct name.)",
     "created_at": "2010-09-22T22:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -874,9 +884,11 @@ archive/issue_comments_099541.json:
 Replying to [comment:30 drkirkby]:
 > Leif, it would be less confusing if you just deleted the patch, renamed it, then put it back
 
+
 I would have done so if only I could... :)
 
 > [...] I can delete it for you, as I have admin rights on trac, but I believe you should be able to delete your own patches.
+
 
 No, there's not even a button to do so, so please delete it for me. (I've replaced the file with the wrong name by an almost empty file and re-uploaded the original with the correct name.)
 
@@ -925,7 +937,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099544.json:
 ```json
 {
-    "body": "Replying to [comment:30 drkirkby]:\n> Let's not add any more changes to this ticket.\n\nI didn't plan that; therefore I've also added comments on what has to get fixed on follow-up tickets.\n\n> Leif's changes look OK to me, though I feel they should have been on another ticket.\n\nTesting the \"exit\" code of `sage-env` had become necessary because of the other patch.\n\nI'm happy you're happy (or ok) with my changes though. :-)",
+    "body": "Replying to [comment:30 drkirkby]:\n> Let's not add any more changes to this ticket.\n\n\nI didn't plan that; therefore I've also added comments on what has to get fixed on follow-up tickets.\n\n> Leif's changes look OK to me, though I feel they should have been on another ticket.\n\n\nTesting the \"exit\" code of `sage-env` had become necessary because of the other patch.\n\nI'm happy you're happy (or ok) with my changes though. :-)",
     "created_at": "2010-09-22T23:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -937,9 +949,11 @@ archive/issue_comments_099544.json:
 Replying to [comment:30 drkirkby]:
 > Let's not add any more changes to this ticket.
 
+
 I didn't plan that; therefore I've also added comments on what has to get fixed on follow-up tickets.
 
 > Leif's changes look OK to me, though I feel they should have been on another ticket.
+
 
 Testing the "exit" code of `sage-env` had become necessary because of the other patch.
 
@@ -952,7 +966,7 @@ I'm happy you're happy (or ok) with my changes though. :-)
 archive/issue_comments_099545.json:
 ```json
 {
-    "body": "Replying to [comment:32 drkirkby]:\n> I've deleted the two files for you. I'm changing to \"needs work\" until such time as you have attached them. \n\nArgh, \"it\" != both...\n\nUploading the patch with the correct name **again**.",
+    "body": "Replying to [comment:32 drkirkby]:\n> I've deleted the two files for you. I'm changing to \"needs work\" until such time as you have attached them. \n\n\nArgh, \"it\" != both...\n\nUploading the patch with the correct name **again**.",
     "created_at": "2010-09-22T23:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -963,6 +977,7 @@ archive/issue_comments_099545.json:
 
 Replying to [comment:32 drkirkby]:
 > I've deleted the two files for you. I'm changing to "needs work" until such time as you have attached them. 
+
 
 Argh, "it" != both...
 
@@ -1089,7 +1104,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099552.json:
 ```json
 {
-    "body": "Replying to [comment:38 leif]:\n> Haven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased...\n\nOf course:\n\n```\napplying /home/leif/Sage/patches/trac_9960-scripts-SAGE_CHECK.patch\npatching file sage-build\nHunk #1 FAILED at 0\nHunk #2 FAILED at 33\nHunk #3 FAILED at 44\n3 out of 3 hunks FAILED -- saving rejects to file sage-build.rej\npatching file sage-env\nHunk #4 succeeded at 222 (offset 24 lines).\nHunk #5 succeeded at 281 (offset 24 lines).\npatching file sage-sage\nHunk #1 FAILED at 141\n1 out of 1 hunks FAILED -- saving rejects to file sage-sage.rej\npatching file sage-spkg\nHunk #1 succeeded at 368 (offset 10 lines).\nabort: patch failed to apply\n```\n\n(Sage 4.6.1.rc0)",
+    "body": "Replying to [comment:38 leif]:\n> Haven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased...\n\n\nOf course:\n\n```\napplying /home/leif/Sage/patches/trac_9960-scripts-SAGE_CHECK.patch\npatching file sage-build\nHunk #1 FAILED at 0\nHunk #2 FAILED at 33\nHunk #3 FAILED at 44\n3 out of 3 hunks FAILED -- saving rejects to file sage-build.rej\npatching file sage-env\nHunk #4 succeeded at 222 (offset 24 lines).\nHunk #5 succeeded at 281 (offset 24 lines).\npatching file sage-sage\nHunk #1 FAILED at 141\n1 out of 1 hunks FAILED -- saving rejects to file sage-sage.rej\npatching file sage-spkg\nHunk #1 succeeded at 368 (offset 10 lines).\nabort: patch failed to apply\n```\n(Sage 4.6.1.rc0)",
     "created_at": "2010-12-30T16:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1100,6 +1115,7 @@ archive/issue_comments_099552.json:
 
 Replying to [comment:38 leif]:
 > Haven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased...
+
 
 Of course:
 
@@ -1120,7 +1136,6 @@ patching file sage-spkg
 Hunk #1 succeeded at 368 (offset 10 lines).
 abort: patch failed to apply
 ```
-
 (Sage 4.6.1.rc0)
 
 
@@ -1188,7 +1203,7 @@ SCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more change
 archive/issue_comments_099556.json:
 ```json
 {
-    "body": "I've now also attached a rebased version of my \"reviewer\" patch, with some more changes:\n\n*Besides cosmetic changes (formatting, tabs, some messages), I've only*\n\n* *added lots of comments (including TODOs/notes on future changes),*\n* *quoted all necessary environment variables,*\n* ''fixed a bug which caused a successful test suite run never getting\n  logged (to 'spkg/installed/<package-name>').''\n\n*So there are (still) lots of things to do, but on another ticket.*\n\n----\n\nI can of course only review John's changes (which I already did, leading to my reviewer patch, so I'm in principle ok with his changes, although I haven't tested them recently); so someone else has to review mine. (I'm going to test them with 4.6.1.rc0 again though I don't expect new, undesired behavior.)\n\nAdditional changes (other than fixes of possible mistakes introduced here) should IMHO be made on follow-up tickets; as mentioned in the commit message (and comments in `sage-spkg`), there are quite a lot things to get fixed or improved.",
+    "body": "I've now also attached a rebased version of my \"reviewer\" patch, with some more changes:\n\n*Besides cosmetic changes (formatting, tabs, some messages), I've only*\n\n* *added lots of comments (including TODOs/notes on future changes),*\n* *quoted all necessary environment variables,*\n* ''fixed a bug which caused a successful test suite run never getting\n  logged (to 'spkg/installed/<package-name>').''\n\n*So there are (still) lots of things to do, but on another ticket.*\n\n---\n\nI can of course only review John's changes (which I already did, leading to my reviewer patch, so I'm in principle ok with his changes, although I haven't tested them recently); so someone else has to review mine. (I'm going to test them with 4.6.1.rc0 again though I don't expect new, undesired behavior.)\n\nAdditional changes (other than fixes of possible mistakes introduced here) should IMHO be made on follow-up tickets; as mentioned in the commit message (and comments in `sage-spkg`), there are quite a lot things to get fixed or improved.",
     "created_at": "2010-12-31T04:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1208,7 +1223,7 @@ I've now also attached a rebased version of my "reviewer" patch, with some more 
 
 *So there are (still) lots of things to do, but on another ticket.*
 
-----
+---
 
 I can of course only review John's changes (which I already did, leading to my reviewer patch, so I'm in principle ok with his changes, although I haven't tested them recently); so someone else has to review mine. (I'm going to test them with 4.6.1.rc0 again though I don't expect new, undesired behavior.)
 
@@ -1263,7 +1278,7 @@ P.S.:
 archive/issue_comments_099559.json:
 ```json
 {
-    "body": "**Positive review** from me **for John's patch(es).**\n\n----\n\nThis ticket should also (temporarily) fix the doctests errors occurring when `SAGE64=yes`, caused by \"*Building a 64-bit version of Sage*\" messages.\n\n(I've tested it on Linux only.)",
+    "body": "**Positive review** from me **for John's patch(es).**\n\n---\n\nThis ticket should also (temporarily) fix the doctests errors occurring when `SAGE64=yes`, caused by \"*Building a 64-bit version of Sage*\" messages.\n\n(I've tested it on Linux only.)",
     "created_at": "2010-12-31T05:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1274,7 +1289,7 @@ archive/issue_comments_099559.json:
 
 **Positive review** from me **for John's patch(es).**
 
-----
+---
 
 This ticket should also (temporarily) fix the doctests errors occurring when `SAGE64=yes`, caused by "*Building a 64-bit version of Sage*" messages.
 
@@ -1287,7 +1302,7 @@ This ticket should also (temporarily) fix the doctests errors occurring when `SA
 archive/issue_comments_099560.json:
 ```json
 {
-    "body": "Replying to [comment:22 drkirkby]:\n\n> I don't know how John feels, but I think we need to stop the ticket dragging on like #9603 did. \n\nFive months ago I wrote the above comment. I could see that if we were not careful, the ticket would drag on, as more and more changes were requested that had nothing to do solving the problem raised. \n\nJohn's changes did the job and were not risky. Now the ticket has dragged on and on, with endless other changes, but still no positive review. \n\nDave",
+    "body": "Replying to [comment:22 drkirkby]:\n\n> I don't know how John feels, but I think we need to stop the ticket dragging on like #9603 did. \n\n\nFive months ago I wrote the above comment. I could see that if we were not careful, the ticket would drag on, as more and more changes were requested that had nothing to do solving the problem raised. \n\nJohn's changes did the job and were not risky. Now the ticket has dragged on and on, with endless other changes, but still no positive review. \n\nDave",
     "created_at": "2011-02-05T13:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1299,6 +1314,7 @@ archive/issue_comments_099560.json:
 Replying to [comment:22 drkirkby]:
 
 > I don't know how John feels, but I think we need to stop the ticket dragging on like #9603 did. 
+
 
 Five months ago I wrote the above comment. I could see that if we were not careful, the ticket would drag on, as more and more changes were requested that had nothing to do solving the problem raised. 
 
@@ -1429,7 +1445,7 @@ Dave, you're probably right, and #4029 would probably have been the right place.
 archive/issue_comments_099567.json:
 ```json
 {
-    "body": "I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\n```\nMachine:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\nDeleting directories from past builds of previous/current versions of sage_scripts-4.7.alpha3\nExtracting package /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg ...\n-rw-r--r-- 1 jdemeyer jdemeyer 990291 2011-03-26 21:12 /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zl\nib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --prog\nram-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linu\nx-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n\nreal    0m0.044s\nuser    0m0.020s\nsys     0m0.020s\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\nmake[1]: *** [installed/sage_scripts-4.7.alpha3] Error 2\nmake[1]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/spkg'\n```\n",
+    "body": "I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\n```\nMachine:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\nDeleting directories from past builds of previous/current versions of sage_scripts-4.7.alpha3\nExtracting package /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg ...\n-rw-r--r-- 1 jdemeyer jdemeyer 990291 2011-03-26 21:12 /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zl\nib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --prog\nram-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linu\nx-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n\nreal    0m0.044s\nuser    0m0.020s\nsys     0m0.020s\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\nmake[1]: *** [installed/sage_scripts-4.7.alpha3] Error 2\nmake[1]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/spkg'\n```",
     "created_at": "2011-03-27T10:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1476,7 +1492,6 @@ make[1]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/sp
 
 
 
-
 ---
 
 archive/issue_comments_099568.json:
@@ -1500,7 +1515,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_099569.json:
 ```json
 {
-    "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\nAnd there was me thinking a very small patch John submitted 6 months ago was finally going to be merged!\n\nI think Leif should **seriously** consider the implications of the endless changes he wants on tickets like this one - changes that are not related to the problem the ticket is supposed to address. \n\nIn many ways I wish all sage developers were as fussy as Leif, as his approach does generally result in improved quality of code. Many of the bugs in Sage would not be there if more people were fussy about code that is written. I cringe at some of the stuff I see written. But Leif's endless requested changes are slowing Sage development to a crawl. \n\n#9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\nThe cliquer package is a complete mess, so I opened a ticket to clean it up (#9870), and another (#9871) to address an important single issue for a 64-bit Solaris port. The latter took ages, due to unrelated changes requested by Leif. Then Leif decided to take ownership of the cleanup patch (#9870), but has done nothing about it in 7 months, despite a couple of reminders from me. \n\nNot only do these endless changes take longer to implement for the author, but it makes review so much more difficult. Whereas I would have been happy to give a positive review to John's original patch, this has become so complex it is a nightmare reviewing it. \n\nDave",
+    "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\n\nAnd there was me thinking a very small patch John submitted 6 months ago was finally going to be merged!\n\nI think Leif should **seriously** consider the implications of the endless changes he wants on tickets like this one - changes that are not related to the problem the ticket is supposed to address. \n\nIn many ways I wish all sage developers were as fussy as Leif, as his approach does generally result in improved quality of code. Many of the bugs in Sage would not be there if more people were fussy about code that is written. I cringe at some of the stuff I see written. But Leif's endless requested changes are slowing Sage development to a crawl. \n\n#9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\nThe cliquer package is a complete mess, so I opened a ticket to clean it up (#9870), and another (#9871) to address an important single issue for a 64-bit Solaris port. The latter took ages, due to unrelated changes requested by Leif. Then Leif decided to take ownership of the cleanup patch (#9870), but has done nothing about it in 7 months, despite a couple of reminders from me. \n\nNot only do these endless changes take longer to implement for the author, but it makes review so much more difficult. Whereas I would have been happy to give a positive review to John's original patch, this has become so complex it is a nightmare reviewing it. \n\nDave",
     "created_at": "2011-03-27T14:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1511,6 +1526,7 @@ archive/issue_comments_099569.json:
 
 Replying to [comment:53 jdemeyer]:
 > I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):
+
 
 And there was me thinking a very small patch John submitted 6 months ago was finally going to be merged!
 
@@ -1533,7 +1549,7 @@ Dave
 archive/issue_comments_099570.json:
 ```json
 {
-    "body": "Replying to [comment:54 drkirkby]:\n \n> #9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\n> Dave \n\nCorrection, #9603 was only applied on HP-UX. The point being a *safe* change, that was only intended to effect Sage on an unsupported platform became overly complex and dragged on for a long time. \n\nIMHO, this sort of thing needs to stop. \n\nDave",
+    "body": "Replying to [comment:54 drkirkby]:\n \n> #9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\n\n> Dave \n\n\nCorrection, #9603 was only applied on HP-UX. The point being a *safe* change, that was only intended to effect Sage on an unsupported platform became overly complex and dragged on for a long time. \n\nIMHO, this sort of thing needs to stop. \n\nDave",
     "created_at": "2011-03-27T14:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1546,7 +1562,9 @@ Replying to [comment:54 drkirkby]:
  
 > #9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. 
 
+
 > Dave 
+
 
 Correction, #9603 was only applied on HP-UX. The point being a *safe* change, that was only intended to effect Sage on an unsupported platform became overly complex and dragged on for a long time. 
 
@@ -1561,7 +1579,7 @@ Dave
 archive/issue_comments_099571.json:
 ```json
 {
-    "body": "Jeroen: The line cited by the error\n\n```\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\n```\n\nis not touched by this patch.  Did you run \"sage -sdist ...\" or just apply the patch to the scripts repo?  If you just applied it to the scripts repo, then the version of sage-spkg in the repo will not match with the version in spkg/base/, and I think that could cause an error like the one you saw.\n\nI ran \"sage -sdist ...\" and then started building from the new tar file, and it's going fine: it's built around 50 of the spkgs, including sage_scripts, with no problems.",
+    "body": "Jeroen: The line cited by the error\n\n```\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\n```\nis not touched by this patch.  Did you run \"sage -sdist ...\" or just apply the patch to the scripts repo?  If you just applied it to the scripts repo, then the version of sage-spkg in the repo will not match with the version in spkg/base/, and I think that could cause an error like the one you saw.\n\nI ran \"sage -sdist ...\" and then started building from the new tar file, and it's going fine: it's built around 50 of the spkgs, including sage_scripts, with no problems.",
     "created_at": "2011-03-27T15:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1576,7 +1594,6 @@ Jeroen: The line cited by the error
 /scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('
 /scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo "(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)"'
 ```
-
 is not touched by this patch.  Did you run "sage -sdist ..." or just apply the patch to the scripts repo?  If you just applied it to the scripts repo, then the version of sage-spkg in the repo will not match with the version in spkg/base/, and I think that could cause an error like the one you saw.
 
 I ran "sage -sdist ..." and then started building from the new tar file, and it's going fine: it's built around 50 of the spkgs, including sage_scripts, with no problems.
@@ -1588,7 +1605,7 @@ I ran "sage -sdist ..." and then started building from the new tar file, and it'
 archive/issue_comments_099572.json:
 ```json
 {
-    "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause)\n\nMy build completed just fine.  I just tried again: I took a vanilla copy of 4.7.alpha2, applied this patch, ran \"sage -sdist ...\", and then built from the resulting tar file.  It has started just fine, successfully installing sage_scripts and 40 more spkgs.  The build is still ongoing, but I'm not seeing the error you saw.\n\nSince you're not sure that this patch caused it, what can I do to help resolve this?",
+    "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause)\n\n\nMy build completed just fine.  I just tried again: I took a vanilla copy of 4.7.alpha2, applied this patch, ran \"sage -sdist ...\", and then built from the resulting tar file.  It has started just fine, successfully installing sage_scripts and 40 more spkgs.  The build is still ongoing, but I'm not seeing the error you saw.\n\nSince you're not sure that this patch caused it, what can I do to help resolve this?",
     "created_at": "2011-03-28T18:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1599,6 +1616,7 @@ archive/issue_comments_099572.json:
 
 Replying to [comment:53 jdemeyer]:
 > I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause)
+
 
 My build completed just fine.  I just tried again: I took a vanilla copy of 4.7.alpha2, applied this patch, ran "sage -sdist ...", and then built from the resulting tar file.  It has started just fine, successfully installing sage_scripts and 40 more spkgs.  The build is still ongoing, but I'm not seeing the error you saw.
 
@@ -1631,7 +1649,7 @@ If you *really* want to move forward, make sure that no files appear in duplicat
 archive/issue_comments_099574.json:
 ```json
 {
-    "body": "Replying to [comment:58 jdemeyer]:\n \n> If you *really* want to move forward, make sure that no files appear in duplicate places (like `local/bin` and `spkg/base` in this case).  This has caused trouble for me tons of times.  #9433 fixed a lot of these issues, but apparently there is still some work to do.  We should probably get rid of the `spkg/base` repository and use the `SAGE_ROOT` repository for this instead.\n\nI don't know how to avoid the duplication, but see #11073 for a ticket.",
+    "body": "Replying to [comment:58 jdemeyer]:\n \n> If you *really* want to move forward, make sure that no files appear in duplicate places (like `local/bin` and `spkg/base` in this case).  This has caused trouble for me tons of times.  #9433 fixed a lot of these issues, but apparently there is still some work to do.  We should probably get rid of the `spkg/base` repository and use the `SAGE_ROOT` repository for this instead.\n\n\nI don't know how to avoid the duplication, but see #11073 for a ticket.",
     "created_at": "2011-03-28T19:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1643,6 +1661,7 @@ archive/issue_comments_099574.json:
 Replying to [comment:58 jdemeyer]:
  
 > If you *really* want to move forward, make sure that no files appear in duplicate places (like `local/bin` and `spkg/base` in this case).  This has caused trouble for me tons of times.  #9433 fixed a lot of these issues, but apparently there is still some work to do.  We should probably get rid of the `spkg/base` repository and use the `SAGE_ROOT` repository for this instead.
+
 
 I don't know how to avoid the duplication, but see #11073 for a ticket.
 
@@ -1706,7 +1725,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_099577.json:
 ```json
 {
-    "body": "Replying to [comment:61 jhpalmieri]:\n> I'm not sure why this depends on #11073; can you clarify?\n\nTechnically speaking, it doesn't depend on #11073.  But I would really like #11073 to be finished before merging any ticket which affects files in `spkg/base`.  If you insist, I could try to merge #9960 and #11008 anyway (before #11073).",
+    "body": "Replying to [comment:61 jhpalmieri]:\n> I'm not sure why this depends on #11073; can you clarify?\n\n\nTechnically speaking, it doesn't depend on #11073.  But I would really like #11073 to be finished before merging any ticket which affects files in `spkg/base`.  If you insist, I could try to merge #9960 and #11008 anyway (before #11073).",
     "created_at": "2011-04-13T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
@@ -1717,6 +1736,7 @@ archive/issue_comments_099577.json:
 
 Replying to [comment:61 jhpalmieri]:
 > I'm not sure why this depends on #11073; can you clarify?
+
 
 Technically speaking, it doesn't depend on #11073.  But I would really like #11073 to be finished before merging any ticket which affects files in `spkg/base`.  If you insist, I could try to merge #9960 and #11008 anyway (before #11073).
 

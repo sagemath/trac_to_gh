@@ -154,7 +154,7 @@ Ok, doctests are added.
 archive/issue_comments_024399.json:
 ```json
 {
-    "body": "Replying to [comment:3 yi]:\n> Ok, doctests are added.\nAlso, be sure to remove nodoctest.py in dsage/interface. For some reason MQ doesn't pick up that I removed the file.",
+    "body": "Replying to [comment:3 yi]:\n> Ok, doctests are added.\n\nAlso, be sure to remove nodoctest.py in dsage/interface. For some reason MQ doesn't pick up that I removed the file.",
     "created_at": "2008-06-19T04:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
@@ -165,6 +165,7 @@ archive/issue_comments_024399.json:
 
 Replying to [comment:3 yi]:
 > Ok, doctests are added.
+
 Also, be sure to remove nodoctest.py in dsage/interface. For some reason MQ doesn't pick up that I removed the file.
 
 

@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/279
 archive/issue_comments_001324.json:
 ```json
 {
-    "body": "Changeset 0e2d1b3b9389 changes sage -tnew rev to support this.\n\n\n```\n# By default, we compare to tip.  However, it is handy to compare against\n# a certain revision, perhaps tagged 2.2 or similar:\n#\n# EXAMPLES:\n#\n# Find things modified but not committed:\n# % sage -tnew tip\n#\n# Find things modified since 2.2:\n# % sage -tnew 2.2\n#\n# Find things modified between 2.1 and 2.2:\n# % sage -tnew 2.1:2.2\n```\n",
+    "body": "Changeset 0e2d1b3b9389 changes sage -tnew rev to support this.\n\n```\n# By default, we compare to tip.  However, it is handy to compare against\n# a certain revision, perhaps tagged 2.2 or similar:\n#\n# EXAMPLES:\n#\n# Find things modified but not committed:\n# % sage -tnew tip\n#\n# Find things modified since 2.2:\n# % sage -tnew 2.2\n#\n# Find things modified between 2.1 and 2.2:\n# % sage -tnew 2.1:2.2\n```",
     "created_at": "2007-02-25T08:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/279",
     "type": "issue_comment",
@@ -43,7 +43,6 @@ archive/issue_comments_001324.json:
 ```
 
 Changeset 0e2d1b3b9389 changes sage -tnew rev to support this.
-
 
 ```
 # By default, we compare to tip.  However, it is handy to compare against
@@ -60,7 +59,6 @@ Changeset 0e2d1b3b9389 changes sage -tnew rev to support this.
 # Find things modified between 2.1 and 2.2:
 # % sage -tnew 2.1:2.2
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_006384.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  shumow@gmail.com kohel @JohnCremona\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\n\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
+    "body": "Assignee: tbd\n\nCC:  shumow@gmail.com kohel @JohnCremona\n\nFirst the docstring for E.isogeny? has a typo\n\n```\n(defaul:None)\n```\nNote the missing t.\n\nNext, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: phi = E.isogeny([P]); phi\nIsogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\nsage: phi.codomain().conductor()\n530575705\nsage: phi.codomain().conductor().factor()\n5 * 11 * 1531 * 6301\n```\n\nNote that: \n\n* the two curves are not isogenous, since their conductors are different\n\n* the degree of the isogeny is reported to be 1, but it should be 5.\n\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/6384\n\n",
     "created_at": "2009-06-21T23:44:06Z",
     "labels": [
         "component: algebra",
@@ -25,11 +25,9 @@ First the docstring for E.isogeny? has a typo
 ```
 (defaul:None)
 ```
-
 Note the missing t.
 
 Next, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.
-
 
 ```
 sage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P
@@ -41,7 +39,6 @@ sage: phi.codomain().conductor()
 sage: phi.codomain().conductor().factor()
 5 * 11 * 1531 * 6301
 ```
-
 
 Note that: 
 
@@ -62,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/6384
 archive/issue_comments_050999.json:
 ```json
 {
-    "body": "The problem is where you do:\n\n> sage: phi = E.isogeny([P]); phi\n\nThat is not the correct way to specify a kernel.  You are trying to specify the generator, and expecting the isogeny function to determine this.  (We could, at some point modify this to be the case in some sense.)  However, the correct way to specify an isogeny with a kernel list is to specify the whole kernel.  So, what you would need to do is this:\n\n> sage: phi = E.isogeny([E(0), P, 2*P, 3*P, 4*P]); phi\n\nYou have a good point about the typo in the docstring.\n\n\n\n\nReplying to [ticket:6384 was]:\n> First the docstring for E.isogeny? has a typo\n> {{{\n> (defaul:None)\n> }}}\n> Note the missing t.\n> \n> Next, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n> \n> {{{\n> sage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n> (5 : 5 : 1)\n> sage: phi = E.isogeny([P]); phi\n> Isogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\n> sage: phi.codomain().conductor()\n> 530575705\n> sage: phi.codomain().conductor().factor()\n> 5 * 11 * 1531 * 6301\n> }}}\n> \n> Note that: \n> \n>   * the two curves are not isogenous, since their conductors are different\n> \n>   * the degree of the isogeny is reported to be 1, but it should be 5.\n> \n>",
+    "body": "The problem is where you do:\n\n> sage: phi = E.isogeny([P]); phi\n\n\nThat is not the correct way to specify a kernel.  You are trying to specify the generator, and expecting the isogeny function to determine this.  (We could, at some point modify this to be the case in some sense.)  However, the correct way to specify an isogeny with a kernel list is to specify the whole kernel.  So, what you would need to do is this:\n\n> sage: phi = E.isogeny([E(0), P, 2*P, 3*P, 4*P]); phi\n\n\nYou have a good point about the typo in the docstring.\n\n\n\n\nReplying to [ticket:6384 was]:\n> First the docstring for E.isogeny? has a typo\n> \n> ```\n> (defaul:None)\n> ```\n> Note the missing t.\n> \n> Next, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.\n> \n> \n> ```\n> sage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n> (5 : 5 : 1)\n> sage: phi = E.isogeny([P]); phi\n> Isogeny of degree 1 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 560*x - 4277 over Rational Field\n> sage: phi.codomain().conductor()\n> 530575705\n> sage: phi.codomain().conductor().factor()\n> 5 * 11 * 1531 * 6301\n> ```\n> \n> Note that: \n> \n> * the two curves are not isogenous, since their conductors are different\n> \n> * the degree of the isogeny is reported to be 1, but it should be 5.\n> \n\n>",
     "created_at": "2009-06-22T16:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
@@ -75,9 +72,11 @@ The problem is where you do:
 
 > sage: phi = E.isogeny([P]); phi
 
+
 That is not the correct way to specify a kernel.  You are trying to specify the generator, and expecting the isogeny function to determine this.  (We could, at some point modify this to be the case in some sense.)  However, the correct way to specify an isogeny with a kernel list is to specify the whole kernel.  So, what you would need to do is this:
 
 > sage: phi = E.isogeny([E(0), P, 2*P, 3*P, 4*P]); phi
+
 
 You have a good point about the typo in the docstring.
 
@@ -86,14 +85,16 @@ You have a good point about the typo in the docstring.
 
 Replying to [ticket:6384 was]:
 > First the docstring for E.isogeny? has a typo
-> {{{
+> 
+> ```
 > (defaul:None)
-> }}}
+> ```
 > Note the missing t.
 > 
 > Next, I tried taking the elliptic curve 11a and one 5-torsion point P on it and trying to make the isogeny `E --> E/<P>`.  It seems that the result is a **total disaster in every imaginable way**.
 > 
-> {{{
+> 
+> ```
 > sage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P
 > (5 : 5 : 1)
 > sage: phi = E.isogeny([P]); phi
@@ -102,14 +103,15 @@ Replying to [ticket:6384 was]:
 > 530575705
 > sage: phi.codomain().conductor().factor()
 > 5 * 11 * 1531 * 6301
-> }}}
+> ```
 > 
 > Note that: 
 > 
->   * the two curves are not isogenous, since their conductors are different
+> * the two curves are not isogenous, since their conductors are different
 > 
->   * the degree of the isogeny is reported to be 1, but it should be 5.
+> * the degree of the isogeny is reported to be 1, but it should be 5.
 > 
+
 >
 
 
@@ -210,7 +212,7 @@ Chris.
 archive/issue_comments_051004.json:
 ```json
 {
-    "body": "Moreover there is the following bug in the doctest:\n\n\n```\nsage: E = EllipticCurve(GF(31),[1,0,0,1,2])\nsage: phi = E.isogeny([14,27,4,1])\nsage: phi.degree()\n7\nsage: E.division_polynomial(7).factor()\n(7) * (x^24 + 2*x^23  + ... +  15*x + 22)\n```\n\n\nin other words there can not be an isogeny of degree 7 defined over the ground field. The given polynomial is a factor of the 3-division polynomial. But it can not define an isogeny of degree 3 as the kernel would have 6 elements.",
+    "body": "Moreover there is the following bug in the doctest:\n\n```\nsage: E = EllipticCurve(GF(31),[1,0,0,1,2])\nsage: phi = E.isogeny([14,27,4,1])\nsage: phi.degree()\n7\nsage: E.division_polynomial(7).factor()\n(7) * (x^24 + 2*x^23  + ... +  15*x + 22)\n```\n\nin other words there can not be an isogeny of degree 7 defined over the ground field. The given polynomial is a factor of the 3-division polynomial. But it can not define an isogeny of degree 3 as the kernel would have 6 elements.",
     "created_at": "2009-07-03T12:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
@@ -221,7 +223,6 @@ archive/issue_comments_051004.json:
 
 Moreover there is the following bug in the doctest:
 
-
 ```
 sage: E = EllipticCurve(GF(31),[1,0,0,1,2])
 sage: phi = E.isogeny([14,27,4,1])
@@ -230,7 +231,6 @@ sage: phi.degree()
 sage: E.division_polynomial(7).factor()
 (7) * (x^24 + 2*x^23  + ... +  15*x + 22)
 ```
-
 
 in other words there can not be an isogeny of degree 7 defined over the ground field. The given polynomial is a factor of the 3-division polynomial. But it can not define an isogeny of degree 3 as the kernel would have 6 elements.
 
@@ -515,7 +515,7 @@ If there is still disagreement we could try for a vote on sage-devel or sage-nt!
 archive/issue_comments_051017.json:
 ```json
 {
-    "body": "Possible typo in the patch that touches `sage/schemes/elliptic_curves/ell_curve_isogeny.py`:\n\n```\n4036\t    - ``E2``        - an elliptic curve in short wWeierstrass form. \n```\n\nIt should be \"Weierstrass\" instead of \"wWeierstrass\".",
+    "body": "Possible typo in the patch that touches `sage/schemes/elliptic_curves/ell_curve_isogeny.py`:\n\n```\n4036\t    - ``E2``        - an elliptic curve in short wWeierstrass form. \n```\nIt should be \"Weierstrass\" instead of \"wWeierstrass\".",
     "created_at": "2009-08-24T00:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6384",
     "type": "issue_comment",
@@ -529,7 +529,6 @@ Possible typo in the patch that touches `sage/schemes/elliptic_curves/ell_curve_
 ```
 4036	    - ``E2``        - an elliptic curve in short wWeierstrass form. 
 ```
-
 It should be "Weierstrass" instead of "wWeierstrass".
 
 

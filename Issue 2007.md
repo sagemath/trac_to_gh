@@ -3,7 +3,7 @@
 archive/issues_002007.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/tools/getsp.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/share/java/getsp.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/Value.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/Tracer.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/SearchEngine.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexTable.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexStream.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexEntry.class\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2007\n\n",
+    "body": "Assignee: mabshoff\n\n```\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/tools/getsp.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/share/java/getsp.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/Value.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/Tracer.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/SearchEngine.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexTable.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexStream.class\nsage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexEntry.class\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/2007\n\n",
     "created_at": "2008-01-31T23:17:21Z",
     "labels": [
         "component: packages: standard",
@@ -18,7 +18,6 @@ archive/issues_002007.json:
 ```
 Assignee: mabshoff
 
-
 ```
 sage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/tools/getsp.class
 sage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/share/java/getsp.class
@@ -29,7 +28,6 @@ sage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexTable.class
 sage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexStream.class
 sage-2.10.1.rc3/spkg/standard/r-2.6.1.p14/src/doc/html/search/IndexEntry.class
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/2007
 

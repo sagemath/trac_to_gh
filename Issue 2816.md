@@ -104,7 +104,7 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/3ef6da9c8fa7d
 archive/issue_comments_019297.json:
 ```json
 {
-    "body": "I know this is preliminary but just wanted to report for others testers that this has a boat-load of doctest failures:\n\n\n```\n...\n        sage -t  devel/sage/sage/calculus/wester.py\n        sage -t  devel/sage/sage/matrix/matrix2.pyx\n        sage -t  devel/sage/sage/matrix/tests.py\n        sage -t  devel/sage/sage/modular/modform/half_integral.py\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\n        sage -t  devel/sage/sage/misc/functional.py\n```\n\nI ran testall twice and it seems that I did not pick up the failure of sage -t  devel/sage/sage/calculus/wester.py or of devel/sage/sage/modular/modform/half_integral.py the first time. These aside, looks like it will eventually be a valuable contribution to SAGE.",
+    "body": "I know this is preliminary but just wanted to report for others testers that this has a boat-load of doctest failures:\n\n```\n...\n        sage -t  devel/sage/sage/calculus/wester.py\n        sage -t  devel/sage/sage/matrix/matrix2.pyx\n        sage -t  devel/sage/sage/matrix/tests.py\n        sage -t  devel/sage/sage/modular/modform/half_integral.py\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\n        sage -t  devel/sage/sage/misc/functional.py\n```\nI ran testall twice and it seems that I did not pick up the failure of sage -t  devel/sage/sage/calculus/wester.py or of devel/sage/sage/modular/modform/half_integral.py the first time. These aside, looks like it will eventually be a valuable contribution to SAGE.",
     "created_at": "2008-07-20T02:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
@@ -115,7 +115,6 @@ archive/issue_comments_019297.json:
 
 I know this is preliminary but just wanted to report for others testers that this has a boat-load of doctest failures:
 
-
 ```
 ...
         sage -t  devel/sage/sage/calculus/wester.py
@@ -125,7 +124,6 @@ I know this is preliminary but just wanted to report for others testers that thi
         sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
         sage -t  devel/sage/sage/misc/functional.py
 ```
-
 I ran testall twice and it seems that I did not pick up the failure of sage -t  devel/sage/sage/calculus/wester.py or of devel/sage/sage/modular/modform/half_integral.py the first time. These aside, looks like it will eventually be a valuable contribution to SAGE.
 
 

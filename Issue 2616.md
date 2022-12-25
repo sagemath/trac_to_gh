@@ -69,7 +69,7 @@ Actually, there are a couple of other places where submatrix() is used.  See the
 archive/issue_comments_017919.json:
 ```json
 {
-    "body": "Replying to [comment:1 AlexGhitza]:\n> Actually, there are a couple of other places where submatrix() is used.  See the attached patch, where I have replaced all of them.\n\nThanks! Patch looks good. I say apply!",
+    "body": "Replying to [comment:1 AlexGhitza]:\n> Actually, there are a couple of other places where submatrix() is used.  See the attached patch, where I have replaced all of them.\n\n\nThanks! Patch looks good. I say apply!",
     "created_at": "2008-04-14T20:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2616",
     "type": "issue_comment",
@@ -80,6 +80,7 @@ archive/issue_comments_017919.json:
 
 Replying to [comment:1 AlexGhitza]:
 > Actually, there are a couple of other places where submatrix() is used.  See the attached patch, where I have replaced all of them.
+
 
 Thanks! Patch looks good. I say apply!
 

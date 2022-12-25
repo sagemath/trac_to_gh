@@ -49,7 +49,7 @@ Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket52
 archive/issue_comments_040337.json:
 ```json
 {
-    "body": "Before: \n\n\n```\nsage: G = SymmetricGroup(3)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 651 \u00b5s per loop\n\nsage: G = SymmetricGroup(10)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 766 \u00b5s per loop\n\nsage: G = SymmetricGroup(20)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 854 \u00b5s per loop\n```\n\n\nAfter: \n\n```\nsage: sage: G = SymmetricGroup(3)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 485 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(10)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 564 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(20)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 876 \u00b5s per loop\n```\n",
+    "body": "Before: \n\n```\nsage: G = SymmetricGroup(3)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 651 \u00b5s per loop\n\nsage: G = SymmetricGroup(10)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 766 \u00b5s per loop\n\nsage: G = SymmetricGroup(20)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 854 \u00b5s per loop\n```\n\nAfter: \n\n```\nsage: sage: G = SymmetricGroup(3)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 485 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(10)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 564 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(20)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 876 \u00b5s per loop\n```",
     "created_at": "2009-02-14T06:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5264",
     "type": "issue_comment",
@@ -59,7 +59,6 @@ archive/issue_comments_040337.json:
 ```
 
 Before: 
-
 
 ```
 sage: G = SymmetricGroup(3)
@@ -77,7 +76,6 @@ sage: L = [G.random_element() for _ in range(100)] * 17
 sage: timeit("prod(L)")
 625 loops, best of 3: 854 µs per loop
 ```
-
 
 After: 
 
@@ -97,7 +95,6 @@ sage: sage: L = [G.random_element() for _ in range(100)] * 17
 sage: sage: timeit("prod(L)")
 625 loops, best of 3: 876 µs per loop
 ```
-
 
 
 

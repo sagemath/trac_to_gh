@@ -287,7 +287,7 @@ Wow, nice necromancy!  Dumb question - any other translations of tutorials have 
 archive/issue_comments_004836.json:
 ```json
 {
-    "body": "Replying to [comment:12 kcrisman]:\n> any other translations of tutorials have this bit which would need to be translated?\nIt seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.",
+    "body": "Replying to [comment:12 kcrisman]:\n> any other translations of tutorials have this bit which would need to be translated?\n\nIt seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.",
     "created_at": "2014-04-02T09:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/804",
     "type": "issue_comment",
@@ -298,6 +298,7 @@ archive/issue_comments_004836.json:
 
 Replying to [comment:12 kcrisman]:
 > any other translations of tutorials have this bit which would need to be translated?
+
 It seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.
 
 
@@ -307,7 +308,7 @@ It seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and
 archive/issue_comments_004837.json:
 ```json
 {
-    "body": "> > any other translations of tutorials have this bit which would need to be translated?\n> It seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.\nInteresting - apparently that must have been added after the other translations were made.",
+    "body": "> > any other translations of tutorials have this bit which would need to be translated?\n\n> It seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.\nInteresting - apparently that must have been added after the other translations were made.",
     "created_at": "2014-04-02T13:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/804",
     "type": "issue_comment",
@@ -317,6 +318,7 @@ archive/issue_comments_004837.json:
 ```
 
 > > any other translations of tutorials have this bit which would need to be translated?
+
 > It seems not; `grep RingElement src/doc/*/tutorial/*` only finds the English and French ones.
 Interesting - apparently that must have been added after the other translations were made.
 
@@ -349,7 +351,7 @@ Vincent
 archive/issue_comments_004839.json:
 ```json
 {
-    "body": "Replying to [comment:15 vdelecroix]:\n> At first glance, I thought this ticket would help to build tropical matrices as discussed in #14507... but no, the \"base ring\" for tropical matrix is a [semiring](http://en.wikipedia.org/wiki/Semiring) and not a ring (no requirement of an additive inverse). Am I right?\nI think you are.  Everywhere in Sage, matrices and vectors are assumed to have coefficients in some base ring.  This would probably be much harder to change than the inheritance issue addressed in this ticket.  If enough people want tropical matrices, then it seems we need new classes `Matrix_semiring` and `Vector_semiring`, possibly inheriting from some `ModuleElement_semiring`...",
+    "body": "Replying to [comment:15 vdelecroix]:\n> At first glance, I thought this ticket would help to build tropical matrices as discussed in #14507... but no, the \"base ring\" for tropical matrix is a [semiring](http://en.wikipedia.org/wiki/Semiring) and not a ring (no requirement of an additive inverse). Am I right?\n\nI think you are.  Everywhere in Sage, matrices and vectors are assumed to have coefficients in some base ring.  This would probably be much harder to change than the inheritance issue addressed in this ticket.  If enough people want tropical matrices, then it seems we need new classes `Matrix_semiring` and `Vector_semiring`, possibly inheriting from some `ModuleElement_semiring`...",
     "created_at": "2014-05-05T09:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/804",
     "type": "issue_comment",
@@ -360,6 +362,7 @@ archive/issue_comments_004839.json:
 
 Replying to [comment:15 vdelecroix]:
 > At first glance, I thought this ticket would help to build tropical matrices as discussed in #14507... but no, the "base ring" for tropical matrix is a [semiring](http://en.wikipedia.org/wiki/Semiring) and not a ring (no requirement of an additive inverse). Am I right?
+
 I think you are.  Everywhere in Sage, matrices and vectors are assumed to have coefficients in some base ring.  This would probably be much harder to change than the inheritance issue addressed in this ticket.  If enough people want tropical matrices, then it seems we need new classes `Matrix_semiring` and `Vector_semiring`, possibly inheriting from some `ModuleElement_semiring`...
 
 
@@ -403,7 +406,7 @@ archive/issue_events_002243.json:
 archive/issue_comments_004840.json:
 ```json
 {
-    "body": "\n```\nsage -t --long src/sage/structure/element.pyx  # 2 doctests failed\n```\n",
+    "body": "```\nsage -t --long src/sage/structure/element.pyx  # 2 doctests failed\n```",
     "created_at": "2014-05-14T20:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/804",
     "type": "issue_comment",
@@ -412,11 +415,9 @@ archive/issue_comments_004840.json:
 }
 ```
 
-
 ```
 sage -t --long src/sage/structure/element.pyx  # 2 doctests failed
 ```
-
 
 
 

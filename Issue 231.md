@@ -3,7 +3,7 @@
 archive/issues_000231.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nBetween executing a cell for the first time and then reexecuting that cell, the \"current directory\" changes:\n\n```\n%sh\npwd\n```\n\nthe first time gives the \"home directory\"\n\n```\n/usr/local/sage/nobody\n```\n\nupon reexecution I get\n\n```\n/usr/local/sage/nobody/sage_notebook/worksheets/loaderror/cells/2\n```\n\ni.e., the cell directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/231\n\n",
+    "body": "Assignee: boothby\n\nBetween executing a cell for the first time and then reexecuting that cell, the \"current directory\" changes:\n\n```\n%sh\npwd\n```\nthe first time gives the \"home directory\"\n\n```\n/usr/local/sage/nobody\n```\nupon reexecution I get\n\n```\n/usr/local/sage/nobody/sage_notebook/worksheets/loaderror/cells/2\n```\ni.e., the cell directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/231\n\n",
     "created_at": "2007-01-29T19:26:02Z",
     "labels": [
         "component: notebook",
@@ -24,19 +24,16 @@ Between executing a cell for the first time and then reexecuting that cell, the 
 %sh
 pwd
 ```
-
 the first time gives the "home directory"
 
 ```
 /usr/local/sage/nobody
 ```
-
 upon reexecution I get
 
 ```
 /usr/local/sage/nobody/sage_notebook/worksheets/loaderror/cells/2
 ```
-
 i.e., the cell directory.
 
 Issue created by migration from https://trac.sagemath.org/ticket/231

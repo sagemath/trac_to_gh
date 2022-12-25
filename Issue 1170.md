@@ -78,7 +78,7 @@ Review, Lloyd?
 archive/issue_comments_007151.json:
 ```json
 {
-    "body": "One small nitpick which I corrected in the patch I applied: The `#` in the doctests need to be escaped, i.e.\n\n```\nSee trac \\#1170\n```\n\nI am not sure if this applies in case the docstring is not raw, but let's do it so that downroad we do not get bitten by it.\n\nCheers,\n\nMichael",
+    "body": "One small nitpick which I corrected in the patch I applied: The `#` in the doctests need to be escaped, i.e.\n\n```\nSee trac \\#1170\n```\nI am not sure if this applies in case the docstring is not raw, but let's do it so that downroad we do not get bitten by it.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T22:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
@@ -92,7 +92,6 @@ One small nitpick which I corrected in the patch I applied: The `#` in the docte
 ```
 See trac \#1170
 ```
-
 I am not sure if this applies in case the docstring is not raw, but let's do it so that downroad we do not get bitten by it.
 
 Cheers,

@@ -3,7 +3,7 @@
 archive/issues_005836.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThe patch makes the cell containing:\n\n```\nshow(plot(x^2, (x, -2,2)))\nprint \"hi\"\n```\n\ndisplay the plot before printing \"hi\".  This makes it much easier to construct nice-looking output.\n\nWilliam should get author credit on this one as well as me, since he showed how it could be done in a demo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5836\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThe patch makes the cell containing:\n\n```\nshow(plot(x^2, (x, -2,2)))\nprint \"hi\"\n```\ndisplay the plot before printing \"hi\".  This makes it much easier to construct nice-looking output.\n\nWilliam should get author credit on this one as well as me, since he showed how it could be done in a demo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5836\n\n",
     "created_at": "2009-04-20T18:30:27Z",
     "labels": [
         "component: graphics"
@@ -25,7 +25,6 @@ The patch makes the cell containing:
 show(plot(x^2, (x, -2,2)))
 print "hi"
 ```
-
 display the plot before printing "hi".  This makes it much easier to construct nice-looking output.
 
 William should get author credit on this one as well as me, since he showed how it could be done in a demo.
@@ -63,7 +62,7 @@ A note about the patch: sage.misc.misc was imported twice in plot.py.  I changed
 archive/issue_comments_045775.json:
 ```json
 {
-    "body": "Despite rumors to the contrary, there are several hundred doctests in the notebook directory, and your new code breaks two in cell.py, so post a patch that fixes those doctest breaks:\n\n\n```\nsage -t  devel/sage/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/server/notebook/cell.py\", line 1751:\n    sage: W.check_comp(wait=9999)\nExpected:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <BLANKLINE>\n    )\nGot:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <html><font color='black'><img src='cell://sage0.png'></font></html>\n    <BLANKLINE>\n    )\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/server/notebook/cell.py\", line 1777:\n    sage: W.check_comp(wait=9999)\nExpected:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <BLANKLINE>\n    )\nGot:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <html><font color='black'><img src='cell://sage0.png'></font></html>\n    <BLANKLINE>\n    )\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_80\n\n```\n",
+    "body": "Despite rumors to the contrary, there are several hundred doctests in the notebook directory, and your new code breaks two in cell.py, so post a patch that fixes those doctest breaks:\n\n```\nsage -t  devel/sage/sage/server/notebook/cell.py\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/server/notebook/cell.py\", line 1751:\n    sage: W.check_comp(wait=9999)\nExpected:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <BLANKLINE>\n    )\nGot:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <html><font color='black'><img src='cell://sage0.png'></font></html>\n    <BLANKLINE>\n    )\n**********************************************************************\nFile \"/Users/wstein/build/sage-3.4.1.rc3/devel/sage-main/sage/server/notebook/cell.py\", line 1777:\n    sage: W.check_comp(wait=9999)\nExpected:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <BLANKLINE>\n    )\nGot:\n    ('d', Cell 0; in=plot(sin(x),0,5), out=\n    <html><font color='black'><img src='cell://sage0.png'></font></html>\n    <BLANKLINE>\n    )\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_80\n\n```",
     "created_at": "2009-04-20T18:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5836",
     "type": "issue_comment",
@@ -73,7 +72,6 @@ archive/issue_comments_045775.json:
 ```
 
 Despite rumors to the contrary, there are several hundred doctests in the notebook directory, and your new code breaks two in cell.py, so post a patch that fixes those doctest breaks:
-
 
 ```
 sage -t  devel/sage/sage/server/notebook/cell.py
@@ -106,7 +104,6 @@ Got:
    1 of  10 in __main__.example_80
 
 ```
-
 
 
 

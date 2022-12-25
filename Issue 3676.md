@@ -52,7 +52,7 @@ Attachment [trac3676-refactor_graph_isom.patch](tarball://root/attachments/some-
 archive/issue_comments_025967.json:
 ```json
 {
-    "body": "FYI, I got the following test failure:\n\n\n```\nwdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py\", line 170:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.0.4.rc0/tmp/.doctest_finite_field_ntl_gf2e.py\n         [2.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 2.9 seconds\n```\n",
+    "body": "FYI, I got the following test failure:\n\n```\nwdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx    **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.0.4.rc0/tmp/finite_field_ntl_gf2e.py\", line 170:\n    sage: k.modulus()\nExpected:\n    x^17 + x^16 + x^15 + x^10 + x^8 + x^6 + x^4 + x^3 + x^2 + x + 1\nGot:\n    x^17\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.0.4.rc0/tmp/.doctest_finite_field_ntl_gf2e.py\n         [2.9 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 2.9 seconds\n```",
     "created_at": "2008-07-19T05:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
@@ -62,7 +62,6 @@ archive/issue_comments_025967.json:
 ```
 
 FYI, I got the following test failure:
-
 
 ```
 wdj@hera:~/sagefiles/sage-3.0.4.rc0$ ./sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
@@ -88,7 +87,6 @@ The following tests failed:
         sage -t  devel/sage/sage/rings/finite_field_ntl_gf2e.pyx
 Total time for all tests: 2.9 seconds
 ```
-
 
 
 

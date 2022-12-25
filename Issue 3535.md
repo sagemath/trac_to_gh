@@ -102,7 +102,7 @@ archive/issue_events_008068.json:
 archive/issue_comments_024906.json:
 ```json
 {
-    "body": "> I think this is still needed, since pressing S-Enter may not be \n> obvious to users with no experience with notebook-style interfaces. \n\nYes, but I don't think a new worksheet with tutorial stuff in it is the solution.   This has been discussed a lot before, and we decided to put an \"evaluate\" button in for such users, which helps a lot.  Once people get familiar with sage, they click \"help\" in the upper right, and then they quickly learn about shift-enter.",
+    "body": "> I think this is still needed, since pressing S-Enter may not be \n> obvious to users with no experience with notebook-style interfaces. \n\n\nYes, but I don't think a new worksheet with tutorial stuff in it is the solution.   This has been discussed a lot before, and we decided to put an \"evaluate\" button in for such users, which helps a lot.  Once people get familiar with sage, they click \"help\" in the upper right, and then they quickly learn about shift-enter.",
     "created_at": "2009-11-19T21:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3535",
     "type": "issue_comment",
@@ -113,6 +113,7 @@ archive/issue_comments_024906.json:
 
 > I think this is still needed, since pressing S-Enter may not be 
 > obvious to users with no experience with notebook-style interfaces. 
+
 
 Yes, but I don't think a new worksheet with tutorial stuff in it is the solution.   This has been discussed a lot before, and we decided to put an "evaluate" button in for such users, which helps a lot.  Once people get familiar with sage, they click "help" in the upper right, and then they quickly learn about shift-enter.
 

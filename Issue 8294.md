@@ -3,7 +3,7 @@
 archive/issues_008294.json:
 ```json
 {
-    "body": "Assignee: h\n\nKeywords: Matrix 2x2, mutability, copy\n\n\n```\nsage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()\nsage: mat = M([3,4,5,6])\nsage: mat.is_mutable()\nTrue\nsage: mat = copy(mat)\nsage: mat.is_mutable()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/hivert/<ipython console> in <module>()\n\n/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.is_mutable (sage/matrix/matrix0.c:3928)()\n\nAttributeError: 'NoneType' object has no attribute 'is_mutable'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8294\n\n",
+    "body": "Assignee: h\n\nKeywords: Matrix 2x2, mutability, copy\n\n```\nsage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()\nsage: mat = M([3,4,5,6])\nsage: mat.is_mutable()\nTrue\nsage: mat = copy(mat)\nsage: mat.is_mutable()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/hivert/<ipython console> in <module>()\n\n/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.is_mutable (sage/matrix/matrix0.c:3928)()\n\nAttributeError: 'NoneType' object has no attribute 'is_mutable'\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8294\n\n",
     "created_at": "2010-02-17T15:31:26Z",
     "labels": [
         "component: linear algebra",
@@ -19,7 +19,6 @@ archive/issues_008294.json:
 Assignee: h
 
 Keywords: Matrix 2x2, mutability, copy
-
 
 ```
 sage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()
@@ -37,7 +36,6 @@ AttributeError                            Traceback (most recent call last)
 
 AttributeError: 'NoneType' object has no attribute 'is_mutable'
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8294
 
@@ -145,7 +143,7 @@ This applies cleanly and all tests pass. Positive review as is.
 archive/issue_comments_073360.json:
 ```json
 {
-    "body": "Replying to [comment:3 mraum]:\n> This applies cleanly and all tests pass. Positive review as is.\n> #8276 will follow soon.\n\nThanks a lot for this quick help !",
+    "body": "Replying to [comment:3 mraum]:\n> This applies cleanly and all tests pass. Positive review as is.\n> #8276 will follow soon.\n\n\nThanks a lot for this quick help !",
     "created_at": "2010-02-20T13:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
@@ -157,6 +155,7 @@ archive/issue_comments_073360.json:
 Replying to [comment:3 mraum]:
 > This applies cleanly and all tests pass. Positive review as is.
 > #8276 will follow soon.
+
 
 Thanks a lot for this quick help !
 

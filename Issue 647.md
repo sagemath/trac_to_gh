@@ -3,7 +3,7 @@
 archive/issues_000647.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nFrom Alex Ghitza:\n\n\n```\nI fiddled a bit more with the quaternion algebras, this time with\nelements.  This is still warm-up for doing something more serious with\norders and ideals, starting with implementing the code by\nRodriguez-Villegas et al.\n```\n\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/647\n\n",
+    "body": "Assignee: somebody\n\nFrom Alex Ghitza:\n\n```\nI fiddled a bit more with the quaternion algebras, this time with\nelements.  This is still warm-up for doing something more serious with\norders and ideals, starting with implementing the code by\nRodriguez-Villegas et al.\n```\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/647\n\n",
     "created_at": "2007-09-13T14:07:10Z",
     "labels": [
         "component: basic arithmetic"
@@ -19,14 +19,12 @@ Assignee: somebody
 
 From Alex Ghitza:
 
-
 ```
 I fiddled a bit more with the quaternion algebras, this time with
 elements.  This is still warm-up for doing something more serious with
 orders and ideals, starting with implementing the code by
 Rodriguez-Villegas et al.
 ```
-
 
 See attached patch.
 

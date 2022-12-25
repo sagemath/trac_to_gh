@@ -3,7 +3,7 @@
 archive/issues_009952.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nCC:  @fredrik-johansson @kcrisman @zafeirakopoulos @orlitzky\n\nProblem, last digit is either 6 or 7. In short:\n\n\n```\nfermat(n) = 2**2**n + 1\nfermat(9) gives ....4097 but:\nint(fermat(9)) gives ...4096L.\nSame with: long(fermat(9)).\nint(2**2**9 +1) gives ...4097L\n```\n\n\nBurcin says: int(x) for a symbolic expression x just calls int(x.n(prec=100)). We lose that 1 in the approximation.\n\nfull example in 4.5.2:\n\n\n```\nsage: fermat(n) = 2**2**n + 1\nsage: fermat(9)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097\nsage: int(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: long(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: int(2**2**9 +1)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097L\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9953\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @fredrik-johansson @kcrisman @zafeirakopoulos @orlitzky\n\nProblem, last digit is either 6 or 7. In short:\n\n```\nfermat(n) = 2**2**n + 1\nfermat(9) gives ....4097 but:\nint(fermat(9)) gives ...4096L.\nSame with: long(fermat(9)).\nint(2**2**9 +1) gives ...4097L\n```\n\nBurcin says: int(x) for a symbolic expression x just calls int(x.n(prec=100)). We lose that 1 in the approximation.\n\nfull example in 4.5.2:\n\n```\nsage: fermat(n) = 2**2**n + 1\nsage: fermat(9)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097\nsage: int(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: long(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: int(2**2**9 +1)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097L\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9953\n\n",
     "created_at": "2010-09-20T10:16:21Z",
     "labels": [
         "component: symbolics",
@@ -23,7 +23,6 @@ CC:  @fredrik-johansson @kcrisman @zafeirakopoulos @orlitzky
 
 Problem, last digit is either 6 or 7. In short:
 
-
 ```
 fermat(n) = 2**2**n + 1
 fermat(9) gives ....4097 but:
@@ -32,11 +31,9 @@ Same with: long(fermat(9)).
 int(2**2**9 +1) gives ...4097L
 ```
 
-
 Burcin says: int(x) for a symbolic expression x just calls int(x.n(prec=100)). We lose that 1 in the approximation.
 
 full example in 4.5.2:
-
 
 ```
 sage: fermat(n) = 2**2**n + 1
@@ -57,7 +54,6 @@ sage: int(2**2**9 +1)
 235614437217640300735469768018742981669034276900318581864\
 86050853753882811946569946433649006084097L
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/9953
@@ -125,7 +121,7 @@ I don't want to work on this much, but I believe that this patch should fix the 
 archive/issue_comments_099108.json:
 ```json
 {
-    "body": "The current patch won't work for 0 or negative numbers (the log2 breaks).  This can be easily fixed, but dealing with cases like \n\n\n```\nsage: f = 1-1/10**100\nsage: int(f)\n0\nsage: int(SR(f))\n1\n```\n\n\nwhere the precision needed to get the right result isn't a function of the size is a little trickier.  Maybe fast-path the common cases and then fall back on the existing floor/ceil logic?",
+    "body": "The current patch won't work for 0 or negative numbers (the log2 breaks).  This can be easily fixed, but dealing with cases like \n\n```\nsage: f = 1-1/10**100\nsage: int(f)\n0\nsage: int(SR(f))\n1\n```\n\nwhere the precision needed to get the right result isn't a function of the size is a little trickier.  Maybe fast-path the common cases and then fall back on the existing floor/ceil logic?",
     "created_at": "2011-02-18T19:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
@@ -136,7 +132,6 @@ archive/issue_comments_099108.json:
 
 The current patch won't work for 0 or negative numbers (the log2 breaks).  This can be easily fixed, but dealing with cases like 
 
-
 ```
 sage: f = 1-1/10**100
 sage: int(f)
@@ -144,7 +139,6 @@ sage: int(f)
 sage: int(SR(f))
 1
 ```
-
 
 where the precision needed to get the right result isn't a function of the size is a little trickier.  Maybe fast-path the common cases and then fall back on the existing floor/ceil logic?
 

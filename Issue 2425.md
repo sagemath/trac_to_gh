@@ -3,7 +3,7 @@
 archive/issues_002425.json:
 ```json
 {
-    "body": "Assignee: jbandlow@gmail.com\n\nKeywords: jacob, gradient\n\nOn Fri, Feb 29, 2008 at 1:58 PM, Jason Bandlow <jbandlow`@`gmail.com> wrote:\n\nHi,\n\nCurrently, if f is a multi-polynomial, the call f.jacob() returns the\nlist of partial derivatives of f with respect to the ring generators:\n\n```\n  sage: R.<x,y,z> = PolynomialRing(QQ)\n  sage: f = x^4 + y^3 + z^2 + x*y*z\n  sage: f.jacob()\n  [4*x^3 + y*z, 3*y^2 + x*z, x*y + 2*z]\n```\n\n\n\n\nI'd like to change the name to gradient. Another possibility is changing\nthe name to 'jacobian', but I think it's likely that more people (eg\ncalculus students) will recognize the term 'gradient' and not 'jacobian'\nthan vice-versa.  And who talks about the Jacobian of a single function\nanyway? :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2425\n\n",
+    "body": "Assignee: jbandlow@gmail.com\n\nKeywords: jacob, gradient\n\nOn Fri, Feb 29, 2008 at 1:58 PM, Jason Bandlow <jbandlow`@`gmail.com> wrote:\n\nHi,\n\nCurrently, if f is a multi-polynomial, the call f.jacob() returns the\nlist of partial derivatives of f with respect to the ring generators:\n\n```\n  sage: R.<x,y,z> = PolynomialRing(QQ)\n  sage: f = x^4 + y^3 + z^2 + x*y*z\n  sage: f.jacob()\n  [4*x^3 + y*z, 3*y^2 + x*z, x*y + 2*z]\n```\n\n\n\nI'd like to change the name to gradient. Another possibility is changing\nthe name to 'jacobian', but I think it's likely that more people (eg\ncalculus students) will recognize the term 'gradient' and not 'jacobian'\nthan vice-versa.  And who talks about the Jacobian of a single function\nanyway? :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2425\n\n",
     "created_at": "2008-03-07T23:08:54Z",
     "labels": [
         "component: cygwin",
@@ -33,7 +33,6 @@ list of partial derivatives of f with respect to the ring generators:
   sage: f.jacob()
   [4*x^3 + y*z, 3*y^2 + x*z, x*y + 2*z]
 ```
-
 
 
 
@@ -109,7 +108,7 @@ Review: If the submitter reports that `make test` passes with the patch applied,
 archive/issue_comments_016384.json:
 ```json
 {
-    "body": "I applied the patch successfully to 2.10.3.rc0 and the test passed ok.\n\nI did a search_source to see if there were any other mentions of \"jacob(\" and found just one, in interfaces/singular.py.  Here I found the example\n\n```\n    sage: R = singular.ring(0, '(x,y,z)', 'dp')\n    sage: f = singular('x3+y3+(x-y)*x2y2+z2')\n    sage: f\n    x^3*y^2-x^2*y^3+x^3+y^3+z^2\n    sage: R1 = singular.ring(0, '(x,y,z)', 'ds')\n    sage: f = R.fetch(f)\n    sage: f\n    z^2+x^3+y^3+x^3*y^2-x^2*y^3\n\nWe can calculate the Milnor number of $f$:\n    sage: _=singular.LIB('sing.lib')     # assign to _ to suppress printing\n    sage: f.milnor()\n    4\n\nThe Jacobian applied twice yields the Hessian matrix of $f$,\nwith which we can compute.\n    sage: H = f.jacob().jacob()\n    sage: H\n    6*x+6*x*y^2-2*y^3,6*x^2*y-6*x*y^2,  0,\n    6*x^2*y-6*x*y^2,  6*y+2*x^3-6*x^2*y,0,\n    0,                0,                2\n```\n\n\nwhich suggests that the name jacob() is standard in singular.  Should there be any sort of cross-reference between the new gradient() and the new jacob() ?",
+    "body": "I applied the patch successfully to 2.10.3.rc0 and the test passed ok.\n\nI did a search_source to see if there were any other mentions of \"jacob(\" and found just one, in interfaces/singular.py.  Here I found the example\n\n```\n    sage: R = singular.ring(0, '(x,y,z)', 'dp')\n    sage: f = singular('x3+y3+(x-y)*x2y2+z2')\n    sage: f\n    x^3*y^2-x^2*y^3+x^3+y^3+z^2\n    sage: R1 = singular.ring(0, '(x,y,z)', 'ds')\n    sage: f = R.fetch(f)\n    sage: f\n    z^2+x^3+y^3+x^3*y^2-x^2*y^3\n\nWe can calculate the Milnor number of $f$:\n    sage: _=singular.LIB('sing.lib')     # assign to _ to suppress printing\n    sage: f.milnor()\n    4\n\nThe Jacobian applied twice yields the Hessian matrix of $f$,\nwith which we can compute.\n    sage: H = f.jacob().jacob()\n    sage: H\n    6*x+6*x*y^2-2*y^3,6*x^2*y-6*x*y^2,  0,\n    6*x^2*y-6*x*y^2,  6*y+2*x^3-6*x^2*y,0,\n    0,                0,                2\n```\n\nwhich suggests that the name jacob() is standard in singular.  Should there be any sort of cross-reference between the new gradient() and the new jacob() ?",
     "created_at": "2008-03-08T16:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
@@ -145,7 +144,6 @@ with which we can compute.
     6*x^2*y-6*x*y^2,  6*y+2*x^3-6*x^2*y,0,
     0,                0,                2
 ```
-
 
 which suggests that the name jacob() is standard in singular.  Should there be any sort of cross-reference between the new gradient() and the new jacob() ?
 

@@ -3,7 +3,7 @@
 archive/issues_008685.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @robertwb @kedlaya @roed314 jpflori\n\nThe following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):\n\n```\nsage: R.<x> = QQ['x']\nsage: H= HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(5,10)\nsage: HK = H.change_ring(K)\nsage: P = HK(1,0)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: Mfrob,forms=mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f0 = forms[0]\nsage: f0(P[0],P[1])\n0\nsage: f0(x,K(0))\n0\n\n```\n\nIn fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?\n\n```\nsage: f0(x,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8685\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @kedlaya @roed314 jpflori\n\nThe following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):\n\n```\nsage: R.<x> = QQ['x']\nsage: H= HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(5,10)\nsage: HK = H.change_ring(K)\nsage: P = HK(1,0)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: Mfrob,forms=mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f0 = forms[0]\nsage: f0(P[0],P[1])\n0\nsage: f0(x,K(0))\n0\n\n```\nIn fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?\n\n```\nsage: f0(x,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8685\n\n",
     "created_at": "2010-04-14T06:20:29Z",
     "labels": [
         "component: number theory",
@@ -37,7 +37,6 @@ sage: f0(x,K(0))
 0
 
 ```
-
 In fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?
 
 ```
@@ -47,7 +46,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Rational division by zero
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/8685
@@ -61,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8685
 archive/issue_comments_079012.json:
 ```json
 {
-    "body": "This appears to be a problem with (surprise) power series over p-adic fields:\n\n```\nsage: R.<y> = LaurentSeriesRing(Rationals())\nsage: K = Qp(5, 10)\nsage: u = y^(-1)\nsage: u(K(0)) ## Should blow up but doesn't\n0\nsage: u(0) ## Should blow up and does\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n",
+    "body": "This appears to be a problem with (surprise) power series over p-adic fields:\n\n```\nsage: R.<y> = LaurentSeriesRing(Rationals())\nsage: K = Qp(5, 10)\nsage: u = y^(-1)\nsage: u(K(0)) ## Should blow up but doesn't\n0\nsage: u(0) ## Should blow up and does\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```",
     "created_at": "2010-04-15T20:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: Rational division by zero
 ```
-
 
 
 

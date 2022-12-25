@@ -308,7 +308,7 @@ Resolution: fixed
 archive/issue_comments_092205.json:
 ```json
 {
-    "body": "Replying to [comment:6 schilly]:\n> dear release manager, just merge mpmath_call_FIXED.patch and ignore the others. \n\nDone. Thanks for fixing the commit messages!",
+    "body": "Replying to [comment:6 schilly]:\n> dear release manager, just merge mpmath_call_FIXED.patch and ignore the others. \n\n\nDone. Thanks for fixing the commit messages!",
     "created_at": "2010-07-22T23:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
@@ -319,5 +319,6 @@ archive/issue_comments_092205.json:
 
 Replying to [comment:6 schilly]:
 > dear release manager, just merge mpmath_call_FIXED.patch and ignore the others. 
+
 
 Done. Thanks for fixing the commit messages!

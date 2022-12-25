@@ -125,7 +125,7 @@ There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2
 archive/issue_comments_095766.json:
 ```json
 {
-    "body": "Replying to [comment:3 jdemeyer]:\n> There is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"\n\nAlso in the top comment of `spkg-install`.",
+    "body": "Replying to [comment:3 jdemeyer]:\n> There is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"\n\n\nAlso in the top comment of `spkg-install`.",
     "created_at": "2010-08-29T15:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
@@ -137,6 +137,7 @@ archive/issue_comments_095766.json:
 Replying to [comment:3 jdemeyer]:
 > There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2" by "lcalc-1.23.p3"
 
+
 Also in the top comment of `spkg-install`.
 
 
@@ -146,7 +147,7 @@ Also in the top comment of `spkg-install`.
 archive/issue_comments_095767.json:
 ```json
 {
-    "body": "Some comments (on the spkg in general, not the Cygwin changes, with the exception of quoting `$SAGE_LOCAL`):\n\n* `$CFLAG64` and `$CXXFLAG64` should be quoted.\n\n* `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)\n\n* In general, e.g. `-m64` should be added to `CPPFLAGS` as well.\n\n* In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build **with** debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.\n\n* `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) \n\n* `$SAGE_LOCAL` should be quoted, too (for future support of spaces).\n\n* The following case distinction is superfluous (and the branches are redundant as well):\n\n```sh\nif `test -d $SAGE_LOCAL/include/lcalc`; then\n    rm -fr $SAGE_LOCAL/include/lcalc\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nelse\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nfi\n```\n\n   It should simply be:\n\n```sh\n    rm -fr \"$SAGE_LOCAL\"/include/lcalc\n    mkdir -p \"$SAGE_LOCAL\"/include/lcalc\n    cp ../include/* \"$SAGE_LOCAL\"/include/lcalc\n```\n\n\n* I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.\n\n* There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to *\"Special Update/Build Instructions\"*).\n\n* These files have been removed without telling Mercurial:\n\n```sh\n$ hg status\n! patches/lcalc-1.11-constification+solaris.patch\n! patches/lcalc-1.11-gcc-4.3-build.patch\n! patches/lcalc-1.11-memleak-fixes.patch\n```\n\n\n* The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.\n  It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.\n\n\nIt would be nice to address at least some (especially the last) of these points *here*, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.",
+    "body": "Some comments (on the spkg in general, not the Cygwin changes, with the exception of quoting `$SAGE_LOCAL`):\n\n* `$CFLAG64` and `$CXXFLAG64` should be quoted.\n\n* `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)\n\n* In general, e.g. `-m64` should be added to `CPPFLAGS` as well.\n\n* In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build **with** debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.\n\n* `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) \n\n* `$SAGE_LOCAL` should be quoted, too (for future support of spaces).\n\n* The following case distinction is superfluous (and the branches are redundant as well):\n\n```sh\nif `test -d $SAGE_LOCAL/include/lcalc`; then\n    rm -fr $SAGE_LOCAL/include/lcalc\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nelse\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nfi\n```\n   It should simply be:\n\n```sh\n    rm -fr \"$SAGE_LOCAL\"/include/lcalc\n    mkdir -p \"$SAGE_LOCAL\"/include/lcalc\n    cp ../include/* \"$SAGE_LOCAL\"/include/lcalc\n```\n\n* I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.\n\n* There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to *\"Special Update/Build Instructions\"*).\n\n* These files have been removed without telling Mercurial:\n\n```sh\n$ hg status\n! patches/lcalc-1.11-constification+solaris.patch\n! patches/lcalc-1.11-gcc-4.3-build.patch\n! patches/lcalc-1.11-memleak-fixes.patch\n```\n\n* The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.\n  It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.\n\n\nIt would be nice to address at least some (especially the last) of these points *here*, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.",
     "created_at": "2010-08-29T17:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
@@ -181,7 +182,6 @@ else
     cp ../include/* $SAGE_LOCAL/include/lcalc
 fi
 ```
-
    It should simply be:
 
 ```sh
@@ -189,7 +189,6 @@ fi
     mkdir -p "$SAGE_LOCAL"/include/lcalc
     cp ../include/* "$SAGE_LOCAL"/include/lcalc
 ```
-
 
 * I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.
 
@@ -203,7 +202,6 @@ $ hg status
 ! patches/lcalc-1.11-gcc-4.3-build.patch
 ! patches/lcalc-1.11-memleak-fixes.patch
 ```
-
 
 * The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.
   It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.

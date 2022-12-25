@@ -3,7 +3,7 @@
 archive/issues_004890.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nI hate stuff like this:\n\n\n```\n*     B. D. McKay, nauty User's Guide (Version 2.4),\n*         http://cs.anu.edu.au/~bdm/nauty/.\nDo you accept nauty's license agreement, listed above? (y/n)\n```\n\n\nand as an argument against it note that a _lot_ of stuff in optional isn't gpl compatible, is binary only, etc., but we never have any explicit agreements like the above for anything else. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4890\n\n",
+    "body": "Assignee: mabshoff\n\nI hate stuff like this:\n\n```\n*     B. D. McKay, nauty User's Guide (Version 2.4),\n*         http://cs.anu.edu.au/~bdm/nauty/.\nDo you accept nauty's license agreement, listed above? (y/n)\n```\n\nand as an argument against it note that a _lot_ of stuff in optional isn't gpl compatible, is binary only, etc., but we never have any explicit agreements like the above for anything else. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4890\n\n",
     "created_at": "2008-12-30T07:28:07Z",
     "labels": [
         "component: packages: optional",
@@ -20,13 +20,11 @@ Assignee: mabshoff
 
 I hate stuff like this:
 
-
 ```
 *     B. D. McKay, nauty User's Guide (Version 2.4),
 *         http://cs.anu.edu.au/~bdm/nauty/.
 Do you accept nauty's license agreement, listed above? (y/n)
 ```
-
 
 and as an argument against it note that a _lot_ of stuff in optional isn't gpl compatible, is binary only, etc., but we never have any explicit agreements like the above for anything else. 
 
@@ -98,7 +96,7 @@ Is this in gap_packages* only? If so, would be easiest to simply remove grape?
 archive/issue_comments_037004.json:
 ```json
 {
-    "body": "Replying to [comment:2 wdj]:\n> Is this in gap_packages* only? If so, would be easiest to simply remove grape?\n\nWhat is \"this\"?\n\nWe are talking about spkg-install of the nauty.spkg.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:2 wdj]:\n> Is this in gap_packages* only? If so, would be easiest to simply remove grape?\n\n\nWhat is \"this\"?\n\nWe are talking about spkg-install of the nauty.spkg.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-30T12:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
@@ -109,6 +107,7 @@ archive/issue_comments_037004.json:
 
 Replying to [comment:2 wdj]:
 > Is this in gap_packages* only? If so, would be easiest to simply remove grape?
+
 
 What is "this"?
 
@@ -149,7 +148,7 @@ http://www.sagemath.org/packages/optional/
 archive/issue_comments_037006.json:
 ```json
 {
-    "body": "I've put a new spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/nauty-24b7.p1.spkg\n\nIt does much more than just fix the problem cited in the title of this ticket.  It also:\n\n* Reorganize the spkg to the format we've standardized on.\n* Create Mercurial repository.\n* Make the install process way more robust with much better error checking.\n* Support MAKE environment variable.\n\nTo test it you'll also need to use\n\n```\nexport SAGE_CHECK=1\n```\n\nto have it run its test suite.",
+    "body": "I've put a new spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/nauty-24b7.p1.spkg\n\nIt does much more than just fix the problem cited in the title of this ticket.  It also:\n\n* Reorganize the spkg to the format we've standardized on.\n* Create Mercurial repository.\n* Make the install process way more robust with much better error checking.\n* Support MAKE environment variable.\n\nTo test it you'll also need to use\n\n```\nexport SAGE_CHECK=1\n```\nto have it run its test suite.",
     "created_at": "2008-12-30T18:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
@@ -174,7 +173,6 @@ To test it you'll also need to use
 ```
 export SAGE_CHECK=1
 ```
-
 to have it run its test suite.
 
 
@@ -236,7 +234,7 @@ Michael
 archive/issue_comments_037009.json:
 ```json
 {
-    "body": "> I would still not call this interactive error message \"stupid\" since it was done \n> deliberately. \n\nI think interactive license agreements are annoying.    They are all done deliberately. \n\n> Nauty is not only non-free, but its license prohibits its use for \n> works involving primarily military applications, so this is not about \n> non-GPL vs. GPL. \n\nNauty is free as in beer, but the free license it is under is not \"libre\" i.e., not OSI approved and not GPL-compatible.  Nauty's license is: \"Permission is hereby given for use and/or distribution with the exception of sale for profit or application with nontrivial military significance.\" There are essentially no other restrictions.   \n\nSince we have a fundamental disagreement here, this will need to be discussed on sage-devel and possibly voted on.",
+    "body": "> I would still not call this interactive error message \"stupid\" since it was done \n> deliberately. \n\n\nI think interactive license agreements are annoying.    They are all done deliberately. \n\n> Nauty is not only non-free, but its license prohibits its use for \n> works involving primarily military applications, so this is not about \n> non-GPL vs. GPL. \n\n\nNauty is free as in beer, but the free license it is under is not \"libre\" i.e., not OSI approved and not GPL-compatible.  Nauty's license is: \"Permission is hereby given for use and/or distribution with the exception of sale for profit or application with nontrivial military significance.\" There are essentially no other restrictions.   \n\nSince we have a fundamental disagreement here, this will need to be discussed on sage-devel and possibly voted on.",
     "created_at": "2009-01-01T03:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4890",
     "type": "issue_comment",
@@ -248,11 +246,13 @@ archive/issue_comments_037009.json:
 > I would still not call this interactive error message "stupid" since it was done 
 > deliberately. 
 
+
 I think interactive license agreements are annoying.    They are all done deliberately. 
 
 > Nauty is not only non-free, but its license prohibits its use for 
 > works involving primarily military applications, so this is not about 
 > non-GPL vs. GPL. 
+
 
 Nauty is free as in beer, but the free license it is under is not "libre" i.e., not OSI approved and not GPL-compatible.  Nauty's license is: "Permission is hereby given for use and/or distribution with the exception of sale for profit or application with nontrivial military significance." There are essentially no other restrictions.   
 

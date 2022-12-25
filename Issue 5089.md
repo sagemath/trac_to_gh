@@ -3,7 +3,7 @@
 archive/issues_005089.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nKeywords: sparse integer matrix kernel\n\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6])\nsage: M.kernel()\n```\n\nworks fine, while\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6], sparse=True)\nsage: M.kernel()\n```\n\ngives an error, `TypeError: Argument K (= Integer Ring) must be a field.`\n\nThe attached patch fixes this -- it adds a kernel method for sparse integer matrices, which just calls `self.dense_matrix().kernel(...)`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5089\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sparse integer matrix kernel\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6])\nsage: M.kernel()\n```\nworks fine, while\n\n```\nsage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6], sparse=True)\nsage: M.kernel()\n```\ngives an error, `TypeError: Argument K (= Integer Ring) must be a field.`\n\nThe attached patch fixes this -- it adds a kernel method for sparse integer matrices, which just calls `self.dense_matrix().kernel(...)`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5089\n\n",
     "created_at": "2009-01-24T16:29:12Z",
     "labels": [
         "component: linear algebra",
@@ -21,19 +21,16 @@ Assignee: @williamstein
 
 Keywords: sparse integer matrix kernel
 
-
 ```
 sage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6])
 sage: M.kernel()
 ```
-
 works fine, while
 
 ```
 sage: M = matrix(ZZ, 2, 3, [1,2,3,4,5,6], sparse=True)
 sage: M.kernel()
 ```
-
 gives an error, `TypeError: Argument K (= Integer Ring) must be a field.`
 
 The attached patch fixes this -- it adds a kernel method for sparse integer matrices, which just calls `self.dense_matrix().kernel(...)`.

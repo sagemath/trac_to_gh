@@ -3,7 +3,7 @@
 archive/issues_004659.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\n\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\n\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
     "created_at": "2008-11-30T00:44:16Z",
     "labels": [
         "component: basic arithmetic",
@@ -28,13 +28,11 @@ In the file sage/rings/integer.pyx, line 288 says
 ```
     cdef class Integer (sage.structure.element.EuclideanDomainElement): 
 ```
-
 followed by documentation and the various methods for this class.  But earlier in the file, line 137 says 
 
 ```
     cdef class Integer(sage.structure.element.EuclideanDomainElement) 
 ```
-
 The attached patch removes line 137.
 
 Issue created by migration from https://trac.sagemath.org/ticket/4659

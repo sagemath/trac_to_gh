@@ -3,7 +3,7 @@
 archive/issues_005140.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nKeywords: is_irreducible\n\n# Description of the bug\nThe following happens with\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\n| SAGE Version 3.1.2, Release Date: 2008-09-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n**The function is_irreducible returns True on units:**\n\n```\nsage: R.<x>=PolynomialRing( IntegerModRing(13),'x')\nsage: (x^2-2).is_irreducible()\nTrue\nsage: (x^2).is_irreducible()\nFalse\nsage: R(1).is_irreducible()\nTrue\n```\n\nThe last line should say False or raise an exception as R(0).is_irreducible() does. Because irreducibility of B requires B to be not zero and not a unit. \n\n# Use case where this bug occured to me\n\nIf I want to loop over polynomials in R and count irreducible ones, I need a loop like this:\n\n```\nfor p in R.polynomials(max_degree=3):\n     if not p.is_zero() and not p.is_unit() and p.is_irreducible():\n         # count p\n```\n\nIt is easy to forget the check if p is a unit. Then the count would be wrong. \n\n# Bug-Fix\nThe bug is in the implementation:\n\n```\ne=R(1)\ne.is_irreducible??\n```\n\nshows as code after the docstring: \n\n```\nif self.is_zero():\n            raise ValueError, \"self must be nonzero\"\nif self.degree() == 0:\n            return True\n```\n\n\n**I propose to insert a check**\n\n```\nif self.is_unit():\n            raise ValueError, \"self must not be a unit\"\n```\n\nbetween the above ifs. I created a file via commit and  bundle with this modification. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5140\n\n",
+    "body": "Assignee: tbd\n\nKeywords: is_irreducible\n\n# Description of the bug\nThe following happens with\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n| SAGE Version 3.1.2, Release Date: 2008-09-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n**The function is_irreducible returns True on units:**\n\n```\nsage: R.<x>=PolynomialRing( IntegerModRing(13),'x')\nsage: (x^2-2).is_irreducible()\nTrue\nsage: (x^2).is_irreducible()\nFalse\nsage: R(1).is_irreducible()\nTrue\n```\nThe last line should say False or raise an exception as R(0).is_irreducible() does. Because irreducibility of B requires B to be not zero and not a unit. \n\n# Use case where this bug occured to me\n\nIf I want to loop over polynomials in R and count irreducible ones, I need a loop like this:\n\n```\nfor p in R.polynomials(max_degree=3):\n     if not p.is_zero() and not p.is_unit() and p.is_irreducible():\n         # count p\n```\nIt is easy to forget the check if p is a unit. Then the count would be wrong. \n\n# Bug-Fix\nThe bug is in the implementation:\n\n```\ne=R(1)\ne.is_irreducible??\n```\nshows as code after the docstring: \n\n```\nif self.is_zero():\n            raise ValueError, \"self must be nonzero\"\nif self.degree() == 0:\n            return True\n```\n\n**I propose to insert a check**\n\n```\nif self.is_unit():\n            raise ValueError, \"self must not be a unit\"\n```\nbetween the above ifs. I created a file via commit and  bundle with this modification. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5140\n\n",
     "created_at": "2009-01-30T21:15:34Z",
     "labels": [
         "component: algebra",
@@ -28,7 +28,6 @@ The following happens with
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 ```
-
 | SAGE Version 3.1.2, Release Date: 2008-09-19                       |
 | Type notebook() for the GUI, and license() for information.        |
 **The function is_irreducible returns True on units:**
@@ -42,7 +41,6 @@ False
 sage: R(1).is_irreducible()
 True
 ```
-
 The last line should say False or raise an exception as R(0).is_irreducible() does. Because irreducibility of B requires B to be not zero and not a unit. 
 
 # Use case where this bug occured to me
@@ -54,7 +52,6 @@ for p in R.polynomials(max_degree=3):
      if not p.is_zero() and not p.is_unit() and p.is_irreducible():
          # count p
 ```
-
 It is easy to forget the check if p is a unit. Then the count would be wrong. 
 
 # Bug-Fix
@@ -64,7 +61,6 @@ The bug is in the implementation:
 e=R(1)
 e.is_irreducible??
 ```
-
 shows as code after the docstring: 
 
 ```
@@ -74,14 +70,12 @@ if self.degree() == 0:
             return True
 ```
 
-
 **I propose to insert a check**
 
 ```
 if self.is_unit():
             raise ValueError, "self must not be a unit"
 ```
-
 between the above ifs. I created a file via commit and  bundle with this modification. 
 
 
@@ -201,7 +195,7 @@ Lars
 archive/issue_comments_039230.json:
 ```json
 {
-    "body": "Review:  I agree entirely that units need to be handled properly here, but I do not think that this patch solves the issue.  \n\nFirstly, I don't think that raising an error is necessary or helpful, and would prefer to return False for units.\n\nSecondly, you have left in the code which (now for non-units) returns True for degree 0 polynomials.  But that is wrong for polynomials over rings which are not fields such as ZZ[x], where 6 has degree 0, is not a unit but is not irreducible.  Instead, for degree 0 polynomials (which have already been handled by the is_unit() test) one should test irreducibility in the base ring.\n\nExample:\n\n```\nsage: R.<x>=ZZ[]\nsage: R(6).is_irreducible()\nTrue\n```\n\nis wrong, and it would be nice if the patch handled this also.\n\nLastly: Lars, when you make a patch to correct some incorrect behaviour in Sage you should add a doctest to the function which shows that the problem has been solved.",
+    "body": "Review:  I agree entirely that units need to be handled properly here, but I do not think that this patch solves the issue.  \n\nFirstly, I don't think that raising an error is necessary or helpful, and would prefer to return False for units.\n\nSecondly, you have left in the code which (now for non-units) returns True for degree 0 polynomials.  But that is wrong for polynomials over rings which are not fields such as ZZ[x], where 6 has degree 0, is not a unit but is not irreducible.  Instead, for degree 0 polynomials (which have already been handled by the is_unit() test) one should test irreducibility in the base ring.\n\nExample:\n\n```\nsage: R.<x>=ZZ[]\nsage: R(6).is_irreducible()\nTrue\n```\nis wrong, and it would be nice if the patch handled this also.\n\nLastly: Lars, when you make a patch to correct some incorrect behaviour in Sage you should add a doctest to the function which shows that the problem has been solved.",
     "created_at": "2009-02-01T15:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
@@ -223,7 +217,6 @@ sage: R.<x>=ZZ[]
 sage: R(6).is_irreducible()
 True
 ```
-
 is wrong, and it would be nice if the patch handled this also.
 
 Lastly: Lars, when you make a patch to correct some incorrect behaviour in Sage you should add a doctest to the function which shows that the problem has been solved.

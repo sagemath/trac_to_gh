@@ -72,7 +72,7 @@ archive/issue_events_004512.json:
 archive/issue_comments_011783.json:
 ```json
 {
-    "body": "> I can't reproduce this. Invalid?\n\nI reproduce this every day and it drives me nuts.  This is a serious problem.",
+    "body": "> I can't reproduce this. Invalid?\n\n\nI reproduce this every day and it drives me nuts.  This is a serious problem.",
     "created_at": "2008-03-16T20:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1865",
     "type": "issue_comment",
@@ -82,6 +82,7 @@ archive/issue_comments_011783.json:
 ```
 
 > I can't reproduce this. Invalid?
+
 
 I reproduce this every day and it drives me nuts.  This is a serious problem.
 

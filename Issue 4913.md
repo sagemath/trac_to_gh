@@ -48,7 +48,7 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4913.patch
 archive/issue_comments_037212.json:
 ```json
 {
-    "body": "Oops:\n\n```\n+-  Robert L. Miller (2007-01-13): refactoring, adjusting for\n+   NetworkX-0.33, fixed plotting bugs (2007-01-23): basic tutorial,\n+   edge labels, loops, multiple edges and arcs (2007-02-07): graph6\n+   and sparse6 formats, matrix input\n```\n",
+    "body": "Oops:\n\n```\n+-  Robert L. Miller (2007-01-13): refactoring, adjusting for\n+   NetworkX-0.33, fixed plotting bugs (2007-01-23): basic tutorial,\n+   edge labels, loops, multiple edges and arcs (2007-02-07): graph6\n+   and sparse6 formats, matrix input\n```",
     "created_at": "2009-01-24T15:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4913",
     "type": "issue_comment",
@@ -65,7 +65,6 @@ Oops:
 +   edge labels, loops, multiple edges and arcs (2007-02-07): graph6
 +   and sparse6 formats, matrix input
 ```
-
 
 
 

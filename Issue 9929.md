@@ -89,7 +89,7 @@ Nathann
 archive/issue_comments_098714.json:
 ```json
 {
-    "body": "Replying to [comment:3 ncohen]:\n> I tried the loop included in this patch with 100 000 instead of 100, and it still works.... Sounds like we are safe on this side `:-)`\n> \n> Nathann\n\nunless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,\nthis won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?",
+    "body": "Replying to [comment:3 ncohen]:\n> I tried the loop included in this patch with 100 000 instead of 100, and it still works.... Sounds like we are safe on this side `:-)`\n> \n> Nathann\n\n\nunless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,\nthis won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?",
     "created_at": "2010-09-19T08:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
@@ -102,6 +102,7 @@ Replying to [comment:3 ncohen]:
 > I tried the loop included in this patch with 100 000 instead of 100, and it still works.... Sounds like we are safe on this side `:-)`
 > 
 > Nathann
+
 
 unless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,
 this won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?
@@ -131,7 +132,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_098716.json:
 ```json
 {
-    "body": "> unless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,\n> this won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?\n\nWell, there is a practical argument saying that the mistake appeared with a probability of 1%, as my comments on #9925 indicated (and which I tried on even longer sequences of tests). Besides, the graph I create from its sparse6_string is known to create a mistake on the current version of Sage. What do you think we could do besides that ?\n\nNathann",
+    "body": "> unless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,\n> this won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?\n\n\nWell, there is a practical argument saying that the mistake appeared with a probability of 1%, as my comments on #9925 indicated (and which I tried on even longer sequences of tests). Besides, the graph I create from its sparse6_string is known to create a mistake on the current version of Sage. What do you think we could do besides that ?\n\nNathann",
     "created_at": "2010-09-19T08:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
@@ -142,6 +143,7 @@ archive/issue_comments_098716.json:
 
 > unless there is a probabilistic argument that with high probability we run into the cases we are interested in testing here,
 > this won't fly... Random tests don't prove much otherwise. And here you don't even know what to look for, right?
+
 
 Well, there is a practical argument saying that the mistake appeared with a probability of 1%, as my comments on #9925 indicated (and which I tried on even longer sequences of tests). Besides, the graph I create from its sparse6_string is known to create a mistake on the current version of Sage. What do you think we could do besides that ?
 
@@ -154,7 +156,7 @@ Nathann
 archive/issue_comments_098717.json:
 ```json
 {
-    "body": "\n```\nthe graph I create from its sparse6_string is known to create a mistake on the current version of Sage. \n```\n\nOK, this is fair enough. I'll give it a positive review as soon as it is marked as \"needs review\"",
+    "body": "```\nthe graph I create from its sparse6_string is known to create a mistake on the current version of Sage. \n```\nOK, this is fair enough. I'll give it a positive review as soon as it is marked as \"needs review\"",
     "created_at": "2010-09-19T08:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
@@ -163,11 +165,9 @@ archive/issue_comments_098717.json:
 }
 ```
 
-
 ```
 the graph I create from its sparse6_string is known to create a mistake on the current version of Sage. 
 ```
-
 OK, this is fair enough. I'll give it a positive review as soon as it is marked as "needs review"
 
 
@@ -177,7 +177,7 @@ OK, this is fair enough. I'll give it a positive review as soon as it is marked 
 archive/issue_comments_098718.json:
 ```json
 {
-    "body": "> OK, this is fair enough. I'll give it a positive review as soon as it is marked as \"needs review\" \n\nThen let it be ! `:-)`\n\nNathann",
+    "body": "> OK, this is fair enough. I'll give it a positive review as soon as it is marked as \"needs review\" \n\n\nThen let it be ! `:-)`\n\nNathann",
     "created_at": "2010-09-19T09:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9929",
     "type": "issue_comment",
@@ -187,6 +187,7 @@ archive/issue_comments_098718.json:
 ```
 
 > OK, this is fair enough. I'll give it a positive review as soon as it is marked as "needs review" 
+
 
 Then let it be ! `:-)`
 

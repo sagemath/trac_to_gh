@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5756
 archive/issue_comments_044904.json:
 ```json
 {
-    "body": "BUGS FOUND:\n\n1. bug in __cmp__\n\n```\n10:56 < wstein-5756> Wow, I was reading the __cmp__ for ring lifting maps.\n10:56 < wstein-5756> Check out this bug:\n10:56 < wstein-5756> Zmod(8).lift() == Zmod(10).lift()\n10:56 < wstein-5756> True\n10:56 < wstein-5756> Any two lifting maps are always equal.\n10:56 < wstein-5756> Ouch.\n```\n\n\n2. Another bug related to __cmp__:   #5758 (weird \"hello\")\n\n3. __nonzero__ is wrong for ring morphisms, since Sage does have the 0 ring where 0 == 1, so this code was wrong:\n\n```\n    def __nonzero__(self):\n        return True\n```\n\n\n4. Calling .lift() on a morphism returns None.  This is a bug that was caused by cythonizing morphism.pyx:\n\n```\nsage: R.<x,y> = QQ[]; R.hom([x,x]).lift() is None\nTrue\n```\n",
+    "body": "BUGS FOUND:\n\n1. bug in __cmp__\n\n```\n10:56 < wstein-5756> Wow, I was reading the __cmp__ for ring lifting maps.\n10:56 < wstein-5756> Check out this bug:\n10:56 < wstein-5756> Zmod(8).lift() == Zmod(10).lift()\n10:56 < wstein-5756> True\n10:56 < wstein-5756> Any two lifting maps are always equal.\n10:56 < wstein-5756> Ouch.\n```\n\n2. Another bug related to __cmp__:   #5758 (weird \"hello\")\n\n3. __nonzero__ is wrong for ring morphisms, since Sage does have the 0 ring where 0 == 1, so this code was wrong:\n\n```\n    def __nonzero__(self):\n        return True\n```\n\n4. Calling .lift() on a morphism returns None.  This is a bug that was caused by cythonizing morphism.pyx:\n\n```\nsage: R.<x,y> = QQ[]; R.hom([x,x]).lift() is None\nTrue\n```",
     "created_at": "2009-04-11T21:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
@@ -54,7 +54,6 @@ BUGS FOUND:
 10:56 < wstein-5756> Ouch.
 ```
 
-
 2. Another bug related to __cmp__:   #5758 (weird "hello")
 
 3. __nonzero__ is wrong for ring morphisms, since Sage does have the 0 ring where 0 == 1, so this code was wrong:
@@ -63,7 +62,6 @@ BUGS FOUND:
     def __nonzero__(self):
         return True
 ```
-
 
 4. Calling .lift() on a morphism returns None.  This is a bug that was caused by cythonizing morphism.pyx:
 
@@ -74,13 +72,12 @@ True
 
 
 
-
 ---
 
 archive/issue_comments_044905.json:
 ```json
 {
-    "body": "BUGS FOUND:\n5. im_gens() returns a mutable list, which makes it trivial to *break* a morphism after it is created:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = R.hom([x,x+y])\nsage: f(x)\nx\nsage: f.im_gens()[0] = 5\nsage: f.im_gens()\n[5, x + y]\nsage: f(x)\n5\n```\n",
+    "body": "BUGS FOUND:\n5. im_gens() returns a mutable list, which makes it trivial to *break* a morphism after it is created:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = R.hom([x,x+y])\nsage: f(x)\nx\nsage: f.im_gens()[0] = 5\nsage: f.im_gens()\n[5, x + y]\nsage: f(x)\n5\n```",
     "created_at": "2009-04-11T23:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
@@ -103,7 +100,6 @@ sage: f.im_gens()
 sage: f(x)
 5
 ```
-
 
 
 
@@ -198,7 +194,7 @@ One thing I noticed, which is not just common to this patch, is that when we ret
 archive/issue_comments_044910.json:
 ```json
 {
-    "body": "Replying to [comment:6 robertwb]:\n> I agree that the notation could be made more consistent, but this patch simply documents what is there (which is good) and fixes some bugs. \n\nYeah, getting it in should be the main goal here and now.\n\n> One thing I noticed, which is not just common to this patch, is that when we return a list that we don't want people to change (e.g. im_gens) we (hopefully) make a copy. This is why tuples were invited, shouldn't we just be using those instead?\n\n**implemented* instead of **invited*' I assume? \n\nEither way, can you please open a followup ticket so that this doesn't get lost.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:6 robertwb]:\n> I agree that the notation could be made more consistent, but this patch simply documents what is there (which is good) and fixes some bugs. \n\n\nYeah, getting it in should be the main goal here and now.\n\n> One thing I noticed, which is not just common to this patch, is that when we return a list that we don't want people to change (e.g. im_gens) we (hopefully) make a copy. This is why tuples were invited, shouldn't we just be using those instead?\n\n\n**implemented* instead of **invited*' I assume? \n\nEither way, can you please open a followup ticket so that this doesn't get lost.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T02:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
@@ -210,9 +206,11 @@ archive/issue_comments_044910.json:
 Replying to [comment:6 robertwb]:
 > I agree that the notation could be made more consistent, but this patch simply documents what is there (which is good) and fixes some bugs. 
 
+
 Yeah, getting it in should be the main goal here and now.
 
 > One thing I noticed, which is not just common to this patch, is that when we return a list that we don't want people to change (e.g. im_gens) we (hopefully) make a copy. This is why tuples were invited, shouldn't we just be using those instead?
+
 
 **implemented* instead of **invited*' I assume? 
 

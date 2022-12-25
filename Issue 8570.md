@@ -157,7 +157,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_077501.json:
 ```json
 {
-    "body": "Just noting that this is still really unfortunate.  Here is a workaround in the meantime for getting markers.\n\n```\nline([(1,2),(2,3)],marker=7,linestyle='')\n```\n",
+    "body": "Just noting that this is still really unfortunate.  Here is a workaround in the meantime for getting markers.\n\n```\nline([(1,2),(2,3)],marker=7,linestyle='')\n```",
     "created_at": "2012-01-25T03:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
@@ -171,7 +171,6 @@ Just noting that this is still really unfortunate.  Here is a workaround in the 
 ```
 line([(1,2),(2,3)],marker=7,linestyle='')
 ```
-
 
 
 

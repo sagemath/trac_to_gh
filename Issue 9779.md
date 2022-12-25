@@ -3,7 +3,7 @@
 archive/issues_009779.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nCC:  @jhpalmieri @jaapspies @qed777\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding \n\n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\n\nwill work, though this remains to be tested. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jhpalmieri @jaapspies @qed777\n\nAs noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding \n\n```\nos.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')\n```\n\nwill work, though this remains to be tested. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9780\n\n",
     "created_at": "2010-08-22T07:37:42Z",
     "labels": [
         "component: algebra",
@@ -22,11 +22,9 @@ CC:  @jhpalmieri @jaapspies @qed777
 
 As noted at #9356, a change which was made to ensure `SAGE_ATLAS_LIB` worked on Solaris, is not a complete solution. On Solaris, no shared library `liblapack.so` is created, as for reasons unknown, this causes problems. Hence the static library liblapack.a needs to be available to programs using ATLAS on Solaris. This means an extra symbolic link needs to be created. I think adding 
 
-
 ```
 os.system(' ln -sf ' + ATLAS_LIB + '/lib/liblapack.a '  + SAGE_LOCAL_LIB+'/liblapack.a')
 ```
-
 
 will work, though this remains to be tested. 
 
@@ -96,7 +94,7 @@ archive/issue_events_024517.json:
 archive/issue_comments_095822.json:
 ```json
 {
-    "body": "From the end of `spkg/logs/atlas-3.8.3.p14.log` on sage.math:\n\n```\nld -L/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3/local/lib -shared -soname liblapack.so -o liblapack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3/local/lib -shared -soname libf77blas.so -o libf77blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\n\nIn particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).",
+    "body": "From the end of `spkg/logs/atlas-3.8.3.p14.log` on sage.math:\n\n```\nld -L/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3/local/lib -shared -soname liblapack.so -o liblapack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\nld -L/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3/local/lib -shared -soname libf77blas.so -o libf77blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran\nld: cannot find -lgfortran\n```\nIn particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).",
     "created_at": "2010-09-06T21:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -113,7 +111,6 @@ ld: cannot find -lgfortran
 ld -L/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3/local/lib -shared -soname libf77blas.so -o libf77blas.so --whole-archive libf77blas.a --no-whole-archive -lc -lm -lgfortran
 ld: cannot find -lgfortran
 ```
-
 In particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).
 
 
@@ -123,7 +120,7 @@ In particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant
 archive/issue_comments_095823.json:
 ```json
 {
-    "body": "Replying to [comment:3 mpatel]:\n\n> In particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).\n\nI think it proves we don't need the shared libraries myself. Note they are not built on OS X at all - see the badly name file `make_correct_shared.sh`\n\nBut more to the point, it's unwise to test for them before permitting the code associated with  `SAGE_ATLAS_LIB` to work. At the minute, that code tests for the 4 shared libraries on Linux, and 3 on Solaris. That seems to be rather flawed given only two are reliably built on Linux. Sure we might be able to get them to build, but that's far from obvious how to do that best. Just ignoring them seems simpler to me. \n\nDave",
+    "body": "Replying to [comment:3 mpatel]:\n\n> In particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).\n\n\nI think it proves we don't need the shared libraries myself. Note they are not built on OS X at all - see the badly name file `make_correct_shared.sh`\n\nBut more to the point, it's unwise to test for them before permitting the code associated with  `SAGE_ATLAS_LIB` to work. At the minute, that code tests for the 4 shared libraries on Linux, and 3 on Solaris. That seems to be rather flawed given only two are reliably built on Linux. Sure we might be able to get them to build, but that's far from obvious how to do that best. Just ignoring them seems simpler to me. \n\nDave",
     "created_at": "2010-09-06T21:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -135,6 +132,7 @@ archive/issue_comments_095823.json:
 Replying to [comment:3 mpatel]:
 
 > In particular, `liblapack.so` and `libf77blas.so` aren't made.  Is this relevant here?  Running `ln -s libgfortran.so.2 libgfortran.so` in `SAGE_LOCAL/lib` and reinstalling ATLAS appears to help (cf. [comment:ticket:9356:5 comment 5] and [comment:ticket:9356:7 comment 7] at #9356).
+
 
 I think it proves we don't need the shared libraries myself. Note they are not built on OS X at all - see the badly name file `make_correct_shared.sh`
 
@@ -149,7 +147,7 @@ Dave
 archive/issue_comments_095824.json:
 ```json
 {
-    "body": "On OpenSolaris at least, I can build sage-4.5.3.rc0 using only links to static libraries on a previous build (sage-4.5.3.alpha2). In other words, I set {{{SAGE_ATLAS_LIB}} with a modified version of the ATLAS package, which only made links to the static libraries. \n\n\n```\nlrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libatlas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libatlas.a\nlrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libcblas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libcblas.a\nlrwxrwxrwx   1 drkirkby staff         64 Sep  6 21:52 libf77blas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libf77blas.a\nlrwxrwxrwx   1 drkirkby staff         63 Sep  6 21:52 liblapack.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/liblapack.a\n```\n\n\nThat passed all doctests:\n\n\n```\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1825.6 seconds\ndrkirkby@hawk:~/noatlas/sage-4.5.3.rc0$ ./sage -gap\n```\n\n\nA good sign, but I'll test that package on Linux too. \n\nDave",
+    "body": "On OpenSolaris at least, I can build sage-4.5.3.rc0 using only links to static libraries on a previous build (sage-4.5.3.alpha2). In other words, I set {{{SAGE_ATLAS_LIB}} with a modified version of the ATLAS package, which only made links to the static libraries. \n\n```\nlrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libatlas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libatlas.a\nlrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libcblas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libcblas.a\nlrwxrwxrwx   1 drkirkby staff         64 Sep  6 21:52 libf77blas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libf77blas.a\nlrwxrwxrwx   1 drkirkby staff         63 Sep  6 21:52 liblapack.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/liblapack.a\n```\n\nThat passed all doctests:\n\n```\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1825.6 seconds\ndrkirkby@hawk:~/noatlas/sage-4.5.3.rc0$ ./sage -gap\n```\n\nA good sign, but I'll test that package on Linux too. \n\nDave",
     "created_at": "2010-09-06T22:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -160,7 +158,6 @@ archive/issue_comments_095824.json:
 
 On OpenSolaris at least, I can build sage-4.5.3.rc0 using only links to static libraries on a previous build (sage-4.5.3.alpha2). In other words, I set {{{SAGE_ATLAS_LIB}} with a modified version of the ATLAS package, which only made links to the static libraries. 
 
-
 ```
 lrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libatlas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libatlas.a
 lrwxrwxrwx   1 drkirkby staff         62 Sep  6 21:52 libcblas.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/libcblas.a
@@ -168,9 +165,7 @@ lrwxrwxrwx   1 drkirkby staff         64 Sep  6 21:52 libf77blas.a -> /export/ho
 lrwxrwxrwx   1 drkirkby staff         63 Sep  6 21:52 liblapack.a -> /export/home/drkirkby/6/sage-4.5.3.alpha2/local/lib/liblapack.a
 ```
 
-
 That passed all doctests:
-
 
 ```
 ----------------------------------------------------------------------
@@ -178,7 +173,6 @@ All tests passed!
 Total time for all tests: 1825.6 seconds
 drkirkby@hawk:~/noatlas/sage-4.5.3.rc0$ ./sage -gap
 ```
-
 
 A good sign, but I'll test that package on Linux too. 
 
@@ -209,7 +203,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095826.json:
 ```json
 {
-    "body": "One small correction: on OS X, I don't think anything gets installed: the system's ATLAS gets used instead.  Notice these lines in `spkg-install-script`:\n\n```\nif [ `uname` = \"Darwin\" ]; then\n    exit 0\nfi\n```\n\nThese happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.",
+    "body": "One small correction: on OS X, I don't think anything gets installed: the system's ATLAS gets used instead.  Notice these lines in `spkg-install-script`:\n\n```\nif [ `uname` = \"Darwin\" ]; then\n    exit 0\nfi\n```\nThese happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.",
     "created_at": "2010-09-07T01:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -225,7 +219,6 @@ if [ `uname` = "Darwin" ]; then
     exit 0
 fi
 ```
-
 These happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.
 
 
@@ -253,7 +246,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095828.json:
 ```json
 {
-    "body": "Replying to [comment:7 jhpalmieri]:\n> One small correction: on OS X, I don't think anything gets installed: the system's ATLAS gets used instead.  Notice these lines in `spkg-install-script`:\n> {{{\n> if [ `uname` = \"Darwin\" ]; then\n>     exit 0\n> fi\n> }}}\n> These happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.\n\nThank you John,\n\nIn view of this, I'll delete those lines related to OS X in `make_correct_shared.sh`, as they only add confusion. \n\n\nThe version I created that linked to the static libraries in /ATLAS on Solaris 10 SPARC (`t2.math`) \n\n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0/local/lib$ ls -l | grep ATLAS\nlrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libatlas.a -> /ATLAS/lib/libatlas.a\nlrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libcblas.a -> /ATLAS/lib/libcblas.a\nlrwxrwxrwx   1 kirkby   1093          23 Sep  6 16:56 libf77blas.a -> /ATLAS/lib/libf77blas.a\nlrwxrwxrwx   1 kirkby   1093          22 Sep  6 16:56 liblapack.a -> /ATLAS/lib/liblapack.a\n```\n\n\nfailed one doc test\n\n\n```\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 11326.4 seconds\n```\n\n\nbut the system had run out of swap space, as shown in the system logs. I added some swap space, then the test passed:\n\n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ ./sage -t  -long devel/sage/sage/parallel/decorate.py\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n         [39.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.8 seconds\n```\n\n\nIt also built OK on Linux (`sage.math`), though I've not run the doctests on that yet. \n\nI'm marking this as \"needs work\" as I want to remove the erroneous information about OS X that exists in  `make_correct_shared.sh` and probably in `SPKG.txt too`. \n\nIt's very tempting to rename `make_correct_shared.sh` to something like `occasionally_make_correct_shared.sh` !!\n\nDave",
+    "body": "Replying to [comment:7 jhpalmieri]:\n> One small correction: on OS X, I don't think anything gets installed: the system's ATLAS gets used instead.  Notice these lines in `spkg-install-script`:\n> \n> ```\n> if [ `uname` = \"Darwin\" ]; then\n>     exit 0\n> fi\n> ```\n> These happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.\n\n\nThank you John,\n\nIn view of this, I'll delete those lines related to OS X in `make_correct_shared.sh`, as they only add confusion. \n\n\nThe version I created that linked to the static libraries in /ATLAS on Solaris 10 SPARC (`t2.math`) \n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0/local/lib$ ls -l | grep ATLAS\nlrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libatlas.a -> /ATLAS/lib/libatlas.a\nlrwxrwxrwx   1 kirkby   1093          21 Sep  6 16:56 libcblas.a -> /ATLAS/lib/libcblas.a\nlrwxrwxrwx   1 kirkby   1093          23 Sep  6 16:56 libf77blas.a -> /ATLAS/lib/libf77blas.a\nlrwxrwxrwx   1 kirkby   1093          22 Sep  6 16:56 liblapack.a -> /ATLAS/lib/liblapack.a\n```\n\nfailed one doc test\n\n```\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 11326.4 seconds\n```\n\nbut the system had run out of swap space, as shown in the system logs. I added some swap space, then the test passed:\n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ ./sage -t  -long devel/sage/sage/parallel/decorate.py\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n         [39.6 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.8 seconds\n```\n\nIt also built OK on Linux (`sage.math`), though I've not run the doctests on that yet. \n\nI'm marking this as \"needs work\" as I want to remove the erroneous information about OS X that exists in  `make_correct_shared.sh` and probably in `SPKG.txt too`. \n\nIt's very tempting to rename `make_correct_shared.sh` to something like `occasionally_make_correct_shared.sh` !!\n\nDave",
     "created_at": "2010-09-07T07:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -264,12 +257,14 @@ archive/issue_comments_095828.json:
 
 Replying to [comment:7 jhpalmieri]:
 > One small correction: on OS X, I don't think anything gets installed: the system's ATLAS gets used instead.  Notice these lines in `spkg-install-script`:
-> {{{
+> 
+> ```
 > if [ `uname` = "Darwin" ]; then
 >     exit 0
 > fi
-> }}}
+> ```
 > These happen before the call to `make_correct_shared.sh`, so any lines in the latter script actually have no effect on Darwin, as far as I can tell.
+
 
 Thank you John,
 
@@ -277,7 +272,6 @@ In view of this, I'll delete those lines related to OS X in `make_correct_shared
 
 
 The version I created that linked to the static libraries in /ATLAS on Solaris 10 SPARC (`t2.math`) 
-
 
 ```
 kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0/local/lib$ ls -l | grep ATLAS
@@ -287,9 +281,7 @@ lrwxrwxrwx   1 kirkby   1093          23 Sep  6 16:56 libf77blas.a -> /ATLAS/lib
 lrwxrwxrwx   1 kirkby   1093          22 Sep  6 16:56 liblapack.a -> /ATLAS/lib/liblapack.a
 ```
 
-
 failed one doc test
-
 
 ```
 The following tests failed:
@@ -299,9 +291,7 @@ The following tests failed:
 Total time for all tests: 11326.4 seconds
 ```
 
-
 but the system had run out of swap space, as shown in the system logs. I added some swap space, then the test passed:
-
 
 ```
 kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ ./sage -t  -long devel/sage/sage/parallel/decorate.py
@@ -312,7 +302,6 @@ sage -t -long "devel/sage/sage/parallel/decorate.py"
 All tests passed!
 Total time for all tests: 39.8 seconds
 ```
-
 
 It also built OK on Linux (`sage.math`), though I've not run the doctests on that yet. 
 
@@ -445,7 +434,7 @@ Check for static libraries only so SAGE_ATLAS_LIB is more relieable
 archive/issue_comments_095835.json:
 ```json
 {
-    "body": "Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by @jhpalmieri created at 2010-09-08 20:37:00\n\nOverall the changes look sensible.\n\nA few comments about `system_atlas.py`.  In line 15:\n\n```\nhas_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n```\n\nshould the double slash be a single one?  In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\nFinally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.",
+    "body": "Attachment [9780-SAGE_ATLAS_LIB.patch](tarball://root/attachments/some-uuid/ticket9780/9780-SAGE_ATLAS_LIB.patch) by @jhpalmieri created at 2010-09-08 20:37:00\n\nOverall the changes look sensible.\n\nA few comments about `system_atlas.py`.  In line 15:\n\n```\nhas_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n```\nshould the double slash be a single one?  In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\nFinally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.",
     "created_at": "2010-09-08T20:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -463,7 +452,6 @@ A few comments about `system_atlas.py`.  In line 15:
 ```
 has_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') 
 ```
-
 should the double slash be a single one?  In the comments on lines 44-51 of the same file, there are a few typos ("relieably" and "Buidling"), but this is not very important.  In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories "lib" and "include/atlas".  In particular, it should not be set to the "parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying "the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files." As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.
 
 Finally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.
@@ -475,7 +463,7 @@ Finally, for testing this, I'm not sure I have access to a system with a genuine
 archive/issue_comments_095836.json:
 ```json
 {
-    "body": "Replying to [comment:12 jhpalmieri]:\n> Overall the changes look sensible.\n> \n> A few comments about `system_atlas.py`.  In line 15:\n> {{{\n> has_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n> }}}\n> should the double slash be a single one?  \n\nSingle\n\n> In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  \n\nBut I can fix them. \n\n> In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  \n\nIMHO it is badly named. It should have been called SAGE_ATLAS. It is very unconventional. Take a look for example at gcc's configure options:\n\n\n```\n  --with-gmp=PATH         specify prefix directory for the installed GMP package.\n                          Equivalent to --with-gmp-include=PATH/include\n                          plus --with-gmp-lib=PATH/lib\n  --with-gmp-include=PATH specify directory for installed GMP include files\n  --with-gmp-lib=PATH     specify directory for the installed GMP library\n```\n\n\nThe `LIB` in `SAGE_ATLAS_LIB` is confusing, when there are include files too. \n\n> In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\nI think we have a difference of opinion about what a \"parent\" directory is. IMHO, if we have:\n\n\n```\n/usr/local/ATLAS/lib\n/usr/local/ATLAS/include\n```\n\n\nThen the parent directory of the ATLAS installation is `/usr/local`. In other words, `SAGE_ATLAS_LIB` should be the parent directory of `/usr/local/ATLAS/lib`. I think the definition at http://en.wikipedia.org/wiki/Parent_directory is reasonable. \n\nI thought the wording was confusing, so thought I'd try to clarify it. Obviously you think I've made it more confusing. \n\nPerhaps it needs an example - the one above might be reasonable. Perhaps remove the word \"parent\", and just do it more by example. \n\nPerhaps you have a better idea. \n\n> Finally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.\n\nI've not got access to any machine with a \"genuine\" ATLAS installation. Does such a thing exist? It's not really a standard package. I think given the nature of ATLAS, which (Automatically Tuned Linear Algebra System) one really should build it from source on the machine so it is tuned properly. So even if you can find a ATLAS library for Debian/Redhat etc, it is unlikely to be optimal for your hardware. \n\nThe only other thing I have access to is Mathematica which uses ATLAS and has the 4 shared libraries. Unfortunately, since Mathematica is 64-bit, and we can only at this point build Sage reliably 32-bit, that's not an option. I might have an old version of Mathematica I could try, but that's a lot of messing around - installing the software just to try the library. \n\nI don't think it's unreasonable for someone to build Sage once with ATLAS, then at a later date use that install. \n\nDave",
+    "body": "Replying to [comment:12 jhpalmieri]:\n> Overall the changes look sensible.\n> \n> A few comments about `system_atlas.py`.  In line 15:\n> \n> ```\n> has_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') \n> ```\n> should the double slash be a single one?  \n\n\nSingle\n\n> In the comments on lines 44-51 of the same file, there are a few typos (\"relieably\" and \"Buidling\"), but this is not very important.  \n\n\nBut I can fix them. \n\n> In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories \"lib\" and \"include/atlas\".  \n\n\nIMHO it is badly named. It should have been called SAGE_ATLAS. It is very unconventional. Take a look for example at gcc's configure options:\n\n```\n  --with-gmp=PATH         specify prefix directory for the installed GMP package.\n                          Equivalent to --with-gmp-include=PATH/include\n                          plus --with-gmp-lib=PATH/lib\n  --with-gmp-include=PATH specify directory for installed GMP include files\n  --with-gmp-lib=PATH     specify directory for the installed GMP library\n```\n\nThe `LIB` in `SAGE_ATLAS_LIB` is confusing, when there are include files too. \n\n> In particular, it should not be set to the \"parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying \"the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files.\" As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.\n\n\nI think we have a difference of opinion about what a \"parent\" directory is. IMHO, if we have:\n\n```\n/usr/local/ATLAS/lib\n/usr/local/ATLAS/include\n```\n\nThen the parent directory of the ATLAS installation is `/usr/local`. In other words, `SAGE_ATLAS_LIB` should be the parent directory of `/usr/local/ATLAS/lib`. I think the definition at http://en.wikipedia.org/wiki/Parent_directory is reasonable. \n\nI thought the wording was confusing, so thought I'd try to clarify it. Obviously you think I've made it more confusing. \n\nPerhaps it needs an example - the one above might be reasonable. Perhaps remove the word \"parent\", and just do it more by example. \n\nPerhaps you have a better idea. \n\n> Finally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.\n\n\nI've not got access to any machine with a \"genuine\" ATLAS installation. Does such a thing exist? It's not really a standard package. I think given the nature of ATLAS, which (Automatically Tuned Linear Algebra System) one really should build it from source on the machine so it is tuned properly. So even if you can find a ATLAS library for Debian/Redhat etc, it is unlikely to be optimal for your hardware. \n\nThe only other thing I have access to is Mathematica which uses ATLAS and has the 4 shared libraries. Unfortunately, since Mathematica is 64-bit, and we can only at this point build Sage reliably 32-bit, that's not an option. I might have an old version of Mathematica I could try, but that's a lot of messing around - installing the software just to try the library. \n\nI don't think it's unreasonable for someone to build Sage once with ATLAS, then at a later date use that install. \n\nDave",
     "created_at": "2010-09-08T21:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -488,21 +476,24 @@ Replying to [comment:12 jhpalmieri]:
 > Overall the changes look sensible.
 > 
 > A few comments about `system_atlas.py`.  In line 15:
-> {{{
+> 
+> ```
 > has_atlas = os.path.exists(ATLAS_LIB+'/lib//libatlas.a') 
-> }}}
+> ```
 > should the double slash be a single one?  
+
 
 Single
 
 > In the comments on lines 44-51 of the same file, there are a few typos ("relieably" and "Buidling"), but this is not very important.  
 
+
 But I can fix them. 
 
 > In lines 64-72, there is an old error: as you can see from the code, `SAGE_ATLAS_LIB` should be a directory which contains subdirectories "lib" and "include/atlas".  
 
-IMHO it is badly named. It should have been called SAGE_ATLAS. It is very unconventional. Take a look for example at gcc's configure options:
 
+IMHO it is badly named. It should have been called SAGE_ATLAS. It is very unconventional. Take a look for example at gcc's configure options:
 
 ```
   --with-gmp=PATH         specify prefix directory for the installed GMP package.
@@ -512,19 +503,17 @@ IMHO it is badly named. It should have been called SAGE_ATLAS. It is very unconv
   --with-gmp-lib=PATH     specify directory for the installed GMP library
 ```
 
-
 The `LIB` in `SAGE_ATLAS_LIB` is confusing, when there are include files too. 
 
 > In particular, it should not be set to the "parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a".  (I probably should have fixed this in #9356.)  In the [installation guide](http://sagemath.org/doc/installation/source.html#environment-variables), we documented this as saying "the parent directory of your ATLAS installation: it should have a subdirectory lib containing the files libatlas.so, liblapack.so, libcblas.so, and libf77blas.so, and it should have a subdirectory include/atlas/ containing header files." As far as I know, that is accurate, and we might use similar language here.  Oh, and I guess we should change the text in the installation guide from *.so to *.a...  I can add a patch for that if you want.
 
-I think we have a difference of opinion about what a "parent" directory is. IMHO, if we have:
 
+I think we have a difference of opinion about what a "parent" directory is. IMHO, if we have:
 
 ```
 /usr/local/ATLAS/lib
 /usr/local/ATLAS/include
 ```
-
 
 Then the parent directory of the ATLAS installation is `/usr/local`. In other words, `SAGE_ATLAS_LIB` should be the parent directory of `/usr/local/ATLAS/lib`. I think the definition at http://en.wikipedia.org/wiki/Parent_directory is reasonable. 
 
@@ -535,6 +524,7 @@ Perhaps it needs an example - the one above might be reasonable. Perhaps remove 
 Perhaps you have a better idea. 
 
 > Finally, for testing this, I'm not sure I have access to a system with a genuine ATLAS installation.  I can use an ATLAS build from another version of Sage, but should we test this with other ATLAS installations as well?  I'll try it out on t2 and one or two skynet machines.
+
 
 I've not got access to any machine with a "genuine" ATLAS installation. Does such a thing exist? It's not really a standard package. I think given the nature of ATLAS, which (Automatically Tuned Linear Algebra System) one really should build it from source on the machine so it is tuned properly. So even if you can find a ATLAS library for Debian/Redhat etc, it is unlikely to be optimal for your hardware. 
 
@@ -551,7 +541,7 @@ Dave
 archive/issue_comments_095837.json:
 ```json
 {
-    "body": "I mostly agree with what you're saying about parent directories, but \"the parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\" sounds like it should be the directory containing those files (e.g. /usr/local/ATLAS/lib), not the parent directory of that one (/usr/local/ATLAS/).  Maybe it could be \"the parent directory of the directory containing liblapack.a, libcblas.a, libatlas.a and libf77blas.a\"?\n\n(The wikipedia reference only discusses the parent directory of another directory, not of a file.  So what is the parent directory of /usr/local/ATLAS/lib/liblapack.a?)\n\n> I don't think it's unreasonable for someone to build Sage once with ATLAS, then at a later date use that install.\n\nThat's what I'm trying right now with some skynet machines: taurus and eno (two linux boxes), mark (solaris on sparc) and fulvia (solaris on x86).",
+    "body": "I mostly agree with what you're saying about parent directories, but \"the parent directory of liblapack.a, libcblas.a, libatlas.a and libf77blas.a\" sounds like it should be the directory containing those files (e.g. /usr/local/ATLAS/lib), not the parent directory of that one (/usr/local/ATLAS/).  Maybe it could be \"the parent directory of the directory containing liblapack.a, libcblas.a, libatlas.a and libf77blas.a\"?\n\n(The wikipedia reference only discusses the parent directory of another directory, not of a file.  So what is the parent directory of /usr/local/ATLAS/lib/liblapack.a?)\n\n> I don't think it's unreasonable for someone to build Sage once with ATLAS, then at a later date use that install.\n\n\nThat's what I'm trying right now with some skynet machines: taurus and eno (two linux boxes), mark (solaris on sparc) and fulvia (solaris on x86).",
     "created_at": "2010-09-08T21:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -565,6 +555,7 @@ I mostly agree with what you're saying about parent directories, but "the parent
 (The wikipedia reference only discusses the parent directory of another directory, not of a file.  So what is the parent directory of /usr/local/ATLAS/lib/liblapack.a?)
 
 > I don't think it's unreasonable for someone to build Sage once with ATLAS, then at a later date use that install.
+
 
 That's what I'm trying right now with some skynet machines: taurus and eno (two linux boxes), mark (solaris on sparc) and fulvia (solaris on x86).
 
@@ -593,7 +584,7 @@ There's a [potentially relevant question](http://ask.sagemath.org/question/107/b
 archive/issue_comments_095839.json:
 ```json
 {
-    "body": "On mark, I get the message\n\n```\nsystem_atlas.py:6: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  fortran = os.popen2(os.environ['SAGE_LOCAL']+'/bin/'+'which_fortran')[1].read()\nsystem_atlas.py:23: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n/bin/sh: readelf: not found\nsystem_atlas.py:24: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n/bin/sh: readelf: not found\n```\n\nI'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?",
+    "body": "On mark, I get the message\n\n```\nsystem_atlas.py:6: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  fortran = os.popen2(os.environ['SAGE_LOCAL']+'/bin/'+'which_fortran')[1].read()\nsystem_atlas.py:23: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n/bin/sh: readelf: not found\nsystem_atlas.py:24: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n/bin/sh: readelf: not found\n```\nI'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?",
     "created_at": "2010-09-09T05:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -614,7 +605,6 @@ system_atlas.py:24: DeprecationWarning: os.popen2 is deprecated.  Use the subpro
   s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()
 /bin/sh: readelf: not found
 ```
-
 I'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?
 
 
@@ -624,7 +614,7 @@ I'm not worried about the deprecation messages, but what about `/bin/sh: readelf
 archive/issue_comments_095840.json:
 ```json
 {
-    "body": "Replying to [comment:16 jhpalmieri]:\n> I'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?\n\nI did notice that about `readelf`. It's basically non-portable code. No such command exists as part of the POSIX Unix standard. It appears to be part of the GNU binutils package. \n\nIMHO, the section:\n\n\n```\n            s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n            s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n\n            if s_gfortran !='' and not fortran.startswith('gfortran'):\n                print \"Symbols in lib77blas indicate it was build with gfortran \\n\"\n                print \"However SAGE is using a different fortran compiler \\n\"\n                print \"If you wish to use this blas library, make sure SAGE_FORTRAN points \\n\"\n                print \"to a fortran compiler compatible with this library. \\n\"\n                sys.exit(2)\n\n            if s_g95 !='' and not fortran.startswith('g95'):\n                print \"Symbols in lib77blas indicate it was build with g95 \\n\"\n                print \"However SAGE is using a different fortran compiler \\n\"\n                print \"If you wish to use this blas library, make sure SAGE_FORTRAN points \\n\"\n                print \"to a fortran compiler compatible with this library. \\n\"\n                sys.exit(2)\n```\n\n\nis of **extremely** limited value. It is certainly non-portable and whilst there was a time when `g95` was popular and someone might have compiled ATLAS with it, those days are long since passed. William said some time ago we can remove the g95 binaries from the fortran package. \n\nIn any case, it is testing on a shared library `libf77blas.so` which often fails to build for people on various Linux distributions. I think removing that whole section would save a few CPU cycles and a few bytes of download. \n\nThe failure is harmless in that if `readelf` does not exist, it will never find the symbols this bit of code tests for, so both `s_gfortran` and `s_g95` remain empty. \n\nIt is worth bearing in mind is that this ATLAS code is never installed on Cygwin or OS X. So this code will only ever be executed on Linux, Solaris and rarer Unix systems like HP-UX, AIX etc. Only Linux systems will probably have the {{{readelf}} command, though it could be installed on Solaris, AIX, HP-UX etc. \n\nThere are several options, ranked in order of my preference. \n\n1. Remove that section of code above.\n2. Ignore it, since the error message is harmless. \n3. Test first if `readelf` exists. \n4. Make GNU binutils a perquisite for building Sage - i.e. add it as a  standard package. \n\n\nDave",
+    "body": "Replying to [comment:16 jhpalmieri]:\n> I'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?\n\n\nI did notice that about `readelf`. It's basically non-portable code. No such command exists as part of the POSIX Unix standard. It appears to be part of the GNU binutils package. \n\nIMHO, the section:\n\n```\n            s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n            s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n\n            if s_gfortran !='' and not fortran.startswith('gfortran'):\n                print \"Symbols in lib77blas indicate it was build with gfortran \\n\"\n                print \"However SAGE is using a different fortran compiler \\n\"\n                print \"If you wish to use this blas library, make sure SAGE_FORTRAN points \\n\"\n                print \"to a fortran compiler compatible with this library. \\n\"\n                sys.exit(2)\n\n            if s_g95 !='' and not fortran.startswith('g95'):\n                print \"Symbols in lib77blas indicate it was build with g95 \\n\"\n                print \"However SAGE is using a different fortran compiler \\n\"\n                print \"If you wish to use this blas library, make sure SAGE_FORTRAN points \\n\"\n                print \"to a fortran compiler compatible with this library. \\n\"\n                sys.exit(2)\n```\n\nis of **extremely** limited value. It is certainly non-portable and whilst there was a time when `g95` was popular and someone might have compiled ATLAS with it, those days are long since passed. William said some time ago we can remove the g95 binaries from the fortran package. \n\nIn any case, it is testing on a shared library `libf77blas.so` which often fails to build for people on various Linux distributions. I think removing that whole section would save a few CPU cycles and a few bytes of download. \n\nThe failure is harmless in that if `readelf` does not exist, it will never find the symbols this bit of code tests for, so both `s_gfortran` and `s_g95` remain empty. \n\nIt is worth bearing in mind is that this ATLAS code is never installed on Cygwin or OS X. So this code will only ever be executed on Linux, Solaris and rarer Unix systems like HP-UX, AIX etc. Only Linux systems will probably have the {{{readelf}} command, though it could be installed on Solaris, AIX, HP-UX etc. \n\nThere are several options, ranked in order of my preference. \n\n1. Remove that section of code above.\n2. Ignore it, since the error message is harmless. \n3. Test first if `readelf` exists. \n4. Make GNU binutils a perquisite for building Sage - i.e. add it as a  standard package. \n\n\nDave",
     "created_at": "2010-09-09T08:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -636,10 +626,10 @@ archive/issue_comments_095840.json:
 Replying to [comment:16 jhpalmieri]:
 > I'm not worried about the deprecation messages, but what about `/bin/sh: readelf: not found`?  Is that important?
 
+
 I did notice that about `readelf`. It's basically non-portable code. No such command exists as part of the POSIX Unix standard. It appears to be part of the GNU binutils package. 
 
 IMHO, the section:
-
 
 ```
             s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()
@@ -659,7 +649,6 @@ IMHO, the section:
                 print "to a fortran compiler compatible with this library. \n"
                 sys.exit(2)
 ```
-
 
 is of **extremely** limited value. It is certainly non-portable and whilst there was a time when `g95` was popular and someone might have compiled ATLAS with it, those days are long since passed. William said some time ago we can remove the g95 binaries from the fortran package. 
 
@@ -704,7 +693,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_095842.json:
 ```json
 {
-    "body": "Okay, pointing SAGE_ATLAS_LIB to the \"local\" directory of a previous Sage installation works for me on several solaris machines (t2 and mark2: sparc; and fulvia: x86).  It also works for me on several linux machines (taurus and eno).  So I'm happy with it.  I would have liked to test it on some linux machine with a separately installed ATLAS, but it's not a perfect world.\n\nAs far as the readelf problem goes, I think we can leave it as is.  It doesn't do any harm, after all.  My second choice would be to test whether readelf exists, or at least hide the error -- just changing os.popen2 to os.popen3 will do this, so that's easy.  If course, it might be better to test whether the command produced an error, like this:\n\n```\nsage: p = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')\nsage: p[2].read()  # stderr, so the empty string if no error\n'/bin/sh: readelf: command not found\\n'\nsage: p[1].read()  # stdout, so the output of the command\n''\n```\n\nSo we could change the code\n\n```\n            s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n            s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n```\n\nto the following (untested):\n\n```\n            proc_gfortran = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')\n            proc_g95 = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep g95')\n            err = (len(proc_gfortran[2].read()) > 0) or (len(proc_g95[2].read()) > 0)\n\n            s_gfortran = ''\n            s_g95 = ''\n\t    if not err:  # readelf is present and ran without error\n\t\ts_gfortran = proc_gfortran[1].read()\n                s_g95 = proc_g95[1].read()\n```\n\nEven better, we should rewrite it using the subprocess module, to avoid the deprecation messages.  If you think that's worthwhile, I could probably do it pretty quickly.  You would probably prefer it not written in python at all, but that's a bit more work...  Completely removing the code involves more analysis of what's going on: are there any systems which execute this code from the atlas spkg, have readelf, and also use g95?  If not, then we can get rid of it, but how sure can we be of that?\n\nI think we've agreed before that a major upgrade to the atlas spkg is long overdue, and if we don't eliminate this code, we can add its removal to the list of things to change.  If you make a new spkg addressing [my comments above](http://trac.sagemath.org/sage_trac/ticket/9780#comment:12), maybe you could add a comment to SPKG.txt about this?",
+    "body": "Okay, pointing SAGE_ATLAS_LIB to the \"local\" directory of a previous Sage installation works for me on several solaris machines (t2 and mark2: sparc; and fulvia: x86).  It also works for me on several linux machines (taurus and eno).  So I'm happy with it.  I would have liked to test it on some linux machine with a separately installed ATLAS, but it's not a perfect world.\n\nAs far as the readelf problem goes, I think we can leave it as is.  It doesn't do any harm, after all.  My second choice would be to test whether readelf exists, or at least hide the error -- just changing os.popen2 to os.popen3 will do this, so that's easy.  If course, it might be better to test whether the command produced an error, like this:\n\n```\nsage: p = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')\nsage: p[2].read()  # stderr, so the empty string if no error\n'/bin/sh: readelf: command not found\\n'\nsage: p[1].read()  # stdout, so the output of the command\n''\n```\nSo we could change the code\n\n```\n            s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()\n            s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()\n```\nto the following (untested):\n\n```\n            proc_gfortran = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')\n            proc_g95 = os.popen3('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep g95')\n            err = (len(proc_gfortran[2].read()) > 0) or (len(proc_g95[2].read()) > 0)\n\n            s_gfortran = ''\n            s_g95 = ''\n\t    if not err:  # readelf is present and ran without error\n\t\ts_gfortran = proc_gfortran[1].read()\n                s_g95 = proc_g95[1].read()\n```\nEven better, we should rewrite it using the subprocess module, to avoid the deprecation messages.  If you think that's worthwhile, I could probably do it pretty quickly.  You would probably prefer it not written in python at all, but that's a bit more work...  Completely removing the code involves more analysis of what's going on: are there any systems which execute this code from the atlas spkg, have readelf, and also use g95?  If not, then we can get rid of it, but how sure can we be of that?\n\nI think we've agreed before that a major upgrade to the atlas spkg is long overdue, and if we don't eliminate this code, we can add its removal to the list of things to change.  If you make a new spkg addressing [my comments above](http://trac.sagemath.org/sage_trac/ticket/9780#comment:12), maybe you could add a comment to SPKG.txt about this?",
     "created_at": "2010-09-09T21:18:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -724,14 +713,12 @@ sage: p[2].read()  # stderr, so the empty string if no error
 sage: p[1].read()  # stdout, so the output of the command
 ''
 ```
-
 So we could change the code
 
 ```
             s_gfortran = os.popen2('readelf -s ' +ATLAS_LIB+'/lib/libf77blas.so | grep gfortran')[1].read()
             s_g95 = os.popen2('readelf -s ' + ATLAS_LIB + '/lib/libf77blas.so | grep g95')[1].read()
 ```
-
 to the following (untested):
 
 ```
@@ -745,7 +732,6 @@ to the following (untested):
 		s_gfortran = proc_gfortran[1].read()
                 s_g95 = proc_g95[1].read()
 ```
-
 Even better, we should rewrite it using the subprocess module, to avoid the deprecation messages.  If you think that's worthwhile, I could probably do it pretty quickly.  You would probably prefer it not written in python at all, but that's a bit more work...  Completely removing the code involves more analysis of what's going on: are there any systems which execute this code from the atlas spkg, have readelf, and also use g95?  If not, then we can get rid of it, but how sure can we be of that?
 
 I think we've agreed before that a major upgrade to the atlas spkg is long overdue, and if we don't eliminate this code, we can add its removal to the list of things to change.  If you make a new spkg addressing [my comments above](http://trac.sagemath.org/sage_trac/ticket/9780#comment:12), maybe you could add a comment to SPKG.txt about this?
@@ -757,7 +743,7 @@ I think we've agreed before that a major upgrade to the atlas spkg is long overd
 archive/issue_comments_095843.json:
 ```json
 {
-    "body": "Replying to [comment:18 jhpalmieri]:\n> Okay, pointing SAGE_ATLAS_LIB to the \"local\" directory of a previous Sage installation works for me on several solaris machines (t2 and mark2: sparc; and fulvia: x86).  It also works for me on several linux machines (taurus and eno).  So I'm happy with it.  I would have liked to test it on some linux machine with a separately installed ATLAS, but it's not a perfect world.\n\nGood, the basic code seems to work. \n\n> As far as the readelf problem goes, I think we can leave it as is. \n\nI felt that too. Especially since I think it can be removed. I believe it's a complete waste of time to be honest. I've left it for now though. I added a message that a warning was harmless. (For reasons I do not understand, the warning is printed **before** my message, despite the code to execute `readlef` is **after** my message.) \n\nI addressed the other issue you had about the parent directory. See if the following makes any more sense. I've actually printed the directory where the libraries are expected to be, based on the setting of SAGE_ATLAS_LIB. I've not committed the changes yet - let me know what you think. \n\n\n```\ndrkirkby@hawk:~$ export SAGE_ATLAS_LIB=/some/random/directory/for/atlas\n```\n\n\nnow prints\n\n\n```\nUnable to find one of liblapack.a, libcblas.a, libatlas.a or libf77blas.a\nin the directory /some/random/directory/for/atlas/lib\n```\n\n\nJust run 'hg diff' if you want to see what I changed. \n\nThe package is at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nDave",
+    "body": "Replying to [comment:18 jhpalmieri]:\n> Okay, pointing SAGE_ATLAS_LIB to the \"local\" directory of a previous Sage installation works for me on several solaris machines (t2 and mark2: sparc; and fulvia: x86).  It also works for me on several linux machines (taurus and eno).  So I'm happy with it.  I would have liked to test it on some linux machine with a separately installed ATLAS, but it's not a perfect world.\n\n\nGood, the basic code seems to work. \n\n> As far as the readelf problem goes, I think we can leave it as is. \n\n\nI felt that too. Especially since I think it can be removed. I believe it's a complete waste of time to be honest. I've left it for now though. I added a message that a warning was harmless. (For reasons I do not understand, the warning is printed **before** my message, despite the code to execute `readlef` is **after** my message.) \n\nI addressed the other issue you had about the parent directory. See if the following makes any more sense. I've actually printed the directory where the libraries are expected to be, based on the setting of SAGE_ATLAS_LIB. I've not committed the changes yet - let me know what you think. \n\n```\ndrkirkby@hawk:~$ export SAGE_ATLAS_LIB=/some/random/directory/for/atlas\n```\n\nnow prints\n\n```\nUnable to find one of liblapack.a, libcblas.a, libatlas.a or libf77blas.a\nin the directory /some/random/directory/for/atlas/lib\n```\n\nJust run 'hg diff' if you want to see what I changed. \n\nThe package is at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nDave",
     "created_at": "2010-09-14T23:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -769,28 +755,26 @@ archive/issue_comments_095843.json:
 Replying to [comment:18 jhpalmieri]:
 > Okay, pointing SAGE_ATLAS_LIB to the "local" directory of a previous Sage installation works for me on several solaris machines (t2 and mark2: sparc; and fulvia: x86).  It also works for me on several linux machines (taurus and eno).  So I'm happy with it.  I would have liked to test it on some linux machine with a separately installed ATLAS, but it's not a perfect world.
 
+
 Good, the basic code seems to work. 
 
 > As far as the readelf problem goes, I think we can leave it as is. 
+
 
 I felt that too. Especially since I think it can be removed. I believe it's a complete waste of time to be honest. I've left it for now though. I added a message that a warning was harmless. (For reasons I do not understand, the warning is printed **before** my message, despite the code to execute `readlef` is **after** my message.) 
 
 I addressed the other issue you had about the parent directory. See if the following makes any more sense. I've actually printed the directory where the libraries are expected to be, based on the setting of SAGE_ATLAS_LIB. I've not committed the changes yet - let me know what you think. 
 
-
 ```
 drkirkby@hawk:~$ export SAGE_ATLAS_LIB=/some/random/directory/for/atlas
 ```
 
-
 now prints
-
 
 ```
 Unable to find one of liblapack.a, libcblas.a, libatlas.a or libf77blas.a
 in the directory /some/random/directory/for/atlas/lib
 ```
-
 
 Just run 'hg diff' if you want to see what I changed. 
 
@@ -861,7 +845,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095847.json:
 ```json
 {
-    "body": "Replying to [comment:20 jhpalmieri]:\n> Okay, looks good to me.  Once you commit the changes and post the link to the new spkg, if you think it's ready (the ticket is still marked \"needs info\"), then you can change it to \"positive review\".\n\nThank you John,\n\nYes, I'm sure it's ready. I've committed the changes and updated the .spkg at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nDave \n \n == To the release manager ==\nOnly the .spkg at \nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nneeds to be added to Sage  - there are no patches to apply to it, the Sage library or anywhere else. \n\nDave",
+    "body": "Replying to [comment:20 jhpalmieri]:\n> Okay, looks good to me.  Once you commit the changes and post the link to the new spkg, if you think it's ready (the ticket is still marked \"needs info\"), then you can change it to \"positive review\".\n\n\nThank you John,\n\nYes, I'm sure it's ready. I've committed the changes and updated the .spkg at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nDave \n \n == To the release manager ==\nOnly the .spkg at \nhttp://boxen.math.washington.edu/home/kirkby/patches/atlas-3.8.3.p15.spkg\n\nneeds to be added to Sage  - there are no patches to apply to it, the Sage library or anywhere else. \n\nDave",
     "created_at": "2010-09-16T21:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9779",
     "type": "issue_comment",
@@ -872,6 +856,7 @@ archive/issue_comments_095847.json:
 
 Replying to [comment:20 jhpalmieri]:
 > Okay, looks good to me.  Once you commit the changes and post the link to the new spkg, if you think it's ready (the ticket is still marked "needs info"), then you can change it to "positive review".
+
 
 Thank you John,
 

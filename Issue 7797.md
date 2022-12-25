@@ -114,7 +114,7 @@ Changing status from new to needs_review.
 archive/issue_comments_067221.json:
 ```json
 {
-    "body": "Doctest failure on sage.math:\n\n\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py\", line 32:\n    sage: freegb(l, 10)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[5]>\", line 1, in <module>\n        freegb(l, Integer(10))###line 32:\n    sage: freegb(l, 10)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/lib/python/site-packages/sage/libs/singular/letterplace.py\", line 70, in freegb\n        libsingular_options(bck)\n    TypeError: 'sage.libs.singular.option.LibSingularOptions' object is not callable\n```\n\n\nI think we used to allow calling libsingular option objects earlier, however load() replaces it.",
+    "body": "Doctest failure on sage.math:\n\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py\", line 32:\n    sage: freegb(l, 10)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[5]>\", line 1, in <module>\n        freegb(l, Integer(10))###line 32:\n    sage: freegb(l, 10)\n      File \"/mnt/usb1/scratch/malb/sage-4.4/local/lib/python/site-packages/sage/libs/singular/letterplace.py\", line 70, in freegb\n        libsingular_options(bck)\n    TypeError: 'sage.libs.singular.option.LibSingularOptions' object is not callable\n```\n\nI think we used to allow calling libsingular option objects earlier, however load() replaces it.",
     "created_at": "2010-06-03T22:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -124,7 +124,6 @@ archive/issue_comments_067221.json:
 ```
 
 Doctest failure on sage.math:
-
 
 ```
 File "/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py", line 32:
@@ -145,7 +144,6 @@ Exception raised:
     TypeError: 'sage.libs.singular.option.LibSingularOptions' object is not callable
 ```
 
-
 I think we used to allow calling libsingular option objects earlier, however load() replaces it.
 
 
@@ -155,7 +153,7 @@ I think we used to allow calling libsingular option objects earlier, however loa
 archive/issue_comments_067222.json:
 ```json
 {
-    "body": "Actually, this doesn't make sense to me:\n\n\n```python\nbck = int(libsingular_options)  \n#letter place needs these options\nlibsingular_options['redTail'] = True\nlibsingular_options['redSB'] = True\nlibsingular_options(bck)\n```\n\n\nFirst bck is stored and then options are changed. So far fine. However, then bck is loaded and thus overwrites the options just set.",
+    "body": "Actually, this doesn't make sense to me:\n\n```python\nbck = int(libsingular_options)  \n#letter place needs these options\nlibsingular_options['redTail'] = True\nlibsingular_options['redSB'] = True\nlibsingular_options(bck)\n```\n\nFirst bck is stored and then options are changed. So far fine. However, then bck is loaded and thus overwrites the options just set.",
     "created_at": "2010-06-24T14:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -166,7 +164,6 @@ archive/issue_comments_067222.json:
 
 Actually, this doesn't make sense to me:
 
-
 ```python
 bck = int(libsingular_options)  
 #letter place needs these options
@@ -174,7 +171,6 @@ libsingular_options['redTail'] = True
 libsingular_options['redSB'] = True
 libsingular_options(bck)
 ```
-
 
 First bck is stored and then options are changed. So far fine. However, then bck is loaded and thus overwrites the options just set.
 
@@ -302,7 +298,7 @@ archive/issue_comments_067228.json:
 archive/issue_comments_067229.json:
 ```json
 {
-    "body": "\n```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py\", line 32:\n\nsage: freegb(l, 10)\n\nExpected:\n\n[3*y*x*z^7*y + y*x*z^8, 3*y*x*z^6*y + y*x*z^7, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^5*y + y*x*z^6, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^4*y + y*x*z^5, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*y + y*x*z^4, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*y + y*x*z^3, y*x*z^2*x*z + 3*y^2*x*z^2*x, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, 3*y*x*z*y + y*x*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6, x*z*y^5*x*z - 1296*y*x*z^2*x^5, x*z*y^4*x*z - 216*y*x*z^2*x^4, x*z*y^3*x*z - 36*y*x*z^2*x^3, x*z*y^2*x*z - 6*y*x*z^2*x^2, x*z*y*x*z - y*x*z^2*x, 6*x*z*x - y*x*z, 3*x*y + x*z]\n\nGot\n[3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]\n```\n\nThis is with Singular 3-1-1-3 though.",
+    "body": "```\nFile \"/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py\", line 32:\n\nsage: freegb(l, 10)\n\nExpected:\n\n[3*y*x*z^7*y + y*x*z^8, 3*y*x*z^6*y + y*x*z^7, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^5*y + y*x*z^6, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^4*y + y*x*z^5, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*y + y*x*z^4, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*y + y*x*z^3, y*x*z^2*x*z + 3*y^2*x*z^2*x, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, 3*y*x*z*y + y*x*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6, x*z*y^5*x*z - 1296*y*x*z^2*x^5, x*z*y^4*x*z - 216*y*x*z^2*x^4, x*z*y^3*x*z - 36*y*x*z^2*x^3, x*z*y^2*x*z - 6*y*x*z^2*x^2, x*z*y*x*z - y*x*z^2*x, 6*x*z*x - y*x*z, 3*x*y + x*z]\n\nGot\n[3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]\n```\nThis is with Singular 3-1-1-3 though.",
     "created_at": "2010-07-14T22:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -310,7 +306,6 @@ archive/issue_comments_067229.json:
     "user": "https://github.com/malb"
 }
 ```
-
 
 ```
 File "/mnt/usb1/scratch/malb/sage-4.4/devel/sage-main/sage/libs/singular/letterplace.py", line 32:
@@ -324,7 +319,6 @@ Expected:
 Got
 [3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]
 ```
-
 This is with Singular 3-1-1-3 though.
 
 
@@ -415,7 +409,7 @@ some improvements to plural interface, still not much working
 archive/issue_comments_067234.json:
 ```json
 {
-    "body": "Replying to [comment:11 PolyBoRi]:\n\n> the result seem to differ just in order. What Ideal class is used for free algebras?\n\nApparently, we don't have one which works yet\n\n\n```\nsage: P.<a,b,c> = FreeAlgebra(QQ,3)\nsage: P\nFree Algebra on 3 generators (a, b, c) over Rational Field\nsage: P.ideal([a*b+c,a+1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/malb/<ipython console> in <module>()\n\n/usr/local/sage-4.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.ideal (sage/rings/ring.c:3426)()\n\n/usr/local/sage-4.3/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in Ideal(*args, **kwds)\n    187 \n    188     if not commutative_ring.is_CommutativeRing(R):\n--> 189         raise TypeError, \"R must be a commutative ring\"\n    190 \n    191     if len(gens) == 0:\n\nTypeError: R must be a commutative ring\n```\n",
+    "body": "Replying to [comment:11 PolyBoRi]:\n\n> the result seem to differ just in order. What Ideal class is used for free algebras?\n\n\nApparently, we don't have one which works yet\n\n```\nsage: P.<a,b,c> = FreeAlgebra(QQ,3)\nsage: P\nFree Algebra on 3 generators (a, b, c) over Rational Field\nsage: P.ideal([a*b+c,a+1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/malb/<ipython console> in <module>()\n\n/usr/local/sage-4.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.ideal (sage/rings/ring.c:3426)()\n\n/usr/local/sage-4.3/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in Ideal(*args, **kwds)\n    187 \n    188     if not commutative_ring.is_CommutativeRing(R):\n--> 189         raise TypeError, \"R must be a commutative ring\"\n    190 \n    191     if len(gens) == 0:\n\nTypeError: R must be a commutative ring\n```",
     "created_at": "2010-07-15T15:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -428,8 +422,8 @@ Replying to [comment:11 PolyBoRi]:
 
 > the result seem to differ just in order. What Ideal class is used for free algebras?
 
-Apparently, we don't have one which works yet
 
+Apparently, we don't have one which works yet
 
 ```
 sage: P.<a,b,c> = FreeAlgebra(QQ,3)
@@ -452,7 +446,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: R must be a commutative ring
 ```
-
 
 
 
@@ -527,7 +520,7 @@ If you think the arithmetic should be wrapped as well, that should be on a diffe
 archive/issue_comments_067238.json:
 ```json
 {
-    "body": "Replying to [comment:14 AlexanderDreyer]:\n> As I understand, this makes the Singular's letterplace functionality accessible to Sage (in addition to the Plural functionality of #4539).\n\nWhat is meant by \"Letterplace functionality\"? Is it \"simply\" computing Gr\u00f6bner basis with degree bound in free associative algebras?\n\nSomething that irritates me (and I already asked in the Singular forum) is that I could not find a way to *apply* such Groebner basis, e.g., in order to compute a normal form of an element of the free associative algebra w.r.t. this Gr\u00f6bner basis. Also I tend to call *basic arithmetic* a funtionality.\n\nReplying to [comment:15 burcin]:\n> This ticket is only about exposing the Groebner basis computation. We didn't think arithmetic was usable since\n> \n>  * there is a degree bound, and\n>  * it is a hack in Singular.\n> \n> If you think the arithmetic should be wrapped as well, that should be on a different ticket. I don't know how much the Plural wrapper (#4539) will help with that.\n\nOK. *If* I find the time, I'll finish the wrappers that I hacked together yesterday. The new ticket will then provide two alternative implementations of free (associative) algebras. One will be based on Gap, the other on Letterplace. The latter will be a hack as well: While doing arithmetic, the degree bound will be dynamically adapted. Currently I use Expect interfaces, but I guess using the Plural wrapper will improve things further.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:14 AlexanderDreyer]:\n> As I understand, this makes the Singular's letterplace functionality accessible to Sage (in addition to the Plural functionality of #4539).\n\n\nWhat is meant by \"Letterplace functionality\"? Is it \"simply\" computing Gr\u00f6bner basis with degree bound in free associative algebras?\n\nSomething that irritates me (and I already asked in the Singular forum) is that I could not find a way to *apply* such Groebner basis, e.g., in order to compute a normal form of an element of the free associative algebra w.r.t. this Gr\u00f6bner basis. Also I tend to call *basic arithmetic* a funtionality.\n\nReplying to [comment:15 burcin]:\n> This ticket is only about exposing the Groebner basis computation. We didn't think arithmetic was usable since\n> \n> * there is a degree bound, and\n> * it is a hack in Singular.\n> \n> If you think the arithmetic should be wrapped as well, that should be on a different ticket. I don't know how much the Plural wrapper (#4539) will help with that.\n\n\nOK. *If* I find the time, I'll finish the wrappers that I hacked together yesterday. The new ticket will then provide two alternative implementations of free (associative) algebras. One will be based on Gap, the other on Letterplace. The latter will be a hack as well: While doing arithmetic, the degree bound will be dynamically adapted. Currently I use Expect interfaces, but I guess using the Plural wrapper will improve things further.\n\nCheers,\nSimon",
     "created_at": "2010-10-02T07:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -539,6 +532,7 @@ archive/issue_comments_067238.json:
 Replying to [comment:14 AlexanderDreyer]:
 > As I understand, this makes the Singular's letterplace functionality accessible to Sage (in addition to the Plural functionality of #4539).
 
+
 What is meant by "Letterplace functionality"? Is it "simply" computing Gröbner basis with degree bound in free associative algebras?
 
 Something that irritates me (and I already asked in the Singular forum) is that I could not find a way to *apply* such Groebner basis, e.g., in order to compute a normal form of an element of the free associative algebra w.r.t. this Gröbner basis. Also I tend to call *basic arithmetic* a funtionality.
@@ -546,10 +540,11 @@ Something that irritates me (and I already asked in the Singular forum) is that 
 Replying to [comment:15 burcin]:
 > This ticket is only about exposing the Groebner basis computation. We didn't think arithmetic was usable since
 > 
->  * there is a degree bound, and
->  * it is a hack in Singular.
+> * there is a degree bound, and
+> * it is a hack in Singular.
 > 
 > If you think the arithmetic should be wrapped as well, that should be on a different ticket. I don't know how much the Plural wrapper (#4539) will help with that.
+
 
 OK. *If* I find the time, I'll finish the wrappers that I hacked together yesterday. The new ticket will then provide two alternative implementations of free (associative) algebras. One will be based on Gap, the other on Letterplace. The latter will be a hack as well: While doing arithmetic, the degree bound will be dynamically adapted. Currently I use Expect interfaces, but I guess using the Plural wrapper will improve things further.
 
@@ -605,7 +600,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_067241.json:
 ```json
 {
-    "body": "In addition, one doc test has a different result:\n\n\n```\nsage: from sage.libs.singular.letterplace import freegb \nsage: F.<x,y,z> = FreeAlgebra(QQ, 3); F \nFree Algebra on 3 generators (x, y, z) over Rational Field\nsage: l=[2*x*z*x+y*x*y, 3*x*y+x*z] \nsage: freegb(l, 10) \n[3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]\n```\n\n\nWhich one is correct?",
+    "body": "In addition, one doc test has a different result:\n\n```\nsage: from sage.libs.singular.letterplace import freegb \nsage: F.<x,y,z> = FreeAlgebra(QQ, 3); F \nFree Algebra on 3 generators (x, y, z) over Rational Field\nsage: l=[2*x*z*x+y*x*y, 3*x*y+x*z] \nsage: freegb(l, 10) \n[3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]\n```\n\nWhich one is correct?",
     "created_at": "2011-03-17T14:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -616,7 +611,6 @@ archive/issue_comments_067241.json:
 
 In addition, one doc test has a different result:
 
-
 ```
 sage: from sage.libs.singular.letterplace import freegb 
 sage: F.<x,y,z> = FreeAlgebra(QQ, 3); F 
@@ -625,7 +619,6 @@ sage: l=[2*x*z*x+y*x*y, 3*x*y+x*z]
 sage: freegb(l, 10) 
 [3*x*y + x*z, 6*x*z*x - y*x*z, 3*y*x*z*y + y*x*z^2, 3*y*x*z^2*y + y*x*z^3, x*z*y*x*z - y*x*z^2*x, 3*y*x*z^3*y + y*x*z^4, y*x*z^2*x*z + 3*y^2*x*z^2*x, x*z*y^2*x*z - 6*y*x*z^2*x^2, 3*y*x*z^4*y + y*x*z^5, y*x*z^3*x*z - 54*y^2*x*z^2*x^2, x*z*y^3*x*z - 36*y*x*z^2*x^3, 3*y*x*z^5*y + y*x*z^6, y*x*z^4*x*z + 972*y^2*x*z^2*x^3, 3*y*x*z^2*x^2*z*y + y*x*z^2*x^2*z^2, x*z*y^4*x*z - 216*y*x*z^2*x^4, 3*y*x*z^6*y + y*x*z^7, y*x*z^5*x*z - 17496*y^2*x*z^2*x^4, 3*y*x*z^3*x^2*z*y + y*x*z^3*x^2*z^2, 3*y*x*z^2*x^2*z^2*y + y*x*z^2*x^2*z^3, 3*y*x*z^2*x^3*z*y + y*x*z^2*x^3*z^2, x*z*y^5*x*z - 1296*y*x*z^2*x^5, 3*y*x*z^7*y + y*x*z^8, y*x*z^6*x*z + 314928*y^2*x*z^2*x^5, 3*y*x*z^4*x^2*z*y + y*x*z^4*x^2*z^2, 3*y*x*z^3*x^2*z^2*y + y*x*z^3*x^2*z^3, 3*y*x*z^3*x^3*z*y + y*x*z^3*x^3*z^2, 3*y*x*z^2*x^2*z^3*y + y*x*z^2*x^2*z^4, y*x*z^2*x^2*z^2*x*z + 3*y^2*x*z^2*x^2*z^2*x, 3*y*x*z^2*x^3*z^2*y + y*x*z^2*x^3*z^3, 3*y*x*z^2*x^4*z*y + y*x*z^2*x^4*z^2, x*z*y^6*x*z - 7776*y*x*z^2*x^6]
 ```
-
 
 Which one is correct?
 
@@ -662,7 +655,7 @@ And then there's documentation to write...
 archive/issue_comments_067243.json:
 ```json
 {
-    "body": "I have attached a new patch that replaces all previous patches and provides a lot more functionality.\n\nSince I learned much from the previous patches, I hesitate to remove Michael and Burcin from the author list. But perhaps you like to be referee? Then you should move your name into the reviewer field.\n\n**__Technical Remarks__**\n\n`singular_function` is very useful! However, it was impossible to simply call the `freegb.lib` library functions of Singular, since they rely on ring attributes -- but ring attributes have not been wrapped in `libSingular`.\n\nMoreover, it is not a good idea to call the `makeLetterplaceRing` function from Singular and then transform the resulting `RingWrap` into a polynomial ring. It *is* possible -- but the result can not be pickled, since its variable names look like `x(1),y(1),x(2),y(2)` and are thus no valid identifiers.\n\nBut it is no problem to create another ring with more sober variable names, and apply the letterplace functions to it. One just needs to work around the attribute tests that these functions do. In fact, these functions do only one thing after the checking, namely a system call. So, I simply did this system calls as well.\n\nIn the current release, Singular does provide the Gr\u00f6bner basis computations in free algebras, but it does *not* provide normal form computations. Grischa Studzinski has send me some code that is supposed to become part of `freegb.lib` -- again, I can not call it directly, but it was fairly straight forward to implement along the lines of Grischa's code.\n\n**__New Features__**\n\n*__Free Algebra constructor as `UniqueFactory`__*\n\nUp to now, the `FreeAlgebra` constructor was based on an incomplete way of caching: When you pickle and unpickle a free algebra, you would not get the same object.\n\n```\n# old behaviour\nsage: F.<a,b,c> = FreeAlgebra(QQ,3)\nsage: loads(dumps(F)) is F\nFalse\n```\n\n\nThis is now resolved. Moreover, it is not needed to explicitly provide the number of generators, when it is obvious from the list of names:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ)\nsage: loads(dumps(F)) is F\nTrue\n```\n\n\nI did one change that may be subject to criticism, and I wouldn't oppose to revert it. A free algebra in one generator is a polynomial ring. So, I return a polynomial ring:\n\n```\nsage: FreeAlgebra(QQ,'x')\nUnivariate Polynomial Ring in x over Rational Field\n```\n\n\nThe constructor can now also be asked for a different implementation, as in all examples below.\n\n*__Free Algebra via Letterplace__*\n\nI provide a new implementation of free algebras. It can be constructed as follows:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F\nFree Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\n```\n\n\nDue to some shortcomings of Singular's letterplace implementation, unfortunately we need to restrict to homogeneous elements:\n\n```\nsage: (x+2*y)^2\nx*x + 2*x*y + 2*y*x + 4*y*y\nsage: x+0\nx\nTraceback (most recent call last):\n...\nArithmeticError: Can only add elements of the same degree\n```\n\nThis is why the new implementation can not yet become the default.\n\nHowever, the arithmetic in the new implementation is much faster than the old:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F_old.<a,b,c> = FreeAlgebra(QQ)\nsage: timeit('t=(x+y)^15')\n5 loops, best of 3: 27.7 ms per loop\nsage: timeit('t=(a+b)^15')\nsage: %time t=(a+b)^15\nCPU times: user 4.51 s, sys: 0.09 s, total: 4.60 s\nWall time: 6.46 s\nsage: 4510/27.7\n162.815884476534\nsage: timeit('t=(x+y)^15')\n25 loops, best of 3: 19.7 ms per loop\nsage: %time t=(a+b)^15\nCPU times: user 2.70 s, sys: 0.02 s, total: 2.72 s\nWall time: 2.73 s\nsage: 2700/19.7\n137.055837563452\n```\n\n\n*__One- and Twosided Ideals of Noncommutative Rings__*\n\nI implemented it in a fairly general way, ideals can be created for any ring:\n\n```\nsage: A = SteenrodAlgebra(2)\nsage: IL = A*[A.1+A.2,A.1^2]; IL\nLeft Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\nsage: IR = [A.1+A.2,A.1^2]*A; IR\nRight Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\nsage: IT = A*[A.1+A.2,A.1^2]*A; IT\nTwosided Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\n```\n\n\nNote some nastyness: The parent of an ideal still is the \"monoid of ideals of a ring\". But we actually have no multiplication in the non-commutative setting:\n\n```\nsage: IL*IR\nTraceback (most recent call last):\n...\nNotImplementedError: Can not multiply non-commutative ideals.\n```\n\n\nOf course, in general, we have no way to solve the ideal containment problem. But in free algebras, we have letterplace:\n\n```\nsage: I.groebner_basis(degbound=3)\nTwosided Ideal (y*y*y - y*y*z + y*z*y - y*z*z, y*y*x + y*y*z + y*z*x + y*z*z, x*y + y*z, x*x - y*x - y*y - y*z) of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\nsage: (x*y*z*y*x).normal_form(I)\ny*z*z*y*z + y*z*z*z*x + y*z*z*z*z\nsage: x*y*z*y*x - (x*y*z*y*x).normal_form(I) in I\nTrue\nsage: x*I.0-I.1*y+I.0*y in I\nTrue\nsage: 1 in I\nFalse\n```\n\n\n*__Quotient Rings__*\n\nPreviously, quotient rings have only been available for rings that inherit from the base class of commutative rings. My patch makes them available for all rings, and actually it should work to some extent even for objects that belong to the category `Rings()` but do not inherit from `sage.rings.ring.Ring`.\n\nThe requirement is that we mod by an ideal `I` that is *twosided* and that has a method `I.reduce(x)` that returns a normal form of an element `x` with respect to `I`. That requirement holds for ideals of polynomial rings, and also for homogeneous ideals of free associative algebras. In particular:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: I = F*[x*y+y*z,x^2+x*y-y*x-y^2]*F\nsage: Q.<a,b,c> = F.quo(I); Q\nQuotient of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field by the ideal (x*y + y*z, x*x + x*y - y*x - y*y)\nsage: a*b\n-b*c\nsage: a^3\n-b*c*a - b*c*b - b*c*c\nsage: J = Q*[a^3-b^3]*Q\nsage: R.<i,j,k> = Q.quo(J); R\nQuotient of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field by the ideal (-y*y*z - y*z*x - 2*y*z*z, x*y + y*z, x*x + x*y - y*x - y*y)\nsage: i^3\n-j*k*i - j*k*j - j*k*k\nsage: j^3\n-j*k*i - j*k*j - j*k*k\n```\n\n\nOne can also test if the quotient is commutative:\n\n```\nsage: Q.is_commutative()\nFalse\nsage: J = F*[x*y-y*x,x*z-z*x,y*z-z*y,x^3-y^3]*F\nsage: R = F.quo(J)\nsage: R.is_commutative()\nTrue\n```\n\n\n**__Miscellaneous__**\n\nI inserted the documentation of the new modules into the reference manual - I think it looks nice, but I guess a referee should double check.\n\nDoc tests pass for me. Thus: Ready for review!!",
+    "body": "I have attached a new patch that replaces all previous patches and provides a lot more functionality.\n\nSince I learned much from the previous patches, I hesitate to remove Michael and Burcin from the author list. But perhaps you like to be referee? Then you should move your name into the reviewer field.\n\n**__Technical Remarks__**\n\n`singular_function` is very useful! However, it was impossible to simply call the `freegb.lib` library functions of Singular, since they rely on ring attributes -- but ring attributes have not been wrapped in `libSingular`.\n\nMoreover, it is not a good idea to call the `makeLetterplaceRing` function from Singular and then transform the resulting `RingWrap` into a polynomial ring. It *is* possible -- but the result can not be pickled, since its variable names look like `x(1),y(1),x(2),y(2)` and are thus no valid identifiers.\n\nBut it is no problem to create another ring with more sober variable names, and apply the letterplace functions to it. One just needs to work around the attribute tests that these functions do. In fact, these functions do only one thing after the checking, namely a system call. So, I simply did this system calls as well.\n\nIn the current release, Singular does provide the Gr\u00f6bner basis computations in free algebras, but it does *not* provide normal form computations. Grischa Studzinski has send me some code that is supposed to become part of `freegb.lib` -- again, I can not call it directly, but it was fairly straight forward to implement along the lines of Grischa's code.\n\n**__New Features__**\n\n*__Free Algebra constructor as `UniqueFactory`__*\n\nUp to now, the `FreeAlgebra` constructor was based on an incomplete way of caching: When you pickle and unpickle a free algebra, you would not get the same object.\n\n```\n# old behaviour\nsage: F.<a,b,c> = FreeAlgebra(QQ,3)\nsage: loads(dumps(F)) is F\nFalse\n```\n\nThis is now resolved. Moreover, it is not needed to explicitly provide the number of generators, when it is obvious from the list of names:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ)\nsage: loads(dumps(F)) is F\nTrue\n```\n\nI did one change that may be subject to criticism, and I wouldn't oppose to revert it. A free algebra in one generator is a polynomial ring. So, I return a polynomial ring:\n\n```\nsage: FreeAlgebra(QQ,'x')\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nThe constructor can now also be asked for a different implementation, as in all examples below.\n\n*__Free Algebra via Letterplace__*\n\nI provide a new implementation of free algebras. It can be constructed as follows:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F\nFree Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\n```\n\nDue to some shortcomings of Singular's letterplace implementation, unfortunately we need to restrict to homogeneous elements:\n\n```\nsage: (x+2*y)^2\nx*x + 2*x*y + 2*y*x + 4*y*y\nsage: x+0\nx\nTraceback (most recent call last):\n...\nArithmeticError: Can only add elements of the same degree\n```\nThis is why the new implementation can not yet become the default.\n\nHowever, the arithmetic in the new implementation is much faster than the old:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F_old.<a,b,c> = FreeAlgebra(QQ)\nsage: timeit('t=(x+y)^15')\n5 loops, best of 3: 27.7 ms per loop\nsage: timeit('t=(a+b)^15')\nsage: %time t=(a+b)^15\nCPU times: user 4.51 s, sys: 0.09 s, total: 4.60 s\nWall time: 6.46 s\nsage: 4510/27.7\n162.815884476534\nsage: timeit('t=(x+y)^15')\n25 loops, best of 3: 19.7 ms per loop\nsage: %time t=(a+b)^15\nCPU times: user 2.70 s, sys: 0.02 s, total: 2.72 s\nWall time: 2.73 s\nsage: 2700/19.7\n137.055837563452\n```\n\n*__One- and Twosided Ideals of Noncommutative Rings__*\n\nI implemented it in a fairly general way, ideals can be created for any ring:\n\n```\nsage: A = SteenrodAlgebra(2)\nsage: IL = A*[A.1+A.2,A.1^2]; IL\nLeft Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\nsage: IR = [A.1+A.2,A.1^2]*A; IR\nRight Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\nsage: IT = A*[A.1+A.2,A.1^2]*A; IT\nTwosided Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra\n```\n\nNote some nastyness: The parent of an ideal still is the \"monoid of ideals of a ring\". But we actually have no multiplication in the non-commutative setting:\n\n```\nsage: IL*IR\nTraceback (most recent call last):\n...\nNotImplementedError: Can not multiply non-commutative ideals.\n```\n\nOf course, in general, we have no way to solve the ideal containment problem. But in free algebras, we have letterplace:\n\n```\nsage: I.groebner_basis(degbound=3)\nTwosided Ideal (y*y*y - y*y*z + y*z*y - y*z*z, y*y*x + y*y*z + y*z*x + y*z*z, x*y + y*z, x*x - y*x - y*y - y*z) of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\nsage: (x*y*z*y*x).normal_form(I)\ny*z*z*y*z + y*z*z*z*x + y*z*z*z*z\nsage: x*y*z*y*x - (x*y*z*y*x).normal_form(I) in I\nTrue\nsage: x*I.0-I.1*y+I.0*y in I\nTrue\nsage: 1 in I\nFalse\n```\n\n*__Quotient Rings__*\n\nPreviously, quotient rings have only been available for rings that inherit from the base class of commutative rings. My patch makes them available for all rings, and actually it should work to some extent even for objects that belong to the category `Rings()` but do not inherit from `sage.rings.ring.Ring`.\n\nThe requirement is that we mod by an ideal `I` that is *twosided* and that has a method `I.reduce(x)` that returns a normal form of an element `x` with respect to `I`. That requirement holds for ideals of polynomial rings, and also for homogeneous ideals of free associative algebras. In particular:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: I = F*[x*y+y*z,x^2+x*y-y*x-y^2]*F\nsage: Q.<a,b,c> = F.quo(I); Q\nQuotient of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field by the ideal (x*y + y*z, x*x + x*y - y*x - y*y)\nsage: a*b\n-b*c\nsage: a^3\n-b*c*a - b*c*b - b*c*c\nsage: J = Q*[a^3-b^3]*Q\nsage: R.<i,j,k> = Q.quo(J); R\nQuotient of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field by the ideal (-y*y*z - y*z*x - 2*y*z*z, x*y + y*z, x*x + x*y - y*x - y*y)\nsage: i^3\n-j*k*i - j*k*j - j*k*k\nsage: j^3\n-j*k*i - j*k*j - j*k*k\n```\n\nOne can also test if the quotient is commutative:\n\n```\nsage: Q.is_commutative()\nFalse\nsage: J = F*[x*y-y*x,x*z-z*x,y*z-z*y,x^3-y^3]*F\nsage: R = F.quo(J)\nsage: R.is_commutative()\nTrue\n```\n\n**__Miscellaneous__**\n\nI inserted the documentation of the new modules into the reference manual - I think it looks nice, but I guess a referee should double check.\n\nDoc tests pass for me. Thus: Ready for review!!",
     "created_at": "2011-03-24T16:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -698,7 +691,6 @@ sage: loads(dumps(F)) is F
 False
 ```
 
-
 This is now resolved. Moreover, it is not needed to explicitly provide the number of generators, when it is obvious from the list of names:
 
 ```
@@ -707,14 +699,12 @@ sage: loads(dumps(F)) is F
 True
 ```
 
-
 I did one change that may be subject to criticism, and I wouldn't oppose to revert it. A free algebra in one generator is a polynomial ring. So, I return a polynomial ring:
 
 ```
 sage: FreeAlgebra(QQ,'x')
 Univariate Polynomial Ring in x over Rational Field
 ```
-
 
 The constructor can now also be asked for a different implementation, as in all examples below.
 
@@ -728,7 +718,6 @@ sage: F
 Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field
 ```
 
-
 Due to some shortcomings of Singular's letterplace implementation, unfortunately we need to restrict to homogeneous elements:
 
 ```
@@ -740,7 +729,6 @@ Traceback (most recent call last):
 ...
 ArithmeticError: Can only add elements of the same degree
 ```
-
 This is why the new implementation can not yet become the default.
 
 However, the arithmetic in the new implementation is much faster than the old:
@@ -765,7 +753,6 @@ sage: 2700/19.7
 137.055837563452
 ```
 
-
 *__One- and Twosided Ideals of Noncommutative Rings__*
 
 I implemented it in a fairly general way, ideals can be created for any ring:
@@ -780,7 +767,6 @@ sage: IT = A*[A.1+A.2,A.1^2]*A; IT
 Twosided Ideal (Sq(2) + Sq(4), Sq(1,1)) of mod 2 Steenrod algebra
 ```
 
-
 Note some nastyness: The parent of an ideal still is the "monoid of ideals of a ring". But we actually have no multiplication in the non-commutative setting:
 
 ```
@@ -789,7 +775,6 @@ Traceback (most recent call last):
 ...
 NotImplementedError: Can not multiply non-commutative ideals.
 ```
-
 
 Of course, in general, we have no way to solve the ideal containment problem. But in free algebras, we have letterplace:
 
@@ -805,7 +790,6 @@ True
 sage: 1 in I
 False
 ```
-
 
 *__Quotient Rings__*
 
@@ -831,7 +815,6 @@ sage: j^3
 -j*k*i - j*k*j - j*k*k
 ```
 
-
 One can also test if the quotient is commutative:
 
 ```
@@ -842,7 +825,6 @@ sage: R = F.quo(J)
 sage: R.is_commutative()
 True
 ```
-
 
 **__Miscellaneous__**
 
@@ -875,7 +857,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067245.json:
 ```json
 {
-    "body": "I forgot one technical detail:\n\nNot all rings inherit from the base class of rings. Examples are matrix algebras. In order to support non-commutative ideals for such rings, I provide the relevant methods as `ParentMethods` in the category of `Rings()`. Perhaps this duplication of code is considered a code smell.\n\nAt least, it enables the following:\n\n```\nsage: MS = MatrixSpace(QQ,2,2)\nsage: MS*[MS.1,2]\nLeft Ideal \n(\n  [0 1]\n  [0 0],\n\n  [2 0]\n  [0 2]\n)\n of Full MatrixSpace of 2 by 2 dense matrices over Rational Field\n```\n",
+    "body": "I forgot one technical detail:\n\nNot all rings inherit from the base class of rings. Examples are matrix algebras. In order to support non-commutative ideals for such rings, I provide the relevant methods as `ParentMethods` in the category of `Rings()`. Perhaps this duplication of code is considered a code smell.\n\nAt least, it enables the following:\n\n```\nsage: MS = MatrixSpace(QQ,2,2)\nsage: MS*[MS.1,2]\nLeft Ideal \n(\n  [0 1]\n  [0 0],\n\n  [2 0]\n  [0 2]\n)\n of Full MatrixSpace of 2 by 2 dense matrices over Rational Field\n```",
     "created_at": "2011-03-24T16:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -903,7 +885,6 @@ Left Ideal
 )
  of Full MatrixSpace of 2 by 2 dense matrices over Rational Field
 ```
-
 
 
 
@@ -1016,7 +997,7 @@ http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.
 archive/issue_comments_067251.json:
 ```json
 {
-    "body": "Replying to [comment:30 nthiery]:\n> Version rebased on top of #10961 available from:\n> \n> http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch\n\nThank you!\n\nWhat is the procedure? Shall I replace my patch with the rebased one and state the dependency (to the patchbot), or shall the rebased version remain on the combinat patch server?\n\nBest regards,\nSimon",
+    "body": "Replying to [comment:30 nthiery]:\n> Version rebased on top of #10961 available from:\n> \n> http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch\n\n\nThank you!\n\nWhat is the procedure? Shall I replace my patch with the rebased one and state the dependency (to the patchbot), or shall the rebased version remain on the combinat patch server?\n\nBest regards,\nSimon",
     "created_at": "2011-03-27T07:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1029,6 +1010,7 @@ Replying to [comment:30 nthiery]:
 > Version rebased on top of #10961 available from:
 > 
 > http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch
+
 
 Thank you!
 
@@ -1066,7 +1048,7 @@ Anne
 archive/issue_comments_067253.json:
 ```json
 {
-    "body": "Replying to [comment:31 SimonKing]:\n> Replying to [comment:30 nthiery]:\n> > Version rebased on top of #10961 available from:\n> > \n> > http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch\n> \n> Thank you!\n> \n> What is the procedure? Shall I replace my patch with the rebased one and state the dependency (to the patchbot), or shall the rebased version remain on the combinat patch server?\n> \n> Best regards,\n> Simon\n\nSince #10961 hopefully gets merged soon, you should probably upload the rebased version on trac and add `Dependencies: #10961' to the description. Then patchbot should in principle know!",
+    "body": "Replying to [comment:31 SimonKing]:\n> Replying to [comment:30 nthiery]:\n> > Version rebased on top of #10961 available from:\n> > \n> > http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch\n\n> \n> Thank you!\n> \n> What is the procedure? Shall I replace my patch with the rebased one and state the dependency (to the patchbot), or shall the rebased version remain on the combinat patch server?\n> \n> Best regards,\n> Simon\n\n\nSince #10961 hopefully gets merged soon, you should probably upload the rebased version on trac and add `Dependencies: #10961' to the description. Then patchbot should in principle know!",
     "created_at": "2011-03-27T08:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1080,6 +1062,7 @@ Replying to [comment:31 SimonKing]:
 > > Version rebased on top of #10961 available from:
 > > 
 > > http://combinat.sagemath.org/patches/file/tip/trac7797-full_letterplace_wrapper.patch
+
 > 
 > Thank you!
 > 
@@ -1087,6 +1070,7 @@ Replying to [comment:31 SimonKing]:
 > 
 > Best regards,
 > Simon
+
 
 Since #10961 hopefully gets merged soon, you should probably upload the rebased version on trac and add `Dependencies: #10961' to the description. Then patchbot should in principle know!
 
@@ -1118,7 +1102,7 @@ Depends on #10961
 archive/issue_comments_067255.json:
 ```json
 {
-    "body": "Replying to [comment:32 aschilling]:\n> This patch provides an interface to Singular, which gives a faster implementation of free algebras and adds new features such as for example quotients of free algebras (for terms of homogeneous degree). I have tested the quotient algebra features extensively and they seem to work great!\n\nGood! I'll give that feedback to the Singular team as well.\n\n> I do not feel qualified to do a technical review, but I am happy to give a positive review for the new features added.\n\nThank you! There is at least one point that should probably be raised on sage-algebra: Is it acceptable that (with my patch) the `FreeAlgebra` constructor returns a polynomial ring when asked for a free algebra with only one generator? \n\nMathematically it is correct, but I wonder if that is acceptable in a CAS.\n\nSimon",
+    "body": "Replying to [comment:32 aschilling]:\n> This patch provides an interface to Singular, which gives a faster implementation of free algebras and adds new features such as for example quotients of free algebras (for terms of homogeneous degree). I have tested the quotient algebra features extensively and they seem to work great!\n\n\nGood! I'll give that feedback to the Singular team as well.\n\n> I do not feel qualified to do a technical review, but I am happy to give a positive review for the new features added.\n\n\nThank you! There is at least one point that should probably be raised on sage-algebra: Is it acceptable that (with my patch) the `FreeAlgebra` constructor returns a polynomial ring when asked for a free algebra with only one generator? \n\nMathematically it is correct, but I wonder if that is acceptable in a CAS.\n\nSimon",
     "created_at": "2011-03-27T08:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1130,9 +1114,11 @@ archive/issue_comments_067255.json:
 Replying to [comment:32 aschilling]:
 > This patch provides an interface to Singular, which gives a faster implementation of free algebras and adds new features such as for example quotients of free algebras (for terms of homogeneous degree). I have tested the quotient algebra features extensively and they seem to work great!
 
+
 Good! I'll give that feedback to the Singular team as well.
 
 > I do not feel qualified to do a technical review, but I am happy to give a positive review for the new features added.
+
 
 Thank you! There is at least one point that should probably be raised on sage-algebra: Is it acceptable that (with my patch) the `FreeAlgebra` constructor returns a polynomial ring when asked for a free algebra with only one generator? 
 
@@ -1215,7 +1201,7 @@ Depends on #10961
 archive/issue_comments_067259.json:
 ```json
 {
-    "body": "Replying to [comment:37 SimonKing]:\n> ...such that `F(dict(p))==p` for any element p of F.\n\nSorry, I meant to write `p == F._from_dict_(dict(p))`.",
+    "body": "Replying to [comment:37 SimonKing]:\n> ...such that `F(dict(p))==p` for any element p of F.\n\n\nSorry, I meant to write `p == F._from_dict_(dict(p))`.",
     "created_at": "2011-03-27T14:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1226,6 +1212,7 @@ archive/issue_comments_067259.json:
 
 Replying to [comment:37 SimonKing]:
 > ...such that `F(dict(p))==p` for any element p of F.
+
 
 Sorry, I meant to write `p == F._from_dict_(dict(p))`.
 
@@ -1272,7 +1259,7 @@ It was suggested to split this ticket, and also it was suggested that the `FreeA
 archive/issue_comments_067262.json:
 ```json
 {
-    "body": "I managed to split my patch. The part concerning \"basic implementation of ideals in non-commutative rings\" is now at #11068. The new patch is based on top of that.\n\n**__TODO__**\n\nLet the `FreeAlgebra` constructor always return a free algebra, not a polynomial ring.\n\n**__New Feature__**\n\nIn addition to what was described in previous comments, my letterplace wrapper can compute *complete* twosided Gr\u00f6bnerbases by an adaptive algorithm. The idea is simple: If the Gr\u00f6bner basis is known out to degree `2*d-1`, but the highest degree of its generators is `d`, then the Gr\u00f6bner basis is complete.\n\nExample:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: I = F*[x*y-y*x,x*z-z*x,y*z-z*y,x^2*y-z^3,x*y^2+z*x^2]*F\nsage: I.groebner_basis(Infinity)\nTwosided Ideal (z*z*z*y*y + z*z*z*z*x, z*x*x*x + z*z*z*y, y*z - z*y, y*y*x + z*x*x, y*x*x - z*z*z, x*z - z*x, x*y - y*x) of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\n```\n\n\nSince the commutators are contained in the ideal, we can verify that result with a commutative Gr\u00f6bner basis, as follows:\n\n```\nsage: P.<c,b,a> = PolynomialRing(QQ,order='neglex')\nsage: J = P*[a^2*b-c^3,a*b^2+c*a^2]\nsage: J.groebner_basis()\n[b*a^2 - c^3, b^2*a + c*a^2, c*a^3 + c^3*b, c^3*b^2 + c^4*a]\n```\n\n\nSo, that's a good consistency test.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch\n\nDepends on #11068",
+    "body": "I managed to split my patch. The part concerning \"basic implementation of ideals in non-commutative rings\" is now at #11068. The new patch is based on top of that.\n\n**__TODO__**\n\nLet the `FreeAlgebra` constructor always return a free algebra, not a polynomial ring.\n\n**__New Feature__**\n\nIn addition to what was described in previous comments, my letterplace wrapper can compute *complete* twosided Gr\u00f6bnerbases by an adaptive algorithm. The idea is simple: If the Gr\u00f6bner basis is known out to degree `2*d-1`, but the highest degree of its generators is `d`, then the Gr\u00f6bner basis is complete.\n\nExample:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace')\nsage: I = F*[x*y-y*x,x*z-z*x,y*z-z*y,x^2*y-z^3,x*y^2+z*x^2]*F\nsage: I.groebner_basis(Infinity)\nTwosided Ideal (z*z*z*y*y + z*z*z*z*x, z*x*x*x + z*z*z*y, y*z - z*y, y*y*x + z*x*x, y*x*x - z*z*z, x*z - z*x, x*y - y*x) of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field\n```\n\nSince the commutators are contained in the ideal, we can verify that result with a commutative Gr\u00f6bner basis, as follows:\n\n```\nsage: P.<c,b,a> = PolynomialRing(QQ,order='neglex')\nsage: J = P*[a^2*b-c^3,a*b^2+c*a^2]\nsage: J.groebner_basis()\n[b*a^2 - c^3, b^2*a + c*a^2, c*a^3 + c^3*b, c^3*b^2 + c^4*a]\n```\n\nSo, that's a good consistency test.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch\n\nDepends on #11068",
     "created_at": "2011-03-28T14:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1300,7 +1287,6 @@ sage: I.groebner_basis(Infinity)
 Twosided Ideal (z*z*z*y*y + z*z*z*z*x, z*x*x*x + z*z*z*y, y*z - z*y, y*y*x + z*x*x, y*x*x - z*z*z, x*z - z*x, x*y - y*x) of Free Associative Unital Algebra on 3 generators ('x', 'y', 'z') over Rational Field
 ```
 
-
 Since the commutators are contained in the ideal, we can verify that result with a commutative Gröbner basis, as follows:
 
 ```
@@ -1309,7 +1295,6 @@ sage: J = P*[a^2*b-c^3,a*b^2+c*a^2]
 sage: J.groebner_basis()
 [b*a^2 - c^3, b^2*a + c*a^2, c*a^3 + c^3*b, c^3*b^2 + c^4*a]
 ```
-
 
 So, that's a good consistency test.
 
@@ -1348,7 +1333,7 @@ Apply trac7797-full_letterplace_wrapper_rel11068.patch
 archive/issue_comments_067264.json:
 ```json
 {
-    "body": "I updated the patch.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch\n\nDepends on #11068\n\nActually I am not sure about all dependencies. #11068 should be enough on top of sage-4.7.alpha5. However, here is a full account of the patches that I had applied to sage-4.7.alpha5 before creating the patch here: #10296, #9944, #9138, #9976, #11115, #11068.\n\nIn particular, I think the refactoring of rings, quotient rings and non-commutative ideals is successfully solved in #9138 and #11068. Concerning unigenerated free algebras, it seems better to stay in the world of free algebras, rather than returning a polynomial ring. So, we have\n\n```\nsage: F.<x> = FreeAlgebra(QQ)\nsage: F\nFree Algebra on 1 generators (x,) over Rational Field\nsage: F.is_commutative()\nTrue\nsage: F.<x> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F\nFree Associative Unital Algebra on 1 generators (x,) over Rational Field\nsage: F.is_commutative()\nTrue\n```\n\n\nIn principle, it could be reviewed now. But the patch chain in front of it is rather large, and not everything has a positive review, yet.\n\nMy next plan: Allow positive integer degree weights on the generators, extending the scope of the letterplace wrapper from homogeneous to weighted homogeneous elements, and allow degree-wise computation of weighted homogeneous Gr\u00f6bner bases. Note that this goes beyond what is currently implemented in Singular, but it should work using a little hack (slack variables).",
+    "body": "I updated the patch.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch\n\nDepends on #11068\n\nActually I am not sure about all dependencies. #11068 should be enough on top of sage-4.7.alpha5. However, here is a full account of the patches that I had applied to sage-4.7.alpha5 before creating the patch here: #10296, #9944, #9138, #9976, #11115, #11068.\n\nIn particular, I think the refactoring of rings, quotient rings and non-commutative ideals is successfully solved in #9138 and #11068. Concerning unigenerated free algebras, it seems better to stay in the world of free algebras, rather than returning a polynomial ring. So, we have\n\n```\nsage: F.<x> = FreeAlgebra(QQ)\nsage: F\nFree Algebra on 1 generators (x,) over Rational Field\nsage: F.is_commutative()\nTrue\nsage: F.<x> = FreeAlgebra(QQ, implementation='letterplace')\nsage: F\nFree Associative Unital Algebra on 1 generators (x,) over Rational Field\nsage: F.is_commutative()\nTrue\n```\n\nIn principle, it could be reviewed now. But the patch chain in front of it is rather large, and not everything has a positive review, yet.\n\nMy next plan: Allow positive integer degree weights on the generators, extending the scope of the letterplace wrapper from homogeneous to weighted homogeneous elements, and allow degree-wise computation of weighted homogeneous Gr\u00f6bner bases. Note that this goes beyond what is currently implemented in Singular, but it should work using a little hack (slack variables).",
     "created_at": "2011-04-27T10:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1379,7 +1364,6 @@ Free Associative Unital Algebra on 1 generators (x,) over Rational Field
 sage: F.is_commutative()
 True
 ```
-
 
 In principle, it could be reviewed now. But the patch chain in front of it is rather large, and not everything has a positive review, yet.
 
@@ -1468,7 +1452,7 @@ I just found that the documentation (at least with #9976 applied) is not good. S
 archive/issue_comments_067269.json:
 ```json
 {
-    "body": "Replying to [comment:44 SimonKing]:\n> I just found that the documentation (at least with #9976 applied) is not good. Some stuff is included that certainly does not belong there.\n\nActually, on second thought, it belongs there: I am talking about the two singular_function instances included in the module. The main problem was that singular_function includes the documentation provided by Singular without taking care of formatting -- resulting in numerous errors (e.g., back ticks are misinterpreted as the beginning of Latex expressions, the indentation is handled differently, and so on).\n\nIn #11268, I suggest to take care if it by turning the Singular documentation into a verbose code block. With that change, the documentation looks a lot better. I therefore make it a new dependency.\n\nDepends on #11068 #11268",
+    "body": "Replying to [comment:44 SimonKing]:\n> I just found that the documentation (at least with #9976 applied) is not good. Some stuff is included that certainly does not belong there.\n\n\nActually, on second thought, it belongs there: I am talking about the two singular_function instances included in the module. The main problem was that singular_function includes the documentation provided by Singular without taking care of formatting -- resulting in numerous errors (e.g., back ticks are misinterpreted as the beginning of Latex expressions, the indentation is handled differently, and so on).\n\nIn #11268, I suggest to take care if it by turning the Singular documentation into a verbose code block. With that change, the documentation looks a lot better. I therefore make it a new dependency.\n\nDepends on #11068 #11268",
     "created_at": "2011-04-28T12:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1479,6 +1463,7 @@ archive/issue_comments_067269.json:
 
 Replying to [comment:44 SimonKing]:
 > I just found that the documentation (at least with #9976 applied) is not good. Some stuff is included that certainly does not belong there.
+
 
 Actually, on second thought, it belongs there: I am talking about the two singular_function instances included in the module. The main problem was that singular_function includes the documentation provided by Singular without taking care of formatting -- resulting in numerous errors (e.g., back ticks are misinterpreted as the beginning of Latex expressions, the indentation is handled differently, and so on).
 
@@ -1549,7 +1534,7 @@ Changing keywords from "singular" to "singular, free algebra, letterplace".
 archive/issue_comments_067273.json:
 ```json
 {
-    "body": "Meanwhile I implemented two other features:\n\n**Uniqueness of parents**\n\nWe had\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: loads(dumps(F)) is F\nFalse\n```\n\n\nI rewrote the `FreeAlgebra` constructor using `UniqueFactory`, so that the answer above becomes `True`.\n\n**Degree weights**\n\nThe letterplace implementation in Singular is restricted to homogeneous ideals, and each generator can only have degree 1. With a little hack, I introduced positive integral degree weights for generators, so that we can now do:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace', degrees=[1,2,3])\nsage: I = F*[x*y+z-y*x,x*y*z-x^6+y^3]*F\nsage: I.groebner_basis(Infinity)\nTwosided Ideal (x*z*z - y*x*x*z - y*x*y*y + y*x*z*x + y*y*y*x + z*x*z + z*y*y - z*z*x, x*y - y*x + z, x*x*x*x*z*y*y + x*x*x*z*y*y*x - x*x*x*z*y*z - x*x*z*y*x*z + x*x*z*y*y*x*x + x*x*z*y*y*y - x*x*z*y*z*x - x*z*y*x*x*z - x*z*y*x*z*x + x*z*y*y*x*x*x + 2*x*z*y*y*y*x - 2*x*z*y*y*z - x*z*y*z*x*x - x*z*y*z*y + y*x*z*x*x*x*x*x - 4*y*x*z*x*x*z - 4*y*x*z*x*z*x + 4*y*x*z*y*x*x*x + 3*y*x*z*y*y*x - 4*y*x*z*y*z + y*y*x*x*x*x*z + y*y*x*x*x*z*x - 3*y*y*x*x*z*x*x - y*y*x*x*z*y + 5*y*y*x*z*x*x*x + 4*y*y*x*z*y*x - 4*y*y*y*x*x*z + 4*y*y*y*x*z*x + 3*y*y*y*y*z + 4*y*y*y*z*x*x + 6*y*y*y*z*y + y*y*z*x*x*x*x + y*y*z*x*z + 7*y*y*z*y*x*x + 7*y*y*z*y*y - 7*y*y*z*z*x - y*z*x*x*x*z - y*z*x*x*z*x + 3*y*z*x*z*x*x + y*z*x*z*y + y*z*y*x*x*x*x - 3*y*z*y*x*z + 7*y*z*y*y*x*x + 3*y*z*y*y*y - 3*y*z*y*z*x - 5*y*z*z*x*x*x - 4*y*z*z*y*x + 4*y*z*z*z - z*y*x*x*x*z - z*y*x*x*z*x - z*y*x*z*x*x - z*y*x*z*y + z*y*y*x*x*x*x - 3*z*y*y*x*z + 3*z*y*y*y*x*x + z*y*y*y*y - 3*z*y*y*z*x - z*y*z*x*x*x - 2*z*y*z*y*x + 2*z*y*z*z - z*z*x*x*x*x*x + 4*z*z*x*x*z + 4*z*z*x*z*x - 4*z*z*y*x*x*x - 3*z*z*y*y*x + 4*z*z*y*z + 4*z*z*z*x*x + 2*z*z*z*y, x*x*x*x*x*z + x*x*x*x*z*x + x*x*x*z*x*x + x*x*z*x*x*x + x*z*x*x*x*x + y*x*z*y - y*y*x*z + y*z*z + z*x*x*x*x*x - z*z*y, x*x*x*x*x*x - y*x*z - y*y*y + z*z) of Free Associative Unital Algebra on 3 generators (x, y, z) over Rational Field\n```\n\nThis and the possibility to compute a complete Gr\u00f6bner basis (provided a finite complete Gr\u00f6bner basis exists) go beyond what is currently in Singular.\n\nThe underlying idea of the degree weights is: Introduce a homogenizing variable. By default, it is called `x`, but a different name is chosen if there is a name conflict. Here, it is renamed to `x_`. And then, we represent a generator `z` of degree `d` internally as `z*x_^(d-1)` (of course with non-commutative multiplication).\n\nHence, the underlying truncated letterplace ring becomes a bit bigger, and in the bigger ring all generators are of degree one. Of course, the additional variable is omitted in the string representation. We have for example\n\n```\nsage: z\nz\nsage: z.degree()\n3\nsage: z.letterplace_polynomial()\nz*x__1*x__2\n```\n\n\nAs much as I know, with that approach, Gr\u00f6bner bases are correctly computed: If in all polynomials each occurrence of `z` is followed by `x_^(d-1)` then all S-polynomials and reductions (computed in the ring with additional generator `x_` and with all generators in degree 1) will have the same property.\n\nI know this is a hack, but I guess it may be useful. It certainly will be usefull for my current project, because I *need* degree weights.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch\n\nDepends on #11068, #11268",
+    "body": "Meanwhile I implemented two other features:\n\n**Uniqueness of parents**\n\nWe had\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, 3)\nsage: loads(dumps(F)) is F\nFalse\n```\n\nI rewrote the `FreeAlgebra` constructor using `UniqueFactory`, so that the answer above becomes `True`.\n\n**Degree weights**\n\nThe letterplace implementation in Singular is restricted to homogeneous ideals, and each generator can only have degree 1. With a little hack, I introduced positive integral degree weights for generators, so that we can now do:\n\n```\nsage: F.<x,y,z> = FreeAlgebra(QQ, implementation='letterplace', degrees=[1,2,3])\nsage: I = F*[x*y+z-y*x,x*y*z-x^6+y^3]*F\nsage: I.groebner_basis(Infinity)\nTwosided Ideal (x*z*z - y*x*x*z - y*x*y*y + y*x*z*x + y*y*y*x + z*x*z + z*y*y - z*z*x, x*y - y*x + z, x*x*x*x*z*y*y + x*x*x*z*y*y*x - x*x*x*z*y*z - x*x*z*y*x*z + x*x*z*y*y*x*x + x*x*z*y*y*y - x*x*z*y*z*x - x*z*y*x*x*z - x*z*y*x*z*x + x*z*y*y*x*x*x + 2*x*z*y*y*y*x - 2*x*z*y*y*z - x*z*y*z*x*x - x*z*y*z*y + y*x*z*x*x*x*x*x - 4*y*x*z*x*x*z - 4*y*x*z*x*z*x + 4*y*x*z*y*x*x*x + 3*y*x*z*y*y*x - 4*y*x*z*y*z + y*y*x*x*x*x*z + y*y*x*x*x*z*x - 3*y*y*x*x*z*x*x - y*y*x*x*z*y + 5*y*y*x*z*x*x*x + 4*y*y*x*z*y*x - 4*y*y*y*x*x*z + 4*y*y*y*x*z*x + 3*y*y*y*y*z + 4*y*y*y*z*x*x + 6*y*y*y*z*y + y*y*z*x*x*x*x + y*y*z*x*z + 7*y*y*z*y*x*x + 7*y*y*z*y*y - 7*y*y*z*z*x - y*z*x*x*x*z - y*z*x*x*z*x + 3*y*z*x*z*x*x + y*z*x*z*y + y*z*y*x*x*x*x - 3*y*z*y*x*z + 7*y*z*y*y*x*x + 3*y*z*y*y*y - 3*y*z*y*z*x - 5*y*z*z*x*x*x - 4*y*z*z*y*x + 4*y*z*z*z - z*y*x*x*x*z - z*y*x*x*z*x - z*y*x*z*x*x - z*y*x*z*y + z*y*y*x*x*x*x - 3*z*y*y*x*z + 3*z*y*y*y*x*x + z*y*y*y*y - 3*z*y*y*z*x - z*y*z*x*x*x - 2*z*y*z*y*x + 2*z*y*z*z - z*z*x*x*x*x*x + 4*z*z*x*x*z + 4*z*z*x*z*x - 4*z*z*y*x*x*x - 3*z*z*y*y*x + 4*z*z*y*z + 4*z*z*z*x*x + 2*z*z*z*y, x*x*x*x*x*z + x*x*x*x*z*x + x*x*x*z*x*x + x*x*z*x*x*x + x*z*x*x*x*x + y*x*z*y - y*y*x*z + y*z*z + z*x*x*x*x*x - z*z*y, x*x*x*x*x*x - y*x*z - y*y*y + z*z) of Free Associative Unital Algebra on 3 generators (x, y, z) over Rational Field\n```\nThis and the possibility to compute a complete Gr\u00f6bner basis (provided a finite complete Gr\u00f6bner basis exists) go beyond what is currently in Singular.\n\nThe underlying idea of the degree weights is: Introduce a homogenizing variable. By default, it is called `x`, but a different name is chosen if there is a name conflict. Here, it is renamed to `x_`. And then, we represent a generator `z` of degree `d` internally as `z*x_^(d-1)` (of course with non-commutative multiplication).\n\nHence, the underlying truncated letterplace ring becomes a bit bigger, and in the bigger ring all generators are of degree one. Of course, the additional variable is omitted in the string representation. We have for example\n\n```\nsage: z\nz\nsage: z.degree()\n3\nsage: z.letterplace_polynomial()\nz*x__1*x__2\n```\n\nAs much as I know, with that approach, Gr\u00f6bner bases are correctly computed: If in all polynomials each occurrence of `z` is followed by `x_^(d-1)` then all S-polynomials and reductions (computed in the ring with additional generator `x_` and with all generators in degree 1) will have the same property.\n\nI know this is a hack, but I guess it may be useful. It certainly will be usefull for my current project, because I *need* degree weights.\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch\n\nDepends on #11068, #11268",
     "created_at": "2011-05-26T09:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1570,7 +1555,6 @@ sage: loads(dumps(F)) is F
 False
 ```
 
-
 I rewrote the `FreeAlgebra` constructor using `UniqueFactory`, so that the answer above becomes `True`.
 
 **Degree weights**
@@ -1583,7 +1567,6 @@ sage: I = F*[x*y+z-y*x,x*y*z-x^6+y^3]*F
 sage: I.groebner_basis(Infinity)
 Twosided Ideal (x*z*z - y*x*x*z - y*x*y*y + y*x*z*x + y*y*y*x + z*x*z + z*y*y - z*z*x, x*y - y*x + z, x*x*x*x*z*y*y + x*x*x*z*y*y*x - x*x*x*z*y*z - x*x*z*y*x*z + x*x*z*y*y*x*x + x*x*z*y*y*y - x*x*z*y*z*x - x*z*y*x*x*z - x*z*y*x*z*x + x*z*y*y*x*x*x + 2*x*z*y*y*y*x - 2*x*z*y*y*z - x*z*y*z*x*x - x*z*y*z*y + y*x*z*x*x*x*x*x - 4*y*x*z*x*x*z - 4*y*x*z*x*z*x + 4*y*x*z*y*x*x*x + 3*y*x*z*y*y*x - 4*y*x*z*y*z + y*y*x*x*x*x*z + y*y*x*x*x*z*x - 3*y*y*x*x*z*x*x - y*y*x*x*z*y + 5*y*y*x*z*x*x*x + 4*y*y*x*z*y*x - 4*y*y*y*x*x*z + 4*y*y*y*x*z*x + 3*y*y*y*y*z + 4*y*y*y*z*x*x + 6*y*y*y*z*y + y*y*z*x*x*x*x + y*y*z*x*z + 7*y*y*z*y*x*x + 7*y*y*z*y*y - 7*y*y*z*z*x - y*z*x*x*x*z - y*z*x*x*z*x + 3*y*z*x*z*x*x + y*z*x*z*y + y*z*y*x*x*x*x - 3*y*z*y*x*z + 7*y*z*y*y*x*x + 3*y*z*y*y*y - 3*y*z*y*z*x - 5*y*z*z*x*x*x - 4*y*z*z*y*x + 4*y*z*z*z - z*y*x*x*x*z - z*y*x*x*z*x - z*y*x*z*x*x - z*y*x*z*y + z*y*y*x*x*x*x - 3*z*y*y*x*z + 3*z*y*y*y*x*x + z*y*y*y*y - 3*z*y*y*z*x - z*y*z*x*x*x - 2*z*y*z*y*x + 2*z*y*z*z - z*z*x*x*x*x*x + 4*z*z*x*x*z + 4*z*z*x*z*x - 4*z*z*y*x*x*x - 3*z*z*y*y*x + 4*z*z*y*z + 4*z*z*z*x*x + 2*z*z*z*y, x*x*x*x*x*z + x*x*x*x*z*x + x*x*x*z*x*x + x*x*z*x*x*x + x*z*x*x*x*x + y*x*z*y - y*y*x*z + y*z*z + z*x*x*x*x*x - z*z*y, x*x*x*x*x*x - y*x*z - y*y*y + z*z) of Free Associative Unital Algebra on 3 generators (x, y, z) over Rational Field
 ```
-
 This and the possibility to compute a complete Gröbner basis (provided a finite complete Gröbner basis exists) go beyond what is currently in Singular.
 
 The underlying idea of the degree weights is: Introduce a homogenizing variable. By default, it is called `x`, but a different name is chosen if there is a name conflict. Here, it is renamed to `x_`. And then, we represent a generator `z` of degree `d` internally as `z*x_^(d-1)` (of course with non-commutative multiplication).
@@ -1598,7 +1581,6 @@ sage: z.degree()
 sage: z.letterplace_polynomial()
 z*x__1*x__2
 ```
-
 
 As much as I know, with that approach, Gröbner bases are correctly computed: If in all polynomials each occurrence of `z` is followed by `x_^(d-1)` then all S-polynomials and reductions (computed in the ring with additional generator `x_` and with all generators in degree 1) will have the same property.
 
@@ -1615,7 +1597,7 @@ Depends on #11068, #11268
 archive/issue_comments_067274.json:
 ```json
 {
-    "body": "I noticed that I forgot one detail: Latex!\n\nWith the latest patch, we also get\n\n```\nsage: K.<z> = GF(25)\nsage: F.<a,b,c> = FreeAlgebra(K, implementation='letterplace', degrees=[1,2,3])\nsage: -(a*b*(z+1)-c)^2\n(2*z + 1)*a*b*a*b + (z + 1)*a*b*c + (z + 1)*c*a*b - c*c\nsage: latex(-(a*b*(z+1)-c)^2)\n\\left(2 z + 1\\right) a b a b + \\left(z + 1\\right) a b c + \\left(z + 1\\right) c a b - c c\n```\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch\n\nDepends on #11068, #11268",
+    "body": "I noticed that I forgot one detail: Latex!\n\nWith the latest patch, we also get\n\n```\nsage: K.<z> = GF(25)\nsage: F.<a,b,c> = FreeAlgebra(K, implementation='letterplace', degrees=[1,2,3])\nsage: -(a*b*(z+1)-c)^2\n(2*z + 1)*a*b*a*b + (z + 1)*a*b*c + (z + 1)*c*a*b - c*c\nsage: latex(-(a*b*(z+1)-c)^2)\n\\left(2 z + 1\\right) a b a b + \\left(z + 1\\right) a b c + \\left(z + 1\\right) c a b - c c\n```\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch\n\nDepends on #11068, #11268",
     "created_at": "2011-05-26T10:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1636,7 +1618,6 @@ sage: -(a*b*(z+1)-c)^2
 sage: latex(-(a*b*(z+1)-c)^2)
 \left(2 z + 1\right) a b a b + \left(z + 1\right) a b c + \left(z + 1\right) c a b - c c
 ```
-
 Apply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch
 
 Depends on #11068, #11268
@@ -1648,7 +1629,7 @@ Depends on #11068, #11268
 archive/issue_comments_067275.json:
 ```json
 {
-    "body": "... or also\n\n```\nsage: F.<bla,alpha,z> = FreeAlgebra(QQ, implementation='letterplace', degrees=[1,2,3])\nsage: latex(-3*alpha*bla-z)\n-3 \\alpha \\mbox{bla} - z\n```\n",
+    "body": "... or also\n\n```\nsage: F.<bla,alpha,z> = FreeAlgebra(QQ, implementation='letterplace', degrees=[1,2,3])\nsage: latex(-3*alpha*bla-z)\n-3 \\alpha \\mbox{bla} - z\n```",
     "created_at": "2011-05-26T10:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1664,7 +1645,6 @@ sage: F.<bla,alpha,z> = FreeAlgebra(QQ, implementation='letterplace', degrees=[1
 sage: latex(-3*alpha*bla-z)
 -3 \alpha \mbox{bla} - z
 ```
-
 
 
 
@@ -1782,7 +1762,7 @@ Apparently I had changed the milestone by accident...
 archive/issue_comments_067279.json:
 ```json
 {
-    "body": "In my application, I also need conversion from graded sub-algebras. Hence, I implemented it in the new patch.\n\nTo be precise: If we have free graded algebras A and B in letterplace implementation, then there is a coercion from A to B if and only if there is a coercion from the base ring of A to the base ring of B, and the set of generator names of A is a subset of the generator names of B, and the degrees of equally named generators of A and B are equal.\n\nThe coercion is always name and degree preserving.\n\nExample:\n\n```\nsage: F.<t,y,z> = FreeAlgebra(ZZ, implementation='letterplace', degrees=[4,2,3])\nsage: G = FreeAlgebra(GF(5), implementation='letterplace', names=['x','y','z','t'], degrees=[1,2,3,4])\nsage: t*G.0       # indirect doctest\nt*x\nsage: (t*G.0 + G.1*G.2)*y\ny*z*y + t*x*y\n```\n\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch trac7797-letterplace_coercion.patch",
+    "body": "In my application, I also need conversion from graded sub-algebras. Hence, I implemented it in the new patch.\n\nTo be precise: If we have free graded algebras A and B in letterplace implementation, then there is a coercion from A to B if and only if there is a coercion from the base ring of A to the base ring of B, and the set of generator names of A is a subset of the generator names of B, and the degrees of equally named generators of A and B are equal.\n\nThe coercion is always name and degree preserving.\n\nExample:\n\n```\nsage: F.<t,y,z> = FreeAlgebra(ZZ, implementation='letterplace', degrees=[4,2,3])\nsage: G = FreeAlgebra(GF(5), implementation='letterplace', names=['x','y','z','t'], degrees=[1,2,3,4])\nsage: t*G.0       # indirect doctest\nt*x\nsage: (t*G.0 + G.1*G.2)*y\ny*z*y + t*x*y\n```\n\nApply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch trac7797-letterplace_coercion.patch",
     "created_at": "2011-07-27T15:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1807,7 +1787,6 @@ t*x
 sage: (t*G.0 + G.1*G.2)*y
 y*z*y + t*x*y
 ```
-
 
 Apply trac7797-full_letterplace_wrapper_rel11068.patch trac7797-letterplace_degree_weights.patch trac7797-latex_letterplace.patch trac7797-letterplace_coercion.patch
 
@@ -1934,7 +1913,7 @@ In [attachment:trac7797-full_letterplace_wrapper_rel11068.patch] please do not u
 archive/issue_comments_067286.json:
 ```json
 {
-    "body": "Replying to [comment:55 fbissey]:\n> In [attachment:trac7797-full_letterplace_wrapper_rel11068.patch] please do not use SAGE_ROOT + local/include in module_list.py use SAGE_INC instead. \n\nI didn't know that SAGE_INC exists. It is certainly a good idea to use such variables whenever possible.",
+    "body": "Replying to [comment:55 fbissey]:\n> In [attachment:trac7797-full_letterplace_wrapper_rel11068.patch] please do not use SAGE_ROOT + local/include in module_list.py use SAGE_INC instead. \n\n\nI didn't know that SAGE_INC exists. It is certainly a good idea to use such variables whenever possible.",
     "created_at": "2011-08-01T23:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -1945,6 +1924,7 @@ archive/issue_comments_067286.json:
 
 Replying to [comment:55 fbissey]:
 > In [attachment:trac7797-full_letterplace_wrapper_rel11068.patch] please do not use SAGE_ROOT + local/include in module_list.py use SAGE_INC instead. 
+
 
 I didn't know that SAGE_INC exists. It is certainly a good idea to use such variables whenever possible.
 
@@ -2013,7 +1993,7 @@ Apply trac7797-full_letterplace_wrapper_combined.patch
 archive/issue_comments_067290.json:
 ```json
 {
-    "body": "sage-4.7.2alpha3-prerelease with the following patches applies:\n\n```\ntrac11815_format_must_preserve_embedding.patch\ntrac11115-cached_cython.patch\ntrac11115_cached_function_pickling.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac7797-full_letterplace_wrapper_combined.patch\n```\n\ncompiles/installs and runs `sage -testall` successfully  on a SuSE Enterprise 11.1.\nThis is close to a positive review, but I'll check out another platform before and have a look at the patch.",
+    "body": "sage-4.7.2alpha3-prerelease with the following patches applies:\n\n```\ntrac11815_format_must_preserve_embedding.patch\ntrac11115-cached_cython.patch\ntrac11115_cached_function_pickling.patch\ntrac11068_nc_ideals_and_quotients.patch\ntrac11068_quotient_ring_without_names.patch\ntrac11068_lifting_map.patch\ntrac7797-full_letterplace_wrapper_combined.patch\n```\ncompiles/installs and runs `sage -testall` successfully  on a SuSE Enterprise 11.1.\nThis is close to a positive review, but I'll check out another platform before and have a look at the patch.",
     "created_at": "2011-09-26T20:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2033,7 +2013,6 @@ trac11068_quotient_ring_without_names.patch
 trac11068_lifting_map.patch
 trac7797-full_letterplace_wrapper_combined.patch
 ```
-
 compiles/installs and runs `sage -testall` successfully  on a SuSE Enterprise 11.1.
 This is close to a positive review, but I'll check out another platform before and have a look at the patch.
 
@@ -2342,7 +2321,7 @@ The patch looks good to me, just use  the `:trac:`7791`` statement to refer to t
 archive/issue_comments_067307.json:
 ```json
 {
-    "body": "Replying to [comment:70 AlexanderDreyer]:\n> The patch looks good to me, just use  the `:trac:`7791`` statement to refer to this ticket here. Provided, that the tests succeeds (I'm currently building a recent sage), I'd say, that we are close to positive.\n\nYep, I think I wrote the patch before the `:trac:` directive has been introduced. The patchbot complains about trailing white space - so, I'll take care of that as well.",
+    "body": "Replying to [comment:70 AlexanderDreyer]:\n> The patch looks good to me, just use  the `:trac:`7791`` statement to refer to this ticket here. Provided, that the tests succeeds (I'm currently building a recent sage), I'd say, that we are close to positive.\n\n\nYep, I think I wrote the patch before the `:trac:` directive has been introduced. The patchbot complains about trailing white space - so, I'll take care of that as well.",
     "created_at": "2012-08-15T06:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2353,6 +2332,7 @@ archive/issue_comments_067307.json:
 
 Replying to [comment:70 AlexanderDreyer]:
 > The patch looks good to me, just use  the `:trac:`7791`` statement to refer to this ticket here. Provided, that the tests succeeds (I'm currently building a recent sage), I'd say, that we are close to positive.
+
 
 Yep, I think I wrote the patch before the `:trac:` directive has been introduced. The patchbot complains about trailing white space - so, I'll take care of that as well.
 
@@ -2525,7 +2505,7 @@ Resolution changed from fixed to
 archive/issue_comments_067316.json:
 ```json
 {
-    "body": "This leads to lots of failures on Solaris SPARC:\n\n```\n\n        sage -t  --long -force_lib devel/sage/sage/algebras/free_algebra.py # 3 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/free_algebra_element_letterplace.pyx # 13 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx # 6 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/letterplace_ideal.pyx # 14 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring.py # 11 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring_element.py # 1 doctests failed\n```\n\nSee [http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio](http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio).",
+    "body": "This leads to lots of failures on Solaris SPARC:\n\n```\n\n        sage -t  --long -force_lib devel/sage/sage/algebras/free_algebra.py # 3 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/free_algebra_element_letterplace.pyx # 13 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx # 6 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/algebras/letterplace/letterplace_ideal.pyx # 14 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring.py # 11 doctests failed\n        sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring_element.py # 1 doctests failed\n```\nSee [http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio](http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio).",
     "created_at": "2012-08-24T20:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2545,7 +2525,6 @@ This leads to lots of failures on Solaris SPARC:
         sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring.py # 11 doctests failed
         sage -t  --long -force_lib devel/sage/sage/rings/quotient_ring_element.py # 1 doctests failed
 ```
-
 See [http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio](http://build.sagemath.org/sage/builders/Skynet%20mark%20%28SunOS%205.10-32%29/builds/207/steps/shell_7/logs/stdio).
 
 
@@ -2681,7 +2660,7 @@ I.e., is the problem on the side of Singular, or of the wrapper?
 archive/issue_comments_067321.json:
 ```json
 {
-    "body": "Replying to [comment:79 SimonKing]:\n> I.e., is the problem on the side of Singular, or of the wrapper?\nHow can I check?  What commands should I run in Singular to check?\n\nAlso, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.",
+    "body": "Replying to [comment:79 SimonKing]:\n> I.e., is the problem on the side of Singular, or of the wrapper?\n\nHow can I check?  What commands should I run in Singular to check?\n\nAlso, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.",
     "created_at": "2012-08-27T11:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2692,6 +2671,7 @@ archive/issue_comments_067321.json:
 
 Replying to [comment:79 SimonKing]:
 > I.e., is the problem on the side of Singular, or of the wrapper?
+
 How can I check?  What commands should I run in Singular to check?
 
 Also, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.
@@ -2703,7 +2683,7 @@ Also, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it m
 archive/issue_comments_067322.json:
 ```json
 {
-    "body": "Replying to [comment:80 jdemeyer]:\n> Replying to [comment:79 SimonKing]:\n> > I.e., is the problem on the side of Singular, or of the wrapper?\n> How can I check?  What commands should I run in Singular to check?\n> \n> Also, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.\n\nHans Sch\u00f6nemann has tested it. He used Singular-3-1-5, or in more detail:\n\n```\nSingular for SunOS-5 version 3-1-5 (3150)  Aug 27 2012 19:23:52\nwith\n        factory(@(#) factoryVersion = 3.1.5),libfac(3.1.5,July 2012),\n        GMP(4.2),NTL(5.5.2),64bit,static readline,Plural,DBM,\n        dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1346170574\n        CC= gcc -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H,\n        CXX= g++ -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -I.. -I/users/cip/alggeom/hannes/galois64 -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H (3.3.2)\n```\n\n\nThe example worked fine, which indicates that it is a problem with my wrapper. If you want to test it for yourself:\n\n```\nLIB \"freegb.lib\";\nring r = 0,(x,y,z),dp;\nint d =4; // degree bound\ndef R = makeLetterplaceRing(d);\nsetring R;\nideal I = x(1)*y(2) + y(1)*z(2), x(1)*x(2) + x(1)*y(2) - y(1)*x(2) - y(1)*y(2);\noption(redSB); option(redTail);\nideal J = letplaceGBasis(I);\nJ;\n```\n\nThe expected result is\n\n```\n==> J[1]=x(1)*y(2)+y(1)*z(2)\n==> J[2]=x(1)*x(2)-y(1)*x(2)-y(1)*y(2)-y(1)*z(2)\n==> J[3]=y(1)*y(2)*y(3)-y(1)*y(2)*z(3)+y(1)*z(2)*y(3)-y(1)*z(2)*z(3)\n==> J[4]=y(1)*y(2)*x(3)+y(1)*y(2)*z(3)+y(1)*z(2)*x(3)+y(1)*z(2)*z(3)\n==> J[5]=y(1)*z(2)*y(3)*y(4)-y(1)*z(2)*y(3)*z(4)+y(1)*z(2)*z(3)*y(4)-y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[6]=y(1)*z(2)*y(3)*x(4)+y(1)*z(2)*y(3)*z(4)+y(1)*z(2)*z(3)*x(4)+y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[7]=y(1)*y(2)*z(3)*y(4)-y(1)*y(2)*z(3)*z(4)+y(1)*z(2)*z(3)*y(4)-y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[8]=y(1)*y(2)*z(3)*x(4)+y(1)*y(2)*z(3)*z(4)+y(1)*z(2)*z(3)*x(4)+y(1)*z(2\\\n   )*z(3)*z(4)\n```\n\nI will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?",
+    "body": "Replying to [comment:80 jdemeyer]:\n> Replying to [comment:79 SimonKing]:\n> > I.e., is the problem on the side of Singular, or of the wrapper?\n\n> How can I check?  What commands should I run in Singular to check?\n> \n> Also, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.\n\n\nHans Sch\u00f6nemann has tested it. He used Singular-3-1-5, or in more detail:\n\n```\nSingular for SunOS-5 version 3-1-5 (3150)  Aug 27 2012 19:23:52\nwith\n        factory(@(#) factoryVersion = 3.1.5),libfac(3.1.5,July 2012),\n        GMP(4.2),NTL(5.5.2),64bit,static readline,Plural,DBM,\n        dynamic modules,dynamic p_Procs,OM_CHECK=0,OM_TRACK=0,random=1346170574\n        CC= gcc -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H,\n        CXX= g++ -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -I.. -I/users/cip/alggeom/hannes/galois64 -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H (3.3.2)\n```\n\nThe example worked fine, which indicates that it is a problem with my wrapper. If you want to test it for yourself:\n\n```\nLIB \"freegb.lib\";\nring r = 0,(x,y,z),dp;\nint d =4; // degree bound\ndef R = makeLetterplaceRing(d);\nsetring R;\nideal I = x(1)*y(2) + y(1)*z(2), x(1)*x(2) + x(1)*y(2) - y(1)*x(2) - y(1)*y(2);\noption(redSB); option(redTail);\nideal J = letplaceGBasis(I);\nJ;\n```\nThe expected result is\n\n```\n==> J[1]=x(1)*y(2)+y(1)*z(2)\n==> J[2]=x(1)*x(2)-y(1)*x(2)-y(1)*y(2)-y(1)*z(2)\n==> J[3]=y(1)*y(2)*y(3)-y(1)*y(2)*z(3)+y(1)*z(2)*y(3)-y(1)*z(2)*z(3)\n==> J[4]=y(1)*y(2)*x(3)+y(1)*y(2)*z(3)+y(1)*z(2)*x(3)+y(1)*z(2)*z(3)\n==> J[5]=y(1)*z(2)*y(3)*y(4)-y(1)*z(2)*y(3)*z(4)+y(1)*z(2)*z(3)*y(4)-y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[6]=y(1)*z(2)*y(3)*x(4)+y(1)*z(2)*y(3)*z(4)+y(1)*z(2)*z(3)*x(4)+y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[7]=y(1)*y(2)*z(3)*y(4)-y(1)*y(2)*z(3)*z(4)+y(1)*z(2)*z(3)*y(4)-y(1)*z(2\\\n   )*z(3)*z(4)\n==> J[8]=y(1)*y(2)*z(3)*x(4)+y(1)*y(2)*z(3)*z(4)+y(1)*z(2)*z(3)*x(4)+y(1)*z(2\\\n   )*z(3)*z(4)\n```\nI will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?",
     "created_at": "2012-08-28T16:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2715,9 +2695,11 @@ archive/issue_comments_067322.json:
 Replying to [comment:80 jdemeyer]:
 > Replying to [comment:79 SimonKing]:
 > > I.e., is the problem on the side of Singular, or of the wrapper?
+
 > How can I check?  What commands should I run in Singular to check?
 > 
 > Also, I added #13237 (Upgrade to Singular-3-1-5) as dependency just in case it matters.  My tests on Solaris SPARC were done with the new Singular from #13237.
+
 
 Hans Schönemann has tested it. He used Singular-3-1-5, or in more detail:
 
@@ -2730,7 +2712,6 @@ with
         CC= gcc -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H,
         CXX= g++ -m64 -mptr64 -mcpu=ultrasparc3 -O2 -w -fomit-frame-pointer -I.. -I/users/cip/alggeom/hannes/galois64 -pipe -DNDEBUG -DOM_NDEBUG -DSunOS_5 -DHAVE_CONFIG_H (3.3.2)
 ```
-
 
 The example worked fine, which indicates that it is a problem with my wrapper. If you want to test it for yourself:
 
@@ -2745,7 +2726,6 @@ option(redSB); option(redTail);
 ideal J = letplaceGBasis(I);
 J;
 ```
-
 The expected result is
 
 ```
@@ -2762,7 +2742,6 @@ The expected result is
 ==> J[8]=y(1)*y(2)*z(3)*x(4)+y(1)*y(2)*z(3)*z(4)+y(1)*z(2)*z(3)*x(4)+y(1)*z(2\
    )*z(3)*z(4)
 ```
-
 I will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?
 
 
@@ -2772,7 +2751,7 @@ I will see whether `letplaceGBasis` does anything new - perhaps I can learn from
 archive/issue_comments_067323.json:
 ```json
 {
-    "body": "Replying to [comment:81 SimonKing]:\n> I will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?\n\nNo, the essential part is the same. Namely:\n\n```\n  ideal J = system(\"freegb\",I,uptodeg,lV);\n```\n\nIf I am not mistaken, it is the analogue of this command that fails in my code.\n\nThe question that I'd like to be answered is: Are calls to Singular's \"system\" function possible in Sage on Solaris SPARC? Could you please test the following in Sage on Solaris SPARC?\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: sing_system = singular_function(\"system\")\nsage: R.<x,y> = QQ[]\nsage: sing_system(\"uname\", ring=R)\n'x86_64-Linux'  # ok, the answer will be different on Solaris SPARC...\n```\n",
+    "body": "Replying to [comment:81 SimonKing]:\n> I will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?\n\n\nNo, the essential part is the same. Namely:\n\n```\n  ideal J = system(\"freegb\",I,uptodeg,lV);\n```\nIf I am not mistaken, it is the analogue of this command that fails in my code.\n\nThe question that I'd like to be answered is: Are calls to Singular's \"system\" function possible in Sage on Solaris SPARC? Could you please test the following in Sage on Solaris SPARC?\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: sing_system = singular_function(\"system\")\nsage: R.<x,y> = QQ[]\nsage: sing_system(\"uname\", ring=R)\n'x86_64-Linux'  # ok, the answer will be different on Solaris SPARC...\n```",
     "created_at": "2012-08-28T16:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2784,12 +2763,12 @@ archive/issue_comments_067323.json:
 Replying to [comment:81 SimonKing]:
 > I will see whether `letplaceGBasis` does anything new - perhaps I can learn from it?
 
+
 No, the essential part is the same. Namely:
 
 ```
   ideal J = system("freegb",I,uptodeg,lV);
 ```
-
 If I am not mistaken, it is the analogue of this command that fails in my code.
 
 The question that I'd like to be answered is: Are calls to Singular's "system" function possible in Sage on Solaris SPARC? Could you please test the following in Sage on Solaris SPARC?
@@ -2804,13 +2783,12 @@ sage: sing_system("uname", ring=R)
 
 
 
-
 ---
 
 archive/issue_comments_067324.json:
 ```json
 {
-    "body": "Solaris SPARC, Sage 5.2 (i.e. Singular-3-1-3-3):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage.libs.singular.function.singular_function(\"system\")(\"uname\", ring=PolynomialRing(QQ,2,'x'))\n// ** s_internalDelete: cannot delete type sqrfree(493)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\n/home/jdemeyer/mark/sage-5.2/<ipython console> in <module>()\n\n/home/jdemeyer/mark/sage-5.2/local/lib/python2.7/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.SingularFunction.__call__ (sage/libs/singular/function.cpp:11875)()\n\n/home/jdemeyer/mark/sage-5.2/local/lib/python2.7/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.call_function (sage/libs/singular/function.cpp:13425)()\n\nRuntimeError: Error in Singular function call 'system':\n system(`sqrfree`) failed\n```\n",
+    "body": "Solaris SPARC, Sage 5.2 (i.e. Singular-3-1-3-3):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage.libs.singular.function.singular_function(\"system\")(\"uname\", ring=PolynomialRing(QQ,2,'x'))\n// ** s_internalDelete: cannot delete type sqrfree(493)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 5.2, Release Date: 2012-07-25                         |\n| Type \"notebook()\" for the browser-based notebook interface.        |\n| Type \"help()\" for help.                                            |\n/home/jdemeyer/mark/sage-5.2/<ipython console> in <module>()\n\n/home/jdemeyer/mark/sage-5.2/local/lib/python2.7/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.SingularFunction.__call__ (sage/libs/singular/function.cpp:11875)()\n\n/home/jdemeyer/mark/sage-5.2/local/lib/python2.7/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.call_function (sage/libs/singular/function.cpp:13425)()\n\nRuntimeError: Error in Singular function call 'system':\n system(`sqrfree`) failed\n```",
     "created_at": "2012-08-28T17:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2843,7 +2821,6 @@ RuntimeError: Error in Singular function call 'system':
 
 
 
-
 ---
 
 archive/issue_comments_067325.json:
@@ -2871,7 +2848,7 @@ Martin, do you have an idea where that error might come from?
 archive/issue_comments_067326.json:
 ```json
 {
-    "body": "Here is the code for `system(\"uname\")` (to be found in Singular/extra.cc):\n\n```C\n/*==================== uname ==================================*/\n    if(strcmp(sys_cmd,\"uname\")==0)\n    {\n      res->rtyp=STRING_CMD;\n      res->data = omStrDup(S_UNAME);\n      return FALSE;\n    }\n```\n\n\nAbout `// ** s_internalDelete: cannot delete type sqrfree(493)`: According to Hans, 493 is the token for the command `sqrfree`, which is *not* a type but a command. Therefore deleting an object with 493's type is impossible. He doesn't understand how that happens here.\n\n`res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??",
+    "body": "Here is the code for `system(\"uname\")` (to be found in Singular/extra.cc):\n\n```C\n/*==================== uname ==================================*/\n    if(strcmp(sys_cmd,\"uname\")==0)\n    {\n      res->rtyp=STRING_CMD;\n      res->data = omStrDup(S_UNAME);\n      return FALSE;\n    }\n```\n\nAbout `// ** s_internalDelete: cannot delete type sqrfree(493)`: According to Hans, 493 is the token for the command `sqrfree`, which is *not* a type but a command. Therefore deleting an object with 493's type is impossible. He doesn't understand how that happens here.\n\n`res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??",
     "created_at": "2012-08-29T08:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2892,7 +2869,6 @@ Here is the code for `system("uname")` (to be found in Singular/extra.cc):
     }
 ```
 
-
 About `// ** s_internalDelete: cannot delete type sqrfree(493)`: According to Hans, 493 is the token for the command `sqrfree`, which is *not* a type but a command. Therefore deleting an object with 493's type is impossible. He doesn't understand how that happens here.
 
 `res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??
@@ -2904,7 +2880,7 @@ About `// ** s_internalDelete: cannot delete type sqrfree(493)`: According to Ha
 archive/issue_comments_067327.json:
 ```json
 {
-    "body": "Replying to [comment:85 SimonKing]:\n> `res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??\nThere probably an outdated Singular/tok.h around. Tokens like INTMOD_CMD were added recently, so this would explain the shift in the enum.",
+    "body": "Replying to [comment:85 SimonKing]:\n> `res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??\n\nThere probably an outdated Singular/tok.h around. Tokens like INTMOD_CMD were added recently, so this would explain the shift in the enum.",
     "created_at": "2012-08-29T09:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2915,6 +2891,7 @@ archive/issue_comments_067327.json:
 
 Replying to [comment:85 SimonKing]:
 > `res->data` is a C string, and `STRING_CMD` is the token 495, which stands for the type of a string (`char *`). Could Solares SPARC mistake 495 for 493??
+
 There probably an outdated Singular/tok.h around. Tokens like INTMOD_CMD were added recently, so this would explain the shift in the enum.
 
 
@@ -2924,7 +2901,7 @@ There probably an outdated Singular/tok.h around. Tokens like INTMOD_CMD were ad
 archive/issue_comments_067328.json:
 ```json
 {
-    "body": "Okay, with a build from scratch:\n\n```\nsage: sage.libs.singular.function.singular_function(\"system\")(\"uname\", ring=PolynomialRing(QQ,2,'x'))\n'SunOS-5'\n```\n\n\nSo I probably messed up something last time (e.g. forget `sage -b`).",
+    "body": "Okay, with a build from scratch:\n\n```\nsage: sage.libs.singular.function.singular_function(\"system\")(\"uname\", ring=PolynomialRing(QQ,2,'x'))\n'SunOS-5'\n```\n\nSo I probably messed up something last time (e.g. forget `sage -b`).",
     "created_at": "2012-08-30T20:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2939,7 +2916,6 @@ Okay, with a build from scratch:
 sage: sage.libs.singular.function.singular_function("system")("uname", ring=PolynomialRing(QQ,2,'x'))
 'SunOS-5'
 ```
-
 
 So I probably messed up something last time (e.g. forget `sage -b`).
 
@@ -2968,7 +2944,7 @@ Changing assignee from @burcin to @jdemeyer.
 archive/issue_comments_067330.json:
 ```json
 {
-    "body": "Strange.  I applied the patch of this ticket again and get only one doctest failure now in `sage/algebras`:\n\n```\nsage -t  \"devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\"\n**********************************************************************\nFile \"/home/jdemeyer/mark/sage-5.4.beta0/devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n    sage: G = F._reductor_(I.gens(),3); G\nExpected:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3 over Rational Field\nGot:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n**********************************************************************\n```\n\n\nThis calls for some further investigation...",
+    "body": "Strange.  I applied the patch of this ticket again and get only one doctest failure now in `sage/algebras`:\n\n```\nsage -t  \"devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\"\n**********************************************************************\nFile \"/home/jdemeyer/mark/sage-5.4.beta0/devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n    sage: G = F._reductor_(I.gens(),3); G\nExpected:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3 over Rational Field\nGot:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n**********************************************************************\n```\n\nThis calls for some further investigation...",
     "created_at": "2012-08-30T20:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -2991,7 +2967,6 @@ Got:
 **********************************************************************
 ```
 
-
 This calls for some further investigation...
 
 
@@ -3001,7 +2976,7 @@ This calls for some further investigation...
 archive/issue_comments_067331.json:
 ```json
 {
-    "body": "Replying to [comment:88 jdemeyer]:\n> {{{\n> sage -t  \"devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\"\n> **********************************************************************\n> File \"/home/jdemeyer/mark/sage-5.4.beta0/devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n>     sage: G = F._reductor_(I.gens(),3); G\n> Expected:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3 over Rational Field\n> Got:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n> **********************************************************************\n> }}}\n> \n> This calls for some further investigation...\n\nThat test is about an internally used method (note the underscores), and the output depends on a polynomial ring that is used to simulate computations in free associative algebras out to a certain degree. As you can see, the ideal we expect and the ideal we got are alike - only the polynomial rings differ.\n\nThe point is that the underlying polynomial ring can change during computations, and the free associative algebras are unique parents. Hence, if tests are executed in different order then it may very well be that the polynomial ring used behind the scenes is different. Only the final result (i.e., interpreted in the free associative algebra) is unique.\n\nI suggest to modify that test (and perhaps others as well) as follows:\n\n```\n>     sage: G = F._reductor_(I.gens(),3); G\n> Expected:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n```\n\nThe variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.\n\nWould you accept that solution?",
+    "body": "Replying to [comment:88 jdemeyer]:\n> {{{\n> sage -t  \"devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\"\n> **********************************************************************\n> File \"/home/jdemeyer/mark/sage-5.4.beta0/devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n>     sage: G = F._reductor_(I.gens(),3); G\n> Expected:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3 over Rational Field\n> Got:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n> **********************************************************************\n> }}}\n> \n> This calls for some further investigation...\n\n\nThat test is about an internally used method (note the underscores), and the output depends on a polynomial ring that is used to simulate computations in free associative algebras out to a certain degree. As you can see, the ideal we expect and the ideal we got are alike - only the polynomial rings differ.\n\nThe point is that the underlying polynomial ring can change during computations, and the free associative algebras are unique parents. Hence, if tests are executed in different order then it may very well be that the polynomial ring used behind the scenes is different. Only the final result (i.e., interpreted in the free associative algebra) is unique.\n\nI suggest to modify that test (and perhaps others as well) as follows:\n\n```\n>     sage: G = F._reductor_(I.gens(),3); G\n> Expected:\n>     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n```\nThe variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.\n\nWould you accept that solution?",
     "created_at": "2012-08-30T20:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3025,6 +3000,7 @@ Replying to [comment:88 jdemeyer]:
 > 
 > This calls for some further investigation...
 
+
 That test is about an internally used method (note the underscores), and the output depends on a polynomial ring that is used to simulate computations in free associative algebras out to a certain degree. As you can see, the ideal we expect and the ideal we got are alike - only the polynomial rings differ.
 
 The point is that the underlying polynomial ring can change during computations, and the free associative algebras are unique parents. Hence, if tests are executed in different order then it may very well be that the polynomial ring used behind the scenes is different. Only the final result (i.e., interpreted in the free associative algebra) is unique.
@@ -3036,7 +3012,6 @@ I suggest to modify that test (and perhaps others as well) as follows:
 > Expected:
 >     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field
 ```
-
 The variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.
 
 Would you accept that solution?
@@ -3048,7 +3023,7 @@ Would you accept that solution?
 archive/issue_comments_067332.json:
 ```json
 {
-    "body": "Replying to [comment:89 SimonKing]:\n> I suggest to modify that test (and perhaps others as well) as follows:\n> {{{\n> >     sage: G = F._reductor_(I.gens(),3); G\n> > Expected:\n> >     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n> }}}\n> The variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.\n> \n> Would you accept that solution?\nSounds reasonable to me. So I'd reestablished the positive review, if Jeroen likes is, too.",
+    "body": "Replying to [comment:89 SimonKing]:\n> I suggest to modify that test (and perhaps others as well) as follows:\n> \n> ```\n> >     sage: G = F._reductor_(I.gens(),3); G\n> > Expected:\n> >     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n> ```\n> The variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.\n> \n> Would you accept that solution?\n\nSounds reasonable to me. So I'd reestablished the positive review, if Jeroen likes is, too.",
     "created_at": "2012-08-30T23:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3059,14 +3034,16 @@ archive/issue_comments_067332.json:
 
 Replying to [comment:89 SimonKing]:
 > I suggest to modify that test (and perhaps others as well) as follows:
-> {{{
+> 
+> ```
 > >     sage: G = F._reductor_(I.gens(),3); G
 > > Expected:
 > >     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field
-> }}}
+> ```
 > The variables before the `...` are guaranteed to occur, and we don't know (and don't care) whether more variables appear behind the scenes.
 > 
 > Would you accept that solution?
+
 Sounds reasonable to me. So I'd reestablished the positive review, if Jeroen likes is, too.
 
 
@@ -3094,7 +3071,7 @@ Good for me.
 archive/issue_comments_067334.json:
 ```json
 {
-    "body": "Replying to [comment:91 jdemeyer]:\n> Good for me.\n\nOK, then I'll prepare a patch. Probably not before Sunday, though...",
+    "body": "Replying to [comment:91 jdemeyer]:\n> Good for me.\n\n\nOK, then I'll prepare a patch. Probably not before Sunday, though...",
     "created_at": "2012-08-31T14:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3105,6 +3082,7 @@ archive/issue_comments_067334.json:
 
 Replying to [comment:91 jdemeyer]:
 > Good for me.
+
 
 OK, then I'll prepare a patch. Probably not before Sunday, though...
 
@@ -3191,7 +3169,7 @@ By the way, can you explain the role of the new line 821 in `sage/structure/pare
 archive/issue_comments_067339.json:
 ```json
 {
-    "body": "Replying to [comment:96 jhpalmieri]:\n> By the way, can you explain the role of the new line 821 in `sage/structure/parent.pyx`?\n\nI guess the plan was to add a doc test, then I changed my mind and deleted the doctest incompletely. I guess that line can be removed (by a reviewer patch?).",
+    "body": "Replying to [comment:96 jhpalmieri]:\n> By the way, can you explain the role of the new line 821 in `sage/structure/parent.pyx`?\n\n\nI guess the plan was to add a doc test, then I changed my mind and deleted the doctest incompletely. I guess that line can be removed (by a reviewer patch?).",
     "created_at": "2012-09-07T20:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3202,6 +3180,7 @@ archive/issue_comments_067339.json:
 
 Replying to [comment:96 jhpalmieri]:
 > By the way, can you explain the role of the new line 821 in `sage/structure/parent.pyx`?
+
 
 I guess the plan was to add a doc test, then I changed my mind and deleted the doctest incompletely. I guess that line can be removed (by a reviewer patch?).
 
@@ -3300,7 +3279,7 @@ archive/issue_events_018676.json:
 archive/issue_comments_067343.json:
 ```json
 {
-    "body": "I'm getting (in a trial sage-5.5.beta1, so it includes many other tickets)\n\n```\nsage -t  -force_lib devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\n**********************************************************************\nFile \"/release/merger/sage-5.5.beta1/devel/sage-main/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n    sage: G = F._reductor_(I.gens(),3); G\nExpected:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\nGot:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n**********************************************************************\n```\n",
+    "body": "I'm getting (in a trial sage-5.5.beta1, so it includes many other tickets)\n\n```\nsage -t  -force_lib devel/sage/sage/algebras/letterplace/free_algebra_letterplace.pyx\n**********************************************************************\nFile \"/release/merger/sage-5.5.beta1/devel/sage-main/sage/algebras/letterplace/free_algebra_letterplace.pyx\", line 684:\n    sage: G = F._reductor_(I.gens(),3); G\nExpected:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\nGot:\n    Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field\n**********************************************************************\n```",
     "created_at": "2012-10-30T15:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3322,7 +3301,6 @@ Got:
     Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2 over Rational Field
 **********************************************************************
 ```
-
 
 
 
@@ -3423,7 +3401,7 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_067349.json:
 ```json
 {
-    "body": "Attachment [trac7797-full_letterplace_wrapper_combined.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_combined.patch) by @simon-king-jena created at 2012-11-09 10:20:36\n\nI am sorry that I took so long to fix it.\n\nI have changed the \"big\" patch. The diff of the two patch versions is:\n\n```diff\n--- trac7797-full_letterplace_wrapper_combined.patch    2012-11-09 11:15:19.355793326 +0100\n+++ trac7797-full_letterplace_wrapper_combined.patch        2012-09-02 09:00:20.000000000 +0200\n@@ -2176,7 +2176,7 @@\n +            sage: p.reduce(I)\n +            y*y*y - y*y*z + y*z*y - y*z*z\n +            sage: G = F._reductor_(I.gens(),3); G\n-+            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n++            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\n +\n +        We do not use the usual reduction method for polynomials in\n +        Sage, since it does the reductions in a different order\n```\n\n\nI hope it is ok to restore the positive review, since I assume doctests will be run anyway before releasing.\n\nApply trac7797-full_letterplace_wrapper_combined.patch trac_7797-ref.patch",
+    "body": "Attachment [trac7797-full_letterplace_wrapper_combined.patch](tarball://root/attachments/some-uuid/ticket7797/trac7797-full_letterplace_wrapper_combined.patch) by @simon-king-jena created at 2012-11-09 10:20:36\n\nI am sorry that I took so long to fix it.\n\nI have changed the \"big\" patch. The diff of the two patch versions is:\n\n```diff\n--- trac7797-full_letterplace_wrapper_combined.patch    2012-11-09 11:15:19.355793326 +0100\n+++ trac7797-full_letterplace_wrapper_combined.patch        2012-09-02 09:00:20.000000000 +0200\n@@ -2176,7 +2176,7 @@\n +            sage: p.reduce(I)\n +            y*y*y - y*y*z + y*z*y - y*z*z\n +            sage: G = F._reductor_(I.gens(),3); G\n-+            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2... over Rational Field\n++            Ideal (x*y_1 + y*z_1, x_1*y_2 + y_1*z_2, x*x_1 + x*y_1 - y*x_1 - y*y_1, x_1*x_2 + x_1*y_2 - y_1*x_2 - y_1*y_2) of Multivariate Polynomial Ring in x, y, z, x_1, y_1, z_1, x_2, y_2, z_2, x_3, y_3, z_3... over Rational Field\n +\n +        We do not use the usual reduction method for polynomials in\n +        Sage, since it does the reductions in a different order\n```\n\nI hope it is ok to restore the positive review, since I assume doctests will be run anyway before releasing.\n\nApply trac7797-full_letterplace_wrapper_combined.patch trac_7797-ref.patch",
     "created_at": "2012-11-09T10:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3451,7 +3429,6 @@ I have changed the "big" patch. The diff of the two patch versions is:
  +        We do not use the usual reduction method for polynomials in
  +        Sage, since it does the reductions in a different order
 ```
-
 
 I hope it is ok to restore the positive review, since I assume doctests will be run anyway before releasing.
 
@@ -3534,7 +3511,7 @@ See #13802 for a problem this causes on Cygwin, though it looks like the fix is 
 archive/issue_comments_067353.json:
 ```json
 {
-    "body": "Replying to [comment:108 kcrisman]:\n> See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.\nIndeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.",
+    "body": "Replying to [comment:108 kcrisman]:\n> See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.\n\nIndeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.",
     "created_at": "2012-12-05T21:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3545,6 +3522,7 @@ archive/issue_comments_067353.json:
 
 Replying to [comment:108 kcrisman]:
 > See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.
+
 Indeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.
 
 
@@ -3554,7 +3532,7 @@ Indeed, looking at the other singular-based modules it makes sense. I don't expe
 archive/issue_comments_067354.json:
 ```json
 {
-    "body": "> > See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.\n> Indeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.\nGreat, can you give some feedback on the patch at #13802 then?  Thanks!",
+    "body": "> > See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.\n\n> Indeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.\nGreat, can you give some feedback on the patch at #13802 then?  Thanks!",
     "created_at": "2012-12-05T22:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3564,6 +3542,7 @@ archive/issue_comments_067354.json:
 ```
 
 > > See #13802 for a problem this causes on Cygwin, though it looks like the fix is easy.  I'd appreciate knowing whether it's okay to add `libraries=singular_libs` or whether that would cause problems; I think I *have* to add `SAGE_INC + 'factory'`.
+
 > Indeed, looking at the other singular-based modules it makes sense. I don't expect problems doing so.
 Great, can you give some feedback on the patch at #13802 then?  Thanks!
 
@@ -3574,7 +3553,7 @@ Great, can you give some feedback on the patch at #13802 then?  Thanks!
 archive/issue_comments_067355.json:
 ```json
 {
-    "body": "Replying to [comment:110 kcrisman]:\n> Great, can you give some feedback on the patch at #13802 then?  Thanks!\nVery well, I was able to positively review that patch.",
+    "body": "Replying to [comment:110 kcrisman]:\n> Great, can you give some feedback on the patch at #13802 then?  Thanks!\n\nVery well, I was able to positively review that patch.",
     "created_at": "2012-12-06T08:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3585,6 +3564,7 @@ archive/issue_comments_067355.json:
 
 Replying to [comment:110 kcrisman]:
 > Great, can you give some feedback on the patch at #13802 then?  Thanks!
+
 Very well, I was able to positively review that patch.
 
 
@@ -3594,7 +3574,7 @@ Very well, I was able to positively review that patch.
 archive/issue_comments_067356.json:
 ```json
 {
-    "body": "> > Great, can you give some feedback on the patch at #13802 then?  Thanks!\n> Very well, I was able to positively review that patch.\nVery helpful, thank you.",
+    "body": "> > Great, can you give some feedback on the patch at #13802 then?  Thanks!\n\n> Very well, I was able to positively review that patch.\nVery helpful, thank you.",
     "created_at": "2012-12-06T15:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7797",
     "type": "issue_comment",
@@ -3604,5 +3584,6 @@ archive/issue_comments_067356.json:
 ```
 
 > > Great, can you give some feedback on the patch at #13802 then?  Thanks!
+
 > Very well, I was able to positively review that patch.
 Very helpful, thank you.

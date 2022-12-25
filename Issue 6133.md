@@ -86,7 +86,7 @@ archive/issue_events_014440.json:
 archive/issue_comments_048894.json:
 ```json
 {
-    "body": "I get these failures when applying:\n\n\n```\napplying trac-6133.patch\nunable to find 'build.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file build.py.rej\nunable to find 'clib.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file clib.py.rej\nunable to find 'sagebuild.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sagebuild.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6133.patch\n\n```\n",
+    "body": "I get these failures when applying:\n\n```\napplying trac-6133.patch\nunable to find 'build.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file build.py.rej\nunable to find 'clib.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file clib.py.rej\nunable to find 'sagebuild.py' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sagebuild.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6133.patch\n\n```",
     "created_at": "2009-05-28T07:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
@@ -96,7 +96,6 @@ archive/issue_comments_048894.json:
 ```
 
 I get these failures when applying:
-
 
 ```
 applying trac-6133.patch
@@ -111,7 +110,6 @@ patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac-6133.patch
 
 ```
-
 
 
 

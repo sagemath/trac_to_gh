@@ -3,7 +3,7 @@
 archive/issues_008299.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nClearly this is undesirable:\n\n\n```\nsage: 5r + True\n6\nsage: 5 + True\n2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8299\n\n",
+    "body": "Assignee: @robertwb\n\nClearly this is undesirable:\n\n```\nsage: 5r + True\n6\nsage: 5 + True\n2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8299\n\n",
     "created_at": "2010-02-18T22:28:12Z",
     "labels": [
         "component: coercion",
@@ -21,14 +21,12 @@ Assignee: @robertwb
 
 Clearly this is undesirable:
 
-
 ```
 sage: 5r + True
 6
 sage: 5 + True
 2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8299
 
@@ -95,7 +93,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073396.json:
 ```json
 {
-    "body": "All good Robert. This patch treats True as 1, False as 0 for arithmetic with non-complex types.\n\n```\nsage: [k+True for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[4, 4, 4.00000000000000, 4.0, 4/3, 2]\n\nsage: [k+False for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[3, 3, 3.00000000000000, 3.0, 1/3, 1]\n\nsage: [k*True for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[3, 3, 3.00000000000000, 3.0, 1/3, 1]\n\nsage: [k*False for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[0, 0, 0.000000000000000, 0.0, 0, 0]\n```\n",
+    "body": "All good Robert. This patch treats True as 1, False as 0 for arithmetic with non-complex types.\n\n```\nsage: [k+True for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[4, 4, 4.00000000000000, 4.0, 4/3, 2]\n\nsage: [k+False for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[3, 3, 3.00000000000000, 3.0, 1/3, 1]\n\nsage: [k*True for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[3, 3, 3.00000000000000, 3.0, 1/3, 1]\n\nsage: [k*False for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]\n[0, 0, 0.000000000000000, 0.0, 0, 0]\n```",
     "created_at": "2010-02-26T11:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8299",
     "type": "issue_comment",
@@ -119,7 +117,6 @@ sage: [k*True for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]
 sage: [k*False for k in (3, 3r, 3.0, 3.0r, 1/3, 3*I+5)]
 [0, 0, 0.000000000000000, 0.0, 0, 0]
 ```
-
 
 
 

@@ -92,7 +92,7 @@ I just updated the spkg since I had accidently used version 1.4 of the sandpile.
 archive/issue_comments_062658.json:
 ```json
 {
-    "body": "I get a problem with what it is trying to download. I guess this may be a problem with what is on the server, rather than what this package needs, but this is what I get (Solaris 10, Sun Blade 2000)\n\n\n```\nsandpile-1.51/src/sandpile.py\nsandpile-1.51/src/setup.py\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/usr/local/gcc-4.4.1-sun-linker/bin/gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++ LDFLAGS='-R /usr/local/lib -L /usr/local/lib'\nThread model: posix\ngcc version 4.4.1 (GCC) \n****************************************************\nrunning install\nrunning build\nrunning build_py\ncreating build\ncreating build/lib\ncopying sandpile.py -> build/lib\nrunning install_lib\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nPossible names of non-installed packages starting with 'glpk':\n  glpk-4.38.p4\n  glpk-4.9\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.2.1/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sage/misc/package.py\", line 141, in install_package\n    raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\nValueError: There is more than one package name starting with 'glpk'. Please specify!\nForce installing 4ti2.p0\nCalling sage-spkg on 4ti2.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\n4ti2.p0\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of 4ti2.p0\n\n```\n",
+    "body": "I get a problem with what it is trying to download. I guess this may be a problem with what is on the server, rather than what this package needs, but this is what I get (Solaris 10, Sun Blade 2000)\n\n```\nsandpile-1.51/src/sandpile.py\nsandpile-1.51/src/setup.py\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/usr/local/gcc-4.4.1-sun-linker/bin/gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++ LDFLAGS='-R /usr/local/lib -L /usr/local/lib'\nThread model: posix\ngcc version 4.4.1 (GCC) \n****************************************************\nrunning install\nrunning build\nrunning build_py\ncreating build\ncreating build/lib\ncopying sandpile.py -> build/lib\nrunning install_lib\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nPossible names of non-installed packages starting with 'glpk':\n  glpk-4.38.p4\n  glpk-4.9\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.2.1/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sage/misc/package.py\", line 141, in install_package\n    raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\nValueError: There is more than one package name starting with 'glpk'. Please specify!\nForce installing 4ti2.p0\nCalling sage-spkg on 4ti2.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\n4ti2.p0\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of 4ti2.p0\n\n```",
     "created_at": "2009-12-24T00:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
@@ -102,7 +102,6 @@ archive/issue_comments_062658.json:
 ```
 
 I get a problem with what it is trying to download. I guess this may be a problem with what is on the server, rather than what this package needs, but this is what I get (Solaris 10, Sun Blade 2000)
-
 
 ```
 sandpile-1.51/src/sandpile.py
@@ -151,7 +150,6 @@ SunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000
 Deleting directories from past builds of previous/current versions of 4ti2.p0
 
 ```
-
 
 
 
@@ -236,7 +234,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062663.json:
 ```json
 {
-    "body": "It appears to make use of a GNU specific option to 'grep' (either that, or someone else has screwed something up, to make use of a GNU specific option). \n\n\n```\ndrkirkby@swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nInstalling http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nCalling sage-spkg on http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nsandpile-1.51\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of sandpile-1.51\n/export/home/drkirkby/sage-4.3.0.1/local/bin/sage-spkg: file sandpile-1.51 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of sandpile-1.51\nCould not find a version for sandpile-1.51.\n```\n\n\nDave",
+    "body": "It appears to make use of a GNU specific option to 'grep' (either that, or someone else has screwed something up, to make use of a GNU specific option). \n\n```\ndrkirkby@swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nInstalling http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nCalling sage-spkg on http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nsandpile-1.51\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of sandpile-1.51\n/export/home/drkirkby/sage-4.3.0.1/local/bin/sage-spkg: file sandpile-1.51 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of sandpile-1.51\nCould not find a version for sandpile-1.51.\n```\n\nDave",
     "created_at": "2010-02-06T14:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
@@ -246,7 +244,6 @@ archive/issue_comments_062663.json:
 ```
 
 It appears to make use of a GNU specific option to 'grep' (either that, or someone else has screwed something up, to make use of a GNU specific option). 
-
 
 ```
 drkirkby@swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg
@@ -264,7 +261,6 @@ Usage: grep -hblcnsviw pattern file . . .
 Searching for latest version of sandpile-1.51
 Could not find a version for sandpile-1.51.
 ```
-
 
 Dave
 

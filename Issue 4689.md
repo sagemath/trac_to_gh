@@ -3,7 +3,7 @@
 archive/issues_004689.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\n\nthen I get\n\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n\n```\nsage: c.save(\"example.png\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\nthen I get\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n```\nsage: c.save(\"example.png\")\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
     "created_at": "2008-12-03T22:37:41Z",
     "labels": [
         "component: algebra",
@@ -23,16 +23,13 @@ CC:  @mwhansen
 
 The examples in the documentation for the save method seems to be broken. If I try
 
-
 ```
 sage: E=EllipticCurve([1,0])
 sage: Eplot=E.plot()
 sage: Eplot.save?
 ```
 
-
 then I get
-
 
 ``` 
 EXAMPLES:
@@ -47,14 +44,11 @@ EXAMPLES:
                 sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))
 ```
 
-
 which never mentions "save" at all. Presumably there should be an extra line, something like
-
 
 ```
 sage: c.save("example.png")
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4689
 
@@ -145,7 +139,7 @@ It's in both 3.1.4 and 3.2.1, but that bug report does look relevant; hopefully 
 archive/issue_comments_035277.json:
 ```json
 {
-    "body": "With #4672 appplied:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\nresults in\n\n```\nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method Graphics.save of >\nNamespace:      Interactive\nFile:           /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.py\nDefinition:     Eplot.save(self, filename=None, xmin=None, xmax=None, ymin=None, ymax=None, figsize=(6, 3.7082039324993699), figure=None, sub=None, savenow=True, dpi=100, axes=None, axes_labels=None, fontsize=None, frame=False, verify=True, aspect_ratio=None, gridlines=None, gridlinesstyle=None, vgridlinesstyle=None, hgridlinesstyle=None)\nDocstring:\n    \n            Save the graphics to an image file of type: PNG, PS, EPS, SVG, SOBJ,\n            depending on the file extension you give the filename.\n                Extension types can be: file{.png}, file{.ps}, file{.eps}, file{.svg},\n                and file{.sobj} (for a SAGE object you can load later). \n    \n            EXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n    \n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n    \n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n                \n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\nRereading the original ticket I now get your main point: the docstring does not contain \"save\", but \"show\" does save the png and then pops up a viewer. We could resolve this by adding a example that uses the save method as you suggested, but my guess would be that such example (in case it did exist) was either changed or removed since \"save('foo.png')\" saves in the current working directory which is bad for doctesting as a non-owner. \n| Sage Version 3.2.1, Release Date: 2008-12-01                       |\n| Type notebook() for the GUI, and license() for information.        |\nSo, what do you want to do? Close this ticket as \"wontfix\" or we add a doctest that saves an image in SAGE_TMP - which is the clean way to deal with temporary files.\n\nCheers,\n\nMichael",
+    "body": "With #4672 appplied:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\nresults in\n| Sage Version 3.2.1, Release Date: 2008-12-01                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method Graphics.save of >\nNamespace:      Interactive\nFile:           /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.py\nDefinition:     Eplot.save(self, filename=None, xmin=None, xmax=None, ymin=None, ymax=None, figsize=(6, 3.7082039324993699), figure=None, sub=None, savenow=True, dpi=100, axes=None, axes_labels=None, fontsize=None, frame=False, verify=True, aspect_ratio=None, gridlines=None, gridlinesstyle=None, vgridlinesstyle=None, hgridlinesstyle=None)\nDocstring:\n    \n            Save the graphics to an image file of type: PNG, PS, EPS, SVG, SOBJ,\n            depending on the file extension you give the filename.\n                Extension types can be: file{.png}, file{.ps}, file{.eps}, file{.svg},\n                and file{.sobj} (for a SAGE object you can load later). \n    \n            EXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n    \n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n    \n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n                \n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\nRereading the original ticket I now get your main point: the docstring does not contain \"save\", but \"show\" does save the png and then pops up a viewer. We could resolve this by adding a example that uses the save method as you suggested, but my guess would be that such example (in case it did exist) was either changed or removed since \"save('foo.png')\" saves in the current working directory which is bad for doctesting as a non-owner. \n\nSo, what do you want to do? Close this ticket as \"wontfix\" or we add a doctest that saves an image in SAGE_TMP - which is the clean way to deal with temporary files.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T17:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
@@ -164,9 +158,9 @@ sage: E=EllipticCurve([1,0])
 sage: Eplot=E.plot()
 sage: Eplot.save?
 ```
-
 results in
-
+| Sage Version 3.2.1, Release Date: 2008-12-01                       |
+| Type notebook() for the GUI, and license() for information.        |
 ```
 Type:           instancemethod
 Base Class:     <type 'instancemethod'>
@@ -192,10 +186,8 @@ Docstring:
                 
                 sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))
 ```
-
 Rereading the original ticket I now get your main point: the docstring does not contain "save", but "show" does save the png and then pops up a viewer. We could resolve this by adding a example that uses the save method as you suggested, but my guess would be that such example (in case it did exist) was either changed or removed since "save('foo.png')" saves in the current working directory which is bad for doctesting as a non-owner. 
-| Sage Version 3.2.1, Release Date: 2008-12-01                       |
-| Type notebook() for the GUI, and license() for information.        |
+
 So, what do you want to do? Close this ticket as "wontfix" or we add a doctest that saves an image in SAGE_TMP - which is the clean way to deal with temporary files.
 
 Cheers,

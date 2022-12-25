@@ -3,7 +3,7 @@
 archive/issues_007496.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nWTF?\n\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
+    "body": "Assignee: @burcin\n\nWTF?\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
     "created_at": "2009-11-20T02:16:09Z",
     "labels": [
         "component: symbolics",
@@ -20,7 +20,6 @@ Assignee: @burcin
 
 WTF?
 
-
 ```
 sage: var('1')
 1
@@ -29,7 +28,6 @@ sage: var('1')+1
 sage: expand((var('2')+var('2'))^2)
 4*2^2
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7496
 
@@ -66,7 +64,7 @@ I don't know how to do this efficiently, while still allowing people to just use
 archive/issue_comments_063244.json:
 ```json
 {
-    "body": "As long as we don't have Python 3, I would try to find a regular expression that does what we need. It is of course easy to write a regular expression that works for ascii strings. But as soon as '\u00e4' or other language-specific letters are supposed to be considered a variable name, things will become difficult.\n\nI tried\n\n```\nsage: import re\nsage: _identifiers = re.compile(\"(?!\\d)\\w*\\Z\", re.LOCALE|re.UNICODE)\n```\n\n\nIt works for simple cases:\n\n```\nsage: _identifiers.match('k_1')\n<_sre.SRE_Match object at 0x50d1030>\nsage: _identifiers.match('1k')\nsage: _identifiers.match('_1k')\n<_sre.SRE_Match object at 0x50d1238>\n```\n\n\nBut it ignores other letters:\n\n```\nsage: print _identifiers.match('\u00e4')\nNone\n```\n\n\nPerhaps I have misunderstood the effect of `re.LOCALE`? What value should `re.LOCALE` have in order to work with accented letters?",
+    "body": "As long as we don't have Python 3, I would try to find a regular expression that does what we need. It is of course easy to write a regular expression that works for ascii strings. But as soon as '\u00e4' or other language-specific letters are supposed to be considered a variable name, things will become difficult.\n\nI tried\n\n```\nsage: import re\nsage: _identifiers = re.compile(\"(?!\\d)\\w*\\Z\", re.LOCALE|re.UNICODE)\n```\n\nIt works for simple cases:\n\n```\nsage: _identifiers.match('k_1')\n<_sre.SRE_Match object at 0x50d1030>\nsage: _identifiers.match('1k')\nsage: _identifiers.match('_1k')\n<_sre.SRE_Match object at 0x50d1238>\n```\n\nBut it ignores other letters:\n\n```\nsage: print _identifiers.match('\u00e4')\nNone\n```\n\nPerhaps I have misunderstood the effect of `re.LOCALE`? What value should `re.LOCALE` have in order to work with accented letters?",
     "created_at": "2011-03-03T10:31:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -84,7 +82,6 @@ sage: import re
 sage: _identifiers = re.compile("(?!\d)\w*\Z", re.LOCALE|re.UNICODE)
 ```
 
-
 It works for simple cases:
 
 ```
@@ -95,14 +92,12 @@ sage: _identifiers.match('_1k')
 <_sre.SRE_Match object at 0x50d1238>
 ```
 
-
 But it ignores other letters:
 
 ```
 sage: print _identifiers.match('ä')
 None
 ```
-
 
 Perhaps I have misunderstood the effect of `re.LOCALE`? What value should `re.LOCALE` have in order to work with accented letters?
 
@@ -187,7 +182,7 @@ This needs doctests just to document that `var('3')` and `var(' ')` (see #9724) 
 archive/issue_comments_063249.json:
 ```json
 {
-    "body": "Ok, I think this is still ok, though I am a little concerned about both of the following being bad:\n\n```\nsage: var(' x')\n(, x)\n```\n\nnot good because an empty string is a variable\n\n```\nsage: var(' x')\n---------------------------------------------------------------------------\nValueError: The name \"\" is not a valid Python identifier.\n```\n\nnot good because the intent is clear to make precisely x the variable.  \n\nSo is this breaking incorrect but usable behavior? \n\n```\nsage: var(\"x y  z\")\n(x, y, , z)\nsage: \n```\n\nis similar.\n\nAnyway, I withhold judgment on this.  Reviewer patch attached, but 'needs info' on this.  At the least it seems reasonable to open a new ticket to allow the above behavior - one could easily remove empty strings from the list `names_list` and then complain if there are none left, for instance.",
+    "body": "Ok, I think this is still ok, though I am a little concerned about both of the following being bad:\n\n```\nsage: var(' x')\n(, x)\n```\nnot good because an empty string is a variable\n\n```\nsage: var(' x')\n---------------------------------------------------------------------------\nValueError: The name \"\" is not a valid Python identifier.\n```\nnot good because the intent is clear to make precisely x the variable.  \n\nSo is this breaking incorrect but usable behavior? \n\n```\nsage: var(\"x y  z\")\n(x, y, , z)\nsage: \n```\nis similar.\n\nAnyway, I withhold judgment on this.  Reviewer patch attached, but 'needs info' on this.  At the least it seems reasonable to open a new ticket to allow the above behavior - one could easily remove empty strings from the list `names_list` and then complain if there are none left, for instance.",
     "created_at": "2011-06-24T03:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -202,7 +197,6 @@ Ok, I think this is still ok, though I am a little concerned about both of the f
 sage: var(' x')
 (, x)
 ```
-
 not good because an empty string is a variable
 
 ```
@@ -210,7 +204,6 @@ sage: var(' x')
 ---------------------------------------------------------------------------
 ValueError: The name "" is not a valid Python identifier.
 ```
-
 not good because the intent is clear to make precisely x the variable.  
 
 So is this breaking incorrect but usable behavior? 
@@ -220,7 +213,6 @@ sage: var("x y  z")
 (x, y, , z)
 sage: 
 ```
-
 is similar.
 
 Anyway, I withhold judgment on this.  Reviewer patch attached, but 'needs info' on this.  At the least it seems reasonable to open a new ticket to allow the above behavior - one could easily remove empty strings from the list `names_list` and then complain if there are none left, for instance.
@@ -306,7 +298,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_063254.json:
 ```json
 {
-    "body": "Updated patch splits with any white space and not only on single space:\n\n```\n    sage: var(' x y  z    ')\n    (x, y, z)\n    sage: var(' x  ,  y ,  z    ') \n    (x, y, z)\n```\n\nI'm giving the reviewer patch a positive review.",
+    "body": "Updated patch splits with any white space and not only on single space:\n\n```\n    sage: var(' x y  z    ')\n    (x, y, z)\n    sage: var(' x  ,  y ,  z    ') \n    (x, y, z)\n```\nI'm giving the reviewer patch a positive review.",
     "created_at": "2011-06-24T05:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -323,7 +315,6 @@ Updated patch splits with any white space and not only on single space:
     sage: var(' x  ,  y ,  z    ') 
     (x, y, z)
 ```
-
 I'm giving the reviewer patch a positive review.
 
 
@@ -351,7 +342,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063256.json:
 ```json
 {
-    "body": "Thanks.  So far it looks good.\n\nBut with the original version of the patch (and almost certainly the new one) we get the following doctest error (was letting them run overnight, my apologies):\n\n```\nsage -t -long \"devel/sage/sage/calculus/desolvers.py\"       \n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1430:\n    sage: sol=desolve_odeint(f,[0.5,2],srange(0,10,0.1),[x,y])\nException raised:\n        sol=desolve_odeint(f,[RealNumber('0.5'),Integer(2)],srange(Integer(0),Integer(10),RealNumber('0.1')),[x,y])###line 1430:\n    sage: sol=desolve_odeint(f,[0.5,2],srange(0,10,0.1),[x,y])\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[x\" is not a valid Python identifier.\n**********************************************************************\n<snip two failures that result from sol not being defined>\n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1446:\n    sage: sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=1e-13,atol=1e-14)\nException raised:\n      File \"<doctest __main__.example_12[15]>\", line 1, in <module>\n        sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=RealNumber('1e-13'),atol=RealNumber('1e-14'))###line 1446:\n    sage: sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=1e-13,atol=1e-14)\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[x\" is not a valid Python identifier.\n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1470:\n    sage: sol=desolve_odeint(f,ci,t,v,rtol=1e-3,atol=1e-4,h0=0.1,hmax=1,hmin=1e-4,mxstep=1000,mxords=17)\nException raised:\n      File \"<doctest __main__.example_12[32]>\", line 1, in <module>\n        sol=desolve_odeint(f,ci,t,v,rtol=RealNumber('1e-3'),atol=RealNumber('1e-4'),h0=RealNumber('0.1'),hmax=Integer(1),hmin=RealNumber('1e-4'),mxstep=Integer(1000),mxords=Integer(17))###line 1470:\n    sage: sol=desolve_odeint(f,ci,t,v,rtol=1e-3,atol=1e-4,h0=0.1,hmax=1,hmin=1e-4,mxstep=1000,mxords=17)\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[y1\" is not a valid Python identifier.\n**********************************************************************\n```\n",
+    "body": "Thanks.  So far it looks good.\n\nBut with the original version of the patch (and almost certainly the new one) we get the following doctest error (was letting them run overnight, my apologies):\n\n```\nsage -t -long \"devel/sage/sage/calculus/desolvers.py\"       \n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1430:\n    sage: sol=desolve_odeint(f,[0.5,2],srange(0,10,0.1),[x,y])\nException raised:\n        sol=desolve_odeint(f,[RealNumber('0.5'),Integer(2)],srange(Integer(0),Integer(10),RealNumber('0.1')),[x,y])###line 1430:\n    sage: sol=desolve_odeint(f,[0.5,2],srange(0,10,0.1),[x,y])\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[x\" is not a valid Python identifier.\n**********************************************************************\n<snip two failures that result from sol not being defined>\n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1446:\n    sage: sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=1e-13,atol=1e-14)\nException raised:\n      File \"<doctest __main__.example_12[15]>\", line 1, in <module>\n        sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=RealNumber('1e-13'),atol=RealNumber('1e-14'))###line 1446:\n    sage: sol=desolve_odeint(lorenz,ics,times,[x,y,z],rtol=1e-13,atol=1e-14)\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[x\" is not a valid Python identifier.\n**********************************************************************\nFile \"/Users/.../sage-4.7.1.alpha2/devel/sage/sage/calculus/desolvers.py\", line 1470:\n    sage: sol=desolve_odeint(f,ci,t,v,rtol=1e-3,atol=1e-4,h0=0.1,hmax=1,hmin=1e-4,mxstep=1000,mxords=17)\nException raised:\n      File \"<doctest __main__.example_12[32]>\", line 1, in <module>\n        sol=desolve_odeint(f,ci,t,v,rtol=RealNumber('1e-3'),atol=RealNumber('1e-4'),h0=RealNumber('0.1'),hmax=Integer(1),hmin=RealNumber('1e-4'),mxstep=Integer(1000),mxords=Integer(17))###line 1470:\n    sage: sol=desolve_odeint(f,ci,t,v,rtol=1e-3,atol=1e-4,h0=0.1,hmax=1,hmin=1e-4,mxstep=1000,mxords=17)\n      File \"/Users/.../sage-4.7.1.alpha2/local/lib/python/site-packages/sage/calculus/desolvers.py\", line 1501, in desolve_odeint\n        ivar = var(safe_name)\n      File \"ring.pyx\", line 798, in sage.symbolic.ring.var (sage/symbolic/ring.cpp:7745)\n      File \"ring.pyx\", line 506, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6272)\n      File \"ring.pyx\", line 534, in sage.symbolic.ring.SymbolicRing.var (sage/symbolic/ring.cpp:6044)\n    ValueError: The name \"t_[y1\" is not a valid Python identifier.\n**********************************************************************\n```",
     "created_at": "2011-06-24T11:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -408,7 +399,6 @@ Exception raised:
     ValueError: The name "t_[y1" is not a valid Python identifier.
 **********************************************************************
 ```
-
 
 
 
@@ -473,7 +463,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063260.json:
 ```json
 {
-    "body": "Replying to [comment:11 vbraun]:\n> Somehow I'm not surprised that somebody used invalid identifiers as variable names ;-)\n\nSo this actually found a bug of sorts - nice.  Though I have to say that trying to go between the Maxima way of all variables automatic and the Sage way of (nearly) none gave the folks who put that file together quite a challenge, so I don't blame them too much.  But the code is not so elegant, in retrospect.\n\nWhat's particularly bizarre about this is that in the old and the new cases, `fast_float` is being passed something with three arguments, so it still behaves properly - even though the third thing is an iterable in both cases!  Probably the \"right\" fix is to just do `'t_'+str(dvar)` for the first dvar only; fast_float just needs something different from the dependent variables.  But I think that would be another ticket, as this doesn't break anything (and the plots still look the same).\n\nAnyway, it fixes the test, doesn't seem to introduce any new bugs.\n\nHowever, the update to allowing whitespace probably still needs work. Maybe we need to special-case the situation where there is only whitespace in the string passed to `var`:\n\n```\nsage: var(' ')\n \nsage: a = var(' ')\nsage: a\n \nsage: type(a)\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nSorry :(",
+    "body": "Replying to [comment:11 vbraun]:\n> Somehow I'm not surprised that somebody used invalid identifiers as variable names ;-)\n\n\nSo this actually found a bug of sorts - nice.  Though I have to say that trying to go between the Maxima way of all variables automatic and the Sage way of (nearly) none gave the folks who put that file together quite a challenge, so I don't blame them too much.  But the code is not so elegant, in retrospect.\n\nWhat's particularly bizarre about this is that in the old and the new cases, `fast_float` is being passed something with three arguments, so it still behaves properly - even though the third thing is an iterable in both cases!  Probably the \"right\" fix is to just do `'t_'+str(dvar)` for the first dvar only; fast_float just needs something different from the dependent variables.  But I think that would be another ticket, as this doesn't break anything (and the plots still look the same).\n\nAnyway, it fixes the test, doesn't seem to introduce any new bugs.\n\nHowever, the update to allowing whitespace probably still needs work. Maybe we need to special-case the situation where there is only whitespace in the string passed to `var`:\n\n```\nsage: var(' ')\n \nsage: a = var(' ')\nsage: a\n \nsage: type(a)\n<type 'sage.symbolic.expression.Expression'>\n```\n\nSorry :(",
     "created_at": "2011-06-24T13:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
@@ -484,6 +474,7 @@ archive/issue_comments_063260.json:
 
 Replying to [comment:11 vbraun]:
 > Somehow I'm not surprised that somebody used invalid identifiers as variable names ;-)
+
 
 So this actually found a bug of sorts - nice.  Though I have to say that trying to go between the Maxima way of all variables automatic and the Sage way of (nearly) none gave the folks who put that file together quite a challenge, so I don't blame them too much.  But the code is not so elegant, in retrospect.
 
@@ -502,7 +493,6 @@ sage: a
 sage: type(a)
 <type 'sage.symbolic.expression.Expression'>
 ```
-
 
 Sorry :(
 

@@ -120,7 +120,7 @@ I fixed a doctest failure... All tests should pass now.
 archive/issue_comments_079269.json:
 ```json
 {
-    "body": "I fixed the following issues raised by Nicolas on sage-combinat-devel\n\n```\n> >> The output of IntegerRange is much nicer now. I was about to put a\n> >> positive review, when I had a last doubt about the consistency between:\n> >>\n> >>      sage: I = IntegerRange(2,100,5); I\n> >>      {2, 7 .. 97}\n> >>      sage: I = IntegerRange(54,Infinity,3); I\n> >>      {54, 57, ..}\n> >>\n> >> Should there be a comma in both cases, in none, or is it good as is?\n> >\n> > I would say {2, 7 .. 97} should be replaced by {2, 7, .., 97} for\n> > consistency.\n```\n",
+    "body": "I fixed the following issues raised by Nicolas on sage-combinat-devel\n\n```\n> >> The output of IntegerRange is much nicer now. I was about to put a\n> >> positive review, when I had a last doubt about the consistency between:\n> >>\n> >>      sage: I = IntegerRange(2,100,5); I\n> >>      {2, 7 .. 97}\n> >>      sage: I = IntegerRange(54,Infinity,3); I\n> >>      {54, 57, ..}\n> >>\n> >> Should there be a comma in both cases, in none, or is it good as is?\n> >\n> > I would say {2, 7 .. 97} should be replaced by {2, 7, .., 97} for\n> > consistency.\n```",
     "created_at": "2010-05-31T21:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
@@ -145,7 +145,6 @@ I fixed the following issues raised by Nicolas on sage-combinat-devel
 > > I would say {2, 7 .. 97} should be replaced by {2, 7, .., 97} for
 > > consistency.
 ```
-
 
 
 

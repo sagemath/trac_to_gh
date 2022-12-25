@@ -3,7 +3,7 @@
 archive/issues_009220.json:
 ```json
 {
-    "body": "Assignee: @robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\n\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
+    "body": "Assignee: @robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
     "created_at": "2010-06-11T21:06:02Z",
     "labels": [
         "component: coercion",
@@ -20,7 +20,6 @@ Assignee: @robertwb
 
 I doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:
 
-
 ```
 sage: R=QQ['x']
 sage: S=QQ['x','y']
@@ -34,7 +33,6 @@ sage: h=S.0^2
 sage: parent(h(R.0,0))
 Univariate Polynomial Ring in x over Rational Field 
 ```
-
 I would expect the result of the second example in both cases.
 
 In
@@ -72,7 +70,7 @@ I agree, the result should only be a function of the base ring and evaluation ar
 archive/issue_comments_086255.json:
 ```json
 {
-    "body": "I think I've found the culprit in:\n\n```\nbuilt-in method __call__ of sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular\n```\n\nIndeed, it tries to coerce the evaluation values into the polynomial ring. Perhaps it should try to coerce into the base ring of the parent instead?\n\n```\n        if l != parent._ring.N:\n            raise TypeError, \"number of arguments does not match number of variables in parent\"\n\n        try:\n            x = [parent._coerce_c(e) for e in x]\n        except TypeError:\n            # give up, evaluate functional\n            y = parent.base_ring()(0)\n            for (m,c) in self.dict().iteritems():\n                y += c*mul([ x[i]**m[i] for i in m.nonzero_positions()])\n            return y\n\n```\n\nIf I were to fix this code, I'd simply always do the code under the \"except\", but someone probably had a good reason for doing it the way it's done. Probably because `singular_polynomial_call` is more efficient? I see several options:\n\n* Ask the coercion system for a common overring of the base ring of parent and all the parents of x. If that is parent, then coerce and use singular_polynomial_call. Otherwise just multiply out manually.\n\n* see if the parent of all members of x is equal to parent (due to the lax coercion rules, *coercible into* isn't good enough)\n\n* just always evaluate by multiplying out\n\nThe first one is the \"proper\" one in that it uses the coercion system to figure out if a more efficient option is available. The second option should be cheap and catch the case where most speed-up should be attainable. The third option wouldn't waste any time on checking parents, but would need coercion calls for each coefficient-monomial multiplication.",
+    "body": "I think I've found the culprit in:\n\n```\nbuilt-in method __call__ of sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular\n```\nIndeed, it tries to coerce the evaluation values into the polynomial ring. Perhaps it should try to coerce into the base ring of the parent instead?\n\n```\n        if l != parent._ring.N:\n            raise TypeError, \"number of arguments does not match number of variables in parent\"\n\n        try:\n            x = [parent._coerce_c(e) for e in x]\n        except TypeError:\n            # give up, evaluate functional\n            y = parent.base_ring()(0)\n            for (m,c) in self.dict().iteritems():\n                y += c*mul([ x[i]**m[i] for i in m.nonzero_positions()])\n            return y\n\n```\nIf I were to fix this code, I'd simply always do the code under the \"except\", but someone probably had a good reason for doing it the way it's done. Probably because `singular_polynomial_call` is more efficient? I see several options:\n\n* Ask the coercion system for a common overring of the base ring of parent and all the parents of x. If that is parent, then coerce and use singular_polynomial_call. Otherwise just multiply out manually.\n\n* see if the parent of all members of x is equal to parent (due to the lax coercion rules, *coercible into* isn't good enough)\n\n* just always evaluate by multiplying out\n\nThe first one is the \"proper\" one in that it uses the coercion system to figure out if a more efficient option is available. The second option should be cheap and catch the case where most speed-up should be attainable. The third option wouldn't waste any time on checking parents, but would need coercion calls for each coefficient-monomial multiplication.",
     "created_at": "2010-06-14T18:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -86,7 +84,6 @@ I think I've found the culprit in:
 ```
 built-in method __call__ of sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular
 ```
-
 Indeed, it tries to coerce the evaluation values into the polynomial ring. Perhaps it should try to coerce into the base ring of the parent instead?
 
 ```
@@ -103,7 +100,6 @@ Indeed, it tries to coerce the evaluation values into the polynomial ring. Perha
             return y
 
 ```
-
 If I were to fix this code, I'd simply always do the code under the "except", but someone probably had a good reason for doing it the way it's done. Probably because `singular_polynomial_call` is more efficient? I see several options:
 
 * Ask the coercion system for a common overring of the base ring of parent and all the parents of x. If that is parent, then coerce and use singular_polynomial_call. Otherwise just multiply out manually.
@@ -121,7 +117,7 @@ The first one is the "proper" one in that it uses the coercion system to figure 
 archive/issue_comments_086256.json:
 ```json
 {
-    "body": "Indeed the present code does seem to address real overhead:\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: timeit('h(R.0,0)')\n625 loops, best of 3: 269 \u00b5s per loop\n```\n\nbut\n\n```\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: timeit('h(R.0,0)')\n625 loops, best of 3: 523 \u00b5s per loop\n```\n\nso option one or two above is probably the proper one.",
+    "body": "Indeed the present code does seem to address real overhead:\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: timeit('h(R.0,0)')\n625 loops, best of 3: 269 \u00b5s per loop\n```\nbut\n\n```\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: timeit('h(R.0,0)')\n625 loops, best of 3: 523 \u00b5s per loop\n```\nso option one or two above is probably the proper one.",
     "created_at": "2010-06-14T18:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -139,7 +135,6 @@ sage: h=S.0^2
 sage: timeit('h(R.0,0)')
 625 loops, best of 3: 269 µs per loop
 ```
-
 but
 
 ```
@@ -149,7 +144,6 @@ sage: h=S.0^2
 sage: timeit('h(R.0,0)')
 625 loops, best of 3: 523 µs per loop
 ```
-
 so option one or two above is probably the proper one.
 
 
@@ -307,7 +301,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_086265.json:
 ```json
 {
-    "body": "Needs to be rebased to sage-5.0.beta11:\n\n```\napplying 9220-poly-evaluation-coerce.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #2 succeeded at 4512 with fuzz 2 (offset 2764 lines).\nHunk #4 FAILED at 1785\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9220-poly-evaluation-coerce.patch\n```\n",
+    "body": "Needs to be rebased to sage-5.0.beta11:\n\n```\napplying 9220-poly-evaluation-coerce.patch\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #2 succeeded at 4512 with fuzz 2 (offset 2764 lines).\nHunk #4 FAILED at 1785\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh 9220-poly-evaluation-coerce.patch\n```",
     "created_at": "2012-03-29T14:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -328,7 +322,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 errors during apply, please fix and refresh 9220-poly-evaluation-coerce.patch
 ```
-
 
 
 
@@ -375,7 +368,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086268.json:
 ```json
 {
-    "body": "Some docstring things:\n- Please use auto-trac linking `:trac:`9220``\n- For `common_parent()`, I would recommend:\n\n```\nComputes a common parent for all the inputs.\n\nThis is essentially an `n`-ary canonical coercion except it\ncan operate on parents rather than just elements. \n\nINPUT: \n\n- ``args`` -- a set of elements and/or parents\n\nOUTPUT: \n\nA :class:`Parent` into which each input should coerce, or raises a \n``TypeError`` if no such :class:`Parent` can be found. \n```\n\n  In particular, there is should not be an indent on the `INPUT:` and `OUTPUT:` blocks.\n\nThanks, \n\nTravis",
+    "body": "Some docstring things:\n- Please use auto-trac linking `:trac:`9220``\n- For `common_parent()`, I would recommend:\n\n```\nComputes a common parent for all the inputs.\n\nThis is essentially an `n`-ary canonical coercion except it\ncan operate on parents rather than just elements. \n\nINPUT: \n\n- ``args`` -- a set of elements and/or parents\n\nOUTPUT: \n\nA :class:`Parent` into which each input should coerce, or raises a \n``TypeError`` if no such :class:`Parent` can be found. \n```\n  In particular, there is should not be an indent on the `INPUT:` and `OUTPUT:` blocks.\n\nThanks, \n\nTravis",
     "created_at": "2012-10-27T22:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
@@ -403,7 +396,6 @@ OUTPUT:
 A :class:`Parent` into which each input should coerce, or raises a 
 ``TypeError`` if no such :class:`Parent` can be found. 
 ```
-
   In particular, there is should not be an indent on the `INPUT:` and `OUTPUT:` blocks.
 
 Thanks, 

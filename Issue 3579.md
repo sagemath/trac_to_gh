@@ -3,7 +3,7 @@
 archive/issues_003579.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
+    "body": "Assignee: @rlmill\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
     "created_at": "2008-07-07T00:37:28Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_003579.json:
 ```
 Assignee: @rlmill
 
-
 ```
 17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)
 17:32 < itolkov> Traceback ... OverflowError: math range error
@@ -27,7 +26,6 @@ Assignee: @rlmill
 17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.
 17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3579
 

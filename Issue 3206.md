@@ -3,7 +3,7 @@
 archive/issues_003206.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFor some reason nobody ever got around to implementing \"sage -i\" on URL's.  E.g.,\nthis should work but doesn't yet.  I'm amazed this still isn't done!\n\n```\nsage -i http://sagemath.org/packages/optional/database_odlyzko_zeta.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3206\n\n",
+    "body": "Assignee: mabshoff\n\nFor some reason nobody ever got around to implementing \"sage -i\" on URL's.  E.g.,\nthis should work but doesn't yet.  I'm amazed this still isn't done!\n\n```\nsage -i http://sagemath.org/packages/optional/database_odlyzko_zeta.spkg\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/3206\n\n",
     "created_at": "2008-05-14T22:26:12Z",
     "labels": [
         "component: packages: standard"
@@ -23,7 +23,6 @@ this should work but doesn't yet.  I'm amazed this still isn't done!
 ```
 sage -i http://sagemath.org/packages/optional/database_odlyzko_zeta.spkg
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/3206
 

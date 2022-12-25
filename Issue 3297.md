@@ -265,7 +265,7 @@ What's up with this?  It has been in limbo for 3 months!  Somebody do something.
 archive/issue_comments_022766.json:
 ```json
 {
-    "body": "Replying to [comment:10 was]:\n> What's up with this?  It has been in limbo for 3 months!  Somebody do something. \n\nUpstream is unresponsive. I don't see the point to copy over a massive amount of changes making the spkg at least twice as large. This is also purely a Debian thing, but we could just ship in place modified sources with instructions on how to get from upstream to this. Once upstream updates (if ever) we could sync.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:10 was]:\n> What's up with this?  It has been in limbo for 3 months!  Somebody do something. \n\n\nUpstream is unresponsive. I don't see the point to copy over a massive amount of changes making the spkg at least twice as large. This is also purely a Debian thing, but we could just ship in place modified sources with instructions on how to get from upstream to this. Once upstream updates (if ever) we could sync.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T22:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
@@ -276,6 +276,7 @@ archive/issue_comments_022766.json:
 
 Replying to [comment:10 was]:
 > What's up with this?  It has been in limbo for 3 months!  Somebody do something. 
+
 
 Upstream is unresponsive. I don't see the point to copy over a massive amount of changes making the spkg at least twice as large. This is also purely a Debian thing, but we could just ship in place modified sources with instructions on how to get from upstream to this. Once upstream updates (if ever) we could sync.
 
@@ -290,7 +291,7 @@ Michael
 archive/issue_comments_022767.json:
 ```json
 {
-    "body": "> Upstream is unresponsive. I don't see the point to copy over a massive amount of \n> changes making the spkg at least twice as large. This is also purely a Debian \n> thing, but we could just ship in place modified sources with instructions on how \n> to get from upstream to this. Once upstream updates (if ever) we could sync. \n\nI don't get the sense of any precise plan here, and I'm tempted to close this as invalid?  Thoughts?",
+    "body": "> Upstream is unresponsive. I don't see the point to copy over a massive amount of \n> changes making the spkg at least twice as large. This is also purely a Debian \n> thing, but we could just ship in place modified sources with instructions on how \n> to get from upstream to this. Once upstream updates (if ever) we could sync. \n\n\nI don't get the sense of any precise plan here, and I'm tempted to close this as invalid?  Thoughts?",
     "created_at": "2008-12-06T21:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
@@ -303,6 +304,7 @@ archive/issue_comments_022767.json:
 > changes making the spkg at least twice as large. This is also purely a Debian 
 > thing, but we could just ship in place modified sources with instructions on how 
 > to get from upstream to this. Once upstream updates (if ever) we could sync. 
+
 
 I don't get the sense of any precise plan here, and I'm tempted to close this as invalid?  Thoughts?
 
@@ -340,7 +342,7 @@ I...
 archive/issue_comments_022769.json:
 ```json
 {
-    "body": "Replying to [comment:13 sbarthelemy]:\n> Here  a [new cddlib spkg](http://perso.crans.org/barthelemy/cddlib-094f.spkg), based on the current 094b.p3\n\nI just discovered #1619 which is the proper place for my comment. I copied it there. Sorry for the noise.",
+    "body": "Replying to [comment:13 sbarthelemy]:\n> Here  a [new cddlib spkg](http://perso.crans.org/barthelemy/cddlib-094f.spkg), based on the current 094b.p3\n\n\nI just discovered #1619 which is the proper place for my comment. I copied it there. Sorry for the noise.",
     "created_at": "2009-01-27T16:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
@@ -351,6 +353,7 @@ archive/issue_comments_022769.json:
 
 Replying to [comment:13 sbarthelemy]:
 > Here  a [new cddlib spkg](http://perso.crans.org/barthelemy/cddlib-094f.spkg), based on the current 094b.p3
+
 
 I just discovered #1619 which is the proper place for my comment. I copied it there. Sorry for the noise.
 
@@ -397,7 +400,7 @@ I think #1619 removes some of the issues here, and so these patches would need t
 archive/issue_comments_022772.json:
 ```json
 {
-    "body": "Replying to [comment:15 mhampton]:\n> I think #1619 removes some of the issues here, and so these patches would need to be rebased at least.  Someone might want to revive working on converting this to a shared library, so I don't think it should be closed, but I am changing it to needs work.\n\nOK I had done some of the work against 0.94f already but I guess skpg-install at least\nwill need to be rebased. I will look at it later today.",
+    "body": "Replying to [comment:15 mhampton]:\n> I think #1619 removes some of the issues here, and so these patches would need to be rebased at least.  Someone might want to revive working on converting this to a shared library, so I don't think it should be closed, but I am changing it to needs work.\n\n\nOK I had done some of the work against 0.94f already but I guess skpg-install at least\nwill need to be rebased. I will look at it later today.",
     "created_at": "2009-10-29T20:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
@@ -408,6 +411,7 @@ archive/issue_comments_022772.json:
 
 Replying to [comment:15 mhampton]:
 > I think #1619 removes some of the issues here, and so these patches would need to be rebased at least.  Someone might want to revive working on converting this to a shared library, so I don't think it should be closed, but I am changing it to needs work.
+
 
 OK I had done some of the work against 0.94f already but I guess skpg-install at least
 will need to be rebased. I will look at it later today.

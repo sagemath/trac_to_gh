@@ -3,7 +3,7 @@
 archive/issues_004277.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\nAlso, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does\nnot seem to be used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4277\n\n",
+    "body": "Assignee: @williamstein\n\nThe patch improves the doctest coverage of ell_point.py to 100%. However, a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\nAlso, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does\nnot seem to be used anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4277\n\n",
     "created_at": "2008-10-13T19:48:41Z",
     "labels": [
         "component: algebraic geometry",
@@ -29,7 +29,6 @@ Expected:
 Got:
     '_sage_[2]![_sage_[3],_sage_[4]]'
 ```
-
 Also, I believe ell_padic.py should be removed, since it is said it is deprecated, and it does
 not seem to be used anywhere.
 
@@ -116,7 +115,7 @@ This patch depends on #4288
 archive/issue_comments_031213.json:
 ```json
 {
-    "body": "Replying to [comment:3 robertwb]:\n> This patch depends on #4288\n\nI assume #4289.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:3 robertwb]:\n> This patch depends on #4288\n\n\nI assume #4289.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T15:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
@@ -127,6 +126,7 @@ archive/issue_comments_031213.json:
 
 Replying to [comment:3 robertwb]:
 > This patch depends on #4288
+
 
 I assume #4289.
 
@@ -141,7 +141,7 @@ Michael
 archive/issue_comments_031214.json:
 ```json
 {
-    "body": "Replying to [comment:4 mabshoff]:\n> I assume #4289.\n\nI guess Robert wanted to say that the _magma_init_ error\nis now a separate ticket, namely #4288.",
+    "body": "Replying to [comment:4 mabshoff]:\n> I assume #4289.\n\n\nI guess Robert wanted to say that the _magma_init_ error\nis now a separate ticket, namely #4288.",
     "created_at": "2008-10-18T15:36:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
@@ -152,6 +152,7 @@ archive/issue_comments_031214.json:
 
 Replying to [comment:4 mabshoff]:
 > I assume #4289.
+
 
 I guess Robert wanted to say that the _magma_init_ error
 is now a separate ticket, namely #4288.
@@ -181,7 +182,7 @@ Yes, my intention was that the _magma_init_ error is a separate ticket, and need
 archive/issue_comments_031216.json:
 ```json
 {
-    "body": "Replying to [comment:5 zimmerma]:\n> I guess Robert wanted to say that the _magma_init_ error\n> is now a separate ticket, namely #4288.\n\nYep, I found that out, too. Let's hope was or someone else fixes this one soon.\n\nCheers,\n\nMichael",
+    "body": "Replying to [comment:5 zimmerma]:\n> I guess Robert wanted to say that the _magma_init_ error\n> is now a separate ticket, namely #4288.\n\n\nYep, I found that out, too. Let's hope was or someone else fixes this one soon.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T19:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
@@ -193,6 +194,7 @@ archive/issue_comments_031216.json:
 Replying to [comment:5 zimmerma]:
 > I guess Robert wanted to say that the _magma_init_ error
 > is now a separate ticket, namely #4288.
+
 
 Yep, I found that out, too. Let's hope was or someone else fixes this one soon.
 
@@ -207,7 +209,7 @@ Michael
 archive/issue_comments_031217.json:
 ```json
 {
-    "body": "Replying to [comment:7 mabshoff]:\n> Replying to [comment:5 zimmerma]:\n> > I guess Robert wanted to say that the _magma_init_ error\n> > is now a separate ticket, namely #4288.\n> \n> Yep, I found that out, too. Let's hope was or someone else fixes this one soon.\n\nIt was someone else ;)\n\nSomeone who looked at this one earlier might like to to try it out along with my patch to #4288 since I think the two together work fine (this one needs to be applied before that one).\n\n> \n> Cheers,\n> \n> Michael",
+    "body": "Replying to [comment:7 mabshoff]:\n> Replying to [comment:5 zimmerma]:\n> > I guess Robert wanted to say that the _magma_init_ error\n> > is now a separate ticket, namely #4288.\n\n> \n> Yep, I found that out, too. Let's hope was or someone else fixes this one soon.\n\n\nIt was someone else ;)\n\nSomeone who looked at this one earlier might like to to try it out along with my patch to #4288 since I think the two together work fine (this one needs to be applied before that one).\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2008-10-19T20:25:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4277",
     "type": "issue_comment",
@@ -220,8 +222,10 @@ Replying to [comment:7 mabshoff]:
 > Replying to [comment:5 zimmerma]:
 > > I guess Robert wanted to say that the _magma_init_ error
 > > is now a separate ticket, namely #4288.
+
 > 
 > Yep, I found that out, too. Let's hope was or someone else fixes this one soon.
+
 
 It was someone else ;)
 

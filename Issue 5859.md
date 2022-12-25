@@ -3,7 +3,7 @@
 archive/issues_005859.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\n\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
     "created_at": "2009-04-22T23:31:00Z",
     "labels": [
         "component: doctest coverage",
@@ -20,11 +20,9 @@ Assignee: mabshoff
 
 CC:  @orlitzky
 
-
 ```
 ./sage -coverageall devel/sage/sage/catalogue/
 ```
-
 results in
 
 ```
@@ -35,7 +33,6 @@ Traceback (most recent call last):
     score = (float(scr) / total)
 ZeroDivisionError: float division
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5859
 

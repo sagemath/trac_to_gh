@@ -164,7 +164,7 @@ If the patch results in better performance, there should be ("good") code to ill
 archive/issue_comments_021255.json:
 ```json
 {
-    "body": "Replying to [comment:4 mvngu]:\n> If the patch results in better performance, there should be (\"good\") code to illustrate this both before and after applying the patch. Such information is good for release tours.\n\nMinh,\n\nHere you go.\n\nThanks,\nRob\n\n\n```\nOriginal doctest example\nA = '5...8..49...5...3..673....115..........2.8..........187....415..3...2...49..5...3'\n\nA 17-hint puzzle (no 16-hint puzzles known)\nB = '....1.9..8..4.....2.........7..3..........2.4.......58.6....13.7..2........8.....'\n\nDifficult for backtracking, Wikipedia's \"worst case\"\nC = '..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9'\n\nTimings on 3 GHz Intel Core Duo, KUbuntu 8.10\n  4.0.1 = backtracking via recursive calls\n  DLX = Exact Cover, Dancing Links algorithm\n  BackTrack = Cythonized backtracking with propogation\n\n    4.0.1    Patch/DLX  Patch/BT    Factors\nA   34 ms    1.11 ms    187 us      31x, 182x\n\nB   1494 s   1.20 ms    441 ms      1245000x, 3388x\n\nC   4798 s   1.21 ms    944 ms      4000000x, 5000x\n```\n",
+    "body": "Replying to [comment:4 mvngu]:\n> If the patch results in better performance, there should be (\"good\") code to illustrate this both before and after applying the patch. Such information is good for release tours.\n\n\nMinh,\n\nHere you go.\n\nThanks,\nRob\n\n```\nOriginal doctest example\nA = '5...8..49...5...3..673....115..........2.8..........187....415..3...2...49..5...3'\n\nA 17-hint puzzle (no 16-hint puzzles known)\nB = '....1.9..8..4.....2.........7..3..........2.4.......58.6....13.7..2........8.....'\n\nDifficult for backtracking, Wikipedia's \"worst case\"\nC = '..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9'\n\nTimings on 3 GHz Intel Core Duo, KUbuntu 8.10\n  4.0.1 = backtracking via recursive calls\n  DLX = Exact Cover, Dancing Links algorithm\n  BackTrack = Cythonized backtracking with propogation\n\n    4.0.1    Patch/DLX  Patch/BT    Factors\nA   34 ms    1.11 ms    187 us      31x, 182x\n\nB   1494 s   1.20 ms    441 ms      1245000x, 3388x\n\nC   4798 s   1.21 ms    944 ms      4000000x, 5000x\n```",
     "created_at": "2009-06-08T06:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3084",
     "type": "issue_comment",
@@ -176,13 +176,13 @@ archive/issue_comments_021255.json:
 Replying to [comment:4 mvngu]:
 > If the patch results in better performance, there should be ("good") code to illustrate this both before and after applying the patch. Such information is good for release tours.
 
+
 Minh,
 
 Here you go.
 
 Thanks,
 Rob
-
 
 ```
 Original doctest example
@@ -209,13 +209,12 @@ C   4798 s   1.21 ms    944 ms      4000000x, 5000x
 
 
 
-
 ---
 
 archive/issue_comments_021256.json:
 ```json
 {
-    "body": "This looks great, albeit with some long lines (in the algorithm description, not doctests).  Apply!\n\nOn sage.math:\n\n\n```\nsage: %timeit sage.games.sudoku.Sudoku('5...8..49...5...3..673....115..........2.8..........187....415..3...2...49..5...3').solve().next()\n1000 loops, best of 3: 1.37 ms per loop\nsage: %timeit sage.games.sudoku.Sudoku('....1.9..8..4.....2.........7..3..........2.4.......58.6....13.7..2........8.....').solve().next()\n1000 loops, best of 3: 1.48 ms per loop\nsage: %timeit sage.games.sudoku.Sudoku('..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9').solve().next()1000 loops, best of 3: 1.48 ms per loop\n```\n",
+    "body": "This looks great, albeit with some long lines (in the algorithm description, not doctests).  Apply!\n\nOn sage.math:\n\n```\nsage: %timeit sage.games.sudoku.Sudoku('5...8..49...5...3..673....115..........2.8..........187....415..3...2...49..5...3').solve().next()\n1000 loops, best of 3: 1.37 ms per loop\nsage: %timeit sage.games.sudoku.Sudoku('....1.9..8..4.....2.........7..3..........2.4.......58.6....13.7..2........8.....').solve().next()\n1000 loops, best of 3: 1.48 ms per loop\nsage: %timeit sage.games.sudoku.Sudoku('..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9').solve().next()1000 loops, best of 3: 1.48 ms per loop\n```",
     "created_at": "2009-06-15T19:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3084",
     "type": "issue_comment",
@@ -228,7 +227,6 @@ This looks great, albeit with some long lines (in the algorithm description, not
 
 On sage.math:
 
-
 ```
 sage: %timeit sage.games.sudoku.Sudoku('5...8..49...5...3..673....115..........2.8..........187....415..3...2...49..5...3').solve().next()
 1000 loops, best of 3: 1.37 ms per loop
@@ -236,7 +234,6 @@ sage: %timeit sage.games.sudoku.Sudoku('....1.9..8..4.....2.........7..3........
 1000 loops, best of 3: 1.48 ms per loop
 sage: %timeit sage.games.sudoku.Sudoku('..............3.85..1.2.......5.7.....4...1...9.......5......73..2.1........4...9').solve().next()1000 loops, best of 3: 1.48 ms per loop
 ```
-
 
 
 

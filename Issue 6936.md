@@ -149,7 +149,7 @@ setting a positive review on this one?
 archive/issue_comments_057219.json:
 ```json
 {
-    "body": "Replying to [comment:5 nthiery]:\n> Hi Jason,\n> \n> I am glad to hear that TestSuite is useful, even before the category\n> code gets in :-)\n> \n> Some suggestions:\n> \n>  - remove the loads(dumps(a)) == a tests, since anyway they are\n>    done by TestSuite\n\n\nThe -review.patch patch does this.\n\n\n> \n>  - Maybe rename _test_matrix_pickle by _test_reduce?\n\n\nThe -review.patch patch does this.\n\n\n> \n>    In fact, it would be nice to have this test whenever __reduce__ is\n>    implemented (even though it's tested by test_pickle anyway).  An\n>    option would be to lift _test_reduce to SageObject, and add a\n>    conditional in _test_reduce to do nothing if _reduce_ is not\n>    defined. The downside is that, if someone inadvertently remove\n>    __reduce__, then this won't be detected. Any better idea?\n> \n>  - About _test_minpoly (and in general _test methods for elements):\n>    One thing which is not yet clear to me is whether the _test method\n>    should be on the elements or the parent. The former sounds more\n>    natural; however, with the later, one can use the information from\n>    the parent to build a good set of elements on which to run the\n>    test.\n> \n>    One option would be to add to each parent a method _test_elements\n>    that would run TestSuite on some_elements(). However, there\n>    typically might be very expensive test methods that one will want\n>    to run on just a couple small elements, and other test methods that\n>    one will want to test with many large ones.\n> \n>    But that's just food for thoughts for the long run\n\nThe rest of these items sound controversial enough that they should be brought up on sage-devel.\n\n\n\n> \n> Other than that, I will be very happy being a reviewer for this patch,\n> and put a positive review.\n\n\nIf you're happy with the changes, can you mark this positive review?\n\n\n\n> \n> I haven't run the tests yet. But from the comments above, I gather\n> that some tests are broken, not because this patch is wrong, but\n> because it uncovers bugs elsewhere. Should those be fixed before\n> setting a positive review on this one?\n\n\nI'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.",
+    "body": "Replying to [comment:5 nthiery]:\n> Hi Jason,\n> \n> I am glad to hear that TestSuite is useful, even before the category\n> code gets in :-)\n> \n> Some suggestions:\n> \n> - remove the loads(dumps(a)) == a tests, since anyway they are\n>   done by TestSuite\n\n\n\nThe -review.patch patch does this.\n\n\n> \n> - Maybe rename _test_matrix_pickle by _test_reduce?\n\n\n\nThe -review.patch patch does this.\n\n\n> \n>    In fact, it would be nice to have this test whenever __reduce__ is\n>    implemented (even though it's tested by test_pickle anyway).  An\n>    option would be to lift _test_reduce to SageObject, and add a\n>    conditional in _test_reduce to do nothing if _reduce_ is not\n> defined. The downside is that, if someone inadvertently remove\n>    __reduce__, then this won't be detected. Any better idea?\n> \n> - About _test_minpoly (and in general _test methods for elements):\n>   One thing which is not yet clear to me is whether the _test method\n>   should be on the elements or the parent. The former sounds more\n>   natural; however, with the later, one can use the information from\n>   the parent to build a good set of elements on which to run the\n>   test.\n> \n>   One option would be to add to each parent a method _test_elements\n>   that would run TestSuite on some_elements(). However, there\n>   typically might be very expensive test methods that one will want\n>   to run on just a couple small elements, and other test methods that\n>   one will want to test with many large ones.\n> \n>   But that's just food for thoughts for the long run\n\n\nThe rest of these items sound controversial enough that they should be brought up on sage-devel.\n\n\n\n> \n> Other than that, I will be very happy being a reviewer for this patch,\n> and put a positive review.\n\n\n\nIf you're happy with the changes, can you mark this positive review?\n\n\n\n> \n> I haven't run the tests yet. But from the comments above, I gather\n> that some tests are broken, not because this patch is wrong, but\n> because it uncovers bugs elsewhere. Should those be fixed before\n> setting a positive review on this one?\n\n\n\nI'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.",
     "created_at": "2009-09-17T08:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
@@ -166,15 +166,17 @@ Replying to [comment:5 nthiery]:
 > 
 > Some suggestions:
 > 
->  - remove the loads(dumps(a)) == a tests, since anyway they are
->    done by TestSuite
+> - remove the loads(dumps(a)) == a tests, since anyway they are
+>   done by TestSuite
+
 
 
 The -review.patch patch does this.
 
 
 > 
->  - Maybe rename _test_matrix_pickle by _test_reduce?
+> - Maybe rename _test_matrix_pickle by _test_reduce?
+
 
 
 The -review.patch patch does this.
@@ -185,23 +187,24 @@ The -review.patch patch does this.
 >    implemented (even though it's tested by test_pickle anyway).  An
 >    option would be to lift _test_reduce to SageObject, and add a
 >    conditional in _test_reduce to do nothing if _reduce_ is not
->    defined. The downside is that, if someone inadvertently remove
+> defined. The downside is that, if someone inadvertently remove
 >    __reduce__, then this won't be detected. Any better idea?
 > 
->  - About _test_minpoly (and in general _test methods for elements):
->    One thing which is not yet clear to me is whether the _test method
->    should be on the elements or the parent. The former sounds more
->    natural; however, with the later, one can use the information from
->    the parent to build a good set of elements on which to run the
->    test.
+> - About _test_minpoly (and in general _test methods for elements):
+>   One thing which is not yet clear to me is whether the _test method
+>   should be on the elements or the parent. The former sounds more
+>   natural; however, with the later, one can use the information from
+>   the parent to build a good set of elements on which to run the
+>   test.
 > 
->    One option would be to add to each parent a method _test_elements
->    that would run TestSuite on some_elements(). However, there
->    typically might be very expensive test methods that one will want
->    to run on just a couple small elements, and other test methods that
->    one will want to test with many large ones.
+>   One option would be to add to each parent a method _test_elements
+>   that would run TestSuite on some_elements(). However, there
+>   typically might be very expensive test methods that one will want
+>   to run on just a couple small elements, and other test methods that
+>   one will want to test with many large ones.
 > 
->    But that's just food for thoughts for the long run
+>   But that's just food for thoughts for the long run
+
 
 The rest of these items sound controversial enough that they should be brought up on sage-devel.
 
@@ -210,6 +213,7 @@ The rest of these items sound controversial enough that they should be brought u
 > 
 > Other than that, I will be very happy being a reviewer for this patch,
 > and put a positive review.
+
 
 
 If you're happy with the changes, can you mark this positive review?
@@ -223,6 +227,7 @@ If you're happy with the changes, can you mark this positive review?
 > setting a positive review on this one?
 
 
+
 I'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.
 
 
@@ -232,7 +237,7 @@ I'd say merge this, since it uncovers existing bugs, but doesn't introduce any. 
 archive/issue_comments_057220.json:
 ```json
 {
-    "body": "> The -review.patch patch does this.\n\nThanks!\n\n> The rest of these items sound controversial enough that they should be brought up on sage-devel.\n\nDo you mind doing it?\n\n> If you're happy with the changes, can you mark this positive review?\n\nDone! However, please someone run the tests. I don't have a sage devel under hand.\n\n> I'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.\n\nSounds good to me.",
+    "body": "> The -review.patch patch does this.\n\n\nThanks!\n\n> The rest of these items sound controversial enough that they should be brought up on sage-devel.\n\n\nDo you mind doing it?\n\n> If you're happy with the changes, can you mark this positive review?\n\n\nDone! However, please someone run the tests. I don't have a sage devel under hand.\n\n> I'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.\n\n\nSounds good to me.",
     "created_at": "2009-09-17T19:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
@@ -243,17 +248,21 @@ archive/issue_comments_057220.json:
 
 > The -review.patch patch does this.
 
+
 Thanks!
 
 > The rest of these items sound controversial enough that they should be brought up on sage-devel.
+
 
 Do you mind doing it?
 
 > If you're happy with the changes, can you mark this positive review?
 
+
 Done! However, please someone run the tests. I don't have a sage devel under hand.
 
 > I'd say merge this, since it uncovers existing bugs, but doesn't introduce any.  With this merged, those bugs will get fixed before the next release.
+
 
 Sounds good to me.
 
@@ -264,7 +273,7 @@ Sounds good to me.
 archive/issue_comments_057221.json:
 ```json
 {
-    "body": "With `trac-6936-matrix-generic-doctesting-minpoly.patch`, I got a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6936/trac-6936-matrix-generic-doctesting-minpoly.patch && hg qpush\nadding trac-6936-matrix-generic-doctesting-minpoly.patch to series file\napplying trac-6936-matrix-generic-doctesting-minpoly.patch\npatching file sage/matrix/matrix2.pyx\nHunk #2 FAILED at 1190\n1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6936-matrix-generic-doctesting-minpoly.patch\n```\n\nThe hunk in question is\n\n```\n[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej\n--- matrix2.pyx\n+++ matrix2.pyx\n@@ -1190,6 +1191,22 @@\n         return mp\n     \n \n+    def _test_minpoly(self, **options):\n+        \"\"\"\n+        Checks that :meth:`minpoly` works.\n+\n+        EXAMPLES::\n+\n+            sage: a=matrix([[1,2],[3,4]])\n+            sage: a._test_minpoly()\n+\n+        \"\"\"\n+        if self.nrows()==self.ncols():\n+            tester = self._tester(**options)\n+            # At least we'll check that the minimal polynomial kills the\n+            # matrix.\n+            tester.assert_(self.minpoly().subs(x=self).is_zero())\n+\n     def charpoly(self, var='x', algorithm=\"hessenberg\"):\n         r\"\"\"\n         Return the characteristic polynomial of self, as a polynomial over\n```\n",
+    "body": "With `trac-6936-matrix-generic-doctesting-minpoly.patch`, I got a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6936/trac-6936-matrix-generic-doctesting-minpoly.patch && hg qpush\nadding trac-6936-matrix-generic-doctesting-minpoly.patch to series file\napplying trac-6936-matrix-generic-doctesting-minpoly.patch\npatching file sage/matrix/matrix2.pyx\nHunk #2 FAILED at 1190\n1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6936-matrix-generic-doctesting-minpoly.patch\n```\nThe hunk in question is\n\n```\n[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej\n--- matrix2.pyx\n+++ matrix2.pyx\n@@ -1190,6 +1191,22 @@\n         return mp\n     \n \n+    def _test_minpoly(self, **options):\n+        \"\"\"\n+        Checks that :meth:`minpoly` works.\n+\n+        EXAMPLES::\n+\n+            sage: a=matrix([[1,2],[3,4]])\n+            sage: a._test_minpoly()\n+\n+        \"\"\"\n+        if self.nrows()==self.ncols():\n+            tester = self._tester(**options)\n+            # At least we'll check that the minimal polynomial kills the\n+            # matrix.\n+            tester.assert_(self.minpoly().subs(x=self).is_zero())\n+\n     def charpoly(self, var='x', algorithm=\"hessenberg\"):\n         r\"\"\"\n         Return the characteristic polynomial of self, as a polynomial over\n```",
     "created_at": "2009-09-26T07:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
@@ -286,7 +295,6 @@ patch failed, unable to continue (try -v)
 patch failed, rejects left in working dir
 Errors during apply, please fix and refresh trac-6936-matrix-generic-doctesting-minpoly.patch
 ```
-
 The hunk in question is
 
 ```
@@ -317,7 +325,6 @@ The hunk in question is
          r"""
          Return the characteristic polynomial of self, as a polynomial over
 ```
-
 
 
 
@@ -378,7 +385,7 @@ archive/issue_events_016318.json:
 archive/issue_comments_057224.json:
 ```json
 {
-    "body": "I get failures in these files:\n\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix_generic_dense.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_integer_2x2.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_dense.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix1.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx # 1 doctests failed\n\n```\n\n\nOne of them is definitely #5639.",
+    "body": "I get failures in these files:\n\n```\n        sage -t  devel/sage-main/sage/matrix/matrix_generic_dense.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_integer_2x2.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_dense.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix1.pyx # 1 doctests failed\n        sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx # 1 doctests failed\n\n```\n\nOne of them is definitely #5639.",
     "created_at": "2009-10-16T07:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
@@ -389,7 +396,6 @@ archive/issue_comments_057224.json:
 
 I get failures in these files:
 
-
 ```
         sage -t  devel/sage-main/sage/matrix/matrix_generic_dense.pyx # 1 doctests failed
         sage -t  devel/sage-main/sage/matrix/matrix_integer_2x2.pyx # 1 doctests failed
@@ -398,7 +404,6 @@ I get failures in these files:
         sage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx # 1 doctests failed
 
 ```
-
 
 One of them is definitely #5639.
 

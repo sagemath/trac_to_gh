@@ -3,7 +3,7 @@
 archive/issues_005612.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
+    "body": "Assignee: @williamstein\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
     "created_at": "2009-03-25T23:42:55Z",
     "labels": [
         "component: linear algebra",
@@ -21,7 +21,6 @@ Assignee: @williamstein
 This should go into some docs somewhere.  Maybe under solve_right or in a primer?
 
 It's to solve the linear system a*x+b*y=3, c*x+d*y=5.
-
 
 ```
 sage: var('a,b,c,d,x,y')
@@ -59,7 +58,6 @@ sage: (A*soln).apply_map(lambda x: x.simplify_full())
 ```
 
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/5612
 
 
@@ -71,7 +69,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5612
 archive/issue_comments_043745.json:
 ```json
 {
-    "body": "Make sure to change \n\n```\nmatrix(2,[a,b,c,d])\nvector([3,5])\n```\n\n\nto\n\n\n```\nmatrix(SR,2,[a,b,c,d])\nvector(SR,[3,5])\n```\n\n\nsince otherwise people get really confused when slight changes lead to breakage (e.g., see sage-support).\n\nAlso, I'm concerned about the large number of wishlist-style trac tickets you've been creating lately, like this one.  If everybody made tickets like you're doing it about similar things, trac would soon become unusable.",
+    "body": "Make sure to change \n\n```\nmatrix(2,[a,b,c,d])\nvector([3,5])\n```\n\nto\n\n```\nmatrix(SR,2,[a,b,c,d])\nvector(SR,[3,5])\n```\n\nsince otherwise people get really confused when slight changes lead to breakage (e.g., see sage-support).\n\nAlso, I'm concerned about the large number of wishlist-style trac tickets you've been creating lately, like this one.  If everybody made tickets like you're doing it about similar things, trac would soon become unusable.",
     "created_at": "2009-03-26T15:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
@@ -87,15 +85,12 @@ matrix(2,[a,b,c,d])
 vector([3,5])
 ```
 
-
 to
-
 
 ```
 matrix(SR,2,[a,b,c,d])
 vector(SR,[3,5])
 ```
-
 
 since otherwise people get really confused when slight changes lead to breakage (e.g., see sage-support).
 
@@ -165,7 +160,7 @@ Changing keywords from "" to "beginner".
 archive/issue_comments_043748.json:
 ```json
 {
-    "body": "Guys, when I try this out, I get to the following line and get the following error (both ways):\n\n\n\n```\nsoln=A.solve_right(result) # you could also do soln=A\\result\n```\n\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_15.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"c29sbj1BLnNvbHZlX3JpZ2h0KHJlc3VsdCkgIyB5b3UgY291bGQgYWxzbyBkbyBzb2xuPUFccmVzdWx0\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpJ1xbYN/___code___.py\", line 2, in <module>\n    exec compile(u'soln=A.solve_right(result) # you could also do soln=A\\\\result\n  File \"\", line 1, in <module>\n    \n  File \"matrix2.pyx\", line 281, in sage.matrix.matrix2.Matrix.solve_right (sage/matrix/matrix2.c:3796)\n  File \"ring.pyx\", line 835, in sage.rings.ring.Ring.is_integral_domain (sage/rings/ring.c:6410)\nNotImplementedError\n```\n\n\nThis is in 4.8.\n\nJoal Heagney",
+    "body": "Guys, when I try this out, I get to the following line and get the following error (both ways):\n\n\n```\nsoln=A.solve_right(result) # you could also do soln=A\\result\n```\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_15.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"c29sbj1BLnNvbHZlX3JpZ2h0KHJlc3VsdCkgIyB5b3UgY291bGQgYWxzbyBkbyBzb2xuPUFccmVzdWx0\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpJ1xbYN/___code___.py\", line 2, in <module>\n    exec compile(u'soln=A.solve_right(result) # you could also do soln=A\\\\result\n  File \"\", line 1, in <module>\n    \n  File \"matrix2.pyx\", line 281, in sage.matrix.matrix2.Matrix.solve_right (sage/matrix/matrix2.c:3796)\n  File \"ring.pyx\", line 835, in sage.rings.ring.Ring.is_integral_domain (sage/rings/ring.c:6410)\nNotImplementedError\n```\n\nThis is in 4.8.\n\nJoal Heagney",
     "created_at": "2012-04-12T13:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
@@ -177,12 +172,9 @@ archive/issue_comments_043748.json:
 Guys, when I try this out, I get to the following line and get the following error (both ways):
 
 
-
 ```
 soln=A.solve_right(result) # you could also do soln=A\result
 ```
-
-
 
 ```
 Traceback (most recent call last):
@@ -199,7 +191,6 @@ Traceback (most recent call last):
   File "ring.pyx", line 835, in sage.rings.ring.Ring.is_integral_domain (sage/rings/ring.c:6410)
 NotImplementedError
 ```
-
 
 This is in 4.8.
 

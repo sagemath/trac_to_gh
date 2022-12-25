@@ -3,7 +3,7 @@
 archive/issues_007116.json:
 ```json
 {
-    "body": "Assignee: @loefflerd\n\n\n```\nI think there is a problem in the function\n\n ell_point._line_\n\nwhich is used in _miller_. I don't know if it will necessarily lead to\nincorrect results, since it's a degenerate case...\n\nThe method has form\n\n G._line_(R, Q)\n\nand returns the evaluation of Q at the line through G and R.\n\nThe problem occurs when Q is the point at infinity. In this case, I'm\npretty sure (it's been a while since I've thought about this kind of\nthing) that _line_ should return 0 if the line through G and R is\nvertical, and otherwise it should be undefined. The method is\nreturning an answer that assumes that Q is affine.\n\nWhile I don't have the most recent version (for reasons I won't bore\nyou with) I've checked the latest code on line, and it appears to not\nhave changed from what I have.\n\nI've attached a sample session.\n\n---\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve([GF(17)(-1),GF(17)(0)])\nsage: G = E.random_point(); G\n(7 : 8 : 1)\nsage: minus_G = -G; minus_G\n(7 : 9 : 1)\nsage: G._line_(minus_G, E(0)) # should return 0\n10\nsage: two_G = 2*G; two_G\n(1 : 0 : 1)\nsage: G._line_(two_G, E(0)) # should be undefined/error\n11\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7116\n\n",
+    "body": "Assignee: @loefflerd\n\n```\nI think there is a problem in the function\n\n ell_point._line_\n\nwhich is used in _miller_. I don't know if it will necessarily lead to\nincorrect results, since it's a degenerate case...\n\nThe method has form\n\n G._line_(R, Q)\n\nand returns the evaluation of Q at the line through G and R.\n\nThe problem occurs when Q is the point at infinity. In this case, I'm\npretty sure (it's been a while since I've thought about this kind of\nthing) that _line_ should return 0 if the line through G and R is\nvertical, and otherwise it should be undefined. The method is\nreturning an answer that assumes that Q is affine.\n\nWhile I don't have the most recent version (for reasons I won't bore\nyou with) I've checked the latest code on line, and it appears to not\nhave changed from what I have.\n\nI've attached a sample session.\n\n---\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: E = EllipticCurve([GF(17)(-1),GF(17)(0)])\nsage: G = E.random_point(); G\n(7 : 8 : 1)\nsage: minus_G = -G; minus_G\n(7 : 9 : 1)\nsage: G._line_(minus_G, E(0)) # should return 0\n10\nsage: two_G = 2*G; two_G\n(1 : 0 : 1)\nsage: G._line_(two_G, E(0)) # should be undefined/error\n11\nsage:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7116\n\n",
     "created_at": "2009-10-04T18:34:44Z",
     "labels": [
         "component: elliptic curves",
@@ -17,7 +17,6 @@ archive/issues_007116.json:
 }
 ```
 Assignee: @loefflerd
-
 
 ```
 I think there is a problem in the function
@@ -62,7 +61,6 @@ sage: G._line_(two_G, E(0)) # should be undefined/error
 11
 sage:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7116
 

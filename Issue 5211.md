@@ -3,7 +3,7 @@
 archive/issues_005211.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nRight now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb\n\nAs suggested by the OP of that thread, we should add\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n```\n\nto the worksheet html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5211\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nRight now, the html generated for a worksheet does not include a header specifying the encoding, which confuses browsers: http://groups.google.com/group/sage-support/t/3d4b400f5afe66fb\n\nAs suggested by the OP of that thread, we should add\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n```\nto the worksheet html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5211\n\n",
     "created_at": "2009-02-09T04:04:50Z",
     "labels": [
         "component: notebook",
@@ -27,7 +27,6 @@ As suggested by the OP of that thread, we should add
 ```
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 ```
-
 to the worksheet html.
 
 Issue created by migration from https://trac.sagemath.org/ticket/5211
@@ -146,7 +145,7 @@ Michael
 archive/issue_comments_039848.json:
 ```json
 {
-    "body": "Replying to [comment:2 mabshoff]:\n> This would be nice to get into 3.3 since it causes trouble for IE users.\n> \n> Dan: Please make sure to mark tickets with patches appropriately so that they get picked up by the right reports.\n\nOkay. I set the milestone to 3.4.1 because I wasn't sure if you were still considering these kinds of tickets for 3.3, and I didn't add a \"[with patch, needs review]\" because it's not quite done -- we also need to get Twisted to add the correct header, and I don't know how to do that. I was going to ping some of the usual notebook suspects and ask for some help. I see you've already done that. :)\n\nAlso, before we charge ahead and merge this, perhaps we should try and find out if anyone uses notebooks *not* encoded in UTF-8...it seems like we already should be encoding everything UTF-8, but as our continuing problems with accents show, there is some potential for problems to crop up.",
+    "body": "Replying to [comment:2 mabshoff]:\n> This would be nice to get into 3.3 since it causes trouble for IE users.\n> \n> Dan: Please make sure to mark tickets with patches appropriately so that they get picked up by the right reports.\n\n\nOkay. I set the milestone to 3.4.1 because I wasn't sure if you were still considering these kinds of tickets for 3.3, and I didn't add a \"[with patch, needs review]\" because it's not quite done -- we also need to get Twisted to add the correct header, and I don't know how to do that. I was going to ping some of the usual notebook suspects and ask for some help. I see you've already done that. :)\n\nAlso, before we charge ahead and merge this, perhaps we should try and find out if anyone uses notebooks *not* encoded in UTF-8...it seems like we already should be encoding everything UTF-8, but as our continuing problems with accents show, there is some potential for problems to crop up.",
     "created_at": "2009-02-10T06:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5211",
     "type": "issue_comment",
@@ -159,6 +158,7 @@ Replying to [comment:2 mabshoff]:
 > This would be nice to get into 3.3 since it causes trouble for IE users.
 > 
 > Dan: Please make sure to mark tickets with patches appropriately so that they get picked up by the right reports.
+
 
 Okay. I set the milestone to 3.4.1 because I wasn't sure if you were still considering these kinds of tickets for 3.3, and I didn't add a "[with patch, needs review]" because it's not quite done -- we also need to get Twisted to add the correct header, and I don't know how to do that. I was going to ping some of the usual notebook suspects and ask for some help. I see you've already done that. :)
 

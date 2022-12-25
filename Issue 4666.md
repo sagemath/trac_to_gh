@@ -3,7 +3,7 @@
 archive/issues_004666.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @vbraun\n\nWhen we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. \n\nOn Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a\n\n```\n ./sage -bdist 3.2.1\n```\n\nwould yield\n\n```\n sage-3.2.1-Fedora-9-x86.tar.gz\n```\n\nThis info can be extracted on Linux via lsb_release\n\n```\n[mabshoff@eno ~]$ lsb_release -i -s\nFedora\n[mabshoff@eno ~]$ lsb_release -r -s\n9\n```\n\nOn OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @vbraun\n\nWhen we are producing binaries for sagemath.org the naming scheme is often inconsistent and some times even outright misleading. \n\nOn Linux -bdist should produce consistent names for binaries, so use lsb_release when available. I.e. on an x86 Fedora Core 9 system a\n\n```\n ./sage -bdist 3.2.1\n```\nwould yield\n\n```\n sage-3.2.1-Fedora-9-x86.tar.gz\n```\nThis info can be extracted on Linux via lsb_release\n\n```\n[mabshoff@eno ~]$ lsb_release -i -s\nFedora\n[mabshoff@eno ~]$ lsb_release -r -s\n9\n```\nOn OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4666\n\n",
     "created_at": "2008-12-01T00:01:12Z",
     "labels": [
         "component: build",
@@ -27,13 +27,11 @@ On Linux -bdist should produce consistent names for binaries, so use lsb_release
 ```
  ./sage -bdist 3.2.1
 ```
-
 would yield
 
 ```
  sage-3.2.1-Fedora-9-x86.tar.gz
 ```
-
 This info can be extracted on Linux via lsb_release
 
 ```
@@ -42,7 +40,6 @@ Fedora
 [mabshoff@eno ~]$ lsb_release -r -s
 9
 ```
-
 On OSX use uname to specify OSX release, CPU architecture and 32 vs. 64 bit builds.
 
 Cheers,
@@ -489,7 +486,7 @@ A lot of this is now in `sage-bdist`.  Is there still a need for some of the stu
 archive/issue_comments_035061.json:
 ```json
 {
-    "body": "Replying to [comment:14 kcrisman]:\n> A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?\n\nThat's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as \"wontfix\".",
+    "body": "Replying to [comment:14 kcrisman]:\n> A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?\n\n\nThat's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as \"wontfix\".",
     "created_at": "2014-11-15T08:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
@@ -500,6 +497,7 @@ archive/issue_comments_035061.json:
 
 Replying to [comment:14 kcrisman]:
 > A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?
+
 
 That's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as "wontfix".
 
@@ -528,7 +526,7 @@ Changing status from new to needs_info.
 archive/issue_comments_035063.json:
 ```json
 {
-    "body": "Replying to [comment:15 jdemeyer]:\n> Replying to [comment:14 kcrisman]:\n> > A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?\n> \n> That's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as \"wontfix\".\n\nVolker?",
+    "body": "Replying to [comment:15 jdemeyer]:\n> Replying to [comment:14 kcrisman]:\n> > A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?\n\n> \n> That's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as \"wontfix\".\n\n\nVolker?",
     "created_at": "2015-04-14T07:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4666",
     "type": "issue_comment",
@@ -540,8 +538,10 @@ archive/issue_comments_035063.json:
 Replying to [comment:15 jdemeyer]:
 > Replying to [comment:14 kcrisman]:
 > > A lot of this is now in `sage-bdist`.  Is there still a need for some of the stuff in this?
+
 > 
 > That's more a question for the current release manager. Like I mentioned on the ticket, I was using [attachment:botdist.py William's script] to generate binaries, but if Volker no longer uses this, we might as well close this ticket as "wontfix".
+
 
 Volker?
 

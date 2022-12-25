@@ -3,7 +3,7 @@
 archive/issues_009716.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mhampton\n\nThis looks like crap:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(viewer='tachyon')\n```\n\nbut this looks good:\n\n```\ng = graphs.DodecahedralGraph()\nshow(g.plot3d(engine='tachyon'))\n```\n\nAlso, this doesn't work (show a plot) at all:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(engine='tachyon')\n```\n\n\nThat's at least 2 bugs / sloppinesses. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9716\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  mhampton\n\nThis looks like crap:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(viewer='tachyon')\n```\nbut this looks good:\n\n```\ng = graphs.DodecahedralGraph()\nshow(g.plot3d(engine='tachyon'))\n```\nAlso, this doesn't work (show a plot) at all:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(engine='tachyon')\n```\n\nThat's at least 2 bugs / sloppinesses. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9716\n\n",
     "created_at": "2010-08-10T04:28:12Z",
     "labels": [
         "component: graph theory",
@@ -26,21 +26,18 @@ This looks like crap:
 g = graphs.DodecahedralGraph()
 g.plot3d(viewer='tachyon')
 ```
-
 but this looks good:
 
 ```
 g = graphs.DodecahedralGraph()
 show(g.plot3d(engine='tachyon'))
 ```
-
 Also, this doesn't work (show a plot) at all:
 
 ```
 g = graphs.DodecahedralGraph()
 g.plot3d(engine='tachyon')
 ```
-
 
 That's at least 2 bugs / sloppinesses. 
 
@@ -95,7 +92,7 @@ second example
 archive/issue_comments_094639.json:
 ```json
 {
-    "body": "I've uploaded the outputs (for me) of the examples.\n\nplot1.png:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(viewer='tachyon')\n```\n\n\nplot2.png:\n\n```\ng = graphs.DodecahedralGraph()\nshow(g.plot3d(engine='tachyon'))\n```\n\n\nWhy is the first plot way worse than the second?",
+    "body": "I've uploaded the outputs (for me) of the examples.\n\nplot1.png:\n\n```\ng = graphs.DodecahedralGraph()\ng.plot3d(viewer='tachyon')\n```\n\nplot2.png:\n\n```\ng = graphs.DodecahedralGraph()\nshow(g.plot3d(engine='tachyon'))\n```\n\nWhy is the first plot way worse than the second?",
     "created_at": "2010-09-03T20:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9716",
     "type": "issue_comment",
@@ -113,14 +110,12 @@ g = graphs.DodecahedralGraph()
 g.plot3d(viewer='tachyon')
 ```
 
-
 plot2.png:
 
 ```
 g = graphs.DodecahedralGraph()
 show(g.plot3d(engine='tachyon'))
 ```
-
 
 Why is the first plot way worse than the second?
 

@@ -3,7 +3,7 @@
 archive/issues_005117.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton @vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\n\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
     "created_at": "2009-01-28T13:00:55Z",
     "labels": [
         "component: geometry",
@@ -29,7 +29,6 @@ def union(self, other):
     of the two polyhedra.
     ....
 ```
-
 The name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).
 
 The method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.
@@ -89,7 +88,7 @@ Marshall
 archive/issue_comments_039035.json:
 ```json
 {
-    "body": "Replying to [comment:1 mhampton]:\n> I disagree that this should be removed.  I created it because I use it!\n\nusing \n\n```\np = Polyhedron(p1.vertices() + p2.vertices())\n```\n\ninstead of\n\n```\np = p1.union(p2)\n```\n\ndoes not make a big difference ;)\n\n> I think the docstring makes it pretty clear what it does,\nagreed\n\n> but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\nwhat about extending ot to handle unbounded polyhedra as well in this way:\n\n```\np = Polyhedron(p1.vertices() + p2.vertices(), p1.rays() + p2.rays())\n```\n\nWe could then name it convex_hull() or something like that?\n\n-- \nSebastien",
+    "body": "Replying to [comment:1 mhampton]:\n> I disagree that this should be removed.  I created it because I use it!\n\n\nusing \n\n```\np = Polyhedron(p1.vertices() + p2.vertices())\n```\ninstead of\n\n```\np = p1.union(p2)\n```\ndoes not make a big difference ;)\n\n> I think the docstring makes it pretty clear what it does,\n\nagreed\n\n> but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\n\nwhat about extending ot to handle unbounded polyhedra as well in this way:\n\n```\np = Polyhedron(p1.vertices() + p2.vertices(), p1.rays() + p2.rays())\n```\nWe could then name it convex_hull() or something like that?\n\n-- \nSebastien",
     "created_at": "2009-01-28T16:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -101,31 +100,31 @@ archive/issue_comments_039035.json:
 Replying to [comment:1 mhampton]:
 > I disagree that this should be removed.  I created it because I use it!
 
+
 using 
 
 ```
 p = Polyhedron(p1.vertices() + p2.vertices())
 ```
-
 instead of
 
 ```
 p = p1.union(p2)
 ```
-
 does not make a big difference ;)
 
 > I think the docstring makes it pretty clear what it does,
+
 agreed
 
 > but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?
+
 
 what about extending ot to handle unbounded polyhedra as well in this way:
 
 ```
 p = Polyhedron(p1.vertices() + p2.vertices(), p1.rays() + p2.rays())
 ```
-
 We could then name it convex_hull() or something like that?
 
 -- 
@@ -173,7 +172,7 @@ archive/issue_events_011834.json:
 archive/issue_comments_039037.json:
 ```json
 {
-    "body": "Current version is doing this:\n\n```\nnew_vertices = self.vertices() + other.vertices()\nnew_rays = self.rays() + other.rays()\nnew_lines = self.lines() + other.lines()\nreturn Polyhedron(vertices=new_vertices,\n                      rays=new_rays, lines=new_lines, field=self.field())\n\n```\n\nwhich is great, but I STRONGLY support the idea of renaming the method to something else.\n\nI was once working with an algorithm where the *union* of polytopes was used, but I interpreted it exactly as the convex hull and of course got wrong results. I was not using this function, that was my own mistake, but since it is so easy to do, I don't think there should be an extra opportunity for confusion. I agree, that the result is described in the documentation, but I don't always read it for \"obvious\" functions and perhaps there are other users like me.\n\nHow about \"extend\"? \"convex_hull\" is also great, although it seems more natural to me to have a global function with such a name called like\n\n```\nconvex_hull(polyhedron1, polyhedron2, polyhedron3, ...)\n```\n\n(There is a function with this name in lattice_polytope which works with points and thinking about it now I suspect that I have chosen not the best name for it either... At least it is not imported into global namespace...)",
+    "body": "Current version is doing this:\n\n```\nnew_vertices = self.vertices() + other.vertices()\nnew_rays = self.rays() + other.rays()\nnew_lines = self.lines() + other.lines()\nreturn Polyhedron(vertices=new_vertices,\n                      rays=new_rays, lines=new_lines, field=self.field())\n\n```\nwhich is great, but I STRONGLY support the idea of renaming the method to something else.\n\nI was once working with an algorithm where the *union* of polytopes was used, but I interpreted it exactly as the convex hull and of course got wrong results. I was not using this function, that was my own mistake, but since it is so easy to do, I don't think there should be an extra opportunity for confusion. I agree, that the result is described in the documentation, but I don't always read it for \"obvious\" functions and perhaps there are other users like me.\n\nHow about \"extend\"? \"convex_hull\" is also great, although it seems more natural to me to have a global function with such a name called like\n\n```\nconvex_hull(polyhedron1, polyhedron2, polyhedron3, ...)\n```\n(There is a function with this name in lattice_polytope which works with points and thinking about it now I suspect that I have chosen not the best name for it either... At least it is not imported into global namespace...)",
     "created_at": "2010-04-03T15:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -192,7 +191,6 @@ return Polyhedron(vertices=new_vertices,
                       rays=new_rays, lines=new_lines, field=self.field())
 
 ```
-
 which is great, but I STRONGLY support the idea of renaming the method to something else.
 
 I was once working with an algorithm where the *union* of polytopes was used, but I interpreted it exactly as the convex hull and of course got wrong results. I was not using this function, that was my own mistake, but since it is so easy to do, I don't think there should be an extra opportunity for confusion. I agree, that the result is described in the documentation, but I don't always read it for "obvious" functions and perhaps there are other users like me.
@@ -202,7 +200,6 @@ How about "extend"? "convex_hull" is also great, although it seems more natural 
 ```
 convex_hull(polyhedron1, polyhedron2, polyhedron3, ...)
 ```
-
 (There is a function with this name in lattice_polytope which works with points and thinking about it now I suspect that I have chosen not the best name for it either... At least it is not imported into global namespace...)
 
 
@@ -266,7 +263,7 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_039041.json:
 ```json
 {
-    "body": "Patch renames `self.union()` to `self.convex_hull()` and improves the handling of the underlying field for various operations, for example\n\n\n```\nsage: triangle = Polyhedron(vertices=[[1,0],[0,1],[-1,-1]])\nsage: (1 * triangle).field()\nRational Field\nsage: (1.0 * triangle).field()\nReal Double Field\n```\n",
+    "body": "Patch renames `self.union()` to `self.convex_hull()` and improves the handling of the underlying field for various operations, for example\n\n```\nsage: triangle = Polyhedron(vertices=[[1,0],[0,1],[-1,-1]])\nsage: (1 * triangle).field()\nRational Field\nsage: (1.0 * triangle).field()\nReal Double Field\n```",
     "created_at": "2010-05-09T14:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
@@ -277,7 +274,6 @@ archive/issue_comments_039041.json:
 
 Patch renames `self.union()` to `self.convex_hull()` and improves the handling of the underlying field for various operations, for example
 
-
 ```
 sage: triangle = Polyhedron(vertices=[[1,0],[0,1],[-1,-1]])
 sage: (1 * triangle).field()
@@ -285,7 +281,6 @@ Rational Field
 sage: (1.0 * triangle).field()
 Real Double Field
 ```
-
 
 
 

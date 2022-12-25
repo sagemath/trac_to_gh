@@ -3,7 +3,7 @@
 archive/issues_005259.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
+    "body": "Assignee: @williamstein\n\nA student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:\n\n```\nplot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n```\n\nnow plots (before it was a blank plot, now it just skips the problematic vectors).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5259\n\n",
     "created_at": "2009-02-13T20:50:21Z",
     "labels": [
         "component: graphics",
@@ -20,11 +20,9 @@ Assignee: @williamstein
 
 A student noticed that sometimes, when a function evaluation gave Inf or NaN, the vector field plot was blank.  Discussing this on the matplotlib-users list revealed that we ought to mask our arrays before sending them to the matplotlib quiver function.  This patch corrects this, so that the plot:
 
-
 ```
 plot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))
 ```
-
 
 now plots (before it was a blank plot, now it just skips the problematic vectors).
 
@@ -58,7 +56,7 @@ Changing status from new to assigned.
 archive/issue_comments_040284.json:
 ```json
 {
-    "body": "To test this, you might try the following plots before and after the patch:\n\n\n```\n        sage: var('x,y')\n        sage: plot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n        sage: plot_vector_field( (-x/sqrt(x+y), -y/sqrt(x+y)), (x, -10, 10), (y, -10, 10))\n```\n",
+    "body": "To test this, you might try the following plots before and after the patch:\n\n```\n        sage: var('x,y')\n        sage: plot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))\n        sage: plot_vector_field( (-x/sqrt(x+y), -y/sqrt(x+y)), (x, -10, 10), (y, -10, 10))\n```",
     "created_at": "2009-02-13T20:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5259",
     "type": "issue_comment",
@@ -69,13 +67,11 @@ archive/issue_comments_040284.json:
 
 To test this, you might try the following plots before and after the patch:
 
-
 ```
         sage: var('x,y')
         sage: plot_vector_field( (-x/sqrt(x^2+y^2), -y/sqrt(x^2+y^2)), (x, -10, 10), (y, -10, 10))
         sage: plot_vector_field( (-x/sqrt(x+y), -y/sqrt(x+y)), (x, -10, 10), (y, -10, 10))
 ```
-
 
 
 

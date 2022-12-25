@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1178
 archive/issue_comments_007255.json:
 ```json
 {
-    "body": "FLINT 1.0 works on Solaris 9 when I define\n\n```\ntypedef unsigned int            uint32_t;\ntypedef unsigned long long      u_int64_t;\n```\n\nin `stdint.h`\n\nCheers,\n\nMichael",
+    "body": "FLINT 1.0 works on Solaris 9 when I define\n\n```\ntypedef unsigned int            uint32_t;\ntypedef unsigned long long      u_int64_t;\n```\nin `stdint.h`\n\nCheers,\n\nMichael",
     "created_at": "2007-12-06T20:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1178",
     "type": "issue_comment",
@@ -54,7 +54,6 @@ FLINT 1.0 works on Solaris 9 when I define
 typedef unsigned int            uint32_t;
 typedef unsigned long long      u_int64_t;
 ```
-
 in `stdint.h`
 
 Cheers,

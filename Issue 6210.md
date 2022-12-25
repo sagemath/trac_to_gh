@@ -69,7 +69,7 @@ Changing status from new to needs_review.
 archive/issue_comments_049521.json:
 ```json
 {
-    "body": "Hello !!!\n\nIt's true that this part's tricky, but what about just saying after \n\n```\n``property`` -- (default: ``lambda x: True``) any property to be tested on graphs before generation\n```\n\n\nSomething like \"The property must fill an inheritance property to work as intended. Please refer to the help of parameter ``augment``\" ?\n\nOtherwise the explanations are given twice and we're sure users will read them `:-)`\n\nNathann",
+    "body": "Hello !!!\n\nIt's true that this part's tricky, but what about just saying after \n\n```\n``property`` -- (default: ``lambda x: True``) any property to be tested on graphs before generation\n```\n\nSomething like \"The property must fill an inheritance property to work as intended. Please refer to the help of parameter ``augment``\" ?\n\nOtherwise the explanations are given twice and we're sure users will read them `:-)`\n\nNathann",
     "created_at": "2011-05-02T13:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
@@ -85,7 +85,6 @@ It's true that this part's tricky, but what about just saying after
 ```
 ``property`` -- (default: ``lambda x: True``) any property to be tested on graphs before generation
 ```
-
 
 Something like "The property must fill an inheritance property to work as intended. Please refer to the help of parameter ``augment``" ?
 
@@ -136,7 +135,7 @@ We got bitten too, in our undergrad course :) I think I agree with Nathann.
 archive/issue_comments_049524.json:
 ```json
 {
-    "body": "Replying to [comment:4 kini]:\n> We got bitten too, in our undergrad course :) I think I agree with Nathann.\n\nbetter more, than less...",
+    "body": "Replying to [comment:4 kini]:\n> We got bitten too, in our undergrad course :) I think I agree with Nathann.\n\n\nbetter more, than less...",
     "created_at": "2011-10-15T06:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6210",
     "type": "issue_comment",
@@ -147,6 +146,7 @@ archive/issue_comments_049524.json:
 
 Replying to [comment:4 kini]:
 > We got bitten too, in our undergrad course :) I think I agree with Nathann.
+
 
 better more, than less...
 

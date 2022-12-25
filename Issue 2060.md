@@ -3,7 +3,7 @@
 archive/issues_002060.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\n\n```\nThe first release candidate of PolyBoRi 0.2 is available in the download area.\nThis version comes with refined Gr\u00f6bner algorithms and several stability\nimprovements. Also new procedures for interpolation of Boolean polynomials\nhave been added.\n```\n\nhttp://polybori.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2060\n\n",
+    "body": "Assignee: @burcin\n\n```\nThe first release candidate of PolyBoRi 0.2 is available in the download area.\nThis version comes with refined Gr\u00f6bner algorithms and several stability\nimprovements. Also new procedures for interpolation of Boolean polynomials\nhave been added.\n```\nhttp://polybori.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2060\n\n",
     "created_at": "2008-02-05T17:35:05Z",
     "labels": [
         "component: packages: standard"
@@ -17,14 +17,12 @@ archive/issues_002060.json:
 ```
 Assignee: @burcin
 
-
 ```
 The first release candidate of PolyBoRi 0.2 is available in the download area.
 This version comes with refined Gröbner algorithms and several stability
 improvements. Also new procedures for interpolation of Boolean polynomials
 have been added.
 ```
-
 http://polybori.sourceforge.net/
 
 Issue created by migration from https://trac.sagemath.org/ticket/2060
@@ -136,7 +134,7 @@ The SPKG installs fine but I cannot apply the patch neither against my modified 
 archive/issue_comments_013314.json:
 ```json
 {
-    "body": "FYI, this patch still applies against 2.11:\n\n```\napplying /home/malb/2060-polybori_interface_update_0.3.1.patch?format=raw\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 succeeded at 148 with fuzz 1 (offset 100 lines).\n```\n",
+    "body": "FYI, this patch still applies against 2.11:\n\n```\napplying /home/malb/2060-polybori_interface_update_0.3.1.patch?format=raw\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 succeeded at 148 with fuzz 1 (offset 100 lines).\n```",
     "created_at": "2008-04-01T13:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2060",
     "type": "issue_comment",
@@ -155,13 +153,12 @@ Hunk #1 succeeded at 148 with fuzz 1 (offset 100 lines).
 
 
 
-
 ---
 
 archive/issue_comments_013315.json:
 ```json
 {
-    "body": "Attachment [polybori_0.3.1_doctest_coverage_48.patch](tarball://root/attachments/some-uuid/ticket2060/polybori_0.3.1_doctest_coverage_48.patch) by @malb created at 2008-04-01 16:15:45\n\nThe attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 47% (98 of 205)\n```\n\n\nBefore both patches the coverage was at:\n\n\n```\npbori.pyx\nSCORE pbori.pyx: 33% (52 of 157)\n```\n\n\nand thus this is an improvement over vanilla 2.11 too.\n\n* I give Burcin's patch a positive review: doctests pass and we **need** `PolyBoRi` 0.3.1\n* someone should review my patch\n* if my patch gets a positive review both patches should be applied, since then not only is the functionality improved but also the doctest coverage which should make the everything-new-needs-doctest faction happy.\n* Burcin's patch was also doctested with the `PolyBoRi` test suite by him, so there is even an undocumented extra level of assurance.\n* In any case: We'll be working on getting the coverage close to 100% in the very near future.",
+    "body": "Attachment [polybori_0.3.1_doctest_coverage_48.patch](tarball://root/attachments/some-uuid/ticket2060/polybori_0.3.1_doctest_coverage_48.patch) by @malb created at 2008-04-01 16:15:45\n\nThe attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.\n\n```\npbori.pyx\nSCORE pbori.pyx: 47% (98 of 205)\n```\n\nBefore both patches the coverage was at:\n\n```\npbori.pyx\nSCORE pbori.pyx: 33% (52 of 157)\n```\n\nand thus this is an improvement over vanilla 2.11 too.\n\n* I give Burcin's patch a positive review: doctests pass and we **need** `PolyBoRi` 0.3.1\n* someone should review my patch\n* if my patch gets a positive review both patches should be applied, since then not only is the functionality improved but also the doctest coverage which should make the everything-new-needs-doctest faction happy.\n* Burcin's patch was also doctested with the `PolyBoRi` test suite by him, so there is even an undocumented extra level of assurance.\n* In any case: We'll be working on getting the coverage close to 100% in the very near future.",
     "created_at": "2008-04-01T16:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2060",
     "type": "issue_comment",
@@ -174,21 +171,17 @@ Attachment [polybori_0.3.1_doctest_coverage_48.patch](tarball://root/attachments
 
 The attached patch (`polybori_0.3.1_doctest_coverage_48.patch`) which is to be applied on top of `2060-polybori_interface_update_0.3.1.patch` increases the doctest coverage to 47%.
 
-
 ```
 pbori.pyx
 SCORE pbori.pyx: 47% (98 of 205)
 ```
 
-
 Before both patches the coverage was at:
-
 
 ```
 pbori.pyx
 SCORE pbori.pyx: 33% (52 of 157)
 ```
-
 
 and thus this is an improvement over vanilla 2.11 too.
 

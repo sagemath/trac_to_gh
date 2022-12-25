@@ -3,7 +3,7 @@
 archive/issues_005941.json:
 ```json
 {
-    "body": "Assignee: @rlmill\n\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: h = g.transitive_closure()\nsage: h       # oops -- h says it is Krackhardt Kite but it isn't\nKrackhardt Kite Graph: Graph on 10 vertices\nsage: h == g\nFalse\nsage: h.is_isomorphic(g)\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5941\n\n",
+    "body": "Assignee: @rlmill\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: h = g.transitive_closure()\nsage: h       # oops -- h says it is Krackhardt Kite but it isn't\nKrackhardt Kite Graph: Graph on 10 vertices\nsage: h == g\nFalse\nsage: h.is_isomorphic(g)\nFalse\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/5941\n\n",
     "created_at": "2009-04-29T17:18:14Z",
     "labels": [
         "component: graph theory",
@@ -18,7 +18,6 @@ archive/issues_005941.json:
 ```
 Assignee: @rlmill
 
-
 ```
 sage: g = graphs.KrackhardtKiteGraph()
 sage: h = g.transitive_closure()
@@ -29,7 +28,6 @@ False
 sage: h.is_isomorphic(g)
 False
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/5941
 

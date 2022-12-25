@@ -3,7 +3,7 @@
 archive/issues_004813.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :\n\n> Note that you could also submit a patch to Sage with the code you're doctesting.\n> I did that with all the tests from both of the books I published, and\n> I encourage you and many others to do the same with the code from your\n> article.  The code would go in a file\n>\n>    devel/sage/sage/tests/\n>\n> like the file devel/sage/sage/tests/book_stein_modform.py\n>\n> In fact, I could imagine having dozens of files in that directory, and\n> when doctests break there, we could notify the authors before\n> releasing the version of Sage that breaks their doctests for feedback\n> -- then they could update their papers or Sage.\n\nHere's the code from a preprint I just posted. I tried to follow \"official\" style in writing the code -- comments about the style and so on are welcome.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4813\n\n",
+    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :\n\n> Note that you could also submit a patch to Sage with the code you're doctesting.\n> I did that with all the tests from both of the books I published, and\n> I encourage you and many others to do the same with the code from your\n> article.  The code would go in a file\n  \n>\n>    devel/sage/sage/tests/\n\n>\n> like the file devel/sage/sage/tests/book_stein_modform.py\n\n>\n> In fact, I could imagine having dozens of files in that directory, and\n> when doctests break there, we could notify the authors before\n> releasing the version of Sage that breaks their doctests for feedback\n> -- then they could update their papers or Sage.\n\n\nHere's the code from a preprint I just posted. I tried to follow \"official\" style in writing the code -- comments about the style and so on are welcome.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4813\n\n",
     "created_at": "2008-12-16T13:48:57Z",
     "labels": [
         "component: doctest coverage",
@@ -24,15 +24,19 @@ From http://groups.google.com/group/sage-support/msg/3ea7ed2eeab0824a :
 > I did that with all the tests from both of the books I published, and
 > I encourage you and many others to do the same with the code from your
 > article.  The code would go in a file
+  
 >
 >    devel/sage/sage/tests/
+
 >
 > like the file devel/sage/sage/tests/book_stein_modform.py
+
 >
 > In fact, I could imagine having dozens of files in that directory, and
 > when doctests break there, we could notify the authors before
 > releasing the version of Sage that breaks their doctests for feedback
 > -- then they could update their papers or Sage.
+
 
 Here's the code from a preprint I just posted. I tried to follow "official" style in writing the code -- comments about the style and so on are welcome.
 
@@ -87,7 +91,7 @@ Michael
 archive/issue_comments_036417.json:
 ```json
 {
-    "body": "Replying to [comment:1 mabshoff]:\n> Is this code too specialized to go into the Sage library?\n\nSome of it definitely is; there's a function that computes columns of the tables in the paper. OTOH, I've been meaning to add support for complete matchings to Sage, and this code includes a function to generate complete matchings.\n\nEither way, I would like this code to get put into the tests/ directory; William above mentioned \"when doctests break there, we could notify the authors before releasing the version of Sage that breaks their doctests for feedback -- then they could update their papers or Sage.\" The paper is on the arXiv and will remain there forever (for some value of \"forever\"...) and I'd like to have this mechanism in place to make sure the code accompanying the paper always works.",
+    "body": "Replying to [comment:1 mabshoff]:\n> Is this code too specialized to go into the Sage library?\n\n\nSome of it definitely is; there's a function that computes columns of the tables in the paper. OTOH, I've been meaning to add support for complete matchings to Sage, and this code includes a function to generate complete matchings.\n\nEither way, I would like this code to get put into the tests/ directory; William above mentioned \"when doctests break there, we could notify the authors before releasing the version of Sage that breaks their doctests for feedback -- then they could update their papers or Sage.\" The paper is on the arXiv and will remain there forever (for some value of \"forever\"...) and I'd like to have this mechanism in place to make sure the code accompanying the paper always works.",
     "created_at": "2008-12-18T03:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
@@ -98,6 +102,7 @@ archive/issue_comments_036417.json:
 
 Replying to [comment:1 mabshoff]:
 > Is this code too specialized to go into the Sage library?
+
 
 Some of it definitely is; there's a function that computes columns of the tables in the paper. OTOH, I've been meaning to add support for complete matchings to Sage, and this code includes a function to generate complete matchings.
 
@@ -132,7 +137,7 @@ Dan: Could you just give my little patch a positive review?
 archive/issue_comments_036419.json:
 ```json
 {
-    "body": "Replying to [comment:3 mhansen]:\n> Dan: Could you just give my little patch a positive review?\n\nCertainly. Thanks for recommending this go in!",
+    "body": "Replying to [comment:3 mhansen]:\n> Dan: Could you just give my little patch a positive review?\n\n\nCertainly. Thanks for recommending this go in!",
     "created_at": "2009-01-25T13:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4813",
     "type": "issue_comment",
@@ -143,6 +148,7 @@ archive/issue_comments_036419.json:
 
 Replying to [comment:3 mhansen]:
 > Dan: Could you just give my little patch a positive review?
+
 
 Certainly. Thanks for recommending this go in!
 

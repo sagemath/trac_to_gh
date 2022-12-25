@@ -3,7 +3,7 @@
 archive/issues_000281.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nKeywords: extension numberfield matrix polynomial\n\nThe following is incorrect:\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(K['x'].0^2 - 3)\n\nsage: b.matrix()\n \n[0 1]\n[0 0]\n\nsage: M.<c> = NumberField(ZZ['x'].0^2 - 3)\n\nsage: c.matrix()\n \n[0 1]\n[3 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/281\n\n",
+    "body": "Assignee: somebody\n\nKeywords: extension numberfield matrix polynomial\n\nThe following is incorrect:\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\n\nsage: L.<b> = K.extension(K['x'].0^2 - 3)\n\nsage: b.matrix()\n \n[0 1]\n[0 0]\n\nsage: M.<c> = NumberField(ZZ['x'].0^2 - 3)\n\nsage: c.matrix()\n \n[0 1]\n[3 0]\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/281\n\n",
     "created_at": "2007-02-23T20:01:46Z",
     "labels": [
         "component: basic arithmetic",
@@ -21,7 +21,6 @@ Assignee: somebody
 Keywords: extension numberfield matrix polynomial
 
 The following is incorrect:
-
 
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^3 - 5)
@@ -41,7 +40,6 @@ sage: c.matrix()
 [3 0]
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/281
 
 
@@ -53,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/281
 archive/issue_comments_001330.json:
 ```json
 {
-    "body": "This is simply not implemented, and will be hard to do without rewriting number fields completely :-)\nDavid Roe?\n\nAnyway, in sAge-2.8 it raises a notimplementederror, so I've changed this from bug to enhancement.\n\nWilliam\n\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: L.<b> = K.extension(K['x'].0^2 - 3)\nsage: b.matrix()\n...    \nTraceback (most recent call last):\n...\nNotImplementedError\n```\n",
+    "body": "This is simply not implemented, and will be hard to do without rewriting number fields completely :-)\nDavid Roe?\n\nAnyway, in sAge-2.8 it raises a notimplementederror, so I've changed this from bug to enhancement.\n\nWilliam\n\n```\nsage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: L.<b> = K.extension(K['x'].0^2 - 3)\nsage: b.matrix()\n...    \nTraceback (most recent call last):\n...\nNotImplementedError\n```",
     "created_at": "2007-08-18T20:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
@@ -69,7 +67,6 @@ Anyway, in sAge-2.8 it raises a notimplementederror, so I've changed this from b
 
 William
 
-
 ```
 sage: K.<a> = NumberField(ZZ['x'].0^3 - 5)
 sage: L.<b> = K.extension(K['x'].0^2 - 3)
@@ -79,7 +76,6 @@ Traceback (most recent call last):
 ...
 NotImplementedError
 ```
-
 
 
 
@@ -157,7 +153,7 @@ archive/issue_events_000632.json:
 archive/issue_comments_001332.json:
 ```json
 {
-    "body": "It works with Sage 2.8.8:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.8, Release Date: 2007-10-20                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: sage: L.<b> = K.extension(K['x'].0^2 - 3)\nsage: sage: b.matrix()\n\n[0 1]\n[3 0]\nsage: \n```\n\n\nCheers,\n\nMichael",
+    "body": "It works with Sage 2.8.8:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.8$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.8, Release Date: 2007-10-20                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: K.<a> = NumberField(ZZ['x'].0^3 - 5)\nsage: sage: L.<b> = K.extension(K['x'].0^2 - 3)\nsage: sage: b.matrix()\n\n[0 1]\n[3 0]\nsage: \n```\n\nCheers,\n\nMichael",
     "created_at": "2007-10-21T13:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
@@ -182,7 +178,6 @@ sage: sage: b.matrix()
 [3 0]
 sage: 
 ```
-
 
 Cheers,
 

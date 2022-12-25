@@ -88,7 +88,7 @@ Oops :-)
 archive/issue_comments_025039.json:
 ```json
 {
-    "body": "Also, the polygon function should defer to this when the input is 3d points \n\n\n```\n\nOn Dec 16, 2008, at 8:28 AM, philt wrote:\n\nHello,\n\nI got some trouble trying to draw polygons in JMol because the\nfunction looks not available easily.\nSage is featuring the following:\npoint() -> try point2d else point3d\nline() -> try line2d else line3d\npolygon() -> only 2d\nbut many fancy volumes are available in 3D...\n\nI think it'd be more natural to have polygon working in a similar\nflexible way.\nSomething like:\n\ntry:\n        return polygon2d(points, **kwds)\n    except ValueError:\n        from sage.plot.plot3d.platonic import IndexFaceSet as\npolygon3d\n        return polygon3d(points, **kwds)\n\nwith polygon2d being the current code of polygon()\n```\n",
+    "body": "Also, the polygon function should defer to this when the input is 3d points \n\n```\n\nOn Dec 16, 2008, at 8:28 AM, philt wrote:\n\nHello,\n\nI got some trouble trying to draw polygons in JMol because the\nfunction looks not available easily.\nSage is featuring the following:\npoint() -> try point2d else point3d\nline() -> try line2d else line3d\npolygon() -> only 2d\nbut many fancy volumes are available in 3D...\n\nI think it'd be more natural to have polygon working in a similar\nflexible way.\nSomething like:\n\ntry:\n        return polygon2d(points, **kwds)\n    except ValueError:\n        from sage.plot.plot3d.platonic import IndexFaceSet as\npolygon3d\n        return polygon3d(points, **kwds)\n\nwith polygon2d being the current code of polygon()\n```",
     "created_at": "2008-12-16T18:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3547",
     "type": "issue_comment",
@@ -98,7 +98,6 @@ archive/issue_comments_025039.json:
 ```
 
 Also, the polygon function should defer to this when the input is 3d points 
-
 
 ```
 
@@ -127,7 +126,6 @@ polygon3d
 
 with polygon2d being the current code of polygon()
 ```
-
 
 
 

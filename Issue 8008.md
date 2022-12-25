@@ -224,7 +224,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069870.json:
 ```json
 {
-    "body": "I got a hunk failure after applying [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch), then [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch):\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-rref.patch && hg qpush\nadding trac-8008-rref.patch to series file\napplying trac-8008-rref.patch\nnow at: trac-8008-rref.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-fixes.patch && hg qpush\nadding trac-8008-fixes.patch to series file\napplying trac-8008-fixes.patch\npatching file sage/matrix/matrix2.pyx\nHunk #3 FAILED at 4273\n1 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-8008-fixes.patch\n[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej\n--- matrix2.pyx\n+++ matrix2.pyx\n@@ -4267,12 +4274,14 @@\n         \"\"\"\n         Return the echelon form of self.\n \n-        .. note:: This row reduction does not use division if the\n-        matrix is not over a field (e.g., if the matrix is over the\n-        integers).  If you want to calculate the echelon form using\n-        division, then use :meth:`rref`, which assumes that the matrix\n-        entries are in a field (specifically, the field of fractions\n-        of the base ring of the matrix).\n+        .. note:: \n+\n+            This row reduction does not use division if the\n+            matrix is not over a field (e.g., if the matrix is over\n+            the integers).  If you want to calculate the echelon form\n+            using division, then use :meth:`rref`, which assumes that\n+            the matrix entries are in a field (specifically, the field\n+            of fractions of the base ring of the matrix).\n         \n         INPUT:\n```\n\nPerhaps this ticket needs a rebase?",
+    "body": "I got a hunk failure after applying [trac-8008-rref.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-rref.patch), then [trac-8008-fixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8008/trac-8008-fixes.patch):\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-rref.patch && hg qpush\nadding trac-8008-rref.patch to series file\napplying trac-8008-rref.patch\nnow at: trac-8008-rref.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8008/trac-8008-fixes.patch && hg qpush\nadding trac-8008-fixes.patch to series file\napplying trac-8008-fixes.patch\npatching file sage/matrix/matrix2.pyx\nHunk #3 FAILED at 4273\n1 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-8008-fixes.patch\n[mvngu@sage sage-main]$ cat sage/matrix/matrix2.pyx.rej\n--- matrix2.pyx\n+++ matrix2.pyx\n@@ -4267,12 +4274,14 @@\n         \"\"\"\n         Return the echelon form of self.\n \n-        .. note:: This row reduction does not use division if the\n-        matrix is not over a field (e.g., if the matrix is over the\n-        integers).  If you want to calculate the echelon form using\n-        division, then use :meth:`rref`, which assumes that the matrix\n-        entries are in a field (specifically, the field of fractions\n-        of the base ring of the matrix).\n+        .. note:: \n+\n+            This row reduction does not use division if the\n+            matrix is not over a field (e.g., if the matrix is over\n+            the integers).  If you want to calculate the echelon form\n+            using division, then use :meth:`rref`, which assumes that\n+            the matrix entries are in a field (specifically, the field\n+            of fractions of the base ring of the matrix).\n         \n         INPUT:\n```\nPerhaps this ticket needs a rebase?",
     "created_at": "2010-01-22T14:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -273,7 +273,6 @@ errors during apply, please fix and refresh trac-8008-fixes.patch
          
          INPUT:
 ```
-
 Perhaps this ticket needs a rebase?
 
 
@@ -525,7 +524,7 @@ Jason: You should put a sensible commit message in your patch, together with the
 archive/issue_comments_069882.json:
 ```json
 {
-    "body": "Replying to [comment:12 mvngu]:\n\n> Jason: You should put a sensible commit message in your patch, together with the ticket number.\n\nYou'll notice that my recent patches do that :).\n\nI still think the trac ticket number should be automatically prepended to the commit message by the merge script to prevent mistakes and make it easier for patch authors.",
+    "body": "Replying to [comment:12 mvngu]:\n\n> Jason: You should put a sensible commit message in your patch, together with the ticket number.\n\n\nYou'll notice that my recent patches do that :).\n\nI still think the trac ticket number should be automatically prepended to the commit message by the merge script to prevent mistakes and make it easier for patch authors.",
     "created_at": "2010-03-02T22:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
@@ -537,6 +536,7 @@ archive/issue_comments_069882.json:
 Replying to [comment:12 mvngu]:
 
 > Jason: You should put a sensible commit message in your patch, together with the ticket number.
+
 
 You'll notice that my recent patches do that :).
 

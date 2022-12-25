@@ -3,7 +3,7 @@
 archive/issues_007279.json:
 ```json
 {
-    "body": "Assignee: boothby\n\n\n```\nWhen I do this in a cell on demo.sagenb.org:\n\n%sh\nls\n\n\nI get an error:\n\ncd: 1: can't cd to\n/home/sage/sagenb/sage_notebook-demo.sagenb/home/jason3/7/cells/4\ndata\n_sage_input_5.py\n/tmp/tmp4oPNHC\n\nThanks,\n\nJason\n```\n\n\nJason doesn't want to see that error.  It is there because of enhanced security on the public notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7279\n\n",
+    "body": "Assignee: boothby\n\n```\nWhen I do this in a cell on demo.sagenb.org:\n\n%sh\nls\n\n\nI get an error:\n\ncd: 1: can't cd to\n/home/sage/sagenb/sage_notebook-demo.sagenb/home/jason3/7/cells/4\ndata\n_sage_input_5.py\n/tmp/tmp4oPNHC\n\nThanks,\n\nJason\n```\n\nJason doesn't want to see that error.  It is there because of enhanced security on the public notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7279\n\n",
     "created_at": "2009-10-24T00:46:02Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_007279.json:
 }
 ```
 Assignee: boothby
-
 
 ```
 When I do this in a cell on demo.sagenb.org:
@@ -38,7 +37,6 @@ Thanks,
 
 Jason
 ```
-
 
 Jason doesn't want to see that error.  It is there because of enhanced security on the public notebook.
 
@@ -91,7 +89,7 @@ Do you mind elaborating on what the "enhanced security" is and why we are not ma
 archive/issue_comments_060465.json:
 ```json
 {
-    "body": "> Do you mind elaborating on what the \"enhanced security\" is\n\nIf you use server_pool, the worksheet process now run in a way that is much, much safer than it was before.  In particular, they don't have read or write access to anything outside /tmp (except to the DATA dir temporarily in their worksheet), whereas the old worksheet processes could pretty much delete or change all the worksheet data for any worksheet.   \n\n> more common for other public or campus Sage servers? Now \n> I'm concerned that my campus server has a security problem. \n\nThis enhanced security is totally automatic for anybody that uses the server_pool option.",
+    "body": "> Do you mind elaborating on what the \"enhanced security\" is\n\n\nIf you use server_pool, the worksheet process now run in a way that is much, much safer than it was before.  In particular, they don't have read or write access to anything outside /tmp (except to the DATA dir temporarily in their worksheet), whereas the old worksheet processes could pretty much delete or change all the worksheet data for any worksheet.   \n\n> more common for other public or campus Sage servers? Now \n> I'm concerned that my campus server has a security problem. \n\n\nThis enhanced security is totally automatic for anybody that uses the server_pool option.",
     "created_at": "2009-12-09T14:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -102,10 +100,12 @@ archive/issue_comments_060465.json:
 
 > Do you mind elaborating on what the "enhanced security" is
 
+
 If you use server_pool, the worksheet process now run in a way that is much, much safer than it was before.  In particular, they don't have read or write access to anything outside /tmp (except to the DATA dir temporarily in their worksheet), whereas the old worksheet processes could pretty much delete or change all the worksheet data for any worksheet.   
 
 > more common for other public or campus Sage servers? Now 
 > I'm concerned that my campus server has a security problem. 
+
 
 This enhanced security is totally automatic for anybody that uses the server_pool option.
 
@@ -240,7 +240,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060472.json:
 ```json
 {
-    "body": "Jason, I replaced everything by 3 very simple lines that get the job done better. E.g., now you can do \n\n\n```\nsleep 1\necho \"hi\"\nsleep 1\necho \"there\"\n...\n```\n\n\nand you see the output as it appears, etc.   And the code is vastly simpler too.",
+    "body": "Jason, I replaced everything by 3 very simple lines that get the job done better. E.g., now you can do \n\n```\nsleep 1\necho \"hi\"\nsleep 1\necho \"there\"\n...\n```\n\nand you see the output as it appears, etc.   And the code is vastly simpler too.",
     "created_at": "2009-12-11T00:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -251,7 +251,6 @@ archive/issue_comments_060472.json:
 
 Jason, I replaced everything by 3 very simple lines that get the job done better. E.g., now you can do 
 
-
 ```
 sleep 1
 echo "hi"
@@ -259,7 +258,6 @@ sleep 1
 echo "there"
 ...
 ```
-
 
 and you see the output as it appears, etc.   And the code is vastly simpler too.
 
@@ -330,7 +328,7 @@ I suppose one could just use os.system or subprocess by themselves to get the st
 archive/issue_comments_060476.json:
 ```json
 {
-    "body": "Replying to [comment:11 jason]:\n> Hmm...now you're also changing the behavior quite a bit.  No longer does the eval command return the results as a string.  Instead, it is out of our control.\n> \n> I suppose one could just use os.system or subprocess by themselves to get the string.  So it doesn't bother me that there is a change.\n\nYep.  Plus the advantage of being able to watch the output as it appears is *huge*, IMHO.",
+    "body": "Replying to [comment:11 jason]:\n> Hmm...now you're also changing the behavior quite a bit.  No longer does the eval command return the results as a string.  Instead, it is out of our control.\n> \n> I suppose one could just use os.system or subprocess by themselves to get the string.  So it doesn't bother me that there is a change.\n\n\nYep.  Plus the advantage of being able to watch the output as it appears is *huge*, IMHO.",
     "created_at": "2009-12-11T13:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -343,6 +341,7 @@ Replying to [comment:11 jason]:
 > Hmm...now you're also changing the behavior quite a bit.  No longer does the eval command return the results as a string.  Instead, it is out of our control.
 > 
 > I suppose one could just use os.system or subprocess by themselves to get the string.  So it doesn't bother me that there is a change.
+
 
 Yep.  Plus the advantage of being able to watch the output as it appears is *huge*, IMHO.
 
@@ -389,7 +388,7 @@ apply both to the core sage library
 archive/issue_comments_060479.json:
 ```json
 {
-    "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by @williamstein created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
+    "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by @williamstein created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\n\nI've done this.",
     "created_at": "2009-12-11T13:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
@@ -402,6 +401,7 @@ Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticke
 
 Replying to [comment:10 jason]:
 > Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.
+
 
 I've done this.
 

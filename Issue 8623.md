@@ -31,7 +31,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8623
 archive/issue_comments_078041.json:
 ```json
 {
-    "body": "This is an example of user interface for lcalc library. This interface does not assume that the center is half.  This is not finished, but I would like some feedback on the design decisions.\n\nBelow is how to use it\n\n```\nsage: E=EllipticCurve([1,-1,1,-1,-14])\nsage: L=E.lfunction()\nsage: L\nL Function of  Elliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - x - 14 over Rational Field\nsage: L.value(1)\n0.386769938387780\nsage: L(1)\n0.386769938387780\nsage: L.find_zeros_and_verify(4)\n[4.74199315541376, 7.81910395523807, 8.69568671187028, 10.7173409988911]\nsage: L.hardy_z_function(1+2*I)\n1.26747446769888 + 1.11832648738039e-16*I\nsage: L.hardy_z_function(1+3*I)\n1.92712584463710 + 8.78500291880843e-16*I\nsage: L.hardy_z_function(1+4*I)\n1.53230410077723 + 1.82991418837085e-15*I\nsage: L.center()\n1\nsage: L.analytic_rank()\n0\n```\n",
+    "body": "This is an example of user interface for lcalc library. This interface does not assume that the center is half.  This is not finished, but I would like some feedback on the design decisions.\n\nBelow is how to use it\n\n```\nsage: E=EllipticCurve([1,-1,1,-1,-14])\nsage: L=E.lfunction()\nsage: L\nL Function of  Elliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - x - 14 over Rational Field\nsage: L.value(1)\n0.386769938387780\nsage: L(1)\n0.386769938387780\nsage: L.find_zeros_and_verify(4)\n[4.74199315541376, 7.81910395523807, 8.69568671187028, 10.7173409988911]\nsage: L.hardy_z_function(1+2*I)\n1.26747446769888 + 1.11832648738039e-16*I\nsage: L.hardy_z_function(1+3*I)\n1.92712584463710 + 8.78500291880843e-16*I\nsage: L.hardy_z_function(1+4*I)\n1.53230410077723 + 1.82991418837085e-15*I\nsage: L.center()\n1\nsage: L.analytic_rank()\n0\n```",
     "created_at": "2010-03-29T13:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
@@ -66,7 +66,6 @@ sage: L.center()
 sage: L.analytic_rank()
 0
 ```
-
 
 
 

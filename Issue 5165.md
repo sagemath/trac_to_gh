@@ -3,7 +3,7 @@
 archive/issues_005165.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nConsider this situation:\n\n\n```\nsage: f = ModularForms(28,2).q_expansion_basis()[-1]\nsage: f\nq^7 + O(q^20)\n```\n\n\nAt this point, I would like to be able to do f.padded_list() and have this take f.prec() as default parameter.  It's not a big deal, but it would be more convenient than having to type f.padded_list(f.prec()).  There might be other situations (power series in general, for instance?) where this change could also be made.\n\nI'll have a patch up for this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5165\n\n",
+    "body": "Assignee: @aghitza\n\nConsider this situation:\n\n```\nsage: f = ModularForms(28,2).q_expansion_basis()[-1]\nsage: f\nq^7 + O(q^20)\n```\n\nAt this point, I would like to be able to do f.padded_list() and have this take f.prec() as default parameter.  It's not a big deal, but it would be more convenient than having to type f.padded_list(f.prec()).  There might be other situations (power series in general, for instance?) where this change could also be made.\n\nI'll have a patch up for this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5165\n\n",
     "created_at": "2009-02-03T05:59:54Z",
     "labels": [
         "component: modular forms",
@@ -20,13 +20,11 @@ Assignee: @aghitza
 
 Consider this situation:
 
-
 ```
 sage: f = ModularForms(28,2).q_expansion_basis()[-1]
 sage: f
 q^7 + O(q^20)
 ```
-
 
 At this point, I would like to be able to do f.padded_list() and have this take f.prec() as default parameter.  It's not a big deal, but it would be more convenient than having to type f.padded_list(f.prec()).  There might be other situations (power series in general, for instance?) where this change could also be made.
 

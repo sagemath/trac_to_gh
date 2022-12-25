@@ -3,7 +3,7 @@
 archive/issues_004697.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
+    "body": "Assignee: @burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
     "created_at": "2008-12-04T21:55:14Z",
     "labels": [
         "component: calculus"
@@ -18,7 +18,6 @@ archive/issues_004697.json:
 Assignee: @burcin
 
 Fix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily "discover" what to do.
-
 
 ```
 On Dec 4, 3:07 pm, "William Stein" <wst...@gmail.com> wrote:
@@ -39,7 +38,6 @@ do something like this:
 Thanks,
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/4697
 

@@ -122,7 +122,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_086572.json:
 ```json
 {
-    "body": "Replying to [comment:2 mvngu]:\n> I'm OK with slabbe's patch. My reviewer patch fixes some miscellaneous typos. If my patch gets a positive review, the whole ticket is good to go.\n\nLooks good. Positive review.",
+    "body": "Replying to [comment:2 mvngu]:\n> I'm OK with slabbe's patch. My reviewer patch fixes some miscellaneous typos. If my patch gets a positive review, the whole ticket is good to go.\n\n\nLooks good. Positive review.",
     "created_at": "2010-06-16T03:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
@@ -133,6 +133,7 @@ archive/issue_comments_086572.json:
 
 Replying to [comment:2 mvngu]:
 > I'm OK with slabbe's patch. My reviewer patch fixes some miscellaneous typos. If my patch gets a positive review, the whole ticket is good to go.
+
 
 Looks good. Positive review.
 

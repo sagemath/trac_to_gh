@@ -3,7 +3,7 @@
 archive/issues_001746.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
+    "body": "Assignee: @williamstein\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
     "created_at": "2008-01-10T10:44:22Z",
     "labels": [
         "component: linear algebra",
@@ -17,7 +17,6 @@ archive/issues_001746.json:
 }
 ```
 Assignee: @williamstein
-
 
 ```
 
@@ -50,7 +49,6 @@ sage: pnorm(vector([a, b, c, d]), p)
  -- William
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/1746
 
 
@@ -80,7 +78,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_010998.json:
 ```json
 {
-    "body": "for RDF and CDF vectors\n\n```\nfrom numpy import linalg\nv=vector(RDF,[1,2,3])\nlinalg.norm(v,5)\n```\n\n3.0773848853940629",
+    "body": "for RDF and CDF vectors\n\n```\nfrom numpy import linalg\nv=vector(RDF,[1,2,3])\nlinalg.norm(v,5)\n```\n3.0773848853940629",
     "created_at": "2008-01-10T10:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
@@ -96,7 +94,6 @@ from numpy import linalg
 v=vector(RDF,[1,2,3])
 linalg.norm(v,5)
 ```
-
 3.0773848853940629
 
 

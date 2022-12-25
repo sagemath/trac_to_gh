@@ -3,7 +3,7 @@
 archive/issues_007689.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nAn \"official\" way to setup the basic bootstrap for building Sage is to execute the following in an extracted Sage source tarball from SAGE_ROOT:\n\n```\ncd spkg/; ./install scripts\n```\n\n\nDoing so works, but unfortunately also results in:\n\n```\n...\npython: can't open file '/scratch/wstein/build/x/sage-4.3.rc0/devel/sage/doc/common/builder.py': [Errno 2] No such file or directory\n```\n\n\nFix this.  Get rid of this error message. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7689\n\n",
+    "body": "Assignee: GeorgSWeber\n\nAn \"official\" way to setup the basic bootstrap for building Sage is to execute the following in an extracted Sage source tarball from SAGE_ROOT:\n\n```\ncd spkg/; ./install scripts\n```\n\nDoing so works, but unfortunately also results in:\n\n```\n...\npython: can't open file '/scratch/wstein/build/x/sage-4.3.rc0/devel/sage/doc/common/builder.py': [Errno 2] No such file or directory\n```\n\nFix this.  Get rid of this error message. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7689\n\n",
     "created_at": "2009-12-15T19:39:08Z",
     "labels": [
         "component: build",
@@ -25,14 +25,12 @@ An "official" way to setup the basic bootstrap for building Sage is to execute t
 cd spkg/; ./install scripts
 ```
 
-
 Doing so works, but unfortunately also results in:
 
 ```
 ...
 python: can't open file '/scratch/wstein/build/x/sage-4.3.rc0/devel/sage/doc/common/builder.py': [Errno 2] No such file or directory
 ```
-
 
 Fix this.  Get rid of this error message. 
 

@@ -3,7 +3,7 @@
 archive/issues_001128.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: ComplexField(200)(1) + RealField(100)(1)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Complex Field with 200 bits of precision' and 'Real Field with 100 bits of precision'\n```\n\nShould return an element of ComplexField(100)\n\nThis should be an easy fix, see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5bc6c9190a3da63e/597d0eb7a45dae11?lnk=gst&q=complexfield#597d0eb7a45dae11\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1128\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: ComplexField(200)(1) + RealField(100)(1)\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Complex Field with 200 bits of precision' and 'Real Field with 100 bits of precision'\n```\nShould return an element of ComplexField(100)\n\nThis should be an easy fix, see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5bc6c9190a3da63e/597d0eb7a45dae11?lnk=gst&q=complexfield#597d0eb7a45dae11\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1128\n\n",
     "created_at": "2007-11-08T05:44:47Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,12 +18,10 @@ archive/issues_001128.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: ComplexField(200)(1) + RealField(100)(1)
 <type 'exceptions.TypeError'>: unsupported operand parent(s) for '+': 'Complex Field with 200 bits of precision' and 'Real Field with 100 bits of precision'
 ```
-
 Should return an element of ComplexField(100)
 
 This should be an easy fix, see 

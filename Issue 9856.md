@@ -97,7 +97,7 @@ I just ran the tests and got the old failures from the Wise module, so this does
 archive/issue_comments_097140.json:
 ```json
 {
-    "body": "Unfortunately, I haven't been able to duplicate that. I get:\n\n```\ntest_Wise ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.\ntest_psw ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.\n```\n\nbut I think this is expected as I don't have Wise2 installed. I also get:\n\n```\nBio.Wise docstring test ... ok\nBio.Wise.psw docstring test ... ok\n```\n\nWhat I did was to run the commands:\n\n```\nexport SAGE_CHECK=\"yes\"\nsage -f biopython-1.55.p0.spkg\n```\n\nI noticed that that previous installed version was not overwritten. I then removed the directory and did the install again. This time the new file was present. The tests again passed. \n\nHow did you run the tests?\n\nAdam",
+    "body": "Unfortunately, I haven't been able to duplicate that. I get:\n\n```\ntest_Wise ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.\ntest_psw ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.\n```\nbut I think this is expected as I don't have Wise2 installed. I also get:\n\n```\nBio.Wise docstring test ... ok\nBio.Wise.psw docstring test ... ok\n```\nWhat I did was to run the commands:\n\n```\nexport SAGE_CHECK=\"yes\"\nsage -f biopython-1.55.p0.spkg\n```\nI noticed that that previous installed version was not overwritten. I then removed the directory and did the install again. This time the new file was present. The tests again passed. \n\nHow did you run the tests?\n\nAdam",
     "created_at": "2010-09-17T12:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
@@ -112,21 +112,18 @@ Unfortunately, I haven't been able to duplicate that. I get:
 test_Wise ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.
 test_psw ... skipping. Install Wise2 (dnal) if you want to use Bio.Wise.
 ```
-
 but I think this is expected as I don't have Wise2 installed. I also get:
 
 ```
 Bio.Wise docstring test ... ok
 Bio.Wise.psw docstring test ... ok
 ```
-
 What I did was to run the commands:
 
 ```
 export SAGE_CHECK="yes"
 sage -f biopython-1.55.p0.spkg
 ```
-
 I noticed that that previous installed version was not overwritten. I then removed the directory and did the install again. This time the new file was present. The tests again passed. 
 
 How did you run the tests?
@@ -252,7 +249,7 @@ into the optional packages repository?
 archive/issue_comments_097147.json:
 ```json
 {
-    "body": "Replying to [comment:10 mpatel]:\n> Mike, Minh, or Harald, could one of you please merge \n> http://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg\n> into the optional packages repository?\n\nDone.",
+    "body": "Replying to [comment:10 mpatel]:\n> Mike, Minh, or Harald, could one of you please merge \n> http://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg\n> into the optional packages repository?\n\n\nDone.",
     "created_at": "2010-09-28T09:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
@@ -265,6 +262,7 @@ Replying to [comment:10 mpatel]:
 > Mike, Minh, or Harald, could one of you please merge 
 > http://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg
 > into the optional packages repository?
+
 
 Done.
 

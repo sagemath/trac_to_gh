@@ -3,7 +3,7 @@
 archive/issues_005005.json:
 ```json
 {
-    "body": "Assignee: tbd\n\n\n```\n            for e in x:\n                # r += parent(e)*power\n                celement_pow(&monomial, &gen, deg, NULL, parent)\n                coeff = (<Polynomial_template>parent(e)).x\n                celement_mul(&monomial, &coeff, &monomial, parent)\n                celement_add(&self.x, &self.x, &monomial, parent)\n                deg += 1\n```\n\n\nThere should be a celement_set(self, x, i). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5005\n\n",
+    "body": "Assignee: tbd\n\n```\n            for e in x:\n                # r += parent(e)*power\n                celement_pow(&monomial, &gen, deg, NULL, parent)\n                coeff = (<Polynomial_template>parent(e)).x\n                celement_mul(&monomial, &coeff, &monomial, parent)\n                celement_add(&self.x, &self.x, &monomial, parent)\n                deg += 1\n```\n\nThere should be a celement_set(self, x, i). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5005\n\n",
     "created_at": "2009-01-17T23:58:30Z",
     "labels": [
         "component: algebra",
@@ -18,7 +18,6 @@ archive/issues_005005.json:
 ```
 Assignee: tbd
 
-
 ```
             for e in x:
                 # r += parent(e)*power
@@ -28,7 +27,6 @@ Assignee: tbd
                 celement_add(&self.x, &self.x, &monomial, parent)
                 deg += 1
 ```
-
 
 There should be a celement_set(self, x, i). 
 

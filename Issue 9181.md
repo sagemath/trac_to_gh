@@ -3,7 +3,7 @@
 archive/issues_009181.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nFrom sage-devel\n\n```\n> 1. I think we should update the devguide, or is there something I don't get ?\n\nNo, we should update the developers guide. Despite this sentence, the (c)\nreturn type of \"hash\" has been a long since Python 2.3 at least, so I think\nthis wasn't ever correct for 64-bit long machines. (What was required is\nthat it fit into a Python int.)\n\n> 2. I'm writing a Cython class which caches the hash value. Which type\n> should I\n>   use for the attribute ? int doesn't work since when trying to store the\n>   hash of None in an int I get\n>\n>      OverflowError: value too large to convert to int\n>\n>   Is long ok and portable (it is was is used in a few place in sage) ?\n> Should\n>   we write it in the doc ?\n\nYes, we should be using C longs here. Under the hood\n\nPython int = C long != C int\nPython float = C double  != C float\n\nand Python longs have no (native) C equivalent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9181\n\n",
+    "body": "Assignee: mvngu\n\nFrom sage-devel\n\n```\n> 1. I think we should update the devguide, or is there something I don't get ?\n\nNo, we should update the developers guide. Despite this sentence, the (c)\nreturn type of \"hash\" has been a long since Python 2.3 at least, so I think\nthis wasn't ever correct for 64-bit long machines. (What was required is\nthat it fit into a Python int.)\n\n> 2. I'm writing a Cython class which caches the hash value. Which type\n> should I\n>   use for the attribute ? int doesn't work since when trying to store the\n>   hash of None in an int I get\n>\n>      OverflowError: value too large to convert to int\n>\n>   Is long ok and portable (it is was is used in a few place in sage) ?\n> Should\n>   we write it in the doc ?\n\nYes, we should be using C longs here. Under the hood\n\nPython int = C long != C int\nPython float = C double  != C float\n\nand Python longs have no (native) C equivalent.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/9181\n\n",
     "created_at": "2010-06-07T23:00:08Z",
     "labels": [
         "component: documentation",
@@ -46,7 +46,6 @@ Python float = C double  != C float
 
 and Python longs have no (native) C equivalent.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/9181
 

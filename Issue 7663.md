@@ -3,7 +3,7 @@
 archive/issues_007663.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\n\n``` \nThis is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the\nlast characters of output after evaluating a cell are supressed. I've\ntried all of string.printable: the only characters supressed are \"S\",\n\"A\", \"G\", \"E\" and \"_\". No kidding.\n Just try:\n\nprint \"ASAVFDBAAGGG___EEESS\"\n///\nASAVFDB\n\n\nprint \"ASAVFDBAAGGG___EEESS.\"\n///\nASAVFDBAAGGG___EEESS.\n\n Is this a private joke or an amazing coincidence?\n\n Regards\nPablo\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7663\n\n",
+    "body": "Assignee: @williamstein\n\n``` \nThis is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the\nlast characters of output after evaluating a cell are supressed. I've\ntried all of string.printable: the only characters supressed are \"S\",\n\"A\", \"G\", \"E\" and \"_\". No kidding.\n Just try:\n\nprint \"ASAVFDBAAGGG___EEESS\"\n///\nASAVFDB\n\n\nprint \"ASAVFDBAAGGG___EEESS.\"\n///\nASAVFDBAAGGG___EEESS.\n\n Is this a private joke or an amazing coincidence?\n\n Regards\nPablo\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7663\n\n",
     "created_at": "2009-12-11T15:13:24Z",
     "labels": [
         "component: notebook",
@@ -17,7 +17,6 @@ archive/issues_007663.json:
 }
 ```
 Assignee: @williamstein
-
 
 ``` 
 This is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the
@@ -40,7 +39,6 @@ ASAVFDBAAGGG___EEESS.
  Regards
 Pablo
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7663
 
@@ -89,7 +87,7 @@ Possibly related: #7410.  #7666 *may* fix both.
 archive/issue_comments_065503.json:
 ```json
 {
-    "body": "Actually, see #7924.  In particular,\n\n```python\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation\nsage: wp = WorksheetProcess_ExpectImplementation() \nsage: wp.execute('print \"ASAVFDBAAGGG___EEESS\"')\nsage: wp.output_status()\nOutput Status:\n        output: 'ASAVFDB'\n        filenames: []\n        done: True\nsage: wp.execute('print \"ASAVFDBAAGGG___EEESS.\"')\nsage: wp.output_status()\nOutput Status:\n        output: 'ASAVFDBAAGGG___EEESS.'\n        filenames: []\n        done: True\n```\n",
+    "body": "Actually, see #7924.  In particular,\n\n```python\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation\nsage: wp = WorksheetProcess_ExpectImplementation() \nsage: wp.execute('print \"ASAVFDBAAGGG___EEESS\"')\nsage: wp.output_status()\nOutput Status:\n        output: 'ASAVFDB'\n        filenames: []\n        done: True\nsage: wp.execute('print \"ASAVFDBAAGGG___EEESS.\"')\nsage: wp.output_status()\nOutput Status:\n        output: 'ASAVFDBAAGGG___EEESS.'\n        filenames: []\n        done: True\n```",
     "created_at": "2010-01-15T22:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
@@ -116,7 +114,6 @@ Output Status:
         filenames: []
         done: True
 ```
-
 
 
 

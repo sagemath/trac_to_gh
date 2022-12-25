@@ -3,7 +3,7 @@
 archive/issues_009693.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  @jhpalmieri @JohnCremona @mwhansen\n\nAn almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:\n\n* Dell OptiPlex 755\n* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU\n* 8 GB RAM, 8 GB swap. \n* Solaris 10 update 5 (5/08) on x86 \n* gcc 4.5.0 configured to use the Sun linker and GNU assembler\n* sage-4.5.2.rc1 with several changes. \n\nthe result printed during a doctest lacks a leading zero. \n\n\n```\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 508\\\n8:\n    sage: maxima('asinh(1.0)')\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n**********************************************************************\n```\n\n\nFollowing a suggestion of Carl Witty \n\nhttp://groups.google.com/group/sage-devel/msg/aa318e11e84afe8d?hl=en\n\nI run \n\n\n```\n2 drkirkby@fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) asinh(1.0); \n(%o1)                          .8813735870195429\n(%i2) \n```\n\n\nclearly showing the missing leading zero on this Solaris 10 x86 machine. \n\nTrying this on the same version of Sage, but this time on a SPARC processor with Solaris 10, the result is different:\n\n\n```\n32 drkirkby@redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)  asinh(1.0); \n(%o1)                          0.881373587019543\n(%i2) \n```\n\n\nClearly this demonstrates a difference in the behaviour of the Maxima and ECL combination on Solaris 10 systems, where one has a SPARC processor and the other has an Intel Xeon processor. \n\nThe version of ECL in this version of Sage is 10.2.1\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9693\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @jhpalmieri @JohnCremona @mwhansen\n\nAn almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:\n\n* Dell OptiPlex 755\n* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU\n* 8 GB RAM, 8 GB swap. \n* Solaris 10 update 5 (5/08) on x86 \n* gcc 4.5.0 configured to use the Sun linker and GNU assembler\n* sage-4.5.2.rc1 with several changes. \n\nthe result printed during a doctest lacks a leading zero. \n\n```\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 508\\\n8:\n    sage: maxima('asinh(1.0)')\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n**********************************************************************\n```\n\nFollowing a suggestion of Carl Witty \n\nhttp://groups.google.com/group/sage-devel/msg/aa318e11e84afe8d?hl=en\n\nI run \n\n```\n2 drkirkby@fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) asinh(1.0); \n(%o1)                          .8813735870195429\n(%i2) \n```\n\nclearly showing the missing leading zero on this Solaris 10 x86 machine. \n\nTrying this on the same version of Sage, but this time on a SPARC processor with Solaris 10, the result is different:\n\n```\n32 drkirkby@redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)  asinh(1.0); \n(%o1)                          0.881373587019543\n(%i2) \n```\n\nClearly this demonstrates a difference in the behaviour of the Maxima and ECL combination on Solaris 10 systems, where one has a SPARC processor and the other has an Intel Xeon processor. \n\nThe version of ECL in this version of Sage is 10.2.1\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9693\n\n",
     "created_at": "2010-08-05T23:44:01Z",
     "labels": [
         "component: numerical",
@@ -31,7 +31,6 @@ An almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had
 
 the result printed during a doctest lacks a leading zero. 
 
-
 ```
 **********************************************************************
 File "/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx", line 508\
@@ -44,13 +43,11 @@ Got:
 **********************************************************************
 ```
 
-
 Following a suggestion of Carl Witty 
 
 http://groups.google.com/group/sage-devel/msg/aa318e11e84afe8d?hl=en
 
 I run 
-
 
 ```
 2 drkirkby@fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima
@@ -67,11 +64,9 @@ The function bug_report() provides bug reporting information.
 (%i2) 
 ```
 
-
 clearly showing the missing leading zero on this Solaris 10 x86 machine. 
 
 Trying this on the same version of Sage, but this time on a SPARC processor with Solaris 10, the result is different:
-
 
 ```
 32 drkirkby@redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima
@@ -87,7 +82,6 @@ The function bug_report() provides bug reporting information.
 (%o1)                          0.881373587019543
 (%i2) 
 ```
-
 
 Clearly this demonstrates a difference in the behaviour of the Maxima and ECL combination on Solaris 10 systems, where one has a SPARC processor and the other has an Intel Xeon processor. 
 
@@ -174,7 +168,7 @@ Note, other Maxima developers can redproduce this on some Linux systems, so it i
 archive/issue_comments_094054.json:
 ```json
 {
-    "body": "As discussed here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/351c46eb4cb91598/995e04912042c4be?lnk=gst&q=asinh#995e04912042c4be\n\nI've changed the doctest to compute asinh(2.0) rather than asinh(1.0). Since asinh(2.0) is greater than one:\n\n\n```\nsage: maxima('asinh(2.0)')\n1.44363547517881\n```\n\n\nthere needs to be no leading zero, so the printing problem does not show. \n\nWhilst I can't guarantee every system will show 1.44363547517881, everyone who has tested this on their systems get **exactly** the same answer, so numerical rounding problems do not appear to exist here. Tests have been run on \n\n* Sun SPARC processors \n* Intel processors\n* AMD processors\n\nusing the following systems. \n\n* sage.math (Linux)\n* bsd.math (OS X)\n* t2.math (Solaris 10 on SPARC)\n* fulvia `@` skynet (Solaris 10 on x86)\n* My Sun Blade 1000 (Solaris 10). \n* My Sun Ultra 27 (OpenSolaris on x86) \n* 32-bit Linux system of John Cremona using an Intel processor\n* 64-bit Linux system of John Cremona using an AMD Opteron processor. \n\nA more accurate result, computed using arbitrary precision arithmetic in Mathematica is:\n\n\n```\nIn[4]:= N[ArcSinh[2],30]\n\nOut[4]= 1.44363547517881034249327674027 \n```\n\n\nSo every digit printed by Sage is correct. \n\nDave",
+    "body": "As discussed here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/351c46eb4cb91598/995e04912042c4be?lnk=gst&q=asinh#995e04912042c4be\n\nI've changed the doctest to compute asinh(2.0) rather than asinh(1.0). Since asinh(2.0) is greater than one:\n\n```\nsage: maxima('asinh(2.0)')\n1.44363547517881\n```\n\nthere needs to be no leading zero, so the printing problem does not show. \n\nWhilst I can't guarantee every system will show 1.44363547517881, everyone who has tested this on their systems get **exactly** the same answer, so numerical rounding problems do not appear to exist here. Tests have been run on \n\n* Sun SPARC processors \n* Intel processors\n* AMD processors\n\nusing the following systems. \n\n* sage.math (Linux)\n* bsd.math (OS X)\n* t2.math (Solaris 10 on SPARC)\n* fulvia `@` skynet (Solaris 10 on x86)\n* My Sun Blade 1000 (Solaris 10). \n* My Sun Ultra 27 (OpenSolaris on x86) \n* 32-bit Linux system of John Cremona using an Intel processor\n* 64-bit Linux system of John Cremona using an AMD Opteron processor. \n\nA more accurate result, computed using arbitrary precision arithmetic in Mathematica is:\n\n```\nIn[4]:= N[ArcSinh[2],30]\n\nOut[4]= 1.44363547517881034249327674027 \n```\n\nSo every digit printed by Sage is correct. \n\nDave",
     "created_at": "2010-08-19T04:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9693",
     "type": "issue_comment",
@@ -189,12 +183,10 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/351c46eb4cb91598/
 
 I've changed the doctest to compute asinh(2.0) rather than asinh(1.0). Since asinh(2.0) is greater than one:
 
-
 ```
 sage: maxima('asinh(2.0)')
 1.44363547517881
 ```
-
 
 there needs to be no leading zero, so the printing problem does not show. 
 
@@ -217,13 +209,11 @@ using the following systems.
 
 A more accurate result, computed using arbitrary precision arithmetic in Mathematica is:
 
-
 ```
 In[4]:= N[ArcSinh[2],30]
 
 Out[4]= 1.44363547517881034249327674027 
 ```
-
 
 So every digit printed by Sage is correct. 
 

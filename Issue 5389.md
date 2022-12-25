@@ -74,7 +74,7 @@ I believe that since `sage-starts` is now executed at the beginning of parallel 
 archive/issue_comments_041428.json:
 ```json
 {
-    "body": "Replying to [comment:2 wjp]:\n> I believe that since `sage-starts` is now executed at the beginning of parallel testing, this has already been fixed.\n\nI agree.",
+    "body": "Replying to [comment:2 wjp]:\n> I believe that since `sage-starts` is now executed at the beginning of parallel testing, this has already been fixed.\n\n\nI agree.",
     "created_at": "2011-01-11T06:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5389",
     "type": "issue_comment",
@@ -85,6 +85,7 @@ archive/issue_comments_041428.json:
 
 Replying to [comment:2 wjp]:
 > I believe that since `sage-starts` is now executed at the beginning of parallel testing, this has already been fixed.
+
 
 I agree.
 

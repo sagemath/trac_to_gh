@@ -110,7 +110,7 @@ Sébastien
 archive/issue_comments_063505.json:
 ```json
 {
-    "body": "> Can we attach a file already in the sage tree that we are editing?\n\n> I stopped using it because sometimes the changes in the file were not\n>  considered and I have been stopping sage and running sage -br ever since then. \n\nYou probably don't understand what attach does.  All it does is execfile the file that you attached.  There are situations where this happening might be perceived as \"the file were not considered\".  E.g., if you create an install F of a class Foo defined in a file a.py, then a.py is reloaded, the object F is *not* somehow magically modified in memory to be an instance of a the new Foo that was defined in the file a.py.    That's not how Python works, and it would be weird and confusing overall if things did work that way.",
+    "body": "> Can we attach a file already in the sage tree that we are editing?\n\n\n> I stopped using it because sometimes the changes in the file were not\n>  considered and I have been stopping sage and running sage -br ever since then. \n\n\nYou probably don't understand what attach does.  All it does is execfile the file that you attached.  There are situations where this happening might be perceived as \"the file were not considered\".  E.g., if you create an install F of a class Foo defined in a file a.py, then a.py is reloaded, the object F is *not* somehow magically modified in memory to be an instance of a the new Foo that was defined in the file a.py.    That's not how Python works, and it would be weird and confusing overall if things did work that way.",
     "created_at": "2009-11-23T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -121,8 +121,10 @@ archive/issue_comments_063505.json:
 
 > Can we attach a file already in the sage tree that we are editing?
 
+
 > I stopped using it because sometimes the changes in the file were not
 >  considered and I have been stopping sage and running sage -br ever since then. 
+
 
 You probably don't understand what attach does.  All it does is execfile the file that you attached.  There are situations where this happening might be perceived as "the file were not considered".  E.g., if you create an install F of a class Foo defined in a file a.py, then a.py is reloaded, the object F is *not* somehow magically modified in memory to be an instance of a the new Foo that was defined in the file a.py.    That's not how Python works, and it would be weird and confusing overall if things did work that way.
 
@@ -169,7 +171,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063508.json:
 ```json
 {
-    "body": "Replying to [comment:2 slabbe]:\n> Reading the summary of this ticket made me remember a problem I was having with the attach command : Can we attach a file already in the sage tree that we are editing? I already tried, but I stopped using it because sometimes the changes in the file were not considered and I have been stopping sage and running sage -br ever since then.\n> \n> Maybe I was doing something bad or maybe this ticket solves the problem or maybe it is not possible at all to do this...??\n> \n\nYou just have to *understand* what attach does.  It reloads the file via execfile into the global namespace when the file changes.  You can attach any file, in the tree or not.  But imagine this:   In the sage tree there is a file foo.py.  There is another file bar.py that does \"import foo\" and uses some code in foo.  If you attach foo.py (which results in exec'ing it in the global interpreter namespaces), then that will have no impact at all on bar.py.  \n\nThus for some problems attach works very nicely for library code, and for others it doesn't.  Which is which is clearer if you know what attach does.",
+    "body": "Replying to [comment:2 slabbe]:\n> Reading the summary of this ticket made me remember a problem I was having with the attach command : Can we attach a file already in the sage tree that we are editing? I already tried, but I stopped using it because sometimes the changes in the file were not considered and I have been stopping sage and running sage -br ever since then.\n> \n> Maybe I was doing something bad or maybe this ticket solves the problem or maybe it is not possible at all to do this...??\n> \n\n\nYou just have to *understand* what attach does.  It reloads the file via execfile into the global namespace when the file changes.  You can attach any file, in the tree or not.  But imagine this:   In the sage tree there is a file foo.py.  There is another file bar.py that does \"import foo\" and uses some code in foo.  If you attach foo.py (which results in exec'ing it in the global interpreter namespaces), then that will have no impact at all on bar.py.  \n\nThus for some problems attach works very nicely for library code, and for others it doesn't.  Which is which is clearer if you know what attach does.",
     "created_at": "2009-12-08T21:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -183,6 +185,7 @@ Replying to [comment:2 slabbe]:
 > 
 > Maybe I was doing something bad or maybe this ticket solves the problem or maybe it is not possible at all to do this...??
 > 
+
 
 You just have to *understand* what attach does.  It reloads the file via execfile into the global namespace when the file changes.  You can attach any file, in the tree or not.  But imagine this:   In the sage tree there is a file foo.py.  There is another file bar.py that does "import foo" and uses some code in foo.  If you attach foo.py (which results in exec'ing it in the global interpreter namespaces), then that will have no impact at all on bar.py.  
 
@@ -235,7 +238,7 @@ Out of curiosity:  What if we "overload" `import` by keeping a stack of all impo
 archive/issue_comments_063511.json:
 ```json
 {
-    "body": "With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:\n\n```\n        sage -t  devel/sage/sage/misc/sageinspect.py # 3 doctests failed\n        sage -t  devel/sage/sage/misc/preparser.py # 10 doctests failed\n        sage -t  devel/sage/sage/misc/reset.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/misc/session.pyx # 1 doctests failed\n```\n\nShould we stop doctesting most (all?) of `sage/server`?",
+    "body": "With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:\n\n```\n        sage -t  devel/sage/sage/misc/sageinspect.py # 3 doctests failed\n        sage -t  devel/sage/sage/misc/preparser.py # 10 doctests failed\n        sage -t  devel/sage/sage/misc/reset.pyx # 2 doctests failed\n        sage -t  devel/sage/sage/misc/session.pyx # 1 doctests failed\n```\nShould we stop doctesting most (all?) of `sage/server`?",
     "created_at": "2009-12-10T02:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -252,7 +255,6 @@ With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:
         sage -t  devel/sage/sage/misc/reset.pyx # 2 doctests failed
         sage -t  devel/sage/sage/misc/session.pyx # 1 doctests failed
 ```
-
 Should we stop doctesting most (all?) of `sage/server`?
 
 
@@ -262,7 +264,7 @@ Should we stop doctesting most (all?) of `sage/server`?
 archive/issue_comments_063512.json:
 ```json
 {
-    "body": "Replying to [comment:8 mpatel]:\n> With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:\n\nThree tests fail in `sagenb.misc.sageinpect`.  Please see #7650.\n\n> Should we stop doctesting most (all?) of `sage/server`?\n\nPlease see #7534.",
+    "body": "Replying to [comment:8 mpatel]:\n> With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:\n\n\nThree tests fail in `sagenb.misc.sageinpect`.  Please see #7650.\n\n> Should we stop doctesting most (all?) of `sage/server`?\n\n\nPlease see #7534.",
     "created_at": "2009-12-10T12:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -274,9 +276,11 @@ archive/issue_comments_063512.json:
 Replying to [comment:8 mpatel]:
 > With 4.3.alpha1 + #7625 + #7483 + #7482 + this ticket, several doctests failed:
 
+
 Three tests fail in `sagenb.misc.sageinpect`.  Please see #7650.
 
 > Should we stop doctesting most (all?) of `sage/server`?
+
 
 Please see #7534.
 
@@ -287,7 +291,7 @@ Please see #7534.
 archive/issue_comments_063513.json:
 ```json
 {
-    "body": "I noticed\n\n```python\nsage: f = 1\nsage: save(f, 'f')\nsage: attach('f.sobj')\nTraceback (most recent call last)\n...\nValueError: argument (='f.sobj') to load or attach must have extension py, sage, or pyx                             \nsage: attached_files()\n['f.sobj']\n```\n\n\nQuestions about loading/attaching Cython files:\n\n* Can they only be loaded once, if they haven't changed?  For example: If `zzz.pyx` contains `print 'Zzz!'`, I see\n\n```python\nsage: load('zzz.pyx')\nCompiling zzz.pyx...\nZzz!\nsage: load('zzz.pyx')\nsage: load('zzz.pyx')\nsage: # Now I edit zzz.pyx\nsage: load('zzz.pyx')\nCompiling zzz.pyx...\nAwake!\n```\n\n\n* Can they access existing objects?  For example: If I put\n\n```python\ntry:\n    b += 1\nexcept:\n    b = 10\nprint b\n```\n\n\n    in a .pyx file, loading the file always sets `b` to 10, even if it's already defined.\n\nDisclaimer:  I'm still quite ignorant about Cython.",
+    "body": "I noticed\n\n```python\nsage: f = 1\nsage: save(f, 'f')\nsage: attach('f.sobj')\nTraceback (most recent call last)\n...\nValueError: argument (='f.sobj') to load or attach must have extension py, sage, or pyx                             \nsage: attached_files()\n['f.sobj']\n```\n\nQuestions about loading/attaching Cython files:\n\n* Can they only be loaded once, if they haven't changed?  For example: If `zzz.pyx` contains `print 'Zzz!'`, I see\n\n```python\nsage: load('zzz.pyx')\nCompiling zzz.pyx...\nZzz!\nsage: load('zzz.pyx')\nsage: load('zzz.pyx')\nsage: # Now I edit zzz.pyx\nsage: load('zzz.pyx')\nCompiling zzz.pyx...\nAwake!\n```\n\n* Can they access existing objects?  For example: If I put\n\n```python\ntry:\n    b += 1\nexcept:\n    b = 10\nprint b\n```\n\n    in a .pyx file, loading the file always sets `b` to 10, even if it's already defined.\n\nDisclaimer:  I'm still quite ignorant about Cython.",
     "created_at": "2009-12-28T13:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -309,7 +313,6 @@ sage: attached_files()
 ['f.sobj']
 ```
 
-
 Questions about loading/attaching Cython files:
 
 * Can they only be loaded once, if they haven't changed?  For example: If `zzz.pyx` contains `print 'Zzz!'`, I see
@@ -326,7 +329,6 @@ Compiling zzz.pyx...
 Awake!
 ```
 
-
 * Can they access existing objects?  For example: If I put
 
 ```python
@@ -336,7 +338,6 @@ except:
     b = 10
 print b
 ```
-
 
     in a .pyx file, loading the file always sets `b` to 10, even if it's already defined.
 
@@ -505,7 +506,7 @@ trac 7514 sagenb-part2: proper tracebacks; make source code introspection of fun
 archive/issue_comments_063522.json:
 ```json
 {
-    "body": "Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by @williamstein created at 2009-12-31 19:35:03\n\nRight now the files that one must apply are:\n\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```\n",
+    "body": "Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid/ticket7514/sagenb-7514-rebase-part2.patch) by @williamstein created at 2009-12-31 19:35:03\n\nRight now the files that one must apply are:\n\n```\nTo Sage Library:\n sagelib-7514_combined.3.patch \n\nTo Notebook:\n sagenb-7514-rebase.patch  \n sagenb-7514-rebase-part2.patch\n```",
     "created_at": "2009-12-31T19:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -518,7 +519,6 @@ Attachment [sagenb-7514-rebase-part2.patch](tarball://root/attachments/some-uuid
 
 Right now the files that one must apply are:
 
-
 ```
 To Sage Library:
  sagelib-7514_combined.3.patch 
@@ -527,7 +527,6 @@ To Notebook:
  sagenb-7514-rebase.patch  
  sagenb-7514-rebase-part2.patch
 ```
-
 
 
 
@@ -554,7 +553,7 @@ The file sagenb-7514-rebase-part2.patch fixes some serious issues.  In particula
 archive/issue_comments_063524.json:
 ```json
 {
-    "body": "* When I load/attach a .(s)pyx file in the notebook, `___code__.py` appears in the cell's output HTML.\n\n  * Minor: Should we make `attached_files()` in the notebook report, e.g.,\n\n```\n[DATA+'foo.py']\n```\n\n   instead of\n\n```\n['/full/path/to/foo.py']\n```\n\n\n* Typing `f??<TAB>` for a function `f` defined in the notebook shows its docstring but not its source code.  Is this related to ?? not working for Cython functions defined in cells or attached `DATA` files?\n\n* Should we make it possible to edit attached .pyx files, just as we can edit .py, .sage, .spyx, and .txt files?\n\n* Minor: `save_notebook` appears to be called twice on shutdown.  Is this a fail-safe behavior?",
+    "body": "* When I load/attach a .(s)pyx file in the notebook, `___code__.py` appears in the cell's output HTML.\n\n  * Minor: Should we make `attached_files()` in the notebook report, e.g.,\n\n```\n[DATA+'foo.py']\n```\n   instead of\n\n```\n['/full/path/to/foo.py']\n```\n\n* Typing `f??<TAB>` for a function `f` defined in the notebook shows its docstring but not its source code.  Is this related to ?? not working for Cython functions defined in cells or attached `DATA` files?\n\n* Should we make it possible to edit attached .pyx files, just as we can edit .py, .sage, .spyx, and .txt files?\n\n* Minor: `save_notebook` appears to be called twice on shutdown.  Is this a fail-safe behavior?",
     "created_at": "2010-01-01T03:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -570,13 +569,11 @@ archive/issue_comments_063524.json:
 ```
 [DATA+'foo.py']
 ```
-
    instead of
 
 ```
 ['/full/path/to/foo.py']
 ```
-
 
 * Typing `f??<TAB>` for a function `f` defined in the notebook shows its docstring but not its source code.  Is this related to ?? not working for Cython functions defined in cells or attached `DATA` files?
 
@@ -591,7 +588,7 @@ archive/issue_comments_063524.json:
 archive/issue_comments_063525.json:
 ```json
 {
-    "body": "> When I load/attach a .(s)pyx file in the notebook, ___code__.py appears in \n> the cell's output HTML. \n\nThat's a bug.  I'll fix it soon. \n\n> Minor: Should we make attached_files() in the notebook report\n\nI'm not sure.  But I think this should be a separate ticket, since it would be a new feature. \n\n>     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. \n\nThat's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. \n\n> Minor: save_notebook appears to be called twice on shutdown. Is this a fail-safe behavior?\n\nThis has been the case forever.  It is not caused by this patch.  I don't think it is desirable.  Please do open a ticket. \n\nOK, so I'm going to fix the ___code___.py issue you reported above, triple check that f?? works, and if not, figure out what went wrong, then mark this as \"needs review\" again.",
+    "body": "> When I load/attach a .(s)pyx file in the notebook, ___code__.py appears in \n> the cell's output HTML. \n\n\nThat's a bug.  I'll fix it soon. \n\n> Minor: Should we make attached_files() in the notebook report\n\n\nI'm not sure.  But I think this should be a separate ticket, since it would be a new feature. \n\n>     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. \n\n\nThat's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. \n\n> Minor: save_notebook appears to be called twice on shutdown. Is this a fail-safe behavior?\n\n\nThis has been the case forever.  It is not caused by this patch.  I don't think it is desirable.  Please do open a ticket. \n\nOK, so I'm going to fix the ___code___.py issue you reported above, triple check that f?? works, and if not, figure out what went wrong, then mark this as \"needs review\" again.",
     "created_at": "2010-01-01T04:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -603,17 +600,21 @@ archive/issue_comments_063525.json:
 > When I load/attach a .(s)pyx file in the notebook, ___code__.py appears in 
 > the cell's output HTML. 
 
+
 That's a bug.  I'll fix it soon. 
 
 > Minor: Should we make attached_files() in the notebook report
+
 
 I'm not sure.  But I think this should be a separate ticket, since it would be a new feature. 
 
 >     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. 
 
+
 That's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. 
 
 > Minor: save_notebook appears to be called twice on shutdown. Is this a fail-safe behavior?
+
 
 This has been the case forever.  It is not caused by this patch.  I don't think it is desirable.  Please do open a ticket. 
 
@@ -644,7 +645,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063527.json:
 ```json
 {
-    "body": "Replying to [comment:16 was]:\n> >     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. \n> \n> That's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. \n\nIt seems that just the last line of code is omitted.  The source displayed is the preparsed source, but I don't know if this is a problem.",
+    "body": "Replying to [comment:16 was]:\n> >     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. \n \n> \n> That's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. \n\n\nIt seems that just the last line of code is omitted.  The source displayed is the preparsed source, but I don't know if this is a problem.",
     "created_at": "2010-01-01T05:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -655,8 +656,10 @@ archive/issue_comments_063527.json:
 
 Replying to [comment:16 was]:
 > >     * Typing f??<TAB> for a function f defined in the notebook shows its docstring but > not its source code. 
+ 
 > 
 > That's really weird, because it is one of the problems that this patch definitely fixes.  Are you sure?   Did you define a function f in one input cell, then do f?? in another, and it didn't show the source code?    Were you using a clean sagenb-0.4.8 install for testing?  Maybe I messed up posting the patch. 
+
 
 It seems that just the last line of code is omitted.  The source displayed is the preparsed source, but I don't know if this is a problem.
 
@@ -783,7 +786,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063534.json:
 ```json
 {
-    "body": "Replying to [comment:19 mpatel]:\n> Positive review.\n> \n> If it's OK, I'll fix (e.g., INPUT/OUTPUT blocks) a few docstrings of functions affected by the sagelib patch.\n\nI'll make a separate ticket instead.  We should include `load` and `attach` in the reference manual.",
+    "body": "Replying to [comment:19 mpatel]:\n> Positive review.\n> \n> If it's OK, I'll fix (e.g., INPUT/OUTPUT blocks) a few docstrings of functions affected by the sagelib patch.\n\n\nI'll make a separate ticket instead.  We should include `load` and `attach` in the reference manual.",
     "created_at": "2010-01-01T06:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7514",
     "type": "issue_comment",
@@ -796,6 +799,7 @@ Replying to [comment:19 mpatel]:
 > Positive review.
 > 
 > If it's OK, I'll fix (e.g., INPUT/OUTPUT blocks) a few docstrings of functions affected by the sagelib patch.
+
 
 I'll make a separate ticket instead.  We should include `load` and `attach` in the reference manual.
 

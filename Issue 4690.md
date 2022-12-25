@@ -3,7 +3,7 @@
 archive/issues_004690.json:
 ```json
 {
-    "body": "Assignee: @burcin\n\nDerivatives of piecewise functions where some piece uses multiplication causes Sage to hang. Example code:\n\n\n```\nPiecewise([[(0,1), x * 2]]).derivative()\n```\n\n\nIt hangs waiting for Maxima to return a result, which is because the expression it sends to Maxima is not formatted properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4690\n\n",
+    "body": "Assignee: @burcin\n\nDerivatives of piecewise functions where some piece uses multiplication causes Sage to hang. Example code:\n\n```\nPiecewise([[(0,1), x * 2]]).derivative()\n```\n\nIt hangs waiting for Maxima to return a result, which is because the expression it sends to Maxima is not formatted properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4690\n\n",
     "created_at": "2008-12-04T01:22:32Z",
     "labels": [
         "component: calculus",
@@ -21,11 +21,9 @@ Assignee: @burcin
 
 Derivatives of piecewise functions where some piece uses multiplication causes Sage to hang. Example code:
 
-
 ```
 Piecewise([[(0,1), x * 2]]).derivative()
 ```
-
 
 It hangs waiting for Maxima to return a result, which is because the expression it sends to Maxima is not formatted properly.
 

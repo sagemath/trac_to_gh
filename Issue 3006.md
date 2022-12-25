@@ -3,7 +3,7 @@
 archive/issues_003006.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThe following problem was reported by Dustin Vaselaar to sage-support:\n\n\nHello,\nI am looking to use a complete elliptic integral of the first kind in\nsage, however I'm not sure if this has been implemented.  The link\nhttp://www.sagemath.org/doc/html/ref/module-sage.functions.special.html\nmentions a function \"elliptic_kc\", but it doesn't seem to be\nimplemented in sage version 3.0, judging from the result of this\ncommand:\n\n\n```\nsage: elliptic_kc?\nObject `elliptic_kc` not found.\n```\n\n\nAny insights on using a a complete elliptic integral of the first kind\nin sage?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3006\n\n",
+    "body": "Assignee: @williamstein\n\nThe following problem was reported by Dustin Vaselaar to sage-support:\n\n\nHello,\nI am looking to use a complete elliptic integral of the first kind in\nsage, however I'm not sure if this has been implemented.  The link\nhttp://www.sagemath.org/doc/html/ref/module-sage.functions.special.html\nmentions a function \"elliptic_kc\", but it doesn't seem to be\nimplemented in sage version 3.0, judging from the result of this\ncommand:\n\n```\nsage: elliptic_kc?\nObject `elliptic_kc` not found.\n```\n\nAny insights on using a a complete elliptic integral of the first kind\nin sage?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3006\n\n",
     "created_at": "2008-04-23T14:27:55Z",
     "labels": [
         "component: calculus",
@@ -29,12 +29,10 @@ mentions a function "elliptic_kc", but it doesn't seem to be
 implemented in sage version 3.0, judging from the result of this
 command:
 
-
 ```
 sage: elliptic_kc?
 Object `elliptic_kc` not found.
 ```
-
 
 Any insights on using a a complete elliptic integral of the first kind
 in sage?
@@ -52,7 +50,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3006
 archive/issue_comments_020630.json:
 ```json
 {
-    "body": "Clearly this is a problem with \"documentation\" but I filed it under \"calculus\" since that seemed closer. It is a matter of adding a wrapper to Maxima's function elliptic_kc.\n\n\n```\nsage: RR(maxima.eval(\"elliptic_kc (0.5)\"))\n1.85407467730137\n```\n\n\nI'll submit a patch soon.",
+    "body": "Clearly this is a problem with \"documentation\" but I filed it under \"calculus\" since that seemed closer. It is a matter of adding a wrapper to Maxima's function elliptic_kc.\n\n```\nsage: RR(maxima.eval(\"elliptic_kc (0.5)\"))\n1.85407467730137\n```\n\nI'll submit a patch soon.",
     "created_at": "2008-04-23T14:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3006",
     "type": "issue_comment",
@@ -63,12 +61,10 @@ archive/issue_comments_020630.json:
 
 Clearly this is a problem with "documentation" but I filed it under "calculus" since that seemed closer. It is a matter of adding a wrapper to Maxima's function elliptic_kc.
 
-
 ```
 sage: RR(maxima.eval("elliptic_kc (0.5)"))
 1.85407467730137
 ```
-
 
 I'll submit a patch soon.
 

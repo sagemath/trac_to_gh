@@ -3,7 +3,7 @@
 archive/issues_006658.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nsage: x = 1729\nsage: x.digits()\n[9, 2, 7, 1]\n```\n\nbut the docstring for `digits()` claims it defaults to base 2. The attached patch fixes this; thanks to Yasuhide NUMATA at the *-combinat meeting for noticing this. I would have shown him how to make a patch and upload it to trac, but their wireless network was down at the time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6658\n\n",
+    "body": "Assignee: somebody\n\n```\nsage: x = 1729\nsage: x.digits()\n[9, 2, 7, 1]\n```\nbut the docstring for `digits()` claims it defaults to base 2. The attached patch fixes this; thanks to Yasuhide NUMATA at the *-combinat meeting for noticing this. I would have shown him how to make a patch and upload it to trac, but their wireless network was down at the time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6658\n\n",
     "created_at": "2009-07-30T03:03:24Z",
     "labels": [
         "component: basic arithmetic",
@@ -18,13 +18,11 @@ archive/issues_006658.json:
 ```
 Assignee: somebody
 
-
 ```
 sage: x = 1729
 sage: x.digits()
 [9, 2, 7, 1]
 ```
-
 but the docstring for `digits()` claims it defaults to base 2. The attached patch fixes this; thanks to Yasuhide NUMATA at the *-combinat meeting for noticing this. I would have shown him how to make a patch and upload it to trac, but their wireless network was down at the time.
 
 Issue created by migration from https://trac.sagemath.org/ticket/6658

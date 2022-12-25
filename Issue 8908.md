@@ -371,7 +371,7 @@ Apply trac_8908_young_subgroup_folded.patch trac_8908-young_subgroup-review.patc
 archive/issue_comments_081918.json:
 ```json
 {
-    "body": "Well, this seems ok to me. I would rather replace\n\n\n```\ngen = self((domain[pos + i], domain[pos + i + 1]))\ngens.append(gen) \n```\n\n\nby the single line\n\n```\ngens.append(self((domain[pos + i], domain[pos + i + 1])))\n```\n\n\nI am a bit puzzled by the \"PluginFailed\" given by the bot. What is the meaning of ValueError(\"Mercurial queue boilerplate\") ?",
+    "body": "Well, this seems ok to me. I would rather replace\n\n```\ngen = self((domain[pos + i], domain[pos + i + 1]))\ngens.append(gen) \n```\n\nby the single line\n\n```\ngens.append(self((domain[pos + i], domain[pos + i + 1])))\n```\n\nI am a bit puzzled by the \"PluginFailed\" given by the bot. What is the meaning of ValueError(\"Mercurial queue boilerplate\") ?",
     "created_at": "2012-06-08T20:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8908",
     "type": "issue_comment",
@@ -382,19 +382,16 @@ archive/issue_comments_081918.json:
 
 Well, this seems ok to me. I would rather replace
 
-
 ```
 gen = self((domain[pos + i], domain[pos + i + 1]))
 gens.append(gen) 
 ```
-
 
 by the single line
 
 ```
 gens.append(self((domain[pos + i], domain[pos + i + 1])))
 ```
-
 
 I am a bit puzzled by the "PluginFailed" given by the bot. What is the meaning of ValueError("Mercurial queue boilerplate") ?
 

@@ -3,7 +3,7 @@
 archive/issues_004152.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nThis should work to be consistent with plot:\n\n\n```\nsage: parametric_plot((2*x, x^2+1), (x,0,1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\nTypeError: parametric_plot() takes exactly 3 arguments (2 given)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4152\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work to be consistent with plot:\n\n```\nsage: parametric_plot((2*x, x^2+1), (x,0,1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\nTypeError: parametric_plot() takes exactly 3 arguments (2 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4152\n\n",
     "created_at": "2008-09-19T16:35:56Z",
     "labels": [
         "component: graphics",
@@ -20,7 +20,6 @@ Assignee: @williamstein
 
 This should work to be consistent with plot:
 
-
 ```
 sage: parametric_plot((2*x, x^2+1), (x,0,1))
 ---------------------------------------------------------------------------
@@ -30,7 +29,6 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: parametric_plot() takes exactly 3 arguments (2 given)
 ```
-
 
 
 Issue created by migration from https://trac.sagemath.org/ticket/4152

@@ -3,7 +3,7 @@
 archive/issues_009083.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nKeywords: beginner\n\nConventionally 'make distclean' removes all traces of a build process, leaving only the original files. \n\nHowever, at least the following four files or directories are being left after running 'make distclean'.\n\n\n```\n./.BUILDSTART \ndochtml.log\nspkg/install\nspkg/installed\n```\n\nThere is a section in the makefile\n\n```\ndistclean:\n        make clean\n        rm -rf local\n        rm -rf spkg/installed/*\n        rm -f install.log\n        rm -f test.log testall.log testlong.log ptest.log ptestlong.log\n        rm -rf data\n        rm -rf dist\n        rm -rf devel\n        rm -rf doc\n        rm -rf examples\n        rm -rf sage-python\n        rm -rf spkg/build\n        rm -rf spkg/archive\n        rm -rf ipython\n        rm -rf matplotlibrc\n        rm -rf tmp\n```\n\n\nThe two files and two directories need adding to that section. There may be other files created too. The way to find any new files or directories would be to \n\n* Extract the Sage tarball.\n* Build Sage fully. \n* Run the following two commands from the top level Sage directory.\n \n\n```\n$ 'make distclean'\n$ find . -mtime -2\n```\n\n\nThat will list any files or directories updated in the last two days. \n\nThe following files\n* sage-README-osx.txt\n* COPYING.txt\n* README.txt\n\nare having their modification times changed. I think that is undesirable, but that is another problem and the subject of #9082. So the changes to the makefile should not remove those 3 files, despite their recent modification times. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9083\n\n",
+    "body": "Assignee: GeorgSWeber\n\nKeywords: beginner\n\nConventionally 'make distclean' removes all traces of a build process, leaving only the original files. \n\nHowever, at least the following four files or directories are being left after running 'make distclean'.\n\n```\n./.BUILDSTART \ndochtml.log\nspkg/install\nspkg/installed\n```\nThere is a section in the makefile\n\n```\ndistclean:\n        make clean\n        rm -rf local\n        rm -rf spkg/installed/*\n        rm -f install.log\n        rm -f test.log testall.log testlong.log ptest.log ptestlong.log\n        rm -rf data\n        rm -rf dist\n        rm -rf devel\n        rm -rf doc\n        rm -rf examples\n        rm -rf sage-python\n        rm -rf spkg/build\n        rm -rf spkg/archive\n        rm -rf ipython\n        rm -rf matplotlibrc\n        rm -rf tmp\n```\n\nThe two files and two directories need adding to that section. There may be other files created too. The way to find any new files or directories would be to \n\n* Extract the Sage tarball.\n* Build Sage fully. \n* Run the following two commands from the top level Sage directory.\n \n```\n$ 'make distclean'\n$ find . -mtime -2\n```\n\nThat will list any files or directories updated in the last two days. \n\nThe following files\n* sage-README-osx.txt\n* COPYING.txt\n* README.txt\n\nare having their modification times changed. I think that is undesirable, but that is another problem and the subject of #9082. So the changes to the makefile should not remove those 3 files, despite their recent modification times. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9083\n\n",
     "created_at": "2010-05-29T07:30:09Z",
     "labels": [
         "component: build",
@@ -24,14 +24,12 @@ Conventionally 'make distclean' removes all traces of a build process, leaving o
 
 However, at least the following four files or directories are being left after running 'make distclean'.
 
-
 ```
 ./.BUILDSTART 
 dochtml.log
 spkg/install
 spkg/installed
 ```
-
 There is a section in the makefile
 
 ```
@@ -54,19 +52,16 @@ distclean:
         rm -rf tmp
 ```
 
-
 The two files and two directories need adding to that section. There may be other files created too. The way to find any new files or directories would be to 
 
 * Extract the Sage tarball.
 * Build Sage fully. 
 * Run the following two commands from the top level Sage directory.
  
-
 ```
 $ 'make distclean'
 $ find . -mtime -2
 ```
-
 
 That will list any files or directories updated in the last two days. 
 
@@ -130,7 +125,7 @@ Hrm, I see the "beginner" tag...I hope I'm not stepping on any beginner's toes h
 archive/issue_comments_084182.json:
 ```json
 {
-    "body": "I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n\n\n```\n\trm -rf spkg/installed/*\n```\n\n\ncan actually be removed, as your \n\n\n```\n\trm -rf spkg/installed\n```\n\n\nwill do it, but it does not make much difference. \n\nI've got another patch I marked 'beginner' which might well be something that is a bit unusual in Sage, (though trivial). I better revisit that one and see if 'beginner' should be removed. \n\nDave",
+    "body": "I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n\n```\n\trm -rf spkg/installed/*\n```\n\ncan actually be removed, as your \n\n```\n\trm -rf spkg/installed\n```\n\nwill do it, but it does not make much difference. \n\nI've got another patch I marked 'beginner' which might well be something that is a bit unusual in Sage, (though trivial). I better revisit that one and see if 'beginner' should be removed. \n\nDave",
     "created_at": "2010-06-01T08:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -141,19 +136,15 @@ archive/issue_comments_084182.json:
 
 I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line
 
-
 ```
 	rm -rf spkg/installed/*
 ```
 
-
 can actually be removed, as your 
-
 
 ```
 	rm -rf spkg/installed
 ```
-
 
 will do it, but it does not make much difference. 
 
@@ -204,7 +195,7 @@ Changing status from new to needs_review.
 archive/issue_comments_084185.json:
 ```json
 {
-    "body": "Replying to [comment:2 drkirkby]:\n> I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n> \n> {{{\n> \trm -rf spkg/installed/*\n> }}}\n> \n> can actually be removed, as your \n> \n> {{{\n> \trm -rf spkg/installed\n> }}}\n> \n> will do it, but it does not make much difference.\n\nI think those actually are different because of the trailing slash -- if we do\n\n```\nrm -rf spkg/installed*\n```\n\nI think that will get everything, right? If so, I can change the patch.\n> \n> I've got another patch I marked 'beginner' which might well be something that is a bit unusual in Sage, (though trivial). I better revisit that one and see if 'beginner' should be removed. \n> \n> Dave",
+    "body": "Replying to [comment:2 drkirkby]:\n> I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n> \n> \n> ```\n> \trm -rf spkg/installed/*\n> ```\n> \n> can actually be removed, as your \n> \n> \n> ```\n> \trm -rf spkg/installed\n> ```\n> \n> will do it, but it does not make much difference.\n\n\nI think those actually are different because of the trailing slash -- if we do\n\n```\nrm -rf spkg/installed*\n```\nI think that will get everything, right? If so, I can change the patch.\n> \n> I've got another patch I marked 'beginner' which might well be something that is a bit unusual in Sage, (though trivial). I better revisit that one and see if 'beginner' should be removed. \n> \n> Dave",
     "created_at": "2010-06-01T09:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -216,24 +207,26 @@ archive/issue_comments_084185.json:
 Replying to [comment:2 drkirkby]:
 > I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line
 > 
-> {{{
+> 
+> ```
 > 	rm -rf spkg/installed/*
-> }}}
+> ```
 > 
 > can actually be removed, as your 
 > 
-> {{{
+> 
+> ```
 > 	rm -rf spkg/installed
-> }}}
+> ```
 > 
 > will do it, but it does not make much difference.
+
 
 I think those actually are different because of the trailing slash -- if we do
 
 ```
 rm -rf spkg/installed*
 ```
-
 I think that will get everything, right? If so, I can change the patch.
 > 
 > I've got another patch I marked 'beginner' which might well be something that is a bit unusual in Sage, (though trivial). I better revisit that one and see if 'beginner' should be removed. 
@@ -247,7 +240,7 @@ I think that will get everything, right? If so, I can change the patch.
 archive/issue_comments_084186.json:
 ```json
 {
-    "body": "Replying to [comment:4 ddrake]:\n> Replying to [comment:2 drkirkby]:\n> > I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n> > \n> > {{{\n> > \trm -rf spkg/installed/*\n> > }}}\n> > \n> > can actually be removed, as your \n> > \n> > {{{\n> > \trm -rf spkg/installed\n> > }}}\n> > \n> > will do it, but it does not make much difference.\n> \n> I think those actually are different because of the trailing slash -- if we do\n> {{{\n> rm -rf spkg/installed*\n> }}}\n> I think that will get everything, right? If so, I can change the patch.\n\nThe trailing slash should make no difference\n\n\n```\nrm -rf spkg/installed\n```\n\n\nwill remove the directory spkg/installed and of course anything in any subdirectory of spkg/installed. \n\nIn contrast\n\n\n```\nrm -rf spkg/installed*\n```\n\n\nwould remove anything starting with spkg/installed, such as \n\n\n```\nspkg/installeda\nspkg/installedb\nspkg/installedc\nspkg/installed-but-do-not-delete-this-directory\n```\n\n \nI have removed the 'beginner' tag. \n\nDave",
+    "body": "Replying to [comment:4 ddrake]:\n> Replying to [comment:2 drkirkby]:\n> > I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line\n> > \n> > \n> > ```\n> > \trm -rf spkg/installed/*\n> > ```\n> > \n> > can actually be removed, as your \n> > \n> > \n> > ```\n> > \trm -rf spkg/installed\n> > ```\n> > \n> > will do it, but it does not make much difference.\n\n> \n> I think those actually are different because of the trailing slash -- if we do\n> \n> ```\n> rm -rf spkg/installed*\n> ```\n> I think that will get everything, right? If so, I can change the patch.\n\n\nThe trailing slash should make no difference\n\n```\nrm -rf spkg/installed\n```\n\nwill remove the directory spkg/installed and of course anything in any subdirectory of spkg/installed. \n\nIn contrast\n\n```\nrm -rf spkg/installed*\n```\n\nwould remove anything starting with spkg/installed, such as \n\n```\nspkg/installeda\nspkg/installedb\nspkg/installedc\nspkg/installed-but-do-not-delete-this-directory\n```\n \nI have removed the 'beginner' tag. \n\nDave",
     "created_at": "2010-06-01T22:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -260,44 +253,44 @@ Replying to [comment:4 ddrake]:
 > Replying to [comment:2 drkirkby]:
 > > I stuck 'beginner' since the change to makefile was trivial, but I do take your point that it is a bit different to most other changes in Sage. The line
 > > 
-> > {{{
+> > 
+> > ```
 > > 	rm -rf spkg/installed/*
-> > }}}
+> > ```
 > > 
 > > can actually be removed, as your 
 > > 
-> > {{{
+> > 
+> > ```
 > > 	rm -rf spkg/installed
-> > }}}
+> > ```
 > > 
 > > will do it, but it does not make much difference.
+
 > 
 > I think those actually are different because of the trailing slash -- if we do
-> {{{
+> 
+> ```
 > rm -rf spkg/installed*
-> }}}
+> ```
 > I think that will get everything, right? If so, I can change the patch.
 
-The trailing slash should make no difference
 
+The trailing slash should make no difference
 
 ```
 rm -rf spkg/installed
 ```
 
-
 will remove the directory spkg/installed and of course anything in any subdirectory of spkg/installed. 
 
 In contrast
-
 
 ```
 rm -rf spkg/installed*
 ```
 
-
 would remove anything starting with spkg/installed, such as 
-
 
 ```
 spkg/installeda
@@ -305,7 +298,6 @@ spkg/installedb
 spkg/installedc
 spkg/installed-but-do-not-delete-this-directory
 ```
-
  
 I have removed the 'beginner' tag. 
 
@@ -412,7 +404,7 @@ Here's a new version of "makefile" along with "makefile-new.patch" which is the 
 archive/issue_comments_084192.json:
 ```json
 {
-    "body": "By the way, we shouldn't remove spkg/install, because this file is there when you first unpack the Sage tar file, and it is used when you type \"make\": when you run \"make\" from SAGE_ROOT, the following command gets executed:\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\n\nAdmittedly, I think the file spkg/install gets overwritten when the sage_scripts spkg gets installed, but if the release manager has done their job right, the new file should be identical to the old one.  Regardless, removing it will break \"make\" for Sage.",
+    "body": "By the way, we shouldn't remove spkg/install, because this file is there when you first unpack the Sage tar file, and it is used when you type \"make\": when you run \"make\" from SAGE_ROOT, the following command gets executed:\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n```\nAdmittedly, I think the file spkg/install gets overwritten when the sage_scripts spkg gets installed, but if the release manager has done their job right, the new file should be identical to the old one.  Regardless, removing it will break \"make\" for Sage.",
     "created_at": "2010-06-27T05:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -426,7 +418,6 @@ By the way, we shouldn't remove spkg/install, because this file is there when yo
 ```
 cd spkg && ./install all 2>&1 | tee -a ../install.log
 ```
-
 Admittedly, I think the file spkg/install gets overwritten when the sage_scripts spkg gets installed, but if the release manager has done their job right, the new file should be identical to the old one.  Regardless, removing it will break "make" for Sage.
 
 
@@ -494,7 +485,7 @@ I've attached a reviewer's update that also deletes `docpdf.log`.
 archive/issue_comments_084196.json:
 ```json
 {
-    "body": "Replying to [comment:9 mpatel]:\n> I've attached a reviewer's update that also deletes `docpdf.log`.\n\nThat change looks good to me.",
+    "body": "Replying to [comment:9 mpatel]:\n> I've attached a reviewer's update that also deletes `docpdf.log`.\n\n\nThat change looks good to me.",
     "created_at": "2010-07-07T05:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -505,6 +496,7 @@ archive/issue_comments_084196.json:
 
 Replying to [comment:9 mpatel]:
 > I've attached a reviewer's update that also deletes `docpdf.log`.
+
 
 That change looks good to me.
 
@@ -567,7 +559,7 @@ archive/issue_events_022261.json:
 archive/issue_comments_084199.json:
 ```json
 {
-    "body": "Replying to [comment:12 mpatel]:\n> To the release manager:  Copy just [attachment:makefile.2] to `SAGE_ROOT/`.\n\nDone, in 4.5.2.alpha1.",
+    "body": "Replying to [comment:12 mpatel]:\n> To the release manager:  Copy just [attachment:makefile.2] to `SAGE_ROOT/`.\n\n\nDone, in 4.5.2.alpha1.",
     "created_at": "2010-07-22T23:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9083",
     "type": "issue_comment",
@@ -578,6 +570,7 @@ archive/issue_comments_084199.json:
 
 Replying to [comment:12 mpatel]:
 > To the release manager:  Copy just [attachment:makefile.2] to `SAGE_ROOT/`.
+
 
 Done, in 4.5.2.alpha1.
 

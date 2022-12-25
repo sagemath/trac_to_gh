@@ -3,7 +3,7 @@
 archive/issues_007855.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\n\n```\nOn Jan 6, 1:03 am, William Stein <wst...@gmail.com> wrote:\n> Does anybody know how Google Gears or whatever does things like\n> offline gmail?\n\nFirst, skip Gears - that project fades out and will be html5. Chrome,\nFirefox and Safari are afaik nearly capable of providing these\nfeatures, or already do. Gears is just an early example that is\nsimilar to html5.\n\nOne feature is to have a database. Then, you can access tables and\nentries with (probably a bit limited?) SQL.  For the implementation,\nthere could be a table for each worksheet, or one table holding all\ncells and a n:m relationship table for worksheet:cell or something\nlike that.\n\nAnother html5 feature is to define offline resources. These are html\n(or other) files which are stored locally. They will be used for the\nstarting page and the static javascript code. Maybe it's also possible\nfor this feature to save everything as such an offline resource and no\nneed for the database mentioned above.\n\nhttp://www.w3.org/TR/offline-webapps/\nhttp://www.w3.org/TR/2009/WD-webdatabase-20091222/\nhttp://www.w3.org/TR/html5/offline.html\n\nand here i found examples:\nhttp://html5demos.com/\nespecially this file is interesting:\nhttp://html5demos.com/tweets.js\nand\nhttp://html5demos.com/offlineapp\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7855\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\n```\nOn Jan 6, 1:03 am, William Stein <wst...@gmail.com> wrote:\n> Does anybody know how Google Gears or whatever does things like\n> offline gmail?\n\nFirst, skip Gears - that project fades out and will be html5. Chrome,\nFirefox and Safari are afaik nearly capable of providing these\nfeatures, or already do. Gears is just an early example that is\nsimilar to html5.\n\nOne feature is to have a database. Then, you can access tables and\nentries with (probably a bit limited?) SQL.  For the implementation,\nthere could be a table for each worksheet, or one table holding all\ncells and a n:m relationship table for worksheet:cell or something\nlike that.\n\nAnother html5 feature is to define offline resources. These are html\n(or other) files which are stored locally. They will be used for the\nstarting page and the static javascript code. Maybe it's also possible\nfor this feature to save everything as such an offline resource and no\nneed for the database mentioned above.\n\nhttp://www.w3.org/TR/offline-webapps/\nhttp://www.w3.org/TR/2009/WD-webdatabase-20091222/\nhttp://www.w3.org/TR/html5/offline.html\n\nand here i found examples:\nhttp://html5demos.com/\nespecially this file is interesting:\nhttp://html5demos.com/tweets.js\nand\nhttp://html5demos.com/offlineapp\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/7855\n\n",
     "created_at": "2010-01-06T14:50:27Z",
     "labels": [
         "component: notebook"
@@ -18,7 +18,6 @@ archive/issues_007855.json:
 Assignee: @williamstein
 
 CC:  @jhpalmieri
-
 
 ```
 On Jan 6, 1:03 am, William Stein <wst...@gmail.com> wrote:
@@ -54,7 +53,6 @@ and
 http://html5demos.com/offlineapp
 
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/7855
 

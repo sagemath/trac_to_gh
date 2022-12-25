@@ -3,7 +3,7 @@
 archive/issues_004436.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nOn an Itanium:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\nOn an x86:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py               \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 120:\n    sage: float(f(pi))\nExpected:\n    6.1232339957367663e-16\nGot:\n    6.1230317691118863e-16\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4436\n\n",
+    "body": "Assignee: mabshoff\n\nOn an Itanium:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\nOn an x86:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py               \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 120:\n    sage: float(f(pi))\nExpected:\n    6.1232339957367663e-16\nGot:\n    6.1230317691118863e-16\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/4436\n\n",
     "created_at": "2008-11-04T13:52:39Z",
     "labels": [
         "component: doctest coverage",
@@ -38,7 +38,6 @@ Got:
     0.086589537530046959
 **********************************************************************
 ```
-
 On an x86:
 
 ```
@@ -67,7 +66,6 @@ Got:
 **********************************************************************
 ```
 
-
 Issue created by migration from https://trac.sagemath.org/ticket/4436
 
 
@@ -79,7 +77,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/4436
 archive/issue_comments_032553.json:
 ```json
 {
-    "body": "The is also an issue in a G4:\n\n```\n    sage -t  devel/sage/sage/calculus/calculus.py \n         this has been reported, but I just noticed that there is   \n\"significant bit noise\", not insignificant bit noise: \n            Expected: \n                6.1232339957367663e-16 \n            Got: \n                6.1230317691118863e-16 \n```\n",
+    "body": "The is also an issue in a G4:\n\n```\n    sage -t  devel/sage/sage/calculus/calculus.py \n         this has been reported, but I just noticed that there is   \n\"significant bit noise\", not insignificant bit noise: \n            Expected: \n                6.1232339957367663e-16 \n            Got: \n                6.1230317691118863e-16 \n```",
     "created_at": "2008-11-04T13:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4436",
     "type": "issue_comment",
@@ -99,7 +97,6 @@ The is also an issue in a G4:
             Got: 
                 6.1230317691118863e-16 
 ```
-
 
 
 

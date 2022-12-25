@@ -3,7 +3,7 @@
 archive/issues_000788.json:
 ```json
 {
-    "body": "Assignee: failure\n\nAll doctests in sage like this\n\n```\n sage: numerical thing   # random low order bits\n 1.234283409283408238 + 19190.9393*I\n```\n\nshould be changed to\n\n```\n sage: numerical thing\n 1.234283409283408... + 19190.93...*I\n```\n\nwhere the ... goes for the ambiguity in low order bits. \n\nThere are 44 such cases (at least).  See them by typing\n\n```\nsage: search_src('random low')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/788\n\n",
+    "body": "Assignee: failure\n\nAll doctests in sage like this\n\n```\n sage: numerical thing   # random low order bits\n 1.234283409283408238 + 19190.9393*I\n```\nshould be changed to\n\n```\n sage: numerical thing\n 1.234283409283408... + 19190.93...*I\n```\nwhere the ... goes for the ambiguity in low order bits. \n\nThere are 44 such cases (at least).  See them by typing\n\n```\nsage: search_src('random low')\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/788\n\n",
     "created_at": "2007-10-02T14:23:57Z",
     "labels": [
         "component: doctest coverage",
@@ -24,14 +24,12 @@ All doctests in sage like this
  sage: numerical thing   # random low order bits
  1.234283409283408238 + 19190.9393*I
 ```
-
 should be changed to
 
 ```
  sage: numerical thing
  1.234283409283408... + 19190.93...*I
 ```
-
 where the ... goes for the ambiguity in low order bits. 
 
 There are 44 such cases (at least).  See them by typing
@@ -39,7 +37,6 @@ There are 44 such cases (at least).  See them by typing
 ```
 sage: search_src('random low')
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/788
 
@@ -163,7 +160,7 @@ Changing status from assigned to new.
 archive/issue_comments_004724.json:
 ```json
 {
-    "body": "This patch needs to be tested on a lot of machines with either sage -testall or\n\n\n```\nsage -t sage/calculus/calculus.py sage/calculus/functional.py sage/calculus/wester.py sage/graphs/graph.py sage/gsl/dft.py sage/matrix/matrix_complex_double_dense.pyx sage/matrix/matrix_real_double_dense.pyx sage/modular/modform/numerical.py sage/modules/real_double_vector.pyx sage/rings/number_field/number_field.py sage/rings/number_field/totallyreal_data.pyx sage/rings/polynomial/polynomial_element.pyx sage/rings/real_double.pyx sage/schemes/elliptic_curves/sha_tate.py\n```\n\n\nwhich tests only the modified files.\n\nDo not mark as positive unless there is about 3 different architectures tested ({x86, ppc, sparc} x {32-bit, 64-bit})\n\nPlease report on what architecture you did the test.",
+    "body": "This patch needs to be tested on a lot of machines with either sage -testall or\n\n```\nsage -t sage/calculus/calculus.py sage/calculus/functional.py sage/calculus/wester.py sage/graphs/graph.py sage/gsl/dft.py sage/matrix/matrix_complex_double_dense.pyx sage/matrix/matrix_real_double_dense.pyx sage/modular/modform/numerical.py sage/modules/real_double_vector.pyx sage/rings/number_field/number_field.py sage/rings/number_field/totallyreal_data.pyx sage/rings/polynomial/polynomial_element.pyx sage/rings/real_double.pyx sage/schemes/elliptic_curves/sha_tate.py\n```\n\nwhich tests only the modified files.\n\nDo not mark as positive unless there is about 3 different architectures tested ({x86, ppc, sparc} x {32-bit, 64-bit})\n\nPlease report on what architecture you did the test.",
     "created_at": "2008-10-24T05:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/788",
     "type": "issue_comment",
@@ -174,11 +171,9 @@ archive/issue_comments_004724.json:
 
 This patch needs to be tested on a lot of machines with either sage -testall or
 
-
 ```
 sage -t sage/calculus/calculus.py sage/calculus/functional.py sage/calculus/wester.py sage/graphs/graph.py sage/gsl/dft.py sage/matrix/matrix_complex_double_dense.pyx sage/matrix/matrix_real_double_dense.pyx sage/modular/modform/numerical.py sage/modules/real_double_vector.pyx sage/rings/number_field/number_field.py sage/rings/number_field/totallyreal_data.pyx sage/rings/polynomial/polynomial_element.pyx sage/rings/real_double.pyx sage/schemes/elliptic_curves/sha_tate.py
 ```
-
 
 which tests only the modified files.
 
@@ -193,7 +188,7 @@ Please report on what architecture you did the test.
 archive/issue_comments_004725.json:
 ```json
 {
-    "body": "Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by @dandrake created at 2008-10-24 05:57:02\n\nThe patches apply, and everything works except for one doctest:\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx**********************************************************************\nFile \"/opt/sage-3.2.alpha0/tmp/polynomial_element.py\", line 1940:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00000621124 + 1.00000779481*I) * (1.0*x - 1.00000364483 + 0.999990723518*I) * (1.0*x - 0.99999014393 + 1.00000148167*I) * (1.0*x + 0.99999217079 - 1.00000864146*I) * (1.0*x + 0.999996430878 - 0.999988898998*I) * (1.0*x + 1.00001139833 - 1.00000245954*I)\n**********************************************************************\n1 items had failures:\n   1 of  74 in __main__.example_46\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.2.alpha0/tmp/.doctest_polynomial_element.py\n\t [6.7 s]\n```\n\nThis is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails every time, and no other test does. It looks like the `0.999989` in the second factor should be `0.0.99999`.",
+    "body": "Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by @dandrake created at 2008-10-24 05:57:02\n\nThe patches apply, and everything works except for one doctest:\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx**********************************************************************\nFile \"/opt/sage-3.2.alpha0/tmp/polynomial_element.py\", line 1940:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00000621124 + 1.00000779481*I) * (1.0*x - 1.00000364483 + 0.999990723518*I) * (1.0*x - 0.99999014393 + 1.00000148167*I) * (1.0*x + 0.99999217079 - 1.00000864146*I) * (1.0*x + 0.999996430878 - 0.999988898998*I) * (1.0*x + 1.00001139833 - 1.00000245954*I)\n**********************************************************************\n1 items had failures:\n   1 of  74 in __main__.example_46\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.2.alpha0/tmp/.doctest_polynomial_element.py\n\t [6.7 s]\n```\nThis is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails every time, and no other test does. It looks like the `0.999989` in the second factor should be `0.0.99999`.",
     "created_at": "2008-10-24T05:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/788",
     "type": "issue_comment",
@@ -221,7 +216,6 @@ Got:
 For whitespace errors, see the file /opt/sage-3.2.alpha0/tmp/.doctest_polynomial_element.py
 	 [6.7 s]
 ```
-
 This is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails every time, and no other test does. It looks like the `0.999989` in the second factor should be `0.0.99999`.
 
 
@@ -231,7 +225,7 @@ This is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails 
 archive/issue_comments_004726.json:
 ```json
 {
-    "body": "Replying to [comment:3 ddrake]:\nI applied the patches on an Intel Core 2 Duo OS X machine (10.5) and got the same failure in polynomial_element:\n\n```\nFile \"/Applications/sage/tmp/polynomial_element.py\", line 1947:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00001180498 + 0.999999639235*I) * (1.0*x - 0.999994409957 + 1.00001040378*I) * (1.0*x - 0.999993785062 + 0.999989956987*I) * (1.0*x + 0.999991652054 - 1.00000998012*I) * (1.0*x + 0.999995530902 - 0.999987780431*I) * (1.0*x + 1.00001281704 - 1.00000223945*I)\n**********************************************************************\n```\n\n(There were other failures as well, but (1) the new files were compiled with gcc 4.01, a known buggy compiler, and (2) the first patch didn't apply cleanly against 3.1.2, so until we hear otherwise, we should perhaps blame me and my laptop and not the doctests.)",
+    "body": "Replying to [comment:3 ddrake]:\nI applied the patches on an Intel Core 2 Duo OS X machine (10.5) and got the same failure in polynomial_element:\n\n```\nFile \"/Applications/sage/tmp/polynomial_element.py\", line 1947:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00001180498 + 0.999999639235*I) * (1.0*x - 0.999994409957 + 1.00001040378*I) * (1.0*x - 0.999993785062 + 0.999989956987*I) * (1.0*x + 0.999991652054 - 1.00000998012*I) * (1.0*x + 0.999995530902 - 0.999987780431*I) * (1.0*x + 1.00001281704 - 1.00000223945*I)\n**********************************************************************\n```\n(There were other failures as well, but (1) the new files were compiled with gcc 4.01, a known buggy compiler, and (2) the first patch didn't apply cleanly against 3.1.2, so until we hear otherwise, we should perhaps blame me and my laptop and not the doctests.)",
     "created_at": "2008-10-25T01:26:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/788",
     "type": "issue_comment",
@@ -252,7 +246,6 @@ Got:
     (1.0*x - 1.00001180498 + 0.999999639235*I) * (1.0*x - 0.999994409957 + 1.00001040378*I) * (1.0*x - 0.999993785062 + 0.999989956987*I) * (1.0*x + 0.999991652054 - 1.00000998012*I) * (1.0*x + 0.999995530902 - 0.999987780431*I) * (1.0*x + 1.00001281704 - 1.00000223945*I)
 **********************************************************************
 ```
-
 (There were other failures as well, but (1) the new files were compiled with gcc 4.01, a known buggy compiler, and (2) the first patch didn't apply cleanly against 3.1.2, so until we hear otherwise, we should perhaps blame me and my laptop and not the doctests.)
 
 

@@ -3,7 +3,7 @@
 archive/issues_000598.json:
 ```json
 {
-    "body": "Assignee: somebody\n\n\n```\nOn 9/5/07, Joel B. Mohler <joel@kiwistrawberry.us> wrote:\n\\> Yes, so I found FreeMonoid after sending my first e-mail and was testing it\n> out.  I think I may have found something that is not implemented:\n> \n> sage: a=FreeMonoid(1,'a').0\n> sage: a*a\n> a^2\n> sage: a.substitute(5)\n> a  # should be 5?\n> sage: a.substitute(a=5)\n> a  # should be 5?\n> \n> I would have expected those last two results to be 5 -- am I missing\n> something? \n\nThe whole \"substitute\" architecture was implemented in SAGE\nlong after monoids were implemented.  So you'll have to implement\nmonoid substitution. \n\n> I guess substituting isn't an entirely common operation for free\n> monoids, but it seems to be a sensibly defined operation.  Then again, maybe\n> not:\n> \n> sage: M.<x,y> = FreeMonoid(2)\n> sage: (x*y).substitute(x=1)\n> x*y  # I would think that this is 1*y\n> \n\n\n\n> I find that result unsatisfactory as well, but I sure don't have a good idea\n> about what ring (?) the result '1*y' would be a part of.\n\nJust do the arithmetic.    All monoids have a 1 by definition, so 1*y is just \"y\"\nin that monoid.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/598\n\n",
+    "body": "Assignee: somebody\n\n```\nOn 9/5/07, Joel B. Mohler <joel@kiwistrawberry.us> wrote:\n\\> Yes, so I found FreeMonoid after sending my first e-mail and was testing it\n> out.  I think I may have found something that is not implemented:\n> \n> sage: a=FreeMonoid(1,'a').0\n> sage: a*a\n> a^2\n> sage: a.substitute(5)\n> a  # should be 5?\n> sage: a.substitute(a=5)\n> a  # should be 5?\n> \n> I would have expected those last two results to be 5 -- am I missing\n> something? \n\nThe whole \"substitute\" architecture was implemented in SAGE\nlong after monoids were implemented.  So you'll have to implement\nmonoid substitution. \n\n> I guess substituting isn't an entirely common operation for free\n> monoids, but it seems to be a sensibly defined operation.  Then again, maybe\n> not:\n> \n> sage: M.<x,y> = FreeMonoid(2)\n> sage: (x*y).substitute(x=1)\n> x*y  # I would think that this is 1*y\n> \n\n\n\n> I find that result unsatisfactory as well, but I sure don't have a good idea\n> about what ring (?) the result '1*y' would be a part of.\n\nJust do the arithmetic.    All monoids have a 1 by definition, so 1*y is just \"y\"\nin that monoid.\n\nWilliam\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/598\n\n",
     "created_at": "2007-09-06T00:56:30Z",
     "labels": [
         "component: basic arithmetic",
@@ -17,7 +17,6 @@ archive/issues_000598.json:
 }
 ```
 Assignee: somebody
-
 
 ```
 On 9/5/07, Joel B. Mohler <joel@kiwistrawberry.us> wrote:
@@ -58,7 +57,6 @@ in that monoid.
 
 William
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/598
 

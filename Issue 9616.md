@@ -3,7 +3,7 @@
 archive/issues_009616.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nKeywords: fork nfs segfault\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\n\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @jhpalmieri @kcrisman @malb mvngu simonking @williamstein\n\nKeywords: fork nfs segfault\n\nIn 4.5.2.alpha1, we have for many people:\n\n```\nsage -t -long \"devel/sage/sage/parallel/decorate.py\"        \n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 300:\n    sage: g()\nExpected:\n    '10'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_0/.nfs0000000000591f8700069d5c'\n    '10'\n**********************************************************************\nFile \"/mnt/usb1/scratch/drake/release/tmp/sage-4.5.2.alpha1/devel/sage/sage/parallel/decorate.py\", line 311:\n    sage: g()\nExpected:\n    'a'\nGot:\n    [Errno 16] Device or resource busy: '/home/drake/.sage/temp/sage.math.washington.edu/30336/dir_1/.nfs0000000000591f8d00069d5d'\n    'a'\n**********************************************************************\n```\nand so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.\n\nThis seems related to #9501.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9616\n\n",
     "created_at": "2010-07-28T02:51:53Z",
     "labels": [
         "component: doctest coverage",
@@ -56,7 +56,6 @@ Got:
     'a'
 **********************************************************************
 ```
-
 and so on. See https://groups.google.com/group/sage-release/msg/88b030aa31926459 and that thread.
 
 This seems related to #9501.
@@ -72,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9616
 archive/issue_comments_092974.json:
 ```json
 {
-    "body": "For what they're worth, tests on sage.math with variations on\n\n```sh\n#!/bin/bash                                                                     \n\n# This does not keep overall statistics:                                        \n# env SAGE_TEST_GLOBAL_ITER=100 ./sage -tp 1 -long /path/to/file.py                     \n\nSAGE_TEST=\"./sage -t -long\"\n#SAGE_TEST=\"env DOT_SAGE=/dev/shm/$USER/.sage $SAGE_TEST\"                       \n#SAGE_TEST=\"env DOT_SAGE=/scratch/$USER/.sage $SAGE_TEST\"                       \nRUNS=100\nfor I in `seq 1 $RUNS`;\ndo\n    $SAGE_TEST devel/sage/sage/parallel/decorate.py\n    CODE[$I]=$?\n\n    echo \"Results after $I of $RUNS runs:\"\n    echo \"${CODE[*]}\" | tr ' ' '\\n' | sort -n | uniq -c\ndone\n```\n\nend with\n\n```\nResults after 100 of 100 runs:                                          \n     1 0                                                                      \n    99 128                                                                    \nResults after 100 of 100 runs:                                       \n   100 0                                                                      \nResults after 100 of 100 runs:                                       \n   100 0                                                                      \n```\n\nfor the default DOT_SAGE, `/scratch/$USER/.sage`, and `/dev/shm/$USER/.sage`, respectively.",
+    "body": "For what they're worth, tests on sage.math with variations on\n\n```sh\n#!/bin/bash                                                                     \n\n# This does not keep overall statistics:                                        \n# env SAGE_TEST_GLOBAL_ITER=100 ./sage -tp 1 -long /path/to/file.py                     \n\nSAGE_TEST=\"./sage -t -long\"\n#SAGE_TEST=\"env DOT_SAGE=/dev/shm/$USER/.sage $SAGE_TEST\"                       \n#SAGE_TEST=\"env DOT_SAGE=/scratch/$USER/.sage $SAGE_TEST\"                       \nRUNS=100\nfor I in `seq 1 $RUNS`;\ndo\n    $SAGE_TEST devel/sage/sage/parallel/decorate.py\n    CODE[$I]=$?\n\n    echo \"Results after $I of $RUNS runs:\"\n    echo \"${CODE[*]}\" | tr ' ' '\\n' | sort -n | uniq -c\ndone\n```\nend with\n\n```\nResults after 100 of 100 runs:                                          \n     1 0                                                                      \n    99 128                                                                    \nResults after 100 of 100 runs:                                       \n   100 0                                                                      \nResults after 100 of 100 runs:                                       \n   100 0                                                                      \n```\nfor the default DOT_SAGE, `/scratch/$USER/.sage`, and `/dev/shm/$USER/.sage`, respectively.",
     "created_at": "2010-07-28T05:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -102,7 +101,6 @@ do
     echo "${CODE[*]}" | tr ' ' '\n' | sort -n | uniq -c
 done
 ```
-
 end with
 
 ```
@@ -114,7 +112,6 @@ Results after 100 of 100 runs:
 Results after 100 of 100 runs:                                       
    100 0                                                                      
 ```
-
 for the default DOT_SAGE, `/scratch/$USER/.sage`, and `/dev/shm/$USER/.sage`, respectively.
 
 
@@ -142,7 +139,7 @@ For now, should we tag the relevant tests with `# not tested` or [backout the wh
 archive/issue_comments_092976.json:
 ```json
 {
-    "body": "By the way, here are the latest doctesting exist codes (cf. #9243), from the top of `sage-doctest`:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 4: doctest process was terminated by a signal\n# 8: the doctesting framework raised an exception\n# 16: script called with bad options\n# 32: (used internally in sage-ptest)\n# 64: time out\n# 128: failed doctests\n```\n",
+    "body": "By the way, here are the latest doctesting exist codes (cf. #9243), from the top of `sage-doctest`:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 4: doctest process was terminated by a signal\n# 8: the doctesting framework raised an exception\n# 16: script called with bad options\n# 32: (used internally in sage-ptest)\n# 64: time out\n# 128: failed doctests\n```",
     "created_at": "2010-07-28T05:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -165,7 +162,6 @@ By the way, here are the latest doctesting exist codes (cf. #9243), from the top
 # 64: time out
 # 128: failed doctests
 ```
-
 
 
 
@@ -210,7 +206,7 @@ Changing keywords from "fork nfs segfault" to "fork nfs device resource busy".
 archive/issue_comments_092979.json:
 ```json
 {
-    "body": "Replying to [comment:2 mpatel]:\n> For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?\n\nIf we backout the whole patch, I have more confidence that the doctests will get fixed quickly.",
+    "body": "Replying to [comment:2 mpatel]:\n> For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?\n\n\nIf we backout the whole patch, I have more confidence that the doctests will get fixed quickly.",
     "created_at": "2010-07-28T14:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -221,6 +217,7 @@ archive/issue_comments_092979.json:
 
 Replying to [comment:2 mpatel]:
 > For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?
+
 
 If we backout the whole patch, I have more confidence that the doctests will get fixed quickly.
 
@@ -269,7 +266,7 @@ Changing status from new to needs_review.
 archive/issue_comments_092982.json:
 ```json
 {
-    "body": "Replying to [comment:5 jhpalmieri]:\n> Replying to [comment:2 mpatel]:\n> > For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?\n> \n> If we backout the whole patch, I have more confidence that the doctests will get fixed quickly.\n\nAdapting the procedure in [comment:ticket:9583:47 this comment] at #9583, I've attached a patch that undoes (or should undo) all of #9501.  If the patch gets a positive review, we can open a new ticket for re-merging #9501.",
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Replying to [comment:2 mpatel]:\n> > For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?\n\n> \n> If we backout the whole patch, I have more confidence that the doctests will get fixed quickly.\n\n\nAdapting the procedure in [comment:ticket:9583:47 this comment] at #9583, I've attached a patch that undoes (or should undo) all of #9501.  If the patch gets a positive review, we can open a new ticket for re-merging #9501.",
     "created_at": "2010-07-28T22:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -281,8 +278,10 @@ archive/issue_comments_092982.json:
 Replying to [comment:5 jhpalmieri]:
 > Replying to [comment:2 mpatel]:
 > > For now, should we tag the relevant tests with `# not tested` or [backout the whole patch](https://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/5aba6862d5c35b8c#5aba6862d5c35b8c)?  Other options?
+
 > 
 > If we backout the whole patch, I have more confidence that the doctests will get fixed quickly.
+
 
 Adapting the procedure in [comment:ticket:9583:47 this comment] at #9583, I've attached a patch that undoes (or should undo) all of #9501.  If the patch gets a positive review, we can open a new ticket for re-merging #9501.
 
@@ -333,7 +332,7 @@ Backouts only ticket-relevant parts of #9501 (subset of Mitesh's patch)
 archive/issue_comments_092985.json:
 ```json
 {
-    "body": "Replying to [comment:7 leif]:\n> (And I'm currently too (laz|bus)y to sort out the desirable parts of the original patch.)\n\nCouldn't resist though (simpler as expected).\n\nNot very tested, only successfully ran `./sage -t -long devel/sage/sage/parallel/` and rebuilt the documentation without errors or warnings.\n(Ubuntu 9.04 x86_64, Core2, gcc 4.3.3)\n\nSo now two concurrent patches to review... ;-)",
+    "body": "Replying to [comment:7 leif]:\n> (And I'm currently too (laz|bus)y to sort out the desirable parts of the original patch.)\n\n\nCouldn't resist though (simpler as expected).\n\nNot very tested, only successfully ran `./sage -t -long devel/sage/sage/parallel/` and rebuilt the documentation without errors or warnings.\n(Ubuntu 9.04 x86_64, Core2, gcc 4.3.3)\n\nSo now two concurrent patches to review... ;-)",
     "created_at": "2010-07-28T23:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -344,6 +343,7 @@ archive/issue_comments_092985.json:
 
 Replying to [comment:7 leif]:
 > (And I'm currently too (laz|bus)y to sort out the desirable parts of the original patch.)
+
 
 Couldn't resist though (simpler as expected).
 
@@ -417,7 +417,7 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_092989.json:
 ```json
 {
-    "body": "Replying to [comment:9 jhpalmieri]:\n> Since this is a rollback to a previous situation, I think this is good enough for a positive review for mpatel's patch, though.  Opinions?\n\nYou've done some good testing, and since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?), I think a positive review is warranted here.",
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Since this is a rollback to a previous situation, I think this is good enough for a positive review for mpatel's patch, though.  Opinions?\n\n\nYou've done some good testing, and since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?), I think a positive review is warranted here.",
     "created_at": "2010-07-29T00:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -429,6 +429,7 @@ archive/issue_comments_092989.json:
 Replying to [comment:9 jhpalmieri]:
 > Since this is a rollback to a previous situation, I think this is good enough for a positive review for mpatel's patch, though.  Opinions?
 
+
 You've done some good testing, and since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?), I think a positive review is warranted here.
 
 
@@ -438,7 +439,7 @@ You've done some good testing, and since the original patch was an enhancement, 
 archive/issue_comments_092990.json:
 ```json
 {
-    "body": "Replying to [comment:11 ddrake]:\n> ... since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?)\n\nWell, I pushed back in mostly fixes (and improvements) to the documentation (one might consider bugfixes, too).",
+    "body": "Replying to [comment:11 ddrake]:\n> ... since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?)\n\n\nWell, I pushed back in mostly fixes (and improvements) to the documentation (one might consider bugfixes, too).",
     "created_at": "2010-07-29T00:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -450,6 +451,7 @@ archive/issue_comments_092990.json:
 Replying to [comment:11 ddrake]:
 > ... since the original patch was an enhancement, and didn't fix any bugs or failing doctests (right?)
 
+
 Well, I pushed back in mostly fixes (and improvements) to the documentation (one might consider bugfixes, too).
 
 
@@ -459,7 +461,7 @@ Well, I pushed back in mostly fixes (and improvements) to the documentation (one
 archive/issue_comments_092991.json:
 ```json
 {
-    "body": "Besides the above mentioned, this would completely miss, too:\n\n```\n       - ``reset_interface`` -- if True (the default), all the \n         pexpect interfaces are reset in the forked off \n         subprocesses.  You definitely want this, since not doing \n         this can lead to weird issues.\n```\n",
+    "body": "Besides the above mentioned, this would completely miss, too:\n\n```\n       - ``reset_interface`` -- if True (the default), all the \n         pexpect interfaces are reset in the forked off \n         subprocesses.  You definitely want this, since not doing \n         this can lead to weird issues.\n```",
     "created_at": "2010-07-29T00:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9616",
     "type": "issue_comment",
@@ -476,7 +478,6 @@ Besides the above mentioned, this would completely miss, too:
          subprocesses.  You definitely want this, since not doing 
          this can lead to weird issues.
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008578.json:
 ```json
 {
-    "body": "Assignee: @aghitza\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f41d594281e843d9):\n\n```\nFor a finite field of, say 2^6 elements, an object representing an\nelement of such a field has a method called int_repr() that returns\nthe object's integer representation. However, if we are dealing with,\nsay GF(7^100), an object representing an element of such a field\ndoesn't have a corresponding int_repr() method. The report below\nincludes such a method, which is meant to work for a finite field of\nany order.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8578\n\n",
+    "body": "Assignee: @aghitza\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f41d594281e843d9):\n\n```\nFor a finite field of, say 2^6 elements, an object representing an\nelement of such a field has a method called int_repr() that returns\nthe object's integer representation. However, if we are dealing with,\nsay GF(7^100), an object representing an element of such a field\ndoesn't have a corresponding int_repr() method. The report below\nincludes such a method, which is meant to work for a finite field of\nany order.\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8578\n\n",
     "created_at": "2010-03-22T12:00:54Z",
     "labels": [
         "component: algebra",
@@ -29,7 +29,6 @@ doesn't have a corresponding int_repr() method. The report below
 includes such a method, which is meant to work for a finite field of
 any order.
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8578
 

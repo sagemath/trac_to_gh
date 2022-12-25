@@ -3,7 +3,7 @@
 archive/issues_008807.json:
 ```json
 {
-    "body": "Assignee: Simon King\n\nCC:  kohel @williamstein @wdjoyner @robertwb\n\nKeywords: morphisms functors categories\n\nWorking on the doc tests for sage.category at #8800, I found that support for morphisms is missing in the category framework. I think this is important, and therefore I am opening this ticket.\n\nSome thoughts on implementing support.\n\nLet f be a morphism in a category C, and let F be a functor, F.domain()==C. Then F(f) should by default try F(f.domain()).hom(f,F(f.codomain())). This relies on the call method of F(f.domain()).Hom(F.codomain()), which in turn uses _coerce_impl. I think it is there where the support should be implemented.\n\nExample:\n\nIn sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has\n\n```\n        ...\n        if x.parent() == self:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        raise TypeError\n```\n\nWhy not instead\n\n```\n        try:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        except:\n            raise TypeError\n```\n\n\nIf I do so, the following works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.hom([2*x],R)\nsage: C = Fields()\nsage: f2 = C(R).hom(f,C(R))\nsage: f2\nRing endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rational Field\n  Defn: x |--> 2*x\nsage: f2(1/x)\n1/(2*x)\n```\n\n\nIt should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8807\n\n",
+    "body": "Assignee: Simon King\n\nCC:  kohel @williamstein @wdjoyner @robertwb\n\nKeywords: morphisms functors categories\n\nWorking on the doc tests for sage.category at #8800, I found that support for morphisms is missing in the category framework. I think this is important, and therefore I am opening this ticket.\n\nSome thoughts on implementing support.\n\nLet f be a morphism in a category C, and let F be a functor, F.domain()==C. Then F(f) should by default try F(f.domain()).hom(f,F(f.codomain())). This relies on the call method of F(f.domain()).Hom(F.codomain()), which in turn uses _coerce_impl. I think it is there where the support should be implemented.\n\nExample:\n\nIn sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has\n\n```\n        ...\n        if x.parent() == self:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        raise TypeError\n```\nWhy not instead\n\n```\n        try:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        except:\n            raise TypeError\n```\n\nIf I do so, the following works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.hom([2*x],R)\nsage: C = Fields()\nsage: f2 = C(R).hom(f,C(R))\nsage: f2\nRing endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rational Field\n  Defn: x |--> 2*x\nsage: f2(1/x)\n1/(2*x)\n```\n\nIt should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8807\n\n",
     "created_at": "2010-04-28T18:17:42Z",
     "labels": [
         "component: categories"
@@ -40,7 +40,6 @@ In sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has
                 return morphism.RingHomomorphism_cover(self)
         raise TypeError
 ```
-
 Why not instead
 
 ```
@@ -52,7 +51,6 @@ Why not instead
         except:
             raise TypeError
 ```
-
 
 If I do so, the following works:
 
@@ -67,7 +65,6 @@ Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rati
 sage: f2(1/x)
 1/(2*x)
 ```
-
 
 It should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.
 
@@ -120,7 +117,7 @@ Fixing a buglet in the construction functor of Laurent Polynomial Rings. To be a
 archive/issue_comments_080674.json:
 ```json
 {
-    "body": "Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by @simon-king-jena created at 2010-04-30 14:26:01\n\nCc to the original authors.\n\nI solved the problem. Please apply both patches in order.\n\n**__New Code__**\n\nI cleaned the framework for functors. There is a generic call method that (in contrast to the old generic call method) has a return value. It relies on three methods _coerce_into_domain, _apply_functor and _apply_functor_to_morphism. The default methods are already enough for forgetful functor and most construction functors.\n\nI implemented a new class for Ring Homomorphisms that are induced by a homomorphism of the base ring. This enables the application of the construction functors for matrix and polynomial rings.\n\n**__Tests__**\n\nAll new code is tested, and I added also some doc tests for old code. This is related with #8800. However, #8800 should not be closed, because the old code is still not completely covered by tests yet.\n\nSuggestion: The further work on #8800 will build upon this ticket.\n\n**__Showcases__**\n\nWe start with a homomorphism of polynomial rings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<z> = QQ[]\nsage: f = R.hom([2*z,3*z],S)\n```\n\n\nNow we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:\n\n```\nsage: PR.<t> = R[]\nsage: PS = S['t']\nsage: Pf = PR.hom(f,PS)\nsage: Pf\nRing morphism:\n  From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in z over Rational Field\n          Defn: x |--> 2*z\n                y |--> 3*z\nsage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x\nsage: Pf(p)\n(-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z\n```\n\n\nThe construction of induced homomorphisms is recursive, and so we have:\n\n```\nsage: MPR = MatrixSpace(PR, 2)\nsage: MPS = MatrixSpace(PS, 2)\nsage: M = MPR([(- x + y)*t^2 + 58*t - 3*x^2 + x*y, (- 1/7*x*y - 1/40*x)*t^2 + (5*x^2 + y^2)*t + 2*y, (- 1/3*y + 1)*t^2 + 1/3*x*y + y^2 + 5/2*y + 1/4, (x + 6*y + 1)*t^2])\nsage: MPf = MPR.hom(f,MPS); MPf\nRing morphism:\n  From: Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n          Defn: Induced from base ring by\n                Ring morphism:\n                  From: Multivariate Polynomial Ring in x, y over Rational Field\n                  To:   Univariate Polynomial Ring in z over Rational Field\n                  Defn: x |--> 2*z\n                        y |--> 3*z\nsage: MPf(M)\n[                    z*t^2 + 58*t - 6*z^2 (-6/7*z^2 - 1/20*z)*t^2 + 29*z^2*t + 6*z]\n[    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]\n```\n\n\nAnd this can also be achieved using construction functors:\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0], QQ.construction()[0],ZZ['y'].construction()[0])\nsage: R.<a,b> = QQ[]\nsage: f = R.hom([a+b, a-b])\nsage: F(f) # indirect doctest\nRing endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: Induced from base ring by\n        Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n          Defn: Induced from base ring by\n                Ring endomorphism of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                  Defn: Induced from base ring by\n                        Ring endomorphism of Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                          Defn: a |--> a + b\n                                b |--> a - b\n```\n\n\nWith the second patch, Laurent polynomial rings work as well:\n\n```\nsage: P = LaurentPolynomialRing(QQ,'t')\nsage: F = P.construction()[0]\nsage: X.<t> = LaurentPolynomialRing(R)\nsage: p = (a+b)*t^-1 + (a^2)*t + b\nsage: F(f)(p)\n(a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1\n```\n",
+    "body": "Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by @simon-king-jena created at 2010-04-30 14:26:01\n\nCc to the original authors.\n\nI solved the problem. Please apply both patches in order.\n\n**__New Code__**\n\nI cleaned the framework for functors. There is a generic call method that (in contrast to the old generic call method) has a return value. It relies on three methods _coerce_into_domain, _apply_functor and _apply_functor_to_morphism. The default methods are already enough for forgetful functor and most construction functors.\n\nI implemented a new class for Ring Homomorphisms that are induced by a homomorphism of the base ring. This enables the application of the construction functors for matrix and polynomial rings.\n\n**__Tests__**\n\nAll new code is tested, and I added also some doc tests for old code. This is related with #8800. However, #8800 should not be closed, because the old code is still not completely covered by tests yet.\n\nSuggestion: The further work on #8800 will build upon this ticket.\n\n**__Showcases__**\n\nWe start with a homomorphism of polynomial rings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<z> = QQ[]\nsage: f = R.hom([2*z,3*z],S)\n```\n\nNow we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:\n\n```\nsage: PR.<t> = R[]\nsage: PS = S['t']\nsage: Pf = PR.hom(f,PS)\nsage: Pf\nRing morphism:\n  From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in z over Rational Field\n          Defn: x |--> 2*z\n                y |--> 3*z\nsage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x\nsage: Pf(p)\n(-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z\n```\n\nThe construction of induced homomorphisms is recursive, and so we have:\n\n```\nsage: MPR = MatrixSpace(PR, 2)\nsage: MPS = MatrixSpace(PS, 2)\nsage: M = MPR([(- x + y)*t^2 + 58*t - 3*x^2 + x*y, (- 1/7*x*y - 1/40*x)*t^2 + (5*x^2 + y^2)*t + 2*y, (- 1/3*y + 1)*t^2 + 1/3*x*y + y^2 + 5/2*y + 1/4, (x + 6*y + 1)*t^2])\nsage: MPf = MPR.hom(f,MPS); MPf\nRing morphism:\n  From: Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n          Defn: Induced from base ring by\n                Ring morphism:\n                  From: Multivariate Polynomial Ring in x, y over Rational Field\n                  To:   Univariate Polynomial Ring in z over Rational Field\n                  Defn: x |--> 2*z\n                        y |--> 3*z\nsage: MPf(M)\n[                    z*t^2 + 58*t - 6*z^2 (-6/7*z^2 - 1/20*z)*t^2 + 29*z^2*t + 6*z]\n[    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]\n```\n\nAnd this can also be achieved using construction functors:\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0], QQ.construction()[0],ZZ['y'].construction()[0])\nsage: R.<a,b> = QQ[]\nsage: f = R.hom([a+b, a-b])\nsage: F(f) # indirect doctest\nRing endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: Induced from base ring by\n        Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n          Defn: Induced from base ring by\n                Ring endomorphism of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                  Defn: Induced from base ring by\n                        Ring endomorphism of Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                          Defn: a |--> a + b\n                                b |--> a - b\n```\n\nWith the second patch, Laurent polynomial rings work as well:\n\n```\nsage: P = LaurentPolynomialRing(QQ,'t')\nsage: F = P.construction()[0]\nsage: X.<t> = LaurentPolynomialRing(R)\nsage: p = (a+b)*t^-1 + (a^2)*t + b\nsage: F(f)(p)\n(a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1\n```",
     "created_at": "2010-04-30T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -157,7 +154,6 @@ sage: S.<z> = QQ[]
 sage: f = R.hom([2*z,3*z],S)
 ```
 
-
 Now we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:
 
 ```
@@ -178,7 +174,6 @@ sage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x
 sage: Pf(p)
 (-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z
 ```
-
 
 The construction of induced homomorphisms is recursive, and so we have:
 
@@ -205,7 +200,6 @@ sage: MPf(M)
 [    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]
 ```
 
-
 And this can also be achieved using construction functors:
 
 ```
@@ -225,7 +219,6 @@ Ring endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univ
                                 b |--> a - b
 ```
 
-
 With the second patch, Laurent polynomial rings work as well:
 
 ```
@@ -236,7 +229,6 @@ sage: p = (a+b)*t^-1 + (a^2)*t + b
 sage: F(f)(p)
 (a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1
 ```
-
 
 
 
@@ -281,7 +273,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080677.json:
 ```json
 {
-    "body": "I applied this patch to sage-4.5, and ran \"make ptestlong\", and their are failures all over the place, e.g.,\n\n```\n\nwstein@sage:~/build/sage-4.5.alphastein1$ ./sage -t  -long devel/sage/sage/matrix/misc.pyx\nsage -t -long \"devel/sage/sage/matrix/misc.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/matrix/misc.pyx\", line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        B = ((matrix(ZZ, Integer(3),Integer(4), [Integer(1),Integer(2),Integer(3),-Integer(4),Integer(7),Integer(2),Integer(18),Integer(3),Inte\nger(4),Integer(3),Integer(4),Integer(5)])/Integer(3))%Integer(500)).change_ring(ZZ)###line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)\n    TypeError: unsupported operand parent(s) for '/': 'Full MatrixSpace of 3 by 4 dense matrices over Integer Ring' and 'Integer Ring'\n...\n```\n",
+    "body": "I applied this patch to sage-4.5, and ran \"make ptestlong\", and their are failures all over the place, e.g.,\n\n```\n\nwstein@sage:~/build/sage-4.5.alphastein1$ ./sage -t  -long devel/sage/sage/matrix/misc.pyx\nsage -t -long \"devel/sage/sage/matrix/misc.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/matrix/misc.pyx\", line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        B = ((matrix(ZZ, Integer(3),Integer(4), [Integer(1),Integer(2),Integer(3),-Integer(4),Integer(7),Integer(2),Integer(18),Integer(3),Inte\nger(4),Integer(3),Integer(4),Integer(5)])/Integer(3))%Integer(500)).change_ring(ZZ)###line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)\n    TypeError: unsupported operand parent(s) for '/': 'Full MatrixSpace of 3 by 4 dense matrices over Integer Ring' and 'Integer Ring'\n...\n```",
     "created_at": "2010-07-20T14:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -319,7 +311,6 @@ ger(4),Integer(3),Integer(4),Integer(5)])/Integer(3))%Integer(500)).change_ring(
 
 
 
-
 ---
 
 archive/issue_comments_080678.json:
@@ -345,7 +336,7 @@ thanks for looking at this! Indeed it has been a long time since I wrote it, so 
 archive/issue_comments_080679.json:
 ```json
 {
-    "body": "It seems that my patch crashed the coercion system. Funny coincidence that I held a tutorial on coercion today...\n\n```\nsage: cm = get_coercion_model()\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: cm.explain(M,QQ)\nWill try _r_action and _l_action\nUnknown result parent.\n```\n\n\nCheers,\nSimon",
+    "body": "It seems that my patch crashed the coercion system. Funny coincidence that I held a tutorial on coercion today...\n\n```\nsage: cm = get_coercion_model()\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: cm.explain(M,QQ)\nWill try _r_action and _l_action\nUnknown result parent.\n```\n\nCheers,\nSimon",
     "created_at": "2010-07-20T21:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -364,7 +355,6 @@ Will try _r_action and _l_action
 Unknown result parent.
 ```
 
-
 Cheers,
 Simon
 
@@ -375,7 +365,7 @@ Simon
 archive/issue_comments_080680.json:
 ```json
 {
-    "body": "And there it is:\n\n```\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: mf = M.construction()[0]\nsage: mf.domain()\nCategory of rings\nsage: mf.codomain()\nCategory of rings\nsage: M in Rings()\nFalse\n```\n\n\nSo, the problem is that I gave the matrix constructor got a wrong codomain, namely the category `Rings()` --- and my generic `__call__` method checks whether the output belongs to the intended category. What should be the right choice?\n\n```\nsage: M.categories()\n[Category of modules over Integer Ring, Category of bimodules over Integer Ring on the left and Integer Ring on the right, Category of left modules over Integer Ring, Category of right modules over Integer Ring, Category of commutative additive groups, Category of commutative additive monoids, Category of commutative additive semigroups, Category of additive magmas, Category of sets, Category of sets with partial maps, Category of objects]\n```\n\nSince the construction functor can not know about the base ring, I guess `CommutativeAdditiveGroups()` would be the way to go.",
+    "body": "And there it is:\n\n```\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: mf = M.construction()[0]\nsage: mf.domain()\nCategory of rings\nsage: mf.codomain()\nCategory of rings\nsage: M in Rings()\nFalse\n```\n\nSo, the problem is that I gave the matrix constructor got a wrong codomain, namely the category `Rings()` --- and my generic `__call__` method checks whether the output belongs to the intended category. What should be the right choice?\n\n```\nsage: M.categories()\n[Category of modules over Integer Ring, Category of bimodules over Integer Ring on the left and Integer Ring on the right, Category of left modules over Integer Ring, Category of right modules over Integer Ring, Category of commutative additive groups, Category of commutative additive monoids, Category of commutative additive semigroups, Category of additive magmas, Category of sets, Category of sets with partial maps, Category of objects]\n```\nSince the construction functor can not know about the base ring, I guess `CommutativeAdditiveGroups()` would be the way to go.",
     "created_at": "2010-07-20T21:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -397,14 +387,12 @@ sage: M in Rings()
 False
 ```
 
-
 So, the problem is that I gave the matrix constructor got a wrong codomain, namely the category `Rings()` --- and my generic `__call__` method checks whether the output belongs to the intended category. What should be the right choice?
 
 ```
 sage: M.categories()
 [Category of modules over Integer Ring, Category of bimodules over Integer Ring on the left and Integer Ring on the right, Category of left modules over Integer Ring, Category of right modules over Integer Ring, Category of commutative additive groups, Category of commutative additive monoids, Category of commutative additive semigroups, Category of additive magmas, Category of sets, Category of sets with partial maps, Category of objects]
 ```
-
 Since the construction functor can not know about the base ring, I guess `CommutativeAdditiveGroups()` would be the way to go.
 
 
@@ -505,7 +493,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080684.json:
 ```json
 {
-    "body": "Replying to [comment:7 SimonKing]:\n> One remark concerning doctests. The genuinely new code (induced morphisms) is doctested. In my patch, I however did not add tests for sage.categories.pushout. This is done in #8800. I hope that the ticket from #8800 still applies with the new patch that I posted here.\n\nUnfortunately, #8800 does not apply with the new patch from here. \n\nSuggestion: I'll rebase #8800 relative to the new patch here. So, #8807 would be reviewed first, and the next to review would be #8800, which contains many doctests. I hope this is acceptable.",
+    "body": "Replying to [comment:7 SimonKing]:\n> One remark concerning doctests. The genuinely new code (induced morphisms) is doctested. In my patch, I however did not add tests for sage.categories.pushout. This is done in #8800. I hope that the ticket from #8800 still applies with the new patch that I posted here.\n\n\nUnfortunately, #8800 does not apply with the new patch from here. \n\nSuggestion: I'll rebase #8800 relative to the new patch here. So, #8807 would be reviewed first, and the next to review would be #8800, which contains many doctests. I hope this is acceptable.",
     "created_at": "2010-07-21T08:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -516,6 +504,7 @@ archive/issue_comments_080684.json:
 
 Replying to [comment:7 SimonKing]:
 > One remark concerning doctests. The genuinely new code (induced morphisms) is doctested. In my patch, I however did not add tests for sage.categories.pushout. This is done in #8800. I hope that the ticket from #8800 still applies with the new patch that I posted here.
+
 
 Unfortunately, #8800 does not apply with the new patch from here. 
 
@@ -576,7 +565,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080687.json:
 ```json
 {
-    "body": "Hi John!\n\nReplying to [comment:9 cremona]:\n> Review:\n> \n> Just a few trivial comments, after which I could give this a positive review.  The patch applies fine to 4.6.rc0 (though the related one at #8800 does not then apply cleanly) and all tests pass.  There is no time regression (long tests took 667s before and 642s after, using -tp 20).\n\nThat's good news! As my patch only adds functionality, without changing the method resolution order of existing classes and without replacing existing algorithms, it is no surprise that the speed remains fine.\n\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\nYou know, there are three types of mathematicians: Some can count, and others can't.\n\nBut isn't it pythonesque? Recall the Holy Hand Grenade of Antioch from the movie \"Monty Python and the Holy Grail\"... :)\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\nRight.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\nOK, but I hope such example needs to be constructed on purpose. It used to happen with the matrix constructor, for example: The functor was supposed to take a ring R into the ring(!!) of m by n matrices over R. But if the matrix constructor does not produce square matrices, the result is of course not a ring. This bug existed before and is fixed in my patch (now, the functor's codomain is only expected to be the category of rings if m equals n). However, this is exactly the situation that is covered by the `TypeError`.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\nThis wasn't my idea. `CompositConstructionFunctor` existed earlier (see pushout.py).\n\nAs I mentioned on the other ticket, I will be unable to do any programming work at least until next week. But it should be one of the first things I'll do once I'm settled in Jena.\n\nBest regards,\n\nSimon",
+    "body": "Hi John!\n\nReplying to [comment:9 cremona]:\n> Review:\n> \n> Just a few trivial comments, after which I could give this a positive review.  The patch applies fine to 4.6.rc0 (though the related one at #8800 does not then apply cleanly) and all tests pass.  There is no time regression (long tests took 667s before and 642s after, using -tp 20).\n\n\nThat's good news! As my patch only adds functionality, without changing the method resolution order of existing classes and without replacing existing algorithms, it is no surprise that the speed remains fine.\n\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\n\nYou know, there are three types of mathematicians: Some can count, and others can't.\n\nBut isn't it pythonesque? Recall the Holy Hand Grenade of Antioch from the movie \"Monty Python and the Holy Grail\"... :)\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\n\nRight.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\n\nOK, but I hope such example needs to be constructed on purpose. It used to happen with the matrix constructor, for example: The functor was supposed to take a ring R into the ring(!!) of m by n matrices over R. But if the matrix constructor does not produce square matrices, the result is of course not a ring. This bug existed before and is fixed in my patch (now, the functor's codomain is only expected to be the category of rings if m equals n). However, this is exactly the situation that is covered by the `TypeError`.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\n\nThis wasn't my idea. `CompositConstructionFunctor` existed earlier (see pushout.py).\n\nAs I mentioned on the other ticket, I will be unable to do any programming work at least until next week. But it should be one of the first things I'll do once I'm settled in Jena.\n\nBest regards,\n\nSimon",
     "created_at": "2010-10-26T22:31:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -592,11 +581,13 @@ Replying to [comment:9 cremona]:
 > 
 > Just a few trivial comments, after which I could give this a positive review.  The patch applies fine to 4.6.rc0 (though the related one at #8800 does not then apply cleanly) and all tests pass.  There is no time regression (long tests took 667s before and 642s after, using -tp 20).
 
+
 That's good news! As my patch only adds functionality, without changing the method resolution order of existing classes and without replacing existing algorithms, it is no surprise that the speed remains fine.
 
 > Here are the minor issues in docstrings:
 > 
 > line 44: "one should implement two methods" -- do you mean three?
+
 
 You know, there are three types of mathematicians: Some can count, and others can't.
 
@@ -604,13 +595,16 @@ But isn't it pythonesque? Recall the Holy Hand Grenade of Antioch from the movie
 
 > _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be "Apply the functor to a morphism between ... something" 
 
+
 Right.
 
 > In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` ""%s is ill-defined, ..."
 
+
 OK, but I hope such example needs to be constructed on purpose. It used to happen with the matrix constructor, for example: The functor was supposed to take a ring R into the ring(!!) of m by n matrices over R. But if the matrix constructor does not produce square matrices, the result is of course not a ring. This bug existed before and is fixed in my patch (now, the functor's codomain is only expected to be the category of rings if m equals n). However, this is exactly the situation that is covered by the `TypeError`.
 
 > Is the spelling of "`CompositConstructionFunctor`" intentional?  Should it not be "`CompositeConstructionFunctor`"?
+
 
 This wasn't my idea. `CompositConstructionFunctor` existed earlier (see pushout.py).
 
@@ -627,7 +621,7 @@ Simon
 archive/issue_comments_080688.json:
 ```json
 {
-    "body": "Replying to [comment:9 cremona]:\n> ...\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\nCorrected.\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\nCorrected.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\nDone. I define a class that behaves like the matrix constructor used to.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\nThat spelling is old, so, I won't touch it.\n\nI am running `sage -tp 3 sage` right now, but I am replacing the old patch in a minute.\n\nCheers,\nSimon",
+    "body": "Replying to [comment:9 cremona]:\n> ...\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\n\nCorrected.\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\n\nCorrected.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\n\nDone. I define a class that behaves like the matrix constructor used to.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\n\nThat spelling is old, so, I won't touch it.\n\nI am running `sage -tp 3 sage` right now, but I am replacing the old patch in a minute.\n\nCheers,\nSimon",
     "created_at": "2010-11-24T07:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -642,17 +636,21 @@ Replying to [comment:9 cremona]:
 > 
 > line 44: "one should implement two methods" -- do you mean three?
 
+
 Corrected.
 
 > _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be "Apply the functor to a morphism between ... something" 
+
 
 Corrected.
 
 > In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` ""%s is ill-defined, ..."
 
+
 Done. I define a class that behaves like the matrix constructor used to.
 
 > Is the spelling of "`CompositConstructionFunctor`" intentional?  Should it not be "`CompositeConstructionFunctor`"?
+
 
 That spelling is old, so, I won't touch it.
 
@@ -816,7 +814,7 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_080697.json:
 ```json
 {
-    "body": "Replying to [comment:15 cremona]:\n> ...all long tests pass!\nSorry, I am a complete idiot.  I imported the patch and did sage -b but never qpushed it.  Back to square one.",
+    "body": "Replying to [comment:15 cremona]:\n> ...all long tests pass!\n\nSorry, I am a complete idiot.  I imported the patch and did sage -b but never qpushed it.  Back to square one.",
     "created_at": "2010-11-24T09:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
@@ -827,6 +825,7 @@ archive/issue_comments_080697.json:
 
 Replying to [comment:15 cremona]:
 > ...all long tests pass!
+
 Sorry, I am a complete idiot.  I imported the patch and did sage -b but never qpushed it.  Back to square one.
 
 

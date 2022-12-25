@@ -3,7 +3,7 @@
 archive/issues_006373.json:
 ```json
 {
-    "body": "Assignee: @williamstein\n\nCC:  cwitty jcooley\n\nKeywords: algebraic field is square\n\n\n```\nsage: QQbar(5).is_square()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n...\n\nAttributeError: 'AlgebraicNumber' object has no attribute 'is_square'\n```\n\n\nbut of course:\n\n\n```\nsage: QQbar(5).sqrt()\n2.236067977499790?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6373\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cwitty jcooley\n\nKeywords: algebraic field is square\n\n```\nsage: QQbar(5).is_square()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n...\n\nAttributeError: 'AlgebraicNumber' object has no attribute 'is_square'\n```\n\nbut of course:\n\n```\nsage: QQbar(5).sqrt()\n2.236067977499790?\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/6373\n\n",
     "created_at": "2009-06-20T19:48:21Z",
     "labels": [
         "component: number theory",
@@ -22,7 +22,6 @@ CC:  cwitty jcooley
 
 Keywords: algebraic field is square
 
-
 ```
 sage: QQbar(5).is_square()
 ---------------------------------------------------------------------------
@@ -33,15 +32,12 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'AlgebraicNumber' object has no attribute 'is_square'
 ```
 
-
 but of course:
-
 
 ```
 sage: QQbar(5).sqrt()
 2.236067977499790?
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/6373
 

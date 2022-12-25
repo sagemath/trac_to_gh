@@ -92,7 +92,7 @@ Ticket has been rebased. Apply all 3 patches.
 archive/issue_comments_016220.json:
 ```json
 {
-    "body": "\n```\n13:43 < jason-> okay, after getting the error, I reenabled cookies, but I still\n                get the error.\n13:44 < tclemans> refresh the homepage?\n13:44 < tclemans> *login page\n13:44 < jason-> ah, works now.\n13:45 < jason-> huh, so I disable cookies after logging in\n13:45 < jason-> and get a \"You are not logged in or do not have access to the\n                worksheet '104'.\"\n13:45 < jason-> not a cookie message\n13:46 < tclemans> ok well I never meant to fix that issue basically on the\n                  login page we set a test cookie and while login is being\n                  processed we look for that cookie\n13:46 < jason-> okay\n13:46 < tclemans> and then that cookie is deleted after succesful login\n```\n",
+    "body": "```\n13:43 < jason-> okay, after getting the error, I reenabled cookies, but I still\n                get the error.\n13:44 < tclemans> refresh the homepage?\n13:44 < tclemans> *login page\n13:44 < jason-> ah, works now.\n13:45 < jason-> huh, so I disable cookies after logging in\n13:45 < jason-> and get a \"You are not logged in or do not have access to the\n                worksheet '104'.\"\n13:45 < jason-> not a cookie message\n13:46 < tclemans> ok well I never meant to fix that issue basically on the\n                  login page we set a test cookie and while login is being\n                  processed we look for that cookie\n13:46 < jason-> okay\n13:46 < tclemans> and then that cookie is deleted after succesful login\n```",
     "created_at": "2008-09-29T20:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2407",
     "type": "issue_comment",
@@ -100,7 +100,6 @@ archive/issue_comments_016220.json:
     "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
-
 
 ```
 13:43 < jason-> okay, after getting the error, I reenabled cookies, but I still
@@ -118,7 +117,6 @@ archive/issue_comments_016220.json:
 13:46 < jason-> okay
 13:46 < tclemans> and then that cookie is deleted after succesful login
 ```
-
 
 
 

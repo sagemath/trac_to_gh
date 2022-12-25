@@ -167,7 +167,7 @@ archive/issue_events_010742.json:
 archive/issue_comments_035305.json:
 ```json
 {
-    "body": "One more thing: I know we added doctests, but the slow down seems larger than it should be:\n\n3.2.1:\n\n```\nsage -t -long \"devel/sage/sage/functions/piecewise.py\"      \n\t [87.8 s]\n```\n \nvs. 3.2.2.alpha0\n\n```\nsage -t -long \"devel/sage/sage/functions/piecewise.py\"      \n\t [145.3 s]\n```\n\nIt might be the cleanup for plotting, but I have not investigated.\n\nCheers,\n\nMichael",
+    "body": "One more thing: I know we added doctests, but the slow down seems larger than it should be:\n\n3.2.1:\n\n```\nsage -t -long \"devel/sage/sage/functions/piecewise.py\"      \n\t [87.8 s]\n``` \nvs. 3.2.2.alpha0\n\n```\nsage -t -long \"devel/sage/sage/functions/piecewise.py\"      \n\t [145.3 s]\n```\nIt might be the cleanup for plotting, but I have not investigated.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-05T07:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4693",
     "type": "issue_comment",
@@ -183,15 +183,13 @@ One more thing: I know we added doctests, but the slow down seems larger than it
 ```
 sage -t -long "devel/sage/sage/functions/piecewise.py"      
 	 [87.8 s]
-```
- 
+``` 
 vs. 3.2.2.alpha0
 
 ```
 sage -t -long "devel/sage/sage/functions/piecewise.py"      
 	 [145.3 s]
 ```
-
 It might be the cleanup for plotting, but I have not investigated.
 
 Cheers,

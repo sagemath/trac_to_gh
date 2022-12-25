@@ -3,7 +3,7 @@
 archive/issues_009769.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nIn the following list `l`, some elements repeat quite often:\n\n\n```\nsage: l = [ SphericalDistribution(dimension=2).get_random_element() for _ in range(1000)]\nsage: uniq = []\nsage: for x in l:\n    if x not in uniq:\n        uniq.append(x)\n....:\nsage: len(uniq)\n34\n```\n\n\nThe output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output.\tIt works fine if SphericalDistribution is only instantiated once!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9770\n\n",
+    "body": "Assignee: amhou\n\nIn the following list `l`, some elements repeat quite often:\n\n```\nsage: l = [ SphericalDistribution(dimension=2).get_random_element() for _ in range(1000)]\nsage: uniq = []\nsage: for x in l:\n    if x not in uniq:\n        uniq.append(x)\n....:\nsage: len(uniq)\n34\n```\n\nThe output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output.\tIt works fine if SphericalDistribution is only instantiated once!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9770\n\n",
     "created_at": "2010-08-20T10:50:32Z",
     "labels": [
         "component: statistics",
@@ -20,7 +20,6 @@ Assignee: amhou
 
 In the following list `l`, some elements repeat quite often:
 
-
 ```
 sage: l = [ SphericalDistribution(dimension=2).get_random_element() for _ in range(1000)]
 sage: uniq = []
@@ -31,7 +30,6 @@ sage: for x in l:
 sage: len(uniq)
 34
 ```
-
 
 The output is not random. For example, the first line is repeated ~30 times in the 1000 lines of output.	It works fine if SphericalDistribution is only instantiated once!
 
@@ -84,7 +82,7 @@ Changing status from new to needs_review.
 archive/issue_comments_095569.json:
 ```json
 {
-    "body": "Oh, wow.  This is because of the lines\n\n\n```\n            self.seed = random.randint(1, 2^32)\n```\n\n\n2 xor 32 is 34.. and the `^` vs. `**` bug strikes again.",
+    "body": "Oh, wow.  This is because of the lines\n\n```\n            self.seed = random.randint(1, 2^32)\n```\n\n2 xor 32 is 34.. and the `^` vs. `**` bug strikes again.",
     "created_at": "2011-10-31T04:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -95,11 +93,9 @@ archive/issue_comments_095569.json:
 
 Oh, wow.  This is because of the lines
 
-
 ```
             self.seed = random.randint(1, 2^32)
 ```
-
 
 2 xor 32 is 34.. and the `^` vs. `**` bug strikes again.
 
@@ -254,7 +250,7 @@ archive/issue_events_024489.json:
 archive/issue_comments_095576.json:
 ```json
 {
-    "body": "On hawk (OpenSolaris 06.2009-32):\n\n```\nsage -t -long  -force_lib devel/sage/sage/gsl/probability_distribution.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/gsl/probability_distribution.pyx\", line 339:\n    sage: T = RealDistribution('rayleigh', sigma)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[16]>\", line 1, in <module>\n        T = RealDistribution('rayleigh', sigma)###line 339:\n    sage: T = RealDistribution('rayleigh', sigma)\n      File \"probability_distribution.pyx\", line 503, in sage.gsl.probability_distribution.RealDistribution.__init__ (sage/gsl/probability_distribution.c:2309)\n        self.seed = random.randint(1, 2**32)\n    OverflowError: long int too large to convert to int\n**********************************************************************\n[...many more like this...]\n\nsage -t -long  -force_lib devel/sage/sage/matrix/constructor.py\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/matrix/constructor.py\", line 2944:\n    sage: print \"ignore this\";  B=random_matrix(FiniteField(7), 4, 4, algorithm='echelon_form', num_pivots=3); B # random\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[10]>\", line 1, in <module>\n        print \"ignore this\";  B=random_matrix(FiniteField(Integer(7)), Integer(4), Integer(4), algorithm='echelon_form', num_pivots=Integer(3)); B # random###line 2944:\n    sage: print \"ignore this\";  B=random_matrix(FiniteField(7), 4, 4, algorithm='echelon_form', num_pivots=3); B # random\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/lib/python/site-packages/sage/matrix/constructor.py\", line 1250, in random_matrix\n        return random_rref_matrix(parent, *args, **kwds)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/lib/python/site-packages/sage/matrix/constructor.py\", line 3020, in random_rref_matrix\n        pivot_generator=pd.RealDistribution(\"beta\",[1.6,4.3])\n      File \"probability_distribution.pyx\", line 503, in sage.gsl.probability_distribution.RealDistribution.__init__ (sage/gsl/probability_distribution.c:2309)\n    OverflowError: long int too large to convert to int\n**********************************************************************\n[...]\n```\n",
+    "body": "On hawk (OpenSolaris 06.2009-32):\n\n```\nsage -t -long  -force_lib devel/sage/sage/gsl/probability_distribution.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/gsl/probability_distribution.pyx\", line 339:\n    sage: T = RealDistribution('rayleigh', sigma)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[16]>\", line 1, in <module>\n        T = RealDistribution('rayleigh', sigma)###line 339:\n    sage: T = RealDistribution('rayleigh', sigma)\n      File \"probability_distribution.pyx\", line 503, in sage.gsl.probability_distribution.RealDistribution.__init__ (sage/gsl/probability_distribution.c:2309)\n        self.seed = random.randint(1, 2**32)\n    OverflowError: long int too large to convert to int\n**********************************************************************\n[...many more like this...]\n\nsage -t -long  -force_lib devel/sage/sage/matrix/constructor.py\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/matrix/constructor.py\", line 2944:\n    sage: print \"ignore this\";  B=random_matrix(FiniteField(7), 4, 4, algorithm='echelon_form', num_pivots=3); B # random\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[10]>\", line 1, in <module>\n        print \"ignore this\";  B=random_matrix(FiniteField(Integer(7)), Integer(4), Integer(4), algorithm='echelon_form', num_pivots=Integer(3)); B # random###line 2944:\n    sage: print \"ignore this\";  B=random_matrix(FiniteField(7), 4, 4, algorithm='echelon_form', num_pivots=3); B # random\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/lib/python/site-packages/sage/matrix/constructor.py\", line 1250, in random_matrix\n        return random_rref_matrix(parent, *args, **kwds)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/lib/python/site-packages/sage/matrix/constructor.py\", line 3020, in random_rref_matrix\n        pivot_generator=pd.RealDistribution(\"beta\",[1.6,4.3])\n      File \"probability_distribution.pyx\", line 503, in sage.gsl.probability_distribution.RealDistribution.__init__ (sage/gsl/probability_distribution.c:2309)\n    OverflowError: long int too large to convert to int\n**********************************************************************\n[...]\n```",
     "created_at": "2011-12-21T09:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -314,7 +310,6 @@ Exception raised:
 
 
 
-
 ---
 
 archive/issue_comments_095577.json:
@@ -338,7 +333,7 @@ Changing status from new to needs_info.
 archive/issue_comments_095578.json:
 ```json
 {
-    "body": "Urf.  Probably (?) we can simply replace `2**32` here with sys.maxint, but I can't be sure because I can't reproduce.\n\nEmailed a guy who I know has access to a solaris box :-) but haven't heard back.  If anyone with an account on hawk could report the results of a cut-and-paste of the following\n\n\n```\npreparser(False)\nimport random, sys\n\nnn = [2**31, 2**32, sys.maxint]\nfor n in nn:\n    for d in -1, 0, 1:\n        print n, d, n+d, repr(n+d), type(n+d)\n        try:\n            seed = random.randint(1, n+d)\n        except Exception as err:\n            print err\n        try:\n            random.seed(n+d)\n        except Exception as err:\n            print err\n```\n\n\nfrom within Sage, that would test whether I understand what's going on.",
+    "body": "Urf.  Probably (?) we can simply replace `2**32` here with sys.maxint, but I can't be sure because I can't reproduce.\n\nEmailed a guy who I know has access to a solaris box :-) but haven't heard back.  If anyone with an account on hawk could report the results of a cut-and-paste of the following\n\n```\npreparser(False)\nimport random, sys\n\nnn = [2**31, 2**32, sys.maxint]\nfor n in nn:\n    for d in -1, 0, 1:\n        print n, d, n+d, repr(n+d), type(n+d)\n        try:\n            seed = random.randint(1, n+d)\n        except Exception as err:\n            print err\n        try:\n            random.seed(n+d)\n        except Exception as err:\n            print err\n```\n\nfrom within Sage, that would test whether I understand what's going on.",
     "created_at": "2011-12-21T16:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -350,7 +345,6 @@ archive/issue_comments_095578.json:
 Urf.  Probably (?) we can simply replace `2**32` here with sys.maxint, but I can't be sure because I can't reproduce.
 
 Emailed a guy who I know has access to a solaris box :-) but haven't heard back.  If anyone with an account on hawk could report the results of a cut-and-paste of the following
-
 
 ```
 preparser(False)
@@ -370,7 +364,6 @@ for n in nn:
             print err
 ```
 
-
 from within Sage, that would test whether I understand what's going on.
 
 
@@ -380,7 +373,7 @@ from within Sage, that would test whether I understand what's going on.
 archive/issue_comments_095579.json:
 ```json
 {
-    "body": "Output of your Sage script on `hawk`:\n\n```\n2147483648 -1 2147483647 2147483647L <type 'long'>\n2147483648 0 2147483648 2147483648L <type 'long'>\n2147483648 1 2147483649 2147483649L <type 'long'>\n4294967296 -1 4294967295 4294967295L <type 'long'>\n4294967296 0 4294967296 4294967296L <type 'long'>\n4294967296 1 4294967297 4294967297L <type 'long'>\n2147483647 -1 2147483646 2147483646 <type 'int'>\n2147483647 0 2147483647 2147483647 <type 'int'>\n2147483647 1 2147483648 2147483648L <type 'long'>\n```\n",
+    "body": "Output of your Sage script on `hawk`:\n\n```\n2147483648 -1 2147483647 2147483647L <type 'long'>\n2147483648 0 2147483648 2147483648L <type 'long'>\n2147483648 1 2147483649 2147483649L <type 'long'>\n4294967296 -1 4294967295 4294967295L <type 'long'>\n4294967296 0 4294967296 4294967296L <type 'long'>\n4294967296 1 4294967297 4294967297L <type 'long'>\n2147483647 -1 2147483646 2147483646 <type 'int'>\n2147483647 0 2147483647 2147483647 <type 'int'>\n2147483647 1 2147483648 2147483648L <type 'long'>\n```",
     "created_at": "2011-12-22T12:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9769",
     "type": "issue_comment",
@@ -402,7 +395,6 @@ Output of your Sage script on `hawk`:
 2147483647 0 2147483647 2147483647 <type 'int'>
 2147483647 1 2147483648 2147483648L <type 'long'>
 ```
-
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008086.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1.alpha1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n## The problem\nnumpy is failing to build. It looks like there is a mix of 32 and 64-bit objects. \n\n\n\n```\nnumpy-1.3.0.p2/src/setup.py\nnumpy-1.3.0.p2/src/MANIFEST.in\nnumpy-1.3.0.p2/.hgtags\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /export/home/drkirkby/sage-4.3.1/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas not found in /export/home/drkirkby/sage-4.3.1/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  FOUND:\n    libraries = ['f77blas', 'cblas', 'atlas']\n    library_dirs = ['/export/home/drkirkby/sage-4.3.1/local/lib']\n    language = c\n    include_dirs = ['/export/home/drkirkby/sage-4.3.1/local/include']\n\n/export/home/drkirkby/sage-4.3.1/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/command/config.py:361: DeprecationWarning: \n+++++++++++++++++++++++++++++++++++++++++++++++++\nUsage of get_output is deprecated: please do not \nuse it anymore, and avoid configuration checks \ninvolving running executable on the target machine.\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n  DeprecationWarning)\ncustomize Sage_FCompiler_1\ncustomize Sage_FCompiler_1\ncustomize Sage_FCompiler_1 using config\ncompiling '_configtest.c':\n\n/* This file is generated from numpy/distutils/system_info.py */\nvoid ATL_buildinfo(void);\nint main(void) {\n  ATL_buildinfo();\n  return 0;\n}\nC compiler: gcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC\n\ncompile options: '-c'\ngcc: _configtest.c\ngcc _configtest.o -L/export/home/drkirkby/sage-4.3.1/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libf77blas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libcblas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libatlas.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libf77blas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libcblas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libatlas.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput: \n  FOUND:\n    libraries = ['f77blas', 'cblas', 'atlas']\n    library_dirs = ['/export/home/drkirkby/sage-4.3.1/local/lib']\n    language = c\n    define_macros = [('NO_ATLAS_INFO', 2)]\n    include_dirs = ['/export/home/drkirkby/sage-4.3.1/local/include']\n\nlapack_opt_info:\nlapack_mkl_info:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8086\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1.alpha1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n## The problem\nnumpy is failing to build. It looks like there is a mix of 32 and 64-bit objects. \n\n\n```\nnumpy-1.3.0.p2/src/setup.py\nnumpy-1.3.0.p2/src/MANIFEST.in\nnumpy-1.3.0.p2/.hgtags\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /export/home/drkirkby/sage-4.3.1/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas not found in /export/home/drkirkby/sage-4.3.1/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  FOUND:\n    libraries = ['f77blas', 'cblas', 'atlas']\n    library_dirs = ['/export/home/drkirkby/sage-4.3.1/local/lib']\n    language = c\n    include_dirs = ['/export/home/drkirkby/sage-4.3.1/local/include']\n\n/export/home/drkirkby/sage-4.3.1/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/command/config.py:361: DeprecationWarning: \n+++++++++++++++++++++++++++++++++++++++++++++++++\nUsage of get_output is deprecated: please do not \nuse it anymore, and avoid configuration checks \ninvolving running executable on the target machine.\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n  DeprecationWarning)\ncustomize Sage_FCompiler_1\ncustomize Sage_FCompiler_1\ncustomize Sage_FCompiler_1 using config\ncompiling '_configtest.c':\n\n/* This file is generated from numpy/distutils/system_info.py */\nvoid ATL_buildinfo(void);\nint main(void) {\n  ATL_buildinfo();\n  return 0;\n}\nC compiler: gcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC\n\ncompile options: '-c'\ngcc: _configtest.c\ngcc _configtest.o -L/export/home/drkirkby/sage-4.3.1/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libf77blas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libcblas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libatlas.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libf77blas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libcblas.so: wrong ELF class: ELFCLASS64\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libatlas.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput: \n  FOUND:\n    libraries = ['f77blas', 'cblas', 'atlas']\n    library_dirs = ['/export/home/drkirkby/sage-4.3.1/local/lib']\n    language = c\n    define_macros = [('NO_ATLAS_INFO', 2)]\n    include_dirs = ['/export/home/drkirkby/sage-4.3.1/local/include']\n\nlapack_opt_info:\nlapack_mkl_info:\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8086\n\n",
     "created_at": "2010-01-27T03:35:29Z",
     "labels": [
         "component: porting: solaris",
@@ -28,7 +28,6 @@ CC:  @jaapspies
 * 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. 
 ## The problem
 numpy is failing to build. It looks like there is a mix of 32 and 64-bit objects. 
-
 
 
 ```
@@ -117,7 +116,6 @@ Output:
 lapack_opt_info:
 lapack_mkl_info:
 ```
-
 
 Issue created by migration from https://trac.sagemath.org/ticket/8086
 
@@ -215,7 +213,7 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_070738.json:
 ```json
 {
-    "body": "Hi Jaap,\n\nI'm having a problem with this. I got a message about \"could not fork\". I even rebooted the machine once, thinking something was wrong, but everything else seems to work. \n\n\nIs this bit of code in the patch right? It looks wrong to me:\n\n\n```\necho \"#! /usr/bin/env bash\" > gcc \necho \"`which gcc` -m64 \" | sed 's/$/\\$@/' >> fake_gcc \n```\n\n\nShould the first line not write to the file 'fake_gcc' rather than 'gcc'? If so, since it gets copied to $SAGE_LOCAL/bin/gcc, why not write it directly there? \n\ni.e.\n\n\n```\necho \"#! /usr/bin/env bash\" > $SAGE_LOCAL/bin/gcc\necho \"`which gcc` -m64 \" | sed 's/$/\\$@/' >> $SAGE_LOCAL/bin/gcc \n```\n\n\nAlso, why use 'sed'? If I understand your intentions correctly, \n\n\n```\necho \"`which gcc` -m64 \\$@\"\n```\n\n\nwould achieve the same, but without invoking 'sed'. \n\nI would also add that 'which' is not a POSIX command, whereas 'command -v' gives you the same information, but in a standards complient way. This can be important, especially on Solaris 10, as the return code of 'which' is undefined on there. \n\n\n```\ndrkirkby@hawk:~$ echo \"`command -v gcc` -m64 \\$@\" \n/usr/local/gcc-4.4.4/bin/gcc -m64 $@\n```\n\n\nis more portable. \n\nHowever, I can't seem to get it to work. I'm not sure if I understand exactly what you are aiming to do here. Why do we need a fake gcc? \n\nDave",
+    "body": "Hi Jaap,\n\nI'm having a problem with this. I got a message about \"could not fork\". I even rebooted the machine once, thinking something was wrong, but everything else seems to work. \n\n\nIs this bit of code in the patch right? It looks wrong to me:\n\n```\necho \"#! /usr/bin/env bash\" > gcc \necho \"`which gcc` -m64 \" | sed 's/$/\\$@/' >> fake_gcc \n```\n\nShould the first line not write to the file 'fake_gcc' rather than 'gcc'? If so, since it gets copied to $SAGE_LOCAL/bin/gcc, why not write it directly there? \n\ni.e.\n\n```\necho \"#! /usr/bin/env bash\" > $SAGE_LOCAL/bin/gcc\necho \"`which gcc` -m64 \" | sed 's/$/\\$@/' >> $SAGE_LOCAL/bin/gcc \n```\n\nAlso, why use 'sed'? If I understand your intentions correctly, \n\n```\necho \"`which gcc` -m64 \\$@\"\n```\n\nwould achieve the same, but without invoking 'sed'. \n\nI would also add that 'which' is not a POSIX command, whereas 'command -v' gives you the same information, but in a standards complient way. This can be important, especially on Solaris 10, as the return code of 'which' is undefined on there. \n\n```\ndrkirkby@hawk:~$ echo \"`command -v gcc` -m64 \\$@\" \n/usr/local/gcc-4.4.4/bin/gcc -m64 $@\n```\n\nis more portable. \n\nHowever, I can't seem to get it to work. I'm not sure if I understand exactly what you are aiming to do here. Why do we need a fake gcc? \n\nDave",
     "created_at": "2010-05-30T16:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8086",
     "type": "issue_comment",
@@ -231,42 +229,34 @@ I'm having a problem with this. I got a message about "could not fork". I even r
 
 Is this bit of code in the patch right? It looks wrong to me:
 
-
 ```
 echo "#! /usr/bin/env bash" > gcc 
 echo "`which gcc` -m64 " | sed 's/$/\$@/' >> fake_gcc 
 ```
 
-
 Should the first line not write to the file 'fake_gcc' rather than 'gcc'? If so, since it gets copied to $SAGE_LOCAL/bin/gcc, why not write it directly there? 
 
 i.e.
-
 
 ```
 echo "#! /usr/bin/env bash" > $SAGE_LOCAL/bin/gcc
 echo "`which gcc` -m64 " | sed 's/$/\$@/' >> $SAGE_LOCAL/bin/gcc 
 ```
 
-
 Also, why use 'sed'? If I understand your intentions correctly, 
-
 
 ```
 echo "`which gcc` -m64 \$@"
 ```
 
-
 would achieve the same, but without invoking 'sed'. 
 
 I would also add that 'which' is not a POSIX command, whereas 'command -v' gives you the same information, but in a standards complient way. This can be important, especially on Solaris 10, as the return code of 'which' is undefined on there. 
-
 
 ```
 drkirkby@hawk:~$ echo "`command -v gcc` -m64 \$@" 
 /usr/local/gcc-4.4.4/bin/gcc -m64 $@
 ```
-
 
 is more portable. 
 
